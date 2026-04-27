@@ -4,16 +4,18 @@ linktitle: Get and Search Images
 type: docs
 weight: 40
 url: /python-net/search-and-get-images-from-pdf-document/
-description: Learn how to search and get images from the PDF document in Python using Aspose.PDF.
-lastmod: "2025-09-17"
+description: Learn how to search for and inspect images in PDF documents in Python.
+lastmod: "2026-04-17"
 TechArticle: true
-AlternativeHeadline: Searching and Extracting Images from PDF
-Abstract: The Aspose.PDF for Python via .NET library offers robust capabilities for searching and extracting images from PDF documents. Utilizing the 'ImagePlacementAbsorber' class, developers can efficiently locate and access images embedded across all pages of a PDF.
+AlternativeHeadline: Search for embedded images and inspect image placement in PDF files with Python
+Abstract: This article explains how to find and inspect images in PDF documents using Aspose.PDF for Python via .NET. Learn how to use ImagePlacementAbsorber to analyze image placement, size, and resolution on PDF pages and retrieve image information programmatically in Python.
 ---
 
 ## Inspect Image Placement Properties in a PDF Page
 
 This example demonstrates how to analyze and display properties of all images on a specific PDF page using Aspose.PDF for Python via .NET.
+
+Use this page when you need to audit image placement, inspect image resolution, or identify embedded image objects across PDF pages.
 
 1. Create an 'ImagePlacementAbsorber' to collect all images on the page.
 1. Call 'document.pages[1].accept(absorber)' to analyze image placements on the first page.
@@ -72,10 +74,10 @@ def extract_image_types_from_pdf(infile):
     grayscaled = 0
     rgb = 0
 
-    document.pages[1].accept(absorber)
+print("--------------------------------")
+print("Total Images = " + str(len(absorber.image_placements)))
 
-    print("--------------------------------")
-    print("Total Images = " + str(len(absorber.image_placements)))
+image_counter = 1
 
     image_counter = 1
 
@@ -89,10 +91,11 @@ def extract_image_types_from_pdf(infile):
             print(f"Image {image_counter} is RGB...")
         image_counter += 1
 
-    default_resolution = 72
-    graphics_state = []
+image_names = list(document.pages[1].resources.images.names)
 
-    image_names = list(document.pages[1].resources.images.names)
+graphics_state.append(
+    drawing.drawing2d.Matrix(float(1), float(0), float(0), float(1), float(0), float(0))
+)
 
     graphics_state.append(
         drawing.drawing2d.Matrix(
@@ -106,29 +109,39 @@ def extract_image_types_from_pdf(infile):
                 cast(drawing.drawing2d.Matrix, graphics_state[-1]).clone()
             )
 
-        elif is_assignable(op, ap.operators.GRestore):
-            graphics_state.pop()
+    elif is_assignable(op, ap.operators.ConcatenateMatrix):
+        opCM = cast(ap.operators.ConcatenateMatrix, op)
+        cm = drawing.drawing2d.Matrix(
+            float(opCM.matrix.a),
+            float(opCM.matrix.b),
+            float(opCM.matrix.c),
+            float(opCM.matrix.d),
+            float(opCM.matrix.e),
+            float(opCM.matrix.f),
+        )
 
-        elif is_assignable(op, ap.operators.ConcatenateMatrix):
-            opCM = cast(ap.operators.ConcatenateMatrix, op)
-            cm = drawing.drawing2d.Matrix(
-                float(opCM.matrix.a),
-                float(opCM.matrix.b),
-                float(opCM.matrix.c),
-                float(opCM.matrix.d),
-                float(opCM.matrix.e),
-                float(opCM.matrix.f),
+        graphics_state[-1].multiply(cm)
+        continue
+
+    elif is_assignable(op, ap.operators.Do):
+        opDo = cast(ap.operators.Do, op)
+        if opDo.name in image_names:
+            last_ctm = cast(drawing.drawing2d.Matrix, graphics_state[-1])
+            index = image_names.index(opDo.name) + 1
+            image = document.pages[1].resources.images[index]
+
+            scaled_width = math.sqrt(
+                last_ctm.elements[0] ** 2 + last_ctm.elements[1] ** 2
+            )
+            scaled_height = math.sqrt(
+                last_ctm.elements[2] ** 2 + last_ctm.elements[3] ** 2
             )
 
-            graphics_state[-1].multiply(cm)
-            continue
+            original_width = image.width
+            original_height = image.height
 
-        elif is_assignable(op, ap.operators.Do):
-            opDo = cast(ap.operators.Do, op)
-            if opDo.name in image_names:
-                last_ctm = cast(drawing.drawing2d.Matrix, graphics_state[-1])
-                index = image_names.index(opDo.name) + 1
-                image = document.pages[1].resources.images[index]
+            res_horizontal = original_width * default_resolution / scaled_width
+            res_vertical = original_height * default_resolution / scaled_height
 
                 scaled_width = math.sqrt(
                     last_ctm.elements[0] ** 2 + last_ctm.elements[1] ** 2

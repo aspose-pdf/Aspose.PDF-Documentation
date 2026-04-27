@@ -56,7 +56,7 @@ void ExampleEllipse() {
 
 The following code snippet shows how to add a [Ellipse](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.ellipse/)  object that is filled with color.
 
-```csharp
+```cpp
 void ExampleFilledEllipse() {
     // Create Document instance
     String _dataDir("C:\\Samples\\");

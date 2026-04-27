@@ -36,43 +36,63 @@ This example shows how to create and add multiple layers  to a PDF document usin
 The resulting PDF will contain three separate layers: a red line, a green line, and a blue line. Each can be toggled on or off in PDF readers that support layered content.
 
 ```python
-
+from io import FileIO
 import aspose.pdf as ap
+import sys
 from os import path
 
-def add_colored_layers(outfile: str, data_dir: str) -> None:
+
+def add_layers(outfile):
     """
-    Creates a PDF with three layers (Red, Green, Blue lines).
-    
+    Add three colored line layers (red, green, blue) to a new PDF document.
+
     Args:
-        outfile (str): Name of the output PDF file.
-        data_dir (str): Directory path to save the file.
+        outfile (str): The filename for the output PDF file
+
+    Returns:
+        None
+
+    Example:
+        >>> add_layers("output.pdf")
+
+    Note:
+        Creates a PDF with three layers containing horizontal lines:
+        - "Red Line" at y=700
+        - "Green Line" at y=750
+        - "Blue Line" at y=800
     """
-    path_outfile = path.join(data_dir, outfile)
+    path_outfile = path.join(outfile)
 
     try:
-        # Create a new PDF document and add a blank page
         document = ap.Document()
         page = document.pages.add()
 
-        # Helper function to add a colored line layer
-        def add_layer(layer_id: str, layer_name: str, color: tuple, y_position: int):
-            layer = ap.Layer(layer_id, layer_name)
-            layer.contents.append(ap.operators.SetRGBColorStroke(*color))
-            layer.contents.append(ap.operators.MoveTo(500, y_position))
-            layer.contents.append(ap.operators.LineTo(400, y_position))
-            layer.contents.append(ap.operators.Stroke())
-            page.layers.append(layer)
+        # Red layer
+        layer = ap.Layer("oc1", "Red Line")
+        layer.contents.append(ap.operators.SetRGBColorStroke(1, 0, 0))
+        layer.contents.append(ap.operators.MoveTo(500, 700))
+        layer.contents.append(ap.operators.LineTo(400, 700))
+        layer.contents.append(ap.operators.Stroke())
+        page.layers.append(layer)
 
-        # Add Red, Green, and Blue layers
-        add_layer("oc1", "Red Line", (1, 0, 0), 700)
-        add_layer("oc2", "Green Line", (0, 1, 0), 750)
-        add_layer("oc3", "Blue Line", (0, 0, 1), 800)
+        # Green layer
+        layer = ap.Layer("oc2", "Green Line")
+        layer.contents.append(ap.operators.SetRGBColorStroke(0, 1, 0))
+        layer.contents.append(ap.operators.MoveTo(500, 750))
+        layer.contents.append(ap.operators.LineTo(400, 750))
+        layer.contents.append(ap.operators.Stroke())
+        page.layers.append(layer)
 
-        # Save the document
-        document.save(path_outfile)
-        print(f"\nLayers added successfully.\nFile saved at: {path_outfile}")
+        # Blue layer
+        layer = ap.Layer("oc3", "Blue Line")
+        layer.contents.append(ap.operators.SetRGBColorStroke(0, 0, 1))
+        layer.contents.append(ap.operators.MoveTo(500, 800))
+        layer.contents.append(ap.operators.LineTo(400, 800))
+        layer.contents.append(ap.operators.Stroke())
+        page.layers.append(layer)
 
+        document.save(outfile)
+        print(f"\nLayers added successfully to PDF file.\nFile saved at {path_outfile}")
     except Exception as e:
         print(f"Error adding layers: {e}")
 ```
@@ -98,20 +118,40 @@ Available methods and property:
 If the PDF contains layers, the first layer will be locked, ensuring its visibility state cannot be changed by the user. If no layers are found, a message is printed instead.
 
 ```python
-
+from io import FileIO
 import aspose.pdf as ap
+import sys
 from os import path
 
-def lock_layer(path_infile, path_outfile):
-    with ap.Document(path_infile) as document:
-        page = document.pages[1]
+
+def lock_layer(infile, outfile):
+    """
+    Lock the first layer of the first page in a document.
+
+    Args:
+        infile (str): The name of the input file
+        outfile (str): The name of the output file
+
+    Returns:
+        None
+
+    Example:
+        >>> lock_layer("input.pdf", "locked_output.pdf")
+
+    Note:
+        If no layers are found, prints a message and returns without saving.
+    """
+
+    document = ap.Document(infile)
+    page = document.pages[1]
+
+    if len(page.layers) > 0:
         layer = page.layers[0]
-
-        # Lock the layer
         layer.lock()
-
-        # Save updated PDF
-        document.save(path_outfile)
+        document.save(outfile)
+        print(f"Layer locked successfully. File saved at {outfile}")
+    else:
+        print("No layers found in the document.")
 ```
 
 ## Extract PDF layer elements
@@ -126,31 +166,84 @@ To create a new PDF from a layer, the following code snippet can be used:
 1. Iterate and Save Each Layer.
 
 ```python
-
+from io import FileIO
 import aspose.pdf as ap
+import sys
 from os import path
 
-def save_layers(path_infile, path_outfile):
-    with ap.Document(path_infile) as document:
-        layers = document.pages[1].layers
 
-        # Save each layer to a new PDF
-        for layer in layers:
-            layer.save(path_outfile)
+def extract_layers(infile, outfile):
+    """
+    Extract all layers from the first page and save each as a separate file.
+
+    Args:
+        infile (str): The name of the input PDF file
+        outfile (str): The base name for output files (index will be appended)
+
+    Returns:
+        None
+
+    Example:
+        >>> extract_layers("input.pdf", "layer_output.pdf")
+        # Creates layer_output1.pdf, layer_output2.pdf, etc.
+
+    Note:
+        Only extracts layers from the first page of the input PDF.
+    """
+    document = ap.Document(infile)
+    layers = document.pages[1].layers
+
+    if len(layers) == 0:
+        print("No layers found in the document.")
+        return
+
+    index = 1
+    for layer in layers:
+        output_file = outfile.replace(".pdf", f"{index}.pdf")
+        layer.save(output_file)
+        print(f"Layer {index} saved to {output_file}")
+        index += 1
 ```
 
 It is possible to extract PDF layer elements and save them into a new PDF file stream:
 
 ```python
-
+from io import FileIO
 import aspose.pdf as ap
+import sys
 from os import path
 
-def save_layers_to_stream(path_infile, output_stream):
-    with ap.Document(path_infile) as document:
-        layers = document.pages[1].layers
-        for layer in layers:
-            layer.save(output_stream)
+
+def extract_layers_stream(infile, outfile):
+    """
+    Extract the first layer from the first page and save it to a stream.
+
+    Args:
+        infile (str): The name of the input file
+        outfile (str): The name of the output file
+
+    Returns:
+        None
+
+    Example:
+        >>> extract_layers_stream("input.pdf", "layer.pdf")
+
+    Note:
+        If no layers are found on the first page, prints a message and returns.
+        The extracted layer is saved as a binary stream.
+    """
+
+    document = ap.Document(infile)
+
+    if len(document.pages[1].layers) == 0:
+        print("No layers found in the document.")
+        return
+
+    layer = document.pages[1].layers[0]
+
+    with FileIO(outfile, "wb") as output_layer:
+        layer.save(output_layer)
+    print(f"Layer extracted to stream: {outfile}")
 ```
 
 ## Flatten a layered PDF
@@ -164,22 +257,42 @@ This script uses Aspose.PDF for Python via .NET to flatten all layers on the fir
 1. Save the Modified Document.
 
 ```python
-
+from io import FileIO
 import aspose.pdf as ap
+import sys
 from os import path
 
-def flatten_layers(path_infile, path_outfile):
-    with ap.Document(path_infile) as document:
-        page = document.pages[1]
 
-        if not page.layers:
-            print("No layers found in the document.")
-            return
-        # Flatten each layer
-        for layer in page.layers:
-            layer.flatten(cleanup_content_stream=True)
+def flatten_layers(infile, outfile):
+    """
+    Flatten all layers of the first page in a document.
 
-        document.save(path_outfile)
+    Args:
+        infile (str): The name of the input file
+        outfile (str): The name of the output file
+
+    Returns:
+        None
+
+    Example:
+        >>> flatten_layers("input.pdf", "flattened.pdf")
+
+    Note:
+        Flattening makes all layers permanent and non-toggleable.
+    """
+
+    document = ap.Document(infile)
+    layers = document.pages[1].layers
+
+    if len(layers) == 0:
+        print("No layers found in the document.")
+        return
+
+    for layer in layers:
+        layer.flatten(True)
+
+    document.save(outfile)
+    print(f"Layers flattened successfully. File saved at {outfile}")
 ```
 
 ## Merge All Layers inside the PDF into one
@@ -194,18 +307,39 @@ This code snippet uses Aspose.PDF to merge all layers on the first page of a PDF
 1. Save the Document
 
 ```python
-
+from io import FileIO
 import aspose.pdf as ap
+import sys
 from os import path
 
-def merge_layers(path_infile, path_outfile, new_layer_name, optional_group_id=None):
-    with ap.Document(path_infile) as document:
-        page = document.pages[1]
 
-        if optional_group_id:
-            page.merge_layers(new_layer_name, optional_group_id)
-        else:
-            page.merge_layers(new_layer_name)
+def merge_layers(infile, outfile):
+    """
+    Merge all layers of the first page into a single layer.
 
-        document.save(path_outfile)
+    Args:
+        infile (str): The name of the input file
+        outfile (str): The name of the output file
+
+    Returns:
+        None
+
+    Example:
+        >>> merge_layers("input.pdf", "merged.pdf")
+
+    Note:
+        All layers are combined into a new layer named "LayerNew".
+    """
+
+    document = ap.Document(infile)
+    page = document.pages[1]
+
+    if len(page.layers) == 0:
+        print("No layers found in the document.")
+        return
+
+    new_layer_name = "LayerNew"
+    page.merge_layers(new_layer_name)
+    document.save(outfile)
+    print(f"Layers merged successfully. File saved at {outfile}")
 ```

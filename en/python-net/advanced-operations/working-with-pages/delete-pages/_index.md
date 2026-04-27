@@ -1,11 +1,11 @@
 ---
-title: Deleting PDF Pages programmatically Python
+title: Delete PDF Pages in Python
 linktitle: Deleting PDF Pages
 type: docs
 weight: 80
 url: /python-net/delete-pages/
-description: You can delete pages from your PDF file using Aspose.PDF for Python via .NET library.
-lastmod: "2025-11-16"
+description: Learn how to delete pages from PDF files in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,6 +15,8 @@ Abstract: This article provides a concise guide on how to delete pages from a PD
 ---
 
 You can delete pages from a PDF file using Aspose.PDF for Python via .NET. To delete a particular page, use the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) of a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+
+Use this workflow when you need to remove unwanted pages from a PDF before sharing, archiving, or combining documents.
 
 ## Delete Page from PDF File
 
@@ -27,12 +29,12 @@ Aspose.PDF for Python via .NET deletes page 2 from the input PDF and saves the u
 The following code snippet shows how to delete a particular page from the PDF file using Python.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def delete_page(input_file_name, output_file_name):
     """
@@ -76,12 +78,12 @@ Deleting multiple pages allows you to remove a set of specified pages in a singl
 1. Save the updated [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to a new file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def delete_bunch_pages(input_file_name, output_file_name):
     """
@@ -113,9 +115,16 @@ def delete_bunch_pages(input_file_name, output_file_name):
     # Open the PDF as a Document
     document = ap.Document(input_file_name)
     # Example: Deleting pages 2, 3, 4, 6, 7, and 9; modify this list as needed for your use case.
-    pages = [2,3,4,6,7,9]
+    pages = [2, 3, 4, 6, 7, 9]
     # Delete pages via PageCollection API
     document.pages.delete(pages)
     # Save updated Document
     document.save(output_file_name)
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Add PDF pages in Python](/pdf/python-net/add-pages/)
+- [Move PDF pages in Python](/pdf/python-net/move-pages/)
+- [Extract PDF pages in Python](/pdf/python-net/extract-pages/)

@@ -1,11 +1,11 @@
 ---
-title: Getting and Setting Page Properties using Python
+title: Get and Set PDF Page Properties in Python
 linktitle: Getting and Setting Page Properties
 type: docs
 weight: 90
 url: /python-net/get-and-set-page-properties/
-description: This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties.
-lastmod: "2025-11-16"
+description: Learn how to inspect and update PDF page properties such as size, count, and color information in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,6 +15,8 @@ Abstract: This article discusses the capabilities of Aspose.PDF for Python via .
 ---
 
 Aspose.PDF for Python via .NET lets you read and set properties of pages in a PDF file in your Python applications. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties. The examples use the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) and [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) APIs and are written in Python.
+
+Use this guide when you need to inspect page metadata, determine page counts, or update page-level characteristics as part of document analysis or normalization tasks.
 
 ## Get Number of Pages in a PDF File
 
@@ -28,12 +30,12 @@ To get the number of pages in a PDF file:
 The following code snippet shows how to get the number of pages of a PDF file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def get_page_count(input_file_name):
     """
@@ -58,12 +60,12 @@ def get_page_count(input_file_name):
 Sometimes we generate the PDF files on the fly and during PDF file creation, we may come across the requirement (creating Table Of Contents etc.) to get page count of PDF file without saving the file over system or stream. So in order to cater to this requirement, a method [process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) has been introduced in Document class. Please take a look over the following code snippet which shows the steps to get page count without saving the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def get_page_count_without_saving(input_file_name):
     """
@@ -120,12 +122,12 @@ The [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) class p
 From there, it is possible to access either individual `Page` objects using their index, or loop through the collection to get all pages. Once an individual page is accessed, we can get its properties. The following code snippet shows how to get page properties (the `Page` API).
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def get_page_properties(input_file_name):
     """
@@ -146,12 +148,14 @@ def get_page_properties(input_file_name):
         "CropBox": page.crop_box,
         "MediaBox": page.media_box,
         "TrimBox": page.trim_box,
-        "Rect": page.rect
+        "Rect": page.rect,
     }
 
     # Print box properties
     for box_name, box in boxes.items():
-        print(f"{box_name} : Height={box.height},Width={box.width},LLX={box.llx},LLY={box.lly},URX={box.urx},URY={box.ury}")
+        print(
+            f"{box_name} : Height={box.height},Width={box.width},LLX={box.llx},LLY={box.lly},URX={box.urx},URY={box.ury}"
+        )
 
     # Print other page properties
     print(f"Page Number : {page.number}")
@@ -167,12 +171,12 @@ All the pages of the PDF files are contained by the [PageCollection](https://ref
 The following code snippet shows how to iterate through individual page of PDF file to get color information.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def get_page_color_type(input_file_name):
     """
@@ -208,9 +212,15 @@ def get_page_color_type(input_file_name):
             ap.ColorType.BLACK_AND_WHITE: "Black and white",
             ap.ColorType.GRAYSCALE: "Gray Scale",
             ap.ColorType.RGB: "RGB",
-            ap.ColorType.UNDEFINED: "undefined"
+            ap.ColorType.UNDEFINED: "undefined",
         }
         color_description = color_type_map.get(page_color_type, "unknown")
         print(f"Page # {page_number} is {color_description}.")
 ```
 
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Change PDF page size in Python](/pdf/python-net/change-page-size/)
+- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
+- [Rotate PDF pages in Python](/pdf/python-net/rotate-pages/)

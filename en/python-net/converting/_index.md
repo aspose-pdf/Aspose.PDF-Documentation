@@ -1,11 +1,11 @@
 ---
-title: Convert PDF documents using Python
+title: Convert PDF Documents in Python
 linktitle: Convert PDF document
 type: docs
 weight: 70
 url: /python-net/converting/
-lastmod: "2025-02-27"
-description: Learn how to convert PDFs to other formats in Python (NET) with Aspose.PDF for streamlined document processing.
+lastmod: "2026-04-14"
+description: Learn how to convert PDF documents to Word, Excel, PowerPoint, HTML, images, PDF/A, and other formats in Python with Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

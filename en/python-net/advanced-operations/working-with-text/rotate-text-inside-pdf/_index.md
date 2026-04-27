@@ -4,8 +4,8 @@ linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50
 url: /python-net/rotate-text-inside-pdf/
-description: Explore how to rotate text inside a PDF document in Python for flexible document formatting with Aspose.PDF for Python.
-lastmod: "2025-11-13"
+description: Learn how to rotate text fragments and paragraphs inside PDF documents in Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,9 +20,9 @@ Rotate text fragments in a PDF document using Aspose.PDF for Python via .NET. It
 
 Creates a PDF file named rotated_fragments.pdf containing three text fragments aligned horizontally:
 
- - the first text is unrotated
- - the second is rotated 45°
- - the third is rotated 90°
+- the first text is unrotated
+- the second is rotated 45°
+- the third is rotated 90°
 
 1. Create a New PDF Document.
 1. Insert a new page to host the rotated text.
@@ -33,12 +33,12 @@ Creates a PDF file named rotated_fragments.pdf containing three text fragments a
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def rotate_text_inside_pdf_1(outfile):
     """
@@ -75,20 +75,26 @@ def rotate_text_inside_pdf_1(outfile):
         text_fragment_1.position = ap.text.Position(100, 600)
         # Set text properties
         text_fragment_1.text_state.font_size = 12
-        text_fragment_1.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         # Create rotated text fragment
         text_fragment_2 = ap.text.TextFragment("rotated text")
         text_fragment_2.position = ap.text.Position(200, 600)
         # Set text properties
         text_fragment_2.text_state.font_size = 12
-        text_fragment_2.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         text_fragment_2.text_state.rotation = 45
         # Create rotated text fragment
         text_fragment_3 = ap.text.TextFragment("rotated text")
         text_fragment_3.position = ap.text.Position(300, 600)
         # Set text properties
         text_fragment_3.text_state.font_size = 12
-        text_fragment_3.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         text_fragment_3.text_state.rotation = 90
         # create TextBuilder object
         builder = ap.text.TextBuilder(page)
@@ -122,12 +128,12 @@ Creates a PDF named rotated_paragraph_fragments.pdf containing a paragraph with 
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def rotate_text_inside_pdf_2(outfile):
     """
@@ -165,19 +171,25 @@ def rotate_text_inside_pdf_2(outfile):
         text_fragment_1 = ap.text.TextFragment("rotated text")
         # Set text properties
         text_fragment_1.text_state.font_size = 12
-        text_fragment_1.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         # Set rotation
         text_fragment_1.text_state.rotation = 45
         # Create text fragment
         text_fragment_2 = ap.text.TextFragment("main text")
         # Set text properties
         text_fragment_2.text_state.font_size = 12
-        text_fragment_2.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         # Create text fragment
         text_fragment_3 = ap.text.TextFragment("another rotated text")
         # Set text properties
         text_fragment_3.text_state.font_size = 12
-        text_fragment_3.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         # Set rotation
         text_fragment_3.text_state.rotation = -45
         # Append the text fragments to the paragraph
@@ -213,12 +225,12 @@ Generates a file named 'simple_rotated_text.pdf' containing:
 1. Save the PDF Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def rotate_text_inside_pdf_3(outfile):
     """
@@ -254,19 +266,25 @@ def rotate_text_inside_pdf_3(outfile):
         text_fragment_1 = ap.text.TextFragment("main text")
         # Set text properties
         text_fragment_1.text_state.font_size = 12
-        text_fragment_1.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         # Create text fragment
         text_fragment_2 = ap.text.TextFragment("rotated text")
         # Set text properties
         text_fragment_2.text_state.font_size = 12
-        text_fragment_2.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         # Set rotation
         text_fragment_2.text_state.rotation = 315
         # Create text fragment
         text_fragment_3 = ap.text.TextFragment("rotated text")
         # Set text properties
         text_fragment_3.text_state.font_size = 12
-        text_fragment_3.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
         # Set rotation
         text_fragment_3.text_state.rotation = 270
         page.paragraphs.add(text_fragment_1)
@@ -300,12 +318,12 @@ Creates 'rotated_paragraphs.pdf', containing four fully styled and rotated parag
 1. Save the PDF Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def rotate_text_inside_pdf_4(outfile):
     """
@@ -347,21 +365,27 @@ def rotate_text_inside_pdf_4(outfile):
             text_fragment_1 = ap.text.TextFragment("Paragraph Text")
             # Create text fragment
             text_fragment_1.text_state.font_size = 12
-            text_fragment_1.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+            text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
             text_fragment_1.text_state.background_color = ap.Color.light_gray
             text_fragment_1.text_state.foreground_color = ap.Color.blue
             # Create text fragment
             text_fragment_2 = ap.text.TextFragment("Second line of text")
             # Set text properties
             text_fragment_2.text_state.font_size = 12
-            text_fragment_2.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+            text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
             text_fragment_2.text_state.background_color = ap.Color.light_gray
             text_fragment_2.text_state.foreground_color = ap.Color.blue
             # Create text fragment
             text_fragment_3 = ap.text.TextFragment("And some more text...")
             # Set text properties
             text_fragment_3.text_state.font_size = 12
-            text_fragment_3.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+            text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
             text_fragment_3.text_state.background_color = ap.Color.light_gray
             text_fragment_3.text_state.foreground_color = ap.Color.blue
             text_fragment_3.text_state.underline = True
@@ -376,3 +400,10 @@ def rotate_text_inside_pdf_4(outfile):
         # Save the document
         document.save(outfile)
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
+- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)

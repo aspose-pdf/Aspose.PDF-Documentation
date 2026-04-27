@@ -31,9 +31,9 @@ Below code snippet follows these steps:
 The following code snippet is a "Hello World" program that demonstrates the functionality of Aspose.PDF for Python via the .NET API.
 
 ```python
-
 from datetime import timedelta
 import aspose.pdf as ap
+
 
 def run_simple(self):
     # Initialize document object
@@ -45,9 +45,7 @@ def run_simple(self):
     textFragment.position = ap.text.Position(100, 600)
 
     textFragment.text_state.font_size = 12
-    textFragment.text_state.font = ap.text.FontRepository.find_font(
-        "TimesNewRoman"
-    )
+    textFragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
     textFragment.text_state.background_color = ap.Color.blue
     textFragment.text_state.foreground_color = ap.Color.yellow
 

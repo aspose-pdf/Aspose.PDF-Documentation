@@ -1,69 +1,240 @@
 ---
-title: Convertir PDF a HTML en Python 
+title: Convertir PDF a HTML en Python
 linktitle: Convertir PDF a formato HTML
 type: docs
 weight: 50
 url: /es/python-net/convert-pdf-to-html/
-lastmod: "2021-11-01"
-description: Este tema te muestra cómo convertir un archivo PDF a formato HTML con la biblioteca Aspose.PDF para Python .NET.
+lastmod: "2025-09-27"
+description: Este tema le muestra cómo convertir un archivo PDF al formato HTML con la biblioteca Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: Convertir PDF a HTML con Python
+Abstract: >
+    Esta guía muestra cómo convertir documentos PDF a HTML con Aspose.PDF for Python via .NET. Incluye el flujo básico de conversión, el uso de HtmlSaveOptions y ejemplos para generar salida HTML reutilizable a partir de un PDF.
 ---
-
-## Resumen
-
-Este artículo explica cómo **convertir PDF a HTML usando Python**. Cubre estos temas.
-
-_Formato_: **HTML**
-- [Python PDF a HTML](#python-pdf-to-html)
-- [Python Convertir PDF a HTML](#python-pdf-to-html)
-- [Python Cómo convertir un archivo PDF a HTML](#python-pdf-to-html)
-
 
 ## Convertir PDF a HTML
 
-**Aspose.PDF para Python vía .NET** ofrece muchas características para convertir varios formatos de archivo en documentos PDF y convertir archivos PDF en varios formatos de salida.
- Este artículo discute cómo convertir un archivo PDF en <abbr title="Lenguaje de Marcado de Hipertexto">HTML</abbr>. Puedes usar solo un par de líneas de código en Python para convertir PDF a HTML. Es posible que necesites convertir PDF a HTML si deseas crear un sitio web o agregar contenido a un foro en línea. Una forma de convertir PDF a HTML es usar Python de manera programática.
+**Aspose.PDF for Python via .NET** proporciona muchas funciones para convertir varios formatos de archivo en documentos PDF y convertir archivos PDF en varios formatos de salida. Este artículo explica cómo convertir un archivo PDF en <abbr title="HyperText Markup Language">HTML</abbr>. Puedes usar solo un par de líneas de código Python para convertir PDF a HTML. Puede que necesites convertir PDF a HTML si deseas crear un sitio web o agregar contenido a un foro en línea. Una forma de convertir PDF a HTML es usar Python programáticamente.
 
 {{% alert color="success" %}}
 **Intenta convertir PDF a HTML en línea**
 
-Aspose.PDF para Python te presenta una aplicación gratuita en línea ["PDF a HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), donde puedes intentar investigar la funcionalidad y calidad con la que trabaja.
+Aspose.PDF for Python le presenta una aplicación gratuita en línea ["PDF a HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), donde puede intentar investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión de PDF a HTML con Aplicación Gratuita](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+[![Aspose.PDF Conversión PDF a HTML con Aplicación Gratuita](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-<a name="csharp-pdf-to-html"><strong>Pasos: Convertir PDF a HTML en Python</strong></a>
+Pasos: Convertir PDF a HTML en Python
 
-1. Crea una instancia del objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) con el documento PDF de origen.
-2. Guárdalo en [HtmlSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlsaveoptions/) llamando al método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Crear una instancia de [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objeto con el documento PDF de origen.
+1. Guárdalo en [HtmlSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlsaveoptions/) al llamar [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método.
 
 ```python
+from os import path
+import aspose.pdf as apdf
 
-    import aspose.pdf as ap
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+document.save(path_outfile, save_options)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_html.html"
-    # Abre el documento PDF
-    document = ap.Document(input_pdf)
-
-    # guarda el documento en formato HTML
-    save_options = ap.HtmlSaveOptions()
-    document.save(output_pdf, save_options)
+print(infile + " converted into " + outfile)
 ```
 
-## Ver También
+### Convertir PDF a HTML guardando las imágenes en la carpeta especificada
 
-Este artículo también cubre estos temas. Los códigos son los mismos que arriba.
+Esta función convierte un archivo PDF a formato HTML utilizando Aspose.PDF for Python via .NET. Todas las imágenes extraídas se almacenan en una carpeta especificada en lugar de incrustarse en el archivo HTML.
 
-_Formato_: **HTML**
-- [Código Python PDF a HTML](#python-pdf-to-html)
-- [API Python PDF a HTML](#python-pdf-to-html)
-- [Python PDF a HTML Programáticamente](#python-pdf-to-html)
-- [Biblioteca Python PDF a HTML](#python-pdf-to-html)
-- [Python Guardar PDF como HTML](#python-pdf-to-html)
-- [Python Generar HTML desde PDF](#python-pdf-to-html)
-- [Python Crear HTML desde PDF](#python-pdf-to-html)
+1. Configurar opciones de guardado HTML.
+1. Guardar como HTML con imágenes externas.
 
-- [Convertidor Python PDF a HTML](#python-pdf-to-html)
+```python
+from os import path
+import aspose.pdf as apdf
+
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+save_options.special_folder_for_all_images = self.data_dir
+document.save(path_outfile, save_options)
+
+print(infile + " converted into " + outfile)
+```
+
+### Convertir PDF a HTML multipágina
+
+Esta función convierte un archivo PDF en HTML multipágina, donde cada página del PDF se exporta como un archivo HTML separado. Esto hace que la salida sea más fácil de navegar y reduce el tiempo de carga para PDFs grandes.
+
+1. Cargue el PDF de origen usando 'ap.Document'.
+1. Crea 'HtmlSaveOptions' y 'establezca split_into_pages'.
+1. Guarde el documento como HTML con las páginas divididas en archivos separados.
+1. Imprime un mensaje de confirmación.
+
+```python
+from os import path
+import aspose.pdf as apdf
+
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+save_options.split_into_pages = True
+document.save(path_outfile, save_options)
+
+print(infile + " converted into " + outfile)
+```
+
+### Convertir PDF a HTML guardando imágenes SVG en una carpeta especificada
+
+Esta función convierte un PDF a formato HTML mientras almacena todas las imágenes como archivos SVG en una carpeta especificada, en lugar de incrustarlas directamente en el HTML.
+
+1. Cargue el PDF de origen usando 'ap.Document'.
+1. Crea 'HtmlSaveOptions' y 'set special_folder_for_svg_images' en la carpeta de destino.
+1. Guarde el documento como HTML con imágenes SVG externas.
+1. Imprime un mensaje de confirmación.
+
+```python
+from os import path
+import aspose.pdf as apdf
+
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+save_options.special_folder_for_svg_images = self.data_dir
+document.save(path_outfile, save_options)
+
+print(infile + " converted into " + outfile)
+```
+
+### Convertir PDF a HTML y guardar imágenes SVG comprimidas
+
+Este fragmento convierte un PDF a formato HTML, almacenando todas las imágenes como archivos SVG en una carpeta especificada y comprimiéndolas para reducir el tamaño del archivo.
+
+1. Cargue el documento PDF usando 'ap.Document'.
+1. Crear 'HtmlSaveOptions' y:
+   - Establezca 'special_folder_for_svg_images' para almacenar imágenes SVG externamente.
+   - Habilite 'compress_svg_graphics_if_any' para comprimir imágenes SVG.
+1. Guarde el documento como HTML con imágenes SVG externas comprimidas.
+1. Imprime un mensaje de confirmación.
+
+```python
+from os import path
+import aspose.pdf as apdf
+
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+save_options.special_folder_for_svg_images = self.data_dir
+save_options.compress_svg_graphics_if_any = True
+document.save(path_outfile, save_options)
+
+print(infile + " converted into " + outfile)
+```
+
+### Convertir PDF a HTML con control de imágenes ráster incrustadas
+
+Este fragmento convierte un PDF al formato HTML, incrustando imágenes raster como fondos de página PNG. Este enfoque preserva la calidad de la imagen y el diseño de la página dentro del HTML.
+
+1. Cargue el documento PDF usando 'ap.Document'.
+1. Cree 'HtmlSaveOptions' y 'set raster_images_saving_mode' a 'AS_EMBEDDED_PARTS_OF_PNG_PAGE_BACKGROUND'.
+1. Guarde el documento como HTML con imágenes raster incrustadas.
+1. Imprime un mensaje de confirmación.
+
+```python
+from os import path
+import aspose.pdf as apdf
+
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+save_options.raster_images_saving_mode = apdf.HtmlSaveOptions.RasterImagesSavingModes.AS_EMBEDDED_PARTS_OF_PNG_PAGE_BACKGROUND
+document.save(path_outfile, save_options)
+
+print(infile + " converted into " + outfile)
+```
+
+### Convertir PDF a página HTML de contenido solo del cuerpo
+
+Esta función convierte un PDF a formato HTML, generando contenido 'solo cuerpo' sin etiquetas adicionales 'html' o 'head', y divide la salida en páginas separadas.
+
+1. Cargue el documento PDF usando 'ap.Document'.
+1. Crear 'HtmlSaveOptions' y configurar:
+   - 'html_markup_generation_mode = WRITE_ONLY_BODY_CONTENT' para generar solo el contenido del 'body'.
+   - 'split_into_pages' para crear archivos HTML separados para cada página PDF.
+1. Guarde el documento como HTML con las opciones especificadas.
+1. Imprime un mensaje de confirmación.
+
+```python
+from os import path
+import aspose.pdf as apdf
+
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+save_options.html_markup_generation_mode = (
+    apdf.HtmlSaveOptions.HtmlMarkupGenerationModes.WRITE_ONLY_BODY_CONTENT
+)
+save_options.split_into_pages = True
+document.save(path_outfile, save_options)
+
+print(infile + " converted into " + outfile)
+```
+
+### Convertir PDF a HTML con renderizado de texto transparente
+
+Esta función convierte un PDF a formato HTML, renderizando todo el texto como transparente, incluidos los textos con sombra, lo que preserva la fidelidad visual mientras permite una estilización flexible en el HTML de salida.
+
+1. Cargue el documento PDF usando 'ap.Document'.
+1. Crear 'HtmlSaveOptions' y configurar:
+    - 'save_transparent_texts' para renderizar texto normal como transparente.
+    - 'save_shadowed_texts_as_transparent_texts' para renderizar texto sombreado como transparente.
+1. Guarda el documento como HTML con renderizado de texto transparente.
+1. Imprime un mensaje de confirmación.
+
+```python
+from os import path
+import aspose.pdf as apdf
+
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+save_options.save_transparent_texts = True
+save_options.save_shadowed_texts_as_transparent_texts = True
+document.save(path_outfile, save_options)
+
+print(infile + " converted into " + outfile)
+```
+
+### Convertir PDF a HTML con renderizado de capas de documento
+
+Esta función convierte un PDF a formato HTML, preservando las capas del documento al convertir el contenido marcado en capas separadas en el HTML de salida. Esto permite que los elementos en capas (como anotaciones, fondos y superposiciones) se representen con precisión.
+
+1. Cargue el documento PDF usando 'ap.Document'.
+1. Crea 'HtmlSaveOptions' y habilita 'convert_marked_content_to_layers' para preservar capas.
+1. Guarda el documento como HTML con contenido en capas.
+1. Imprime un mensaje de confirmación.
+
+```python
+from os import path
+import aspose.pdf as apdf
+
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+document = apdf.Document(path_infile)
+save_options = apdf.HtmlSaveOptions()
+save_options.convert_marked_content_to_layers = True
+document.save(path_outfile, save_options)
+
+print(infile + " converted into " + outfile)
+```
+

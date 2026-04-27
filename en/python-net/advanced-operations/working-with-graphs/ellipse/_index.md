@@ -1,11 +1,11 @@
 ---
-title: Add Ellipse Object to PDF file
+title: Add Ellipse Shapes to PDF in Python
 linktitle: Add Ellipse
 type: docs
 weight: 60
 url: /python-net/add-ellipse/
-description: This article explains how to create a Ellipse object to your PDF using Aspose.PDF for Python via .NET.
-lastmod: "2025-05-14"
+description: Learn how to draw, fill, and label ellipse shapes in PDF files in Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -21,6 +21,13 @@ Aspose.PDF for Python via .NET supports to add [Ellipse](https://reference.aspos
 This example illustrates how to programmatically draw and customize ellipses within a PDF document using Aspose.PDF for Python via .NET. By leveraging the drawing module, developers can create complex graphical elements with precise control over their appearance and positioning. This capability is essential for applications that require dynamic generation of graphical content within PDFs, such as technical diagrams, charts, or custom illustrations.
 
 ```python
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add circle shapes to PDF in Python](/pdf/python-net/add-circle/)
+- [Add curve shapes to PDF in Python](/pdf/python-net/add-curve/)
+- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
 
     import aspose.pdf as ap
     import aspose.pdf.drawing as drawing
