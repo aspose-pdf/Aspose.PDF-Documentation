@@ -4,33 +4,30 @@ linktitle: AcroForms
 type: docs
 weight: 10
 url: /python-net/acroforms/
-description: With Aspose.PDF for Python you may create a form from scratch, fill the form field in a PDF document, extract data from the form, and etc.
-lastmod: "2025-02-27"
+description: Learn how to create, fill, extract, import, export, and manage AcroForm fields in PDF documents by using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-28"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to work with AcroForms with Python
-Abstract: AcroForms, introduced by Adobe in 1998, represent a unique PDF form technology that is page-oriented and compatible across all platforms. Unlike static or dynamic XFA forms, AcroForms allow for data input through FDF and xFDF formats. Supported by third-party providers, AcroForms can be used to add pages to PDF documents and populate forms with multiple database records, making them versatile for various applications. This technology, part of the PDF 1.2 format specification and supported up to PDF 1.7, offers two methods for integrating data with PDF forms. For practical applications and further learning, resources are available on creating, filling, and extracting AcroForms using Python.
+AlternativeHeadline: Guide to working with AcroForms in Python
+Abstract: This section introduces AcroForms and explains how to work with interactive PDF forms by using Aspose.PDF for Python via .NET. It covers core workflows such as creating forms, filling fields, extracting values, importing and exporting form data, and modifying or removing form fields. These tutorials help you build practical form-processing pipelines for document automation scenarios.
 ---
 
 ## Fundamentals of AcroForms
 
-**AcroForms** - unique PDF form technology from Adobe. AcroForms is a page-oriented form. They first appeared in 1998. They accept input in the form of Data format or FDF and XML form Data format or xFDF. Third-party providers support AcroForms. When Adobe introduced AcroForms, they called them the "PDF form, which is the author of Adobe Acrobat Pro/Standard and is not a special type of static or dynamic XFA form. AcroForms are portable and work on all platforms.```
+AcroForms are interactive, page-oriented PDF forms introduced by Adobe and included in the PDF specification since version 1.2. They are widely supported and can be used for data capture, validation, and exchange in cross-platform workflows.
 
-You can use AcroForms to add additional pages to the PDF form document. Thanks to the concept of Templates, you can use AcroForms to support populating the form with multiple database records.
+In AcroForm-based workflows, form data can be exchanged in formats such as FDF and XFDF. This makes AcroForms suitable for scenarios where you need to prefill fields from external systems, extract submitted values, or synchronize form data between documents.
 
-PDF 1.7 supports two different methods for integrating data and PDF forms.
+Aspose.PDF for Python via .NET provides APIs to create and manage AcroForms programmatically, including filling fields, exporting data, modifying form structure, and adding submit actions.
 
-*AcroForms (also known as Acrobat forms)*, introduced and included in the PDF 1.2 format specification.
+For practical examples, see the following articles:
 
-For more detailed learning of the capabilities of the Java library, see the following articles:
-
-- [Create AcroForm](/pdf/python-net/create-form) - create form from scratch with Python.
-- [Fill AcroForm](/pdf/python-net/fill-form) - fill form field in your PDF document.
-- [Extract AcroForm](/pdf/python-net/extract-form) - get value from all or an individual field of PDF document.
-- [Import and Export Form Data](/pdf/python-net/import-export-form-data/) - how to import and Export Form Data.
-- [Modifying AcroForm](/pdf/python-net/modifying-form/) - modifying AcroForm PDF form fields.
-- [Delete Forms from PDF](/pdf/python-net/remove-form/) - remove Forms from PDF.
-- [Delete Forms from PDF](/pdf/python-net/remove-form/) - remove Forms from PDF.
+- [Create AcroForm](/pdf/python-net/create-form/) - create a form from scratch.
+- [Fill AcroForm](/pdf/python-net/fill-form/) - fill form fields in a PDF document.
+- [Extract AcroForm](/pdf/python-net/extract-form/) - extract values from all fields or a specific field.
+- [Import and Export Form Data](/pdf/python-net/import-export-form-data/) - import and export form data in common formats.
+- [Modifying AcroForm](/pdf/python-net/modifying-form/) - modify AcroForm field properties.
+- [Delete Forms from PDF](/pdf/python-net/remove-form/) - remove form fields from a PDF document.
 - [Posting Forms](/pdf/python-net/posting-form/) - add submit functionality to a PDF form.

@@ -4,17 +4,17 @@ linktitle: Create AcroForm
 type: docs
 weight: 10
 url: /python-net/create-form/
-description: With Aspose.PDF for Python you may create a form from scratch in your PDF file
-lastmod: "2025-02-27"
+description: Create AcroForm fields from scratch in PDF documents by using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-28"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to create AcroForm in PDF using Python
-Abstract: The article provides a guide on how to create a form field in a PDF document using the Aspose.PDF library for Python. It introduces the `Document` class, which contains a `Form` collection for managing form fields. The process to add a form field involves creating the desired field and utilizing the `add` method from the `Form` collection. A specific example is provided to illustrate adding a `TextBoxField` to a PDF document. The example includes detailed code demonstrating the creation of a `TextBoxField`, setting its properties such as position, name, value, border, and color, and subsequently adding it to the document. The modified PDF is then saved with the newly added form field.
+Abstract: This article explains how to create AcroForm fields in PDF documents by using Aspose.PDF for Python via .NET. It covers basic field creation with TextBoxField, multi-widget text box appearance customization, and additional field types such as radio buttons, combo boxes, checkboxes, list boxes, signature fields, and barcode fields. These examples help you build interactive PDF forms for data collection and document automation workflows.
 ---
 
-## Create form from scratch
+## Create Form from Scratch
 
 ### Add Form Field in a PDF Document
 
@@ -27,7 +27,7 @@ To add a form field:
 
 ### Adding TextBoxField
 
-Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
+The following example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
 
 ```python
 import aspose.pdf as ap
@@ -116,7 +116,7 @@ def add_text_box_field_nt(output_file_name):
 
 ## Adding Other Form Fields
 
-The following code snippets shows how to add various types of form fields, such as radio buttons, combo boxes, checkboxes, list boxes, signature fields, and barcode fields, to a PDF document using the Aspose.PDF library for Python. Each function creates a new PDF document, adds a specific form field with defined properties and options, and saves the modified document with the new form field included.
+The following code snippets show how to add various field types, such as radio buttons, combo boxes, checkboxes, list boxes, signature fields, and barcode fields. Each function creates a new PDF document, adds a target field with selected options, and saves the updated file.
 
 1. Add Radio Button Field
 1. Add Combo Box Field
@@ -246,3 +246,10 @@ def add_barcode_field(output_file_name):
     document.form.add(barcode)
     document.save(output_file_name)
 ```
+
+## Related Topics
+
+- [Fill AcroForm](/pdf/python-net/fill-form/)
+- [Extract AcroForm](/pdf/python-net/extract-form/)
+- [Modifying AcroForm](/pdf/python-net/modifying-form/)
+- [Import and Export Form Data](/pdf/python-net/import-export-form-data/)
