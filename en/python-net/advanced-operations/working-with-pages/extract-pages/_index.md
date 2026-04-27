@@ -25,45 +25,14 @@ Extract a specific page from a PDF document and save it as a new file. Using the
 1. Save the new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) with the extracted page to the specified output file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def extract_page(input_file_name, output_file_name):
-    """
-    Extract a single page from a PDF document.
-
-    Demonstrates how to extract a specific page from a PDF document using
-    the Aspose.PDF library. This function extracts page 2 from the input
-    document and saves it as a new file containing only that page.
-
-    Args:
-        input_file_name (str): Path to the input PDF file from which to extract a page.
-        output_file_name (str): Path where the extracted page will be saved.
-
-    Returns:
-        None: The function creates a new PDF containing the extracted page and saves it to the output path.
-
-    Note:
-        - Extracts page 2 (1-based indexing) from the document
-        - Page numbering is 1-based (page 2 is the second page)
-        - The original document is not modified; a new file is created
-        - If the document has fewer than 2 pages, this may raise an error
-
-    Example:
-        >>> extract_page("input.pdf", "output.pdf")
-        # Extracts page 2 from input.pdf and saves result as output.pdf
-    """
-    # Open source PDF as Document
     src_document = ap.Document(input_file_name)
-    # Create destination Document to hold extracted pages
     dst_document = ap.Document()
-    # Add a Page from source to destination using PageCollection API
     dst_document.pages.add(src_document.pages[2])
-    # Save destination Document
     dst_document.save(output_file_name)
 ```
 
@@ -78,40 +47,16 @@ Extract multiple specific pages from a PDF document and save them into a new fil
 1. Save the new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) with the extracted pages to the specified output file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def extract_bunch_pages(input_file_name, output_file_name):
-    """
-    Extract specific pages from a PDF document and save them to a new file.
-
-    This function reads a PDF document, extracts pages 2 and 3 (1-indexed),
-    and saves them to a new PDF file.
-
-    Args:
-        input_file_name (str): Path to the input PDF file to extract pages from.
-        output_file_name (str): Path where the new PDF file with extracted pages will be saved.
-
-    Returns:
-        None
-
-    Note:
-        The function specifically extracts pages 2 and 3 from the source document.
-        Page indexing appears to be 1-based in this implementation.
-    """
-    # Open source Document
     document = ap.Document(input_file_name)
     pages = [2, 3]
-    # Create destination Document
     another_document = ap.Document()
-    # Copy selected Page objects via PageCollection API
     for page_index in pages:
         another_document.pages.add(document.pages[page_index])
-    # Save destination Document
     another_document.save(output_file_name)
 ```
 

@@ -34,29 +34,11 @@ Crop the first [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/p
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to a new output file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def crop_page(input_file_name, output_file_name):
-    """
-    Crops the first page of a PDF document to a specified rectangular area.
-    This function loads a PDF document, defines a new rectangular boundary,
-    and applies this boundary to multiple box types (crop, trim, art, and bleed)
-    of the first page. The modified document is then saved to a new file.
-    Args:
-        input_file_name (str): Path to the input PDF file to be cropped.
-        output_file_name (str): Path where the cropped PDF will be saved.
-    Returns:
-        None
-    Note:
-        The cropping rectangle is set to coordinates (200, 220, 2170, 1520)
-        which defines the visible area of the page. All box types are set
-        to the same dimensions to ensure consistent cropping behavior.
-    """
     document = ap.Document(input_file_name)
 
     new_box = ap.Rectangle(200, 220, 2170, 1520, True)
@@ -86,33 +68,11 @@ Crop the first [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/p
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the specified output file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def crop_page_by_content(input_file_name, output_file_name):
-    """
-    Crops the first page of a PDF document to the bounds of the first image found on that page.
-    This function opens a PDF document, locates the first image on the first page,
-    and sets the page's crop box to match the image's rectangle dimensions. If no
-    images are found, the page remains unchanged.
-    Args:
-        input_file_name (str): Path to the input PDF file to be processed.
-        output_file_name (str): Path where the cropped PDF will be saved.
-    Returns:
-        None
-    Raises:
-        Exception: May raise exceptions related to file I/O operations or PDF processing
-                  if the input file is invalid, corrupted, or inaccessible.
-    Note:
-        - Only processes the first page of the document
-        - Uses the first image found on the page for cropping dimensions
-        - If no images are found, prints a message and saves the document unchanged
-        - Requires the aspose.pdf library (imported as 'ap')
-    """
     document = ap.Document(input_file_name)
     # Find first image on first page using ImagePlacementAbsorber
     absorber = ap.ImagePlacementAbsorber()

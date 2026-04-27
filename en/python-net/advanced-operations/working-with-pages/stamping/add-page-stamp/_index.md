@@ -23,12 +23,9 @@ Aspose.PDF for Python via .NET shows how to apply a page stamp (watermark or ove
 1. Save the modified PDF to the specified output file using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_page_stamp(input_file_name, page_stamp_name, output_file_name):
     # Open PDF document

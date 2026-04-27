@@ -30,21 +30,12 @@ Think of it as cutting out a page from one book and gluing it into another — t
 The following code snippet shows you how to move one page.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def moving_page_from_one_document_to_another(input_file_name, output_file_name):
-    """
-    Move a single page from one PDF document to another.
 
-    Parameters:
-    - input_file_name (str): Path to the source PDF file.
-    - output_file_name (str): Path to the destination PDF file after moving the page.
-    """
     document = ap.Document(input_file_name)
     page = document.pages[2]
     another_document = ap.Document()
@@ -68,24 +59,14 @@ Unlike copying, this operation transfers the selected pages — removing them fr
 The following code snippet shows you how to insert an empty page at the end of a PDF file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def moving_bunch_pages_from_one_document_to_another(input_file_name, output_file_name):
-    """
-    Move a set of pages from one PDF document to another.
-
-    Parameters:
-    - input_file_name (str): Path to the source PDF file.
-    - output_file_name (str): Path to the destination PDF file where selected pages will be saved.
-    """
     src_document = ap.Document(input_file_name)
     dst_document = ap.Document()
-    pages = [1, 3]
+    pages = [1, 2]
     for page_index in pages:
         page = src_document.pages[page_index]
         dst_document.pages.add(page)
@@ -106,29 +87,19 @@ It shows how to move a specific page to a different position within the same doc
 1. Save the modified document as a new file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def moving_page_in_new_location_in_same_document(input_file_name, output_file_name):
-    """
-    Move a page to a new location within the same PDF document.
+    src_document = ap.Document(input_file_name)
 
-    Parameters:
-    - input_file_name (str): Path to the source PDF file.
-    - output_file_name (str): Path to the destination PDF file after moving the page.
-    """
-    srcDocument = ap.Document(input_file_name)
-
-    page = srcDocument.pages[2]
-    srcDocument.pages.add(page)
-    srcDocument.pages.delete(2)
+    page = src_document.pages[2]
+    src_document.pages.add(page)
+    src_document.pages.delete(2)
 
     # Save output file
-    srcDocument.save(output_file_name)
+    src_document.save(output_file_name)
 ```
 
 ## Related Page Topics
