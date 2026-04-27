@@ -31,7 +31,8 @@ import aspose.pdf as ap
 
 
 def validate_pdfa_standard_a1a(input_pdf, output_pdf):
-    _validate_pdfa_standard(input_pdf, output_pdf, ap.PdfFormat.PDF_A_1A)
+    document = ap.Document(input_pdf)
+    document.validate(output_pdf, ap.PdfFormat.PDF_A_1A)
 ```
 
 The following code snippet shows you how to validate PDF document for PDF/A-1b.
@@ -43,7 +44,8 @@ import aspose.pdf as ap
 
 
 def validate_pdfa_standard_a1b(input_pdf, output_pdf):
-    _validate_pdfa_standard(input_pdf, output_pdf, ap.PdfFormat.PDF_A_1B)
+    document = ap.Document(input_pdf)
+    document.validate(output_pdf, ap.PdfFormat.PDF_A_1B)
 ```
 
 ## Working with TOC
