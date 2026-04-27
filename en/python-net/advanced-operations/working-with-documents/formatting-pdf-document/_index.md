@@ -39,44 +39,21 @@ The following code snippet shows you how to get the properties using [Document](
 ```python
 import aspose.pdf as ap
 
-# Open document
-document = ap.Document(input_pdf)
 
-# Get different document properties
-# Position of document's window - Default: false
-print("CenterWindow :", document.center_window)
+def get_document_window(input_pdf, output_pdf):
+    """Print document window metadata for inspection."""
+    document = ap.Document(input_pdf)
 
-# Predominant reading order; determins the position of page
-# When displayed side by side - Default: L2R
-print("Direction :", document.direction)
-
-# Whether window's title bar should display document title
-# If false, title bar displays PDF file name - Default: false
-print("DisplayDocTitle :", document.display_doc_title)
-
-# Whether to resize the document's window to fit the size of
-# First displayed page - Default: false
-print("FitWindow :", document.fit_window)
-
-# Whether to hide menu bar of the viewer application - Default: false
-print("HideMenuBar :", document.hide_menubar)
-
-# Whether to hide tool bar of the viewer application - Default: false
-print("HideToolBar :", document.hide_tool_bar)
-
-# Whether to hide UI elements like scroll bars
-# And leaving only the page contents displayed - Default: false
-print("HideWindowUI :", document.hide_window_ui)
-
-# Document's page mode. How to display document on exiting full-screen mode.
-print("NonFullScreenPageMode :", document.non_full_screen_page_mode)
-
-# The page layout i.e. single page, one column
-print("PageLayout :", document.page_layout)
-
-# How the document should display when opened
-# I.e. show thumbnails, full-screen, show attachment panel
-print("pageMode :", document.page_mode)
+    print("CenterWindow:", document.center_window)
+    print("Direction:", document.direction)
+    print("DisplayDocTitle:", document.display_doc_title)
+    print("FitWindow:", document.fit_window)
+    print("HideMenuBar:", document.hide_menubar)
+    print("HideToolBar:", document.hide_tool_bar)
+    print("HideWindowUI:", document.hide_window_ui)
+    print("NonFullScreenPageMode:", document.non_full_screen_page_mode)
+    print("PageLayout:", document.page_layout)
+    print("PageMode:", document.page_mode)
 ```
 
 ### Set Document Window and Page Display Properties
@@ -105,47 +82,23 @@ Each is used and described in the code below. The following - code snippet shows
 ```python
 import aspose.pdf as ap
 
-# Open document
-document = ap.Document(input_pdf)
 
-# Set different document properties
-# Sepcify to position document's window - Default: false
-document.center_window = True
+def set_document_window(input_pdf, output_pdf):
+    """Set document window properties and save the result."""
+    document = ap.Document(input_pdf)
 
-# Predominant reading order; determins the position of page
-# When displayed side by side - Default: L2R
-document.direction = ap.Direction.R2L
+    document.center_window = True
+    document.direction = ap.Direction.R2L
+    document.display_doc_title = True
+    document.fit_window = True
+    document.hide_menubar = True
+    document.hide_tool_bar = True
+    document.hide_window_ui = True
+    document.non_full_screen_page_mode = ap.PageMode.USE_OC
+    document.page_layout = ap.PageLayout.TWO_COLUMN_LEFT
+    document.page_mode = ap.PageMode.USE_THUMBS
 
-# Specify whether window's title bar should display document title
-# If false, title bar displays PDF file name - Default: false
-document.display_doc_title = True
-
-# Specify whether to resize the document's window to fit the size of
-# First displayed page - Default: false
-document.fit_window = True
-
-# Specify whether to hide menu bar of the viewer application - Default: false
-document.hide_menubar = True
-
-# Specify whether to hide tool bar of the viewer application - Default: false
-document.hide_tool_bar = True
-
-# Specify whether to hide UI elements like scroll bars
-# And leaving only the page contents displayed - Default: false
-document.hide_window_ui = True
-
-# Document's page mode. specify how to display document on exiting full-screen mode.
-document.non_full_screen_page_mode = ap.PageMode.USE_OC
-
-# Specify the page layout i.e. single page, one column
-document.page_layout = ap.PageLayout.TWO_COLUMN_LEFT
-
-# Specify how the document should display when opened
-# I.e. show thumbnails, full-screen, show attachment panel
-document.page_mode = ap.PageMode.USE_THUMBS
-
-# Save updated PDF file
-document.save(output_pdf)
+    document.save(output_pdf)
 ```
 
 ### Embedding Standard Type 1 Fonts
@@ -155,18 +108,19 @@ Some PDF documents have fonts from a special Adobe font set. Fonts from this set
 ```python
 import aspose.pdf as ap
 
-# Load an existing PDF Document
-document = ap.Document(input_pdf)
-# Set EmbedStandardFonts property of document
-document.embed_standard_fonts = True
-for page in document.pages:
-    if page.resources.fonts != None:
-        for page_font in page.resources.fonts:
-            # Check if font is already embedded
-            if not page_font.is_embedded:
-                page_font.is_embedded = True
 
-document.save(output_pdf)
+def embedded_fonts(input_pdf, output_pdf):
+    """Ensure fonts in an existing PDF are embedded."""
+    document = ap.Document(input_pdf)
+    document.embed_standard_fonts = True
+
+    for page in document.pages:
+        if page.resources.fonts:
+            for page_font in page.resources.fonts:
+                if not page_font.is_embedded:
+                    page_font.is_embedded = True
+
+    document.save(output_pdf)
 ```
 
 ### Embedding Fonts while creating PDF
@@ -180,23 +134,22 @@ We use the property 'is_embedded' to embed the font information into PDF file. S
 ```python
 import aspose.pdf as ap
 
-# Instantiate Pdf object by calling its empty constructor
-doc = ap.Document()
 
-# Create a section in the Pdf object
-page = doc.pages.add()
+def embedded_fonts_in_new_document(input_pdf, output_pdf):
+    """Embed fonts while generating a document from scratch."""
+    document = ap.Document()
+    page = document.pages.add()
 
-fragment = ap.text.TextFragment("")
-segment = ap.text.TextSegment(" This is a sample text using Custom font.")
-ts = ap.text.TextState()
-ts.font = ap.text.FontRepository.find_font("Arial")
-ts.font.is_embedded = True
-segment.text_state = ts
-fragment.segments.append(segment)
-page.paragraphs.add(fragment)
+    fragment = ap.text.TextFragment("")
+    segment = ap.text.TextSegment(" This is a sample text using Custom font.")
+    text_state = ap.text.TextState()
+    text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_state.font.is_embedded = True
+    segment.text_state = text_state
+    fragment.segments.append(segment)
+    page.paragraphs.add(fragment)
 
-# Save PDF Document
-doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
 ### Set Default Font Name while Saving PDF
@@ -206,14 +159,14 @@ When a PDF document contains fonts, which are not available in the document itse
 ```python
 import aspose.pdf as ap
 
-# Load an existing PDF document with missing font
-document = ap.Document(input_pdf)
 
-pdfSaveOptions = ap.PdfSaveOptions()
-# Specify Default Font Name
-newName = "Arial"
-pdfSaveOptions.default_font_name = newName
-document.save(output_pdf, pdfSaveOptions)
+def set_default_font(input_pdf, output_pdf):
+    """Assign a fallback font when saving a PDF."""
+    document = ap.Document(input_pdf)
+
+    save_options = ap.PdfSaveOptions()
+    save_options.default_font_name = "Arial"
+    document.save(output_pdf, save_options)
 ```
 
 ### Get All Fonts from PDF Document
@@ -223,10 +176,12 @@ In case you want to get all fonts from a PDF document, you can use [font_utiliti
 ```python
 import aspose.pdf as ap
 
-doc = ap.Document(input_pdf)
-fonts = doc.font_utilities.get_all_fonts()
-for font in fonts:
-    print(font.font_name)
+
+def get_all_fonts(input_pdf, output_pdf):
+    """Print all fonts referenced by a document."""
+    document = ap.Document(input_pdf)
+    for font in document.font_utilities.get_all_fonts():
+        print(font.font_name)
 ```
 
 ### Improve Fonts Embedding using FontSubsetStrategy
@@ -236,12 +191,17 @@ Following code snippet shows how to set [FontSubsetStrategy](https://reference.a
 ```python
 import aspose.pdf as ap
 
-doc = ap.Document(input_pdf)
-# All fonts will be embedded as subset into document in case of SubsetAllFonts.
-doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
-# Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
-doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY)
-doc.save(output_pdf)
+
+def improve_fonts_embedding(input_pdf, output_pdf):
+    """Apply different font subset strategies to reduce file size."""
+    document = ap.Document(input_pdf)
+
+    document.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
+    document.font_utilities.subset_fonts(
+        ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY
+    )
+
+    document.save(output_pdf)
 ```
 
 ### Get-Set Zoom Factor of PDF File
@@ -257,15 +217,16 @@ The following code snippet shows how to set the zoom factor of a PDF file.
 ```python
 import aspose.pdf as ap
 
-# Instantiate new Document object
-doc = ap.Document(input_pdf)
 
-action = ap.annotations.GoToAction(
-    ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5)
-)
-doc.open_action = action
-# Save the document
-doc.save(output_pdf)
+def set_zoom_factor(input_pdf, output_pdf):
+    """Set an initial zoom level via document open action."""
+    document = ap.Document(input_pdf)
+
+    action = ap.annotations.GoToAction(
+        ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5)
+    )
+    document.open_action = action
+    document.save(output_pdf)
 ```
 
 #### Get Zoom Factor
@@ -275,43 +236,16 @@ The following code snippet shows how to get a PDF file's zoom factor.
 ```python
 import aspose.pdf as ap
 
-# Instantiate new Document object
-doc = ap.Document(input_pdf)
 
-# Create GoToAction object
-action = doc.open_action
+def get_zoom_factor(input_pdf, output_pdf):
+    """Print the zoom level configured in the document open action."""
+    document = ap.Document(input_pdf)
 
-# Get the Zoom factor of PDF file
-print(action.destination.zoom)
-```
-
-### Setting Print Dialog Preset Properties
-
-Aspoose.PDF allows setting the [DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members) members of a PDF document. It allows you to change the DuplexMode property for a PDF document which is set to simplex by default. This can be achieved using two different methodologies as shown below.
-
-```python
-import aspose.pdf as ap
-
-doc = ap.Document()
-doc.pages.add()
-doc.duplex = ap.PrintDuplex.DUPLEX_FLIP_LONG_EDGE
-doc.save(output_pdf)
-```
-
-### Setting Print Dialog Preset Properties using PDF Content Editor
-
-```python
-import aspose.pdf as ap
-
-ed = ap.facades.PdfContentEditor()
-ed.bind_pdf(input_pdf)
-if (
-    ed.get_viewer_preference() & ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE
-) > 0:
-    print("The file has duplex flip short edge")
-
-ed.change_viewer_preference(ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE)
-ed.save(output_pdf)
+    action = document.open_action
+    if action and action.destination:
+        print("Zoom:", action.destination.zoom)
+    else:
+        print("Zoom: not set")
 ```
 
 ## Related Document Topics
@@ -320,4 +254,3 @@ ed.save(output_pdf)
 - [Create PDF files in Python](/pdf/python-net/create-pdf-document/)
 - [Manipulate PDF documents in Python](/pdf/python-net/manipulate-pdf-document/)
 - [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)
-
