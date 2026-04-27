@@ -30,26 +30,30 @@ This code snippet opens an existing PDF file, scans each page for tables, and ex
 This example reads a PDF, finds all tables, and prints out their cell contents row by row.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_infile = path.join(self.data_dir, infile)
-    document = ap.Document(path_infile)
+def extract(infile: str) -> None:
+    """Extract and print all tables from a PDF file."""
+    document = ap.Document(infile)
     for page in document.pages:
         absorber = ap.text.TableAbsorber()
         absorber.visit(page)
         for table in absorber.table_list:
             print("Table ----")
             for row in table.row_list:
-                print("Row")
+                print("Row:")
+                row_txt = ""
                 for cell in row.cell_list:
+                    cell_txt = ""
                     text_fragment_collection = cell.text_fragments
                     for fragment in text_fragment_collection:
-                        txt = ""
                         for seg in fragment.segments:
-                            txt += seg.text
-                        print(txt)
+                            cell_txt += seg.text
+                    row_txt += " | "
+                    row_txt += cell_txt
+                print(row_txt)
 ```
 
 ## Related Table Topics
