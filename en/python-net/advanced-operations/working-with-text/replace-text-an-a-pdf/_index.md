@@ -406,39 +406,11 @@ By using TextFragmentAbsorber, the code efficiently scans the entire document an
 1. Save the Updated Document.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def remove_all_text_using_absorber1(infile, outfile):
-    """
-    Remove all text from a PDF using TextFragmentAbsorber.
-
-    Demonstrates complete text removal from an entire PDF document,
-    leaving only non-text elements like images, shapes, and layout
-    structures intact.
-
-    Args:
-        infile (str): Path to the input PDF file to process.
-        outfile (str): Path where the text-free PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Removes all text content from the entire document
-        - Preserves images, graphics, and page structure
-        - Uses document-level text removal for complete cleanup
-        - Useful for creating templates or removing sensitive text
-        - Maintains page layout and non-text elements
-
-    Example:
-        >>> remove_all_text_using_absorber1("input.pdf", "no_text.pdf")
-        # Creates a PDF with all text removed but graphics preserved
-    """
     with ap.Document(infile) as document:
         absorber = ap.text.TextFragmentAbsorber()
         absorber.remove_all_text(document)
