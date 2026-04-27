@@ -44,7 +44,9 @@ def save_document_to_stream(infile, outfile):
         document.save(stream)
 ```
 
-## Save document as PDF/X-3 standard
+## Save PDF/A or PDF/X format
+
+You can easily save a document in a specific version of PDF, like PDF/A or PDF/X. In this case, we need to call the convert method before saving the document.
 
 PDF/A is an ISO-standardized version of the Portable Document Format (PDF) for use in archiving and long-term preservation of electronic documents.
 PDF/A differs from PDF in that it prohibits features not suitable for long-term archiving, such as font linking (as opposed to font embedding) and encryption. ISO requirements for PDF/A viewers include color management guidelines, embedded font support, and a user interface for reading embedded annotations.
