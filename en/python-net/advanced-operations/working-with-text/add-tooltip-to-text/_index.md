@@ -30,41 +30,13 @@ Use this page when you need to make PDF text more interactive by adding hover he
 1. Save the final document.
 
 ```python
-import os
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
+import sys
+from os import path
 
-# Global configuration
-DATA_DIR = "your path here"
-
-
+# region PDF Tooltip
 def add_tool_tip_to_searched_text(outfile):
-    """
-    Add tooltips to searched text in a PDF document.
-
-    Creates a PDF with text fragments and adds invisible button fields over them
-    to display tooltips when users hover with their mouse cursor. Demonstrates
-    both short and long tooltip text implementations.
-
-    Args:
-        outfile (str): Path where the PDF with tooltips will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with tooltip functionality.
-
-    Note:
-        - Creates invisible ButtonField elements over text fragments
-        - Uses alternate_name property to define tooltip content
-        - Supports both short and very long tooltip text
-        - TextFragmentAbsorber finds specific text to add tooltips to
-        - Tooltips appear on mouse hover in PDF viewers that support this feature
-        - Long tooltips demonstrate Lorem ipsum text for extensive content
-
-    Example:
-        >>> add_tool_tip_to_searched_text("tooltips.pdf")
-        # Creates a PDF with interactive text tooltips
-    """
-
     # Create PDF document
     with ap.Document() as document:
         document.pages.add().paragraphs.add(
@@ -138,42 +110,12 @@ Add interactive floating text to a PDF document. It overlays an invisible [`Butt
 1. Save the Final Document.
 
 ```python
-import os
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def create_hidden_text_block(outfile):
-    """
-    Create a hidden text block that appears on mouse hover.
-
-    Demonstrates advanced interactive PDF functionality by creating a hidden
-    text field that becomes visible when users hover over specific text.
-    Uses mouse enter/exit actions to control visibility.
-
-    Args:
-        outfile (str): Path where the PDF with hidden text functionality will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with floating text capability.
-
-    Note:
-        - Creates a hidden TextBoxField with floating text content
-        - Uses HideAction to control field visibility on mouse events
-        - ButtonField acts as invisible trigger area over target text
-        - Field is initially hidden and appears on mouse enter
-        - Supports custom styling: colors, borders, fonts
-        - Read-only field prevents user editing of floating text
-        - Demonstrates advanced PDF interactivity features
-
-    Example:
-        >>> create_hidden_text_block("floating_text.pdf")
-        # Creates a PDF with text that reveals hidden content on hover
-    """
-
     # Create PDF document
     with ap.Document() as document:
         #  Add paragraph with text

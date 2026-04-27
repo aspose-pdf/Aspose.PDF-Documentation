@@ -28,40 +28,11 @@ The [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/float
 1. Save the final PDF document using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
-import math
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def create_and_add_floating_box(outfile):
-    """
-    Create and add a basic floating box to a PDF document.
-
-    Demonstrates the fundamental usage of FloatingBox to create a bordered
-    text container with Lorem ipsum content. Shows basic box creation,
-    styling, and text content addition.
-
-    Args:
-        outfile (str): Path where the PDF with floating box will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with a floating box.
-
-    Note:
-        - Creates a FloatingBox with dimensions 400x30
-        - Applies dark green border with 1.5 width
-        - Sets is_need_repeating to False for single occurrence
-        - Contains Lorem ipsum text fragment
-        - Demonstrates basic floating box functionality
-
-    Example:
-        >>> create_and_add_floating_box("basic_floating_box.pdf")
-        # Creates a PDF with a simple bordered floating text box
-    """
-
     # Create PDF document
     with ap.Document() as document:
         # Add page to pages collection of PDF
@@ -102,39 +73,11 @@ If we set this property to `True` the text will reflow to subsequent pages in th
 * `column_count` is a number of columns.
 
 ```python
-import math
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def multi_column_layout(outfile):
-    """
-    Create a multi-column layout using FloatingBox.
-
-    Demonstrates advanced layout capabilities by creating a three-column
-    text layout within a floating box. Shows dynamic width calculation
-    and column spacing configuration.
-
-    Args:
-        outfile (str): Path where the PDF with multi-column layout will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with multi-column text.
-
-    Note:
-        - Creates 3 equal-width columns with 10-unit spacing
-        - Calculates column width based on page margins and spacing
-        - Uses is_need_repeating for content continuation across columns
-        - Adds multiple Lorem ipsum paragraphs for column demonstration
-        - Automatically distributes content across columns
-
-    Example:
-        >>> multi_column_layout("multi_column.pdf")
-        # Creates a PDF with text arranged in three columns
-    """
     # Create PDF document
     with ap.Document() as document:
         # Add page to pages collection of PDF
@@ -184,40 +127,11 @@ We used the additional library LoremNET in the above example and created 20 para
 We will do the same with the following example as the previous one. The difference is that we created 3 paragraphs. We can force FloatingBox to render each paragraph in the new column. To do that we need to set `is_first_paragraph_in_column` when we adding text to the FloatingBox object.
 
 ```python
-import math
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def multi_column_layout_2(outfile):
-    """
-    Create a multi-column layout with paragraph column control.
-
-    Demonstrates advanced multi-column layout with explicit control over
-    paragraph positioning within columns. Uses is_first_paragraph_in_column
-    to control text flow and column breaks.
-
-    Args:
-        outfile (str): Path where the PDF with controlled multi-column layout will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with controlled column text.
-
-    Note:
-        - Creates 3 equal-width columns with 10-unit spacing
-        - Uses is_first_paragraph_in_column for explicit column control
-        - Calculates column width dynamically based on page dimensions
-        - Demonstrates precise paragraph positioning within columns
-        - Shows advanced column layout management techniques
-
-    Example:
-        >>> multi_column_layout_2("controlled_columns.pdf")
-        # Creates a PDF with precisely controlled multi-column text flow
-    """
-
     # Create PDF document
     with ap.Document() as document:
         # Add page to pages collection of PDF
@@ -270,40 +184,11 @@ A `FloatingBox` is a container for text or other elements, and by assigning a [`
 This code snippet shows how to create a simple light green text box with sample content.
 
 ```python
-import math
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def background_support(outfile):
-    """
-    Demonstrate FloatingBox background color support.
-
-    Shows how to apply background colors to floating boxes to create
-    visually distinct text containers. Demonstrates basic styling
-    capabilities for enhanced visual presentation.
-
-    Args:
-        outfile (str): Path where the PDF with colored background box will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with a colored floating box.
-
-    Note:
-        - Applies light green background color to the floating box
-        - Creates a 400x30 box with sample text content
-        - Sets is_need_repeating to False for single occurrence
-        - Demonstrates visual styling options for floating boxes
-        - Shows how background colors enhance text presentation
-
-    Example:
-        >>> background_support("colored_background.pdf")
-        # Creates a PDF with a light green background floating box
-    """
-
     # Create PDF document
     with ap.Document() as document:
         # Add page to pages collection of PDF
@@ -333,40 +218,11 @@ The location is determined by previously placed elements; adding an element affe
 The location is specified by the `Left` and `Top` values; it does not depend on previous elements and does not affect the location of subsequent ones.
 
 ```python
-import math
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def offset_support(outfile):
-    """
-    Demonstrate FloatingBox positioning and offset support.
-
-    Shows how to position floating boxes at specific coordinates using
-    absolute positioning mode. Demonstrates integration of floating boxes
-    with regular text content and precise layout control.
-
-    Args:
-        outfile (str): Path where the PDF with positioned floating box will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with positioned floating box.
-
-    Note:
-        - Uses absolute positioning mode for precise box placement
-        - Sets box position to top=45, left=15 coordinates
-        - Creates bordered box with dark green border
-        - Integrates floating box with regular text paragraphs
-        - Demonstrates layered content with mixed positioning
-
-    Example:
-        >>> offset_support("positioned_box.pdf")
-        # Creates a PDF with a floating box at specific coordinates
-    """
-
     # Create PDF document
     with ap.Document() as document:
         # Add page to pages collection of PDF
@@ -397,40 +253,11 @@ Align `FloatingBox` elements within a PDF page using different [`VerticalAlignme
 1. Save the Document.
 
 ```python
-import math
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def align_text_to_float(outfile):
-    """
-    Demonstrate text alignment options for FloatingBox elements.
-
-    Shows different vertical and horizontal alignment options for floating
-    boxes. Creates multiple boxes with different alignment settings to
-    demonstrate positioning flexibility.
-
-    Args:
-        outfile (str): Path where the PDF with aligned floating boxes will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with variously aligned boxes.
-
-    Note:
-        - Creates three 100x100 floating boxes with different alignments
-        - First box: bottom-right alignment
-        - Second box: center-right alignment
-        - Third box: top-right alignment
-        - All boxes have blue borders for visual distinction
-        - Demonstrates comprehensive alignment control options
-
-    Example:
-        >>> align_text_to_float("aligned_boxes.pdf")
-        # Creates a PDF with floating boxes in different alignment positions
-    """
     # Create PDF document
     with ap.Document() as document:
         # Add page to pages collection of PDF
