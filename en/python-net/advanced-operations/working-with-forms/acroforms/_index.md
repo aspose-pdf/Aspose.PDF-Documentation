@@ -32,3 +32,5 @@ For more detailed learning of the capabilities of the Java library, see the foll
 - [Import and Export Form Data](/pdf/python-net/import-export-form-data/) - how to import and Export Form Data.
 - [Modifying AcroForm](/pdf/python-net/modifying-form/) - modifying AcroForm PDF form fields.
 - [Delete Forms from PDF](/pdf/python-net/remove-form/) - remove Forms from PDF.
+- [Delete Forms from PDF](/pdf/python-net/remove-form/) - remove Forms from PDF.
+- [Posting Forms](/pdf/python-net/posting-form/) - add submit functionality to a PDF form.

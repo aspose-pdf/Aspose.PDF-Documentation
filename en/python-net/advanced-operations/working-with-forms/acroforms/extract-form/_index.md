@@ -23,24 +23,17 @@ To get values from all the fields in a PDF document, you need to navigate throug
 The following Python code snippets show how to get the values of all the fields from a PDF document.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def get_values_from_all_fields(input_file_name):
+    form = ap.facades.Form(input_file_name)
 
-    # Construct the full path to the input PDF file
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-
-    # Create a Form object from the PDF file
-    form = ap.facades.Form(path_infile)
-
-    # Initialize an empty dictionary to store form values
     form_values = {}
+    for field_name in form.field_names:
+        form_values[field_name] = form.get_field(field_name)
 
-    # Iterate through all form fields in the PDF
-    for formField in form.field_names:
-        # Retrieve the value for each form field and store in the dictionary
-        form_values[formField] = form.get_field(formField)
-
-    # Print and return the extracted form values
     print(form_values)
+    return form_values
 ```

@@ -24,18 +24,15 @@ This code removes all form elements from the first page of a PDF document and th
 1. Save the updated document.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import os
-
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(data_dir, infile)
-    path_outfile = os.path.join(data_dir, outfile)
-
-    document = ap.Document(path_infile)
+def remove_all_forms(input_file_name, page_num, output_file_name):
+    document = ap.Document(input_file_name)
     forms = document.pages[page_num].resources.forms
     forms.clear()
-    document.save(path_outfile)
+    document.save(output_file_name)
 ```
 
 ## Remove Specified Form
@@ -50,19 +47,16 @@ Next example iterates through the form objects on a given PDF page, identifies t
 1. Save the updated document.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import os
-
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-    path_outfile = os.path.join(work_dir, outfile)
-
-    document = ap.Document(path_infile)
+def remove_specified_form(input_file_name, page_num, output_file_name):
+    document = ap.Document(input_file_name)
     forms = document.pages[page_num].resources.forms
     for form in forms:
-        if (form.it == "Typewriter" and form.subtype == "Form"):
+        if form.it == "Typewriter" and form.subtype == "Form":
             name = forms.get_form_name(form)
             forms.delete(name)
-    document.save(path_outfile)
+    document.save(output_file_name)
 ```
