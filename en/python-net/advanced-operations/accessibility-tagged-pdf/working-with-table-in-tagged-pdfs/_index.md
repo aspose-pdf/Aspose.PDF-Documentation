@@ -28,11 +28,10 @@ The following code snippet shows, how to create a table in the Tagged PDF docume
 
 ```python
 import aspose.pdf as ap
+import sys
+from os import path
 
-
-# region Working with Table in Tagged PDFs
 def create_table(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -148,10 +147,10 @@ The following code snippet shows how to style a table in Tagged PDF document:
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def style_table(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -243,10 +242,10 @@ The following code snippet shows how to style a table row in the Tagged PDF docu
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def style_table_row(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -324,10 +323,10 @@ The following code snippet shows how to style a table cell in the Tagged PDF doc
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def style_table_cell(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -422,10 +421,10 @@ The following code snippet shows how to adjust table position in the Tagged PDF 
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def adjust_table_position(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         # Create tagged content
