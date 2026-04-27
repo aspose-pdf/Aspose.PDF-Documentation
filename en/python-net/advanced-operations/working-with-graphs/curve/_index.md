@@ -33,8 +33,6 @@ Follow the steps below:
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_curve(outfile: str):
     document = ap.Document()
@@ -61,8 +59,7 @@ This example shows how to add a Curve object that is filled with color.
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
+
 
 def add_curve_filled(outfile: str):
     document = ap.Document()

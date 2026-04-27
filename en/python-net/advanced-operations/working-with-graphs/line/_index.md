@@ -30,8 +30,7 @@ Follow the steps below:
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
+
 
 def add_line(outfile: str):
     document = ap.Document()

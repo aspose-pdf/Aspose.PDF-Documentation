@@ -54,8 +54,6 @@ The following code snippet shows how to add a [Ellipse](https://reference.aspose
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def create_ellipse_filled(outfile: str):
     document = ap.Document()
@@ -84,8 +82,6 @@ Aspose.PDF for Python via .NET supports to add text inside the Graph Object. Tex
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_text_inside_ellipse(outfile: str):
     document = ap.Document()
@@ -112,7 +108,6 @@ def add_text_inside_ellipse(outfile: str):
 ```
 
 ![Text inside Ellipse](text_ellipse.png)
-
 
 ## Related Graph Topics
 

@@ -156,8 +156,28 @@ The following code snippet shows the steps to render [Rectangle](https://referen
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
+
+
+def _add_rectangle_to_page(
+    page: ap.Page,
+    x: float,
+    y: float,
+    width: float,
+    height: float,
+    color: ap.Color,
+    zindex: int,
+):
+    graph = drawing.Graph(width, height)
+    graph.is_change_position = False
+    graph.left = x
+    graph.top = y
+    rect = drawing.Rectangle(0, 0, width, height)
+    rect.graph_info.fill_color = color
+    rect.graph_info.color = color
+    graph.shapes.add(rect)
+    graph.z_index = zindex
+    page.paragraphs.add(graph)
+
 
 def control_z_order_of_rectangle(outfile: str):
     document = ap.Document()
