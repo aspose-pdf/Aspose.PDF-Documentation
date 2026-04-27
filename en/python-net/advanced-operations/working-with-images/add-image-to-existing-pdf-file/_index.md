@@ -219,4 +219,5 @@ def add_image_to_pdf_with_flate_compression(image_file, outfile):
 - [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
 - [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
 - [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
 - [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)

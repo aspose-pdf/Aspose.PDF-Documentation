@@ -280,3 +280,10 @@ def extract_image_alt_text(infile):
         lines = image_placement.image.get_alternative_text(page)
         print("Alt Text: " + lines[0])
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
+- [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)

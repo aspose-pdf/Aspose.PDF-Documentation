@@ -77,3 +77,9 @@ def replace_image_with_absorber(infile, image_file, outfile):
 
     document.save(outfile)
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)

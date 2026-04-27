@@ -160,3 +160,5 @@ from os import path
 - [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
 - [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
 - [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
+
