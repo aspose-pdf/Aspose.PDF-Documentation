@@ -214,7 +214,7 @@ def add_image_to_pdf_with_flate_compression(image_file, outfile):
     document.save(outfile)
 ```
 
-## Related Topics
+## Related Image Topics
 
 - [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
 - [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
