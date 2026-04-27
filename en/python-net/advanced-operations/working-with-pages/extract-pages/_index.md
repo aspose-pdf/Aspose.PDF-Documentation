@@ -5,13 +5,13 @@ type: docs
 weight: 80
 url: /python-net/extract-pages/
 description: Learn how to extract single or multiple PDF pages into new files in Python.
-lastmod: "2026-04-15"
+lastmod: "2026-04-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to extract PDF pages using Python
-Abstract: This article demonstrates how to extract pages from a PDF document using the Aspose.PDF library for Python. The techniques cover both single-page extraction and multi-page extraction, allowing developers to create new PDF files containing only selected pages. The examples illustrate how to access specific pages by 1-based indexing, copy them to a new PDF document, and save the results while keeping the original document intact. These methods are useful for splitting large documents, sharing selected sections, or creating customized PDF subsets for distribution or analysis.
+Abstract: This article explains how to extract pages from PDF files using Aspose.PDF for Python via .NET. Learn how to copy a single page or multiple pages into a new document by using 1-based page indexing and the PageCollection API.
 ---
 
 ## Extract Single Page from a PDF
@@ -25,11 +25,9 @@ Extract a specific page from a PDF document and save it as a new file. Using the
 1. Save the new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) with the extracted page to the specified output file.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
-def extract_page(input_file_name, output_file_name):
+def extract_page(input_file_name: str, output_file_name: str) -> None:
     src_document = ap.Document(input_file_name)
     dst_document = ap.Document()
     dst_document.pages.add(src_document.pages[2])
@@ -47,11 +45,9 @@ Extract multiple specific pages from a PDF document and save them into a new fil
 1. Save the new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) with the extracted pages to the specified output file.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
-def extract_bunch_pages(input_file_name, output_file_name):
+def extract_multiple_pages(input_file_name: str, output_file_name: str) -> None:
     document = ap.Document(input_file_name)
     pages = [2, 3]
     another_document = ap.Document()
