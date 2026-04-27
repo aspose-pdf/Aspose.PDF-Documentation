@@ -84,18 +84,34 @@ def extract_image_types_from_pdf(infile):
         Prints total images count, color type for each image, and resolution info.        
     """
 
-    with ap.Document(infile) as document:
-        absorber = ap.ImagePlacementAbsorber()
-        document.pages[1].accept(absorber)
+    document = ap.Document(infile)
+    absorber = ap.ImagePlacementAbsorber()
 
-        for image_placement in absorber.image_placements:
-            # Display image placement properties for all placements
-            print("image width: " + str(image_placement.rectangle.width))
-            print("image height: " + str(image_placement.rectangle.height))
-            print("image LLX: " + str(image_placement.rectangle.llx))
-            print("image LLY: " + str(image_placement.rectangle.lly))
-            print("image horizontal resolution: " + str(image_placement.resolution.x))
-            print("image vertical resolution: " + str(image_placement.resolution.y))
+    # Counters for grayscale and RGB images
+    grayscaled = 0
+    rgb = 0
+
+    document.pages[1].accept(absorber)
+
+    print("--------------------------------")
+    print("Total Images = " + str(len(absorber.image_placements)))
+
+    image_counter = 1
+
+    for image_placement in absorber.image_placements:
+        # Determine the color type of the image
+        colorType = image_placement.image.get_color_type()
+        if colorType == ap.ColorType.GRAYSCALE:
+            grayscaled += 1
+            print(f"Image {image_counter} is Grayscale...")
+        elif colorType == ap.ColorType.RGB:
+            rgb += 1
+            print(f"Image {image_counter} is RGB...")
+        image_counter += 1
+
+    print("--------------------------------")
+    print("Grayscale Images = " + str(grayscaled))
+    print("RGB Images = " + str(rgb))
 
 ## Extract Detailed Image Information from a PDF
 
