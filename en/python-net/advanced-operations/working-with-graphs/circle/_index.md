@@ -29,39 +29,23 @@ Follow the steps below:
 1. Save our PDF file.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create PDF document
+def add_circle(outfile: str):
     document = ap.Document()
-
-    # Add page
     page = document.pages.add()
-
-    # Create Drawing object with certain dimensions
     graph = drawing.Graph(400, 200)
+    graph.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
 
-    # Set border for Drawing object
-    border_info = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
-    graph.border = border_info
-
-    # Create a circle with the specified coordinates and radius
     circle = drawing.Circle(100, 100, 40)
-
-    # Set the circle's color
-    circle.graph_info = drawing.GraphInfo()
     circle.graph_info.color = ap.Color.green_yellow
-
-    # Add the circle to the graph shapes
     graph.shapes.add(circle)
 
-    # Add Graph object to paragraphs collection of page
     page.paragraphs.add(graph)
-
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 Our drawn circle will look like this:
@@ -73,39 +57,25 @@ Our drawn circle will look like this:
 This example shows how to add a Circle object that is filled with color.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create PDF document
+def add_circle_filled(outfile: str):
     document = ap.Document()
-
-    # Add page
     page = document.pages.add()
-
-    # Create Drawing object with certain dimensions
     graph = drawing.Graph(400, 200)
+    graph.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
 
-    # Set border for Drawing object
-    border_info = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
-    graph.border = border_info
-
-    # Create a filled circle
     circle = drawing.Circle(100, 100, 40)
-    circle.graph_info = drawing.GraphInfo()
     circle.graph_info.color = ap.Color.green_yellow
     circle.graph_info.fill_color = ap.Color.green
     circle.text = ap.text.TextFragment("Circle")
-
-    # Add the circle to the graph shapes
     graph.shapes.add(circle)
 
-    # Add Graph object to paragraphs collection of page
     page.paragraphs.add(graph)
-
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 Let's see the result of adding a filled Circle:

@@ -31,45 +31,31 @@ Follow the steps below:
 The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/arc/) object.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create PDF document
+def add_arc(outfile: str):
     document = ap.Document()
-
-    # Add page
     page = document.pages.add()
-
-    # Create Drawing object with certain dimensions
     graph = drawing.Graph(400, 400)
+    graph.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
 
-    # Set border for Drawing object
-    border_info = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
-    graph.border = border_info
-
-    # Create arcs and set their properties
     arc1 = drawing.Arc(100, 100, 95, 0, 90)
-    arc1.graph_info = drawing.GraphInfo()
     arc1.graph_info.color = ap.Color.green_yellow
     graph.shapes.add(arc1)
 
     arc2 = drawing.Arc(100, 100, 90, 70, 180)
-    arc2.graph_info = drawing.GraphInfo()
     arc2.graph_info.color = ap.Color.dark_blue
     graph.shapes.add(arc2)
 
     arc3 = drawing.Arc(100, 100, 85, 120, 210)
-    arc3.graph_info = drawing.GraphInfo()
     arc3.graph_info.color = ap.Color.red
     graph.shapes.add(arc3)
 
-    # Add Graph object to paragraphs collection of page
     page.paragraphs.add(graph)
-
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ## Create Filled Arc Object
@@ -77,41 +63,28 @@ The following code snippet shows how to add a [Arc](https://reference.aspose.com
 Next example shows how to add a Arc object that is filled with color and certain dimensions.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create PDF document
+def add_arc_filled(outfile: str):
     document = ap.Document()
-
-    # Add page
     page = document.pages.add()
-
-    # Create Drawing object with certain dimensions
     graph = drawing.Graph(400, 400)
+    graph.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
 
-    # Set border for Drawing object
-    border_info = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
-    graph.border = border_info
-
-    # Create an arc and set fill color
     arc = drawing.Arc(100, 100, 95, 0, 90)
-    arc.graph_info = drawing.GraphInfo()
+
     arc.graph_info.fill_color = ap.Color.green_yellow
     graph.shapes.add(arc)
 
-    # Create a line and set fill color
     line = drawing.Line([195, 100, 100, 100, 100, 195])
-    line.graph_info = drawing.GraphInfo()
     line.graph_info.fill_color = ap.Color.green_yellow
     graph.shapes.add(line)
 
-    # Add Graph object to the paragraphs collection of page
     page.paragraphs.add(graph)
-
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 Let's see the result of adding a filled Arс:
