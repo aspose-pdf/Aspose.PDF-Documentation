@@ -4,8 +4,8 @@ linktitle: Add Image
 type: docs
 weight: 10
 url: /python-net/add-image-to-existing-pdf-file/
-description: This section describes how to add image to existing PDF file using Python library.
-lastmod: "2025-09-27"
+description: Learn how to add images to existing PDF files in Python.
+lastmod: "2026-04-17"
 TechArticle: true 
 AlternativeHeadline: How to add images into PDF using Python
 Abstract: This article provides guidance on adding images to existing PDF files using Python with the Aspose.PDF library. Two methods are outlined for achieving this. The first method involves using the `Document` class from Aspose.PDF, where the user loads the PDF, specifies the page number, and uses the `add_image` method of the `Page` class to position the image. The document is then saved using the `save()` method. The second method utilizes the `PdfFileMend` class from the Aspose.PDF.Facades namespace, which offers a simpler interface. Here, the `add_image()` method is invoked to add the image to the specified page and coordinates, followed by saving the updated PDF and closing the `PdfFileMend` object. Code snippets are provided for both methods to demonstrate the process.
@@ -15,6 +15,8 @@ Abstract: This article provides guidance on adding images to existing PDF files 
 
 This example demonstrates how to insert an image into a specific position on a PDF page using Aspose.PDF for Python via .NET.
 
+Use this page when you need to place logos, photos, or other graphics at fixed coordinates inside an existing PDF layout.
+
 1. Load the PDF document with 'ap.Document'.
 1. Select the target page '(document.pages[1]' - the first page).
 1. Use 'page.add_image()' to place the image:
@@ -23,21 +25,20 @@ This example demonstrates how to insert an image into a specific position on a P
 1. Save the updated PDF.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-
-    document = ap.Document(path_infile)
-    page = document.pages[1]
-    page.add_image(
-        path.join(self.data_dir, image_file),
-        ap.Rectangle(20, 730, 120, 830, True),
-    )
-    document.save(path_outfile)
+document = ap.Document(path_infile)
+page = document.pages[1]
+page.add_image(
+    path.join(self.data_dir, image_file),
+    ap.Rectangle(20, 730, 120, 830, True),
+)
+document.save(path_outfile)
 ```
 
 ## Add an Image Using Operators
@@ -62,62 +63,61 @@ Steps:
 1. Save the resulting PDF.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
+path_infile = path.join(self.data_dir, image_file)
+path_outfile = path.join(self.data_dir, "python", outfile)
 
-    path_infile = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, "python", outfile)
+document = ap.Document()
+page = document.pages.add()
+page.set_page_size(842, 595)
 
-    document = ap.Document()
-    page = document.pages.add()
-    page.set_page_size(842,595)
+# Get page resources
+resources_images = page.resources.images
 
-    # Get page resources
-    resources_images = page.resources.images
+# Add image to resources
+image_stream = FileIO(path.join(self.data_dir, path_infile), "rb")
+image_id = resources_images.add(image_stream)
 
-    # Add image to resources
-    image_stream = FileIO(path.join(self.data_dir, path_infile), "rb")
-    image_id = resources_images.add(image_stream)
+x_image = list(resources_images)[-1]
 
-    x_image = list(resources_images)[-1]
+rectangle = ap.Rectangle(
+    0,
+    0,
+    page.media_box.width,
+    (page.media_box.width * x_image.height) / x_image.width,
+    True,
+)
 
-    rectangle = ap.Rectangle(
-        0,
-        0,
-        page.media_box.width,
-        (page.media_box.width * x_image.height) / x_image.width,
-        True,
-    )
+# Create operator sequence for adding image
+operators = []
 
-    # Create operator sequence for adding image
-    operators = []
+# Save graphics state
+operators.append(ap.operators.GSave())
 
-    # Save graphics state
-    operators.append(ap.operators.GSave())
+# Set transformation matrix (position and size)
+matrix = ap.Matrix(
+    rectangle.urx - rectangle.llx,
+    0,
+    0,
+    rectangle.ury - rectangle.lly,
+    rectangle.llx,
+    rectangle.llx + (page.media_box.height - rectangle.height) / 2,
+)
+operators.append(ap.operators.ConcatenateMatrix(matrix))
 
-    # Set transformation matrix (position and size)
-    matrix = ap.Matrix(
-        rectangle.urx - rectangle.llx,
-        0,
-        0,
-        rectangle.ury - rectangle.lly,
-        rectangle.llx,
-        rectangle.llx + (page.media_box.height - rectangle.height) / 2,
-    )
-    operators.append(ap.operators.ConcatenateMatrix(matrix))
+# Draw the image
+operators.append(ap.operators.Do(image_id))
 
-    # Draw the image
-    operators.append(ap.operators.Do(image_id))
+# Restore graphics state
+operators.append(ap.operators.GRestore())
 
-    # Restore graphics state
-    operators.append(ap.operators.GRestore())
+# Add operators to page contents
+page.contents.add(operators)
 
-    # Add operators to page contents
-    page.contents.add(operators)
-
-    document.save(path_outfile)
+document.save(path_outfile)
 ```
 
 ## Add Image with Alternative Text
@@ -133,30 +133,36 @@ This example shows how to add an image to a PDF page and assign alternative text
 1. Save the resulting PDF.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
+path_image_file = path.join(self.data_dir, image_file)
+path_outfile = path.join(self.data_dir, "python", outfile)
 
-    path_image_file = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, "python", outfile)
+document = ap.Document()
+page = document.pages.add()
+page.set_page_size(842, 595)
 
-    document = ap.Document()
-    page = document.pages.add()
-    page.set_page_size(842,595)
+page.add_image(
+    path_image_file,
+    ap.Rectangle(0, 0, 842, 595, True),
+)
 
-    page.add_image(
-        path_image_file,
-        ap.Rectangle(0, 0, 842, 595, True),
-    )
+resources_images = page.resources.images
+alt_text = "Alternative text for image"
+x_image = resources_images[1]
+result = x_image.try_set_alternative_text(alt_text, page)
 
-    resources_images = page.resources.images
-    alt_text = "Alternative text for image"
-    x_image = resources_images[1]
-    result = x_image.try_set_alternative_text(alt_text, page)
-
-    # If set is successful, then get the alternative text for the image
-    if (result):
-        print ("Text has been added successfuly")
-    document.save(path_outfile)
+# If set is successful, then get the alternative text for the image
+if result:
+    print("Text has been added successfuly")
+document.save(path_outfile)
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
+- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)

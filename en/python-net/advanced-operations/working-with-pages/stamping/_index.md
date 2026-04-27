@@ -1,11 +1,11 @@
 ---
-title: Stamping with Aspose.PDF using Python
+title: Stamp PDF Pages in Python
 linktitle: Stamping
 type: docs
 weight: 120
 url: /python-net/stamping/
-description: This section describes how to add image stamps and text stamps to a PDF page via Python.
-lastmod: "2025-11-16"
+description: Learn how to add page numbers, page stamps, image stamps, and text stamps to PDF pages in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,6 +16,8 @@ Abstract: This article discusses the concept and application of stamps in PDF do
 
 A stamp in a PDF document is analogous to applying a rubber stamp on a paper document.
 The Stamp in the PDF file gives the additional information for the PDF file, such as to protect the PDF file to be used by others and to confirm the security of the contents of the PDF file. **Aspose.PDF for Python via .NET** allows adding image or text stamp in your PDF document.
+
+Use this section when you need to add overlays such as page numbers, watermarks, logos, or text markers to existing PDF pages.
 
 Check the following sections to learn how to add a stamp with Python:
 

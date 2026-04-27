@@ -1,17 +1,17 @@
 ---
-title: Working with Operators using Python
+title: Work with PDF Operators in Python
 linktitle: Working with Operators
 type: docs
 weight: 90
 url: /python-net/working-with-operators/
-description: This topic explains how to use operators with Aspose.PDF for Python via .NET. The operator classes provide great features for PDF manipulation.
-lastmod: "2025-05-16"
+description: Learn how to use low-level PDF operators in Python for precise content stream manipulation and graphics control.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Using Operators in PDF with Aspose.PDF for Python via .NET
-Abstract: The article provides an in-depth exploration of PDF operators and their applications in manipulating PDF content streams. Operators are specialized keywords in PDF that direct particular actions, such as rendering graphical elements on a page, and are only valid within content streams. The article details a method to exert precise control over image placement in PDFs by directly manipulating content streams using low-level graphics operators. This approach is beneficial for tasks requiring exact image positioning, such as adding watermarks, aligning overlays, and creating custom layouts. Specific operators like GSave, ConcatenateMatrix, Do, and GRestore are emphasized for their roles in managing graphical states and transformations, ensuring accurate rendering without affecting other page content.
+AlternativeHeadline: Use low-level PDF operators for content stream control in Python
+Abstract: This article explains how to work with low-level PDF operators in Aspose.PDF for Python via .NET. Learn how to manipulate content streams directly, position graphics precisely with operator classes, and remove drawn objects from PDF pages in Python workflows.
 ---
 
 ## Introduction to the PDF Operators and Their Usage
@@ -20,15 +20,17 @@ An operator is a PDF keyword specifying some action that shall be performed, suc
 
 A content stream is a PDF stream object whose data consists of instructions describing the graphical elements to be painted on a page. More details about PDF operators can be found in the [PDF specification](https://opensource.adobe.com/dc-acrobat-sdk-docs/).
 
-### Implementation details
+Use this page when you need direct control over PDF content streams in Python, such as placing graphics at exact coordinates, wrapping graphics state changes, or removing specific drawing operators from a page.
+
+## Add Images with Operator Classes
+
+Use low-level operator classes when you need to place image content very precisely in a PDF page stream without relying on higher-level layout abstractions.
 
 This method provides fine-grained control over image placement within a PDF by directly manipulating the content stream with low-level graphics operators. It is particularly useful when precise positioning and transformation of images are required, such as:
 
- - adding watermarks or logos at specific locations.
-
- - overlaying images onto existing content with exact alignment.
-
- - implementing custom layouts that are not achievable with higher-level abstractions.
+- adding watermarks or logos at specific locations.
+- overlaying images onto existing content with exact alignment.
+- implementing custom layouts that are not achievable with higher-level abstractions.
 
 By using operators like GSave, ConcatenateMatrix, Do, and GRestore, developers can ensure that images are rendered accurately and without unintended side effects on other page content.
 
@@ -174,4 +176,11 @@ def remove_graphics_objects(infile, outfile):
         page.contents.delete(operators_to_remove)
         document.save(outfile)
 ```
+
+## Related Topics
+
+- [Advanced PDF operations in Python](/pdf/python-net/advanced-operations/)
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
 

@@ -1,11 +1,11 @@
 ---
-title: Search and Get Text from Pages of PDF
+title: Search and Extract PDF Text in Python
 linktitle: Search and Get Text
 type: docs
 weight: 60
 url: /python-net/search-and-get-text-from-pdf/
-description: Learn how to search and extract text from PDF documents in Python using Aspose.PDF for document analysis.
-lastmod: "2025-11-13"
+description: Learn how to search, inspect, and extract text from PDF documents in Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,6 +18,8 @@ Abstract: The article provides an in-depth exploration of text extraction and ma
 
 Search and extract text from a defined rectangular area in a PDF document using the TextAbsorber class. It employs pure text formatting mode for clean, unformatted text output, making it ideal for extracting content from structured regions like headers, footers, or table areas. By combining TextExtractionOptions and TextSearchOptions with rectangular constraints, this example gives you fine control over where and how text is extracted from the document.
 
+Use this page when you need to audit PDF text content, extract text for analysis, or inspect positions and formatting of matched text fragments.
+
 1. Load the PDF file using 'ap.Document'.
 1. Configure Text Extraction Options.
 1. Define Search Area with Rectangle Constraints.
@@ -26,7 +28,6 @@ Search and extract text from a defined rectangular area in a PDF document using 
 1. Retrieve and Display Extracted Text.
 
 ```python
-
 import io
 import os
 import re
@@ -36,6 +37,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_absorber_search(input_file_path):
     """
@@ -91,7 +93,6 @@ By combining TextExtractionOptions (for formatting control) and TextSearchOption
 1. Retrieve and Display Extracted Text.
 
 ```python
-
 import io
 import os
 import re
@@ -101,6 +102,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_absorber_search_page(input_file_path):
     """
@@ -140,7 +142,6 @@ def text_absorber_search_page(input_file_path):
     document.pages[2].accept(absorber)
 
     print(f"Text fragments found: {absorber.text}")
-
 ```
 
 ## Analyze and Extract Detailed Text Fragment Properties from a PDF
@@ -155,7 +156,6 @@ Unlike TextAbsorber, which extracts raw text, TextFragmentAbsorber provides deta
 1. Print Font and Formatting Details.
 
 ```python
-
 import io
 import os
 import re
@@ -165,6 +165,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_search(input_file_path):
     """
@@ -219,7 +220,6 @@ Search for a specific text phrase within a page of a PDF document using TextFrag
 1. Iterate Over Found Fragments.
 
 ```python
-
 import io
 import os
 import re
@@ -229,6 +229,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_search_page(input_file_path):
     """
@@ -276,7 +277,6 @@ Unlike a single-page or document-wide search, this approach allows you to proces
 1. Process Next Page Sequentially. Move to page 2 and optionally continue through the rest of the document. The 'absorber.visit()' ensures the accumulation of results from all visited pages. Prints the cumulative search results, showing both text and location.
 
 ```python
-
 import io
 import os
 import re
@@ -286,6 +286,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_sequential_search(input_file_path):
     """
@@ -347,7 +348,6 @@ By combining phrase search with spatial constraints, you can locate content prec
 1. Iterate Through Found Fragments and Print
 
 ```python
-
 import io
 import os
 import re
@@ -357,6 +357,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_search_phrase(input_file_path):
     """
@@ -406,7 +407,6 @@ Search for text patterns in a PDF using regular expressions. By enabling regex m
 1. Iterate Through Found Fragments. Prints matching text fragments and their coordinates. Provides precise location information for extracted patterns.
 
 ```python
-
 import io
 import os
 import re
@@ -416,6 +416,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_search_regex(input_file_path):
     """
@@ -444,7 +445,9 @@ def text_fragment_absorber_search_regex(input_file_path):
     """
     document = ap.Document(input_file_path)
 
-    absorber = ap.text.TextFragmentAbsorber(r"\d+\.\d+", ap.text.TextSearchOptions(is_regular_expression_used=True))
+    absorber = ap.text.TextFragmentAbsorber(
+        r"\d+\.\d+", ap.text.TextSearchOptions(is_regular_expression_used=True)
+    )
 
     document.pages[2].accept(absorber)
 
@@ -464,7 +467,6 @@ Search for specific text phrases in a PDF and convert them into clickable hyperl
 1. Save Modified PDF.
 
 ```python
-
 import io
 import os
 import re
@@ -474,6 +476,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_search_and_add_hyperlink(input_file_path):
     """
@@ -529,7 +532,6 @@ Search for text fragments in a PDF based on their formatting properties rather t
 1. Inspect Text Fragments Based on Formatting. Checks font style for bold formatting.
 
 ```python
-
 import io
 import os
 import re
@@ -539,6 +541,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_search_styled_text(input_file_path):
     """
@@ -585,7 +588,6 @@ Detects hidden or invisible text in a PDF document by analyzing text formatting 
 1. Inspect Text Fragments Based on Formatting. Check 'fragment.text_state.invisible' for hidden text.
 
 ```python
-
 import io
 import os
 import re
@@ -595,6 +597,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_search_styled_text(input_file_path):
     """
@@ -653,7 +656,6 @@ Our example performs advanced text visualization on a PDF by:
 1. Save the Result.
 
 ```python
-
 import io
 import os
 import re
@@ -663,6 +665,7 @@ import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def text_fragment_absorber_search_and_highlight(infile):
     """
@@ -756,3 +759,10 @@ def text_fragment_absorber_search_and_highlight(infile):
                     drawing.imaging.ImageFormat.png,
                 )
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
+- [Add tooltips to PDF text in Python](/pdf/python-net/pdf-tooltip/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)

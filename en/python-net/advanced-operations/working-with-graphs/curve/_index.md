@@ -1,11 +1,11 @@
 ---
-title: Add Curve Object to PDF file
+title: Add Curve Shapes to PDF in Python
 linktitle: Add Curve
 type: docs
 weight: 30
 url: /python-net/add-curve/
-description: This article explains how to create a curve object to your PDF using Aspose.PDF for Python via .NET.
-lastmod: "2025-05-14"
+description: Learn how to draw and fill curve shapes in PDF files in Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -109,3 +109,10 @@ This example shows how to add a Curve object that is filled with color.
 Look at the result of adding a filled Curve:
 
 ![Filled Curve](filled_curve.png)
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add arc shapes to PDF in Python](/pdf/python-net/add-arc/)
+- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)

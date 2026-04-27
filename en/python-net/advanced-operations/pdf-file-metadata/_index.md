@@ -1,18 +1,20 @@
 ---
-title: Working with PDF File Metadata in Python
+title: Work with PDF File Metadata in Python
 linktitle: PDF File Metadata
 type: docs
 weight: 200
 url: /python-net/pdf-file-metadata/
-description: Explore how to extract and manage PDF metadata, such as author and title, in Python using Aspose.PDF.
-lastmod: "2025-05-12"
+description: Learn how to extract, update, and manage PDF file metadata and XMP properties in Python using Aspose.PDF.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Get and Set Metadata in PDF using Python
-Abstract: The article provides a comprehensive guide on manipulating PDF metadata using Aspose.PDF for Python via .NET. It outlines methods to extract and set metadata properties, including author, creation date, keywords, and more, which are crucial for document cataloging, search optimization, or validation. The code snippets demonstrate how to retrieve metadata from a PDF using the `Document` class and the `info` property, set new metadata using the `DocumentInfo` object, and save the changes. Additionally, it shows how to programmatically update XMP metadata, which enhances document organization and searchability. The article also explains how to insert metadata with a custom prefix by registering a namespace URI. These functionalities are essential for developers aiming to manage PDF document information effectively within applications.
+AlternativeHeadline: Get and set PDF document information and XMP metadata in Python
+Abstract: This article explains how to work with PDF metadata in Aspose.PDF for Python via .NET. Learn how to read document information such as author, title, and keywords, update file properties, set XMP metadata fields, and register custom metadata prefixes for PDF files in Python.
 ---
+
+Use this guide when you need to inspect document properties, update PDF file information for search or cataloging, or manage XMP metadata programmatically in Python.
 
 ## Get PDF File Information
 
@@ -23,26 +25,25 @@ This code snippet demonstrates how to extract metadata from a PDF document using
 1. Display Metadata Information. Print out the desired metadata fields
 
 ```python
+import aspose.pdf as ap
+import datetime
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def get_pdf_file_information(infile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    def get_pdf_file_information():
-        # The path to the documents directory
-        data_dir = RunExamples.get_data_dir_asposepdf()
+    # Get document information
+    doc_info = document.info
 
-        # Open PDF document
-        document = ap.Document(data_dir + "GetFileInfo.pdf")
-
-        # Get document information
-        doc_info = document.info
-
-        # Display document information
-        print(f"Author: {doc_info.author}")
-        print(f"Creation Date: {doc_info.creation_date}")
-        print(f"Keywords: {doc_info.keywords}")
-        print(f"Modify Date: {doc_info.mod_date}")
-        print(f"Subject: {doc_info.subject}")
-        print(f"Title: {doc_info.title}")
+    # Display document information
+    print(f"Author: {doc_info.author}")
+    print(f"Creation Date: {doc_info.creation_date}")
+    print(f"Keywords: {doc_info.keywords}")
+    print(f"Modify Date: {doc_info.mod_date}")
+    print(f"Subject: {doc_info.subject}")
+    print(f"Title: {doc_info.title}")
 ```
 
 ## Set PDF File Information
@@ -50,36 +51,35 @@ This code snippet demonstrates how to extract metadata from a PDF document using
 Aspose.PDF for Python via .NET allows you to set file-specific information for a PDF, information like author, creation date, subject, and title. To set this information:
 
 1. Open the PDF file using the Document class.
-1. Create a [DocumentInfo]() object and set the desired metadata properties.
+1. Create a [DocumentInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/documentinfo/) object and set the desired metadata properties.
 1. Save the changes to a new PDF file using save method.
 
 The following code snippet shows you how to set PDF file information.
 
 ```python
+import aspose.pdf as ap
+import datetime
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import datetime
+def set_file_information(infile, outfile):
 
-    def set_file_information():
-        # The path to the documents directory
-        data_dir = RunExamples.get_data_dir_asposepdf_workingdocuments()
+    # Open PDF document
+    document = ap.Document(infile)
 
-        # Open PDF document
-        document = ap.Document(data_dir + "SetFileInfo.pdf")
+    # Specify document information
+    doc_info = ap.DocumentInfo(document)
+    doc_info.author = "Aspose"
+    doc_info.creation_date = datetime.datetime.now()
+    doc_info.keywords = "Aspose.Pdf, DOM, API"
+    doc_info.mod_date = datetime.datetime.now()
+    doc_info.subject = "PDF Information"
+    doc_info.title = "Setting PDF Document Information"
+    doc_info.producer = "Custom producer"
+    doc_info.creator = "Custom creator"
 
-        # Specify document information
-        doc_info = ap.DocumentInfo(document)
-        doc_info.author = "Aspose"
-        doc_info.creation_date = datetime.datetime.now()
-        doc_info.keywords = "Aspose.Pdf, DOM, API"
-        doc_info.mod_date = datetime.datetime.now()
-        doc_info.subject = "PDF Information"
-        doc_info.title = "Setting PDF Document Information"
-        doc_info.producer = "Custom producer"
-        doc_info.creator = "Custom creator"
-
-        # Save PDF document
-        document.save(data_dir + "SetFileInfo_out.pdf")
+    # Save PDF document
+    document.save(outfile)
 ```
 
 ## Set XMP Metadata in a PDF File
@@ -95,24 +95,22 @@ Aspose.PDF allows you to set metadata in a PDF file. To set metadata:
 The following code snippet shows you how to set metadata in a PDF file.
 
 ```python
+import aspose.pdf as ap
+import datetime
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import datetime
+def set_xmp_metadata(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    def set_xmp_metadata():
-        # The path to the documents directory
-        data_dir = RunExamples.get_data_dir_asposepdf()
+    # Set XMP metadata properties
+    document.metadata.add("xmp:CreateDate", datetime.datetime.now().isoformat())
+    document.metadata.add("xmp:Nickname", "Nickname")
+    document.metadata.add("xmp:CustomProperty", "Custom Value")
 
-        # Open PDF document
-        document = ap.Document(data_dir + "SetXMPMetadata.pdf")
-
-        # Set XMP metadata properties
-        document.metadata["xmp:CreateDate"] = datetime.datetime.now().isoformat()
-        document.metadata["xmp:Nickname"] = "Nickname"
-        document.metadata["xmp:CustomProperty"] = "Custom Value"
-
-        # Save the updated PDF document
-        document.save(data_dir + "SetXMPMetadata_out.pdf")
+    # Save the updated PDF document
+    document.save(outfile)
 ```
 
 ## Insert Metadata with Prefix
@@ -120,23 +118,30 @@ The following code snippet shows you how to set metadata in a PDF file.
 Some developers need to create a new metadata namespace with a prefix. The following code snippet shows how to insert metadata with prefix.
 
 ```python
+import aspose.pdf as ap
+import datetime
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import datetime
+def set_prefix_metadata(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    def set_prefix_metadata():
-        # The path to the documents directory
-        data_dir = RunExamples.get_data_dir_asposepdf()
+    # Register a namespace URI for the 'xmp' prefix
+    document.metadata.register_namespace_uri("xmp", "http://ns.adobe.com/xap/1.0/")
 
-        # Open PDF document
-        document = ap.Document(data_dir + "SetXMPMetadata.pdf")
+    # Set the metadata property using the registered prefix
+    document.metadata.add(
+        "xmp:ModifyDate", datetime.datetime.now().isoformat()
+    )  # ISO 8601 format
 
-        # Register a namespace URI for the 'xmp' prefix
-        document.metadata.register_namespace_uri("xmp", "http://ns.adobe.com/xap/1.0/")
-
-        # Set the metadata property using the registered prefix
-        document.metadata["xmp:ModifyDate"] = datetime.datetime.now().isoformat()  # ISO 8601 format
-
-        # Save the updated PDF document
-        document.save(data_dir + "SetPrefixMetadata_out.pdf")
+    # Save the updated PDF document
+    document.save(outfile)
 ```
+
+## Related Topics
+
+- [Advanced PDF operations in Python](/pdf/python-net/advanced-operations/)
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Work with PDF attachments in Python](/pdf/python-net/attachments/)
+- [Compare PDF documents in Python](/pdf/python-net/compare-pdf-documents/)

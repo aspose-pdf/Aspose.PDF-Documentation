@@ -1,22 +1,24 @@
 ---
-title: Compare PDF documents
+title: Compare PDF Documents in Python
 linktitle: Compare PDF 
 type: docs
 weight: 130
 url: /python-net/compare-pdf-documents/
-description: It's possible to compare PDF documents content with annotation marks and side-by-side output.
-lastmod: "2025-05-12"
+description: Learn how to compare PDF documents in Python using side-by-side and graphical difference output with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
-Abstract:   
+AlternativeHeadline: Compare PDF pages and full documents with visual difference output in Python
+Abstract: This article explains how to compare PDF documents in Aspose.PDF for Python via .NET. Learn how to compare specific pages or entire PDF files with side-by-side output, and how to use graphical comparison methods to generate image-based or PDF-based difference reports.
 ---
 
 ## Ways to Compare PDF Documents
 
 When working with PDF documents, there are times when you need to compare the content of two documents to identify differences. The Aspose.PDF for Python via .NET library provides a powerful toolset for this purpose. In this article, we'll explore how to compare PDF documents using a couple of simple code snippets.
+
+Use side-by-side comparison when you want a PDF output that highlights text and layout changes across pages. Use graphical comparison when you need image-based difference detection for visual review workflows, regression checks, or PDF comparison reports.
 
 The comparison functionality in Aspose.PDF allows you to compare two PDF documents page by page. You can choose to compare either specific pages or entire documents. The resulting comparison document highlights differences, making it easier to identify changes between the two files.
 
@@ -45,25 +47,24 @@ The first code snippet demonstrates how to compare the first pages of two PDF do
 1. The result of the comparison is saved as a new PDF file named ComparingSpecificPages_out.pdf in the specified data_dir.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    from aspose.pdf.comparison import SideBySidePdfComparer, SideBySideComparisonOptions, ComparisonMode
+def comparing_specific_pages(infile1, infile2, outfile):
+    # Open PDF documents
+    document_1 = ap.Document(infile1)
+    document_2 = ap.Document(infile2)
 
-    def comparing_specific_pages():
-        # The path to the documents directory
-        data_dir = RunExamples.get_data_dir_asposepdf_documentcompare()
+    # Compare
+    options = ap.comparison.SideBySideComparisonOptions()
+    options.additional_change_marks = True
+    options.comparison_mode = ap.comparison.ComparisonMode.IGNORE_SPACES
 
-        # Open PDF documents
-        document1 = ap.Document(data_dir + "ComparingSpecificPages1.pdf")
-        document2 = ap.Document(data_dir + "ComparingSpecificPages2.pdf")
-
-        # Compare
-        options = SideBySideComparisonOptions()
-        options.additional_change_marks = True
-        options.comparison_mode = ComparisonMode.IgnoreSpaces
-
-        # Perform comparison and save the result
-        SideBySidePdfComparer.compare(document1.pages[1], document2.pages[1], data_dir + "ComparingSpecificPages_out.pdf", options)
+    # Perform comparison and save the result
+    ap.comparison.SideBySidePdfComparer.compare(
+        document_1.pages[1], document_2.pages[1], outfile, options
+    )
 ```
 
 ## Comparing Entire Documents
@@ -71,25 +72,24 @@ The first code snippet demonstrates how to compare the first pages of two PDF do
 The second code snippet expands the scope to compare the entire content of two PDF documents.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    from aspose.pdf.comparison import SideBySidePdfComparer, SideBySideComparisonOptions, ComparisonMode
+def comparing_entire_documents(infile1, infile2, outfile):
+    # Open PDF documents
+    document_1 = ap.Document(infile1)
+    document_2 = ap.Document(infile2)
 
-    def comparing_entire_documents():
-        # The path to the documents directory
-        data_dir = RunExamples.get_data_dir_asposepdf_documentcompare()
+    # Compare
+    options = ap.comparison.SideBySideComparisonOptions()
+    options.additional_change_marks = True
+    options.comparison_mode = ap.comparison.ComparisonMode.IGNORE_SPACES
 
-        # Open PDF documents
-        document1 = ap.Document(data_dir + "ComparingEntireDocuments1.pdf")
-        document2 = ap.Document(data_dir + "ComparingEntireDocuments2.pdf")
-
-        # Compare
-        options = SideBySideComparisonOptions()
-        options.additional_change_marks = True
-        options.comparison_mode = ComparisonMode.IgnoreSpaces
-
-        # Perform comparison and save the result
-        SideBySidePdfComparer.compare(document1, document2, data_dir + "ComparingEntireDocuments_out.pdf", options)
+    # Perform comparison and save the result
+    ap.comparison.SideBySidePdfComparer.compare(
+        document_1, document_2, outfile, options
+    )
 ```
 
 The provided code demonstrates comparing two PDF documents using Aspose.PDF for Python via .NET. It utilizes the SideBySidePdfComparer class to perform a page-by-page comparison, generating a new PDF that displays the differences side by side. The comparison is configured with SideBySideComparisonOptions, where additional_change_marks is set to True to highlight changes not only on the current page but also on other pages, and comparison_mode is set to IgnoreSpaces to focus on meaningful content differences by ignoring whitespace variations.
@@ -125,31 +125,28 @@ This method compares the first pages of two PDF files and generates two PNG imag
 This process can be useful for visually comparing changes or differences between two versions of a document.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    from aspose.pdf.comparison import GraphicalPdfComparer
+def compare_pdf_with_get_difference_method(infile1, infile2, outfile1, outfile2):
+    # Open PDF documents
+    document1 = ap.Document(infile1)
+    document2 = ap.Document(infile2)
 
-    def compare_pdf_with_get_difference_method():
-        # The path to the documents directory
-        data_dir = RunExamples.get_data_dir_asposepdf_documentcompare()
+    # Create comparer
+    comparer = ap.comparison.GraphicalPdfComparer()
 
-        # Open PDF documents
-        document1 = ap.Document(data_dir + "ComparePDFWithGetDifferenceMethod1.pdf")
-        document2 = ap.Document(data_dir + "ComparePDFWithGetDifferenceMethod2.pdf")
+    # Compare specific pages
+    images_difference = comparer.get_difference(document1.pages[1], document2.pages[1])
 
-        # Create comparer
-        comparer = GraphicalPdfComparer()
+    # Get image showing differences in red over a white background
+    diff_img = images_difference.difference_to_image(ap.Color.red, ap.Color.white)
+    diff_img.save(outfile1)
 
-        # Compare specific pages
-        images_difference = comparer.get_difference(document1.pages[1], document2.pages[1])
-
-        # Get image showing differences in red over a white background
-        diff_img = images_difference.difference_to_image(ap.Color.red, ap.Color.white)
-        diff_img.save(data_dir + "ComparePDFWithGetDifferenceMethodDiffPngFilePath_out.png")
-
-        # Get the second image representing the destination page
-        dest_img = images_difference.get_destination_image()
-        dest_img.save(data_dir + "ComparePDFWithGetDifferenceMethodDestPngFilePath_out.png")
+    # Get the second image representing the destination page
+    dest_img = images_difference.get_destination_image()
+    dest_img.save(outfile2)
 ```
 
 ### Compare PDF with CompareDocumentsToPdf Method
@@ -157,27 +154,23 @@ This process can be useful for visually comparing changes or differences between
 The provided code snippet uses the `compare_documents_to_pdf` method, which compares two documents and generates a PDF report of the comparison results.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    from aspose.pdf.comparison import GraphicalPdfComparer
-    from aspose.pdf.devices import Resolution
+def compare_pdf_with_compare_documents_to_pdf_method(infile1, infile2, outfile):
+    # Open PDF documents
+    document_1 = ap.Document(infile1)
+    document_2 = ap.Document(infile2)
 
-    def compare_pdf_with_compare_documents_to_pdf_method():
-        # The path to the documents directory
-        data_dir = RunExamples.get_data_dir_asposepdf_documentcompare()
+    # Create comparer and set options
+    pdf_comparer = ap.comparison.GraphicalPdfComparer()
+    pdf_comparer.threshold = 3.0
+    pdf_comparer.color = ap.Color.blue
+    pdf_comparer.resolution = ap.devices.Resolution(300)
 
-        # Open PDF documents
-        document1 = ap.Document(data_dir + "ComparePDFWithCompareDocumentsToPdfMethod1.pdf")
-        document2 = ap.Document(data_dir + "ComparePDFWithCompareDocumentsToPdfMethod2.pdf")
-
-        # Create comparer and set options
-        comparer = GraphicalPdfComparer()
-        comparer.threshold = 3.0
-        comparer.color = ap.Color.blue
-        comparer.resolution = Resolution(300)
-
-        # Compare and output to a PDF file
-        comparer.compare_documents_to_pdf(document1, document2, data_dir + "compareDocumentsToPdf_out.pdf")
+    # Compare and output to a PDF file
+    pdf_comparer.compare_documents_to_pdf(document_1, document_2, outfile)
 ```
 
 This example demonstrates how to perform a graphical comparison of two entire PDF documents using Aspose.PDF for Python via .NET. By leveraging the `GraphicalPdfComparer` class, it generates a new PDF file that visually highlights differences between the documents.
@@ -186,4 +179,11 @@ This example demonstrates how to perform a graphical comparison of two entire PD
 - Differences are marked in blue by setting the color property to ap.Color.blue, allowing for clear visual distinction.
 - The comparison is performed at a resolution of 300 DPI by setting the resolution property, ensuring detailed and clear output.
 
-The `compare_documents_to_pdf` method compares all pages of both documents and outputs the result to a new PDF file, compareDocumentsToPdf_out.pdf, with differences visually highlighted. 
+The `compare_documents_to_pdf` method compares all pages of both documents and outputs the result to a new PDF file, compareDocumentsToPdf_out.pdf, with differences visually highlighted.
+
+## Related Topics
+
+- [Advanced PDF operations in Python](/pdf/python-net/advanced-operations/)
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Work with PDF text in Python](/pdf/python-net/working-with-text/)
