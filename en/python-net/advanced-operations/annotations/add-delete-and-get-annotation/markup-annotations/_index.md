@@ -497,3 +497,13 @@ def replace_annotations_delete(infile, outfile):
 
     document.save(outfile)
 ```
+
+## Related Topics
+
+- [Import and Export Annotations](/python-net/import-export-annotations/)
+- [Interactive Annotations](/python-net/interactive-annotations/)
+- [Media Annotations](/python-net/media-annotations/)
+- [Security Annotations](/python-net/security-annotations/)
+- [Shape Annotations](/python-net/shape-annotations/)
+- [Text Based Annotations](/python-net/text-based-Annotations/)
+- [Watermark Annotations](/python-net/watermark-annotations/)

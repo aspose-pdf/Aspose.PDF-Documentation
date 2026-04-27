@@ -207,3 +207,12 @@ def redact_area(infile, outfile):
     document.save(outfile)
 ```
 
+## Related Topics
+
+- [Import and Export Annotations](/python-net/import-export-annotations/)
+- [Interactive Annotations](/python-net/interactive-annotations/)
+- [Markup Annotations](/python-net/markup-annotations/)
+- [Media Annotations](/python-net/media-annotations/)
+- [Shape Annotations](/python-net/shape-annotations/)
+- [Text Based Annotations](/python-net/text-based-Annotations/)
+- [Watermark Annotations](/python-net/watermark-annotations/)

@@ -738,3 +738,12 @@ def text_strikeout_annotation_delete(infile, outfile):
     document.save(outfile)
 ```
 
+## Related Topics
+
+- [Import and Export Annotations](/python-net/import-export-annotations/)
+- [Interactive Annotations](/python-net/interactive-annotations/)
+- [Markup Annotations](/python-net/markup-annotations/)
+- [Media Annotations](/python-net/media-annotations/)
+- [Security Annotations](/python-net/security-annotations/)
+- [Shape Annotations](/python-net/shape-annotations/)
+- [Watermark Annotations](/python-net/watermark-annotations/)
