@@ -34,12 +34,9 @@ To insert an empty page in a PDF file:
 Insert an empty page into an existing PDF file at a specified position:
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def insert_empty_page(input_file_name, output_file_name):
     document = ap.Document(input_file_name)
@@ -60,21 +57,13 @@ To insert an empty page at the end of a PDF file:
 The following code snippet shows you how to insert an empty page at the end of a PDF file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_empty_page_to_end(input_file_name, output_file_name):
-    # Open document
     document = ap.Document(input_file_name)
-
-    # Insert an empty page at the end of a PDF file
     document.pages.add()
-
-    # Save output file
     document.save(output_file_name)
 ```
 
@@ -90,15 +79,11 @@ With Aspose.PDF for Python library, you create a new [`Document`](https://refere
 1. Save the combined file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_page_from_another_document(input_file_name, output_file_name):
-    # Open document
     document = ap.Document()
     page = document.pages.add()
     text_fragment = ap.text.TextFragment("This is first page!")
@@ -107,7 +92,6 @@ def add_page_from_another_document(input_file_name, output_file_name):
     another_document = ap.Document(input_file_name)
     document.pages.add(another_document.pages[1])
 
-    # Save output file
     document.save(output_file_name)
 ```
 
