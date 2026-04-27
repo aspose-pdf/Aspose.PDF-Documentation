@@ -148,12 +148,6 @@ if result:
 document.save(path_outfile)
 ```
 
-    # If set is successful, then get the alternative text for the image
-    if result:
-        print("Text has been added successfuly")
-    document.save(outfile)
-```
-
 ## Add an Image to a PDF with Flate Compression
 
 Insert an image into a PDF document using Python and Aspose.PDF while applying Flate compression. The script adds the image to page resources, positions it with a transformation matrix, and draws it onto the page for efficient PDF image embedding.
@@ -219,3 +213,10 @@ def add_image_to_pdf_with_flate_compression(image_file, outfile):
     # Save the document
     document.save(outfile)
 ```
+
+## Related Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
+- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)

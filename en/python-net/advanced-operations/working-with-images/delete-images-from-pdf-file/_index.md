@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /python-net/delete-images-from-pdf-file/
 description: Learn how to delete specific or all images from PDF files in Python.
-lastmod: "2026-04-17"
+lastmod: "2026-04-27"
 TechArticle: true 
 AlternativeHeadline: How to remove images from PDF using Python
 Abstract: The article discusses the various reasons for removing images from PDF files, such as protecting privacy, preventing unauthorized access to sensitive information, reducing file size for easier sharing and storage, and preparing the document for compression or text extraction. It introduces **Aspose.PDF for Python via .NET** as a tool to accomplish this task. The article provides step-by-step instructions and code snippets for deleting specific images or all images from a PDF file using Aspose.PDF. The process involves opening an existing PDF document, deleting images either individually or in bulk, and saving the updated file. The provided Python code demonstrates how to remove images by accessing the document's resources and modifying the desired pages.
@@ -14,7 +14,7 @@ Abstract: The article discusses the various reasons for removing images from PDF
 There are many reasons for removing all or specific images from PDFs.
 Sometimes a PDF file may contain important images that need to be removed to protect privacy or prevent unauthorized access to certain information.
 
-Removing unwanted or redundant images can help reduce file size, making it easier to share or store PDFs. 
+Removing unwanted or redundant images can help reduce file size, making it easier to share or store PDFs.
 If necessary, you can reduce the number of pages by removing all images from the document.
 Also, deleting images from the document will help prepare the PDF for compression or extraction of text information.
 
@@ -40,5 +40,22 @@ from os import path
 def delete_image(infile, outfile):
     document = ap.Document(infile)
     document.pages[1].resources.images.delete(1)
+    document.save(outfile)
+```
+
+## Delete All Images from a Page
+
+Use the following example to remove every image from a specific page.
+
+```python
+import aspose.pdf as ap
+
+def delete_all_images_from_page(infile, outfile, page_number):
+    document = ap.Document(infile)
+    page = document.pages[page_number]
+
+    while len(page.resources.images) != 0:
+        page.resources.images.delete(1)
+
     document.save(outfile)
 ```
