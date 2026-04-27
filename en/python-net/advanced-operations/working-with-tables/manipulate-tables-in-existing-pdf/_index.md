@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /python-net/manipulating-tables/
 description: Learn how to inspect and modify tables in existing PDF documents using Python.
-lastmod: "2026-04-17"
+lastmod: "2026-04-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,23 +14,28 @@ AlternativeHeadline: Modify existing PDF tables with Python
 Abstract: This article explains how to manipulate tables already present in PDF documents using Aspose.PDF for Python via .NET. Learn how to locate tables with TableAbsorber, access specific rows and cells, update table text content, and save the modified PDF in Python.
 ---
 
-## Manipulate Tables in existing PDF
+## Manipulate Tables in Existing PDF
 
-Aspose.PDF for Python shows how to modify the content of a specific cell within a table in a PDF document. It uses the TableAbsorber class to locate tables on the first page, accesses a particular text fragment within the first cell of the first table, updates its text, and saves the modified PDF to a new file.
+Aspose.PDF for Python via .NET lets you update tables that already exist in a PDF document. You can use the [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) class to find tables on a page, access rows and cells, change text content, and save the updated file.
 
 Use this page when you need to update existing table content in PDFs without recreating the whole document layout.
 
-## Find and Replace Text Inside PDF Table Cells
+## Find and Replace Text in PDF Table Cells
 
-Locate and modify text inside PDF table cells using Python and Aspose.PDF. It uses TableAbsorber to detect tables on a page, accesses specific cell text fragments, and updates their content without recreating the table.
+This example finds the first table on page 1, accesses the first cell, replaces its text, and saves the output PDF.
+
+1. Open the input PDF.
+1. Create a TableAbsorber and visit page 1.
+1. Ensure at least one table is detected.
+1. Access the first cell in the first row of the first table.
+1. Ensure the cell contains text fragments, then update the first fragment.
+1. Save the modified PDF.
 
 ```python
 import aspose.pdf as ap
-from os import path
-import sys
 
-def replace_cells(infile: str, outfile: str) -> None:
-    """Replace text in table cells."""
+def replace_cell_text(infile: str, outfile: str) -> None:
+    """Replace text in the first cell of the first detected table."""
     # Open PDF document
     document = ap.Document(infile)
 
@@ -40,26 +45,28 @@ def replace_cells(infile: str, outfile: str) -> None:
     # Visit first page with absorber
     absorber.visit(document.pages[1])
 
-    # Get access to first table on page, their first cell and text fragments in it
-    fragment = absorber.table_list[0].row_list[0].cell_list[0].text_fragments[1]
+    if len(absorber.table_list) == 0:
+        raise ValueError("No tables were found on page 1.")
+
+    first_cell = absorber.table_list[0].row_list[0].cell_list[0]
+    if len(first_cell.text_fragments) == 0:
+        raise ValueError("The target cell has no text fragments.")
 
     # Change text of the first text fragment in the cell
-    fragment.text = "New Value"
+    first_cell.text_fragments[0].text = "New Value"
 
     # Save PDF document
     document.save(outfile)
 ```
 
-## Replace old Table with a new one in PDF document
+## Replace an Existing Table with a New Table
 
-Aspose.PDF allows replacing an existing table in a PDF with a new table.  The code snippet opens a PDF, identifies the first table on the first page using TableAbsorber, creates a new table with custom column widths and content, and then replaces the original table with the new one. Finally, it saves the updated PDF to a new file.
+You can also replace a detected table with a newly created one. This approach is useful when both structure and content must change.
 
-It demonstrates how to modify table structure and content in a PDF without altering the rest of the document.
+The code below opens a PDF, finds the first table on page 1, creates a replacement table, swaps the old table with the new one, and saves the result.
 
 ```python
 import aspose.pdf as ap
-from os import path
-import sys
 
 def replace_table(infile: str, outfile: str) -> None:
     """Replace an entire table with a new one."""
@@ -72,8 +79,11 @@ def replace_table(infile: str, outfile: str) -> None:
     # Visit first page with absorber
     absorber.visit(document.pages[1])
 
+    if len(absorber.table_list) == 0:
+        raise ValueError("No tables were found on page 1.")
+
     # Get first table on the page
-    table = absorber.table_list[0]
+    old_table = absorber.table_list[0]
 
     # Create new table
     new_table = ap.Table()
@@ -89,8 +99,8 @@ def replace_table(infile: str, outfile: str) -> None:
     row.cells.add("Col 22")
     row.cells.add("Col 32")
 
-    # Replace the table with new one
-    absorber.replace(document.pages[1], table, new_table)
+    # Replace the old table with the new one
+    absorber.replace(document.pages[1], old_table, new_table)
 
     # Save PDF document
     document.save(outfile)
