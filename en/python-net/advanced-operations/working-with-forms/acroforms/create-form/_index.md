@@ -30,8 +30,6 @@ To add a form field:
 Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
 
 ```python
-import sys
-from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
@@ -75,8 +73,6 @@ Create a text box form field with multiple widget appearances in a PDF using Pyt
 1. Save PDF File.
 
 ```python
-import sys
-from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
@@ -132,8 +128,6 @@ The following code snippets shows how to add various types of form fields, such 
 ### Add Radio Button Field
 
 ```python
-import sys
-from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
@@ -156,8 +150,6 @@ def add_radio_button(output_file_name):
 ### Add Combo Box Field
 
 ```python
-import sys
-from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
@@ -181,8 +173,6 @@ def add_combo_box(output_file_name):
 ### Add Checkbox Field
 
 ```python
-import sys
-from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
@@ -203,8 +193,6 @@ def add_checkbox_field_to_pdf(output_file_name):
 ### Add List Box Field
 
 ```python
-import sys
-from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
@@ -227,8 +215,6 @@ def add_list_box_field_to_pdf(output_file_name):
 ### Add Signature Field
 
 ```python
-import sys
-from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
@@ -247,8 +233,6 @@ def add_signature_field(output_file_name):
 ### Add Barcode Field
 
 ```python
-import sys
-from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 

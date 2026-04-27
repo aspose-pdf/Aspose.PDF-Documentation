@@ -24,8 +24,7 @@ The following Python code snippets show how to get the values of all the fields 
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
+
 
 def get_values_from_all_fields(input_file_name):
     form = ap.facades.Form(input_file_name)
@@ -37,3 +36,14 @@ def get_values_from_all_fields(input_file_name):
     print(form_values)
     return form_values
 ```
+
+## Releated Topics
+
+- [Import XML Data](/pdf/python-net/import-xml-data/)
+- [Import FDF Data](/pdf/python-net/import-fdf-data/)
+- [Import XFDF Data](/pdf/python-net/import-xfdf-data/)
+- [Import JSON Data](/pdf/python-net/import-json-data/)
+- [Export to XML](/pdf/python-net/export-to-xml/)
+- [Export to FDF](/pdf/python-net/export-to-fdf/)
+- [Export to XFDF](/pdf/python-net/export-to-xfdf/)
+- [Export to JSON](/pdf/python-net/export-to-json/)
