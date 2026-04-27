@@ -298,7 +298,7 @@ def add_borders(outfile: str) -> None:
 
 ### Auto-fitting columns and rows
 
-This code snippet shows how to automatically adjust table column widths to fit the page. 
+This code snippet shows how to automatically adjust table column widths to fit the page.
 Please note that in the parameter table.column_widths = "50 50 50" - its points. But you can also specify centimeters (cm), inch or %.
 
 1. Set initial column widths.
@@ -839,4 +839,3 @@ def rotated_text_table(outfile: str) -> None:
 - [Extract tables from PDF documents](/pdf/python-net/extracting-table/)
 - [Integrate PDF tables with data sources](/pdf/python-net/integrate-table/)
 - [Manipulate tables in existing PDFs](/pdf/python-net/manipulating-tables/)
-
