@@ -5,24 +5,26 @@ type: docs
 weight: 30
 url: /python-net/extract-fonts-from-pdf/
 description: Use the Aspose.PDF for Python library to extract all embedded fonts from your PDF document.
-lastmod: "2025-03-13"
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to Extract Fonts from PDF using Python
-Abstract: This article provides guidance on extracting all fonts from a PDF document using a specific method from the Aspose.PDF library. It introduces the `font_utilities.get_all_fonts()` method available in the `Document` class, which facilitates the retrieval of font information. The article includes a Python code snippet demonstrating the process, which involves importing necessary modules, opening the PDF document, and iterating through the fonts to print each font's name. This approach is useful for developers needing to analyze or manipulate font data within PDF files.
+Abstract: This article explains how to inspect the fonts used in a PDF document with Aspose.PDF for Python. It shows how to open a PDF with the Document class, call font_utilities.get_all_fonts() to retrieve the available font objects, and iterate through the results to read font names for analysis, auditing, or document processing workflows.
 ---
 
-In case you want to get all fonts from a PDF document, you can use 'font_utilities.get_all_fonts()' method provided in Document class. Please check following code snippet in order to get all fonts from an existing PDF document:
+Use [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to open the PDF and call `font_utilities.get_all_fonts()` to retrieve all available [Font](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/font/) objects referenced by the document. This is useful when auditing embedded fonts, checking font availability before conversion, or analyzing document resources.
+
+1. Open the source PDF as a `Document`.
+1. Call `document.font_utilities.get_all_fonts()` to get the font collection.
+1. Iterate through the returned `Font` objects.
+1. Read and print each `font.font_name` value.
 
 ```python
 
     import aspose.pdf as apdf
-    from io import FileIO
     from os import path
-    import json
-    from aspose.pycore import cast, is_assignable
 
     path_infile = path.join(self.dataDir, infile)
 

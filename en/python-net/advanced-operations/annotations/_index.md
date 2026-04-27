@@ -1,11 +1,11 @@
 ---
-title: PDF Annotations
+title: PDF Annotations in Python
 linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /python-net/annotations/
-description: Explore how to add, modify, and extract annotations from PDFs using Aspose.PDF in Python and .NET.
-lastmod: "2025-02-27"
+description: Learn how to add, modify, extract, and manage PDF annotations in Python with Aspose.PDF for Python via .NET, including text, highlights, links, figures, and more.
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,13 @@ The Aspose.PDF for Python Library supports various types of annotations, includi
 
 Annotations can be used to comment, review, mark documents, provide feedback, or add additional information. Annotations allow to establish cooperation, facilitate communication, and improve understanding of the content of documents. They enhance collaboration, improve communication, and make PDF documents more dynamic and engaging for users.
 
+## Annotation Topics
+
+Use this section when you need to add, retrieve, update, or remove annotations from PDF files in Python. These pages cover the most common annotation workflows, from text markup and links to figures, notes, and additional specialty annotations.
+
 You are able to do the following:
 
 - [Add, Delete and Get Annotation](/pdf/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
+
+Annotations are especially useful for document review, collaboration, content markup, and interactive navigation. Start with the grouped annotation overview below, then move into the specific annotation type that matches your PDF workflow.
 

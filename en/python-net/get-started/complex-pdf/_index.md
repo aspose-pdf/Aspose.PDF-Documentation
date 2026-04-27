@@ -30,9 +30,9 @@ If we create a document from scratch we need to follow certain steps:
 1. Save a document "Complex.pdf".
 
 ```python
-
 from datetime import timedelta
 import aspose.pdf as ap
+
 
 def run_complex(self):
 
@@ -57,9 +57,7 @@ def run_complex(self):
     descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. \
     Ferry service is operating at half capacity and on a reduced schedule. Expect lineups."
     description = ap.text.TextFragment(descriptionText)
-    description.text_state.font = ap.text.FontRepository.find_font(
-        "Times New Roman"
-    )
+    description.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
     description.text_state.font_size = 14
     description.horizontal_alignment = ap.HorizontalAlignment.LEFT
     page.paragraphs.add(description)
@@ -68,17 +66,11 @@ def run_complex(self):
     table = ap.Table()
 
     table.column_widths = "200"
-    table.border = ap.BorderInfo(
-        ap.BorderSide.BOX, 1.0, ap.Color.dark_slate_gray
-    )
-    table.default_cell_border = ap.BorderInfo(
-        ap.BorderSide.BOX, 0.5, ap.Color.black
-    )
+    table.border = ap.BorderInfo(ap.BorderSide.BOX, 1.0, ap.Color.dark_slate_gray)
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.BOX, 0.5, ap.Color.black)
     table.default_cell_padding = ap.MarginInfo(4.5, 4.5, 4.5, 4.5)
     table.margin.bottom = 10
-    table.default_cell_text_state.font = ap.text.FontRepository.find_font(
-        "Helvetica"
-    )
+    table.default_cell_text_state.font = ap.text.FontRepository.find_font("Helvetica")
 
     headerRow = table.rows.add()
     headerRow.cells.add("Departs City")
@@ -87,9 +79,9 @@ def run_complex(self):
     i = 0
     while i < headerRow.cells.count:
         headerRow.cells[i].background_color = ap.Color.gray
-        headerRow.cells[i].default_cell_text_state.foreground_color = (
-            ap.Color.white_smoke
-        )
+        headerRow.cells[
+            i
+        ].default_cell_text_state.foreground_color = ap.Color.white_smoke
         i += 1
 
     time = timedelta(hours=6, minutes=0)

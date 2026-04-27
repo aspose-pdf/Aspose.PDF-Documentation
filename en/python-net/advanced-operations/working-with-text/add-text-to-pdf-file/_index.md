@@ -4,8 +4,8 @@ linktitle: Add Text to PDF
 type: docs
 weight: 10
 url: /python-net/add-text-to-pdf-file/
-description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
-lastmod: "2025-11-13"
+description: Learn how to add text, HTML fragments, lists, links, and custom fonts to PDF documents in Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -38,12 +38,12 @@ Aspose.PDF for Python via .NET shows how to add a simple text fragment to a spec
 The following code snippet shows you how to add text in an existing PDF file:
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_simple_case(outfile):
     """
@@ -92,12 +92,12 @@ Aspose.PDF for Python via .NET can add a paragraph of text using [`TextBuilder`]
 1. Save the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_paragraph(outfile):
     """
@@ -167,12 +167,12 @@ The following code snippet shows how to create a new PDF document and add two pa
 It uses the 'TextParagraph', 'TextBuilder', and 'TextFragment' classes from Aspose.PDF to precisely control layout and formatting.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_paragraphs_indents(output_file_name):
     """Add text with indents to a PDF document.
@@ -241,12 +241,12 @@ Aspose.PDF for Python via .NET allows you to insert multi-line text into a PDF d
 1. Save the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_new_line(output_file):
     """Add a new line of text to a PDF document."""
@@ -294,12 +294,12 @@ It shows how to create a PDF document containing multiple text fragments and ena
 1. Save the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def determine_line_break(output_file):
     """Create a PDF document with multiple text fragments and log notifications."""
@@ -342,12 +342,12 @@ Dynamically measure the width of characters and strings in a specific font using
 1. Ensure both measurement approaches yield the same results.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def get_text_width_dynamically(output_file):
 
@@ -388,12 +388,12 @@ Add clickable hyperlinks to text in a PDF using Aspose.PDF for Python via .NET. 
 1. Save the PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_with_hyperlink(outfile):
     """
@@ -423,9 +423,7 @@ def add_text_with_hyperlink(outfile):
     document = ap.Document()
     page = document.pages.add()
 
-    fragment = ap.text.TextFragment(
-        "Sample Text Fragment"
-    )
+    fragment = ap.text.TextFragment("Sample Text Fragment")
 
     segment = ap.text.TextSegment(" ... Text Segment 1...")
     fragment.segments.append(segment)
@@ -458,12 +456,12 @@ Set font and styling. Choose a font that supports the RTL script (e.g., Tahoma, 
 1. Save the PDF document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_with_rtl_text(outfile):
     """
@@ -526,12 +524,12 @@ Additionally, this code snippet shows how to use multiple text segments within a
 1. Save the final document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_with_font_styling(outfile):
     """
@@ -615,12 +613,12 @@ It creates a colored rectangle with partial opacity and overlays a TextFragment 
 1. Save the PDF document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_transparent(outfile):
     """
@@ -684,12 +682,12 @@ This example demonstrates how to create a PDF document containing both visible a
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_invisible(outfile):
     """
@@ -711,9 +709,7 @@ def add_text_invisible(outfile):
 
     # Add visible text
     text1 = ap.text.TextFragment(
-        "This is the visible text. "
-        "This is the visible text. "
-        "This is the visible text."
+        "This is the visible text. This is the visible text. This is the visible text."
     )
     page.paragraphs.add(text1)
 
@@ -741,12 +737,12 @@ Aspose.PDF library shows how to create a PDF document containing a styled text f
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_border(output_file_name):
     """
@@ -813,12 +809,12 @@ Add strikeout (strikethrough) formatting to a text fragment in a PDF document. S
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_strikeout_text(output_file_name):
     """
@@ -883,12 +879,12 @@ Aspose.PDF for Python via .NET demonstrates how to apply a linear gradient effec
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def apply_gradient_axial_shading_to_text(output_file_name):
     """
@@ -947,12 +943,12 @@ A radial gradient creates a circular color transition that radiates outward from
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def apply_gradient_radial_shading_to_text(output_file_name):
     """
@@ -1014,12 +1010,12 @@ Aspose.PDF for Python via .NET library allows you to insert HTML-formatted conte
 1. Save the PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_html_fragment(outfile):
     """
@@ -1071,12 +1067,12 @@ We can define an HTML fragment and set the text style directly using HTML tags. 
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_html_fragment(outfile):
     """
@@ -1132,12 +1128,12 @@ In this case, we can override the customer's styling by using our own TextState,
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_html_fragment_override_text_state(outfile):
     """
@@ -1196,12 +1192,12 @@ LaTeX is a powerful typesetting system widely used for creating scientific and m
 1. Save the PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_latex_fragment(outfile):
     """
@@ -1259,12 +1255,12 @@ This example allows you to add text to a PDF file using a custom OpenType font i
 This function works not only with OTF but also with TTF fonts.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def use_custom_font_from_file(outfile):
     """
@@ -1314,12 +1310,12 @@ This code snippet demonstrates how to add text to a PDF document using a custom 
 1. Save the final document to a specified output path.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def use_custom_font_from_stream(outfile):
     """Use custom font from stream."""
@@ -1344,3 +1340,10 @@ def use_custom_font_from_stream(outfile):
 ```
 
 Embedding fonts ensures consistent rendering across platforms, making this approach ideal for branding, design fidelity, and multilingual support.
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
+- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)

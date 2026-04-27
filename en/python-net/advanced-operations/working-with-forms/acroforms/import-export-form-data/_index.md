@@ -10,11 +10,11 @@ AlternativeHeadline: Import and Export techniques using Aspose.PDF for Python vi
 Abstract: This compilation presents a comprehensive suite of form data import and export techniques using Aspose.PDF for Python via .NET. It covers workflows for integrating PDF forms with external data formats including XML, FDF, XFDF, and JSON. Users can automate bulk form filling by importing structured data into interactive fields, or extract field values for analysis, backup, or integration with other systems. The examples demonstrate how to bind PDF forms, transfer data between formats, and save updated documents, enabling scalable and consistent document processing across diverse applications.
 ---
 
-## Import Form Data from an XML file
+This page summarizes the available workflows for importing and exporting AcroForm data with Aspose.PDF for Python via .NET. These operations are performed through the [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form/) facade, so the canonical step-by-step examples are documented in the **Working with Facades** section.
 
-Next example demonstrates how to import form data from an XML file into an existing PDF form using Aspose.PDF for Python. By binding a PDF form, loading XML data, and saving the updated file, you can quickly populate interactive form fields without manually editing each page. This method is ideal for automating bulk form filling, processing large datasets, and ensuring data consistency across multiple documents.
+## Import and export examples
 
-Use the following steps:
+Use the following articles for the standard data exchange scenarios:
 
 1. Create a Form object using Aspose.PDF.
 1. Bind the PDF Form.
@@ -193,9 +193,9 @@ def import_data_from_another_pdf(input_file_name, output_file_name):
         form_dest.save()
 ```
 
-## Extract Form Fields to Json
+## Extract Form Fields to JSON
 
-This method extracts form fields from an input file and exports them to a JSON file.
+This method extracts form fields from an input file and exports them to a JSON file using the built-in `export_json()` method.
 
 1. Create a Form object using Aspose.PDF.
 1. Open the output file in write mode using FileIO().

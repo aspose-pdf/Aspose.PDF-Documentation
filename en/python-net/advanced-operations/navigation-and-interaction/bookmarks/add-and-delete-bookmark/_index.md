@@ -1,11 +1,11 @@
 ---
-title: Add and Delete a Bookmark using Python
+title: Add and Delete PDF Bookmarks in Python
 linktitle: Add and Delete a Bookmark
 type: docs
 weight: 10
 url: /python-net/add-and-delete-bookmark/
-description: You can add a bookmark to a PDF document with Python. It is possible to delete all or particular bookmarks from a PDF document.
-lastmod: "2025-02-27"
+description: Learn how to add and delete bookmarks in PDF documents using Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,24 +27,29 @@ To add a bookmark to a PDF:
 The following code snippet shows you how to add a bookmark in a PDF document.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
-
-    # Open document
-    document = ap.Document(input_pdf)
+def add_bookmark(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
     # Create a bookmark object
-    outline = ap.OutlineItemCollection(document.outlines)
-    outline.title = "Test Bookmark"
-    outline.italic = True
-    outline.bold = True
-    # Set the destination page number
-    outline.action = ap.annotations.GoToAction(document.pages[1])
-    # Add bookmark in the document's outline collection.
-    document.outlines.append(outline)
+    pdf_outline = ap.OutlineItemCollection(document.outlines)
+    pdf_outline.title = "Test Outline"
+    pdf_outline.italic = True
+    pdf_outline.bold = True
 
-    # Save output
-    document.save(output_pdf)
+    # Set the destination page number
+    pdf_outline.action = ap.annotations.GoToAction(document.pages[1])
+
+    # Add bookmark to the document's outline collection
+    outlines = document.outlines
+    outlines.append(pdf_outline)
+
+    # Save PDF document
+    document.save(outfile)
 ```
 
 ## Add a Child Bookmark to the PDF Document
@@ -62,31 +67,34 @@ The child bookmark is created just like the parent bookmark, explained above, bu
 The following code snippets show how to add child bookmark to a PDF document.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
-
-    # Open document
-    document = ap.Document(input_pdf)
+def add_child_bookmark(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
     # Create a parent bookmark object
-    outline = ap.OutlineItemCollection(document.outlines)
-    outline.title = "Parent Outline"
-    outline.italic = True
-    outline.bold = True
+    pdf_outline = ap.OutlineItemCollection(document.outlines)
+    pdf_outline.title = "Parent Outline"
+    pdf_outline.italic = True
+    pdf_outline.bold = True
 
     # Create a child bookmark object
-    childOutline = ap.OutlineItemCollection(document.outlines)
-    childOutline.title = "Child Outline"
-    childOutline.italic = True
-    childOutline.bold = True
+    pdf_child_outline = ap.OutlineItemCollection(document.outlines)
+    pdf_child_outline.title = "Child Outline"
+    pdf_child_outline.italic = True
+    pdf_child_outline.bold = True
 
-    # Add child bookmark in parent bookmark's collection
-    outline.append(childOutline)
-    # Add parent bookmark in the document's outline collection.
-    document.outlines.append(outline)
+    # Add child bookmark to parent bookmark's collection
+    pdf_outline.append(pdf_child_outline)
 
-    # Save output
-    document.save(output_pdf)
+    # Add parent bookmark to the document's outline collection
+    document.outlines.append(pdf_outline)
+
+    # Save PDF document
+    document.save(outfile)
 ```
 
 ## Delete all Bookmarks from a PDF Document
@@ -101,18 +109,19 @@ To delete all bookmarks from a PDF file:
 The following code snippets show how to delete all bookmarks from a PDF document.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def delete_bookmarks(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    # Open document
-    document = ap.Document(input_pdf)
-
-    # Delete all bookmarks
+    # Delete all bookmarks in the PDF document
     document.outlines.delete()
 
-    # Save updated file
-    document.save(output_pdf)
-
+    # Save PDF document
+    document.save(outfile)
 ```
 
 ## Delete a Particular Bookmark from a PDF Document
@@ -127,16 +136,25 @@ The [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)
 The following code snippets show how to delete a particular bookmark from the PDF document.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def delete_bookmark(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    # Open document
-    document = ap.Document(input_pdf)
-
-    # Delete particular outline by Title
+    # Delete a specific bookmark by title.
+    # Note: If multiple bookmarks have the same title, only the first matching bookmark will be deleted.
     document.outlines.delete("Child Outline")
 
-    # Save updated file
-    document.save(output_pdf)
+    # Save PDF document
+    document.save(outfile)
 ```
+
+## Related Bookmark Topics
+
+- [Work with PDF bookmarks in Python](/pdf/python-net/bookmarks/)
+- [Get, update, and expand PDF bookmarks in Python](/pdf/python-net/get-update-and-expand-bookmark/)
+- [Navigation and interaction in PDF using Python](/pdf/python-net/navigation-and-interaction/)
 
