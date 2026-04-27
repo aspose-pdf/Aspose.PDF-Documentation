@@ -39,6 +39,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def split_documents(infile, outdir):
     document = ap.Document(infile)
     for page_num in range(1, len(document.pages) + 1):
@@ -63,6 +64,7 @@ def split_documents(infile, outdir):
 import sys
 import aspose.pdf as ap
 from os import path
+
 
 def split_documents_into_two_parts(infile, outdir):
     document = ap.Document(infile)
@@ -101,6 +103,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def split_documents_every_n_pages(infile, outdir, pages_per_part=3):
     document = ap.Document(infile)
     total_pages = len(document.pages)
@@ -138,6 +141,7 @@ Split a PDF document into multiple files based on custom-defined page ranges usi
 import sys
 import aspose.pdf as ap
 from os import path
+
 
 def split_documents_by_page_ranges(infile, outdir):
     document = ap.Document(infile)
@@ -181,6 +185,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def split_documents_first_page_and_rest(infile, outdir):
     document = ap.Document(infile)
     total_pages = len(document.pages)
@@ -220,6 +225,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def split_documents_last_page_and_rest(infile, outdir):
     document = ap.Document(infile)
     total_pages = len(document.pages)
@@ -258,6 +264,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def split_documents_into_three_parts(infile, outdir):
     document = ap.Document(infile)
     total_pages = len(document.pages)
@@ -285,6 +292,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def split_documents_custom_page_groups(infile, outdir):
     document = ap.Document(infile)
     total_pages = len(document.pages)
@@ -310,6 +318,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def split_documents_with_stable_filenames(infile, outdir):
     document = ap.Document(infile)
     total_pages = len(document.pages)
@@ -326,6 +335,7 @@ def split_documents_with_stable_filenames(infile, outdir):
 import sys
 import aspose.pdf as ap
 from os import path
+
 
 def split_documents_odd_even_pages(infile, outdir):
     document = ap.Document(infile)

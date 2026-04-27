@@ -48,6 +48,7 @@ import aspose.pdf as ap
 from os import path, stat
 import sys
 
+
 def optimize_pdf(infile, outfile):
     document = ap.Document(infile)
     document.optimize()
@@ -75,6 +76,7 @@ The snippet below is an example. Note, though, that this method cannot guarantee
 import aspose.pdf as ap
 from os import path, stat
 import sys
+
 
 def reduce_size_pdf(infile, outfile):
     # Open document
@@ -104,6 +106,7 @@ We have two ways to work with images: reduce image quality and/or change their r
 import aspose.pdf as ap
 from os import path, stat
 import sys
+
 
 def shrinking_or_compressing_all_images(infile, outfile):
     # Open document
@@ -136,6 +139,7 @@ import aspose.pdf as ap
 from os import path, stat
 import sys
 
+
 def removing_unused_objects(infile, outfile):
     # Open document
     document = ap.Document(infile)
@@ -165,6 +169,7 @@ import aspose.pdf as ap
 from os import path, stat
 import sys
 
+
 def removing_unused_streams(infile, outfile):
     # Open document
     document = ap.Document(infile)
@@ -193,6 +198,7 @@ import aspose.pdf as ap
 from os import path, stat
 import sys
 
+
 def linking_duplicate_streams(infile, outfile):
     # Open document
     document = ap.Document(infile)
@@ -220,6 +226,7 @@ If the document uses embedded fonts, it means that all font data is stored in th
 import aspose.pdf as ap
 from os import path, stat
 import sys
+
 
 def unembed_fonts(infile, outfile):
     # Open document
@@ -253,6 +260,7 @@ import aspose.pdf as ap
 from os import path, stat
 import sys
 
+
 def flatten_annotations(infile, outfile):
     # Open document
     document = ap.Document(infile)
@@ -273,6 +281,7 @@ If the PDF document contains AcroForms, we can try to reduce the file size by fl
 import aspose.pdf as ap
 from os import path, stat
 import sys
+
 
 def flatten_forms(infile, outfile):
     # Load source PDF form
@@ -303,6 +312,7 @@ import aspose.pdf as ap
 from os import path, stat
 import sys
 
+
 def сonvert_PDF_from_RGB_colorspace_to_grayscale(infile, outfile):
     document = ap.Document(infile)
     strategy = ap.RgbToDeviceGrayConversionStrategy()
@@ -322,6 +332,7 @@ Aspose.PDF for Python via .NET provides support of FlateDecode compression for P
 import aspose.pdf as ap
 from os import path, stat
 import sys
+
 
 def using_flatedecode_compression(infile, outfile):
 

@@ -41,6 +41,7 @@ import aspose.pdf as ap
 import sys
 from os import path
 
+
 def add_layers(outfile):
     """
     Add three colored line layers (red, green, blue) to a new PDF document.
@@ -122,6 +123,7 @@ import aspose.pdf as ap
 import sys
 from os import path
 
+
 def lock_layer(infile, outfile):
     """
     Lock the first layer of the first page in a document.
@@ -169,6 +171,7 @@ import aspose.pdf as ap
 import sys
 from os import path
 
+
 def extract_layers(infile, outfile):
     """
     Extract all layers from the first page and save each as a separate file.
@@ -209,6 +212,7 @@ from io import FileIO
 import aspose.pdf as ap
 import sys
 from os import path
+
 
 def extract_layers_stream(infile, outfile):
     """
@@ -258,6 +262,7 @@ import aspose.pdf as ap
 import sys
 from os import path
 
+
 def flatten_layers(infile, outfile):
     """
     Flatten all layers of the first page in a document.
@@ -306,6 +311,7 @@ from io import FileIO
 import aspose.pdf as ap
 import sys
 from os import path
+
 
 def merge_layers(infile, outfile):
     """

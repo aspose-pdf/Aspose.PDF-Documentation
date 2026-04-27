@@ -29,6 +29,7 @@ import sys
 from os import path
 import aspose.pdf as ap
 
+
 def validate_pdfa_standard_a1a(input_pdf, output_pdf):
     _validate_pdfa_standard(input_pdf, output_pdf, ap.PdfFormat.PDF_A_1A)
 ```
@@ -39,6 +40,7 @@ The following code snippet shows you how to validate PDF document for PDF/A-1b.
 import sys
 from os import path
 import aspose.pdf as ap
+
 
 def validate_pdfa_standard_a1b(input_pdf, output_pdf):
     _validate_pdfa_standard(input_pdf, output_pdf, ap.PdfFormat.PDF_A_1B)
@@ -56,6 +58,7 @@ To add a TOC to an existing PDF file, use the Heading class in the [aspose.pdf](
 import sys
 from os import path
 import aspose.pdf as ap
+
 
 def add_table_of_contents(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
@@ -90,6 +93,7 @@ import sys
 from os import path
 import aspose.pdf as ap
 
+
 def set_toc_levels(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
     toc_page = document.pages.add()
@@ -104,7 +108,9 @@ def set_toc_levels(input_pdf, output_pdf):
     toc_info.format_array[0].margin.left = 0
     toc_info.format_array[0].margin.right = 30
     toc_info.format_array[0].line_dash = ap.text.TabLeaderType.DOT
-    toc_info.format_array[0].text_state.font_style = ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    toc_info.format_array[0].text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     toc_info.format_array[1].margin.left = 10
     toc_info.format_array[1].margin.right = 30
     toc_info.format_array[1].line_dash = 3
@@ -140,6 +146,7 @@ import sys
 from os import path
 import aspose.pdf as ap
 
+
 def hide_page_numbers_in_toc(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
     toc_page = document.pages.add()
@@ -153,7 +160,9 @@ def hide_page_numbers_in_toc(input_pdf, output_pdf):
 
     toc_info.format_array_length = 4
     toc_info.format_array[0].margin.right = 0
-    toc_info.format_array[0].text_state.font_style = ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    toc_info.format_array[0].text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     toc_info.format_array[1].margin.left = 30
     toc_info.format_array[1].text_state.underline = True
     toc_info.format_array[1].text_state.font_size = 10
@@ -182,7 +191,8 @@ import sys
 from os import path
 import aspose.pdf as ap
 
-def customize_page_numbers_in_toc(input_pdf, output_pdf):  
+
+def customize_page_numbers_in_toc(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
     toc_page = document.pages.insert(1)
     toc_info = ap.TocInfo()
@@ -214,6 +224,7 @@ import sys
 from os import path
 import aspose.pdf as ap
 
+
 def set_pdf_expiry_date(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
     document.pages.add()
@@ -239,6 +250,7 @@ Aspose.PDF provides the function to flatten your PDF in Python with just few lin
 import sys
 from os import path
 import aspose.pdf as ap
+
 
 def flatten_fillable_pdf(input_pdf, output_pdf):
     document = ap.Document(input_pdf)

@@ -38,6 +38,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def merge_two_documents(infile1, infile2, outfile):
     document1 = ap.Document(infile1)
     document2 = ap.Document(infile2)
@@ -60,6 +61,7 @@ Copy and append a specific range of pages from a source PDF document to a destin
 import sys
 import aspose.pdf as ap
 from os import path
+
 
 def _append_page_range(source_document, destination_document, start_page, end_page):
     total_pages = len(source_document.pages)
@@ -92,6 +94,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def merge_multiple_documents(input_files, outfile):
     output_document = ap.Document()
 
@@ -119,6 +122,7 @@ import sys
 import aspose.pdf as ap
 from os import path
 
+
 def merge_selected_page_ranges(infile1, infile2, outfile):
     document1 = ap.Document(infile1)
     document2 = ap.Document(infile2)
@@ -145,6 +149,7 @@ def merge_selected_page_ranges(infile1, infile2, outfile):
 import sys
 import aspose.pdf as ap
 from os import path
+
 
 def merge_insert_document_at_position(infile1, infile2, insert_after_page, outfile):
     base_document = ap.Document(infile1)
@@ -180,6 +185,7 @@ This example demonstrates how to merge two PDF documents by alternating their pa
 import sys
 import aspose.pdf as ap
 from os import path
+
 
 def merge_alternating_pages(infile1, infile2, outfile):
     document1 = ap.Document(infile1)
@@ -218,6 +224,7 @@ Merge multiple PDF documents into a single file with structured sections and nav
 import sys
 import aspose.pdf as ap
 from os import path
+
 
 def merge_with_section_separators_and_bookmarks(input_files, outfile):
     output_document = ap.Document()
