@@ -90,3 +90,13 @@ def import_export(infile, outfile):
 
     destination_document.save(outfile)
 ```
+
+## Related Topics
+
+- [Interactive Annotations](/python-net/interactive-annotations/)
+- [Markup Annotations](/python-net/markup-annotations/)
+- [Media Annotations](/python-net/media-annotations/)
+- [Security Annotations](/python-net/security-annotations/)
+- [Shape Annotations](/python-net/shape-annotations/)
+- [Text Based Annotations](/python-net/text-based-Annotations/)
+- [Watermark Annotations](/python-net/watermark-annotations/)
