@@ -26,46 +26,28 @@ To calculate the total count of artifacts of a particular type (for example, the
 1. Print results.
 
 ```python
+
+from os import path
+from collections import Counter
+import sys
 import aspose.pdf as ap
 
-
-def count_pagination_artifacts(path_infile):
-    # Open the PDF document
-    with ap.Document(path_infile) as document:
-        # Extract pagination artifacts from the first page
+def count_pdf_artifacts(infile):
+    """Count and display artifacts of different types on the first page."""
+    with ap.Document(infile) as document:
         pagination_artifacts = [
             artifact
             for artifact in document.pages[1].artifacts
             if artifact.type == ap.Artifact.ArtifactType.PAGINATION
         ]
 
-        # Count artifacts by subtype
-        watermarks = sum(
-            1
-            for artifact in pagination_artifacts
-            if artifact.subtype == ap.Artifact.ArtifactSubtype.WATERMARK
-        )
-        backgrounds = sum(
-            1
-            for artifact in pagination_artifacts
-            if artifact.subtype == ap.Artifact.ArtifactSubtype.BACKGROUND
-        )
-        headers = sum(
-            1
-            for artifact in pagination_artifacts
-            if artifact.subtype == ap.Artifact.ArtifactSubtype.HEADER
-        )
-        footers = sum(
-            1
-            for artifact in pagination_artifacts
-            if artifact.subtype == ap.Artifact.ArtifactSubtype.FOOTER
-        )
+        subtypes = [artifact.subtype for artifact in pagination_artifacts]
+        counts = Counter(subtypes)
 
-        # Display results
-        print(f"Watermarks: {watermarks}")
-        print(f"Backgrounds: {backgrounds}")
-        print(f"Headers: {headers}")
-        print(f"Footers: {footers}")
+        print(f"Watermarks: {counts.get(ap.Artifact.ArtifactSubtype.WATERMARK, 0)}")
+        print(f"Backgrounds: {counts.get(ap.Artifact.ArtifactSubtype.BACKGROUND, 0)}")
+        print(f"Headers: {counts.get(ap.Artifact.ArtifactSubtype.HEADER, 0)}")
+        print(f"Footers: {counts.get(ap.Artifact.ArtifactSubtype.FOOTER, 0)}")
 ```
 
 ## Related Artifact Topics
