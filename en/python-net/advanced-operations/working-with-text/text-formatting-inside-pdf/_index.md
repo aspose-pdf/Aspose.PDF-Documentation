@@ -35,49 +35,19 @@ Our code snippet shows how to control line spacing in a PDF document. It reads t
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def specify_line_spacing_simple_case(outfile):
-    """
-    Specify custom line spacing for text in a PDF document.
-
-    Creates a PDF document with text that has custom line spacing applied.
-    Loads text content from an external file and applies 16-point line spacing
-    to improve readability and text layout.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Attempts to load text from "lorem.txt" file in DATA_DIR
-        - Falls back to default message if file doesn't exist
-        - Font size: 12 points
-        - Line spacing: 16 points (increased from default for better readability)
-        - Demonstrates basic line spacing control in PDF text formatting
-
-    Example:
-        >>> specify_line_spacing_simple_case("line_spacing.pdf")
-        # Creates a PDF with custom 16-point line spacing
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
-    lorem_path = os.path.join(DATA_DIR, "lorem.txt")
-    text = (
-        open(lorem_path, "r", encoding="utf-8").read()
-        if os.path.exists(lorem_path)
-        else "Lorem ipsum text not found."
-    )
+    lorem_path = path.join(DATA_DIR, "lorem.txt")
+    if path.exists(lorem_path):
+        with open(lorem_path, "r", encoding="utf-8") as f:
+            text = f.read()
+    else:
+        text = "Lorem ipsum text not found."
 
     text_fragment = ap.text.TextFragment(text)
     text_fragment.text_state.font_size = 12
@@ -108,44 +78,20 @@ The example shows how line spacing behavior can vary depending on the selected m
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def specify_line_spacing_specific_case(outfile):
-    """
-    Create a PDF document demonstrating different line spacing modes with custom font.
-    This function creates a PDF with two text fragments using the same custom TTF font
-    but different line spacing modes to demonstrate the visual differences between
-    FONT_SIZE and FULL_SIZE line spacing options.
-    Args:
-        outfile (str): Path where the output PDF file will be saved.
-    Notes:
-        - Requires 'HPSimplified.ttf' font file in DATA_DIR
-        - Requires 'lorem.txt' text file in DATA_DIR for content
-        - Falls back to default text if lorem.txt is not found
-        - First fragment uses FONT_SIZE line spacing mode
-        - Second fragment uses FULL_SIZE line spacing mode
-    Dependencies:
-        - aspose.pdf (ap) library
-        - os module for file path operations
-        - DATA_DIR constant must be defined
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
-    font_file = os.path.join(DATA_DIR, "HPSimplified.ttf")
-    lorem_path = os.path.join(DATA_DIR, "lorem.txt")
-    text = (
-        open(lorem_path, "r", encoding="utf-8").read()
-        if os.path.exists(lorem_path)
-        else "Lorem ipsum text not found."
-    )
+    font_file = path.join(DATA_DIR, "HPSimplified.ttf")
+    lorem_path = path.join(DATA_DIR, "lorem.txt")
+    if path.exists(lorem_path):
+        with open(lorem_path, "r", encoding="utf-8") as f:
+            text = f.read()
+    else:
+        text = "Lorem ipsum text not found."
 
     with open(font_file, "rb") as font_stream:
         font = ap.text.FontRepository.open_font(font_stream, ap.text.FontTypes.TTF)
@@ -186,40 +132,10 @@ Character spacing determines the distance between individual characters in a lin
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def character_spacing_using_text_fragment(outfile):
-    """
-    Demonstrate character spacing control using TextFragment objects.
-
-    Creates a PDF document showing different character spacing values applied
-    to text fragments. Each line demonstrates progressively increased character
-    spacing to illustrate the visual effect on text appearance.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Creates multiple TextFragment objects with varying character spacing
-        - Character spacing values: 0, 1, 2, 3, and 4 points
-        - Font: Times Roman, 12 points
-        - Each fragment is positioned on a new line for comparison
-        - Character spacing affects only horizontal letter spacing
-        - Higher values create more space between individual characters
-
-    Example:
-        >>> character_spacing_using_text_fragment("char_spacing_fragment.pdf")
-        # Creates a PDF showing progressive character spacing effects
-    """
     document = ap.Document()
     page = document.pages.add()
 

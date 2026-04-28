@@ -428,39 +428,11 @@ Unlike full-document removal, this method performs page-level text cleanup, dele
 1. Save the Modified PDF.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def remove_all_text_using_absorber2(infile, outfile):
-    """
-    Remove all text from page using TextFragmentAbsorber.
-
-    Demonstrates text removal from a specific page while leaving text
-    on other pages intact. Useful for selective text cleanup or
-    creating mixed-content documents.
-
-    Args:
-        infile (str): Path to the input PDF file to process.
-        outfile (str): Path where the modified PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Removes text only from the first page (pages[1])
-        - Preserves text content on all other pages
-        - Maintains page structure and non-text elements
-        - Useful for page-specific text removal operations
-        - Images and graphics on the target page remain intact
-
-    Example:
-        >>> remove_all_text_using_absorber2("input.pdf", "first_page_clean.pdf")
-        # Removes all text from first page only
-    """
     with ap.Document(infile) as document:
         absorber = ap.text.TextFragmentAbsorber()
         absorber.remove_all_text(document.pages[1])
@@ -480,42 +452,16 @@ Instead of clearing an entire page, this method performs targeted text removal, 
 1. Save the Modified PDF.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def remove_all_text_using_absorber3(infile, outfile):
-    """
-    Remove all text from particular area on PDF page using TextFragmentAbsorber.
-
-    Demonstrates precise text removal from a specific rectangular region
-    on a page. Allows for surgical text removal while preserving text
-    outside the target area.
-
-    Args:
-        infile (str): Path to the input PDF file to process.
-        outfile (str): Path where the modified PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Removes text only within rectangle (10, 200, 120, 600)
-        - Targets the first page only (pages[1])
-        - Preserves text outside the specified rectangle
-        - Maintains all non-text elements in the region
-        - Useful for removing watermarks, headers, or specific sections
-
-    Example:
-        >>> remove_all_text_using_absorber3("input.pdf", "region_clean.pdf")
-        # Removes text only from the specified rectangular area
-    """
     with ap.Document(infile) as document:
         absorber = ap.text.TextFragmentAbsorber()
-        absorber.remove_all_text(document.pages[1], ap.Rectangle(10, 200, 120, 600))
+        absorber.remove_all_text(
+            document.pages[1], ap.Rectangle(10, 200, 120, 600, True)
+        )
         document.save(outfile)
 ```
 
@@ -532,39 +478,11 @@ Instead of clearing an entire page, this method performs targeted text removal, 
 1. Save the Modified PDF.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def remove_hidden_text(infile, outfile):
-    """
-    Remove all hidden (invisible) text from a PDF document.
-
-    Identifies and removes text that has been marked as invisible while
-    preserving all visible text content. Useful for cleaning documents
-    that may contain hidden tracking text or metadata.
-
-    Args:
-        infile (str): Path to the input PDF file to process.
-        outfile (str): Path where the cleaned PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Detects text fragments with invisible text state
-        - Replaces hidden text with empty strings
-        - Uses NONE replacement adjustment to prevent layout shifts
-        - Preserves all visible text and document structure
-        - Useful for privacy and security document cleanup
-
-    Example:
-        >>> remove_hidden_text("input.pdf", "no_hidden_text.pdf")
-        # Removes all invisible text while keeping visible content intact
-    """
     # Open PDF document
     with ap.Document(infile) as document:
         text_absorber = ap.text.TextFragmentAbsorber()

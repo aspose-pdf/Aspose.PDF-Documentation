@@ -33,39 +33,11 @@ Creates a PDF file named rotated_fragments.pdf containing three text fragments a
 1. Save the Document.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def rotate_text_inside_pdf_1(outfile):
-    """
-    Implement text rotation using TextFragment and TextBuilder.
-
-    Demonstrates basic text rotation techniques by creating multiple text
-    fragments with different rotation angles. Shows how to position and
-    rotate individual text elements using TextBuilder for precise control.
-
-    Args:
-        outfile (str): Path where the PDF with rotated text will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with rotated text fragments.
-
-    Note:
-        - Creates three text fragments with 0°, 45°, and 90° rotations
-        - Uses Position class for precise text placement
-        - Applies TimesNewRoman font with 12pt size
-        - TextBuilder provides low-level control over text placement
-        - Demonstrates individual fragment rotation capabilities
-
-    Example:
-        >>> rotate_text_inside_pdf_1("rotated_fragments.pdf")
-        # Creates a PDF with text fragments at different rotation angles
-    """
-
     # Create PDF document
     with ap.Document() as document:
         # Get particular page
@@ -128,39 +100,11 @@ Creates a PDF named rotated_paragraph_fragments.pdf containing a paragraph with 
 1. Save the Document.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def rotate_text_inside_pdf_2(outfile):
-    """
-    Implement text rotation using TextParagraph and TextBuilder with rotated fragments.
-
-    Demonstrates how to create multi-line paragraphs containing individually
-    rotated text fragments. Shows the combination of paragraph structure
-    with fragment-level rotation control.
-
-    Args:
-        outfile (str): Path where the PDF with rotated paragraph fragments will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with a paragraph containing rotated fragments.
-
-    Note:
-        - Creates a TextParagraph containing multiple text fragments
-        - Individual fragments have different rotations: 45°, 0°, and -45°
-        - Uses append_line to structure fragments within the paragraph
-        - Demonstrates mixed rotation within a single paragraph
-        - TextBuilder handles paragraph-level placement and rendering
-
-    Example:
-        >>> rotate_text_inside_pdf_2("rotated_paragraph_fragments.pdf")
-        # Creates a PDF with a paragraph containing individually rotated text fragments
-    """
-
     # Create PDF document
     with ap.Document() as document:
         # Get particular page
@@ -225,39 +169,11 @@ Generates a file named 'simple_rotated_text.pdf' containing:
 1. Save the PDF Document.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def rotate_text_inside_pdf_3(outfile):
-    """
-    Implement text rotation using TextFragment and Page.Paragraphs.
-
-    Demonstrates a simplified approach to text rotation by adding rotated
-    text fragments directly to the page's paragraph collection. Shows
-    high-level text placement without TextBuilder complexity.
-
-    Args:
-        outfile (str): Path where the PDF with rotated text will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with rotated text using page paragraphs.
-
-    Note:
-        - Uses Page.Paragraphs for direct text fragment addition
-        - Creates fragments with 0°, 315°, and 270° rotations
-        - Simpler approach compared to TextBuilder method
-        - Demonstrates automatic layout with rotated text elements
-        - Good for basic rotation without precise positioning needs
-
-    Example:
-        >>> rotate_text_inside_pdf_3("simple_rotated_text.pdf")
-        # Creates a PDF with rotated text using the simplified page paragraphs approach
-    """
-
     # Create PDF document
     with ap.Document() as document:
         # Get particular page
@@ -303,8 +219,8 @@ This is ideal for artistic layouts, watermarks, or design-heavy PDFs where entir
 
 Creates 'rotated_paragraphs.pdf', containing four fully styled and rotated paragraphs:
 
- - each rotated at a unique angle (45°, 135°, 225°, and 315°)
- - each paragraph has three lines of text with colored backgrounds, underlining, and consistent styling
+- each rotated at a unique angle (45°, 135°, 225°, and 315°)
+- each paragraph has three lines of text with colored backgrounds, underlining, and consistent styling
 
 1. Create a New PDF Document.
 1. Add a blank page to hold the rotated paragraphs.
@@ -318,40 +234,11 @@ Creates 'rotated_paragraphs.pdf', containing four fully styled and rotated parag
 1. Save the PDF Document.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def rotate_text_inside_pdf_4(outfile):
-    """
-    Implement whole paragraph rotation using TextParagraph and TextBuilder.
-
-    Demonstrates advanced text rotation by rotating entire paragraphs at
-    different angles. Creates multiple styled paragraphs with comprehensive
-    formatting and rotates each paragraph as a complete unit.
-
-    Args:
-        outfile (str): Path where the PDF with rotated paragraphs will be saved.
-
-    Returns:
-        None: The function creates and saves a PDF file with fully rotated paragraphs.
-
-    Note:
-        - Creates 4 paragraphs rotated at 45°, 135°, 225°, and 315°
-        - Each paragraph contains multiple formatted text fragments
-        - Applies comprehensive styling: colors, backgrounds, underlines
-        - Demonstrates paragraph-level rotation vs. fragment-level rotation
-        - Shows complex multi-line content with consistent rotation
-        - Uses loop to create systematic rotation pattern
-
-    Example:
-        >>> rotate_text_inside_pdf_4("rotated_paragraphs.pdf")
-        # Creates a PDF with complete paragraphs rotated at different angles
-    """
-
     # Create PDF document
     with ap.Document() as document:
         # Get particular page
