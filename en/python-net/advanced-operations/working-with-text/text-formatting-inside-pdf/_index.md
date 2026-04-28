@@ -35,49 +35,19 @@ Our code snippet shows how to control line spacing in a PDF document. It reads t
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def specify_line_spacing_simple_case(outfile):
-    """
-    Specify custom line spacing for text in a PDF document.
-
-    Creates a PDF document with text that has custom line spacing applied.
-    Loads text content from an external file and applies 16-point line spacing
-    to improve readability and text layout.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Attempts to load text from "lorem.txt" file in DATA_DIR
-        - Falls back to default message if file doesn't exist
-        - Font size: 12 points
-        - Line spacing: 16 points (increased from default for better readability)
-        - Demonstrates basic line spacing control in PDF text formatting
-
-    Example:
-        >>> specify_line_spacing_simple_case("line_spacing.pdf")
-        # Creates a PDF with custom 16-point line spacing
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
-    lorem_path = os.path.join(DATA_DIR, "lorem.txt")
-    text = (
-        open(lorem_path, "r", encoding="utf-8").read()
-        if os.path.exists(lorem_path)
-        else "Lorem ipsum text not found."
-    )
+    lorem_path = path.join(DATA_DIR, "lorem.txt")
+    if path.exists(lorem_path):
+        with open(lorem_path, "r", encoding="utf-8") as f:
+            text = f.read()
+    else:
+        text = "Lorem ipsum text not found."
 
     text_fragment = ap.text.TextFragment(text)
     text_fragment.text_state.font_size = 12
@@ -108,44 +78,20 @@ The example shows how line spacing behavior can vary depending on the selected m
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def specify_line_spacing_specific_case(outfile):
-    """
-    Create a PDF document demonstrating different line spacing modes with custom font.
-    This function creates a PDF with two text fragments using the same custom TTF font
-    but different line spacing modes to demonstrate the visual differences between
-    FONT_SIZE and FULL_SIZE line spacing options.
-    Args:
-        outfile (str): Path where the output PDF file will be saved.
-    Notes:
-        - Requires 'HPSimplified.ttf' font file in DATA_DIR
-        - Requires 'lorem.txt' text file in DATA_DIR for content
-        - Falls back to default text if lorem.txt is not found
-        - First fragment uses FONT_SIZE line spacing mode
-        - Second fragment uses FULL_SIZE line spacing mode
-    Dependencies:
-        - aspose.pdf (ap) library
-        - os module for file path operations
-        - DATA_DIR constant must be defined
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
-    font_file = os.path.join(DATA_DIR, "HPSimplified.ttf")
-    lorem_path = os.path.join(DATA_DIR, "lorem.txt")
-    text = (
-        open(lorem_path, "r", encoding="utf-8").read()
-        if os.path.exists(lorem_path)
-        else "Lorem ipsum text not found."
-    )
+    font_file = path.join(DATA_DIR, "HPSimplified.ttf")
+    lorem_path = path.join(DATA_DIR, "lorem.txt")
+    if path.exists(lorem_path):
+        with open(lorem_path, "r", encoding="utf-8") as f:
+            text = f.read()
+    else:
+        text = "Lorem ipsum text not found."
 
     with open(font_file, "rb") as font_stream:
         font = ap.text.FontRepository.open_font(font_stream, ap.text.FontTypes.TTF)
@@ -186,40 +132,10 @@ Character spacing determines the distance between individual characters in a lin
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def character_spacing_using_text_fragment(outfile):
-    """
-    Demonstrate character spacing control using TextFragment objects.
-
-    Creates a PDF document showing different character spacing values applied
-    to text fragments. Each line demonstrates progressively increased character
-    spacing to illustrate the visual effect on text appearance.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Creates multiple TextFragment objects with varying character spacing
-        - Character spacing values: 0, 1, 2, 3, and 4 points
-        - Font: Times Roman, 12 points
-        - Each fragment is positioned on a new line for comparison
-        - Character spacing affects only horizontal letter spacing
-        - Higher values create more space between individual characters
-
-    Example:
-        >>> character_spacing_using_text_fragment("char_spacing_fragment.pdf")
-        # Creates a PDF showing progressive character spacing effects
-    """
     document = ap.Document()
     page = document.pages.add()
 
@@ -260,40 +176,10 @@ Using TextParagraph is ideal when you need precise control over text placement a
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def character_spacing_using_text_paragraph(outfile):
-    """
-    Demonstrate character spacing control using TextParagraph objects.
-
-    Creates a PDF document with text paragraph that has custom character spacing
-    applied. Shows how to set character spacing at the paragraph level and
-    demonstrates the visual effect on text layout.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Uses TextParagraph for paragraph-level formatting
-        - Character spacing: 2.0 points
-        - Font: Times Roman, 12 points
-        - Demonstrates paragraph-based character spacing control
-        - Character spacing applies to all text within the paragraph
-        - Alternative approach to fragment-based character spacing
-
-    Example:
-        >>> character_spacing_using_text_paragraph("char_spacing_paragraph.pdf")
-        # Creates a PDF with paragraph-level character spacing
-    """
     document = ap.Document()
     page = document.pages.add()
 
@@ -333,42 +219,14 @@ By the end of this article, you’ll know how to:
 
 - Understand the difference between manual list construction and markup-driven approaches.
 
-### Create a bullet list
-
-Create a custom bulleted list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
-Each list item is prefixed with a bullet character (•) and added as a separate TextFragment.
-
-1. Initialize a Document object and add a blank page.
-1. Define a Python list of strings that will be converted into bullet points.
-1. Create a TextBuilder and a TextParagraph.
-1. Use the 'TextBuilder' to add the configured paragraph to the page.
-1. Save the PDF document.
+### Create numbered list
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def create_bullet_list(outfile):
-    """
-    Create a PDF document with a bullet list using plain text formatting.
-    This function generates a PDF document containing a bullet list with predefined items.
-    The list is formatted with bullet points, uses Times New Roman font, and includes
-    text wrapping behavior for longer items.
-    Args:
-        outfile (str): The file path where the PDF document will be saved.
-    Returns:
-        None: The function saves the document to the specified file path.
-    Note:
-        The bullet list is positioned within a rectangle at coordinates (80, 200, 400, 800)
-        and uses word wrapping mode for text formatting.
-    """
-
     document = ap.Document()
     page = document.pages.add()
     items = [
@@ -395,47 +253,14 @@ def create_bullet_list(outfile):
     document.save(outfile)
 ```
 
-### Create a numbered list
-
-Create a custom numbered (ordered) list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
-Each list item is prefixed with its number (e.g., 1., 2.) and added as a separate TextFragment.
-
-1. Initialize a Document object and add a blank page.
-1. Define a Python list of strings that will be converted into numbered list items.
-1. Create a TextBuilder and a TextParagraph.
-1. Add each item as a TextFragment with a number.
-1. Use the TextBuilder to add the configured paragraph to the page.
-1. Save the PDF document.
+### Create a bullet list
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def create_numbered_list(outfile):
-    """
-    Create a numbered list in a PDF document using plain text formatting.
-    This function generates a PDF document containing a numbered list with predefined
-    items. The list is formatted with Times New Roman font and includes text wrapping
-    by words within a specified rectangular area on the page.
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-    Returns:
-        None: The function saves the document to the specified file path but does
-              not return any value.
-    Note:
-        - Uses Aspose.PDF library (imported as 'ap')
-        - List items are hardcoded within the function
-        - Font: Times New Roman, size 12
-        - Text wrapping: BY_WORDS mode
-        - Rectangle bounds: (80, 200, 400, 800)
-    """
-
     document = ap.Document()
     page = document.pages.add()
     items = [
@@ -462,73 +287,7 @@ def create_numbered_list(outfile):
     document.save(outfile)
 ```
 
-### Create a bullet list HTML version
-
-Our library shows how to create a bulleted (unordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML `<ul>` element and inserts it into a PDF page as an HtmlFragment. Using HTML fragments allows you to leverage HTML formatting features (like lists, bold, italics) directly in the PDF.
-
-1. Create a new PDF document and add a page.
-1. Prepare the list items.
-1. Convert the list to an HTML unordered list.
-    - Use the `<ul>` tag for an unordered (bulleted) list.
-    - Wrap each item with 'li' tags using a list comprehension.
-1. Create an HtmlFragment. Convert the HTML string into an HtmlFragment object that can be added to the PDF page.
-1. Insert the HtmlFragment into the page’s paragraphs collection.
-1. Save the PDF document.
-
-```python
-import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
-
-def create_bullet_list_html_version(outfile):
-    """
-    Create a bulleted list using HTML formatting in a PDF document.
-
-    Generates a PDF with an unordered (bulleted) list created using HTML markup.
-    Demonstrates how to use HtmlFragment to embed HTML list structures directly
-    into PDF documents with proper formatting and styling.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Uses HTML <ul> and <li> tags for list structure
-        - Items are predefined with sample content
-        - HtmlFragment automatically handles HTML rendering
-        - Lists maintain proper bullet formatting and indentation
-        - Simpler alternative to manual list creation with TextFragments
-        - Supports nested lists and HTML styling if needed
-
-    Example:
-        >>> create_bullet_list_html_version("bullet_list_html.pdf")
-        # Creates a PDF with HTML-formatted bulleted list
-    """
-
-    document = ap.Document()
-    page = document.pages.add()
-    items = [
-        "First item in the list",
-        "Second item with more text to demonstrate wrapping behavior.",
-        "Third item",
-        "Fourth item",
-    ]
-    html_list = "<ul>" + "".join([f"<li>{item}</li>" for item in items]) + "</ul>"
-    html_fragment = ap.HtmlFragment(html_list)
-    page.paragraphs.add(html_fragment)
-    document.save(outfile)
-```
-
-![Bulleted list displayed in a PDF document showing four items: First item in the list, Second item with more text to demonstrate wrapping behavior, Third item, and Fourth item. Each item is preceded by a standard bullet point and demonstrates HTML-formatted list rendering within the PDF structure with proper indentation and spacing](bullet_list_html.png)
-
-### Create numbered list HTML version
+### Create a numbered list HTML version
 
 Create a numbered (ordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML `<ol>` element and inserts it into a PDF page as an HtmlFragment.
 
@@ -545,41 +304,10 @@ Using HTML fragments enables you to incorporate HTML-based formatting features, 
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def create_numbered_list_html_version(outfile):
-    """
-    Create a numbered list using HTML formatting in a PDF document.
-
-    Generates a PDF with an ordered (numbered) list created using HTML markup.
-    Demonstrates how to use HtmlFragment to embed HTML ordered list structures
-    directly into PDF documents with automatic numbering and formatting.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Uses HTML <ol> and <li> tags for ordered list structure
-        - Items are predefined with sample content
-        - HtmlFragment automatically handles HTML rendering and numbering
-        - Lists maintain proper numeric formatting and indentation
-        - Numbers are automatically generated (1, 2, 3, etc.)
-        - Supports nested lists and custom numbering styles if needed
-
-    Example:
-        >>> create_numbered_list_html_version("numbered_list_html.pdf")
-        # Creates a PDF with HTML-formatted numbered list
-    """
-
     document = ap.Document()
     page = document.pages.add()
     items = [
@@ -596,6 +324,41 @@ def create_numbered_list_html_version(outfile):
 
 ![Numbered list displayed in a PDF document showing four automatically numbered items: 1. First item in the list, 2. Second item with more text to demonstrate wrapping behavior, 3. Third item, and 4. Fourth item. The list demonstrates HTML-formatted ordered list rendering within PDF structure with proper numeric sequencing, indentation, and spacing between items](numbered_list_html.png)
 
+### Create a bullet list HTML version
+
+Our library shows how to create a bulleted (unordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML `<ul>` element and inserts it into a PDF page as an HtmlFragment. Using HTML fragments allows you to leverage HTML formatting features (like lists, bold, italics) directly in the PDF.
+
+1. Create a new PDF document and add a page.
+1. Prepare the list items.
+1. Convert the list to an HTML unordered list.
+    - Use the `<ul>` tag for an unordered (bulleted) list.
+    - Wrap each item with 'li' tags using a list comprehension.
+1. Create an HtmlFragment. Convert the HTML string into an HtmlFragment object that can be added to the PDF page.
+1. Insert the HtmlFragment into the page’s paragraphs collection.
+1. Save the PDF document.
+
+```python
+import aspose.pdf as ap
+import sys
+from os import path
+
+def create_bullet_list_html_version(outfile):
+    document = ap.Document()
+    page = document.pages.add()
+    items = [
+        "First item in the list",
+        "Second item with more text to demonstrate wrapping behavior.",
+        "Third item",
+        "Fourth item",
+    ]
+    html_list = "<ul>" + "".join([f"<li>{item}</li>" for item in items]) + "</ul>"
+    html_fragment = ap.HtmlFragment(html_list)
+    page.paragraphs.add(html_fragment)
+    document.save(outfile)
+```
+
+![Bulleted list displayed in a PDF document showing four items: First item in the list, Second item with more text to demonstrate wrapping behavior, Third item, and Fourth item. Each item is preceded by a standard bullet point and demonstrates HTML-formatted list rendering within the PDF structure with proper indentation and spacing](bullet_list_html.png)
+
 ### Create a bullet list LaTeX version
 
 Create a bulleted (unordered) list in a PDF using LaTeX fragments (TeXFragment). It converts a Python list of strings into a LaTeX itemize environment and inserts it into a PDF page. Using LaTeX fragments is ideal when you want to render mathematical formulas, symbols, or structured lists with precise formatting.
@@ -611,41 +374,10 @@ Create a bulleted (unordered) list in a PDF using LaTeX fragments (TeXFragment).
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def create_bullet_list_latex_version(outfile):
-    """
-    Create a bulleted list using LaTeX formatting in a PDF document.
-
-    Generates a PDF with an unordered list created using LaTeX markup.
-    Demonstrates how to use TeXFragment to embed LaTeX itemize environments
-    directly into PDF documents with proper mathematical and scientific formatting.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Uses LaTeX \\begin{itemize} and \\item commands
-        - TeXFragment handles LaTeX compilation and rendering
-        - Supports mathematical expressions and scientific notation
-        - Lists maintain proper bullet formatting and indentation
-        - More powerful than HTML for mathematical content
-        - Can include LaTeX math modes and special symbols
-
-    Example:
-        >>> create_bullet_list_latex_version("bullet_list_latex.pdf")
-        # Creates a PDF with LaTeX-formatted bulleted list
-    """
-
     document = ap.Document()
     page = document.pages.add()
     items = [
@@ -679,17 +411,10 @@ Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). I
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def create_numbered_list_latex_version(outfile):
-    """Create a numbered list using LaTeX."""
-
     document = ap.Document()
     page = document.pages.add()
     items = [
@@ -725,17 +450,10 @@ Add a footnote to a text fragment in a PDF document using Aspose.PDF for Python 
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def add_footnote(outfile):
-    """Add footnote to a PDF document."""
-
     document = ap.Document()
     page = document.pages.add()
 
@@ -767,17 +485,10 @@ def add_footnote(outfile):
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def add_footnote_custom_text_style(outfile):
-    """Add footnote with custom text style."""
-
     document = ap.Document()
     page = document.pages.add()
 
@@ -815,33 +526,10 @@ Add footnotes to text fragments in a PDF document using Aspose.PDF for Python vi
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def add_footnote_custom_text(outfile):
-    """
-    Add footnote with custom text marker to a PDF document.
-    Creates a PDF document with text fragments that include footnotes with custom
-    styling. The function demonstrates how to add footnotes with custom text markers
-    and standard footnotes to different text fragments within the same document.
-    Args:
-        outfile (str): The output file path where the PDF document will be saved.
-    Returns:
-        None: The function saves the document to the specified output file.
-    Example:
-        add_footnote_custom_text("output_with_footnotes.pdf")
-    Note:
-        The document will contain:
-        - Text with a custom footnote marker ("*")
-        - Text without footnotes
-        - Text with a standard footnote
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
@@ -879,29 +567,10 @@ Customize the visual appearance of footnote lines in a PDF document with Python 
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def add_footnote_with_custom_line_style(outfile):
-    """
-    Add footnotes with custom line style to a PDF document.
-    Creates a PDF document with text fragments that have footnotes and applies
-    a custom line style for the footnote separator line. The custom style includes
-    red color, increased line width, and dashed pattern.
-    Args:
-        outfile (str): Path where the generated PDF document will be saved.
-    Returns:
-        None: The function saves the document to the specified output file.
-    Example:
-        >>> add_footnote_with_custom_line_style("output.pdf")
-        # Creates a PDF with footnoted text and custom separator line styling
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
@@ -937,31 +606,10 @@ How to enrich footnotes in a PDF document by embedding images, styled text, and 
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def add_footnote_with_image_and_table(outfile):
-    """
-    Add a footnote containing an image and table to a PDF document.
-    Creates a new PDF document with sample text that includes a footnote. The footnote
-    contains three elements: an image (logo.jpg), descriptive text, and a simple table
-    with two cells. The image is resized to 20x20 pixels and the footnote text uses
-    a 20pt font size.
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-    Returns:
-        None: The function saves the document to the specified output file.
-    Note:
-        - Requires the logo.jpg file to be present in the DATA_DIR directory
-        - Uses the Aspose.PDF library (imported as 'ap')
-        - The footnote is attached to the main text fragment on the page
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
@@ -972,7 +620,7 @@ def add_footnote_with_image_and_table(outfile):
 
     # Add image
     image_note = ap.Image()
-    image_note.file = os.path.join(DATA_DIR, "logo.jpg")
+    image_note.file = path.join(DATA_DIR, "logo.jpg")
     image_note.fix_height = 20
     image_note.fix_width = 20
     note.paragraphs.add(image_note)
@@ -1008,30 +656,10 @@ This code snippet demonstrates how to add an endnote to a text fragment in a PDF
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def add_endnote(outfile):
-    """Add endnote to a PDF document.
-    Creates a new PDF document with a text fragment containing an endnote,
-    followed by additional lorem ipsum content to simulate a longer document.
-    The endnote is attached to the first text fragment and will be displayed
-    according to the PDF viewer's endnote handling.
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-    Returns:
-        None: The function saves the document to the specified output file path.
-    Note:
-        This function requires the aspose-pdf library and assumes the existence
-        of a DATA_DIR variable pointing to a directory containing 'lorem.txt'.
-        If the lorem.txt file is not found, fallback text will be used.
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
@@ -1041,12 +669,12 @@ def add_endnote(outfile):
     text_fragment.end_note = ap.Note("This is the EndNote content.")
     page.paragraphs.add(text_fragment)
 
-    lorem_path = os.path.join(DATA_DIR, "lorem.txt")
-    text_content = (
-        open(lorem_path, encoding="utf-8").read()
-        if os.path.exists(lorem_path)
-        else "Lorem ipsum sample text not found."
-    )
+    lorem_path = path.join(DATA_DIR, "lorem.txt")
+    if path.exists(lorem_path):
+        with open(lorem_path, encoding="utf-8") as f:
+            text_content = f.read()
+    else:
+        text_content = "Lorem ipsum sample text not found."
 
     # Simulate long text
     for _ in range(5):
@@ -1071,31 +699,10 @@ Add an endnote to a text fragment in a PDF document, with a custom marker symbol
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def add_endnote_custom_text(outfile):
-    """
-    Add endnote with custom text marker to a PDF document.
-    Creates a PDF document with a text fragment that contains an endnote with
-    a custom marker ("***"). The document is populated with sample text content
-    from a lorem.txt file, repeated multiple times to simulate a longer document.
-    Args:
-        outfile (str): Path where the generated PDF document will be saved.
-    Returns:
-        None: The function saves the document to the specified output file path.
-    Note:
-        - Requires lorem.txt file in DATA_DIR for sample content
-        - Falls back to default text if lorem.txt is not found
-        - Uses Arial font with 14pt size for all text elements
-        - The endnote marker is set to "***" instead of default numbering
-    """
-
     document = ap.Document()
     page = document.pages.add()
 
@@ -1106,12 +713,12 @@ def add_endnote_custom_text(outfile):
     text_fragment.end_note.text = "***"
     page.paragraphs.add(text_fragment)
 
-    lorem_path = os.path.join(DATA_DIR, "lorem.txt")
-    text_content = (
-        open(lorem_path, encoding="utf-8").read()
-        if os.path.exists(lorem_path)
-        else "Lorem ipsum sample text not found."
-    )
+    lorem_path = path.join(DATA_DIR, "lorem.txt")
+    if path.exists(lorem_path):
+        with open(lorem_path, encoding="utf-8") as f:
+            text_content = f.read()
+    else:
+        text_content = "Lorem ipsum sample text not found."
 
     # Simulate long text
     for _ in range(5):
@@ -1138,39 +745,10 @@ By setting the property 'is_in_new_page', you can precisely control page layout 
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def force_new_page(output_file_name):
-    """
-    Create a PDF document demonstrating forced page breaks with tables.
-
-    Creates a PDF document with a table that is forced to start on a new page
-    using the is_in_new_page property. This is useful for controlling page layout
-    and ensuring specific content starts on fresh pages.
-
-    Args:
-        output_file_name (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Creates a 3-column table with 5 rows of sample data
-        - Table uses uniform column widths of 150 units each
-        - All cells have borders for clear visual separation
-        - is_in_new_page=True forces the table to start on a new page
-        - Useful for reports, documents with sections, or content organization
-
-    Example:
-        >>> force_new_page("new_page_table.pdf")
-        # Creates a PDF with a table that starts on a new page
-    """
     # Create new PDF document
     document = ap.Document()
     page = document.pages.add()
@@ -1215,40 +793,10 @@ The third text fragment starts a new paragraph, demonstrating the default line-b
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def using_inline_paragraph_property(output_file_name):
-    """
-    Demonstrate inline paragraph behavior in PDF document layout.
-
-    Creates a PDF document showing how the is_in_line_paragraph property affects
-    the flow of text and images. Elements with this property continue the flow
-    of the previous paragraph instead of starting a new one.
-
-    Args:
-        output_file_name (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - First text fragment starts a new paragraph
-        - Image with is_in_line_paragraph=True continues the same line
-        - Second text fragment also continues the same paragraph line
-        - Third text fragment starts a new paragraph (default behavior)
-        - Demonstrates inline flow control for mixed content (text + images)
-        - Image is resized to 30x30 pixels and flows inline with text
-
-    Example:
-        >>> using_inline_paragraph_property("inline_paragraph.pdf")
-        # Creates a PDF demonstrating inline paragraph flow
-    """
     # Create a PDF document
     document = ap.Document()
     page = document.pages.add()
@@ -1262,7 +810,7 @@ def using_inline_paragraph_property(output_file_name):
     # --- Inline image (continues same paragraph flow) ---
     image = ap.Image()
     image.is_in_line_paragraph = True  # Makes image inline with previous paragraph
-    image.file = os.path.join(DATA_DIR, "logo.jpg")
+    image.file = path.join(DATA_DIR, "logo.jpg")
     image.fix_height = 30
     image.fix_width = 30
     page.paragraphs.add(image)
@@ -1301,43 +849,10 @@ It showcases how to combine text, HTML formatting, and graphics within a Floatin
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def create_multi_column_pdf(output_file_name):
-    """
-    Create a PDF document with multi-column layout using FloatingBox.
-
-    Creates a professional-looking PDF with a multi-column newspaper-style layout.
-    Demonstrates advanced layout techniques including floating boxes, column
-    configuration, and mixed content with graphics and text.
-
-    Args:
-        output_file_name (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Document margins: 40 points left and right
-        - Top horizontal line for visual separation
-        - HTML-formatted heading with custom styling
-        - FloatingBox with 2-column layout (105 units wide each)
-        - Column spacing: 5 units between columns
-        - Includes author attribution with italic styling
-        - Internal horizontal line within the floating box
-        - Long text content automatically flows between columns
-        - Demonstrates professional document layout techniques
-
-    Example:
-        >>> create_multi_column_pdf("multi_column_layout.pdf")
-        # Creates a PDF with newspaper-style multi-column layout
-    """
     # Create PDF document
     document = ap.Document()
 
@@ -1398,12 +913,12 @@ def create_multi_column_pdf(output_file_name):
     #
     # Add long text content
     #
-    lorem_path = os.path.join(DATA_DIR, "lorem.txt")
-    lorem_text = (
-        open(lorem_path, "r", encoding="utf-8").read()
-        if os.path.exists(lorem_path)
-        else "Lorem ipsum text not found."
-    )
+    lorem_path = path.join(DATA_DIR, "lorem.txt")
+    if path.exists(lorem_path):
+        with open(lorem_path, "r", encoding="utf-8") as f:
+            lorem_text = f.read()
+    else:
+        lorem_text = "Lorem ipsum text not found."
     text2 = ap.text.TextFragment(lorem_text * 5)
     box.paragraphs.add(text2)
 
@@ -1426,42 +941,10 @@ By defining tab stop positions, alignments, and leader styles, you can align tex
 
 ```python
 import aspose.pdf as ap
-from aspose.pdf import Color
-from aspose.pdf.drawing import Graph, Line
-import os
-
-# Global configuration
-DATA_DIR = "your path here"
-
+import sys
+from os import path
 
 def custom_tab_stops(output_file_name):
-    """
-    Create a PDF document demonstrating custom tab stops for table-like formatting.
-
-    Creates a PDF document that uses custom tab stops to format text in a table-like
-    structure without using actual table elements. This demonstrates advanced text
-    formatting with precise positioning and leader styles.
-
-    Args:
-        output_file_name (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Tab stop 1: Position 100, right-aligned, solid leader line
-        - Tab stop 2: Position 200, center-aligned, dashed leader line
-        - Tab stop 3: Position 300, left-aligned, dotted leader line
-        - Uses #$TAB placeholder for tab positions in text
-        - Creates table-like structure with headers and data rows
-        - Demonstrates mixing TextFragment and TextSegment approaches
-        - Leader lines provide visual guides between columns
-        - Alternative to HTML tables for precise text positioning
-
-    Example:
-        >>> custom_tab_stops("custom_tabs.pdf")
-        # Creates a PDF with custom tab stop formatting
-    """
     # Create PDF document
     document = ap.Document()
     page = document.pages.add()
