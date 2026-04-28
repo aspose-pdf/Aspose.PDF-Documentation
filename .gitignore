@@ -228,3 +228,4 @@ src/
 logs/
 reports/
 .doctranslate/
+.codex-temp.json
