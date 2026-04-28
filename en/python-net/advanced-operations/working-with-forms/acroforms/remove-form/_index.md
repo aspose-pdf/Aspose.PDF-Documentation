@@ -4,19 +4,19 @@ linktitle: Delete Forms
 type: docs
 weight: 70
 url: /python-net/remove-form/
-description: Remove Text based on subtype/form with Aspose.PDF for Python via .NET library. Remove all forms from the PDF.
-lastmod: "2025-09-17"
+description: Remove form objects from PDF pages by using Aspose.PDF for Python via .NET, including full cleanup and targeted deletion.
+lastmod: "2026-04-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Remove Forms from PDF with Aspose.PDF for Python via .NET
-Abstract: This document presents two Python-based approaches for removing form elements from PDF files using Aspose.PDF for Python via .NET. The first method demonstrates how to clear all form objects from a specific page by accessing its resource dictionary and invoking the clear() method on the forms collection. The second method provides a more targeted solution by iterating through form annotations, identifying typewriter-style forms, and selectively deleting them based on their attributes. Both techniques conclude with saving the updated PDF to a specified output path, offering flexible options for form cleanup and document refinement in automated workflows.
+Abstract: This article presents two approaches for removing form elements from PDF documents by using Aspose.PDF for Python via .NET. The first method clears all form objects from a selected page, while the second method removes only matching Typewriter form resources. These examples help with form cleanup, template preparation, and document normalization workflows.
 ---
 
-## Remove all Forms from PDF
+## Remove All Forms from a Page
 
-This code removes all form elements from the first page of a PDF document and then saves the modified document to the specified output path.
+This code removes all form objects from the page specified by `page_num` and saves the updated document.
 
 1. Load the PDF document.
 1. Access page resources.
@@ -25,19 +25,15 @@ This code removes all form elements from the first page of a PDF document and th
 
 ```python
 import aspose.pdf as ap
-import os
 
-data_dir = "/path/to/your/pdf/files/"
-path_infile = os.path.join(data_dir, infile)
-path_outfile = os.path.join(data_dir, outfile)
-
-document = ap.Document(path_infile)
-forms = document.pages[page_num].resources.forms
-forms.clear()
-document.save(path_outfile)
+def remove_all_forms(input_file_name, page_num, output_file_name):
+    document = ap.Document(input_file_name)
+    forms = document.pages[page_num].resources.forms
+    forms.clear()
+    document.save(output_file_name)
 ```
 
-## Remove Specified Form
+## Remove a Specific Form Type
 
 Next example iterates through the form objects on a given PDF page, identifies typewriter form annotations, deletes them, and then saves the updated PDF using Aspose.PDF for Python via .NET.
 
@@ -50,17 +46,20 @@ Next example iterates through the form objects on a given PDF page, identifies t
 
 ```python
 import aspose.pdf as ap
-import os
 
-data_dir = "/path/to/your/pdf/files/"
-path_infile = os.path.join(work_dir, infile)
-path_outfile = os.path.join(work_dir, outfile)
-
-document = ap.Document(path_infile)
-forms = document.pages[page_num].resources.forms
-for form in forms:
-    if form.it == "Typewriter" and form.subtype == "Form":
-        name = forms.get_form_name(form)
-        forms.delete(name)
-document.save(path_outfile)
+def remove_specified_form(input_file_name, page_num, output_file_name):
+    document = ap.Document(input_file_name)
+    forms = document.pages[page_num].resources.forms
+    for form in forms:
+        if form.it == "Typewriter" and form.subtype == "Form":
+            name = forms.get_form_name(form)
+            forms.delete(name)
+    document.save(output_file_name)
 ```
+
+## Related Topics
+
+- [Create AcroForm](/pdf/python-net/create-form/)
+- [Fill AcroForm](/pdf/python-net/fill-form/)
+- [Modifying AcroForm](/pdf/python-net/modifying-form/)
+- [Posting Forms](/pdf/python-net/posting-form/)
