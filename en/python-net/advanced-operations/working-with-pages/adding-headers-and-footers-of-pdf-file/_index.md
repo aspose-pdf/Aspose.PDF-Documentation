@@ -35,37 +35,11 @@ The following code snippet demonstrates how to add headers and footers as text f
 1. Save the modified PDF to the output file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_header_and_footer_as_text(input_file, output_file):
-    """
-    Add simple text headers and footers to all pages of a PDF document.
-
-    Creates basic text-based headers and footers that appear on every page
-    of the PDF document. Headers show "header" text and footers show "footer" text.
-
-    Args:
-        input_file (str): Path to the input PDF file.
-        output_file (str): Path where the modified PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Adds identical headers and footers to all pages
-        - Sets margins of 50 units left and 20 units top
-        - Uses simple TextFragment elements for content
-        - Headers and footers are created separately for each page
-
-    Example:
-        >>> add_header_and_footer_as_text("input.pdf", "output.pdf")
-        # Adds text headers and footers to all pages
-    """
     # Create header text
     header_text = ap.text.TextFragment("Demo header")
     # Create header
@@ -115,40 +89,11 @@ Add automatic page numbering to the headers and footers of a PDF document using 
 1. Save the updated PDF to the output path.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def using_header_and_footer_for_page_numbering(input_file, output_file):
-    """
-    Add page numbering headers and footers to all pages of a PDF document.
-
-    Creates headers and footers with dynamic page numbering using special variables.
-    The $p variable represents the current page number and $P represents the total
-    number of pages in the document.
-
-    Args:
-        input_file (str): Path to the input PDF file.
-        output_file (str): Path where the modified PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Uses $p for current page number and $P for total pages
-        - Header shows "Page X from Y" format
-        - Footer shows "Page X / Y" format
-        - Variables are automatically replaced by Aspose.PDF
-        - Sets margins of 50 units left and 20 units top
-        - Page numbering updates dynamically for each page
-
-    Example:
-        >>> using_header_and_footer_for_page_numbering("input.pdf", "output.pdf")
-        # Adds page numbering headers and footers to all pages
-    """
     # Create header text
     header_text = ap.text.TextFragment("Page $p from $P")
     # Create header
@@ -199,38 +144,11 @@ The following code snippet demonstrates how to add headers and footers as HTML f
 1. Save the modified PDF to the specified output path.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_header_and_footer_as_html(input_file, output_file):
-    """
-    Add HTML-formatted headers and footers to all pages of a PDF document.
-
-    Creates rich HTML-based headers and footers with formatting like bold
-    and italic text. Demonstrates how to use HtmlFragment for styled content.
-
-    Args:
-        input_file (str): Path to the input PDF file.
-        output_file (str): Path where the modified PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Uses HtmlFragment for rich text formatting
-        - Header includes HTML with <strong> tag for bold text
-        - Footer includes HTML with <i> tag for italic text
-        - Sets margins of 50 units left and 20 units top
-        - HTML tags are rendered properly in the PDF
-
-    Example:
-        >>> add_header_and_footer_as_html("input.pdf", "output.pdf")
-        # Adds HTML-formatted headers and footers to all pages
-    """
     # Create header HTML
     header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
     # Create header
@@ -285,40 +203,11 @@ The following code snippet demonstrates how to add headers and footers as images
 This technique is ideal for branding documents with logos or watermarks in the header/footer area.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_header_and_footer_as_image(input_file, image_file, output_file):
-    """
-    Add image-based headers and footers to all pages of a PDF document.
-
-    Creates headers and footers using image files. The same image is used
-    for both header and footer positioning on each page.
-
-    Args:
-        input_file (str): Path to the input PDF file.
-        image_file (str): Path to the image file to use for headers and footers.
-        output_file (str): Path where the modified PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Uses the same image file for both header and footer
-        - Creates separate Image objects for header and footer
-        - Sets margin of 50 units left for positioning
-        - Image files should be in supported formats (PNG, JPG, etc.)
-        - Images are automatically sized to fit header/footer areas
-
-    Example:
-        >>> add_header_and_footer_as_image("input.pdf", "logo.png", "output.pdf")
-        # Adds image headers and footers using logo.png
-    """
-
     # Create header image
     header_image = ap.Image()
     header_image.file = image_file
@@ -370,38 +259,11 @@ This code snippet adds headers and footers (using tables) to each page of a PDF 
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the output file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_header_and_footer_as_table(input_file, output_file):
-    """
-    Add table-based headers and footers to all pages of a PDF document.
-
-    Creates headers and footers using table structures for better layout
-    control and alignment. Demonstrates advanced formatting with text states.
-
-    Args:
-        input_file (str): Path to the input PDF file.
-        output_file (str): Path where the modified PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Uses Table objects for structured layout
-        - Header table has centered Arial 12pt text
-        - Footer table has left-aligned Arial 12pt text
-        - Column width calculated based on page width minus margins
-        - Provides more precise control over text positioning
-
-    Example:
-        >>> add_header_and_footer_as_table("input.pdf", "output.pdf")
-        # Adds table-structured headers and footers to all pages
-    """
     text_state_header = ap.text.TextState()
     text_state_header.font = ap.text.FontRepository.find_font("Arial")
     text_state_header.font_size = 12
@@ -457,45 +319,18 @@ The following code snippet shows how to use [`TeXFragment`](https://reference.as
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the output file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_header_and_footer_as_latex(input_file, output_file):
-    """
-    Add LaTeX-formatted headers and footers to all pages of a PDF document.
-
-    Creates headers and footers using LaTeX markup for mathematical expressions,
-    symbols, and advanced formatting. Demonstrates TeXFragment usage.
-
-    Args:
-        input_file (str): Path to the input PDF file.
-        output_file (str): Path where the modified PDF will be saved.
-
-    Returns:
-        None: The function modifies the PDF and saves it to the output path.
-
-    Note:
-        - Uses TeXFragment for LaTeX rendering
-        - Header includes LaTeX date command (\\today\\)
-        - Footer includes copyright symbol and page numbering
-        - LaTeX commands are processed and rendered properly
-        - Page count is dynamically calculated and inserted
-
-    Example:
-        >>> add_header_and_footer_as_latex("input.pdf", "output.pdf")
-        # Adds LaTeX-formatted headers and footers with symbols and page numbers
-    """
     # Open PDF document
     with ap.Document(input_file) as document:
         page_count = len(document.pages)
         for i in range(1, page_count + 1):
             # Create header
             header = ap.HeaderFooter()
-            h_latex_text = "This is a LaTex Header. \\today\\"
+            h_latex_text = "This is a LaTeX Header. \\today\\"
             h_l_text = ap.TeXFragment(h_latex_text, True)
             # Create footer
             footer = ap.HeaderFooter()

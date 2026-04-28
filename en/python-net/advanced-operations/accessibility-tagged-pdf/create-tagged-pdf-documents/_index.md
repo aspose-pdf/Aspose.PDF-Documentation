@@ -20,7 +20,8 @@ Following code snippet shows how to create Tagged PDF which contains 2 elements:
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def create_tagged_pdf_document_simple(outfile):
 
@@ -58,10 +59,10 @@ def create_tagged_pdf_document_simple(outfile):
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def create_tagged_pdf_document_adv(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for working with TaggedPdf
@@ -135,7 +136,8 @@ The example creates a PDF document with accessibility features by using a tagged
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def add_style(outfile):
 
@@ -173,10 +175,10 @@ Tagged PDFs are essential for accessibility compliance and provide structured co
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def illustrate_structure_elements(imagefile, outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with TaggedPdf
@@ -216,10 +218,10 @@ Aspose.PDF for Python via .NET provides the ability to validate a PDF/UA Tagged 
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def validate_tagged_pdf(infile, logfile):
-
     # Open PDF document
     with ap.Document(infile) as document:
         is_valid = document.validate(logfile, ap.PdfFormat.PDF_UA_1)
@@ -232,10 +234,10 @@ The following code snippet shows how to adjust Text Structure position in the Ta
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def adjust_position(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with TaggedPdf
@@ -288,10 +290,10 @@ By configuring PdfFormatConversionOptions and enabling AutoTaggingSettings, you 
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def convert_to_pdf_ua_with_automatic_tagging(infile, outfile, logfile):
-
     # Create PDF Document
     with ap.Document(infile) as document:
         # Create conversion options
@@ -328,10 +330,10 @@ def convert_to_pdf_ua_with_automatic_tagging(infile, outfile, logfile):
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def create_pdf_with_tagged_form_field(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         document.pages.add()
@@ -377,10 +379,10 @@ This example shows how to create a tagged PDF document with a structured Table o
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def create_pdf_with_toc_page(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         # Get tagged content for the PDF structure
@@ -429,10 +431,10 @@ Using Aspose.PDF for Python via .NET, you can create an advanced, fully tagged P
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def create_pdf_with_toc_page_advanced(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         # Get tagged content for the PDF structure

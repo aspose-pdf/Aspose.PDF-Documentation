@@ -21,15 +21,13 @@ Aspose.PDF for Python allows you to remove a table from a PDF. It opens an exist
 Use this page when you need to clean up table-heavy PDFs, remove outdated tabular content, or simplify documents before redistribution.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, outfile)
-
+def remove_one_table(infile: str, outfile: str) -> None:
     # Load existing PDF document
-    document = ap.Document(path_infile)
+    document = ap.Document(infile)
 
     # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
@@ -40,7 +38,7 @@ Use this page when you need to clean up table-heavy PDFs, remove outdated tabula
     # Remove the table
     absorber.remove(table)
     # Save PDF
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ## Remove all Tables from PDF document
@@ -48,19 +46,17 @@ Use this page when you need to clean up table-heavy PDFs, remove outdated tabula
 With our library, you can remove all tables from a specific page in a PDF. The code opens an existing PDF, detects all tables on the second page with TableAbsorber, iterates through the detected tables, removes each one, and then saves the modified PDF to a new file. It is useful when you need to bulk-remove tables from a page while leaving the rest of the PDF content intact.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, outfile)
-
+def remove_all_tables(infile: str, outfile: str) -> None:
     # Load existing PDF document
-    document = ap.Document(path_infile)
+    document = ap.Document(infile)
 
     # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # Visit second page with absorber
+    # Visit first page with absorber
     absorber.visit(document.pages[1])
     #  Loop through the copy of collection and removing tables
     tables = list(absorber.table_list)
@@ -68,7 +64,7 @@ With our library, you can remove all tables from a specific page in a PDF. The c
         absorber.remove(table)
 
     # Save document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ## Related Table Topics

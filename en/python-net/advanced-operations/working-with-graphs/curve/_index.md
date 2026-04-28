@@ -31,37 +31,21 @@ Follow the steps below:
 1. Save our PDF file.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create PDF document
+def add_curve(outfile: str):
     document = ap.Document()
-
-    # Add page
     page = document.pages.add()
-
-    # Create Drawing object with certain dimensions
     graph = drawing.Graph(400, 200)
+    graph.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
 
-    # Set border for Drawing object
-    border_info = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
-    graph.border = border_info
-
-    # Create a curve and set its properties
     curve1 = drawing.Curve([10, 10, 50, 60, 70, 10, 100, 120])
-    curve1.graph_info = drawing.GraphInfo()
     curve1.graph_info.color = ap.Color.green_yellow
-
-    # Add the curve to the graph shapes
     graph.shapes.add(curve1)
 
-    # Add Graph object to paragraphs collection of page
     page.paragraphs.add(graph)
-
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 The following picture shows the result executed with our code snippet:
@@ -73,37 +57,22 @@ The following picture shows the result executed with our code snippet:
 This example shows how to add a Curve object that is filled with color.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
 
-    # Create PDF document
+def add_curve_filled(outfile: str):
     document = ap.Document()
-
-    # Add page
     page = document.pages.add()
-
-    # Create Drawing object with certain dimensions
     graph = drawing.Graph(400, 200)
+    graph.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
 
-    # Set border for Drawing object
-    border_info = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
-    graph.border = border_info
-
-    # Create a curve and set fill color
     curve1 = drawing.Curve([10, 10, 50, 60, 70, 10, 100, 120])
-    curve1.graph_info = drawing.GraphInfo()
     curve1.graph_info.fill_color = ap.Color.green_yellow
-
-    # Add the curve to the graph shapes
     graph.shapes.add(curve1)
 
-    # Add Graph object to paragraphs collection of page
     page.paragraphs.add(graph)
-
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 Look at the result of adding a filled Curve:

@@ -27,20 +27,14 @@ Use embedded PDF attachments when you need to package supporting source files, s
 The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Open document
-    document = ap.Document(input_pdf)
-
-    # Setup new file to be added as attachment
-    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
-
-    # Add attachment to document's attachment collection
-    document.embedded_files.append(fileSpecification)
-
-    # Save new output
-    document.save(output_pdf)
+def add_attachments(infile, attachment_path, outfile):
+    with ap.Document(infile) as document:
+        file_spec = ap.FileSpecification(attachment_path, "Sample text file")
+        document.embedded_files.add(path.basename(attachment_path), file_spec)
+        document.save(outfile)
 ```
 
 ## Related Attachment Topics

@@ -28,12 +28,9 @@ You can use [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/t
 1. Save the modified PDF document.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def add_text_stamp(input_file_name, output_file_name):
     document = ap.Document(input_file_name)
@@ -50,8 +47,9 @@ def add_text_stamp(input_file_name, output_file_name):
     # Set text properties
     text_stamp.text_state.font = ap.text.FontRepository.find_font("Arial")
     text_stamp.text_state.font_size = 14.0
-    text_stamp.text_state.font_style = ap.text.FontStyles.BOLD
-    text_stamp.text_state.font_style = ap.text.FontStyles.ITALIC
+    text_stamp.text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     text_stamp.text_state.foreground_color = ap.Color.dark_green
     # Add stamp to particular page
     document.pages[1].add_stamp(text_stamp)

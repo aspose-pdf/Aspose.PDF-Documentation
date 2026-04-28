@@ -30,24 +30,11 @@ To get the number of pages in a PDF file:
 The following code snippet shows how to get the number of pages of a PDF file.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def get_page_count(input_file_name):
-    """
-    Get the total number of pages in a PDF document.
-    Args:
-        input_file_name (str): Path to the input PDF file.
-    Returns:
-        None: Prints the page count to console.
-    Example:
-        get_page_count("example.pdf")
-        # Output: Page Count: 10
-    """
     # Open document
     document = ap.Document(input_file_name)
 
@@ -60,33 +47,13 @@ def get_page_count(input_file_name):
 Sometimes we generate the PDF files on the fly and during PDF file creation, we may come across the requirement (creating Table Of Contents etc.) to get page count of PDF file without saving the file over system or stream. So in order to cater to this requirement, a method [process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) has been introduced in Document class. Please take a look over the following code snippet which shows the steps to get page count without saving the document.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def get_page_count_without_saving(input_file_name):
-    """
-    Get the page count of a PDF document after adding content without saving the file.
-
-    This function opens an existing PDF document, adds a new page with 300 text fragments,
-    processes the paragraphs to ensure accurate page counting, and prints the total number
-    of pages in the document. The document is not saved to disk.
-
-    Args:
-        input_file_name (str): Path to the input PDF file to be processed.
-
-    Returns:
-        None: This function prints the page count but does not return a value.
-
-    Example:
-        >>> get_page_count_without_saving("sample.pdf")
-        Number of pages in document = 2
-    """
     # Instantiate Document instance
-    document = ap.Document(input_file_name)
+    document = ap.Document()
     # Add page to pages collection of PDF file
     page = document.pages.add()
     # Create loop instance
@@ -122,20 +89,11 @@ The [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) class p
 From there, it is possible to access either individual `Page` objects using their index, or loop through the collection to get all pages. Once an individual page is accessed, we can get its properties. The following code snippet shows how to get page properties (the `Page` API).
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def get_page_properties(input_file_name):
-    """
-    Retrieves and displays various page properties for the first page of a PDF document.
-
-    Args:
-        input_file_name (str): Path to the PDF file to analyze.
-    """
     # Open document
     document = ap.Document(input_file_name)
     # Get particular page
@@ -171,37 +129,11 @@ All the pages of the PDF files are contained by the [PageCollection](https://ref
 The following code snippet shows how to iterate through individual page of PDF file to get color information.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def get_page_color_type(input_file_name):
-    """
-    Analyzes and prints the color type information for each page in a PDF document.
-
-    This function opens a PDF file and iterates through all pages to determine
-    the color type of each page (black and white, grayscale, RGB, or undefined).
-    The results are printed to the console with human-readable descriptions.
-
-    Args:
-        input_file_name (str): Path to the PDF file to analyze.
-
-    Returns:
-        None: This function prints results directly to console and doesn't return a value.
-
-    Example:
-        >>> get_page_color_type("sample.pdf")
-        Page # 1 is RGB.
-        Page # 2 is Gray Scale.
-        Page # 3 is Black and white.
-
-    Note:
-        Requires the aspose.pdf library (imported as ap) to be installed and available.
-        The PDF file must be accessible at the specified path.
-    """
     # Open source PDF file
     document = ap.Document(input_file_name)
     # Iterate through all the page of PDF file

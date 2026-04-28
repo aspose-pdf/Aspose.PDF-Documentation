@@ -24,7 +24,7 @@ Please note that the height and width properties use points as basic unit, where
 
 {{% /alert %}}
 
-### Set the Page Size of a PDF Page to A4
+## Set the Page Size of a PDF Page to A4
 
 The example updates the size of the first page in a PDF document to standard A4 dimensions. It also prints the page’s box dimensions (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) before and after resizing so you can verify the changes.
 
@@ -37,28 +37,17 @@ The following code snippet shows how to change the PDF page dimensions to A4 siz
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the specified output path.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def set_page_size(input_file_name, output_file_name):
-    """
-    Set the size of the first page in the PDF document to A4 and save the updated document.
-
-    Parameters:
-    - input_file_name (str): Path to the input PDF file.
-    - output_file_name (str): Path to save the output PDF file.
-    """
-    # Open the PDF document using the Document class
     document = ap.Document(input_file_name)
-    # Get particular page (Page API)
+    # Get particular page
     page = document.pages[1]
 
-    # Set the page size as A4 (8.3 x 11.7 in). In Aspose.PDF 1 inch = 72 points.
-    # A4 dimensions in points are (597.6, 842.4) for portrait orientation
+    # Set the page size as A4 (8.3 x 11.7 in) and in Aspose.Pdf, 1 inch = 72 points
+    # So A4 dimensions in points will be (597.6, 842.4) for portrait orientation
     print("Before set")
     print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
     print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
@@ -66,7 +55,6 @@ def set_page_size(input_file_name, output_file_name):
     print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
     print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
 
-    # Use the Page API to set page size
     page.set_page_size(597.6, 842.4)
     print("After set")
     print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
@@ -90,18 +78,14 @@ This snippet reads a PDF and retrieves the dimensions (width and height) of the 
 1. Print the page dimensions.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def get_page_size(input_file_name, output_file_name):
-    # Open document (Document API)
     document = ap.Document(input_file_name)
 
-    # Get particular page (Page API)
+    # Get particular page
     page = document.pages[1]
     rectangle = page.get_page_rect(True)
     print(f"{rectangle.width} : {rectangle.height}")
@@ -119,19 +103,14 @@ Retrieve the dimensions of a PDF page before and after applying a 90° rotation.
 1. Compare how the dimensions change due to rotation.
 
 ```python
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
+from os import path
 
 def get_page_size_rotation(input_file_name, output_file_name):
-    # Open document (Document API)
     document = ap.Document(input_file_name)
-    # Get particular page (Page API)
+    # Get particular page
     page = document.pages[1]
-    # Apply rotation using Rotation enum
     page.rotate = ap.Rotation.ON90
     rectangle = page.get_page_rect(False)
     print(f"{rectangle.width} : {rectangle.height}")

@@ -29,11 +29,12 @@ Create an advanced, fully tagged PDF document with a structured and hierarchical
 
 ```python
 import aspose.pdf as ap
-
+from aspose.pycore import cast
+import sys
+from os import path
 
 # region Extract Tagged Content from PDF
 def get_tagged_content(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -62,7 +63,8 @@ Following code snippet shows how to get the root structure of Tagged PDF Documen
 ```python
 import aspose.pdf as ap
 from aspose.pycore import cast
-
+import sys
+from os import path
 
 def get_root_structure(outfile):
 
@@ -100,7 +102,8 @@ Tagged PDFs contain a logical structure tree that defines the semantic hierarchy
 ```python
 import aspose.pdf as ap
 from aspose.pycore import cast
-
+import sys
+from os import path
 
 def access_child_elements(infile, outfile):
 

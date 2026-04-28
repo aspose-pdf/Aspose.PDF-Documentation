@@ -5,16 +5,16 @@ type: docs
 weight: 100
 url: /python-net/move-pages/
 description: Learn how to move PDF pages within a document or between documents in Python.
-lastmod: "2026-04-15"
+lastmod: "2026-04-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Moving Pages between PDF documents using Python
-Abstract: The article provides a comprehensive guide on moving pages between PDF documents or within a single PDF document using Python, specifically utilizing the Aspose.PDF library. It outlines step-by-step processes for three scenarios - moving a single page from one PDF to another, transferring multiple pages, and relocating a page within the same document. Each scenario involves creating `Document` class objects for source and destination PDFs, manipulating pages through the `PageCollection` class, and utilizing the `add`, `delete`, and `save` methods to achieve the desired page reorganization. Code snippets are provided for practical implementation, demonstrating how to move pages efficiently using Python scripts.
+AlternativeHeadline: Move PDF pages between documents in Python
+Abstract: This article explains how to move pages in PDFs using Aspose.PDF for Python via .NET. Learn how to move a single page or multiple pages to another document, and how to reposition a page within the same PDF using Document and PageCollection APIs.
 ---
 
-## Moving a Page from one PDF Document to Another
+## Move a Page from One PDF Document to Another
 
 Aspose.PDF for Python lets you move a page (not just copy it) from one PDF to another. It removes the selected page from the original document and then adds it to a new PDF file.
 
@@ -30,21 +30,12 @@ Think of it as cutting out a page from one book and gluing it into another — t
 The following code snippet shows you how to move one page.
 
 ```python
-import os
 import aspose.pdf as ap
 
-# Global configuration
-DATA_DIR = "your path here"
+def move_page_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
 
-
-def moving_page_from_one_document_to_another(input_file_name, output_file_name):
-    """
-    Move a single page from one PDF document to another.
-
-    Parameters:
-    - input_file_name (str): Path to the source PDF file.
-    - output_file_name (str): Path to the destination PDF file after moving the page.
-    """
     document = ap.Document(input_file_name)
     page = document.pages[2]
     another_document = ap.Document()
@@ -54,7 +45,7 @@ def moving_page_from_one_document_to_another(input_file_name, output_file_name):
     another_document.save(output_file_name)
 ```
 
-## Moving bunch of Pages from one PDF Document to Another
+## Move Multiple Pages from One PDF Document to Another
 
 Unlike copying, this operation transfers the selected pages — removing them from the source file and saving them in a new PDF.
 
@@ -65,27 +56,17 @@ Unlike copying, this operation transfers the selected pages — removing them fr
 1. Delete the moved pages from the source document using its [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
 1. Save the modified source document with a new file name to preserve both versions.
 
-The following code snippet shows you how to insert an empty page at the end of a PDF file.
+The following code snippet shows how to move multiple pages.
 
 ```python
-import os
 import aspose.pdf as ap
 
-# Global configuration
-DATA_DIR = "your path here"
-
-
-def moving_bunch_pages_from_one_document_to_another(input_file_name, output_file_name):
-    """
-    Move a set of pages from one PDF document to another.
-
-    Parameters:
-    - input_file_name (str): Path to the source PDF file.
-    - output_file_name (str): Path to the destination PDF file where selected pages will be saved.
-    """
+def move_multiple_pages_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
     src_document = ap.Document(input_file_name)
     dst_document = ap.Document()
-    pages = [1, 3]
+    pages = [1, 2]
     for page_index in pages:
         page = src_document.pages[page_index]
         dst_document.pages.add(page)
@@ -95,7 +76,7 @@ def moving_bunch_pages_from_one_document_to_another(input_file_name, output_file
     src_document.save(input_file_name.replace(".pdf", "_new.pdf"))
 ```
 
-## Moving a Page in new location in the current PDF Document
+## Move a Page to a New Location in the Same PDF Document
 
 It shows how to move a specific page to a different position within the same document — a common need when reorganizing or editing PDF layouts.
 
@@ -106,29 +87,19 @@ It shows how to move a specific page to a different position within the same doc
 1. Save the modified document as a new file.
 
 ```python
-import os
 import aspose.pdf as ap
 
-# Global configuration
-DATA_DIR = "your path here"
+def move_page_in_new_location_in_same_document(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
 
-
-def moving_page_in_new_location_in_same_document(input_file_name, output_file_name):
-    """
-    Move a page to a new location within the same PDF document.
-
-    Parameters:
-    - input_file_name (str): Path to the source PDF file.
-    - output_file_name (str): Path to the destination PDF file after moving the page.
-    """
-    srcDocument = ap.Document(input_file_name)
-
-    page = srcDocument.pages[2]
-    srcDocument.pages.add(page)
-    srcDocument.pages.delete(2)
+    page = src_document.pages[2]
+    src_document.pages.add(page)
+    src_document.pages.delete(2)
 
     # Save output file
-    srcDocument.save(output_file_name)
+    src_document.save(output_file_name)
 ```
 
 ## Related Page Topics
