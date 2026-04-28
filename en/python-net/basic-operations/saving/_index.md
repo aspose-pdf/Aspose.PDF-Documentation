@@ -58,8 +58,7 @@ In both cases, the [save()](https://reference.aspose.com/pdf/python-net/aspose.p
 ```python
 import aspose.pdf as ap
 import io
-import sys
-from os import path
+
 
 def save_document_as_standard(infile, outfile, logfile):
     document = ap.Document(infile)
