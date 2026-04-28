@@ -32,7 +32,7 @@ import sys
 from os import path
 import aspose.pdf as ap
 
-def create_new_document(input_pdf, output_pdf):
+def create_new_document(output_pdf):
     """Create a simple PDF with a single “Hello World!” page."""
     document = ap.Document()
     page = document.pages.add()
