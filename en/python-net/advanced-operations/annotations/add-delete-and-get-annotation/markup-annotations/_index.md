@@ -363,7 +363,7 @@ strikeout_annotation.quad_points = [
 strikeout_annotation.subject = "Cross-out"
 strikeout_annotation.in_reply_to = caret_annotation
 strikeout_annotation.reply_type = ap.annotations.ReplyType.GROUP
-```
+``` 
 
 #### Add both annotations and save the PDF
 
@@ -497,13 +497,3 @@ def replace_annotations_delete(infile, outfile):
 
     document.save(outfile)
 ```
-
-## Related Topics
-
-- [Import and Export Annotations](/python-net/import-export-annotations/)
-- [Interactive Annotations](/python-net/interactive-annotations/)
-- [Media Annotations](/python-net/media-annotations/)
-- [Security Annotations](/python-net/security-annotations/)
-- [Shape Annotations](/python-net/shape-annotations/)
-- [Text Based Annotations](/python-net/text-based-Annotations/)
-- [Watermark Annotations](/python-net/watermark-annotations/)
