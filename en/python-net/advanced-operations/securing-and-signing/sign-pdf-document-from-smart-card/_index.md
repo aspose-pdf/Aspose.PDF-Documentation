@@ -35,34 +35,28 @@ This method is ideal for cases where signatures must be applied programmatically
 Following are the code snippets to sign a PDF document from a smart card:
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-path_pngfile = self.data_dir + pngfile
-
-# Open PDF document
-with ap.Document(path_infile) as document:
-    with ap.facades.PdfFileSignature() as pdf_signature:
-        # Bind PDF document
-        pdf_signature.bind_pdf(document)
-        selected_certificates = self.get_local_certificate()
-        # Set an external signature settings
-        external_signature = ap.forms.ExternalSignature(selected_certificates)
-        pdf_signature.signature_appearance = path_pngfile
-        # Sign the document
-        pdf_signature.sign(
-            1,
-            "Reason",
-            "Contact",
-            "Location",
-            True,
-            drawing.Rectangle(100, 100, 200, 200),
-            external_signature,
-        )
-        # Save PDF document
-        pdf_signature.save(path_outfile)
+def sign_with_smart_card(infile: str, outfile: str, pngfile: str) -> None:
+    """Sign a PDF document using a smart-card certificate."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature() as pdf_signature:
+            pdf_signature.bind_pdf(document)
+            external_signature = ap.forms.ExternalSignature(get_local_certificate())
+            pdf_signature.signature_appearance = pngfile
+            pdf_signature.sign(
+                1,
+                "Reason",
+                "Contact",
+                "Location",
+                True,
+                drawing.Rectangle(100, 100, 200, 200),
+                external_signature,
+            )
+            pdf_signature.save(outfile)
 ```
 
 ## Verify Digital Signatures
@@ -76,17 +70,18 @@ This code snippet demonstrates how to verify digital signatures in a PDF documen
 1. Raising an exception if any signature fails verification.
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-
-# Open PDF document
-with ap.Document(path_infile) as document:
-    with ap.facades.PdfFileSignature(document) as pdf_signature:
-        signature_names = pdf_signature.get_signature_names(True)
-        for index in range(len(signature_names)):
-            if not pdf_signature.verify_signature(signature_names[index]):
-                raise Exception("Not verified")
+def verify_external_signature(infile: str) -> None:
+    """Verify an external signature in a PDF document."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as pdf_signature:
+            for signature_name in pdf_signature.get_signature_names(True):
+                if not pdf_signature.verify_signature(signature_name):
+                    raise Exception("Not verified")
 ```
 
 ## Sign with External Certificate
@@ -103,39 +98,28 @@ This code snippet demonstrates how to add and sign a digital signature field in 
 1. Saving the signed document to an output file.
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-
-# Open a document stream
-with open(path_infile, "rb+") as file_stream:
-    # Open PDF document from stream
-    document = ap.Document(file_stream)
-
-    # Create a signature field
-    signature_field = ap.forms.SignatureField(
-        document.pages[1], ap.Rectangle(100, 400, 10, 10, True)
-    )
-    selected_certificate = self.get_local_certificate()
-
-    # Set external signature settings
-    external_signature = ap.forms.ExternalSignature(selected_certificate)
-    external_signature.authority = "Me"
-    external_signature.reason = "Reason"
-    external_signature.contact_info = "Contact"
-
-    # Set a name of signature field
-    signature_field.partial_name = "sig1"
-
-    # Add the signature field to the document
-    document.form.add(signature_field, 1)
-
-    # Sign the document
-    signature_field.sign(external_signature)
-
-    # Save PDF document
-    document.save(path_outfile)
+def get_signature_info_using_signature_field(infile: str, outfile: str) -> None:
+    """Create a signature field and sign it with an external certificate."""
+    with open(infile, "rb+") as file_stream:
+        document = ap.Document(file_stream)
+        signature_field = ap.forms.SignatureField(
+            document.pages[1],
+            ap.Rectangle(100, 400, 10, 10, True),
+        )
+        selected_certificate = get_local_certificate()
+        external_signature = ap.forms.ExternalSignature(selected_certificate)
+        external_signature.authority = "Me"
+        external_signature.reason = "Reason"
+        external_signature.contact_info = "Contact"
+        signature_field.partial_name = "sig1"
+        document.form.add(signature_field, 1)
+        signature_field.sign(external_signature)
+        document.save(outfile)
 ```
 
 ## Related Security Topics

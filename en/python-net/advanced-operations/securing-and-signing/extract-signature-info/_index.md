@@ -30,27 +30,24 @@ Steps:
 1. Saving the extracted signature image as a JPEG file.
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
+def extract_images_from_signature_field(infile: str, outfile: str) -> None:
+    """Extract the image stored in a signature field."""
+    with ap.Document(infile) as document:
+        for field in document.form:
+            if not isinstance(field, ap.forms.SignatureField):
+                continue
 
-# Open PDF document
-with ap.Document(path_infile) as document:
-    # Searching for signature fields
-    for field in document.form:
-        signature_field = field if isinstance(field, ap.forms.SignatureField) else None
-        if signature_field is None:
-            continue
+            image_stream = field.extract_image()
+            if image_stream is None:
+                continue
 
-        image_stream = signature_field.extract_image()
-        if image_stream is None:
-            continue
-
-        image = drawing.Bitmap.from_stream(image_stream)
-        # Save the image
-        image.save(path_outfile, drawing.imaging.ImageFormat.jpeg)
+            image = drawing.Bitmap.from_stream(image_stream)
+            image.save(outfile, drawing.imaging.ImageFormat.jpeg)
 ```
 
 ## Extract Signature Information
@@ -60,46 +57,88 @@ Aspose.PDF for Python via .NET supports the feature to digitally sign the PDF fi
 To extract signature information, we have introduced the [ExtractCertificate](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/#methods) method to the [SignatureField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/) class. Please take a look at the following code snippet which demonstrates the steps to extract the certificate from SignatureField object:
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-
-# Open PDF document
-with ap.Document(path_infile) as document:
-    # Searching for signature fields
-    for field in document.form:
-        signature_field = field if isinstance(field, ap.forms.SignatureField) else None
-        if signature_field is None:
-            continue
-        # Extract certificate
-        certificate_stream = signature_field.extract_certificate()
-        if certificate_stream is None:
-            continue
-        # Save certificate
-        with certificate_stream:
-            bytes_data = bytearray(certificate_stream.length)
-            with open(path_outfile, "wb") as file_stream:
-                certificate_stream.read(bytes_data, 0, len(bytes_data))
-                file_stream.write(bytes_data)
+def get_signatures_info(infile: str) -> None:
+    """Print information about all signatures in a PDF document."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            for signature_info in signature.get_signatures_info():
+                print(signature_info.DIGEST_HASH_ALGORITHM)
+                print(signature_info.ALGORITHM_TYPE)
+                print(signature_info.CRYPTOGRAPHIC_STANDARD)
+                print(signature_info.signature_name)
 ```
 
-You can get information about document signature algorithms.
+## Extract a Digital Certificate from a Signed PDF
+
+Extract a digital certificate embedded in a signed PDF document using Python and Aspose.PDF. It scans signature fields, retrieves the certificate stream, and saves it as a standalone file for validation or external use.
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-# Open PDF document
-with ap.Document(path_infile) as document:
-    with ap.facades.PdfFileSignature(document) as signature:
-        # Get signature names
-        signature_names = signature.get_signature_names(True)
-        signatures_info_list = signature.get_signatures_info()
-        for sig_info in signatures_info_list:
-            print(sig_info.DIGEST_HASH_ALGORITHM)
-            print(sig_info.ALGORITHM_TYPE)
-            print(sig_info.CRYPTOGRAPHIC_STANDARD)
-            print(sig_info.signature_name)
+def extract_certificate(infile: str, outfile: str) -> None:
+    """Extract a certificate from a signature field and save it to disk."""
+    with ap.Document(infile, password="owner") as document:
+        for field in document.form:
+            if not isinstance(field, ap.forms.SignatureField):
+                continue
+
+            certificate_stream = field.extract_certificate()
+            if certificate_stream is None:
+                continue
+
+            with certificate_stream:
+                bytes_data = bytearray(certificate_stream.length)
+                certificate_stream.read(bytes_data, 0, len(bytes_data))
+                with open(outfile, "wb") as file_stream:
+                    file_stream.write(bytes_data)
+                return
+```
+
+## Extract Signature Certificates from a PDF
+
+Extract digital certificates from PDF signature fields using the PdfFileSignature facade in Python with Aspose.PDF. It iterates through all digital signatures in a document and attempts to retrieve embedded certificates, confirming successful extraction.
+
+```python
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def extract_certificate_try_extract_certificate_method(infile: str) -> None:
+    """Extract certificates with the try_extract_certificate facade method."""
+    with ap.Document(infile, password="owner") as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            for signature_name in signature.get_signature_names(True):
+                certificate = []
+                if signature.try_extract_certificate(signature_name, certificate):
+                    print("The certificate extraction succeeded")
+```
+
+## Extract external digital signatures
+
+External digital signatures in a PDF document. It checks all signature fields in the document and validates their authenticity to ensure the file has not been modified after signing.
+
+```python
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def verify_external_signature(infile: str) -> None:
+    """Verify an external signature in a PDF document."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as pdf_signature:
+            for signature_name in pdf_signature.get_signature_names(True):
+                if not pdf_signature.verify_signature(signature_name):
+                    raise Exception("Not verified")
 ```
 
 ## Checking signatures for compromise
@@ -119,31 +158,29 @@ This feature is critical in use cases where document authenticity and integrity 
 Aspose.PDF offers a comprehensive set of tools for digital signature validation, making it easier to build secure, signature-aware applications that uphold document trustworthiness.
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
+def check(infile: str) -> None:
+    """Check whether a PDF contains compromised signatures."""
+    with ap.Document(infile) as document:
+        detector = ap.SignaturesCompromiseDetector(document)
+        result = []
 
-# Open PDF document
-with ap.Document(path_infile) as document:
-    # Create the compromise detector instance
-    detector = ap.SignaturesCompromiseDetector(document)
-    result = []
+        if detector.check(result):
+            print("No signature compromise detected")
+            return
 
-    # Check for compromise
-    if detector.check(result):
-        print("No signature compromise detected")
-        return
+        if result[0].has_compromised_signatures:
+            print(
+                f"Count of compromised signatures: {len(result[0].COMPROMISED_SIGNATURES)}"
+            )
+            for signature_name in result[0].COMPROMISED_SIGNATURES:
+                print(f"Signature name: {signature_name.FULL_NAME}")
 
-    # Get information about compromised signatures
-    if result[0].has_compromised_signatures:
-        print(
-            f"Count of compromised signatures: {len(result[0].COMPROMISED_SIGNATURES)}"
-        )
-        for signature_name in result[0].COMPROMISED_SIGNATURES:
-            print(f"Signature name: {signature_name.FULL_NAME}")
-
-    # Get info about signatures coverage
-    print(result[0].signatures_coverage)
+        print(result[0].signatures_coverage)
 ```
 
 ## Related Security Topics
