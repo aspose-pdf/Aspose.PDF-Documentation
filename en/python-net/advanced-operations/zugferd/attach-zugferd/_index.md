@@ -29,27 +29,11 @@ We recommend following steps to attach ZUGFeRD to PDF:
 1. Save the PDF document with the attached ZUGFeRD.
 
 ```python
+import sys
+import os
 import aspose.pdf as ap
 
 def attach_invoice_zugferd_format(infile, invoice, outfile):
-    """
-    Attach Factur-X/ZUGFeRD invoice XML to PDF and convert to PDF/A-3A format.
-
-    Args:
-        infile (str): Input PDF filename
-        invoice (str): Invoice XML filename (Factur-X/ZUGFeRD compliant)
-        outfile (str): Output PDF filename
-
-    Returns:
-        None
-
-    Example:
-        attach_invoice_zugferd_format("input.pdf", "factur-x.xml", "output.pdf")
-
-    Note:
-        Embeds invoice XML as alternative file conforming to ZUGFeRD standard.
-        Converts PDF to PDF/A-3A format to ensure long-term archival compliance.
-    """
     document = ap.Document(infile)
 
     # Create a FileSpecification object for the XML file that contains the invoice metadata
