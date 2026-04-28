@@ -29,21 +29,18 @@ Use this page when you need to update logos, diagrams, or other embedded graphic
 1. Save the updated PDF to 'path_outfile'.
 
 ```python
+import sys
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as apdf
-    from io import FileIO
-    from os import path
+def replace_image(infile, image_file, outfile):
+    document = ap.Document(infile)
 
-    path_infile = path.join(self.data_dir, infile)
-    path_image_file = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, outfile)
-
-    document = apdf.Document(path_infile)
-
-    with FileIO(path_image_file, "rb") as image_stream:
+    with FileIO(image_file, "rb") as image_stream:
         document.pages[1].resources.images.replace(1, image_stream)
 
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ## Replace specific Image
@@ -58,19 +55,16 @@ This example demonstrates how to replace a specific image on a PDF page by locat
 1. Save the modified PDF to 'path_outfile'.
 
 ```python
+import sys
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as apdf
-    from io import FileIO
-    from os import path
-
-    path_infile = path.join(self.data_dir, infile)
-    path_image_file = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, outfile)
-
-    document = apdf.Document(path_infile)
+def replace_image_with_absorber(infile, image_file, outfile):
+    document = ap.Document(infile)
 
     # Create ImagePlacementAbsorber to find image placements
-    absorber = apdf.ImagePlacementAbsorber()
+    absorber = ap.ImagePlacementAbsorber()
 
     # Accept the absorber for the first page
     document.pages[1].accept(absorber)
@@ -78,15 +72,14 @@ This example demonstrates how to replace a specific image on a PDF page by locat
     # Replace the first image placement found
     if len(absorber.image_placements) > 0:
         image_placement = absorber.image_placements[1]
-        with FileIO(path_image_file, "rb") as image_stream:
+        with FileIO(image_file, "rb") as image_stream:
             image_placement.replace(image_stream)
 
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ## Related Image Topics
 
 - [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
 - [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
-- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
-- [Search and inspect PDF images](/pdf/python-net/search-and-get-images-from-pdf-document/)
