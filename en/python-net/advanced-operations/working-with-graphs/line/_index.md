@@ -28,35 +28,22 @@ Follow the steps below:
 1. Save our PDF file.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
 
-    # Create Document instance
+def add_line(outfile: str):
     document = ap.Document()
-
-    # Add page to pages collection of PDF file
     page = document.pages.add()
-
-    # Create Graph instance
     graph = drawing.Graph(100, 400)
-
-    # Add graph object to paragraphs collection of page instance
     page.paragraphs.add(graph)
 
-    # Create Rectangle instance
     line = drawing.Line([100, 100, 200, 100])
-
-    # Specify fill color for Graph object
     line.graph_info.dash_array = [0, 1, 0]
     line.graph_info.dash_phase = 1
+    graph.shapes.add(line)
 
-    # Add rectangle object to shape collection of Graph object
-    graph.shapes.append(line)
-
-    # Save PDF file
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ![Add Line](add_line.png)
@@ -64,38 +51,24 @@ Follow the steps below:
 ## How to add Dotted Dashed Line to your PDF document
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create Document instance
+def add_dotted_dashed_line(outfile: str):
     document = ap.Document()
-
-    # Add page to pages collection of PDF file
     page = document.pages.add()
-
-    # Create Graph instance
     graph = drawing.Graph(100, 400)
-
-    # Add graph object to paragraphs collection of page instance
     page.paragraphs.add(graph)
 
-    # Create Rectangle instance
     line = drawing.Line([100, 100, 200, 100])
-
-    # Set color for Line object
     line.graph_info.color = ap.Color.red
-
-    # Specify fill color for Graph object
     line.graph_info.dash_array = [0, 1, 0]
     line.graph_info.dash_phase = 1
+    graph.shapes.add(line)
 
-    # Add rectangle object to shape collection of Graph object
-    graph.shapes.append(line)
-
-    # Save PDF file
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 Let's check the result:
@@ -109,43 +82,27 @@ We can also use line object to draw a cross starting from Left-Bottom to Right-U
 Please take a look over following code snippet to accomplish this requirement.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create Document instance
+def draw_line_across_page(outfile: str):
     document = ap.Document()
-
-    # Add page to pages collection of PDF file
     page = document.pages.add()
-
-    # Set page margin on all sides as 0
     page.page_info.margin.left = 0
     page.page_info.margin.right = 0
     page.page_info.margin.bottom = 0
     page.page_info.margin.top = 0
 
-    # Create Graph object with Width and Height equal to page dimensions
     graph = drawing.Graph(page.page_info.width, page.page_info.height)
-
-    # Create first line object starting from Lower-Left to Top-Right corner of page
     line = drawing.Line([page.rect.llx, 0, page.page_info.width, page.rect.ury])
-
-    # Add line to shape collection of Graph object
-    graph.shapes.append(line)
-
-    # Draw line from Top-Left corner of page to Bottom-Right corner of page
+    graph.shapes.add(line)
     line2 = drawing.Line([0, page.rect.ury, page.page_info.width, page.rect.llx])
-
-    # Add line to shape collection of Graph object
-    graph.shapes.append(line2)
-
-    # Add Graph object to paragraphs collection of page
+    graph.shapes.add(line2)
     page.paragraphs.add(graph)
 
-    # Save PDF file
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ![Drawing Line](draw_line.png)
