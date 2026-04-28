@@ -17,23 +17,18 @@ Abstract: This guide explains how to digitally sign PDF documents using Aspose.P
 ## Sign PDF with digital signatures
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-path_pfxfile = self.data_dir + pfxfile
-
-# Open PDF document
-with ap.Document(path_infile) as document:
-    # Instantiate PdfFileSignature object
-    with ap.facades.PdfFileSignature(document) as signature:
-        # Create PKCS#7 object for sign
-        pkcs = ap.forms.PKCS7(path_pfxfile, "12345")
-        # Sign PDF file
-        signature.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
-        #  Save PDF document
-        signature.save(path_outfile)
+def sign_document(infile: str, outfile: str, pfxfile: str) -> None:
+    """Sign a PDF document with a PKCS#7 certificate."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            pkcs = ap.forms.PKCS7(pfxfile, "12345")
+            signature.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
+            signature.save(outfile)
 ```
 
 A **PKCS#7 detached signature** adds a digital signature to a document without embedding the content into the signature block.
@@ -43,44 +38,112 @@ Use these examples when you need to apply certificate-based signatures to PDF fi
 The next example signs a PDF document using a PKCS#7 detached digital signature, applying the signature to the first page in a specified rectangular area.
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-path_pfxfile = self.data_dir + pfxfile
-
-# Open PDF document
-with ap.Document(path_infile) as document:
-    # Instantiate PdfFileSignature object using the opened document
-    with ap.facades.PdfFileSignature(document) as signature:
-        # Create PKCS#7 detached object for sign
-        pkcs = ap.forms.PKCS7Detached(
-            path_pfxfile, password, ap.DigestHashAlgorithm.SHA256
-        )
-        # Sign PDF file
-        signature.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
-        #  Save PDF document
-        signature.save(path_outfile)
+def sign_document_PKCS7_detached(
+    infile: str,
+    outfile: str,
+    pfxfile: str,
+    password: str,
+) -> None:
+    """Sign a PDF document with a detached PKCS#7 certificate."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            pkcs = ap.forms.PKCS7Detached(
+                pfxfile,
+                password,
+                ap.DigestHashAlgorithm.SHA256,
+            )
+            signature.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
+            signature.save(outfile)
 ```
 
-This Python code snippet verifies a digital signature in a PDF file using 'file_sign.verify_signature()' method.
+**Verify all digital signatures in a PDF document**
 
 1. Creates an instance of PdfFileSignature that allows you to interact with signatures in PDF.
 1. Get a list of signature names `get_signature_names(True)`.
 1. Checks the first signature in the list `verify_signature` for compliance with the specified certificate.
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
+def verify(infile: str) -> None:
+    """Verify all digital signatures in a PDF document."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            for signature_name in signature.get_signature_names(True):
+                if not signature.verify_signature(signature_name):
+                    raise Exception("Not verified")
+```
 
-# Create an instance of PdfFileSignature for working with signatures in the document
-with ap.facades.PdfFileSignature(path_infile) as file_sign:
-    # Get a list of signatures
-    signature_names = file_sign.get_signature_names(True)
-    # Verify the signature with the given name.
-    return file_sign.verify_signature(signature_names[0], certificate)
+**Verify a signature with a public key certificate file**
+
+```python
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def verify_with_public_key_certificate1(certificate: str, infile: str) -> None:
+    """Verify a signature with a public key certificate file."""
+    with ap.facades.PdfFileSignature(infile) as file_sign:
+        signature_names = file_sign.get_signature_names(True)
+        with open(certificate, "rb") as file_stream:
+            certificate_bytes = file_stream.read()
+        print(file_sign.verify_signature(signature_names[0], certificate_bytes))
+```
+
+**Verify a signature with the certificate extracted from the file**
+
+```python
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def verify_with_public_key_certificate_from_signature(infile: str) -> None:
+    """Verify a signature with the certificate extracted from the file."""
+    with ap.facades.PdfFileSignature(infile) as file_sign:
+        signature_names = file_sign.get_signature_names(True)
+        certificate = []
+        if file_sign.try_extract_certificate(signature_names[0], certificate):
+            print(file_sign.verify_signature(signature_names[0], certificate[0]))
+        else:
+            print(False)
+```
+
+**Verify signatures with certificate-chain validation enabled**
+
+```python
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def verify_signature_with_certificate_check(infile: str) -> None:
+    """Verify signatures with certificate-chain validation enabled."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            for signature_name in signature.get_signature_names(True):
+                options = ap.security.ValidationOptions()
+                options.validation_mode = ap.security.ValidationMode.STRICT
+                options.validation_method = ap.security.ValidationMethod.AUTO
+                options.check_certificate_chain = True
+                options.request_timeout = 20000
+                validation_result = []
+                verified = signature.verify_signature(
+                    signature_name,
+                    options,
+                    validation_result,
+                )
+                print(f"Certificate validation result: {validation_result[0].status}")
+                print(f"Is verified: {verified}")
 ```
 
 ## Add timestamp to digital signature
@@ -92,30 +155,31 @@ Aspose.PDF for Python supports to digitally sign the PDF with a timestamp server
 In order to accomplish this requirement, the [TimestampSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf/timestampsettings/) class has been added to the Aspose.PDF namespace. Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-path_pfxfile = self.data_dir + pfxfile
-
-# Open PDF document
-with ap.Document(path_infile) as document:
-    # Create an instance of PdfFileSignature for working with signatures in the document
-    with ap.facades.PdfFileSignature(document) as signature:
-        pkcs = ap.forms.PKCS7(path_pfxfile, password)
-        # Create TimestampSettings settings
-        timestamp_settings = ap.TimestampSettings(
-            "https://freetsa.org/tsr", "", ap.DigestHashAlgorithm.SHA256
-        )  # User/Password can be omitted
-        pkcs.timestamp_settings = timestamp_settings
-        rect = drawing.Rectangle(
-            100, 100, 200, 100
-        )  # Creating a rectangle for the signature
-        # Create any of the three signature types
-        signature.sign(1, "Signature Reason", "Contact", "Location", True, rect, pkcs)
-        # Save PDF document
-        signature.save(path_outfile)
+def sign_with_time_stamp_server(
+    infile: str,
+    outfile: str,
+    pfxfile: str,
+    password: str,
+) -> None:
+    """Sign a PDF document and apply a timestamp from an external server."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            pkcs = ap.forms.PKCS7(pfxfile, password)
+            pkcs.timestamp_settings = ap.TimestampSettings(
+                "https://freetsa.org/tsr",
+                "",
+                ap.DigestHashAlgorithm.SHA256,
+            )
+            rect = drawing.Rectangle(100, 100, 200, 100)
+            signature.sign(
+                1, "Signature Reason", "Contact", "Location", True, rect, pkcs
+            )
+            signature.save(outfile)
 ```
 
 ## Signing PDF documents using ECDSA
@@ -127,27 +191,37 @@ The code snippet above illustrates how to apply a PKCS#7 detached digital signat
 This method ensures the document’s authenticity and integrity by embedding a secure, verifiable signature on the first page. The use of SHA-256 as the digest algorithm meets modern cryptographic standards, while the ability to control signature placement offers flexibility for visible approval marks.
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-path_pfxfile = self.data_dir + pfxfile
+def sign_ecdsa(infile: str, outfile: str, pfxfile: str, password: str) -> None:
+    """Sign a PDF document with an ECDSA signature."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            pkcs = ap.forms.PKCS7Detached(
+                pfxfile,
+                password,
+                ap.DigestHashAlgorithm.SHA256,
+            )
+            signature.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
+            signature.save(outfile)
+```
 
-# Open PDF document
-with ap.Document(path_infile) as document:
-    # Create an instance of PdfFileSignature to sign the document
-    with ap.facades.PdfFileSignature(document) as signature:
-        # Create a PKCS7Detached object using the provided certificate and password
-        pkcs = ap.forms.PKCS7Detached(
-            path_pfxfile, password, ap.DigestHashAlgorithm.SHA256
-        )
+**Verify ECDSA signatures in a PDF document**
 
-        # Sign the first page of the document, setting the signature's appearance at the specified location
-        signature.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
+```python
+def verify_ecdsa(infile: str) -> None:
+    """Verify ECDSA signatures in a PDF document."""
+    with ap.Document(infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            if not signature.contains_signature():
+                raise Exception("Not contains signature")
 
-        # Save PDF document
-        signature.save(path_outfile)
+            for signature_name in signature.get_signature_names(True):
+                if not signature.verify_signature(signature_name):
+                    raise Exception("Not verified")
 ```
 
 ## Related Security Topics

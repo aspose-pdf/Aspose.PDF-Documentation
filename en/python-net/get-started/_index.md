@@ -42,6 +42,7 @@ Using Aspose.PDF for Python via .NET in your project gives you the following ben
 - [Convert PDF to Images formats](/pdf/python-net/convert-pdf-to-images-format/).
 - [Convert PDF files to HTML and convert HTML to PDF](/pdf/python-net/convert-pdf-to-html/).
 - [Convert PDF to EPUB, Text, XPS, etc](/pdf/python-net/convert-pdf-to-other-files/).
+- [Convert EPUB, Markdown, Text, XPS, PostScript, XML, LaTex to PDF](/pdf/python-net/convert-other-files-to-pdf/)
 
 ## Start with these tutorials
 
