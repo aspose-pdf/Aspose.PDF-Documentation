@@ -102,7 +102,7 @@ print(infile + " converted into " + outfile)
 
 ## Convert HTML to PDF with embedded fonts
 
-This example shows how to convert an HTML file to PDF while embedding fonts. If you need the output PDF to preserve the original typography more reliably, set `is_embed_fonts` to `True`.
+This example shows how to convert an HTML file to PDF while embedding fonts. If you need the output PDF to preserve the original typography, set `is_embed_fonts` to `True`.
 
 1. Create `HtmlLoadOptions()` to configure HTML-to-PDF conversion.
 1. Set `is_embed_fonts = True` to embed the fonts used in the HTML directly into the PDF.

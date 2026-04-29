@@ -58,8 +58,6 @@ This section includes such formats as: EPUB, Markdown, PCL, XPS, LATex/TeX, Text
 PDF/A is a version of PDF designed for the long-term archiving of electronic documents.
 If honestly, externally, it is very difficult to determine if it is PDF or PDF/A. To check this file, validators are used. Check the following articles for a quality converting PDF to PDF/A and vice versa.
 
-- [Convert PDF to PDF/A formats](/pdf/python-net/convert-pdf-to-pdfa/) - Python library by Aspose.PDF has an easy way for converting PDF to PDF/A.
-
 - [Convert Images formats to PDF file](/pdf/python-net/convert-images-format-to-pdf/) - Aspose.PDF allows you to convert different formats of images to PDF file.
 
 - [Convert other file formats to PDF](/pdf/python-net/convert-other-files-to-pdf/) - this topic describes conversion with various formats like EPUB, XPS, Postscript, text and others.
