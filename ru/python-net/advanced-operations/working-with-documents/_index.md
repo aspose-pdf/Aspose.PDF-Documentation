@@ -1,157 +1,33 @@
 ---
-title: Работа с PDF-документами с использованием Python
+title: Работа с PDF‑документами в Python
 linktitle: Работа с документами
 type: docs
 weight: 10
-url: /ru/python-net/working-with-documents/
-description: Эта статья описывает, какие манипуляции можно выполнять с документом с помощью библиотеки Aspose.PDF for Python через .NET.
-lastmod: "2023-04-12"
+url: /python-net/working-with-documents/
+description: Узнайте, как создавать, форматировать, манипулировать, оптимизировать, объединять, разделять и управлять PDF‑документами в Python.
+lastmod: "2026-04-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Создавайте, форматируйте, объединяйте, разделяйте и оптимизируйте PDF‑документы в Python
+Abstract: Этот раздел объясняет, как работать с PDF‑документами, используя Aspose.PDF for Python via .NET. Узнайте, как создавать PDF‑файлы, форматировать свойства документа, манипулировать структурой содержимого, оптимизировать размер файла, объединять и разделять PDF‑файлы, а также управлять слоями дополнительного содержимого в рабочих процессах Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Работа с PDF-документами с использованием Python через .NET",
-    "alternativeHeadline": "Манипуляции с PDF-документами через Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация pdf-документов",
-    "keywords": "pdf, python, pdf документы",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда документов Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-documents/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-documents/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Эта статья описывает, какие манипуляции можно выполнять с документом с помощью библиотеки Aspose.PDF for Python через .NET."
-}
-</script>
 
+PDF‑файлы предназначены для безопасного и качественного обмена документами, независимо от используемого программного обеспечения или операционной системы для их просмотра. Их можно открывать и просматривать на многих устройствах и операционных системах, включая компьютеры, планшеты и смартфоны. В современности такие документы могут содержать изображения, таблицы, различные интерактивные элементы и т. д.
 
-PDF файлы разработаны для безопасного и качественного обмена документами, независимо от того, какое программное обеспечение или операционная система используется для их просмотра. Они могут быть открыты и просмотрены на многих устройствах и операционных системах, включая компьютеры, планшеты и смартфоны. На сегодняшний день такие документы могут содержать изображения, таблицы, различные интерактивные элементы и т.д.
+PDF‑документы можно просматривать и печатать, но не всегда их легко редактировать. Однако **Aspose.PDF for Python via .NET** поможет вам справиться даже с самой сложной задачей при работе с PDF.
 
-PDF документы можно просматривать и печатать, но не всегда легко редактировать. Однако, **Aspose.PDF для Python библиотека** поможет вам справиться даже с самой сложной задачей в работе с PDF.
+Используйте этот раздел, когда вам нужно работать с полной обработкой PDF‑документов в Python, например, создавать файлы, проверять соответствие стандартам, оптимизировать размер, объединять несколько PDF‑файлов или разбивать большие документы на более мелкие.
 
-Вы можете сделать следующее:
+## Охваченные задачи Document
 
-- [Создание PDF документа](/pdf/ru/python-net/create-pdf-document/) - создать простой PDF документ.
-- [Форматирование PDF документа](/pdf/ru/python-net/formatting-pdf-document/) - создать документ, получить и установить свойства документа, встраивание шрифтов и другие операции с PDF файлами.
+Вы можете выполнить следующее:
 
-- [Манипуляции с PDF документом](/pdf/ru/python-net/manipulate-pdf-document/) - проверка PDF документа на соответствие стандарту PDF A, работа с оглавлением, установка даты истечения срока действия PDF и т.д.
-- [Оптимизация PDF](/pdf/ru/python-net/optimize-pdf/) - оптимизация содержимого страниц, уменьшение размера файла, удаление неиспользуемых объектов, сжатие всех изображений для успешной оптимизации документа.
-- [Объединение PDF](/pdf/ru/python-net/merge-pdf-documents/) - объединение нескольких PDF файлов в один PDF документ с использованием Python.
-- [Разделение PDF](/pdf/ru/python-net/split-document/) - разделение страниц PDF на отдельные PDF файлы в ваших приложениях на Python.
-- [Работа с заголовками](/pdf/ru/python-net/working-with-headings/) - вы можете создать нумерацию в заголовках вашего PDF документа с помощью Python.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Библиотека для манипуляций с PDF для Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Создать PDF Document](/pdf/ru/python-net/create-pdf-document/) - создать простой PDF‑документ.
+- [Форматирование PDF-документа](/pdf/ru/python-net/formatting-pdf-document/) - создать Document, получать и задавать свойства Document, встраивать шрифты и выполнять другие операции с PDF‑файлами.
+- [Манипулировать PDF-документом](/pdf/ru/python-net/manipulate-pdf-document/) - проверка PDF-документа на соответствие стандарту PDF/A, работа с TOC, установка срока действия PDF и т.д.
+- [Оптимизировать PDF](/pdf/ru/python-net/optimize-pdf/) - оптимизировать содержимое страниц, уменьшить размер файла, удалить неиспользуемые объекты, сжать все изображения для успешной оптимизации документа.
+- [Объединить PDF](/pdf/ru/python-net/merge-pdf-documents/) - объединить несколько PDF‑файлов в один PDF‑документ с помощью Python.
+- [Разделить PDF](/pdf/ru/python-net/split-document/) - разделить страницы PDF на отдельные PDF‑файлы в ваших Python‑приложениях.
+- [Работа с заголовками](/pdf/ru/python-net/working-with-headings/) - вы можете создавать нумерацию в заголовке вашего PDF‑документа с помощью Python.

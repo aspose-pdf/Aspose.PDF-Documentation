@@ -1,160 +1,110 @@
 ---
-title: Перемещение страниц PDF программно с помощью Python
+title: Переместить страницы PDF в Python
 linktitle: Перемещение страниц PDF
 type: docs
 weight: 100
-url: /ru/python-net/move-pages/
-description: Попробуйте переместить страницы в нужное место или в конец PDF файла, используя Aspose.PDF для Python через .NET.
-lastmod: "2023-04-17"
+url: /python-net/move-pages/
+description: Узнайте, как перемещать страницы PDF внутри документа или между документами в Python.
+lastmod: "2026-04-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Переместить страницы PDF между документами в Python
+Abstract: В этой статье объясняется, как перемещать страницы в PDF с помощью Aspose.PDF for Python via .NET. Узнайте, как переместить одну страницу или несколько страниц в другой документ, а также как изменить положение страницы в том же PDF, используя API Document и PageCollection.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Перемещение страниц PDF программно Python",
-    "alternativeHeadline": "Как перемещать страницы PDF с помощью Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, перемещение страниц pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/move-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/move-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Попробуйте переместить страницы в нужное место или в конец PDF файла, используя Aspose.PDF для Python через .NET."
-}
-</script>
 
+## Переместить страницу из одного PDF‑документа в другой
 
-## Перемещение страницы из одного PDF документа в другой
+Aspose.PDF for Python позволяет переместить страницу (а не только скопировать её) из одного PDF в другой. Она удаляет выбранную страницу из оригинального документа, а затем добавляет её в новый PDF‑файл.
 
-Эта тема объясняет, как переместить страницу из одного PDF документа в конец другого документа, используя Python. Чтобы переместить страницу, мы должны:
+Можно представить это как вырезание страницы из одной книги и приклеивание её в другую — страница больше не существует в оригинальном файле после перемещения.
 
-1. Создать объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с исходным PDF файлом.
-1. Создать объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с целевым PDF файлом.
-1. Получить страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) страницу в целевой документ.
-1. Сохранить выходной PDF, используя метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-1. [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) страницу в исходном документе.
-
-1. Сохраните исходный PDF, используя метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Откройте исходный PDF‑документ, используя [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
+1. Выберите конкретную страницу для перемещения (в данном случае, страница 2) — это относится к [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Создайте новый PDF‑документ (создайте еще один [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
+1. Добавьте выбранную страницу в новый PDF‑документ, используя документ‑назначения [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (например, `another_document.pages.add(page)`).
+1. Удалите страницу из исходного документа через его [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (например, `document.pages.delete(index)`).
+1. Сохраните оба документа.
 
 Следующий фрагмент кода показывает, как переместить одну страницу.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
 
-    srcDocument = ap.Document(src_file_name)
-    dstDocument = ap.Document(dst_File_name)
-    page = srcDocument.pages[2]
-    dstDocument.pages.add(page)
-    # Сохранить выходной файл
-    dstDocument.save(dst_File_name_new)
-    srcDocument.pages.delete(2)
-    srcDocument.save(src_file_name_new)
+    document = ap.Document(input_file_name)
+    page = document.pages[2]
+    another_document = ap.Document()
+    another_document.pages.add(page)
+    document.pages.delete(2)
+    document.save(input_file_name.replace(".pdf", "_new.pdf"))
+    another_document.save(output_file_name)
 ```
 
-## Перемещение нескольких страниц из одного PDF документа в другой
+## Переместить несколько страниц из одного PDF‑документа в другой
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с исходным PDF файлом.
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с целевым PDF файлом.
-1. Определите массив с номерами страниц, которые нужно переместить.
-1. Запустите цикл по массиву:
+В отличие от копирования, эта операция перемещает выбранные страницы — удаляя их из исходного файла и сохраняя в новом PDF.
 
-1. Получите страницу из [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) коллекции.
-1. [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) страницу в целевой документ.
-1. Сохраните выходной PDF, используя метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-1. Удалите [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) страницу в исходном документе, используя массив.
-1. Сохраните исходный PDF, используя метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Создайте новый, пустой документ назначения (`Document`).
+1. Выберите несколько страниц (в данном случае страницы 1 и 3) из исходного документа [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Пройдитесь по выбранным страницам и добавьте каждую в документ назначения [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Сохраните целевой документ, содержащий перемещённые страницы.
+1. Удалите перемещённые страницы из исходного документа, используя его [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Сохраните изменённый исходный документ под новым именем файла, чтобы сохранить обе версии.
 
-Следующий фрагмент кода показывает, как вставить пустую страницу в конец PDF файла.
+Следующий фрагмент кода показывает, как переместить несколько страниц.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    srcDocument = ap.Document(input_pdf)
-    dstDocument = ap.Document()
-    pages = [1, 3]
+def move_multiple_pages_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
+    dst_document = ap.Document()
+    pages = [1, 2]
     for page_index in pages:
-        page = srcDocument.pages[page_index]
-        dstDocument.pages.add(page)
-    # Сохранить выходные файлы
-    dstDocument.save(output_pdf_1)
-    srcDocument.pages.delete(pages)
-    srcDocument.save(output_pdf_2)
+        page = src_document.pages[page_index]
+        dst_document.pages.add(page)
+    # Save output files
+    dst_document.save(output_file_name)
+    src_document.pages.delete(pages)
+    src_document.save(input_file_name.replace(".pdf", "_new.pdf"))
 ```
 
+## Переместить страницу в новое место в том же PDF Document
 
-## Перемещение страницы в новое место в текущем PDF документе
+Показано, как переместить определённую страницу в другое положение внутри того же документа — распространённая необходимость при реорганизации или редактировании макетов PDF.
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с исходным PDF файлом.
-1. Получите страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) страница в новое место (например, в конец).
-1. [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) страница в предыдущем месте.
-1. Сохраните выходной PDF, используя метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Загрузите входной документ PDF, используя [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
+1. Выберите страницу, которую хотите переместить (страница 2) — это [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Добавьте её в конец документа, используя [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Удалить оригинальную страницу из её предыдущего местоположения через [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Сохранить изменённый документ как новый файл.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_in_new_location_in_same_document(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
 
-    srcDocument = ap.Document(input_pdf)
+    page = src_document.pages[2]
+    src_document.pages.add(page)
+    src_document.pages.delete(2)
 
-    page = srcDocument.pages[2]
-    srcDocument.pages.add(page)
-    srcDocument.pages.delete(2)
+    # Save output file
+    src_document.save(output_file_name)
+```
 
-    # Сохранить выходной файл
-    srcDocument.save(output_pdf)
+## Связанные темы страницы
+
+- [Работа с PDF-страницами в Python](/pdf/ru/python-net/working-with-pages/)
+- [Добавить страницы PDF в Python](/pdf/ru/python-net/add-pages/)
+- [Удалить страницы PDF в Python](/pdf/ru/python-net/delete-pages/)
+- [Извлечь страницы PDF в Python](/pdf/ru/python-net/extract-pages/)

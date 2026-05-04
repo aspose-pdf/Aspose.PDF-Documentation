@@ -1,185 +1,276 @@
 ---
-title: Как объединить PDF с использованием Python
-linktitle: Объединение PDF файлов
+title: Объединить PDF-файлы в Python
+linktitle: Объединить PDF-файлы
 type: docs
 weight: 50
-url: /ru/python-net/merge-pdf-documents/
-description: Эта страница объясняет, как объединить PDF документы в один PDF файл с помощью Python.
-lastmod: "2023-04-14"
+url: /python-net/merge-pdf-documents/
+description: Узнайте, как объединить несколько PDF‑файлов в один документ с помощью Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Объединяйте страницы PDF с помощью Python
+Abstract: В этой статье рассматривается распространённая необходимость объединения нескольких PDF‑файлов в один документ, процесс, полезный для организации, оптимизации хранения и совместного использования PDF‑контента. Описывается использование Aspose.PDF for Python via .NET для эффективного сочетания PDF‑файлов, с учётом того, что объединение PDF в Python может быть сложным без сторонних библиотек. Статья представляет пошаговое руководство по конкатенации PDF‑файлов — создание нового документа, объединение файлов и сохранение объединённого документа. Фрагмент кода демонстрирует реализацию с использованием Aspose.PDF, подчёркивая возможность библиотеки упростить процесс объединения. Кроме того, представляется Aspose.PDF Merger — онлайн‑инструмент для объединения PDF, позволяющий пользователям исследовать функциональность в веб‑среде.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Как объединить PDF с использованием Python",
-    "alternativeHeadline": "Комбинирование PDF документов с помощью Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "манипуляция pdf документами",
-    "keywords": "pdf, python, объединение pdf, конкатенация, комбинирование pdf",
-    "wordcount": "212",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "https://docs.aspose.com/pdf/python-net/merge-pdf-documents/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://docs.aspose.com/pdf/python-net/merge-pdf-documents/"
-    },
-    "dateModified": "2023-04-14",
-    "description": "Эта страница объясняет, как объединить PDF документы в один PDF файл с помощью Python через .NET."
-}
-</script>
 
+## Объединить или совместить несколько PDF в один PDF на Python
 
-## Объединение или комбинирование нескольких PDF в один PDF на Python
+Объединение PDF‑файлов — очень популярный запрос среди пользователей. Это может быть полезно, когда у вас есть несколько PDF‑файлов, которые вы хотите объединить или хранить вместе как один документ.
 
-Объединение PDF файлов является очень популярным запросом среди пользователей. Это может быть полезно, когда у вас есть несколько PDF файлов, которые вы хотите поделиться или сохранить вместе как единый документ.
+Объединение PDF‑файлов может помочь вам упорядочить документы, освободить место для хранения на вашем ПК и поделиться несколькими PDF‑файлами с другими, объединив их в один документ.
 
-Объединение PDF файлов может помочь вам организовать ваши документы, освободить место для хранения на вашем ПК и поделиться несколькими PDF файлами с другими, объединив их в один документ.
+Объединение PDF в Python через .NET не является простой задачей без использования сторонней библиотеки.
+В этой статье показано, как объединить несколько PDF-файлов в один PDF‑документ с помощью Aspose.PDF for Python via .NET. 
 
-Объединение PDF в Python через .NET не является простой задачей без использования сторонней библиотеки. Эта статья показывает, как объединить несколько PDF файлов в один PDF документ, используя Aspose.PDF для Python через .NET.
+## Объединение PDF-файлов с помощью Python и DOM
 
-## Объединение PDF файлов с использованием Python и DOM
+Для объединения двух PDF файлов:
 
-Чтобы соединить два PDF файла:
+1. Создать новый документ.
+1. Объединить PDF‑файлы
+1. Сохранить объединённый документ
 
-1. Создайте два объекта [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), каждый из которых содержит один из входных PDF файлов.
-
-1. Затем вызовите метод [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) коллекции [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) для объекта Document, к которому вы хотите добавить другой PDF файл.
-1. Передайте коллекцию PageCollection второго объекта Document в метод [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) первой коллекции PageCollection.
-1. Наконец, сохраните выходной PDF файл, используя метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-
-Следующий код показывает, как объединить PDF файлы.
+Объединение нескольких PDF‑документов в один файл:
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
 
-    # Открыть первый документ
-    document1 = ap.Document(input_pdf_1)
-    # Открыть второй документ
-    document2 = ap.Document(input_pdf_2)
-
-    # Добавить страницы второго документа в первый
+def merge_two_documents(infile1, infile2, outfile):
+    document1 = ap.Document(infile1)
+    document2 = ap.Document(infile2)
     document1.pages.add(document2.pages)
-
-    # Сохранить объединенный выходной файл
-    document1.save(output_pdf)
+    document1.save(outfile)
 ```
 
+## Добавить диапазон страниц из одного PDF в другой
 
-## Live Example
+Скопировать и добавить определённый диапазон страниц из исходного PDF‑документа в целевой PDF‑документ с использованием Aspose.PDF for Python.
 
-[Aspose.PDF Merger](https://products.aspose.app/pdf/merger) — это бесплатное веб-приложение, которое позволяет исследовать, как работает функциональность слияния презентаций.
+1. Откройте PDF‑файлы, используя класс Document.
+1. Проверьте, есть ли у исходного документа страницы.
+1. Проверьте диапазон страниц.
+1. Пропустить операцию, если начальная страница больше конечной страницы.
+1. Итерировать диапазон страниц.
+1. Добавить страницы к целевому документу.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+
+def _append_page_range(source_document, destination_document, start_page, end_page):
+    total_pages = len(source_document.pages)
+    if total_pages == 0:
+        return
+
+    start = max(1, start_page)
+    end = min(end_page, total_pages)
+    if start > end:
+        return
+
+    for page_number in range(start, end + 1):
+        destination_document.pages.add(source_document.pages[page_number])
+```
+
+## Объединить несколько PDF‑документов в один
+
+Этот фрагмент кода объясняет, как объединить несколько PDF‑файлов в один документ:
+
+1. Создайте пустой выходной документ.
+1. Переберите входные файлы.
+1. Загрузите каждый исходный документ.
+1. Определить диапазон страниц.
+1. Добавить страницы к выходному документу.
+1. Повторить для всех документов.
+1. Сохранить объединенный PDF.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+
+def merge_multiple_documents(input_files, outfile):
+    output_document = ap.Document()
+
+    for input_file in input_files:
+        source_document = ap.Document(input_file)
+        _append_page_range(
+            source_document, output_document, 1, len(source_document.pages)
+        )
+
+    output_document.save(outfile)
+```
+
+## Объединить выбранные диапазоны страниц из нескольких PDF
+
+1. Загрузите исходные PDF‑документы.
+1. Создайте выходной документ.
+1. Определите диапазоны страниц для каждого документа.
+1. Добавить страницы из первого документа.
+1. Добавьте страницы из второго документа.
+1. Объедините страницы в нужном порядке.
+1. Сохранить объединенный PDF.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+
+def merge_selected_page_ranges(infile1, infile2, outfile):
+    document1 = ap.Document(infile1)
+    document2 = ap.Document(infile2)
+    output_document = ap.Document()
+
+    _append_page_range(document1, output_document, 1, 2)
+    _append_page_range(document2, output_document, 2, 3)
+
+    output_document.save(outfile)
+```
+
+## Вставить один PDF в другой в определённой позиции
+
+1. Загрузите базу и вставьте документы.
+1. Создайте выходной документ.
+1. Определить общее количество страниц в базовом документе.
+1. Проверьте индекс вставки.
+1. Добавить страницы перед точкой вставки.
+1. Добавьте все страницы из вставляемого документа.
+1. Добавить оставшиеся страницы из базового документа.
+1. Сохраните полученный PDF.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+
+def merge_insert_document_at_position(infile1, infile2, insert_after_page, outfile):
+    base_document = ap.Document(infile1)
+    insert_document = ap.Document(infile2)
+    output_document = ap.Document()
+
+    base_total_pages = len(base_document.pages)
+    insert_index = max(0, min(insert_after_page, base_total_pages))
+
+    _append_page_range(base_document, output_document, 1, insert_index)
+    _append_page_range(insert_document, output_document, 1, len(insert_document.pages))
+    _append_page_range(
+        base_document, output_document, insert_index + 1, base_total_pages
+    )
+
+    output_document.save(outfile)
+```
+
+## Объединить PDF‑файлы, чередуя страницы
+
+В этом примере демонстрируется, как объединить два PDF‑документа, чередуя их страницы, используя Aspose.PDF for Python.
+
+1. Загрузите входные PDF‑документы.
+1. Создайте выходной документ.
+1. Получить количество страниц в каждом документе.
+1. Вычислите максимальное количество страниц.
+1. Перебрать номера страниц.
+1. Добавлять страницы попеременно.
+1. Обработайте неравное количество страниц.
+1. Сохранить объединенный PDF.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+
+def merge_alternating_pages(infile1, infile2, outfile):
+    document1 = ap.Document(infile1)
+    document2 = ap.Document(infile2)
+    output_document = ap.Document()
+
+    document1_pages = len(document1.pages)
+    document2_pages = len(document2.pages)
+    max_pages = max(document1_pages, document2_pages)
+
+    for page_number in range(1, max_pages + 1):
+        if page_number <= document1_pages:
+            output_document.pages.add(document1.pages[page_number])
+        if page_number <= document2_pages:
+            output_document.pages.add(document2.pages[page_number])
+
+    output_document.save(outfile)
+```
+
+## Объединить PDF-файлы с разделителями секций и закладками
+
+Объедините несколько PDF‑документов в один файл со структурированными разделами и навигационными закладками, используя Aspose.PDF for Python.
+
+1. Создайте выходной документ.
+1. Переберите входные файлы.
+1. Загрузите исходный документ.
+1. Добавьте страницу-разделитель.
+1. Создать закладку раздела.
+1. Добавить страницы исходного документа.
+1. Отслеживать первую страницу контента.
+1. Добавьте вложенную закладку контента (по желанию).
+1. Повторить для всех документов.
+1. Сохранить объединенный PDF.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+
+def merge_with_section_separators_and_bookmarks(input_files, outfile):
+    output_document = ap.Document()
+
+    for section_index, input_file in enumerate(input_files, start=1):
+        source_document = ap.Document(input_file)
+        source_page_count = len(source_document.pages)
+
+        separator_page = output_document.pages.add()
+        separator_page.paragraphs.add(
+            ap.text.TextFragment(
+                f"Section {section_index}: {path.basename(input_file)}"
+            )
+        )
+
+        section_bookmark = ap.OutlineItemCollection(output_document.outlines)
+        section_bookmark.title = f"Section {section_index}"
+        section_bookmark.action = ap.annotations.GoToAction(separator_page)
+        output_document.outlines.append(section_bookmark)
+
+        first_content_page_number = len(output_document.pages) + 1
+        _append_page_range(source_document, output_document, 1, source_page_count)
+
+        if source_page_count > 0 and first_content_page_number <= len(
+            output_document.pages
+        ):
+            content_bookmark = ap.OutlineItemCollection(output_document.outlines)
+            content_bookmark.title = f"Section {section_index} Content"
+            content_bookmark.action = ap.annotations.GoToAction(
+                output_document.pages[first_content_page_number]
+            )
+            section_bookmark.append(content_bookmark)
+
+    output_document.save(outfile)
+```
+
+## Рабочий пример
+
+[Aspose.PDF Merger](https://products.aspose.app/pdf/merger) это онлайн бесплатное веб‑приложение, которое позволяет исследовать, как работает функция объединения презентаций.
 
 [![Aspose.PDF Merger](merger.png)](https://products.aspose.app/pdf/merger)
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Библиотека для манипуляции PDF для Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Связанные темы Document
+
+- [Работа с PDF документами в Python](/pdf/ru/python-net/working-with-documents/)
+- [Разделить PDF файлы в Python](/pdf/ru/python-net/split-document/)
+- [Оптимизировать PDF файлы в Python](/pdf/ru/python-net/optimize-pdf/)
+- [Манипулировать PDF документами в Python](/pdf/ru/python-net/manipulate-pdf-document/)
+

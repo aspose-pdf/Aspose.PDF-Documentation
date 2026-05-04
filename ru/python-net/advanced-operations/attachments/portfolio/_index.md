@@ -1,203 +1,85 @@
 ---
-title: Работа с портфолио в PDF с использованием Python
-linktitle: Portfolio
+title: Создайте PDF‑портфолио на Python
+linktitle: Портфолио
 type: docs
 weight: 20
-url: /ru/python-net/portfolio/
-description: Как создать PDF-портфолио с помощью Python. Вы должны использовать файл Microsoft Excel, документ Word и файл изображения для создания PDF-портфолио.
-lastmod: "2023-02-17"
+url: /python-net/portfolio/
+description: Узнайте, как создавать и управлять PDF‑портфолио на Python с помощью Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Создавайте и редактируйте PDF‑портфолио со встроенными файлами на Python
+Abstract: В этой статье объясняется, как создавать и управлять PDF‑портфолио с использованием Aspose.PDF for Python via .NET. Узнайте, как объединять несколько типов файлов в одно PDF‑портфолио, добавлять файлы в коллекцию документов и программно удалять элементы портфолио с помощью Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Работа с портфолио в PDF с использованием Python",
-    "alternativeHeadline": "Создание портфолио в PDF документе",
-    "author": {
-        "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, портфолио",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/portfolio/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/portfolio/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Как создать PDF-портфолио с помощью Python. Вы должны использовать файл Microsoft Excel, документ Word и файл изображения для создания PDF-портфолио."
-}
-</script>
 
+Создание PDF‑портфолио позволяет консолидировать и архивировать различные типы файлов в едином, согласованном документе. Такой документ может включать текстовые файлы, изображения, электронные таблицы, презентации и другие материалы, обеспечивая хранение и организацию всех соответствующих данных в одном месте.
 
-Создание PDF-портфолио позволяет консолидировать и архивировать различные типы файлов в одном, согласованном документе. Такой документ может включать текстовые файлы, изображения, электронные таблицы, презентации и другие материалы, обеспечивая хранение и организацию всех соответствующих материалов в одном месте.
+PDF‑портфель поможет продемонстрировать вашу презентацию в высоком качестве, где бы вы её ни использовали. В целом, создание PDF‑портфеля — это очень актуальная и современная задача.
 
-PDF-портфолио поможет продемонстрировать вашу презентацию в высоком качестве, где бы вы ни использовали её. В общем, создание PDF-портфолио — это очень актуальная и современная задача.
+Используйте PDF‑портфель, когда хотите распределить набор связанных файлов вместе, сохранив каждый файл в его исходном формате внутри одного PDF‑контейнера.
 
-## Как создать PDF-портфолио
+## Как создать PDF‑портфель
 
-Aspose.PDF для Python через .NET позволяет создавать документы PDF-портфолио с использованием класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Добавьте файл в объект document.collection после получения его с помощью класса [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/). Когда файлы добавлены, используйте метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) класса Document для сохранения портфолио-документа.
+Aspose.PDF for Python via .NET позволяет создавать документы PDF‑портфеля, используя [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class. Добавьте файл в объект document.collection после получения его с помощью [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) class. После добавления файлов используйте Document class' [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод для сохранения документа портфеля.
 
-Следующий пример использует файл Microsoft Excel, документ Word и файл изображения для создания PDF-портфолио.
+В следующем примере используется файл Microsoft Excel, документ Word и файл изображения для создания PDF‑портфеля.
 
-The code below results in the following portfolio.
+Код ниже приводит к следующему портфолио.
 
-### PDF Портфолио, созданное с помощью Aspose.PDF для Python
+### PDF‑портфолио, созданное с помощью Aspose.PDF for Python
 
-![PDF Портфолио, созданное с помощью Aspose.PDF для Python](working-with-pdf-portfolio_1.jpg)
+![PDF‑портфолио, созданное с помощью Aspose.PDF for Python](working-with-pdf-portfolio_1.jpg)
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Создать объект документа
+def create_pdf_portfolio(input_files, outfile):
+    # Instantiate Document Object
     document = ap.Document()
 
-    # Создать объект коллекции документа
+    # Instantiate document Collection object
     document.collection = ap.Collection()
 
-    # Получить файлы для добавления в портфолио
-    excel = ap.FileSpecification(input_excel)
-    word = ap.FileSpecification(input_doc)
-    image = ap.FileSpecification(input_jpg)
+    # Get Files to add to Portfolio
+    excel = ap.FileSpecification(input_files[0])
+    word = ap.FileSpecification(input_files[1])
+    image = ap.FileSpecification(input_files[2])
 
-    # Указать описание файлов
-    excel.description = "Файл Excel"
-    word.description = "Файл Word"
-    image.description = "Файл изображения"
+    # Provide description of the files
+    excel.description = "Excel File"
+    word.description = "Word File"
+    image.description = "Image File"
 
-    # Добавить файлы в коллекцию документа
+    # Add files to document collection
     document.collection.append(excel)
     document.collection.append(word)
     document.collection.append(image)
 
-    # Сохранить документ портфолио
-    document.save(output_pdf)
+    # Save Portfolio document
+    document.save(outfile)
 ```
 
-## Удаление файлов из PDF Портфолио
+## Удалить файлы из PDF Portfolio
 
-Чтобы удалить файлы из PDF портфолио, попробуйте использовать следующие строки кода.
+Чтобы удалить файлы из PDF‑портфеля, попробуйте использовать следующие строки кода.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Открыть документ
-    document = ap.Document(input_pdf)
+def remove_files_from_pdf_portfolio(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
     document.collection.delete()
 
-    # Сохранить обновленный файл
-    document.save(output_pdf)
+    # Save updated file
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Связанные темы вложений
+
+- [Работа с вложениями PDF в Python](/pdf/ru/python-net/attachments/)
+- [Добавить вложения в PDF с помощью Python](/pdf/ru/python-net/add-attachment-to-pdf-document/)
+- [Удалить вложения из PDF в Python](/pdf/ru/python-net/removing-attachment-from-an-existing-pdf/)
+

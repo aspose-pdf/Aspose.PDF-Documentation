@@ -112,6 +112,7 @@ def extract_image_types_from_pdf(infile):
     print("--------------------------------")
     print("Grayscale Images = " + str(grayscaled))
     print("RGB Images = " + str(rgb))
+```
 
 ## Extract Detailed Image Information from a PDF
 

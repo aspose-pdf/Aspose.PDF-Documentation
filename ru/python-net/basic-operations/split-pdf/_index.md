@@ -27,7 +27,7 @@ Abstract: В статье рассматривается процесс разд
 В этой теме показано, как разбить страницы PDF на отдельные PDF‑файлы в ваших приложениях на Python. Чтобы разбить страницы PDF на одностраничные PDF‑файлы с использованием Python, можно выполнить следующие шаги:
 
 1. Переберите страницы PDF‑документа через [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object's [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) коллекция
-1. Для каждой итерации создайте новый объект Document и добавьте отдельные [Страница](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) объект в пустой документ
+1. Для каждой итерации создайте новый объект Document и добавьте отдельные [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) объект в пустой документ
 1. Сохранить новый PDF с помощью [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод
 
 ## Разделить PDF на несколько файлов или отдельные PDF в Python

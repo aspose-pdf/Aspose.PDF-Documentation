@@ -3,156 +3,31 @@ title: Работа с AcroForms с использованием Python
 linktitle: AcroForms
 type: docs
 weight: 10
-url: /ru/python-net/acroforms/
-description: С помощью Aspose.PDF для Python вы можете создать форму с нуля, заполнить поле формы в PDF-документе, извлечь данные из формы и т.д.
-lastmod: "2023-02-17"
+url: /python-net/acroforms/
+description: Узнайте, как создавать, заполнять, извлекать, импортировать, экспортировать и управлять полями AcroForm в PDF‑документах с помощью Aspose.PDF for Python via .NET.
+lastmod: "2026-04-28"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Руководство по работе с AcroForms в Python
+Abstract: В этом разделе представляются AcroForms и объясняется, как работать с интерактивными PDF‑формами с использованием Aspose.PDF for Python via .NET. Описываются основные рабочие процессы, такие как создание форм, заполнение полей, извлечение значений, импорт и экспорт данных форм, а также изменение или удаление полей формы. Эти руководства помогут вам построить практические конвейеры обработки форм для сценариев автоматизации документов.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Работа с AcroForms с использованием Python",
-    "alternativeHeadline": "Опции работы с AcroForms в PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация pdf документов",
-    "keywords": "pdf, python, acroforms в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/acroforms/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/acroforms/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "С помощью Aspose.PDF для Python вы можете создать форму с нуля, заполнить поле формы в PDF-документе, извлечь данные из формы и т.д."
-}
-</script>
-
 
 ## Основы AcroForms
 
-**AcroForms** - уникальная технология форм PDF от Adobe. AcroForms представляет собой формулу ориентированную на страницы. Они впервые появились в 1998 году. Они принимают ввод в виде формата данных или FDF и XML формата данных или xFDF. AcroForms поддерживаются сторонними поставщиками. Когда Adobe представила AcroForms, они называли их "PDF формой, автором которой является Adobe Acrobat Pro/Standard и которая не является специальным типом статической или динамической формы XFA. AcroForms портативны и работают на всех платформах.
+AcroForms являются интерактивными, ориентированными на страницу PDF‑формами, введёнными компанией Adobe и включёнными в спецификацию PDF, начиная с версии 1.2. Они широко поддерживаются и могут использоваться для захвата данных, проверки и обмена в кросс‑платформенных рабочих процессах.
 
-Вы можете использовать AcroForms для добавления дополнительных страниц в документ формы PDF. Благодаря концепции шаблонов, вы можете использовать AcroForms для поддержки заполнения формы несколькими записями из базы данных.
+В рабочих процессах, основанных на AcroForm, данные формы могут передаваться в форматах, таких как FDF и XFDF. Это делает AcroForms подходящими для сценариев, когда необходимо предварительно заполнять поля из внешних систем, извлекать отправленные значения или синхронизировать данные формы между документами.
 
-PDF 1.7 поддерживает два различных метода интеграции данных и форм PDF.
+Aspose.PDF for Python via .NET предоставляет API для программного создания и управления AcroForms, включая заполнение полей, экспорт данных, изменение структуры формы и добавление действий отправки.
 
-*AcroForms (также известные как формы Acrobat)*, введенные и включенные в спецификацию формата PDF 1.2.
+Для практических примеров см. следующие статьи:
 
-Для более подробного изучения возможностей Java-библиотеки, см. следующие статьи:
-
-- [Создание AcroForm](/pdf/ru/python-net/create-form) - создание формы с нуля с помощью Python.
-- [Заполнить AcroForm](/pdf/ru/python-net/fill-form) - заполните поле формы в вашем PDF документе.
-- [Извлечь AcroForm](/pdf/ru/python-net/extract-form) - получите значение из всех или отдельного поля PDF документа.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Библиотека для манипуляции PDF для Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Создать AcroForm](/pdf/ru/python-net/create-form/) - создать форму с нуля.
+- [Заполнить AcroForm](/pdf/ru/python-net/fill-form/) - заполнить поля формы в PDF‑документе.
+- [Извлечь AcroForm](/pdf/ru/python-net/extract-form/) - извлекать значения из всех полей или конкретного поля.
+- [Импорт и экспорт данных формы](/pdf/ru/python-net/import-export-form-data/) - импортировать и экспортировать данные формы в общих форматах.
+- [Изменение AcroForm](/pdf/ru/python-net/modifying-form/) - изменять свойства полей AcroForm.
+- [Удалить формы из PDF](/pdf/ru/python-net/remove-form/) - удалить поля формы из PDF‑документа.
+- [Размещение форм](/pdf/ru/python-net/posting-form/) - добавить функцию отправки в PDF‑форму.

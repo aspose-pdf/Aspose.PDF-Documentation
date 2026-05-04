@@ -1,86 +1,29 @@
 ---
-title: Работа с закладками в PDF с использованием Python
+title: Работа с закладками PDF в Python
 linktitle: Закладки
 type: docs
 weight: 30
-url: /ru/python-net/bookmarks/
-description: Этот раздел объясняет, как добавлять, удалять и получать закладки с помощью Aspose.PDF для Python через .NET.
-lastmod: "2023-02-17"
+url: /python-net/bookmarks/
+description: Узнайте, как добавлять, удалять, получать, обновлять и разворачивать закладки PDF в Python.
+lastmod: "2026-04-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как работать с закладками в PDF с помощью Python
+Abstract: В статье обсуждается важность и полезность закладок в PDF‑документах. Закладки улучшают пользовательский опыт, обеспечивая эффективную навигацию, организацию и структурирование PDF‑файлов, делая их более доступными. Они функционируют как интерактивные ссылки, позволяя пользователям быстро переходить к конкретным разделам или страницам, аналогично оглавлению. Статья предоставляет рекомендации по управлению закладками, включая их добавление, удаление, получение, обновление и разворачивание, что позволяет пользователям эффективно управлять и просматривать содержимое PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Работа с закладками в PDF с использованием Python",
-    "alternativeHeadline": "Как добавлять закладки в PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "создание PDF документов",
-    "keywords": "pdf, python, закладки в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/bookmarks/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/bookmarks/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Этот раздел объясняет, как добавлять, удалять и получать закладки с помощью Aspose.PDF для Python через .NET."
-}
-</script>
 
+Использование закладок в PDF — удобная функция. С их помощью вы можете настроить навигацию в своих документах, организовать и структурировать PDF‑файлы, делая их более доступными. Они служат интерактивными ссылками внутри документа, позволяя пользователям быстро переходить к определённым разделам или страницам.
 
-Использование закладок в PDF является очень полезной функцией. С их помощью вы можете настроить навигацию по вашим документам, организовать и структурировать файлы PDF, а также сделать такие файлы более доступными. Они работают как интерактивные ссылки в документе, позволяя пользователям быстро переходить к определенным разделам или страницам.
+Закладки PDF — это удобный и необходимый инструмент для чтения PDF‑файлов. Они позволяют пользователям быстро переходить к другим местам в документе PDF, перемещаться по страницам и быстро просматривать содержимое PDF, как в оглавлении.
 
-Закладки PDF — это удобный и необходимый инструмент, когда дело касается чтения PDF-файлов. Они позволяют пользователям быстро переходить к другим местам в PDF-документе, перемещаться по страницам и быстро просматривать содержимое PDF, как в оглавлении.
+Используйте следующие руководства по закладкам, когда вам нужно создать навигацию в стиле оглавления или проверить и обновить существующее дерево закладок в PDF.
+
+## Охваченные задачи закладок
+
 В этом разделе вы узнаете, как:
 
 - [Добавить и удалить закладку](/pdf/ru/python-net/add-and-delete-bookmark/)
 - [Получить, обновить и развернуть закладку](/pdf/ru/python-net/get-update-and-expand-bookmark/)
+- [Обзор навигации и взаимодействия](/pdf/ru/python-net/navigation-and-interaction/)

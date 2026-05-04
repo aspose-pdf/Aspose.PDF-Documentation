@@ -1,195 +1,75 @@
 ---
 title: Удалить таблицы из существующего PDF
 linktitle: Удалить таблицы
+description: Узнайте, как удалить одну или несколько таблиц из существующих PDF‑документов на Python.
+lastmod: "2026-04-17"
 type: docs
 weight: 50
-url: /ru/python-net/remove-tables-from-existing-pdf/
-lastmod: "2023-02-17"
+url: /python-net/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как удалить таблицы из PDF с помощью Python
+Abstract: В этой статье рассматривается функциональность Aspose.PDF for Python via .NET, с особым акцентом на работу с таблицами в PDF‑документах. Библиотека позволяет пользователям вставлять или создавать таблицы как в новых, так и в существующих PDF‑файлах, а также манипулировать и удалять таблицы из существующих PDF. В статье представляется класс `TableAbsorber`, который играет ключевую роль в идентификации и взаимодействии с таблицами в PDF. Добавлен новый метод `remove()`, позволяющий удалять таблицы. Документ содержит два фрагмента кода — один, демонстрирующий удаление одной таблицы из PDF, и второй, показывающий удаление множества таблиц. Эти примеры подчёркивают практическое применение класса `TableAbsorber` для удаления таблиц из PDF‑документов.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Удалить таблицы из существующего PDF",
-    "alternativeHeadline": "Как удалить таблицы из PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF-документов",
-    "keywords": "pdf, python, удалить таблицу, удалить таблицы",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/remove-tables-from-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/remove-tables-from-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": ""
-}
-</script>
 
+## Удалить таблицу из PDF‑документа
 
-{{% alert color="primary" %}}
+Aspose.PDF for Python позволяет удалить таблицу из PDF. Он открывает существующий PDF, обнаруживает первую таблицу на первой странице с помощью TableAbsorber, удаляет эту таблицу, используя [remove_one_table](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods). После сохранения обновлённого PDF в новый файл.
 
-Aspose.PDF for Python via .NET предлагает возможности вставки/создания таблицы в PDF-документе, когда он создается с нуля, или вы также можете добавить объект таблицы в любой существующий PDF-документ. Однако у вас может возникнуть необходимость [манипулировать таблицами в существующем PDF](https://docs.aspose.com/pdf/python-net/manipulate-tables-in-existing-pdf/), где вы можете обновлять содержимое в существующих ячейках таблицы. Однако вы можете столкнуться с требованием удалить объекты таблицы из существующего PDF-документа.
-
-{{% /alert %}}
-
-Чтобы удалить таблицы, нам необходимо использовать класс [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/), чтобы получить доступ к таблицам в существующем PDF, а затем вызвать метод [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods).
-
-## Удаление таблицы из PDF-документа
-
-Мы добавили новую функцию, т.е.
- [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods) к существующему классу [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) для удаления таблицы из PDF-документа. Как только абсорбер успешно находит таблицы на странице, он становится способен их удалять. Пожалуйста, ознакомьтесь с следующим фрагментом кода, показывающим, как удалить таблицу из PDF-документа:
+Используйте эту страницу, когда нужно очистить PDF, содержащие множество таблиц, удалить устаревшее табличное содержание или упростить документы перед повторным распространением.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_one_table(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # Загрузить существующий PDF документ
-    pdf_document = ap.Document(input_file)
-    # Создать объект TableAbsorber для поиска таблиц
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # Посетить первую страницу с абсорбером
-    absorber.visit(pdf_document.pages[1])
-    # Получить первую таблицу на странице
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    # Get first table on the page
     table = absorber.table_list[0]
-    # Удалить таблицу
+    # Remove the table
     absorber.remove(table)
-    # Сохранить PDF
-    pdf_document.save(output_file)
+    # Save PDF
+    document.save(outfile)
 ```
 
-## Удаление нескольких таблиц из PDF-документа
+## Удалить все таблицы из PDF‑документа
 
-Иногда PDF-документ может содержать более одной таблицы, и может возникнуть необходимость удалить из него несколько таблиц. Для удаления нескольких таблиц из PDF-документа, используйте следующий фрагмент кода:
+С помощью нашей библиотеки вы можете удалить все таблицы с конкретной страницы в PDF. Код открывает существующий PDF, обнаруживает все таблицы на второй странице с помощью TableAbsorber, перебирает обнаруженные таблицы, удаляет каждую из них и затем сохраняет изменённый PDF в новый файл. Это полезно, когда необходимо массово удалить таблицы со страницы, оставив остальное содержание PDF нетронутым.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_all_tables(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # Загрузить существующий PDF-документ
-    pdf_document = ap.Document(input_file)
-    # Создать объект TableAbsorber для поиска таблиц
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # Посетить вторую страницу с поглотителем
-    absorber.visit(pdf_document.pages[1])
-    # Получить копию коллекции таблиц
-    tables = absorber.table_list
-    # Перебирать копию коллекции и удалять таблицы
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    #  Loop through the copy of collection and removing tables
+    tables = list(absorber.table_list)
     for table in tables:
         absorber.remove(table)
-    # Сохранить документ
-    pdf_document.save(output_file)
+
+    # Save document
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Связанные темы таблицы
+
+- [Работа с таблицами в PDF с использованием Python](/pdf/ru/python-net/working-with-tables/)
+- [Добавить таблицы в PDF с помощью Python](/pdf/ru/python-net/adding-tables/)
+- [Извлекать таблицы из PDF‑документов](/pdf/ru/python-net/extracting-table/)
+- [Манипулировать таблицами в существующих PDF](/pdf/ru/python-net/manipulating-tables/)

@@ -1,164 +1,53 @@
 ---
-title: Извлечение AcroForm - Извлечение данных формы из PDF в Python
-linktitle: Извлечение AcroForm
+title: Извлечь AcroForm - извлечь данные формы из PDF на Python
+linktitle: Извлечь AcroForm
 type: docs
 weight: 30
-url: /ru/python-net/extract-form/
-description: Извлечь форму из вашего PDF документа с помощью библиотеки Aspose.PDF для Python. Получите значение из отдельного поля PDF файла.
-lastmod: "2023-02-17"
+url: /python-net/extract-form/
+description: Извлечь значения из полей AcroForm в PDF‑документах, используя Aspose.PDF for Python via .NET.
+lastmod: "2026-04-28"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как получить данные формы из PDF с помощью Python
+Abstract: В этой статье показано, как извлечь данные из полей AcroForm в PDF‑документах, используя Aspose.PDF for Python via .NET. Пример проходит по именам полей формы, считывает значения с помощью фасада Form и возвращает словарь для последующей обработки. Этот рабочий процесс полезен для формирования отчётов, проверки и интеграции с внешними системами.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Извлечение AcroForm",
-    "alternativeHeadline": "Как извлечь AcroForm из PDF в Python",
-    "author": {
-        "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация pdf документов",
-    "keywords": "pdf, python, извлечение acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/@AsposePDF",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-form/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Извлечь форму из вашего PDF документа с помощью библиотеки Aspose.PDF для Python. Получите значение из отдельного поля PDF файла."
-}
-</script>
 
+## Извлечь данные из Form
 
-## Извлечение данных из формы
+### Получить значения всех полей в PDF‑документе
 
-### Получение значений из всех полей PDF документа
+Чтобы прочитать значения из всех полей PDF‑документа, пройдите по именам полей формы и получите каждое значение из [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form/) фасад.
 
-Чтобы получить значения из всех полей в PDF документе, вам нужно пройти через все поля формы и затем получить значение, используя свойство Value. Получите каждое поле из коллекции Form в базовом типе поля, называемом [Field](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/), и получите доступ к его свойству [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/#properties).
+Выполните следующие шаги:
 
-Следующие фрагменты кода на Python показывают, как получить значения всех полей из PDF документа.
+1. Привяжите входной PDF к `Form` объект.
+1. Итерировать по `field_names`.
+1. Считайте каждое значение с `get_field()`.
+1. Сохраните значения в словаре.
+1. Верните или обработайте извлечённые значения.
+
+Следующий фрагмент кода Python демонстрирует этот подход.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Открыть документ
-    pdfDocument = ap.Document(input_file)
+def get_values_from_all_fields(input_file_name):
+    form = ap.facades.Form(input_file_name)
 
-    # Получить значения из всех полей
-    for formField in pdfDocument.form.fields:
-        # Анализировать имена и значения, если нужно
-        print("Имя поля : " + formField.partial_name)
-        print("Значение : " + str(formField.value))
+    form_values = {}
+    for field_name in form.field_names:
+        form_values[field_name] = form.get_field(field_name)
+
+    print(form_values)
+    return form_values
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Связанные темы
+
+- [Создать AcroForm](/pdf/ru/python-net/create-form/)
+- [Заполнить AcroForm](/pdf/ru/python-net/fill-form/)
+- [Импорт и экспорт данных формы](/pdf/ru/python-net/import-export-form-data/)
+- [Изменение AcroForm](/pdf/ru/python-net/modifying-form/)

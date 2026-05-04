@@ -1,308 +1,357 @@
 ---
-title: Добавление заголовка и колонтитула в PDF с использованием Python
-linktitle: Добавление заголовка и колонтитула в PDF
+title: Добавить заголовки и нижние колонтитулы PDF в Python
+linktitle: Добавление заголовка и нижнего колонтитула в PDF
 type: docs
 weight: 50
-url: /ru/python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF для Python через .NET позволяет добавлять заголовки и колонтитулы в ваш PDF файл с использованием класса TextStamp.
-lastmod: "2023-04-17"
+url: /python-net/add-headers-and-footers-of-pdf-file/
+description: Узнайте, как добавить колонтитулы в PDF‑файлы на Python, используя текст, изображения и структурированное содержимое.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Как добавить заголовок и нижний колонтитул в PDF с помощью Python
+Abstract: Статья предоставляет всестороннее руководство по использованию **Aspose.PDF for Python via .NET** для добавления верхних и нижних колонтитулов в PDF‑файлы с возможностью включения текста или изображений. В начале подробно рассматривается использование класса `TextStamp` для вставки текста в верхний колонтитул PDF‑документа. Ключевые свойства, такие как размер шрифта, стиль и цвет, могут быть настроены, и метод добавления текста в верхний колонтитул демонстрируется с помощью фрагмента кода на Python. В статье также объясняется, как добавить текст в нижний колонтитул, следуя тем же процедурным шагам. Для добавления изображений используется класс `ImageStamp`, процесс описан как для верхних, так и для нижних колонтитулов, опять же с примерами кода на Python. Кроме того, в статье рассматривается добавление нескольких верхних колонтитулов в один PDF‑файл. Это включает создание нескольких объектов `TextStamp`, каждый из которых имеет отдельное форматирование, и их применение к различным страницам. Объяснение дополнено подробным фрагментом кода, демонстрирующим эту функциональность.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Добавление заголовка и колонтитула в PDF с использованием Python",
-    "alternativeHeadline": "Как добавить заголовок и колонтитул в PDF файл",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, добавление заголовка, добавление колонтитула в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF для Python через .NET позволяет добавлять заголовки и колонтитулы в ваш PDF файл с использованием класса TextStamp."
-}
-</script>
 
+Эта страница предоставляет краткий обзор добавления верхних и нижних колонтитулов в PDF‑документы с использованием Aspose.PDF for Python via .NET, охватывая подходы, основанные на тексте, HTML, LaTeX, изображениях и таблицах, а также динамичную нумерацию страниц и несколько колонтитулов на страницу; она объясняет, как создавать и оформлять [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) объекты (используя [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/), [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/), и т.д.), скорректировать [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) и [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) для точного размещения и прикрепления результатов к страницам с практическими примерами кода на Python.
 
-**Aspose.PDF для Python через .NET** позволяет добавлять заголовок и нижний колонтитул в ваш существующий PDF-файл. Вы можете добавлять изображения или текст в PDF-документ. Также попробуйте добавить разные заголовки в один PDF-файл с помощью Python.
+**Aspose.PDF for Python via .NET** позволяет добавлять заголовок и нижний колонтитул в ваш существующий [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Вы можете добавить изображения или текст в PDF документ. Также попробуйте добавить разные заголовки в один PDF‑файл с помощью Python.
 
-## Добавление текста в заголовок PDF-файла
+Используйте эту страницу, когда нужно добавить повторяющийся брендинг, метки страниц, заголовки документов или содержание нижнего колонтитула на всех страницах PDF в Python.
 
-Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/), чтобы добавить текст в заголовок PDF-файла. Класс TextStamp предоставляет свойства, необходимые для создания штампа на основе текста, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить текст в заголовок, вам нужно создать объект Document и объект TextStamp, используя необходимые свойства. После этого вы можете вызвать метод 'add_stamp' страницы, чтобы добавить текст в заголовок PDF.
+## Добавление заголовков и нижних колонтитулов в виде текстовых фрагментов
 
-Вам необходимо установить свойство [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) таким образом, чтобы оно корректировало текст в области заголовка вашего PDF. Вам также нужно установить 'horizontal_alignment' на Center и 'vertical_alignment' на Top.
+Добавьте простые текстовые заголовки и колонтитулы на все страницы PDF. Он создает [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) объекты, вставки [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) элементы в них, наборы [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) для правильного позиционирования и прикрепляет их к каждой странице документа. В результате получаем PDF, где каждая страница отображает одинаковый текст заголовка и нижнего колонтитула.
 
-В следующем фрагменте кода показано, как добавить текст в заголовок PDF-файла с помощью Python:
+Следующий фрагмент кода демонстрирует, как добавить заголовки и колонтитулы в виде текстовых фрагментов в PDF с использованием Python:  
+
+1. Создайте текстовые фрагменты для заголовка и нижнего колонтитула.
+1. Создайте объекты HeaderFooter и добавьте к ним текстовые фрагменты.
+1. Определите настройки полей, чтобы управлять размещением заголовка и нижнего колонтитула.
+1. Загрузите PDF‑документ из входного файла.
+1. Переберите все страницы в документе.
+1. Назначьте верхний и нижний колонтитулы каждой странице.
+1. Сохраните изменённый PDF в выходной файл.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_text(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Demo header")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # Открыть документ
-    document = ap.Document(input_pdf)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Demo footer")
 
-    # Создать заголовок
-    textStamp = ap.TextStamp("Header Text")
-    # Установить свойства штампа
-    textStamp.top_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # Добавить заголовок на все страницы
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
 
-    # Сохранить обновленный документ
-    document.save(output_pdf)
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Добавление текста в нижний колонтитул PDF файла
+Этот метод полезен для добавления одинаковых заголовков, индикаторов страниц или юридических отказов в верхней и нижней части каждой страницы. Вы также можете расширить его, включив изображения или динамический контент, например номера страниц.
 
-Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) для добавления текста в нижний колонтитул PDF файла.
- class TextStamp предоставляет свойства, необходимые для создания текстовой печати, такие как размер шрифта, стиль шрифта и цвет шрифта и т.д. Для того чтобы добавить текст в нижний колонтитул, вам нужно создать объект Document и объект TextStamp, используя необходимые свойства. После этого вы можете вызвать метод 'add_stamp' страницы, чтобы добавить текст в нижний колонтитул PDF.
+## Добавление заголовков и нижних колонтитулов для нумерации страниц
 
-Следующий фрагмент кода показывает, как добавить текст в нижний колонтитул PDF файла с помощью Python:
+Добавьте автоматическую нумерацию страниц в заголовки и нижние колонтитулы PDF‑документа с помощью Aspose.PDF for Python. Используя встроенные переменные $p (текущий номер страницы) и $P (общее количество страниц), скрипт динамически вставляет нумерацию на каждую страницу. В заголовках отображается формат 'Page X from Y', а в нижних колонтитулах — 'Page X / Y'. The [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) обеспечивает правильное размещение на каждой странице.
+
+1. Создайте TextFragment для заголовка, используя "Page $p from $P", чтобы показать текущую страницу и общее количество страниц.
+1. Создайте объект HeaderFooter и добавьте в него текст заголовка.
+1. Создайте TextFragment для нижнего колонтитула, используя "Page $p / $P" для альтернативного стиля нумерации.
+1. Создайте объект Footer и добавьте текст нижнего колонтитула.
+1. Определите настройки полей (левый = 50, верхний = 20) и примените их к верхнему и нижнему колонтитулу.
+1. Откройте PDF-документ из входного файла.
+1. Пройдите по всем страницам и назначьте заголовок и нижний колонтитул каждой странице.
+1. Сохраните обновлённый PDF в путь вывода.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def using_header_and_footer_for_page_numbering(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Page $p from $P")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # Открыть документ
-    document = ap.Document(input_pdf)
-    # Создать нижний колонтитул
-    textStamp = ap.TextStamp("Footer Text")
-    # Установить свойства печати
-    textStamp.bottom_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # Добавить нижний колонтитул на все страницы
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Page $p / $P")
 
-    # Сохранить обновленный PDF файл
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Create margins
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+
+    # Set header margin
+    header.margin = margin
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Добавление изображения в верхний колонтитул PDF файла
+## Добавление заголовков и нижних колонтитулов в виде HTML‑фрагментов
 
-Вы можете использовать класс [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/), чтобы добавить изображение в верхний колонтитул PDF файла. Класс Image Stamp предоставляет свойства, необходимые для создания штампа на основе изображения, такие как размер шрифта, стиль шрифта и цвет шрифта и т.д. Для того чтобы добавить изображение в заголовок, вам нужно создать объект Document и объект Image Stamp, используя необходимые свойства. После этого вы можете вызвать метод 'add_stamp' страницы, чтобы добавить изображение в заголовок PDF.
+Примените HTML-форматированные заголовки и колонтитулы к каждой странице PDF‑документа с использованием Aspose.PDF for Python. Используя [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), скрипт позволяет стилизацию форматированного текста — например, полужирный и курсив — отображать в заголовке и нижнем колонтитуле. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) применяется для правильного размещения, и те же отформатированные элементы прикрепляются к каждой странице документа.
 
-Следующий фрагмент кода показывает, как добавить изображение в заголовок PDF файла с помощью Python:
+Следующий фрагмент кода демонстрирует, как добавить заголовки и колонтитулы в виде HTML‑фрагментов в PDF с помощью Python:
 
-```python 
-
-    import aspose.pdf as ap
-
-    # Открыть документ
-    document = ap.Document(input_pdf)
-
-    # Создать заголовок
-    image_stamp = ap.ImageStamp(input_image)
-    # Установить свойства штампа
-    image_stamp.top_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # Добавить заголовок на все страницы
-    for page in document.pages:
-        page.add_stamp(image_stamp)
-
-    # Сохранить обновленный документ
-    document.save(output_pdf)
-```
-
-## Добавление изображения в нижний колонтитул PDF файла
-
-Вы можете использовать класс [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) для добавления изображения в нижний колонтитул PDF файла. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) класс предоставляет свойства, необходимые для создания штампа на основе изображения, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить изображение в нижний колонтитул, вам нужно создать объект Document и объект ImageStamp с использованием необходимых свойств. После этого вы можете вызвать метод 'add_stamp' страницы, чтобы добавить изображение в нижний колонтитул PDF.
-
-Следующий фрагмент кода показывает, как добавить изображение в нижний колонтитул PDF файла с помощью Python:
+1. Создайте фрагмент заголовка HTML с использованием HtmlFragment — включая стилизованный текст, например ‘<strong>' для жирного.
+1. Создайте объект HeaderFooter и добавьте к нему HTML‑заголовок.
+1. Создайте фрагмент HTML‑подвала, используя '<i>' для курсивного оформления.
+1. Создайте объект Footer и добавьте в него HTML нижнего колонтитула.
+1. Настройте поля (left = 50, top = 20) и назначьте их как для верхнего, так и для нижнего колонтитула.
+1. Загрузите PDF‑документ, используя 'ap.Document()'.
+1. Переберите все страницы и присвойте каждой заголовок и нижний колонтитул.
+1. Сохраните изменённый PDF в указанный путь вывода.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_html(input_file, output_file):
+    # Create header HTML
+    header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_html)
 
-    # Открыть документ
-    document = ap.Document(input_pdf)
-    # Создать нижний колонтитул
-    image_stamp = ap.ImageStamp(input_image)
-    # Установить свойства штампа
-    image_stamp.bottom_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # Добавить нижний колонтитул на все страницы
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer HTML
+    footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
 
-    # Сохранить обновленный PDF файл
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_html)
+
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Добавление разных заголовков в один PDF файл
+Использование HtmlFragment позволяет применять богато оформленное форматирование с встроенными стилями или разметкой HTML, предоставляя большую гибкость дизайна по сравнению с обычным текстом.
 
-Мы знаем, что можем добавить TextStamp в раздел Заголовок/Нижний колонтитул документа, используя свойства [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) или [bottom_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties), но иногда может возникнуть необходимость добавить несколько заголовков/нижних колонтитулов в одном PDF документе. **Aspose.PDF for Python via .NET** объясняет, как это сделать.
+## Добавление заголовков и нижних колонтитулов в виде изображений
 
-Чтобы выполнить это требование, мы создадим отдельные объекты TextStamp (количество объектов зависит от количества требуемых Заголовков/Нижних колонтитулов) и добавим их в PDF документ.
- Мы также можем указать различную информацию о форматировании для отдельного объекта штампа. В следующем примере мы создали объект Document и три объекта TextStamp, а затем использовали метод 'add_stamp' класса Page, чтобы добавить текст в разделе заголовка PDF. Следующий фрагмент кода показывает, как добавить изображение в нижний колонтитул PDF-файла с помощью Aspose.PDF для Python:
+Добавьте заголовки и нижние колонтитулы на основе изображений на каждую страницу PDF‑документа с помощью Aspose.PDF for Python. Один и тот же файл изображения используется как в заголовке, так и в нижнем колонтитуле на каждой странице. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) размещает изображения, и изображение автоматически подгоняется, чтобы поместиться в область заголовка/нижнего колонтитула.
+
+Следующий фрагмент кода демонстрирует, как добавить заголовки и колонтитулы в виде изображений в PDF с помощью Python:
+
+1. Загрузите изображение в объект 'ap.Image' и подготовьте его для использования в качестве заголовка.
+1. Создайте объект HeaderFooter и прикрепите к нему изображение заголовка.
+1. Загрузите то же изображение ещё раз для использования в качестве нижнего колонтитула.
+1. Создайте объект Footer и добавьте к нему изображение нижнего колонтитула.
+1. Загрузите входной PDF‑документ, используя 'ap.Document()'.
+1. Перебрать все страницы документа.
+1. Применить отступы (левый = 50) для позиционирования как заголовка, так и нижнего колонтитула.
+1. Назначьте заголовок и нижний колонтитул каждой странице PDF.
+1. Сохраните обновлённый PDF в указанный файл вывода.
+
+Эта техника идеальна для брендирования документов логотипами или водяными знаками в области верхнего/нижнего колонтитула.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_image(input_file, image_file, output_file):
+    # Create header image
+    header_image = ap.Image()
+    header_image.file = image_file
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_image)
 
-    # Создаем три штампа
-    stamp1 = ap.TextStamp("Заголовок 1")
-    stamp2 = ap.TextStamp("Заголовок 2")
-    stamp3 = ap.TextStamp("Заголовок 3")
+    # Create footer image
+    footer_image = ap.Image()
+    footer_image.file = image_file
 
-    # Устанавливаем выравнивание штампа (размещаем штамп вверху страницы, по центру по горизонтали)
-    stamp1.vertical_alignment = ap.VerticalAlignment.TOP
-    stamp1.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Указываем стиль шрифта как Жирный
-    stamp1.text_state.font_style = ap.text.FontStyles.BOLD
-    # Устанавливаем цвет текста как красный
-    stamp1.text_state.foreground_color = ap.Color.red
-    # Указываем размер шрифта как 14
-    stamp1.text_state.font_size = 14
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_image)
 
-    # Теперь нам нужно установить вертикальное выравнивание второго объекта штампа как Вверх
-    stamp2.vertical_alignment = ap.VerticalAlignment.TOP
-    # Устанавливаем информацию о горизонтальном выравнивании штампа как по центру
-    stamp2.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Устанавливаем коэффициент увеличения для объекта штампа
-    stamp2.zoom = 10
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Set header margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            header.margin = margin
 
-    # Устанавливаем форматирование третьего объекта штампа
-    # Указываем информацию о вертикальном выравнивании для объекта штампа как Вверх
-    stamp3.vertical_alignment = ap.VerticalAlignment.TOP
-    # Устанавливаем информацию о горизонтальном выравнивании для объекта штампа как по центру
-    stamp3.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Устанавливаем угол поворота для объекта штампа
-    stamp3.rotate_angle = 35
-    # Устанавливаем розовый цвет как цвет фона для штампа
-    stamp3.text_state.background_color = ap.Color.pink
-    # Изменяем шрифт для штампа на Verdana
-    stamp3.text_state.font = ap.text.FontRepository.find_font("Verdana")
-    # Первый штамп добавляется на первую страницу;
-    document.pages[1].add_stamp(stamp1)
-    # Второй штамп добавляется на вторую страницу;
-    document.pages[2].add_stamp(stamp2)
-    # Третий штамп добавляется на третью страницу.
-    document.pages[3].add_stamp(stamp3)
+            # Set footer margin
+            footer.margin = margin
 
-    # Сохраняем обновленный документ
-    document.save(output_pdf)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для Python через .NET библиотеку",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Библиотека для работы с PDF для Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Добавление заголовков и нижних колонтитулов в виде таблицы
+
+Добавьте структурированные, основанные на таблицах, заголовки и нижние колонтитулы на все страницы PDF‑документа с использованием Aspose.PDF для Python. [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) Объекты обеспечивают более точный контроль макета, выравнивание и последовательное форматирование сложных заголовков и нижних колонтитулов. Текст заголовка центрирован, а текст нижнего колонтитула выровнен по левому краю, оба используют шрифт Arial 12 пунктов. Ширина столбцов рассчитывается динамически на основе размеров страницы, чтобы гарантировать правильное размещение.
+
+Этот фрагмент кода добавляет заголовки и колонтитулы (с использованием таблиц) на каждую страницу PDF‑документа с помощью Aspose.PDF for Python via .NET.
+
+1. Определите стили текста, используя [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) для заголовка и колонтитула (шрифт, размер, выравнивание).
+1. Создать [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) объекты для верхнего и нижнего колонтитула.
+1. Создать заголовок [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) с единственной строкой и ячейкой, содержащей текст заголовка.
+1. Создать нижний колонтитул [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) с одной строкой и ячейкой, содержащей текст нижнего колонтитула.
+1. Добавьте таблицы к соответствующим [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) объекты.
+1. Установить нижний колонтитул [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) для правильного горизонтального позиционирования.
+1. Откройте [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) используя соответствующие методы.
+1. Пройдите по всем страницам и присвойте каждой странице заголовок и нижний колонтитул, основанные на таблице.
+1. Сохраните изменённый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) в выходной файл.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def add_header_and_footer_as_table(input_file, output_file):
+    text_state_header = ap.text.TextState()
+    text_state_header.font = ap.text.FontRepository.find_font("Arial")
+    text_state_header.font_size = 12
+    text_state_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    text_state_footer = ap.text.TextState()
+    text_state_footer.font = ap.text.FontRepository.find_font("Arial")
+    text_state_footer.font_size = 12
+    text_state_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+    # Create header
+    header = ap.HeaderFooter()
+    # Create footer
+    footer = ap.HeaderFooter()
+    # Create header Table
+    table_header = ap.Table()
+    table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+    header_row = table_header.rows.add()
+    header_row.cells.add("This is a Table Header", text_state_header)
+    # Create footer Table
+    table = ap.Table()
+    table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+    table.rows.add().cells.add("Powered by Aspose.PDF", text_state_footer)
+    header.paragraphs.add(table_header)
+    footer.paragraphs.add(table)
+    # Set footer margin
+    footer.margin.left = 150
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## Добавление заголовков и нижних колонтитулов в LaTeX
+
+Добавьте заголовки и колонтитулы, содержащие контент в формате LaTeX, на все страницы PDF‑документа с использованием Aspose.PDF for Python. LaTeX позволяет отображать математические символы, даты, знаки авторского права и другое сложное форматирование. В заголовке отображается динамическая дата, а в колонтитуле — символ авторского права вместе с текущим номером страницы и общим количеством страниц.
+
+Следующий фрагмент кода показывает, как использовать [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) в заголовках и нижних колонтитулах PDF с использованием Aspose.PDF for Python via .NET.
+
+1. Откройте [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) используя соответствующие методы.
+1. Определите общее количество страниц для использования в динамических колонтитулах.
+1. Перебрать все страницы документа.
+1. Создайте [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) объект для заголовка.
+1. Создайте [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) для текста заголовка, содержащего команды LaTeX (например, `\\today\\`).
+1. Создайте [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) объект для нижнего колонтитула.
+1. Создайте [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) для текста нижнего колонтитула, включая символы LaTeX и нумерацию страниц.
+1. Добавить [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) к соответствующему объекту колонтитула.
+1. Привяжите заголовок и нижний колонтитул к текущей странице.
+1. Сохраните изменённый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) в выходной файл.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def add_header_and_footer_as_latex(input_file, output_file):
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTeX Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = (
+                f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            )
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## Связанные темы страницы
+
+- [Работа с PDF-страницами в Python](/pdf/ru/python-net/working-with-pages/)
+- [Добавить номера страниц в PDF с помощью Python](/pdf/ru/python-net/add-page-number/)
+- [Нанести штамп на страницы PDF в Python](/pdf/ru/python-net/stamping/)
+- [Форматировать PDF‑документы в Python](/pdf/ru/python-net/formatting-pdf-document/)

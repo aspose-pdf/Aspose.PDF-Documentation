@@ -83,8 +83,17 @@ sitemap:
 
 Мы объединили различные виды аннотаций, доступные для библиотеки Aspose.PDF для Python, в группы:
 
-- [Текстовая аннотация PDF](/pdf/ru/python-net/text-annotation/)
-- [Выделения в PDF](/pdf/ru/python-net/highlights-annotation/)
-- [Фигуры в PDF](/pdf/ru/python-net/figures-annotation/)
-- [Липкие аннотации PDF](/pdf/ru/python-net/sticky-annotations/)
-- [Дополнительные аннотации](/pdf/ru/python-net/extra-annotations/)
+- [Импорт и экспорт аннотаций](/pdf/python-net/import-export-annotations/)
+- [Интерактивные аннотации](/pdf/python-net/interactive-annotations/)
+- [Аннотации разметки](/pdf/python-net/markup-annotations/)
+- [Аннотации медиафайлов](/pdf/python-net/media-annotations/)
+- [Аннотации безопасности](/pdf/python-net/security-annotations/)
+- [Аннотации фигур](/pdf/python-net/shape-annotations/)
+- [Аннотации текста](/pdf/python-net/text-based-Annotations/)
+- [Аннотации водяных знаков](/pdf/python-net/watermark-annotations/)
+
+## Связанные темы аннотирования
+
+- [Обзор Аннотаций PDF](/pdf/python-net/annotations/) для родительского раздела и концепций аннотирования.
+- [Аннотации к тексту в формате PDF](/pdf/python-net/text-annotation/) для рабочих процессов аннотирования в стиле заметок и на основе текста.
+- [Аннотации к рисункам в формате PDF](/pdf/python-net/figures-annotation/) для аннотаций на основе фигур, таких как круги, многоугольники и линии.
