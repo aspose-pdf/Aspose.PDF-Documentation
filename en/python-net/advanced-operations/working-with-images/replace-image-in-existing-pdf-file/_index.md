@@ -7,7 +7,7 @@ url: /python-net/replace-image-in-existing-pdf-file/
 description: Learn how to replace embedded images in existing PDF files in Python.
 lastmod: "2026-05-05"
 TechArticle: true
-AlternativeHeadline: Replace an embedded PDF image with a new one in Python
+AlternativeHeadline: Replace images in existing PDF files with Python
 Abstract: This article shows how to replace images in PDF documents with Aspose.PDF for Python via .NET. It covers replacing an image by resource index and replacing a specific image found with ImagePlacementAbsorber.
 ---
 
@@ -34,7 +34,7 @@ def replace_image(infile, image_file, outfile):
     document.save(outfile)
 ```
 
-## Replace specific Image
+## Replace a Specific Image
 
 This example replaces a specific image placement found by `ImagePlacementAbsorber`.
 
