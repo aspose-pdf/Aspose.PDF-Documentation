@@ -1,5 +1,5 @@
 ---
-title: Добавить вложения в PDF с помощью Python
+title: Добавление вложения в PDF с помощью Python
 linktitle: Добавление вложения в PDF‑документ
 type: docs
 weight: 10
