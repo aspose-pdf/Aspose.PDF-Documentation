@@ -30,13 +30,13 @@ Abstract: В этой статье объясняется, как создава
 
 Свободные текстовые аннотации позволяют размещать видимые текстовые комментарии непосредственно на странице PDF. В этом примере добавляется простая свободная текстовая аннотация на первую страницу.
 
-#### Откройте исходный PDF
+#### Открыть исходный PDF
 
 ```python
 document = ap.Document(infile)
 ```
 
-#### Создайте и настройте аннотацию свободного текста
+#### Создать и настроить аннотацию свободного текста
 
 ```python
 free_text_annotation = ap.annotations.FreeTextAnnotation(
@@ -48,7 +48,7 @@ free_text_annotation.title = "Aspose User"
 free_text_annotation.color = ap.Color.light_green
 ```
 
-#### Добавьте аннотацию и сохраните PDF
+#### Добавить аннотацию и сохранить PDF
 
 ```python
 document.pages[1].annotations.append(free_text_annotation)
@@ -73,11 +73,11 @@ def free_text_annotation_add(infile, outfile):
     document.save(outfile)
 ```
 
-### Получить аннотации FreeText 
+### Получить аннотации FreeText
 
 Чтобы проверить аннотации свободного текста, отфильтруйте аннотации первой страницы по `FREE_TEXT` введите и распечатайте каждый прямоугольник аннотации.
 
-#### Загрузите документ и соберите аннотации свободного текста
+#### Загрузить документ и собрать аннотации свободного текста
 
 ```python
 document = ap.Document(infile)
@@ -110,7 +110,7 @@ def free_text_annotation_get(infile, outfile):
         print(annotation.rect)
 ```
 
-### Удалить аннотации FreeText 
+### Удалить аннотации FreeText
 
 Этот рабочий процесс удаляет все аннотации свободного текста с первой страницы и сохраняет обновлённый PDF.
 
@@ -146,7 +146,6 @@ def free_text_annotation_delete(infile, outfile):
 
     document.save(outfile)
 ```
-
 
 ## Текстовые разметочные аннотации
 
@@ -243,7 +242,6 @@ def text_highlight_annotation_delete(infile, outfile):
     document.save(outfile)
 ```
 
-
 ### Подчёркнутые аннотации
 
 #### Добавить аннотации подчёркивания текста
@@ -283,7 +281,7 @@ def text_underline_annotation_add(infile, outfile):
     document.save(outfile)
 ```
 
-#### Добавить подчеркивание текста в аннотации, сплющить 
+#### Добавить подчеркивание текста в аннотации, сплющить
 
 Если вы хотите, чтобы подчеркивание стало частью содержимого страницы, а не оставалось интерактивной аннотацией, вы можете сплющить его после добавления.
 
@@ -536,7 +534,6 @@ def text_underline_marked_fragments_get(infile, outfile):
             print(f"Fragment text: {fragment.text}")
 ```
 
-
 ### Волнистые аннотации
 
 #### Добавить волнообразные аннотации
@@ -635,7 +632,6 @@ def text_squiggly_annotation_delete(infile, outfile):
 
     document.save(outfile)
 ```
-
 
 ### Аннотации зачеркивания
 
