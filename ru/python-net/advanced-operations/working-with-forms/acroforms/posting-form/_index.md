@@ -1,6 +1,6 @@
 ---
-title: Размещение форм в PDF с помощью Python
-linktitle: Размещение форм
+title: Отправка данных из форм в PDF с помощью Python
+linktitle: Отправка данных из форм
 type: docs
 weight: 75
 url: /ru/python-net/posting-form/

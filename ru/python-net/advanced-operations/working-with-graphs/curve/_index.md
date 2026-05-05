@@ -25,7 +25,7 @@ Abstract: В статье рассматривается реализация г
 Следуйте шагам ниже:
 
 1. Создать [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
-1. Создать [Drawing object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определёнными размерами.
+1. Создать [Graph object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определёнными размерами.
 1. Установить [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта рисования.
 1. Добавить [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) объект в коллекцию абзацев страницы.
 1. Сохраните наш PDF-файл.
