@@ -1,38 +1,34 @@
 ---
-title: Добавить Circle в PDF с помощью Python
-linktitle: Добавить Circle
+title: Добавить круглые формы в PDF на Python
+linktitle: Добавить круг
 type: docs
 weight: 20
-url: /ru/python-net/add-circle/
-description: Узнайте, как рисовать и заполнять круговые формы в PDF‑файлах с помощью Python.
+url: /python-net/add-circle/
+description: Узнайте, как рисовать и заполнять формы кругов в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Добавление объекта Circle в PDF с использованием Python
-Abstract: В статье представлено руководство по использованию Aspose.PDF for Python via .NET для создания объектов круга в PDF‑документах. Описывается процесс добавления как контурных, так и заполненных графических элементов круга, подчёркивая, как круговые диаграммы могут быть полезным инструментом для отображения данных по нескольким категориям, когда данные представляют собой целое. В статье содержатся пошаговые инструкции по созданию экземпляра `Document`, настройке объекта `Drawing` с определёнными размерами, применению границы и добавлению объекта `Graph` на страницу PDF. Примеры кода демонстрируют рисование простого круга и заполненного круга, с подробными инструкциями по установке цветов и добавлению текста в круг. Также представлены визуальные результаты этих операций, демонстрирующие возможности Aspose.PDF по улучшению содержимого PDF с помощью динамических графических элементов.
+TechArticle: true
+AlternativeHeadline: Рисовать формы кругов в PDF‑файлах, используя Python
+Abstract: В этой статье показано, как добавить формы кругов в PDF‑документы с помощью Aspose.PDF for Python via .NET. Описывается создание контурных кругов, заполнение кругов цветом и размещение текста внутри объектов круга.
 ---
 
-## Добавить объект Circle
+## Добавить объект круга
 
-Как и столбчатые графики, круговые графики могут использоваться для отображения данных в нескольких отдельных категориях. Однако, в отличие от столбчатых графиков, круговые графики можно использовать только тогда, когда у вас есть данные для всех категорий, составляющих целое. Итак, давайте посмотрим, как добавить [Circle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/circle/) объект с Aspose.PDF for Python .NET.
+Aspose.PDF for Python via .NET позволяет вам добавлять [Круг](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/circle/) фигуры на страницы PDF через [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) class. Используйте круги для схем, аннотаций и простых визуальных элементов.
 
-Этот пример демонстрирует, как программно нарисовать круг в PDF‑документе с использованием Aspose.PDF for Python via .NET. Используя модуль рисования, разработчики могут создавать сложные графические элементы с точным контролем их внешнего вида и позиционирования. Эта возможность важна для приложений, которым требуется динамическое создание графического контента в PDF, таких как технические схемы, диаграммы или пользовательские иллюстрации.
-
-Следуйте шагам ниже:
+Следуйте указаниям ниже:
 
 1. Создать [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
-1. Создать [Graph object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определёнными размерами.
-1. Установить [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта рисования.
+1. Создать [Объект графа](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определенными размерами.
+1. Установить [граница](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта Graph.
 1. Добавить [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) объект в коллекцию абзацев страницы.
-1. Сохраните наш PDF-файл.
+1. Сохранить наш PDF-файл.
 
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_circle(outfile: str):
     document = ap.Document()
@@ -50,17 +46,15 @@ def add_circle(outfile: str):
 
 Нарисованный нами круг будет выглядеть так:
 
-![Рисование Circle](drawing_circle.png)
+![Рисование круга](drawing_circle.png)
 
-## Создать объект заполненного Circle
+## Создать объект заполненного круга
 
-Этот пример показывает, как добавить объект Circle, заполненный цветом.
+Этот пример показывает, как добавить круг и заполнить его цветом.
 
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_circle_filled(outfile: str):
     document = ap.Document()
@@ -78,13 +72,13 @@ def add_circle_filled(outfile: str):
     document.save(outfile)
 ```
 
-Посмотрим результат добавления заполненного Circle:
+Результат добавления заполненного круга:
 
-![Заполненный Circle](filled_circle.png)
+![Заполненный круг](filled_circle.png)
 
-## Связанные темы графов
+## Связанные темы графиков
 
-- [Работа с графами PDF в Python](/pdf/ru/python-net/working-with-graphs/)
-- [Добавить дуговые формы в PDF на Python](/pdf/ru/python-net/add-arc/)
-- [Добавить эллиптические фигуры в PDF на Python](/pdf/ru/python-net/add-ellipse/)
+- [Работа с графиками PDF в Python](/pdf/ru/python-net/working-with-graphs/)
+- [Добавление дуговых фигур в PDF на Python](/pdf/ru/python-net/add-arc/)
+- [Добавить эллипсные фигуры в PDF на Python](/pdf/ru/python-net/add-ellipse/)
 - [Добавить прямоугольные фигуры в PDF на Python](/pdf/ru/python-net/add-rectangle/)

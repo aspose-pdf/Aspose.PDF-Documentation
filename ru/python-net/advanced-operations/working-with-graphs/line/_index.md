@@ -1,30 +1,30 @@
 ---
-title: Добавить Line в PDF на Python
-linktitle: Добавить Line
+title: Добавить линейные фигуры в PDF на Python
+linktitle: Добавить линию
 type: docs
 weight: 40
-url: /ru/python-net/add-line/
-description: Узнайте, как рисовать линейные фигуры и стилизованные линии в PDF‑файлах с помощью Python.
+url: /python-net/add-line/
+description: Узнайте, как рисовать линейные фигуры и стилизованные линии в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Добавление объекта линии в PDF с помощью Python
-Abstract: В статье рассматривается, как добавить объекты линии в PDF‑документ с использованием Aspose.PDF for Python via .NET. Описывается процесс создания экземпляра `Document` и добавления в PDF объекта `Graph`. В статье приведены подробные шаги по созданию и настройке объекта `Line`, включая указание его шаблона штриховки и цвета. В ней содержатся фрагменты кода, демонстрирующие, как добавить простую линию, пунктирную линию и как рисовать линии по странице, образуя крестообразный узор. Каждый раздел сопровождается визуальным представлением полученного PDF. Этот руководитель служит практическим ресурсом для разработчиков, желающих улучшить свои PDF‑документы графическими элементами с помощью Aspose.PDF.
+TechArticle: true
+AlternativeHeadline: Рисовать линейные фигуры в PDF‑файлах используя Python
+Abstract: В этой статье показано, как добавить формы линий в PDF‑документы с помощью Aspose.PDF for Python via .NET. Она охватывает создание базовых линий, настройку пунктирных стилей линий и рисование линий по всей странице.
 ---
 
 ## Добавить объект Line
 
-Aspose.PDF for Python via .NET поддерживает возможность добавления графических объектов (например граф, линия, прямоугольник и т.д.) в PDF‑документы. Вы также получаете возможность добавить [Line](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/line/) объект, в котором вы также можете указать шаблон пунктирной линии, цвет и другое форматирование для элемента Line.
+Aspose.PDF for Python via .NET позволяет вам добавить [Линия](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/line/) формы в страницы PDF с использованием [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) класс. Вы можете управлять цветом линии, пунктирным шаблоном и размещением.
 
-Следуйте шагам ниже:
+Выполните следующие шаги:
 
-1. Создать [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
+1. Создать [Документ](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
 1. Создать объект Graph
 1. Добавить [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) объект в коллекцию абзацев страницы.
-1. Создать и настроить линию
-1. Добавить [Line](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/line/) к Graph
+1. Создать и настроить строку
+1. Добавить [Линия](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/line/) к графу
 1. Сохраните наш PDF-файл.
 
 ```python
@@ -46,15 +46,13 @@ def add_line(outfile: str):
     document.save(outfile)
 ```
 
-![Добавить Line](add_line.png)
+![Добавить линию](add_line.png)
 
-## Как добавить пунктирно‑точечную Line в ваш PDF‑документ
+## Как добавить пунктирно‑штриховую линию в ваш PDF‑документ
 
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_dotted_dashed_line(outfile: str):
     document = ap.Document()
@@ -71,21 +69,17 @@ def add_dotted_dashed_line(outfile: str):
     document.save(outfile)
 ```
 
-Давайте проверим результат:
+Результат добавления пунктирно‑точечной линии:
 
-![Пунктирная Line](dash_line.png)
+![Пунктирная линия](dash_line.png)
 
-## Нарисовать Line через страницу
+## Нарисовать линию поперек страницы
 
-Мы также можем использовать объект Line, чтобы нарисовать крест, начиная от Left-Bottom к Right-Upper и от Left-Top к Bottom-Right.
-
-Пожалуйста, просмотрите следующий фрагмент кода, чтобы выполнить это требование.
+Вы также можете нарисовать линии поперек страницы, чтобы сформировать крест.
 
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def draw_line_across_page(outfile: str):
     document = ap.Document()
@@ -105,11 +99,11 @@ def draw_line_across_page(outfile: str):
     document.save(outfile)
 ```
 
-![Рисование Line](draw_line.png)
+![Рисование линии](draw_line.png)
 
 ## Связанные темы графов
 
-- [Работа с графами PDF в Python](/pdf/ru/python-net/working-with-graphs/)
-- [Добавление кривых фигур в PDF в Python](/pdf/ru/python-net/add-curve/)
-- [Добавить прямоугольные фигуры в PDF на Python](/pdf/ru/python-net/add-rectangle/)
+- [Работа с графиками PDF в Python](/pdf/ru/python-net/working-with-graphs/)
+- [Добавить кривые формы в PDF в Python](/pdf/ru/python-net/add-curve/)
+- [Добавить прямоугольные формы в PDF в Python](/pdf/ru/python-net/add-rectangle/)
 - [Проверьте границы фигур в графиках PDF с помощью Python](/pdf/ru/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
