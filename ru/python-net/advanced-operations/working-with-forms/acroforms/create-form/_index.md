@@ -16,7 +16,7 @@ Abstract: В этой статье объясняется, как создава
 
 ## Создать форму с нуля
 
-### Добавить FormField в PDF Document
+### Добавление полей формы в PDF Document
 
 Определённый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс предоставляет коллекцию с именем [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) что помогает управлять полями формы в PDF‑документе.
 

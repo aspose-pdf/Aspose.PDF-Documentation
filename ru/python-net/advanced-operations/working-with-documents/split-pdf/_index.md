@@ -287,7 +287,7 @@ def split_documents_into_three_parts(infile, outdir):
             part_document.save(path.join(outdir, f"Three_Parts_{part_index + 1}.pdf"))
 ```
 
-## Пользовательский разделитель страниц PDF
+## Разделение PDF на группы страниц
 
 Разделите PDF-документ на несколько файлов на основе заданных групп страниц с помощью Aspose.PDF для Python.
 

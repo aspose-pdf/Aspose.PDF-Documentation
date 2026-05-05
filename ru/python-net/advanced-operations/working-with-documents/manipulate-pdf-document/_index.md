@@ -139,7 +139,7 @@ def set_toc_levels(input_pdf, output_pdf):
     document.save(output_pdf)
 ```
 
-### Скрыть номера страниц в Оглавлении
+### Скрыть номера страниц в оглавлении
 
 В случае, если вы не хотите отображать номера страниц вместе с заголовками в TOC, вы можете использовать [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) свойство [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) Class как false. Пожалуйста, проверьте следующий фрагмент кода, чтобы скрыть номера страниц в оглавлении:
 
@@ -186,7 +186,7 @@ def hide_page_numbers_in_toc(input_pdf, output_pdf):
 
 ### Настройте номера страниц при добавлении TOC
 
-Обычно настраивают нумерацию страниц в Оглавлении при добавлении Оглавления в PDF‑документ. Например, может потребоваться добавить префикс перед номером страницы, такой как P1, P2, P3 и так далее. В таком случае Aspose.PDF for Python предоставляет [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) свойство [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) класс, который может использоваться для настройки нумерации страниц, как показано в следующем примере кода.
+Обычно настраивают нумерацию страниц в оглавлении при добавлении оглавления в PDF‑документ. Например, может потребоваться добавить префикс перед номером страницы, такой как P1, P2, P3 и так далее. В таком случае Aspose.PDF for Python предоставляет [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) свойство [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) класс, который может использоваться для настройки нумерации страниц, как показано в следующем примере кода.
 
 ```python
 import sys
