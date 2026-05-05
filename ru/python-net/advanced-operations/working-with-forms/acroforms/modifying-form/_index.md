@@ -93,7 +93,7 @@ def get_field_limit(input_file_name):
 1. Загрузите PDF-документ.
 1. Получите доступ к целевому полю и проверьте его тип.
 1. Найдите шрифт в `FontRepository`.
-1. Применить новое `DefaultAppearance`.
+1. Применить новое оформление `DefaultAppearance`.
 1. Сохраните обновлённый PDF.
 
 ```python

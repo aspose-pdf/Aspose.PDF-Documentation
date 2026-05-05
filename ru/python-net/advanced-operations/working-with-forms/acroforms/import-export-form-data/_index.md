@@ -39,7 +39,7 @@ def import_data_from_xml(input_file_name, data_file_name, output_file_name):
 
 ## Экспортировать данные полей формы в XML
 
-Этот метод экспортирует значения FormField из PDF‑документа в XML.
+Этот метод экспортирует значения полей формы из PDF‑документа в XML.
 
 1. Создать `Form` объект.
 1. Привяжите входной PDF.

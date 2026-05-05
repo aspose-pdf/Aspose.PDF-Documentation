@@ -1,5 +1,6 @@
 ---
-title: Проверьте границы фигур в графах PDF с Python
+title: Проверка границ фигур в графах PDF с Python
+linktitle: Проверка границ фигур
 type: docs
 weight: 70
 url: /ru/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
@@ -17,7 +18,7 @@ Abstract: Эта статья предлагает всестороннее ру
 1. Добавить страницу
 1. Создать [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/)
 1. Создать прямоугольную фигуру
-1. Режим проверки границ
+1. Проверьте границы фигуры.
 1. Добавить [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) к Graph
 
 ```python
