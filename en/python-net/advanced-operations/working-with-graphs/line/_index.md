@@ -9,14 +9,14 @@ lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Adding Line Object to PDF using Python
 Abstract: The article discusses how to add line objects to a PDF document using Aspose.PDF for Python via .NET. It explains the process of creating a `Document` instance and adding a `Graph` object to the PDF. The article provides detailed steps to create and configure a `Line` object, including specifying its dash pattern and color. It includes code snippets demonstrating how to add a simple line, a dotted dashed line, and how to draw lines across a page to form a cross pattern. Each section is accompanied by a visual representation of the resulting PDF. This guide serves as a practical resource for developers looking to enhance their PDF documents with graphical elements using Aspose.PDF.
 ---
 
 ## Add Line object
 
-Aspose.PDF for Python via .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Line](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/line/) object where you can also specify the dash pattern, color and other formatting for Line element.
+Aspose.PDF for Python via .NET lets you add [Line](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/line/) shapes to PDF pages using the [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) class. You can control line color, dash pattern, and placement.
 
 Follow the steps below:
 
@@ -53,8 +53,6 @@ def add_line(outfile: str):
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_dotted_dashed_line(outfile: str):
     document = ap.Document()
@@ -71,21 +69,17 @@ def add_dotted_dashed_line(outfile: str):
     document.save(outfile)
 ```
 
-Let's check the result:
+Result of adding a dotted dashed line:
 
 ![Dashed Line](dash_line.png)
 
 ## Draw Line Across the Page
 
-We can also use line object to draw a cross starting from Left-Bottom to Right-Upper corner and Left-Top corner to Bottom-Right corner.
-
-Please take a look over following code snippet to accomplish this requirement.
+You can also draw lines across the page to form a cross.
 
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def draw_line_across_page(outfile: str):
     document = ap.Document()

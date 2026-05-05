@@ -9,34 +9,30 @@ lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Adding Rectangle Object to PDF using Python
 Abstract: The article provides a comprehensive guide on how to add and manipulate Rectangle objects in PDF documents using Aspose.PDF for Python via .NET. It details the process of creating a Rectangle and integrating it into a PDF document, including setting borders and filling it with solid colors or gradient fills. The article includes step-by-step instructions with code snippets demonstrating the creation of a PDF document, adding pages, and inserting Rectangle objects with various visual properties, such as solid color fills, gradient fills, and transparency using alpha channels. Additionally, it explains how to control the Z-Order of Rectangle objects to manage their rendering order when multiple shapes are added to the same PDF. Each section is supported with visual examples to illustrate the output of the code snippets.
 ---
 
 ## Add Rectangle object
 
-Aspose.PDF for Python via .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. You also get the leverage to add [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) object where you also offers the feature to fill rectangle object.
-
-First, let's look at the possibility of creating a Rectangle object.
+Aspose.PDF for Python via .NET lets you add [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) shapes to PDF pages through the [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) class. You can draw outlined rectangles and apply solid, gradient, or transparent fills.
 
 Follow the steps below:
 
 1. Create a new PDF [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Add [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) to pages collection of PDF file.
-1. Add [Text fragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) to paragraphs collection of page instance.
+1. Add [Text fragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) to paragraphs collection of page instance.
 1. Create [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) instance.
 1. Set border for [Drawing object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/).
 1. Add [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) object to shapes collection of Graph object.
 1. Add graph object to paragraphs collection of page instance.
-1. Add [Text fragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) to paragraphs collection of page instance.
+1. Add [Text fragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) to paragraphs collection of page instance.
 1. And save your PDF file
 
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_rectangle(outfile: str):
     document = ap.Document()
@@ -66,8 +62,6 @@ The following code snippet shows how to add a [Rectangle](https://reference.aspo
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def create_rectangle_filled(outfile: str):
     document = ap.Document()
@@ -82,7 +76,7 @@ def create_rectangle_filled(outfile: str):
     document.save(outfile)
 ```
 
-Look at the result of rectangle filled solid color:
+Result of rectangle filled with a solid color:
 
 ![Filled Rectangle](fill_rectangle.png)
 
@@ -95,8 +89,6 @@ The following code snippet shows how to add a [Rectangle](https://reference.aspo
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_drawing_with_gradient_fill(outfile: str):
     document = ap.Document()
@@ -118,15 +110,15 @@ def add_drawing_with_gradient_fill(outfile: str):
 
 ![Gradient Rectangle](gradient.png)
 
-## Create Rectangle with Alpha color channel
+## Create Rectangle with Alpha Color Channel
 
-Aspose.PDF for Python .NET supports to fill rectangle object with a certain color. A rectangle object can also have Alpha color channel to give transparent appearance. The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) object with Alpha color channel.
+Aspose.PDF for Python via .NET also supports transparency through an alpha color channel.
+
+The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) object with alpha values.
 
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def create_rectangle_with_alpha_color_channel(outfile: str):
     document = ap.Document()
