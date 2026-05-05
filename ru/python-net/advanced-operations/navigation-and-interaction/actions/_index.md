@@ -1,6 +1,6 @@
 ---
-title: Работа с действиями PDF в Python
-linktitle: Действия
+title: Действия в PDF в Python
+linktitle: Действия в PDF
 type: docs
 weight: 20
 url: /ru/python-net/actions/

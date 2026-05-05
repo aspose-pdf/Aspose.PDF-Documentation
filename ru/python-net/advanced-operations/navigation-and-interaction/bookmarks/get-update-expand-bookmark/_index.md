@@ -18,7 +18,7 @@ Abstract: В этой статье представлен всесторонни
 
 Эта [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) объекта [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) Коллекция содержит все закладки PDF‑файла. Эта статья объясняет, как получить закладки из PDF‑файла и как определить, на какой странице находится конкретная закладка.
 
-Чтобы получить закладки, пройдите цикл по [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) коллекции и получите каждую закладку в OutlineItemCollection. The [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) предоставляет доступ ко всем атрибутам закладок. В следующем фрагменте кода показано, как получить закладки из PDF‑файла.
+Чтобы получить закладки, пройдите цикл по [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) коллекции и получите каждую закладку в OutlineItemCollection. [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) предоставляет доступ ко всем атрибутам закладок. В следующем фрагменте кода показано, как получить закладки из PDF‑файла.
 
 ```python
 from os import path
