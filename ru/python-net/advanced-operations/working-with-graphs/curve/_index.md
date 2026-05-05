@@ -1,34 +1,32 @@
 ---
-title: Добавить Curve в PDF на Python
-linktitle: Добавить Curve
+title: Добавить кривые формы в PDF на Python
+linktitle: Добавить кривую
 type: docs
 weight: 30
-url: /ru/python-net/add-curve/
-description: Узнайте, как рисовать и заполнять формы кривых в PDF‑файлах на Python.
+url: /python-net/add-curve/
+description: Узнайте, как рисовать и заполнять кривые формы в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Добавление объекта кривой в PDF с помощью Python
-Abstract: В статье рассматривается реализация графических кривых в PDF‑документах с использованием библиотеки Aspose.PDF для Python via .NET. Представлена концепция графической кривой, представляющей собой объединение проективных линий, а также подробно описан процесс создания как простых, так и заполненных Bézier‑кривых программным способом. В статье представлены пошаговые инструкции и фрагменты кода для рисования кривых внутри PDF, с акцентом на манипуляцию графическими элементами с помощью модуля рисования Aspose.PDF. Процесс включает создание экземпляра `Document`, определение объекта `Drawing` с заданными размерами, установку границ и добавление объекта `Graph` на страницу PDF. Визуальные результаты этих примеров кода иллюстрируются изображениями, показывающими полученные кривые. В статье также исследуется создание заполненных объектов кривой, демонстрируя, как задавать цвета заливки для кривых, что имеет решающее значение для генерации динамического графического контента, такого как технические диаграммы, графики или пользовательские иллюстрации в PDF.
+TechArticle: true
+AlternativeHeadline: Рисуйте кривые формы в PDF‑файлах с помощью Python
+Abstract: Эта статья показывает, как добавить кривые формы в PDF‑документы с помощью Aspose.PDF for Python via .NET. В ней рассматривается создание обведённых кривых, заполнение объектов кривой и отрисовка пользовательских путей кривой в контейнере Graph.
 ---
 
-## Добавить объект кривой
+## Добавить объект Curve
 
-Граф [Curve](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/curve/) является соединённым объединением проективных прямых, каждая из которых пересекает три другие в обычных двойных точках.
+Aspose.PDF for Python via .NET позволяет добавлять [Кривая](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/curve/) фигуры на страницы PDF через [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) класс.
 
-В этой статье мы исследуем простые графовые кривые и заполненные кривые, которые вы можете создать в своем PDF‑документе.
+В этой статье показано, как создать как контурные, так и залитые кривые.
 
-Этот пример демонстрирует, как программно нарисовать кривую Бéзье внутри PDF‑документа с помощью Aspose.PDF for Python via .NET. Используя модуль рисования, разработчики могут создавать сложные графические элементы с точным контролем их внешнего вида и позиционирования. Эта возможность важна для приложений, требующих динамической генерации графического контента в PDF, таких как технические схемы, диаграммы или пользовательские иллюстрации.
-
-Следуйте шагам ниже:
+Следуйте приведённым ниже шагам:
 
 1. Создать [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
-1. Создать [Graph object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определёнными размерами.
-1. Установить [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта рисования.
+1. Создать [Объект графа](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определёнными размерами.
+1. Установить [граница](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта Graph.
 1. Добавить [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) объект в коллекцию абзацев страницы.
-1. Сохраните наш PDF-файл.
+1. Сохранить наш PDF‑файл.
 
 ```python
 import aspose.pdf as ap
@@ -48,11 +46,11 @@ def add_curve(outfile: str):
     document.save(outfile)
 ```
 
-Следующее изображение показывает результат, полученный при выполнении нашего фрагмента кода:
+На следующем изображении показан результат, выполненный с помощью нашего фрагмента кода:
 
-![Drawing Curve](drawing_curve.png)
+![Рисование кривой](drawing_curve.png)
 
-## Создать объект заполненной Curve
+## Создать объект заполненной кривой
 
 Этот пример показывает, как добавить объект Curve, заполненный цветом.
 
@@ -75,13 +73,13 @@ def add_curve_filled(outfile: str):
     document.save(outfile)
 ```
 
-Посмотрите результат добавления заполненного Curve:
+Результат добавления заполненной кривой:
 
-![Заполненный Curve](filled_curve.png)
+![Заполненная кривая](filled_curve.png)
 
-## Связанные темы графов
+## Связанные темы графиков
 
-- [Работа с графами PDF в Python](/pdf/ru/python-net/working-with-graphs/)
-- [Добавить дуговые формы в PDF на Python](/pdf/ru/python-net/add-arc/)
-- [Добавить линейные фигуры в PDF с помощью Python](/pdf/ru/python-net/add-line/)
-- [Добавить эллиптические фигуры в PDF на Python](/pdf/ru/python-net/add-ellipse/)
+- [Работа с графиками PDF в Python](/pdf/ru/python-net/working-with-graphs/)
+- [Добавление дуговых фигур в PDF с помощью Python](/pdf/ru/python-net/add-arc/)
+- [Добавить линейные формы в PDF на Python](/pdf/ru/python-net/add-line/)
+- [Добавить эллиптические формы в PDF на Python](/pdf/ru/python-net/add-ellipse/)

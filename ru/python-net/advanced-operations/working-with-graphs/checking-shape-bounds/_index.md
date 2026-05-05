@@ -1,31 +1,31 @@
 ---
-title: Проверка границ фигур в графиках PDF с помощью Python
-linktitle: Проверка границ фигур
+title: Проверка границ фигур в графах PDF с Python
+linktitle: Проверить границы фигур
 type: docs
 weight: 70
 url: /python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Узнайте, как проверять границы фигур в коллекциях графиков PDF с помощью Python.
+description: Узнайте, как проверять границы фигур в коллекциях графов PDF с помощью Python.
 lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Проверка размещения фигур в контейнерах Graph с использованием Python
-Abstract: В этой статье объясняется, как проверять границы фигур в коллекции Graph.Shapes с помощью Aspose.PDF for Python via .NET. Показано, как настроить проверку границ с помощью BoundsCheckMode.THROW_EXCEPTION_IF_DOES_NOT_FIT, добавить Rectangle, выходящий за пределы области графика, и безопасно обработать возникшее исключение.
+AlternativeHeadline: Проверяйте границы фигур графов в файлах PDF с использованием Python
+Abstract: В этой статье показано, как проверять границы фигур в коллекциях Graph с помощью Aspose.PDF for Python via .NET. Описывается настройка BoundsCheckMode, обнаружение фигур за пределами диапазона и безопасная обработка исключений границ.
 ---
 
-## Проверка границ фигур в графе
+## Проверьте границы фигур в Graph
 
-Когда вы добавляете фигуры к [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/), вы можете включить проверку границ, чтобы убедиться, что каждая фигура помещается в область графа.
+Когда вы добавляете фигуры к [Граф](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/), вы можете включить проверку границ, чтобы убедиться, что каждая фигура помещается в область графа.
 
-Используйте [BoundsCheckMode](https://reference.aspose.com/pdf/python-net/aspose.pdf/boundscheckmode/) определить поведение, когда фигура выходит за пределы. В этом примере, `THROW_EXCEPTION_IF_DOES_NOT_FIT` используется для возбуждения исключения.
+Используйте [BoundsCheckMode](https://reference.aspose.com/pdf/python-net/aspose.pdf/boundscheckmode/) для определения поведения, когда фигура выходит за пределы. В этом примере, `THROW_EXCEPTION_IF_DOES_NOT_FIT` используется для вызова исключения.
 
-Следуйте нижеуказанным шагам:
+Выполните следующие шаги:
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
-1. Создайте [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) и добавить его на страницу.
-1. Создайте [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) который выходит за пределы графика.
+1. Создайте [Граф](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) и добавить его на страницу.
+1. Создайте [Прямоугольник](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) который выходит за пределы границ графика.
 1. Установить режим проверки границ в `THROW_EXCEPTION_IF_DOES_NOT_FIT`.
 1. Добавьте прямоугольник и обработайте исключение.
 1. Сохраните документ.
@@ -61,8 +61,8 @@ def check_shape_bounds(outfile: str):
 
 ## Примечания
 
-- Используйте `THROW_EXCEPTION_IF_DOES_NOT_FIT` когда требуется строгая проверка разметки.
-- Для разрешительного поведения выберите другое `BoundsCheckMode` вариант в зависимости от ваших потребностей в макете.
+- Используйте `THROW_EXCEPTION_IF_DOES_NOT_FIT` когда требуется строгая проверка макета.
+- Для разрешительного поведения выберите другое `BoundsCheckMode` вариант в зависимости от ваших требований к макету.
 
 ## Связанные темы графов
 
