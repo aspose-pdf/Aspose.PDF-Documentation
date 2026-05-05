@@ -9,7 +9,7 @@ description: Узнайте, как преобразовать страницы 
 sitemap:
     changefreq: "monthly"
     priority: 0.5
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Как конвертировать PDF в форматы изображений в Python
 Abstract: Эта статья предоставляет исчерпывающее руководство по конвертации PDF‑файлов в различные форматы изображений с использованием Python, в частности с помощью библиотеки Aspose.PDF for Python. Документ описывает методы преобразования PDF в форматы изображений, включая TIFF, BMP, EMF, JPG, PNG, GIF и SVG. Рассмотрены два основных подхода к конвертации — использование подхода Device и SaveOption. Подход Device предполагает использование классов, таких как `DocumentDevice` и `ImageDevice`, для конвертации всего документа или отдельных страниц. Предоставлены подробные шаги и примеры кода на Python для преобразования страниц PDF в различные форматы, такие как TIFF с использованием `TiffDevice`, а также BMP, EMF, JPEG, PNG и GIF с помощью соответствующих классов устройств (`BmpDevice`, `EmfDevice`, `JpegDevice`, `PngDevice`, `GifDevice`). Для конвертации в SVG вводится класс `SvgSaveOptions`. В статье также отмечены онлайн‑инструменты для тестирования этих конвертаций.
 ---
@@ -42,7 +42,7 @@ Aspose.PDF for Python объясняет, как преобразовать вс
 
 1. Создать объект [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
 1. Создать [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) и [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) объекты
-1. Позвоните [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) метод преобразования PDF-документа в TIFF.
+1. Вызовите [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) метод преобразования PDF-документа в TIFF.
 1. Чтобы установить свойства выходного файла, используйте [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) класс.
 
 Следующий фрагмент кода показывает, как преобразовать все страницы PDF в одно изображение TIFF.
@@ -101,7 +101,7 @@ Aspose.PDF for Python объясняет, как преобразовать вс
    * [JpegDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/jpegdevice/) (для преобразования PDF в JPG)
    * [PngDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/pngdevice/) (для конвертации PDF в PNG)
    * [GifDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/gifdevice/) (для конвертации PDF в GIF)
-1. Позвоните [ImageDevice.process()](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/#methods) метод для выполнения преобразования PDF в изображение.
+1. Вызовите [ImageDevice.process()](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/#methods) метод для выполнения преобразования PDF в изображение.
 
 ### Конвертировать PDF в BMP
 
@@ -149,7 +149,7 @@ Aspose.PDF for Python объясняет, как преобразовать вс
         page_count = page_count + 1
 
     print(infile + " converted into " + outfile)
-```  
+```
 
 ### Преобразовать PDF в JPEG
 
@@ -290,7 +290,7 @@ Aspose.PDF for Python поддерживает функцию конвертац
 
 1. Создать объект [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
 1. Создать [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) объект с необходимыми настройками.
-1. Позвоните [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод и передать его [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) объект конвертирует PDF‑документ в SVG.
+1. Вызовите [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод и передать его [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) объект конвертирует PDF‑документ в SVG.
 
 ### Конвертировать PDF в SVG
 

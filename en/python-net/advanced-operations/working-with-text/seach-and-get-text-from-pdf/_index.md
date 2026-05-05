@@ -5,18 +5,18 @@ type: docs
 weight: 60
 url: /python-net/search-and-get-text-from-pdf/
 description: Learn how to search, inspect, and extract text from PDF documents in Python.
-lastmod: "2026-04-17"
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to Search and Get Text from Pages in PDF
-Abstract: The article provides an in-depth exploration of text extraction and manipulation capabilities within PDF documents using the Aspose.PDF for Python via .NET library. It introduces the TextFragmentAbsorber class, which allows developers to search through an entire document or specific pages for designated phrases or regular expression patterns. The page outlines various practical scenarios—such as retrieving text content, determining its position (including coordinates and indent values), and extracting font properties like name, size, embed status, and color—from the matched text fragments. Detailed code examples demonstrate the process step-by-step, making it easier for developers to integrate text searching capabilities into their applications.
+TechArticle: true
+AlternativeHeadline: Search PDF text and inspect extracted fragments in Python
+Abstract: This article explains how to search and extract text from PDF documents using Aspose.PDF for Python via .NET. It covers `TextAbsorber` and `TextFragmentAbsorber`, including region-based extraction, page-specific searches, phrase matching, and inspection of text position and font properties.
 ---
 
 ## Search Text from PDF
 
-Search and extract text from a defined rectangular area in a PDF document using the TextAbsorber class. It employs pure text formatting mode for clean, unformatted text output, making it ideal for extracting content from structured regions like headers, footers, or table areas. By combining TextExtractionOptions and TextSearchOptions with rectangular constraints, this example gives you fine control over where and how text is extracted from the document.
+Search and extract text from a defined rectangular area in a PDF document using the `TextAbsorber` class. It uses pure text formatting mode for clean, unformatted output, which is useful for extracting content from structured regions such as headers, footers, or table areas. By combining `TextExtractionOptions` and `TextSearchOptions` with rectangular constraints, you can control where and how text is extracted.
 
 Use this page when you need to audit PDF text content, extract text for analysis, or inspect positions and formatting of matched text fragments.
 

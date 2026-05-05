@@ -1,8 +1,8 @@
 ---
-title: Remove Tables from existing PDF
+title: Remove Tables from Existing PDF Documents
 linktitle: Remove Tables
 description: Learn how to remove one or more tables from existing PDF documents in Python.
-lastmod: "2026-04-17"
+lastmod: "2026-05-05"
 type: docs
 weight: 50
 url: /python-net/removing-tables/
@@ -10,13 +10,13 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to delete tables from PDF using Python
-Abstract: This article discusses the functionality of Aspose.PDF for Python via .NET, specifically focusing on the manipulation of tables within PDF documents. The library allows users to insert or create tables in both new and existing PDF files, as well as manipulate or remove tables from existing PDFs. The article introduces the `TableAbsorber` class, which is crucial for identifying and interacting with tables in a PDF. A new method, `remove()`, has been added to enable the removal of tables. The document provides two code snippets - one demonstrating how to remove a single table from a PDF, and another illustrating the removal of multiple tables. These examples highlight the practical application of the `TableAbsorber` class to achieve table removal from PDF documents.
+AlternativeHeadline: Delete one or multiple tables from PDF files with Python
+Abstract: This article explains how to remove tables from existing PDF documents using Aspose.PDF for Python via .NET. It introduces `TableAbsorber` for locating tables and demonstrates how to delete a single table or remove all detected tables from a page.
 ---
 
 ## Remove Table from PDF document
 
-Aspose.PDF for Python allows you to remove a table from a PDF. It opens an existing PDF, detects the first table on the first page with TableAbsorber, deletes that table using the [remove_one_table](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods). After save the updated PDF to a new file.
+Aspose.PDF for Python lets you remove a table from a PDF. It opens an existing PDF, detects the first table on the first page with `TableAbsorber`, deletes that table using `remove()`, and saves the updated PDF to a new file.
 
 Use this page when you need to clean up table-heavy PDFs, remove outdated tabular content, or simplify documents before redistribution.
 

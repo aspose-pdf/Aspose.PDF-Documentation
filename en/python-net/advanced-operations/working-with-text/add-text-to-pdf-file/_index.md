@@ -1,17 +1,17 @@
 ---
-title: Adding Text to PDF
+title: Add Text to PDF in Python
 linktitle: Add Text to PDF
 type: docs
 weight: 10
 url: /python-net/add-text-to-pdf-file/
 description: Learn how to add text, HTML fragments, lists, links, and custom fonts to PDF documents in Python.
-lastmod: "2026-04-17"
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adding Text into PDF using Python
-Abstract: This article provides a comprehensive guide on manipulating PDF documents using the Aspose.PDF library in Python. It covers various techniques for adding and formatting text, including setting text properties such as font size, type, color, and positioning.
+AlternativeHeadline: Add text, links, HTML, and fonts to PDF files with Python
+Abstract: This article explains how to add and format text in PDF documents using Aspose.PDF for Python via .NET. It covers core techniques such as positioning text, applying font and style settings, inserting links and lists, and using HTML, LaTeX, and custom fonts in Python workflows.
 ---
 
 This guide explains how to add text content to PDF documents using Aspose.PDF for Python via .NET. You’ll learn core text-insertion techniques—from placing a simple text fragment at a specific position, to styling it (font, size, color, style), handling right-to-left (RTL) languages, embedding hyperlinks, and working with paragraph layouts, lists, and transparency effects. The article also covers advanced scenarios such as using HTML or LaTeX fragments, custom fonts, and text formatting options like line spacing and character spacing.
@@ -57,13 +57,13 @@ def add_text_simple_case(output_file_name):
     document.save(output_file_name)
 ```
 
-This code example uses a TextFragment. But you can also add text to a PDF page using a TextParagraph. Let's explore the difference.
-The **[TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/)** is a single piece of Text. TextFragment represents a single unit of text — essentially, one text string that can be placed, styled, and positioned independently. It’s ideal when you need to add simple, small amounts of text.
+This code example uses a TextFragment. You can also add text to a PDF page using a TextParagraph.
+The **[TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/)** is a single piece of text. It represents one text string that can be placed, styled, and positioned independently. It’s ideal when you need to add small, simple text content.
 
 The **[TextParagraph](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textparagraph/)** is a group of TextFragments. It can add multiple text lines. TextParagraph is a container or collection of one or more TextFragment objects. It’s ideal when you need to group multiple fragments — for example, to create a block of text with several lines, words, or formatted elements.
 A TextParagraph also manages text alignment, line spacing, and automatic layout on the page. The use of the red line is only possible with TextParagraph.
 
-For more information on Working with Text, please check the [Text Formatting inside PDF](/pdf/python-net/text-formatting-inside-pdf/) and [Extract Text from PDF using Python](/pdf/python-net/extract-text-from-pdf/) documentation sections.
+For more information on working with text, see [Text Formatting inside PDF](/pdf/python-net/text-formatting-inside-pdf/) and [Search and Get Text from PDF](/pdf/python-net/search-and-get-text-from-pdf/).
 
 ### Add Text using TextParagraph
 

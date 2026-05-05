@@ -9,7 +9,7 @@ description: Learn how to convert PDF to HTML in Python with Aspose.PDF for Pyth
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to Convert PDF to HTML in Python
 Abstract: This article provides a comprehensive guide on converting PDF files to HTML using Python, specifically through the Aspose.PDF for Python via .NET library. It outlines the necessary steps to achieve this conversion programmatically, highlighting the creation of a `Document` object from the source PDF and utilizing the `HtmlSaveOptions` for saving the document in HTML format. The article includes a concise Python code snippet demonstrating the conversion process. Additionally, it introduces an online tool, Aspose.PDF's "PDF to HTML" application, for users to explore the functionality and quality of the conversion. The article is structured to cater to various related topics, ensuring a thorough understanding of using Python for PDF to HTML conversion.
 ---
@@ -76,7 +76,7 @@ print(infile + " converted into " + outfile)
 This function converts a PDF file into multi-page HTML, where each PDF page is exported as a separate HTML file. This makes the output easier to navigate and reduces loading time for large PDFs.
 
 1. Load the source PDF using 'ap.Document'.
-1. Create 'HtmlSaveOptions' and 'set split_into_pages'.
+1. Create 'HtmlSaveOptions' and set `split_into_pages'.
 1. Save the document as HTML with pages split into separate files.
 1. Print a confirmation message.
 
@@ -99,7 +99,7 @@ print(infile + " converted into " + outfile)
 This function converts a PDF into HTML format while storing all images as SVG files in a specified folder, instead of embedding them directly in the HTML.
 
 1. Load the source PDF using 'ap.Document'.
-1. Create 'HtmlSaveOptions' and 'set special_folder_for_svg_images' to the target folder.
+1. Create 'HtmlSaveOptions' and set `special_folder_for_svg_images' to the target folder.
 1. Save the document as HTML with external SVG images.
 1. Print a confirmation message.
 

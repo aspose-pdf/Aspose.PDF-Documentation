@@ -5,11 +5,11 @@ type: docs
 weight: 70
 url: /python-net/text-formatting-inside-pdf/
 description: Learn how to format text inside PDF documents in Python using spacing, borders, indentation, and styling options.
-lastmod: "2026-04-17"
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Format and style text inside PDF files with Python
 Abstract: This article explains how to format text in PDF documents using Aspose.PDF for Python via .NET. Learn how to control spacing, indentation, borders, underlines, strikeout effects, and other text styling options in Python.
 ---
@@ -20,7 +20,7 @@ Abstract: This article explains how to format text in PDF documents using Aspose
 
 #### How to Format Text with Custom Line Spacing in Python - Simple case
 
-Aspose.PDF for Python illustrates a straightforward approach to controlling text layout and readability through line spacing adjustments.
+Aspose.PDF for Python provides a straightforward approach to controlling text layout and readability through line spacing adjustments.
 
 Our code snippet shows how to control line spacing in a PDF document. It reads text from a file (or uses a fallback message), applies custom font size and line spacing, and adds the formatted text to a new page in a PDF.
 

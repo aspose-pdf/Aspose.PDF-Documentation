@@ -5,22 +5,22 @@ type: docs
 weight: 70
 url: /python-net/protect-pdf-file/
 description: Learn how to encrypt files, decrypt protected PDFs, and change passwords in Python.
-lastmod: "2026-04-15"
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set PDF permissions and manage encryption in Python
-Abstract: This documentation page explains how to set document privileges, apply encryption, and decrypt PDF files using Aspose.PDF for Python. It guides developers through configuring user and owner passwords, defining access restrictions (such as printing, copying, or editing). Code examples illustrate how to protect sensitive content and manage PDF security effectively within Python applications, ensuring controlled access and data confidentiality.     
+Abstract: This page explains how to set document privileges, apply encryption, decrypt PDF files, and change passwords using Aspose.PDF for Python via .NET. It covers configuring user and owner passwords, defining access restrictions (such as printing, copying, and editing), and managing PDF security in Python applications.
 ---
 
 ## Encrypt PDF with password and permissions
 
-Aspose.PDF for Python shows how to secure a PDF document using password-based encryption:
+Use Aspose.PDF for Python via .NET to secure a PDF document with password-based encryption and restricted permissions.
 
 1. Load the PDF document.
-1. Create a permissions object.
-1. Allow specific permissions.
+1. Create a `DocumentPrivilege` permissions object.
+1. Enable the required permissions.
 1. Set user and owner passwords.
 1. Choose the encryption algorithm.
 1. Apply encryption to the document.
@@ -28,8 +28,6 @@ Aspose.PDF for Python shows how to secure a PDF document using password-based en
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def encrypt_password(infile, outfile):
     """
@@ -65,19 +63,17 @@ def encrypt_password(infile, outfile):
 
 ## Encrypt PDF with full permissions
 
-Encrypt a PDF document while allowing full access permissions using Aspose.PDF for Python. The example uses RC4 128-bit encryption, which ensures basic security while maintaining compatibility with older PDF viewers.
+Encrypt a PDF document while allowing full access permissions using Aspose.PDF for Python via .NET. This example uses RC4 128-bit encryption for compatibility with older PDF viewers.
 
 1. Load the PDF document.
 1. Define user and owner passwords.
 1. Set full access permissions.
 1. Choose the encryption algorithm.
-1. Call the encrypt() method with passwords, permissions, and algorithm.
+1. Call `encrypt()` with passwords, permissions, and algorithm.
 1. Save the encrypted PDF.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def encrypt_pdf_file(infile, outfile):
     """
@@ -111,14 +107,12 @@ def encrypt_pdf_file(infile, outfile):
 
 To remove password protection and restore full access:
 
-1. Load the encrypted PDF using the correct password ('password' is the user or owner password).
+1. Load the encrypted PDF using the correct password (user or owner).
 1. Remove all password protection and encryption settings from the document.
 1. Save the now unprotected PDF to the specified output file.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def decrypt_pdf_file(infile, outfile):
     """
@@ -144,16 +138,14 @@ def decrypt_pdf_file(infile, outfile):
 
 ## Change Password of a PDF File
 
-To update the security credentials (user and owner passwords) of a PDF document while preserving its content and structure.
+Update the security credentials (user and owner passwords) of a PDF document while preserving its content and structure.
 
-1. Open the PDF using the existing owner password ('owner'), which gives full access including permission to change security settings.
-1. Replace the old passwords with a new user password ('newuser') and a new owner password ('newowner').
+1. Open the PDF using the existing owner password, which provides full access to security settings.
+1. Replace the old passwords with a new user password and a new owner password.
 1. Save the PDF with the updated password settings.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def change_password(infile, outfile):
     """
@@ -180,19 +172,17 @@ def change_password(infile, outfile):
 
 ## Determine correct password from Array
 
-In some scenarios, you may need to identify the correct password from a list of potential candidates in order to access a secured PDF. The code snippet below demonstrates how to check whether a PDF file is password protected and then attempt to unlock it by iterating through a predefined list of passwords using Aspose.PDF for Python via .NET.
+In some scenarios, you may need to identify the correct password from a list of possible candidates to access a secured PDF. The snippet below checks whether a PDF file is encrypted and then attempts to open it by iterating through a predefined list of passwords.
 
 The process includes:
 
-1. Using PdfFileInfo to detect whether the PDF is encrypted.
-1. Open the PDF with each password using ap.Document().
+1. Use `PdfFileInfo` to detect whether the PDF is encrypted.
+1. Open the PDF with each password using `ap.Document()`.
 1. If successful, it prints the number of pages.
 1. If not, it catches the exception and reports the failed password.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def determine_correct_password_from_list(infile):
     """

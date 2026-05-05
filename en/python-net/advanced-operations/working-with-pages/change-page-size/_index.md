@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Changing Page Size using Python
-Abstract: This article demonstrates how to read and modify PDF page dimensions using Aspose.PDF. The Get Page Size example retrieves the width and height of a specific PDF page, enabling users to inspect page layout, validate formatting, or analyze document structure. The Set Page Size example shows how to change a page’s dimensions—such as converting the first page to A4 size—while also displaying box properties (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) before and after modification.    
+Abstract: This article demonstrates how to read and modify PDF page dimensions using Aspose.PDF. The Get Page Size example retrieves the width and height of a specific PDF page, enabling users to inspect page layout, validate formatting, or analyze document structure. The Set Page Size example shows how to change a page’s dimensions—such as converting the first page to A4 size—while also displaying box properties (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) before and after modification.
 ---
 
 Aspose.PDF for Python via .NET lets you change PDF page size with simple lines of code. This topic shows how to update page dimensions using the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) and [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) APIs.
@@ -37,9 +37,7 @@ The following code snippet shows how to change the PDF page dimensions to A4 siz
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the specified output path.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
 def set_page_size(input_file_name, output_file_name):
     document = ap.Document(input_file_name)
@@ -78,9 +76,7 @@ This snippet reads a PDF and retrieves the dimensions (width and height) of the 
 1. Print the page dimensions.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
 def get_page_size(input_file_name, output_file_name):
     document = ap.Document(input_file_name)
@@ -103,9 +99,7 @@ Retrieve the dimensions of a PDF page before and after applying a 90° rotation.
 1. Compare how the dimensions change due to rotation.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
 def get_page_size_rotation(input_file_name, output_file_name):
     document = ap.Document(input_file_name)
