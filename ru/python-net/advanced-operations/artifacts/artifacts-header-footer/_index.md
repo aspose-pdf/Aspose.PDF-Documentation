@@ -1,6 +1,6 @@
 ---
-title: Управляйте заголовками и нижними колонтитулами PDF с помощью Python
-linktitle: Управляйте заголовками и нижними колонтитулами PDF
+title: Управление колонтитулами в PDF с помощью Python
+linktitle: Управление колонтитулами в PDF
 type: docs
 weight: 70
 url: /python-net/artifacts-header-footer/
