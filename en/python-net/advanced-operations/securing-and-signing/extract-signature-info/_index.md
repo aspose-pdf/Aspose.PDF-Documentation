@@ -14,20 +14,11 @@ AlternativeHeadline: Extract signature images and certificate details from PDFs 
 Abstract: This article explains how to extract image and digital signature information from PDF documents using Aspose.PDF for Python. Learn how to retrieve signature images, extract certificate data, inspect signature algorithms, and detect compromised signatures in signed PDF files.
 ---
 
-## Extracting Image from Signature Field
+## Extract Image from a Signature Field
 
-Aspose.PDF for Python via .NET supports the feature to digitally sign the PDF files using the [signature_field](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/) class.
+Aspose.PDF for Python via .NET lets you retrieve the visual image embedded in a [SignatureField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/). This is useful when you need to display or archive the signature appearance without rendering the full PDF.
 
-Use these examples when you need to inspect signed PDF documents, export signature visuals, or audit signature integrity in validation workflows.
-
-This code snippet demonstrates how to extract digital signature images from a PDF document using Aspose.PDF for Python.
-
-Steps:
-
-1. Opening the PDF document.
-1. Iterating through the form fields to locate any SignatureField objects.
-1. Extracting the image associated with each signature (if available).
-1. Saving the extracted signature image as a JPEG file.
+The example below iterates over all form fields, finds each `SignatureField`, and saves its image as a JPEG file:
 
 ```python
 import sys
@@ -50,11 +41,9 @@ def extract_images_from_signature_field(infile: str, outfile: str) -> None:
             image.save(outfile, drawing.imaging.ImageFormat.jpeg)
 ```
 
-## Extract Signature Information
+## Read Signature Algorithm Details
 
-Aspose.PDF for Python via .NET supports the feature to digitally sign the PDF files using the SignatureField class. Currently, we can also determine the validity of the certificate but we cannot extract the whole certificate. The information which can be extracted is a public key, thumbprint, issuer, etc.
-
-To extract signature information, we have introduced the [ExtractCertificate](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/#methods) method to the [SignatureField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/) class. Please take a look at the following code snippet which demonstrates the steps to extract the certificate from SignatureField object:
+Use `PdfFileSignature.get_signatures_info()` to read cryptographic metadata for each signature in a document — including the digest algorithm, algorithm type, cryptographic standard, and signature name:
 
 ```python
 import sys
@@ -73,9 +62,9 @@ def get_signatures_info(infile: str) -> None:
                 print(signature_info.signature_name)
 ```
 
-## Extract a Digital Certificate from a Signed PDF
+## Extract a Digital Certificate from a Signature Field
 
-Extract a digital certificate embedded in a signed PDF document using Python and Aspose.PDF. It scans signature fields, retrieves the certificate stream, and saves it as a standalone file for validation or external use.
+Use the [extract_certificate](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/#methods) method on a `SignatureField` to retrieve the embedded certificate as a byte stream and save it to disk for external validation:
 
 ```python
 import sys
@@ -102,9 +91,9 @@ def extract_certificate(infile: str, outfile: str) -> None:
                 return
 ```
 
-## Extract Signature Certificates from a PDF
+## Extract Certificates Using the PdfFileSignature Facade
 
-Extract digital certificates from PDF signature fields using the PdfFileSignature facade in Python with Aspose.PDF. It iterates through all digital signatures in a document and attempts to retrieve embedded certificates, confirming successful extraction.
+`PdfFileSignature.try_extract_certificate()` provides an alternative way to retrieve certificates by signature name. The following example iterates over all signature names and attempts extraction for each:
 
 ```python
 import sys
@@ -122,9 +111,9 @@ def extract_certificate_try_extract_certificate_method(infile: str) -> None:
                     print("The certificate extraction succeeded")
 ```
 
-## Extract external digital signatures
+## Verify External Digital Signatures
 
-External digital signatures in a PDF document. It checks all signature fields in the document and validates their authenticity to ensure the file has not been modified after signing.
+To confirm that a document has not been modified after signing, verify each external signature using `PdfFileSignature.verify_signature()`. The example below raises an exception for any signature that fails verification:
 
 ```python
 import sys
@@ -141,21 +130,11 @@ def verify_external_signature(infile: str) -> None:
                     raise Exception("Not verified")
 ```
 
-## Checking signatures for compromise
+## Detect Compromised Signatures
 
-This code snippet demonstrates how to detect compromised digital signatures in a PDF document using Aspose.PDF for Python.
+`SignaturesCompromiseDetector` checks whether any digital signatures in a document have been invalidated by subsequent changes. Use this in legal, financial, or compliance workflows where document integrity must be guaranteed.
 
-The steps include:
-
-1. Opening the PDF document.
-1. Creating a 'SignaturesCompromiseDetector' instance to analyze the document.
-1. Checking for any compromised (invalid or altered) digital signatures.
-1. Printing the names of any compromised signatures found.
-1. Reporting the signature coverage—indicating how much of the document is protected by valid signatures.
-
-This feature is critical in use cases where document authenticity and integrity must be verified, such as legal, financial, and compliance-driven environments. It allows developers to automatically detect tampering or corruption of signed PDFs.
-
-Aspose.PDF offers a comprehensive set of tools for digital signature validation, making it easier to build secure, signature-aware applications that uphold document trustworthiness.
+The example below checks for compromised signatures and reports their names along with the overall signature coverage of the document:
 
 ```python
 import sys
