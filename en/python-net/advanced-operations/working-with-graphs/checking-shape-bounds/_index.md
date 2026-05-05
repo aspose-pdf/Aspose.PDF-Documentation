@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Validate shape placement in Graph containers using Python
-Abstract: This article explains how to validate shape bounds in the Graph.Shapes collection with Aspose.PDF for Python via .NET. It shows how to configure bounds checking with BoundsCheckMode.THROW_EXCEPTION_IF_DOES_NOT_FIT, add a Rectangle that exceeds the graph area, and handle the resulting exception safely.
+AlternativeHeadline: Validate graph shape bounds in PDF files using Python
+Abstract: This article shows how to validate shape bounds in Graph collections with Aspose.PDF for Python via .NET. It covers configuring BoundsCheckMode, detecting out-of-range shapes, and handling bounds exceptions safely.
 ---
 
 ## Check shape bounds in a Graph
