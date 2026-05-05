@@ -3,7 +3,7 @@ title: Извлечение маркированного контента из P
 linktitle: Извлечь маркированный контент
 type: docs
 weight: 20
-url: /python-net/extract-tagged-content-from-tagged-pdfs/
+url: /ru/python-net/extract-tagged-content-from-tagged-pdfs/
 description: Узнайте, как извлечь маркированный контент PDF в Python с помощью Aspose.PDF for Python via .NET, включая доступ к маркированному контенту, корневой структуре и элементам дочерней структуры.
 lastmod: "2026-04-14"
 sitemap:

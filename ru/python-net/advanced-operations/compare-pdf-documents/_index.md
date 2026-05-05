@@ -3,7 +3,7 @@ title: Сравнение PDF-документов в Python
 linktitle: Сравнить PDF
 type: docs
 weight: 130
-url: /python-net/compare-pdf-documents/
+url: /ru/python-net/compare-pdf-documents/
 description: Узнайте, как сравнивать PDF-документы в Python, используя вывод различий бок о бок и графический вывод с Aspose.PDF for Python via .NET.
 lastmod: "2026-04-15"
 sitemap:

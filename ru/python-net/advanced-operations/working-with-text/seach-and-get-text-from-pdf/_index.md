@@ -3,7 +3,7 @@ title: Поиск и извлечение текста PDF в Python
 linktitle: Поиск и получение текста
 type: docs
 weight: 60
-url: /python-net/search-and-get-text-from-pdf/
+url: /ru/python-net/search-and-get-text-from-pdf/
 description: Узнайте, как выполнять поиск, проверку и извлечение текста из PDF‑документов на Python.
 lastmod: "2026-04-17"
 sitemap:

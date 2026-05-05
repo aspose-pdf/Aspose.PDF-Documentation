@@ -3,7 +3,7 @@ title: Манипулировать PDF-документами в Python
 linktitle: Манипулировать PDF-документом
 type: docs
 weight: 20
-url: /python-net/manipulate-pdf-document/
+url: /ru/python-net/manipulate-pdf-document/
 description: Узнайте, как проверять, структурировать и изменять PDF‑документы в Python, включая управление TOC и проверки PDF/A.
 lastmod: "2026-04-15"
 sitemap:

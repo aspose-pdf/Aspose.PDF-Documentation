@@ -3,7 +3,7 @@ title: Извлечение страниц PDF в Python
 linktitle: Извлечение страниц PDF
 type: docs
 weight: 80
-url: /python-net/extract-pages/
+url: /ru/python-net/extract-pages/
 description: Узнайте, как извлекать отдельные или несколько страниц PDF в новые файлы с помощью Python.
 lastmod: "2026-04-27"
 sitemap:

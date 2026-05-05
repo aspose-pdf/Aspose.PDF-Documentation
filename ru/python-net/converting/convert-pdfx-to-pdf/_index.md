@@ -3,7 +3,7 @@ title: Конвертировать PDF/A и PDF/UA в PDF на Python
 linktitle: Конвертировать PDF/A и PDF/UA в PDF
 type: docs
 weight: 120
-url: /python-net/convert-pdf_x-to-pdf/
+url: /ru/python-net/convert-pdf_x-to-pdf/
 lastmod: "2026-04-14"
 description: Узнайте, как удалить соответствие PDF/A и PDF/UA из PDF‑файлов в Python с помощью Aspose.PDF for Python via .NET и сохранить их как стандартные PDF‑документы.
 sitemap:

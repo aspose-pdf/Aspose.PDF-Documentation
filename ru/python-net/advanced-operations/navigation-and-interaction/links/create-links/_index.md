@@ -3,7 +3,7 @@ title: Создать ссылки PDF в Python
 linktitle: Создать ссылки
 type: docs
 weight: 10
-url: /python-net/create-links/
+url: /ru/python-net/create-links/
 description: Узнайте, как создавать внутренние, внешние и удалённые ссылки PDF в Python.
 lastmod: "2026-04-15"
 sitemap:

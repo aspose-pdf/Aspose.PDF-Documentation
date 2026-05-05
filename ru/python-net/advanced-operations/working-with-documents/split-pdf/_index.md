@@ -3,7 +3,7 @@ title: Разделить PDF-файлы на Python
 linktitle: Разделить PDF-файлы
 type: docs
 weight: 60
-url: /python-net/split-pdf-document/
+url: /ru/python-net/split-pdf-document/
 description: Узнайте, как разделить страницы PDF на отдельные PDF‑файлы с помощью Python.
 lastmod: "2026-04-15"
 sitemap:

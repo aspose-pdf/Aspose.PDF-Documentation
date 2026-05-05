@@ -3,7 +3,7 @@ title: Добавить фигуры Arc в PDF на Python
 linktitle: Добавить Arc
 type: docs
 weight: 10
-url: /python-net/add-arc/
+url: /ru/python-net/add-arc/
 description: Узнайте, как рисовать и заполнять формы дуг в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:

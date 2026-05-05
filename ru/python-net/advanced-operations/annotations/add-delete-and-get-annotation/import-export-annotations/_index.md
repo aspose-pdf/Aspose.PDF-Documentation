@@ -3,7 +3,7 @@ title: Импорт и экспорт аннотаций с использова
 linktitle: Импорт и экспорт аннотаций
 type: docs
 weight: 80
-url: /python-net/import-export-annotations/
+url: /ru/python-net/import-export-annotations/
 description: Узнайте, как импортировать аннотации из одного PDF и экспортировать их в новый PDF-документ, используя Aspose.PDF for Python via .NET.
 lastmod: "2026-04-21"
 sitemap:

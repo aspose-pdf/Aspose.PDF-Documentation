@@ -3,7 +3,7 @@ title: Оптимизировать PDF-файлы в Python
 linktitle: Оптимизировать PDF
 type: docs
 weight: 30
-url: /python-net/optimize-pdf/
+url: /ru/python-net/optimize-pdf/
 description: Узнайте, как оптимизировать, сжимать и уменьшать размер PDF‑файла в Python с помощью Aspose.PDF.
 lastmod: "2026-04-15"
 sitemap:

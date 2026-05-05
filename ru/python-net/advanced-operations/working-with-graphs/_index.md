@@ -3,7 +3,7 @@ title: Работа с Graphs в PDF в Python
 linktitle: Работа с Graphs
 type: docs
 weight: 70
-url: /python-net/working-with-graphs/
+url: /ru/python-net/working-with-graphs/
 description: Узнайте, как рисовать графы и формы в PDF‑файлах на Python, включая дуги, круги, кривые, линии, прямоугольники и эллипсы.
 lastmod: "2026-04-16"
 sitemap:

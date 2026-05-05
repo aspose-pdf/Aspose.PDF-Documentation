@@ -3,7 +3,7 @@ title: Создать AcroForm — создать заполняемый PDF в 
 linktitle: Создать AcroForm
 type: docs
 weight: 10
-url: /python-net/create-form/
+url: /ru/python-net/create-form/
 description: Создайте поля AcroForm с нуля в PDF‑документах, используя Aspose.PDF for Python via .NET.
 lastmod: "2026-04-28"
 sitemap:

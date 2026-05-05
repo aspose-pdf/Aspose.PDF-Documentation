@@ -3,7 +3,7 @@ title: Работайте с таблицами в Tagged PDFs на Python
 linktitle: Работа с таблицами в Tagged PDF
 type: docs
 weight: 40
-url: /python-net/working-with-table-in-tagged-pdfs/
+url: /ru/python-net/working-with-table-in-tagged-pdfs/
 description: Узнайте, как работать с доступными таблицами в tagged PDFs на Python с Aspose.PDF for Python via .NET, включая структуру, spans, выравнивание и разметку таблиц, совместимую с PDF/UA.
 lastmod: "2026-04-14"
 sitemap:

@@ -3,7 +3,7 @@ title: Базовые операции с PDF-документами
 linktitle: Базовые операции
 type: docs
 weight: 60
-url: /python-net/basic-operations/
+url: /ru/python-net/basic-operations/
 lastmod: "2025-02-27"
 description: Раздел базовых операций описывает возможности открытия и сохранения PDF-документов с помощью Aspose.PDF для Python через .NET.
 sitemap:

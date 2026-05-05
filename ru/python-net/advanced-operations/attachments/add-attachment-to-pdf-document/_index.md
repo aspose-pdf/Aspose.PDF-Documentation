@@ -3,7 +3,7 @@ title: Добавить вложения в PDF с помощью Python
 linktitle: Добавление вложения в PDF‑документ
 type: docs
 weight: 10
-url: /python-net/add-attachment-to-pdf-document/
+url: /ru/python-net/add-attachment-to-pdf-document/
 description: Узнайте, как добавлять файловые вложения в PDF‑документы на Python с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-04-15"
 sitemap:

@@ -3,7 +3,7 @@ title: Добавить текстовые штампы в PDF на Python
 linktitle: Текстовые штампы в PDF-файле
 type: docs
 weight: 20
-url: /python-net/text-stamps-in-the-pdf-file/
+url: /ru/python-net/text-stamps-in-the-pdf-file/
 description: Узнайте, как добавлять текстовые штампы в PDF‑документы на Python.
 lastmod: "2026-04-15"
 sitemap:

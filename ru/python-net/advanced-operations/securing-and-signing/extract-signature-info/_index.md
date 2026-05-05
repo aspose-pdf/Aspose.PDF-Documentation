@@ -3,7 +3,7 @@ title: Извлечь информацию о подписи из PDF на Pytho
 linktitle: Извлечь детали из подписи
 type: docs
 weight: 20
-url: /python-net/extract-image-and-signature-information/
+url: /ru/python-net/extract-image-and-signature-information/
 description: Узнайте, как извлекать изображения подписей, сертификаты и детали цифровой подписи из PDF‑файлов в Python.
 lastmod: "2026-04-15"
 sitemap:

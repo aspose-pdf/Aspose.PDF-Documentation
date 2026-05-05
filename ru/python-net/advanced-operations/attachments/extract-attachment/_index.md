@@ -3,7 +3,7 @@ title: Извлечь вложения из PDF
 linktitle: Извлечь вложения
 type: docs
 weight: 50
-url: /python-net/extract-attachment/
+url: /ru/python-net/extract-attachment/
 description: Узнайте, как работать с вложениями PDF, используя Python и Aspose.PDF.
 lastmod: "2026-04-26"
 sitemap:

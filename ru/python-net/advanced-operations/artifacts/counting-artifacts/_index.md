@@ -3,7 +3,7 @@ title: Подсчёт артефактов PDF на Python
 linktitle: Подсчёт артефактов
 type: docs
 weight: 40
-url: /python-net/counting-artifacts/
+url: /ru/python-net/counting-artifacts/
 description: Узнайте, как просматривать и подсчитывать артефакты разметки страниц в PDF‑документах с помощью Python и Aspose.PDF for Python via .NET.
 lastmod: "2026-04-15"
 sitemap:

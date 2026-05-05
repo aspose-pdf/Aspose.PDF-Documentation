@@ -3,7 +3,7 @@ title: Работа с PDF-операторами в Python
 linktitle: Работа с операторами
 type: docs
 weight: 90
-url: /python-net/working-with-operators/
+url: /ru/python-net/working-with-operators/
 description: Узнайте, как использовать низкоуровневые PDF-операторы в Python для точного управления потоком содержимого и графикой.
 lastmod: "2026-04-17"
 sitemap:

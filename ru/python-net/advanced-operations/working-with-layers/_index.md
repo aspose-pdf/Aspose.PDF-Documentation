@@ -3,7 +3,7 @@ title: Работа с PDF-слоями с помощью Python
 linktitle: Работа с PDF-слоями
 type: docs
 weight: 50
-url: /python-net/working-with-pdf-layers/
+url: /ru/python-net/working-with-pdf-layers/
 description: Узнайте, как добавлять, блокировать, извлекать, уплощать и объединять слои PDF в Python.
 lastmod: "2026-04-27"
 sitemap:

@@ -3,7 +3,7 @@ title: Работа с метаданными PDF‑файла в Python
 linktitle: Метаданные PDF‑файла
 type: docs
 weight: 200
-url: /python-net/pdf-file-metadata/
+url: /ru/python-net/pdf-file-metadata/
 description: Узнайте, как извлекать, обновлять и управлять метаданными PDF‑файла и свойствами XMP в Python с использованием Aspose.PDF.
 lastmod: "2026-04-15"
 sitemap:

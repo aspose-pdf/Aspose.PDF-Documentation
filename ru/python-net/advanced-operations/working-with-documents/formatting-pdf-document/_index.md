@@ -3,7 +3,7 @@ title: Форматировать PDF-документы в Python
 linktitle: Форматирование PDF-документа
 type: docs
 weight: 11
-url: /python-net/formatting-pdf-document/
+url: /ru/python-net/formatting-pdf-document/
 description: Узнайте, как форматировать PDF‑документы, встраивать шрифты, управлять настройками просмотрщика и настраивать параметры отображения в Python.
 lastmod: "2026-04-15"
 sitemap:

@@ -3,7 +3,7 @@ title: Удалить изображения из PDF‑файла с помощ
 linktitle: Удалить изображения
 type: docs
 weight: 20
-url: /python-net/delete-images-from-pdf-file/
+url: /ru/python-net/delete-images-from-pdf-file/
 description: Узнайте, как удалить конкретные или все изображения из PDF‑файлов с помощью Python.
 lastmod: "2026-04-27"
 TechArticle: true 

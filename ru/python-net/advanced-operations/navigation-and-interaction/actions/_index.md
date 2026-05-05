@@ -3,7 +3,7 @@ title: Работа с действиями PDF в Python
 linktitle: Действия
 type: docs
 weight: 20
-url: /python-net/actions/
+url: /ru/python-net/actions/
 description: Узнайте, как добавлять, обновлять и удалять действия документов, страниц и форм в PDF‑файлах с использованием Python.
 lastmod: "2026-04-15"
 sitemap:

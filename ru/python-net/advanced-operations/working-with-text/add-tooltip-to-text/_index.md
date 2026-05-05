@@ -3,7 +3,7 @@ title: Добавить подсказки к тексту PDF в Python
 linktitle: Подсказка PDF
 type: docs
 weight: 20
-url: /python-net/pdf-tooltip/
+url: /ru/python-net/pdf-tooltip/
 description: Узнайте, как добавить подсказки к фрагментам текста в PDF‑документах с помощью Python.
 lastmod: "2026-04-17"
 sitemap:

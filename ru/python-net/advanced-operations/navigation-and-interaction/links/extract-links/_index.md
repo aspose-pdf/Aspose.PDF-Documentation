@@ -3,7 +3,7 @@ title: Извлечение ссылок PDF в Python
 linktitle: Извлечь ссылки
 type: docs
 weight: 30
-url: /python-net/extract-links/
+url: /ru/python-net/extract-links/
 description: Узнайте, как извлекать аннотации ссылок и гиперссылки из PDF‑документов с помощью Python.
 lastmod: "2026-04-15"
 sitemap:

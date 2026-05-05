@@ -3,7 +3,7 @@ title: Шифрование и расшифровка PDF-файлов на Pyth
 linktitle: Шифрование и расшифровка PDF-файла
 type: docs
 weight: 70
-url: /python-net/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ru/python-net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Узнайте, как установить привилегии PDF, зашифровать файлы, расшифровать защищённые PDF и изменить пароли в Python.
 lastmod: "2026-04-15"
 sitemap:

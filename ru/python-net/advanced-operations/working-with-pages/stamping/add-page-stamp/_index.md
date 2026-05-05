@@ -3,7 +3,7 @@ title: Добавить штампы страниц в PDF с помощью Pyt
 linktitle: Добавление штампов страниц
 type: docs
 weight: 30
-url: /python-net/page-stamps-in-the-pdf-file/
+url: /ru/python-net/page-stamps-in-the-pdf-file/
 description: Узнайте, как добавить штампы страниц PDF в виде наложений или фонов с помощью Python.
 lastmod: "2026-04-15"
 sitemap:

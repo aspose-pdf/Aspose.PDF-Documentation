@@ -3,7 +3,7 @@ title: Добавить водяные знаки в PDF в Python
 linktitle: Добавление водяного знака
 type: docs
 weight: 30
-url: /python-net/add-watermarks/
+url: /ru/python-net/add-watermarks/
 description: Узнайте, как добавить артефакты водяного знака в PDF‑файлы на Python, используя Aspose.PDF for Python via .NET.
 lastmod: "2026-04-15"
 sitemap:

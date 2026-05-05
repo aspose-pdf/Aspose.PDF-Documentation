@@ -3,7 +3,7 @@ title: Переместить страницы PDF в Python
 linktitle: Перемещение страниц PDF
 type: docs
 weight: 100
-url: /python-net/move-pages/
+url: /ru/python-net/move-pages/
 description: Узнайте, как перемещать страницы PDF внутри документа или между документами в Python.
 lastmod: "2026-04-27"
 sitemap:

@@ -3,7 +3,7 @@ title: Работа с формами с использованием Python
 linktitle: Работа с формами
 type: docs
 weight: 60
-url: /python-net/working-with-forms/
+url: /ru/python-net/working-with-forms/
 description: В этом разделе описывается, как работать с AcroForms в PDF‑документах с помощью Aspose.PDF for Python via .NET.
 lastmod: "2025-02-27"
 sitemap:

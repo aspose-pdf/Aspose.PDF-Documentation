@@ -3,7 +3,7 @@ title: Импорт и экспорт данных формы
 linktitle: Импорт и экспорт данных формы
 type: docs
 weight: 80
-url: /python-net/import-export-form-data/
+url: /ru/python-net/import-export-form-data/
 description: Импортировать и экспортировать данные полей AcroForm в форматах XML, FDF, XFDF и JSON с использованием Aspose.PDF for Python via .NET.
 lastmod: "2026-04-28"
 TechArticle: true

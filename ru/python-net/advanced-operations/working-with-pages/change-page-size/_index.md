@@ -3,7 +3,7 @@ title: Изменить размер страницы PDF в Python
 linktitle: Изменение размера страницы
 type: docs
 weight: 40
-url: /python-net/change-page-size/
+url: /ru/python-net/change-page-size/
 description: Узнайте, как читать и изменять размеры страниц PDF в Python.
 lastmod: "2026-04-15"
 sitemap:

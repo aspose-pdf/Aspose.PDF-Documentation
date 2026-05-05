@@ -3,7 +3,7 @@ title: Используйте FloatingBox для размещения текст
 linktitle: Использование FloatingBox
 type: docs
 weight: 30
-url: /python-net/floating-box/
+url: /ru/python-net/floating-box/
 description: Узнайте, как использовать FloatingBox для верстки текста и стилизованных контейнеров содержимого в PDF‑документах на Python.
 lastmod: "2026-04-17"
 sitemap:

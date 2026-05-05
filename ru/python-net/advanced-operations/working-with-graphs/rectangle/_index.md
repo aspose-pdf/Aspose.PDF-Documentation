@@ -3,7 +3,7 @@ title: Добавить Rectangle в PDF на Python
 linktitle: Добавить Rectangle
 type: docs
 weight: 50
-url: /python-net/add-rectangle/
+url: /ru/python-net/add-rectangle/
 description: Узнайте, как рисовать и заполнять прямоугольные фигуры в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:

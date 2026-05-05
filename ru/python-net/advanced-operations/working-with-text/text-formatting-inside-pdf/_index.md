@@ -3,7 +3,7 @@ title: Форматирование текста в PDF с помощью Python
 linktitle: Форматирование текста внутри PDF
 type: docs
 weight: 70
-url: /python-net/text-formatting-inside-pdf/
+url: /ru/python-net/text-formatting-inside-pdf/
 description: Узнайте, как форматировать текст внутри PDF-документов на Python с помощью настройки межстрочного и межсимвольного интервала, отступов, границ и стилей.
 lastmod: "2026-04-17"
 sitemap:

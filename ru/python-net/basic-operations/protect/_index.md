@@ -3,7 +3,7 @@ title: Защитить PDF‑файлы в Python
 linktitle: Шифровать и расшифровать PDF‑файл
 type: docs
 weight: 70
-url: /python-net/protect-pdf-file/
+url: /ru/python-net/protect-pdf-file/
 description: Узнайте, как шифровать файлы, расшифровывать защищённые PDF‑файлы и менять пароли в Python.
 lastmod: "2026-04-15"
 sitemap:

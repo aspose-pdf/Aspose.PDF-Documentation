@@ -3,7 +3,7 @@ title: Обновить ссылки PDF в Python
 linktitle: Обновить ссылки
 type: docs
 weight: 20
-url: /python-net/update-links/
+url: /ru/python-net/update-links/
 description: Узнайте, как обновить внешний вид и назначения ссылок PDF в Python.
 lastmod: "2026-04-15"
 sitemap:

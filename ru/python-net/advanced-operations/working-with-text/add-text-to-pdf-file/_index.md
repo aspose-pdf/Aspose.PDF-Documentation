@@ -3,7 +3,7 @@ title: Добавление текста в PDF
 linktitle: Добавить текст в PDF
 type: docs
 weight: 10
-url: /python-net/add-text-to-pdf-file/
+url: /ru/python-net/add-text-to-pdf-file/
 description: Изучите, как добавить текст, HTML‑фрагменты, списки, ссылки и пользовательские шрифты в PDF‑документы на Python.
 lastmod: "2026-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Работа с PDF‑ссылками в Python
 linktitle: Ссылки
 type: docs
 weight: 10
-url: /python-net/links/
+url: /ru/python-net/links/
 description: Узнайте, как создавать, извлекать и обновлять внутренние и внешние ссылки в PDF‑документах с помощью Python.
 lastmod: "2026-04-15"
 sitemap:

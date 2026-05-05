@@ -3,7 +3,7 @@ title: Штамповать страницы PDF в Python
 linktitle: Штампование
 type: docs
 weight: 120
-url: /python-net/stamping/
+url: /ru/python-net/stamping/
 description: Узнайте, как добавлять номера страниц, штампы страниц, штампы изображений и текстовые штампы на страницы PDF в Python.
 lastmod: "2026-04-15"
 sitemap:

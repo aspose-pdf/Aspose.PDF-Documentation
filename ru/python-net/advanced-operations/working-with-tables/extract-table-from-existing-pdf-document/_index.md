@@ -3,7 +3,7 @@ title: Извлечь таблицу из PDF-документа
 linktitle: Извлечь таблицу
 type: docs
 weight: 20
-url: /python-net/extracting-table/
+url: /ru/python-net/extracting-table/
 description: Узнайте, как извлекать данные таблиц из существующих PDF-документов на Python.
 lastmod: "2026-04-17"
 sitemap:

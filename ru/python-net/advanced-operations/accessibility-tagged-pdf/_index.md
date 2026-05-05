@@ -3,7 +3,7 @@ title: Доступность Tagged PDF в Python
 linktitle: PDF-файлы с тегами
 type: docs
 weight: 180
-url: /python-net/accessibility-tagged-pdf/
+url: /ru/python-net/accessibility-tagged-pdf/
 description: Узнайте, как создавать доступные помеченные PDF в Python с помощью Aspose.PDF for Python via .NET, включая структуру PDF/UA, извлечение помеченного содержимого, свойства структуры и таблицы.
 lastmod: "2026-04-14"
 sitemap:

@@ -3,7 +3,7 @@ title: Установить свойства элементов структур
 linktitle: Настройка свойств Structure Elements
 type: docs
 weight: 30
-url: /python-net/setting-structure-elements-properties/
+url: /ru/python-net/setting-structure-elements-properties/
 description: Узнайте, как установить свойства элементов структуры Tagged PDF в Python с помощью Aspose.PDF for Python via .NET, включая title, language, actual text, alternative text и expansion text.
 lastmod: "2026-04-14"
 sitemap:

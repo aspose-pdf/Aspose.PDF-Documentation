@@ -3,7 +3,7 @@ title: Добавление таблиц в PDF с помощью Python
 linktitle: Добавление таблиц
 type: docs
 weight: 10
-url: /python-net/adding-tables/
+url: /ru/python-net/adding-tables/
 description: Узнайте, как добавлять и настраивать таблицы в существующих PDF‑документах с помощью Python.
 lastmod: "2026-04-17"
 sitemap:

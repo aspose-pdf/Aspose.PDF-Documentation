@@ -3,7 +3,7 @@ title: Добавить нумерацию страниц в PDF с помощь
 linktitle: Добавление номера страницы
 type: docs
 weight: 30
-url: /python-net/add-page-number/
+url: /ru/python-net/add-page-number/
 description: Узнайте, как добавить штампы с номерами страниц в PDF‑документы с помощью Python.
 lastmod: "2026-04-15"
 sitemap:

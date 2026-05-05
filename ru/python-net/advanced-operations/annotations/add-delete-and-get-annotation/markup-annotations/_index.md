@@ -3,7 +3,7 @@ title: Разметка аннотаций с помощью Python
 linktitle: Разметка аннотаций
 type: docs
 weight: 30
-url: /python-net/markup-annotations/
+url: /ru/python-net/markup-annotations/
 description: Узнайте, как добавлять, считывать и удалять текст, каретку и заменять аннотации в PDF‑документах с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-04-21"
 sitemap:

@@ -3,7 +3,7 @@ title: Медийные аннотации в PDF
 linktitle: Медийные аннотации
 type: docs
 weight: 40
-url: /python-net/media-annotations/
+url: /ru/python-net/media-annotations/
 description: Узнайте, как добавлять звуковые, 3D, экранные и rich media аннотации в документы PDF, а также как просматривать или удалять мультимедийные аннотации с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-04-21"
 sitemap:

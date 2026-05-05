@@ -3,7 +3,7 @@ title: Создайте PDF‑портфолио на Python
 linktitle: Портфолио
 type: docs
 weight: 20
-url: /python-net/portfolio/
+url: /ru/python-net/portfolio/
 description: Узнайте, как создавать и управлять PDF‑портфолио на Python с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-04-15"
 sitemap:

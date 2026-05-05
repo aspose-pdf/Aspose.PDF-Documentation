@@ -3,7 +3,7 @@ title: Размещение форм в PDF с помощью Python
 linktitle: Размещение форм
 type: docs
 weight: 75
-url: /python-net/posting-form/
+url: /ru/python-net/posting-form/
 description: Добавьте кнопки отправки и действия отправки в PDF AcroForms, используя Aspose.PDF for Python via .NET.
 lastmod: "2026-04-28"
 sitemap:

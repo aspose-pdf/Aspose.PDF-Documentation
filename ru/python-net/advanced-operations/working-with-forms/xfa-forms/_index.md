@@ -3,7 +3,7 @@ title: Работа с XFA-формами
 linktitle: XFA-формы
 type: docs
 weight: 20
-url: /python-net/xfa-forms/
+url: /ru/python-net/xfa-forms/
 description: Aspose.PDF for Python via .NET API позволяет работать с полями XFA и XFA Acroform в PDF-документе.
 lastmod: "2025-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Заменить текст в PDF с помощью Python
 linktitle: Заменить текст в PDF
 type: docs
 weight: 40
-url: /python-net/replace-text-in-pdf/
+url: /ru/python-net/replace-text-in-pdf/
 description: Узнайте, как заменять, переупорядочивать и удалять текст в PDF‑документах с использованием Python.
 lastmod: "2026-04-17"
 sitemap:

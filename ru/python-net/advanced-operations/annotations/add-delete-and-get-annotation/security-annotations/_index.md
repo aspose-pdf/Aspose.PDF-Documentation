@@ -3,7 +3,7 @@ title: Аннотации безопасности с использование
 linktitle: Аннотации безопасности
 type: docs
 weight: 75
-url: /python-net/security-annotations/
+url: /ru/python-net/security-annotations/
 description: Узнайте, как помечать текст для редактирования, применять аннотации редактирования и удалять области изображений в PDF‑файлах с использованием Aspose.PDF for Python via .NET.
 lastmod: "2026-04-21"
 sitemap:

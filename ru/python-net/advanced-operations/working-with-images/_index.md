@@ -3,7 +3,7 @@ title: Работа с изображениями в PDF с использова
 linktitle: Работа с изображениями
 type: docs
 weight: 40
-url: /python-net/working-with-images/
+url: /ru/python-net/working-with-images/
 description: Узнайте, как добавлять, удалять, извлекать, заменять и проверять изображения в PDF‑документах с помощью Python.
 lastmod: "2026-04-17"
 sitemap:

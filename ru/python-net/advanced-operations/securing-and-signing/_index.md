@@ -3,7 +3,7 @@ title: Защищать и подписывать PDF‑файлы в Python
 linktitle: Защита и подпись в PDF
 type: docs
 weight: 210
-url: /python-net/securing-and-signing/
+url: /ru/python-net/securing-and-signing/
 description: Узнайте, как подписывать, шифровать, дешифровать и защищать PDF‑файлы в Python, включая цифровые подписи, смарт‑карты и разрешения документов.
 lastmod: "2026-04-15"
 sitemap:

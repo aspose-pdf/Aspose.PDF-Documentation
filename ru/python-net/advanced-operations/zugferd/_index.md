@@ -3,7 +3,7 @@ title: Работа с ZUGFeRD
 linktitle: Работа с ZUGFeRD
 type: docs
 weight: 90
-url: /python-net/working-with-zugferd/
+url: /ru/python-net/working-with-zugferd/
 description: Узнайте, как работать с счетами ZUGFeRD в Python с помощью Aspose.PDF для управления и создания электронных счетов.
 lastmod: "2025-02-27"
 sitemap:

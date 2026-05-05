@@ -3,7 +3,7 @@ title: Получить, обновить и развернуть закладк
 linktitle: Получить, обновить и развернуть закладку
 type: docs
 weight: 20
-url: /python-net/get-update-and-expand-bookmark/
+url: /ru/python-net/get-update-and-expand-bookmark/
 description: Узнайте, как извлекать, обновлять и развертывать закладки в PDF‑документах с помощью Python.
 lastmod: "2026-04-15"
 sitemap:

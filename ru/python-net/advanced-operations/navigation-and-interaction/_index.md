@@ -3,7 +3,7 @@ title: Навигация и взаимодействие PDF в Python
 linktitle: Навигация и взаимодействие
 type: docs
 weight: 90
-url: /python-net/navigation-and-interaction/
+url: /ru/python-net/navigation-and-interaction/
 description: Узнайте, как работать со ссылками PDF, действиями и закладками в Python для навигации и интерактивного поведения документов.
 lastmod: "2026-04-15"
 sitemap:

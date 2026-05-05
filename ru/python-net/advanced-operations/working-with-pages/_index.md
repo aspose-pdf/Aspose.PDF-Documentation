@@ -3,7 +3,7 @@ title: Работа с PDF-страницами в Python
 linktitle: Работа со страницами
 type: docs
 weight: 20
-url: /python-net/working-with-pages/
+url: /ru/python-net/working-with-pages/
 description: Узнайте, как добавлять, перемещать, вращать, обрезать, извлекать, налагать штамп и управлять PDF-страницами в Python.
 lastmod: "2026-04-15"
 sitemap:

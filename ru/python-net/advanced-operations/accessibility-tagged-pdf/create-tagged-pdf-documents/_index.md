@@ -3,7 +3,7 @@ title: Создать Tagged PDF на Python
 linktitle: Создать Tagged PDF
 type: docs
 weight: 10
-url: /python-net/create-tagged-pdf/
+url: /ru/python-net/create-tagged-pdf/
 description: Узнайте, как создавать Tagged PDF документы на Python с Aspose.PDF for Python via .NET, включая PDF/UA Structure Elements, доступные Form, страницы TOC и автоматическое тегирование.
 lastmod: "2026-04-14"
 sitemap:

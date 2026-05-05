@@ -3,7 +3,7 @@ title: Добавить Ellipse в PDF на Python
 linktitle: Добавить Ellipse
 type: docs
 weight: 60
-url: /python-net/add-ellipse/
+url: /ru/python-net/add-ellipse/
 description: Узнайте, как рисовать, заполнять и подписывать эллиптические формы в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:

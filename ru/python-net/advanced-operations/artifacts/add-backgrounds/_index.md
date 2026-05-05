@@ -3,7 +3,7 @@ title: Добавить фоны PDF в Python
 linktitle: Добавление фонов
 type: docs
 weight: 20
-url: /python-net/add-backgrounds/
+url: /ru/python-net/add-backgrounds/
 description: Узнайте, как добавить изображение фона на страницы PDF в Python, используя класс BackgroundArtifact в Aspose.PDF for Python via .NET.
 lastmod: "2026-04-15"
 sitemap:

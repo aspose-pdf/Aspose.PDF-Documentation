@@ -3,7 +3,7 @@ title: Работа с артефактами PDF в Python
 linktitle: Работа с артефактами
 type: docs
 weight: 170
-url: /python-net/artifacts/
+url: /ru/python-net/artifacts/
 description: Узнайте, как работать с артефактами PDF в Python, чтобы добавлять фоны, водяные знаки и нумерацию Bates, а также подсчитывать типы артефактов с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-04-15"
 sitemap:

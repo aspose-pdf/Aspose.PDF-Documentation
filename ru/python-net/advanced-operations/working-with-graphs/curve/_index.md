@@ -3,7 +3,7 @@ title: Добавить Curve в PDF на Python
 linktitle: Добавить Curve
 type: docs
 weight: 30
-url: /python-net/add-curve/
+url: /ru/python-net/add-curve/
 description: Узнайте, как рисовать и заполнять формы кривых в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:

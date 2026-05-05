@@ -3,7 +3,7 @@ title: Работа с закладками PDF в Python
 linktitle: Закладки
 type: docs
 weight: 30
-url: /python-net/bookmarks/
+url: /ru/python-net/bookmarks/
 description: Узнайте, как добавлять, удалять, получать, обновлять и разворачивать закладки PDF в Python.
 lastmod: "2026-04-15"
 sitemap:

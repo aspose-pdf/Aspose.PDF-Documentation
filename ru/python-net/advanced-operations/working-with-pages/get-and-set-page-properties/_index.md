@@ -3,7 +3,7 @@ title: Получить и установить свойства страниц 
 linktitle: Получение и установка свойств страниц
 type: docs
 weight: 90
-url: /python-net/get-and-set-page-properties/
+url: /ru/python-net/get-and-set-page-properties/
 description: Узнайте, как просматривать и обновлять свойства страниц PDF, такие как размер, количество и информация о цвете, в Python.
 lastmod: "2026-04-15"
 sitemap:

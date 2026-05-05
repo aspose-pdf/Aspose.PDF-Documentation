@@ -3,7 +3,7 @@ title: Управление таблицами в существующем PDF
 linktitle: Управление таблицами
 type: docs
 weight: 40
-url: /python-net/manipulating-tables/
+url: /ru/python-net/manipulating-tables/
 description: Узнайте, как просматривать и изменять таблицы в существующих PDF‑документах с помощью Python.
 lastmod: "2026-04-27"
 sitemap:

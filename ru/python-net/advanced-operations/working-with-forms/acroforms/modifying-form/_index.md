@@ -3,7 +3,7 @@ title: Изменение AcroForm
 linktitle: Изменение AcroForm
 type: docs
 weight: 45
-url: /python-net/modifying-form/
+url: /ru/python-net/modifying-form/
 description: Изменять поля AcroForm в PDF‑документах с помощью Aspose.PDF for Python via .NET, включая очистку текста, установку ограничений, стилизацию полей и удаление полей.
 lastmod: "2026-04-28"
 sitemap:

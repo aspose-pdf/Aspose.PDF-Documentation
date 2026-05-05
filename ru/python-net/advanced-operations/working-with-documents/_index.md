@@ -3,7 +3,7 @@ title: Работа с PDF‑документами в Python
 linktitle: Работа с документами
 type: docs
 weight: 10
-url: /python-net/working-with-documents/
+url: /ru/python-net/working-with-documents/
 description: Узнайте, как создавать, форматировать, манипулировать, оптимизировать, объединять, разделять и управлять PDF‑документами в Python.
 lastmod: "2026-04-15"
 sitemap:

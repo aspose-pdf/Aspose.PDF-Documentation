@@ -3,7 +3,7 @@ title: Текстовые аннотации с использованием Pyt
 linktitle: Текстовые аннотации
 type: docs
 weight: 10
-url: /python-net/text-based-Annotations/
+url: /ru/python-net/text-based-Annotations/
 description: Узнайте, как добавлять, просматривать и удалять аннотации свободного текста, выделения, подчеркивания, волнистого подчеркивания и зачёркивания в PDF‑документах с использованием Aspose.PDF for Python via .NET.
 lastmod: "2026-04-30"
 sitemap:

@@ -3,7 +3,7 @@ title: Работа с вложениями PDF в Python
 linktitle: Работа с вложениями
 type: docs
 weight: 130
-url: /python-net/attachments/
+url: /ru/python-net/attachments/
 description: Узнайте, как добавлять, извлекать, организовывать и удалять вложения PDF в Python с помощью Aspose.PDF for Python via .NET, включая встроенные файлы и PDF‑портфели.
 lastmod: "2026-04-15"
 sitemap:

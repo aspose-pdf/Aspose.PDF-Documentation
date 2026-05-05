@@ -3,7 +3,7 @@ title: Добавить Line в PDF на Python
 linktitle: Добавить Line
 type: docs
 weight: 40
-url: /python-net/add-line/
+url: /ru/python-net/add-line/
 description: Узнайте, как рисовать линейные фигуры и стилизованные линии в PDF‑файлах с помощью Python.
 lastmod: "2026-04-16"
 sitemap:

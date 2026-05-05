@@ -3,7 +3,7 @@ title: Работа с векторной графикой в Python
 linktitle: Работа с векторной графикой
 type: docs
 weight: 100
-url: /python-net/working-with-vector-graphics/
+url: /ru/python-net/working-with-vector-graphics/
 description: Узнайте, как извлекать, перемещать, удалять и повторно использовать векторную графику в PDF‑файлах с помощью Python.
 lastmod: "2026-04-17"
 TechArticle: true 

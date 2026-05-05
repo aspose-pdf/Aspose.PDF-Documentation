@@ -3,7 +3,7 @@ title: Конвертировать PDF в форматы изображений
 linktitle: Конвертировать PDF в изображения
 type: docs
 weight: 70
-url: /python-net/convert-pdf-to-images-format/
+url: /ru/python-net/convert-pdf-to-images-format/
 lastmod: "2026-04-14"
 description: Узнайте, как преобразовать страницы PDF в изображения, такие как PNG, JPEG или TIFF, используя Aspose.PDF в Python через .NET.
 sitemap:

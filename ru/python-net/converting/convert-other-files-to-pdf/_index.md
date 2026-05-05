@@ -3,7 +3,7 @@ title: Преобразовать другие форматы файлов в PD
 linktitle: Преобразовать другие форматы файлов в PDF
 type: docs
 weight: 80
-url: /python-net/convert-other-files-to-pdf/
+url: /ru/python-net/convert-other-files-to-pdf/
 lastmod: "2026-04-14"
 description: Узнайте, как преобразовать файлы EPUB, Markdown, PCL, XPS, PostScript, XML и LaTeX в PDF на Python с помощью Aspose.PDF for Python via .NET.
 sitemap:

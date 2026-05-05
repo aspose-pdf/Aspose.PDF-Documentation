@@ -3,7 +3,7 @@ title: Работа с таблицами в PDF с использованием
 linktitle: Работа с таблицами
 type: docs
 weight: 50
-url: /python-net/working-with-tables/
+url: /ru/python-net/working-with-tables/
 description: Узнайте, как добавлять, извлекать, интегрировать, манипулировать и удалять таблицы в PDF‑документах с помощью Python.
 lastmod: "2026-04-17"
 sitemap:

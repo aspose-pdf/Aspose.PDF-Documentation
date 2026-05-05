@@ -3,7 +3,7 @@ title: Создание PDF/3-A совместимого PDF и прикрепл
 linktitle: Прикрепить ZUGFeRD к PDF
 type: docs
 weight: 10
-url: /python-net/attach-zugferd/
+url: /ru/python-net/attach-zugferd/
 description: Узнайте, как создать PDF‑документ с ZUGFeRD в Aspose.PDF for Python via .NET
 lastmod: "2025-02-27"
 sitemap:

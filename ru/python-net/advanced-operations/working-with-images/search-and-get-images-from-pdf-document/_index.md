@@ -3,7 +3,7 @@ title: Получать и искать изображения в PDF
 linktitle: Получать и искать изображения
 type: docs
 weight: 40
-url: /python-net/search-and-get-images-from-pdf-document/
+url: /ru/python-net/search-and-get-images-from-pdf-document/
 description: Узнайте, как искать и проверять изображения в PDF‑документах с помощью Python.
 lastmod: "2026-04-17"
 TechArticle: true

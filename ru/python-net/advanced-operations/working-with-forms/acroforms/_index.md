@@ -3,7 +3,7 @@ title: Работа с AcroForms с использованием Python
 linktitle: AcroForms
 type: docs
 weight: 10
-url: /python-net/acroforms/
+url: /ru/python-net/acroforms/
 description: Узнайте, как создавать, заполнять, извлекать, импортировать, экспортировать и управлять полями AcroForm в PDF‑документах с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-04-28"
 sitemap:

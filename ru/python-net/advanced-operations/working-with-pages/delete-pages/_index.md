@@ -3,7 +3,7 @@ title: Удалить страницы PDF в Python
 linktitle: Удаление страниц PDF
 type: docs
 weight: 80
-url: /python-net/delete-pages/
+url: /ru/python-net/delete-pages/
 description: Узнайте, как удалять страницы из файлов PDF в Python.
 lastmod: "2026-04-27"
 sitemap:

@@ -3,7 +3,7 @@ title: Добавить штампы‑изображения в PDF на Python
 linktitle: Штампы‑изображения в PDF‑файле
 type: docs
 weight: 10
-url: /python-net/image-stamps-in-pdf-page/
+url: /ru/python-net/image-stamps-in-pdf-page/
 description: Узнайте, как добавить штампы‑изображения на страницы PDF с помощью Python.
 lastmod: "2026-04-15"
 sitemap:

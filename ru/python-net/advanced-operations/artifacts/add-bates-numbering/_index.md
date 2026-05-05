@@ -3,7 +3,7 @@ title: Добавить нумерацию Бейтса в PDF с помощью
 linktitle: Добавление нумерации Бейтса
 type: docs
 weight: 10
-url: /python-net/add-bates-numbering/
+url: /ru/python-net/add-bates-numbering/
 description: Узнайте, как добавлять и удалять нумерацию Бейтса в PDF‑документах, используя Python с Aspose.PDF for Python via .NET.
 lastmod: "2026-04-15"
 sitemap:

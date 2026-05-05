@@ -3,7 +3,7 @@ title: Работа с текстом в PDF с использованием Pyt
 linktitle: Работа с текстом
 type: docs
 weight: 30
-url: /python-net/working-with-text/
+url: /ru/python-net/working-with-text/
 description: Узнайте, как добавлять, искать, форматировать, заменять, вращать и проверять текст в PDF‑документах с использованием Python.
 lastmod: "2026-04-17"
 sitemap:

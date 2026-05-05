@@ -3,7 +3,7 @@ title: Фигурные аннотации через Python
 linktitle: Фигурные аннотации
 type: docs
 weight: 20
-url: /python-net/shape-annotations/
+url: /ru/python-net/shape-annotations/
 description: Узнайте, как добавлять, проверять и удалять аннотации линий, квадратов, кругов, полигонов и полилиний в PDF‑документах с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-04-21"
 sitemap:

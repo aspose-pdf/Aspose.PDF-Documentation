@@ -3,7 +3,7 @@ title: Обрезать страницы PDF в Python
 linktitle: Обрезка страниц PDF
 type: docs
 weight: 70
-url: /python-net/crop-pages/
+url: /ru/python-net/crop-pages/
 description: Узнайте, как обрезать страницы PDF и настроить коробки crop, trim, bleed и media в Python.
 lastmod: "2026-04-15"
 sitemap:

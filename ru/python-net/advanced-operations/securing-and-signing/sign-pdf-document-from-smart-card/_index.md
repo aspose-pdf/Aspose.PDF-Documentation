@@ -3,7 +3,7 @@ title: Подписать PDF‑документы со смарт‑карты 
 linktitle: Подписание PDF со смарт‑картой
 type: docs
 weight: 30
-url: /python-net/sign-pdf-document-from-smart-card/
+url: /ru/python-net/sign-pdf-document-from-smart-card/
 description: Узнайте, как подписывать PDF‑документы с помощью смарт‑карт и внешних сертификатов на Python.
 lastmod: "2026-04-15"
 sitemap:

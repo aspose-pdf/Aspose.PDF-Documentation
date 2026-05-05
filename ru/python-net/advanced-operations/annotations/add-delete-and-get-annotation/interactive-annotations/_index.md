@@ -3,7 +3,7 @@ title: Интерактивные аннотации с использовани
 linktitle: Интерактивные аннотации
 type: docs
 weight: 60
-url: /python-net/interactive-annotations/
+url: /ru/python-net/interactive-annotations/
 description: Узнайте, как добавлять, считывать и удалять аннотации‑ссылки, а также как создавать навигационные и кнопки печати в PDF‑документах с использованием Aspose.PDF for Python via .NET.
 lastmod: "2026-04-21"
 sitemap:
