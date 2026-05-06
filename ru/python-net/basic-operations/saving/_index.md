@@ -53,7 +53,7 @@ PDF/A отличается от PDF тем, что запрещает функц
 
 PDF/X является подмножеством стандарта PDF ISO. Цель PDF/X — облегчить обмен графикой, поэтому у него есть ряд требований, связанных с печатью, которые не применяются к стандартным PDF‑файлам.
 
-В обоих случаях, [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод используется для хранения документов, в то время как документы должны быть подготовлены с использованием [конвертировать](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод.
+В обоих случаях, [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод используется для хранения документов, в то время как документы должны быть подготовлены с использованием [convert](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод.
 
 ```python
 import aspose.pdf as ap
