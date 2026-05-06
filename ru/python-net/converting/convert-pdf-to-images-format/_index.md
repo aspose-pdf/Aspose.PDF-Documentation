@@ -42,7 +42,7 @@ Aspose.PDF for Python объясняет, как преобразовать вс
 
 1. Создайте объект [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
 1. Создать [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) и [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) объекты
-1. Позвоните [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) метод конвертации PDF‑документа в TIFF.
+1. Вызовите [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) метод конвертации PDF‑документа в TIFF.
 1. Чтобы установить свойства выходного файла, используйте [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) класс.
 
 Следующий фрагмент кода показывает, как преобразовать все страницы PDF в одно изображение TIFF.
