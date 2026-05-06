@@ -106,7 +106,7 @@ def replace_table(infile: str, outfile: str) -> None:
     document.save(outfile)
 ```
 
-## Связанные темы таблицы
+## Другие темы по таблицам
 
 - [Работа с таблицами в PDF с использованием Python](/pdf/ru/python-net/working-with-tables/)
 - [Добавить таблицы в PDF с помощью Python](/pdf/ru/python-net/adding-tables/)
