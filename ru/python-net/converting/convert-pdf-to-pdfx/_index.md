@@ -101,12 +101,12 @@ def convert_PDF_to_PDFA4(infile, outfile):
 1. Загрузите входной PDF, используя 'ap.Document'.
 1. Создайте объект 'FileSpecification', указывающий на файл для встраивания (например, "aspose-logo.jpg") с описанием.
 1. Добавьте спецификацию файла в коллекцию ‘embedded_files’ PDF.
-1. Конвертировать документ в PDF/A-3A, используя 'document.convert', указывая:
+1. Конвертируйте документ в PDF/A-3A, используя 'document.convert', указывая:
     - Путь к файлу журнала.
     - Целевой формат - 'ap.PdfFormat.PDF_A_3A'.
     - Действие при ошибке - 'ap.ConvertErrorAction.DELETE' для удаления несоответствующих элементов.
 1. Сохраните преобразованный PDF в путь вывода.
-1. Выведите сообщение подтверждения.
+
 
 ```python
 import aspose.pdf as ap
@@ -135,7 +135,6 @@ def convert_PDF_to_PDFA_with_attachment(infile, attachement_file, outfile):
     - Целевой формат - 'ap.PdfFormat.PDF_A_1B'.
     - Действие при ошибке - 'ap.ConvertErrorAction.DELETE' для удаления несоответствующих элементов.
 1. Сохраните преобразованный PDF в путь вывода.
-1. Выведите сообщение подтверждения.
 
 ```python
 import aspose.pdf as ap
@@ -171,7 +170,7 @@ def convert_PDF_to_PDFA_replace_missing_fonts(infile, outfile):
 1. Назначьте настройки авторазметки параметрам конвертации.
 1. Преобразуйте PDF, используя 'document.convert(options)'.
 1. Сохраните преобразованный PDF в путь вывода.
-1. Выведите сообщение подтверждения.
+
 
 ```python
 import aspose.pdf as ap
@@ -245,7 +244,7 @@ def convert_PDF_to_PDF_E(infile, outfile):
 1. Укажите **OutputIntent** с идентификатором условия (например, "FOGRA39") для требований к печати.
 1. Преобразуйте PDF, используя 'document.convert()'.
 1. Сохраните преобразованный PDF в указанный путь вывода.
-1. Выведите сообщение подтверждения.
+
 
 ```python
 import aspose.pdf as ap

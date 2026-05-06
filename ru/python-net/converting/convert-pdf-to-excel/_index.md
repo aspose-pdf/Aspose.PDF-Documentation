@@ -36,7 +36,7 @@ Aspose.PDF представляет вам онлайн‑приложение [
 
 1. Загрузите PDF‑документ.
 1. Настройте параметры сохранения Excel с помощью [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-1. Сохранить преобразованный файл.
+1. Сохраните конвертированный файл.
 
 ```python
 from os import path
@@ -56,9 +56,11 @@ def convert_pdf_to_excel_spread_sheet2003(infile, outfile):
 
 Шаги: Конвертировать PDF‑файл в формат XLSX (Excel 2007+)
 
-1. Загрузите PDF‑документ.
-1. Настройте параметры сохранения Excel с помощью [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-1. Сохранить преобразованный файл.
+1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) объект с исходным PDF-документом.
+1. Создайте экземпляр [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) с **ExcelSaveOptions.ExcelFormat.ODS**
+1. Сохраните его в формат **ODS**, вызвав [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод и его передача [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+
+Преобразование в формат ODS выполняется так же, как и все остальные форматы.
 
 ```python
 from os import path
