@@ -27,17 +27,16 @@ The following Python example shows the basic workflow for converting an HTML doc
 1. Save the output PDF document by calling `document.save()`.
 
 ```python
-from os import path
 import aspose.pdf as ap
+from os import path
+import sys
 
-path_infile = path.join(self.data_dir, infile)
-path_outfile = path.join(self.data_dir, "python", outfile)
-
-load_options = ap.HtmlLoadOptions()
-load_options.page_layout_option = ap.HtmlPageLayoutOption.SCALE_TO_PAGE_WIDTH
-document = ap.Document(path_infile, load_options)
-document.save(path_outfile)
-print(infile + " converted into " + outfile)
+def convert_HTML_to_PDF(infile, outfile):
+    load_options = ap.HtmlLoadOptions()
+    load_options.page_layout_option = ap.HtmlPageLayoutOption.SCALE_TO_PAGE_WIDTH
+    document = ap.Document(infile, load_options)
+    document.save(outfile)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Related conversions
@@ -64,17 +63,16 @@ This example shows how to convert an HTML file to PDF using specific rendering o
 1. Save the document as a PDF.
 
 ```python
-from os import path
 import aspose.pdf as ap
+from os import path
+import sys
 
-path_infile = path.join(self.data_dir, infile)
-path_outfile = path.join(self.data_dir, "python", outfile)
-
-load_options = ap.HtmlLoadOptions()
-load_options.html_media_type = ap.HtmlMediaType.SCREEN
-document = ap.Document(path_infile, load_options)
-document.save(path_outfile)
-print(infile + " converted into " + outfile)
+def convert_HTML_to_PDF_media_type(infile, outfile):
+    load_options = ap.HtmlLoadOptions()
+    load_options.html_media_type = ap.HtmlMediaType.SCREEN
+    document = ap.Document(infile, load_options)
+    document.save(outfile)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Prioritize the CSS `@page` rule during HTML-to-PDF conversion
@@ -87,17 +85,16 @@ Some documents use [the `@page` rule](https://developer.mozilla.org/en-US/docs/W
 1. Save the document as a PDF.
 
 ```python
-from os import path
 import aspose.pdf as ap
+from os import path
+import sys
 
-path_infile = path.join(self.data_dir, infile)
-path_outfile = path.join(self.data_dir, "python", outfile)
-
-load_options = ap.HtmlLoadOptions()
-# load_options.is_priority_css_page_rule = False
-document = ap.Document(path_infile, load_options)
-document.save(path_outfile)
-print(infile + " converted into " + outfile)
+def convert_HTML_to_PDF_priority_css_page_rule(infile, outfile):
+    load_options = ap.HtmlLoadOptions()
+    load_options.is_priority_css_page_rule = False
+    document = ap.Document(infile, load_options)
+    document.save(outfile)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert HTML to PDF with embedded fonts
@@ -110,17 +107,16 @@ This example shows how to convert an HTML file to PDF while embedding fonts. If 
 1. Save the document as a PDF.
 
 ```python
-from os import path
 import aspose.pdf as ap
+from os import path
+import sys
 
-path_infile = path.join(self.data_dir, infile)
-path_outfile = path.join(self.data_dir, "python", outfile)
-
-load_options = ap.HtmlLoadOptions()
-load_options.is_embed_fonts = True
-document = ap.Document(path_infile, load_options)
-document.save(path_outfile)
-print(infile + " converted into " + outfile)
+def convert_HTML_to_PDF_embed_fonts(infile, outfile):
+    load_options = ap.HtmlLoadOptions()
+    load_options.is_embed_fonts = True
+    document = ap.Document(infile, load_options)
+    document.save(outfile)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Render HTML content on a single PDF page
@@ -133,49 +129,16 @@ This example demonstrates how to convert an HTML file into a single-page PDF usi
 1. Save the result as a PDF file.
 
 ```python
+import aspose.pdf as ap
 from os import path
-import aspose.pdf as ap
+import sys
 
-path_infile = path.join(self.data_dir, infile)
-path_outfile = path.join(self.data_dir, "python", outfile)
+def convert_HTML_to_PDF_render_content_to_same_page(infile, outfile):
+    options = ap.HtmlLoadOptions()
+    options.is_render_to_single_page = True
 
-options = ap.HtmlLoadOptions()
-options.is_render_to_single_page = True
-
-doc = ap.Document(path_infile, options)
-doc.save(path_outfile)
-```
-
-## Create logical structure from HTML tags
-
-Logical structure, also called a tagged PDF, preserves the semantic hierarchy of the original HTML, such as headings, paragraphs, and lists. This makes the resulting PDF more accessible, searchable, and suitable for structured document workflows.
-
-By enabling logical structure during conversion, the HTML DOM is mapped into a PDF tag tree rather than rendered only as visual content.
-
-To meet accessibility requirements, a PDF should include logical structure elements that define reading order, provide alternate text for screen readers, and preserve the hierarchy of the content.
-
-> The quality of the logical structure in the output PDF depends directly on the quality of the original HTML markup. Poorly structured or invalid HTML may result in incomplete or inaccurate tagging in the converted PDF.
-
-1. Create an HtmlLoadOptions instance to control how the HTML is converted.
-1. Activate semantic tagging so the PDF contains structured elements.
-1. Open the HTML file using the configured options.
-1. Save the structured PDF.
-
-```python
-import aspose.pdf as ap
-
-# Path to the source HTML
-input_html_path = "input.html"
-# Path for the Logical Structure PDF
-output_pdf_path = "output_logical_structure.pdf"
-# Initialize HtmlLoadOptions
-options = ap.HtmlLoadOptions()
-# Convert HTML markup to PDF logical structure elements
-options.create_logical_structure = True
-# Open PDF document
-with ap.Document(input_html_path, options) as document:
-    # Save PDF document
-    document.save(output_pdf_path)
+    doc = ap.Document(infile, options)
+    doc.save(outfile)
 ```
 
 ## Convert MHTML to PDF
@@ -188,15 +151,15 @@ This example shows how to convert an MHT or MHTML file into a PDF document using
 1. Save the resulting document as a PDF.
 
 ```python
-from os import path
 import aspose.pdf as ap
+from os import path
+import sys
 
-path_infile = path.join(self.data_dir, infile)
-path_outfile = path.join(self.data_dir, "python", outfile)
-load_options = ap.MhtLoadOptions()
-load_options.page_info.width = 842
-load_options.page_info.height = 1191
-document = ap.Document(path_infile, load_options)
-document.save(path_outfile)
-print(infile + " converted into " + outfile)
+def convert_MHTML_to_PDF(infile, outfile):
+    load_options = ap.MhtLoadOptions()
+    load_options.page_info.width = 842
+    load_options.page_info.height = 1191
+    document = ap.Document(infile, load_options)
+    document.save(outfile)
+    print(infile + " converted into " + outfile)
 ```
