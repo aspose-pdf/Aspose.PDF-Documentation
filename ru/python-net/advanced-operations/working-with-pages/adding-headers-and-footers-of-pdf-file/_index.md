@@ -1,6 +1,6 @@
 ---
-title: Добавить заголовки и колонтитулы PDF в Python
-linktitle: Добавление заголовка и колонтитула в PDF
+title: Добавить колонтитулы в PDF в Python
+linktitle: Добавление колонтитулов в PDF
 type: docs
 weight: 50
 url: /python-net/add-headers-and-footers-of-pdf-file/
