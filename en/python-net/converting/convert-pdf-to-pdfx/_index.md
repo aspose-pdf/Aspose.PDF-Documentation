@@ -31,9 +31,9 @@ Convert the file using the Document class Convert method. Before converting the 
 {{% alert color="success" %}}
 **Try to convert PDF to PDF/A online**
 
-Aspose.PDF for Python presents you online free application ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python presents you online application ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to PDF/A with Free App](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+[![Aspose.PDF Convertion PDF to PDF/A with App](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
 The 'document.validate()' method validates whether a PDF file conforms to the PDF/A-1B standard (an ISO-standardized version of PDF designed for long-term archiving). The validation results are saved in a log file.

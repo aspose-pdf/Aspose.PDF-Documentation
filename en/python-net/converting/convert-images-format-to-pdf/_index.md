@@ -64,9 +64,9 @@ So the following code snippet follows these steps and shows how to convert BMP t
 {{% alert color="success" %}}
 **Try to convert BMP to PDF online**
 
-Aspose presents you online free application ["BMP to PDF"](https://products.aspose.app/pdf/conversion/bmp-to-pdf/), where you may try to investigate the functionality and quality it works.
+Aspose presents you online application ["BMP to PDF"](https://products.aspose.app/pdf/conversion/bmp-to-pdf/), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion BMP to PDF using Free App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/bmp-to-pdf/)
+[![Aspose.PDF Convertion BMP to PDF using App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/bmp-to-pdf/)
 {{% /alert %}}
 
 ## Convert CGM to PDF
@@ -175,9 +175,9 @@ The following code snippet shows how to convert DICOM files to PDF format with A
 {{% alert color="success" %}}
 **Try to convert DICOM to PDF online**
 
-Aspose presents you online free application ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/), where you may try to investigate the functionality and quality it works.
+Aspose presents you online application ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion DICOM to PDF using Free App](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
+[![Aspose.PDF Convertion DICOM to PDF using App](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
 {{% /alert %}}
 
 ## Convert EMF to PDF
@@ -213,9 +213,9 @@ The following code snippet shows how to convert an EMF to PDF with Python:
 {{% alert color="success" %}}
 **Try to convert EMF to PDF online**
 
-Aspose presents you online free application ["EMF to PDF"](https://products.aspose.app/pdf/conversion/emf-to-pdf/), where you may try to investigate the functionality and quality it works.
+Aspose presents you online application ["EMF to PDF"](https://products.aspose.app/pdf/conversion/emf-to-pdf/), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion EMF to PDF using Free App](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
+[![Aspose.PDF Convertion EMF to PDF using App](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
 {{% /alert %}}
 
 ## Convert GIF to PDF
@@ -251,9 +251,9 @@ So the following code snippet follows these steps and shows how to convert BMP t
 {{% alert color="success" %}}
 **Try to convert GIF to PDF online**
 
-Aspose presents you online free application ["GIF to PDF"](https://products.aspose.app/pdf/conversion/gif-to-pdf/), where you may try to investigate the functionality and quality it works.
+Aspose presents you online application ["GIF to PDF"](https://products.aspose.app/pdf/conversion/gif-to-pdf/), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion GIF to PDF using Free App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/gif-to-pdf/)
+[![Aspose.PDF Convertion GIF to PDF using App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/gif-to-pdf/)
 {{% /alert %}}
 
 ## Convert PNG to PDF
@@ -296,9 +296,9 @@ Moreover, the code snippet below shows how to convert PNG to PDF with Python:
 {{% alert color="success" %}}
 **Try to convert PNG to PDF online**
 
-Aspose presents you online free application ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/), where you may try to investigate the functionality and quality it works.
+Aspose presents you online application ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PNG to PDF using Free App](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
+[![Aspose.PDF Convertion PNG to PDF using App](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
 {{% /alert %}}
 
 ## Convert SVG to PDF
@@ -312,9 +312,9 @@ Scalable Vector Graphics (SVG) is a family of specifications of an XML-based fil
 {{% alert color="success" %}}
 **Try to convert SVG format to PDF online**
 
-Aspose.PDF for Python via .NET presents you online free application ["SVG to PDF"](https://products.aspose.app/pdf/conversion/svg-to-pdf), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python via .NET presents you online application ["SVG to PDF"](https://products.aspose.app/pdf/conversion/svg-to-pdf), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion SVG to PDF with Free App](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
+[![Aspose.PDF Convertion SVG to PDF with App](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
 The following code snippet shows the process of converting SVG file into PDF format with Aspose.PDF for Python.

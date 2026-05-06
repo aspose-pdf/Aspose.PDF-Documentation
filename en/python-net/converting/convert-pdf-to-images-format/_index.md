@@ -29,9 +29,9 @@ The [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/
 {{% alert color="success" %}}
 **Try to convert PDF to TIFF online**
 
-Aspose.PDF for Python via .NET presents you online free application ["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python via .NET presents you online application ["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF conversion PDF to TIFF with Free App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
+[![Aspose.PDF conversion PDF to TIFF with App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
 
 ### Convert PDF Pages to One TIFF Image
@@ -260,11 +260,11 @@ Steps: PDF to Image (BMP, EMF, JPG, PNG, GIF) in Python
 {{% alert color="success" %}}
 **Try to convert PDF to PNG online**
 
-As an example of how our free applications work please check the next feature.
+As an example of how our applications work please check the next feature.
 
-Aspose.PDF for Python presents you online free application ["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python presents you online application ["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), where you may try to investigate the functionality and quality it works.
 
-[![How to convert PDF to PNG using Free App](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
+[![How to convert PDF to PNG using App](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
 {{% /alert %}}
 
 ## Convert PDF using SaveOptions class
@@ -274,9 +274,9 @@ This part of article shows you how to convert PDF to <abbr title="Scalable Vecto
 {{% alert color="success" %}}
 **Try to convert PDF to SVG online**
 
-Aspose.PDF for Python via .NET presents you online free application ["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python via .NET presents you online application ["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to SVG with Free App](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
+[![Aspose.PDF Convertion PDF to SVG with App](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}
 
 **Scalable Vector Graphics (SVG)** is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.

@@ -25,9 +25,9 @@ Use this page when you need to extract table-oriented or report-style PDF conten
 {{% alert color="success" %}}
 **Try to convert PDF to Excel online**
 
-Aspose.PDF presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
+Aspose.PDF presents you online application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![Aspose.PDF Convertion PDF to Excel with App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
 The following code snippet shows the process for converting PDF file into XLS or XLSX format with Aspose.PDF for Python via .NET.

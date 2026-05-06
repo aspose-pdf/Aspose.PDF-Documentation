@@ -21,9 +21,9 @@ Abstract: This article provides a comprehensive guide on converting PDF files to
 {{% alert color="success" %}}
 **Try to convert PDF to HTML online**
 
-Aspose.PDF for Python presents you online free application ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python presents you online application ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to HTML with Free App](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+[![Aspose.PDF Convertion PDF to HTML with App](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
 Steps: Convert PDF to HTML in Python
