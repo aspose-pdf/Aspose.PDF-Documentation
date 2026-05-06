@@ -183,7 +183,7 @@ def convert_PCL_to_PDF(infile, outfile):
 {{% alert color="success" %}}
 **Попробуйте конвертировать TEXT в PDF онлайн**
 
-Aspose.PDF for Python via .NET представляет вам онлайн‑приложение ["Текст в PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), где вы можете попробовать исследовать, как работает функциональность и качество.
+Aspose.PDF for Python via .NET представляет вам онлайн‑приложение ["TEXT в PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), где вы можете попробовать исследовать, как работает функциональность и качество.
 
 [![Aspose.PDF Конвертация TEXT в PDF с приложением](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
 {{% /alert %}}
