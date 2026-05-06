@@ -61,7 +61,7 @@ def add_page_num_stamp(input_file_name, output_file_name):
     document.save(output_file_name)
 ```
 
-## Добавление римских номеров страниц в PDF
+## Добавление римской нумерации страниц в PDF
 
 Добавьте номера страниц в формате римских цифр ко всем страницам PDF‑документа. Номера страниц добавляются в виде штампов, используя [`PageNumberStamp`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/), с настраиваемыми шрифтом, размером, стилем, цветом и выравниванием. Используйте [`NumberingStyle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/) enum для выбора римских цифр или других схем нумерации. Нумерация также может начинаться с любого указанного значения.
 
