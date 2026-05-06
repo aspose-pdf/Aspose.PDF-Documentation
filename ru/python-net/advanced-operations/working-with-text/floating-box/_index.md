@@ -1,5 +1,5 @@
 ---
-title: Используйте FloatingBox для размещения текста PDF в Python
+title: Использование FloatingBox для размещения текста PDF в Python
 linktitle: Использование FloatingBox
 type: docs
 weight: 30
