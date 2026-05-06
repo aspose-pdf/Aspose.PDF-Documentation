@@ -20,12 +20,12 @@ Aspose.PDF for Python via .NET позволяет вам добавлять [Arc
 
 Выполните следующие шаги:
 
-1. Создать [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
-1. Создать объект [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определенными размерами.
-1. Установить [Border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта Graph.
+1. Создайте [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
+1. Создайте объект [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определенными размерами.
+1. Установите [Border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта Graph.
 1. Создайте соответствующий объект дуги.
 1. Добавьте этот объект в коллекцию Shapes в объекте graph.
-1. Добавить [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) объект в коллекцию paragraphs страницы.
+1. Добавьте [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) объект в коллекцию paragraphs страницы.
 1. Сохраните наш PDF‑файл.
 
 Следующий фрагмент кода показывает, как добавить [Дуга](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/arc/) объект.

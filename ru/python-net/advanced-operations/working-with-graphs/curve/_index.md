@@ -22,11 +22,11 @@ Aspose.PDF for Python via .NET позволяет добавлять [Крива
 
 Следуйте приведённым ниже шагам:
 
-1. Создать [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
-1. Создать объект [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определёнными размерами.
-1. Установить [Border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта Graph.
-1. Добавить [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) объект в коллекцию абзацев страницы.
-1. Сохранить наш PDF‑файл.
+1. Создайте [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) экземпляр.
+1. Создайте объект [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) с определёнными размерами.
+1. Установите [Border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) для объекта Graph.
+1. Добавьте [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) объект в коллекцию абзацев страницы.
+1. Сохраните наш PDF‑файл.
 
 ```python
 import aspose.pdf as ap

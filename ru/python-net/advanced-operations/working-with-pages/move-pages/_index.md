@@ -83,8 +83,8 @@ def move_multiple_pages_from_one_document_to_another(
 1. Загрузите входной документ PDF, используя [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
 1. Выберите страницу, которую хотите переместить (страница 2) — это [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
 1. Добавьте её в конец документа, используя [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. Удалить оригинальную страницу из её предыдущего местоположения через [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. Сохранить изменённый документ как новый файл.
+1. Удалите оригинальную страницу из её предыдущего местоположения через [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Сохраните изменённый документ как новый файл.
 
 ```python
 import aspose.pdf as ap

@@ -32,7 +32,7 @@ Aspose.PDF for Python via .NET позволяет менять размер ст
 
 1. Получите доступ к первой [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) из [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Отобразить размеры уменьшеной страницы до изменения (CropBox, TrimBox, ArtBox, BleedBox, MediaBox).
-1. Применить размеры A4 (597.6 × 842.4 points) с помощью API страницы.
+1. Примените размеры A4 (597.6 × 842.4 points) с помощью API страницы.
 1. Отобразить обновленные размеры уменьшеной страницы.
 1. Сохраните изменённый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) к указанному пути вывода.
 
@@ -73,7 +73,7 @@ def set_page_size(input_file_name, output_file_name):
 
 1. Загрузите PDF как [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Получите доступ к первой [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
-1. Получить обрезанный прямоугольник страницы с помощью `get_page_rect()`.
+1. Получите обрезанный прямоугольник страницы с помощью `get_page_rect()`.
 1. Извлеките значения ширины и высоты.
 1. Выведите размеры страницы.
 
@@ -97,9 +97,9 @@ def get_page_size(input_file_name, output_file_name):
 
 1. Откройте PDF как [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Получите доступ к первой [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
-1. Применить вращение на 90° используя `page.rotate = ap.Rotation.ON90` (см. [`Rotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rotation/) enum).
-1. Получить прямоугольник страницы без учета поворота с использованием `get_page_rect(False)` и вывести её ширину и высоту.
-1. Получить прямоугольник страницы с учётом поворота, используя `get_page_rect(True)` и вывести её ширину и высоту.
+1. Примените вращение на 90° используя `page.rotate = ap.Rotation.ON90` (см. [`Rotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rotation/) enum).
+1. Получите прямоугольник страницы без учета поворота с использованием `get_page_rect(False)` и выведите её ширину и высоту.
+1. Получите прямоугольник страницы с учётом поворота, используя `get_page_rect(True)` и выведите её ширину и высоту.
 1. Сравните, как изменяются размеры из‑за поворота.
 
 ```python
