@@ -11,7 +11,8 @@ sitemap:
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Establecer permisos de PDF y gestionar el cifrado en Python
-Abstract: Esta página de documentación explica cómo establecer privilegios de documento, aplicar cifrado y descifrar archivos PDF usando Aspose.PDF for Python. Guía a los desarrolladores a través de la configuración de contraseñas de usuario y de propietario, definiendo restricciones de acceso (como imprimir, copiar o editar). Los ejemplos de código ilustran cómo proteger contenido sensible y gestionar la seguridad de PDF de manera eficaz dentro de aplicaciones Python, garantizando un acceso controlado y la confidencialidad de los datos.
+Abstract: >
+    Esta página de documentación explica cómo establecer privilegios de documento, aplicar cifrado y descifrar archivos PDF usando Aspose.PDF for Python. Guía a los desarrolladores a través de la configuración de contraseñas de usuario y de propietario, definiendo restricciones de acceso (como imprimir, copiar o editar). Los ejemplos de código ilustran cómo proteger contenido sensible y gestionar la seguridad de PDF de manera eficaz dentro de aplicaciones Python, garantizando un acceso controlado y la confidencialidad de los datos.
 ---
 
 ## Cifrar PDF con contraseña y permisos

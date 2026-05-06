@@ -11,7 +11,8 @@ sitemap:
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Combinar páginas PDF usando Python
-Abstract: Este artículo aborda la necesidad común de combinar varios archivos PDF en un único documento, un proceso valioso para organizar y optimizar el almacenamiento y la compartición de contenido PDF. Explora el uso de Aspose.PDF for Python via .NET para combinar eficientemente archivos PDF, reconociendo que combinar PDFs en Python puede ser un desafío sin bibliotecas de terceros. El artículo brinda una guía paso a paso para concatenar archivos PDF: crear un nuevo documento, combinar los archivos y guardar el documento combinado. Un fragmento de código muestra la implementación usando Aspose.PDF, resaltando la capacidad de la biblioteca para simplificar el proceso de combinación. Además, presenta Aspose.PDF Merger, una herramienta en línea para combinar PDFs, que permite a los usuarios explorar la funcionalidad en un entorno web.
+Abstract: >
+    Este artículo aborda la necesidad común de combinar varios archivos PDF en un único documento, un proceso valioso para organizar y optimizar el almacenamiento y la compartición de contenido PDF. Explora el uso de Aspose.PDF for Python via .NET para combinar eficientemente archivos PDF, reconociendo que combinar PDFs en Python puede ser un desafío sin bibliotecas de terceros. El artículo brinda una guía paso a paso para concatenar archivos PDF: crear un nuevo documento, combinar los archivos y guardar el documento combinado. Un fragmento de código muestra la implementación usando Aspose.PDF, resaltando la capacidad de la biblioteca para simplificar el proceso de combinación. Además, presenta Aspose.PDF Merger, una herramienta en línea para combinar PDFs, que permite a los usuarios explorar la funcionalidad en un entorno web.
 ---
 
 ## Combinar archivos PDF usando Python y DOM
