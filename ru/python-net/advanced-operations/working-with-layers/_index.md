@@ -19,20 +19,20 @@ Abstract: В этой статье объясняется, как работат
 С Aspose.PDF for Python via .NET вы можете:
 
 - Добавьте несколько слоёв на страницу.
-- Блокировать и разблокировать слои, чтобы контролировать поведение видимости.
-- Извлечь слои в отдельные файлы или потоки.
-- Свести многослойное содержимое в страницу.
-- Объединить несколько слоёв в один слой.
+- Блокируйте и разблокировать слои, чтобы контролировать поведение видимости.
+- Извлеките слои в отдельные файлы или потоки.
+- Сведите многослойное содержимое в страницу.
+- Объедините несколько слоёв в один слой.
 
 ## Добавить слои в PDF
 
 Этот пример создает PDF с тремя уровнями. Он использует [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), добавляет a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/), и добавляет [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) объекты к этой странице.
 
-1. Создать новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) и добавить a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Создайте новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) и добавьте a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
 1. Создайте и добавьте красный слой.
 1. Создайте и добавьте зеленый слой.
 1. Создайте и добавьте синий слой.
-1. Сохранить PDF‑документ.
+1. Сохраните PDF‑документ.
 
 Полученный PDF будет содержать три отдельных слоя: красную линию, зеленую линию и синюю линию. Каждый из них можно включать и выключать в PDF‑просмотрщиках, поддерживающих многослойный контент.
 
@@ -113,8 +113,8 @@ def lock_layer(infile: str, outfile: str) -> None:
 
 Чтобы создать новый PDF из слоя, можно использовать следующий фрагмент кода:
 
-1. Загрузить PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Получить доступ к слоям на странице 1 через [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Загрузите PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Получите доступ к слоям на странице 1 через [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
 1. Проверьте, существуют ли слои.
 1. Переберите слои и сохраните каждый из них.
 
@@ -164,7 +164,7 @@ def extract_layers_stream(infile: str, outfile: str) -> None:
 1. Загрузите PDF-документ.
 1. Доступ к слоям на странице 1.
 1. Проверьте, существуют ли слои.
-1. Свести каждый слой с помощью `layer.flatten(True)`.
+1. Сведите каждый слой с помощью `layer.flatten(True)`.
 1. Сохраните измененный документ.
 
 ```python

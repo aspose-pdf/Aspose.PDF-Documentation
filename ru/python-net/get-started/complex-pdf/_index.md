@@ -24,8 +24,8 @@ sitemap:
 1. Добавьте (описание) в Paragraphs страницы.
 1. Создайте таблицу, добавьте свойства таблицы.
 
-1. Добавить (таблицу) на страницу [параграфы](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
-1. Сохранить документ "Complex.pdf".
+1. Добавьте (таблицу) на страницу [параграфы](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Сохраните документ "Complex.pdf".
 
 ```python
 

@@ -20,14 +20,14 @@ Aspose.PDF for Python via .NET позволяет добавлять [Rectangle]
 
 Следуйте инструкциям ниже:
 
-1. Создать новый PDF [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Добавить [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) в коллекцию страниц PDF‑файла.
-1. Добавить [Текстовый фрагмент](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) в коллекцию абзацев экземпляра страницы.
-1. Создать [Граф](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) экземпляр.
-1. Установить границу для [Объект Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/).
-1. Добавить [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) объект в коллекцию фигур объекта Graph.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) в коллекцию страниц PDF‑файла.
+1. Добавьте [Текстовый фрагмент](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) в коллекцию абзацев экземпляра страницы.
+1. Создайте [Граф](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) экземпляр.
+1. Установите границу для [Объект Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/).
+1. Добавьте [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) объект в коллекцию фигур объекта Graph.
 1. Добавьте объект графика в коллекцию абзацев экземпляра страницы.
-1. Добавить [Текстовый фрагмент](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) в коллекцию абзацев экземпляра страницы.
+1. Добавьте [Текстовый фрагмент](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) в коллекцию абзацев экземпляра страницы.
 1. И сохраните ваш PDF‑файл
 
 ```python

@@ -43,7 +43,7 @@ def delete_page(input_file_name: str, output_file_name: str) -> None:
 
 1. Загрузите входной PDF как [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Удалите страницы, указанные в массиве pages, используя [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. Сохранить обновленное [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) в новый файл.
+1. Сохраните обновленное [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) в новый файл.
 
 ```python
 import aspose.pdf as ap

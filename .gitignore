@@ -229,5 +229,4 @@ logs/
 reports/
 .doctranslate/
 .codex-temp.json
-.agents/
 .cline/

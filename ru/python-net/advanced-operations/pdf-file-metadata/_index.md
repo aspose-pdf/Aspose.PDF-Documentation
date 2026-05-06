@@ -51,7 +51,7 @@ def get_pdf_file_information(infile):
 Aspose.PDF for Python via .NET позволяет задавать специфичную для файла информацию о PDF, такую как автор, дата создания, тема и заголовок. Чтобы задать эту информацию:
 
 1. Откройте PDF-файл, используя класс Document.
-1. Создать [DocumentInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/documentinfo/) объект и установить желаемые свойства метаданных.
+1. Создайте [DocumentInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/documentinfo/) объект и установите желаемые свойства метаданных.
 1. Сохраните изменения в новый PDF‑файл, используя метод save.
 
 Следующий фрагмент кода показывает, как установить информацию о файле PDF.

@@ -21,9 +21,9 @@ Abstract: Артефакты разметки страниц, такие как 
 Чтобы вычислить общее количество артефактов определённого типа (например, общее число водяных знаков), используйте следующий код. Пример фильтрует страницу [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) коллекция (an [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)) по [`Artifact.ArtifactType`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/#properties) а затем подсчитывает подтипы (`Artifact.ArtifactSubtype`).
 
 1. Откройте PDF-документ (см [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
-1. Отфильтровать артефакты пагинации, используя страницу [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) коллекцию.
-1. Подсчитать артефакты по подтипу (`Artifact.ArtifactSubtype`).
-1. Вывести результаты.
+1. Отфильтруйте артефакты пагинации, используя страницу [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) коллекцию.
+1. Подсчитайте артефакты по подтипу (`Artifact.ArtifactSubtype`).
+1. Выведите результаты.
 
 ```python
 

@@ -88,6 +88,21 @@ For code examples:
 - do not silently rewrite API behavior or modernize examples unless asked
 - keep example intent and product naming intact
 
+## Documentation localization style rules
+
+### Russian localization
+
+When editing Russian documentation, use the `ru-step-style` skill.
+
+Russian step-by-step instructions must:
+
+- Start with imperative action verbs: `Создайте`, `Откройте`, `Добавьте`, `Настройте`, `Запустите`.
+- Avoid infinitive headings like `Создать`, `Открыть`, `Добавить`.
+- Use consistent polite imperative form.
+- Keep one main action per step.
+- Prefer: `Создайте объект Document.`
+- Avoid: `Создать объект Document.`
+
 ## Hugo-Specific Guidance
 
 This repo is content-only. Deployment builds happen in CI by cloning an external Hugo template repository and copying this repository into its `content/` folder.

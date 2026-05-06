@@ -18,13 +18,13 @@ Abstract: В этой статье объясняется, как использ
 
 [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/) инструмент является специализированным контейнером для размещения текста и другого контента на странице PDF. Его главная особенность — обрезка текста, когда содержимое превышает границы коробки. Создайте и добавьте `FloatingBox` к a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) используя Aspose.PDF для Python. A `FloatingBox` служит перемещаемым текстовым контейнером, предоставляя больший контроль над позиционированием макета, границами и стилизацией по сравнению с обычными текстовыми абзацами.
 
-1. Создать новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Добавить [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) в документ.
-1. Создать [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/).
-1. Установить границу коробки с помощью [`BorderInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) и [`BorderSide`](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderside/).
+1. Создайте новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Добавьте [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) в документ.
+1. Создайте [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/).
+1. Установите границу коробки с помощью [`BorderInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) и [`BorderSide`](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderside/).
 1. Повторение контрольного окна с [`is_need_repeating`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/#properties) свойство.
-1. Добавить текстовое содержимое с помощью [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/).
-1. Добавить `FloatingBox` к [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Добавьте текстовое содержимое с помощью [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/).
+1. Добавьте `FloatingBox` к [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
 1. Сохраните окончательный PDF документ, используя [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
@@ -248,9 +248,9 @@ def offset_support(outfile):
 1. Создайте новый PDF-документ.
 1. Добавьте Page в Document.
 1. Создайте первый FloatingBox (выравнивание в нижнем правом углу).
-1. Создать второй FloatingBox (центр‑правое выравнивание).
+1. Создайте второй FloatingBox (центр‑правое выравнивание).
 1. Создайте третий FloatingBox (выравнивание в верхнем правом углу).
-1. Сохранить Document.
+1. Сохраните Document.
 
 ```python
 import sys

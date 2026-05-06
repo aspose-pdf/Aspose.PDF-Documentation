@@ -49,7 +49,7 @@ def insert_empty_page(input_file_name: str, output_file_name: str) -> None:
 
 1. Откройте существующий [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) используя соответствующие методы.
 1. Добавьте новую пустую страницу в конец документа, используя [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) `add()` метод.
-1. Сохранить обновленное [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Сохраните обновленное [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
 В следующем фрагменте кода показано, как вставить пустую страницу в конец PDF‑файла.
 
@@ -66,10 +66,10 @@ def add_empty_page_to_end(input_file_name: str, output_file_name: str) -> None:
 
 С помощью Aspose.PDF for Python via .NET вы можете создать новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), добавить начальную страницу, а затем импортировать страницу из другого PDF в неё.
 
-1. Создать новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Добавить новый пустой [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) и написать некоторый текст на нём, используя [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/).
+1. Создайте новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Добавьте новый пустой [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) и написать некоторый текст на нём, используя [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/).
 1. Откройте другой существующий [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Скопировать [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) из этого документа.
+1. Скопируйте [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) из этого документа.
 1. Вставьте скопированную страницу в основной документ, используя [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
 1. Сохраните объединённый файл.
 

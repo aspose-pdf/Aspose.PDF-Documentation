@@ -49,7 +49,7 @@ def clear_text_in_form(input_file_name, output_file_name):
 
 Использовать `set_field_limit(field, limit)` из `FormEditor` определить максимальное количество символов, разрешённых в текстовом поле.
 
-1. Создать `FormEditor` объект.
+1. Создайте `FormEditor` объект.
 1. Привяжите входной PDF.
 1. Установите ограничение поля для целевого поля.
 1. Сохраните обновлённый PDF.
@@ -72,7 +72,7 @@ def set_field_limit(input_file_name, output_file_name):
 1. Загрузите PDF-документ.
 1. Получите доступ к целевому полю формы.
 1. Убедитесь, что поле является `TextBoxField`.
-1. Читать и печатать `max_len`.
+1. Читайте и печатать `max_len`.
 
 ```python
 import aspose.pdf as ap
@@ -93,7 +93,7 @@ def get_field_limit(input_file_name):
 1. Загрузите PDF-документ.
 1. Получите доступ к целевому полю и проверьте его тип.
 1. Найдите шрифт в `FontRepository`.
-1. Применить новое оформление `DefaultAppearance`.
+1. Примените новое оформление `DefaultAppearance`.
 1. Сохраните обновлённый PDF.
 
 ```python
@@ -118,7 +118,7 @@ def set_form_field_font(input_file_name, output_file_name):
 Этот код удаляет конкретное поле формы (по его имени) из PDF‑документа и сохраняет обновлённый файл, используя Aspose.PDF for Python via .NET.
 
 1. Загрузите PDF-документ.
-1. Удалить поле Form по имени.
+1. Удалите поле Form по имени.
 1. Сохраните обновлённый PDF.
 
 ```python
