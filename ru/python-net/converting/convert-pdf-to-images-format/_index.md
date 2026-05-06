@@ -40,8 +40,8 @@ Aspose.PDF for Python объясняет, как преобразовать вс
 
 Шаги: Конвертировать PDF в TIFF в Python
 
-1. Создать объект [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
-1. Создать [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) и [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) объекты
+1. Создайте объект [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
+1. Создайте [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) и [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) объекты
 1. Вызовите [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) метод преобразования PDF-документа в TIFF.
 1. Чтобы установить свойства выходного файла, используйте [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) класс.
 
@@ -95,7 +95,7 @@ Aspose.PDF for Python объясняет, как преобразовать вс
 Шаги: PDF в изображение (BMP, EMF, JPG, PNG, GIF) на Python
 
 1. Загрузите PDF-файл, используя [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
-1. Создать экземпляр подкласса [Устройство изображения](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/) т.е.
+1. Создайте экземпляр подкласса [Устройство изображения](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/) т.е.
    * [BmpDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) (для конвертации PDF в BMP)
    * [EmfDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/emfdevice/) (для конвертации PDF в Emf)
    * [JpegDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/jpegdevice/) (для преобразования PDF в JPG)
@@ -288,9 +288,9 @@ Aspose.PDF for Python поддерживает функцию конвертац
 
 Шаги: Конвертировать PDF в SVG на Python
 
-1. Создать объект [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
-1. Создать [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) объект с необходимыми настройками.
-1. Вызовите [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод и передать его [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) объект конвертирует PDF‑документ в SVG.
+1. Создайте объект [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
+1. Создайте [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) объект с необходимыми настройками.
+1. Вызовите [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод и передайте его [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) объект конвертирует PDF‑документ в SVG.
 
 ### Конвертировать PDF в SVG
 

@@ -30,9 +30,9 @@ Abstract: Эта статья представляет собой всестор
 
 Шаги: преобразовать PDF в PowerPoint с помощью Python
 
-1. Создать экземпляр [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
-1. Создать экземпляр [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) класс.
-1. Вызвать [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод.
+1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс.
+1. Создайте экземпляр [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) класс.
+1. Вызовите [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод.
 
 ```python
 import aspose.pdf as ap

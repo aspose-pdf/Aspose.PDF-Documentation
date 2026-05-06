@@ -116,12 +116,12 @@ print(infile + " converted into " + outfile)
 1. Загрузите входной PDF, используя 'ap.Document'.
 1. Создайте объект 'FileSpecification', указывающий на файл для встраивания (например, "aspose-logo.jpg") с описанием.
 1. Добавьте спецификацию файла в коллекцию 'embedded_files' PDF.
-1. Конвертировать документ в PDF/A-3A с помощью 'document.convert', указав:
+1. Конвертируйте документ в PDF/A-3A с помощью 'document.convert', указав:
     - Путь к файлу журнала.
     - Целевой формат - 'ap.PdfFormat.PDF_A_3A'.
     - Действие при ошибке - 'ap.ConvertErrorAction.DELETE' для удаления некорректных элементов.
 1. Сохраните преобразованный PDF в выходной путь.
-1. Вывести сообщение подтверждения.
+1. Выведите сообщение подтверждения.
 
 ```python
 from os import path
@@ -152,7 +152,7 @@ print(infile + " converted into " + outfile)
     - Формат назначения - 'ap.PdfFormat.PDF_A_1B'.
     - Действие при ошибке - 'ap.ConvertErrorAction.DELETE' для удаления некорректных элементов.
 1. Сохраните преобразованный PDF в выходной путь.
-1. Вывести сообщение подтверждения.
+1. Выведите сообщение подтверждения.
 
 ```python
 from os import path
@@ -185,12 +185,12 @@ print(infile + " converted into " + outfile)
     - Формат назначения - 'ap.PdfFormat.PDF_A_1B'.
     - Действие при ошибке - 'ap.ConvertErrorAction.DELETE' для удаления некорректных элементов.
 1. Настройте ‘AutoTaggingSettings’:
-    - Включить 'enable_auto_tagging = True'.
+    - Включите 'enable_auto_tagging = True'.
     - Установите 'heading_recognition_strategy = AUTO' для автоматического обнаружения заголовков.
 1. Назначьте параметры автотегирования параметрам конвертации.
 1. Конвертируйте PDF, используя 'document.convert(options)'.
 1. Сохраните преобразованный PDF в выходной путь.
-1. Вывести сообщение подтверждения.
+1. Выведите сообщение подтверждения.
 
 ```python
 from os import path
@@ -243,7 +243,7 @@ document.validate(path_logfile, ap.PdfFormat.PDF_E_1)
     - Действие при ошибке - 'ap.ConvertErrorAction.DELETE' для удаления некорректных элементов.
 1. Конвертируйте PDF, используя 'document.convert(options)'.
 1. Сохраните преобразованный PDF в указанный путь вывода.
-1. Вывести сообщение подтверждения.
+1. Выведите сообщение подтверждения.
 
 ```python
 from os import path
@@ -276,9 +276,9 @@ print(infile + " converted into " + outfile)
     - Действие при ошибке - 'ap.ConvertErrorAction.DELETE' для удаления некорректных элементов.
 1. Предоставьте **ICC profile file** для управления цветом через 'icc_profile_file_name'.
 1. Укажите **OutputIntent** с идентификатором условия (например, "FOGRA39") для требований печати.
-1. Конвертировать PDF с помощью 'document.convert()'.
+1. Конвертируйте PDF с помощью 'document.convert()'.
 1. Сохраните преобразованный PDF в указанный путь вывода.
-1. Вывести сообщение подтверждения.
+1. Выведите сообщение подтверждения.
 
 ```python
 from os import path
