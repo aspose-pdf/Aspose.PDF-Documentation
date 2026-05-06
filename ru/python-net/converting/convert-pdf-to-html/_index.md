@@ -21,9 +21,9 @@ Abstract: В этой статье представлено исчерпываю
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в HTML онлайн**
 
-Aspose.PDF for Python представляет вам онлайн бесплатное приложение [PDF в HTML](https://products.aspose.app/pdf/conversion/pdf-to-html), где вы можете попытаться исследовать его функциональность и качество.
+Aspose.PDF for Python представляет вам онлайн-приложение [PDF в HTML](https://products.aspose.app/pdf/conversion/pdf-to-html), где вы можете попытаться исследовать его функциональность и качество.
 
-[![Aspose.PDF Конвертация PDF в HTML с бесплатным приложением](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+[![Aspose.PDF Конвертация PDF в HTML с онлайн-приложением](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
 Шаги: Конвертировать PDF в HTML в Python

@@ -25,9 +25,9 @@ Aspose.PDF for Python via .NET — это компонент для работы
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в Excel онлайн**
 
-Aspose.PDF представляет вам онлайн бесплатное приложение ["PDF в XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), где вы можете попытаться исследовать функциональность и качество, как это работает.
+Aspose.PDF представляет вам онлайн-приложение ["PDF в XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), где вы можете попытаться исследовать функциональность и качество, как это работает.
 
-[![Aspose.PDF конвертация PDF в Excel с бесплатным приложением](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![Aspose.PDF конвертация PDF в Excel с онлайн-приложением](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
 Следующий фрагмент кода показывает процесс преобразования PDF‑файла в формат XLS или XLSX с помощью Aspose.PDF for Python via .NET.

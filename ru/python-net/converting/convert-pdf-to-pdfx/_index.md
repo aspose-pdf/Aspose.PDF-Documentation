@@ -31,9 +31,9 @@ Abstract: В статье представлено подробное руков
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в PDF/A онлайн**
 
-Aspose.PDF for Python представляет вам онлайн бесплатное приложение ["PDF в PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), где вы можете попытаться изучить функциональность и качество его работы.
+Aspose.PDF for Python представляет вам онлайн приложение ["PDF в PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), где вы можете попытаться изучить функциональность и качество его работы.
 
-[![Aspose.PDF Конвертация PDF в PDF/A с бесплатным приложением](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+[![Aspose.PDF Конвертация PDF в PDF/A с приложением](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
 Метод 'document.validate()' проверяет, соответствует ли PDF‑файл стандарту PDF/A-1B (ISO‑стандартизированная версия PDF, предназначенная для долгосрочного архивирования). Результаты проверки сохраняются в файл журнала.

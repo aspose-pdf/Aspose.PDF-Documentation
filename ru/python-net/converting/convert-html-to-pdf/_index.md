@@ -49,9 +49,9 @@ print(infile + " converted into " + outfile)
 {{% alert color="success" %}}
 **Попробуйте конвертировать HTML в PDF онлайн**
 
-Aspose представляет бесплатное онлайн‑приложение [HTML в PDF](https://products.aspose.app/html/en/conversion/html-to-pdf), где вы можете проверить качество преобразования и вывод.
+Aspose представляет онлайн‑приложение [HTML в PDF](https://products.aspose.app/html/en/conversion/html-to-pdf), где вы можете проверить качество преобразования и вывод.
 
-[![Aspose.PDF Конвертация HTML в PDF с помощью бесплатного приложения](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
+[![Aspose.PDF Конвертация HTML в PDF с помощью приложения](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
 {{% /alert %}}
 
 ## Конвертировать HTML в PDF, используя тип медиа
