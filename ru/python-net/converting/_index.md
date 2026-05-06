@@ -36,11 +36,11 @@ Aspose.PDF for Python via .NET позволяет преобразовывать
 
 Форматы чисел нужны не только для того, чтобы сделать данные в таблице более читабельными, но и для того, чтобы сделать таблицу более удобной в использовании. Конечно, если вам нужно конвертировать такие данные из PDF-документа в формат Excel, используйте нашу библиотеку Aspose.PDF.
 
-- [Преобразование PDF в Microsoft Excel](/pdf/ru/python-net/convert-pdf-to-excel/) - в этом разделе описано, как преобразовать PDF-документ в форматы XLSX, ODS, CSV и SpreadSheetML
+- [Конвертировать PDF в Microsoft Excel](/pdf/ru/python-net/convert-pdf-to-excel/) - в этом разделе описано, как преобразовать PDF-документ в форматы XLSX, ODS, CSV и SpreadSheetML
 
 Формат PowerPoint используется для создания различных презентаций. PPT файлы содержат большое количество слайдов или страниц с различной информацией.
 
-- [Преобразование PDF в Microsoft PowerPoint](/pdf/ru/python-net/convert-pdf-to-powerpoint/) - здесь мы говорим о преобразовании PDF в PowerPoint, отслеживая процесс конвертации
+- [Конвертировать PDF в Microsoft PowerPoint](/pdf/ru/python-net/convert-pdf-to-powerpoint/) - здесь мы говорим о преобразовании PDF в PowerPoint, отслеживая процесс конвертации
 
 Язык гипертекстовой разметки - это язык описания гипертекстовых документов, стандартный язык для создания веб-страниц. С помощью Aspose.PDF для Python вы можете легко конвертировать HTML-документы и наоборот.
 
@@ -55,9 +55,9 @@ Aspose.PDF for Python via .NET позволяет преобразовывать
 
 - [Конвертировать PDF файл в другие форматы](/pdf/ru/python-net/convert-pdf-to-other-files/) - эта тема описывает способы конвертации PDF документа в различные форматы
 
-- [Преобразование PDF/x в PDF](/pdf/python-net/convert-pdf_x-to-pdf/) - в этой теме описывается преобразование PDF/UA и PDF/A в PDF.
+- [Конвертировать PDF/x в PDF](/pdf/python-net/convert-pdf_x-to-pdf/) - в этой теме описывается преобразование PDF/UA и PDF/A в PDF.
 
-- [Преобразование PDF в PDF/x](/pdf/python-net/convert-pdf-to-pdf_x/) - в этой теме описывается преобразование PDF в форматы PDF/A, PDF/E и PDF/X.
+- [Конвертировать PDF в PDF/x](/pdf/python-net/convert-pdf-to-pdf_x/) - в этой теме описывается преобразование PDF в форматы PDF/A, PDF/E и PDF/X.
 
 ## Попробуйте преобразовать PDF файлы онлайн
 
