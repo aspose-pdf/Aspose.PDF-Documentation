@@ -1,5 +1,5 @@
 ---
-title: Установить свойства элементов структуры Tagged PDF в Python
+title: Установка свойства элементов структуры Tagged PDF в Python
 linktitle: Настройка свойств Structure Elements
 type: docs
 weight: 30

@@ -1,5 +1,5 @@
 ---
-title: Доступность Tagged PDF в Python
+title: Доступность и Tagged PDF в Python
 linktitle: PDF-файлы с тегами
 type: docs
 weight: 180
