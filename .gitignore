@@ -228,5 +228,4 @@ src/
 logs/
 reports/
 .doctranslate/
-.codex-temp.json
-.cline/
+.agents/skills/translate-hugo-docs/scripts
