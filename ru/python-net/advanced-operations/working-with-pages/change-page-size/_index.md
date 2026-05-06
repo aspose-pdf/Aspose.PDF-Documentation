@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Изменение размера страницы с помощью Python
-Abstract: Эта статья демонстрирует, как читать и изменять размеры страниц PDF с помощью Aspose.PDF. Пример «Get Page Size» извлекает ширину и высоту конкретной страницы PDF, позволяя пользователям проверять макет страницы, валидировать форматирование или анализировать структуру документа. Пример «Set Page Size» показывает, как изменить размеры страницы — например, преобразовать первую страницу к формату A4 — одновременно отображая свойства коробки (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) до и после изменения.
+Abstract: Эта статья демонстрирует, как читать и изменять размеры страниц PDF с помощью Aspose.PDF. Пример «Get Page Size» извлекает ширину и высоту конкретной страницы PDF, позволяя пользователям проверять макет страницы, валидировать форматирование или анализировать структуру документа. Пример «Set Page Size» показывает, как изменить размеры страницы — например, преобразовать первую страницу к формату A4 — одновременно отображая свойства ограничителя (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) до и после изменения.
 ---
 
 Aspose.PDF for Python via .NET позволяет менять размер страниц PDF простыми строками кода. Эта тема показывает, как обновлять размеры страниц с помощью [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) и [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API.
@@ -26,14 +26,14 @@ Aspose.PDF for Python via .NET позволяет менять размер ст
 
 ## Установите размер страницы PDF на A4
 
-В примере размер первой страницы PDF‑документа обновляется до стандартных размеров A4. Он также выводит размеры коробки страницы (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) до и после изменения размера, чтобы вы могли проверить изменения.
+В примере размер первой страницы PDF‑документа обновляется до стандартных размеров A4. Он также выводит размеры ограничителя страницы (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) до и после изменения размера, чтобы вы могли проверить изменения.
 
 Следующий фрагмент кода показывает, как изменить размеры страницы PDF до формата A4:
 
 1. Получите доступ к первой [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) из [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Отобразить размеры коробок страницы до изменения (CropBox, TrimBox, ArtBox, BleedBox, MediaBox).
+1. Отобразить размеры уменьшеной страницы до изменения (CropBox, TrimBox, ArtBox, BleedBox, MediaBox).
 1. Применить размеры A4 (597.6 × 842.4 points) с помощью API страницы.
-1. Отобразить обновленные размеры коробок страницы.
+1. Отобразить обновленные размеры уменьшеной страницы.
 1. Сохраните изменённый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) к указанному пути вывода.
 
 ```python
@@ -73,7 +73,7 @@ def set_page_size(input_file_name, output_file_name):
 
 1. Загрузите PDF как [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Получите доступ к первой [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
-1. Получить ограничивающий прямоугольник страницы с помощью `get_page_rect()`.
+1. Получить обрезанный прямоугольник страницы с помощью `get_page_rect()`.
 1. Извлеките значения ширины и высоты.
 1. Выведите размеры страницы.
 
