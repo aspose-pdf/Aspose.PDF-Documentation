@@ -1,41 +1,39 @@
 ---
-title: Rotate Text Inside PDF using Python
+title: Rotate PDF Text in Python
 linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50
 url: /python-net/rotate-text-inside-pdf/
 description: Learn how to rotate text fragments and paragraphs inside PDF documents in Python.
-lastmod: "2026-04-17"
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to rotate Text in PDF with Python
-Abstract: The article provides a detailed guide on how to rotate text within a PDF document using the Aspose.PDF library for Python via .NET. It describes the utilization of the `Rotation` property of the `TextFragment` class to achieve text rotation at various angles, which is useful in multiple document generation scenarios. Demonstrates creating text fragments with specified rotation angles and adding them to a PDF page using a `TextBuilder'. Illustrates how to append rotated text fragments to a `TextParagraph` and then add the paragraph to a PDF page. Shows how to add rotated text fragments directly to the page's paragraph collection.Explains rotating an entire paragraph with multiple text fragments.
+AlternativeHeadline: Rotate text fragments and paragraphs in PDF documents with Python
+Abstract: This article explains how to rotate text in PDF documents using Aspose.PDF for Python via .NET. It shows how to set the `rotation` property on `TextFragment`, build rotated content with `TextBuilder` and `TextParagraph`, and add rotated text directly to page paragraphs for different layout scenarios.
 ---
 
-Rotate text fragments in a PDF document using Aspose.PDF for Python via .NET. It shows how to precisely control the position and rotation of individual text elements by combining the 'TextFragment', 'TextState', and 'TextBuilder' classes. By adjusting the rotation angle for each text fragment, you can create visually dynamic layouts, such as diagonal headers, vertical labels, or rotated annotations.
+Rotate text fragments in a PDF document using Aspose.PDF for Python via .NET. This page shows how to control the position and rotation of text by using `TextFragment`, `TextState`, and `TextBuilder`. By adjusting rotation angles, you can create layouts such as diagonal headers, vertical labels, and rotated annotations.
 
 ## Rotate Text Fragments Using TextBuilder in PDF
 
-Creates a PDF file named rotated_fragments.pdf containing three text fragments aligned horizontally:
+Creates a PDF file named `rotated_fragments.pdf` containing three text fragments aligned horizontally:
 
 - the first text is unrotated
 - the second is rotated 45°
 - the third is rotated 90°
 
-1. Create a New PDF Document.
+1. Create a new PDF document.
 1. Insert a new page to host the rotated text.
-1. Create the First Text Fragment - No Rotation.
-1. Create the Second Text Fragment - 45° Rotation.
-1. Create the Third Text Fragment - 90° Rotation.
-1. Add Text Fragments Using TextBuilder.
-1. Save the Document.
+1. Create the first text fragment (no rotation).
+1. Create the second text fragment (45° rotation).
+1. Create the third text fragment (90° rotation).
+1. Add text fragments using `TextBuilder`.
+1. Save the document.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
 def rotate_text_inside_pdf_1(outfile):
     # Create PDF document
@@ -83,26 +81,24 @@ def rotate_text_inside_pdf_1(outfile):
 
 Rotate individual text fragments within a paragraph. It shows how to build a multi-line paragraph (TextParagraph) containing multiple fragments (TextFragment), each with its own rotation angle. This technique is useful for creating visually rich documents that combine horizontally and diagonally oriented text — for example, stylized headers, diagrams, or annotated labels.
 
-Creates a PDF named rotated_paragraph_fragments.pdf containing a paragraph with three lines of text, each line rotated differently:
+Creates a PDF named `rotated_paragraph_fragments.pdf` containing a paragraph with three lines of text, each line rotated differently:
 
- - the first line is rotated 45°
- - the second line remains horizontal (0°)
- - the third line is rotated -45°
+- the first line is rotated 45°
+- the second line remains horizontal (0°)
+- the third line is rotated -45°
 
-1. Create a New PDF Document.
+1. Create a new PDF document.
 1. Add a blank page where the rotated text will appear.
-1. Create a TextParagraph.
-1. Create and Configure the First Text Fragment - 45° Rotation.
-1. Create the Second Text Fragment - No Rotation.
-1. Create the Third Text Fragment - 45° Rotation.
-1. Append Text Fragments to the Paragraph.
-1. Add the Paragraph to the Page Using TextBuilder.
-1. Save the Document.
+1. Create a `TextParagraph`.
+1. Create and configure the first text fragment (+45° rotation).
+1. Create the second text fragment (no rotation).
+1. Create the third text fragment (-45° rotation).
+1. Append text fragments to the paragraph.
+1. Add the paragraph to the page using `TextBuilder`.
+1. Save the document.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
 def rotate_text_inside_pdf_2(outfile):
     # Create PDF document
@@ -151,27 +147,25 @@ def rotate_text_inside_pdf_2(outfile):
 
 ## Rotate Text Using Page Paragraphs in PDF
 
-Simplified method for rotating text within a PDF using Aspose.PDF for Python via .NET.
-Unlike lower-level approaches with TextBuilder or TextParagraph, this method adds rotated text fragments directly to the page’s paragraph collection (page.paragraphs). It's ideal for cases where you need basic text rotation but don’t require precise positioning or paragraph structuring. This approach simplifies layout creation, automatically handling text placement on the page while still allowing for individual text rotation control.
+This section demonstrates a simplified method for rotating text within a PDF using Aspose.PDF for Python via .NET.
+Unlike lower-level approaches with `TextBuilder` or `TextParagraph`, this method adds rotated text fragments directly to the page’s paragraph collection (`page.paragraphs`). It is ideal when you need basic text rotation but do not require precise positioning or paragraph structuring.
 
-Generates a file named 'simple_rotated_text.pdf' containing:
+Generates a file named `simple_rotated_text.pdf` containing:
 
- - a main horizontal text fragment 0° rotation
- - 315° rotated fragment
- - 270° rotated fragment
+- a main horizontal text fragment 0° rotation
+- 315° rotated fragment
+- 270° rotated fragment
 
 1. Initialize a new PDF document.
 1. Create a page where the rotated text will be placed.
-1. Create the First Text Fragment - No Rotation.
-1. Create the Second Text Fragment - 315° Rotation.
-1. Create the Third Text Fragment - 270° Rotation.
-1. Add Text Fragments Directly to Page Paragraphs.
-1. Save the PDF Document.
+1. Create the first text fragment (no rotation).
+1. Create the second text fragment (315° rotation).
+1. Create the third text fragment (270° rotation).
+1. Add text fragments directly to page paragraphs.
+1. Save the PDF document.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
 def rotate_text_inside_pdf_3(outfile):
     # Create PDF document
@@ -213,30 +207,28 @@ def rotate_text_inside_pdf_3(outfile):
 
 ## Rotate Entire Paragraphs in a PDF
 
-Our library shows advanced paragraph-level text rotation in a PDF. Unlike fragment-level rotation (where each text piece is rotated individually), this method rotates entire paragraphs as unified blocks at different angles.
+This example demonstrates advanced paragraph-level text rotation in a PDF. Unlike fragment-level rotation (where each text piece is rotated individually), this method rotates entire paragraphs as unified blocks at different angles.
 Each paragraph contains multiple styled text fragments, and the full paragraph is rotated at specific angles — allowing for complex, consistent layout transformations.
 This is ideal for artistic layouts, watermarks, or design-heavy PDFs where entire text sections need to be oriented in various directions.
 
-Creates 'rotated_paragraphs.pdf', containing four fully styled and rotated paragraphs:
+Creates `rotated_paragraphs.pdf`, containing four fully styled and rotated paragraphs:
 
 - each rotated at a unique angle (45°, 135°, 225°, and 315°)
 - each paragraph has three lines of text with colored backgrounds, underlining, and consistent styling
 
-1. Create a New PDF Document.
+1. Create a new PDF document.
 1. Add a blank page to hold the rotated paragraphs.
-1. Iterate to Create Multiple Paragraphs.
-1. Create and Position the Paragraph.
-1. Create Text Fragments with Formatting.
-1. Apply Text Formatting.
-1. Add Text Fragments to the Paragraph.
-1. Append Paragraph to the Page Using TextBuilder.
-1. Repeat for All Four Rotations.
-1. Save the PDF Document.
+1. Iterate to create multiple paragraphs.
+1. Create and position the paragraph.
+1. Create text fragments with formatting.
+1. Apply text formatting.
+1. Add text fragments to the paragraph.
+1. Append the paragraph to the page using `TextBuilder`.
+1. Repeat for all four rotations.
+1. Save the PDF document.
 
 ```python
-import sys
 import aspose.pdf as ap
-from os import path
 
 def rotate_text_inside_pdf_4(outfile):
     # Create PDF document
@@ -293,4 +285,4 @@ def rotate_text_inside_pdf_4(outfile):
 - [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
 - [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
 - [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
-- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
+- [Replace text in PDF with Python](/pdf/python-net/replace-text-in-pdf/)

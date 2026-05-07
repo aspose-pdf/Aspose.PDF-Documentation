@@ -1,24 +1,24 @@
 ---
-title: Extract Table from PDF Document
+title: Extract Tables from PDF in Python
 linktitle: Extract Table
 type: docs
 weight: 20
 url: /python-net/extracting-table/
 description: Learn how to extract table data from existing PDF documents in Python.
-lastmod: "2026-04-17"
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to extract Table from PDF using Python
-Abstract: This article discusses the process of extracting tables from PDF documents using Python, specifically leveraging the Aspose.PDF for Python via .NET Library. It provides a code example demonstrating how to load a PDF document, iterate through its pages, and utilize the `TableAbsorber` class to identify and extract table data. The code iterates through each table, row, and cell, collecting text fragments and printing the extracted text. This method is highlighted as a powerful tool for data extraction and analysis tasks involving tabular data within PDFs.
+AlternativeHeadline: Extract table data from PDF files with Python
+Abstract: This article explains how to extract tables from PDF documents using Aspose.PDF for Python via .NET. It shows how to use `TableAbsorber` to detect tables by page, iterate rows and cells, and retrieve cell text for analysis and downstream data processing.
 ---
 
 ## Extract Table from PDF
 
-Extracting tables from PDFs using Python can be incredibly useful for data extraction and analysis. With the Aspose.PDF for Python via .NET Library, you can efficiently work with tables embedded in PDF documents for various data-related tasks.
+Extracting tables from PDFs is useful for reporting, data migration, and analytics workflows. With Aspose.PDF for Python via .NET, you can detect and read table content from existing PDF documents efficiently.
 
-This code snippet opens an existing PDF file, scans each page for tables, and extracts their cell text content. It uses the 'TableAbsorber' to detect tables and then iterates through rows and cells to print out the text inside.
+This code snippet opens an existing PDF file, scans each page for tables, and extracts cell text content. It uses `TableAbsorber` to detect tables and then iterates through rows and cells to print the extracted text.
 
 1. Loads the PDF into an ap.Document object.
 1. Loop through pages.

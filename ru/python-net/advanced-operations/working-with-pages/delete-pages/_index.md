@@ -1,99 +1,64 @@
 ---
-title: Программное удаление страниц PDF на Python
+title: Удалить страницы PDF в Python
 linktitle: Удаление страниц PDF
 type: docs
 weight: 80
 url: /ru/python-net/delete-pages/
-description: Вы можете удалить страницы из вашего PDF-файла, используя библиотеку Aspose.PDF для Python через .NET.
-lastmod: "2023-04-17"
+description: Узнайте, как удалять страницы из файлов PDF в Python.
+lastmod: "2026-04-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Удалить одну или несколько страниц PDF в Python
+Abstract: В этой статье объясняется, как удалять страницы из файлов PDF с использованием Aspose.PDF for Python via .NET. Узнайте, как удалить одну страницу или несколько страниц из документа, используя API PageCollection, а затем сохранить обновлённый PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Программное удаление страниц PDF на Python",
-    "alternativeHeadline": "Как удалить страницы PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "создание PDF-документов",
-    "keywords": "pdf, python, удаление страниц pdf, удаление страниц из pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/delete-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/delete-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Вы можете удалить страницы из вашего PDF-файла, используя библиотеку Aspose.PDF для Python через .NET."
-}
-</script>
 
+Вы можете удалять страницы из файла PDF, используя Aspose.PDF for Python via .NET. Чтобы удалить определённую страницу, используйте [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) из [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
-Вы можете удалить страницы из PDF-файла, используя Aspose.PDF для Python через .NET. Чтобы удалить определённую страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+Используйте этот рабочий процесс, когда вам нужно удалить ненужные страницы из PDF перед передачей, архивированием или объединением документов.
 
 ## Удалить страницу из PDF-файла
 
-1. Вызовите метод [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) и укажите индекс страницы
-1. Вызовите метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) для сохранения обновленного PDF-файла
-Следующий фрагмент кода показывает, как удалить определённую страницу из PDF-файла, используя Python.
+Aspose.PDF for Python via .NET удаляет страницу 2 из входного PDF и сохраняет обновленный документ в новый файл. Эта функция полезна для удаления ненужных или конфиденциальных страниц без изменения остальной части документа.
+
+1. Загрузите входной PDF как [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Удалите страницу с помощью [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Вызовите [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод для сохранения обновлённого PDF‑файла.
+
+Следующий фрагмент кода показывает, как удалить определённую страницу из PDF‑файла с помощью Python.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Открыть документ
-    document = ap.Document(input_pdf)
-
-    # Удалить определённую страницу
+def delete_page(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
     document.pages.delete(2)
+    document.save(output_file_name)
+```
 
-    # Сохранить обновленный PDF
-    document.save(output_pdf)
+## Удалить несколько страниц из PDF‑документа
+
+Удаление нескольких страниц позволяет удалить набор указанных страниц за одну операцию, что эффективнее, чем удалять страницы по одной. Полученный PDF сохраняется в новый файл, при этом оригинальный документ сохраняется.
+
+1. Загрузите входной PDF как [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Удалите страницы, указанные в массиве pages, используя [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Сохраните обновленное [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) в новый файл.
+
+```python
+import aspose.pdf as ap
+
+def delete_multiple_pages(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
+    # Example: delete pages 2, 3, and 4.
+    pages = [2, 3, 4]
+    document.pages.delete(pages)
+    document.save(output_file_name)
+```
+
+## Связанные темы страницы
+
+- [Работа с PDF-страницами в Python](/pdf/ru/python-net/working-with-pages/)
+- [Добавить страницы PDF в Python](/pdf/ru/python-net/add-pages/)
+- [Переместить страницы PDF в Python](/pdf/ru/python-net/move-pages/)
+- [Извлечь страницы PDF в Python](/pdf/ru/python-net/extract-pages/)

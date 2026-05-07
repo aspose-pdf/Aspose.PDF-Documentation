@@ -287,6 +287,10 @@ def split_documents_into_three_parts(infile, outdir):
             part_document.save(path.join(outdir, f"Three_Parts_{part_index + 1}.pdf"))
 ```
 
+## Custom PDF Page Splitter
+
+Split a PDF document into multiple files based on custom-defined page groups using Aspose.PDF for Python.
+
 ```python
 import sys
 import aspose.pdf as ap
@@ -312,6 +316,9 @@ def split_documents_custom_page_groups(infile, outdir):
             group_document.save(path.join(outdir, f"Custom_Group_{group_index}.pdf"))
 ```
 
+## Split PDF into Individual Pages with Stable Filenames
+
+Split a PDF document into individual pages and save them with stable filenames using Aspose.PDF for Python.
 
 ```python
 import sys
@@ -329,7 +336,9 @@ def split_documents_with_stable_filenames(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num:03d}.pdf"))
 ```
 
+## Split PDF into Odd and Even Pages
 
+Split a PDF document into two separate files containing odd and even pages respectively using Aspose.PDF for Python.
 
 ```python
 import sys

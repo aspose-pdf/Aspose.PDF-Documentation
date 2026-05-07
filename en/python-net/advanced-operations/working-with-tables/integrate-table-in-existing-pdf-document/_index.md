@@ -1,11 +1,11 @@
 ---
-title: Integrate Table with Data Sources PDF
+title: Integrate PDF Tables with Data Sources in Python
 linktitle: Integrate Table
 type: docs
 weight: 30
 url: /python-net/integrate-table/
 description: Learn how to integrate PDF tables with data sources such as databases and pandas DataFrames in Python.
-lastmod: "2026-04-17"
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -16,14 +16,15 @@ Abstract: This article explains how to integrate PDF tables with external data s
 
 ## Create PDF from DataFrame
 
-The function 'create_pdf_from_dataframe' takes a  DataFrame and converts it into a table inside a new PDF. It creates a fresh PDF document, adds a page, generates a table from the DataFrame (using a helper method), and saves the result to the given file path. And it's not only possible but it's very easy.
+The `create_pdf_from_dataframe` function builds a new PDF and inserts a table generated from a pandas DataFrame. This approach is useful for reporting workflows where your data already exists in tabular form.
 
-Use this page when you need to generate PDF tables from application data, structured datasets, or reporting pipelines in Python.
+The function performs the following steps:
 
-1. Initializes an empty PDF document with 'ap.Document()'.
-1. The 'self.create_table_from_dataframe(df, max_rows)' function transforms the DataFrame into an Aspose.PDF table object.
-1. Insert table into PDF page. Adds the generated table to the first page’s content (page.paragraphs.add(table)).
-1. Save PDF document.
+1. Create an empty PDF document with `ap.Document()`.
+1. Add a page to the document.
+1. Convert the DataFrame into an Aspose.PDF table by calling `create_table_from_dataframe(df, max_rows)`.
+1. Add the table to the page with `page.paragraphs.add(table)`.
+1. Save the PDF to the output path.
 
 ```python
 from os import path
@@ -49,14 +50,15 @@ def create_pdf_from_dataframe(
 
 ## Create Table from DataFrame
 
-This code converts DataFrame into an Aspose.PDF Table object. It sets up table borders, adds a header row with column names, and fills the table with the first max_rows rows from the DataFrame. The resulting Table can then be added to a PDF document.
+The `create_table_from_dataframe` function converts a DataFrame into an Aspose.PDF `Table` object that you can add to any page.
 
-1. Creates an empty 'ap.Table()' object.
-1. Set table border.
-1. Set default cell border.
-1. Add header row.
-1. Add data rows.
-1. Return the table.
+It does the following:
+
+1. Create an empty `ap.Table()` instance.
+1. Set table and cell borders for consistent formatting.
+1. Add a header row using DataFrame column names.
+1. Add data rows from `df.head(max_rows)`.
+1. Return the populated table object.
 
 ```python
 from os import path

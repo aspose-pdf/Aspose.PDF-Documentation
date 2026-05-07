@@ -235,6 +235,25 @@ import sys
 
 def add_named_action_print(infile, outfile):
     document = ap.Document(infile)
+    page = document.pages[1]
+
+    # Create print button with specific dimensions and position
+    rect = Rectangle(10, 10, 100, 40, True)
+    print_button = ButtonField(page, rect)
+    print_button.partial_name = "printButton"
+    print_button.value = "Print"
+    print_button.actions.on_release_mouse_btn = NamedAction(PredefinedAction.FILE_PRINT)
+
+    # Add border for better visibility
+    border = ap.annotations.Border(print_button)
+    border.width = 1
+    print_button.border = border
+
+    # Add button to the form on page 1
+    document.form.add(print_button, 1)
+    document.save(outfile)
+```
+
 This code snippet demonstrates how to add a "Print" button to the first page of a PDF document. It begins by loading the PDF from the specified input file path and selecting the first page (document.pages[1]).
 
 A rectangular area is defined for the button's position and size on the page. A ButtonField is then created at this location, given the name "printButton," and its display value is set to "Print." The button is configured so that when it is clicked (specifically, when the mouse button is released), it triggers the predefined "Print File" action, prompting the PDF viewer to open the print dialog.

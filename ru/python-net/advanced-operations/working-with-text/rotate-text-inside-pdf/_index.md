@@ -1,315 +1,296 @@
 ---
-title: Поворот текста внутри PDF с использованием Python
-linktitle: Поворот текста внутри PDF
+title: Повернуть текст внутри PDF с использованием Python
+linktitle: Повернуть текст внутри PDF
 type: docs
 weight: 50
 url: /ru/python-net/rotate-text-inside-pdf/
-description: Узнайте различные способы поворота текста в PDF. Aspose.PDF позволяет поворачивать текст на любой угол, поворачивать фрагмент текста или целый абзац.
-lastmod: "2024-02-17"
+description: Узнайте, как вращать фрагменты текста и абзацы внутри PDF‑документов на Python.
+lastmod: "2026-04-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как повернуть текст в PDF с помощью Python
+Abstract: Статья предоставляет подробное руководство о том, как вращать текст в PDF‑документе с использованием библиотеки Aspose.PDF для Python через .NET. В ней описывается использование свойства `Rotation` класса `TextFragment` для выполнения вращения текста под различными углами, что полезно в различных сценариях генерации документов. Демонстрируется создание фрагментов текста с указанными углами вращения и их добавление на страницу PDF с помощью `TextBuilder`. Показано, как добавлять повернутые фрагменты текста к `TextParagraph` и затем добавлять абзац на страницу PDF. Показано, как добавить повернутые фрагменты текста непосредственно в коллекцию абзацев страницы. Объясняется вращение целого абзаца с несколькими фрагментами текста.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Поворот текста внутри PDF с использованием Python",
-    "alternativeHeadline": "Как повернуть текст в PDF файле",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "создание pdf документов",
-    "keywords": "pdf, python, создание документов",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/rotate-text-inside-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/rotate-text-inside-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Узнайте различные способы поворота текста в PDF. Aspose.PDF позволяет поворачивать текст на любой угол, поворачивать фрагмент текста или целый абзац."
-}
-</script>
 
+Повернуть фрагменты текста в PDF‑документе с помощью Aspose.PDF for Python via .NET. Он показывает, как точно контролировать позицию и вращение отдельных текстовых элементов, комбинируя классы 'TextFragment', 'TextState' и 'TextBuilder'. Регулируя угол вращения для каждого фрагмента текста, вы можете создавать визуально динамичные макеты, такие как диагональные заголовки, вертикальные метки или повернутые аннотации.
 
-## Поворот текста внутри PDF с использованием свойства вращения
+## Поворот фрагментов текста с использованием TextBuilder в PDF
 
-Используя свойство Rotation класса [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment), вы можете поворачивать текст под различными углами. Поворот текста может быть использован в различных сценариях генерации документа. Вы можете указать угол поворота в градусах, чтобы повернуть текст по вашему требованию. Пожалуйста, ознакомьтесь со следующими различными сценариями, в которых вы можете реализовать поворот текста.
+Создаёт PDF‑файл с именем rotated_fragments.pdf, содержащий три фрагмента текста, выровненные по горизонтали:
 
-## Реализация поворота с использованием TextFragment и TextBuilder
+- первый текст не повернут
+- второй повернут на 45°
+- третий повернут на 90°
 
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, посетите https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Инициализировать объект документа
-Document pdfDocument = new Document();
-// Получить конкретную страницу
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// Создать текстовый фрагмент
-TextFragment textFragment1 = new TextFragment("main text");
-textFragment1.Position = new Position(100, 600);
-// Установить свойства текста
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// Создать повернутый текстовый фрагмент
-TextFragment textFragment2 = new TextFragment("rotated text");
-textFragment2.Position = new Position(200, 600);
-// Установить свойства текста
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment2.TextState.Rotation = 45;
-// Создать повернутый текстовый фрагмент
-TextFragment textFragment3 = new TextFragment("rotated text");
-textFragment3.Position = new Position(300, 600);
-// Установить свойства текста
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment3.TextState.Rotation = 90;
-// создать объект TextBuilder
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// Добавить текстовый фрагмент на страницу PDF
-textBuilder.AppendText(textFragment1);
-textBuilder.AppendText(textFragment2);
-textBuilder.AppendText(textFragment3);
-// Сохранить документ
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
+1. Создайте новый PDF-документ.
+1. Вставьте новую страницу, чтобы разместить повернутый текст.
+1. Создайте первый фрагмент текста - Без вращения.
+1. Создайте второй текстовый фрагмент - 45° вращение.
+1. Создайте третий текстовый фрагмент - 90° вращение.
+1. Добавьте текстовые фрагменты с помощью TextBuilder.
+1. Сохраните Document.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def rotate_text_inside_pdf_1(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("main text")
+        text_fragment_1.position = ap.text.Position(100, 600)
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Create rotated text fragment
+        text_fragment_2 = ap.text.TextFragment("rotated text")
+        text_fragment_2.position = ap.text.Position(200, 600)
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        text_fragment_2.text_state.rotation = 45
+        # Create rotated text fragment
+        text_fragment_3 = ap.text.TextFragment("rotated text")
+        text_fragment_3.position = ap.text.Position(300, 600)
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        text_fragment_3.text_state.rotation = 90
+        # create TextBuilder object
+        builder = ap.text.TextBuilder(page)
+        # Append the text fragment to the PDF page
+        builder.append_text(text_fragment_1)
+        builder.append_text(text_fragment_2)
+        builder.append_text(text_fragment_3)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## Поворот отдельных текстовых фрагментов внутри абзаца в PDF
 
-## Реализация вращения с использованием TextParagraph и TextBuilder (Вращаемые фрагменты)
+Поворачивайте отдельные фрагменты текста внутри абзаца. Показано, как построить многострочный абзац (TextParagraph), содержащий несколько фрагментов (TextFragment), каждый со своим углом поворота. Эта техника полезна для создания визуально насыщенных документов, сочетающих горизонтально и диагонально ориентированный текст — например, стилизованные заголовки, схемы или аннотированные подписи.
 
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Инициализация объекта документа
-Document pdfDocument = new Document();
-// Получить конкретную страницу
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-TextParagraph paragraph = new TextParagraph();
-paragraph.Position = new Position(200, 600);
-// Создать текстовый фрагмент
-TextFragment textFragment1 = new TextFragment("повернутый текст");
-// Установить свойства текста
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// Установить вращение
-textFragment1.TextState.Rotation = 45;
-// Создать текстовый фрагмент
-TextFragment textFragment2 = new TextFragment("основной текст");
-// Установить свойства текста
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// Создать текстовый фрагмент
-TextFragment textFragment3 = new TextFragment("другой повернутый текст");
-// Установить свойства текста
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// Установить вращение
-textFragment3.TextState.Rotation = -45;
-// Добавить текстовые фрагменты в параграф
-paragraph.AppendLine(textFragment1);
-paragraph.AppendLine(textFragment2);
-paragraph.AppendLine(textFragment3);
-// Создать объект TextBuilder
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// Добавить текстовый параграф на страницу PDF
-textBuilder.AppendParagraph(paragraph);
-// Сохранить документ
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
+Создаёт PDF с именем rotated_paragraph_fragments.pdf, содержащий абзац с тремя строками текста, каждая из которых повернута по‑разному:
+
+ - первая строка повернута на 45°
+ - вторая строка остаётся горизонтальной (0°)
+ - третья строка повернута на -45°
+
+1. Создайте новый PDF-документ.
+1. Добавьте пустую страницу там, где появится повернутый текст.
+1. Создайте TextParagraph.
+1. Создайте и настройте первый Text Fragment - вращение 45°.
+1. Создайте второй фрагмент текста - без вращения.
+1. Создайте третий фрагмент текста - вращение 45°.
+1. Добавьте фрагменты текста к абзацу.
+1. Добавьте абзац на страницу с помощью TextBuilder.
+1. Сохраните Document.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def rotate_text_inside_pdf_2(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        paragraph = ap.text.TextParagraph()
+        paragraph.position = ap.text.Position(200, 600)
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Set rotation
+        text_fragment_1.text_state.rotation = 45
+        # Create text fragment
+        text_fragment_2 = ap.text.TextFragment("main text")
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Create text fragment
+        text_fragment_3 = ap.text.TextFragment("another rotated text")
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Set rotation
+        text_fragment_3.text_state.rotation = -45
+        # Append the text fragments to the paragraph
+        paragraph.append_line(text_fragment_1)
+        paragraph.append_line(text_fragment_2)
+        paragraph.append_line(text_fragment_3)
+        # Create TextBuilder object
+        text_builder = ap.text.TextBuilder(page)
+        # Append the text paragraph to the PDF page
+        text_builder.append_paragraph(paragraph)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## Поворот текста с использованием абзацев страницы в PDF
 
-## Реализация вращения с использованием TextFragment и Page.Paragraphs
+Упрощенный метод поворота текста внутри PDF с использованием Aspose.PDF for Python via .NET.
+В отличие от более низкоуровневых подходов с TextBuilder или TextParagraph, этот метод добавляет вращаемые текстовые фрагменты непосредственно в коллекцию абзацев страницы (page.paragraphs). Он идеален для случаев, когда вам нужен базовый поворот текста, но не требуется точное позиционирование или структурирование абзацев. Этот подход упрощает создание макета, автоматически обрабатывая размещение текста на странице, при этом позволяя контролировать поворот отдельного текста.
 
-```csharp
-// Для полного примера и файлов данных, пожалуйста, посетите https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Инициализировать объект документа
-Document pdfDocument = new Document();
-// Получить конкретную страницу
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// Создать текстовый фрагмент
-TextFragment textFragment1 = new TextFragment("основной текст");
-// Установить свойства текста
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// Создать текстовый фрагмент
-TextFragment textFragment2 = new TextFragment("повернутый текст");
-// Установить свойства текста
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// Установить вращение
-textFragment2.TextState.Rotation = 315;
-// Создать текстовый фрагмент
-TextFragment textFragment3 = new TextFragment("повернутый текст");
-// Установить свойства текста
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// Установить вращение
-textFragment3.TextState.Rotation = 270;
-pdfPage.Paragraphs.Add(textFragment1);
-pdfPage.Paragraphs.Add(textFragment2);
-pdfPage.Paragraphs.Add(textFragment3);
-// Сохранить документ
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
+Генерирует файл с именем 'simple_rotated_text.pdf', содержащий:
+
+ - главный горизонтальный фрагмент текста с поворотом 0°
+ - фрагмент, повернутый на 315°
+ - фрагмент, повернутый на 270°
+
+1. Инициализируйте новый PDF-документ.
+1. Создайте страницу, на которой будет размещён повернутый текст.
+1. Создайте первый фрагмент текста - Без вращения.
+1. Создайте второй фрагмент текста - вращение на 315°.
+1. Создайте третий Text Fragment — 270° Rotation.
+1. Добавьте фрагменты текста непосредственно в абзацы страницы.
+1. Сохраните PDF‑документ.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def rotate_text_inside_pdf_3(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("main text")
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Create text fragment
+        text_fragment_2 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Set rotation
+        text_fragment_2.text_state.rotation = 315
+        # Create text fragment
+        text_fragment_3 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Set rotation
+        text_fragment_3.text_state.rotation = 270
+        page.paragraphs.add(text_fragment_1)
+        page.paragraphs.add(text_fragment_2)
+        page.paragraphs.add(text_fragment_3)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## Повернуть целые абзацы в PDF
 
-## Реализация Вращения с использованием TextParagraph и TextBuilder (Вращение всего абзаца)
+Наша библиотека демонстрирует продвинутый поворот текста на уровне абзацев в PDF. В отличие от поворота на уровне фрагментов (когда каждый фрагмент текста вращается отдельно), этот метод поворачивает целые абзацы как единые блоки под разными углами.
+Каждый абзац содержит несколько стилизованных текстовых фрагментов, а весь абзац вращается под определенными углами — позволяя выполнять сложные, согласованные преобразования макета.
+Это идеально подходит для художественных макетов, водяных знаков или PDF‑файлов с обильным дизайном, где целые текстовые секции нужно ориентировать в разных направлениях.
 
-```csharp
-// Для полноценных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Инициализация объекта документа
-Document pdfDocument = new Document();
-// Получить конкретную страницу
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-for (int i = 0; i < 4; i++)
-{
-    TextParagraph paragraph = new TextParagraph();
-    paragraph.Position = new Position(200, 600);
-    // Указать вращение
-    paragraph.Rotation = i * 90 + 45;
-    // Создать текстовый фрагмент
-    TextFragment textFragment1 = new TextFragment("Текст абзаца");
-    // Создать текстовый фрагмент
-    textFragment1.TextState.FontSize = 12;
-    textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment1.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment1.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    // Создать текстовый фрагмент
-    TextFragment textFragment2 = new TextFragment("Вторая строка текста");
-    // Установить свойства текста
-    textFragment2.TextState.FontSize = 12;
-    textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment2.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment2.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    // Создать текстовый фрагмент
-    TextFragment textFragment3 = new TextFragment("И еще немного текста...");
-    // Установить свойства текста
-    textFragment3.TextState.FontSize = 12;
-    textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment3.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment3.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    textFragment3.TextState.Underline = true;
-    paragraph.AppendLine(textFragment1);
-    paragraph.AppendLine(textFragment2);
-    paragraph.AppendLine(textFragment3);
-    // Создать объект TextBuilder
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // Добавить текстовый фрагмент на страницу PDF
-    textBuilder.AppendParagraph(paragraph);
-}
-// Сохранить документ
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
+Создает 'rotated_paragraphs.pdf', содержащий четыре полностью стилизованных и повернутых абзаца:
+
+- каждый повернут на уникальный угол (45°, 135°, 225° и 315°)
+- каждый абзац содержит три строки текста с цветными фонами, подчёркиванием и единообразным оформлением
+
+1. Создайте новый PDF-документ.
+1. Добавьте пустую страницу, чтобы разместить повернутые абзацы.
+1. Итерация для создания нескольких абзацев.
+1. Создайте и разместите абзац.
+1. Создайте текстовые фрагменты с форматированием.
+1. Примените форматирование текста.
+1. Добавьте фрагменты текста в абзац.
+1. Добавьте абзац на страницу с помощью TextBuilder.
+1. Повторите для всех четырёх поворотов.
+1. Сохраните PDF‑документ.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def rotate_text_inside_pdf_4(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        for i in range(4):
+            paragraph = ap.text.TextParagraph()
+            paragraph.position = ap.text.Position(200, 600)
+            # Specify rotation
+            paragraph.rotation = i * 90 + 45
+            # Create text fragment
+            text_fragment_1 = ap.text.TextFragment("Paragraph Text")
+            # Create text fragment
+            text_fragment_1.text_state.font_size = 12
+            text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
+            text_fragment_1.text_state.background_color = ap.Color.light_gray
+            text_fragment_1.text_state.foreground_color = ap.Color.blue
+            # Create text fragment
+            text_fragment_2 = ap.text.TextFragment("Second line of text")
+            # Set text properties
+            text_fragment_2.text_state.font_size = 12
+            text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
+            text_fragment_2.text_state.background_color = ap.Color.light_gray
+            text_fragment_2.text_state.foreground_color = ap.Color.blue
+            # Create text fragment
+            text_fragment_3 = ap.text.TextFragment("And some more text...")
+            # Set text properties
+            text_fragment_3.text_state.font_size = 12
+            text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
+            text_fragment_3.text_state.background_color = ap.Color.light_gray
+            text_fragment_3.text_state.foreground_color = ap.Color.blue
+            text_fragment_3.text_state.underline = True
+            paragraph.append_line(text_fragment_1)
+            paragraph.append_line(text_fragment_2)
+            paragraph.append_line(text_fragment_3)
+            # Create TextBuilder object
+            builder = ap.text.TextBuilder(page)
+            # Append the text fragment to the PDF page
+            builder.append_paragraph(paragraph)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## Связанные темы текста
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Работа с текстом в PDF с помощью Python](/pdf/ru/python-net/working-with-text/)
+- [Добавление текста в PDF](/pdf/ru/python-net/add-text-to-pdf-file/)
+- [Форматировать текст PDF с помощью Python](/pdf/ru/python-net/text-formatting-inside-pdf/)
+- [Заменить текст в PDF с помощью Python](/pdf/ru/python-net/replace-text-in-pdf/)

@@ -32,18 +32,6 @@
 - Many pages include JSON-LD blocks (for example `TechArticle`, `FAQPage`); preserve and update existing structured data instead of removing it.
 - If a page already includes metadata fields such as `ai_search_scope`, keep them aligned with adjacent content in the same product area.
 
-## Translation and Localization
-- Prefer the published CLI binary for repeated or batch runs:
-  - `scripts/DocTranslate.Cli/folder/win-x64/DocTranslate.Cli.exe`
-  - `scripts/DocTranslate.Cli/single-file/win-x64/DocTranslate.Cli.exe`
-- Keep Hugo front matter structure and keys intact.
-- Never translate fenced code blocks, inline code, URLs, file paths, shortcode names, or shortcode parameters unless explicitly requested.
-- Preserve headings, lists, tables, reference links, Markdown structure, and line endings where practical.
-- Use glossary terms from `.doctranslate/config.json` consistently and flag terminology drift.
-- Validate that front matter still parses and that shortcode/code fence counts remain unchanged.
-- For repeated folder runs, prefer `translate-folder --skip-existing --report <path>`.
-- Keep repository guidance aligned with `AGENTS.md`, `.codex/skills/translate-hugo-docs/SKILL.md`, and `README.md`.
-
 ## Link, Do Not Duplicate
 - Prefer linking to canonical examples rather than duplicating long guidance.
 - Key references:
@@ -58,3 +46,17 @@
 - Do not restructure large directory trees unless explicitly requested.
 - Do not mass-edit translated trees unless the task explicitly requires cross-language sync.
 - Do not remove schema markup, aliases, or frontmatter keys without checking sibling pages in the same section.
+
+## Translation Guidelines
+
+- Prefer the published CLI binary for repeated or batch runs:
+  - `%CODEX_HOME%/tools/hugo-doc-translate/folder/win-x64/DocTranslate.Cli.exe`
+  - `%CODEX_HOME%/tools/hugo-doc-translate/single-file/win-x64/DocTranslate.Cli.exe`
+- Keep Hugo front matter structure and keys intact.
+- Never translate fenced code blocks, inline code, URLs, file paths, shortcode names, or shortcode parameters unless explicitly requested.
+- Preserve headings, lists, tables, reference links, Markdown structure, and line endings where practical.
+- Use glossary terms from `.doctranslate/config.json` consistently and flag terminology drift.
+- Validate that front matter still parses and that shortcode/code fence counts remain unchanged.
+- For repeated folder runs, prefer `translate-folder --skip-existing --report <path>`.
+- Keep repository guidance aligned with `AGENTS.md`, `README.md`, and the source skill at `.codex/skills/translate-hugo-docs/SKILL.md`.
+ 

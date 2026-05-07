@@ -9,22 +9,22 @@ lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Adding Arc Object to PDF using Python
-Abstract: The article provides a detailed guide on how to add and customize arc objects within PDF documents using Aspose.PDF for Python via .NET. It highlights the capability of the library to incorporate graphical elements like arcs, crucial for applications needing dynamic PDF content generation such as technical diagrams and custom illustrations. The article includes step-by-step instructions and code snippets demonstrating how to create a `Document` instance, set up a `Drawing` object with specified dimensions and border properties, and add `Graph` and `Arc` objects to a PDF page. Additionally, it covers the process of filling arc objects with color, showcasing how to set fill properties for arcs and lines, and ultimately save the PDF document. The examples provided serve as a practical guide for developers seeking to leverage Aspose.PDF for precise graphical manipulations in PDF files.
+TechArticle: true
+AlternativeHeadline: Draw arc shapes in PDF files using Python
+Abstract: This article shows how to add arc shapes to PDF documents with Aspose.PDF for Python via .NET. It covers creating outlined arcs, drawing filled arc segments, and adding them to a Graph container.
 ---
 
 ## Add Arc object
 
-Aspose.PDF for Python via .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. It also offers the feature to fill arc object with a certain color.
-
-This example illustrates how to programmatically draw arcs within a PDF document using Aspose.PDF for Python via .NET. By leveraging the drawing module, developers can create complex graphical elements, such as arcs, with precise control over their appearance and positioning. This capability is essential for applications that require dynamic generation of graphical content within PDFs, such as technical diagrams, charts, or custom illustrations.
+Aspose.PDF for Python via .NET lets you add [Arc](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/arc/) shapes to PDF pages using the [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) class. You can draw outlined arcs and filled arc segments for diagrams and technical illustrations.
 
 Follow the steps below:
 
 1. Create [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instance.
-1. Create [Drawing object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) with certain dimensions.
-1. Set [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) for Drawing object.
+1. Create [Graph object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) with certain dimensions.
+1. Set [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) for Graph object.
+1. Create a corresponding arc object.
+1. Add this object to the Shapes collection in the graph object.
 1. Add [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) object to paragraphs collection of page.
 1. Save our PDF file.
 
@@ -33,8 +33,6 @@ The following code snippet shows how to add a [Arc](https://reference.aspose.com
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_arc(outfile: str):
     document = ap.Document()
@@ -60,13 +58,11 @@ def add_arc(outfile: str):
 
 ## Create Filled Arc Object
 
-Next example shows how to add a Arc object that is filled with color and certain dimensions.
+This example shows how to add an arc segment filled with color.
 
 ```python
 import aspose.pdf as ap
 import aspose.pdf.drawing as drawing
-import sys
-from os import path
 
 def add_arc_filled(outfile: str):
     document = ap.Document()
@@ -87,7 +83,7 @@ def add_arc_filled(outfile: str):
     document.save(outfile)
 ```
 
-Let's see the result of adding a filled Arс:
+Result of adding a filled arc:
 
 ![Filled Arc](filled_arc.png)
 

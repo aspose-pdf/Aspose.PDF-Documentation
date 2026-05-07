@@ -7,8 +7,8 @@ url: /python-net/search-and-get-images-from-pdf-document/
 description: Learn how to search for and inspect images in PDF documents in Python.
 lastmod: "2026-04-17"
 TechArticle: true
-AlternativeHeadline: Search for embedded images and inspect image placement in PDF files with Python
-Abstract: This article explains how to find and inspect images in PDF documents using Aspose.PDF for Python via .NET. Learn how to use ImagePlacementAbsorber to analyze image placement, size, and resolution on PDF pages and retrieve image information programmatically in Python.
+AlternativeHeadline: Search and inspect images in PDF files with Python
+Abstract: This article shows how to search for and inspect images in PDF documents with Aspose.PDF for Python via .NET. It covers using ImagePlacementAbsorber to analyze image placement, size, resolution, and alternative text.
 ---
 
 ## Inspect Image Placement Properties in a PDF Page
@@ -25,12 +25,10 @@ Use this page when you need to audit image placement, inspect image resolution, 
     - Horizontal (X) and Vertical (Y) resolution (DPI).
 
 ```python
-import sys
 import math
 import aspose.pdf as ap
 from aspose.pycore import cast, is_assignable
 import aspose.pydrawing as drawing
-from os import path
 
 def extract_image_params(infile):
     document = ap.Document(infile)
@@ -60,12 +58,10 @@ This function analyzes all images on the first page of a PDF and counts how many
     - Print a message for each image indicating whether it is grayscale or RGB.
 
 ```python
-import sys
 import math
 import aspose.pdf as ap
 from aspose.pycore import cast, is_assignable
 import aspose.pydrawing as drawing
-from os import path
 
 def extract_image_types_from_pdf(infile):
     """
@@ -81,7 +77,7 @@ def extract_image_types_from_pdf(infile):
         extract_image_types_from_pdf("sample_extr.pdf")
 
     Note:
-        Prints total images count, color type for each image, and resolution info.        
+        Prints total images count, color type for each image, and resolution info.
     """
 
     document = ap.Document(infile)
@@ -112,6 +108,7 @@ def extract_image_types_from_pdf(infile):
     print("--------------------------------")
     print("Grayscale Images = " + str(grayscaled))
     print("RGB Images = " + str(rgb))
+```
 
 ## Extract Detailed Image Information from a PDF
 
@@ -126,12 +123,10 @@ This function analyzes all images on the first page of a PDF and calculates thei
 1. Print image name, scaled dimensions, and calculated resolution.
 
 ```python
-import sys
 import math
 import aspose.pdf as ap
 from aspose.pycore import cast, is_assignable
 import aspose.pydrawing as drawing
-from os import path
 
 def extract_image_information_from_pdf(infile):
     with ap.Document(infile) as document:
@@ -214,12 +209,10 @@ This function retrieves alternative text (alt text) from all images on the first
     - Print the first line of the alt text.
 
 ```python
-import sys
 import math
 import aspose.pdf as ap
 from aspose.pycore import cast, is_assignable
 import aspose.pydrawing as drawing
-from os import path
 
 def extract_image_alt_text(infile):
     document = ap.Document(infile)

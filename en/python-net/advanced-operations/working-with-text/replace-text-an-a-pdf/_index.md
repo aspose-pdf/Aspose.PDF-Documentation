@@ -1,22 +1,22 @@
 ---
-title: Replace Text in PDF via Python
+title: Replace Text in PDF with Python
 linktitle: Replace Text in PDF
 type: docs
 weight: 40
 url: /python-net/replace-text-in-pdf/
 description: Learn how to replace, rearrange, and remove text in PDF documents using Python.
-lastmod: "2026-04-17"
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 aliases:
     - /python-net/replace-text-in-a-pdf-document/
-TechArticle: true 
-AlternativeHeadline: How to replace Text in PDF using Python
-Abstract: The article provides a comprehensive guide on various text manipulation techniques within PDF documents using Aspose.PDF for Python via .NET. It covers several text replacement strategies, including replacing text across all pages, within specific page regions, and using regular expressions. The article also explains how to replace fonts within PDFs, ensuring that unused fonts are removed, and how to manage text replacement to automatically rearrange page content. Additionally, it delves into rendering replaceable symbols during PDF creation, including their use in header/footer areas, to enhance document customization. Finally, it details methods to remove all text from a PDF document, optimizing operations for scenarios where complete text removal is necessary. Each section is supplemented with code snippets in Python and other supported languages to demonstrate practical implementation.
+TechArticle: true
+AlternativeHeadline: Replace, remove, and adjust text content in PDF using Python
+Abstract: This article covers practical text replacement workflows in PDF documents using Aspose.PDF for Python via .NET. It includes replacing text across pages, limiting replacement to specific regions, adjusting text layout during replacement, working with regex-based matching, replacing fonts, and removing text content when needed.
 ---
 
-These examples demonstrate how to **modify or remove text in an existing PDF**.
+These examples show how to **modify or remove text in an existing PDF**.
 
 Use this page when you need to update text values, remove unwanted content, or apply text replacement rules across PDF pages.
 

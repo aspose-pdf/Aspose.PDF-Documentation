@@ -5,68 +5,60 @@ type: docs
 weight: 30
 url: /python-net/extract-images-from-pdf-file/
 description: Learn how to extract embedded images from PDF files in Python.
-lastmod: "2026-04-17"
-TechArticle: true 
-AlternativeHeadline: Extract images from PDF with Python
-Abstract: This article discusses the process of extracting images from PDF files using Aspose.PDF for Python. It highlights the utility of separating images for purposes such as management, archiving, analysis, or sharing. The article explains that images within a PDF are stored in each page's resources collection, specifically within the XImage collection. To extract an image, users can access a particular page and retrieve the image using its index from the Images collection. The XImage object returned by the index provides a `save()` method to save the extracted image. A code snippet is provided to demonstrate the steps required to open a PDF document, extract a specific image from the second page using its index, and save it to a file.
+lastmod: "2026-05-05"
+TechArticle: true
+AlternativeHeadline: Extract images from PDF files with Python
+Abstract: This article shows how to extract images from PDF documents with Aspose.PDF for Python via .NET. It covers extracting a single embedded image and exporting images found within a specific rectangular region on a page.
 ---
 
-Do you need to separate images from your PDF files? For simplified management, archiving, analysis, or sharing images of your documents, use **Aspose.PDF for Python** and extract images from PDF files.
+Use this page when you need to reuse embedded graphics, archive image assets, or process image content outside the PDF.
 
-This workflow is useful when you need to reuse embedded graphics, archive image assets separately, or inspect PDF contents for downstream processing.
-
-1. Load the PDF document with 'ap.Document()'.
-1. Access the desired page of the document (document.pages[1]).
-1. Select the image from the page resources (for example, resources.images[1]).
-1. Create an output stream (FileIO) for the target file.
-1. Save the extracted image using 'xImage.save(output_image)'.
+1. Load the source PDF with `ap.Document(infile)`.
+1. Select the target page and image resource index.
+1. Save the image object to an output stream.
 
 ```python
-import sys
 import aspose.pdf as ap
 from io import FileIO
-from os import path
+
 
 def extract_image(infile, outfile):
     document = ap.Document(infile)
-    xImage = document.pages[1].resources.images[1]
-    with FileIO(outfile, "w") as output_image:
-        xImage.save(output_image)
+    x_image = document.pages[1].resources.images[1]
+    with FileIO(outfile, "wb") as output_image:
+        x_image.save(output_image)
 ```
 
 ## Extract Images from Specific Region in PDF
 
 This example extracts images located within a specified rectangular region on a PDF page and saves them as separate files.
 
-1. Load the PDF document using 'ap.Document'.
-1. Create an 'ImagePlacementAbsorber' to collect all images on the first page.
-1. Call 'document.pages[1].accept(absorber)' to analyze image placements.
-1. Iterate through all images in 'absorber.image_placements':
-    - Get the image bounding box (llx, lly, urx, ury).
-    - Check if both corners of the image rectangle fall inside the target rectangle (rectangle.contains()).
-    - If true, save the image to a file using FileIO, replacing 'index' in the filename with a sequential number.
-1. Increment the index for each saved image.
+1. Load the source PDF.
+1. Create `ImagePlacementAbsorber` and accept it on the target page.
+1. Define the target rectangle.
+1. Iterate through image placements and check whether each image bounds fit in the region.
+1. Save matched images to output files.
 
 ```python
-import sys
 import aspose.pdf as ap
 from io import FileIO
-from os import path
+
 
 def extract_image_from_specific_region(infile, outfile):
-    rectangle = ap.Rectangle(0, 0, 590, 590, True)
-
     document = ap.Document(infile)
+    rectangle = ap.Rectangle(0, 0, 590, 590, True)
     absorber = ap.ImagePlacementAbsorber()
     document.pages[1].accept(absorber)
+
     index = 1
     for image_placement in absorber.image_placements:
         point1 = ap.Point(image_placement.rectangle.llx, image_placement.rectangle.lly)
-        point2 = ap.Point(image_placement.rectangle.urx, image_placement.rectangle.urx)
+        point2 = ap.Point(image_placement.rectangle.urx, image_placement.rectangle.ury)
+
         if rectangle.contains(point1, True) and rectangle.contains(point2, True):
-            with FileIO(outfile.replace("index", str(index)), "w") as output_image:
+            with FileIO(outfile.replace("index", str(index)), "wb") as output_image:
                 image_placement.image.save(output_image)
-            index = index + 1
+            index += 1
 ```
 
 ## Related Image Topics

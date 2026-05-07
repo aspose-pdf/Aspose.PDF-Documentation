@@ -27,18 +27,14 @@ This example removes PDF/A compliance metadata and restrictions from a PDF so th
 1. Save the resulting PDF to the output path.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    from os import path
-    import aspose.pdf as ap
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-
-    document = ap.Document(path_infile)
+def convert_PDFA_to_PDF(infile, outfile):
+    document = ap.Document(infile)
     document.remove_pdfa_compliance()
-    document.save(path_outfile)
-
-    print(infile + " converted into " + outfile)
+    document.save(outfile)
 ```
 
 ## Removing PDF/UA compliance
@@ -50,18 +46,14 @@ This example demonstrates how to remove PDF/UA-related compliance so the documen
 1. Save the modified PDF to 'path_outfile'.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    from os import path
-    import aspose.pdf as ap
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-
-    document = ap.Document(path_infile)
-    document.remove_pdfa_compliance()
-    document.save(path_outfile)
-
-    print(infile + " converted into " + outfile)
+def convert_PDFUA_to_PDF(infile, outfile):
+    document = ap.Document(infile)
+    document.remove_pdf_ua_compliance()
+    document.save(outfile)
 ```
 
 ## When to use this workflow
