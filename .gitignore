@@ -1,4 +1,7 @@
+# macOS
 .DS_Store
+
+# Visual Studio / VS Code
 .vs/AsposePDFDoc/v16/.suo
 .vs/ProjectSettings.json
 .vs/slnx.sqlite
@@ -6,6 +9,19 @@
 .history
 /.vscode
 /.vs
+
+# Windows OS artifacts
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
