@@ -4,29 +4,26 @@ linktitle: Region-Based Extraction
 type: docs
 weight: 20
 url: /python-net/region-based-extraction/
-description: This section contains articles on region-based extraction from PDF documents using Aspose.PDF in Python.
-lastmod: "2025-11-05"
+description: Learn how to extract text from a specific page region or paragraph structure in PDF documents with Aspose.PDF for Python.
+lastmod: "2026-04-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
 ## Extract text from a specific region of a page
 
-Extract text from a defined rectangular region on a particular page of a PDF using Aspose.PDF for Python. By specifying coordinates, you can focus extraction on a specific area — such as a table cell, paragraph block, or form field region.
+Use [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) together with a [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) to limit extraction to a specific area of a page. This approach is useful for zone-based extraction from headers, footers, table cells, form fields, invoices, or other fixed-layout regions where the text position is known in advance.
 
-Ideal for zone-based text extraction, such as pulling data from headers, footers, invoices, or fixed-layout reports where text appears in predictable positions.
-
-1. Open the PDF document.
-1. Create a 'TextAbsorber'.
-1. Configure 'text_search_options' to restrict to the rectangle region.
-1. Accept the absorber on the specific page.
-1. Write the extracted text.
+1. Open the source PDF as a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Create a `TextAbsorber` instance.
+1. Configure `text_search_options` to limit extraction to a rectangle.
+1. Accept the absorber on the target page.
+1. Write the extracted text to an output file.
 
 ```python
-
-import os
 import aspose.pdf as ap
+
 
 def extract_text_from_region(infile, page_number, rect_coords, outfile):
     """
@@ -55,23 +52,17 @@ def extract_text_from_region(infile, page_number, rect_coords, outfile):
 
 ## Extract Paragraphs by iterating through them
 
-We can get text from a PDF document by searching a particular text (using "plain text" or "regular expressions") from a single page or whole document, or we can get the complete text of a single page, range of pages or complete document. However, in some cases, you require to extract paragraphs from a PDF document or text in the form of Paragraphs. We have implemented functionality for searching sections and paragraphs in the text of PDF document pages. We have introduced ParagraphAbsorber Class (like TextFragmentAbsorber and TextAbsorber), which can be used to extract paragraphs from PDF documents.
+Use [ParagraphAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) when you need paragraph-aware extraction instead of plain page text. Unlike [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) or [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/), this API organizes output by page, section, and paragraph, which is useful for text analysis, structured export, and layout-sensitive processing.
 
-Aspose.PDF library allows you to read a PDF file and extract all paragraph text from each page using 'ParagraphAbsorber'. It organizes the output by page, section, and paragraph, and writes the extracted content into a plain text file. This is useful for text analysis, archiving, or converting structured PDF content into readable formats.
-
-1. Open the PDF document.
-1. Instantiate a 'ParagraphAbsorber'.
-1. Call 'absorber.visit(document)' to scan all pages for paragraphs.
-1. Loop through the absorber’s 'page_markups' collection.
-1. For each page‑markup, loop through its 'sections', then each 'paragraph' in the section.
-1. Within each paragraph, loop through 'lines', then each 'fragment' in the line, accumulating 'fragment.text'.
-1. Write each paragraph (with page/section/paragraph indexes) to the output file.
-1. Close the document when done.
+1. Open the source PDF as a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Create a `ParagraphAbsorber` instance.
+1. Call `absorber.visit(document)` to analyze all pages.
+1. Iterate through `page_markups`, then through each section and paragraph.
+1. Read the text fragments from each paragraph and write the result to a file.
 
 ```python
-
-import os
 import aspose.pdf as ap
+
 
 def extract_paragraphs_from_pdf(infile, outfile):
     """
@@ -96,7 +87,9 @@ def extract_paragraphs_from_pdf(infile, outfile):
                                 parts.append(fragment.text)
                             parts.append("\r\n")
                         paragraph_text = "".join(parts)
-                        tw.write(f"Page {page_markup.number}, Section {sec_idx}, Paragraph {para_idx}:\n")
+                        tw.write(
+                            f"Page {page_markup.number}, Section {sec_idx}, Paragraph {para_idx}:\n"
+                        )
                         tw.write(paragraph_text + "\n")
     finally:
         document.close()
@@ -104,24 +97,18 @@ def extract_paragraphs_from_pdf(infile, outfile):
 
 ## Extract Paragraphs with bounding polygon rendering
 
-This code snippet extracts paragraph-level text and layout information from a specific page in a PDF. It captures each paragraph’s bounding rectangle and polygon coordinates, along with the actual text content, and writes the results to a text file. This is useful for analyzing document structure, layout mapping, or preparing data for accessibility and content extraction tasks.
+You can also use [ParagraphAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) to inspect paragraph geometry. In addition to extracting text, this approach records each section rectangle and paragraph polygon, which is useful for layout mapping, document analysis, accessibility tooling, or region-aware post-processing.
 
-1. Open the PDF and load the document.
-1. Instantiate 'ParagraphAbsorber'.
-1. Call 'absorber.visit(page)' for the specific page you want.
-1. Get the first 'page_markup' from 'absorber.page_markups'.
-1. For each section in that markup:
-    - Retrieve its 'rectangle'.
-1. For each paragraph in the section:
-    - Get its 'points' (polygon).
-    - Extract text by looping 'paragraph.lines' - 'fragment.text'.
-1. Write geometry and text info to the output file.
-1. Close the document.
+1. Open the source PDF as a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Create a `ParagraphAbsorber` instance.
+1. Visit the target page.
+1. Read the page markup from `absorber.page_markups`.
+1. Iterate through sections and paragraphs to capture geometry and text.
+1. Write the rectangle, polygon, and text data to the output file.
 
 ```python
-
-import os
 import aspose.pdf as ap
+
 
 def extract_paragraphs_with_geometry(infile, outfile):
     """

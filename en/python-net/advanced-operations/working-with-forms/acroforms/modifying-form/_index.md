@@ -4,14 +4,14 @@ linktitle: Modifying AcroForm
 type: docs
 weight: 45
 url: /python-net/modifying-form/
-description: Modifying form in your PDF file with Aspose.PDF for Python via .NET library. You can add or remove fields in existing form, get and set field limit and etc.
-lastmod: "2025-02-17"
+description: Modify AcroForm fields in PDF documents by using Aspose.PDF for Python via .NET, including clearing text, setting limits, styling fields, and removing fields.
+lastmod: "2026-04-28"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Managing and Customizing PDF Form Fields
-Abstract: This collection of examples showcases various techniques for managing and customizing PDF form fields using Aspose.PDF for Python via .NET. It includes methods for clearing text from Typewriter-style form fields using TextFragmentAbsorber, setting and retrieving character limits with FormEditor, applying custom fonts and styling to text box fields, and removing specific form fields by name. These operations enable developers to sanitize, format, and tailor PDF forms for redistribution, branding, or data validation purposes, supporting both aesthetic and functional refinement in automated document workflows.
+Abstract: This article presents practical examples for modifying AcroForm fields by using Aspose.PDF for Python via .NET. It covers clearing text from Typewriter form content, setting and reading text field character limits, applying custom font appearance, and removing fields by name. These workflows support common form maintenance tasks in automated PDF processing pipelines.
 ---
 
 ## Clear Text in Form
@@ -26,104 +26,94 @@ This example demonstrates how to clear text from Typewriter form fields in a PDF
 1. Save the modified PDF to the output file.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
 
-    dataDir = "path/to/your/data/dir/"
-    path_infile = dataDir + infile
-    path_outfile = dataDir + outfile
-    document = ap.Document(path_infile)
+def clear_text_in_form(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
 
-    # Get the forms from the first page
     forms = document.pages[1].resources.forms
 
     for form in forms:
-        # Check if the form is of type "Typewriter" and subtype "Form"
-        if (form.it == "Typewriter" and form.subtype == "Form"):
-            # Create a TextFragmentAbsorber to find text fragments
-            absorber = ap.Text.TextFragmentAbsorber()
+        if form.it == "Typewriter" and form.subtype == "Form":
+            absorber = ap.text.TextFragmentAbsorber()
             absorber.visit(form)
 
-            # Clear the text in each fragment
             for fragment in absorber.text_fragments:
-                fragment.Text = ""
+                fragment.text = ""
 
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(output_file_name)
 ```
 
-## Get or Set Field Limit
+## Set Field Limit
 
-The FormEditor class set_field_limit(field, limit) method allows you to set a field limit, the maximum number of characters that can be entered into a field.
+Use `set_field_limit(field, limit)` from `FormEditor` to define the maximum number of characters allowed in a text field.
+
+1. Create a `FormEditor` object.
+1. Bind the input PDF.
+1. Set the field limit for a target field.
+1. Save the updated PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
 
-    # The path to the documents directory
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-    path_outfile = os.path.join(work_dir, outfile)
-
-    # Create FormEditor instance
+def set_field_limit(input_file_name, output_file_name):
     form = ap.facades.FormEditor()
-
-    # Bind PDF document
-    form.bind_pdf(path_infile)
-
-    # Set field limit for "First Name"
+    form.bind_pdf(input_file_name)
     form.set_field_limit("First Name", 15)
-
-    # Save PDF document
-    form.save(path_outfile)
+    form.save(output_file_name)
 ```
 
-Similarly, Aspose.PDF has a method that gets the field limit.
+## Get Field Limit
+
+You can also read the character limit from a text field.
+
+1. Load the PDF document.
+1. Access the target form field.
+1. Ensure the field is a `TextBoxField`.
+1. Read and print `max_len`.
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
 
-    # The path to the documents directory
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-
-    document = ap.Document(path_infile)
+def get_field_limit(input_file_name):
+    document = ap.Document(input_file_name)
     if is_assignable(document.form[1], ap.forms.TextBoxField):
-        textBoxField = cast(ap.forms.TextBoxField, document.form[1])
-        print(f"Limit: {textBoxField.max_len}")
+        text_box_field = cast(ap.forms.TextBoxField, document.form[1])
+        print(f"Limit: {text_box_field.max_len}")
 ```
 
 ## Set Custom Font for the Form Field
 
-Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font.
+This example sets a custom default appearance for a text box field, including font, size, and color.
 
-This code updates the appearance of a text box field in a PDF form by setting a custom font, size, and color, and then saves the modified document using Aspose.PDF for Python via .NET.
-
-The following code snippet shows how to set the default font for PDF form fields.
+1. Load the PDF document.
+1. Access the target field and verify its type.
+1. Find the font in `FontRepository`.
+1. Apply a new `DefaultAppearance`.
+1. Save the updated PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
 
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-    path_outfile = os.path.join(work_dir, outfile)
-
-    document = ap.Document(path_infile)
+def set_form_field_font(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
     if is_assignable(document.form[1], ap.forms.TextBoxField):
-        textBoxField = cast(ap.forms.TextBoxField, document.form[1])
+        text_box_field = cast(ap.forms.TextBoxField, document.form[1])
         font = ap.text.FontRepository.find_font("Calibri")
-        textBoxField.default_appearance = ap.annotations.DefaultAppearance(font, 10, ap.Color.black.to_rgb())
+        text_box_field.default_appearance = ap.annotations.DefaultAppearance(
+            font, 10, ap.Color.black.to_rgb()
+        )
 
-    document.save(path_outfile)
+    document.save(output_file_name)
 ```
 
-## Remove fields in existing form
+## Remove Fields in an Existing Form
 
 This code removes a specific form field (by its name) from a PDF document and saves the updated file using Aspose.PDF for Python via .NET.
 
@@ -132,17 +122,18 @@ This code removes a specific form field (by its name) from a PDF document and sa
 1. Save the updated PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
 
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-    path_outfile = os.path.join(work_dir, outfile)
-
-    document = ap.Document(path_infile)
-    # Delete a particular field by name
+def delete_form_field(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
     document.form.delete("First Name")
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(output_file_name)
 ```
+
+## Related Topics
+
+- [Create AcroForm](/pdf/python-net/create-form/)
+- [Fill AcroForm](/pdf/python-net/fill-form/)
+- [Extract AcroForm](/pdf/python-net/extract-form/)
+- [Import and Export Form Data](/pdf/python-net/import-export-form-data/)

@@ -1,28 +1,28 @@
 ---
-title: Adding Tables to PDF using Python
+title: Add Tables to PDF in Python
 linktitle: Adding Tables
 type: docs
 weight: 10
 url: /python-net/adding-tables/
-description: Aspose.PDF for Python via .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic.
-lastmod: "2025-02-27"
+description: Learn how to add and configure tables in existing PDF documents in Python.
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to add Table In PDF using Python
-Abstract: This article provides a comprehensive guide to creating and manipulating tables in PDF documents using the Aspose.PDF for Python via .NET library. It details the steps to add tables to existing PDF files, including setting table borders, margins, and padding. Furthermore, it explores advanced functionalities like merging columns and rows using `col_span` and `row_span`, applying different AutoFit settings, and dynamically retrieving table width. The article also demonstrates inserting SVG images into table cells and enforcing page breaks or rendering tables on new pages. Code snippets illustrate each functionality, showcasing how to effectively manage table layout and content in PDF documents.
+AlternativeHeadline: Add and format tables in PDF documents with Python
+Abstract: This article explains how to add and configure tables in PDF documents using Aspose.PDF for Python via .NET. It covers table creation, borders, margins, padding, row and column spans, AutoFit behavior, table width handling, image insertion in cells, and rendering control across pages.
 ---
 
-Adding tables to existing PDF documents is a common need for enhancing data presentation, structuring information, or generating reports. **Aspose.PDF for Python via .NET** offers a comprehensive solution for this task, enabling developers to insert tables into existing PDFs seamlessly.
+Adding tables to existing PDF documents is a common requirement for data presentation, structured content, and reporting. **Aspose.PDF for Python via .NET** provides a practical API for inserting and formatting tables in existing PDFs.
 
-This guide provides a step-by-step approach to adding tables to existing PDF documents using Aspose.PDF for Python via .NET. It covers the initialization of a table, setting column widths, defining borders, populating rows and cells, and saving the modified document. Additionally, the guide explores advanced features, such as handling cell borders, applying margins and padding, and utilizing AutoFit settings to dynamically adjust table dimensions.
+This guide provides step-by-step examples for table creation, column sizing, borders, rows and cells, and saving the modified document. It also covers advanced options such as cell borders, margins, padding, and AutoFit settings for dynamic table sizing.
 
-Whether you're looking to enhance the visual appeal of your PDFs or organize data more effectively, this guide serves as a valuable resource for leveraging Aspose.PDF for Python's powerful table manipulation capabilities.
+Use this page when you need to add new tables to existing PDFs and control their layout behavior in Python.
 
 ## Creating Basic Tables
 
-## Creating Table
+### Creating Table
 
 This example demonstrates how to create a Table in a PDF document with borders and multiple rows.
 
@@ -36,13 +36,13 @@ This example demonstrates how to create a Table in a PDF document with borders a
 1. Save the PDF to the specified path.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
-    # Load source PDF document
+def create_table(outfile: str) -> None:
+    # Create new PDF document
     document = ap.Document()
     page = document.pages.add()
     # Initializes a new instance of the Table
@@ -50,11 +50,9 @@ This example demonstrates how to create a Table in a PDF document with borders a
     # Set the table border color as LightGray
     table.border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.light_gray)
     # Set the border for table cells
-    table.default_cell_border = ap.BorderInfo(
-        ap.BorderSide.ALL, 5, ap.Color.light_gray
-    )
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.light_gray)
     # Create a loop to add 10 rows
-    for row_count in range(0, 10):
+    for row_count in range(10):
         # Add row to table
         row = table.rows.add()
         # Add table cells
@@ -65,7 +63,7 @@ This example demonstrates how to create a Table in a PDF document with borders a
     page.paragraphs.add(table)
 
     # Save updated document containing table object
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ### Adding Images to Table cells
@@ -83,10 +81,12 @@ This code snippet shows how to insert images into Table cells in a PDF document.
 1. Save the PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
+def add_image(image: str, outfile: str) -> None:
     # Instantiate Document object
     document = ap.Document()
     page = document.pages.add()
@@ -105,7 +105,7 @@ This code snippet shows how to insert images into Table cells in a PDF document.
     img = ap.Image()
     # Set image type as SVG
     # Path for source file
-    img.file = path.join(self.data_dir, image)
+    img.file = image
     # Set width for image instance
     img.fix_width = 50
     # Set height for image instance
@@ -118,18 +118,18 @@ This code snippet shows how to insert images into Table cells in a PDF document.
     # Add table to paragraphs collection of page object
     page.paragraphs.add(table)
     # Save PDF file
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 You can add SVG images into table cells in a PDF document:
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
+def add_svg_image(images: list[str], outfile: str) -> None:
     # Instantiate Document object
     document = ap.Document()
     page = document.pages.add()
@@ -149,7 +149,7 @@ You can add SVG images into table cells in a PDF document:
         # Set image type as SVG
         img.file_type = ap.ImageFileType.SVG
         # Path for source file
-        img.file = path.join(self.data_dir, image)
+        img.file = image
         # Set width for image instance
         img.fix_width = 50
         # Set height for image instance
@@ -162,7 +162,7 @@ You can add SVG images into table cells in a PDF document:
     # Add table to paragraphs collection of page object
     page.paragraphs.add(table)
     # Save PDF file
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ### ColSpan and RowSpan in Tables
@@ -178,13 +178,13 @@ This example shows how to merge table cells vertically and horizontally to creat
 1. Save the PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
-    # Load source PDF document
+def add_rowspan_or_colspan(outfile: str) -> None:
+    # Create new PDF document
     document = ap.Document()
     page = document.pages.add()
 
@@ -193,14 +193,12 @@ This example shows how to merge table cells vertically and horizontally to creat
     # Set the table border color as LightGray
     table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
     # Set the border for table cells
-    table.default_cell_border = ap.BorderInfo(
-        ap.BorderSide.ALL, 0.5, ap.Color.black
-    )
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
     # Add 1st row to table
     row1 = table.rows.add()
-    for cellCount in range(1, 5):
+    for cell_count in range(1, 5):
         # Add table cells
-        row1.cells.add("Test 1" + str(cellCount))
+        row1.cells.add("Test 1" + str(cell_count))
 
     # Add 2nd row to table
     row2 = table.rows.add()
@@ -233,7 +231,7 @@ This example shows how to merge table cells vertically and horizontally to creat
     # Add table object to first page of input document
     page.paragraphs.add(table)
     # Save updated document containing table object
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ![ColSpan and RowSpan demo](colspan_rowspan.png)
@@ -251,12 +249,13 @@ This example shows how to set cell padding, table margins, and control word wrap
 1. Save the PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-    # Load source PDF document
+def add_borders(outfile: str) -> None:
+    # Create new PDF document
     document = ap.Document()
     page = document.pages.add()
     # Instantiate a table object
@@ -283,7 +282,6 @@ This example shows how to set cell padding, table margins, and control word wrap
     row1.cells.add("col2")
     row1.cells.add()
     text = ap.text.TextFragment("col3 with large text string")
-    # Row1.Cells.Add("col3 with large text string to be placed inside cell")
     row1.cells[2].paragraphs.add(text)
     row1.cells[2].is_word_wrapped = False
     row2 = tab1.rows.add()
@@ -291,7 +289,7 @@ This example shows how to set cell padding, table margins, and control word wrap
     row2.cells.add("item2")
     row2.cells.add("item3")
     # Save updated document containing table object
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ![Margin and Border in PDF Table](margin-border.png)
@@ -300,7 +298,7 @@ This example shows how to set cell padding, table margins, and control word wrap
 
 ### Auto-fitting columns and rows
 
-This code snippet shows how to automatically adjust table column widths to fit the page. 
+This code snippet shows how to automatically adjust table column widths to fit the page.
 Please note that in the parameter table.column_widths = "50 50 50" - its points. But you can also specify centimeters (cm), inch or %.
 
 1. Set initial column widths.
@@ -311,13 +309,13 @@ Please note that in the parameter table.column_widths = "50 50 50" - its points.
 1. Save the PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
-    # Load source PDF document
+def auto_fit(outfile: str) -> None:
+    # Create new PDF document
     document = ap.Document()
     page = document.pages.add()
     # Instantiate a table object
@@ -349,363 +347,25 @@ Please note that in the parameter table.column_widths = "50 50 50" - its points.
     row2.cells.add("item2")
     row2.cells.add("item3")
 
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
-### Adjusting spacing around content
+### Create Complex PDF Tables with Merged Cells and Repeating Columns
 
-This example shows how to create tables that span multiple pages, handle long text in cells, and apply padding and borders.
-
-1. Add new table to the page using 'page.paragraphs.add(table)'.
-1. Define the widths of columns with 'table.column_widths'.
-1. Sets individual cell borders with 'table.default_cell_border'.
-1. Set the table overall border with 'table.border'.
-1. Define default padding for cells using 'MarginInfo()'.
-1. Add text using 'TextFragment'.
-1. Add another row.
-1. Save the PDF.
+Build an advanced table in a PDF using Python and Aspose.PDF. It includes merged header cells, colored backgrounds, repeating columns, and a large structured dataset. The table is configured to handle vertical breaking and complex layouts for report-style documents.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
+def add_table_hide_borders(outfile: str) -> None:
     # Create PDF document
     document = ap.Document()
     page = document.pages.add()
 
     # Instantiate a table object that will be nested inside outerTable that will break inside the same page
-    table = ap.Table()
-    # Add page
-    page = document.pages.add()
-
-    # Instantiate a table object
-    table = ap.Table()
-
-    # Add the table in paragraphs collection of the desired section
-    page.paragraphs.add(table)
-
-    # Set column widths of the table
-    table.column_widths = "50 50 50"
-
-    # Set default cell border using BorderInfo object
-    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
-
-    # Set table border using another customized BorderInfo object
-    table.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
-
-    # Create MarginInfo object and set its left, bottom, right and top margins
-    margin = ap.MarginInfo()
-    margin.top = 5
-    margin.left = 5
-    margin.right = 5
-    margin.bottom = 5
-
-    # Set the default cell padding to the MarginInfo object
-    table.default_cell_padding = margin
-
-    # Create rows and cells
-    row1 = table.rows.add()
-    row1.cells.add("col1")
-    row1.cells.add("col2")
-    row1.cells.add()
-
-    # Add a long text fragment into the third cell
-    text = ap.text.TextFragment("col3 with large text string")
-    row1.cells[2].paragraphs.add(text)
-    row1.cells[2].is_word_wrapped = False
-
-    # Add another row
-    row2 = table.rows.add()
-    row2.cells.add("item1")
-    row2.cells.add("item2")
-    row2.cells.add("item3")
-
-    # Save PDF document
-    document.save(path_outfile)
-```
-
-![Borders, margins and padding](set-border-style-margins-and-padding-of-table_1.png)
-
-### Styling Table Corners
-
-Aspose.PDF for Python via .NET shows how to apply rounded corners to a table and customize the border radius.
-
-1. Create a new table instance.
-1. Initialize a border for all sides.
-1. Set the corner radius.
-1. Apply the rounded corner style.
-1. Add Rows and Cells.
-1. Insert the table into the PDF page with 'page.paragraphs.add(table)'.
-1. Save the PDF document.
-
-```python
-
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
-    # Load source PDF document
-    document = ap.Document()
-    page = document.pages.add()
-    # Initializes a new instance of the Table
-    table = ap.Table()
-
-    # Create a table
-    table = ap.Table()
-
-    # Create a blank BorderInfo object
-    b_info = ap.BorderInfo(ap.BorderSide.ALL)
-
-    # Set the border a rounded border where radius of round is 15
-    b_info.rounded_border_radius = 15
-
-    # Set the table corner style as Round
-    table.corner_style = ap.BorderCornerStyle.ROUND
-
-    # Set the table border information
-    table.border = b_info
-
-    # Create a loop to add 10 rows
-    for row_count in range(0, 10):
-        # Add row to table
-        row = table.rows.add()
-        # Add table cells
-        row.cells.add("Column (" + str(row_count) + ", 1)")
-        row.cells.add("Column (" + str(row_count) + ", 2)")
-        row.cells.add("Column (" + str(row_count) + ", 3)")
-
-    # Add table object to first page of input document
-    page.paragraphs.add(table)
-    # Save updated document containing table object
-    document.save(path_outfile)
-```
-
-## Adding Content to Tables
-
-### Using HTML Fragments in Cells
-
-This example shows how to insert HTML-formatted content into table cells.
-
-1. Define table and cell borders.
-1. Add HTML content.
-1. Add Rows. A loop adds multiple rows with HTML-formatted content in each cell.
-1. Insert the table into the PDF page with 'page.paragraphs.add(table)'.
-1. Save the PDF document.
-
-```python
-
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
-    # Instantiate Document object
-    document = ap.Document()
-    page = document.pages.add()
-    # Instantiate a table object
-    table = ap.Table()
-
-    # Set the table border color as LightGray
-    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
-    # Set the border for table cells
-    table.default_cell_border = ap.BorderInfo(
-        ap.BorderSide.ALL, 0.5, ap.Color.light_gray
-    )
-    # Create a loop to add 10 rows
-    row_count = 1
-    while row_count < 10:
-        # Add row to table
-        row = table.rows.add()
-        # Add table cells
-        cell = row.cells.add()
-        cell.paragraphs.add(
-            ap.HtmlFragment(f"Column <strong>({row_count}, 1)</strong>")
-        )
-
-        cell = row.cells.add()
-        cell.paragraphs.add(
-            ap.HtmlFragment(
-                f"Column <span style='color:red'>({row_count}, 2)</span>"
-            )
-        )
-
-        cell = row.cells.add()
-        cell.paragraphs.add(
-            ap.HtmlFragment(
-                f"Column <span style='text-decoration: underline'>({row_count}, 3)</span>"
-            )
-        )
-        row_count += 1
-
-    # Add table object to first page of input document
-    page.paragraphs.add(table)
-    # Save updated document containing table object
-    document.save(path_outfile)
-```
-
-### Using LaTeX Fragments in Cells
-
-This example shows how to insert LaTeX-formatted content into table cells for mathematical or styled expressions.
-
-1. Define table and cell borders.
-1. Add LaTeX Content.
-1. Add Rows. A loop adds multiple rows with LaTeX-formatted content in each cell.
-1. Insert the table into the PDF page with 'page.paragraphs.add(table)'.
-1. Save the PDF document.
-
-```python
-
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
-    # Instantiate Document object
-    document = ap.Document()
-    page = document.pages.add()
-    # Instantiate a table object
-    table = ap.Table()
-
-    # Set the table border color as LightGray
-    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
-    # Set the border for table cells
-    table.default_cell_border = ap.BorderInfo(
-        ap.BorderSide.ALL, 0.5, ap.Color.light_gray
-    )
-    # Create a loop to add 10 rows
-    row_count = 1
-    while row_count < 10:
-        # Add row to table
-        row = table.rows.add()
-        # Add table cells
-        cell = row.cells.add()
-        cell.paragraphs.add(
-            ap.LatexFragment(f"Column $\\mathbf{{({row_count}, 1)}}$")
-        )
-
-        cell = row.cells.add()
-        cell.paragraphs.add(
-            ap.LatexFragment(
-                f"Column $\\textcolor{{red}}{{({row_count}, 2)}}$"
-            )
-        )
-
-        cell = row.cells.add()
-        cell.paragraphs.add(
-            ap.LatexFragment(
-                f"Column $\\underline{{({row_count}, 3)}}$"
-            )
-        )
-        row_count += 1
-
-    # Add table object to first page of input document
-    page.paragraphs.add(table)
-    # Save updated document containing table object
-    document.save(path_outfile)
-```
-
-## Advanced Table Features
-
-### Inserting Tables across Pages
-
-This example shows how to create multiple tables in a PDF, set page margins, and force a table to start on a new page.
-
-1. Set Page margins using 'page_info.margin'.
-1. Set the page orientation to landscape 'page_info.is_landscape'.
-1. First Table:
-    - define two columns with specified widths.
-    - add the Rows in a loop with 'row.fixed_row_height'.
-    - populate Cells with text fragments.
-1. Second Table:
-    - create a new table with 'table1.column_widths'.
-    - force the table to start on a new page.
-1. Add the first table.
-1. Add the second table on a new page.
-1. Save the Document
-
-```python
-
-    import aspose.pdf as ap
-    from os import path
-
-    # The path to the documents directory
-    path_outfile = path.join(self.data_dir, outfile)
-
-    # Create PDF document
-    document = ap.Document()
-
-    # Set page and margin information
-    page_info = document.page_info
-    margin_info = page_info.margin
-
-    margin_info.left = 37
-    margin_info.right = 37
-    margin_info.top = 37
-    margin_info.bottom = 37
-    page_info.is_landscape = True
-
-    # First table with 120 rows
-    table = ap.Table()
-    table.column_widths = "50 100"
-
-    cur_page = document.pages.add()
-
-    for i in range(1, 121):
-        row = table.rows.add()
-        row.fixed_row_height = 15
-        cell1 = row.cells.add()
-        cell1.paragraphs.add(ap.text.TextFragment("Content 1"))
-        cell2 = row.cells.add()
-        cell2.paragraphs.add(ap.text.TextFragment("Content 2"))
-
-    cur_page.paragraphs.add(table)
-
-    # Second table with 10 rows
-    table1 = ap.Table()
-    table1.column_widths = "100 100"
-
-    for i in range(1, 11):
-        row = table1.rows.add()
-        cell1 = row.cells.add()
-        cell1.paragraphs.add(ap.text.TextFragment("Content 3"))
-        cell2 = row.cells.add()
-        cell2.paragraphs.add(ap.text.TextFragment("Content 4"))
-
-    table1.is_in_new_page = True  # Force table to new page
-    cur_page.paragraphs.add(table1)
-
-    # Save updated document containing table object
-    document.save(path_outfile)
-```
-
-### Creating borderless Tables
-
-This example shows how to create a large table that can break vertically across pages, repeat columns, and apply different background colors to header cells.
-
-1. Initialize the Table.
-1. Set a default border for all cells.
-1. Header cells use 'col_span' to merge multiple columns.
-1. Set the cell background for better visual distinction with 'background_color set'
-1. Add Rows.
-1. Insert the table into the PDF page with 'page.paragraphs.add(table)'.
-1. Save the PDF document.
-
-```python
-
-    import aspose.pdf as ap
-    from os import path
-
-    # The path to the documents directory
-    path_outfile = path.join(self.data_dir, outfile)
-
-    # Create PDF document
-    document = ap.Document()
-    page = document.pages.add()
-
     table = ap.Table()
     table.broken = ap.TableBroken.VERTICAL
     table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL)
@@ -761,7 +421,233 @@ This example shows how to create a large table that can break vertically across 
         row1.cells.add("col " + str(row_counter) + ", 17")
         row_counter += 1
 
-    document.save(path_outfile)
+    document.save(outfile)
+```
+
+![Borders, margins and padding](set-border-style-margins-and-padding-of-table_1.png)
+
+### Styling Table Corners
+
+Aspose.PDF for Python via .NET shows how to apply rounded corners to a table and customize the border radius.
+
+1. Create a new table instance.
+1. Initialize a border for all sides.
+1. Set the corner radius.
+1. Apply the rounded corner style.
+1. Add Rows and Cells.
+1. Insert the table into the PDF page with 'page.paragraphs.add(table)'.
+1. Save the PDF document.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def create_table_with_round_corner(outfile: str) -> None:
+    # Create new PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Create a table
+    table = ap.Table()
+
+    # Create a blank BorderInfo object
+    b_info = ap.BorderInfo(ap.BorderSide.ALL)
+
+    # Set the border a rounded border where radius of round is 15
+    b_info.rounded_border_radius = 15
+
+    # Set the table corner style as Round
+    table.corner_style = ap.BorderCornerStyle.ROUND
+
+    # Set the table border information
+    table.border = b_info
+
+    # Create a loop to add 10 rows
+    for row_count in range(0, 10):
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        row.cells.add("Column (" + str(row_count) + ", 1)")
+        row.cells.add("Column (" + str(row_count) + ", 2)")
+        row.cells.add("Column (" + str(row_count) + ", 3)")
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(outfile)
+```
+
+## Adding Content to Tables
+
+### Using HTML Fragments in Cells
+
+This example shows how to insert HTML-formatted content into table cells.
+
+1. Define table and cell borders.
+1. Add HTML content.
+1. Add Rows. A loop adds multiple rows with HTML-formatted content in each cell.
+1. Insert the table into the PDF page with 'page.paragraphs.add(table)'.
+1. Save the PDF document.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def add_html_fragments(outfile: str) -> None:
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.ALL, 0.5, ap.Color.light_gray
+    )
+    # Create a loop to add 10 rows
+    row_count = 1
+    while row_count < 10:
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(f"Column <strong>({row_count}, 1)</strong>")
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(f"Column <span style='color:red'>({row_count}, 2)</span>")
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(
+                f"Column <span style='text-decoration: underline'>({row_count}, 3)</span>"
+            )
+        )
+        row_count += 1
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(outfile)
+```
+
+### Using LaTeX Fragments in Cells
+
+This example shows how to insert LaTeX-formatted content into table cells for mathematical or styled expressions.
+
+1. Define table and cell borders.
+1. Add LaTeX Content.
+1. Add Rows. A loop adds multiple rows with LaTeX-formatted content in each cell.
+1. Insert the table into the PDF page with 'page.paragraphs.add(table)'.
+1. Save the PDF document.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def add_latex_fragments(outfile: str) -> None:
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.ALL, 0.5, ap.Color.light_gray
+    )
+    # Create a loop to add 10 rows
+    row_count = 1
+    while row_count < 10:
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        cell = row.cells.add()
+        cell.paragraphs.add(ap.LatexFragment(f"Column $\\mathbf{{({row_count}, 1)}}$"))
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.LatexFragment(f"Column $\\textcolor{{red}}{{({row_count}, 2)}}$")
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.LatexFragment(f"Column $\\underline{{({row_count}, 3)}}$")
+        )
+        row_count += 1
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(outfile)
+```
+
+## Advanced Table Features
+
+### Insert Automatic Page Breaks in a PDF Table
+
+Create a large table in a PDF using Python and Aspose.PDF, with automatic page breaks after a specific number of rows. It builds a multi-row table, applies borders, and forces selected rows to begin on a new page for better layout control.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def insert_page_break(outfile: str) -> None:
+    # Create PDF document
+    document = ap.Document()
+
+    # Add page
+    page = document.pages.add()
+
+    # Create table instance
+    table = ap.Table()
+
+    # Set border style for table
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
+
+    # Set default border style for table with border color as Red
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
+
+    # Specify table columns width
+    table.column_widths = "100 100"
+
+    # Create a loop to add 200 rows for table
+    for counter in range(201):
+        row = ap.Row()
+        table.rows.add(row)
+
+        cell1 = ap.Cell()
+        cell1.paragraphs.add(ap.text.TextFragment(f"Cell {counter}, 0"))
+        row.cells.add(cell1)
+
+        cell2 = ap.Cell()
+        cell2.paragraphs.add(ap.text.TextFragment(f"Cell {counter}, 1"))
+        row.cells.add(cell2)
+
+        # When 10 rows are added, render new row in new page
+        if counter % 10 == 0 and counter != 0:
+            row.is_in_new_page = True
+
+    # Add table to paragraphs collection of PDF file
+    page.paragraphs.add(table)
+
+    # Save PDF document
+    document.save(outfile)
 ```
 
 ### Repeating Header rows on multiple Pages
@@ -777,12 +663,12 @@ This example shows how to create a table that spans multiple pages while keeping
 1. Save the PDF document.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
+def add_repeating_rows(outfile: str) -> None:
     # Create PDF document
     document = ap.Document()
     page = document.pages.add()
@@ -800,7 +686,7 @@ This example shows how to create a table that spans multiple pages while keeping
     text_state.font_size = 12
     text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
     text_state.foreground_color = ap.Color.red
-    table.repeating_rows_style =  text_state
+    table.repeating_rows_style = text_state
 
     # Set column widths
     table.column_widths = "100 100 100"
@@ -838,7 +724,7 @@ This example shows how to create a table that spans multiple pages while keeping
     page.paragraphs.add(table)
 
     # Save document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ### Repeating Columns
@@ -855,25 +741,25 @@ The function 'add_repeating_columns' creates a PDF document with a table that ha
 1. Save PDF Document.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_outfile = path.join(self.data_dir, outfile)
-
+def add_repeating_columns(outfile: str) -> None:
     # Create PDF document
     document = ap.Document()
 
     # Add page
     page = document.pages.add()
-    page.set_page_size(ap.PageSize.A5.height, ap.PageSize.A5.width)
+    page.set_page_size(ap.PageSize.a5.height, ap.PageSize.a5.width)
 
     # Define border
     border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
 
     # Create table
     table = ap.Table()
-    table.broken = ap.TableBroken.VERTICAL
+    table.broken = ap.TableBroken.VERTICAL_IN_SAME_PAGE
     table.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_CONTENT
     table.repeating_columns_count = 5
     table.border = border
@@ -901,6 +787,55 @@ The function 'add_repeating_columns' creates a PDF document with a table that ha
             row.cells.add(f"cell {row_counter},{i}")
 
     # Save PDF document
-    document.save(path_outfile)
-    print(f"File saved at: {path_outfile}")
+    document.save(outfile)
 ```
+
+### Create a PDF Table with Rotated Text Cells
+
+Create a table in a PDF using Python and Aspose.PDF with text rotated at different angles inside each cell. It is useful for vertical headers, creative layouts, compact tables, and custom report formatting.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def rotated_text_table(outfile: str) -> None:
+    # Create PDF document
+    document = ap.Document()
+
+    # Add page
+    page = document.pages.add()
+
+    # Initializes a new instance of the Table
+    table = ap.Table()
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, Color.black)
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, Color.black)
+
+    # Add 1st row to table
+    row1 = table.rows.add()
+    row1.min_row_height = 200
+
+    for cell_count in range(4):
+        # Add table cells
+        cell = row1.cells.add()
+
+        tf = ap.text.TextFragment(f"Cell 1 {cell_count - 1}")
+        tf.text_state.rotation = 90 * cell_count
+        tf.horizontal_alignment = HorizontalAlignment.CENTER
+
+        cell.paragraphs.add(tf)
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+
+    # Save result
+    document.save(outfile)
+```
+
+## Related Table Topics
+
+- [Work with tables in PDF using Python](/pdf/python-net/working-with-tables/)
+- [Extract tables from PDF documents](/pdf/python-net/extracting-table/)
+- [Integrate PDF tables with data sources](/pdf/python-net/integrate-table/)
+- [Manipulate tables in existing PDFs](/pdf/python-net/manipulating-tables/)

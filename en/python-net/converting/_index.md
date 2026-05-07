@@ -1,11 +1,11 @@
 ---
-title: Convert PDF documents using Python
+title: Convert PDF Documents in Python
 linktitle: Convert PDF document
 type: docs
 weight: 70
 url: /python-net/converting/
-lastmod: "2025-02-27"
-description: Learn how to convert PDFs to other formats in Python (NET) with Aspose.PDF for streamlined document processing.
+lastmod: "2026-04-14"
+description: Learn how to convert PDF documents to Word, Excel, PowerPoint, HTML, images, PDF/A, and other formats in Python with Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -57,8 +57,6 @@ This section includes such formats as: EPUB, Markdown, PCL, XPS, LATex/TeX, Text
 
 PDF/A is a version of PDF designed for the long-term archiving of electronic documents.
 If honestly, externally, it is very difficult to determine if it is PDF or PDF/A. To check this file, validators are used. Check the following articles for a quality converting PDF to PDF/A and vice versa.
-
-- [Convert PDF to PDF/A formats](/pdf/python-net/convert-pdf-to-pdfa/) - Python library by Aspose.PDF has an easy way for converting PDF to PDF/A.
 
 - [Convert Images formats to PDF file](/pdf/python-net/convert-images-format-to-pdf/) - Aspose.PDF allows you to convert different formats of images to PDF file.
 

@@ -4,80 +4,67 @@ linktitle: Replace Image
 type: docs
 weight: 70
 url: /python-net/replace-image-in-existing-pdf-file/
-description: This section describes about replace image in existing PDF file using Python library.
-lastmod: "2025-09-17"
+description: Learn how to replace embedded images in existing PDF files in Python.
+lastmod: "2026-05-05"
 TechArticle: true
-AlternativeHeadline: Replace an Image in PDF
-Abstract: The Aspose.PDF for Python via .NET documentation provides a comprehensive guide on replacing images within existing PDF files. This functionality is essential for tasks such as updating logos, graphics, or other visual elements in a PDF document without altering its textual content.
+AlternativeHeadline: Replace images in existing PDF files with Python
+Abstract: This article shows how to replace images in PDF documents with Aspose.PDF for Python via .NET. It covers replacing an image by resource index and replacing a specific image found with ImagePlacementAbsorber.
 ---
 
 ## Replace an Image in PDF
 
-How to replace an existing image on a PDF page with a new image? Implement this using Aspose.PDF for Python via .NET.
+Use this page when you need to update logos, diagrams, or other embedded graphics in a PDF without rebuilding the document layout.
 
-1. Import necessary modules (aspose.pdf, os.path, FileIO).
-1. Define paths for:
-    - Input PDF (infile)
-    - New image file (image_file)
-    - Output PDF (outfile)
-1. Load the PDF document using 'apdf.Document(path_infile)'.
-1. Open the new image file in binary read mode.
-1. Replace the first image on the first page:
-    - 'document.pages[1].resources.images.replace(1, image_stream)'
-1. Save the updated PDF to 'path_outfile'.
+1. Load the source PDF with `ap.Document(infile)`.
+1. Open the replacement image as a binary stream.
+1. Replace an image resource by index on a page.
+1. Save the updated PDF.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
 
-    import aspose.pdf as apdf
-    from io import FileIO
-    from os import path
 
-    path_infile = path.join(self.data_dir, infile)
-    path_image_file = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, outfile)
+def replace_image(infile, image_file, outfile):
+    document = ap.Document(infile)
 
-    document = apdf.Document(path_infile)
-
-    with FileIO(path_image_file, "rb") as image_stream:
+    with FileIO(image_file, "rb") as image_stream:
         document.pages[1].resources.images.replace(1, image_stream)
 
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
-## Replace specific Image
+## Replace a Specific Image
 
-This example demonstrates how to replace a specific image on a PDF page by locating it via image placement detection.
+This example replaces a specific image placement found by `ImagePlacementAbsorber`.
 
-1. Load the PDF using 'apdf.Document()'.
-1. Create an 'ImagePlacementAbsorber' to collect all image placements on the page.
-1. Accept the absorber on the first page ('document.pages[1].accept(absorber)').
+1. Load the source PDF.
+1. Create `ImagePlacementAbsorber` and collect image placements on the page.
 1. Check if any image placements exist on the page.
-1. Select the first image placement (absorber.image_placements[1]) and replace it.
-1. Save the modified PDF to 'path_outfile'.
+1. Replace the selected placement with a new image stream.
+1. Save the updated PDF.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
 
-    import aspose.pdf as apdf
-    from io import FileIO
-    from os import path
 
-    path_infile = path.join(self.data_dir, infile)
-    path_image_file = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, outfile)
-
-    document = apdf.Document(path_infile)
-
-    # Create ImagePlacementAbsorber to find image placements
-    absorber = apdf.ImagePlacementAbsorber()
-
-    # Accept the absorber for the first page
+def replace_image_with_absorber(infile, image_file, outfile):
+    document = ap.Document(infile)
+    absorber = ap.ImagePlacementAbsorber()
     document.pages[1].accept(absorber)
 
-    # Replace the first image placement found
     if len(absorber.image_placements) > 0:
         image_placement = absorber.image_placements[1]
-        with FileIO(path_image_file, "rb") as image_stream:
+        with FileIO(image_file, "rb") as image_stream:
             image_placement.replace(image_stream)
 
-    document.save(path_outfile)
+    document.save(outfile)
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)

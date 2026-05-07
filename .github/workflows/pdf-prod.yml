@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths-ignore:
-        '.github/**'
+      - '.github/**'
 
 jobs:
   job-one:
@@ -15,7 +15,7 @@ jobs:
       LANGUAGES: "ar en es fr id ja ko pt ru zh"
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         submodules: true
         fetch-depth: 0

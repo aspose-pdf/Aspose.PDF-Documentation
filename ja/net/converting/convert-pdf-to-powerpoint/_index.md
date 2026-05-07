@@ -8,7 +8,6 @@ weight: 30
 url: /ja/net/convert-pdf-to-powerpoint/
 lastmod: "2021-11-01"
 description: Aspose.PDFを使用すると、PDFをPPT（PowerPoint）形式に変換できます。PDFをPPTXに変換する方法の一つは、スライドを画像として変換することです。
-lastmod: "2021-10-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

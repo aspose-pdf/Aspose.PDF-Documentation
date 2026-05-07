@@ -1,11 +1,11 @@
 ---
-title: Adding Attachment to a PDF document using Python
+title: Add Attachments to PDF in Python
 linktitle: Adding Attachment to a PDF document
 type: docs
 weight: 10
 url: /python-net/add-attachment-to-pdf-document/
-description: This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library.
-lastmod: "2025-02-27"
+description: Learn how to add file attachments to PDF documents in Python using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,6 +16,8 @@ Abstract: This article provides a step-by-step guide on how to add attachments t
 
 Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
 
+Use embedded PDF attachments when you need to package supporting source files, spreadsheets, images, or related documents together with the main PDF.
+
 1. Create a new Python project.
 1. Import the Aspose.PDF package
 1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
@@ -25,19 +27,19 @@ Attachments can contain a wide variety of information and can be of a variety of
 The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Open document
-    document = ap.Document(input_pdf)
-
-    # Setup new file to be added as attachment
-    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
-
-    # Add attachment to document's attachment collection
-    document.embedded_files.append(fileSpecification)
-
-    # Save new output
-    document.save(output_pdf)
+def add_attachments(infile, attachment_path, outfile):
+    with ap.Document(infile) as document:
+        file_spec = ap.FileSpecification(attachment_path, "Sample text file")
+        document.embedded_files.add(path.basename(attachment_path), file_spec)
+        document.save(outfile)
 ```
+
+## Related Attachment Topics
+
+- [Work with PDF attachments in Python](/pdf/python-net/attachments/)
+- [Remove attachments from PDF in Python](/pdf/python-net/removing-attachment-from-an-existing-pdf/)
+- [Create and manage PDF portfolios in Python](/pdf/python-net/portfolio/)
 

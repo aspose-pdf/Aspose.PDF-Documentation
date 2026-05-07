@@ -8,7 +8,6 @@ weight: 30
 url: /zh/net/convert-pdf-to-powerpoint/
 lastmod: "2021-11-01"
 description: Aspose.PDF 允许您使用 .NET 将 PDF 转换为 PPT（PowerPoint）格式。 一种方法是将 PDF 转换为 PPTX，并将幻灯片作为图像。
-lastmod: "2021-10-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

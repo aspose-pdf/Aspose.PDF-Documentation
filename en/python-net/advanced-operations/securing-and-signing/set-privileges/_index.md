@@ -1,16 +1,16 @@
 ---
-title: Set Privileges, Encrypt and Decrypt PDF
+title: Encrypt and Decrypt PDF Files in Python
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 70
 url: /python-net/set-privileges-encrypt-and-decrypt-pdf-file/
-description: Encrypt PDF File with Python using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
-lastmod: "2025-06-22"
+description: Learn how to set PDF privileges, encrypt files, decrypt protected PDFs, and change passwords in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Encrypt or Decrypt PDF File with Python
+AlternativeHeadline: Set PDF permissions and manage encryption in Python
 Abstract: This documentation page explains how to set document privileges, apply encryption, and decrypt PDF files using Aspose.PDF for Python. It guides developers through configuring user and owner passwords, defining access restrictions (such as printing, copying, or editing). Code examples illustrate how to protect sensitive content and manage PDF security effectively within Python applications, ensuring controlled access and data confidentiality.     
 ---
 
@@ -26,30 +26,32 @@ Aspose.PDF for Python via .NET gives developers full control over PDF security:
 **Change Passwords** - Rotate or update credentials without altering content.
 **Inspect Security** - Detect encryption status or required password types.
 
+Use this page when you need to protect PDF documents with passwords, restrict printing or copying, rotate credentials, or inspect whether a document is encrypted.
+
 ## Set Privileges on an Existing PDF File
 
 You can restrict or allow specific operations (e.g., printing, copying, form filling) by assigning user and owner passwords along with access privileges.
 
 ```python
+import sys
+from os import path
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    path_infile = self.data_dir + infile
-    path_outfile = self.data_dir + outfile
-
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Instantiate Document Privileges object
-        # Apply restrictions on all privileges
+def set_privileges_on_existing_pdf_file(infile: str, outfile: str) -> None:
+    """Set restricted privileges on an existing PDF document."""
+    with ap.Document(infile) as document:
         document_privilege = ap.facades.DocumentPrivilege.forbid_all
-        # Only allow screen reading
         document_privilege.allow_screen_readers = True
-        # Encrypt the file with User and Owner password
-        # Need to set the password, so that once the user views the file with user password
-        # Only screen reading option is enabled
-        document.encrypt("user", "owner", document_privilege, ap.CryptoAlgorithm.AE_SX128, False)
-        # Save PDF document
-        document.save(path_outfile)
+        document.encrypt(
+            "user",
+            "owner",
+            document_privilege,
+            ap.CryptoAlgorithm.AESx128,
+            False,
+        )
+        document.save(outfile)
 ```
 
 ## Encrypt PDF File using Different Encryption Types and Algorithms
@@ -67,18 +69,22 @@ Encrypting a PDF ensures only users with valid credentials can open or modify th
 The following code snippet shows you how to encrypt PDF files.
 
 ```python
+import sys
+from os import path
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    path_infile = self.data_dir + infile
-    path_outfile = self.data_dir + outfile
-
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Encrypt PDF
-        document.encrypt("user", "owner", ap.Permissions.EXTRACT_CONTENT, ap.CryptoAlgorithm.AE_SX128)
-        # Save PDF document
-        document.save(path_outfile)
+def encrypt_pdf_file(infile: str, outfile: str) -> None:
+    """Encrypt a PDF document with user and owner passwords."""
+    with ap.Document(infile) as document:
+        document.encrypt(
+            "user",
+            "owner",
+            ap.Permissions.EXTRACT_CONTENT,
+            ap.CryptoAlgorithm.AESx128,
+        )
+        document.save(outfile)
 ```
 
 ## Decrypt PDF File using Owner Password
@@ -90,18 +96,66 @@ To remove password protection and restore full access:
 1. Saves the now unprotected PDF to the specified output file.
 
 ```python
+import sys
+from os import path
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    path_infile = self.data_dir + infile
-    path_outfile = self.data_dir + outfile
-
-    # Open PDF document with password
-    with ap.Document(path_infile, "password") as document:
-        # Decrypt PDF
+def decrypt_pdf_file(infile: str, outfile: str) -> None:
+    """Decrypt a password-protected PDF document."""
+    with ap.Document(infile, "password") as document:
         document.decrypt()
-        # Save PDF document
-        document.save(path_outfile)
+        document.save(outfile)
+```
+
+## Encrypt and Decrypt a PDF with Public Key Certificates
+
+```python
+import sys
+from os import path
+
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def pub_sec_encryption(
+    crypto_algorithm,
+    pub_cert: str,
+    in_pfx: str,
+    outfile: str,
+) -> None:
+    """Demonstrate public-key encryption and decryption."""
+    pfx_password = "12345"
+
+    with ap.Document() as document:
+        document.info.title = "TestTitle"
+        document.info.author = "TestAuthor"
+        page = document.pages.add()
+        page.paragraphs.add(ap.text.TextFragment("Hello World!"))
+
+        with open(pub_cert, "rb") as file_stream:
+            byte_content = file_stream.read()
+
+        document.encrypt(
+            ap.Permissions.PRINT_DOCUMENT,
+            crypto_algorithm,
+            [byte_content],
+        )
+        document.save(outfile)
+
+    with ap.Document(
+        outfile,
+        ap.security.CertificateEncryptionOptions(pub_cert, in_pfx, pfx_password),
+    ) as document:
+        print(document.info.title)
+        print(document.info.author)
+
+        text_absorber = ap.text.TextAbsorber()
+        document.pages[1].accept(text_absorber)
+        print(text_absorber.text)
+
+        document.decrypt()
+        document.save(path.join(path.dirname(outfile), "pubsec_decrypted_out.pdf"))
 ```
 
 ## Change Password of a PDF File
@@ -113,18 +167,17 @@ To update the security credentials (user and owner passwords) of a PDF document 
 1. Saves the PDF with the updated password settings.
 
 ```python
+import sys
+from os import path
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    path_infile = self.data_dir + infile
-    path_outfile = self.data_dir + outfile
-
-    # Open PDF document with password
-    with ap.Document(path_infile, "owner") as document:
-        # Change password
+def change_password(infile: str, outfile: str) -> None:
+    """Change the passwords of a password-protected PDF document."""
+    with ap.Document(infile, "owner") as document:
         document.change_passwords("owner", "newuser", "newowner")
-        # Save PDF document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## How to - determine if the source PDF is password protected
@@ -141,27 +194,35 @@ The process includes:
 1. If not, it catches the exception and reports the failed password.
 
 ```python
+import sys
+from os import path
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    path_infile = self.data_dir + infile
-
+def determine_correct_password_from_array(infile: str) -> None:
+    """Try a list of passwords until the document opens successfully."""
     with ap.facades.PdfFileInfo() as pdf_file_info:
-        # Bind PDF document
-        pdf_file_info.bind_pdf(path_infile)
-        # Determine if the source PDF is encrypted
-        print("File is password protected " + str(pdf_file_info.is_encrypted))
+        pdf_file_info.bind_pdf(infile)
+        print(f"File is password protected {pdf_file_info.is_encrypted}")
 
-        passwords = ["test", "test1", "test2", "test3", "sample"]
+    passwords = ["test", "test1", "test2", "test3", "sample"]
 
-        for password_index in range(len(passwords)):
-            try:
-                with ap.Document(path_infile, passwords[password_index]) as document:
-                    if len(document.pages) > 0:
-                        print("Number of Pages in document are = " + str(len(document.pages)))
-                    password_index = password_index + 1
-            except Exception as e:
-                print("Password = " + passwords[password_index] + " is not correct")
-                password_index = password_index + 1
+    for password in passwords:
+        try:
+            with ap.Document(infile, password) as document:
+                if len(document.pages) > 0:
+                    print(f"Password = {password} is correct")
+                    print(f"Number of pages in document = {len(document.pages)}")
+                    break
+        except Exception:
+            print(f"Password = {password} is not correct")
 ```
+
+## Related Security Topics
+
+- [Secure and sign PDF files in Python](/pdf/python-net/securing-and-signing/)
+- [Digitally sign PDF files in Python](/pdf/python-net/digitally-sign-pdf-file/)
+- [Extract signature information from PDF in Python](/pdf/python-net/extract-image-and-signature-information/)
+- [Sign PDF documents from a smart card in Python](/pdf/python-net/sign-pdf-document-from-smart-card/)
 

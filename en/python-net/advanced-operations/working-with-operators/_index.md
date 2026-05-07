@@ -1,17 +1,17 @@
 ---
-title: Working with Operators using Python
+title: Work with PDF Operators in Python
 linktitle: Working with Operators
 type: docs
 weight: 90
 url: /python-net/working-with-operators/
-description: This topic explains how to use operators with Aspose.PDF for Python via .NET. The operator classes provide great features for PDF manipulation.
-lastmod: "2025-05-16"
+description: Learn how to use low-level PDF operators in Python for precise content stream manipulation and graphics control.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Using Operators in PDF with Aspose.PDF for Python via .NET
-Abstract: The article provides an in-depth exploration of PDF operators and their applications in manipulating PDF content streams. Operators are specialized keywords in PDF that direct particular actions, such as rendering graphical elements on a page, and are only valid within content streams. The article details a method to exert precise control over image placement in PDFs by directly manipulating content streams using low-level graphics operators. This approach is beneficial for tasks requiring exact image positioning, such as adding watermarks, aligning overlays, and creating custom layouts. Specific operators like GSave, ConcatenateMatrix, Do, and GRestore are emphasized for their roles in managing graphical states and transformations, ensuring accurate rendering without affecting other page content.
+AlternativeHeadline: Use low-level PDF operators for content stream control in Python
+Abstract: This article explains how to work with low-level PDF operators in Aspose.PDF for Python via .NET. Learn how to manipulate content streams directly, position graphics precisely with operator classes, and remove drawn objects from PDF pages in Python workflows.
 ---
 
 ## Introduction to the PDF Operators and Their Usage
@@ -20,15 +20,17 @@ An operator is a PDF keyword specifying some action that shall be performed, suc
 
 A content stream is a PDF stream object whose data consists of instructions describing the graphical elements to be painted on a page. More details about PDF operators can be found in the [PDF specification](https://opensource.adobe.com/dc-acrobat-sdk-docs/).
 
-### Implementation details
+Use this page when you need direct control over PDF content streams in Python, such as placing graphics at exact coordinates, wrapping graphics state changes, or removing specific drawing operators from a page.
+
+## Add Images with Operator Classes
+
+Use low-level operator classes when you need to place image content very precisely in a PDF page stream without relying on higher-level layout abstractions.
 
 This method provides fine-grained control over image placement within a PDF by directly manipulating the content stream with low-level graphics operators. It is particularly useful when precise positioning and transformation of images are required, such as:
 
- - adding watermarks or logos at specific locations.
-
- - overlaying images onto existing content with exact alignment.
-
- - implementing custom layouts that are not achievable with higher-level abstractions.
+- adding watermarks or logos at specific locations.
+- overlaying images onto existing content with exact alignment.
+- implementing custom layouts that are not achievable with higher-level abstractions.
 
 By using operators like GSave, ConcatenateMatrix, Do, and GRestore, developers can ensure that images are rendered accurately and without unintended side effects on other page content.
 
@@ -53,50 +55,47 @@ To add an image into a PDF file:
 The following code snippet shows how to use PDF operators:
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Set coordinates for the image placement
+def add_image_using_pdf_operators(infile, imagefile, outfile):
+    with ap.Document(infile) as document:
         lower_left_x = 100
         lower_left_y = 100
         upper_right_x = 200
         upper_right_y = 200
 
-        # Get the page where the image needs to be added
         page = document.pages[1]
 
-        # Load the image into a file stream
-        with open(path_imagefile, "rb") as image_stream:
-            # Add the image to the page's Resources collection
+        with open(imagefile, "rb") as image_stream:
             page.resources.images.add(image_stream)
 
-        # Save the current graphics state using the GSave operator
-        page.contents.add(ap.operators.GSave())
+        page.contents.append(ap.operators.GSave())
 
-        # Create a rectangle and matrix for positioning the image
-        rectangle = ap.Rectangle(lower_left_x, lower_left_y, upper_right_x, upper_right_y)
-        matrix = ap.Matrix([
-            rectangle.urx - rectangle.llx, 0,
-            0, rectangle.ury - rectangle.lly,
-            rectangle.llx, rectangle.lly
-        ])
+        rectangle = ap.Rectangle(
+            lower_left_x, lower_left_y, upper_right_x, upper_right_y, True
+        )
+        matrix = ap.Matrix(
+            [
+                rectangle.urx - rectangle.llx,
+                0,
+                0,
+                rectangle.ury - rectangle.lly,
+                rectangle.llx,
+                rectangle.lly,
+            ]
+        )
 
-        # Define how the image must be placed using the ConcatenateMatrix operator
-        page.contents.add(ap.operators.ConcatenateMatrix(matrix))
+        page.contents.append(ap.operators.ConcatenateMatrix(matrix))
 
-        # Get the image from the Resources collection
-        x_image = page.resources.images[page.resources.images.count]
+        x_image = page.resources.images[len(page.resources.images)]
 
-        # Draw the image using the Do operator
-        page.contents.add(ap.operators.Do(x_image.name))
+        page.contents.append(ap.operators.Do(x_image.name))
 
-        # Restore the graphics state using the GRestore operator
-        page.contents.add(ap.operators.GRestore())
+        page.contents.append(ap.operators.GRestore())
 
-        # Save PDF document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## Draw XForm on Page using Operators
@@ -112,57 +111,47 @@ This example used the power of XForms and graphics operators to efficiently reus
 By managing the graphics state with GSave and GRestore, and using transformation matrices with ConcatenateMatrix, this technique ensures that each graphic is rendered correctly and independently.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    # Open PDF document
-    with ap.Document(path_infile) as document:
+def draw_xform_on_page(infile, imagefile, outfile):
+    with ap.Document(infile) as document:
         page_contents = document.pages[1].contents
 
-        # Wrap existing contents with GSave/GRestore operators to preserve graphics state
         page_contents.insert(1, ap.operators.GSave())
-        page_contents.add(ap.operators.GRestore())
+        page_contents.append(ap.operators.GRestore())
 
-        # Add GSave operator to start new graphics state
-        page_contents.add(ap.operators.GSave())
+        page_contents.append(ap.operators.GSave())
 
-        # Create an XForm
         form = ap.XForm.create_new_form(document.pages[1], document)
-        document.pages[1].resources.forms.add(form)
+        document.pages[1].resources.forms.append(form)
 
-        form.contents.add(ap.operators.GSave())
-        # Define image width and height
-        form.contents.add(ap.operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0))
+        form.contents.append(ap.operators.GSave())
+        form.contents.append(ap.operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0))
 
-        # Load image into stream
-        with open(path_imagefile, 'rb') as image_stream:
-            # Add the image to the XForm's resources
+        with open(imagefile, "rb") as image_stream:
             form.resources.images.add(image_stream)
 
-        x_image = form.resources.images[form.resources.images.count]
-        # Draw the image on the XForm
-        form.contents.add(ap.operators.Do(x_image.name))
-        form.contents.add(ap.operators.GRestore())
+        x_image = form.resources.images[len(form.resources.images)]
+        form.contents.append(ap.operators.Do(x_image.name))
+        form.contents.append(ap.operators.GRestore())
 
-        # Place and draw the XForm at two different coordinates
+        # Draw XForm at (100, 500)
+        page_contents.append(ap.operators.GSave())
+        page_contents.append(ap.operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500))
+        page_contents.append(ap.operators.Do(form.name))
+        page_contents.append(ap.operators.GRestore())
 
-        # Draw the XForm at (100, 500)
-        page_contents.add(ap.operators.GSave())
-        page_contents.add(ap.operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500))
-        page_contents.add(ap.operators.Do(form.name))
-        page_contents.add(ap.operators.GRestore())
+        # Draw XForm at (100, 300)
+        page_contents.append(ap.operators.GSave())
+        page_contents.append(ap.operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300))
+        page_contents.append(ap.operators.Do(form.name))
+        page_contents.append(ap.operators.GRestore())
 
-        # Draw the XForm at (100, 300)
-        page_contents.add(ap.operators.GSave())
-        page_contents.add(ap.operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300))
-        page_contents.add(ap.operators.Do(form.name))
-        page_contents.add(ap.operators.GRestore())
+        page_contents.append(ap.operators.GRestore())
 
-        # Restore graphics state
-        page_contents.add(ap.operators.GRestore())
-
-        # Save PDF document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## Remove Graphics Objects using Operator Classes
@@ -170,28 +159,28 @@ By managing the graphics state with GSave and GRestore, and using transformation
 The following code snippet shows how to remove graphics. Please note that if the PDF file contains text labels for the graphics, they might persist in the PDF file, using this approach. Therefore search the graphic operators for an alternate method to delete such images.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Get the specific page (page 2 in this case)
-        page = document.pages[2]
-
-        # Get the operator collection from the page contents
-        operator_collection = page.contents
-
-        # Define the path-painting operators to be removed
+def remove_graphics_objects(infile, outfile):
+    with ap.Document(infile) as document:
+        page = document.pages[1]
+        # Collect operators to remove in single pass
+        # Operator codes: S=Stroke, h=ClosePathStroke, f=Fill'
+        graphics_operators = {"S", "h", "f"}
         operators_to_remove = [
-            ap.operators.Stroke(),
-            ap.operators.ClosePathStroke(),
-            ap.operators.Fill()
+            op for op in page.contents if str(op) in graphics_operators
         ]
 
-        # Delete the specified operators from the page contents
-        operator_collection.delete(operators_to_remove)
-
-        # Save PDF document
-        document.save(path_outfile)
+        page.contents.delete(operators_to_remove)
+        document.save(outfile)
 ```
+
+## Related Topics
+
+- [Advanced PDF operations in Python](/pdf/python-net/advanced-operations/)
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
 

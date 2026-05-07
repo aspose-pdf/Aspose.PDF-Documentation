@@ -14,7 +14,7 @@ For developers, there are many scenarios where it becomes necessary to programma
 
 ## How to Create PDF File using Python
 
-To create a PDF file usingPython, the following steps can be used.
+To create a PDF file using Python, the following steps can be used.
 
 1. Create an object of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class
 1. Add a [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) object to the [Pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) collection of the Document object
@@ -22,19 +22,17 @@ To create a PDF file usingPython, the following steps can be used.
 1. Save the resultant PDF document
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Initialize document object
-    document = ap.Document()
-    # Add page
-    page = document.pages.add()
-    # Initialize textfragment object
-    text_fragment = ap.text.TextFragment("Hello,world!")
-    # Add text fragment to new page
-    page.paragraphs.add(text_fragment)
-    # Save updated PDF
-    document.save("output.pdf")
+# Initialize document object
+document = ap.Document()
+# Add page
+page = document.pages.add()
+# Add text to new page
+page.paragraphs.add(ap.text.TextFragment("Hello World!"))
+# Define output file path
+output_pdf = "output.pdf"
+# Save updated PDF
+output_pdf = "output.pdf"
+document.save(output_pdf)
 ```
-
-

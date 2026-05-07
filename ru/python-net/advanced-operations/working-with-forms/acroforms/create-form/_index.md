@@ -1,184 +1,255 @@
 ---
-title: Создание AcroForm - Создание заполняемого PDF на Python
-linktitle: Создание AcroForm
+title: Создать AcroForm — создать заполняемый PDF в Python
+linktitle: Создать AcroForm
 type: docs
 weight: 10
 url: /ru/python-net/create-form/
-description: С Aspose.PDF для Python вы можете создать форму с нуля в вашем PDF файле
-lastmod: "2023-02-17"
+description: Создайте поля AcroForm с нуля в PDF‑документах, используя Aspose.PDF for Python via .NET.
+lastmod: "2026-04-28"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как создать AcroForm в PDF, используя Python
+Abstract: В этой статье объясняется, как создавать поля AcroForm в PDF‑документах, используя Aspose.PDF for Python via .NET. Охватывается базовое создание полей с TextBoxField, настройка внешнего вида многовидовых текстовых полей, а также дополнительные типы полей, такие как radio buttons, combo boxes, checkboxes, list boxes, signature fields и barcode fields. Эти примеры помогут вам создавать интерактивные PDF‑формы для сбора данных и автоматизации рабочих процессов с документами.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Создание AcroForm на Python",
-    "alternativeHeadline": "Как создать AcroForm в PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, создание acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Документальная команда",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/create-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/create-form/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "С Aspose.PDF для Python вы можете создать форму с нуля в вашем PDF файле"
-}
-</script>
 
+## Создать форму с нуля
 
-## Создание формы с нуля
+### Добавление полей формы в PDF Document
 
-### Добавление поля формы в PDF документ
-
-Класс [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) предоставляет коллекцию под названием [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/), которая помогает управлять полями формы в PDF документе.
+Определённый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс предоставляет коллекцию с именем [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) что помогает управлять полями формы в PDF‑документе.
 
 Чтобы добавить поле формы:
 
 1. Создайте поле формы, которое вы хотите добавить.
-2. Вызовите метод [add](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#methods) коллекции Form.
+1. Вызовите Form collection’s [add](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#methods) метод.
 
 ### Добавление TextBoxField
 
-Пример ниже показывает, как добавить [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
+В следующем примере показано, как добавить [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
 
 ```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    import aspose.pdf as ap
+def add_text_box_field(output_file_name):
+    document = ap.Document()
+    page = document.pages.add()
 
-    # Открыть документ
-    pdfDocument = ap.Document(input_file)
+    rectangle = ap.Rectangle(10, 600, 110, 620, True)
+    text_box_field = ap.forms.TextBoxField(page, rectangle)
+    text_box_field.partial_name = "textbox1"
+    text_box_field.value = "Text Box"
 
-    # Создать поле
-    textBoxField = ap.forms.TextBoxField(pdfDocument.pages[1], ap.Rectangle(100, 200, 300, 300, True))
-    textBoxField.partial_name = "textbox1"
-    textBoxField.value = "Text Box"
+    text_box_field.default_appearance = ap.annotations.DefaultAppearance(
+        "Arial", 10, drawing.Color.dark_blue
+    )
 
-    border = ap.annotations.Border(textBoxField)
-    border.width = 5
-    border.dash = ap.annotations.Dash(1, 1)
-    textBoxField.border = border
+    border = ap.annotations.Border(text_box_field)
+    border.width = 1
+    border.style = ap.annotations.BorderStyle.DASHED
+    border.dash = ap.annotations.Dash(3, 3)
+    text_box_field.border = border
 
-    textBoxField.color = ap.Color.green
+    text_box_field.characteristics.border = ap.Color.red.to_rgb()
+    text_box_field.characteristics.background = ap.Color.yellow.to_rgb()
 
-    # Добавить поле в документ
-    pdfDocument.form.add(textBoxField, 1)
-
-    # Сохранить измененный PDF
-    pdfDocument.save(output_pdf)
+    document.form.add(text_box_field, 1)
+    document.save(output_file_name)
 ```
 
+### Текстовое поле с несколькими виджетами в PDF
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для библиотеки Python",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Библиотека для работы с PDF для Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+Создайте текстовое поле формы с несколькими внешними видами виджетов в PDF, используя Python и Aspose.PDF. Оно размещает несколько областей ввода текста на странице, применяет разные шрифты и цвета к каждому виджету, настраивает границы и задаёт стили фона для интерактивной PDF‑формы.
+
+1. Создайте новый PDF документ.
+1. Определите позиции текстовых полей.
+1. Создайте разные внешние виды по умолчанию.
+1. Создайте текстовое поле.
+1. Примените внешний вид к каждому виджету.
+1. Настройте стиль границы.
+1. Добавьте поле в форму.
+1. Сохраните PDF‑файл.
+
+```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def add_text_box_field_nt(output_file_name):
+    document = ap.Document()
+    page = document.pages.add()
+
+    rects = [
+        ap.Rectangle(10, 600, 110, 620, normalize_coordinates=True),
+        ap.Rectangle(10, 630, 110, 650, normalize_coordinates=True),
+        ap.Rectangle(10, 660, 110, 680, normalize_coordinates=True),
+    ]
+
+    default_appearances = [
+        ap.annotations.DefaultAppearance("Arial", 10, drawing.Color.dark_blue),
+        ap.annotations.DefaultAppearance("Helvetica", 12, drawing.Color.dark_green),
+        ap.annotations.DefaultAppearance(
+            ap.text.FontRepository.find_font("Calibri"), 14, drawing.Color.dark_magenta
+        ),
+    ]
+
+    text_box_field = ap.forms.TextBoxField(page, rects)
+    text_box_field.partial_name = "textbox1"
+    text_box_field.value = "Some text"
+
+    for i, widget in enumerate(text_box_field):
+        widget.default_appearance = default_appearances[i]
+
+    border = ap.annotations.Border(text_box_field)
+    border.width = 1
+    border.style = ap.annotations.BorderStyle.DASHED
+    border.dash = ap.annotations.Dash(3, 3)
+    text_box_field.border = border
+
+    text_box_field.characteristics.border = ap.Color.red.to_rgb()
+    text_box_field.characteristics.background = ap.Color.yellow.to_rgb()
+
+    document.form.add(text_box_field)
+    document.save(output_file_name)
+```
+
+## Добавление других полей формы
+
+Следующие фрагменты кода показывают, как добавить различные типы полей, такие как переключатели, комбинированные списки, флажки, списки, поля подписи и поля штрих‑кода. Каждая функция создаёт новый PDF‑документ, добавляет целевое поле с выбранными параметрами и сохраняет обновлённый файл.
+
+1. Добавьте поле переключателя
+1. Добавьте поле комбобокса
+1. Добавьте поле флажка
+1. Добавьте поле списка
+1. Добавьте поле подписи
+1. Добавьте поле штрих‑кода
+
+### Добавить поле переключателя
+
+```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def add_radio_button(output_file_name):
+    document = ap.Document()
+    document.pages.add()
+
+    radio = ap.forms.RadioButtonField(document.pages[1])
+    radio.add_option(
+        "Option 1", ap.Rectangle(100, 640, 120, 680, normalize_coordinates=True)
+    )
+    radio.add_option(
+        "Option 2", ap.Rectangle(140, 640, 160, 680, normalize_coordinates=True)
+    )
+
+    document.form.add(radio)
+    document.save(output_file_name)
+```
+
+### Добавить поле комбобокса
+
+```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def add_combo_box(output_file_name):
+    document = ap.Document()
+    page = document.pages.add()
+
+    combo = ap.forms.ComboBoxField(
+        page, ap.Rectangle(100, 640, 150, 656, normalize_coordinates=True)
+    )
+    combo.add_option("Red")
+    combo.add_option("Yellow")
+    combo.add_option("Green")
+    combo.add_option("Blue")
+    combo.selected = 3
+
+    document.form.add(combo)
+    document.save(output_file_name)
+```
+
+### Добавить поле флажка
+
+```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def add_checkbox_field_to_pdf(output_file_name):
+    document = ap.Document()
+    page = document.pages.add()
+
+    checkbox = ap.forms.CheckboxField(
+        page, ap.Rectangle(50, 620, 100, 650, normalize_coordinates=True)
+    )
+    checkbox.characteristics.background = ap.Color.aqua.to_rgb()
+    checkbox.style = ap.forms.BoxStyle.CIRCLE
+
+    document.form.add(checkbox)
+    document.save(output_file_name)
+```
+
+### Добавить поле списка
+
+```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def add_list_box_field_to_pdf(output_file_name):
+    document = ap.Document()
+    page = document.pages.add()
+
+    list_box = ap.forms.ListBoxField(
+        page, ap.Rectangle(50, 650, 100, 700, normalize_coordinates=True)
+    )
+    list_box.partial_name = "list"
+    list_box.add_option("Red")
+    list_box.add_option("Green")
+    list_box.add_option("Blue")
+
+    document.form.add(list_box)
+    document.save(output_file_name)
+```
+
+### Добавить поле подписи
+
+```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def add_signature_field(output_file_name):
+    document = ap.Document()
+    page = document.pages.add()
+
+    signature_field = ap.forms.SignatureField(
+        page, ap.Rectangle(100, 700, 200, 800, True)
+    )
+    signature_field.partial_name = "Signature1"
+    document.form.add(signature_field)
+    document.save(output_file_name)
+```
+
+### Добавить поле штрих‑кода
+
+```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+def add_barcode_field(output_file_name):
+    document = ap.Document()
+    page = document.pages.add()
+
+    barcode = ap.forms.BarcodeField(page, ap.Rectangle(100, 700, 200, 740, True))
+    barcode.partial_name = "Barcode1"
+    barcode.add_barcode("1234567890")
+    document.form.add(barcode)
+    document.save(output_file_name)
+```
+
+## Связанные темы
+
+- [Заполнить AcroForm](/pdf/ru/python-net/fill-form/)
+- [Извлечь AcroForm](/pdf/ru/python-net/extract-form/)
+- [Изменение AcroForm](/pdf/ru/python-net/modifying-form/)
+- [Импорт и экспорт данных формы](/pdf/ru/python-net/import-export-form-data/)

@@ -1,11 +1,11 @@
 ---
-title: Adding Bates Numbering Artifact in Python via .NET
+title: Add Bates Numbering to PDF in Python
 linktitle: Adding Bates Numbering
 type: docs
 weight: 10
 url: /python-net/add-bates-numbering/
-description: Aspose.PDF for Python via .NET allows you to add Bates Numbering to PDF.
-lastmod: "2025-11-13"
+description: Learn how to add and remove Bates numbering in PDF documents using Python with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -29,113 +29,71 @@ This example shows how to programmatically add Bates numbering to a PDF document
 To add a Bates-numbering artifact to a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), call the `AddBatesNumbering(BatesNArtifact)` extension method on the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/), passing a [`BatesNArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/) instance as the parameter:
 
 ```python
-
+import sys
+from os import path
 import aspose.pdf as ap
 
-def add_bates_numbering(path_outfile):
-    # Create a new or empty PDF document
-    with ap.Document() as document:
-
-        # Add 10 blank pages
-        for _ in range(10):
-            document.pages.add()
-
-        # Create Bates numbering artifact
-        bates = ap.BatesNArtifact(
-            start_page=1,
-            end_page=0,  # 0 = apply until last page
-            subset=ap.Subset.ALL,
-            number_of_digits=6,
-            start_number=1,
-            prefix="",
-            suffix="",
-            artifact_vertical_alignment=ap.VerticalAlignment.BOTTOM,
-            artifact_horizontal_alignment=ap.HorizontalAlignment.RIGHT,
-            right_margin=72,
-            left_margin=72,
-            top_margin=36,
-            bottom_margin=36
-        )
-
-        # Add Bates numbering to all pages
-        document.pages.add_bates_numbering(bates)
-
-        # Save the resulting PDF
-        document.save(path_outfile)
+def _create_bates_artifact():
+    """Create a Bates numbering artifact with default settings."""
+    artifact = ap.BatesNArtifact()
+    artifact.start_page = 1
+    artifact.end_page = 0
+    artifact.subset = ap.Subset.ALL
+    artifact.number_of_digits = 6
+    artifact.start_number = 1
+    artifact.prefix = ""
+    artifact.suffix = ""
+    artifact.artifact_vertical_alignment = ap.VerticalAlignment.BOTTOM
+    artifact.artifact_horizontal_alignment = ap.HorizontalAlignment.RIGHT
+    artifact.right_margin = 72
+    artifact.left_margin = 72
+    artifact.top_margin = 36
+    artifact.bottom_margin = 36
+    return artifact
 ```
 
-Or, you can pass a collection of [`PaginationArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/paginationartifact/) objects:
-
 ```python
-
+import sys
+from os import path
 import aspose.pdf as ap
 
-def add_bates_numbering_collection(path_outfile):
-    with ap.Document() as document:
-
-        # Add 10 pages
-        for _ in range(10):
+def add_bates_n_artifact(infile, outfile):
+    """Add Bates numbering artifact to a PDF document."""
+    with ap.Document(infile) as document:
+        for _ in range(2):
             document.pages.add()
 
-        # Create Bates artifact
-        bates = ap.BatesNArtifact(
-            start_page=1,
-            end_page=0,
-            subset=ap.Subset.ALL,
-            number_of_digits=6,
-            start_number=1,
-            prefix="",
-            suffix="",
-            artifact_vertical_alignment=ap.VerticalAlignment.BOTTOM,
-            artifact_horizontal_alignment=ap.HorizontalAlignment.RIGHT,
-            right_margin=72,
-            left_margin=72,
-            top_margin=36,
-            bottom_margin=36
-        )
-
-        # Add as a pagination artifact list
-        document.pages.add_pagination([bates])
-
-        # Save document
-        document.save(path_outfile)
+        bates_artifact = _create_bates_artifact()
+        ap.PageCollectionExtensions.add_bates_numbering(document.pages, bates_artifact)
+        document.save(outfile)
 ```
 
-Add a Bates numbering artifact using an action delegate:
+## Add Bates Numbering Using Pagination Artifacts
+
+Add Bates numbering to a PDF using the pagination artifacts collection in Aspose.PDF for Python:
+
+1. Load the PDF document.
+1. Insert extra pages if needed before applying numbering.
+1. Create a Bates artifact.
+1. Configure artifact properties.
+1. Add the artifact to pagination collection.
+1. Apply pagination to pages.
+1. Save the updated document.
 
 ```python
-
+import sys
+from os import path
 import aspose.pdf as ap
 
-def add_bates_numbering_delegate(path_outfile):
-    def configure_bates(b):
-        """Configure Bates numbering artifact with desired settings."""
-        b.start_page = 1
-        b.end_page = 0
-        b.subset = ap.Subset.ALL
-        b.number_of_digits = 6
-        b.start_number = 1
-        b.prefix = ""
-        b.suffix = ""
-        b.artifact_vertical_alignment = ap.VerticalAlignment.BOTTOM
-        b.artifact_horizontal_alignment = ap.HorizontalAlignment.RIGHT
-        b.right_margin = 72
-        b.left_margin = 72
-        b.top_margin = 36
-        b.bottom_margin = 36
-        b.text_state.font_size = 10
-    
-    with ap.Document() as document:
-
-        # Add 10 pages
-        for _ in range(10):
+def add_bates_n_artifact_pagination(infile, outfile):
+    """Add Bates numbering using pagination artifacts collection."""
+    with ap.Document(infile) as document:
+        for _ in range(2):
             document.pages.add()
 
-        # Use delegate function to configure Bates artifact
-        document.pages.add_bates_numbering(configure_bates)
-
-        # Save output PDF
-        document.save(path_outfile)
+        bates_artifact = _create_bates_artifact()
+        ap.PageCollectionExtensions.add_pagination(document.pages, [bates_artifact])
+        document.save(outfile)
 ```
 
 ## Delete Bates Numbering
@@ -143,15 +101,20 @@ def add_bates_numbering_delegate(path_outfile):
 To remove Bates numbering from a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), use the `delete_bates_numbering()` method on the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/):
 
 ```python
-
+import sys
+from os import path
 import aspose.pdf as ap
 
-def delete_bates_numbering(path_infile, path_outfile):
-    with ap.Document(path_infile) as document:
-
-        # Remove Bates numbering from all pages
-        document.pages.delete_bates_numbering()
-
-        # Save updated document
-        document.save(path_outfile)
+def delete_bates_numbering(infile, outfile):
+    """Delete Bates numbering from a PDF document."""
+    with ap.Document(infile) as document:
+        ap.PageCollectionExtensions.delete_bates_numbering(document.pages)
+        document.save(outfile)
 ```
+
+## Related Artifact Topics
+
+- [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
+- [Add watermarks to PDF in Python](/pdf/python-net/add-watermarks/)
+- [Add PDF backgrounds in Python](/pdf/python-net/add-backgrounds/)
+- [Count artifact types in PDF files](/pdf/python-net/counting-artifacts/)

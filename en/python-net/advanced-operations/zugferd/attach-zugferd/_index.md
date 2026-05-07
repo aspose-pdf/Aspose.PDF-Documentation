@@ -29,32 +29,26 @@ We recommend following steps to attach ZUGFeRD to PDF:
 1. Save the PDF document with the attached ZUGFeRD.
 
 ```python
+import sys
+import os
 import aspose.pdf as ap
 
-# Define the path to the directory where the input and output PDF files are located
-_dataDir = "./"
+def attach_invoice_zugferd_format(infile, invoice, outfile):
+    document = ap.Document(infile)
 
-# Load the PDF file that will be processed
-path = _dataDir + "ZUGFeRD/ZUGFeRD-test.pdf"
-document = ap.Document(path)
+    # Create a FileSpecification object for the XML file that contains the invoice metadata
+    description = "Invoice metadata conforming to ZUGFeRD standard"
+    file_specification = ap.FileSpecification(invoice, description)
 
-# Create a FileSpecification object for the XML file that contains the invoice metadata
-description = "Invoice metadata conforming to ZUGFeRD standard"
-path = _dataDir + "ZUGFeRD/factur-x.xml"
-fileSpecification = ap.FileSpecification(path, description)
+    # Set the MIME type and the AFRelationship properties of the embedded file
+    file_specification.mime_type = "text/xml"
+    file_specification.af_relationship = ap.AFRelationship.ALTERNATIVE
 
-# Set the MIME type and the AFRelationship properties of the embedded file
-fileSpecification.mime_type = "text/xml"
-fileSpecification.af_relationship = ap.AFRelationship.ALTERNATIVE
+    # Add the embedded file to the PDF document's embedded files collection
+    document.embedded_files.add("factur", file_specification)
 
-# Add the embedded file to the PDF document's embedded files collection
-document.embedded_files.add("factur",fileSpecification)
-
-# Convert the PDF document to the PDF/A-3A format
-path = _dataDir + "ZUGFeRD/log.xml"
-document.convert(path, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
-
-# Save the PDF document with the attached ZUGFeRD
-path = _dataDir + "ZUGFeRD/ZUGFeRD-res.pdf"
-document.save(path)
+    # Convert the PDF document to the PDF/A-3A format
+    log_path = outfile.replace(".pdf", "_log.xml")
+    document.convert(log_path, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
+    document.save(outfile)
 ```

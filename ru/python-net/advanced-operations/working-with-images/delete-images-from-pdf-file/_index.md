@@ -1,193 +1,58 @@
 ---
-title: Удаление изображений из PDF файла с использованием Python
-linktitle: Удаление изображений
+title: Удалить изображения из PDF‑файла с помощью Python
+linktitle: Удалить изображения
 type: docs
 weight: 20
-url: /ru/python-net/delete-images-from-pdf-file/
-description: В этом разделе объясняется, как удалить изображения из PDF файла с использованием Aspose.PDF для Python через .NET.
-lastmod: "2023-04-17"
+url: /python-net/delete-images-from-pdf-file/
+description: Узнайте, как удалить конкретные или все изображения из PDF‑файлов с помощью Python.
+lastmod: "2026-05-05"
+TechArticle: true
+AlternativeHeadline: Удалить изображения из PDF‑файлов с помощью Python
+Abstract: В этой статье показано, как удалять изображения из PDF‑документов с помощью Aspose.PDF for Python via .NET. Описывается удаление конкретного ресурса изображения и удаление всех изображений с выбранной страницы.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Удаление изображений из PDF файла с использованием Python",
-    "alternativeHeadline": "Как удалить изображения из PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "создание pdf документов",
-    "keywords": "pdf, python, удаление, удалить изображение из pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/delete-images-from-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/delete-images-from-pdf-file/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "В этом разделе объясняется, как удалить изображения из PDF файла с использованием Aspose.PDF для Python через .NET."
-}
-</script>
 
+Используйте эту страницу, когда нужно удалить ненужную графику, уменьшить размер PDF или очистить конфиденциальный визуальный контент из документа.
 
-Есть много причин для удаления всех или конкретных изображений из PDF.
+## Удалить изображения из PDF‑файла
 
-Иногда PDF-файл может содержать важные изображения, которые необходимо удалить для защиты конфиденциальности или предотвращения несанкционированного доступа к определенной информации.
+Выполните следующие шаги, чтобы удалить одно изображение со страницы:
 
-Удаление ненужных или избыточных изображений может помочь уменьшить размер файла, что облегчает обмен или хранение PDF.
-
-При необходимости вы можете уменьшить количество страниц, удалив все изображения из документа. Также удаление изображений из документа поможет подготовить PDF для сжатия или извлечения текстовой информации.
-
-**Aspose.PDF для Python через .NET** поможет вам с этой задачей.
-
-## Удалить изображения из PDF-файла
-
-Чтобы удалить изображение из PDF-файла:
-
-1. Откройте существующий PDF-документ.
-1. Удалите конкретное изображение.
-1. Сохраните обновленный PDF-файл.
-
-Следующий фрагмент кода показывает, как удалить изображение из PDF-файла.
+1. Загрузите исходный PDF с помощью `ap.Document(infile)`.
+1. Выберите страницу и индекс ресурса изображения.
+1. Удалите изображение с `resources.images.delete(index)`.
+1. Сохраните обновлённый PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Открыть документ
-    document = ap.Document(input_file)
-
-    # Удалить конкретное изображение
-    document.pages[2].resources.images.delete(1)
-
-    # Сохранить обновленный PDF-файл
-    document.save(output_pdf)
+def delete_image(infile, outfile):
+    document = ap.Document(infile)
+    document.pages[1].resources.images.delete(1)
+    document.save(outfile)
 ```
 
+## Удалить все изображения со страницы
 
-## Удалить все изображения из входного PDF
+Используйте этот пример, чтобы удалить каждое изображение с конкретной страницы.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Открыть документ
-    document = ap.Document(input_file)
+def delete_all_images_from_page(infile, outfile, page_number):
+    document = ap.Document(infile)
+    page = document.pages[page_number]
 
-    # Удалить все изображения на всех страницах
-    for i in range(len(document.pages)):
-        while len(document.pages[i + 1].resources.images) != 0:
-            document.pages[i + 1].resources.images.delete(1)
+    while len(page.resources.images) != 0:
+        page.resources.images.delete(1)
 
-    # Сохранить обновленный PDF файл
-    document.save(output_file)
+    document.save(outfile)
 ```
 
+## Связанные темы изображений
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Работа с изображениями в PDF с использованием Python](/pdf/ru/python-net/working-with-images/)
+- [Замена изображений в существующих PDF‑файлах](/pdf/ru/python-net/replace-image-in-existing-pdf-file/)
+- [Извлечение изображений из PDF‑файлов](/pdf/ru/python-net/extract-images-from-pdf-file/)
+- [Добавление изображений в существующие PDF‑файлы](/pdf/ru/python-net/add-image-to-existing-pdf-file/)

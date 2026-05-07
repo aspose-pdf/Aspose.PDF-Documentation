@@ -1,22 +1,26 @@
 ---
-title: Working with PDF Documents using Python
+title: Work with PDF Documents in Python
 linktitle: Working with Documents
 type: docs
 weight: 10
 url: /python-net/working-with-documents/
-description: This article describes to you what manipulations can be done with the document with Aspose.PDF for Python via .NET library.
-lastmod: "2025-02-27"
+description: Learn how to create, format, manipulate, optimize, merge, split, and manage PDF documents in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to work with PDF using Python
-Abstract: PDF files are versatile documents designed for secure and high-quality exchange across different software and operating systems. They are accessible on various devices, including computers, tablets, and smartphones, and can contain images, tables, and interactive elements. While viewing and printing PDFs is straightforward, editing them can be challenging. The **Aspose.PDF for Python Library** offers robust solutions for managing PDFs, enabling users to create, format, manipulate, optimize, merge, and split PDF documents effectively. Key functionalities include creating simple PDFs, setting document properties, validating against PDF/A standards, optimizing file size, merging multiple PDFs, splitting pages into separate files, and adding headings with numbering. This library provides an extensive toolkit for handling complex PDF tasks in Python applications.
+AlternativeHeadline: Create, format, merge, split, and optimize PDF documents in Python
+Abstract: This section explains how to work with PDF documents using Aspose.PDF for Python via .NET. Learn how to create PDF files, format document properties, manipulate content structure, optimize file size, merge and split PDFs, and manage optional content layers in Python workflows.
 ---
 
 PDF files are designed for the safe and high-quality exchange of documents, regardless of which software or operating system is used to view them. They can be opened and viewed on many devices and operating systems, including computers, tablets, and smartphones. For today, such documents may contain images, tables, various interactive elements, etc.
 
-PDF documents can be viewed and printed, but not always easily edited. However, the **Aspose.PDF for Python Library** will help you cope with even the most difficult task in working with PDF.
+PDF documents can be viewed and printed, but not always easily edited. However, the **Aspose.PDF for Python via .NET** will help you cope with even the most difficult task in working with PDF.
+
+Use this section when you need to work with whole-document PDF workflows in Python, such as creating files, validating standards, optimizing size, combining multiple PDFs, or splitting large documents into smaller ones.
+
+## Document Tasks Covered
 
 You are able to do the following:
 
@@ -27,4 +31,3 @@ You are able to do the following:
 - [Merge PDF](/pdf/python-net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using Python.
 - [Split PDF](/pdf/python-net/split-document/) - split PDF pages into individual PDF files in your Python applications.
 - [Working with Headings](/pdf/python-net/working-with-headings/) - you can create numbering in heading your PDF document with Python.
-- [Working with PDF layers](/pdf/python-net/working-with-pdf-layers/) - how to manage and manipulate PDF layers using the Aspose.PDF for Python via .NET library.

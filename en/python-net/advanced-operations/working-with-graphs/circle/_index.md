@@ -1,67 +1,47 @@
 ---
-title: Add Circle Object to PDF file
+title: Add Circle Shapes to PDF in Python
 linktitle: Add Circle
 type: docs
 weight: 20
 url: /python-net/add-circle/
-description: This article explains how to create a circle object to your PDF using Aspose.PDF for Python via .NET.
-lastmod: "2025-05-14"
+description: Learn how to draw and fill circle shapes in PDF files in Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Adding Circle Object to PDF using Python
-Abstract: The article provides a guide on using Aspose.PDF for Python via .NET to create circle objects within PDF documents. It explains the process of adding both outlined and filled circle graphics, highlighting how circle graphs can be a useful tool for displaying data across multiple categories when the data represents a complete whole. The article includes step-by-step instructions for creating a `Document` instance, setting up a `Drawing` object with specific dimensions, applying a border, and adding a `Graph` object to a PDF page. The code examples demonstrate drawing a simple circle and a filled circle, with detailed instructions on setting colors and adding text to the circle. Visual results of these operations are also presented, showcasing the capabilities of Aspose.PDF in enhancing PDF content with dynamic graphical elements.
+TechArticle: true
+AlternativeHeadline: Draw circle shapes in PDF files using Python
+Abstract: This article shows how to add circle shapes to PDF documents with Aspose.PDF for Python via .NET. It covers creating outlined circles, filling circles with color, and placing text inside circle objects.
 ---
 
 ## Add Circle object
 
-Like bar graphs, circle graphs can be used to display data in a number of separate categories. Unlike bar graphs, however, circle graphs can be used only when you have data for all the categories that make up the whole. So let's take a look at adding a [Circle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/circle/) object with Aspose.PDF for Python .NET.
-
-This example illustrates how to programmatically draw a circle within a PDF document using Aspose.PDF for Python via .NET. By leveraging the drawing module, developers can create complex graphical elements with precise control over their appearance and positioning. This capability is essential for applications that require dynamic generation of graphical content within PDFs, such as technical diagrams, charts, or custom illustrations.
+Aspose.PDF for Python via .NET lets you add [Circle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/circle/) shapes to PDF pages through the [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) class. Use circles for diagrams, annotations, and simple visual elements.
 
 Follow the steps below:
 
 1. Create [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instance.
-1. Create [Drawing object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) with certain dimensions.
-1. Set [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) for Drawing object.
+1. Create [Graph object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) with certain dimensions.
+1. Set [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) for Graph object.
 1. Add [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) object to paragraphs collection of page.
 1. Save our PDF file.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create PDF document
+def add_circle(outfile: str):
     document = ap.Document()
-
-    # Add page
     page = document.pages.add()
-
-    # Create Drawing object with certain dimensions
     graph = drawing.Graph(400, 200)
+    graph.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
 
-    # Set border for Drawing object
-    border_info = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
-    graph.border = border_info
-
-    # Create a circle with the specified coordinates and radius
     circle = drawing.Circle(100, 100, 40)
-
-    # Set the circle's color
-    circle.graph_info = drawing.GraphInfo()
     circle.graph_info.color = ap.Color.green_yellow
-
-    # Add the circle to the graph shapes
     graph.shapes.add(circle)
 
-    # Add Graph object to paragraphs collection of page
     page.paragraphs.add(graph)
-
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 Our drawn circle will look like this:
@@ -70,45 +50,35 @@ Our drawn circle will look like this:
 
 ## Create Filled Circle Object
 
-This example shows how to add a Circle object that is filled with color.
+This example shows how to add a circle and fill it with color.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
-
-    # Create PDF document
+def add_circle_filled(outfile: str):
     document = ap.Document()
-
-    # Add page
     page = document.pages.add()
-
-    # Create Drawing object with certain dimensions
     graph = drawing.Graph(400, 200)
+    graph.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
 
-    # Set border for Drawing object
-    border_info = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.green)
-    graph.border = border_info
-
-    # Create a filled circle
     circle = drawing.Circle(100, 100, 40)
-    circle.graph_info = drawing.GraphInfo()
     circle.graph_info.color = ap.Color.green_yellow
     circle.graph_info.fill_color = ap.Color.green
     circle.text = ap.text.TextFragment("Circle")
-
-    # Add the circle to the graph shapes
     graph.shapes.add(circle)
 
-    # Add Graph object to paragraphs collection of page
     page.paragraphs.add(graph)
-
-    # Save PDF document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
-Let's see the result of adding a filled Circle:
+Result of adding a filled circle:
 
 ![Filled Circle](filled_circle.png)
 
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add arc shapes to PDF in Python](/pdf/python-net/add-arc/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)
+- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)

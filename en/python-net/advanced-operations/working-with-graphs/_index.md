@@ -1,34 +1,43 @@
 ---
-title: Working with Graphs in PDF using Python
+title: Work with PDF Graphs in Python
 linktitle: Working with Graphs
 type: docs
 weight: 70
 url: /python-net/working-with-graphs/
-description: This article explains what a is Graph, how to create a filled rectangle object, and other functions
-lastmod: "2025-05-14"
+description: Learn how to draw graphs and shapes in PDF files in Python, including arcs, circles, curves, lines, rectangles, and ellipses.
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adding Graphs to PDF using Python
-Abstract: The article discusses the integration of graphs into PDF documents, a common requirement for developers using Adobe Acrobat Writer or similar PDF processing tools. It introduces the Graph class in Aspose.PDF for Python via .NET, which facilitates this task by allowing the addition of various types of shapes to PDF documents. The Graph class is a paragraph-level element that can be added to the Paragraphs collection in a Page instance and supports a collection of shapes, including Arc, Circle, Curve, Line, Rectangle, and Ellipse. Each shape serves a unique purpose, such as Arcs representing adjacency, Circles illustrating data portions, Curves depicting connected lines, Lines displaying continuous data trends, Rectangles solving spatial problems, and Ellipses forming oval shapes. The article also provides visual representations of these shapes to aid understanding.
+AlternativeHeadline: Draw and customize vector graph shapes in PDF files using Python
+Abstract: This section introduces the Graph class in Aspose.PDF for Python via .NET and explains how to create common vector shapes in PDF documents. Learn how to add and style arcs, circles, curves, lines, rectangles, ellipses, and validate shape bounds.
 ---
 
 ## What is Graph
 
-Adding graphs to PDF documents is a very common task for developers while working with Adobe Acrobat Writer or other PDF processing applications. There are many types of graphs that can be used in PDF applications.
-[Aspose.PDF for Python via .NET](/pdf/python-net/) also supports adding graphs to PDF documents. For this purpose, the Graph class is provided. Graph is a paragraph level element and it can be added to the Paragraphs collection in a Page instance. A Graph instance contains a collection of Shapes.
+[Aspose.PDF for Python via .NET](/pdf/python-net/) provides the [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) class for drawing vector graphics in PDF documents.
+
+`Graph` is a paragraph-level element, so you add it to a page through the page `paragraphs` collection. Each graph contains a `Shapes` collection where you can add drawing objects such as lines, arcs, circles, curves, rectangles, and ellipses.
+
+Use this section when you need to draw vector graphics directly into PDF pages in Python, whether for charts, diagrams, illustrations, or custom page annotations.
+
+## Graph Shapes Covered
 
 The following types of shapes are supported by the [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) class:
 
-- [Arc](/pdf/python-net/add-arc/) - sometimes also called a flag is an ordered pair of adjacent vertices, but sometimes also called a directed line.
-- [Circle](/pdf/python-net/add-circle/) - displays data using a circle divided into sectors. We use a circle graph (also called a pie chart) to show how data represent portions of one whole or one group.
-- [Curve](/pdf/python-net/add-curve/) - is a connected union of projective lines, each line meeting three others in ordinary double points.
-- [Line](/pdf/python-net/add-line) - line graphs are used to display continuous data and can be useful in predicting future events when they show trends over time.
-- [Rectangle](/pdf/python-net/add-rectangle/) - is one of the many fundamental shapes you'll see in graphs, its can be very useful in helping you solve a problem.
-- [Ellipse](/pdf/python-net/add-ellipse/) - is a set of points on a plane, creating an oval, curved shape.
+- [Arc](/pdf/python-net/add-arc/) - draw arc segments for partial circles and curved diagram elements.
+- [Circle](/pdf/python-net/add-circle/) - create circle outlines or filled circles for markers and visual highlights.
+- [Curve](/pdf/python-net/add-curve/) - add Bezier-style curves for custom paths and smooth graphical elements.
+- [Line](/pdf/python-net/add-line/) - draw straight lines, including styled and dashed lines.
+- [Rectangle](/pdf/python-net/add-rectangle/) - create outlined, filled, gradient, or transparent rectangle shapes.
+- [Ellipse](/pdf/python-net/add-ellipse/) - draw oval shapes and add text inside them when needed.
 
-The above details are also depicted in the figures below:
+You can also validate shape placement with bounds checking:
+
+- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+
+The examples in this section are illustrated in the figure below:
 
 ![Figures in Graphs](graphs.png)
 

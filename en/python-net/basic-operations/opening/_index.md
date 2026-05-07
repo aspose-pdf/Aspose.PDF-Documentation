@@ -19,34 +19,36 @@ Abstract: This article provides a guide on opening existing PDF documents using 
 There are several ways to open a document. The easiest is to specify a file name.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def open_document_from_file(infile):
 
     # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(infile)
     print("Pages: " + str(len(document.pages)))
 ```
 
 ## Open existing PDF document from stream
 
 ```python
+import aspose.pdf as ap
+import io
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    stream = io.FileIO(input_pdf, 'r')
-    # Open document
-    document = ap.Document(stream)
-    print("Pages: " + str(len(document.pages)))
+def open_document_from_stream(infile):
+    with io.FileIO(infile, "r") as stream:
+        # Open document
+        document = ap.Document(stream)
+        print("Pages: " + str(len(document.pages)))
 ```
 
 ## Open encrypted PDF document
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
+def open_document_encrypted(infile):
+    password = "P@ssw0rd"
     # Open document
-    document = ap.Document(input_pdf, password)
+    document = ap.Document(infile, password)
     print("Pages: " + str(len(document.pages)))
 ```

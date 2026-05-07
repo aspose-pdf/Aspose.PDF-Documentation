@@ -1,11 +1,11 @@
 ---
-title: Create Links in PDF file with Python
+title: Create PDF Links in Python
 linktitle: Create Links
 type: docs
 weight: 10
 url: /python-net/create-links/
-description: This section explains how to create links in your PDF document with Python.
-lastmod: "2025-07-17"
+description: Learn how to create internal, external, and remote PDF links in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -33,40 +33,22 @@ By adding a link to an application into a document, it is possible to link to ap
 To create an application link with 'LaunchAction':
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, outfile)
-
-    # Open the input PDF document
-    document = ap.Document(path_infile)
-
-    # Select the second page (index 1)
+def create_link_annotation_launch_action(infile, outfile):
+    document = ap.Document(infile)
     page = document.pages[1]
 
-    # Create a link annotation with specific dimensions and position
     link = ap.annotations.LinkAnnotation(page, ap.Rectangle(10, 580, 120, 600, True))
-
-    # Configure the link's border
     border = ap.annotations.Border(link)
-    border.width = 5  # Border width of 5 units
-    border.dash = ap.annotations.Dash(1, 1)  # Dashed border style
-
-    # Set link appearance
-    link.color = ap.Color.green  # Green color for the link
-
-    # Set the action to launch another PDF file
-    # Note: Commented out system command demonstrates potential alternative launch actions
-    # link.action = ap.annotations.LaunchAction(document, "start %windir%\explorer.exe")
+    border.width = 5
+    border.dash = ap.annotations.Dash(1, 1)
+    link.color = ap.Color.green
     link.action = ap.annotations.LaunchAction(document, "sample.pdf")
-
-    # Add the link annotation to the page
     page.annotations.append(link)
-
-    # Save the modified document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ## Create PDF Document Link in a PDF File
@@ -87,35 +69,19 @@ This code snippet demonstrates how to add a link annotation to a specific page o
 To create a PDF document link using 'GoToRemoteAction':
 
 ```python
-
 import aspose.pdf as ap
 from os import path
+import sys
 
-path_infile = path.join(self.dataDir, infile)
-path_outfile = path.join(self.dataDir, outfile)
+def create_link_annotation_go_to_remote_action(infile, outfile):
+    document = ap.Document(infile)
+    page = document.pages[1]
 
-# Load the input PDF document
-document = ap.Document(path_infile)
-
-# Access the first page of the document (Aspose uses 1-based indexing)
-page = document.pages[1]
-
-# Create a link annotation in the specified rectangle area on the page
-link = ap.annotations.LinkAnnotation(
-    page, ap.Rectangle(10, 580, 120, 600, True)  # (left, bottom, right, top, isEmpty)
-)
-
-# Set the color of the link annotation to green
-link.color = ap.Color.green
-
-# Define a remote action to open "sample.pdf" and navigate to its first page
-link.action = ap.annotations.GoToRemoteAction("sample.pdf", 1)
-
-# Add the link annotation to the current page
-page.annotations.append(link)
-
-# Save the updated PDF to the specified output path
-document.save(path_outfile)
+    link = ap.annotations.LinkAnnotation(page, ap.Rectangle(10, 580, 120, 600, True))
+    link.color = ap.Color.green
+    link.action = ap.annotations.GoToRemoteAction("sample.pdf", 1)
+    page.annotations.append(link)
+    document.save(outfile)
 ```
 
 ### Using GoToAction
@@ -123,43 +89,25 @@ document.save(path_outfile)
 This code demonstrates how to add a link annotation to a specific page of a PDF document using Aspose.PDF for Python. The link appears as a green, dashed-bordered rectangle and allows the user to navigate to another page within the same PDF. To create a PDF document link using 'GoToAction':
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, outfile)
-
-    # Open the PDF document
-    document = ap.Document(path_infile)
-
-    # Select the second page (index 1)
+def create_link_annotation_go_to_action(infile, outfile):
+    document = ap.Document(infile)
     page = document.pages[1]
 
-    # Create a link annotation with specific coordinates
     link = ap.annotations.LinkAnnotation(page, ap.Rectangle(10, 580, 120, 600, True))
-
-    # Customize link annotation border
     border = ap.annotations.Border(link)
-    border.width = 5  # Border width
-    border.dash = ap.annotations.Dash(1, 1)  # Dashed border style
-
-    # Set link color to green
+    border.width = 5
+    border.dash = ap.annotations.Dash(1, 1)
     link.color = ap.Color.green
-
-    # Set link destination
-    if document.pages.count >= 4:
-        # Link to 4th page if document has 4 or more pages
+    if document.pages.length >= 4:
         link.action = ap.annotations.GoToAction(document.pages[4])
     else:
-        # Fallback: link to the last page if less than 4 pages
-        link.action = ap.annotations.GoToAction(document.pages[document.pages.count])
-
-    # Add the link annotation to the page
+        link.action = ap.annotations.GoToAction(document.pages[document.pages.length])
     page.annotations.append(link)
-
-    # Save the modified document
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ### Appling GoToURIAction
@@ -177,33 +125,23 @@ This functionality is useful for embedding helpful external references, document
 1. Save the Modified Document. Save the updated PDF document to the specified output path.
 
 ```python
-
-    import aspose.pdf as ap
-    from os import path
-
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, outfile)
-
-    # Load the input PDF document
-    document = ap.Document(path_infile)
-
-    # Access the first page (Aspose uses 1-based indexing)
+import aspose.pdf as ap
+from os import path
+import sys
+    
+def create_link_annotation_go_to_URI_action(infile, outfile):
+    document = ap.Document(infile)
     page = document.pages[1]
 
-    # Create a link annotation at the specified rectangle position
-    link = ap.annotations.LinkAnnotation(
-        page, ap.Rectangle(10, 580, 120, 600, True)  # (left, bottom, right, top, isEmpty)
-    )
-
-    # Set the color of the link annotation to green
+    link = ap.annotations.LinkAnnotation(page, ap.Rectangle(10, 580, 120, 600, True))
     link.color = ap.Color.green
-
-    # Define a URI action that navigates to the Aspose.PDF Python documentation
     link.action = ap.annotations.GoToURIAction("https://docs.aspose.com/pdf/python")
-
-    # Add the link annotation to the page
     page.annotations.append(link)
-
-    # Save the modified PDF to the output path
-    document.save(path_outfile)
+    document.save(outfile)
 ```
+
+## Related Link Topics
+
+- [Work with PDF links in Python](/pdf/python-net/links/)
+- [Extract links from PDF in Python](/pdf/python-net/extract-links/)
+- [Update links in PDF using Python](/pdf/python-net/update-links/)

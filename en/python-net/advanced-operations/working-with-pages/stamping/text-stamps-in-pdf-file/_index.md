@@ -1,11 +1,11 @@
 ---
-title: Adding Text stamps in PDF via Python
+title: Add Text Stamps to PDF in Python
 linktitle: Text stamps in PDF File
 type: docs
 weight: 20
 url: /python-net/text-stamps-in-the-pdf-file/
-description: Add a text stamp to a PDF document using the TextStamp class with  Aspose.PDF for Python library.
-lastmod: "2025-11-16"
+description: Learn how to add text stamps to PDF documents in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -28,12 +28,9 @@ You can use [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/t
 1. Save the modified PDF document.
 
 ```python
-
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
+from os import path
 
 def add_text_stamp(input_file_name, output_file_name):
     document = ap.Document(input_file_name)
@@ -50,11 +47,19 @@ def add_text_stamp(input_file_name, output_file_name):
     # Set text properties
     text_stamp.text_state.font = ap.text.FontRepository.find_font("Arial")
     text_stamp.text_state.font_size = 14.0
-    text_stamp.text_state.font_style = ap.text.FontStyles.BOLD
-    text_stamp.text_state.font_style = ap.text.FontStyles.ITALIC
+    text_stamp.text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     text_stamp.text_state.foreground_color = ap.Color.dark_green
     # Add stamp to particular page
     document.pages[1].add_stamp(text_stamp)
 
     document.save(output_file_name)
 ```
+
+## Related Stamping Topics
+
+- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
+- [Add page stamps to PDF in Python](/pdf/python-net/page-stamps-in-the-pdf-file/)
+- [Add image stamps to PDF in Python](/pdf/python-net/image-stamps-in-pdf-page/)
+- [Add page numbers to PDF in Python](/pdf/python-net/add-page-number/)

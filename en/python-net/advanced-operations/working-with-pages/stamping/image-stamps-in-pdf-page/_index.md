@@ -1,11 +1,11 @@
 ---
-title: Adding Image stamps in PDF using Python
+title: Add Image Stamps to PDF in Python
 linktitle: Image stamps in PDF File
 type: docs
 weight: 10
 url: /python-net/image-stamps-in-pdf-page/
-description: Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF for Python library.
-lastmod: "2025-11-16"
+description: Learn how to add image stamps to PDF pages in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,12 +27,9 @@ The following code snippet shows how to add image stamp in the PDF file.
 1. Save the modified PDF.
 
 ```python
-
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
+from os import path
 
 def add_image_stamp(infile, input_image_file, outfile):
     document = ap.Document(infile)
@@ -61,14 +58,11 @@ By setting the quality property, you can reduce the image resolution to optimize
 1. Save the modified PDF.
 
 ```python
-
-import os
+import sys
 import aspose.pdf as ap
+from os import path
 
-# Global configuration
-DATA_DIR = "your path here"
-
-def add_image_stamp_image_control_image_quality(infile, input_image_file, outfile):
+def add_image_stamp_with_quality_control(infile, input_image_file, outfile):
     document = ap.Document(infile)
 
     image_stamp = ap.ImageStamp(input_image_file)
@@ -91,18 +85,13 @@ Create a [FloatingBox](https://reference.aspose.com/pdf/python-net/aspose.pdf/fl
 1. Save the PDF document.
 
 ```python
-
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
+from os import path
 
 def add_image_as_background_in_floating_box(infile, input_image_file, outfile):
-
     document = ap.Document(infile)
-    # Add page to PDF document
-    page = document.pages.add()
+    page = document.pages[1]
     # Create FloatingBox object
     box = ap.FloatingBox(200.0, 100.0)
     # Set left position for FloatingBox
@@ -128,3 +117,9 @@ def add_image_as_background_in_floating_box(infile, input_image_file, outfile):
     document.save(outfile)
 ```
 
+## Related Stamping Topics
+
+- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
+- [Add page stamps to PDF in Python](/pdf/python-net/page-stamps-in-the-pdf-file/)
+- [Add text stamps to PDF in Python](/pdf/python-net/text-stamps-in-the-pdf-file/)
+- [Add page numbers to PDF in Python](/pdf/python-net/add-page-number/)

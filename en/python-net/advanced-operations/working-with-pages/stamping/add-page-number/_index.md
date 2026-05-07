@@ -1,11 +1,11 @@
 ---
-title: Adding Page Number to PDF with Python
+title: Add Page Numbers to PDF in Python
 linktitle: Adding Page Number
 type: docs
 weight: 30
 url: /python-net/add-page-number/
-description: Aspose.PDF for Python via .NET allows you to add Page Number Stamp to your PDF file using PageNumber Stamp class.
-lastmod: "2025-11-16"
+description: Learn how to add page number stamps to PDF documents in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -30,12 +30,9 @@ Add dynamic page number stamps to a PDF [`Document`](https://reference.aspose.co
 1. Save the modified PDF.
 
 ```python
-
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
+from os import path
 
 def add_page_num_stamp(input_file_name, output_file_name):
     # Open document
@@ -52,8 +49,9 @@ def add_page_num_stamp(input_file_name, output_file_name):
     # Set text properties
     page_number_stamp.text_state.font = ap.text.FontRepository.find_font("Arial")
     page_number_stamp.text_state.font_size = 14.0
-    page_number_stamp.text_state.font_style = ap.text.FontStyles.BOLD
-    page_number_stamp.text_state.font_style = ap.text.FontStyles.ITALIC
+    page_number_stamp.text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     page_number_stamp.text_state.foreground_color = ap.Color.blue_violet
 
     # Add stamp to particular page
@@ -75,12 +73,9 @@ Add page numbers in Roman numeral format to all pages of a PDF document. The pag
 1. Save the modified PDF.
 
 ```python
-
-import os
+import sys
 import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
+from os import path
 
 def add_page_num_stamp_roman(input_file_name, output_file_name):
     # Open document
@@ -115,3 +110,9 @@ def add_page_num_stamp_roman(input_file_name, output_file_name):
 
 [![How to add page number in pdf using Python](page_number.png)](https://products.aspose.app/pdf/page-number)
 
+## Related Stamping Topics
+
+- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
+- [Add page stamps to PDF in Python](/pdf/python-net/page-stamps-in-the-pdf-file/)
+- [Add image stamps to PDF in Python](/pdf/python-net/image-stamps-in-pdf-page/)
+- [Add text stamps to PDF in Python](/pdf/python-net/text-stamps-in-the-pdf-file/)

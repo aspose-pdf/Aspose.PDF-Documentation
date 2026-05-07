@@ -1,103 +1,94 @@
 ---
-title: Как создать PDF с использованием Python
-linktitle: Создание PDF документа
+title: Создание PDF файлов в Python
+linktitle: Создать PDF Document
 type: docs
 weight: 10
 url: /ru/python-net/create-pdf-document/
-description: Создавайте и форматируйте PDF документы с помощью Aspose.PDF для Python через .NET.
-lastmod: "2023-04-12"
+description: Узнайте, как создавать PDF файлы и создавать поисковые PDF в Python, используя Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Создать PDF файл с Python
+Abstract: Aspose.PDF for Python via .NET — это универсальный API, предназначенный для разработчиков, позволяющий манипулировать PDF‑файлами в Python‑приложениях, ориентированных на платформу .NET. Он позволяет пользователям легко создавать, загружать, изменять и конвертировать PDF‑документы. В этой статье представлено пошаговое руководство по созданию простого PDF‑файла с помощью Aspose.PDF. Процесс включает инициализацию объекта `Document`, добавление `Page` в документ, вставку `TextFragment` в абзацы страницы и сохранение файла в формате PDF. Включённый фрагмент кода на Python демонстрирует эти шаги, создавая PDF‑документ, содержащий текст "Hello World!". Этот API упрощает работу с PDF при минимальном количестве кода, повышая производительность разработчиков, работающих с PDF в среде .NET.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Как создать PDF с использованием Python",
-    "alternativeHeadline": "Создание PDF документа с нуля через Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, dotnet, создание PDF документа",
-    "wordcount": "302",
-    "proficiencyLevel":"Начальный",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/create-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/create-pdf-document/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Создавайте и форматируйте PDF документы с помощью Aspose.PDF для Python через .NET."
-}
-</script>
 
+**Aspose.PDF for Python via .NET** — это API для работы с PDF, позволяющее разработчикам создавать, загружать, изменять и конвертировать PDF‑файлы напрямую из Python для приложений .NET, используя всего несколько строк кода.
 
-**Aspose.PDF для Python через .NET** — это API для работы с PDF, который позволяет разработчикам создавать, загружать, изменять и конвертировать PDF-файлы непосредственно из Python для .NET приложений, используя всего несколько строк кода.
+Используйте эти примеры, когда вам нужно создать новые PDF-файлы с нуля или преобразовать вывод OCR в поисковые PDF-документы на Python.
 
-## Как создать простой PDF файл
+## Как создать простой PDF-файл
 
-Чтобы создать PDF с использованием Python через .NET с Aspose.PDF, выполните следующие шаги:
+Чтобы создать PDF с помощью Python via .NET и Aspose.PDF, вы можете выполнить следующие шаги:
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)
-1. Добавьте объект [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) в коллекцию [pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) объекта Document
-1. Добавьте [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) в коллекцию [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) страницы
-1. Сохраните результирующий PDF документ
+1. Создайте объект [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс
+1. Добавьте [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) объект к [pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) коллекция объекта Document
+1. Добавьте [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) в [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) коллекция страницы
+1. Сохраните полученный PDF документ
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Инициализировать объект документа
+def create_new_document(output_pdf):
+    """Create a simple PDF with a single “Hello World!” page."""
     document = ap.Document()
-    # Добавить страницу
     page = document.pages.add()
-    # Добавить текст на новую страницу
     page.paragraphs.add(ap.text.TextFragment("Hello World!"))
-    # Сохранить обновленный PDF
     document.save(output_pdf)
 ```
+
+## Как создать поисковый PDF‑документ
+
+Aspose.PDF for Python via .NET позволяет создавать и изменять существующие PDF‑документы. При добавлении текстовых элементов в PDF‑файл полученный PDF становится поисковым. Однако при преобразовании изображения, содержащего текст, в PDF‑файл содержимое получаемого PDF не является поисковым. В качестве обходного решения мы можем применить OCR к полученному файлу, чтобы он стал поисковым.
+
+Ниже приведён полный код для выполнения этого требования:
+
+1. Загрузите PDF с помощью 'ap.Document'.
+1. Настройте разрешение рендеринга.
+1. Используйте 'PngDevice.process' для преобразования выбранной страницы PDF в изображение.
+1. Выполните OCR на полученном изображении.
+1. Создайте новый PDF из вывода OCR.
+1. Сохраните поисковый PDF.
+
+```python
+import aspose.pdf as ap
+import io
+
+# Requires: pip install pytesseract
+# Also ensure the Tesseract OCR engine is installed and available on your system PATH.
+import pytesseract
+from pathlib import Path
+
+
+# Path to the source PDF
+input_pdf_path = "input.pdf"
+# Path for the temporary image
+temp_image_path = "temp_image.png"
+# Path for the searchable PDF
+output_pdf_path = "output_searchable.pdf"
+page_number = 1
+image_stream = io.FileIO(temp_image_path, "w")
+try:
+    document = ap.Document(input_pdf_path)
+    resolution = ap.devices.Resolution(300)
+    png_device = ap.devices.PngDevice(resolution)
+    png_device.process(document.pages[page_number], image_stream)
+    image_stream.close()
+    pdf = pytesseract.image_to_pdf_or_hocr(temp_image_path, extension="pdf")
+    document = ap.Document(io.BytesIO(pdf))
+    document.save(output_pdf_path)
+finally:
+    image_file = Path(temp_image_path)
+    image_file.unlink(missing_ok=True)
+```
+
+## Связанные темы Document
+
+- [Работа с PDF документами в Python](/pdf/ru/python-net/working-with-documents/)
+- [Форматировать PDF документы в Python](/pdf/ru/python-net/formatting-pdf-document/)
+- [Манипулировать PDF документами в Python](/pdf/ru/python-net/manipulate-pdf-document/)
+- [Оптимизировать PDF файлы в Python](/pdf/ru/python-net/optimize-pdf/)
+
