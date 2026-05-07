@@ -3,11 +3,13 @@ check_frontmatter.py
 Checks Hugo Markdown front matter for YAML style issues across the docs tree.
 
 Usage:
-    python scripts/check_frontmatter.py [path] [--fix-dates]
+    python scripts/check_frontmatter.py [path] [--fix-dates] [--fix-trailing] [--only-errors]
 
 Arguments:
     path         Root directory to scan (default: current directory)
     --fix-dates  Auto-correct date values that are not quoted strings
+    --fix-trailing  Auto-remove trailing whitespace from front matter lines
+    --only-errors  Only report required-key violations and YAML errors; skip recommendations
 
 Exit codes:
     0  No issues found
@@ -190,6 +192,16 @@ def check_unquoted_colons(entries: list[tuple[int, str, str]]) -> list[str]:
 # Auto-fix helpers
 # ──────────────────────────────────────────────────────────────────────────────
 
+def fix_trailing_whitespace(text: str) -> str:
+    """Remove trailing whitespace from every line in the front matter block."""
+    fm_match = _FRONTMATTER_RE.match(text)
+    if not fm_match:
+        return text
+    fm = fm_match.group(1)
+    fixed_fm = "\n".join(line.rstrip() for line in fm.splitlines())
+    return text[:fm_match.start(1)] + fixed_fm + text[fm_match.end(1):]
+
+
 def fix_unquoted_dates(text: str) -> str:
     """Quote bare date values for keys in MUST_BE_QUOTED."""
     def replacer(m: re.Match) -> str:
@@ -212,7 +224,7 @@ def fix_unquoted_dates(text: str) -> str:
 # Main scan logic
 # ──────────────────────────────────────────────────────────────────────────────
 
-def check_file(path: Path, fix_dates: bool = False) -> list[str]:
+def check_file(path: Path, fix_dates: bool = False, fix_trailing: bool = False) -> list[str]:
     text = path.read_text(encoding="utf-8", errors="replace")
 
     issues: list[str] = []
@@ -238,17 +250,20 @@ def check_file(path: Path, fix_dates: bool = False) -> list[str]:
     issues += check_trailing_whitespace(fm)
     issues += check_unquoted_colons(entries)
 
-    if fix_dates and any(
-        "should be quoted" in i for i in issues
-    ):
-        fixed = fix_unquoted_dates(text)
-        if fixed != text:
-            path.write_text(fixed, encoding="utf-8")
+    modified = text
+    if fix_trailing and any("Trailing whitespace" in i for i in issues):
+        modified = fix_trailing_whitespace(modified)
+
+    if fix_dates and any("should be quoted" in i for i in issues):
+        modified = fix_unquoted_dates(modified)
+
+    if modified != text:
+        path.write_text(modified, encoding="utf-8")
 
     return issues
 
 
-def scan(root: Path, fix_dates: bool = False) -> int:
+def scan(root: Path, fix_dates: bool = False, fix_trailing: bool = False) -> int:
     # Ensure stdout can handle Unicode on Windows (e.g. cp1251 consoles)
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -265,7 +280,7 @@ def scan(root: Path, fix_dates: bool = False) -> int:
         if len(parts) == 1 and md.stem.upper() in {"README", "AGENTS", "CONTRIBUTING"}:
             continue
 
-        issues = check_file(md, fix_dates=fix_dates)
+        issues = check_file(md, fix_dates=fix_dates, fix_trailing=fix_trailing)
         if issues:
             files_with_issues += 1
             total_issues += len(issues)
@@ -302,7 +317,13 @@ def main() -> None:
         help="Auto-quote bare date values for lastmod and similar keys",
     )
     parser.add_argument(
+        "--fix-trailing",
+        action="store_true",
+        help="Auto-remove trailing whitespace from front matter lines",
+    )
+    parser.add_argument(
         "--only-errors",
+
         action="store_true",
         help="Only report required-key violations and YAML errors; skip recommendations",
     )
@@ -313,7 +334,7 @@ def main() -> None:
         print(f"Error: '{root}' is not a directory", file=sys.stderr)
         sys.exit(2)
 
-    sys.exit(scan(root, fix_dates=args.fix_dates))
+    sys.exit(scan(root, fix_dates=args.fix_dates, fix_trailing=args.fix_trailing))
 
 
 if __name__ == "__main__":
