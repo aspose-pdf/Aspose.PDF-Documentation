@@ -4,32 +4,28 @@ linktitle: Working with Vector Graphics
 type: docs
 weight: 100
 url: /python-net/working-with-vector-graphics/
-description: Learn how to extract, move, remove, and reuse vector graphics in PDF files using Python.
-lastmod: "2026-04-17"
-TechArticle: true 
+description: Learn how to extract, move, remove, and copy vector graphics between PDF pages using GraphicsAbsorber in Python.
+lastmod: "2026-05-07"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
 AlternativeHeadline: Use GraphicsAbsorber to inspect and manipulate PDF vector graphics in Python
 Abstract: This article explains how to work with vector graphics in Aspose.PDF for Python via .NET using the GraphicsAbsorber class. Learn how to extract vector elements from PDF pages, move or remove them, and copy graphics between pages with low-level control in Python workflows.
 ---
 
-In this chapter, we'll explore how to use the powerful `GraphicsAbsorber` class to interact with vector graphics within PDF documents. Whether you need to move, remove, or add graphics, this guide will show you how to perform these tasks effectively.
+[Aspose.PDF for Python via .NET](/pdf/python-net/) provides the [GraphicsAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/graphicsabsorber/) class for accessing and manipulating vector graphics already present in a PDF page. Call its `visit` method on any page to extract paths, shapes, and other graphical operators, then move, remove, or copy those elements as needed.
 
-Use this page when you need to inspect or manipulate vector drawing elements already present in a PDF page, such as paths, shapes, and reusable graphical objects.
-
-## Introduction
-
-Vector graphics are a crucial component of many PDF documents, used to represent images, shapes, and other graphical elements. Aspose.PDF provides the `GraphicsAbsorber` class, which allows developers to programmatically access and manipulate these graphics. By using the `Visit` method of `GraphicsAbsorber`, you can extract vector graphics from a specified page and perform various operations, such as moving, removing, or copying them to other pages.
-
-## Common Vector Graphics Tasks
+Use this page when you need to inspect or modify vector drawing elements embedded in an existing PDF, rather than drawing new shapes from scratch.
 
 ## Extracting Graphics
 
-The first step in working with vector graphics is to extract them from a PDF document. Here’s how you can do it using the `GraphicsAbsorber` class:
+Extraction is the starting point for all vector graphics tasks. `GraphicsAbsorber` reads the content stream of a page and exposes each graphic element with its page reference, position, and raw operators.
 
-1. Open the PDF Document.
-1. Initialize the GraphicsAbsorber.
-1. Select the Target Page.
-1. Extract Graphics from the Page.
-1. Iterate and Display Extracted Elements.
+1. Open the PDF document.
+1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/graphicsabsorber/) instance.
+1. Call `visit` on the target page to populate `elements`.
+1. Iterate over `elements` to inspect position and operator counts.
 
 ```python
 import aspose.pdf as ap
@@ -47,20 +43,18 @@ def using_graphics_absorber(infile: str):
                 print(f"Number of Operators: {element.operators.length}")
 ```
 
-The GraphicsAbsorber class is part of the aspose.pdf.vector namespace and is specifically designed to interact with vector graphics within PDF documents.
+`GraphicsAbsorber` is part of the `aspose.pdf.vector` namespace and is specifically designed to interact with vector graphics in PDF content streams.
 
 ## Moving Graphics
 
-Once you have extracted the graphics, you can move them to a different position on the same page. Here’s how you can achieve this:
+After extraction, set a new `position` on each element to relocate it on the same page. Wrap the updates in `suppress_update` / `resume_update` calls to batch content-stream writes into a single operation and avoid redundant repaints.
 
-1. Open the PDF Document.
-1. Initialize the GraphicsAbsorber.
-1. Select the Target Page.
-1. Extracting Graphic Elements.
-1. Suspending Updates for Performance.
-1. Modifying Graphic Element Positions.
-1. Resuming Updates and Applying Changes.
-1. Saving the Updated Document.
+1. Open the PDF document.
+1. Create a `GraphicsAbsorber` and call `visit` on the target page.
+1. Call `suppress_update` to pause content-stream writes.
+1. Update the `position` of each element.
+1. Call `resume_update` to commit all changes at once.
+1. Save the modified document.
 
 ```python
 import aspose.pdf as ap
@@ -82,21 +76,19 @@ def move_graphics(infile: str, outfile: str):
 
 ## Removing Graphics
 
-There are scenarios where you might want to remove specific graphics from a page. Aspose.PDF for Python offers two methods to accomplish this:
+To delete specific vector elements from a page, filter by position or bounding rectangle and then remove them. Aspose.PDF for Python provides two approaches depending on whether you want to remove elements inline or collect them first.
 
-### Method 1: Using Rectangle Boundary
+### Method 1: Remove Inline Using Rectangle Boundary
 
-The next example demonstrates how to remove vector graphic elements located within a specific rectangular area on the first page of a PDF document using the Aspose.PDF for Python via .NET library. This process involves identifying graphic elements within the defined rectangle and removing them to clean up or modify the PDF content.
+This approach checks each element's position against a rectangle and calls `element.remove()` directly inside the loop. Use it when you want concise code and do not need to inspect the removed set afterward.
 
-1. Open the PDF Document.
-1. Initialize the GraphicsAbsorber.
-1. Select the Target Page.
-1. Extracting Graphic Elements.
-1. Defining the Target Rectangle.
-1. Suspending Updates for Performance.
-1. Removing Graphic Elements Within the Rectangle.
-1. Resuming Updates and Applying Changes.
-1. Saving the Updated Document.
+1. Open the PDF document.
+1. Create a `GraphicsAbsorber` and call `visit` on the target page.
+1. Define the target [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/).
+1. Call `suppress_update` to pause content-stream writes.
+1. Iterate `elements`, calling `remove()` on each element whose position falls inside the rectangle.
+1. Call `resume_update` to commit the deletions.
+1. Save the modified document.
 
 ```python
 import aspose.pdf as ap
@@ -117,21 +109,18 @@ def remove_graphics_method_1(infile: str, outfile: str):
         document.save(outfile)
 ```
 
-### Method 2: Using a Collection of Removed Elements
+### Method 2: Collect Elements First, Then Delete
 
-The next example demonstrates how to remove vector graphic elements located within a specific rectangular area on the first page of a PDF document using the Aspose.PDF for Python via .NET library. This process involves identifying graphic elements within the defined rectangle and removing them to clean up or modify the PDF content.
+This approach gathers matching elements into a [GraphicElementCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/graphicelementcollection/) and passes the collection to `page.delete_graphics`. Use it when you need to review or log what will be removed before committing the deletion.
 
-1. Open the PDF Document.
-1. Initialize the GraphicsAbsorber.
-1. Select the Target Page.
-1. Defining the Target Rectangle.
-1. Extracting Graphic Elements.
-1. Creating a Collection for Removal.
-1. Identifying Elements Within the Rectangle.
-1. Suspending Updates for Performance.
-1. Removing Graphic Elements.
-1. Resuming Updates and Applying Changes.
-1. Saving the Updated Document.
+1. Open the PDF document.
+1. Create a `GraphicsAbsorber` and call `visit` on the target page.
+1. Define the target rectangle.
+1. Iterate `elements` and add matching elements to a `GraphicElementCollection`.
+1. Call `page.contents.suppress_update` to pause content-stream writes.
+1. Call `page.delete_graphics` with the collection.
+1. Call `page.contents.resume_update` to commit the deletions.
+1. Save the modified document.
 
 ```python
 import aspose.pdf as ap
@@ -156,21 +145,19 @@ def remove_graphics_method_2(infile: str, outfile: str):
 
 ## Adding Graphics to Another Page
 
-Graphics absorbed from one page can be added to another page within the same document.
-Here are two methods to achieve this:
+Vector elements extracted from one page can be placed on any other page in the same document. Two methods are available: adding elements one by one, or passing the entire collection in a single call.
 
-### Method 1: Adding Graphics Individually
+### Method 1: Add Elements Individually
 
-The next example to copy vector graphic elements from the first page of a PDF document and paste them onto the second page. This operation is facilitated by the GraphicsAbsorber class, which allows for the extraction and manipulation of vector graphics within PDF documents.
+Use this method when you need per-element control, such as filtering or transforming individual elements before placing them on the destination page.
 
-1. Open the PDF Document.
-1. Initialize the GraphicsAbsorber.
-1. Select the Target Page.
-1. Extracting Graphic Elements from the First Page.
-1. Suspending Updates on the Second Page for Performance.
-1. Adding Extracted Graphic Elements to the Second Page.
-1. Resuming Updates and Applying Changes.
-1. Saving the Updated Document.
+1. Open the PDF document.
+1. Create a `GraphicsAbsorber` and call `visit` on the source page.
+1. Add a new destination page to the document.
+1. Call `page_2.contents.suppress_update` to pause content-stream writes.
+1. Call `element.add_on_page(page_2)` for each element.
+1. Call `page_2.contents.resume_update` to commit all additions.
+1. Save the modified document.
 
 ```python
 import aspose.pdf as ap
@@ -190,18 +177,17 @@ def add_to_another_page_method_1(infile: str, outfile: str):
         document.save(outfile)
 ```
 
-### Method 2: Adding Graphics as a Collection
+### Method 2: Add the Entire Collection at Once
 
-The next example to duplicate vector graphic elements from the first page of a PDF document and place them into the second page. This is achieved through the use of the GraphicsAbsorber class, which facilitates the extraction and manipulation of vector graphics within PDF documents.
+Use this method when you want to copy all extracted elements to a page in a single operation without iterating manually.
 
-1. Open the PDF Document.
-1. Initialize the GraphicsAbsorber.
-1. Select the Target Page.
-1. Extracting Graphic Elements from the First Page.
-1. Suspending Updates on the Second Page for Performance.
-1. Adding Extracted Graphic Elements to the Second Page.
-1. Resuming Updates and Applying Changes.
-1. Saving the Updated Document.
+1. Open the PDF document.
+1. Create a `GraphicsAbsorber` and call `visit` on the source page.
+1. Add a new destination page to the document.
+1. Call `page_2.contents.suppress_update` to pause content-stream writes.
+1. Call `page_2.add_graphics` with the full `elements` collection.
+1. Call `page_2.contents.resume_update` to commit all additions.
+1. Save the modified document.
 
 ```python
 import aspose.pdf as ap
