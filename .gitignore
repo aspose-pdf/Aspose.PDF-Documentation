@@ -228,4 +228,4 @@ src/
 logs/
 reports/
 .doctranslate/
-.agents/skills/translate-hugo-docs/scripts
+node_modules/
