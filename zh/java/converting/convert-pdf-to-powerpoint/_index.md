@@ -6,7 +6,6 @@ weight: 30
 url: /zh/java/convert-pdf-to-powerpoint/
 lastmod: "2021-11-19"
 description: Aspose.PDF允许您使用Java将PDF转换为PowerPoint格式。可以将PDF转换为带有图像幻灯片的PPTX。
-lastmod: "2021-10-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

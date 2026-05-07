@@ -8,7 +8,6 @@ weight: 30
 url: /ko/net/convert-pdf-to-powerpoint/
 lastmod: "2021-11-01"
 description: Aspose.PDF를 사용하면 .NET을 통해 PDF를 PPT(파워포인트) 형식으로 변환할 수 있습니다. PDF를 PPTX로 변환할 수 있는 방법 중 하나는 슬라이드를 이미지로 변환하는 것입니다.
-lastmod: "2021-10-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

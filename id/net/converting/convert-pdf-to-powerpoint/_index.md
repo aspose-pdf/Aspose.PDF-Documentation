@@ -8,7 +8,6 @@ weight: 30
 url: /id/net/convert-pdf-to-powerpoint/
 lastmod: "2021-11-01"
 description: Aspose.PDF memungkinkan Anda untuk mengonversi PDF ke format PPT (PowerPoint) menggunakan .NET. Salah satu cara adalah kemungkinan untuk mengonversi PDF ke PPTX dengan Slide sebagai Gambar.
-lastmod: "2021-10-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
