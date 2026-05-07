@@ -21,10 +21,9 @@ sitemap:
 1. Создайте [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) для заголовка. Для заголовка мы будем использовать шрифт Arial с размером 24pt и выравниванием по центру.
 1. Добавьте заголовок в [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) страницы.
 1. Создайте [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) для описания. Для описания мы будем использовать шрифт Arial с размером 24pt и выравниванием по центру.
-1. Добавьте (описание) в Paragraphs страницы.
+1. Добавьте описание в `paragraphs` страницы.
 1. Создайте таблицу, добавьте свойства таблицы.
-
-1. Добавьте (таблицу) на страницу [параграфы](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Добавьте таблицу в [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) страницы.
 1. Сохраните документ "Complex.pdf".
 
 ```python

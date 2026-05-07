@@ -16,7 +16,7 @@ Abstract: Эта статья показывает, как добавить кр
 
 ## Добавить объект Curve
 
-Aspose.PDF for Python via .NET позволяет добавлять [Кривая](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/curve/) фигуры на страницы PDF через [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) класс.
+Aspose.PDF for Python via .NET позволяет добавлять [Curve](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/curve/) фигуры на страницы PDF через [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) класс.
 
 В этой статье показано, как создать как контурные, так и залитые кривые.
 

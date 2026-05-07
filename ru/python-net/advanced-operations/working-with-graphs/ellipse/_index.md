@@ -16,7 +16,7 @@ Abstract: Эта статья показывает, как добавлять ф
 
 ## Добавить объект Ellipse
 
-Aspose.PDF for Python via .NET позволяет добавлять [Ellipse](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/ellipse/) формы в PDF‑страницы с [Граф](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) класс. Вы можете рисовать контуры эллипсов, применять цвета заливки и размещать текст внутри объектов эллипсов.
+Aspose.PDF for Python via .NET позволяет добавлять [Ellipse](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/ellipse/) формы в PDF‑страницы с [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) класс. Вы можете рисовать контуры эллипсов, применять цвета заливки и размещать текст внутри объектов эллипсов.
 
 ```python
 import aspose.pdf as ap

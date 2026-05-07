@@ -75,7 +75,7 @@ def convert_HTML_to_PDF_media_type(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Отдать приоритет CSS `@page` правило при преобразовании HTML в PDF
+## Отдать приоритет CSS `@page` правилу при преобразовании HTML в PDF
 
 Некоторые документы используют [`@page` правило](https://developer.mozilla.org/en-US/docs/Web/CSS/@page) для макета страницы. Если эти стили конфликтуют с другими настройками, вы можете управлять приоритетом с помощью `is_priority_css_page_rule`.
 
