@@ -183,4 +183,3 @@ def remove_graphics_objects(infile, outfile):
 - [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
 - [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
 - [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
-

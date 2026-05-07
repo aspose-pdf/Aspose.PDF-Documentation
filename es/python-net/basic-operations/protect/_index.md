@@ -3,7 +3,7 @@ title: Proteger archivos PDF en Python
 linktitle: Cifrar y descifrar archivo PDF
 type: docs
 weight: 70
-url: /python-net/protect-pdf-file/
+url: /es/python-net/protect-pdf-file/
 description: Aprende cómo cifrar archivos, descifrar PDFs protegidos y cambiar contraseñas en Python.
 lastmod: "2026-04-15"
 sitemap:
