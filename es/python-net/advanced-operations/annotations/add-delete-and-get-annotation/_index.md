@@ -1,154 +1,37 @@
 ---
-title: Añadir, Eliminar y Obtener Anotación usando Python
-linktitle: Añadir, Eliminar y Obtener Anotación
+title: Agregar, eliminar y obtener anotaciones PDF en Python
+linktitle: Agregar, eliminar y obtener anotación
 type: docs
 weight: 20
 url: /es/python-net/add-delete-and-get-annotation/
-description: Con Aspose.PDF para Python puedes añadir, eliminar y obtener anotaciones de tu archivo PDF. Consulta todas las listas de anotaciones para resolver tu tarea.
-lastmod: "2023-02-17"
+description: Con Aspose.PDF for Python puede agregar, eliminar y obtener anotación de su archivo PDF. Consulte todas las listas de anotaciones para resolver su tarea.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cómo manipular anotaciones en PDF con Python
+Abstract: Las anotaciones en documentos PDF mejoran la interacción del usuario al permitir la adición de varios elementos como notas, resaltados de texto, formas y archivos adjuntos. Estas funciones mejoran la experiencia de visualización e interactividad del documento. La biblioteca Aspose.PDF for Python clasifica las anotaciones en varios grupos: Text Annotations, Highlights Annotations, Figures Annotations, Sticky Annotations y Extra Annotations, cada una cumpliendo diferentes funciones para enriquecer la participación y usabilidad del documento.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Añadir, Eliminar y Obtener Anotación con Python",
-    "alternativeHeadline": "Trabajando con Anotaciones en archivo PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, añadir anotación, obtener anotación, eliminar anotación",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-delete-and-get-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-delete-and-get-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Con Aspose.PDF para Python puedes añadir, eliminar y obtener anotaciones de tu archivo PDF. Consulta todas las listas de anotaciones para resolver tu tarea."
-}
-</script>
 
+Las anotaciones en documentos PDF son elementos que permiten a los usuarios asignar contenido de cierta manera en el documento. Las anotaciones pueden usarse para agregar diferentes tipos de notas, resaltar texto, dibujar formas, adjuntar archivos y realizar otras acciones que mejoran la visualización, la interactividad y la interacción dentro de un documento.
 
-**¿Qué son las anotaciones en documentos PDF?**
+Esta página agrupa los principales tipos de anotación compatibles en esta parte de la documentación para que puedas saltar rápidamente al flujo de trabajo que necesitas.
 
-Las anotaciones en documentos PDF son elementos que permiten a los usuarios asignar contenido de cierta manera en el documento. Las anotaciones se pueden usar para agregar diferentes tipos de notas, resaltar texto, dibujar formas, adjuntar archivos y realizar otras acciones que mejoran la visualización, la interactividad y la interacción dentro de un documento.
+Hemos combinado los diferentes tipos de anotación disponibles para la biblioteca Aspose.PDF for Python  en grupos:
 
-Hemos combinado los diferentes tipos de anotaciones disponibles para la biblioteca Aspose.PDF para Python en grupos:
+- [Importar y Exportar Anotaciones](/pdf/es/python-net/import-export-annotations/)
+- [Anotaciones Interactivas](/pdf/es/python-net/interactive-annotations/)
+- [Anotaciones de marcado](/pdf/es/python-net/markup-annotations/)
+- [Anotaciones multimedia](/pdf/es/python-net/media-annotations/)
+- [Anotaciones de seguridad](/pdf/es/python-net/security-annotations/)
+- [Anotaciones de forma](/pdf/es/python-net/shape-annotations/)
+- [Anotaciones de texto](/pdf/es/python-net/text-based-Annotations/)
+- [Anotaciones de marca de agua](/pdf/es/python-net/watermark-annotations/)
 
-- [Anotación de Texto en PDF](/pdf/es/python-net/text-annotation/)
-- [Anotación de Resaltados en PDF](/pdf/es/python-net/highlights-annotation/)
-- [Anotación de Figuras en PDF](/pdf/es/python-net/figures-annotation/)
-- [Anotaciones Adhesivas en PDF](/pdf/es/python-net/sticky-annotations/)
-- [Anotaciones Extra](/pdf/es/python-net/extra-annotations/)
+## Temas relacionados de anotación
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Resumen de anotaciones PDF](/pdf/es/python-net/annotations/) para la sección principal y los conceptos de anotación.
+- [Anotación de texto PDF](/pdf/es/python-net/text-annotation/) para flujos de trabajo de anotaciones de estilo nota y basadas en texto.
+- [Anotación de Figuras PDF](/pdf/es/python-net/figures-annotation/) para anotaciones basadas en formas como círculos, polígonos y líneas.
+
