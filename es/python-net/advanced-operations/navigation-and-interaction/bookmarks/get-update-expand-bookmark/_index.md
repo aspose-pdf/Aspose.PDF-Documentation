@@ -4,8 +4,8 @@ linktitle: Obtener, actualizar y expandir un marcador
 type: docs
 weight: 20
 url: /es/python-net/get-update-and-expand-bookmark/
-description: Aprende cómo recuperar, actualizar y expandir marcadores en documentos PDF usando Python.
-lastmod: "2026-04-15"
+description: Aprenda cómo recuperar, actualizar y expandir marcadores en documentos PDF usando Python.
+lastmod: "2026-05-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,9 +16,9 @@ Abstract: Este artículo ofrece una guía completa sobre la gestión de marcador
 
 ## Obtener marcadores
 
-El [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) del objeto [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) la colección contiene todos los marcadores de un archivo PDF. Este artículo explica cómo obtener marcadores de un archivo PDF y cómo obtener en qué página está un marcador en particular.
+La colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) del objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) contiene todos los marcadores de un archivo PDF. Este artículo explica cómo obtener marcadores de un archivo PDF y cómo identificar en qué página se encuentra un marcador concreto.
 
-Para obtener los marcadores, recorra la [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) colección y obtenga cada marcador en el OutlineItemCollection. El [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) proporciona acceso a todos los atributos del marcador. El siguiente fragmento de código muestra cómo obtener marcadores del archivo PDF.
+Para obtener los marcadores, recorra la colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) y obtenga cada marcador en `OutlineItemCollection`. [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) proporciona acceso a todos los atributos del marcador. El siguiente fragmento de código muestra cómo obtener marcadores del archivo PDF.
 
 ```python
 from os import path
@@ -35,9 +35,9 @@ def get_bookmarks(input_pdf):
         print(outline_item.color)
 ```
 
-## Obteniendo el número de página de un marcador
+## Obtener el número de página de un marcador
 
-Una vez que hayas agregado un marcador, puedes averiguar en qué página está obteniendo el número de página (PageNumber) de destino asociado al objeto Bookmark.
+Una vez que haya agregado un marcador, puede averiguar en qué página se encuentra obteniendo el número de página de destino asociado al objeto marcador.
 
 ```python
 from os import path
@@ -63,7 +63,7 @@ def get_bookmark_page_number(input_pdf):
 
 ## Obtener marcadores secundarios de un documento PDF
 
-Los marcadores pueden organizarse en una estructura jerárquica, con padres e hijos. Para obtener todos los marcadores, recorra las colecciones Outlines del objeto Document. Sin embargo, para obtener también los marcadores secundarios, recorra también todos los marcadores en cada [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) objeto obtenido en el primer bucle. Los siguientes fragmentos de código muestran cómo obtener marcadores secundarios de un documento PDF.
+Los marcadores pueden organizarse en una estructura jerárquica, con nodos padre e hijo. Para obtener todos los marcadores, recorra las colecciones `Outlines` del objeto `Document`. Para obtener también los marcadores secundarios, recorra además todos los marcadores de cada objeto [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) obtenido en el primer bucle. Los siguientes fragmentos de código muestran cómo obtener marcadores secundarios de un documento PDF.
 
 ```python
 from os import path
@@ -92,7 +92,7 @@ def get_child_bookmarks(input_pdf):
 
 ## Actualizar marcadores en un documento PDF
 
-Para actualizar un marcador en un archivo PDF, primero obtenga el marcador particular de la colección OutlineColletion del objeto Document especificando el índice del marcador. Una vez que haya recuperado el marcador en [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) objeto, puede actualizar sus propiedades y luego guardar el archivo PDF actualizado usando el método Save. Los siguientes fragmentos de código muestran cómo actualizar marcadores en un documento PDF.
+Para actualizar un marcador en un archivo PDF, primero obtenga el marcador deseado de la colección `OutlineCollection` del objeto `Document` especificando su índice. Una vez que haya recuperado el marcador en un objeto [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/), puede actualizar sus propiedades y luego guardar el archivo PDF actualizado con el método `Save`. Los siguientes fragmentos de código muestran cómo actualizar marcadores en un documento PDF.
 
 ```python
 from os import path
@@ -118,9 +118,9 @@ def update_bookmarks(input_pdf, output_pdf):
 
 ## Marcadores ampliados al visualizar el documento
 
-Los marcadores se guardan en el objeto Document [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) colección, en sí misma en el [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) colección. Sin embargo, puede que tengamos un requisito de que todos los marcadores estén ampliados al visualizar el archivo PDF.
+Los marcadores se guardan en la colección [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) del objeto `Document`, que a su vez forma parte de la colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). En algunos casos puede ser necesario que todos los marcadores aparezcan expandidos al visualizar el archivo PDF.
 
-Para cumplir con este requisito, podemos establecer el estado abierto para cada elemento de esquema/marcador como Open. El siguiente fragmento de código le muestra cómo establecer el estado abierto para cada marcador como ampliado en un documento PDF.
+Para cumplir con este requisito, podemos establecer el estado abierto de cada elemento de esquema o marcador en `Open`. El siguiente fragmento de código muestra cómo establecer el estado abierto de cada marcador para que aparezca expandido en un documento PDF.
 
 ```python
 from os import path
