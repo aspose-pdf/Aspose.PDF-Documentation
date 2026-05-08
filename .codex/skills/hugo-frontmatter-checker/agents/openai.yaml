@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hugo Frontmatter Checker"
+  short_description: "Audit Hugo front matter style"
+  default_prompt: "Use $hugo-frontmatter-checker to scan Markdown documentation front matter, report required-key and YAML style issues, and apply only safe front matter fixes when requested."
