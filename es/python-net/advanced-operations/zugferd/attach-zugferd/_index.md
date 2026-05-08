@@ -4,7 +4,7 @@ linktitle: Adjuntar ZUGFeRD a PDF
 type: docs
 weight: 10
 url: /es/python-net/attach-zugferd/
-description: Aprenda cómo generar un documento PDF con ZUGFeRD en Aspose.PDF para Python a través de .NET
+description: Aprenda cómo generar un documento PDF con ZUGFeRD en Aspose.PDF for Python via .NET
 lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"

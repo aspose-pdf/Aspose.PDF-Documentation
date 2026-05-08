@@ -4,7 +4,7 @@ linktitle: Formatos de Archivo Soportados
 type: docs
 weight: 10
 url: /es/python-net/supported-file-formats/
-description: Esta página muestra qué formatos de archivo Aspose.PDF para Python a través de .NET puede cargar y guardar.
+description: Esta página muestra qué formatos de archivo Aspose.PDF for Python via .NET puede cargar y guardar.
 lastmod: "2022-12-22"
 sitemap:
     changefreq: "weekly"

@@ -466,7 +466,7 @@ def add_text_with_font_styling(output_file_name):
 
 ## Agregar texto transparente
 
-Agregar formas y texto semitransparentes a un documento PDF usando Aspose.PDF para Python.
+Agregar formas y texto semitransparentes a un documento PDF usando Aspose.PDF for Python via .NET.
 Crea un rectángulo de color con opacidad parcial y superpone un TextFragment con un color de primer plano transparente.
 
 1. Inicializa un objeto Document y agrega una página en blanco para dibujar contenido.

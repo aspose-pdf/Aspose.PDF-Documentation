@@ -1,10 +1,10 @@
 ---
-title: Características Clave de Aspose.PDF para Python
+title: Características clave de Aspose.PDF for Python via .NET
 linktitle: Características Clave
 type: docs
 weight: 20
 url: /es/python-net/key-features/
-description: Aspose.PDF para Python a través de .NET demuestra sus características generales. Muestra las versiones de PDF soportadas y todas las manipulaciones que podemos hacer con PDF.
+description: Aspose.PDF for Python via .NET demuestra sus características generales. Muestra las versiones de PDF soportadas y todas las manipulaciones que podemos hacer con PDF.
 lastmod: "2022-12-21"
 sitemap:
     changefreq: "weekly"
@@ -22,7 +22,7 @@ sitemap:
 
 ## Características de Conversión
 
-La biblioteca Aspose.PDF para Python a través de .NET le permite convertir sus documentos PDF a los formatos más populares y viceversa de manera exitosa, rápida y fácil.
+La biblioteca Aspose.PDF for Python via .NET le permite convertir sus documentos PDF a los formatos más populares y viceversa de manera exitosa, rápida y fácil.
 
 - Convertir PDF a Word, Excel y PowerPoint.
 - Convertir PDF a formatos de imágenes.
@@ -32,7 +32,7 @@ La biblioteca Aspose.PDF para Python a través de .NET le permite convertir sus 
 
 ## Versiones de PDF compatibles
 
-Aspose.PDF para Python soporta las versiones PDF 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, y 2.0.
+Aspose.PDF for Python via .NET soporta las versiones PDF 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, y 2.0.
 
 ## Texto
 

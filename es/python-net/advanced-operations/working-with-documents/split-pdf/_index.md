@@ -86,7 +86,7 @@ def split_documents_into_two_parts(infile, outdir):
 
 ## Dividir un PDF en varios archivos cada N páginas
 
-Divida un documento PDF en varios archivos más pequeños basándose en un número fijo de páginas usando Aspose.PDF para Python.
+Divida un documento PDF en varios archivos más pequeños basándose en un número fijo de páginas usando Aspose.PDF for Python via .NET.
 
 1. Cargue el documento PDF.
 1. Determinar el número total de páginas.
@@ -338,7 +338,7 @@ def split_documents_with_stable_filenames(infile, outdir):
 
 ## Dividir PDF en páginas impares y pares
 
-Divida un documento PDF en dos archivos separados que contengan, respectivamente, las páginas impares y pares, usando Aspose.PDF para Python.
+Divida un documento PDF en dos archivos separados que contengan, respectivamente, las páginas impares y pares, usando Aspose.PDF for Python via .NET.
 
 ```python
 import sys

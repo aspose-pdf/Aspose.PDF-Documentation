@@ -4,7 +4,7 @@ linktitle: Qué hay de nuevo
 type: docs
 weight: 10
 url: /es/python-net/whatsnew/
-description: En esta página se presentan las características nuevas más populares en Aspose.PDF para Python a través de .NET que se han introducido en lanzamientos recientes.
+description: En esta página se presentan las características nuevas más populares en Aspose.PDF for Python via .NET que se han introducido en lanzamientos recientes.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

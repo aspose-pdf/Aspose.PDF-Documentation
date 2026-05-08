@@ -4,7 +4,7 @@ linktitle: Ejemplo de Hola Mundo
 type: docs
 weight: 20
 url: /es/python-net/hello-world-example/
-description: Esta muestra demuestra cómo crear un documento PDF simple con el texto Hola Mundo usando Aspose.PDF para Python a través de .NET.
+description: Esta muestra demuestra cómo crear un documento PDF simple con el texto Hola Mundo usando Aspose.PDF for Python via .NET.
 lastmod: "2022-12-22"
 sitemap:
     changefreq: "monthly"
@@ -13,7 +13,7 @@ sitemap:
 
 Un ejemplo de "Hola Mundo" muestra la sintaxis más simple y el programa más sencillo en cualquier lenguaje de programación dado. Los desarrolladores son introducidos a la sintaxis básica del lenguaje de programación aprendiendo cómo imprimir "Hola Mundo" en la pantalla del dispositivo. Por lo tanto, tradicionalmente comenzaremos nuestro conocimiento de nuestra biblioteca desde ahí.
 
-En este artículo, estamos creando un documento PDF que contiene el texto "Hola Mundo!". Después de instalar **Aspose.PDF para Python a través de .NET** en tu entorno, puedes ejecutar el siguiente ejemplo de código para ver cómo funciona la API de Aspose.PDF.
+En este artículo, estamos creando un documento PDF que contiene el texto "Hola Mundo!". Después de instalar **Aspose.PDF for Python via .NET** en tu entorno, puedes ejecutar el siguiente ejemplo de código para ver cómo funciona la API de Aspose.PDF.
 
 El siguiente fragmento de código sigue estos pasos:
 
@@ -23,7 +23,7 @@ El siguiente fragmento de código sigue estos pasos:
 1. Añadir TextFragment a la colección de [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) de la página
 1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) documento PDF resultante
 
-El siguiente fragmento de código es un programa "Hello World" para demostrar el funcionamiento de Aspose.PDF para Python a través de .NET API.
+El siguiente fragmento de código es un programa "Hello World" para demostrar el funcionamiento de Aspose.PDF for Python via .NET API.
 
 ```python
 

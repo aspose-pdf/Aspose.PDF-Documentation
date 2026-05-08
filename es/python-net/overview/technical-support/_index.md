@@ -1,10 +1,10 @@
 ---
-title: Aspose.PDF para Python Soporte
+title: Soporte de Aspose.PDF for Python via .NET
 linktitle: Soporte Técnico
 type: docs
 weight: 60
 url: /es/python-net/technical-support/
-description: Esta página ofrece recomendaciones para resolver sus tareas de manera rápida y efectiva utilizando Aspose.PDF para Python.
+description: Esta página ofrece recomendaciones para resolver sus tareas de manera rápida y efectiva utilizando Aspose.PDF for Python via .NET.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -21,7 +21,7 @@ Aspose.PDF le permite utilizar soporte técnico gratuito para todos sus producto
 
 Si necesita ayuda con un problema con Aspose.PDF, siga las siguientes recomendaciones para asegurarse de que se resuelva de la manera más eficiente:
 
-- En primer lugar, verifique que esté utilizando la última versión de Aspose.PDF antes de reportar el problema, consulte [Descargas de Aspose.PDF para Python](https://pypi.org/project/aspose-pdf/) para obtener información sobre la última versión.
+- En primer lugar, verifique que esté utilizando la última versión de Aspose.PDF antes de reportar el problema, consulte [Descargas de Aspose.PDF for Python via .NET](https://pypi.org/project/aspose-pdf/) para obtener información sobre la última versión.
 
 - Quizás la solución a su problema ya ha sido discutida y tiene una solución; para ello, estudie el foro y la documentación, verifique la Referencia de API antes de reportar el problema.
 

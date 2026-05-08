@@ -4,7 +4,7 @@ linktitle: Añadir Número de Página
 type: docs
 weight: 30
 url: /es/python-net/add-page-number/
-description: Aspose.PDF para Python a través de .NET te permite añadir un Sello de Número de Página a tu archivo PDF usando la clase PageNumberStamp.
+description: Aspose.PDF for Python via .NET te permite añadir un Sello de Número de Página a tu archivo PDF usando la clase PageNumberStamp.
 lastmod: "2023-04-17"
 sitemap:
     changefreq: "weekly"
@@ -72,13 +72,13 @@ sitemap:
         "@id": "/python-net/add-page-number/"
     },
     "dateModified": "2022-02-04",
-    "description": "Aspose.PDF para Python a través de .NET te permite añadir un Sello de Número de Página a tu archivo PDF usando la clase PageNumberStamp."
+    "description": "Aspose.PDF for Python via .NET te permite añadir un Sello de Número de Página a tu archivo PDF usando la clase PageNumberStamp."
 }
 </script>
 
 
 All the documents must have page numbers in it. The page number makes it easier for the reader to locate different parts of the document.  
-**Aspose.PDF para Python vía .NET** le permite agregar números de página con [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/).
+**Aspose.PDF for Python via .NET** le permite agregar números de página con [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/).
 
 Puede usar la clase [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/) para agregar un sello de número de página en un archivo PDF.
  [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/) clase proporciona las propiedades necesarias para crear un sello basado en el número de página como formato, márgenes, alineaciones, número de inicio, etc. Para agregar un sello de número de página, necesitas crear un objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) y un objeto [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/) usando las propiedades requeridas. Después de eso, puedes llamar al método [add_stamp()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) de la [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) para agregar el sello en el PDF. También puedes establecer los atributos de fuente del sello de número de página. El siguiente fragmento de código te muestra cómo agregar números de página en un archivo PDF.

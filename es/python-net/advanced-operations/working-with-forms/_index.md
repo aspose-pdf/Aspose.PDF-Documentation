@@ -4,7 +4,7 @@ linktitle: Trabajar con formularios
 type: docs
 weight: 60
 url: /es/python-net/working-with-forms/
-description: Esta sección describe cómo trabajar con AcroForms en documentos PDF con Aspose.PDF para Python via .NET.
+description: Esta sección describe cómo trabajar con AcroForms en documentos PDF con Aspose.PDF for Python via .NET.
 lastmod: "2026-05-08"
 sitemap:
     changefreq: "monthly"

@@ -4,7 +4,7 @@ linktitle: Comenzar
 type: docs
 weight: 30
 url: /es/python-net/get-started/
-description: Esta sección describe los principios básicos del trabajo de Aspose.PDF para Python a través de .NET. La biblioteca de Python admite una amplia variedad de funciones.
+description: Esta sección describe los principios básicos del trabajo de Aspose.PDF for Python via .NET. La biblioteca de Python admite una amplia variedad de funciones.
 is_node: true
 lastmod: "2022-12-20"
 sitemap:
@@ -18,9 +18,9 @@ PDF fue creado por Adobe en la década de 1990 para lograr dos cosas. La primera
 
 Sin embargo, no basta con solo abrir tu documento. Al trabajar con PDF, te enfrentarás a la necesidad de crear dicho documento de nuevo, editarlo o convertirlo al formato que necesites.
 
-## ¿Por qué usar Aspose.PDF para Python a través de .NET?
+## ¿Por qué usar Aspose.PDF for Python via .NET?
 
-Usar Aspose.PDF para Python a través de .NET en tu proyecto te ofrece los siguientes beneficios:
+Usar Aspose.PDF for Python via .NET en tu proyecto te ofrece los siguientes beneficios:
 
 - amplia variedad de funciones
 - basado en Aspose.PDF para .NET

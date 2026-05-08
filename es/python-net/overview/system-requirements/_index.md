@@ -4,7 +4,7 @@ linktitle: Requisitos del Sistema
 type: docs
 weight: 30
 url: /es/python-net/system-requirements/
-description: Esta sección lista los sistemas operativos compatibles que un desarrollador necesita para trabajar exitosamente con Aspose.PDF para Python.
+description: Esta sección lista los sistemas operativos compatibles que un desarrollador necesita para trabajar exitosamente con Aspose.PDF for Python via .NET.
 lastmod: "2022-12-22"
 sitemap:
     changefreq: "weekly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## Descripción General
 
-Aspose.PDF para Python a través de .NET, API de procesamiento de PDF que permite a los desarrolladores trabajar con documentos PDF sin necesidad de Microsoft Office® o Adobe Acrobat Automation. Aspose.PDF para Python puede ser utilizado para desarrollar aplicaciones Python de 32 bits y 64 bits para diferentes sistemas operativos (como Windows y Linux) donde Python 3.5 o posterior está instalado.
+Aspose.PDF for Python via .NET, API de procesamiento de PDF que permite a los desarrolladores trabajar con documentos PDF sin necesidad de Microsoft Office® o Adobe Acrobat Automation. Aspose.PDF for Python via .NET puede ser utilizado para desarrollar aplicaciones Python de 32 bits y 64 bits para diferentes sistemas operativos (como Windows y Linux) donde Python 3.5 o posterior está instalado.
 
 ## Sistema Operativo Compatible
 

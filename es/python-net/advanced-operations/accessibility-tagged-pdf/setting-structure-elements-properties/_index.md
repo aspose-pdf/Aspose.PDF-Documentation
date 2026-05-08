@@ -292,7 +292,7 @@ def set_inline_elements(outfile):
 
 ## Configuración del nombre de etiqueta personalizado
 
-Establecer nombres de etiquetas personalizados para la estructura y los elementos en línea en un PDF etiquetado usando Aspose.PDF para Python.
+Establecer nombres de etiquetas personalizados para la estructura y los elementos en línea en un PDF etiquetado usando Aspose.PDF for Python via .NET.
 
 El siguiente fragmento de código muestra cómo establecer un nombre de etiqueta personalizado:
 
