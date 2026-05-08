@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Manage PDF Viewer Preferences with Aspose.PDF in Python
-Abstract: This guide demonstrates how to read and modify PDF viewer preferences programmatically using Aspose.PDF for Python. Viewer preferences control how a PDF is displayed when opened in a PDF viewer, such as opening with outlines, hiding toolbars, or using single-page layout.      
+Abstract: This guide demonstrates how to read and modify PDF viewer preferences programmatically using Aspose.PDF for Python. Viewer preferences control how a PDF is displayed when opened in a PDF viewer, such as opening with outlines, hiding toolbars, or using single-page layout.
 ---
 
 Aspose.PDF provides tools to access and update PDF viewer preferences. These preferences define the initial layout and presentation behavior of a PDF document in PDF readers. This includes options such as enabling outline view, hiding menu bars, or specifying page layout modes. Using PdfContentEditor, you can retrieve existing preferences, check specific flags, and update them as needed.

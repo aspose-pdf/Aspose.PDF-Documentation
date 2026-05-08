@@ -8,7 +8,7 @@ lastmod: "2026-04-02"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Remove PDF Usage Rights in Python
 Abstract: This article explains how to inspect and remove usage rights from PDF documents with Aspose.PDF for Python via .NET. It shows how to check whether a PDF contains usage rights and how to save a new version of the document after those rights are removed.
 ---

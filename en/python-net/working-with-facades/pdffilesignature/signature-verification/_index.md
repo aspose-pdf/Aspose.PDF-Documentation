@@ -8,7 +8,7 @@ lastmod: "2026-04-02"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Verify PDF Signatures in Python
 Abstract: This article explains how to verify digital signatures in PDF documents with Aspose.PDF for Python via .NET. It shows how to validate an existing signature and how to check whether a PDF contains any signatures.
 ---

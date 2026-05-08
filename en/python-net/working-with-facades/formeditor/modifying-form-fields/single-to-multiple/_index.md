@@ -1,5 +1,5 @@
 ---
-title: Single-Line Field to Multi-Line Field 
+title: Single-Line Field to Multi-Line Field
 type: docs
 weight: 80
 url: /python-net/single-to-multiple/
@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Convert a Single-Line Text Field to a Multi-Line Field in a PDF Using Python
-Abstract: This example demonstrates how to convert a single-line text field into a multi-line field in a PDF document using Aspose.PDF for Python. The code loads an existing PDF form, modifies the specified field to allow multiple lines of text, and saves the updated document.    
+Abstract: This example demonstrates how to convert a single-line text field into a multi-line field in a PDF document using Aspose.PDF for Python. The code loads an existing PDF form, modifies the specified field to allow multiple lines of text, and saves the updated document.
 ---
 
 PDF forms sometimes contain text fields designed for single-line input, which may not be sufficient for certain types of data. With Aspose.PDF for Python, developers can easily convert such fields into multi-line text fields without recreating them.

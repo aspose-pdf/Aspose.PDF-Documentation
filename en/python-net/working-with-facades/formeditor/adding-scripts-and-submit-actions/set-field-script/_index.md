@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set JavaScript Actions for PDF Form Fields Using Python
-Abstract: This article explains how to open a PDF document, assign JavaScript code to a form field, update the script using the FormEditor class, and save the modified file. The example demonstrates how existing scripts can be overridden to modify the behavior of form fields.  
+Abstract: This article explains how to open a PDF document, assign JavaScript code to a form field, update the script using the FormEditor class, and save the modified file. The example demonstrates how existing scripts can be overridden to modify the behavior of form fields.
 ---
 
 Interactive PDF forms often rely on JavaScript to perform tasks such as displaying alerts, validating input, or triggering dynamic form behavior. With Aspose.PDF for Python, developers can programmatically manage these scripts.

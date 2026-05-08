@@ -9,9 +9,9 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Saving PDF Metadata with XMP Using Aspose.PDF for Python
-Abstract: This guide demonstrates how to save PDF metadata using XMP (Extensible Metadata Platform) with Aspose.PDF for Python via .NET. XMP ensures that both standard and custom metadata are embedded in a standardized XML format inside the PDF, improving compatibility across applications and workflows.    
+Abstract: This guide demonstrates how to save PDF metadata using XMP (Extensible Metadata Platform) with Aspose.PDF for Python via .NET. XMP ensures that both standard and custom metadata are embedded in a standardized XML format inside the PDF, improving compatibility across applications and workflows.
 ---
 
 PDF metadata can be stored in multiple ways, and XMP is the modern, standardized method for embedding metadata inside a PDF file. Using Aspose.PDF, you can update standard fields like Title, Subject, Keywords, and Creator, and then save them in XMP format to ensure wider compatibility and future-proofing. This method is recommended over legacy metadata storage methods.

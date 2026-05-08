@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add Line Annotation to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a line annotation to a PDF document using Aspose.PDF for Python via the Facades API. It explains how to define the line’s start and end points, rectangle bounds, appearance properties, and save the updated document.   
+Abstract: This example demonstrates how to add a line annotation to a PDF document using Aspose.PDF for Python via the Facades API. It explains how to define the line’s start and end points, rectangle bounds, appearance properties, and save the updated document.
 ---
 
 Line annotations are useful for emphasizing text, highlighting relationships, or drawing attention to specific areas in a PDF. With [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can programmatically create line annotations by specifying the start and end points, bounding rectangle, color, border style, and line endings.

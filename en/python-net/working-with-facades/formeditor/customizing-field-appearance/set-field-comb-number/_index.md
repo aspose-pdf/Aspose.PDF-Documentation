@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set Comb Number for PDF Form Fields Using Python
-Abstract: Using Aspose.PDF for Python, developers can programmatically set the number of boxes (comb number) for a form field to enforce a fixed-length input. This article demonstrates setting the comb number for a field named "PIN".         
+Abstract: Using Aspose.PDF for Python, developers can programmatically set the number of boxes (comb number) for a form field to enforce a fixed-length input. This article demonstrates setting the comb number for a field named "PIN".
 ---
 
 The comb number defines how the field's content is split into equally spaced boxes, often used for PIN codes, serial numbers, or other fixed-length input fields. The code opens an existing PDF, sets the comb number for a field, and saves the modified document.

@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Create a Rubber Stamp with Custom Image Appearance Using PdfContentEditor in Python
-Abstract: This example shows how to create a rubber stamp annotation with a custom image appearance in a PDF using Aspose.PDF for Python via the Facades API. This approach lets you apply branded or visually rich stamps such as logos, seals, or signatures.    
+Abstract: This example shows how to create a rubber stamp annotation with a custom image appearance in a PDF using Aspose.PDF for Python via the Facades API. This approach lets you apply branded or visually rich stamps such as logos, seals, or signatures.
 ---
 
 Rubber stamp annotations can be customized using an external image file. Instead of relying only on text-based stamps, you can define a visual appearance (for example, a company logo or approval badge) and place it on a page.

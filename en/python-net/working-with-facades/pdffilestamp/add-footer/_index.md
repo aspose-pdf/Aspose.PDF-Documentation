@@ -5,7 +5,7 @@ weight: 10
 url: /python-net/add-footer/
 description: Learn how to add text and image footers to PDF pages using PdfFileStamp in Python.
 lastmod: "2026-04-13"
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Text and Image Footers to PDF in Python
 Abstract: This article explains how to add footer content to PDF documents with Aspose.PDF for Python via .NET using the PdfFileStamp facade. It shows how to add a text footer, place an image footer, and apply custom footer margins before saving the updated PDF.
 ---

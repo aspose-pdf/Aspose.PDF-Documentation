@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set Submit Flag for a PDF Form Button Using Aspose.PDF for Python
-Abstract: PDF forms can be configured to submit form data to a server or endpoint in different formats. By setting a submit flag on a button field, developers can define how the data is sent. This tutorial demonstrates how to use the FormEditor class to set a submit flag for an existing submit button in a PDF document and save the updated file.  
+Abstract: PDF forms can be configured to submit form data to a server or endpoint in different formats. By setting a submit flag on a button field, developers can define how the data is sent. This tutorial demonstrates how to use the FormEditor class to set a submit flag for an existing submit button in a PDF document and save the updated file.
 ---
 
 PDF forms often include Submit Buttons to send user input to a server. The submit flag determines the data format sent (e.g., XFDF, FDF, HTML).

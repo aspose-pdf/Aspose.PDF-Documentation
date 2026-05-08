@@ -9,9 +9,9 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Get PDF Version and Document Privileges Using Aspose.PDF for Python
-Abstract: Understanding a PDF’s metadata is essential for processing, compliance, and workflow automation. PDF version numbers indicate the supported features and compatibility, while document privileges control actions like printing, copying content, modifying annotations, or filling form fields. This tutorial demonstrates how to use the PdfFileInfo class in Aspose.PDF for Python.     
+Abstract: Understanding a PDF’s metadata is essential for processing, compliance, and workflow automation. PDF version numbers indicate the supported features and compatibility, while document privileges control actions like printing, copying content, modifying annotations, or filling form fields. This tutorial demonstrates how to use the PdfFileInfo class in Aspose.PDF for Python.
 ---
 
 - [Get PDF Version](/pdf/python-net/get-pdf-version/)

@@ -8,7 +8,7 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Create a ComboBox Field in a PDF Using Aspose.PDF for Python
 Abstract: Interactive form fields make PDFs more dynamic and user-friendly. A ComboBox field allows users to select an option from a predefined drop-down list. In this tutorial, you will learn how to create a ComboBox in a PDF using the FormEditor class in Aspose.PDF for Python, populate it with options, and save the modified document.
 ---

@@ -3,7 +3,7 @@ title: Text Operations
 type: docs
 weight: 100
 url: /python-net/text-operations/
-description: 
+description:
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"

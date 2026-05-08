@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Move a Rubber Stamp by ID in a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to reposition an existing rubber stamp annotation in a PDF using Aspose.PDF for Python via the Facades API. It shows how to create a stamp and then move it programmatically using its ID.    
+Abstract: This example demonstrates how to reposition an existing rubber stamp annotation in a PDF using Aspose.PDF for Python via the Facades API. It shows how to create a stamp and then move it programmatically using its ID.
 ---
 
 After adding a rubber stamp annotation to a PDF, you may need to adjust its position. The 'move_stamp_by_id()' method allows you to relocate a stamp based on its identifier, without recreating it. This is useful in automated workflows where stamp placement must be dynamically adjusted.

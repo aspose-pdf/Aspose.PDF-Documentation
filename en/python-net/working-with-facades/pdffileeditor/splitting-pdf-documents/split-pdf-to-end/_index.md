@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Split a PDF from a Specific Page to the End in Python
-Abstract: Learn how to split a PDF document from a given page to the last page using Aspose.PDF for Python. This example demonstrates extracting all pages starting from a specified page to create a new PDF file. 
+Abstract: Learn how to split a PDF document from a given page to the last page using Aspose.PDF for Python. This example demonstrates extracting all pages starting from a specified page to create a new PDF file.
 ---
 
 Splitting a PDF from a specific page to the end is useful when you need the latter portion of a document as a separate file. Using Aspose.PDF for Python, the split_to_end method of the [PdfFileEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffileeditor/) class allows you to extract pages starting from any page number to the last page of the document. This is ideal for creating excerpts, extracting chapters, or processing parts of a large PDF without manually editing it.

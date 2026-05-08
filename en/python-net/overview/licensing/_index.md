@@ -9,7 +9,7 @@ lastmod: "2025-02-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Licensing of Aspose.PDF for Python
 Abstract: The article discusses the limitations and licensing options for Aspose.PDF for Python. It highlights that the evaluation version allows full functionality testing but adds a watermark to generated PDFs, stating "Evaluation Only" along with copyright information. For users wishing to test without these limitations, a 30-day Temporary License is available. The article further explains how to implement a classic license by loading it from a file or stream, recommending placing the license file in the same directory as the Aspose.PDF.dll file and setting the license using the `Aspose.Pdf.License` class. Code snippets are provided to illustrate the licensing process.
 ---

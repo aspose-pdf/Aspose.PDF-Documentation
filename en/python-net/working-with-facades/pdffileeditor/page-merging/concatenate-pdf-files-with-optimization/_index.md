@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Merge PDF Files with Optimized Output in Python
-Abstract: Learn how to concatenate multiple PDF files into a single optimized PDF using Aspose.PDF for Python. This example demonstrates how to enable size optimization to reduce the output file size while preserving content and formatting.   
+Abstract: Learn how to concatenate multiple PDF files into a single optimized PDF using Aspose.PDF for Python. This example demonstrates how to enable size optimization to reduce the output file size while preserving content and formatting.
 ---
 
 When merging multiple PDFs, the resulting file can become large, especially if it contains images or complex content. Using Aspose.PDF for Python, developers can enable optimization during concatenation to reduce file size without losing quality. The optimize_size property in the [PdfFileEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffileeditor/) class ensures that the merged PDF is compact and efficient, making it suitable for sharing, storage, or archiving.

@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Remove Document Open Action from a PDF Using Python
-Abstract: This example demonstrates how to remove a document open action from a PDF using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, clear the open action, and save the updated document.    
+Abstract: This example demonstrates how to remove a document open action from a PDF using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, clear the open action, and save the updated document.
 ---
 
 PDF documents may contain actions that execute automatically when the file is opened, such as JavaScript alerts, navigation commands, or other behaviors. In some scenarios, you may need to remove these actions for security, compliance, or user experience reasons.

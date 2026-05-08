@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set a Submit URL for a PDF Form Button Using Python
-Abstract: This article explains how to open an existing PDF form, define a submission URL for a button field using the FormEditor class, verify that the operation succeeds, and save the updated PDF document.   
+Abstract: This article explains how to open an existing PDF form, define a submission URL for a button field using the FormEditor class, verify that the operation succeeds, and save the updated PDF document.
 ---
 
 PDF forms can be designed to submit their data to a web server when a user clicks a submit button. Using Aspose.PDF for Python, developers can programmatically configure a submit action for form fields.

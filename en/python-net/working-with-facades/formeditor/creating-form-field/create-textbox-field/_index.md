@@ -8,7 +8,7 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Create TextBox Fields in a PDF Using Aspose.PDF for Python
 Abstract: TextBox fields in PDF forms allow users to enter and edit text, making documents interactive and user-friendly. In this tutorial, you will learn how to create TextBox form fields in a PDF using the FormEditor class in Aspose.PDF for Python. The example demonstrates adding multiple fields, specifying default values, and saving the modified PDF.
 ---

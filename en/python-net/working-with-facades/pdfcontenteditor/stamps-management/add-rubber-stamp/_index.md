@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add a Rubber Stamp Annotation to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a rubber stamp annotation to a PDF document using Aspose.PDF for Python via the Facades API. Rubber stamps allow you to visually mark pages with approvals, reviews, or custom labels.   
+Abstract: This example demonstrates how to add a rubber stamp annotation to a PDF document using Aspose.PDF for Python via the Facades API. Rubber stamps allow you to visually mark pages with approvals, reviews, or custom labels.
 ---
 
 Rubber stamp annotations are commonly used in PDFs to indicate approval, review status, or other notes. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can define a rectangle for the stamp, set its text and comments, choose a color, and apply it to multiple pages of a document.

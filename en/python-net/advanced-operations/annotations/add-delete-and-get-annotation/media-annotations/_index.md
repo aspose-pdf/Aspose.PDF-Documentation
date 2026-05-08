@@ -9,7 +9,7 @@ lastmod: "2026-04-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Work with multimedia and rich media PDF annotations in Python.
 Abstract: This article explains how to create and manage media annotations in PDF documents using Aspose.PDF for Python via .NET. It covers sound annotations, 3D annotations, screen annotations, rich media annotations, and techniques for listing or deleting multimedia annotations from a PDF page.
 ---

@@ -3,7 +3,7 @@ title: Attachments
 type: docs
 weight: 20
 url: /python-net/attachments/
-description: 
+description:
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"

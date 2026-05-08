@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Safely Merge Two PDF Files in Python Without Exceptions
-Abstract: Learn how to safely concatenate two PDF files using Aspose.PDF for Python. The try_concatenate method merges the files without raising exceptions, allowing for graceful error handling in case the operation fails.   
+Abstract: Learn how to safely concatenate two PDF files using Aspose.PDF for Python. The try_concatenate method merges the files without raising exceptions, allowing for graceful error handling in case the operation fails.
 ---
 
 Merging two PDF files can sometimes fail due to file corruption, incompatible formats, or other issues. Using Aspose.PDF for Python, the try_concatenate method of the PdfFileEditor class allows you to attempt merging two PDFs safely. If the operation fails, it returns False instead of raising an exception, giving you full control over error handling in automated workflows or batch processing.

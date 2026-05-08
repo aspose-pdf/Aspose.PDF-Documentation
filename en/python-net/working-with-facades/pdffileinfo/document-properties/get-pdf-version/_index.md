@@ -9,9 +9,9 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Retrieve PDF Version Using Aspose.PDF for Python
-Abstract: PDF documents have version numbers that indicate the features and specifications they support (e.g., 1.4, 1.7, 2.0). Knowing the PDF version is important for compatibility, feature support, and document processing workflows. In this guide, you will learn how to retrieve the PDF version programmatically using the PdfFileInfo class in Aspose.PDF for Python.    
+Abstract: PDF documents have version numbers that indicate the features and specifications they support (e.g., 1.4, 1.7, 2.0). Knowing the PDF version is important for compatibility, feature support, and document processing workflows. In this guide, you will learn how to retrieve the PDF version programmatically using the PdfFileInfo class in Aspose.PDF for Python.
 ---
 
 PDF versions define the features and capabilities supported in a document, including form fields, encryption, annotations, and compression. For developers working with multiple PDFs, checking the version ensures compatibility with tools, libraries, or workflows that process these files.

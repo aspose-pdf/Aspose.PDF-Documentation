@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add a Web Link to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a web link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area on a page that opens a specified URL in a web browser and save the updated document.    
+Abstract: This example demonstrates how to add a web link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area on a page that opens a specified URL in a web browser and save the updated document.
 ---
 
 Web links in PDFs allow users to navigate directly to online resources, websites, or documentation. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can define a rectangular area on a PDF page that, when clicked, opens a URL in the default web browser.

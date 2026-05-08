@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add Circle Annotation to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a circle annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define annotation bounds, set content text, configure color and appearance, and save the updated document.    
+Abstract: This example demonstrates how to add a circle annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define annotation bounds, set content text, configure color and appearance, and save the updated document.
 ---
 
 Circle annotations are useful for highlighting areas of interest in a PDF document. With [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can create circular shapes by specifying the rectangle that defines the circle’s bounds, along with annotation text, color, fill options, page number, and border width.

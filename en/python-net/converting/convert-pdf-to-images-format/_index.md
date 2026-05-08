@@ -9,7 +9,7 @@ description: Explore how to convert PDF pages into images such as PNG, JPEG, or 
 sitemap:
     changefreq: "monthly"
     priority: 0.5
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to Convert PDF to Image Formats in Python
 Abstract: This article provides a comprehensive guide on converting PDF files into various image formats using Python, specifically leveraging the Aspose.PDF for Python library. The document outlines methods for converting PDFs to image formats including TIFF, BMP, EMF, JPG, PNG, GIF, and SVG. Two primary conversion approaches are discussed - using the Device approach and SaveOption. The Device approach involves utilizing classes like `DocumentDevice` and `ImageDevice` for whole document or page-specific conversions. Detailed steps and Python code examples are provided for converting PDF pages to different formats such as TIFF using `TiffDevice`, and BMP, EMF, JPEG, PNG, and GIF using respective device classes (`BmpDevice`, `EmfDevice`, `JpegDevice`, `PngDevice`, `GifDevice`). For SVG conversion, the `SvgSaveOptions` class is introduced. The article also highlights online tools for trying these conversions.
 ---

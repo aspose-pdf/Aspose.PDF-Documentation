@@ -8,7 +8,7 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Create a Checkbox Field in a PDF Using Aspose.PDF for Python
 Abstract: Interactive form fields allow users to fill out and interact with PDF documents digitally. In this tutorial, you will learn how to add a checkbox field to a PDF using the Aspose.PDF Python API. The example shows how to bind an existing PDF document, create a checkbox form field at specified coordinates, and save the modified file.
 ---

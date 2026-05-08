@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Copy PDF Form Fields from Another Document Using Python
-Abstract: This article explains how to create a new PDF document, copy the "First Name" field from a source PDF to page 1 at coordinates (200, 600), and save the updated target document.   
+Abstract: This article explains how to create a new PDF document, copy the "First Name" field from a source PDF to page 1 at coordinates (200, 600), and save the updated target document.
 ---
 
 Sometimes, PDF forms require reusing fields from one document in another. Using Aspose.PDF for Python, developers can programmatically copy form fields from a source PDF to a target PDF.

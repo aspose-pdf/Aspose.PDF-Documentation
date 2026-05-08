@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set Vertical Alignment for PDF Form Fields Using Python
-Abstract: This article explains how to open a PDF, set vertical alignment for a field using the FormEditor class, and save the updated PDF. The example sets the vertical alignment of a field named "First Name" to the bottom of the field area.          
+Abstract: This article explains how to open a PDF, set vertical alignment for a field using the FormEditor class, and save the updated PDF. The example sets the vertical alignment of a field named "First Name" to the bottom of the field area.
 ---
 
 PDF form fields can contain text that needs proper vertical alignment for a consistent and professional appearance. Using Aspose.PDF for Python, developers can programmatically modify the vertical alignment of form fields.

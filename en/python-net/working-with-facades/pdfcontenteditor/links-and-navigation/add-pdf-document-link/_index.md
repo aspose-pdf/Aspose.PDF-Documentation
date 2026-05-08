@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add a PDF Document Link Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a link to another PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that opens a different PDF and save the updated document.     
+Abstract: This example demonstrates how to add a link to another PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that opens a different PDF and save the updated document.
 ---
 
 PDF document links allow users to navigate from one PDF to another seamlessly. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can define a clickable rectangle that links to a page in a different PDF file, making your documents interactive and connected.

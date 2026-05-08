@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add a Custom Action Link to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a custom action link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area on a page, assign a custom action, and save the updated document.     
+Abstract: This example demonstrates how to add a custom action link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area on a page, assign a custom action, and save the updated document.
 ---
 
 Custom action links allow you to define interactive areas in a PDF that can trigger specific actions when clicked, such as executing scripts, navigating pages, or running application-specific commands. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can create a custom action link by specifying the page, rectangle, color, and actions.

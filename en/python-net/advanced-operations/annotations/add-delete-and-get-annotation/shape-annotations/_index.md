@@ -9,7 +9,7 @@ lastmod: "2026-04-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Work with geometric PDF annotations in Python.
 Abstract: This article explains how to create, read, and remove shape annotations in PDF documents using Aspose.PDF for Python via .NET. It covers line, square, circle, polygon, and polyline annotations, with each workflow broken into small steps and complete code examples.
 ---

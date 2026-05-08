@@ -8,7 +8,7 @@ lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Free Text Annotation to a PDF Using Python
 Abstract: This example demonstrates how to insert a free text annotation into a PDF document using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, define annotation placement, add custom text, and save the updated document.
 ---

@@ -9,7 +9,7 @@ lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to manipulate annotations in PDF with Python
 Abstract: Annotations in PDF documents enhance user interaction by allowing the addition of various elements such as notes, text highlights, shapes, and file attachments. These features improve the document's viewing experience and interactivity. The Aspose.PDF for Python library categorizes annotations into several groups- Text Annotations, Highlights Annotations, Figures Annotations, Sticky Annotations, and Extra Annotations, each serving different functions to enrich document engagement and usability.
 ---

@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Replace Text Across a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to replace text throughout an entire PDF document using Aspose.PDF for Python via the Facades API. It replaces all occurrences of a specified string with new text.    
+Abstract: This example demonstrates how to replace text throughout an entire PDF document using Aspose.PDF for Python via the Facades API. It replaces all occurrences of a specified string with new text.
 ---
 
 Simple text replacement is useful when updating repeated values in a document. With [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can define a replacement scope and substitute text globally across all pages.

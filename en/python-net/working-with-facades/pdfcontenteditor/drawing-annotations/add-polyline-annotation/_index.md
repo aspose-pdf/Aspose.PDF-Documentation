@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add Polyline Annotation to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a polyline annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define a sequence of vertices, border style, annotation rectangle, text, and save the updated document.    
+Abstract: This example demonstrates how to add a polyline annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define a sequence of vertices, border style, annotation rectangle, text, and save the updated document.
 ---
 
 Polyline annotations allow you to highlight a series of connected line segments in a PDF. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can draw a polyline by specifying vertices coordinates, border style, page number, and annotation bounds. This is useful for visually representing paths, trends, or connections in diagrams and documents.

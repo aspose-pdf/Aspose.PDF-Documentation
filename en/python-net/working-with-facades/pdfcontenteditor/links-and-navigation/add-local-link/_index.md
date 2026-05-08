@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add a Local Link to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a local link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that navigates to another page within the same PDF and save the updated document.     
+Abstract: This example demonstrates how to add a local link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that navigates to another page within the same PDF and save the updated document.
 ---
 
 Local links in PDFs allow quick navigation between pages within the same document. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can define a clickable rectangle that links one page to another, improving document usability and navigation.

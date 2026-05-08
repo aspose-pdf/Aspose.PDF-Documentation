@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add a JavaScript Link to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a JavaScript link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that executes JavaScript code when clicked, and save the updated PDF.     
+Abstract: This example demonstrates how to add a JavaScript link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that executes JavaScript code when clicked, and save the updated PDF.
 ---
 
 JavaScript links in PDFs allow interactive functionality such as displaying alerts, performing calculations, or dynamically modifying document content. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can define a clickable rectangle on a page and associate it with custom JavaScript code.

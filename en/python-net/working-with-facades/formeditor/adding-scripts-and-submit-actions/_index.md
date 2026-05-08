@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add and Manage PDF Form Field Scripts and Submit Actions in Python
-Abstract: Learn how to programmatically add, modify, or remove JavaScript actions for PDF form fields, and configure submit URLs using Aspose.PDF for Python. This guide explains how to attach scripts to fields, update existing scripts, remove field actions, and set URLs for form submission, enabling dynamic and interactive PDF forms.      
+Abstract: Learn how to programmatically add, modify, or remove JavaScript actions for PDF form fields, and configure submit URLs using Aspose.PDF for Python. This guide explains how to attach scripts to fields, update existing scripts, remove field actions, and set URLs for form submission, enabling dynamic and interactive PDF forms.
 ---
 
 - [Add Field Script](/pdf/python-net/add-field-script/)

@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set Text Alignment for PDF Form Fields Using Python
-Abstract: This article explains how to open a PDF document, set the alignment of a specific field using the FormEditor class, and save the updated PDF. The example sets the text alignment of a field named "First Name" to center.         
+Abstract: This article explains how to open a PDF document, set the alignment of a specific field using the FormEditor class, and save the updated PDF. The example sets the text alignment of a field named "First Name" to center.
 ---
 
 PDF form fields often require customized text alignment to maintain a consistent and professional layout. Using Aspose.PDF for Python, developers can programmatically set the alignment of a form field’s text content.

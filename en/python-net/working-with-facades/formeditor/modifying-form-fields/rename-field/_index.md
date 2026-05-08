@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Rename a PDF Form Field Using Python
-Abstract: This example demonstrates how to rename an existing form field in a PDF document using Aspose.PDF for Python. The code opens an input PDF, changes the name of a specified form field using the FormEditor class, and saves the updated document.    
+Abstract: This example demonstrates how to rename an existing form field in a PDF document using Aspose.PDF for Python. The code opens an input PDF, changes the name of a specified form field using the FormEditor class, and saves the updated document.
 ---
 
 PDF forms often rely on field names for scripting, automation, and data processing. Using Aspose.PDF for Python, developers can rename existing fields without recreating them or altering the form layout.

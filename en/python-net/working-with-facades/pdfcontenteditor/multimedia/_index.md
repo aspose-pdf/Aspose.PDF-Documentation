@@ -3,7 +3,7 @@ title: Multimedia
 type: docs
 weight: 80
 url: /python-net/multimedia/
-description: 
+description:
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"

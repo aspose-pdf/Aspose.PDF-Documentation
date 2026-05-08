@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Edit PDF Page Layout in Python - Add Margins, Resize Content, and Insert Page Breaks
-Abstract: Learn how to modify PDF page layouts using Aspose.PDF for Python. This guide explains how to add margins to specific pages, resize page contents, and insert page breaks programmatically. These features allow developers to adjust document formatting, improve readability, and prepare PDFs for printing or structured layouts.   
+Abstract: Learn how to modify PDF page layouts using Aspose.PDF for Python. This guide explains how to add margins to specific pages, resize page contents, and insert page breaks programmatically. These features allow developers to adjust document formatting, improve readability, and prepare PDFs for printing or structured layouts.
 ---
 
 - [Add Margins to PDF Pages](/pdf/python-net/add-margins-to-pdf-pages/)

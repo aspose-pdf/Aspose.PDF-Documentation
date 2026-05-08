@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Custom Margins to Specific PDF Pages in Python
-Abstract: Learn how to add custom margins to selected pages of a PDF using Aspose.PDF for Python. This example demonstrates how to expand page boundaries by specifying top, bottom, left, and right margins for individual pages, making PDFs more printable or visually consistent.   
+Abstract: Learn how to add custom margins to selected pages of a PDF using Aspose.PDF for Python. This example demonstrates how to expand page boundaries by specifying top, bottom, left, and right margins for individual pages, making PDFs more printable or visually consistent.
 ---
 
 Adding margins to PDF pages can enhance readability, prepare documents for printing, or allocate space for annotations. Using Aspose.PDF for Python, developers can programmatically add margins to specific pages of a PDF without modifying the content layout.

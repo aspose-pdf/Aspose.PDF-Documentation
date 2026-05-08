@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set Maximum Character Limit for PDF Form Fields Using Python
-Abstract: This example demonstrates setting the character limit for a field named "Last Name" to 10 characters, ensuring that users cannot enter more than the specified limit.        
+Abstract: This example demonstrates setting the character limit for a field named "Last Name" to 10 characters, ensuring that users cannot enter more than the specified limit.
 ---
 
 Form fields in PDF documents may require input restrictions to maintain proper formatting. Using Aspose.PDF for Python, developers can programmatically set a maximum number of characters for a field.

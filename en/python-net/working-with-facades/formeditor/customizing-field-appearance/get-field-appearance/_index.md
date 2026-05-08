@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Retrieve PDF Form Field Appearance Using Python
-Abstract: This example demonstrates how to retrieve the visual appearance properties of a form field in a PDF document using Aspose.PDF for Python. The code opens an existing PDF, accesses a specific form field, and prints its appearance details, including background color, text color, border color, and alignment.         
+Abstract: This example demonstrates how to retrieve the visual appearance properties of a form field in a PDF document using Aspose.PDF for Python. The code opens an existing PDF, accesses a specific form field, and prints its appearance details, including background color, text color, border color, and alignment.
 ---
 
 Form fields in PDF documents have visual properties such as background color, text color, border color, and alignment. With Aspose.PDF for Python, developers can programmatically inspect these appearance settings using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) class.

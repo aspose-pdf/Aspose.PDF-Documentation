@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Decorate PDF Form Fields with Custom Colors and Alignment Using Python
-Abstract: This article explains how to open a PDF document, configure styling options using the FormFieldFacade class, apply those settings to a form field, and save the updated PDF. The example demonstrates how to decorate a field named "First Name" with custom colors and centered text alignment.         
+Abstract: This article explains how to open a PDF document, configure styling options using the FormFieldFacade class, apply those settings to a form field, and save the updated PDF. The example demonstrates how to decorate a field named "First Name" with custom colors and centered text alignment.
 ---
 
 PDF forms often require visual customization to improve usability and create a consistent design. With Aspose.PDF for Python, developers can programmatically decorate form fields by setting properties such as colors, borders, and text alignment.

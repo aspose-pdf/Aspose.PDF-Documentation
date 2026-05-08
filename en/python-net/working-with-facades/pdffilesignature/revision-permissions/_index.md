@@ -8,7 +8,7 @@ lastmod: "2026-04-02"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Read PDF Signature Revision and Access Permission Data in Python
 Abstract: This article explains how to inspect revision and permission information in signed or certified PDF files with Aspose.PDF for Python via .NET. It shows how to get the revision number of a signature, count total document revisions, and read access permissions from a certified PDF.
 ---

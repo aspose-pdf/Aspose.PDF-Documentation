@@ -9,7 +9,7 @@ lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add backgrounds, watermarks, and Bates numbering artifacts in Python
 Abstract: This article explains how to work with PDF artifacts in Aspose.PDF for Python via .NET. Learn what artifacts are, why they matter for accessibility and document layout, and how to add background images, apply watermarks, add Bates numbering, and inspect artifact types in PDF files with Python.
 ---

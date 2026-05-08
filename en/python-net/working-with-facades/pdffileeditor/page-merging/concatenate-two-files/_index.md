@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Merge Two PDF Files into a Single PDF in Python
-Abstract: Learn how to concatenate two PDF files into a single document using Aspose.PDF for Python. This example demonstrates how to merge two PDFs seamlessly while preserving their original content and formatting.  
+Abstract: Learn how to concatenate two PDF files into a single document using Aspose.PDF for Python. This example demonstrates how to merge two PDFs seamlessly while preserving their original content and formatting.
 ---
 
 Combining two PDF files is a common task when consolidating reports, contracts, or forms. Using Aspose.PDF for Python, you can programmatically merge two PDFs into a single document using the concatenate method of the [PdfFileEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffileeditor/) class. This ensures that all pages from both files are included in the output PDF while maintaining the original layout, content, and structure.
