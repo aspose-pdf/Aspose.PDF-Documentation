@@ -141,4 +141,3 @@ def expanded_bookmarks(input_pdf, output_pdf):
 - [Trabajar con marcadores PDF en Python](/pdf/es/python-net/bookmarks/)
 - [Agregar y eliminar marcadores PDF en Python](/pdf/es/python-net/add-and-delete-bookmark/)
 - [Navegación e interacción en PDF usando Python](/pdf/es/python-net/navigation-and-interaction/)
-
