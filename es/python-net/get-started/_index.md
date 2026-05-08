@@ -6,9 +6,9 @@ weight: 30
 url: /es/python-net/get-started/
 description: Esta sección describe los principios básicos del trabajo de Aspose.PDF for Python via .NET. La biblioteca de Python admite una amplia variedad de funciones.
 is_node: true
-lastmod: "2022-12-20"
+lastmod: "2026-05-08"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -29,12 +29,12 @@ Usar Aspose.PDF for Python via .NET en tu proyecto te ofrece los siguientes bene
 ## Amplia variedad de funciones
 
 - Soporta la mayoría de los estándares PDF establecidos y especificaciones PDF.
-- [Agregar, buscar, extraer y reemplazar texto en archivos PDF]().
-- [Agregar/eliminar, extraer y reemplazar imágenes]().
-- [Insertar, eliminar, dividir páginas PDF]().
-- [Establecer y obtener metadatos XMP]().
-- [Validar (PDF/A-1a, PDF/A-1b)]().
-- Trabajar con [marcadores](), [anotaciones](), [formularios PDF](), [sellos](), [marcas de agua]() y más.
+- [Agregar, buscar, extraer y reemplazar texto en archivos PDF](/pdf/es/python-net/working-with-text/).
+- [Agregar/eliminar, extraer y reemplazar imágenes](/pdf/es/python-net/working-with-images/).
+- [Insertar, eliminar, dividir páginas PDF](/pdf/es/python-net/working-with-pages/).
+- [Establecer y obtener metadatos XMP](/pdf/es/python-net/save-metadata-with-xmp/).
+- [Validar (PDF/A-1a, PDF/A-1b)](/pdf/es/python-net/manipulate-pdf-document/).
+- Trabajar con [marcadores](/pdf/es/python-net/bookmarks/), [anotaciones](/pdf/es/python-net/annotations/), [formularios PDF](/pdf/es/python-net/working-with-forms/), [sellos](/pdf/es/python-net/stamping/), [marcas de agua](/pdf/es/python-net/add-watermarks/) y más.
 
 ## Funciones de Conversión
 
@@ -43,7 +43,6 @@ Usar Aspose.PDF for Python via .NET en tu proyecto te ofrece los siguientes bene
 - [Convertir archivo PDF a formato HTML y viceversa](/pdf/es//python-net/convert-pdf-to-html/).
 - [Convertir PDF a EPUB, Texto, XPS, etc.](/pdf/es/python-net/convert-pdf-to-other-files/).
 - Convertir EPUB, Markdown, Texto, XPS, PostScript, XML, LaTex a PDF
-
 
 ### Aprende más sobre:
 

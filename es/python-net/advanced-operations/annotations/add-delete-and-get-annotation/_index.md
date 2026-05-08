@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Cómo manipular anotaciones en PDF con Python
-Abstract: Las anotaciones en documentos PDF mejoran la interacción del usuario al permitir la incorporación de varios elementos como notas, resaltados de texto, formas y archivos adjuntos. Estas funciones mejoran la experiencia de visualización del documento y su interactividad. La biblioteca Aspose.PDF for Python clasifica las anotaciones en varios grupos: Anotaciones de texto, Anotaciones de resaltado, Anotaciones de figuras, Anotaciones adhesivas y Anotaciones extra, cada una con distintas funciones para enriquecer la participación y la usabilidad del documento.
+Abstract: 'Las anotaciones en documentos PDF mejoran la interacción del usuario al permitir la incorporación de varios elementos como notas, resaltados de texto, formas y archivos adjuntos. Estas funciones mejoran la experiencia de visualización del documento y su interactividad. La biblioteca Aspose.PDF for Python clasifica las anotaciones en varios grupos: Anotaciones de texto, Anotaciones de resaltado, Anotaciones de figuras, Anotaciones adhesivas y Anotaciones extra, cada una con distintas funciones para enriquecer la participación y la usabilidad del documento.'
 ---
 
 Las anotaciones en documentos PDF son elementos que permiten a los usuarios asignar contenido de cierta manera en el documento. Las anotaciones pueden usarse para añadir diferentes tipos de notas, resaltar texto, dibujar formas, adjuntar archivos y realizar otras acciones que mejoran la visualización, la interactividad y la interacción dentro de un documento.

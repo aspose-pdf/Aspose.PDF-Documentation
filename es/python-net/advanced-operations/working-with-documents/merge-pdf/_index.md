@@ -5,13 +5,13 @@ type: docs
 weight: 50
 url: /es/python-net/merge-pdf-documents/
 description: Aprende cómo combinar varios archivos PDF en un solo documento en Python.
-lastmod: "2026-04-15"
+lastmod: "2026-05-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Combina páginas PDF usando Python
-Abstract: Este artículo aborda la necesidad común de combinar varios archivos PDF en un solo documento, un proceso valioso para organizar y optimizar el almacenamiento y la compartición del contenido PDF. Explora el uso de Aspose.PDF for Python via .NET para combinar eficientemente archivos PDF, reconociendo que la fusión de PDFs en Python puede ser un desafío sin bibliotecas de terceros. El artículo proporciona una guía paso a paso para concatenar archivos PDF: crear un nuevo documento, combinar los archivos y guardar el documento combinado. Un fragmento de código demuestra la implementación usando Aspose.PDF, destacando la capacidad de la biblioteca para simplificar el proceso de fusión. Además, presenta Aspose.PDF Merger, una herramienta en línea para combinar PDFs, que permite a los usuarios explorar la funcionalidad en un entorno web.
+Abstract: 'Este artículo aborda la necesidad común de combinar varios archivos PDF en un solo documento, un proceso valioso para organizar y optimizar el almacenamiento y la compartición del contenido PDF. Explora el uso de Aspose.PDF for Python via .NET para combinar eficientemente archivos PDF, reconociendo que la fusión de PDFs en Python puede ser un desafío sin bibliotecas de terceros. El artículo proporciona una guía paso a paso para concatenar archivos PDF: crear un nuevo documento, combinar los archivos y guardar el documento combinado. Un fragmento de código demuestra la implementación usando Aspose.PDF, destacando la capacidad de la biblioteca para simplificar el proceso de fusión. Además, presenta Aspose.PDF Merger, una herramienta en línea para combinar PDFs, que permite a los usuarios explorar la funcionalidad en un entorno web.'
 ---
 
 ## Combinar o fusionar varios PDF en un único PDF en Python

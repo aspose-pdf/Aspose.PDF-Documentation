@@ -1,10 +1,11 @@
 ---
 title: Trabajando con Encabezados en PDF
+linktitle: Trabajando con Encabezados en PDF
 type: docs
 weight: 40
 url: /es/python-net/working-with-headings/
 description: Crear numeración en el encabezado de su documento PDF con Python. Aspose.PDF for Python via .NET ofrece diferentes tipos de estilos de numeración.
-lastmod: "2023-04-17"
+lastmod: "2026-05-08"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

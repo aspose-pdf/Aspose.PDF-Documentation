@@ -4,14 +4,14 @@ linktitle: Operaciones básicas
 type: docs
 weight: 60
 url: /es/python-net/basic-operations/
-lastmod: "2025-02-27"
+lastmod: "2026-05-08"
 description: La sección de operaciones básicas describe las posibilidades de abrir y guardar documentos PDF utilizando Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
 AlternativeHeadline: Resumen de operaciones básicas con PDF usando Python
-Abstract: El artículo proporciona una visión general de las operaciones básicas para manejar documentos PDF usando Aspose.PDF for Python via .NET. Cubre tres tareas fundamentales: crear, abrir y guardar archivos PDF dentro de un entorno Python. La sección "Crear documento PDF" detalla el proceso de generar un archivo PDF usando Python. La sección "Abrir documento PDF" explora varios métodos para acceder a documentos PDF en una aplicación Python. Finalmente, la sección "Guardar documento PDF" explica diversas técnicas para guardar un documento PDF. Cada sección enlaza a artículos más detallados que guían a los usuarios a través de estas operaciones esenciales de PDF.
+Abstract: 'El artículo proporciona una visión general de las operaciones básicas para manejar documentos PDF usando Aspose.PDF for Python via .NET. Cubre tres tareas fundamentales: crear, abrir y guardar archivos PDF dentro de un entorno Python. La sección "Crear documento PDF" detalla el proceso de generar un archivo PDF usando Python. La sección "Abrir documento PDF" explora varios métodos para acceder a documentos PDF en una aplicación Python. Finalmente, la sección "Guardar documento PDF" explica diversas técnicas para guardar un documento PDF. Cada sección enlaza a artículos más detallados que guían a los usuarios a través de estas operaciones esenciales de PDF.'
 ---
 
 La sección de **Operaciones básicas** describe las operaciones iniciales y más sencillas con documentos PDF en Aspose.PDF for Python via .NET:
