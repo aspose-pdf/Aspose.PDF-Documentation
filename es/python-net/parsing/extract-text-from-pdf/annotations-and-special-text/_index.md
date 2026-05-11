@@ -1,24 +1,24 @@
 ---
-title: Anotaciones y texto especial usando Python
-linktitle: Anotaciones y texto especial
+title: Anotaciones y Texto Especial usando Python
+linktitle: Anotaciones y Texto Especial
 type: docs
 weight: 40
 url: /es/python-net/annotation-and-special-text/
-description: Aprenda a extraer texto de anotaciones de sello, texto resaltado y contenido en superíndice o subíndice de documentos PDF con Aspose.PDF for Python via .NET.
+description: Aprenda cómo extraer texto de anotaciones de sello, texto resaltado y contenido de superíndice/subíndice en documentos PDF usando Aspose.PDF for Python.
 lastmod: "2025-11-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-## Extraer texto de anotaciones de sello
+## Extraer Texto de Anotaciones de Sello
 
-Utilice [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber) para extraer el texto incrustado en el flujo de apariencia de una [StampAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/stampannotation). Esto resulta útil cuando el contenido del sello se representa como un XObject de formulario en lugar de almacenarse como texto plano.
+Usar [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber) para extraer texto incrustado en un [StampAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/stampannotation) flujo de apariencia. Esto es útil cuando el contenido del sello se renderiza como un XObject de formulario en lugar de almacenarse como texto plano.
 
-1. Abra el [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
-1. Acceda a la anotación de destino desde `page.annotations`.
-1. Compruebe que se trata de un `StampAnnotation` y recupere su XForm de apariencia normal.
-1. Pase el XForm a `TextAbsorber.visit()` para extraer el texto incrustado.
+1. Abrir el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
+1. Acceder a la anotación de destino desde `page.annotations`.
+1. Verifique que es un `StampAnnotation`, luego recupere su apariencia normal XForm.
+1. Pasar el XForm a `TextAbsorber.visit()` para extraer el texto incrustado.
 
 ```python
 import os
@@ -53,12 +53,12 @@ def extract_text_from_stamp(infile, page_number, annotation_index, outfile):
 
 ## Extraer texto resaltado
 
-Recorra las anotaciones de una página y use [HighlightAnnotation.get_marked_text()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation) para leer los fragmentos de texto cubiertos por cada resaltado. La colección de anotaciones de la página usa índices basados en 1.
+Iterar sobre las anotaciones de una página y usar [HighlightAnnotation.get_marked_text()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation) para leer los fragmentos de texto cubiertos por cada resaltado. La colección de anotaciones de la página está basada en 1.
 
-1. Abra el [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) y seleccione la página de destino.
-1. Recorra `page.annotations`.
-1. Utilice `is_assignable` para filtrar instancias de [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation).
-1. Convierta la anotación y llame a `get_marked_text()` para recuperar el contenido resaltado.
+1. Abrir el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) y seleccione la página de destino.
+1. Recorrer `page.annotations`.
+1. Usar `is_assignable` para filtrar [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation) instancias.
+1. Convierta la anotación y llame `get_marked_text()` para recuperar el contenido resaltado.
 
 ```python
 def extract_highlight_text(infile):
@@ -88,12 +88,12 @@ def extract_highlight_text(infile):
 
 ## Extraer texto en superíndice y subíndice
 
-Los superíndices y subíndices aparecen con frecuencia en fórmulas, expresiones matemáticas y nombres de compuestos químicos. Aspose.PDF for Python via .NET permite extraer este contenido mediante [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber), que detecta metadatos de posicionamiento a nivel de carácter.
+Los superíndices y subíndices aparecen con frecuencia en fórmulas, expresiones matemáticas y nombres de compuestos químicos. Aspose.PDF for Python via .NET admite extraer este contenido a través [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber), que detecta metadatos de posicionamiento a nivel de carácter.
 
-1. Abra el [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
-1. Cree una instancia de `TextFragmentAbsorber`.
-1. Llame a `document.pages[page_number].accept(absorber)` para analizar la página de destino.
-1. Recupere el texto completo extraído desde `absorber.text`.
+1. Abrir el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
+1. Crear un `TextFragmentAbsorber` instancia.
+1. Llamar `document.pages[page_number].accept(absorber)` para escanear la página objetivo.
+1. Recuperar el texto extraído completo de `absorber.text`.
 1. Escriba el resultado en un archivo y cierre el documento.
 
 ```python
@@ -121,13 +121,13 @@ def extract_super_sub_text(infile, outfile, page_number=1):
         document.close()
 ```
 
-## Iterar a través de Fragmentos de Texto para Detectar Superíndice/Subíndice
+## Iterar a través de fragmentos de texto para detectar superíndice/subíndice
 
-Para inspeccionar cada fragmento, recorra `absorber.text_fragments` y lea las banderas booleanas `text_state.superscript` y `text_state.subscript` de cada [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment).
+Para la inspección por fragmento, iterar sobre `absorber.text_fragments` y leer el `text_state.superscript` y `text_state.subscript` banderas booleanas en cada [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment).
 
-1. Abra el [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) y cree un [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber).
-1. Aplique el absorbedor a la página de destino para rellenar `absorber.text_fragments`.
-1. Para cada fragmento, lea `fragment.text`, `fragment.text_state.superscript` y `fragment.text_state.subscript`.
+1. Abrir el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) y crear un [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber).
+1. Aceptar el absorber en la página de destino para poblar `absorber.text_fragments`.
+1. Para cada fragmento, lea `fragment.text`, `fragment.text_state.superscript`, y `fragment.text_state.subscript`.
 1. Escriba los resultados en el archivo de salida y cierre el documento.
 
 ```python

@@ -4,21 +4,21 @@ linktitle: Extraer imágenes de PDF
 type: docs
 weight: 20
 url: /es/python-net/extract-images-from-the-pdf-file/
-description: Aprenda a extraer imágenes incrustadas de archivos PDF con Aspose.PDF for Python via .NET.
+description: Aprenda cómo extraer imágenes incrustadas de archivos PDF con Aspose.PDF for Python.
 lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Cómo extraer imágenes de PDF mediante Python
-Abstract: Este artículo explica cómo extraer imágenes incrustadas de un documento PDF con Aspose.PDF for Python via .NET. Describe cómo abrir el PDF de origen con la clase Document, acceder a una imagen desde la colección de recursos de la página y guardar la XImage extraída en un archivo externo para reutilizarla, inspeccionarla o procesarla posteriormente.
+AlternativeHeadline: Cómo extraer imágenes de PDF vía Python
+Abstract: Este artículo explica cómo extraer imágenes incrustadas de un documento PDF con Aspose.PDF for Python. Cubre la apertura del PDF de origen con la clase Document, el acceso a una imagen de la colección de recursos de la página y la guardación de la XImage extraída en un archivo externo para reutilizarla, inspeccionarla o procesarla posteriormente.
 ---
 
-Utilice [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) para abrir el PDF y acceder a los recursos de la página para recuperar un objeto [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/) y guardarlo como un archivo independiente. Este enfoque es útil cuando necesita reutilizar imágenes, inspeccionar los recursos extraídos o crear flujos de trabajo de procesamiento de imágenes a partir del contenido PDF.
+Usar [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) para abrir el PDF, luego acceder a los recursos de la página para recuperar una [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/) objeto y guárdelo como un archivo separado. Este enfoque es útil cuando necesita reutilizar imágenes, inspeccionar los recursos extraídos o crear flujos de trabajo de procesamiento de imágenes a partir del contenido PDF.
 
 1. Abra el PDF como un `Document`.
-1. Acceda al recurso de imagen desde la página de destino.
-1. Recupere el `XImage` necesario desde la colección de imágenes de la página.
+1. Acceda al recurso de imagen de la página objetivo.
+1. Recuperar lo requerido `XImage` de la colección de imágenes de la página.
 1. Guarde la imagen extraída en un archivo de salida.
 
 ```python

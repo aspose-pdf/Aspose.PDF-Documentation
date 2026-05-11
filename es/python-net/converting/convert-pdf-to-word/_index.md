@@ -4,7 +4,7 @@ linktitle: Convertir PDF a Word
 type: docs
 weight: 10
 url: /es/python-net/convert-pdf-to-word/
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 description: Aprenda cómo convertir archivos PDF a DOC y DOCX en Python con Aspose.PDF for Python via .NET para facilitar la edición y reutilización de documentos.
 sitemap:
     changefreq: "monthly"

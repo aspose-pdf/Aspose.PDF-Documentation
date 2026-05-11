@@ -7,19 +7,19 @@ url: /es/python-net/extract-vector-data-from-pdf/
 description: Aspose.PDF facilita la extracción de datos vectoriales de un archivo PDF. Puedes obtener los datos vectoriales (ruta, polígono, polilínea), como posición, color, ancho de línea, etc.
 lastmod: "2026-04-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
 ## Acceder a datos vectoriales de un documento PDF
 
-Utilice [GraphicsAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/graphicsabsorber/) para inspeccionar elementos gráficos vectoriales en una página de un [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Después de procesar la página de destino, recorra los elementos extraídos para examinar propiedades como sus límites rectangulares, posiciones y operadores de dibujo.
+Usar [GraphicsAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/graphicsabsorber/) para inspeccionar elementos gráficos vectoriales en una página de un [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Después de visitar la página objetivo, itere a través de los elementos extraídos para examinar propiedades como los límites rectangulares, posiciones y operadores de dibujo.
 
 1. Abra el PDF de origen como un `Document`.
-1. Cree una instancia de `GraphicsAbsorber`.
-1. Llame a `gr_absorber.visit(page)` en la página de destino.
-1. Lea los elementos extraídos desde `gr_absorber.elements`.
-1. Recorra los elementos y escriba sus propiedades en un archivo de salida.
+1. Crear un `GraphicsAbsorber` instancia.
+1. Llamar `gr_absorber.visit(page)` en la página de destino.
+1. Leer los elementos extraídos de `gr_absorber.elements`.
+1. Itere a través de los elementos y escriba sus propiedades en un archivo de salida.
 
 ```python
 import aspose.pdf as ap
@@ -54,11 +54,11 @@ def extract_graphics_elements(infile, outfile):
 
 ## Guardar gráficos vectoriales de una página en un archivo SVG
 
-Exportar gráficos vectoriales de una página PDF a SVG para conservar rutas y formas escalables fuera del PDF original. Este método es útil para reutilizar arte vectorial en flujos de trabajo web, de diseño o de publicación.
+Exportar gráficos vectoriales de una página PDF a SVG para preservar rutas y formas escalables fuera del PDF original. Este método es útil para reutilizar arte vectorial en flujos de trabajo web, de diseño o de publicación.
 
-1. Cargue el documento PDF.
+1. Cargar el documento PDF.
 1. Acceda a la página objetivo.
-1. Llame a `page.try_save_vector_graphics()` para exportar las rutas vectoriales de la página a SVG.
+1. Llamar `page.try_save_vector_graphics()` para exportar las rutas vectoriales de la página a SVG.
 1. Cierre el documento.
 
 ```python
@@ -83,13 +83,13 @@ def save_vector_graphics_to_svg(infile, svg_outfile):
 
 ### Extraer cada subruta a un SVG separado
 
-Cuando una página contiene varias rutas vectoriales independientes, use [SvgExtractionOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/svgextractionoptions/) con [SvgExtractor](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/svgextractor/) para escribir cada subruta en un archivo SVG independiente.
+Cuando una página contiene múltiples rutas vectoriales independientes, use [SvgExtractionOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/svgextractionoptions/) con [SvgExtractor](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/svgextractor/) para escribir cada subruta en un archivo SVG separado.
 
 1. Cargue el PDF.
-1. Cree `SvgExtractionOptions` y establezca `extract_every_subpath_to_svg`.
-1. Acceda a la primera página del documento.
-1. Cree una instancia de `SvgExtractor` con las opciones.
-1. Llame a `extractor.extract()` para escribir un archivo SVG por cada subtrazado vectorial.
+1. Crear `SvgExtractionOptions` y establecer `extract_every_subpath_to_svg`.
+1. Accede a la primera página del documento.
+1. Instanciar `SvgExtractor` con las opciones.
+1. Llamar `extractor.extract()` escribir archivos SVG separados para cada subruta vectorial.
 1. Cierre el documento.
 
 ```python
@@ -117,11 +117,11 @@ def extract_subpaths_to_svgs(infile, output_dir):
 
 ### Extraer una lista de elementos a una sola imagen
 
-Extraiga varios elementos vectoriales de una página PDF y guárdelos como una sola imagen SVG combinada. Esto es útil cuando desea preservar la relación visual entre formas agrupadas, diagramas o fragmentos de dibujo.
+Extraer varios elementos vectoriales de una página PDF y guardarlos como una única imagen SVG combinada. Esto es útil cuando deseas preservar la relación visual entre formas agrupadas, diagramas o fragmentos de dibujo.
 
-1. Abra el PDF usando [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Abra el PDF usando [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Seleccione una página y prepare una lista de elementos vectoriales.
-1. Utilice [SvgExtractor](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/svgextractor/) para combinar esos elementos en un solo SVG.
+1. Usar [SvgExtractor](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/svgextractor/) para combinar esos elementos en un solo SVG.
 1. Guarde el archivo de salida.
 
 ```python
@@ -145,14 +145,14 @@ def extract_list_of_elements_to_single_image(infile, outfile):
         document.close()
 ```
 
-### Extraer elemento único
+### Extraer un solo elemento
 
-Extraiga un elemento vectorial específico de un PDF y guárdelo como un archivo SVG individual. Esto resulta útil para aislar logotipos, iconos o formas independientes dentro de páginas vectoriales más complejas.
+Extrae un elemento vectorial específico de un PDF y guárdalo como un archivo SVG individual. Esto es útil para aislar logotipos, íconos o formas independientes de páginas vectoriales más complejas.
 
-1. Cree un [GraphicsAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/graphicsabsorber/) para capturar datos vectoriales.
+1. Crear un [GraphicsAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/graphicsabsorber/) para capturar datos vectoriales.
 1. Visite una página específica para recopilar sus elementos vectoriales.
 1. Seleccione un elemento objetivo, como un [XFormPlacement](https://reference.aspose.com/pdf/python-net/aspose.pdf.vector/xformplacement/).
-1. Guarde ese elemento en un archivo SVG.
+1. Guarda ese único elemento en un archivo SVG.
 
 ```python
 import aspose.pdf as ap

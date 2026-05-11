@@ -7,7 +7,7 @@ url: /es/python-net/add-backgrounds/
 description: Añadir imagen de fondo a su archivo PDF con Python. Use la clase BackgroundArtifact.
 lastmod: "2023-04-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 <script type="application/ld+json">

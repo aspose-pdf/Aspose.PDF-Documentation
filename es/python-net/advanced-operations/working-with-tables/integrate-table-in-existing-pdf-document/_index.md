@@ -7,7 +7,7 @@ url: /es/python-net/integrate-table/
 description: Aprenda cómo integrar tablas PDF con fuentes de datos como bases de datos y DataFrames de pandas en Python.
 lastmod: "2026-05-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Integrar tablas PDF con bases de datos y DataFrames usando Python

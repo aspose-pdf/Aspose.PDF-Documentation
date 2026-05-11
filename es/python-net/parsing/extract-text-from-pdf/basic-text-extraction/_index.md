@@ -4,7 +4,7 @@ linktitle: Extracción básica de texto
 type: docs
 weight: 10
 url: /es/python-net/basic-text-extraction/
-description: Aprenda a extraer texto de documentos PDF con Aspose.PDF for Python via .NET, ya sea de todas las páginas a la vez o de una página específica.
+description: Aprende cómo extraer texto de documentos PDF usando Aspose.PDF for Python — de todas las páginas a la vez o de una página específica.
 lastmod: "2025-11-05"
 sitemap:
     changefreq: "monthly"
@@ -13,13 +13,13 @@ sitemap:
 
 ## Extraer texto de todas las páginas de un documento PDF
 
-Utilice [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber) para capturar todo el texto de cada página de un documento PDF y escribirlo en un archivo de texto. Este enfoque es ideal para convertir PDF en texto con capacidad de búsqueda, realizar análisis de contenido o preparar el texto para su indexación y procesamiento posterior.
+Usar [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber) para capturar todo el texto de cada página de un documento PDF y escribirlo en un archivo de texto. Este enfoque es adecuado para convertir PDFs a texto indexable, ejecutar análisis de contenido o preparar texto para la indexación y el procesamiento posterior.
 
-1. Abra el documento PDF usando [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
-1. Cree una instancia de `TextAbsorber`.
-1. Llame a `document.pages.accept(text_absorber)` para analizar todas las páginas.
-1. Recupere el texto extraído desde `text_absorber.text`.
-1. Escriba el resultado en un archivo de texto de salida.
+1. Abrir el documento PDF usando [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
+1. Crear un `TextAbsorber` instancia.
+1. Llamar `document.pages.accept(text_absorber)` para escanear todas las páginas.
+1. Recuperar el texto extraído de `text_absorber.text`.
+1. Escribe el resultado en un archivo de texto de salida.
 
 ```python
 import os
@@ -48,12 +48,12 @@ def extract_text_from_all_pages(infile, outfile):
 
 ## Extraer texto de una página particular
 
-Aplicar [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber) a una sola página permite aislar y guardar el texto de esa sección dentro de un documento de varias páginas. Esto es útil cuando necesita contenido de una sola página, por ejemplo, una factura, una sección de un informe o un resumen de formulario.
+Aplicar [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber) a una sola página para aislar y guardar el texto de esa sección de un documento de varias páginas. Esto es útil cuando solo necesitas contenido de una página — por ejemplo, una factura, una sección de informe o un resumen de formulario.
 
-1. Abra el documento PDF usando [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
-1. Cree una instancia de `TextAbsorber`.
-1. Llame a `accept` en la página de destino: `document.pages[page_number].accept(text_absorber)`.
-1. Recupere el texto extraído y escríbalo en un archivo.
+1. Abrir el documento PDF usando [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
+1. Crear un `TextAbsorber` instancia.
+1. Llamar `accept` en la página de destino: `document.pages[page_number].accept(text_absorber)`.
+1. Recupera el texto extraído y escríbelo en un archivo.
 
 ```python
 import os

@@ -4,7 +4,7 @@ linktitle: Convertir documento PDF
 type: docs
 weight: 70
 url: /es/python-net/converting/
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 description: Aprenda cómo convertir documentos PDF a Word, Excel, PowerPoint, HTML, imágenes, PDF/A y otros formatos en Python con Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"

@@ -11,16 +11,16 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Cómo extraer datos de AcroForm mediante Python
-Abstract: Este artículo ofrece una guía completa sobre el uso de Aspose.PDF for Python via .NET para gestionar campos de formulario en documentos PDF. Describe varios métodos para extraer, manipular y exportar datos de formulario. Comienza mostrando cómo extraer los valores de los campos y almacenarlos en un diccionario para generar salida JSON. También explica cómo exportar datos de formulario a XML, FDF y XFDF, formatos útiles para el intercambio de datos y el almacenamiento estructurado. Cada sección incluye fragmentos de código Python para facilitar la comprensión y la implementación.
+Abstract: El artículo proporciona una guía completa sobre el uso de Aspose.PDF for Python para gestionar campos de formulario dentro de documentos PDF. Detalla varios métodos para extraer, manipular y exportar datos de formularios desde PDFs. El artículo comienza demostrando cómo extraer los valores de los campos de formulario y almacenarlos en un diccionario, para luego generar los datos en formato JSON. Además, ilustra la exportación de datos de formulario directamente a archivos JSON, mejorando las capacidades de serialización de datos. Asimismo, el artículo cubre la exportación de datos de formulario a otros formatos como XML, FDF (Forms Data Format) y XFDF, que son útiles para el intercambio de datos y el almacenamiento estructurado de información. Cada sección incluye fragmentos de código Python para ayudar en la comprensión e implementación. En conjunto, el artículo sirve como un recurso práctico para desarrolladores que desean integrar la manipulación de formularios PDF en sus aplicaciones Python.
 ---
 
 ## Extraer campos de formulario del documento PDF
 
-[Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) del espacio de nombres `aspose.pdf.facades` proporciona una forma directa de leer los datos de los campos AcroForm sin abrir el modelo completo del documento. Recorra `form.field_names` para obtener cada nombre de campo presente en el formulario y luego llame a `form.get_field(name)` para recuperar su valor actual.
+[Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) del `aspose.pdf.facades` namespace proporciona una forma sencilla de leer los datos de los campos AcroForm sin abrir el modelo de objeto del documento completo. Iterar sobre `form.field_names` para obtener el nombre de cada campo presente en el formulario, luego llame `form.get_field(name)` para recuperar su valor actual.
 
-1. Construya un objeto `Form` pasando la ruta del archivo de entrada.
-1. Recorra `form.field_names` para enumerar todos los nombres de campo.
-1. Llame a `form.get_field(name)` para cada nombre y almacene el resultado en un diccionario.
+1. Construir un `Form` objeto pasando la ruta del archivo de entrada.
+1. Iterar sobre `form.field_names` enumerar todos los nombres de campo.
+1. Llamar `form.get_field(name)` para cada nombre y almacena el resultado en un diccionario.
 
 ```python
 
@@ -42,12 +42,12 @@ Abstract: Este artículo ofrece una guía completa sobre el uso de Aspose.PDF fo
     print(form_values)
 ```
 
-## Obtener el valor del campo de formulario por título
+## Recuperar valor del campo de formulario por título
 
-Cuando conoce el nombre exacto del campo definido en el formulario PDF, puede obtener su valor directamente con `form.get_field(name)` sin recorrer toda la colección de campos. Este es el enfoque más rápido cuando solo necesita campos específicos.
+Cuando sabes el nombre exacto del campo (title) definido en el formulario PDF, puedes obtener su valor directamente con `form.get_field(name)` sin iterar sobre toda la colección de campos. Este es el enfoque más rápido cuando solo se necesitan campos específicos.
 
-1. Construya un objeto [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) con la ruta del archivo de entrada.
-1. Llame a `form.get_field("FieldName")` usando el nombre exacto del campo tal como aparece en el PDF.
+1. Construir un [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) objeto con la ruta del archivo de entrada.
+1. Llamar `form.get_field("FieldName")` usando el título exacto del campo tal como aparece en el PDF.
 1. Utilice el valor de cadena devuelto según sea necesario en su aplicación.
 
 ```python
@@ -61,13 +61,13 @@ Cuando conoce el nombre exacto del campo definido en el formulario PDF, puede ob
     print(value)
 ```
 
-## Extraer campos de formulario de un documento PDF a JSON
+## Extraer campos de formulario del documento PDF a JSON
 
-Hay dos formas de exportar datos de AcroForm a JSON. La primera usa el método incorporado `export_json` de [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form), que serializa todos los datos de los campos directamente en un flujo de archivo con una sola llamada.
+Hay dos maneras de exportar datos de AcroForm a JSON. La primera utiliza la funcionalidad incorporada `export_json` método en [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form), que serializa todos los datos de campo directamente a un flujo de archivo en una sola llamada.
 
-1. Construya un objeto `Form` con la ruta del archivo de entrada.
+1. Construir un `Form` objeto con la ruta del archivo de entrada.
 1. Abra el archivo de salida como un flujo binario usando `FileIO`.
-1. Llame a `form.export_json(stream, True)` para escribir la salida JSON.
+1. Llamar `form.export_json(stream, True)` para escribir la salida JSON.
 
 ```python
 
@@ -83,11 +83,11 @@ Hay dos formas de exportar datos de AcroForm a JSON. La primera usa el método i
         form.export_json(json_file, True)
 ```
 
-El segundo enfoque construye un diccionario de Python a partir de `field_names` y `get_field`, y luego lo serializa con `json.dumps`. Use este método cuando necesite transformar o filtrar los datos antes de escribirlos.
+El segundo enfoque crea un diccionario de Python a partir de `field_names` y `get_field`, luego lo serializa con `json.dumps`. Utilice esto cuando necesite transformar o filtrar los datos antes de escribirlos.
 
-1. Recorra `form.field_names` y rellene un diccionario con los valores de los campos.
-1. Serialice el diccionario con `json.dumps(form_data, indent=4)`.
-1. Escriba la cadena JSON resultante en el archivo de salida.
+1. Iterar sobre `form.field_names` y rellenar un diccionario con los valores de los campos.
+1. Serializa el diccionario con `json.dumps(form_data, indent=4)`.
+1. Escribe la cadena JSON resultante en el archivo de salida.
 
 ```python
 
@@ -114,11 +114,11 @@ El segundo enfoque construye un diccionario de Python a partir de `field_names` 
 
 ## Extraer datos a XML desde un archivo PDF
 
-La exportación a XML es útil para integrar datos de formularios PDF con sistemas que consumen fuentes o esquemas XML estructurados. La clase [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) proporciona `export_xml` para realizar la conversión en un solo paso.
+La exportación de XML es útil para integrar los datos de formularios PDF con sistemas que consumen feeds XML estructurados o esquemas. El [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) la clase proporciona `export_xml` para manejar la conversión en un solo paso.
 
-1. Cree una instancia de `Form` y vincule el PDF con `form.bind_pdf(path)`.
+1. Crear un `Form` instancia y enlaza el PDF con `form.bind_pdf(path)`.
 1. Abra el archivo de salida como un flujo binario.
-1. Llame a `form.export_xml(stream)` para escribir todos los datos de los campos como XML.
+1. Llamar `form.export_xml(stream)` para escribir todos los datos de los campos como XML.
 
 ```python
 
@@ -142,11 +142,11 @@ La exportación a XML es útil para integrar datos de formularios PDF con sistem
 
 ## Exportar datos a FDF desde un archivo PDF
 
-FDF (Forms Data Format) es el formato de intercambio estándar para los datos de AcroForm y es ampliamente compatible con visores de PDF y herramientas de procesamiento. Use `export_fdf` en la clase [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) para generar un archivo FDF independiente que pueda importarse de nuevo en el PDF original o en otro formulario compatible.
+FDF (Forms Data Format) es el formato de intercambio estándar para los datos de AcroForm y es ampliamente compatible con los visualizadores de PDF y las herramientas de procesamiento. Usar `export_fdf` en el [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) clase para producir un archivo FDF independiente que pueda importarse de nuevo al PDF original o a otro formulario compatible.
 
-1. Cree una instancia de `Form` y vincule el PDF de origen con `form.bind_pdf(path)`.
+1. Crear un `Form` instancia y vincula el PDF de origen con `form.bind_pdf(path)`.
 1. Abra el archivo de salida como un flujo binario.
-1. Llame a `form.export_fdf(stream)` para escribir los datos FDF.
+1. Llamar `form.export_fdf(stream)` para escribir los datos FDF.
 
 ```python
 
@@ -170,11 +170,11 @@ FDF (Forms Data Format) es el formato de intercambio estándar para los datos de
 
 ## Exportar datos a XFDF desde un archivo PDF
 
-XFDF (XML Forms Data Format) es el sucesor basado en XML de FDF y está mejor adaptado a servicios web y canalizaciones de datos modernas. Al igual que FDF, un archivo XFDF puede importarse de nuevo en un formulario PDF compatible. Use `export_xfdf` en la clase [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) para generar la salida.
+XFDF (Formato de Datos de Formularios XML) es el sucesor basado en XML de FDF y está mejor adaptado para su uso en servicios web y canalizaciones de datos modernas. Al igual que FDF, un archivo XFDF puede importarse de nuevo en un formulario PDF compatible. Usar `export_xfdf` en el [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) clase para generar la salida.
 
-1. Cree una instancia de `Form` y vincule el PDF de origen con `form.bind_pdf(path)`.
+1. Crear un `Form` instancia y vincula el PDF de origen con `form.bind_pdf(path)`.
 1. Abra el archivo de salida como un flujo binario.
-1. Llame a `form.export_xfdf(stream)` para escribir los datos XFDF.
+1. Llamar `form.export_xfdf(stream)` para escribir los datos XFDF.
 
 ```python
 

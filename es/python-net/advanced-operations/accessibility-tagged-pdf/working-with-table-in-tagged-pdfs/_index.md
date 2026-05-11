@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /es/python-net/working-with-table-in-tagged-pdfs/
 description: Aprenda cómo trabajar con tablas accesibles en PDFs etiquetados en Python con Aspose.PDF for Python via .NET, incluyendo estructura, intervalos, alineación y marcado de tabla compatible con PDF/UA.
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

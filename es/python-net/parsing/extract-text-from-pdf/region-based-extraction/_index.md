@@ -4,7 +4,7 @@ linktitle: Extracción basada en regiones
 type: docs
 weight: 20
 url: /es/python-net/region-based-extraction/
-description: Aprenda a extraer texto de una región específica de una página o de la estructura de párrafos en documentos PDF con Aspose.PDF for Python via .NET.
+description: Aprenda cómo extraer texto de una región de página específica o de la estructura de párrafos en documentos PDF con Aspose.PDF for Python.
 lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
@@ -13,13 +13,13 @@ sitemap:
 
 ## Extraer texto de una región específica de una página
 
-Utilice [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) junto con un [Rectángulo](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) para limitar la extracción a un área específica de una página. Este enfoque resulta útil para extraer contenido de encabezados, pies de página, celdas de tabla, campos de formulario, facturas u otras regiones de diseño fijo cuya posición se conoce de antemano.
+Usar [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) junto con un [Rectángulo](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) para limitar la extracción a un área específica de una página. Este enfoque es útil para la extracción por zonas de encabezados, pies de página, celdas de tabla, campos de formulario, facturas u otras regiones de diseño fijo donde la posición del texto se conoce de antemano.
 
-1. Abra el PDF de origen como un [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Cree una instancia de `TextAbsorber`.
-1. Configure `text_search_options` para limitar la extracción a un rectángulo.
-1. Aplique el absorbedor a la página de destino.
-1. Escriba el texto extraído en un archivo de salida.
+1. Abra el PDF de origen como un [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Crear un `TextAbsorber` instancia.
+1. Configurar `text_search_options` para limitar la extracción a un rectángulo.
+1. Acepta el absorber en la página objetivo.
+1. Escribe el texto extraído en un archivo de salida.
 
 ```python
 import aspose.pdf as ap
@@ -52,13 +52,13 @@ def extract_text_from_region(infile, page_number, rect_coords, outfile):
 
 ## Extraer párrafos iterando a través de ellos
 
-Utilice [ParagraphAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) cuando necesite una extracción basada en párrafos en lugar de texto plano por página. A diferencia de [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) o [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/), esta API organiza la salida por página, sección y párrafo, lo que resulta útil para el análisis de texto, la exportación estructurada y el procesamiento sensible al diseño.
+Usar [ParagraphAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) cuando necesitas extracción consciente de párrafos en lugar de texto plano de página. A diferencia de [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) o [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/), esta API organiza la salida por página, sección y párrafo, lo que es útil para el análisis de texto, la exportación estructurada y el procesamiento sensible al diseño.
 
-1. Abra el PDF de origen como un [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Cree una instancia de `ParagraphAbsorber`.
-1. Llame a `absorber.visit(document)` para analizar todas las páginas.
-1. Recorra `page_markups` y luego cada sección y párrafo.
-1. Lea los fragmentos de texto de cada párrafo y escriba el resultado en un archivo.
+1. Abra el PDF de origen como un [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Crear un `ParagraphAbsorber` instancia.
+1. Llamar `absorber.visit(document)` para analizar todas las páginas.
+1. Iterar a través de `page_markups`, luego a través de cada sección y párrafo.
+1. Leer los fragmentos de texto de cada párrafo y escribir el resultado en un archivo.
 
 ```python
 import aspose.pdf as ap
@@ -95,16 +95,16 @@ def extract_paragraphs_from_pdf(infile, outfile):
         document.close()
 ```
 
-## Extraer párrafos con el polígono delimitador
+## Extraer párrafos con renderizado de polígono delimitador
 
-También puede usar [ParagraphAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) para inspeccionar la geometría de los párrafos. Además de extraer texto, este enfoque registra cada rectángulo de sección y cada polígono de párrafo, lo que resulta útil para el mapeo de diseño, el análisis de documentos, las herramientas de accesibilidad o el posprocesamiento sensible a regiones.
+También puede usar [ParagraphAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) para inspeccionar la geometría de los párrafos. Además de extraer texto, este enfoque registra el rectángulo de cada sección y el polígono del párrafo, lo cual es útil para el mapeo de diseño, el análisis de documentos, herramientas de accesibilidad o el post-procesamiento dependiente de regiones.
 
-1. Abra el PDF de origen como un [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Cree una instancia de `ParagraphAbsorber`.
-1. Visite la página de destino.
-1. Lea el marcado de la página desde `absorber.page_markups`.
-1. Recorra secciones y párrafos para capturar la geometría y el texto.
-1. Escriba los datos de rectángulo, polígono y texto en el archivo de salida.
+1. Abra el PDF de origen como un [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Crear un `ParagraphAbsorber` instancia.
+1. Visita la página objetivo.
+1. Leer el marcado de la página desde `absorber.page_markups`.
+1. Itera a través de secciones y párrafos para capturar la geometría y el texto.
+1. Escribe los datos de rectángulo, polígono y texto en el archivo de salida.
 
 ```python
 import aspose.pdf as ap

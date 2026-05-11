@@ -7,7 +7,7 @@ url: /es/python-net/remove-form/
 description: Eliminar objetos de formulario de las páginas PDF utilizando Aspose.PDF for Python via .NET, incluyendo una limpieza completa y eliminación dirigida.
 lastmod: "2026-04-28"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Eliminar formularios de PDF con Aspose.PDF for Python via .NET

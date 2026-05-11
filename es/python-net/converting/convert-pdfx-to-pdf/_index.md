@@ -4,7 +4,7 @@ linktitle: Convertir PDF/A y PDF/UA a PDF
 type: docs
 weight: 120
 url: /es/python-net/convert-pdf_x-to-pdf/
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 description: Aprenda cómo eliminar el cumplimiento de PDF/A y PDF/UA de archivos PDF en Python con Aspose.PDF for Python via .NET y guardarlos como documentos PDF estándar.
 sitemap:
     changefreq: "monthly"

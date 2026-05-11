@@ -7,7 +7,7 @@ url: /es/python-net/add-page-number/
 description: Aspose.PDF for Python via .NET te permite añadir un Sello de Número de Página a tu archivo PDF usando la clase PageNumberStamp.
 lastmod: "2023-04-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 <script type="application/ld+json">

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /es/python-net/create-tagged-pdf/
 description: Aprende cómo crear documentos PDF etiquetados en Python con Aspose.PDF for Python via .NET, incluidos los Structure Elements PDF/UA, formularios accesibles, páginas TOC y etiquetado automático.
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

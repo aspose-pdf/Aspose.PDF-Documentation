@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /es/python-net/setting-structure-elements-properties/
 description: Aprenda cómo establecer propiedades de elementos de estructura Tagged PDF en Python con Aspose.PDF for Python via .NET, incluyendo título, idioma, texto real, texto alternativo y texto de expansión.
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ linktitle: Convertir PDF a PDF/A, PDF/E y PDF/X
 type: docs
 weight: 120
 url: /es/python-net/convert-pdf-to-pdf_x/
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 description: Aprenda cómo convertir archivos PDF a PDF/A, PDF/E y PDF/X en Python con Aspose.PDF for Python via .NET para flujos de trabajo de archivado, accesibilidad e impresión.
 sitemap:
     changefreq: "monthly"

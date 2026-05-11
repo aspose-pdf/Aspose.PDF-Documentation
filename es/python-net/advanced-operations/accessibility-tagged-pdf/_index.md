@@ -5,7 +5,7 @@ type: docs
 weight: 180
 url: /es/python-net/accessibility-tagged-pdf/
 description: Aprenda cómo crear PDFs etiquetados accesibles en Python con Aspose.PDF for Python via .NET, incluyendo la estructura PDF/UA, extracción de contenido etiquetado, propiedades de estructura y tablas.
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /es/python-net/extract-tagged-content-from-tagged-pdfs/
 description: Aprenda cómo extraer contenido PDF etiquetado en Python con Aspose.PDF for Python via .NET, incluido el acceso al contenido etiquetado, la estructura raíz y los Structure Elements hijo.
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

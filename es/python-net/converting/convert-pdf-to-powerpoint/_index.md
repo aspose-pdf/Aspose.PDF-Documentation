@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /es/python-net/convert-pdf-to-powerpoint/
 description: Aprenda cómo convertir archivos PDF a PowerPoint en Python con Aspose.PDF for Python via .NET, incluyendo diapositivas PPTX editables y salida de diapositivas basadas en imágenes.
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

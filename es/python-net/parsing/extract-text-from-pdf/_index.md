@@ -4,10 +4,10 @@ linktitle: Extraer texto de PDF
 type: docs
 weight: 10
 url: /es/python-net/extract-text-from-pdf/
-description: Esta sección contiene artículos sobre la extracción de texto de documentos PDF con Aspose.PDF for Python via .NET.
+description: Esta sección contiene artículos sobre la extracción de texto de documentos PDF utilizando Aspose.PDF en Python.
 lastmod: "2025-11-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -16,4 +16,4 @@ sitemap:
 - [Extracción básica de texto](/pdf/es/python-net/basic-text-extraction/)
 - [Extracción basada en regiones](/pdf/es/python-net/region-based-extraction/)
 - [Extracción de texto de PDFs de varias columnas](/pdf/es/python-net/text-extraction-from-multi‑column-pdf/)
-- [Anotaciones y texto especial](/pdf/es/python-net/annotations-and-special-text/)
+- [Anotaciones y Texto Especial](/pdf/es/python-net/annotations-and-special-text/)

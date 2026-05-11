@@ -1,25 +1,25 @@
 ---
-title: Mejorando la extracción de texto de PDFs de varias columnas
+title: Mejorar la extracción de texto de PDFs de varias columnas
 linktitle: Extracción de texto de PDFs de varias columnas
 type: docs
 weight: 30
 url: /es/python-net/text-extraction-from-multi-column-pdf/
-description: Aprenda técnicas para mejorar la extracción de texto en diseños PDF de varias columnas con Aspose.PDF for Python via .NET.
+description: Aprenda técnicas para mejorar la extracción de texto de diseños PDF multicolumna con Aspose.PDF for Python.
 lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-## Reduzca el tamaño de fuente manualmente y luego extraiga
+## Reduzca el tamaño de Font manualmente y luego extraiga
 
-En algunos diseños de varias columnas, reducir el tamaño de fuente de los fragmentos de texto antes de la extracción puede mejorar el orden de lectura y reducir los problemas de superposición. Esta técnica puede ayudar con documentos de formato estrecho, como revistas, artículos de investigación, folletos o informes con columnas densas de texto.
+En algunos diseños de varias columnas, reducir el tamaño de Font de los fragmentos de texto antes de la extracción puede mejorar el orden de lectura y reducir los problemas de superposición. Esta técnica puede ayudar con documentos con formato ajustado como revistas, artículos de investigación, folletos o informes con columnas de texto densas.
 
 1. Cargue el PDF.
-1. Utilice [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) para recopilar los fragmentos de texto.
-1. Reduzca el tamaño de la fuente de cada fragmento, luego guarde y vuelva a abrir el documento.
-1. Utilice [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) para extraer el texto.
-1. Escriba el texto extraído en un archivo de salida.
+1. Usar [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) para recopilar los fragmentos de texto.
+1. Reduce el tamaño de la fuente de cada fragmento, luego guarda y vuelve a abrir el documento.
+1. Usar [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) para extraer el texto.
+1. Escribe el texto extraído en un archivo de salida.
 
 ```python
 import io
@@ -54,12 +54,12 @@ def extract_text_reduce_font(infile, outfile, reduce_ratio=0.7):
 
 ## Extraer texto con factor de escala
 
-Otra opción para la extracción en varias columnas consiste en configurar [TextExtractionOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textextractionoptions/) con un factor de escala. Ajustar este factor puede mejorar la interpretación de fragmentos compactos y ayudar a conservar un orden de lectura más preciso en diseños densos, tablas o documentos organizados por columnas.
+Otra opción para la extracción de múltiples columnas es configurar [TextExtractionOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textextractionoptions/) con un factor de escala. Ajustar el factor de escala puede mejorar la interpretación de fragmentos muy compactos y ayudar a preservar un orden de lectura más preciso en diseños densos, tablas o documentos basados en columnas.
 
 1. Cargue el PDF.
-1. Cree un [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/).
-1. Configure `TextExtractionOptions.scale_factor`.
-1. Asigne las opciones de extracción al absorbedor.
+1. Crear un [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/).
+1. Configurar `TextExtractionOptions.scale_factor`.
+1. Asigne las opciones de extracción al absorbente.
 1. Extraiga el texto de la página y escriba el resultado en un archivo de salida.
 
 ```python

@@ -7,7 +7,7 @@ url: /es/python-net/change-page-size/
 description: Aprenda cómo leer y cambiar las dimensiones de la página PDF en Python.
 lastmod: "2026-04-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Cambiar tamaño de página usando Python

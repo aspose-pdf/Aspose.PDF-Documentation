@@ -7,7 +7,7 @@ url: /es/python-net/manipulating-tables/
 description: Aprenda cómo inspeccionar y modificar tablas en documentos PDF existentes usando Python.
 lastmod: "2026-05-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Inspeccionar y modificar tablas PDF existentes con Python

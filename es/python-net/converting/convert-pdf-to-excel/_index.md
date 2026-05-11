@@ -4,7 +4,7 @@ linktitle: Convertir PDF a Excel
 type: docs
 weight: 20
 url: /es/python-net/convert-pdf-to-excel/
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 description: Aprenda cómo convertir archivos PDF a Excel en Python con Aspose.PDF for Python via .NET, incluyendo XLS, XLSX, CSV, ODS y salida de una sola hoja de cálculo.
 sitemap:
     changefreq: "monthly"

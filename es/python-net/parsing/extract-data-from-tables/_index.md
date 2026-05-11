@@ -1,28 +1,28 @@
 ---
-title: Extraer datos de la tabla en PDF con Python
-linktitle: Extraer datos de la tabla
+title: Extraer datos de una tabla en PDF con Python
+linktitle: Extraer datos de una tabla
 type: docs
 weight: 40
 url: /es/python-net/extract-data-from-table-in-pdf/
-description: Aprenda a extraer datos de tablas de archivos PDF con Aspose.PDF for Python via .NET y a exportar los resultados para su procesamiento posterior.
+description: Aprenda cómo extraer datos de tablas de archivos PDF con Aspose.PDF for Python y exportar los resultados para un procesamiento posterior.
 lastmod: "2025-03-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Cómo extraer datos de la tabla en PDF mediante Python
-Abstract: Este artículo explica cómo extraer y procesar datos de tablas de documentos PDF con Aspose.PDF for Python via .NET. Muestra cómo analizar cada página con TableAbsorber, leer filas y celdas de las tablas detectadas, limitar la extracción a una región anotada específica y exportar el contenido del PDF a formato CSV para su uso en hojas de cálculo y flujos de procesamiento posteriores.
+AlternativeHeadline: Cómo extraer datos de una tabla en PDF mediante Python
+Abstract: Este artículo explica cómo extraer y procesar datos de tablas de documentos PDF con Aspose.PDF for Python. Muestra cómo escanear cada página con TableAbsorber, leer filas y celdas de las tablas detectadas, limitar la extracción a una región anotada específica y exportar el contenido PDF a formato CSV para su uso en herramientas de hoja de cálculo y procesamiento posterior.
 ---
 
 ## Extraer tablas de PDF programáticamente
 
-Utilice [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) para detectar tablas en cada página de un [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Después de procesar una página, recorra `table_list` y luego cada fila y celda para reconstruir el contenido de la tabla en un formato de texto legible.
+Usar [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) para detectar tablas en cada página de un [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Después de visitar una página, itera a través de `table_list`, luego recorre cada fila y celda para reconstruir el contenido de la tabla en un formato de texto legible.
 
 1. Abra el PDF como un `Document`.
-1. Recorra las páginas de `document.pages`.
-1. Cree un `TableAbsorber` para cada página y llame a `visit(page)`.
-1. Recorra las tablas, filas y celdas detectadas.
-1. Lea los fragmentos de texto de cada celda y reconstruya la salida de cada fila.
+1. Iterar a través de las páginas en `document.pages`.
+1. Crear un `TableAbsorber` para cada página y llame `visit(page)`.
+1. Recorre las tablas, filas y celdas detectadas.
+1. Lee fragmentos de texto de cada celda y ensambla la salida de la fila extraída.
 
 ```python
 import aspose.pdf as apdf
@@ -50,16 +50,16 @@ for page in document.pages:
             print("|".join(row_text))
 ```
 
-## Extraer tabla en un área específica de la página PDF
+## Extraer tabla en área específica de la página PDF
 
-Si necesita extraer únicamente las tablas ubicadas dentro de una región marcada, combine [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) con un [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/). En este ejemplo, el rectángulo de la anotación se utiliza como límite y solo se procesan las tablas que quedan completamente contenidas dentro de esa región.
+Si necesita extraer solo tablas ubicadas dentro de una región marcada, combine [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) con un [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/). En este ejemplo, el rectángulo de anotación se usa como límite, y solo se procesan las tablas que están completamente contenidas dentro de esa región.
 
 1. Abra el PDF como un `Document`.
-1. Seleccione la página objetivo.
+1. Seleccione la página de destino.
 1. Encuentre la anotación cuadrada que marca la región de interés.
-1. Cree un `TableAbsorber` y procese la página.
-1. Compare cada rectángulo de tabla detectado con el rectángulo de la anotación.
-1. Procese solo las tablas que caen completamente dentro del área marcada.
+1. Crear un `TableAbsorber` y visite la página.
+1. Compara cada rectángulo de tabla detectado con el rectángulo de anotación.
+1. Procesa sólo las tablas que estén completamente dentro del área marcada.
 
 ```python
 import aspose.pdf as apdf
@@ -118,11 +118,11 @@ for table in absorber.table_list:
 
 ## Exportar datos de tabla de PDF a CSV
 
-Cuando necesite los datos extraídos en un formato apto para hojas de cálculo, guarde el PDF mediante [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) y establezca el formato de salida en CSV. El archivo resultante puede abrirse en Excel, Google Sheets o importarse en flujos de trabajo analíticos.
+Cuando necesites los datos extraídos en un formato compatible con hojas de cálculo, guarda el PDF usando [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) y establezca el formato de salida en CSV. El archivo resultante se puede abrir en Excel, Google Sheets o importarse en flujos de trabajo de análisis.
 
-1. Abra el PDF de origen como un [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Cree una instancia de `ExcelSaveOptions`.
-1. Establezca `excel_save.format` en `ExcelSaveOptions.ExcelFormat.CSV`.
+1. Abra el PDF de origen como un [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Crear un `ExcelSaveOptions` instancia.
+1. Establecer `excel_save.format` a `ExcelSaveOptions.ExcelFormat.CSV`.
 1. Guarde el documento en la ruta CSV de destino.
 
 ```python

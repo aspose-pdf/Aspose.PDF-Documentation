@@ -4,22 +4,22 @@ linktitle: Extraer fuentes de PDF
 type: docs
 weight: 30
 url: /es/python-net/extract-fonts-from-pdf/
-description: Utilice Aspose.PDF for Python via .NET para extraer todas las fuentes incrustadas de su documento PDF.
+description: Utilice la biblioteca Aspose.PDF for Python para extraer todas las fuentes incrustadas de su documento PDF.
 lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Cómo extraer fuentes de PDF usando Python
-Abstract: Este artículo explica cómo inspeccionar las fuentes utilizadas en un documento PDF con Aspose.PDF for Python via .NET. Muestra cómo abrir un PDF con la clase Document, llamar a `font_utilities.get_all_fonts()` para obtener los objetos de fuente disponibles y recorrer los resultados para leer los nombres de las fuentes con fines de análisis, auditoría o flujos de trabajo de procesamiento de documentos.
+Abstract: Este artículo explica cómo inspeccionar las fuentes utilizadas en un documento PDF con Aspose.PDF for Python. Muestra cómo abrir un PDF con la clase Document, llamar a `font_utilities.get_all_fonts()` para obtener los objetos de fuente disponibles y recorrer los resultados para leer los nombres de las fuentes para análisis, auditoría o flujos de trabajo de procesamiento de documentos.
 ---
 
-Utilice [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) para abrir el PDF y llamar a `font_utilities.get_all_fonts()` para recuperar todos los objetos [Font](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/font/) referenciados por el documento. Esto resulta útil para auditar fuentes incrustadas, verificar su disponibilidad antes de la conversión o analizar los recursos del documento.
+Usar [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) para abrir el PDF y llamar `font_utilities.get_all_fonts()` para recuperar todo lo disponible [Font](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/font/) objetos referenciados por el documento. Esto es útil al auditar fuentes incrustadas, verificar la disponibilidad de fuentes antes de la conversión o analizar los recursos del documento.
 
 1. Abra el PDF de origen como un `Document`.
-1. Llame a `document.font_utilities.get_all_fonts()` para obtener la colección de fuentes.
-1. Recorra los objetos `Font` devueltos.
-1. Lea e imprima cada valor de `font.font_name`.
+1. Llamar `document.font_utilities.get_all_fonts()` para obtener la colección de fuentes.
+1. Iterar a través de lo devuelto `Font` objetos.
+1. Leer e imprimir cada `font.font_name` valor.
 
 ```python
 

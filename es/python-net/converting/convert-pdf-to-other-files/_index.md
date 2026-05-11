@@ -4,7 +4,7 @@ linktitle: Convertir PDF a otros formatos
 type: docs
 weight: 90
 url: /es/python-net/convert-pdf-to-other-files/
-lastmod: "2026-04-14"
+lastmod: "2026-05-11"
 description: Aprenda cómo convertir archivos PDF a EPUB, LaTeX, Markdown, texto, XPS y MobiXML en Python con Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
