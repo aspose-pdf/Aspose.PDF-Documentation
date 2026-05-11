@@ -1,5 +1,6 @@
 ---
 title: Crear folleto PDF
+linktitle: Crear folleto PDF
 type: docs
 weight: 20
 url: /es/python-net/create-pdf-booklet/

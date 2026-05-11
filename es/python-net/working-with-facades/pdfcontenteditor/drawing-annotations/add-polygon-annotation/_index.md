@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación de polígono
+linktitle: Agregar anotación de polígono
 type: docs
 weight: 40
 url: /es/python-net/add-polygon-annotation/

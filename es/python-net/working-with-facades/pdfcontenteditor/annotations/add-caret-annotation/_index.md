@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación de caret
+linktitle: Agregar anotación de caret
 type: docs
 weight: 10
 url: /es/python-net/add-caret-annotation/

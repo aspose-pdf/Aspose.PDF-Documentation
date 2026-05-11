@@ -1,5 +1,6 @@
 ---
 title: Importación de datos de formulario
+linktitle: Importación de datos de formulario
 type: docs
 weight: 20
 url: /es/python-net/importing-form-data/

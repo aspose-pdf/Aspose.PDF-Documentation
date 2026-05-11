@@ -1,5 +1,6 @@
 ---
 title: Propiedades del documento
+linktitle: Propiedades del documento
 type: docs
 weight: 10
 url: /es/python-net/document-properties/

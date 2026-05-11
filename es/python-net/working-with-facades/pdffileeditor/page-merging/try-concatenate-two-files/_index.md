@@ -1,5 +1,6 @@
 ---
 title: Intente concatenar dos archivos PDF
+linktitle: Intente concatenar dos archivos PDF
 type: docs
 weight: 90
 url: /es/python-net/try-concatenate-two-files/

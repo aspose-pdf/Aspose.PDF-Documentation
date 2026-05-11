@@ -1,5 +1,6 @@
 ---
 title: Extracción de firma
+linktitle: Extracción de firma
 type: docs
 weight: 50
 url: /es/python-net/signature-extraction/

@@ -1,5 +1,6 @@
 ---
 title: Obtener nombres de campos obligatorios
+linktitle: Obtener nombres de campos obligatorios
 type: docs
 weight: 30
 url: /es/python-net/get-required-field-names/

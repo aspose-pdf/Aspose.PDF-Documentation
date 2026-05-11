@@ -1,5 +1,6 @@
 ---
 title: Insertar páginas en PDF
+linktitle: Insertar páginas en PDF
 type: docs
 weight: 40
 url: /es/python-net/insert-pages-into-pdf/

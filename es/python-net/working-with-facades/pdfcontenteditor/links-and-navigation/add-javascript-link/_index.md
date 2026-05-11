@@ -1,5 +1,6 @@
 ---
 title: Agregar enlace JavaScript
+linktitle: Agregar enlace JavaScript
 type: docs
 weight: 30
 url: /es/python-net/add-javascript-link/

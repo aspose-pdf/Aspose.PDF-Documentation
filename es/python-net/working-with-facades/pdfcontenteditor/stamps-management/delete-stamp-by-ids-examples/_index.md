@@ -1,5 +1,6 @@
 ---
 title: Eliminar sello por ID
+linktitle: Eliminar sello por ID
 type: docs
 weight: 85
 url: /es/python-net/delete-stamp-by-ids-examples/

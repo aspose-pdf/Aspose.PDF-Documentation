@@ -1,5 +1,6 @@
 ---
 title: Crear botón de envío
+linktitle: Crear botón de envío
 type: docs
 weight: 50
 url: /es/python-net/create-submit-button/

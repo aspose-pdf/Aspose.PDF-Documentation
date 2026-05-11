@@ -1,5 +1,6 @@
 ---
 title: Gestión de páginas
+linktitle: Gestión de páginas
 type: docs
 weight: 30
 url: /es/python-net/page-management/

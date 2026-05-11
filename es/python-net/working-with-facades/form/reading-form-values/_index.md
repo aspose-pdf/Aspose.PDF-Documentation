@@ -1,5 +1,6 @@
 ---
 title: Lectura de valores del formulario
+linktitle: Lectura de valores del formulario
 type: docs
 weight: 60
 url: /es/python-net/reading-form-values/

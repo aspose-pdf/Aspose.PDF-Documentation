@@ -1,5 +1,6 @@
 ---
 title: Diseño de página y márgenes
+linktitle: Diseño de página y márgenes
 type: docs
 weight: 20
 url: /es/python-net/page-layout-and-margins/

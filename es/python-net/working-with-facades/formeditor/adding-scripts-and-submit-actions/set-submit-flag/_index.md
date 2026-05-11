@@ -1,5 +1,6 @@
 ---
 title: Establecer bandera de envío
+linktitle: Establecer bandera de envío
 type: docs
 weight: 50
 url: /es/python-net/set-submit-flag/

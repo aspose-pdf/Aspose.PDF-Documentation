@@ -1,5 +1,6 @@
 ---
 title: Agregar anotaciones de texto
+linktitle: Agregar anotaciones de texto
 type: docs
 weight: 50
 url: /es/python-net/add-text-annotation/

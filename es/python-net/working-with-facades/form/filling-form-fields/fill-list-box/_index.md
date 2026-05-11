@@ -1,5 +1,6 @@
 ---
 title: Rellenar cuadro de lista
+linktitle: Rellenar cuadro de lista
 type: docs
 weight: 40
 url: /es/python-net/fill-list-box/

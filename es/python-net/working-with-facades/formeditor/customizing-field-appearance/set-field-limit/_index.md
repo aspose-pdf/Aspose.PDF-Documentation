@@ -1,5 +1,6 @@
 ---
 title: Establecer límite de campo
+linktitle: Establecer límite de campo
 type: docs
 weight: 80
 url: /es/python-net/set-field-limit/

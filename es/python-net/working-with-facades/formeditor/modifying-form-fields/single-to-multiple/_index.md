@@ -1,5 +1,6 @@
 ---
 title: Campo de una sola línea a campo de varias líneas
+linktitle: Campo de una sola línea a campo de varias líneas
 type: docs
 weight: 80
 url: /es/python-net/single-to-multiple/

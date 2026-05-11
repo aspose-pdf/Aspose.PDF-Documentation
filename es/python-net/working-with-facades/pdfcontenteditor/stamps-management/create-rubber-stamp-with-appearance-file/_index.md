@@ -1,5 +1,6 @@
 ---
 title: Crear sello de goma con archivo de apariencia
+linktitle: Crear sello de goma con archivo de apariencia
 type: docs
 weight: 20
 url: /es/python-net/create-rubber-stamp-with-appearance-file/

@@ -1,5 +1,6 @@
 ---
 title: Agregar pie de pagina a PDF
+linktitle: Agregar pie de pagina a PDF
 type: docs
 weight: 10
 url: /es/python-net/add-footer/

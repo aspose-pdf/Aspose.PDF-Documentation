@@ -1,5 +1,6 @@
 ---
 title: Listar Sellos
+linktitle: Listar Sellos
 type: docs
 weight: 70
 url: /es/python-net/list-stamps/

@@ -1,5 +1,6 @@
 ---
 title: Operaciones de imagen
+linktitle: Operaciones de imagen
 type: docs
 weight: 60
 url: /es/python-net/image-operations/

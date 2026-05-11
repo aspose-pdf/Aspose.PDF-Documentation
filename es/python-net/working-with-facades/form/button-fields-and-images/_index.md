@@ -1,5 +1,6 @@
 ---
 title: Campos de botones e imágenes
+linktitle: Campos de botones e imágenes
 type: docs
 weight: 40
 url: /es/python-net/button-fields-and-images/

@@ -1,5 +1,6 @@
 ---
 title: Copiar campo externo
+linktitle: Copiar campo externo
 type: docs
 weight: 30
 url: /es/python-net/copy-outer-field/

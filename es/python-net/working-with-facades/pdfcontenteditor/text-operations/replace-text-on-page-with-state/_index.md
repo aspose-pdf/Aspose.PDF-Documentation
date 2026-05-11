@@ -1,5 +1,6 @@
 ---
 title: Reemplazar texto en la página con estado
+linktitle: Reemplazar texto en la página con estado
 type: docs
 weight: 20
 url: /es/python-net/replace-text-on-page-with-state/

@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación de archivo adjunto desde flujo
+linktitle: Agregar anotación de archivo adjunto desde flujo
 type: docs
 weight: 40
 url: /es/python-net/add-file-attachment-annotation-from-stream/

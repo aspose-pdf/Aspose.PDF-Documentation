@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación de sonido
+linktitle: Agregar anotación de sonido
 type: docs
 weight: 20
 url: /es/python-net/add-sound-annotation/

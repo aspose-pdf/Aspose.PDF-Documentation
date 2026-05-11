@@ -1,5 +1,6 @@
 ---
 title: Reemplazar texto en la página
+linktitle: Reemplazar texto en la página
 type: docs
 weight: 10
 url: /es/python-net/replace-text-on-page/

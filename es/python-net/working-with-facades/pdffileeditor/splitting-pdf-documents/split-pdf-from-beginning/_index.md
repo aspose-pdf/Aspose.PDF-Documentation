@@ -1,5 +1,6 @@
 ---
 title: Dividir PDF desde el comienzo
+linktitle: Dividir PDF desde el comienzo
 type: docs
 weight: 10
 url: /es/python-net/split-pdf-from-beginning/

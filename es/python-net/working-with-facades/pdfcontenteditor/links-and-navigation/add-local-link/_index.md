@@ -1,5 +1,6 @@
 ---
 title: Agregar enlace local
+linktitle: Agregar enlace local
 type: docs
 weight: 40
 url: /es/python-net/add-local-link/

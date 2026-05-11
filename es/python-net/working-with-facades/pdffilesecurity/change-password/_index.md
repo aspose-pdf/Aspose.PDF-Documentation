@@ -1,5 +1,6 @@
 ---
 title: Cambiar la contraseña del archivo PDF
+linktitle: Cambiar la contraseña del archivo PDF
 type: docs
 weight: 10
 url: /es/python-net/change-password/

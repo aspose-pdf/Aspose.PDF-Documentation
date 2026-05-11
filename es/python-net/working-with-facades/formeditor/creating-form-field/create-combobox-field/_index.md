@@ -1,5 +1,6 @@
 ---
 title: Crear campo ComboBox
+linktitle: Crear campo ComboBox
 type: docs
 weight: 20
 url: /es/python-net/create-combobox-field/

@@ -1,5 +1,6 @@
 ---
 title: Administracion de derechos de uso
+linktitle: Administracion de derechos de uso
 type: docs
 weight: 100
 url: /es/python-net/usage-rights-management/

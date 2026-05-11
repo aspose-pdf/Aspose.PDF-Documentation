@@ -1,5 +1,6 @@
 ---
 title: Obtener valores de texto enriquecido
+linktitle: Obtener valores de texto enriquecido
 type: docs
 weight: 40
 url: /es/python-net/get-rich-text-values/

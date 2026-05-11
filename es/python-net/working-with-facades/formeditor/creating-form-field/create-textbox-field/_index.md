@@ -1,5 +1,6 @@
 ---
 title: Crear campo TextBox
+linktitle: Crear campo TextBox
 type: docs
 weight: 60
 url: /es/python-net/create-textbox-field/

@@ -1,5 +1,6 @@
 ---
 title: Agregar enlace de aplicación
+linktitle: Agregar enlace de aplicación
 type: docs
 weight: 10
 url: /es/python-net/add-application-link/

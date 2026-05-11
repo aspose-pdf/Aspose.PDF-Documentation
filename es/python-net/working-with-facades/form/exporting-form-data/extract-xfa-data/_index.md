@@ -1,5 +1,6 @@
 ---
 title: Extraer datos XFA
+linktitle: Extraer datos XFA
 type: docs
 weight: 50
 url: /es/python-net/extract-xfa-data/

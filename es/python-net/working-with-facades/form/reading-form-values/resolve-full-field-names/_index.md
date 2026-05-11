@@ -1,5 +1,6 @@
 ---
 title: Resolver nombres completos de campos
+linktitle: Resolver nombres completos de campos
 type: docs
 weight: 60
 url: /es/python-net/resolve-full-field-names/

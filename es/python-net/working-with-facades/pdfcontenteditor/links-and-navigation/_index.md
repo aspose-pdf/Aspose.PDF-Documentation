@@ -1,5 +1,6 @@
 ---
 title: Enlaces y navegación
+linktitle: Enlaces y navegación
 type: docs
 weight: 70
 url: /es/python-net/links-and-navigation/

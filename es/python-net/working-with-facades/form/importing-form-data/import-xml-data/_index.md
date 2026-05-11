@@ -1,5 +1,6 @@
 ---
 title: Importar datos XML
+linktitle: Importar datos XML
 type: docs
 weight: 40
 url: /es/python-net/import-xml-data/

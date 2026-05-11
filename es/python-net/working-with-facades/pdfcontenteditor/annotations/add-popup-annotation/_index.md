@@ -1,5 +1,6 @@
 ---
 title: Agregar anotaciones emergentes
+linktitle: Agregar anotaciones emergentes
 type: docs
 weight: 40
 url: /es/python-net/add-popup-annotation/

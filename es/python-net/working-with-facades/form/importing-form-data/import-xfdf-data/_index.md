@@ -1,5 +1,6 @@
 ---
 title: Importar datos XFDF
+linktitle: Importar datos XFDF
 type: docs
 weight: 20
 url: /es/python-net/import-xfdf-data/

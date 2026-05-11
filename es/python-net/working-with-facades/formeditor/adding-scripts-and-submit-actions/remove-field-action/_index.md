@@ -1,5 +1,6 @@
 ---
 title: Eliminar acción de campo
+linktitle: Eliminar acción de campo
 type: docs
 weight: 20
 url: /es/python-net/remove-field-action/

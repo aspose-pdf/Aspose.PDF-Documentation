@@ -1,5 +1,6 @@
 ---
 title: Establecer alineación vertical del campo
+linktitle: Establecer alineación vertical del campo
 type: docs
 weight: 40
 url: /es/python-net/set-field-alignment-vertical/

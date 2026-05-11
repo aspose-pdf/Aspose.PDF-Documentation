@@ -1,5 +1,6 @@
 ---
 title: Obtener apariencia del campo
+linktitle: Obtener apariencia del campo
 type: docs
 weight: 20
 url: /es/python-net/get-field-appearance/

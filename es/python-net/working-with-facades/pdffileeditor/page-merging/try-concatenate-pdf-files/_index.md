@@ -1,5 +1,6 @@
 ---
 title: Intentar concatenar archivos PDF
+linktitle: Intentar concatenar archivos PDF
 type: docs
 weight: 70
 url: /es/python-net/try-concatenate-pdf-files/

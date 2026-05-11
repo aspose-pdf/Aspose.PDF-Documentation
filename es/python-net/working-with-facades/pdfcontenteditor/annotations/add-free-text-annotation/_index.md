@@ -1,5 +1,6 @@
 ---
 title: Agregar anotaciones de texto libre
+linktitle: Agregar anotaciones de texto libre
 type: docs
 weight: 20
 url: /es/python-net/add-free-text-annotation/

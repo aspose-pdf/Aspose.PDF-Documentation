@@ -1,5 +1,6 @@
 ---
 title: Eliminar sellos globalmente
+linktitle: Eliminar sellos globalmente
 type: docs
 weight: 60
 url: /es/python-net/delete-stamps-globally/

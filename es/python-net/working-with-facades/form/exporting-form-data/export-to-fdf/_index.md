@@ -1,5 +1,6 @@
 ---
 title: Exportar a FDF
+linktitle: Exportar a FDF
 type: docs
 weight: 10
 url: /es/python-net/export-to-fdf/

@@ -1,5 +1,6 @@
 ---
 title: Copiar campo interno
+linktitle: Copiar campo interno
 type: docs
 weight: 20
 url: /es/python-net/copy-inner-field/

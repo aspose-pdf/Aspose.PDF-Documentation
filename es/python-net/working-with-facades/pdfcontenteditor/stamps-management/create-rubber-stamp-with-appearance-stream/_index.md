@@ -1,5 +1,6 @@
 ---
 title: Crear Sello de Goma con Flujo de Apariencia
+linktitle: Crear Sello de Goma con Flujo de Apariencia
 type: docs
 weight: 30
 url: /es/python-net/create-rubber-stamp-with-appearance-stream/

@@ -1,5 +1,6 @@
 ---
 title: Renombrar campos de formulario
+linktitle: Renombrar campos de formulario
 type: docs
 weight: 30
 url: /es/python-net/rename-form-fields/

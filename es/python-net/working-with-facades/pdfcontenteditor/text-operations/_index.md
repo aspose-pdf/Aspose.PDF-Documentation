@@ -1,5 +1,6 @@
 ---
 title: Operaciones de texto
+linktitle: Operaciones de texto
 type: docs
 weight: 100
 url: /es/python-net/text-operations/

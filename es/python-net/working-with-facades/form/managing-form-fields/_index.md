@@ -1,5 +1,6 @@
 ---
 title: Gestión de campos de formulario
+linktitle: Gestión de campos de formulario
 type: docs
 weight: 50
 url: /es/python-net/managing-form-fields/

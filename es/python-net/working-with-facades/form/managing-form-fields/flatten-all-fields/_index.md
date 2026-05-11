@@ -1,5 +1,6 @@
 ---
 title: Aplanar todos los campos
+linktitle: Aplanar todos los campos
 type: docs
 weight: 10
 url: /es/python-net/flatten-all-fields/

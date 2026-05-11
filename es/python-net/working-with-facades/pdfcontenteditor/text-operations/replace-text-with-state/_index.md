@@ -1,5 +1,6 @@
 ---
 title: Reemplazar texto con estado
+linktitle: Reemplazar texto con estado
 type: docs
 weight: 50
 url: /es/python-net/replace-text-with-state/

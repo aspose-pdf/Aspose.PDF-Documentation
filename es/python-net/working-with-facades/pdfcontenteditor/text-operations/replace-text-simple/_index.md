@@ -1,5 +1,6 @@
 ---
 title: Reemplazar texto simple
+linktitle: Reemplazar texto simple
 type: docs
 weight: 40
 url: /es/python-net/replace-text-simple/

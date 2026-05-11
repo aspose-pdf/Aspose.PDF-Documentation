@@ -1,5 +1,6 @@
 ---
 title: Obtener preferencias del visor PDF
+linktitle: Obtener preferencias del visor PDF
 type: docs
 weight: 20
 url: /es/python-net/get-viewer-preferences/

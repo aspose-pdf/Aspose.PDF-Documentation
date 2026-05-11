@@ -1,5 +1,6 @@
 ---
 title: Descifrar archivo PDF
+linktitle: Descifrar archivo PDF
 type: docs
 weight: 20
 url: /es/python-net/decrypt-pdf-file/

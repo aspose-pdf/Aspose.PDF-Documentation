@@ -1,5 +1,6 @@
 ---
 title: Rellenar campos de texto
+linktitle: Rellenar campos de texto
 type: docs
 weight: 10
 url: /es/python-net/fill-text-fields/

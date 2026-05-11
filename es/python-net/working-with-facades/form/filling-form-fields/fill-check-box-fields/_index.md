@@ -1,5 +1,6 @@
 ---
 title: Rellenar campos de casilla de verificación
+linktitle: Rellenar campos de casilla de verificación
 type: docs
 weight: 20
 url: /es/python-net/fill-check-box-fields/

@@ -1,5 +1,6 @@
 ---
 title: Obtener privilegios del documento
+linktitle: Obtener privilegios del documento
 type: docs
 weight: 10
 url: /es/python-net/get-document-privileges/

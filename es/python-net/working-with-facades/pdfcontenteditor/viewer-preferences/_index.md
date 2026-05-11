@@ -1,5 +1,6 @@
 ---
 title: Preferencias del visor
+linktitle: Preferencias del visor
 type: docs
 weight: 110
 url: /es/python-net/viewer-preferences/

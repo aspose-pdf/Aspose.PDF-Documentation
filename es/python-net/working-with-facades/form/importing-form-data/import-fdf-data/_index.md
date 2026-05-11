@@ -1,5 +1,6 @@
 ---
 title: Importar datos FDF
+linktitle: Importar datos FDF
 type: docs
 weight: 10
 url: /es/python-net/import-fdf-data/

@@ -1,5 +1,6 @@
 ---
 title: Establecer script de campo
+linktitle: Establecer script de campo
 type: docs
 weight: 30
 url: /es/python-net/set-field-script/

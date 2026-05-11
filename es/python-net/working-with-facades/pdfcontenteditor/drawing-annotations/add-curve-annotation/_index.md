@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación de curva
+linktitle: Agregar anotación de curva
 type: docs
 weight: 20
 url: /es/python-net/add-curve-annotation/

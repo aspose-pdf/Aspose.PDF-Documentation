@@ -1,5 +1,6 @@
 ---
 title: Establecer número de comb del campo
+linktitle: Establecer número de comb del campo
 type: docs
 weight: 70
 url: /es/python-net/set-field-comb-number/

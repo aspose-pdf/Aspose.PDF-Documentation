@@ -1,5 +1,6 @@
 ---
 title: Gestión de sellos
+linktitle: Gestión de sellos
 type: docs
 weight: 90
 url: /es/python-net/stamps-management/

@@ -1,5 +1,6 @@
 ---
 title: Eliminar páginas de PDF
+linktitle: Eliminar páginas de PDF
 type: docs
 weight: 20
 url: /es/python-net/delete-pages-from-pdf/

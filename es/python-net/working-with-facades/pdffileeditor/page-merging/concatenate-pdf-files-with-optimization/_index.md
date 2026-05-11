@@ -1,5 +1,6 @@
 ---
 title: Concatenar archivos PDF con optimización
+linktitle: Concatenar archivos PDF con optimización
 type: docs
 weight: 30
 url: /es/python-net/concatenate-pdf-files-with-optimization/

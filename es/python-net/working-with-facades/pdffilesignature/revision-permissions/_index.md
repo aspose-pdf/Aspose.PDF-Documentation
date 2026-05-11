@@ -1,5 +1,6 @@
 ---
 title: Revisión y Permisos
+linktitle: Revisión y Permisos
 type: docs
 weight: 40
 url: /es/python-net/revision-permissions/

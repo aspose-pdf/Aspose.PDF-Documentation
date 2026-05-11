@@ -1,5 +1,6 @@
 ---
 title: Redimensionar el contenido de las páginas PDF
+linktitle: Redimensionar el contenido de las páginas PDF
 type: docs
 weight: 30
 url: /es/python-net/resize-pdf-page-contents/

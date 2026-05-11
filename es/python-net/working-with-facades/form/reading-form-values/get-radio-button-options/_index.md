@@ -1,5 +1,6 @@
 ---
 title: Obtener opciones de botón de radio
+linktitle: Obtener opciones de botón de radio
 type: docs
 weight: 20
 url: /es/python-net/get-radio-button-options/

@@ -1,5 +1,6 @@
 ---
 title: Extraer páginas de PDF
+linktitle: Extraer páginas de PDF
 type: docs
 weight: 30
 url: /es/python-net/extract-pages-from-pdf/

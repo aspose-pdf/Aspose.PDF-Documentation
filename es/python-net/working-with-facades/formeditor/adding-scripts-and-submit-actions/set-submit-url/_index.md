@@ -1,5 +1,6 @@
 ---
 title: Establecer URL de envío
+linktitle: Establecer URL de envío
 type: docs
 weight: 40
 url: /es/python-net/set-submit-url/

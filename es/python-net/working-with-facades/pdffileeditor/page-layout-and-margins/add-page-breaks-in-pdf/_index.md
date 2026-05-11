@@ -1,5 +1,6 @@
 ---
 title: Agregar saltos de página en PDF
+linktitle: Agregar saltos de página en PDF
 type: docs
 weight: 20
 url: /es/python-net/add-page-breaks-in-pdf/

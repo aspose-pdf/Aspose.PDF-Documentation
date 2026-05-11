@@ -1,5 +1,6 @@
 ---
 title: Agregar script de campo
+linktitle: Agregar script de campo
 type: docs
 weight: 10
 url: /es/python-net/add-field-script/

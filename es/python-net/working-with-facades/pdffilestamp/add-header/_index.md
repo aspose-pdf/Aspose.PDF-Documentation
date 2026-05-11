@@ -1,5 +1,6 @@
 ---
 title: Agregar encabezado a PDF
+linktitle: Agregar encabezado a PDF
 type: docs
 weight: 20
 url: /es/python-net/add-header/

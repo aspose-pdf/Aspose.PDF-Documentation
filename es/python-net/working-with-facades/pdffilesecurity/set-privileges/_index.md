@@ -1,5 +1,6 @@
 ---
 title: Establecer privilegios en un archivo PDF existente
+linktitle: Establecer privilegios en un archivo PDF existente
 type: docs
 weight: 40
 url: /es/python-net/set-privileges/

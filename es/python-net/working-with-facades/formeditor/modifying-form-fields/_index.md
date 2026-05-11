@@ -1,5 +1,6 @@
 ---
 title: Modificando campos de formulario
+linktitle: Modificando campos de formulario
 type: docs
 weight: 20
 url: /es/python-net/modifying-form-fields/
@@ -9,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Modificar campos de formulario PDF en Python: agregar, mover, copiar, renombrar y eliminar campos
+AlternativeHeadline: 'Modificar campos de formulario PDF en Python: agregar, mover, copiar, renombrar y eliminar campos'
 Abstract: Aprende cómo modificar los campos de formulario PDF existentes usando Aspose.PDF for Python. Esta guía explica cómo gestionar los elementos del formulario añadiendo o eliminando elementos de lista, moviendo campos, eliminándolos o renombrándolos, convirtiendo campos de una sola línea en multilinea, y copiando campos dentro de documentos o entre ellos. Estas técnicas ayudan a los desarrolladores a actualizar dinámicamente los formularios PDF y adaptarlos a requisitos empresariales cambiantes sin recrear toda la estructura del formulario.
 ---
 

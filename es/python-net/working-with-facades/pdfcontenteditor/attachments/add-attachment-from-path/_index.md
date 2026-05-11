@@ -1,5 +1,6 @@
 ---
 title: Agregar adjunto desde la ruta
+linktitle: Agregar adjunto desde la ruta
 type: docs
 weight: 20
 url: /es/python-net/add-attachment-from-path/

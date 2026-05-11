@@ -1,5 +1,6 @@
 ---
 title: Obtener valores de campo
+linktitle: Obtener valores de campo
 type: docs
 weight: 50
 url: /es/python-net/get-field-values/

@@ -1,5 +1,6 @@
 ---
 title: Agregar anotaciones de marcado
+linktitle: Agregar anotaciones de marcado
 type: docs
 weight: 30
 url: /es/python-net/add-markup-annotation/

@@ -1,5 +1,6 @@
 ---
 title: Exportar a XML
+linktitle: Exportar a XML
 type: docs
 weight: 40
 url: /es/python-net/export-to-xml/

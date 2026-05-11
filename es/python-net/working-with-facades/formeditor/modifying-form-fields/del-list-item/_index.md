@@ -1,5 +1,6 @@
 ---
 title: Eliminar elemento de la lista
+linktitle: Eliminar elemento de la lista
 type: docs
 weight: 40
 url: /es/python-net/del-list-item/

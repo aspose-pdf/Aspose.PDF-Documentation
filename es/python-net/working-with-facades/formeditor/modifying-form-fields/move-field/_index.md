@@ -1,5 +1,6 @@
 ---
 title: Mover campo
+linktitle: Mover campo
 type: docs
 weight: 50
 url: /es/python-net/move-field/

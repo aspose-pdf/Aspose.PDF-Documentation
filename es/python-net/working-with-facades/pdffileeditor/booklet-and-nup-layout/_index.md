@@ -1,5 +1,6 @@
 ---
 title: Diseño de folleto y N-Up
+linktitle: Diseño de folleto y N-Up
 type: docs
 weight: 10
 url: /es/python-net/booklet-and-nup-layout/

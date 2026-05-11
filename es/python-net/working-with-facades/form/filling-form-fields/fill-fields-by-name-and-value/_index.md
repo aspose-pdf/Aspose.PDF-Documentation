@@ -1,5 +1,6 @@
 ---
 title: Rellenar campos por nombre y valor
+linktitle: Rellenar campos por nombre y valor
 type: docs
 weight: 60
 url: /es/python-net/fill-fields-by-name-and-value/

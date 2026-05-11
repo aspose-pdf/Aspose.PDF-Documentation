@@ -1,5 +1,6 @@
 ---
 title: Dividir PDF en páginas individuales
+linktitle: Dividir PDF en páginas individuales
 type: docs
 weight: 30
 url: /es/python-net/split-pdf-into-single-pages/

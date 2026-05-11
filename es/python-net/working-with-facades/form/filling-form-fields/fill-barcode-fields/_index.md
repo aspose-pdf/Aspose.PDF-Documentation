@@ -1,5 +1,6 @@
 ---
 title: Rellenar campos de código de barras
+linktitle: Rellenar campos de código de barras
 type: docs
 weight: 50
 url: /es/python-net/fill-barcode-fields/

@@ -1,5 +1,6 @@
 ---
 title: Administracion de firmas
+linktitle: Administracion de firmas
 type: docs
 weight: 80
 url: /es/python-net/signature-management/

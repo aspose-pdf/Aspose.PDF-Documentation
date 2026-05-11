@@ -1,5 +1,6 @@
 ---
 title: Exportar a XFDF
+linktitle: Exportar a XFDF
 type: docs
 weight: 20
 url: /es/python-net/export-to-xfdf/

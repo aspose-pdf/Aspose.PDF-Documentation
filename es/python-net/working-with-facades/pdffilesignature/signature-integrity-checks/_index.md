@@ -1,5 +1,6 @@
 ---
 title: Comprobaciones de Integridad de Firma
+linktitle: Comprobaciones de Integridad de Firma
 type: docs
 weight: 70
 url: /es/python-net/signature-integrity-checks/

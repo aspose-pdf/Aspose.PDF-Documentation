@@ -1,5 +1,6 @@
 ---
 title: Concatenar dos archivos PDF
+linktitle: Concatenar dos archivos PDF
 type: docs
 weight: 60
 url: /es/python-net/concatenate-two-files/

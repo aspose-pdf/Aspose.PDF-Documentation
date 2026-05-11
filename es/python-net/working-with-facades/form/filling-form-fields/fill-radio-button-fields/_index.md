@@ -1,5 +1,6 @@
 ---
 title: Rellenar campos de botones de radio
+linktitle: Rellenar campos de botones de radio
 type: docs
 weight: 30
 url: /es/python-net/fill-radio-button-fields/

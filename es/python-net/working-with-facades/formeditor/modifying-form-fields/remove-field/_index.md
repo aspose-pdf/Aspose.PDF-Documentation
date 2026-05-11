@@ -1,5 +1,6 @@
 ---
 title: Eliminar campo
+linktitle: Eliminar campo
 type: docs
 weight: 60
 url: /es/python-net/remove-field/

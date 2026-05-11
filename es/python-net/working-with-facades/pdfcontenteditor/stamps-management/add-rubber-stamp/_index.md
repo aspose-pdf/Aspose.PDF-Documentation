@@ -1,5 +1,6 @@
 ---
 title: Agregar sello de goma
+linktitle: Agregar sello de goma
 type: docs
 weight: 10
 url: /es/python-net/add-rubber-stamp/

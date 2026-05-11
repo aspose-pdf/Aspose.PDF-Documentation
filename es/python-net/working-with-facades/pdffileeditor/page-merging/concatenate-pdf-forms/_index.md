@@ -1,5 +1,6 @@
 ---
 title: Concatenar formularios PDF con sufijo único
+linktitle: Concatenar formularios PDF con sufijo único
 type: docs
 weight: 50
 url: /es/python-net/concatenate-pdf-forms/

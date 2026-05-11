@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación de línea
+linktitle: Agregar anotación de línea
 type: docs
 weight: 30
 url: /es/python-net/add-line-annotation/

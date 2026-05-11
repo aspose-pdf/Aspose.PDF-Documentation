@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación cuadrada
+linktitle: Agregar anotación cuadrada
 type: docs
 weight: 60
 url: /es/python-net/add-square-annotation/

@@ -1,5 +1,6 @@
 ---
 title: Combinar archivos PDF
+linktitle: Combinar archivos PDF
 type: docs
 weight: 40
 url: /es/python-net/page-merging/

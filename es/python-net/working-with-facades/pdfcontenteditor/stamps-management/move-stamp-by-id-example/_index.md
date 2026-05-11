@@ -1,5 +1,6 @@
 ---
 title: Mover sello por ID
+linktitle: Mover sello por ID
 type: docs
 weight: 80
 url: /es/python-net/move-stamp-by-id-example/

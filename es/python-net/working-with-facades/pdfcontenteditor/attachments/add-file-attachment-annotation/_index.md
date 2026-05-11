@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación de archivo adjunto
+linktitle: Agregar anotación de archivo adjunto
 type: docs
 weight: 30
 url: /es/python-net/add-file-attachment-annotation/

@@ -1,5 +1,6 @@
 ---
 title: Renombrar campo
+linktitle: Renombrar campo
 type: docs
 weight: 70
 url: /es/python-net/rename-field/

@@ -1,5 +1,6 @@
 ---
 title: Establecer metadatos PDF
+linktitle: Establecer metadatos PDF
 type: docs
 weight: 50
 url: /es/python-net/set-pdf-metadata/

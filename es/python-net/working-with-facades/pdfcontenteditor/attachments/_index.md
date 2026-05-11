@@ -1,5 +1,6 @@
 ---
 title: Adjuntos
+linktitle: Adjuntos
 type: docs
 weight: 20
 url: /es/python-net/attachments/

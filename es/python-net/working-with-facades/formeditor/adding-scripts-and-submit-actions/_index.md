@@ -1,5 +1,6 @@
 ---
 title: Agregar scripts y acciones de envío
+linktitle: Agregar scripts y acciones de envío
 type: docs
 weight: 40
 url: /es/python-net/adding-scripts-and-submit-actions/

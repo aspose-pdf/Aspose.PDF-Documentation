@@ -1,5 +1,6 @@
 ---
 title: Mover sello por índice
+linktitle: Mover sello por índice
 type: docs
 weight: 50
 url: /es/python-net/move-stamp-by-index/

@@ -1,5 +1,6 @@
 ---
 title: Agregar acción de marcador
+linktitle: Agregar acción de marcador
 type: docs
 weight: 10
 url: /es/python-net/add-bookmark-action/

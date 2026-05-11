@@ -1,5 +1,6 @@
 ---
 title: Verificación de firmas
+linktitle: Verificación de firmas
 type: docs
 weight: 90
 url: /es/python-net/signature-verification/

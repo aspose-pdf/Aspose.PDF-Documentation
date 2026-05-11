@@ -1,5 +1,6 @@
 ---
 title: Borrar metadatos de PDF
+linktitle: Borrar metadatos de PDF
 type: docs
 weight: 10
 url: /es/python-net/clear-pdf-metadata/

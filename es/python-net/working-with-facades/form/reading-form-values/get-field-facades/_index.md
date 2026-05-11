@@ -1,5 +1,6 @@
 ---
 title: Obtener fachadas de campo
+linktitle: Obtener fachadas de campo
 type: docs
 weight: 10
 url: /es/python-net/get-field-facades/

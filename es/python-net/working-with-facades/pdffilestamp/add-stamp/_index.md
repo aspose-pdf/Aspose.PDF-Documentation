@@ -1,5 +1,6 @@
 ---
 title: Agregar sello a PDF
+linktitle: Agregar sello a PDF
 type: docs
 weight: 40
 url: /es/python-net/add-stamp/

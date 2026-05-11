@@ -1,5 +1,6 @@
 ---
 title: Clase Form
+linktitle: Clase Form
 type: docs
 weight: 140
 url: /es/python-net/form-class/

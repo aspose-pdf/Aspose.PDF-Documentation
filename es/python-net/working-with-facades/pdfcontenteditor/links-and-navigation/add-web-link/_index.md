@@ -1,5 +1,6 @@
 ---
 title: Agregar enlace web
+linktitle: Agregar enlace web
 type: docs
 weight: 60
 url: /es/python-net/add-web-link/

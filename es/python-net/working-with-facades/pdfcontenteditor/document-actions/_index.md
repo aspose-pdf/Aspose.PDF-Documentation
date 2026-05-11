@@ -1,5 +1,6 @@
 ---
 title: Acciones del documento
+linktitle: Acciones del documento
 type: docs
 weight: 40
 url: /es/python-net/document-actions/

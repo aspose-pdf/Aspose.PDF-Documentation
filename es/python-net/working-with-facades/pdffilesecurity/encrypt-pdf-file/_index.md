@@ -1,5 +1,6 @@
 ---
 title: Cifrar archivo PDF
+linktitle: Cifrar archivo PDF
 type: docs
 weight: 30
 url: /es/python-net/encrypt-pdf-file/

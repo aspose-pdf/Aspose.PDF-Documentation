@@ -1,5 +1,6 @@
 ---
 title: Reemplazar datos XFA
+linktitle: Reemplazar datos XFA
 type: docs
 weight: 50
 url: /es/python-net/replace-xfa-data/

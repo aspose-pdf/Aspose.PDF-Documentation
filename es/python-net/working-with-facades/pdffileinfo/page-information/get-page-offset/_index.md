@@ -1,5 +1,6 @@
 ---
 title: Obtener desplazamiento de página
+linktitle: Obtener desplazamiento de página
 type: docs
 weight: 20
 url: /es/python-net/get-page-offset/

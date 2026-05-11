@@ -1,5 +1,6 @@
 ---
 title: Administrar Sello por ID
+linktitle: Administrar Sello por ID
 type: docs
 weight: 95
 url: /es/python-net/manage-stamp-by-id/

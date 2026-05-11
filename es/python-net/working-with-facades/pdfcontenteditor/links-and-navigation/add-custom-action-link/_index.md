@@ -1,5 +1,6 @@
 ---
 title: Agregar enlace de acción personalizada
+linktitle: Agregar enlace de acción personalizada
 type: docs
 weight: 20
 url: /es/python-net/add-custom-action-link/

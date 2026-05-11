@@ -1,5 +1,6 @@
 ---
 title: Agregar archivo adjunto
+linktitle: Agregar archivo adjunto
 type: docs
 weight: 10
 url: /es/python-net/add-attachment/

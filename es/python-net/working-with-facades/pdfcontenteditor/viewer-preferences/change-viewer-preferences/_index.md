@@ -1,5 +1,6 @@
 ---
 title: Cambiar preferencias del visor PDF
+linktitle: Cambiar preferencias del visor PDF
 type: docs
 weight: 10
 url: /es/python-net/change-viewer-preferences/

@@ -1,5 +1,6 @@
 ---
 title: Informacion de firmas
+linktitle: Informacion de firmas
 type: docs
 weight: 60
 url: /es/python-net/signature-information/

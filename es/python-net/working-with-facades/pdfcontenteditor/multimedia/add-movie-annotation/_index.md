@@ -1,5 +1,6 @@
 ---
 title: Agregar anotación de película
+linktitle: Agregar anotación de película
 type: docs
 weight: 10
 url: /es/python-net/add-movie-annotation/

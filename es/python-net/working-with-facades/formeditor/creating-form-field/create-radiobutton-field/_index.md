@@ -1,5 +1,6 @@
 ---
 title: Crear campo RadioButton
+linktitle: Crear campo RadioButton
 type: docs
 weight: 40
 url: /es/python-net/create-radiobutton-field/

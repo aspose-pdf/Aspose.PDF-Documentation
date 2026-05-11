@@ -1,5 +1,6 @@
 ---
 title: Eliminar imágenes de PDF
+linktitle: Eliminar imágenes de PDF
 type: docs
 weight: 20
 url: /es/python-net/delete-images/

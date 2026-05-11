@@ -1,5 +1,6 @@
 ---
 title: Firmar documentos PDF
+linktitle: Firmar documentos PDF
 type: docs
 weight: 10
 url: /es/python-net/pdf-signing/

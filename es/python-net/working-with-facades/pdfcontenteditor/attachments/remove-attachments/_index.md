@@ -1,5 +1,6 @@
 ---
 title: Eliminar archivos adjuntos
+linktitle: Eliminar archivos adjuntos
 type: docs
 weight: 50
 url: /es/python-net/remove-attachments/

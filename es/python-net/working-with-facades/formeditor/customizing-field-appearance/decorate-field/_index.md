@@ -1,5 +1,6 @@
 ---
 title: Decorar Campo
+linktitle: Decorar Campo
 type: docs
 weight: 10
 url: /es/python-net/decorate-field/

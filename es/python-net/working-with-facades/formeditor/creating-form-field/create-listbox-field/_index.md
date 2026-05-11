@@ -1,5 +1,6 @@
 ---
 title: Crear campo ListBox
+linktitle: Crear campo ListBox
 type: docs
 weight: 30
 url: /es/python-net/create-listbox-field/

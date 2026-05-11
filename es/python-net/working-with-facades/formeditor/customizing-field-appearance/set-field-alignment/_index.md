@@ -1,5 +1,6 @@
 ---
 title: Establecer alineación de campo
+linktitle: Establecer alineación de campo
 type: docs
 weight: 30
 url: /es/python-net/set-field-alignment/

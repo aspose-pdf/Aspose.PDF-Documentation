@@ -1,5 +1,6 @@
 ---
 title: Exportación de datos de formulario
+linktitle: Exportación de datos de formulario
 type: docs
 weight: 10
 url: /es/python-net/exporting-form-data/

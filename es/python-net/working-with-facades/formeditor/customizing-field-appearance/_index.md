@@ -1,5 +1,6 @@
 ---
 title: Personalización de la apariencia del campo
+linktitle: Personalización de la apariencia del campo
 type: docs
 weight: 30
 url: /es/python-net/customizing-field-appearance/

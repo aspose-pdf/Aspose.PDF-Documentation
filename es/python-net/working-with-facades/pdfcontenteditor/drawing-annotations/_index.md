@@ -1,5 +1,6 @@
 ---
 title: Anotaciones de dibujo
+linktitle: Anotaciones de dibujo
 type: docs
 weight: 50
 url: /es/python-net/drawing-annotations/

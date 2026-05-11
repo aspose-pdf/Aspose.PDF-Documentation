@@ -1,5 +1,6 @@
 ---
 title: Eliminar acción de apertura
+linktitle: Eliminar acción de apertura
 type: docs
 weight: 30
 url: /es/python-net/remove-open-action/

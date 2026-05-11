@@ -1,5 +1,6 @@
 ---
 title: Información de la página
+linktitle: Información de la página
 type: docs
 weight: 20
 url: /es/python-net/page-information/

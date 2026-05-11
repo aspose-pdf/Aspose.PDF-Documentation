@@ -1,5 +1,6 @@
 ---
 title: Establecer apariencia del campo
+linktitle: Establecer apariencia del campo
 type: docs
 weight: 50
 url: /es/python-net/set-field-appearance/

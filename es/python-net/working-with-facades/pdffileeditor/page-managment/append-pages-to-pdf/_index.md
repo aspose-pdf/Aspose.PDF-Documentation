@@ -1,5 +1,6 @@
 ---
 title: Agregar páginas al PDF
+linktitle: Agregar páginas al PDF
 type: docs
 weight: 10
 url: /es/python-net/append-pages-to-pdf/

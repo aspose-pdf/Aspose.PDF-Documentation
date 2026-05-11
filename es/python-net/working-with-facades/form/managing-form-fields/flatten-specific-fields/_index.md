@@ -1,5 +1,6 @@
 ---
 title: Aplanar campos específicos
+linktitle: Aplanar campos específicos
 type: docs
 weight: 20
 url: /es/python-net/flatten-specific-fields/
