@@ -4,7 +4,7 @@ linktitle: Advanced operations
 type: docs
 weight: 90
 url: /ru/python-net/advanced-operations/
-description: Aspose.PDF для Python через .NET может выполнять простые и легкие задачи, а также справляться с более сложными целями. Ознакомьтесь со следующим разделом для продвинутых пользователей и разработчиков.
+description: Aspose.PDF for Python via .NET может выполнять простые и легкие задачи, а также справляться с более сложными целями. Ознакомьтесь со следующим разделом для продвинутых пользователей и разработчиков.
 lastmod: "2023-04-17"
 sitemap:
     changefreq: "weekly"

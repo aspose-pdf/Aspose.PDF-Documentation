@@ -25,7 +25,7 @@ sitemap:
 
 # Установка
 
-## Оценка Aspose.PDF для Python через .NET
+## Оценка Aspose.PDF for Python via .NET
 
 Вы можете легко скачать Aspose.PDF для Python для оценки. Версия для оценки аналогична купленной версии. Версия для оценки становится лицензированной, когда вы добавляете несколько строк кода для применения лицензии.
 
@@ -40,6 +40,6 @@ sitemap:
 
 {{% /alert %}}
 
-## Установка Aspose.PDF для Python через .NET
+## Установка Aspose.PDF for Python via .NET
 
 Вы можете легко использовать aspose-pdf для Python, перейдя по ссылке для прямой загрузки [pip](https://pypi.org/project/aspose-pdf/). Запустите 'pip install aspose-pdf', чтобы загрузить пакет. Если у вас уже установлен Aspose.PDF для Python и вы хотите получить последнюю версию, пожалуйста, выполните 'pip install --upgrade aspose-pdf'.
