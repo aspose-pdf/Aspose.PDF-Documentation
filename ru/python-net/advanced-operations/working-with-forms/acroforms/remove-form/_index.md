@@ -7,7 +7,7 @@ url: /ru/python-net/remove-form/
 description: Удалить объекты форм со страниц PDF, используя Aspose.PDF for Python via .NET, включая полную очистку и целевое удаление.
 lastmod: "2026-04-28"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Удалить формы из PDF с помощью Aspose.PDF for Python via .NET

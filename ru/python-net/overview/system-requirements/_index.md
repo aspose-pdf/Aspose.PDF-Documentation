@@ -7,7 +7,7 @@ url: /ru/python-net/system-requirements/
 description: Этот раздел перечисляет поддерживаемые операционные системы, которые необходимы разработчику для успешной работы с Aspose.PDF для Python.
 lastmod: "2022-12-22"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

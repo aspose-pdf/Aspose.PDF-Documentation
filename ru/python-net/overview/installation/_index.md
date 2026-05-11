@@ -7,7 +7,7 @@ url: /ru/python-net/installation/
 description: В этом разделе представлено описание продукта и инструкции по установке Aspose.PDF для Python.
 lastmod: "2022-12-21"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

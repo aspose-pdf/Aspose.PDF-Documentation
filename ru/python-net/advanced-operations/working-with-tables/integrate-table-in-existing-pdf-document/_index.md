@@ -7,7 +7,7 @@ url: /ru/python-net/integrate-table/
 description: Узнайте, как интегрировать PDF‑таблицы с источниками данных, такими как базы данных и pandas DataFrames, на Python.
 lastmod: "2026-04-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Интегрировать PDF‑таблицы с базами данных и DataFrames с помощью Python

@@ -7,7 +7,7 @@ url: /ru/python-net/change-page-size/
 description: Узнайте, как читать и изменять размеры страниц PDF в Python.
 lastmod: "2026-04-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Изменение размера страницы с помощью Python

@@ -7,7 +7,7 @@ url: /ru/python-net/overview/
 lastmod: "2022-12-20"
 description: Обзор ключевых функций и поддерживаемых форматов Aspose.PDF for Python via .NET, руководство по установке и лицензированию библиотеки.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

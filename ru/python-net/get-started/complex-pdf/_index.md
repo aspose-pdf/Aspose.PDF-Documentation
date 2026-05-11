@@ -7,7 +7,7 @@ url: /ru/python-net/complex-pdf-example/
 description: Aspose.PDF for Python via .NET позволяет создавать более сложные документы, содержащие изображения, текстовые фрагменты и таблицы в одном документе.
 lastmod: "2022-12-22"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

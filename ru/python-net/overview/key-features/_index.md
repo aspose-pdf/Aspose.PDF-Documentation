@@ -7,7 +7,7 @@ url: /ru/python-net/key-features/
 description: Aspose.PDF for Python via .NET демонстрирует свои общие функции. Показывает поддерживаемые версии PDF и все манипуляции, которые мы можем делать с PDF.
 lastmod: "2022-12-21"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

@@ -9,7 +9,7 @@ is_root: true
 lastmod: "2022-10-24"
 description: Узнайте, как использовать Aspose.PDF Python через .NET для создания приложений для обработки PDF-документов на любой платформе с использованием Python. Ознакомьтесь с учебниками, примерами кода и многим другим.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
