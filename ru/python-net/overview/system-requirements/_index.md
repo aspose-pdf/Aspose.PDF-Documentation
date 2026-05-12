@@ -7,13 +7,13 @@ url: /ru/python-net/system-requirements/
 description: Этот раздел перечисляет поддерживаемые операционные системы, которые необходимы разработчику для успешной работы с Aspose.PDF для Python.
 lastmod: "2022-12-22"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
 ## Overview
 
-Aspose.PDF для Python через .NET, API для обработки PDF, который позволяет разработчикам работать с PDF-документами без необходимости в Microsoft Office® или Adobe Acrobat Automation. Aspose.PDF для Python можно использовать для разработки 32-битных и 64-битных приложений на Python для различных операционных систем (таких как Windows и Linux), на которых установлена версия Python 3.5 или выше.
+Aspose.PDF for Python via .NET, API для обработки PDF, который позволяет разработчикам работать с PDF-документами без необходимости в Microsoft Office® или Adobe Acrobat Automation. Aspose.PDF для Python можно использовать для разработки 32-битных и 64-битных приложений на Python для различных операционных систем (таких как Windows и Linux), на которых установлена версия Python 3.5 или выше.
 
 ## Supported Operating System
 

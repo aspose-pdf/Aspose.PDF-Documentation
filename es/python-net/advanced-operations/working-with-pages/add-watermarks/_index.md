@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-**Aspose.PDF para Python a través de .NET** permite agregar marcas de agua a su documento PDF utilizando Artefactos. Por favor, consulte este artículo para resolver su tarea.
+**Aspose.PDF for Python via .NET** permite agregar marcas de agua a su documento PDF utilizando Artefactos. Por favor, consulte este artículo para resolver su tarea.
 
 Para trabajar con artefactos, Aspose.PDF tiene dos clases: [Artifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) y [ArtifactCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/).
 
@@ -127,7 +127,7 @@ El siguiente fragmento de código muestra cómo obtener cada marca de agua en la
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python a través de .NET Library",
+    "name": "Aspose.PDF for Python via .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {

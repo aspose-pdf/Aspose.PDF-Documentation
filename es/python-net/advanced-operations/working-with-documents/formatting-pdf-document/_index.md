@@ -1,389 +1,256 @@
 ---
-title: Formateo de Documento PDF usando Python
-linktitle: Formateo de Documento PDF
+title: Formatear documentos PDF en Python
+linktitle: Formatear documento PDF
 type: docs
 weight: 11
 url: /es/python-net/formatting-pdf-document/
-description: Crear y formatear el Documento PDF con Aspose.PDF para Python vía .NET. Use el siguiente fragmento de código para resolver sus tareas.
-lastmod: "2023-04-12"
+description: Aprenda cómo formatear documentos PDF, incrustar fuentes, controlar la configuración del visor y ajustar las opciones de visualización en Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Formateo de documentos PDF usando Python
+Abstract: El artículo proporciona una guía completa sobre la manipulación y el formato de documentos PDF utilizando la biblioteca Aspose.PDF en Python. Cubre varios aspectos de la personalización de PDF, incluido el ajuste de la ventana del documento y las propiedades de visualización de página, como centrar la ventana, la dirección de lectura y ocultar elementos de la interfaz de usuario. El artículo explica cómo obtener y establecer estas propiedades programáticamente usando la clase `Document`. Además, aborda la gestión de fuentes, detallando cómo incrustar fuentes Standard Type 1 y otras fuentes en los PDFs, asegurando la portabilidad del documento y la consistencia visual entre sistemas. También destaca técnicas para establecer un nombre de fuente predeterminado, recuperar todas las fuentes de un PDF y mejorar la incrustación de fuentes usando `FontSubsetStrategy`. Asimismo, el artículo profundiza en el ajuste del factor de zoom de los documentos PDF mediante la clase `GoToAction` y la configuración de propiedades predefinidas del cuadro de diálogo de impresión, incluidas las opciones de impresión a doble cara. Los fragmentos de código acompañan a cada sección, proporcionando ejemplos prácticos para implementar estas funcionalidades.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Formateo de Documento PDF usando Python",
-    "alternativeHeadline": "Cómo formatear Documento PDF en Python vía .NET",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, dotnet, python, formatear documento pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentos Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/formatting-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/formatting-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Crear y formatear el Documento PDF con Aspose.PDF para Python vía .NET. Use el siguiente fragmento de código para resolver sus tareas."
-}
-</script>
 
+Esta guía es útil cuando necesitas controlar el comportamiento del visor PDF, la incrustación de fuentes, la configuración de visualización predeterminada o las preferencias de impresión en documentos generados con Python.
 
-## Formateo de Documento PDF
+## Formatear documento PDF
 
-### Obtener Propiedades de la Ventana del Documento y de la Visualización de Páginas
+### Obtener propiedades de ventana del documento y de visualización de página
 
-Este tema te ayuda a entender cómo obtener las propiedades de la ventana del documento, la aplicación de visualización y cómo se muestran las páginas. Para establecer estas propiedades:
+Este tema le ayuda a comprender cómo obtener las propiedades de la ventana del documento, la aplicación del visor y cómo se muestran las páginas. Para establecer estas propiedades:
 
-Abre el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Ahora, puedes establecer las propiedades del objeto Document, tales como
+Abra el archivo PDF usando el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) clase. Ahora, puedes establecer las propiedades del objeto Document, como
 
-- CenterWindow – Centrar la ventana del documento en la pantalla. Por defecto: falso.
-- Direction – Orden de lectura. Esto determina cómo se disponen las páginas cuando se muestran lado a lado. Por defecto: de izquierda a derecha.
-- DisplayDocTitle – Mostrar el título del documento en la barra de título de la ventana del documento. Por defecto: falso (el título se muestra).
-- HideMenuBar – Ocultar o mostrar la barra de menú de la ventana del documento. Por defecto: falso (la barra de menú se muestra).
-- HideToolBar – Ocultar o mostrar la barra de herramientas de la ventana del documento. Por defecto: falso (la barra de herramientas se muestra).
-- HideWindowUI – Ocultar o mostrar elementos de la ventana del documento como las barras de desplazamiento.
- Default: false (se muestran los elementos de la interfaz de usuario).
+- CenterWindow – Centrar la ventana del documento en la pantalla. Predeterminado: false.
+- Dirección – Orden de lectura. Esto determina cómo se disponen las páginas cuando se muestran una al lado de la otra. Predeterminado: de izquierda a derecha.
+- DisplayDocTitle – Mostrar el título del documento en la barra de título de la ventana del documento. Predeterminado: false (el título se muestra).
+- HideMenuBar – Ocultar o mostrar la barra de menús de la ventana del documento. Predeterminado: false (la barra de menús se muestra).
+- HideToolBar – Ocultar o mostrar la barra de herramientas de la ventana del documento. Predeterminado: false (la barra de herramientas se muestra).
+- HideWindowUI – Ocultar o mostrar los elementos de la ventana del documento, como las barras de desplazamiento. Predeterminado: false (los elementos de la UI se muestran).
 - NonFullScreenPageMode – Cómo se muestra el documento cuando no está en modo de pantalla completa.
-- PageLayout – El diseño de la página.
-- PageMode – Cómo se muestra el documento cuando se abre por primera vez. Las opciones son mostrar miniaturas, pantalla completa, mostrar panel de adjuntos.
+- PageLayout – El diseño de página.
+- PageMode – Cómo se muestra el documento al abrirlo por primera vez. Las opciones son mostrar miniaturas, pantalla completa, mostrar el panel de adjuntos.
 
-El siguiente fragmento de código te muestra cómo obtener las propiedades usando la clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+El siguiente fragmento de código le muestra cómo obtener las propiedades usando [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) clase.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Abrir documento
+def get_document_window(input_pdf, output_pdf):
+    """Print document window metadata for inspection."""
     document = ap.Document(input_pdf)
 
-    # Obtener diferentes propiedades del documento
-    # Posición de la ventana del documento - Predeterminado: falso
-    print("CenterWindow :", document.center_window)
-
-    # Orden de lectura predominante; determina la posición de la página
-    # Cuando se muestra lado a lado - Predeterminado: L2R
-    print("Direction :", document.direction)
-
-    # Si la barra de título de la ventana debe mostrar el título del documento
-    # Si es falso, la barra de título muestra el nombre del archivo PDF - Predeterminado: falso
-    print("DisplayDocTitle :", document.display_doc_title)
-
-    # Si se redimensiona la ventana del documento para ajustarse al tamaño de
-    # La primera página mostrada - Predeterminado: falso
-    print("FitWindow :", document.fit_window)
-
-    # Si se oculta la barra de menú de la aplicación del visor - Predeterminado: falso
-    print("HideMenuBar :", document.hide_menubar)
-
-    # Si se oculta la barra de herramientas de la aplicación del visor - Predeterminado: falso
-    print("HideToolBar :", document.hide_tool_bar)
-
-    # Si se ocultan elementos de la interfaz de usuario como barras de desplazamiento
-    # Y solo se muestran los contenidos de la página - Predeterminado: falso
-    print("HideWindowUI :", document.hide_window_ui)
-
-    # Modo de página del documento. Cómo mostrar el documento al salir del modo de pantalla completa.
-    print("NonFullScreenPageMode :", document.non_full_screen_page_mode)
-
-    # El diseño de la página, es decir, una sola página, una columna
-    print("PageLayout :", document.page_layout)
-
-    # Cómo debe mostrarse el documento cuando se abre
-    # Es decir, mostrar miniaturas, pantalla completa, mostrar panel de adjuntos
-    print("pageMode :", document.page_mode)
-
+    print("CenterWindow:", document.center_window)
+    print("Direction:", document.direction)
+    print("DisplayDocTitle:", document.display_doc_title)
+    print("FitWindow:", document.fit_window)
+    print("HideMenuBar:", document.hide_menubar)
+    print("HideToolBar:", document.hide_tool_bar)
+    print("HideWindowUI:", document.hide_window_ui)
+    print("NonFullScreenPageMode:", document.non_full_screen_page_mode)
+    print("PageLayout:", document.page_layout)
+    print("PageMode:", document.page_mode)
 ```
 
-### Configurar Propiedades de Ventana de Documento y Visualización de Página
+### Establecer propiedades de la ventana del documento y de la visualización de la página
 
-Este tema explica cómo configurar las propiedades de la ventana del documento, la aplicación de visualización y la visualización de la página. Para configurar estas diferentes propiedades:
+Este tema explica cómo establecer las propiedades de la ventana del documento, la aplicación del visor y la visualización de la página. Para establecer estas diferentes propiedades:
 
-1. Abra el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Configure las propiedades del objeto Document.
+1. Abra el archivo PDF usando el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) clase.
+1. Establezca las propiedades del objeto Document.
 1. Guarde el archivo PDF actualizado usando el método save.
 
 Las propiedades disponibles son:
 
-- CenterWindow
-- Direction
+- CentrarVentana
+- Dirección
 - DisplayDocTitle
-- FitWindow
-- HideMenuBar
-- HideToolBar
-- HideWindowUI
+- AjustarVentana
+- OcultarBarraDeMenú
+- OcultarBarraDeHerramientas
+- OcultarVentanaUI
 - NonFullScreenPageMode
-- PageLayout
-- PageMode
+- Diseño de página
+- Modo de página
 
-Cada una se utiliza y describe en el código a continuación. El siguiente fragmento de código le muestra cómo configurar las propiedades usando la clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+Cada uno se usa y se describe en el código a continuación. El siguiente - fragmento de código muestra cómo establecer las propiedades usando el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) clase.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Abrir documento
+def set_document_window(input_pdf, output_pdf):
+    """Set document window properties and save the result."""
     document = ap.Document(input_pdf)
 
-    # Configurar diferentes propiedades del documento
-    # Especificar la posición de la ventana del documento - Predeterminado: false
     document.center_window = True
-
-    # Orden de lectura predominante; determina la posición de la página
-    # Cuando se muestra lado a lado - Predeterminado: L2R
     document.direction = ap.Direction.R2L
-
-    # Especificar si la barra de título de la ventana debe mostrar el título del documento
-    # Si es false, la barra de título muestra el nombre del archivo PDF - Predeterminado: false
     document.display_doc_title = True
-
-    # Especificar si redimensionar la ventana del documento para ajustar el tamaño de
-    # La primera página mostrada - Predeterminado: false
     document.fit_window = True
-
-    # Especificar si ocultar la barra de menú de la aplicación de visualización - Predeterminado: false
     document.hide_menubar = True
-
-    # Especificar si ocultar la barra de herramientas de la aplicación de visualización - Predeterminado: false
     document.hide_tool_bar = True
-
-    # Especificar si ocultar elementos de la interfaz de usuario como barras de desplazamiento
-    # Y dejar solo el contenido de la página mostrado - Predeterminado: false
     document.hide_window_ui = True
-
-    # Modo de página del documento. especificar cómo mostrar el documento al salir del modo de pantalla completa.
     document.non_full_screen_page_mode = ap.PageMode.USE_OC
-
-    # Especificar el diseño de página, es decir, página única, una columna
     document.page_layout = ap.PageLayout.TWO_COLUMN_LEFT
-
-    # Especificar cómo se debe mostrar el documento al abrirse
-    # Es decir, mostrar miniaturas, pantalla completa, mostrar panel de adjuntos
     document.page_mode = ap.PageMode.USE_THUMBS
 
-    # Guardar archivo PDF actualizado
     document.save(output_pdf)
 ```
 
+### Incrustación de fuentes estándar Tipo 1
 
-### Incrustación de Fuentes Tipo 1 Estándar
-
-Algunos documentos PDF tienen fuentes de un conjunto especial de fuentes de Adobe. Las fuentes de este conjunto se llaman "Fuentes Tipo 1 Estándar". Este conjunto incluye 14 fuentes y la incrustación de este tipo de fuentes requiere el uso de banderas especiales, es decir, [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). A continuación se muestra el fragmento de código que se puede usar para obtener un documento con todas las fuentes incrustadas, incluidas las Fuentes Tipo 1 Estándar:
+Algunos documentos PDF tienen fuentes de un conjunto especial de fuentes de Adobe. Las fuentes de este conjunto se denominan “Standard Type 1 Fonts”. Este conjunto incluye 14 fuentes y la incrustación de este tipo de fuentes requiere usar banderas especiales, es decir [incorporar_fuentes_estándar](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). A continuación se muestra el fragmento de código que se puede usar para obtener un documento con todas las fuentes incrustadas, incluidas las fuentes estándar Type 1:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Cargar un documento PDF existente
+def embedded_fonts(input_pdf, output_pdf):
+    """Ensure fonts in an existing PDF are embedded."""
     document = ap.Document(input_pdf)
-    # Establecer la propiedad EmbedStandardFonts del documento
     document.embed_standard_fonts = True
+
     for page in document.pages:
-        if page.resources.fonts != None:
+        if page.resources.fonts:
             for page_font in page.resources.fonts:
-                # Verificar si la fuente ya está incrustada
                 if not page_font.is_embedded:
                     page_font.is_embedded = True
 
     document.save(output_pdf)
 ```
 
-### Incrustación de Fuentes al crear PDF
+### Incrustar fuentes al crear PDF
 
-Si necesita usar cualquier fuente que no sean las 14 fuentes principales compatibles con Adobe Reader, debe incrustar la descripción de la fuente al generar el archivo PDF. Si la información de la fuente no está incrustada, Adobe Reader la tomará del Sistema Operativo si está instalada en el sistema, o construirá una fuente sustituta de acuerdo con el descriptor de fuente en el PDF.
+Si necesita usar cualquier fuente que no sea una de las 14 fuentes básicas admitidas por Adobe Reader, debe incrustar la descripción de la fuente al generar el archivo PDF. Si la información de la fuente no está incrustada, Adobe Reader la tomará del Sistema Operativo si está instalada en el sistema, o construirá una fuente de sustitución según el descriptor de fuente en el PDF.
 
->Tenga en cuenta que la fuente incrustada debe estar instalada en la máquina anfitriona, es decir, en el caso del siguiente código, la fuente 'Univers Condensed' está instalada en el sistema.
+>Tenga en cuenta que la fuente incrustada debe estar instalada en la máquina host, es decir, en el caso del siguiente código la fuente ‘Univers Condensed’ está instalada en el sistema.
 
-Usamos la propiedad 'is_embedded' para incrustar la información de la fuente en el archivo PDF. Establecer el valor de esta propiedad en 'True' incrustará el archivo completo de la fuente en el PDF, sabiendo que aumentará el tamaño del archivo PDF. A continuación se muestra el fragmento de código que se puede usar para incrustar la información de la fuente en el PDF.
+Utilizamos la propiedad 'is_embedded' para incrustar la información de la fuente en el archivo PDF. Establecer el valor de esta propiedad a 'True' incrustará el archivo de fuente completo en el PDF, sabiendo que aumentará el tamaño del archivo PDF. A continuación se muestra el fragmento de código que puede usarse para incrustar la información de la fuente en el PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Crear una instancia del objeto Pdf llamando a su constructor vacío
-    doc = ap.Document()
-
-    # Crear una sección en el objeto Pdf
-    page = doc.pages.add()
+def embedded_fonts_in_new_document(input_pdf, output_pdf):
+    """Embed fonts while generating a document from scratch."""
+    document = ap.Document()
+    page = document.pages.add()
 
     fragment = ap.text.TextFragment("")
-    segment = ap.text.TextSegment(" Este es un texto de ejemplo usando una fuente personalizada.")
-    ts = ap.text.TextState()
-    ts.font = ap.text.FontRepository.find_font("Arial")
-    ts.font.is_embedded = True
-    segment.text_state = ts
+    segment = ap.text.TextSegment(" This is a sample text using Custom font.")
+    text_state = ap.text.TextState()
+    text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_state.font.is_embedded = True
+    segment.text_state = text_state
     fragment.segments.append(segment)
     page.paragraphs.add(fragment)
 
-    # Guardar documento PDF
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
+### Establecer nombre de fuente predeterminado al guardar PDF
 
-### Establecer el Nombre de Fuente Predeterminado al Guardar PDF
-
-Cuando un documento PDF contiene fuentes que no están disponibles en el documento mismo y en el dispositivo, la API reemplaza estas fuentes con la fuente predeterminada. Si la fuente está disponible (instalada en el dispositivo o incrustada en el documento), el PDF de salida debería tener la misma fuente (no debería ser reemplazada por la fuente predeterminada). El valor de la fuente predeterminada debe contener el nombre de la fuente (no la ruta a los archivos de fuente). Hemos implementado una función para establecer el nombre de la fuente predeterminada al guardar un documento como PDF. El siguiente fragmento de código puede usarse para establecer la fuente predeterminada:
+Cuando un documento PDF contiene fuentes que no están disponibles en el propio documento ni en el dispositivo, la API reemplaza estas fuentes por la fuente predeterminada. Si la fuente está disponible (instalada en el dispositivo o incrustada en el documento), el PDF de salida debe conservar la misma fuente (no debe ser reemplazada por la fuente predeterminada). El valor de la fuente predeterminada debe contener el nombre de la fuente (no la ruta a los archivos de fuente). Hemos implementado una función para establecer el nombre de la fuente predeterminada al guardar un documento como PDF. El siguiente fragmento de código puede usarse para establecer la fuente predeterminada:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Cargar un documento PDF existente con fuente faltante
+def set_default_font(input_pdf, output_pdf):
+    """Assign a fallback font when saving a PDF."""
     document = ap.Document(input_pdf)
 
-    pdfSaveOptions = ap.PdfSaveOptions()
-    # Especificar el Nombre de Fuente Predeterminado
-    newName = "Arial"
-    pdfSaveOptions.default_font_name = newName
-    document.save(output_pdf, pdfSaveOptions)
+    save_options = ap.PdfSaveOptions()
+    save_options.default_font_name = "Arial"
+    document.save(output_pdf, save_options)
 ```
 
-### Obtener Todas las Fuentes de un Documento PDF
+### Obtener todas las fuentes del documento PDF
 
-En caso de que desees obtener todas las fuentes de un documento PDF, puedes usar el método [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) proporcionado en la clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
- Por favor, revise el siguiente fragmento de código para obtener todas las fuentes de un documento PDF existente:
+En caso de que quieras obtener todas las fuentes de un documento PDF, puedes usar [utilidades_de_fuente](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) método proporcionado en [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) clase. Por favor, revisa el siguiente fragmento de código para obtener todas las fuentes de un documento PDF existente:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    fonts = doc.font_utilities.get_all_fonts()
-    for font in fonts:
+def get_all_fonts(input_pdf, output_pdf):
+    """Print all fonts referenced by a document."""
+    document = ap.Document(input_pdf)
+    for font in document.font_utilities.get_all_fonts():
         print(font.font_name)
 ```
 
-### Mejorar la Incrustación de Fuentes usando FontSubsetStrategy
+### Mejorar la incrustación de fuentes usando FontSubsetStrategy
 
-El siguiente fragmento de código muestra cómo establecer la propiedad [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) utilizada en [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties):
+El siguiente fragmento de código muestra cómo establecer [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) usado [utilidades_de_fuente](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) propiedad:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    # Todas las fuentes se incrustarán como subconjunto en el documento en caso de SubsetAllFonts.
-    doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
-    # El subconjunto de fuentes se incrustará para las fuentes completamente incrustadas, pero las fuentes que no están incrustadas en el documento no se verán afectadas.
-    doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY)
-    doc.save(output_pdf)
+def improve_fonts_embedding(input_pdf, output_pdf):
+    """Apply different font subset strategies to reduce file size."""
+    document = ap.Document(input_pdf)
+
+    document.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
+    document.font_utilities.subset_fonts(
+        ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY
+    )
+
+    document.save(output_pdf)
 ```
 
-### Obtener-Establecer Factor de Zoom de un Archivo PDF
+### Obtener-Establecer factor de zoom del archivo PDF
 
 A veces, deseas determinar cuál es el factor de zoom actual de un documento PDF. Con Aspose.Pdf, puedes averiguar el valor actual así como establecer uno.
 
-La propiedad Destination de la clase [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) te permite obtener el valor de zoom asociado con un archivo PDF. De manera similar, puede ser utilizada para establecer el factor de zoom de un archivo.
+El [AcciónIrA](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) La propiedad Destination de la clase permite obtener el valor de zoom asociado a un archivo PDF. De manera similar, puede usarse para establecer el factor de zoom de un archivo.
 
-#### Establecer Factor de Zoom
+#### Establecer factor de zoom
 
 El siguiente fragmento de código muestra cómo establecer el factor de zoom de un archivo PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Instanciar nuevo objeto Document
-    doc = ap.Document(input_pdf)
+def set_zoom_factor(input_pdf, output_pdf):
+    """Set an initial zoom level via document open action."""
+    document = ap.Document(input_pdf)
 
-    action = ap.annotations.GoToAction(ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5))
-    doc.open_action = action
-    # Guardar el documento
-    doc.save(output_pdf)
+    action = ap.annotations.GoToAction(
+        ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5)
+    )
+    document.open_action = action
+    document.save(output_pdf)
 ```
 
-#### Obtener Factor de Zoom
+#### Obtener factor de zoom
 
 El siguiente fragmento de código muestra cómo obtener el factor de zoom de un archivo PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Instanciar nuevo objeto Document
-    doc = ap.Document(input_pdf)
+def get_zoom_factor(input_pdf, output_pdf):
+    """Print the zoom level configured in the document open action."""
+    document = ap.Document(input_pdf)
 
-    # Crear objeto GoToAction
-    action = doc.open_action
-
-    # Obtener el factor de Zoom del archivo PDF
-    print(action.destination.zoom)
+    action = document.open_action
+    if action and action.destination:
+        print("Zoom:", action.destination.zoom)
+    else:
+        print("Zoom: not set")
 ```
 
+## Temas de documentos relacionados
 
-### Configuración de Propiedades Preestablecidas del Diálogo de Impresión
-
-Aspose.PDF permite configurar los miembros [DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members) de un documento PDF. Esto te permite cambiar la propiedad DuplexMode de un documento PDF, que está configurada como simplex por defecto. Esto se puede lograr utilizando dos metodologías diferentes como se muestra a continuación.
-
-```python
-
-    import aspose.pdf as ap
-
-    doc = ap.Document()
-    doc.pages.add()
-    doc.duplex = ap.PrintDuplex.DUPLEX_FLIP_LONG_EDGE
-    doc.save(output_pdf)
-```
-
-### Configuración de Propiedades Preestablecidas del Diálogo de Impresión usando el Editor de Contenido PDF
-
-```python
-
-    import aspose.pdf as ap
-
-    ed = ap.facades.PdfContentEditor()
-    ed.bind_pdf(input_pdf)
-    if (ed.get_viewer_preference() & ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE) > 0:
-        print("El archivo tiene dúplex con el borde corto")
-
-    ed.change_viewer_preference(ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE)
-    ed.save(output_pdf)
-```
+- [Trabajar con documentos PDF en Python](/pdf/es/python-net/working-with-documents/)
+- [Crear archivos PDF en Python](/pdf/es/python-net/create-pdf-document/)
+- [Manipular documentos PDF en Python](/pdf/es/python-net/manipulate-pdf-document/)
+- [Optimizar archivos PDF en Python](/pdf/es/python-net/optimize-pdf/)

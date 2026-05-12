@@ -4,33 +4,30 @@ linktitle: Cifrar y descifrar archivo PDF
 type: docs
 weight: 70
 url: /es/python-net/protect-pdf-file/
-description: Aprende cómo cifrar archivos, descifrar PDFs protegidos y cambiar contraseñas en Python.
-lastmod: "2026-04-15"
+description: Aprenda cómo cifrar archivos, descifrar PDFs protegidos y cambiar contraseñas en Python.
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Establecer permisos de PDF y gestionar el cifrado en Python
-Abstract: >
-    Esta página de documentación explica cómo establecer privilegios de documento, aplicar cifrado y descifrar archivos PDF usando Aspose.PDF for Python. Guía a los desarrolladores a través de la configuración de contraseñas de usuario y de propietario, definiendo restricciones de acceso (como imprimir, copiar o editar). Los ejemplos de código ilustran cómo proteger contenido sensible y gestionar la seguridad de PDF de manera eficaz dentro de aplicaciones Python, garantizando un acceso controlado y la confidencialidad de los datos.
+Abstract: Esta página explica cómo establecer privilegios de documento, aplicar cifrado, descifrar archivos PDF y cambiar contraseñas utilizando Aspose.PDF for Python via .NET. Cubre la configuración de contraseñas de usuario y propietario, la definición de restricciones de acceso (como imprimir, copiar y editar), y la gestión de la seguridad de PDF en aplicaciones Python.
 ---
 
 ## Cifrar PDF con contraseña y permisos
 
-Aspose.PDF for Python muestra cómo asegurar un documento PDF usando cifrado basado en contraseña:
+Utilice Aspose.PDF for Python via .NET para proteger un documento PDF con cifrado basado en contraseña y permisos restringidos.
 
-1. Cargar el documento PDF.
-1. Crear un objeto de permisos.
-1. Permitir permisos específicos.
-1. Establecer contraseñas de usuario y propietario.
-1. Seleccionar el algoritmo de cifrado.
-1. Aplicar cifrado al documento.
-1. Guardar el PDF cifrado.
+1. Cargue el documento PDF.
+1. Cree un objeto de permisos `DocumentPrivilege`.
+1. Habilite los permisos requeridos.
+1. Establezca las contraseñas de usuario y de propietario.
+1. Elija el algoritmo de cifrado.
+1. Aplique el cifrado al documento.
+1. Guarde el PDF cifrado.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def encrypt_password(infile, outfile):
     """
@@ -66,19 +63,17 @@ def encrypt_password(infile, outfile):
 
 ## Cifrar PDF con permisos completos
 
-Encripta un documento PDF mientras permite permisos de acceso completo usando Aspose.PDF for Python. El ejemplo utiliza cifrado RC4 de 128 bits, lo que garantiza una seguridad básica manteniendo la compatibilidad con lectores PDF más antiguos.
+Cifre un documento PDF mientras permite permisos de acceso completo usando Aspose.PDF for Python via .NET. Este ejemplo usa cifrado RC4 de 128 bits para compatibilidad con visores PDF más antiguos.
 
-1. Cargar el documento PDF.
-1. Define contraseñas de usuario y propietario.
-1. Establece permisos de acceso completo.
-1. Seleccionar el algoritmo de cifrado.
-1. Llama al método encrypt() con contraseñas, permisos y algoritmo.
-1. Guardar el PDF cifrado.
+1. Cargue el documento PDF.
+1. Defina las contraseñas de usuario y propietario.
+1. Establezca permisos de acceso completo.
+1. Elija el algoritmo de cifrado.
+1. Llame a `encrypt()` con contraseñas, permisos y algoritmo.
+1. Guarde el PDF cifrado.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def encrypt_pdf_file(infile, outfile):
     """
@@ -110,16 +105,14 @@ def encrypt_pdf_file(infile, outfile):
 
 ## Descifrar archivo PDF usando la contraseña del propietario
 
-Para eliminar la protección por contraseña y restaurar el acceso completo:
+Para eliminar la protección con contraseña y restaurar el acceso completo:
 
-1. Cargue el PDF encriptado usando la contraseña correcta ('password' es la contraseña de usuario o de propietario).
-1. Elimine toda la protección con contraseña y los ajustes de encriptación del documento.
-1. Guarde el PDF ahora sin protección en el archivo de salida especificado.
+1. Cargue el PDF cifrado usando la contraseña correcta (usuario o propietario).
+1. Elimine toda la protección con contraseña y los ajustes de cifrado del documento.
+1. Guarde el PDF ahora desprotegido en el archivo de salida especificado.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def decrypt_pdf_file(infile, outfile):
     """
@@ -145,16 +138,14 @@ def decrypt_pdf_file(infile, outfile):
 
 ## Cambiar la contraseña de un archivo PDF
 
-Actualizar las credenciales de seguridad (contraseñas de usuario y propietario) de un documento PDF mientras se preservan su contenido y estructura.
+Actualice las credenciales de seguridad (contraseñas de usuario y propietario) de un documento PDF mientras preserva su contenido y estructura.
 
-1. Abra el PDF utilizando la contraseña de propietario existente ('owner'), que otorga acceso total, incluida la posibilidad de cambiar la configuración de seguridad.
-1. Reemplace las contraseñas antiguas con una nueva contraseña de usuario ('newuser') y una nueva contraseña de propietario ('newowner').
+1. Abra el PDF usando la contraseña de propietario existente, que brinda acceso completo a la configuración de seguridad.
+1. Reemplace las contraseñas antiguas por una nueva contraseña de usuario y una nueva contraseña de propietario.
 1. Guarde el PDF con la configuración de contraseñas actualizada.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def change_password(infile, outfile):
     """
@@ -179,21 +170,19 @@ def change_password(infile, outfile):
 
 ```
 
-## Determinar la contraseña correcta del array
+## Determinar la contraseña correcta de una lista
 
-En algunos escenarios, es posible que necesite identificar la contraseña correcta de una lista de posibles candidatos para acceder a un PDF protegido. El fragmento de código a continuación muestra cómo comprobar si un archivo PDF está protegido con contraseña y luego intentar desbloquearlo iterando a través de una lista predefinida de contraseñas utilizando Aspose.PDF for Python via .NET.
+En algunos escenarios, es posible que necesite identificar la contraseña correcta de una lista de candidatos para acceder a un PDF protegido. El fragmento a continuación verifica si un archivo PDF está cifrado y luego intenta abrirlo iterando a través de una lista predefinida de contraseñas.
 
 El proceso incluye:
 
-1. Usando PdfFileInfo para detectar si el PDF está encriptado.
-1. Abra el PDF con cada contraseña usando ap.Document().
-1. Si tiene éxito, imprime el número de páginas.
-1. Si no, captura la excepción y reporta la contraseña fallida.
+1. Use `PdfFileInfo` para detectar si el PDF está cifrado.
+1. Abra el PDF con cada contraseña usando `ap.Document()`.
+1. Si tiene éxito, imprima el número de páginas.
+1. Si no, captura la excepción e informa la contraseña fallida.
 
 ```python
 import aspose.pdf as ap
-import sys
-from os import path
 
 def determine_correct_password_from_list(infile):
     """

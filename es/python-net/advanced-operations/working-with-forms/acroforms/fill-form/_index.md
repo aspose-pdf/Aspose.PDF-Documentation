@@ -1,164 +1,53 @@
 ---
-title: Rellenar AcroForm - Rellenar Formulario PDF usando Python
+title: Rellenar AcroForm - Rellenar formulario PDF usando Python
 linktitle: Rellenar AcroForm
 type: docs
 weight: 20
 url: /es/python-net/fill-form/
-description: Puede rellenar formularios en su documento PDF con la biblioteca Aspose.PDF para Python.
-lastmod: "2023-02-17"
+description: Rellenar campos AcroForm en un documento PDF mediante Aspose.PDF for Python via .NET.
+lastmod: "2026-04-28"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cómo rellenar un campo de formulario en PDF usando Python
+Abstract: Este artículo explica cómo rellenar campos AcroForm en un documento PDF mediante Aspose.PDF for Python via .NET. El ejemplo utiliza la fachada Form, asigna nombres de campos a nuevos valores en un diccionario, actualiza los campos coincidentes y guarda el PDF de salida. Este enfoque es útil para flujos de trabajo automatizados de completado de documentos y procesamiento masivo de formularios.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Rellenar AcroForm",
-    "alternativeHeadline": "Cómo rellenar AcroForm en PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, rellenar acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/fill-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/fill-form/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Puede rellenar formularios en su documento PDF con la biblioteca Aspose.PDF para Python."
-}
-</script>
 
+## Rellenar campo de formulario en un documento PDF
 
-## Rellenar un Campo de Formulario en un Documento PDF
+El siguiente ejemplo rellena varios campos en un formulario PDF existente mediante el [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form/) fachada.
 
-Para rellenar un campo de formulario, obtenga el campo de la colección [Formulario](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) del objeto Documento. Luego, establezca el valor del campo utilizando la propiedad [valor](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#properties) del campo.
+Utilice los siguientes pasos:
 
-Este ejemplo selecciona un [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) y establece su valor utilizando la propiedad Valor.
+1. Crea un diccionario con nombres de campo y valores.
+1. Vincula el PDF de entrada a un objeto Form.
+1. Itera a través de los campos de formulario disponibles.
+1. Rellena los campos que existen en el diccionario.
+1. Guarda el PDF actualizado.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def fill_form(input_file_name, output_file_name):
+    new_field_values = {
+        "First Name": "Alexander_New",
+        "Last Name": "Greenfield_New",
+        "City": "Yellowtown_New",
+        "Country": "Redland_New",
+    }
 
-    # Abrir documento
-    pdfDocument = ap.Document(input_file)
-    for formField in pdfDocument.form.fields:
-        if formField.partial_name == "Field 1":
-            # Modificar valor del campo
-            formField.value = "777"
+    form = ap.facades.Form(input_file_name)
 
-    # Guardar documento actualizado
-    pdfDocument.save(output_pdf)
+    for field_name in form.field_names:
+        if field_name in new_field_values:
+            form.fill_field(field_name, new_field_values[field_name])
+
+    form.save(output_file_name)
 ```
 
+## Temas relacionados
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Crear AcroForm](/pdf/es/python-net/create-form/)
+- [Extraer AcroForm](/pdf/es/python-net/extract-form/)
+- [Importar y Exportar datos de Form](/pdf/es/python-net/import-export-form-data/)

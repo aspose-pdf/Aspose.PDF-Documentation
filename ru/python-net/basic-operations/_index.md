@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ru/python-net/basic-operations/
 lastmod: "2025-02-27"
-description: Раздел базовых операций описывает возможности открытия и сохранения PDF-документов с помощью Aspose.PDF для Python через .NET.
+description: Раздел базовых операций описывает возможности открытия и сохранения PDF-документов с помощью Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
