@@ -4,10 +4,10 @@ linktitle: Основные функции
 type: docs
 weight: 20
 url: /ru/python-net/key-features/
-description: Aspose.PDF для Python через .NET демонстрирует свои общие функции. Показывает поддерживаемые версии PDF и все манипуляции, которые мы можем делать с PDF.
+description: Aspose.PDF for Python via .NET демонстрирует свои общие функции. Показывает поддерживаемые версии PDF и все манипуляции, которые мы можем делать с PDF.
 lastmod: "2022-12-21"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -22,7 +22,7 @@ sitemap:
 
 ## Функции конверсии
 
-Библиотека Aspose.PDF для Python через .NET позволяет успешно, быстро и легко конвертировать ваши PDF-документы в наиболее популярные форматы и наоборот.
+Библиотека Aspose.PDF for Python via .NET позволяет успешно, быстро и легко конвертировать ваши PDF-документы в наиболее популярные форматы и наоборот.
 
 - Конвертировать PDF в Word, Excel и PowerPoint.
 - Конвертировать PDF в форматы изображений.

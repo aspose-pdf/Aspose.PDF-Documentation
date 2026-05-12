@@ -1,205 +1,160 @@
 ---
-title: Añadir y Eliminar un Marcador usando Python
-linktitle: Añadir y Eliminar un Marcador
+title: Agregar y eliminar marcadores PDF en Python
+linktitle: Agregar y eliminar un marcador
 type: docs
 weight: 10
 url: /es/python-net/add-and-delete-bookmark/
-description: Puede añadir un marcador a un documento PDF con Python. Es posible eliminar todos o algunos marcadores de un documento PDF.
-lastmod: "2023-02-17"
+description: Aprende cómo agregar y eliminar marcadores en documentos PDF usando Python.
+lastmod: "2026-04-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cómo agregar y eliminar marcadores usando Python
+Abstract: Este artículo proporciona instrucciones exhaustivas sobre la gestión de marcadores en documentos PDF usando la biblioteca Aspose.PDF for Python via .NET. Describe los procesos para agregar, modificar y eliminar marcadores dentro de un PDF. El artículo comienza con una guía sobre cómo añadir un marcador creando un objeto `OutlineItemCollection` y añadiéndolo a la `OutlineCollection` del documento. Incluye ejemplos de código que demuestran la creación y adición de marcadores tanto padre como hijo, resaltando una relación jerárquica. Además, el artículo cubre métodos para eliminar todos los marcadores o un marcador específico por título. Cada sección incluye fragmentos de código Python para ilustrar las operaciones, asegurando que los lectores puedan implementar fácilmente las funcionalidades descritas en sus tareas de manipulación de PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Añadir y Eliminar un Marcador",
-    "alternativeHeadline": "Cómo añadir y eliminar un Marcador de un PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, eliminar marcador, añadir marcador",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-and-delete-bookmark/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-and-delete-bookmark/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Puede añadir un marcador a un documento PDF con Python. Es posible eliminar todos o algunos marcadores de un documento PDF."
-}
-</script>
 
+## Agregar un marcador a un documento PDF
 
-## Añadir un Marcador a un Documento PDF
+Los marcadores se guardan en el objeto Document [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) colección, en sí misma en el [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) colección.
 
-Los marcadores se mantienen en la colección [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) del objeto Document, que a su vez está en la colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
+Para agregar un marcador a un PDF:
 
-Para añadir un marcador a un PDF:
+1. Abra un documento PDF usando [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objeto.
+1. Crea un marcador y define sus propiedades.
+1. Añade el [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) colección a la colección Outlines.
 
-1. Abra un documento PDF usando el objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Cree un marcador y defina sus propiedades.
-1. Añada la colección [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) a la colección de Outlines.
-
-El siguiente fragmento de código muestra cómo añadir un marcador en un documento PDF.
+El siguiente fragmento de código le muestra cómo agregar un marcador en un documento PDF.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def add_bookmark(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
+    # Create a bookmark object
+    pdf_outline = ap.OutlineItemCollection(document.outlines)
+    pdf_outline.title = "Test Outline"
+    pdf_outline.italic = True
+    pdf_outline.bold = True
 
-    # Crear un objeto de marcador
-    outline = ap.OutlineItemCollection(document.outlines)
-    outline.title = "Marcador de Prueba"
-    outline.italic = True
-    outline.bold = True
-    # Establecer el número de página de destino
-    outline.action = ap.annotations.GoToAction(document.pages[1])
-    # Añadir marcador en la colección de esquemas del documento.
-    document.outlines.append(outline)
+    # Set the destination page number
+    pdf_outline.action = ap.annotations.GoToAction(document.pages[1])
 
-    # Guardar salida
-    document.save(output_pdf)
+    # Add bookmark to the document's outline collection
+    outlines = document.outlines
+    outlines.append(pdf_outline)
+
+    # Save PDF document
+    document.save(outfile)
 ```
 
+## Agregar un marcador hijo al documento PDF
 
-## Añadir un Marcador Hijo al Documento PDF
+Los marcadores pueden anidarse, indicando una relación jerárquica con marcadores padre e hijo. Este artículo explica cómo agregar un marcador hijo, es decir, un marcador de segundo nivel, a un PDF.
 
-Los marcadores pueden estar anidados, indicando una relación jerárquica con marcadores padre e hijo. Este artículo explica cómo añadir un marcador hijo, es decir, un marcador de segundo nivel, a un PDF.
+Para agregar un marcador hijo a un archivo PDF, primero agregue un marcador padre:
 
-Para añadir un marcador hijo a un archivo PDF, primero añada un marcador padre:
+1. Abrir un documento.
+1. Agregar un marcador a la [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/), definiendo sus propiedades.
+1. Agregar el OutlineItemCollection al objeto Document [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) colección.
 
-1. Abra un documento.
-1. Añada un marcador a la [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/), definiendo sus propiedades.
-1. Añada la OutlineItemCollection a la colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) del objeto Document.
+El marcador hijo se crea igual que el marcador padre, explicado arriba, pero se agrega a la colección Outlines del marcador padre
 
-El marcador hijo se crea igual que el marcador padre, explicado arriba, pero se agrega a la colección de Contornos del marcador padre.
-
-Los siguientes fragmentos de código muestran cómo añadir un marcador hijo a un documento PDF.
+Los siguientes fragmentos de código muestran cómo agregar un marcador hijo a un documento PDF.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def add_child_bookmark(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
+    # Create a parent bookmark object
+    pdf_outline = ap.OutlineItemCollection(document.outlines)
+    pdf_outline.title = "Parent Outline"
+    pdf_outline.italic = True
+    pdf_outline.bold = True
 
-    # Crear un objeto de marcador padre
-    outline = ap.OutlineItemCollection(document.outlines)
-    outline.title = "Contorno Padre"
-    outline.italic = True
-    outline.bold = True
+    # Create a child bookmark object
+    pdf_child_outline = ap.OutlineItemCollection(document.outlines)
+    pdf_child_outline.title = "Child Outline"
+    pdf_child_outline.italic = True
+    pdf_child_outline.bold = True
 
-    # Crear un objeto de marcador hijo
-    childOutline = ap.OutlineItemCollection(document.outlines)
-    childOutline.title = "Contorno Hijo"
-    childOutline.italic = True
-    childOutline.bold = True
+    # Add child bookmark to parent bookmark's collection
+    pdf_outline.append(pdf_child_outline)
 
-    # Añadir marcador hijo en la colección del marcador padre
-    outline.append(childOutline)
-    # Añadir marcador padre en la colección de contornos del documento.
-    document.outlines.append(outline)
+    # Add parent bookmark to the document's outline collection
+    document.outlines.append(pdf_outline)
 
-    # Guardar salida
-    document.save(output_pdf)
+    # Save PDF document
+    document.save(outfile)
 ```
 
+## Eliminar todos los marcadores de un documento PDF
 
-## Eliminar todos los Marcadores de un Documento PDF
-
-Todos los marcadores en un PDF se mantienen en la colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). Este artículo explica cómo eliminar todos los marcadores de un archivo PDF.
+Todos los marcadores en un PDF se almacenan en el [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) colección. Este artículo explica cómo eliminar todos los marcadores de un archivo PDF.
 
 Para eliminar todos los marcadores de un archivo PDF:
 
-1. Llame al método Delete de la colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
-2. Guarde el archivo modificado usando el método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) del objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Llame al [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) método Delete de la colección.
+1. Guarda el archivo modificado usando el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) del objeto [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método.
 
 Los siguientes fragmentos de código muestran cómo eliminar todos los marcadores de un documento PDF.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def delete_bookmarks(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
-
-    # Eliminar todos los marcadores
+    # Delete all bookmarks in the PDF document
     document.outlines.delete()
 
-    # Guardar archivo actualizado
-    document.save(output_pdf)
-
+    # Save PDF document
+    document.save(outfile)
 ```
 
-## Eliminar un Marcador Particular de un Documento PDF
+## Eliminar un marcador específico de un documento PDF
 
-Para eliminar un marcador particular de un archivo PDF:
+Para eliminar un marcador específico de un archivo PDF:
 
-1. Pase el título del marcador como parámetro al método Delete de la colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
+1. Pase el título del marcador como parámetro a la [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) método Delete de la colección.
 1. Luego guarde el archivo actualizado con el método Save del objeto Document.
 
-La clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) proporciona la colección [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). El método [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/#methods) elimina cualquier marcador con el título pasado al método.
+El [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) la clase’ proporciona el [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) colección. El [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/#methods) el método elimina cualquier marcador con el título pasado al método.
 
-Los siguientes fragmentos de código muestran cómo eliminar un marcador particular del documento PDF.
+Los siguientes fragmentos de código muestran cómo eliminar un marcador específico del documento PDF.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def delete_bookmark(infile, outfile):
+    # Open PDF document
+    document = ap.Document(infile)
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
-
-    # Eliminar un esquema particular por título
+    # Delete a specific bookmark by title.
+    # Note: If multiple bookmarks have the same title, only the first matching bookmark will be deleted.
     document.outlines.delete("Child Outline")
 
-    # Guardar archivo actualizado
-    document.save(output_pdf)
+    # Save PDF document
+    document.save(outfile)
+```
+
+## Temas relacionados de marcadores
+
+- [Trabajar con marcadores PDF en Python](/pdf/es/python-net/bookmarks/)
+- [Obtener, actualizar y expandir marcadores PDF en Python](/pdf/es/python-net/get-update-and-expand-bookmark/)
+- [Navegación e interacción en PDF usando Python](/pdf/es/python-net/navigation-and-interaction/)
+

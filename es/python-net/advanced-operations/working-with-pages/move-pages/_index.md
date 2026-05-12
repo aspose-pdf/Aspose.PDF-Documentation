@@ -1,161 +1,110 @@
 ---
-title: Mover páginas de PDF programáticamente a través de Python
-linktitle: Mover páginas de PDF
+title: Mover páginas PDF en Python
+linktitle: Mover páginas PDF
 type: docs
 weight: 100
 url: /es/python-net/move-pages/
-description: Intente mover páginas a la ubicación deseada o al final de un archivo PDF usando Aspose.PDF para Python a través de .NET.
-lastmod: "2023-04-17"
+description: Aprenda cómo mover páginas PDF dentro de un documento o entre documentos en Python.
+lastmod: "2026-04-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Mover páginas PDF entre documentos en Python
+Abstract: Este artículo explica cómo mover páginas en PDFs usando Aspose.PDF for Python via .NET. Aprende cómo mover una sola página o varias páginas a otro documento, y cómo reubicar una página dentro del mismo PDF usando las APIs Document y PageCollection.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Mover páginas de PDF programáticamente Python",
-    "alternativeHeadline": "Cómo mover páginas de PDF con Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, mover página pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/move-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/move-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Intente mover páginas a la ubicación deseada o al final de un archivo PDF usando Aspose.PDF para Python a través de .NET."
-}
-</script>
 
+## Mover una página de un documento PDF a otro
 
-## Mover una Página de un Documento PDF a Otro
+Aspose.PDF for Python le permite mover una página (no solo copiarla) de un PDF a otro. Elimina la página seleccionada del documento original y luego la agrega a un nuevo archivo PDF.
 
-Este tema explica cómo mover una página de un documento PDF al final de otro documento usando Python.
-Para mover una página debemos:
+Piense en ello como cortar una página de un libro y pegarla en otro — la página ya no existe en el archivo original después del movimiento.
 
-1. Crear un objeto de clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) con el archivo PDF de origen.
-1. Crear un objeto de clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) con el archivo PDF de destino.
-1. Obtener la página de la colección [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) la página al documento de destino.
-1. Guardar el PDF de salida usando el método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-1. [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) la página en el documento de origen.
-
-1. Guarde el PDF de origen usando el método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Abra el documento PDF de origen usando el [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) clase.
+1. Seleccione una página específica para mover (en este caso, la página 2) — esto se refiere a un [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Cree un nuevo documento PDF (instancie otro [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
+1. Agregue la página seleccionada al nuevo documento PDF usando el documento de destino [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (por ejemplo, `another_document.pages.add(page)`).
+1. Elimine la página del documento original mediante su [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (por ejemplo, `document.pages.delete(index)`).
+1. Guarde ambos documentos.
 
 El siguiente fragmento de código le muestra cómo mover una página.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
 
-    srcDocument = ap.Document(src_file_name)
-    dstDocument = ap.Document(dst_File_name)
-    page = srcDocument.pages[2]
-    dstDocument.pages.add(page)
-    # Guardar archivo de salida
-    dstDocument.save(dst_File_name_new)
-    srcDocument.pages.delete(2)
-    srcDocument.save(src_file_name_new)
+    document = ap.Document(input_file_name)
+    page = document.pages[2]
+    another_document = ap.Document()
+    another_document.pages.add(page)
+    document.pages.delete(2)
+    document.save(input_file_name.replace(".pdf", "_new.pdf"))
+    another_document.save(output_file_name)
 ```
 
-## Mover un Conjunto de Páginas de un Documento PDF a Otro
+## Mover varias páginas de un documento PDF a otro
 
-1. Cree un objeto de clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) con el archivo PDF de origen.
-2. Cree un objeto de clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) con el archivo PDF de destino.
-3. Defina un array con los números de página a mover.
-4. Ejecute un bucle a través del array:
+A diferencia de copiar, esta operación transfiere las páginas seleccionadas — eliminándolas del archivo origen y guardándolas en un nuevo PDF.
 
-1. Obtener página de la [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) página al documento de destino.
-1. Guardar el PDF de salida usando el método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-1. [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) página en el documento fuente usando array.
-1. Guardar el PDF fuente usando el método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Crear un nuevo documento de destino vacío (`Document`).
+1. Seleccione varias páginas (en este caso, las páginas 1 y 3) del documento de origen [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Recorra las páginas seleccionadas y agregue cada una al documento de destino [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Guarda el documento de destino que contiene las páginas movidas.
+1. Elimina las páginas movidas del documento origen usando su [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Guarda el documento origen modificado con un nuevo nombre de archivo para conservar ambas versiones.
 
-El siguiente fragmento de código te muestra cómo insertar una página vacía al final de un archivo PDF.
+El siguiente fragmento de código muestra cómo mover varias páginas.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    srcDocument = ap.Document(input_pdf)
-    dstDocument = ap.Document()
-    pages = [1, 3]
+def move_multiple_pages_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
+    dst_document = ap.Document()
+    pages = [1, 2]
     for page_index in pages:
-        page = srcDocument.pages[page_index]
-        dstDocument.pages.add(page)
-    # Guardar archivos de salida
-    dstDocument.save(output_pdf_1)
-    srcDocument.pages.delete(pages)
-    srcDocument.save(output_pdf_2)
+        page = src_document.pages[page_index]
+        dst_document.pages.add(page)
+    # Save output files
+    dst_document.save(output_file_name)
+    src_document.pages.delete(pages)
+    src_document.save(input_file_name.replace(".pdf", "_new.pdf"))
 ```
 
+## Mover una página a una nueva ubicación en el mismo documento PDF
 
-## Moviendo una Página a una nueva ubicación en el Documento PDF actual
+Muestra cómo mover una página específica a una posición diferente dentro del mismo documento — una necesidad común al reorganizar o editar diseños de PDF.
 
-1. Cree un objeto de la clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) con el archivo PDF de origen.
-1. Obtenga la Página de la colección [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) página a la nueva ubicación (por ejemplo, al final).
-1. [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) página en la ubicación anterior.
-1. Guarde el PDF de salida usando el método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Cargue el documento PDF de entrada usando el [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) clase.
+1. Seleccione la página que desea mover (página 2) — esto es un [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Agrégala al final del documento usando el documento [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Eliminar la página original de su ubicación anterior a través de la [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Guardar el documento modificado como un archivo nuevo.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_in_new_location_in_same_document(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
 
-    srcDocument = ap.Document(input_pdf)
+    page = src_document.pages[2]
+    src_document.pages.add(page)
+    src_document.pages.delete(2)
 
-    page = srcDocument.pages[2]
-    srcDocument.pages.add(page)
-    srcDocument.pages.delete(2)
+    # Save output file
+    src_document.save(output_file_name)
+```
 
-    # Guardar archivo de salida
-    srcDocument.save(output_pdf)
+## Temas de página relacionados
+
+- [Trabajar con páginas PDF en Python](/pdf/es/python-net/working-with-pages/)
+- [Agregar páginas PDF en Python](/pdf/es/python-net/add-pages/)
+- [Eliminar páginas PDF en Python](/pdf/es/python-net/delete-pages/)
+- [Extraer páginas PDF en Python](/pdf/es/python-net/extract-pages/)
