@@ -13,5 +13,5 @@ sitemap:
 - [Простая замена текста](/pdf/ru/python-net/replace-text-simple/)
 - [Замена текста с использованием RegEx](/pdf/ru/python-net/replace-text-regex/)
 - [Заменить текст на странице](/pdf/ru/python-net/replace-text-on-page/)
-- [Заменить текст с использованием состояния](/pdf/ru/python-net/replace-text-with-state/)
-- [Заменить текст на странице с помощью состояния](/pdf/ru/python-net/replace-text-on-page-with-state/)
+- [Заменить текст с использованием state](/pdf/ru/python-net/replace-text-with-state/)
+- [Заменить текст на странице с помощью state](/pdf/ru/python-net/replace-text-on-page-with-state/)

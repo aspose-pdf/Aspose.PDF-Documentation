@@ -10,16 +10,16 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Установить выравнивание текста для полей формы PDF с помощью Python
-Abstract: В этой статье объясняется, как открыть PDF‑документ, установить выравнивание определённого поля с использованием класса FormEditor и сохранить обновлённый PDF. В примере выравнивание текста поля с именем "First Name" устанавливается по центру.
+Abstract: В этой статье объясняется, как открыть PDF‑документ, установить выравнивание определённого поля с использованием класса FormEditor и сохранить обновлённый PDF. В примере выравнивание текста поля с именем 'First Name' устанавливается по центру.
 ---
 
 Полям формы PDF часто требуется пользовательское выравнивание текста для поддержания единообразного и профессионального оформления. С помощью Aspose.PDF for Python разработчики могут программно задавать выравнивание текстового содержимого поля формы.
 
-The [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) класс, в сочетании с [FormFieldFacade](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formfieldfacade/) константы, позволяют разработчикам программно изменять выравнивание существующих полей формы.
+Класс [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) в сочетании с [FormFieldFacade](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formfieldfacade/) константы, позволяют разработчикам программно изменять выравнивание существующих полей формы.
 
 1. Откройте существующий PDF‑документ.
 1. Создать объект FormEditor.
-1. Установите выравнивание поля с именем "First Name" по центру.
+1. Установите выравнивание поля с именем 'First Name' по центру.
 1. Сохраните изменённый документ.
 
 ```python

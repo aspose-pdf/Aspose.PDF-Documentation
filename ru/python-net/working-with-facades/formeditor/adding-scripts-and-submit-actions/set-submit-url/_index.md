@@ -16,7 +16,7 @@ Abstract: В этой статье объясняется, как открыть
 PDF‑формы могут быть спроектированы для отправки своих данных на веб‑сервер при нажатии пользователем кнопки отправки. С помощью Aspose.PDF for Python разработчики могут программно настроить действие отправки для полей формы.
 Установив URL отправки, форма может отправлять введённые пользователем данные на сервер при нажатии кнопки. Эта функция полезна для рабочих процессов, когда PDF‑формы должны отправлять информацию в веб‑приложения, базы данных или службы обработки.
 
-Используя [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) класс из [aspose.pdf.facades](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/) модуль, разработчики могут программно назначать URL-адрес отправки для поля кнопки в существующей PDF-форме.
+Используя [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) класс из [aspose.pdf.facades](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/) модуля, разработчики могут программно назначать URL-адрес отправки для поля кнопки в существующей PDF-форме.
 
 1. Откройте существующую PDF-форму.
 1. Найдите поле кнопки с именем Script_Demo_Button.

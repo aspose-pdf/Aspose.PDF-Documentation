@@ -12,6 +12,6 @@ sitemap:
 
 - [Добавить текстовые аннотации](/pdf/ru/python-net/add-text-annotation/)
 - [Добавить свободные текстовые аннотации](/pdf/ru/python-net/add-free-text-annotation/)
-- [Добавить разметочные аннотации](/pdf/ru/python-net/add-markup-annotation/)
+- [Добавить аннотации разметки](/pdf/ru/python-net/add-markup-annotation/)
 - [Добавить всплывающие аннотации](/pdf/ru/python-net/add-popup-annotation/)
-- [Добавить аннотацию‑карет](/pdf/ru/python-net/add-caret-annotation/)
+- [Добавить аннотацию в виде курсора](/pdf/ru/python-net/add-caret-annotation/)

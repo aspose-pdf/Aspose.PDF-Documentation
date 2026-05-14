@@ -3,7 +3,7 @@ title: Заменить текст на странице
 type: docs
 weight: 10
 url: /python-net/replace-text-on-page/
-description: В этом примере первое вхождение слова "PDF" заменяется на "Page 1 Replaced Text" с использованием указанного размера шрифта.
+description: В этом примере "PDF" заменяется на "Page 1 Replaced Text" с использованием указанного размера шрифта.
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"

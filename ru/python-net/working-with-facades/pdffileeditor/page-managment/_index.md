@@ -19,7 +19,7 @@ Abstract: Узнайте, как выполнять операции на уро
 
 Используйте следующие руководства, чтобы выполнять наиболее распространённые задачи редактирования на уровне страниц с `PdfFileEditor`:
 
-- [Извлечение страниц из PDF](/pdf/ru/python-net/extract-pages-from-pdf/)
+- [Извлечь страницы из PDF](/pdf/ru/python-net/extract-pages-from-pdf/)
 - [Удалить страницы из PDF](/pdf/ru/python-net/delete-pages-from-pdf/)
 - [Вставить страницы в PDF](/pdf/ru/python-net/insert-pages-into-pdf/)
 - [Добавить страницы в PDF](/pdf/ru/python-net/append-pages-to-pdf/)

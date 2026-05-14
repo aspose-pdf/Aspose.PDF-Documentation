@@ -15,10 +15,10 @@ Abstract: В этом примере показано, как прикрепля
 
 PDF может включать встроенные файлы, такие как документы, электронные таблицы или изображения, для справки или распространения. Перегрузка пути к файлу функции 'add_document_attachment()' позволяет добавлять вложения напрямую из пути к файлу, исключая необходимость открывать файл вручную.
 
-1. Создать [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/) объект.
-1. Привязать входной PDF.
-1. Добавить вложение, используя путь к файлу.
-1. Сохранить обновлённый Document.
+1. Создайте [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/) объект.
+1. Привяжите входной PDF.
+1. Добавьте вложение, используя путь к файлу.
+1. Сохраните обновлённый Document.
 
 ```python
 import aspose.pdf.facades as pdf_facades

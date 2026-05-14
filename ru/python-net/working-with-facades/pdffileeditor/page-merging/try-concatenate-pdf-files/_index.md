@@ -1,5 +1,5 @@
 ---
-title: Сконкатенировать PDF-файлы
+title: Объединить PDF-файлы
 type: docs
 weight: 70
 url: /python-net/try-concatenate-pdf-files/
@@ -15,8 +15,8 @@ Abstract: Узнайте, как безопасно конкатенироват
 
 Объединение PDF-файлов иногда может завершаться неудачей из‑за повреждённых файлов, несовместимых форматов или других проблем. С помощью Aspose.PDF for Python вы можете использовать метод try_concatenate класса [PdfFileEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffileeditor/) класса для безопасного выполнения конкатенации. Вместо выбрасывания исключения метод возвращает False, если операция не удалась, обеспечивая контролируемую обработку ошибок в автоматизированных рабочих процессах. 
 
-1. Создать объект PdfFileEditor.
-1. Попытка объединить PDF-файлы.
+1. Создайте объект PdfFileEditor.
+1. Обьедините PDF-файлы.
 
 ```python
 import aspose.pdf as ap

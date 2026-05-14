@@ -15,7 +15,7 @@ Abstract: В этом примере демонстрируется, как за
 
 Простая замена текста полезна при обновлении повторяющихся значений в документе. С [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), вы можете определить область замены и заменить текст глобально на всех страницах.
 
-1. Создать [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/) экземпляр.
+1. Создайте [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/) экземпляр.
 1. Привяжите входной PDF‑документ.
 1. Настройте область замены для всех вхождений.
 1. Замените целевой текст.

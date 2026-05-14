@@ -15,11 +15,11 @@ Abstract: В этом примере демонстрируется, как вс
 
 Свободные текстовые аннотации позволяют размещать видимый текст непосредственно на странице PDF без необходимости всплывающих комментариев. С помощью PdfContentEditor можно указать прямоугольник аннотации, отображаемый текст и целевую страницу.
 
-1. Создать [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/) объект.
-1. Привязать входной PDF.
+1. Создайте [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/) объект.
+1. Привяжите входной PDF.
 1. Определите позицию аннотации.
-1. Добавить аннотацию свободного текста.
-1. Сохранить обновлённый Document.
+1. Добавьте аннотацию свободного текста.
+1. Сохраните обновлённый Document.
 
 ```python
 import aspose.pdf as ap

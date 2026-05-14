@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как открыть
 
 Поле формы, используемое в этом примере, называется 'Script_Demo_Button', которое обычно представляет кнопку, выполняющую назначенный скрипт при срабатывании.
 
-Используя [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) класс из [aspose.pdf.facades](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/) модуль, разработчики могут программно управлять действиями JavaScript, связанными с полями формы:
+Используя [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) класс из [aspose.pdf.facades](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/) модуля, разработчики могут программно управлять действиями JavaScript, связанными с полями формы:
 
 1. Откройте существующий документ PDF-формы.
 1. Добавьте действие JavaScript к полю формы.

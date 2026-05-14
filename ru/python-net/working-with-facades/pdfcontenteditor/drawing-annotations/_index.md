@@ -10,9 +10,9 @@ sitemap:
     priority: 0.7
 ---
 
-- [Добавить линейную аннотацию](/pdf/ru/python-net/add-line-annotation/)
-- [Добавить квадратную аннотацию](/pdf/ru/python-net/add-square-annotation/)
-- [Добавить круговую аннотацию](/pdf/ru/python-net/add-circle-annotation/)
-- [Добавить полигональную аннотацию](/pdf/ru/python-net/add-polygon-annotation/)
-- [Добавить полилинейную аннотацию](/pdf/ru/python-net/add-polyline-annotation/)
-- [Добавить криволинейную аннотацию](/pdf/ru/python-net/add-curve-annotation/)
+- [Добавить аннотации линий](/pdf/ru/python-net/add-line-annotation/)
+- [Добавить аннотации квадрата](/pdf/ru/python-net/add-square-annotation/)
+- [Добавить аннотации круга](/pdf/ru/python-net/add-circle-annotation/)
+- [Добавить аннотации полигон](/pdf/ru/python-net/add-polygon-annotation/)
+- [Добавить аннотации полилиний](/pdf/ru/python-net/add-polyline-annotation/)
+- [Добавить аннотации кривой](/pdf/ru/python-net/add-curve-annotation/)
