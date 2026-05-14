@@ -2,7 +2,7 @@
 title: Annotations
 type: docs
 weight: 10
-url: /python-net/annotations/
+url: /python-net/annotations-facades/
 description:
 lastmod: "2026-03-20"
 sitemap:

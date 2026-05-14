@@ -3,7 +3,7 @@ title: Adjuntos
 linktitle: Adjuntos
 type: docs
 weight: 20
-url: /es/python-net/attachments/
+url: /es/python-net/attachments-facades/
 description:
 lastmod: "2026-03-20"
 sitemap:

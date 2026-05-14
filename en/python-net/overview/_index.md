@@ -29,7 +29,7 @@ The Aspose.PDF for Python supports a wide variety of functions such as:
 
 In addition, Aspose.PDF for Python via .NET can be applied to easily convert EPUB, Markdown, Text, XPS, PostScript, XML, LaTex to PDF and convert PDF to various document formats with excellent performance and good quality.
 
-Try our [Free Online Apps](https://products.aspose.app/pdf/applications) demonstrating some of the most popular Aspose.PDF functionality.
+Try our [Online Apps](https://products.aspose.app/pdf/applications) that demonstrate some of the most popular Aspose.PDF functionality.
 
 Learn more about:
 
