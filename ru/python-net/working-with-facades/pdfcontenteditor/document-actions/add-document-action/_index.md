@@ -1,0 +1,47 @@
+---
+title: Добавить действие Document
+linktitle: Добавить действие Document
+type: docs
+weight: 20
+url: /python-net/add-document-action/
+description: В этом примере добавляется предупреждающее сообщение JavaScript, которое появляется при открытии PDF. Скрипт привязан к событию открытия документа и автоматически выполняется в поддерживаемых PDF‑просмотрщиках.
+lastmod: "2026-03-20"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Добавить действие Document Open JavaScript к PDF с использованием Python
+Abstract: В этом примере демонстрируется, как добавить действие JavaScript уровня Document, которое срабатывает при открытии PDF. С использованием Aspose.PDF for Python via the Facades API пример показывает, как привязать Document, назначить действие события открытия и сохранить обновлённый PDF.
+---
+
+Действия на уровне документа позволяют определять поведение, которое автоматически выполняется при возникновении определенных событий, например, при открытии PDF-файла. С помощью [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/) вы можете прикрепить к этим событиям код JavaScript. Это можно использовать для уведомлений, логики проверки или интерактивных рабочих процессов.
+
+1. Создайте объект PdfContentEditor.
+1. Привяжите входной PDF.
+1. Добавьте действие уровня документа.
+1. Сохраните обновлённый Document.
+
+```python
+import aspose.pdf.facades as pdf_facades
+import aspose.pydrawing as apd
+import sys
+from os import path
+
+sys.path.append(path.join(path.dirname(__file__), ".."))
+
+from config import set_license, initialize_data_dir
+
+
+def add_document_action(infile, outfile):
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
+    # Add JavaScript action for document open event
+    content_editor.add_document_additional_action(
+        content_editor.DOCUMENT_OPEN,
+        "app.alert('Document opened with PdfContentEditor action');",
+    )
+    # Save updated document
+    content_editor.save(outfile)
+```
