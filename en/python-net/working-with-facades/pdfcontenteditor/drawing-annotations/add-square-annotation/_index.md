@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add Square Annotation to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a square annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define the annotation rectangle, text content, color, fill options, and save the updated document.   
+Abstract: This example demonstrates how to add a square annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define the annotation rectangle, text content, color, fill options, and save the updated document.
 ---
 
 Square annotations are commonly used to highlight areas of interest, mark important sections, or provide visual cues in a PDF document. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can create square (or circular) annotations by specifying the bounding rectangle, content text, border color, fill option, page number, and border width.

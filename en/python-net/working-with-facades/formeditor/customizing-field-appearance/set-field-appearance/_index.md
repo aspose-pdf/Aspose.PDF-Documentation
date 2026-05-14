@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Set PDF Form Field Appearance Using Python
-Abstract: This article explains how to open a PDF, set the appearance of a form field using the FormEditor class, and save the updated document. The example sets the appearance of a field named "First Name" to invisible using the AnnotationFlags.INVISIBLE flag.         
+Abstract: This article explains how to open a PDF, set the appearance of a form field using the FormEditor class, and save the updated document. The example sets the appearance of a field named "First Name" to invisible using the AnnotationFlags.INVISIBLE flag.
 ---
 
 PDF form fields support appearance flags that control visibility, printability, and interactivity. Using Aspose.PDF for Python, developers can programmatically modify these flags for specific form fields.

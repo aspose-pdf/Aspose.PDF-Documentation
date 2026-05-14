@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Items to PDF List Box Fields Using Python
-Abstract: This article shows how to open a PDF document, append items to a list box field named "Country", and save the updated document.    
+Abstract: This article shows how to open a PDF document, append items to a list box field named "Country", and save the updated document.
 ---
 
 List box fields in PDFs allow users to select one or multiple options from a predefined set. Using Aspose.PDF for Python, developers can programmatically add new items to these fields. The [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) class provides the 'add_list_item' method to append items to an existing list box field.

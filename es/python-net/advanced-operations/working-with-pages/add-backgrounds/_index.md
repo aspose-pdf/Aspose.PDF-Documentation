@@ -7,7 +7,7 @@ url: /es/python-net/add-backgrounds/
 description: Añadir imagen de fondo a su archivo PDF con Python. Use la clase BackgroundArtifact.
 lastmod: "2023-04-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 <script type="application/ld+json">
@@ -77,7 +77,7 @@ sitemap:
 </script>
 
 
-Las imágenes de fondo se pueden utilizar para añadir una marca de agua u otro diseño sutil a los documentos. En Aspose.PDF para Python a través de .NET, cada documento PDF es una colección de páginas y cada página contiene una colección de artefactos. La clase [BackgroundArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/) se puede utilizar para añadir una imagen de fondo a un objeto de página.
+Las imágenes de fondo se pueden utilizar para añadir una marca de agua u otro diseño sutil a los documentos. En Aspose.PDF for Python via .NET, cada documento PDF es una colección de páginas y cada página contiene una colección de artefactos. La clase [BackgroundArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/) se puede utilizar para añadir una imagen de fondo a un objeto de página.
 
 El siguiente fragmento de código muestra cómo añadir una imagen de fondo a las páginas PDF usando el objeto BackgroundArtifact con Python.
 
@@ -109,7 +109,7 @@ El siguiente fragmento de código muestra cómo añadir una imagen de fondo a la
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python a través de .NET Library",
+    "name": "Aspose.PDF for Python via .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {

@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Replace an Image in a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to replace an existing image in a PDF document using Aspose.PDF for Python via the Facades API. It shows how to target a specific image on a page and replace it with a new image, then save the updated PDF.   
+Abstract: This example demonstrates how to replace an existing image in a PDF document using Aspose.PDF for Python via the Facades API. It shows how to target a specific image on a page and replace it with a new image, then save the updated PDF.
 ---
 
 PDFs often contain images that may need to be updated or replaced, such as logos, diagrams, or photos. With [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can replace a specific image on a given page by providing the page number, image index, and new image file path.

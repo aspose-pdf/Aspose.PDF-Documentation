@@ -1,152 +1,29 @@
 ---
-title: Trabajando con Tablas en PDF usando Python
-linktitle: Trabajando con Tablas
+title: Trabajar con tablas en PDF usando Python
+linktitle: Trabajando con tablas
 type: docs
 weight: 50
 url: /es/python-net/working-with-tables/
-description: Esta sección describe cómo agregar y extraer una tabla, cómo manipular una tabla usando la biblioteca Python.
-lastmod: "2023-09-17"
+description: Aprenda cómo agregar, extraer, integrar, manipular y eliminar tablas en documentos PDF usando Python.
+lastmod: "2026-05-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Agregar, extraer, integrar y gestionar tablas PDF en Python
+Abstract: Esta sección explica cómo trabajar con tablas en documentos PDF usando Aspose.PDF for Python via .NET. Aprenda cómo crear e insertar tablas, extraer datos tabulares, integrar tablas con fuentes de datos, modificar el contenido de las tablas y eliminar tablas de archivos PDF existentes en flujos de trabajo de Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Trabajando con Tablas en PDF usando Python",
-    "alternativeHeadline": "Trabajando con Tablas",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, tablas en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-tables/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-tables/"
-    },
-    "dateModified": "2023-09-04",
-    "description": "Este artículo describe cómo agregar y extraer una tabla, cómo manipular e integrar una tabla usando la biblioteca Python."
-}
-</script>
 
+**Aspose.PDF for Python via .NET** proporciona herramientas completas para trabajar con tablas en archivos PDF. Puede crear y agregar tablas, controlar el diseño de la tabla y el flujo de página, extraer datos tabulares, actualizar tablas existentes y eliminar una o varias tablas de PDFs existentes.
 
-**Aspose.PDF para Python a través de .NET** te permite trabajar con tablas en archivos PDF de manera avanzada. Esta herramienta perfecta ayuda a luchar contra la simplicidad de los PDF extrayendo tablas. Con el recurso de la biblioteca de Python puedes crear o agregar fácilmente una tabla en un documento PDF existente, determinar si la tabla se romperá en la página actual, extraer la tabla y eliminar tablas de los PDFs existentes.
+Utilice esta sección cuando necesite crear informes basados en tablas, extraer datos estructurados de PDFs o actualizar contenido tabular en documentos existentes con Python.
 
-Puedes hacer lo siguiente:
+## Tareas de Tablas Cubiertas
 
-- [Crear o Agregar Tabla en un Documento PDF existente](/pdf/es/python-net/add-table-in-existing-pdf-document/) - crea tu tabla en un archivo PDF fusionando las columnas o filas considerando bordes, márgenes y relleno.
-- [Extraer una Tabla de un Documento PDF existente](/pdf/es/python-net/extract-table-from-existing-pdf-document/) - puedes extraer una tabla de un archivo PDF.
-- [Manipular Tablas en un PDF existente](/pdf/es/python-net/manipulate-tables-in-existing-pdf/) - manipula tablas en tu PDF usando TableAbsorber.
+Puede hacer lo siguiente:
 
-- [Eliminar Tablas de un PDF existente](/pdf/es/python-net/remove-tables-from-existing-pdf/) - elimina una tabla o múltiples tablas de un documento PDF.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python a través de la biblioteca .NET",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Agregar tablas](/pdf/es/python-net/adding-tables/) - crear tablas en archivos PDF, incluidas filas/columnas combinadas, bordes, márgenes y relleno.
+- [Extracción de Tablas](/pdf/es/python-net/extracting-table/) - extraer datos de tabla de archivos PDF existentes.
+- [Integración de Tablas con Fuentes de Datos](/pdf/es/python-net/integrate-table/) - crear tablas a partir de bases de datos y datos de DataFrame de pandas en Python.
+- [Manipulación de tablas](/pdf/es/python-net/manipulating-tables/) - inspeccionar y actualizar tablas existentes dentro de documentos PDF.
+- [Eliminación de tablas](/pdf/es/python-net/removing-tables/) - eliminar una o varias tablas de documentos PDF.

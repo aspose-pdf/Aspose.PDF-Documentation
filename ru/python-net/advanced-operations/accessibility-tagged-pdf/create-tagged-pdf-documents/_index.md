@@ -205,7 +205,7 @@ def illustrate_structure_elements(imagefile, outfile):
         document.save(outfile)
 ```
 
-## Проверить Tagged PDF
+## Проверка Tagged PDF
 
 Aspose.PDF for Python via .NET предоставляет возможность проверять PDF/UA Tagged PDF Document. Метод ‘validate_tagged_pdf’ проверяет PDF‑документы в соответствии со стандартом PDF/UA-1, который является частью спецификации ISO 14289 для доступных PDF‑документов. Это гарантирует, что PDF‑файлы доступны пользователям с ограниченными возможностями и вспомогательными технологиями.
 
@@ -272,7 +272,7 @@ def adjust_position(outfile):
         document.save(outfile)
 ```
 
-## Преобразовать PDF в PDF/UA-1 с автоматическим тегированием
+## Преобразование PDF в PDF/UA-1 с автоматическим тегированием
 
 Этот фрагмент кода объясняет, как преобразовать стандартный PDF в файл, соответствующий требованиям PDF/UA-1 (Универсальная доступность), используя Aspose.PDF for Python via .NET.
 
@@ -317,7 +317,7 @@ def convert_to_pdf_ua_with_automatic_tagging(infile, outfile, logfile):
         document.save(outfile)
 ```
 
-## Создать Tagged PDF с доступным полем подписи FormField
+## Создание Tagged PDF с доступным полем подписи FormField
 
 1. Создайте новый PDF‑документ.
 1. Доступ к тегированному содержимому.
@@ -364,7 +364,7 @@ def create_pdf_with_tagged_form_field(outfile):
         document.save(outfile)
 ```
 
-## Создать Tagged PDF со страницей оглавления (TOC)
+## Создание Tagged PDF со страницей оглавления (TOC)
 
 В этом примере показано, как создать тегированный PDF‑документ со структурированной страницей оглавления (TOC) с использованием Aspose.PDF for Python via .NET.
 

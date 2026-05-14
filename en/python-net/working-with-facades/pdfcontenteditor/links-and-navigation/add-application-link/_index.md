@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add an Application Launch Link to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add an application launch link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that opens a specified application when clicked, and save the updated PDF.  
+Abstract: This example demonstrates how to add an application launch link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that opens a specified application when clicked, and save the updated PDF.
 ---
 
 PDF can include interactive elements such as links that launch external applications. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can define a rectangular region on a page that, when clicked, opens a specific executable file.

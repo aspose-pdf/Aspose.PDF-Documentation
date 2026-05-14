@@ -22,7 +22,7 @@ Abstract: Aspose.PDF for Python via .NET is a versatile component designed for d
 
 {{% alert color="primary" %}}
 
-Aspose.PDF is a .NET component built to allow developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for Python via .NET allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. Aspose.PDF for Python via .NET provides excellent security features to develop secure PDF documents. And the most distinct feature of Aspose.PDF for Python via .NET is that it supports the creation of PDF documents through both an API and from XML templates.
+Aspose.PDF for Python via .NET allows developers to create PDF documents, whether simple or complex, on the fly programmatically. Aspose.PDF for Python via .NET allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. Moreover, it is also possible to compress PDF documents. Aspose.PDF for Python via .NET provides excellent security features to develop secure PDF documents. And the most distinct feature of Aspose.PDF for Python via .NET is that it supports the creation of PDF documents through both an API and from XML templates.
 
 {{% /alert %}}
 

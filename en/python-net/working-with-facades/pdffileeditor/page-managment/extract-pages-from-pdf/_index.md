@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Extract Specific Pages from a PDF Document in Python
-Abstract: Learn how to extract selected pages from a PDF document using Aspose.PDF for Python. This example demonstrates how to create a new PDF containing only the pages you need, enabling custom document creation and page-level manipulation.   
+Abstract: Learn how to extract selected pages from a PDF document using Aspose.PDF for Python. This example demonstrates how to create a new PDF containing only the pages you need, enabling custom document creation and page-level manipulation.
 ---
 
 Extracting pages from a PDF is useful when you need to create a subset of a document, share only specific content, or reorganize PDFs for presentations, reports, or printing. Using Aspose.PDF for Python, developers can programmatically extract pages from a PDF file and save them as a new document.

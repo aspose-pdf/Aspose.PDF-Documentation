@@ -9,7 +9,7 @@ lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Подписывайте, шифруйте, дешифруйте и защищайте PDF‑документы в Python
 Abstract: Этот раздел объясняет, как защищать и подписывать PDF‑документы с использованием Aspose.PDF for Python via .NET. Узнайте, как применять цифровые подписи, использовать смарт‑карты и сертификаты, извлекать информацию о подписи и управлять шифрованием PDF, паролями и правами доступа в Python.
 ---

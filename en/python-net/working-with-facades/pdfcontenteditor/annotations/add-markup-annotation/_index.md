@@ -8,9 +8,9 @@ lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Highlight, Underline, Strikeout, and Squiggly Markup Annotations in a PDF Using Python
-Abstract: This example demonstrates how to add multiple markup annotations—highlight, underline, strikeout, and squiggly—to a PDF document using Aspose.PDF for Python via the Facades API. The sample shows how to define annotation areas, specify markup types, apply colors, and save the modified document.   
+Abstract: This example demonstrates how to add multiple markup annotations—highlight, underline, strikeout, and squiggly—to a PDF document using Aspose.PDF for Python via the Facades API. The sample shows how to define annotation areas, specify markup types, apply colors, and save the modified document.
 ---
 
 Markup annotations are used to emphasize or review text within a PDF. With PdfContentEditor, you can programmatically apply different markup styles by specifying a rectangle area, comment text, markup type, page number, and color.

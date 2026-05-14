@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Delete Specific Pages from a PDF Document in Python
-Abstract: Learn how to remove selected pages from a PDF document using Aspose.PDF for Python. This example demonstrates how to delete specific pages from an existing PDF file programmatically, creating a new document without the removed pages.   
+Abstract: Learn how to remove selected pages from a PDF document using Aspose.PDF for Python. This example demonstrates how to delete specific pages from an existing PDF file programmatically, creating a new document without the removed pages.
 ---
 
 Sometimes PDF documents contain unnecessary or sensitive pages that need to be removed. Using Aspose.PDF for Python, developers can programmatically delete specific pages from a PDF without manually editing the file.

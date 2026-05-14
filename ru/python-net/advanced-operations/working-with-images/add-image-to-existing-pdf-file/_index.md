@@ -3,7 +3,7 @@ title: Добавить изображение в PDF с помощью Python
 linktitle: Добавить изображение
 type: docs
 weight: 10
-url: /python-net/add-image-to-existing-pdf-file/
+url: /ru/python-net/add-image-to-existing-pdf-file/
 description: Узнайте, как добавить изображения в существующие PDF‑файлы с помощью Python.
 lastmod: "2026-05-05"
 TechArticle: true
@@ -11,7 +11,7 @@ AlternativeHeadline: Добавьте изображения в существу
 Abstract: Эта статья показывает, как добавлять изображения в PDF‑документы с помощью Aspose.PDF for Python via .NET. В ней рассматриваются добавление изображения с фиксированными координатами, размещение изображений с использованием низкоуровневых операторов, назначение альтернативного текста для доступности и внедрение изображений с компрессией Flate.
 ---
 
-## Добавить изображение в существующий PDF‑файл
+## Добавление изображения в существующий PDF‑файл
 
 Этот пример показывает, как разместить изображение в фиксированной позиции на существующей странице PDF с использованием Aspose.PDF for Python via .NET.
 
@@ -35,7 +35,7 @@ def add_image(infile, image_file, outfile):
     document.save(outfile)
 ```
 
-## Добавить изображение с помощью операторов
+## Добавление изображения с помощью операторов
 
 Этот подход добавляет изображение с помощью низкоуровневых операторов PDF вместо высокоуровневых `add_image()` помощник.
 
@@ -81,7 +81,7 @@ def add_image_using_operators(image_file, outfile):
     document.save(outfile)
 ```
 
-## Добавить изображение с альтернативным текстом
+## Добавление изображения с альтернативным текстом
 
 В этом примере добавляется изображение и назначается альтернативный текст для доступности.
 
@@ -111,7 +111,7 @@ def add_image_set_alternative_text(image_file, outfile):
     document.save(outfile)
 ```
 
-## Добавить изображение в PDF с использованием сжатия Flate
+## Добавление изображения в PDF с использованием сжатия Flate
 
 Этот пример вставляет изображение с помощью `ImageFilterType.FLATE` сжатие.
 
@@ -157,3 +157,4 @@ def add_image_to_pdf_with_flate_compression(image_file, outfile):
 - [Замена изображений в существующих PDF-файлах](/pdf/ru/python-net/replace-image-in-existing-pdf-file/)
 - [Удалить изображения из PDF файлов](/pdf/ru/python-net/delete-images-from-pdf-file/)
 - [Извлечь изображения из PDF файлов](/pdf/ru/python-net/extract-images-from-pdf-file/)
+

@@ -8,7 +8,7 @@ lastmod: "2026-03-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Update PDF Passwords
 Abstract: Learn how to change both user and owner passwords in a secured PDF file using Aspose.PDF for Python via .NET. This example demonstrates how to safely update access credentials while keeping the existing encryption and permissions intact.
 ---

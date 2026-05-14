@@ -9,7 +9,7 @@ lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Sign, encrypt, decrypt, and protect PDF documents in Python
 Abstract: This section explains how to secure and sign PDF documents using Aspose.PDF for Python via .NET. Learn how to apply digital signatures, use smart cards and certificates, extract signature information, and manage PDF encryption, passwords, and access privileges in Python.
 ---

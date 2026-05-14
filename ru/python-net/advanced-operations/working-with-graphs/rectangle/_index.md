@@ -3,7 +3,7 @@ title: Добавить прямоугольные фигуры в PDF на Pyth
 linktitle: Добавить прямоугольник
 type: docs
 weight: 50
-url: /python-net/add-rectangle/
+url: /ru/python-net/add-rectangle/
 description: Узнайте, как рисовать и заполнять прямоугольные фигуры в PDF‑файлах с помощью Python.
 lastmod: "2026-04-16"
 sitemap:
@@ -14,7 +14,7 @@ AlternativeHeadline: Рисовать прямоугольные фигуры в
 Abstract: В этой статье показано, как добавлять прямоугольные формы в PDF-документы с помощью Aspose.PDF for Python via .NET. Охватываются контурные прямоугольники, сплошные и градиентные заливки, альфа‑прозрачность и управление порядком Z.
 ---
 
-## Добавить объект Rectangle
+## Добавление объект Rectangle
 
 Aspose.PDF for Python via .NET позволяет добавлять [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) формы в страницы PDF через [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) класс. Вы можете рисовать обводные прямоугольники и применять сплошные, градиентные или прозрачные заполнения.
 
@@ -53,7 +53,7 @@ def add_rectangle(outfile: str):
 
 ![Создать прямоугольник](create_rectangle.png)
 
-## Создать объект заполненного прямоугольника
+## Создание объект заполненного прямоугольника
 
 Aspose.PDF for Python via .NET также предлагает возможность заполнять объект прямоугольника определённым цветом.
 
@@ -80,7 +80,7 @@ def create_rectangle_filled(outfile: str):
 
 ![Заполненный прямоугольник](fill_rectangle.png)
 
-## Добавить рисунок с градиентной заливкой
+## Добавление рисунок с градиентной заливкой
 
 Aspose.PDF for Python via .NET поддерживает возможность добавлять графические объекты в PDF‑документы, и иногда требуется заполнять графические объекты градиентным цветом.
 
@@ -110,7 +110,7 @@ def add_drawing_with_gradient_fill(outfile: str):
 
 ![Градиентный прямоугольник](gradient.png)
 
-## Создать прямоугольник с альфа‑каналом цвета
+## Создание прямоугольник с альфа‑каналом цвета
 
 Aspose.PDF for Python via .NET также поддерживает прозрачность через альфа‑канал цвета.
 

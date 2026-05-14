@@ -8,7 +8,7 @@ lastmod: "2026-03-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Remove Password Protection from a PDF
 Abstract: This article demonstrates how to decrypt a PDF file using an owner password. It covers the process of removing security restrictions that limit actions like printing, editing, or copying content. By applying the correct owner password, users can unlock the document and regain full control over its functionality.
 ---

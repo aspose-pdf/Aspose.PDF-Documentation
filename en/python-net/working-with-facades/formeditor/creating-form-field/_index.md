@@ -8,7 +8,7 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Create PDF Form Fields in Python
 Abstract: PDF forms enable users to enter or select data directly within a document. Using Aspose.PDF, developers can programmatically create a variety of form fields - CheckBox for boolean selections, ComboBox for drop-down lists, ListBox for multi-selection lists, RadioButton for exclusive options, TextBox for textual input, and SubmitButton for sending form data. This unified approach simplifies the creation of interactive PDFs, ensuring accurate placement, consistent styling, and compatibility with automated processing and user input handling.
 ---

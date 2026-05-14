@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Move Rubber Stamps in a PDF Using Index-Based Positioning
-Abstract: This example demonstrates how to reposition rubber stamp annotations in a PDF by using their index on a page with Aspose.PDF for Python via the Facades API. It highlights creating multiple stamps and preparing them for movement operations.    
+Abstract: This example demonstrates how to reposition rubber stamp annotations in a PDF by using their index on a page with Aspose.PDF for Python via the Facades API. It highlights creating multiple stamps and preparing them for movement operations.
 ---
 
 In PDF editing, it may be necessary to adjust the position of existing rubber stamps. This code snippet shows how to:

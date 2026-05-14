@@ -9,9 +9,9 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Manage PDF Metadata in Python
-Abstract: PDF metadata contains information about a document, such as title, author, keywords, and creation date, which aids in cataloging, searching, and maintaining document integrity. Using Aspose.PDF, developers can programmatically Get PDF Metadata, Set PDF Metadata values, Clear PDF Metadata, and save the changes either in standard PDF metadata or XMP format. This comprehensive approach allows precise control over document properties and ensures consistent handling across workflows and applications.    
+Abstract: PDF metadata contains information about a document, such as title, author, keywords, and creation date, which aids in cataloging, searching, and maintaining document integrity. Using Aspose.PDF, developers can programmatically Get PDF Metadata, Set PDF Metadata values, Clear PDF Metadata, and save the changes either in standard PDF metadata or XMP format. This comprehensive approach allows precise control over document properties and ensures consistent handling across workflows and applications.
 ---
 
 - [Get PDF Metadata](/pdf/python-net/get-pdf-metadata/)

@@ -3,20 +3,20 @@ title: Конвертировать другие форматы файлов в 
 linktitle: Конвертировать другие форматы файлов в PDF
 type: docs
 weight: 80
-url: /python-net/convert-other-files-to-pdf/
+url: /ru/python-net/convert-other-files-to-pdf/
 lastmod: "2026-04-14"
 description: Узнайте, как конвертировать файлы EPUB, Markdown, PCL, XPS, PostScript, XML и LaTeX в PDF на Python с помощью Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Как конвертировать другие форматы файлов в PDF на Python
 Abstract: В этой статье представлено всестороннее руководство по конвертации различных форматов файлов в PDF с использованием Python, используя возможности Aspose.PDF for Python via .NET. В документе описаны процессы конвертации для нескольких форматов, включая EPUB, Markdown, PCL, Text, XPS, PostScript, XML, XSL-FO и LaTeX/TeX. Каждый раздел предоставляет конкретные фрагменты кода и инструкции по реализации этих конвертаций. В статье подчеркивается полезность функций Aspose.PDF, таких как параметры загрузки, адаптированные под каждый тип файла, чтобы обеспечить точную и эффективную конвертацию. Кроме того, отмечается наличие онлайн‑приложений для конвертации, позволяющих пользователям самостоятельно опробовать функциональность. Это руководство служит практическим ресурсом для разработчиков, желающих интегрировать возможности конвертации в PDF в свои Python‑приложения.
 ---
 
 В этой статье объясняется, как **конвертировать различные типы файлов в PDF с использованием Python**. Она охватывает следующие темы.
 
-## Преобразовать OFD в PDF
+## Преобразование OFD в PDF
 
 OFD обозначает Open Fixed-layout Document (также называемый форматом Open Fixed Document). Это китайский национальный стандарт (GB/T 33190-2016) для электронных документов, представленный в качестве альтернативы PDF.
 
@@ -39,7 +39,7 @@ def convert_OFD_to_PDF(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Конвертировать LaTeX/TeX в PDF
+## Преобразование LaTeX/TeX в PDF
 
 Формат файла LaTeX — это текстовый формат файла с разметкой в производной LaTeX из семейства языков TeX, а LaTeX является производным форматом системы TeX. LaTeX (ˈleɪtæk/lay-tek или lah-tek) — это система подготовки документов и язык разметки документов. Он широко используется для коммуникации и публикации научных документов во многих областях, включая математику, физику и информатику. Он также играет ключевую роль в подготовке и публикации книг и статей, содержащих сложные многоязычные материалы, такие как корейский, японский, китайские иероглифы и арабский, включая специальные издания.
 
@@ -72,7 +72,7 @@ def convert_TEX_to_PDF(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Конвертировать EPUB в PDF
+## Преобразование EPUB в PDF
 
 **Aspose.PDF for Python via .NET** позволяет вам просто конвертировать файлы EPUB в формат PDF.
 
@@ -108,7 +108,7 @@ def convert_EPUB_to_PDF(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Преобразовать Markdown в PDF
+## Преобразование Markdown в PDF
 
 **Эта функция поддерживается версией 19.6 или более новой.**
 
@@ -136,7 +136,7 @@ def convert_MD_to_PDF(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Преобразовать PCL в PDF
+## Преобразование PCL в PDF
 
 <abbr title="Printer Command Language">PCL</abbr> (Printer Command Language) — язык печати Hewlett-Packard, разработанный для доступа к стандартным функциям принтера. Уровни PCL от 1 до 5e/5c являются языками, основанными на командах, использующими управляющие последовательности, которые обрабатываются и интерпретируются в порядке их получения. На уровне конечного пользователя потоки данных PCL генерируются драйвером печати. Вывод PCL также может быть легко сгенерирован пользовательскими приложениями.
 
@@ -173,7 +173,7 @@ def convert_PCL_to_PDF(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Конвертировать предварительно отформатированный текст в PDF
+## Преобразование предварительно отформатированного текста в PDF
 
 **Aspose.PDF for Python via .NET** поддерживает функцию конвертации обычного текста и предварительно отформатированного текстового файла в формат PDF.
 
@@ -235,7 +235,7 @@ def convert_TXT_to_PDF(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Конвертировать PostScript в PDF
+## Преобразование PostScript в PDF
 
 В этом примере показано, как преобразовать файл PostScript в PDF‑документ с использованием Aspose.PDF for Python via .NET.
 
@@ -257,7 +257,7 @@ def convert_PS_to_PDF(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Конвертировать XPS в PDF
+## Преобразование XPS в PDF
 
 **Aspose.PDF for Python via .NET** поддерживает функцию конвертирования <abbr title="XML Paper Specification">XPS</abbr> файлы в формат PDF. Проверьте эту статью, чтобы решить ваши задачи.
 
@@ -286,7 +286,7 @@ Aspose.PDF for Python via .NET представляет вам онлайн‑п
 [![Конвертация XPS в PDF с приложением Aspose.PDF](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
 {{% /alert %}}
 
-## Преобразовать XSL-FO в PDF
+## Преобразование XSL-FO в PDF
 
 Следующий фрагмент кода можно использовать для преобразования XSLFO в формат PDF с помощью Aspose.PDF for Python via .NET:
 
@@ -306,7 +306,7 @@ def convert_XSLFO_to_PDF(xsltfile, xmlfile, outfile):
     print(xmlfile + " converted into " + outfile)
 ```
 
-## Преобразовать XML с помощью XSLT в PDF
+## Преобразование XML с помощью XSLT в PDF
 
 Этот пример демонстрирует, как преобразовать файл XML в PDF, сначала преобразовав его в HTML с помощью шаблона XSLT, а затем загрузив HTML в Aspose.PDF.
 
@@ -336,3 +336,4 @@ def convert_XSLFO_to_PDF(xsltfile, xmlfile, outfile):
 - [Преобразовать HTML в PDF](/pdf/ru/python-net/convert-html-to-pdf/) для сценариев преобразования HTML и MHTML.
 - [Конвертировать форматы изображений в PDF](/pdf/ru/python-net/convert-images-format-to-pdf/) когда ваши входные данные — PNG, JPEG, TIFF, SVG или другие изображения.
 - [Конвертировать PDF в другие форматы](/pdf/ru/python-net/convert-pdf-to-other-files/) если вам также нужны обратные конверсии, такие как PDF в EPUB, Markdown или текст.
+

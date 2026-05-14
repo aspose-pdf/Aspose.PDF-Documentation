@@ -3,7 +3,7 @@ title: Viewer Preferences
 type: docs
 weight: 110
 url: /python-net/viewer-preferences/
-description: 
+description:
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"

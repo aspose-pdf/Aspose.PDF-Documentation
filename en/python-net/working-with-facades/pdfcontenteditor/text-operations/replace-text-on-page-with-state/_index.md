@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Replace Text with Custom Formatting on a Specific Page Using PdfContentEditor in Python
-Abstract: This example demonstrates how to replace text on a specific page in a PDF while applying custom formatting using Aspose.PDF for Python via the Facades API. It shows how to control font size and color during text replacement.    
+Abstract: This example demonstrates how to replace text on a specific page in a PDF while applying custom formatting using Aspose.PDF for Python via the Facades API. It shows how to control font size and color during text replacement.
 ---
 
 Sometimes replacing text in a PDF also requires formatting changes such as color or font size. Using TextState, you can define styling properties and apply them during replacement. This allows you to highlight modified text or enforce consistent formatting across documents.

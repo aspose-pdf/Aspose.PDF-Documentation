@@ -9,7 +9,7 @@ lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Extract signature images and certificate details from PDFs in Python
 Abstract: This article explains how to extract image and digital signature information from PDF documents using Aspose.PDF for Python. Learn how to retrieve signature images, extract certificate data, inspect signature algorithms, and detect compromised signatures in signed PDF files.
 ---

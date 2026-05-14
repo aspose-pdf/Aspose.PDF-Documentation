@@ -3,11 +3,11 @@ title: Annotations
 type: docs
 weight: 10
 url: /python-net/annotations/
-description: 
+description:
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"
-    priority: 0.7   
+    priority: 0.7
 ---
 
 - [Add Text Annotations](/pdf/python-net/add-text-annotation/)

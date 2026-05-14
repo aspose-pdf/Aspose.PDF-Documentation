@@ -9,9 +9,9 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Get PDF Page Offsets using Python
-Abstract: The 'get_page_offsets' function extracts the horizontal (X) and vertical (Y) offsets of each page in a PDF file. These offsets represent the position of the page content relative to the PDF's origin. By converting points to inches, the function provides precise, human-readable measurements that can be used for accurate placement of annotations, images, or text. It supports multi-page PDFs and is intended for developers working on PDF layout, automation, or content alignment tasks. 
+Abstract: The 'get_page_offsets' function extracts the horizontal (X) and vertical (Y) offsets of each page in a PDF file. These offsets represent the position of the page content relative to the PDF's origin. By converting points to inches, the function provides precise, human-readable measurements that can be used for accurate placement of annotations, images, or text. It supports multi-page PDFs and is intended for developers working on PDF layout, automation, or content alignment tasks.
 ---
 
 The 'get_page_offsets' function provides developers with the exact horizontal (X) and vertical (Y) offsets of pages in a PDF file. In PDF documents, each page may have an internal origin point that differs from the top-left corner of the page, which can affect the positioning of text, images, annotations, or other content.

@@ -9,7 +9,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Replace Text with Custom Formatting in a PDF Using PdfContentEditor in Python 
+AlternativeHeadline: Replace Text with Custom Formatting in a PDF Using PdfContentEditor in Python
 Abstract: This example demonstrates how to replace text in a PDF document while applying custom formatting using Aspose.PDF for Python via the Facades API. It shows how to control text color and font size during replacement.
 ---
 

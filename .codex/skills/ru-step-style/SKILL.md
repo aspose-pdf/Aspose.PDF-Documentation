@@ -47,16 +47,17 @@ Convert infinitives to polite imperative:
 | Загрузить | Загрузите |
 | Извлечь | Извлеките |
 | Преобразовать | Преобразуйте |
+| Привязать | Привяжите |
 | Удалить | Удалите |
 | Обновить | Обновите |
 | Вызвать | Вызовите |
 
 ## Style constraints
 
-- Preserve code identifiers, API names, file paths, and Markdown links.
-- Do not translate code.
-- Do not rewrite headings unless they are step headings.
+- Priority order: preserve technical integrity first, then preserve Markdown structure, then normalize step wording; if normalization conflicts with Markdown structure, keep Markdown structure, and if either conflicts with technical integrity, keep technical integrity.
+- Preserve code identifiers, API names, file paths, and Markdown links; do not translate code.
 - Keep Markdown structure unchanged.
+- Rewrite headings only when they explicitly number steps or describe procedural actions.
 - Prefer short direct instructions.
 - Use `вы`-style polite imperative, not informal imperative.
 
@@ -65,5 +66,5 @@ Convert infinitives to polite imperative:
 When asked to fix files:
 1. Scan Russian Markdown files.
 2. Find numbered steps, bullet steps, and headings that describe procedural actions.
-3. Rewrite only style issues.
+3. Rewrite only issues related to polite imperative verbs and these style constraints.
 4. Report changed files and examples of replacements.

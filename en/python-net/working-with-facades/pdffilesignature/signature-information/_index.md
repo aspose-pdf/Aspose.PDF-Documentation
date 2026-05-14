@@ -8,7 +8,7 @@ lastmod: "2026-04-02"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Read Signature Details from PDF Documents in Python
 Abstract: This article explains how to inspect signature metadata in signed PDF documents with Aspose.PDF for Python via .NET. It shows how to list signature names, read signer details, get the signing date and time, and extract the signature reason and location.
 ---

@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: List Rubber Stamp Annotations in a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to retrieve and list rubber stamp annotations from a PDF document using Aspose.PDF for Python via the Facades API. It shows how to access stamps on a specific page and display their details.    
+Abstract: This example demonstrates how to retrieve and list rubber stamp annotations from a PDF document using Aspose.PDF for Python via the Facades API. It shows how to access stamps on a specific page and display their details.
 ---
 
 When working with annotated PDFs, you may need to inspect existing rubber stamps before modifying or removing them. The 'get_stamps()' method allows you to retrieve all stamps placed on a particular page. You can then iterate through the results and process them programmatically.

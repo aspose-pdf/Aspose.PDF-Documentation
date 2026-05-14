@@ -1,14 +1,14 @@
----  
-title: Aspose.PDF для поддержки Python  
-linktitle: Техническая поддержка  
-type: docs  
-weight: 60  
-url: /ru/python-net/technical-support/  
-description: Эта страница дает рекомендации для быстрого и качественного решения ваших задач с использованием Aspose.PDF для Python.  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+---
+title: Aspose.PDF для поддержки Python
+linktitle: Техническая поддержка
+type: docs
+weight: 60
+url: /ru/python-net/technical-support/
+description: Эта страница дает рекомендации для быстрого и качественного решения ваших задач с использованием Aspose.PDF для Python.
+lastmod: "2021-06-05"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
 Aspose.PDF позволяет вам использовать бесплатную техническую поддержку для всех своих продуктов. Если у вас есть вопросы по Aspose.PDF, ознакомьтесь со следующей статьей:

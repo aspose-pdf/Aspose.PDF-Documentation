@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Create an N-Up PDF Layout in Python
-Abstract: Learn how to generate an N-Up PDF layout using Aspose.PDF for Python. This example demonstrates how to combine multiple pages of a PDF document onto a single page using the 'make_n_up' or 'try_make_n_up' method of the PdfFileEditor class.   
+Abstract: Learn how to generate an N-Up PDF layout using Aspose.PDF for Python. This example demonstrates how to combine multiple pages of a PDF document onto a single page using the 'make_n_up' or 'try_make_n_up' method of the PdfFileEditor class.
 ---
 
 An N-Up layout places multiple pages of a PDF document onto a single page in a grid format. This layout is often used for printing presentations, handouts, or reports where multiple pages can be viewed at once.

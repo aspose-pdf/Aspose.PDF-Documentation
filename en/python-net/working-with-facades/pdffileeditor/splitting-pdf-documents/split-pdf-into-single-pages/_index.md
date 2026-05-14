@@ -8,7 +8,7 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Split a PDF into Individual Pages in Python
 Abstract: Learn how to divide a PDF document into single-page PDFs using Aspose.PDF for Python. This method extracts each page from the original PDF and saves it as a separate file for flexible document management and processing.
 ---

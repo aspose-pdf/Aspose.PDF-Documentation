@@ -3,11 +3,11 @@ title: Image Operations
 type: docs
 weight: 60
 url: /python-net/image-operations/
-description: 
+description:
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"
-    priority: 0.7   
+    priority: 0.7
 ---
 
 - [Replace Images in PDF](/pdf/python-net/replace-image/)

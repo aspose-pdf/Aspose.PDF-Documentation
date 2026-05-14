@@ -3,11 +3,11 @@ title: Drawing Annotations
 type: docs
 weight: 50
 url: /python-net/drawing-annotations/
-description: 
+description:
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"
-    priority: 0.7    
+    priority: 0.7
 ---
 
 - [Add Line Annotation](/pdf/python-net/add-line-annotation/)

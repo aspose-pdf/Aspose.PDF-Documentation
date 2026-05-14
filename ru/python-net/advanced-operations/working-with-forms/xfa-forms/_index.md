@@ -7,11 +7,11 @@ url: /ru/python-net/xfa-forms/
 description: Aspose.PDF for Python via .NET API позволяет работать с полями XFA и XFA Acroform в PDF-документе.
 lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
-## Преобразовать XFA‑в‑Acroform
+## Преобразование XFA‑в‑Acroform
 
 {{% alert color="primary" %}}
 

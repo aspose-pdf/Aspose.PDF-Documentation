@@ -1,130 +1,75 @@
 ---
-title: Eliminar tablas de un PDF existente
-linktitle: Eliminar Tablas
+title: Eliminar tablas de documentos PDF existentes
+linktitle: Eliminar tablas
+description: Aprenda cómo eliminar una o más tablas de documentos PDF existentes en Python.
+lastmod: "2026-05-05"
 type: docs
 weight: 50
-url: /es/python-net/remove-tables-from-existing-pdf/
-lastmod: "2023-02-17"
+url: /es/python-net/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Eliminar una o varias tablas de archivos PDF con Python
+Abstract: Este artículo explica cómo eliminar tablas de documentos PDF existentes usando Aspose.PDF for Python via .NET. Introduce `TableAbsorber` para localizar tablas y muestra cómo eliminar una sola tabla o eliminar todas las tablas detectadas de una página.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Eliminar tablas de un PDF existente",
-    "alternativeHeadline": "Cómo eliminar tablas de un PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, eliminar tabla, borrar tablas",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/remove-tables-from-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/remove-tables-from-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": ""
-}
-</script>
 
+## Eliminar tabla de documento PDF
 
-{{% alert color="primary" %}}
+Aspose.PDF for Python le permite eliminar una tabla de un PDF. Abre un PDF existente, detecta la primera tabla en la primera página con `TableAbsorber`, elimina esa tabla usando `remove()`, y guarda el PDF actualizado en un nuevo archivo.
 
-Aspose.PDF para Python a través de .NET ofrece la capacidad de insertar/crear una tabla dentro de un documento PDF mientras se genera desde cero o también puede agregar el objeto de tabla en cualquier documento PDF existente. Sin embargo, puede tener un requisito de [Manipular tablas en PDF existente](https://docs.aspose.com/pdf/python-net/manipulate-tables-in-existing-pdf/) donde puede actualizar los contenidos en las celdas de tablas existentes. Sin embargo, puede encontrarse con un requisito para eliminar objetos de tabla de un documento PDF existente.
-
-{{% /alert %}}
-
-Para eliminar las tablas, necesitamos usar la clase [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) para obtener las tablas en un PDF existente y luego llamar a [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods).
-
-## Eliminar tabla del documento PDF
-
-Hemos añadido una nueva función, es decir,
- [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods) a la clase existente [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) para eliminar la tabla del documento PDF. Una vez que el absorbedor encuentra tablas en la página con éxito, se vuelve capaz de eliminarlas. Por favor, revise el siguiente fragmento de código que muestra cómo eliminar una tabla de un documento PDF:
+Utilice esta página cuando necesite limpiar PDFs con muchas tablas, eliminar contenido tabular desactualizado o simplificar documentos antes de redistribuirlos.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_one_table(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # Cargar documento PDF existente
-    pdf_document = ap.Document(input_file)
-    # Crear objeto TableAbsorber para encontrar tablas
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # Visitar la primera página con el absorbedor
-    absorber.visit(pdf_document.pages[1])
-    # Obtener la primera tabla en la página
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    # Get first table on the page
     table = absorber.table_list[0]
-    # Eliminar la tabla
+    # Remove the table
     absorber.remove(table)
-    # Guardar PDF
-    pdf_document.save(output_file)
+    # Save PDF
+    document.save(outfile)
 ```
 
-## Eliminar Múltiples Tablas de un Documento PDF
+## Eliminar todas las tablas del documento PDF
 
-A veces, un documento PDF puede contener más de una tabla y puede surgir la necesidad de eliminar múltiples tablas de él. Para eliminar múltiples tablas de un documento PDF, utilice el siguiente fragmento de código:
+Con nuestra biblioteca, puedes eliminar todas las tablas de una página específica en un PDF. El código abre un PDF existente, detecta todas las tablas en la segunda página con TableAbsorber, recorre las tablas detectadas, elimina cada una y luego guarda el PDF modificado en un nuevo archivo. Es útil cuando necesitas eliminar en bloque las tablas de una página mientras dejas intacto el resto del contenido del PDF.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_all_tables(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # Cargar documento PDF existente
-    pdf_document = ap.Document(input_file)
-    # Crear objeto TableAbsorber para encontrar tablas
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # Visitar la segunda página con el absorbedor
-    absorber.visit(pdf_document.pages[1])
-    # Obtener copia de la colección de tablas
-    tables = absorber.table_list
-    # Recorrer la copia de la colección y eliminar tablas
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    #  Loop through the copy of collection and removing tables
+    tables = list(absorber.table_list)
     for table in tables:
         absorber.remove(table)
-    # Guardar documento
-    pdf_document.save(output_file)
+
+    # Save document
+    document.save(outfile)
+```
+
+## Temas relacionados de la tabla
+
+- [Trabajar con tablas en PDF usando Python](/pdf/es/python-net/working-with-tables/)
+- [Agregar tablas al PDF usando Python](/pdf/es/python-net/adding-tables/)
+- [Extraer tablas de documentos PDF](/pdf/es/python-net/extracting-table/)
+- [Manipular tablas en PDFs existentes](/pdf/es/python-net/manipulating-tables/)

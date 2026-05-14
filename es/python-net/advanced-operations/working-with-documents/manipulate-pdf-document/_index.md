@@ -1,198 +1,118 @@
 ---
-title: Manipular Documento PDF en Python a través de .NET
-linktitle: Manipular Documento PDF
+title: Manipular documentos PDF en Python
+linktitle: Manipular documento PDF
 type: docs
 weight: 20
 url: /es/python-net/manipulate-pdf-document/
-description: Este artículo contiene información sobre cómo validar un Documento PDF para el Estándar PDF A usando Python, cómo trabajar con el índice, cómo establecer la fecha de caducidad del PDF, etc.
-lastmod: "2023-04-13"
+description: Aprende cómo validar, estructurar y modificar documentos PDF en Python, incluyendo la gestión de TOC y la verificación de PDF/A.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guía sobre la manipulación de documentos PDF usando Python
+Abstract: Este artículo proporciona una guía completa sobre la manipulación de documentos PDF usando Python, específicamente con la biblioteca Aspose.PDF. Cubre varias funcionalidades, incluyendo la validación de documentos PDF para el cumplimiento de PDF/A-1a y PDF/A-1b utilizando el método `validate` de la clase `Document`. También detalla cómo agregar, personalizar y gestionar una Tabla de contenidos (TOC) en archivos PDF, como establecer diferentes TabLeaderTypes, ocultar números de página y personalizar la numeración de páginas con un prefijo. Además, el artículo explica cómo establecer una fecha de expiración para un documento PDF incrustando JavaScript para restringir el acceso y cómo aplanar formularios rellenables en un PDF para que no sean editables. Cada sección está acompañada de fragmentos de código que demuestran la implementación de estas características usando Aspose.PDF en Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Manipular Documento PDF a través de Python",
-    "alternativeHeadline": "Cómo manipular un archivo PDF con Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, dotnet, python, manipular archivo pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentos de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/manipulate-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/manipulate-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Este artículo contiene información sobre cómo validar un Documento PDF para el Estándar PDF A usando Python, cómo trabajar con el índice, cómo establecer la fecha de caducidad del PDF, etc."
-}
-</script>
 
+Esta página es útil cuando necesitas validar el cumplimiento de PDF, crear o personalizar una tabla de contenido, establecer el comportamiento de expiración del documento, o aplanar PDFs rellenables en flujos de trabajo de Python.
 
-## Manipular Documento PDF en Python
+## Manipular documento PDF en Python
 
-## Validar Documento PDF para el Estándar PDF A (A 1A y A 1B)
+## Validar documento PDF para el estándar PDF/A (A 1A y A 1B)
 
-Para validar un documento PDF para la compatibilidad con PDF/A-1a o PDF/A-1b, utiliza el método [validate](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) de la clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Este método te permite especificar el nombre del archivo en el que se guardará el resultado y el tipo de validación requerida enumeración PdfFormat: PDF_A_1A o PDF_A_1B.
+Para validar un documento PDF para compatibilidad con PDF/A-1a o PDF/A-1b, utilice el [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) clase [validar](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método. Este método le permite especificar el nombre del archivo en el que se guardará el resultado y el tipo de validación requerido, enumeración PdfFormat: PDF_A_1A o PDF_A_1B.
 
-El siguiente fragmento de código te muestra cómo validar un documento PDF para PDF/A-1A.
+El siguiente fragmento de código le muestra cómo validar un documento PDF para PDF/A-1A.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Abrir documento
+def validate_pdfa_standard_a1a(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
-
-    # Validar PDF para PDF/A-1a
-    document.validate(output_xml, ap.PdfFormat.PDF_A_1A)
+    document.validate(output_pdf, ap.PdfFormat.PDF_A_1A)
 ```
 
-El siguiente fragmento de código te muestra cómo validar un documento PDF para PDF/A-1b.
+El siguiente fragmento de código le muestra cómo validar un documento PDF para PDF/A-1b.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Abrir documento
+def validate_pdfa_standard_a1b(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
-
-    # Validar PDF para PDF/A-1b
-    document.validate(output_xml, ap.PdfFormat.PDF_A_1B)
+    document.validate(output_pdf, ap.PdfFormat.PDF_A_1B)
 ```
-
 
 ## Trabajando con TOC
 
-### Agregar TOC a un PDF Existente
+### Agregar TOC a PDF existente
 
-TOC en PDF significa "Tabla de Contenidos". Es una característica que permite a los usuarios navegar rápidamente a través de un documento proporcionando una visión general de sus secciones y encabezados.
+TOC en PDF significa "Table of Contents". Es una función que permite a los usuarios navegar rápidamente a través de un documento proporcionando una visión general de sus secciones y encabezados. 
 
-Para agregar un TOC a un archivo PDF existente, use la clase Heading en el espacio de nombres [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/). El espacio de nombres [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) puede tanto crear nuevos archivos PDF como manipular archivos PDF existentes. Para agregar un TOC a un PDF existente, use el espacio de nombres Aspose.Pdf. El siguiente fragmento de código muestra cómo crear una tabla de contenidos dentro de un archivo PDF existente usando Python a través de .NET.
+Para agregar una TOC a un archivo PDF existente, use la clase Heading en el [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) namespace. El [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) namespace puede crear nuevos y manipular archivos PDF existentes. Para agregar un TOC a un PDF existente, use el namespace Aspose.Pdf. El siguiente fragmento de código muestra cómo crear una tabla de contenido dentro de un archivo PDF existente usando Python vía .NET.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Cargar un archivo PDF existente
-    doc = ap.Document(input_pdf)
-
-    # Acceder a la primera página del archivo PDF
-    tocPage = doc.pages.insert(1)
-
-    # Crear objeto para representar la información del TOC
-    tocInfo = ap.TocInfo()
-    title = ap.text.TextFragment("Tabla de Contenidos")
+def add_table_of_contents(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.insert(1)
+    toc_info = ap.TocInfo()
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
+    toc_info.title = title
+    toc_page.toc_info = toc_info
 
-    # Establecer el título para el TOC
-    tocInfo.title = title
-    tocPage.toc_info = tocInfo
+    titles = ["First page", "Second page"]
+    for index, title_text in enumerate(titles[:2]):
+        heading = ap.Heading(1)
+        segment = ap.text.TextSegment(title_text)
+        heading.toc_page = toc_page
+        heading.segments.append(segment)
+        destination_page = document.pages[index + 2]
+        heading.destination_page = destination_page
+        heading.top = destination_page.rect.height
+        toc_page.paragraphs.add(heading)
 
-    # Crear objetos de cadena que se usarán como elementos del TOC
-    titles = ["Primera página", "Segunda página", "Tercera página", "Cuarta página"]
-    for i in range(0, 2):
-        # Crear objeto Heading
-        heading2 = ap.Heading(1)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = tocPage
-        heading2.segments.append(segment2)
-
-        # Especificar la página de destino para el objeto heading
-        heading2.destination_page = doc.pages[i + 2]
-
-        # Página de destino
-        heading2.top = doc.pages[i + 2].rect.height
-
-        # Coordenada de destino
-        segment2.text = titles[i]
-
-        # Agregar encabezado a la página que contiene el TOC
-        tocPage.paragraphs.add(heading2)
-
-    # Guardar el documento actualizado
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
-
 
 ### Establecer diferentes TabLeaderType para diferentes niveles de TOC
 
-Aspose.PDF para Python también permite establecer diferentes TabLeaderType para diferentes niveles de TOC. Necesitas establecer la propiedad [line_dash](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) de [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
+Aspose.PDF for Python también permite establecer diferentes TabLeaderType para diferentes niveles de TOC. Necesita establecer [linea_guion](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) propiedad de [InfoTOC](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document()
-    tocPage = doc.pages.add()
+def set_toc_levels(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.add()
     toc_info = ap.TocInfo()
-
-    # establecer LeaderType
     toc_info.line_dash = ap.text.TabLeaderType.SOLID
-    title = ap.text.TextFragment("Tabla de Contenidos")
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 30
     toc_info.title = title
-
-    # Añadir la sección de la lista a la colección de secciones del documento Pdf
-    tocPage.toc_info = toc_info
-    # Definir el formato de los cuatro niveles de lista estableciendo los márgenes izquierdos
-    # y
-    # configuraciones de formato de texto de cada nivel
+    toc_page.toc_info = toc_info
 
     toc_info.format_array_length = 4
     toc_info.format_array[0].margin.left = 0
     toc_info.format_array[0].margin.right = 30
     toc_info.format_array[0].line_dash = ap.text.TabLeaderType.DOT
-    toc_info.format_array[0].text_state.font_style = ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    toc_info.format_array[0].text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     toc_info.format_array[1].margin.left = 10
     toc_info.format_array[1].margin.right = 30
     toc_info.format_array[1].line_dash = 3
@@ -205,226 +125,146 @@ Aspose.PDF para Python también permite establecer diferentes TabLeaderType para
     toc_info.format_array[3].margin.right = 30
     toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
 
-    # Crear una sección en el documento Pdf
-    page = doc.pages.add()
+    page = document.pages.add()
+    for level in range(1, 5):
+        heading = ap.Heading(level)
+        heading.is_auto_sequence = True
+        heading.toc_page = toc_page
+        heading.text_state.font = ap.text.FontRepository.find_font("Arial")
+        segment = ap.text.TextSegment(f"Sample Heading{level}")
+        heading.segments.append(segment)
+        heading.is_in_list = True
+        page.paragraphs.add(heading)
 
-    # Añadir cuatro encabezados en la sección
-    for Level in range(1, 5):
-        heading2 = ap.Heading(Level)
-        segment2 = ap.text.TextSegment()
-        heading2.segments.append(segment2)
-        heading2.is_auto_sequence = True
-        heading2.toc_page = tocPage
-        segment2.text = "Encabezado de Ejemplo" + str(Level)
-        heading2.text_state.font = ap.text.FontRepository.find_font("Arial")
-
-        # Añadir el encabezado en la Tabla de Contenidos.
-        heading2.is_in_list = True
-        page.paragraphs.add(heading2)
-
-    # guardar el Pdf
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
+### Ocultar números de página en TOC
 
-### Ocultar Números de Página en el TOC
-
-En caso de que no desees mostrar los números de página, junto con los encabezados en el TOC, puedes usar la propiedad [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) de la Clase [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) como falso. Por favor, revisa el siguiente fragmento de código para ocultar los números de página en la tabla de contenidos:
+En caso de que no desees mostrar los números de página, junto con los encabezados en el TOC, puedes usar [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) propiedad de [InfoTOC](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) Clase como falso. Por favor revise el siguiente fragmento de código para ocultar los números de página en la tabla de contenidos:
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document()
-    toc_page = doc.pages.add()
+def hide_page_numbers_in_toc(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.add()
     toc_info = ap.TocInfo()
-    title = ap.text.TextFragment("Tabla de Contenidos")
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
     toc_info.title = title
-    # Agregar la sección de la lista a la colección de secciones del documento Pdf
-    toc_page.toc_info = toc_info
-    # Definir el formato de la lista de cuatro niveles configurando los márgenes
-    # a la izquierda y la configuración del formato del texto de cada nivel
-
     toc_info.is_show_page_numbers = False
+    toc_page.toc_info = toc_info
+
     toc_info.format_array_length = 4
     toc_info.format_array[0].margin.right = 0
-    toc_info.format_array[0].text_state.font_style = ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    toc_info.format_array[0].text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     toc_info.format_array[1].margin.left = 30
     toc_info.format_array[1].text_state.underline = True
     toc_info.format_array[1].text_state.font_size = 10
     toc_info.format_array[2].text_state.font_style = ap.text.FontStyles.BOLD
     toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
-    page = doc.pages.add()
-    # Agregar cuatro encabezados en la sección
-    for Level in range(1, 5):
-        heading2 = ap.Heading(Level)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = toc_page
-        heading2.segments.append(segment2)
-        heading2.is_auto_sequence = True
-        segment2.text = "este es el encabezado de nivel " + str(Level)
-        heading2.is_in_list = True
-        page.paragraphs.add(heading2)
-    doc.save(output_pdf)
 
+    page = document.pages.add()
+    for level in range(1, 2):
+        heading = ap.Heading(level)
+        heading.toc_page = toc_page
+        heading.is_auto_sequence = True
+        heading.is_in_list = True
+        segment = ap.text.TextSegment(f"this is heading of level {level}")
+        heading.segments.append(segment)
+        page.paragraphs.add(heading)
+
+    document.save(output_pdf)
 ```
 
+### Personalizar los números de página al agregar el TOC
 
-### Personalizar los Números de Página al Agregar un Índice
-
-Es común personalizar la numeración de las páginas en el índice al agregarlo en un documento PDF. Por ejemplo, puede ser necesario añadir algún prefijo antes del número de página como P1, P2, P3, etc. En tal caso, Aspose.PDF para Python proporciona la propiedad [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) de la clase [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) que se puede utilizar para personalizar los números de página como se muestra en el siguiente ejemplo de código.
+Es común personalizar la numeración de páginas en el TOC al agregar TOC en un documento PDF. Por ejemplo, puede que necesitemos añadir algún prefijo antes del número de página, como P1, P2, P3, etc. En tal caso, Aspose.PDF for Python proporciona [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) propiedad de [InfoTOC](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) clase que se puede usar para personalizar los números de página como se muestra en el siguiente ejemplo de código.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Cargar un archivo PDF existente
-    doc = ap.Document(input_pdf)
-    # Acceder a la primera página del archivo PDF
-    toc_page = doc.pages.insert(1)
-    # Crear objeto para representar la información del índice
+def customize_page_numbers_in_toc(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.insert(1)
     toc_info = ap.TocInfo()
-    title = ap.text.TextFragment("Tabla de Contenidos")
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
-    # Establecer el título para el índice
     toc_info.title = title
     toc_info.page_numbers_prefix = "P"
     toc_page.toc_info = toc_info
-    for i in range(len(doc.pages)):
-        # Crear objeto de encabezado
-        heading2 = ap.Heading(1)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = toc_page
-        heading2.segments.append(segment2)
-        # Especificar la página de destino para el objeto de encabezado
-        heading2.destination_page = doc.pages[i + 1]
-        # Página de destino
-        heading2.top = doc.pages[i + 1].rect.height
-        # Coordenada de destino
-        segment2.text = "Página " + str(i)
-        # Añadir encabezado a la página que contiene el índice
-        toc_page.paragraphs.add(heading2)
 
-    # Guardar el documento actualizado
-    doc.save(output_pdf)
+    for index, page in enumerate(document.pages, start=1):
+        heading = ap.Heading(1)
+        heading.toc_page = toc_page
+        heading.destination_page = page
+        heading.top = page.rect.height
+        segment = ap.text.TextSegment(f"Page {index}")
+        heading.segments.append(segment)
+        toc_page.paragraphs.add(heading)
 
+    document.save(output_pdf)
 ```
 
+## Cómo establecer la fecha de vencimiento del PDF
 
-## Cómo establecer la fecha de vencimiento de un PDF
-
-Aplicamos privilegios de acceso a archivos PDF para que un cierto grupo de usuarios pueda acceder a características/objetos particulares de documentos PDF. Para restringir el acceso al archivo PDF, usualmente aplicamos cifrado y podemos tener el requerimiento de establecer la expiración del archivo PDF, de modo que el usuario que accede/visualiza el documento reciba un aviso válido sobre la expiración del archivo PDF.
+Aplicamos privilegios de acceso en los archivos PDF para que un determinado grupo de usuarios pueda acceder a características/objetos específicos de los documentos PDF. Para restringir el acceso al archivo PDF, normalmente aplicamos cifrado y puede que tengamos un requisito de establecer una expiración del archivo PDF, de modo que el usuario que accede/visualiza el documento reciba una notificación válida sobre la expiración del archivo PDF.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Instanciar objeto Document
-    doc = ap.Document()
-    # Agregar página a la colección de páginas del archivo PDF
-    doc.pages.add()
-    # Agregar fragmento de texto a la colección de párrafos del objeto página
-    doc.pages[1].paragraphs.add(ap.text.TextFragment("Hola Mundo..."))
-    # Crear objeto JavaScript para establecer la fecha de vencimiento del PDF
-    javaScript = ap.annotations.JavascriptAction(
+def set_pdf_expiry_date(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    document.pages.add()
+    document.pages[1].paragraphs.add(ap.text.TextFragment("Hello World..."))
+    script = ap.annotations.JavascriptAction(
         "var year=2017;"
-        + "var month=5;"
-        + "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());"
-        + "expiry = new Date(year, month);"
-        + "if (today.getTime() > expiry.getTime())"
-        + "app.alert('El archivo ha expirado. Necesitas uno nuevo.');"
+        "var month=5;"
+        "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());"
+        "expiry = new Date(year, month);"
+        "if (today.getTime() > expiry.getTime())"
+        "app.alert('The file is expired. You need a new one.');"
     )
-    # Establecer JavaScript como acción de apertura del PDF
-    doc.open_action = javaScript
-
-    # Guardar Documento PDF
-    doc.save(output_pdf)
+    document.open_action = script
+    document.save(output_pdf)
 ```
 
+## Aplanar PDF rellenable en Python
 
-## Aplanar PDF Rellenable en Python
-
-Los documentos PDF a menudo incluyen formularios con widgets interactivos rellenables como botones de opción, casillas de verificación, cuadros de texto, listas, etc. Para hacerlo no editable para varios propósitos de aplicación, necesitamos aplanar el archivo PDF. Aspose.PDF proporciona la función para aplanar tu PDF en Python con solo unas pocas líneas de código:
+Los documentos PDF a menudo incluyen formularios con widgets interactivos rellenables, como botones de radio, casillas de verificación, cuadros de texto, listas, etc. Para que sea no editable con diversos propósitos de aplicación, necesitamos aplanar el archivo PDF.
+Aspose.PDF proporciona la función para aplanar su PDF en Python con solo unas pocas líneas de código:
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Cargar el formulario PDF de origen
-    doc = ap.Document(input_pdf)
-
-    # Aplanar PDF Rellenable Aplanado
-    if len(doc.form.fields) > 0:
-        for item in doc.form.fields:
-            item.flatten()
-
-    # Guardar el documento actualizado
-    doc.save(output_pdf)
+def flatten_fillable_pdf(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    if document.form and document.form.fields:
+        for field in document.form.fields:
+            field.flatten()
+    document.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python a través de .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para Python a través de .NET",
-    "downloadUrl": "https://releases.aspose.com/pdf/python-net",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Temas de documentos relacionados
+
+- [Trabajar con documentos PDF en Python](/pdf/es/python-net/working-with-documents/)
+- [Formatear documentos PDF en Python](/pdf/es/python-net/formatting-pdf-document/)
+- [Crear archivos PDF en Python](/pdf/es/python-net/create-pdf-document/)
+- [Optimizar archivos PDF en Python](/pdf/es/python-net/optimize-pdf/)

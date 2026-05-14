@@ -3,18 +3,18 @@ title: Конвертировать PDF в PowerPoint на Python
 linktitle: Конвертировать PDF в PowerPoint
 type: docs
 weight: 30
-url: /python-net/convert-pdf-to-powerpoint/
+url: /ru/python-net/convert-pdf-to-powerpoint/
 description: Узнайте, как конвертировать файлы PDF в PowerPoint на Python с помощью Aspose.PDF for Python via .NET, включая редактируемые слайды PPTX и вывод слайдов в виде изображений.
 lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Как конвертировать PDF в PowerPoint на Python
 Abstract: Эта статья представляет собой всестороннее руководство по конвертации PDF‑файлов в презентации PowerPoint с использованием Python, с особым акцентом на формат PPTX. В ней представлено использование Aspose.PDF for Python via .NET, который упрощает процесс конвертации, позволяя преобразовывать страницы PDF в отдельные слайды в файле PPTX. В статье описаны необходимые шаги конвертации, включая создание экземпляров классов Document и PptxSaveOptions и использование метода Save. Кроме того, отмечена возможность конвертировать PDF в PPTX с слайдами в виде изображений путем установки определённого свойства в PptxSaveOptions. Приведены фрагменты кода, иллюстрирующие процесс конвертации. В статье также упомянуто онлайн‑приложение для тестирования функции конвертации PDF в PPTX, предлагающее пользователям практический опыт. Кроме того, перечислены различные связанные темы и функции, доступные в данном контексте, подчеркивающие универсальность и программный подход к работе с конвертацией PDF в PowerPoint с помощью Python.
 ---
 
-## Конвертация PDF в PowerPoint и PPTX на Python
+## Преобразование PDF в PowerPoint и PPTX на Python
 
 **Aspose.PDF for Python via .NET** позволяет отслеживать прогресс конвертации PDF в PPTX.
 
@@ -45,7 +45,7 @@ def convert_PDF_to_PPTX(infile, outfile):
     document.save(outfile, save_options)
 ```
 
-## Преобразовать PDF в PPTX с слайдами в виде изображений
+## Преобразование PDF в PPTX с слайдами в виде изображений
 
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в PowerPoint онлайн**
@@ -71,7 +71,7 @@ def convert_PDF_to_PPTX_slides_as_images(infile, outfile):
     document.save(outfile, save_options)
 ```
 
-## Конвертировать PDF в PPTX с пользовательским разрешением изображения
+## Преобразование PDF в PPTX с пользовательским разрешением изображения
 
 Этот метод преобразует документ PDF в файл PowerPoint (PPTX), устанавливая пользовательское разрешение изображения (300 DPI) для улучшенного качества.
 

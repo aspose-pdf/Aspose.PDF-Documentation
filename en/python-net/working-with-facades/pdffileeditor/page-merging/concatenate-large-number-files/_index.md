@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Concatenate Large PDF Files in Python Using Disk Buffering
-Abstract: Learn how to merge a large number of PDF files efficiently using Aspose.PDF for Python. This example demonstrates how to enable disk buffering to handle large PDFs without exhausting system memory, ensuring smooth concatenation of many files.   
+Abstract: Learn how to merge a large number of PDF files efficiently using Aspose.PDF for Python. This example demonstrates how to enable disk buffering to handle large PDFs without exhausting system memory, ensuring smooth concatenation of many files.
 ---
 
 When working with large collections of PDF files, memory consumption can become a bottleneck during concatenation. Using Aspose.PDF for Python, you can enable disk buffering in the [PdfFileEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffileeditor/) class to merge many PDFs efficiently. The concatenate method combines the input files into a single PDF while the disk buffer prevents high memory usage. This approach is ideal for processing bulk documents, automated report generation, or consolidating large PDF archives.

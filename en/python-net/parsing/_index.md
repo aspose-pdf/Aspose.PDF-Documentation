@@ -9,7 +9,7 @@ lastmod: "2025-02-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Parse PDF files with Aspose.PDF for Python
 Abstract: The article Parse PDF delves into the various methodologies for extracting different types of information from PDF files. It highlights several key operations and guides.
 ---

@@ -9,16 +9,16 @@ lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Руководство по работе с PDF‑документами с использованием Python
 Abstract: Эта статья предоставляет комплексное руководство по манипулированию PDF‑документами с использованием Python, конкретно с библиотекой Aspose.PDF. В ней рассматриваются несколько функций, включая проверку PDF‑документов на соответствие PDF/A-1a и PDF/A-1b с помощью метода `validate` класса `Document`. Также подробно описывается, как добавить, настроить и управлять оглавлением (Table of Contents (TOC)) в PDF‑файлах, например установка различных TabLeaderTypes, скрытие номеров страниц и настройка нумерации страниц с префиксом. Кроме того, статья объясняет, как установить дату истечения срока действия PDF‑документа, внедрив JavaScript для ограничения доступа, и как уплощать заполняемые формы в PDF, делая их не редактируемыми. Каждый раздел сопровождается фрагментами кода, демонстрирующими реализацию этих возможностей с использованием Aspose.PDF в Python.
 ---
 
 Эта страница полезна, когда вам нужно проверять соответствие PDF требованиям, создавать или настраивать таблицу содержимого, задавать поведение истечения срока действия документа или уплощать заполняемые PDF в рабочих процессах Python.
 
-## Манипулировать PDF документом в Python
+## Манипулирование PDF-документом в Python
 
-## Проверить PDF‑документ на соответствие стандарту PDF/A (A 1A и A 1B)
+## Проверка PDF‑документа на соответствие стандарту PDF/A (A 1A и A 1B)
 
 Чтобы проверить PDF‑документ на совместимость с PDF/A‑1a или PDF/A‑1b, используйте [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс [validate](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод. Этот метод позволяет указать имя файла, в котором будет сохранён результат, и требуемый тип проверки PdfFormat enumeration : PDF_A_1A или PDF_A_1B.
 
@@ -50,7 +50,7 @@ def validate_pdfa_standard_a1b(input_pdf, output_pdf):
 
 ## Работа с TOC
 
-### Добавить TOC в существующий PDF
+### Добавление TOC в существующий PDF
 
 TOC в PDF обозначает "Table of Contents". Это функция, позволяющая пользователям быстро перемещаться по документу, предоставляя обзор его разделов и заголовков. 
 
@@ -86,7 +86,7 @@ def add_table_of_contents(input_pdf, output_pdf):
     document.save(output_pdf)
 ```
 
-### Установить разный TabLeaderType для разных уровней TOC
+### Установка разных TabLeaderType для разных уровней TOC
 
 Aspose.PDF for Python также позволяет устанавливать разные TabLeaderType для разных уровней TOC. Вам нужно установить [line_dash](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) свойство [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
 
@@ -139,7 +139,7 @@ def set_toc_levels(input_pdf, output_pdf):
     document.save(output_pdf)
 ```
 
-### Скрыть номера страниц в оглавлении
+### Скрытие номеров страниц в оглавлении
 
 В случае, если вы не хотите отображать номера страниц вместе с заголовками в TOC, вы можете использовать [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) свойство [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) Class как false. Пожалуйста, проверьте следующий фрагмент кода, чтобы скрыть номера страниц в оглавлении:
 
@@ -184,7 +184,7 @@ def hide_page_numbers_in_toc(input_pdf, output_pdf):
     document.save(output_pdf)
 ```
 
-### Настройте номера страниц при добавлении TOC
+### Настройка номеров страниц при добавлении TOC
 
 Обычно настраивают нумерацию страниц в оглавлении при добавлении оглавления в PDF‑документ. Например, может потребоваться добавить префикс перед номером страницы, такой как P1, P2, P3 и так далее. В таком случае Aspose.PDF for Python предоставляет [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) свойство [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) класс, который может использоваться для настройки нумерации страниц, как показано в следующем примере кода.
 
@@ -217,7 +217,7 @@ def customize_page_numbers_in_toc(input_pdf, output_pdf):
     document.save(output_pdf)
 ```
 
-## Как установить дату истечения срока действия PDF
+## Установка даты истечения срока действия PDF
 
 Мы применяем привилегии доступа к PDF‑файлам, чтобы определённая группа пользователей могла получать доступ к конкретным функциям/объектам PDF‑документов. Для ограничения доступа к PDF‑файлам мы обычно используем шифрование и можем иметь требование установить срок действия PDF‑файла, чтобы пользователь, получающий доступ/просматривающий документ, получил корректное уведомление о сроке истечения действия PDF‑файла.
 
@@ -262,7 +262,7 @@ def flatten_fillable_pdf(input_pdf, output_pdf):
     document.save(output_pdf)
 ```
 
-## Связанные темы Document
+## Связанные темы документа
 
 - [Работа с PDF документами в Python](/pdf/ru/python-net/working-with-documents/)
 - [Форматировать PDF документы в Python](/pdf/ru/python-net/formatting-pdf-document/)

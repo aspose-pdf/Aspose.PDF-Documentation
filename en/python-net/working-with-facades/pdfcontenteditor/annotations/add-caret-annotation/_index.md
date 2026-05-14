@@ -8,9 +8,9 @@ lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Caret Annotation to a PDF Using Python
-Abstract: This example demonstrates how to add a caret annotation to a PDF document using Aspose.PDF for Python via the Facades API. The sample shows how to bind a PDF file, define annotation placement using rectangles, configure caret properties, and save the updated document.    
+Abstract: This example demonstrates how to add a caret annotation to a PDF document using Aspose.PDF for Python via the Facades API. The sample shows how to bind a PDF file, define annotation placement using rectangles, configure caret properties, and save the updated document.
 ---
 
 Caret annotations are commonly used to indicate text insertions or editorial comments in a document. With PdfContentEditor, you can programmatically add caret annotations by specifying the page number, annotation bounds, callout area, symbol, note text, and color.

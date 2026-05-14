@@ -9,7 +9,7 @@ description: Learn how to convert PDF files to PDF/A, PDF/E, and PDF/X in Python
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to convert PDF to PDF/x formats
 Abstract: The article provides a comprehensive guide on converting PDF to PDF/A, PDF/E, and PDF/X formats using Aspose.PDF for Python.
 ---

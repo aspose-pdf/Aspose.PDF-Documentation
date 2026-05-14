@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add Polygon Annotation to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a polygon annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define polygon vertices, border style, annotation bounds, descriptive text, and save the updated document.    
+Abstract: This example demonstrates how to add a polygon annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define polygon vertices, border style, annotation bounds, descriptive text, and save the updated document.
 ---
 
 Polygon annotations are used to highlight irregular areas or shapes in a PDF, providing visual emphasis or marking specific regions. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can create polygons by specifying the vertices coordinates, border style, page number, and annotation rectangle.

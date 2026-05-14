@@ -3,7 +3,7 @@ title: Document Actions
 type: docs
 weight: 40
 url: /python-net/document-actions/
-description: 
+description:
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"

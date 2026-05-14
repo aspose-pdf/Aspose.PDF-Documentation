@@ -3,18 +3,18 @@ title: Извлечь информацию о подписи из PDF на Pytho
 linktitle: Извлечь детали из подписи
 type: docs
 weight: 20
-url: /python-net/extract-image-and-signature-information/
+url: /ru/python-net/extract-image-and-signature-information/
 description: Узнайте, как извлекать изображения подписей, сертификаты и детали цифровой подписи из PDF‑файлов на Python.
 lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Извлекайте изображения подписей и детали сертификатов из PDF‑файлов на Python.
 Abstract: В этой статье объясняется, как извлекать изображения и информацию о цифровой подписи из PDF‑документов с помощью Aspose.PDF for Python. Узнайте, как получать изображения подписи, извлекать данные сертификата, проверять алгоритмы подписи и обнаруживать скомпрометированные подписи в подписанных PDF‑файлах.
 ---
 
-## Извлечь изображение из поля подписи
+## Извлечение изображение из поля подписи
 
 Aspose.PDF for Python via .NET позволяет вам извлечь визуальное изображение, встроенное в [Поле подписи](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/). Это полезно, когда нужно отображать или архивировать внешний вид подписи без рендеринга полного PDF.
 
@@ -62,7 +62,7 @@ def get_signatures_info(infile: str) -> None:
                 print(signature_info.signature_name)
 ```
 
-## Извлечь цифровой сертификат из поля подписи
+## Извлечение цифрового сертификата из поля подписи
 
 Используйте [extract_certificate](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/#methods) метод на `SignatureField` получить встроенный сертификат в виде потока байтов и сохранить его на диск для внешней проверки:
 
@@ -111,7 +111,7 @@ def extract_certificate_try_extract_certificate_method(infile: str) -> None:
                     print("The certificate extraction succeeded")
 ```
 
-## Проверить внешние цифровые подписи
+## Проверка внешних цифровых подписей
 
 Чтобы подтвердить, что документ не был изменён после подписания, проверьте каждую внешнюю подпись, используя `PdfFileSignature.verify_signature()`. Пример ниже вызывает исключение для любой подписи, которая не проходит проверку:
 
@@ -168,3 +168,4 @@ def check(infile: str) -> None:
 - [Электронно подписывать PDF-файлы на Python](/pdf/ru/python-net/digitally-sign-pdf-file/)
 - [Подписать PDF‑документы со смарт‑карты в Python](/pdf/ru/python-net/sign-pdf-document-from-smart-card/)
 - [Шифрование и дешифрование PDF‑файлов в Python](/pdf/ru/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)
+

@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Append Pages from One PDF to Another in Python
-Abstract: Learn how to append pages from one PDF document to another using Aspose.PDF for Python. This example demonstrates how to use the PdfFileEditor class to combine pages from multiple PDFs and create a single output document.   
+Abstract: Learn how to append pages from one PDF document to another using Aspose.PDF for Python. This example demonstrates how to use the PdfFileEditor class to combine pages from multiple PDFs and create a single output document.
 ---
 
 Combining pages from different PDF documents is a common requirement in document processing workflows. Using Aspose.PDF for Python, developers can easily append pages from one or more PDF files to an existing document.

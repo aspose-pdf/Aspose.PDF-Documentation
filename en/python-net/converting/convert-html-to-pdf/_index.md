@@ -9,7 +9,7 @@ description: Learn how to convert HTML and MHTML to PDF in Python with Aspose.PD
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to convert HTML to PDF in Python with Aspose.PDF
 Abstract: This article explains how to convert HTML and MHTML files to PDF using Aspose.PDF for Python via .NET. It covers the basic HTML-to-PDF workflow and shows how to control rendering with media types, CSS page rule priority, embedded fonts, single-page output, and logical structure generation for accessible tagged PDFs.
 ---

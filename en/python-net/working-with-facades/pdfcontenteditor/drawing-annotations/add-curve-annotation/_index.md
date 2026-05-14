@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add Curve Annotation to a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to add a curve annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define curve vertices, border style, annotation bounds, text content, and save the updated document.    
+Abstract: This example demonstrates how to add a curve annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define curve vertices, border style, annotation bounds, text content, and save the updated document.
 ---
 
 Curve annotations are used to highlight irregular paths or shapes in a PDF, providing visual emphasis or marking important areas. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can draw curves by specifying a sequence of vertices, border style, visibility, annotation rectangle, and descriptive text.

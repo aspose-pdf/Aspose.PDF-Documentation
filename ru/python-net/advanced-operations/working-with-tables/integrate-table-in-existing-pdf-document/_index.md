@@ -7,14 +7,14 @@ url: /ru/python-net/integrate-table/
 description: Узнайте, как интегрировать PDF‑таблицы с источниками данных, такими как базы данных и pandas DataFrames, на Python.
 lastmod: "2026-04-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Интегрировать PDF‑таблицы с базами данных и DataFrames с помощью Python
 Abstract: В этой статье объясняется, как интегрировать PDF‑таблицы с внешними источниками данных с использованием Aspose.PDF for Python via .NET. Узнайте, как создавать PDF‑таблицы из pandas DataFrames и других структурированных источников, вставлять их в документы и управлять потоками таблиц при рендеринге на несколько страниц PDF в Python.
 ---
 
-## Создать PDF из DataFrame
+## Создание PDF из DataFrame
 
 Функция 'create_pdf_from_dataframe' принимает DataFrame и преобразует его в таблицу внутри нового PDF. Она создаёт новый PDF‑документ, добавляет страницу, генерирует таблицу из DataFrame (используя вспомогательный метод) и сохраняет результат по указанному пути к файлу. И это не только возможно, но и очень просто.
 
@@ -47,7 +47,7 @@ def create_pdf_from_dataframe(
     document.save(outfile)
 ```
 
-## Создать таблицу из DataFrame
+## Создание таблицы из DataFrame
 
 Этот код преобразует DataFrame в объект Table библиотеки Aspose.PDF. Он настраивает границы таблицы, добавляет строку заголовка с именами столбцов и заполняет таблицу первыми max_rows строками из DataFrame. Полученная Table затем можно добавить в PDF‑документ.
 
@@ -93,7 +93,7 @@ def create_table_from_dataframe(df: pd.DataFrame, max_rows: int = 20) -> ap.Tabl
     return table
 ```
 
-## Связанные темы таблицы
+## Связанные темы таблиц
 
 - [Работа с таблицами в PDF с использованием Python](/pdf/ru/python-net/working-with-tables/)
 - [Добавить таблицы в PDF с помощью Python](/pdf/ru/python-net/adding-tables/)

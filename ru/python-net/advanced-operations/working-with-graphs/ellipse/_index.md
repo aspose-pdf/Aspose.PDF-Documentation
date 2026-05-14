@@ -3,7 +3,7 @@ title: Добавить эллиптические формы в PDF на Python
 linktitle: Добавить эллипс
 type: docs
 weight: 60
-url: /python-net/add-ellipse/
+url: /ru/python-net/add-ellipse/
 description: Узнайте, как рисовать, заполнять и подписывать эллиптические формы в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:
@@ -14,7 +14,7 @@ AlternativeHeadline: Рисовать эллиптические формы в P
 Abstract: Эта статья показывает, как добавлять формы эллипсов в PDF‑документы с помощью Aspose.PDF for Python via .NET. В ней рассматриваются контурные эллипсы, заполненные эллипсы и добавление текста внутрь объектов эллипса.
 ---
 
-## Добавить объект Ellipse
+## Добавление объект Ellipse
 
 Aspose.PDF for Python via .NET позволяет добавлять [Ellipse](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/ellipse/) формы в PDF‑страницы с [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) класс. Вы можете рисовать контуры эллипсов, применять цвета заливки и размещать текст внутри объектов эллипсов.
 
@@ -43,7 +43,7 @@ def add_ellipse(outfile: str):
 
 ![Добавить эллипс](ellipse.png)
 
-## Создать заполненный объект эллипса
+## Создание заполненного объекта эллипса
 
 Следующий фрагмент кода показывает, как добавить [Ellipse](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/ellipse/) объект, заполненный цветом.
 
@@ -71,7 +71,7 @@ def create_ellipse_filled(outfile: str):
 
 ![Заполненный Эллипс](fill_ellipse.png)
 
-## Добавить текст внутри Эллипса
+## Добавление текста внутри эллипса
 
 Aspose.PDF for Python via .NET также позволяет размещать текст внутри объектов фигур. Следующий пример добавляет текст к фигурам-эллипсам.
 
@@ -111,3 +111,4 @@ def add_text_inside_ellipse(outfile: str):
 - [Добавить формы круга в PDF в Python](/pdf/ru/python-net/add-circle/)
 - [Добавить формы кривой в PDF в Python](/pdf/ru/python-net/add-curve/)
 - [Добавьте прямоугольные фигуры в PDF на Python](/pdf/ru/python-net/add-rectangle/)
+

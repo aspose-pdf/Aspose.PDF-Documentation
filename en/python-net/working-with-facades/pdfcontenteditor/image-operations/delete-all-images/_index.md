@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Remove All Images from a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to delete all images from a PDF document using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, remove all embedded images, and save the updated document.    
+Abstract: This example demonstrates how to delete all images from a PDF document using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, remove all embedded images, and save the updated document.
 ---
 
 PDF documents often contain images for illustrations, branding, or decoration. There may be cases where you need to remove all images from a PDF, such as reducing file size, protecting sensitive visuals, or preparing a text-only version.

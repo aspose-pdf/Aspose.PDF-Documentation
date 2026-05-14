@@ -45,7 +45,7 @@ def clear_text_in_form(input_file_name, output_file_name):
     document.save(output_file_name)
 ```
 
-## Установить ограничение поля
+## Установка ограничение поля
 
 Использовать `set_field_limit(field, limit)` из `FormEditor` определить максимальное количество символов, разрешённых в текстовом поле.
 
@@ -65,7 +65,7 @@ def set_field_limit(input_file_name, output_file_name):
     form.save(output_file_name)
 ```
 
-## Получить ограничение поля
+## Получение ограничение поля
 
 Вы также можете прочитать ограничение количества символов из текстового поля.
 
@@ -86,7 +86,7 @@ def get_field_limit(input_file_name):
         print(f"Limit: {text_box_field.max_len}")
 ```
 
-## Установить пользовательский шрифт для поля формы
+## Установка пользовательского шрифта для поля формы
 
 Этот пример задает пользовательское оформление по умолчанию для поля ввода текста, включая шрифт, размер и цвет.
 
@@ -113,7 +113,7 @@ def set_form_field_font(input_file_name, output_file_name):
     document.save(output_file_name)
 ```
 
-## Удалить поля в существующей Form
+## Удаление поля в существующей Form
 
 Этот код удаляет конкретное поле формы (по его имени) из PDF‑документа и сохраняет обновлённый файл, используя Aspose.PDF for Python via .NET.
 

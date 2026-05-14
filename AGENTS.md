@@ -147,6 +147,7 @@ This repository includes project-local skills under `.skills/`.
 Current skills:
 
 - `frontmatter-seo-enricher`
+- `hugo-frontmatter-checker`
 - `java-style-reviewer`
 - `python-formatter-bootstrap`
 - `python-style-reviewer`
@@ -154,6 +155,7 @@ Current skills:
 Use them when relevant:
 
 - `frontmatter-seo-enricher` for SEO metadata fields such as `AlternativeHeadline`, `Abstract`, and `TechArticle`
+- `hugo-frontmatter-checker` for required-key, YAML style, URL, weight, `type`, `lastmod`, and trailing-whitespace audits in Hugo Markdown front matter
 - `java-style-reviewer` for Markdown structure and fenced `java` code cleanup in Java docs
 - `python-style-reviewer` for Python formatting in `.py` files and fenced Python code blocks in Markdown
 - `python-formatter-bootstrap` when a required Python formatter is missing from the environment

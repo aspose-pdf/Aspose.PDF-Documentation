@@ -9,9 +9,9 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Retrieve PDF Document Privileges Using Aspose.PDF for Python
-Abstract: PDF documents can have security restrictions that limit actions like printing, copying, modifying, or filling forms. By accessing these privileges programmatically, developers can determine what operations are allowed on a PDF. This guide shows how to use the PdfFileInfo class to retrieve a PDF’s document privileges and display them in Python.    
+Abstract: PDF documents can have security restrictions that limit actions like printing, copying, modifying, or filling forms. By accessing these privileges programmatically, developers can determine what operations are allowed on a PDF. This guide shows how to use the PdfFileInfo class to retrieve a PDF’s document privileges and display them in Python.
 ---
 
 PDF privileges control what users can and cannot do with a document. Common permissions include:

@@ -8,7 +8,7 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Remove JavaScript Actions from PDF Form Fields Using Python
 Abstract: Using Aspose.PDF for Python, developers can programmatically remove JavaScript actions attached to form fields. This article explains how to open an existing PDF form, remove the script associated with a specific field using the FormEditor class, verify the operation, and save the modified document.
 ---

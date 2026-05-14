@@ -8,7 +8,7 @@ lastmod: "2026-04-02"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Validate PDF Signature Coverage and Integrity in Python
 Abstract: This article explains how to inspect digital signature integrity in signed PDF documents with Aspose.PDF for Python via .NET. It shows how to verify whether a signature covers the whole document and how to validate the integrity of the signed content.
 ---

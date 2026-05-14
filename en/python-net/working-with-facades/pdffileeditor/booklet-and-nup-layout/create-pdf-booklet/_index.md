@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Create a PDF Booklet from an Existing PDF Using Python
-Abstract: Learn how to generate a booklet-style PDF from an existing document using Aspose.PDF for Python. This example demonstrates how to use the PdfFileEditor class to rearrange pages so they can be printed and folded as a booklet. The method automatically orders pages to produce a proper booklet layout.   
+Abstract: Learn how to generate a booklet-style PDF from an existing document using Aspose.PDF for Python. This example demonstrates how to use the PdfFileEditor class to rearrange pages so they can be printed and folded as a booklet. The method automatically orders pages to produce a proper booklet layout.
 ---
 
 Creating booklet-style documents is a common requirement when preparing PDFs for printing. In a booklet layout, pages are rearranged so that when printed and folded, they appear in the correct order.

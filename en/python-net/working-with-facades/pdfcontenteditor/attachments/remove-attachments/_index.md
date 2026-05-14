@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Remove All Attachments from a PDF Using Python
-Abstract: This example demonstrates how to remove all file attachments from a PDF document using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, delete embedded attachments, and save the updated document.  
+Abstract: This example demonstrates how to remove all file attachments from a PDF document using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, delete embedded attachments, and save the updated document.
 ---
 
 PDFs may contain attachments such as documents, images, or other files. There are scenarios where you need to clean a PDF of all attachments for security, privacy, or distribution purposes. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can programmatically remove all embedded attachments in a document.

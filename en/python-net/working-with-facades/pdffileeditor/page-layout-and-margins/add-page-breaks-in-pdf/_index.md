@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Page Breaks to PDF Pages Programmatically in Python
-Abstract: Learn how to insert page breaks into a PDF document using Aspose.PDF for Python. This example demonstrates how to split a page at a specified vertical position, allowing developers to reorganize content and create additional pages dynamically.  
+Abstract: Learn how to insert page breaks into a PDF document using Aspose.PDF for Python. This example demonstrates how to split a page at a specified vertical position, allowing developers to reorganize content and create additional pages dynamically.
 ---
 
 Page breaks are useful when you need to split long PDF pages into multiple pages or control how content is distributed across a document. Using Aspose.PDF for Python, developers can insert page breaks at specific positions without manually editing the PDF.

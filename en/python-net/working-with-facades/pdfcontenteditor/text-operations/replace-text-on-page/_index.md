@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Replace Text on a Specific Page Using PdfContentEditor in Python
-Abstract: This example demonstrates how to replace text in a PDF document using Aspose.PDF for Python via the Facades API. It shows how to replace the first occurrence of text on a page and save the updated document.   
+Abstract: This example demonstrates how to replace text in a PDF document using Aspose.PDF for Python via the Facades API. It shows how to replace the first occurrence of text on a page and save the updated document.
 ---
 
 Text replacement is a common requirement when updating PDF documents. Using [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor/), you can search for specific text and replace it with new content. The 'replace_text_strategy' property allows you to control how many occurrences are replaced.

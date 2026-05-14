@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Replace Text Using Regular Expressions with PdfContentEditor in Python
-Abstract: This example demonstrates how to replace text in a PDF using regular expressions with Aspose.PDF for Python via the Facades API. It shows how to search for patterns and replace all matches across the document.    
+Abstract: This example demonstrates how to replace text in a PDF using regular expressions with Aspose.PDF for Python via the Facades API. It shows how to search for patterns and replace all matches across the document.
 ---
 
 Regular expressions allow flexible text replacement based on patterns instead of fixed strings. By enabling regex support in 'replace_text_strategy', you can match dynamic content such as numbers, dates, or formatted strings.

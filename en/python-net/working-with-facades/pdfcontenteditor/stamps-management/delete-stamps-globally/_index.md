@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Delete Rubber Stamps Globally in a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to delete rubber stamp annotations globally across all pages in a PDF using Aspose.PDF for Python via the Facades API. It shows how to remove stamps by ID without specifying individual pages.    
+Abstract: This example demonstrates how to delete rubber stamp annotations globally across all pages in a PDF using Aspose.PDF for Python via the Facades API. It shows how to remove stamps by ID without specifying individual pages.
 ---
 
 When working with multiple pages, you may need to remove certain stamps throughout the entire document. The 'delete_stamp_by_id()' and 'delete_stamp_by_ids()' methods allow you to delete stamps globally by their identifiers, eliminating the need to iterate through each page manually.

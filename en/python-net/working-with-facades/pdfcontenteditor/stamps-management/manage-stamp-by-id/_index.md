@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Manage Rubber Stamps by ID in a PDF Using PdfContentEditor in Python
-Abstract: This example demonstrates how to manipulate rubber stamp annotations in a PDF by their unique IDs using Aspose.PDF for Python via the Facades API. You can hide or show specific stamps on certain pages without affecting other stamps.    
+Abstract: This example demonstrates how to manipulate rubber stamp annotations in a PDF by their unique IDs using Aspose.PDF for Python via the Facades API. You can hide or show specific stamps on certain pages without affecting other stamps.
 ---
 
 In PDFs with multiple rubber stamps, it can be useful to control individual stamps based on their ID. The 'hide_stamp_by_id()' and 'show_stamp_by_id()' methods allow selective visibility control. This example shows how to:

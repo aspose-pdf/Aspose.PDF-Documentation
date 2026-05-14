@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add File Attachment Annotations to a PDF Using Python
-Abstract: This example demonstrates how to create a file attachment annotation in a PDF using a file path with Aspose.PDF for Python via the Facades API. It shows how to define annotation placement, set description text, choose an icon type, and save the modified document.  
+Abstract: This example demonstrates how to create a file attachment annotation in a PDF using a file path with Aspose.PDF for Python via the Facades API. It shows how to define annotation placement, set description text, choose an icon type, and save the modified document.
 ---
 
 File attachment annotations allow you to embed external files as interactive icons on a PDF page. Using the file-path overload, you can attach files directly from disk without manually opening streams. This method also lets you customize the annotation icon and provide a description for users.

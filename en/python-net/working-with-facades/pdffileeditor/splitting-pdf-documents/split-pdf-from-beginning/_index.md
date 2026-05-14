@@ -8,9 +8,9 @@ lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Split PDF from the Start in Python Using Aspose.PDF
-Abstract: Learn how to split a PDF document from the beginning using Aspose.PDF for Python. This example demonstrates extracting a specific number of pages starting from the first page to create a new PDF document. 
+Abstract: Learn how to split a PDF document from the beginning using Aspose.PDF for Python. This example demonstrates extracting a specific number of pages starting from the first page to create a new PDF document.
 ---
 
 Splitting PDFs from the beginning is useful when you need the first few pages of a document as a separate file. Using Aspose.PDF for Python, the split_from_first method in the [PdfFileEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffileeditor/) class allows you to extract a defined number of pages starting from page one. This feature is ideal for generating excerpts, previews, or smaller sections of a larger PDF without manually editing the original file.

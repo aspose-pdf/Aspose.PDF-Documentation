@@ -5,7 +5,7 @@ weight: 40
 url: /python-net/add-stamp/
 description: Learn how to add a stamp to PDF pages using PdfFileStamp in Python.
 lastmod: "2026-04-13"
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Text Stamps to PDF in Python
 Abstract: This article explains how to add stamp content to PDF documents with Aspose.PDF for Python via .NET using the PdfFileStamp facade. It shows how to create a stamp, position it on the page, control rotation and opacity, and save the updated PDF.
 ---

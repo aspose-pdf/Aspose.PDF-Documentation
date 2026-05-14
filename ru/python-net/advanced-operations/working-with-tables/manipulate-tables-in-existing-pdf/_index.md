@@ -7,7 +7,7 @@ url: /ru/python-net/manipulating-tables/
 description: Узнайте, как просматривать и изменять таблицы в существующих PDF‑документах с помощью Python.
 lastmod: "2026-04-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Измените существующие таблицы PDF с помощью Python
@@ -59,7 +59,7 @@ def replace_cell_text(infile: str, outfile: str) -> None:
     document.save(outfile)
 ```
 
-## Заменить существующую таблицу новой таблицей
+## Замена существующую таблицу новой таблицей
 
 Вы также можете заменить обнаруженную таблицу вновь созданной. Этот подход полезен, когда необходимо изменить и структуру, и содержание.
 

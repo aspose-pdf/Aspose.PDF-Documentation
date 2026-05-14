@@ -9,7 +9,7 @@ description: Learn how to remove PDF/A and PDF/UA compliance from PDF files in P
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to convert PDF/A and PDF/UA to standard PDF in Python
 Abstract: This article explains how to remove PDF/A and PDF/UA compliance from standards-based PDF documents using Aspose.PDF for Python via .NET. It covers scenarios where you may need a standard PDF instead of an archival or accessibility-constrained file, and shows how to save the result after removing compliance metadata and restrictions.
 ---

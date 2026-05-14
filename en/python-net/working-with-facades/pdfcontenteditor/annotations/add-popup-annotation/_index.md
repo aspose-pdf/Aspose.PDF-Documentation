@@ -8,7 +8,7 @@ lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Add Popup Annotations to a PDF Using Python
 Abstract: This example demonstrates how to insert a popup annotation into a PDF document using Aspose.PDF for Python via the Facades API. It explains how to define the popup area, set the annotation text, control visibility, and save the updated document.
 ---

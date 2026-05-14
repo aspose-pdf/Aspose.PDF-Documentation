@@ -1,559 +1,507 @@
 ---
-title: Reemplazar Texto en PDF a través de Python
-linktitle: Reemplazar Texto en PDF
+title: Reemplazar texto en PDF con Python
+linktitle: Reemplazar texto en PDF
 type: docs
 weight: 40
 url: /es/python-net/replace-text-in-pdf/
-description: Aprende más sobre varias formas de reemplazar y eliminar texto de Aspose.PDF para Python a través de la biblioteca .NET.
-lastmod: "2024-02-17"
+description: Aprende cómo reemplazar, reorganizar y eliminar texto en documentos PDF usando Python.
+lastmod: "2026-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /python-net/replace-text-in-a-pdf-document/
+TechArticle: true
+AlternativeHeadline: Reemplaza, elimina y ajusta el contenido de texto en PDF usando Python
+Abstract: Este artículo cubre flujos de trabajo prácticos de sustitución de texto en documentos PDF utilizando Aspose.PDF for Python via .NET. Incluye la sustitución de texto en varias páginas, la limitación de la sustitución a regiones específicas, el ajuste del diseño del texto durante la sustitución, el trabajo con coincidencias basadas en expresiones regulares, la sustitución de fuentes y la eliminación del contenido de texto cuando sea necesario.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Reemplazar Texto en PDF",
-    "alternativeHeadline": "Reemplazo y Eliminación de Texto en Archivo PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, reemplazar texto, eliminar texto",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/replace-text-in-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/replace-text-in-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Aprende más sobre varias formas de reemplazar y eliminar texto de Aspose.PDF para Python a través de la biblioteca .NET."
-}
-</script>
 
+Estos ejemplos muestran cómo **modificar o eliminar texto en un PDF existente**.
 
-## Reemplazar texto en todas las páginas de un documento PDF
+Utilice esta página cuando necesite actualizar valores de texto, eliminar contenido no deseado o aplicar reglas de sustitución de texto en todas las páginas del PDF.
+
+## Reemplazar texto existente
+
+### Reemplazar texto en todas las páginas del documento PDF
 
 {{% alert color="primary" %}}
 
-Puede intentar encontrar y reemplazar el texto en el documento usando Aspose.PDF y obtener los resultados en línea en este [enlace](https://products.aspose.app/pdf/redaction)
+Puedes intentar buscar y reemplazar el texto en el documento usando Aspose.PDF y obtener los resultados en línea en este [enlace](https://products.aspose.app/pdf/redaction)
 
 {{% /alert %}}
 
-Para reemplazar texto en todas las páginas de un documento PDF, primero necesita usar [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) para encontrar la frase particular que desea reemplazar. Después de eso, debe recorrer todos los TextFragments para reemplazar el texto y cambiar cualquier otro atributo. Una vez hecho esto, solo necesita guardar el PDF de salida usando el método Save del objeto Document. El siguiente fragmento de código le muestra cómo reemplazar texto en todas las páginas de un documento PDF.
+La sustitución de texto es un requisito común al actualizar o corregir contenido en documentos PDF existentes — por ejemplo, cambiar nombres de productos, corregir errores tipográficos o actualizar la terminología en varias páginas.
+
+Aspose.PDF for Python via .NET ofrece un método potente y eficiente para buscar y reemplazar texto programáticamente a través del [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) clase.
+
+Este ejemplo demuestra cómo encontrar todas las apariciones de una frase específica (en este caso, "Black cat") y reemplazarlas con una nueva frase ("White dog") a lo largo de todo un documento PDF.
+
+1. Especifique frases de búsqueda y reemplazo. Establezca el texto que desea encontrar y el texto con el que desea sustituirlo.
+1. Cargar el documento PDF.
+1. Crea un Text Absorber. Un TextFragmentAbsorber se inicializa con la frase de búsqueda. Escanea el documento para todas las instancias de la frase dada.
+1. Aplicar el Absorber a Todas las Páginas. Esto itera a través de todas las páginas y recopila fragmentos de texto que coinciden con la frase.
+1. Reemplaza cada fragmento encontrado. Cada instancia de "Black cat" debe cambiarse a "White dog".
+1. Guardar el PDF actualizado.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def replace_text_on_all_pages(infile, outfile):
+    search_phrase = "PDF"
+    replace_phrase = "pdf"
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
+        document.pages.accept(absorber)
 
-    # Crear objeto TextAbsorber para encontrar todas las instancias de la frase de búsqueda de entrada
-    absorber = ap.text.TextFragmentAbsorber("format")
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
 
-    # Aceptar el absorber para todas las páginas
+        document.save(outfile)
+```
+
+### Reemplazar texto en una región de página particular
+
+A veces, es posible que necesite reemplazar texto solo dentro de un área específica de una página PDF en lugar de buscar en todo el documento — por ejemplo, actualizar un encabezado, pie de página o una celda de tabla en una posición conocida.
+
+La biblioteca Aspose.PDF for Python via .NET habilita esta funcionalidad al utilizar la [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) en conjunto con la búsqueda de texto basada en regiones.
+
+Este ejemplo muestra cómo encontrar y reemplazar todas las ocurrencias de una frase objetivo dentro de una región rectangular definida en una página específica.
+
+1. Especificar frases de búsqueda y reemplazo.
+1. Cargar el documento PDF.
+1. Crear un TextAbsorber para buscar. Inicializar un TextFragmentAbsorber para encontrar el texto deseado.
+1. Restringir el área de búsqueda. El rectángulo especifica los límites de coordenadas x e y en la página.
+1. Aplicar el Absorber a una página específica. Esto realiza la búsqueda y recoge los fragmentos de texto coincidentes dentro del área especificada.
+1. Reemplazar el texto encontrado. Cada aparición de 'doc' en la región definida se convierte en 'DOC'.
+1. Guardar el PDF actualizado.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_in_particular_page_region(infile, outfile):
+    search_phrase = "doc"
+    replace_phrase = "DOC"
+
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
+        absorber.text_search_options.limit_to_page_bounds = True
+        absorber.text_search_options.rectangle = ap.Rectangle(300, 442, 500, 742, True)
+        document.pages[1].accept(absorber)
+
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
+
+        document.save(outfile)
+```
+
+### Redimensionar y desplazar texto sin cambiar el tamaño de la fuente
+
+Al reemplazar texto en un PDF, a veces deseas ajustar o reposicionar el nuevo texto dentro de un área específica sin modificar el tamaño de la fuente.
+Aspose.PDF for Python via .NET proporciona opciones para ajustar el diseño y el espaciado del texto mientras mantiene intacto el tamaño original de Font.
+
+1. Cargar el documento PDF.
+1. Recopile todos los fragmentos de texto en la página usando un 'TextFragmentAbsorber'.
+1. Seleccione el Fragmento para modificar.
+1. Desplazar y cambiar el tamaño del rectángulo de texto.
+1. Ajustar el espaciado del texto. Habilite el ajuste de espaciado para que el texto quepa dentro del rectángulo modificado.
+1. Reemplaza el texto del fragmento.
+1. Guardar el PDF actualizado.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = fragment.rectangle
+        rect.llx += 50
+        rect.urx -= 50
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### Redimensionar y desplazar un párrafo en PDF
+
+Al trabajar con PDFs, a veces es necesario reemplazar o ampliar un párrafo mientras se mantiene alineado visualmente con el diseño de la página. Aspose.PDF le permite redimensionar el rectángulo delimitador del párrafo y ajustar el espaciado para encajar el nuevo texto, todo sin cambiar el tamaño de la fuente.
+
+1. Cargar el documento PDF.
+1. Utiliza 'TextFragmentAbsorber' para recopilar todos los fragmentos de texto en la página.
+1. Seleccione el Fragmento para modificar.
+1. Redimensionar y desplazar el párrafo. Use la caja de medios de la página para determinar los límites y ajustar el rectángulo.
+1. Ajustar espaciado. Esto modifica el espaciado entre palabras/letras en lugar de cambiar el tamaño de la fuente.
+1. Reemplaza el texto del fragmento.
+1. Guarda el PDF modificado.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_shift_paragraph(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = document.pages[1].media_box
+        rect.llx += 20
+        rect.urx -= 20
+        rect.ury -= 20
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### Reemplazar texto y expandir automáticamente la fuente para llenar el área objetivo
+
+Reemplazar texto en un PDF mientras se redimensiona y expande automáticamente la fuente para llenar un área rectangular específica. Usando la biblioteca Aspose.PDF for Python via .NET, el código ajusta dinámicamente el tamaño y el espaciado de la fuente de modo que el nuevo contenido de texto encaje perfectamente dentro de un cuadro delimitador definido — sin cálculos manuales de fuentes.
+
+1. Cargar el PDF.
+1. Capturar fragmentos de texto.
+1. Seleccionar un fragmento específico.
+1. Definir rectángulo objetivo.
+1. Habilitar opciones de ajuste de texto.
+1. Reemplazar texto.
+1. Guardar el documento.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_expand_font(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = ap.Rectangle(100, 300, 512, 692, True)
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SCALE_TO_FILL
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### Reemplazar texto y ajustarlo a un rectángulo
+
+Reemplazar texto en un documento PDF asegurándose de que el nuevo contenido encaje dentro del área rectangular del texto original reduciendo automáticamente el tamaño de la fuente cuando sea necesario.
+
+Usando la biblioteca Aspose.PDF for Python via .NET, esta función ajusta tanto el layout del texto como el tamaño de la Font de forma dinámica, preservando la estructura del documento mientras evita el desbordamiento.
+
+1. Cree un objeto TextFragmentAbsorber para extraer todos los fragmentos de texto de la primera página.
+1. Acceder a un fragmento de texto específico.
+1. Establezca el Área de Reemplazo.
+1. Configure las opciones de ajuste de texto. Establezca dos opciones clave de reemplazo:
+    - Ajuste del tamaño de fuente - 'SHRINK_TO_FIT' reduce automáticamente el tamaño de la fuente si el nuevo texto es demasiado largo.
+    - Ajuste de espaciado - 'ADJUST_SPACE_WIDTH' mantiene el espaciado proporcional.
+1. Reemplazar el texto.
+1. Guarda el PDF modificado.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_fit_text_into_rectangle(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = fragment.rectangle
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SHRINK_TO_FIT
+        )
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### Reemplazar automáticamente el texto de marcador de posición y reorganizar el diseño del PDF
+
+Reemplaza el texto de marcador de posición dentro de un PDF (p. ej., plantillas o formularios) con datos reales, como nombres o información de la empresa.
+Ajusta automáticamente el diseño de la página para adaptarse al nuevo texto mientras aplica formato personalizado (Font, color, size).
+
+1. Importar y cargar el PDF.
+1. Crear un TextAbsorber para el Placeholder.
+1. Aplicar el Absorber a Todas las Páginas.
+1. Recorrer fragmentos de texto encontrados.
+1. Aplicar formato de texto personalizado.
+1. Guardar el documento actualizado.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def automatically_rearrange_page_contents(input_file, output_file):
+    document = ap.Document(input_file)
+
+    absorber = ap.text.TextFragmentAbsorber("[Long_placeholder_Long_placeholder]")
     document.pages.accept(absorber)
 
-    # Obtener los fragmentos de texto extraídos
-    collection = absorber.text_fragments
+    for text_fragment in absorber.text_fragments:
+        # text_fragment.text = "John Smith"
+        text_fragment.text = "John Smith, South Development Studio"
+        text_fragment.text_state.font = ap.text.FontRepository.find_font("Calibri")
+        text_fragment.text_state.font_size = 12
+        text_fragment.text_state.foreground_color = ap.Color.navy
 
-    # Recorrer los fragmentos
-    for text_fragment in collection:
-        # Actualizar texto y otras propiedades
-        text_fragment.text = "FORMAT"
-        text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
-        text_fragment.text_state.font_size = 22
-        text_fragment.text_state.foreground_color = ap.Color.blue
-        text_fragment.text_state.background_color = ap.Color.green
-
-    # Guardar el documento
-    document.save(output_pdf)
+    # Save PDF document
+    document.save(output_file)
 ```
 
+### Reemplazar texto basado en una expresión regular
 
-## Reemplazar texto en una región específica de la página
+Al trabajar con documentos PDF, es posible que necesites reemplazar texto que siga un patrón en lugar de una frase específica — por ejemplo, números de teléfono, códigos o formatos tipo fecha.
 
-Para reemplazar texto en una región particular de la página, primero necesitamos instanciar un objeto TextFragmentAbsorber, especificar la región de la página usando la propiedad TextSearchOptions.Rectangle y luego iterar a través de todos los TextFragments para reemplazar el texto. Una vez que estas operaciones se completan, solo necesitamos guardar el PDF de salida usando el método Save del objeto Document. El siguiente fragmento de código te muestra cómo reemplazar texto en todas las páginas del documento PDF.
+Aspose.PDF for Python via .NET permite realizar tales reemplazos usando expresiones regulares (regex) con la clase TextFragmentAbsorber.
+
+Este ejemplo muestra cómo encontrar patrones de texto (en este caso, cualquier texto que coincida con el formato ####-####, como 1234-5678) y reemplazarlos con una cadena formateada 'ABC1-2XZY'. También muestra cómo personalizar la fuente, el color y el tamaño del texto reemplazado.
+
+El siguiente fragmento de código le muestra cómo reemplazar texto basado en una expresión regular.
+
+1. Cargar el documento PDF.
+1. Crear un TextAbsorber basado en expresiones regulares. Inicializar el TextFragmentAbsorber con un patrón de expresión regular.
+1. Activar el modo de expresión regular. El parámetro \u0027True\u0027 activa el modo de búsqueda de expresiones regulares.
+1. Aplica el Absorber a una página. Esto escanea la página en busca de todos los fragmentos de texto que coinciden con el patrón regex definido.
+1. Reemplazar cada coincidencia con nuevo texto y aplicar estilo personalizado.
+1. Guardar el documento modificado.
 
 ```python
-// cargar archivo PDF
-Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
+import sys
+import aspose.pdf as ap
+from os import path
 
-// instanciar objeto TextFragment Absorber
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
+def replace_text_based_on_regex(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(r"\d{4}-\d{4}")
+        absorber.text_search_options = ap.text.TextSearchOptions(True)
+        document.pages[1].accept(absorber)
 
-// buscar texto dentro de los límites de la página
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
+        for fragment in absorber.text_fragments:
+            fragment.text = "ABC1-2XZY"
+            fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+            fragment.text_state.font_size = 12
+            fragment.text_state.foreground_color = ap.Color.blue
+            fragment.text_state.background_color = ap.Color.light_green
 
-// especificar la región de la página para las opciones de búsqueda de texto
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
-
-// buscar texto desde la primera página del archivo PDF
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
-
-// iterar a través de cada TextFragment
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-{
-    // actualizar texto a caracteres en blanco
-    tf.Text = "";
-}
-
-// guardar archivo PDF actualizado después de reemplazar el texto
-pdf.Save("c:/pdftest/TextUpdated.pdf");
+        document.save(outfile)
 ```
 
+## Reemplazar fuentes o eliminar fuentes no utilizadas
 
-## Reemplazar Texto Basado en una Expresión Regular
+### Reemplazar Font en un archivo PDF existente
 
-Si deseas reemplazar algunas frases basadas en una expresión regular, primero necesitas encontrar todas las frases que coincidan con esa expresión regular particular utilizando TextFragmentAbsorber. Tendrás que pasar la expresión regular como un parámetro al constructor de TextFragmentAbsorber. También necesitas crear un objeto TextSearchOptions que especifique si se está utilizando la expresión regular o no. Una vez que obtengas las frases coincidentes en TextFragments, necesitas iterar a través de todas ellas y actualizarlas según sea necesario. Finalmente, necesitas guardar el PDF actualizado usando el método Save del objeto Document. El siguiente fragmento de código te muestra cómo reemplazar texto basado en una expresión regular.
+En ocasiones, necesitas estandarizar o actualizar fuentes en un PDF — por ejemplo, reemplazando una fuente obsoleta o propietaria por una más accesible. La biblioteca Aspose.PDF for Python via .NET permite detectar y reemplazar fuentes programáticamente, garantizando una tipografía coherente y compatibilidad del documento.
+
+Este ejemplo muestra cómo reemplazar todas las instancias de una fuente específica (p. ej., 'Arial-BoldMT') con otra fuente (p. ej., 'Verdana') a lo largo de un documento PDF.
+
+El siguiente fragmento de código muestra cómo reemplazar la fuente dentro del documento PDF:
+
+1. Abre el documento PDF.
+1. Inicializar un TextFragmentAbsorber.
+1. Utilice el Absorber para extraer fragmentos de texto de cada página del documento.
+1. Identificar y Reemplazar Fuentes. El script verifica si la fuente actual de un fragmento es 'Arial-BoldMT'. Si es así, la reemplaza por la fuente 'Verdana' usando el método FontRepository.find_font().
+1. Guardar el documento modificado.
 
 ```python
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
+def replace_fonts(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        document.pages.accept(absorber)
 
-// Crear objeto TextAbsorber para encontrar todas las frases que coinciden con la expresión regular
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Como 1999-2000
+        for fragment in absorber.text_fragments:
+            if fragment.text_state.font.font_name == "Arial-BoldMT":
+                fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
 
-// Establecer opción de búsqueda de texto para especificar el uso de expresión regular
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
-
-// Aceptar el absorbente para una sola página
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
-
-// Obtener los fragmentos de texto extraídos
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Iterar a través de los fragmentos
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // Actualizar texto y otras propiedades
-    textFragment.Text = "Nueva Frase";
-    // Establecer a una instancia de un objeto.
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
+        document.save(outfile)
 ```
 
+### Eliminar fuentes no utilizadas
 
-## Reemplazar fuentes en un archivo PDF existente
+Con el tiempo, los documentos PDF pueden acumular fuentes no utilizadas o incrustadas que aumentan el tamaño del archivo y ralentizan el procesamiento. Estas fuentes no utilizadas a menudo permanecen incluso después de ediciones o reemplazos de texto, especialmente al trabajar con PDFs grandes o complejos.
 
-Aspose.PDF para Python a través de .NET admite la capacidad de reemplazar texto en un documento PDF. Sin embargo, a veces tienes el requisito de solo reemplazar la fuente que se está utilizando dentro del documento PDF. Así que, en lugar de reemplazar el texto, solo la fuente que se está utilizando es reemplazada. Una de las sobrecargas del constructor TextFragmentAbsorber acepta un objeto TextEditOptions como argumento y podemos usar el valor RemoveUnusedFonts de la enumeración TextEditOptions.FontReplace para cumplir con nuestros requisitos. El siguiente fragmento de código muestra cómo reemplazar la fuente dentro del documento PDF.
+La biblioteca Aspose.PDF for Python via .NET proporciona una forma eficiente de eliminar esas fuentes redundantes usando la clase TextEditOptions. Esto no solo optimiza su documento, sino que también garantiza que solo se usen las fuentes realmente aplicadas al texto visible.
+
+El método 'remove_unused_fonts()' es una forma simple pero poderosa de optimizar archivos PDF al eliminar datos de fuentes redundantes.
+
+Este ejemplo demuestra cómo:
+
+- Escanea un PDF en busca de fuentes no utilizadas.
+- Elimínalos de forma segura.
+- Reasignar fragmentos de texto activos a una fuente consistente (p. ej., Times New Roman).
+
+1. Abre el documento PDF.
+1. Configure las opciones de edición de texto. Esto instruye al motor a eliminar cualquier fuente incrustada que no se esté utilizando actualmente en el texto visible.
+1. Crea un Text Absorber con Options. Un TextFragmentAbsorber extrae fragmentos de texto del documento para editar.
+1. Reasignar una Standard Font. Una vez que el absorber haya recopilado todos los fragments, iterar a través de ellos y aplicar una fuente consistente.
+1. Guarda el PDF limpio.
 
 ```python
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// Cargar archivo PDF de origen
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
-// Buscar fragmentos de texto y establecer la opción de edición para eliminar fuentes no usadas
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
+def remove_unused_fonts(input_file, output_file):
+    # Open PDF document
+    document = ap.Document(input_file)
 
-// Aceptar el absorbedor para todas las páginas
-pdfDocument.Pages.Accept(absorber);
-// Recorrer todos los TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    // Si el nombre de la fuente es ArialMT, reemplazar el nombre de la fuente con Arial
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
-    {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    }
+    # Initialize text edit options to remove unused fonts
+    options = ap.text.TextEditOptions(
+        ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS
+    )
 
-}
+    # Create a TextFragmentAbsorber with the specified options
+    absorber = ap.text.TextFragmentAbsorber(options)
+    document.pages.accept(absorber)
 
-dataDir = dataDir + "ReplaceFonts_out.pdf";
-// Guardar documento actualizado
-pdfDocument.Save(dataDir);
+    # Iterate through all TextFragments
+    for text_fragment in absorber.text_fragments:
+        text_fragment.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+
+    # Save the updated PDF document
+    document.save(output_file)
 ```
 
+## Eliminar todo el texto
 
-## El reemplazo de texto debería reordenar automáticamente el contenido de la página
+### Eliminar texto del PDF
 
-Aspose.PDF para Python a través de .NET admite la función de buscar y reemplazar texto dentro del archivo PDF. Sin embargo, recientemente algunos clientes encontraron problemas durante el reemplazo de texto cuando un TextFragment particular se reemplaza con contenido más pequeño y algunos espacios extra se muestran en el PDF resultante o en caso de que el TextFragment se reemplace con una cadena más larga, entonces las palabras se superponen al contenido existente de la página. Así que el requisito era introducir un mecanismo que, una vez que se reemplace el texto dentro de un documento PDF, el contenido debe reordenarse.
+Elimina todo el contenido de texto de un archivo PDF manteniendo intactas las imágenes, formas y estructuras de diseño.
+Al usar TextFragmentAbsorber, el código escanea eficientemente todo el documento y elimina cada fragmento de texto encontrado en cada página.
 
-Para atender los escenarios mencionados anteriormente, Aspose.PDF para Python a través de .NET ha sido mejorado para que no aparezcan tales problemas al reemplazar texto dentro del archivo PDF. El siguiente fragmento de código muestra cómo reemplazar texto dentro de un archivo PDF y el contenido de la página debe reordenarse automáticamente.
+1. Cargar el documento PDF.
+1. Se crea un objeto TextFragmentAbsorber para detectar y manejar fragmentos de texto en el PDF.
+1. Eliminar todo el contenido de texto. El método 'absorber.remove_all_text()' elimina cada elemento de texto del documento cargado, dejando intactos los componentes que no son texto.
+1. Guardar el documento actualizado.
 
 ```python
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// Cargar archivo PDF de origen
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
-// Crear objeto TextFragment Absorber con expresión regular
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
-// Reemplazar cada TextFragment
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
-{
-    // Establecer la fuente del fragmento de texto que se reemplaza
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // Establecer tamaño de fuente
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // Reemplazar el texto con una cadena más grande que el marcador de posición
-    textFragment.Text = "Esta es una cadena más grande para la prueba de este problema";
-}
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
-// Guardar PDF resultante
-doc.Save(dataDir);
+def remove_all_text_using_absorber1(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document)
+        document.save(outfile)
 ```
 
+### Eliminar todo el texto de una página específica
 
-## Renderización de Símbolos Reemplazables durante la creación de PDF
+Eliminar todo el texto de una sola página de un documento PDF usando la clase TextFragmentAbsorber en Aspose.PDF.
+A diferencia de la eliminación de todo el documento, este método realiza una limpieza de texto a nivel de página, eliminando texto solo de la página elegida mientras deja todas las demás páginas sin tocar.
 
-Los símbolos reemplazables son símbolos especiales en una cadena de texto que pueden ser reemplazados con el contenido correspondiente en tiempo de ejecución. Los símbolos reemplazables que actualmente admite el nuevo Modelo de Objetos del Documento del espacio de nombres Aspose.PDF son `$P`, `$p`, `\n`, `\r`. Los símbolos `$p` y `$P` se utilizan para manejar la numeración de páginas en tiempo de ejecución. `$p` se reemplaza con el número de la página donde se encuentra la clase Paragraph actual. `$P` se reemplaza con el número total de páginas en el documento. Al agregar `TextFragment` a la colección de párrafos de documentos PDF, no admite el salto de línea dentro del texto. Sin embargo, para agregar texto con un salto de línea, utilice `TextFragment` con `TextParagraph`:
-
-- use "\r\n" o Environment.NewLine en TextFragment en lugar de un solo "\n";
-- cree un objeto TextParagraph. Agregará texto con división de líneas;
-- agregue el TextFragment con TextParagraph.AppendLine;
-- agregue el TextParagraph con TextBuilder.AppendParagraph.
+1. Cargar el archivo PDF.
+1. Crear una instancia de TextFragmentAbsorber.
+1. Eliminar todo el texto de la primera página.
+1. Guarda el PDF modificado.
 
 ```python
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
-
-// Inicializar un nuevo TextFragment con texto que contiene los marcadores de nueva línea requeridos
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Nombre del Solicitante: " + Environment.NewLine + " Joe Smoe");
-
-// Establecer propiedades del fragmento de texto si es necesario
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-
-// Crear objeto TextParagraph
-TextParagraph par = new TextParagraph();
-
-// Agregar nuevo TextFragment al párrafo
-par.AppendLine(textFragment);
-
-// Establecer la posición del párrafo
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
-
-// Crear objeto TextBuilder
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Agregar el TextParagraph usando TextBuilder
-textBuilder.AppendParagraph(par);
-
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
+def remove_all_text_using_absorber2(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document.pages[1])
+        document.save(outfile)
 ```
 
+### Eliminar todo el texto de un área específica en la página PDF
 
-## Símbolos reemplazables en el área de Encabezado/Pie de página
+Eliminar todo el texto de una región rectangular específica en una página usando Aspose.PDF’s TextFragmentAbsorber.
+En lugar de borrar una página entera, este método realiza la eliminación de texto dirigida, permitiendo un control preciso sobre qué parte de la página se ve afectada.
 
-Los símbolos reemplazables también pueden colocarse dentro de la sección de Encabezado/Pie de página del archivo PDF. Por favor, echa un vistazo al siguiente fragmento de código para obtener detalles sobre cómo agregar un símbolo reemplazable en la sección del pie de página.
+1. Cargar el documento PDF.
+1. Crear un TextFragmentAbsorber.
+1. Definir el Área de Destino (Rectángulo).
+1. Eliminar texto de la región especificada.
+1. Conserve el resto del documento.
+1. Guarda el PDF modificado.
 
 ```python
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
-
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// Asignar la instancia de marginInfo a la propiedad Margin de sec1.PageInfo
-page.PageInfo.Margin = marginInfo;
-
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
-
-// Instanciar un párrafo de texto que almacenará el contenido a mostrar como encabezado
-TextFragment t1 = new TextFragment("título del informe");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
-
-TextFragment t2 = new TextFragment("Nombre del Informe");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
-
-// Crear un objeto HeaderFooter para la sección
-HeaderFooter hfFoot = new HeaderFooter();
-// Establecer el objeto HeaderFooter para pie de página impar y par
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
-
-// Agregar un párrafo de texto que contenga el número de página actual del total de páginas
-TextFragment t3 = new TextFragment("Generado en fecha de prueba");
-TextFragment t4 = new TextFragment("nombre del informe ");
-TextFragment t5 = new TextFragment("Página $p de $P");
-
-// Instanciar un objeto tabla
-Table tab2 = new Table();
-
-// Agregar la tabla en la colección de párrafos de la sección deseada
-hfFoot.Paragraphs.Add(tab2);
-
-// Establecer los anchos de columna de la tabla
-tab2.ColumnWidths = "165 172 165";
-
-// Crear filas en la tabla y luego celdas en las filas
-Row row3 = tab2.Rows.Add();
-
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
-
-// Establecer la alineación vertical del texto como centrado
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
-
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
-
-// Sec1.Paragraphs.Add(New Text("Aspose.Total for Java es una compilación de cada componente Java ofrecido por Aspose. Se compila en un#$NL" + "diario para asegurar que contiene las versiones más actualizadas de cada uno de nuestros componentes Java. #$NL " + "Usando Aspose.Total for Java los desarrolladores pueden crear una amplia gama de aplicaciones. #$NL #$NL #$NP" + "Aspose.Total for Java es una compilación de cada componente Java ofrecido por Aspose. Se compila en un#$NL" + "diario para asegurar que contiene las versiones más actualizadas de cada uno de nuestros componentes Java. #$NL " + "Usando Aspose.Total for Java los desarrolladores pueden crear una amplia gama de aplicaciones. #$NL #$NL #$NP" + "Aspose.Total for Java es una compilación de cada componente Java ofrecido por Aspose. Se compila en un#$NL" + "diario para asegurar que contiene las versiones más actualizadas de cada uno de nuestros componentes Java. #$NL " + "Usando Aspose.Total for Java los desarrolladores pueden crear una amplia gama de aplicaciones. #$NL #$NL"))
-Table table = new Table();
-
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
-
-// Agregar la tabla en la colección de párrafos de la sección deseada
-page.Paragraphs.Add(table);
-
-// Establecer el borde de celda predeterminado usando el objeto BorderInfo
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
-
-// Establecer el borde de la tabla usando otro objeto BorderInfo personalizado
-table.Border = new BorderInfo(BorderSide.All, 1f);
-
-table.RepeatingRowsCount = 1;
-
-// Crear filas en la tabla y luego celdas en las filas
-Row row1 = table.Rows.Add();
-
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add("col3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
-{
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-            c1 = row.Cells.Add("Aspose.Total for Java es una compilación de cada componente Java ofrecido por Aspose. Se compila en un" + CRLF + "diario para asegurar que contiene las versiones más actualizadas de cada uno de nuestros componentes Java. " + CRLF + "diario para asegurar que contiene las versiones más actualizadas de cada uno de nuestros componentes Java. " + CRLF + "Usando Aspose.Total for Java los desarrolladores pueden crear una amplia gama de aplicaciones.");
-        else
-            c1 = row.Cells.Add("item1" + c);
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
-    }
-}
-
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
+def remove_all_text_using_absorber3(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(
+            document.pages[1], ap.Rectangle(10, 200, 120, 600, True)
+        )
+        document.save(outfile)
 ```
 
+### Eliminar todo el Texto oculto de un documento PDF
 
-## Eliminar Fuentes No Utilizadas del Archivo PDF
+Eliminar todo el texto de una región rectangular específica en una página usando Aspose.PDF’s TextFragmentAbsorber.
+En lugar de borrar una página entera, este método realiza la eliminación de texto dirigida, permitiendo un control preciso sobre qué parte de la página se ve afectada.
 
-Aspose.PDF para Python a través de .NET admite la función de incrustar fuentes al crear un documento PDF, así como la capacidad de incrustar fuentes en archivos PDF existentes. A partir de Aspose.PDF para Python a través de .NET 7.3.0, también te permite eliminar fuentes duplicadas o no utilizadas de documentos PDF.
-
-Para reemplazar fuentes, utiliza el siguiente enfoque:
-
-1. Llama a la clase [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber).
-1. Llama al parámetro TextEditOptions.FontReplace.RemoveUnusedFonts de la clase TextFragmentAbsorber. (Esto elimina las fuentes que se han vuelto no utilizadas durante el reemplazo de fuentes).
-1. Establece la fuente individualmente para cada fragmento de texto.
-
-El siguiente fragmento de código reemplaza la fuente para todos los fragmentos de texto de todas las páginas del documento y elimina las fuentes no utilizadas.
+1. Cargar el documento PDF.
+1. Crear un TextFragmentAbsorber.
+1. Definir el Área de Destino (Rectángulo).
+1. Eliminar texto de la región especificada.
+1. Conserve el resto del documento.
+1. Guarda el PDF modificado.
 
 ```python
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// Cargar archivo PDF de origen
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
-
-// Iterar a través de todos los TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
-}
-
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
-// Guardar documento actualizado
-doc.Save(dataDir);
+def remove_hidden_text(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        text_absorber = ap.text.TextFragmentAbsorber()
+        # This option can be used to prevent other text fragments from moving after hidden text replacement
+        text_absorber.text_replace_options = ap.text.TextReplaceOptions(
+            ap.text.TextReplaceOptions.ReplaceAdjustment.NONE
+        )
+        document.pages.accept(text_absorber)
+        # Remove hidden text
+        for fragment in text_absorber.text_fragments:
+            if fragment.text_state.invisible:
+                fragment.text = ""
+        # Save PDF document
+        document.save(outfile)
 ```
 
+## Temas de texto relacionados
 
-## Eliminar Todo el Texto del Documento PDF
-
-### Eliminar Todo el Texto usando Operadores
-
-En alguna operación de texto, necesitas eliminar todo el texto del documento PDF y para eso, usualmente necesitas establecer el texto encontrado como un valor de cadena vacía. El punto es que cambiar el texto para una multitud de fragmentos de texto invoca una serie de operaciones de verificación y ajuste de posición del texto. Son esenciales en los escenarios de edición de texto. La dificultad es que no puedes determinar cuántos fragmentos de texto serán eliminados en el escenario donde se procesan en un bucle.
-
-Por lo tanto, recomendamos usar otro enfoque para el escenario de eliminar todo el texto de las páginas PDF. Por favor, considera el siguiente fragmento de código que funciona muy rápido.
-
-```python
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
-// Recorrer todas las páginas del documento PDF
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
-{
-    Page page = pdfDocument.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
-    // Seleccionar todo el texto en la página
-    page.Contents.Accept(operatorSelector);
-    // Eliminar todo el texto
-    page.Contents.Delete(operatorSelector.Selected);
-}
-// Guardar el documento
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
-```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python a través de la Biblioteca .NET",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Trabajar con texto en PDF usando Python](/pdf/es/python-net/working-with-text/)
+- [Agregar texto al PDF](/pdf/es/python-net/add-text-to-pdf-file/)
+- [Buscar y extraer texto PDF en Python](/pdf/es/python-net/search-and-get-text-from-pdf/)
+- [Formatear texto PDF en Python](/pdf/es/python-net/text-formatting-inside-pdf/)
