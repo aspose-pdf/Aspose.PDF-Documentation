@@ -14,9 +14,9 @@ AlternativeHeadline: Как создать AcroForm в PDF, используя P
 Abstract: В этой статье объясняется, как создавать поля AcroForm в PDF‑документах, используя Aspose.PDF for Python via .NET. Охватывается базовое создание полей с TextBoxField, настройка внешнего вида многовидовых текстовых полей, а также дополнительные типы полей, такие как radio buttons, combo boxes, checkboxes, list boxes, signature fields и barcode fields. Эти примеры помогут вам создавать интерактивные PDF‑формы для сбора данных и автоматизации рабочих процессов с документами.
 ---
 
-## Создать форму с нуля
+## Создание форму с нуля
 
-### Добавление полей формы в PDF Document
+### Добавление полей формы в PDF-документ
 
 Определённый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) класс предоставляет коллекцию с именем [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) что помогает управлять полями формы в PDF‑документе.
 
@@ -125,7 +125,7 @@ def add_text_box_field_nt(output_file_name):
 1. Добавьте поле подписи
 1. Добавьте поле штрих‑кода
 
-### Добавить поле переключателя
+### Добавление поле переключателя
 
 ```python
 import aspose.pdf as ap
@@ -147,7 +147,7 @@ def add_radio_button(output_file_name):
     document.save(output_file_name)
 ```
 
-### Добавить поле комбобокса
+### Добавление поле комбобокса
 
 ```python
 import aspose.pdf as ap
@@ -170,7 +170,7 @@ def add_combo_box(output_file_name):
     document.save(output_file_name)
 ```
 
-### Добавить поле флажка
+### Добавление поле флажка
 
 ```python
 import aspose.pdf as ap
@@ -190,7 +190,7 @@ def add_checkbox_field_to_pdf(output_file_name):
     document.save(output_file_name)
 ```
 
-### Добавить поле списка
+### Добавление поле списка
 
 ```python
 import aspose.pdf as ap
@@ -212,7 +212,7 @@ def add_list_box_field_to_pdf(output_file_name):
     document.save(output_file_name)
 ```
 
-### Добавить поле подписи
+### Добавление поле подписи
 
 ```python
 import aspose.pdf as ap
@@ -230,7 +230,7 @@ def add_signature_field(output_file_name):
     document.save(output_file_name)
 ```
 
-### Добавить поле штрих‑кода
+### Добавление поле штрих‑кода
 
 ```python
 import aspose.pdf as ap

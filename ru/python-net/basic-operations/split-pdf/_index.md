@@ -30,7 +30,7 @@ Abstract: В статье рассматривается процесс разд
 1. Для каждой итерации создайте новый объект Document и добавьте отдельные [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) объект в пустой документ
 1. Сохраните новый PDF с помощью [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод
 
-## Разделить PDF на несколько файлов или отдельные PDF в Python
+## Разделение PDF на несколько файлов или отдельные PDF в Python
 
 Следующий фрагмент кода Python показывает, как разбить страницы PDF на отдельные PDF‑файлы.
 

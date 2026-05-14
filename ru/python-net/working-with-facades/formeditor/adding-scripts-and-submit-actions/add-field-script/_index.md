@@ -14,7 +14,7 @@ AlternativeHeadline: Добавить действия JavaScript к полям 
 Abstract: В этой статье объясняется, как открыть PDF‑форму, назначить код JavaScript конкретному полю формы, добавить дополнительные действия скрипта и сохранить обновленный документ. В примере используется класс FormEditor из API Aspose.PDF Facades для программного управления поведением формы.
 ---
 
-## Добавить действия JavaScript к полям PDF‑формы с помощью Python
+## Добавление действия JavaScript к полям PDF‑формы с помощью Python
 
 Этот фрагмент кода позволяет добавить действия JavaScript к существующему полю PDF‑формы с использованием библиотеки Aspose.PDF for Python. Он открывает PDF‑документ, назначает действие JavaScript полю формы и добавляет скрипт, который выполняется при срабатывании поля. В конце обновлённый PDF сохраняется в новый файл.
 Используя [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) класс из [aspose.pdf.facades](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/) модуля, вы можете программно привязать JavaScript к существующим полям формы:

@@ -24,7 +24,7 @@ Abstract: В этой статье объясняется, как работат
 - Сведите многослойное содержимое в страницу.
 - Объедините несколько слоёв в один слой.
 
-## Добавить слои в PDF
+## Добавление слои в PDF
 
 Этот пример создает PDF с тремя уровнями. Он использует [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), добавляет a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/), и добавляет [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) объекты к этой странице.
 
@@ -107,7 +107,7 @@ def lock_layer(infile: str, outfile: str) -> None:
         print("No layers found in the document.")
 ```
 
-## Извлечь элементы слоя PDF
+## Извлечение элементы слоя PDF
 
 В этом примере используется библиотека Aspose.PDF for Python via .NET для извлечения отдельных слоёв с первой страницы PDF‑документа и сохранения каждого слоя в отдельный PDF‑файл с помощью [`Layer.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/#methods).
 
@@ -185,7 +185,7 @@ def flatten_layers(infile: str, outfile: str) -> None:
     print(f"Layers flattened successfully. File saved at {outfile}")
 ```
 
-## Объединить все слои в PDF в один
+## Объединение все слои в PDF в один
 
 Этот фрагмент кода использует Aspose.PDF для объединения всех слоёв на первой странице PDF в один единый слой с пользовательским именем, используя [`Page.merge_layers()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods).
 

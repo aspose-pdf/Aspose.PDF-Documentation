@@ -67,7 +67,7 @@ def set_page_size(input_file_name, output_file_name):
     document.save(output_file_name)
 ```
 
-## Получить размер страницы PDF
+## Получение размер страницы PDF
 
 Этот фрагмент кода читает PDF и получает размеры (ширину и высоту) первой страницы. Он использует [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API для извлечения границ страницы [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) и выводит его размер в консоль. Это полезно для просмотра макета страницы, проверки форматов или подготовки документов к дальнейшей обработке.
 
@@ -91,7 +91,7 @@ def get_page_size(input_file_name, output_file_name):
     print(f"{rectangle.width} : {rectangle.height}")
 ```
 
-### Получить размер страницы PDF до и после поворота
+### Получение размер страницы PDF до и после поворота
 
 Получите размеры страницы PDF до и после применения поворота на 90°. Это демонстрирует, как поворот влияет на ширину и высоту и как использовать `get_page_rect()` с учётом или без учёта вращения.
 

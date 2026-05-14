@@ -13,7 +13,7 @@ Abstract: Этот сборник представляет собой компл
 
 Эта страница демонстрирует типовые рабочие процессы импорта и экспорта данных AcroForm с помощью Aspose.PDF for Python via .NET. Все операции используют [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form/) фасад.
 
-## Импортировать данные полей формы из XML
+## Импорт данные полей формы из XML
 
 Используйте этот подход для заполнения PDF-формы данными из внешнего XML.
 
@@ -37,7 +37,7 @@ def import_data_from_xml(input_file_name, data_file_name, output_file_name):
     form.save(output_file_name)
 ```
 
-## Экспортировать данные полей формы в XML
+## Экспорт данные полей формы в XML
 
 Этот метод экспортирует значения полей формы из PDF‑документа в XML.
 
@@ -57,7 +57,7 @@ def export_data_to_xml(input_file_name, output_file_name):
         form.export_xml(f)
 ```
 
-## Импортировать данные полей формы из FDF
+## Импорт данные полей формы из FDF
 
 Определённый `import_data_from_fdf` метод импортирует данные полей формы из файла FDF (Формат данных форм) в форму PDF.
 
@@ -79,7 +79,7 @@ def import_data_from_fdf(input_file_name, data_file_name, output_file_name):
         form.save(output_file_name)
 ```
 
-## Экспортировать данные полей формы в FDF
+## Экспорт данные полей формы в FDF
 
 В этом примере данные формы экспортируются из PDF‑документа в файл FDF.
 
@@ -99,7 +99,7 @@ def export_data_to_fdf(input_file_name, output_file_name):
         form.export_fdf(f)
 ```
 
-## Импортировать данные полей формы из XFDF
+## Импорт данные полей формы из XFDF
 
 Используйте этот метод для импорта данных полей формы из файла XFDF (XML Forms Data Format) в PDF-форму.
 
@@ -121,7 +121,7 @@ def import_data_from_xfdf(input_file_name, data_file_name, output_file_name):
         form.save(output_file_name)
 ```
 
-## Экспортировать данные полей формы в XFDF
+## Экспорт данные полей формы в XFDF
 
 Этот код экспортирует данные полей формы из PDF‑документа в файл XFDF.
 
@@ -141,7 +141,7 @@ def export_data_to_xfdf(input_file_name, output_file_name):
         form.export_xfdf(f)
 ```
 
-## Импортировать данные из другого PDF
+## Импорт данные из другого PDF
 
 Этот пример переносит данные полей формы из исходного PDF в целевой PDF, экспортируя XFDF в поток в памяти и импортируя его в целевую форму.
 
@@ -170,7 +170,7 @@ def import_data_from_another_pdf(source_pdf_name, destination_pdf_name, output_f
     form_dest.save(output_file_name)
 ```
 
-## Извлечь поля формы в JSON
+## Извлечение поля формы в JSON
 
 Этот метод экспортирует поля формы в JSON‑файл, используя `export_json()`.
 
@@ -188,7 +188,7 @@ def extract_form_fields_to_json(input_file_name, output_file_name):
         form.export_json(json_file, True)
 ```
 
-## Извлечь FormField в JSON Document
+## Извлечение FormField в JSON-документ
 
 Этот пример создает пользовательский JSON‑документ из имён полей формы и их значений.
 

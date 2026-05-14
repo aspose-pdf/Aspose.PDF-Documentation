@@ -51,7 +51,7 @@ def create_link_annotation_launch_action(infile, outfile):
     document.save(outfile)
 ```
 
-## Создать ссылку на документ PDF в PDF‑файле
+## Создание ссылку на документ PDF в PDF‑файле
 
 ### Использование GoToRemoteAction
 

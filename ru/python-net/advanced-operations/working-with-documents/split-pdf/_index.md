@@ -30,7 +30,7 @@ Abstract: В статье рассматривается процесс разд
 1. Для каждой итерации создавайте новый объект Document и добавляйте отдельный [Страница](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) объект в пустой документ
 1. Сохраните новый PDF, используя [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод
 
-## Разделить PDF на несколько файлов или отдельные PDF в Python
+## Разделение PDF на несколько файлов или отдельные PDF в Python
 
 Следующий фрагмент кода на Python показывает, как разделить страницы PDF на отдельные PDF‑файлы.
 
@@ -48,7 +48,7 @@ def split_documents(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num}.pdf"))
 ```
 
-## Разделить PDF на две равные части
+## Разделение PDF на две равные части
 
 1. Загрузите PDF-документ.
 1. Определите общее количество страниц.
@@ -84,7 +84,7 @@ def split_documents_into_two_parts(infile, outdir):
         second_document.save(path.join(outdir, "Part_2.pdf"))
 ```
 
-## Разделить PDF на несколько файлов каждые N страниц
+## Разделение PDF на несколько файлов каждые N страниц
 
 Разделите PDF‑документ на несколько более мелких файлов, основываясь на фиксированном количестве страниц, с помощью Aspose.PDF for Python.
 
@@ -122,7 +122,7 @@ def split_documents_every_n_pages(infile, outdir, pages_per_part=3):
         part_index += 1
 ```
 
-## Разделить PDF по пользовательским диапазонам страниц
+## Разделение PDF по пользовательским диапазонам страниц
 
 Разделите PDF‑документ на несколько файлов на основе пользовательски заданных диапазонов страниц с использованием Aspose.PDF для Python.
 
@@ -165,7 +165,7 @@ def split_documents_by_page_ranges(infile, outdir):
             )
 ```
 
-## Разделить PDF на первую страницу и оставшиеся страницы
+## Разделение PDF на первую страницу и оставшиеся страницы
 
 Отделите первую страницу PDF‑документа от остальных страниц, используя Aspose.PDF for Python.
 
@@ -206,7 +206,7 @@ def split_documents_first_page_and_rest(infile, outdir):
         remaining_pages_document.save(path.join(outdir, "Remaining_Pages.pdf"))
 ```
 
-## Разделить PDF на последнюю страницу и предыдущие страницы
+## Разделение PDF на последнюю страницу и предыдущие страницы
 
 Извлеките последнюю страницу PDF‑документа и отделите её от остальных страниц с помощью Aspose.PDF for Python.
 
@@ -244,7 +244,7 @@ def split_documents_last_page_and_rest(infile, outdir):
     document.save(path.join(outdir, "Previous_Pages.pdf"))
 ```
 
-## Разделить PDF на три части
+## Разделение PDF на три части
 
 Разделите PDF-документ на три отдельные части с помощью Aspose.PDF for Python.
 
@@ -363,7 +363,7 @@ def split_documents_odd_even_pages(infile, outdir):
             even_document.save(path.join(outdir, "Even_Pages.pdf"))
 ```
 
-## Связанные темы Document
+## Связанные темы документа
 
 - [Работа с PDF документами в Python](/pdf/ru/python-net/working-with-documents/)
 - [Объединить PDF файлы в Python](/pdf/ru/python-net/merge-pdf-documents/)

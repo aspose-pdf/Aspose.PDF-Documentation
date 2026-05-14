@@ -85,7 +85,7 @@ finally:
     image_file.unlink(missing_ok=True)
 ```
 
-## Связанные темы Document
+## Связанные темы документа
 
 - [Работа с PDF документами в Python](/pdf/ru/python-net/working-with-documents/)
 - [Форматировать PDF документы в Python](/pdf/ru/python-net/formatting-pdf-document/)

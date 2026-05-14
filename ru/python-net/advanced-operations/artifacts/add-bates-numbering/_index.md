@@ -68,7 +68,7 @@ def add_bates_n_artifact(infile, outfile):
         document.save(outfile)
 ```
 
-## Добавить нумерацию Bates с использованием артефактов пагинации
+## Добавление нумерацию Bates с использованием артефактов пагинации
 
 Добавьте нумерацию Bates в PDF, используя коллекцию артефактов пагинации в Aspose.PDF for Python:
 
@@ -96,7 +96,7 @@ def add_bates_n_artifact_pagination(infile, outfile):
         document.save(outfile)
 ```
 
-## Удалить нумерацию Bates
+## Удаление нумерацию Bates
 
 Чтобы удалить нумерацию Bates из [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), используйте `delete_bates_numbering()` метод на [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/):
 

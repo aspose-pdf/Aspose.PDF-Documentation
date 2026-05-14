@@ -24,11 +24,11 @@ Abstract: В этой статье объясняется, как создава
 - добавлять и удалять аннотации rich media
 - просмотреть существующие мультимедийные аннотации
 
-## Добавить звуковые аннотации
+## Добавление звуковые аннотации
 
 Этот пример добавляет звуковую аннотацию на первую страницу существующего PDF и связывает её с WAV‑файлом, хранящимся в директории ввода.
 
-### Открыть PDF и определить медиафайл
+### Открытие PDF и определить медиафайл
 
 ```python
 media_dir = path.dirname(infile)
@@ -39,7 +39,7 @@ page = document.pages[1]
 media_file = path.join(media_dir, "file_example_WAV_1MG.wav")
 ```
 
-### Создать и настроить звуковую аннотацию
+### Создание и настроить звуковую аннотацию
 
 Установите прямоугольник аннотации, цвет, заголовок и тему. Затем добавьте всплывающую аннотацию, чтобы предоставить дополнительные детали при выборе аннотации.
 
@@ -60,7 +60,7 @@ sound_annotation.popup = ann.PopupAnnotation(
 )
 ```
 
-### Добавить аннотацию и сохранить PDF
+### Добавление аннотацию и сохранить PDF
 
 ```python
 page.annotations.append(sound_annotation)
@@ -97,11 +97,11 @@ def sound_annotation_add(infile, outfile):
     document.save(outfile)
 ```
 
-## Добавить 3D‑аннотации
+## Добавление 3D‑аннотации
 
 Этот рабочий процесс создаёт новый PDF и встраивает 3D‑модель из файла U3D. Он также определяет предустановленные виды и настройки визуализации для 3D‑контента.
 
-### Создать PDF‑документ и 3D‑контент
+### Создание PDF‑документ и 3D‑контент
 
 ```python
 model_file = infile
@@ -150,14 +150,14 @@ front_matrix = ap.Matrix3D(
 )
 ```
 
-### Добавить именованные представления к изображению
+### Добавление именованные представления к изображению
 
 ```python
 pdf3d_artwork.view_array.add(ann.PDF3DView(document, top_matrix, 0.188563, "Top"))
 pdf3d_artwork.view_array.add(ann.PDF3DView(document, front_matrix, 0.188563, "Left"))
 ```
 
-### Создать аннотацию и сохранить документ
+### Создание аннотацию и сохранить документ
 
 ```python
 page = document.pages.add()
@@ -242,11 +242,11 @@ def annotation_3d_add(infile, outfile):
     document.save(outfile)
 ```
 
-## Добавить аннотации экрана
+## Добавление аннотации экрана
 
 Экранные аннотации позволяют прикреплять воспроизводимый медиа‑контент к странице PDF. В этом примере создаётся новый PDF и добавляется экранная аннотация на основе файла SWF.
 
-### Создать PDF и страницу
+### Создание PDF и страницу
 
 ```python
 media_file = infile
@@ -255,7 +255,7 @@ document = ap.Document()
 page = document.pages.add()
 ```
 
-### Создать аннотацию экрана
+### Создание аннотацию экрана
 
 ```python
 screen_annotation = ann.ScreenAnnotation(
@@ -265,7 +265,7 @@ screen_annotation = ann.ScreenAnnotation(
 )
 ```
 
-### Добавить аннотацию и сохранить PDF
+### Добавление аннотацию и сохранить PDF
 
 ```python
 page.annotations.append(screen_annotation)
@@ -293,7 +293,7 @@ def screen_annotation_with_media_add(infile, outfile):
 
 ## Аннотации Rich Media
 
-### Добавить аннотации Rich Media
+### Добавление аннотации Rich Media
 
 Аннотации Rich media могут внедрять продвинутый интерактивный контент, такой как видеоплееры с постерами, скинами и пользовательскими настройками воспроизведения.
 
@@ -315,7 +315,7 @@ poster_name = "file_example_MP4_480_1_5MG_poster.jpg"
 skin_name = "SkinOverAllNoFullNoCaption.swf"
 ```
 
-### Создать аннотацию rich media
+### Создание аннотацию rich media
 
 ```python
 rich_media_annotation = ann.RichMediaAnnotation(
@@ -342,7 +342,7 @@ with open(video_path, "rb") as video_file:
     rich_media_annotation.set_content(video_name, video_file)
 ```
 
-### Установить поведение воспроизведения и сохранить PDF
+### Установка поведение воспроизведения и сохранить PDF
 
 Аннотация настроена как видеоконтент и активируется при щелчке пользователя.
 
@@ -402,11 +402,11 @@ def rich_media_annotations_add(infile, outfile):
     document.save(outfile)
 ```
 
-### Удалить аннотации Rich Media
+### Удаление аннотации Rich Media
 
 Этот рабочий процесс удаляет все аннотации rich media с первой страницы существующего PDF.
 
-### Открыть PDF и собрать аннотации с богатыми медиа
+### Открытие PDF и собрать аннотации с богатыми медиа
 
 ```python
 document = ap.Document(infile)
@@ -419,7 +419,7 @@ to_delete = [
 ]
 ```
 
-### Удалить аннотации и сохранить документ
+### Удаление аннотации и сохранить документ
 
 ```python
 for annotation in to_delete:
@@ -447,11 +447,11 @@ def rich_media_annotations_delete(infile, outfile):
     document.save(outfile)
 ```
 
-## Получить Multimedia_annotations
+## Получение Multimedia_annotations
 
 Чтобы проверить мультимедийный контент, уже сохранённый в PDF, отфильтруйте коллекцию аннотаций по типам аннотаций screen, sound и rich media.
 
-### Открыть документ и определить целевые типы аннотаций
+### Открытие документ и определить целевые типы аннотаций
 
 ```python
 document = ap.Document(infile)

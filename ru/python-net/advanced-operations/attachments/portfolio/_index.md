@@ -61,7 +61,7 @@ def create_pdf_portfolio(input_files, outfile):
     document.save(outfile)
 ```
 
-## Удалить файлы из PDF Portfolio
+## Удаление файлы из PDF Portfolio
 
 Чтобы удалить файлы из PDF‑портфеля, попробуйте использовать следующие строки кода.
 

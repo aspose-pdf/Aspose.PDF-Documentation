@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Преобразовать XFA‑в‑Acroform
+## Преобразование XFA‑в‑Acroform
 
 {{% alert color="primary" %}}
 
