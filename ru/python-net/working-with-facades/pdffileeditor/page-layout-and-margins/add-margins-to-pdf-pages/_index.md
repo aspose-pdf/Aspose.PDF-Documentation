@@ -1,5 +1,6 @@
 ---
 title: Добавить поля к страницам PDF
+linktitle: Добавить поля к страницам PDF
 type: docs
 weight: 10
 url: /python-net/add-margins-to-pdf-pages/

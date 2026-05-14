@@ -1,5 +1,6 @@
 ---
 title: Брошюра и N-Up макет
+linktitle: Брошюра и N-Up макет
 type: docs
 weight: 10
 url: /python-net/booklet-and-nup-layout/

@@ -1,5 +1,6 @@
 ---
 title: Добавить текстовые аннотации
+linktitle: Добавить текстовые аннотации
 type: docs
 weight: 50
 url: /python-net/add-text-annotation/

@@ -1,5 +1,6 @@
 ---
 title: Добавить разрывы страниц в PDF
+linktitle: Добавить разрывы страниц в PDF
 type: docs
 weight: 20
 url: /python-net/add-page-breaks-in-pdf/

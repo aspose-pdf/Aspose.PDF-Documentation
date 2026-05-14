@@ -1,5 +1,6 @@
 ---
 title: Установить вертикальное выравнивание поля
+linktitle: Установить вертикальное выравнивание поля
 type: docs
 weight: 40
 url: /python-net/set-field-alignment-vertical/

@@ -1,5 +1,6 @@
 ---
 title: Получить полные имена полей
+linktitle: Получить полные имена полей
 type: docs
 weight: 60
 url: /python-net/resolve-full-field-names/

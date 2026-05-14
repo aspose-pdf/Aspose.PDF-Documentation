@@ -1,5 +1,6 @@
 ---
 title: Проверка подписи
+linktitle: Проверка подписи
 type: docs
 weight: 90
 url: /python-net/signature-verification/

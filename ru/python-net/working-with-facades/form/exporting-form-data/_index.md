@@ -1,5 +1,6 @@
 ---
 title: Экспорт данных Form
+linktitle: Экспорт данных Form
 type: docs
 weight: 10
 url: /python-net/exporting-form-data/

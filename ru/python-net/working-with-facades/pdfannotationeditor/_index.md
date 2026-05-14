@@ -1,5 +1,6 @@
 ---
 title: Класс PdfAnnotationEditor
+linktitle: Класс PdfAnnotationEditor
 type: docs
 weight: 40
 url: /python-net/pdfannotationeditor-class/

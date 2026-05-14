@@ -1,5 +1,6 @@
 ---
 title: Импорт данных Form
+linktitle: Импорт данных Form
 type: docs
 weight: 20
 url: /python-net/importing-form-data/

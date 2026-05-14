@@ -1,5 +1,6 @@
 ---
 title: Получить смещение страницы
+linktitle: Получить смещение страницы
 type: docs
 weight: 20
 url: /python-net/get-page-offset/

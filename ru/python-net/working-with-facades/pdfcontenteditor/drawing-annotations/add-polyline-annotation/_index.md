@@ -1,5 +1,6 @@
 ---
 title: Добавить аннотацию полилиний
+linktitle: Добавить аннотацию полилиний
 type: docs
 weight: 50
 url: /python-net/add-polyline-annotation/

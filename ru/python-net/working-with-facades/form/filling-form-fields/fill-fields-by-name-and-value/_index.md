@@ -1,5 +1,6 @@
 ---
 title: Заполнять поля по имени и значению
+linktitle: Заполнять поля по имени и значению
 type: docs
 weight: 60
 url: /python-net/fill-fields-by-name-and-value/

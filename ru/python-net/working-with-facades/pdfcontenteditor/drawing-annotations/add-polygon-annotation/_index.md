@@ -1,5 +1,6 @@
 ---
 title: Добавить аннотацию полигога
+linktitle: Добавить аннотацию полигога
 type: docs
 weight: 40
 url: /python-net/add-polygon-annotation/

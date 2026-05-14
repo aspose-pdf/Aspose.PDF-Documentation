@@ -1,5 +1,6 @@
 ---
 title: Удалить штамп по ID
+linktitle: Удалить штамп по ID
 type: docs
 weight: 85
 url: /python-net/delete-stamp-by-ids-examples/

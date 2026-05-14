@@ -1,5 +1,6 @@
 ---
 title: Добавить элемент списка
+linktitle: Добавить элемент списка
 type: docs
 weight: 10
 url: /python-net/add-list-item/

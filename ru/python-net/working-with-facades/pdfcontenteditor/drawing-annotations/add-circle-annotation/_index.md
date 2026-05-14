@@ -1,5 +1,6 @@
 ---
 title: Добавить круговую аннотацию
+linktitle: Добавить круговую аннотацию
 type: docs
 weight: 10
 url: /python-net/add-circle-annotation/

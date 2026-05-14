@@ -1,5 +1,6 @@
 ---
 title: Переименовать поле
+linktitle: Переименовать поле
 type: docs
 weight: 70
 url: /python-net/rename-field/

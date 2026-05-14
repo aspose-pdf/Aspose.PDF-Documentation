@@ -1,5 +1,6 @@
 ---
 title: Чтение значений Form
+linktitle: Чтение значений Form
 type: docs
 weight: 60
 url: /python-net/reading-form-values/

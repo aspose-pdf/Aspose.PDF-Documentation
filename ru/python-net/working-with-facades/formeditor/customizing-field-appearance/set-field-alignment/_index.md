@@ -1,5 +1,6 @@
 ---
 title: Установить выравнивание поля
+linktitle: Установить выравнивание поля
 type: docs
 weight: 30
 url: /python-net/set-field-alignment/

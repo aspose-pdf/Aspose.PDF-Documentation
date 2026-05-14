@@ -1,5 +1,6 @@
 ---
 title: Изменение полей формы
+linktitle: Изменение полей формы
 type: docs
 weight: 20
 url: /python-net/modifying-form-fields/

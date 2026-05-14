@@ -1,5 +1,6 @@
 ---
 title: Добавить штамп
+linktitle: Добавить штамп
 type: docs
 weight: 10
 url: /python-net/add-rubber-stamp/

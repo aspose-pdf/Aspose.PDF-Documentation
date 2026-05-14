@@ -1,5 +1,6 @@
 ---
 title: Расшифровать PDF-файл
+linktitle: Расшифровать PDF-файл
 type: docs
 weight: 20
 url: /python-net/decrypt-pdf-file/

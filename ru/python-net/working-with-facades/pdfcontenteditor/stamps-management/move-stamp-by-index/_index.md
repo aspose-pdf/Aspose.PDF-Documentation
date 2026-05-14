@@ -1,5 +1,6 @@
 ---
 title: Переместить штамп по индексу
+linktitle: Переместить штамп по индексу
 type: docs
 weight: 90
 url: /python-net/move-stamp-by-index/

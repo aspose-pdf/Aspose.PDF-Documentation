@@ -1,5 +1,6 @@
 ---
 title: Класс FormEditor
+linktitle: Класс FormEditor
 type: docs
 weight: 100
 url: /python-net/formeditor-class/

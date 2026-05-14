@@ -1,5 +1,6 @@
 ---
 title: Заменить текст на странице с помощью state
+linktitle: Заменить текст на странице с помощью state
 type: docs
 weight: 20
 url: /python-net/replace-text-on-page-with-state/

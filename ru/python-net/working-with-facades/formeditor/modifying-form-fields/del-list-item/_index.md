@@ -1,5 +1,6 @@
 ---
 title: Удалить элемент списка
+linktitle: Удалить элемент списка
 type: docs
 weight: 40
 url: /python-net/del-list-item/

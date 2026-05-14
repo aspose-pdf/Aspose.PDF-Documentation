@@ -1,5 +1,6 @@
 ---
 title: Добавить заголовок в PDF
+linktitle: Добавить заголовок в PDF
 type: docs
 weight: 20
 url: /python-net/add-header/

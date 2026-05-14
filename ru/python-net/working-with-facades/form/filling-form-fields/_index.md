@@ -1,5 +1,6 @@
 ---
 title: Заполнение полей Form
+linktitle: Заполнение полей Form
 type: docs
 weight: 30
 url: /python-net/filling-form-fields/

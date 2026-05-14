@@ -1,5 +1,6 @@
 ---
 title: Установить внешний вид поля
+linktitle: Установить внешний вид поля
 type: docs
 weight: 50
 url: /python-net/set-field-appearance/

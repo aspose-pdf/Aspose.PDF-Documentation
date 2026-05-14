@@ -1,5 +1,6 @@
 ---
 title: Заполнить поля радиокнопок
+linktitle: Заполнить поля радиокнопок
 type: docs
 weight: 30
 url: /python-net/fill-radio-button-fields/

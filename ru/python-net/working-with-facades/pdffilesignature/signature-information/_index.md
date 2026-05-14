@@ -1,5 +1,6 @@
 ---
 title: Информация о подписи
+linktitle: Информация о подписи
 type: docs
 weight: 60
 url: /python-net/signature-information/

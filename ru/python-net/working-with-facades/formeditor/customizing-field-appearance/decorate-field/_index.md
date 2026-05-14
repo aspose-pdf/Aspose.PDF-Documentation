@@ -1,5 +1,6 @@
 ---
 title: Украсьте поле
+linktitle: Украсьте поле
 type: docs
 weight: 10
 url: /python-net/decorate-field/

@@ -1,5 +1,6 @@
 ---
 title: Добавить аннотацию вложения файла из потока
+linktitle: Добавить аннотацию вложения файла из потока
 type: docs
 weight: 40
 url: /python-net/add-file-attachment-annotation-from-stream/

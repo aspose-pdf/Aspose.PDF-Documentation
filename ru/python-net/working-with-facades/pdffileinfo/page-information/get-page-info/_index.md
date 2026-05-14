@@ -1,5 +1,6 @@
 ---
 title: Получить информацию о странице
+linktitle: Получить информацию о странице
 type: docs
 weight: 10
 url: /python-net/get-page-info/

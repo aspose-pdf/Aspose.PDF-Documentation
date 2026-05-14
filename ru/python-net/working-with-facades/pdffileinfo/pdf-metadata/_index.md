@@ -1,5 +1,6 @@
 ---
 title: Метаданные PDF
+linktitle: Метаданные PDF
 type: docs
 weight: 30
 url: /python-net/pdf-metadata/

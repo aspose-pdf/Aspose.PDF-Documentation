@@ -1,5 +1,6 @@
 ---
 title: Создать кнопку отправки
+linktitle: Создать кнопку отправки
 type: docs
 weight: 50
 url: /python-net/create-submit-button/

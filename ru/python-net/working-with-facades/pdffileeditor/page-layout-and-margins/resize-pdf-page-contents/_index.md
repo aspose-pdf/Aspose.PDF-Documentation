@@ -1,5 +1,6 @@
 ---
 title: Изменить размер содержимого страниц PDF
+linktitle: Изменить размер содержимого страниц PDF
 type: docs
 weight: 30
 url: /python-net/resize-pdf-page-contents/

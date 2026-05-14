@@ -1,5 +1,6 @@
 ---
 title: Добавить страницы в PDF
+linktitle: Добавить страницы в PDF
 type: docs
 weight: 10
 url: /python-net/append-pages-to-pdf/

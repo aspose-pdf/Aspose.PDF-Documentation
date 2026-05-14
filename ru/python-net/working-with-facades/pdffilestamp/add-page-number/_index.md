@@ -1,5 +1,6 @@
 ---
 title: Добавить номер страницы в PDF
+linktitle: Добавить номер страницы в PDF
 type: docs
 weight: 30
 url: /python-net/page-number/

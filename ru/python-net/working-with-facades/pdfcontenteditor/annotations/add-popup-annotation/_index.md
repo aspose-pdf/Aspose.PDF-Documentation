@@ -1,5 +1,6 @@
 ---
 title: Добавить всплывающие аннотации
+linktitle: Добавить всплывающие аннотации
 type: docs
 weight: 40
 url: /python-net/add-popup-annotation/

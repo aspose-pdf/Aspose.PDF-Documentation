@@ -1,5 +1,6 @@
 ---
 title: Объединение PDF-файлов с оптимизацией
+linktitle: Объединение PDF-файлов с оптимизацией
 type: docs
 weight: 30
 url: /python-net/concatenate-pdf-files-with-optimization/

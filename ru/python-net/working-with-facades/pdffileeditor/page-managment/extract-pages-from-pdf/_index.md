@@ -1,5 +1,6 @@
 ---
 title: Извлечение страниц из PDF
+linktitle: Извлечение страниц из PDF
 type: docs
 weight: 30
 url: /python-net/extract-pages-from-pdf/

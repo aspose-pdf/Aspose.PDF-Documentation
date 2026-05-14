@@ -1,5 +1,6 @@
 ---
 title: Разделить PDF с начала
+linktitle: Разделить PDF с начала
 type: docs
 weight: 10
 url: /python-net/split-pdf-from-beginning/

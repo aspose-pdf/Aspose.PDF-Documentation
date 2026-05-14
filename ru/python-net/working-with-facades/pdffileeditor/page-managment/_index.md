@@ -1,5 +1,6 @@
 ---
 title: Управление страницами
+linktitle: Управление страницами
 type: docs
 weight: 30
 url: /python-net/page-management/

@@ -1,5 +1,6 @@
 ---
 title: Добавить вложение из пути
+linktitle: Добавить вложение из пути
 type: docs
 weight: 20
 url: /python-net/add-attachment-from-path/

@@ -1,5 +1,6 @@
 ---
 title: Управление штампами
+linktitle: Управление штампами
 type: docs
 weight: 90
 url: /python-net/stamps-management/

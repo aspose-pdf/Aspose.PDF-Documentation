@@ -1,5 +1,6 @@
 ---
 title: Заполнить поля флажков
+linktitle: Заполнить поля флажков
 type: docs
 weight: 20
 url: /python-net/fill-check-box-fields/

@@ -1,5 +1,6 @@
 ---
 title: Однострочное поле в многострочное поле
+linktitle: Однострочное поле в многострочное поле
 type: docs
 weight: 80
 url: /python-net/single-to-multiple/

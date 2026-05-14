@@ -1,5 +1,6 @@
 ---
 title: Создать поле ListBox
+linktitle: Создать поле ListBox
 type: docs
 weight: 30
 url: /python-net/create-listbox-field/

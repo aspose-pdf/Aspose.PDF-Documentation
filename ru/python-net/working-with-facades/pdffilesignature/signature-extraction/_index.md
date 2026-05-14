@@ -1,5 +1,6 @@
 ---
 title: Извлечение подписи
+linktitle: Извлечение подписи
 type: docs
 weight: 50
 url: /python-net/signature-extraction/

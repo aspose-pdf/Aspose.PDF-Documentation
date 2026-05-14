@@ -1,5 +1,6 @@
 ---
 title: Очистить метаданные PDF
+linktitle: Очистить метаданные PDF
 type: docs
 weight: 10
 url: /python-net/clear-pdf-metadata/

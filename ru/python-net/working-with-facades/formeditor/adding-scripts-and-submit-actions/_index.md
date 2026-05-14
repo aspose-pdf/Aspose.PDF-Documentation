@@ -1,5 +1,6 @@
 ---
 title: Добавление сценариев и действий отправки
+linktitle: Добавление сценариев и действий отправки
 type: docs
 weight: 40
 url: /python-net/adding-scripts-and-submit-actions/

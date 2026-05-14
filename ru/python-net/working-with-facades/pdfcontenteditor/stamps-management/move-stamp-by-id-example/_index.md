@@ -1,5 +1,6 @@
 ---
 title: Переместить штамп по ID
+linktitle: Переместить штамп по ID
 type: docs
 weight: 80
 url: /python-net/move-stamp-by-id-example/

@@ -1,5 +1,6 @@
 ---
 title: Заменить текст с использованием state
+linktitle: Заменить текст с использованием state
 type: docs
 weight: 50
 url: /python-net/replace-text-with-state/

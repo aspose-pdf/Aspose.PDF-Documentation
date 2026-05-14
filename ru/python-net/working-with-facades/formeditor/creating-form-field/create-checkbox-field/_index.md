@@ -1,5 +1,6 @@
 ---
 title: Создать поле CheckBox
+linktitle: Создать поле CheckBox
 type: docs
 weight: 10
 url: /python-net/create-checkbox-field/

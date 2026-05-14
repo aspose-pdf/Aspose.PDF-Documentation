@@ -1,5 +1,6 @@
 ---
 title: Установить привилегии для существующего PDF‑файла
+linktitle: Установить привилегии для существующего PDF‑файла
 type: docs
 weight: 40
 url: /python-net/set-privileges/

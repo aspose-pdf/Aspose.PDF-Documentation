@@ -1,5 +1,6 @@
 ---
 title: Установить URL отправки
+linktitle: Установить URL отправки
 type: docs
 weight: 40
 url: /python-net/set-submit-url/

@@ -1,5 +1,6 @@
 ---
 title: Заменить изображения в PDF
+linktitle: Заменить изображения в PDF
 type: docs
 weight: 30
 url: /python-net/replace-image/

@@ -1,5 +1,6 @@
 ---
 title: Объединить несколько PDF-файлов
+linktitle: Объединить несколько PDF-файлов
 type: docs
 weight: 20
 url: /python-net/concatenate-pdf-files/

@@ -1,5 +1,6 @@
 ---
 title: Класс PdfFileSecurity
+linktitle: Класс PdfFileSecurity
 type: docs
 weight: 125
 url: /python-net/pdffilesecurity-class/

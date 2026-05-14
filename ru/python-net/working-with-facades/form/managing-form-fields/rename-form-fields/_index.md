@@ -1,5 +1,6 @@
 ---
 title: Переименовать поля формы
+linktitle: Переименовать поля формы
 type: docs
 weight: 30
 url: /python-net/rename-form-fields/

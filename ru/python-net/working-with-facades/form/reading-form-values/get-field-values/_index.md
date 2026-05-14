@@ -1,5 +1,6 @@
 ---
 title: Получить значения полей
+linktitle: Получить значения полей
 type: docs
 weight: 50
 url: /python-net/get-field-values/

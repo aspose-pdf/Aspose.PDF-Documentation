@@ -1,5 +1,6 @@
 ---
 title: Добавить пользовательскую ссылку действия
+linktitle: Добавить пользовательскую ссылку действия
 type: docs
 weight: 20
 url: /python-net/add-custom-action-link/

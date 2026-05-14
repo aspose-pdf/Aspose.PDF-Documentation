@@ -1,5 +1,6 @@
 ---
 title: Добавить действие Document
+linktitle: Добавить действие Document
 type: docs
 weight: 20
 url: /python-net/add-document-action/

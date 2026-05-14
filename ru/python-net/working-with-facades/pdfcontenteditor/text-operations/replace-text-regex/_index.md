@@ -1,5 +1,6 @@
 ---
 title: Замена текста с использованием RegEx
+linktitle: Замена текста с использованием RegEx
 type: docs
 weight: 30
 url: /python-net/replace-text-regex/

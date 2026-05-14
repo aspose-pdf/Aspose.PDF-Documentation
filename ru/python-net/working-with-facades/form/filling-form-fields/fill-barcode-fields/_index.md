@@ -1,5 +1,6 @@
 ---
 title: Заполнить поля штрихкода
+linktitle: Заполнить поля штрихкода
 type: docs
 weight: 50
 url: /python-net/fill-barcode-fields/

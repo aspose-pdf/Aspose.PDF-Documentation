@@ -1,5 +1,6 @@
 ---
 title: Управление штампом по идентификатору
+linktitle: Управление штампом по идентификатору
 type: docs
 weight: 95
 url: /python-net/manage-stamp-by-id/

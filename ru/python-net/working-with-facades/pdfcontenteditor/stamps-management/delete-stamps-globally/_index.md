@@ -1,5 +1,6 @@
 ---
 title: Удалить штампы глобально
+linktitle: Удалить штампы глобально
 type: docs
 weight: 60
 url: /python-net/delete-stamps-globally/

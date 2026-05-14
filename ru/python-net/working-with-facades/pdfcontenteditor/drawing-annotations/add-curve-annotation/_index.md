@@ -1,5 +1,6 @@
 ---
 title: Добавить аннотацию кривой
+linktitle: Добавить аннотацию кривой
 type: docs
 weight: 20
 url: /python-net/add-curve-annotation/

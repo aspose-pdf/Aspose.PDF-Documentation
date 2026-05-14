@@ -1,5 +1,6 @@
 ---
 title: Заполнить текстовые поля
+linktitle: Заполнить текстовые поля
 type: docs
 weight: 10
 url: /python-net/fill-text-fields/

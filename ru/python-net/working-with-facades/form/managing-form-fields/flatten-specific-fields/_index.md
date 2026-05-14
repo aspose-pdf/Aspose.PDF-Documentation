@@ -1,5 +1,6 @@
 ---
 title: Уплощение конкретных полей
+linktitle: Уплощение конкретных полей
 type: docs
 weight: 20
 url: /python-net/flatten-specific-fields/

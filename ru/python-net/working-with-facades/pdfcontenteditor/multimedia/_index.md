@@ -1,5 +1,6 @@
 ---
 title: Мультимедиа
+linktitle: Мультимедиа
 type: docs
 weight: 80
 url: /python-net/multimedia/

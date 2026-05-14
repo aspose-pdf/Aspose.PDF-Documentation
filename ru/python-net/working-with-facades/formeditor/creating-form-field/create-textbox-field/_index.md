@@ -1,5 +1,6 @@
 ---
 title: Создать поле TextBox
+linktitle: Создать поле TextBox
 type: docs
 weight: 60
 url: /python-net/create-textbox-field/

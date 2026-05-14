@@ -1,5 +1,6 @@
 ---
 title: Добавить вложение
+linktitle: Добавить вложение
 type: docs
 weight: 10
 url: /python-net/add-attachment/

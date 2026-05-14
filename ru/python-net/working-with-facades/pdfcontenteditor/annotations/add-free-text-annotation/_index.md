@@ -1,5 +1,6 @@
 ---
 title: Добавить свободные текстовые аннотации
+linktitle: Добавить свободные текстовые аннотации
 type: docs
 weight: 20
 url: /python-net/add-free-text-annotation/

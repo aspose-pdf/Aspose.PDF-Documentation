@@ -1,5 +1,6 @@
 ---
 title: Получить варианты радиокнопок
+linktitle: Получить варианты радиокнопок
 type: docs
 weight: 20
 url: /python-net/get-radio-button-options/

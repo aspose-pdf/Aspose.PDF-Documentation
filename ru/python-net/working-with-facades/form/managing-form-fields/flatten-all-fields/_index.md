@@ -1,5 +1,6 @@
 ---
 title: Сгладить все поля
+linktitle: Сгладить все поля
 type: docs
 weight: 10
 url: /python-net/flatten-all-fields/

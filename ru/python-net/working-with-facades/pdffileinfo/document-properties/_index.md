@@ -1,5 +1,6 @@
 ---
 title: Свойства документа
+linktitle: Свойства документа
 type: docs
 weight: 10
 url: /python-net/document-properties/

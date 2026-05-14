@@ -1,5 +1,6 @@
 ---
 title: Получить фасады полей
+linktitle: Получить фасады полей
 type: docs
 weight: 10
 url: /python-net/get-field-facades/

@@ -1,5 +1,6 @@
 ---
 title: Аннотации
+linktitle: Аннотации
 type: docs
 weight: 10
 url: /python-net/annotations/

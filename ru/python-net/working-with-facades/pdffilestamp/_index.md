@@ -1,5 +1,6 @@
 ---
 title: Класс PdfFileStamp
+linktitle: Класс PdfFileStamp
 type: docs
 weight: 155
 url: /python-net/pdffilestamp-class/

@@ -1,5 +1,6 @@
 ---
 title: Попробуйте объединить два PDF-файла
+linktitle: Попробуйте объединить два PDF-файла
 type: docs
 weight: 90
 url: /python-net/try-concatenate-two-files/

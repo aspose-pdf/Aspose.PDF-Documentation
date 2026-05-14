@@ -1,5 +1,6 @@
 ---
 title: Получить метаданные PDF
+linktitle: Получить метаданные PDF
 type: docs
 weight: 20
 url: /python-net/get-pdf-metadata/

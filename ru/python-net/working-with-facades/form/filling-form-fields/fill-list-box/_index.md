@@ -1,5 +1,6 @@
 ---
 title: Заполнить List Box
+linktitle: Заполнить List Box
 type: docs
 weight: 40
 url: /python-net/fill-list-box/

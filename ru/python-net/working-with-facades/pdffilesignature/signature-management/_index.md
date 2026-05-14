@@ -1,5 +1,6 @@
 ---
 title: Управление подписями
+linktitle: Управление подписями
 type: docs
 weight: 80
 url: /python-net/signature-management/

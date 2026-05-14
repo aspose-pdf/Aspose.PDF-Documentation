@@ -1,5 +1,6 @@
 ---
 title: Добавить нижний колонтитул в PDF
+linktitle: Добавить нижний колонтитул в PDF
 type: docs
 weight: 10
 url: /python-net/add-footer/

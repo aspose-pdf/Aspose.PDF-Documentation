@@ -1,5 +1,6 @@
 ---
 title: Управление правами использования
+linktitle: Управление правами использования
 type: docs
 weight: 100
 url: /python-net/usage-rights-management/

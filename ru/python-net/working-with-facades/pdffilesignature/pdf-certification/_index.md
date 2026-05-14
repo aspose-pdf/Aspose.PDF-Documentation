@@ -1,5 +1,6 @@
 ---
 title: Сертификация PDF
+linktitle: Сертификация PDF
 type: docs
 weight: 30
 url: /python-net/pdf-certification/

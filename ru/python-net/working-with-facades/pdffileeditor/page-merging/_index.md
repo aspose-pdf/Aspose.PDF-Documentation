@@ -1,5 +1,6 @@
 ---
 title: Объединить PDF-файлы
+linktitle: Объединить PDF-файлы
 type: docs
 weight: 40
 url: /python-net/page-merging/

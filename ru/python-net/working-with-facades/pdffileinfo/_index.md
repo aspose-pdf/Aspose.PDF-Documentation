@@ -1,5 +1,6 @@
 ---
 title: Класс PdfFileInfo
+linktitle: Класс PdfFileInfo
 type: docs
 weight: 110
 url: /python-net/pdffileinfo-class/

@@ -1,5 +1,6 @@
 ---
 title: Установить ограничение поля
+linktitle: Установить ограничение поля
 type: docs
 weight: 80
 url: /python-net/set-field-limit/

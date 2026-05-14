@@ -1,5 +1,6 @@
 ---
 title: Управление полями формы
+linktitle: Управление полями формы
 type: docs
 weight: 50
 url: /python-net/managing-form-fields/

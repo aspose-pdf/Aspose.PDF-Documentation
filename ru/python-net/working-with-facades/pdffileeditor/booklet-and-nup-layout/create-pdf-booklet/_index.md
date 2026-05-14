@@ -1,5 +1,6 @@
 ---
 title: Создать PDF‑буклет
+linktitle: Создать PDF‑буклет
 type: docs
 weight: 20
 url: /python-net/create-pdf-booklet/

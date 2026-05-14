@@ -1,5 +1,6 @@
 ---
 title: Создать резиновый штамп с файлом внешнего вида
+linktitle: Создать резиновый штамп с файлом внешнего вида
 type: docs
 weight: 20
 url: /python-net/create-rubber-stamp-with-appearance-file/

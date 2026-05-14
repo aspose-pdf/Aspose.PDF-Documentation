@@ -1,5 +1,6 @@
 ---
 title: Разделить PDF до конца
+linktitle: Разделить PDF до конца
 type: docs
 weight: 40
 url: /python-net/split-pdf-to-end/

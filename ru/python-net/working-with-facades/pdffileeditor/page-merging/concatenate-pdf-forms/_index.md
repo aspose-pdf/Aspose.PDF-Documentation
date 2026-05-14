@@ -1,5 +1,6 @@
 ---
 title: Объединить PDF‑формы с уникальным суффиксом
+linktitle: Объединить PDF‑формы с уникальным суффиксом
 type: docs
 weight: 50
 url: /python-net/concatenate-pdf-forms/

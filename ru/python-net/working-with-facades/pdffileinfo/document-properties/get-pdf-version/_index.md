@@ -1,5 +1,6 @@
 ---
 title: Получить версию PDF
+linktitle: Получить версию PDF
 type: docs
 weight: 20
 url: /python-net/get-pdf-version/

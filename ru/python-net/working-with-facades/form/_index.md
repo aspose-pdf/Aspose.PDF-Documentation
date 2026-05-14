@@ -1,5 +1,6 @@
 ---
 title: Класс Form
+linktitle: Класс Form
 type: docs
 weight: 140
 url: /python-net/form-class/

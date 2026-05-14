@@ -1,5 +1,6 @@
 ---
 title: Установить скрипт поля
+linktitle: Установить скрипт поля
 type: docs
 weight: 30
 url: /python-net/set-field-script/

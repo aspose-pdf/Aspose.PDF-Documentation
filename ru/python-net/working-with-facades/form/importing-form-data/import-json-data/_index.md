@@ -1,5 +1,6 @@
 ---
 title: Импортировать JSON-данные
+linktitle: Импортировать JSON-данные
 type: docs
 weight: 30
 url: /python-net/import-json-data/

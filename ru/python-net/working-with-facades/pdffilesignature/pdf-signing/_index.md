@@ -1,5 +1,6 @@
 ---
 title: Подписать PDF документы
+linktitle: Подписать PDF документы
 type: docs
 weight: 10
 url: /python-net/pdf-signing/

@@ -1,5 +1,6 @@
 ---
 title: Получить внешний вид поля
+linktitle: Получить внешний вид поля
 type: docs
 weight: 20
 url: /python-net/get-field-appearance/

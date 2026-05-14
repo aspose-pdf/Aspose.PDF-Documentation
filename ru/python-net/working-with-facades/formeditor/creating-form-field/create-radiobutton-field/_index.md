@@ -1,5 +1,6 @@
 ---
 title: Создать поле RadioButton
+linktitle: Создать поле RadioButton
 type: docs
 weight: 40
 url: /python-net/create-radiobutton-field/

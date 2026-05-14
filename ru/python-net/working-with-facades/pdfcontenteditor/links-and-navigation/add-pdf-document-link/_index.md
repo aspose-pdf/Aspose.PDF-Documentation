@@ -1,5 +1,6 @@
 ---
 title: Добавить ссылку на PDF‑документ
+linktitle: Добавить ссылку на PDF‑документ
 type: docs
 weight: 50
 url: /python-net/add-pdf-document-link/

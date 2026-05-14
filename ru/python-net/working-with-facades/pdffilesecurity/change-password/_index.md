@@ -1,5 +1,6 @@
 ---
 title: Изменить пароль PDF‑файла
+linktitle: Изменить пароль PDF‑файла
 type: docs
 weight: 10
 url: /python-net/change-password/

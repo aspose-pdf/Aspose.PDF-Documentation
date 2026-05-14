@@ -1,5 +1,6 @@
 ---
 title: Изменить параметры просмотра PDF
+linktitle: Изменить параметры просмотра PDF
 type: docs
 weight: 10
 url: /python-net/change-viewer-preferences/

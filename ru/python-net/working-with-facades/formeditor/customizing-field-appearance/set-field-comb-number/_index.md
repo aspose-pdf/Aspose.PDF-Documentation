@@ -1,5 +1,6 @@
 ---
 title: Установить количество ячеек поля
+linktitle: Установить количество ячеек поля
 type: docs
 weight: 70
 url: /python-net/set-field-comb-number/

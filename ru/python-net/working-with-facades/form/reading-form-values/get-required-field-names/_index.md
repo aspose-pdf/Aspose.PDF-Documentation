@@ -1,5 +1,6 @@
 ---
 title: Получить имена обязательных полей
+linktitle: Получить имена обязательных полей
 type: docs
 weight: 30
 url: /python-net/get-required-field-names/

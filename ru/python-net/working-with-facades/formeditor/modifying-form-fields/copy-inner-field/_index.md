@@ -1,5 +1,6 @@
 ---
 title: Скопировать внутреннее поле
+linktitle: Скопировать внутреннее поле
 type: docs
 weight: 20
 url: /python-net/copy-inner-field/

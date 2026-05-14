@@ -1,5 +1,6 @@
 ---
 title: Проверки целостности подписи
+linktitle: Проверки целостности подписи
 type: docs
 weight: 70
 url: /python-net/signature-integrity-checks/

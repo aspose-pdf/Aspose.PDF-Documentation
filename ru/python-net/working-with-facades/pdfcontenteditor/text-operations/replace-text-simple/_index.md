@@ -1,5 +1,6 @@
 ---
 title: Простая замена текста
+linktitle: Простая замена текста
 type: docs
 weight: 40
 url: /python-net/replace-text-simple/

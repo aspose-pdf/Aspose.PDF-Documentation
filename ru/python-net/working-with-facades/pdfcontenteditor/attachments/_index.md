@@ -1,5 +1,6 @@
 ---
 title: Вложения
+linktitle: Вложения
 type: docs
 weight: 20
 url: /python-net/attachments/

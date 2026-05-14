@@ -1,5 +1,6 @@
 ---
 title: Добавить аннотации разметки
+linktitle: Добавить аннотации разметки
 type: docs
 weight: 30
 url: /python-net/add-markup-annotation/

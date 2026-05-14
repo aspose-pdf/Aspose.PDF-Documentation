@@ -1,5 +1,6 @@
 ---
 title: Получить значения Rich Text
+linktitle: Получить значения Rich Text
 type: docs
 weight: 40
 url: /python-net/get-rich-text-values/

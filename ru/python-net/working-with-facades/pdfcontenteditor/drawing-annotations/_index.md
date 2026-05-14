@@ -1,5 +1,6 @@
 ---
 title: Рисование аннотаций
+linktitle: Рисование аннотаций
 type: docs
 weight: 50
 url: /python-net/drawing-annotations/

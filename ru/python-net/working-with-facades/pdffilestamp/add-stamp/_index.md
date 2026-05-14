@@ -1,5 +1,6 @@
 ---
 title: Добавить штамп в PDF
+linktitle: Добавить штамп в PDF
 type: docs
 weight: 40
 url: /python-net/add-stamp/

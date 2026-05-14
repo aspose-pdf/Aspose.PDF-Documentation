@@ -1,5 +1,6 @@
 ---
 title: Настройки просмотра
+linktitle: Настройки просмотра
 type: docs
 weight: 110
 url: /python-net/viewer-preferences/

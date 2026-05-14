@@ -1,5 +1,6 @@
 ---
 title: Заменить текст на странице
+linktitle: Заменить текст на странице
 type: docs
 weight: 10
 url: /python-net/replace-text-on-page/

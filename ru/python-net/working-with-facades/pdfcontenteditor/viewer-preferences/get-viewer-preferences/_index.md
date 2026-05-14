@@ -1,5 +1,6 @@
 ---
 title: Получить настройки просмотра PDF
+linktitle: Получить настройки просмотра PDF
 type: docs
 weight: 20
 url: /python-net/get-viewer-preferences/

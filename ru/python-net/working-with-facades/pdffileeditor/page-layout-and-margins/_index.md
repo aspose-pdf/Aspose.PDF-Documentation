@@ -1,5 +1,6 @@
 ---
 title: Разметка страниц и поля
+linktitle: Разметка страниц и поля
 type: docs
 weight: 20
 url: /python-net/page-layout-and-margins/

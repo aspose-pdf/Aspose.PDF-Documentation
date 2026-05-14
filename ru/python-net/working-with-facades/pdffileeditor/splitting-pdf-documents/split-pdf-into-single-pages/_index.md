@@ -1,5 +1,6 @@
 ---
 title: Разделить PDF на отдельные страницы
+linktitle: Разделить PDF на отдельные страницы
 type: docs
 weight: 30
 url: /python-net/split-pdf-into-single-pages/

@@ -1,5 +1,6 @@
 ---
 title: Удалить действие при открытии
+linktitle: Удалить действие при открытии
 type: docs
 weight: 30
 url: /python-net/remove-open-action/

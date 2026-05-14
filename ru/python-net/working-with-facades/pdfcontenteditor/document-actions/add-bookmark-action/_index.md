@@ -1,5 +1,6 @@
 ---
 title: Добавить действие закладки
+linktitle: Добавить действие закладки
 type: docs
 weight: 10
 url: /python-net/add-bookmark-action/

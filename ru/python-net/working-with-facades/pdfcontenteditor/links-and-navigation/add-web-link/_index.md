@@ -1,5 +1,6 @@
 ---
 title: Добавить веб‑ссылку
+linktitle: Добавить веб‑ссылку
 type: docs
 weight: 60
 url: /python-net/add-web-link/

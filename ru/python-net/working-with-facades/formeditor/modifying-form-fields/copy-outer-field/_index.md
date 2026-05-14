@@ -1,5 +1,6 @@
 ---
 title: Копировать внешнее поле
+linktitle: Копировать внешнее поле
 type: docs
 weight: 30
 url: /python-net/copy-outer-field/

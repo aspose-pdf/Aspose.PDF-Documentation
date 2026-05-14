@@ -1,5 +1,6 @@
 ---
 title: Настройка внешнего вида полей
+linktitle: Настройка внешнего вида полей
 type: docs
 weight: 30
 url: /python-net/customizing-field-appearance/

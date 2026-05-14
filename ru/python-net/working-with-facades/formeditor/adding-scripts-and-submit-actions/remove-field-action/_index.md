@@ -1,5 +1,6 @@
 ---
 title: Удалить действие поля
+linktitle: Удалить действие поля
 type: docs
 weight: 20
 url: /python-net/remove-field-action/

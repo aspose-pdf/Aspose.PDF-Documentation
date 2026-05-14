@@ -1,5 +1,6 @@
 ---
 title: Добавить аннотацию вложения файла
+linktitle: Добавить аннотацию вложения файла
 type: docs
 weight: 30
 url: /python-net/add-file-attachment-annotation/

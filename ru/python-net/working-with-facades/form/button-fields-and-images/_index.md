@@ -1,5 +1,6 @@
 ---
 title: Поля кнопок и изображения
+linktitle: Поля кнопок и изображения
 type: docs
 weight: 40
 url: /python-net/button-fields-and-images/

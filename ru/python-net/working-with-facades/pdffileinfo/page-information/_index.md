@@ -1,5 +1,6 @@
 ---
 title: Информация о странице
+linktitle: Информация о странице
 type: docs
 weight: 20
 url: /python-net/page-information/

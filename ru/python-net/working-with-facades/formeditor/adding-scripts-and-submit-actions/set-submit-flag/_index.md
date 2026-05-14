@@ -1,5 +1,6 @@
 ---
 title: Установить флаг отправки
+linktitle: Установить флаг отправки
 type: docs
 weight: 50
 url: /python-net/set-submit-flag/

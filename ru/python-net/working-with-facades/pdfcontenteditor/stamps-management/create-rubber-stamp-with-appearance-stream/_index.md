@@ -1,5 +1,6 @@
 ---
 title: Создать резиновую печать с потоком отображения
+linktitle: Создать резиновую печать с потоком отображения
 type: docs
 weight: 30
 url: /python-net/create-rubber-stamp-with-appearance-stream/

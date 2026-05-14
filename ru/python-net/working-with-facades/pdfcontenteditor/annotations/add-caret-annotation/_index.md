@@ -1,5 +1,6 @@
 ---
 title: Добавить аннотации в виде курсора
+linktitle: Добавить аннотации в виде курсора
 type: docs
 weight: 10
 url: /python-net/add-caret-annotation/

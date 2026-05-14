@@ -1,5 +1,6 @@
 ---
 title: Удалить вложения
+linktitle: Удалить вложения
 type: docs
 weight: 50
 url: /python-net/remove-attachments/
