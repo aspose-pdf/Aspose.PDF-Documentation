@@ -36,7 +36,7 @@ def remove_attachment(infile, outfile):
         document.save(outfile)
 ```
 
-## Удаление конкретное вложение по имени
+## Удаление конкретного вложения по имени
 
 Если вам нужно удалить только одно вложение и оставить остальные, используйте [delete_by_key()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/delete_by_key/) метод и передайте имя вложения.
 

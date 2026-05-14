@@ -48,7 +48,7 @@ def add_line(outfile: str):
 
 ![Добавить линию](add_line.png)
 
-## Как добавить пунктирно‑штриховую линию в ваш PDF‑документ
+## Добавление пунктирно‑штриховой линии в PDF‑документ
 
 ```python
 import aspose.pdf as ap

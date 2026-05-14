@@ -139,7 +139,7 @@ def set_toc_levels(input_pdf, output_pdf):
     document.save(output_pdf)
 ```
 
-### Скрыть номера страниц в оглавлении
+### Скрытие номеров страниц в оглавлении
 
 В случае, если вы не хотите отображать номера страниц вместе с заголовками в TOC, вы можете использовать [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) свойство [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) Class как false. Пожалуйста, проверьте следующий фрагмент кода, чтобы скрыть номера страниц в оглавлении:
 

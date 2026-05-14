@@ -59,7 +59,7 @@ for text_fragment in text_fragment_absorber.text_fragments:
     page.annotations.add(redaction_annotation, True)
 ```
 
-### Сохранение помеченный PDF
+### Сохранение помеченного PDF
 
 ```python
 document.save(outfile)
@@ -118,7 +118,7 @@ for redaction_annotation in redaction_annotations:
         cast(ap.annotations.RedactionAnnotation, redaction_annotation).redact()
 ```
 
-### Сохранение отредактированный PDF
+### Сохранение отредактированного PDF
 
 ```python
 document.save(outfile)

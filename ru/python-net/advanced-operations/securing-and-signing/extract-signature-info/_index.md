@@ -111,7 +111,7 @@ def extract_certificate_try_extract_certificate_method(infile: str) -> None:
                     print("The certificate extraction succeeded")
 ```
 
-## Проверить внешние цифровые подписи
+## Проверка внешних цифровых подписей
 
 Чтобы подтвердить, что документ не был изменён после подписания, проверьте каждую внешнюю подпись, используя `PdfFileSignature.verify_signature()`. Пример ниже вызывает исключение для любой подписи, которая не проходит проверку:
 

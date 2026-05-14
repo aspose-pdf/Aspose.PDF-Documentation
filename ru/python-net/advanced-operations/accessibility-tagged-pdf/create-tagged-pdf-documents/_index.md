@@ -205,7 +205,7 @@ def illustrate_structure_elements(imagefile, outfile):
         document.save(outfile)
 ```
 
-## Проверить Tagged PDF
+## Проверка Tagged PDF
 
 Aspose.PDF for Python via .NET предоставляет возможность проверять PDF/UA Tagged PDF Document. Метод ‘validate_tagged_pdf’ проверяет PDF‑документы в соответствии со стандартом PDF/UA-1, который является частью спецификации ISO 14289 для доступных PDF‑документов. Это гарантирует, что PDF‑файлы доступны пользователям с ограниченными возможностями и вспомогательными технологиями.
 
