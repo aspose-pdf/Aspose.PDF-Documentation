@@ -3,7 +3,7 @@ title: Импортировать данные XFDF
 linktitle: Импортировать данные XFDF
 type: docs
 weight: 20
-url: /python-net/import-xfdf-data/
+url: /ru/python-net/import-xfdf-data/
 description: В этом примере демонстрируется, как импортировать данные формы из файла XFDF в форму PDF с использованием Aspose.PDF for Python via .NET. Показано, как привязать документ PDF, читать XML‑основанные данные XFDF через файловый поток и автоматически заполнять соответствующие поля формы. Импорт данных XFDF обеспечивает эффективный обмен данными форм и поддерживает автоматизированные рабочие процессы с документами, которые опираются на структурированные форматы XML.
 lastmod: "2026-02-19"
 ---
@@ -45,3 +45,4 @@ def import_data_from_xfdf(infile, datafile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

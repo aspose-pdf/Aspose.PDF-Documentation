@@ -3,7 +3,7 @@ title: Получить настройки просмотра PDF
 linktitle: Получить настройки просмотра PDF
 type: docs
 weight: 20
-url: /python-net/get-viewer-preferences/
+url: /ru/python-net/get-viewer-preferences/
 description: Как программно считывать и изменять настройки просмотра PDF с использованием Aspose.PDF for Python
 lastmod: "2026-03-20"
 sitemap:
@@ -44,3 +44,4 @@ def get_viewer_preferences(infile):
         print("PageModeUseOutlines is enabled")
     print(f"Current viewer preference: {viewer_preference}")
 ```
+

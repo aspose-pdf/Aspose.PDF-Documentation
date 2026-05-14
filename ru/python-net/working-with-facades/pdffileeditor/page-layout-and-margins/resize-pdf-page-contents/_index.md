@@ -3,7 +3,7 @@ title: Изменить размер содержимого страниц PDF
 linktitle: Изменить размер содержимого страниц PDF
 type: docs
 weight: 30
-url: /python-net/resize-pdf-page-contents/
+url: /ru/python-net/resize-pdf-page-contents/
 description: Измените размер содержимого определённых страниц PDF с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -49,3 +49,4 @@ def resize_pdf_page_contents(infile, outfile):
     ):
         raise Exception("Failed to resize PDF page contents.")
 ```
+

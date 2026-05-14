@@ -3,7 +3,7 @@ title: Разделить PDF на отдельные страницы
 linktitle: Разделить PDF на отдельные страницы
 type: docs
 weight: 30
-url: /python-net/split-pdf-into-single-pages/
+url: /ru/python-net/split-pdf-into-single-pages/
 description: Разделить документ PDF на отдельные одностраничные PDF с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -36,3 +36,4 @@ def split_pdf_into_single_pages(input_pdf_path, output_pdf_path):
     pdf_file_editor = pdf_facades.PdfFileEditor()
     pdf_file_editor.split_to_pages(input_pdf_path, output_pdf_path)
 ```
+

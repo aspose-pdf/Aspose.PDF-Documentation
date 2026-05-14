@@ -3,7 +3,7 @@ title: Добавить аннотацию линий
 linktitle: Добавить аннотацию линий
 type: docs
 weight: 30
-url: /python-net/add-line-annotation/
+url: /ru/python-net/add-line-annotation/
 description: В этом примере привязывается входной PDF, рисуется красная аннотация с квадратными окончаниями линии и сохраняется изменённый PDF.
 lastmod: "2026-03-20"
 sitemap:
@@ -61,3 +61,4 @@ def add_line_annotation(infile, outfile):
     # Save output PDF file
     content_editor.save(outfile)
 ```
+

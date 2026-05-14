@@ -3,7 +3,7 @@ title: Добавить штамп в PDF
 linktitle: Добавить штамп в PDF
 type: docs
 weight: 40
-url: /python-net/add-stamp/
+url: /ru/python-net/add-stamp/
 description: Узнайте, как добавить штамп на страницы PDF, используя PdfFileStamp в Python.
 lastmod: "2026-04-13"
 TechArticle: true
@@ -45,3 +45,4 @@ def add_stamp_to_pdf(infile: str, image_file: str, outfile: str) -> None:
     finally:
         pdf_stamper.close()
 ```
+

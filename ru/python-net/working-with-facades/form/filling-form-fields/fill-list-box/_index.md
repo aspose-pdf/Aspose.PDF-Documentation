@@ -3,7 +3,7 @@ title: Заполнить List Box
 linktitle: Заполнить List Box
 type: docs
 weight: 40
-url: /python-net/fill-list-box/
+url: /ru/python-net/fill-list-box/
 description: В этом примере демонстрируется, как программно заполнять поля списка и множественного выбора в PDF‑форме с использованием Aspose.PDF for Python via .NET. Показано, как привязать PDF‑документ, выбрать значения в форме поля списка и сохранить обновлённый файл.
 lastmod: "2026-02-19"
 ---
@@ -42,3 +42,4 @@ def fill_list_box_fields(infile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

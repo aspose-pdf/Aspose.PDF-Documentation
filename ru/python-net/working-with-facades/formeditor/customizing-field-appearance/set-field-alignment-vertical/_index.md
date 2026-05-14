@@ -3,7 +3,7 @@ title: Установить вертикальное выравнивание п
 linktitle: Установить вертикальное выравнивание поля
 type: docs
 weight: 40
-url: /python-net/set-field-alignment-vertical/
+url: /ru/python-net/set-field-alignment-vertical/
 description: Этот пример демонстрирует, как установить вертикальное выравнивание поля формы в PDF‑документе с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -55,3 +55,4 @@ def set_field_alignment_vertical(infile, outfile):
             "Failed to set field vertical alignment. Field may not support vertical alignment."
         )
 ```
+

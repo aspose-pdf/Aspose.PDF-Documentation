@@ -3,7 +3,7 @@ title: Установить количество ячеек поля
 linktitle: Установить количество ячеек поля
 type: docs
 weight: 70
-url: /python-net/set-field-comb-number/
+url: /ru/python-net/set-field-comb-number/
 description: В этом примере демонстрируется, как установить количество ячеек (comb number) для поля формы PDF с использованием Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -49,3 +49,4 @@ def set_field_comb_number(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+

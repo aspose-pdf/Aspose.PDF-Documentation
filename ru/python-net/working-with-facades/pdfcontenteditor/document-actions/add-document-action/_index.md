@@ -3,7 +3,7 @@ title: Добавить действие Document
 linktitle: Добавить действие Document
 type: docs
 weight: 20
-url: /python-net/add-document-action/
+url: /ru/python-net/add-document-action/
 description: В этом примере добавляется предупреждающее сообщение JavaScript, которое появляется при открытии PDF. Скрипт привязан к событию открытия документа и автоматически выполняется в поддерживаемых PDF‑просмотрщиках.
 lastmod: "2026-03-20"
 sitemap:
@@ -45,3 +45,4 @@ def add_document_action(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

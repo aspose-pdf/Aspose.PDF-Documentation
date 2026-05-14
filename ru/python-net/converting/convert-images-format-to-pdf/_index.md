@@ -3,13 +3,13 @@ title: Конвертировать форматы изображений в PDF
 linktitle: Конвертировать изображения в PDF
 type: docs
 weight: 60
-url: /python-net/convert-images-format-to-pdf/
+url: /ru/python-net/convert-images-format-to-pdf/
 lastmod: "2026-04-14"
 description: Узнайте, как конвертировать BMP, CGM, DICOM, PNG, TIFF, EMF, SVG и другие форматы изображений в PDF на Python с помощью Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Как конвертировать изображения в PDF на Python
 Abstract: В этой статье представлено полное руководство по конвертации различных форматов изображений в PDF с использованием Python, в частности с применением библиотеки Aspose.PDF for Python via .NET. В статье рассматривается ряд форматов изображений, включая BMP, CGM, DICOM, EMF, GIF, PNG, SVG и TIFF. Каждый раздел подробно описывает шаги, необходимые для выполнения конвертации, предоставляя фрагменты кода для иллюстрации процесса. Например, преобразование BMP в PDF включает создание нового PDF Document, определение размещения изображения, вставку изображения и сохранение документа. Аналогично для форматов, таких как CGM, DICOM и других, описываются специфические параметры загрузки и этапы обработки. Статья также подчёркивает преимущества использования Aspose.PDF для подобных задач, такие как поддержка различных методов кодирования и возможность обработки как однокадровых, так и многокадровых изображений.
 ---
@@ -357,3 +357,4 @@ def convert_JPEG_to_PDF(infile, outfile):
     document.save(outfile)
     print(infile + " converted into " + outfile)
 ```
+

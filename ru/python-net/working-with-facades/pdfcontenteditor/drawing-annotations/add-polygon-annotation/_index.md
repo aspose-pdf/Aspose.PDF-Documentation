@@ -3,7 +3,7 @@ title: Добавить аннотацию полигога
 linktitle: Добавить аннотацию полигога
 type: docs
 weight: 40
-url: /python-net/add-polygon-annotation/
+url: /ru/python-net/add-polygon-annotation/
 description: В этом примере привязывается входной PDF, рисуется сплошной полигон на первой странице и сохраняется изменённый документ с аннотацией.
 lastmod: "2026-03-20"
 sitemap:
@@ -53,3 +53,4 @@ def add_polygon_annotation(infile, outfile):
     # Save output PDF file
     content_editor.save(outfile)
 ```
+

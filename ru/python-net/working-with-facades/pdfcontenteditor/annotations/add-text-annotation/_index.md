@@ -3,7 +3,7 @@ title: Добавить текстовые аннотации
 linktitle: Добавить текстовые аннотации
 type: docs
 weight: 50
-url: /python-net/add-text-annotation/
+url: /ru/python-net/add-text-annotation/
 description: Добавьте текстовые аннотации в PDF‑документ с помощью класса PdfContentEditor в Aspose.PDF for Python via .NET.
 lastmod: "2026-03-20"
 sitemap:
@@ -60,3 +60,4 @@ def add_text_annotation(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

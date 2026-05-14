@@ -3,7 +3,7 @@ title: Расшифровать PDF-файл
 linktitle: Расшифровать PDF-файл
 type: docs
 weight: 20
-url: /python-net/decrypt-pdf-file/
+url: /ru/python-net/decrypt-pdf-file/
 description: Это руководство объясняет, как удалить ограничения, такие как печать, копирование и редактирование, чтобы получить полный доступ к вашему PDF‑документу.
 lastmod: "2026-03-18"
 sitemap:
@@ -90,3 +90,4 @@ def try_decrypt_pdf_without_exception(infile, outfile):
     else:
         print("Decryption failed. Check password or document security.")
 ```
+

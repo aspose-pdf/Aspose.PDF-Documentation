@@ -3,7 +3,7 @@ title: Переместить поле
 linktitle: Переместить поле
 type: docs
 weight: 50
-url: /python-net/move-field/
+url: /ru/python-net/move-field/
 description: Переместить существующее поле формы в другое место в PDF‑документе.
 lastmod: "2026-03-05"
 sitemap:
@@ -46,3 +46,4 @@ def move_field(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+

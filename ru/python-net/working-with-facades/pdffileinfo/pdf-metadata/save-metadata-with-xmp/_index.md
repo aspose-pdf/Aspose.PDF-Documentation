@@ -3,7 +3,7 @@ title: Сохранить метаданные с помощью XMP
 linktitle: Сохранить метаданные с помощью XMP
 type: docs
 weight: 30
-url: /python-net/save-metadata-with-xmp/
+url: /ru/python-net/save-metadata-with-xmp/
 description: Сохранить метаданные PDF, используя XMP с Aspose.PDF for Python via .NET
 lastmod: "2026-03-05"
 draft: false
@@ -48,3 +48,4 @@ def save_info_with_xmp(infile, outfile):
     # Save updated metadata
     pdf_info.save_new_info_with_xmp(outfile)
 ```
+

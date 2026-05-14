@@ -3,7 +3,7 @@ title: Операции с текстом
 linktitle: Операции с текстом
 type: docs
 weight: 100
-url: /python-net/text-operations/
+url: /ru/python-net/text-operations/
 description:
 lastmod: "2026-03-20"
 sitemap:
@@ -16,3 +16,4 @@ sitemap:
 - [Заменить текст на странице](/pdf/ru/python-net/replace-text-on-page/)
 - [Заменить текст с использованием state](/pdf/ru/python-net/replace-text-with-state/)
 - [Заменить текст на странице с помощью state](/pdf/ru/python-net/replace-text-on-page-with-state/)
+

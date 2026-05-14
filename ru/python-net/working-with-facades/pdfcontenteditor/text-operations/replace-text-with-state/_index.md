@@ -3,7 +3,7 @@ title: Заменить текст с использованием state
 linktitle: Заменить текст с использованием state
 type: docs
 weight: 50
-url: /python-net/replace-text-with-state/
+url: /ru/python-net/replace-text-with-state/
 description: В этом примере все вхождения "software" заменяются на "SOFTWARE" и форматируются синим цветом размером шрифта 14.
 lastmod: "2026-03-20"
 sitemap:
@@ -52,3 +52,4 @@ def replace_text_with_state(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

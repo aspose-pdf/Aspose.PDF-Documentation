@@ -3,7 +3,7 @@ title: Экспорт в XFDF
 linktitle: Экспорт в XFDF
 type: docs
 weight: 20
-url: /python-net/export-to-xfdf/
+url: /ru/python-net/export-to-xfdf/
 description: В этом примере показано, как экспортировать данные полей формы PDF в файл XFDF (XML Forms Data Format) с использованием Aspose.PDF for Python via .NET. Он демонстрирует, как загрузить форму PDF, получить доступ к её полям через фасад Form и сохранить извлечённые значения в поток XFDF.
 lastmod: "2026-02-19"
 ---
@@ -41,3 +41,4 @@ def export_pdf_form_to_xfdf(infile, outfile):
         # Export form data to XFDF file
         pdf_form.export_xfdf(xfdf_output_stream)
 ```
+

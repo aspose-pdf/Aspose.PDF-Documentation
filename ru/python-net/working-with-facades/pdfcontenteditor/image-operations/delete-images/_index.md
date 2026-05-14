@@ -3,7 +3,7 @@ title: Удалить изображения из PDF
 linktitle: Удалить изображения из PDF
 type: docs
 weight: 20
-url: /python-net/delete-images/
+url: /ru/python-net/delete-images/
 description:
 lastmod: "2026-03-20"
 sitemap:
@@ -43,3 +43,4 @@ def delete_images(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

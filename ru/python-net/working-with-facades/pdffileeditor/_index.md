@@ -3,7 +3,7 @@ title: Класс PdfFileEditor
 linktitle: Класс PdfFileEditor
 type: docs
 weight: 10
-url: /python-net/pdffileeditor-class/
+url: /ru/python-net/pdffileeditor-class/
 description: Изучите, как редактировать и управлять PDF‑файлами с помощью класса PDFFileEditor на Python с Aspose.PDF.
 lastmod: "2026-01-05"
 sitemap:
@@ -29,3 +29,4 @@ Abstract: Узнайте, как использовать класс PdfFileEdit
 - [Объединить или конкатенировать PDF‑файлы](/pdf/ru/python-net/page-merging/)
 - [Разделить PDF документы](/pdf/ru/python-net/splitting-pdf-documents/)
 - [Брошюра и N-Up макет](/pdf/ru/python-net/booklet-and-nup-layout/)
+

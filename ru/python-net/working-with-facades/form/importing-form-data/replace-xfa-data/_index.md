@@ -3,7 +3,7 @@ title: Заменить данные XFA
 linktitle: Заменить данные XFA
 type: docs
 weight: 50
-url: /python-net/replace-xfa-data/
+url: /ru/python-net/replace-xfa-data/
 description: В этом примере показано, как заменить существующие данные формы XFA в PDF с использованием Aspose.PDF for Python via .NET. Он демонстрирует, как привязать PDF‑документ на основе XFA, загрузить новые данные из внешнего файла XFA и программно обновить содержимое формы.
 lastmod: "2026-02-19"
 ---
@@ -45,3 +45,4 @@ def replace_xfa_data(infile, datafile, outfile):
     # Save updated PDF
     form.save(outfile)
 ```
+

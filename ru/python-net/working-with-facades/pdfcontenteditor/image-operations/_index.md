@@ -3,7 +3,7 @@ title: Операции с изображениями
 linktitle: Операции с изображениями
 type: docs
 weight: 60
-url: /python-net/image-operations/
+url: /ru/python-net/image-operations/
 description:
 lastmod: "2026-03-20"
 sitemap:

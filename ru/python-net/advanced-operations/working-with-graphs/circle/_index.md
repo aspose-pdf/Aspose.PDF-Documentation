@@ -3,7 +3,7 @@ title: Добавить круглые формы в PDF на Python
 linktitle: Добавить круг
 type: docs
 weight: 20
-url: /python-net/add-circle/
+url: /ru/python-net/add-circle/
 description: Узнайте, как рисовать и заполнять формы кругов в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:

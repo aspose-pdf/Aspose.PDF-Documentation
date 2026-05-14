@@ -3,7 +3,7 @@ title: Управление штампом по идентификатору
 linktitle: Управление штампом по идентификатору
 type: docs
 weight: 95
-url: /python-net/manage-stamp-by-id/
+url: /ru/python-net/manage-stamp-by-id/
 description: Как манипулировать аннотациями резиновых штампов в PDF по их уникальным ID с использованием Aspose.PDF for Python
 lastmod: "2026-03-20"
 sitemap:
@@ -69,3 +69,4 @@ def manage_stamp_by_id(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

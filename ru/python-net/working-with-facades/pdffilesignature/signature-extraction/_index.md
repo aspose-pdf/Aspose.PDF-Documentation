@@ -3,7 +3,7 @@ title: Извлечение подписи
 linktitle: Извлечение подписи
 type: docs
 weight: 50
-url: /python-net/signature-extraction/
+url: /ru/python-net/signature-extraction/
 description: Узнайте, как извлечь изображение подписи и сертификат подписи из подписанного PDF, используя PdfFileSignature в Python.
 lastmod: "2026-04-02"
 sitemap:
@@ -60,4 +60,5 @@ def extract_signature_certificate(infile, outfile):
     finally:
         pdf_signature.close()
 ```
+
 

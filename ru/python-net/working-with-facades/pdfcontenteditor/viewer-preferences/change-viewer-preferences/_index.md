@@ -3,7 +3,7 @@ title: Изменить параметры просмотра PDF
 linktitle: Изменить параметры просмотра PDF
 type: docs
 weight: 10
-url: /python-net/change-viewer-preferences/
+url: /ru/python-net/change-viewer-preferences/
 description: Этот модуль демонстрирует, как настроить параметры просмотра PDF‑документа с помощью Aspose.PDF for Python.
 lastmod: "2026-03-20"
 sitemap:
@@ -74,3 +74,4 @@ def change_viewer_preferences(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

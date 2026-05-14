@@ -3,7 +3,7 @@ title: Извлечение ссылок
 linktitle: Извлечение ссылок
 type: docs
 weight: 70
-url: /python-net/extract-links/
+url: /ru/python-net/extract-links/
 description: В этом примере привязывается входной PDF, извлекаются все ссылки и выводятся их координаты и URI (если доступны).
 lastmod: "2026-03-20"
 sitemap:
@@ -59,3 +59,4 @@ def extract_links(infile):
     if count == 0:
         print("No links found")
 ```
+

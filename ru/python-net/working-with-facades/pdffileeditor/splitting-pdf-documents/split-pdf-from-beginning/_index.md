@@ -3,7 +3,7 @@ title: Разделить PDF с начала
 linktitle: Разделить PDF с начала
 type: docs
 weight: 10
-url: /python-net/split-pdf-from-beginning/
+url: /ru/python-net/split-pdf-from-beginning/
 description: Разделите документ PDF с начала, используя Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -36,3 +36,4 @@ def split_pdf_from_beginning(input_pdf_path, output_pdf_path):
     pdf_file_editor = pdf_facades.PdfFileEditor()
     pdf_file_editor.split_from_first(input_pdf_path, 3, output_pdf_path)
 ```
+

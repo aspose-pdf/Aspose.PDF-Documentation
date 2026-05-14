@@ -3,7 +3,7 @@ title: Создать кнопку отправки
 linktitle: Создать кнопку отправки
 type: docs
 weight: 50
-url: /python-net/create-submit-button/
+url: /ru/python-net/create-submit-button/
 description: Узнайте, как программно добавить кнопку отправки в документ PDF с помощью Aspose.PDF for Python. Этот учебный материал демонстрирует, как создать кнопку, которая отправляет данные формы на указанный URL, и сохранить обновлённый PDF.
 lastmod: "2026-03-05"
 sitemap:
@@ -53,3 +53,4 @@ def create_submit_button(infile, outfile):
     # Save updated PDF document with form fields
     pdf_form_editor.save(outfile)
 ```
+

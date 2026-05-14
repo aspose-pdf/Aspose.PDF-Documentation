@@ -3,7 +3,7 @@ title: Класс Stamp
 linktitle: Класс Stamp
 type: docs
 weight: 150
-url: /python-net/stamp-class/
+url: /ru/python-net/stamp-class/
 description: Узнайте, как работать с классом Stamp, чтобы добавлять штампы изображений, PDF и текстовые штампы в PDF‑документы на Python.
 lastmod: "2026-04-13"
 sitemap:
@@ -227,3 +227,4 @@ def add_background_image_stamp(infile: str, image_file: str, outfile: str) -> No
 - [Работа с фасадами PDF в Python](/pdf/ru/python-net/working-with-facades/)
 - [Добавьте заголовки, нижние колонтитулы и штампы с помощью PdfFileStamp](/pdf/ru/python-net/pdffilestamp-class/)
 - [Добавьте штамп страницы в PDF‑файлы с помощью Python](/pdf/ru/python-net/add-stamp/)
+

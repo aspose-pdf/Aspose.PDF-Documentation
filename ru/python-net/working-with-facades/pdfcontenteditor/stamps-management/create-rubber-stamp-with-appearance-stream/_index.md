@@ -3,7 +3,7 @@ title: Создать резиновую печать с потоком отоб
 linktitle: Создать резиновую печать с потоком отображения
 type: docs
 weight: 30
-url: /python-net/create-rubber-stamp-with-appearance-stream/
+url: /ru/python-net/create-rubber-stamp-with-appearance-stream/
 description: В этом примере загружается PDF, на странице 1 создаётся резиновая печать, использующая файл изображения для её отображения, и сохраняется изменённый документ. ✨
 lastmod: "2026-03-20"
 sitemap:
@@ -51,3 +51,4 @@ def create_rubber_stamp_with_appearance_file(infile, image_file, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```    
+

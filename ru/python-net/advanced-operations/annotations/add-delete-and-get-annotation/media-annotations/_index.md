@@ -9,7 +9,7 @@ lastmod: "2026-04-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Работайте с мультимедийными и rich media аннотациями PDF в Python.
 Abstract: В этой статье объясняется, как создавать и управлять медиа‑аннотациями в PDF‑документах с помощью Aspose.PDF for Python via .NET. В ней рассматриваются аннотации звука, 3D‑аннотации, аннотации экрана, аннотации rich media, а также методы перечисления или удаления мультимедийных аннотаций со страницы PDF.
 ---

@@ -3,7 +3,7 @@ title: Создать поле ComboBox
 linktitle: Создать поле ComboBox
 type: docs
 weight: 20
-url: /python-net/create-combobox-field/
+url: /ru/python-net/create-combobox-field/
 description: Проверьте, как программно добавить поле ComboBox (выпадающий список) в документ PDF с помощью Aspose.PDF for Python. Этот пример демонстрирует, как вставить поле ComboBox, добавить выбираемые элементы и сохранить обновлённый файл PDF.
 lastmod: "2026-03-05"
 sitemap:
@@ -48,3 +48,4 @@ def create_combobox_field(infile, outfile):
     # Save updated PDF document with form fields
     pdf_form_editor.save(outfile)
 ```
+

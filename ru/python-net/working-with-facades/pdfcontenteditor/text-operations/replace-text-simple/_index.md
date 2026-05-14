@@ -3,7 +3,7 @@ title: Простая замена текста
 linktitle: Простая замена текста
 type: docs
 weight: 40
-url: /python-net/replace-text-simple/
+url: /ru/python-net/replace-text-simple/
 description: В этом примере все вхождения "33" заменяются на "XXXIII " во всём документе. Это демонстрирует простую замену строк без пользовательского форматирования или регулярных выражений.
 lastmod: "2026-03-20"
 sitemap:
@@ -46,3 +46,4 @@ def replace_text_simple(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

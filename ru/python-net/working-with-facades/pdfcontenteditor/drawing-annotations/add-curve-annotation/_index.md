@@ -3,7 +3,7 @@ title: Добавить аннотацию кривой
 linktitle: Добавить аннотацию кривой
 type: docs
 weight: 20
-url: /python-net/add-curve-annotation/
+url: /ru/python-net/add-curve-annotation/
 description: В этом примере привязывается входной PDF, рисуется пунктирная кривая на первой странице и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -54,3 +54,4 @@ def add_curve_annotation(infile, outfile):
     # Save output PDF file
     content_editor.save(outfile)
 ```
+

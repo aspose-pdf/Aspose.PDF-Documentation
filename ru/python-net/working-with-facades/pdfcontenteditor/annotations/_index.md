@@ -3,7 +3,7 @@ title: Аннотации
 linktitle: Аннотации
 type: docs
 weight: 10
-url: /python-net/annotations/
+url: /ru/python-net/annotations/
 description:
 lastmod: "2026-03-20"
 sitemap:
@@ -16,3 +16,4 @@ sitemap:
 - [Добавить аннотации разметки](/pdf/ru/python-net/add-markup-annotation/)
 - [Добавить всплывающие аннотации](/pdf/ru/python-net/add-popup-annotation/)
 - [Добавить аннотацию в виде курсора](/pdf/ru/python-net/add-caret-annotation/)
+

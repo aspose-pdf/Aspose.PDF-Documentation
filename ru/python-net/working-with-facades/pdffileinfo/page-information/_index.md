@@ -3,7 +3,7 @@ title: Информация о странице
 linktitle: Информация о странице
 type: docs
 weight: 20
-url: /python-net/page-information/
+url: /ru/python-net/page-information/
 description: В этой статье объясняется, как извлечь ключевые сведения о макете и позиционировании из PDF‑страниц с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 draft: false
@@ -17,3 +17,4 @@ Abstract: PDF‑страницы могут различаться по разм
 
 - [Получить информацию о странице](/pdf/ru/python-net/get-page-info/)
 - [Получить смещение страницы](/pdf/ru/python-net/get-page-offset/)
+

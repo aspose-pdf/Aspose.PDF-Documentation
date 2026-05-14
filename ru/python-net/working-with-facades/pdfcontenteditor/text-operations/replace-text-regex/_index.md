@@ -3,7 +3,7 @@ title: Замена текста с использованием RegEx
 linktitle: Замена текста с использованием RegEx
 type: docs
 weight: 30
-url: /python-net/replace-text-regex/
+url: /ru/python-net/replace-text-regex/
 description: В этом примере все четырёхзначные числа в документе заменяются плейсхолдером "[NUMBER]". Это полезно для маскирования конфиденциальных данных, нормализации содержимого или анонимизации документов.
 lastmod: "2026-03-20"
 sitemap:
@@ -47,3 +47,4 @@ def replace_text_regex(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

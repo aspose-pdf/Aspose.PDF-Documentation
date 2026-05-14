@@ -3,7 +3,7 @@ title: Получить фасады полей
 linktitle: Получить фасады полей
 type: docs
 weight: 10
-url: /python-net/get-field-facades/
+url: /ru/python-net/get-field-facades/
 description: В этом примере демонстрируется, как считать значения конкретных полей формы из PDF‑документа с помощью Aspose.PDF Facades API.
 lastmod: "2026-02-19"
 ---

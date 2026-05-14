@@ -3,7 +3,7 @@ title: Добавить свободные текстовые аннотации
 linktitle: Добавить свободные текстовые аннотации
 type: docs
 weight: 20
-url: /python-net/add-free-text-annotation/
+url: /ru/python-net/add-free-text-annotation/
 description: В этом примере загружается существующий PDF‑файл, добавляется свободная текстовая аннотация на первую страницу в заданном положении и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -46,3 +46,4 @@ def add_free_text_annotation(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

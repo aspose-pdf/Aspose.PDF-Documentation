@@ -3,7 +3,7 @@ title: Добавить нижний колонтитул в PDF
 linktitle: Добавить нижний колонтитул в PDF
 type: docs
 weight: 10
-url: /python-net/add-footer/
+url: /ru/python-net/add-footer/
 description: Узнайте, как добавить текстовые и графические нижние колонтитулы на страницы PDF с помощью PdfFileStamp в Python.
 lastmod: "2026-04-13"
 TechArticle: true
@@ -83,3 +83,4 @@ def add_footer_with_margins(infile: str, outfile: str) -> None:
     finally:
         pdf_stamper.close()
 ```
+

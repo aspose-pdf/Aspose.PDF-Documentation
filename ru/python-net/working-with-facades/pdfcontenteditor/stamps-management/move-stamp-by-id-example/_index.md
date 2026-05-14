@@ -3,7 +3,7 @@ title: Переместить штамп по ID
 linktitle: Переместить штамп по ID
 type: docs
 weight: 80
-url: /python-net/move-stamp-by-id-example/
+url: /ru/python-net/move-stamp-by-id-example/
 description: В этом примере резиновая печать добавляется на страницу 1, а затем перемещается в новое положение с помощью её ID перед сохранением обновленного документа.
 lastmod: "2026-03-20"
 sitemap:
@@ -54,3 +54,4 @@ def move_stamp_by_id_example(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```    
+

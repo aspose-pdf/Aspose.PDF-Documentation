@@ -3,7 +3,7 @@ title: Добавить вложение
 linktitle: Добавить вложение
 type: docs
 weight: 10
-url: /python-net/add-attachment/
+url: /ru/python-net/add-attachment/
 description: В этом примере происходит привязка входного PDF, прикрепление внешнего файла к первой странице и сохранение изменённого PDF с встроенным вложением.
 lastmod: "2026-03-20"
 sitemap:
@@ -49,3 +49,4 @@ def add_attachment(infile, attachment_file, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

@@ -3,7 +3,7 @@ title: Добавить JavaScript‑ссылку
 linktitle: Добавить JavaScript‑ссылку
 type: docs
 weight: 30
-url: /python-net/add-javascript-link/
+url: /ru/python-net/add-javascript-link/
 description: В этом примере привязывается входной PDF, добавляется JavaScript‑ссылка, которая вызывает предупреждение при щелчке, и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -52,3 +52,4 @@ def add_javascript_link(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

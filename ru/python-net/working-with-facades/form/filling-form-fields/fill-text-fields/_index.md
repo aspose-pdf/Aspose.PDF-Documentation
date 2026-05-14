@@ -3,7 +3,7 @@ title: Заполнить текстовые поля
 linktitle: Заполнить текстовые поля
 type: docs
 weight: 10
-url: /python-net/fill-text-fields/
+url: /ru/python-net/fill-text-fields/
 description: Этот пример демонстрирует, как автоматически заполнять текстовые поля в PDF‑форме, используя Aspose.PDF for Python via .NET. Он показывает, как загрузить PDF‑документ, заполнить конкретные поля формы по имени и сохранить обновлённый файл.
 lastmod: "2026-02-19"
 ---
@@ -44,3 +44,4 @@ def fill_text_fields(infile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

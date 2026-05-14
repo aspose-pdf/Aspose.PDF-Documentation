@@ -3,7 +3,7 @@ title: Переместить штамп по индексу
 linktitle: Переместить штамп по индексу
 type: docs
 weight: 90
-url: /python-net/move-stamp-by-index/
+url: /ru/python-net/move-stamp-by-index/
 description: Как переместить аннотации резиновых печатей в PDF, используя их индекс на странице с Aspose.PDF for Python
 lastmod: "2026-03-20"
 sitemap:
@@ -69,3 +69,4 @@ def move_stamp_by_index(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```    
+

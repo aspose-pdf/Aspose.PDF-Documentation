@@ -3,7 +3,7 @@ title: Извлечь данные XFA
 linktitle: Извлечь данные XFA
 type: docs
 weight: 50
-url: /python-net/extract-xfa-data/
+url: /ru/python-net/extract-xfa-data/
 description: В этом примере объясняется, как извлечь данные форм XFA из PDF‑файла с использованием Aspose.PDF for Python via .NET. Он демонстрирует, как привязать PDF‑документ на основе XFA к фасаду Form и экспортировать его внутреннюю структуру данных в поток файла.
 lastmod: "2026-02-19"
 ---
@@ -40,3 +40,4 @@ def export_xfa_data(infile, outfile):
         # Export embedded XFA XML data to the output stream
         form.extract_xfa_data(stream)
 ```
+

@@ -3,7 +3,7 @@ title: Установить флаг отправки
 linktitle: Установить флаг отправки
 type: docs
 weight: 50
-url: /python-net/set-submit-flag/
+url: /ru/python-net/set-submit-flag/
 description: Узнайте, как программно установить флаг отправки для кнопки формы PDF, используя Aspose.PDF for Python. Это позволяет кнопке отправлять данные формы в определённом формате, например XFDF, при нажатии пользователем.
 lastmod: "2026-03-05"
 sitemap:
@@ -45,3 +45,4 @@ def set_submit_flag(input_file_name, output_file_name):
     # Save output PDF file
     form_editor.save(output_file_name)
 ```
+

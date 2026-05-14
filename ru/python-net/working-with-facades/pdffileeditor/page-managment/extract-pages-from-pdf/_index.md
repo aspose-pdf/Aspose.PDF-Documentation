@@ -3,7 +3,7 @@ title: Извлечение страниц из PDF
 linktitle: Извлечение страниц из PDF
 type: docs
 weight: 30
-url: /python-net/extract-pages-from-pdf/
+url: /ru/python-net/extract-pages-from-pdf/
 description: Извлечь выбранные страницы из PDF‑документа с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -44,3 +44,4 @@ def extract_pages_from_pdf(infile, outfile):
     # Extract the specified pages from the PDF document and save to a new PDF document
     pdf_editor.extract(infile, pages_to_extract, outfile)
 ```
+

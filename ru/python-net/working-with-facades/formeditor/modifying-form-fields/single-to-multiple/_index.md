@@ -3,7 +3,7 @@ title: Однострочное поле в многострочное поле
 linktitle: Однострочное поле в многострочное поле
 type: docs
 weight: 80
-url: /python-net/single-to-multiple/
+url: /ru/python-net/single-to-multiple/
 description: Преобразовать однострочное текстовое поле в многострочное поле в PDF‑документе с использованием Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -46,4 +46,5 @@ def single2multiple(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+
 

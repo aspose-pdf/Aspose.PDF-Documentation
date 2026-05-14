@@ -3,7 +3,7 @@ title: Установить выравнивание поля
 linktitle: Установить выравнивание поля
 type: docs
 weight: 30
-url: /python-net/set-field-alignment/
+url: /ru/python-net/set-field-alignment/
 description: В этом примере показано, как установить выравнивание текста в поле формы в PDF‑документе с использованием Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -54,3 +54,4 @@ def set_field_alignment(infile, outfile):
             "Failed to set field alignment. Field may not support alignment."
         )
 ```
+

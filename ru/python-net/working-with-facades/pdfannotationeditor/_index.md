@@ -3,7 +3,7 @@ title: Класс PdfAnnotationEditor
 linktitle: Класс PdfAnnotationEditor
 type: docs
 weight: 40
-url: /python-net/pdfannotationeditor-class/
+url: /ru/python-net/pdfannotationeditor-class/
 description: Узнайте, как использовать класс PdfAnnotationEditor в Aspose.PDF for Python via .NET для работы с PDF‑аннотациями, комментариями и разметкой программно.
 lastmod: "2026-02-05"
 sitemap:
@@ -19,4 +19,5 @@ Abstract: Этот раздел представляет класс PdfAnnotatio
 ## Для чего используется PdfAnnotationEditor
 
 Используйте этот фасад, когда ваш процесс работы с PDF включает аннотации, комментарии по обзору или другие элементы разметки, которые необходимо управлять программно. По мере расширения этого раздела он должен служить целевой страницей для учебных материалов, связанных с аннотациями, построенных вокруг `PdfAnnotationEditor` класс.
+
 

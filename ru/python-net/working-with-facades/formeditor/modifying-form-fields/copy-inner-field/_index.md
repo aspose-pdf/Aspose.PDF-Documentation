@@ -3,7 +3,7 @@ title: Скопировать внутреннее поле
 linktitle: Скопировать внутреннее поле
 type: docs
 weight: 20
-url: /python-net/copy-inner-field/
+url: /ru/python-net/copy-inner-field/
 description: Скопировать поля формы PDF в новое положение с помощью Python, используя Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -70,3 +70,4 @@ form_editor.copy_inner_field("First Name", "First Name Copy", -1, 200, 600)
 ```
 
 Программа затем сбросит параметры к предыдущим.
+

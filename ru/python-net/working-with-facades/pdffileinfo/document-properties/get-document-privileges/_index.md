@@ -3,7 +3,7 @@ title: Получить привилегии документа
 linktitle: Получить привилегии документа
 type: docs
 weight: 10
-url: /python-net/get-document-privileges/
+url: /ru/python-net/get-document-privileges/
 description: Узнайте, как программно проверять привилегии PDF‑документа с помощью Aspose.PDF for Python. Этот учебный материал демонстрирует, как использовать класс PdfFileInfo для чтения настроек безопасности документа, таких как печать, копирование или изменение разрешений.
 lastmod: "2026-03-05"
 draft: false
@@ -58,3 +58,4 @@ def get_document_privileges(input_file_name):
     print(f"  Can Screen Readers: {privileges.allow_screen_readers}")
     print(f"  Can Assembly: {privileges.allow_assembly}")
 ```
+

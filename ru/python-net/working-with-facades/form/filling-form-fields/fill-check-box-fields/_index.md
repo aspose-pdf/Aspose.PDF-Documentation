@@ -3,7 +3,7 @@ title: Заполнить поля флажков
 linktitle: Заполнить поля флажков
 type: docs
 weight: 20
-url: /python-net/fill-check-box-fields/
+url: /ru/python-net/fill-check-box-fields/
 description: В этом примере демонстрируется, как программно заполнять поля флажков в PDF-форме с использованием Aspose.PDF for Python via .NET. Показано, как привязать PDF‑документ, обновить значения флажков по имени поля и сохранить изменённый файл.
 lastmod: "2026-02-19"
 ---
@@ -43,3 +43,4 @@ def fill_check_box_fields(infile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

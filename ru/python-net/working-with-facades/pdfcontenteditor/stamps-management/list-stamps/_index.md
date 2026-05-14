@@ -3,7 +3,7 @@ title: Список штампов
 linktitle: Список штампов
 type: docs
 weight: 70
-url: /python-net/list-stamps/
+url: /ru/python-net/list-stamps/
 description: Этот пример загружает PDF, извлекает все штампы со страницы 1, выводит их и отображает сообщение, если штампы не найдены.
 lastmod: "2026-03-20"
 sitemap:
@@ -51,3 +51,4 @@ def list_stamps(infile):
     if count == 0:
         print("No stamps found")
 ```
+

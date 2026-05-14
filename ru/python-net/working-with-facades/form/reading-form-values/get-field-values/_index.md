@@ -3,7 +3,7 @@ title: Получить значения полей
 linktitle: Получить значения полей
 type: docs
 weight: 50
-url: /python-net/get-field-values/
+url: /ru/python-net/get-field-values/
 description: Извлечение значений полей из PDF-формы с помощью Aspose.PDF Facades, используя класс Form.
 lastmod: "2026-02-19"
 ---

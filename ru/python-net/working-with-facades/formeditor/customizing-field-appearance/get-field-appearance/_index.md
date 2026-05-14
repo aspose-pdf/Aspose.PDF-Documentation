@@ -3,7 +3,7 @@ title: Получить внешний вид поля
 linktitle: Получить внешний вид поля
 type: docs
 weight: 20
-url: /python-net/get-field-appearance/
+url: /ru/python-net/get-field-appearance/
 description: В этой статье объясняется, как открыть PDF, получить доступ к полю формы, извлечь его настройки внешнего вида и отобразить их. Пример демонстрирует извлечение внешнего вида поля с именем 'Last Name'.
 lastmod: "2026-03-05"
 sitemap:
@@ -44,3 +44,4 @@ def get_field_appearance(infile, outfile):
     appearance = form_editor.get_field_appearance("Last Name")
     print("Field Appearance: " + str(appearance))
 ```
+

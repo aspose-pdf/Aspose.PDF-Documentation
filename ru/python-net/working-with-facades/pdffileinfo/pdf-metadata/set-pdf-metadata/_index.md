@@ -3,7 +3,7 @@ title: Установить метаданные PDF
 linktitle: Установить метаданные PDF
 type: docs
 weight: 50
-url: /python-net/set-pdf-metadata/
+url: /ru/python-net/set-pdf-metadata/
 description: Изменять и сохранять метаданные в PDF‑документах с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-03-05"
 draft: false
@@ -54,3 +54,4 @@ def set_pdf_metadata(infile, outfile):
     # Save updated metadata
     pdf_info.save(outfile)
 ```
+

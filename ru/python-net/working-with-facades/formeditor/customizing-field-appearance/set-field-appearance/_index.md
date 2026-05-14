@@ -3,7 +3,7 @@ title: Установить внешний вид поля
 linktitle: Установить внешний вид поля
 type: docs
 weight: 50
-url: /python-net/set-field-appearance/
+url: /ru/python-net/set-field-appearance/
 description: В этом примере показано, как изменить визуальный внешний вид поля формы PDF с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -54,3 +54,4 @@ def set_field_appearance(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+

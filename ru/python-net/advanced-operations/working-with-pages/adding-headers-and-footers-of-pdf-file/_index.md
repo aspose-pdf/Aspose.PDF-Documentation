@@ -3,7 +3,7 @@ title: Добавить колонтитулы в PDF в Python
 linktitle: Добавление колонтитулов в PDF
 type: docs
 weight: 50
-url: /python-net/add-headers-and-footers-of-pdf-file/
+url: /ru/python-net/add-headers-and-footers-of-pdf-file/
 description: Узнайте, как добавить верхние и нижние колонтитулы в PDF‑файлы с помощью Python, используя текст, изображения и структурированное содержимое.
 lastmod: "2026-05-05"
 sitemap:

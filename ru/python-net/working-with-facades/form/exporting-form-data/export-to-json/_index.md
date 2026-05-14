@@ -3,7 +3,7 @@ title: Экспорт в JSON
 linktitle: Экспорт в JSON
 type: docs
 weight: 30
-url: /python-net/export-to-json/
+url: /ru/python-net/export-to-json/
 description: В этом примере демонстрируется, как экспортировать значения полей формы PDF в файл JSON с использованием Aspose.PDF for Python via .NET. Описывается, как загрузить форму PDF, получить доступ к её полям через фасад Form и сохранить извлечённые данные в структурированном формате JSON.
 lastmod: "2026-02-19"
 ---
@@ -41,3 +41,4 @@ def export_form_to_json(infile, outfile):
         # Export form field values to JSON
         form.export_json(json_stream, indented=True)
 ```
+

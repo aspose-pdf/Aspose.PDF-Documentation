@@ -3,7 +3,7 @@ title: Удалить штампы глобально
 linktitle: Удалить штампы глобально
 type: docs
 weight: 60
-url: /python-net/delete-stamps-globally/
+url: /ru/python-net/delete-stamps-globally/
 description: Этот пример демонстрирует, как удалить аннотации «резиновый штамп» глобально на всех страницах PDF с использованием Aspose.PDF for Python via the Facades API. Он показывает, как удалять штампы по идентификатору без указания отдельных страниц.
 lastmod: "2026-03-20"
 sitemap:
@@ -58,3 +58,4 @@ def delete_stamps_globally(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

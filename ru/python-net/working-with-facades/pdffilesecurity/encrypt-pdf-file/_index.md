@@ -3,7 +3,7 @@ title: Зашифровать PDF-файл
 linktitle: Зашифровать PDF-файл
 type: docs
 weight: 30
-url: /python-net/encrypt-pdf-file/
+url: /ru/python-net/encrypt-pdf-file/
 description: Зашифровать PDF-документ и настроить разрешения, чтобы контролировать, что пользователи могут делать с файлом.
 lastmod: "2026-03-18"
 sitemap:
@@ -150,3 +150,4 @@ def encrypt_pdf_with_encryption_algorithm(infile, outfile):
     # Save encrypted PDF
     file_security.save(outfile)
 ```
+

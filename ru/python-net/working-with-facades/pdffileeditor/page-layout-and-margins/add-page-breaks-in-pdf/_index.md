@@ -3,7 +3,7 @@ title: Добавить разрывы страниц в PDF
 linktitle: Добавить разрывы страниц в PDF
 type: docs
 weight: 20
-url: /python-net/add-page-breaks-in-pdf/
+url: /ru/python-net/add-page-breaks-in-pdf/
 description: Вставьте разрывы страниц в документ PDF с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -46,3 +46,4 @@ def add_page_breaks_in_pdf(infile, outfile):
         ],
     )
 ```
+

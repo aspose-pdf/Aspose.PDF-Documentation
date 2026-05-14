@@ -3,7 +3,7 @@ title: Метаданные PDF
 linktitle: Метаданные PDF
 type: docs
 weight: 30
-url: /python-net/pdf-metadata/
+url: /ru/python-net/pdf-metadata/
 description: В этой статье объясняется, как получить доступ к метаданным, изменять их и сохранять в PDF‑документах с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 draft: false
@@ -19,3 +19,4 @@ Abstract: Метаданные PDF содержат информацию о до
 - [Установить метаданные PDF](/pdf/ru/python-net/set-pdf-metadata/)
 - [Очистить метаданные PDF](/pdf/ru/python-net/clear-pdf-metadata/)
 - [Сохранить метаданные с помощью XMP](/pdf/ru/python-net/save-metadata-with-xmp/)
+

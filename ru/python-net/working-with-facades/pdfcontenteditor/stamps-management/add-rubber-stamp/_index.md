@@ -3,7 +3,7 @@ title: Добавить штамп
 linktitle: Добавить штамп
 type: docs
 weight: 10
-url: /python-net/add-rubber-stamp/
+url: /ru/python-net/add-rubber-stamp/
 description: В этом примере привязывает входной PDF, добавляет зелёный “Approved” штамп на первые четыре страницы и сохраняет изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -51,3 +51,4 @@ def add_rubber_stamp(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

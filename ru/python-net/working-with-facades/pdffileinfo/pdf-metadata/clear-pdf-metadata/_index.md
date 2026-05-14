@@ -3,7 +3,7 @@ title: Очистить метаданные PDF
 linktitle: Очистить метаданные PDF
 type: docs
 weight: 10
-url: /python-net/clear-pdf-metadata/
+url: /ru/python-net/clear-pdf-metadata/
 description: Удалите все метаданные из PDF‑документа с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-03-05"
 draft: false
@@ -45,3 +45,4 @@ def clear_pdf_metadata(infile, outfile):
     # Save updated metadata
     pdf_info.save(outfile)
 ```
+

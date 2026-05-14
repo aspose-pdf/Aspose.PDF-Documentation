@@ -3,7 +3,7 @@ title: Объединить PDF-файлы
 linktitle: Объединить PDF-файлы
 type: docs
 weight: 70
-url: /python-net/try-concatenate-pdf-files/
+url: /ru/python-net/try-concatenate-pdf-files/
 description: Объедините несколько PDF-файлов с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -36,3 +36,4 @@ def try_concatenate_pdf_files(files_to_merge, output_file):
     if not pdf_editor.try_concatenate(files_to_merge, output_file):
         print("Concatenation failed for the provided files.")
 ```
+

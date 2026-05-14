@@ -3,7 +3,7 @@ title: Вставить страницы в PDF
 linktitle: Вставить страницы в PDF
 type: docs
 weight: 40
-url: /python-net/insert-pages-into-pdf/
+url: /ru/python-net/insert-pages-into-pdf/
 description: Вставьте страницы из одного PDF в другой с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -43,3 +43,4 @@ def insert_pages_into_pdf(infile, sample_file, outfile):
 
     pdf_editor.insert(infile, insert_page_number, sample_file, [1, 2], outfile)
 ```
+

@@ -3,7 +3,7 @@ title: Настройка внешнего вида полей
 linktitle: Настройка внешнего вида полей
 type: docs
 weight: 30
-url: /python-net/customizing-field-appearance/
+url: /ru/python-net/customizing-field-appearance/
 description: Используя Aspose.PDF for Python, разработчики могут полностью настраивать внешний вид и поведение полей программно.
 lastmod: "2026-03-05"
 sitemap:
@@ -21,4 +21,5 @@ Abstract: Узнайте, как настраивать внешний вид и
 - [Установить количество ячеек поля](/pdf/ru/python-net/set-field-comb-number/)
 - [Установить ограничение поля](/pdf/ru/python-net/set-field-limit/)
 - [Получить внешний вид поля](/pdf/ru/python-net/get-field-appearance/)
+
 

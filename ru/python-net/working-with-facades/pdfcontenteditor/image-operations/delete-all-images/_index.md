@@ -3,7 +3,7 @@ title: Удалить все изображения из PDF
 linktitle: Удалить все изображения из PDF
 type: docs
 weight: 10
-url: /python-net/delete-all-images/
+url: /ru/python-net/delete-all-images/
 description: Удалить все изображения из PDF‑документа с помощью Aspose.PDF for Python через Facades API.
 lastmod: "2026-03-20"
 sitemap:
@@ -43,3 +43,4 @@ def delete_all_image(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

@@ -3,7 +3,7 @@ title: Добавить пользовательскую ссылку дейст
 linktitle: Добавить пользовательскую ссылку действия
 type: docs
 weight: 20
-url: /python-net/add-custom-action-link/
+url: /ru/python-net/add-custom-action-link/
 description: В этом примере привязывается входной PDF, добавляется пользовательская ссылка действия на первой странице и сохраняется изменённый документ. Для простоты используется пустой список действий, но в реальных реализациях могут быть включены фактические действия.
 lastmod: "2026-03-20"
 sitemap:
@@ -53,3 +53,4 @@ def add_custom_action_link(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

@@ -3,7 +3,7 @@ title: Добавить всплывающие аннотации
 linktitle: Добавить всплывающие аннотации
 type: docs
 weight: 40
-url: /python-net/add-popup-annotation/
+url: /ru/python-net/add-popup-annotation/
 description: В этом примере загружается PDF, добавляется всплывающая аннотация на первую страницу и сохраняется изменённый документ. Всплывающая аннотация установлена видимой по умолчанию и отображает указанный текст комментария.
 lastmod: "2026-03-20"
 sitemap:
@@ -49,3 +49,4 @@ def add_popup_annotation(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

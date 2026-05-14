@@ -3,7 +3,7 @@ title: Копировать внешнее поле
 linktitle: Копировать внешнее поле
 type: docs
 weight: 30
-url: /python-net/copy-outer-field/
+url: /ru/python-net/copy-outer-field/
 description: В этом примере демонстрируется, как скопировать поле формы из одного PDF‑документа в другой, используя Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -78,3 +78,4 @@ form_editor.copy_outer_field("First Name", "First Name Copy", 1, -200, 600)
 ```
 
 Программа затем сбросит параметры к предыдущим.
+

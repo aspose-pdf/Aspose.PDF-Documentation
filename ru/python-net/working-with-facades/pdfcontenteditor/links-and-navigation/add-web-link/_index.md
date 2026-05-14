@@ -3,7 +3,7 @@ title: Добавить веб‑ссылку
 linktitle: Добавить веб‑ссылку
 type: docs
 weight: 60
-url: /python-net/add-web-link/
+url: /ru/python-net/add-web-link/
 description: В этом примере привязывается входной PDF, добавляется синяя аннотация веб‑ссылки на странице 1, указывающая на страницу продукта Aspose Python PDF, и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -51,3 +51,4 @@ def add_web_link(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

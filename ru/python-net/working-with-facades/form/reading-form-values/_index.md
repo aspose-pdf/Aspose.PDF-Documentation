@@ -3,7 +3,7 @@ title: Чтение значений Form
 linktitle: Чтение значений Form
 type: docs
 weight: 60
-url: /python-net/reading-form-values/
+url: /ru/python-net/reading-form-values/
 description: В этом разделе объясняется, как читать значения Form с помощью Aspose.PDF Facades, используя класс Form.
 lastmod: "2026-02-19"
 ---

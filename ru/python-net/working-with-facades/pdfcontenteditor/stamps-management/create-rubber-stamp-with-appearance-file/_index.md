@@ -3,7 +3,7 @@ title: Создать резиновый штамп с файлом внешне
 linktitle: Создать резиновый штамп с файлом внешнего вида
 type: docs
 weight: 20
-url: /python-net/create-rubber-stamp-with-appearance-file/
+url: /ru/python-net/create-rubber-stamp-with-appearance-file/
 description: В этом примере привязывается входной PDF, создаётся резиновый штамп на странице 1 с использованием файлового изображения в качестве внешнего вида штампа, и сохраняется обновлённый PDF.
 lastmod: "2026-03-20"
 sitemap:
@@ -51,3 +51,4 @@ def create_rubber_stamp_with_appearance_file(infile, image_file, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

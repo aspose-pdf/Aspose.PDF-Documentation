@@ -3,7 +3,7 @@ title: Импортировать JSON-данные
 linktitle: Импортировать JSON-данные
 type: docs
 weight: 30
-url: /python-net/import-json-data/
+url: /ru/python-net/import-json-data/
 description: В этом примере демонстрируется, как импортировать данные полей формы из файла JSON в PDF-форму, используя Aspose.PDF for Python via .NET. Показано, как привязать PDF-документ, прочитать структурированные JSON-данные через поток файла и автоматически заполнить соответствующие поля формы.
 lastmod: "2026-02-19"
 ---
@@ -45,3 +45,4 @@ def import_json_to_pdf_form(infile, datafile, outfile):
     # Save updated PDF
     form.save(outfile)
 ```
+

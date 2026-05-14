@@ -3,7 +3,7 @@ title: Добавить прямоугольные фигуры в PDF на Pyth
 linktitle: Добавить прямоугольник
 type: docs
 weight: 50
-url: /python-net/add-rectangle/
+url: /ru/python-net/add-rectangle/
 description: Узнайте, как рисовать и заполнять прямоугольные фигуры в PDF‑файлах с помощью Python.
 lastmod: "2026-04-16"
 sitemap:

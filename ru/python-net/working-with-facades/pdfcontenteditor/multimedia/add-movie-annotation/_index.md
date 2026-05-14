@@ -3,7 +3,7 @@ title: Добавить аннотацию с фильмом
 linktitle: Добавить аннотацию с фильмом
 type: docs
 weight: 10
-url: /python-net/add-movie-annotation/
+url: /ru/python-net/add-movie-annotation/
 description: В этом примере привязывается входной PDF, добавляется аннотация с фильмом на странице 1 и сохраняется обновлённый PDF.
 lastmod: "2026-03-20"
 sitemap:
@@ -44,3 +44,4 @@ def add_movie_annotation(infile, movie_file, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

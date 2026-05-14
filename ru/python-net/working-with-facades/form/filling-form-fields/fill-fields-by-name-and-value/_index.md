@@ -3,7 +3,7 @@ title: Заполнять поля по имени и значению
 linktitle: Заполнять поля по имени и значению
 type: docs
 weight: 60
-url: /python-net/fill-fields-by-name-and-value/
+url: /ru/python-net/fill-fields-by-name-and-value/
 description: В этой статье демонстрируется, как динамически заполнять несколько полей формы PDF по имени и значению с использованием Aspose.PDF for Python via .NET. Вместо того чтобы задавать каждое поле отдельно, используется структура словаря для сопоставления имен полей со значениями и их заполнения в цикле.
 lastmod: "2026-02-19"
 ---
@@ -49,3 +49,4 @@ def fill_fields_by_name_and_value(infile, outfile):
     # Save updated PDF using outfile
     pdf_form.save(outfile)
 ```
+

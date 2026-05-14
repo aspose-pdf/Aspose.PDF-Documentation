@@ -3,7 +3,7 @@ title: Удалить поле
 linktitle: Удалить поле
 type: docs
 weight: 60
-url: /python-net/remove-field/
+url: /ru/python-net/remove-field/
 description: Этот пример показывает, как удалить поле 'Country' из PDF-формы с помощью метода 'remove_field' класса 'FormEditor'.
 lastmod: "2026-03-05"
 sitemap:
@@ -46,3 +46,4 @@ def remove_field(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+

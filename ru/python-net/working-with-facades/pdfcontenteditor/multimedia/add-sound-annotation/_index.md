@@ -3,7 +3,7 @@ title: Добавить звуковую аннотацию
 linktitle: Добавить звуковую аннотацию
 type: docs
 weight: 20
-url: /python-net/add-sound-annotation/
+url: /ru/python-net/add-sound-annotation/
 description: В этом примере привязывается входной PDF, добавляется звуковая аннотация на странице 1 и сохраняется изменённый PDF.
 lastmod: "2026-03-20"
 sitemap:
@@ -45,3 +45,4 @@ def add_sound_annotation(infile, sound_file, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

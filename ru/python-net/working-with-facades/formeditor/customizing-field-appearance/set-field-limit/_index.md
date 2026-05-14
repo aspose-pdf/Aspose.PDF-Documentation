@@ -3,7 +3,7 @@ title: Установить ограничение поля
 linktitle: Установить ограничение поля
 type: docs
 weight: 80
-url: /python-net/set-field-limit/
+url: /ru/python-net/set-field-limit/
 description: Этот пример показывает, как установить максимальное ограничение количества символов для поля формы в PDF-документе с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -52,3 +52,4 @@ def set_field_limit(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+

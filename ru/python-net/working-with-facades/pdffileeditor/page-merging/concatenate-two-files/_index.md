@@ -3,7 +3,7 @@ title: Объединить два PDF-файла
 linktitle: Объединить два PDF-файла
 type: docs
 weight: 60
-url: /python-net/concatenate-two-files/
+url: /ru/python-net/concatenate-two-files/
 description: Объедините два PDF-файла в один документ с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -35,3 +35,4 @@ def concatenate_two_files(files_to_merge, output_file):
     pdf_editor = pdf_facades.PdfFileEditor()
     pdf_editor.concatenate(files_to_merge[0], files_to_merge[1], output_file)
 ```
+

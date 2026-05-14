@@ -3,7 +3,7 @@ title: Получить имена обязательных полей
 linktitle: Получить имена обязательных полей
 type: docs
 weight: 30
-url: /python-net/get-required-field-names/
+url: /ru/python-net/get-required-field-names/
 description: Этот пример демонстрирует, как идентифицировать и получить имена обязательных полей формы в PDF-документе с использованием API Aspose.PDF Facades.
 lastmod: "2026-02-19"
 ---
@@ -40,3 +40,4 @@ def get_required_field_names(infile):
         if pdf_form.is_required_field(field):
             print(f"Required field: {field}")
 ```
+

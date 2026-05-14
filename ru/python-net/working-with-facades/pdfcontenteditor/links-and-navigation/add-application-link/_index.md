@@ -3,7 +3,7 @@ title: Добавить ссылку на приложение
 linktitle: Добавить ссылку на приложение
 type: docs
 weight: 10
-url: /python-net/add-application-link/
+url: /ru/python-net/add-application-link/
 description: В этом примере привязывается входной PDF, добавляется ссылка для запуска приложения на первой странице и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -52,3 +52,4 @@ def add_application_link(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

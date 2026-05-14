@@ -3,7 +3,7 @@ title: Добавить круговую аннотацию
 linktitle: Добавить круговую аннотацию
 type: docs
 weight: 10
-url: /python-net/add-circle-annotation/
+url: /ru/python-net/add-circle-annotation/
 description: В этом примере привязывается входной PDF, создаётся круговая аннотация на первой странице и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -48,3 +48,4 @@ def add_circle_annotation(infile, outfile):
     # Save output PDF file
     content_editor.save(outfile)
 ```
+

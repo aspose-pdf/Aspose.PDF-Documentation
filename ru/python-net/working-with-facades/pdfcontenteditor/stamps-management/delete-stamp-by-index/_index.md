@@ -3,7 +3,7 @@ title: Переместить штамп по индексу
 linktitle: Переместить штамп по индексу
 type: docs
 weight: 50
-url: /python-net/move-stamp-by-index/
+url: /ru/python-net/move-stamp-by-index/
 description: В этом примере создаются два резиновых штампа на странице 2. После этого штамп можно переместить, указав его индекс и новые координаты.
 lastmod: "2026-03-20"
 sitemap:
@@ -62,3 +62,4 @@ def move_stamp_by_index(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

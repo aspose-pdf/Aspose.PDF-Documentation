@@ -3,7 +3,7 @@ title: Мультимедиа
 linktitle: Мультимедиа
 type: docs
 weight: 80
-url: /python-net/multimedia/
+url: /ru/python-net/multimedia/
 description:
 lastmod: "2026-03-20"
 sitemap:
@@ -13,3 +13,4 @@ sitemap:
 
 - [Добавить аннотацию с фильмом](/pdf/ru/python-net/add-movie-annotation/)
 - [Добавить звуковую аннотацию](/pdf/ru/python-net/add-sound-annotation/)
+

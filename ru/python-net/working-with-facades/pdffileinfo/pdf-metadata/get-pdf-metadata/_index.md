@@ -3,7 +3,7 @@ title: Получить метаданные PDF
 linktitle: Получить метаданные PDF
 type: docs
 weight: 20
-url: /python-net/get-pdf-metadata/
+url: /ru/python-net/get-pdf-metadata/
 description: Извлекать и отображать метаданные из PDF‑документов с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 draft: false
@@ -57,3 +57,4 @@ def get_pdf_metadata(infile):
     reviewer = pdf_info.get_meta_info("Reviewer")
     print(f"Reviewer: {reviewer if reviewer else 'No Reviewer metadata found.'}")
 ```
+

@@ -3,7 +3,7 @@ title: Удалить элемент списка
 linktitle: Удалить элемент списка
 type: docs
 weight: 40
-url: /python-net/del-list-item/
+url: /ru/python-net/del-list-item/
 description:
 lastmod: "2026-03-05"
 sitemap:
@@ -48,4 +48,5 @@ def del_list_item(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+
 

@@ -3,7 +3,7 @@ title: Разделить PDF документы
 linktitle: Разделить PDF документы
 type: docs
 weight: 50
-url: /python-net/splitting-pdf-documents/
+url: /ru/python-net/splitting-pdf-documents/
 description: Разделение PDF является типичной потребностью для управления документами, отчетности и автоматизации процессов.
 lastmod: "2026-03-05"
 sitemap:
@@ -21,3 +21,4 @@ Abstract: Узнайте, как программно разбивать PDF‑�
 - [Разделить PDF с начала](/pdf/ru/python-net/split-pdf-from-beginning/)
 - [Разделить PDF до конца](/pdf/ru/python-net/split-pdf-to-end/)
 - [Разделить PDF на отдельные страницы](/pdf/ru/python-net/split-pdf-into-single-pages/)
+

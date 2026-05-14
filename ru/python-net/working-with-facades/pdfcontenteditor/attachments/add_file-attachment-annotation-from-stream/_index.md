@@ -3,7 +3,7 @@ title: Добавить аннотацию вложения файла из по
 linktitle: Добавить аннотацию вложения файла из потока
 type: docs
 weight: 40
-url: /python-net/add-file-attachment-annotation-from-stream/
+url: /ru/python-net/add-file-attachment-annotation-from-stream/
 description: В примере загружается PDF, читается внешний файл в поток памяти, добавляется аннотация вложения файла на первую страницу и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -56,3 +56,4 @@ def add_file_attachment_annotation_from_stream(infile, attachment_file, outfile)
     # Save updated document
     content_editor.save(outfile)
 ```
+

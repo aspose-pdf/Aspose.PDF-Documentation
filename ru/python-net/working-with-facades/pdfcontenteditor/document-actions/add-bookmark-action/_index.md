@@ -3,7 +3,7 @@ title: Добавить действие закладки
 linktitle: Добавить действие закладки
 type: docs
 weight: 10
-url: /python-net/add-bookmark-action/
+url: /ru/python-net/add-bookmark-action/
 description: В этом примере привязывается входной PDF, создаётся закладка с меткой "PdfContentEditor Bookmark", которая переходит к странице 1, и сохраняется обновлённый документ.
 lastmod: "2026-03-20"
 sitemap:

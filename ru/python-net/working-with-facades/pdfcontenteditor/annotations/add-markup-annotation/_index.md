@@ -3,7 +3,7 @@ title: Добавить аннотации разметки
 linktitle: Добавить аннотации разметки
 type: docs
 weight: 30
-url: /python-net/add-markup-annotation/
+url: /ru/python-net/add-markup-annotation/
 description: В этом примере привязывается входной PDF, добавляются четыре разных разметочных аннотации на первую страницу и сохраняется обновлённый документ. Каждая аннотация демонстрирует иной стиль разметки и цвет.
 lastmod: "2026-03-20"
 sitemap:
@@ -71,3 +71,4 @@ def add_markup_annotation(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

@@ -3,7 +3,7 @@ title: Добавить поля к страницам PDF
 linktitle: Добавить поля к страницам PDF
 type: docs
 weight: 10
-url: /python-net/add-margins-to-pdf-pages/
+url: /ru/python-net/add-margins-to-pdf-pages/
 description: Добавить пользовательские поля к выбранным страницам PDF с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -50,3 +50,4 @@ def add_margins_to_pdf_pages(infile, outfile):
         infile, outfile, [1, 3], left_margin, right_margin, top_margin, bottom_margin
     )
 ```
+

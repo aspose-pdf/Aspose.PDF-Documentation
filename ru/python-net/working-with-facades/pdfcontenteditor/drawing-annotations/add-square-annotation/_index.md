@@ -3,7 +3,7 @@ title: Добавить аннотацию квадрата
 linktitle: Добавить аннотацию квадрата
 type: docs
 weight: 60
-url: /python-net/add-square-annotation/
+url: /ru/python-net/add-square-annotation/
 description: В этом примере связывается входной PDF, добавляется заполненная синяя аннотация квадрата на первой странице и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -48,3 +48,4 @@ def add_square_annotation(infile, outfile):
     # Save output PDF file
     content_editor.save(outfile)
 ```
+

@@ -9,7 +9,7 @@ lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Форматирование и стилизация текста внутри PDF-файлов с помощью Python
 Abstract: В этой статье объясняется, как форматировать текст в PDF-документах с помощью Aspose.PDF for Python via .NET. Вы узнаете, как управлять межстрочным и межсимвольным интервалом, отступами, границами, подчёркиванием, зачёркиванием и другими параметрами стилизации текста на Python.
 ---

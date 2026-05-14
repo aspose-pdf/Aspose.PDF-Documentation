@@ -3,7 +3,7 @@ title: Добавить кривые формы в PDF на Python
 linktitle: Добавить кривую
 type: docs
 weight: 30
-url: /python-net/add-curve/
+url: /ru/python-net/add-curve/
 description: Узнайте, как рисовать и заполнять кривые формы в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:

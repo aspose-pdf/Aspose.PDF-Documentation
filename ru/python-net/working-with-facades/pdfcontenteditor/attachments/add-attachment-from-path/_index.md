@@ -3,7 +3,7 @@ title: Добавить вложение из пути
 linktitle: Добавить вложение из пути
 type: docs
 weight: 20
-url: /python-net/add-attachment-from-path/
+url: /ru/python-net/add-attachment-from-path/
 description: В этом примере связывается входной PDF, прикрепляется внешний файл с использованием его пути к файлу и сохраняется измененный PDF с встроенным вложением.
 lastmod: "2026-03-20"
 sitemap:
@@ -46,3 +46,4 @@ def add_attachment_from_path(infile, attachment_file, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

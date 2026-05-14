@@ -3,7 +3,7 @@ title: Создание поля формы
 linktitle: Создание поля формы
 type: docs
 weight: 50
-url: /python-net/creating-form-field/
+url: /ru/python-net/creating-form-field/
 description: В этой статье демонстрируется, как создавать интерактивные поля формы в PDF‑документах с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:

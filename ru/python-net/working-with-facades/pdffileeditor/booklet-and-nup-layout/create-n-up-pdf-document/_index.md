@@ -3,7 +3,7 @@ title: Создать N-Up PDF документ
 linktitle: Создать N-Up PDF документ
 type: docs
 weight: 10
-url: /python-net/create-n-up-pdf-document/
+url: /ru/python-net/create-n-up-pdf-document/
 description: Узнайте, как создать N-Up PDF документ, безопасно обрабатывая потенциальные ошибки, используя Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -83,3 +83,4 @@ def try_create_nup_pdf_document(infile, outfile):
     if not nup_maker.try_make_n_up(FileIO(infile), FileIO(outfile, "w"), 2, 2):
         print("Failed to create N-Up PDF document.")
 ```
+

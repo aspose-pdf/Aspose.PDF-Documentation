@@ -3,7 +3,7 @@ title: Переименовать поле
 linktitle: Переименовать поле
 type: docs
 weight: 70
-url: /python-net/rename-field/
+url: /ru/python-net/rename-field/
 description: Переименуйте существующее поле формы в PDF‑документе с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -46,4 +46,5 @@ def rename_field(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+
 

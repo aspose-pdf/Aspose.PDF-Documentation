@@ -3,7 +3,7 @@ title: Получить версию PDF
 linktitle: Получить версию PDF
 type: docs
 weight: 20
-url: /python-net/get-pdf-version/
+url: /ru/python-net/get-pdf-version/
 description: Узнайте, как программно определить версию PDF‑документа с помощью Aspose.PDF for Python. Этот учебник демонстрирует, как использовать класс PdfFileInfo для проверки версии PDF файла.
 lastmod: "2026-03-05"
 draft: false
@@ -42,3 +42,4 @@ def get_pdf_version(input_file_name):
     version = pdf_metadata.get_pdf_version()
     print(f"\nPDF Version: {version}")
 ```
+

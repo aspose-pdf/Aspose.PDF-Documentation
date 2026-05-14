@@ -3,7 +3,7 @@ title: Экспорт в XML
 linktitle: Экспорт в XML
 type: docs
 weight: 40
-url: /python-net/export-to-xml/
+url: /ru/python-net/export-to-xml/
 description: В этом примере демонстрируется, как экспортировать данные формы PDF в файл XML с использованием Aspose.PDF for Python via .NET. Показано, как загрузить PDF‑документ, получить доступ к полям формы через фасад Form и сохранить извлечённые данные в виде структурированного XML с использованием класса Form.
 lastmod: "2026-02-19"
 ---
@@ -41,3 +41,4 @@ def export_pdf_form_data_to_xml(infile, datafile):
         # Export data from PDF form fields to XML
         pdf_form.export_xml(xml_output_stream)
 ```
+

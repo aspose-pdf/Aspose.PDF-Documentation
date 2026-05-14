@@ -3,7 +3,7 @@ title: Извлечение изображений из PDF-файла с пом
 linktitle: Извлечь изображения
 type: docs
 weight: 30
-url: /python-net/extract-images-from-pdf-file/
+url: /ru/python-net/extract-images-from-pdf-file/
 description: Узнайте, как извлекать встроенные изображения из PDF‑файлов с помощью Python.
 lastmod: "2026-05-05"
 TechArticle: true
@@ -67,3 +67,4 @@ def extract_image_from_specific_region(infile, outfile):
 - [Замена изображений в существующих PDF-файлах](/pdf/ru/python-net/replace-image-in-existing-pdf-file/)
 - [Удаление изображений из PDF-файлов](/pdf/ru/python-net/delete-images-from-pdf-file/)
 - [Добавление изображений в существующие PDF-файлы](/pdf/ru/python-net/add-image-to-existing-pdf-file/)
+

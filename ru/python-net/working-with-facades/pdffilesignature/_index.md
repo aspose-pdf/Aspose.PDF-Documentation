@@ -3,7 +3,7 @@ title: Класс PdfFileSignature
 linktitle: Класс PdfFileSignature
 type: docs
 weight: 60
-url: /python-net/pdffilesignature-class/
+url: /ru/python-net/pdffilesignature-class/
 description: Узнайте, как добавлять, проверять и удалять цифровые подписи из PDF‑документов в Python, используя класс PdfFileSignature с Aspose.PDF.
 lastmod: "2026-01-05"
 sitemap:
@@ -81,3 +81,4 @@ def create_custom_signature_appearance():
     appearance.show_reason = True
     return appearance
 ```
+

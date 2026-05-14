@@ -3,7 +3,7 @@ title: Разделить PDF до конца
 linktitle: Разделить PDF до конца
 type: docs
 weight: 40
-url: /python-net/split-pdf-to-end/
+url: /ru/python-net/split-pdf-to-end/
 description: Разделить документ PDF, начиная с указанной страницы и до последней страницы, используя Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -36,3 +36,4 @@ def split_pdf_to_end(input_pdf_path, output_pdf_path):
     pdf_file_editor = pdf_facades.PdfFileEditor()
     pdf_file_editor.split_to_end(input_pdf_path, 2, output_pdf_path)
 ```
+

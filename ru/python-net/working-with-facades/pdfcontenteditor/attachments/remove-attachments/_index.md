@@ -3,7 +3,7 @@ title: Удалить вложения
 linktitle: Удалить вложения
 type: docs
 weight: 50
-url: /python-net/remove-attachments/
+url: /ru/python-net/remove-attachments/
 description: В этом примере происходит привязка входного PDF, удаляются все вложения и сохраняется изменённый PDF без встроенных файлов.
 lastmod: "2026-03-20"
 sitemap:
@@ -43,3 +43,4 @@ def remove_attachments(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

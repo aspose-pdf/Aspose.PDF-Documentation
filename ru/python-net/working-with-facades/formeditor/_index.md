@@ -3,7 +3,7 @@ title: Класс FormEditor
 linktitle: Класс FormEditor
 type: docs
 weight: 100
-url: /python-net/formeditor-class/
+url: /ru/python-net/formeditor-class/
 description: Узнайте, как использовать класс FormEditor в Aspose.PDF for Python via .NET для создания полей формы, изменения существующих полей, настройки внешнего вида полей и добавления скриптов или действий отправки.
 lastmod: "2026-03-05"
 sitemap:
@@ -24,3 +24,4 @@ Abstract: В этом разделе объясняется, как исполь
 - [Настройка внешнего вида полей](/pdf/ru/python-net/customizing-field-appearance/)
 - [Изменение полей формы](/pdf/ru/python-net/modifying-form-fields/)
 - [Создание поля формы](/pdf/ru/python-net/creating-form-field)
+

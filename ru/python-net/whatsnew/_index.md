@@ -9,7 +9,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 lastmod: "2025-02-24"
-TechArticle: false 
+TechArticle: false
 ---
 
 ## Что нового в Aspose.PDF 26.3

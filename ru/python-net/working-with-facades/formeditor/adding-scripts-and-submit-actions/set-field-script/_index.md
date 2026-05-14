@@ -3,7 +3,7 @@ title: Установить скрипт поля
 linktitle: Установить скрипт поля
 type: docs
 weight: 30
-url: /python-net/set-field-script/
+url: /ru/python-net/set-field-script/
 description: Этот фрагмент кода показывает, как назначить действие JavaScript полю формы в PDF‑документе с использованием Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -58,3 +58,4 @@ def set_field_script(input_file_name, output_file_name):
     # Save output PDF file
     form_editor.save(output_file_name)
 ```
+

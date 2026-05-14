@@ -3,7 +3,7 @@ title: Изменить пароль PDF‑файла
 linktitle: Изменить пароль PDF‑файла
 type: docs
 weight: 10
-url: /python-net/change-password/
+url: /ru/python-net/change-password/
 description: Изменить пользовательский и владелецский пароли защищённого PDF‑документа с помощью Aspose.PDF for Python via .NET.
 lastmod: "2026-03-18"
 sitemap:
@@ -153,3 +153,4 @@ def try_change_password_without_exception(infile, outfile):
     else:
         print("Password change failed. Check owner password or document security.")
 ```
+

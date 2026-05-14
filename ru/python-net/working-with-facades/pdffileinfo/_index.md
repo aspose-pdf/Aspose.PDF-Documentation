@@ -3,7 +3,7 @@ title: Класс PdfFileInfo
 linktitle: Класс PdfFileInfo
 type: docs
 weight: 110
-url: /python-net/pdffileinfo-class/
+url: /ru/python-net/pdffileinfo-class/
 description: Узнайте, как использовать класс PdfFileInfo в Aspose.PDF for Python via .NET для проверки метаданных PDF, свойств документа, привилегий, деталей версии и информации о страницах.
 lastmod: "2026-03-19"
 draft: false
@@ -24,3 +24,4 @@ Abstract: В этом разделе объясняется, как исполь
 - [Управляйте метаданными PDF с помощью PdfFileInfo](/pdf/ru/python-net/pdf-metadata/)
 - [Проверьте свойства документа с помощью PdfFileInfo](/pdf/ru/python-net/document-properties/)
 - [Получите информацию о страницах с помощью PdfFileInfo](/pdf/ru/python-net/page-information/)
+

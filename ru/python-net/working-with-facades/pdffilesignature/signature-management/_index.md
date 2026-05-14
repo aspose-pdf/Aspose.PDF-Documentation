@@ -3,7 +3,7 @@ title: Управление подписями
 linktitle: Управление подписями
 type: docs
 weight: 80
-url: /python-net/signature-management/
+url: /ru/python-net/signature-management/
 description: Узнайте, как удалять цифровые подписи из PDF‑документов и при необходимости очищать поля подписи, используя PdfFileSignature в Python.
 lastmod: "2026-04-02"
 sitemap:
@@ -60,3 +60,4 @@ def remove_signature_with_field_cleanup(infile, outfile):
     finally:
         pdf_signature.close()
 ```
+

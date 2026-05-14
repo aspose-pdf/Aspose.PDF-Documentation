@@ -3,13 +3,13 @@ title: Конвертировать PDF в PowerPoint на Python
 linktitle: Конвертировать PDF в PowerPoint
 type: docs
 weight: 30
-url: /python-net/convert-pdf-to-powerpoint/
+url: /ru/python-net/convert-pdf-to-powerpoint/
 description: Узнайте, как конвертировать файлы PDF в PowerPoint на Python с помощью Aspose.PDF for Python via .NET, включая редактируемые слайды PPTX и вывод слайдов в виде изображений.
 lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Как конвертировать PDF в PowerPoint на Python
 Abstract: Эта статья представляет собой всестороннее руководство по конвертации PDF‑файлов в презентации PowerPoint с использованием Python, с особым акцентом на формат PPTX. В ней представлено использование Aspose.PDF for Python via .NET, который упрощает процесс конвертации, позволяя преобразовывать страницы PDF в отдельные слайды в файле PPTX. В статье описаны необходимые шаги конвертации, включая создание экземпляров классов Document и PptxSaveOptions и использование метода Save. Кроме того, отмечена возможность конвертировать PDF в PPTX с слайдами в виде изображений путем установки определённого свойства в PptxSaveOptions. Приведены фрагменты кода, иллюстрирующие процесс конвертации. В статье также упомянуто онлайн‑приложение для тестирования функции конвертации PDF в PPTX, предлагающее пользователям практический опыт. Кроме того, перечислены различные связанные темы и функции, доступные в данном контексте, подчеркивающие универсальность и программный подход к работе с конвертацией PDF в PowerPoint с помощью Python.
 ---

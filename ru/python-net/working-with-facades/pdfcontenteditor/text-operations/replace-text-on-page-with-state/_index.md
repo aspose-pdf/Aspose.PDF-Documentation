@@ -3,7 +3,7 @@ title: Заменить текст на странице с помощью state
 linktitle: Заменить текст на странице с помощью state
 type: docs
 weight: 20
-url: /python-net/replace-text-on-page-with-state/
+url: /ru/python-net/replace-text-on-page-with-state/
 description: В этом примере все "software" на странице 1 заменяются на "SOFTWARE PAGE 1", используя красный текст с размером шрифта 12.
 lastmod: "2026-03-20"
 sitemap:
@@ -52,3 +52,4 @@ def replace_text_on_page_with_state(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

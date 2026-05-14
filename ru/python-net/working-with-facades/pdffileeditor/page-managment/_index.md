@@ -3,7 +3,7 @@ title: Управление страницами
 linktitle: Управление страницами
 type: docs
 weight: 30
-url: /python-net/page-management/
+url: /ru/python-net/page-management/
 description: Программное управление страницами PDF позволяет разработчикам изменять документы без ручного редактирования.
 lastmod: "2026-03-05"
 sitemap:
@@ -24,3 +24,4 @@ Abstract: Узнайте, как выполнять операции на уро
 - [Удалить страницы из PDF](/pdf/ru/python-net/delete-pages-from-pdf/)
 - [Вставить страницы в PDF](/pdf/ru/python-net/insert-pages-into-pdf/)
 - [Добавить страницы в PDF](/pdf/ru/python-net/append-pages-to-pdf/)
+

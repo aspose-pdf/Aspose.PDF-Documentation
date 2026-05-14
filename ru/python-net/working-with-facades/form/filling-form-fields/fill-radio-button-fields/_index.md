@@ -3,7 +3,7 @@ title: Заполнить поля радиокнопок
 linktitle: Заполнить поля радиокнопок
 type: docs
 weight: 30
-url: /python-net/fill-radio-button-fields/
+url: /ru/python-net/fill-radio-button-fields/
 description: В этом примере демонстрируется, как программно заполнять поля радиокнопок в PDF‑форме с использованием Aspose.PDF for Python via .NET. Показано, как привязать PDF‑документ, выбрать вариант радиокнопки по индексу и сохранить обновлённый файл.
 lastmod: "2026-02-19"
 ---
@@ -43,3 +43,4 @@ def fill_radio_button_fields(infile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

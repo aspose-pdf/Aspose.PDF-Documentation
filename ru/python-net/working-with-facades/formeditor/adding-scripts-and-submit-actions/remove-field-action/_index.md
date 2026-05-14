@@ -3,7 +3,7 @@ title: Удалить действие поля
 linktitle: Удалить действие поля
 type: docs
 weight: 20
-url: /python-net/remove-field-action/
+url: /ru/python-net/remove-field-action/
 description: Удаление JavaScript из полей формы может быть полезным при изменении интерактивных PDF‑форм, отключении ранее назначенных действий или очистке документов, содержащих ненужные скрипты.
 lastmod: "2026-03-05"
 sitemap:
@@ -49,3 +49,4 @@ def remove_field_script(input_file_name, output_file_name):
     # Save output PDF file
     form_editor.save(output_file_name)
 ```
+

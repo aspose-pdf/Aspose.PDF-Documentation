@@ -3,7 +3,7 @@ title: Создать поле RadioButton
 linktitle: Создать поле RadioButton
 type: docs
 weight: 40
-url: /python-net/create-radiobutton-field/
+url: /ru/python-net/create-radiobutton-field/
 description: Узнайте, как программно добавить поле радиокнопки в PDF‑документ с помощью Aspose.PDF for Python. Этот пример демонстрирует, как создать группу радиокнопок, определить варианты выбора и сохранить обновлённый PDF‑файл.
 lastmod: "2026-03-05"
 sitemap:
@@ -48,3 +48,4 @@ def create_radiobutton_field(infile, outfile):
     # Save updated PDF document with form fields
     pdf_form_editor.save(outfile)
 ```
+

@@ -3,7 +3,7 @@ title: Создать поле CheckBox
 linktitle: Создать поле CheckBox
 type: docs
 weight: 10
-url: /python-net/create-checkbox-field/
+url: /ru/python-net/create-checkbox-field/
 description: Узнайте, как программно добавить поле формы‑чекбокс в документ PDF с помощью Aspose.PDF for Python. Это руководство демонстрирует, как использовать класс FormEditor для вставки интерактивного чекбокса в существующий файл PDF и сохранения обновлённого документа.
 lastmod: "2026-03-05"
 sitemap:
@@ -53,3 +53,4 @@ def create_checkbox_field(infile, outfile):
     # Save updated PDF document with form fields
     pdf_form_editor.save(outfile)
 ```
+

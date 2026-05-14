@@ -3,7 +3,7 @@ title: Проверки целостности подписи
 linktitle: Проверки целостности подписи
 type: docs
 weight: 70
-url: /python-net/signature-integrity-checks/
+url: /ru/python-net/signature-integrity-checks/
 description: Узнайте, как проверить, охватывает ли подпись PDF весь документ, и подтвердить целостность подписанного документа с помощью PdfFileSignature в Python.
 lastmod: "2026-04-02"
 sitemap:
@@ -60,4 +60,5 @@ def validate_document_integrity(infile):
     finally:
         pdf_signature.close()
 ```
+
 

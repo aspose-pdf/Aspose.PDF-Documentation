@@ -3,7 +3,7 @@ title: Получить варианты радиокнопок
 linktitle: Получить варианты радиокнопок
 type: docs
 weight: 20
-url: /python-net/get-radio-button-options/
+url: /ru/python-net/get-radio-button-options/
 description: В этой статье демонстрируется, как получить текущее выбранное значение поля радиокнопки в PDF‑документе с помощью API Aspose.PDF Facades.
 lastmod: "2026-02-19"
 ---
@@ -41,3 +41,4 @@ def get_radio_button_options(infile):
         options = pdf_form.get_button_option_current_value(field_name)
         print(f"Options for '{field_name}': {options}")
 ```
+

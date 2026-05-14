@@ -3,7 +3,7 @@ title: Класс PdfContentEditor
 linktitle: Класс PdfContentEditor
 type: docs
 weight: 30
-url: /python-net/pdfcontenteditor-class/
+url: /ru/python-net/pdfcontenteditor-class/
 description: Узнайте, как использовать класс PdfContentEditor в Aspose.PDF for Python via .NET для редактирования содержимого PDF, управления аннотациями и вложениями, работы со ссылками, изображениями, текстом, мультимедиа, штампами и настройками просмотра.
 lastmod: "2026-03-20"
 sitemap:
@@ -30,3 +30,4 @@ Abstract: В этом разделе объясняется, как исполь
 - [Управляйте PDF‑штампами с помощью PdfContentEditor](/pdf/ru/python-net/stamps-management/)
 - [Заменяйте и обновляйте текст с помощью PdfContentEditor](/pdf/ru/python-net/text-operations/)
 - [Изменяйте настройки просмотра с помощью PdfContentEditor](/pdf/ru/python-net/viewer-preferences/)
+

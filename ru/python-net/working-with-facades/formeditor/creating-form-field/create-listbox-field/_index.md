@@ -3,7 +3,7 @@ title: Создать поле ListBox
 linktitle: Создать поле ListBox
 type: docs
 weight: 30
-url: /python-net/create-listbox-field/
+url: /ru/python-net/create-listbox-field/
 description: Узнайте, как программно добавить поле формы ListBox в документ PDF с использованием Aspose.PDF for Python. Это руководство показывает, как вставить поле ListBox, определить выбираемые элементы и сохранить обновлённый файл PDF.
 lastmod: "2026-03-05"
 sitemap:
@@ -48,3 +48,4 @@ def create_listbox_field(infile, outfile):
     # Save updated PDF document with form fields
     pdf_form_editor.save(outfile)
 ```
+

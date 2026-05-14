@@ -3,7 +3,7 @@ title: Удалить страницы из PDF
 linktitle: Удалить страницы из PDF
 type: docs
 weight: 20
-url: /python-net/delete-pages-from-pdf/
+url: /ru/python-net/delete-pages-from-pdf/
 description: Удалить выбранные страницы из PDF-документа с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:

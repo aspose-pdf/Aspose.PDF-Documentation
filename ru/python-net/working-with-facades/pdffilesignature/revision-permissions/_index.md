@@ -3,7 +3,7 @@ title: Ревизия и разрешения
 linktitle: Ревизия и разрешения
 type: docs
 weight: 40
-url: /python-net/revision-permissions/
+url: /ru/python-net/revision-permissions/
 description: Узнайте, как проверять ревизии подписей, ревизии документов и разрешения на сертификацию в PDF‑файлах с помощью PdfFileSignature в Python.
 lastmod: "2026-04-02"
 sitemap:
@@ -79,4 +79,5 @@ def get_access_permissions(infile):
     finally:
         pdf_signature.close()
 ```
+
 

@@ -3,7 +3,7 @@ title: Уплощение конкретных полей
 linktitle: Уплощение конкретных полей
 type: docs
 weight: 20
-url: /python-net/flatten-specific-fields/
+url: /ru/python-net/flatten-specific-fields/
 description: В этом разделе демонстрируется, как управлять и изменять поля форм PDF с помощью Aspose.PDF for Python via .NET. Он содержит практические примеры уплощения конкретных полей, уплощения всех полей формы и программного переименования существующих полей.
 lastmod: "2026-02-19"
 ---
@@ -46,3 +46,4 @@ def flatten_specific_fields(infile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

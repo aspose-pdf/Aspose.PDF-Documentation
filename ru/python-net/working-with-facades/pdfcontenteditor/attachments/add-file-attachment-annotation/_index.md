@@ -3,7 +3,7 @@ title: Добавить аннотацию вложения файла
 linktitle: Добавить аннотацию вложения файла
 type: docs
 weight: 30
-url: /python-net/add-file-attachment-annotation/
+url: /ru/python-net/add-file-attachment-annotation/
 description: В примере привязывается входной PDF, добавляется аннотация вложения файла на первую страницу с использованием пути к файлу и сохраняется обновлённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -50,3 +50,4 @@ def add_file_attachment_annotation(infile, attachment_file, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

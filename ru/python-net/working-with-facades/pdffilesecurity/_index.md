@@ -3,7 +3,7 @@ title: Класс PdfFileSecurity
 linktitle: Класс PdfFileSecurity
 type: docs
 weight: 125
-url: /python-net/pdffilesecurity-class/
+url: /ru/python-net/pdffilesecurity-class/
 description: Узнайте, как использовать класс PdfFileSecurity в Aspose.PDF for Python via .NET для шифрования и дешифрования PDF, изменения паролей и управления привилегиями документа.
 lastmod: "2026-03-18"
 sitemap:
@@ -24,3 +24,4 @@ Abstract: В этом разделе объясняется, как исполь
 - [Расшифровка PDF-файлов с помощью PdfFileSecurity](/pdf/ru/python-net/decrypt-pdf-file/)
 - [Изменение паролей PDF с помощью PdfFileSecurity](/pdf/ru/python-net/change-password/)
 - [Установка привилегий PDF с помощью PdfFileSecurity](/pdf/ru/python-net/set-privileges/)
+

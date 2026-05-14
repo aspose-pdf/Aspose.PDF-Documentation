@@ -3,7 +3,7 @@ title: Добавить линейные фигуры в PDF на Python
 linktitle: Добавить линию
 type: docs
 weight: 40
-url: /python-net/add-line/
+url: /ru/python-net/add-line/
 description: Узнайте, как рисовать линейные фигуры и стилизованные линии в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:
@@ -107,3 +107,4 @@ def draw_line_across_page(outfile: str):
 - [Добавить кривые формы в PDF в Python](/pdf/ru/python-net/add-curve/)
 - [Добавить прямоугольные формы в PDF в Python](/pdf/ru/python-net/add-rectangle/)
 - [Проверьте границы фигур в графиках PDF с помощью Python](/pdf/ru/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+

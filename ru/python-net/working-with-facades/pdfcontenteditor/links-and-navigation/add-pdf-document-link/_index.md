@@ -3,7 +3,7 @@ title: Добавить ссылку на PDF‑документ
 linktitle: Добавить ссылку на PDF‑документ
 type: docs
 weight: 50
-url: /python-net/add-pdf-document-link/
+url: /ru/python-net/add-pdf-document-link/
 description: В этом примере привязывается входной PDF, добавляется ссылка зелёного цвета на страницу в другом PDF и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -53,3 +53,4 @@ def add_pdf_document_link(infile, linked_pdf, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

@@ -3,7 +3,7 @@ title: Добавить аннотации в виде курсора
 linktitle: Добавить аннотации в виде курсора
 type: docs
 weight: 10
-url: /python-net/add-caret-annotation/
+url: /ru/python-net/add-caret-annotation/
 description: В этом примере загружается существующий PDF, добавляется аннотация в виде курсора на первую страницу и сохраняется изменённый документ. Аннотация включает красный символ курсора и пояснительный текст комментария.
 lastmod: "2026-03-20"
 sitemap:
@@ -57,3 +57,4 @@ def add_caret_annotation(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

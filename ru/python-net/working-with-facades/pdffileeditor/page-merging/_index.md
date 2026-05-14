@@ -3,7 +3,7 @@ title: Объединить PDF-файлы
 linktitle: Объединить PDF-файлы
 type: docs
 weight: 40
-url: /python-net/page-merging/
+url: /ru/python-net/page-merging/
 description: Объединение PDF‑документов является распространенной задачей в автоматизированных рабочих процессах, генерации отчетов и управлении документами.
 lastmod: "2026-03-05"
 sitemap:

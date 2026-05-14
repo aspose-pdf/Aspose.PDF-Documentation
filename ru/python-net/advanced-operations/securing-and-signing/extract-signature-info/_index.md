@@ -3,13 +3,13 @@ title: Извлечь информацию о подписи из PDF на Pytho
 linktitle: Извлечь детали из подписи
 type: docs
 weight: 20
-url: /python-net/extract-image-and-signature-information/
+url: /ru/python-net/extract-image-and-signature-information/
 description: Узнайте, как извлекать изображения подписей, сертификаты и детали цифровой подписи из PDF‑файлов на Python.
 lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Извлекайте изображения подписей и детали сертификатов из PDF‑файлов на Python.
 Abstract: В этой статье объясняется, как извлекать изображения и информацию о цифровой подписи из PDF‑документов с помощью Aspose.PDF for Python. Узнайте, как получать изображения подписи, извлекать данные сертификата, проверять алгоритмы подписи и обнаруживать скомпрометированные подписи в подписанных PDF‑файлах.
 ---
@@ -168,3 +168,4 @@ def check(infile: str) -> None:
 - [Электронно подписывать PDF-файлы на Python](/pdf/ru/python-net/digitally-sign-pdf-file/)
 - [Подписать PDF‑документы со смарт‑карты в Python](/pdf/ru/python-net/sign-pdf-document-from-smart-card/)
 - [Шифрование и дешифрование PDF‑файлов в Python](/pdf/ru/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)
+

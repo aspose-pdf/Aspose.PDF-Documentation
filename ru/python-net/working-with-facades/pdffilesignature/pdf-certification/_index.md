@@ -3,7 +3,7 @@ title: Сертификация PDF
 linktitle: Сертификация PDF
 type: docs
 weight: 30
-url: /python-net/pdf-certification/
+url: /ru/python-net/pdf-certification/
 description: Узнайте, как сертифицировать PDF‑документы в Python с помощью PdfFileSignature и DocMDPSignature с различными разрешениями на изменение документа.
 lastmod: "2026-04-02"
 sitemap:
@@ -84,3 +84,4 @@ def apply_document_level_certification(infile, outfile, certificate_path):
     finally:
         pdf_signature.close()
 ```
+

@@ -3,7 +3,7 @@ title: Создать поле TextBox
 linktitle: Создать поле TextBox
 type: docs
 weight: 60
-url: /python-net/create-textbox-field/
+url: /ru/python-net/create-textbox-field/
 description: Узнайте, как программно добавить поля TextBox в документ PDF с помощью Aspose.PDF for Python. Этот учебник показывает, как вставить несколько текстовых полей, задать значения по умолчанию и сохранить обновлённый документ PDF.
 lastmod: "2026-03-05"
 sitemap:
@@ -48,3 +48,4 @@ def create_textbox_field(infile, outfile):
     # Save updated PDF document with form fields
     pdf_form_editor.save(outfile)
 ```
+

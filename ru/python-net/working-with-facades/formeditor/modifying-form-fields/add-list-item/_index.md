@@ -3,7 +3,7 @@ title: Добавить элемент списка
 linktitle: Добавить элемент списка
 type: docs
 weight: 10
-url: /python-net/add-list-item/
+url: /ru/python-net/add-list-item/
 description: В этом примере демонстрируется, как добавить элементы в поле списка формы в PDF‑документе с использованием Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -44,3 +44,4 @@ def add_list_item(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+

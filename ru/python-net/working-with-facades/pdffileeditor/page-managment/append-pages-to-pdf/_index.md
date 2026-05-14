@@ -3,7 +3,7 @@ title: Добавить страницы в PDF
 linktitle: Добавить страницы в PDF
 type: docs
 weight: 10
-url: /python-net/append-pages-to-pdf/
+url: /ru/python-net/append-pages-to-pdf/
 description: Добавьте страницы из одного PDF‑документа в другой с использованием Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -41,3 +41,4 @@ def append_pages_to_pdf(infile, sample_file, outfile):
     # Append pages from the specified PDF document to the end of the source PDF document
     pdf_editor.append(infile, [sample_file], 1, 2, outfile)
 ```
+

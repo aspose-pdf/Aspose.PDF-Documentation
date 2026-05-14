@@ -3,7 +3,7 @@ title: Импорт данных XML
 linktitle: Импорт данных XML
 type: docs
 weight: 40
-url: /python-net/import-xml-data/
+url: /ru/python-net/import-xml-data/
 description: В этом примере демонстрируется, как импортировать данные формы из XML‑файла в поля формы PDF с использованием Aspose.PDF for Python via .NET. Показано, как привязать документ PDF, прочитать структурированные XML‑данные через файловый поток и автоматически заполнить соответствующие поля формы.
 lastmod: "2026-02-19"
 ---
@@ -45,3 +45,4 @@ def import_xml_to_pdf_fields(infile, datafile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

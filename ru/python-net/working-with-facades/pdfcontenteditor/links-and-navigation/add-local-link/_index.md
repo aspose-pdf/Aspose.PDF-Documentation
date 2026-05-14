@@ -3,7 +3,7 @@ title: Добавить локальную ссылку
 linktitle: Добавить локальную ссылку
 type: docs
 weight: 40
-url: /python-net/add-local-link/
+url: /ru/python-net/add-local-link/
 description: В этом примере привязывается входной PDF, добавляется локальная ссылка красного цвета на странице 1 и сохраняется изменённый документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -52,3 +52,4 @@ def add_local_link(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

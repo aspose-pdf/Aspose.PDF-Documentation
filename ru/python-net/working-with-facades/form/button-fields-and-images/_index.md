@@ -3,7 +3,7 @@ title: Поля кнопок и изображения
 linktitle: Поля кнопок и изображения
 type: docs
 weight: 40
-url: /python-net/button-fields-and-images/
+url: /ru/python-net/button-fields-and-images/
 description: В этом примере демонстрируется, как управлять полями кнопок в PDF‑форме с использованием API Aspose.PDF Facades.
 lastmod: "2026-02-19"
 TechArticle: true
@@ -82,3 +82,4 @@ def get_submit_flags(infile, outfile):
 
     print(f"Submit flags: {flags}")
 ```
+

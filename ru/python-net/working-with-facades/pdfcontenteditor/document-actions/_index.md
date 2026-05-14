@@ -3,7 +3,7 @@ title: Действия с документом
 linktitle: Действия с документом
 type: docs
 weight: 40
-url: /python-net/document-actions/
+url: /ru/python-net/document-actions/
 description:
 lastmod: "2026-03-20"
 sitemap:

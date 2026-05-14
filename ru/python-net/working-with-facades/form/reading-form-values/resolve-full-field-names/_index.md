@@ -3,7 +3,7 @@ title: Получить полные имена полей
 linktitle: Получить полные имена полей
 type: docs
 weight: 60
-url: /python-net/resolve-full-field-names/
+url: /ru/python-net/resolve-full-field-names/
 description: Этот пример демонстрирует, как получить полностью квалифицированные имена полей формы в PDF‑документе с использованием Aspose.PDF Facades API.
 lastmod: "2026-02-19"
 ---
@@ -41,3 +41,4 @@ def resolve_full_field_names(infile):
         name = pdf_form.get_full_field_name(field)
         print(f"Full field name: {name}")
 ```
+

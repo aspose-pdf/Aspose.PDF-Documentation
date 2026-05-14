@@ -3,7 +3,7 @@ title: Украсьте поле
 linktitle: Украсьте поле
 type: docs
 weight: 10
-url: /python-net/decorate-field/
+url: /ru/python-net/decorate-field/
 description: В этом примере демонстрируется, как настроить внешний вид поля формы в PDF‑документе с использованием Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -53,4 +53,5 @@ def decorate_field(infile, outfile):
     # Save updated document
     form_editor.save(outfile)
 ```
+
 

@@ -3,7 +3,7 @@ title: Подписать PDF документы
 linktitle: Подписать PDF документы
 type: docs
 weight: 10
-url: /python-net/pdf-signing/
+url: /ru/python-net/pdf-signing/
 description: Узнайте, как подписывать PDF документы в Python с помощью PdfFileSignature, используя цифровые подписи, основанные на сертификате, именованные и видимые.
 lastmod: "2026-04-14"
 sitemap:
@@ -181,3 +181,4 @@ def apply_visible_signature(infile, outfile, certificate_path):
     finally:
         pdf_signature.close()
 ```
+

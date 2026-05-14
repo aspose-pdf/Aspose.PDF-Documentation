@@ -3,7 +3,7 @@ title: Свойства документа
 linktitle: Свойства документа
 type: docs
 weight: 10
-url: /python-net/document-properties/
+url: /ru/python-net/document-properties/
 description: Узнайте, как программно получать метаданные PDF с помощью Aspose.PDF for Python. Это руководство охватывает получение версии PDF и проверку привилегий документа, включая разрешения на печать, копирование, изменение и заполнение форм.
 lastmod: "2026-03-05"
 draft: false

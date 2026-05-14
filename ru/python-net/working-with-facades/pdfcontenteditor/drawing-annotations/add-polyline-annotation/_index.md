@@ -3,7 +3,7 @@ title: Добавить аннотацию полилиний
 linktitle: Добавить аннотацию полилиний
 type: docs
 weight: 50
-url: /python-net/add-polyline-annotation/
+url: /ru/python-net/add-polyline-annotation/
 description: В примере привязывается входной PDF, создаётся сплошная полилиния на первой странице и сохраняется изменённый документ с аннотацией.
 lastmod: "2026-03-20"
 sitemap:
@@ -53,3 +53,4 @@ def add_polyline_annotation(infile, outfile):
     # Save output PDF file
     content_editor.save(outfile)
 ```
+

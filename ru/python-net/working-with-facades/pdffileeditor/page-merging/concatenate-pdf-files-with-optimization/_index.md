@@ -3,7 +3,7 @@ title: Объединение PDF-файлов с оптимизацией
 linktitle: Объединение PDF-файлов с оптимизацией
 type: docs
 weight: 30
-url: /python-net/concatenate-pdf-files-with-optimization/
+url: /ru/python-net/concatenate-pdf-files-with-optimization/
 description: Объедините несколько PDF-файлов в один оптимизированный PDF с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -36,3 +36,4 @@ def concatenate_pdf_files_with_optimization(files_to_merge, output_file):
     pdf_editor.optimize_size = True  # Enable optimization for smaller output file size
     pdf_editor.concatenate(files_to_merge, output_file)
 ```
+

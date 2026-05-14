@@ -3,7 +3,7 @@ title: Переименовать поля формы
 linktitle: Переименовать поля формы
 type: docs
 weight: 30
-url: /python-net/rename-form-fields/
+url: /ru/python-net/rename-form-fields/
 description: Это пример демонстрирует, как переименовать поля формы в PDF‑документе с помощью Aspose.PDF for Python via .NET. Показано, как привязать PDF‑форму, программно обновить существующие имена полей и сохранить изменённый файл. Переименование полей помогает стандартизировать структуру формы, улучшить сопоставление данных и упростить интеграцию с автоматизированными рабочими процессами или внешними системами.
 lastmod: "2026-02-19"
 ---
@@ -45,3 +45,4 @@ def rename_form_fields(infile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

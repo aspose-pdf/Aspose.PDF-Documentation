@@ -3,7 +3,7 @@ title: Получить смещение страницы
 linktitle: Получить смещение страницы
 type: docs
 weight: 20
-url: /python-net/get-page-offset/
+url: /ru/python-net/get-page-offset/
 description: Этот пример демонстрирует, как использовать PdfFileInfo для получения смещений по осям X и Y конкретной страницы и преобразования их в дюймы для точного анализа макета и позиционирования.
 lastmod: "2026-03-05"
 draft: false
@@ -44,3 +44,4 @@ def get_page_offsets(infile):
     print(f"Page X Offset: {page_x_offset} inches")
     print(f"Page Y Offset: {page_y_offset} inches")
 ```
+

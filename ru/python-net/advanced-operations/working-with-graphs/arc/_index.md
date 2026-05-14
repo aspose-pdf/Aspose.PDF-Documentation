@@ -3,7 +3,7 @@ title: Добавить объекты дуг в PDF на Python
 linktitle: Добавить дугу
 type: docs
 weight: 10
-url: /python-net/add-arc/
+url: /ru/python-net/add-arc/
 description: Узнайте, как рисовать и заливать формы дуг в PDF‑файлах на Python.
 lastmod: "2026-04-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Добавить заголовок в PDF
 linktitle: Добавить заголовок в PDF
 type: docs
 weight: 20
-url: /python-net/add-header/
+url: /ru/python-net/add-header/
 description: Узнайте, как добавить текстовые и графические заголовки на страницы PDF, используя PdfFileStamp в Python.
 lastmod: "2026-04-13"
 TechArticle: true
@@ -96,3 +96,4 @@ def add_header_with_margins(infile: str, outfile: str) -> None:
     finally:
         pdf_stamper.close()
 ```
+

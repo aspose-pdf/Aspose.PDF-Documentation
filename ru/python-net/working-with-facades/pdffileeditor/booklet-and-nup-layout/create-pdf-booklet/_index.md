@@ -3,7 +3,7 @@ title: Создать PDF‑буклет
 linktitle: Создать PDF‑буклет
 type: docs
 weight: 20
-url: /python-net/create-pdf-booklet/
+url: /ru/python-net/create-pdf-booklet/
 description: Создать PDF‑буклет из существующего документа с использованием Aspose.PDF for Python
 lastmod: "2026-03-05"
 sitemap:
@@ -80,3 +80,4 @@ def try_create_pdf_booklet(infile, outfile):
     if not booklet_maker.try_make_booklet(FileIO(infile), FileIO(outfile, "w")):
         print("Failed to create booklet.")
 ```
+

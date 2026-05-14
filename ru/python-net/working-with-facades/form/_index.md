@@ -3,7 +3,7 @@ title: Класс Form
 linktitle: Класс Form
 type: docs
 weight: 140
-url: /python-net/form-class/
+url: /ru/python-net/form-class/
 description: В этом разделе объясняется, как работать с фасадами Aspose.PDF, используя класс Form.
 lastmod: "2025-11-05"
 sitemap:
@@ -20,3 +20,4 @@ Abstract: В этом разделе объясняется, как исполь
 - [Поля кнопок и изображения](/pdf/ru/python-net/button-fields-and-images/)
 - [Управление полями Form](/pdf/ru/python-net/managing-form-fields/)
 - [Чтение значений Form](/pdf/ru/python-net/reading-form-values/)
+

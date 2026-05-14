@@ -3,7 +3,7 @@ title: Импортировать данные FDF
 linktitle: Импортировать данные FDF
 type: docs
 weight: 10
-url: /python-net/import-fdf-data/
+url: /ru/python-net/import-fdf-data/
 description: В этом примере демонстрируется, как импортировать данные формы из файла FDF в PDF‑форму с использованием Aspose.PDF for Python via .NET. Показано, как привязать PDF‑документ, считать значения полей формы из потока FDF и автоматически заполнить соответствующие поля.
 lastmod: "2026-02-19"
 ---
@@ -44,3 +44,4 @@ def import_fdf_to_pdf_form(infile, datafile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

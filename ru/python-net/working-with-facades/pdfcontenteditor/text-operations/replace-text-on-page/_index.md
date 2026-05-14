@@ -3,7 +3,7 @@ title: Заменить текст на странице
 linktitle: Заменить текст на странице
 type: docs
 weight: 10
-url: /python-net/replace-text-on-page/
+url: /ru/python-net/replace-text-on-page/
 description: В этом примере "PDF" заменяется на "Page 1 Replaced Text" с использованием указанного размера шрифта.
 lastmod: "2026-03-20"
 sitemap:
@@ -46,3 +46,4 @@ def replace_text_on_page(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

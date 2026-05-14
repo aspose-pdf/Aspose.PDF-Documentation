@@ -3,7 +3,7 @@ title: Удалить действие при открытии
 linktitle: Удалить действие при открытии
 type: docs
 weight: 30
-url: /python-net/remove-open-action/
+url: /ru/python-net/remove-open-action/
 description: В этом примере загружается существующий PDF, удаляется действие при открытии и сохраняется очищенный документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -44,3 +44,4 @@ def remove_open_action(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

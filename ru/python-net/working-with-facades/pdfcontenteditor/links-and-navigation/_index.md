@@ -3,7 +3,7 @@ title: Ссылки и навигация
 linktitle: Ссылки и навигация
 type: docs
 weight: 70
-url: /python-net/links-and-navigation/
+url: /ru/python-net/links-and-navigation/
 description:
 lastmod: "2026-03-20"
 sitemap:
@@ -18,3 +18,4 @@ sitemap:
 - [Добавить ссылку на приложение](/pdf/ru/python-net/add-application-link/)
 - [Добавить пользовательскую ссылку действия](/pdf/ru/python-net/add-custom-action-link/)
 - [Извлечение ссылок](/pdf/ru/python-net/extract-links/)
+

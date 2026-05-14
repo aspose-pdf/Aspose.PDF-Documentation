@@ -3,7 +3,7 @@ title: Экспорт в FDF
 linktitle: Экспорт в FDF
 type: docs
 weight: 10
-url: /python-net/export-to-fdf/
+url: /ru/python-net/export-to-fdf/
 description: Этот пример объясняет, как экспортировать данные полей формы PDF в файл FDF (Forms Data Format) с использованием Aspose.PDF for Python via .NET. Он демонстрирует, как получить доступ к интерактивным данным формы через фасад Form, привязать исходный PDF‑документ и сохранить извлечённые значения в поток FDF.
 lastmod: "2026-02-19"
 ---
@@ -41,3 +41,4 @@ def export_form_data_to_fdf(infile, outfile):
         # Export form data to FDF file
         pdf_form.export_fdf(fdf_output_stream)
 ```
+

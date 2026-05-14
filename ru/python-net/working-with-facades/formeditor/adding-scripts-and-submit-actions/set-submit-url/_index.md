@@ -3,7 +3,7 @@ title: Установить URL отправки
 linktitle: Установить URL отправки
 type: docs
 weight: 40
-url: /python-net/set-submit-url/
+url: /ru/python-net/set-submit-url/
 description: В этом примере показано, как настроить действие отправки для поля кнопки в PDF‑форме с использованием Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -55,3 +55,4 @@ def set_submit_url(input_file_name, output_file_name):
     # Save output PDF file
     form_editor.save(output_file_name)
 ```
+

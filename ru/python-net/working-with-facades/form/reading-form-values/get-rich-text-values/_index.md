@@ -3,7 +3,7 @@ title: Получить значения Rich Text
 linktitle: Получить значения Rich Text
 type: docs
 weight: 40
-url: /python-net/get-rich-text-values/
+url: /ru/python-net/get-rich-text-values/
 description: Этот раздел объясняет, как получить содержимое Rich Text поля формы в PDF‑документе с помощью API Aspose.PDF Facades. В отличие от обычных текстовых полей, поля Rich Text могут содержать форматированный контент, такой как полужирный текст, различные шрифты, цвета и стили абзацев.
 lastmod: "2026-02-19"
 ---
@@ -41,3 +41,4 @@ def get_rich_text_values(infile):
         rich_text_value = pdf_form.get_rich_text(field_name)
         print(f"Rich text value of '{field_name}': {rich_text_value}")
 ```
+

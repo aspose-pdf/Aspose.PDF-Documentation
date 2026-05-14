@@ -3,7 +3,7 @@ title: Добавить скрипт поля
 linktitle: Добавить скрипт поля
 type: docs
 weight: 10
-url: /python-net/add-field-script/
+url: /ru/python-net/add-field-script/
 description: Интерактивные PDF‑формы могут включать JavaScript для автоматизации действий, когда пользователи взаимодействуют с полями формы. С помощью Aspose.PDF for Python разработчики могут легко прикреплять скрипты к элементам формы, таким как кнопки или текстовые поля.
 lastmod: "2026-03-05"
 sitemap:
@@ -55,3 +55,4 @@ def add_field_script(input_file_name, output_file_name):
     # Save output PDF file
     form_editor.save(output_file_name)
 ```
+

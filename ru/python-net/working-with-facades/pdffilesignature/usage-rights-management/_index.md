@@ -3,7 +3,7 @@ title: Управление правами использования
 linktitle: Управление правами использования
 type: docs
 weight: 100
-url: /python-net/usage-rights-management/
+url: /ru/python-net/usage-rights-management/
 description: Узнайте, как обнаруживать и удалять права использования из PDF‑документов с помощью PdfFileSignature в Python.
 lastmod: "2026-04-02"
 sitemap:
@@ -61,3 +61,4 @@ def remove_usage_rights(infile, outfile):
     finally:
         pdf_signature.close()
 ```
+

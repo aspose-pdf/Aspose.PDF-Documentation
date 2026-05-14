@@ -3,7 +3,7 @@ title: Заполнить поля штрихкода
 linktitle: Заполнить поля штрихкода
 type: docs
 weight: 50
-url: /python-net/fill-barcode-fields/
+url: /ru/python-net/fill-barcode-fields/
 description: Этот пример демонстрирует, как программно заполнять поля штрихкода в PDF‑форме с использованием Aspose.PDF for Python via .NET. Он показывает, как привязать PDF‑документ, задать значение полю штрихкода и сохранить обновлённый файл.
 lastmod: "2026-02-19"
 ---
@@ -42,3 +42,4 @@ def fill_barcode_fields(infile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
+

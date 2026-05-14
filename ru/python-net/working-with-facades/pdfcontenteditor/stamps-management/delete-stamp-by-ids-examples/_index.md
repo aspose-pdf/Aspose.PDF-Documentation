@@ -3,7 +3,7 @@ title: Удалить штамп по ID
 linktitle: Удалить штамп по ID
 type: docs
 weight: 85
-url: /python-net/delete-stamp-by-ids-examples/
+url: /ru/python-net/delete-stamp-by-ids-examples/
 description:
 lastmod: "2026-03-20"
 sitemap:
@@ -66,4 +66,5 @@ def delete_stamp_by_ids_examples(infile, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+
 

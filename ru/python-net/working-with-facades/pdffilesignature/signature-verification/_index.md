@@ -3,7 +3,7 @@ title: Проверка подписи
 linktitle: Проверка подписи
 type: docs
 weight: 90
-url: /python-net/signature-verification/
+url: /ru/python-net/signature-verification/
 description: Узнайте, как проверять цифровые подписи и проверять, содержит ли PDF подписи, используя PdfFileSignature в Python.
 lastmod: "2026-04-02"
 sitemap:
@@ -59,3 +59,4 @@ def check_if_pdf_contains_signatures(infile):
     finally:
         pdf_signature.close()
 ```
+

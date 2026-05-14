@@ -3,7 +3,7 @@ title: Установить привилегии для существующег
 linktitle: Установить привилегии для существующего PDF‑файла
 type: docs
 weight: 40
-url: /python-net/set-privileges/
+url: /ru/python-net/set-privileges/
 description: Установите и управляйте привилегиями PDF‑документа, чтобы контролировать действия пользователей, такие как печать, копирование и редактирование.
 lastmod: "2026-03-18"
 sitemap:
@@ -146,3 +146,4 @@ def try_set_pdf_privileges_without_exception(infile, outfile):
     else:
         print("Setting privileges failed. Check passwords or document state.")
 ```
+

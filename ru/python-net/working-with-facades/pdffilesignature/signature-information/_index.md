@@ -3,7 +3,7 @@ title: Информация о подписи
 linktitle: Информация о подписи
 type: docs
 weight: 60
-url: /python-net/signature-information/
+url: /ru/python-net/signature-information/
 description: Узнайте, как читать имена подписей, данные подписанта, метки времени и метаданные подписи из подписанных PDF‑файлов с помощью PdfFileSignature в Python.
 lastmod: "2026-04-02"
 sitemap:
@@ -109,4 +109,5 @@ def get_signature_reason_and_location(infile):
     finally:
         pdf_signature.close()
 ```
+
 

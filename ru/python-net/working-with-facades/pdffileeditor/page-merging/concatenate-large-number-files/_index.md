@@ -3,7 +3,7 @@ title: Объединить большое количество PDF‑файло
 linktitle: Объединить большое количество PDF‑файлов
 type: docs
 weight: 10
-url: /python-net/concatenate-large-number-files/
+url: /ru/python-net/concatenate-large-number-files/
 description: Эффективно объединять большое количество PDF‑файлов с помощью Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
@@ -36,3 +36,4 @@ def concatenate_large_number_files(files_to_merge, output_file):
     pdf_editor.use_disk_buffer = True  # Enable disk buffering for large files
     pdf_editor.concatenate(files_to_merge, output_file)
 ```
+

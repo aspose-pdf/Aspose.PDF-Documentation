@@ -3,7 +3,7 @@ title: Заменить изображения в PDF
 linktitle: Заменить изображения в PDF
 type: docs
 weight: 30
-url: /python-net/replace-image/
+url: /ru/python-net/replace-image/
 description: В этом примере привязывается входной PDF, заменяется первое изображение на странице 1 новым изображением и сохраняется измененный документ.
 lastmod: "2026-03-20"
 sitemap:
@@ -41,3 +41,4 @@ def replace_image(infile, image_file, outfile):
     # Save updated document
     content_editor.save(outfile)
 ```
+

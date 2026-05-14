@@ -3,7 +3,7 @@ title: Управление штампами
 linktitle: Управление штампами
 type: docs
 weight: 90
-url: /python-net/stamps-management/
+url: /ru/python-net/stamps-management/
 description:
 lastmod: "2026-03-20"
 sitemap:
@@ -21,3 +21,4 @@ sitemap:
 - [Создать резиновую печать с потоком отображения](/pdf/ru/python-net/create-rubber-stamp-with-appearance-stream/)
 - [Удалить штампы глобально](/pdf/ru/python-net/delete-stamps-globally/)
 - [Список штампов](/pdf/ru/python-net/list-stamps/)
+

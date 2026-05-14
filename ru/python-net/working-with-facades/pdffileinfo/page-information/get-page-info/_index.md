@@ -3,7 +3,7 @@ title: Получить информацию о странице
 linktitle: Получить информацию о странице
 type: docs
 weight: 10
-url: /python-net/get-page-info/
+url: /ru/python-net/get-page-info/
 description: Узнайте, как программно получать информацию о странице в PDF с помощью Aspose.PDF for Python. В этом руководстве показывается, как получить ширину, высоту, поворот и смещения конкретной страницы в PDF‑документе.
 lastmod: "2026-03-05"
 draft: false
@@ -49,3 +49,4 @@ def get_page_information(infile):
     print(f"Page Height: {page_height}")
     print(f"Page Rotation: {page_rotation}")
 ```
+

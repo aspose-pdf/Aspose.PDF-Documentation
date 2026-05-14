@@ -3,13 +3,13 @@ title: Конвертировать другие форматы файлов в 
 linktitle: Конвертировать другие форматы файлов в PDF
 type: docs
 weight: 80
-url: /python-net/convert-other-files-to-pdf/
+url: /ru/python-net/convert-other-files-to-pdf/
 lastmod: "2026-04-14"
 description: Узнайте, как конвертировать файлы EPUB, Markdown, PCL, XPS, PostScript, XML и LaTeX в PDF на Python с помощью Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Как конвертировать другие форматы файлов в PDF на Python
 Abstract: В этой статье представлено всестороннее руководство по конвертации различных форматов файлов в PDF с использованием Python, используя возможности Aspose.PDF for Python via .NET. В документе описаны процессы конвертации для нескольких форматов, включая EPUB, Markdown, PCL, Text, XPS, PostScript, XML, XSL-FO и LaTeX/TeX. Каждый раздел предоставляет конкретные фрагменты кода и инструкции по реализации этих конвертаций. В статье подчеркивается полезность функций Aspose.PDF, таких как параметры загрузки, адаптированные под каждый тип файла, чтобы обеспечить точную и эффективную конвертацию. Кроме того, отмечается наличие онлайн‑приложений для конвертации, позволяющих пользователям самостоятельно опробовать функциональность. Это руководство служит практическим ресурсом для разработчиков, желающих интегрировать возможности конвертации в PDF в свои Python‑приложения.
 ---
@@ -336,3 +336,4 @@ def convert_XSLFO_to_PDF(xsltfile, xmlfile, outfile):
 - [Преобразовать HTML в PDF](/pdf/ru/python-net/convert-html-to-pdf/) для сценариев преобразования HTML и MHTML.
 - [Конвертировать форматы изображений в PDF](/pdf/ru/python-net/convert-images-format-to-pdf/) когда ваши входные данные — PNG, JPEG, TIFF, SVG или другие изображения.
 - [Конвертировать PDF в другие форматы](/pdf/ru/python-net/convert-pdf-to-other-files/) если вам также нужны обратные конверсии, такие как PDF в EPUB, Markdown или текст.
+
