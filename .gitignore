@@ -245,3 +245,4 @@ logs/
 reports/
 .doctranslate/
 node_modules/
+.codex-temp.json
