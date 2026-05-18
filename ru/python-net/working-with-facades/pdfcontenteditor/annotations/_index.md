@@ -3,7 +3,7 @@ title: Аннотации
 linktitle: Аннотации
 type: docs
 weight: 10
-url: /ru/python-net/annotations/
+url: /ru/python-net/annotations-facades/
 description:
 lastmod: "2026-03-20"
 sitemap:

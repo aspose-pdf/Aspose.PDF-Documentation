@@ -1,93 +1,35 @@
 ---
-title: Advanced operations
-linktitle: Advanced operations
+title: Расширенные операции
+linktitle: Расширенные операции
 type: docs
 weight: 90
 url: /ru/python-net/advanced-operations/
-description: Aspose.PDF for Python via .NET может выполнять простые и легкие задачи, а также справляться с более сложными целями. Ознакомьтесь со следующим разделом для продвинутых пользователей и разработчиков.
-lastmod: "2023-04-17"
+description: Aspose.PDF for Python via .NET может выполнять простые и лёгкие задачи и справляться с более сложными целями. Ознакомьтесь с следующим разделом для продвинутых пользователей и разработчиков.
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Раздел «Расширенные операции» с Python
+Abstract: Раздел «Расширенные операции» предоставляет всестороннее руководство по программной работе с существующими PDF‑файлами, независимо от их происхождения, с использованием различных инструментов и методов. Этот раздел расширяет базовые навыки, обсуждаемые в разделе «Basic Operations», исследуя расширенные функции.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Продвинутые операции с PDF через Python",
-    "alternativeHeadline": "Использование расширенных функций при работе с PDF через Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, продвинутые операции с pdf, создание pdf, удаление pdf, манипуляция pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/advanced-operations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/advanced-operations/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для продвинутых пользователей и разработчиков, использующих Python через .NET."
-}
-</script>
 
-
-**Расширенные операции** — это раздел о том, как программно работать с существующими PDF-файлами, будь то документы, созданные с помощью Aspose.PDF, как обсуждалось в [Основных операциях](/pdf/ru/python-net/basic-operations/), или PDF, созданные с помощью Adobe Acrobat, Google Docs, Microsoft Office, Open Office или любого другого средства создания PDF.
+**Advanced Operations** — это раздел, посвящённый тому, как программно работать с существующими PDF‑файлами, будь то документы, созданные с помощью Aspose.PDF, как обсуждалось в [Базовые операции](/pdf/ru/python-net/basic-operations/), или PDF, созданные в Adobe Acrobat, Google Docs, Microsoft Office, Open Office или любом другом PDF‑производителе.
 
 Вы узнаете разные способы:
 
-- [Работа с документами](/pdf/ru/python-net/working-with-documents/) - сжимать, разделять и объединять документы и выполнять другие операции с целым документом.
-- [Работа с страницами](/pdf/ru/python-net/working-with-pages/) - добавлять, перемещать или удалять, обрезать страницы, добавлять водяные знаки, штампы и т.д.
-- [Работа с изображениями](/pdf/ru/python-net/working-with-images/) - добавлять, извлекать или удалять изображения из PDF-документов.
+- [Работа с документами](/pdf/ru/python-net/working-with-documents/) - сжимать, разбивать и объединять документы, а также выполнять другие операции с полным документом.
+- [Работа со страницами](/pdf/ru/python-net/working-with-pages/) - добавлять, перемещать или удалять, обрезать страницы, добавлять водяные знаки, штампы и т.д.
+- [Работа с изображениями](/pdf/ru/python-net/working-with-images/) - добавить, извлечь или удалить изображения из PDF‑документов.
 - [Вложения](/pdf/ru/python-net/attachments/) - вы узнаете, как программно добавлять и удалять вложения из PDF с помощью Python.
-- [Навигация и взаимодействие](/pdf/ru/python-net/navigation-and-interaction/) - работать с действиями, закладками, навигацией по страницам.
-- [Аннотации](/pdf/ru/python-net/annotations/) - аннотации позволяют пользователям добавлять пользовательский контент на страницы PDF.
- Вы можете добавлять, удалять и изменять аннотации в PDF-документах.
-- [Работа с таблицами](/pdf/ru/python-net/working-with-tables/) - вставка, оформление таблиц в PDF, извлечение табличных данных.
-- [Работа с формами](/pdf/ru/python-net/working-with-forms/) - работа с интерактивными PDF-документами, добавление полей форм, извлечение данных.
-- [Работа с текстом](/pdf/ru/python-net/working-with-text/) - добавление, форматирование, поиск и замена текста в PDF.
+- [Навигация и взаимодействие](/pdf/ru/python-net/navigation-and-interaction/) - работать с действиями, закладками, перемещаться по страницам.
+- [Аннотации](/pdf/ru/python-net/annotations/) - аннотации позволяют пользователям добавлять пользовательский контент на страницы PDF. Вы можете добавлять, удалять и изменять аннотации в PDF‑документах.
+- [Работа с таблицами](/pdf/ru/python-net/working-with-tables/) - вставлять, оформлять таблицы в PDF, извлекать табличные данные.
+- [Работа с формами](/pdf/ru/python-net/working-with-forms/) - работать с интерактивными PDF‑документами, добавлять поля форм, извлекать данные.
+- [Работа с текстом](/pdf/ru/python-net/working-with-text/) - добавлять, форматировать, искать и заменять текст в PDF.
+- [Сравнение PDF документов](/pdf/ru/python-net/compare-pdf-documents/) - возможно сравнивать содержимое PDF документов.
+- [Метаданные в PDFs](/pdf/ru/python-net/pdf-file-metadata/) - получать или задавать метаданные в документах, работать с данными XMP.
+- [Работа с графиками](/pdf/ru/python-net/working-with-graphs/) - манипулировать формами на странице.
+- [Работа с операторами](/pdf/ru/python-net/working-with-operators/) - выполнять низкоуровневые операции в PDF.
+- [Артефакты](/pdf/ru/python-net/artifacts/) - работать с водяными знаками и другими специальными объектами в PDF.
+- [Работа со слоями PDF](/python-net/work-with-pdf-layers/) - блокировать уровни, извлекать элементы, уплощать и объединять уровни PDF.

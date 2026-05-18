@@ -3,7 +3,7 @@ title: Enlaces y navegación
 linktitle: Enlaces y navegación
 type: docs
 weight: 70
-url: /es/python-net/links-and-navigation/
+url: /es/python-net/links-and-navigation-facades/
 description:
 lastmod: "2026-03-20"
 sitemap:

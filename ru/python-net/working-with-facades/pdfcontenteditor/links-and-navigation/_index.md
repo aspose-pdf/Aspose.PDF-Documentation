@@ -3,7 +3,7 @@ title: Ссылки и навигация
 linktitle: Ссылки и навигация
 type: docs
 weight: 70
-url: /ru/python-net/links-and-navigation/
+url: /ru/python-net/links-and-navigation-facades/
 description:
 lastmod: "2026-03-20"
 sitemap:
