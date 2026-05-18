@@ -3,7 +3,7 @@ title: Вложения
 linktitle: Вложения
 type: docs
 weight: 20
-url: /ru/python-net/attachments/
+url: /ru/python-net/attachments-facades/
 description:
 lastmod: "2026-03-20"
 sitemap:

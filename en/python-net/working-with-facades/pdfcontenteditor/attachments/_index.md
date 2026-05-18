@@ -2,7 +2,7 @@
 title: Attachments
 type: docs
 weight: 20
-url: /python-net/attachments/
+url: /python-net/attachments-facades/
 description:
 lastmod: "2026-03-20"
 sitemap:

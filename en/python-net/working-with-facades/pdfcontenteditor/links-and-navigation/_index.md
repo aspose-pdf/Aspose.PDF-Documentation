@@ -2,7 +2,7 @@
 title: Links and Navigation
 type: docs
 weight: 70
-url: /python-net/links-and-navigation/
+url: /python-net/links-and-navigation-facades/
 description:
 lastmod: "2026-03-20"
 sitemap:

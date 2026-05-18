@@ -3,7 +3,7 @@ title: Split PDF Files in Python
 linktitle: Split PDF files
 type: docs
 weight: 60
-url: /python-net/split-pdf-document/
+url: /python-net/split-pdf/
 description: Learn how to split PDF pages into separate PDF files in Python.
 lastmod: "2026-04-15"
 sitemap:
