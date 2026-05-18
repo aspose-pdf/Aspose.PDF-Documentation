@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Поддерживаемые операционные системы Aspose.PDF for Python через .NET
-Abstract: Aspose.PDF for Python via .NET — это API для обработки PDF, разработанное для разработчиков, позволяющее управлять PDF‑документами без необходимости использования Microsoft Office или Adobe Acrobat Automation. Оно поддерживает создание 32‑битных и 64‑битных Python‑приложений на различных операционных системах, включая Windows и Linux, где установлен Python 3.5 или более новая версия. API совместим с несколькими версиями Windows, от Windows XP до Windows 11, а также с основными дистрибутивами Linux, такими как Ubuntu, OpenSUSE и CentOS. Для систем Linux требуются специфические компоненты: библиотеки среды выполнения GCC‑6, зависимости .NET Core Runtime (без необходимости установки самого runtime) и сборка Python с pymalloc для версий 3.5‑3.7. Кроме того, необходима общая библиотека libpython, для которой может потребоваться настройка параметров, чтобы правильно распознавался путь к библиотеке.
+Abstract: > Aspose.PDF for Python via .NET — это API для обработки PDF, разработанное для разработчиков, позволяющее управлять PDF‑документами без необходимости использования Microsoft Office или Adobe Acrobat Automation. Оно поддерживает создание 32‑битных и 64‑битных Python‑приложений на различных операционных системах, включая Windows и Linux, где установлен Python 3.5 или более новая версия. API совместим с несколькими версиями Windows, от Windows XP до Windows 11, а также с основными дистрибутивами Linux, такими как Ubuntu, OpenSUSE и CentOS. Для систем Linux требуются специфические компоненты: библиотеки среды выполнения GCC‑6, зависимости .NET Core Runtime (без необходимости установки самого runtime) и сборка Python с pymalloc для версий 3.5‑3.7. Кроме того, необходима общая библиотека libpython, для которой может потребоваться настройка параметров, чтобы правильно распознавался путь к библиотеке.
 ---
 
 ## Обзор
@@ -25,9 +25,9 @@ Aspose.PDF for Python via .NET, API обработки PDF, позволяющи
 - Windows 2003 Server
 - Windows 2008 Server
 - Windows 2012 Server
-- Windows 2012 R2 Сервер
-- Windows 2016 Сервер
-- Windows 2019 Сервер
+- Windows 2012 R2 Server
+- Windows 2016 Server
+- Windows 2019 Server
 - Windows XP
 - Windows Vista
 - Windows 7

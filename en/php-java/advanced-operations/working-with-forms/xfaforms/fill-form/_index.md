@@ -3,7 +3,7 @@ title: Fill AcroForms
 linktitle: Fill AcroForms
 type: docs
 weight: 20
-url: /php-java/fill-form/
+url: /php-java/fill-xfa-form/
 description: This section explains how to fill form field in a PDF document with Aspose.PDF for PHP via Java.
 lastmod: "2024-06-05"
 sitemap:
