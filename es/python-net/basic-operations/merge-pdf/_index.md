@@ -3,7 +3,7 @@ title: Combinar archivos PDF en Python
 linktitle: Combinar archivos PDF
 type: docs
 weight: 50
-url: /es/python-net/merge-pdf-documents/
+url: /es/python-net/merge-pdf/
 description: Aprenda cómo combinar varios archivos PDF en un solo documento en Python.
 lastmod: "2026-05-08"
 sitemap:
