@@ -10,7 +10,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose.PDF for Python via .NET fornece o [Carimbo](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/stamp/) classe para colocar conteúdo visual reutilizável em páginas PDF. Uma marca pode ser baseada em texto, uma imagem ou até mesmo uma página de outro PDF, e pode ser posicionada, girada, estilizada e limitada a páginas específicas.
+Aspose.PDF for Python via .NET fornece o [Stamp](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/stamp/) classe para colocar conteúdo visual reutilizável em páginas PDF. Uma marca pode ser baseada em texto, uma imagem ou até mesmo uma página de outro PDF, e pode ser posicionada, girada, estilizada e limitada a páginas específicas.
 
 Este artigo demonstra vários fluxos de trabalho comuns de carimbo:
 

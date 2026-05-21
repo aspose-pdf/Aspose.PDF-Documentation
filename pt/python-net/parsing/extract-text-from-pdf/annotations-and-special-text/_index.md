@@ -53,7 +53,7 @@ def extract_text_from_stamp(infile, page_number, annotation_index, outfile):
 
 ## Extrair Texto Realçado
 
-Iterar sobre as anotações de uma página e usar [HighlightAnnotation.get_marked_text()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation) para ler os trechos de texto cobertos por cada realce. A coleção de anotações da página usa indexação a partir de 1.
+Iterar sobre as anotações de uma página e usar [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation) para ler os trechos de texto cobertos por cada realce. A coleção de anotações da página usa indexação a partir de 1.
 
 1. Abra o [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) e selecione a página de destino.
 1. Percorrer `page.annotations`.

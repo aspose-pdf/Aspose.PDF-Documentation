@@ -20,7 +20,7 @@ Queremos que nossos clientes testem nossos componentes de forma completa antes d
 
 - **PDF criado com marca d'água de avaliação.** A versão de avaliação do Aspose.PDF for Python oferece funcionalidade completa do produto, mas todas as páginas nos documentos PDF gerados recebem a marca d'água "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" no topo.
 
->Se você quiser testar o Aspose.PDF sem as limitações da versão de avaliação, também pode solicitar uma Licença Temporária de 30 dias. Por favor, consulte [Como obter uma Licença Temporária?](https://purchase.aspose.com/temporary-license)
+Se você quiser testar o Aspose.PDF sem as limitações da versão de avaliação, também pode solicitar uma Licença Temporária de 30 dias. Por favor, consulte [Como obter uma Licença Temporária?](https://purchase.aspose.com/temporary-license)
 
 ## Licença clássica
 

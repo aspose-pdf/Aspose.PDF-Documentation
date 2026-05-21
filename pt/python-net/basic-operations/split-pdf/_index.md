@@ -26,7 +26,7 @@ Use este fluxo de trabalho quando precisar dividir PDFs grandes em arquivos de u
 
 Este tópico mostra como dividir páginas de PDF em arquivos PDF individuais em suas aplicações Python. Para dividir páginas de PDF em arquivos PDF de página única usando Python, siga os passos abaixo:
 
-1. Percorra as páginas do documento PDF através do [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objeto [Coleção de Páginas](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) coleção
+1. Percorra as páginas do documento PDF através do [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objeto [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) coleção
 1. Para cada iteração, crie um novo objeto Document e adicione o individual [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objeto no documento vazio
 1. Salvar o novo PDF usando [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método
 

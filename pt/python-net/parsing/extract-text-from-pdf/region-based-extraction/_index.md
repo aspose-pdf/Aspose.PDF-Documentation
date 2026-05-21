@@ -13,7 +13,7 @@ sitemap:
 
 ## Extrair texto de uma região específica de uma página
 
-Usar [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) juntamente com um [Retângulo](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) para limitar a extração a uma área específica de uma página. Esta abordagem é útil para extração baseada em zonas de cabeçalhos, rodapés, células de tabela, campos de formulário, faturas ou outras regiões de layout fixo onde a posição do texto é conhecida antecipadamente.
+Usar [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) juntamente com um [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) para limitar a extração a uma área específica de uma página. Esta abordagem é útil para extração baseada em zonas de cabeçalhos, rodapés, células de tabela, campos de formulário, faturas ou outras regiões de layout fixo onde a posição do texto é conhecida antecipadamente.
 
 1. Abra o PDF de origem como um [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Criar um `TextAbsorber` instância.

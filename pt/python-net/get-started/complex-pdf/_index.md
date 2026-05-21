@@ -22,11 +22,11 @@ Se criarmos um documento do zero, precisamos seguir certas etapas:
 1. Adicionar um [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) para o objeto Document. Então, agora nosso Document terá uma página.
 1. Adicionar um [Imagem](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/) para o Page.
 1. Criar um [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) para cabeçalho. Para o cabeçalho usaremos a fonte Arial com tamanho de fonte 24pt e alinhamento central.
-1. Adicionar cabeçalho à página [parágrafos](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Adicionar cabeçalho à página [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
 1. Criar um [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) para descrição. Para a descrição usaremos a fonte Arial com tamanho de fonte 24pt e alinhamento central.
-1. Adicionar descrição à página Parágrafos.
+1. Adicionar descrição à página [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
 1. Criar e Estilizar Tabela. Definir largura da coluna, bordas, preenchimento e fonte.
-1. Adicionar tabela à página [parágrafos](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Adicionar tabela à página [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
 1. Salvar um documento "Complex.pdf".
 
 ```python
