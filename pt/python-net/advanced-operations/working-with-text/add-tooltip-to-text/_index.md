@@ -1,295 +1,187 @@
 ---
-title: Tooltip em PDF usando Python
-linktitle: Tooltip em PDF
+title: Adicionar dicas de ferramenta ao texto PDF em Python
+linktitle: Dica de ferramenta PDF
 type: docs
 weight: 20
 url: /pt/python-net/pdf-tooltip/
-description: Aprenda como adicionar tooltip ao fragmento de texto em PDF usando Python e Aspose.PDF
-lastmod: "2024-02-17"
+description: Aprenda como adicionar dicas de ferramenta a fragmentos de texto em documentos PDF em Python.
+lastmod: "2026-05-20"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Adicionar dicas de ferramenta interativas a fragmentos de texto PDF usando Python
+Abstract: Este artigo fornece dois exemplos em Python para adicionar ajuda interativa ao texto de PDF usando Aspose.PDF for Python via .NET. O primeiro exemplo adiciona tooltips aos fragmentos de texto correspondentes, colocando elementos `ButtonField` invisíveis e definindo `alternate_name`. O segundo exemplo cria um `TextBoxField` oculto que aparece ao passar o mouse, conectando eventos `HideAction` a um `ButtonField` invisível.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Tooltip em PDF usando Python",
-    "alternativeHeadline": "Adicionar Tooltip em PDF ao Texto",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, python, adicionar tooltip em pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipe de Documentação do Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/pdf-tooltip/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/pdf-tooltip/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Aprenda como adicionar tooltip ao fragmento de texto em PDF usando Python e Aspose.PDF"
-}
-</script>
 
+## Adicionar Tooltip ao Texto Pesquisado em um PDF
 
-## Adicionar Tooltip ao Texto Pesquisado adicionando Botão Invisível
+Este trecho de código mostra como sobrepor invisível [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) elementos em específico [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) objetos em um PDF para exibir dicas de ferramenta quando o usuário passa o mouse sobre eles. Ele suporta mensagens de dica curtas e longas usando o `alternative_name` propriedade de `ButtonField`.
 
-Este código demonstra como adicionar tooltips a fragmentos de texto específicos em um documento PDF usando Aspose.PDF. Os tooltips são exibidos quando o cursor do mouse passa sobre o texto correspondente.
+Use esta página quando precisar tornar o texto do PDF mais interativo, adicionando ajuda ao passar o mouse, explicações inline ou notas contextuais.
 
-O trecho de código a seguir mostrará como alcançar essa funcionalidade:
+1. Criar um novo [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Salvar o documento inicial.
+1. Reabrir o documento PDF.
+1. Pesquisar texto de destino usando [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. Adicionar um invisível [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) com uma tooltip curta.
+1. Pesquisar o segundo texto-alvo.
+1. Adicionar um invisível [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) com uma dica de ferramenta longa sobre o fragmento correspondente.
+1. Salvar o documento final.
 
 ```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("Mova o cursor do mouse aqui para exibir um tooltip")
-    )
-    document.pages[1].paragraphs.add(
-        ap.text.TextFragment(
-            "Mova o cursor do mouse aqui para exibir um tooltip muito longo"
+# region PDF Tooltip
+def add_tool_tip_to_searched_text(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display a tooltip")
         )
-    )
-    document.save(output_pdf)
-
-    # Abrir documento com texto
-    document = ap.Document(output_pdf)
-    # Criar objeto TextAbsorber para encontrar todas as frases que correspondem à expressão regular
-    absorber = ap.text.TextFragmentAbsorber(
-        "Mova o cursor do mouse aqui para exibir um tooltip"
-    )
-    # Aceitar o absorvedor para as páginas do documento
-    document.pages.accept(absorber)
-    # Obter os fragmentos de texto extraídos
-    text_fragments = absorber.text_fragments
-
-    # Percorrer os fragmentos
-    for fragment in text_fragments:
-        # Criar botão invisível na posição do fragmento de texto
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # O valor alternate_name será exibido como tooltip por um aplicativo visualizador
-        field.alternate_name = "Tooltip para texto."
-        # Adicionar campo de botão ao documento
-        document.form.add(field)
-
-    # Próximo será um exemplo de tooltip muito longo
-    absorber = ap.text.TextFragmentAbsorber(
-        "Mova o cursor do mouse aqui para exibir um tooltip muito longo"
-    )
-    document.pages.accept(absorber)
-    text_fragments = absorber.text_fragments
-
-    for fragment in text_fragments:
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # Definir texto muito longo
-        field.alternate_name = (
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
-            " sed do eiusmod tempor incididunt ut labore et dolore magna"
-            " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-            " ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            " Duis aute irure dolor in reprehenderit in voluptate velit"
-            " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
-            " occaecat cupidatat non proident, sunt in culpa qui officia"
-            " deserunt mollit anim id est laborum."
+        document.pages[1].paragraphs.add(
+            ap.text.TextFragment(
+                "Move the mouse cursor here to display a very long tooltip"
+            )
         )
-        document.form.add(field)
+        document.save(outfile)
 
-    # Salvar documento
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display a tooltip"
+        )
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the extracted text fragments
+        text_fragments = absorber.text_fragments
+
+        # Loop through the fragments
+        for fragment in text_fragments:
+            # Create invisible button on text fragment position
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # alternate_name value will be displayed as tooltip by a viewer application
+            field.alternate_name = "Tooltip for text."
+            # Add button field to the document
+            document.form.add(field)
+
+        # Next will be sample of very long tooltip
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display a very long tooltip"
+        )
+        document.pages.accept(absorber)
+        text_fragments = absorber.text_fragments
+
+        for fragment in text_fragments:
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # Set very long text
+            field.alternate_name = (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                " Duis aute irure dolor in reprehenderit in voluptate velit"
+                " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                " occaecat cupidatat non proident, sunt in culpa qui officia"
+                " deserunt mollit anim id est laborum."
+            )
+            document.form.add(field)
+
+        # Save document
+        document.save(outfile)
 ```
 
+## Criar um Bloco de Texto Oculto Que Aparece ao Passar o Mouse em um PDF
 
-## Criar um Bloco de Texto Oculto e Mostrá-lo ao Passar o Mouse
+Adicione texto flutuante interativo a um documento PDF. Ele sobrepõe um invisível [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) em uma frase-alvo e revela um oculto [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) quando o usuário passa o mouse sobre ele. Esta técnica é ideal para ajuda contextual, anotações ou apresentação de conteúdo dinâmico.
 
-Este trecho de código Python mostra como adicionar texto flutuante a um documento PDF, que aparece quando o cursor do mouse passa sobre uma área específica.
-
-Primeiro, um novo documento PDF é criado, e um parágrafo contendo o texto "Mova o cursor do mouse aqui para exibir o texto flutuante" é adicionado a ele. O documento é então salvo.
-
-Em seguida, o documento salvo é reaberto, e um objeto TextAbsorber é criado para encontrar o fragmento de texto adicionado anteriormente. Este fragmento de texto é então usado para definir a posição e as características do campo de texto flutuante.
-
-Um objeto TextBoxField é criado para representar o campo de texto flutuante, e suas propriedades como posição, valor, status de somente leitura e visibilidade são configuradas adequadamente. Além disso, um nome único e características de aparência são atribuídos ao campo.
-
-O campo de texto flutuante é adicionado ao formulário do documento, e um campo de botão invisível é criado na posição do fragmento de texto original.
- Os eventos HideAction são atribuídos ao campo do botão, especificando que o campo de texto flutuante deve aparecer quando o cursor do mouse entrar em sua proximidade e desaparecer quando o cursor sair.
-
-Finalmente, o campo do botão é adicionado ao formulário do documento, e o documento modificado é salvo.
-
-Este trecho de código fornece um método para criar elementos de texto flutuantes interativos em um documento PDF usando Aspose.PDF para Python.
+1. Crie um novo documento PDF.
+1. Salve o PDF para que ele possa ser reaberto para configuração de interatividade.
+1. Reabrir o documento PDF.
+1. Localize o texto alvo usando [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. Crie um oculto [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
+1. Adicione o campo oculto ao documento [`Form`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) coleção.
+1. Crie um invisível [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/).
+1. Atribuir ações do mouse (`on_enter`, `on_exit`) usando [`HideAction`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/hideaction/) para mostrar/ocultar o campo oculto.
+1. Salvar o documento final.
 
 ```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def create_hidden_text_block(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        #  Add paragraph with text
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display floating text")
+        )
+        # Save PDF document
+        document.save(outfile)
 
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("Mova o cursor do mouse aqui para exibir o texto flutuante")
-    )
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display floating text"
+        )
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the first extracted text fragment
+        text_fragments = absorber.text_fragments
+        fragment = text_fragments[1]
 
-    # Abrir documento com texto
-    document = ap.Document(output_pdf)
-    # Criar objeto TextAbsorber para encontrar todas as frases que correspondem à expressão regular
-    absorber = ap.text.TextFragmentAbsorber(
-        "Mova o cursor do mouse aqui para exibir o texto flutuante"
-    )
-    # Aceitar o absorvedor para as páginas do documento
-    document.pages.accept(absorber)
-    # Obter o primeiro fragmento de texto extraído
-    text_fragments = absorber.text_fragments
-    fragment = text_fragments[1]
+        # Create hidden text field for floating text in the specified rectangle of the page
+        floating_field = ap.forms.TextBoxField(
+            fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
+        )
+        # Set text to be displayed as field value
+        floating_field.value = 'This is the "floating text field".'
+        # We recommend to make field 'readonly' for this scenario
+        floating_field.read_only = True
+        # Set 'hidden' flag to make field invisible on document opening
+        floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
 
-    # Criar campo de texto oculto para texto flutuante no retângulo especificado da página
-    floating_field = ap.forms.TextBoxField(
-        fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
-    )
-    # Definir texto a ser exibido como valor do campo
-    floating_field.value = 'Este é o "campo de texto flutuante".'
-    # Recomendamos tornar o campo 'somente leitura' para este cenário
-    floating_field.read_only = True
-    # Definir flag 'oculto' para tornar o campo invisível na abertura do documento
-    floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
+        # Setting a unique field name isn't necessary but allowed
+        floating_field.partial_name = "FloatingField_1"
 
-    # Definir um nome de campo único não é necessário, mas permitido
-    floating_field.partial_name = "FloatingField_1"
+        # Setting characteristics of field appearance isn't necessary but makes it better
+        floating_field.default_appearance = ap.annotations.DefaultAppearance(
+            "Helv", 10, drawing.Color.blue
+        )
+        floating_field.characteristics.background = drawing.Color.light_blue
+        floating_field.characteristics.border = drawing.Color.dark_blue
+        floating_field.border = ap.annotations.Border(floating_field)
+        floating_field.border.width = 1
+        floating_field.multiline = True
 
-    # Definir características de aparência do campo não é necessário, mas melhora
-    floating_field.default_appearance = ap.annotations.DefaultAppearance(
-        "Helv", 10, ap.Color.blue.to_rgb()
-    )
-    floating_field.characteristics.background = ap.Color.light_blue.to_rgb()
-    floating_field.characteristics.border = ap.Color.dark_blue.to_rgb()
-    floating_field.border = ap.annotations.Border(floating_field)
-    floating_field.border.width = 1
-    floating_field.multiline = True
+        # Add text field to the document
+        document.form.add(floating_field)
+        # Create invisible button on text fragment position
+        button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+        # Create new hide action for specified field (annotation) and invisibility flag.
+        # (You also may refer floating field by the name if you specified it above.)
+        # Add actions on mouse enter/exit at the invisible button field
 
-    # Adicionar campo de texto ao documento
-    document.form.add(floating_field)
-    # Criar botão invisível na posição do fragmento de texto
-    button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-    # Criar nova ação de ocultação para o campo especificado (anotação) e flag de invisibilidade.
-    # (Você também pode referir-se ao campo flutuante pelo nome se especificado anteriormente.)
-    # Adicionar ações de entrada/saída do mouse no campo do botão invisível
+        button_field.actions.on_enter = ap.annotations.HideAction(floating_field, False)
+        button_field.actions.on_exit = ap.annotations.HideAction(floating_field)
 
-    button_field.actions.on_enter = ap.annotations.HideAction(
-        floating_field.partial_name, False
-    )
-    button_field.actions.on_exit = ap.annotations.HideAction(
-        floating_field.partial_name
-    )
+        # Add button field to the document
+        document.form.add(button_field)
 
-    # Adicionar campo do botão ao documento
-    document.form.add(button_field)
-
-    # Salvar documento
-    document.save(output_pdf)
+        # Save document
+        document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Tópicos de Texto Relacionados
+
+- [Trabalhe com texto em PDF usando Python](/pdf/pt/python-net/working-with-text/)
+- [Use FloatingBox para layout de texto PDF em Python](/pdf/pt/python-net/floating-box/)
+- [Pesquisar e extrair texto de PDF em Python](/pdf/pt/python-net/search-and-get-text-from-pdf/)
+- [Adicionando texto ao PDF](/pdf/pt/python-net/add-text-to-pdf-file/)

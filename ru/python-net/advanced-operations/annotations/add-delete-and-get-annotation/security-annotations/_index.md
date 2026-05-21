@@ -210,5 +210,5 @@ def redact_area(infile, outfile):
 - [Разметка аннотаций](/python-net/markup-annotations/)
 - [Медиа аннотации](/python-net/media-annotations/)
 - [Фигурные аннотации](/python-net/shape-annotations/)
-- [Текстовые аннотации](/python-net/text-based-Annotations/)
+- [Текстовые аннотации](/python-net/text-based-annotations/)
 - [Аннотации водяного знака](/python-net/watermark-annotations/)
