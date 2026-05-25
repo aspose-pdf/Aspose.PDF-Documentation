@@ -98,5 +98,5 @@ def import_export(infile, outfile):
 - [Media Annotations](/python-net/media-annotations/)
 - [Security Annotations](/python-net/security-annotations/)
 - [Shape Annotations](/python-net/shape-annotations/)
-- [Text Based Annotations](/python-net/text-based-Annotations/)
+- [Text Based Annotations](/python-net/text-based-annotations/)
 - [Watermark Annotations](/python-net/watermark-annotations/)

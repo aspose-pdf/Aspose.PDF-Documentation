@@ -1,308 +1,343 @@
 ---
-title: Adicionar Cabeçalho e Rodapé ao PDF usando Python
-linktitle: Adicionar Cabeçalho e Rodapé ao PDF
+title: Adicionar Cabeçalhos e Rodapés de PDF em Python
+linktitle: Adicionando Cabeçalho e Rodapé ao PDF
 type: docs
 weight: 50
 url: /pt/python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF para Python via .NET permite que você adicione cabeçalhos e rodapés ao seu arquivo PDF usando a classe TextStamp.
-lastmod: "2023-04-17"
+description: Aprenda como adicionar cabeçalhos e rodapés a arquivos PDF em Python usando texto, imagens e conteúdo estruturado.
+lastmod: "2026-05-20"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Adicione cabeçalhos e rodapés a arquivos PDF com Python
+Abstract: Este artigo mostra como adicionar cabeçalhos e rodapés a documentos PDF com Aspose.PDF for Python via .NET. Ele abrange texto, numeração de páginas, HTML, imagem, tabela e conteúdo de cabeçalho e rodapé baseado em LaTeX.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Adicionar Cabeçalho e Rodapé ao PDF usando Python",
-    "alternativeHeadline": "Como adicionar Cabeçalho e Rodapé ao Arquivo PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, python, adicionar cabeçalho, adicionar rodapé no pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF para Python via .NET permite que você adicione cabeçalhos e rodapés ao seu arquivo PDF usando a classe TextStamp."
-}
-</script>
 
+Use esta página para adicionar conteúdo de cabeçalho e rodapé consistentes em todas as páginas PDF com **Aspose.PDF for Python via .NET**.
 
-**Aspose.PDF for Python via .NET** permite que você adicione cabeçalho e rodapé em seu arquivo PDF existente. Você pode adicionar imagens ou texto a um documento PDF. Além disso, tente adicionar diferentes cabeçalhos em um arquivo PDF com Python.
+Você pode criar cabeçalhos e rodapés com [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/), e [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) objetos, então aplique-os através de [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) em cada página.
 
-## Adicionando Texto no Cabeçalho do Arquivo PDF
+## Adicionando Cabeçalhos e Rodapés como Fragmentos de Texto
 
-Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) para adicionar texto no cabeçalho de um arquivo PDF. A classe TextStamp fornece as propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar texto no cabeçalho, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método 'add_stamp' da Página para adicionar o texto no cabeçalho do PDF.
+Adicione cabeçalhos e rodapés de texto simples a todas as páginas de um PDF. Ele cria [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objetos, inserções [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) elementos neles, define [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) para posicionamento adequado, e anexa-os a cada página no documento. O resultado é um PDF onde cada página exibe texto de cabeçalho e rodapé consistentes.
 
-Você precisa definir a propriedade [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) de forma que ajuste o texto na área do cabeçalho do seu PDF. Você também precisa definir 'horizontal_alignment' para Center e 'vertical_alignment' para Top.
+O trecho de código a seguir demonstra como adicionar cabeçalhos e rodapés como fragmentos de texto em um PDF usando Python:
 
-O seguinte trecho de código mostra como adicionar texto no cabeçalho de um arquivo PDF com Python:
+1. Crie fragmentos de texto para o cabeçalho e o rodapé.
+1. Crie objetos HeaderFooter e adicione os fragmentos de texto a eles.
+1. Defina as configurações de margem para controlar a colocação do cabeçalho e do rodapé.
+1. Carregue o documento PDF a partir do arquivo de entrada.
+1. Iterar por todas as páginas do documento.
+1. Atribua o cabeçalho e o rodapé a cada página.
+1. Salve o PDF modificado no arquivo de saída.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_text(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Demo header")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Demo footer")
 
-    # Criar cabeçalho
-    textStamp = ap.TextStamp("Texto do Cabeçalho")
-    # Definir propriedades do carimbo
-    textStamp.top_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # Adicionar cabeçalho em todas as páginas
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
 
-    # Salvar documento atualizado
-    document.save(output_pdf)
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Adicionando Texto no Rodapé do Arquivo PDF
+Este método é útil para adicionar títulos consistentes, indicadores de página ou avisos legais na parte superior e inferior de cada página. Você também pode estendê-lo para incluir imagens ou conteúdo dinâmico, como números de página.
 
-Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) para adicionar texto no rodapé de um arquivo PDF.
- Classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar texto no rodapé, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Após isso, você pode chamar o método 'add_stamp' da Page para adicionar o texto no rodapé do PDF.
+## Adicionando Cabeçalhos e Rodapés para Numeração de Páginas
 
-O trecho de código a seguir mostra como adicionar texto no rodapé de um arquivo PDF com Python:
+Adicione numeração automática de páginas aos cabeçalhos e rodapés de um documento PDF usando Aspose.PDF for Python. Usando as variáveis internas $p (número da página atual) e $P (número total de páginas), o script insere dinamicamente a numeração de páginas em cada página. Os cabeçalhos exibem o formato ‘Page X from Y’, enquanto os rodapés mostram ‘Page X / Y’. The [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) garante o posicionamento adequado em cada página.
+
+1. Crie um TextFragment para o cabeçalho usando "Página $p de $P" para exibir a página atual e o total de páginas.
+1. Crie um objeto HeaderFooter e adicione o texto do cabeçalho a ele.
+1. Crie um TextFragment para o rodapé usando "Page $p / $P" para um estilo de numeração alternativo.
+1. Crie um objeto Footer e adicione o texto do rodapé.
+1. Defina as configurações de margem (esquerda = 50, superior = 20) e aplique-as tanto ao cabeçalho quanto ao rodapé.
+1. Abra o documento PDF a partir do arquivo de entrada.
+1. Percorra todas as páginas e atribua o cabeçalho e o rodapé a cada página.
+1. Salve o PDF atualizado no caminho de saída.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def using_header_and_footer_for_page_numbering(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Page $p from $P")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
-    # Criar rodapé
-    textStamp = ap.TextStamp("Texto do Rodapé")
-    # Definir propriedades do carimbo
-    textStamp.bottom_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # Adicionar rodapé em todas as páginas
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Page $p / $P")
 
-    # Salvar arquivo PDF atualizado
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Create margins
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+
+    # Set header margin
+    header.margin = margin
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Adicionando Imagem no Cabeçalho do Arquivo PDF
+## Adicionando Cabeçalhos e Rodapés como Fragmentos HTML
 
-Você pode usar a classe [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) para adicionar imagem no cabeçalho de um arquivo PDF. Classe Image Stamp fornece as propriedades necessárias para criar um selo baseado em imagem, como tamanho de fonte, estilo de fonte e cor de fonte, etc. Para adicionar uma imagem no cabeçalho, você precisa criar um objeto Document e um objeto Image Stamp usando as propriedades necessárias. Depois disso, você pode chamar o método 'add_stamp' da Página para adicionar a imagem no cabeçalho do PDF.
+Aplicar cabeçalhos e rodapés formatados em HTML a cada página de um documento PDF usando Aspose.PDF for Python. Ao usar [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), o script permite que a formatação de texto rico — como negrito e itálico — apareça no cabeçalho e no rodapé. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) é aplicado para posicionamento adequado, e os mesmos elementos formatados são anexados a cada página no documento.
 
-O seguinte trecho de código mostra como adicionar uma imagem no cabeçalho de um arquivo PDF com Python:
+O trecho de código a seguir demonstra como adicionar cabeçalhos e rodapés como fragmentos HTML a um PDF usando Python:
+
+1. Crie um trecho de cabeçalho HTML usando HtmlFragment—incluindo texto estilizado como '<strong>' para negrito.
+1. Crie um objeto HeaderFooter e adicione o cabeçalho HTML a ele.
+1. Crie um trecho de rodapé HTML usando '<i>' para estilo itálico.
+1. Crie um objeto Footer e adicione o HTML do rodapé a ele.
+1. Configure as margens (esquerda = 50, superior = 20) e atribua-as tanto ao cabeçalho quanto ao rodapé.
+1. Carregue o documento PDF usando 'ap.Document()'.
+1. Percorra todas as páginas e atribua o cabeçalho e o rodapé a cada uma.
+1. Salve o PDF modificado no caminho de saída especificado.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_html(input_file, output_file):
+    # Create header HTML
+    header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_html)
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
+    # Create footer HTML
+    footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
 
-    # Criar cabeçalho
-    image_stamp = ap.ImageStamp(input_image)
-    # Definir propriedades do selo
-    image_stamp.top_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # Adicionar cabeçalho em todas as páginas
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_html)
 
-    # Salvar documento atualizado
-    document.save(output_pdf)
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Adicionando Imagem no Rodapé do Arquivo PDF
+Usar HtmlFragment permite formatação rica com estilos embutidos ou marcação HTML, oferecendo mais flexibilidade de design em comparação com texto simples.
 
-Você pode usar a classe [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) para adicionar uma imagem no rodapé de um arquivo PDF. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) class fornece as propriedades necessárias para criar um carimbo baseado em imagem, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar uma imagem no rodapé, você precisa criar um objeto Document e um objeto Image Stamp usando as propriedades necessárias. Depois disso, você pode chamar o método 'add_stamp' da Página para adicionar a imagem no rodapé do PDF.
+## Adicionando Cabeçalhos e Rodapés como Imagens
 
-O seguinte trecho de código mostra como adicionar uma imagem no rodapé de um arquivo PDF com Python:
+Adicionar cabeçalhos e rodapés baseados em imagem a cada página de um documento PDF usando Aspose.PDF for Python. O mesmo arquivo de imagem é usado tanto para o cabeçalho quanto para o rodapé em todas as páginas. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) posiciona as imagens, e a imagem ajusta‑se automaticamente para caber dentro da área de cabeçalho/rodapé.
+
+O seguinte trecho de código demonstra como adicionar cabeçalhos e rodapés como imagens a um PDF usando Python:
+
+1. Carregue a imagem em um objeto ‘ap.Image’ e prepare-a para uso como cabeçalho.
+1. Crie um objeto HeaderFooter e anexe a imagem do cabeçalho a ele.
+1. Carregue a mesma imagem novamente para usar como rodapé.
+1. Crie um objeto Footer e adicione a imagem do rodapé a ele.
+1. Carregue o documento PDF de entrada usando 'ap.Document()'.
+1. Iterar por todas as páginas do documento.
+1. Aplicar margens (esquerda = 50) para posicionar tanto o cabeçalho quanto o rodapé.
+1. Atribua o cabeçalho e o rodapé a cada página no PDF.
+1. Salve o PDF atualizado no arquivo de saída especificado.
+
+Esta técnica é ideal para aplicar logotipos ou marcas d'água em documentos, na área de cabeçalho/rodapé.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_image(input_file, image_file, output_file):
+    # Create header image
+    header_image = ap.Image()
+    header_image.file = image_file
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_image)
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
-    # Criar rodapé
-    image_stamp = ap.ImageStamp(input_image)
-    # Definir propriedades do carimbo
-    image_stamp.bottom_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # Adicionar rodapé em todas as páginas
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer image
+    footer_image = ap.Image()
+    footer_image.file = image_file
 
-    # Salvar arquivo PDF atualizado
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_image)
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Set header margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            header.margin = margin
+
+            # Set footer margin
+            footer.margin = margin
+
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Adicionando diferentes Cabeçalhos em um Arquivo PDF
+## Adicionando Cabeçalhos e Rodapés como Tabela
 
-Sabemos que podemos adicionar TextStamp na seção de Cabeçalho/Rodapé do documento usando as propriedades [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) ou [bottom_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties), mas às vezes podemos ter a necessidade de adicionar múltiplos cabeçalhos/rodapés em um único documento PDF. **Aspose.PDF para Python via .NET** explica como fazer isso.
+Adicione cabeçalhos e rodapés estruturados, baseados em tabelas, a todas as páginas de um documento PDF usando Aspose.PDF for Python. [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) objetos oferecem melhor controle de layout, alinhamento e formatação consistente para cabeçalhos e rodapés complexos. O texto do cabeçalho está centralizado enquanto o texto do rodapé está alinhado à esquerda, ambos usando fonte Arial 12pt. As larguras das colunas são calculadas dinamicamente com base nas dimensões da página para garantir o posicionamento adequado.
 
-Para realizar essa necessidade, iremos criar objetos TextStamp individuais (o número de objetos depende do número de Cabeçalhos/Rodapés necessários) e os adicionaremos ao documento PDF.
- Podemos também especificar diferentes informações de formatação para cada objeto de carimbo individual. No exemplo a seguir, criamos um objeto Documento e três objetos TextStamp e, em seguida, usamos o método 'add_stamp' da Página para adicionar o texto na seção de cabeçalho do PDF. O trecho de código a seguir mostra como adicionar uma imagem no rodapé de um arquivo PDF com Aspose.PDF para Python:
+Este trecho de código adiciona cabeçalhos e rodapés (usando tabelas) a cada página de um documento PDF com Aspose.PDF for Python via .NET.
+
+1. Definir estilos de texto usando [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) para cabeçalho e rodapé (fonte, tamanho, alinhamento).
+1. Criar [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objetos para o cabeçalho e rodapé.
+1. Construir o cabeçalho [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) com uma única linha e uma célula contendo o texto do cabeçalho.
+1. Construa o rodapé [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) com uma única linha e célula contendo o texto do rodapé.
+1. Adicione as tabelas ao correspondente [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objetos.
+1. Definir rodapé [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) para posicionamento horizontal adequado.
+1. Abrir o [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) usando métodos apropriados.
+1. Itere por todas as páginas e atribua o cabeçalho e rodapé baseados em tabela a cada página.
+1. Salvar o modificado [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) para o arquivo de saída.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_table(input_file, output_file):
+    text_state_header = ap.text.TextState()
+    text_state_header.font = ap.text.FontRepository.find_font("Arial")
+    text_state_header.font_size = 12
+    text_state_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    text_state_footer = ap.text.TextState()
+    text_state_footer.font = ap.text.FontRepository.find_font("Arial")
+    text_state_footer.font_size = 12
+    text_state_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+    # Create header
+    header = ap.HeaderFooter()
+    # Create footer
+    footer = ap.HeaderFooter()
+    # Create header Table
+    table_header = ap.Table()
+    table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+    header_row = table_header.rows.add()
+    header_row.cells.add("This is a Table Header", text_state_header)
+    # Create footer Table
+    table = ap.Table()
+    table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+    table.rows.add().cells.add("Powered by Aspose.PDF", text_state_footer)
+    header.paragraphs.add(table_header)
+    footer.paragraphs.add(table)
+    # Set footer margin
+    footer.margin.left = 150
 
-    # Criar três carimbos
-    stamp1 = ap.TextStamp("Cabeçalho 1")
-    stamp2 = ap.TextStamp("Cabeçalho 2")
-    stamp3 = ap.TextStamp("Cabeçalho 3")
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
 
-    # Definir alinhamento do carimbo (colocar carimbo no topo da página, centralizado horizontalmente)
-    stamp1.vertical_alignment = ap.VerticalAlignment.TOP
-    stamp1.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Especificar o estilo da fonte como Negrito
-    stamp1.text_state.font_style = ap.text.FontStyles.BOLD
-    # Definir a informação da cor do texto como vermelho
-    stamp1.text_state.foreground_color = ap.Color.red
-    # Especificar o tamanho da fonte como 14
-    stamp1.text_state.font_size = 14
-
-    # Agora precisamos definir o alinhamento vertical do segundo objeto carimbo como Top
-    stamp2.vertical_alignment = ap.VerticalAlignment.TOP
-    # Definir informação de alinhamento Horizontal para carimbo como Centralizado
-    stamp2.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Definir o fator de zoom para o objeto carimbo
-    stamp2.zoom = 10
-
-    # Definir a formatação do terceiro objeto carimbo
-    # Especificar a informação de alinhamento Vertical para o objeto carimbo como TOPO
-    stamp3.vertical_alignment = ap.VerticalAlignment.TOP
-    # Definir a informação de alinhamento Horizontal para o objeto carimbo como Centralizado
-    stamp3.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Definir o ângulo de rotação para o objeto carimbo
-    stamp3.rotate_angle = 35
-    # Definir rosa como cor de fundo para o carimbo
-    stamp3.text_state.background_color = ap.Color.pink
-    # Alterar a informação da fonte do carimbo para Verdana
-    stamp3.text_state.font = ap.text.FontRepository.find_font("Verdana")
-    # Primeiro carimbo é adicionado na primeira página;
-    document.pages[1].add_stamp(stamp1)
-    # Segundo carimbo é adicionado na segunda página;
-    document.pages[2].add_stamp(stamp2)
-    # Terceiro carimbo é adicionado na terceira página.
-    document.pages[3].add_stamp(stamp3)
-
-    # Salvar o documento atualizado
-    document.save(output_pdf)
+        # Save PDF document
+        document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Adicionando Cabeçalhos e Rodapés como LaTeX
+
+Adicionar cabeçalhos e rodapés contendo conteúdo formatado em LaTeX a todas as páginas de um documento PDF usando Aspose.PDF for Python. LaTeX permite a renderização de símbolos matemáticos, datas, marcas de copyright e outras formatações avançadas. O cabeçalho inclui uma data dinâmica, enquanto o rodapé exibe um símbolo de copyright juntamente com o número da página atual e a contagem total de páginas.
+
+O seguinte trecho de código mostra como usar [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) nos cabeçalhos e rodapés de um PDF usando Aspose.PDF for Python via .NET.
+
+1. Abrir o [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) usando métodos apropriados.
+1. Determine o número total de páginas a ser usado em rodapés dinâmicos.
+1. Iterar por todas as páginas do documento.
+1. Criar um [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objeto para o cabeçalho.
+1. Criar um [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) para o texto do cabeçalho que contém comandos LaTeX (por exemplo, `\\today\\`).
+1. Criar um [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objeto para o rodapé.
+1. Criar um [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) para o texto do rodapé incluindo símbolos LaTeX e numeração de páginas.
+1. Adicionar o [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) para o objeto de cabeçalho/rodapé correspondente.
+1. Vincule o cabeçalho e o rodapé à página atual.
+1. Salvar o modificado [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) para o arquivo de saída.
+
+```python
+import aspose.pdf as ap
+
+def add_header_and_footer_as_latex(input_file, output_file):
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTeX Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = (
+                f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            )
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## Tópicos de página relacionados
+
+- [Trabalhe com páginas PDF em Python](/pdf/pt/python-net/working-with-pages/)
+- [Adicionar numeração de páginas ao PDF em Python](/pdf/pt/python-net/add-page-number/)
+- [Carimbar páginas PDF em Python](/pdf/pt/python-net/stamping/)
+- [Formatar documentos PDF em Python](/pdf/pt/python-net/formatting-pdf-document/)

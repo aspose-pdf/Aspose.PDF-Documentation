@@ -714,5 +714,5 @@ def polyline_annotation_delete(infile, outfile):
 - [Разметка аннотаций](/python-net/markup-annotations/)
 - [Медиа аннотации](/python-net/media-annotations/)
 - [Аннотации безопасности](/python-net/security-annotations/)
-- [Текстовые аннотации](/python-net/text-based-Annotations/)
+- [Текстовые аннотации](/python-net/text-based-annotations/)
 - [Аннотации водяного знака](/python-net/watermark-annotations/)

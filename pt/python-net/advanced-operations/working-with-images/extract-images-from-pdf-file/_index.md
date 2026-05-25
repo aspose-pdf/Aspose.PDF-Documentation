@@ -1,162 +1,69 @@
 ---
-title: Extrair Imagens de Arquivo PDF usando Python
-linktitle: Extrair Imagens
+title: Extrair imagens de arquivo PDF usando Python
+linktitle: Extrair imagens
 type: docs
 weight: 30
 url: /pt/python-net/extract-images-from-pdf-file/
-description: Esta seção mostra como extrair imagens de um arquivo PDF usando a biblioteca Python.
-lastmod: "2023-02-17"
+description: Aprenda como extrair imagens incorporadas de arquivos PDF em Python.
+lastmod: "2026-05-20"
+TechArticle: true
+AlternativeHeadline: Extrair imagens de arquivos PDF com Python
+Abstract: Este artigo mostra como extrair imagens de documentos PDF com Aspose.PDF for Python via .NET. Ele cobre a extração de uma única imagem incorporada e a exportação de imagens encontradas dentro de uma região retangular específica em uma página.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Extrair Imagens de Arquivo PDF com Python",
-    "alternativeHeadline": "Como extrair Imagens de PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documentos pdf",
-    "keywords": "pdf, Python, extrair imagem de pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipe Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-images-from-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-images-from-pdf-file/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Esta seção mostra como extrair imagens de um arquivo PDF usando a biblioteca Python."
-}
-</script>
 
+Use esta página quando precisar reutilizar gráficos incorporados, arquivar ativos de imagem ou processar conteúdo de imagem fora do PDF.
 
-Você precisa separar imagens dos seus arquivos PDF? Para gerenciamento simplificado, arquivamento, análise ou compartilhamento de imagens dos seus documentos, use **Aspose.PDF for Python** e extraia imagens de arquivos PDF.
-
-As imagens são mantidas na coleção [resources](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) de cada página na coleção [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximagecollection/). Para extrair uma página específica, obtenha a imagem da coleção Images usando o índice específico da imagem.
-
-O índice da imagem retorna um objeto [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/). Este objeto fornece um método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) que pode ser usado para salvar a imagem extraída. O snippet de código a seguir mostra como extrair imagens de um arquivo PDF.
+1. Carregue o PDF de origem com `ap.Document(infile)`.
+1. Selecione a página de destino e o índice do recurso de imagem.
+1. Salve o objeto de imagem em um fluxo de saída.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
 
-    import aspose.pdf as ap
 
-    # Abrir documento
-    document = ap.Document(input_file)
-
-    # Extrair uma imagem específica
-    xImage = document.pages[2].resources.images[1]
-    outputImage = io.FileIO(output_image, "w")
-
-    # Salvar imagem de saída
-    xImage.save(outputImage)
-    outputImage.close()
+def extract_image(infile, outfile):
+    document = ap.Document(infile)
+    x_image = document.pages[1].resources.images[1]
+    with FileIO(outfile, "wb") as output_image:
+        x_image.save(output_image)
 ```
 
+## Extrair imagens de região específica em PDF
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+Este exemplo extrai imagens localizadas dentro de uma região retangular especificada em uma página PDF e as salva como arquivos separados.
+
+1. Carregue o PDF de origem.
+1. Criar `ImagePlacementAbsorber` e aceite-o na página de destino.
+1. Defina o retângulo de destino.
+1. Itere pelas colocações de imagens e verifique se os limites de cada imagem se encaixam na região.
+1. Salve as imagens correspondentes em arquivos de saída.
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+
+
+def extract_image_from_specific_region(infile, outfile):
+    document = ap.Document(infile)
+    rectangle = ap.Rectangle(0, 0, 590, 590, True)
+    absorber = ap.ImagePlacementAbsorber()
+    document.pages[1].accept(absorber)
+
+    index = 1
+    for image_placement in absorber.image_placements:
+        point1 = ap.Point(image_placement.rectangle.llx, image_placement.rectangle.lly)
+        point2 = ap.Point(image_placement.rectangle.urx, image_placement.rectangle.ury)
+
+        if rectangle.contains(point1, True) and rectangle.contains(point2, True):
+            with FileIO(outfile.replace("index", str(index)), "wb") as output_image:
+                image_placement.image.save(output_image)
+            index += 1
+```
+
+## Tópicos Relacionados à Imagem
+
+- [Trabalhar com imagens em PDF usando Python](/pdf/pt/python-net/working-with-images/)
+- [Substituir imagens em arquivos PDF existentes](/pdf/pt/python-net/replace-image-in-existing-pdf-file/)
+- [Excluir imagens de arquivos PDF](/pdf/pt/python-net/delete-images-from-pdf-file/)
+- [Adicionar imagens a arquivos PDF existentes](/pdf/pt/python-net/add-image-to-existing-pdf-file/)
