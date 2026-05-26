@@ -1,193 +1,58 @@
 ---
-title: Supprimer des images d'un fichier PDF à l'aide de Python
-linktitle: Supprimer des images
+title: Supprimer les images d'un fichier PDF à l'aide de Python
+linktitle: Supprimer les images
 type: docs
 weight: 20
 url: /fr/python-net/delete-images-from-pdf-file/
-description: Cette section explique comment supprimer des images d'un fichier PDF à l'aide d'Aspose.PDF pour Python via .NET.
-lastmod: "2023-04-17"
+description: Apprenez comment supprimer des images spécifiques ou toutes les images des fichiers PDF en Python.
+lastmod: "2026-05-22"
+TechArticle: true
+AlternativeHeadline: Supprimer les images des fichiers PDF avec Python
+Abstract: Cet article montre comment supprimer des images des documents PDF avec Aspose.PDF for Python via .NET. Il couvre la suppression d'une ressource d'image spécifique et la suppression de toutes les images d'une page sélectionnée.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Supprimer des images d'un fichier PDF à l'aide de Python",
-    "alternativeHeadline": "Comment supprimer des images d'un PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, supprimer, enlever image du pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/delete-images-from-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/delete-images-from-pdf-file/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Cette section explique comment supprimer des images d'un fichier PDF à l'aide d'Aspose.PDF pour Python via .NET."
-}
-</script>
 
+Utilisez cette page lorsque vous devez supprimer des graphiques inutiles, réduire la taille du PDF ou nettoyer le contenu visuel sensible d'un document.
 
-Il existe de nombreuses raisons de supprimer toutes les images ou des images spécifiques des fichiers PDF.
+## Supprimer les images du fichier PDF
 
-Parfois, un fichier PDF peut contenir des images importantes qui doivent être supprimées pour protéger la vie privée ou empêcher tout accès non autorisé à certaines informations.
+Utilisez les étapes suivantes pour supprimer une image d’une page :
 
-Supprimer les images indésirables ou redondantes peut aider à réduire la taille du fichier, facilitant ainsi le partage ou le stockage des fichiers PDF.
-
-Si nécessaire, vous pouvez réduire le nombre de pages en supprimant toutes les images du document. De plus, supprimer des images du document aidera à préparer le PDF pour la compression ou l'extraction des informations textuelles.
-
-**Aspose.PDF pour Python via .NET** vous aidera dans cette tâche.
-
-## Supprimer des images d'un fichier PDF
-
-Pour supprimer une image d'un fichier PDF :
-
-1. Ouvrir un document PDF existant.
-1. Supprimer une image particulière.
-1. Enregistrer le fichier PDF mis à jour.
-
-Le code suivant montre comment supprimer une image d'un fichier PDF.
+1. Chargez le PDF source avec `ap.Document(infile)`.
+1. Sélectionnez la page et l’index de la ressource d’image.
+1. Supprimer l'image avec `resources.images.delete(index)`.
+1. Enregistrez le PDF mis à jour.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Ouvrir le document
-    document = ap.Document(input_file)
-
-    # Supprimer une image particulière
-    document.pages[2].resources.images.delete(1)
-
-    # Enregistrer le fichier PDF mis à jour
-    document.save(output_pdf)
+def delete_image(infile, outfile):
+    document = ap.Document(infile)
+    document.pages[1].resources.images.delete(1)
+    document.save(outfile)
 ```
 
+## Supprimer toutes les images d'une page
 
-## Supprimer toutes les images du PDF d'entrée 
+Utilisez cet exemple pour supprimer chaque image d'une page spécifique.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Ouvrir le document
-    document = ap.Document(input_file)
+def delete_all_images_from_page(infile, outfile, page_number):
+    document = ap.Document(infile)
+    page = document.pages[page_number]
 
-    # Supprimer toutes les images sur toutes les pages
-    for i in range(len(document.pages)):
-        while len(document.pages[i + 1].resources.images) != 0:
-            document.pages[i + 1].resources.images.delete(1)
+    while len(page.resources.images) != 0:
+        page.resources.images.delete(1)
 
-    # Enregistrer le fichier PDF mis à jour
-    document.save(output_file)
+    document.save(outfile)
 ```
 
+## Sujets liés aux images
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Travailler avec des images dans les PDF en utilisant Python](/pdf/fr/python-net/working-with-images/)
+- [Remplacer les images dans les fichiers PDF existants](/pdf/fr/python-net/replace-image-in-existing-pdf-file/)
+- [Extraire les images des fichiers PDF](/pdf/fr/python-net/extract-images-from-pdf-file/)
+- [Ajouter des images aux fichiers PDF existants](/pdf/fr/python-net/add-image-to-existing-pdf-file/)

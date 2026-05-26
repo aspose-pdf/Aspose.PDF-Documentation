@@ -1,173 +1,220 @@
 ---
-title: Créer ou Ajouter une Table dans un PDF en utilisant Python 
-linktitle: Créer ou Ajouter une Table
+title: Ajouter des tables au PDF en Python
+linktitle: Ajout de tables
 type: docs
 weight: 10
-url: /fr/python-net/add-table-in-existing-pdf-document/
-description: Aspose.PDF pour Python via .NET est une bibliothèque utilisée pour créer, lire et éditer des Tables PDF. Consultez d'autres fonctions avancées dans ce sujet.
-lastmod: "2023-02-17"
+url: /fr/python-net/adding-tables/
+description: Apprenez à ajouter et configurer des tableaux dans des documents PDF existants en Python.
+lastmod: "2026-05-22"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Ajoutez et formatez des tableaux dans des documents PDF avec Python
+Abstract: Cet article explique comment ajouter et configurer des tables dans des documents PDF à l'aide d'Aspose.PDF for Python via .NET. Il couvre la création de tables, les bordures, les marges, le remplissage, les étendues de lignes et de colonnes, le comportement AutoFit, la gestion de la largeur des tables, l'insertion d'images dans les cellules et le contrôle du rendu sur plusieurs pages.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Créer ou Ajouter une Table dans un PDF en utilisant Python ",
-    "alternativeHeadline": "Comment ajouter une Table dans un PDF avec Python via .NET",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, créer une table dans un pdf, ajouter une table",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-table-in-existing-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-table-in-existing-pdf-document/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF pour Python via .NET est une bibliothèque utilisée pour créer, lire et éditer des Tables PDF. Consultez d'autres fonctions avancées dans ce sujet."
-}
-</script>
 
+Ajouter des tableaux aux documents PDF existants est une exigence courante pour la présentation des données, le contenu structuré et les rapports. **Aspose.PDF for Python via .NET** fournit une API pratique pour insérer et formater des tableaux dans des PDF existants.
 
-## Création de Table avec Python
+Ce guide fournit des exemples pas à pas pour la création de tableaux, le dimensionnement des colonnes, les bordures, les lignes et les cellules, ainsi que l'enregistrement du document modifié. Il couvre également les options avancées telles que les bordures des cellules, les marges, le remplissage et les paramètres AutoFit pour le dimensionnement dynamique des tableaux.
 
-Les tables sont importantes lors du travail avec des documents PDF. Elles offrent d'excellentes fonctionnalités pour afficher des informations de manière systématique. L'espace de noms Aspose.PDF contient des classes nommées [Table](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/), [Cell](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/), et [Row](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/) qui fournissent des fonctionnalités pour créer des tables lors de la génération de documents PDF à partir de zéro.
+Utilisez cette page lorsque vous devez ajouter de nouveaux tableaux aux PDF existants et contrôler leur comportement de mise en page en Python.
 
-Une table peut être créée en créant un objet de la classe Table.
+## Création de tableaux de base
+
+### Création de tableau
+
+Cet exemple montre comment créer une Table dans un document PDF avec des bordures et plusieurs lignes.
+
+1. Créer un nouveau document PDF.
+1. Ajoute une page blanche au document.
+1. Initialiser la Table.
+1. Définir la bordure globale du tableau.
+1. Définir la bordure des cellules individuelles.
+1. Ajouter des lignes et des cellules.
+1. Insérez le tableau dans la page.
+1. Enregistrez le PDF à l'emplacement spécifié.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
+def create_table(outfile: str) -> None:
+    # Create new PDF document
+    document = ap.Document()
+    page = document.pages.add()
+    # Initializes a new instance of the Table
     table = ap.Table()
-```
-
-### Ajout de Table dans un Document PDF Existant
-
-Pour ajouter une table à un fichier PDF existant avec Aspose.PDF pour Python via .NET, suivez les étapes suivantes :
-
-1. Chargez le fichier source.
-1. Initialisez une table et définissez ses colonnes et lignes.
-1. Définissez les paramètres de la table (nous avons défini les bordures).
-1. Remplissez la table.
-1. Ajoutez la table à une page.
-1. Enregistrez le fichier.
-
-Les extraits de code suivants montrent comment ajouter du texte dans un fichier PDF existant.
-
-```python
-
-    import aspose.pdf as ap
-
-    # Charger le document PDF source
-    doc = ap.Document(input_file)
-    # Initialise une nouvelle instance du Tableau
-    table = ap.Table()
-    # Définir la couleur de la bordure du tableau comme LightGray
-    table.border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.from_rgb(apd.Color.light_gray))
-    # Définir la bordure pour les cellules du tableau
-    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.from_rgb(apd.Color.light_gray))
-    # Créer une boucle pour ajouter 10 lignes
-    for row_count in range(0, 10):
-        # Ajouter une ligne au tableau
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.light_gray)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.light_gray)
+    # Create a loop to add 10 rows
+    for row_count in range(10):
+        # Add row to table
         row = table.rows.add()
-        # Ajouter des cellules au tableau
-        row.cells.add("Colonne (" + str(row_count) + ", 1)")
-        row.cells.add("Colonne (" + str(row_count) + ", 2)")
-        row.cells.add("Colonne (" + str(row_count) + ", 3)")
-    # Ajouter l'objet tableau à la première page du document d'entrée
-    doc.pages[1].paragraphs.add(table)
-    # Enregistrer le document mis à jour contenant l'objet tableau
-    doc.save(output_file)
+        # Add table cells
+        row.cells.add("Column (" + str(row_count) + ", 1)")
+        row.cells.add("Column (" + str(row_count) + ", 2)")
+        row.cells.add("Column (" + str(row_count) + ", 3)")
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+
+    # Save updated document containing table object
+    document.save(outfile)
 ```
 
-### ColSpan et RowSpan dans les Tables
+### Ajout d'images dans les cellules du tableau
 
-Aspose.PDF pour Python via .NET fournit la propriété [col_span](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/#properties) pour fusionner les colonnes dans un tableau et la propriété [row_span](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/#properties) pour fusionner les lignes.
+Cet extrait de code montre comment insérer des images dans les cellules d’un tableau d’un document PDF.
 
-
-Nous utilisons la propriété `col_span` ou `row_span` sur l'objet `Cell` qui crée la cellule de tableau. Après avoir appliqué les propriétés requises, la cellule créée peut être ajoutée au tableau.
+1. Créer un nouveau document PDF.
+1. Initialiser la Table.
+1. Définir les largeurs de colonne en points.
+1. Un fragment de texte est ajouté à la première cellule.
+1. Une instance 'ap.Image()' est ajoutée à la deuxième cellule.
+1. Définissez le chemin du fichier image avec 'img.file'.
+1. Les 'img.fix_width' et 'img.fix_height' contrôlent la taille de l'image à l'intérieur de la cellule.
+1. Insérer le tableau dans la page PDF.
+1. Enregistrez le PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    # Initialisez l'objet Document en appelant son constructeur vide
-    pdf_document = ap.Document()
-    pdf_document.pages.add()
-    # Initialise une nouvelle instance de Table
+def add_image(image: str, outfile: str) -> None:
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
     table = ap.Table()
-    # Définissez la couleur de la bordure du tableau comme LightGray
-    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
-    # Définissez la bordure pour les cellules du tableau
-    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
-    # Ajoutez la 1ère ligne au tableau
-    row1 = table.rows.add()
-    for cellCount in range(1, 5):
-        # Ajoutez des cellules au tableau
-        row1.cells.add("Test 1" + str(cellCount))
+    # Set width for table cells
+    table.column_widths = "200 100"
 
-    # Ajoutez la 2ème ligne au tableau
+    # Create row object and add it to table instance
+    row = table.rows.add()
+    # Create cell object and add it to row instance
+    cell = row.cells.add()
+    # Add textfragment to paragraphs collection of cell object
+    cell.paragraphs.add(ap.text.TextFragment(image))
+    # Create an image instance
+    img = ap.Image()
+    # Set image type as SVG
+    # Path for source file
+    img.file = image
+    # Set width for image instance
+    img.fix_width = 50
+    # Set height for image instance
+    img.fix_height = 50
+    # Add another cell to row object
+    cell = row.cells.add()
+    # Add SVG image to paragraphs collection of recently added cell instance
+    cell.paragraphs.add(img)
+
+    # Add table to paragraphs collection of page object
+    page.paragraphs.add(table)
+    # Save PDF file
+    document.save(outfile)
+```
+
+Vous pouvez ajouter des images SVG dans les cellules de tableau d'un document PDF :
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def add_svg_image(images: list[str], outfile: str) -> None:
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+    # Set width for table cells
+    table.column_widths = "200 100"
+    for image in images:
+        # Create row object and add it to table instance
+        row = table.rows.add()
+        # Create cell object and add it to row instance
+        cell = row.cells.add()
+        # Add textfragment to paragraphs collection of cell object
+        cell.paragraphs.add(ap.text.TextFragment(image))
+        # Create an image instance
+        img = ap.Image()
+        # Set image type as SVG
+        img.file_type = ap.ImageFileType.SVG
+        # Path for source file
+        img.file = image
+        # Set width for image instance
+        img.fix_width = 50
+        # Set height for image instance
+        img.fix_height = 50
+        # Add another cell to row object
+        cell = row.cells.add()
+        # Add SVG image to paragraphs collection of recently added cell instance
+        cell.paragraphs.add(img)
+
+    # Add table to paragraphs collection of page object
+    page.paragraphs.add(table)
+    # Save PDF file
+    document.save(outfile)
+```
+
+### ColSpan et RowSpan dans les tableaux
+
+Cet exemple montre comment fusionner les cellules de tableau verticalement et horizontalement pour créer des mises en page de tableau complexes.
+
+1. Définir la bordure globale du tableau.
+1. Définir les bordures de cellule par défaut.
+1. Fusionner deux cellules horizontalement en une.
+1. Fusionner la cellule verticalement sur deux lignes.
+1. La ligne 5 tient compte du rowspan en sautant la colonne fusionnée.
+1. Insérez le tableau dans la page.
+1. Enregistrez le PDF.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def add_rowspan_or_colspan(outfile: str) -> None:
+    # Create new PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Initializes a new instance of the Table
+    table = ap.Table()
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
+    # Add 1st row to table
+    row1 = table.rows.add()
+    for cell_count in range(1, 5):
+        # Add table cells
+        row1.cells.add("Test 1" + str(cell_count))
+
+    # Add 2nd row to table
     row2 = table.rows.add()
     row2.cells.add("Test 2 1")
     cell = row2.cells.add("Test 2 2")
     cell.col_span = 2
     row2.cells.add("Test 2 4")
 
-    # Ajoutez la 3ème ligne au tableau
+    # Add 3rd row to table
     row3 = table.rows.add()
     row3.cells.add("Test 3 1")
     row3.cells.add("Test 3 2")
     row3.cells.add("Test 3 3")
     row3.cells.add("Test 3 4")
 
-    # Ajoutez la 4ème ligne au tableau
+    # Add 4th row to table
     row4 = table.rows.add()
     row4.cells.add("Test 4 1")
     cell = row4.cells.add("Test 4 2")
@@ -175,371 +222,620 @@ Nous utilisons la propriété `col_span` ou `row_span` sur l'objet `Cell` qui cr
     row4.cells.add("Test 4 3")
     row4.cells.add("Test 4 4")
 
-    # Ajoutez la 5ème ligne au tableau
+    # Add 5th row to table
     row5 = table.rows.add()
     row5.cells.add("Test 5 1")
     row5.cells.add("Test 5 3")
     row5.cells.add("Test 5 4")
 
-    # Ajoutez l'objet tableau à la première page du document d'entrée
-    pdf_document.pages[1].paragraphs.add(table)
-    # Enregistrez le document mis à jour contenant l'objet tableau
-    pdf_document.save(output_file)
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(outfile)
 ```
 
+![Démo ColSpan et RowSpan](colspan_rowspan.png)
 
-Le résultat de l'exécution du code ci-dessous est le tableau représenté sur l'image suivante :
+### Appliquer des bordures aux tableaux et aux cellules
 
-![Démonstration de ColSpan et RowSpan](colspan_rowspan.png)
+Cet exemple montre comment définir le remplissage des cellules, les marges du tableau et contrôler le retour à la ligne du texte dans les cellules du tableau.
 
-## Travailler avec les Bordures, Marges et Espacement
-
-Veuillez noter qu'il prend également en charge la fonctionnalité de définir le style de bordure, les marges et l'espacement des cellules pour les tableaux. Avant d'entrer dans les détails techniques, il est important de comprendre les concepts de bordure, marges et espacement qui sont présentés ci-dessous dans un diagramme :
-
-![Bordures, marges et espacement](set-border-style-margins-and-padding-of-table_1.png)
-
-Dans la figure ci-dessus, vous pouvez voir que les bordures du tableau, de la ligne et de la cellule se chevauchent. En utilisant Aspose.PDF, un tableau peut avoir des marges et les cellules peuvent avoir des espacements. Pour définir les marges des cellules, nous devons définir l'espacement des cellules.
-
-### Bordures
-
-Pour définir les bordures des objets Table, [Row](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/) et [Cell](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/), utilisez les propriétés Table.border, Row.border et Cell.border.
- Les bordures des cellules peuvent également être définies à l'aide de la propriété [default_cell_border](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties) de la classe [Table](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) ou Row. Toutes les propriétés liées aux bordures discutées ci-dessus sont assignées à une instance de la classe Row, qui est créée en appelant son constructeur. La classe Row possède de nombreuses surcharges qui prennent presque tous les paramètres nécessaires pour personnaliser la bordure.
-
-### Marges ou Espacement
-
-L'espacement des cellules peut être géré à l'aide de la propriété [default_cell_padding](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/#properties) de la classe Table. Toutes les propriétés liées à l'espacement sont assignées à une instance de la classe [MarginInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) qui prend des informations sur les paramètres `left`, `right`, `top` et `bottom` pour créer des marges personnalisées.
-Dans l'exemple suivant, la largeur de la bordure de la cellule est définie à 0,1 point, la largeur de la bordure de la table est définie à 1 point et le remplissage de la cellule est défini à 5 points.
-
-![Marge et Bordure dans un Tableau PDF](margin-border.png)
+1. Définir les largeurs des colonnes.
+1. Définir les bordures du tableau et des cellules.
+1. Définir le remplissage à l'intérieur des cellules pour un espacement cohérent.
+1. Appliquer le remplissage à toutes les cellules par défaut.
+1. Ajouter du texte et contrôler le renvoi à la ligne.
+1. Ajouter des lignes et des cellules.
+1. Enregistrez le PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    # Instancier l'objet Document en appelant son constructeur vide
-    doc = ap.Document()
-    page = doc.pages.add()
-    # Instancier un objet table
+def add_borders(outfile: str) -> None:
+    # Create new PDF document
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
     tab1 = ap.Table()
-    # Ajouter la table dans la collection de paragraphes de la section désirée
+    # Add the table in paragraphs collection of the desired section
     page.paragraphs.add(tab1)
-    # Définir les largeurs de colonne de la table
+    # Set with column widths of the table
     tab1.column_widths = "50 50 50"
-    # Définir la bordure de cellule par défaut en utilisant l'objet BorderInfo
+    # Set default cell border using BorderInfo object
     tab1.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
-    # Définir la bordure de la table en utilisant un autre objet BorderInfo personnalisé
+    # Set table border using another customized BorderInfo object
     tab1.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
-    # Créer un objet MarginInfo et définir ses marges gauche, bas, droite et haut
+    # Create MarginInfo object and set its left, bottom, right and top margins
     margin = ap.MarginInfo()
     margin.top = 5
     margin.left = 5
     margin.right = 5
     margin.bottom = 5
-    # Définir le remplissage de cellule par défaut sur l'objet MarginInfo
+    # Set the default cell padding to the MarginInfo object
     tab1.default_cell_padding = margin
-    # Créer des lignes dans la table puis des cellules dans les lignes
+    # Create rows in the table and then cells in the rows
     row1 = tab1.rows.add()
     row1.cells.add("col1")
     row1.cells.add("col2")
     row1.cells.add()
-    my_text = ap.text.TextFragment("col3 avec une longue chaîne de texte")
-    # Row1.Cells.Add("col3 avec une longue chaîne de texte à placer dans la cellule")
-    row1.cells[2].paragraphs.add(my_text)
+    text = ap.text.TextFragment("col3 with large text string")
+    row1.cells[2].paragraphs.add(text)
     row1.cells[2].is_word_wrapped = False
     row2 = tab1.rows.add()
     row2.cells.add("item1")
     row2.cells.add("item2")
     row2.cells.add("item3")
-    # Enregistrer le Pdf
-    doc.save(output_file)
+    # Save updated document containing table object
+    document.save(outfile)
 ```
 
+![Marge et bordure dans le tableau PDF](margin-border.png)
 
-Pour créer une table avec des coins arrondis, utilisez la valeur [rounded_border_radius](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/#properties) de la classe [BorderInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) et définissez le style des coins de la table comme arrondi.
+## Mise en page et dimensionnement du tableau
 
-```python
-    
-    import aspose.pdf as ap
-    
-    tab1 = ap.Table()
-    graph = ap.GraphInfo()
-    graph.color = ap.Color.red
-    # Créer un objet BorderInfo vide
-    b_info = ap.BorderInfo(ap.BorderSide.ALL, graph)
-    # Définir la bordure comme une bordure arrondie où le rayon est de 15
-    b_info.rounded_border_radius = 15
-    # Définir le style des coins de la table comme arrondi
-    tab1.corner_style = ap.BorderCornerStyle.ROUND
-    # Définir les informations de bordure de la table
-    tab1.border = b_info
-```
+### Ajustement automatique des colonnes et des lignes
 
-## Appliquer différents réglages AutoFit à une table
+Cet extrait de code montre comment ajuster automatiquement la largeur des colonnes du tableau pour qu'elle s'adapte à la page.
+Veuillez noter que dans le paramètre table.column_widths = "50 50 50" - il s'agit de points. Mais vous pouvez également spécifier des centimètres (cm), des pouces ou %.
 
-Lors de la conception d'une table à l'aide d'un outil visuel comme Microsoft Word, vous utiliserez fréquemment l'une des fonctionnalités AutoFit pour ajuster commodément la taille de la table à la largeur souhaitée.
- Par exemple, vous pouvez utiliser l'option "AUTO_FIT_TO_WINDOW" pour adapter la largeur du tableau à la page ou AUTO_FIT_TO_CONTENT. Par défaut, lors de l'utilisation d'Aspose.Pdf pour créer un nouveau tableau, il utilise le [column_adjustment](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties) avec une valeur "Customized". Dans l'extrait de code suivant, nous définissons les paramètres de l'objet [MarginInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) et les objets [BorderInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) dans le tableau. Testez l'exemple et évaluez le résultat.
+1. Définir les largeurs de colonne initiales.
+1. Ajuste automatiquement les colonnes à la largeur de la page.
+1. Définir les bordures des cellules et des tableaux.
+1. Le 'table.default_cell_padding' utilise 'MarginInfo()' pour un espacement cohérent à l'intérieur des cellules.
+1. Ajoutez des lignes avec 'table.rows.add()', et ajoutez des cellules avec 'row.cells.add()'.
+1. Enregistrez le PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def auto_fit(outfile: str) -> None:
+    # Create new PDF document
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
 
-    # Instancier l'objet Pdf en appelant son constructeur vide
-    doc = ap.Document()
-    # Créer la section dans l'objet Pdf
-    sec1 = doc.pages.add()
-    # Instancier un objet table
-    tab1 = ap.Table()
-    # Ajouter le tableau dans la collection de paragraphes de la section souhaitée
-    sec1.paragraphs.add(tab1)
-    # Définir les largeurs de colonne du tableau
-    tab1.column_widths = "50 50 50"
-    tab1.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_WINDOW
-    # Définir la bordure de cellule par défaut à l'aide de l'objet BorderInfo
-    tab1.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
-    # Définir la bordure du tableau à l'aide d'un autre objet BorderInfo personnalisé
-    tab1.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
-    # Créer un objet MarginInfo et définir ses marges gauche, bas, droite et haut
+    page.paragraphs.add(table)
+
+    table.column_widths = "50 50 50"
+    table.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_WINDOW
+
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
+
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
+
     margin = ap.MarginInfo()
     margin.top = 5
     margin.left = 5
     margin.right = 5
     margin.bottom = 5
-    # Définir le remplissage de cellule par défaut sur l'objet MarginInfo
-    tab1.default_cell_padding = margin
-    # Créer des lignes dans le tableau puis des cellules dans les lignes
-    row1 = tab1.rows.add()
+
+    table.default_cell_padding = margin
+
+    row1 = table.rows.add()
     row1.cells.add("col1")
     row1.cells.add("col2")
     row1.cells.add("col3")
-    row2 = tab1.rows.add()
+    row2 = table.rows.add()
     row2.cells.add("item1")
     row2.cells.add("item2")
     row2.cells.add("item3")
-    # Enregistrer le document mis à jour contenant l'objet table
-    doc.save(output_file)
+
+    document.save(outfile)
 ```
 
-### Obtenir la Largeur de la Table
+### Créer des tableaux PDF complexes avec des cellules fusionnées et des colonnes répétées
 
-Parfois, il est nécessaire d'obtenir la largeur de la table dynamiquement. La classe Aspose.PDF.Table possède une méthode [get_width()](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#methods) à cet effet. Par exemple, vous n'avez pas défini explicitement la largeur des colonnes de la table et vous avez défini [column_adjustment](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties) sur 'AUTO_FIT_TO_CONTENT'. Dans ce cas, vous pouvez obtenir la largeur de la table comme suit.
-
-```python
-
-    import aspose.pdf as ap
-
-    # Créer un nouveau document
-    doc = ap.Document()
-    # Ajouter une page dans le document
-    page = doc.pages.add()
-    # Initialiser une nouvelle table
-    table = ap.Table()
-    table.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_CONTENT
-    # Ajouter une ligne dans la table
-    row = table.rows.add()
-    # Ajouter une cellule dans la table
-    cell = row.cells.add("Texte de la cellule 1")
-    cell = row.cells.add("Texte de la cellule 2")
-    # Obtenir la largeur de la table
-    print(table.get_width())
-```
-
-## Ajouter une Image SVG à une Cellule de Table
-
-Aspose.PDF pour Python via .NET offre la possibilité d'insérer des cellules de tableau dans un fichier PDF.
- Lors de la construction d'un tableau, vous pouvez inclure à la fois du texte et des images dans ces cellules. De plus, l'API offre la fonctionnalité de transformer des fichiers SVG en format PDF. En utilisant ces fonctionnalités ensemble, vous pouvez charger une image SVG et la placer dans une cellule de tableau.
-
-L'extrait de code suivant démontre le processus de création d'un objet de tableau et d'intégration d'une image SVG à l'intérieur de l'une de ses cellules.
+Créez un tableau avancé dans un PDF en utilisant Python et Aspose.PDF. Il comprend des cellules d'en-tête fusionnées, des arrière-plans colorés, des colonnes répétées et un grand jeu de données structuré. Le tableau est configuré pour gérer la rupture verticale et les mises en page complexes pour des documents de type rapport.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def add_table_hide_borders(outfile: str) -> None:
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
 
-    # Instancier un objet Document
-    doc = ap.Document()
-    # Créer une instance d'image
-    img = ap.Image()
-    # Définir le type d'image comme SVG
-    img.file_type = ap.ImageFileType.SVG
-    # Chemin pour le fichier source
-    img.file = DIR_INPUT_TABLE + "SVGToPDF.svg"
-    # Définir la largeur pour l'instance d'image
-    img.fix_width = 50
-    # Définir la hauteur pour l'instance d'image
-    img.fix_height = 50
-    # Créer une instance de table
+    # Instantiate a table object that will be nested inside outerTable that will break inside the same page
     table = ap.Table()
-    # Définir la largeur pour les cellules du tableau
-    table.column_widths = "100 100"
-    # Créer un objet ligne et l'ajouter à l'instance de tableau
-    row = table.rows.add()
-    # Créer un objet cellule et l'ajouter à l'instance de ligne
-    cell = row.cells.add()
-    # Ajouter un texte à la collection de paragraphes de l'objet cellule
-    cell.paragraphs.add(ap.text.TextFragment("Première cellule"))
-    # Ajouter une autre cellule à l'objet ligne
-    cell = row.cells.add()
-    # Ajouter l'image SVG à la collection de paragraphes de l'instance de cellule récemment ajoutée
-    cell.paragraphs.add(img)
-    # Créer un objet page et l'ajouter à la collection de pages de l'instance de document
-    page = doc.pages.add()
-    # Ajouter le tableau à la collection de paragraphes de l'objet page
+    table.broken = ap.TableBroken.VERTICAL
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL)
+    table.repeating_columns_count = 2
     page.paragraphs.add(table)
-    # Enregistrer le fichier PDF
-    doc.save(output_file)
+
+    # Add header Row
+    row = table.rows.add()
+    cell = row.cells.add("header 1")
+    cell.col_span = 2
+    cell.background_color = ap.Color.light_gray
+    row.cells.add("header 3")
+
+    cell2 = row.cells.add("header 4")
+    cell2.col_span = 2
+    cell2.background_color = ap.Color.light_blue
+    row.cells.add("header 6")
+
+    cell3 = row.cells.add("header 7")
+    cell3.col_span = 2
+    cell3.background_color = ap.Color.light_green
+    cell4 = row.cells.add("header 9")
+
+    cell4.col_span = 3
+    cell4.background_color = ap.Color.light_coral
+    row.cells.add("header 12")
+    row.cells.add("header 13")
+    row.cells.add("header 14")
+    row.cells.add("header 15")
+    row.cells.add("header 16")
+    row.cells.add("header 17")
+
+    row_counter = 0
+    while row_counter < 3:
+        # Create rows in the table and then cells in the rows
+        row1 = table.rows.add()
+        row1.cells.add("col " + str(row_counter) + ", 1")
+        row1.cells.add("col " + str(row_counter) + ", 2")
+        row1.cells.add("col " + str(row_counter) + ", 3")
+        row1.cells.add("col " + str(row_counter) + ", 4")
+        row1.cells.add("col " + str(row_counter) + ", 5")
+        row1.cells.add("col " + str(row_counter) + ", 6")
+        row1.cells.add("col " + str(row_counter) + ", 7")
+        row1.cells.add("col " + str(row_counter) + ", 8")
+        row1.cells.add("col " + str(row_counter) + ", 9")
+        row1.cells.add("col " + str(row_counter) + ", 10")
+        row1.cells.add("col " + str(row_counter) + ", 11")
+        row1.cells.add("col " + str(row_counter) + ", 12")
+        row1.cells.add("col " + str(row_counter) + ", 13")
+        row1.cells.add("col " + str(row_counter) + ", 14")
+        row1.cells.add("col " + str(row_counter) + ", 15")
+        row1.cells.add("col " + str(row_counter) + ", 16")
+        row1.cells.add("col " + str(row_counter) + ", 17")
+        row_counter += 1
+
+    document.save(outfile)
 ```
 
-## Insérer un saut de page entre les lignes du tableau
+![Bordures, marges et remplissage](set-border-style-margins-and-padding-of-table_1.png)
 
-Par défaut, lorsque vous créez un tableau dans un fichier PDF, le tableau s'étend sur plusieurs pages s'il dépasse la marge inférieure du tableau. Cependant, il existe des situations où nous devons imposer des sauts de page après qu'un certain nombre de lignes ont été ajoutées au tableau. L'extrait de code suivant décrit le processus d'insertion d'un saut de page lorsque 10 lignes ont été incluses dans le tableau.
+### Stylisation des coins du tableau
+
+Aspose.PDF for Python via .NET montre comment appliquer des coins arrondis à un tableau et personnaliser le rayon de la bordure.
+
+1. Créer une nouvelle instance de table.
+1. Initialisez une bordure pour tous les côtés.
+1. Définir le rayon du coin.
+1. Appliquer le style de coin arrondi.
+1. Ajouter des lignes et des cellules.
+1. Insérez le tableau dans la page PDF avec 'page.paragraphs.add(table)'.
+1. Enregistrez le document PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def create_table_with_round_corner(outfile: str) -> None:
+    # Create new PDF document
+    document = ap.Document()
+    page = document.pages.add()
 
-    # Instancier une instance de Document
-    doc = ap.Document()
-    # Ajouter une page à la collection de pages du fichier PDF
-    doc.pages.add()
-    # Créer une instance de tableau
-    tab = ap.Table()
-    # Définir le style de bordure pour le tableau
-    tab.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
-    # Définir le style de bordure par défaut pour le tableau avec la couleur de bordure rouge
-    tab.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
-    # Spécifier la largeur des colonnes du tableau
-    tab.column_widths = "100 100"
-    # Créer une boucle pour ajouter 200 lignes au tableau
-    for counter in range(0, 201):
+    # Create a table
+    table = ap.Table()
+
+    # Create a blank BorderInfo object
+    b_info = ap.BorderInfo(ap.BorderSide.ALL)
+
+    # Set the border a rounded border where radius of round is 15
+    b_info.rounded_border_radius = 15
+
+    # Set the table corner style as Round
+    table.corner_style = ap.BorderCornerStyle.ROUND
+
+    # Set the table border information
+    table.border = b_info
+
+    # Create a loop to add 10 rows
+    for row_count in range(0, 10):
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        row.cells.add("Column (" + str(row_count) + ", 1)")
+        row.cells.add("Column (" + str(row_count) + ", 2)")
+        row.cells.add("Column (" + str(row_count) + ", 3)")
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(outfile)
+```
+
+## Ajout de contenu aux tableaux
+
+### Utilisation de fragments HTML dans les cellules
+
+Cet exemple montre comment insérer du contenu formaté en HTML dans les cellules du tableau.
+
+1. Définir les bordures du tableau et des cellules.
+1. Ajouter du contenu HTML.
+1. Ajouter des lignes. Une boucle ajoute plusieurs lignes avec du contenu formaté en HTML dans chaque cellule.
+1. Insérez le tableau dans la page PDF avec 'page.paragraphs.add(table)'.
+1. Enregistrez le document PDF.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def add_html_fragments(outfile: str) -> None:
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.ALL, 0.5, ap.Color.light_gray
+    )
+    # Create a loop to add 10 rows
+    row_count = 1
+    while row_count < 10:
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(f"Column <strong>({row_count}, 1)</strong>")
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(f"Column <span style='color:red'>({row_count}, 2)</span>")
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(
+                f"Column <span style='text-decoration: underline'>({row_count}, 3)</span>"
+            )
+        )
+        row_count += 1
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(outfile)
+```
+
+### Utilisation de fragments LaTeX dans les cellules
+
+Cet exemple montre comment insérer du contenu formaté en LaTeX dans les cellules de tableau pour des expressions mathématiques ou stylisées.
+
+1. Définir les bordures du tableau et des cellules.
+1. Ajouter du contenu LaTeX.
+1. Ajouter des lignes. Une boucle ajoute plusieurs lignes avec du contenu au format LaTeX dans chaque cellule.
+1. Insérez le tableau dans la page PDF avec 'page.paragraphs.add(table)'.
+1. Enregistrez le document PDF.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def add_latex_fragments(outfile: str) -> None:
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.ALL, 0.5, ap.Color.light_gray
+    )
+    # Create a loop to add 10 rows
+    row_count = 1
+    while row_count < 10:
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        cell = row.cells.add()
+        cell.paragraphs.add(ap.LatexFragment(f"Column $\\mathbf{{({row_count}, 1)}}$"))
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.LatexFragment(f"Column $\\textcolor{{red}}{{({row_count}, 2)}}$")
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.LatexFragment(f"Column $\\underline{{({row_count}, 3)}}$")
+        )
+        row_count += 1
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(outfile)
+```
+
+## Fonctionnalités avancées des tables
+
+### Insérer des sauts de page automatiques dans un tableau PDF
+
+Créer un grand tableau dans un PDF en utilisant Python et Aspose.PDF, avec des sauts de page automatiques après un nombre spécifique de lignes. Il crée un tableau à plusieurs lignes, applique des bordures et force les lignes sélectionnées à commencer sur une nouvelle page pour un meilleur contrôle de la mise en page.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def insert_page_break(outfile: str) -> None:
+    # Create PDF document
+    document = ap.Document()
+
+    # Add page
+    page = document.pages.add()
+
+    # Create table instance
+    table = ap.Table()
+
+    # Set border style for table
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
+
+    # Set default border style for table with border color as Red
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
+
+    # Specify table columns width
+    table.column_widths = "100 100"
+
+    # Create a loop to add 200 rows for table
+    for counter in range(201):
         row = ap.Row()
-        tab.rows.add(row)
+        table.rows.add(row)
+
         cell1 = ap.Cell()
-        cell1.paragraphs.add(ap.text.TextFragment("Cellule " + str(counter) + ", 0"))
+        cell1.paragraphs.add(ap.text.TextFragment(f"Cell {counter}, 0"))
         row.cells.add(cell1)
+
         cell2 = ap.Cell()
-        cell2.paragraphs.add(ap.text.TextFragment("Cellule " + str(counter) + ", 1"))
+        cell2.paragraphs.add(ap.text.TextFragment(f"Cell {counter}, 1"))
         row.cells.add(cell2)
-        # Lorsque 10 lignes sont ajoutées, rendre la nouvelle ligne sur une nouvelle page
+
+        # When 10 rows are added, render new row in new page
         if counter % 10 == 0 and counter != 0:
             row.is_in_new_page = True
-    # Ajouter le tableau à la collection de paragraphes du fichier PDF
-    doc.pages[1].paragraphs.add(tab)
-    # Enregistrer le document PDF
-    doc.save(output_file)
+
+    # Add table to paragraphs collection of PDF file
+    page.paragraphs.add(table)
+
+    # Save PDF document
+    document.save(outfile)
 ```
 
+### Répéter les lignes d'en-tête sur plusieurs pages
 
-## Rendre un Tableau sur une Nouvelle Page
+Cet exemple montre comment créer un tableau qui s'étend sur plusieurs pages tout en conservant les lignes d'en-tête visibles sur chaque page.
 
-Par défaut, les paragraphes sont ajoutés à la collection Paragraphs d'un objet Page. Cependant, il est possible de rendre un tableau sur une nouvelle page au lieu de directement après l'objet de niveau paragraphe précédemment ajouté sur la page.
-
-### Exemple : Comment Rendre un Tableau sur une Nouvelle Page en utilisant Python
-
-Pour rendre un tableau sur une nouvelle page, utilisez la propriété [is_in_new_page](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties) dans la classe [BaseParagraph](https://reference.aspose.com/pdf/python-net/aspose.pdf/baseparagraph/). Le code suivant montre comment faire.
+1. Initialiser la Table.
+1. Répéter les lignes d'en-tête incluant la police, la taille et la couleur.
+1. Définir les largeurs des colonnes et appliquer des bordures au tableau.
+1. Ajouter des lignes d'en-tête.
+1. Ajoutez de nombreuses lignes de données pour forcer le tableau à s'étendre sur plusieurs pages.
+1. Insérez le tableau dans la page PDF avec 'page.paragraphs.add(table)'.
+1. Enregistrez le document PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def add_repeating_rows(outfile: str) -> None:
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
 
-    doc = ap.Document()
-    page_info = doc.page_info
-    margin_info = page_info.margin
-
-    margin_info.left = 37
-    margin_info.right = 37
-    margin_info.top = 37
-    margin_info.bottom = 37
-
-    page_info.is_landscape = True
-
+    # Instantiate a table object
     table = ap.Table()
-    table.column_widths = "50 100"
-    # Page ajoutée.
-    cur_page = doc.pages.add()
-    for i in range(1, 121):
-        row = table.rows.add()
-        row.fixed_row_height = 15
-        cell1 = row.cells.add()
-        cell1.paragraphs.add(ap.text.TextFragment("Contenu 1"))
-        cell2 = row.cells.add()
-        cell2.paragraphs.add(ap.text.TextFragment("HHHHH"))
-    paragraphs = cur_page.paragraphs
-    paragraphs.add(table)
 
-    table1 = ap.Table()
-    table1.column_widths = "100 100"
-    for i in range(1, 11):
-        row = table1.rows.add()
-        cell1 = row.cells.add()
-        cell1.paragraphs.add(ap.text.TextFragment("LAAAAAAA"))
-        cell2 = row.cells.add()
-        cell2.paragraphs.add(ap.text.TextFragment("LAAGGGGGG"))
-    table1.is_in_new_page = True
-    # Je veux garder le tableau 1 à la page suivante s'il vous plaît...
-    paragraphs.add(table1)
-    doc.save(output_file)
+    # Set the table to break across pages
+    table.broken = ap.TableBroken.VERTICAL
+
+    # Set number of repeating header rows
+    table.repeating_rows_count = 2
+
+    text_state = ap.text.TextState()
+    text_state.font_size = 12
+    text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+    text_state.foreground_color = ap.Color.red
+    table.repeating_rows_style = text_state
+
+    # Set column widths
+    table.column_widths = "100 100 100"
+
+    # Set borders
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 1, ap.Color.black)
+
+    # Add header rows that will repeat on each page
+    header_row1 = table.rows.add()
+    header_row1.cells.add("Header 1-1")
+    header_row1.cells.add("Header 1-2")
+    header_row1.cells.add("Header 1-3")
+
+    # Set background color for header rows
+    for cell in header_row1.cells:
+        cell.background_color = ap.Color.light_gray
+
+    header_row2 = table.rows.add()
+    header_row2.cells.add("Header 2-1")
+    header_row2.cells.add("Header 2-2")
+    header_row2.cells.add("Header 2-3")
+
+    for cell in header_row2.cells:
+        cell.background_color = ap.Color.light_blue
+
+    # Add many data rows to force table across multiple pages
+    for i in range(1, 101):
+        row = table.rows.add()
+        row.cells.add(f"Data {i}-1")
+        row.cells.add(f"Data {i}-2")
+        row.cells.add(f"Data {i}-3")
+
+    # Add table to page
+    page.paragraphs.add(table)
+
+    # Save document
+    document.save(outfile)
 ```
 
+### Colonnes répétées
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF pour Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Bibliothèque de manipulation PDF pour Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+La fonction 'add_repeating_columns' crée un document PDF avec une table comportant des colonnes répétées. Elle configure une table bordée, ajoute des en‑têtes, remplit les lignes de données et enregistre le fichier PDF généré à l'emplacement spécifié. La définition de cette propriété provoquera le passage de la table à la page suivante colonne par colonne et répétera le nombre de colonnes indiqué au début de la page suivante.
+
+1. Initialise un nouveau document PDF.
+1. Ajoute une page avec des dimensions personnalisées.
+1. Définir le style de bordure du tableau.
+1. Initialiser le tableau.
+1. Ajouter un tableau à la page PDF.
+1. Ajouter la ligne d'en-tête.
+1. Ajouter des lignes de données.
+1. Enregistrer le PDF Document.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def add_repeating_columns(outfile: str) -> None:
+    # Create PDF document
+    document = ap.Document()
+
+    # Add page
+    page = document.pages.add()
+    page.set_page_size(ap.PageSize.a5.height, ap.PageSize.a5.width)
+
+    # Define border
+    border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
+
+    # Create table
+    table = ap.Table()
+    table.broken = ap.TableBroken.VERTICAL_IN_SAME_PAGE
+    table.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_CONTENT
+    table.repeating_columns_count = 5
+    table.border = border
+    table.default_cell_border = border
+
+    # Add table to page
+    page.paragraphs.add(table)
+
+    # Add header row
+    row = table.rows.add()
+    for i in range(1, 6):
+        cell = row.cells.add(f"header {i}")
+        cell.background_color = ap.Color.light_gray
+
+    for i in range(6, 18):
+        row.cells.add(f"header {i}")
+
+    # Add data rows
+    for row_counter in range(1, 6):
+        row = table.rows.add()
+        for i in range(1, 6):
+            cell = row.cells.add(f"cell {row_counter},{i}")
+            cell.background_color = ap.Color.light_gray
+        for i in range(6, 18):
+            row.cells.add(f"cell {row_counter},{i}")
+
+    # Save PDF document
+    document.save(outfile)
+```
+
+### Créer un tableau PDF avec des cellules de texte tournées
+
+Créez un tableau dans un PDF en utilisant Python et Aspose.PDF avec du texte tourné à différents angles dans chaque cellule. C’est utile pour les en‑têtes verticales, les mises en page créatives, les tableaux compacts et la mise en forme personnalisée des rapports.
+
+```python
+import aspose.pdf as ap
+from aspose.pdf import Color, HorizontalAlignment
+from os import path
+import sys
+
+def rotated_text_table(outfile: str) -> None:
+    # Create PDF document
+    document = ap.Document()
+
+    # Add page
+    page = document.pages.add()
+
+    # Initializes a new instance of the Table
+    table = ap.Table()
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, Color.black)
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, Color.black)
+
+    # Add 1st row to table
+    row1 = table.rows.add()
+    row1.min_row_height = 200
+
+    for cell_count in range(4):
+        # Add table cells
+        cell = row1.cells.add()
+
+        tf = ap.text.TextFragment(f"Cell 1 {cell_count - 1}")
+        tf.text_state.rotation = 90 * cell_count
+        tf.horizontal_alignment = HorizontalAlignment.CENTER
+
+        cell.paragraphs.add(tf)
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+
+    # Save result
+    document.save(outfile)
+```
+
+## Sujets liés à la table
+
+- [Travailler avec des tableaux dans les PDF en Python](/pdf/fr/python-net/working-with-tables/)
+- [Extraire les tableaux des documents PDF](/pdf/fr/python-net/extracting-table/)
+- [Intégrer les tableaux PDF avec des sources de données](/pdf/fr/python-net/integrate-table/)
+- [Manipuler les tableaux dans des PDF existants](/pdf/fr/python-net/manipulating-tables/)
