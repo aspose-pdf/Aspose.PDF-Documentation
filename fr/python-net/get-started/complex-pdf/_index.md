@@ -4,59 +4,65 @@ linktitle: Création d'un PDF complexe
 type: docs
 weight: 30
 url: /fr/python-net/complex-pdf-example/
-description: Aspose.PDF pour Python via .NET vous permet de créer des documents plus complexes contenant des images, des fragments de texte et des tableaux dans un seul document.
-lastmod: "2022-12-22"
+description: Aspose.PDF for Python via .NET vous permet de créer des documents plus complexes contenant des images, des fragments de texte et des tableaux dans un seul document.
+lastmod: "2026-05-25"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Créer un PDF complexe avec Python
+Abstract: Cet article approfondit le processus de création de PDF de base présenté dans l'exemple "Hello, World" en illustrant comment créer un document PDF plus complexe en utilisant Python et Aspose.PDF. Le document d'exemple est développé pour une société fictive de services de ferries de passagers et comprend une image, deux fragments de texte (un en-tête et un paragraphe), ainsi qu'un tableau. Le processus implique plusieurs étapes – l'instanciation d'un objet `Document` pour créer un PDF vide, l'ajout d'une `Page`, puis l'insertion d'une `Image` dans la page. Un `TextFragment` est créé pour l'en-tête en utilisant la police Arial avec une taille de 24 pt et un alignement centré, qui est ensuite ajouté aux paragraphes de la page. Un second `TextFragment` est ajouté pour la description, utilisant la police Times New Roman à une taille de 14 pt avec un alignement à gauche. Ensuite, un tableau est créé et formaté avec des largeurs de colonne spécifiques, des bordures et des marges. Le tableau comprend une ligne d'en-tête avec des cellules surlignées et plusieurs lignes de données générées par itération
 ---
 
-L'exemple [Bonjour, le Monde](/pdf/fr/python-net/hello-world-example/) a montré des étapes simples pour créer un document PDF en utilisant Python et Aspose.PDF. Dans cet article, nous allons examiner la création d'un document plus complexe avec Aspose.PDF pour Python. Comme exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers. Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe), et un tableau.
+Le [Hello World](/pdf/fr/python-net/hello-world-example/) exemple a montré des étapes simples pour créer un document PDF en utilisant Python et Aspose.PDF. Dans cet article, nous examinerons la création d'un document plus complexe avec Aspose.PDF for Python. À titre d'exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferries de passagers. Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe) et un tableau.
 
 Si nous créons un document à partir de zéro, nous devons suivre certaines étapes :
 
-1. Instancier un objet [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Dans cette étape, nous allons créer un document PDF vide avec des métadonnées mais sans pages.
-1. Ajouter une [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) à l'objet document. Ainsi, notre document aura maintenant une page.
-1. Ajouter une [Image](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/) à la Page.
-1. Créer un [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) pour l'en-tête. Pour l'en-tête, nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
-1. Ajouter l'en-tête aux [paragraphes](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) de la page.
-1. Créer un [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) pour la description. Pour la description, nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
-1. Ajouter la (description) aux Paragraphes de la page.
-1. Créer un tableau, ajouter des propriétés au tableau.
-
-1. Ajouter (table) à la page [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Instancier un [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objet. Dans cette étape, nous créerons un document PDF vide avec quelques métadonnées mais sans pages.
+1. Ajouter un [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) à l'objet document. Ainsi, maintenant notre document aura une page.
+1. Ajouter un [Image](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/) à la Page.
+1. Créer un [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) pour l'en-tête. Pour l'en-tête, nous utiliserons la police Arial avec une taille de 24 pt et un alignement centré.
+1. Ajouter l'en-tête à la page [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Créer un [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) pour la description. Pour la description, nous utiliserons la police Arial avec une taille de 24 pt et un alignement centré.
+1. Ajouter la description à la page [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. Créer et styliser le tableau. Définir la largeur des colonnes, les bordures, le remplissage et la police.
+1. Ajouter un tableau à la page [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
 1. Enregistrer un document "Complex.pdf".
 
 ```python
+from datetime import timedelta
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Initialiser l'objet document
+def run_complex(self):
+
+    # Initialize document object
     document = ap.Document()
-    # Ajouter une page
+    # Add page
     page = document.pages.add()
 
-    # Ajouter une image
-    page.add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
+    # Add image
+    imageFileName = self.data_dir + "logo.png"
+    page.add_image(imageFileName, ap.Rectangle(20, 730, 120, 830, True))
 
-    # Ajouter un en-tête
-    header = ap.text.TextFragment("Nouvelles routes de ferry à l'automne 2020")
+    # Add Header
+    header = ap.text.TextFragment("New ferry routes in Fall 2029")
     header.text_state.font = ap.text.FontRepository.find_font("Arial")
     header.text_state.font_size = 24
     header.horizontal_alignment = ap.HorizontalAlignment.CENTER
     header.position = ap.text.Position(130, 720)
     page.paragraphs.add(header)
 
-    # Ajouter une description
-    descriptionText = "Les visiteurs doivent acheter des billets en ligne et les billets sont limités à 5 000 par jour. \
-    Le service de ferry fonctionne à moitié capacité et sur un horaire réduit. Attendez-vous à des files d'attente."
+    # Add description
+    descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. \
+    Ferry service is operating at half capacity and on a reduced schedule. Expect lineups."
     description = ap.text.TextFragment(descriptionText)
     description.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
     description.text_state.font_size = 14
     description.horizontal_alignment = ap.HorizontalAlignment.LEFT
     page.paragraphs.add(description)
 
-    # Ajouter un tableau
+    # Add table
     table = ap.Table()
 
     table.column_widths = "200"
@@ -67,13 +73,15 @@ Si nous créons un document à partir de zéro, nous devons suivre certaines ét
     table.default_cell_text_state.font = ap.text.FontRepository.find_font("Helvetica")
 
     headerRow = table.rows.add()
-    headerRow.cells.add("Départs Ville")
-    headerRow.cells.add("Départs Île")
+    headerRow.cells.add("Departs City")
+    headerRow.cells.add("Departs Island")
 
     i = 0
     while i < headerRow.cells.count:
         headerRow.cells[i].background_color = ap.Color.gray
-        headerRow.cells[i].default_cell_text_state.foreground_color = ap.Color.white_smoke
+        headerRow.cells[
+            i
+        ].default_cell_text_state.foreground_color = ap.Color.white_smoke
         i += 1
 
     time = timedelta(hours=6, minutes=0)
@@ -89,5 +97,5 @@ Si nous créons un document à partir de zéro, nous devons suivre certaines ét
 
     page.paragraphs.add(table)
 
-    document.save(output_pdf)
+    document.save(self.data_dir + "Complex.pdf")
 ```

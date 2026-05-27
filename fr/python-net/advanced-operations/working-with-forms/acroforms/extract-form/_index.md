@@ -1,99 +1,53 @@
 ---
-title: Extraire AcroForm - Extraire les données de formulaire d'un PDF en Python
+title: Extraire AcroForm - Extraire les données du formulaire du PDF en Python
 linktitle: Extraire AcroForm
 type: docs
 weight: 30
 url: /fr/python-net/extract-form/
-description: Extraire le formulaire de votre document PDF avec la bibliothèque Aspose.PDF pour Python. Obtenez la valeur d'un champ individuel du fichier PDF.
-lastmod: "2023-02-17"
+description: Extraire les valeurs des champs AcroForm dans les documents PDF en utilisant Aspose.PDF for Python via .NET.
+lastmod: "2026-05-22"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Comment obtenir les données du formulaire d'un PDF en utilisant Python
+Abstract: Cet article montre comment extraire les données des champs AcroForm dans les documents PDF en utilisant Aspose.PDF for Python via .NET. L'exemple parcourt les noms des champs de formulaire, lit les valeurs en utilisant la façade Form, et renvoie un dictionnaire pour le traitement en aval. Ce flux de travail est utile pour le reporting, la validation et l'intégration avec des systèmes externes.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Extraire AcroForm",
-    "alternativeHeadline": "Comment extraire AcroForm d'un PDF en Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, extraire acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/@AsposePDF",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-form/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Extraire le formulaire de votre document PDF avec la bibliothèque Aspose.PDF pour Python. Obtenez la valeur d'un champ individuel du fichier PDF."
-}
-</script>
 
+## Extraire les données du Form
 
-## Extraire des données du formulaire
+### Obtenir les valeurs de tous les champs d'un document PDF
 
-### Obtenir les valeurs de tous les champs du document PDF
+Pour lire les valeurs de tous les champs d'un document PDF, parcourez les noms des champs du formulaire et récupérez chaque valeur depuis le [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form/) façade.
 
-Pour obtenir les valeurs de tous les champs dans un document PDF, vous devez naviguer à travers tous les champs de formulaire et ensuite obtenir la valeur en utilisant la propriété Value. Obtenez chaque champ de la collection Form, dans le type de champ de base appelé [Field](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/) et accédez à sa propriété [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/#properties).
+Utilisez les étapes suivantes :
 
-Les extraits de code Python suivants montrent comment obtenir les valeurs de tous les champs d'un document PDF.
+1. Lier le PDF d'entrée à un `Form` objet.
+1. Parcourir `field_names`.
+1. Lire chaque valeur avec `get_field()`.
+1. Stocker les valeurs dans un dictionnaire.
+1. Retourner ou traiter les valeurs extraites.
+
+L'extrait de code Python suivant montre cette approche.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Ouvrir le document
-    pdfDocument = ap.Document(input_file)
+def get_values_from_all_fields(input_file_name):
+    form = ap.facades.Form(input_file_name)
 
-    # Obtenir les valeurs de tous les champs
-    for formField in pdfDocument.form.fields:
-        # Analyser les noms et les valeurs si nécessaire
-        print("Nom du champ : " + formField.partial_name)
-        print("Valeur : " + str(formField.value))
+    form_values = {}
+    for field_name in form.field_names:
+        form_values[field_name] = form.get_field(field_name)
+
+    print(form_values)
+    return form_values
+```
+
+## Sujets associés
+
+- [Créer AcroForm](/pdf/fr/python-net/create-form/)
+- [Remplir AcroForm](/pdf/fr/python-net/fill-form/)
+- [Importer et exporter des données de formulaire](/pdf/fr/python-net/import-export-form-data/)
+- [Modification d'AcroForm](/pdf/fr/python-net/modifying-form/)

@@ -1,327 +1,343 @@
 ---
-title: Ajouter un en-tête et un pied de page au PDF en utilisant Python
-linktitle: Ajouter un en-tête et un pied de page au PDF
+title: Ajouter des en‑têtes et pieds de page PDF en Python
+linktitle: Ajouter un en‑tête et un pied de page au PDF
 type: docs
 weight: 50
 url: /fr/python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF pour Python via .NET vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp.
-lastmod: "2023-04-17"
+description: Apprenez comment ajouter des en-têtes et des pieds de page aux fichiers PDF en Python en utilisant du texte, des images et du contenu structuré.
+lastmod: "2026-05-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Ajoutez des en-têtes et des pieds de page aux fichiers PDF avec Python
+Abstract: Cet article montre comment ajouter des en-têtes et des pieds de page aux documents PDF avec Aspose.PDF for Python via .NET. Il couvre le texte, la numérotation des pages, le HTML, l'image, le tableau et le contenu d'en-tête et de pied de page basé sur LaTeX.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Ajouter un en-tête et un pied de page au PDF en utilisant Python",
-    "alternativeHeadline": "Comment ajouter un en-tête et un pied de page à un fichier PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, ajouter en-tête, ajouter pied de page dans pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF pour Python via .NET vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp."
-}
-</script>
 
+Utilisez cette page pour ajouter un en-tête et un pied de page cohérents sur les pages PDF avec **Aspose.PDF for Python via .NET**.
 
-**Aspose.PDF pour Python via .NET** vous permet d'ajouter un en-tête et un pied de page dans votre fichier PDF existant. Vous pouvez ajouter des images ou du texte à un document PDF. Essayez également d'ajouter différents en-têtes dans un fichier PDF avec Python.
+Vous pouvez créer des en-têtes et des pieds de page avec [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/), et [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) objets, puis les appliquer via [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) sur chaque page.
 
-## Ajouter du texte dans l'en-tête du fichier PDF
+## Ajout d’en-têtes et de pieds de page en tant que fragments de texte
 
-Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) pour ajouter du texte dans l'en-tête d'un fichier PDF. La classe TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de police, le style de police et la couleur de police, etc. Afin d'ajouter du texte dans l'en-tête, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode 'add_stamp' de la Page pour ajouter le texte dans l'en-tête du PDF.
+Ajoutez des en-têtes et pieds de page texte simples à toutes les pages d'un PDF. Il crée [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objets, insertions [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) éléments dans eux, ensembles [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) pour un positionnement correct, et les attache à chaque page du document. Le résultat est un PDF où chaque page affiche des en-têtes et pieds de page cohérents.
 
-Vous devez définir la propriété [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) de manière à ajuster le texte dans la zone de l'en-tête de votre PDF. Vous devez également définir 'horizontal_alignment' sur Center et 'vertical_alignment' sur Top.
+Le fragment de code suivant montre comment ajouter des en-têtes et des pieds de page sous forme de fragments de texte dans un PDF à l'aide de Python :
 
-Le snippet de code suivant vous montre comment ajouter du texte dans l'en-tête d'un fichier PDF avec Python :
+1. Créer des fragments de texte pour l'en-tête et le pied de page.
+1. Créez des objets HeaderFooter et ajoutez les fragments de texte à ceux-ci.
+1. Définir les paramètres de marge pour contrôler le placement de l’en-tête et du pied de page.
+1. Chargez le document PDF depuis le fichier d'entrée.
+1. Parcourir toutes les pages du document.
+1. Attribuez l'en-tête et le pied de page à chaque page.
+1. Enregistrez le PDF modifié dans le fichier de sortie.
 
 ```python
-import aspose.pdf as pdf
+import aspose.pdf as ap
 
-# Créer un objet Document
-document = pdf.Document("input.pdf")
+def add_header_and_footer_as_text(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Demo header")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-# Créer un objet TextStamp
-text_stamp = pdf.TextStamp("This is a header text")
-text_stamp.top_margin = 10
-text_stamp.horizontal_alignment = pdf.HorizontalAlignment.Center
-text_stamp.vertical_alignment = pdf.VerticalAlignment.Top
+    # Create footer text
+    footer_text = ap.text.TextFragment("Demo footer")
 
-# Ajouter le TextStamp à la première page du document PDF
-document.pages[1].add_stamp(text_stamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
 
-# Enregistrer le document mis à jour
-document.save("output.pdf")
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
 
+    # Set footer margin
+    footer.margin = margin
 
-```python
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
 
-    import aspose.pdf as ap
-
-    # Ouvrir le document
-    document = ap.Document(input_pdf)
-
-    # Créer un en-tête
-    textStamp = ap.TextStamp("Texte de l'en-tête")
-    # Définir les propriétés du tampon
-    textStamp.top_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # Ajouter un en-tête sur toutes les pages
-    for page in document.pages:
-        page.add_stamp(textStamp)
-
-    # Enregistrer le document mis à jour
-    document.save(output_pdf)
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Ajout de texte dans le pied de page d'un fichier PDF
+Cette méthode est utile pour ajouter des titres cohérents, des indicateurs de page ou des mentions légales en haut et en bas de chaque page. Vous pouvez également l'étendre pour inclure des images ou du contenu dynamique, tel que les numéros de page.
 
-Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) pour ajouter du texte dans le pied de page d'un fichier PDF.
- class TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de la police, le style de la police et la couleur de la police, etc. Pour ajouter du texte dans le pied de page, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode 'add_stamp' de la Page pour ajouter le texte dans le pied de page du PDF.
+## Ajout d'en-têtes et de pieds de page pour la numérotation des pages
 
-Le code suivant vous montre comment ajouter du texte dans le pied de page d'un fichier PDF avec Python :
+Ajoutez une numérotation automatique des pages aux en-têtes et pieds de page d'un document PDF à l'aide d'Aspose.PDF for Python. En utilisant les variables intégrées $p (numéro de page actuel) et $P (nombre total de pages), le script insère dynamiquement la numérotation des pages sur chaque page. Les en-têtes affichent le format 'Page X de Y', tandis que les pieds de page montrent 'Page X / Y'. The [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) assure un placement correct sur chaque page.
 
-```python
-
-    import aspose.pdf as ap
-
-    # Ouvrir le document
-    document = ap.Document(input_pdf)
-    # Créer le pied de page
-    textStamp = ap.TextStamp("Texte du pied de page")
-    # Définir les propriétés du tampon
-    textStamp.bottom_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # Ajouter le pied de page sur toutes les pages
-    for page in document.pages:
-        page.add_stamp(textStamp)
-
-    # Enregistrer le fichier PDF mis à jour
-    document.save(output_pdf)
-```
-
-## Ajouter une image dans l'en-tête d'un fichier PDF
-
-Vous pouvez utiliser la classe [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) pour ajouter une image dans l'en-tête d'un fichier PDF. Image Stamp class fournit les propriétés nécessaires pour créer un tampon basé sur une image, comme la taille de la police, le style de la police et la couleur de la police, etc. Afin d'ajouter une image dans l'en-tête, vous devez créer un objet Document et un objet Image Stamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode 'add_stamp' de la Page pour ajouter l'image dans l'en-tête du PDF.
-
-Le snippet de code suivant vous montre comment ajouter une image dans l'en-tête d'un fichier PDF avec Python :
+1. Créer un TextFragment pour l’en-tête en utilisant "Page $p de $P" pour afficher la page actuelle et le nombre total de pages.
+1. Créez un objet HeaderFooter et ajoutez-y le texte d’en-tête.
+1. Créez un TextFragment pour le pied de page en utilisant "Page $p / $P" pour un style de numérotation alternatif.
+1. Créer un objet Footer et ajouter le texte du pied de page.
+1. Définissez les paramètres de marge (gauche = 50, haut = 20) et appliquez‑les à l’en‑tête et au pied de page.
+1. Ouvrez le document PDF à partir du fichier d'entrée.
+1. Parcourez toutes les pages et attribuez l'en-tête et le pied de page à chaque page.
+1. Enregistrez le PDF mis à jour dans le chemin de sortie.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def using_header_and_footer_for_page_numbering(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Page $p from $P")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # Ouvrir le document
-    document = ap.Document(input_pdf)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Page $p / $P")
 
-    # Créer l'en-tête
-    image_stamp = ap.ImageStamp(input_image)
-    # Définir les propriétés du tampon
-    image_stamp.top_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # Ajouter l'en-tête sur toutes les pages
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
 
-    # Enregistrer le document mis à jour
-    document.save(output_pdf)
+    # Create margins
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+
+    # Set header margin
+    header.margin = margin
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Ajouter une image dans le pied de page d'un fichier PDF
+## Ajout d’en-têtes et de pieds de page en tant que fragments HTML
 
-Vous pouvez utiliser la classe [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) pour ajouter une image dans le pied de page d'un fichier PDF. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) classe fournit les propriétés nécessaires pour créer un tampon basé sur une image comme la taille de la police, le style de la police et la couleur de la police, etc. Afin d'ajouter une image dans le pied de page, vous devez créer un objet Document et un objet Image Stamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode 'add_stamp' de la Page pour ajouter l'image dans le pied de page du PDF.
+Appliquer des en‑têtes et pieds de page au format HTML à chaque page d'un document PDF en utilisant Aspose.PDF for Python. En utilisant [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), le script permet le style de texte enrichi—comme le gras et l’italique—d'apparaître dans l'en-tête et le pied de page. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) est appliqué pour un placement correct, et les mêmes éléments formatés sont attachés à chaque page du document.
 
-Le code suivant vous montre comment ajouter une image dans le pied de page d'un fichier PDF avec Python :
+Le fragment de code suivant montre comment ajouter des en-têtes et des pieds de page en tant que fragments HTML à un PDF en utilisant Python :
+
+1. Créer un extrait d'en-tête HTML en utilisant HtmlFragment—y compris du texte stylisé tel que '<strong>' pour gras.
+1. Créez un objet HeaderFooter et ajoutez-y l'en-tête HTML.
+1. Créer un extrait de pied de page HTML en utilisant '<i>' pour le style italique.
+1. Créer un objet Footer et ajouter le HTML du pied de page à celui-ci.
+1. Configurez les marges (gauche = 50, haut = 20) et attribuez‑les à l’en‑tête et au pied de page.
+1. Chargez le document PDF en utilisant 'ap.Document()'.
+1. Parcourez toutes les pages et attribuez l'en-tête et le pied de page à chacune d'elles.
+1. Enregistrez le PDF modifié à l'emplacement de sortie spécifié.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_html(input_file, output_file):
+    # Create header HTML
+    header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_html)
 
-    # Ouvrir le document
-    document = ap.Document(input_pdf)
-    # Créer le pied de page
-    image_stamp = ap.ImageStamp(input_image)
-    # Définir les propriétés du tampon
-    image_stamp.bottom_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # Ajouter le pied de page sur toutes les pages
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer HTML
+    footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
 
-    # Enregistrer le fichier PDF mis à jour
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_html)
+
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Ajout de différents en-têtes dans un fichier PDF
+L'utilisation de HtmlFragment permet une mise en forme riche avec des styles en ligne ou du balisage HTML, vous offrant davantage de flexibilité de conception par rapport au texte brut.
 
-Nous savons que nous pouvons ajouter un TextStamp dans la section En-tête/Pied de page du document en utilisant les propriétés [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) ou [bottom_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties), mais parfois, nous pouvons avoir besoin d'ajouter plusieurs en-têtes/pieds de page dans un seul document PDF. **Aspose.PDF pour Python via .NET** explique comment faire cela.
+## Ajout d'en-têtes et pieds de page en tant qu'images
 
-Pour répondre à cette exigence, nous créerons des objets TextStamp individuels (le nombre d'objets dépend du nombre d'en-têtes/pieds de page nécessaires) et nous les ajouterons au document PDF.
- Nous pouvons également spécifier des informations de formatage différentes pour chaque objet de tampon individuel. Dans l'exemple suivant, nous avons créé un objet Document et trois objets TextStamp, puis nous avons utilisé la méthode 'add_stamp' de la Page pour ajouter le texte dans la section d'en-tête du PDF. Le fragment de code suivant vous montre comment ajouter une image dans le pied de page d'un fichier PDF avec Aspose.PDF pour Python :
+Ajoutez des en-têtes et pieds de page basés sur des images à chaque page d'un document PDF en utilisant Aspose.PDF for Python. Le même fichier image est utilisé à la fois pour l'en-tête et le pied de page sur chaque page. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) positionne les images, et l'image s'ajuste automatiquement pour s'adapter à la zone d'en-tête/pied de page.
+
+Le fragment de code suivant démontre comment ajouter des en-têtes et des pieds de page sous forme d'images à un PDF en utilisant Python :
+
+1. Chargez l'image dans un objet 'ap.Image' et préparez-le à être utilisé comme en-tête.
+1. Créez un objet HeaderFooter et attachez l'image d'en-tête à celui-ci.
+1. Chargez à nouveau la même image pour l’utiliser comme pied de page.
+1. Créez un objet Footer et ajoutez-y l'image du pied de page.
+1. Chargez le document PDF d'entrée en utilisant 'ap.Document()'.
+1. Parcourir toutes les pages du document.
+1. Appliquer des marges (gauche = 50) pour positionner l'en‑tête et le pied de page.
+1. Attribuez l'en-tête et le pied de page à chaque page du PDF.
+1. Enregistrez le PDF mis à jour dans le fichier de sortie spécifié.
+
+Cette technique est idéale pour marquer les documents avec des logos ou des filigranes dans la zone d'en-tête/pied de page.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_image(input_file, image_file, output_file):
+    # Create header image
+    header_image = ap.Image()
+    header_image.file = image_file
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_image)
 
-    # Créer trois tampons
-    stamp1 = ap.TextStamp("En-tête 1")
-    stamp2 = ap.TextStamp("En-tête 2")
-    stamp3 = ap.TextStamp("En-tête 3")
+    # Create footer image
+    footer_image = ap.Image()
+    footer_image.file = image_file
 
-    # Définir l'alignement du tampon (placer le tampon en haut de la page, centré horizontalement)
-    stamp1.vertical_alignment = ap.VerticalAlignment.TOP
-    stamp1.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Spécifier le style de police comme Gras
-    stamp1.text_state.font_style = ap.text.FontStyles.BOLD
-    # Définir la couleur du texte en avant-plan comme rouge
-    stamp1.text_state.foreground_color = ap.Color.red
-    # Spécifier la taille de la police comme 14
-    stamp1.text_state.font_size = 14
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_image)
 
-    # Maintenant, nous devons définir l'alignement vertical du deuxième objet tampon comme Haut
-    stamp2.vertical_alignment = ap.VerticalAlignment.TOP
-    # Définir les informations d'alignement horizontal pour le tampon comme centré
-    stamp2.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Définir le facteur de zoom pour l'objet tampon
-    stamp2.zoom = 10
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Set header margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            header.margin = margin
 
-    # Définir le formatage du troisième objet tampon
-    # Spécifier les informations d'alignement vertical pour l'objet tampon comme HAUT
-    stamp3.vertical_alignment = ap.VerticalAlignment.TOP
-    # Définir les informations d'alignement horizontal pour l'objet tampon comme centré
-    stamp3.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Définir l'angle de rotation pour l'objet tampon
-    stamp3.rotate_angle = 35
-    # Définir le rose comme couleur de fond pour le tampon
-    stamp3.text_state.background_color = ap.Color.pink
-    # Changer les informations de la police pour le tampon en Verdana
-    stamp3.text_state.font = ap.text.FontRepository.find_font("Verdana")
-    # Le premier tampon est ajouté sur la première page;
-    document.pages[1].add_stamp(stamp1)
-    # Le deuxième tampon est ajouté sur la deuxième page;
-    document.pages[2].add_stamp(stamp2)
-    # Le troisième tampon est ajouté sur la troisième page.
-    document.pages[3].add_stamp(stamp3)
+            # Set footer margin
+            footer.margin = margin
 
-    # Enregistrer le document mis à jour
-    document.save(output_pdf)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF pour Python via la bibliothèque .NET",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Bibliothèque de manipulation PDF pour Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Ajout d’en-têtes et de pieds de page sous forme de tableau
+
+Ajoutez des en-têtes et pieds de page structurés, basés sur des tableaux, à toutes les pages d'un document PDF en utilisant Aspose.PDF for Python. [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) les objets offrent un meilleur contrôle de la mise en page, de l'alignement et une mise en forme cohérente pour les en-têtes et pieds de page complexes. Le texte de l'en-tête est centré tandis que le texte du pied de page est aligné à gauche, les deux utilisant la police Arial 12 pt. Les largeurs de colonne sont calculées dynamiquement en fonction des dimensions de la page afin d'assurer un placement correct.
+
+Cet extrait de code ajoute des en-têtes et des pieds de page (en utilisant des tableaux) à chaque page d'un document PDF avec Aspose.PDF for Python via .NET.
+
+1. Définir les styles de texte en utilisant [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) pour l'en-tête et le pied de page (police, taille, alignement).
+1. Créer [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objets pour l'en-tête et le pied de page.
+1. Construire l'en-tête [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) avec une seule ligne et une cellule contenant le texte d'en-tête.
+1. Construire le pied de page [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) avec une seule ligne et cellule contenant le texte du pied de page.
+1. Ajoutez les tableaux aux correspondants [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objets.
+1. Définir le pied de page [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) pour un positionnement horizontal correct.
+1. Ouvrez le [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) en utilisant des méthodes appropriées.
+1. Parcourir toutes les pages et attribuer l’en-tête et le pied de page basés sur un tableau à chaque page.
+1. Enregistrer le modifié [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) vers le fichier de sortie.
+
+```python
+import aspose.pdf as ap
+
+def add_header_and_footer_as_table(input_file, output_file):
+    text_state_header = ap.text.TextState()
+    text_state_header.font = ap.text.FontRepository.find_font("Arial")
+    text_state_header.font_size = 12
+    text_state_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    text_state_footer = ap.text.TextState()
+    text_state_footer.font = ap.text.FontRepository.find_font("Arial")
+    text_state_footer.font_size = 12
+    text_state_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+    # Create header
+    header = ap.HeaderFooter()
+    # Create footer
+    footer = ap.HeaderFooter()
+    # Create header Table
+    table_header = ap.Table()
+    table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+    header_row = table_header.rows.add()
+    header_row.cells.add("This is a Table Header", text_state_header)
+    # Create footer Table
+    table = ap.Table()
+    table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+    table.rows.add().cells.add("Powered by Aspose.PDF", text_state_footer)
+    header.paragraphs.add(table_header)
+    footer.paragraphs.add(table)
+    # Set footer margin
+    footer.margin.left = 150
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## Ajout d'en-têtes et de pieds de page en LaTeX
+
+Ajoutez des en-têtes et des pieds de page contenant du contenu formaté en LaTeX à toutes les pages d'un document PDF en utilisant Aspose.PDF for Python. LaTeX permet de rendre des symboles mathématiques, des dates, des marques de copyright et d'autres formats avancés. L'en-tête comprend une date dynamique, tandis que le pied de page affiche le symbole de copyright ainsi que le numéro de page actuel et le nombre total de pages.
+
+Le fragment de code suivant montre comment utiliser [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) dans les en-têtes et pieds de page d'un PDF utilisant Aspose.PDF for Python via .NET.
+
+1. Ouvrez le [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) en utilisant des méthodes appropriées.
+1. Déterminez le nombre total de pages à utiliser dans les pieds de page dynamiques.
+1. Parcourir toutes les pages du document.
+1. Créer un [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objet pour l'en-tête.
+1. Créer un [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) pour le texte d'en-tête contenant des commandes LaTeX (par exemple, `\\today\\`).
+1. Créer un [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objet pour le pied de page.
+1. Créer un [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) pour le texte du pied de page incluant les symboles LaTeX et la numérotation des pages.
+1. Ajouter le [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) vers l'objet d'en-tête/pied de page correspondant.
+1. Lier l'en-tête et le pied de page à la page actuelle.
+1. Enregistrer le modifié [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) vers le fichier de sortie.
+
+```python
+import aspose.pdf as ap
+
+def add_header_and_footer_as_latex(input_file, output_file):
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTeX Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = (
+                f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            )
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## Sujets de page associés
+
+- [Travailler avec des pages PDF en Python](/pdf/fr/python-net/working-with-pages/)
+- [Ajouter des numéros de page à un PDF en Python](/pdf/fr/python-net/add-page-number/)
+- [Tamponner les pages PDF en Python](/pdf/fr/python-net/stamping/)
+- [Formater les documents PDF en Python](/pdf/fr/python-net/formatting-pdf-document/)

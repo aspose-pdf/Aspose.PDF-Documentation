@@ -32,4 +32,4 @@ Aprenderás diferentes formas de:
 - [Trabajando con gráficos](/pdf/es/python-net/working-with-graphs/) - manipular con formas en la página.
 - [Trabajando con Operadores](/pdf/es/python-net/working-with-operators/) - realizar operaciones de bajo nivel en PDF.
 - [Artefactos](/pdf/es/python-net/artifacts/) - tratar con marcas de agua y otros objetos especiales en PDF.
-- [Trabajar con capas PDF](/python-net/work-with-pdf-layers/) - bloquear capas, extraer elementos, aplanar y combinar capas PDF.
+- [Trabajar con capas PDF](/pdf/es/python-net/work-with-pdf-layers/) - bloquear capas, extraer elementos, aplanar y combinar capas PDF.
