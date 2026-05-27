@@ -1,20 +1,14 @@
 ---
 title: FormEditor Class
 type: docs
-weight: 105
+weight: 100
 url: /java/formeditor-class/
-description: This section explains how to work with com.aspose.pdf.facades using FormEditor Class.
-lastmod: "2025-02-17"
-draft: false
+description: Learn how to use the FormEditor class in Aspose.PDF for Python via .NET to create form fields, modify existing fields, customize field appearance, and add scripts or submit actions.
+lastmod: "2026-03-05"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create and edit PDF form fields in Java with the FormEditor class
+Abstract: This section explains how to use the FormEditor facade in Aspose.PDF for Python via .NET to build and update interactive PDF forms. Learn how to create form fields, customize field appearance, modify existing fields, and add scripts or submit actions programmatically.
 ---
-
-- [Add PDF Form Fields](/pdf/java/add-form-fields/)
-- [Decorate Form Field in PDF](/pdf/java/decorate-form-field/)
-- [Working with List Item](/pdf/java/working-with-list-item/)
-- [Copy Inner and Outer Field](/pdf/java/copy-inner-and-outer-field/)
-- [Move and Remove Form Field](/pdf/java/move-remove-form-field/)
-- [Import and Export Form Field](/pdf/java/import-export-form-field/)
-

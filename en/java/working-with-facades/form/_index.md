@@ -4,13 +4,11 @@ type: docs
 weight: 140
 url: /java/form-class/
 description: This section explains how to work with Aspose.PDF Facades using Form Class.
-lastmod: "2025-02-17"
+lastmod: "2025-11-05"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Work with PDF form data and AcroForm fields in Java using the Form class
+Abstract: This section explains how to use the Form facade in Aspose.PDF for Python via .NET to handle interactive PDF forms. Learn how to export and import form data, fill different field types, manage existing fields, work with button fields and images, and read form values programmatically.
 ---
-
-- [Flatten all Fields in existing PDF File (facades)](/pdf/java/flatten-all-fields/)
-- [Export Data to XML, to FDF from a PDF File (Facades)](/pdf/java/export-data-into-a-pdf-file-facades/)
-- [Import Data into a PDF File - facades](/pdf/java/import-data-into-a-pdf-file-facades/)
-

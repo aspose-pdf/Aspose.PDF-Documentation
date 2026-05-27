@@ -1,17 +1,14 @@
 ---
 title: PdfFileSecurity Class
 type: docs
-weight: 110
+weight: 125
 url: /java/pdffilesecurity-class/
-description: Learn how to secure PDF documents by applying encryption and passwords using the PDFFileSecurity class in Java with Aspose.PDF.
-lastmod: "2025-02-17"
+description: Learn how to use the PdfFileSecurity class in Aspose.PDF for Python via .NET to encrypt and decrypt PDFs, change passwords, and control document privileges.
+lastmod: "2026-03-18"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Encrypt, decrypt, and control PDF permissions in Java with PdfFileSecurity
+Abstract: This section explains how to use the PdfFileSecurity class in Aspose.PDF for Python via .NET to secure PDF documents programmatically. Learn how to encrypt and decrypt PDF files, change passwords, and configure document privileges and permissions in Python applications.
 ---
-
-- [Encrypt PDF File](/pdf/java/encrypt-pdf-file/)
-- [Decrypt PDF File](/pdf/java/decrypt-pdf-file/)
-- [Control Exception PDF File](/pdf/java/control-exception/)
-- [Change Password of PDF File](/pdf/java/change-password/)
-- [Set Privileges on an Existing PDF File](/pdf/java/set-privileges/)

@@ -1,15 +1,14 @@
 ---
 title: PdfFileStamp Class
 type: docs
-weight: 120
+weight: 155
 url: /java/pdffilestamp-class/
-description: Explore how to use the PDFFileStamp class in Java to stamp text or images onto a PDF document using Aspose.PDF.
-lastmod: "2025-02-17"
+description: Learn how to use the PdfFileStamp class in Aspose.PDF for Python via .NET to add headers, footers, page numbers, and stamps to PDF documents.
+lastmod: "2026-04-14"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Add headers, footers, page numbers, and stamps to PDF in Java with PdfFileStamp
+Abstract: This section explains how to use the PdfFileStamp facade in Aspose.PDF for Python via .NET to add repeated content to PDF documents. Learn how to place headers, footers, page numbers, and stamps on PDF pages programmatically in Python applications.
 ---
-
-- [Add PDF Page Stamp](/pdf/java/add-pdf-page-stamp/)
-- [Add Text and Image Stamp](/pdf/java/add-text-and-image-stamp/)
-- [Manage Header and Footer](/pdf/java/manage-header-and-footer/)

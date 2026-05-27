@@ -1,17 +1,11 @@
 ---
 title: PdfFileSignature Class
 type: docs
-weight: 70
+weight: 60
 url: /java/pdffilesignature-class/
-description: Discover how to sign, verify, and manage digital signatures within PDF files using the PDFFileSignature class in Java with Aspose.PDF.
-lastmod: "2025-02-17"
+description: Explore how to add, verify, and remove digital signatures from PDF documents in Python using the PDFFileSignature class with Aspose.PDF.
+lastmod: "2026-01-05"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
 ---
-
-- [Add Signature in PDF File](/pdf/java/add-signature-in-pdf/)
-- [Remove Signature from PDF File](/pdf/java/remove-signature-from-pdf/)
-- [Verify Signature in PDF File](/pdf/java/verify-signature-in-pdf/)
-- [Working with Signature in PDF File](/pdf/java/add-signature-in-pdf/)
-

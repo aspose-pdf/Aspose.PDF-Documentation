@@ -1,22 +1,15 @@
 ---
-title: Basic operations with PDF documents 
+title: Basic operations with PDF documents
 linktitle: Basic operations
 type: docs
-weight: 40
+weight: 60
 url: /java/basic-operations/
-lastmod: "2025-02-17"
-description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF for Java.
+lastmod: "2025-02-27"
+description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
-    priority: 0.7
+    priority: 0.5
 TechArticle: true
-AlternativeHeadline: Create, open, and save PDF with Aspose.PDF for Java 
-Abstract: The Basic Operations section of the Aspose.PDF for Java documentation provides an overview of fundamental tasks that developers can perform when working with PDF documents programmatically. It covers essential operations such as creating new PDF files, loading existing documents, adding and extracting content, and saving files in different formats. The documentation also includes instructions for handling metadata, bookmarks, pages, and document properties. With clear explanations and practical code examples, developers can quickly implement basic PDF processing functionalities in their Java applications, streamlining document management tasks effectively.    
-SoftwareApplication: java    
+AlternativeHeadline: Overview of basic operations with PDF using Java
+Abstract: The article provides an overview of basic operations for handling PDF documents using Aspose.PDF for Python. It covers three fundamental tasks - creating, opening, and saving PDF files within a Python environment. The "Create PDF Document" section details the process of generating a PDF file using Python. The "Open PDF Document" section explores multiple methods for accessing PDF documents in a Python application. Lastly, the "Save PDF Document" section explains various techniques for saving a PDF document. Each section links to more detailed articles that guide users through these essential PDF operations.
 ---
-
-**Basic operations** section describes the first and simplest operation with PDF documents in Aspose.PDF for Java:
-
-- [Create PDF Document](/pdf/java/create-document/) - this article describes how to create PDF file using Java.
-- [Open PDF document](/pdf/java/open-pdf-document/) - this article describes various ways how to open a PDF document in Java application.
-- [Save PDF document](/pdf/java/save-pdf-document/) - this article describes various ways how to save a PDF document to file, stream, send to Web or save as PDF/A (or PDF/X) document.

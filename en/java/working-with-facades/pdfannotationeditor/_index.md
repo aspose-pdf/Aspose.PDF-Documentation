@@ -3,15 +3,12 @@ title: PdfAnnotationEditor Class
 type: docs
 weight: 40
 url: /java/pdfannotationeditor-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfAnnotationEditor Class.
-lastmod: "2025-02-17"
+description: Learn how to use the PdfAnnotationEditor class in Aspose.PDF for Python via .NET to work with PDF annotations, comments, and markup programmatically.
+lastmod: "2026-02-05"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Edit PDF annotations and comments in Java with PdfAnnotationEditor
+Abstract: This section introduces the PdfAnnotationEditor class in Aspose.PDF for Python via .NET for annotation-related PDF workflows. Use this facade to manage PDF annotations, comments, and markup programmatically while working with existing documents in Python applications.
 ---
-
-- [Delete All Annotations by Specified Type (facades)](/pdf/java/delete-annotations/)
-- [Import and Export Annotations to XFDF format using com.aspose.pdf.facades](/pdf/java/import-export-annotations/)
-- [Extract Annotation](/pdf/java/extract-annotation/)
-- [Flatten Annotation](/pdf/java/flatten-annotation/)
-- [Modify Annotations](/pdf/java/modify-annotations/)
