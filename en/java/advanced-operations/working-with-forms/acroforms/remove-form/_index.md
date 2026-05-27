@@ -4,12 +4,45 @@ linktitle: Delete Forms
 type: docs
 weight: 70
 url: /java/remove-form/
-description: Remove form objects from PDF pages by using Aspose.PDF for Python via .NET, including full cleanup and targeted deletion.
-lastmod: "2026-04-28"
+description: Remove form objects from PDF pages using Aspose.PDF for Java, including full cleanup and targeted deletion.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Remove Forms from PDF with Aspose.PDF for Java
-Abstract: This article presents two approaches for removing form elements from PDF documents by using Aspose.PDF for Python via .NET. The first method clears all form objects from a selected page, while the second method removes only matching Typewriter form resources. These examples help with form cleanup, template preparation, and document normalization workflows.
+AlternativeHeadline: Remove form resources from PDF pages with Java
+Abstract: This article explains how to remove form resources from PDF documents using Aspose.PDF for Java. It covers clearing all forms from a page and deleting only selected Typewriter form resources after filtering the page form collection.
 ---
+These examples remove form resources from a page rather than just changing field values.
+
+## Remove all forms from a page
+
+```java
+public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XFormCollection forms = document.getPages().get_Item(pageNum).getResources().getForms();
+        forms.clear();
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Remove specific form resources
+
+```java
+public static void removeSpecifiedForm(Path inputFile, int pageNum, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XFormCollection forms = document.getPages().get_Item(pageNum).getResources().getForms();
+        List<String> formNames = new ArrayList<>();
+        for (XForm form : forms) {
+            if ("Typewriter".equals(form.getIT()) && "Form".equals(form.getSubtype())) {
+                formNames.add(forms.getFormName(form));
+            }
+        }
+        for (String formName : formNames) {
+            forms.delete(formName);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```

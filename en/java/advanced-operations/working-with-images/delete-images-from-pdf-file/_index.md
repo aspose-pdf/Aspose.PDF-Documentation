@@ -4,9 +4,21 @@ linktitle: Delete Images
 type: docs
 weight: 20
 url: /java/delete-images-from-pdf-file/
-description: Learn how to delete specific or all images from PDF files in Python.
-lastmod: "2026-05-05"
+description: Learn how to delete embedded images from PDF files in Java.
+lastmod: "2026-05-27"
 TechArticle: true
-AlternativeHeadline: Delete images from PDF files with Java
-Abstract: This article shows how to delete images from PDF documents with Aspose.PDF for Python via .NET. It covers removing a specific image resource and deleting all images from a selected page.
+AlternativeHeadline: Delete embedded images from PDF files with Java
+Abstract: This article shows how to delete images from PDF documents using Aspose.PDF for Java. The example removes an image resource from the first page by its index in the page image collection and then saves the modified document.
 ---
+Use the page image resource collection when you need to remove embedded images from a PDF page.
+
+```java
+public static void deleteImage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().get_Item(1).getResources().getImages().delete(1);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+This removes the first image resource from page 1 of the document.

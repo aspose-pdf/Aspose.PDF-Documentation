@@ -4,12 +4,49 @@ linktitle: Split PDF files
 type: docs
 weight: 60
 url: /java/split-pdf-document/
-description: Learn how to split PDF pages into separate PDF files in Python.
-lastmod: "2026-04-15"
+description: Learn how to split PDF pages into separate PDF files in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Splitting PDF pages using Java
-Abstract: The article discusses the process of splitting PDF pages into individual files using Python, highlighting the utility of such a feature for managing large PDF documents. It references the Aspose.PDF Splitter, an online tool designed to demonstrate PDF splitting functionality. The article provides a detailed method for achieving this in Python applications, involving iterating through a PDF document's pages via the `Document` object's `PageCollection`. For each page, a new `Document` object is created, the page is added to it, and the new PDF file is saved using the `save()` method. An accompanying Python code snippet illustrates this process, showcasing the steps necessary to split a PDF document into separate files by iterating through its pages and saving each as an individual PDF.
+AlternativeHeadline: Split PDF documents by pages, ranges, groups, and filename patterns using Java
+Abstract: This article explains how to split PDF documents using Aspose.PDF for Java. It covers splitting into single pages, two or three parts, odd and even pages, fixed-size chunks, custom ranges, first or last page plus the rest, custom page groups, and stable filename generation.
 ---
+Aspose.PDF for Java supports several splitting patterns beyond one-page-per-file output.
+
+## Split a PDF into single-page files
+
+```java
+public static void splitDocuments(Path inputFile, Path outputDir) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int pageNumber = 1; pageNumber <= document.getPages().size(); pageNumber++) {
+            try (Document newDocument = new Document()) {
+                newDocument.getPages().add(document.getPages().get_Item(pageNumber));
+                newDocument.save(outputDir.resolve("Page_" + pageNumber + ".pdf").toString());
+            }
+        }
+    }
+}
+```
+
+## Split by parts, ranges, or N pages
+
+The example class also includes:
+
+- `splitDocumentsIntoTwoParts`
+- `splitDocumentsIntoThreeParts`
+- `splitDocumentsEveryNPages`
+- `splitDocumentsByPageRanges`
+
+## Split first or last page from the rest
+
+`splitDocumentsFirstPageAndRest` and `splitDocumentsLastPageAndRest` create separate files for a leading or trailing page while keeping the remaining pages together.
+
+## Split odd and even pages or custom page groups
+
+`splitDocumentsOddEvenPages` creates `Odd_Pages.pdf` and `Even_Pages.pdf`. `splitDocumentsCustomPageGroups` creates grouped output based on explicit page-number lists.
+
+## Generate stable file names
+
+`splitDocumentsWithStableFilenames` uses `String.format("Page_%03d.pdf", pageNumber)` so the output remains naturally sortable.

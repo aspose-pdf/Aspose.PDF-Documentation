@@ -4,12 +4,23 @@ linktitle: Extract Images from PDF
 type: docs
 weight: 20
 url: /java/extract-images-from-the-pdf-file/
-description: Learn how to extract embedded images from PDF files with Aspose.PDF for Python.
-lastmod: "2026-04-16"
+description: Learn how to extract embedded images from PDF files with Aspose.PDF for Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to Extract Images from PDF via Java
-Abstract: This article explains how to extract embedded images from a PDF document with Aspose.PDF for Python. It covers opening the source PDF with the Document class, accessing an image from the page resources collection, and saving the extracted XImage to an external file for reuse, inspection, or downstream processing.
+Abstract: This article explains how to extract embedded images from a PDF document with Aspose.PDF for Java. It shows how to open the source PDF, access an image from the page resources collection, and save the extracted XImage to an external file.
 ---
+Extract images from PDF pages when you need to reuse embedded graphics, inspect document assets, or export images for downstream processing.
+
+```java
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
+    }
+}
+```

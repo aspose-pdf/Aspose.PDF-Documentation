@@ -4,12 +4,22 @@ linktitle: Adding Page Stamps
 type: docs
 weight: 30
 url: /java/page-stamps-in-the-pdf-file/
-description: Learn how to add PDF page stamps as overlays or backgrounds in Python.
-lastmod: "2026-04-15"
+description: Learn how to add PDF page stamps as overlays or backgrounds in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to add Page Stamps to PDF using Java
-Abstract: This article explains how to add a page stamp to a PDF document using Aspose.PDF for Python. A page stamp allows you to overlay or underlay content—such as logos, watermarks, or annotations—onto a specific page in a PDF. The example shows how to open an existing PDF, create a PdfPageStamp object from another PDF page, configure it as a background stamp, and apply it to a particular page. The stamped PDF is then saved as a new document. This technique is useful for branding, watermarking, or emphasizing page-level content in automated PDF workflows.
+AlternativeHeadline: Add page-based stamps to PDF files with Java
+Abstract: This article explains how to add a page stamp to a PDF document using Aspose.PDF for Java. The example loads another PDF page as a stamp, configures it as a background, and applies it to a target page.
 ---
+```java
+public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfPageStamp pageStamp = new PdfPageStamp(pageStampFile.toString(), 1);
+        pageStamp.setBackground(true);
+        document.getPages().get_Item(1).addStamp(pageStamp);
+        document.save(outputFile.toString());
+    }
+}
+```

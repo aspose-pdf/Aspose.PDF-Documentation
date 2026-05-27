@@ -4,12 +4,44 @@ linktitle: Counting Artifacts
 type: docs
 weight: 40
 url: /java/counting-artifacts/
-description: Learn how to inspect and count pagination artifacts in PDF documents using Python with Aspose.PDF for Python via .NET.
-lastmod: "2026-04-15"
+description: Learn how to inspect and count pagination artifacts in PDF documents using Java with Aspose.PDF.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Counting Artifacts in PDF using Java
-Abstract: Pagination artifacts such as watermarks, backgrounds, headers, and footers are commonly used in PDF documents to provide structure, branding, and identification. This example demonstrates how to inspect and count these artifacts programmatically using Aspose.PDF for Python via .NET. By filtering artifacts on a page and grouping them by subtype, developers can quickly analyze document composition and verify the presence of specific elements. The provided code illustrates how to open a PDF, extract pagination artifacts from the first page, count each subtype, and output the results, offering a practical approach to document auditing and validation.
+Abstract: This article explains how to inspect and count pagination artifacts in PDF documents using Aspose.PDF for Java. It shows how to iterate through page artifacts and count watermark, background, header, and footer subtypes.
 ---
+```java
+public static void countPdfArtifacts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int watermarks = 0;
+        int backgrounds = 0;
+        int headers = 0;
+        int footers = 0;
+
+        for (Artifact artifact : document.getPages().get_Item(1).getArtifacts()) {
+            if (artifact.getType() == Artifact.ArtifactType.Pagination) {
+                if (artifact.getSubtype() == Artifact.ArtifactSubtype.Watermark) {
+                    watermarks++;
+                }
+                if (artifact.getSubtype() == Artifact.ArtifactSubtype.Background) {
+                    backgrounds++;
+                }
+                if (artifact.getSubtype() == Artifact.ArtifactSubtype.Header) {
+                    headers++;
+                }
+                if (artifact.getSubtype() == Artifact.ArtifactSubtype.Footer) {
+                    footers++;
+                }
+            }
+        }
+
+        System.out.println("Watermarks: " + watermarks);
+        System.out.println("Backgrounds: " + backgrounds);
+        System.out.println("Headers: " + headers);
+        System.out.println("Footers: " + footers);
+    }
+}
+```

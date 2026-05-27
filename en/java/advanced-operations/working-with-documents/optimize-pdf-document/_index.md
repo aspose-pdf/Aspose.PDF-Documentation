@@ -4,12 +4,50 @@ linktitle: Optimize PDF
 type: docs
 weight: 30
 url: /java/optimize-pdf/
-description: Learn how to optimize, compress, and reduce PDF file size in Python using Aspose.PDF.
-lastmod: "2026-04-15"
+description: Learn how to optimize, compress, and reduce PDF file size in Java using Aspose.PDF.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Compress PDF pages using Java
-Abstract: This article provides a comprehensive guide on optimizing PDF files to reduce their size and enhance performance across various platforms, such as web pages, emails, and storage systems. The optimization techniques include reducing image sizes, removing unused resources, and unembedding fonts. Specific methods for optimizing PDFs for the web and reducing overall file size are discussed, utilizing the `Optimize` and `OptimizeResources` methods in Aspose.PDF for Python. Customization of optimization strategies is possible via `OptimizationOptions`, allowing for targeted actions like compressing images, removing unused objects and streams, linking duplicate streams, and unembedding fonts. Additional strategies cover flattening annotations, removing form fields, and converting PDF files from RGB to grayscale to further decrease size. The article also highlights the use of FlateDecode compression for image optimization, ensuring effective PDF file management while maintaining quality and functionality.
+AlternativeHeadline: Compress PDF resources and reduce file size with Java
+Abstract: This article explains how to optimize PDF files using Aspose.PDF for Java. It covers whole-document optimization, resource compression, image quality reduction, removing unused objects and streams, linking duplicate streams, unembedding fonts, flattening annotations and forms, grayscale conversion, and Flate image compression.
 ---
+Aspose.PDF for Java exposes optimization features through `Document.optimize`, `optimizeResources`, and `OptimizationOptions`.
+
+## Optimize a PDF and reduce resources
+
+```java
+public static void optimizePdf(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        document.optimize();
+        document.save(outputFile.toString());
+    }
+}
+```
+
+`reduceSizePdf` uses `document.optimizeResources()` for a simpler resource-reduction pass.
+
+## Compress images and remove unused data
+
+```java
+public static void shrinkingOrCompressingAllImages(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        OptimizationOptions optimizeOptions = new OptimizationOptions();
+        optimizeOptions.getImageCompressionOptions().setCompressImages(true);
+        optimizeOptions.getImageCompressionOptions().setImageQuality(50);
+        document.optimizeResources(optimizeOptions);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+The example class also shows how to remove unused objects, remove unused streams, link duplicate streams, and unembed fonts.
+
+## Flatten annotations or forms
+
+`flattenAnnotations` iterates through page annotations and calls `annotation.flatten()`. `flattenForms` does the same for form fields by flattening each `Field`.
+
+## Convert to grayscale and use Flate compression
+
+The remaining optimization examples demonstrate `page.makeGrayscale()` and `ImageEncoding.Flate` for image compression tuning.

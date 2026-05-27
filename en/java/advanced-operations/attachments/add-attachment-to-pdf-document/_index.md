@@ -4,12 +4,31 @@ linktitle: Adding Attachment to a PDF document
 type: docs
 weight: 10
 url: /java/add-attachment-to-pdf-document/
-description: Learn how to add file attachments to PDF documents in Python using Aspose.PDF for Python via .NET.
-lastmod: "2026-04-15"
+description: Learn how to add file attachments to PDF documents in Java using Aspose.PDF.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to add Attachments to PDF with Java
-Abstract: This article provides a step-by-step guide on how to add attachments to a PDF file using Python and the Aspose.PDF library. It details the process of setting up a new Python project, importing the necessary Aspose.PDF package, and creating a `Document` object. The article explains how to create a `FileSpecification` object with the desired file and description, and how to add this object to the PDF document’s `EmbeddedFileCollection` using the `add` method. The `EmbeddedFileCollection` holds all attachments within the PDF. A code snippet is included to demonstrate the process of opening a document, setting up a file for attachment, appending it to the document’s attachment collection, and saving the updated PDF.
+AlternativeHeadline: Add embedded files to PDF documents with Java
+Abstract: This article shows how to attach an external file to a PDF document using Aspose.PDF for Java. The example opens an existing PDF, creates a FileSpecification for the attachment, adds it to the document's EmbeddedFiles collection, and saves the updated file.
 ---
+To attach a file to a PDF, load the source document, create a `FileSpecification`, add it to the embedded file collection, and save the result.
+
+## Add an attachment to a PDF
+
+The following example is based on `AttachmentsAddExamples.addAttachments`:
+
+```java
+public static void addAttachments(Path inputFile, Path attachmentPath, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        FileSpecification fileSpecification = new FileSpecification(
+                attachmentPath.toString(),
+                "Sample text file");
+        document.getEmbeddedFiles().add(attachmentPath.getFileName().toString(), fileSpecification);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+This approach stores the file inside the PDF as an embedded attachment that can be opened or extracted later.

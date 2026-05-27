@@ -4,12 +4,47 @@ linktitle: Extract Links
 type: docs
 weight: 30
 url: /java/extract-links/
-description: Learn how to extract link annotations and hyperlinks from PDF documents in Python.
-lastmod: "2026-04-15"
+description: Learn how to extract link annotations and hyperlinks from PDF documents in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to extract Links from PDF
-Abstract: The Aspose.PDF for Python via .NET guide on extracting links explains how to programmatically retrieve hyperlink annotations from PDF documents using Python. The documentation includes practical code examples and highlights how this functionality can be used for tasks such as link auditing, navigation analysis, or building interactive document features. Whether you're working with single-page PDFs or processing large batches, this guide offers a clear and efficient approach to hyperlink extraction.
+AlternativeHeadline: Extract link annotations and URI targets from PDF files with Java
+Abstract: This article explains how to extract link annotations from PDF documents using Aspose.PDF for Java. It shows how to enumerate link annotations on a page, read their page index and rectangle, and extract URI targets from GoToURIAction instances.
 ---
+You can inspect PDF links by iterating over page annotations and filtering for `AnnotationType.Link`.
+
+## Extract link annotations
+
+```java
+public static void extractLinkAnnotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                System.out.println("Page: " + linkAnnotation.getPageIndex()
+                        + ", location: " + linkAnnotation.getRect());
+            }
+        }
+    }
+}
+```
+
+## Extract hyperlink targets
+
+```java
+public static void extractHyperlinks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    System.out.println("Page " + linkAnnotation.getPageIndex() + ", URI:" + action.getURI());
+                }
+            }
+        }
+    }
+}
+```

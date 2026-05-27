@@ -4,12 +4,48 @@ linktitle: Adding backgrounds
 type: docs
 weight: 20
 url: /java/add-backgrounds/
-description: Learn how to add a background image to PDF pages in Python using the BackgroundArtifact class in Aspose.PDF for Python via .NET.
-lastmod: "2026-04-15"
+description: Learn how to add a background image or background color to PDF pages in Java using `BackgroundArtifact` with Aspose.PDF.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to add background to PDF with Java
-Abstract: This article discusses the use of background images in PDF documents using Aspose.PDF for Python via .NET. It highlights the ability to add watermarks or subtle designs to documents by utilizing the `BackgroundArtifact` class, which allows for the incorporation of background images into individual page objects. The article provides a practical code example that demonstrates how to implement this feature. The process involves creating a new PDF document, adding a page, creating a `BackgroundArtifact` object, setting a background image, and appending the background artifact to the page's artifacts collection. Finally, the modified document is saved as a PDF file. This technique allows for enhanced visual presentation of PDF documents.
+Abstract: This article explains how to add or remove PDF page backgrounds in Java using Aspose.PDF. It covers adding a background image, adjusting image opacity, applying a background color, and removing background artifacts from a page.
 ---
+## Add a background image to a PDF page
+
+```java
+public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        BackgroundArtifact artifact = new BackgroundArtifact();
+        artifact.setBackgroundImage(imageStream);
+        document.getPages().get_Item(1).getArtifacts().add(artifact);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add a background image with opacity
+
+```java
+public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path imageFile, Path outputFile)
+        throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        BackgroundArtifact artifact = new BackgroundArtifact();
+        artifact.setBackgroundImage(imageStream);
+        artifact.setOpacity(0.5);
+        document.getPages().get_Item(1).getArtifacts().add(artifact);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add a background color or remove background artifacts
+
+`ArtifactsBackgroundsExamples.java` also includes:
+
+- `addBackgroundColorToPdf` to apply a color-based background artifact
+- `removeBackground` to delete page artifacts where subtype is `Background`

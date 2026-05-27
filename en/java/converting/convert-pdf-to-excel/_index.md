@@ -4,12 +4,32 @@ linktitle: Convert PDF to Excel
 type: docs
 weight: 20
 url: /java/convert-pdf-to-excel/
-lastmod: "2026-04-14"
-description: Learn how to convert PDF files to Excel in Python with Aspose.PDF for Python via .NET, including XLS, XLSX, CSV, ODS, and single-worksheet output.
+lastmod: "2026-05-27"
+description: Learn how to convert PDF files to Excel in Java with Aspose.PDF, including XML Spreadsheet 2003, XLSX, XLSM, CSV, and ODS output.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to Convert PDF to Excel in Java
-Abstract: This article provides a comprehensive guide on converting PDF files to various Excel formats using Python, specifically with the Aspose.PDF for Python via .NET library. It details the conversion processes for XLS, XLSX, CSV, and ODS formats. The document explains the steps needed to convert PDF to XLS and XLSX, highlighting the creation of Document and ExcelSaveOptions instances, and the use of the Document.Save() method to specify output formats. The article also discusses features such as controlling the insertion of blank columns and minimizing worksheet numbers during conversion. Additionally, it provides examples of converting PDFs to single Excel worksheets and other formats like CSV and ODS, emphasizing the flexibility and functionality of Aspose.PDF. An online tool for PDF to XLSX conversion is also mentioned, allowing users to explore the conversion quality. The article concludes with a list of related topics and code snippets to further aid in understanding and implementing these conversions programmatically.
+Abstract: This article explains how to convert PDF files to Excel-compatible formats with Aspose.PDF for Java. It covers XML Spreadsheet 2003, XLSX, XLSM, CSV, and ODS output, along with options for blank-column insertion and minimizing the number of worksheets.
 ---
+## Convert PDF to Excel-compatible formats
+
+All Excel conversions use `ExcelSaveOptions` with a different target format.
+
+```java
+public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {
+    ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+    saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+    saveDocument(inputFile, outputFile, saveOptions);
+}
+```
+
+## Control worksheet layout
+
+The Java examples also show how to:
+
+- insert a blank first column with `setInsertBlankColumnAtFirst(true)`
+- reduce worksheet count with `setMinimizeTheNumberOfWorksheets(true)`
+- export to macro-enabled Excel with `ExcelFormat.XLSM`
+- export to CSV or ODS with the matching `ExcelFormat`

@@ -4,12 +4,29 @@ linktitle: Text stamps in PDF File
 type: docs
 weight: 20
 url: /java/text-stamps-in-the-pdf-file/
-description: Learn how to add text stamps to PDF documents in Python.
-lastmod: "2026-04-15"
+description: Learn how to add text stamps to PDF documents in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to add Text stamps in PDF using Java
-Abstract: This article provides a comprehensive guide on adding text stamps to PDF files using the Aspose.PDF library for Python. It outlines the use of the `TextStamp` class to create customizable text stamps with properties such as font size, style, color, and alignment. The article includes code snippets demonstrating how to add a simple text stamp, configure text alignment, and apply advanced rendering modes like fill stroke text. The first section explains the creation of a `Document` and `TextStamp` object, setting text properties, and adding the stamp to a specific page. The second section introduces the `text_alignment` property to align text horizontally and vertically, providing a code example of centering text on a PDF page. The final section discusses rendering modes, demonstrating how to add fill stroke text using a `TextState` object to set stroke color and rendering mode before binding to a stamp. Each section is accompanied by practical examples to facilitate understanding and implementation.
+AlternativeHeadline: Add text stamps to PDF files with Java
+Abstract: This article explains how to add text stamps to PDF files using Aspose.PDF for Java. It covers creating a background text stamp, positioning it, rotating it, and customizing font, size, style, and color.
 ---
+```java
+public static void addTextStamp(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextStamp textStamp = new TextStamp("Sample Stamp");
+        textStamp.setBackground(true);
+        textStamp.setXIndent(100);
+        textStamp.setYIndent(100);
+        textStamp.setRotate(Rotation.on90);
+        textStamp.getTextState().setFont(FontRepository.findFont("Arial"));
+        textStamp.getTextState().setFontSize(14.0f);
+        textStamp.getTextState().setFontStyle(FontStyles.Bold | FontStyles.Italic);
+        textStamp.getTextState().setForegroundColor(Color.getDarkGreen());
+        document.getPages().get_Item(1).addStamp(textStamp);
+        document.save(outputFile.toString());
+    }
+}
+```

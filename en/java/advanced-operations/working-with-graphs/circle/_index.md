@@ -4,12 +4,51 @@ linktitle: Add Circle
 type: docs
 weight: 20
 url: /java/add-circle/
-description: Learn how to draw and fill circle shapes in PDF files in Python.
-lastmod: "2026-04-16"
+description: Learn how to draw and fill circle shapes in PDF files in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Draw circle shapes in PDF files using Java
-Abstract: This article shows how to add circle shapes to PDF documents with Aspose.PDF for Python via .NET. It covers creating outlined circles, filling circles with color, and placing text inside circle objects.
+Abstract: This article shows how to add circle shapes to PDF documents using Aspose.PDF for Java. It covers drawing circle outlines, filling circles with color, and placing text inside a circle shape.
 ---
+## Add a circle outline
+
+```java
+public static void addCircle(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Graph graph = new Graph(400.0, 200.0);
+        graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
+
+        Circle circle = new Circle(100, 100, 40);
+        circle.getGraphInfo().setColor(Color.getGreenYellow());
+        graph.getShapes().addItem(circle);
+
+        page.getParagraphs().add(graph);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add a filled circle with text
+
+```java
+public static void addCircleFilled(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Graph graph = new Graph(400.0, 200.0);
+        graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
+
+        Circle circle = new Circle(100, 100, 40);
+        circle.getGraphInfo().setColor(Color.getGreenYellow());
+        circle.getGraphInfo().setFillColor(Color.getGreen());
+        circle.setText(new TextFragment("Circle"));
+        graph.getShapes().addItem(circle);
+
+        page.getParagraphs().add(graph);
+        document.save(outputFile.toString());
+    }
+}
+```

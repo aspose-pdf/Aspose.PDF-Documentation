@@ -4,12 +4,39 @@ linktitle: Image stamps in PDF File
 type: docs
 weight: 10
 url: /java/image-stamps-in-pdf-page/
-description: Learn how to add image stamps to PDF pages in Python.
-lastmod: "2026-04-15"
+description: Learn how to add image stamps to PDF pages in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to add Image stamps in PDF using Java
-Abstract: This article provides a comprehensive guide on adding image stamps to PDF files using the Aspose.PDF library for Python. It details the use of the `ImageStamp` class, which allows for customization of image-based stamps including properties such as height, width, opacity, and rotation. The process involves creating a `Document` object and an `ImageStamp` object with the desired properties, and then adding the stamp to a specific page of the PDF using the `add_stamp()` method. The article includes Python code snippets demonstrating how to apply an image stamp to a PDF and control its quality using the `quality` property, which adjusts the image quality in percentage terms. Additionally, the article explains how to use image stamps as backgrounds in floating boxes with the `FloatingBox` class, providing another code example to show how this can be implemented. This guide serves as a useful resource for developers looking to enhance PDFs with image stamps using Aspose.PDF.
+AlternativeHeadline: Add image stamps and image backgrounds to PDF pages with Java
+Abstract: This article explains how to add image stamps to PDF files using Aspose.PDF for Java. It covers image stamps with positioning, rotation, opacity, and quality control, and using an image as the background of a floating box.
 ---
+## Add an image stamp
+
+```java
+public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
+        imageStamp.setBackground(true);
+        imageStamp.setXIndent(100);
+        imageStamp.setYIndent(100);
+        imageStamp.setHeight(300);
+        imageStamp.setWidth(300);
+        imageStamp.setRotate(Rotation.on270);
+        imageStamp.setOpacity(0.5);
+
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Control image stamp quality
+
+`addImageStampWithQualityControl` sets `imageStamp.setQuality(10)` before adding the stamp.
+
+## Use an image as a floating box background
+
+`addImageAsBackgroundInFloatingBox` creates a `FloatingBox`, adds text to it, then assigns an `Image` as the background image.

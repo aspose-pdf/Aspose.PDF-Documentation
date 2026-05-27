@@ -4,12 +4,61 @@ linktitle: Add Ellipse
 type: docs
 weight: 60
 url: /java/add-ellipse/
-description: Learn how to draw, fill, and label ellipse shapes in PDF files in Python.
-lastmod: "2026-04-16"
+description: Learn how to draw, fill, and label ellipse shapes in PDF files in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Draw ellipse shapes in PDF files using Java
-Abstract: This article shows how to add ellipse shapes to PDF documents with Aspose.PDF for Python via .NET. It covers outlined ellipses, filled ellipses, and adding text inside ellipse objects.
+Abstract: This article shows how to add ellipse shapes to PDF documents using Aspose.PDF for Java. It covers outlined ellipses, filled ellipses, and placing text fragments inside ellipse shapes.
 ---
+## Add ellipse outlines
+
+```java
+public static void addEllipse(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Graph graph = new Graph(400.0, 400.0);
+        graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
+
+        Ellipse ellipse1 = new Ellipse(150, 100, 120, 60);
+        ellipse1.getGraphInfo().setColor(Color.getGreenYellow());
+        ellipse1.setText(new TextFragment("Ellipse"));
+        graph.getShapes().addItem(ellipse1);
+
+        page.getParagraphs().add(graph);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+The full example adds two different outline ellipses to the same graph.
+
+## Add filled ellipses
+
+`createEllipseFilled` fills two ellipses with `Color.getGreenYellow()` and `Color.getDarkRed()`.
+
+## Add text inside ellipses
+
+```java
+public static void addTextInsideEllipse(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Graph graph = new Graph(400.0, 400.0);
+        graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
+
+        TextFragment textFragment = new TextFragment("Ellipse");
+        textFragment.getTextState().setFont(FontRepository.findFont("Helvetica"));
+        textFragment.getTextState().setFontSize(24);
+
+        Ellipse ellipse1 = new Ellipse(100, 100, 120, 180);
+        ellipse1.getGraphInfo().setFillColor(Color.getGreenYellow());
+        ellipse1.setText(textFragment);
+        graph.getShapes().addItem(ellipse1);
+
+        page.getParagraphs().add(graph);
+        document.save(outputFile.toString());
+    }
+}
+```

@@ -4,12 +4,49 @@ linktitle: Posting Forms
 type: docs
 weight: 75
 url: /java/posting-form/
-description: Add submit buttons and submission actions to PDF AcroForms by using Aspose.PDF for Python via .NET.
-lastmod: "2026-04-28"
+description: Add submit buttons and submission actions to PDF AcroForms using Aspose.PDF for Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to Add Submit Buttons and Form Submission Actions to a PDF Using Java
-Abstract: This article shows two approaches to add submit functionality to PDF forms by using Aspose.PDF for Python via .NET. You can add a ready-made submit button through FormEditor or create a custom button field with SubmitFormAction for advanced control. These patterns help integrate PDF forms with server-side form processing endpoints.
+AlternativeHeadline: Add submit buttons and form post actions to PDF files with Java
+Abstract: This article shows how to add submit functionality to PDF forms using Aspose.PDF for Java. It covers creating a submit button with FormEditor and building a custom button field that uses SubmitFormAction for more control over the submission URL and flags.
 ---
+Aspose.PDF for Java supports both facade-based and DOM-based submit button creation.
+
+## Add a submit button with FormEditor
+
+```java
+public static void addSubmitButton(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    editor.bindPdf(inputFile.toString());
+    try {
+        editor.addSubmitBtn("submitbutton", 1, "Submit", "http://localhost/testing/show",
+                100, 450, 150, 475);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```
+
+## Add a submit action manually
+
+```java
+public static void addSubmitAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        SubmitFormAction submitAction = new SubmitFormAction();
+        submitAction.setUrl(new FileSpecification("http://localhost:3000/submit"));
+        submitAction.setFlags(SubmitFormAction.EXPORT_FORMAT | SubmitFormAction.SUBMIT_COORDINATES);
+
+        ButtonField submitButton = new ButtonField(document.getPages().get_Item(1), new Rectangle(10, 10, 100, 40));
+        submitButton.setPartialName("SubmitButton");
+        submitButton.setValue("Submit");
+        submitButton.getPdfActions().add(submitAction);
+
+        document.getForm().add(submitButton, 1);
+        document.save(outputFile.toString());
+    }
+}
+```

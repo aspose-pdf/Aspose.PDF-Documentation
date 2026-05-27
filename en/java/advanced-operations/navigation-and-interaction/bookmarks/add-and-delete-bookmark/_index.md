@@ -4,12 +4,41 @@ linktitle: Add and Delete a Bookmark
 type: docs
 weight: 10
 url: /java/add-and-delete-bookmark/
-description: Learn how to add and delete bookmarks in PDF documents using Python.
-lastmod: "2026-04-15"
+description: Learn how to add and delete bookmarks in PDF documents using Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to add, and remove Bookmarks using Java
-Abstract: This article provides comprehensive instructions on managing bookmarks in PDF documents using the Aspose.PDF library for Python. It outlines the processes for adding, modifying, and deleting bookmarks within a PDF. The article begins with a guide on adding a bookmark by creating an `OutlineItemCollection` object and appending it to the document's `OutlineCollection`. It includes code examples demonstrating the creation and addition of both parent and child bookmarks, highlighting a hierarchical relationship. Additionally, the article covers methods for deleting all bookmarks or a specific bookmark by title. Each section includes Python code snippets to illustrate the operations, ensuring readers can easily implement the described functionalities in their PDF manipulation tasks.
+AlternativeHeadline: Add or remove bookmarks in PDF documents with Java
+Abstract: This article shows how to create and delete bookmarks using Aspose.PDF for Java. The examples demonstrate adding a top-level bookmark, creating a child bookmark hierarchy, deleting all bookmarks, and removing a specific bookmark by title.
 ---
+Use the document outline collection to manage bookmarks programmatically.
+
+## Add a bookmark
+
+```java
+public static void addBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
+        pdfOutline.setTitle("Test Outline");
+        pdfOutline.setItalic(true);
+        pdfOutline.setBold(true);
+        pdfOutline.setAction(new GoToAction(document.getPages().get_Item(1)));
+
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add a child bookmark
+
+`addChildBookmark` creates a parent `OutlineItemCollection`, adds a child outline to it, and then appends the parent to `document.getOutlines()`.
+
+## Delete bookmarks
+
+The Java examples also include:
+
+- `deleteBookmarks` to remove the full outline collection with `document.getOutlines().delete()`.
+- `deleteBookmark` to remove a specific item by title with `document.getOutlines().delete("Child Outline")`.

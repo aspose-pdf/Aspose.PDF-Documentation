@@ -4,12 +4,32 @@ linktitle: Convert PDF to HTML format
 type: docs
 weight: 50
 url: /java/convert-pdf-to-html/
-lastmod: "2026-04-14"
-description: Learn how to convert PDF to HTML in Python with Aspose.PDF for Python via .NET, including multi-page output, external images, SVG handling, and layered HTML rendering.
+lastmod: "2026-05-27"
+description: Learn how to convert PDF to HTML in Java with Aspose.PDF, including multi-page output, external image folders, SVG handling, and layered HTML rendering.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true
 AlternativeHeadline: How to Convert PDF to HTML in Java
-Abstract: This article provides a comprehensive guide on converting PDF files to HTML using Python, specifically through the Aspose.PDF for Python via .NET library. It outlines the necessary steps to achieve this conversion programmatically, highlighting the creation of a `Document` object from the source PDF and utilizing the `HtmlSaveOptions` for saving the document in HTML format. The article includes a concise Python code snippet demonstrating the conversion process. Additionally, it introduces an online tool, Aspose.PDF's "PDF to HTML" application, for users to explore the functionality and quality of the conversion. The article is structured to cater to various related topics, ensuring a thorough understanding of using Python for PDF to HTML conversion.
+Abstract: This article explains how to convert PDF files to HTML using Aspose.PDF for Java. It covers basic HTML export together with options for image folders, page splitting, SVG output, compressed SVG graphics, PNG page backgrounds, body-only markup, transparent text rendering, and document-layer conversion.
 ---
+## Convert PDF to HTML
+
+```java
+public static void convertPdfToHtml(Path inputFile, Path outputFile) {
+    saveDocument(inputFile, outputFile, new HtmlSaveOptions());
+}
+```
+
+## Adjust HTML output behavior
+
+The Java examples also cover:
+
+- storing extracted images in a dedicated folder
+- splitting output into multiple HTML pages
+- storing SVG graphics separately
+- compressing SVG graphics
+- rendering raster content as PNG page backgrounds
+- writing body content only
+- preserving transparent or shadowed text as transparent text
+- converting marked content to HTML layers

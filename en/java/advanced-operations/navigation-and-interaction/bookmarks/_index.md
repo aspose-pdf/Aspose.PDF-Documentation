@@ -4,12 +4,16 @@ linktitle: Bookmarks
 type: docs
 weight: 30
 url: /java/bookmarks/
-description: Learn how to add, delete, retrieve, update, and expand PDF bookmarks in Python.
-lastmod: "2026-04-15"
+description: Learn how to add, delete, retrieve, update, and expand PDF bookmarks in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to work with Bookmarks in PDF using Java
-Abstract: The article discusses the importance and utility of bookmarks in PDF documents. Bookmarks enhance user experience by enabling efficient navigation, organization, and structuring of PDF files, making them more accessible. They function as interactive links, allowing users to quickly move to specific sections or pages, akin to a table of contents. The article provides guidance on managing bookmarks, including how to add, delete, get, update, and expand them, thus empowering users to effectively manage and view PDF content.
+AlternativeHeadline: Add, inspect, update, and expand bookmarks in PDF files with Java
+Abstract: This article explains how to work with bookmarks in PDF documents using Aspose.PDF for Java. Learn how to create parent and child bookmarks, delete one or all bookmarks, inspect bookmark properties, retrieve page numbers, update bookmark titles, and expand outlines by default.
 ---
+Bookmarks help users move through long PDF files quickly and provide a document outline similar to a table of contents.
+
+- [Add and delete bookmarks](/java/add-and-delete-bookmark/)
+- [Get, update, and expand bookmarks](/java/get-update-and-expand-bookmark/)

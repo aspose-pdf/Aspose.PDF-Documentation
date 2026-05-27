@@ -4,12 +4,43 @@ linktitle: Adding Watermark
 type: docs
 weight: 30
 url: /java/add-watermarks/
-description: Learn how to add watermark artifacts to PDF files in Python using Aspose.PDF for Python via .NET.
-lastmod: "2026-04-15"
+description: Learn how to add, extract, and delete watermark artifacts in PDF files using Aspose.PDF for Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to add watermark to PDF with Java
-Abstract: The article discusses the use of Aspose.PDF for Python via .NET to add watermarks to PDF documents through the management of artifacts. It introduces the key classes for handling artifacts - `Artifact` and `ArtifactCollection`, and describes how to access them via the `Artifacts` property of the `Page` class. The article details the properties of the `Artifact` class, including attributes such as `contents`, `form`, `image`, `text`, `rectangle`, `rotation`, and `opacity`, which enable comprehensive manipulation of artifacts within PDF files. Additionally, a practical example is provided, demonstrating how to programmatically add a watermark to the first page of a PDF using Python. The code snippet illustrates the creation and configuration of a `WatermarkArtifact`, setting its text, alignment, rotation, and opacity, before appending it to a PDF document and saving the changes.
+Abstract: This article explains how to add, inspect, and remove watermark artifacts in PDF documents using Aspose.PDF for Java. It covers creating a text watermark with alignment, rotation, opacity, and background settings, inspecting watermark artifacts on a page, and deleting them.
 ---
+## Add a watermark artifact
+
+```java
+public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextState textState = new TextState();
+        textState.setFontSize(72);
+        textState.setForegroundColor(Color.getBlueViolet());
+        textState.setFontStyle(FontStyles.Bold);
+        textState.setFont(FontRepository.findFont("Arial"));
+
+        WatermarkArtifact watermark = new WatermarkArtifact();
+        watermark.setTextAndState("WATERMARK", textState);
+        watermark.setArtifactHorizontalAlignment(HorizontalAlignment.Center);
+        watermark.setArtifactVerticalAlignment(VerticalAlignment.Center);
+        watermark.setRotation(60);
+        watermark.setOpacity(0.2);
+        watermark.setBackground(true);
+
+        document.getPages().get_Item(1).getArtifacts().add(watermark);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Extract or delete watermark artifacts
+
+`ArtifactsWatermarksExamples.java` also includes:
+
+- `extractWatermarkFromPdf` to enumerate watermark artifacts on the first page
+- `deleteWatermarkArtifact` to remove artifacts where subtype is `Watermark`

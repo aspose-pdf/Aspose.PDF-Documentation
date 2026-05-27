@@ -4,12 +4,48 @@ linktitle: Create PDF Document
 type: docs
 weight: 10
 url: /java/create-pdf-document/
-description: Learn how to create PDF files and build searchable PDFs in Python using Aspose.PDF for Python via .NET.
-lastmod: "2026-04-15"
+description: Learn how to create PDF files and build searchable PDFs in Java using Aspose.PDF.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Create PDF File with Java
-Abstract: Aspose.PDF for Python via .NET is a versatile API designed for developers to manipulate PDF files within Python applications targeting the .NET framework. It enables users to create, load, modify, and convert PDF documents effortlessly. This article provides a step-by-step guide to creating a simple PDF file using Aspose.PDF. The process involves initializing a `Document` object, adding a `Page` to the document, inserting a `TextFragment` into the page's paragraphs, and saving the file as a PDF. The included Python code snippet demonstrates these steps by creating a PDF document that contains the text "Hello World!". This API simplifies PDF handling with minimal code, enhancing productivity for developers working with PDFs in .NET environments.
+AlternativeHeadline: Create PDF files and searchable PDF documents with Java
+Abstract: This article shows how to create PDF documents using Aspose.PDF for Java. It covers creating a new PDF from scratch and converting an image-based document into a searchable PDF by supplying HOCR output from an external OCR engine.
 ---
+Aspose.PDF for Java supports both simple document creation and OCR-assisted searchable PDF workflows.
+
+## Create a new PDF document
+
+```java
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.getParagraphs().add(new TextFragment("Hello World!"));
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Create a searchable PDF
+
+The `createSearchablePdf` example uses `Document.convert(...)` with a `CallBackGetHocr` implementation. The callback writes the source image to a temporary file, invokes Tesseract with the `hocr` option, reads the generated HOCR markup, and returns it to Aspose.PDF:
+
+```java
+public static void createSearchablePdf(Path inputFile, Path outputFile) {
+    Path tempDir = outputFile.getParent().resolve("ocr-temp");
+    CallBackGetHocr cbgh = new CallBackGetHocr() {
+        @Override
+        public String invoke(java.awt.image.BufferedImage img) {
+            // save the image, run Tesseract with "hocr", and return the HOCR text
+            return fileContents.toString();
+        }
+    };
+    try (Document document = new Document(inputFile.toString())) {
+        document.convert(cbgh);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+This flow depends on an external OCR engine that can produce HOCR output. The example source is written around Tesseract.

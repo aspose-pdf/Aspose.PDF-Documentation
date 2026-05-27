@@ -4,12 +4,46 @@ linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /java/convert-pdf-to-other-files/
-lastmod: "2026-04-14"
-description: Learn how to convert PDF files to EPUB, LaTeX, Markdown, text, XPS, and MobiXML in Python with Aspose.PDF for Python via .NET.
+lastmod: "2026-05-27"
+description: Learn how to convert PDF files to EPUB, LaTeX, Markdown, text, XPS, and MobiXML in Java with Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true
 AlternativeHeadline: How to Convert PDF to other formats in Java
-Abstract: The article provides a comprehensive guide on converting PDF files into various formats using Aspose.PDF for Python. It covers the conversion of PDFs into EPUB, LaTeX/TeX, Text, XPS, and XML formats. Each section starts with an invitation to try online applications provided by Aspose for converting PDFs to the respective formats, highlighting the ease of use and quality of these tools.
+Abstract: This article explains how to convert PDF files into EPUB, TeX, Markdown, text, XPS, and MobiXML formats using Aspose.PDF for Java, with format-specific save options where needed.
 ---
+## Convert PDF to EPUB, TeX, Markdown, text, XPS, or MobiXML
+
+The conversion examples use the PDF `Document` as the source and save with format-specific options or target formats.
+
+```java
+public static void convertPdfToEpub(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        EpubSaveOptions saveOptions = new EpubSaveOptions();
+        saveOptions.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
+        document.save(outputFile.toString(), saveOptions);
+    }
+}
+```
+
+```java
+public static void convertPdfToMd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+        saveOptions.setResourcesDirectoryName("images");
+        saveOptions.setUseImageHtmlTag(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+}
+```
+
+```java
+public static void convertPdfToXps(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XpsSaveOptions saveOptions = new XpsSaveOptions();
+        saveOptions.setUseEmbeddedTrueTypeFonts(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+}
+```

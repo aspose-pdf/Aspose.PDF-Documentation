@@ -4,12 +4,67 @@ linktitle: Digitally sign PDF
 type: docs
 weight: 10
 url: /java/digitally-sign-pdf-file/
-description: Learn how to digitally sign PDF documents, add timestamps, and validate signatures in Python.
-lastmod: "2026-04-15"
+description: Learn how to digitally sign and certify PDF documents in Java using Aspose.PDF.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Digitally sign PDF files with Java
-Abstract: This guide explains how to digitally sign PDF documents using Aspose.PDF for Python via .NET. It details the process of applying standard and advanced digital signatures, utilizing certificates (PFX and PKCS#12), and customizing signature appearance and behavior. The documentation includes code examples that demonstrate how to sign existing PDFs, add timestamps, and verify signature validity. This enables developers to ensure document authenticity, integrity, and compliance with digital signature standards in their Python Applications.
+Abstract: This guide explains how to digitally sign PDF documents using Aspose.PDF for Java. It covers signing with a certificate object, signing with basic certificate parameters, and certifying a document with a DocMDP signature to control allowed post-signing changes.
 ---
+Aspose.PDF for Java supports multiple signing flows through `PdfFileSignature`.
+
+## Sign a PDF with a certificate object
+
+```java
+public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        pdfSignature.sign(1, false, signatureRectangle(), createPkcs7(certificateFile, "Document approval"));
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
+    }
+}
+```
+
+This approach builds a `PKCS7` signature object first and then applies it to page 1.
+
+## Sign a PDF with basic certificate parameters
+
+```java
+public static void signPdfWithBasicParameters(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        pdfSignature.setCertificate(certificateFile.toString(), CERTIFICATE_PASSWORD);
+        pdfSignature.sign(1, "Document approval", "qa@example.com", "New York, USA", false, signatureRectangle());
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
+    }
+}
+```
+
+## Certify a PDF with DocMDP
+
+Use a document modification detection and prevention signature when you need certification-level restrictions:
+
+```java
+public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        DocMDPSignature signature = new DocMDPSignature(
+                createPkcs7(certificateFile, "Certified for form filling and signing"),
+                DocMDPAccessPermissions.FillingInForms);
+        pdfSignature.certify(1, "Certified for form filling and signing", "security@example.com",
+                "New York, USA", true, signatureRectangle(), signature);
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
+    }
+}
+```

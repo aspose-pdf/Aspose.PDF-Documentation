@@ -4,12 +4,98 @@ linktitle: Extract Attachments
 type: docs
 weight: 50
 url: /java/extract-attachment/
-description: Learn how to work with PDF attachments using Python and Aspose.PDF.
-lastmod: "2026-04-26"
+description: Learn how to extract embedded files and file attachment annotations from PDF documents in Java using Aspose.PDF.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: "Complete Guide to Managing PDF Attachments in Java: Add, Extract, and Process Embedded Files"
-Abstract: PDF attachments are widely used to store supporting documents, reports, images, and other resources directly inside a PDF file. This article provides a complete overview of handling PDF attachments with Python using Aspose.PDF. It explains how to embed external files into existing PDFs, extract specific or all attachments, inspect metadata such as file size and timestamps, and recover files stored as FileAttachment annotations. Each example demonstrates practical techniques for automating attachment workflows, improving document portability, and simplifying file management. Whether building enterprise document systems or custom automation scripts, developers can use these methods to efficiently manage embedded files within PDF documents.
+AlternativeHeadline: Extract one or all embedded files from a PDF with Java
+Abstract: This article explains how to extract attachments from PDF documents with Aspose.PDF for Java. It covers extracting a single named attachment, saving every embedded file to an output folder, reading file metadata, and exporting content from a FileAttachment annotation on a page.
 ---
+Aspose.PDF for Java supports several extraction flows depending on how attachments are stored in the document.
+
+## Extract a single attachment by name
+
+Use this approach when you know the embedded file name in advance:
+
+```java
+public static void extractSingleAttachment(Path inputFile, String attachmentName, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        boolean attachmentFound = false;
+        for (FileSpecification fileSpecification : document.getEmbeddedFiles()) {
+            if (attachmentName.equals(fileSpecification.getName())) {
+                try (InputStream inputStream = fileSpecification.getContents();
+                     OutputStream outputStream = Files.newOutputStream(outputFile)) {
+                    inputStream.transferTo(outputStream);
+                }
+                attachmentFound = true;
+                break;
+            }
+        }
+
+        if (!attachmentFound) {
+            throw new IllegalArgumentException("Attachment '" + attachmentName + "' not found in PDF");
+        }
+    }
+}
+```
+
+## Extract all embedded files
+
+This example loops through the embedded file collection, resolves a usable file name, and writes each attachment to disk:
+
+```java
+public static void extractAttachments(Path inputFile, Path outputDir) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        int fileIndex = 1;
+        for (FileSpecification fileSpecification : document.getEmbeddedFiles()) {
+            String fileName = fileSpecification.getName();
+            if (fileName == null || fileName.isBlank()) {
+                fileName = fileSpecification.getUnicodeName();
+            }
+            if (fileName == null || fileName.isBlank()) {
+                fileName = "attachment_" + fileIndex + ".bin";
+            }
+
+            Path outputPath = outputDir.resolve(fileName);
+            try (InputStream inputStream = fileSpecification.getContents();
+                 OutputStream outputStream = Files.newOutputStream(outputPath)) {
+                inputStream.transferTo(outputStream);
+            }
+            fileIndex++;
+        }
+    }
+}
+```
+
+The full example also reads metadata such as description, MIME type, checksum, creation date, modification date, and size from `FileParams`.
+
+## Extract a file attachment annotation
+
+If the attachment is stored as a `FileAttachmentAnnotation`, inspect page annotations and export the associated file:
+
+```java
+public static void extractFileAttachmentAnnotation(Path inputFile, Path outputDir) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        FileAttachmentAnnotation fileAttachment = null;
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.FileAttachment) {
+                fileAttachment = (FileAttachmentAnnotation) annotation;
+                break;
+            }
+        }
+
+        if (fileAttachment == null) {
+            return;
+        }
+
+        FileSpecification fileSpecification = fileAttachment.getFile();
+        Path outputPath = outputDir.resolve("extracted-" + fileSpecification.getName());
+        try (InputStream inputStream = fileSpecification.getContents();
+             OutputStream outputStream = Files.newOutputStream(outputPath)) {
+            inputStream.transferTo(outputStream);
+        }
+    }
+}
+```

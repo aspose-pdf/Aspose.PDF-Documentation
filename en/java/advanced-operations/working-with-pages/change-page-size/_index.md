@@ -4,12 +4,33 @@ linktitle: Changing Page Size
 type: docs
 weight: 40
 url: /java/change-page-size/
-description: Learn how to read and change PDF page dimensions in Python.
-lastmod: "2026-04-15"
+description: Learn how to read and change PDF page dimensions in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Changing Page Size using Java
-Abstract: This article demonstrates how to read and modify PDF page dimensions using Aspose.PDF. The Get Page Size example retrieves the width and height of a specific PDF page, enabling users to inspect page layout, validate formatting, or analyze document structure. The Set Page Size example shows how to change a page’s dimensions—such as converting the first page to A4 size—while also displaying box properties (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) before and after modification.
+AlternativeHeadline: Read and update page dimensions and boxes with Java
+Abstract: This article demonstrates how to read and modify PDF page dimensions using Aspose.PDF for Java. It covers getting page size, measuring page size with rotation applied, and updating the first page to a new size while printing the box dimensions before and after the change.
 ---
+## Set a page size
+
+```java
+public static void setPageSize(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        page.setPageSize(597.6, 842.4);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+The example also prints the `CropBox`, `TrimBox`, `ArtBox`, `BleedBox`, and `MediaBox` dimensions before and after the change.
+
+## Get page size
+
+`getPageSize` reads the dimensions from `page.getPageRect(true)`.
+
+## Get page size with rotation
+
+`getPageSizeRotation` rotates the first page to `Rotation.on90` and compares `getPageRect(false)` with `getPageRect(true)`.

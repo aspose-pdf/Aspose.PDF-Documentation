@@ -4,12 +4,41 @@ linktitle: Merge PDF files
 type: docs
 weight: 50
 url: /java/merge-pdf-documents/
-description: Learn how to merge multiple PDF files into a single document in Python.
-lastmod: "2026-04-15"
+description: Learn how to merge multiple PDF files into a single document in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Combine PDF pages using Java
-Abstract: This article addresses the common need to merge multiple PDF files into a single document, a process valuable for organizing and optimizing storage and sharing of PDF content. It explores the use of Aspose.PDF for Python via .NET to efficiently combine PDF files, acknowledging that merging PDFs in Python can be challenging without third-party libraries. The article provides a step-by-step guide to concatenating PDF files - creating a new document, merging the files, and saving the merged document. A code snippet demonstrates the implementation using Aspose.PDF, highlighting the library's capability to streamline the merging process. Additionally, it introduces the Aspose.PDF Merger, an online tool for merging PDFs, enabling users to explore the functionality in a web-based environment.
+AlternativeHeadline: Combine full documents, selected ranges, and alternating pages with Java
+Abstract: This article explains how to merge PDF documents using Aspose.PDF for Java. It covers combining two files, merging multiple documents, selecting page ranges, inserting one document into another at a specific position, alternating pages, and building merged output with section bookmarks.
 ---
+Aspose.PDF for Java supports several merge strategies depending on how the output should be assembled.
+
+## Merge two PDF documents
+
+```java
+public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {
+    try (Document document1 = new Document(inputFile1.toString());
+         Document document2 = new Document(inputFile2.toString())) {
+        document1.getPages().add(document2.getPages());
+        document1.save(outputFile.toString());
+    }
+}
+```
+
+## Merge multiple documents or selected ranges
+
+The example class also includes:
+
+- `mergeMultipleDocuments` to append all pages from a list of input files.
+- `mergeSelectedPageRanges` to combine only the requested pages from each source.
+- `mergeInsertDocumentAtPosition` to insert one document after a chosen page number.
+
+## Merge alternating pages
+
+`mergeAlternatingPages` interleaves pages from two documents one by one until both sources are exhausted.
+
+## Merge with section separators and bookmarks
+
+`mergeWithSectionSeparatorsAndBookmarks` creates a separator page for each source document and adds `OutlineItemCollection` bookmarks so the merged output remains navigable.

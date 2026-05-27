@@ -4,12 +4,57 @@ linktitle: Add Arc
 type: docs
 weight: 10
 url: /java/add-arc/
-description: Learn how to draw and fill arc shapes in PDF files in Python.
-lastmod: "2026-04-16"
+description: Learn how to draw and fill arc shapes in PDF files in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Draw arc shapes in PDF files using Java
-Abstract: This article shows how to add arc shapes to PDF documents with Aspose.PDF for Python via .NET. It covers creating outlined arcs, drawing filled arc segments, and adding them to a Graph container.
+Abstract: This article shows how to add arc shapes to PDF documents using Aspose.PDF for Java. It covers drawing multiple outlined arcs with different colors and creating a filled arc segment by combining an arc with a closing line.
 ---
+Aspose.PDF for Java uses `Graph` together with shape objects such as `Arc` and `Line` to render vector graphics.
+
+## Add arc outlines
+
+```java
+public static void addArc(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Graph graph = new Graph(400.0, 400.0);
+        graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
+
+        Arc arc1 = new Arc(100, 100, 95, 0, 90);
+        arc1.getGraphInfo().setColor(Color.getGreenYellow());
+        graph.getShapes().addItem(arc1);
+
+        page.getParagraphs().add(graph);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+The full example adds three arcs with different radii, angles, and colors to the same graph.
+
+## Add a filled arc segment
+
+```java
+public static void addArcFilled(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Graph graph = new Graph(400.0, 400.0);
+        graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
+
+        Arc arc = new Arc(100, 100, 95, 0, 90);
+        arc.getGraphInfo().setFillColor(Color.getGreenYellow());
+        graph.getShapes().addItem(arc);
+
+        Line line = new Line(new float[]{195, 100, 100, 100, 100, 195});
+        line.getGraphInfo().setFillColor(Color.getGreenYellow());
+        graph.getShapes().addItem(line);
+
+        page.getParagraphs().add(graph);
+        document.save(outputFile.toString());
+    }
+}
+```

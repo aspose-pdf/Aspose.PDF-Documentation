@@ -4,12 +4,45 @@ linktitle: Create Links
 type: docs
 weight: 10
 url: /java/create-links/
-description: Learn how to create internal, external, and remote PDF links in Python.
-lastmod: "2026-04-15"
+description: Learn how to create internal, external, and remote PDF links in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to create Links in PDF
-Abstract: The Aspose.PDF for Python via .NET guide on creating links provides developers with practical instructions for adding interactive hyperlinks to PDF documents using Python. It covers how to create various types of links, including those that launch external applications, navigate to specific pages within the same document, or open other PDF files. The documentation explains how to use LinkAnnotation objects, define clickable areas with Rectangle, and assign actions like LaunchAction or GoToRemoteAction. With clear code examples and step-by-step guidance, this resource helps developers enhance PDF navigation and interactivity in their Python applications.
+AlternativeHeadline: Create link annotations in PDF files with Java
+Abstract: This article shows how to create link annotations using Aspose.PDF for Java. It covers launch actions, remote document navigation, in-document page navigation, and URI-based web links by attaching actions to LinkAnnotation objects.
 ---
+Aspose.PDF for Java uses `LinkAnnotation` together with an action object to define link behavior.
+
+## Create a page navigation link
+
+```java
+public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        Border border = new Border(link);
+        border.setWidth(5);
+        border.setDash(new Dash(1, 1));
+        link.setBorder(border);
+        link.setColor(Color.getGreen());
+        if (document.getPages().size() >= 4) {
+            link.setAction(new GoToAction(document.getPages().get_Item(4)));
+        } else {
+            link.setAction(new GoToAction(document.getPages().get_Item(document.getPages().size())));
+        }
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Other link types
+
+The `CreateExamples` class also includes:
+
+- `createLinkAnnotationLaunchAction` to attach a `LaunchAction`.
+- `createLinkAnnotationGoToRemoteAction` to jump to another PDF with `GoToRemoteAction`.
+- `createLinkAnnotationGoToUriAction` to open a web address with `GoToURIAction`.

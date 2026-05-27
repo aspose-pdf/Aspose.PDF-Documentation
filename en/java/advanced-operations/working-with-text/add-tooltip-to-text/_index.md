@@ -4,12 +4,41 @@ linktitle: PDF Tooltip
 type: docs
 weight: 20
 url: /java/pdf-tooltip/
-description: Learn how to add tooltips to text fragments in PDF documents in Python.
-lastmod: "2026-05-05"
+description: Learn how to add tooltips to text fragments in PDF documents in Java.
+lastmod: "2026-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add interactive tooltips to PDF text fragments using Java
-Abstract: This article provides two Python examples for adding interactive help to PDF text using Aspose.PDF for Python via .NET. The first example adds tooltips to matched text fragments by placing invisible `ButtonField` elements and setting `alternate_name`. The second example creates a hidden `TextBoxField` that appears on hover by wiring `HideAction` events to an invisible `ButtonField`.
+Abstract: This article shows how to add interactive help to PDF text using Aspose.PDF for Java. It covers attaching tooltip text to invisible button fields placed over matched text fragments and creating a hidden text field that appears when the pointer enters a trigger area.
 ---
+## Add tooltips to searched text
+
+```java
+public static void addToolTipToSearchedText(Path outputFile) {
+    Document document = new Document();
+    document.getPages().add().getParagraphs()
+            .add(new TextFragment("Move the mouse cursor here to display a tooltip"));
+    document.save(outputFile.toString());
+    document.close();
+
+    document = new Document(outputFile.toString());
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+            "Move the mouse cursor here to display a tooltip");
+    document.getPages().accept(absorber);
+
+    for (TextFragment fragment : absorber.getTextFragments()) {
+        ButtonField field = new ButtonField(fragment.getPage(), fragment.getRectangle());
+        field.setAlternateName("Tooltip for text.");
+        document.getForm().add(field);
+    }
+
+    document.save(outputFile.toString());
+    document.close();
+}
+```
+
+## Create a hidden floating text block
+
+`createHiddenTextBlock` creates a hidden `TextBoxField`, then wires a `ButtonField` with `HideAction` handlers so the hidden text appears on mouse enter and disappears on exit.
