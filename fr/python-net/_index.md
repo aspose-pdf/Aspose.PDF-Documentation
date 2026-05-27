@@ -6,7 +6,7 @@ type: docs
 weight: 40
 url: /fr/python-net/
 is_root: true
-lastmod: "2026-05-22"
+lastmod: "2026-05-27"
 description: Apprenez à utiliser Aspose.PDF Python via .NET pour créer des applications de traitement de documents PDF sur n'importe quelle plateforme en utilisant Python. Parcourez les tutoriels, les exemples de code et plus encore.
 sitemap:
     changefreq: "monthly"
