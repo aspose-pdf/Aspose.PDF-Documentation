@@ -1,164 +1,64 @@
 ---
-title: Supprimer des pages PDF par programme Python
-linktitle: Supprimer des pages PDF
+title: Supprimer des pages PDF en Python
+linktitle: Suppression de pages PDF
 type: docs
 weight: 80
 url: /fr/python-net/delete-pages/
-description: Vous pouvez supprimer des pages de votre fichier PDF en utilisant la bibliothèque Aspose.PDF pour Python via .NET.
-lastmod: "2023-04-17"
+description: Apprenez comment supprimer des pages de fichiers PDF en Python.
+lastmod: "2026-05-22"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Supprimer une ou plusieurs pages PDF en Python
+Abstract: Cet article explique comment supprimer des pages de fichiers PDF en utilisant Aspose.PDF for Python via .NET. Apprenez comment supprimer une page unique ou plusieurs pages d'un document en utilisant l'API PageCollection, puis enregistrez le PDF mis à jour.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Supprimer des pages PDF par programme Python",
-    "alternativeHeadline": "Comment supprimer des pages PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, supprimer des pages pdf, enlever des pages pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/delete-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/delete-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Vous pouvez supprimer des pages de votre fichier PDF en utilisant la bibliothèque Aspose.PDF pour Python via .NET."
-}
-</script>
 
+Vous pouvez supprimer des pages d'un fichier PDF en utilisant Aspose.PDF for Python via .NET. Pour supprimer une page particulière, utilisez le [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) d'un [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
-Vous pouvez supprimer des pages d'un fichier PDF en utilisant Aspose.PDF pour Python via .NET. Pour supprimer une page particulière de la collection [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+Utilisez ce flux de travail lorsque vous devez supprimer des pages indésirables d'un PDF avant de le partager, de l'archiver ou de combiner des documents.
 
-## Supprimer une Page d'un Fichier PDF
+## Supprimer la page du fichier PDF
 
-1. Appelez la méthode [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) et spécifiez l'index de la page
-1. Appelez la méthode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) pour enregistrer le fichier PDF mis à jour
-Le snippet de code suivant montre comment supprimer une page particulière du fichier PDF en utilisant Python.
+Aspose.PDF for Python via .NET supprime la page 2 du PDF d'entrée et enregistre le document mis à jour dans un nouveau fichier. Cette fonction est utile pour supprimer des pages indésirables ou sensibles sans altérer le reste du document.
+
+1. Chargez le PDF d'entrée en tant que [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Supprimez la page en utilisant le [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Appelez le [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) méthode pour enregistrer le fichier PDF mis à jour.
+
+L'extrait de code suivant montre comment supprimer une page particulière du fichier PDF à l'aide de Python.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Ouvrir le document
-    document = ap.Document(input_pdf)
-
-    # Supprimer une page particulière
+def delete_page(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
     document.pages.delete(2)
-
-    # Enregistrer le PDF mis à jour
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Supprimer plusieurs pages d'un document PDF
+
+Supprimer plusieurs pages vous permet de retirer un ensemble de pages spécifiées en une seule opération, ce qui est plus efficace que de supprimer les pages une par une. Le PDF résultant est enregistré dans un nouveau fichier, préservant le document original.
+
+1. Chargez le PDF d'entrée en tant que [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Supprimez les pages répertoriées dans le tableau pages en utilisant le [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Enregistrez le mis à jour [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) dans un nouveau fichier.
+
+```python
+import aspose.pdf as ap
+
+def delete_multiple_pages(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
+    # Example: delete pages 2, 3, and 4.
+    pages = [2, 3, 4]
+    document.pages.delete(pages)
+    document.save(output_file_name)
+```
+
+## Sujets de page associés
+
+- [Travailler avec les pages PDF en Python](/pdf/fr/python-net/working-with-pages/)
+- [Ajouter des pages PDF en Python](/pdf/fr/python-net/add-pages/)
+- [Déplacer des pages PDF en Python](/pdf/fr/python-net/move-pages/)
+- [Extraire des pages PDF en Python](/pdf/fr/python-net/extract-pages/)

@@ -183,4 +183,4 @@ def watermark_delete(infile, outfile):
 - [Медиа-аннотации](/python-net/media-annotations/)
 - [Аннотации безопасности](/python-net/security-annotations/)
 - [Фигурные аннотации](/python-net/shape-annotations/)
-- [Текстовые аннотации](/python-net/text-based-Annotations/)
+- [Текстовые аннотации](/python-net/text-based-annotations/)

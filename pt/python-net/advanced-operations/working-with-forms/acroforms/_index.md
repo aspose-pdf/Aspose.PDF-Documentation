@@ -4,155 +4,30 @@ linktitle: AcroForms
 type: docs
 weight: 10
 url: /pt/python-net/acroforms/
-description: Com Aspose.PDF para Python, você pode criar um formulário do zero, preencher o campo do formulário em um documento PDF, extrair dados do formulário, etc.
-lastmod: "2023-02-17"
+description: Aprenda como criar, preencher, extrair, importar, exportar e gerenciar campos AcroForm em documentos PDF usando Aspose.PDF for Python via .NET.
+lastmod: "2026-05-20"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guia para trabalhar com AcroForms em Python
+Abstract: Esta seção apresenta os AcroForms e explica como trabalhar com formulários PDF interativos usando Aspose.PDF for Python via .NET. Ela cobre fluxos de trabalho principais, como criar formulários, preencher campos, extrair valores, importar e exportar dados de formulário, e modificar ou remover campos de formulário. Esses tutoriais ajudam a criar pipelines práticos de processamento de formulários para cenários de automação de documentos.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Trabalhando com AcroForms usando Python",
-    "alternativeHeadline": "Opções para trabalhar com AcroForms em PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documentos pdf",
-    "keywords": "pdf, python, acroforms em pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/acroforms/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/acroforms/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Com Aspose.PDF para Python, você pode criar um formulário do zero, preencher o campo do formulário em um documento PDF, extrair dados do formulário, etc."
-}
-</script>
-
 
 ## Fundamentos dos AcroForms
 
-**AcroForms** - tecnologia de formulário PDF única da Adobe. AcroForms é um formulário orientado por página. Eles apareceram pela primeira vez em 1998. Eles aceitam entrada no formato de Dados ou FDF e formato de Dados XML ou xFDF. Fornecedores terceiros suportam AcroForms. Quando a Adobe introduziu os AcroForms, eles os chamaram de "formulário PDF, que é o autor do Adobe Acrobat Pro/Standard e não é um tipo especial de formulário XFA estático ou dinâmico. AcroForms são portáteis e funcionam em todas as plataformas.
+AcroForms são formulários PDF interativos e orientados por página introduzidos pela Adobe e incluídos na especificação PDF desde a versão 1.2. Eles são amplamente suportados e podem ser usados para captura de dados, validação e troca em fluxos de trabalho multiplataforma.
 
-Você pode usar AcroForms para adicionar páginas adicionais ao documento de formulário PDF. Graças ao conceito de Templates, você pode usar AcroForms para apoiar o preenchimento do formulário com múltiplos registros de banco de dados.
+Em fluxos de trabalho baseados em AcroForm, os dados do formulário podem ser trocados em formatos como FDF e XFDF. Isso torna os AcroForms adequados para cenários em que você precisa pré-preencher campos a partir de sistemas externos, extrair valores enviados ou sincronizar dados de formulário entre documentos.
 
-O PDF 1.7 suporta dois métodos diferentes para integrar dados e formulários PDF.
+Aspose.PDF for Python via .NET oferece APIs para criar e gerenciar AcroForms programaticamente, incluindo preenchimento de campos, exportação de dados, modificação da estrutura do formulário e adição de ações de envio.
 
-*AcroForms (também conhecidos como formulários Acrobat)*, introduzidos e incluídos na especificação do formato PDF 1.2.
+Para exemplos práticos, consulte os artigos a seguir:
 
-Para um aprendizado mais detalhado das capacidades da biblioteca Java, veja os seguintes artigos:
-
-- [Criar AcroForm](/pdf/pt/python-net/create-form) - criar formulário do zero com Python.
-- [Preencher AcroForm](/pdf/pt/python-net/fill-form) - preencher campo de formulário no seu documento PDF.
-- [Extrair AcroForm](/pdf/pt/python-net/extract-form) - obter valor de todos ou de um campo individual do documento PDF.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Criar AcroForm](/pdf/pt/python-net/create-form/) - criar um formulário do zero.
+- [Preencher AcroForm](/pdf/pt/python-net/fill-form/) - preencher campos de formulário em um documento PDF.
+- [Extrair AcroForm](/pdf/pt/python-net/extract-form/) - extrair valores de todos os campos ou de um campo específico.
+- [Importar e Exportar Dados de Formulário](/pdf/pt/python-net/import-export-form-data/) - importar e exportar dados de formulário em formatos comuns.
+- [Modificando AcroForm](/pdf/pt/python-net/modifying-form/) - modificar propriedades dos campos AcroForm.
+- [Excluir Formulários do PDF](/pdf/pt/python-net/remove-form/) - remover campos de formulário de um documento PDF.
+- [Publicar Formulários](/pdf/pt/python-net/posting-form/) - adicionar funcionalidade de envio a um formulário PDF.

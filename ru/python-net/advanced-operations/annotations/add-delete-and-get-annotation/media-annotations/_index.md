@@ -495,5 +495,5 @@ def multimedia_annotations_get(infile, outfile):
 - [Разметочные аннотации](/python-net/markup-annotations/)
 - [Аннотации безопасности](/python-net/security-annotations/)
 - [Фигурные аннотации](/python-net/shape-annotations/)
-- [Аннотации на основе текста](/python-net/text-based-Annotations/)
+- [Аннотации на основе текста](/python-net/text-based-annotations/)
 - [Аннотации водяных знаков](/python-net/watermark-annotations/)

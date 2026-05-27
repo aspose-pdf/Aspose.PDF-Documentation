@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Crear archivo PDF con Python
-Abstract: Aspose.PDF for Python via .NET es una API versátil diseñada para que los desarrolladores manipulen archivos PDF dentro de aplicaciones Python dirigidas al framework .NET. Permite a los usuarios crear, cargar, modificar y convertir documentos PDF sin esfuerzo. Este artículo proporciona una guía paso a paso para crear un archivo PDF simple usando Aspose.PDF. El proceso implica inicializar un `Document` object, añadir una `Page` al documento, insertar un `TextFragment` en los párrafos de la página, y guardar el archivo como PDF. El fragmento de código Python incluido demuestra estos pasos creando un documento PDF que contiene el texto "Hello World!". Esta API simplifica la manipulación de PDF con código mínimo, mejorando la productividad de los desarrolladores que trabajan con PDFs en entornos .NET.
+Abstract: Aspose.PDF for Python via .NET es una API versátil diseñada para que los desarrolladores manipulen archivos PDF dentro de aplicaciones Python dirigidas al framework .NET. Permite a los usuarios crear, cargar, modificar y convertir documentos PDF sin esfuerzo. Este artículo proporciona una guía paso a paso para crear un archivo PDF simple usando Aspose.PDF. El proceso implica inicializar un `Document` object, añadir una `Page` al documento, insertar un `TextFragment` en los párrafos de la página, y guardar el archivo como PDF. El fragmento de código Python incluido demuestra estos pasos creando un documento PDF que contiene el texto "Hola Mundo!". Esta API simplifica la manipulación de PDF con código mínimo, mejorando la productividad de los desarrolladores que trabajan con PDFs en entornos .NET.
 ---
 
 **Aspose.PDF for Python via .NET** es una API de manipulación de PDF que permite a los desarrolladores crear, cargar, modificar y convertir archivos PDF directamente desde Python para aplicaciones .NET con solo unas pocas líneas de código.
@@ -33,10 +33,10 @@ from os import path
 import aspose.pdf as ap
 
 def create_new_document(output_pdf):
-    """Create a simple PDF with a single “Hello World!” page."""
+    """Create a simple PDF with a single “Hola Mundo!” page."""
     document = ap.Document()
     page = document.pages.add()
-    page.paragraphs.add(ap.text.TextFragment("Hello World!"))
+    page.paragraphs.add(ap.text.TextFragment("Hola Mundo!"))
     document.save(output_pdf)
 ```
 

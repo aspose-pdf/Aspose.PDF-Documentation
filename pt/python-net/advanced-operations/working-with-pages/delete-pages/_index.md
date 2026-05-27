@@ -1,164 +1,64 @@
 ---
-title: Excluir Páginas de PDF programaticamente Python
-linktitle: Excluir Páginas de PDF
+title: Excluir páginas PDF em Python
+linktitle: Excluindo páginas PDF
 type: docs
 weight: 80
 url: /pt/python-net/delete-pages/
-description: Você pode excluir páginas do seu arquivo PDF usando a biblioteca Aspose.PDF para Python via .NET.
-lastmod: "2023-04-17"
+description: Aprenda como excluir páginas de arquivos PDF em Python.
+lastmod: "2026-05-20"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Excluir uma ou mais páginas PDF em Python
+Abstract: Este artigo explica como remover páginas de arquivos PDF usando Aspose.PDF for Python via .NET. Aprenda como excluir uma única página ou várias páginas de um documento usando a PageCollection API e, em seguida, salvar o PDF atualizado.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Excluir Páginas de PDF programaticamente Python",
-    "alternativeHeadline": "Como remover Páginas de PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, python, excluir páginas de pdf, remover páginas de pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/delete-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/delete-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Você pode excluir páginas do seu arquivo PDF usando a biblioteca Aspose.PDF para Python via .NET."
-}
-</script>
 
+Você pode excluir páginas de um arquivo PDF usando Aspose.PDF for Python via .NET. Para excluir uma página específica, use o [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) de um [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
-Você pode excluir páginas de um arquivo PDF usando Aspose.PDF para Python via .NET. Para excluir uma página específica da coleção [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+Use este fluxo de trabalho quando precisar remover páginas indesejadas de um PDF antes de compartilhar, arquivar ou combinar documentos.
 
-## Excluir Página do Arquivo PDF
+## Excluir página do arquivo PDF
 
-1. Chame o método [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) e especifique o índice da página
-1. Chame o método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) para salvar o arquivo PDF atualizado
+Aspose.PDF for Python via .NET exclui a página 2 do PDF de entrada e salva o Document atualizado em um novo arquivo. Esse recurso é útil para remover páginas indesejadas ou confidenciais sem alterar o restante do documento.
+
+1. Carregue o PDF de entrada como um [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Exclua a página usando o [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Chame o [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método para salvar o arquivo PDF atualizado.
+
 O trecho de código a seguir mostra como excluir uma página específica do arquivo PDF usando Python.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Abrir documento
-    document = ap.Document(input_pdf)
-
-    # Excluir uma página específica
+def delete_page(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
     document.pages.delete(2)
-
-    # Salvar PDF atualizado
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Excluir várias páginas de um documento PDF
+
+Excluir várias páginas permite remover um conjunto de páginas especificadas em uma única operação, o que é mais eficiente do que excluir páginas uma a uma. O PDF resultante é salvo em um novo arquivo, preservando o documento original.
+
+1. Carregue o PDF de entrada como um [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Excluir as páginas listadas no array pages usando o [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Salvar o atualizado [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) para um novo arquivo.
+
+```python
+import aspose.pdf as ap
+
+def delete_multiple_pages(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
+    # Example: delete pages 2, 3, and 4.
+    pages = [2, 3, 4]
+    document.pages.delete(pages)
+    document.save(output_file_name)
+```
+
+## Tópicos Relacionados à Página
+
+- [Trabalhar com páginas PDF em Python](/pdf/pt/python-net/working-with-pages/)
+- [Adicionar páginas PDF em Python](/pdf/pt/python-net/add-pages/)
+- [Mover páginas PDF em Python](/pdf/pt/python-net/move-pages/)
+- [Extrair páginas PDF em Python](/pdf/pt/python-net/extract-pages/)

@@ -1,175 +1,113 @@
 ---
-title: Convertir des PDF en Documents Microsoft Word en Python
-linktitle: Convertir PDF en Word 2003/2019
+title: Convertir PDF en Word en Python
+linktitle: Convertir le PDF en Word
 type: docs
 weight: 10
 url: /fr/python-net/convert-pdf-to-word/
-lastmod: "2022-12-23"
-description: Apprenez à écrire du code Python pour la conversion de formats PDF en Microsoft Word avec Aspose.PDF pour Python via .NET et optimisez la conversion PDF en DOC(DOCX).
+lastmod: "2026-05-22"
+description: Apprenez comment convertir des fichiers PDF en DOC et DOCX en Python avec Aspose.PDF for Python via .NET pour faciliter la modification et la réutilisation des documents.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Comment convertir PDF en Word en Python
+Abstract: Cet article fournit un guide complet sur la conversion de fichiers PDF en formats Microsoft Word (DOC et DOCX) en utilisant Python, en particulier la bibliothèque Aspose.PDF. Il décrit les avantages de convertir les PDF en documents Word modifiables, permettant une manipulation plus facile du contenu comme le texte, les tableaux et les images. L'article détaille le processus de conversion de PDF en DOC (format Word 97-2003) et DOCX, avec des extraits de code montrant ces conversions en Python. Le processus consiste à créer un objet `Document` à partir du PDF et à l'enregistrer au format souhaité en utilisant la méthode `save()` et l'énumération `SaveFormat`. De plus, il introduit la classe `DocSaveOptions`, qui permet une personnalisation supplémentaire du processus de conversion, comme la spécification des modes de reconnaissance. L'article met également en avant les applications en ligne fournies par Aspose.PDF pour tester la qualité et la fonctionnalité de la conversion. Le contenu comprend une vue d'ensemble structurée et des liens vers les sections correspondantes pour chaque format.
 ---
 
-## Vue d'ensemble
+## Convertir le PDF en DOC
 
-Cet article explique comment **convertir des PDF en documents Microsoft Word en utilisant Python**. Il couvre ces sujets.
+L'une des fonctionnalités les plus populaires est la conversion de PDF en DOC Microsoft Word, ce qui facilite la gestion du contenu. **Aspose.PDF for Python via .NET** vous permet de convertir les fichiers PDF non seulement en DOC mais aussi au format DOCX, facilement et efficacement.
 
-_Format_: **DOC**
-- [PDF à DOC en Python](#python-pdf-to-doc)
-- [Convertir PDF en DOC en Python](#python-pdf-to-doc)
-- [Comment convertir un fichier PDF en DOC en Python](#python-pdf-to-doc)
+Utilisez la conversion Word lorsque vous devez réviser le texte, réutiliser le contenu dans les flux de travail de bureau ou déplacer le contenu PDF vers des documents DOC ou DOCX modifiables.
 
-_Format_: **DOCX**
-- [PDF à DOCX en Python](#python-pdf-to-docx)
-- [Convertir PDF en DOCX en Python](#python-pdf-to-docx)
-- [Comment convertir un fichier PDF en DOCX en Python](#python-pdf-to-docx)
+Le [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) la classe fournit de nombreuses propriétés qui améliorent le processus de conversion des fichiers PDF en format DOC. Parmi ces propriétés, Mode vous permet de spécifier le mode de reconnaissance du contenu PDF. Vous pouvez spécifier n'importe quelle valeur de l'énumération RecognitionMode pour cette propriété. Chacune de ces valeurs présente des avantages et des limitations spécifiques :
 
-_Format_: **Word**
-- [PDF à Word en Python](#python-pdf-to-docx)
-- [Convertir PDF en Word en Python](#python-pdf-to-doc)
-- [Comment convertir un fichier PDF en Word en Python](#python-pdf-to-docx)
+Étapes : Convertir PDF en DOC avec Python
 
-## Conversion de PDF à DOC et DOCX en Python
-
-L'une des fonctionnalités les plus populaires est la conversion de PDF en DOC de Microsoft Word, ce qui facilite la gestion du contenu. **Aspose.PDF pour Python** vous permet de convertir des fichiers PDF non seulement en DOC mais aussi en format DOCX, facilement et efficacement.
-
-## Convertir un PDF en fichier DOC (Word 97-2003)
-
-Convertissez un fichier PDF en format DOC avec aisance et contrôle total. Aspose.PDF pour Python est flexible et prend en charge une grande variété de conversions. Par exemple, la conversion de pages de documents PDF en images est une fonctionnalité très populaire.
-
-Une conversion que beaucoup de nos clients ont demandée est la conversion de PDF à DOC : convertir un fichier PDF en document Microsoft Word. Les clients veulent cela parce que les fichiers PDF ne peuvent pas être facilement modifiés, tandis que les documents Word le peuvent. Certaines entreprises souhaitent que leurs utilisateurs puissent manipuler le texte, les tableaux et les images dans des fichiers qui ont commencé comme des PDF.
-
-En gardant vivante la tradition de rendre les choses simples et compréhensibles, Aspose.PDF pour Python vous permet de transformer un fichier PDF source en fichier DOC avec deux lignes de code.
- Pour accomplir cette fonctionnalité, nous avons introduit une énumération nommée SaveFormat et sa valeur .Doc vous permet de sauvegarder le fichier source au format Microsoft Word.
-
-Le snippet de code Python suivant montre le processus de conversion d'un fichier PDF en format DOC.
-
-<a name="csharp-pdf-to-doc"><strong>Étapes : Convertir PDF en DOC en Python</strong></a>
-
-1. Créez une instance de l'objet [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) avec le document PDF source.
-2. Enregistrez-le au format [SaveFormat](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) en appelant la méthode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Chargez le PDF dans un objet 'ap.Document'.
+1. Créez une instance de 'DocSaveOptions'.
+1. Définissez la propriété format sur 'DocFormat.DOC' pour garantir que la sortie soit au format .doc (format Word plus ancien).
+1. Enregistrez le PDF en tant que document Word en utilisant les options d'enregistrement spécifiées.
+1. Imprimez un message de confirmation.
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_doc.doc"
-    # Ouvrir le document PDF
-    document = ap.Document(input_pdf)
-    # Enregistrer le fichier au format document MS Word
-    document.save(output_pdf, ap.SaveFormat.DOC)
-```
-
-### Utilisation de la classe DocSaveOptions
-
-La classe [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) fournit de nombreuses propriétés qui améliorent le processus de conversion des fichiers PDF en format DOC. Parmi ces propriétés, Mode vous permet de spécifier le mode de reconnaissance pour le contenu PDF. Vous pouvez spécifier n'importe quelle valeur de l'énumération RecognitionMode pour cette propriété. Chacune de ces valeurs a des avantages et des limitations spécifiques :
-
-```python
-
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_doc_with_options.doc"
-    # Ouvrir le document PDF
-    document = ap.Document(input_pdf)
-
+def convert_PDF_to_DOC(infile, outfile):
+    document = ap.Document(infile)
     save_options = ap.DocSaveOptions()
     save_options.format = ap.DocSaveOptions.DocFormat.DOC
-    # Définir le mode de reconnaissance comme Flow
-    save_options.mode = ap.DocSaveOptions.RecognitionMode.FLOW
-    # Définir la proximité horizontale à 2.5
-    save_options.relative_horizontal_proximity = 2.5
-    # Activer la reconnaissance des puces lors du processus de conversion
-    save_options.recognize_bullets = True
+    document.save(outfile, save_options)
 
-    # Enregistrer le fichier au format document MS Word
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
 {{% alert color="success" %}}
 **Essayez de convertir PDF en DOC en ligne**
 
-Aspose.PDF pour Python vous présente l'application en ligne gratuite ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
-[![Convert PDF to DOC](/pdf/fr/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
+Aspose.PDF for Python vous présente une application en ligne ["PDF en DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), où vous pouvez essayer d'examiner le fonctionnement et la qualité.
+
+[![Convertir le PDF en DOC](/pdf/fr/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+{{% /alert %}}
 
 ## Convertir PDF en DOCX
 
-Aspose.PDF pour Python API vous permet de lire et de convertir des documents PDF en DOCX à l'aide de Python via .NET. DOCX est un format bien connu pour les documents Microsoft Word dont la structure est passée d'un binaire simple à une combinaison de fichiers XML et binaires. Les fichiers DOCX peuvent être ouverts avec Word 2007 et les versions ultérieures, mais pas avec les versions antérieures de MS Word qui prennent en charge les extensions de fichiers DOC.
+Aspose.PDF for Python API vous permet de lire et de convertir des documents PDF en DOCX en utilisant Python via .NET. DOCX est un format bien connu pour les documents Microsoft Word dont la structure est passée d’un binaire simple à une combinaison de fichiers XML et binaires. Les fichiers DOCX peuvent être ouverts avec Word 2007 et les versions ultérieures, mais pas avec les versions antérieures de MS Word qui ne prennent en charge que les extensions de fichiers DOC.
 
-Le fragment de code Python suivant montre le processus de conversion d'un fichier PDF en format DOCX.
+L'extrait de code Python suivant montre le processus de conversion d'un fichier PDF en format DOCX.
 
-<a name="csharp-pdf-to-docx"><strong>Étapes : Convertir PDF en DOCX en Python</strong></a>
+Étapes : Convertir PDF en DOCX avec Python
 
-1. Créez une instance de l'objet [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) avec le document PDF source.
-
-2. Enregistrez-le au format [SaveFormat](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) en appelant la méthode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. Chargez le PDF source en utilisant 'ap.Document'.
+1. Créez une instance de 'DocSaveOptions'.
+1. Définissez la propriété format sur 'DocFormat.DOC_X' pour générer un fichier .docx (format Word moderne).
+1. Enregistrez le PDF en tant que fichier DOCX avec les options d'enregistrement configurées.
+1. Imprimer un message de confirmation après la conversion.
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_docx_options.docx"
-    # Ouvrir le document PDF
-    document = ap.Document(input_pdf)
-
+def convert_PDF_to_DOCX(infile, outfile):
+    document = ap.Document(infile)
     save_options = ap.DocSaveOptions()
     save_options.format = ap.DocSaveOptions.DocFormat.DOC_X
-    # Définir le mode de reconnaissance comme Flow
-    save_options.mode = ap.DocSaveOptions.RecognitionMode.FLOW
-    # Définir la proximité horizontale à 2.5
-    save_options.relative_horizontal_proximity = 2.5
-    # Activer la valeur pour reconnaître les puces pendant le processus de conversion
-    save_options.recognize_bullets = True
-
-    # Enregistrer le fichier au format document MS Word
-    document.save(output_pdf, save_options)
+    document.save(outfile, save_options)
 ```
 
-La classe [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) a une propriété nommée Format qui offre la possibilité de spécifier le format du document résultant, c'est-à-dire, DOC ou DOCX.
- Afin de convertir un fichier PDF au format DOCX, veuillez passer la valeur Docx de l'énumération DocSaveOptions.DocFormat.
+## Convertir le PDF en DOCX avec reconnaissance avancée de mise en page
+
+Convertir un document PDF en fichier DOCX (Word) en utilisant Python et Aspose.PDF avec des paramètres de reconnaissance avancés. Il utilise le mode flux amélioré pour préserver la structure du document, rendant la sortie plus modifiable et plus proche de la mise en page originale.
+
+```python
+from os import path
+import aspose.pdf as ap
+import sys
+
+def convert_PDF_to_DOCX_advanced(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.DocSaveOptions()
+    save_options.format = ap.DocSaveOptions.DocFormat.DOC_X
+    save_options.mode = ap.DocSaveOptions.RecognitionMode.ENHANCED_FLOW
+    document.save(outfile, save_options)
+```
+
+Le [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) La classe possède une propriété nommée Format qui permet de spécifier le format du document résultant, c’est‑à‑dire DOC ou DOCX. Pour convertir un fichier PDF au format DOCX, veuillez passer la valeur Docx de l’énumération DocSaveOptions.DocFormat.
 
 {{% alert color="warning" %}}
-**Essayez de convertir un PDF en DOCX en ligne**
+**Essayez de convertir PDF en DOCX en ligne**
 
-Aspose.PDF pour Python vous présente l'application en ligne gratuite ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), où vous pouvez essayer d'examiner la fonctionnalité et la qualité de son fonctionnement.
+Aspose.PDF for Python vous présente une application en ligne ["PDF vers Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), où vous pouvez essayer d'examiner le fonctionnement et la qualité.
 
-[![Aspose.PDF Conversion PDF en Word Application Gratuite](/pdf/fr/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Application Aspose.PDF de conversion PDF en Word](/pdf/fr/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 
-## Voir Aussi
+## Conversions associées
 
-Cet article couvre également ces sujets. Les codes sont les mêmes que ci-dessus.
-
-_Format_: **Word**
-- [Python PDF en Code Word](#python-pdf-to-docx)
-- [Python PDF en API Word](#python-pdf-to-docx)
-- [Python PDF en Word Programmatiquement](#python-pdf-to-docx)
-- [Python PDF en Bibliothèque Word](#python-pdf-to-docx)
-- [Python Enregistrer PDF en Word](#python-pdf-to-docx)
-- [Python Générer Word à partir de PDF](#python-pdf-to-docx)
-- [Python Créer Word à partir de PDF](#python-pdf-to-docx)
-
-- [Python PDF en Convertisseur Word](#python-pdf-to-docx)
-_Format_: **DOC**
-- [Code Python PDF vers DOC](#python-pdf-to-doc)
-- [API Python PDF vers DOC](#python-pdf-to-doc)
-- [Python PDF vers DOC Programmatiquement](#python-pdf-to-doc)
-- [Bibliothèque Python PDF vers DOC](#python-pdf-to-doc)
-- [Python Enregistrer PDF en tant que DOC](#python-pdf-to-doc)
-- [Python Générer DOC à partir de PDF](#python-pdf-to-doc)
-- [Python Créer DOC à partir de PDF](#python-pdf-to-doc)
-- [Convertisseur Python PDF vers DOC](#python-pdf-to-doc)
-
-_Format_: **DOCX**
-- [Code Python PDF vers DOCX](#python-pdf-to-docx)
-- [API Python PDF vers DOCX](#python-pdf-to-docx)
-- [Python PDF vers DOCX Programmatiquement](#python-pdf-to-docx)
-- [Bibliothèque Python PDF vers DOCX](#python-pdf-to-docx)
-- [Python Enregistrer PDF en tant que DOCX](#python-pdf-to-docx)
-- [Python Générer DOCX à partir de PDF](#python-pdf-to-docx)
-- [Python Créer DOCX à partir de PDF](#python-pdf-to-docx)
-- [Convertisseur Python PDF vers DOCX](#python-pdf-to-docx)
+- [Convertir le PDF en Excel](/pdf/fr/python-net/convert-pdf-to-excel/) pour les exportations orientées feuille de calcul.
+- [Convertir PDF en PowerPoint](/pdf/fr/python-net/convert-pdf-to-powerpoint/) lorsque vous avez besoin de diapositives de présentation au lieu d’une sortie de traitement de texte.
+- [Convertir le PDF en HTML](/pdf/fr/python-net/convert-pdf-to-html/) pour la publication web et les flux de travail de contenu basés sur le navigateur.

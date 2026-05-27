@@ -3,7 +3,7 @@ title: Text Based Annotations using Python
 linktitle: Text Annotations
 type: docs
 weight: 10
-url: /python-net/text-based-Annotations/
+url: /python-net/text-based-annotations/
 description: Learn how to add, inspect, and delete free text, highlight, underline, squiggly, and strikeout annotations in PDF documents using Aspose.PDF for Python via .NET.
 lastmod: "2026-04-21"
 sitemap:

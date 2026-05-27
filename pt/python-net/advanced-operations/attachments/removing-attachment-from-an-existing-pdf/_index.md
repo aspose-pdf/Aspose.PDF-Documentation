@@ -1,166 +1,67 @@
 ---
-title: Removendo anexo de PDF usando Python
+title: Remover Anexos de PDF em Python
 linktitle: Removendo anexo de um PDF existente
 type: docs
 weight: 30
 url: /pt/python-net/removing-attachment-from-an-existing-pdf/
-description: Aspose.PDF pode remover anexos de seus documentos PDF. Use a API Python PDF para remover anexos em arquivos PDF usando a biblioteca Aspose.PDF para Python via .NET.
-lastmod: "2023-02-17"
+description: Aspose.PDF pode remover anexos dos seus documentos PDF. Use a API PDF para Python para remover anexos em arquivos PDF usando a biblioteca Aspose.PDF for Python via .NET.
+lastmod: "2026-05-19"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Como excluir anexos de PDF com Python
+Abstract: Este artigo discute como remover anexos de arquivos PDF usando Aspose.PDF for Python. Os anexos em um documento PDF são armazenados dentro da coleção `EmbeddedFiles` do objeto `Document`. Para excluir todos os anexos de um PDF, você pode invocar o método `delete()` na coleção `EmbeddedFiles` e, em seguida, salvar o documento atualizado usando o método `save()` do objeto `Document`. Um trecho de código é fornecido para demonstrar esse processo, mostrando as etapas de abertura de um documento, exclusão de seus anexos e salvamento do arquivo modificado.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Removendo anexo de PDF",
-    "alternativeHeadline": "Como deletar anexos de PDF com Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, python, deletar anexos",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/removing-attachment-from-an-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/removing-attachment-from-an-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF para Python pode remover anexos de seus documentos PDF. Use a API Python PDF para remover anexos em arquivos PDF usando a biblioteca Aspose.PDF."
-}
-</script>
 
+Aspose.PDF for Python pode remover anexos de arquivos PDF. Os anexos de um documento PDF são mantidos no objeto `Document` [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) coleção.
 
-Aspose.PDF para Python pode remover anexos de arquivos PDF. Os anexos de um documento PDF são mantidos na coleção [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) do objeto Document.
+Esse fluxo de trabalho é útil quando você precisa limpar arquivos incorporados desatualizados, reduzir o tamanho do pacote ou preparar um PDF para redistribuição sem materiais de origem anexados.
 
 Para excluir todos os anexos associados a um arquivo PDF:
 
-1. Chame o método [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) da coleção [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/).
-2. Salve o arquivo atualizado usando o método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) do objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Chame o [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) da coleção [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) método.
+1. Salve o arquivo atualizado usando o [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) do objeto [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método.
 
 O trecho de código a seguir mostra como remover anexos de um documento PDF.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
-
-    # Excluir todos os anexos
-    document.embedded_files.delete()
-
-    # Salvar arquivo atualizado
-    document.save(output_pdf)
+def remove_attachment(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete()
+        document.save(outfile)
 ```
 
+## Remova um anexo específico pelo nome
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Biblioteca Python",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+Se precisar remover apenas um anexo e manter os demais, use o [delete_by_key()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/delete_by_key/) método e passe o nome do anexo.
+
+Para excluir um anexo específico:
+
+1. Abra o arquivo PDF de origem.
+1. Chamar `document.embedded_files.delete_by_key(attachment_name)`.
+1. Salve o arquivo PDF atualizado.
+
+O trecho de código a seguir remove um anexo pelo seu nome.
+
+```python
+
+import aspose.pdf as ap
+
+def remove_attachment(infile, attachment_name, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete_by_key(attachment_name)
+        document.save(outfile)
+```
+
+## Tópicos Relacionados a Anexos
+
+- [Trabalhar com anexos PDF em Python](/pdf/pt/python-net/attachments/)
+- [Adicionar anexos a PDF em Python](/pdf/pt/python-net/add-attachment-to-pdf-document/)
+- [Criar e gerenciar portfólios PDF em Python](/pdf/pt/python-net/portfolio/)
+

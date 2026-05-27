@@ -1,96 +1,32 @@
 ---
-title: Obtenir, Mettre à Jour et Développer un Signet en utilisant Python
-linktitle: Obtenir, Mettre à Jour et Développer un Signet
+title: Obtenir, mettre à jour et développer les signets PDF en Python
+linktitle: Obtenir, mettre à jour et développer un signet
 type: docs
 weight: 20
 url: /fr/python-net/get-update-and-expand-bookmark/
-description: Cet article décrit comment utiliser les signets dans un fichier PDF avec notre bibliothèque Aspose.PDF pour Python.
-lastmod: "2023-02-17"
+description: Apprenez comment récupérer, mettre à jour et développer les signets dans des documents PDF en utilisant Python.
+lastmod: "2026-05-22"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Comment utiliser les signets dans les PDF avec Python
+Abstract: Cet article fournit un guide complet sur la gestion des signets dans un document PDF à l'aide de la bibliothèque Aspose.PDF pour Python. Il commence par expliquer comment récupérer les signets d'un fichier PDF via la `OutlineCollection`, qui contient tous les signets, et détaille l'accès aux attributs des signets via la `OutlineItemCollection`. L'article décrit ensuite le processus de détermination du numéro de page associé à un signet à l'aide de la `PdfBookmarkEditor`. Il explique en outre comment gérer les structures hiérarchiques de signets en récupérant les signets enfants au sein de chaque `OutlineItemCollection`. Il couvre également la mise à jour des propriétés des signets, en montrant comment modifier les attributs des signets et enregistrer les modifications dans un PDF. Enfin, l'article traite de la nécessité d'étendre les signets lors de la visualisation d'un document, en montrant comment définir l'état d'ouverture de chaque signet pour qu'ils soient développés par défaut. Des extraits de code accompagnent chaque section, offrant des exemples pratiques d'implémentation de ces fonctionnalités.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Obtenir, Mettre à Jour et Développer un Signet avec Python",
-    "alternativeHeadline": "Comment obtenir des Signets à partir d'un fichier PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, obtenir des signets",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/get-update-and-expand-bookmark/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/get-update-and-expand-bookmark/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Cet article décrit comment utiliser les signets dans un fichier PDF avec notre bibliothèque Aspose.PDF pour Python."
-}
-</script>
 
+## Obtenir les signets
 
-## Obtenez les Signets
+Le [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object's [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) La collection contient tous les signets d'un fichier PDF. Cet article explique comment obtenir les signets d'un fichier PDF, et comment déterminer sur quelle page se trouve un signet particulier.
 
-La collection [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) de l'objet [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) contient tous les signets d'un fichier PDF. Cet article explique comment obtenir des signets à partir d'un fichier PDF et comment savoir sur quelle page se trouve un signet particulier.
-
-Pour obtenir les signets, parcourez la collection [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) et obtenez chaque signet dans la OutlineItemCollection. La [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) permet d'accéder à tous les attributs du signet. Le snippet de code suivant vous montre comment obtenir des signets à partir du fichier PDF.
+Pour obtenir les signets, parcourez le [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection et récupérez chaque signet dans l'OutlineItemCollection. Le [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) fournit l'accès à tous les attributs du signet. Le fragment de code suivant vous montre comment récupérer les signets du fichier PDF.
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Ouvrir le document
+def get_bookmarks(input_pdf):
     document = ap.Document(input_pdf)
-
-    # Parcourir tous les signets
     for i in range(len(document.outlines)):
         outline_item = document.outlines[i + 1]
         print(outline_item.title)
@@ -99,44 +35,43 @@ Pour obtenir les signets, parcourez la collection [OutlineCollection](https://re
         print(outline_item.color)
 ```
 
+## Obtenir le numéro de page d’un signet
 
-## Obtenir le Numéro de Page d'un Signet
-
-Une fois que vous avez ajouté un signet, vous pouvez savoir sur quelle page il se trouve en obtenant le numéro de page de destination associé à l'objet Signet.
+Une fois que vous avez ajouté un signet, vous pouvez découvrir sur quelle page il se trouve en obtenant le numéro de page de destination PageNumber associé à l’objet Bookmark.
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Créer PdfBookmarkEditor
-    bookmarkEditor = ap.facades.PdfBookmarkEditor()
-    # Ouvrir le fichier PDF
-    bookmarkEditor.bind_pdf(input_pdf)
-    # Extraire les signets
-    bookmarks = bookmarkEditor.extract_bookmarks()
+def get_bookmark_page_number(input_pdf):
+    # Create PdfBookmarkEditor
+    bookmark_editor = ap.facades.PdfBookmarkEditor()
+    # Open PDF file
+    bookmark_editor.bind_pdf(input_pdf)
+    # Extract bookmarks
+    bookmarks = bookmark_editor.extract_bookmarks()
     for bookmark in bookmarks:
-        str_level_seprator = ""
+        str_level_separator = ""
         for i in range(bookmark.level):
-            str_level_seprator += "----"
+            str_level_separator += "----"
 
-        print(str_level_seprator, "Titre :", bookmark.title)
-        print(str_level_seprator, "Numéro de Page :", bookmark.page_number)
-        print(str_level_seprator, "Action de Page :", bookmark.action)
+        print(str_level_separator, "Title:", bookmark.title)
+        print(str_level_separator, "Page Number:", bookmark.page_number)
+        print(str_level_separator, "Page Action:", bookmark.action)
 ```
 
-## Obtenir les Signets Enfants d'un Document PDF
+## Obtenir les signets enfants d'un document PDF
 
-Les signets peuvent être organisés dans une structure hiérarchique, avec des parents et des enfants.
- Pour obtenir tous les signets, parcourez les collections Outlines de l'objet Document. Cependant, pour obtenir également les signets enfants, parcourez également tous les signets dans chaque objet [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) obtenu dans la première boucle. Les extraits de code suivants montrent comment obtenir les signets enfants d'un document PDF.
+Les signets peuvent être organisés dans une structure hiérarchique, avec des parents et des enfants. Pour obtenir tous les signets, parcourez les collections Outlines de l'objet Document. Cependant, pour obtenir également les signets enfants, parcourez également tous les signets dans chaque [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) objet obtenu lors de la première boucle. Les extraits de code suivants montrent comment obtenir les signets enfants d'un document PDF.
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Ouvrir le document
+def get_child_bookmarks(input_pdf):
     document = ap.Document(input_pdf)
-
-    # Parcourir tous les signets
     for i in range(len(document.outlines)):
         outline_item = document.outlines[i + 1]
         print(outline_item.title)
@@ -145,126 +80,65 @@ Les signets peuvent être organisés dans une structure hiérarchique, avec des 
         print(outline_item.color)
         count = len(outline_item)
         if count > 0:
-            print("Signets enfants")
-            # Il y a des signets enfants, alors parcourez-les également
+            print("Child Bookmarks")
+            # There are child bookmarks then loop through that as well
             for j in range(len(outline_item)):
-                child_outline_item = outline_item[i + 1]
+                child_outline_item = outline_item[j + 1]
                 print(child_outline_item.title)
                 print(child_outline_item.italic)
                 print(child_outline_item.bold)
                 print(child_outline_item.color)
 ```
 
-## Mettre à jour les signets dans un document PDF
+## Mettre à jour les signets dans un Document PDF
 
-Pour mettre à jour un signet dans un fichier PDF, d'abord, obtenez le signet particulier de la collection OutlineCollection de l'objet Document en spécifiant l'index du signet. Une fois que vous avez récupéré le signet dans l'objet [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/), vous pouvez mettre à jour ses propriétés puis enregistrer le fichier PDF mis à jour en utilisant la méthode Save. Les extraits de code suivants montrent comment mettre à jour les signets dans un document PDF.
+Pour mettre à jour un signet dans un fichier PDF, commencez par obtenir le signet particulier à partir de la collection OutlineColletion de l'objet Document en spécifiant l'index du signet. Une fois que vous avez récupéré le signet dans [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) objet, vous pouvez mettre à jour ses propriétés puis enregistrer le fichier PDF mis à jour en utilisant la méthode Save. Les extraits de code suivants montrent comment mettre à jour les signets dans un document PDF.
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Ouvrir le document
+def update_bookmarks(input_pdf, output_pdf):
+    # Open document
     document = ap.Document(input_pdf)
 
-    # Obtenir un objet signet
+    # Get a bookmark object
     outline = document.outlines[1]
 
-    # Obtenir l'objet signet enfant
+    # Get child bookmark object
     child_outline = outline[1]
-    child_outline.title = "Outline mis à jour"
+    child_outline.title = "Updated Outline"
     child_outline.italic = True
     child_outline.bold = True
 
-    # Enregistrer la sortie
+    # Save output
     document.save(output_pdf)
 ```
 
 ## Signets développés lors de la visualisation du document
 
-Les signets sont détenus dans la collection [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) de l'objet Document, elle-même dans la collection [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
- Cependant, nous pouvons avoir besoin que tous les signets soient développés lors de la visualisation du fichier PDF.
+Les signets sont stockés dans l'objet Document [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) collection, elle‑même dans le [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) collection. Cependant, il se peut que nous ayons une exigence d'avoir tous les signets développés lors de la visualisation du fichier PDF.
 
-Afin de satisfaire cette exigence, nous pouvons définir le statut ouvert pour chaque élément de plan/signet comme Ouvert. Le snippet de code suivant vous montre comment définir le statut ouvert pour chaque signet comme développé dans un document PDF.
+Afin de satisfaire cette exigence, nous pouvons définir le statut d'ouverture pour chaque élément de plan/signet comme Ouvert. Le fragment de code suivant vous montre comment définir le statut d'ouverture pour chaque signet comme développé dans un document PDF.
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Ouvrir le document
+def expanded_bookmarks(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
-
-    # Définir le mode d'affichage de la page, c'est-à-dire afficher les miniatures, plein écran, afficher le panneau des pièces jointes
     document.page_mode = ap.PageMode.USE_OUTLINES
-    # Parcourir chaque élément de plan dans la collection de plans du fichier PDF
     for i in range(len(document.outlines)):
         item = document.outlines[i + 1]
-        # Définir le statut ouvert pour l'élément de plan
         item.open = True
-
-    # Enregistrer la sortie
     document.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Sujets liés aux signets
+
+- [Travailler avec les signets PDF en Python](/pdf/fr/python-net/bookmarks/)
+- [Ajouter et supprimer des signets PDF en Python](/pdf/fr/python-net/add-and-delete-bookmark/)
+- [Navigation et interaction dans le PDF avec Python](/pdf/fr/python-net/navigation-and-interaction/)
+
