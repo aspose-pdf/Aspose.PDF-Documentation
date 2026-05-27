@@ -4,8 +4,37 @@ linktitle: Create PDF
 type: docs
 weight: 10
 url: /java/create-document/
-description: This page describes how to create PDF document from scratch with Aspose.PDF for Python via .NET library.
+description: Learn how to create a PDF document from scratch in Java using Aspose.PDF.
+lastmod: "2026-05-27"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 TechArticle: true
 AlternativeHeadline: Generating PDF files with Aspose.PDF for Java
-Abstract: In software development, generating PDF files programmatically is a common requirement, particularly for creating reports and other documents. Writing custom code for this task can be inefficient and time-consuming. Instead, developers can utilize **Aspose.PDF for Python via .NET**, a robust solution for creating PDF files using Python. The process involves creating a `Document` object, adding a `Page` object to the document's `Pages` collection, inserting a `TextFragment` into the page's `paragraphs` collection, and then saving the document. A sample Python code snippet demonstrates these steps, showcasing the ease with which PDF files can be generated using Aspose.PDF.
+Abstract: This article shows how to create a PDF file in Java using Aspose.PDF. The example creates a new Document object, adds a page, inserts a TextFragment with sample text, and saves the result as a PDF file.
 ---
+
+Creating PDF files in code is a common requirement for reports, invoices, and generated business documents. Aspose.PDF for Java provides a direct way to build a document from scratch.
+
+## How to create a PDF file in Java
+
+To create a PDF document programmatically:
+
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) object.
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Add a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) to the page paragraphs.
+1. Save the document to an output file.
+
+## Create a simple PDF document
+
+The following Java example is based on `CreatePdfDocumentExamples.java`.
+
+```java
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.getParagraphs().add(new TextFragment("Hello World!"));
+        document.save(outputFile.toString());
+    }
+}
+```
