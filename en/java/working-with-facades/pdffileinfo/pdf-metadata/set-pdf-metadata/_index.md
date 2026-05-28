@@ -3,13 +3,24 @@ title: Set PDF Metadata
 type: docs
 weight: 50
 url: /java/set-pdf-metadata/
-description: Modify and save metadata in PDF documents using Aspose.PDF for Python via .NET.
-lastmod: "2026-03-05"
+description: Learn how to update PDF metadata in Java with PdfFileInfo.
+lastmod: "2026-05-28"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Updating PDF Metadata Using Aspose.PDF for Java
-Abstract: This guide explains how to modify and save metadata in PDF documents using Aspose.PDF for Python via .NET. It demonstrates how to update standard PDF properties like title, subject, keywords, and creator, as well as custom metadata fields. By the end, you’ll be able to programmatically update PDF metadata and save the changes.
+AlternativeHeadline: Update PDF metadata in Java with PdfFileInfo
+Abstract: This article explains how to use the `setPdfMetadata` example from `PdfFileInfoExamples` to update document metadata in Aspose.PDF for Java. The sample sets subject, title, keywords, creator, and a custom `CustomKey` metadata entry, then saves the updated PDF.
 ---
+The current Java example for this article is `setPdfMetadata`.
+
+It demonstrates how to call:
+
+- `setSubject(...)`
+- `setTitle(...)`
+- `setKeywords(...)`
+- `setCreator(...)`
+- `setMetaInfo(...)`
+
+The sample then saves the updated document with `save(...)`.

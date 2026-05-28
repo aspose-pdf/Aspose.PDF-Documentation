@@ -3,12 +3,20 @@ title: Add Attachment
 type: docs
 weight: 10
 url: /java/add-attachment/
-description: This example binds an input PDF, attaches an external file to the first page, and saves the modified PDF with the embedded attachment.
-lastmod: "2026-03-20"
+description: Learn how to add a document attachment to a PDF file in Java with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add File Attachments to a PDF Using Java
-Abstract: This example demonstrates how to attach external files to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, add attachments with descriptions, and save the updated document.
+AlternativeHeadline: Attach a file to a PDF document using Java
+Abstract: This article explains how to use the `addAttachment` example from `PdfContentEditorExamples` to attach a file to a PDF in Aspose.PDF for Java. The sample binds a PDF, opens the attachment as a stream, adds it with a description, and saves the updated document.
 ---
+The current Java example for this article is `addAttachment`.
+
+It demonstrates how to:
+
+- bind the source PDF with `PdfContentEditor`
+- open the attachment file as an input stream
+- call `addDocumentAttachment(...)` with the file name and description
+- save the updated PDF

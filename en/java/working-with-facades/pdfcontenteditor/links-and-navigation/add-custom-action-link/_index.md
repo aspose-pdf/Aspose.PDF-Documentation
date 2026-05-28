@@ -3,12 +3,13 @@ title: Add Custom Action Link
 type: docs
 weight: 20
 url: /java/add-custom-action-link/
-description: This example binds an input PDF, adds a custom action link on the first page, and saves the modified document. An empty action list is used for simplicity, but real implementations can include actual actions.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for custom action link workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add a Custom Action Link to a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to add a custom action link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area on a page, assign a custom action, and save the updated document.
+AlternativeHeadline: Check Java sample coverage for custom action links in PDFs
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for adding a custom action link. The links and navigation topics in this section are maintained as scope notes until matching Java samples are added.
 ---
+There is no dedicated Java example for adding a custom action link in the current `PdfContentEditorExamples` class.

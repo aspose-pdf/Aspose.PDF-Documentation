@@ -3,6 +3,23 @@ title: Import XFDF Data
 type: docs
 weight: 20
 url: /java/import-xfdf-data/
-description: This example demonstrates how to import form data from an XFDF file into a PDF form using Aspose.PDF for Python via .NET. It shows how to bind a PDF document, read XML-based XFDF data through a file stream, and automatically populate matching form fields. Importing XFDF data enables efficient form data exchange and supports automated document workflows that rely on structured XML formats.
-lastmod: "2026-02-19"
+description: Learn how to import XFDF form data into a PDF form with Java using the Form facade in Aspose.PDF.
+lastmod: "2026-05-28"
+TechArticle: true
+AlternativeHeadline: Import AcroForm data from XFDF in Java
+Abstract: This article shows how to bind a PDF form, import field values from an XFDF stream, and save the updated document with the Form facade in Aspose.PDF for Java.
 ---
+Use `FormExamples.importXfdf(...)` to populate a form from XFDF data.
+
+```java
+public static void importXfdf(Path inputFile, Path dataFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (InputStream inputStream = Files.newInputStream(dataFile)) {
+        form.bindPdf(inputFile.toString());
+        form.importXfdf(inputStream);
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
+    }
+}
+```

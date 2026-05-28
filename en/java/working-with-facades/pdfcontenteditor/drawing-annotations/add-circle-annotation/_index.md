@@ -3,12 +3,18 @@ title: Add Circle Annotation
 type: docs
 weight: 10
 url: /java/add-circle-annotation/
-description: This example binds an input PDF, creates a circle annotation on the first page, and saves the modified document.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for circle annotation workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add Circle Annotation to a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to add a circle annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define annotation bounds, set content text, configure color and appearance, and save the updated document.
+AlternativeHeadline: Check Java sample coverage for circle annotations
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for adding a circle annotation. The available drawing-annotation samples cover line and polygon annotations.
 ---
+There is no dedicated Java example for adding a circle annotation in the current `PdfContentEditorExamples` class.
+
+The nearest drawing-annotation Java samples are:
+
+- `addLineAnnotation`
+- `addPolygonAnnotation`

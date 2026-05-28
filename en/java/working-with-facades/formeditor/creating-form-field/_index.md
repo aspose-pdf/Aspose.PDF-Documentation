@@ -3,12 +3,17 @@ title: Creating Form Field
 type: docs
 weight: 50
 url: /java/creating-form-field/
-description: This article demonstrates how to create interactive form fields in PDF documents using Aspose.PDF for Python.
-lastmod: "2026-03-05"
+description: Learn how to create interactive PDF form fields in Java with FormEditor, including text, check box, combo box, list box, radio button, and submit button fields.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Create PDF Form Fields in Java
-Abstract: PDF forms enable users to enter or select data directly within a document. Using Aspose.PDF, developers can programmatically create a variety of form fields - CheckBox for boolean selections, ComboBox for drop-down lists, ListBox for multi-selection lists, RadioButton for exclusive options, TextBox for textual input, and SubmitButton for sending form data. This unified approach simplifies the creation of interactive PDFs, ensuring accurate placement, consistent styling, and compatibility with automated processing and user input handling.
+Abstract: This section explains how to create interactive PDF form fields with the FormEditor facade in Aspose.PDF for Java. The current Java examples directly cover text box, check box, combo box, list box, radio button, and submit button creation workflows.
 ---
+The Java `FormEditorExamples` class includes direct field-creation samples for text box, check box, combo box, list box, radio button, and submit button controls.
+
+In this subsection you will find:
+
+- Direct Java example coverage for `createTextBoxField`, `createCheckBoxField`, `createComboBoxField`, `createListBoxField`, `createRadioButtonField`, and `createSubmitButton`

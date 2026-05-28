@@ -3,12 +3,18 @@ title: Signature Integrity Checks
 type: docs
 weight: 70
 url: /java/signature-integrity-checks/
-description: Learn how to check whether a PDF signature covers the whole document and validate signed document integrity using PdfFileSignature in Python.
-lastmod: "2026-04-02"
+description: Learn how the current Java signature verification example checks signature validity and whole-document coverage.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Validate PDF Signature Coverage and Integrity in Java
-Abstract: This article explains how to inspect digital signature integrity in signed PDF documents with Aspose.PDF for Python via .NET. It shows how to verify whether a signature covers the whole document and how to validate the integrity of the signed content.
+AlternativeHeadline: Check PDF signature integrity in Java with PdfFileSignature
+Abstract: This article maps signature-integrity checks to the `verifyPdfSignature` example in `PdfFileSignatureExamples`. The current Java source verifies the selected signature and checks whether it covers the whole document, which is the available integrity-related coverage in this section.
 ---
+There is no separate Java method dedicated only to integrity checks in the current `PdfFileSignatureExamples` class.
+
+For the actual source-backed workflow, see `verifyPdfSignature`, which demonstrates:
+
+- validating the selected signature with `verifySignature(...)`
+- checking full-document coverage with `coversWholeDocument(...)`

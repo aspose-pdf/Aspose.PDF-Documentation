@@ -3,6 +3,25 @@ title: Fill Text Fields
 type: docs
 weight: 10
 url: /java/fill-text-fields/
-description: This example demonstrates how to automatically fill text fields in a PDF form using Aspose.PDF for Python via .NET. It shows how to load a PDF document, populate specific form fields by name, and save the updated file.
-lastmod: "2026-02-19"
+description: Learn how to fill text fields in a PDF form with Java using the Form facade in Aspose.PDF.
+lastmod: "2026-05-28"
+TechArticle: true
+AlternativeHeadline: Populate text form fields in a PDF with Java
+Abstract: This article shows how to bind a PDF form, set text field values by name, and save the updated document with the Form facade in Aspose.PDF for Java.
 ---
+Use `FormExamples.fillTextFields(...)` to populate text-based form fields.
+
+```java
+public static void fillTextFields(Path inputFile, Path outputFile) {
+    Form form = new Form();
+    try {
+        form.bindPdf(inputFile.toString());
+        form.fillField("name", "John Doe");
+        form.fillField("address", "123 Main St, Anytown, USA");
+        form.fillField("email", "john.doe@example.com");
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
+    }
+}
+```

@@ -3,12 +3,15 @@ title: Add Movie Annotation
 type: docs
 weight: 10
 url: /java/add-movie-annotation/
-description: This example binds an input PDF, adds a movie annotation on page 1, and saves the updated PDF.
-lastmod: "2026-03-20"
+description: Learn how to add a movie annotation to a PDF in Java with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add a Movie Annotation to a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to embed a movie (video) into a PDF document using Aspose.PDF for Python via the Facades API. It shows how to add a clickable annotation that plays a video directly within the PDF.
+AlternativeHeadline: Add a movie annotation to a PDF using Java
+Abstract: This article explains how to use the `addMovieAnnotation` example from `PdfContentEditorExamples` to embed a movie annotation in Aspose.PDF for Java. The sample binds a PDF, prepares the annotation rectangle and media file, adds the movie annotation, and saves the updated document.
 ---
+The current Java example for this article is `addMovieAnnotation`.
+
+It demonstrates how to call `createMovie(...)` with the annotation bounds, media file, title, and playback settings.

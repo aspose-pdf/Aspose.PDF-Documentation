@@ -3,12 +3,13 @@ title: Add JavaScript Link
 type: docs
 weight: 30
 url: /java/add-javascript-link/
-description: This example binds an input PDF, adds a JavaScript link that triggers an alert on click, and saves the modified document.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for JavaScript link workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add a JavaScript Link to a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to add a JavaScript link to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that executes JavaScript code when clicked, and save the updated PDF.
+AlternativeHeadline: Check Java sample coverage for JavaScript links in PDFs
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for adding a JavaScript link. The links and navigation topics in this section are maintained as scope notes until matching Java samples are added.
 ---
+There is no dedicated Java example for adding a JavaScript link in the current `PdfContentEditorExamples` class.

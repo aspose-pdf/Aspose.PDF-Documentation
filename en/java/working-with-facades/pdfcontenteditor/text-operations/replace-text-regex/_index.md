@@ -3,12 +3,18 @@ title: Replace Text Regex
 type: docs
 weight: 30
 url: /java/replace-text-regex/
-description: In this example, all four-digit numbers in the document are replaced with the placeholder "[NUMBER]". This is useful for masking sensitive data, normalizing content, or anonymizing documents.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for regex-based text replacement with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Replace Text Using Regular Expressions with PdfContentEditor in Java
-Abstract: This example demonstrates how to replace text in a PDF using regular expressions with Aspose.PDF for Python via the Facades API. It shows how to search for patterns and replace all matches across the document.
+AlternativeHeadline: Check Java sample coverage for regex-based text replacement
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for replacing text with a regular expression. The available Java text samples cover document-level replacement through `replaceTextSimple` and `replaceTextWithState`.
 ---
+There is no dedicated Java example for regex-based text replacement in the current `PdfContentEditorExamples` class.
+
+The nearest source-backed workflows are:
+
+- `replaceTextSimple`
+- `replaceTextWithState`

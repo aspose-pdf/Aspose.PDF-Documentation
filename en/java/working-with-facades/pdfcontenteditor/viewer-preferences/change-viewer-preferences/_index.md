@@ -3,12 +3,15 @@ title: Change PDF Viewer Preferences
 type: docs
 weight: 10
 url: /java/change-viewer-preferences/
-description: This module demonstrates how to adjust a PDF document’s viewer settings using Aspose.PDF for Python.
-lastmod: "2026-03-20"
+description: Learn how to change PDF viewer preferences in Java with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Customize PDF Viewer Experience with Java
-Abstract: Control how your PDF document appears when opened by modifying viewer preferences programmatically. This functionality allows you to tailor the user interface and layout, ensuring a consistent viewing experience.
+AlternativeHeadline: Change PDF viewer preferences using Java
+Abstract: This article explains how to use the `changeViewerPreferences` example from `PdfContentEditorExamples` to update viewer preferences in Aspose.PDF for Java. The sample binds the PDF, sets a new viewer preference value, and saves the document.
 ---
+The current Java example for this article is `changeViewerPreferences`.
+
+It demonstrates how to call `changeViewerPreference(...)` with a `ViewerPreference` value and save the updated PDF.

@@ -3,13 +3,16 @@ title: Clear PDF Metadata
 type: docs
 weight: 10
 url: /java/clear-pdf-metadata/
-description: Remove all metadata from a PDF document using Aspose.PDF for Python via .NET.
-lastmod: "2026-03-05"
+description: Learn how to clear PDF metadata in Java with PdfFileInfo.
+lastmod: "2026-05-28"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Clearing PDF Metadata Using Aspose.PDF for Java
-Abstract: This guide explains how to remove all metadata from a PDF document using Aspose.PDF for Python via .NET. You will learn to clear both standard and custom metadata fields and save the sanitized PDF. This is useful for privacy, security, or preparing PDFs for public release.
+AlternativeHeadline: Clear PDF metadata in Java with PdfFileInfo
+Abstract: This article explains how to use the `clearPdfMetadata` example from `PdfFileInfoExamples` to remove stored metadata from a PDF in Aspose.PDF for Java. The sample calls `clearInfo()` on `PdfFileInfo`, saves the result, and closes the facade object.
 ---
+The current Java example for this article is `clearPdfMetadata`.
+
+It demonstrates how to call `clearInfo()` and save the cleaned output PDF.

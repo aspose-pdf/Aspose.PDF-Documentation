@@ -3,13 +3,21 @@ title: Get PDF Metadata
 type: docs
 weight: 20
 url: /java/get-pdf-metadata/
-description: Extract and display metadata from PDF documents using Aspose.PDF for Python.
-lastmod: "2026-03-05"
+description: Learn how to read standard and custom PDF metadata in Java with PdfFileInfo.
+lastmod: "2026-05-28"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Retrieving PDF Metadata Using Aspose.PDF for Java.
-Abstract: This guide demonstrates how to extract and display metadata from PDF documents using Aspose.PDF for Python. You will learn to access standard PDF properties such as title, author, keywords, creation/modification dates, as well as custom metadata fields. Additionally, the guide covers checks for PDF validity, encryption, and portfolio status.
+AlternativeHeadline: Retrieve PDF metadata in Java with PdfFileInfo
+Abstract: This article explains how to use the `getPdfMetadata` example from `PdfFileInfoExamples` to inspect built-in and custom metadata in Aspose.PDF for Java. The sample reads subject, title, keywords, creator, creation and modification dates, validity and encryption flags, password indicators, collection status, and a custom `Reviewer` metadata entry.
 ---
+The current Java example for this article is `getPdfMetadata`.
+
+It demonstrates how to:
+
+- read standard metadata values such as title, subject, keywords, and creator
+- inspect creation and modification dates
+- check PDF validity, encryption state, and password flags
+- read a custom metadata entry with `getMetaInfo("Reviewer")`

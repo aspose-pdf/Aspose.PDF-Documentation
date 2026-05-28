@@ -3,12 +3,13 @@ title: Extract Links
 type: docs
 weight: 70
 url: /java/extract-links/
-description: This example binds an input PDF, extracts all links, and prints their coordinates and URIs (if available).
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for link extraction workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Extract Links from a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to extract all links from a PDF document using Aspose.PDF for Python via the Facades API. It shows how to identify and retrieve web links or other actionable links embedded in the PDF.
+AlternativeHeadline: Check Java sample coverage for extracting links from PDFs
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for extracting links from a PDF. The links and navigation topics in this section are maintained as scope notes until matching Java samples are added.
 ---
+There is no dedicated Java example for extracting links in the current `PdfContentEditorExamples` class.

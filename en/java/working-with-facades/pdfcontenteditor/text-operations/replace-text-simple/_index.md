@@ -3,12 +3,15 @@ title: Replace Text Simple
 type: docs
 weight: 40
 url: /java/replace-text-simple/
-description: In this example, all occurrences of "33" are replaced with "XXXIII " in the entire document. This demonstrates straightforward string replacement without custom formatting or regex.
-lastmod: "2026-03-20"
+description: Learn how to replace text in a PDF document in Java with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Replace Text Across a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to replace text throughout an entire PDF document using Aspose.PDF for Python via the Facades API. It replaces all occurrences of a specified string with new text.
+AlternativeHeadline: Replace text in a PDF using Java
+Abstract: This article explains how to use the `replaceTextSimple` example from `PdfContentEditorExamples` to replace text content in Aspose.PDF for Java. The sample binds the PDF, replaces one text string with another, and saves the modified document.
 ---
+The current Java example for this article is `replaceTextSimple`.
+
+It demonstrates how to call `replaceText(oldValue, newValue)` and save the updated PDF.

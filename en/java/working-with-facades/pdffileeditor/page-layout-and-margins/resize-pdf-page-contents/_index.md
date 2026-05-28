@@ -3,12 +3,15 @@ title: Resize PDF Page Contents
 type: docs
 weight: 30
 url: /java/resize-pdf-page-contents/
-description: Resize the contents of specific PDF pages using Aspose.PDF for Python.
-lastmod: "2026-03-05"
+description: Learn how to resize the contents of selected PDF pages in Java with PdfFileEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Resize PDF Page Contents Programmatically in Java
-Abstract: Learn how to resize the contents of specific PDF pages using Aspose.PDF for Python. This example demonstrates how to adjust the width and height of page content while preserving the document structure, making it easier to optimize layouts for printing or viewing.
+AlternativeHeadline: Resize the contents of selected PDF pages in Java
+Abstract: This article explains how to use the `resizePdfPageContents` example from `PdfFileEditorExamples` to resize content on selected pages in Aspose.PDF for Java. The sample calls `resizeContents(...)`, checks the boolean result, and throws if the operation fails.
 ---
+The current Java example for this article is `resizePdfPageContents`.
+
+It demonstrates how to call `resizeContents(...)` for selected pages and handle a `false` return value before saving the updated PDF.

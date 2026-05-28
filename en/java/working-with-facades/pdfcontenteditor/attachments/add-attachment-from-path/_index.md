@@ -1,14 +1,22 @@
 ---
-title: Add Attachment From Path
+title: Add Attachment from Path
 type: docs
 weight: 20
 url: /java/add-attachment-from-path/
-description: This example binds an input PDF, attaches an external file using its file path, and saves the modified PDF with the embedded attachment.
-lastmod: "2026-03-20"
+description: Review the current Java coverage for adding attachments with PdfContentEditor and see how it relates to path-based attachment workflows.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Attach Files to a PDF Using File Path Overload in Java
-Abstract: This example demonstrates how to attach external files to a PDF document using the file-path overload of 'add_document_attachment()' in Aspose.PDF for Python via the Facades API. It simplifies adding attachments without manually opening a file stream.
+AlternativeHeadline: Check Java sample coverage for path-based PDF attachments
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated `addAttachmentFromPath` method. The nearest Java coverage is `addAttachment`, which opens the attachment as a stream before calling the facade API and saving the updated PDF.
 ---
+There is no dedicated Java example named `addAttachmentFromPath` in the current `PdfContentEditorExamples` class.
+
+For the closest source-backed workflow, see `addAttachment`, which demonstrates how to:
+
+- bind the source PDF
+- open the attachment content as a stream
+- call `addDocumentAttachment(...)`
+- save the updated document

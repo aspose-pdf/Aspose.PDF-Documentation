@@ -3,13 +3,17 @@ title: Page Information
 type: docs
 weight: 20
 url: /java/page-information/
-description: This article explains how to extract key layout and positioning details from PDF pages using Aspose.PDF for Python.
-lastmod: "2026-03-05"
+description: Learn how to inspect PDF page size, rotation, and offsets in Java with PdfFileInfo.
+lastmod: "2026-05-28"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Retrieve PDF Page Information and Offsets
-Abstract: PDF pages may differ in size, rotation, and internal content positioning. The Get Page Information and Get Page Offset functions provide developers with a complete view of each page’s layout. Get Page Information returns page width, height, and rotation, while Get Page Offset retrieves the X and Y offsets in inches. Together, these methods allow precise alignment of text, images, annotations, and other content, supporting both single-page and multi-page automated workflows.
+AlternativeHeadline: Read PDF page information and offsets in Java
+Abstract: This section covers the page-information workflows currently implemented in `PdfFileInfoExamples` for Aspose.PDF for Java. The Java source directly includes reading page width, height, rotation, and page X and Y offsets for a selected page.
 ---
+The current Java `PdfFileInfoExamples` class provides direct page-information coverage for:
+
+- `getPageInformation(...)`
+- `getPageOffsets(...)`

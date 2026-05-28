@@ -3,12 +3,18 @@ title: Add Bookmark Action
 type: docs
 weight: 10
 url: /java/add-bookmark-action/
-description: This example binds an input PDF, creates a bookmark labeled "PdfContentEditor Bookmark" that navigates to page 1, and saves the updated document.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for bookmark action workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Create a Bookmark with Navigation Action in a PDF Using Java
-Abstract: This example demonstrates how to add a bookmark with a navigation action to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to configure bookmark text, appearance, and an action that directs users to a specific page.
+AlternativeHeadline: Check Java sample coverage for bookmark actions in PDFs
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for adding a bookmark action. The available document-action samples focus on document open actions through `addDocumentAction` and `removeOpenAction`.
 ---
+There is no dedicated Java example for adding a bookmark action in the current `PdfContentEditorExamples` class.
+
+The current document-action coverage is limited to:
+
+- `addDocumentAction`
+- `removeOpenAction`

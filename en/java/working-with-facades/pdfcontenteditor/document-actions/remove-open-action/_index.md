@@ -3,12 +3,15 @@ title: Remove Open Action
 type: docs
 weight: 30
 url: /java/remove-open-action/
-description: This example loads an existing PDF, removes the open action, and saves the cleaned document.
-lastmod: "2026-03-20"
+description: Learn how to remove a document open action from a PDF in Java with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Remove Document Open Action from a PDF Using Java
-Abstract: This example demonstrates how to remove a document open action from a PDF using Aspose.PDF for Python via the Facades API. It shows how to bind a PDF, clear the open action, and save the updated document.
+AlternativeHeadline: Remove a document open action from a PDF using Java
+Abstract: This article explains how to use the `removeOpenAction` example from `PdfContentEditorExamples` to clear a document-level open action in Aspose.PDF for Java. The sample binds the PDF, removes the configured open action, and saves the result.
 ---
+The current Java example for this article is `removeOpenAction`.
+
+It demonstrates how to remove the `PdfContentEditor.DOCUMENT_OPEN` additional action before saving the updated document.

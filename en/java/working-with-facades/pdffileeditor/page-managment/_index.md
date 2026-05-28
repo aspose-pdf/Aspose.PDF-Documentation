@@ -3,12 +3,18 @@ title: Page Management
 type: docs
 weight: 30
 url: /java/page-management/
-description: Managing PDF pages programmatically allows developers to modify documents without manual editing.
-lastmod: "2026-03-05"
+description: Learn how to extract, delete, insert, and append PDF pages in Java with PdfFileEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Programmatically Manage PDF Pages in Java - Extract, Delete, Insert, and Append
-Abstract: Learn how to perform page-level operations on PDF documents using Aspose.PDF for Python. This guide demonstrates how to extract specific pages, delete unwanted pages, insert pages from another PDF, and append pages to an existing document, enabling efficient and automated PDF page management.
+AlternativeHeadline: Manage PDF pages in Java using PdfFileEditor
+Abstract: This section covers the page-management workflows currently implemented in `PdfFileEditorExamples` for Aspose.PDF for Java. The Java source directly includes extracting selected pages, deleting pages, inserting pages from another PDF, and appending pages to an existing document.
 ---
+The current Java `PdfFileEditorExamples` class provides direct page-management coverage for:
+
+- `appendPagesToPdf(...)`
+- `deletePagesFromPdf(...)`
+- `extractPagesFromPdf(...)`
+- `insertPagesIntoPdf(...)`

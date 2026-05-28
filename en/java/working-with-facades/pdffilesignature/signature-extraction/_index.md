@@ -3,12 +3,21 @@ title: Signature Extraction
 type: docs
 weight: 50
 url: /java/signature-extraction/
-description: Learn how to extract a signature image and signing certificate from a signed PDF using PdfFileSignature in Python.
-lastmod: "2026-04-02"
+description: Learn how to extract a signing certificate from a PDF signature in Java with PdfFileSignature.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Extract Signature Image and Certificate from PDF in Java
-Abstract: This article explains how to extract signature-related data from signed PDF documents with Aspose.PDF for Python via .NET. It shows how to read the first available signature, export its image, and save the associated certificate stream to an output file.
+AlternativeHeadline: Extract PDF signature certificates in Java
+Abstract: This article explains how to use the `extractSignatureCertificate` example from `PdfFileSignatureExamples` in Aspose.PDF for Java. The current Java source reads the first available signature, opens the certificate stream with `extractCertificate(...)`, and writes that stream to an output certificate file.
 ---
+The current Java example for this article is `extractSignatureCertificate`.
+
+It demonstrates how to:
+
+- access the first available signature name
+- open the embedded certificate stream with `extractCertificate(...)`
+- copy the certificate data to an output file
+
+The current Java source does not include a signature-image extraction example.

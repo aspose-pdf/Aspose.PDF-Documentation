@@ -3,6 +3,22 @@ title: Export to XFDF
 type: docs
 weight: 20
 url: /java/export-to-xfdf/
-description: This example shows how to export PDF form field data to an XFDF (XML Forms Data Format) file using Aspose.PDF for Python via .NET. It demonstrates how to load a PDF form, access its fields through the Form facade, and save the extracted values into an XFDF stream.
-lastmod: "2026-02-19"
+description: Learn how to export PDF form field data to XFDF in Java using the Form facade in Aspose.PDF.
+lastmod: "2026-05-28"
+TechArticle: true
+AlternativeHeadline: Export AcroForm data to XFDF in Java
+Abstract: This article shows how to bind a PDF form and export its field values to an XFDF stream with the Form facade in Aspose.PDF for Java.
 ---
+Use `FormExamples.exportXfdf(...)` to write form field data as XFDF.
+
+```java
+public static void exportXfdf(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream outputStream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportXfdf(outputStream);
+    } finally {
+        form.close();
+    }
+}
+```

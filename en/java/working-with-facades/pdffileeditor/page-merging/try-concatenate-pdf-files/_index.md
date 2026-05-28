@@ -3,12 +3,15 @@ title: Try Concatenate PDF Files
 type: docs
 weight: 70
 url: /java/try-concatenate-pdf-files/
-description: Concatenate multiple PDF files using Aspose.PDF for Python.
-lastmod: "2026-03-05"
+description: Review the current Java sample coverage for boolean-returning PDF merge workflows with PdfFileEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Safely Merge PDF Files in Java with Error Handling
-Abstract: Learn how to safely concatenate multiple PDF files using Aspose.PDF for Python. The try_concatenate method attempts to merge the PDFs without throwing exceptions, allowing developers to handle failures gracefully.
+AlternativeHeadline: Check Java sample coverage for try-style PDF merging
+Abstract: The current `PdfFileEditorExamples` source for Aspose.PDF for Java does not include a dedicated try-style example for concatenating PDF files. The available merge sample is `mergePdfDocuments`, while boolean-return checking is demonstrated in other Java methods such as `tryCreatePdfBooklet` and `tryCreateNupPdfDocument`.
 ---
+There is no dedicated Java example for try-style PDF concatenation in the current `PdfFileEditorExamples` class.
+
+The nearest merge workflow is `mergePdfDocuments`, and the current examples that demonstrate boolean-return checking are `tryCreatePdfBooklet` and `tryCreateNupPdfDocument`.

@@ -3,12 +3,15 @@ title: Replace Text With State
 type: docs
 weight: 50
 url: /java/replace-text-with-state/
-description: In this example, all occurrences of "software" are replaced with "SOFTWARE" and formatted in blue with a font size of 14.
-lastmod: "2026-03-20"
+description: Learn how to replace text in a PDF document in Java with formatting changes using PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Replace Text with Custom Formatting in a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to replace text in a PDF document while applying custom formatting using Aspose.PDF for Python via the Facades API. It shows how to control text color and font size during replacement.
+AlternativeHeadline: Replace PDF text with a TextState in Java
+Abstract: This article explains how to use the `replaceTextWithState` example from `PdfContentEditorExamples` to replace text with updated formatting in Aspose.PDF for Java. The sample binds the PDF, configures a `TextState`, replaces the target text, and saves the updated file.
 ---
+The current Java example for this article is `replaceTextWithState`.
+
+It demonstrates how to pass a configured `TextState` into `replaceText(...)` when replacing text in the PDF.

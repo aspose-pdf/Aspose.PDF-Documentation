@@ -3,12 +3,15 @@ title: Concatenate PDF Files with Optimization
 type: docs
 weight: 30
 url: /java/concatenate-pdf-files-with-optimization/
-description: Concatenate multiple PDF files into a single optimized PDF using Aspose.PDF for Python.
-lastmod: "2026-03-05"
+description: Review the current Java sample coverage for optimized PDF merging with PdfFileEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Merge PDF Files with Optimized Output in Java
-Abstract: Learn how to concatenate multiple PDF files into a single optimized PDF using Aspose.PDF for Python. This example demonstrates how to enable size optimization to reduce the output file size while preserving content and formatting.
+AlternativeHeadline: Check Java sample coverage for optimized PDF merging
+Abstract: The current `PdfFileEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for concatenating PDF files with optimization settings. The available merge sample is `mergePdfDocuments`, which demonstrates the standard `concatenate(...)` workflow.
 ---
+There is no dedicated Java example for concatenating PDF files with optimization in the current `PdfFileEditorExamples` class.
+
+The nearest source-backed merge workflow is `mergePdfDocuments`.

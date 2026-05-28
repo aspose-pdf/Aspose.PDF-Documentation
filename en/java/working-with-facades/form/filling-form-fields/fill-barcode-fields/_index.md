@@ -3,6 +3,23 @@ title: Fill Barcode Fields
 type: docs
 weight: 50
 url: /java/fill-barcode-fields/
-description: This example demonstrates how to programmatically fill barcode fields in a PDF form using Aspose.PDF for Python via .NET. It shows how to bind a PDF document, assign a value to a barcode field, and save the updated file.
-lastmod: "2026-02-19"
+description: Learn how to fill a barcode form field in Java using the Form facade in Aspose.PDF.
+lastmod: "2026-05-28"
+TechArticle: true
+AlternativeHeadline: Populate a barcode field in a PDF form with Java
+Abstract: This article shows how to bind a PDF form, set a barcode field value, and save the updated document with the Form facade in Aspose.PDF for Java.
 ---
+Use `FormExamples.fillBarcodeFields(...)` to populate a barcode field in a PDF form.
+
+```java
+public static void fillBarcodeFields(Path inputFile, Path outputFile) {
+    Form form = new Form();
+    try {
+        form.bindPdf(inputFile.toString());
+        form.fillBarcodeField("product_barcode", "123456789012");
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
+    }
+}
+```

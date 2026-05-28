@@ -1,14 +1,17 @@
 ---
-title: Add File Attachment Annotation From Stream
+title: Add File Attachment Annotation from Stream
 type: docs
 weight: 40
 url: /java/add-file-attachment-annotation-from-stream/
-description: The example loads a PDF, reads an external file into a memory stream, adds a file attachment annotation to the first page, and saves the modified document.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for stream-based file attachment annotation workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add File Attachment Annotations to a PDF from a Stream in Java
-Abstract: This example demonstrates how to create a file attachment annotation in a PDF using a file stream with Aspose.PDF for Python via the Facades API. It shows how to specify annotation position, set a description, include an opacity value, and save the modified document.
+AlternativeHeadline: Check Java sample coverage for stream-based file attachment annotations
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for adding a file attachment annotation from a stream. The nearest Java coverage is `addAttachment`, which uses a stream to add a document attachment to the PDF.
 ---
+There is no dedicated Java example for adding a file attachment annotation from a stream in the current `PdfContentEditorExamples` class.
+
+For the closest source-backed workflow, see `addAttachment`, which reads attachment data from a stream and adds it to the document as an attachment.

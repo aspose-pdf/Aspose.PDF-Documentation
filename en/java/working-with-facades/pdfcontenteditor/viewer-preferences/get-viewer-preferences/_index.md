@@ -3,12 +3,15 @@ title: Get PDF Viewer Preferences
 type: docs
 weight: 20
 url: /java/get-viewer-preferences/
-description: How to read and modify PDF viewer preferences programmatically using Aspose.PDF for Python
-lastmod: "2026-03-20"
+description: Learn how to inspect PDF viewer preferences in Java with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Manage PDF Viewer Preferences with Aspose.PDF in Java
-Abstract: This guide demonstrates how to read and modify PDF viewer preferences programmatically using Aspose.PDF for Python. Viewer preferences control how a PDF is displayed when opened in a PDF viewer, such as opening with outlines, hiding toolbars, or using single-page layout.
+AlternativeHeadline: Read PDF viewer preferences using Java
+Abstract: This article explains how to use the `getViewerPreferences` example from `PdfContentEditorExamples` to inspect the current viewer preference in Aspose.PDF for Java. The sample binds the PDF, reads the preference value, and prints the result.
 ---
+The current Java example for this article is `getViewerPreferences`.
+
+It demonstrates how to call `getViewerPreference()` after binding the PDF and inspect the returned setting.

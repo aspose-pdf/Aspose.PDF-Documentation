@@ -3,12 +3,15 @@ title: Add Caret Annotation
 type: docs
 weight: 10
 url: /java/add-caret-annotation/
-description: This example loads an existing PDF, adds a caret annotation to the first page, and saves the modified document. The annotation includes a red caret symbol and descriptive comment text.
-lastmod: "2026-03-20"
+description: Review the current Java support status for caret annotations in PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add Caret Annotation to a PDF Using Java
-Abstract: This example demonstrates how to add a caret annotation to a PDF document using Aspose.PDF for Python via the Facades API. The sample shows how to bind a PDF file, define annotation placement using rectangles, configure caret properties, and save the updated document.
+AlternativeHeadline: Caret annotation support status in Java
+Abstract: The current Java `PdfContentEditorExamples` class does not include a dedicated caret annotation sample. This page records that scope explicitly so the Java documentation stays aligned with the available source examples.
 ---
+There is no standalone caret annotation example in the current Java `PdfContentEditorExamples` source file.
+
+If this workflow needs to be documented as supported, add a dedicated Java sample first and then update this page from that source.

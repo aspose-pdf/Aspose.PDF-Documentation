@@ -3,12 +3,13 @@ title: Add PDF Document Link
 type: docs
 weight: 50
 url: /java/add-pdf-document-link/
-description: This example binds an input PDF, adds a green-colored link to a page in another PDF, and saves the modified document.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for PDF document link workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add a PDF Document Link Using PdfContentEditor in Java
-Abstract: This example demonstrates how to add a link to another PDF document using Aspose.PDF for Python via the Facades API. It shows how to create a clickable area that opens a different PDF and save the updated document.
+AlternativeHeadline: Check Java sample coverage for PDF document links
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for adding a PDF document link. The links and navigation topics in this section are maintained as scope notes until matching Java samples are added.
 ---
+There is no dedicated Java example for adding a PDF document link in the current `PdfContentEditorExamples` class.

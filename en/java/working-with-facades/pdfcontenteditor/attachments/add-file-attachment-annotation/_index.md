@@ -3,12 +3,18 @@ title: Add File Attachment Annotation
 type: docs
 weight: 30
 url: /java/add-file-attachment-annotation/
-description: The example binds an input PDF, adds a file attachment annotation to the first page using the file path, and saves the updated document.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for file attachment annotation workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add File Attachment Annotations to a PDF Using Java
-Abstract: This example demonstrates how to create a file attachment annotation in a PDF using a file path with Aspose.PDF for Python via the Facades API. It shows how to define annotation placement, set description text, choose an icon type, and save the modified document.
+AlternativeHeadline: Check Java support notes for file attachment annotations
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for adding a file attachment annotation. The available Java attachment samples focus on document-level attachments through `addAttachment` and removal through `removeAttachments`.
 ---
+There is no dedicated Java example for adding a file attachment annotation in the current `PdfContentEditorExamples` class.
+
+The nearest attachment-related Java samples are:
+
+- `addAttachment`, which adds a document attachment
+- `removeAttachments`, which removes existing attachments from the PDF

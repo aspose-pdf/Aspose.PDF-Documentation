@@ -3,12 +3,19 @@ title: Set Privileges on an Existing PDF File
 type: docs
 weight: 40
 url: /java/set-privileges/
-description: Set and manage PDF document privileges to control user actions such as printing, copying, and editing.
-lastmod: "2026-03-18"
+description: Learn how to set PDF document privileges in Java with PdfFileSecurity, with or without passwords.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Manage PDF Permissions and Access Controls
-Abstract: Learn how to control what users can do with a PDF by setting document privileges using Aspose.PDF for Python via .NET. This guide covers applying permissions with or without passwords to restrict actions such as printing, copying, or editing.
+AlternativeHeadline: Set PDF privileges in Java with PdfFileSecurity
+Abstract: This article explains how to use the privilege-setting examples from `PdfFileSecurityExamples` in Aspose.PDF for Java. The current Java source includes applying privileges without passwords, applying privileges with user and owner passwords, and a boolean-returning privilege workflow for failure-aware handling.
 ---
+The current Java source provides three privilege examples:
+
+- `setPdfPrivilegesWithoutPasswords`, which creates a restricted `DocumentPrivilege`, re-enables printing, and applies it with `setPrivilege(privilege)`
+- `setPdfPrivilegesWithPasswords`, which applies privileges through `setPrivilege("user_password", "owner_password", privilege)`
+- `trySetPdfPrivilegesWithoutException`, which uses `trySetPrivilege(...)` and only saves the output when the privilege update succeeds
+
+These examples show how to configure a `DocumentPrivilege` object and then apply it either directly or together with explicit passwords.

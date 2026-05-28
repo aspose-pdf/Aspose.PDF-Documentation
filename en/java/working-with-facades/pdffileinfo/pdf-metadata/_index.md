@@ -3,13 +3,19 @@ title: PDF Metadata
 type: docs
 weight: 30
 url: /java/pdf-metadata/
-description: This article explains how to access, modify, and save metadata in PDF documents using Aspose.PDF for Python.
-lastmod: "2026-03-05"
+description: Learn how to read, update, clear, and save PDF metadata in Java with PdfFileInfo.
+lastmod: "2026-05-28"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Manage PDF Metadata in Java
-Abstract: PDF metadata contains information about a document, such as title, author, keywords, and creation date, which aids in cataloging, searching, and maintaining document integrity. Using Aspose.PDF, developers can programmatically Get PDF Metadata, Set PDF Metadata values, Clear PDF Metadata, and save the changes either in standard PDF metadata or XMP format. This comprehensive approach allows precise control over document properties and ensures consistent handling across workflows and applications.
+AlternativeHeadline: Manage PDF metadata in Java using PdfFileInfo
+Abstract: This section covers the metadata workflows currently implemented in `PdfFileInfoExamples` for Aspose.PDF for Java. The Java source directly includes reading standard and custom metadata, setting metadata values, clearing metadata, and saving new metadata with XMP.
 ---
+The current Java `PdfFileInfoExamples` class provides direct metadata coverage for:
+
+- `getPdfMetadata(...)`
+- `setPdfMetadata(...)`
+- `clearPdfMetadata(...)`
+- `saveInfoWithXmp(...)`

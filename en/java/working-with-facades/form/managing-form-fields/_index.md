@@ -3,6 +3,15 @@ title: Managing Form Fields
 type: docs
 weight: 50
 url: /java/managing-form-fields/
-description: This section demonstrates how to manage and modify PDF form fields using Aspose.PDF for Python via .NET. It covers practical examples of flattening specific fields, flattening all form fields, and renaming existing fields programmatically. By using the Form facade, developers can bind a PDF document, adjust field behavior, and save the updated file with permanent changes applied.
-lastmod: "2026-02-19"
+description: Learn how to manage PDF form fields in Java using the Form facade in Aspose.PDF, including flattening all fields and renaming existing fields.
+lastmod: "2026-05-28"
+TechArticle: true
+AlternativeHeadline: Manage and update PDF form fields in Java
+Abstract: This section covers the Java form-management workflows implemented with the Form facade in Aspose.PDF for Java. The current example set includes flattening all fields and renaming fields, while pages for unsupported variants are maintained as explicit scope notes.
 ---
+The Java `FormExamples` class includes direct examples for:
+
+- `flattenAllFields(...)`
+- `renameFormFields(...)`
+
+The repository does not currently contain a separate Java `Form` facade example for flattening only a selected subset of fields, so that child page is documented as a scope note instead of fabricated sample code.

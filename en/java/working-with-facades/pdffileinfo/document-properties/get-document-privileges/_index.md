@@ -3,13 +3,16 @@ title: Get Document Privileges
 type: docs
 weight: 10
 url: /java/get-document-privileges/
-description: Learn how to programmatically check the privileges of a PDF document using Aspose.PDF for Python. This tutorial demonstrates how to use the PdfFileInfo class to read the document’s security settings, such as printing, copying, or modifying permissions.
-lastmod: "2026-03-05"
+description: Learn how to inspect PDF document privileges in Java with PdfFileInfo.
+lastmod: "2026-05-28"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Retrieve PDF Document Privileges Using Aspose.PDF for Java
-Abstract: PDF documents can have security restrictions that limit actions like printing, copying, modifying, or filling forms. By accessing these privileges programmatically, developers can determine what operations are allowed on a PDF. This guide shows how to use the PdfFileInfo class to retrieve a PDF’s document privileges and display them in Python.
+AlternativeHeadline: Read PDF document privileges in Java with PdfFileInfo
+Abstract: This article explains how to use the `getDocumentPrivileges` example from `PdfFileInfoExamples` to inspect document permissions in Aspose.PDF for Java. The sample retrieves a `DocumentPrivilege` object and prints the current permissions for printing, degraded printing, copying, content modification, annotation changes, form filling, screen reader access, and assembly.
 ---
+The current Java example for this article is `getDocumentPrivileges`.
+
+It demonstrates how to call `getDocumentPrivilege()` and inspect the returned `DocumentPrivilege` flags for the current PDF.

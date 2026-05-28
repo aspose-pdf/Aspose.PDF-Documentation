@@ -3,12 +3,17 @@ title: Split PDF Documents
 type: docs
 weight: 50
 url: /java/splitting-pdf-documents/
-description: Splitting PDFs is a common requirement for document management, reporting, and automation workflows.
-lastmod: "2026-03-05"
+description: Learn how to split PDF documents in Java with PdfFileEditor from the beginning, to the end, or into single pages.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Split PDF Documents in Java - From Beginning, to End, or Into Single File
-Abstract: Learn how to split PDF documents programmatically using Aspose.PDF for Python. This guide demonstrates methods to extract pages from the beginning or end, divide a PDF into multiple documents, or split it into single-page PDFs for flexible document management.
+AlternativeHeadline: Split PDF documents in Java using PdfFileEditor
+Abstract: This section covers the split workflows currently implemented in `PdfFileEditorExamples` for Aspose.PDF for Java. The Java source directly includes splitting from the beginning, splitting from a page to the end, and splitting a document into single-page outputs.
 ---
+The current Java `PdfFileEditorExamples` class provides direct split coverage for:
+
+- `splitPdfFromBeginning(...)`
+- `splitPdfToEnd(...)`
+- `splitPdfIntoSinglePages(...)`

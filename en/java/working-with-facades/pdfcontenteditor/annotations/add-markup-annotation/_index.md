@@ -1,14 +1,17 @@
 ---
-title: Add Markup Annotations
+title: Add Markup Annotation
 type: docs
 weight: 30
 url: /java/add-markup-annotation/
-description: This example binds an input PDF, adds four different markup annotations to the first page, and saves the updated document. Each annotation demonstrates a different markup style and color.
-lastmod: "2026-03-20"
+description: Review the current Java support status for markup annotations in PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add Highlight, Underline, Strikeout, and Squiggly Markup Annotations in a PDF Using Java
-Abstract: This example demonstrates how to add multiple markup annotations—highlight, underline, strikeout, and squiggly—to a PDF document using Aspose.PDF for Python via the Facades API. The sample shows how to define annotation areas, specify markup types, apply colors, and save the modified document.
+AlternativeHeadline: Markup annotation support status in Java
+Abstract: The current Java `PdfContentEditorExamples` class does not include a dedicated markup annotation sample for highlight, underline, strikeout, or squiggly annotations. This page records that scope explicitly so the Java documentation stays aligned with the source examples that actually exist.
 ---
+There is no markup-annotation example in the current Java facade sample file for this subsection.
+
+If markup annotation coverage is needed here, add a dedicated Java source example and then rewrite this page from that implementation.

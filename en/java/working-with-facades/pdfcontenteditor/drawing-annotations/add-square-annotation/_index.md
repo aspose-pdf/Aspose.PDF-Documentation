@@ -3,12 +3,18 @@ title: Add Square Annotation
 type: docs
 weight: 60
 url: /java/add-square-annotation/
-description: This example binds an input PDF, adds a filled blue square annotation on the first page, and saves the modified document.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for square annotation workflows with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add Square Annotation to a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to add a square annotation to a PDF document using Aspose.PDF for Python via the Facades API. It shows how to define the annotation rectangle, text content, color, fill options, and save the updated document.
+AlternativeHeadline: Check Java sample coverage for square annotations
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for adding a square annotation. The available drawing-annotation samples cover line and polygon annotations.
 ---
+There is no dedicated Java example for adding a square annotation in the current `PdfContentEditorExamples` class.
+
+The nearest drawing-annotation Java samples are:
+
+- `addLineAnnotation`
+- `addPolygonAnnotation`

@@ -3,12 +3,15 @@ title: Create ListBox Field
 type: docs
 weight: 30
 url: /java/create-listbox-field/
-description: Learn how to programmatically add a ListBox form field to a PDF document using Aspose.PDF for Python. This guide shows how to insert a ListBox field, define selectable items, and save the updated PDF file.
-lastmod: "2026-03-05"
+description: Learn how to create a list box field in a PDF document in Java and populate it with predefined items.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Create a ListBox Field in a PDF Using Aspose.PDF for Java
-Abstract: PDF forms allow users to interact with documents by selecting options, entering data, and submitting information digitally. A ListBox field lets users choose one or multiple values from a visible list of options. In this tutorial, you will learn how to create a ListBox field in a PDF using the FormEditor class in Aspose.PDF for Python and populate it with predefined items.
+Abstract: This article explains how to create a list box field by using the `createListBoxField` example from `FormEditorExamples`. The Java sample configures list items with `setItems(...)`, adds a `FieldType.ListBox` control, sets the initial value, and saves the updated PDF.
 ---
+The current Java example for this article is `createListBoxField`.
+
+It demonstrates how to define a list of items, bind an input PDF, create a `listbox1` field with `FieldType.ListBox`, set `Australia` as the initial value, and save the modified document.

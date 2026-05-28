@@ -3,12 +3,18 @@ title: Replace Text On Page
 type: docs
 weight: 10
 url: /java/replace-text-on-page/
-description: In this example, the first occurrence of the word "PDF" is replaced with "Page 1 Replaced Text" using a specified font size.
-lastmod: "2026-03-20"
+description: Review the current Java sample coverage for page-specific text replacement with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Replace Text on a Specific Page Using PdfContentEditor in Java
-Abstract: This example demonstrates how to replace text in a PDF document using Aspose.PDF for Python via the Facades API. It shows how to replace the first occurrence of text on a page and save the updated document.
+AlternativeHeadline: Check Java sample coverage for page-specific text replacement
+Abstract: The current `PdfContentEditorExamples` source for Aspose.PDF for Java does not include a dedicated example for replacing text on a specific page. The available Java text samples cover document-level replacement through `replaceTextSimple` and `replaceTextWithState`.
 ---
+There is no dedicated Java example for replacing text on a specific page in the current `PdfContentEditorExamples` class.
+
+The nearest source-backed workflows are:
+
+- `replaceTextSimple`
+- `replaceTextWithState`

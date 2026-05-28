@@ -3,12 +3,15 @@ title: Add Line Annotation
 type: docs
 weight: 30
 url: /java/add-line-annotation/
-description: This example binds an input PDF, draws a red line annotation with square line endings, and saves the modified PDF.
-lastmod: "2026-03-20"
+description: Learn how to add a line annotation to a PDF in Java with PdfContentEditor.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add Line Annotation to a PDF Using PdfContentEditor in Java
-Abstract: This example demonstrates how to add a line annotation to a PDF document using Aspose.PDF for Python via the Facades API. It explains how to define the line’s start and end points, rectangle bounds, appearance properties, and save the updated document.
+AlternativeHeadline: Add a line annotation to a PDF using Java
+Abstract: This article explains how to use the `addLineAnnotation` example from `PdfContentEditorExamples` to place a line annotation in Aspose.PDF for Java. The sample binds the PDF, defines the line coordinates and appearance settings, adds the annotation, and saves the file.
 ---
+The current Java example for this article is `addLineAnnotation`.
+
+It demonstrates how to call `createLine(...)` with the target page, annotation rectangle, line endpoints, title, text, and color settings.

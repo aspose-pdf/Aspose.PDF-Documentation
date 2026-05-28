@@ -3,12 +3,15 @@ title: Copy Inner Field
 type: docs
 weight: 20
 url: /java/copy-inner-field/
-description: Copy PDF Form Fields to a New Position Using Python using Aspose.PDF for Python.
-lastmod: "2026-03-05"
+description: Learn how to copy a form field to a new location inside the same PDF document in Java.
+lastmod: "2026-05-28"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Copy PDF Form Fields to a New Position Using Java
-Abstract: This example demonstrates how to copy an existing form field to a new position in a PDF document using Aspose.PDF for Python. The code opens a PDF, duplicates a field to a specified page and coordinates, and saves the updated document.
+Abstract: This article explains how to use the `copyInnerField` example from `FormEditorExamples` to duplicate an existing field within the same document in Aspose.PDF for Java. The sample copies `First Name` to page 2, assigns the new name `First Name Copy`, and places the duplicate at specific coordinates.
 ---
+The current Java example for this article is `copyInnerField`.
+
+It demonstrates how to duplicate a field inside the bound PDF and position the copied field at `(200, 600)` on page 2.
