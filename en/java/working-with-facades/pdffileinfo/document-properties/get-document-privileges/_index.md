@@ -1,5 +1,6 @@
 ---
 title: Get Document Privileges
+linktitle: Get Document Privileges
 type: docs
 weight: 10
 url: /java/get-document-privileges/

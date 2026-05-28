@@ -1,5 +1,6 @@
 ---
 title: How to Create PDF Portfolio
+linktitle: How to Create PDF Portfolio
 type: docs
 weight: 10
 url: /java/how-to-create-pdf-portfolio/

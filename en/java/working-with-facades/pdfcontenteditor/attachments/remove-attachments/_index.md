@@ -1,5 +1,6 @@
 ---
 title: Remove Attachments
+linktitle: Remove Attachments
 type: docs
 weight: 50
 url: /java/remove-attachments/

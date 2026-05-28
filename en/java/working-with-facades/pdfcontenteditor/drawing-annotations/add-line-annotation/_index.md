@@ -1,5 +1,6 @@
 ---
 title: Add Line Annotation
+linktitle: Add Line Annotation
 type: docs
 weight: 30
 url: /java/add-line-annotation/

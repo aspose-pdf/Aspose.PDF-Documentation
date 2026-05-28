@@ -1,5 +1,6 @@
 ---
 title: Adding JavaScript in PHP
+linktitle: Adding JavaScript in PHP
 type: docs
 weight: 10
 url: /java/adding-javascript-in-php/

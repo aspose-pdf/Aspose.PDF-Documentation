@@ -1,5 +1,6 @@
 ---
 title: Get PDF Version
+linktitle: Get PDF Version
 type: docs
 weight: 20
 url: /java/get-pdf-version/

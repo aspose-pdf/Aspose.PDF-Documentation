@@ -1,5 +1,6 @@
 ---
 title: Downloads and Configure Aspose.Pdf in Struts 1.3
+linktitle: Downloads and Configure Aspose.Pdf in Struts 1.3
 type: docs
 weight: 10
 url: /java/downloads-and-configure-aspose-pdf-in-struts-1-3/

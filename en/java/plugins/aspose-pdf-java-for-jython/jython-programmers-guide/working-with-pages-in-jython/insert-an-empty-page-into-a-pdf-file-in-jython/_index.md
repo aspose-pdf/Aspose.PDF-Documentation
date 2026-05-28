@@ -1,5 +1,6 @@
 ---
 title: Insert an Empty Page into a PDF File in Jython
+linktitle: Insert an Empty Page into a PDF File in Jython
 type: docs
 weight: 70
 url: /java/insert-an-empty-page-into-a-pdf-file-in-jython/

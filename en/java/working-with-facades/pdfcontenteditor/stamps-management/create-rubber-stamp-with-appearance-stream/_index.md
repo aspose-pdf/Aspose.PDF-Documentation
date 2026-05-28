@@ -1,5 +1,6 @@
 ---
 title: Create Rubber Stamp With Appearance Stream
+linktitle: Create Rubber Stamp With Appearance Stream
 type: docs
 weight: 30
 url: /java/create-rubber-stamp-with-appearance-stream/

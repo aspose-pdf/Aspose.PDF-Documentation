@@ -1,5 +1,6 @@
 ---
 title: Create ComboBox Field
+linktitle: Create ComboBox Field
 type: docs
 weight: 20
 url: /java/create-combobox-field/

@@ -1,5 +1,6 @@
 ---
 title: Concatenate PDF Files in Jython
+linktitle: Concatenate PDF Files in Jython
 type: docs
 weight: 10
 url: /java/concatenate-pdf-files-in-jython/

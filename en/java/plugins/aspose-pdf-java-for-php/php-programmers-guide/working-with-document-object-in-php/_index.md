@@ -1,5 +1,6 @@
 ---
 title: Working with Document Object in PHP
+linktitle: Working with Document Object in PHP
 type: docs
 weight: 20
 url: /java/working-with-document-object-in-php/

@@ -1,5 +1,6 @@
 ---
 title: Rename Form Fields
+linktitle: Rename Form Fields
 type: docs
 weight: 30
 url: /java/rename-form-fields/

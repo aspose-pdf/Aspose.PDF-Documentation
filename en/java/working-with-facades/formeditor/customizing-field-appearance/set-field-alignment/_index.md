@@ -1,5 +1,6 @@
 ---
 title: Set Field Alignment
+linktitle: Set Field Alignment
 type: docs
 weight: 30
 url: /java/set-field-alignment/

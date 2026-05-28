@@ -1,5 +1,6 @@
 ---
 title: Manage Stamp By ID
+linktitle: Manage Stamp By ID
 type: docs
 weight: 95
 url: /java/manage-stamp-by-id/

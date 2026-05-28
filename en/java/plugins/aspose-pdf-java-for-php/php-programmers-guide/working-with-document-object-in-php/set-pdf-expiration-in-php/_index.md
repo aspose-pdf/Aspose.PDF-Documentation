@@ -1,5 +1,6 @@
 ---
 title: Set PDF Expiration in PHP
+linktitle: Set PDF Expiration in PHP
 type: docs
 weight: 80
 url: /java/set-pdf-expiration-in-php/

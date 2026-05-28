@@ -1,5 +1,6 @@
 ---
 title: Create Rubber Stamp With Appearance File
+linktitle: Create Rubber Stamp With Appearance File
 type: docs
 weight: 20
 url: /java/create-rubber-stamp-with-appearance-file/

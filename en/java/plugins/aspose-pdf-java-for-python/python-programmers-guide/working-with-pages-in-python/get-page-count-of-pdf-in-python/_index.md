@@ -1,5 +1,6 @@
 ---
 title: Get Page Count of PDF in Python
+linktitle: Get Page Count of PDF in Python
 type: docs
 weight: 40
 url: /java/get-page-count-of-pdf-in-python/

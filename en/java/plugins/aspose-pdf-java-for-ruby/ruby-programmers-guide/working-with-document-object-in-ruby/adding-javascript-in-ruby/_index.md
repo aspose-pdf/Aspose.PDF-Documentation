@@ -1,5 +1,6 @@
 ---
 title: Adding JavaScript in Ruby
+linktitle: Adding JavaScript in Ruby
 type: docs
 weight: 10
 url: /java/adding-javascript-in-ruby/

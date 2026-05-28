@@ -1,5 +1,6 @@
 ---
 title: Rename Field
+linktitle: Rename Field
 type: docs
 weight: 70
 url: /java/rename-field/

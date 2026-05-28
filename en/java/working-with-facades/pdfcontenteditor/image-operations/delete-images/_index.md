@@ -1,5 +1,6 @@
 ---
 title: Delete Images from PDF
+linktitle: Delete Images from PDF
 type: docs
 weight: 20
 url: /java/delete-images/

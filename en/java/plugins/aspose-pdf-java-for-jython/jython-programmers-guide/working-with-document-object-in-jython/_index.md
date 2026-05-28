@@ -1,5 +1,6 @@
 ---
 title: Working With Document Object in Jython
+linktitle: Working With Document Object in Jython
 type: docs
 weight: 20
 url: /java/working-with-document-object-in-jython/

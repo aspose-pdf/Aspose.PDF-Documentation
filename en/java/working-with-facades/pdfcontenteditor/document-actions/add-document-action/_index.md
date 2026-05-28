@@ -1,5 +1,6 @@
 ---
 title: Add Document Action
+linktitle: Add Document Action
 type: docs
 weight: 20
 url: /java/add-document-action/

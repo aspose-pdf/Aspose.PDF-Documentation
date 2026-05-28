@@ -1,5 +1,6 @@
 ---
 title: Add File Attachment Annotation from Stream
+linktitle: Add File Attachment Annotation from Stream
 type: docs
 weight: 40
 url: /java/add-file-attachment-annotation-from-stream/

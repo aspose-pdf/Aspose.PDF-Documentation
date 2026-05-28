@@ -1,5 +1,6 @@
 ---
 title: Add File Attachment Annotation
+linktitle: Add File Attachment Annotation
 type: docs
 weight: 30
 url: /java/add-file-attachment-annotation/

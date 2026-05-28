@@ -1,5 +1,6 @@
 ---
 title: PDF Metadata
+linktitle: PDF Metadata
 type: docs
 weight: 30
 url: /java/pdf-metadata/

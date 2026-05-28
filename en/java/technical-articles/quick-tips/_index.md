@@ -1,5 +1,6 @@
 ---
 title: Quick Tips
+linktitle: Quick Tips
 type: docs
 weight: 50
 url: /java/quick-tips/

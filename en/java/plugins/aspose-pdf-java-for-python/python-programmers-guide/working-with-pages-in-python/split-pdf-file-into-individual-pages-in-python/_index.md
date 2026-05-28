@@ -1,5 +1,6 @@
 ---
 title: Split PDF File into Individual Pages in Python
+linktitle: Split PDF File into Individual Pages in Python
 type: docs
 weight: 80
 url: /java/split-pdf-file-into-individual-pages-in-python/

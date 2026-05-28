@@ -1,5 +1,6 @@
 ---
 title: Resolve Full Field Names
+linktitle: Resolve Full Field Names
 type: docs
 weight: 60
 url: /java/resolve-full-field-names/

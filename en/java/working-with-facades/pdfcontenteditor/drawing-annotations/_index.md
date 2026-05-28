@@ -1,5 +1,6 @@
 ---
 title: Drawing Annotations
+linktitle: Drawing Annotations
 type: docs
 weight: 50
 url: /java/drawing-annotations/

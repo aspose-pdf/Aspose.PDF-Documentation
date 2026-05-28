@@ -1,5 +1,6 @@
 ---
 title: Merge PDF Files
+linktitle: Merge PDF Files
 type: docs
 weight: 40
 url: /java/page-merging/

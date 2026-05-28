@@ -1,5 +1,6 @@
 ---
 title: Python Programmers Guide
+linktitle: Python Programmers Guide
 type: docs
 weight: 20
 url: /java/python-programmers-guide/

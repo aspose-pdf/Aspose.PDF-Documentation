@@ -1,5 +1,6 @@
 ---
 title: Text Operations
+linktitle: Text Operations
 type: docs
 weight: 100
 url: /java/text-operations/

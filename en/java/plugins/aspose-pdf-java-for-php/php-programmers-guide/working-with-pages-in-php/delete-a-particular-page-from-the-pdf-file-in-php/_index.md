@@ -1,5 +1,6 @@
 ---
 title: Delete a Particular Page from the PDF File In PHP
+linktitle: Delete a Particular Page from the PDF File In PHP
 type: docs
 weight: 20
 url: /java/delete-a-particular-page-from-the-pdf-file-in-php/

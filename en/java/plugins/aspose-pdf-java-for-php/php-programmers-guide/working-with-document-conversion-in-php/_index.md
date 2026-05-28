@@ -1,5 +1,6 @@
 ---
 title: Working with Document Conversion in PHP
+linktitle: Working with Document Conversion in PHP
 type: docs
 weight: 10
 url: /java/working-with-document-conversion-in-php/

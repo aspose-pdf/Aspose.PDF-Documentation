@@ -1,5 +1,6 @@
 ---
 title: Update Page Dimensions in Ruby
+linktitle: Update Page Dimensions in Ruby
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-ruby/

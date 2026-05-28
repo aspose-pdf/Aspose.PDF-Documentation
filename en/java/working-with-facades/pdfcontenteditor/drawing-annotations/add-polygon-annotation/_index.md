@@ -1,5 +1,6 @@
 ---
 title: Add Polygon Annotation
+linktitle: Add Polygon Annotation
 type: docs
 weight: 40
 url: /java/add-polygon-annotation/

@@ -1,5 +1,6 @@
 ---
 title: Add Layers to PDF File in Ruby
+linktitle: Add Layers to PDF File in Ruby
 type: docs
 weight: 20
 url: /java/add-layers-to-pdf-file-in-ruby/

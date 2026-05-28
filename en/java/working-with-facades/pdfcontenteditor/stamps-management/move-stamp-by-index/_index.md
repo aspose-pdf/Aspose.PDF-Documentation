@@ -1,5 +1,6 @@
 ---
 title: Move Stamp By Index
+linktitle: Move Stamp By Index
 type: docs
 weight: 90
 url: /java/move-stamp-by-index/

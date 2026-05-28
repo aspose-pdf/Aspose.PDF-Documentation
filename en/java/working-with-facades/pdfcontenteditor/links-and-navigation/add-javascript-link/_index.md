@@ -1,5 +1,6 @@
 ---
 title: Add JavaScript Link
+linktitle: Add JavaScript Link
 type: docs
 weight: 30
 url: /java/add-javascript-link/

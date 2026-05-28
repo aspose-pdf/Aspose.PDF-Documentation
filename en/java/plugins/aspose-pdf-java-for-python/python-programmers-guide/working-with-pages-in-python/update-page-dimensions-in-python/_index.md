@@ -1,5 +1,6 @@
 ---
 title: Update Page Dimensions in Python
+linktitle: Update Page Dimensions in Python
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-python/

@@ -1,5 +1,6 @@
 ---
 title: Split PDF from Beginning
+linktitle: Split PDF from Beginning
 type: docs
 weight: 10
 url: /java/split-pdf-from-beginning/

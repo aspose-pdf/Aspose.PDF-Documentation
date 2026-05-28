@@ -1,5 +1,6 @@
 ---
 title: Add Text Annotation
+linktitle: Add Text Annotation
 type: docs
 weight: 50
 url: /java/add-text-annotation/

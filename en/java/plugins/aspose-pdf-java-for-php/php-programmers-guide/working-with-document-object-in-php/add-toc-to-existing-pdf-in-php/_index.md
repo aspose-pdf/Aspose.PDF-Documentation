@@ -1,5 +1,6 @@
 ---
 title: Add TOC to Existing PDF in PHP
+linktitle: Add TOC to Existing PDF in PHP
 type: docs
 weight: 20
 url: /java/add-toc-to-existing-pdf-in-php/

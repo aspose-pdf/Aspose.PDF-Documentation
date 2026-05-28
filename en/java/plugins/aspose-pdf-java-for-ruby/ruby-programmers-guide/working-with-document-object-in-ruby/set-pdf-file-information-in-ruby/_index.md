@@ -1,5 +1,6 @@
 ---
 title: Set PDF File Information in Ruby
+linktitle: Set PDF File Information in Ruby
 type: docs
 weight: 120
 url: /java/set-pdf-file-information-in-ruby/

@@ -1,5 +1,6 @@
 ---
 title: Add HTML String using DOM in PHP
+linktitle: Add HTML String using DOM in PHP
 type: docs
 weight: 10
 url: /java/add-html-string-using-dom-in-php/

@@ -1,5 +1,6 @@
 ---
 title: Add Text to an existing PDF file in Ruby
+linktitle: Add Text to an existing PDF file in Ruby
 type: docs
 weight: 20
 url: /java/add-text-to-an-existing-pdf-file-in-ruby/

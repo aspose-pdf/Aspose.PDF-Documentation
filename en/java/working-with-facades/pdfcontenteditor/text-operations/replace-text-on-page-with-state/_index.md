@@ -1,5 +1,6 @@
 ---
 title: Replace Text On Page With State
+linktitle: Replace Text On Page With State
 type: docs
 weight: 20
 url: /java/replace-text-on-page-with-state/

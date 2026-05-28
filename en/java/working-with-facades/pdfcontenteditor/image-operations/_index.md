@@ -1,5 +1,6 @@
 ---
 title: Image Operations
+linktitle: Image Operations
 type: docs
 weight: 60
 url: /java/image-operations/

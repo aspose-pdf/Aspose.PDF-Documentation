@@ -1,5 +1,6 @@
 ---
 title: Get Document Window and Page Display Properties in Python
+linktitle: Get Document Window and Page Display Properties in Python
 type: docs
 weight: 30
 url: /java/get-document-window-and-page-display-properties-in-python/

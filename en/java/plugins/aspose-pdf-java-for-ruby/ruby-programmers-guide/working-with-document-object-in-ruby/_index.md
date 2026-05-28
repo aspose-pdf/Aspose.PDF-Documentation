@@ -1,5 +1,6 @@
 ---
 title: Working with Document Object in Ruby
+linktitle: Working with Document Object in Ruby
 type: docs
 weight: 10
 url: /java/working-with-document-object-in-ruby/

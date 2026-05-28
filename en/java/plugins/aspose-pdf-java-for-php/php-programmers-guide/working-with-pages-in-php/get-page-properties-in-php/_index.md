@@ -1,5 +1,6 @@
 ---
 title: Get Page Properties in PHP
+linktitle: Get Page Properties in PHP
 type: docs
 weight: 50
 url: /java/get-page-properties-in-php/

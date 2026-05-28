@@ -1,5 +1,6 @@
 ---
 title: Get Page Properties in Ruby
+linktitle: Get Page Properties in Ruby
 type: docs
 weight: 50
 url: /java/get-page-properties-in-ruby/

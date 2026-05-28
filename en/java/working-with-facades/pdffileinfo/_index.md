@@ -1,5 +1,6 @@
 ---
 title: PdfFileInfo Class
+linktitle: PdfFileInfo Class
 type: docs
 weight: 110
 url: /java/pdffileinfo-class/

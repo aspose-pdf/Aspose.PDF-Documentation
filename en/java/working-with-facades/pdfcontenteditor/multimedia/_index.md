@@ -1,5 +1,6 @@
 ---
 title: Multimedia
+linktitle: Multimedia
 type: docs
 weight: 80
 url: /java/multimedia/

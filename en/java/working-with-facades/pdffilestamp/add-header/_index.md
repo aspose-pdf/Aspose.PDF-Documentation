@@ -1,5 +1,6 @@
 ---
 title: Add Header to PDF
+linktitle: Add Header to PDF
 type: docs
 weight: 20
 url: /java/add-header/

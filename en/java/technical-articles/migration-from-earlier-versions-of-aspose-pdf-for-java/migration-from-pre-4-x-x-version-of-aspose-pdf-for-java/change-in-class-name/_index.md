@@ -1,5 +1,6 @@
 ---
 title: Change in class name
+linktitle: Change in class name
 type: docs
 weight: 20
 url: /java/change-in-class-name/

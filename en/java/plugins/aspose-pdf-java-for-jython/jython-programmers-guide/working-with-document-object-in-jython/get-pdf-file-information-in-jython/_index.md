@@ -1,5 +1,6 @@
 ---
 title: Get PDF File Information in Jython
+linktitle: Get PDF File Information in Jython
 type: docs
 weight: 30
 url: /java/get-pdf-file-information-in-jython/

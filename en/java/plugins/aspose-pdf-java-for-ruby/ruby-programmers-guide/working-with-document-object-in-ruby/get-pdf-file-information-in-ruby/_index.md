@@ -1,5 +1,6 @@
 ---
 title: Get PDF File Information in Ruby
+linktitle: Get PDF File Information in Ruby
 type: docs
 weight: 50
 url: /java/get-pdf-file-information-in-ruby/

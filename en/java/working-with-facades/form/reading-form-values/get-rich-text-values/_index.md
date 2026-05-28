@@ -1,5 +1,6 @@
 ---
 title: Get Rich Text Values
+linktitle: Get Rich Text Values
 type: docs
 weight: 40
 url: /java/get-rich-text-values/

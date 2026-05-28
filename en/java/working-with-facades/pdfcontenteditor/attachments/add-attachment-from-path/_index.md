@@ -1,5 +1,6 @@
 ---
 title: Add Attachment from Path
+linktitle: Add Attachment from Path
 type: docs
 weight: 20
 url: /java/add-attachment-from-path/

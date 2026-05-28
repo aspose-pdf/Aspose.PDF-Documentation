@@ -1,5 +1,6 @@
 ---
 title: Public API Changes in Aspose.PDF for Java 9.3.0
+linktitle: Public API Changes in Aspose.PDF for Java 9.3.0
 type: docs
 weight: 50
 url: /java/public-api-changes-in-aspose-pdf-for-java-9-3-0/

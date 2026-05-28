@@ -1,5 +1,6 @@
 ---
 title: Create RadioButton Field
+linktitle: Create RadioButton Field
 type: docs
 weight: 40
 url: /java/create-radiobutton-field/

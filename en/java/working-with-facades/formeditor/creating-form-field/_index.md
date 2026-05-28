@@ -1,5 +1,6 @@
 ---
 title: Creating Form Field
+linktitle: Creating Form Field
 type: docs
 weight: 50
 url: /java/creating-form-field/

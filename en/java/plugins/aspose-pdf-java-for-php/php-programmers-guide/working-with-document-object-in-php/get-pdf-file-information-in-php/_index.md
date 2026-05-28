@@ -1,5 +1,6 @@
 ---
 title: Get PDF File Information in PHP
+linktitle: Get PDF File Information in PHP
 type: docs
 weight: 40
 url: /java/get-pdf-file-information-in-php/

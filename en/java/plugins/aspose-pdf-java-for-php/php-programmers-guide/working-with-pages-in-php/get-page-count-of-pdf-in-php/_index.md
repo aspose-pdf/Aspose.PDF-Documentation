@@ -1,5 +1,6 @@
 ---
 title: Get Page Count of PDF in PHP
+linktitle: Get Page Count of PDF in PHP
 type: docs
 weight: 40
 url: /java/get-page-count-of-pdf-in-php/

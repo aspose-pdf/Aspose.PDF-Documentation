@@ -1,5 +1,6 @@
 ---
 title: Add Free Text Annotation
+linktitle: Add Free Text Annotation
 type: docs
 weight: 20
 url: /java/add-free-text-annotation/

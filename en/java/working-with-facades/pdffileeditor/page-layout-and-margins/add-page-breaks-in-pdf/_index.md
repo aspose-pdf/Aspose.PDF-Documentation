@@ -1,5 +1,6 @@
 ---
 title: Add Page Breaks in PDF
+linktitle: Add Page Breaks in PDF
 type: docs
 weight: 20
 url: /java/add-page-breaks-in-pdf/

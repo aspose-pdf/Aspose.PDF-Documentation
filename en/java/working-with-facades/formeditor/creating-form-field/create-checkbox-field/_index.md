@@ -1,5 +1,6 @@
 ---
 title: Create CheckBox Field
+linktitle: Create CheckBox Field
 type: docs
 weight: 10
 url: /java/create-checkbox-field/

@@ -1,5 +1,6 @@
 ---
 title: Get Page Offset
+linktitle: Get Page Offset
 type: docs
 weight: 20
 url: /java/get-page-offset/

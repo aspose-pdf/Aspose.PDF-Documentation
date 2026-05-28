@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF Java for Ruby
+linktitle: Aspose.PDF Java for Ruby
 type: docs
 weight: 20
 url: /java/aspose-pdf-java-for-ruby/

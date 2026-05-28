@@ -1,5 +1,6 @@
 ---
 title: Change in methods name
+linktitle: Change in methods name
 type: docs
 weight: 10
 url: /java/change-in-methods-name/

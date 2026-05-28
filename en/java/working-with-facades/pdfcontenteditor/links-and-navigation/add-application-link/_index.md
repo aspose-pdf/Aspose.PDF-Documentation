@@ -1,5 +1,6 @@
 ---
 title: Add Application Link
+linktitle: Add Application Link
 type: docs
 weight: 10
 url: /java/add-application-link/

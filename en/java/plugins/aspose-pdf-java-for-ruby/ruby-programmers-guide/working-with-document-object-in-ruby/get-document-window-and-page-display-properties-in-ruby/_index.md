@@ -1,5 +1,6 @@
 ---
 title: Get Document Window and Page Display Properties in Ruby
+linktitle: Get Document Window and Page Display Properties in Ruby
 type: docs
 weight: 40
 url: /java/get-document-window-and-page-display-properties-in-ruby/

@@ -1,5 +1,6 @@
 ---
 title: Working with Document Conversion in Python
+linktitle: Working with Document Conversion in Python
 type: docs
 weight: 10
 url: /java/working-with-document-conversion-in-python/

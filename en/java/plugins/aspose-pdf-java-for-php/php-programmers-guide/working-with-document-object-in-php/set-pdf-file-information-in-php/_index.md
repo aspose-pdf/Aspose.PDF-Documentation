@@ -1,5 +1,6 @@
 ---
 title: Set PDF File Information in PHP
+linktitle: Set PDF File Information in PHP
 type: docs
 weight: 90
 url: /java/set-pdf-file-information-in-php/

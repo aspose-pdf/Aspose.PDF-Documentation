@@ -1,5 +1,6 @@
 ---
 title: Insert Pages into PDF
+linktitle: Insert Pages into PDF
 type: docs
 weight: 40
 url: /java/insert-pages-into-pdf/

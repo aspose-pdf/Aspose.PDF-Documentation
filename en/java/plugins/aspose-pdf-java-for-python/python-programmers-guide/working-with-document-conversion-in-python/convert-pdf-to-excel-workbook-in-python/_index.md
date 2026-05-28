@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to Excel Workbook in Python
+linktitle: Convert PDF to Excel Workbook in Python
 type: docs
 weight: 20
 url: /java/convert-pdf-to-excel-workbook-in-python/

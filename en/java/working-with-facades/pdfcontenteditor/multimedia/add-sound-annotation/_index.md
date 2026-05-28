@@ -1,5 +1,6 @@
 ---
 title: Add Sound Annotation
+linktitle: Add Sound Annotation
 type: docs
 weight: 20
 url: /java/add-sound-annotation/

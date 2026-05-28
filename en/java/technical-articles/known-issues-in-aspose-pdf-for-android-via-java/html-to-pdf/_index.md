@@ -1,5 +1,6 @@
 ---
 title: HTML to PDF
+linktitle: HTML to PDF
 type: docs
 weight: 10
 url: /java/html-to-pdf/

@@ -1,5 +1,6 @@
 ---
 title: Get Page Properties in Jython
+linktitle: Get Page Properties in Jython
 type: docs
 weight: 50
 url: /java/get-page-properties-in-jython/

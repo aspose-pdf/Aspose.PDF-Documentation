@@ -1,5 +1,6 @@
 ---
 title: Add Field Script
+linktitle: Add Field Script
 type: docs
 weight: 10
 url: /java/add-field-script/

@@ -1,5 +1,6 @@
 ---
 title: PdfViewer Class
+linktitle: PdfViewer Class
 type: docs
 weight: 135
 url: /java/pdfviewer-class/

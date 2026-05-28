@@ -1,5 +1,6 @@
 ---
 title: PdfContentEditor Class
+linktitle: PdfContentEditor Class
 type: docs
 weight: 30
 url: /java/pdfcontenteditor-class/

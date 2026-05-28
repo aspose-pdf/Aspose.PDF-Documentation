@@ -1,5 +1,6 @@
 ---
 title: PdfFileSecurity Class
+linktitle: PdfFileSecurity Class
 type: docs
 weight: 125
 url: /java/pdffilesecurity-class/

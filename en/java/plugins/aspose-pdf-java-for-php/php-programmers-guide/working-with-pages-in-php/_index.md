@@ -1,5 +1,6 @@
 ---
 title: Working with Pages in PHP
+linktitle: Working with Pages in PHP
 type: docs
 weight: 30
 url: /java/working-with-pages-in-php/

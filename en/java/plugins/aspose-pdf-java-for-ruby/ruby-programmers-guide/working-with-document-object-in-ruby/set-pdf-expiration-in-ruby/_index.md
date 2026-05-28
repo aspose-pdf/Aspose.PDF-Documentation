@@ -1,5 +1,6 @@
 ---
 title: Set PDF Expiration in Ruby
+linktitle: Set PDF Expiration in Ruby
 type: docs
 weight: 110
 url: /java/set-pdf-expiration-in-ruby/

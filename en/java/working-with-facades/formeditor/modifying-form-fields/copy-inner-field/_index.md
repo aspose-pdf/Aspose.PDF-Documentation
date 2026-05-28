@@ -1,5 +1,6 @@
 ---
 title: Copy Inner Field
+linktitle: Copy Inner Field
 type: docs
 weight: 20
 url: /java/copy-inner-field/

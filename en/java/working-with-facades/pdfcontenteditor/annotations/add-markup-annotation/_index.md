@@ -1,5 +1,6 @@
 ---
 title: Add Markup Annotation
+linktitle: Add Markup Annotation
 type: docs
 weight: 30
 url: /java/add-markup-annotation/

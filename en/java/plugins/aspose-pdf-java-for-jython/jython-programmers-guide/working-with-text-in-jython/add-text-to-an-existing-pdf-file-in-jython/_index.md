@@ -1,5 +1,6 @@
 ---
 title: Add Text to an existing PDF file in Jython
+linktitle: Add Text to an existing PDF file in Jython
 type: docs
 weight: 20
 url: /java/add-text-to-an-existing-pdf-file-in-jython/

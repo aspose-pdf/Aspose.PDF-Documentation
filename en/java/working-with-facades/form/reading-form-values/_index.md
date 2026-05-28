@@ -1,5 +1,6 @@
 ---
 title: Reading Form Values
+linktitle: Reading Form Values
 type: docs
 weight: 60
 url: /java/reading-form-values/

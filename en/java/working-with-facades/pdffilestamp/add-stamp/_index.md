@@ -1,5 +1,6 @@
 ---
 title: Add Stamp to PDF
+linktitle: Add Stamp to PDF
 type: docs
 weight: 40
 url: /java/add-stamp/

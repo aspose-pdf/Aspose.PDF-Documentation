@@ -1,5 +1,6 @@
 ---
 title: Import JSON Data
+linktitle: Import JSON Data
 type: docs
 weight: 30
 url: /java/import-json-data/

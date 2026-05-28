@@ -1,5 +1,6 @@
 ---
 title: Links and Navigation
+linktitle: Links and Navigation
 type: docs
 weight: 70
 url: /java/links-and-navigation-facades/

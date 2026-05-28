@@ -1,5 +1,6 @@
 ---
 title: Get a Particular Page in a PDF File in Ruby
+linktitle: Get a Particular Page in a PDF File in Ruby
 type: docs
 weight: 30
 url: /java/get-a-particular-page-in-a-pdf-file-in-ruby/

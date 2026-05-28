@@ -1,5 +1,6 @@
 ---
 title: Others
+linktitle: Others
 type: docs
 weight: 20
 url: /java/others/

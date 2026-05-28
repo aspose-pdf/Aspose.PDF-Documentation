@@ -1,5 +1,6 @@
 ---
 title: Single-Line Field to Multi-Line Field
+linktitle: Single-Line Field to Multi-Line Field
 type: docs
 weight: 80
 url: /java/single-to-multiple/

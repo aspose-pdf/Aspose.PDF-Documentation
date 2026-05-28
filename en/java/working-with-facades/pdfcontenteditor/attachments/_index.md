@@ -1,5 +1,6 @@
 ---
 title: Attachments
+linktitle: Attachments
 type: docs
 weight: 20
 url: /java/attachments-facades/

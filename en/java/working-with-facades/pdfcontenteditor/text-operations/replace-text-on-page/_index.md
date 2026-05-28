@@ -1,5 +1,6 @@
 ---
 title: Replace Text On Page
+linktitle: Replace Text On Page
 type: docs
 weight: 10
 url: /java/replace-text-on-page/

@@ -1,5 +1,6 @@
 ---
 title: Add PDF Document Link
+linktitle: Add PDF Document Link
 type: docs
 weight: 50
 url: /java/add-pdf-document-link/

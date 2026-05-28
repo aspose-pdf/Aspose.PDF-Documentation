@@ -1,5 +1,6 @@
 ---
 title: Stamp Class
+linktitle: Stamp Class
 type: docs
 weight: 150
 url: /java/stamp-class/

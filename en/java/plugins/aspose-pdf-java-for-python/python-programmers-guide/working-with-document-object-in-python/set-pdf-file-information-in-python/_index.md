@@ -1,5 +1,6 @@
 ---
 title: Set PDF File Information in Python
+linktitle: Set PDF File Information in Python
 type: docs
 weight: 90
 url: /java/set-pdf-file-information-in-python/

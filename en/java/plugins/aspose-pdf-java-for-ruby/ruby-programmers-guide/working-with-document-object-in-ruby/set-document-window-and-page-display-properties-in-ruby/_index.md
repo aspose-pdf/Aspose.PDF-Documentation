@@ -1,5 +1,6 @@
 ---
 title: Set Document Window and Page Display Properties in Ruby
+linktitle: Set Document Window and Page Display Properties in Ruby
 type: docs
 weight: 100
 url: /java/set-document-window-and-page-display-properties-in-ruby/

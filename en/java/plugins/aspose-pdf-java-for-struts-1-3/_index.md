@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF Java for Struts 1.3
+linktitle: Aspose.PDF Java for Struts 1.3
 type: docs
 weight: 10
 url: /java/aspose-pdf-java-for-struts-1-3/

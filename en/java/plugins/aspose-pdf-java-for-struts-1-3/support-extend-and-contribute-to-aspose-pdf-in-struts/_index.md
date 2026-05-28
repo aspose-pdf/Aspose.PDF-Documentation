@@ -1,5 +1,6 @@
 ---
 title: Support, Extend and Contribute to Aspose.Pdf in Struts
+linktitle: Support, Extend and Contribute to Aspose.Pdf in Struts
 type: docs
 weight: 20
 url: /java/support-extend-and-contribute-to-aspose-pdf-in-struts/

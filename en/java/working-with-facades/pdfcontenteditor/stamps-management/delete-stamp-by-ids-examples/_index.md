@@ -1,5 +1,6 @@
 ---
 title: Delete Stamp By ID
+linktitle: Delete Stamp By ID
 type: docs
 weight: 85
 url: /java/delete-stamp-by-ids-examples/

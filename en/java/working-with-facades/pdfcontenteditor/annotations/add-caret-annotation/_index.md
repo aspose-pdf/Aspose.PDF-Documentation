@@ -1,5 +1,6 @@
 ---
 title: Add Caret Annotation
+linktitle: Add Caret Annotation
 type: docs
 weight: 10
 url: /java/add-caret-annotation/

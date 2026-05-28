@@ -1,5 +1,6 @@
 ---
 title: Change Password of PDF File
+linktitle: Change Password of PDF File
 type: docs
 weight: 10
 url: /java/change-password/

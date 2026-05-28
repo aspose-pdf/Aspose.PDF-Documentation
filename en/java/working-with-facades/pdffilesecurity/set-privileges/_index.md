@@ -1,5 +1,6 @@
 ---
 title: Set Privileges on an Existing PDF File
+linktitle: Set Privileges on an Existing PDF File
 type: docs
 weight: 40
 url: /java/set-privileges/

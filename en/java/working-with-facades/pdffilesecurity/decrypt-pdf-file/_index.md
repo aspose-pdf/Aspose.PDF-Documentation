@@ -1,5 +1,6 @@
 ---
 title: Decrypt PDF File
+linktitle: Decrypt PDF File
 type: docs
 weight: 20
 url: /java/decrypt-pdf-file/

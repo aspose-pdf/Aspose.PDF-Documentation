@@ -1,5 +1,6 @@
 ---
 title: Adding JavaScript using DOM in Jython
+linktitle: Adding JavaScript using DOM in Jython
 type: docs
 weight: 10
 url: /java/adding-javascript-using-dom-in-jython/

@@ -1,5 +1,6 @@
 ---
 title: Import XML Data
+linktitle: Import XML Data
 type: docs
 weight: 40
 url: /java/import-xml-data/

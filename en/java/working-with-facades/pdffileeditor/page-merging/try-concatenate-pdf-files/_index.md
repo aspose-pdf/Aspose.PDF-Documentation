@@ -1,5 +1,6 @@
 ---
 title: Try Concatenate PDF Files
+linktitle: Try Concatenate PDF Files
 type: docs
 weight: 70
 url: /java/try-concatenate-pdf-files/

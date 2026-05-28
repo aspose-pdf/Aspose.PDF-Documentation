@@ -1,5 +1,6 @@
 ---
 title: Create Submit Button
+linktitle: Create Submit Button
 type: docs
 weight: 50
 url: /java/create-submit-button/

@@ -1,5 +1,6 @@
 ---
 title: Move Stamp By ID
+linktitle: Move Stamp By ID
 type: docs
 weight: 80
 url: /java/move-stamp-by-id-example/

@@ -1,5 +1,6 @@
 ---
 title: Replace Text With State
+linktitle: Replace Text With State
 type: docs
 weight: 50
 url: /java/replace-text-with-state/

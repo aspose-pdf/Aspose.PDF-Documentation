@@ -1,5 +1,6 @@
 ---
 title: Add Curve Annotation
+linktitle: Add Curve Annotation
 type: docs
 weight: 20
 url: /java/add-curve-annotation/

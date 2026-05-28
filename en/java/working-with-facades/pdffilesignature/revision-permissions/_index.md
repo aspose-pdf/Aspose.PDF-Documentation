@@ -1,5 +1,6 @@
 ---
 title: Revision and Permissions
+linktitle: Revision and Permissions
 type: docs
 weight: 40
 url: /java/revision-permissions/

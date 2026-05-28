@@ -1,5 +1,6 @@
 ---
 title: Export to FDF
+linktitle: Export to FDF
 type: docs
 weight: 10
 url: /java/export-to-fdf/

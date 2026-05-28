@@ -1,5 +1,6 @@
 ---
 title: Delete a Particular Page from the PDF File in Ruby
+linktitle: Delete a Particular Page from the PDF File in Ruby
 type: docs
 weight: 20
 url: /java/delete-a-particular-page-from-the-pdf-file-in-ruby/

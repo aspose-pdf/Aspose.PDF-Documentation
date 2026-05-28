@@ -1,5 +1,6 @@
 ---
 title: Working with Document Object in Python
+linktitle: Working with Document Object in Python
 type: docs
 weight: 20
 url: /java/working-with-document-object-in-python/

@@ -1,5 +1,6 @@
 ---
 title: Get XMP Metadata from PDF File in Jython
+linktitle: Get XMP Metadata from PDF File in Jython
 type: docs
 weight: 40
 url: /java/get-xmp-metadata-from-pdf-file-in-jython/

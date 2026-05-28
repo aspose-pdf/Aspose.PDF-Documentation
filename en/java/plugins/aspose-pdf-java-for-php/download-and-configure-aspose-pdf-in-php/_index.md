@@ -1,5 +1,6 @@
 ---
 title: Download and Configure Aspose.PDF in PHP
+linktitle: Download and Configure Aspose.PDF in PHP
 type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-php/

@@ -1,5 +1,6 @@
 ---
 title: Export to JSON
+linktitle: Export to JSON
 type: docs
 weight: 30
 url: /java/export-to-json/

@@ -1,5 +1,6 @@
 ---
 title: Get PDF Viewer Preferences
+linktitle: Get PDF Viewer Preferences
 type: docs
 weight: 20
 url: /java/get-viewer-preferences/

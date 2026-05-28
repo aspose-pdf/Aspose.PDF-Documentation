@@ -1,5 +1,6 @@
 ---
 title: Delete All Images from PDF
+linktitle: Delete All Images from PDF
 type: docs
 weight: 10
 url: /java/delete-all-images/

@@ -1,5 +1,6 @@
 ---
 title: Optimize PDF Document for the Web in Ruby
+linktitle: Optimize PDF Document for the Web in Ruby
 type: docs
 weight: 70
 url: /java/optimize-pdf-document-for-the-web-in-ruby/

@@ -1,5 +1,6 @@
 ---
 title: Working With Text in Jython
+linktitle: Working With Text in Jython
 type: docs
 weight: 40
 url: /java/working-with-text-in-jython/

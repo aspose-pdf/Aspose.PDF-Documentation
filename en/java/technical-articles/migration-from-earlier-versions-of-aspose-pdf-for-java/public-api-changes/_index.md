@@ -1,5 +1,6 @@
 ---
 title: Public API changes
+linktitle: Public API changes
 type: docs
 weight: 40
 url: /java/public-api-changes/

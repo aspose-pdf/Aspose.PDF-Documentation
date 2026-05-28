@@ -1,5 +1,6 @@
 ---
 title: Add Bookmark Action
+linktitle: Add Bookmark Action
 type: docs
 weight: 10
 url: /java/add-bookmark-action/

@@ -1,5 +1,6 @@
 ---
 title: Migration from earlier versions of Aspose.PDF for Java
+linktitle: Migration from earlier versions of Aspose.PDF for Java
 type: docs
 weight: 40
 url: /java/migration-from-earlier-versions-of-aspose-pdf-for-java/

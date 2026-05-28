@@ -1,5 +1,6 @@
 ---
 title: API Limitations
+linktitle: API Limitations
 type: docs
 weight: 10
 url: /java/api-limitations/

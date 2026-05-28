@@ -1,5 +1,6 @@
 ---
 title: Change PDF Viewer Preferences
+linktitle: Change PDF Viewer Preferences
 type: docs
 weight: 10
 url: /java/change-viewer-preferences/

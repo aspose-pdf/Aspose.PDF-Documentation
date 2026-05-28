@@ -1,5 +1,6 @@
 ---
 title: PdfFileStamp Class
+linktitle: PdfFileStamp Class
 type: docs
 weight: 155
 url: /java/pdffilestamp-class/

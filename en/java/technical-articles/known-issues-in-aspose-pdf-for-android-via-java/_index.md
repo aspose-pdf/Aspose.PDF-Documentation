@@ -1,5 +1,6 @@
 ---
 title: Known Issues in Aspose.PDF for Android via Java
+linktitle: Known Issues in Aspose.PDF for Android via Java
 type: docs
 weight: 20
 url: /java/known-issues-in-aspose-pdf-for-android-via-java/

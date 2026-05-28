@@ -1,5 +1,6 @@
 ---
 title: PdfFileEditor Class
+linktitle: PdfFileEditor Class
 type: docs
 weight: 10
 url: /java/pdffileeditor-class/

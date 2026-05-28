@@ -1,5 +1,6 @@
 ---
 title: FormEditor Class
+linktitle: FormEditor Class
 type: docs
 weight: 100
 url: /java/formeditor-class/

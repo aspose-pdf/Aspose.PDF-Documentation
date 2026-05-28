@@ -1,5 +1,6 @@
 ---
 title: Booklet and N-Up Layout
+linktitle: Booklet and N-Up Layout
 type: docs
 weight: 10
 url: /java/booklet-and-nup-layout/

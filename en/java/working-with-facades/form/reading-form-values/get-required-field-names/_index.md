@@ -1,5 +1,6 @@
 ---
 title: Get Required Field Names
+linktitle: Get Required Field Names
 type: docs
 weight: 30
 url: /java/get-required-field-names/

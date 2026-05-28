@@ -1,5 +1,6 @@
 ---
 title: Set Submit Url
+linktitle: Set Submit Url
 type: docs
 weight: 40
 url: /java/set-submit-url/

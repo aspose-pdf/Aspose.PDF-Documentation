@@ -1,5 +1,6 @@
 ---
 title: Working with Pages in Ruby
+linktitle: Working with Pages in Ruby
 type: docs
 weight: 20
 url: /java/working-with-pages-in-ruby/

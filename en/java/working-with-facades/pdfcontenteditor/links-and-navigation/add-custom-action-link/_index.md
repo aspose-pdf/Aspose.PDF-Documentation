@@ -1,5 +1,6 @@
 ---
 title: Add Custom Action Link
+linktitle: Add Custom Action Link
 type: docs
 weight: 20
 url: /java/add-custom-action-link/

@@ -1,5 +1,6 @@
 ---
 title: Extract Links
+linktitle: Extract Links
 type: docs
 weight: 70
 url: /java/extract-links/

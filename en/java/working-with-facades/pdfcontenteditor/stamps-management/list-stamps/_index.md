@@ -1,5 +1,6 @@
 ---
 title: List Stamps
+linktitle: List Stamps
 type: docs
 weight: 70
 url: /java/list-stamps/

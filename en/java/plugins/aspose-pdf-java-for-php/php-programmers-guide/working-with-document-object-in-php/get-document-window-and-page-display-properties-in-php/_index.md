@@ -1,5 +1,6 @@
 ---
 title: Get Document Window and Page Display Properties in PHP
+linktitle: Get Document Window and Page Display Properties in PHP
 type: docs
 weight: 30
 url: /java/get-document-window-and-page-display-properties-in-php/

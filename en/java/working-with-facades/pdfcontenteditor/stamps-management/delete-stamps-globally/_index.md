@@ -1,5 +1,6 @@
 ---
 title: Delete Stamps Globally
+linktitle: Delete Stamps Globally
 type: docs
 weight: 60
 url: /java/delete-stamps-globally/

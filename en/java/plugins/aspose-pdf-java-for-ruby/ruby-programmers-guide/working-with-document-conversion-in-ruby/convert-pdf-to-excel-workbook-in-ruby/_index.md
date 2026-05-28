@@ -1,5 +1,6 @@
 ---
 title: Convert PDF to Excel Workbook in Ruby
+linktitle: Convert PDF to Excel Workbook in Ruby
 type: docs
 weight: 40
 url: /java/convert-pdf-to-excel-workbook-in-ruby/

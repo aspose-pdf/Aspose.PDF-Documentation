@@ -1,5 +1,6 @@
 ---
 title: Signature Integrity Checks
+linktitle: Signature Integrity Checks
 type: docs
 weight: 70
 url: /java/signature-integrity-checks/

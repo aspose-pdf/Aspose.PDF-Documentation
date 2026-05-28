@@ -1,5 +1,6 @@
 ---
 title: Update Page Dimensions in Jython
+linktitle: Update Page Dimensions in Jython
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-jython/

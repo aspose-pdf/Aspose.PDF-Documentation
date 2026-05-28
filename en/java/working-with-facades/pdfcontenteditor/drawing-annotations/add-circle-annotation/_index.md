@@ -1,5 +1,6 @@
 ---
 title: Add Circle Annotation
+linktitle: Add Circle Annotation
 type: docs
 weight: 10
 url: /java/add-circle-annotation/

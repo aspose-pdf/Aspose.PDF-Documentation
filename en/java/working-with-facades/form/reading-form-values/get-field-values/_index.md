@@ -1,5 +1,6 @@
 ---
 title: Get Field Values
+linktitle: Get Field Values
 type: docs
 weight: 50
 url: /java/get-field-values/

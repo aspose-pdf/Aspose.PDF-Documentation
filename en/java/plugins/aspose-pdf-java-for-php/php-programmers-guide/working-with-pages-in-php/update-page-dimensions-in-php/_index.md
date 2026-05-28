@@ -1,5 +1,6 @@
 ---
 title: Update Page Dimensions in PHP
+linktitle: Update Page Dimensions in PHP
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-php/

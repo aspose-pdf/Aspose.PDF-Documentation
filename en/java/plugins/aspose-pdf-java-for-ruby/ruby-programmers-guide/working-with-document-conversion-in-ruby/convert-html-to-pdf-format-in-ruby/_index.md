@@ -1,5 +1,6 @@
 ---
 title: Convert HTML to PDF Format in Ruby
+linktitle: Convert HTML to PDF Format in Ruby
 type: docs
 weight: 10
 url: /java/convert-html-to-pdf-format-in-ruby/

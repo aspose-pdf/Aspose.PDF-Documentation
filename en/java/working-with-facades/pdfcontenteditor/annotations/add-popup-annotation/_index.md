@@ -1,5 +1,6 @@
 ---
 title: Add Popup Annotation
+linktitle: Add Popup Annotation
 type: docs
 weight: 40
 url: /java/add-popup-annotation/

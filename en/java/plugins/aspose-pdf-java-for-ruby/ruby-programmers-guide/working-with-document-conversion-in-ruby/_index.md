@@ -1,5 +1,6 @@
 ---
 title: Working with Document Conversion in Ruby
+linktitle: Working with Document Conversion in Ruby
 type: docs
 weight: 40
 url: /java/working-with-document-conversion-in-ruby/

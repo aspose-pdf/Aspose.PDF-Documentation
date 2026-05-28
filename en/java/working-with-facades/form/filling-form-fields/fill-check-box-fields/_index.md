@@ -1,5 +1,6 @@
 ---
 title: Fill Check Box Fields
+linktitle: Fill Check Box Fields
 type: docs
 weight: 20
 url: /java/fill-check-box-fields/

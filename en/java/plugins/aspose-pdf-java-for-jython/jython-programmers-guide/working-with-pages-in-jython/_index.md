@@ -1,5 +1,6 @@
 ---
 title: Working With Pages in Jython
+linktitle: Working With Pages in Jython
 type: docs
 weight: 30
 url: /java/working-with-pages-in-jython/

@@ -1,5 +1,6 @@
 ---
 title: Add Attachment
+linktitle: Add Attachment
 type: docs
 weight: 10
 url: /java/add-attachment/

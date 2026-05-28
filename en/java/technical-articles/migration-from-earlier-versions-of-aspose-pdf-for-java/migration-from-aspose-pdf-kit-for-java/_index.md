@@ -1,5 +1,6 @@
 ---
 title: Migration from Aspose.Pdf.Kit for Java
+linktitle: Migration from Aspose.Pdf.Kit for Java
 type: docs
 weight: 30
 url: /java/migration-from-aspose-pdf-kit-for-java/

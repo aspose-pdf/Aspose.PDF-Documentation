@@ -1,5 +1,6 @@
 ---
 title: Annotations
+linktitle: Annotations
 type: docs
 weight: 10
 url: /java/annotations-facades/

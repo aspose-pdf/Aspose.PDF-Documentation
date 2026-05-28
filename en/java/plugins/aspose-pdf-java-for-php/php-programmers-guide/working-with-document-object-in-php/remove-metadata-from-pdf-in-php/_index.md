@@ -1,5 +1,6 @@
 ---
 title: Remove Metadata from PDF in PHP
+linktitle: Remove Metadata from PDF in PHP
 type: docs
 weight: 70
 url: /java/remove-metadata-from-pdf-in-php/
