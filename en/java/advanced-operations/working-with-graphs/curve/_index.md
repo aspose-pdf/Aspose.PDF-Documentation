@@ -17,6 +17,10 @@ Curves in Aspose.PDF for Java are defined by a float coordinate array passed to 
 
 ## Add a curve outline
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a curve outline.
+3. Save the result to apply the change.
+
 ```java
 public static void addCurve(Path outputFile) {
     try (Document document = new Document()) {

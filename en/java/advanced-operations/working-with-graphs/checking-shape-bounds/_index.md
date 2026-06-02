@@ -15,6 +15,12 @@ Abstract: This article shows how to validate shape bounds in Graph collections u
 ---
 Use `BoundsCheckMode` when you need to ensure that shapes fit inside a graph container.
 
+## Validate graph shape bounds
+
+1. Create the PDF document, add a page, and place a `Graph` container on the page.
+2. Enable strict bounds checking and try to add the shape to the graph collection.
+3. Handle the exception if the shape does not fit, then save the document.
+
 ```java
 public static void checkShapeBounds(Path outputFile) {
     try (Document document = new Document()) {

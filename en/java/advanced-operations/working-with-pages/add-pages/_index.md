@@ -15,6 +15,10 @@ Abstract: This article explains how to add pages to PDF files using Aspose.PDF f
 ---
 ## Insert an empty page
 
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to insert an empty page.
+3. Save the document or inspect the result, depending on the scenario.
+
 ```java
 public static void insertEmptyPage(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -29,6 +33,10 @@ public static void insertEmptyPage(Path inputFile, Path outputFile) {
 `addEmptyPageToEnd` uses `document.getPages().add()` and then saves the updated PDF.
 
 ## Add a page from another document
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a page from another document.
+3. Save the result to apply the change.
 
 ```java
 public static void addPageFromAnotherDocument(Path inputFile, Path outputFile) {

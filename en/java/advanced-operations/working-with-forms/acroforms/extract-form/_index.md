@@ -15,6 +15,12 @@ Abstract: This article shows how to extract data from AcroForm fields using Aspo
 ---
 Use the `Form` facade when you need a simple field-name to field-value extraction flow.
 
+## Extract values from all AcroForm fields
+
+1. Open the PDF form document with the `Form` facade.
+2. Iterate through the field names and read each current field value into a map.
+3. Review or export the collected values for downstream processing.
+
 ```java
 public static Map<String, String> getValuesFromAllFields(Path inputFile) {
     Form form = new Form(inputFile.toString());

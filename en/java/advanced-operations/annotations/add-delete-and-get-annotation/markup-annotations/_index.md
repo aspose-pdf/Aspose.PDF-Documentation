@@ -15,6 +15,10 @@ Abstract: This article explains how to create, inspect, and remove text markup a
 ---
 ## Add highlight, underline, squiggly, or strikeout annotations
 
+1. Open the input PDF and select the page area where the markup annotation should appear.
+2. Create the required annotation type and configure its metadata or visual properties.
+3. Add the annotation to the page collection and save the document.
+
 ```java
 public static void addTextHighlightAnnotation(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

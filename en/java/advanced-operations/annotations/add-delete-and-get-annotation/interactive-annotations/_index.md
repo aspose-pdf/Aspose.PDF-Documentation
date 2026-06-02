@@ -15,6 +15,10 @@ Abstract: This article explains how to work with interactive link annotations in
 ---
 ## Add a link annotation
 
+1. Load the source PDF document and search the first page for the target text.
+2. Use the matched text rectangle to create a `LinkAnnotation` and assign the destination URI.
+3. Add the annotation to the page and save the updated PDF.
+
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

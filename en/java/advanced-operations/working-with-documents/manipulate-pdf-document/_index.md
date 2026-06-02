@@ -19,6 +19,10 @@ Aspose.PDF for Java includes document-structure operations that go beyond simple
 
 The example class validates documents against both PDF/A-1a and PDF/A-1b:
 
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to validate PDF/A compliance.
+3. Save the document or inspect the result, depending on the scenario.
+
 ```java
 public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -28,6 +32,10 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 ```
 
 ## Add a table of contents
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a table of contents.
+3. Save the result to apply the change.
 
 ```java
 public static void addTableOfContents(Path inputFile, Path outputFile) {
@@ -55,6 +63,10 @@ The related examples also show how to:
 `setPdfExpiryDate` attaches a `JavascriptAction` to the document open event so the viewer can warn when the file is considered expired.
 
 ## Flatten a fillable PDF
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to flatten a fillable PDF.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void flattenFillablePdf(Path inputFile, Path outputFile) {

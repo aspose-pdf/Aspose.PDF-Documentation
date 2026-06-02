@@ -13,6 +13,12 @@ TechArticle: true
 AlternativeHeadline: Work with watermark annotations in PDF files using Java.
 Abstract: This article explains how to create, inspect, and remove watermark annotations in PDF documents using Aspose.PDF for Java. It covers adding a text watermark annotation with custom text state and opacity, reading existing watermark annotation areas, and deleting watermark annotations.
 ---
+## Add a watermark annotation
+
+1. Open the input PDF and define the rectangle where the watermark annotation will be placed.
+2. Create the `WatermarkAnnotation`, add it to the page, and configure the watermark text state and opacity.
+3. Apply the watermark text lines and save the modified PDF.
+
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

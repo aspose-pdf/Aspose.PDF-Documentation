@@ -15,6 +15,10 @@ Abstract: This article demonstrates how to read and modify PDF page dimensions u
 ---
 ## Set a page size
 
+1. Load the PDF document or object that will be updated.
+2. Apply the settings shown in the example to set a page size.
+3. Save the document if the change should persist.
+
 ```java
 public static void setPageSize(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

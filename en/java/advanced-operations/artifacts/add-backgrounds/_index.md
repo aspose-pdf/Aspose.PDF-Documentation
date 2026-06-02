@@ -15,6 +15,10 @@ Abstract: This article explains how to add or remove PDF page backgrounds in Jav
 ---
 ## Add a background image to a PDF page
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a background image to a PDF page.
+3. Save the result to apply the change.
+
 ```java
 public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path outputFile) throws Exception {
     try (Document document = new Document(inputFile.toString());
@@ -28,6 +32,10 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 ```
 
 ## Add a background image with opacity
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a background image with opacity.
+3. Save the result to apply the change.
 
 ```java
 public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path imageFile, Path outputFile)

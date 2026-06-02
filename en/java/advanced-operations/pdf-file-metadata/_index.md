@@ -22,6 +22,10 @@ Aspose.PDF for Java provides two main ways to work with metadata:
 
 Use `DocumentInfo` when you need standard document properties such as author, title, subject, and dates:
 
+1. Open the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown here to read document information with the DOM API.
+3. Read the returned values or continue with your next processing step.
+
 ```java
 public static void getPdfFileInformation(Path inputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -40,6 +44,10 @@ public static void getPdfFileInformation(Path inputFile) {
 ## Update document information
 
 The `setFileInformation` example updates standard info fields and saves the modified PDF:
+
+1. Load the PDF document and locate the object that will be changed.
+2. Apply the Aspose.PDF calls shown in the example to update document information.
+3. Save the document to keep the updated values.
 
 ```java
 public static void setFileInformation(Path inputFile, Path outputFile) {
@@ -65,6 +73,10 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 
 The metadata collection also supports namespaced XMP entries:
 
+1. Load the PDF document or object that will be updated.
+2. Apply the settings shown in the example to set XMP metadata and custom namespace prefixes.
+3. Save the document if the change should persist.
+
 ```java
 public static void setPrefixMetadata(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -87,6 +99,10 @@ The related `setXmpMetadata` example adds fields such as `xmp:CreateDate`, `xmp:
 - Read metadata and encryption state with `getPdfMetadata`.
 
 For example, `getPdfMetadata` reads standard fields and checks whether the file is encrypted or a portfolio:
+
+1. Open the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown here to inspect PDF version, privileges, page metrics, and metadata with PdfFileInfo.
+3. Review the collected values or continue with your next processing step.
 
 ```java
 public static void getPdfMetadata(Path inputFile) {

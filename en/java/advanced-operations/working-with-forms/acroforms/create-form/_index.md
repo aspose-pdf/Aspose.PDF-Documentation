@@ -17,6 +17,10 @@ Aspose.PDF for Java lets you create a wide range of AcroForm field types from sc
 
 ## Add a text box field
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a text box field.
+3. Save the result to apply the change.
+
 ```java
 public static void addTextBoxField(Path outputFile) {
     try (Document document = new Document()) {

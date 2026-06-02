@@ -14,6 +14,10 @@ Use either the page image collection or placement-based search depending on how 
 
 ## Replace an image by resource index
 
+1. Open the source PDF document and locate the content to update.
+2. Use the Aspose.PDF objects shown in the example to replace an image by resource index.
+3. Save the document to persist the replacement.
+
 ```java
 public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
     try (Document document = new Document(inputFile.toString());
@@ -25,6 +29,10 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 ```
 
 ## Replace an image using `ImagePlacementAbsorber`
+
+1. Open the source PDF document and locate the content to update.
+2. Use the Aspose.PDF objects shown in the example to replace an image using `ImagePlacementAbsorber`.
+3. Save the document to persist the replacement.
 
 ```java
 public static void replaceImageWithAbsorber(Path inputFile, Path imageFile, Path outputFile) throws Exception {

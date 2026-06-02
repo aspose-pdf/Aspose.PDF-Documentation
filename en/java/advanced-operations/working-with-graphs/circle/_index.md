@@ -15,6 +15,10 @@ Abstract: This article shows how to add circle shapes to PDF documents using Asp
 ---
 ## Add a circle outline
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a circle outline.
+3. Save the result to apply the change.
+
 ```java
 public static void addCircle(Path outputFile) {
     try (Document document = new Document()) {
@@ -33,6 +37,10 @@ public static void addCircle(Path outputFile) {
 ```
 
 ## Add a filled circle with text
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a filled circle with text.
+3. Save the result to apply the change.
 
 ```java
 public static void addCircleFilled(Path outputFile) {

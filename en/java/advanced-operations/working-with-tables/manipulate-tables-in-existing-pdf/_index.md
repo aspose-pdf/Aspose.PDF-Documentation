@@ -15,6 +15,10 @@ Abstract: This article explains how to manipulate tables already present in PDF 
 ---
 ## Replace text inside a detected table cell
 
+1. Open the source PDF document and locate the content to update.
+2. Use the Aspose.PDF objects shown in the example to replace text inside a detected table cell.
+3. Save the document to persist the replacement.
+
 ```java
 public static void replaceCells(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -31,6 +35,10 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 The full example also validates that a table exists and that the target cell contains text fragments before updating the value.
 
 ## Replace a whole table
+
+1. Open the source PDF document and locate the content to update.
+2. Use the Aspose.PDF objects shown in the example to replace a whole table.
+3. Save the document to persist the replacement.
 
 ```java
 public static void replaceTable(Path inputFile, Path outputFile) {

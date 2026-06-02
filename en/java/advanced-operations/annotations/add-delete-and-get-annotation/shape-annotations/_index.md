@@ -15,6 +15,10 @@ Abstract: This article explains how to create, inspect, and remove geometric ann
 ---
 ## Add shape annotations
 
+1. Open the input PDF and choose the page and rectangle that will contain the shape annotation.
+2. Create the required shape annotation, then set its title, colors, opacity, and points when needed.
+3. Add the annotation to the page and save the modified PDF.
+
 ```java
 public static void squareAnnotationAdd(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

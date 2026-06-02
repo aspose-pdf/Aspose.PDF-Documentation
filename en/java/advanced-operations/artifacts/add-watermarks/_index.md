@@ -15,6 +15,10 @@ Abstract: This article explains how to add, inspect, and remove watermark artifa
 ---
 ## Add a watermark artifact
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a watermark artifact.
+3. Save the result to apply the change.
+
 ```java
 public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

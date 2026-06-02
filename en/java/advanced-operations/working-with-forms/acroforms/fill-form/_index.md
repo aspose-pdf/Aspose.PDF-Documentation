@@ -15,6 +15,12 @@ Abstract: This article explains how to fill AcroForm fields using Aspose.PDF for
 ---
 The `Form` facade can be used to automate field population in an existing AcroForm.
 
+## Fill AcroForm fields with new values
+
+1. Open the source PDF form document and prepare the field values you want to apply.
+2. Iterate through the form fields and update the matching entries with the provided values.
+3. Save the completed PDF form to the output path.
+
 ```java
 public static void fillForm(Path inputFile, Path outputFile) {
     Map<String, String> newFieldValues = Map.of(

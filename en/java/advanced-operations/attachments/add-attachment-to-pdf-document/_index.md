@@ -19,6 +19,10 @@ To attach a file to a PDF, load the source document, create a `FileSpecification
 
 The following example is based on `AttachmentsAddExamples.addAttachments`:
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add an attachment to a PDF.
+3. Save the result to apply the change.
+
 ```java
 public static void addAttachments(Path inputFile, Path attachmentPath, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

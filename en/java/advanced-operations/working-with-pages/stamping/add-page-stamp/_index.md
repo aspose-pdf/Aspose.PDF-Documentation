@@ -13,6 +13,12 @@ TechArticle: true
 AlternativeHeadline: Add page-based stamps to PDF files with Java
 Abstract: This article explains how to add a page stamp to a PDF document using Aspose.PDF for Java. The example loads another PDF page as a stamp, configures it as a background, and applies it to a target page.
 ---
+## Add a PDF page as a stamp
+
+1. Open the target PDF document and load the PDF page that will be used as the stamp source.
+2. Create the `PdfPageStamp`, configure its placement options, and add it to the target page.
+3. Save the stamped PDF document.
+
 ```java
 public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

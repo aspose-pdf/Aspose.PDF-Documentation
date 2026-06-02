@@ -15,6 +15,10 @@ Abstract: This article shows how to add line shapes to PDF documents using Aspos
 ---
 ## Add a dashed line
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a dashed line.
+3. Save the result to apply the change.
+
 ```java
 public static void addLine(Path outputFile) {
     try (Document document = new Document()) {
@@ -37,6 +41,10 @@ public static void addLine(Path outputFile) {
 `addDottedDashedLine` uses the same coordinates and dash settings, but also applies `Color.getRed()`.
 
 ## Draw lines across the page
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to draw lines across the page.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void drawLineAcrossPage(Path outputFile) {

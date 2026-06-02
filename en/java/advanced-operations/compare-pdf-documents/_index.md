@@ -19,6 +19,10 @@ Aspose.PDF for Java provides both side-by-side and graphical comparison APIs for
 
 Use `GraphicalPdfComparer.getDifference` when you need image-based output for a specific page pair:
 
+1. Open the input PDF documents used in this example.
+2. Run the comparison calls shown in the snippet to compare two pages and export difference images.
+3. Save or inspect the generated comparison output.
+
 ```java
 public static void comparePdfWithGetDifferenceMethod(
         Path inputFile1, Path inputFile2, Path diffOutputFile, Path destinationOutputFile) throws Exception {
@@ -43,6 +47,10 @@ This method creates a highlighted difference image and also saves the destinatio
 
 If you need a PDF report for selected pages, use `SideBySidePdfComparer.compare` with page objects:
 
+1. Open the input PDF documents used in this example.
+2. Run the comparison calls shown in the snippet to compare specific pages side by side.
+3. Save or inspect the generated comparison output.
+
 ```java
 public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path outputFile) {
     try (Document document1 = new Document(inputFile1.toString());
@@ -64,6 +72,10 @@ public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path
 
 The graphical comparer can generate a PDF output that highlights differences across the documents:
 
+1. Open the input PDF documents used in this example.
+2. Run the comparison calls shown in the snippet to compare two documents graphically and save a PDF.
+3. Save or inspect the generated comparison output.
+
 ```java
 public static void comparePdfWithCompareDocumentsToPdfMethod(
         Path inputFile1, Path inputFile2, Path outputFile) {
@@ -81,6 +93,10 @@ public static void comparePdfWithCompareDocumentsToPdfMethod(
 ## Compare entire documents side by side
 
 To compare all pages with side-by-side markup, pass complete `Document` objects:
+
+1. Open the input PDF documents used in this example.
+2. Run the comparison calls shown in the snippet to compare entire documents side by side.
+3. Save or inspect the generated comparison output.
 
 ```java
 public static void comparingEntireDocuments(Path inputFile1, Path inputFile2, Path outputFile) {

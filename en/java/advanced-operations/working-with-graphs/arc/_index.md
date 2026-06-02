@@ -17,6 +17,10 @@ Aspose.PDF for Java uses `Graph` together with shape objects such as `Arc` and `
 
 ## Add arc outlines
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add arc outlines.
+3. Save the result to apply the change.
+
 ```java
 public static void addArc(Path outputFile) {
     try (Document document = new Document()) {
@@ -37,6 +41,10 @@ public static void addArc(Path outputFile) {
 The full example adds three arcs with different radii, angles, and colors to the same graph.
 
 ## Add a filled arc segment
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a filled arc segment.
+3. Save the result to apply the change.
 
 ```java
 public static void addArcFilled(Path outputFile) {

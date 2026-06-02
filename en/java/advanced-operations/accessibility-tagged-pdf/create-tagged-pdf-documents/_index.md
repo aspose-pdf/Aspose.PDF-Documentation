@@ -16,6 +16,10 @@ Creating a tagged PDF means adding structure elements that make the document eas
 
 This example creates a tagged PDF with a header and a paragraph.
 
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create a simple tagged PDF.
+3. Save the output document or generated file.
+
 ```java
 public static void createTaggedPdfDocumentSimple(Path outputFile) {
     try (Document document = new Document()) {
@@ -43,6 +47,10 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 ## Create an advanced tagged PDF
 
 The advanced example builds a heading plus a paragraph that mixes spans and a quote element.
+
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create an advanced tagged PDF.
+3. Save the output document or generated file.
 
 ```java
 public static void createTaggedPdfDocumentAdv(Path outputFile) {

@@ -17,6 +17,10 @@ Aspose.PDF for Java supports several merge strategies depending on how the outpu
 
 ## Merge two PDF documents
 
+1. Open the input PDF documents used in this example.
+2. Use the Aspose.PDF calls shown in the snippet to merge two PDF documents.
+3. Save the merged output document.
+
 ```java
 public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {
     try (Document document1 = new Document(inputFile1.toString());

@@ -17,6 +17,10 @@ Aspose.PDF for Java lets you assign actions to buttons, documents, and pages to 
 
 ## Add a print button with a named action
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a print button with a named action.
+3. Save the result to apply the change.
+
 ```java
 public static void addNamedActionPrint(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -48,6 +52,10 @@ The example source also includes `addNamedActionHide`, which gathers checkbox wi
 `addNavigationButtons` creates buttons for first, previous, next, and last page navigation by assigning `NamedAction` values such as `PredefinedAction.FirstPage` and `PredefinedAction.NextPage`.
 
 ## Add a submit action
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a submit action.
+3. Save the result to apply the change.
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {

@@ -15,6 +15,10 @@ Abstract: This article explains how to remove tables from existing PDF documents
 ---
 ## Remove one table
 
+1. Load the PDF document and locate the target content.
+2. Use the Aspose.PDF objects shown in the example to remove one table.
+3. Save the document after the content is removed.
+
 ```java
 public static void removeOneTable(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -27,6 +31,10 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 ```
 
 ## Remove all tables
+
+1. Load the PDF document and locate the target content.
+2. Use the Aspose.PDF objects shown in the example to remove all tables.
+3. Save the document after the content is removed.
 
 ```java
 public static void removeAllTables(Path inputFile, Path outputFile) {

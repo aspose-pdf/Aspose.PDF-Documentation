@@ -12,6 +12,12 @@ Abstract: This article shows how to delete images from PDF documents using Aspos
 ---
 Use the page image resource collection when you need to remove embedded images from a PDF page.
 
+## Delete an embedded image by index
+
+1. Open the source PDF document and select the page that contains the image resource.
+2. Delete the target image from the page resource collection by its index.
+3. Save the updated PDF document after the image is removed.
+
 ```java
 public static void deleteImage(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

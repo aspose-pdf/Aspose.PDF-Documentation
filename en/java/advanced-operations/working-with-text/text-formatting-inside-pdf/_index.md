@@ -17,6 +17,10 @@ Aspose.PDF for Java provides formatting features at the text state, paragraph, a
 
 ## Specify line spacing
 
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to specify line spacing.
+3. Save the document or inspect the result, depending on the scenario.
+
 ```java
 public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exception {
     try (Document document = new Document()) {

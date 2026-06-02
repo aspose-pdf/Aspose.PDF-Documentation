@@ -17,6 +17,10 @@ Aspose.PDF for Java exposes vector content through `GraphicsAbsorber` and `Graph
 
 ## Inspect vector graphics on a page
 
+1. Open the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown here to inspect vector graphics on a page.
+3. Review the collected values or continue with your next processing step.
+
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -38,6 +42,10 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 ```
 
 ## Move vector graphics
+
+1. Open the PDF document and locate the target page or content.
+2. Apply the Aspose.PDF operations shown in the example to move vector graphics.
+3. Save the document to preserve the change.
 
 ```java
 public static void moveGraphics(Path inputFile, Path outputFile) {

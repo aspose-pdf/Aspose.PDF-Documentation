@@ -19,6 +19,10 @@ Aspose.PDF for Java provides both simple replacement and layout-aware replacemen
 
 ## Replace text on all pages
 
+1. Open the source PDF document and locate the content to update.
+2. Use the Aspose.PDF objects shown in the example to replace text on all pages.
+3. Save the document to persist the replacement.
+
 ```java
 public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

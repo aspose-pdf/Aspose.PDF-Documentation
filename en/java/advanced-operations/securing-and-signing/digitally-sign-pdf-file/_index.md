@@ -17,6 +17,10 @@ Aspose.PDF for Java supports multiple signing flows through `PdfFileSignature`.
 
 ## Sign a PDF with a certificate object
 
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to sign a PDF with a certificate object.
+3. Save the document or inspect the result, depending on the scenario.
+
 ```java
 public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
     PdfFileSignature pdfSignature = new PdfFileSignature();
@@ -33,6 +37,10 @@ public static void signPdfWithCertificateObject(Path inputFile, Path certificate
 This approach builds a `PKCS7` signature object first and then applies it to page 1.
 
 ## Sign a PDF with basic certificate parameters
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to sign a PDF with basic certificate parameters.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void signPdfWithBasicParameters(Path inputFile, Path certificateFile, Path outputFile) {
@@ -51,6 +59,10 @@ public static void signPdfWithBasicParameters(Path inputFile, Path certificateFi
 ## Certify a PDF with DocMDP
 
 Use a document modification detection and prevention signature when you need certification-level restrictions:
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to certify a PDF with DocMDP.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {

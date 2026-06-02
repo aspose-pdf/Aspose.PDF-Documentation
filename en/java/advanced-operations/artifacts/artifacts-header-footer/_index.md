@@ -15,6 +15,10 @@ Abstract: This article explains how to manage header and footer artifacts in PDF
 ---
 ## Create reusable header and footer artifacts
 
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create reusable header and footer artifacts.
+3. Save the output document or generated file.
+
 ```java
 public static HeaderArtifact createHeaderArtifact(String text) {
     HeaderArtifact artifact = new HeaderArtifact();

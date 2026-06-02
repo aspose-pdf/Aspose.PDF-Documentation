@@ -17,6 +17,10 @@ Aspose.PDF for Java supports both facade-based and DOM-based submit button creat
 
 ## Add a submit button with FormEditor
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a submit button with FormEditor.
+3. Save the result to apply the change.
+
 ```java
 public static void addSubmitButton(Path inputFile, Path outputFile) {
     FormEditor editor = new FormEditor();
@@ -32,6 +36,10 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 ```
 
 ## Add a submit action manually
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a submit action manually.
+3. Save the result to apply the change.
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {

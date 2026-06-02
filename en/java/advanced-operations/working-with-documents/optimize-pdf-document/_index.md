@@ -17,6 +17,10 @@ Aspose.PDF for Java exposes optimization features through `Document.optimize`, `
 
 ## Optimize a PDF and reduce resources
 
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to optimize a PDF and reduce resources.
+3. Save the document or inspect the result, depending on the scenario.
+
 ```java
 public static void optimizePdf(Path inputFile, Path outputFile) throws Exception {
     try (Document document = new Document(inputFile.toString())) {
@@ -29,6 +33,10 @@ public static void optimizePdf(Path inputFile, Path outputFile) throws Exception
 `reduceSizePdf` uses `document.optimizeResources()` for a simpler resource-reduction pass.
 
 ## Compress images and remove unused data
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to compress images and remove unused data.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void shrinkingOrCompressingAllImages(Path inputFile, Path outputFile) throws Exception {

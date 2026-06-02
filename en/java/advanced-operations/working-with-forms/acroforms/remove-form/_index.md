@@ -17,6 +17,10 @@ These examples remove form resources from a page rather than just changing field
 
 ## Remove all forms from a page
 
+1. Load the PDF document and locate the target content.
+2. Use the Aspose.PDF objects shown in the example to remove all forms from a page.
+3. Save the document after the content is removed.
+
 ```java
 public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -28,6 +32,10 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 ```
 
 ## Remove specific form resources
+
+1. Load the PDF document and locate the target content.
+2. Use the Aspose.PDF objects shown in the example to remove specific form resources.
+3. Save the document after the content is removed.
 
 ```java
 public static void removeSpecifiedForm(Path inputFile, int pageNum, Path outputFile) {

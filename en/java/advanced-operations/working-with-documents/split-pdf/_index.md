@@ -17,6 +17,10 @@ Aspose.PDF for Java supports several splitting patterns beyond one-page-per-file
 
 ## Split a PDF into single-page files
 
+1. Open the source PDF document used in this example.
+2. Configure the page ranges or output pattern required to split a PDF into single-page files.
+3. Save each generated output file.
+
 ```java
 public static void splitDocuments(Path inputFile, Path outputDir) {
     try (Document document = new Document(inputFile.toString())) {

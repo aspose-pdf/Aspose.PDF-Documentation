@@ -15,6 +15,10 @@ Abstract: This article explains how to create and remove Bates numbering artifac
 ---
 ## Create a Bates numbering artifact
 
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create a Bates numbering artifact.
+3. Save the output document or generated file.
+
 ```java
 public static BatesNArtifact createBatesArtifact() {
     BatesNArtifact artifact = new BatesNArtifact();
@@ -36,6 +40,10 @@ public static BatesNArtifact createBatesArtifact() {
 ```
 
 ## Add or remove Bates numbering
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add or remove Bates numbering.
+3. Save the result to apply the change.
 
 ```java
 public static void addBatesNArtifact(Path inputFile, Path outputFile) {

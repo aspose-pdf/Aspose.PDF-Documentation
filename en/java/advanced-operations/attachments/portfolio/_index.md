@@ -19,6 +19,10 @@ A PDF portfolio can bundle multiple files inside a single PDF container while pr
 
 The following example creates a new document, enables a collection, and adds several files as portfolio items:
 
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create a PDF portfolio.
+3. Save the output document or generated file.
+
 ```java
 public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
     try (Document document = new Document()) {
@@ -44,6 +48,10 @@ public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
 ## Remove files from a PDF portfolio
 
 To clear the collection items from an existing portfolio, use `Collection.delete()`:
+
+1. Load the PDF document and locate the target content.
+2. Use the Aspose.PDF objects shown in the example to remove files from a PDF portfolio.
+3. Save the document after the content is removed.
 
 ```java
 public static void removeFilesFromPdfPortfolio(Path inputFile, Path outputFile) {

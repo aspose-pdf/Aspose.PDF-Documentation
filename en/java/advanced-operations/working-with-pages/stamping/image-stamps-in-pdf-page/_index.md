@@ -15,6 +15,10 @@ Abstract: This article explains how to add image stamps to PDF files using Aspos
 ---
 ## Add an image stamp
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add an image stamp.
+3. Save the result to apply the change.
+
 ```java
 public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

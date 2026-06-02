@@ -14,6 +14,10 @@ Aspose.PDF for Java supports direct image-resource extraction and placement-base
 
 ## Extract a single embedded image
 
+1. Open the source PDF document used in this example.
+2. Run the Aspose.PDF operations required to extract a single embedded image.
+3. Write the extracted output or inspect the returned values.
+
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {
     try (Document document = new Document(inputFile.toString());
@@ -25,6 +29,10 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 ```
 
 ## Extract images from a specific region
+
+1. Open the source PDF document used in this example.
+2. Run the Aspose.PDF operations required to extract images from a specific region.
+3. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {

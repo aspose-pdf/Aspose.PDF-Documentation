@@ -17,6 +17,10 @@ Aspose.PDF for Java exposes bookmarks through both the document outline model an
 
 ## Get bookmark properties
 
+1. Open the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown here to get bookmark properties.
+3. Read the returned values or continue with your next processing step.
+
 ```java
 public static void getBookmarks(Path inputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -37,6 +41,10 @@ public static void getBookmarks(Path inputFile) {
 
 ## Update a bookmark
 
+1. Load the PDF document and locate the object that will be changed.
+2. Apply the Aspose.PDF calls shown in the example to update a bookmark.
+3. Save the document to keep the updated values.
+
 ```java
 public static void updateBookmarks(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -52,6 +60,10 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 ```
 
 ## Expand bookmarks when the document opens
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to expand bookmarks when the document opens.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void expandedBookmarks(Path inputFile, Path outputFile) {

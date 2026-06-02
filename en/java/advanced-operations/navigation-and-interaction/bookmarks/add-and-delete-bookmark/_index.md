@@ -17,6 +17,10 @@ Use the document outline collection to manage bookmarks programmatically.
 
 ## Add a bookmark
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a bookmark.
+3. Save the result to apply the change.
+
 ```java
 public static void addBookmark(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

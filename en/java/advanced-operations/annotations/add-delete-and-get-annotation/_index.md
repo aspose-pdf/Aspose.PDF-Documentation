@@ -21,6 +21,5 @@ Use the following topics:
 - [Markup Annotations](/pdf/java/markup-annotations/)
 - [Interactive Annotations](/pdf/java/interactive-annotations/)
 - [Shape Annotations](/pdf/java/shape-annotations/)
-- [Media Annotations](/pdf/java/media-annotations/)
 - [Security Annotations](/pdf/java/security-annotations/)
 - [Watermark Annotations](/pdf/java/watermark-annotations/)

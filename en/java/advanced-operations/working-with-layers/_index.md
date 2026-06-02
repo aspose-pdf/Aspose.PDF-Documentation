@@ -17,6 +17,10 @@ Aspose.PDF for Java exposes PDF layers through the `Layer` API on each page. You
 
 ## Add layers to a PDF page
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add layers to a PDF page.
+3. Save the result to apply the change.
+
 ```java
 public static void addLayers(Path outputFile) {
     try (Document document = new Document()) {
@@ -37,6 +41,10 @@ public static void addLayers(Path outputFile) {
 The full example creates three separate layers with red, green, and blue line content.
 
 ## Lock a layer
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to lock a layer.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void lockLayer(Path inputFile, Path outputFile) {

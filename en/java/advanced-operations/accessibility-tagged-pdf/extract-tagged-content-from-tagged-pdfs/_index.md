@@ -14,6 +14,10 @@ Use these APIs when you need to inspect the logical structure tree of a tagged P
 
 ## Get tagged content
 
+1. Open the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown here to get tagged content.
+3. Read the returned values or continue with your next processing step.
+
 ```java
 public static void getTaggedContent(Path outputFile) {
     try (Document document = new Document()) {
@@ -26,6 +30,10 @@ public static void getTaggedContent(Path outputFile) {
 ```
 
 ## Access the root structure
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to access the root structure.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void getRootStructure(Path outputFile) {
@@ -45,6 +53,10 @@ public static void getRootStructure(Path outputFile) {
 ## Access child elements
 
 This example iterates through child structure elements, prints their properties, and updates the first child branch.
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to access child elements.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void accessChildElements(Path inputFile, Path outputFile) {

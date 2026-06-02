@@ -15,6 +15,10 @@ Abstract: This article explains how to rotate text in PDF documents using Aspose
 ---
 ## Rotate individual text fragments
 
+1. Open the PDF document and locate the target page or content.
+2. Apply the Aspose.PDF operations shown in the example to rotate individual text fragments.
+3. Save the document to preserve the rotation change.
+
 ```java
 public static void rotateTextInsidePdf1(Path outputFile) {
     try (Document document = new Document()) {

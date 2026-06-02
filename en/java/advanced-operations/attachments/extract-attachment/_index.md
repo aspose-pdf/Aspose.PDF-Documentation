@@ -19,6 +19,10 @@ Aspose.PDF for Java supports several extraction flows depending on how attachmen
 
 Use this approach when you know the embedded file name in advance:
 
+1. Open the source PDF document used in this example.
+2. Run the Aspose.PDF operations required to extract a single attachment by name.
+3. Write the extracted output or inspect the returned values.
+
 ```java
 public static void extractSingleAttachment(Path inputFile, String attachmentName, Path outputFile) throws Exception {
     try (Document document = new Document(inputFile.toString())) {
@@ -44,6 +48,10 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 ## Extract all embedded files
 
 This example loops through the embedded file collection, resolves a usable file name, and writes each attachment to disk:
+
+1. Open the source PDF document used in this example.
+2. Run the Aspose.PDF operations required to extract all embedded files.
+3. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractAttachments(Path inputFile, Path outputDir) throws Exception {
@@ -74,6 +82,10 @@ The full example also reads metadata such as description, MIME type, checksum, c
 ## Extract a file attachment annotation
 
 If the attachment is stored as a `FileAttachmentAnnotation`, inspect page annotations and export the associated file:
+
+1. Open the source PDF document used in this example.
+2. Run the Aspose.PDF operations required to extract a file attachment annotation.
+3. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractFileAttachmentAnnotation(Path inputFile, Path outputDir) throws Exception {

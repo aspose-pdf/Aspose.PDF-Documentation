@@ -14,6 +14,10 @@ Tagged table APIs let you create accessible table structures with explicit heade
 
 ## Create a tagged table
 
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create a tagged table.
+3. Save the output document or generated file.
+
 ```java
 public static void createTable(Path outputFile) {
     try (Document document = new Document()) {
@@ -48,6 +52,10 @@ The table examples also demonstrate:
 - cell-level styling, row span, and column span
 
 ## Adjust tagged table position
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to adjust tagged table position.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void adjustTablePosition(Path outputFile) {

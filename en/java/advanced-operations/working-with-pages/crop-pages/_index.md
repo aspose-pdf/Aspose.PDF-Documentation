@@ -15,6 +15,10 @@ Abstract: This article explains how to crop PDF pages using Aspose.PDF for Java.
 ---
 ## Crop a page to a fixed rectangle
 
+1. Open the PDF document and identify the page area to keep.
+2. Apply the Aspose.PDF operations shown in the example to crop a page to a fixed rectangle.
+3. Save the cropped document.
+
 ```java
 public static void cropPage(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

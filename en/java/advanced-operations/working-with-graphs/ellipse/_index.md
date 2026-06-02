@@ -15,6 +15,10 @@ Abstract: This article shows how to add ellipse shapes to PDF documents using As
 ---
 ## Add ellipse outlines
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add ellipse outlines.
+3. Save the result to apply the change.
+
 ```java
 public static void addEllipse(Path outputFile) {
     try (Document document = new Document()) {
@@ -40,6 +44,10 @@ The full example adds two different outline ellipses to the same graph.
 `createEllipseFilled` fills two ellipses with `Color.getGreenYellow()` and `Color.getDarkRed()`.
 
 ## Add text inside ellipses
+
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add text inside ellipses.
+3. Save the result to apply the change.
 
 ```java
 public static void addTextInsideEllipse(Path outputFile) {

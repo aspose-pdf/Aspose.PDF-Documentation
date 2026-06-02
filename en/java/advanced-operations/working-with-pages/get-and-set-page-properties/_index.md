@@ -15,6 +15,10 @@ Abstract: This article explains how to inspect page properties using Aspose.PDF 
 ---
 ## Get the page count
 
+1. Open the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown here to get the page count.
+3. Read the returned values or continue with your next processing step.
+
 ```java
 public static void getPageCount(Path inputFile) {
     try (Document document = new Document(inputFile.toString())) {

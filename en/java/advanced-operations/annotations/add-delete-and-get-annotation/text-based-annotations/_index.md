@@ -15,6 +15,10 @@ Abstract: This article explains how to create, read, and remove text-based annot
 ---
 ## Add a text annotation
 
+1. Open the input PDF and target the page where the text annotation should be placed.
+2. Create the `TextAnnotation`, define its rectangle, and set its title, subject, flags, and color.
+3. Add the annotation to the page and save the updated document.
+
 ```java
 public static void textAnnotationAdd(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -32,6 +36,10 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 ```
 
 ## Add a free text annotation
+
+1. Load the source PDF and select the target page and rectangle for the free text note.
+2. Create the `FreeTextAnnotation`, initialize its default appearance, and set the title and color.
+3. Add the annotation to the page and save the result.
 
 ```java
 public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {

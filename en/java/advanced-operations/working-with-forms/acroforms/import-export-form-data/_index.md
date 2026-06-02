@@ -14,6 +14,10 @@ Aspose.PDF for Java supports several common data-exchange formats for interactiv
 
 ## Import or export XML data
 
+1. Open the source data or document required by this example.
+2. Use the Aspose.PDF API calls shown in the snippet to import or export XML data.
+3. Save the document or exported data if needed.
+
 ```java
 public static void importDataFromXml(Path inputFile, Path dataFile, Path outputFile) throws Exception {
     Form form = new Form();
@@ -37,6 +41,10 @@ The same example class also includes:
 - `importDataFromXfdf` and `exportDataToXfdf`
 
 ## Extract form fields to JSON
+
+1. Open the source PDF document used in this example.
+2. Run the Aspose.PDF operations required to extract form fields to JSON.
+3. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractFormFieldsToJson(Path inputFile, Path outputFile) throws Exception {

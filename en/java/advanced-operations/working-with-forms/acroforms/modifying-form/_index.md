@@ -17,6 +17,10 @@ Form maintenance often involves both field-level edits and cleanup of form-relat
 
 ## Clear text from a Typewriter form
 
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to clear text from a Typewriter form.
+3. Save the document or inspect the result, depending on the scenario.
+
 ```java
 public static void clearTextInForm(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -40,6 +44,10 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 `setFieldLimit` uses `FormEditor.setFieldLimit("First Name", 15)`, while `getFieldLimit` reads `TextBoxField.getMaxLen()` from the first form field.
 
 ## Change form field font appearance
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to change form field font appearance.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void setFormFieldFont(Path inputFile, Path outputFile) {

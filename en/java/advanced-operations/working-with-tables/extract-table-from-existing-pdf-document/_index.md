@@ -15,6 +15,12 @@ Abstract: This article explains how to extract tables from PDF documents using A
 ---
 Use `TableAbsorber` when you need to detect table structures in an existing PDF and read their content.
 
+## Extract table data from an existing PDF
+
+1. Open the source PDF document and iterate through the pages you want to inspect.
+2. Run `TableAbsorber` on each page and walk through the detected tables, rows, and cells.
+3. Read the extracted text fragments and output the collected table content.
+
 ```java
 public static void extract(Path inputFile) {
     try (Document document = new Document(inputFile.toString())) {

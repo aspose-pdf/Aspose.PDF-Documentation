@@ -15,6 +15,12 @@ Abstract: This article explains how to create a PDF/A-3A compliant invoice docum
 ---
 Use the `Document` and `FileSpecification` APIs when you need to package invoice XML inside a PDF for ZUGFeRD-style workflows.
 
+## Attach ZUGFeRD invoice XML to a PDF
+
+1. Open the source PDF invoice document and create a `FileSpecification` for the XML payload.
+2. Set the embedded file metadata, attach it to the PDF, and convert the document to `PDF_A_3A`.
+3. Save the final output PDF and review the generated conversion log if needed.
+
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

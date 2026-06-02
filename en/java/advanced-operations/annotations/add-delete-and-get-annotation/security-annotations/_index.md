@@ -15,6 +15,10 @@ Abstract: This article explains how to work with redaction annotations in PDF do
 ---
 ## Mark text for redaction
 
+1. Load the PDF and search all pages for the text that should be redacted.
+2. Create a `RedactionAnnotation` for each matched text fragment and configure its appearance.
+3. Add the redaction annotations to their pages and save the document.
+
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {
     try (Document document = new Document(inputFile.toString())) {

@@ -19,6 +19,10 @@ Formatting in Aspose.PDF for Java includes viewer behavior, font embedding, and 
 
 Use the `Document` API to inspect or update window and page display settings:
 
+1. Open the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown here to read and set document window properties.
+3. Read the returned values or continue with your next processing step.
+
 ```java
 public static void setDocumentWindow(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -40,6 +44,10 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 The companion `getDocumentWindow` example prints the current values for these properties.
 
 ## Embed fonts in an existing PDF
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to embed fonts in an existing PDF.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void embeddedFonts(Path inputFile, Path outputFile) {
@@ -64,6 +72,10 @@ The same example class also includes `embeddedFontsInNewDocument`, which creates
 `setDefaultFont` saves the document with `PdfSaveOptions.setDefaultFontName("Arial")`, while `improveFontsEmbedding` calls `subsetFonts(...)` with `FontSubsetStrategy` values to reduce embedded font data.
 
 ## Set and read the initial zoom factor
+
+1. Load the PDF document or object that will be updated.
+2. Apply the settings shown in the example to set and read the initial zoom factor.
+3. Save the document if the change should persist.
 
 ```java
 public static void setZoomFactor(Path inputFile, Path outputFile) {

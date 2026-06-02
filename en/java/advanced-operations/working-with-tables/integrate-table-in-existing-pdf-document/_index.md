@@ -17,6 +17,10 @@ The Java example builds PDF tables from CSV data without relying on external dat
 
 ## Create a table from CSV rows
 
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create a table from CSV rows.
+3. Save the output document or generated file.
+
 ```java
 public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
     Table table = new Table();
@@ -37,6 +41,10 @@ public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
 ```
 
 ## Create a PDF from CSV data
+
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create a PDF from CSV data.
+3. Save the output document or generated file.
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {

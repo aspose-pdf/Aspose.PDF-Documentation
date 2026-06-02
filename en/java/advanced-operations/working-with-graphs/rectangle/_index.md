@@ -15,6 +15,10 @@ Abstract: This article shows how to add rectangle shapes to PDF documents using 
 ---
 ## Add a rectangle outline
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a rectangle outline.
+3. Save the result to apply the change.
+
 ```java
 public static void addRectangle(Path outputFile) {
     try (Document document = new Document()) {
@@ -43,6 +47,10 @@ The rectangle examples include:
 `createRectangleWithAlphaColorChannel` applies translucent colors with `Color.fromArgb(...)` so overlapping rectangles remain visible.
 
 ## Control z-order of rectangles
+
+1. Open or create the PDF document used in this example.
+2. Use the Aspose.PDF API calls shown in the snippet to control z-order of rectangles.
+3. Save the document or inspect the result, depending on the scenario.
 
 ```java
 public static void controlZOrderOfRectangle(Path outputFile) {

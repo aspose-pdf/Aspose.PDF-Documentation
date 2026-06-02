@@ -17,6 +17,10 @@ Aspose.PDF for Java uses `LinkAnnotation` together with an action object to defi
 
 ## Create a page navigation link
 
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create a page navigation link.
+3. Save the output document or generated file.
+
 ```java
 public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {

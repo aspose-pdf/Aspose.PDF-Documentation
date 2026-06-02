@@ -14,6 +14,10 @@ This page covers common property-setting patterns for tagged PDF structure eleme
 
 ## Set core structure element properties
 
+1. Load the PDF document or object that will be updated.
+2. Apply the settings shown in the example to set core structure element properties.
+3. Save the document if the change should persist.
+
 ```java
 public static void setProperties(Path outputFile) {
     try (Document document = new Document()) {

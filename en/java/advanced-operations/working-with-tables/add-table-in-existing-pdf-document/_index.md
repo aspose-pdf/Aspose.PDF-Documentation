@@ -17,6 +17,10 @@ Aspose.PDF for Java provides a rich `Table` API for building tables with layout 
 
 ## Create a simple table
 
+1. Initialize the PDF document and any resources required by this example.
+2. Build and configure the Aspose.PDF objects needed to create a simple table.
+3. Save the output document or generated file.
+
 ```java
 public static void createTable(Path outputFile) {
     try (Document document = new Document()) {

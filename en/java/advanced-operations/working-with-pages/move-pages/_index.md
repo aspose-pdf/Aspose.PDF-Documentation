@@ -15,6 +15,10 @@ Abstract: This article explains how to move pages in PDFs using Aspose.PDF for J
 ---
 ## Move a page to another document
 
+1. Open the PDF document and locate the target page or content.
+2. Apply the Aspose.PDF operations shown in the example to move a page to another document.
+3. Save the document to preserve the change.
+
 ```java
 public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString());

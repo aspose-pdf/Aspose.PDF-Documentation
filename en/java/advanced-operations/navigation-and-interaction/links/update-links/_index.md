@@ -17,6 +17,10 @@ Existing links can be edited by finding the link annotation on a page and updati
 
 ## Update the text color under a link
 
+1. Load the PDF document and locate the object that will be changed.
+2. Apply the Aspose.PDF calls shown in the example to update the text color under a link.
+3. Save the document to keep the updated values.
+
 ```java
 public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -46,6 +50,10 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 `linkAnnotationUpdateBorder` iterates through link annotations and calls `linkAnnotation.setColor(Color.getRed())`.
 
 ## Update the web destination
+
+1. Load the PDF document and locate the object that will be changed.
+2. Apply the Aspose.PDF calls shown in the example to update the web destination.
+3. Save the document to keep the updated values.
 
 ```java
 public static void linkAnnotationUpdateWebDestination(Path inputFile, Path outputFile) {

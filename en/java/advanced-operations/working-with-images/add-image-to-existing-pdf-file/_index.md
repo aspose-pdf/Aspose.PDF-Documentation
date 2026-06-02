@@ -14,6 +14,10 @@ Aspose.PDF for Java supports both high-level image placement and low-level opera
 
 ## Add an image at a fixed rectangle
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add an image at a fixed rectangle.
+3. Save the result to apply the change.
+
 ```java
 public static void addImage(Path imageFile, Path outputFile) {
     try (Document document = new Document()) {
@@ -29,6 +33,10 @@ public static void addImage(Path imageFile, Path outputFile) {
 `addImageUsingOperators` adds the image to the page resource collection, calculates a target rectangle from the image size, applies a transformation matrix, and draws the image with `Do`.
 
 ## Set alternative text for an image
+
+1. Load the PDF document or object that will be updated.
+2. Apply the settings shown in the example to set alternative text for an image.
+3. Save the document if the change should persist.
 
 ```java
 public static void addImageSetAlternativeTextForImage(Path imageFile, Path outputFile) {

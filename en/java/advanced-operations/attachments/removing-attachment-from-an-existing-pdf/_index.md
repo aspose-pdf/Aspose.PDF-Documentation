@@ -19,6 +19,10 @@ Attachments stored in a PDF document can be removed either individually or all a
 
 Use the attachment key to delete a single embedded file:
 
+1. Load the PDF document and locate the target content.
+2. Use the Aspose.PDF objects shown in the example to remove a specific attachment.
+3. Save the document after the content is removed.
+
 ```java
 public static void removeAttachment(Path inputFile, String attachmentName, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -31,6 +35,10 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 ## Remove all attachments
 
 To clear every embedded file from the document:
+
+1. Load the PDF document and locate the target content.
+2. Use the Aspose.PDF objects shown in the example to remove all attachments.
+3. Save the document after the content is removed.
 
 ```java
 public static void removeAllAttachments(Path inputFile, Path outputFile) {

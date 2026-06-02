@@ -17,6 +17,10 @@ XFA forms can be converted to standard AcroForms so they can be processed with t
 
 ## Convert a dynamic XFA form to an AcroForm
 
+1. Open the source PDF document used in this example.
+2. Configure the conversion options and Aspose.PDF calls needed to convert a dynamic XFA form to an AcroForm.
+3. Save the converted output file.
+
 ```java
 public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -27,6 +31,10 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 ```
 
 ## Convert an XFA form with `ignoreNeedsRendering`
+
+1. Open the source PDF document used in this example.
+2. Configure the conversion options and Aspose.PDF calls needed to convert an XFA form with `ignoreNeedsRendering`.
+3. Save the converted output file.
 
 ```java
 public static void convertXfaFormWithIgnoreNeedsRendering(Path inputFile, Path outputFile) {

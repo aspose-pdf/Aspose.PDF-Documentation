@@ -17,6 +17,10 @@ Aspose.PDF for Java provides multiple search models depending on whether you nee
 
 ## Search text with `TextAbsorber`
 
+1. Open the source PDF document used in this example.
+2. Configure the search objects and execute the Aspose.PDF calls needed to search text with `TextAbsorber`.
+3. Process the matched results returned by the search.
+
 ```java
 public static void textAbsorberSearch(Path inputFile) {
     try (Document document = new Document(inputFile.toString())) {

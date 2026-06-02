@@ -17,6 +17,10 @@ Aspose.PDF for Java supports both straightforward text insertion and more advanc
 
 ## Add a simple text fragment
 
+1. Open or create the PDF document used in this example.
+2. Configure the Aspose.PDF objects needed to add a simple text fragment.
+3. Save the result to apply the change.
+
 ```java
 public static void addTextSimpleCase(Path outputFile) {
     try (Document document = new Document()) {
