@@ -1,4 +1,0 @@
-interface:
-  display_name: "Java Basic Operations Doc Sync"
-  short_description: "Sync en/java basic-operations docs with Java example sources"
-  default_prompt: "Use $java-basic-operations-doc-sync to update en/java/basic-operations articles from the corresponding Java example classes and validate the Markdown formatting."
