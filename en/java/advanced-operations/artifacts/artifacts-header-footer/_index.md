@@ -43,12 +43,4 @@ public static FooterArtifact createFooterArtifact(String text) {
 }
 ```
 
-## Add or remove header and footer artifacts
 
-`ArtifactsHeaderFooterExamples.java` includes:
-
-- `addHeaderArtifact`
-- `addFooterArtifact`
-- `deleteHeaderFooterArtifact`
-
-The delete workflow removes artifacts where subtype is `Header` or `Footer`.

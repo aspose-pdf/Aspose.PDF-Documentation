@@ -31,18 +31,3 @@ public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outp
 }
 ```
 
-## Merge multiple documents or selected ranges
-
-The example class also includes:
-
-- `mergeMultipleDocuments` to append all pages from a list of input files.
-- `mergeSelectedPageRanges` to combine only the requested pages from each source.
-- `mergeInsertDocumentAtPosition` to insert one document after a chosen page number.
-
-## Merge alternating pages
-
-`mergeAlternatingPages` interleaves pages from two documents one by one until both sources are exhausted.
-
-## Merge with section separators and bookmarks
-
-`mergeWithSectionSeparatorsAndBookmarks` creates a separator page for each source document and adds `OutlineItemCollection` bookmarks so the merged output remains navigable.

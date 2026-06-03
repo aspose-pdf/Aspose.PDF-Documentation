@@ -52,7 +52,3 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
     }
 }
 ```
-
-## Add an image with Flate compression
-
-`addImageToPdfWithFlateCompression` stores the image with `ImageFilterType.Flate` before drawing it with page operators.

@@ -121,11 +121,3 @@ public static void getPdfMetadata(Path inputFile) {
     pdfInfo.close();
 }
 ```
-
-## Set, clear, and save metadata with XMP through the facade API
-
-The `PdfFileInfoExamples` class also demonstrates:
-
-- `setPdfMetadata` to update subject, title, keywords, creator, and a custom metadata key.
-- `clearPdfMetadata` to remove stored info with `clearInfo()`.
-- `saveInfoWithXmp` to save updated metadata as XMP with `saveNewInfoWithXmp(...)`.

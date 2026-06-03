@@ -58,4 +58,4 @@ public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows
 }
 ```
 
-The helper methods in the example also parse CSV rows, handle quoted values, and pick selected columns by header name.
+

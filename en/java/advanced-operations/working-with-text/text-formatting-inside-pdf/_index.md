@@ -36,31 +36,4 @@ public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exceptio
 }
 ```
 
-## Character spacing, lists, and notes
 
-The example class also includes:
-
-- `characterSpacingUsingTextFragment`
-- `characterSpacingUsingTextParagraph`
-- `createBulletListHtmlVersion`
-- `createNumberedListHtmlVersion`
-- `createBulletListLatexVersion`
-- `createNumberedListLatexVersion`
-- `createBulletList`
-- `createNumberedList`
-- `addFootnote`
-- `addFootnoteCustomTextStyle`
-- `addFootnoteCustomText`
-- `addFootnoteWithCustomLineStyle`
-- `addFootnoteWithImageAndTable`
-- `addEndnote`
-- `addEndnoteCustomText`
-
-## Multi-column layout, forced page breaks, and tab stops
-
-The same source file also demonstrates:
-
-- `forceNewPage`
-- `usingInlineParagraphProperty`
-- `createMultiColumnPdf`
-- `customTabStops`

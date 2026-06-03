@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/markup-annotations/
 description: Learn how to add, inspect, and delete highlight, underline, squiggly, and strikeout annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-02"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -45,4 +45,11 @@ public static void addTextUnderlineAnnotation(Path inputFile, Path outputFile) {
 }
 ```
 
-The Java examples also include get and delete workflows for all four markup annotation types by filtering the page annotation collection by `AnnotationType`.
+## Related annotation topics
+
+- [Text Annotations](/pdf/java/text-based-annotations/)
+- [Interactive Annotations](/pdf/java/interactive-annotations/)
+- [Shape Annotations](/pdf/java/shape-annotations/)
+- [Media Annotations](/pdf/java/media-annotations/)
+- [Security Annotations](/pdf/java/security-annotations/)
+- [Watermark Annotations](/pdf/java/watermark-annotations/)

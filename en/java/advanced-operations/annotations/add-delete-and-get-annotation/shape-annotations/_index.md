@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/shape-annotations/
 description: Learn how to add, inspect, and delete square, circle, polygon, and polyline annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-02"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -59,4 +59,11 @@ public static void polygonAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-The Java example set also includes get and delete methods for square, circle, polygon, and polyline annotations.
+## Related annotation topics
+
+- [Interactive Annotations](/pdf/java/interactive-annotations/)
+- [Markup Annotations](/pdf/java/markup-annotations/)
+- [Security Annotations](/pdf/java/security-annotations/)
+- [Text Annotations](/pdf/java/text-based-annotations/)
+- [Watermark Annotations](/pdf/java/watermark-annotations/)
+- [Import and Export Annotations](/pdf/java/import-export-annotations/)

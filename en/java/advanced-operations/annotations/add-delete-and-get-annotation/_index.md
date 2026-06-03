@@ -4,8 +4,8 @@ linktitle: Add, Delete and Get Annotation
 type: docs
 weight: 20
 url: /java/add-delete-and-get-annotation/
-description: Use Aspose.PDF for Java to add, inspect, and delete PDF annotations across text, markup, interactive, shape, watermark, and security-related workflows.
-lastmod: "2026-05-27"
+description: Use Aspose.PDF for Java to add, inspect, and delete PDF annotations across text, markup, interactive, shape, watermark, security, and media-related workflows.
+lastmod: "2026-06-02"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -21,5 +21,6 @@ Use the following topics:
 - [Markup Annotations](/pdf/java/markup-annotations/)
 - [Interactive Annotations](/pdf/java/interactive-annotations/)
 - [Shape Annotations](/pdf/java/shape-annotations/)
+- [Media Annotations](/pdf/java/media-annotations/)
 - [Security Annotations](/pdf/java/security-annotations/)
 - [Watermark Annotations](/pdf/java/watermark-annotations/)

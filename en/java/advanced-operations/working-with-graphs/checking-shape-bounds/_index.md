@@ -45,4 +45,3 @@ public static void checkShapeBounds(Path outputFile) {
 }
 ```
 
-In this example, the rectangle starts outside the graph area, so strict bounds checking raises an exception.

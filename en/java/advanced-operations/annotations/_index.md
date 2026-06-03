@@ -4,16 +4,16 @@ linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /java/annotations/
-description: Learn how to add, inspect, delete, transfer, and manage PDF annotations in Java with Aspose.PDF, including text, markup, links, shapes, watermarks, and redactions.
-lastmod: "2026-05-27"
+description: Learn how to add, inspect, delete, transfer, and manage PDF annotations in Java with Aspose.PDF, including text, markup, links, shapes, watermarks, redactions, and media-related annotation guidance.
+lastmod: "2026-06-02"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to add Annotations to PDF using Java
-Abstract: This article introduces PDF annotation workflows in Aspose.PDF for Java. It covers adding, getting, deleting, and transferring annotations, with grouped topics for text, markup, interactive, shape, security, watermark, and related annotation scenarios.
+Abstract: This article introduces PDF annotation workflows in Aspose.PDF for Java. It covers adding, getting, deleting, and transferring annotations, with grouped topics for text, markup, interactive, shape, watermark, security, and media-related annotation scenarios.
 ---
-Annotations are interactive PDF elements that let you add notes, highlight text, draw shapes, create links, apply redactions, and enrich document review workflows.
+Annotations are interactive PDF elements that let you add notes, highlight text, draw shapes, create links, apply redactions, and enrich document review workflows in existing PDF files.
 
 Use this section to:
 

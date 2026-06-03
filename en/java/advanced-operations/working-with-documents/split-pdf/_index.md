@@ -33,24 +33,3 @@ public static void splitDocuments(Path inputFile, Path outputDir) {
     }
 }
 ```
-
-## Split by parts, ranges, or N pages
-
-The example class also includes:
-
-- `splitDocumentsIntoTwoParts`
-- `splitDocumentsIntoThreeParts`
-- `splitDocumentsEveryNPages`
-- `splitDocumentsByPageRanges`
-
-## Split first or last page from the rest
-
-`splitDocumentsFirstPageAndRest` and `splitDocumentsLastPageAndRest` create separate files for a leading or trailing page while keeping the remaining pages together.
-
-## Split odd and even pages or custom page groups
-
-`splitDocumentsOddEvenPages` creates `Odd_Pages.pdf` and `Even_Pages.pdf`. `splitDocumentsCustomPageGroups` creates grouped output based on explicit page-number lists.
-
-## Generate stable file names
-
-`splitDocumentsWithStableFilenames` uses `String.format("Page_%03d.pdf", pageNumber)` so the output remains naturally sortable.

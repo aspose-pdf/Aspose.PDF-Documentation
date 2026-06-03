@@ -47,9 +47,3 @@ public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Convert XML to PDF
-
-The Java examples provide two XML-related workflows:
-
-- transform XML with XSLT into temporary HTML, then convert HTML to PDF
-- convert XML with `XslFoLoadOptions` for XSL-FO content

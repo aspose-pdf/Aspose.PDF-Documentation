@@ -29,6 +29,3 @@ public static void extractPage(Path inputFile, Path outputFile) {
 }
 ```
 
-## Extract multiple pages
-
-`extractBunchPages` copies pages `2` and `3` into a new document and saves the result.

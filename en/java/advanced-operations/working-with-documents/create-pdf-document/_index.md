@@ -56,4 +56,3 @@ public static void createSearchablePdf(Path inputFile, Path outputFile) {
 }
 ```
 
-This flow depends on an external OCR engine that can produce HOCR output. The example source is written around Tesseract.

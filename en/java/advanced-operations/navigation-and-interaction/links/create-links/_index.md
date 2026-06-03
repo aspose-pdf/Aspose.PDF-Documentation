@@ -43,10 +43,4 @@ public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFil
 }
 ```
 
-## Other link types
 
-The `CreateExamples` class also includes:
-
-- `createLinkAnnotationLaunchAction` to attach a `LaunchAction`.
-- `createLinkAnnotationGoToRemoteAction` to jump to another PDF with `GoToRemoteAction`.
-- `createLinkAnnotationGoToUriAction` to open a web address with `GoToURIAction`.

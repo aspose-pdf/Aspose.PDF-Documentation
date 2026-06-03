@@ -42,9 +42,4 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## Extract or delete watermark artifacts
 
-`ArtifactsWatermarksExamples.java` also includes:
-
-- `extractWatermarkFromPdf` to enumerate watermark artifacts on the first page
-- `deleteWatermarkArtifact` to remove artifacts where subtype is `Watermark`

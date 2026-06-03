@@ -42,5 +42,3 @@ public static void fillForm(Path inputFile, Path outputFile) {
     }
 }
 ```
-
-This pattern works well for batch form filling and data-driven PDF generation.

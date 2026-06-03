@@ -38,17 +38,3 @@ public static void addTextBoxField(Path outputFile) {
 }
 ```
 
-## Add a text box with multiple widgets
-
-`addTextBoxFieldNt` creates one `TextBoxField` backed by multiple rectangles and assigns a separate `DefaultAppearance` to each widget.
-
-## Other field types
-
-The same example class also demonstrates:
-
-- `addRadioButton`
-- `addComboBox`
-- `addCheckboxFieldToPdf`
-- `addListBoxFieldToPdf`
-- `addSignatureField`
-- `addBarcodeField`

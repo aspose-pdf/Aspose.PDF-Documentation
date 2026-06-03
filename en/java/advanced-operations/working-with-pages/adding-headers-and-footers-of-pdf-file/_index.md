@@ -39,15 +39,3 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 }
 ```
 
-## Use headers and footers for page numbering
-
-`usingHeaderAndFooterForPageNumbering` uses page number placeholders such as `$p` and `$P`.
-
-## Other header and footer content types
-
-The example class also includes:
-
-- `addHeaderAndFooterAsHtml`
-- `addHeaderAndFooterAsImage`
-- `addHeaderAndFooterAsTable`
-- `addHeaderAndFooterAsLatex`

@@ -38,4 +38,3 @@ public static Map<String, String> getValuesFromAllFields(Path inputFile) {
 }
 ```
 
-This approach is useful when you want to export user-entered data to another system or inspect filled forms programmatically.

@@ -31,7 +31,3 @@ public static void cropPage(Path inputFile, Path outputFile) {
     }
 }
 ```
-
-## Crop a page by detected content
-
-`cropPageByContent` uses `ImagePlacementAbsorber` to locate the first image on the page and then sets the page crop box to that image rectangle.

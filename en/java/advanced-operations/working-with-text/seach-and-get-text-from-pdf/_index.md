@@ -33,21 +33,3 @@ public static void textAbsorberSearch(Path inputFile) {
     }
 }
 ```
-
-## Search and inspect text fragments
-
-`textFragmentAbsorberSearch` iterates through all fragments and prints the text, position, font details, and color information.
-
-## Phrase, regex, and list-based searches
-
-The example class also demonstrates:
-
-- `textFragmentAbsorberSearchPage`
-- `textFragmentAbsorberSequentialSearch`
-- `textFragmentAbsorberSearchPhrase`
-- `textFragmentAbsorberSearchRegex`
-- `textFragmentAbsorberSearchListOfPhrases`
-
-## Add hyperlinks and inspect styled text
-
-`textFragmentAbsorberSearchAndAddHyperlink` underlines matched words and attaches `WebHyperlink` objects. `textFragmentAbsorberSearchStyledText` inspects bold and invisible fragments.

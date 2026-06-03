@@ -28,6 +28,3 @@ public static void deletePage(Path inputFile, Path outputFile) {
 }
 ```
 
-## Delete multiple pages
-
-`deleteBunchPages` removes pages `2`, `3`, and `4` by passing an `Integer[]` to `document.getPages().delete(...)`.

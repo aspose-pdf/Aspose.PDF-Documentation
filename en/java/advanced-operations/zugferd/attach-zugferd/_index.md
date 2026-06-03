@@ -40,4 +40,3 @@ public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, 
 }
 ```
 
-This workflow embeds the XML invoice payload, marks it as an alternative representation of the document, generates a conversion log, and saves the final invoice as a `PDF_A_3A` file.

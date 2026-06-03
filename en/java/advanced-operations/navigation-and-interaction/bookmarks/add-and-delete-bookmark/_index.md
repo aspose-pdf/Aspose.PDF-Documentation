@@ -36,13 +36,3 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 }
 ```
 
-## Add a child bookmark
-
-`addChildBookmark` creates a parent `OutlineItemCollection`, adds a child outline to it, and then appends the parent to `document.getOutlines()`.
-
-## Delete bookmarks
-
-The Java examples also include:
-
-- `deleteBookmarks` to remove the full outline collection with `document.getOutlines().delete()`.
-- `deleteBookmark` to remove a specific item by title with `document.getOutlines().delete("Child Outline")`.

@@ -37,10 +37,3 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 }
 ```
 
-## Control image stamp quality
-
-`addImageStampWithQualityControl` sets `imageStamp.setQuality(10)` before adding the stamp.
-
-## Use an image as a floating box background
-
-`addImageAsBackgroundInFloatingBox` creates a `FloatingBox`, adds text to it, then assigns an `Image` as the background image.

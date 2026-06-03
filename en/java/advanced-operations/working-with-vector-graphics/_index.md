@@ -68,19 +68,3 @@ public static void moveGraphics(Path inputFile, Path outputFile) {
 }
 ```
 
-## Remove or copy vector graphics
-
-The example set also includes:
-
-- `removeGraphicsMethod1` to remove matching elements individually with `element.remove()`
-- `removeGraphicsMethod2` to collect matching elements and delete them from the page in one step
-- `addToAnotherPageMethod1` to add each element to another page one by one
-- `addToAnotherPageMethod2` to copy the full element collection to another page
-
-## Export vector content to SVG
-
-The related parsing examples also show how to export vector graphics:
-
-- `saveVectorGraphicsToSvg` saves page vector graphics directly to an SVG file.
-- `extractSubpathsToSvgs` saves each `GraphicElement` to its own SVG.
-- `extractSingleVectorElement` exports a selected element or nested XForm element to SVG.

@@ -35,14 +35,3 @@ public static void createAndAddFloatingBox(Path outputFile) {
 }
 ```
 
-## Create multi-column layout
-
-`multiColumnLayout` and `multiColumnLayout2` configure `ColumnInfo` with three columns and add repeating text fragments to the same floating box.
-
-## Background, offsets, and alignment
-
-The example class also demonstrates:
-
-- `backgroundSupport`
-- `offsetSupport`
-- `alignTextToFloat`

@@ -29,12 +29,4 @@ public static void setPageSize(Path inputFile, Path outputFile) {
 }
 ```
 
-The example also prints the `CropBox`, `TrimBox`, `ArtBox`, `BleedBox`, and `MediaBox` dimensions before and after the change.
 
-## Get page size
-
-`getPageSize` reads the dimensions from `page.getPageRect(true)`.
-
-## Get page size with rotation
-
-`getPageSizeRotation` rotates the first page to `Rotation.on90` and compares `getPageRect(false)` with `getPageRect(true)`.

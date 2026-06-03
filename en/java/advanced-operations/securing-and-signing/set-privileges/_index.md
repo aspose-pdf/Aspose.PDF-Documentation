@@ -84,4 +84,3 @@ public static void setPdfPrivilegesWithPasswords(Path inputFile, Path outputFile
 }
 ```
 
-You can also use `setPdfPrivilegesWithoutPasswords` and `trySetPdfPrivilegesWithoutException` depending on the workflow.

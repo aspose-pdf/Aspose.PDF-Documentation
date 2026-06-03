@@ -5,7 +5,7 @@ type: docs
 weight: 75
 url: /java/security-annotations/
 description: Learn how to mark text for redaction, apply redaction annotations, and redact selected page areas in PDF files using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-02"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -45,9 +45,12 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 }
 ```
 
-## Apply or place redactions
+## Related annotation topics
 
-`ExtraAnnotationExamples.java` also includes:
+- [Interactive Annotations](/pdf/java/interactive-annotations/)
+- [Markup Annotations](/pdf/java/markup-annotations/)
+- [Shape Annotations](/pdf/java/shape-annotations/)
+- [Text Annotations](/pdf/java/text-based-annotations/)
+- [Watermark Annotations](/pdf/java/watermark-annotations/)
+- [Import and Export Annotations](/pdf/java/import-export-annotations/)
 
-- `applyRedaction` to permanently apply existing redaction annotations
-- `redactArea` to place a redaction annotation over a detected image area or fallback rectangle

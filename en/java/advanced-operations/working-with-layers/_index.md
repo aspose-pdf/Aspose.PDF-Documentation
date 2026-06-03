@@ -58,14 +58,3 @@ public static void lockLayer(Path inputFile, Path outputFile) {
     }
 }
 ```
-
-## Extract layers
-
-The example set provides two extraction approaches:
-
-- `extractLayers` saves each layer from the first page as a separate output file.
-- `extractLayersStream` saves the first layer directly to a `FileOutputStream`.
-
-## Flatten or merge layers
-
-`flattenLayers` iterates over the page layers and calls `layer.flatten(true)` before saving the document. `mergeLayers` combines all layers on the page into a single layer by calling `page.mergeLayers("LayerNew")`.

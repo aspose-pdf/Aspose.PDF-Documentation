@@ -82,4 +82,3 @@ public static void extractSignatureCertificate(Path inputFile, Path outputFile) 
 }
 ```
 
-The same example class also includes `removeSignature`, which deletes the first signature and saves the updated PDF.

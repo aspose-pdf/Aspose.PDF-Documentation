@@ -42,7 +42,3 @@ public static void addToolTipToSearchedText(Path outputFile) {
     document.close();
 }
 ```
-
-## Create a hidden floating text block
-
-`createHiddenTextBlock` creates a hidden `TextBoxField`, then wires a `ButtonField` with `HideAction` handlers so the hidden text appears on mouse enter and disappears on exit.

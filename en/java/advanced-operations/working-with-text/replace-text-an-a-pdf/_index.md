@@ -38,28 +38,3 @@ public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
 }
 ```
 
-## Replace text in a specific page region
-
-`replaceTextInParticularPageRegion` limits the absorber to page 1 and a target `Rectangle`.
-
-## Layout-aware replacement and regex replacement
-
-The example class also covers:
-
-- `replaceTextAndResizeAndShiftWithoutChangingFontSize`
-- `replaceTextAndResizeAndShiftParagraph`
-- `replaceTextAndResizeAndExpandFont`
-- `replaceTextAndFitTextIntoRectangle`
-- `replaceTextBasedOnRegex`
-- `automaticallyRearrangePageContents`
-
-## Replace fonts and remove text
-
-The same source file also demonstrates:
-
-- `replaceFonts`
-- `removeUnusedFonts`
-- `removeAllTextUsingAbsorber1`
-- `removeAllTextUsingAbsorber2`
-- `removeAllTextUsingAbsorber3`
-- `removeHiddenText`

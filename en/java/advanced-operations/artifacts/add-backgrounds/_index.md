@@ -51,9 +51,4 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
 }
 ```
 
-## Add a background color or remove background artifacts
 
-`ArtifactsBackgroundsExamples.java` also includes:
-
-- `addBackgroundColorToPdf` to apply a color-based background artifact
-- `removeBackground` to delete page artifacts where subtype is `Background`

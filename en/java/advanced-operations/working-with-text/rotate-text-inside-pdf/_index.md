@@ -36,10 +36,3 @@ public static void rotateTextInsidePdf1(Path outputFile) {
 }
 ```
 
-## Rotate text inside a paragraph
-
-`rotateTextInsidePdf2` builds a `TextParagraph`, appends several `TextFragment` lines, and applies different `TextState` rotations.
-
-## Rotate paragraph content directly on the page
-
-`rotateTextInsidePdf3` adds rotated fragments straight to `page.getParagraphs()`, while `rotateTextInsidePdf4` rotates whole `TextParagraph` objects by different angles.

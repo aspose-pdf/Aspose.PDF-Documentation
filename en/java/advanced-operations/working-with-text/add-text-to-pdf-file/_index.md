@@ -35,34 +35,3 @@ public static void addTextSimpleCase(Path outputFile) {
 }
 ```
 
-## Add a positioned paragraph
-
-`addParagraph` uses `TextBuilder` and `TextParagraph`, applies first-line indentation, sets a layout rectangle, and appends a long `TextFragment` loaded from a text file.
-
-## Other text insertion scenarios
-
-The example class also demonstrates:
-
-- `addParagraphsIndents`
-- `addNewLine`
-- `addTextWithHyperlink`
-- `addTextWithRtlText`
-- `addTextWithFontStyling`
-- `addTextTransparent`
-- `addTextInvisible`
-- `addTextBorder`
-- `addUnderlineText`
-- `addStrikeoutText`
-
-## Add HTML, LaTeX, gradients, and custom fonts
-
-The same source file also covers:
-
-- `addTextHtmlFragment`
-- `addTextLatexFragment`
-- `addHtmlFragment`
-- `addHtmlFragmentOverrideTextState`
-- `applyGradientAxialShadingToText`
-- `applyGradientRadialShadingToText`
-- `useCustomFontFromFile`
-- `useCustomFontFromStream`

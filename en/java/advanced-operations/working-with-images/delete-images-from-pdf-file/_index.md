@@ -27,4 +27,3 @@ public static void deleteImage(Path inputFile, Path outputFile) {
 }
 ```
 
-This removes the first image resource from page 1 of the document.

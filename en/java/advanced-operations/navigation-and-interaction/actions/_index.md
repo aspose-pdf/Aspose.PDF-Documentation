@@ -79,10 +79,3 @@ public static void addSubmitAction(Path inputFile, Path outputFile) {
 }
 ```
 
-## Add document and page actions
-
-The `ActionsExamples` class also demonstrates:
-
-- `addLaunchActions` to set document open, before-save, and before-print JavaScript actions.
-- `addPageActions` to assign `GoToAction` and `JavascriptAction` handlers to a page.
-- `removePageActions` to clear page actions with `page.getActions().removeActions()`.

@@ -25,11 +25,4 @@ public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {
 }
 ```
 
-## Control worksheet layout
 
-The Java examples also show how to:
-
-- insert a blank first column with `setInsertBlankColumnAtFirst(true)`
-- reduce worksheet count with `setMinimizeTheNumberOfWorksheets(true)`
-- export to macro-enabled Excel with `ExcelFormat.XLSM`
-- export to CSV or ODS with the matching `ExcelFormat`

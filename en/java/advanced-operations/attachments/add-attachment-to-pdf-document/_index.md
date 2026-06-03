@@ -35,4 +35,4 @@ public static void addAttachments(Path inputFile, Path attachmentPath, Path outp
 }
 ```
 
-This approach stores the file inside the PDF as an embedded attachment that can be opened or extracted later.
+

@@ -30,11 +30,3 @@ public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceO
     }
 }
 ```
-
-## Move multiple pages to another document
-
-`moveBunchPagesFromOneDocumentToAnother` copies the selected pages to a destination document, saves it, then deletes those pages from the source.
-
-## Move a page inside the same document
-
-`movePageInNewLocationInSameDocument` re-adds page `2` to the end of the page collection and then deletes the original page `2`.

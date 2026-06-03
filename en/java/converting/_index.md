@@ -17,11 +17,13 @@ Aspose.PDF for Java supports both directions of document conversion: converting 
 
 Use this section to:
 
-- [Convert PDF to Word](/pdf/java/convert-pdf-to-word/).
-- [Convert PDF to Excel](/pdf/java/convert-pdf-to-excel/).
-- [Convert PDF to PowerPoint](/pdf/java/convert-pdf-to-powerpoint/).
-- [Convert PDF to HTML](/pdf/java/convert-pdf-to-html/).
-- [Convert PDF to images](/pdf/java/convert-pdf-to-images-format/).
-- [Convert PDF to EPUB, Markdown, Text, XPS, and other formats](/pdf/java/convert-pdf-to-other-files/).
-- [Convert PDF to PDF/A, PDF/E, and PDF/X](/pdf/java/convert-pdf-to-pdf_x/).
-- [Convert HTML to PDF](/pdf/java/convert-html-to-pdf/), [images to PDF](/pdf/java/convert-images-format-to-pdf/), and [other file formats to PDF](/pdf/java/convert-other-files-to-pdf/).
+- [Convert PDF to Word](/pdf/java/convert-pdf-to-word/),
+- [Convert PDF to Excel](/pdf/java/convert-pdf-to-excel/),
+- [Convert PDF to PowerPoint](/pdf/java/convert-pdf-to-powerpoint/),
+- [Convert PDF to HTML](/pdf/java/convert-pdf-to-html/),
+- [Convert PDF to images](/pdf/java/convert-pdf-to-images-format/),
+- [Convert PDF to EPUB, Markdown, Text, XPS, and other formats](/pdf/java/convert-pdf-to-other-files/),
+- [Convert PDF to PDF/A, PDF/E, and PDF/X](/pdf/java/convert-pdf-to-pdf_x/),
+- [Convert HTML to PDF](/pdf/java/convert-html-to-pdf/),
+- [Images to PDF](/pdf/java/convert-images-format-to-pdf/),
+- [Other file formats to PDF](/pdf/java/convert-other-files-to-pdf/).

@@ -39,27 +39,3 @@ public static void createTable(Path outputFile) {
     }
 }
 ```
-
-## Add spans, borders, images, and formatted fragments
-
-The example class also includes:
-
-- `addRowspanOrColspan`
-- `addBorders`
-- `autoFit`
-- `addImage`
-- `addSvgImage`
-- `addHtmlFragments`
-- `addLatexFragments`
-
-## Control page flow and repeated headers
-
-Table layout examples also cover:
-
-- `addTableOnNewPage`
-- `addTableHideBorders`
-- `createTableWithRoundCorner`
-- `addRepeatingRows`
-- `addRepeatingColumns`
-- `insertPageBreak`
-- `rotatedTextTable`

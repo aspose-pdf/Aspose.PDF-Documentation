@@ -62,7 +62,3 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
     }
 }
 ```
-
-## Delete a form field
-
-`deleteFormField` removes a field by name with `document.getForm().delete("First Name")`.

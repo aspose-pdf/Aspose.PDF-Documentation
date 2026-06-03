@@ -27,14 +27,4 @@ public static void getPageCount(Path inputFile) {
 }
 ```
 
-## Get page count without saving
 
-`getPageCountWithoutSaving` creates many paragraphs on a new page, calls `document.processParagraphs()`, and then reads the page count from the in-memory document.
-
-## Get page properties and box values
-
-`getPageProperties` prints the dimensions and coordinates of the `ArtBox`, `BleedBox`, `CropBox`, `MediaBox`, `TrimBox`, and `Rect`, then reads the page number and rotation.
-
-## Get page color type
-
-`getPageColorType` loops through all pages and reports whether each page is black and white, grayscale, RGB, or undefined.

@@ -36,13 +36,3 @@ public static void extractImageParams(Path inputFile) {
 }
 ```
 
-## Inspect image types and alternative text
-
-The same example class also demonstrates:
-
-- `extractImageTypesFromPdf` to count grayscale and RGB images.
-- `extractImageAltText` to read alternative text through `getAlternativeText(...)`.
-
-## Calculate image information from page operators
-
-`extractImageInformationFromPdf` walks the page content operators, tracks the current graphics state matrix, resolves image draw operations by name, and calculates scaled size and effective horizontal and vertical resolution.

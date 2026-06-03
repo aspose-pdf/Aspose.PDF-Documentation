@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/text-based-annotations/
 description: Learn how to add, inspect, and delete text, free text, and strikeout annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-02"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -57,6 +57,11 @@ public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Add or remove strikeout annotations
+## Related annotation topics
 
-The same example class also covers getting and deleting text, free text, and strikeout annotations by scanning page annotations and filtering by `AnnotationType`.
+- [Interactive Annotations](/pdf/java/interactive-annotations/)
+- [Markup Annotations](/pdf/java/markup-annotations/)
+- [Security Annotations](/pdf/java/security-annotations/)
+- [Shape Annotations](/pdf/java/shape-annotations/)
+- [Watermark Annotations](/pdf/java/watermark-annotations/)
+- [Import and Export Annotations](/pdf/java/import-export-annotations/)

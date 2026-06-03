@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/watermark-annotations/
 description: Learn how to add, inspect, and delete watermark annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-02"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -40,4 +40,11 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-The same example class also includes `watermarkGet` and `watermarkDelete` methods that inspect or remove annotations where `AnnotationType` is `Watermark`.
+## Related annotation topics
+
+- [Interactive Annotations](/pdf/java/interactive-annotations/)
+- [Markup Annotations](/pdf/java/markup-annotations/)
+- [Security Annotations](/pdf/java/security-annotations/)
+- [Shape Annotations](/pdf/java/shape-annotations/)
+- [Text Annotations](/pdf/java/text-based-annotations/)
+- [Import and Export Annotations](/pdf/java/import-export-annotations/)

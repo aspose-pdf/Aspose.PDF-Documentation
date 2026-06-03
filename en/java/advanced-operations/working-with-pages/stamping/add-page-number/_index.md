@@ -39,6 +39,3 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 }
 ```
 
-## Add Roman numeral page numbering
-
-`addPageNumStampRoman` applies `NumberingStyle.NumeralsRomanUppercase` and adds the same stamp to every page in the document.

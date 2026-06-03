@@ -37,7 +37,3 @@ public static void addCurve(Path outputFile) {
     }
 }
 ```
-
-## Add a filled curve
-
-`addCurveFilled` uses the same curve coordinates but assigns `setFillColor(Color.getGreenYellow())` instead of only setting the stroke color.

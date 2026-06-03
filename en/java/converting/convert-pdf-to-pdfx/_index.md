@@ -51,4 +51,3 @@ public static void convertPdfToPdfX(Path inputFile, Path outputFile) {
 }
 ```
 
-The Java examples also include validation methods, PDF/A-4 conversion, PDF/A-3 conversion with attachments, missing-font substitution, and automatic tagging during conversion.

@@ -50,12 +50,4 @@ public static void shrinkingOrCompressingAllImages(Path inputFile, Path outputFi
 }
 ```
 
-The example class also shows how to remove unused objects, remove unused streams, link duplicate streams, and unembed fonts.
 
-## Flatten annotations or forms
-
-`flattenAnnotations` iterates through page annotations and calls `annotation.flatten()`. `flattenForms` does the same for form fields by flattening each `Field`.
-
-## Convert to grayscale and use Flate compression
-
-The remaining optimization examples demonstrate `page.makeGrayscale()` and `ImageEncoding.Flate` for image compression tuning.

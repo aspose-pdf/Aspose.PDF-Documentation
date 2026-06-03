@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/interactive-annotations/
 description: Learn how to add, inspect, and delete link annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-02"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -36,5 +36,11 @@ public static void linkAdd(Path inputFile, Path outputFile) {
     }
 }
 ```
+## Related annotation topics
 
-The same example class also includes `linkGet` and `linkDelete` methods that enumerate or remove annotations where `AnnotationType` is `Link`.
+- [Markup Annotations](/pdf/java/markup-annotations/)
+- [Security Annotations](/pdf/java/security-annotations/)
+- [Shape Annotations](/pdf/java/shape-annotations/)
+- [Text Annotations](/pdf/java/text-based-annotations/)
+- [Watermark Annotations](/pdf/java/watermark-annotations/)
+- [Import and Export Annotations](/pdf/java/import-export-annotations/)
