@@ -66,7 +66,7 @@ Let's check the next section for more details: [Actions](/pdf/java/actions/)
 
 Security features such as digital signatures help ensure the integrity of PDF documents. By digitally signing a document, the sender can verify that the content has not been tampered with or altered since it was signed, providing assurance to recipients regarding the authenticity of the document.
 
-With **Aspose.PDF for Java** is possible to sign PDF from Smart Card, encrypt, and decrypt files, extract images, and Signature info etc. 
+With **Aspose.PDF for Java** is possible to sign PDF from Smart Card, encrypt, and decrypt files, extract images, and Signature info etc.
 
 Let's check Docs pages for more details: [Securing and Signing](/pdf/java/securing-and-signing/)
 
