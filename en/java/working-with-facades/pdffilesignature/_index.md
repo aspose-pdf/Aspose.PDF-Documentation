@@ -1,25 +1,23 @@
 ---
 title: PdfFileSignature Class
-linktitle: PdfFileSignature Class
 type: docs
 weight: 60
 url: /java/pdffilesignature-class/
-description: Learn how to use the PdfFileSignature facade in Java to sign, certify, inspect, verify, extract, and remove PDF digital signatures.
-lastmod: "2026-05-28"
+description: Learn how to use the PdfFileSignature facade in Java to sign, certify, inspect, verify, extract, and remove PDF signatures.
+lastmod: "2026-06-03"
+draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Sign, certify, and verify PDF signatures in Java with PdfFileSignature
-Abstract: This section explains how to use the PdfFileSignature class in Aspose.PDF for Java to work with digital signatures. The Java examples cover signing with certificate parameters or a PKCS7 object, certifying documents with MDP permissions, reading signature details, verifying signatures, extracting certificates, and removing signatures from signed PDFs.
+AlternativeHeadline: Sign, certify, and inspect PDF signatures in Java with PdfFileSignature
+Abstract: This section explains how to use the PdfFileSignature facade in Aspose.PDF for Java for digital-signature workflows. The current Java examples cover signing with a certificate or PKCS7 object, certifying a PDF with DocMDP permissions, reading signature details, verifying signatures, extracting the signing certificate, and removing a signature.
 ---
-The Java `PdfFileSignatureExamples` class covers the main signing and verification workflows for secured PDF documents.
+The Java `PdfFileSignatureExamples` class demonstrates the main signature workflows available through the Facades API.
 
-Use these examples to learn how to:
+Use this section to learn how to:
 
-- Sign a PDF by setting certificate parameters directly
-- Sign or certify a PDF with a PKCS7-based signature object
-- Read signer, date, reason, and location from an existing signature
-- Verify a signature and check whether it covers the whole document
-- Extract the embedded signing certificate
-- Remove a signature from a signed PDF
+- sign and certify PDF documents
+- inspect signature names, signer details, and timestamps
+- verify signature validity and whole-document coverage
+- extract a signing certificate and remove an existing signature

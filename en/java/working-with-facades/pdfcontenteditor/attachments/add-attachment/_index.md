@@ -1,23 +1,30 @@
 ---
 title: Add Attachment
-linktitle: Add Attachment
 type: docs
 weight: 10
 url: /java/add-attachment/
-description: Learn how to add a document attachment to a PDF file in Java with PdfContentEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to attach an external file to a PDF document in Java using the PdfContentEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Attach a file to a PDF document using Java
-Abstract: This article explains how to use the `addAttachment` example from `PdfContentEditorExamples` to attach a file to a PDF in Aspose.PDF for Java. The sample binds a PDF, opens the attachment as a stream, adds it with a description, and saves the updated document.
+AlternativeHeadline: Add a file attachment to a PDF in Java
+Abstract: This article shows how to bind a PDF, open an attachment as a stream, add the document attachment with a description, and save the updated file using the PdfContentEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `addAttachment`.
+## Add a document attachment
 
-It demonstrates how to:
+1. Bind the source PDF to the `PdfContentEditor` facade.
+2. Open the attachment file as an input stream.
+3. Call `addDocumentAttachment(...)` with the stream, file name, and description.
+4. Save the updated PDF document.
 
-- bind the source PDF with `PdfContentEditor`
-- open the attachment file as an input stream
-- call `addDocumentAttachment(...)` with the file name and description
-- save the updated PDF
+```java
+public static void addAttachment(Path inputFile, Path attachmentFile, Path outputFile) throws Exception {
+    PdfContentEditor editor = new PdfContentEditor();
+    try (InputStream attachmentStream = Files.newInputStream(attachmentFile)) {
+        editor.bindPdf(inputFile.toString());
+        editor.addDocumentAttachment(attachmentStream, attachmentFile.getFileName().toString(), "Sample attachment.");
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

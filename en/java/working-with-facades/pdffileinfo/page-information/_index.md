@@ -1,20 +1,21 @@
 ---
 title: Page Information
-linktitle: Page Information
 type: docs
 weight: 20
 url: /java/page-information/
-description: Learn how to inspect PDF page size, rotation, and offsets in Java with PdfFileInfo.
-lastmod: "2026-05-28"
+description: Learn how to inspect PDF page dimensions, rotation, and offsets in Java with the PdfFileInfo facade.
+lastmod: "2026-06-03"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Read PDF page information and offsets in Java
-Abstract: This section covers the page-information workflows currently implemented in `PdfFileInfoExamples` for Aspose.PDF for Java. The Java source directly includes reading page width, height, rotation, and page X and Y offsets for a selected page.
+AlternativeHeadline: Retrieve PDF Page Information and Offsets
+Abstract: This section explains how to inspect page-level layout information with PdfFileInfo in Aspose.PDF for Java. The Java examples show how to read page width, height, and rotation, and how to convert X and Y offsets from PDF points into inches for easier layout analysis.
 ---
-The current Java `PdfFileInfoExamples` class provides direct page-information coverage for:
+Use these examples when you need to analyze page geometry before placing or aligning additional content.
 
-- `getPageInformation(...)`
-- `getPageOffsets(...)`
+This section covers how to:
+
+- read page width, height, and rotation for a specific page
+- inspect X and Y page offsets and convert them into inches

@@ -1,18 +1,29 @@
 ---
 title: Set Field Appearance
-linktitle: Set Field Appearance
 type: docs
-weight: 50
+weight: 40
 url: /java/set-field-appearance/
-description: Learn how to set field appearance flags for a PDF form field in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to change the visual appearance flags of a PDF form field in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Set PDF Form Field Appearance Using Java
-Abstract: This article explains how to use the `setFieldAppearance` example from `FormEditorExamples` to apply appearance flags to a field in Aspose.PDF for Java. The sample binds an input PDF, sets `AnnotationFlags.Hidden` for the `First Name` field, and saves the modified document.
+AlternativeHeadline: Change PDF form field appearance flags in Java
+Abstract: This article shows how to bind an existing PDF, apply an appearance flag to a field, and save the updated document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `setFieldAppearance`.
+## Set field appearance flags
 
-It demonstrates how to update field appearance flags directly through `FormEditor` instead of changing colors or alignment through `FormFieldFacade`.
+1. Bind the source PDF to the `FormEditor` facade.
+2. Call `setFieldAppearance(...)` for the target field and chosen annotation flag.
+3. Save the updated document.
+
+```java
+public static void setFieldAppearance(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.setFieldAppearance("First Name", AnnotationFlags.Hidden);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

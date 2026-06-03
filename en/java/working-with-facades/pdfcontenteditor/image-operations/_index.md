@@ -1,16 +1,31 @@
 ---
 title: Image Operations
-linktitle: Image Operations
 type: docs
-weight: 60
-url: /java/image-operations/
-description: Learn how to replace images in a PDF document in Java with PdfContentEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+weight: 50
+url: /java/pdfcontenteditor-image-operations/
+description: Learn the current Java image-operation coverage available in the PdfContentEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Work with PDF images in Java using PdfContentEditor
-Abstract: This section covers the image workflows currently implemented in `PdfContentEditorExamples` for Aspose.PDF for Java. The current Java source directly includes image replacement, while image deletion pages remain scope notes until matching Java samples are added.
+AlternativeHeadline: Image editing workflows in Java with PdfContentEditor
+Abstract: This section covers image-related workflows currently supported by the Java PdfContentEditor example set. The repository includes a direct example for replacing an image, while unsupported image-deletion topics are retained as explicit scope notes.
 ---
-The current Java `PdfContentEditorExamples` class provides direct image-operation coverage for `replaceImage(...)`.
+The current Java `PdfContentEditorExamples` class directly supports `replaceImage(...)`.
+
+## Replace an image
+
+1. Bind the source PDF to the `PdfContentEditor` facade.
+2. Call `replaceImage(...)` with the page number, image index, and replacement image path.
+3. Save the updated PDF document.
+
+```java
+public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) {
+    PdfContentEditor editor = new PdfContentEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.replaceImage(1, 1, imageFile.toString());
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

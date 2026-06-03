@@ -1,18 +1,29 @@
 ---
 title: Remove Field
-linktitle: Remove Field
 type: docs
-weight: 60
+weight: 40
 url: /java/remove-field/
-description: Learn how to remove an existing form field from a PDF document in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to remove an existing form field from a PDF document in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Remove a Form Field from a PDF Document Using Java
-Abstract: This article explains how to use the `removeField` example from `FormEditorExamples` to delete a field from a PDF in Aspose.PDF for Java. The sample binds an existing document, removes the `Country` field, and saves the updated result.
+AlternativeHeadline: Delete a PDF form field in Java
+Abstract: This article shows how to bind an existing PDF, remove a specified field, and save the updated document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `removeField`.
+## Remove a field
 
-It demonstrates how to target a field by name, remove it from the form structure, and save the modified PDF.
+1. Bind the source PDF to the `FormEditor` facade.
+2. Call `removeField(...)` for the target field name.
+3. Save the updated document.
+
+```java
+public static void removeField(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.removeField("Country");
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

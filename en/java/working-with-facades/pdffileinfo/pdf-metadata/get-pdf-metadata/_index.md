@@ -1,24 +1,48 @@
 ---
 title: Get PDF Metadata
-linktitle: Get PDF Metadata
 type: docs
 weight: 20
 url: /java/get-pdf-metadata/
-description: Learn how to read standard and custom PDF metadata in Java with PdfFileInfo.
-lastmod: "2026-05-28"
+description: Learn how to read PDF metadata in Java with the PdfFileInfo facade.
+lastmod: "2026-06-03"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Retrieve PDF metadata in Java with PdfFileInfo
-Abstract: This article explains how to use the `getPdfMetadata` example from `PdfFileInfoExamples` to inspect built-in and custom metadata in Aspose.PDF for Java. The sample reads subject, title, keywords, creator, creation and modification dates, validity and encryption flags, password indicators, collection status, and a custom `Reviewer` metadata entry.
+AlternativeHeadline: Retrieving PDF Metadata Using Aspose.PDF for Java.
+Abstract: Learn how to retrieve PDF metadata with Aspose.PDF for Java. The Java example reads standard fields such as subject, title, keywords, creator, creation date, and modification date, along with file status flags and a custom `Reviewer` metadata entry.
 ---
-The current Java example for this article is `getPdfMetadata`.
+## Get PDF metadata
 
-It demonstrates how to:
+This example reads standard document information, file status flags, and a custom metadata key.
 
-- read standard metadata values such as title, subject, keywords, and creator
-- inspect creation and modification dates
-- check PDF validity, encryption state, and password flags
-- read a custom metadata entry with `getMetaInfo("Reviewer")`
+### Steps
+
+1. Create a `PdfFileInfo` object for the source PDF.
+2. Read the standard metadata fields such as subject, title, keywords, and creator.
+3. Inspect file state flags such as whether the file is valid, encrypted, password protected, or a portfolio.
+4. Read a custom metadata value with `getMetaInfo`.
+5. Close the `PdfFileInfo` instance.
+
+### Java example
+
+```java
+public static void getPdfMetadata(Path inputFile) {
+    PdfFileInfo pdfInfo = new PdfFileInfo(inputFile.toString());
+    System.out.println("Subject: " + pdfInfo.getSubject());
+    System.out.println("Title: " + pdfInfo.getTitle());
+    System.out.println("Keywords: " + pdfInfo.getKeywords());
+    System.out.println("Creator: " + pdfInfo.getCreator());
+    System.out.println("Creation Date: " + pdfInfo.getCreationDate());
+    System.out.println("Modification Date: " + pdfInfo.getModDate());
+    System.out.println("Is Valid PDF: " + pdfInfo.isPdfFile());
+    System.out.println("Is Encrypted: " + pdfInfo.isEncrypted());
+    System.out.println("Has Open Password: " + pdfInfo.hasOpenPassword());
+    System.out.println("Has Edit Password: " + pdfInfo.hasEditPassword());
+    System.out.println("Is Portfolio: " + pdfInfo.hasCollection());
+    String reviewer = pdfInfo.getMetaInfo("Reviewer");
+    System.out.println("Reviewer: " + (reviewer == null || reviewer.isBlank() ? "No Reviewer metadata found." : reviewer));
+    pdfInfo.close();
+}
+```

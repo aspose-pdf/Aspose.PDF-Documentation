@@ -1,18 +1,31 @@
 ---
-title: Set Submit Url
-linktitle: Set Submit Url
+title: Set Submit URL
 type: docs
-weight: 40
+weight: 30
 url: /java/set-submit-url/
-description: Learn how to configure a submit URL for an existing PDF form button in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to set a submit URL for a PDF form button in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Set a Submit URL for a PDF Form Button Using Java
-Abstract: This article explains how to use the `setSubmitUrl` example from `FormEditorExamples` to configure form submission behavior in Aspose.PDF for Java. The sample targets `Script_Demo_Button`, sets the submission endpoint, applies an XFDF submit flag, and saves the updated document.
+AlternativeHeadline: Configure a PDF form submit URL in Java
+Abstract: This article shows how to bind an existing PDF, set a submit URL and submit flag for a button field, and save the updated document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `setSubmitUrl`.
+## Set a submit URL
 
-It demonstrates how to configure submit behavior for an existing button field by assigning a URL and setting `SubmitFormFlag.Xfdf` before saving the PDF.
+1. Bind the source PDF to the `FormEditor` facade.
+2. Call `setSubmitUrl(...)` for the button field.
+3. Apply the submit flag for the submission format.
+4. Save the updated document.
+
+```java
+public static void setSubmitUrl(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.setSubmitUrl("Script_Demo_Button", "http://www.example.com/submit");
+        editor.setSubmitFlag("Script_Demo_Button", SubmitFormFlag.Xfdf);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

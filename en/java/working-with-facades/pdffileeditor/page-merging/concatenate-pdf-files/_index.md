@@ -1,23 +1,33 @@
 ---
 title: Concatenate Multiple PDF Files
-linktitle: Concatenate Multiple PDF Files
 type: docs
 weight: 20
 url: /java/concatenate-pdf-files/
-description: Learn how to merge PDF files into one document in Java with PdfFileEditor.
-lastmod: "2026-05-28"
+description: Merge PDF files in Java with the array-based PdfFileEditor concatenate workflow.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Merge multiple PDF files into one document in Java
-Abstract: This article explains how to use the `mergePdfDocuments` example from `PdfFileEditorExamples` to merge PDF files in Aspose.PDF for Java. The sample passes input file paths into `concatenate(...)` and writes the combined output PDF.
+AlternativeHeadline: Merge multiple PDF files into one document with Java
+Abstract: Learn how to concatenate PDF files with Aspose.PDF for Java. The repository sample uses the array-based `concatenate` overload with two inputs, and the same workflow can be extended to longer file lists because the method accepts a string array of source paths.
 ---
-The current Java example for this article is `mergePdfDocuments`.
+## Concatenate PDF files
 
-It demonstrates how to:
+The Java sample merges two files by passing them to the array-based `concatenate` overload.
 
-- create a `PdfFileEditor` instance
-- pass the input PDF paths as a string array
-- call `concatenate(...)`
-- save the merged output document
+### Steps
+
+1. Create a `PdfFileEditor` instance.
+2. Build a string array with the input PDF paths.
+3. Call `concatenate` with the input array and output file path.
+4. Save the merged document.
+
+```java
+public static void mergePdfDocuments(Path firstInputFile, Path secondInputFile, Path outputFile) {
+    PdfFileEditor pdfEditor = new PdfFileEditor();
+    pdfEditor.concatenate(new String[] {firstInputFile.toString(), secondInputFile.toString()}, outputFile.toString());
+}
+```
+
+To merge more than two files, extend the string array passed to `concatenate`.

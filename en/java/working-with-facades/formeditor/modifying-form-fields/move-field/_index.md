@@ -1,18 +1,29 @@
 ---
 title: Move Field
-linktitle: Move Field
 type: docs
-weight: 50
+weight: 30
 url: /java/move-field/
-description: Learn how to move an existing PDF form field to a new position in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to move an existing form field in a PDF document in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Move a PDF Form Field to a New Position Using Java
-Abstract: This article explains how to use the `moveField` example from `FormEditorExamples` to reposition a field in Aspose.PDF for Java. The sample moves the `Country` field to a new rectangle defined by `(200, 600, 280, 620)` and saves the updated PDF.
+AlternativeHeadline: Move a PDF form field to a new position in Java
+Abstract: This article shows how to bind an existing PDF, move a field to new coordinates, and save the updated document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `moveField`.
+## Move a field
 
-It shows how to relocate an existing field by name and persist the new field bounds to the output file.
+1. Bind the source PDF to the `FormEditor` facade.
+2. Call `moveField(...)` with the target field name and new rectangle coordinates.
+3. Save the updated document.
+
+```java
+public static void moveField(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.moveField("Country", 200, 600, 280, 620);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

@@ -1,23 +1,18 @@
 ---
 title: Adding Scripts and Submit Actions
-linktitle: Adding Scripts and Submit Actions
 type: docs
 weight: 40
 url: /java/adding-scripts-and-submit-actions/
-description: Learn how to assign JavaScript and submit actions to PDF form fields in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to add scripts, configure submit URLs, and remove field actions in PDF forms using the FormEditor facade in Java.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Add and Manage PDF Form Field Scripts and Submit Actions in Java
-Abstract: This section explains the script and submit-action workflows currently covered by Aspose.PDF for Java in `FormEditorExamples`. The direct Java samples focus on assigning and replacing field scripts, configuring submit URLs and XFDF submit flags for an existing button field, and removing submit actions from a field.
+AlternativeHeadline: Add field scripts and submit actions to PDF forms in Java
+Abstract: This section covers the Java FormEditor workflows for attaching JavaScript to form fields, configuring submit URLs and flags, and removing field actions in interactive PDF forms.
 ---
-The current Java `FormEditorExamples` class provides direct example coverage for `setFieldScript`, `setSubmitUrl`, and `removeFieldAction`.
+The Java `FormEditorExamples` class demonstrates how to work with field actions after the form structure has already been created.
+Use this section to:
 
-This subsection includes:
-
-- JavaScript assignment and replacement for an existing button field
-- Submit URL configuration for an existing form button
-- XFDF submit flag configuration as part of the same submit-action workflow
-- Removal of a submit action from an existing field
+- add a JavaScript action to a field
+- replace an existing field script
+- configure a submit URL and submit flag
+- remove a field action

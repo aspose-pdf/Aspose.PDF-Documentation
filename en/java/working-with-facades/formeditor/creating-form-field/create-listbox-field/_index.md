@@ -1,18 +1,33 @@
 ---
 title: Create ListBox Field
-linktitle: Create ListBox Field
 type: docs
-weight: 30
+weight: 40
 url: /java/create-listbox-field/
-description: Learn how to create a list box field in a PDF document in Java and populate it with predefined items.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to add a list box field to a PDF document in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Create a ListBox Field in a PDF Using Aspose.PDF for Java
-Abstract: This article explains how to create a list box field by using the `createListBoxField` example from `FormEditorExamples`. The Java sample configures list items with `setItems(...)`, adds a `FieldType.ListBox` control, sets the initial value, and saves the updated PDF.
+AlternativeHeadline: Create a list box field in a PDF with Java
+Abstract: This article shows how to bind an existing PDF, define list items, add a list box field, and save the modified document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `createListBoxField`.
+Use `FormEditorExamples.createListBoxField(...)` to create a list box with predefined items.
 
-It demonstrates how to define a list of items, bind an input PDF, create a `listbox1` field with `FieldType.ListBox`, set `Australia` as the initial value, and save the modified document.
+## Create a list box field
+
+1. Bind the source PDF to the `FormEditor` facade.
+2. Define the available list items with `setItems(...)`.
+3. Add the list box field with its default value and rectangle.
+4. Save the updated document.
+
+```java
+public static void createListBoxField(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.setItems(new String[] {"Australia", "New Zealand", "Malaysia"});
+        editor.addField(FieldType.ListBox, "listbox1", "Australia", 1, 230, 398, 350, 514);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

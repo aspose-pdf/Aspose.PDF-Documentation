@@ -1,20 +1,40 @@
 ---
 title: Create PDF Booklet
-linktitle: Create PDF Booklet
 type: docs
 weight: 20
 url: /java/create-pdf-booklet/
-description: Learn how to generate a booklet-style PDF in Java with PdfFileEditor.
-lastmod: "2026-05-28"
+description: Create a booklet-ready PDF from an existing document in Java with the PdfFileEditor facade.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Create a booklet-style PDF from an existing document in Java
-Abstract: This article explains how to use the `createPdfBooklet` example from `PdfFileEditorExamples` to rearrange pages into booklet order in Aspose.PDF for Java. The current Java source also includes `tryCreatePdfBooklet`, which demonstrates checking the boolean return value when booklet creation fails.
+AlternativeHeadline: Generate booklet output from a PDF document in Java
+Abstract: Learn how to create a PDF booklet with Aspose.PDF for Java. The Java example uses PdfFileEditor to reorder pages for booklet printing and also includes a boolean-return variant for simple success checking.
 ---
-The current Java example for this article is `createPdfBooklet`.
+## Create a PDF booklet
 
-It demonstrates how to call `makeBooklet(...)` and save the reordered output PDF.
+Use `PdfFileEditor.makeBooklet` to rearrange the pages of an existing PDF into booklet order.
 
-The same source file also includes `tryCreatePdfBooklet`, which uses the boolean return value to handle failure without throwing a custom exception.
+### Steps
+
+1. Create a `PdfFileEditor` instance.
+2. Call `makeBooklet` with the source PDF and output file.
+3. Save the booklet document.
+4. If you want to check the return status, use the boolean-return variant and handle a failed result.
+
+### Java example
+
+```java
+public static void createPdfBooklet(Path inputFile, Path outputFile) {
+    PdfFileEditor bookletMaker = new PdfFileEditor();
+    bookletMaker.makeBooklet(inputFile.toString(), outputFile.toString());
+}
+
+public static void tryCreatePdfBooklet(Path inputFile, Path outputFile) {
+    PdfFileEditor bookletMaker = new PdfFileEditor();
+    if (!bookletMaker.makeBooklet(inputFile.toString(), outputFile.toString())) {
+        System.out.println("Failed to create booklet.");
+    }
+}
+```

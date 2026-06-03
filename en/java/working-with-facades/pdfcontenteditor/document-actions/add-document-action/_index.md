@@ -1,18 +1,29 @@
 ---
 title: Add Document Action
-linktitle: Add Document Action
 type: docs
-weight: 20
+weight: 10
 url: /java/add-document-action/
-description: Learn how to add a document open action to a PDF in Java with PdfContentEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to add a document-open action to a PDF in Java using the PdfContentEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Add a document open action to a PDF using Java
-Abstract: This article explains how to use the `addDocumentAction` example from `PdfContentEditorExamples` to attach a document-level open action in Aspose.PDF for Java. The sample binds a PDF, assigns JavaScript to the document open event, and saves the updated file.
+AlternativeHeadline: Add a document-open action to a PDF in Java
+Abstract: This article shows how to bind a PDF, attach a JavaScript action to the document-open event, and save the updated document using the PdfContentEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `addDocumentAction`.
+## Add a document-open action
 
-It demonstrates how to call `addDocumentAdditionalAction(...)` with `PdfContentEditor.DOCUMENT_OPEN` and persist the updated PDF.
+1. Bind the source PDF to the `PdfContentEditor` facade.
+2. Call `addDocumentAdditionalAction(...)` with the `DOCUMENT_OPEN` event and the JavaScript action text.
+3. Save the updated PDF document.
+
+```java
+public static void addDocumentAction(Path inputFile, Path outputFile) {
+    PdfContentEditor editor = new PdfContentEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.addDocumentAdditionalAction(PdfContentEditor.DOCUMENT_OPEN, "app.alert('Document opened with PdfContentEditor action');");
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

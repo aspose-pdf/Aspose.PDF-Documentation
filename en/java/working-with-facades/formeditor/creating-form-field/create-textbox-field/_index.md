@@ -1,18 +1,32 @@
 ---
 title: Create TextBox Field
-linktitle: Create TextBox Field
 type: docs
-weight: 60
+weight: 10
 url: /java/create-textbox-field/
-description: Learn how to create text box fields in a PDF document in Java and assign default values.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to add text box fields to a PDF document in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Create TextBox Fields in a PDF Using Aspose.PDF for Java
-Abstract: This article explains how to create text box fields by using the `createTextBoxField` example from `FormEditorExamples`. The Java sample binds a PDF, adds multiple `FieldType.Text` controls with default values, and saves the updated file.
+AlternativeHeadline: Create text form fields in a PDF with Java
+Abstract: This article shows how to bind an existing PDF, add text fields with default values, and save the modified document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `createTextBoxField`.
+Use `FormEditorExamples.createTextBoxField(...)` to add text fields to a PDF form.
 
-It demonstrates how to add two text fields named `first_name` and `last_name`, assign default values, place them at specific coordinates on page 1, and save the modified PDF.
+## Create text box fields
+
+1. Bind the source PDF to the `FormEditor` facade.
+2. Add each text field with `FieldType.Text`, the field name, default value, page number, and rectangle.
+3. Save the updated document.
+
+```java
+public static void createTextBoxField(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.addField(FieldType.Text, "first_name", "Alexander", 1, 50, 570, 150, 590);
+        editor.addField(FieldType.Text, "last_name", "Smith", 1, 235, 570, 330, 590);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

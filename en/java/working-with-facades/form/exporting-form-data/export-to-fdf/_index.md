@@ -1,11 +1,10 @@
 ---
 title: Export to FDF
-linktitle: Export to FDF
 type: docs
 weight: 10
 url: /java/export-to-fdf/
 description: Learn how to export PDF form field values to FDF in Java using the Form facade in Aspose.PDF.
-lastmod: "2026-05-28"
+lastmod: "2026-06-03"
 TechArticle: true
 AlternativeHeadline: Export AcroForm data to FDF in Java
 Abstract: This article shows how to bind a PDF form and export its field data to an FDF stream with the Form facade in Aspose.PDF for Java.

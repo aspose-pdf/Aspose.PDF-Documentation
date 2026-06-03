@@ -1,19 +1,70 @@
 ---
 title: Add Header to PDF
-linktitle: Add Header to PDF
 type: docs
 weight: 20
 url: /java/add-header/
-description: Learn how to add text and image headers to a PDF in Java with PdfFileStamp.
-lastmod: "2026-05-28"
+description: Learn how to add text and image headers to PDF pages in Java with the PdfFileStamp facade.
+lastmod: "2026-06-03"
+draft: false
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add text and image headers to PDF documents in Java
-Abstract: This article explains how to use the header examples from `PdfFileStampExamples` in Aspose.PDF for Java. The current Java source includes adding a text header, adding an image header from a stream, and adding a formatted text header with explicit margins.
+AlternativeHeadline: Add text and image headers to PDF in Java
+Abstract: Learn how to add header content to PDF documents with Aspose.PDF for Java using the PdfFileStamp facade. The Java examples cover plain text headers, image headers loaded from a stream, and styled headers with explicit margin values.
 ---
-The current Java source provides three header examples:
+## Add header to PDF
 
-- `addTextHeader`, which creates a simple `FormattedText` object and adds it with `addHeader(text, 20)`
-- `addImageHeader`, which opens the image file as an input stream and passes that stream into `addHeader(...)`
-- `addHeaderWithMargins`, which builds a styled `FormattedText` object with color, font, encoding, bold text, and font size, then applies it with custom margins
+Use `PdfFileStamp` when you need repeated header content on each page.
 
-These examples show the text, image, and margin-aware header workflows that are currently implemented in the Java sample set.
+### Steps
+
+1. Create a `PdfFileStamp` instance and bind the source PDF.
+2. Build the header content as `FormattedText` or load it from an image stream.
+3. Call the appropriate `addHeader` overload.
+4. Save the output and close the facade object.
+
+### Java examples
+
+```java
+public static void addTextHeader(Path inputFile, Path outputFile) {
+    PdfFileStamp pdfStamper = new PdfFileStamp();
+    try {
+        pdfStamper.bindPdf(inputFile.toString());
+        FormattedText text = new FormattedText("Sample Header");
+        pdfStamper.addHeader(text, 20);
+        pdfStamper.save(outputFile.toString());
+    } finally {
+        pdfStamper.close();
+    }
+}
+
+public static void addImageHeader(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    PdfFileStamp pdfStamper = new PdfFileStamp();
+    try (InputStream imageStream = Files.newInputStream(imageFile)) {
+        pdfStamper.bindPdf(inputFile.toString());
+        pdfStamper.addHeader(imageStream, 20);
+        pdfStamper.save(outputFile.toString());
+    } finally {
+        pdfStamper.close();
+    }
+}
+
+public static void addHeaderWithMargins(Path inputFile, Path outputFile) {
+    PdfFileStamp pdfStamper = new PdfFileStamp();
+    try {
+        pdfStamper.bindPdf(inputFile.toString());
+        FormattedText text = new FormattedText(
+                "Sample Header",
+                Color.BLUE,
+                FontStyle.Helvetica,
+                EncodingType.Winansi,
+                true,
+                12.0f);
+        pdfStamper.addHeader(text, 20, 20, 20);
+        pdfStamper.save(outputFile.toString());
+    } finally {
+        pdfStamper.close();
+    }
+}
+```

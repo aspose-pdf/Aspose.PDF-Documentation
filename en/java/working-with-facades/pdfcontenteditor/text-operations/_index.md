@@ -1,19 +1,16 @@
 ---
 title: Text Operations
-linktitle: Text Operations
 type: docs
-weight: 100
-url: /java/text-operations/
-description: Learn how to replace text in PDF documents in Java with PdfContentEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+weight: 90
+url: /java/pdfcontenteditor-text-operations/
+description: Learn the current Java text-replacement coverage available in the PdfContentEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Replace PDF text in Java using PdfContentEditor
-Abstract: This section covers the text-replacement workflows currently implemented in `PdfContentEditorExamples` for Aspose.PDF for Java. The current Java source directly includes simple text replacement and text replacement with a `TextState`, while page-specific and regex-based pages remain scope notes until matching Java samples are added.
+AlternativeHeadline: Text replacement workflows in Java with PdfContentEditor
+Abstract: This section covers text-replacement workflows currently supported by the Java PdfContentEditor example set. The repository includes direct examples for replacing text globally and with a custom text state, while other text-operation pages remain explicit scope notes.
 ---
-The current Java `PdfContentEditorExamples` class provides direct text-operation coverage for:
+The current Java `PdfContentEditorExamples` class directly supports:
 
 - `replaceTextSimple(...)`
 - `replaceTextWithState(...)`
+

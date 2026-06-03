@@ -1,22 +1,61 @@
 ---
 title: Encrypt PDF File
-linktitle: Encrypt PDF File
 type: docs
 weight: 30
 url: /java/encrypt-pdf-file/
-description: Learn how to encrypt a PDF in Java with PdfFileSecurity using passwords, permissions, and algorithm settings.
-lastmod: "2026-05-28"
+description: Learn how to encrypt a PDF and configure permissions in Java with the PdfFileSecurity facade.
+lastmod: "2026-06-03"
+draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Encrypt PDFs in Java with passwords and permission controls
-Abstract: This article explains how to use the encryption examples from `PdfFileSecurityExamples` in Aspose.PDF for Java. The current Java source includes encrypting a PDF with user and owner passwords, encrypting while adjusting permission flags, and encrypting with a specific key size and AES algorithm.
+AlternativeHeadline: Encrypt PDF files and define user permissions in Java
+Abstract: Learn how to encrypt a PDF with Aspose.PDF for Java. The Java example set covers password-based encryption with restricted privileges, permission-focused encryption, and AES-based encryption with a 256-bit key size.
 ---
-The current Java source provides three encryption examples:
+## Encrypt PDF file
 
-- `encryptPdfWithUserOwnerPassword`, which starts from `DocumentPrivilege.getForbidAll()`, re-enables printing, and encrypts the PDF with user and owner passwords
-- `encryptPdfWithPermissions`, which starts from `DocumentPrivilege.getAllowAll()`, disables printing and copying, and saves the encrypted result
-- `encryptPdfWithEncryptionAlgorithm`, which uses `KeySize.x256` together with `Algorithm.AES`
+Use `PdfFileSecurity` when you need to protect a PDF with passwords and privilege rules.
 
-These examples demonstrate how to bind the input PDF, configure the `DocumentPrivilege` object, call the appropriate `encryptFile(...)` overload, and save the secured output.
+### Steps
+
+1. Create a `PdfFileSecurity` instance.
+2. Bind the source PDF with `bindPdf`.
+3. Build a `DocumentPrivilege` object that matches the allowed actions.
+4. Call the appropriate `encryptFile` overload for the key size and algorithm you need.
+5. Save the secured file and close the object.
+
+### Java examples
+
+```java
+public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    fileSecurity.encryptFile("user_password", "owner_password", privilege, KeySize.x128);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void encryptPdfWithPermissions(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getAllowAll();
+    privilege.setAllowPrint(false);
+    privilege.setAllowCopy(false);
+    fileSecurity.encryptFile("user_password", "owner_password", privilege, KeySize.x128);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void encryptPdfWithEncryptionAlgorithm(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    fileSecurity.encryptFile("user_password", "owner_password", privilege, KeySize.x256, Algorithm.AES);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+```

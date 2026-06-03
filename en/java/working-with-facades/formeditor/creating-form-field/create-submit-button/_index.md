@@ -1,18 +1,31 @@
 ---
 title: Create Submit Button
-linktitle: Create Submit Button
 type: docs
-weight: 50
+weight: 60
 url: /java/create-submit-button/
-description: Learn how to create a submit button in a PDF document in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to add a submit button to a PDF document in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Create a Submit Button in a PDF Using Aspose.PDF for Java
-Abstract: This article explains how to create a submit button by using the `createSubmitButton` example from `FormEditorExamples`. The Java sample binds a PDF, adds a submit button with `addSubmitBtn(...)`, assigns the target URL, and saves the updated document.
+AlternativeHeadline: Create a PDF submit button in Java
+Abstract: This article shows how to bind an existing PDF, add a submit button field with a target URL, and save the modified document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `createSubmitButton`.
+Use `FormEditorExamples.createSubmitButton(...)` to create a button that submits form data.
 
-It demonstrates how to create a new button field named `submitbutton`, place it on page 1, assign a `Submit` caption, point it to the configured URL, and save the modified PDF.
+## Create a submit button
+
+1. Bind the source PDF to the `FormEditor` facade.
+2. Call `addSubmitBtn(...)` with the button name, page, label, target URL, and rectangle.
+3. Save the updated document.
+
+```java
+public static void createSubmitButton(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.addSubmitBtn("submitbutton", 1, "Submit", "http://localhost/testing/show", 100, 450, 150, 475);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

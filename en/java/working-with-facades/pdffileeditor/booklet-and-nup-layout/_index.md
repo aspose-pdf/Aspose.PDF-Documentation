@@ -1,21 +1,21 @@
 ---
 title: Booklet and N-Up Layout
-linktitle: Booklet and N-Up Layout
 type: docs
 weight: 10
 url: /java/booklet-and-nup-layout/
-description: Learn how to create booklet and N-Up layouts in Java with PdfFileEditor.
-lastmod: "2026-05-28"
+description: Learn how to rearrange PDF pages into booklet and N-Up layouts with the PdfFileEditor facade in Java.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Create booklet and N-Up PDF layouts in Java
-Abstract: This section covers the layout-transformation workflows currently implemented in `PdfFileEditorExamples` for Aspose.PDF for Java. The current Java source directly includes booklet creation and N-Up generation, and also includes boolean-returning variants that demonstrate explicit failure handling.
+AlternativeHeadline: Create booklet and N-Up page layouts for PDF files in Java
+Abstract: This section covers page imposition workflows available through PdfFileEditor in Aspose.PDF for Java. The Java examples show how to generate booklet output and 2x2 N-Up layouts, including boolean-return variants that let you check whether the operation succeeded.
 ---
-The current Java `PdfFileEditorExamples` class provides direct layout coverage for:
+Use the PdfFileEditor facade when you need to reflow an existing PDF for printing or compact review.
 
-- `createPdfBooklet(...)`
-- `tryCreatePdfBooklet(...)`
-- `createNupPdfDocument(...)`
-- `tryCreateNupPdfDocument(...)`
+This section covers how to:
+
+- create a booklet-ready PDF from an existing document
+- place multiple source pages on each output sheet with an N-Up layout
+- handle the boolean return value used by the `try` style examples in the Java sample set

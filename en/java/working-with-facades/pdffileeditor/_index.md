@@ -1,25 +1,23 @@
 ---
 title: PdfFileEditor Class
-linktitle: PdfFileEditor Class
 type: docs
 weight: 10
 url: /java/pdffileeditor-class/
-description: Learn how to use the PdfFileEditor facade in Java to merge, split, extract, insert, append, resize, and reflow PDF pages.
-lastmod: "2026-05-28"
+description: Learn how to use the PdfFileEditor facade in Java to merge documents, split PDFs, rearrange pages, and adjust page layout.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Edit PDF pages, merge files, and split documents with PdfFileEditor in Java
-Abstract: Learn how to use the PdfFileEditor class in Aspose.PDF for Java to manipulate PDF pages and document structure. The Java examples cover merging files, splitting documents from the beginning or end, splitting into single-page outputs, extracting and deleting pages, inserting and appending content, creating booklets and N-Up layouts, resizing page contents, adding margins, and inserting page breaks.
+AlternativeHeadline: Edit PDF document structure and page layout in Java with PdfFileEditor
+Abstract: This section explains how to use the PdfFileEditor facade in Aspose.PDF for Java for document-level editing workflows. The current Java example set covers merging files, splitting PDFs, extracting or deleting pages, inserting or appending pages, booklet and N-Up layout generation, and page layout adjustments.
 ---
-The Java `PdfFileEditorExamples` class demonstrates document-level page operations that are common in assembly and prepress workflows.
+The Java `PdfFileEditorExamples` class demonstrates the main document-editing workflows exposed by the Facades API.
 
-Use this section for examples that:
+Use this section to learn how to:
 
-- Merge multiple PDF documents
-- Split a PDF from the beginning, to the end, or into single pages
-- Extract, delete, insert, and append pages
-- Create booklet and N-Up layouts
-- Add margins and resize page contents
-- Insert page breaks at specific positions
+- merge PDF files with the `concatenate` method
+- split a document from the beginning, to the end, or into single-page files
+- extract, delete, insert, and append pages
+- create booklet and N-Up output for printing
+- add margins, resize page contents, and insert page breaks

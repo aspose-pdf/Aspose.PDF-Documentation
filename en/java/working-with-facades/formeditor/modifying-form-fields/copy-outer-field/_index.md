@@ -1,18 +1,35 @@
 ---
 title: Copy Outer Field
-linktitle: Copy Outer Field
 type: docs
-weight: 30
+weight: 80
 url: /java/copy-outer-field/
-description: Learn how to copy a form field from one PDF document to another in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to copy a form field from one PDF document into another in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Copy PDF Form Fields from Another Document Using Java
-Abstract: This article explains how to use the `copyOuterField` example from `FormEditorExamples` to copy a field from a source PDF into a new target document in Aspose.PDF for Java. The sample first creates a one-page PDF, then copies `First Name` from the source file onto page 1 of the output document.
+AlternativeHeadline: Copy a PDF form field between documents in Java
+Abstract: This article shows how to create a destination PDF, bind it to the FormEditor facade, copy a field from another document, and save the result using Aspose.PDF for Java.
 ---
-The current Java example for this article is `copyOuterField`.
+## Copy a field from another PDF
 
-It demonstrates both parts of the workflow: creating the target PDF and then copying a field from another document into the new file.
+1. Create a destination PDF with at least one page.
+2. Bind the destination PDF to the `FormEditor` facade.
+3. Call `copyOuterField(...)` with the source document path, field name, target page, and coordinates.
+4. Save the updated destination document.
+
+```java
+public static void copyOuterField(Path inputFile, Path outputFile) {
+    try (Document document = new Document()) {
+        document.getPages().add();
+        document.save(outputFile.toString());
+    }
+
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(outputFile.toString());
+        editor.copyOuterField(inputFile.toString(), "First Name", 1, 200, 600);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

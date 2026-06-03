@@ -1,11 +1,10 @@
 ---
 title: Fill Barcode Fields
-linktitle: Fill Barcode Fields
 type: docs
 weight: 50
 url: /java/fill-barcode-fields/
 description: Learn how to fill a barcode form field in Java using the Form facade in Aspose.PDF.
-lastmod: "2026-05-28"
+lastmod: "2026-06-03"
 TechArticle: true
 AlternativeHeadline: Populate a barcode field in a PDF form with Java
 Abstract: This article shows how to bind a PDF form, set a barcode field value, and save the updated document with the Form facade in Aspose.PDF for Java.

@@ -1,18 +1,29 @@
 ---
 title: Copy Inner Field
-linktitle: Copy Inner Field
 type: docs
-weight: 20
+weight: 70
 url: /java/copy-inner-field/
-description: Learn how to copy a form field to a new location inside the same PDF document in Java.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to copy a form field to a new position within the same PDF document in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Copy PDF Form Fields to a New Position Using Java
-Abstract: This article explains how to use the `copyInnerField` example from `FormEditorExamples` to duplicate an existing field within the same document in Aspose.PDF for Java. The sample copies `First Name` to page 2, assigns the new name `First Name Copy`, and places the duplicate at specific coordinates.
+AlternativeHeadline: Copy a PDF form field within the same document in Java
+Abstract: This article shows how to bind an existing PDF, duplicate a field to another page and position, and save the updated document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `copyInnerField`.
+## Copy a field inside the same PDF
 
-It demonstrates how to duplicate a field inside the bound PDF and position the copied field at `(200, 600)` on page 2.
+1. Bind the source PDF to the `FormEditor` facade.
+2. Call `copyInnerField(...)` with the source field name, new field name, page, and coordinates.
+3. Save the updated document.
+
+```java
+public static void copyInnerField(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.copyInnerField("First Name", "First Name Copy", 2, 200, 600);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

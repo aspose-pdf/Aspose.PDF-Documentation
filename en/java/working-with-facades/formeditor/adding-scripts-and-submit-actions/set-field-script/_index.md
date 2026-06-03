@@ -1,18 +1,31 @@
 ---
 title: Set Field Script
-linktitle: Set Field Script
 type: docs
-weight: 30
+weight: 20
 url: /java/set-field-script/
-description: Learn how to set or replace a JavaScript action for a PDF form field in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to assign or update a JavaScript action on a PDF form field in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Set JavaScript Actions for PDF Form Fields Using Java
-Abstract: This article explains how to use the `setFieldScript` example from `FormEditorExamples` to assign and replace JavaScript actions for a button field in Aspose.PDF for Java. The sample targets `Script_Demo_Button`, applies an initial script, replaces it with a second script, and saves the result.
+AlternativeHeadline: Set a JavaScript action on a PDF form field in Java
+Abstract: This article shows how to bind an existing PDF, add an initial script, replace it with an updated script, and save the modified document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `setFieldScript`.
+## Set a field script
 
-It shows both parts of the workflow: adding a field script and then overriding it with a new JavaScript action before saving the updated PDF.
+1. Bind the source PDF to the `FormEditor` facade.
+2. Add an initial JavaScript action to the field.
+3. Replace it with the updated script text.
+4. Save the updated document.
+
+```java
+public static void setFieldScript(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.addFieldScript("Script_Demo_Button", "app.alert('Script 1 has been executed');");
+        editor.setFieldScript("Script_Demo_Button", "app.alert('Script 2 has been executed');");
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

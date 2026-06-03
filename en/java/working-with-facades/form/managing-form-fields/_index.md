@@ -1,11 +1,10 @@
 ---
 title: Managing Form Fields
-linktitle: Managing Form Fields
 type: docs
 weight: 50
 url: /java/managing-form-fields/
 description: Learn how to manage PDF form fields in Java using the Form facade in Aspose.PDF, including flattening all fields and renaming existing fields.
-lastmod: "2026-05-28"
+lastmod: "2026-06-03"
 TechArticle: true
 AlternativeHeadline: Manage and update PDF form fields in Java
 Abstract: This section covers the Java form-management workflows implemented with the Form facade in Aspose.PDF for Java. The current example set includes flattening all fields and renaming fields, while pages for unsupported variants are maintained as explicit scope notes.

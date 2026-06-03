@@ -1,18 +1,33 @@
 ---
 title: Add Margins to PDF Pages
-linktitle: Add Margins to PDF Pages
 type: docs
 weight: 10
 url: /java/add-margins-to-pdf-pages/
-description: Learn how to add custom margins to selected PDF pages in Java with PdfFileEditor.
-lastmod: "2026-05-28"
+description: Add margins to selected PDF pages in Java with the PdfFileEditor facade.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add custom margins to selected PDF pages in Java
-Abstract: This article explains how to use the `addMarginsToPdfPages` example from `PdfFileEditorExamples` to expand selected PDF pages with custom margins in Aspose.PDF for Java. The sample targets specific pages and passes top, bottom, left, and right margin values into the facade API.
+AlternativeHeadline: Add margins to specific pages in a PDF document with Java
+Abstract: Learn how to add margins to selected pages with Aspose.PDF for Java. The Java example uses PdfFileEditor to target individual page numbers and apply equal top, bottom, left, and right margin values.
 ---
-The current Java example for this article is `addMarginsToPdfPages`.
+## Add margins to PDF pages
 
-It demonstrates how to call `addMargins(...)` for selected pages and save the updated document.
+The Java sample adds 36-point margins to pages 1 and 3 of the source document.
+
+### Steps
+
+1. Create a `PdfFileEditor` instance.
+2. Select the page numbers that should receive new margins.
+3. Call `addMargins` with the input file, output file, page list, and margin values.
+4. Save the updated PDF.
+
+### Java example
+
+```java
+public static void addMarginsToPdfPages(Path inputFile, Path outputFile) {
+    PdfFileEditor pdfEditor = new PdfFileEditor();
+    pdfEditor.addMargins(inputFile.toString(), outputFile.toString(), new int[] {1, 3}, 36, 36, 36, 36);
+}
+```

@@ -1,18 +1,33 @@
 ---
 title: Delete Pages from PDF
-linktitle: Delete Pages from PDF
 type: docs
 weight: 20
 url: /java/delete-pages-from-pdf/
-description: Learn how to remove selected pages from a PDF in Java with PdfFileEditor.
-lastmod: "2026-05-28"
+description: Delete selected pages from a PDF in Java with the PdfFileEditor facade.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Remove selected pages from a PDF in Java
-Abstract: This article explains how to use the `deletePagesFromPdf` example from `PdfFileEditorExamples` to remove selected pages from a PDF in Aspose.PDF for Java. The sample passes the page numbers to delete into `delete(...)` and writes the resulting PDF.
+AlternativeHeadline: Remove specific pages from a PDF document with Java
+Abstract: Learn how to delete pages from a PDF with Aspose.PDF for Java. The Java example uses PdfFileEditor to remove a defined set of page numbers and save the remaining pages as a new document.
 ---
-The current Java example for this article is `deletePagesFromPdf`.
+## Delete pages from a PDF
 
-It demonstrates how to call `delete(...)` with an array of page numbers to remove from the document.
+The Java sample removes pages 2 and 4 from the source document.
+
+### Steps
+
+1. Create a `PdfFileEditor` instance.
+2. Build an array with the page numbers to remove.
+3. Call `delete` with the input file, page array, and output file.
+4. Save the resulting PDF.
+
+### Java example
+
+```java
+public static void deletePagesFromPdf(Path inputFile, Path outputFile) {
+    PdfFileEditor pdfEditor = new PdfFileEditor();
+    pdfEditor.delete(inputFile.toString(), new int[] {2, 4}, outputFile.toString());
+}
+```

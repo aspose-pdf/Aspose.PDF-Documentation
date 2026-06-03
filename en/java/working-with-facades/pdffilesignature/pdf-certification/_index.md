@@ -1,23 +1,44 @@
 ---
 title: PDF Certification
-linktitle: PDF Certification
 type: docs
 weight: 30
 url: /java/pdf-certification/
 description: Learn how to certify PDF documents in Java with PdfFileSignature and DocMDPSignature.
-lastmod: "2026-05-28"
+lastmod: "2026-06-03"
+draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Certify PDF documents with DocMDP permissions in Java
-Abstract: This article explains how to use the `certifyPdfWithMdpSignature` example from `PdfFileSignatureExamples` in Aspose.PDF for Java. The current Java source creates a `DocMDPSignature` with `DocMDPAccessPermissions.FillingInForms`, applies certification on page 1, and saves the certified document.
+Abstract: Learn how to certify PDF documents with Aspose.PDF for Java. The Java example uses PdfFileSignature together with DocMDPSignature and DocMDPAccessPermissions to certify a document for form filling and signing while restricting other kinds of modification.
 ---
-The current Java example for this article is `certifyPdfWithMdpSignature`.
+## Certify PDF documents
 
-It demonstrates how to:
+Use certification when the document should remain trusted but still allow a defined class of changes after signing.
 
-- create a PKCS7 signature object for certification
-- wrap it in `DocMDPSignature`
-- apply `DocMDPAccessPermissions.FillingInForms`
-- call `certify(...)` with visible signature placement and certification metadata
+### Steps
+
+1. Create a `PdfFileSignature` instance and bind the source PDF.
+2. Build a `PKCS7` signature object with the certificate and certificate password.
+3. Wrap that signature in a `DocMDPSignature` with the required `DocMDPAccessPermissions` value.
+4. Call `certify` with the target page, signature metadata, visible rectangle, and MDP signature.
+5. Save the certified PDF and close the facade object.
+
+### Java example
+
+```java
+public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        DocMDPSignature signature = new DocMDPSignature(
+                createPkcs7(certificateFile, "Certified for form filling and signing"),
+                DocMDPAccessPermissions.FillingInForms);
+        pdfSignature.certify(1, "Certified for form filling and signing", "security@example.com", "New York, USA", true, signatureRectangle(), signature);
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
+    }
+}
+```

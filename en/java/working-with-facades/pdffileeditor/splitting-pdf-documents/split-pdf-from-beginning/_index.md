@@ -1,18 +1,30 @@
 ---
 title: Split PDF from Beginning
-linktitle: Split PDF from Beginning
 type: docs
 weight: 10
 url: /java/split-pdf-from-beginning/
-description: Learn how to split a PDF from the first page in Java with PdfFileEditor.
-lastmod: "2026-05-28"
+description: Split a PDF from the beginning in Java with the PdfFileEditor facade.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Split a PDF from the beginning in Java
-Abstract: This article explains how to use the `splitPdfFromBeginning` example from `PdfFileEditorExamples` to extract the first part of a PDF in Aspose.PDF for Java. The sample calls `splitFromFirst(...)` with the number of pages to keep from the beginning.
+AlternativeHeadline: Extract the first pages of a PDF into a new document with Java
+Abstract: Learn how to split a PDF from the beginning with Aspose.PDF for Java. The Java example uses PdfFileEditor to take the first three pages of a document and save them as a separate PDF.
 ---
-The current Java example for this article is `splitPdfFromBeginning`.
+## Split PDF from beginning
 
-It demonstrates how to call `splitFromFirst(...)` to create an output PDF from the first pages of the source document.
+The Java sample extracts the first three pages from the source document.
+
+### Steps
+
+1. Create a `PdfFileEditor` instance.
+2. Call `splitFromFirst` with the source file, number of pages to keep, and output file.
+3. Save the new PDF document.
+
+```java
+public static void splitPdfFromBeginning(Path inputFile, Path outputFile) {
+    PdfFileEditor pdfFileEditor = new PdfFileEditor();
+    pdfFileEditor.splitFromFirst(inputFile.toString(), 3, outputFile.toString());
+}
+```

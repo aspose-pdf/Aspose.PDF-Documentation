@@ -1,18 +1,35 @@
 ---
 title: Add Page Breaks in PDF
-linktitle: Add Page Breaks in PDF
 type: docs
 weight: 20
 url: /java/add-page-breaks-in-pdf/
-description: Learn how to insert page breaks into a PDF in Java with PdfFileEditor.
-lastmod: "2026-05-28"
+description: Insert page breaks into a PDF in Java with the PdfFileEditor facade.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Insert page breaks into a PDF document in Java
-Abstract: This article explains how to use the `addPageBreaksInPdf` example from `PdfFileEditorExamples` to split page content at specific positions in Aspose.PDF for Java. The sample builds a `PdfFileEditor.PageBreak` array and passes it into `addPageBreak(...)`.
+AlternativeHeadline: Insert page breaks at fixed positions in a PDF document with Java
+Abstract: Learn how to add page breaks with Aspose.PDF for Java. The Java example uses PdfFileEditor.PageBreak to split a page at a specific vertical position and save the result as a new PDF.
 ---
-The current Java example for this article is `addPageBreaksInPdf`.
+## Add page breaks in a PDF
 
-It demonstrates how to define a `PageBreak` with a page number and vertical position, then call `addPageBreak(...)` to create the updated output PDF.
+Use this workflow when a page needs to be split into multiple pages at a known Y position.
+
+### Steps
+
+1. Create a `PdfFileEditor` instance.
+2. Build one or more `PdfFileEditor.PageBreak` entries with the page number and break position.
+3. Pass the page break array to `addPageBreak`.
+4. Save the updated PDF document.
+
+### Java example
+
+```java
+public static void addPageBreaksInPdf(Path inputFile, Path outputFile) {
+    PdfFileEditor pdfEditor = new PdfFileEditor();
+    pdfEditor.addPageBreak(inputFile.toString(), outputFile.toString(), new PdfFileEditor.PageBreak[] {
+            new PdfFileEditor.PageBreak(1, 400)
+    });
+}
+```

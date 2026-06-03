@@ -1,20 +1,76 @@
 ---
 title: Add Page Number to PDF
-linktitle: Add Page Number to PDF
 type: docs
 weight: 30
 url: /java/page-number/
-description: Learn how to add page numbers to a PDF in Java with PdfFileStamp.
-lastmod: "2026-05-28"
+description: Learn how to add page numbers to PDF documents in Java with the PdfFileStamp facade.
+lastmod: "2026-06-03"
+draft: false
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add page numbers to PDF documents in Java
-Abstract: This article explains how to use the page-numbering examples from `PdfFileStampExamples` in Aspose.PDF for Java. The current Java source includes adding page numbers with the default placement, at explicit coordinates, at a preset position with margins, and with Roman numeral numbering and a custom starting value.
+AlternativeHeadline: Add page numbers to PDF in Java
+Abstract: Learn how to add page numbers to PDF documents with Aspose.PDF for Java using the PdfFileStamp facade. The Java examples cover default placement, explicit coordinates, aligned placement with margins, and Roman-numbering output with a custom starting number.
 ---
-The current Java source provides four page-number examples:
+## Add page number to PDF
 
-- `addPageNumbersDefault`, which adds page numbers with the default placement
-- `addPageNumbersAtCoordinates`, which places page numbers at explicit X and Y coordinates
-- `addPageNumbersWithPositionAndMargins`, which uses `PdfFileStamp.POS_BOTTOM_RIGHT` with custom margins
-- `addPageNumbersWithRomanStyle`, which sets `NumberingStyle.NumeralsRomanUppercase`, changes the starting number to `42`, and places the numbers at `PdfFileStamp.POS_UPPER_RIGHT`
+Use `PdfFileStamp` when page numbering must be applied after the PDF content has already been created.
 
-These examples cover the numbering styles and placement options that are currently implemented in the Java sample set.
+### Steps
+
+1. Create a `PdfFileStamp` instance and bind the source PDF.
+2. Choose the page-number placement strategy you need.
+3. Optionally set numbering style and starting number before stamping.
+4. Call `addPageNumber` with the required overload.
+5. Save the output and close the facade object.
+
+### Java examples
+
+```java
+public static void addPageNumbersDefault(Path inputFile, Path outputFile) {
+    PdfFileStamp pdfStamper = new PdfFileStamp();
+    try {
+        pdfStamper.bindPdf(inputFile.toString());
+        pdfStamper.addPageNumber("Page #");
+        pdfStamper.save(outputFile.toString());
+    } finally {
+        pdfStamper.close();
+    }
+}
+
+public static void addPageNumbersAtCoordinates(Path inputFile, Path outputFile) {
+    PdfFileStamp pdfStamper = new PdfFileStamp();
+    try {
+        pdfStamper.bindPdf(inputFile.toString());
+        pdfStamper.addPageNumber("Page #", 300, 20);
+        pdfStamper.save(outputFile.toString());
+    } finally {
+        pdfStamper.close();
+    }
+}
+
+public static void addPageNumbersWithPositionAndMargins(Path inputFile, Path outputFile) {
+    PdfFileStamp pdfStamper = new PdfFileStamp();
+    try {
+        pdfStamper.bindPdf(inputFile.toString());
+        pdfStamper.addPageNumber("Page #", PdfFileStamp.POS_BOTTOM_RIGHT, 10, 10, 10, 10);
+        pdfStamper.save(outputFile.toString());
+    } finally {
+        pdfStamper.close();
+    }
+}
+
+public static void addPageNumbersWithRomanStyle(Path inputFile, Path outputFile) {
+    PdfFileStamp pdfStamper = new PdfFileStamp();
+    try {
+        pdfStamper.bindPdf(inputFile.toString());
+        pdfStamper.setNumberingStyle(NumberingStyle.NumeralsRomanUppercase);
+        pdfStamper.setStartingNumber(42);
+        pdfStamper.addPageNumber("Page #", PdfFileStamp.POS_UPPER_RIGHT);
+        pdfStamper.save(outputFile.toString());
+    } finally {
+        pdfStamper.close();
+    }
+}
+```

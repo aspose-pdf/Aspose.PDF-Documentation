@@ -1,20 +1,43 @@
 ---
 title: Signature Management
-linktitle: Signature Management
 type: docs
 weight: 80
 url: /java/signature-management/
-description: Learn how to remove an existing PDF signature in Java with PdfFileSignature.
-lastmod: "2026-05-28"
+description: Learn how to remove an existing PDF signature in Java with the PdfFileSignature facade.
+lastmod: "2026-06-03"
+draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Remove PDF signatures in Java with PdfFileSignature
-Abstract: This article explains how to use the `removeSignature` example from `PdfFileSignatureExamples` in Aspose.PDF for Java. The current Java source reads the first available signature name, removes that signature from the document, and saves the updated PDF.
+AlternativeHeadline: Remove PDF signatures in Java
+Abstract: Learn how to remove a signature from a signed PDF with Aspose.PDF for Java. The current Java example set covers removing an existing signature by name and saving the updated document. It does not include a separate sample for cleaning up the associated signature field.
 ---
-The current Java example for this article is `removeSignature`.
+## Remove a signature
 
-It demonstrates how to locate the first available signature and remove it with `removeSignature(...)` before saving the output PDF.
+Use this workflow when an existing digital signature should be removed from the document.
 
-The current Java source does not include a separate workflow for removing the signature field together with the signature.
+### Steps
+
+1. Create a `PdfFileSignature` instance and bind the signed PDF.
+2. Read the signature collection and select a signature name.
+3. Call `removeSignature` with that name.
+4. Save the updated file and close the facade object.
+
+### Java example
+
+```java
+public static void removeSignature(Path inputFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        pdfSignature.removeSignature(signatureName);
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
+    }
+}
+```
+
+The current Java sample set does not include a separate method for removing the associated signature field after deleting the signature.

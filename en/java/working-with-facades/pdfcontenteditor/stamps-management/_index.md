@@ -1,19 +1,17 @@
 ---
 title: Stamps Management
-linktitle: Stamps Management
 type: docs
-weight: 90
-url: /java/stamps-management/
-description: Learn how to add and inspect rubber stamps in Java with PdfContentEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+weight: 80
+url: /java/pdfcontenteditor-stamps-management/
+description: Learn the current rubber stamp coverage available in the Java PdfContentEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Manage rubber stamps in Java using PdfContentEditor
-Abstract: This section covers the stamp workflows currently implemented in `PdfContentEditorExamples` for Aspose.PDF for Java. The current Java source directly includes adding a rubber stamp and listing existing stamps, while the remaining stamp-management pages are maintained as scope notes until matching Java samples are added.
+AlternativeHeadline: Rubber stamp workflows in Java with PdfContentEditor
+Abstract: This section covers stamp-related workflows currently supported by the Java PdfContentEditor example set. The repository includes direct examples for adding a rubber stamp and listing stamps, while other advanced stamp operations are retained as explicit scope notes.
 ---
-The current Java `PdfContentEditorExamples` class provides direct stamp-management coverage for:
+The current Java `PdfContentEditorExamples` class directly supports:
 
 - `addRubberStamp(...)`
 - `listStamps(...)`
+
+

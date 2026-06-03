@@ -4,26 +4,37 @@ linktitle: Working with PDF Facades
 type: docs
 weight: 100
 url: /java/working-with-facades/
-description: Learn how to use Aspose.PDF Facades in Java to edit PDF content, process forms, secure and sign files, add stamps, render pages, and inspect document metadata.
+description: Learn how to use Aspose.PDF Facades in Java to edit PDF content, manage forms and annotations, apply security, sign files, stamp pages, render pages, and inspect PDF metadata.
 is_node: true
-lastmod: "2026-05-28"
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Use PDF Facades in Java for forms, signatures, security, stamps, and file processing
-Abstract: This section explains how to use Aspose.PDF Facades in Java to handle common PDF workflows with simplified APIs. The Java examples cover form filling and import/export, field editing, content updates, file merging and splitting, metadata inspection, encryption, digital signatures, stamping, and page rendering tasks.
+Abstract: This section explains how to use Aspose.PDF Facades for Java to handle common PDF workflows with simplified APIs. The current Java coverage includes forms, form editing, annotation editing, content editing, file editing, file information, security, signatures, file stamping, viewer rendering, and stamp construction workflows.
 ---
-Aspose.PDF Facades for Java provide higher-level APIs for common document workflows without requiring low-level page manipulation. The examples in this section are based on the Java sources under `com.aspose.pdf.examples.facades`.
+The Facades API provides higher-level helpers for common PDF tasks without working directly with the lower-level document object model.
 
-This section includes example-backed workflows for:
+Use this section to learn how to:
 
-- Filling, exporting, importing, flattening, and inspecting PDF form fields with `Form`
-- Creating and modifying fields, adjusting appearance, and adding submit actions with `FormEditor`
-- Editing annotations, attachments, text, images, viewer preferences, and stamps with `PdfContentEditor`
-- Merging, splitting, extracting, inserting, and rearranging pages with `PdfFileEditor`
-- Reading PDF version, privileges, page data, and metadata with `PdfFileInfo`
-- Encrypting, decrypting, changing passwords, and setting privileges with `PdfFileSecurity`
-- Signing, certifying, verifying, extracting certificates, and removing signatures with `PdfFileSignature`
-- Adding headers, footers, page numbers, and reusable stamps with `PdfFileStamp` and `Stamp`
-- Rendering pages to images and inspecting viewer settings with `PdfViewer`
+- fill and edit PDF forms
+- work with annotations and content
+- merge, split, and restructure PDF files
+- inspect metadata and page information
+- apply security, signatures, stamps, and page numbering
+- render PDF pages to images with the viewer facade
+
+## Facades sections
+
+- [Form](/java/form-class/)
+- [FormEditor](/java/formeditor-class/)
+- [PdfAnnotationEditor](/java/pdfannotationeditor-class/)
+- [PdfContentEditor](/java/pdfcontenteditor-class/)
+- [PdfFileEditor](/java/pdffileeditor-class/)
+- [PdfFileInfo](/java/pdffileinfo-class/)
+- [PdfFileSecurity](/java/pdffilesecurity-class/)
+- [PdfFileSignature](/java/pdffilesignature-class/)
+- [PdfFileStamp](/java/pdffilestamp-class/)
+- [PdfViewer](/java/pdfviewer-class/)
+- [Stamp](/java/stamp-class/)

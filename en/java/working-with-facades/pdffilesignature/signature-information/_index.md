@@ -1,23 +1,44 @@
 ---
 title: Signature Information
-linktitle: Signature Information
 type: docs
 weight: 60
 url: /java/signature-information/
-description: Learn how to inspect signer, date, reason, and location information in Java with PdfFileSignature.
-lastmod: "2026-05-28"
+description: Learn how to read signature names and signer details from signed PDFs in Java with PdfFileSignature.
+lastmod: "2026-06-03"
+draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Read PDF signature details in Java with PdfFileSignature
-Abstract: This article explains how to use the `getSignatureInformation` example from `PdfFileSignatureExamples` in Aspose.PDF for Java. The current Java source reads the first available signature name, prints the available signature list, and retrieves signer, date, reason, and location values from the signed document.
+AlternativeHeadline: Read signature details from PDF documents in Java
+Abstract: Learn how to inspect signature metadata with Aspose.PDF for Java. The Java example reads the first available signature name and then retrieves the signer, date, reason, and location from the signed PDF.
 ---
-The current Java example for this article is `getSignatureInformation`.
+## Get signature information
 
-It demonstrates how to:
+Use this workflow when you need to inspect who signed a PDF and what signature metadata was stored.
 
-- access the first signature through `getSignatureNames()`
-- print the signature list with `getSignNames()`
-- read signer information with `getSignerName(...)`
-- inspect date, reason, and location metadata for the signature
+### Steps
+
+1. Create a `PdfFileSignature` instance and bind the signed PDF.
+2. Read the signature collection and select a signature name.
+3. Call the signature-information accessors for signer name, date, reason, and location.
+4. Close the facade object when finished.
+
+### Java example
+
+```java
+public static void getSignatureInformation(Path inputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        System.out.println("Signature Names: " + pdfSignature.getSignNames());
+        System.out.println("Signer: " + pdfSignature.getSignerName(signatureName));
+        System.out.println("Date: " + pdfSignature.getDateTime(signatureName));
+        System.out.println("Reason: " + pdfSignature.getReason(signatureName));
+        System.out.println("Location: " + pdfSignature.getLocation(signatureName));
+    } finally {
+        pdfSignature.close();
+    }
+}
+```

@@ -1,22 +1,45 @@
 ---
 title: Add Stamp to PDF
-linktitle: Add Stamp to PDF
 type: docs
 weight: 40
 url: /java/add-stamp/
-description: Learn how to add an image stamp to a PDF in Java with PdfFileStamp.
-lastmod: "2026-05-28"
+description: Learn how to add an image stamp to PDF pages in Java with the PdfFileStamp facade.
+lastmod: "2026-06-03"
+draft: false
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add image stamps to PDF documents in Java
-Abstract: This article explains how to use the `addStampToPdf` example from `PdfFileStampExamples` in Aspose.PDF for Java. The current Java source creates a `Stamp` object, binds an image file to it, adds that stamp to the PDF, and saves the updated document.
+AlternativeHeadline: Add image stamps to PDF in Java
+Abstract: Learn how to add stamp content to PDF documents with Aspose.PDF for Java using the PdfFileStamp facade. The current Java example set shows how to create a `Stamp`, bind it to an image file, add it to the document, and save the stamped PDF.
 ---
-The current Java example for this article is `addStampToPdf`.
+## Add stamp to PDF
 
-It demonstrates how to:
+Use this workflow when an image-based stamp should be applied to the PDF.
 
-- bind the source PDF with `PdfFileStamp`
-- create a `Stamp` object
-- load the stamp image with `bindImage(...)`
-- add the stamp to the document with `addStamp(...)`
+### Steps
 
-The current Java source does not include separate examples for text stamps, stamp rotation, or opacity configuration.
+1. Create a `PdfFileStamp` instance and bind the source PDF.
+2. Create a `Stamp` object.
+3. Bind the stamp to an image file with `bindImage`.
+4. Add the stamp to the document with `addStamp`.
+5. Save the output and close the facade object.
+
+### Java example
+
+```java
+public static void addStampToPdf(Path inputFile, Path imageFile, Path outputFile) {
+    PdfFileStamp pdfStamper = new PdfFileStamp();
+    try {
+        pdfStamper.bindPdf(inputFile.toString());
+        Stamp stamp = new Stamp();
+        stamp.bindImage(imageFile.toString());
+        pdfStamper.addStamp(stamp);
+        pdfStamper.save(outputFile.toString());
+    } finally {
+        pdfStamper.close();
+    }
+}
+```
+
+The current `PdfFileStampExamples.java` class does not include a separate Java sample for text-only stamps, rotation, or opacity configuration.

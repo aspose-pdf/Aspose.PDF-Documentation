@@ -1,18 +1,28 @@
 ---
-title: Get PDF Viewer Preferences
-linktitle: Get PDF Viewer Preferences
+title: Get Viewer Preferences
 type: docs
-weight: 20
+weight: 10
 url: /java/get-viewer-preferences/
-description: Learn how to inspect PDF viewer preferences in Java with PdfContentEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to read the viewer preferences of a PDF document in Java using the PdfContentEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Read PDF viewer preferences using Java
-Abstract: This article explains how to use the `getViewerPreferences` example from `PdfContentEditorExamples` to inspect the current viewer preference in Aspose.PDF for Java. The sample binds the PDF, reads the preference value, and prints the result.
+AlternativeHeadline: Read PDF viewer preferences in Java
+Abstract: This article shows how to bind a PDF and print the current viewer preference value using the PdfContentEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `getViewerPreferences`.
+## Get the current viewer preference
 
-It demonstrates how to call `getViewerPreference()` after binding the PDF and inspect the returned setting.
+1. Bind the source PDF to the `PdfContentEditor` facade.
+2. Call `getViewerPreference()` to read the current value.
+3. Inspect or print the returned preference flag.
+
+```java
+public static void getViewerPreferences(Path inputFile) {
+    PdfContentEditor editor = new PdfContentEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        System.out.println("Current viewer preference: " + editor.getViewerPreference());
+    } finally {
+        editor.close();
+    }
+}
+```

@@ -1,19 +1,16 @@
 ---
 title: Viewer Preferences
-linktitle: Viewer Preferences
 type: docs
-weight: 110
-url: /java/viewer-preferences/
-description: Learn how to inspect and change PDF viewer preferences in Java with PdfContentEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+weight: 100
+url: /java/pdfcontenteditor-viewer-preferences/
+description: Learn how to get and change viewer preferences in Java using the PdfContentEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Work with PDF viewer preferences in Java using PdfContentEditor
-Abstract: This section covers the viewer-preference workflows currently implemented in `PdfContentEditorExamples` for Aspose.PDF for Java. The current Java source directly includes reading the current viewer preference and changing it before saving the document.
+AlternativeHeadline: Manage PDF viewer preferences in Java with PdfContentEditor
+Abstract: This section covers the Java PdfContentEditor workflows for reading and updating viewer preferences. The current sample set includes getting the current preference value and changing it before saving the document.
 ---
-The current Java `PdfContentEditorExamples` class provides direct viewer-preference coverage for:
+The current Java `PdfContentEditorExamples` class directly supports:
 
 - `getViewerPreferences(...)`
 - `changeViewerPreferences(...)`
+

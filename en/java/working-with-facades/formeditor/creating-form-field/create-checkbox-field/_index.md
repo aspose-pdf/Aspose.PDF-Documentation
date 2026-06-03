@@ -1,18 +1,31 @@
 ---
 title: Create CheckBox Field
-linktitle: Create CheckBox Field
 type: docs
-weight: 10
+weight: 20
 url: /java/create-checkbox-field/
-description: Learn how to create a check box field in a PDF document in Java with the FormEditor facade.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to add a check box form field to a PDF document in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Create a Checkbox Field in a PDF Using Aspose.PDF for Java
-Abstract: This article explains how to create a check box field in an existing PDF by using the `createCheckBoxField` example from `FormEditorExamples`. The Java sample binds a PDF, adds a `FieldType.CheckBox` control at explicit coordinates, and saves the updated file.
+AlternativeHeadline: Create a checkbox field in a PDF with Java
+Abstract: This article shows how to bind an existing PDF, add a check box field at a specified position, and save the modified document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `createCheckBoxField`.
+Use `FormEditorExamples.createCheckBoxField(...)` to add a check box field to a PDF form.
 
-It demonstrates how to bind an input PDF, add a field named `checkbox1` with `FieldType.CheckBox`, place it on page 1, and save the modified document.
+## Create a check box field
+
+1. Bind the source PDF to the `FormEditor` facade.
+2. Add the check box field with `FieldType.CheckBox`, the field name, caption, page, and rectangle.
+3. Save the updated document.
+
+```java
+public static void createCheckBoxField(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.addField(FieldType.CheckBox, "checkbox1", "Check Box 1", 1, 240, 498, 256, 514);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

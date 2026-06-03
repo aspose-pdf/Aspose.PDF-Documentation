@@ -1,11 +1,10 @@
 ---
 title: Export to XFDF
-linktitle: Export to XFDF
 type: docs
 weight: 20
 url: /java/export-to-xfdf/
 description: Learn how to export PDF form field data to XFDF in Java using the Form facade in Aspose.PDF.
-lastmod: "2026-05-28"
+lastmod: "2026-06-03"
 TechArticle: true
 AlternativeHeadline: Export AcroForm data to XFDF in Java
 Abstract: This article shows how to bind a PDF form and export its field values to an XFDF stream with the Form facade in Aspose.PDF for Java.

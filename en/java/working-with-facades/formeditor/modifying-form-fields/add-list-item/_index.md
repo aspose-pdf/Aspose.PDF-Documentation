@@ -1,18 +1,29 @@
 ---
 title: Add List Item
-linktitle: Add List Item
 type: docs
 weight: 10
 url: /java/add-list-item/
-description: Learn how to add an item to an existing list box field in a PDF document in Java with FormEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to add items to a list field in a PDF document in Java using the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Add Items to PDF List Box Fields Using Java
-Abstract: This article explains how to use the `addListItem` example from `FormEditorExamples` to append an item to the `Country` field in Aspose.PDF for Java. The sample binds an existing PDF, adds a `New Zealand` entry, and saves the updated document.
+AlternativeHeadline: Add a list item to a PDF form field in Java
+Abstract: This article shows how to bind an existing PDF, add a new item to a list field, and save the updated document using the FormEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `addListItem`.
+## Add an item to a list field
 
-It shows how to target the `Country` field, add a new option pair, and save the modified PDF.
+1. Bind the source PDF to the `FormEditor` facade.
+2. Call `addListItem(...)` for the target field and new display/value pair.
+3. Save the updated document.
+
+```java
+public static void addListItem(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.addListItem("Country", new String[] {"New Zealand", "New Zealand"});
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

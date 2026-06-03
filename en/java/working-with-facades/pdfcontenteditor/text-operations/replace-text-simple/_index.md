@@ -1,18 +1,31 @@
 ---
 title: Replace Text Simple
-linktitle: Replace Text Simple
 type: docs
-weight: 40
+weight: 10
 url: /java/replace-text-simple/
-description: Learn how to replace text in a PDF document in Java with PdfContentEditor.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Learn how to replace text throughout a PDF document in Java using the PdfContentEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Replace text in a PDF using Java
-Abstract: This article explains how to use the `replaceTextSimple` example from `PdfContentEditorExamples` to replace text content in Aspose.PDF for Java. The sample binds the PDF, replaces one text string with another, and saves the modified document.
+AlternativeHeadline: Replace text in a PDF in Java
+Abstract: This article shows how to bind a PDF, configure the replace-text scope, replace all matching text occurrences, and save the updated document using the PdfContentEditor facade in Aspose.PDF for Java.
 ---
-The current Java example for this article is `replaceTextSimple`.
+## Replace text throughout the document
 
-It demonstrates how to call `replaceText(oldValue, newValue)` and save the updated PDF.
+1. Bind the source PDF to the `PdfContentEditor` facade.
+2. Set the replace-text scope to `ReplaceAll`.
+3. Call `replaceText(...)` with the search text and replacement text.
+4. Save the updated PDF document.
+
+```java
+public static void replaceTextSimple(Path inputFile, Path outputFile) {
+    PdfContentEditor editor = new PdfContentEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.getReplaceTextStrategy().setReplaceScope(ReplaceTextStrategy.Scope.ReplaceAll);
+        editor.replaceText("33", "XXXIII ");
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

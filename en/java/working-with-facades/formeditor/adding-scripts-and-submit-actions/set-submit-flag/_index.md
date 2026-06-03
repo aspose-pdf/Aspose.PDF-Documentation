@@ -1,18 +1,26 @@
 ---
 title: Set Submit Flag
-linktitle: Set Submit Flag
 type: docs
-weight: 50
+weight: 40
 url: /java/set-submit-flag/
-description: Learn how to set a submit flag for a PDF form button in Java as part of a submit-action workflow.
-lastmod: "2026-05-28"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Review the current Java coverage for setting a submit flag on a PDF form button with the FormEditor facade in Aspose.PDF.
+lastmod: "2026-06-03"
 TechArticle: true
-AlternativeHeadline: Set Submit Flag for a PDF Form Button Using Aspose.PDF for Java
-Abstract: This article maps to the `setSubmitUrl` example from `FormEditorExamples`, which configures both a submit URL and `SubmitFormFlag.Xfdf` for `Script_Demo_Button`. The Java sample demonstrates how submit behavior is defined for an existing form button in Aspose.PDF for Java.
+AlternativeHeadline: Submit flag configuration in Java FormEditor examples
+Abstract: The current Java sample set does not expose submit-flag configuration as a separate standalone example method. Instead, it is demonstrated together with submit URL configuration in `setSubmitUrl(...)`.
 ---
-The current Java example for this topic is `setSubmitUrl`.
+The Java `FormEditorExamples.setSubmitUrl(...)` method includes:
 
-In that sample, the submit flag is not configured separately. It is assigned together with the submission endpoint by calling `setSubmitFlag("Script_Demo_Button", SubmitFormFlag.Xfdf)`.
+## Configure a submit flag
+
+1. Bind the source PDF to the `FormEditor` facade.
+2. Set the submit URL for the button field.
+3. Set the submit flag for the required format.
+4. Save the updated document.
+
+```java
+editor.setSubmitUrl("Script_Demo_Button", "http://www.example.com/submit");
+editor.setSubmitFlag("Script_Demo_Button", SubmitFormFlag.Xfdf);
+```
+
+Use that combined example as the source-backed Java workflow for configuring a submit flag in this repository.

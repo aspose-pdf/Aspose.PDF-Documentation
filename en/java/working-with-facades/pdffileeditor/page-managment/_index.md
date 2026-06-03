@@ -1,21 +1,22 @@
 ---
 title: Page Management
-linktitle: Page Management
 type: docs
 weight: 30
 url: /java/page-management/
-description: Learn how to extract, delete, insert, and append PDF pages in Java with PdfFileEditor.
-lastmod: "2026-05-28"
+description: Learn how to manage PDF pages in Java by extracting, deleting, inserting, and appending pages with PdfFileEditor.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Manage PDF pages in Java using PdfFileEditor
-Abstract: This section covers the page-management workflows currently implemented in `PdfFileEditorExamples` for Aspose.PDF for Java. The Java source directly includes extracting selected pages, deleting pages, inserting pages from another PDF, and appending pages to an existing document.
+AlternativeHeadline: Manage PDF pages in Java with extract, delete, insert, and append operations
+Abstract: This section explains how to perform page-level editing with PdfFileEditor in Aspose.PDF for Java. The Java examples cover extracting selected pages, deleting unwanted pages, inserting pages from another file, and appending pages to an existing document.
 ---
-The current Java `PdfFileEditorExamples` class provides direct page-management coverage for:
+Use these workflows when you need to rebuild document structure without editing each page manually.
 
-- `appendPagesToPdf(...)`
-- `deletePagesFromPdf(...)`
-- `extractPagesFromPdf(...)`
-- `insertPagesIntoPdf(...)`
+This section covers how to:
+
+- append pages from another PDF
+- remove specific pages
+- extract selected pages into a new file
+- insert chosen pages from one PDF into another

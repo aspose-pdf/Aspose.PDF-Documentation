@@ -1,28 +1,24 @@
 ---
 title: PdfContentEditor Class
-linktitle: PdfContentEditor Class
 type: docs
 weight: 30
 url: /java/pdfcontenteditor-class/
-description: Learn how to use the PdfContentEditor facade in Java to edit PDF content, manage annotations and attachments, replace text and images, add multimedia, and update viewer preferences.
-lastmod: "2026-05-28"
+description: Learn how to use the PdfContentEditor class in Java to edit PDF content, manage annotations and attachments, work with document actions, images, text, multimedia, stamps, and viewer preferences.
+lastmod: "2026-06-03"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Edit PDF content and interactive elements in Java with PdfContentEditor
-Abstract: This section explains how to use the PdfContentEditor class in Aspose.PDF for Java for content-level PDF workflows. The current Java example set covers text annotations, attachments, document open actions, line and polygon annotations, image replacement, text replacement with formatting, viewer preference inspection, movie annotations, and rubber stamp management.
+Abstract: This section explains how to use the PdfContentEditor class in Aspose.PDF for Java for content-level PDF workflows. The current Java example set covers annotations, attachments, document actions, drawing markup, image replacement, multimedia, stamps, text replacement, and viewer preferences.
 ---
-The Java `PdfContentEditorExamples` class demonstrates how to update existing page content and interactive elements with the Facades API.
+The Java `PdfContentEditorExamples` class demonstrates the main content-editing workflows exposed by the Facades API.
 
-The current Java example set includes:
+Use this section to learn how to:
 
-- Adding a text annotation
-- Attaching or removing embedded files
-- Binding a PDF from a stream and saving it
-- Adding or removing a document open action
-- Adding line and polygon annotations
-- Replacing images and replacing text with or without a custom `TextState`
-- Inspecting and changing viewer preferences
-- Adding a movie annotation
-- Adding and listing rubber stamps
+- add text, line, polygon, movie, and rubber stamp annotations
+- add or remove document attachments
+- bind a PDF from a stream and save the result
+- add or remove document open actions
+- replace text and images
+- get and change viewer preferences
