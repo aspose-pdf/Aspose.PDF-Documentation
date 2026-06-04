@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/change-page-size/
 description: Learn how to read and change PDF page dimensions in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,9 +15,10 @@ Abstract: This article demonstrates how to read and modify PDF page dimensions u
 ---
 ## Set a page size
 
-1. Load the PDF document or object that will be updated.
-2. Apply the settings shown in the example to set a page size.
-3. Save the document if the change should persist.
+1. Open the source PDF document.
+1. Set the page size required by the example.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void setPageSize(Path inputFile, Path outputFile) {
@@ -28,5 +29,3 @@ public static void setPageSize(Path inputFile, Path outputFile) {
     }
 }
 ```
-
-

@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/aspose-pdf-drawing-graph-shapes-bounds-check/
 description: Learn how to validate shape bounds in PDF graph collections in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,14 @@ Use `BoundsCheckMode` when you need to ensure that shapes fit inside a graph con
 
 ## Validate graph shape bounds
 
-1. Create the PDF document, add a page, and place a `Graph` container on the page.
-2. Enable strict bounds checking and try to add the shape to the graph collection.
-3. Handle the exception if the shape does not fit, then save the document.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Create a Graph container and add it to the page.
+1. Create the rectangle shape and configure its geometry.
+1. Add the shape to the Graph container.
+1. Save the output PDF document.
+1. Enable strict bounds checking and try to add the shape to the graph collection.
+1. Handle the exception if the shape does not fit, then save the document.
 
 ```java
 public static void checkShapeBounds(Path outputFile) {
@@ -44,4 +49,3 @@ public static void checkShapeBounds(Path outputFile) {
     }
 }
 ```
-

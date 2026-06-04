@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/attach-zugferd/
 description: Learn how to attach ZUGFeRD invoice XML to a PDF and convert it to PDF/A-3A in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,12 @@ Use the `Document` and `FileSpecification` APIs when you need to package invoice
 
 ## Attach ZUGFeRD invoice XML to a PDF
 
-1. Open the source PDF invoice document and create a `FileSpecification` for the XML payload.
-2. Set the embedded file metadata, attach it to the PDF, and convert the document to `PDF_A_3A`.
-3. Save the final output PDF and review the generated conversion log if needed.
+1. Open the source PDF document.
+1. Create a FileSpecification for the file that will be attached.
+1. Add or access the embedded file collection.
+1. Attach the XML invoice file with the required ZUGFeRD relationship metadata.
+1. Save the updated PDF document.
+1. Set the embedded file metadata, attach it to the PDF, and convert the document to `PDF_A_3A`.
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {
@@ -39,4 +42,3 @@ public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, 
     }
 }
 ```
-

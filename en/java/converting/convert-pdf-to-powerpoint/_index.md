@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/convert-pdf-to-powerpoint/
 description: Learn how to convert PDF files to PowerPoint in Java with Aspose.PDF, including editable PPTX slides, image-based slides, and custom image resolution.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,6 +15,9 @@ Abstract: This article explains how to convert PDF files into PowerPoint present
 ---
 ## Convert PDF to PPTX
 
+1. Create PowerPoint save options for the conversion.
+1. Convert the source PDF document by using the PowerPoint save options.
+
 ```java
 public static void convertPdfToPptx(Path inputFile, Path outputFile) {
     saveDocument(inputFile, outputFile, new PptxSaveOptions());
@@ -23,6 +26,10 @@ public static void convertPdfToPptx(Path inputFile, Path outputFile) {
 
 ## Save slides as images or control resolution
 
+1. Create PowerPoint save options for the conversion.
+1. Enable image-based slides in the PowerPoint output.
+1. Convert the source PDF document by using the configured save options.
+
 ```java
 public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFile) {
     PptxSaveOptions saveOptions = new PptxSaveOptions();
@@ -30,6 +37,10 @@ public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFil
     saveDocument(inputFile, outputFile, saveOptions);
 }
 ```
+
+1. Create PowerPoint save options for the conversion.
+1. Set the image resolution for the PowerPoint output.
+1. Convert the source PDF document by using the configured save options.
 
 ```java
 public static void convertPdfToPptxImageResolution(Path inputFile, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/media-annotations/
 description: Learn how to work with sound, screen, rich media, and 3D PDF annotation APIs in Java, with step-by-step guidance for common multimedia workflows.
-lastmod: "2026-06-03"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -17,12 +17,15 @@ Media annotations in PDF typically cover embedded or linked multimedia content s
 
 ## Add rich media annotations
 
-1. Create a new `Document` and add a target page for the rich media annotation.
-2. Define the video, poster, skin, and player resource paths that will be attached to the annotation.
-3. Create a `RichMediaAnnotation` with the destination page and annotation rectangle.
-4. Attach the player SWF, flash variables, custom skin data, poster image, and video content streams.
-5. Configure the annotation type and activation event, then call `update()`.
-6. Add the annotation to the page and save the output PDF.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Add the annotation to the target page.
+1. Save the output PDF document.
+1. Define the video, poster, skin, and player resource paths that will be attached to the annotation.
+1. Create a `RichMediaAnnotation` with the destination page and annotation rectangle.
+1. Attach the player SWF, flash variables, custom skin data, poster image, and video content streams.
+1. Configure the annotation type and activation event, then call `update()`.
+1. Add the annotation to the page and save the output PDF.
 
 ```java
 public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throws Exception {
@@ -66,10 +69,14 @@ public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throw
 
 ## Delete rich media annotations
 
-1. Open the input PDF and get the first page that contains the media annotations.
-2. Iterate through the page annotation collection and collect items whose `AnnotationType` is `RichMedia`.
-3. Delete each collected annotation from the page.
-4. Save the cleaned output document.
+1. Open the source PDF document.
+1. Delete the required page range from the document.
+1. Delete the target annotation from the page.
+1. Read or iterate through the annotations on the target page.
+1. Save the updated PDF document.
+1. Iterate through the page annotation collection and collect items whose `AnnotationType` is `RichMedia`.
+1. Delete each collected annotation from the page.
+1. Save the cleaned output document.
 
 ```java
 public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
@@ -92,10 +99,11 @@ public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
 
 ## Get multimedia annotations
 
-1. Open the PDF document that should be inspected.
-2. Define the annotation types you want to treat as multimedia, such as screen, sound, and rich media.
-3. Iterate through the first page annotation collection.
-4. Print the annotation type and rectangle for each item that matches the selected multimedia types.
+1. Open the source PDF document.
+1. Read or iterate through the annotations on the target page.
+1. Define the annotation types you want to treat as multimedia, such as screen, sound, and rich media.
+1. Iterate through the first page annotation collection.
+1. Print the annotation type and rectangle for each item that matches the selected multimedia types.
 
 ```java
 public static void multimediaAnnotationsGet(Path inputFile) {
@@ -116,12 +124,15 @@ public static void multimediaAnnotationsGet(Path inputFile) {
 
 ## Add 3D annotations
 
-1. Create a new PDF document and initialize `PDF3DContent` from the input model file.
-2. Wrap the content in `PDF3DArtwork` and configure the lighting scheme and render mode.
-3. Create view matrices for the predefined camera orientations you want to expose.
-4. Add those named views to the 3D artwork view array.
-5. Add a page, create a `PDF3DAnnotation`, and configure its border, default view, flags, and display name.
-6. Add the annotation to the page and save the document.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Add the annotation to the target page.
+1. Save the output PDF document.
+1. Wrap the content in `PDF3DArtwork` and configure the lighting scheme and render mode.
+1. Create view matrices for the predefined camera orientations you want to expose.
+1. Add those named views to the 3D artwork view array.
+1. Add a page, create a `PDF3DAnnotation`, and configure its border, default view, flags, and display name.
+1. Add the annotation to the page and save the document.
 
 ```java
 public static void annotation3dAdd(Path modelFile, Path outputFile) {
@@ -166,10 +177,14 @@ public static void annotation3dAdd(Path modelFile, Path outputFile) {
 
 ## Add screen annotations
 
-1. Create a new PDF document and add a page where the media player region should appear.
-2. Create a `ScreenAnnotation` with the target rectangle and the media file path.
-3. Add the annotation to the page.
-4. Save the output PDF.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Create the required media or attachment annotation.
+1. Add the annotation to the target page.
+1. Save the output PDF document.
+1. Create a `ScreenAnnotation` with the target rectangle and the media file path.
+1. Add the annotation to the page.
+1. Save the output PDF.
 
 ```java
 public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile) {
@@ -189,11 +204,15 @@ public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile)
 
 ## Add sound annotations
 
-1. Open the input PDF and get the first page where the sound annotation should be placed.
-2. Resolve the WAV file path relative to the input file location.
-3. Create a `SoundAnnotation` with the page, rectangle, and media file path.
-4. Set the annotation color, title, subject, and popup note.
-5. Add the annotation to the page and save the updated document.
+1. Open the source PDF document.
+1. Create the popup annotation and associate it with the parent annotation.
+1. Set the annotation or object properties required by the example.
+1. Add the annotation to the target page.
+1. Save the updated PDF document.
+1. Resolve the WAV file path relative to the input file location.
+1. Create a `SoundAnnotation` with the page, rectangle, and media file path.
+1. Set the annotation color, title, subject, and popup note.
+1. Add the annotation to the page and save the updated document.
 
 ```java
 public static void soundAnnotationAdd(Path inputFile, Path outputFile) {

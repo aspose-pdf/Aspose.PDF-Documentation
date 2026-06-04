@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/working-with-pdf-layers/
 description: Learn how to add, lock, extract, flatten, and merge PDF layers in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,10 @@ Aspose.PDF for Java exposes PDF layers through the `Layer` API on each page. You
 
 ## Add layers to a PDF page
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add layers to a PDF page.
-3. Save the result to apply the change.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Access the document layers and update their visibility or content.
+1. Save the output PDF document.
 
 ```java
 public static void addLayers(Path outputFile) {
@@ -42,9 +43,9 @@ The full example creates three separate layers with red, green, and blue line co
 
 ## Lock a layer
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to lock a layer.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the source PDF document.
+1. Access the document layers and update their visibility or content.
+1. Save the updated PDF document.
 
 ```java
 public static void lockLayer(Path inputFile, Path outputFile) {

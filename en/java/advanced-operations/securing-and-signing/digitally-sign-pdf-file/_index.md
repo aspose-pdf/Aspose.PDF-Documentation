@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/digitally-sign-pdf-file/
 description: Learn how to digitally sign and certify PDF documents in Java using Aspose.PDF.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,10 @@ Aspose.PDF for Java supports multiple signing flows through `PdfFileSignature`.
 
 ## Sign a PDF with a certificate object
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to sign a PDF with a certificate object.
-3. Save the document or inspect the result, depending on the scenario.
+1. Create a PdfFileSignature facade and bind the source PDF document.
+1. Create the signature object and configure the signing options.
+1. Apply the signature to the PDF document.
+1. Save the updated PDF document.
 
 ```java
 public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
@@ -38,9 +39,10 @@ This approach builds a `PKCS7` signature object first and then applies it to pag
 
 ## Sign a PDF with basic certificate parameters
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to sign a PDF with basic certificate parameters.
-3. Save the document or inspect the result, depending on the scenario.
+1. Create a PdfFileSignature facade and bind the source PDF document.
+1. Create the signature object and configure the signing options.
+1. Apply the signature to the PDF document.
+1. Save the updated PDF document.
 
 ```java
 public static void signPdfWithBasicParameters(Path inputFile, Path certificateFile, Path outputFile) {
@@ -60,9 +62,9 @@ public static void signPdfWithBasicParameters(Path inputFile, Path certificateFi
 
 Use a document modification detection and prevention signature when you need certification-level restrictions:
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to certify a PDF with DocMDP.
-3. Save the document or inspect the result, depending on the scenario.
+1. Create a PdfFileSignature facade and bind the source PDF document.
+1. Create the signature object and configure the signing options.
+1. Save the updated PDF document.
 
 ```java
 public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {

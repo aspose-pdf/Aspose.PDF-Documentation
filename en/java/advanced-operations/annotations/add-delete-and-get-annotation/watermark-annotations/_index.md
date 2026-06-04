@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/watermark-annotations/
 description: Learn how to add, inspect, and delete watermark annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-02"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,13 @@ Abstract: This article explains how to create, inspect, and remove watermark ann
 ---
 ## Add a watermark annotation
 
-1. Open the input PDF and define the rectangle where the watermark annotation will be placed.
-2. Create the `WatermarkAnnotation`, add it to the page, and configure the watermark text state and opacity.
-3. Apply the watermark text lines and save the modified PDF.
+1. Open the source PDF document.
+1. Set the required text formatting options.
+1. Set the annotation or object properties required by the example.
+1. Add the annotation to the target page.
+1. Save the updated PDF document.
+1. Create the `WatermarkAnnotation`, add it to the page, and configure the watermark text state and opacity.
+1. Apply the watermark text lines and save the modified PDF.
 
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {

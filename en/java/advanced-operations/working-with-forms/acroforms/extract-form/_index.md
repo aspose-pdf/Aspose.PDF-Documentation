@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-form/
 description: Extract values from AcroForm fields in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,8 @@ Use the `Form` facade when you need a simple field-name to field-value extractio
 
 ## Extract values from all AcroForm fields
 
-1. Open the PDF form document with the `Form` facade.
-2. Iterate through the field names and read each current field value into a map.
-3. Review or export the collected values for downstream processing.
+1. Open the PDF form document with the Form facade.
+1. Iterate through the field names and read each current field value into a map.
 
 ```java
 public static Map<String, String> getValuesFromAllFields(Path inputFile) {
@@ -37,4 +36,3 @@ public static Map<String, String> getValuesFromAllFields(Path inputFile) {
     }
 }
 ```
-

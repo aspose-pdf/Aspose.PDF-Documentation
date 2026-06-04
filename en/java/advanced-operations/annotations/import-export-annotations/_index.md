@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/import-export-annotations/
 description: Learn how to copy annotations from one PDF document into another PDF document using Aspose.PDF for Java.
-lastmod: "2026-06-02"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,12 @@ Abstract: This article explains how to copy annotations from a source PDF and ex
 ---
 ## Copy annotations from one PDF to another
 
-1. Open the source PDF and create a new destination document with a target page.
-2. Enumerate the annotations on the first source page and add each one to the destination page.
-3. Save the destination document to persist the copied annotations.
+1. Open the source PDF document.
+1. Add a page to the document.
+1. Add the annotation to the target page.
+1. Read or iterate through the annotations on the target page.
+1. Save the updated PDF document.
+1. Enumerate the annotations on the first source page and add each one to the destination page.
 
 ```java
 public static void importExport(Path inputFile, Path outputFile) {

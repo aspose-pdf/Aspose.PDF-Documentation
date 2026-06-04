@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-images-from-pdf-file/
 description: Learn how to extract embedded images from PDF files in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 TechArticle: true
 AlternativeHeadline: Extract images from PDF files with Java
 Abstract: This article shows how to extract images from PDF documents using Aspose.PDF for Java. It covers saving a specific image resource from a page and exporting images that fall inside a selected rectangular region.
@@ -14,9 +14,10 @@ Aspose.PDF for Java supports direct image-resource extraction and placement-base
 
 ## Extract a single embedded image
 
-1. Open the source PDF document used in this example.
-2. Run the Aspose.PDF operations required to extract a single embedded image.
-3. Write the extracted output or inspect the returned values.
+1. Open the source PDF document.
+1. Access the image resources on the target page.
+1. Save the updated PDF document.
+1. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {
@@ -30,9 +31,10 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 
 ## Extract images from a specific region
 
-1. Open the source PDF document used in this example.
-2. Run the Aspose.PDF operations required to extract images from a specific region.
-3. Write the extracted output or inspect the returned values.
+1. Open the source PDF document.
+1. Create an ImagePlacementAbsorber and visit the target page.
+1. Save the updated PDF document.
+1. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {

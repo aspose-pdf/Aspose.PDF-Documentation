@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/manipulating-tables/
 description: Learn how to inspect and modify tables in existing PDF documents using Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,9 +15,10 @@ Abstract: This article explains how to manipulate tables already present in PDF 
 ---
 ## Replace text inside a detected table cell
 
-1. Open the source PDF document and locate the content to update.
-2. Use the Aspose.PDF objects shown in the example to replace text inside a detected table cell.
-3. Save the document to persist the replacement.
+1. Open the source PDF document.
+1. Create a TableAbsorber and visit the target page or document.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void replaceCells(Path inputFile, Path outputFile) {
@@ -36,9 +37,12 @@ The full example also validates that a table exists and that the target cell con
 
 ## Replace a whole table
 
-1. Open the source PDF document and locate the content to update.
-2. Use the Aspose.PDF objects shown in the example to replace a whole table.
-3. Save the document to persist the replacement.
+1. Open the source PDF document.
+1. Create the table object and configure its basic formatting.
+1. Add rows and cells to build the table content.
+1. Create a TableAbsorber and visit the target page or document.
+1. Replace the extracted table with the updated table content.
+1. Save the updated PDF document.
 
 ```java
 public static void replaceTable(Path inputFile, Path outputFile) {

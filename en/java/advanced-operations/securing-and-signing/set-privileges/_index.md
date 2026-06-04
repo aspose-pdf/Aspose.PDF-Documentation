@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Learn how to set PDF privileges, encrypt files, decrypt protected PDFs, and change passwords in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,8 @@ Aspose.PDF for Java exposes PDF security operations through the `PdfFileSecurity
 
 ## Encrypt a PDF with user and owner passwords
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to encrypt a PDF with user and owner passwords.
-3. Save the document or inspect the result, depending on the scenario.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFile) {
@@ -39,9 +38,8 @@ public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFi
 
 ## Decrypt a protected PDF
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to decrypt a protected PDF.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the source PDF document.
+1. Save the updated PDF document.
 
 ```java
 public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) {
@@ -67,9 +65,9 @@ The `PdfFileSecurityExamples` class demonstrates:
 
 To restrict actions such as printing and copying:
 
-1. Load the PDF document or object that will be updated.
-2. Apply the settings shown in the example to set document privileges.
-3. Save the document if the change should persist.
+1. Set the required permissions or encryption options.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void setPdfPrivilegesWithPasswords(Path inputFile, Path outputFile) {
@@ -83,4 +81,3 @@ public static void setPdfPrivilegesWithPasswords(Path inputFile, Path outputFile
     fileSecurity.close();
 }
 ```
-

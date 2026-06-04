@@ -4,7 +4,7 @@ linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /java/convert-pdf-to-other-files/
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 description: Learn how to convert PDF files to EPUB, LaTeX, Markdown, text, XPS, and MobiXML in Java with Aspose.PDF.
 sitemap:
     changefreq: "monthly"
@@ -17,6 +17,11 @@ Abstract: This article explains how to convert PDF files into EPUB, TeX, Markdow
 
 The conversion examples use the PDF `Document` as the source and save with format-specific options or target formats.
 
+1. Open the source PDF document.
+1. Create EPUB save options for the conversion.
+1. Set the EPUB content recognition mode.
+1. Save the document in EPUB format.
+
 ```java
 public static void convertPdfToEpub(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
@@ -26,6 +31,11 @@ public static void convertPdfToEpub(Path inputFile, Path outputFile) {
     }
 }
 ```
+
+1. Open the source PDF document.
+1. Create Markdown save options for the conversion.
+1. Set the resources directory name and enable HTML image tags.
+1. Save the document in Markdown format.
 
 ```java
 public static void convertPdfToMd(Path inputFile, Path outputFile) {
@@ -37,6 +47,11 @@ public static void convertPdfToMd(Path inputFile, Path outputFile) {
     }
 }
 ```
+
+1. Open the source PDF document.
+1. Create XPS save options for the conversion.
+1. Enable embedded TrueType fonts in the XPS output.
+1. Save the document in XPS format.
 
 ```java
 public static void convertPdfToXps(Path inputFile, Path outputFile) {

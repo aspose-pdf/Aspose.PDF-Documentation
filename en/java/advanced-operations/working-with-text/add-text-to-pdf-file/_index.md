@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-text-to-pdf-file/
 description: Learn how to add text, HTML fragments, lists, links, and custom fonts to PDF documents in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,11 @@ Aspose.PDF for Java supports both straightforward text insertion and more advanc
 
 ## Add a simple text fragment
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a simple text fragment.
-3. Save the result to apply the change.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Set the properties required by the example.
+1. Add the configured object to the document structure.
+1. Save the output PDF document.
 
 ```java
 public static void addTextSimpleCase(Path outputFile) {
@@ -34,4 +36,3 @@ public static void addTextSimpleCase(Path outputFile) {
     }
 }
 ```
-

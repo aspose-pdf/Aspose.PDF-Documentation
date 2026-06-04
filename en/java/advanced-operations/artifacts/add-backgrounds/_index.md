@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-backgrounds/
 description: Learn how to add a background image or background color to PDF pages in Java using `BackgroundArtifact` with Aspose.PDF.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,10 @@ Abstract: This article explains how to add or remove PDF page backgrounds in Jav
 ---
 ## Add a background image to a PDF page
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a background image to a PDF page.
-3. Save the result to apply the change.
+1. Open the source PDF document.
+1. Create the required artifact and configure its appearance.
+1. Add the artifact to the target page.
+1. Save the updated PDF document.
 
 ```java
 public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -33,9 +34,11 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 
 ## Add a background image with opacity
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a background image with opacity.
-3. Save the result to apply the change.
+1. Open the source PDF document.
+1. Set the annotation or object properties required by the example.
+1. Create the required artifact and configure its appearance.
+1. Add the artifact to the target page.
+1. Save the updated PDF document.
 
 ```java
 public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path imageFile, Path outputFile)
@@ -50,5 +53,3 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
     }
 }
 ```
-
-

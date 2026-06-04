@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/update-links/
 description: Learn how to update PDF link appearance and destinations in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,12 @@ Existing links can be edited by finding the link annotation on a page and updati
 
 ## Update the text color under a link
 
-1. Load the PDF document and locate the object that will be changed.
-2. Apply the Aspose.PDF calls shown in the example to update the text color under a link.
-3. Save the document to keep the updated values.
+1. Open the source PDF document.
+1. Create a TextFragmentAbsorber and search for the target text.
+1. Set the required text formatting options.
+1. Configure the text search options required by the example.
+1. Read or iterate through the annotations on the target page.
+1. Save the updated PDF document.
 
 ```java
 public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile) {
@@ -51,9 +54,10 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 
 ## Update the web destination
 
-1. Load the PDF document and locate the object that will be changed.
-2. Apply the Aspose.PDF calls shown in the example to update the web destination.
-3. Save the document to keep the updated values.
+1. Open the source PDF document.
+1. Create the link annotation and configure its action.
+1. Read or iterate through the annotations on the target page.
+1. Save the updated PDF document.
 
 ```java
 public static void linkAnnotationUpdateWebDestination(Path inputFile, Path outputFile) {

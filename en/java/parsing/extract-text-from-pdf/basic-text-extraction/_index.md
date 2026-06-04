@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/basic-text-extraction/
 description: Learn how to extract text from PDF documents in Java with Aspose.PDF from all pages, from a specific page, or by paragraph structure.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,6 +13,11 @@ sitemap:
 ## Extract text from all pages
 
 Use `TextAbsorber` to capture text from the whole document and write it to a file.
+
+1. Open the source PDF document.
+1. Create a `TextAbsorber`.
+1. Visit all pages in the document.
+1. Write the extracted text to the output file.
 
 ```java
 public static void extractTextFromAllPages(Path inputFile, Path outputFile) throws Exception {
@@ -28,6 +33,11 @@ public static void extractTextFromAllPages(Path inputFile, Path outputFile) thro
 
 Apply the absorber only to the page you need.
 
+1. Open the source PDF document.
+1. Create a `TextAbsorber`.
+1. Visit the target page.
+1. Write the extracted text to the output file.
+
 ```java
 public static void extractTextFromPage(Path inputFile, Path outputFile, int pageNumber) throws Exception {
     try (Document document = new Document(inputFile.toString())) {
@@ -41,6 +51,12 @@ public static void extractTextFromPage(Path inputFile, Path outputFile, int page
 ## Extract text by paragraph structure
 
 Use `ParagraphAbsorber` when you need page, section, and paragraph grouping instead of a flat text stream.
+
+1. Open the source PDF document.
+1. Create a `ParagraphAbsorber` and visit the document.
+1. Iterate through the page markups, sections, paragraphs, lines, and text fragments.
+1. Build the output text with page, section, and paragraph information.
+1. Write the extracted paragraph text to the output file.
 
 ```java
 public static void extractParagraphsFromPdf(Path inputFile, Path outputFile) throws Exception {

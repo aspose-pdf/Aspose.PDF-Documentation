@@ -4,7 +4,7 @@ linktitle: Convert PDF to Word
 type: docs
 weight: 10
 url: /java/convert-pdf-to-word/
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 description: Learn how to convert PDF files to DOC and DOCX in Java with Aspose.PDF for easier document editing and reuse.
 sitemap:
     changefreq: "monthly"
@@ -17,6 +17,10 @@ Abstract: This article explains how to convert PDF files to Microsoft Word forma
 
 Use `DocSaveOptions` to choose the target Word format.
 
+1. Create Word save options for the conversion.
+1. Set the target Word format to DOC.
+1. Convert the source PDF document by using the configured save options.
+
 ```java
 public static void convertPdfToDoc(Path inputFile, Path outputFile) {
     DocSaveOptions saveOptions = new DocSaveOptions();
@@ -24,6 +28,10 @@ public static void convertPdfToDoc(Path inputFile, Path outputFile) {
     saveDocument(inputFile, outputFile, saveOptions);
 }
 ```
+
+1. Create Word save options for the conversion.
+1. Set the target Word format to DOCX.
+1. Convert the source PDF document by using the configured save options.
 
 ```java
 public static void convertPdfToDocx(Path inputFile, Path outputFile) {
@@ -34,6 +42,11 @@ public static void convertPdfToDocx(Path inputFile, Path outputFile) {
 ```
 
 ## Use enhanced-flow recognition for DOCX
+
+1. Create Word save options for the conversion.
+1. Set the target Word format to DOCX.
+1. Enable enhanced-flow recognition mode.
+1. Convert the source PDF document by using the configured save options.
 
 ```java
 public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {

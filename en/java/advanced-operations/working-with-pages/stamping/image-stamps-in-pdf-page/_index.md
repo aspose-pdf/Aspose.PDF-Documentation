@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/image-stamps-in-pdf-page/
 description: Learn how to add image stamps to PDF pages in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,11 @@ Abstract: This article explains how to add image stamps to PDF files using Aspos
 ---
 ## Add an image stamp
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add an image stamp.
-3. Save the result to apply the change.
+1. Open the source PDF document.
+1. Create an image stamp from the source image file.
+1. Set the rotation value for the target page.
+1. Set the annotation or object properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
@@ -36,4 +38,3 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
     }
 }
 ```
-

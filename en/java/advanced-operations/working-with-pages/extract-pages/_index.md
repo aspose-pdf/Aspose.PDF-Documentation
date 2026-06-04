@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/extract-pages/
 description: Learn how to extract single or multiple PDF pages into new files in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,10 @@ Abstract: This article explains how to extract pages from PDF files using Aspose
 ---
 ## Extract a single page
 
-1. Open the source PDF document used in this example.
-2. Run the Aspose.PDF operations required to extract a single page.
-3. Write the extracted output or inspect the returned values.
+1. Open the source PDF document.
+1. Add the configured object to the document structure.
+1. Save the updated PDF document.
+1. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractPage(Path inputFile, Path outputFile) {
@@ -28,4 +29,3 @@ public static void extractPage(Path inputFile, Path outputFile) {
     }
 }
 ```
-

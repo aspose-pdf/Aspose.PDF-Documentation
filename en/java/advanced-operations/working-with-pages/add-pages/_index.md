@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-pages/
 description: Learn how to add or insert pages into PDF documents in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,9 @@ Abstract: This article explains how to add pages to PDF files using Aspose.PDF f
 ---
 ## Insert an empty page
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to insert an empty page.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the source PDF document.
+1. Insert a new page at the required position.
+1. Save the updated PDF document.
 
 ```java
 public static void insertEmptyPage(Path inputFile, Path outputFile) {
@@ -34,9 +34,12 @@ public static void insertEmptyPage(Path inputFile, Path outputFile) {
 
 ## Add a page from another document
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a page from another document.
-3. Save the result to apply the change.
+1. Open the source PDF document.
+1. Open the source PDF document that contains the page to import.
+1. Add a page to the document and insert the initial content.
+1. Import the required page from the source document into the destination document.
+1. Create a text fragment and add it to the page.
+1. Save the updated PDF document.
 
 ```java
 public static void addPageFromAnotherDocument(Path inputFile, Path outputFile) {

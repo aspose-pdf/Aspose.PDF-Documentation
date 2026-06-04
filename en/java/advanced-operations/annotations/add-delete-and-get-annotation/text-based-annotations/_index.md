@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/text-based-annotations/
 description: Learn how to add, inspect, and delete text, free text, and strikeout annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-02"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,13 @@ Abstract: This article explains how to create, read, and remove text-based annot
 ---
 ## Add a text annotation
 
-1. Open the input PDF and target the page where the text annotation should be placed.
-2. Create the `TextAnnotation`, define its rectangle, and set its title, subject, flags, and color.
-3. Add the annotation to the page and save the updated document.
+1. Open the source PDF document.
+1. Create the required text-based annotation on the target page.
+1. Set the annotation or object properties required by the example.
+1. Add the annotation to the target page.
+1. Save the updated PDF document.
+1. Create the `TextAnnotation`, define its rectangle, and set its title, subject, flags, and color.
+1. Add the annotation to the page and save the updated document.
 
 ```java
 public static void textAnnotationAdd(Path inputFile, Path outputFile) {
@@ -37,9 +41,13 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## Add a free text annotation
 
-1. Load the source PDF and select the target page and rectangle for the free text note.
-2. Create the `FreeTextAnnotation`, initialize its default appearance, and set the title and color.
-3. Add the annotation to the page and save the result.
+1. Open the source PDF document.
+1. Create the required text-based annotation on the target page.
+1. Set the annotation or object properties required by the example.
+1. Add the annotation to the target page.
+1. Save the updated PDF document.
+1. Create the `FreeTextAnnotation`, initialize its default appearance, and set the title and color.
+1. Add the annotation to the page and save the result.
 
 ```java
 public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {

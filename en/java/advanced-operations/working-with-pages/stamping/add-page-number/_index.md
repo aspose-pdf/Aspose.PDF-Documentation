@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/add-page-number/
 description: Learn how to add page number stamps to PDF documents in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,11 @@ Abstract: This article explains how to add page number stamps using Aspose.PDF f
 ---
 ## Add a page number stamp
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a page number stamp.
-3. Save the result to apply the change.
+1. Open the source PDF document.
+1. Set the required text formatting options.
+1. Set the properties required by the example.
+1. Add the configured object to the document structure.
+1. Save the updated PDF document.
 
 ```java
 public static void addPageNumStamp(Path inputFile, Path outputFile) {
@@ -38,4 +40,3 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
     }
 }
 ```
-

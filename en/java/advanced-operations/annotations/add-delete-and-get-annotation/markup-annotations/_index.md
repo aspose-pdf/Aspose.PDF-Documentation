@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/markup-annotations/
 description: Learn how to add, inspect, and delete highlight, underline, squiggly, and strikeout annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-02"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,11 @@ Abstract: This article explains how to create, inspect, and remove text markup a
 ---
 ## Add highlight, underline, squiggly, or strikeout annotations
 
-1. Open the input PDF and select the page area where the markup annotation should appear.
-2. Create the required annotation type and configure its metadata or visual properties.
-3. Add the annotation to the page collection and save the document.
+1. Open the source PDF document.
+1. Add the annotation to the target page.
+1. Save the updated PDF document.
+1. Set the annotation or object properties required by the example.
+1. Add the annotation to the page collection and save the document.
 
 ```java
 public static void addTextHighlightAnnotation(Path inputFile, Path outputFile) {

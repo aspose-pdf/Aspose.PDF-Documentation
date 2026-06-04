@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/replace-text-in-pdf/
 description: Learn how to replace, rearrange, and remove text in PDF documents using Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,10 @@ Aspose.PDF for Java provides both simple replacement and layout-aware replacemen
 
 ## Replace text on all pages
 
-1. Open the source PDF document and locate the content to update.
-2. Use the Aspose.PDF objects shown in the example to replace text on all pages.
-3. Save the document to persist the replacement.
+1. Open the source PDF document.
+1. Create a TextFragmentAbsorber and search for the target text.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
@@ -37,4 +38,3 @@ public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
     }
 }
 ```
-

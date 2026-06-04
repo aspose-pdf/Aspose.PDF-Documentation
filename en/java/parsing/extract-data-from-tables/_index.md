@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/extract-data-from-table-in-pdf/
 description: Learn how to extract table data from PDF files with Aspose.PDF for Java and export detected tables for further processing.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,6 +16,12 @@ Abstract: This article explains how to extract and process table data from PDF d
 ## Extract tables from PDF
 
 Use `TableAbsorber` to find tables on each page and iterate through rows, cells, text fragments, and text segments.
+
+1. Open the source PDF document.
+1. Iterate through the document pages.
+1. Create a `TableAbsorber` and visit each page.
+1. Iterate through the detected tables, rows, cells, text fragments, and text segments.
+1. Build the extracted row text and print the table data.
 
 ```java
 public static void extractTablesFromPdf(Path inputFile) {
@@ -56,6 +62,13 @@ public static void extractTablesFromPdf(Path inputFile) {
 ## Extract a table from a specific marked area
 
 This example finds a square annotation, compares its rectangle to each detected table, and outputs only tables inside the marked region.
+
+1. Open the source PDF document.
+1. Get the target page and find the square annotation on that page.
+1. Create a `TableAbsorber` and visit the page.
+1. Compare each detected table rectangle with the annotation rectangle.
+1. Iterate through the matching table rows and cells.
+1. Build the extracted row text and print the table data for the marked region.
 
 ```java
 public static void extractTableFromSpecificArea(Path inputFile) {
@@ -116,6 +129,11 @@ public static void extractTableFromSpecificArea(Path inputFile) {
 ```
 
 ## Export tables to Excel
+
+1. Open the source PDF document.
+1. Create Excel save options for the export.
+1. Set the Excel output format to XLSX.
+1. Save the document in Excel format.
 
 ```java
 public static void exportTablesToExcel(Path inputFile, Path outputFile) {

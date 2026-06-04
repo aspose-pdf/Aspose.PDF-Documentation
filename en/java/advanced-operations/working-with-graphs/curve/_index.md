@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/add-curve/
 description: Learn how to draw and fill curve shapes in PDF files in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,13 @@ Curves in Aspose.PDF for Java are defined by a float coordinate array passed to 
 
 ## Add a curve outline
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a curve outline.
-3. Save the result to apply the change.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Create a Graph container and add it to the page.
+1. Create the curve shape and configure its control points.
+1. Add the shape to the Graph container.
+1. Set the annotation or object properties required by the example.
+1. Save the output PDF document.
 
 ```java
 public static void addCurve(Path outputFile) {

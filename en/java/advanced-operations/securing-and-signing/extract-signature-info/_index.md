@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/extract-image-and-signature-information/
 description: Learn how to extract certificate and digital signature details from PDF files in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,10 @@ Use `PdfFileSignature` to inspect and manage signatures that already exist in a 
 
 ## Read signature information
 
-1. Open the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown here to read signature information.
-3. Read the returned values or continue with your next processing step.
+1. Create a PdfFileSignature facade and bind the source PDF document.
+1. Create the signature object and configure the signing options.
+1. Read and verify the signature information from the document.
+1. Read the returned values or continue with your next processing step.
 
 ```java
 public static void getSignatureInformation(Path inputFile) {
@@ -40,9 +41,9 @@ public static void getSignatureInformation(Path inputFile) {
 
 ## Verify a signature
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to verify a signature.
-3. Save the document or inspect the result, depending on the scenario.
+1. Create a PdfFileSignature facade and bind the source PDF document.
+1. Create the signature object and configure the signing options.
+1. Read and verify the signature information from the document.
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {
@@ -62,9 +63,9 @@ public static void verifyPdfSignature(Path inputFile) {
 
 ## Extract the signing certificate
 
-1. Open the source PDF document used in this example.
-2. Run the Aspose.PDF operations required to extract the signing certificate.
-3. Write the extracted output or inspect the returned values.
+1. Create a PdfFileSignature facade and bind the source PDF document.
+1. Create the signature object and configure the signing options.
+1. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {
@@ -81,4 +82,3 @@ public static void extractSignatureCertificate(Path inputFile, Path outputFile) 
     }
 }
 ```
-

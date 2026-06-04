@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/xfa-forms/
 description: Learn how to convert XFA forms to standard AcroForms in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,9 +17,9 @@ XFA forms can be converted to standard AcroForms so they can be processed with t
 
 ## Convert a dynamic XFA form to an AcroForm
 
-1. Open the source PDF document used in this example.
-2. Configure the conversion options and Aspose.PDF calls needed to convert a dynamic XFA form to an AcroForm.
-3. Save the converted output file.
+1. Open the source PDF document.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) {
@@ -32,9 +32,9 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 
 ## Convert an XFA form with `ignoreNeedsRendering`
 
-1. Open the source PDF document used in this example.
-2. Configure the conversion options and Aspose.PDF calls needed to convert an XFA form with `ignoreNeedsRendering`.
-3. Save the converted output file.
+1. Open the source PDF document.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void convertXfaFormWithIgnoreNeedsRendering(Path inputFile, Path outputFile) {

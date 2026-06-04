@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-links/
 description: Learn how to extract link annotations and hyperlinks from PDF documents in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,10 @@ You can inspect PDF links by iterating over page annotations and filtering for `
 
 ## Extract link annotations
 
-1. Open the source PDF document used in this example.
-2. Run the Aspose.PDF operations required to extract link annotations.
-3. Write the extracted output or inspect the returned values.
+1. Open the source PDF document.
+1. Create the link annotation and configure its action.
+1. Read or iterate through the annotations on the target page.
+1. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractLinkAnnotation(Path inputFile) {
@@ -37,9 +38,10 @@ public static void extractLinkAnnotation(Path inputFile) {
 
 ## Extract hyperlink targets
 
-1. Open the source PDF document used in this example.
-2. Run the Aspose.PDF operations required to extract hyperlink targets.
-3. Write the extracted output or inspect the returned values.
+1. Open the source PDF document.
+1. Create the link annotation and configure its action.
+1. Read or iterate through the annotations on the target page.
+1. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractHyperlinks(Path inputFile) {

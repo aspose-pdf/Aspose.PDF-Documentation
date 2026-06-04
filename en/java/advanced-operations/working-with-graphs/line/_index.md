@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/add-line/
 description: Learn how to draw line shapes and styled lines in PDF files in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,12 @@ Abstract: This article shows how to add line shapes to PDF documents using Aspos
 ---
 ## Add a dashed line
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a dashed line.
-3. Save the result to apply the change.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Create a Graph container and add it to the page.
+1. Create the line shape and configure its coordinates.
+1. Add the shape to the Graph container.
+1. Save the output PDF document.
 
 ```java
 public static void addLine(Path outputFile) {
@@ -42,9 +45,12 @@ public static void addLine(Path outputFile) {
 
 ## Draw lines across the page
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to draw lines across the page.
-3. Save the document or inspect the result, depending on the scenario.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Create a Graph container and add it to the page.
+1. Create the line shape and configure its coordinates.
+1. Add the shape to the Graph container.
+1. Save the output PDF document.
 
 ```java
 public static void drawLineAcrossPage(Path outputFile) {

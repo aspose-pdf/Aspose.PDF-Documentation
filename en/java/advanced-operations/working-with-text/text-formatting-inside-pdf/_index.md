@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/text-formatting-inside-pdf/
 description: Learn how to format text inside PDF documents in Java using spacing, notes, lists, multi-column layout, and styling options.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,10 @@ Aspose.PDF for Java provides formatting features at the text state, paragraph, a
 
 ## Specify line spacing
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to specify line spacing.
-3. Save the document or inspect the result, depending on the scenario.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Set the required text formatting options.
+1. Save the output PDF document.
 
 ```java
 public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exception {
@@ -35,5 +36,3 @@ public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exceptio
     }
 }
 ```
-
-

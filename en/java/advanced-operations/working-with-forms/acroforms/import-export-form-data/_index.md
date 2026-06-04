@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/import-export-form-data/
 description: Import and export AcroForm field data in XML, FDF, XFDF, and JSON formats using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 TechArticle: true
 AlternativeHeadline: Import and export PDF form data with Java
 Abstract: This article explains how to exchange AcroForm data with external formats using Aspose.PDF for Java. It covers importing and exporting XML, FDF, and XFDF data through the Form facade and extracting form field values to JSON.
@@ -14,9 +14,9 @@ Aspose.PDF for Java supports several common data-exchange formats for interactiv
 
 ## Import or export XML data
 
-1. Open the source data or document required by this example.
-2. Use the Aspose.PDF API calls shown in the snippet to import or export XML data.
-3. Save the document or exported data if needed.
+1. Open the PDF form document with the Form facade.
+1. Import or export the form data using the required XML file.
+1. Save the updated PDF document.
 
 ```java
 public static void importDataFromXml(Path inputFile, Path dataFile, Path outputFile) throws Exception {
@@ -42,9 +42,8 @@ The same example class also includes:
 
 ## Extract form fields to JSON
 
-1. Open the source PDF document used in this example.
-2. Run the Aspose.PDF operations required to extract form fields to JSON.
-3. Write the extracted output or inspect the returned values.
+1. Open the PDF form document with the Form facade.
+1. Write the extracted output or inspect the returned values.
 
 ```java
 public static void extractFormFieldsToJson(Path inputFile, Path outputFile) throws Exception {

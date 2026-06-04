@@ -4,7 +4,7 @@ linktitle: Convert Images to PDF
 type: docs
 weight: 60
 url: /java/convert-images-format-to-pdf/
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 description: Learn how to convert BMP, CGM, DICOM, PNG, TIFF, EMF, SVG, CDR, and other image formats to PDF in Java with Aspose.PDF.
 sitemap:
     changefreq: "monthly"
@@ -19,6 +19,11 @@ Aspose.PDF for Java supports several approaches for image-to-PDF conversion depe
 
 BMP, GIF, JPEG, PNG, and TIFF examples all follow the same core pattern: create a new `Document`, add a page, place the image on the page, and save the result.
 
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Place the source image on the page in the target rectangle.
+1. Save the output PDF document.
+
 ```java
 public static void convertBmpToPdf(Path inputFile, Path outputFile) {
     try (Document document = new Document()) {
@@ -32,6 +37,10 @@ public static void convertBmpToPdf(Path inputFile, Path outputFile) {
 
 ## Convert SVG, CGM, or CDR to PDF
 
+1. Open the source SVG file with SVG load options.
+1. Create the PDF document from the source file.
+1. Save the output PDF document.
+
 ```java
 public static void convertSvgToPdf(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString(), new SvgLoadOptions())) {
@@ -39,6 +48,10 @@ public static void convertSvgToPdf(Path inputFile, Path outputFile) {
     }
 }
 ```
+
+1. Open the source CGM file with CGM load options.
+1. Create the PDF document from the source file.
+1. Save the output PDF document.
 
 ```java
 public static void convertCgmToPdf(Path inputFile, Path outputFile) {
@@ -49,6 +62,12 @@ public static void convertCgmToPdf(Path inputFile, Path outputFile) {
 ```
 
 ## Convert DICOM to PDF
+
+1. Create a new PDF document.
+1. Create an image object and set its file type to DICOM.
+1. Set the source DICOM file for the image object.
+1. Add a page to the document and append the image to the page paragraphs.
+1. Save the output PDF document.
 
 ```java
 public static void convertDicomToPdf(Path inputFile, Path outputFile) {

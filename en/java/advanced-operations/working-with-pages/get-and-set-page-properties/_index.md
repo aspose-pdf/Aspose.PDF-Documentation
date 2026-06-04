@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/get-and-set-page-properties/
 description: Learn how to inspect PDF page properties such as count, boxes, rotation, and color information in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,8 @@ Abstract: This article explains how to inspect page properties using Aspose.PDF 
 ---
 ## Get the page count
 
-1. Open the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown here to get the page count.
-3. Read the returned values or continue with your next processing step.
+1. Open the source PDF document.
+1. Read the returned values or continue with your next processing step.
 
 ```java
 public static void getPageCount(Path inputFile) {
@@ -26,5 +25,3 @@ public static void getPageCount(Path inputFile) {
     }
 }
 ```
-
-

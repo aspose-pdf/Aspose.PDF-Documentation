@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/delete-pages/
 description: Learn how to delete pages from PDF files in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,9 @@ Abstract: This article explains how to remove pages from PDF files using Aspose.
 ---
 ## Delete one page
 
-1. Load the PDF document and locate the target content.
-2. Use the Aspose.PDF objects shown in the example to delete one page.
-3. Save the document after the content is removed.
+1. Open the source PDF document.
+1. Delete the required page range from the document.
+1. Save the updated PDF document.
 
 ```java
 public static void deletePage(Path inputFile, Path outputFile) {
@@ -27,4 +27,3 @@ public static void deletePage(Path inputFile, Path outputFile) {
     }
 }
 ```
-

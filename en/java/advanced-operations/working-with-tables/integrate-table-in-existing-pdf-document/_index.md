@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/integrate-table/
 description: Learn how to integrate PDF tables with structured data sources such as CSV files in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,9 +17,10 @@ The Java example builds PDF tables from CSV data without relying on external dat
 
 ## Create a table from CSV rows
 
-1. Initialize the PDF document and any resources required by this example.
-2. Build and configure the Aspose.PDF objects needed to create a table from CSV rows.
-3. Save the output document or generated file.
+1. Create the table object and configure its basic formatting.
+1. Add rows and cells to build the table content.
+1. Set the properties required by the example.
+1. Add the configured object to the document structure.
 
 ```java
 public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
@@ -42,9 +43,10 @@ public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
 
 ## Create a PDF from CSV data
 
-1. Initialize the PDF document and any resources required by this example.
-2. Build and configure the Aspose.PDF objects needed to create a PDF from CSV data.
-3. Save the output document or generated file.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Add the configured object to the document structure.
+1. Save the updated PDF document.
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {
@@ -57,5 +59,3 @@ public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows
     }
 }
 ```
-
-

@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/interactive-annotations/
 description: Learn how to add, inspect, and delete link annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-02"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,12 @@ Abstract: This article explains how to work with interactive link annotations in
 ---
 ## Add a link annotation
 
-1. Load the source PDF document and search the first page for the target text.
-2. Use the matched text rectangle to create a `LinkAnnotation` and assign the destination URI.
-3. Add the annotation to the page and save the updated PDF.
+1. Open the source PDF document.
+1. Create a TextFragmentAbsorber and search for the target text.
+1. Create the link annotation and configure its action.
+1. Add the annotation to the target page.
+1. Save the updated PDF document.
+1. Add the annotation to the page and save the updated PDF.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -36,6 +39,7 @@ public static void linkAdd(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 ## Related annotation topics
 
 - [Markup Annotations](/pdf/java/markup-annotations/)

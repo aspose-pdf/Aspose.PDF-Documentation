@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-circle/
 description: Learn how to draw and fill circle shapes in PDF files in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,13 @@ Abstract: This article shows how to add circle shapes to PDF documents using Asp
 ---
 ## Add a circle outline
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a circle outline.
-3. Save the result to apply the change.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Create a Graph container and add it to the page.
+1. Create the circle shape and configure its geometry.
+1. Add the shape to the Graph container.
+1. Set the annotation or object properties required by the example.
+1. Save the output PDF document.
 
 ```java
 public static void addCircle(Path outputFile) {
@@ -38,9 +42,13 @@ public static void addCircle(Path outputFile) {
 
 ## Add a filled circle with text
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a filled circle with text.
-3. Save the result to apply the change.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Create a Graph container and add it to the page.
+1. Create the circle shape and configure its geometry.
+1. Add the shape to the Graph container.
+1. Set the annotation or object properties required by the example.
+1. Save the output PDF document.
 
 ```java
 public static void addCircleFilled(Path outputFile) {

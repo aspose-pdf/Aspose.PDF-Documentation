@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/manipulate-pdf-document/
 description: Learn how to validate, structure, and modify PDF documents in Java, including TOC management and PDF/A checks.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,7 @@ Aspose.PDF for Java includes document-structure operations that go beyond simple
 
 The example class validates documents against both PDF/A-1a and PDF/A-1b:
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to validate PDF/A compliance.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the source PDF document.
 
 ```java
 public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
@@ -33,9 +31,11 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 
 ## Add a table of contents
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a table of contents.
-3. Save the result to apply the change.
+1. Open the source PDF document.
+1. Insert a new page at the required position.
+1. Set the required text formatting options.
+1. Set the annotation or object properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void addTableOfContents(Path inputFile, Path outputFile) {
@@ -64,9 +64,8 @@ The related examples also show how to:
 
 ## Flatten a fillable PDF
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to flatten a fillable PDF.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the source PDF document.
+1. Save the updated PDF document.
 
 ```java
 public static void flattenFillablePdf(Path inputFile, Path outputFile) {

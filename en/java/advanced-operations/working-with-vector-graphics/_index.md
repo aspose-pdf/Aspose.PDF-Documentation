@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/working-with-vector-graphics/
 description: Learn how to extract, move, remove, copy, and export vector graphics in PDF documents using Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,7 @@ Aspose.PDF for Java exposes vector content through `GraphicsAbsorber` and `Graph
 
 ## Inspect vector graphics on a page
 
-1. Open the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown here to inspect vector graphics on a page.
-3. Review the collected values or continue with your next processing step.
+1. Open the source PDF document.
 
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {
@@ -43,9 +41,9 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 
 ## Move vector graphics
 
-1. Open the PDF document and locate the target page or content.
-2. Apply the Aspose.PDF operations shown in the example to move vector graphics.
-3. Save the document to preserve the change.
+1. Open the source PDF document.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void moveGraphics(Path inputFile, Path outputFile) {
@@ -67,4 +65,3 @@ public static void moveGraphics(Path inputFile, Path outputFile) {
     }
 }
 ```
-

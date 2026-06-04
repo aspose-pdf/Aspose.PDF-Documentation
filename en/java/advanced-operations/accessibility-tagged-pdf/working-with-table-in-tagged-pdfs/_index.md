@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/working-with-table-in-tagged-pdfs/
 description: Learn how to work with accessible tables in tagged PDFs in Java with Aspose.PDF, including table structure, cell spans, styling, row settings, and positioning.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,9 +14,15 @@ Tagged table APIs let you create accessible table structures with explicit heade
 
 ## Create a tagged table
 
-1. Initialize the PDF document and any resources required by this example.
-2. Build and configure the Aspose.PDF objects needed to create a tagged table.
-3. Save the output document or generated file.
+1. Create a new PDF document.
+1. Get the document's tagged content.
+1. Set the tagged document title and language.
+1. Create a table element and append it to the root structure.
+1. Set the table border style.
+1. Fill the table with rows and cells.
+1. Get the standard table structure attributes.
+1. Create and assign a summary attribute for the table.
+1. Save the tagged PDF document.
 
 ```java
 public static void createTable(Path outputFile) {
@@ -53,9 +59,15 @@ The table examples also demonstrate:
 
 ## Adjust tagged table position
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to adjust tagged table position.
-3. Save the document or inspect the result, depending on the scenario.
+1. Create a new PDF document.
+1. Get the document's tagged content.
+1. Set the tagged document title and language.
+1. Create a table element and append it to the root structure.
+1. Create position settings for the table.
+1. Set horizontal alignment, margin, vertical alignment, and flow options.
+1. Apply the position settings to the table element.
+1. Fill the table with rows and cells.
+1. Save the tagged PDF document.
 
 ```java
 public static void adjustTablePosition(Path outputFile) {

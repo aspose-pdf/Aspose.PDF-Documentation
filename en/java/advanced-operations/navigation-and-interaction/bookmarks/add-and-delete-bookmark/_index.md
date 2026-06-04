@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-and-delete-bookmark/
 description: Learn how to add and delete bookmarks in PDF documents using Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,11 @@ Use the document outline collection to manage bookmarks programmatically.
 
 ## Add a bookmark
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a bookmark.
-3. Save the result to apply the change.
+1. Open the source PDF document.
+1. Set the annotation or object properties required by the example.
+1. Create or access the bookmark collection.
+1. Create the required action and assign it to the target object.
+1. Save the updated PDF document.
 
 ```java
 public static void addBookmark(Path inputFile, Path outputFile) {
@@ -35,4 +37,3 @@ public static void addBookmark(Path inputFile, Path outputFile) {
     }
 }
 ```
-

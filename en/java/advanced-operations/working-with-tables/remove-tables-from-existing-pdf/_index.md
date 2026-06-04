@@ -2,7 +2,7 @@
 title: Remove Tables from Existing PDF Documents
 linktitle: Remove Tables
 description: Learn how to remove one or more tables from existing PDF documents in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 type: docs
 weight: 50
 url: /java/removing-tables/
@@ -15,9 +15,10 @@ Abstract: This article explains how to remove tables from existing PDF documents
 ---
 ## Remove one table
 
-1. Load the PDF document and locate the target content.
-2. Use the Aspose.PDF objects shown in the example to remove one table.
-3. Save the document after the content is removed.
+1. Open the source PDF document.
+1. Create a TableAbsorber and visit the target page or document.
+1. Remove the extracted table from the page.
+1. Save the updated PDF document.
 
 ```java
 public static void removeOneTable(Path inputFile, Path outputFile) {
@@ -32,9 +33,10 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 
 ## Remove all tables
 
-1. Load the PDF document and locate the target content.
-2. Use the Aspose.PDF objects shown in the example to remove all tables.
-3. Save the document after the content is removed.
+1. Open the source PDF document.
+1. Create a TableAbsorber and visit the target page or document.
+1. Remove the extracted table from the page.
+1. Save the updated PDF document.
 
 ```java
 public static void removeAllTables(Path inputFile, Path outputFile) {

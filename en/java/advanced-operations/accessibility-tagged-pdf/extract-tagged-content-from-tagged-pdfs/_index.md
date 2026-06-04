@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/extract-tagged-content-from-tagged-pdfs/
 description: Learn how to inspect tagged PDF content in Java with Aspose.PDF, including tagged content access, root structure access, and child structure elements.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,9 +14,10 @@ Use these APIs when you need to inspect the logical structure tree of a tagged P
 
 ## Get tagged content
 
-1. Open the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown here to get tagged content.
-3. Read the returned values or continue with your next processing step.
+1. Create a new PDF document.
+1. Get the document's tagged content.
+1. Set the tagged document title and language.
+1. Save the tagged PDF document.
 
 ```java
 public static void getTaggedContent(Path outputFile) {
@@ -31,9 +32,11 @@ public static void getTaggedContent(Path outputFile) {
 
 ## Access the root structure
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to access the root structure.
-3. Save the document or inspect the result, depending on the scenario.
+1. Create a new PDF document.
+1. Get the document's tagged content.
+1. Set the tagged document title and language.
+1. Read the structure tree root element and the root structure element.
+1. Save the tagged PDF document.
 
 ```java
 public static void getRootStructure(Path outputFile) {
@@ -54,9 +57,13 @@ public static void getRootStructure(Path outputFile) {
 
 This example iterates through child structure elements, prints their properties, and updates the first child branch.
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to access child elements.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the tagged PDF document.
+1. Get the document's tagged content.
+1. Read the child elements from the structure tree root.
+1. Iterate through the child elements and print their structure properties.
+1. Get the first child element from the root structure.
+1. Update the child structure elements with title, language, actual text, expansion text, and alternative text.
+1. Save the updated tagged PDF document.
 
 ```java
 public static void accessChildElements(Path inputFile, Path outputFile) {

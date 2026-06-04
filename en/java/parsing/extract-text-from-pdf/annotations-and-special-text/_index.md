@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/annotation-and-special-text/
 description: Learn how to extract text from stamp annotations, highlighted text, and superscript or subscript content in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,6 +13,11 @@ sitemap:
 ## Extract highlighted text
 
 Iterate through page annotations and read marked text from `HighlightAnnotation`.
+
+1. Open the source PDF document.
+1. Iterate through the annotations on the target page.
+1. Check whether each annotation is a `HighlightAnnotation`.
+1. Read and print the marked text from each highlight annotation.
 
 ```java
 public static void extractHighlightedText(Path inputFile) {
@@ -30,6 +35,12 @@ public static void extractHighlightedText(Path inputFile) {
 ## Extract text from stamp annotations
 
 Read the normal appearance stream from a stamp annotation and pass it through `TextAbsorber`.
+
+1. Open the source PDF document.
+1. Iterate through the annotations on the target page.
+1. Check whether each annotation is a stamp annotation.
+1. Create a `TextAbsorber` and get the normal appearance stream from the stamp annotation.
+1. Visit the appearance `XForm` and print the extracted text.
 
 ```java
 public static void extractStampText(Path inputFile) {
@@ -51,6 +62,12 @@ public static void extractStampText(Path inputFile) {
 ## Extract superscript and subscript text details
 
 Use `TextFragmentAbsorber` when you need both the extracted text and the superscript or subscript flags on each fragment.
+
+1. Open the source PDF document.
+1. Create a `TextFragmentAbsorber`.
+1. Visit the target page and collect the text fragments.
+1. Iterate through the fragments and read the text, superscript flag, and subscript flag.
+1. Write the extracted details to the output file.
 
 ```java
 public static void extractSuperSubDetails(Path inputFile, Path outputFile, int pageNumber) throws Exception {

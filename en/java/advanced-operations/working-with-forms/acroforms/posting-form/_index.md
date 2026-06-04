@@ -5,7 +5,7 @@ type: docs
 weight: 75
 url: /java/posting-form/
 description: Add submit buttons and submission actions to PDF AcroForms using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Aspose.PDF for Java supports both facade-based and DOM-based submit button creat
 
 ## Add a submit button with FormEditor
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a submit button with FormEditor.
-3. Save the result to apply the change.
+1. Create a FormEditor facade for the source PDF document.
+1. Add the configured object to the document structure.
+1. Save the updated PDF document.
 
 ```java
 public static void addSubmitButton(Path inputFile, Path outputFile) {
@@ -37,9 +37,9 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 
 ## Add a submit action manually
 
-1. Open or create the PDF document used in this example.
-2. Configure the Aspose.PDF objects needed to add a submit action manually.
-3. Save the result to apply the change.
+1. Open the source PDF document.
+1. Create a FileSpecification for the file that will be attached.
+1. Save the updated PDF document.
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {

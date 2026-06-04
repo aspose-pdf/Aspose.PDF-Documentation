@@ -5,7 +5,7 @@ type: docs
 weight: 45
 url: /java/modifying-form/
 description: Modify AcroForm fields in PDF documents using Aspose.PDF for Java, including clearing text, setting limits, styling fields, and removing fields.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,10 @@ Form maintenance often involves both field-level edits and cleanup of form-relat
 
 ## Clear text from a Typewriter form
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to clear text from a Typewriter form.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the source PDF document.
+1. Create a TextFragmentAbsorber and visit the Typewriter form resources.
+1. Iterate through the found text fragments and clear their text values.
+1. Save the updated PDF document.
 
 ```java
 public static void clearTextInForm(Path inputFile, Path outputFile) {
@@ -45,9 +46,10 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 
 ## Change form field font appearance
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to change form field font appearance.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the source PDF document.
+1. Get the target text field and set its default font appearance.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void setFormFieldFont(Path inputFile, Path outputFile) {

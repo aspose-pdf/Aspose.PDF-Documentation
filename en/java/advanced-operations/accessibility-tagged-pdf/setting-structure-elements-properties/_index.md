@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/setting-structure-elements-properties/
 description: Learn how to set tagged PDF structure element properties in Java with Aspose.PDF, including title, language, actual text, alternative text, expansion text, links, notes, and tag names.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,9 +14,15 @@ This page covers common property-setting patterns for tagged PDF structure eleme
 
 ## Set core structure element properties
 
-1. Load the PDF document or object that will be updated.
-2. Apply the settings shown in the example to set core structure element properties.
-3. Save the document if the change should persist.
+1. Create a new PDF document.
+1. Get the document's tagged content.
+1. Set the tagged document title and language.
+1. Get the root structure element and create a section element.
+1. Append the section element to the root structure.
+1. Create a level 1 header and add it to the section.
+1. Set the header text.
+1. Set the header title, language, alternative text, expansion text, and actual text.
+1. Save the tagged PDF document.
 
 ```java
 public static void setProperties(Path outputFile) {

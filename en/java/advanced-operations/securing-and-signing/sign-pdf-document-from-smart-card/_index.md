@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/sign-pdf-document-from-smart-card/
 description: Review the current Java example coverage for certificate-based PDF signing in Aspose.PDF.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,14 +17,18 @@ The current Java repository does not include a dedicated source-backed smart-car
 
 ## Sign a PDF document from a smart card
 
-1. Open the input PDF with `Document` and create a `PdfFileSignature` facade for signing.
-2. Bind the loaded document to the signature facade with `bindPdf(...)`.
-3. Retrieve the local certificate that represents the smart-card credential by calling `getLocalCertificate()`.
-4. Check whether a certificate was found. If not, save the unchanged output file and stop the workflow.
-5. Create an `ExternalSignature` from the selected certificate.
-6. Set the visual signature appearance image with `setSignatureAppearance(...)`.
-7. Call `sign(...)` with the target page, reason, contact, location, visibility flag, signature rectangle, and external signature object.
-8. Save the signed PDF to the output path.
+1. Open the source PDF document.
+1. Create a PdfFileSignature facade and bind the source PDF document.
+1. Create the signature object and configure the signing options.
+1. Apply the signature to the PDF document.
+1. Save the updated PDF document.
+1. Bind the loaded document to the signature facade with `bindPdf(...)`.
+1. Retrieve the local certificate that represents the smart-card credential by calling `getLocalCertificate()`.
+1. Check whether a certificate was found. If not, save the unchanged output file and stop the workflow.
+1. Create an `ExternalSignature` from the selected certificate.
+1. Set the visual signature appearance image with `setSignatureAppearance(...)`.
+1. Call `sign(...)` with the target page, reason, contact, location, visibility flag, signature rectangle, and external signature object.
+1. Save the signed PDF to the output path.
 
 ```java
 public static void signWithSmartCard(Path inputFile, Path outputFile, Path pngFile) {

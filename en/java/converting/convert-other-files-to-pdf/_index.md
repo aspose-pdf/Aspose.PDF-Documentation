@@ -4,7 +4,7 @@ linktitle: Convert other file formats to PDF
 type: docs
 weight: 80
 url: /java/convert-other-files-to-pdf/
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 description: Learn how to convert EPUB, Markdown, PCL, XPS, PostScript, XML, XSL-FO, OFD, and TeX files to PDF in Java with Aspose.PDF.
 sitemap:
     changefreq: "monthly"
@@ -17,6 +17,10 @@ Abstract: This article explains how to convert multiple source file formats to P
 
 Examples such as EPUB, Markdown, OFD, XPS, TeX, PostScript, and EPS use a `Document` constructor with the appropriate load options and then save directly to PDF.
 
+1. Open the source EPUB file with EPUB load options.
+1. Create the PDF document from the source file.
+1. Save the output PDF document.
+
 ```java
 public static void convertEpubToPdf(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString(), new EpubLoadOptions())) {
@@ -24,6 +28,10 @@ public static void convertEpubToPdf(Path inputFile, Path outputFile) {
     }
 }
 ```
+
+1. Open the source XPS file with XPS load options.
+1. Create the PDF document from the source file.
+1. Save the output PDF document.
 
 ```java
 public static void convertXpsToPdf(Path inputFile, Path outputFile) {
@@ -34,6 +42,12 @@ public static void convertXpsToPdf(Path inputFile, Path outputFile) {
 ```
 
 ## Convert text to PDF
+
+1. Read the source text file content with UTF-8 encoding.
+1. Create a new PDF document.
+1. Add a page to the document.
+1. Create a text fragment from the source text and add it to the page.
+1. Save the output PDF document.
 
 ```java
 public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws Exception {
@@ -46,4 +60,3 @@ public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws
     }
 }
 ```
-

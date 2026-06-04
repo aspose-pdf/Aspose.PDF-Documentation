@@ -5,7 +5,7 @@ type: docs
 weight: 11
 url: /java/formatting-pdf-document/
 description: Learn how to format PDF documents, embed fonts, control viewer settings, and adjust display options in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,10 @@ Formatting in Aspose.PDF for Java includes viewer behavior, font embedding, and 
 
 Use the `Document` API to inspect or update window and page display settings:
 
-1. Open the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown here to read and set document window properties.
-3. Read the returned values or continue with your next processing step.
+1. Open the source PDF document.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
+1. Read the returned values or continue with your next processing step.
 
 ```java
 public static void setDocumentWindow(Path inputFile, Path outputFile) {
@@ -45,9 +46,9 @@ The companion `getDocumentWindow` example prints the current values for these pr
 
 ## Embed fonts in an existing PDF
 
-1. Open or create the PDF document used in this example.
-2. Use the Aspose.PDF API calls shown in the snippet to embed fonts in an existing PDF.
-3. Save the document or inspect the result, depending on the scenario.
+1. Open the source PDF document.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void embeddedFonts(Path inputFile, Path outputFile) {
@@ -73,9 +74,10 @@ The same example class also includes `embeddedFontsInNewDocument`, which creates
 
 ## Set and read the initial zoom factor
 
-1. Load the PDF document or object that will be updated.
-2. Apply the settings shown in the example to set and read the initial zoom factor.
-3. Save the document if the change should persist.
+1. Open the source PDF document.
+1. Create the required action and assign it to the target object.
+1. Set the properties required by the example.
+1. Save the updated PDF document.
 
 ```java
 public static void setZoomFactor(Path inputFile, Path outputFile) {
