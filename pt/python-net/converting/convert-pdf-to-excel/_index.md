@@ -4,37 +4,37 @@ linktitle: Converter PDF para Excel
 type: docs
 weight: 20
 url: /pt/python-net/convert-pdf-to-excel/
-lastmod: "2026-05-21"
-description: Aprenda como converter arquivos PDF para Excel em Python com Aspose.PDF for Python via .NET, incluindo XLS, XLSX, CSV, ODS e saída de planilha única.
+lastmod: "2026-04-14"
+description: Aprenda como converter PDF para Excel em Python, incluindo XLS, XLSX, CSV, ODS, saída de única planilha e manipulação de colunas com Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Como Converter PDF para Excel em Python
-Abstract: Este artigo fornece um guia abrangente sobre a conversão de arquivos PDF para vários formatos Excel usando Python, especificamente com a biblioteca Aspose.PDF for Python via .NET. Ele detalha os processos de conversão para os formatos XLS, XLSX, CSV e ODS. O documento explica as etapas necessárias para converter PDF para XLS e XLSX, destacando a criação de instâncias Document e ExcelSaveOptions, e o uso do método Document.Save() para especificar os formatos de saída. O artigo também discute recursos como o controle da inserção de colunas em branco e a minimização do número de planilhas durante a conversão. Além disso, fornece exemplos de conversão de PDFs para planilhas Excel individuais e outros formatos como CSV e ODS, enfatizando a flexibilidade e funcionalidade do Aspose.PDF. Uma ferramenta online para conversão de PDF para XLSX também é mencionada, permitindo que os usuários explorem a qualidade da conversão. O artigo conclui com uma lista de tópicos relacionados e trechos de código para auxiliar ainda mais na compreensão e implementação dessas conversões programaticamente.
+AlternativeHeadline: Converta PDF para Excel, XLSX, CSV e ODS em Python
+Abstract: Este artigo mostra como converter arquivos PDF para formatos de planilha com Aspose.PDF for Python via .NET. Ele abrange saída em XLS, XLSX, XLSM, CSV e ODS, além de opções para controlar colunas em branco e reduzir o número de planilhas geradas.
 ---
 
-## Converter PDF para Excel (Spreadsheet 2003 XML)
+## Converter PDF para Excel em Python
 
-**Aspose.PDF for Python via .NET** suporta o recurso de converter arquivos PDF para os formatos Excel e CSV.
+**Aspose.PDF for Python via .NET** suporta a conversão de arquivos PDF para Excel e outros formatos de planilha a partir de código Python.
 
-Aspose.PDF for Python via .NET é um componente de manipulação de PDF, introduzimos um recurso que renderiza arquivos PDF para pasta de trabalho do Excel (arquivos XLSX). Durante essa conversão, as páginas individuais do arquivo PDF são convertidas em planilhas do Excel.
+Use esta página quando precisar converter um PDF para XLS, XLSX, CSV ou ODS para extração de tabelas, reutilização de relatórios, ordenação, filtragem ou análise posterior. Durante a conversão de PDF para Excel, páginas individuais do PDF podem ser renderizadas como planilhas do Excel.
 
-Use esta página quando precisar extrair conteúdo de PDF orientado a tabelas ou no estilo de relatório para formatos de planilha, a fim de ordenar, filtrar ou analisar posteriormente.
+O primeiro exemplo converte um arquivo PDF para o formato Spreadsheet 2003 XML. Seções posteriores mostram XLSX, XLSM, CSV, ODS e saída de planilha única.
 
 {{% alert color="success" %}}
 **Tente converter PDF para Excel online**
 
-Aspose.PDF apresenta a você um aplicativo online ["PDF para XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
+Aspose.PDF apresenta-lhe uma aplicação online ["PDF para XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
 
-[![Aspose.PDF Conversão PDF para Excel com App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![Aspose.PDF Conversão de PDF para Excel com App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-O trecho de código a seguir mostra o processo de conversão de arquivo PDF para formato XLS ou XLSX com Aspose.PDF for Python via .NET.
+O trecho de código a seguir mostra o processo de conversão de arquivo PDF em formato XLS ou XLSX com Aspose.PDF for Python via .NET.
 
 Etapas: Converter um arquivo PDF para o formato Excel (Planilha XML 2003)
 
-1. Carregar o documento PDF.
+1. Carregue o documento PDF.
 1. Configurar opções de salvamento do Excel usando [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 1. Salve o arquivo convertido.
 
@@ -52,11 +52,11 @@ def convert_pdf_to_excel_spread_sheet2003(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Converter PDF para Excel 2007+ (XLSX)
+## Converter PDF para XLSX em Python
 
 Etapas: Converter um arquivo PDF para o formato XLSX (Excel 2007+)
 
-1. Carregar o documento PDF.
+1. Carregue o documento PDF.
 1. Configurar opções de salvamento do Excel usando [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 1. Salve o arquivo convertido.
 
@@ -74,9 +74,9 @@ def convert_pdf_to_excel_2007(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Converter PDF para XLS com controle de coluna
+## Converter PDF para XLSX com Controle de Coluna
 
-Ao converter um PDF para o formato XLS, uma coluna em branco é adicionada ao arquivo de saída como primeira coluna. Na classe 'ExcelSaveOptions' a opção 'insert_blank_column_at_first' é usada para controlar essa coluna. Seu valor padrão é true.
+Ao converter um PDF para o formato Excel, uma coluna em branco pode ser adicionada como a primeira coluna no arquivo de saída. Use o `insert_blank_column_at_first` opção de `ExcelSaveOptions` classe para controlar esse comportamento. Seu valor padrão é `true`.
 
 ```python
 from os import path
@@ -95,13 +95,13 @@ def convert_pdf_to_excel_2007_control_column(infile, outfile):
 
 ## Converter PDF para uma única planilha do Excel
 
-Aspose.PDF for Python via .NET mostra como converter um PDF para um arquivo Excel (.xlsx), com a opção ‘minimize_the_number_of_worksheets’ ativada.
+Aspose.PDF for Python via .NET mostra como converter um PDF em um arquivo Excel (.xlsx), com a opção 'minimize_the_number_of_worksheets' habilitada.
 
-Passos: Converter PDF para XLS ou XLSX em uma única planilha no Python
+Etapas: Converter PDF para XLS ou XLSX em uma única planilha no Python
 
-1. Carregar o documento PDF.
+1. Carregue o documento PDF.
 1. Configurar opções de salvamento do Excel usando [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-1. A opção 'minimize_the_number_of_worksheets' reduz o número de planilhas do Excel combinando páginas PDF em menos planilhas (por exemplo, uma única planilha para todo o documento, se possível).
+1. A opção 'minimize_the_number_of_worksheets' reduz o número de planilhas do Excel combinando páginas PDF em menos planilhas (por exemplo, uma planilha para todo o documento, se possível).
 1. Salve o arquivo convertido.
 
 ```python
@@ -121,7 +121,7 @@ def convert_pdf_to_excel_2007_single_excel_worksheet(infile, outfile):
 
 ## Converter PDF para Excel 2007 habilitado para macro (XLSM)
 
-Este exemplo em Python mostra como converter um arquivo PDF em um arquivo Excel no formato XLSM (Pasta de Trabalho com Macro do Excel).
+Este exemplo em Python mostra como converter um arquivo PDF em um arquivo Excel no formato XLSM (Pasta de Trabalho do Excel com Macro).
 
 ```python
 from os import path
@@ -141,13 +141,13 @@ def convert_pdf_to_excel_2007_macro(infile, outfile):
 
 ### Converter PDF para CSV
 
-A função 'convert_pdf_to_excel_2007_csv' realiza a mesma operação de antes, mas desta vez o formato de destino é CSV (Valores Separados por Vírgula) em vez de XLSM.
+A função 'convert_pdf_to_excel_2007_csv' executa a mesma operação de antes, mas desta vez o formato de destino é CSV (Valores Separados por Vírgula) em vez de XLSM.
 
 Etapas: Converter PDF para CSV em Python
 
-1. Crie uma instância de [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objeto com o documento PDF de origem.
-1. Crie uma instância de [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) com **ExcelSaveOptions.ExcelFormat.CSV**
-1. Salve-o no formato **CSV** chamando [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* método e passando isso [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Criar uma instância de [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objeto com o documento PDF de origem.
+1. Criar uma instância de [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) com **ExcelSaveOptions.ExcelFormat.CSV**
+1. Salve-o no formato **CSV** chamando [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* método e passá-lo [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 ```python
 from os import path
@@ -167,11 +167,11 @@ def convert_pdf_to_excel_2007_csv(infile, outfile):
 
 Etapas: Converter PDF para ODS em Python
 
-1. Crie uma instância de [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objeto com o documento PDF de origem.
-1. Crie uma instância de [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) com **ExcelSaveOptions.ExcelFormat.ODS**
-1. Salve-o no formato **ODS** chamando [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método e passando-o [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Criar uma instância de [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objeto com o documento PDF de origem.
+1. Criar uma instância de [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) com **ExcelSaveOptions.ExcelFormat.ODS**
+1. Salve no formato **ODS** chamando [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método e passando-o [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
-A conversão para o formato ODS é feita da mesma forma que todos os outros formatos.
+A conversão para o formato ODS é realizada da mesma forma que todos os outros formatos.
 
 ```python
 from os import path
@@ -189,6 +189,6 @@ def convert_pdf_to_ods(infile, outfile):
 
 ## Conversões relacionadas
 
-- [Converter PDF para Word](/pdf/pt/python-net/convert-pdf-to-word/) se a sua prioridade for fluxo de texto editável em vez de estrutura de planilha.
-- [Converter PDF para HTML](/pdf/pt/python-net/convert-pdf-to-html/) quando você precisar de saída compatível com o navegador.
+- [Converter PDF para Word](/pdf/pt/python-net/convert-pdf-to-word/) se sua prioridade é fluxo de texto editável ao invés de estrutura de planilha.
+- [Converter PDF para HTML](/pdf/pt/python-net/convert-pdf-to-html/) quando você precisa de saída compatível com navegador.
 - [Converter PDF para outros formatos](/pdf/pt/python-net/convert-pdf-to-other-files/) para EPUB, Markdown, texto, XPS e fluxos de trabalho de exportação relacionados.

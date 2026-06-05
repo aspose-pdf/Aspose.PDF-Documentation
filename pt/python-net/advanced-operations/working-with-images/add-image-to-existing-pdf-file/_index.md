@@ -1,25 +1,25 @@
 ---
-title: Adicionar imagem ao PDF usando Python
-linktitle: Adicionar imagem
+title: Adicionar imagem a PDF existente em Python
+linktitle: Adicionar imagem ao PDF
 type: docs
 weight: 10
 url: /pt/python-net/add-image-to-existing-pdf-file/
-description: Saiba como adicionar imagens a arquivos PDF existentes em Python.
-lastmod: "2026-05-20"
+description: Aprenda como adicionar uma imagem a um arquivo PDF existente em Python, posicioná‑la em coordenadas fixas, definir texto alternativo e usar compressão de imagem.
+lastmod: "2026-05-05"
 TechArticle: true
-AlternativeHeadline: Adicionar imagens a arquivos PDF existentes com Python
-Abstract: Este artigo mostra como adicionar imagens a documentos PDF com Aspose.PDF for Python via .NET. Ele aborda a adição de uma imagem em coordenadas fixas, a inserção de imagens com operadores de baixo nível, a atribuição de texto alternativo para acessibilidade e a incorporação de imagens com compressão Flate.
+AlternativeHeadline: Adicionar imagens a arquivos PDF existentes usando Python
+Abstract: Este artigo mostra como adicionar imagens a documentos PDF com Aspose.PDF for Python via .NET. Ele abrange a colocação de uma imagem em coordenadas fixas, desenhar imagens com operadores PDF de baixo nível, atribuir texto alternativo para acessibilidade e incorporar imagens com compressão Flate.
 ---
 
-## Adicionar imagem em um arquivo PDF existente
+## Adicionar Imagem a um Arquivo PDF Existente em Python
 
 Este exemplo mostra como posicionar uma imagem em um local fixo em uma página PDF existente usando Aspose.PDF for Python via .NET.
 
-Use esses exemplos desta página quando precisar posicionar logotipos, fotos ou outras imagens em coordenadas fixas dentro de um layout PDF existente.
+Use estes exemplos quando precisar adicionar um logotipo, foto, carimbo, gráfico ou outro elemento visual a um layout PDF existente. Você pode posicionar a imagem com coordenadas de página, desenhá‑la com operadores, adicionar texto de acessibilidade ou controlar a compressão da imagem.
 
 1. Carregue um PDF existente com `ap.Document(infile)`.
 1. Selecione a página de destino (`document.pages[1]` para a primeira página).
-1. Chamada `page.add_image()` com:
+1. Chamar `page.add_image()` com:
     - O caminho do arquivo de imagem.
     - A `Rectangle` definindo coordenadas de posicionamento.
 1. Salve o PDF atualizado.
@@ -35,12 +35,12 @@ def add_image(infile, image_file, outfile):
     document.save(outfile)
 ```
 
-## Adicionar uma Imagem Usando Operadores
+## Adicionar uma imagem ao PDF usando operadores
 
-Esta abordagem adiciona uma imagem com operadores PDF de baixo nível em vez dos de alto nível. `add_image()` ajudante.
+Esta abordagem adiciona uma imagem com operadores PDF de baixo nível em vez dos de alto nível `add_image()` ajudante.
 
-1. Criar um novo `Document` e adicione uma página.
-1. Adicione a imagem aos recursos da página (`page.resources.images`).
+1. Crie um novo `Document` e adicione uma página.
+1. Adicionar a imagem aos recursos da página (`page.resources.images`).
 1. Criar operadores de transformação (`GSave`, `ConcatenateMatrix`, `Do`, `GRestore`).
 1. Adicione operadores ao conteúdo da página.
 1. Salve o PDF resultante.
@@ -81,11 +81,11 @@ def add_image_using_operators(image_file, outfile):
     document.save(outfile)
 ```
 
-## Adicionar Imagem com Texto Alternativo
+## Adicionar imagem ao PDF com texto alternativo
 
 Este exemplo adiciona uma imagem e atribui texto alternativo para acessibilidade.
 
-1. Criar um novo `Document` e adicione uma página.
+1. Crie um novo `Document` e adicione uma página.
 1. Adicione a imagem à página com `page.add_image()`.
 1. Obter recursos de imagem de `page.resources.images`.
 1. Definir texto alternativo usando `try_set_alternative_text()`.
@@ -111,14 +111,14 @@ def add_image_set_alternative_text(image_file, outfile):
     document.save(outfile)
 ```
 
-## Adicionar uma imagem a um PDF com compressão Flate
+## Adicionar uma imagem a um PDF com compactação Flate
 
 Este exemplo incorpora uma imagem usando `ImageFilterType.FLATE` compressão.
 
-1. Criar um novo `Document` e adicione uma página.
-1. Adicionar a imagem aos recursos da página com compressão Flate
-1. Use operadores de matriz para posicionar e desenhar a imagem.
-1. Salvar o documento.
+1. Crie um novo `Document` e adicione uma página.
+1. Adicionar a imagem aos recursos da página com compactação Flate.
+1. Usar operadores de matriz para posicionar e desenhar a imagem.
+1. Salve o documento.
 
 ```python
 import aspose.pdf as ap
@@ -151,9 +151,9 @@ def add_image_to_pdf_with_flate_compression(image_file, outfile):
     document.save(outfile)
 ```
 
-## Tópicos Relacionados à Imagem
+## Tópicos Relacionados a Imagens
 
 - [Trabalhe com imagens em PDF usando Python](/pdf/pt/python-net/working-with-images/)
-- [Substitua imagens em arquivos PDF existentes](/pdf/pt/python-net/replace-image-in-existing-pdf-file/)
+- [Substituir imagens em arquivos PDF existentes](/pdf/pt/python-net/replace-image-in-existing-pdf-file/)
 - [Excluir imagens de arquivos PDF](/pdf/pt/python-net/delete-images-from-pdf-file/)
 - [Extrair imagens de arquivos PDF](/pdf/pt/python-net/extract-images-from-pdf-file/)

@@ -4,35 +4,35 @@ linktitle: Dividir archivos PDF
 type: docs
 weight: 60
 url: /es/python-net/split-pdf-document/
-description: Aprende cómo dividir páginas PDF en archivos PDF separados en Python.
-lastmod: "2026-04-15"
+description: Aprenda cómo dividir archivos PDF en Python en páginas individuales, partes iguales, grupos de tamaño fijo, rangos de páginas personalizados y páginas impares o pares.
+lastmod: "2026-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Dividir páginas PDF usando Python
-Abstract: El artículo analiza el proceso de dividir páginas PDF en archivos individuales usando Python, resaltando la utilidad de dicha función para gestionar documentos PDF grandes. Hace referencia al Aspose.PDF Splitter, una herramienta en línea diseñada para demostrar la funcionalidad de división de PDF. El artículo proporciona un método detallado para lograr esto en aplicaciones Python, que implica iterar a través de las páginas de un documento PDF mediante la `PageCollection` del objeto `Document`. Para cada página, se crea un nuevo objeto `Document`, se añade la página a este, y el nuevo archivo PDF se guarda usando el método `save()`. Un fragmento de código Python adjunto ilustra este proceso, mostrando los pasos necesarios para dividir un documento PDF en archivos separados iterando sus páginas y guardando cada una como un PDF individual.
+AlternativeHeadline: Divida PDF en páginas y rangos de páginas usando Python.
+Abstract: Este artículo muestra cómo dividir archivos PDF con Aspose.PDF for Python via .NET. Cubre la división de un PDF en páginas individuales, dos partes iguales, grupos de páginas de tamaño fijo, rangos de páginas personalizados, grupos de páginas con nombre, nombres de archivo estables y archivos de páginas impares o pares.
 ---
 
-Dividir páginas PDF puede ser una característica útil para quienes desean dividir un archivo grande en páginas separadas o grupos de páginas.
+Esta página muestra cómo **dividir archivos PDF en Python** usando Aspose.PDF for Python via .NET.
 
-Utilice este flujo de trabajo cuando necesite dividir archivos PDF grandes en archivos de una sola página o en conjuntos de documentos más pequeños para distribución, revisión o procesamiento posterior.
+Utiliza estos ejemplos cuando necesites dividir un PDF grande en archivos de una sola página, partes iguales, grupos de tamaño fijo, rangos de páginas personalizados, o conjuntos de páginas impares y pares para distribución, revisión o procesamiento posterior.
 
-## Ejemplo en vivo
+## Ejemplo de división de PDF en línea
 
-[Divisor de Aspose.PDF](https://products.aspose.app/pdf/splitter) es una aplicación web gratuita en línea que le permite investigar cómo funciona la funcionalidad de división de presentaciones.
+[Divisor de Aspose.PDF](https://products.aspose.app/pdf/splitter) es una aplicación web en línea que permite probar la funcionalidad de división de PDF.
 
-[![Aspose Dividir PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
+[![Dividir PDF con Aspose](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-Este tema muestra cómo dividir páginas PDF en archivos PDF individuales en sus aplicaciones Python. Para dividir páginas PDF en archivos PDF de una sola página usando Python, se pueden seguir los siguientes pasos:
+Para dividir las páginas de PDF en archivos PDF de una sola página en Python, siga estos pasos:
 
-1. Recorrer las páginas del documento PDF a través de la [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) del objeto [ColecciónDePáginas](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) colección
+1. Recorrer las páginas del documento PDF a través del [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) del objeto [Colección de páginas](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) colección
 1. Para cada iteración, crea un nuevo objeto Document y agrega el individual [Página](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objeto en el documento vacío
 1. Guardar el nuevo PDF usando [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) método
 
-## Dividir PDF en varios archivos o pdfs separados en Python
+## Dividir PDF en varios archivos en Python
 
-El siguiente fragmento de código Python le muestra cómo dividir las páginas PDF en archivos PDF individuales.
+El siguiente fragmento de código Python le muestra cómo dividir las páginas de PDF en archivos PDF individuales.
 
 ```python
 import sys
@@ -48,17 +48,17 @@ def split_documents(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num}.pdf"))
 ```
 
-## Dividir un PDF en dos partes iguales
+## Dividir un PDF en Dos Partes Iguales
 
-1. Cargue el documento PDF.
+1. Cargar el documento PDF.
 1. Determinar el número total de páginas.
-1. Calcule el punto medio.
+1. Calcula el punto medio.
 1. Crea el primer documento de salida.
 1. Eliminar las páginas de la segunda mitad del primer documento.
 1. Guarda la primera parte.
-1. Cree el segundo documento de salida.
+1. Crea el segundo documento de salida.
 1. Eliminar las páginas de la primera mitad del segundo documento.
-1. Guardar la segunda parte.
+1. Guarda la segunda parte.
 
 ```python
 import sys
@@ -86,17 +86,17 @@ def split_documents_into_two_parts(infile, outdir):
 
 ## Dividir un PDF en varios archivos cada N páginas
 
-Divida un documento PDF en varios archivos más pequeños basándose en un número fijo de páginas usando Aspose.PDF for Python via .NET.
+Dividir un documento PDF en varios archivos más pequeños basándose en un número fijo de páginas usando Aspose.PDF for Python.
 
-1. Cargue el documento PDF.
+1. Cargar el documento PDF.
 1. Determinar el número total de páginas.
 1. Definir páginas por parte.
-1. Itera a través del documento en fragmentos.
-1. Calcule el rango de páginas para cada parte.
-1. Crea un nuevo documento para cada parte.
-1. Copiar páginas al nuevo documento.
+1. Iterar a través del documento en fragmentos.
+1. Calcula el rango de páginas para cada parte.
+1. Cree un nuevo documento para cada parte.
+1. Copiar páginas en el nuevo documento.
 1. Guarda el documento dividido.
-1. Repita hasta que se procesen todas las páginas.
+1. Repita hasta que todas las páginas se procesen.
 
 ```python
 import sys
@@ -122,20 +122,20 @@ def split_documents_every_n_pages(infile, outdir, pages_per_part=3):
         part_index += 1
 ```
 
-## Dividir un PDF por rangos de página personalizados
+## Dividir un PDF por rangos de páginas personalizados
 
-Dividir un documento PDF en varios archivos basados en rangos de páginas personalizados usando Aspose.PDF for Python.
+Divida un documento PDF en varios archivos según rangos de páginas personalizados usando Aspose.PDF for Python.
 
-1. Cargue el documento PDF.
+1. Cargar el documento PDF.
 1. Determinar el número total de páginas.
-1. Crea una lista de tuplas que representen rangos (start_page, end_page).
-1. Iterar a través de los rangos definidos.
+1. Cree una lista de tuplas que representen rangos (start_page, end_page).
+1. Iterar a través de los intervalos definidos.
 1. Validar la página de inicio.
 1. Ajusta la página final.
 1. Validar el rango efectivo.
-1. Cree un nuevo documento para cada rango.
-1. Copiar páginas al nuevo documento.
-1. Guarde cada documento dividido.
+1. Crea un nuevo documento para cada rango.
+1. Copiar páginas en el nuevo documento.
+1. Guarda cada documento dividido.
 
 ```python
 import sys
@@ -165,15 +165,15 @@ def split_documents_by_page_ranges(infile, outdir):
             )
 ```
 
-## Dividir un PDF en Primera página y Páginas restantes
+## Dividir un PDF en la primera página y las páginas restantes
 
-Separe la primera página de un documento PDF del resto de las páginas usando Aspose.PDF for Python.
+Separar la primera página de un documento PDF del resto de las páginas usando Aspose.PDF for Python.
 
-1. Cargue el documento PDF.
+1. Cargar el documento PDF.
 1. Determinar el número total de páginas.
 1. Verifique si el documento está vacío.
-1. Crea un documento para la primera página.
-1. Agregar la primera página.
+1. Cree un documento para la primera página.
+1. Añade la primera página.
 1. Guardar el documento de la primera página.
 1. Verifique si hay páginas adicionales.
 1. Crea un documento para las páginas restantes.
@@ -210,14 +210,14 @@ def split_documents_first_page_and_rest(infile, outdir):
 
 Extraiga la última página de un documento PDF y sepárela de las páginas restantes usando Aspose.PDF for Python.
 
-1. Cargue el documento PDF.
+1. Cargar el documento PDF.
 1. Determinar el número total de páginas.
 1. Verifique si el documento está vacío.
-1. Crea un documento para la última página.
+1. Crear un documento para la última página.
 1. Agregar la última página.
 1. Guarda el documento de la última página.
-1. Verificar documentos de una sola página.
-1. Elimina la última página del documento original.
+1. Verifique los documentos de una sola página.
+1. Elimine la última página del documento original.
 1. Guarda las páginas restantes.
 
 ```python
@@ -246,16 +246,16 @@ def split_documents_last_page_and_rest(infile, outdir):
 
 ## Dividir un PDF en tres partes
 
-Divida un documento PDF en tres partes separadas usando Aspose.PDF for Python.
+Divida un documento PDF en tres partes separadas usando Aspose.PDF para Python.
 
-1. Cargue el documento PDF.
+1. Cargar el documento PDF.
 1. Determinar el número total de páginas.
 1. Verifique si el documento está vacío.
-1. Calcular el tamaño de la pieza.
+1. Calcular el tamaño de la parte.
 1. Iterar a través de tres partes.
 1. Determine el rango de páginas para cada parte.
 1. Validar el rango de páginas.
-1. Crea un nuevo documento para cada parte.
+1. Cree un nuevo documento para cada parte.
 1. Copiar páginas en el documento de la parte.
 1. Guarda cada parte.
 
@@ -289,7 +289,7 @@ def split_documents_into_three_parts(infile, outdir):
 
 ## Divisor de páginas PDF personalizado
 
-Divida un documento PDF en varios archivos basándose en grupos de páginas definidos de forma personalizada usando Aspose.PDF for Python.
+Divida un documento PDF en varios archivos basándose en grupos de páginas definidos de forma personalizada utilizando Aspose.PDF for Python.
 
 ```python
 import sys
@@ -318,7 +318,7 @@ def split_documents_custom_page_groups(infile, outdir):
 
 ## Dividir PDF en páginas individuales con nombres de archivo estables
 
-Divida un documento PDF en páginas individuales y guárdelas con nombres de archivo estables utilizando Aspose.PDF for Python.
+Dividir un documento PDF en páginas individuales y guardarlas con nombres de archivo estables usando Aspose.PDF for Python.
 
 ```python
 import sys
@@ -338,7 +338,7 @@ def split_documents_with_stable_filenames(infile, outdir):
 
 ## Dividir PDF en páginas impares y pares
 
-Divida un documento PDF en dos archivos separados que contengan, respectivamente, las páginas impares y pares, usando Aspose.PDF for Python via .NET.
+Divida un documento PDF en dos archivos separados que contengan respectivamente páginas impares y pares usando Aspose.PDF for Python.
 
 ```python
 import sys
@@ -363,10 +363,10 @@ def split_documents_odd_even_pages(infile, outdir):
             even_document.save(path.join(outdir, "Even_Pages.pdf"))
 ```
 
-## Temas de documentos relacionados
+## Temas relacionados del documento
 
 - [Trabajar con documentos PDF en Python](/pdf/es/python-net/working-with-documents/)
-- [Fusionar archivos PDF en Python](/pdf/es/python-net/merge-pdf-documents/)
+- [Combinar archivos PDF en Python](/pdf/es/python-net/merge-pdf-documents/)
 - [Optimizar archivos PDF en Python](/pdf/es/python-net/optimize-pdf/)
 - [Manipular documentos PDF en Python](/pdf/es/python-net/manipulate-pdf-document/)
 
