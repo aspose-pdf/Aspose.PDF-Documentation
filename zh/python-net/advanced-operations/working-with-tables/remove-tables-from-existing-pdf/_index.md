@@ -1,195 +1,75 @@
 ---
-title: 从现有 PDF 中移除表格
-linktitle: 移除表格
+title: 从现有 PDF 文档中删除表格
+linktitle: 删除表格
+description: 了解如何在 Python 中从现有 PDF 文档中删除一个或多个表格。
+lastmod: "2026-06-08"
 type: docs
 weight: 50
-url: /zh/python-net/remove-tables-from-existing-pdf/
-lastmod: "2023-02-17"
+url: /zh/python-net/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Python 删除 PDF 文件中的一个或多个表格
+Abstract: 本文说明了如何使用 Aspose.PDF for Python via .NET 从现有 PDF 文档中删除表格。它介绍了 `TableAbsorber` 用于定位表格，并演示了如何删除单个表格或从页面中删除所有检测到的表格。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "从现有 PDF 中移除表格",
-    "alternativeHeadline": "如何从 PDF 中删除表格",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, 移除表格, 删除表格",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "销售",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "销售",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "销售",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/remove-tables-from-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/remove-tables-from-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": ""
-}
-</script>
 
+## 从 PDF 文档中删除表格
 
-{{% alert color="primary" %}}
+Aspose.PDF for Python 允许您从 PDF 中移除表格。它打开现有的 PDF，检测首页上的第一个表格，用 `TableAbsorber`，使用删除该表 `remove()`，并将更新后的 PDF 保存到一个新文件。
 
-Aspose.PDF for Python via .NET 提供在生成 PDF 文档时插入/创建表格的功能，您也可以在任何现有的 PDF 文档中添加表格对象。然而，您可能需要[操作现有 PDF 中的表格](https://docs.aspose.com/pdf/python-net/manipulate-tables-in-existing-pdf/)，在这里您可以更新现有表格单元格中的内容。然而，您可能会遇到需要从现有 PDF 文档中移除表格对象的需求。
-
-{{% /alert %}}
-
-为了移除表格，我们需要使用 [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) 类来获取现有 PDF 中的表格，然后调用 [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods)。
-
-## 从 PDF 文档中移除表格
-
-我们添加了新功能，即。
- [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods) 到现有的 [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) 类，以便从 PDF 文档中删除表格。一旦吸收器成功地在页面上找到表格，它就能够删除它们。请查看以下代码片段，了解如何从 PDF 文档中删除表格：
+当您需要清理大量表格的 PDF、删除过时的表格内容，或在重新分发前简化文档时，请使用此页面。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_one_table(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # 加载现有的 PDF 文档
-    pdf_document = ap.Document(input_file)
-    # 创建 TableAbsorber 对象以查找表格
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # 用吸收器访问第一页
-    absorber.visit(pdf_document.pages[1])
-    # 获取页面上的第一个表格
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    # Get first table on the page
     table = absorber.table_list[0]
-    # 删除表格
+    # Remove the table
     absorber.remove(table)
-    # 保存 PDF
-    pdf_document.save(output_file)
+    # Save PDF
+    document.save(outfile)
 ```
 
-## 从 PDF 文档中删除多个表格
+## 从 PDF 文档中移除所有表格
 
-有时，PDF 文档可能包含多个表格，您可能需要从中删除多个表格。 为了从PDF文档中删除多个表格，请使用以下代码片段：
+使用我们的库，您可以从 PDF 的特定页面中移除所有表格。代码打开现有的 PDF，使用 TableAbsorber 检测第二页上的所有表格，遍历检测到的表格，逐一移除，然后将修改后的 PDF 保存为新文件。当您需要批量移除页面上的表格而保留 PDF 其余内容完整时，这非常有用。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_all_tables(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # 加载现有的PDF文档
-    pdf_document = ap.Document(input_file)
-    # 创建TableAbsorber对象以查找表格
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # 使用吸收器访问第二页
-    absorber.visit(pdf_document.pages[1])
-    # 获取表格集合的副本
-    tables = absorber.table_list
-    # 遍历集合的副本并删除表格
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    #  Loop through the copy of collection and removing tables
+    tables = list(absorber.table_list)
     for table in tables:
         absorber.remove(table)
-    # 保存文档
-    pdf_document.save(output_file)
+
+    # Save document
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 相关表格主题
+
+- [使用 Python 在 PDF 中处理表格](/pdf/zh/python-net/working-with-tables/)
+- [使用 Python 向 PDF 添加表格](/pdf/zh/python-net/adding-tables/)
+- [从 PDF 文档中提取表格](/pdf/zh/python-net/extracting-table/)
+- [在现有 PDF 中操作表格](/pdf/zh/python-net/manipulating-tables/)

@@ -1,50 +1,51 @@
 ---
-title: Get Started 
-linktitle: Get Started
+title: 开始使用
+linktitle: 开始使用
 type: docs
 weight: 30
 url: /zh/python-net/get-started/
-description: 本节介绍了通过 .NET 使用 Aspose.PDF for Python 的基本工作原理。Python 库支持多种功能。
+description: 了解如何使用 Aspose.PDF for Python via .NET 入门，以创建、编辑、转换、验证和提取 PDF 文档中的内容。
 is_node: true
-lastmod: "2022-12-20"   
+lastmod: "2026-06-08"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
-## 什么是 PDF 文件？
+## PDF 文件是什么？
 
-PDF 是 Adobe 在 1990 年代创建的，目的是实现两件事。首先，你应该能够在任何硬件或操作系统上打开文档，而不需要拥有用于创建它们的应用程序——你所需要的只是一个 PDF 阅读器，如今大多数网络浏览器都可以胜任。其次，无论你在哪里打开 PDF，文档的布局都应该看起来一样。
+PDF 于 1990 年代由 Adobe 创建，旨在实现两个目标。其一是您应该能够在任何硬件或操作系统上打开文档，而无需拥有用于创建它们的应用程序——只需一个 PDF 阅读器，而如今大多数网页浏览器都满足此需求。其二是无论在何处打开 PDF，文档的布局都应保持一致。
 
-然而，仅仅打开文档是不够的。在使用 PDF 时，你将面临重新创建此类文档、编辑或将其转换为所需格式的需求。
+Aspose.PDF for Python via .NET 帮助您超越仅仅打开 PDF 文件的需求。您可以使用该库在 Python 应用程序中从零创建 PDF、编辑现有文档、提取内容、验证标准合规性，并将 PDF 转换为其他格式。
 
-## 为什么通过 .NET 使用 Aspose.PDF for Python？
+## 为什么使用 Aspose.PDF for Python via .NET？
 
-在项目中使用通过 .NET 的 Aspose.PDF for Python 可以为你带来以下好处：
+在项目中使用 Aspose.PDF for Python via .NET 可为您带来以下优势：
 
-- 多种功能
-- 基于 Aspose.PDF for .NET
-- 方便易用
+- 广泛的 PDF 处理功能
+- 从 Python 访问经过验证的 Aspose.PDF for .NET 引擎
+- 一个实用的 API，用于常见的文档创建、编辑、解析和转换任务
 
-## 多种功能
+## 您可以自动化的常见 PDF 任务
 
-- 支持大多数已建立的 PDF 标准和 PDF 规范。
-- [在 PDF 文件中添加、搜索、提取和替换文本]()。
-- [添加/删除、提取和替换图像]()。
-- [插入、删除、拆分 PDF 页面]()。
-- [设置和获取 XMP 元数据]()。
-- 验证 (PDF/A-1a, PDF/A-1b)。
-- 使用[书签]()、[注释]()、[PDF 表单]()、[印章]()、[水印]()等。
+- 支持广泛使用的 PDF 标准和规范
+- [在 PDF 文件中添加、搜索、提取和替换文本](/pdf/zh/python-net/working-with-text/)
+- [添加、删除、提取和替换图像](/pdf/zh/python-net/working-with-images/)
+- [插入、删除、提取和管理 PDF 页面](/pdf/zh/python-net/working-with-pages/)
+- [设置并保存 XMP 元数据](/pdf/zh/python-net/save-metadata-with-xmp/)
+- [验证 PDF 文档是否符合 PDF/A-1a 和 PDF/A-1b 标准](/pdf/zh/python-net/manipulate-pdf-document/)
+- 使用 [书签](/pdf/zh/python-net/bookmarks/), [批注](/pdf/zh/python-net/annotations/), [PDF 表单](/pdf/zh/python-net/working-with-forms/), [印章](/pdf/zh/python-net/stamping/)，和 [水印](/pdf/zh/python-net/add-watermarks/)
 
-## 转换功能
+## 文档转换功能
 
-- [将 PDF 转换为 Word、Excel 和 PowerPoint](/pdf/zh/python-net/convert-pdf-to-word/)。
-- [将 PDF 转换为图像格式](/pdf/zh/python-net/convert-pdf-to-images-format/)。
-- [将 PDF 文件转换为 HTML 格式，反之亦然](/pdf/zh//python-net/convert-pdf-to-html/)。
-- [将 PDF 转换为 EPUB、文本、XPS 等](/pdf/zh/python-net/convert-pdf-to-other-files/)。
-- 将 EPUB、Markdown、文本、XPS、PostScript、XML、LaTex 转换为 PDF
+- [将 PDF 转换为 Word、Excel 和 PowerPoint](/pdf/zh/python-net/convert-pdf-to-word/).
+- [将 PDF 转换为图像格式](/pdf/zh/python-net/convert-pdf-to-images-format/).
+- [将 PDF 文件转换为 HTML 并将 HTML 转换为 PDF](/pdf/zh/python-net/convert-pdf-to-html/).
+- [将 PDF 转换为 EPUB、文本、XPS 等](/pdf/zh/python-net/convert-pdf-to-other-files/).
+- [将 EPUB、Markdown、文本、XPS、PostScript、XML、LaTex 转换为 PDF](/pdf/zh/python-net/convert-other-files-to-pdf/)
 
-### 了解更多关于：
+## 从这些教程开始
 
-- ["Hello, World" Python 示例](/pdf/zh/python-net/hello-world-example/)
-- [复杂 PDF](/pdf/zh/python-net/complex-pdf-example/)
+- [“Hello, World” Python 示例](/pdf/zh/python-net/hello-world-example/)
+- [创建一个复杂的 PDF 文档](/pdf/zh/python-net/complex-pdf-example/)
+

@@ -4,155 +4,30 @@ linktitle: AcroForms
 type: docs
 weight: 10
 url: /zh/python-net/acroforms/
-description: 使用 Aspose.PDF for Python，您可以从头创建表单、填写 PDF 文档中的表单字段、从表单中提取数据等。
-lastmod: "2023-02-17"
+description: 了解如何使用 Aspose.PDF for Python via .NET 在 PDF 文档中创建、填写、提取、导入、导出和管理 AcroForm 字段。
+lastmod: "2026-06-08"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Python 处理 AcroForms 的指南
+Abstract: 本节介绍 AcroForms，并阐述如何使用 Aspose.PDF for Python via .NET 处理交互式 PDF 表单。它涵盖了创建表单、填写字段、提取数值、导入和导出表单数据以及修改或删除表单字段等核心工作流。这些教程帮助您构建实用的表单处理流水线，以应对文档自动化场景。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用 Python 处理 AcroForms",
-    "alternativeHeadline": "在 PDF 中处理 AcroForms 的选项",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, pdf 中的 acroforms",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/acroforms/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/acroforms/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "使用 Aspose.PDF for Python，您可以从头创建表单、填写 PDF 文档中的表单字段、从表单中提取数据等。"
-}
-</script>
 
+## AcroForms 基础
 
-## AcroForms 的基础知识
+AcroForms 是交互式、面向页面的 PDF 表单，由 Adobe 引入，并自 PDF 规范 1.2 版起包含在规范中。它们得到广泛支持，可用于跨平台工作流中的数据捕获、验证和交换。
 
-**AcroForms** - 来自 Adobe 的独特 PDF 表单技术。AcroForms 是一种面向页面的表单。它们首次出现于 1998 年。它们接受数据格式或 FDF 和 XML 表单数据格式或 xFDF 的输入。第三方供应商支持 AcroForms。当 Adobe 推出 AcroForms 时，他们称其为“PDF 表单，即 Adobe Acrobat Pro/Standard 的作者，而不是特殊类型的静态或动态 XFA 表单。AcroForms 是可移植的，并且可以在所有平台上工作。```
+在基于 AcroForm 的工作流中，表单数据可以以 FDF 和 XFDF 等格式进行交换。这使得 AcroForms 适用于需要从外部系统预填字段、提取提交值或在文档之间同步表单数据的场景。
 
-您可以使用 AcroForms 向 PDF 表单文档添加额外的页面。得益于模板的概念，您可以使用 AcroForms 来支持用多个数据库记录填充表单。
+Aspose.PDF for Python via .NET 提供 API，以编程方式创建和管理 AcroForms，包括填写字段、导出数据、修改表单结构以及添加提交操作。
 
-PDF 1.7 支持两种不同的方法来集成数据和 PDF 表单。
+有关实际示例，请参阅以下文章：
 
-*AcroForms（也称为 Acrobat 表单）*，在 PDF 1.2 格式规范中引入和包含。
-
-有关 Java 库功能的更详细学习，请参阅以下文章：
-
-- [创建 AcroForm](/pdf/zh/python-net/create-form) - 从头开始使用 Python 创建表单。
-- [填写 AcroForm](/pdf/zh/python-net/fill-form) - 填写 PDF 文档中的表单字段。
-- [提取 AcroForm](/pdf/zh/python-net/extract-form) - 从 PDF 文档的所有字段或单个字段获取值。
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [创建 AcroForm](/pdf/zh/python-net/create-form/) - 从头创建表单。
+- [填写 AcroForm](/pdf/zh/python-net/fill-form/) - 在 PDF 文档中填写表单字段。
+- [提取 AcroForm](/pdf/zh/python-net/extract-form/) 提取所有字段或特定字段的值。
+- [导入和导出表单数据](/pdf/zh/python-net/import-export-form-data/) 以常用格式导入和导出表单数据。
+- [修改 AcroForm](/pdf/zh/python-net/modifying-form/) 修改 AcroForm 字段属性。
+- [从 PDF 中删除表单](/pdf/zh/python-net/remove-form/) 从 PDF 文档中移除表单字段。
+- [发布表单](/pdf/zh/python-net/posting-form/) 为 PDF 表单添加提交功能。

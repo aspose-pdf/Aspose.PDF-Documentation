@@ -1,161 +1,110 @@
 ---
-title: 使用Python编程移动PDF页面
-linktitle: 移动PDF页面
+title: 在 Python 中移动 PDF 页面
+linktitle: 移动 PDF 页面
 type: docs
 weight: 100
 url: /zh/python-net/move-pages/
-description: 尝试使用Aspose.PDF for Python via .NET在PDF文件中将页面移动到所需位置或文件末尾。
-lastmod: "2023-04-17"
+description: 了解如何在 Python 中在文档内部或在文档之间移动 PDF 页面。
+lastmod: "2026-06-08"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在 Python 中在文档之间移动 PDF 页面
+Abstract: 本文介绍了如何使用 Aspose.PDF for Python via .NET 在 PDF 中移动页面。了解如何将单个页面或多个页面移动到另一个文档，以及如何使用 Document 和 PageCollection API 在同一 PDF 中重新定位页面。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用Python编程移动PDF页面",
-    "alternativeHeadline": "如何使用Python移动PDF页面",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf文档生成",
-    "keywords": "pdf, python, 移动pdf页面",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/move-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/move-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "尝试使用Aspose.PDF for Python via .NET在PDF文件中将页面移动到所需位置或文件末尾。"
-}
-</script>
-
 
 ## 将页面从一个 PDF 文档移动到另一个
 
-本主题解释了如何使用 Python 将页面从一个 PDF 文档移动到另一个文档的末尾。
-要移动页面，我们应该：
+Aspose.PDF for Python 允许您将页面（而不仅仅是复制）从一个 PDF 移动到另一个。它会从原始文档中删除所选页面，然后将其添加到新的 PDF 文件中。
 
-1. 使用源 PDF 文件创建一个 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类对象。
-1. 使用目标 PDF 文件创建一个 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类对象。
-1. 从 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合中获取页面。
-1. 将页面 [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 到目标文档。
-1. 使用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法保存输出 PDF。
-1. 在源文档中 [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 页面。
+可以把它想象成把一本书中的页面剪下来粘到另一本书上——移动后该页面在原文件中不再存在。
 
-1. 使用[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)方法保存源PDF。
+1. 使用 ... 打开源 PDF 文档 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类。
+1. 选择要移动的特定页面（在本例中，第 2 页）— 这指的是 a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. 创建新的 PDF 文档（实例化另一个 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
+1. 使用目标文档的 将选定的页面添加到新 PDF 文档中 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) （例如， `another_document.pages.add(page)`).
+1. 通过其从原始文档中删除页面 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) （例如， `document.pages.delete(index)`).
+1. 保存两个文档。
 
-以下代码片段展示了如何移动一页。
+以下代码片段向您展示如何移动一页。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
 
-    srcDocument = ap.Document(src_file_name)
-    dstDocument = ap.Document(dst_File_name)
-    page = srcDocument.pages[2]
-    dstDocument.pages.add(page)
-    # 保存输出文件
-    dstDocument.save(dst_File_name_new)
-    srcDocument.pages.delete(2)
-    srcDocument.save(src_file_name_new)
+    document = ap.Document(input_file_name)
+    page = document.pages[2]
+    another_document = ap.Document()
+    another_document.pages.add(page)
+    document.pages.delete(2)
+    document.save(input_file_name.replace(".pdf", "_new.pdf"))
+    another_document.save(output_file_name)
 ```
 
-## 从一个PDF文档移动一组页面到另一个
+## 将多个页面从一个 PDF 文档移动到另一个 PDF 文档
 
-1. 使用源PDF文件创建一个[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)类对象。
-1. 使用目标PDF文件创建一个[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)类对象。
-1. 定义一个数组，包含要移动的页面编号。
-1. 循环遍历数组：
+与复制不同，此操作会转移所选页面——将它们从源文件中移除并保存到一个新的 PDF 中。
 
-1. 从 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合中获取页面。
-1. 将页面[添加](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods)到目标文档。
-1. 使用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法保存输出 PDF。
-1. 使用数组在源文档中[删除](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods)页面。
-1. 使用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法保存源 PDF。
+1. 创建一个新的、空的目标文档 ("`Document`).
+1. 从源文档中选择多个页面（在本例中为第 1 页和第 3 页） [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 遍历所选页面并将每个页面添加到目标文档中 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 保存包含已移动页面的目标文档。
+1. 使用其从源文档中删除已移动的页面。 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 使用新文件名保存已修改的源文档，以保留两个版本。
 
-以下代码片段展示了如何在 PDF 文件的末尾插入一个空白页面。
+下面的代码片段展示了如何移动多个页面。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    srcDocument = ap.Document(input_pdf)
-    dstDocument = ap.Document()
-    pages = [1, 3]
+def move_multiple_pages_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
+    dst_document = ap.Document()
+    pages = [1, 2]
     for page_index in pages:
-        page = srcDocument.pages[page_index]
-        dstDocument.pages.add(page)
-    # 保存输出文件
-    dstDocument.save(output_pdf_1)
-    srcDocument.pages.delete(pages)
-    srcDocument.save(output_pdf_2)
+        page = src_document.pages[page_index]
+        dst_document.pages.add(page)
+    # Save output files
+    dst_document.save(output_file_name)
+    src_document.pages.delete(pages)
+    src_document.save(input_file_name.replace(".pdf", "_new.pdf"))
 ```
 
+## 在同一 PDF 文档中将页面移动到新位置
 
-## 在当前 PDF 文档中移动页面到新位置
+它展示了如何在同一文档中将特定页面移动到不同位置——在重新组织或编辑 PDF 布局时的常见需求。
 
-1. 使用源 PDF 文件创建一个 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类对象。
-1. 从 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合中获取页面。
-1. 将页面 [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 到新位置（例如末尾）。
-1. 在先前位置 [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 页面。
-1. 使用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法保存输出 PDF。
+1. 使用以下方法加载输入 PDF 文档 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类。
+1. 选择要移动的页面（第 2 页）——这是一 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. 使用文档的…将其添加到文档末尾 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 通过以下方式从其先前位置删除原始页面 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 将修改后的文档另存为新文件。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_in_new_location_in_same_document(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
 
-    srcDocument = ap.Document(input_pdf)
+    page = src_document.pages[2]
+    src_document.pages.add(page)
+    src_document.pages.delete(2)
 
-    page = srcDocument.pages[2]
-    srcDocument.pages.add(page)
-    srcDocument.pages.delete(2)
+    # Save output file
+    src_document.save(output_file_name)
+```
 
-    # 保存输出文件
-    srcDocument.save(output_pdf)
+## 相关页面主题
+
+- [在 Python 中处理 PDF 页面](/pdf/zh/python-net/working-with-pages/)
+- [在 Python 中添加 PDF 页面](/pdf/zh/python-net/add-pages/)
+- [在 Python 中删除 PDF 页面](/pdf/zh/python-net/delete-pages/)
+- [在 Python 中提取 PDF 页面](/pdf/zh/python-net/extract-pages/)
