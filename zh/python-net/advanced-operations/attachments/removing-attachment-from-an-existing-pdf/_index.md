@@ -1,166 +1,67 @@
 ---
-title: 从PDF中移除附件使用Python
-linktitle: 从现有PDF中移除附件
+title: 在 Python 中删除 PDF 附件
+linktitle: 从现有 PDF 中删除附件
 type: docs
 weight: 30
 url: /zh/python-net/removing-attachment-from-an-existing-pdf/
-description: Aspose.PDF可以从您的PDF文档中移除附件。使用Python PDF API通过Aspose.PDF for Python via .NET库移除PDF文件中的附件。
-lastmod: "2023-02-17"
+description: Aspose.PDF 可以从您的 PDF 文档中删除附件。使用 Python PDF API，通过 Aspose.PDF for Python via .NET 库来删除 PDF 文件中的附件。
+lastmod: "2026-06-08"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 如何使用 Python 删除 PDF 附件
+Abstract: 本文讨论了如何使用 Aspose.PDF for Python 删除 PDF 文件中的附件。PDF 文档中的附件存储在 `Document` 对象的 `EmbeddedFiles` 集合中。要删除 PDF 中的所有附件，您可以对 `EmbeddedFiles` 集合调用 `delete()` 方法，然后使用 `Document` 对象的 `save()` 方法保存更新后的文档。文中提供了代码片段来演示此过程，展示了打开文档、删除附件并保存修改后文件的步骤。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "从PDF中移除附件",
-    "alternativeHeadline": "如何使用Python删除PDF中的附件",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf文档生成",
-    "keywords": "pdf, python, 删除附件",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/removing-attachment-from-an-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/removing-attachment-from-an-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Python可以从您的PDF文档中移除附件。使用Python PDF API通过Aspose.PDF库移除PDF文件中的附件。"
-}
-</script>
 
+Aspose.PDF for Python 可以删除 PDF 文件中的附件。PDF 文档的附件存放在 Document 对象的 [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) 集合。
 
-Aspose.PDF for Python 可以从 PDF 文件中删除附件。PDF 文档的附件保存在 Document 对象的 [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) 集合中。
+此工作流在您需要清理过时的嵌入文件、减小包大小或准备不附带源材料的 PDF 进行再分发时非常有用。
 
 要删除与 PDF 文件关联的所有附件：
 
-1. 调用 [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) 集合的 [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) 方法。
-2. 使用 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法保存更新后的文件。
+1. 调用 [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection 的 [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) 方法。
+1. 使用以下方式保存已更新的文件 [文档](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法。
 
-以下代码片段显示了如何从 PDF 文档中删除附件。
+下面的代码片段展示了如何从 PDF 文档中删除附件。
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    # 打开文档
-    document = ap.Document(input_pdf)
-
-    # 删除所有附件
-    document.embedded_files.delete()
-
-    # 保存更新后的文件
-    document.save(output_pdf)
+def remove_attachment(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete()
+        document.save(outfile)
 ```
 
+## 按名称删除特定附件
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 操作库 for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+如果您只需删除一个附件并保留其他附件，请使用 [delete_by_key()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/delete_by_key/) 方法并传递附件名称。
+
+删除特定附件：
+
+1. 打开源 PDF 文件。
+1. 调用 `document.embedded_files.delete_by_key(attachment_name)`.
+1. 保存更新后的 PDF 文件。
+
+以下代码片段通过名称删除一个附件。
+
+```python
+
+import aspose.pdf as ap
+
+def remove_attachment(infile, attachment_name, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete_by_key(attachment_name)
+        document.save(outfile)
+```
+
+## 相关附件主题
+
+- [在 Python 中处理 PDF 附件](/pdf/zh/python-net/attachments/)
+- [在 Python 中向 PDF 添加附件](/pdf/zh/python-net/add-attachment-to-pdf-document/)
+- [在 Python 中创建和管理 PDF 组合文件](/pdf/zh/python-net/portfolio/)
+

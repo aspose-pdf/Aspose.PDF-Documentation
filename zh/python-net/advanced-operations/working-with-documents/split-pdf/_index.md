@@ -1,34 +1,34 @@
 ---
-title: 在 Python 中拆分 PDF 文件
-linktitle: 拆分 PDF 文件
+title: 在Python中拆分PDF文件
+linktitle: 拆分PDF文件
 type: docs
 weight: 60
 url: /zh/python-net/split-pdf-document/
-description: 了解如何在 Python 中将 PDF 文件拆分为单页、等分、固定大小的组、自定义页范围，以及奇数页或偶数页。
-lastmod: "2026-04-15"
+description: 了解如何在 Python 中将 PDF 文件拆分为单独页面、等分部分、固定大小的分组、自定义页面范围以及奇数或偶数页。
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: 使用 Python 将 PDF 拆分为单页和页范围。
-Abstract: 本文展示了如何使用 Aspose.PDF for Python via .NET 拆分 PDF 文件。它涵盖了将 PDF 拆分为单页、拆分为两等份、固定大小的页组、自定义页范围、命名页组、稳定的文件名以及奇数页或偶数页文件。
+AlternativeHeadline: 使用 Python 将 PDF 拆分为页面和页面范围
+Abstract: 本文展示了如何使用 Aspose.PDF for Python via .NET 对 PDF 文件进行拆分。它涵盖了将 PDF 拆分为单独页面、两个相等部分、固定大小的页面组、自定义页面范围、具名页面组、稳定的文件名，以及奇数页或偶数页文件。
 ---
 
-此页面展示了如何使用 Aspose.PDF for Python via .NET 在 Python 中 **拆分 PDF 文件**。
+此页面展示了如何使用 Aspose.PDF for Python via .NET **在 Python 中拆分 PDF 文件**。
 
-在需要将大型 PDF 拆分为单页文件、等分部分、固定大小的组、自定义页码范围或奇偶页集合以进行分发、审阅或后续处理时，请使用这些示例。
+当您需要将大型PDF拆分为单页文件、等分部分、固定大小的组、自定义页范围，或奇偶页集合，以进行分发、审阅或下游处理时，请使用这些示例。
 
 ## 在线拆分 PDF 示例
 
-[Aspose.PDF 拆分器](https://products.aspose.app/pdf/splitter) 是一个在线网页应用程序，让您测试 PDF 拆分功能。
+[Aspose.PDF 拆分器](https://products.aspose.app/pdf/splitter) 是一个在线网页应用程序，可让您测试 PDF 拆分功能。
 
 [![Aspose 拆分 PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-要在 Python 中将 PDF 页面拆分为单页 PDF 文件，请按以下步骤操作：
+在 Python 中将 PDF 页面拆分为单页 PDF 文件，请按以下步骤操作：
 
-1. 遍历 PDF 文档的页面 [文档](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的 [页面集合](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合
-1. 对于每次迭代，创建一个新的 Document 对象并添加各个 [页面](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 对象放入空文档
-1. 使用以下方式保存新的 PDF [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法
+1. 循环遍历 PDF 文档的页面 [文档](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的 [页面集合](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合
+1. 对于每次迭代，创建一个新的 Document 对象并添加单个 [页面](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 对象放入空文档
+1. 使用以下方法保存新 PDF [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法
 
 ## 在 Python 中将 PDF 拆分为多个文件
 
@@ -48,16 +48,16 @@ def split_documents(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num}.pdf"))
 ```
 
-## 将 PDF 拆分为两个相等的部分
+## 将 PDF 拆分为两个等分
 
 1. 加载 PDF 文档。
 1. 确定总页数。
 1. 计算中点。
 1. 创建第一个输出文档。
-1. 删除第一个文档的后半页。
+1. 从第一个文档中删除后半部分的页面。
 1. 保存第一部分。
 1. 创建第二个输出文档。
-1. 从第二个文档中删除前半部分的页面。
+1. 删除第二个文档的前半页。
 1. 保存第二部分。
 
 ```python
@@ -84,19 +84,19 @@ def split_documents_into_two_parts(infile, outdir):
         second_document.save(path.join(outdir, "Part_2.pdf"))
 ```
 
-## 将 PDF 按每 N 页拆分为多个文件
+## 将 PDF 拆分为每 N 页的多个文件
 
-使用 Aspose.PDF for Python 将 PDF 文档拆分为多个较小的文件，依据固定的页数。
+使用 Aspose.PDF for Python 将 PDF 文档按固定页数拆分为多个较小的文件。
 
 1. 加载 PDF 文档。
 1. 确定总页数。
-1. 定义每个部分的页数。
-1. 以块的方式遍历文档。
-1. 计算每个部分的页码范围。
+1. 为每个部分定义页数。
+1. 逐块遍历文档。
+1. 计算每个部分的页面范围。
 1. 为每个部分创建一个新文档。
 1. 将页面复制到新文档中。
-1. 保存拆分的文档。
-1. 重复，直至所有页面处理完毕。
+1. 保存拆分文档。
+1. 重复执行，直到所有页面都处理完。
 
 ```python
 import sys
@@ -122,20 +122,20 @@ def split_documents_every_n_pages(infile, outdir, pages_per_part=3):
         part_index += 1
 ```
 
-## 按自定义页码范围拆分 PDF
+## 按自定义页面范围拆分 PDF
 
-使用 Aspose.PDF for Python 将 PDF 文档按自定义页面范围拆分为多个文件。
+使用 Aspose.PDF for Python 将 PDF 文档根据自定义页面范围拆分为多个文件。
 
 1. 加载 PDF 文档。
 1. 确定总页数。
-1. 创建一个表示 (start_page, end_page) 范围的元组列表。
+1. 创建一个元组列表，表示 (start_page, end_page) 范围。
 1. 遍历已定义的范围。
 1. 验证起始页。
 1. 调整结束页。
 1. 验证有效范围。
 1. 为每个范围创建一个新文档。
 1. 将页面复制到新文档中。
-1. 保存每个拆分文档。
+1. 保存每个拆分的文档。
 
 ```python
 import sys
@@ -165,19 +165,19 @@ def split_documents_by_page_ranges(infile, outdir):
             )
 ```
 
-## 将 PDF 拆分为首页和其余页面
+## 将 PDF 拆分为第一页和剩余页面
 
-使用 Aspose.PDF for Python 将 PDF 文档的首页与其余页面分离。
+使用 Aspose.PDF for Python 将 PDF 文档的第一页与其余页面分离。
 
 1. 加载 PDF 文档。
 1. 确定总页数。
 1. 检查文档是否为空。
-1. 为首页创建文档。
+1. 为第一页创建文档。
 1. 添加第一页。
 1. 保存第一页文档。
-1. 检查是否有额外的页面。
+1. 检查是否有其他页面。
 1. 为剩余页面创建文档。
-1. 复制剩余页面。
+1. 复制剩余的页面。
 1. 保存剩余页面的文档。
 
 ```python
@@ -208,14 +208,14 @@ def split_documents_first_page_and_rest(infile, outdir):
 
 ## 将 PDF 拆分为最后一页和前面的页面
 
-使用 Aspose.PDF for Python 提取 PDF 文档的最后一页，并将其从其余页面中分离出来。
+使用 Aspose.PDF for Python 提取 PDF 文档的最后一页，并将其从其余页面中分离。
 
 1. 加载 PDF 文档。
 1. 确定总页数。
 1. 检查文档是否为空。
 1. 为最后一页创建文档。
 1. 添加最后一页。
-1. 保存最后一页的文档。
+1. 保存最后一页文档。
 1. 检查单页文档。
 1. 从原始文档中删除最后一页。
 1. 保存剩余的页面。
@@ -246,7 +246,7 @@ def split_documents_last_page_and_rest(infile, outdir):
 
 ## 将 PDF 拆分为三部分
 
-使用 Aspose.PDF for Python 将 PDF 文档拆分为三个独立的部分。
+使用 Aspose.PDF for Python 将 PDF 文档拆分为三个独立部分。
 
 1. 加载 PDF 文档。
 1. 确定总页数。
@@ -254,7 +254,7 @@ def split_documents_last_page_and_rest(infile, outdir):
 1. 计算部件大小。
 1. 遍历三个部分。
 1. 确定每个部分的页码范围。
-1. 验证页码范围。
+1. 验证页面范围。
 1. 为每个部分创建一个新文档。
 1. 将页面复制到部件文档中。
 1. 保存每个部分。
@@ -289,7 +289,7 @@ def split_documents_into_three_parts(infile, outdir):
 
 ## 自定义 PDF 页面拆分器
 
-使用 Aspose.PDF for Python 将 PDF 文档根据自定义页面组拆分为多个文件。
+使用 Aspose.PDF for Python 将 PDF 文档拆分为多个文件，依据自定义的页面分组。
 
 ```python
 import sys
@@ -338,7 +338,7 @@ def split_documents_with_stable_filenames(infile, outdir):
 
 ## 将 PDF 拆分为奇数页和偶数页
 
-使用 Aspose.PDF for Python 将 PDF 文档拆分为两个单独的文件，分别包含奇数页和偶数页。
+使用 Aspose.PDF for Python 将 PDF 文档拆分为两个独立的文件，分别包含奇数页和偶数页。
 
 ```python
 import sys
@@ -365,7 +365,8 @@ def split_documents_odd_even_pages(infile, outdir):
 
 ## 相关文档主题
 
-- [在 Python 中处理 PDF 文档](/pdf/zh/python-net/working-with-documents/)
+- [使用 Python 处理 PDF 文档](/pdf/zh/python-net/working-with-documents/)
 - [在 Python 中合并 PDF 文件](/pdf/zh/python-net/merge-pdf-documents/)
 - [在 Python 中优化 PDF 文件](/pdf/zh/python-net/optimize-pdf/)
-- [在Python中操作PDF文档](/pdf/zh/python-net/manipulate-pdf-document/)
+- [在 Python 中操作 PDF 文档](/pdf/zh/python-net/manipulate-pdf-document/)
+

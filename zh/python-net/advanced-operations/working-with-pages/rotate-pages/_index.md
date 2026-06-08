@@ -1,174 +1,44 @@
 ---
-title: 使用 Python 旋转 PDF 页面
+title: 在 Python 中旋转 PDF 页面
 linktitle: 旋转 PDF 页面
 type: docs
 weight: 110
 url: /zh/python-net/rotate-pages/
-description: 本主题描述如何使用 Python 编程旋转现有 PDF 文件中的页面方向。
-lastmod: "2023-04-17"
+description: 学习如何在 Python 中旋转 PDF 页面并更改页面方向。
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 如何使用 Python 旋转 PDF 页面
+Abstract: 这篇文章提供了一个指南，介绍如何使用 Python 以编程方式更新或更改现有 PDF 文件中页面的页面方向。利用 Aspose.PDF for Python via .NET，用户可以通过调整页面的 MediaBox 属性轻松在横向和纵向之间切换。文章包含一个 Python 代码片段，演示如何遍历 PDF 文档中的页面，修改它们的 MediaBox 尺寸和位置，并在必要时调整 CropBox。此外，还解释了如何使用 “rotate” 方法设置页面的旋转角度以实现所需的方向。该过程以保存更新后的 PDF 文件结束。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用 Python 旋转 PDF 页面",
-    "alternativeHeadline": "如何使用 Python 旋转 PDF 页面",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文件生成",
-    "keywords": "pdf, python, 旋转 pdf 页面",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/rotate-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/rotate-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "本主题描述如何使用 Python 编程旋转现有 PDF 文件中的页面方向。"
-}
-</script>
 
+本主题描述了如何使用 Python 以编程方式更新或更改现有 PDF 文件中页面的页面方向。
 
-这个主题描述了如何使用Python以编程方式更新或更改现有PDF文件中的页面方向。
+当您需要在纵向和横向之间切换页面方向或对现有 PDF 内容应用旋转角度时，请使用此页面。
 
 ## 更改页面方向
 
-通过 .NET 的Aspose.PDF for Python支持出色的功能，比如将页面方向从横向更改为纵向，反之亦然。要更改页面方向，请使用以下代码片段设置页面的MediaBox。您还可以通过使用“rotate”方法设置旋转角度来更改页面方向。
+此函数会旋转 PDF 的每一页 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 使用 Aspose.PDF for Python 顺时针旋转 90 度。
+它对于纠正页面方向问题非常有用，例如扫描的文档被横向放置。原始 PDF 保持不变，旋转后的版本保存为新文件。
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    doc = ap.Document(input_pdf)
-    for page in doc.pages:
-        r = page.media_box
-        newHeight = r.width
-        newWidth = r.height
-        newLLX = r.llx
-        # 为了补偿页面大小的变化，我们必须将页面向上移动
-        # （页面的下边缘是0,0，信息通常从页面顶部放置。这就是为什么我们在
-        # 新旧高度之间的差异上移动下边缘向上。
-        newLLY = r.lly + (r.height - newHeight)
-        page.media_box = ap.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight, True)
-        # 有时我们还需要设置CropBox（如果它在原始文件中设置）
-        page.crop_box = ap.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight, True)
-
-        # 设置页面旋转角度
+def rotate_page(infile, outfile):
+    document = ap.Document(infile)
+    for page in document.pages:
         page.rotate = ap.Rotation.ON90
 
-    # 保存输出文件
-    doc.save(output_pdf)
+    document.save(outfile)
 ```
 
+## 相关页面主题
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python 的 PDF 操作库",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [在 Python 中处理 PDF 页面](/pdf/zh/python-net/working-with-pages/)
+- [在 Python 中更改 PDF 页面大小](/pdf/zh/python-net/change-page-size/)
+- [在 Python 中裁剪 PDF 页面](/pdf/zh/python-net/crop-pages/)
+- [在 Python 中获取和设置 PDF 页面属性](/pdf/zh/python-net/get-and-set-page-properties/)
