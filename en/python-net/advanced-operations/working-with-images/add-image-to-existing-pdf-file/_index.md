@@ -1,21 +1,21 @@
 ---
-title: Add Image to PDF using Python
-linktitle: Add Image
+title: Add Image to Existing PDF in Python
+linktitle: Add Image to PDF
 type: docs
 weight: 10
 url: /python-net/add-image-to-existing-pdf-file/
-description: Learn how to add images to existing PDF files in Python.
+description: Learn how to add an image to an existing PDF file in Python, place it at fixed coordinates, set alternative text, and use image compression.
 lastmod: "2026-05-05"
 TechArticle: true
-AlternativeHeadline: Add images to existing PDF files with Python
-Abstract: This article shows how to add images to PDF documents with Aspose.PDF for Python via .NET. It covers adding an image at fixed coordinates, placing images with low-level operators, assigning alternative text for accessibility, and embedding images with Flate compression.
+AlternativeHeadline: Add images to existing PDF files using Python
+Abstract: This article shows how to add images to PDF documents with Aspose.PDF for Python via .NET. It covers placing an image at fixed coordinates, drawing images with low-level PDF operators, assigning alternative text for accessibility, and embedding images with Flate compression.
 ---
 
-## Add Image in an Existing PDF File
+## Add Image to an Existing PDF File in Python
 
 This example shows how to place an image at a fixed position on an existing PDF page using Aspose.PDF for Python via .NET.
 
-Use these examples from this page when you need to place logos, photos, or other graphics at fixed coordinates inside an existing PDF layout.
+Use these examples when you need to add a logo, photo, stamp, chart, or other graphic to an existing PDF layout. You can place the image with page coordinates, draw it with operators, add accessibility text, or control image compression.
 
 1. Load an existing PDF with `ap.Document(infile)`.
 1. Select the target page (`document.pages[1]` for the first page).
@@ -35,7 +35,7 @@ def add_image(infile, image_file, outfile):
     document.save(outfile)
 ```
 
-## Add an Image Using Operators
+## Add an Image to PDF Using Operators
 
 This approach adds an image with low-level PDF operators instead of the high-level `add_image()` helper.
 
@@ -81,7 +81,7 @@ def add_image_using_operators(image_file, outfile):
     document.save(outfile)
 ```
 
-## Add Image with Alternative Text
+## Add Image to PDF with Alternative Text
 
 This example adds an image and assigns alternative text for accessibility.
 

@@ -1,268 +1,194 @@
 ---
-title: 使用Python将PDF转换为Excel
-linktitle: 将PDF转换为Excel
+title: 在 Python 中将 PDF 转换为 Excel
+linktitle: 将 PDF 转换为 Excel
 type: docs
 weight: 20
 url: /zh/python-net/convert-pdf-to-excel/
-lastmod: "2022-12-23"
-description: Aspose.PDF for Python库允许您使用Python将PDF格式转换为Excel格式。这些格式包括XLS, XLSX, XML 2003电子表格, CSV, ODS。
+lastmod: "2026-04-14"
+description: 了解如何在 Python 中将 PDF 转换为 Excel，包括 XLS、XLSX、CSV、ODS，单工作表输出以及列处理，使用 Aspose.PDF。
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在 Python 中将 PDF 转换为 Excel、XLSX、CSV 和 ODS。
+Abstract: 本文展示了如何使用 Aspose.PDF for Python via .NET 将 PDF 文件转换为电子表格格式。它涵盖了 XLS、XLSX、XLSM、CSV 和 ODS 的输出，并提供了控制空白列和减少生成工作表数量的选项。
 ---
 
-## 概述
+## 在 Python 中将 PDF 转换为 Excel
 
-本文解释了如何使用Python将**PDF转换为Excel格式**。它涵盖了以下主题。
+**Aspose.PDF for Python via .NET** 支持从 Python 代码将 PDF 文件转换为 Excel 及其他电子表格格式。
 
-_格式_: **XLS**
+当您需要将 PDF 转换为 XLS、XLSX、CSV 或 ODS 以进行表格提取、报告复用、排序、过滤或后续分析时，请使用此页面。在 PDF 转 Excel 转换过程中，单个 PDF 页面可以渲染为 Excel 工作表。
 
-- [Python PDF到XLS](#python-pdf-to-xls)
-- [Python 将PDF转换为XLS](#python-pdf-to-xls)
-- [Python 如何将PDF文件转换为XLS](#python-pdf-to-xls)
-
-_格式_: **XLSX**
-
-- [Python PDF到XLSX](#python-pdf-to-xlsx)
-- [Python 将PDF转换为XLSX](#python-pdf-to-xlsx)
-- [Python 如何将PDF文件转换为XLSX](#python-pdf-to-xlsx)
-
-_格式_: **Excel**
-
-- [Python PDF to Excel](#python-pdf-to-xlsx)
-- [Python PDF to Excel XLS](#python-pdf-to-xls)
-- [Python PDF to Excel XLSX](#python-pdf-to-xlsx)
-
-_格式_: **CSV**
-
-- [Python PDF to CSV](#python-pdf-to-csv)
-- [Python Convert PDF to CSV](#python-pdf-to-csv)
-- [Python How to convert PDF file to CSV](#python-pdf-to-csv)
-
-_格式_: **ODS**
-
-- [Python PDF to ODS](#python-pdf-to-ods)
-- [Python Convert PDF to ODS](#python-pdf-to-ods)
-- [Python How to convert PDF file to ODS](#python-pdf-to-ods)
-
-## 通过 Python 进行 PDF 转换为 EXCEL
-
-**Aspose.PDF for Python via .NET** 支持将 PDF 文件转换为 Excel 和 CSV 格式的功能。
-
-Aspose.PDF for Python via .NET 是一个 PDF 操作组件，我们引入了一项功能，可以将 PDF 文件渲染为 Excel 工作簿（XLSX 文件）。在此转换过程中，PDF 文件的各个页面被转换为 Excel 工作表。
+第一个示例将 PDF 文件转换为 Spreadsheet 2003 XML 格式。后续章节展示 XLSX、XLSM、CSV、ODS 以及单工作表输出。
 
 {{% alert color="success" %}}
-**尝试在线将 PDF 转换为 Excel**
+**尝试将 PDF 在线转换为 Excel**
 
-Aspose.PDF 为您提供了在线免费应用程序 ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)，您可以尝试调查其功能和工作质量。
+Aspose.PDF 向您展示在线应用程序 ["PDF 转 XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)，在此您可以尝试调查其功能和工作质量。
 
-[![Aspose.PDF 转换 PDF 为 Excel 的免费应用](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![使用 App 将 Aspose.PDF 转换 PDF 为 Excel](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-以下代码片段展示了如何使用 Aspose.PDF for Python via .NET 将 PDF 文件转换为 XLS 或 XLSX 格式的过程。
+以下代码片段展示了使用 Aspose.PDF for Python via .NET 将 PDF 文件转换为 XLS 或 XLSX 格式的过程。
 
-<a name="python-pdf-to-xls"><strong>步骤：在 Python 中将 PDF 转换为 XLS</strong></a>
+步骤：将 PDF 文件转换为 Excel（XML Spreadsheet 2003）格式
 
-1. 使用源 PDF 文档创建 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的实例。
-2. 创建 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) 的实例。
-3. 通过调用 [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法并传递 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/)，指定 **.xls 扩展名** 将其保存为 **XLS** 格式。
+1. 加载 PDF 文档。
+1. 使用 设置 Excel 保存选项 [Excel 保存选项](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. 保存已转换的文件。
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
+def convert_pdf_to_excel_spread_sheet2003(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.ExcelSaveOptions()
+    save_options.format = ap.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
+    document.save(outfile, save_options)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xls.xls"
-    # 打开 PDF 文档
-    document = ap.Document(input_pdf)
-
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
-
-    # 将文件保存为 MS Excel 格式
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
+## 在 Python 中将 PDF 转换为 XLSX
 
-<a name="python-pdf-to-xlsx"><strong>步骤：在 Python 中将 PDF 转换为 XLSX</strong></a>
+步骤：将 PDF 文件转换为 XLSX 格式（Excel 2007+）
 
-1. 使用源 PDF 文档创建 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的实例。
-2. 创建 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) 的实例。
-3. 调用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法并传递 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/)，将其保存为 **XLSX** 格式并指定 **.xlsx 扩展名**。
+1. 加载 PDF 文档。
+1. 使用 设置 Excel 保存选项 [Excel 保存选项](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. 保存已转换的文件。
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
+def convert_pdf_to_excel_2007(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.ExcelSaveOptions()
+    save_options.format = ap.ExcelSaveOptions.ExcelFormat.XLSX
+    document.save(outfile, save_options)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_xlsx.xlsx"
-    # 打开 PDF 文档
-    document = ap.Document(input_pdf)
-
-    save_option = ap.ExcelSaveOptions()
-
-    # 将文件保存为 MS Excel 格式
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
-## 将 PDF 转换为具有控制列的 XLS
+## 将 PDF 转换为 XLSX 并控制列
 
-当将 PDF 转换为 XLS 格式时，空白列作为第一列添加到输出文件中。
- 在 'ExcelSaveOptions class' 中，InsertBlankColumnAtFirst 选项用于控制此列。其默认值为 true。
+在将 PDF 转换为 Excel 格式时，输出文件的第一列可以添加一个空白列。使用 `insert_blank_column_at_first` 选项的 `ExcelSaveOptions` 用于控制此行为的类。其默认值为 `true`.
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
+def convert_pdf_to_excel_2007_control_column(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.ExcelSaveOptions()
+    save_options.format = ap.ExcelSaveOptions.ExcelFormat.XLSX
+    save_options.insert_blank_column_at_first = True
+    document.save(outfile, save_options)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xlsx_with_control_column.xls"
-    # 打开 PDF 文档
-    document = ap.Document(input_pdf)
-
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
-    save_option.insert_blank_column_at_first = True
-
-    # 将文件保存为 MS Excel 格式
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
 ## 将 PDF 转换为单个 Excel 工作表
 
-将包含大量页面的 PDF 文件导出为 XLS 时，每页都会导出到 Excel 文件中的不同工作表。这是因为 MinimizeTheNumberOfWorksheets 属性默认设置为 false。为了确保所有页面都导出到输出 Excel 文件中的一个工作表，请将 MinimizeTheNumberOfWorksheets 属性设置为 true。
+Aspose.PDF for Python via .NET 展示了如何将 PDF 转换为 Excel（.xlsx）文件，并启用了 “minimize_the_number_of_worksheets” 选项。
 
-<a name="python-pdf-to-excel-single"><strong>步骤：在 Python 中将 PDF 转换为 XLS 或 XLSX 单个工作表</strong></a>
-1. 创建一个 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的实例，使用源 PDF 文档。
-2. 创建一个 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) 的实例，设置 **MinimizeTheNumberOfWorksheets = true**。
-3. 调用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法并传递 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/)，将其保存为具有单个工作表的 **XLS** 或 **XLSX** 格式。
+步骤：在 Python 中将 PDF 转换为 XLS 或 XLSX 单工作表
+
+1. 加载 PDF 文档。
+1. 使用 设置 Excel 保存选项 [Excel 保存选项](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. ‘minimize_the_number_of_worksheets’ 选项通过将 PDF 页面合并到更少的工作表中来减少 Excel 工作表的数量（例如，如果可能的话，将整个文档放在一个工作表中）。
+1. 保存已转换的文件。
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
+def convert_pdf_to_excel_2007_single_excel_worksheet(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.ExcelSaveOptions()
+    save_options.format = ap.ExcelSaveOptions.ExcelFormat.XLSX
+    save_options.minimize_the_number_of_worksheets = True
+    document.save(outfile, save_options)
 
-    input_pdf = DIR_INPUT + "many_pages.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xlsx_single_excel_worksheet.xls"
-    # 打开 PDF 文档
-    document = ap.Document(input_pdf)
-
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
-    save_option.minimize_the_number_of_worksheets = True
-
-    # 将文件保存为 MS Excel 格式
-    document.save(output_pdf, save_option)
-
+    print(infile + " converted into " + outfile)
 ```
 
+## 将 PDF 转换为 Excel 2007 宏启用文件 (XLSM)
+
+此 Python 示例展示了如何将 PDF 文件转换为 XLSM 格式的 Excel 文件（Excel 宏启用工作簿）。
+
+```python
+from os import path
+import aspose.pdf as ap
+import sys
+
+def convert_pdf_to_excel_2007_macro(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.ExcelSaveOptions()
+    save_options.format = ap.ExcelSaveOptions.ExcelFormat.XLSM
+    document.save(outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
 
 ## 转换为其他电子表格格式
 
-### 转换为 CSV
+### 将 PDF 转换为 CSV
 
-转换为 CSV 格式的操作与上述方法相同。你需要做的就是设置适当的格式。
+‘convert_pdf_to_excel_2007_csv’ 函数执行与之前相同的操作，但这次的目标格式是 CSV（逗号分隔值），而不是 XLSM。
 
-<a name="python-pdf-to-csv"><strong>步骤：在 Python 中将 PDF 转换为 CSV</strong></a>
+步骤：在 Python 中将 PDF 转换为 CSV
 
-1. 使用源 PDF 文档创建 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的实例。
-2. 创建 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) 的实例，并设置 **Format = ExcelSaveOptions.ExcelFormat.CSV**。
-3. 通过调用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法并传递 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/)，将其保存为 **CSV** 格式。
-
-```python
-
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_csv.csv"
-    # 打开 PDF 文档
-    document = ap.Document(input_pdf)
-
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.CSV
-
-    # 保存文件
-    document.save(output_pdf, save_option)
-```
-
-
-### 转换为 ODS
-
-<a name="python-pdf-to-ods"><strong>步骤：在 Python 中将 PDF 转换为 ODS</strong></a>
-
-1. 使用源 PDF 文档创建 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的实例。
-2. 使用 **Format = ExcelSaveOptions.ExcelFormat.ODS** 创建 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) 的实例。
-3. 通过调用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法并传递 [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) 将其保存为 **ODS** 格式。
-
-转换为 ODS 格式的过程与其他格式相同。
+1. 创建一个实例 [文档](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 包含源 PDF 文档的对象。
+1. 创建一个实例 [Excel 保存选项](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) 使用 **ExcelSaveOptions.ExcelFormat.CSV**
+1. 通过调用将其保存为 **CSV** 格式 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* 方法并传递它 [Excel 保存选项](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
-    
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_ods.ods"
-    # 打开 PDF 文档
-    document = ap.Document(input_pdf)
+def convert_pdf_to_excel_2007_csv(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.ExcelSaveOptions()
+    save_options.format = ap.ExcelSaveOptions.ExcelFormat.CSV
+    document.save(outfile, save_options)
 
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.ODS
-
-    # 保存文件
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
+### 将 PDF 转换为 ODS
 
-## 另请参阅
+步骤：在 Python 中将 PDF 转换为 ODS
 
-本文还涵盖这些主题。代码与上面相同。
+1. 创建一个实例 [文档](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 包含源 PDF 文档的对象。
+1. 创建一个实例 [Excel 保存选项](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) 使用 **ExcelSaveOptions.ExcelFormat.ODS**
+1. 通过调用将其保存为 **ODS** 格式 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法并传递它 [Excel 保存选项](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
-_格式_：**Excel**
-- [Python PDF 到 Excel 代码](#python-pdf-to-xlsx)
-- [Python PDF 到 Excel API](#python-pdf-to-xlsx)
-- [Python PDF 到 Excel 编程](#python-pdf-to-xlsx)
-- [Python PDF 到 Excel 库](#python-pdf-to-xlsx)
-- [Python 将 PDF 保存为 Excel](#python-pdf-to-xlsx)
-- [Python 从 PDF 生成 Excel](#python-pdf-to-xlsx)
-- [Python 从 PDF 创建 Excel](#python-pdf-to-xlsx)
-- [Python PDF 到 Excel 转换器](#python-pdf-to-xlsx)
+转换为 ODS 格式的方式与所有其他格式相同。
 
-_格式_：**XLS**
-- [Python PDF 到 XLS 代码](#python-pdf-to-xls)
-- [Python PDF 到 XLS API](#python-pdf-to-xls)
-- [Python PDF 到 XLS 编程](#python-pdf-to-xls)
-- [Python PDF 到 XLS 库](#python-pdf-to-xls)
-- [Python 将 PDF 保存为 XLS](#python-pdf-to-xls)
-- [Python 从 PDF 生成 XLS](#python-pdf-to-xls)
-- [Python 从 PDF 创建 XLS](#python-pdf-to-xls)
-- [Python PDF 到 XLS 转换器](#python-pdf-to-xls)
+```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-_格式_：**XLSX**
+def convert_pdf_to_ods(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.ExcelSaveOptions()
+    save_options.format = ap.ExcelSaveOptions.ExcelFormat.ODS
+    document.save(outfile, save_options)
 
-- [Python PDF 到 XLSX 代码](#python-pdf-to-xlsx)
-- [Python PDF to XLSX API](#python-pdf-to-xlsx)
-- [Python PDF to XLSX Programmatically](#python-pdf-to-xlsx)
-- [Python PDF to XLSX Library](#python-pdf-to-xlsx)
-- [Python Save PDF as XLSX](#python-pdf-to-xlsx)
-- [Python Generate XLSX from PDF](#python-pdf-to-xlsx)
-- [Python Create XLSX from PDF](#python-pdf-to-xlsx)
-- [Python PDF to XLSX Converter](#python-pdf-to-xlsx)
+    print(infile + " converted into " + outfile)
+```
 
-_格式_: **CSV**
-- [Python PDF to CSV Code](#python-pdf-to-csv)
-- [Python PDF to CSV API](#python-pdf-to-csv)
-- [Python PDF to CSV Programmatically](#python-pdf-to-csv)
-- [Python PDF to CSV Library](#python-pdf-to-csv)
-- [Python Save PDF as CSV](#python-pdf-to-csv)
-- [Python Generate CSV from PDF](#python-pdf-to-csv)
-- [Python Create CSV from PDF](#python-pdf-to-csv)
-- [Python PDF to CSV Converter](#python-pdf-to-csv)
+## 相关转换
 
-_格式_: **ODS**
-- [Python PDF to ODS Code](#python-pdf-to-ods)
-- [Python PDF to ODS API](#python-pdf-to-ods)
-- [Python PDF to ODS Programmatically](#python-pdf-to-ods)
-- [Python PDF to ODS Library](#python-pdf-to-ods)
-
-- [Python Save PDF as ODS](#python-pdf-to-ods)
-- [Python 从 PDF 生成 ODS](#python-pdf-to-ods)
-- [Python 从 PDF 创建 ODS](#python-pdf-to-ods)
-- [Python PDF 到 ODS 转换器](#python-pdf-to-ods)
+- [将 PDF 转换为 Word](/pdf/zh/python-net/convert-pdf-to-word/) 如果你的优先考虑是可编辑的文本流而不是电子表格结构。
+- [将 PDF 转换为 HTML](/pdf/zh/python-net/convert-pdf-to-html/) 当您需要浏览器友好的输出时。
+- [将 PDF 转换为其他格式](/pdf/zh/python-net/convert-pdf-to-other-files/) 针对 EPUB、Markdown、文本、XPS 以及相关的导出工作流。

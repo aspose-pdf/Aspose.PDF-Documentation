@@ -4,109 +4,96 @@ linktitle: PDFをPowerPointに変換
 type: docs
 weight: 30
 url: /ja/python-net/convert-pdf-to-powerpoint/
-description: Aspose.PDFを使用すると、Pythonを使ってPDFをPPT（PowerPoint）形式に変換できます。PDFをスライドとして画像でPPTXに変換する可能性があります。
-lastmod: "2022-12-23"
+description: PythonでPDFをPowerPointに変換する方法を学びます。PDFからPPTXへの変換、スライドを画像として扱うこと、そしてAspose.PDFを使用したカスタム画像解像度を含みます。
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: PythonでPDFをPPTX形式のPowerPointスライドに変換
+Abstract: この記事では、Aspose.PDF for Python via .NET を使用して PDF ファイルを PowerPoint プレゼンテーションに変換する方法を示します。PDF から PPTX への変換、スライドを画像として変換する方法、およびプレゼンテーション出力の画像解像度設定について説明します。
 ---
-## 概要
 
-PDFファイルをPowerPointに変換することは可能ですか？はい、可能です！そして簡単です！
-この記事では、Pythonを使用して**PDFをPowerPointに変換する方法**を説明します。以下のトピックをカバーしています。
+## PythonでPDFをPowerPointに変換
 
-_フォーマット_: **PPTX**
-- [Python PDFからPPTXへ](#python-pdf-to-pptx)
-- [Python PDFをPPTXに変換](#python-pdf-to-pptx)
-- [Python PDFファイルをPPTXに変換する方法](#python-pdf-to-pptx)
+**Aspose.PDF for Python via .NET** を使用すると、Python コードから PDF ファイルを PowerPoint PPTX プレゼンテーションに変換できます。
 
-_フォーマット_: **PowerPoint**
-- [Python PDFからPowerPointへ](#python-pdf-to-powerpoint)
-- [Python PDFをPowerPointに変換](#python-pdf-to-powerpoint)
-- [Python PDFファイルをPowerPointに変換する方法](#python-pdf-to-powerpoint)
+PDF レポート、スライドデッキ、パンフレット、ハンドアウトなどを PowerPoint ファイルとして再利用する必要がある場合に、このワークフローを使用してください。変換中に、個々の PDF ページが PPTX ファイル内の個別のスライドに変換されます。
 
+PDF から PPTX への変換中、テキストは選択可能なテキストとしてレンダリングされ、PowerPoint で更新できます。PDF ファイルを PPTX 形式に変換するために、Aspose.PDF は [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) クラス。 a を渡す `PptxSaveOptions` オブジェクトを第2引数として [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッド。
 
-## PythonでPDFをPowerPointおよびPPTXに変換する方法
+## PythonでPDFをPPTXに変換する
 
-**Aspose.PDF for Python via .NET**を使用すると、PDFからPPTXへの変換の進行状況を追跡できます。
+PDFをPPTXに変換するには、以下のコード手順を使用します。
 
-Aspose.SlidesというAPIがあり、PPT/PPTXプレゼンテーションの作成および操作機能を提供しています。このAPIは、PPT/PPTXファイルをPDF形式に変換する機能も提供します。この変換中に、PDFファイルの個々のページはPPTXファイルの別々のスライドに変換されます。
+手順：PythonでPDFをPowerPointに変換する
 
-PDFから<abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>への変換中に、テキストは選択または更新できるテキストとしてレンダリングされます。PDFファイルをPPTX形式に変換するために、Aspose.PDFは[PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/)というクラスを提供しています。PptxSaveOptionsクラスのオブジェクトは、[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)の2番目の引数として渡されます。以下のコードスニペットは、PDFファイルをPPTX形式に変換するプロセスを示しています。
-
-## PythonとAspose.PDF for Pythonを使用したPDFからPowerPointへの簡単な変換
-
-PDFをPPTXに変換するために、Aspose.PDF for Pythonは次のコードステップを使用することを推奨します。
-
-<a name="csharp-pdf-to-powerpoint"><strong>手順: PythonでPDFをPowerPointに変換する</strong></a> | <a name="csharp-pdf-to-pptx"><strong>手順: PythonでPDFをPPTXに変換する</strong></a>
-
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスのインスタンスを作成する
-2. [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) クラスのインスタンスを作成する
-3. **Document** オブジェクトの **Save** メソッドを使用してPDFをPPTXとして保存する
+1. インスタンスを作成する [ドキュメント](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。
+1. インスタンスを作成する [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) クラス。
+1. 呼び出す [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッド。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_pptx.pptx"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-    # PptxSaveOptionsインスタンスを作成
-    save_option = ap.PptxSaveOptions()
-    # ファイルをMS PowerPoint形式で保存
-    document.save(output_pdf, save_option)
+def convert_PDF_to_PPTX(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.PptxSaveOptions()
+    document.save(outfile, save_options)
 ```
 
-## スライドを画像としてPDFをPPTXに変換する
-
+## スライドを画像として PDF を PPTX に変換
 
 {{% alert color="success" %}}
-**オンラインでPDFをPowerPointに変換してみてください**
+**PDF をオンラインで PowerPoint に変換してみてください**
 
-Aspose.PDF for Pythonでは、オンラインの無料アプリケーション["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx)を提供しており、機能性と品質を試すことができます。
+Aspose.PDF はオンラインで提供します ["PDF から PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx) 変換品質をテストできるアプリケーションです。
 
-[![Aspose.PDF コンバージョン PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
+
+[![Aspose.PDF コンバージョン PDF から PPTX へ アプリ](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
 
-検索可能なPDFを選択可能なテキストではなく画像としてPPTXに変換する必要がある場合、Aspose.PDFは[PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/)クラスを通じてその機能を提供します。これを達成するには、以下のコードサンプルに示すように、[PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/)クラスのプロパティ[slides_as_images](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/#properties)を'true'に設定します。
+検索可能な PDF を選択可能なテキストではなく画像として PPTX に変換する必要がある場合、Aspose.PDF はその機能を via [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) クラス。これを実現するには、プロパティを設定します [slides_as_images](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/#properties) の [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) 以下のコード例に示すように、クラスを 'true' に設定します。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def convert_PDF_to_PPTX_slides_as_images(infile, outfile):
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_pptx_with_slides_as_images.pptx"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-    # PptxSaveOptionsインスタンスを作成
-    save_option = ap.PptxSaveOptions()
-    save_option.slides_as_images = True
-    # ファイルをMS PowerPoint形式で保存
-    document.save(output_pdf, save_option)
+    document = ap.Document(infile)
+    save_options = ap.PptxSaveOptions()
+    save_options.slides_as_images = True
+
+    document.save(outfile, save_options)
 ```
 
+## カスタム画像解像度で PDF を PPTX に変換
 
-## 参照
+このメソッドは、PDF ドキュメントを PowerPoint (PPTX) ファイルに変換し、品質向上のためにカスタム画像解像度 (300 DPI) を設定します。
 
-この記事はこれらのトピックもカバーしています。コードは上記と同じです。
+1. PDF を 'ap.Document' オブジェクトにロードします。
+1. 'PptxSaveOptions' インスタンスを作成します。
+1. 'image_resolution' プロパティを 300 DPI に設定し、高品質なレンダリングを行います。
+1. 定義された保存オプションを使用して、PDFをPPTXファイルとして保存します。
 
-_フォーマット_: **PowerPoint**
-- [Python PDF to PowerPoint コード](#python-pdf-to-powerpoint)
-- [Python PDF to PowerPoint API](#python-pdf-to-powerpoint)
-- [Python PDF to PowerPoint プログラム](#python-pdf-to-powerpoint)
-- [Python PDF to PowerPoint ライブラリ](#python-pdf-to-powerpoint)
-- [Python PDFをPowerPointとして保存](#python-pdf-to-powerpoint)
-- [Python PDFからPowerPointを生成](#python-pdf-to-powerpoint)
-- [Python PDFからPowerPointを作成](#python-pdf-to-powerpoint)
-- [Python PDF to PowerPoint コンバーター](#python-pdf-to-powerpoint)
+```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-_フォーマット_: **PPTX**
-- [Python PDF to PPTX コード](#python-pdf-to-pptx)
-- [Python PDF to PPTX API](#python-pdf-to-pptx)
-- [Python PDF to PPTX プログラム](#python-pdf-to-pptx)
-- [Python PDF to PPTX ライブラリ](#python-pdf-to-pptx)
-- [Python PDFをPPTXとして保存](#python-pdf-to-pptx)
-- [Python PDFからPPTXを生成](#python-pdf-to-pptx)
-- [Python PDFからPPTXを作成](#python-pdf-to-pptx)
-- [Python PDF to PPTX コンバーター](#python-pdf-to-pptx)
+def convert_PDF_to_PPTX_image_resolution(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.PptxSaveOptions()
+    save_options.image_resolution = 300
+
+    document.save(outfile, save_options)
+```
+
+## 関連する変換
+
+- [PDF を Word に変換](/pdf/ja/python-net/convert-pdf-to-word/) スライドではなく、編集可能なドキュメント出力用です。
+- [PDF を Excel に変換](/pdf/ja/python-net/convert-pdf-to-excel/) 元の PDF に表が多く含まれるビジネスデータの場合。
+- [PDF を HTML に変換](/pdf/ja/python-net/convert-pdf-to-html/) ブラウザ対応のパブリッシング ワークフロー向け。
