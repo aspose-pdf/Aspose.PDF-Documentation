@@ -4,7 +4,7 @@ linktitle: Convert PDF to PDF/A, PDF/E, and PDF/X
 type: docs
 weight: 120
 url: /java/convert-pdf-to-pdf_x/
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 description: Learn how to convert PDF files to PDF/A, PDF/E, and PDF/X in Java with Aspose.PDF for archival, engineering, accessibility, and print workflows.
 sitemap:
     changefreq: "monthly"
@@ -15,9 +15,9 @@ Abstract: This article explains how to validate and convert PDF documents to PDF
 ---
 ## Convert PDF to PDF/A
 
-1. Open the source PDF document.
-1. Convert the document to the PDF/A target format and write the conversion log file.
-1. Save the converted PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Convert the document to the [PdfFormat](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/) PDF/A target format and write the conversion log file with [ConvertErrorAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/converterroraction/).
+1. Save the converted PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertPdfToPdfA(Path inputFile, Path outputFile) {
@@ -30,11 +30,11 @@ public static void convertPdfToPdfA(Path inputFile, Path outputFile) {
 
 ## Convert PDF to PDF/E or PDF/X
 
-1. Create PDF format conversion options for PDF/E output.
-1. Set the conversion log file, target format, and error handling mode.
-1. Open the source PDF document.
-1. Convert the document by using the configured options.
-1. Save the converted PDF document.
+1. Create [PdfFormatConversionOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformatconversionoptions/) for PDF/E output.
+1. Set the conversion log file, target [PdfFormat](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/), and [ConvertErrorAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/converterroraction/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Convert the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) by using the configured options.
+1. Save the converted PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertPdfToPdfE(Path inputFile, Path outputFile) {
@@ -48,12 +48,12 @@ public static void convertPdfToPdfE(Path inputFile, Path outputFile) {
 }
 ```
 
-1. Create PDF format conversion options for PDF/X output.
-1. Set the conversion log file, target format, and error handling mode.
-1. Configure the required output intent.
-1. Open the source PDF document.
-1. Convert the document by using the configured options.
-1. Save the converted PDF document.
+1. Create [PdfFormatConversionOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformatconversionoptions/) for PDF/X output.
+1. Set the conversion log file, target [PdfFormat](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/), and [ConvertErrorAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/converterroraction/).
+1. Configure the required [OutputIntent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/outputintent/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Convert the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) by using the configured options.
+1. Save the converted PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertPdfToPdfX(Path inputFile, Path outputFile) {

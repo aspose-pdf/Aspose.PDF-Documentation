@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/extract-tagged-content-from-tagged-pdfs/
 description: Learn how to inspect tagged PDF content in Java with Aspose.PDF, including tagged content access, root structure access, and child structure elements.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,10 +14,10 @@ Use these APIs when you need to inspect the logical structure tree of a tagged P
 
 ## Get tagged content
 
-1. Create a new PDF document.
-1. Get the document's tagged content.
-1. Set the tagged document title and language.
-1. Save the tagged PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get the document's [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/).
+1. Set the tagged [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/) title and language.
+1. Save the tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void getTaggedContent(Path outputFile) {
@@ -32,11 +32,11 @@ public static void getTaggedContent(Path outputFile) {
 
 ## Access the root structure
 
-1. Create a new PDF document.
-1. Get the document's tagged content.
-1. Set the tagged document title and language.
-1. Read the structure tree root element and the root structure element.
-1. Save the tagged PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get the document's [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/).
+1. Set the tagged [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/) title and language.
+1. Read the [StructTreeRootElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure/structtreerootelement/) and the root [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/).
+1. Save the tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void getRootStructure(Path outputFile) {
@@ -57,13 +57,13 @@ public static void getRootStructure(Path outputFile) {
 
 This example iterates through child structure elements, prints their properties, and updates the first child branch.
 
-1. Open the tagged PDF document.
-1. Get the document's tagged content.
-1. Read the child elements from the structure tree root.
-1. Iterate through the child elements and print their structure properties.
-1. Get the first child element from the root structure.
-1. Update the child structure elements with title, language, actual text, expansion text, and alternative text.
-1. Save the updated tagged PDF document.
+1. Open the tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get the document's [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/).
+1. Read the child [ElementList](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure/elementlist/) from the [StructTreeRootElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure/structtreerootelement/).
+1. Iterate through the child [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/) items and print their structure properties.
+1. Get the first child [Element](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/element/) from the root [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/).
+1. Update the child [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/) items with title, language, actual text, expansion text, and alternative text.
+1. Save the updated tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void accessChildElements(Path inputFile, Path outputFile) {

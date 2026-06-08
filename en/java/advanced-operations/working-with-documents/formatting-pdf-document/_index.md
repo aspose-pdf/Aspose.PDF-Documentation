@@ -5,7 +5,7 @@ type: docs
 weight: 11
 url: /java/formatting-pdf-document/
 description: Learn how to format PDF documents, embed fonts, control viewer settings, and adjust display options in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,11 @@ Formatting in Aspose.PDF for Java includes viewer behavior, font embedding, and 
 
 ## Read and set document window properties
 
-Use the `Document` API to inspect or update window and page display settings:
+Use the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) API to inspect or update window and page display settings:
 
-1. Open the source PDF document.
-1. Set the properties required by the example.
-1. Save the updated PDF document.
+1. Open the source PDF document with [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Set the required [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) properties, including [Direction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/direction/), [PageMode](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pagemode/), and [PageLayout](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pagelayout/).
+1. Save the updated PDF document with [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 1. Read the returned values or continue with your next processing step.
 
 ```java
@@ -46,9 +46,9 @@ The companion `getDocumentWindow` example prints the current values for these pr
 
 ## Embed fonts in an existing PDF
 
-1. Open the source PDF document.
-1. Set the properties required by the example.
-1. Save the updated PDF document.
+1. Open the source PDF document with [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Enable standard font embedding on [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and update each [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) on every [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Save the updated PDF document with [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void embeddedFonts(Path inputFile, Path outputFile) {
@@ -66,18 +66,18 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-The same example class also includes `embeddedFontsInNewDocument`, which creates a new page, applies an embedded `Arial` font through `TextState`, and saves the result.
+The same example class also includes `embeddedFontsInNewDocument`, which creates a new [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/), applies an embedded `Arial` font through [TextState](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textstate/), and saves the result.
 
 ## Set a default font and improve embedding
 
-`setDefaultFont` saves the document with `PdfSaveOptions.setDefaultFontName("Arial")`, while `improveFontsEmbedding` calls `subsetFonts(...)` with `FontSubsetStrategy` values to reduce embedded font data.
+`setDefaultFont` saves the document with [PdfSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfsaveoptions/) and `setDefaultFontName("Arial")`, while `improveFontsEmbedding` calls `subsetFonts(...)` with [FontSubsetStrategy](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fontsubsetstrategy/) values to reduce embedded font data.
 
 ## Set and read the initial zoom factor
 
-1. Open the source PDF document.
-1. Create the required action and assign it to the target object.
-1. Set the properties required by the example.
-1. Save the updated PDF document.
+1. Open the source PDF document with [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [GoToAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xyzexplicitdestination/) and assign it to the target [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Set the required [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) properties for the opening view.
+1. Save the updated PDF document with [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void setZoomFactor(Path inputFile, Path outputFile) {

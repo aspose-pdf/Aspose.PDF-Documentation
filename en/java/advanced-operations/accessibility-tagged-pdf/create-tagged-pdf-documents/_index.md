@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-tagged-pdf/
 description: Learn how to create tagged PDF documents in Java with Aspose.PDF, including PDF/UA structure elements, accessible form fields, TOC pages, and automatic tagging.
-lastmod: "2026-05-27"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,13 +16,13 @@ Creating a tagged PDF means adding structure elements that make the document eas
 
 This example creates a tagged PDF with a header and a paragraph.
 
-1. Create a new PDF Document.
-1. Get the tagged content and root structure element.
-1. Set the document title and language.
-1. Create a header element and set its text.
-1. Create a paragraph element and add text.
-1. Append the header and paragraph to the root element.
-1. Save the tagged PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get the [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/) and root [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/).
+1. Set the [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/) title and language.
+1. Create a [HeaderElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/headerelement/) and set its text.
+1. Create a [ParagraphElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/paragraphelement/) and add text.
+1. Append the [HeaderElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/headerelement/) and [ParagraphElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/paragraphelement/) to the root [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/).
+1. Save the tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createTaggedPdfDocumentSimple(Path outputFile) {
@@ -52,15 +52,15 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 
 The advanced example builds a heading plus a paragraph that mixes spans and a quote element.
 
-1. Create a new PDF document.
-1. Access the document's tagged content.
-1. Set the document title and language.
-1. Create a level 1 header and add text.
-1. Create a paragraph element.
-1. Create span and quote elements with text.
-1. Add the span and quote elements to the paragraph.
-1. Add the header and paragraph to the document structure.
-1. Save the tagged PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the document's [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/).
+1. Set the [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/) title and language.
+1. Create a level 1 [HeaderElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/headerelement/) and add text.
+1. Create a [ParagraphElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/paragraphelement/).
+1. Create [SpanElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.ils/spanelement/) and [QuoteElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.ils/quoteelement/) instances with text.
+1. Add the [SpanElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.ils/spanelement/) and [QuoteElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.ils/quoteelement/) instances to the [ParagraphElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/paragraphelement/).
+1. Add the [HeaderElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/headerelement/) and [ParagraphElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/paragraphelement/) to the document [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/).
+1. Save the tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createTaggedPdfDocumentAdv(Path outputFile) {

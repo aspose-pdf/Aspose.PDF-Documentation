@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/working-with-table-in-tagged-pdfs/
 description: Learn how to work with accessible tables in tagged PDFs in Java with Aspose.PDF, including table structure, cell spans, styling, row settings, and positioning.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,15 +14,15 @@ Tagged table APIs let you create accessible table structures with explicit heade
 
 ## Create a tagged table
 
-1. Create a new PDF document.
-1. Get the document's tagged content.
-1. Set the tagged document title and language.
-1. Create a table element and append it to the root structure.
-1. Set the table border style.
-1. Fill the table with rows and cells.
-1. Get the standard table structure attributes.
-1. Create and assign a summary attribute for the table.
-1. Save the tagged PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get the document's [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/).
+1. Set the tagged [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/) title and language.
+1. Create a [TableElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/tableelement/) and append it to the root [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/).
+1. Set the [TableElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/tableelement/) border style.
+1. Fill the [TableElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/tableelement/) with rows and cells.
+1. Get the standard table [StructureAttributes](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure/structureattributes/).
+1. Create and assign a [StructureAttribute](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureattribute/) summary attribute by using [AttributeKey](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure/attributekey/) and [AttributeOwnerStandard](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure/attributeownerstandard/).
+1. Save the tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createTable(Path outputFile) {
@@ -59,15 +59,15 @@ The table examples also demonstrate:
 
 ## Adjust tagged table position
 
-1. Create a new PDF document.
-1. Get the document's tagged content.
-1. Set the tagged document title and language.
-1. Create a table element and append it to the root structure.
-1. Create position settings for the table.
-1. Set horizontal alignment, margin, vertical alignment, and flow options.
-1. Apply the position settings to the table element.
-1. Fill the table with rows and cells.
-1. Save the tagged PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get the document's [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/).
+1. Set the tagged [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged/itaggedcontent/) title and language.
+1. Create a [TableElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/tableelement/) and append it to the root [StructureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements/structureelement/).
+1. Create `PositionSettings` for the table.
+1. Set [HorizontalAlignment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/horizontalalignment/), margin, [VerticalAlignment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/verticalalignment/), and flow options.
+1. Apply the `PositionSettings` to the [TableElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/tableelement/).
+1. Fill the [TableElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/tableelement/) with rows and cells.
+1. Save the tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void adjustTablePosition(Path outputFile) {

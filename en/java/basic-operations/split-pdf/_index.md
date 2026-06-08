@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/split-pdf/
 description: Learn how to split a PDF into single-page PDF files in Java using Aspose.PDF.
-lastmod: "2026-05-27"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -21,16 +21,16 @@ Splitting a PDF into separate files is useful when you need to export each page 
 
 [![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-This example uses the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) class to open a PDF file and iterate through its pages. For each [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), it creates a new document, adds the page to it, and saves the result as a separate PDF file.
+This example uses the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) class to open a PDF file and iterate through its pages. For each [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/), it creates a new document, adds the page to it, and saves the result as a separate PDF file.
 
 To split a PDF into individual page files in Java:
 
-1. Open the source PDF with the `Document` constructor.
-1. Iterate through the pages returned by `document.getPages()`.
-1. Create a new empty `Document` for each page.
-1. Add the current page to the new document.
-1. Save the new document with a unique file name.
-1. Close both documents when processing is complete.
+1. Open the source PDF with the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor.
+1. Iterate through the [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) objects returned by `document.getPages()`.
+1. Create a new empty [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) for each page.
+1. Add the current [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the new [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Save the new [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) with a unique file name.
+1. Close both [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) objects when processing is complete.
 
 ## Split PDF into single-page files
 

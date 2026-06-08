@@ -4,7 +4,7 @@ linktitle: Convert other file formats to PDF
 type: docs
 weight: 80
 url: /java/convert-other-files-to-pdf/
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 description: Learn how to convert EPUB, Markdown, PCL, XPS, PostScript, XML, XSL-FO, OFD, and TeX files to PDF in Java with Aspose.PDF.
 sitemap:
     changefreq: "monthly"
@@ -15,11 +15,11 @@ Abstract: This article explains how to convert multiple source file formats to P
 ---
 ## Convert formats with dedicated load options
 
-Examples such as EPUB, Markdown, OFD, XPS, TeX, PostScript, and EPS use a `Document` constructor with the appropriate load options and then save directly to PDF.
+Examples such as EPUB, Markdown, OFD, XPS, TeX, PostScript, and EPS use a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor with the appropriate load options and then save directly to PDF.
 
-1. Open the source EPUB file with EPUB load options.
-1. Create the PDF document from the source file.
-1. Save the output PDF document.
+1. Open the source EPUB file with [EpubLoadOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/epubloadoptions/).
+1. Create the PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) from the source file.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertEpubToPdf(Path inputFile, Path outputFile) {
@@ -29,9 +29,9 @@ public static void convertEpubToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-1. Open the source XPS file with XPS load options.
-1. Create the PDF document from the source file.
-1. Save the output PDF document.
+1. Open the source XPS file with [XpsLoadOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xpsloadoptions/).
+1. Create the PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) from the source file.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertXpsToPdf(Path inputFile, Path outputFile) {
@@ -44,10 +44,10 @@ public static void convertXpsToPdf(Path inputFile, Path outputFile) {
 ## Convert text to PDF
 
 1. Read the source text file content with UTF-8 encoding.
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Create a text fragment from the source text and add it to the page.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create a [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) from the source text and add it to the page.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws Exception {

@@ -5,7 +5,7 @@ type: docs
 weight: 75
 url: /java/security-annotations/
 description: Learn how to mark text for redaction, apply redaction annotations, and redact selected page areas in PDF files using Aspose.PDF for Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,16 +15,16 @@ Abstract: This article explains how to work with redaction annotations in PDF do
 ---
 ## Mark text for redaction
 
-1. Open the source PDF document.
-1. Create a TextFragmentAbsorber and search for the target text.
-1. Configure the text search options required by the example.
-1. Create redaction annotations for the matched text locations.
-1. Set the annotation or object properties required by the example.
-1. Add the annotation to the target page.
-1. Read or iterate through the annotations on the target page.
-1. Save the updated PDF document.
-1. Create a `RedactionAnnotation` for each matched text fragment and configure its appearance.
-1. Add the redaction annotations to their pages and save the document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragmentabsorber/) and search for the target text.
+1. Configure the [TextSearchOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textsearchoptions/) required by the example.
+1. Create [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) items for the matched text locations.
+1. Set the [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) or related object properties required by the example.
+1. Add each [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) to the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target page.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) for each matched [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) and configure its appearance.
+1. Add the redaction annotations to their pages and save the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {

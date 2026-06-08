@@ -4,7 +4,7 @@ linktitle: Convert PDF to Excel
 type: docs
 weight: 20
 url: /java/convert-pdf-to-excel/
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 description: Learn how to convert PDF files to Excel in Java with Aspose.PDF, including XML Spreadsheet 2003, XLSX, XLSM, CSV, and ODS output.
 sitemap:
     changefreq: "monthly"
@@ -15,11 +15,11 @@ Abstract: This article explains how to convert PDF files to Excel-compatible for
 ---
 ## Convert PDF to Excel-compatible formats
 
-All Excel conversions use `ExcelSaveOptions` with a different target format.
+All Excel conversions use [ExcelSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/excelsaveoptions/) with a different target format.
 
-1. Create Excel save options for the target output format.
+1. Create [ExcelSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/excelsaveoptions/) for the target output format.
 1. Set the Excel output format for the conversion.
-1. Convert the source PDF document by using the configured save options.
+1. Convert the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) by using the configured save options.
 
 ```java
 public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {

@@ -4,7 +4,7 @@ linktitle: Convert PDF/A and PDF/UA to PDF
 type: docs
 weight: 120
 url: /java/convert-pdf_x-to-pdf/
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 description: Learn how to remove PDF/A and PDF/UA compliance from standards-based PDF files in Java and save them as standard PDF documents.
 sitemap:
     changefreq: "monthly"
@@ -15,9 +15,9 @@ Abstract: This article explains how to remove PDF/A and PDF/UA compliance from s
 ---
 ## Convert PDF/A to standard PDF
 
-1. Open the source PDF/A document.
-1. Remove PDF/A compliance from the document.
-1. Save the output PDF document.
+1. Open the source PDF/A [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Remove PDF/A compliance from the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertPdfAToPdf(Path inputFile, Path outputFile) {
@@ -30,9 +30,9 @@ public static void convertPdfAToPdf(Path inputFile, Path outputFile) {
 
 ## Convert PDF/UA to standard PDF
 
-1. Open the source PDF/UA document.
-1. Remove PDF/UA compliance from the document.
-1. Save the output PDF document.
+1. Open the source PDF/UA [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Remove PDF/UA compliance from the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertPdfUaToPdf(Path inputFile, Path outputFile) {

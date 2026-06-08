@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/shape-annotations/
 description: Learn how to add, inspect, and delete square, circle, polygon, and polyline annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -15,13 +15,13 @@ Abstract: This article explains how to create, inspect, and remove geometric ann
 ---
 ## Add shape annotations
 
-1. Open the source PDF document.
-1. Create the rectangle shape and configure its geometry.
-1. Create the required shape annotation on the target page.
-1. Set the annotation or object properties required by the example.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) shape and configure its geometry.
+1. Create the required shape annotation, such as [SquareAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/squareannotation/) or [PolygonAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/polygonannotation/), on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Set the annotation or related object properties required by the example.
 1. Add the annotation to the target page.
-1. Save the updated PDF document.
-1. Add the annotation to the page and save the modified PDF.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add the annotation to the page and save the modified PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void squareAnnotationAdd(Path inputFile, Path outputFile) {

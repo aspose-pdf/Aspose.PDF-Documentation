@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/complex-pdf-example/
 description: Aspose.PDF for Java allows you to create more complex PDF documents that contain images, text fragments, and tables in one file.
-lastmod: "2026-05-27"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,14 +17,14 @@ The [Hello World](/pdf/java/hello-world-example/) example covers the simplest PD
 
 To create a more complex PDF document in Java:
 
-1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Add an image to the page with `page.addImage(...)`.
-1. Create a header [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) and set its font, size, alignment, and position.
-1. Create a second text fragment for the description paragraph.
-1. Build a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) with borders, padding, and header styling.
-1. Add generated schedule rows to the table.
-1. Append the table to the page paragraphs.
-1. Save the output PDF file.
+1. Create a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Add an image to the [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) with `page.addImage(...)` and a target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/).
+1. Create a header [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) and set its font, size, alignment, and [Position](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/position/).
+1. Create a second [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) for the description paragraph.
+1. Build a [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) with borders, padding, and header styling.
+1. Add generated schedule rows to the [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/).
+1. Append the [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) to the [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) paragraphs.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 The following Java code is based on `GetStartedExamples.java`.
 
