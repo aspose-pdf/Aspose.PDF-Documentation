@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/set-pdf-file-information-in-php/
 description: Learn how to set various file properties, such as metadata, for a PDF document in PHP using Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Set PDF File Information
@@ -38,6 +38,6 @@ print "Update document information, please check output file.";
 
 **Download Running Code**
 
-Download **Set PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Set PDF File Information (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetPdfFileInfo.php)

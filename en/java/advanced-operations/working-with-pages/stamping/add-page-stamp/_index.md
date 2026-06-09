@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/page-stamps-in-the-pdf-file/
 description: Learn how to add PDF page stamps as overlays or backgrounds in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

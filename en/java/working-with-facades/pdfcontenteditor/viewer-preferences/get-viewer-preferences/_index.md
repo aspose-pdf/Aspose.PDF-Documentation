@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/get-viewer-preferences/
 description: Learn how to read the viewer preferences of a PDF document in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Read PDF viewer preferences in Java
 Abstract: This article shows how to bind a PDF and print the current viewer preference value using the PdfContentEditor facade in Aspose.PDF for Java.

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/xfa-forms/
 description: Learn how to convert XFA forms to standard AcroForms in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

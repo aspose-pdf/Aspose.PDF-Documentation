@@ -4,7 +4,7 @@ type: docs
 weight: 90
 url: /java/signature-verification/
 description: Learn how to verify PDF signatures in Java with the PdfFileSignature facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

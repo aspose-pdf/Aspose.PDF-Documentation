@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/working-with-zugferd/
 description: Learn how to create PDF/A-3A invoices with embedded ZUGFeRD XML data in Java using Aspose.PDF.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

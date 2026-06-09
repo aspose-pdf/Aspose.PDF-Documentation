@@ -4,7 +4,7 @@ linktitle: Convert PDF document
 type: docs
 weight: 70
 url: /java/converting/
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 description: Learn how to convert PDF documents to Word, Excel, PowerPoint, HTML, images, PDF standards, and other formats in Java with Aspose.PDF.
 sitemap:
     changefreq: "monthly"

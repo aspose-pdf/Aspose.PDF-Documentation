@@ -4,7 +4,7 @@ type: docs
 weight: 125
 url: /java/pdffilesecurity-class/
 description: Learn how to use the PdfFileSecurity facade in Java to encrypt and decrypt PDFs, change passwords, and control document privileges.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

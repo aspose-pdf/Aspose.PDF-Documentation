@@ -4,7 +4,7 @@ linktitle: Convert other file formats to PDF
 type: docs
 weight: 80
 url: /java/convert-other-files-to-pdf/
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 description: Learn how to convert EPUB, Markdown, PCL, XPS, PostScript, XML, XSL-FO, OFD, and TeX files to PDF in Java with Aspose.PDF.
 sitemap:
     changefreq: "monthly"

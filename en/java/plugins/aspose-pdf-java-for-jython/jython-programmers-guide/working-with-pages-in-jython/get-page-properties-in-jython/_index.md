@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/get-page-properties-in-jython/
 description: Explore how to retrieve properties of individual pages in a PDF document using Jython with Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Get Page Properties

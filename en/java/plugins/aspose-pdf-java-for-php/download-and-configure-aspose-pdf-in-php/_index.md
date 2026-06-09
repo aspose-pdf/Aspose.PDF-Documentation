@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-php/
 description: Learn how to download and configure Aspose.PDF in PHP for easy integration and PDF manipulation within your PHP projects.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Download Required Libraries
@@ -26,11 +26,11 @@ Following releases of running examples are available to download on below mentio
 
 ## How to configure the source code on Linux Platform
 
-Please follow these simple steps in order to open and extend the source code while using:
+Please follow these simple stepsВ in order to open and extend the source code while using:
 
 ## 1. Install Tomcat Server
 
-To install Tomcat server, issue following command on the Linux console. This will successfully install the Tomcat server.
+To install Tomcat server, issue following command on the Linux console.В This will successfully install the Tomcat server.
 
 {{< highlight actionscript3 >}}
 
@@ -58,7 +58,7 @@ Unzip the PHP/JavaBridge binaries by issuing the following command on the Linux 
 {{< /highlight >}}
 
 
-This will extract **JavaBridge.war** file. Copy it to the tomcat88 **webapps** folder by issuing the following command on the Linux console.
+This will extractВ **JavaBridge.war**В file. Copy it to the tomcat88В **webapps**В folder by issuing the following command on the Linux console.
 
 {{< highlight actionscript3 >}}
 
@@ -67,9 +67,9 @@ This will extract **JavaBridge.war** file. Copy it to the tomcat88 **webapps*
 {{< /highlight >}}
 
 
-By copying, tomcat8 will automatically create a new folder "**JavaBridge**" in **webapps**. Once the folder is created, make sure your tomcat8 is running and then check  http://localhost:8080/JavaBridge  in the browser, it should open a default page of JavaBridge.
+By copying, tomcat8 will automatically create a new folder "**JavaBridge**" inВ **webapps**. Once the folder is created, make sure your tomcat8 is running and then checkВ  http://localhost:8080/JavaBridge В in the browser, it should open a default page of JavaBridge.
 
-If any error message appears then install  **FastCGI** by issuing the following command on Linux console.
+If any error message appears then installВ  **FastCGI**В by issuing the following command on Linux console.
 
 {{< highlight actionscript3 >}}
 
@@ -77,9 +77,9 @@ If any error message appears then install  **FastCGI** by issuing the followin
 
 {{< /highlight >}}
 
-After installing php5.5 CGI, restart the tomcat8 server and check  http://localhost:8080/JavaBridge  again in the browser.
+After installing php5.5 CGI, restart the tomcat8 server and checkВ  http://localhost:8080/JavaBridge В again in the browser.
 
-If **JAVA_HOME** error is displayed, then open /etc/default/tomcat8 file and uncomment the line that sets the JAVA_HOME. Check http://localhost:8080/JavaBridge  in the browser again, it should come with PHP/JavaBridge Examples page.
+IfВ **JAVA_HOME**В error is displayed, then open /etc/default/tomcat8 file and uncomment the line that sets the JAVA_HOME. CheckВ http://localhost:8080/JavaBridge В in the browser again, it should come with PHP/JavaBridge Examples page.
 
 ## 3. Configure Aspose.PDF Java for PHP Examples
 
@@ -98,7 +98,7 @@ $ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugi
 Please follow below simple steps to configure PHP/Java Bridge on Windows Platform
 
 1. Install PHP5 and configure as you normally do
-2. Install JRE 6 (Java Runtime Environment) if you don’t already have it. You can check this in C:\Program Files etc. You can download it here . I am using JRE 6 as It is compatible with PHP Java Bridge (PJB).
+2. Install JRE 6 (Java Runtime Environment) if you donвЂ™t already have it. You can check this in C:\Program Files etc. You can download it here . I am using JRE 6 as It is compatible with PHP Java Bridge (PJB).
 
 3. Install Apache Tomcat 8.0. You can download it here
 

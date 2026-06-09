@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/counting-artifacts/
 description: Learn how to inspect and count pagination artifacts in PDF documents using Java with Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

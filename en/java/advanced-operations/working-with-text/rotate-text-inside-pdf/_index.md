@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/rotate-text-inside-pdf/
 description: Learn how to rotate text fragments and paragraphs inside PDF documents in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

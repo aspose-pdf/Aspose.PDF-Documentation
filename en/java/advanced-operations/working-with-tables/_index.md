@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/working-with-tables/
 description: Learn how to add, extract, integrate, manipulate, and remove tables in PDF documents using Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

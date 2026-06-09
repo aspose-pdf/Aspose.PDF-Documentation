@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/add-watermarks/
 description: Learn how to add, extract, and delete watermark artifacts in PDF files using Aspose.PDF for Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

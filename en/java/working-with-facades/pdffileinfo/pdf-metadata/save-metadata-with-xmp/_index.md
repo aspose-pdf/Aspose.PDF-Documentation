@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/save-metadata-with-xmp/
 description: Learn how to save PDF metadata with XMP in Java with the PdfFileInfo facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

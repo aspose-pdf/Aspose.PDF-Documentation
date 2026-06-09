@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/split-pdf/
 description: Learn how to split a PDF into single-page PDF files in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

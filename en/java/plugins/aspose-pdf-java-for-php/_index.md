@@ -5,14 +5,14 @@ type: docs
 weight: 50
 url: /java/aspose-pdf-java-for-php/
 description: Learn how to integrate Aspose.PDF for Java into PHP projects. Unlock advanced PDF functionality for your web applications.
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 ---
 
 ## Introduction to Aspose.PDF Java for PHP
 
 ### PHP / Java Bridge
 
-The PHP/Java Bridge is an implementation of a streaming, XML-based [network protocol](http://php-java-bridge.sourceforge.net/pjb/PROTOCOL.TXT), which can be used to connect a native script engine, for example PHP, Scheme or Python, with a Java virtual machine. It is up to 50 times faster than local RPC via SOAP, requires less resources on the web-server side. It is [faster](http://php-java-bridge.sourceforge.net/pjb/FAQ.html#performance) and more reliable than direct communication via the Java Native Interface, and it requires no additional components to invoke Java procedures from PHP or PHP procedures from Java.
+The PHP/Java Bridge is an implementation of a streaming, XML-basedВ [network protocol](http://php-java-bridge.sourceforge.net/pjb/PROTOCOL.TXT), which can be used to connect a native script engine, for example PHP, Scheme or Python, with a Java virtual machine. It is up to 50 times faster than local RPC via SOAP, requires less resources on the web-server side. It isВ [faster](http://php-java-bridge.sourceforge.net/pjb/FAQ.html#performance)В and more reliable than direct communication via the Java Native Interface, and it requires no additional components to invoke Java procedures from PHP or PHP procedures from Java.
 
 Read more at [sourceforge.net](http://php-java-bridge.sourceforge.net/pjb/)
 
@@ -66,11 +66,11 @@ Following releases of running examples are available to download on below mentio
 
 ### How to configure the source code on Linux Platform
 
-Please follow these simple steps in order to open and extend the source code while using:
+Please follow these simple stepsВ in order to open and extend the source code while using:
 
 ### 1. Install Tomcat Server
 
-To install tomcat server, issue following command on the linux console. This will successfully install tomcat server.
+To install tomcat server, issue following command on the linux console.В This will successfully install tomcat server.
 
 {{< highlight actionscript3 >}}
 
@@ -97,7 +97,7 @@ Unzip the PHP/JavaBridge binaries by issuing the following command on linux cons
 {{< /highlight >}}
 
 
-This will extract **JavaBridge.war** file. Copy it to tomcat88 **webapps** folder by issuing the following command on Linux console.
+This will extractВ **JavaBridge.war**В file. Copy it to tomcat88В **webapps**В folder by issuing the following command on Linux console.
 
 {{< highlight actionscript3 >}}
 
@@ -105,9 +105,9 @@ This will extract **JavaBridge.war** file. Copy it to tomcat88 **webapps** f
 
 {{< /highlight >}}
 
-By copying, tomcat8 will automatically create a new folder "**JavaBridge**" in **webapps**.
+By copying, tomcat8 will automatically create a new folder "**JavaBridge**" inВ **webapps**.
 
-If any error message appears then install  **FastCGI** by issuing the following command on Linux console.
+If any error message appears then installВ  **FastCGI**В by issuing the following command on Linux console.
 
 {{< highlight actionscript3 >}}
 
@@ -116,11 +116,11 @@ If any error message appears then install  **FastCGI** by issuing the followin
 {{< /highlight >}}
 
 
-If **JAVA_HOME** error is displayed, then open /etc/default/tomcat8 file and uncomment the line that sets the JAVA_HOME.
+IfВ **JAVA_HOME**В error is displayed, then open /etc/default/tomcat8 file and uncomment the line that sets the JAVA_HOME.
 
 ### 3. Configure Aspose.PDF Java for PHP Examples
 
-Clone, PHP examples by issuing the following commands inside webapps/JavaBridge folder. 
+Clone, PHP examples by issuing the following commands inside webapps/JavaBridge folder.В 
 
 {{< highlight actionscript3 >}}
 
@@ -135,7 +135,7 @@ $ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugi
 Please follow below simple steps to configure PHP/Java Bridge on Windows Platform
 
 1. Install PHP5 and configure as you normally do
-2. Install JRE 6 (Java Runtime Environment) if you don’t already have it. You can check this in C:\Program Files etc. You can download it here . I am using JRE 6 as It is compatible with PHP Java Bridge (PJB).
+2. Install JRE 6 (Java Runtime Environment) if you donвЂ™t already have it. You can check this in C:\Program Files etc. You can download it here . I am using JRE 6 as It is compatible with PHP Java Bridge (PJB).
 
 3. Install Apache Tomcat 8.0. You can download it here
 
@@ -162,7 +162,7 @@ From the very first days of Aspose, we knew that just giving our customers good 
 
 This is why we offer free support. Anyone who uses our product, whether they have bought them or are using an evaluation, deserves our full attention and respect.
 
-You can log any issues or suggestions related to Aspose.Cells Java for PHP using any of the following platforms:
+You can log any issues or suggestions related toВ Aspose.Cells Java for PHP using any of the following platforms:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 

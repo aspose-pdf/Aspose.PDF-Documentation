@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/add-ellipse/
 description: Learn how to draw, fill, and label ellipse shapes in PDF files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/page-number/
 description: Learn how to add page numbers to PDF documents in Java with the PdfFileStamp facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

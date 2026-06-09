@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/resize-pdf-page-contents/
 description: Resize content on selected PDF pages in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

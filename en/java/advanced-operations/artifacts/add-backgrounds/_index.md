@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-backgrounds/
 description: Learn how to add a background image or background color to PDF pages in Java using `BackgroundArtifact` with Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

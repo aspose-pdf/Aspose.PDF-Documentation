@@ -5,7 +5,7 @@ type: docs
 weight: 11
 url: /java/formatting-pdf-document/
 description: Learn how to format PDF documents, embed fonts, control viewer settings, and adjust display options in Java.
-lastmod: "2026-06-05"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

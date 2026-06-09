@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-tagged-pdf/
 description: Learn how to create tagged PDF documents in Java with Aspose.PDF, including PDF/UA structure elements, accessible form fields, TOC pages, and automatic tagging.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

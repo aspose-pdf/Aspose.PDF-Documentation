@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/concatenate-pdf-files/
 description: Merge PDF files in Java with the array-based PdfFileEditor concatenate workflow.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

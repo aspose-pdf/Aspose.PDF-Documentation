@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/media-annotations/
 description: Learn how to work with sound, screen, rich media, and 3D PDF annotation APIs in Java, with step-by-step guidance for common multimedia workflows.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

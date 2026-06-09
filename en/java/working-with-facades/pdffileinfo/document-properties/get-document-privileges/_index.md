@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/get-document-privileges/
 description: Learn how to inspect PDF document privileges in Java with the PdfFileInfo facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

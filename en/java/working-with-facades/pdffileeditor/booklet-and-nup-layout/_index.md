@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/booklet-and-nup-layout/
 description: Learn how to rearrange PDF pages into booklet and N-Up layouts with the PdfFileEditor facade in Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

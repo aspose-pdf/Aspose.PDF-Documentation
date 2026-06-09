@@ -5,7 +5,7 @@ type: docs
 weight: 180
 url: /java/accessibility-tagged-pdf/
 description: Learn how to create accessible tagged PDFs in Java with Aspose.PDF, including PDF/UA structure, tagged content extraction, structure properties, and accessible tables.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/working-with-text-in-ruby/
 description: Learn how to work with text elements in a PDF document using Ruby, including text extraction and manipulation with Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 This section includes the following topics:

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/manipulate-pdf-document/
 description: Learn how to validate, structure, and modify PDF documents in Java, including TOC management and PDF/A checks.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/floating-box/
 description: Learn how to use FloatingBox for text layout, multi-column content, and precise positioning in PDF documents with Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

@@ -5,7 +5,7 @@ type: docs
 weight: 200
 url: /java/pdf-file-metadata/
 description: Learn how to extract, update, and manage PDF file metadata, document information, and XMP properties in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

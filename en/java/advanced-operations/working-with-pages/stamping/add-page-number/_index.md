@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/add-page-number/
 description: Learn how to add page number stamps to PDF documents in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/encrypt-pdf-file/
 description: Learn how to encrypt a PDF and configure permissions in Java with the PdfFileSecurity facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

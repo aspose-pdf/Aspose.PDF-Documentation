@@ -4,7 +4,7 @@ type: docs
 weight: 80
 url: /java/signature-management/
 description: Learn how to remove an existing PDF signature in Java with the PdfFileSignature facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

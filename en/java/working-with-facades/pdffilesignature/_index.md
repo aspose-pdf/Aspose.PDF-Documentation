@@ -4,7 +4,7 @@ type: docs
 weight: 60
 url: /java/pdffilesignature-class/
 description: Learn how to use the PdfFileSignature facade in Java to sign, certify, inspect, verify, extract, and remove PDF signatures.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

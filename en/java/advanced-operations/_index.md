@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/advanced-operations/
 description: Learn how to work with advanced PDF features in Java, including annotations, forms, pages, tables, text, images, layers, vector graphics, signatures, and metadata.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

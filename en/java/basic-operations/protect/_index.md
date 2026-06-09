@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/protect-pdf-file/
 description: Learn how to encrypt PDF files, decrypt protected documents, change passwords, and inspect password protection in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

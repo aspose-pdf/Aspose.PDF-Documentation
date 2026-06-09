@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/artifacts-header-footer/
 description: Learn how to add and remove header and footer artifacts in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/pdfannotationeditor-class/
 description: Learn how to work with PDF annotation workflows in Java through the PdfAnnotationEditor section, including text, markup, links, shapes, watermarks, redactions, and annotation transfer scenarios.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

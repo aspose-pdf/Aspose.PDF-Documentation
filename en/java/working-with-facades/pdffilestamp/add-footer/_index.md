@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/add-footer/
 description: Learn how to add text and image footers to PDF pages in Java with the PdfFileStamp facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

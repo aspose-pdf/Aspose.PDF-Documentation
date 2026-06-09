@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/python-programmers-guide/
 description: Explore the Python Programmer's Guide for Aspose.PDF, covering essential features and tips for working with PDF documents in Python.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 This section includes the following topics:

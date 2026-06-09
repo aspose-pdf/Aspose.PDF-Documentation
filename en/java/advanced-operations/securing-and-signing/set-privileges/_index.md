@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Learn how to set PDF privileges, encrypt files, decrypt protected PDFs, and change passwords in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

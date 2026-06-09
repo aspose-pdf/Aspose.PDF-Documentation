@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/insert-an-empty-page-into-a-pdf-file-in-jython/
 description: Learn how to insert an empty page into any location of a PDF document in Jython using Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Insert Empty Page

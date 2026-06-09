@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/convert-pdf-to-powerpoint/
 description: Learn how to convert PDF files to PowerPoint in Java with Aspose.PDF, including editable PPTX slides, image-based slides, and custom image resolution.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 210
 url: /java/securing-and-signing/
 description: Learn how to sign, certify, encrypt, decrypt, and secure PDF files in Java, including digital signatures, signature validation, and document privileges.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/replace-text-simple/
 description: Learn how to replace text throughout a PDF document in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Replace text in a PDF in Java
 Abstract: This article shows how to bind a PDF, configure the replace-text scope, replace all matching text occurrences, and save the updated document using the PdfContentEditor facade in Aspose.PDF for Java.

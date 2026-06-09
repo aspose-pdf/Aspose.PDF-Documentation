@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-toc-to-existing-pdf-in-python/
 description: Learn how to add a Table of Contents (TOC) to an existing PDF document in Python with Aspose.PDF for easy navigation.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 To add TOC in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddToc** class.
@@ -64,7 +64,7 @@ print "Added TOC Successfully, please check the output file."
 
 **Download Running Code**
 
-Download **Add TOC (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Add TOC (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)
 

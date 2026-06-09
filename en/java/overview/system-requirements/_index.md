@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/system-requirements/
 description: This section lists the supported operating systems that a developer needs to successfully work with Aspose.PDF for Python.
-lastmod: "2025-02-22"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,7 @@ To produce PDF documents, the machine to run [Aspose.PDF for Java](https://produ
 
 ## Supported Operating Systems
 
-Aspose.PDF for Java supports any 32-bit or 64-bit operating system that runs the Java runtime including, but not limited:
+Aspose.PDF for Java supports any 32-bit or 64-bit operating systemВ that runs the Java runtime including, but not limited:
 
 ### Windows
 
@@ -51,7 +51,7 @@ Aspose.PDF for Java supports any 32-bit or 64-bit operating system that runs th
 
 Aspose.PDF for Java supports the following Java versions:
 
-- J2SE 8.0 (1.8) or above (*for example Java 10*) 
+- J2SE 8.0 (1.8) or above (*for example Java 10*)В 
 - Support of Aspose.Pdf for Java on IBM i (Iseries or As/400)
 
 ## Development Environments

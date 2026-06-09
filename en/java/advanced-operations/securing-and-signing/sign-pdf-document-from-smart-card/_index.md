@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/sign-pdf-document-from-smart-card/
 description: Review the current Java example coverage for certificate-based PDF signing in Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

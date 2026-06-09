@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/complex-pdf-example/
 description: Aspose.PDF for Java allows you to create more complex PDF documents that contain images, text fragments, and tables in one file.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

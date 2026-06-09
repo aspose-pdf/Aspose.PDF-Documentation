@@ -4,7 +4,7 @@ type: docs
 weight: 80
 url: /java/copy-outer-field/
 description: Learn how to copy a form field from one PDF document into another in Java using the FormEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Copy a PDF form field between documents in Java
 Abstract: This article shows how to create a destination PDF, bind it to the FormEditor facade, copy a field from another document, and save the result using Aspose.PDF for Java.

@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/pdf-certification/
 description: Learn how to certify PDF documents in Java with PdfFileSignature and DocMDPSignature.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

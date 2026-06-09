@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /java/pdfcontenteditor-image-operations/
 description: Learn the current Java image-operation coverage available in the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Image editing workflows in Java with PdfContentEditor
 Abstract: This section covers image-related workflows currently supported by the Java PdfContentEditor example set. The repository includes a direct example for replacing an image, while unsupported image-deletion topics are retained as explicit scope notes.

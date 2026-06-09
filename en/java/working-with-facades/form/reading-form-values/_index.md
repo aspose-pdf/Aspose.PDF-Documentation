@@ -4,7 +4,7 @@ type: docs
 weight: 60
 url: /java/reading-form-values/
 description: Learn how to inspect PDF form field names and values in Java using the Form facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Read PDF form field names and values in Java
 Abstract: This section covers the Java form-reading workflows implemented in the current Form facade example set for Aspose.PDF for Java. The repository provides a general field inspection example and uses explicit scope notes for specialized pages that do not yet have matching Java samples.

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/pdfannotationeditor-class/interactive-annotations/
 description: Learn how to add, inspect, and delete link annotations in PDF documents using Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Work with interactive PDF annotations in Java
 Abstract: This article explains how to work with interactive link annotations in PDF files using Java. It covers locating text, creating a link annotation over the matched text area, reading existing link annotations, and deleting them.

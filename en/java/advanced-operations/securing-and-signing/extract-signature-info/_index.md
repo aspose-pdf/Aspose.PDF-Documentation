@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/extract-image-and-signature-information/
 description: Learn how to extract certificate and digital signature details from PDF files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

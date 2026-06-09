@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/delete-images-from-pdf-file/
 description: Learn how to delete embedded images from PDF files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Delete embedded images from PDF files with Java
 Abstract: This article shows how to delete images from PDF documents using Aspose.PDF for Java. The example removes an image resource from the first page by its index in the page image collection and then saves the modified document.

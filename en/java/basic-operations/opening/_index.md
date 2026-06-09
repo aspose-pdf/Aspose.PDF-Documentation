@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/open-pdf-document/
 description: Learn how to open a PDF file in Java using Aspose.PDF from a file path, a stream, or with a password.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

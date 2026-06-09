@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-and-delete-bookmark/
 description: Learn how to add and delete bookmarks in PDF documents using Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

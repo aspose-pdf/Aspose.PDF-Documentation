@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/extract-pages-from-pdf/
 description: Extract selected pages from a PDF in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

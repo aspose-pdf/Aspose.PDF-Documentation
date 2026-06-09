@@ -4,7 +4,7 @@ type: docs
 weight: 155
 url: /java/pdffilestamp-class/
 description: Learn how to use the PdfFileStamp facade in Java to add headers, footers, page numbers, and stamps to PDF documents.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

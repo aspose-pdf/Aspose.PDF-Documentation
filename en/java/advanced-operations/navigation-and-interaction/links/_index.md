@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/links/
 description: Learn how to create, extract, and update internal and external links in PDF documents using Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

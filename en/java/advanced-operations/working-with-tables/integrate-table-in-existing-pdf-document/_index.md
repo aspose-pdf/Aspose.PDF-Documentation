@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/integrate-table/
 description: Learn how to integrate PDF tables with structured data sources such as CSV files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

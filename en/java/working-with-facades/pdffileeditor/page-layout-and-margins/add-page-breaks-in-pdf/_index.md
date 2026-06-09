@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/add-page-breaks-in-pdf/
 description: Insert page breaks into a PDF in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

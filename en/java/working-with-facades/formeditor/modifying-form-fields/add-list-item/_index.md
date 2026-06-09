@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/add-list-item/
 description: Learn how to add items to a list field in a PDF document in Java using the FormEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Add a list item to a PDF form field in Java
 Abstract: This article shows how to bind an existing PDF, add a new item to a list field, and save the updated document using the FormEditor facade in Aspose.PDF for Java.

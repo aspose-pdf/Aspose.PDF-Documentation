@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/flatten-all-fields/
 description: Learn how to flatten all PDF form fields in Java using the Form facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Convert all interactive form fields to static content in Java
 Abstract: This article shows how to bind a PDF form, flatten every form field, and save the updated document with the Form facade in Aspose.PDF for Java.

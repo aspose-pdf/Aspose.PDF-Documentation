@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/pdf-metadata/
 description: Learn how to read, update, clear, and save PDF metadata in Java with the PdfFileInfo facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

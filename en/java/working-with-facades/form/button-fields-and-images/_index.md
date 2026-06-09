@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/button-fields-and-images/
 description: Learn how to add an image appearance to a button field in a PDF form using the Form facade in Aspose.PDF for Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Add an image appearance to a PDF button field in Java
 Abstract: This article shows how to use the Form facade in Aspose.PDF for Java to bind a PDF form, load an image as a stream, fill an image button field, and save the updated document.

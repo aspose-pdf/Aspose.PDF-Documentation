@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/image-stamps-in-pdf-page/
 description: Learn how to add image stamps to PDF pages in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

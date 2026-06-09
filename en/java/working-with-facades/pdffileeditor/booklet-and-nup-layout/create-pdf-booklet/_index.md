@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/create-pdf-booklet/
 description: Create a booklet-ready PDF from an existing document in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

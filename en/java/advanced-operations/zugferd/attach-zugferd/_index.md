@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/attach-zugferd/
 description: Learn how to attach ZUGFeRD invoice XML to a PDF and convert it to PDF/A-3A in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

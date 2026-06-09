@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/pdfannotationeditor-class/markup-annotations/
 description: Learn how to add, inspect, and delete highlight, underline, squiggly, and strikeout annotations in PDF documents using Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Work with markup annotations in PDF files using Java
 Abstract: This article explains how to create, inspect, and remove text markup annotations in PDF documents using Java. It covers highlight, underline, squiggly, and strikeout annotations based on the repository Java examples.

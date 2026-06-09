@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/split-pdf-from-beginning/
 description: Split a PDF from the beginning in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

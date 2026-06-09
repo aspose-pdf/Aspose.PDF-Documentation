@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/working-with-pages/
 description: Learn how to add, move, rotate, crop, extract, stamp, and manage PDF pages in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

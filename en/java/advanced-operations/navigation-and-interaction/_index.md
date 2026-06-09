@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/navigation-and-interaction/
 description: Learn how to work with PDF links, actions, and bookmarks in Java for navigation and interactive document behavior.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

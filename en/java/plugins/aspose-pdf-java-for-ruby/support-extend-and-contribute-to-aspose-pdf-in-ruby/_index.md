@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
 description: Learn how to support, extend, and contribute to Aspose.PDF for Ruby to enhance its features and improve your PDF solutions.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Support

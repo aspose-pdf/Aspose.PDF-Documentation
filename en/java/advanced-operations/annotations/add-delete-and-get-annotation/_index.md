@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-delete-and-get-annotation/
 description: Use Aspose.PDF for Java to add, inspect, and delete PDF annotations across text, markup, interactive, shape, watermark, security, and media-related workflows.
-lastmod: "2026-06-02"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

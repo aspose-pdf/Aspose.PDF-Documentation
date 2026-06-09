@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/set-privileges/
 description: Learn how to set PDF privileges in Java with the PdfFileSecurity facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

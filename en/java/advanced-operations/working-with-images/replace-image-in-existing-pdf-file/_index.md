@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/replace-image-in-existing-pdf-file/
 description: Learn how to replace embedded images in existing PDF files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Replace images in existing PDF files with Java
 Abstract: This article shows how to replace images in PDF documents using Aspose.PDF for Java. It covers replacing an image by its resource index and replacing the first matched image placement found with ImagePlacementAbsorber.

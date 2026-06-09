@@ -4,7 +4,7 @@ linktitle: Convert PDF/A and PDF/UA to PDF
 type: docs
 weight: 120
 url: /java/convert-pdf_x-to-pdf/
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 description: Learn how to remove PDF/A and PDF/UA compliance from standards-based PDF files in Java and save them as standard PDF documents.
 sitemap:
     changefreq: "monthly"

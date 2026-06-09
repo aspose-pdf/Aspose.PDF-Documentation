@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/working-with-forms/
 description: Learn how to create, fill, extract, modify, submit, import, export, and convert PDF forms in Java using Aspose.PDF.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

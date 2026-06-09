@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/text-formatting-inside-pdf/
 description: Learn how to format text inside PDF documents in Java using spacing, notes, lists, multi-column layout, and styling options.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

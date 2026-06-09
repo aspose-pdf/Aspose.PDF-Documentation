@@ -4,7 +4,7 @@ type: docs
 weight: 60
 url: /java/fill-fields-by-name-and-value/
 description: Learn how to adapt the Form facade field-filling API in Java for dynamic name-value form updates.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Fill multiple PDF form fields from name-value pairs in Java
 Abstract: The current Java sample set fills fields individually with repeated `fillField(...)` calls. This article shows how to apply the same API pattern to your own name-value collection without inventing a separate facade feature that is not present in the repository examples.

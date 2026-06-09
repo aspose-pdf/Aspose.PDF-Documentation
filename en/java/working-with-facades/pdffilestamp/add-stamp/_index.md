@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/add-stamp/
 description: Learn how to add an image stamp to PDF pages in Java with the PdfFileStamp facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

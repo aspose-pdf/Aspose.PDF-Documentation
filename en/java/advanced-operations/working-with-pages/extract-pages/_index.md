@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/extract-pages/
 description: Learn how to extract single or multiple PDF pages into new files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

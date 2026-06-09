@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/hello-world-example/
 description: This sample demonstrates how to create a simple PDF document with styled Hello World text using Aspose.PDF for Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

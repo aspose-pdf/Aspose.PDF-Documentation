@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/pdfannotationeditor-class/watermark-annotations/
 description: Learn how to add, inspect, and delete watermark annotations in PDF documents using Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Work with watermark annotations in PDF files using Java
 Abstract: This article explains how to create, inspect, and remove watermark annotations in PDF documents using Java. It covers adding a text watermark annotation with custom text state and opacity, reading existing watermark annotation areas, and deleting watermark annotations.

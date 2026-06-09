@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-bates-numbering/
 description: Learn how to add and remove Bates numbering in PDF documents using Java with Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

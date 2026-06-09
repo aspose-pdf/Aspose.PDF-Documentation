@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/fill-check-box-fields/
 description: Learn how to fill check box fields in a PDF form with Java using the Form facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Set check box field values in a PDF form with Java
 Abstract: This article shows how to bind a PDF form, set check box fields by name, and save the updated document with the Form facade in Aspose.PDF for Java.

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/working-with-text/
 description: Learn how to add, search, format, replace, rotate, and inspect text in PDF documents using Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

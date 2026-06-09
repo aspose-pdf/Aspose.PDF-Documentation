@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/portfolio/
 description: Learn how to create and manage PDF portfolios in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

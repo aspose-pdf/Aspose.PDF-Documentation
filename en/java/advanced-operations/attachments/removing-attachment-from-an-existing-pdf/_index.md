@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/removing-attachment-from-an-existing-pdf/
 description: Learn how to remove one or all embedded attachments from PDF documents in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 60
 url: /java/signature-information/
 description: Learn how to read signature names and signer details from signed PDFs in Java with PdfFileSignature.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

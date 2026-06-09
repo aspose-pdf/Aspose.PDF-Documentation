@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/pdfannotationeditor-class/security-annotations/
 description: Learn how to mark text for redaction, apply redaction annotations, and redact selected page areas in PDF files using Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Redact sensitive PDF content in Java with security annotations
 Abstract: This article explains how to work with redaction annotations in PDF documents using Java. It covers marking matched text with redaction annotations, permanently applying redactions, and redacting selected areas based on detected image placement rectangles.

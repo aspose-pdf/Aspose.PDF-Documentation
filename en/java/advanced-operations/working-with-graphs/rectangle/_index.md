@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/add-rectangle/
 description: Learn how to draw and fill rectangle shapes in PDF files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

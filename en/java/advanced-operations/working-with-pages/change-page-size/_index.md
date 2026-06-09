@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/change-page-size/
 description: Learn how to read and change PDF page dimensions in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

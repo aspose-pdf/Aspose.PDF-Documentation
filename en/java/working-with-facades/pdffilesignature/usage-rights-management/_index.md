@@ -4,7 +4,7 @@ type: docs
 weight: 100
 url: /java/usage-rights-management/
 description: Review current Java coverage for PDF usage-rights management with PdfFileSignature.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

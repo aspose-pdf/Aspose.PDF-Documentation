@@ -4,7 +4,7 @@ linktitle: Working with Document Object in Ruby
 type: docs
 weight: 10
 url: /java/working-with-document-object-in-ruby/
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 This section includes the following topics:

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-text-to-pdf-file/
 description: Learn how to add text, HTML fragments, lists, links, and custom fonts to PDF documents in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/extract-tagged-content-from-tagged-pdfs/
 description: Learn how to inspect tagged PDF content in Java with Aspose.PDF, including tagged content access, root structure access, and child structure elements.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

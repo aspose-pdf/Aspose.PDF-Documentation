@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/page-information/
 description: Learn how to inspect PDF page dimensions, rotation, and offsets in Java with the PdfFileInfo facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

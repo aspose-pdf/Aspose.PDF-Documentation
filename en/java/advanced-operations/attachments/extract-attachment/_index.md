@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/extract-attachment/
 description: Learn how to extract embedded files and file attachment annotations from PDF documents in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

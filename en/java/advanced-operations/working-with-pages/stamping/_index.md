@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /java/stamping/
 description: Learn how to add page numbers, page stamps, image stamps, and text stamps to PDF pages in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

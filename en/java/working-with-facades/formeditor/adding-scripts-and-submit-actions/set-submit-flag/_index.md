@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/set-submit-flag/
 description: Review the current Java coverage for setting a submit flag on a PDF form button with the FormEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Submit flag configuration in Java FormEditor examples
 Abstract: The current Java sample set does not expose submit-flag configuration as a separate standalone example method. Instead, it is demonstrated together with submit URL configuration in `setSubmitUrl(...)`.

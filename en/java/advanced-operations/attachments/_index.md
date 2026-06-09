@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /java/attachments/
 description: Learn how to add, extract, organize, and remove PDF attachments in Java with Aspose.PDF, including embedded files, file attachment annotations, and PDF portfolios.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

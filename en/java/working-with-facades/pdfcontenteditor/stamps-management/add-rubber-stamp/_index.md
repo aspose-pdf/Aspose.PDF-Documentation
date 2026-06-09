@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/add-rubber-stamp/
 description: Learn how to add a rubber stamp annotation to a PDF document in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Add a rubber stamp to a PDF in Java
 Abstract: This article shows how to bind a PDF, create a rubber stamp annotation with label text and color, and save the updated document using the PdfContentEditor facade in Aspose.PDF for Java.

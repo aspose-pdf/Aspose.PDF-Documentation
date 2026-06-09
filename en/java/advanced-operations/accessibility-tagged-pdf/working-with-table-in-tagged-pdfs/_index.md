@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/working-with-table-in-tagged-pdfs/
 description: Learn how to work with accessible tables in tagged PDFs in Java with Aspose.PDF, including table structure, cell spans, styling, row settings, and positioning.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ linktitle: Basic operations
 type: docs
 weight: 60
 url: /java/basic-operations/
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 description: Basic operations section describes how to create, open, save, merge, split, and protect PDF documents using Aspose.PDF for Java.
 sitemap:
     changefreq: "monthly"

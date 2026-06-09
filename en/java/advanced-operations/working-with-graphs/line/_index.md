@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/add-line/
 description: Learn how to draw line shapes and styled lines in PDF files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

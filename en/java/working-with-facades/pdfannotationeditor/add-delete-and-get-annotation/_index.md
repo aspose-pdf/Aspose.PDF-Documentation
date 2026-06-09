@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/pdfannotationeditor-class/add-delete-and-get-annotation/
 description: Use the PdfAnnotationEditor section in Java to add, inspect, and delete PDF annotations across text, markup, interactive, shape, watermark, security, and media-related workflows.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Manipulate PDF annotations in Java in the PdfAnnotationEditor section
 Abstract: This article groups the main annotation workflows available in the Java PdfAnnotationEditor section. It helps you navigate text, markup, interactive, shape, media, security, and watermark topics based on the repository Java annotation examples.

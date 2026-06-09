@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-attachment-to-pdf-document/
 description: Learn how to add file attachments to PDF documents in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -2,7 +2,7 @@
 title: Remove Tables from Existing PDF Documents
 linktitle: Remove Tables
 description: Learn how to remove one or more tables from existing PDF documents in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 type: docs
 weight: 50
 url: /java/removing-tables/

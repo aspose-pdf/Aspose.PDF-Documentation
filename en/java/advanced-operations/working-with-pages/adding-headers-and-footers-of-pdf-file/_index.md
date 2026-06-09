@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/add-headers-and-footers-of-pdf-file/
 description: Learn how to add headers and footers to PDF files in Java using text, images, and structured content.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

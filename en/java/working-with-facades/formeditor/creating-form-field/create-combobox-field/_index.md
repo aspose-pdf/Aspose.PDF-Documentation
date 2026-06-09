@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/create-combobox-field/
 description: Learn how to add a combo box field to a PDF document in Java using the FormEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Create a combo box field in a PDF with Java
 Abstract: This article shows how to bind an existing PDF, add a combo box field, populate it with items, and save the modified document using the FormEditor facade in Aspose.PDF for Java.

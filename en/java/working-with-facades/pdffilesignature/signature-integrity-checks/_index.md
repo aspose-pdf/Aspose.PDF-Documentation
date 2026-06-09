@@ -4,7 +4,7 @@ type: docs
 weight: 70
 url: /java/signature-integrity-checks/
 description: Learn how to validate signature coverage and integrity in Java with the PdfFileSignature facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

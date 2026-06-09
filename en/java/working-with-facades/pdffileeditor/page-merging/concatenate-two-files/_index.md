@@ -4,7 +4,7 @@ type: docs
 weight: 60
 url: /java/concatenate-two-files/
 description: Merge two PDF files into one document in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

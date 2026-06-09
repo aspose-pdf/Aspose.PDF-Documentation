@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/working-with-vector-graphics/
 description: Learn how to extract, move, remove, copy, and export vector graphics in PDF documents using Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

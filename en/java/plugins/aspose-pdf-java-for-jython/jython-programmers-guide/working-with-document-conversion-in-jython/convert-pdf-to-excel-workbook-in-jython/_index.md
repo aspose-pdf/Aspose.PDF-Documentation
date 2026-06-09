@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/convert-pdf-to-excel-workbook-in-jython/
 description: Explore how to convert PDF documents to Excel workbooks in Jython using Aspose.PDF, enabling data extraction for analysis.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Pdf to Excel

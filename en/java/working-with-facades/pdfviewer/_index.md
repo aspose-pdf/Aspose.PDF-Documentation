@@ -4,7 +4,7 @@ type: docs
 weight: 135
 url: /java/pdfviewer-class/
 description: Learn how to use the PdfViewer facade in Java to decode PDF pages and inspect viewer-related settings.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

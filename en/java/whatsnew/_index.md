@@ -11,7 +11,7 @@ sitemap:
 lastmod: "2026-06-09"
 TechArticle: true 
 AlternativeHeadline: Popular New Features in Aspose.PDF for Java
-Abstract: The What’s New section of the Aspose.PDF for Java documentation provides an overview of the latest updates, enhancements, and bug fixes introduced in recent releases. It highlights new features, performance improvements, and compatibility updates to help developers stay informed about the latest advancements in PDF processing. The documentation also includes details on deprecated functionalities and recommended alternatives. By regularly reviewing this section, developers can ensure they are utilizing the most efficient and up-to-date features in their Java applications for seamless PDF management.
+Abstract: The WhatвЂ™s New section of the Aspose.PDF for Java documentation provides an overview of the latest updates, enhancements, and bug fixes introduced in recent releases. It highlights new features, performance improvements, and compatibility updates to help developers stay informed about the latest advancements in PDF processing. The documentation also includes details on deprecated functionalities and recommended alternatives. By regularly reviewing this section, developers can ensure they are utilizing the most efficient and up-to-date features in their Java applications for seamless PDF management.
 SoftwareApplication: java
 ---
 
@@ -385,7 +385,7 @@ Hyperlinks are now preserved when converting PDF documents to XLSX, improving na
 
 ## What's new in Aspose.PDF 25.3
 
-Since 25.2 added the ability to detect compromise of PDF digital signatures. You can use the 'SignaturesCompromiseDetector' class to verify digital signatures for compromise. Call the check() method to check the document’s signatures. If no signature compromise is detected, the method will return true. To verify whether the existing signatures cover the entire document, use the 'SignaturesCoverage property'.
+Since 25.2 added the ability to detect compromise of PDF digital signatures. You can use the 'SignaturesCompromiseDetector' class to verify digital signatures for compromise. Call the check() method to check the documentвЂ™s signatures. If no signature compromise is detected, the method will return true. To verify whether the existing signatures cover the entire document, use the 'SignaturesCoverage property'.
 
 ```java
 
@@ -558,7 +558,7 @@ The term 'surrogate pair' refers to encoding Unicode characters with high code p
 
 ```java
 
-    String surrogate_pair  = "🌉";
+    String surrogate_pair  = "рџЊ‰";
         System.out.println(surrogate_pair.length());//==2
         Document doc = new Document();
         Page p = doc. getPages().add();

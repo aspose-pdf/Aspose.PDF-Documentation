@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /java/signature-extraction/
 description: Learn how to extract the signing certificate from a signed PDF in Java with PdfFileSignature.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

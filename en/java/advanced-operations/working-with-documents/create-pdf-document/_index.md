@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-pdf-document/
 description: Learn how to create PDF files and build searchable PDFs in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

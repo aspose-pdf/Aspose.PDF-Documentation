@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/pdffileeditor-class/
 description: Learn how to use the PdfFileEditor facade in Java to merge documents, split PDFs, rearrange pages, and adjust page layout.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

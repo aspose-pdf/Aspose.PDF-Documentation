@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/key-features/
 description: Aspose.PDF for Python via .NET highlights its main features, including supported PDF versions and available PDF manipulation options.
-lastmod: "2025-02-21"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

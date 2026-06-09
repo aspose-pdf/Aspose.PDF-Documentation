@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/add-attachment/
 description: Learn how to attach an external file to a PDF document in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Add a file attachment to a PDF in Java
 Abstract: This article shows how to bind a PDF, open an attachment as a stream, add the document attachment with a description, and save the updated file using the PdfContentEditor facade in Aspose.PDF for Java.

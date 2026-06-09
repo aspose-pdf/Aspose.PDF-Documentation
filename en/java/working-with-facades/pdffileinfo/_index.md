@@ -4,7 +4,7 @@ type: docs
 weight: 110
 url: /java/pdffileinfo-class/
 description: Learn how to use the PdfFileInfo facade in Java to inspect PDF metadata, document properties, privileges, version details, and page information.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/remove-open-action/
 description: Learn how to remove the document open action from a PDF in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Remove a PDF document-open action in Java
 Abstract: This article shows how to bind a PDF, remove the document-open action, and save the updated document using the PdfContentEditor facade in Aspose.PDF for Java.

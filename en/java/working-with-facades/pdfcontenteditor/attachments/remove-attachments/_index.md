@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /java/remove-attachments/
 description: Learn how to remove all document attachments from a PDF in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Remove all PDF attachments in Java
 Abstract: This article shows how to bind a PDF, delete all document attachments, and save the updated file using the PdfContentEditor facade in Aspose.PDF for Java.

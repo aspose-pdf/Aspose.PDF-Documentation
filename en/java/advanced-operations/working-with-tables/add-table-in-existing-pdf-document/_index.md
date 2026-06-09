@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/adding-tables/
 description: Learn how to add and configure tables in existing PDF documents in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

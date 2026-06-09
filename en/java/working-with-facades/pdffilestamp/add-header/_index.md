@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/add-header/
 description: Learn how to add text and image headers to PDF pages in Java with the PdfFileStamp facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

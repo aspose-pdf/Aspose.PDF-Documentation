@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/move-pages/
 description: Learn how to move PDF pages within a document or between documents in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

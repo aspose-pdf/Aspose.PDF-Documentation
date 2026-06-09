@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/change-password/
 description: Learn how to change PDF passwords in Java with the PdfFileSecurity facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

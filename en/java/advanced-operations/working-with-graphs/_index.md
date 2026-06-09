@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/working-with-graphs/
 description: Learn how to draw graphs and shapes in PDF files in Java, including arcs, circles, curves, lines, rectangles, and ellipses.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

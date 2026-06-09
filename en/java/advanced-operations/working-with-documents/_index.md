@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/working-with-documents/
 description: Learn how to create, format, manipulate, optimize, merge, split, and manage PDF documents in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

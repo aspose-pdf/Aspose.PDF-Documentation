@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/get-update-and-expand-bookmark/
 description: Learn how to retrieve, update, and expand bookmarks in PDF documents using Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/pdfannotationeditor-class/import-export-annotations/
 description: Learn how to copy annotations from one PDF document into another PDF document using Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Transfer PDF annotations between documents in Java
 Abstract: This article explains how to copy annotations from a source PDF and export them into a new PDF document using Java. The workflow loads the source file, creates the destination document, adds a page, copies annotations from the first source page, and saves the result.

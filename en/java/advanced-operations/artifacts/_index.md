@@ -5,7 +5,7 @@ type: docs
 weight: 170
 url: /java/artifacts/
 description: Learn how to work with PDF artifacts in Java to add backgrounds, watermarks, headers, footers, and Bates numbering, and to count pagination artifact types with Aspose.PDF.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

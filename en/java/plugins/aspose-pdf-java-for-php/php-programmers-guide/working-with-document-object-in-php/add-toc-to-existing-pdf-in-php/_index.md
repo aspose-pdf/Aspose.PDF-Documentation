@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-toc-to-existing-pdf-in-php/
 description: Explore how to add a table of contents (TOC) to an existing PDF document in PHP with Aspose.PDF for improved navigation.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Add TOC
@@ -70,6 +70,6 @@ print "Added TOC Successfully, please check the output file.";
 
 **Download Running Code**
 
-Download **Add TOC (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Add TOC (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

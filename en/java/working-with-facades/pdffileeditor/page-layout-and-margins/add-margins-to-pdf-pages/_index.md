@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/add-margins-to-pdf-pages/
 description: Add margins to selected PDF pages in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/licensing/
 description: Aspose.PDF for Python invites its customers to get a Classic license. As well as use a limited license to better explore the product.
-lastmod: "2025-02-21"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -89,9 +89,9 @@ if (com.aspose.pdf.Document.isLicensed()) {
 ```
 ## Metered License
 
-Aspose.PDF allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
+Aspose.PDF allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing.В For more details, please refer toВ [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered)В section.
 
-A new class [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered) has been introduced to apply metered key. Following is the sample code demonstrating how to set metered public and private key.
+A new classВ [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered)В has been introduced to apply metered key. Following is the sample code demonstrating how to set metered public and private key.
 
 ```java
 String publicKey = "";

@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/pdf-signing/
 description: Learn how to sign PDF documents in Java with the PdfFileSignature facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

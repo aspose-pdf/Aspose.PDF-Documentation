@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/get-pdf-version/
 description: Learn how to retrieve the version of a PDF document in Java with the PdfFileInfo facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

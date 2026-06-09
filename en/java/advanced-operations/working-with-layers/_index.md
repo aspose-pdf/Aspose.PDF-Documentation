@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/working-with-pdf-layers/
 description: Learn how to add, lock, extract, flatten, and merge PDF layers in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

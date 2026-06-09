@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/create-n-up-pdf-document/
 description: Create a 2x2 N-Up PDF layout in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

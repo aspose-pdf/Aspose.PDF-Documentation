@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-document/
 description: Learn how to create a PDF document from scratch in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

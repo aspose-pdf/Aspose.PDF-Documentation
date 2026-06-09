@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/search-and-get-text-from-pdf/
 description: Learn how to search, inspect, and extract text from PDF documents in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

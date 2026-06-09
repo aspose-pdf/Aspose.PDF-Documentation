@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /java/splitting-pdf-documents/
 description: Learn how to split PDF documents in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

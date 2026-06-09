@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/pdfannotationeditor-class/text-based-annotations/
 description: Learn how to add, inspect, and delete text, free text, and strikeout annotations in PDF documents using Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Work with text PDF annotations in Java
 Abstract: This article explains how to create, read, and remove text-based annotations in PDF documents using Java. It covers text annotations, free text annotations, and strikeout annotations based on the Java example implementations.

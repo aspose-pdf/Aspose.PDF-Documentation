@@ -4,7 +4,7 @@ linktitle: Convert PDF to Word
 type: docs
 weight: 10
 url: /java/convert-pdf-to-word/
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 description: Learn how to convert PDF files to DOC and DOCX in Java with Aspose.PDF for easier document editing and reuse.
 sitemap:
     changefreq: "monthly"

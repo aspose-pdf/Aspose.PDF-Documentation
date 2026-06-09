@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/document-properties/
 description: Learn how to inspect core PDF document properties in Java, including the PDF version and document privileges.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

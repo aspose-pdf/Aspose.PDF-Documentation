@@ -4,7 +4,7 @@ linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /java/convert-pdf-to-other-files/
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 description: Learn how to convert PDF files to EPUB, LaTeX, Markdown, text, XPS, and MobiXML in Java with Aspose.PDF.
 sitemap:
     changefreq: "monthly"

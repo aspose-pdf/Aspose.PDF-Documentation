@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-links/
 description: Learn how to create internal, external, and remote PDF links in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/php-programmers-guide/
 description: Discover the PHP Programmer's Guide for Aspose.PDF, offering a step-by-step approach to managing PDF documents in PHP.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 This section includes the following topics:

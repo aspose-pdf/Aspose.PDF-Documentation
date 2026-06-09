@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/split-pdf-to-end/
 description: Split a PDF from a chosen page to the end in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

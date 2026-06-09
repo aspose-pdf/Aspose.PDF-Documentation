@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/page-management/
 description: Learn how to manage PDF pages in Java by extracting, deleting, inserting, and appending pages with PdfFileEditor.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

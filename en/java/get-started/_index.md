@@ -6,7 +6,7 @@ weight: 30
 url: /java/get-started/
 description: Learn how to get started with Aspose.PDF for Java to create PDF documents and build more advanced examples with text, images, and tables.
 is_node: true
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

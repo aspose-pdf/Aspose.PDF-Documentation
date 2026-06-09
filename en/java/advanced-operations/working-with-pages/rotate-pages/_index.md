@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /java/rotate-pages/
 description: Learn how to rotate PDF pages and change page orientation in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

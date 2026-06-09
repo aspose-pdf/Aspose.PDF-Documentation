@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/aspose-pdf-drawing-graph-shapes-bounds-check/
 description: Learn how to validate shape bounds in PDF graph collections in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

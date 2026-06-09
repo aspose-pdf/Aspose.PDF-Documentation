@@ -4,7 +4,7 @@ type: docs
 weight: 140
 url: /java/form-class/
 description: Learn how to use the Form facade in Java to fill PDF fields, export and import form data, flatten fields, inspect field values, and add image appearances to button fields.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

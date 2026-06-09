@@ -4,7 +4,7 @@ linktitle: Extract Text From All the Pages of a PDF Document in Python
 type: docs
 weight: 30
 url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 description: Explains how to extract text from PDF pages in Python using PDF file format API.
 ---
 
@@ -34,7 +34,7 @@ print "Text extracted successfully. Check output file."
 
 **Download Running Code**
 
-Download **Extract Text From All the Pages (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Extract Text From All the Pages (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/ExtractTextFromAllPages/ExtractTextFromAllPages.py)
 

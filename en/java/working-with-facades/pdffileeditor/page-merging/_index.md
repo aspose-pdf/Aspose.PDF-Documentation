@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/page-merging/
 description: Learn how to merge PDF files in Java with the PdfFileEditor facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

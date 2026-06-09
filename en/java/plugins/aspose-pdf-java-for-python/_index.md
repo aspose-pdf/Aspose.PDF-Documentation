@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/aspose-pdf-java-for-python/
 description: Learn how to use Aspose.PDF for Java in Python projects. Leverage advanced PDF capabilities in your Python applications.
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

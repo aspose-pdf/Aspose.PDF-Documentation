@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/list-stamps/
 description: Learn how to list rubber stamps on a page in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: List PDF rubber stamps in Java
 Abstract: This article shows how to bind a PDF, retrieve the stamps on a page, and inspect the resulting collection using the PdfContentEditor facade in Aspose.PDF for Java.

@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/pdfcontenteditor-class/
 description: Learn how to use the PdfContentEditor class in Java to edit PDF content, manage annotations and attachments, work with document actions, images, text, multimedia, stamps, and viewer preferences.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

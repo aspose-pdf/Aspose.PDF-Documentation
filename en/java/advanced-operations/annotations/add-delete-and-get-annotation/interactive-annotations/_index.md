@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/interactive-annotations/
 description: Learn how to add, inspect, and delete link annotations in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

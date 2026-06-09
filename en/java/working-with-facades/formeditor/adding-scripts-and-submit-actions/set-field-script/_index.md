@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/set-field-script/
 description: Learn how to assign or update a JavaScript action on a PDF form field in Java using the FormEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Set a JavaScript action on a PDF form field in Java
 Abstract: This article shows how to bind an existing PDF, add an initial script, replace it with an updated script, and save the modified document using the FormEditor facade in Aspose.PDF for Java.

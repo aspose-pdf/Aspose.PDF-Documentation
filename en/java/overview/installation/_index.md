@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/installation/
 description: Find step-by-step instructions for installing Aspose.PDF for Python and .NET to start working with PDF documents.
-lastmod: "2025-02-21"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -26,7 +26,7 @@ Abstract: Aspose.PDF for Python via .NET is a comprehensive library designed to 
 
 **Aspose.PDF for Java** is implemented using Java and it works with JDK 1.8 and above. Aspose.PDF for Java can be integrated with any application, for example a JSP/JSF web application or a Windows application.
 
-**Aspose.PDF for Java** is fast and light weight. It creates PDF documents efficiently and helps your application perform better. Aspose.PDF for Java is our customers’ first choice when creating PDF documents because of its price, superb performance and great support.
+**Aspose.PDF for Java** is fast and light weight. It creates PDF documents efficiently and helps your application perform better. Aspose.PDF for Java is our customersвЂ™ first choice when creating PDF documents because of its price, superb performance and great support.
 Using this library, you can implement rich capabilities for creating PDF files from scratch, or completely process existing PDF documents without installing Adobe Acrobat.
 
 ## Installation
@@ -55,7 +55,7 @@ If you want to test Aspose.PDF for Java without the evaluation version limitatio
 
 ## Installing Aspose.PDF for Java from Aspose Repository
 
-Aspose hosts all Java APIs on [Aspose Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). You can easily use Aspose.PDF for Java API directly in your Maven Projects with simple configurations.
+Aspose hosts all Java APIs onВ [Aspose Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). You canВ easily use Aspose.PDF for Java API directly in your Maven Projects with simple configurations.
 
 ### Specify Aspose Repository Configuration
 
@@ -73,7 +73,7 @@ First you need to specify Aspose Repository configuration / location in your Mav
 
 ### Define Aspose.PDF for Java API Dependency
 
-Then define Aspose.PDF for Java API dependency in your pom.xml as follows:
+Then define Aspose.PDF for Java API dependencyВ in your pom.xml as follows:
 
 ```xml
  <dependencies>

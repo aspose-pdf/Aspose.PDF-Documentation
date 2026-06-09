@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/save-pdf-document/
 description: Learn how to save PDF documents in Java to a file, to a stream, or as a PDF standard using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

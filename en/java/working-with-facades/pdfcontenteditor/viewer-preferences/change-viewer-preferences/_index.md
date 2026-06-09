@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/change-viewer-preferences/
 description: Learn how to change the viewer preferences of a PDF document in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Change PDF viewer preferences in Java
 Abstract: This article shows how to bind a PDF, modify the current viewer preference value, and save the updated document using the PdfContentEditor facade in Aspose.PDF for Java.

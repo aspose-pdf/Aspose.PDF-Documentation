@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/clear-pdf-metadata/
 description: Learn how to clear PDF metadata in Java with the PdfFileInfo facade.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 draft: false
 sitemap:
     changefreq: "weekly"

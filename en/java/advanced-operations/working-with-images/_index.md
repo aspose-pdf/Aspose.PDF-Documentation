@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/working-with-images/
 description: Learn how to add, delete, extract, replace, and inspect images in PDF documents using Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

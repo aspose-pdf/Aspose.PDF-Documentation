@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/replace-text-with-state/
 description: Learn how to replace text with custom formatting in Java using the PdfContentEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Replace PDF text with custom formatting in Java
 Abstract: This article shows how to bind a PDF, configure a custom TextState, replace all matching text occurrences, and save the updated document using the PdfContentEditor facade in Aspose.PDF for Java.

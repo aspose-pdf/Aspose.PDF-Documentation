@@ -5,7 +5,7 @@ type: docs
 weight: 75
 url: /java/posting-form/
 description: Add submit buttons and submission actions to PDF AcroForms using Aspose.PDF for Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

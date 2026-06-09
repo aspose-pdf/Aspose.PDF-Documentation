@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/parsing/
 description: Discover PDF parsing and data extraction methods in Java with Aspose.PDF, including text, images, fonts, form data, tables, and vector graphics.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

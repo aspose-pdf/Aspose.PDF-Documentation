@@ -6,7 +6,7 @@ weight: 100
 url: /java/working-with-facades/
 description: Learn how to use Aspose.PDF Facades in Java to edit PDF content, manage forms and annotations, apply security, sign files, stamp pages, render pages, and inspect PDF metadata.
 is_node: true
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

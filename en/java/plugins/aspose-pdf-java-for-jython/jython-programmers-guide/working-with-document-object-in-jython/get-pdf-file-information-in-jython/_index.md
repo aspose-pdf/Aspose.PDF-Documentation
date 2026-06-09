@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/get-pdf-file-information-in-jython/
 description: Learn how to retrieve detailed information about a PDF file such as metadata, properties, and file details using Jython and Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Get Pdf File Info

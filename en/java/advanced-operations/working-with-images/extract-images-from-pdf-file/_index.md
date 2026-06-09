@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-images-from-pdf-file/
 description: Learn how to extract embedded images from PDF files in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Extract images from PDF files with Java
 Abstract: This article shows how to extract images from PDF documents using Aspose.PDF for Java. It covers saving a specific image resource from a page and exporting images that fall inside a selected rectangular region.

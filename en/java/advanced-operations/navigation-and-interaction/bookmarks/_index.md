@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/bookmarks/
 description: Learn how to add, delete, retrieve, update, and expand PDF bookmarks in Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/aspose-pdf-java-for-intellij-idea-maven/
 description: Integrate Aspose.PDF for Java in IntelliJ IDEA with Maven. Streamline your development process for advanced PDF solutions.
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 ---
 
 ## Introduction
@@ -22,7 +22,7 @@ Aspose.PDF for Java is a PDF document creation component that enables your Java 
 
 ### Aspose.PDF Java for IntelliJ IDEA - Maven
 
-- Aspose.PDF Java for IntelliJ IDEA (Maven) is an IntelliJ IDEA Plugin which lets you create maven projects (i.e. created project contains Aspose.PDF for Java API maven dependency) and download source code examples of the API  for using Aspose.PDF for Java API.
+- Aspose.PDF Java for IntelliJ IDEA (Maven) is an IntelliJ IDEA Plugin which lets you create maven projects (i.e. created project contains Aspose.PDF for Java API maven dependency) and download source code examples of the APIВ  for using Aspose.PDF for Java API.
 - This plugin helps you to work with Aspose.PDF for Java API inside your favorite IntelliJ IDEA.
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
@@ -35,18 +35,18 @@ Wizard 1: Aspose.PDF Maven Project
 - Plugin's Aspose Maven Project Wizard lets developers create Aspose.PDF for Java API Maven project.
 - The reference of Aspose.PDF for Java API maven dependency is automatically fetched from [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) and gets added in the pom.xml.
 - The created project will always contain the most recent available version Maven Dependency for Aspose.PDF for Java API.
-- The wizard steps also present with the option for downloading [Source Code Examples for using Aspose.PDF for Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
+- The wizard steps also presentВ with the option for downloading [Source Code Examples for using Aspose.PDF for Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 
 Wizard 2: Aspose.PDF Examples
 
-- Aspose.PDF Examples Wizard lets you create/copy downloaded Source Code Examples of Aspose.PDF for Java API into your project. All the examples for the selected category will get copied to the project's  "com.aspose.pdf.examples" package folder along with the required resources within the "src/main/resources" folder needed to run the examples.
+- Aspose.PDF Examples Wizard lets you create/copy downloadedВ Source Code Examples of Aspose.PDF for Java API into your project. All the examples for the selected category will get copied to the project'sВ  "com.aspose.pdf.examples" package folder along with the required resources within the "src/main/resources" folder needed to run the examples.
 - Source Code Examples of Aspose.PDF for Java API are meant for demonstrating the different usages of the API.
 
 ## System Requirements and Supported Platforms
 
 ### System Requirements
 
-- Microsoft Windows 8/7/Vista/2003/XP (incl.64-bit)  / Linux GNOME or KDE desktop / Mac OS X 10.5 or higher
+- Microsoft Windows 8/7/Vista/2003/XP (incl.64-bit)В  / Linux GNOME or KDE desktop / Mac OS X 10.5 or higher
 - 1 GB RAM minimum, 2 GB RAM recommended
 - 300 MB hard disk space + at least 1 G for caches
 - 1024x768 minimum screen resolution
@@ -58,7 +58,7 @@ Wizard 2: Aspose.PDF Examples
 Plugin supports the following IntelliJ IDEA Versions:
 
 - 13.0.1 (Community / Ultimate Edition)
-- 13.1.2  (CE / UE)
+- 13.1.2В  (CE / UE)
 - 14.0.2 (CE/ UE)
 - 14.1.5 (CE/ UE)
 

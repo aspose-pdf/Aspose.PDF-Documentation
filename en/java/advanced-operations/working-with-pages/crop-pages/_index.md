@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/crop-pages/
 description: Learn how to crop PDF pages and adjust crop, trim, bleed, and media boxes in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

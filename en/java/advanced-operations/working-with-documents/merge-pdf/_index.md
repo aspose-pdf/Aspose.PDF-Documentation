@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/merge-pdf-documents/
 description: Learn how to merge multiple PDF files into a single document in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

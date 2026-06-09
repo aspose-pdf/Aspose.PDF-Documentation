@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/acroforms/
 description: Learn how to create, fill, extract, import, export, and manage AcroForm fields in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-05-27"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

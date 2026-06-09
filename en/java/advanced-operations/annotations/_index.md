@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/annotations/
 description: Learn how to add, inspect, delete, transfer, and manage PDF annotations in Java with Aspose.PDF, including text, markup, links, shapes, watermarks, redactions, and media-related annotation guidance.
-lastmod: "2026-06-02"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

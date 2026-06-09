@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /java/compare-pdf-documents/
 description: Learn how to compare PDF documents in Java using side-by-side and graphical difference output with Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

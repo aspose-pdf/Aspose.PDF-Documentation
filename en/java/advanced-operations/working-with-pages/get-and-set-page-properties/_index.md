@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/get-and-set-page-properties/
 description: Learn how to inspect PDF page properties such as count, boxes, rotation, and color information in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

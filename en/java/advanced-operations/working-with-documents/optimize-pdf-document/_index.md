@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/optimize-pdf/
 description: Learn how to optimize, compress, and reduce PDF file size in Java using Aspose.PDF.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

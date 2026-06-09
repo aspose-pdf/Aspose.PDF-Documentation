@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/manipulating-tables/
 description: Learn how to inspect and modify tables in existing PDF documents using Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

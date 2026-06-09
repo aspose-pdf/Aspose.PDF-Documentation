@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/pdfannotationeditor-class/shape-annotations/
 description: Learn how to add, inspect, and delete square, circle, polygon, and polyline annotations in PDF documents using Java.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Work with geometric PDF annotations in Java
 Abstract: This article explains how to create, inspect, and remove geometric annotations in PDF documents using Java. It covers square, circle, polygon, and polyline annotations with color, opacity, popup, and point configuration.

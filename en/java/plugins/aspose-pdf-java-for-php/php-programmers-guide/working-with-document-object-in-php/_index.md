@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/working-with-document-object-in-php/
 description: Understand how to handle PDF document objects in PHP using Aspose.PDF, allowing efficient document manipulation and editing.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 This section includes the following topics:

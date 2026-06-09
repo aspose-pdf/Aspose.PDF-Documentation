@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/set-field-alignment-vertical/
 description: Learn how to set vertical alignment for a PDF form field in Java using the FormEditor facade in Aspose.PDF.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Set vertical alignment for a PDF form field in Java
 Abstract: This article shows how to bind an existing PDF, set vertical field alignment, and save the updated document using the FormEditor facade in Aspose.PDF for Java.

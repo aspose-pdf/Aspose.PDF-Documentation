@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/page-layout-and-margins/
 description: Learn how to adjust PDF page layout in Java by adding margins, resizing page contents, and inserting page breaks.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

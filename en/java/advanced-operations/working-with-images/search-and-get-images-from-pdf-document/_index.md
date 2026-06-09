@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/search-and-get-images-from-pdf-document/
 description: Learn how to search for and inspect images in PDF documents in Java.
-lastmod: "2026-06-08"
+lastmod: "2026-06-09"
 TechArticle: true
 AlternativeHeadline: Search and inspect images in PDF files with Java
 Abstract: This article shows how to search for and inspect images in PDF documents using Aspose.PDF for Java. It covers reading image placement geometry, detecting color type, extracting alternative text, and calculating effective image resolution from page operators.

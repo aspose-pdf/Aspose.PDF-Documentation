@@ -4,7 +4,7 @@ type: docs
 weight: 150
 url: /java/stamp-class/
 description: Learn how to work with the Stamp class in Java to add image, PDF, and text-based stamps to PDF documents.
-lastmod: "2026-06-03"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
