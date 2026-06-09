@@ -8,12 +8,380 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 TechArticle: true 
 AlternativeHeadline: Popular New Features in Aspose.PDF for Java
 Abstract: The What’s New section of the Aspose.PDF for Java documentation provides an overview of the latest updates, enhancements, and bug fixes introduced in recent releases. It highlights new features, performance improvements, and compatibility updates to help developers stay informed about the latest advancements in PDF processing. The documentation also includes details on deprecated functionalities and recommended alternatives. By regularly reviewing this section, developers can ensure they are utilizing the most efficient and up-to-date features in their Java applications for seamless PDF management.
 SoftwareApplication: java
 ---
+
+## What's new in Aspose.PDF 25.12
+
+### Free Text Annotations with Arbitrary Rotation in XFDF
+
+Support for arbitrary rotation angles has been added for Free Text annotations in XFDF, making imported and exported annotation layouts more flexible.
+
+```java
+
+    Document pdfDocument = new Document(inputPdf);
+    com.aspose.pdf.facades.PdfAnnotationEditor editor = new PdfAnnotationEditor();
+    editor.bindPdf(pdfDocument);
+    editor.importAnnotationsFromXfdf(inputXfdf);
+    editor.save(output);
+```
+
+## What's new in Aspose.PDF 25.11
+
+### Hidden Data Sanitization Improvements
+
+Enhanced PDF sanitization is now available through HiddenDataSanitizer to improve removal of hidden content from documents.
+
+```java
+
+Document document = new Document(pdfFile);
+        try
+        {
+            HiddenDataSanitizationOptions options = HiddenDataSanitizationOptions.all();
+            ImageCompressionOptions tmp = new ImageCompressionOptions();
+            tmp.setMaxResolution(30);
+            tmp.setResizeImages(true);
+            tmp.setCompressImages(true);
+            options.setImageCompressionOptions(tmp);
+            HiddenDataSanitizer sanitizer = new HiddenDataSanitizer(options);
+            sanitizer.sanitize(document);
+            document.save(getOutputPath("clear_all_resize_img.pdf"));
+        }
+        finally
+        {
+            document.close();
+        }
+```
+
+### Improved File-Size Reduction During PDF Optimization
+
+PDF optimization now improves file-size reduction by refining how font subsetting is handled.
+
+```java
+
+Document document = new Document(inputPath);
+            try {
+                OptimizationOptions tmp = new OptimizationOptions();
+                tmp.setSubsetFonts(true);
+                tmp.setAllowReusePageContent(true);
+                tmp.setCompressObjects(true);
+                tmp.setLinkDuplicateStreams(true);
+                tmp.setRemoveUnusedObjects(true);
+                tmp.setRemoveUnusedStreams(true);
+                tmp.setCompressAllContentStreams(true);
+                OptimizationOptions optimizeOptions = tmp;
+
+                document.optimizeResources(optimizeOptions);
+                document.save(outputPath);
+            } finally {
+                document.close();
+            }
+```
+
+## What's new in Aspose.PDF 25.10
+
+### PDF to PDF/E Conversion Support
+
+Aspose.PDF for Java now supports converting PDF documents to the PDF/E format.
+
+```java
+
+    Document document = new Document(inputPdf);
+    document.convert(conversionLog, PdfFormat.PDF_E_1, ConvertErrorAction.Delete);
+    document.save(outputPdf);
+```
+
+### HTML Text in Annotations
+
+Support has been added for adding HTML text inside annotations.
+
+```java
+
+Document pdf = new Document();
+        Page page = pdf.getPages().add();
+        DefaultAppearance da = new DefaultAppearance("Arial", 12, java.awt.Color.BLACK);
+        FreeTextAnnotation freeTextAnnot = new FreeTextAnnotation(page, new Rectangle(100, 600, 500, 700),
+                da);
+        freeTextAnnot.setRichText("<?xml version=\"1.0\"?><body xmlns=\"http://www.w3.org/1999/xhtml\" "
+                + "xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\\\" xfa:APIVersion=\"Acrobat:11.0.23\" "
+                + "xfa:spec=\"2.0.2\"  style=\"font-size:12.0pt;color:#00eeff;font-weight:normal;font-style:normal;"
+                + "font-family:Arial;font-stretch:normal\"><p dir=\"ltr\">1<p style=\"color:#00ff00;"
+                + "font-style:italic\">2</p>3456</p></body>");
+        freeTextAnnot.getTextStyle().setColor(java.awt.Color.BLACK);
+        freeTextAnnot.getTextStyle().setFontName("Arial");
+        //freeTextAnnot.Contents = "This is a rich text";
+        freeTextAnnot.setModified(new Date()); 
+        freeTextAnnot.setColor(Color.getRed());
+        freeTextAnnot.getBorder().setWidth(0);
+        page.getAnnotations().add(freeTextAnnot);
+        pdf.save(getOutputPath("out1.pdf"));
+```
+
+## What's new in Aspose.PDF 25.9
+
+### HTML to PDF Plugins
+
+Aspose.PDF for Java now includes Html to Pdf Plugins to simplify HTML-to-PDF processing workflows.
+
+```java
+
+    // Specify the input and output file paths.
+    String inputPath = "sample.pdf";
+    String outputPath = "sample.html";
+
+    // Create an instance of the PdfHtmlplugin.
+    PdfHtml converter = new PdfHtml();
+
+    // Create an instance of the HtmlToPdfOptionsclass.
+    HtmlToPdfOptions options = new HtmlToPdfOptions();
+
+    // Add the input and output file paths to the options.
+    options.addInput(new FileDataSource(inputPath));
+    options.addOutput(new FileDataSource(outputPath));
+
+    // Process the PDF to HTML conversion using the plugin and options.
+    ResultContainer htmlResultContainer = converter.process(options);
+
+    // Get the result from the result container.        
+    IOperationResult result = htmlResultContainer.getResultCollectionInternal().get_Item(0);
+```
+
+### PDF 1.6 Conformance Support
+
+Support for PDF 1.6 conformance has been added for scenarios that require this document version.
+
+## What's new in Aspose.PDF 25.8
+
+### Table Border Style Support
+
+Support for table border styles has been added to provide more control over table appearance.
+
+```java
+
+Document document = new Document();
+            try {
+                Page page = document.getPages().add();
+
+                GraphInfo tmp = new GraphInfo();
+                tmp.setDashArray(new int[]{10, 10});
+                tmp.setDashPhase(5);
+                tmp.setLineWidth(3);
+                Table tmp_1 = new Table();
+                tmp_1.setBorder(new BorderInfo(BorderSide.Box, tmp));
+                tmp_1.setDefaultCellBorder(new BorderInfo(BorderSide.Box, .05f, Color.getWhite()));
+                tmp_1.setDefaultCellPadding(new MarginInfo(4.5, 3, 4.5, 3));
+                tmp_1.getDefaultCellTextState().setFont(FontRepository.findFont("Arial"));
+                tmp_1.getDefaultCellTextState().setFontSize(10);
+                tmp_1.getDefaultCellTextState().setHorizontalAlignment(HorizontalAlignment.Left);
+                tmp_1.getDefaultCellTextState().setForegroundColor(Color.getBlack());
+                Table table1_allSidesSet = tmp_1;
+                page.getParagraphs().add(table1_allSidesSet);
+
+                for (int i = 0; i < 10; i++) {
+                    Row newRow = table1_allSidesSet.getRows().add();
+                    Cell cellLvl1 = newRow.getCells().add(String.valueOf(i));
+                }
+
+                Table tmp_2 = new Table();
+                tmp_2.setBorder(new BorderInfo(BorderSide.Box, 1));
+                tmp_2.setDefaultCellBorder(new BorderInfo(BorderSide.Box, 0.05f, Color.getWhite()));
+                tmp_2.setDefaultCellPadding(new MarginInfo(4.5, 3, 4.5, 3));
+                tmp_2.getDefaultCellTextState().setFont(FontRepository.findFont("Arial"));
+                tmp_2.getDefaultCellTextState().setFontSize(10);
+                tmp_2.getDefaultCellTextState().setHorizontalAlignment(HorizontalAlignment.Left);
+                tmp_2.getDefaultCellTextState().setForegroundColor(Color.getBlack());
+
+//Style1 example
+                Table table2_onlyRightSideSet = tmp_2;
+                table2_onlyRightSideSet.getBorder().getRight().setDashArray(new int[]{5, 10});
+                table2_onlyRightSideSet.getBorder().getRight().setDashPhase(7);
+                page.getParagraphs().add(table2_onlyRightSideSet);
+//Style2 example
+//                Table table3_roundCorner= tmp_2;
+//                table3_roundCorner.setCornerStyle(BorderCornerStyle.Round);
+//                table3_roundCorner.getBorder().setRoundedBorderRadius(15);
+//                page.getParagraphs().add(table3_roundCorner);
+
+
+                for (int i = 0; i < 10; i++) {
+                    Row newRow = table2_onlyRightSideSet.getRows().add();
+                    Cell cellLvl1 = newRow.getCells().add(String.valueOf(i));
+                }
+
+                document.save(output);
+            } finally {
+                if (document != null) {
+                    document.close();
+                }
+            }
+```
+
+### ALT Text Extraction for Images in PDF
+
+You can now get ALT text descriptions for images in PDF documents, which helps with accessibility-oriented processing.
+
+```java
+
+Document doc = new Document("input.pdf");
+    try  {
+        // Create ImagePlacementAbsorber object to perform image placement search
+        ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
+
+        // Accept the absorber for all the pages
+        doc.getPages().accept(abs);
+
+        // Loop through all ImagePlacements, get image and ImagePlacement Properties
+        ImagePlacement imagePlacement = abs.getImagePlacements().get_Item(1);
+        {
+            // Get the image using ImagePlacement object
+            XImage image = imagePlacement.getImage();
+            List<String> altTexts = image.getAlternativeText(imagePlacement.getPage());
+            System.out.println(altTexts.get(0));
+        }
+    } finally {
+        if (doc != null)  
+            doc.close();
+    }
+```
+
+## What's new in Aspose.PDF 25.7
+
+### PDF ChatGPT Plugin
+
+Aspose.PDF for Java now includes a PDF ChatGPT Plugin for PDF-focused AI interaction scenarios.
+
+The example demonstrates how to use PdfChatGpt plugin by adding file(s) as the message source:
+
+```java
+
+    PdfChatGpt plugin = new PdfChatGpt();
+    PdfChatGptRequestOptions options = new PdfChatGptRequestOptions();
+    options.addOutput(new FileDataSource("PdfChatGPT_output.pdf")); // Add the output file path.
+    // Add the PDF text source.
+    // In case of multiple sources, the text from each document will be added to the request message collection
+    // as a separate message with the role "user".
+    options.addInput(new FileDataSource("TextSource.pdf"));
+    options.setApiKey("Your API key.");  // You need to provide the key to access the API.
+    options.setMaxTokens(1000); // The maximum number of tokens to generate in the chat completion.
+    // Add the request message.
+    // In this case, the system message with Content = "You are a helpful assistant." is added by default.
+    // The role of the query message is "user" by default.
+    options.setQuery("How many letters in the provided text?");
+    // Process the request.
+    ResultContainer result = plugin.process(options);
+    String fileResultPath = result.getResultCollection().get(0).getData().toString();
+    ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData();
+```
+
+The example demonstrates how to use PdfChatGpt plugin by adding messages to the request:
+
+```java
+
+
+PdfChatGpt plugin = new PdfChatGpt();
+PdfChatGptRequestOptions options = new PdfChatGptRequestOptions();
+options.addOutput(new FileDataSource("PdfChatGPT_output.pdf")); // Add the output file path.
+options.setApiKey("Your API key."); // You need to provide the key to access the API.
+options.setMaxTokens(1000); // The maximum number of tokens to generate in the chat completion.
+// Add the request messages.
+Message message1 = new Message() ;
+message1.setContent("You are a helpful assistant.");
+message1.setRole(Role.System);
+options.getMessages().add(message1);
+
+Message message2 = new Message() ;
+message2.setContent("What is the biggest pizza diameter ever made?");
+message2.setRole(Role.User);
+options.getMessages().add(message2);
+
+// Process the request.
+ResultContainer result = plugin.process(options);
+String fileResultPath = result.getResultCollection().get(0).getData().toString();
+ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData(); // The ChatGPT API chat completion object.
+```
+
+The example demonstrates how to use PdfChatGpt plugin by adding one message to the request:
+
+```java
+
+    PdfChatGpt plugin = new PdfChatGpt();
+    PdfChatGptRequestOptions options = new PdfChatGptRequestOptions();
+    options.addOutput(new FileDataSource("PdfChatGPT_output.pdf")); // Add the output file path.
+    options.setApiKey("Your API key."); // You need to provide the key to access the API.
+    options.setMaxTokens(1000); // The maximum number of tokens to generate in the chat completion.
+    // Add the request message.
+    // In this case, the system message with Content = "You are a helpful assistant." is added by default.
+    // The role of the query message is "user" by default.
+    options.setQuery("What is the lowest temperature recorded on the Earth?");
+    // Process the request.
+    ResultContainer result = plugin.process(options);
+    String fileResultPath = result.getResultCollection().get(0).getData().toString();
+    ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData(); // The ChatGPT API chat completion object.
+```
+
+## What's new in Aspose.PDF 25.6
+
+### Improved PDF to DOCX Output Formatting
+
+PDF to DOCX conversion has been improved for documents where the output format was previously incorrect.
+
+```java
+
+    Document doc = new Document(dataDir + "SD_Aspose.pdf");
+    DocSaveOptions saveOption = new DocSaveOptions();
+    saveOption.setMode(DocSaveOptions.RecognitionMode.EnhancedFlow);
+    saveOption.setFormat(DocSaveOptions.DocFormat.DocX);
+    saveOption.setRecognizeBullets(true);
+    doc.save(dataDir + "SD_Aspose.docx", saveOption);
+```
+
+## What's new in Aspose.PDF 25.5
+
+### Preserve Images in PDF to ODS Conversion
+
+Images are now preserved when converting PDF documents to ODS.
+
+```java
+
+    Document doc = new Document("input.pdf");
+    ExcelSaveOptions options = new ExcelSaveOptions();
+    options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
+    doc.save("output.ods", options);
+```
+
+### Automatic Tag Creation During PDF to PDF/A Conversion
+
+PDF to PDF/A conversion now supports automatic tag creation to improve tagging results in the output document.
+
+```java
+
+    Document document = new Document(dataDir+"source.pdf");
+
+    PdfFormat format = PdfFormat.PDF_A_1A;
+    PdfFormatConversionOptions options = new PdfFormatConversionOptions(format, ConvertErrorAction.Delete);
+    options.setAutoTaggingSettings(AutoTaggingSettings.getDefault());
+
+    document.convert(options);
+    document.save(dataDir+"out_"+BuildVersionInfo.ASSEMBLY_VERSION+"_"+format+"_"+document.getFileName());
+    document.close();
+```
+
+## What's new in Aspose.PDF 25.4
+
+### Preserve Hyperlinks in PDF to XLSX Conversion
+
+Hyperlinks are now preserved when converting PDF documents to XLSX, improving navigation in exported spreadsheets.
+
+```java
+
+    Document doc = new Document("input.pdf");
+    ExcelSaveOptions options = new ExcelSaveOptions();
+    doc.save("output.xlsx", options);
+```
 
 ## What's new in Aspose.PDF 25.3
 
