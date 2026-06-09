@@ -1,152 +1,29 @@
 ---
-title: 使用 Python 处理 PDF 中的表格
+title: 在 PDF 中使用 Python 处理表格
 linktitle: 处理表格
 type: docs
 weight: 50
 url: /zh/python-net/working-with-tables/
-description: 本节描述如何添加和提取表格，如何使用 Python 库操作和处理表格。
-lastmod: "2023-09-17"
+description: 了解如何使用 Python 在 PDF 文档中添加、提取、集成、操作和删除表格。
+lastmod: "2026-06-08"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在 Python 中添加、提取、集成和管理 PDF 表格
+Abstract: 本节说明如何使用 Aspose.PDF for Python via .NET 在 PDF 文档中处理表格。了解如何创建和插入表格、提取表格数据、将表格与数据源集成、修改表格内容以及在 Python 工作流中从现有 PDF 文件中删除表格。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用 Python 处理 PDF 中的表格",
-    "alternativeHeadline": "处理表格",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, tables in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-tables/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-tables/"
-    },
-    "dateModified": "2023-09-04",
-    "description": "本文描述如何添加和提取表格，如何使用 Python 库操作和整合表格。"
-}
-</script>
 
+**Aspose.PDF for Python via .NET** 提供完整的工具，用于在 PDF 文件中处理表格。您可以创建并添加表格、控制表格布局和页面流、提取表格数据、更新现有表格，以及从现有 PDF 中删除一个或多个表格。
 
-**Aspose.PDF for Python via .NET** 允许您在 PDF 文件中高级处理表格。这个完美的工具通过提取表格帮助解决 PDF 的简单性问题。使用 Python 库资源，您可以轻松地在现有 PDF 文档中创建或添加表格，确定表格是否会在当前页面中断，提取表格，以及从现有 PDF 中删除表格。
+当您需要使用 Python 构建基于表格的报告、从 PDF 中提取结构化数据，或在现有文档中更新表格内容时，请使用本节。
+
+## 覆盖的表格任务
 
 您可以执行以下操作：
 
-- [在现有 PDF 文档中创建或添加表格](/pdf/zh/python-net/add-table-in-existing-pdf-document/) - 在 PDF 文件中创建表格时合并列或行，并考虑边框、边距和填充。
-- [从现有 PDF 文档中提取表格](/pdf/zh/python-net/extract-table-from-existing-pdf-document/) - 您可以从 PDF 文件中提取表格。
-- [在现有 PDF 中操作表格](/pdf/zh/python-net/manipulate-tables-in-existing-pdf/) - 使用 TableAbsorber 操作 PDF 中的表格。
-
-- [从现有 PDF 中删除表格](/pdf/zh/python-net/remove-tables-from-existing-pdf/) - 从 PDF 文档中删除一个或多个表格。
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "销售",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "销售",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "销售",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "用于Python的PDF操作库",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [添加表格](/pdf/zh/python-net/adding-tables/) - 在 PDF 文件中创建表格，包括合并的行/列、边框、页边距和填充。
+- [提取表格](/pdf/zh/python-net/extracting-table/) - 从现有 PDF 文件中提取表格数据。
+- [将表格与数据源集成](/pdf/zh/python-net/integrate-table/) - 从数据库和 pandas DataFrame 数据在 Python 中构建表格。
+- [操作表格](/pdf/zh/python-net/manipulating-tables/) - 检查并更新 PDF 文档中的现有表格。
+- [删除表格](/pdf/zh/python-net/removing-tables/) - 从 PDF 文档中删除一个或多个表格。

@@ -1,308 +1,343 @@
 ---
-title: 向 PDF 添加页眉和页脚使用 Python
+title: 在 Python 中添加 PDF 页眉和页脚
 linktitle: 向 PDF 添加页眉和页脚
 type: docs
 weight: 50
 url: /zh/python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for Python via .NET 允许您使用 TextStamp 类向 PDF 文件添加页眉和页脚。
-lastmod: "2023-04-17"
+description: 了解如何在 Python 中使用文本、图像和结构化内容向 PDF 文件添加页眉和页脚。
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Python 为 PDF 文件添加页眉和页脚。
+Abstract: 本文展示了如何使用 Aspose.PDF for Python via .NET 为 PDF 文档添加页眉和页脚。它涵盖了文本、页码、HTML、图像、表格以及基于 LaTeX 的页眉和页脚内容。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "向 PDF 添加页眉和页脚使用 Python",
-    "alternativeHeadline": "如何向 PDF 文件添加页眉和页脚",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, 添加页眉, 添加页脚到 pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for Python via .NET 允许您使用 TextStamp 类向 PDF 文件添加页眉和页脚。"
-}
-</script>
 
+使用此页面在 PDF 页面上添加一致的页眉和页脚内容，使用 **Aspose.PDF for Python via .NET**。
 
-**Aspose.PDF for Python via .NET** 允许您在现有的 PDF 文件中添加页眉和页脚。您可以向 PDF 文档添加图像或文本。此外，还可以尝试在一个 PDF 文件中使用 Python 添加不同的页眉。
+您可以使用来构建页眉和页脚 [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/)，和 [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) 对象，然后通过它们进行应用 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 在每页上。
 
-## 在 PDF 文件的页眉中添加文本
+## 将页眉和页脚添加为文本片段
 
-您可以使用 [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) 类在 PDF 文件的页眉中添加文本。TextStamp 类提供了创建基于文本的印章所需的属性，例如字体大小、字体样式和字体颜色等。为了在页眉中添加文本，您需要使用所需属性创建一个 Document 对象和一个 TextStamp 对象。之后，您可以调用 Page 的 'add_stamp' 方法将文本添加到 PDF 的页眉中。
+为 PDF 的所有页面添加简易的文本页眉和页脚。它创建 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 对象，插入 [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) 将元素放入它们，设置 [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 用于正确定位，并将它们附加到文档的每一页。结果是一个 PDF，所有页面都显示一致的页眉和页脚文本。
 
-您需要设置 [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) 属性，以便调整 PDF 页眉区域中的文本。您还需要将 'horizontal_alignment' 设置为 Center 并将 'vertical_alignment' 设置为 Top。
+以下代码片段演示了如何使用 Python 在 PDF 中添加作为文本片段的页眉和页脚：
 
-以下代码片段向您展示了如何使用 Python 在 PDF 文件的页眉中添加文本：
+1. 为页眉和页脚创建文本片段。
+1. 创建 HeaderFooter 对象并将文本片段添加到它们中。
+1. 定义边距设置以控制页眉和页脚的放置。
+1. 从输入文件加载 PDF 文档。
+1. 遍历文档中的所有页面。
+1. 为每页分配页眉和页脚。
+1. 将修改后的 PDF 保存到输出文件。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_text(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Demo header")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # 打开文档
-    document = ap.Document(input_pdf)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Demo footer")
 
-    # 创建页眉
-    textStamp = ap.TextStamp("Header Text")
-    # 设置印章的属性
-    textStamp.top_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # 在所有页面上添加页眉
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
 
-    # 保存更新的文档
-    document.save(output_pdf)
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## 在 PDF 文件的页脚中添加文本
+此方法对于在每页的顶部和底部添加统一的标题、页码指示或法律免责声明非常有用。您还可以将其扩展以包括图像或动态内容，例如页码。
 
-您可以使用 [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) 类在 PDF 文件的页脚中添加文本。
- TextStamp 类提供了创建基于文本的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页脚中添加文本，您需要使用所需属性创建一个 Document 对象和一个 TextStamp 对象。之后，您可以调用 Page 的 'add_stamp' 方法在 PDF 的页脚中添加文本。
+## 为页码添加页眉和页脚
 
-以下代码片段展示了如何使用 Python 在 PDF 文件的页脚中添加文本：
+使用 Aspose.PDF for Python 为 PDF 文档的页眉和页脚添加自动页码。使用内置变量 $p（当前页码）和 $P（总页数），脚本在每页动态插入页码。页眉显示格式‘Page X from Y’，而页脚显示‘Page X / Y’。该 [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 确保在每页上正确放置。
+
+1. 使用“Page $p from $P”在页眉中创建一个 TextFragment，以显示当前页码和总页数。
+1. 创建一个 HeaderFooter 对象并将页眉文本添加到其中。
+1. 使用“Page $p / $P”创建一个用于页脚的 TextFragment，以实现替代编号样式。
+1. 创建一个 Footer 对象并添加页脚文本。
+1. 定义边距设置（左 = 50，上 = 20），并将其应用于页眉和页脚。
+1. 打开输入文件中的 PDF 文档。
+1. 遍历所有页面并为每个页面分配页眉和页脚。
+1. 将更新后的 PDF 保存到输出路径。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def using_header_and_footer_for_page_numbering(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Page $p from $P")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # 打开文档
-    document = ap.Document(input_pdf)
-    # 创建页脚
-    textStamp = ap.TextStamp("Footer Text")
-    # 设置印章的属性
-    textStamp.bottom_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # 在所有页面上添加页脚
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Page $p / $P")
 
-    # 保存更新的 PDF 文件
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Create margins
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+
+    # Set header margin
+    header.margin = margin
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## 在 PDF 文件的页眉中添加图像
+## 将页眉和页脚添加为 HTML 片段
 
-您可以使用 [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 类在 PDF 文件的页眉中添加图像。 Image Stamp 类提供了创建基于图像的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页眉中添加图像，您需要创建一个 Document 对象和一个使用所需属性的 Image Stamp 对象。之后，您可以调用 Page 的 'add_stamp' 方法在 PDF 的页眉中添加图像。
+使用 Aspose.PDF for Python 为 PDF 文档的每一页应用 HTML 格式的页眉和页脚。通过使用 [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/)，脚本允许富文本样式——如粗体和斜体——出现在页眉和页脚中。 [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 用于正确放置，并且相同的格式化元素附加到文档中的每一页。
 
-下面的代码片段展示了如何使用 Python 在 PDF 文件的页眉中添加图像：
+以下代码片段演示了如何使用 Python 将页眉和页脚作为 HTML 片段添加到 PDF 中：
+
+1. 使用 HtmlFragment 创建 HTML 标题片段——包括诸如 ' 的样式化文本<strong>' 用于加粗。
+1. 创建一个 HeaderFooter 对象并将 HTML 标头添加到它。
+1. 创建一个使用 ' 的HTML页脚片段<i>' 用于斜体样式。
+1. 创建一个 Footer 对象并将页脚 HTML 添加到其中。
+1. 配置页边距（左 = 50，顶部 = 20），并将其分配给页眉和页脚。
+1. 使用 'ap.Document()' 加载 PDF 文档。
+1. 遍历所有页面并为每个页面分配页眉和页脚。
+1. 将修改后的 PDF 保存到指定的输出路径。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_html(input_file, output_file):
+    # Create header HTML
+    header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_html)
 
-    # 打开文档
-    document = ap.Document(input_pdf)
+    # Create footer HTML
+    footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
 
-    # 创建页眉
-    image_stamp = ap.ImageStamp(input_image)
-    # 设置印章的属性
-    image_stamp.top_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # 在所有页面上添加页眉
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_html)
 
-    # 保存更新后的文档
-    document.save(output_pdf)
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## 在 PDF 文件底部添加图像
+使用 HtmlFragment 可以通过内联样式或 HTML 标记实现丰富的格式化，使您相较于纯文本拥有更大的设计灵活性。
 
-您可以使用 [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 类在 PDF 文件的页脚中添加图像。 [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 类提供了创建基于图像的图章所需的属性，比如字体大小、字体样式和字体颜色等。为了在页脚中添加图像，你需要使用所需的属性创建一个 Document 对象和一个 Image Stamp 对象。之后，你可以调用 Page 的 'add_stamp' 方法在 PDF 的页脚中添加图像。
+## 将页眉和页脚添加为图像
 
-以下代码片段向你展示了如何使用 Python 在 PDF 文件的页脚中添加图像：
+使用 Aspose.PDF for Python 为 PDF 文档的每一页添加基于图像的页眉和页脚。每页的页眉和页脚均使用相同的图像文件。 [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 定位图像，图像会自动调整以适应页眉/页脚区域。
+
+以下代码片段演示了如何使用 Python 向 PDF 添加作为图像的页眉和页脚：
+
+1. 将图像加载到 'ap.Image' 对象中，并准备将其用作标题。
+1. 创建一个 HeaderFooter 对象并将页眉图像附加到它上。
+1. 再次加载相同的图像以用作页脚。
+1. 创建一个 Footer 对象，并将页脚图像添加到它。
+1. 使用 'ap.Document()' 加载输入 PDF 文档。
+1. 遍历文档的所有页面。
+1. 应用边距（左 = 50）以定位页眉和页脚。
+1. 为 PDF 的每一页分配页眉和页脚。
+1. 将更新后的 PDF 保存到指定的输出文件。
+
+此技术非常适合在页眉/页脚区域使用徽标或水印对文档进行品牌化。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_image(input_file, image_file, output_file):
+    # Create header image
+    header_image = ap.Image()
+    header_image.file = image_file
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_image)
 
-    # 打开文档
-    document = ap.Document(input_pdf)
-    # 创建页脚
-    image_stamp = ap.ImageStamp(input_image)
-    # 设置图章的属性
-    image_stamp.bottom_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # 在所有页面添加页脚
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer image
+    footer_image = ap.Image()
+    footer_image.file = image_file
 
-    # 保存更新后的 PDF 文件
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_image)
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Set header margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            header.margin = margin
+
+            # Set footer margin
+            footer.margin = margin
+
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## 在一个 PDF 文件中添加不同的页眉
+## 将标题和页脚添加为表格
 
-我们知道可以通过使用 [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) 或 [bottom_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) 属性在文档的页眉/页脚部分添加 TextStamp，但有时我们可能需要在单个 PDF 文档中添加多个页眉/页脚。**通过 .NET 的 Aspose.PDF for Python** 解释了如何做到这一点。
+使用 Aspose.PDF for Python 为 PDF 文档的所有页面添加结构化、基于表格的页眉和页脚。 [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) 对象提供了更好的布局控制、对齐以及对复杂页眉和页脚的一致格式。页眉文本居中，页脚文本左对齐，均使用 Arial 12pt 字体。列宽根据页面尺寸动态计算，以确保正确放置。
 
-为了实现此要求，我们将创建单独的 TextStamp 对象（对象的数量取决于所需的页眉/页脚数量），并将它们添加到 PDF 文档中。
- 我们还可以为单个图章对象指定不同的格式信息。在以下示例中，我们创建了 Document 对象和三个 TextStamp 对象，然后使用 Page 的 'add_stamp' 方法在 PDF 的页眉部分添加文本。以下代码片段向您展示如何使用 Aspose.PDF for Python 在 PDF 文件的页脚中添加图像：
+此代码片段使用 Aspose.PDF for Python via .NET 为 PDF 文档的每一页添加页眉和页脚（使用表格）。
+
+1. 使用定义文本样式 [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) 用于页眉和页脚（字体、大小、对齐）。
+1. 创建 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 用于页眉和页脚的对象。
+1. 构建页眉 [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) 带有单行且单元格包含标题文本。
+1. 构建页脚 [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) 包含页脚文本的单行单元格。
+1. 将表格添加到相应的 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 对象。
+1. 设置页脚 [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 用于正确的水平定位。
+1. 打开 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 使用适当的方法。
+1. 遍历所有页面并将基于表格的页眉和页脚分配给每个页面。
+1. 保存已修改的 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 到输出文件。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_table(input_file, output_file):
+    text_state_header = ap.text.TextState()
+    text_state_header.font = ap.text.FontRepository.find_font("Arial")
+    text_state_header.font_size = 12
+    text_state_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    text_state_footer = ap.text.TextState()
+    text_state_footer.font = ap.text.FontRepository.find_font("Arial")
+    text_state_footer.font_size = 12
+    text_state_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+    # Create header
+    header = ap.HeaderFooter()
+    # Create footer
+    footer = ap.HeaderFooter()
+    # Create header Table
+    table_header = ap.Table()
+    table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+    header_row = table_header.rows.add()
+    header_row.cells.add("This is a Table Header", text_state_header)
+    # Create footer Table
+    table = ap.Table()
+    table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+    table.rows.add().cells.add("Powered by Aspose.PDF", text_state_footer)
+    header.paragraphs.add(table_header)
+    footer.paragraphs.add(table)
+    # Set footer margin
+    footer.margin.left = 150
 
-    # 创建三个图章
-    stamp1 = ap.TextStamp("Header 1")
-    stamp2 = ap.TextStamp("Header 2")
-    stamp3 = ap.TextStamp("Header 3")
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
 
-    # 设置图章对齐方式（将图章放在页面顶部，水平居中）
-    stamp1.vertical_alignment = ap.VerticalAlignment.TOP
-    stamp1.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # 指定字体样式为粗体
-    stamp1.text_state.font_style = ap.text.FontStyles.BOLD
-    # 设置文本前景色信息为红色
-    stamp1.text_state.foreground_color = ap.Color.red
-    # 指定字体大小为14
-    stamp1.text_state.font_size = 14
-
-    # 现在我们需要将第二个图章对象的垂直对齐方式设置为顶部
-    stamp2.vertical_alignment = ap.VerticalAlignment.TOP
-    # 设置图章的水平对齐信息为居中对齐
-    stamp2.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # 设置图章对象的缩放因子
-    stamp2.zoom = 10
-
-    # 设置第三个图章对象的格式
-    # 指定图章对象的垂直对齐信息为顶部
-    stamp3.vertical_alignment = ap.VerticalAlignment.TOP
-    # 设置图章对象的水平对齐信息为居中对齐
-    stamp3.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # 设置图章对象的旋转角度
-    stamp3.rotate_angle = 35
-    # 设置图章的背景颜色为粉色
-    stamp3.text_state.background_color = ap.Color.pink
-    # 将图章的字体信息更改为 Verdana
-    stamp3.text_state.font = ap.text.FontRepository.find_font("Verdana")
-    # 第一个图章添加在第一页；
-    document.pages[1].add_stamp(stamp1)
-    # 第二个图章添加在第二页；
-    document.pages[2].add_stamp(stamp2)
-    # 第三个图章添加在第三页。
-    document.pages[3].add_stamp(stamp3)
-
-    # 保存更新的文档
-    document.save(output_pdf)
+        # Save PDF document
+        document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 操作库 for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 在 LaTeX 中添加页眉和页脚
+
+使用 Aspose.PDF for Python 为 PDF 文档的所有页面添加包含 LaTeX 格式内容的页眉和页脚。LaTeX 可渲染数学符号、日期、版权标记以及其他高级格式。页眉包括动态日期，而页脚显示版权符号以及当前页码和总页数。
+
+以下代码片段展示了如何使用 [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) 在 PDF 的页眉和页脚中使用 Aspose.PDF for Python via .NET。
+
+1. 打开 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 使用适当的方法。
+1. 确定用于动态页脚的总页数。
+1. 遍历文档的所有页面。
+1. 创建一个 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 用于页眉的对象。
+1. 创建一个 [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) 对于包含 LaTeX 命令的标题文本（例如， `\\today\\`).
+1. 创建一个 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 页脚的对象。
+1. 创建一个 [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) 用于包含 LaTeX 符号和页码的页脚文本。
+1. 添加 [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) 到相应的页眉/页脚对象。
+1. 将页眉和页脚绑定到当前页面。
+1. 保存已修改的 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 到输出文件。
+
+```python
+import aspose.pdf as ap
+
+def add_header_and_footer_as_latex(input_file, output_file):
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTeX Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = (
+                f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            )
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## 相关页面主题
+
+- [在 Python 中处理 PDF 页面](/pdf/zh/python-net/working-with-pages/)
+- [在 Python 中为 PDF 添加页码](/pdf/zh/python-net/add-page-number/)
+- [在 Python 中对 PDF 页面加盖印章](/pdf/zh/python-net/stamping/)
+- [在 Python 中格式化 PDF 文档](/pdf/zh/python-net/formatting-pdf-document/)

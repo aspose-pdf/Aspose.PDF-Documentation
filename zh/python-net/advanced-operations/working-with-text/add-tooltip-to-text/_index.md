@@ -1,295 +1,187 @@
 ---
-title: PDF 工具提示使用 Python
+title: 在 Python 中为 PDF 文本添加工具提示
 linktitle: PDF 工具提示
 type: docs
 weight: 20
 url: /zh/python-net/pdf-tooltip/
-description: 学习如何使用 Python 和 Aspose.PDF 向 PDF 中的文本片段添加工具提示
-lastmod: "2024-02-17"
+description: 了解如何在 Python 中向 PDF 文档的文本片段添加工具提示。
+lastmod: "2026-06-08"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Python 为 PDF 文本片段添加交互式工具提示
+Abstract: 本文提供了两个使用 Aspose.PDF for Python via .NET 为 PDF 文本添加交互式帮助的 Python 示例。第一个示例通过放置不可见的 `ButtonField` 元素并设置 `alternate_name` 来为匹配的文本片段添加工具提示。第二个示例创建一个隐藏的 `TextBoxField`，通过将 `HideAction` 事件绑定到不可见的 `ButtonField` 实现悬停时显示。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF 工具提示使用 Python",
-    "alternativeHeadline": "向文本添加 PDF 工具提示",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, 添加 pdf 工具提示",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/pdf-tooltip/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/pdf-tooltip/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "学习如何使用 Python 和 Aspose.PDF 向 PDF 中的文本片段添加工具提示"
-}
-</script>
 
+## 在 PDF 中为搜索的文本添加工具提示
 
-## 通过添加不可见按钮为搜索文本添加工具提示
+此代码片段展示了如何覆盖不可见的 [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) 特定元素 [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) 在 PDF 中的对象在用户将鼠标悬停其上时显示工具提示。它支持使用的短提示和长提示消息 `alternate_name` 的属性 `ButtonField`.
 
-此代码演示了如何使用 Aspose.PDF 为 PDF 文档中的特定文本片段添加工具提示。当鼠标光标悬停在相应文本上时，将显示工具提示。
+当您需要通过添加悬停帮助、内联解释或上下文注释来使 PDF 文本更具交互性时，请使用此页面。
 
-以下代码片段将向您展示如何实现此功能：
+1. 创建一个新 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. 保存初始文档。
+1. 重新打开 PDF 文档。
+1. 使用搜索目标文本 [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. 添加一个不可见的 [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) 带有简短的工具提示。
+1. 搜索第二个目标文本。
+1. 添加一个不可见的 [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) 在匹配的片段上显示长工具提示。
+1. 保存最终文档。
 
 ```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("将鼠标光标移到这里以显示工具提示")
-    )
-    document.pages[1].paragraphs.add(
-        ap.text.TextFragment(
-            "将鼠标光标移到这里以显示一个非常长的工具提示"
+# region PDF Tooltip
+def add_tool_tip_to_searched_text(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display a tooltip")
         )
-    )
-    document.save(output_pdf)
-
-    # 打开带有文本的文档
-    document = ap.Document(output_pdf)
-    # 创建 TextAbsorber 对象以查找所有匹配正则表达式的短语
-    absorber = ap.text.TextFragmentAbsorber(
-        "将鼠标光标移到这里以显示工具提示"
-    )
-    # 接受文档页面的吸收器
-    document.pages.accept(absorber)
-    # 获取提取的文本片段
-    text_fragments = absorber.text_fragments
-
-    # 循环遍历片段
-    for fragment in text_fragments:
-        # 在文本片段位置创建不可见按钮
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # alternate_name 值将在查看器应用程序中显示为工具提示
-        field.alternate_name = "文本的工具提示。"
-        # 将按钮字段添加到文档
-        document.form.add(field)
-
-    # 接下来是非常长的工具提示的示例
-    absorber = ap.text.TextFragmentAbsorber(
-        "将鼠标光标移到这里以显示一个非常长的工具提示"
-    )
-    document.pages.accept(absorber)
-    text_fragments = absorber.text_fragments
-
-    for fragment in text_fragments:
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # 设置非常长的文本
-        field.alternate_name = (
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
-            " sed do eiusmod tempor incididunt ut labore et dolore magna"
-            " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-            " ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            " Duis aute irure dolor in reprehenderit in voluptate velit"
-            " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
-            " occaecat cupidatat non proident, sunt in culpa qui officia"
-            " deserunt mollit anim id est laborum."
+        document.pages[1].paragraphs.add(
+            ap.text.TextFragment(
+                "Move the mouse cursor here to display a very long tooltip"
+            )
         )
-        document.form.add(field)
+        document.save(outfile)
 
-    # 保存文档
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display a tooltip"
+        )
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the extracted text fragments
+        text_fragments = absorber.text_fragments
+
+        # Loop through the fragments
+        for fragment in text_fragments:
+            # Create invisible button on text fragment position
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # alternate_name value will be displayed as tooltip by a viewer application
+            field.alternate_name = "Tooltip for text."
+            # Add button field to the document
+            document.form.add(field)
+
+        # Next will be sample of very long tooltip
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display a very long tooltip"
+        )
+        document.pages.accept(absorber)
+        text_fragments = absorber.text_fragments
+
+        for fragment in text_fragments:
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # Set very long text
+            field.alternate_name = (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                " Duis aute irure dolor in reprehenderit in voluptate velit"
+                " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                " occaecat cupidatat non proident, sunt in culpa qui officia"
+                " deserunt mollit anim id est laborum."
+            )
+            document.form.add(field)
+
+        # Save document
+        document.save(outfile)
 ```
 
+## 在 PDF 中创建悬停时出现的隐藏文本块
 
-## 创建隐藏文本块并在鼠标悬停时显示
+向 PDF 文档添加交互式浮动文本。它覆盖一个不可见的 [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) 在目标短语上并显示隐藏的 [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) 当用户将鼠标悬停在其上时。此技术非常适合上下文帮助、批注或动态内容呈现。
 
-这个Python代码片段展示了如何在PDF文档中添加浮动文本，当鼠标光标悬停在特定区域时显示。
-
-首先，创建一个新的PDF文档，并向其中添加包含文本“将鼠标光标移到这里以显示浮动文本”的段落。然后保存文档。
-
-接下来，重新打开保存的文档，并创建一个TextAbsorber对象来查找之前添加的文本片段。然后使用这个文本片段来定义浮动文本字段的位置和特征。
-
-创建一个TextBoxField对象来表示浮动文本字段，并相应地设置其属性，如位置、值、只读状态和可见性。此外，为字段分配唯一名称和外观特征。
-
-将浮动文本字段添加到文档的表单中，并在原始文本片段的位置创建一个不可见的按钮字段。
-  HideAction 事件被分配给按钮字段，指定当鼠标光标进入其附近时，浮动文本字段应出现，并在光标退出时消失。
-
-最后，将按钮字段添加到文档的表单中，并保存修改后的文档。
-
-此代码片段提供了一种使用 Aspose.PDF for Python 在 PDF 文档中创建交互式浮动文本元素的方法。
+1. 创建一个新的 PDF 文档。
+1. 保存 PDF，以便以后重新打开进行交互设置。
+1. 重新打开 PDF 文档。
+1. 使用定位目标文本 [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. 创建隐藏的 [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
+1. 将隐藏字段添加到文档的 [`Form`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) 集合。
+1. 创建一个不可见的 [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/).
+1. 分配鼠标操作（`on_enter`, `on_exit`) 使用 [`HideAction`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/hideaction/) 显示/隐藏隐藏字段。
+1. 保存最终文档。
 
 ```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def create_hidden_text_block(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        #  Add paragraph with text
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display floating text")
+        )
+        # Save PDF document
+        document.save(outfile)
 
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("将鼠标光标移动到此处以显示浮动文本")
-    )
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display floating text"
+        )
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the first extracted text fragment
+        text_fragments = absorber.text_fragments
+        fragment = text_fragments[1]
 
-    # 打开带有文本的文档
-    document = ap.Document(output_pdf)
-    # 创建 TextAbsorber 对象以查找与正则表达式匹配的所有短语
-    absorber = ap.text.TextFragmentAbsorber(
-        "将鼠标光标移动到此处以显示浮动文本"
-    )
-    # 接受文档页面的吸收器
-    document.pages.accept(absorber)
-    # 获取第一个提取的文本片段
-    text_fragments = absorber.text_fragments
-    fragment = text_fragments[1]
+        # Create hidden text field for floating text in the specified rectangle of the page
+        floating_field = ap.forms.TextBoxField(
+            fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
+        )
+        # Set text to be displayed as field value
+        floating_field.value = 'This is the "floating text field".'
+        # We recommend to make field 'readonly' for this scenario
+        floating_field.read_only = True
+        # Set 'hidden' flag to make field invisible on document opening
+        floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
 
-    # 在页面的指定矩形中为浮动文本创建隐藏文本字段
-    floating_field = ap.forms.TextBoxField(
-        fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
-    )
-    # 设置要显示的文本作为字段值
-    floating_field.value = '这是“浮动文本字段”。'
-    # 我们建议在此方案中将字段设置为“只读”
-    floating_field.read_only = True
-    # 设置“隐藏”标志以使字段在文档打开时不可见
-    floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
+        # Setting a unique field name isn't necessary but allowed
+        floating_field.partial_name = "FloatingField_1"
 
-    # 设置唯一字段名称不是必须的，但允许
-    floating_field.partial_name = "FloatingField_1"
+        # Setting characteristics of field appearance isn't necessary but makes it better
+        floating_field.default_appearance = ap.annotations.DefaultAppearance(
+            "Helv", 10, drawing.Color.blue
+        )
+        floating_field.characteristics.background = drawing.Color.light_blue
+        floating_field.characteristics.border = drawing.Color.dark_blue
+        floating_field.border = ap.annotations.Border(floating_field)
+        floating_field.border.width = 1
+        floating_field.multiline = True
 
-    # 设置字段外观特征不是必须的，但会更好
-    floating_field.default_appearance = ap.annotations.DefaultAppearance(
-        "Helv", 10, ap.Color.blue.to_rgb()
-    )
-    floating_field.characteristics.background = ap.Color.light_blue.to_rgb()
-    floating_field.characteristics.border = ap.Color.dark_blue.to_rgb()
-    floating_field.border = ap.annotations.Border(floating_field)
-    floating_field.border.width = 1
-    floating_field.multiline = True
+        # Add text field to the document
+        document.form.add(floating_field)
+        # Create invisible button on text fragment position
+        button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+        # Create new hide action for specified field (annotation) and invisibility flag.
+        # (You also may refer floating field by the name if you specified it above.)
+        # Add actions on mouse enter/exit at the invisible button field
 
-    # 将文本字段添加到文档中
-    document.form.add(floating_field)
-    # 在文本片段位置创建不可见按钮
-    button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-    # 为指定字段（注释）和不可见性标志创建新的隐藏动作。
-    # （如果之前指定了名称，您也可以通过名称引用浮动字段。）
-    # 在不可见按钮字段上添加鼠标进入/退出动作
+        button_field.actions.on_enter = ap.annotations.HideAction(floating_field, False)
+        button_field.actions.on_exit = ap.annotations.HideAction(floating_field)
 
-    button_field.actions.on_enter = ap.annotations.HideAction(
-        floating_field.partial_name, False
-    )
-    button_field.actions.on_exit = ap.annotations.HideAction(
-        floating_field.partial_name
-    )
+        # Add button field to the document
+        document.form.add(button_field)
 
-    # 将按钮字段添加到文档中
-    document.form.add(button_field)
-
-    # 保存文档
-    document.save(output_pdf)
+        # Save document
+        document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 操作库 for .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 相关文本主题
+
+- [使用 Python 在 PDF 中处理文本](/pdf/zh/python-net/working-with-text/)
+- [在 Python 中使用 FloatingBox 进行 PDF 文本布局](/pdf/zh/python-net/floating-box/)
+- [在 Python 中搜索并提取 PDF 文本](/pdf/zh/python-net/search-and-get-text-from-pdf/)
+- [向 PDF 添加文本](/pdf/zh/python-net/add-text-to-pdf-file/)
