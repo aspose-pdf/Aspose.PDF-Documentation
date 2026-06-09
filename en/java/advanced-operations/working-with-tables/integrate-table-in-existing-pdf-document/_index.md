@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/integrate-table/
 description: Learn how to integrate PDF tables with structured data sources such as CSV files in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,10 +17,10 @@ The Java example builds PDF tables from CSV data without relying on external dat
 
 ## Create a table from CSV rows
 
-1. Create the table object and configure its basic formatting.
-1. Add rows and cells to build the table content.
-1. Set the properties required by the example.
-1. Add the configured object to the document structure.
+1. Create the [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) object and configure its basic formatting.
+1. Add [Row](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/row/) and [Cell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/cell/) objects to build the table content from the CSV data.
+1. Set the formatting required by the example, including [Color](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/color/).
+1. Return the configured [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/).
 
 ```java
 public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
@@ -43,10 +43,10 @@ public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
 
 ## Create a PDF from CSV data
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Add the configured object to the document structure.
-1. Save the updated PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Add the configured [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) to the page.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {

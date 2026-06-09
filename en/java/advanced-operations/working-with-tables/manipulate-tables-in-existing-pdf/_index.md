@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/manipulating-tables/
 description: Learn how to inspect and modify tables in existing PDF documents using Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,10 +15,10 @@ Abstract: This article explains how to manipulate tables already present in PDF 
 ---
 ## Replace text inside a detected table cell
 
-1. Open the source PDF document.
-1. Create a TableAbsorber and visit the target page or document.
-1. Set the properties required by the example.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Locate the target [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) cell and update its [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) value.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void replaceCells(Path inputFile, Path outputFile) {
@@ -37,12 +37,12 @@ The full example also validates that a table exists and that the target cell con
 
 ## Replace a whole table
 
-1. Open the source PDF document.
-1. Create the table object and configure its basic formatting.
-1. Add rows and cells to build the table content.
-1. Create a TableAbsorber and visit the target page or document.
-1. Replace the extracted table with the updated table content.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Get the target [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/).
+1. Create the replacement [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) and configure its rows and cells.
+1. Replace the extracted table with the updated [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) content.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void replaceTable(Path inputFile, Path outputFile) {

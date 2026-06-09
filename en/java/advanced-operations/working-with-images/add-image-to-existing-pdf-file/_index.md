@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-image-to-existing-pdf-file/
 description: Learn how to add images to existing PDF files in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 TechArticle: true
 AlternativeHeadline: Add images to existing PDF files with Java
 Abstract: This article shows how to add images to PDF documents using Aspose.PDF for Java. It covers placing an image at fixed coordinates, adding images through low-level page operators, setting alternative text for accessibility, and embedding image data with Flate compression.
@@ -14,10 +14,10 @@ Aspose.PDF for Java supports both high-level image placement and low-level opera
 
 ## Add an image at a fixed rectangle
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Place the image in the target rectangle on the page.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Place the image in the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) on the page.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addImage(Path imageFile, Path outputFile) {
@@ -35,13 +35,13 @@ public static void addImage(Path imageFile, Path outputFile) {
 
 ## Set alternative text for an image
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Place the image in the target rectangle on the page.
-1. Set the page size required by the example.
-1. Get the inserted image resource and set its alternative text.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Set the required [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) size.
+1. Place the image in the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) on the page.
 1. Access the image resources on the target page.
-1. Save the output PDF document.
+1. Get the inserted [XImage](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/ximage/) resource and set its alternative text.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addImageSetAlternativeTextForImage(Path imageFile, Path outputFile) {

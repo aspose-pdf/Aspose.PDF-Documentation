@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/digitally-sign-pdf-file/
 description: Learn how to digitally sign and certify PDF documents in Java using Aspose.PDF.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Aspose.PDF for Java supports multiple signing flows through `PdfFileSignature`.
 
 ## Sign a PDF with a certificate object
 
-1. Create a PdfFileSignature facade and bind the source PDF document.
-1. Create the signature object and configure the signing options.
-1. Apply the signature to the PDF document.
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Create the [PKCS7](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pkcs7/) signature object and configure the signing options.
+1. Apply the signature to the PDF document through [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Save the updated PDF document.
 
 ```java
@@ -39,9 +39,9 @@ This approach builds a `PKCS7` signature object first and then applies it to pag
 
 ## Sign a PDF with basic certificate parameters
 
-1. Create a PdfFileSignature facade and bind the source PDF document.
-1. Create the signature object and configure the signing options.
-1. Apply the signature to the PDF document.
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Configure the certificate parameters required by the signing example.
+1. Apply the signature to the PDF document through [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Save the updated PDF document.
 
 ```java
@@ -62,9 +62,9 @@ public static void signPdfWithBasicParameters(Path inputFile, Path certificateFi
 
 Use a document modification detection and prevention signature when you need certification-level restrictions:
 
-1. Create a PdfFileSignature facade and bind the source PDF document.
-1. Create the signature object and configure the signing options.
-1. Save the updated PDF document.
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Create the [DocMDPSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/docmdpsignature/) object and configure the [DocMDPAccessPermissions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/docmdpaccesspermissions/) signing options.
+1. Apply the certification signature and save the updated PDF document.
 
 ```java
 public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/merge-pdf-documents/
 description: Learn how to merge multiple PDF files into a single document in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,8 +17,9 @@ Aspose.PDF for Java supports several merge strategies depending on how the outpu
 
 ## Merge two PDF documents
 
-1. Add the configured object to the document structure.
-1. Save the updated PDF document.
+1. Open both source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) objects.
+1. Add the [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) collection from the second document to the first document.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {

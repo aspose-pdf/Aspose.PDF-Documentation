@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/extracting-table/
 description: Learn how to extract table data from existing PDF documents in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,10 @@ Use `TableAbsorber` when you need to detect table structures in an existing PDF 
 
 ## Extract table data from an existing PDF
 
-1. Open the source PDF document.
-1. Create a TableAbsorber and visit the target page or document.
-1. Read the extracted text fragments and output the collected table content.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit each target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Iterate through each detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedrow/), and [AbsorbedCell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedcell/).
+1. Read the extracted [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) values and output the collected table content.
 
 ```java
 public static void extract(Path inputFile) {

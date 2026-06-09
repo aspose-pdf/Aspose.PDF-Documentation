@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/floating-box/
 description: Learn how to use FloatingBox for text layout, multi-column content, and precise positioning in PDF documents with Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -15,11 +15,11 @@ Abstract: This article explains how to use FloatingBox in Aspose.PDF for Java. I
 ---
 ## Create and add a simple floating box
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Create a text fragment and add it to the page.
-1. Create the floating box and add the required text content.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create the [FloatingBox](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/floatingbox/) and configure its layout and border settings.
+1. Add the required [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) content to the [FloatingBox](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/floatingbox/).
+1. Add the [FloatingBox](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/floatingbox/) to the page and save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createAndAddFloatingBox(Path outputFile) {

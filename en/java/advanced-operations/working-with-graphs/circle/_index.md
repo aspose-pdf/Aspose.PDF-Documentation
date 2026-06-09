@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-circle/
 description: Learn how to draw and fill circle shapes in PDF files in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,13 +15,13 @@ Abstract: This article shows how to add circle shapes to PDF documents using Asp
 ---
 ## Add a circle outline
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Create a Graph container and add it to the page.
-1. Create the circle shape and configure its geometry.
-1. Add the shape to the Graph container.
-1. Set the annotation or object properties required by the example.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create a [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
+1. Create the [Circle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/circle/) shape and configure its geometry.
+1. Add the [Circle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/circle/) to the [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container.
+1. Set the shape properties required by the example, including [Color](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/color/).
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addCircle(Path outputFile) {
@@ -42,13 +42,13 @@ public static void addCircle(Path outputFile) {
 
 ## Add a filled circle with text
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Create a Graph container and add it to the page.
-1. Create the circle shape and configure its geometry.
-1. Add the shape to the Graph container.
-1. Set the annotation or object properties required by the example.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create a [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
+1. Create the [Circle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/circle/) shape and configure its geometry.
+1. Add the [Circle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/circle/) to the [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container.
+1. Set the shape properties required by the example, including [Color](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/color/) and [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/).
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addCircleFilled(Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/adding-tables/
 description: Learn how to add and configure tables in existing PDF documents in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,11 @@ Aspose.PDF for Java provides a rich `Table` API for building tables with layout 
 
 ## Create a simple table
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Create the table object and configure its basic formatting.
-1. Add rows and cells to build the table content.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create the [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) object and configure its basic formatting.
+1. Add [Row](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/row/) and [Cell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/cell/) objects to build the table content.
+1. Add the [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) to the page and save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createTable(Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/optimize-pdf/
 description: Learn how to optimize, compress, and reduce PDF file size in Java using Aspose.PDF.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Aspose.PDF for Java exposes optimization features through `Document.optimize`, `
 
 ## Optimize a PDF and reduce resources
 
-1. Open the source PDF document.
-1. Optimize the PDF document.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Optimize the PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void optimizePdf(Path inputFile, Path outputFile) throws Exception {
@@ -34,10 +34,10 @@ public static void optimizePdf(Path inputFile, Path outputFile) throws Exception
 
 ## Compress images and remove unused data
 
-1. Open the source PDF document.
-1. Configure optimization options and optimize the document resources.
-1. Set the properties required by the example.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.optimization/optimizationoptions/) and configure resource optimization for the document.
+1. Set the image-compression and cleanup properties required by the example.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void shrinkingOrCompressingAllImages(Path inputFile, Path outputFile) throws Exception {

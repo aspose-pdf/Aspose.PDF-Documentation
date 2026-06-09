@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-backgrounds/
 description: Learn how to add a background image or background color to PDF pages in Java using `BackgroundArtifact` with Aspose.PDF.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,10 +15,10 @@ Abstract: This article explains how to add or remove PDF page backgrounds in Jav
 ---
 ## Add a background image to a PDF page
 
-1. Open the source PDF document.
-1. Create the required artifact and configure its appearance.
-1. Add the artifact to the target page.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the required [BackgroundArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/backgroundartifact/) and configure its appearance.
+1. Add the [BackgroundArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/backgroundartifact/) to the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -34,11 +34,11 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 
 ## Add a background image with opacity
 
-1. Open the source PDF document.
-1. Set the annotation or object properties required by the example.
-1. Create the required artifact and configure its appearance.
-1. Add the artifact to the target page.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the required [BackgroundArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/backgroundartifact/) and set the properties required by the example.
+1. Configure the [BackgroundArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/backgroundartifact/) appearance, including opacity.
+1. Add the artifact to the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path imageFile, Path outputFile)

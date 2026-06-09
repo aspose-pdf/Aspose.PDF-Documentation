@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/sign-pdf-document-from-smart-card/
 description: Review the current Java example coverage for certificate-based PDF signing in Aspose.PDF.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,17 +17,18 @@ The current Java repository does not include a dedicated source-backed smart-car
 
 ## Sign a PDF document from a smart card
 
-1. Open the source PDF document.
-1. Create a PdfFileSignature facade and bind the source PDF document.
-1. Create the signature object and configure the signing options.
-1. Apply the signature to the PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Retrieve the local certificate and create the required [ExternalSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/externalsignature/).
+1. Configure the visual signature appearance and the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/).
+1. Apply the signature to the PDF document through [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Save the updated PDF document.
-1. Bind the loaded document to the signature facade with `bindPdf(...)`.
+1. Bind the loaded document to the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade with `bindPdf(...)`.
 1. Retrieve the local certificate that represents the smart-card credential by calling `getLocalCertificate()`.
 1. Check whether a certificate was found. If not, save the unchanged output file and stop the workflow.
-1. Create an `ExternalSignature` from the selected certificate.
+1. Create an [ExternalSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/externalsignature/) from the selected certificate.
 1. Set the visual signature appearance image with `setSignatureAppearance(...)`.
-1. Call `sign(...)` with the target page, reason, contact, location, visibility flag, signature rectangle, and external signature object.
+1. Call `sign(...)` with the target page, reason, contact, location, visibility flag, signature [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/), and external signature object.
 1. Save the signed PDF to the output path.
 
 ```java

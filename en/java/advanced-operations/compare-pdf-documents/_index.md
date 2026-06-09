@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /java/compare-pdf-documents/
 description: Learn how to compare PDF documents in Java using side-by-side and graphical difference output with Aspose.PDF.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Aspose.PDF for Java provides both side-by-side and graphical comparison APIs for
 
 Use `GraphicalPdfComparer.getDifference` when you need image-based output for a specific page pair:
 
-1. Run the comparison operation with the required options.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) objects and run `GraphicalPdfComparer.getDifference` for the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) pair.
 
 ```java
 public static void comparePdfWithGetDifferenceMethod(
@@ -45,9 +45,9 @@ This method creates a highlighted difference image and also saves the destinatio
 
 If you need a PDF report for selected pages, use `SideBySidePdfComparer.compare` with page objects:
 
-1. Run the comparison operation with the required options.
-1. Compare the input PDF documents and capture the result.
-1. Set the properties required by the example.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) objects and create the `SideBySideComparisonOptions` required by the example.
+1. Compare the input [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) objects with `SideBySidePdfComparer.compare` and capture the result.
+1. Set the comparison properties required by the example, including `ComparisonMode`.
 
 ```java
 public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path outputFile) {
@@ -70,9 +70,9 @@ public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path
 
 The graphical comparer can generate a PDF output that highlights differences across the documents:
 
-1. Set the annotation or object properties required by the example.
-1. Run the comparison operation with the required options.
-1. Set the properties required by the example.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) objects and create the `GraphicalPdfComparer`.
+1. Set the comparison properties required by the example, including [Color](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/color/) and [Resolution](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.devices/resolution/).
+1. Run `compareDocumentsToPdf` and save the graphical comparison output.
 
 ```java
 public static void comparePdfWithCompareDocumentsToPdfMethod(
@@ -92,9 +92,9 @@ public static void comparePdfWithCompareDocumentsToPdfMethod(
 
 To compare all pages with side-by-side markup, pass complete `Document` objects:
 
-1. Run the comparison operation with the required options.
-1. Compare the input PDF documents and capture the result.
-1. Set the properties required by the example.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) objects and create the `SideBySideComparisonOptions` required by the example.
+1. Compare the input PDF documents with `SideBySidePdfComparer.compare` and capture the result.
+1. Set the comparison properties required by the example, including `ComparisonMode`.
 
 ```java
 public static void comparingEntireDocuments(Path inputFile1, Path inputFile2, Path outputFile) {

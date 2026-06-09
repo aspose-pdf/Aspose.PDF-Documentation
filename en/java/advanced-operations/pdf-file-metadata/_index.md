@@ -5,7 +5,7 @@ type: docs
 weight: 200
 url: /java/pdf-file-metadata/
 description: Learn how to extract, update, and manage PDF file metadata, document information, and XMP properties in Java using Aspose.PDF.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -22,9 +22,9 @@ Aspose.PDF for Java provides two main ways to work with metadata:
 
 Use `DocumentInfo` when you need standard document properties such as author, title, subject, and dates:
 
-1. Open the source PDF document.
-1. Read or update the document metadata properties.
-1. Read the returned values or continue with your next processing step.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Read or update the [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) metadata properties.
+1. Read the returned values from [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) or continue with your next processing step.
 
 ```java
 public static void getPdfFileInformation(Path inputFile) {
@@ -45,10 +45,10 @@ public static void getPdfFileInformation(Path inputFile) {
 
 The `setFileInformation` example updates standard info fields and saves the modified PDF:
 
-1. Open the source PDF document.
-1. Set the annotation or object properties required by the example.
-1. Read or update the document metadata properties.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) object.
+1. Set the metadata properties required by the example.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void setFileInformation(Path inputFile, Path outputFile) {
@@ -74,10 +74,10 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 
 The metadata collection also supports namespaced XMP entries:
 
-1. Open the source PDF document.
-1. Set the properties required by the example.
-1. Add the configured object to the document structure.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the [Metadata](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/metadata/) collection.
+1. Set the properties required by the example, including namespace registration and XMP items.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void setPrefixMetadata(Path inputFile, Path outputFile) {
@@ -102,7 +102,8 @@ The related `setXmpMetadata` example adds fields such as `xmp:CreateDate`, `xmp:
 
 For example, `getPdfMetadata` reads standard fields and checks whether the file is encrypted or a portfolio:
 
-1. Configure the portfolio collection required by the example.
+1. Open the source PDF with [PdfFileInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffileinfo/).
+1. Read the returned metadata, encryption, and portfolio values from [PdfFileInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffileinfo/).
 
 ```java
 public static void getPdfMetadata(Path inputFile) {

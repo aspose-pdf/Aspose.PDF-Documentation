@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/rotate-text-inside-pdf/
 description: Learn how to rotate text fragments and paragraphs inside PDF documents in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,11 +15,12 @@ Abstract: This article explains how to rotate text in PDF documents using Aspose
 ---
 ## Rotate individual text fragments
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Create the required text objects and add them to the page.
-1. Set the required text formatting options.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create the required [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) and set its position.
+1. Set the required text rotation on the fragment.
+1. Use [TextBuilder](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textbuilder/) to add the fragment to the page.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void rotateTextInsidePdf1(Path outputFile) {

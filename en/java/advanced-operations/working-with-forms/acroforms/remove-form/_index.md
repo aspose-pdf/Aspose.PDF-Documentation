@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/remove-form/
 description: Remove form objects from PDF pages using Aspose.PDF for Java, including full cleanup and targeted deletion.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,8 +17,9 @@ These examples remove form resources from a page rather than just changing field
 
 ## Remove all forms from a page
 
-1. Open the source PDF document.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the [XFormCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xformcollection/) for the target page and clear it.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) {
@@ -32,10 +33,10 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 
 ## Remove specific form resources
 
-1. Open the source PDF document.
-1. Delete the required page range from the document.
-1. Add the configured object to the document structure.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the [XFormCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xformcollection/) for the target page.
+1. Filter the [XForm](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xform/) resources you want to remove and delete them from the collection.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void removeSpecifiedForm(Path inputFile, int pageNum, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/pdf-tooltip/
 description: Learn how to add tooltips to text fragments in PDF documents in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,10 +15,11 @@ Abstract: This article shows how to add interactive help to PDF text using Aspos
 ---
 ## Add tooltips to searched text
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Create a TextFragmentAbsorber and search for the target text.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) with the target [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/).
+1. Save the initial PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and reopen it.
+1. Create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragmentabsorber/) and search for the target text.
+1. Create a [ButtonField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/buttonfield/) for each matched fragment and add it to the document form.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addToolTipToSearchedText(Path outputFile) {

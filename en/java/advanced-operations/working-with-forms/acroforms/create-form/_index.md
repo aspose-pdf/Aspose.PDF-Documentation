@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-form/
 description: Create AcroForm fields from scratch in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,10 +17,10 @@ Aspose.PDF for Java lets you create a wide range of AcroForm field types from sc
 
 ## Add a text box field
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Get the target text field and set its default font appearance.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create the target [TextBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textboxfield/) and set its [DefaultAppearance](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/defaultappearance/).
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addTextBoxField(Path outputFile) {

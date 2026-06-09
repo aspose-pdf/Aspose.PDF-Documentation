@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-bates-numbering/
 description: Learn how to add and remove Bates numbering in PDF documents using Java with Aspose.PDF.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,8 +16,8 @@ Abstract: This article explains how to create and remove Bates numbering artifac
 ## Create a Bates numbering artifact
 
 1. Create the required artifact and configure its appearance.
-1. Create the Bates numbering artifact and set its formatting.
-1. Set the properties required by the example.
+1. Create the `BatesNArtifact` and set its formatting.
+1. Set the properties required by the example, including alignment and numbering settings.
 
 ```java
 public static BatesNArtifact createBatesArtifact() {
@@ -41,13 +41,12 @@ public static BatesNArtifact createBatesArtifact() {
 
 ## Add or remove Bates numbering
 
-1. Open the source PDF document.
-1. Add a page to the document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) items to the document.
 1. Create the required artifact and configure its appearance.
-1. Create the Bates numbering artifact and set its formatting.
-1. Save the updated PDF document.
-shown in the example.
-1. Save the updated PDF document.
+1. Create the `BatesNArtifact` and set its formatting.
+1. Apply the Bates numbering artifact to the document pages or remove existing Bates numbering, as shown in the example.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addBatesNArtifact(Path inputFile, Path outputFile) {

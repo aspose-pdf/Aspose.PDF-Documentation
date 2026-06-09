@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/add-headers-and-footers-of-pdf-file/
 description: Learn how to add headers and footers to PDF files in Java using text, images, and structured content.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,11 @@ Aspose.PDF for Java lets you assign `HeaderFooter` objects to each page and popu
 
 ## Add text headers and footers
 
-1. Open the source PDF document.
-1. Create a text fragment and add it to the page.
-1. Set the properties required by the example.
-1. Add the configured object to the document structure.
-1. Save the updated PDF document.
+1. Create the required [HeaderFooter](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/headerfooter/) objects.
+1. Add the required [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) content to each header and footer.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Assign the configured [HeaderFooter](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/headerfooter/) objects to each [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {

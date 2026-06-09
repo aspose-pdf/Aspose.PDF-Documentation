@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/working-with-vector-graphics/
 description: Learn how to extract, move, remove, copy, and export vector graphics in PDF documents using Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,7 +17,10 @@ Aspose.PDF for Java exposes vector content through `GraphicsAbsorber` and `Graph
 
 ## Inspect vector graphics on a page
 
-1. Open the source PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Create the [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the page.
+1. Inspect the returned [GraphicElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicelement/) objects and read their properties.
 
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {
@@ -41,9 +44,10 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 
 ## Move vector graphics
 
-1. Open the source PDF document.
-1. Set the properties required by the example.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and visit it with [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicsabsorber/).
+1. Update the position of each [GraphicElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicelement/) using a new [Point](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/point/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void moveGraphics(Path inputFile, Path outputFile) {

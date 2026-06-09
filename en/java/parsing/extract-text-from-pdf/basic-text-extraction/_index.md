@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/basic-text-extraction/
 description: Learn how to extract text from PDF documents in Java with Aspose.PDF from all pages, from a specific page, or by paragraph structure.
-lastmod: "2026-06-04"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,9 +14,9 @@ sitemap:
 
 Use `TextAbsorber` to capture text from the whole document and write it to a file.
 
-1. Open the source PDF document.
-1. Create a `TextAbsorber`.
-1. Visit all pages in the document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/).
+1. Visit all [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) objects in the document.
 1. Write the extracted text to the output file.
 
 ```java
@@ -33,9 +33,9 @@ public static void extractTextFromAllPages(Path inputFile, Path outputFile) thro
 
 Apply the absorber only to the page you need.
 
-1. Open the source PDF document.
-1. Create a `TextAbsorber`.
-1. Visit the target page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/).
+1. Visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
 1. Write the extracted text to the output file.
 
 ```java
@@ -52,9 +52,9 @@ public static void extractTextFromPage(Path inputFile, Path outputFile, int page
 
 Use `ParagraphAbsorber` when you need page, section, and paragraph grouping instead of a flat text stream.
 
-1. Open the source PDF document.
-1. Create a `ParagraphAbsorber` and visit the document.
-1. Iterate through the page markups, sections, paragraphs, lines, and text fragments.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [ParagraphAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/paragraphabsorber/) and visit the document.
+1. Iterate through the page markups, sections, paragraphs, lines, and [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) objects.
 1. Build the output text with page, section, and paragraph information.
 1. Write the extracted paragraph text to the output file.
 

@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/artifacts-header-footer/
 description: Learn how to add and remove header and footer artifacts in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,11 +15,9 @@ Abstract: This article explains how to manage header and footer artifacts in PDF
 ---
 ## Create reusable header and footer artifacts
 
-1. Set the required text formatting options.
-1. Create the required artifact and configure its appearance.
-1. Set the properties required by the example.
-t and configure its appearance.
-1. Set the properties required by the example.
+1. Set the required [TextState](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textstate/) formatting options.
+1. Create the required [HeaderArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/headerartifact/) or [FooterArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/footerartifact/) and configure its appearance.
+1. Set the properties required by the example, including [HorizontalAlignment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/horizontalalignment/).
 
 ```java
 public static HeaderArtifact createHeaderArtifact(String text) {

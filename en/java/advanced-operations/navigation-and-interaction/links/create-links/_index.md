@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-links/
 description: Learn how to create internal, external, and remote PDF links in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,12 +17,12 @@ Aspose.PDF for Java uses `LinkAnnotation` together with an action object to defi
 
 ## Create a page navigation link
 
-1. Open the source PDF document.
-1. Create the link annotation and configure its action.
-1. Set the annotation or object properties required by the example.
-1. Add the annotation to the target page.
-1. Create the required action and assign it to the target object.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Set the annotation properties required by the example, including the [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/), [Border](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/border/), and [Color](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/color/).
+1. Create the required [GoToAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotoaction/) and assign it to the target [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/).
+1. Add the annotation to the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {

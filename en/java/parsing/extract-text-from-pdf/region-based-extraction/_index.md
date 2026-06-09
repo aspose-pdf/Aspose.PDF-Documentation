@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/region-based-extraction/
 description: Learn how to extract text from a specific page region or inspect paragraph geometry in PDF documents with Aspose.PDF for Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,11 +14,11 @@ sitemap:
 
 Use `TextSearchOptions` with a `Rectangle` to restrict extraction to a defined area on a page.
 
-1. Open the source PDF document.
-1. Create a `TextAbsorber`.
-1. Create text search options for the target rectangle and limit extraction to page bounds.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/).
+1. Create [TextSearchOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textsearchoptions/) for the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) and limit extraction to page bounds.
 1. Apply the search options to the absorber.
-1. Visit the target page and write the extracted text to the output file.
+1. Visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and write the extracted text to the output file.
 
 ```java
 public static void extractTextFromRegion(Path inputFile, Path outputFile, int pageNumber, Rectangle rectangle)
@@ -38,8 +38,8 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 
 Use `ParagraphAbsorber` to inspect section rectangles and paragraph polygons together with the extracted text.
 
-1. Open the source PDF document.
-1. Create a `ParagraphAbsorber` and visit the target page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [ParagraphAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/paragraphabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
 1. Get the page markup from the absorber results.
 1. Iterate through the sections and paragraphs and read their geometry information.
 1. Build the output text with rectangles, polygons, and extracted paragraph text.

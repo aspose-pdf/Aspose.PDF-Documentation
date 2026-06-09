@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-links/
 description: Learn how to extract link annotations and hyperlinks from PDF documents in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ You can inspect PDF links by iterating over page annotations and filtering for `
 
 ## Extract link annotations
 
-1. Open the source PDF document.
-1. Create the link annotation and configure its action.
-1. Read or iterate through the annotations on the target page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Filter for [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) items whose [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/) is `Link`.
 1. Write the extracted output or inspect the returned values.
 
 ```java
@@ -38,9 +38,9 @@ public static void extractLinkAnnotation(Path inputFile) {
 
 ## Extract hyperlink targets
 
-1. Open the source PDF document.
-1. Create the link annotation and configure its action.
-1. Read or iterate through the annotations on the target page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Filter for [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) items and inspect their [GoToURIAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotouriaction/).
 1. Write the extracted output or inspect the returned values.
 
 ```java

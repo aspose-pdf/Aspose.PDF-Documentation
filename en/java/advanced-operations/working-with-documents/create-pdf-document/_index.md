@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-pdf-document/
 description: Learn how to create PDF files and build searchable PDFs in Java using Aspose.PDF.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,10 +17,10 @@ Aspose.PDF for Java supports both simple document creation and OCR-assisted sear
 
 ## Create a new PDF document
 
-1. Create a new PDF document.
-1. Add a page to the document.
-1. Create a text fragment and add it to the page.
-1. Save the output PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create a [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) and add it to the page.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createNewDocument(Path outputFile) {
@@ -36,9 +36,9 @@ public static void createNewDocument(Path outputFile) {
 
 The `createSearchablePdf` example uses `Document.convert(...)` with a `CallBackGetHocr` implementation. The callback writes the source image to a temporary file, invokes Tesseract with the `hocr` option, reads the generated HOCR markup, and returns it to Aspose.PDF:
 
-1. Open the source PDF document.
-1. Create the HOCR callback and convert the source document to searchable PDF content.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the `CallBackGetHocr` callback and convert the source document to searchable PDF content.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void createSearchablePdf(Path inputFile, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/get-update-and-expand-bookmark/
 description: Learn how to retrieve, update, and expand bookmarks in PDF documents using Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Aspose.PDF for Java exposes bookmarks through both the document outline model an
 
 ## Get bookmark properties
 
-1. Open the source PDF document.
-1. Create or access the bookmark collection.
-1. Read the returned values or continue with your next processing step.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create or access the bookmark [OutlineItemCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/outlineitemcollection/).
+1. Read the returned values from the [OutlineItemCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/outlineitemcollection/) or continue with your next processing step.
 
 ```java
 public static void getBookmarks(Path inputFile) {
@@ -41,10 +41,10 @@ public static void getBookmarks(Path inputFile) {
 
 ## Update a bookmark
 
-1. Open the source PDF document.
-1. Set the annotation or object properties required by the example.
-1. Create or access the bookmark collection.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create or access the bookmark [OutlineItemCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/outlineitemcollection/).
+1. Set the bookmark properties required by the example.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void updateBookmarks(Path inputFile, Path outputFile) {
@@ -62,10 +62,10 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 
 ## Expand bookmarks when the document opens
 
-1. Open the source PDF document.
-1. Create or access the bookmark collection.
-1. Set the properties required by the example.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create or access the bookmark [OutlineItemCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/outlineitemcollection/).
+1. Set the properties required by the example, including [PageMode](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pagemode/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void expandedBookmarks(Path inputFile, Path outputFile) {

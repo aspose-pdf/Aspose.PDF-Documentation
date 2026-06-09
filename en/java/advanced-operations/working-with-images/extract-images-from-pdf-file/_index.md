@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-images-from-pdf-file/
 description: Learn how to extract embedded images from PDF files in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 TechArticle: true
 AlternativeHeadline: Extract images from PDF files with Java
 Abstract: This article shows how to extract images from PDF documents using Aspose.PDF for Java. It covers saving a specific image resource from a page and exporting images that fall inside a selected rectangular region.
@@ -14,10 +14,10 @@ Aspose.PDF for Java supports direct image-resource extraction and placement-base
 
 ## Extract a single embedded image
 
-1. Open the source PDF document.
-1. Access the image resources on the target page.
-1. Save the updated PDF document.
-1. Write the extracted output or inspect the returned values.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the image resources on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Get the target [XImage](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/ximage/) resource.
+1. Write the extracted image output.
 
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {
@@ -31,10 +31,11 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 
 ## Extract images from a specific region
 
-1. Open the source PDF document.
-1. Create an ImagePlacementAbsorber and visit the target page.
-1. Save the updated PDF document.
-1. Write the extracted output or inspect the returned values.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) region.
+1. Create an [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Check each [ImagePlacement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacement/) against the region using [Point](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/point/) coordinates.
+1. Write each matching extracted image output.
 
 ```java
 public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {

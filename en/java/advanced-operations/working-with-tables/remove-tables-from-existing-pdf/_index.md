@@ -2,7 +2,7 @@
 title: Remove Tables from Existing PDF Documents
 linktitle: Remove Tables
 description: Learn how to remove one or more tables from existing PDF documents in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 type: docs
 weight: 50
 url: /java/removing-tables/
@@ -15,10 +15,10 @@ Abstract: This article explains how to remove tables from existing PDF documents
 ---
 ## Remove one table
 
-1. Open the source PDF document.
-1. Create a TableAbsorber and visit the target page or document.
-1. Remove the extracted table from the page.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Remove the target [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) from the page.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void removeOneTable(Path inputFile, Path outputFile) {
@@ -33,10 +33,10 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 
 ## Remove all tables
 
-1. Open the source PDF document.
-1. Create a TableAbsorber and visit the target page or document.
-1. Remove the extracted table from the page.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Iterate through the detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) objects and remove each one.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void removeAllTables(Path inputFile, Path outputFile) {

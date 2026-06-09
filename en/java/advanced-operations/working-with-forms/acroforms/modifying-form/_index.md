@@ -5,7 +5,7 @@ type: docs
 weight: 45
 url: /java/modifying-form/
 description: Modify AcroForm fields in PDF documents using Aspose.PDF for Java, including clearing text, setting limits, styling fields, and removing fields.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,10 +17,10 @@ Form maintenance often involves both field-level edits and cleanup of form-relat
 
 ## Clear text from a Typewriter form
 
-1. Open the source PDF document.
-1. Create a TextFragmentAbsorber and visit the Typewriter form resources.
-1. Iterate through the found text fragments and clear their text values.
-1. Save the updated PDF document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Iterate through the [XForm](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xform/) resources and create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragmentabsorber/) for the Typewriter form resources.
+1. Iterate through the found [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) items and clear their text values.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void clearTextInForm(Path inputFile, Path outputFile) {
@@ -46,10 +46,10 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 
 ## Change form field font appearance
 
-1. Open the source PDF document.
-1. Get the target text field and set its default font appearance.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get the target [Field](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/field/) and set its [DefaultAppearance](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/defaultappearance/).
 1. Set the properties required by the example.
-1. Save the updated PDF document.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void setFormFieldFont(Path inputFile, Path outputFile) {

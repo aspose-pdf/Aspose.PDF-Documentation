@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/attach-zugferd/
 description: Learn how to attach ZUGFeRD invoice XML to a PDF and convert it to PDF/A-3A in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,12 +17,12 @@ Use the `Document` and `FileSpecification` APIs when you need to package invoice
 
 ## Attach ZUGFeRD invoice XML to a PDF
 
-1. Open the source PDF document.
-1. Create a FileSpecification for the file that will be attached.
-1. Add or access the embedded file collection.
-1. Attach the XML invoice file with the required ZUGFeRD relationship metadata.
-1. Save the updated PDF document.
-1. Set the embedded file metadata, attach it to the PDF, and convert the document to `PDF_A_3A`.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/) for the XML invoice file.
+1. Set the embedded file metadata, including MIME type and [AFRelationship](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/afrelationship/).
+1. Add the [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/) to the document embedded file collection.
+1. Convert the document to [PdfFormat](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {

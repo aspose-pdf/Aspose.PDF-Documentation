@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/fill-form/
 description: Fill AcroForm fields in a PDF document using Aspose.PDF for Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ The `Form` facade can be used to automate field population in an existing AcroFo
 
 ## Fill AcroForm fields with new values
 
-1. Open the PDF form document with the Form facade.
-1. Save the updated PDF document.
+1. Open the PDF form document with the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade.
 1. Iterate through the form fields and update the matching entries with the provided values.
+1. Save the updated PDF document.
 
 ```java
 public static void fillForm(Path inputFile, Path outputFile) {

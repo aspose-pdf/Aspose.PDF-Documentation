@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/page-stamps-in-the-pdf-file/
 description: Learn how to add PDF page stamps as overlays or backgrounds in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,11 +15,11 @@ Abstract: This article explains how to add a page stamp to a PDF document using 
 ---
 ## Add a PDF page as a stamp
 
-1. Open the source PDF document.
-1. Set the properties required by the example.
-1. Add the configured object to the document structure.
-1. Save the updated PDF document.
-1. Create the `PdfPageStamp`, configure its placement options, and add it to the target page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the [PdfPageStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfpagestamp/) object from the source PDF page.
+1. Configure the required [PdfPageStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfpagestamp/) placement options.
+1. Add the configured stamp to the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
 public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/extract-image-and-signature-information/
 description: Learn how to extract certificate and digital signature details from PDF files in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Use `PdfFileSignature` to inspect and manage signatures that already exist in a 
 
 ## Read signature information
 
-1. Create a PdfFileSignature facade and bind the source PDF document.
-1. Create the signature object and configure the signing options.
-1. Read and verify the signature information from the document.
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Access the document signature name and configure the signature-inspection flow required by the example.
+1. Read and verify the signature information from the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade.
 1. Read the returned values or continue with your next processing step.
 
 ```java
@@ -41,9 +41,9 @@ public static void getSignatureInformation(Path inputFile) {
 
 ## Verify a signature
 
-1. Create a PdfFileSignature facade and bind the source PDF document.
-1. Create the signature object and configure the signing options.
-1. Read and verify the signature information from the document.
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Access the document signature name and configure the verification flow required by the example.
+1. Read and verify the signature information from the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade.
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {
@@ -63,9 +63,9 @@ public static void verifyPdfSignature(Path inputFile) {
 
 ## Extract the signing certificate
 
-1. Create a PdfFileSignature facade and bind the source PDF document.
-1. Create the signature object and configure the signing options.
-1. Write the extracted output or inspect the returned values.
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Access the document signature name required for certificate extraction.
+1. Write the extracted output or inspect the returned values from the [PdfFileSignature](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesignature/) facade.
 
 ```java
 public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {

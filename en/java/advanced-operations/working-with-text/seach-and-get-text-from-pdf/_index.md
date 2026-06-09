@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/search-and-get-text-from-pdf/
 description: Learn how to search, inspect, and extract text from PDF documents in Java.
-lastmod: "2026-06-04"
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,8 +17,9 @@ Aspose.PDF for Java provides multiple search models depending on whether you nee
 
 ## Search text with `TextAbsorber`
 
-1. Open the source PDF document.
-1. Configure the text search options required by the example.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Configure the required [TextExtractionOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textextractionoptions/) and [TextSearchOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textsearchoptions/), including the search [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/).
+1. Create the [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/) with those options and search the document pages.
 1. Process the matched results returned by the search.
 
 ```java
