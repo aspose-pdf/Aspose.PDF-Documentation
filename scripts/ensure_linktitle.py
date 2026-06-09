@@ -1,9 +1,9 @@
 """
-Populate missing `linktitle` front matter fields in Markdown files under `en/java`.
+Populate missing `linktitle` front matter fields in Markdown files.
 
 Usage:
-    python scripts/ensure_java_linktitle.py
-    python scripts/ensure_java_linktitle.py --root en/java --dry-run
+    python scripts/ensure_linktitle.py
+    python scripts/ensure_linktitle.py --root en/java --dry-run
 """
 
 from __future__ import annotations
