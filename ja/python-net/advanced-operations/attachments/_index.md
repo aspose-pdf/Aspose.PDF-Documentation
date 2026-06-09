@@ -1,86 +1,28 @@
 ---
-title: PythonでPDFの添付ファイルを操作する
+title: Python で PDF 添付ファイルを操作する
 linktitle: 添付ファイルの操作
 type: docs
 weight: 130
 url: /ja/python-net/attachments/
-description: アプリケーション内でPythonを使用して、PDFファイルの添付ファイルにアクセス、追加、削除するためのPython PDF APIを使用します。Pythonコードサンプルを含む完全なガイド。
-lastmod: "2023-02-17"
+description: .NET 経由の Aspose.PDF for Python を使用して、埋め込みファイルや PDF ポートフォリオを含む PDF 添付ファイルを追加、抽出、整理、削除する方法を学びましょう。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python で PDF の添付ファイルとポートフォリオを追加、削除、管理する
+Abstract: この記事では、.NET 経由で Aspose.PDF for Python で PDF 添付ファイルを操作する方法について説明します。PDF ドキュメントに埋め込まれたファイルを追加する方法、添付ファイルをプログラムで削除する方法、および複数のファイルタイプを 1 つの PDF コンテナにまとめた PDF ポートフォリオを作成または管理する方法について説明します。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PythonでPDFの添付ファイルを操作する",
-    "alternativeHeadline": "PDFファイルの添付ファイル",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, attachments in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/attachments/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/attachments/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "アプリケーション内でPythonを使用して、PDFファイルの添付ファイルにアクセス、追加、削除するためのPython PDF APIを使用します。Pythonコードサンプルを含む完全なガイド。"
-}
-</script>
 
+このセクションでは、.NET 経由で Aspose.PDF for Python を使用して PDF 内の添付ファイルを操作する方法について説明します。
+添付ファイルは、親ドキュメントに添付される追加ファイルで、PDF、Word、画像、その他のファイルなど、さまざまなファイルタイプを使用できます。
+PDF に添付ファイルを追加する方法、添付ファイルの情報を取得する方法、ファイルに保存する方法、Python を使用してプログラムで PDF から添付ファイルを削除する方法を学習します。
 
-このセクションでは、Aspose.PDF for Python via .NET を使用して PDF 内の添付ファイルを操作する方法を説明します。
-添付ファイルとは、親ドキュメントに添付される追加のファイルであり、pdf、word、画像、その他のファイルなど、さまざまなファイルタイプが考えられます。
-PDF に添付ファイルを追加する方法、添付ファイルの情報を取得してファイルに保存する方法、Python を使用してプログラムで PDF から添付ファイルを削除する方法を学びます。
+これらの記事は、PDF へのサポートファイルの埋め込み、既存の文書からの埋め込みファイルの削除、または関連資料を PDF ポートフォリオとしてまとめてパッケージ化する必要がある場合に役立ちます。
 
-- [PDF ドキュメントに添付ファイルを追加する](/pdf/ja/python-net/add-attachment-to-pdf-document/)
-- [既存の PDF から添付ファイルを削除する](/pdf/ja/python-net/removing-attachment-from-an-existing-pdf/)
+## このセクションで説明する添付ワークフロー
+
+- [PDF ドキュメントへの添付ファイルの追加](/pdf/ja/python-net/add-attachment-to-pdf-document/)
+- [既存の PDF からの添付ファイルの削除](/pdf/ja/python-net/removing-attachment-from-an-existing-pdf/)
 - [ポートフォリオ](/pdf/ja/python-net/portfolio/)
+- [添付ファイルを抽出](/pdf/ja/python-net/extract-attachment/)

@@ -1,177 +1,185 @@
 ---
-title: PDFをEPUB、LaTeX、Text、XPSに変換するPython
-linktitle: PDFを他の形式に変換
+title: Python で PDF を EPUB、テキスト、XPS などに変換する方法
+linktitle: PDF を他の形式に変換
 type: docs
 weight: 90
 url: /ja/python-net/convert-pdf-to-other-files/
-lastmod: "2022-12-23"
-description: このトピックでは、Pythonを使用してPDFファイルをEPUB、LaTeX、Text、XPSなどの他のファイル形式に変換する方法を示します。
+lastmod: "2026-06-09"
+description: .NET 経由で Aspose.PDF for Python を使用して、PDF ファイルを Python で EPUB、LaTeX、Markdown、テキスト、XPS、MobiXML に変換する方法を学びましょう。
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: Python でPDFを他のフォーマットに変換する方法
+Abstract: この記事では、Aspose.PDF for Python を使用して PDF ファイルをさまざまな形式に変換するための包括的なガイドを提供しています。PDF から EPUB、ラテックス/テックス、テキスト、XPS、および XML 形式への変換について説明しています。各セクションの冒頭には、PDFをそれぞれの形式に変換するためのAsposeが提供するオンラインアプリケーションを試すための招待状があり、これらのツールの使いやすさと品質が強調されています。
 ---
 
-## PDFをEPUBに変換
+## PDF ファイルを EPUB に変換
 
 {{% alert color="success" %}}
-**PDFをEPUBにオンラインで変換してみる**
+**オンラインでPDFをEPUBに変換してみてください**
 
-Aspose.PDF for Pythonは、オンラインで無料のアプリケーション["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub)を提供しており、その機能と品質を調査することができます。
+Python 用の Aspose.PDF はオンラインアプリケーションを提供します [「PDF から EPUB へ」](https://products.aspose.app/pdf/conversion/pdf-to-epub)ここで、機能や動作品質を調べてみるといいかもしれません。
 
-[![Aspose.PDF Convertion PDF to EPUB with Free App](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
+[![Aspose.PDF アプリで PDF を EPUB に変換](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
 
-**<abbr title="Electronic Publication">EPUB</abbr>**は、国際デジタル出版フォーラム（IDPF）による無料でオープンな電子書籍標準です。
- ファイルには拡張子.epubがあります。  
-EPUBはリフロー可能なコンテンツ向けに設計されており、EPUBリーダーは特定の表示デバイスに最適化されたテキストを表示することができます。また、EPUBは固定レイアウトのコンテンツもサポートしています。このフォーマットは、出版社や変換ハウスが社内で使用したり、配布や販売のために使用できる単一のフォーマットとして意図されています。Open eBook標準に代わるものです。
+<abbr title="Electronic Publication">EPUB</abbr> は、国際デジタル出版フォーラム（IDPF）が提供する無料のオープン電子書籍標準です。ファイルの拡張子は.epub です。
+EPUB はリフロー可能なコンテンツ向けに設計されています。つまり、EPUB リーダーは特定のディスプレイデバイスに合わせてテキストを最適化できます。EPUB は固定レイアウトのコンテンツもサポートしています。この形式は、出版社や変換会社が社内で使用できるだけでなく、配布や販売にも使用できる単一の形式として意図されています。オープン電子書籍の標準よりも優先されます。
 
-Aspose.PDF for Pythonは、PDFドキュメントをEPUB形式に変換する機能もサポートしています。Aspose.PDF for Pythonには「EpubSaveOptions」というクラスがあり、[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドの第2引数として使用して、EPUBファイルを生成することができます。Pythonを使用してこの要件を達成するには、次のコードスニペットを試してください。
+Aspose.PDF for Python は PDF ドキュメントを EPUB 形式に変換する機能もサポートしています。Aspose.PDF for Python には 'EpubSaveOptions' という名前のクラスがあり、これをの 2 番目の引数として使用できます。 [ドキュメント.save ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを使用して EPUB ファイルを生成します。
+Python でこの要件を満たすには、次のコードスニペットを使用してみてください。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_epub.epub"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # Epub Saveオプションをインスタンス化
+def convert_PDF_to_EPUB(infile, outfile):
+    document = ap.Document(infile)
     save_options = ap.EpubSaveOptions()
-
-    # コンテンツのレイアウトを指定
     save_options.content_recognition_mode = ap.EpubSaveOptions.RecognitionMode.FLOW
+    document.save(outfile, save_options)
 
-    # ePUBドキュメントを保存
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
-## PDFをLaTeX/TeXに変換する
+## 関連コンバージョン
 
-**Aspose.PDF for Python via .NET**は、PDFをLaTeX/TeXに変換することをサポートしています。LaTeXファイル形式は、特殊なマークアップを持つテキストファイル形式であり、高品質な組版のためのTeXベースのドキュメント準備システムで使用されます。
+- [PDF をワードに変換](/pdf/ja/python-net/convert-pdf-to-word/) 編集可能なオフィス文書出力用。
+- [PDF ファイルを HTML 形式に変換](/pdf/ja/python-net/convert-pdf-to-html/) ブラウザ指向の出力用。
+- [PDF を PDF/A、PDF/E、および PDF/X に変換](/pdf/ja/python-net/convert-pdf-to-pdf_x/) アーカイブおよび標準準拠の変換ワークフロー用。
+
+## PDF をラテックス/テックスに変換
+
+**.NET 経由の Python 用 Aspose.pdf ** PDF からラテックス/テックスへの変換をサポートします。
+LaTeXファイル形式は、特別なマークアップが付いたテキストファイル形式で、TeXベースの文書作成システムで高品質のタイプセットに使用されます。
 
 {{% alert color="success" %}}
-**PDFをLaTeX/TeXにオンラインで変換してみる**
+**オンラインでPDFをラテックス/テックスに変換してみてください**
 
-Aspose.PDF for Pythonは、オンラインで無料アプリケーション["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex)を提供しており、機能と品質を調べることができます。
+Python 用の Aspose.PDF はオンラインアプリケーションを提供します [「PDF から LaTeX へ」](https://products.aspose.app/pdf/conversion/pdf-to-tex)ここで、機能や動作品質を調べてみるといいかもしれません。
 
-[![Aspose.PDF Convertion PDF to LaTeX/TeX with Free App](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
+[![Aspose.PDF アプリで PDF をラテックス/テックスに変換](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-PDFファイルをTeXに変換するには、Aspose.PDFには[LaTeXSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/latexsaveoptions/)というクラスがあり、変換プロセス中に一時的な画像を保存するためのOutDirectoryPathプロパティを提供しています。
+PDF ファイルを TeX に変換するには、Aspose.PDF には次のクラスがあります [ラテックス保存オプション](https://reference.aspose.com/pdf/python-net/aspose.pdf/latexsaveoptions/) これには、変換処理中に一時イメージを保存するための OutDirectoryPath プロパティが用意されています。
 
-次のコードスニペットは、PythonでPDFファイルをTEX形式に変換するプロセスを示しています。
+次のコードスニペットは、Python を使用して PDF ファイルを TEX 形式に変換するプロセスを示しています。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def convert_PDF_to_TeX(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.LaTeXSaveOptions()
+    document.save(outfile, save_options)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_tex.tex"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-    # LaTeXSaveOptionsのオブジェクトをインスタンス化
-    saveOptions = ap.LaTeXSaveOptions()
-    document.save(output_pdf, saveOptions)
+    print(infile + " converted into " + outfile)
 ```
 
-## PDFをテキストに変換
+## PDF をテキストに変換
 
-**Aspose.PDF for Python**は、PDFドキュメント全体と単一ページをテキストファイルに変換することをサポートしています。
-
-### PDFドキュメントをテキストファイルに変換
-
-'TextDevice'クラスを使用してPDFドキュメントをTXTファイルに変換することができます。
-
-次のコードスニペットは、すべてのページからテキストを抽出する方法を説明します。
+**Aspose.pdf for Python**は、PDFドキュメント全体と単一ページのテキストファイルへの変換をサポートしています。「TextDevice」クラスを使用して PDF ドキュメントを TXT ファイルに変換できます。次のコードスニペットでは、すべてのページからテキストを抽出する方法を説明しています。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def convert_PDF_to_TXT(infile, outfile):
+    document = ap.Document(infile)
+    device = ap.devices.TextDevice()
+    device.process(document.pages[1], outfile)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_txt.txt"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # テキストデバイスを作成
-    textDevice = ap.devices.TextDevice()
-
-    # 特定のページを変換して保存
-    textDevice.process(document.pages[1], output_pdf)
+    print(infile + " converted into " + outfile)
 ```
-**PDFをテキストにオンラインで変換してみる**
-{{% alert color="success" %}}
-
-Aspose.PDF for Pythonは、オンラインで無料のアプリケーション["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)を提供しています。これを使って、その機能性と品質を調査してみてください。
-
-[![Aspose.PDF Convertion PDF to Text with Free App](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
-{{% /alert %}}
-
-## PDFをXPSに変換する
-
-**Aspose.PDF for Python**は、PDFファイルを<abbr title="XML Paper Specification">XPS</abbr>形式に変換する可能性を提供します。PythonでPDFファイルをXPS形式に変換するために提示されたコードスニペットを使ってみましょう。
 
 {{% alert color="success" %}}
-**PDFをXPSにオンラインで変換してみる**
+**オンラインでPDFをテキストに変換してみてください**
 
-Aspose.PDF for Pythonは、オンラインで無料のアプリケーション["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps)を提供しています。これを使って、その機能性と品質を調査してみてください。
+Python 用の Aspose.PDF はオンラインアプリケーションを提供します [「PDF からテキストへ」](https://products.aspose.app/pdf/conversion/pdf-to-txt)ここで、機能や動作品質を調べてみるといいかもしれません。
 
-[![Aspose.PDF Convertion PDF to XPS with Free App](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+[![Aspose.PDF アプリで PDF をテキストに変換](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}
 
-XPSファイルタイプは、主にMicrosoft CorporationによるXML Paper Specificationに関連付けられています。XML Paper Specification（XPS）は、以前はMetroというコードネームで呼ばれ、Next Generation Print Path（NGPP）というマーケティングコンセプトを包含しており、Windowsオペレーティングシステムに文書の作成と閲覧を統合するためのMicrosoftの取り組みです。
+## PDF ファイルを XPS ファイルに変換
 
-PDFファイルをXPSに変換するには、Aspose.PDFには[XpsSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/xpssaveoptions/)クラスがあり、これはXPSファイルを生成するために[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドの第2引数として使用されます。
+**Python用アスポースPDF**では、PDFファイルをXPSフォーマットに変換することができます。提示されたコードスニペットを使って Python で PDF ファイルを XPS フォーマットに変換してみましょう。
 
-次のコードスニペットは、PDFファイルをXPS形式に変換するプロセスを示しています。
+{{% alert color="success" %}}
+**オンラインでPDFをXPSに変換してみてください**
+
+Python 用の Aspose.PDF はオンラインアプリケーションを提供します [「PDF ファイルから XPS へ」](https://products.aspose.app/pdf/conversion/pdf-to-xps)ここで、機能や動作品質を調べてみるといいかもしれません。
+
+[![Aspose.PDF アプリで PDF を XPS に変換](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+{{% /alert %}}
+
+XPSファイルタイプは、主にマイクロソフト社のXMLペーパー仕様に関連付けられています。XML Paper Specification (XPS) は、以前はMetro というコードネームで、次世代印刷パス (NGPP) のマーケティングコンセプトを取り入れていました。これは、ドキュメントの作成と表示を Windows オペレーティングシステムに統合するというマイクロソフトの取り組みです。
+
+PDF ファイルを XPS に変換するには、Aspose.PDF には次のクラスがあります [XPS 保存オプション](https://reference.aspose.com/pdf/python-net/aspose.pdf/xpssaveoptions/) これは、の 2 番目の引数として使用されます [ドキュメント.save ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) XPS ファイルを生成する方法。
+
+次のコードスニペットは、PDF ファイルを XPS 形式に変換するプロセスを示しています。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xps.xps"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # XPS保存オプションをインスタンス化
+def convert_PDF_to_XPS(infile, outfile):
+    document = ap.Document(infile)
     save_options = ap.XpsSaveOptions()
+    save_options.use_new_imaging_engine = True
+    document.save(outfile, save_options)
 
-    # XPSドキュメントを保存
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
-## PDFをXMLに変換
+## PDF ファイルを MD ファイルに変換します
 
-{{% alert color="success" %}}
-**PDFをXMLにオンラインで変換してみてください**
+Aspose.PDF には「MarkDownSaveOptions ()」というクラスがあります。このクラスは、画像やリソースを保存したまま PDF ドキュメントを Markdown (MD) 形式に変換します。
 
-Aspose.PDF for Pythonは、オンラインで無料アプリケーション「[PDF to XML](https://products.aspose.app/pdf/conversion/pdf-to-xml)」を提供しており、その機能と品質をお試しいただけます。
-
-[![Aspose.PDF Convertion PDF to XML with Free App](pdf_to_xml.png)](https://products.aspose.app/pdf/conversion/pdf-to-xml)
-{{% /alert %}}
-
-<abbr title="拡張可能なマークアップ言語">XML</abbr>は、任意のデータを保存、送信、再構築するためのマークアップ言語およびファイル形式です。
-
-Aspose.PDF for Pythonは、PDFドキュメントをXML形式に変換する機能もサポートしています。Aspose.PDF for Pythonには「XmlSaveOptions」というクラスがあり、[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドの第2引数として使用して、XMLファイルを生成することができます。この要件をPythonで達成するために、次のコードスニペットを試してください。
+1. 「AP.ドキュメント」を使用してソースPDFをロードします。
+1. 「マークダウンセーブオプション」のインスタンスを作成します。
+1. 'resources_directory_name'を 'images'に設定してください。抽出された画像はこのフォルダに保存されます。
+1. 設定したオプションを使用して、変換された Markdown ドキュメントを保存します。
+1. 変換後に確認メッセージを印刷します。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def convert_PDF_to_MD(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.MarkdownSaveOptions()
+    save_options.resources_directory_name = "images"
+    save_options.use_image_html_tag = True
+    document.save(outfile, save_options)
 
-    def convert_pdf_to_xml(self, infile, outfile):
-        path_infile = self.dataDir + infile
-        path_outfile = self.dataDir + outfile
+    print(infile + " converted into " + outfile)
+```
 
-        # PDFドキュメントを開く
+指定された画像フォルダーに保存されているテキストとリンクされた画像を含むマークダウンファイル。
 
-        document = ap.Document(path_infile)
+## PDF ファイルを MobiXML に変換
 
-        # XML保存オプションをインスタンス化
-        save_options = ap.XmlSaveOptions()
+このメソッドは、PDF ドキュメントを Kindle 端末の電子書籍で一般的に使用されている MOBI (MobiXML) 形式に変換します。
 
-        # XMLドキュメントを保存
-        document.save(path_outfile, save_options)
-        print(infile + " が " + outfile + " に変換されました")
+1. 「AP.Document」を使用してソース PDF ドキュメントをロードします。
+1. 「AP.SaveFormat.mobi_XML」の形式でドキュメントを保存します。
+1. 変換が完了したら、確認メッセージを印刷します。
+
+```python
+import aspose.pdf as ap
+from os import path
+import sys
+
+def convert_PDF_to_MobiXML(infile, outfile):
+    document = ap.Document(infile)
+    document.save(outfile, ap.SaveFormat.MOBI_XML)
+
+    print(infile + " converted into " + outfile)
 ```

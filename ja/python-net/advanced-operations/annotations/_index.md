@@ -1,152 +1,43 @@
 ---
-title: PDF 注釈
-linktitle: PDF 注釈
+title: Python での PDF アノテーション
+linktitle: PDF アノテーション
 type: docs
 weight: 100
 url: /ja/python-net/annotations/
-description: このセクションでは、Aspose.PDF ライブラリを使用して PDF ファイルにあらゆる種類の注釈を追加する方法を示します。
-lastmod: "2023-02-17"
+description: .NET 経由の Aspose.PDF for Python を使用して、テキスト、ハイライト、リンク、図などを含む PDF 注釈を Python で追加、変更、抽出、および管理する方法を学びましょう。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF にアノテーションを追加する方法
+Abstract: この記事では、文書のインタラクティブ性とユーザーエンゲージメントを高めるインタラクティブな要素としての PDF 内の注釈の使用について説明しています。テキスト、ハイライト、図、マルチメディア注釈など、さまざまな注釈タイプをサポートする Aspose.PDF for Python ライブラリの機能に焦点を当てています。注釈は、文書にコメントを付けたり、レビューしたり、マークを付けたり、フィードバックを提供したりするなど、さまざまな目的に使用できます。これにより、共同作業やコミュニケーションが容易になり、文書の内容をより深く理解できるようになります。また、この記事には、注釈を追加、削除、取得する方法を詳しく説明したセクションもあり、PDF 文書内でこれらの要素を効果的に管理するためのガイダンスを提供しています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Python における PDF 注釈",
-    "alternativeHeadline": "PDF の注釈を扱う",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, annotations",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "このセクションでは、Aspose.PDF for Python ライブラリを使用して PDF ファイルにあらゆる種類の注釈を追加する方法を示します。"
-}
-</script>
 
+PDFの注釈は、メモを追加したり、テキストを強調表示したり、図形を描いたり、ファイルを添付したり、ページ上で直接アクションを実行したりできるインタラクティブな要素です。レビューワークフロー、コラボレーション、ナビゲーション、文書マークアップに役立ちます。
 
-PDFの注釈は、メモを追加したり、テキストをハイライトしたり、図形を描画したり、ファイルを添付したり、その他のアクションを実行して、閲覧、インタラクティブ性、および相互作用を向上させるインタラクティブな要素です。
+Aspose.PDF for Python via .NET は、メモやポップアップの注釈、テキストマークアップ、リンクとボタン、図形、ウォーターマーク、マルチメディア注釈、注釈のインポートやエクスポートのワークフローなど、さまざまな注釈シナリオをサポートしています。
 
-Aspose.PDF for Pythonライブラリは、テキスト注釈（テキストやポップアップ注釈など）、ハイライト注釈（テキストマークアップなど）、図形注釈（円、ポリライン、多角形、線、インクなど）、マルチメディア注釈（スクリーン、サウンド、ウィジェット、3Dなど）など、さまざまな種類の注釈をサポートしています。
+このセクションでは、新しい注釈を作成する必要があるか、既存の注釈を検査する必要があるか、削除する必要があるか、PDF文書間で注釈を転送する必要があるかにかかわらず、タスクに合った注釈ワークフローを選択できます。
 
-注釈は、コメント、レビュー、文書のマーキング、フィードバックの提供、または追加情報の追加に使用できます。注釈により、協力関係を確立し、コミュニケーションを促進し、文書の内容の理解を向上させることができます。それらはコラボレーションを強化し、コミュニケーションを改善し、PDF文書をユーザーにとってより動的で魅力的なものにします。
+## 注釈トピック
 
-以下のことができます：
+このセクションは、Python を使用して PDF ファイル内の注釈を追加、取得、更新、削除、または転送する必要がある場合に使用します。以下のリンク先のページでは、最上位のアノテーションワークフローと、ドキュメント全体で使われているアノテーションファミリーのグループ分けの両方について説明しています。
 
-- [注釈の追加、削除、取得](/pdf/ja/python-net/add-delete-and-get-annotation/) - このセクションでは、許可されているすべてのタイプの注釈を操作する方法について説明します。
+次のトピックを使用できます。
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python ライブラリ",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python 用 PDF 操作ライブラリ",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [注釈の追加、削除、取得](/pdf/ja/python-net/add-delete-and-get-annotation/) -主要なグループ化された注釈カテゴリと、主要な作成、検査、削除ワークフローについては、ここから始めてください。
+- [注釈のインポートとエクスポート](/pdf/ja/python-net/import-export-annotations/) -ある PDF ドキュメントから別の PDF ファイルに注釈をコピーします。
+
+### 注釈グループ
+
+グループ化された注釈ガイドには、次のサブトピックが含まれています。
+
+- [テキスト注釈](/pdf/ja/python-net/text-based-Annotations/) -フリーテキスト、ハイライト、下線、曲がりくねった注釈、取り消し線の注釈を使用できます。
+- [マークアップ注釈](/pdf/ja/python-net/markup-annotations/) -レビューシナリオで使用されるメモ、キャレット、および注釈を追加または検査し、置き換えます。
+- [インタラクティブ注釈](/pdf/ja/python-net/interactive-annotations/) -リンク注釈、ナビゲーションボタン、印刷ボタンを作成します。
+- [シェイプ注釈](/pdf/ja/python-net/shape-annotations/) -直線、正方形、円、多角形、およびポリラインの注釈を使用する。
+- [メディア注釈](/pdf/ja/python-net/media-annotations/) -サウンド、画面、リッチメディア、3D 注釈を追加します。
+- [セキュリティ注釈](/pdf/ja/python-net/security-annotations/) -ファイルの添付、編集、および関連する保護指向の注釈を処理します。
+- [ウォーターマーク注釈](/pdf/ja/python-net/watermark-annotations/) -注釈ベースのウォーターマーク要素を追加および管理します。
+注釈は、文書のレビュー、コラボレーション、コンテンツのマークアップ、インタラクティブなナビゲーションに特に役立ちます。サポートされている注釈タイプを参照したい場合はグループ化された概要から始め、必要なワークフローがわかっている場合は特定のトピックに直接移動してください。

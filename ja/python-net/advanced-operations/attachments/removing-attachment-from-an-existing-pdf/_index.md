@@ -1,166 +1,67 @@
 ---
-title: 既存のPDFから添付ファイルを削除するPython
-linktitle: 既存のPDFから添付ファイルを削除する
+title: Python で PDF から添付ファイルを削除する方法
+linktitle: 既存の PDF からの添付ファイルの削除
 type: docs
 weight: 30
 url: /ja/python-net/removing-attachment-from-an-existing-pdf/
-description: Aspose.PDFはPDFドキュメントから添付ファイルを削除できます。Aspose.PDF for Python via .NETライブラリを使用して、Python PDF APIでPDFファイルの添付ファイルを削除します。
-lastmod: "2023-02-17"
+description: Aspose.PDF は PDF ドキュメントから添付ファイルを削除できます。Python PDF API を使用すると、.NET ライブラリ経由で Aspose.PDF for Python を使用して PDF ファイル内の添付ファイルを削除できます。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF から添付ファイルを削除する方法
+Abstract: この記事では、Aspose.PDF for Python を使用して PDF ファイルから添付ファイルを削除する方法について説明します。PDF ドキュメント内の添付ファイルは、「Document」オブジェクトの「EmbeddedFiles」コレクションに保存されます。PDF からすべての添付ファイルを削除するには、`EmbeddedFiles` コレクションの `delete () `メソッドを呼び出し、`Document` オブジェクトの `save ()` メソッドを使用して更新されたドキュメントを保存します。このプロセスを説明するコードスニペットが提供されており、文書を開いて添付ファイルを削除し、変更したファイルを保存する手順が紹介されています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDFから添付ファイルを削除する",
-    "alternativeHeadline": "PythonでPDFから添付ファイルを削除する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, 添付ファイル削除",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/removing-attachment-from-an-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/removing-attachment-from-an-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for PythonはPDFドキュメントから添付ファイルを削除できます。Aspose.PDFライブラリを使用して、Python PDF APIでPDFファイルの添付ファイルを削除します。"
-}
-</script>
 
+Aspose.PDF for Python は PDF ファイルから添付ファイルを削除できます。PDF ドキュメントの添付ファイルは Document オブジェクトに保持されます。 [埋め込みファイル](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) コレクション。
 
-Aspose.PDF for Pythonは、PDFファイルから添付ファイルを削除できます。PDFドキュメントの添付ファイルは、Documentオブジェクトの[EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/)コレクションに保持されています。
+このワークフローは、古くなった埋め込みファイルをクリーンアップしたり、パッケージサイズを小さくしたり、ソース資料を添付せずに再配布するために PDF を準備したりする必要がある場合に役立ちます。
 
-PDFファイルに関連付けられたすべての添付ファイルを削除するには:
+PDF ファイルに関連付けられているすべての添付ファイルを削除するには：
 
-1. [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/)コレクションの[delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods)メソッドを呼び出します。
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)オブジェクトの[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドを使用して更新されたファイルを保存します。
+1. に電話してください [埋め込みファイル](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) コレクションの [削除 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) 方法。
+1. を使用して更新したファイルを保存します。 [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [保存 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法。
 
-次のコードスニペットは、PDFドキュメントから添付ファイルを削除する方法を示しています。
+次のコードスニペットは、PDF ドキュメントから添付ファイルを削除する方法を示しています。
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # すべての添付ファイルを削除
-    document.embedded_files.delete()
-
-    # 更新されたファイルを保存
-    document.save(output_pdf)
+def remove_attachment(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete()
+        document.save(outfile)
 ```
 
+## 特定の添付ファイルを名前で削除する
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python ライブラリ",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python用PDF操作ライブラリ",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+アタッチメントを 1 つだけ削除して他のアタッチメントを残す必要がある場合は、 [キーで削除 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/delete_by_key/) メソッドを入力し、添付ファイル名を渡します。
+
+特定の添付ファイルを削除するには:
+
+1. ソース PDF ファイルを開きます。
+1. コール `document.embedded_files.delete_by_key(attachment_name)`.
+1. 更新した PDF ファイルを保存します。
+
+次のコードスニペットは、名前を指定して添付ファイルを 1 つ削除します。
+
+```python
+
+import aspose.pdf as ap
+
+def remove_attachment(infile, attachment_name, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete_by_key(attachment_name)
+        document.save(outfile)
+```
+
+## 関連する添付トピック
+
+- [Python で PDF の添付ファイルを操作する](/pdf/ja/python-net/attachments/)
+- [Python で PDF に添付ファイルを追加する方法](/pdf/ja/python-net/add-attachment-to-pdf-document/)
+- [Python での PDF ポートフォリオの作成と管理](/pdf/ja/python-net/portfolio/)
+

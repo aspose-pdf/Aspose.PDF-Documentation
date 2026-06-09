@@ -1,90 +1,34 @@
 ---
-title: Pythonを使用した注釈の追加、削除、および取得
-linktitle: 注釈の追加、削除、および取得
+title: Python での PDF アノテーションの追加、削除、および取得
+linktitle: 注釈の追加、削除、取得
 type: docs
 weight: 20
 url: /ja/python-net/add-delete-and-get-annotation/
-description: Aspose.PDF for Pythonを使用すると、PDFファイルに注釈を追加、削除、および取得できます。タスクを解決するためにすべての注釈リストを確認してください。
-lastmod: "2023-02-17"
+description: Aspose.PDF for Python を使うと、PDF ファイルを追加したり、削除したり、アノテーションを取得したりすることができます。すべての注釈リストを確認してタスクを解決してください。
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF 内のアノテーションを操作する方法
+Abstract: PDF ドキュメントに注釈を付けると、メモ、テキストハイライト、図形、添付ファイルなどのさまざまな要素を追加できるため、ユーザーの操作性が向上します。これらの機能により、文書の表示エクスペリエンスとインタラクティブ性が向上します。Aspose.PDF for Python ライブラリは、注釈をテキスト注釈、ハイライト注釈、図表注釈、付箋注釈、追加注釈といった複数のグループに分類し、それぞれが文書のエンゲージメントと使いやすさを高めるさまざまな機能を果たしています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonで注釈を追加、削除、および取得",
-    "alternativeHeadline": "PDFファイルでの注釈の操作",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf ドキュメント生成",
-    "keywords": "pdf, python, 注釈を追加, 注釈を取得, 注釈を削除",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-delete-and-get-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-delete-and-get-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Pythonを使用すると、PDFファイルに注釈を追加、削除、および取得できます。タスクを解決するためにすべての注釈リストを確認してください。"
-}
-</script>
 
+PDF ドキュメント内の注釈は、ユーザーがドキュメント内の特定の方法でコンテンツを割り当てることができる要素です。注釈を使用すると、さまざまな種類のメモの追加、テキストの強調表示、図形の描画、ファイルの添付など、文書内の表示、対話性、操作性を向上させるその他の操作を実行できます。
 
-**PDFドキュメントの注釈とは何ですか？**
+このページでは、ドキュメントのこの部分でサポートされている主な注釈タイプをグループ化して、必要なワークフローにすばやく移動できるようにしています。
 
-PDFドキュメントの注釈は、ユーザーがドキュメント内のコンテンツを特定の方法で配置することを可能にする要素です。注釈は、さまざまなタイプのノートを追加したり、テキストをハイライトしたり、図形を描画したり、ファイルを添付したり、ドキュメント内の表示、インタラクティビティ、および相互作用を向上させる他のアクションを実行したりするために使用できます。
+Aspose.PDF for Python ライブラリで使用できるさまざまな種類のアノテーションをグループにまとめました。
 
-Aspose.PDF for Pythonライブラリで利用可能なさまざまな種類の注釈をグループにまとめました：
+- [インタラクティブ注釈](/pdf/ja/python-net/interactive-annotations/)
+- [マークアップ注釈](/pdf/ja/python-net/markup-annotations/)
+- [メディア注釈](/pdf/ja/python-net/media-annotations/)
+- [セキュリティ注釈](/pdf/ja/python-net/security-annotations/)
+- [シェイプ注釈](/pdf/ja/python-net/shape-annotations/)
+- [テキスト注釈](/pdf/ja/python-net/text-based-Annotations/)
+- [ウォーターマーク注釈](/pdf/ja/python-net/watermark-annotations/)
 
-- [PDFテキスト注釈](/pdf/ja/python-net/text-annotation/)
-- [PDFハイライト注釈](/pdf/ja/python-net/highlights-annotation/)
-- [PDF図形注釈](/pdf/ja/python-net/figures-annotation/)
-- [PDF付箋注釈](/pdf/ja/python-net/sticky-annotations/)
-- [追加注釈](/pdf/ja/python-net/extra-annotations/)
+## 関連する注釈トピック
+
+- [PDF 注釈の概要](/pdf/ja/python-net/annotations/) 親セクションとアノテーションの概念について。
+- [注釈のインポートとエクスポート](/pdf/ja/python-net/import-export-annotations/)

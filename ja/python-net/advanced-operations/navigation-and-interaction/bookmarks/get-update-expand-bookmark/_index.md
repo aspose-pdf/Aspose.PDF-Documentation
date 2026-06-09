@@ -1,96 +1,32 @@
 ---
-title: Pythonを使用してブックマークを取得、更新、展開する
-linktitle: ブックマークを取得、更新、展開する
+title: Python で PDF ブックマークを取得、更新、および展開する方法
+linktitle: ブックマークを取得、更新、拡張する
 type: docs
 weight: 20
 url: /ja/python-net/get-update-and-expand-bookmark/
-description: この記事では、Aspose.PDF for Pythonライブラリを使用してPDFファイル内のブックマークを操作する方法について説明します。
-lastmod: "2023-02-17"
+description: Python を使用して PDF 文書内のブックマークを取得、更新、および展開する方法について説明します。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python で PDF のブックマークを使用する方法
+Abstract: この記事では、Python の Aspose.PDF ライブラリを使用して PDF ドキュメント内のブックマークを管理するための包括的なガイドを提供します。最初に、すべてのブックマークを含む「OutlineCollection」を使用して PDF ファイルからブックマークを取得する方法と、「OutlineItemCollection」を介してブックマーク属性にアクセスする方法について詳しく説明します。次に、「PDFBookmarkEditor」を使用してブックマークに関連するページ番号を決定するプロセスについて説明します。さらに、各「OutlineItemCollection」内の子ブックマークを取得して階層的なブックマーク構造を処理する方法についても説明します。また、ブックマークのプロパティの更新についても説明し、ブックマークの属性を変更して PDF に変更を保存する方法についても説明します。最後に、文書を表示するときにブックマークを拡張する必要があることについて説明し、各ブックマークのオープンステータスを設定してデフォルトで展開されるようにする方法を示します。各セクションにはコードスニペットが付属しており、これらの機能を実装する実際的な例が示されています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用してブックマークを取得、更新、展開する",
-    "alternativeHeadline": "PDFファイルからブックマークを取得する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, get bookmarks",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/get-update-and-expand-bookmark/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/get-update-and-expand-bookmark/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "この記事では、Aspose.PDF for Pythonライブラリを使用してPDFファイル内のブックマークを操作する方法について説明します。"
-}
-</script>
 
+## ブックマークを取得
 
-## ブックマークを取得する
+ザの [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [アウトラインコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションには、PDF ファイルのすべてのブックマークが含まれます。この記事では、PDF ファイルからブックマークを取得する方法と、特定のブックマークがどのページにあるかを取得する方法について説明します。
 
-[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションには、PDF ファイルのすべてのブックマークが含まれています。この記事では、PDF ファイルからブックマークを取得する方法と、特定のブックマークがどのページにあるかを取得する方法について説明します。
-
-ブックマークを取得するには、[OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションをループして、OutlineItemCollection 内の各ブックマークを取得します。[OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) は、すべてのブックマークの属性へのアクセスを提供します。次のコードスニペットは、PDF ファイルからブックマークを取得する方法を示しています。
+ブックマークを取得するには、ループ処理を行います [アウトラインコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションを作成し、OutlineItemコレクションの各ブックマークを取得します。は [アウトラインアイテムコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) ブックマークのすべての属性にアクセスできます。次のコードスニペットは、PDF ファイルからブックマークを取得する方法を示しています。
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
+def get_bookmarks(input_pdf):
     document = ap.Document(input_pdf)
-
-    # すべてのブックマークをループする
     for i in range(len(document.outlines)):
         outline_item = document.outlines[i + 1]
         print(outline_item.title)
@@ -99,44 +35,43 @@ sitemap:
         print(outline_item.color)
 ```
 
+## ブックマークのページ番号の取得
 
-## ブックマークのページ番号を取得する
-
-ブックマークを追加したら、Bookmarkオブジェクトに関連付けられた宛先のPageNumberを取得することで、そのブックマークがどのページにあるかを確認できます。
+ブックマークを追加したら、Bookmark オブジェクトに関連付けられている保存先の PageNumber を取得することで、そのブックマークがどのページにあるかを確認できます。
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # PdfBookmarkEditorを作成
-    bookmarkEditor = ap.facades.PdfBookmarkEditor()
-    # PDFファイルを開く
-    bookmarkEditor.bind_pdf(input_pdf)
-    # ブックマークを抽出
-    bookmarks = bookmarkEditor.extract_bookmarks()
+def get_bookmark_page_number(input_pdf):
+    # Create PdfBookmarkEditor
+    bookmark_editor = ap.facades.PdfBookmarkEditor()
+    # Open PDF file
+    bookmark_editor.bind_pdf(input_pdf)
+    # Extract bookmarks
+    bookmarks = bookmark_editor.extract_bookmarks()
     for bookmark in bookmarks:
-        str_level_seprator = ""
+        str_level_separator = ""
         for i in range(bookmark.level):
-            str_level_seprator += "----"
+            str_level_separator += "----"
 
-        print(str_level_seprator, "タイトル:", bookmark.title)
-        print(str_level_seprator, "ページ番号:", bookmark.page_number)
-        print(str_level_seprator, "ページアクション:", bookmark.action)
+        print(str_level_separator, "Title:", bookmark.title)
+        print(str_level_separator, "Page Number:", bookmark.page_number)
+        print(str_level_separator, "Page Action:", bookmark.action)
 ```
 
-## PDFドキュメントから子ブックマークを取得する
+## PDF ドキュメントから子ブックマークを取得
 
-ブックマークは、親と子を持つ階層構造で整理することができます。
- ドキュメント内のすべてのブックマークを取得するには、Document オブジェクトの Outlines コレクションをループします。ただし、子ブックマークも取得するには、最初のループで取得された各 [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) オブジェクト内のすべてのブックマークもループします。以下のコードスニペットは、PDF ドキュメントから子ブックマークを取得する方法を示しています。
+ブックマークは、親子で階層構造に整理できます。すべてのブックマークを取得するには、Document オブジェクトの Outlines コレクションをループ処理します。ただし、子ブックマークも取得するには、それぞれのすべてのブックマークをループ処理してください。 [アウトラインアイテムコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) 最初のループで取得したオブジェクト。以下のコードスニペットは、PDF ドキュメントから子ブックマークを取得する方法を示しています。
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
+def get_child_bookmarks(input_pdf):
     document = ap.Document(input_pdf)
-
-    # すべてのブックマークをループする
     for i in range(len(document.outlines)):
         outline_item = document.outlines[i + 1]
         print(outline_item.title)
@@ -145,126 +80,65 @@ sitemap:
         print(outline_item.color)
         count = len(outline_item)
         if count > 0:
-            print("子ブックマーク")
-            # 子ブックマークがある場合はそれもループする
+            print("Child Bookmarks")
+            # There are child bookmarks then loop through that as well
             for j in range(len(outline_item)):
-                child_outline_item = outline_item[i + 1]
+                child_outline_item = outline_item[j + 1]
                 print(child_outline_item.title)
                 print(child_outline_item.italic)
                 print(child_outline_item.bold)
                 print(child_outline_item.color)
 ```
 
-## PDFドキュメントのブックマークを更新する
+## PDF ドキュメント内のブックマークの更新
 
-PDFファイルのブックマークを更新するには、まずブックマークのインデックスを指定して、DocumentオブジェクトのOutlineCollectionコレクションから特定のブックマークを取得します。[OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/)オブジェクトにブックマークを取得したら、そのプロパティを更新し、Saveメソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、PDFドキュメントのブックマークを更新する方法を示しています。
+PDF ファイル内のブックマークを更新するには、まず、ブックマークのインデックスを指定して、Document オブジェクトの OutlineColletion コレクションから特定のブックマークを取得します。ブックマークをに取得したら [アウトラインアイテムコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) オブジェクトの場合、そのプロパティを更新し、更新された PDF ファイルを Save メソッドを使用して保存できます。次のコードスニペットは、PDF ドキュメント内のブックマークを更新する方法を示しています。
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
+def update_bookmarks(input_pdf, output_pdf):
+    # Open document
     document = ap.Document(input_pdf)
 
-    # ブックマークオブジェクトを取得
+    # Get a bookmark object
     outline = document.outlines[1]
 
-    # 子ブックマークオブジェクトを取得
+    # Get child bookmark object
     child_outline = outline[1]
     child_outline.title = "Updated Outline"
     child_outline.italic = True
     child_outline.bold = True
 
-    # 保存する
+    # Save output
     document.save(output_pdf)
 ```
 
-## ドキュメントを表示する際に展開されたブックマーク
+## ドキュメント表示時の拡張ブックマーク
 
-ブックマークは、Documentオブジェクトの[OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/)コレクションに保持されており、これは[OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/)コレクション内にあります。
- しかし、PDFファイルを表示する際にすべてのブックマークを展開しておく必要がある場合があります。
+ブックマークは Document オブジェクトに保持されます [アウトラインアイテムコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) コレクション自体は [アウトラインコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクション。ただし、PDF ファイルを表示する場合、すべてのブックマークを展開する必要がある場合があります。
 
-この要件を達成するために、各アウトライン/ブックマーク項目のオープンステータスをOpenとして設定できます。次のコードスニペットは、PDFドキュメント内の各ブックマークを展開された状態に設定する方法を示しています。
+この要件を満たすために、各アウトライン/ブックマークアイテムのオープンステータスを「オープン」に設定できます。次のコードスニペットは、PDF 文書内で展開された各ブックマークのオープンステータスを設定する方法を示しています。
 
 ```python
+from os import path
+import sys
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
+def expanded_bookmarks(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
-
-    # ページ表示モードを設定、サムネイル表示、フルスクリーン、添付ファイルパネルの表示など
     document.page_mode = ap.PageMode.USE_OUTLINES
-    # PDFファイルのアウトラインコレクション内の各アウトライン項目を巡回
     for i in range(len(document.outlines)):
         item = document.outlines[i + 1]
-        # アウトライン項目のオープンステータスを設定
         item.open = True
-
-    # 出力を保存
     document.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 関連ブックマークトピック
+
+- [Python で PDF ブックマークを操作する](/pdf/ja/python-net/bookmarks/)
+- [Python で PDF ブックマークを追加および削除する方法](/pdf/ja/python-net/add-and-delete-bookmark/)
+- [Python を使用した PDF でのナビゲーションとインタラクション](/pdf/ja/python-net/navigation-and-interaction/)
+
