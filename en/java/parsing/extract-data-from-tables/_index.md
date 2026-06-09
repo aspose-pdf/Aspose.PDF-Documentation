@@ -1,113 +1,126 @@
 ---
-title: Extract Table Data from PDF 
-linktitle: Extract Table Data
+title: Extract Data from Table in PDF with Java
+linktitle: Extract Data from Table
 type: docs
 weight: 40
 url: /java/extract-data-from-table-in-pdf/
-description: Learn how to extract tabular from PDF using Aspose.PDF for Java
-lastmod: "2025-02-17"
+description: Learn how to extract table data from PDF files with Aspose.PDF for Java and export detected tables for further processing.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to extract tabular from PDF using Aspose.PDF for Java
-Abstract: The article discusses programmatically extracting tables from PDF documents using Aspose.PDF for Java. It outlines the steps necessary for extracting table data, starting with opening a PDF document and utilizing the `TableAbsorber` object to analyze specific pages. The extracted data is stored in a list of `AbsorbedTable` objects, which can be further processed by iterating through rows and cells to access `TextFragmentCollections`. The article provides code examples, including one for extracting tables from all pages, another for extracting tables from specific areas using annotations, and a final example that demonstrates exporting table data to a CSV file. The article also references additional resources for converting PDF files to Excel spreadsheets.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: How to Extract Data from Table in PDF via Java
+Abstract: This article explains how to extract and process table data from PDF documents with Aspose.PDF for Java. It shows how to scan pages with `TableAbsorber`, read rows and cells from detected tables, limit extraction to a specific annotated region, and export the result to Excel.
 ---
+## Extract tables from PDF
 
-## Extract Tables from PDF programmatically
+Use `TableAbsorber` to find tables on each page and iterate through rows, cells, text fragments, and text segments.
 
-Extracting tables from PDFs is not a trivial task because the table can be created variously.
-
-Aspose.PDF for Java has a tool to make it easy to retrieve tables. To extract table data, you should perform the following steps:
-
-1. Open document - instantiate a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object;
-1. Create a [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber) object.
-1. Decide which pages to be analyzed and apply [visit](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) to the desired pages. The tabular data will be scanned, and the result will be saved in a list of [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). We can get this list through [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) method.
-1. To get the data iterate throught `TableList` and handle list of [absorbed rows](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) and list of absorbed cells. We can access to the first list by calling [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) method and to the second by calling [getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
-1. Each [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) contains [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). You can process it for your own purposes.
-
-The following example shows table extraction from the all pages:
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Iterate through the document pages.
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit each [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Iterate through the detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedcell/), and [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) objects.
+1. Build the extracted row text and print the table data.
 
 ```java
-public static void Extract_Table() {
-    // Load source PDF document        
-    String filePath = "/home/aspose/pdf-examples/Samples/sample_table.pdf";
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
+public static void extractTablesFromPdf(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
+            TableAbsorber absorber = new TableAbsorber();
+            absorber.visit(page);
 
-    // Scan pages
-    for (com.aspose.pdf.Page page : pdfDocument.getPages()) {
-        absorber.visit(page);
-        for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
-            System.out.println("Table");
-            // Iterate throught list of rows
-            for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                // Iterate throught list of cell
-                for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
-                    for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
-                        StringBuilder sb = new StringBuilder();
-                        for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
-                            sb.append(seg.getText());
-                        System.out.print(sb.toString() + "|");
+            for (AbsorbedTable table : absorber.getTableList()) {
+                System.out.println("Table");
+                for (AbsorbedRow row : table.getRowList()) {
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        if (rowText.length() > 0) {
+                            rowText.append("|");
+                        }
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder fragmentText = new StringBuilder();
+                            for (TextSegment segment : fragment.getSegments()) {
+                                fragmentText.append(segment.getText());
+                            }
+                            if (cellText.length() > 0) {
+                                cellText.append("|");
+                            }
+                            cellText.append(fragmentText);
+                        }
+                        rowText.append(cellText);
                     }
+                    System.out.println(rowText);
                 }
-                System.out.println();
             }
         }
     }
 }
 ```
 
-## Extract table in specific area of PDF page
+## Extract a table from a specific marked area
 
-Each abosorbed table has [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable#getRectangle--) property that describes position of the table on page.
+This example finds a square annotation, compares its rectangle to each detected table, and outputs only tables inside the marked region.
 
-So, if you need to extract tables located in a specific region, you have to work with specific coordinates.
-
-The following example show how to extract table marked with Square Annotation:
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and find the square [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) on that page.
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the page.
+1. Compare each detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) with the annotation rectangle.
+1. Iterate through the matching [AbsorbedRow](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedrow/) and [AbsorbedCell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedcell/) objects.
+1. Build the extracted row text and print the table data for the marked region.
 
 ```java
-public static void Extract_Marked_Table() {
-    // Load source PDF document
-    String filePath = "<... enter path to pdf file here ...>";
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
+public static void extractTableFromSpecificArea(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
 
-    com.aspose.pdf.AnnotationSelector annotationSelector = new com.aspose.pdf.AnnotationSelector(
-            new com.aspose.pdf.SquareAnnotation(page, com.aspose.pdf.Rectangle.getTrivial()));
+        Annotation squareAnnotation = null;
+        for (Annotation annotation : page.getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Square) {
+                squareAnnotation = annotation;
+                break;
+            }
+        }
 
-    java.util.List<com.aspose.pdf.Annotation> list = annotationSelector.getSelected();
-    if (list.size() == 0) {
-        System.out.println("Marked tables not found..");
-        return;
-    }
+        if (squareAnnotation == null) {
+            System.out.println("No square annotation found.");
+            return;
+        }
 
-    com.aspose.pdf.SquareAnnotation squareAnnotation = (com.aspose.pdf.SquareAnnotation) list.get(0);
+        TableAbsorber absorber = new TableAbsorber();
+        absorber.visit(page);
 
-    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
-    absorber.visit(page);
+        for (AbsorbedTable table : absorber.getTableList()) {
+            Rectangle tableRect = table.getRectangle();
+            Rectangle annotationRect = squareAnnotation.getRect();
 
-    for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
-        {
-            boolean isInRegion = (squareAnnotation.getRect().getLLX() < table.getRectangle().getLLX())
-                    && (squareAnnotation.getRect().getLLY() < table.getRectangle().getLLY())
-                    && (squareAnnotation.getRect().getURX() > table.getRectangle().getURX())
-                    && (squareAnnotation.getRect().getURY() > table.getRectangle().getURY());
+            boolean isInRegion = annotationRect.getLLX() < tableRect.getLLX()
+                    && annotationRect.getLLY() < tableRect.getLLY()
+                    && annotationRect.getURX() > tableRect.getURX()
+                    && annotationRect.getURY() > tableRect.getURY();
 
             if (isInRegion) {
-                for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                    {
-                        for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
-                            for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
-                                StringBuilder sb = new StringBuilder();
-                                for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
-                                    sb.append(seg.getText());
-                                System.out.print(sb.toString() + "|");
-                            }
+                for (AbsorbedRow row : table.getRowList()) {
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        if (rowText.length() > 0) {
+                            rowText.append("|");
                         }
-                        System.out.println();
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder fragmentText = new StringBuilder();
+                            for (TextSegment segment : fragment.getSegments()) {
+                                fragmentText.append(segment.getText());
+                            }
+                            if (cellText.length() > 0) {
+                                cellText.append("|");
+                            }
+                            cellText.append(fragmentText);
+                        }
+                        rowText.append(cellText);
                     }
+                    System.out.println(rowText);
                 }
             }
         }
@@ -115,23 +128,19 @@ public static void Extract_Marked_Table() {
 }
 ```
 
-## Extract Table Data from PDF and store it in CSV file
+## Export tables to Excel
 
-The following example shows how to extract table and store it as CSV file.
-To see how to convert PDF to Excel Spreadsheet please refer to [Convert PDF to Excel](/pdf/java/convert-pdf-to-excel/) article.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create [ExcelSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/excelsaveoptions/) for the export.
+1. Set the Excel output format to XLSX.
+1. Save the document in Excel format.
 
 ```java
-public static void Extract_Table_Save_CSV()
-{
-    String filePath = "/home/admin1/pdf-examples/Samples/sample_table.pdf";
-    // Load PDF document
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-    // Instantiate ExcelSave Option object
-    com.aspose.pdf.ExcelSaveOptions excelSave = new com.aspose.pdf.ExcelSaveOptions();
-    excelSave.setFormat(com.aspose.pdf.ExcelSaveOptions.ExcelFormat.CSV);
-
-    // Save the output in XLS format
-    pdfDocument.save("PDFToXLS_out.xlsx", excelSave);
+public static void exportTablesToExcel(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions excelSave = new ExcelSaveOptions();
+        excelSave.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+        document.save(outputFile.toString(), excelSave);
+    }
 }
 ```

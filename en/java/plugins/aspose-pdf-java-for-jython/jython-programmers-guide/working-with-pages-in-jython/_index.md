@@ -1,9 +1,10 @@
 ---
 title: Working With Pages in Jython
+linktitle: Working With Pages in Jython
 type: docs
 weight: 30
 url: /java/working-with-pages-in-jython/
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 This section includes the following topics:

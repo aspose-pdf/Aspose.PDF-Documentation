@@ -3,15 +3,20 @@ title: PdfAnnotationEditor Class
 type: docs
 weight: 40
 url: /java/pdfannotationeditor-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfAnnotationEditor Class.
-lastmod: "2025-02-17"
+description: Learn how to work with PDF annotation workflows in Java through the PdfAnnotationEditor section, including text, markup, links, shapes, watermarks, redactions, and annotation transfer scenarios.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Annotation workflows in Java for the PdfAnnotationEditor section
+Abstract: This section organizes annotation-related Java workflows for the PdfAnnotationEditor documentation area. The article set is sourced from the repository annotation examples under `workingwithannotations` and covers text, markup, interactive, shape, watermark, security, media-coverage notes, and annotation import-export scenarios.
 ---
+This section groups the Java annotation workflows used to create, inspect, delete, and transfer annotations in PDF files.
 
-- [Delete All Annotations by Specified Type (facades)](/pdf/java/delete-annotations/)
-- [Import and Export Annotations to XFDF format using com.aspose.pdf.facades](/pdf/java/import-export-annotations/)
-- [Extract Annotation](/pdf/java/extract-annotation/)
-- [Flatten Annotation](/pdf/java/flatten-annotation/)
-- [Modify Annotations](/pdf/java/modify-annotations/)
+The current repository does not include a dedicated `PdfAnnotationEditorExamples.java` class. For this section, the article content is sourced from the Java examples under `en/java/src/main/java/com/aspose/pdf/examples/workingwithannotations`.
+
+Use this section to:
+
+- [Add, Delete and Get Annotation](/pdf/java/pdfannotationeditor-class/add-delete-and-get-annotation/) for grouped annotation families.
+- [Import and Export Annotations](/pdf/java/pdfannotationeditor-class/import-export-annotations/) to copy annotations between PDF files.

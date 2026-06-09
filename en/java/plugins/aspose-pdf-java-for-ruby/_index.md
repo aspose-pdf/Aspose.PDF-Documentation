@@ -1,10 +1,11 @@
 ---
 title: Aspose.PDF Java for Ruby
+linktitle: Aspose.PDF Java for Ruby
 type: docs
 weight: 20
 url: /java/aspose-pdf-java-for-ruby/
 description: Explore how to use Aspose.PDF for Java in Ruby. Combine the power of Ruby scripting with advanced PDF manipulation features.
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 ---
 
 ## Introduction
@@ -40,7 +41,7 @@ Following are the supported platforms:
 
 - Ruby 2.2.x or above and respective DevKit.
 - Java 1.5 or above
- 
+В 
 ## Downloads
 
 ### Download Required Libraries

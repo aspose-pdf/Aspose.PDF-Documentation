@@ -1,9 +1,10 @@
 ---
 title: Add TOC to Existing PDF in Ruby
+linktitle: Add TOC to Existing PDF in Ruby
 type: docs
 weight: 30
 url: /java/add-toc-to-existing-pdf-in-ruby/
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Add TOC
@@ -49,33 +50,33 @@ i = 0
 
 while i < 2
 
-    # Create Heading object
+В В В  # Create Heading object
 
-    heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+В В В  heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
 
-    segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+В В В  segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
 
-    heading2.setTocPage(toc_page)
+В В В  heading2.setTocPage(toc_page)
 
-    heading2.getSegments().add(segment2)
+В В В  heading2.getSegments().add(segment2)
 
-    # Specify the destination page for heading object
+В В В  # Specify the destination page for heading object
 
-    heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
+В В В  heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-    # Destination page
+В В В  # Destination page
 
-    heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
+В В В  heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-    # Destination coordinate
+В В В  # Destination coordinate
 
-    segment2.setText(titles[i])
+В В В  segment2.setText(titles[i])
 
-    # Add heading to page containing TOC
+В В В  # Add heading to page containing TOC
 
-    toc_page.getParagraphs().add(heading2)
+В В В  toc_page.getParagraphs().add(heading2)
 
-    i +=1
+В В В  i +=1
 
 end
 
@@ -88,6 +89,6 @@ puts "Added TOC Successfully, please check the output file."
 
 ## <ins> **Download Running Code
 
-Download **Add TOC (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Add TOC (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

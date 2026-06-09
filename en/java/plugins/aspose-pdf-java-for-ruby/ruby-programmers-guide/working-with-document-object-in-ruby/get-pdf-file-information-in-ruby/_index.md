@@ -1,10 +1,11 @@
 ---
 title: Get PDF File Information in Ruby
+linktitle: Get PDF File Information in Ruby
 type: docs
 weight: 50
 url: /java/get-pdf-file-information-in-ruby/
 description: Extract metadata and details from PDF files programmatically using Aspose.PDF in Ruby.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Get PDF File Information
@@ -43,6 +44,6 @@ puts "Title:-" + doc_info.getTitle().to_s
 
 ## Download Running Code
 
-Download **Get PDF File Information (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Get PDF File Information (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)

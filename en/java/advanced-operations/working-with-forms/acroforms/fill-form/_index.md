@@ -1,56 +1,44 @@
 ---
-title: Fill AcroForms
-linktitle: Fill AcroForms
+title: Fill AcroForm - Fill PDF Form using Java
+linktitle: Fill AcroForm
 type: docs
 weight: 20
 url: /java/fill-form/
-description: This section explains how to fill form field in a PDF document with Aspose.PDF for Java.
-lastmod: "2025-02-17"
+description: Fill AcroForm fields in a PDF document using Aspose.PDF for Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Guide on managing Fill AcroForms in PDF documents using Aspose.PDF for Java
-Abstract: The Fill Form section of the Aspose.PDF for Java documentation provides a step-by-step guide on how to programmatically populate form fields within PDF documents. It explains how to identify and fill various types of form fields, including text fields, checkboxes, radio buttons, and dropdowns. The documentation also covers techniques for updating existing form data and flattening forms to prevent further modifications. With practical Java code examples and detailed explanations, developers can easily automate form-filling processes, enhancing efficiency in document management and data entry workflows.
-SoftwareApplication: java    
+TechArticle: true
+AlternativeHeadline: Fill AcroForm fields in PDF files with Java
+Abstract: This article explains how to fill AcroForm fields using Aspose.PDF for Java. The example loads a PDF through the Form facade, matches field names against a value map, updates the matching fields, and saves the completed document.
 ---
+The `Form` facade can be used to automate field population in an existing AcroForm.
 
-PDF documents are wonderful, and really the preferred file type, for creating Forms.
+## Fill AcroForm fields with new values
 
-Aspose.PDF for Java allows you to fill a form field, get the field from the Document object's Form collection.
-
-Let's look at the following example how to resolve this task:
+1. Open the PDF form document with the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade.
+1. Iterate through the form fields and update the matching entries with the provided values.
+1. Save the updated PDF document.
 
 ```java
-public class ExamplesFillForm {
+public static void fillForm(Path inputFile, Path outputFile) {
+    Map<String, String> newFieldValues = Map.of(
+            "First Name", "Alexander_New",
+            "Last Name", "Greenfield_New",
+            "City", "Yellowtown_New",
+            "Country", "Redland_New");
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void FillFormFieldPDFDocument() {
-        // Open document
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // Create a field
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
-        textBoxField.setPartialName("textbox1");
-        textBoxField.setValue("Text Box");
-
-        // TextBoxField.Border = new Border(
-        Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        textBoxField.setBorder(border);
-
-        textBoxField.setColor(Color.getGreen());
-
-        // Add field to the document
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // Save modified PDF
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+    Form form = new Form(inputFile.toString());
+    try {
+        for (String fieldName : form.getFieldNames()) {
+            if (newFieldValues.containsKey(fieldName)) {
+                form.fillField(fieldName, newFieldValues.get(fieldName));
+            }
+        }
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
     }
-
-    
 }
 ```

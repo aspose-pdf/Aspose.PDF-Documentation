@@ -1,17 +1,23 @@
 ---
 title: PdfFileSignature Class
 type: docs
-weight: 70
+weight: 60
 url: /java/pdffilesignature-class/
-description: Discover how to sign, verify, and manage digital signatures within PDF files using the PDFFileSignature class in Java with Aspose.PDF.
-lastmod: "2025-02-17"
+description: Learn how to use the PdfFileSignature facade in Java to sign, certify, inspect, verify, extract, and remove PDF signatures.
+lastmod: "2026-06-09"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Sign, certify, and inspect PDF signatures in Java with PdfFileSignature
+Abstract: This section explains how to use the PdfFileSignature facade in Aspose.PDF for Java for digital-signature workflows. The current Java examples cover signing with a certificate or PKCS7 object, certifying a PDF with DocMDP permissions, reading signature details, verifying signatures, extracting the signing certificate, and removing a signature.
 ---
+The Java `PdfFileSignatureExamples` class demonstrates the main signature workflows available through the Facades API.
 
-- [Add Signature in PDF File](/pdf/java/add-signature-in-pdf/)
-- [Remove Signature from PDF File](/pdf/java/remove-signature-from-pdf/)
-- [Verify Signature in PDF File](/pdf/java/verify-signature-in-pdf/)
-- [Working with Signature in PDF File](/pdf/java/add-signature-in-pdf/)
+Use this section to learn how to:
 
+- sign and certify PDF documents
+- inspect signature names, signer details, and timestamps
+- verify signature validity and whole-document coverage
+- extract a signing certificate and remove an existing signature

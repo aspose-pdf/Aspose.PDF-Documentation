@@ -1,9 +1,10 @@
 ---
 title: Working with Pages in PHP
+linktitle: Working with Pages in PHP
 type: docs
 weight: 30
 url: /java/working-with-pages-in-php/
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 This section includes the following topics:

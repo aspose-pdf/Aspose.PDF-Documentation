@@ -1,293 +1,39 @@
 ---
-title: Text Formatting inside PDF 
+title: Format PDF Text in Java
 linktitle: Text Formatting inside PDF
 type: docs
-weight: 30
+weight: 70
 url: /java/text-formatting-inside-pdf/
-description: Discover how to format text inside a PDF document using Aspose.PDF in Java, allowing for customized styling.
-lastmod: "2025-02-17"
+description: Learn how to format text inside PDF documents in Java using spacing, notes, lists, multi-column layout, and styling options.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to format text inside a PDF document using Aspose.PDF in Java
-Abstract: The article provides detailed guidance on various text formatting techniques using Aspose.PDF for Java, a library for PDF document manipulation. Key functionalities include setting line indent via the `SubsequentLinesIndent` property within the `TextFormattingOptions` class, demonstrated through a Java code snippet that showcases the creation of a PDF with specific line indentations. Additionally, the article covers adding text borders by utilizing the `TextBuilder` and `TextState` classes to draw borders around text fragments. Methods for underlining text, striking out text, and adding new line feeds are also presented with corresponding code examples. Furthermore, it illustrates how to apply gradient shading to text using the `setPatternColorSpace` method, enabling both axial and radial shading effects. The article concludes with a demonstration of aligning text within a floating box, showcasing vertical and horizontal alignment properties. Each section is accompanied by practical Java code snippets, emphasizing the library's comprehensive text manipulation capabilities.
-SoftwareApplication: java 
+TechArticle: true
+AlternativeHeadline: Format and style text inside PDF files with Java
+Abstract: This article explains how to format text in PDF documents using Aspose.PDF for Java. It covers line spacing, character spacing, bullet and numbered lists, footnotes and endnotes, inline paragraph content, multi-column layout, forced page breaks, and custom tab stops.
 ---
+Aspose.PDF for Java provides formatting features at the text state, paragraph, and page layout levels.
 
-## How to add Line Indent to PDF
+## Specify line spacing
 
-Aspose.PDF for Java offers SubsequentLinesIndent property into [TextFormattingOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
-
-Please use the following code snippet to use the property:
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create the [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) and set the required text formatting options.
+1. Add the [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) to the page.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
-public static void AddLineIndentToPDF() {
-        // Create new document object
-        Document document = new Document();
+public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
         Page page = document.getPages().add();
 
-        TextFragment text = new TextFragment(
-                "A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
+        TextFragment textFragment = new TextFragment("Lorem ipsum text");
+        textFragment.getTextState().setFontSize(12);
+        textFragment.getTextState().setLineSpacing(16);
+        page.getParagraphs().add(textFragment);
 
-        // Initilize TextFormattingOptions for the text fragment and specify
-        // SubsequentLinesIndent value
-        TextFormattingOptions textOptions = new TextFormattingOptions();
-        textOptions.setSubsequentLinesIndent(20);
-        text.getTextState().setFormattingOptions(textOptions);
-
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line2");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line3");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line4");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line5");
-        page.getParagraphs().add(text);
-
-        document.save(_dataDir + "SubsequentIndent_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## How to add Text Border
-
-The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder method of TextState:
-
-```java
-public static void AddTextBorder() {
-    // Create new document object
-    Document pdfDocument = new Document();
-    // Get particular page
-    Page pdfPage = pdfDocument.getPages().add();
-    // Create text fragment
-    TextFragment textFragment = new TextFragment("main text");
-    textFragment.setPosition(new Position(100, 600));
-    // Set text properties
-    textFragment.getTextState().setFontSize(12);
-    textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    textFragment.getTextState().setBackgroundColor (Color.getLightGray());
-    textFragment.getTextState().setForegroundColor (Color.getRed());
-    // Use setStrokingColor for drawing border (stroking) around text rectangle
-    textFragment.getTextState().setStrokingColor (Color.getDarkRed());
-    // Use setDrawTextRectangleBorder method to set value to true
-    textFragment.getTextState().setDrawTextRectangleBorder(true);
-    TextBuilder tb = new TextBuilder(pdfPage);
-    tb.appendText(textFragment);
-    // Save the document
-    pdfDocument.save(_dataDir + "PDFWithTextBorder_out.pdf");
-}
-```
-
-## How to add Underline Text
-
-The following code snippet shows you how to add Underline text while creating a new PDF file.
-
-```java
-public static void AddUnderlineText(){
-    // Create documentation object
-    Document pdfDocument = new Document();
-    // Add age page to PDF document
-    Page page = pdfDocument.getPages().add();
-    // Create TextBuilder for first page
-    TextBuilder tb = new TextBuilder(page);
-    // TextFragment with sample text
-    TextFragment fragment = new TextFragment("Text with underline decoration");
-    // Set the font for TextFragment
-    fragment.getTextState().setFont (FontRepository.findFont("Arial"));
-    fragment.getTextState().setFontSize (10);
-    // Set the formatting of text as Underline
-    fragment.getTextState().setUnderline(true);
-    // Specify the position where TextFragment needs to be placed
-    fragment.setPosition (new Position(10, 800));
-    // Append TextFragment to PDF file
-    tb.appendText(fragment);
-
-    // Save resulting PDF document.
-    pdfDocument.save(_dataDir + "AddUnderlineText_out.pdf");
-}
-```
-
-## How to add Border Around Added Text
-
-You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor) class.
-
-```java
-public static void AddBorderAroundAddedText() {
-    PdfContentEditor editor = new PdfContentEditor();
-    editor.bindPdf(_dataDir + "input.pdf");
-    LineInfo lineInfo = new LineInfo();
-    lineInfo.setLineWidth(2);
-    lineInfo.setVerticeCoordinate (new float[] { 0, 0, 100, 100, 50, 100 });
-    lineInfo.setVisibility(true);
-    editor.createPolygon(lineInfo, 1, new java.awt.Rectangle(0, 0, 0, 0), "");
-
-    // Save resulting PDF document.
-    editor.save(_dataDir + "AddingBorderAroundAddedText_out.pdf");
-}
-```
-
-## How to add NewLine feed
-
-TextFragment doesn’t support line feed inside the text. However in order to add text with line feed, please use TextFragment with TextParagraph:
-
-- use "\r\n" or Environment.NewLine in TextFragment instead of single “\n”;
-- create TextParagraph object. It will add text with line splitting;
-- add the TextFragment with TextParagraph.AppendLine;
-- add the TextParagraph with TextBuilder.AppendParagraph.
-Please use below code snippet.
-
-```java
-public static void AddNewLineFeed() {        
-    Document pdfDocument = new Document();
-    Page page = pdfDocument.getPages().add();
-
-    // Initialize new TextFragment with text containing required newline markers
-    TextFragment textFragment = new TextFragment("Applicant Name: " + System.lineSeparator() + " Joe Smoe");
-
-    // Set text fragment properties if necessary
-    textFragment.getTextState().setFontSize (12);
-    textFragment.getTextState().setFont(FontRepository.findFont("DejaVu Serif"));
-    textFragment.getTextState().setBackgroundColor (Color.getLightGray());
-    textFragment.getTextState().setForegroundColor (Color.getRed());
-
-    // Create TextParagraph object
-    TextParagraph par = new TextParagraph();
-
-    // Add new TextFragment to paragraph
-    par.appendLine(textFragment);
-
-    // Set paragraph position
-    par.setPosition (new Position(100, 600));
-
-    // Create TextBuilder object
-    TextBuilder textBuilder = new TextBuilder(page);
-    // Add the TextParagraph using TextBuilder
-    textBuilder.appendParagraph(par);
-
-    // Save resulting PDF document.
-    pdfDocument.save(_dataDir + "AddNewLineFeed_out.pdf");
-}
-```
-
-## How to add StrikeOut Text
-
-The TextState class provides the capabilities to set formatting for TextFragments being placed inside PDF document. You can use this class to set text formatting as Bold, Italic, Underline and starting this release, the API has provided the capabilities to mark text formatting as Strikeout. Please try using the following code snippet to add TextFragment with Strikeout formatting.
-
-Please use complete code snippet:
-
-```java
-public static void AddStrikeOutText(){
-    // Open document
-    Document pdfDocument = new Document();
-    // Get particular page
-    Page pdfPage = (Page)pdfDocument.getPages().add();
-
-    // Create text fragment
-    TextFragment textFragment = new TextFragment("main text");
-    textFragment.setPosition (new Position(100, 600));
-
-    // Set text properties
-    textFragment.getTextState().setFontSize(12);
-    textFragment.getTextState().setFont(FontRepository.findFont("DejaVu Serif"));
-    textFragment.getTextState().setBackgroundColor(Color.getLightGray());
-    textFragment.getTextState().setForegroundColor(Color.getRed());
-    // use setStrikeOut method to enable StrikeOut Text
-    textFragment.getTextState().setStrikeOut(true);
-    // Mark text as Bold
-    textFragment.getTextState().setFontStyle(FontStyles.Bold);
-
-    // Create TextBuilder object
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // Append the text fragment to the PDF page
-    textBuilder.appendText(textFragment);
-
-    // Save resulting PDF document.
-    pdfDocument.save(_dataDir + "AddStrikeOutText_out.pdf");        
-}
-```
-
-## Apply Gradient Shading to the Text
-
-Text formatting has been further enhanced in the API for text editing scenarios and now you can add text with pattern colorspace inside PDF document. com.aspose.pdf.Color Class has further been enhanced by introducing new methodw `setPatternColorSpace`, which can be used to specify shading colors for the text. This new method adds different Gradient Shading to the text e.g. Axial Shading, Radial (Type 3) Shading as shown in the following code snippet:
-
-```java
-public static void ApplyGradientShading() {
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("always print correctly");
-    pdfDocument.getPages().accept(absorber);
-
-    TextFragment textFragment = absorber.getTextFragments().get_Item(1);
-
-    Color foregroundColor = new com.aspose.pdf.Color();
-    foregroundColor.setPatternColorSpace(new GradientAxialShading(Color.getRed(), Color.getBlue()));
-
-    // Create new color with pattern colorspace
-    textFragment.getTextState().setForegroundColor (foregroundColor);
-
-    textFragment.getTextState().setUnderline(true);
-
-    pdfDocument.save(_dataDir + "text_out.pdf");
-}
-```
-
-In order to apply a Radial Gradient, you can use `setPatternColorSpace` method equal with `GradientRadialShading(startingColor, endingColor)`in the above code snippet.
-
-```java
-public static void ApplyGradientShadingRadial() {
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("always print correctly");
-    pdfDocument.getPages().accept(absorber);
-
-    TextFragment textFragment = absorber.getTextFragments().get_Item(1);
-
-    Color foregroundColor = new com.aspose.pdf.Color();
-    foregroundColor.setPatternColorSpace(new GradientRadialShading(Color.getRed(), Color.getBlue()));
-
-    // Create new color with pattern colorspace
-    textFragment.getTextState().setForegroundColor (foregroundColor);
-
-    textFragment.getTextState().setUnderline(true);
-
-    pdfDocument.save(_dataDir + "text_out.pdf");
-}
-```
-
-## How to align text to float content
-
-Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of Aspose.Pdf.FloatingBox instance can be used to achieve this as shown in the following code sample.
-
-```java
-public static void AlignTextToFloatContent() {
-    Document pdfDocument = new Document();
-    Page page = pdfDocument.getPages().add();
-
-    FloatingBox floatBox = new FloatingBox(100, 100);
-    floatBox.setVerticalAlignment(VerticalAlignment.Bottom);
-    floatBox.setHorizontalAlignment (HorizontalAlignment.Right);
-    floatBox.getParagraphs().add(new TextFragment("FloatingBox_bottom"));
-    floatBox.setBorder(new BorderInfo(BorderSide.All, Color.getBlue()));
-    
-    page.getParagraphs().add(floatBox);
-
-    FloatingBox floatBox1 = new FloatingBox(100, 100);
-    floatBox1.setVerticalAlignment(VerticalAlignment.Center);
-    floatBox1.setHorizontalAlignment (HorizontalAlignment.Right);
-    floatBox1.getParagraphs().add(new TextFragment("FloatingBox_center"));
-    floatBox1.setBorder (new BorderInfo(BorderSide.All, Color.getBlue()));
-    page.getParagraphs().add(floatBox1);
-
-    FloatingBox floatBox2 = new FloatingBox(100, 100);
-    floatBox2.setVerticalAlignment(VerticalAlignment.Top);
-    floatBox2.setHorizontalAlignment (HorizontalAlignment.Right);
-    floatBox2.getParagraphs().add(new TextFragment("FloatingBox_top"));
-    floatBox2.setBorder (new BorderInfo(BorderSide.All, Color.getBlue()));
-    page.getParagraphs().add(floatBox2);
-
-    pdfDocument.save(_dataDir + "FloatingBox_alignment_review_out.pdf");        
 }
 ```

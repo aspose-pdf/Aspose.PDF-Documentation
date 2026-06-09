@@ -1,10 +1,11 @@
 ---
 title: Convert PDF to Excel Workbook in PHP
+linktitle: Convert PDF to Excel Workbook in PHP
 type: docs
 weight: 20
 url: /java/convert-pdf-to-excel-workbook-in-php/
 description: Learn how to convert PDF files to Excel workbooks in PHP using Aspose.PDF, enabling seamless data extraction and manipulation.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Convert PDF to Excel Workbook
@@ -29,6 +30,6 @@ print "Document has been converted successfully" . PHP_EOL;
 
 **Download Running Code**
 
-Download **Convert PDF to Excel Workbook (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Convert PDF to Excel Workbook (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToExcel.php)

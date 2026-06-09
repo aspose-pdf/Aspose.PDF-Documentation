@@ -1,112 +1,41 @@
 ---
-title: Add Image stamps in PDF programmatically 
+title: Add Image Stamps to PDF in Java
 linktitle: Image stamps in PDF File
 type: docs
 weight: 10
 url: /java/image-stamps-in-pdf-page/
-description: Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF for Java library.
-lastmod: "2021-06-05"
+description: Learn how to add image stamps to PDF pages in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Guide on using the Aspose.PDF API to add image stamps to PDF documents
-Abstract: This article provides a comprehensive guide on using the Aspose.PDF API to add image stamps to PDF documents. It explains the use of the `ImageStamp` class for inserting images, allowing customization of properties such as height, width, opacity, and rotation. The article includes a code snippet demonstrating how to create a `Document` object, initialize an `ImageStamp`, and apply it to a specific page using the `addStamp(..)` method. Additionally, it introduces the `setQuality(...)` method to control image quality when adding stamps, with an example code snippet. The article also covers how to use the `BackgroundImage` property of the `FloatingBox` class to set an image stamp as the background in a floating box, providing another illustrative code sample.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: Add image stamps and image backgrounds to PDF pages with Java
+Abstract: This article explains how to add image stamps to PDF files using Aspose.PDF for Java. It covers image stamps with positioning, rotation, opacity, and quality control, and using an image as the background of a floating box.
 ---
+## Add an image stamp
 
-## Add Image Stamp in PDF File
-
-You can use [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) class to add an image as a stamp in PDF document. The [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) class provides methods to specify height, width, and opacity etc.
-
-To add an image stamp:
-
-1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and an ImageStamp object using required properties.
-1. Call the Page class [addStamp(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) method of the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) class to add the stamp to the PDF.
-
-The following code snippet shows how to add image stamp in the PDF file.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the [ImageStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imagestamp/) object from the source image file.
+1. Configure the required stamp placement, size, and opacity options.
+1. Set the required [Rotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rotation/) value for the stamp.
+1. Add the configured [ImageStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imagestamp/) to the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
-public static void AddImageStampInPDFFile() {
-        // Open document
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Create image stamp
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setBackground(true);
         imageStamp.setXIndent(100);
         imageStamp.setYIndent(100);
-        imageStamp.setHeight(48);
-        imageStamp.setWidth(225);
+        imageStamp.setHeight(300);
+        imageStamp.setWidth(300);
         imageStamp.setRotate(Rotation.on270);
         imageStamp.setOpacity(0.5);
 
-        // Add stamp to particular page
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        // Save output document
-        pdfDocument.save(_dataDir + "AddImageStamp_out.pdf");
-
-    }
-```
-
-## Control Image Quality when Adding Stamp
-
-The [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) class lets you add an image as a stamp in a PDF document. It also allows you to control the image quality when adding an image as a watermark in a PDF file. To allow this, a method named setQuality(...) has been added to the [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) class. A similar method can also be found in the [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/Stamp) class of the com.aspose.pdf.facades package.
-
-The following code snippet shows you how to control image quality when adding as stamp in the PDF file.
-
-```java
- public static void ControlImageQualityWhenAddingStamp() {
-        // Open document
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Create image stamp
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
-        imageStamp.setQuality(10);
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        pdfDocument.save(_dataDir + "ControlImageQuality_out.pdf");
-    }
-```
-
-## Image Stamp as Background in Floating Box
-
-Aspose.PDF API lets you add image stamp as background in a floating box. The BackgroundImage property of FloatingBox class can be used to set the background image stamp for a floating box as shown in following code sample.
-
-```java
-public static void ImageStampAsBackgroundInFloatingBox() {
-        // Instantiate Document object
-        Document doc = new Document();
-        // Add page to PDF document
-        Page page = doc.getPages().add();
-
-        // Create FloatingBox object
-        FloatingBox aBox = new FloatingBox(200, 100);
-
-        // Set left position for FloatingBox
-        aBox.setLeft(40);
-        // Set Top position for FloatingBox
-        aBox.setTop(80);
-        // Set the Horizontal alignment for FloatingBox
-        aBox.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Add text fragment to paragraphs collection of FloatingBox
-        aBox.getParagraphs().add(new TextFragment("main text"));
-        // Set border for FloatingBox
-        aBox.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
-
-        // Add background image
-        Image img = new Image();
-        img.setFile(_dataDir + "aspose-logo.png");
-        aBox.setBackgroundImage(img);
-
-        // Set background color for FloatingBox
-        aBox.setBackgroundColor(Color.getYellow());
-
-        // Add FloatingBox to paragraphs collection of page object
-        page.getParagraphs().add(aBox);
-        // Save the PDF document
-        doc.save(_dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
 }
 ```

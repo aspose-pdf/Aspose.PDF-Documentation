@@ -1,27 +1,21 @@
 ---
-title: Securing and signing PDF documents
+title: Secure and Sign PDF Files in Java
 linktitle: Securing and signing in PDF
 type: docs
-weight: 150
+weight: 210
 url: /java/securing-and-signing/
-description: Discover how to secure and digitally sign PDF documents in Java using Aspose.PDF for document protection and authentication.
-lastmod: "2025-02-17"
+description: Learn how to sign, certify, encrypt, decrypt, and secure PDF files in Java, including digital signatures, signature validation, and document privileges.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Add digital signatures in PDF documents using the Aspose.PDF library for Java
-Abstract: This article explores the implementation of digital signatures in PDF documents using the Aspose.PDF library for Java. It highlights the transition from traditional pen-and-ink signatures to digital equivalents, emphasizing the importance of ensuring document authenticity beyond the mere presence of a digital signature. The article also discusses the need for additional security measures, particularly in government and enterprise contexts, where control over user options and document behavior during and after signing is crucial. Key sections include guidance on digitally signing PDF files, setting privileges, encrypting and decrypting PDFs, and extracting image and signature information.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: Sign, certify, encrypt, decrypt, and protect PDF documents in Java
+Abstract: This section explains how to secure and sign PDF documents using Aspose.PDF for Java. Learn how to apply digital signatures, certify documents, extract and verify signature information, and manage PDF encryption, passwords, and access privileges.
 ---
+Aspose.PDF for Java includes facade APIs for both digital signatures and document security. You can sign or certify PDF files, inspect existing signatures, encrypt and decrypt documents, and apply permission restrictions with user and owner passwords.
 
-This article describes how digital signatures are represented in a PDF document using Aspose.PDF for Java.
-Digital signatures can be used for many types of documents where traditional pen-and-ink signatures
-were used in the past. However, the mere existence of a digital signature is not adequate assurance that
-a document is what it appears to be. Moreover, government and enterprise settings often need to
-impose additional constraints on their signature workflows, such as restricting user choices and
-document behavior during and after signing.
-
-- [Digitally sign PDF file](/pdf/java/digitally-sign-pdf-file/)
-- [Set Privileges, Encrypt and Decrypt PDF File](/pdf/java/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extract Image and Signature Information](/pdf/java/extract-image-and-signature-information/)
+- [Digitally sign a PDF file](/java/digitally-sign-pdf-file/)
+- [Extract signature information](/java/extract-image-and-signature-information/)
+- [Set privileges, encrypt, and decrypt PDF files](/java/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Smart card signing notes](/java/sign-pdf-document-from-smart-card/)

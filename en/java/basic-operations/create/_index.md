@@ -1,42 +1,40 @@
 ---
-title: Create PDF Document 
-linktitle: Create
+title: Create PDF document programmatically
+linktitle: Create PDF
 type: docs
 weight: 10
 url: /java/create-document/
-description: Learn how to create PDF file in Aspose.PDF for Java.
-lastmod: "2025-02-17"
+description: Learn how to create a PDF document from scratch in Java using Aspose.PDF.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to create PDF file in Aspose.PDF for Java
-Abstract: The article introduces Aspose.PDF for Java, an API designed to enable Java application developers to incorporate PDF document processing capabilities into their applications without requiring additional software installations. This API is versatile and can be integrated with various types of Java applications, including Desktop, JSP, and JSF applications. The article provides a step-by-step guide on creating a PDF file using Java with Aspose.PDF. The process involves instantiating a `Document` object, adding a `Page` to the document, creating a `TextFragment`, adding this `TextFragment` to the `Paragraphs` collection of the page, and saving the final PDF document. A simple Java code snippet is included to demonstrate these steps, resulting in a PDF file containing the text "Hello World!".
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: Generating PDF files with Aspose.PDF for Java
+Abstract: This article shows how to create a PDF file in Java using Aspose.PDF. The example creates a new Document object, adds a page, inserts a TextFragment with sample text, and saves the result as a PDF file.
 ---
 
-**Aspose.PDF for Java** API lets Java application developers to embed PDF documents processing functionality in their applications. It can be used to create and read PDF files without the need of any other software installed on the underlying machine. Aspose.PDF for Java can be used in a variety of Java application types such as Desktop, JSP, and JSF applications.
+Creating PDF files in code is a common requirement for reports, invoices, and generated business documents. Aspose.PDF for Java provides a direct way to build a document from scratch.
 
-## How to create PDF File using Java
+## How to create a PDF file in Java
 
-To create a PDF file using Java, the following steps can be used.
+To create a PDF document programmatically:
 
-1. Instantiate a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object
-1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) to document object
-1. Create a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) object
-1. Add [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) to [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) collection of the page
-1. Save the resultant PDF document
+1. Create a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) object.
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Add a [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) to the page paragraphs.
+1. Save the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) to an output file.
+
+## Create a simple PDF document
+
+The following Java example is based on `CreatePdfDocumentExamples.java`.
 
 ```java
-// Initialize document object
-Document document = new Document();
- 
-//Add page
-Page page = document.getPages().add();
- 
-// Add text to new page
-page.getParagraphs().add(new TextFragment("Hello World!"));
- 
-// Save updated PDF
-document.save("HelloWorld_out.pdf");
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.getParagraphs().add(new TextFragment("Hello World!"));
+        document.save(outputFile.toString());
+    }
+}
 ```

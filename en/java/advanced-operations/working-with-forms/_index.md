@@ -1,25 +1,19 @@
 ---
-title: Working with Forms
+title: Working with Forms using Java
 linktitle: Working with Forms
 type: docs
-weight: 50
+weight: 60
 url: /java/working-with-forms/
-description: This section explains how to work with AcroForms and XFA Forms in your PDF documents with Aspose.PDF for Java.
-lastmod: "2025-02-17"
+description: Learn how to create, fill, extract, modify, submit, import, export, and convert PDF forms in Java using Aspose.PDF.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Manipulate Forms in PDF using Aspose.PDF for Java
-Abstract: The article provides an overview of forms as files used to collect and store information, focusing on AcroForms, a type of PDF containing form fields. Users can manually or automatically enter data into these fields. The article introduces a straightforward method for programmatically completing PDF documents using Aspose.PDF, specifically the Aspose.PDF for Java. It explains how to discover and map fields in existing PDFs with AcroForms, and also covers working with XFA forms, which are XML-based presentation forms. The article includes links to resources for creating, filling, and modifying AcroForms and XFA forms using Java libraries.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: Create and manage AcroForms and XFA forms with Java
+Abstract: This section explains how to work with PDF forms using Aspose.PDF for Java. It covers creating AcroForm fields, filling and extracting form data, importing and exporting form values, modifying or removing fields, posting form data, and converting XFA forms to standard AcroForms.
 ---
+Aspose.PDF for Java provides both DOM and facade APIs for PDF form workflows. You can build new AcroForms, update existing fields, exchange form data in common formats, and convert XFA-based documents to standard forms.
 
-Forms are files with areas for users to select or fill out information for the purpose of collecting and storing information.
-
-AcroForms are PDF files that contain form fields. Data can be entered into these fields (manually or through an automated process) by the end-users or the author of the form. Internally AcroForms are annotations or fields applied to a PDF document.
-
-In this section describes a quick and simple approach to programmatically completing a PDF document through the use of the Aspose.PDF. The section also discusses how one might go about using the Aspose.PDF for Java to discover and map the fields available within an existing PDF with AcroForms. Also, you will learn how to work with XFA - another technology for the presentation forms based on XML.
-
-- [AcroForms](/pdf/java/acroforms/) - create form, fill form field, extract data from form, modifing fields in your PDF with Java library.
-- [XFA Forms](/pdf/java/xfa-forms/) - fill XFA fields, convert XFA, get XFA  fields properties.
+- [Work with AcroForms](/java/acroforms/)
+- [Work with XFA forms](/java/xfa-forms/)

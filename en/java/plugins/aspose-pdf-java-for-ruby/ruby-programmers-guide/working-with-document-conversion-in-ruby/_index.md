@@ -1,10 +1,11 @@
 ---
 title: Working with Document Conversion in Ruby
+linktitle: Working with Document Conversion in Ruby
 type: docs
 weight: 40
 url: /java/working-with-document-conversion-in-ruby/
 description: Explore how to convert PDF documents to other formats using Ruby and Aspose.PDF, ensuring seamless file transformations.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 This section includes the following topics:

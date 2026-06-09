@@ -1,10 +1,11 @@
 ---
 title: Optimize PDF File Size in Ruby
+linktitle: Optimize PDF File Size in Ruby
 type: docs
 weight: 80
 url: /java/optimize-pdf-file-size-in-ruby/
 description: Learn to reduce the file size of PDFs without compromising quality using Aspose.PDF for Ruby.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
 
 ## Aspose.PDF - Optimize PDF File Size
@@ -17,37 +18,37 @@ Ruby Code
 
  def optimize_filesize()
 
-    # The path to the documents directory.
+В В В  # The path to the documents directory.
 
-    data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
+В В В  data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-    # Open a pdf document.
+В В В  # Open a pdf document.
 
-    doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+В В В  doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-    # Optimize the file size by removing unused objects
+В В В  # Optimize the file size by removing unused objects
 
-    opt = Rjb::import('aspose.document.OptimizationOptions').new
+В В В  opt = Rjb::import('aspose.document.OptimizationOptions').new
 
-    opt.setRemoveUnusedObjects(true)
+В В В  opt.setRemoveUnusedObjects(true)
 
-    opt.setRemoveUnusedStreams(true)
+В В В  opt.setRemoveUnusedStreams(true)
 
-    opt.setLinkDuplcateStreams(true)
+В В В  opt.setLinkDuplcateStreams(true)
 
-    doc.optimizeResources(opt)
+В В В  doc.optimizeResources(opt)
 
-    # Save output document
+В В В  # Save output document
 
-    doc.save(data_dir + "Optimized_Filesize.pdf")
+В В В  doc.save(data_dir + "Optimized_Filesize.pdf")
 
-    puts "Optimized PDF Filesize, please check output file."
+В В В  puts "Optimized PDF Filesize, please check output file."
 
-end 
+endВ 
 ```
 
 ## Download Running Code
 
-Download **Optimize PDF File Size (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Optimize PDF File Size (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)
