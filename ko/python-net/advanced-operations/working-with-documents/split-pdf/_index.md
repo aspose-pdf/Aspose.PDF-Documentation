@@ -1,36 +1,36 @@
 ---
-title: Python에서 PDF 파일 분할
+title: 파이썬에서 PDF 파일 분할하기
 linktitle: PDF 파일 분할
 type: docs
 weight: 60
 url: /ko/python-net/split-pdf-document/
-description: Python에서 PDF 파일을 개별 페이지, 동일한 부분, 고정 크기 그룹, 사용자 정의 페이지 범위 및 홀수 또는 짝수 페이지로 분할하는 방법을 배우세요.
-lastmod: "2026-04-15"
+description: Python에서 PDF 파일을 개별 페이지, 동일한 부분, 고정 크기 그룹, 사용자 지정 페이지 범위, 홀수 또는 짝수 페이지로 분할하는 방법을 알아봅니다.
+lastmod: "2026-06-10"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Python을 사용하여 PDF를 페이지와 페이지 범위로 분할
-Abstract: 이 문서에서는 Aspose.PDF for Python via .NET을 사용하여 PDF 파일을 분할하는 방법을 보여줍니다. PDF를 개별 페이지, 두 개의 동등한 부분, 고정 크기 페이지 그룹, 사용자 지정 페이지 범위, 명명된 페이지 그룹, 안정적인 파일 이름, 그리고 홀수 또는 짝수 페이지 파일로 분할하는 방법을 다룹니다.
+AlternativeHeadline: Python을 사용하여 PDF를 페이지 및 페이지 범위로 분할합니다.
+Abstract: 이 문서에서는.NET을 통해 파이썬용 Aspose.PDF 파일을 사용하여 PDF 파일을 분할하는 방법을 보여줍니다.PDF를 개별 페이지, 두 개의 동일한 부분, 고정 크기 페이지 그룹, 사용자 지정 페이지 범위, 이름이 지정된 페이지 그룹, 안정적인 파일 이름, 홀수 또는 짝수 페이지 파일로 분할하는 방법을 다룹니다.
 ---
 
-이 페이지에서는 Aspose.PDF for Python via .NET를 사용하여 **Python에서 PDF 파일을 분할**하는 방법을 보여줍니다.
+이 페이지에서는.NET을 통해 파이썬용 Aspose.PDF 파일을 사용하여 파이썬에서 PDF 파일을 **분할**하는 방법을 보여줍니다.
 
-대용량 PDF를 단일 페이지 파일, 동일한 부분, 고정 크기 그룹, 사용자 지정 페이지 범위 또는 홀짝 페이지 세트로 분할해야 할 때, 배포, 검토 또는 후속 처리에 이 예제를 사용하십시오.
+배포, 검토 또는 다운스트림 처리를 위해 큰 PDF를 단일 페이지 파일, 동일한 부분, 고정 크기 그룹, 사용자 지정 페이지 범위 또는 홀수/짝수 페이지 세트로 나누어야 하는 경우 이러한 예를 사용하십시오.
 
-## 온라인 PDF 분할 예제
+## PDF 온라인 분할 예제
 
-[Aspose.PDF 분할기](https://products.aspose.app/pdf/splitter) 온라인 웹 애플리케이션으로 PDF 분할 기능을 테스트할 수 있습니다.
+[Aspose.PDF 스플리터](https://products.aspose.app/pdf/splitter) PDF 분할 기능을 테스트할 수 있는 온라인 웹 응용 프로그램입니다.
 
-[![Aspose PDF 분할](splitter.png)](https://products.aspose.app/pdf/splitter)
+[![어스포즈 스플릿 PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-Python에서 PDF 페이지를 단일 페이지 PDF 파일로 분할하려면 다음 단계를 따르세요:
+Python에서 PDF 페이지를 단일 페이지 PDF 파일로 분할하려면 다음 단계를 따르십시오.
 
-1. PDF 문서의 페이지를 순회합니다 [문서](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 객체의 [페이지 컬렉션](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 컬렉션
-1. 각 반복마다 새 Document 객체를 생성하고 개별 항목을 추가합니다. [페이지](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 빈 문서에 객체
-1. 새 PDF를 사용하여 저장 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 방법
+1. PDF 문서의 페이지를 반복하여 살펴보세요. [문서](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 사물의 [페이지 컬렉션](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 수집
+1. 각 이터레이션에 대해 새 Document 객체를 만들고 개별 객체를 추가합니다. [페이지](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 빈 문서에 개체 추가
+1. 를 사용하여 새 PDF 저장 [저장 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 방법
 
-## Python에서 PDF를 여러 파일로 분할
+## Python에서 PDF를 여러 파일로 분할하기
 
 다음 Python 코드 스니펫은 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다.
 
@@ -48,17 +48,17 @@ def split_documents(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num}.pdf"))
 ```
 
-## PDF를 두 개의 동일한 부분으로 분할합니다
+## PDF를 두 개의 동일한 부분으로 분할
 
 1. PDF 문서를 로드합니다.
-1. 전체 페이지 수를 결정합니다.
-1. 중간점을 계산하십시오.
-1. 첫 번째 출력 문서를 생성하십시오.
+1. 총 페이지 수를 결정하십시오.
+1. 중간점을 계산합니다.
+1. 첫 번째 출력 문서를 생성합니다.
 1. 첫 번째 문서에서 후반부 페이지를 제거합니다.
 1. 첫 번째 부분을 저장합니다.
-1. 두 번째 출력 문서를 생성하십시오.
-1. 두 번째 문서에서 앞 절반 페이지를 제거하십시오.
-1. 두 번째 부분을 저장하세요.
+1. 두 번째 출력 문서를 생성합니다.
+1. 두 번째 문서에서 전반부 페이지를 제거합니다.
+1. 두 번째 부분을 저장합니다.
 
 ```python
 import sys
@@ -84,19 +84,19 @@ def split_documents_into_two_parts(infile, outdir):
         second_document.save(path.join(outdir, "Part_2.pdf"))
 ```
 
-## PDF를 매 N 페이지마다 여러 파일로 분할
+## PDF를 N페이지마다 여러 파일로 분할
 
-Aspose.PDF for Python을 사용하여 고정된 페이지 수를 기준으로 PDF 문서를 여러 개의 작은 파일로 분할합니다.
+Python용 Aspose.PDF 를 사용하여 고정된 페이지 수를 기준으로 PDF 문서를 여러 개의 작은 파일로 분할합니다.
 
 1. PDF 문서를 로드합니다.
-1. 전체 페이지 수를 결정합니다.
-1. 부분당 페이지 정의.
-1. 문서를 청크 단위로 순회합니다.
-1. 각 부분의 페이지 범위를 계산하십시오.
-1. 각 부분에 대해 새 문서를 만듭니다.
-1. 새 문서에 페이지를 복사합니다.
-1. 분할된 문서를 저장하십시오.
-1. 모든 페이지가 처리될 때까지 반복하십시오.
+1. 총 페이지 수를 결정하십시오.
+1. 파트별 페이지를 정의합니다.
+1. 문서를 여러 청크 단위로 반복합니다.
+1. 각 부품의 페이지 범위를 계산합니다.
+1. 각 부품에 대해 새 문서를 작성합니다.
+1. 페이지를 새 문서에 복사합니다.
+1. 분할된 문서를 저장합니다.
+1. 모든 페이지가 처리될 때까지 반복합니다.
 
 ```python
 import sys
@@ -122,20 +122,20 @@ def split_documents_every_n_pages(infile, outdir, pages_per_part=3):
         part_index += 1
 ```
 
-## 맞춤 페이지 범위에 따라 PDF 분할
+## 사용자 지정 페이지 범위로 PDF 분할
 
-Aspose.PDF for Python을 사용하여 사용자 정의 페이지 범위에 따라 PDF 문서를 여러 파일로 분할합니다.
+Python용 Aspose.PDF 를 사용하여 사용자 정의 페이지 범위를 기반으로 PDF 문서를 여러 파일로 분할합니다.
 
 1. PDF 문서를 로드합니다.
-1. 전체 페이지 수를 결정합니다.
-1. (start_page, end_page) 범위를 나타내는 튜플 목록을 생성합니다.
-1. 정의된 범위를 순회합니다.
-1. 시작 페이지를 검증하십시오.
-1. 끝 페이지를 조정하세요.
-1. 유효 범위를 검증하십시오.
-1. 각 범위에 대해 새 문서를 만들세요.
-1. 새 문서에 페이지를 복사합니다.
-1. 각 분할 문서를 저장하세요.
+1. 총 페이지 수를 결정하십시오.
+1. (시작_페이지, 끝_페이지) 범위를 나타내는 튜플 목록을 만듭니다.
+1. 정의된 범위를 반복합니다.
+1. 시작 페이지의 유효성을 검사합니다.
+1. 최종 페이지를 조정하세요.
+1. 유효 범위를 검증합니다.
+1. 각 범위에 대해 새 문서를 만듭니다.
+1. 페이지를 새 문서에 복사합니다.
+1. 분할된 각 문서를 저장합니다.
 
 ```python
 import sys
@@ -167,18 +167,18 @@ def split_documents_by_page_ranges(infile, outdir):
 
 ## PDF를 첫 페이지와 나머지 페이지로 분할
 
-Aspose.PDF for Python을 사용하여 PDF 문서의 첫 페이지를 나머지 페이지와 분리합니다.
+Python용 Aspose.PDF 를 사용하여 PDF 문서의 첫 페이지를 나머지 페이지와 분리합니다.
 
 1. PDF 문서를 로드합니다.
-1. 전체 페이지 수를 결정합니다.
-1. 문서가 비어 있는지 확인하십시오.
-1. 첫 페이지에 대한 문서를 만들세요.
+1. 총 페이지 수를 결정하십시오.
+1. 문서가 비어 있는지 확인합니다.
+1. 첫 페이지에 사용할 문서를 만듭니다.
 1. 첫 페이지를 추가합니다.
-1. 첫 번째 페이지 문서를 저장합니다.
-1. 추가 페이지가 있는지 확인하십시오.
-1. 남은 페이지에 대한 문서를 생성합니다.
-1. 남은 페이지 복사.
-1. 남은 페이지 문서를 저장합니다.
+1. 첫 페이지 문서를 저장합니다.
+1. 추가 페이지가 있는지 확인하세요.
+1. 남은 페이지를 위한 문서를 생성합니다.
+1. 남은 페이지를 복사합니다.
+1. 나머지 페이지 문서를 저장합니다.
 
 ```python
 import sys
@@ -206,19 +206,19 @@ def split_documents_first_page_and_rest(infile, outdir):
         remaining_pages_document.save(path.join(outdir, "Remaining_Pages.pdf"))
 ```
 
-## PDF를 마지막 페이지와 이전 페이지로 분할합니다
+## PDF를 마지막 페이지와 이전 페이지로 분할
 
-Aspose.PDF for Python을 사용하여 PDF 문서의 마지막 페이지를 추출하고 나머지 페이지와 분리합니다.
+Python용 Aspose.PDF 를 사용하여 PDF 문서의 마지막 페이지를 추출하고 나머지 페이지와 분리합니다.
 
 1. PDF 문서를 로드합니다.
-1. 전체 페이지 수를 결정합니다.
-1. 문서가 비어 있는지 확인하십시오.
-1. 마지막 페이지용 문서를 만드세요.
+1. 총 페이지 수를 결정하십시오.
+1. 문서가 비어 있는지 확인합니다.
+1. 마지막 페이지에 사용할 문서를 만듭니다.
 1. 마지막 페이지를 추가합니다.
 1. 마지막 페이지 문서를 저장합니다.
 1. 단일 페이지 문서를 확인하십시오.
 1. 원본 문서에서 마지막 페이지를 제거합니다.
-1. 남은 페이지들을 저장하십시오.
+1. 나머지 페이지를 저장합니다.
 
 ```python
 import sys
@@ -246,17 +246,17 @@ def split_documents_last_page_and_rest(infile, outdir):
 
 ## PDF를 세 부분으로 나누기
 
-Aspose.PDF for Python을 사용하여 PDF 문서를 세 개의 별도 파트로 분할합니다.
+파이썬용 Aspose.PDF 파일을 사용하여 PDF 문서를 세 부분으로 분리합니다.
 
 1. PDF 문서를 로드합니다.
-1. 전체 페이지 수를 결정합니다.
-1. 문서가 비어 있는지 확인하십시오.
-1. 부분 크기를 계산합니다.
-1. 세 부분을 반복합니다.
-1. 각 파트의 페이지 범위를 결정하십시오.
-1. 페이지 범위를 검증하십시오.
-1. 각 부분에 대해 새 문서를 만듭니다.
-1. 페이지를 파트 문서에 복사합니다.
+1. 총 페이지 수를 결정하십시오.
+1. 문서가 비어 있는지 확인합니다.
+1. 부품 크기 계산
+1. 세 부분을 반복해 보세요.
+1. 각 부품의 페이지 범위를 결정합니다.
+1. 페이지 범위를 확인합니다.
+1. 각 부품에 대해 새 문서를 작성합니다.
+1. 파트 문서에 페이지를 복사합니다.
 1. 각 부분을 저장합니다.
 
 ```python
@@ -287,9 +287,9 @@ def split_documents_into_three_parts(infile, outdir):
             part_document.save(path.join(outdir, f"Three_Parts_{part_index + 1}.pdf"))
 ```
 
-## 맞춤형 PDF 페이지 분할기
+## 사용자 지정 PDF 페이지 스플리터
 
-Aspose.PDF for Python을 사용하여 맞춤 정의된 페이지 그룹을 기준으로 PDF 문서를 여러 파일로 분할합니다.
+Python용 Aspose.PDF 를 사용하여 사용자 정의 페이지 그룹을 기반으로 PDF 문서를 여러 파일로 분할합니다.
 
 ```python
 import sys
@@ -316,9 +316,9 @@ def split_documents_custom_page_groups(infile, outdir):
             group_document.save(path.join(outdir, f"Custom_Group_{group_index}.pdf"))
 ```
 
-## 안정적인 파일명으로 PDF를 개별 페이지로 분할
+## PDF를 안정적인 파일 이름으로 개별 페이지로 분할
 
-Aspose.PDF for Python을 사용하여 PDF 문서를 개별 페이지로 분할하고 안정적인 파일 이름으로 저장합니다.
+Python용 Aspose.PDF 를 사용하여 PDF 문서를 개별 페이지로 분할하고 안정적인 파일 이름으로 저장합니다.
 
 ```python
 import sys
@@ -336,9 +336,9 @@ def split_documents_with_stable_filenames(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num:03d}.pdf"))
 ```
 
-## PDF를 홀수 페이지와 짝수 페이지로 분할
+## PDF를 홀수 및 짝수 페이지로 분할
 
-Aspose.PDF for Python을 사용하여 PDF 문서를 각각 홀수 페이지와 짝수 페이지를 포함하는 두 개의 별도 파일로 분할합니다.
+Python용 Aspose.PDF 를 사용하여 PDF 문서를 각각 홀수 페이지와 짝수 페이지를 포함하는 두 개의 개별 파일로 분할합니다.
 
 ```python
 import sys
@@ -365,7 +365,8 @@ def split_documents_odd_even_pages(infile, outdir):
 
 ## 관련 문서 주제
 
-- [Python에서 PDF 문서 작업](/pdf/ko/python-net/working-with-documents/)
-- [Python에서 PDF 파일 병합](/pdf/ko/python-net/merge-pdf-documents/)
-- [Python에서 PDF 파일을 최적화](/pdf/ko/python-net/optimize-pdf/)
-- [Python에서 PDF 문서를 조작합니다](/pdf/ko/python-net/manipulate-pdf-document/)
+- [파이썬에서 PDF 문서로 작업하기](/pdf/ko/python-net/working-with-documents/)
+- [파이썬으로 PDF 파일 병합](/pdf/ko/python-net/merge-pdf-documents/)
+- [파이썬에서 PDF 파일 최적화하기](/pdf/ko/python-net/optimize-pdf/)
+- [파이썬에서 PDF 문서 조작하기](/pdf/ko/python-net/manipulate-pdf-document/)
+

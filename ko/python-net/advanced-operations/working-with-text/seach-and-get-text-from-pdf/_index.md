@@ -1,555 +1,430 @@
 ---
-title: PDF 페이지에서 텍스트 검색 및 가져오기
-linktitle: 텍스트 검색 및 가져오기
+title: 파이썬에서 PDF 텍스트 검색 및 추출
+linktitle: 검색 및 텍스트 가져오기
 type: docs
 weight: 60
 url: /ko/python-net/search-and-get-text-from-pdf/
-description: 이 문서에서는 Aspose.PDF for .NET에서 다양한 도구를 사용하여 텍스트를 검색하고 가져오는 방법을 설명합니다.
-lastmod: "2024-02-17"
+description: Python에서 PDF 문서에서 텍스트를 검색, 검사 및 추출하는 방법을 알아봅니다.
+lastmod: "2026-06-10"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python에서 PDF 텍스트 검색 및 추출된 조각 검사
+Abstract: 이 문서에서는.NET을 통해 파이썬용 Aspose.PDF 를 사용하여 PDF 문서에서 텍스트를 검색하고 추출하는 방법을 설명합니다.영역 기반 추출, 페이지별 검색, 구문 매칭, 텍스트 위치 및 글꼴 속성 검사 등 'TextAbsorber'와 'TextFragmentAbsorber'에 대해 다룹니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF 페이지에서 텍스트 검색 및 가져오기",
-    "alternativeHeadline": "PDF 페이지에서 텍스트를 검색하고 가져오는 도구",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, 텍스트 검색, pdf에서 텍스트 가져오기",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 문서 팀",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/search-and-get-text-from-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/search-and-get-text-from-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "이 문서에서는 Aspose.PDF for .NET에서 다양한 도구를 사용하여 텍스트를 검색하고 가져오는 방법을 설명합니다."
-}
-</script>
 
+## PDF에서 텍스트 검색
 
-## PDF 문서의 모든 페이지에서 텍스트 검색 및 가져오기
+를 사용하여 PDF 문서의 정의된 사각형 영역에서 텍스트를 검색하고 추출합니다. `TextAbsorber` 수업.형식이 지정되지 않은 깔끔한 출력을 위해 순수 텍스트 서식 지정 모드를 사용하는데, 이는 머리글, 바닥글 또는 표 영역과 같은 구조화된 영역에서 콘텐츠를 추출하는 데 유용합니다.결합하여 `TextExtractionOptions` 과 `TextSearchOptions` 직사각형 구속조건을 사용하여 문자를 추출하는 위치와 방법을 제어할 수 있습니다.
 
-[TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber) 클래스는 PDF 문서의 모든 페이지에서 특정 구문과 일치하는 텍스트를 찾을 수 있게 해줍니다. 전체 문서에서 텍스트를 검색하려면 Pages 컬렉션의 Accept 메서드를 호출해야 합니다. [Accept](https://reference.aspose.com/pdf/python-net/aspose.pdf.page/accept/methods/3) 메서드는 TextFragmentAbsorber 객체를 매개변수로 사용하며, TextFragment 객체의 컬렉션을 반환합니다. 모든 프래그먼트를 반복하여 Text, Position (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor 등의 속성을 가져올 수 있습니다.
+PDF 텍스트 내용을 감사하거나, 분석을 위해 텍스트를 추출하거나, 일치하는 텍스트 조각의 위치 및 형식을 검사해야 할 때 이 페이지를 사용하십시오.
 
-다음 코드 스니펫은 모든 페이지에서 텍스트를 검색하는 방법을 보여줍니다.
+1. 'AP.Document'를 사용하여 PDF 파일을 로드합니다.
+1. 텍스트 추출 옵션을 구성합니다.
+1. 사각형 제약 조건을 사용하여 검색 영역을 정의합니다.
+1. 텍스트 흡수기 만들기 및 구성
+1. 문서의 모든 페이지를 처리합니다.
+1. 추출된 텍스트 검색 및 표시
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET를 참조하십시오.
-// 문서 디렉토리의 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+def text_absorber_search(input_file_path):
+    # Open PDF document
+    document = ap.Document(input_file_path)
 
-// 입력 검색 구문의 모든 인스턴스를 찾기 위한 TextAbsorber 객체 생성
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
+    text_extraction_options = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
+    text_search_options = ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
 
-// 모든 페이지에 대해 흡수기 수락
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    absorber = ap.text.TextAbsorber(text_extraction_options, text_search_options)
 
-// 추출된 텍스트 프래그먼트 가져오기
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    # Process all pages
+    document.pages.accept(absorber)
 
-// 프래그먼트를 반복
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-
-    Console.WriteLine("Text : {0} ", textFragment.Text);
-    Console.WriteLine("Position : {0} ", textFragment.Position);
-    Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
-    Console.WriteLine("YIndent : {0} ", textFragment.Position.YIndent);
-    Console.WriteLine("Font - Name : {0}", textFragment.TextState.Font.FontName);
-    Console.WriteLine("Font - IsAccessible : {0} ", textFragment.TextState.Font.IsAccessible);
-    Console.WriteLine("Font - IsEmbedded : {0} ", textFragment.TextState.Font.IsEmbedded);
-    Console.WriteLine("Font - IsSubset : {0} ", textFragment.TextState.Font.IsSubset);
-    Console.WriteLine("Font Size : {0} ", textFragment.TextState.FontSize);
-    Console.WriteLine("Foreground Color : {0} ", textFragment.TextState.ForegroundColor);
-}
+    print(f"Text fragments found: {absorber.text}")
 ```
 
+## 특정 PDF 페이지에서 텍스트 검색
 
-특정 PDF 페이지 내에서 텍스트를 검색해야 하는 경우, Document 인스턴스의 페이지 모음에서 페이지 번호를 지정하고 해당 페이지에 대해 Accept 메서드를 호출하세요 (아래 코드 줄에서 보여줌).
+Aspose.PDF TextAbsorber를 사용하여 PDF의 특정 페이지 및 영역에서 텍스트를 검색하고 추출할 수 있습니다.문서의 2페이지를 대상으로 하며 정의된 사각형 영역 내에 있는 텍스트만 추출합니다.
+텍스트 추출 옵션 (서식 제어용) 과 TextSearchOptions (영역 제한용) 를 결합하여 페이지별 정확한 텍스트 추출을 효율적으로 수행할 수 있습니다.
 
-```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET을 참조하세요.
-// 특정 페이지에 대해 흡수기를 수락합니다.
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+1. PDF 문서를 로드합니다.
+1. 텍스트 추출 옵션을 설정합니다.
+1. 텍스트 추출을 페이지의 특정 사각형 영역으로 제한합니다.
+1. 텍스트 흡수기 만들기 및 구성
+1. 특정 페이지를 처리합니다.
+1. 추출된 텍스트 검색 및 표시
+
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
+
+def text_absorber_search_page(input_file_path):
+    document = ap.Document(input_file_path)
+
+    text_extraction_options = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
+    text_search_options = ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+
+    absorber = ap.text.TextAbsorber(text_extraction_options, text_search_options)
+
+    # Only page 2
+    document.pages[2].accept(absorber)
+
+    print(f"Text fragments found: {absorber.text}")
 ```
 
-## PDF 문서의 모든 페이지에서 텍스트 세그먼트 검색 및 가져오기
+## PDF에서 상세한 텍스트 조각 속성 분석 및 추출
 
-모든 페이지에서 텍스트 세그먼트를 검색하려면, 먼저 문서에서 TextFragment 객체를 가져와야 합니다.
- TextFragmentAbsorber는 PDF 문서의 모든 페이지에서 특정 구문과 일치하는 텍스트를 찾을 수 있게 해줍니다. 문서 전체에서 텍스트를 검색하려면 Pages 컬렉션의 Accept 메서드를 호출해야 합니다. Accept 메서드는 TextFragmentAbsorber 객체를 매개변수로 받아들여, TextFragment 객체의 컬렉션을 반환합니다. 문서에서 TextFragmentCollection을 가져오면, 이 컬렉션을 순회하여 각 TextFragment 객체의 TextSegmentCollection을 가져와야 합니다. 그런 다음, 개별 TextSegment 객체의 모든 속성을 얻을 수 있습니다. 다음 코드 스니펫은 모든 페이지에서 텍스트 세그먼트를 검색하는 방법을 보여줍니다.
+원시 텍스트를 추출하는 TextAbsorber와 달리 TextFragmentAbsorber는 위치, 글꼴 특성, 색상, 임베딩 세부 정보 등 각 텍스트 조각에 대한 자세한 저수준 정보를 제공합니다.
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET을 참조하세요.
-// 문서 디렉토리의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. PDF 문서를 로드합니다.
+1. 텍스트 조각 흡수기를 초기화합니다.
+1. 문서의 모든 페이지를 처리합니다.
+1. 추출한 텍스트 조각을 반복합니다.
+1. 기본 텍스트 정보를 인쇄합니다.
+1. 글꼴 및 서식 세부 정보를 인쇄합니다.
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextPage.pdf");
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-// 입력 검색 구문의 모든 인스턴스를 찾기 위한 TextAbsorber 객체 생성
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("Figure");
-// 모든 페이지에 대해 absorber를 수락
-pdfDocument.Pages.Accept(textFragmentAbsorber);
-// 추출된 텍스트 프래그먼트 가져오기
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// 프래그먼트를 순회
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    foreach (TextSegment textSegment in textFragment.Segments)
-    {
-        Console.WriteLine("Text : {0} ", textSegment.Text);
-        Console.WriteLine("Position : {0} ", textSegment.Position);
-        Console.WriteLine("XIndent : {0} ", textSegment.Position.XIndent);
-        Console.WriteLine("YIndent : {0} ", textSegment.Position.YIndent);
-        Console.WriteLine("Font - Name : {0}", textSegment.TextState.Font.FontName);
-        Console.WriteLine("Font - IsAccessible : {0} ", textSegment.TextState.Font.IsAccessible);
-        Console.WriteLine("Font - IsEmbedded : {0} ", textSegment.TextState.Font.IsEmbedded);
-        Console.WriteLine("Font - IsSubset : {0} ", textSegment.TextState.Font.IsSubset);
-        Console.WriteLine("Font Size : {0} ", textSegment.TextState.FontSize);
-        Console.WriteLine("Foreground Color : {0} ", textSegment.TextState.ForegroundColor);
-    }
-}
+def text_fragment_absorber_search(input_file_path):
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber()
+    document.pages.accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
+        print("XIndent:", fragment.position.x_indent)
+        print("YIndent:", fragment.position.y_indent)
+        print("Font - Name:", fragment.text_state.font.font_name)
+        print("Font - IsAccessible:", fragment.text_state.font.is_accessible)
+        print("Font - IsEmbedded:", fragment.text_state.font.is_embedded)
+        print("Font - IsSubset:", fragment.text_state.font.is_subset)
+        print("Font Size:", fragment.text_state.font_size)
+        print("Foreground Color:", fragment.text_state.foreground_color)
 ```
 
-특정 페이지의 PDF에서 TextSegments를 검색하고 가져오려면 Accept(..) 메서드를 호출할 때 특정 페이지 인덱스를 지정해야 합니다. 다음 코드 줄을 참조하십시오.
+## 단일 PDF 페이지에서 특정 텍스트 문구 검색
 
-```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET를 방문하십시오.
-// 모든 페이지에 대해 흡수기를 수락합니다.
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+TextFragmentAbsorber를 사용하여 PDF 문서의 페이지 내에서 특정 텍스트 구문을 검색합니다.전체 문서를 검색하는 것과 달리 이 방법은 검색을 한 페이지로만 제한하므로 머리글, 바닥글 또는 특정 콘텐츠 섹션과 같은 대상 영역에서 텍스트의 존재 여부와 위치를 보다 효율적으로 확인할 수 있습니다.
+
+1. PDF 문서를 로드합니다.
+1. 검색 구문을 사용하여 텍스트 프래그먼트 업소버를 초기화합니다.
+1. 특정 페이지에 업소버를 적용합니다.
+1. 찾은 조각을 반복하세요.
+
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
+
+def text_fragment_absorber_search_page(input_file_path):
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber("whale")
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
-## 정규식을 사용하여 모든 페이지에서 텍스트 검색 및 가져오기
+## 누적 결과를 사용한 페이지별 텍스트 순차 검색
 
-TextFragmentAbsorber는 정규식을 기반으로 모든 페이지에서 텍스트를 검색하고 검색하는 데 도움이 됩니다.
- 먼저, 정규 표현식을 TextFragmentAbsorber 생성자에 구문으로 전달해야 합니다. 그 후, TextFragmentAbsorber 객체의 TextSearchOptions 속성을 설정해야 합니다. 이 속성은 TextSearchOptions 객체를 필요로 하며, 새 객체를 생성하는 동안 생성자에 true를 매개변수로 전달해야 합니다. 모든 페이지에서 일치하는 텍스트를 검색하려면 Pages 컬렉션의 Accept 메서드를 호출해야 합니다. TextFragmentAbsorber는 정규 표현식으로 지정된 조건에 맞는 모든 조각이 포함된 TextFragmentCollection을 반환합니다. 다음 코드 스니펫은 정규 표현식을 기반으로 모든 페이지에서 텍스트를 검색하고 가져오는 방법을 보여줍니다.
+Aspose.PDF TextFragmentAbsorber를 사용하여 PDF 문서의 여러 페이지에서 텍스트를 점진적으로 검색합니다.
+단일 페이지 또는 문서 전체 검색과 달리 이 방법을 사용하면 페이지를 순차적으로 처리하고 결과를 점진적으로 수집하며 페이지별 컨텍스트를 사용하여 텍스트 조각을 분석할 수 있습니다.이 방법은 대형 문서나 점진적 처리 워크플로우에 적합합니다.
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET를 참조하세요.
-// 문서 디렉터리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. PDF 문서를 로드합니다.
+1. TextFragmentAbsorber를 초기화하고 검색 구문을 설정합니다.
+1. 프로세스 첫 페이지.1페이지만 검색하세요.텍스트, 페이지 번호 및 위치를 인쇄합니다.명확성을 위해 분리된 페이지별 결과를 제공합니다.
+1. 다음 페이지를 순차적으로 처리합니다.2페이지로 이동하고 필요에 따라 문서의 나머지 부분을 계속 진행하십시오.'absorber.visit () '을 사용하면 방문한 모든 페이지의 결과가 누적됩니다.텍스트와 위치를 모두 보여 주는 누적 검색 결과를 인쇄합니다.
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionAll.pdf");
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-// 정규 표현식과 일치하는 모든 구문을 찾기 위해 TextAbsorber 객체 생성
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // 예: 1999-2000
+def text_fragment_absorber_sequential_search(input_file_path):
+    document = ap.Document(input_file_path)
 
-// 정규 표현식 사용을 지정하기 위해 텍스트 검색 옵션 설정
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.phrase = "whale"
 
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
+    # First page
+    document.pages[1].accept(absorber)
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Page:", fragment.page.number)
+        print("Position:", fragment.position)
 
-// 모든 페이지에 대해 흡수기 허용
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    print("--")
 
-// 추출된 텍스트 조각 가져오기
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    # Continue to next page
+    document.pages[2].accept(absorber)
+    absorber.visit(document)
 
-// 조각을 반복
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    Console.WriteLine("텍스트 : {0} ", textFragment.Text);
-    Console.WriteLine("위치 : {0} ", textFragment.Position);
-    Console.WriteLine("X 들여쓰기 : {0} ", textFragment.Position.XIndent);
-    Console.WriteLine("Y 들여쓰기 : {0} ", textFragment.Position.YIndent);
-    Console.WriteLine("글꼴 - 이름 : {0}", textFragment.TextState.Font.FontName);
-    Console.WriteLine("글꼴 - 접근 가능 여부 : {0} ", textFragment.TextState.Font.IsAccessible);
-    Console.WriteLine("글꼴 - 포함 여부 : {0} ", textFragment.TextState.Font.IsEmbedded);
-    Console.WriteLine("글꼴 - 부분 집합 여부 : {0} ", textFragment.TextState.Font.IsSubset);
-    Console.WriteLine("글꼴 크기 : {0} ", textFragment.TextState.FontSize);
-    Console.WriteLine("전경색 : {0} ", textFragment.TextState.ForegroundColor);
-}
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Page:", fragment.page.number)
+        print("Position:", fragment.position)
 ```
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET을 참조하세요.
-TextFragmentAbsorber textFragmentAbsorber;
-// 단어의 정확한 일치를 검색하기 위해 정규 표현식을 사용할 수 있습니다.
-textFragmentAbsorber = new TextFragmentAbsorber(@"\bWord\b", new TextSearchOptions(true));
+## 사각형 영역 내에서 대상 구문 검색
 
-// 문자열을 대문자 또는 소문자로 검색하기 위해 정규 표현식을 사용할 수 있습니다.
-textFragmentAbsorber = new TextFragmentAbsorber("(?i)Line", new TextSearchOptions(true));
+검색을 단일 페이지의 특정 사각형 영역으로 제한하면서 PDF에서 특정 문구를 검색합니다.
+구문 검색과 공간적 제약을 결합하면 전체 페이지나 문서를 스캔하지 않고도 지정된 영역에서 콘텐츠를 정확하게 찾을 수 있습니다.이는 콘텐츠가 예측 가능한 위치에 표시되는 양식, 머리글, 바닥글 또는 구조화된 보고서에 특히 유용합니다.
 
-// PDF 문서 내의 모든 문자열을 검색(모든 문자열을 구문 분석)하기 위해 다음 정규 표현식을 사용해보세요.
-textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
+1. PDF 문서를 로드합니다.
+1. 구문 및 사각형 제약 조건을 사용하여 TextFragmentAbsorber 초기화하기
+1. 페이지 2에 흡수제를 바릅니다.처리를 2페이지로 제한하여 불필요한 계산을 줄입니다.페이지별로 검색되도록 합니다.
+1. 발견된 조각을 반복하고 인쇄하기
 
-// 검색 문자열의 일치를 찾고 줄 바꿈까지 문자열 이후의 모든 것을 가져옵니다.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(?i)the ((.)*)");
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-// 정규식 일치 후의 텍스트를 찾기 위해 다음 정규 표현식을 사용하세요.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(?<=word).*");
+def text_fragment_absorber_search_phrase(input_file_path):
+    document = ap.Document(input_file_path)
 
-// PDF 문서 내의 하이퍼링크/URL을 검색하기 위해 다음 정규 표현식을 사용해보세요.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?");
+    absorber = ap.text.TextFragmentAbsorber(
+        "elephant", ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+    )
+
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
+## 정규 표현식을 사용하여 PDF에서 텍스트 패턴 검색
 
-## 정규 표현식을 기반으로 텍스트 검색 및 하이퍼링크 추가
+정규 표현식을 사용하여 PDF에서 텍스트 패턴을 검색합니다.TextFragmentAbsorber에서 정규식 모드를 활성화하면 숫자, 날짜, 가격, 좌표 또는 사용자 지정 텍스트 형식과 같은 복잡한 패턴을 찾을 수 있습니다.이 함수는 검색을 특정 페이지로 제한하므로 구조화된 데이터를 표적으로 추출하는 데 효과적입니다.
 
-정규 표현식을 기반으로 텍스트 구에 하이퍼링크를 추가하려면, 먼저 TextFragmentAbsorber를 사용하여 해당 정규 표현식과 일치하는 모든 구를 찾고 이러한 구에 하이퍼링크를 추가하십시오.
+1. PDF 문서를 로드합니다.
+1. 정규식 패턴으로 TextFragmentAbsorber를 초기화합니다.
+1. 페이지 2에 흡수제를 바릅니다.효율성과 정확성을 위해 검색을 2페이지로 제한합니다.이 페이지의 텍스트만 분석됩니다.
+1. 찾은 조각을 반복해서 살펴보세요.일치하는 텍스트 조각과 해당 좌표를 인쇄합니다.추출된 패턴의 정확한 위치 정보를 제공합니다.
 
-구를 찾아 하이퍼링크를 추가하려면:
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-1. 정규 표현식을 TextFragmentAbsorber 생성자의 매개변수로 전달합니다.
-2. 정규 표현식이 사용되는지 여부를 지정하는 TextSearchOptions 객체를 생성합니다.
-3. 일치하는 구를 TextFragments에 가져옵니다.
-4. 일치하는 항목을 반복하여 사각형 차원을 얻고, 전경색을 파란색으로 변경한 후(선택 사항 - 하이퍼링크처럼 보이도록 하기 위해) PdfContentEditor 클래스의 CreateWebLink(..) 메서드를 사용하여 링크를 생성합니다.
-5. Document 객체의 Save 메서드를 사용하여 업데이트된 PDF를 저장합니다. 다음 코드 스니펫은 정규 표현식을 사용하여 PDF 파일 내에서 텍스트를 검색하고 일치 항목에 하이퍼링크를 추가하는 방법을 보여줍니다.
+def text_fragment_absorber_search_regex(input_file_path):
+    document = ap.Document(input_file_path)
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하십시오.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// 입력 검색 구의 모든 인스턴스를 찾기 위한 흡수기 객체 생성
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("\\d{4}-\\d{4}");
-// 정규 표현식 검색 활성화
-absorber.TextSearchOptions = new TextSearchOptions(true);
-// 문서 열기
-PdfContentEditor editor = new PdfContentEditor();
-// 원본 PDF 파일 바인딩
-editor.BindPdf(dataDir + "SearchRegularExpressionPage.pdf");
-// 페이지에 대한 흡수기를 수락
-editor.Document.Pages[1].Accept(absorber);
+    absorber = ap.text.TextFragmentAbsorber(
+        r"\d+\.\d+", ap.text.TextSearchOptions(is_regular_expression_used=True)
+    )
 
-int[] dashArray = { };
-String[] LEArray = { };
-System.Drawing.Color blue = System.Drawing.Color.Blue;
+    document.pages[2].accept(absorber)
 
-// 조각들을 반복
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    System.Drawing.Rectangle rect = new System.Drawing.Rectangle((int)textFragment.Rectangle.LLX,
-        (int)Math.Round(textFragment.Rectangle.LLY), (int)Math.Round(textFragment.Rectangle.Width + 2),
-        (int)Math.Round(textFragment.Rectangle.Height + 1));
-    Enum[] actionName = new Enum[2] { Aspose.Pdf.Annotations.PredefinedAction.Document_AttachFile, Aspose.Pdf.Annotations.PredefinedAction.Document_ExtractPages };
-    editor.CreateWebLink(rect, "http:// Www.aspose.com", 1, blue, actionName);
-    editor.CreateLine(rect, "", (float)textFragment.Rectangle.LLX + 1, (float)textFragment.Rectangle.LLY - 1,
-        (float)textFragment.Rectangle.URX, (float)textFragment.Rectangle.LLY - 1, 1, 1, blue, "S", dashArray, LEArray);
-}
-
-dataDir = dataDir + "SearchTextAndAddHyperlink_out.pdf";
-editor.Save(dataDir);
-editor.Close();
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
+## TextFragmentAbsorber를 사용하여 텍스트 일치 항목을 PDF의 하이퍼링크로 변환
 
-## 각 TextFragment 주위에 사각형을 검색하고 그리기
+PDF에서 특정 텍스트 구문을 검색하고 클릭 가능한 하이퍼링크로 변환할 수 있습니다.정규식 패턴과 함께 TextFragmentAbsorber를 사용하여 대상 단어를 찾고 대화형 링크와 함께 시각적 스타일 (색상 및 밑줄) 을 적용합니다.
 
-Aspose.PDF for .NET은 각 문자 또는 텍스트 조각의 좌표를 검색하고 가져오는 기능을 지원합니다. 따라서 각 문자에 대해 반환되는 좌표가 확실하도록 각 문자 주위에 사각형을 추가하여 강조 표시하는 것을 고려할 수 있습니다.
+1. PDF 문서를 로드합니다.
+1. 정규식 패턴으로 TextFragmentAbsorber를 초기화합니다.
+1. 페이지 1에 흡수제를 바릅니다.
+1. 매치에 스타일 지정 및 하이퍼링크 추가
+1. 수정된 PDF를 저장합니다.
 
-텍스트 단락의 경우 일부 정규식을 사용하여 단락 구분을 결정하고 그 주위에 사각형을 그리는 것을 고려할 수 있습니다. 다음 코드 스니펫을 살펴보세요. 다음 코드 스니펫은 각 문자의 좌표를 가져오고 각 문자 주위에 사각형을 만듭니다.
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET을 참조하세요.
-// 문서 디렉토리의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+def text_fragment_absorber_search_and_add_hyperlink(input_file_path):
+    document = ap.Document(input_file_path)
 
-// 문서 열기
-Document document = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+    absorber = ap.text.TextFragmentAbsorber("whale|elephant")
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-// 정규식과 일치하는 모든 구문을 찾기 위한 TextAbsorber 객체 생성
+    absorber.visit(document.pages[1])
 
-TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(@"[\S]+");
+    for fragment in absorber.text_fragments:
+        fragment.text_state.foreground_color = ap.Color.blue
+        fragment.text_state.underline = True
+        fragment.hyperlink = ap.WebHyperlink(
+            f"https://en.wikipedia.org/wiki/{fragment.text}"
+        )
 
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-
-textAbsorber.TextSearchOptions = textSearchOptions;
-
-document.Pages.Accept(textAbsorber);
-
-var editor = new PdfContentEditor(document);
-
-foreach (TextFragment textFragment in textAbsorber.TextFragments)
-{
-    foreach (TextSegment textSegment in textFragment.Segments)
-    {
-        DrawBox(editor, textFragment.Page.Number, textSegment, System.Drawing.Color.Red);
-    }
-
-}
-dataDir = dataDir + "SearchTextAndDrawRectangle_out.pdf";
-document.Save(dataDir);
+    output = input_file_path.replace("in.pdf", "out.pdf")
+    document.save(output)
 ```
 
+## 텍스트 조각 흡수기를 사용하여 PDF에서 스타일이 지정된 텍스트 검색 및 식별
 
-## PDF 문서에서 각 문자 강조
+내용이 아닌 서식 속성을 기준으로 PDF에서 텍스트 부분을 검색합니다.TextFragmentAbsorber를 사용하여 굵은 텍스트와 같은 특정 스타일의 텍스트를 식별합니다.
 
-{{% alert color="primary" %}}
+1. PDF 문서를 로드합니다.
+1. 텍스트 조각 흡수기를 초기화합니다.
+1. 페이지 1에 흡수제를 바릅니다.
+1. 서식을 기반으로 텍스트 조각을 검사합니다.글꼴 스타일에 굵은 글꼴이 있는지 확인합니다.
 
-Aspose.PDF를 사용하여 문서에서 텍스트를 검색하고 결과를 온라인으로 확인할 수 있습니다. 이 [링크](https://products.aspose.app/pdf/search)에서 가능합니다.
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-{{% /alert %}}
+def text_fragment_absorber_search_styled_text(input_file_path):
+    document = ap.Document(input_file_path)
 
-Aspose.PDF for .NET은 각 문자 또는 텍스트 조각의 좌표를 검색하는 기능을 지원합니다. 따라서 각 문자에 대해 반환되는 좌표에 대해 확신하기 위해 각 문자 주위에 직사각형을 추가하여 강조하는 것을 고려할 수 있습니다. 다음 코드 스니펫은 각 문자의 좌표를 가져오고 각 문자 주위에 직사각형을 만듭니다.
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET을 참조하세요.
-// 문서 디렉토리의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    absorber.visit(document.pages[1])
 
-int resolution = 150;
-
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "input.pdf");
-
-using (MemoryStream ms = new MemoryStream())
-{
-    PdfConverter conv = new PdfConverter(pdfDocument);
-    conv.Resolution = new Resolution(resolution, resolution);
-    conv.GetNextImage(ms, System.Drawing.Imaging.ImageFormat.Png);
-
-    Bitmap bmp = (Bitmap)Bitmap.FromStream(ms);
-
-    using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bmp))
-    {
-        float scale = resolution / 72f;
-        gr.Transform = new System.Drawing.Drawing2D.Matrix(scale, 0, 0, -scale, 0, bmp.Height);
-
-        for (int i = 0; i < pdfDocument.Pages.Count; i++)
-        {
-Page page = pdfDocument.Pages[1];
-// 모든 단어를 찾기 위해 TextAbsorber 객체 생성
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
-page.Accept(textFragmentAbsorber);
-// 추출된 텍스트 조각 가져오기
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// 조각을 순회
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    if (i == 0)
-    {
-        gr.DrawRectangle(
-        Pens.Yellow,
-        (float)textFragment.Position.XIndent,
-        (float)textFragment.Position.YIndent,
-        (float)textFragment.Rectangle.Width,
-        (float)textFragment.Rectangle.Height);
-
-        for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
-        {
-TextSegment segment = textFragment.Segments[segNum];
-
-for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
-{
-    CharInfo characterInfo = segment.Characters[charNum];
-
-    Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
-    Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
-          "   TextFragment URY = " + textFragment.Rectangle.URY);
-
-    gr.DrawRectangle(
-    Pens.Black,
-    (float)characterInfo.Rectangle.LLX,
-    (float)characterInfo.Rectangle.LLY,
-    (float)characterInfo.Rectangle.Width,
-    (float)characterInfo.Rectangle.Height);
-}
-
-gr.DrawRectangle(
-Pens.Green,
-(float)segment.Rectangle.LLX,
-(float)segment.Rectangle.LLY,
-(float)segment.Rectangle.Width,
-(float)segment.Rectangle.Height);
-        }
-    }
-}
-        }
-    }
-    dataDir = dataDir + "HighlightCharacterInPDF_out.png";
-    bmp.Save(dataDir, System.Drawing.Imaging.ImageFormat.Png);
-}
+    for fragment in absorber.text_fragments:
+        if fragment.text_state.font_style == ap.text.FontStyles.BOLD:
+            print(f"Bold: {fragment.text}")
+        if fragment.text_state.invisible:
+            print(f"Invisible: {fragment.text}")
 ```
 
+## PDF 페이지의 시각적 텍스트 강조
 
-## 숨겨진 텍스트 추가 및 검색
+이 기능은 텍스트 인식과 렌더링을 단일 워크플로우로 결합합니다.텍스트를 추출할 뿐만 아니라 각 페이지의 PNG 이미지에서 색상으로 구분된 사각형의 조각, 세그먼트 및 문자를 강조 표시하여 텍스트를 시각화합니다.
 
-때때로 우리는 PDF 문서에 숨겨진 텍스트를 추가한 후 숨겨진 텍스트를 검색하고 그 위치를 후처리에 사용하고자 합니다. 귀하의 편의를 위해 Aspose.PDF for .NET은 이러한 기능을 제공합니다. 문서 생성 중에 숨겨진 텍스트를 추가할 수 있습니다. 또한 TextFragmentAbsorber를 사용하여 숨겨진 텍스트를 찾을 수 있습니다. 숨겨진 텍스트를 추가하려면 추가된 텍스트의 TextState.Invisible을 'true'로 설정하십시오. TextFragmentAbsorber는 패턴과 일치하는 모든 텍스트를 찾습니다(지정된 경우). 이는 변경할 수 없는 기본 동작입니다. 발견된 텍스트가 실제로 보이지 않는지 확인하려면 TextState.Invisible 속성을 사용할 수 있습니다. 아래 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다.
+이 예제에서는 다음과 같은 방법으로 PDF에서 고급 텍스트 시각화를 수행합니다.
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 을 참조하세요
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+- 정규 표현식을 사용하여 보이는 모든 텍스트 조각 검색
+- 각 PDF 페이지를 고해상도 PNG 이미지로 렌더링
+- 텍스트 조각, 텍스트 세그먼트 및 개별 문자 주위에 색상이 지정된 사각형 그리기
 
-//숨겨진 텍스트로 문서 생성
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-Page page = doc.Pages.Add();
-TextFragment frag1 = new TextFragment("This is common text.");
-TextFragment frag2 = new TextFragment("This is invisible text.");
+1. 출력 이미지 해상도를 설정합니다.각 PDF 페이지는 150DPI PNG 이미지로 변환됩니다.
+1. PDF를 열고 텍스트 흡수기를 초기화합니다.
+1. 각 페이지를 처리합니다.모든 페이지에 흡수제를 바릅니다.감지된 모든 텍스트 조각과 그 기하학적 위치를 수집하세요.
+1. 페이지를 PNG 스트림으로 변환합니다.
+1. 그리기를 위한 그래픽스 객체 준비
+1. 좌표 변환 적용PDF 좌표를 이미지 픽셀로 변환합니다.
+1. 텍스트 요소에 사각형을 그립니다.
+1. 결과를 저장합니다.
 
-//텍스트 속성 설정 - 보이지 않음
-frag2.TextState.Invisible = true;
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-page.Paragraphs.Add(frag1);
-page.Paragraphs.Add(frag2);
-doc.Save(dataDir + "39400_out.pdf");
-doc.Dispose();
+def text_fragment_absorber_search_and_highlight(infile):
+    resolution = 150
+    png_device = ap.devices.PngDevice(ap.devices.Resolution(resolution, resolution))
 
-//문서에서 텍스트 검색
-doc = new Aspose.Pdf.Document(dataDir + "39400_out.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-absorber.Visit(doc.Pages[1]);
+    # Open PDF document
+    document = ap.Document(infile)
+    absorber = ap.text.TextFragmentAbsorber(r"[\S]+")
+    absorber.text_search_options.is_regular_expression_used = True
 
-foreach (TextFragment fragment in absorber.TextFragments)
-{
-    //조각으로 작업 수행
-    Console.WriteLine("Text '{0}' on pos {1} invisibility: {2} ",
-    fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
-}
-doc.Dispose();
+    for page in document.pages:
+        page.accept(absorber)
+        stream = io.BytesIO()
+        png_device.process(page, stream)
+        with drawing.Bitmap.from_stream(stream) as bmp:
+            with drawing.Graphics.from_image(bmp) as gr:
+                scale = resolution / 72
+                gr.transform = drawing.drawing2d.Matrix(
+                    float(scale),
+                    float(0),
+                    float(0),
+                    float(-scale),
+                    float(0),
+                    float(bmp.height),
+                )
+                text_fragment_collection = absorber.text_fragments
+                # Loop through the fragments
+                for text_fragment in text_fragment_collection:
+                    gr.draw_rectangle(
+                        drawing.Pens.yellow,
+                        float(text_fragment.position.x_indent),
+                        float(text_fragment.position.y_indent),
+                        float(text_fragment.rectangle.width),
+                        float(text_fragment.rectangle.height),
+                    )
+                    for seg_num in range(1, len(text_fragment.segments) + 1):
+                        segment = text_fragment.segments[seg_num]
+                        for char_num in range(1, len(segment.characters) + 1):
+                            character_info = segment.characters[char_num]
+                            rect = page.get_page_rect(True)
+                            print(
+                                f"TextFragment = {text_fragment.text}"
+                                + f" Page URY = {rect.ury}"
+                                + f" TextFragment URY = {text_fragment.rectangle.ury}"
+                            )
+                            gr.draw_rectangle(
+                                drawing.Pens.black,
+                                float(character_info.rectangle.llx),
+                                float(character_info.rectangle.lly),
+                                float(character_info.rectangle.width),
+                                float(character_info.rectangle.height),
+                            )
+                        gr.draw_rectangle(
+                            drawing.Pens.green,
+                            float(segment.rectangle.llx),
+                            float(segment.rectangle.lly),
+                            float(segment.rectangle.width),
+                            float(segment.rectangle.height),
+                        )
+
+                # Save result
+                bmp.save(
+                    infile.replace("_in.pdf", str(page.number) + "_out.png"),
+                    drawing.imaging.ImageFormat.png,
+                )
 ```
 
+## 관련 텍스트 주제
 
-## .NET Regex로 텍스트 검색하기
-
-Aspose.PDF for .NET은 표준 .NET Regex 옵션을 사용하여 문서를 검색할 수 있는 기능을 제공합니다. TextFragmentAbsorber는 아래의 코드 샘플에서와 같이 이 목적에 사용될 수 있습니다.
-
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET를 참조하세요.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// 모든 단어를 찾기 위한 Regex 객체 생성
-System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"[\S]+");
-
-// 문서 열기
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "SearchTextRegex.pdf");
-
-// 특정 페이지 가져오기
-Page page = document.Pages[1];
-
-// 입력된 정규 표현식의 모든 인스턴스를 찾기 위한 TextAbsorber 객체 생성
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(regex);
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
-
-// 페이지에 대한 흡수기 허용
-page.Accept(textFragmentAbsorber);
-
-// 추출된 텍스트 조각들 가져오기
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// 조각을 루프 처리
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    Console.WriteLine(textFragment.Text);
-}
-```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 조작 라이브러리 for .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Python을 사용하여 PDF에서 텍스트 작업하기](/pdf/ko/python-net/working-with-text/)
+- [파이썬을 통해 PDF의 텍스트 바꾸기](/pdf/ko/python-net/replace-text-in-pdf/)
+- [Python에서 PDF 텍스트에 툴팁 추가](/pdf/ko/python-net/pdf-tooltip/)
+- [PDF에 텍스트 추가](/pdf/ko/python-net/add-text-to-pdf-file/)

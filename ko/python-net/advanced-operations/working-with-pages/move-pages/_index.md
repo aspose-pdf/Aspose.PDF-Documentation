@@ -1,161 +1,110 @@
 ---
-title: Python을 통해 PDF 페이지를 프로그래밍 방식으로 이동
+title: 파이썬에서 PDF 페이지 이동
 linktitle: PDF 페이지 이동
 type: docs
 weight: 100
 url: /ko/python-net/move-pages/
-description: Aspose.PDF for Python via .NET을 사용하여 원하는 위치 또는 PDF 파일의 끝으로 페이지를 이동해 보세요.
-lastmod: "2023-04-17"
+description: Python에서 문서 내에서 또는 문서 간에 PDF 페이지를 이동하는 방법을 알아봅니다.
+lastmod: "2026-06-10"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python에서 문서 간에 PDF 페이지 이동
+Abstract: 이 문서에서는.NET을 통해 파이썬용 Aspose.PDF 를 사용하여 PDF의 페이지를 이동하는 방법을 설명합니다.한 페이지 또는 여러 페이지를 다른 문서로 이동하는 방법과 문서 및 PageCollection API를 사용하여 동일한 PDF 내에서 페이지 위치를 변경하는 방법을 알아봅니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Python을 통해 PDF 페이지를 프로그래밍 방식으로 이동",
-    "alternativeHeadline": "Python으로 PDF 페이지를 이동하는 방법",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, pdf 페이지 이동",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/move-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/move-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Aspose.PDF for Python via .NET을 사용하여 원하는 위치 또는 PDF 파일의 끝으로 페이지를 이동해 보세요."
-}
-</script>
 
+## 한 PDF 문서에서 다른 PDF 문서로 페이지 이동
 
-## 하나의 PDF 문서에서 다른 문서로 페이지 이동
+Python용 Aspose.PDF 를 사용하면 한 PDF에서 다른 PDF로 페이지 (단순히 복사하는 것이 아님) 를 이동할 수 있습니다.원본 문서에서 선택한 페이지를 제거한 다음 새 PDF 파일에 추가합니다.
 
-이 주제는 Python을 사용하여 하나의 PDF 문서에서 다른 문서의 끝으로 페이지를 이동하는 방법을 설명합니다.
-페이지를 이동하려면 다음을 수행해야 합니다:
+한 책에서 한 페이지를 잘라내어 다른 책에 붙이는 것으로 생각하시면 됩니다. 이동 후에는 원본 파일에 해당 페이지가 더 이상 존재하지 않습니다.
 
-1. 원본 PDF 파일로 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스 객체를 생성합니다.
-1. 대상 PDF 파일로 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스 객체를 생성합니다.
-1. [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 컬렉션에서 페이지를 가져옵니다.
-1. 대상 문서에 페이지를 [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 합니다.
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 메서드를 사용하여 출력 PDF를 저장합니다.
-1. 원본 문서에서 페이지를 [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 합니다.
-
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 메서드를 사용하여 소스 PDF를 저장합니다.
+1. 를 사용하여 소스 PDF 문서 열기 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 수업.
+1. 이동할 특정 페이지 (이 경우 2페이지) 를 선택합니다. 이는 a를 나타냅니다. [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. 새 PDF 문서 만들기 (다른 PDF 문서 인스턴스화) [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
+1. 대상 문서를 사용하여 선택한 페이지를 새 PDF 문서에 추가합니다. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (예: `another_document.pages.add(page)`).
+1. 해당 문서를 통해 원본 문서에서 페이지를 삭제합니다. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (예: `document.pages.delete(index)`).
+1. 두 문서를 모두 저장합니다.
 
 다음 코드 스니펫은 한 페이지를 이동하는 방법을 보여줍니다.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
 
-    srcDocument = ap.Document(src_file_name)
-    dstDocument = ap.Document(dst_File_name)
-    page = srcDocument.pages[2]
-    dstDocument.pages.add(page)
-    # 출력 파일 저장
-    dstDocument.save(dst_File_name_new)
-    srcDocument.pages.delete(2)
-    srcDocument.save(src_file_name_new)
+    document = ap.Document(input_file_name)
+    page = document.pages[2]
+    another_document = ap.Document()
+    another_document.pages.add(page)
+    document.pages.delete(2)
+    document.save(input_file_name.replace(".pdf", "_new.pdf"))
+    another_document.save(output_file_name)
 ```
 
-## 여러 페이지를 한 PDF 문서에서 다른 문서로 이동
+## 한 PDF 문서에서 다른 PDF 문서로 여러 페이지 이동
 
-1. 소스 PDF 파일로 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스 객체를 생성합니다.
-1. 대상 PDF 파일로 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스 객체를 생성합니다.
-1. 이동할 페이지 번호로 배열을 정의합니다.
-1. 배열을 통해 루프 실행:
+복사와 달리 이 작업은 선택한 페이지를 전송합니다. 즉, 소스 파일에서 페이지를 제거하고 새 PDF에 저장합니다.
 
-1. [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 컬렉션에서 페이지를 가져옵니다.
-1. 대상 문서에 [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 페이지를 추가합니다.
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 메서드를 사용하여 출력 PDF를 저장합니다.
-1. 배열을 사용하여 소스 문서에서 [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 페이지를 삭제합니다.
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 메서드를 사용하여 소스 PDF를 저장합니다.
+1. 비어 있는 새 대상 문서 만들기 (`Document`).
+1. 소스 문서에서 여러 페이지 (이 경우 1페이지와 3페이지) 를 선택합니다. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 선택한 페이지를 반복하여 대상 문서에 각 페이지를 추가합니다. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 이동한 페이지가 포함된 대상 문서를 저장합니다.
+1. 소스 문서를 사용하여 이동한 페이지를 소스 문서에서 삭제합니다. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 수정된 소스 문서를 새 파일 이름으로 저장하여 두 버전을 모두 보존합니다.
 
-다음 코드 스니펫은 PDF 파일의 끝에 빈 페이지를 삽입하는 방법을 보여줍니다.
+다음 코드 스니펫은 여러 페이지를 이동하는 방법을 보여줍니다.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    srcDocument = ap.Document(input_pdf)
-    dstDocument = ap.Document()
-    pages = [1, 3]
+def move_multiple_pages_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
+    dst_document = ap.Document()
+    pages = [1, 2]
     for page_index in pages:
-        page = srcDocument.pages[page_index]
-        dstDocument.pages.add(page)
-    # 출력 파일 저장
-    dstDocument.save(output_pdf_1)
-    srcDocument.pages.delete(pages)
-    srcDocument.save(output_pdf_2)
+        page = src_document.pages[page_index]
+        dst_document.pages.add(page)
+    # Save output files
+    dst_document.save(output_file_name)
+    src_document.pages.delete(pages)
+    src_document.save(input_file_name.replace(".pdf", "_new.pdf"))
 ```
 
+## 페이지를 동일한 PDF 문서의 새 위치로 이동
 
-## 현재 PDF 문서에서 페이지를 새 위치로 이동
+PDF 레이아웃을 재구성하거나 편집할 때 일반적으로 필요한 동일한 문서 내의 특정 페이지를 다른 위치로 이동하는 방법을 보여줍니다.
 
-1. 소스 PDF 파일로 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스 객체를 만듭니다.
-1. [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 컬렉션에서 페이지를 가져옵니다.
-1. 페이지를 새 위치에 [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods)합니다 (예: 끝으로).
-1. 이전 위치에서 페이지를 [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) 합니다.
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 메서드를 사용하여 출력 PDF를 저장합니다.
+1. 를 사용하여 입력 PDF 문서를 로드합니다. [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 수업.
+1. 이동할 페이지를 선택합니다 (페이지 2) — 이것은 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. 문서의 끝에 해당 문서를 사용하여 추가합니다. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 를 통해 이전 위치에서 원본 페이지를 삭제합니다. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 수정한 문서를 새 파일로 저장합니다.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_in_new_location_in_same_document(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
 
-    srcDocument = ap.Document(input_pdf)
+    page = src_document.pages[2]
+    src_document.pages.add(page)
+    src_document.pages.delete(2)
 
-    page = srcDocument.pages[2]
-    srcDocument.pages.add(page)
-    srcDocument.pages.delete(2)
+    # Save output file
+    src_document.save(output_file_name)
+```
 
-    # 출력 파일 저장
-    srcDocument.save(output_pdf)
+## 관련 페이지 주제
+
+- [파이썬에서 PDF 페이지 작업하기](/pdf/ko/python-net/working-with-pages/)
+- [파이썬에서 PDF 페이지 추가](/pdf/ko/python-net/add-pages/)
+- [파이썬에서 PDF 페이지 삭제](/pdf/ko/python-net/delete-pages/)
+- [파이썬으로 PDF 페이지 추출하기](/pdf/ko/python-net/extract-pages/)

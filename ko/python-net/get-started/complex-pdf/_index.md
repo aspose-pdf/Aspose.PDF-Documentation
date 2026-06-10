@@ -4,59 +4,65 @@ linktitle: 복잡한 PDF 만들기
 type: docs
 weight: 30
 url: /ko/python-net/complex-pdf-example/
-description: Aspose.PDF for Python via .NET을 사용하면 하나의 문서에 이미지, 텍스트 조각 및 테이블이 포함된 더 복잡한 문서를 만들 수 있습니다.
-lastmod: "2022-12-22"
+description: .NET을 통한 Python용 Aspose.PDF 를 사용하면 하나의 문서에 이미지, 텍스트 조각 및 테이블을 포함하는 더 복잡한 문서를 만들 수 있습니다.
+lastmod: "2026-06-10"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 파이썬을 사용하여 복잡한 PDF 만들기
+Abstract: 이 문서에서는 Python과 Aspose.PDF 를 사용하여 더 복잡한 PDF 문서를 만드는 방법을 설명함으로써 “Hello, World” 예제에서 설명한 기본 PDF 작성 프로세스를 확장합니다.예제 문서는 가상의 여객 페리 서비스 회사를 위해 개발되었으며 이미지, 두 개의 텍스트 부분 (머리글과 단락) 및 표를 포함합니다.이 프로세스에는 '문서' 객체를 인스턴스화하여 빈 PDF를 만들고, '페이지'를 추가한 다음, 페이지에 '이미지'를 삽입하는 등 여러 단계가 포함됩니다.크기가 24pt이고 가운데 정렬된 Arial 글꼴을 사용하여 머리글에 'TextFragment'를 만든 다음 페이지의 단락에 추가합니다.설명을 위해 두 번째 `TextFragment`가 추가되었는데, 14pt 크기의 Times New Roman 글꼴을 왼쪽 정렬하여 사용합니다.그런 다음 특정 열 너비, 테두리 및 패딩으로 표를 만들고 서식을 지정합니다.테이블에는 강조 표시된 셀이 있는 헤더 행과 반복을 통해 생성된 여러 데이터 행이 포함됩니다.
 ---
 
-[Hello, World](/pdf/ko/python-net/hello-world-example/) 예제는 Python과 Aspose.PDF를 사용하여 PDF 문서를 만드는 간단한 단계를 보여주었습니다. 이 글에서는 Aspose.PDF for Python을 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예제로 여객 페리 서비스를 운영하는 가상의 회사의 문서를 가져오겠습니다. 우리의 문서에는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 그리고 테이블이 포함될 것입니다.
+더 [헬로, 월드](/pdf/ko/python-net/hello-world-example/) 예제에서는 Python과 Aspose.PDF 를 사용하여 PDF 문서를 만드는 간단한 단계를 보여 주었습니다.이 글에서는 Aspose.PDF for Python을 사용하여 좀 더 복잡한 문서를 만드는 방법을 살펴보겠습니다.여객 페리 서비스를 운영하는 가상 회사의 문서를 예로 들어 보겠습니다.문서에는 이미지, 텍스트 조각 2개 (머리글과 단락), 표 한 개가 포함됩니다.
 
-문서를 처음부터 만들려면 특정 단계를 따라야 합니다:
+처음부터 문서를 만들려면 특정 단계를 따라야 합니다.
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 객체를 인스턴스화합니다. 이 단계에서는 메타데이터가 포함된 빈 PDF 문서를 생성하지만 페이지는 없습니다.
-1. 문서 객체에 [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)를 추가합니다. 이제 문서에 한 페이지가 추가됩니다.
-1. 페이지에 [Image](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/)를 추가합니다.
-1. 헤더를 위한 [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/)를 생성합니다. 헤더에는 Arial 폰트, 글꼴 크기 24pt, 가운데 정렬을 사용할 것입니다.
-1. 페이지 [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties)에 헤더를 추가합니다.
-1. 설명을 위한 [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/)를 생성합니다. 설명에는 Arial 폰트, 글꼴 크기 24pt, 가운데 정렬을 사용할 것입니다.
-1. 페이지의 Paragraphs에 설명을 추가합니다.
-1. 테이블을 생성하고, 테이블 속성을 추가합니다.
-
-1. 페이지에 (테이블)을 추가합니다 [단락](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
-1. 문서를 저장합니다 "Complex.pdf".
+1. a 인스턴스화 [문서](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 목적.이 단계에서는 페이지가 없는 일부 메타데이터가 포함된 빈 PDF 문서를 만들 것입니다.
+1. 추가 [페이지](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 문서 객체에.자, 이제 문서는 한 페이지가 됩니다.
+1. 추가 [이미지](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/) 페이지로.
+1. 만들기 [텍스트 프래그먼트](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) 헤더용.헤더에는 글꼴 크기가 24pt이고 가운데 정렬이 적용된 Arial 글꼴을 사용합니다.
+1. 페이지에 헤더 추가 [문단](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. 만들기 [텍스트 프래그먼트](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) 설명을 위해.설명에는 글꼴 크기가 24pt이고 가운데 정렬이 적용된 Arial 글꼴을 사용합니다.
+1. 페이지 단락에 설명을 추가합니다.
+1. 테이블 만들기 및 스타일 지정열 너비, 테두리, 패딩 및 글꼴을 설정합니다.
+1. 페이지에 표 추가 [문단](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+1. “Complex.pdf” 문서를 저장합니다.
 
 ```python
+from datetime import timedelta
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 문서 객체 초기화
+def run_complex(self):
+
+    # Initialize document object
     document = ap.Document()
-    # 페이지 추가
+    # Add page
     page = document.pages.add()
 
-    # 이미지 추가
-    page.add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
+    # Add image
+    imageFileName = self.data_dir + "logo.png"
+    page.add_image(imageFileName, ap.Rectangle(20, 730, 120, 830, True))
 
-    # 헤더 추가
-    header = ap.text.TextFragment("2020년 가을 새로운 페리 노선")
+    # Add Header
+    header = ap.text.TextFragment("New ferry routes in Fall 2029")
     header.text_state.font = ap.text.FontRepository.find_font("Arial")
     header.text_state.font_size = 24
     header.horizontal_alignment = ap.HorizontalAlignment.CENTER
     header.position = ap.text.Position(130, 720)
     page.paragraphs.add(header)
 
-    # 설명 추가
-    descriptionText = "방문객은 온라인으로 티켓을 구매해야 하며, 티켓은 하루에 5,000개로 제한됩니다. \
-    페리 서비스는 절반 용량으로 운영되며 일정이 축소됩니다. 대기줄을 예상하세요."
+    # Add description
+    descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. \
+    Ferry service is operating at half capacity and on a reduced schedule. Expect lineups."
     description = ap.text.TextFragment(descriptionText)
     description.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
     description.text_state.font_size = 14
     description.horizontal_alignment = ap.HorizontalAlignment.LEFT
     page.paragraphs.add(description)
 
-    # 테이블 추가
+    # Add table
     table = ap.Table()
 
     table.column_widths = "200"
@@ -67,13 +73,15 @@ sitemap:
     table.default_cell_text_state.font = ap.text.FontRepository.find_font("Helvetica")
 
     headerRow = table.rows.add()
-    headerRow.cells.add("출발 도시")
-    headerRow.cells.add("출발 섬")
+    headerRow.cells.add("Departs City")
+    headerRow.cells.add("Departs Island")
 
     i = 0
     while i < headerRow.cells.count:
         headerRow.cells[i].background_color = ap.Color.gray
-        headerRow.cells[i].default_cell_text_state.foreground_color = ap.Color.white_smoke
+        headerRow.cells[
+            i
+        ].default_cell_text_state.foreground_color = ap.Color.white_smoke
         i += 1
 
     time = timedelta(hours=6, minutes=0)
@@ -89,5 +97,5 @@ sitemap:
 
     page.paragraphs.add(table)
 
-    document.save(output_pdf)
+    document.save(self.data_dir + "Complex.pdf")
 ```
