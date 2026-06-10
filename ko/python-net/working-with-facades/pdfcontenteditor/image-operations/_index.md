@@ -1,5 +1,6 @@
 ---
 title: 이미지 오퍼레이션
+linktitle: 이미지 오퍼레이션
 type: docs
 weight: 60
 url: /ko/python-net/image-operations/

@@ -1,5 +1,6 @@
 ---
 title: PDF를 단일 페이지로 분할
+linktitle: PDF를 단일 페이지로 분할
 type: docs
 weight: 30
 url: /ko/python-net/split-pdf-into-single-pages/

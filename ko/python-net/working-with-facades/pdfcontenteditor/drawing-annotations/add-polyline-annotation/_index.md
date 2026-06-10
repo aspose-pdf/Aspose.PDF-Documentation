@@ -1,5 +1,6 @@
 ---
 title: 폴리라인 주석 추가
+linktitle: 폴리라인 주석 추가
 type: docs
 weight: 50
 url: /ko/python-net/add-polyline-annotation/

@@ -1,5 +1,6 @@
 ---
 title: PDF에 바닥글 추가
+linktitle: PDF에 바닥글 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-footer/

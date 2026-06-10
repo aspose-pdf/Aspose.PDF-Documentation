@@ -1,5 +1,6 @@
 ---
 title: PDF에서 이미지 삭제
+linktitle: PDF에서 이미지 삭제
 type: docs
 weight: 20
 url: /ko/python-net/delete-images/

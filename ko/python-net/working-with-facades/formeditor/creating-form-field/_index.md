@@ -1,5 +1,6 @@
 ---
 title: 양식 필드 만들기
+linktitle: 양식 필드 만들기
 type: docs
 weight: 50
 url: /ko/python-net/creating-form-field/

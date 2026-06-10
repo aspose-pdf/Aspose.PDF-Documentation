@@ -1,5 +1,6 @@
 ---
 title: XFA 데이터 교체
+linktitle: XFA 데이터 교체
 type: docs
 weight: 50
 url: /ko/python-net/replace-xfa-data/

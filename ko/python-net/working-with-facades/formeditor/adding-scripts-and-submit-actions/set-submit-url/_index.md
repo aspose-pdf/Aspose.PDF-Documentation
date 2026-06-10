@@ -1,5 +1,6 @@
 ---
 title: 제출 URL 설정
+linktitle: 제출 URL 설정
 type: docs
 weight: 40
 url: /ko/python-net/set-submit-url/

@@ -1,5 +1,6 @@
 ---
 title: 북마크 작업 추가
+linktitle: 북마크 작업 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-bookmark-action/

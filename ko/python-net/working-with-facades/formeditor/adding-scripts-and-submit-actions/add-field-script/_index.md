@@ -1,5 +1,6 @@
 ---
 title: 필드 스크립트 추가
+linktitle: 필드 스크립트 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-field-script/

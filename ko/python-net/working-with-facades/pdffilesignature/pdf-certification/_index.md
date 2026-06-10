@@ -1,5 +1,6 @@
 ---
 title: PDF 인증
+linktitle: PDF 인증
 type: docs
 weight: 30
 url: /ko/python-net/pdf-certification/

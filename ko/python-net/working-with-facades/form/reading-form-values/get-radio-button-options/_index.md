@@ -1,5 +1,6 @@
 ---
 title: 라디오 버튼 옵션 가져오기
+linktitle: 라디오 버튼 옵션 가져오기
 type: docs
 weight: 20
 url: /ko/python-net/get-radio-button-options/

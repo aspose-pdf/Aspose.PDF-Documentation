@@ -1,5 +1,6 @@
 ---
 title: 양식 데이터 내보내기
+linktitle: 양식 데이터 내보내기
 type: docs
 weight: 10
 url: /ko/python-net/exporting-form-data/

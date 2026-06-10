@@ -1,5 +1,6 @@
 ---
 title: 텍스트 작업
+linktitle: 텍스트 작업
 type: docs
 weight: 100
 url: /ko/python-net/text-operations/

@@ -1,5 +1,6 @@
 ---
 title: PDF에 머리글 추가
+linktitle: PDF에 머리글 추가
 type: docs
 weight: 20
 url: /ko/python-net/add-header/

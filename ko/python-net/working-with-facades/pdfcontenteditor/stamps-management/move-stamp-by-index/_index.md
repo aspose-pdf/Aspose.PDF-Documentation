@@ -1,5 +1,6 @@
 ---
 title: 색인별 스탬프 이동
+linktitle: 색인별 스탬프 이동
 type: docs
 weight: 90
 url: /ko/python-net/move-stamp-by-index/

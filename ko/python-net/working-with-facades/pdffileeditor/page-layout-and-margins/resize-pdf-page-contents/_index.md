@@ -1,5 +1,6 @@
 ---
 title: PDF 페이지 내용 크기 조정
+linktitle: PDF 페이지 내용 크기 조정
 type: docs
 weight: 30
 url: /ko/python-net/resize-pdf-page-contents/

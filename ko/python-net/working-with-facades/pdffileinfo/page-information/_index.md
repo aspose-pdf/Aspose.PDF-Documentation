@@ -1,5 +1,6 @@
 ---
 title: 페이지 정보
+linktitle: 페이지 정보
 type: docs
 weight: 20
 url: /ko/python-net/page-information/

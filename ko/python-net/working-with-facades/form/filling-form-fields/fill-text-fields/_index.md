@@ -1,5 +1,6 @@
 ---
 title: 텍스트 필드 채우기
+linktitle: 텍스트 필드 채우기
 type: docs
 weight: 10
 url: /ko/python-net/fill-text-fields/

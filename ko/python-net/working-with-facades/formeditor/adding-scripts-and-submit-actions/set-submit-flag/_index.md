@@ -1,5 +1,6 @@
 ---
 title: 제출 플래그 설정
+linktitle: 제출 플래그 설정
 type: docs
 weight: 50
 url: /ko/python-net/set-submit-flag/

@@ -1,5 +1,6 @@
 ---
 title: 정사각형 주석 추가
+linktitle: 정사각형 주석 추가
 type: docs
 weight: 60
 url: /ko/python-net/add-square-annotation/

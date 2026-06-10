@@ -1,5 +1,6 @@
 ---
 title: 모든 필드 평평하게 하기
+linktitle: 모든 필드 평평하게 하기
 type: docs
 weight: 10
 url: /ko/python-net/flatten-all-fields/

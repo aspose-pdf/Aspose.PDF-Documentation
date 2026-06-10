@@ -1,5 +1,6 @@
 ---
 title: FDF로 내보내기
+linktitle: FDF로 내보내기
 type: docs
 weight: 10
 url: /ko/python-net/export-to-fdf/

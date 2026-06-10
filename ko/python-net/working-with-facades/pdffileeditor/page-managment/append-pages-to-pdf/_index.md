@@ -1,5 +1,6 @@
 ---
 title: PDF에 페이지 추가
+linktitle: PDF에 페이지 추가
 type: docs
 weight: 10
 url: /ko/python-net/append-pages-to-pdf/

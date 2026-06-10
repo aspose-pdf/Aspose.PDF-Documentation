@@ -1,5 +1,6 @@
 ---
 title: 콤보박스 필드 생성
+linktitle: 콤보박스 필드 생성
 type: docs
 weight: 20
 url: /ko/python-net/create-combobox-field/

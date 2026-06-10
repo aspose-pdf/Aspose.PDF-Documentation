@@ -1,5 +1,6 @@
 ---
 title: 첨부 파일 추가
+linktitle: 첨부 파일 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-attachment/

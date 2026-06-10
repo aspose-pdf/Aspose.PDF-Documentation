@@ -1,5 +1,6 @@
 ---
 title: PDF에 페이지 번호 추가
+linktitle: PDF에 페이지 번호 추가
 type: docs
 weight: 30
 url: /ko/python-net/page-number/

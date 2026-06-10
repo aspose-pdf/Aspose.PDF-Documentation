@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 암호화
+linktitle: PDF 파일 암호화
 type: docs
 weight: 30
 url: /ko/python-net/encrypt-pdf-file/

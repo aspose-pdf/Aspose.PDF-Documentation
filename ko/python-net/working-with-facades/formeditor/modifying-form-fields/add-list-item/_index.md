@@ -1,5 +1,6 @@
 ---
 title: 목록 항목 추가
+linktitle: 목록 항목 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-list-item/

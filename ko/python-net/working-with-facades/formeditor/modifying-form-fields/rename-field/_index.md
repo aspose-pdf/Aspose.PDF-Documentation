@@ -1,5 +1,6 @@
 ---
 title: 필드 이름 바꾸기
+linktitle: 필드 이름 바꾸기
 type: docs
 weight: 70
 url: /ko/python-net/rename-field/

@@ -1,5 +1,6 @@
 ---
 title: 문서 작업
+linktitle: 문서 작업
 type: docs
 weight: 40
 url: /ko/python-net/document-actions/

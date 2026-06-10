@@ -1,5 +1,6 @@
 ---
 title: PDF 문서에 서명
+linktitle: PDF 문서에 서명
 type: docs
 weight: 10
 url: /ko/python-net/pdf-signing/

@@ -1,5 +1,6 @@
 ---
 title: 양식 필드 관리
+linktitle: 양식 필드 관리
 type: docs
 weight: 50
 url: /ko/python-net/managing-form-fields/

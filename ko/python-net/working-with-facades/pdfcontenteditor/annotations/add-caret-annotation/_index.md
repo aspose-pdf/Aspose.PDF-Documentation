@@ -1,5 +1,6 @@
 ---
 title: 캐럿 주석 추가
+linktitle: 캐럿 주석 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-caret-annotation/

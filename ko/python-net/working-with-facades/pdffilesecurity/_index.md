@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 보안 클래스
+linktitle: PDF 파일 보안 클래스
 type: docs
 weight: 125
 url: /ko/python-net/pdffilesecurity-class/

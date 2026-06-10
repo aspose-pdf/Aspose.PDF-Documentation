@@ -1,5 +1,6 @@
 ---
 title: 스크립트 추가 및 작업 제출
+linktitle: 스크립트 추가 및 작업 제출
 type: docs
 weight: 40
 url: /ko/python-net/adding-scripts-and-submit-actions/

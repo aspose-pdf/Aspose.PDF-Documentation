@@ -1,5 +1,6 @@
 ---
 title: 문서 추가 작업
+linktitle: 문서 추가 작업
 type: docs
 weight: 20
 url: /ko/python-net/add-document-action/

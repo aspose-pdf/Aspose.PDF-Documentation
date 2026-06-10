@@ -1,5 +1,6 @@
 ---
 title: 필드 정렬을 세로로 설정
+linktitle: 필드 정렬을 세로로 설정
 type: docs
 weight: 40
 url: /ko/python-net/set-field-alignment-vertical/

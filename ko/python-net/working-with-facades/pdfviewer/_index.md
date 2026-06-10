@@ -1,5 +1,6 @@
 ---
 title: PDF 뷰어 클래스
+linktitle: PDF 뷰어 클래스
 type: docs
 weight: 135
 url: /ko/python-net/pdfviewer-class/

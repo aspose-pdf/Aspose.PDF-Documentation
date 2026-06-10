@@ -1,5 +1,6 @@
 ---
 title: PDF 메타데이터 가져오기
+linktitle: PDF 메타데이터 가져오기
 type: docs
 weight: 20
 url: /ko/python-net/get-pdf-metadata/

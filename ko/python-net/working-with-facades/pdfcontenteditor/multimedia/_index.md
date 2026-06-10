@@ -1,5 +1,6 @@
 ---
 title: 멀티미디어
+linktitle: 멀티미디어
 type: docs
 weight: 80
 url: /ko/python-net/multimedia/

@@ -1,5 +1,6 @@
 ---
 title: PDF 메타데이터
+linktitle: PDF 메타데이터
 type: docs
 weight: 30
 url: /ko/python-net/pdf-metadata/

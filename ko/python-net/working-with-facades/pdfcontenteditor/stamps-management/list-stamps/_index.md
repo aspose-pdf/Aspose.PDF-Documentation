@@ -1,5 +1,6 @@
 ---
 title: 리스트 스탬프
+linktitle: 리스트 스탬프
 type: docs
 weight: 70
 url: /ko/python-net/list-stamps/

@@ -1,5 +1,6 @@
 ---
 title: ID로 스탬프 이동
+linktitle: ID로 스탬프 이동
 type: docs
 weight: 80
 url: /ko/python-net/move-stamp-by-id-example/

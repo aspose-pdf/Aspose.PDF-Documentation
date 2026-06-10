@@ -1,5 +1,6 @@
 ---
 title: 양식 클래스
+linktitle: 양식 클래스
 type: docs
 weight: 140
 url: /ko/python-net/form-class/

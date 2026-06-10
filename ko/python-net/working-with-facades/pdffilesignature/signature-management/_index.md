@@ -1,5 +1,6 @@
 ---
 title: 시그니처 매니지먼트
+linktitle: 시그니처 매니지먼트
 type: docs
 weight: 80
 url: /ko/python-net/signature-management/

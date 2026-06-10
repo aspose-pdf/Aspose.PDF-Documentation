@@ -1,5 +1,6 @@
 ---
 title: PDF에 페이지 나누기 추가
+linktitle: PDF에 페이지 나누기 추가
 type: docs
 weight: 20
 url: /ko/python-net/add-page-breaks-in-pdf/

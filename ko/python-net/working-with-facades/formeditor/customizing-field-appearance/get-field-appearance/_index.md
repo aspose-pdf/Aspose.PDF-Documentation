@@ -1,5 +1,6 @@
 ---
 title: 필드 모양 가져오기
+linktitle: 필드 모양 가져오기
 type: docs
 weight: 20
 url: /ko/python-net/get-field-appearance/

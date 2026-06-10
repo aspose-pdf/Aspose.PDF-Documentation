@@ -1,5 +1,6 @@
 ---
 title: XML로 내보내기
+linktitle: XML로 내보내기
 type: docs
 weight: 40
 url: /ko/python-net/export-to-xml/

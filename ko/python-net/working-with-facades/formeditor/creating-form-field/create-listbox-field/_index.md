@@ -1,5 +1,6 @@
 ---
 title: 리스트 박스 필드 생성
+linktitle: 리스트 박스 필드 생성
 type: docs
 weight: 30
 url: /ko/python-net/create-listbox-field/

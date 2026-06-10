@@ -1,5 +1,6 @@
 ---
 title: XFDF 데이터 가져오기
+linktitle: XFDF 데이터 가져오기
 type: docs
 weight: 20
 url: /ko/python-net/import-xfdf-data/

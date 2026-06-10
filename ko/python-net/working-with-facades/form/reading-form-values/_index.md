@@ -1,5 +1,6 @@
 ---
 title: 양식 값 읽기
+linktitle: 양식 값 읽기
 type: docs
 weight: 60
 url: /ko/python-net/reading-form-values/

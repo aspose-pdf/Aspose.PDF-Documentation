@@ -1,5 +1,6 @@
 ---
 title: 많은 수의 PDF 파일 연결
+linktitle: 많은 수의 PDF 파일 연결
 type: docs
 weight: 10
 url: /ko/python-net/concatenate-large-number-files/

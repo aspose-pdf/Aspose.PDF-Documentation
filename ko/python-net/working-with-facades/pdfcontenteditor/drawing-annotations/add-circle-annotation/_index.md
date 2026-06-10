@@ -1,5 +1,6 @@
 ---
 title: 원 주석 추가
+linktitle: 원 주석 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-circle-annotation/

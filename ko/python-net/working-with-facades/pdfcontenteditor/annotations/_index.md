@@ -1,5 +1,6 @@
 ---
 title: 주석
+linktitle: 주석
 type: docs
 weight: 10
 url: /ko/python-net/annotations-facades/

@@ -1,5 +1,6 @@
 ---
 title: 기존 PDF 파일에 권한 설정
+linktitle: 기존 PDF 파일에 권한 설정
 type: docs
 weight: 40
 url: /ko/python-net/set-privileges/

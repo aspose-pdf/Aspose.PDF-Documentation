@@ -1,5 +1,6 @@
 ---
 title: 첨부파일
+linktitle: 첨부파일
 type: docs
 weight: 20
 url: /ko/python-net/attachments-facades/

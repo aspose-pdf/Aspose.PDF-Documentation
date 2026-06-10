@@ -1,5 +1,6 @@
 ---
 title: PDF를 처음부터 분리하기
+linktitle: PDF를 처음부터 분리하기
 type: docs
 weight: 10
 url: /ko/python-net/split-pdf-from-beginning/

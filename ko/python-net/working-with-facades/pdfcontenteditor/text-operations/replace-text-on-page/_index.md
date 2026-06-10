@@ -1,5 +1,6 @@
 ---
 title: 페이지의 텍스트 바꾸기
+linktitle: 페이지의 텍스트 바꾸기
 type: docs
 weight: 10
 url: /ko/python-net/replace-text-on-page/

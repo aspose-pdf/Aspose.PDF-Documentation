@@ -1,5 +1,6 @@
 ---
 title: 텍스트 주석 추가
+linktitle: 텍스트 주석 추가
 type: docs
 weight: 50
 url: /ko/python-net/add-text-annotation/

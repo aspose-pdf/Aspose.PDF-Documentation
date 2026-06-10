@@ -1,5 +1,6 @@
 ---
 title: 페이지 정보 가져오기
+linktitle: 페이지 정보 가져오기
 type: docs
 weight: 10
 url: /ko/python-net/get-page-info/

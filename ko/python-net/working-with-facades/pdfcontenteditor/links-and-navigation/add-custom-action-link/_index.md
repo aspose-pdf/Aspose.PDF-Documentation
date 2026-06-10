@@ -1,5 +1,6 @@
 ---
 title: 사용자 지정 작업 링크 추가
+linktitle: 사용자 지정 작업 링크 추가
 type: docs
 weight: 20
 url: /ko/python-net/add-custom-action-link/

@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 암호 해독
+linktitle: PDF 파일 암호 해독
 type: docs
 weight: 20
 url: /ko/python-net/decrypt-pdf-file/

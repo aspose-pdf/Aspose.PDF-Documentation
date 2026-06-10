@@ -1,5 +1,6 @@
 ---
 title: PDF 뷰어 기본 설정 가져오기
+linktitle: PDF 뷰어 기본 설정 가져오기
 type: docs
 weight: 20
 url: /ko/python-net/get-viewer-preferences/

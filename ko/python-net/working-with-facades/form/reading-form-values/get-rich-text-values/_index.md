@@ -1,5 +1,6 @@
 ---
 title: 리치 텍스트 값 가져오기
+linktitle: 리치 텍스트 값 가져오기
 type: docs
 weight: 40
 url: /ko/python-net/get-rich-text-values/

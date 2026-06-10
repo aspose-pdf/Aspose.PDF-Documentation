@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 스탬프 클래스
+linktitle: PDF 파일 스탬프 클래스
 type: docs
 weight: 155
 url: /ko/python-net/pdffilestamp-class/

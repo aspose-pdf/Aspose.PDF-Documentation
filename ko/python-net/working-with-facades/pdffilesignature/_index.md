@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 서명 클래스
+linktitle: PDF 파일 서명 클래스
 type: docs
 weight: 60
 url: /ko/python-net/pdffilesignature-class/

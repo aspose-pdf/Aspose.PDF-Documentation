@@ -1,5 +1,6 @@
 ---
 title: 개정 및 사용 권한
+linktitle: 개정 및 사용 권한
 type: docs
 weight: 40
 url: /ko/python-net/revision-permissions/

@@ -1,5 +1,6 @@
 ---
 title: 체크박스 필드 채우기
+linktitle: 체크박스 필드 채우기
 type: docs
 weight: 20
 url: /ko/python-net/fill-check-box-fields/

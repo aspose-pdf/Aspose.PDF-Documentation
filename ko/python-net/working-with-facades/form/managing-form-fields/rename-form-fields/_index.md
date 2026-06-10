@@ -1,5 +1,6 @@
 ---
 title: 양식 필드 이름 바꾸기
+linktitle: 양식 필드 이름 바꾸기
 type: docs
 weight: 30
 url: /ko/python-net/rename-form-fields/

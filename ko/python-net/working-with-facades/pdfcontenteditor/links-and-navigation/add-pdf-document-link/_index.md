@@ -1,5 +1,6 @@
 ---
 title: PDF 문서 링크 추가
+linktitle: PDF 문서 링크 추가
 type: docs
 weight: 50
 url: /ko/python-net/add-pdf-document-link/

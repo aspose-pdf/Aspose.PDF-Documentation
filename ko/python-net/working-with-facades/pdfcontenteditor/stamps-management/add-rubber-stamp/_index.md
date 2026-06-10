@@ -1,5 +1,6 @@
 ---
 title: 러버 스탬프 추가
+linktitle: 러버 스탬프 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-rubber-stamp/

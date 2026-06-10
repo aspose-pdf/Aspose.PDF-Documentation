@@ -1,5 +1,6 @@
 ---
 title: 이름 및 값으로 필드 채우기
+linktitle: 이름 및 값으로 필드 채우기
 type: docs
 weight: 60
 url: /ko/python-net/fill-fields-by-name-and-value/

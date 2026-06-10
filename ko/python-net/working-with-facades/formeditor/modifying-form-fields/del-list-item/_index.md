@@ -1,5 +1,6 @@
 ---
 title: 목록 항목 삭제
+linktitle: 목록 항목 삭제
 type: docs
 weight: 40
 url: /ko/python-net/del-list-item/

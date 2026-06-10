@@ -1,5 +1,6 @@
 ---
 title: 첨부 파일 제거
+linktitle: 첨부 파일 제거
 type: docs
 weight: 50
 url: /ko/python-net/remove-attachments/

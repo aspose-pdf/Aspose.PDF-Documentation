@@ -1,5 +1,6 @@
 ---
 title: 페이지 관리
+linktitle: 페이지 관리
 type: docs
 weight: 30
 url: /ko/python-net/page-management/

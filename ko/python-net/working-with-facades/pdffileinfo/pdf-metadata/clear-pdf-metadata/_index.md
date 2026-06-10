@@ -1,5 +1,6 @@
 ---
 title: PDF 메타데이터 지우기
+linktitle: PDF 메타데이터 지우기
 type: docs
 weight: 10
 url: /ko/python-net/clear-pdf-metadata/

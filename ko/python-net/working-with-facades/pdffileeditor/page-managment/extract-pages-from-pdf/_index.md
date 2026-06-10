@@ -1,5 +1,6 @@
 ---
 title: PDF에서 페이지 추출
+linktitle: PDF에서 페이지 추출
 type: docs
 weight: 30
 url: /ko/python-net/extract-pages-from-pdf/

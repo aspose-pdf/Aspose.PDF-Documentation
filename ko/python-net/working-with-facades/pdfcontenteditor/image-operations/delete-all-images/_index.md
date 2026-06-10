@@ -1,5 +1,6 @@
 ---
 title: PDF에서 모든 이미지 삭제
+linktitle: PDF에서 모든 이미지 삭제
 type: docs
 weight: 10
 url: /ko/python-net/delete-all-images/

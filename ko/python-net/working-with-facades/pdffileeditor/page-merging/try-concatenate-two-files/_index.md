@@ -1,5 +1,6 @@
 ---
 title: 두 개의 PDF 파일을 연결해 보십시오
+linktitle: 두 개의 PDF 파일을 연결해 보십시오
 type: docs
 weight: 90
 url: /ko/python-net/try-concatenate-two-files/

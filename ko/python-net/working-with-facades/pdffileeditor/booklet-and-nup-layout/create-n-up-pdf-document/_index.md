@@ -1,5 +1,6 @@
 ---
 title: N-업 PDF 문서 만들기
+linktitle: N-업 PDF 문서 만들기
 type: docs
 weight: 10
 url: /ko/python-net/create-n-up-pdf-document/

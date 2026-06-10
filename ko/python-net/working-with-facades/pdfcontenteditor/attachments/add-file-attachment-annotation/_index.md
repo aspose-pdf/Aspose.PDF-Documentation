@@ -1,5 +1,6 @@
 ---
 title: 첨부 파일 주석 추가
+linktitle: 첨부 파일 주석 추가
 type: docs
 weight: 30
 url: /ko/python-net/add-file-attachment-annotation/

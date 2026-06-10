@@ -1,5 +1,6 @@
 ---
 title: ID별 스탬프 삭제
+linktitle: ID별 스탬프 삭제
 type: docs
 weight: 85
 url: /ko/python-net/delete-stamp-by-ids-examples/

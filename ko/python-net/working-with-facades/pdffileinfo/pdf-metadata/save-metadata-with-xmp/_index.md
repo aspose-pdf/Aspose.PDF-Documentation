@@ -1,5 +1,6 @@
 ---
 title: XMP로 메타데이터 저장
+linktitle: XMP로 메타데이터 저장
 type: docs
 weight: 30
 url: /ko/python-net/save-metadata-with-xmp/

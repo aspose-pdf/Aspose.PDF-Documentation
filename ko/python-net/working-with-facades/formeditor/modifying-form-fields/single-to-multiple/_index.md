@@ -1,5 +1,6 @@
 ---
 title: 한 줄 필드를 여러 줄 필드로
+linktitle: 한 줄 필드를 여러 줄 필드로
 type: docs
 weight: 80
 url: /ko/python-net/single-to-multiple/

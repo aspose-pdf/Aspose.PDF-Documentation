@@ -1,5 +1,6 @@
 ---
 title: 시그니처 검증
+linktitle: 시그니처 검증
 type: docs
 weight: 90
 url: /ko/python-net/signature-verification/

@@ -1,5 +1,6 @@
 ---
 title: 바코드 필드 채우기
+linktitle: 바코드 필드 채우기
 type: docs
 weight: 50
 url: /ko/python-net/fill-barcode-fields/

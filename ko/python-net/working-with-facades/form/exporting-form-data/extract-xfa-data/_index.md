@@ -1,5 +1,6 @@
 ---
 title: XFA 데이터 추출
+linktitle: XFA 데이터 추출
 type: docs
 weight: 50
 url: /ko/python-net/extract-xfa-data/

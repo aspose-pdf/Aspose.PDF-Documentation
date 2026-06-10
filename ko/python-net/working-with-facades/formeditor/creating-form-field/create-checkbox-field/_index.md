@@ -1,5 +1,6 @@
 ---
 title: 체크박스 필드 생성
+linktitle: 체크박스 필드 생성
 type: docs
 weight: 10
 url: /ko/python-net/create-checkbox-field/

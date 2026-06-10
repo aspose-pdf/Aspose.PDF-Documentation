@@ -1,5 +1,6 @@
 ---
 title: 라디오 버튼 필드 채우기
+linktitle: 라디오 버튼 필드 채우기
 type: docs
 weight: 30
 url: /ko/python-net/fill-radio-button-fields/

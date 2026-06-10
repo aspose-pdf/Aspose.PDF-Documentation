@@ -1,5 +1,6 @@
 ---
 title: PDF 콘텐츠 편집기 클래스
+linktitle: PDF 콘텐츠 편집기 클래스
 type: docs
 weight: 30
 url: /ko/python-net/pdfcontenteditor-class/

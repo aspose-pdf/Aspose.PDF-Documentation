@@ -1,5 +1,6 @@
 ---
 title: 커브 주석 추가
+linktitle: 커브 주석 추가
 type: docs
 weight: 20
 url: /ko/python-net/add-curve-annotation/

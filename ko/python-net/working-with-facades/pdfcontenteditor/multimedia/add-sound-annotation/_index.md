@@ -1,5 +1,6 @@
 ---
 title: 사운드 주석 추가
+linktitle: 사운드 주석 추가
 type: docs
 weight: 20
 url: /ko/python-net/add-sound-annotation/

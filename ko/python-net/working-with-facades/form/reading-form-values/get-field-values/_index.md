@@ -1,5 +1,6 @@
 ---
 title: 필드 값 가져오기
+linktitle: 필드 값 가져오기
 type: docs
 weight: 50
 url: /ko/python-net/get-field-values/

@@ -1,5 +1,6 @@
 ---
 title: XFDF로 내보내기
+linktitle: XFDF로 내보내기
 type: docs
 weight: 20
 url: /ko/python-net/export-to-xfdf/

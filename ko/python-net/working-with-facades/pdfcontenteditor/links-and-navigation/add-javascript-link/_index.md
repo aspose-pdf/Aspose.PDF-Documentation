@@ -1,5 +1,6 @@
 ---
 title: 자바스크립트 링크 추가
+linktitle: 자바스크립트 링크 추가
 type: docs
 weight: 30
 url: /ko/python-net/add-javascript-link/

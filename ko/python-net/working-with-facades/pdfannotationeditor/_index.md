@@ -1,5 +1,6 @@
 ---
 title: PDF 주석 편집기 클래스
+linktitle: PDF 주석 편집기 클래스
 type: docs
 weight: 40
 url: /ko/python-net/pdfannotationeditor-class/

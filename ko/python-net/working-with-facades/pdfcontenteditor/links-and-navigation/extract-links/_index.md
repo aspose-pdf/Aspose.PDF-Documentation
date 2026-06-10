@@ -1,5 +1,6 @@
 ---
 title: 링크 추출
+linktitle: 링크 추출
 type: docs
 weight: 70
 url: /ko/python-net/extract-links/

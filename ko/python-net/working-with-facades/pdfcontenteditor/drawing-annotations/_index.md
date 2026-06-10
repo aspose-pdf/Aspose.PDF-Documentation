@@ -1,5 +1,6 @@
 ---
 title: 드로잉 주석
+linktitle: 드로잉 주석
 type: docs
 weight: 50
 url: /ko/python-net/drawing-annotations/

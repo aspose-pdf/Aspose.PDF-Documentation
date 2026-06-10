@@ -1,5 +1,6 @@
 ---
 title: FDF 데이터 가져오기
+linktitle: FDF 데이터 가져오기
 type: docs
 weight: 10
 url: /ko/python-net/import-fdf-data/

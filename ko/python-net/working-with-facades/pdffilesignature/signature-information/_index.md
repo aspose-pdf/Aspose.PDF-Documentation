@@ -1,5 +1,6 @@
 ---
 title: 시그니처 정보
+linktitle: 시그니처 정보
 type: docs
 weight: 60
 url: /ko/python-net/signature-information/

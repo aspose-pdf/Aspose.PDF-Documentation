@@ -1,5 +1,6 @@
 ---
 title: 소책자 및 N-Up 레이아웃
+linktitle: 소책자 및 N-Up 레이아웃
 type: docs
 weight: 10
 url: /ko/python-net/booklet-and-nup-layout/

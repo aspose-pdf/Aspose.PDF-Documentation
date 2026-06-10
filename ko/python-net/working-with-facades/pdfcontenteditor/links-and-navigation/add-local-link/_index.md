@@ -1,5 +1,6 @@
 ---
 title: 로컬 링크 추가
+linktitle: 로컬 링크 추가
 type: docs
 weight: 40
 url: /ko/python-net/add-local-link/

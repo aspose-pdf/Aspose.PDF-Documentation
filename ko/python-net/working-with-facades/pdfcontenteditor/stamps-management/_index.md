@@ -1,5 +1,6 @@
 ---
 title: 스탬프 관리
+linktitle: 스탬프 관리
 type: docs
 weight: 90
 url: /ko/python-net/stamps-management/

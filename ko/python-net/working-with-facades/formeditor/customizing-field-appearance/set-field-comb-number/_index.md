@@ -1,5 +1,6 @@
 ---
 title: 필드 콤 번호 설정
+linktitle: 필드 콤 번호 설정
 type: docs
 weight: 70
 url: /ko/python-net/set-field-comb-number/

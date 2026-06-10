@@ -1,5 +1,6 @@
 ---
 title: 스탬프 클래스
+linktitle: 스탬프 클래스
 type: docs
 weight: 150
 url: /ko/python-net/stamp-class/

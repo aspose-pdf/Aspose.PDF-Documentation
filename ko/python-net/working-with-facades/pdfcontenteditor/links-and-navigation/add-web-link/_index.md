@@ -1,5 +1,6 @@
 ---
 title: 웹 링크 추가
+linktitle: 웹 링크 추가
 type: docs
 weight: 60
 url: /ko/python-net/add-web-link/

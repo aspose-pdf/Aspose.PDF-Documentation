@@ -1,5 +1,6 @@
 ---
 title: 필드 제한 설정
+linktitle: 필드 제한 설정
 type: docs
 weight: 80
 url: /ko/python-net/set-field-limit/

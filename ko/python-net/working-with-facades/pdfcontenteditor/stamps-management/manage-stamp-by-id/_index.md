@@ -1,5 +1,6 @@
 ---
 title: ID별 스탬프 관리
+linktitle: ID별 스탬프 관리
 type: docs
 weight: 95
 url: /ko/python-net/manage-stamp-by-id/

@@ -1,5 +1,6 @@
 ---
 title: JSON 데이터 가져오기
+linktitle: JSON 데이터 가져오기
 type: docs
 weight: 30
 url: /ko/python-net/import-json-data/

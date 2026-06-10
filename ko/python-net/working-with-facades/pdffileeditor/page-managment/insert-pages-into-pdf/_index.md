@@ -1,5 +1,6 @@
 ---
 title: PDF에 페이지 삽입
+linktitle: PDF에 페이지 삽입
 type: docs
 weight: 40
 url: /ko/python-net/insert-pages-into-pdf/

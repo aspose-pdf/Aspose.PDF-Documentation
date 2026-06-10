@@ -1,5 +1,6 @@
 ---
 title: PDF를 끝으로 분할
+linktitle: PDF를 끝으로 분할
 type: docs
 weight: 40
 url: /ko/python-net/split-pdf-to-end/

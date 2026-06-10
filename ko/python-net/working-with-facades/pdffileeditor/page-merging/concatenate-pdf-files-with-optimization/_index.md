@@ -1,5 +1,6 @@
 ---
 title: 최적화를 통한 PDF 파일 연결
+linktitle: 최적화를 통한 PDF 파일 연결
 type: docs
 weight: 30
 url: /ko/python-net/concatenate-pdf-files-with-optimization/

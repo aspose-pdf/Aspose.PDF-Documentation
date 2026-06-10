@@ -1,5 +1,6 @@
 ---
 title: 스트림에서 파일 첨부 주석 추가
+linktitle: 스트림에서 파일 첨부 주석 추가
 type: docs
 weight: 40
 url: /ko/python-net/add-file-attachment-annotation-from-stream/

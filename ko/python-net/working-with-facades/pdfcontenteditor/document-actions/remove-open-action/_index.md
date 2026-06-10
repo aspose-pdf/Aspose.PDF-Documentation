@@ -1,5 +1,6 @@
 ---
 title: 열린 작업 제거
+linktitle: 열린 작업 제거
 type: docs
 weight: 30
 url: /ko/python-net/remove-open-action/

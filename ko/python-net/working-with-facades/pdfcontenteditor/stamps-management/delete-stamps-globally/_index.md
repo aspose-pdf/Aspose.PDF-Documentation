@@ -1,5 +1,6 @@
 ---
 title: 전체 스탬프 삭제
+linktitle: 전체 스탬프 삭제
 type: docs
 weight: 60
 url: /ko/python-net/delete-stamps-globally/

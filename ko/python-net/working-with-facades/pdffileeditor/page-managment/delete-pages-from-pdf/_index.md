@@ -1,5 +1,6 @@
 ---
 title: PDF에서 페이지 삭제
+linktitle: PDF에서 페이지 삭제
 type: docs
 weight: 20
 url: /ko/python-net/delete-pages-from-pdf/

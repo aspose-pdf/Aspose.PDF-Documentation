@@ -1,5 +1,6 @@
 ---
 title: 시그니처 추출
+linktitle: 시그니처 추출
 type: docs
 weight: 50
 url: /ko/python-net/signature-extraction/

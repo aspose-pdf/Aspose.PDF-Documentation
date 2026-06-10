@@ -1,5 +1,6 @@
 ---
 title: 라인 주석 추가
+linktitle: 라인 주석 추가
 type: docs
 weight: 30
 url: /ko/python-net/add-line-annotation/

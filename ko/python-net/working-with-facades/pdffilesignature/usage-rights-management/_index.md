@@ -1,5 +1,6 @@
 ---
 title: 사용 권한 관리
+linktitle: 사용 권한 관리
 type: docs
 weight: 100
 url: /ko/python-net/usage-rights-management/

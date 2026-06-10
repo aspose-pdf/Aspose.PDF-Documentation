@@ -1,5 +1,6 @@
 ---
 title: PDF 페이지에 여백 추가
+linktitle: PDF 페이지에 여백 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-margins-to-pdf-pages/

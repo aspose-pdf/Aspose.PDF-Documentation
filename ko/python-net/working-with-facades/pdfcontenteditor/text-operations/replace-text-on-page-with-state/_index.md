@@ -1,5 +1,6 @@
 ---
 title: 페이지의 텍스트를 상태로 바꾸기
+linktitle: 페이지의 텍스트를 상태로 바꾸기
 type: docs
 weight: 20
 url: /ko/python-net/replace-text-on-page-with-state/

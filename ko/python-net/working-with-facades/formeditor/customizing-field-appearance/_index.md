@@ -1,5 +1,6 @@
 ---
 title: 필드 모양 사용자 지정
+linktitle: 필드 모양 사용자 지정
 type: docs
 weight: 30
 url: /ko/python-net/customizing-field-appearance/

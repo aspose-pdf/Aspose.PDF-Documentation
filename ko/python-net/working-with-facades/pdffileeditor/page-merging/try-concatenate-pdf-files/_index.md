@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 연결 시도
+linktitle: PDF 파일 연결 시도
 type: docs
 weight: 70
 url: /ko/python-net/try-concatenate-pdf-files/

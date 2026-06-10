@@ -1,5 +1,6 @@
 ---
 title: 텍스트를 상태로 바꾸기
+linktitle: 텍스트를 상태로 바꾸기
 type: docs
 weight: 50
 url: /ko/python-net/replace-text-with-state/

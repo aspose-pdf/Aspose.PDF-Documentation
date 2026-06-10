@@ -1,5 +1,6 @@
 ---
 title: 자유 텍스트 주석 추가
+linktitle: 자유 텍스트 주석 추가
 type: docs
 weight: 20
 url: /ko/python-net/add-free-text-annotation/

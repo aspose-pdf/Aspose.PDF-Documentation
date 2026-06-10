@@ -1,5 +1,6 @@
 ---
 title: 전체 필드 이름 확인
+linktitle: 전체 필드 이름 확인
 type: docs
 weight: 60
 url: /ko/python-net/resolve-full-field-names/

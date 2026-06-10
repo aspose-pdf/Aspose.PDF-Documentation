@@ -1,5 +1,6 @@
 ---
 title: 텍스트 상자 필드 생성
+linktitle: 텍스트 상자 필드 생성
 type: docs
 weight: 60
 url: /ko/python-net/create-textbox-field/

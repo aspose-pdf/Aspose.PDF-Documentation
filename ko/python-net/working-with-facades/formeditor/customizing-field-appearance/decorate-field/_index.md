@@ -1,5 +1,6 @@
 ---
 title: 데코레이션 필드
+linktitle: 데코레이션 필드
 type: docs
 weight: 10
 url: /ko/python-net/decorate-field/

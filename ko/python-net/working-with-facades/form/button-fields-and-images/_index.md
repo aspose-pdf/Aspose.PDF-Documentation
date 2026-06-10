@@ -1,5 +1,6 @@
 ---
 title: 버튼 필드 및 이미지
+linktitle: 버튼 필드 및 이미지
 type: docs
 weight: 40
 url: /ko/python-net/button-fields-and-images/

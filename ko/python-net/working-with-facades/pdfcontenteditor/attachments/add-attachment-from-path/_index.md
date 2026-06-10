@@ -1,5 +1,6 @@
 ---
 title: 경로에서 첨부 파일 추가
+linktitle: 경로에서 첨부 파일 추가
 type: docs
 weight: 20
 url: /ko/python-net/add-attachment-from-path/

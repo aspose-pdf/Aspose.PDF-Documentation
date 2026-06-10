@@ -1,5 +1,6 @@
 ---
 title: 고유한 접미사로 PDF 양식 연결
+linktitle: 고유한 접미사로 PDF 양식 연결
 type: docs
 weight: 50
 url: /ko/python-net/concatenate-pdf-forms/

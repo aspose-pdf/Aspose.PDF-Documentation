@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 편집기 클래스
+linktitle: PDF 파일 편집기 클래스
 type: docs
 weight: 10
 url: /ko/python-net/pdffileeditor-class/

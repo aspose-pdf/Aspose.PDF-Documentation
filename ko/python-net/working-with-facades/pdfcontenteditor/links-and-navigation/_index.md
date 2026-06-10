@@ -1,5 +1,6 @@
 ---
 title: 링크 및 내비게이션
+linktitle: 링크 및 내비게이션
 type: docs
 weight: 70
 url: /ko/python-net/links-and-navigation-facades/

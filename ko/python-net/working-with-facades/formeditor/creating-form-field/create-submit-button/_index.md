@@ -1,5 +1,6 @@
 ---
 title: 제출 버튼 생성
+linktitle: 제출 버튼 생성
 type: docs
 weight: 50
 url: /ko/python-net/create-submit-button/

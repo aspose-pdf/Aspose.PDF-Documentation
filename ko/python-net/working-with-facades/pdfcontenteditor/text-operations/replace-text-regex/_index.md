@@ -1,5 +1,6 @@
 ---
 title: 텍스트 정규식 바꾸기
+linktitle: 텍스트 정규식 바꾸기
 type: docs
 weight: 30
 url: /ko/python-net/replace-text-regex/

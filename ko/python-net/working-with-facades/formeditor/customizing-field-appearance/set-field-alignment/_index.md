@@ -1,5 +1,6 @@
 ---
 title: 필드 정렬 설정
+linktitle: 필드 정렬 설정
 type: docs
 weight: 30
 url: /ko/python-net/set-field-alignment/

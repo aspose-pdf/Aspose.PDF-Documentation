@@ -1,5 +1,6 @@
 ---
 title: 팝업 주석 추가
+linktitle: 팝업 주석 추가
 type: docs
 weight: 40
 url: /ko/python-net/add-popup-annotation/

@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 병합
+linktitle: PDF 파일 병합
 type: docs
 weight: 40
 url: /ko/python-net/page-merging/

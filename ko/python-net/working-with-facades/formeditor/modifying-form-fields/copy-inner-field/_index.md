@@ -1,5 +1,6 @@
 ---
 title: 내부 필드 복사
+linktitle: 내부 필드 복사
 type: docs
 weight: 20
 url: /ko/python-net/copy-inner-field/

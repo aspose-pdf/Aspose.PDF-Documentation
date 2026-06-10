@@ -1,5 +1,6 @@
 ---
 title: 동영상 주석 추가
+linktitle: 동영상 주석 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-movie-annotation/

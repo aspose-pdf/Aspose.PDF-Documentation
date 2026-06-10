@@ -1,5 +1,6 @@
 ---
 title: 모양 스트림으로 러버 스탬프 만들기
+linktitle: 모양 스트림으로 러버 스탬프 만들기
 type: docs
 weight: 30
 url: /ko/python-net/create-rubber-stamp-with-appearance-stream/

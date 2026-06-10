@@ -1,5 +1,6 @@
 ---
 title: 필드 이동
+linktitle: 필드 이동
 type: docs
 weight: 50
 url: /ko/python-net/move-field/

@@ -1,5 +1,6 @@
 ---
 title: PDF 파일 정보 클래스
+linktitle: PDF 파일 정보 클래스
 type: docs
 weight: 110
 url: /ko/python-net/pdffileinfo-class/

@@ -1,5 +1,6 @@
 ---
 title: PDF 뷰어 기본 설정 변경
+linktitle: PDF 뷰어 기본 설정 변경
 type: docs
 weight: 10
 url: /ko/python-net/change-viewer-preferences/

@@ -1,5 +1,6 @@
 ---
 title: 필드 작업 제거
+linktitle: 필드 작업 제거
 type: docs
 weight: 20
 url: /ko/python-net/remove-field-action/

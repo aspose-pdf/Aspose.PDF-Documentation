@@ -1,5 +1,6 @@
 ---
 title: 페이지 레이아웃 및 여백
+linktitle: 페이지 레이아웃 및 여백
 type: docs
 weight: 20
 url: /ko/python-net/page-layout-and-margins/

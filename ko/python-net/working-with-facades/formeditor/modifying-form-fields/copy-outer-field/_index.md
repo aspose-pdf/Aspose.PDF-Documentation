@@ -1,5 +1,6 @@
 ---
 title: 외부 필드 복사
+linktitle: 외부 필드 복사
 type: docs
 weight: 30
 url: /ko/python-net/copy-outer-field/

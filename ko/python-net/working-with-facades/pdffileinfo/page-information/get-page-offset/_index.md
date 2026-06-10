@@ -1,5 +1,6 @@
 ---
 title: 페이지 오프셋 가져오기
+linktitle: 페이지 오프셋 가져오기
 type: docs
 weight: 20
 url: /ko/python-net/get-page-offset/

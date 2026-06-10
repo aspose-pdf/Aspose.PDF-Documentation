@@ -1,5 +1,6 @@
 ---
 title: XML 데이터 가져오기
+linktitle: XML 데이터 가져오기
 type: docs
 weight: 40
 url: /ko/python-net/import-xml-data/

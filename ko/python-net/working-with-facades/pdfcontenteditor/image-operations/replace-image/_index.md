@@ -1,5 +1,6 @@
 ---
 title: PDF의 이미지 바꾸기
+linktitle: PDF의 이미지 바꾸기
 type: docs
 weight: 30
 url: /ko/python-net/replace-image/

@@ -1,5 +1,6 @@
 ---
 title: PDF 소책자 만들기
+linktitle: PDF 소책자 만들기
 type: docs
 weight: 20
 url: /ko/python-net/create-pdf-booklet/

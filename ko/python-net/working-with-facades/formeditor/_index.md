@@ -1,5 +1,6 @@
 ---
 title: 폼 에디터 클래스
+linktitle: 폼 에디터 클래스
 type: docs
 weight: 100
 url: /ko/python-net/formeditor-class/

@@ -1,5 +1,6 @@
 ---
 title: 필드 스크립트 설정
+linktitle: 필드 스크립트 설정
 type: docs
 weight: 30
 url: /ko/python-net/set-field-script/

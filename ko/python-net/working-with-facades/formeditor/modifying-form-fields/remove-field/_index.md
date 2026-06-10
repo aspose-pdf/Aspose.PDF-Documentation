@@ -1,5 +1,6 @@
 ---
 title: 필드 제거
+linktitle: 필드 제거
 type: docs
 weight: 60
 url: /ko/python-net/remove-field/

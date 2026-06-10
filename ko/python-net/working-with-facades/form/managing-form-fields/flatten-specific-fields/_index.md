@@ -1,5 +1,6 @@
 ---
 title: 특정 필드 평면화
+linktitle: 특정 필드 평면화
 type: docs
 weight: 20
 url: /ko/python-net/flatten-specific-fields/

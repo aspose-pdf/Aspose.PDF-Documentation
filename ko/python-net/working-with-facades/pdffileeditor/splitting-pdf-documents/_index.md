@@ -1,5 +1,6 @@
 ---
 title: PDF 문서 분할
+linktitle: PDF 문서 분할
 type: docs
 weight: 50
 url: /ko/python-net/splitting-pdf-documents/

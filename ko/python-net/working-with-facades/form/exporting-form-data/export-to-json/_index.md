@@ -1,5 +1,6 @@
 ---
 title: JSON으로 내보내기
+linktitle: JSON으로 내보내기
 type: docs
 weight: 30
 url: /ko/python-net/export-to-json/

@@ -1,5 +1,6 @@
 ---
 title: PDF 메타데이터 설정
+linktitle: PDF 메타데이터 설정
 type: docs
 weight: 50
 url: /ko/python-net/set-pdf-metadata/

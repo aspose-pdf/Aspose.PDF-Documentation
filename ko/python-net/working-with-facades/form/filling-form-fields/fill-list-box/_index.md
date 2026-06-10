@@ -1,5 +1,6 @@
 ---
 title: 목록 상자 채우기
+linktitle: 목록 상자 채우기
 type: docs
 weight: 40
 url: /ko/python-net/fill-list-box/

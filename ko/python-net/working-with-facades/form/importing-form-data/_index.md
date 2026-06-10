@@ -1,5 +1,6 @@
 ---
 title: 양식 데이터 가져오기
+linktitle: 양식 데이터 가져오기
 type: docs
 weight: 20
 url: /ko/python-net/importing-form-data/

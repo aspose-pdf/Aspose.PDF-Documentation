@@ -1,5 +1,6 @@
 ---
 title: 뷰어 기본 설정
+linktitle: 뷰어 기본 설정
 type: docs
 weight: 110
 url: /ko/python-net/viewer-preferences/

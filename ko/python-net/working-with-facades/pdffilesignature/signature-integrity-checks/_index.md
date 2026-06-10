@@ -1,5 +1,6 @@
 ---
 title: 서명 무결성 검사
+linktitle: 서명 무결성 검사
 type: docs
 weight: 70
 url: /ko/python-net/signature-integrity-checks/

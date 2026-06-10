@@ -1,5 +1,6 @@
 ---
 title: 마크업 주석 추가
+linktitle: 마크업 주석 추가
 type: docs
 weight: 30
 url: /ko/python-net/add-markup-annotation/

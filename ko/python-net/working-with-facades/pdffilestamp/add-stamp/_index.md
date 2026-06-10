@@ -1,5 +1,6 @@
 ---
 title: PDF에 스탬프 추가
+linktitle: PDF에 스탬프 추가
 type: docs
 weight: 40
 url: /ko/python-net/add-stamp/

@@ -1,5 +1,6 @@
 ---
 title: 필수 필드 이름 가져오기
+linktitle: 필수 필드 이름 가져오기
 type: docs
 weight: 30
 url: /ko/python-net/get-required-field-names/

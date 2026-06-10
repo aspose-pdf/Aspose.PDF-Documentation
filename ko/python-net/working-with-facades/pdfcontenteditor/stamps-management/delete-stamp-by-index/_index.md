@@ -1,5 +1,6 @@
 ---
 title: 색인별 스탬프 삭제
+linktitle: 색인별 스탬프 삭제
 type: docs
 weight: 50
 url: /ko/python-net/delete-stamp-by-index/

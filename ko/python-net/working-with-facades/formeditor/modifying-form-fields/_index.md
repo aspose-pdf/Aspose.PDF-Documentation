@@ -1,5 +1,6 @@
 ---
 title: 양식 필드 수정
+linktitle: 양식 필드 수정
 type: docs
 weight: 20
 url: /ko/python-net/modifying-form-fields/

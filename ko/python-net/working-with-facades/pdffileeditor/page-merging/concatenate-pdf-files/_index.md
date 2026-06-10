@@ -1,5 +1,6 @@
 ---
 title: 여러 PDF 파일 연결
+linktitle: 여러 PDF 파일 연결
 type: docs
 weight: 20
 url: /ko/python-net/concatenate-pdf-files/

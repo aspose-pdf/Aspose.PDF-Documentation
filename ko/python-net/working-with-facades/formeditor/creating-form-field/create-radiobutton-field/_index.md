@@ -1,5 +1,6 @@
 ---
 title: 라디오 버튼 필드 생성
+linktitle: 라디오 버튼 필드 생성
 type: docs
 weight: 40
 url: /ko/python-net/create-radiobutton-field/

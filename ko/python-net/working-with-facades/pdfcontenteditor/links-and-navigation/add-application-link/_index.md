@@ -1,5 +1,6 @@
 ---
 title: 애플리케이션 링크 추가
+linktitle: 애플리케이션 링크 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-application-link/

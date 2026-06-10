@@ -1,5 +1,6 @@
 ---
 title: 텍스트 단순 바꾸기
+linktitle: 텍스트 단순 바꾸기
 type: docs
 weight: 40
 url: /ko/python-net/replace-text-simple/

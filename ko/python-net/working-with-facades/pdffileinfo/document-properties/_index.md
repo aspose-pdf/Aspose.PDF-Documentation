@@ -1,5 +1,6 @@
 ---
 title: 문서 속성
+linktitle: 문서 속성
 type: docs
 weight: 10
 url: /ko/python-net/document-properties/
