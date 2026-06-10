@@ -1,0 +1,4 @@
+interface:
+  display_name: "Formatter Bootstrap"
+  short_description: "Install Ruff or Black and run formatting checks"
+  default_prompt: "Use $python-formatter-bootstrap to install Ruff or Black, then check and fix Python formatting."
