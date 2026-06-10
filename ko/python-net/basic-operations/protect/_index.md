@@ -11,7 +11,8 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Python에서 PDF 권한 설정 및 암호화 관리
-Abstract: 이 페이지에서는.NET을 통해 Python용 Aspose.PDF 를 사용하여 문서 권한을 설정하고, 암호화를 적용하고, PDF 파일을 해독하고, 암호를 변경하는 방법을 설명합니다.사용자 및 소유자 암호 구성, 액세스 제한 정의 (예: 인쇄, 복사 및 편집), Python 응용 프로그램에서의 PDF 보안 관리에 대해 설명합니다.
+Abstract: >
+    이 페이지에서는.NET을 통해 Python용 Aspose.PDF 를 사용하여 문서 권한을 설정하고, 암호화를 적용하고, PDF 파일을 해독하고, 암호를 변경하는 방법을 설명합니다.사용자 및 소유자 암호 구성, 액세스 제한 정의 (예: 인쇄, 복사 및 편집), Python 응용 프로그램에서의 PDF 보안 관리에 대해 설명합니다.
 ---
 
 ## 암호와 권한으로 PDF 암호화
