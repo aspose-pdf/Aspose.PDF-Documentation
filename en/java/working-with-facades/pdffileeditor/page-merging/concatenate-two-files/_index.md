@@ -1,5 +1,6 @@
 ---
 title: Concatenate Two PDF Files
+linktitle: Concatenate Two PDF Files
 type: docs
 weight: 60
 url: /java/concatenate-two-files/

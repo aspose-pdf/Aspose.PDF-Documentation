@@ -1,5 +1,6 @@
 ---
 title: Get Viewer Preference of PDF File
+linktitle: Get Viewer Preference of PDF File
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

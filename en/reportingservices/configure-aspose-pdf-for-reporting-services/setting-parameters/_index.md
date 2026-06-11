@@ -1,5 +1,6 @@
 ---
 title: Setting Parameters
+linktitle: Setting Parameters
 type: docs
 weight: 10
 url: /reportingservices/setting-parameters/

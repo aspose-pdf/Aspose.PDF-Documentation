@@ -1,5 +1,6 @@
 ---
 title: Page Information
+linktitle: Page Information
 type: docs
 weight: 20
 url: /java/page-information/

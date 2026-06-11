@@ -1,5 +1,6 @@
 ---
 title: License
+linktitle: License
 
 type: docs
 weight: 70

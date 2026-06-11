@@ -1,5 +1,6 @@
 ---
 title: PDF Certification
+linktitle: PDF Certification
 type: docs
 weight: 30
 url: /java/pdf-certification/

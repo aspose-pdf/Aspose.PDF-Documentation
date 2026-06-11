@@ -1,5 +1,6 @@
 ---
 title: Install SharePoint
+linktitle: Install SharePoint
 type: docs
 weight: 40
 url: /sharepoint/install-aspose-pdf-for-sharepoint/

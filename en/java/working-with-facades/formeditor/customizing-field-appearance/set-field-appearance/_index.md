@@ -1,5 +1,6 @@
 ---
 title: Set Field Appearance
+linktitle: Set Field Appearance
 type: docs
 weight: 40
 url: /java/set-field-appearance/

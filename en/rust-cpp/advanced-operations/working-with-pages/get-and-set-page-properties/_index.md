@@ -1,5 +1,6 @@
 ---
 title: Get and Set Page Properties
+linktitle: Get and Set Page Properties
 type: docs
 url: /rust-cpp/get-and-set-page-properties/
 description: Learn how to get and set page properties for PDF documents using Aspose.PDF for Rust, allowing for customized document formatting.

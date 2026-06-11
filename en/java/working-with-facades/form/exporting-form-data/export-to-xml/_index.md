@@ -1,5 +1,6 @@
 ---
 title: Export to XML
+linktitle: Export to XML
 type: docs
 weight: 40
 url: /java/export-to-xml/

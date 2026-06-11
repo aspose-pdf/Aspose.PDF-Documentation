@@ -1,5 +1,6 @@
 ---
 title: SQL Reporting Services Integration with MS SharePoint
+linktitle: SQL Reporting Services Integration with MS SharePoint
 type: docs
 weight: 20
 url: /reportingservices/sql-reporting-services-integration-with-ms-sharepoint/

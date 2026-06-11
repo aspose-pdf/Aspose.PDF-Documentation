@@ -1,5 +1,6 @@
 ---
 title: Add and Delete Bookmarks
+linktitle: Add and Delete Bookmarks
 type: docs
 weight: 10
 url: /cpp/add-and-delete-bookmarks/

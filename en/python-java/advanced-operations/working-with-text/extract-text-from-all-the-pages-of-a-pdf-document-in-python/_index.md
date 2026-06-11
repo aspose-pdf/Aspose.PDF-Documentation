@@ -1,5 +1,6 @@
 ---
 title: Extract Text From All the Pages of a PDF Document in Python
+linktitle: Extract Text From All the Pages of a PDF Document in Python
 type: docs
 weight: 30
 url: /python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/

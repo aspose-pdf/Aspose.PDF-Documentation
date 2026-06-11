@@ -1,5 +1,6 @@
 ---
 title: Document Properties
+linktitle: Document Properties
 type: docs
 weight: 10
 url: /java/document-properties/

@@ -1,5 +1,6 @@
 ---
 title: Delete List Item
+linktitle: Delete List Item
 type: docs
 weight: 20
 url: /java/del-list-item/

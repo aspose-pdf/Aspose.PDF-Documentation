@@ -1,5 +1,6 @@
 ---
 title: Custom Properties Supported
+linktitle: Custom Properties Supported
 type: docs
 weight: 20
 url: /reportingservices/custom-properties-supported/

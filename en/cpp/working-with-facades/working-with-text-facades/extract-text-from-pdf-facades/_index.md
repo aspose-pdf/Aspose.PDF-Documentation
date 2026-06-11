@@ -1,5 +1,6 @@
 ---
 title: Extract Text from PDF - Facades
+linktitle: Extract Text from PDF - Facades
 type: docs
 weight: 10
 url: /cpp/extract-text-from-pdf-facades/

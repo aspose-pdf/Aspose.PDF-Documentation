@@ -1,5 +1,6 @@
 ---
 title: License
+linktitle: License
 type: docs
 weight: 60
 url: /sharepoint/license-aspose-pdf-for-sharepoint/

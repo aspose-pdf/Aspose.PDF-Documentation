@@ -1,5 +1,6 @@
 ---
 title: Stamps Management
+linktitle: Stamps Management
 type: docs
 weight: 80
 url: /java/pdfcontenteditor-stamps-management/

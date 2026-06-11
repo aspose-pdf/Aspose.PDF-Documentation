@@ -1,5 +1,6 @@
 ---
 title: Managing Form Fields
+linktitle: Managing Form Fields
 type: docs
 weight: 50
 url: /java/managing-form-fields/

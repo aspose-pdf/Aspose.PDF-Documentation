@@ -1,5 +1,6 @@
 ---
 title: Encrypt PDF File
+linktitle: Encrypt PDF File
 type: docs
 weight: 30
 url: /java/encrypt-pdf-file/

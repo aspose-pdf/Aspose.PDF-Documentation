@@ -1,5 +1,6 @@
 ---
 title: Check shape bounds in Shapes collection
+linktitle: Check shape bounds in Shapes collection
 type: docs
 weight: 70
 url: /net/aspose-pdf-drawing-graph-shapes-bounds-check/

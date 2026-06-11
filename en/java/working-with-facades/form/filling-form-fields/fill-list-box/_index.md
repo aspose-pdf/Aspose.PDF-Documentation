@@ -1,5 +1,6 @@
 ---
 title: Fill List Box
+linktitle: Fill List Box
 type: docs
 weight: 40
 url: /java/fill-list-box/

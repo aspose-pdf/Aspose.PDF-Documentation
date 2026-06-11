@@ -1,5 +1,6 @@
 ---
 title: Footnote Endnote
+linktitle: Footnote Endnote
 type: docs
 weight: 30
 url: /reportingservices/footnote-endnote/

@@ -1,5 +1,6 @@
 ---
 title: Create N-Up PDF Document
+linktitle: Create N-Up PDF Document
 type: docs
 weight: 10
 url: /java/create-n-up-pdf-document/

@@ -1,5 +1,6 @@
 ---
 title: PDF Text Annotation
+linktitle: PDF Text Annotation
 Texttitle: Text Annotation
 type: docs
 weight: 10

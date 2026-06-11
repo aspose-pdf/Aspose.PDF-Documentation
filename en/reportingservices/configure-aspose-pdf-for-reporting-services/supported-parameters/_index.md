@@ -1,5 +1,6 @@
 ---
 title: Supported Parameters
+linktitle: Supported Parameters
 type: docs
 weight: 20
 url: /reportingservices/supported-parameters/

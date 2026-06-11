@@ -1,5 +1,6 @@
 ---
 title: Document Actions
+linktitle: Document Actions
 type: docs
 weight: 30
 url: /java/pdfcontenteditor-document-actions/

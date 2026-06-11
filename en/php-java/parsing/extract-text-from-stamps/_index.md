@@ -1,5 +1,6 @@
 ---
 title: Extract Text From Stamps
+linktitle: Extract Text From Stamps
 type: docs
 weight: 60
 url: /php-java/extract-text-from-stamps/

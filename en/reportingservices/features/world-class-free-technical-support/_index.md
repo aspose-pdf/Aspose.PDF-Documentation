@@ -1,5 +1,6 @@
 ---
 title: World Class Free Technical Support
+linktitle: World Class Free Technical Support
 type: docs
 weight: 50
 url: /reportingservices/world-class-free-technical-support/

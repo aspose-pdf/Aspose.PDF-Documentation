@@ -1,5 +1,6 @@
 ---
 title: PdfAnnotationEditor Class
+linktitle: PdfAnnotationEditor Class
 type: docs
 weight: 40
 url: /java/pdfannotationeditor-class/

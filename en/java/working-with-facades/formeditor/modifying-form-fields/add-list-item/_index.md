@@ -1,5 +1,6 @@
 ---
 title: Add List Item
+linktitle: Add List Item
 type: docs
 weight: 10
 url: /java/add-list-item/

@@ -1,5 +1,6 @@
 ---
 title: Install with MSI Installer
+linktitle: Install with MSI Installer
 type: docs
 weight: 10
 url: /reportingservices/install-with-msi-installer/

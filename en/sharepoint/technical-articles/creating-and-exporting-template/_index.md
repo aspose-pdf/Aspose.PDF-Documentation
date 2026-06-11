@@ -1,5 +1,6 @@
 ---
 title: Creating and Exporting Template
+linktitle: Creating and Exporting Template
 type: docs
 weight: 10
 url: /sharepoint/creating-and-exporting-template/

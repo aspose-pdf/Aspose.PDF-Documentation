@@ -1,5 +1,6 @@
 ---
 title: Installing Aspose.Pdf for SharePoint License
+linktitle: Installing Aspose.Pdf for SharePoint License
 type: docs
 weight: 10
 url: /sharepoint/installing-aspose-pdf-for-sharepoint-license/

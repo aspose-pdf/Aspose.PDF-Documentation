@@ -1,5 +1,6 @@
 ---
 title: Adding Scripts and Submit Actions
+linktitle: Adding Scripts and Submit Actions
 type: docs
 weight: 40
 url: /java/adding-scripts-and-submit-actions/

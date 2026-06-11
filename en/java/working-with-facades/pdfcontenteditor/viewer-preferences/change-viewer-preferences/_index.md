@@ -1,5 +1,6 @@
 ---
 title: Change Viewer Preferences
+linktitle: Change Viewer Preferences
 type: docs
 weight: 20
 url: /java/change-viewer-preferences/

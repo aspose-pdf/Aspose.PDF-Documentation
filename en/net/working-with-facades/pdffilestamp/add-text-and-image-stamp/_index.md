@@ -1,5 +1,6 @@
 ---
 title: Add Text and Image Stamp
+linktitle: Add Text and Image Stamp
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

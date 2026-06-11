@@ -1,5 +1,6 @@
 ---
 title: Exporting Form Data
+linktitle: Exporting Form Data
 type: docs
 weight: 10
 url: /java/exporting-form-data/

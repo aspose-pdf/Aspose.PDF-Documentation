@@ -1,5 +1,6 @@
 ---
 title: Page Orientation
+linktitle: Page Orientation
 type: docs
 weight: 10
 url: /reportingservices/page-orientation/

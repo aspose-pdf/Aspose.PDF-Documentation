@@ -1,5 +1,6 @@
 ---
 title: Comprehensive RDL Support
+linktitle: Comprehensive RDL Support
 type: docs
 weight: 10
 url: /reportingservices/comprehensive-rdl-support/

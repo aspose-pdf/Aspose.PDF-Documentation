@@ -1,5 +1,6 @@
 ---
 title: Image Operations
+linktitle: Image Operations
 type: docs
 weight: 50
 url: /java/pdfcontenteditor-image-operations/

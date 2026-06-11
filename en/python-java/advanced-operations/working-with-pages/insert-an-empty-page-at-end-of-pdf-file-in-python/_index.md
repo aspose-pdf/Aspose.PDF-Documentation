@@ -1,5 +1,6 @@
 ---
 title: Insert an Empty Page at End of PDF File in Python
+linktitle: Insert an Empty Page at End of PDF File in Python
 type: docs
 weight: 60
 url: /python-java/insert-an-empty-page-at-end-of-pdf-file-in-python/

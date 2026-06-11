@@ -1,5 +1,6 @@
 ---
 title: Button Fields and Images
+linktitle: Button Fields and Images
 type: docs
 weight: 40
 url: /java/button-fields-and-images/

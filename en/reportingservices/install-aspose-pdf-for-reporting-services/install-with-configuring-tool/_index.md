@@ -1,5 +1,6 @@
 ---
 title: Install with Configuring Tool
+linktitle: Install with Configuring Tool
 type: docs
 weight: 30
 url: /reportingservices/install-with-configuring-tool/

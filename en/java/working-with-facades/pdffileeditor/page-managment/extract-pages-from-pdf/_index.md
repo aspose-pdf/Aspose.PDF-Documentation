@@ -1,5 +1,6 @@
 ---
 title: Extract Pages from PDF
+linktitle: Extract Pages from PDF
 type: docs
 weight: 30
 url: /java/extract-pages-from-pdf/

@@ -1,5 +1,6 @@
 ---
 title: Product Overview
+linktitle: Product Overview
 type: docs
 weight: 10
 url: /sharepoint/product-overview/

@@ -1,5 +1,6 @@
 ---
 title: Get and Set Page Properties
+linktitle: Get and Set Page Properties
 type: docs
 url: /go-cpp/get-and-set-page-properties/
 description: Learn how to get and set page properties for PDF documents using Aspose.PDF for Go, allowing for customized document formatting.

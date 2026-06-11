@@ -1,5 +1,6 @@
 ---
 title: Add Page Number to PDF
+linktitle: Add Page Number to PDF
 type: docs
 weight: 30
 url: /java/page-number/

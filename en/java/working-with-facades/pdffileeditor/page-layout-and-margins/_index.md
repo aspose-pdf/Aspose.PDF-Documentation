@@ -1,5 +1,6 @@
 ---
 title: Page Layout and Margins
+linktitle: Page Layout and Margins
 type: docs
 weight: 20
 url: /java/page-layout-and-margins/

@@ -1,5 +1,6 @@
 ---
 title: Copy Outer Field
+linktitle: Copy Outer Field
 type: docs
 weight: 80
 url: /java/copy-outer-field/
