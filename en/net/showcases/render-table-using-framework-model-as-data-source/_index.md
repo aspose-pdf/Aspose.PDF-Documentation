@@ -1,5 +1,5 @@
 ---
-title: Render table with Entity Framework 
+title: Render table with Entity Framework
 linktitle: Render table with Entity Framework
 type: docs
 ai_search_scope: pdf_net

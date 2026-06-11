@@ -1,5 +1,5 @@
 ---
-title: 添加和删除书签 
+title: 添加和删除书签
 linktitle: 添加和删除书签
 type: docs
 weight: 10

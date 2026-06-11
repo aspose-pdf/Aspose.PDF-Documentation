@@ -1,5 +1,5 @@
 ---
-title: Navigation et interaction dans le PDF 
+title: Navigation et interaction dans le PDF
 linktitle: Navigation et interaction
 type: docs
 weight: 90

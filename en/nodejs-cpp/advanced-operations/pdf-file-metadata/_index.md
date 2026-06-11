@@ -1,5 +1,5 @@
 ---
-title: Working with PDF File Metadata in Node.js 
+title: Working with PDF File Metadata in Node.js
 linktitle: PDF File Metadata
 type: docs
 weight: 130

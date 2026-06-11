@@ -1,5 +1,5 @@
 ---
-title: استخراج بيانات الجدول من PDF 
+title: استخراج بيانات الجدول من PDF
 linktitle: استخراج بيانات الجدول
 type: docs
 weight: 40

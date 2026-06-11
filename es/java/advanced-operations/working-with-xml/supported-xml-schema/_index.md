@@ -1,5 +1,5 @@
 ---
-title: XML Schema 
+title: XML Schema
 linktitle: XML Schema Compatible
 type: docs
 weight: 10

@@ -1,5 +1,5 @@
 ---
-title: التنقل والتفاعل في PDF 
+title: التنقل والتفاعل في PDF
 linktitle: التنقل والتفاعل
 type: docs
 weight: 90

@@ -1,5 +1,5 @@
 ---
-title: Bekerja dengan Tabel dalam PDF 
+title: Bekerja dengan Tabel dalam PDF
 linktitle: Bekerja dengan Tabel
 type: docs
 weight: 50

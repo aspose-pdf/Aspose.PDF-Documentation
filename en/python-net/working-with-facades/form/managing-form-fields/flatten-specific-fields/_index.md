@@ -1,5 +1,6 @@
 ---
-title: Flatten Specific Fields
+title: Flatten Specific Fields
+linktitle: Flatten Specific Fields
 type: docs
 weight: 20
 url: /python-net/flatten-specific-fields/

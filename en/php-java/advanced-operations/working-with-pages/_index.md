@@ -1,10 +1,10 @@
 ---
-title: Working with PDF Pages 
+title: Working with PDF Pages
 linktitle: Working with Pages
 type: docs
 weight: 20
 url: /php-java/working-with-pages/
-description: With Aspose.PDF for PHP via Java you can add pages, add headers and footers, add watermarks  into your PDF file. This section explain to you all details on this topic. 
+description: With Aspose.PDF for PHP via Java you can add pages, add headers and footers, add watermarks  into your PDF file. This section explain to you all details on this topic.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

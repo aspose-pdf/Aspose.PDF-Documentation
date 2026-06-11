@@ -1,5 +1,5 @@
 ---
-title: Konversi PDF ke teks 
+title: Konversi PDF ke teks
 linktitle: Konversi PDF ke teks
 type: docs
 weight: 120

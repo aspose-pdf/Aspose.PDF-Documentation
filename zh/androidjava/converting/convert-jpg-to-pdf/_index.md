@@ -1,6 +1,6 @@
 ---
-title: 将JPG转换为PDF 
-linktitle: 将JPG转换为PDF 
+title: 将JPG转换为PDF
+linktitle: 将JPG转换为PDF
 type: docs
 weight: 190
 url: /zh/androidjava/convert-jpg-to-pdf/

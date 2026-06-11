@@ -10,9 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add Text Watermark 
+AlternativeHeadline: Add Text Watermark
 Abstract: Aspose.PDF for Rust via C++ provides a flexible way to add text watermarks to PDF documents. This example demonstrates how to insert a customizable watermark by specifying text content, font, size, color, position, rotation angle, layering behavior, and transparency. Watermarks are commonly used for branding, confidentiality labels, draft markings, or document protection.
-SoftwareApplication: rust-cpp       
+SoftwareApplication: rust-cpp
 ---
 
 The [add_watermark](https://reference.aspose.com/pdf/rust-cpp/organize/add_watermark/) method allows developers to programmatically apply a text watermark to an existing PDF document. The watermark can be fully customized, including:

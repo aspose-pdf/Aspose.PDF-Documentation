@@ -1,5 +1,5 @@
 ---
-title: Mettre à jour les liens dans un PDF 
+title: Mettre à jour les liens dans un PDF
 linktitle: Mettre à jour les liens
 type: docs
 weight: 20

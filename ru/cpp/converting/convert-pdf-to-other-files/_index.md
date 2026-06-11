@@ -1,6 +1,6 @@
 ---
-title: Конвертировать PDF файл в другие форматы 
-linktitle: Конвертировать PDF в другие форматы 
+title: Конвертировать PDF файл в другие форматы
+linktitle: Конвертировать PDF в другие форматы
 type: docs
 weight: 90
 url: /ru/cpp/convert-pdf-to-other-files/

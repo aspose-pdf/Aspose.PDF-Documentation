@@ -1,5 +1,5 @@
 ---
-title: JavaScriptとC++を使用してPDFに画像スタンプを追加する 
+title: JavaScriptとC++を使用してPDFに画像スタンプを追加する
 linktitle: PDFファイルへの画像スタンプ
 type: docs
 weight: 60

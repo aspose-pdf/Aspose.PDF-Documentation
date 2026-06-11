@@ -1,5 +1,5 @@
 ---
-title: PDFファイルにテキストを追加する 
+title: PDFファイルにテキストを追加する
 linktitle: PDFファイルにテキストを追加する
 type: docs
 weight: 10

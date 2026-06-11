@@ -4,7 +4,7 @@ linktitle: Split PDF files
 type: docs
 weight: 60
 url: /php-java/split-document/
-description: This topic shows how to split PDF pages into individual PDF files in your PHP applications. 
+description: This topic shows how to split PDF pages into individual PDF files in your PHP applications.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

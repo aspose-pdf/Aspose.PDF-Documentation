@@ -1,11 +1,11 @@
 ---
-title: PDF Annotations 
+title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /ja/java/annotations/
 description: このセクションでは、Aspose.PDFライブラリを使用してPDFファイルにさまざまなアノテーションを使用する方法を示します。Javaを使用してアノテーションを描画、開く、または追加する方法を学びます。
-lastmod: "2021-11-26"    
+lastmod: "2021-11-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

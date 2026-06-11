@@ -1,5 +1,5 @@
 ---
-title: PDFをDOCに変換 
+title: PDFをDOCに変換
 linktitle: PDFをDOCに変換
 type: docs
 weight: 70

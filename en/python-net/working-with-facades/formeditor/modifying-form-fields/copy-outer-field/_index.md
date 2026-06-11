@@ -1,5 +1,6 @@
 ---
-title: Copy Outer Field
+title: Copy Outer Field
+linktitle: Copy Outer Field
 type: docs
 weight: 30
 url: /python-net/copy-outer-field/

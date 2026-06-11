@@ -1,5 +1,5 @@
 ---
-title: تحديث الروابط في PDF 
+title: تحديث الروابط في PDF
 linktitle: تحديث الروابط
 type: docs
 weight: 20

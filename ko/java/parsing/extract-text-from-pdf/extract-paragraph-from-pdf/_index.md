@@ -1,5 +1,5 @@
 ---
-title: PDF에서 단락 추출 
+title: PDF에서 단락 추출
 linktitle: 단락 추출
 type: docs
 weight: 20

@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Adding Page Numbers
 Abstract: Aspose.PDF for Rust via C++ enables developers to enhance existing PDF documents with automatic page numbering in just a few lines of code. This example demonstrates how to open a PDF file, insert page numbers across all pages, and save the updated document as a new file. Automating pagination ensures consistent document structure and is particularly useful for reports, contracts, manuals, and other multi-page outputs prepared for distribution or printing.
-SoftwareApplication: rust-cpp    
+SoftwareApplication: rust-cpp
 ---
 
 Aspose.PDF for Rust via C++ provides built-in functionality to modify PDF documents programmatically. In this example, the application opens an existing PDF file, applies automatic page numbering to every page, and saves the modified document under a new name.

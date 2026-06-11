@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /net/basics-of-dom-api/
-description: Aspose.PDF for .NET also uses the idea of DOM to represent the structure of a PDF document in terms of objects. 
+description: Aspose.PDF for .NET also uses the idea of DOM to represent the structure of a PDF document in terms of objects.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

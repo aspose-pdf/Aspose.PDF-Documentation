@@ -1,5 +1,5 @@
 ---
-title: Mengkonversi PDF ke Excel 
+title: Mengkonversi PDF ke Excel
 linktitle: Mengkonversi PDF ke Excel
 type: docs
 weight: 20

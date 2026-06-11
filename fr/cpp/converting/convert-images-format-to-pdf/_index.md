@@ -1,5 +1,5 @@
 ---
-title: Convertir divers formats d'images en PDF 
+title: Convertir divers formats d'images en PDF
 linktitle: Convertir des images en PDF
 type: docs
 weight: 60

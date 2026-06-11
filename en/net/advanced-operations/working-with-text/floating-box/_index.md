@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/floating-box/
-description: This page explains how to format text inside floating box. 
+description: This page explains how to format text inside floating box.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

@@ -1,5 +1,5 @@
 ---
-title: Extraire les données de table à partir d'un PDF 
+title: Extraire les données de table à partir d'un PDF
 linktitle: Extraire les données de table
 type: docs
 weight: 40

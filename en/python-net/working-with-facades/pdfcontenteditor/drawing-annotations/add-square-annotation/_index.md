@@ -1,5 +1,6 @@
 ---
-title: Add Square Annotation
+title: Add Square Annotation
+linktitle: Add Square Annotation
 type: docs
 weight: 60
 url: /python-net/add-square-annotation/

@@ -1,6 +1,6 @@
 ---
-title: Advanced operations 
-linktitle: Advanced operations 
+title: Advanced operations
+linktitle: Advanced operations
 type: docs
 weight: 70
 url: /ko/php-java/advanced-operations/

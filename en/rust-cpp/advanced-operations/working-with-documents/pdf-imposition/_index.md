@@ -1,5 +1,5 @@
 ---
-title: PDF Imposition using Aspose.PDF for Rust via C++ 
+title: PDF Imposition using Aspose.PDF for Rust via C++
 linktitle: PDF Imposition
 type: docs
 weight: 30
@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: How to make a Booklet or N-Up of PDF files
 Abstract: Aspose.PDF for Rust via C++ provides powerful tools for restructuring PDF documents to meet printing and layout requirements. This article demonstrates how to convert a standard PDF into a booklet, ensuring correct page order for folding, and how to create an N-Up PDF that combines multiple pages into a single sheet. Using concise Rust code examples, developers can quickly implement print-ready PDF transformations for documentation, publishing, and archival workflows.
-SoftwareApplication: rust-cpp      
+SoftwareApplication: rust-cpp
 ---
 
 ## Make N-Up of PDF

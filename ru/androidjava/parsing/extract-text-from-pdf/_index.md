@@ -1,6 +1,6 @@
 ---
-title: Извлечение текста из PDF 
-linktitle: Извлечение текста 
+title: Извлечение текста из PDF
+linktitle: Извлечение текста
 type: docs
 weight: 10
 url: /ru/androidjava/extract-text-from-pdf/

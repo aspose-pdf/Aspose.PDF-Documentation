@@ -1,5 +1,5 @@
 ---
-title: Extrair Conteúdo Marcado de PDF 
+title: Extrair Conteúdo Marcado de PDF
 linktitle: Extrair Conteúdo Marcado
 type: docs
 weight: 20

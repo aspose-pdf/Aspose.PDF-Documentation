@@ -1,5 +1,5 @@
 ---
-title: 탐색 및 상호작용 
+title: 탐색 및 상호작용
 linktitle: 탐색 및 상호작용
 type: docs
 weight: 90

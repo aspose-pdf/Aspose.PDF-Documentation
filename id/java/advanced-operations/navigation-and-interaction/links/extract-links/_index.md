@@ -1,10 +1,10 @@
 ---
-title: Ekstrak Tautan dari File PDF 
+title: Ekstrak Tautan dari File PDF
 linktitle: Ekstrak Tautan
 type: docs
 weight: 30
 url: /id/java/extract-links/
-description: Ekstrak tautan dari PDF dengan Java. Topik ini menjelaskan cara mengekstrak tautan menggunakan kelas AnnotationSelector. 
+description: Ekstrak tautan dari PDF dengan Java. Topik ini menjelaskan cara mengekstrak tautan menggunakan kelas AnnotationSelector.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

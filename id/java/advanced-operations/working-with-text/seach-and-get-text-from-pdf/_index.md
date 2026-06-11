@@ -1,5 +1,5 @@
 ---
-title: Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF 
+title: Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF
 linktitle: Mencari dan Mendapatkan Teks
 type: docs
 weight: 60

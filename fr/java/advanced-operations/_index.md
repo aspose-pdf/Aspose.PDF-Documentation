@@ -1,10 +1,10 @@
 ---
-title: Opérations avancées 
-linktitle: Opérations avancées 
+title: Opérations avancées
+linktitle: Opérations avancées
 type: docs
 weight: 70
 url: /fr/java/advanced-operations/
-description: Vous pouvez effectuer non seulement des tâches simples et faciles, mais aussi atteindre des objectifs plus complexes avec Aspose. PDF pour Java. 
+description: Vous pouvez effectuer non seulement des tâches simples et faciles, mais aussi atteindre des objectifs plus complexes avec Aspose. PDF pour Java.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

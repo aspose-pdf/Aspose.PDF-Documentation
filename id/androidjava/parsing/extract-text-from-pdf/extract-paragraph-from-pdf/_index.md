@@ -1,5 +1,5 @@
 ---
-title: Ekstrak Paragraf dari PDF 
+title: Ekstrak Paragraf dari PDF
 linktitle: Ekstrak Paragraf
 type: docs
 weight: 20

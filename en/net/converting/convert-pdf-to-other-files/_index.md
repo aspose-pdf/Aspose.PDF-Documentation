@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to EPUB, LaTeX, Text, XPS in C#
-linktitle: Convert PDF to other formats 
+linktitle: Convert PDF to other formats
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

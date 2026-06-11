@@ -1,5 +1,5 @@
 ---
-title: Работа с ссылками в PDF программно 
+title: Работа с ссылками в PDF программно
 linktitle: Ссылки
 type: docs
 weight: 10

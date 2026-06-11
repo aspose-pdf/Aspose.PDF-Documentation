@@ -1,5 +1,6 @@
 ---
-title: Replace Images in PDF
+title: Replace Images in PDF
+linktitle: Replace Images in PDF
 type: docs
 weight: 30
 url: /python-net/replace-image/

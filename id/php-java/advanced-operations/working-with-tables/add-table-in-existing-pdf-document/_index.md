@@ -1,5 +1,5 @@
 ---
-title: Membuat atau Menambah Tabel Dalam PDF 
+title: Membuat atau Menambah Tabel Dalam PDF
 linktitle: Membuat atau Menambah Tabel
 type: docs
 weight: 10

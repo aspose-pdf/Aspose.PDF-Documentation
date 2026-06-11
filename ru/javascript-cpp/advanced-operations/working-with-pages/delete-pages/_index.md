@@ -1,5 +1,5 @@
 ---
-title: Удаление страниц PDF с помощью JavaScript через C++ 
+title: Удаление страниц PDF с помощью JavaScript через C++
 linktitle: Удаление страниц PDF
 type: docs
 weight: 30

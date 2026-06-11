@@ -1,6 +1,6 @@
 ---
-title: PDF 문서에 첨부 파일 추가하기 
-linktitle: PDF 문서에 첨부 파일 추가하기 
+title: PDF 문서에 첨부 파일 추가하기
+linktitle: PDF 문서에 첨부 파일 추가하기
 type: docs
 weight: 10
 url: /ko/java/add-attachment-to-pdf-document/

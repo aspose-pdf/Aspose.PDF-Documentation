@@ -1,5 +1,5 @@
 ---
-title: العمل مع مستندات PDF 
+title: العمل مع مستندات PDF
 linktitle: العمل مع المستندات
 type: docs
 weight: 10

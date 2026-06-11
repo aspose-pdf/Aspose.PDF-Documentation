@@ -1,5 +1,5 @@
 ---
-title: PDFに画像スタンプをプログラムで追加 
+title: PDFに画像スタンプをプログラムで追加
 linktitle: PDFファイルの画像スタンプ
 type: docs
 weight: 10

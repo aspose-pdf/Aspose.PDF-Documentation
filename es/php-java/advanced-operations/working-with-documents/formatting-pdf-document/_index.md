@@ -1,5 +1,5 @@
 ---
-title: Formateo del Documento PDF 
+title: Formateo del Documento PDF
 linktitle: Formateo del Documento PDF
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: PDF内のテキストを回転 
+title: PDF内のテキストを回転
 linktitle: PDF内のテキストを回転
 type: docs
 weight: 50

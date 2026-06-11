@@ -1,5 +1,5 @@
 ---
-title: Ajouter une Image au PDF en utilisant JavaScript via C++ 
+title: Ajouter une Image au PDF en utilisant JavaScript via C++
 linktitle: Ajouter une Image
 type: docs
 weight: 10

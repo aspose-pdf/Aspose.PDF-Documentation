@@ -1,5 +1,6 @@
 ---
-title: Set Field Comb Number
+title: Set Field Comb Number
+linktitle: Set Field Comb Number
 type: docs
 weight: 70
 url: /python-net/set-field-comb-number/

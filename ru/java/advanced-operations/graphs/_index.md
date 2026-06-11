@@ -1,5 +1,5 @@
 ---
-title: Работа с графиками 
+title: Работа с графиками
 linktitle: Работа с графиками
 type: docs
 weight: 70

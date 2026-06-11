@@ -1,5 +1,5 @@
 ---
-title: Ekstrak Gambar dari PDF 
+title: Ekstrak Gambar dari PDF
 linktitle: Ekstrak Gambar
 type: docs
 weight: 20

@@ -1,11 +1,11 @@
 ---
-title: PDF Annotations 
+title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /zh/java/annotations/
 description: 本节展示如何使用Aspose.PDF库在PDF文件中使用各种注释。了解如何用Java绘制、打开或添加注释。
-lastmod: "2021-11-26"    
+lastmod: "2021-11-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

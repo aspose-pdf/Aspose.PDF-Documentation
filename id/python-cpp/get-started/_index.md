@@ -1,12 +1,12 @@
 ---
-title: Memulai 
+title: Memulai
 linktitle: Memulai
 type: docs
 weight: 30
 url: /id/python-cpp/get-started/
 description: Halaman ini adalah gambaran umum tentang cara menggunakan Aspose.PDF untuk Python melalui C++ untuk membuat dan mengedit dokumen PDF
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

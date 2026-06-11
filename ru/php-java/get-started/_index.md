@@ -6,7 +6,7 @@ weight: 30
 url: /ru/php-java/get-started/
 description: Этот раздел описывает основные принципы работы и использования API. Также демонстрирует простые и сложные примеры создания PDF-документа
 lastmod: "2024-06-05"
-sitemap: 
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

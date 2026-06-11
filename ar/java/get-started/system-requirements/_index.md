@@ -1,5 +1,5 @@
 ---
-title: متطلبات النظام 
+title: متطلبات النظام
 linktitle: متطلبات النظام
 type: docs
 weight: 30

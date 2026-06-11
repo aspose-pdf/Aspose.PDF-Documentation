@@ -1,5 +1,5 @@
 ---
-title: Extraer Párrafo de PDF 
+title: Extraer Párrafo de PDF
 linktitle: Extraer Párrafo de PDF
 type: docs
 weight: 20

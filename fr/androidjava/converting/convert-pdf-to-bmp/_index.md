@@ -1,5 +1,5 @@
 ---
-title: Convertir PDF en BMP 
+title: Convertir PDF en BMP
 linktitle: Convertir PDF en BMP
 type: docs
 weight: 40

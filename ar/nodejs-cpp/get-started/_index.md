@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/nodejs-cpp/get-started/
 description: يصف هذا القسم المبادئ الأساسية لعمل Aspose.PDF لـ Node.js عبر C++. يدعم Aspose.PDF لـ Node.js عبر C++ مجموعة واسعة من الوظائف.
-lastmod: "2023-11-16"   
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

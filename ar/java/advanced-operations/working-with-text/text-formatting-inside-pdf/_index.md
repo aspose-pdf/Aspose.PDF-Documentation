@@ -1,5 +1,5 @@
 ---
-title: تنسيق النص داخل PDF 
+title: تنسيق النص داخل PDF
 linktitle: تنسيق النص داخل PDF
 type: docs
 weight: 30

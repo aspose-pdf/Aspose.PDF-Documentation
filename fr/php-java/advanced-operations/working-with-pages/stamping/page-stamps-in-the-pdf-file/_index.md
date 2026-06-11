@@ -1,5 +1,5 @@
 ---
-title: Ajouter un Tampon de Page PDF au PDF 
+title: Ajouter un Tampon de Page PDF au PDF
 linktitle: Tampons de page dans le fichier PDF
 type: docs
 weight: 30

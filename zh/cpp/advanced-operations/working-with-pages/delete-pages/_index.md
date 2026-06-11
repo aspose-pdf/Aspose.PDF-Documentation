@@ -1,5 +1,5 @@
 ---
-title: 程序化删除PDF页面 
+title: 程序化删除PDF页面
 linktitle: 删除PDF页面
 type: docs
 weight: 30

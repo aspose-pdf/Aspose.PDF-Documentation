@@ -1,5 +1,5 @@
 ---
-title: Travailler avec des pages PDF 
+title: Travailler avec des pages PDF
 linktitle: Travailler avec des pages
 type: docs
 weight: 20

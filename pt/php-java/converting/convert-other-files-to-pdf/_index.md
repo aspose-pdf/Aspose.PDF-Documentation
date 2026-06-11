@@ -1,6 +1,6 @@
 ---
-title: Converter vários formatos de arquivo para PDF 
-linktitle: Converter outros formatos de arquivo para PDF 
+title: Converter vários formatos de arquivo para PDF
+linktitle: Converter outros formatos de arquivo para PDF
 type: docs
 weight: 80
 url: /pt/php-java/convert-other-files-to-pdf/

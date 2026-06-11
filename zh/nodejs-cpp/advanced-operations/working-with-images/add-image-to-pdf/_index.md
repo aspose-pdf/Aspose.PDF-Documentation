@@ -1,5 +1,5 @@
 ---
-title: 将图像添加到 Node.js 中的 PDF 
+title: 将图像添加到 Node.js 中的 PDF
 linktitle: 添加图像
 type: docs
 weight: 10

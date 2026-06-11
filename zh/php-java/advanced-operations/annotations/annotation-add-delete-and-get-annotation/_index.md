@@ -1,12 +1,12 @@
 ---
 
-title: 添加、删除和获取注释  
-type: docs  
-linktitle: 添加、删除和获取注释  
-weight: 20  
-url: /zh/php-java/add-delete-and-get-annotation/  
-description: 使用 Aspose.PDF for PHP，您可以从 PDF 文件中添加、删除和获取注释。查看所有注释列表以解决您的任务。  
-lastmod: "2024-06-28"  
+title: 添加、删除和获取注释
+type: docs
+linktitle: 添加、删除和获取注释
+weight: 20
+url: /zh/php-java/add-delete-and-get-annotation/
+description: 使用 Aspose.PDF for PHP，您可以从 PDF 文件中添加、删除和获取注释。查看所有注释列表以解决您的任务。
+lastmod: "2024-06-28"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

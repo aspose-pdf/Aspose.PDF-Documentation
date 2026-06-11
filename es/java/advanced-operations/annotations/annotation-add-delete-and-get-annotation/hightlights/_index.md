@@ -1,5 +1,5 @@
 ---
-title: Anotación de Resaltados en PDF 
+title: Anotación de Resaltados en PDF
 linktitle: Anotación de Resaltados
 type: docs
 weight: 20

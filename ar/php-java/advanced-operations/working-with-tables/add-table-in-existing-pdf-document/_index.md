@@ -1,5 +1,5 @@
 ---
-title: إنشاء أو إضافة جدول في ملف PDF 
+title: إنشاء أو إضافة جدول في ملف PDF
 linktitle: إنشاء أو إضافة جدول
 type: docs
 weight: 10

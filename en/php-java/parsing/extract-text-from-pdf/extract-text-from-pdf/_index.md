@@ -1,5 +1,5 @@
 ---
-title: Extracting raw text from PDF file 
+title: Extracting raw text from PDF file
 linktitle: Extract text from PDF
 type: docs
 weight: 10

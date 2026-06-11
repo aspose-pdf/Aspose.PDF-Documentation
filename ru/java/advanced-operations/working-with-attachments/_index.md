@@ -1,5 +1,5 @@
 ---
-title: Работа с вложениями в PDF 
+title: Работа с вложениями в PDF
 linktitle: Работа с вложениями
 type: docs
 weight: 130

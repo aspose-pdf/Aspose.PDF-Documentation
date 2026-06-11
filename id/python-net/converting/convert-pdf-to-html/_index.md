@@ -1,5 +1,5 @@
 ---
-title: Mengubah PDF ke HTML dalam Python 
+title: Mengubah PDF ke HTML dalam Python
 linktitle: Mengubah PDF ke format HTML
 type: docs
 weight: 50

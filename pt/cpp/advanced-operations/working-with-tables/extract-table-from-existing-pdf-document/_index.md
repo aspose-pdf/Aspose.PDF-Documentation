@@ -1,5 +1,5 @@
 ---
-title: Extrair Tabela de PDF 
+title: Extrair Tabela de PDF
 linktitle: Extrair Tabela
 type: docs
 weight: 20

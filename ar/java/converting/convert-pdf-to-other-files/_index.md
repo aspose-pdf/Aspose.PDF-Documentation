@@ -1,6 +1,6 @@
 ---
-title: تحويل ملف PDF إلى صيغ أخرى 
-linktitle: تحويل PDF إلى صيغ أخرى 
+title: تحويل ملف PDF إلى صيغ أخرى
+linktitle: تحويل PDF إلى صيغ أخرى
 type: docs
 weight: 90
 url: /ar/java/convert-pdf-to-other-files/

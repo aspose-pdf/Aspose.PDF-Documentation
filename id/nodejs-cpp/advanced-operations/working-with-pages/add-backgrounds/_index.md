@@ -4,7 +4,7 @@ linktitle: Tambahkan latar belakang
 type: docs
 weight: 10
 url: /id/nodejs-cpp/add-background/
-description: Tambahkan gambar latar belakang ke file PDF Anda di Node.js 
+description: Tambahkan gambar latar belakang ke file PDF Anda di Node.js
 lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"

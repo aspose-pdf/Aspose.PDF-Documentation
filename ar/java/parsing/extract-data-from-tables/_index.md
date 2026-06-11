@@ -1,6 +1,6 @@
 ---
-title: استخراج بيانات الجدول من PDF 
-linktitle: استخراج بيانات الجدول 
+title: استخراج بيانات الجدول من PDF
+linktitle: استخراج بيانات الجدول
 type: docs
 weight: 40
 url: /ar/java/extract-data-from-table-in-pdf/

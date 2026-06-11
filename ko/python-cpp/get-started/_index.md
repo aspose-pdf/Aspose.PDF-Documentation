@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /ko/python-cpp/get-started/
 description: 이 페이지는 Aspose.PDF for Python via C++를 사용하여 PDF 문서를 생성하고 편집하는 방법에 대한 개요입니다.
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

@@ -1,5 +1,6 @@
 ---
-title: Fill Check Box Fields
+title: Fill Check Box Fields
+linktitle: Fill Check Box Fields
 type: docs
 weight: 20
 url: /python-net/fill-check-box-fields/

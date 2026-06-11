@@ -1,6 +1,6 @@
 ---
-title: Crear PDF Etiquetado 
-linktitle: Crear PDF Etiquetado 
+title: Crear PDF Etiquetado
+linktitle: Crear PDF Etiquetado
 type: docs
 weight: 10
 lastmod: "2021-06-05"

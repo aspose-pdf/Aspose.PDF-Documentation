@@ -1,5 +1,5 @@
 ---
-title: Sécurisation et signature des documents PDF 
+title: Sécurisation et signature des documents PDF
 linktitle: Sécurisation et signature dans PDF
 type: docs
 weight: 150

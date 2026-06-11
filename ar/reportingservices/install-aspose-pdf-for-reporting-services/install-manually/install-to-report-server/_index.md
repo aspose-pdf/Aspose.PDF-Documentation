@@ -1,11 +1,10 @@
 ---
 
-title: التثبيت على خادم التقارير  
-type: docs  
-weight: 10  
-url: /ar/reportingservices/install-to-report-server/  
-lastmod: "2021-06-05"  
-
+title: التثبيت على خادم التقارير
+type: docs
+weight: 10
+url: /ar/reportingservices/install-to-report-server/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

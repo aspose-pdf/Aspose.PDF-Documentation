@@ -1,5 +1,6 @@
 ---
-title: Set PDF Metadata
+title: Set PDF Metadata
+linktitle: Set PDF Metadata
 type: docs
 weight: 50
 url: /python-net/set-pdf-metadata/

@@ -1,5 +1,5 @@
 ---
-title: 将DICOM转换为PDF 
+title: 将DICOM转换为PDF
 linktitle: 将DICOM转换为PDF
 type: docs
 weight: 250

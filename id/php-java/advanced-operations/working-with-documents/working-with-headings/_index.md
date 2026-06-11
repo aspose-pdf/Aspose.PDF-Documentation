@@ -1,14 +1,14 @@
 ---
 
-title: Bekerja dengan Judul di PDF  
-type: docs  
-weight: 70  
-url: /id/php-java/working-with-headings/  
-lastmod: "2024-06-05"  
-description: Buat penomoran pada judul dokumen PDF Anda menggunakan PHP. Aspose.PDF untuk PHP via Java menawarkan berbagai macam gaya penomoran.  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: Bekerja dengan Judul di PDF
+type: docs
+weight: 70
+url: /id/php-java/working-with-headings/
+lastmod: "2024-06-05"
+description: Buat penomoran pada judul dokumen PDF Anda menggunakan PHP. Aspose.PDF untuk PHP via Java menawarkan berbagai macam gaya penomoran.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 ## Terapkan Gaya Penomoran pada Judul
 

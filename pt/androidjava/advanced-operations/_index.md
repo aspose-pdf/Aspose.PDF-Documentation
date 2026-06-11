@@ -1,6 +1,6 @@
 ---
-title: Operações avançadas 
-linktitle: Operações avançadas 
+title: Operações avançadas
+linktitle: Operações avançadas
 type: docs
 weight: 70
 url: /pt/androidjava/advanced-operations/

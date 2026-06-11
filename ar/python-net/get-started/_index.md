@@ -1,12 +1,12 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
 url: /ar/python-net/get-started/
 description: يصف هذا القسم المبادئ الأساسية لعمل Aspose.PDF لـ Python عبر .NET. تدعم مكتبة Python مجموعة واسعة من الوظائف.
 is_node: true
-lastmod: "2022-12-20"   
+lastmod: "2022-12-20"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

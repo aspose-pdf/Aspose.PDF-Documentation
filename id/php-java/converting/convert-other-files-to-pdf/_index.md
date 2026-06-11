@@ -1,6 +1,6 @@
 ---
-title: Mengonversi berbagai format file ke PDF 
-linktitle: Mengonversi format file lain ke PDF 
+title: Mengonversi berbagai format file ke PDF
+linktitle: Mengonversi format file lain ke PDF
 type: docs
 weight: 80
 url: /id/php-java/convert-other-files-to-pdf/

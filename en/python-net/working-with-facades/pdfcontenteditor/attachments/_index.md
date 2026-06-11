@@ -1,5 +1,6 @@
 ---
-title: Attachments
+title: Attachments
+linktitle: Attachments
 type: docs
 weight: 20
 url: /python-net/attachments-facades/

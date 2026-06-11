@@ -1,5 +1,5 @@
 ---
-title: Tambahkan Stempel Gambar dalam PDF menggunakan JavaScript via C++ 
+title: Tambahkan Stempel Gambar dalam PDF menggunakan JavaScript via C++
 linktitle: Stempel gambar dalam File PDF
 type: docs
 weight: 60

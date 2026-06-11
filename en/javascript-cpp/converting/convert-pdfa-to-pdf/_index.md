@@ -1,11 +1,11 @@
 ---
-title: Convert PDF/A to PDF format 
+title: Convert PDF/A to PDF format
 linktitle: Convert PDF/A to PDF format
 type: docs
 weight: 110
 url: /javascript-cpp/convert-pdfa-to-pdf/
 lastmod: "2023-11-01"
-description: This topic show you how to Aspose.PDF allows to convert PDF/A file to PDF document with JavaScript. 
+description: This topic show you how to Aspose.PDF allows to convert PDF/A file to PDF document with JavaScript.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

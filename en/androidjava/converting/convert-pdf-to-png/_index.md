@@ -1,6 +1,6 @@
 ---
-title: Convert PDF to PNG 
-linktitle: Convert PDF to PNG 
+title: Convert PDF to PNG
+linktitle: Convert PDF to PNG
 type: docs
 weight: 20
 url: /androidjava/convert-pdf-to-png/

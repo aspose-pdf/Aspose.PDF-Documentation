@@ -1,5 +1,5 @@
 ---
-title: Работа с метаданными PDF-файлов в Node.js 
+title: Работа с метаданными PDF-файлов в Node.js
 linktitle: Метаданные PDF-файлов
 type: docs
 weight: 130

@@ -1,6 +1,6 @@
 ---
-title: 様々なファイル形式をPDFに変換 
-linktitle: 他のファイル形式をPDFに変換 
+title: 様々なファイル形式をPDFに変換
+linktitle: 他のファイル形式をPDFに変換
 type: docs
 weight: 80
 url: /ja/php-java/convert-other-files-to-pdf/

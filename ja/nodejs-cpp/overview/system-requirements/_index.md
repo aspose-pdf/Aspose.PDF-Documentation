@@ -1,15 +1,15 @@
 ---
 
-title: Aspose.PDF for Node.js のシステム要件  
-linktitle: システム要件  
-type: docs  
-weight: 30  
-url: /ja/nodejs-cpp/system-requirements/  
-description: このセクションでは、C++ 経由で Aspose.PDF for Node.js を使用するために必要なサポートされているオペレーティングシステムを一覧します。  
-lastmod: "2023-11-16"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: Aspose.PDF for Node.js のシステム要件
+linktitle: システム要件
+type: docs
+weight: 30
+url: /ja/nodejs-cpp/system-requirements/
+description: このセクションでは、C++ 経由で Aspose.PDF for Node.js を使用するために必要なサポートされているオペレーティングシステムを一覧します。
+lastmod: "2023-11-16"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 ## 概要
 

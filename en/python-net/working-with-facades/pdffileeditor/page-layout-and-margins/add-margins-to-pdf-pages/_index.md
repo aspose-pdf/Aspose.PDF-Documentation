@@ -1,5 +1,6 @@
 ---
-title: Add Margins to PDF Pages
+title: Add Margins to PDF Pages
+linktitle: Add Margins to PDF Pages
 type: docs
 weight: 10
 url: /python-net/add-margins-to-pdf-pages/

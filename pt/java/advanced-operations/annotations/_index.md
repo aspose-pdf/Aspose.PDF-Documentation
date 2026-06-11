@@ -1,11 +1,11 @@
 ---
-title: PDF Anotações 
+title: PDF Anotações
 linktitle: PDF Anotações
 type: docs
 weight: 100
 url: /pt/java/annotations/
 description: Esta seção mostra como usar todos os tipos de anotações no seu arquivo PDF com a biblioteca Aspose.PDF. Aprenda como desenhar, abrir ou adicionar uma anotação com Java.
-lastmod: "2021-11-26"    
+lastmod: "2021-11-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

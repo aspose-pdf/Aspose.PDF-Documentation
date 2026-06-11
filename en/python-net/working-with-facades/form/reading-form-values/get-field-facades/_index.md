@@ -1,5 +1,6 @@
 ---
-title: Get Field Facades
+title: Get Field Facades
+linktitle: Get Field Facades
 type: docs
 weight: 10
 url: /python-net/get-field-facades/

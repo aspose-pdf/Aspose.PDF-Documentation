@@ -1,5 +1,5 @@
 ---
-title: Extract Links from the PDF File 
+title: Extract Links from the PDF File
 linktitle: Extract Links
 type: docs
 weight: 30

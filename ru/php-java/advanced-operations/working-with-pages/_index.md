@@ -1,5 +1,5 @@
 ---
-title: Работа с PDF Страницами 
+title: Работа с PDF Страницами
 linktitle: Работа со Страницами
 type: docs
 weight: 20

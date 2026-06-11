@@ -1,5 +1,5 @@
 ---
-title: Mengonversi PDF ke Format Gambar 
+title: Mengonversi PDF ke Format Gambar
 linktitle: Mengonversi PDF ke Gambar
 type: docs
 weight: 70

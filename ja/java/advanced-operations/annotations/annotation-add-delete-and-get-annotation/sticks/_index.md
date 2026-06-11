@@ -1,5 +1,5 @@
 ---
-title: PDF スティッキー注釈 
+title: PDF スティッキー注釈
 linktitle: スティッキー注釈
 type: docs
 weight: 50

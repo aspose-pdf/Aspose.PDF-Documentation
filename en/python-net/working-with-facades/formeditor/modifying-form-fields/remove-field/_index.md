@@ -1,5 +1,6 @@
 ---
-title: Remove Field
+title: Remove Field
+linktitle: Remove Field
 type: docs
 weight: 60
 url: /python-net/remove-field/

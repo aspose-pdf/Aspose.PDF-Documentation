@@ -1,5 +1,5 @@
 ---
-title: 向 PDF 文件添加文本 
+title: 向 PDF 文件添加文本
 linktitle: 向 PDF 文件添加文本
 type: docs
 weight: 10

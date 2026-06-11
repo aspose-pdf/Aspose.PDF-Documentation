@@ -1,5 +1,5 @@
 ---
-title: PDF Sticky Annotations 
+title: PDF Sticky Annotations
 linktitle: Sticky Annotation
 type: docs
 weight: 50

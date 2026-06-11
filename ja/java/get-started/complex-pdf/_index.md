@@ -1,15 +1,15 @@
 ---
 
-title: 複雑なPDFの作成  
-linktitle: 複雑なPDFの作成  
-type: docs  
-weight: 60  
-url: /ja/java/complex-pdf-example/  
-description: Aspose.PDF for Javaを使用すると、画像、テキストフラグメント、テーブルを1つのドキュメントに含むより複雑なドキュメントを作成できます。  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: 複雑なPDFの作成
+linktitle: 複雑なPDFの作成
+type: docs
+weight: 60
+url: /ja/java/complex-pdf-example/
+description: Aspose.PDF for Javaを使用すると、画像、テキストフラグメント、テーブルを1つのドキュメントに含むより複雑なドキュメントを作成できます。
+lastmod: "2021-06-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 [Hello, World](/pdf/ja/java/hello-world-example/) の例では、JavaとAspose.PDFを使用してPDFドキュメントを作成する簡単な手順が示されました。この記事では、JavaとAspose.PDF for Javaを使用してより複雑なドキュメントを作成する方法を見ていきます。例として、架空の会社が運営する旅客フェリーサービスのドキュメントを取り上げます。  

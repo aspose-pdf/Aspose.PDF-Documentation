@@ -1,5 +1,6 @@
 ---
-title: Add Rubber Stamp
+title: Add Rubber Stamp
+linktitle: Add Rubber Stamp
 type: docs
 weight: 10
 url: /python-net/add-rubber-stamp/

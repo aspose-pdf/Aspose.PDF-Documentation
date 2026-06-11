@@ -1,12 +1,12 @@
 ---
 
-title: PDFドキュメントのフォーマット  
-linktitle: PDFドキュメントのフォーマット  
-type: docs  
-weight: 20  
-url: /ja/java/formatting-pdf-document/  
-description: Aspose.PDF for JavaでPDFドキュメントをフォーマットします。次のコードスニペットを使用してタスクを解決してください。  
-lastmod: "2021-06-05"  
+title: PDFドキュメントのフォーマット
+linktitle: PDFドキュメントのフォーマット
+type: docs
+weight: 20
+url: /ja/java/formatting-pdf-document/
+description: Aspose.PDF for JavaでPDFドキュメントをフォーマットします。次のコードスニペットを使用してタスクを解決してください。
+lastmod: "2021-06-05"
 ---
 ## ドキュメントウィンドウとページ表示プロパティを取得する
 

@@ -1,5 +1,5 @@
 ---
-title: Преобразование PDF в DOC 
+title: Преобразование PDF в DOC
 linktitle: Преобразование PDF в DOC
 type: docs
 weight: 70

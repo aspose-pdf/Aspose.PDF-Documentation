@@ -1,11 +1,11 @@
 ---
-title: Mengubah File PDF ke PDF/A 
-linktitle: Mengubah File PDF ke PDF/A 
+title: Mengubah File PDF ke PDF/A
+linktitle: Mengubah File PDF ke PDF/A
 type: docs
 weight: 180
 url: /id/androidjava/convert-pdf-file-to-pdfa/
 lastmod: "2021-06-05"
-description: Topik ini menunjukkan kepada Anda bagaimana Aspose.PDF untuk Java memungkinkan mengubah file PDF menjadi file PDF yang sesuai dengan PDF/A.  
+description: Topik ini menunjukkan kepada Anda bagaimana Aspose.PDF untuk Java memungkinkan mengubah file PDF menjadi file PDF yang sesuai dengan PDF/A.
 sitemap:
     changefreq: "weekly"
     priority: 0.7

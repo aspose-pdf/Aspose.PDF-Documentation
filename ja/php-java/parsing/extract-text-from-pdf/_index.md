@@ -1,6 +1,6 @@
 ---
-title: PDFからテキストを抽出 
-linktitle: テキストの抽出 
+title: PDFからテキストを抽出
+linktitle: テキストの抽出
 type: docs
 weight: 10
 url: /ja/php-java/extract-text-from-pdf/

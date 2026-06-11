@@ -1,5 +1,5 @@
 ---
-title: Travailler avec des Images dans un PDF en utilisant JavaScript via C++ 
+title: Travailler avec des Images dans un PDF en utilisant JavaScript via C++
 linktitle: Travailler avec des Images
 type: docs
 weight: 40

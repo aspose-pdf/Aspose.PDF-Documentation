@@ -1,5 +1,6 @@
 ---
-title: Get Page Information
+title: Get Page Information
+linktitle: Get Page Information
 type: docs
 weight: 10
 url: /python-net/get-page-info/

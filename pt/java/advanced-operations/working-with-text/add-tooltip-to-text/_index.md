@@ -1,5 +1,5 @@
 ---
-title: Usando Tooltip 
+title: Usando Tooltip
 linktitle: PDF Tooltip
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: Features 
+title: Features
 type: docs
 weight: 30
 url: /ko/sharepoint/features/

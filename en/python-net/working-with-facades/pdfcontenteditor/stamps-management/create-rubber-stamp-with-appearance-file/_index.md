@@ -1,5 +1,6 @@
 ---
-title: Create Rubber Stamp With Appearance File
+title: Create Rubber Stamp With Appearance File
+linktitle: Create Rubber Stamp With Appearance File
 type: docs
 weight: 20
 url: /python-net/create-rubber-stamp-with-appearance-file/

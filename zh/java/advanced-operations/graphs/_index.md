@@ -1,5 +1,5 @@
 ---
-title: 与图形一起工作 
+title: 与图形一起工作
 linktitle: 与图形一起工作
 type: docs
 weight: 70

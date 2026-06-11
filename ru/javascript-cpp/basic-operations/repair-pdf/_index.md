@@ -1,5 +1,5 @@
 ---
-title: Восстановление PDF с помощью JavaScript через C++ 
+title: Восстановление PDF с помощью JavaScript через C++
 linktitle: Восстановление PDF
 type: docs
 weight: 10

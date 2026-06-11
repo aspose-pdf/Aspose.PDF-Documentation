@@ -1,6 +1,6 @@
 ---
-title: إضافة طوابع الصفحة في ملف PDF 
-linktitle: الطوابع في ملف PDF 
+title: إضافة طوابع الصفحة في ملف PDF
+linktitle: الطوابع في ملف PDF
 type: docs
 weight: 30
 url: /ar/cpp/page-stamps-in-the-pdf-file/

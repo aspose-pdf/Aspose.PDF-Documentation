@@ -1,5 +1,5 @@
 ---
-title: Manipulate PDF Document 
+title: Manipulate PDF Document
 linktitle: Manipulate PDF Document
 type: docs
 weight: 30

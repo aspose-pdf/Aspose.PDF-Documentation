@@ -1,5 +1,5 @@
 ---
-title: PDF 파일에서 원시 텍스트 추출 
+title: PDF 파일에서 원시 텍스트 추출
 linktitle: PDF에서 텍스트 추출
 type: docs
 weight: 10

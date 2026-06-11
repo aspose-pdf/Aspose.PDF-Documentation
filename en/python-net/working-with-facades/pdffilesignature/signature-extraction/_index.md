@@ -1,5 +1,6 @@
 ---
-title: Signature Extraction
+title: Signature Extraction
+linktitle: Signature Extraction
 type: docs
 weight: 50
 url: /python-net/signature-extraction/

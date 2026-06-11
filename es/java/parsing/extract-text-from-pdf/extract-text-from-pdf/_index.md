@@ -1,5 +1,5 @@
 ---
-title: Extrayendo texto sin formato de un archivo PDF 
+title: Extrayendo texto sin formato de un archivo PDF
 linktitle: Extraer texto de PDF
 type: docs
 weight: 10

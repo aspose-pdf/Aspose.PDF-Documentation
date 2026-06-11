@@ -1,12 +1,12 @@
 ---
-title: ابدأ 
+title: ابدأ
 linktitle: ابدأ
 type: docs
 weight: 30
 url: /ar/java/get-started/
 description: يصف هذا القسم المبادئ الأساسية للعمل واستخدام DOM API. كما يوضح أمثلة بسيطة ومعقدة لإنشاء مستند PDF
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

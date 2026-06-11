@@ -1,5 +1,5 @@
 ---
-title: JavaScriptを使用してC++経由でPDFページを回転 
+title: JavaScriptを使用してC++経由でPDFページを回転
 linktitle: PDFページを回転
 type: docs
 weight: 50

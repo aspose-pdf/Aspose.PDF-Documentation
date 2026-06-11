@@ -1,5 +1,5 @@
 ---
-title: Membuat atau Menambahkan Tabel Dalam PDF menggunakan Python 
+title: Membuat atau Menambahkan Tabel Dalam PDF menggunakan Python
 linktitle: Membuat atau Menambahkan Tabel
 type: docs
 weight: 10

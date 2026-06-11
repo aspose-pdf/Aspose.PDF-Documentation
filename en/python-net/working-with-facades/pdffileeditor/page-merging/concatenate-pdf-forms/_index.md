@@ -1,5 +1,6 @@
 ---
-title: Concatenate PDF Forms with Unique Suffix
+title: Concatenate PDF Forms with Unique Suffix
+linktitle: Concatenate PDF Forms with Unique Suffix
 type: docs
 weight: 50
 url: /python-net/concatenate-pdf-forms/

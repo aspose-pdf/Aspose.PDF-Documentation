@@ -1,5 +1,6 @@
 ---
-title: Split PDF into Single Pages
+title: Split PDF into Single Pages
+linktitle: Split PDF into Single Pages
 type: docs
 weight: 30
 url: /python-net/split-pdf-into-single-pages/

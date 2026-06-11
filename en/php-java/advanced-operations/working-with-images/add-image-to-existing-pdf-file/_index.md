@@ -1,5 +1,5 @@
 ---
-title: Add Image to Existing PDF File 
+title: Add Image to Existing PDF File
 linktitle: Add Image
 type: docs
 weight: 10

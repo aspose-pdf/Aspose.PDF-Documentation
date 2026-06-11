@@ -1,5 +1,5 @@
 ---
-title: Operações básicas com PDF por Aspose.PDF para JavaScript via C++ 
+title: Operações básicas com PDF por Aspose.PDF para JavaScript via C++
 linktitle: Operações básicas
 type: docs
 weight: 40

@@ -1,5 +1,5 @@
 ---
-title: Travailler avec des Images dans un PDF 
+title: Travailler avec des Images dans un PDF
 linktitle: Travailler avec des Images
 type: docs
 weight: 40

@@ -1,5 +1,5 @@
 ---
-title: Ekstraksi data dari AcroForm 
+title: Ekstraksi data dari AcroForm
 linktitle: Ekstraksi data dari AcroForm
 type: docs
 weight: 50

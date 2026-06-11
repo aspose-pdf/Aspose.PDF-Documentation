@@ -1,5 +1,6 @@
 ---
-title: Save Metadata with XMP
+title: Save Metadata with XMP
+linktitle: Save Metadata with XMP
 type: docs
 weight: 30
 url: /python-net/save-metadata-with-xmp/

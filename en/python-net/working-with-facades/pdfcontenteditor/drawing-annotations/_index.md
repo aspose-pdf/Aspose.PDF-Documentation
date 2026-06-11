@@ -1,5 +1,6 @@
 ---
-title: Drawing Annotations
+title: Drawing Annotations
+linktitle: Drawing Annotations
 type: docs
 weight: 50
 url: /python-net/drawing-annotations/

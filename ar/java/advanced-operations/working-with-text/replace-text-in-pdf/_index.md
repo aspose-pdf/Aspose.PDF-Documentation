@@ -1,5 +1,5 @@
 ---
-title: استبدال النص في PDF 
+title: استبدال النص في PDF
 linktitle: استبدال النص في PDF
 type: docs
 weight: 40

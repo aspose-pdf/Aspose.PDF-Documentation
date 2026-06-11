@@ -1,11 +1,10 @@
 ---
 
-title: Changements de l'API Publique dans Aspose.PDF pour Java 10.1.0  
-type: docs  
-weight: 100  
-url: /fr/java/public-api-changes-in-aspose-pdf-for-java-10-1-0/  
-lastmod: "2022-01-27"  
-
+title: Changements de l'API Publique dans Aspose.PDF pour Java 10.1.0
+type: docs
+weight: 100
+url: /fr/java/public-api-changes-in-aspose-pdf-for-java-10-1-0/
+lastmod: "2022-01-27"
 ---
 
 {{% alert color="primary" %}}

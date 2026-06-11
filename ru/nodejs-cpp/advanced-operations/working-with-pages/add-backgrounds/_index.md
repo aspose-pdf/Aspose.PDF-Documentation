@@ -4,7 +4,7 @@ linktitle: Добавить фон
 type: docs
 weight: 10
 url: /ru/nodejs-cpp/add-background/
-description: Добавьте фоновое изображение в ваш PDF файл в Node.js 
+description: Добавьте фоновое изображение в ваш PDF файл в Node.js
 lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"

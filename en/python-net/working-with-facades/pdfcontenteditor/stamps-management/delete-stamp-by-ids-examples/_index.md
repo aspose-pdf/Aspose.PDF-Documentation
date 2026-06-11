@@ -1,5 +1,6 @@
 ---
-title: Delete Stamp By ID
+title: Delete Stamp By ID
+linktitle: Delete Stamp By ID
 type: docs
 weight: 85
 url: /python-net/delete-stamp-by-ids-examples/

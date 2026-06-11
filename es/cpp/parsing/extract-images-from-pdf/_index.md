@@ -1,5 +1,5 @@
 ---
-title: Extraer Imágenes de PDF 
+title: Extraer Imágenes de PDF
 linktitle: Extraer Imágenes de PDF
 type: docs
 weight: 20

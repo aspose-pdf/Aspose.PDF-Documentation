@@ -1,5 +1,5 @@
 ---
-title: Cari dan Dapatkan Teks dari Halaman Dokumen PDF 
+title: Cari dan Dapatkan Teks dari Halaman Dokumen PDF
 linktitle: Cari dan Dapatkan Teks
 type: docs
 weight: 60

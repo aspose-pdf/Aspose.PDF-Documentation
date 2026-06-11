@@ -1,5 +1,6 @@
 ---
-title: Links and Navigation
+title: Links and Navigation
+linktitle: Links and Navigation
 type: docs
 weight: 70
 url: /python-net/links-and-navigation-facades/

@@ -1,5 +1,5 @@
 ---
-title: تحويل PDF إلى HTML في بايثون 
+title: تحويل PDF إلى HTML في بايثون
 linktitle: تحويل PDF إلى تنسيق HTML
 type: docs
 weight: 50

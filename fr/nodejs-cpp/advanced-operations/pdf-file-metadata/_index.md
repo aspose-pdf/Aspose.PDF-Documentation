@@ -1,5 +1,5 @@
 ---
-title: Travailler avec les métadonnées des fichiers PDF dans Node.js 
+title: Travailler avec les métadonnées des fichiers PDF dans Node.js
 linktitle: Métadonnées des fichiers PDF
 type: docs
 weight: 130

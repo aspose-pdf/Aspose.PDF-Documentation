@@ -1,5 +1,5 @@
 ---
-title: Trabalhando com impressão de PDF 
+title: Trabalhando com impressão de PDF
 type: docs
 weight: 10
 url: /pt/java/print-pdf-file/

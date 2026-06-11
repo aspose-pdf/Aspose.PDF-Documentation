@@ -1,5 +1,5 @@
 ---
-title: Tambahkan Header dan Footer ke PDF melalui JavaScript via C++ 
+title: Tambahkan Header dan Footer ke PDF melalui JavaScript via C++
 linktitle: Tambahkan Header dan Footer ke PDF
 type: docs
 weight: 70

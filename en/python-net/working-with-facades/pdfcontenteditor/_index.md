@@ -1,5 +1,6 @@
 ---
-title: PdfContentEditor Class
+title: PdfContentEditor Class
+linktitle: PdfContentEditor Class
 type: docs
 weight: 30
 url: /python-net/pdfcontenteditor-class/

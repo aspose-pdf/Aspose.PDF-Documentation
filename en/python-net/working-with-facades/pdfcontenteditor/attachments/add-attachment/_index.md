@@ -1,5 +1,6 @@
 ---
-title: Add Attachment
+title: Add Attachment
+linktitle: Add Attachment
 type: docs
 weight: 10
 url: /python-net/add-attachment/

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ko/python-cpp/convert-pdf-to-txt/
 lastmod: "2024-04-23"
-description: Aspose.PDF for Python via C++ library allows you to convert PDF to TXT format using Python. 
+description: Aspose.PDF for Python via C++ library allows you to convert PDF to TXT format using Python.
 sitemap:
     changefreq: "monthly"
     priority: 0.7

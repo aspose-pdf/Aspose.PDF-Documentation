@@ -1,6 +1,6 @@
 ---
-title: Добавление вложения в PDF документ 
-linktitle: Добавление вложения в PDF документ 
+title: Добавление вложения в PDF документ
+linktitle: Добавление вложения в PDF документ
 type: docs
 weight: 10
 url: /ru/java/add-attachment-to-pdf-document/

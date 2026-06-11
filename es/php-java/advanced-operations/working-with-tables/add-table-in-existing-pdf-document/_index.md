@@ -1,5 +1,5 @@
 ---
-title: Crear o Añadir Tabla en PDF 
+title: Crear o Añadir Tabla en PDF
 linktitle: Crear o Añadir Tabla
 type: docs
 weight: 10

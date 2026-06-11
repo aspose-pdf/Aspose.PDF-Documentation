@@ -1,5 +1,6 @@
 ---
-title: Add Custom Action Link
+title: Add Custom Action Link
+linktitle: Add Custom Action Link
 type: docs
 weight: 20
 url: /python-net/add-custom-action-link/

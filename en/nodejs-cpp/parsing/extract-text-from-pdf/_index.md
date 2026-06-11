@@ -4,7 +4,7 @@ linktitle: Parse text from PDF
 type: docs
 weight: 30
 url: /nodejs-cpp/extract-text-from-pdf/
-description: This article describes various ways to parse text from PDF documents using Aspose.PDF for Node.js via C++. 
+description: This article describes various ways to parse text from PDF documents using Aspose.PDF for Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"

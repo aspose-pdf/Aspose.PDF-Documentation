@@ -1,15 +1,15 @@
 ---
 
-title: Mengubah PDF ke Dokumen Word di Node.js  
-linktitle: Mengubah PDF ke Word  
-type: docs  
-weight: 10  
-url: /id/nodejs-cpp/convert-pdf-to-doc/  
-lastmod: "2023-11-16"  
-description: Pelajari cara mengubah PDF ke DOC(DOCX) di lingkungan Node.js.  
-sitemap:  
-    changefreq: "monthly"  
-    priority: 0.7  
+title: Mengubah PDF ke Dokumen Word di Node.js
+linktitle: Mengubah PDF ke Word
+type: docs
+weight: 10
+url: /id/nodejs-cpp/convert-pdf-to-doc/
+lastmod: "2023-11-16"
+description: Pelajari cara mengubah PDF ke DOC(DOCX) di lingkungan Node.js.
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
 Untuk mengedit konten file PDF di Microsoft Word atau pengolah kata lainnya yang mendukung format DOC dan DOCX. File PDF dapat diedit, tetapi file DOC dan DOCX lebih fleksibel dan dapat disesuaikan.

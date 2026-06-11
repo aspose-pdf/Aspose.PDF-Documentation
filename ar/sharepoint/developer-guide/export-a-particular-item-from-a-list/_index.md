@@ -1,5 +1,5 @@
 ---
-  
+
 title: تصدير عنصر معين من قائمة إلى PDF في SharePoint
 
 linktitle: تصدير عنصر معين من قائمة
@@ -13,7 +13,6 @@ url: /ar/sharepoint/export-a-particular-item-from-a-list/
 lastmod: "2020-12-16"
 
 description: يتيح لك PDF SharePoint API تحويل عدة مستندات، أو مستند واحد في كل مرة إلى PDF كما هو موضح في هذه المقالة.
-
 ---
 
 

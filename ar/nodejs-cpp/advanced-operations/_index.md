@@ -1,5 +1,5 @@
 ---
-title: العمليات المتقدمة في Node.js 
+title: العمليات المتقدمة في Node.js
 linktitle: العمليات المتقدمة
 type: docs
 weight: 60

@@ -1,5 +1,5 @@
 ---
-title: Konversi PDF ke Microsoft Excel 
+title: Konversi PDF ke Microsoft Excel
 linktitle: Konversi PDF ke Excel
 type: docs
 weight: 20

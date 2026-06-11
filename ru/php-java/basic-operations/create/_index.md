@@ -1,5 +1,5 @@
 ---
-title: Создать PDF документ 
+title: Создать PDF документ
 linktitle: Создать
 type: docs
 weight: 10

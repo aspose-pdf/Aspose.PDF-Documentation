@@ -1,5 +1,5 @@
 ---
-title: Extraer fuentes de PDF 
+title: Extraer fuentes de PDF
 linktitle: Extraer fuentes
 type: docs
 weight: 30

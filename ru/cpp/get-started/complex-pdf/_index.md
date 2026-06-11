@@ -1,5 +1,5 @@
 ---
-title: Создание сложного PDF 
+title: Создание сложного PDF
 linktitle: Создание сложного PDF
 type: docs
 weight: 60

@@ -1,5 +1,5 @@
 ---
-title: Extraer Contenido Etiquetado de PDF 
+title: Extraer Contenido Etiquetado de PDF
 linktitle: Extraer Contenido Etiquetado
 type: docs
 weight: 20

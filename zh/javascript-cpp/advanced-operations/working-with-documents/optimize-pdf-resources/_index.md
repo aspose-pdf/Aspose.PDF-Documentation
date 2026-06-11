@@ -1,5 +1,5 @@
 ---
-title: 使用 JavaScript 和 C++ 优化 PDF 资源 
+title: 使用 JavaScript 和 C++ 优化 PDF 资源
 linktitle: 优化 PDF 资源
 type: docs
 weight: 15

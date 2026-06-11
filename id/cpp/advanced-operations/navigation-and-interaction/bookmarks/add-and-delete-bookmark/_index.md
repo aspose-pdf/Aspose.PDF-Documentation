@@ -1,6 +1,6 @@
 ---
-title: Tambahkan dan Hapus Penanda 
-linktitle: Tambahkan dan Hapus Penanda 
+title: Tambahkan dan Hapus Penanda
+linktitle: Tambahkan dan Hapus Penanda
 type: docs
 weight: 10
 url: /id/cpp/add-and-delete-bookmark/

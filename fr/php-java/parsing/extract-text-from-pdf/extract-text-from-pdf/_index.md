@@ -1,5 +1,5 @@
 ---
-title: Extraction de texte brut à partir d'un fichier PDF 
+title: Extraction de texte brut à partir d'un fichier PDF
 linktitle: Extraire du texte d'un PDF
 type: docs
 weight: 10

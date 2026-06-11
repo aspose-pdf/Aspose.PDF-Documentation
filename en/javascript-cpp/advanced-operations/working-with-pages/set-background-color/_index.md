@@ -1,10 +1,10 @@
 ---
 title: Set the background color for PDF with JavaScript via C++
-linktitle: Set background color 
+linktitle: Set background color
 type: docs
 weight: 80
 url: /javascript-cpp/set-background-color/
-description: Set background color for the your PDF file with JavaScript via C++. 
+description: Set background color for the your PDF file with JavaScript via C++.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

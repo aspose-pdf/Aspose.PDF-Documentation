@@ -1,5 +1,5 @@
 ---
-title: Добавить изображение в PDF на Node.js 
+title: Добавить изображение в PDF на Node.js
 linktitle: Добавить изображение
 type: docs
 weight: 10

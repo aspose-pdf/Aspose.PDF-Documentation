@@ -1,5 +1,5 @@
 ---
-title: Работа с таблицами в PDF 
+title: Работа с таблицами в PDF
 linktitle: Работа с таблицами
 type: docs
 weight: 50

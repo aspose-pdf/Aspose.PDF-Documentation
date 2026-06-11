@@ -1,5 +1,6 @@
 ---
-title: Add Popup Annotations
+title: Add Popup Annotations
+linktitle: Add Popup Annotations
 type: docs
 weight: 40
 url: /python-net/add-popup-annotation/

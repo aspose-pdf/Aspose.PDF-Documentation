@@ -1,10 +1,10 @@
 ---
-title: Update Links in PDF 
+title: Update Links in PDF
 linktitle: Update Links
 type: docs
 weight: 20
 url: /cpp/update-links/
-description: Update links in PDF programmatically with Aspose.PDF for C++. This guide is about how to update links in PDF file. 
+description: Update links in PDF programmatically with Aspose.PDF for C++. This guide is about how to update links in PDF file.
 lastmod: "2022-01-31"
 sitemap:
     changefreq: "weekly"

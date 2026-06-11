@@ -1,5 +1,5 @@
 ---
-title: Extrair Texto De Carimbos 
+title: Extrair Texto De Carimbos
 linktitle: Extrair Texto De Carimbos
 type: docs
 weight: 60

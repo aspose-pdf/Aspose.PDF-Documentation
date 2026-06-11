@@ -1,5 +1,5 @@
 ---
-title: Travailler avec XML 
+title: Travailler avec XML
 linktitle: Travailler avec XML
 type: docs
 weight: 80

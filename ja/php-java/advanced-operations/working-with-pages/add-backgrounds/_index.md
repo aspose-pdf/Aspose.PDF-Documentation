@@ -1,5 +1,5 @@
 ---
-title: PDFに背景を追加 
+title: PDFに背景を追加
 linktitle: 背景を追加
 type: docs
 weight: 110

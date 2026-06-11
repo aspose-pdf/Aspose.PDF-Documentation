@@ -1,5 +1,5 @@
 ---
-title: Trabajando con Tablas en PDF 
+title: Trabajando con Tablas en PDF
 linktitle: Trabajando con Tablas
 type: docs
 weight: 50

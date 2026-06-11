@@ -1,10 +1,10 @@
 ---
 title: Set the background color for PDF in Node.js
-linktitle: Set background color 
+linktitle: Set background color
 type: docs
 weight: 80
 url: /nodejs-cpp/set-background-color/
-description: Set background color for the your PDF file with Node.js via C++. 
+description: Set background color for the your PDF file with Node.js via C++.
 lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"

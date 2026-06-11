@@ -1,15 +1,15 @@
 ---
 
-title: Что нового  
-linktitle: Что нового  
-type: docs  
-weight: 10  
-url: /ru/nodejs-cpp/whatsnew/  
-description: На этой странице представлены самые популярные новые функции в Aspose.PDF для Node.js через C++, которые были представлены в недавних версиях.  
-sitemap:  
-    changefreq: "monthly"  
-    priority: 0.8  
-lastmod: "2023-11-16"  
+title: Что нового
+linktitle: Что нового
+type: docs
+weight: 10
+url: /ru/nodejs-cpp/whatsnew/
+description: На этой странице представлены самые популярные новые функции в Aspose.PDF для Node.js через C++, которые были представлены в недавних версиях.
+sitemap:
+    changefreq: "monthly"
+    priority: 0.8
+lastmod: "2023-11-16"
 ---
 Мы рады объявить о первом публичном выпуске Aspose.PDF для Node.js через C++.
 

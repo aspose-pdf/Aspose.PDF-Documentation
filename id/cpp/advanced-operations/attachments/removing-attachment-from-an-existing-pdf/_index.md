@@ -1,5 +1,5 @@
 ---
-title: Menghapus lampiran dari PDF 
+title: Menghapus lampiran dari PDF
 linktitle: Menghapus lampiran dari PDF yang ada
 type: docs
 weight: 30

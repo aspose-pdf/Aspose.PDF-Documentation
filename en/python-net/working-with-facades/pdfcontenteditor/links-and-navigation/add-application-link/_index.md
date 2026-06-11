@@ -1,5 +1,6 @@
 ---
-title: Add Application Link
+title: Add Application Link
+linktitle: Add Application Link
 type: docs
 weight: 10
 url: /python-net/add-application-link/

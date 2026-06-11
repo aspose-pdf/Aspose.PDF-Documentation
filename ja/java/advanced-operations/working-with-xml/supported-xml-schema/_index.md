@@ -1,5 +1,5 @@
 ---
-title: XML スキーマ 
+title: XML スキーマ
 linktitle: サポートされている XML スキーマ
 type: docs
 weight: 10

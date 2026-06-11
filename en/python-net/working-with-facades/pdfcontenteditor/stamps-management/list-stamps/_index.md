@@ -1,5 +1,6 @@
 ---
-title: List Stamps
+title: List Stamps
+linktitle: List Stamps
 type: docs
 weight: 70
 url: /python-net/list-stamps/

@@ -1,5 +1,5 @@
 ---
-title: إضافة رأس وتذييل إلى PDF عبر JavaScript عبر C++ 
+title: إضافة رأس وتذييل إلى PDF عبر JavaScript عبر C++
 linktitle: إضافة رأس وتذييل إلى PDF
 type: docs
 weight: 70

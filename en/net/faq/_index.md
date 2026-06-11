@@ -1,5 +1,5 @@
 ---
-title: FAQ 
+title: FAQ
 linktitle: FAQ
 type: docs
 ai_search_scope: pdf_net

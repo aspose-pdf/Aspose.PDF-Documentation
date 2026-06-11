@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /ko/php-java/get-started/
 description: 이 섹션은 작업의 기본 원칙과 API 사용에 대해 설명합니다. 또한 PDF 문서를 생성하는 간단하고 복잡한 예제를 보여줍니다.
-lastmod: "2024-06-05"   
-sitemap: 
+lastmod: "2024-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

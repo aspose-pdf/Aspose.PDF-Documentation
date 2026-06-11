@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to PDF/A formats 
+title: Convert PDF to PDF/A formats
 linktitle: Convert PDF to PDF/A formats
 type: docs
 ai_search_scope: pdf_net

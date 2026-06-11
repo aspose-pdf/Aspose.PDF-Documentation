@@ -1,5 +1,6 @@
 ---
-title: Add PDF Document Link
+title: Add PDF Document Link
+linktitle: Add PDF Document Link
 type: docs
 weight: 50
 url: /python-net/add-pdf-document-link/

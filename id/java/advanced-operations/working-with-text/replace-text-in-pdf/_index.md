@@ -1,5 +1,5 @@
 ---
-title: Ganti Teks dalam PDF 
+title: Ganti Teks dalam PDF
 linktitle: Ganti Teks dalam PDF
 type: docs
 weight: 40

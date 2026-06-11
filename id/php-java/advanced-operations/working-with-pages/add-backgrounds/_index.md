@@ -1,5 +1,5 @@
 ---
-title: Tambahkan latar belakang ke PDF 
+title: Tambahkan latar belakang ke PDF
 linktitle: Tambahkan latar belakang
 type: docs
 weight: 110

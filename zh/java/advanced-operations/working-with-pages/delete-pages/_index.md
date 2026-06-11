@@ -1,5 +1,5 @@
 ---
-title: 使用编程方式删除 PDF 页面 
+title: 使用编程方式删除 PDF 页面
 linktitle: 删除 PDF 页面
 type: docs
 weight: 40

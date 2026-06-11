@@ -1,11 +1,11 @@
 ---
-title: PDF Annotations 
+title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /ar/php-java/annotations/
 description: يوضح هذا القسم كيفية استخدام جميع أنواع التعليقات التوضيحية في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF. تعلم كيفية الرسم أو الفتح أو إضافة تعليق توضيحي باستخدام PHP.
-lastmod: "2024-06-26"    
+lastmod: "2024-06-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -1,5 +1,5 @@
 ---
-title: Extract Text From Stamps 
+title: Extract Text From Stamps
 linktitle: Extract Text From Stamps
 type: docs
 weight: 60

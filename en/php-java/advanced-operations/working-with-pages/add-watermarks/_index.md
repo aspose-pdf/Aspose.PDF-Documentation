@@ -1,5 +1,5 @@
 ---
-title: Add watermark to PDF 
+title: Add watermark to PDF
 linktitle: Add watermark
 type: docs
 weight: 90

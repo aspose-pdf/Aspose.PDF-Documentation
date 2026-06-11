@@ -1,10 +1,10 @@
 ---
-title: Repair PDF with JavaScript via C++ 
+title: Repair PDF with JavaScript via C++
 linktitle: Repair PDF
 type: docs
 weight: 10
 url: /javascript-cpp/repair-pdf/
-description: This topic describes how to Repair PDF via JavaScript via C++ 
+description: This topic describes how to Repair PDF via JavaScript via C++
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "monthly"

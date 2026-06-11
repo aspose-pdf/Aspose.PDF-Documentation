@@ -1,5 +1,6 @@
 ---
-title: Create N-Up PDF Document
+title: Create N-Up PDF Document
+linktitle: Create N-Up PDF Document
 type: docs
 weight: 10
 url: /python-net/create-n-up-pdf-document/
