@@ -1,6 +1,6 @@
 ---
 name: hugo-frontmatter-checker
-description: "Audit Hugo Markdown documentation front matter for required keys, duplicate keys, YAML style hazards, URL shape, `type: docs`, integer weights, quoted `lastmod` dates, trailing whitespace, and missing `linktitle` values. Use this skill when a user asks to check, validate, lint, repair, or batch-scan Hugo front matter in Markdown docs, especially content repositories with language/product trees. When multiple issue types are present in a single file, report and resolve them in this order: (1) required-key defects, (2) YAML-style hazards, (3) url/weight changes flagged for manual review, (4) recommended-key recommendations. Do not apply auto-fixes to files with unresolved `url` or `weight` issues until the user confirms."
+description: "Audit Hugo Markdown documentation front matter for required keys, duplicate keys, duplicate URLs, YAML style hazards, URL shape, `type: docs`, integer weights, quoted `lastmod` dates, trailing whitespace, and missing `linktitle` values. Use this skill when a user asks to check, validate, lint, repair, or batch-scan Hugo front matter in Markdown docs, especially content repositories with language/product trees. When multiple issue types are present in a single file, report and resolve them in this order: (1) required-key defects, (2) YAML-style hazards, (3) URL or weight issues flagged for manual review, (4) recommended-key recommendations. Do not apply auto-fixes to files with unresolved `url`, duplicate URL, or `weight` issues until the user confirms."
 ---
 
 # Hugo Frontmatter Checker
@@ -9,7 +9,13 @@ description: "Audit Hugo Markdown documentation front matter for required keys, 
 
 Use this skill to run a deterministic front matter audit on Hugo Markdown documentation pages. It is intended for syntax and style safety checks, not for rewriting page content or generating SEO text.
 
-The bundled checker enforces these top-level keys as required: `title`, `linktitle`, `type`, `weight`, `url`, and `description`. It treats `lastmod` as recommended unless the surrounding repository rules require it. It also checks duplicate keys, `type`, `url`, `weight`, `lastmod`, trailing whitespace, and unquoted colon hazards in scalar values.
+The bundled scripts cover three jobs:
+
+- `check_frontmatter.py`: audit required keys, duplicate keys, `type`, URL shape, integer `weight`, quoted `lastmod`, trailing whitespace, and unquoted colon hazards.
+- `check_frontmatter_url_duplicates.py`: find repeated `url` values across a directory tree.
+- `ensure_linktitle.py`: preview or add missing `linktitle` values by copying `title`.
+
+The main checker enforces these top-level keys as required: `title`, `linktitle`, `type`, `weight`, `url`, and `description`. It treats `lastmod` as recommended unless the surrounding repository rules require it.
 
 ## Workflow
 
@@ -17,13 +23,14 @@ The bundled checker enforces these top-level keys as required: `title`, `linktit
 2. Inspect files in the same directory and immediate parent directory when the request involves changing conventions, especially before adding or removing front matter keys.
 3. Run `scripts/check_frontmatter.py` in audit mode first.
 4. Interpret exit code `1` as "issues found"; review and act on the report. Treat missing scripts, Python tracebacks, invalid arguments, or exit code `2` as tool failures. If the script is not found or fails, report the exact error to the user and stop. Do not infer front matter issues manually unless the user explicitly asks you to proceed without the script.
-5. Review reported issues before applying fixes.
-6. Apply auto-fixes only for safe mechanical repairs:
+5. For directory audits where `url` integrity matters, run `scripts/check_frontmatter_url_duplicates.py` on the same scope. Treat duplicate URL groups as manual-review issues.
+6. Review reported issues before applying fixes.
+7. Apply auto-fixes only for safe mechanical repairs:
    - `--fix-dates` quotes bare `lastmod` date values.
    - `--fix-trailing` removes trailing whitespace inside front matter.
-7. For missing `linktitle` across a known scope, run `scripts/ensure_linktitle.py --root path/to/scope --dry-run` first. Apply it without `--dry-run` only when copying `title` to `linktitle` matches nearby pages and the user requested or accepted that repair.
-8. Re-run the audit after fixes.
-9. For unresolved issues, edit the relevant Markdown files directly and preserve existing front matter structure.
+8. For missing `linktitle` across a known scope, run `scripts/ensure_linktitle.py --root path/to/scope --dry-run` first. Apply it without `--dry-run` only when copying `title` to `linktitle` matches nearby pages and the user requested or accepted that repair.
+9. Re-run the relevant audits after fixes.
+10. For unresolved issues, edit the relevant Markdown files directly and preserve existing front matter structure.
 
 ## Script Usage
 
@@ -45,6 +52,12 @@ Apply safe mechanical fixes:
 python scripts/check_frontmatter.py path/to/file-or-dir --fix-dates --fix-trailing
 ```
 
+Find duplicate `url` values across a directory:
+
+```bash
+python scripts/check_frontmatter_url_duplicates.py path/to/section
+```
+
 Preview missing `linktitle` additions:
 
 ```bash
@@ -62,6 +75,7 @@ python scripts/ensure_linktitle.py --root path/to/section
 - Treat missing required keys (`title`, `linktitle`, `type`, `weight`, `url`, `description`) as content defects.
 - Treat missing recommended keys as recommendations. Escalate to a defect only if the user explicitly instructs you to enforce them, or if the repository's own documentation designates them as required for that content type.
 - Treat `url` changes as high risk. Prefer manual review before changing them.
+- Treat duplicate `url` groups as routing defects. Resolve them only after confirming the intended canonical page and whether aliases or redirects are needed.
 - Treat `weight` changes as navigation changes, not formatting.
 - Add missing `linktitle` near `title`, normally immediately after it, and mirror nearby section style before deciding whether to copy the full `title` or shorten it.
 - Quote scalar values with `: ` manually when the script reports an unquoted colon hazard.

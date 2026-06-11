@@ -55,7 +55,8 @@ def get_frontmatter_url(path: Path) -> str | None:
     if not url_match:
         return None
 
-    return strip_yaml_scalar_quotes(url_match.group(1).strip())
+    url = strip_yaml_scalar_quotes(url_match.group(1).strip())
+    return url or None
 
 
 def main() -> int:

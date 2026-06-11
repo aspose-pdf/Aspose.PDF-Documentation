@@ -1,4 +1,4 @@
 interface:
   display_name: "Hugo Frontmatter Checker"
   short_description: "Audit and repair Hugo front matter"
-  default_prompt: "Use $hugo-frontmatter-checker to scan Markdown documentation front matter, report required-key and YAML style issues, preview missing linktitle additions, and apply only safe front matter fixes when requested."
+  default_prompt: "Use $hugo-frontmatter-checker to scan Markdown documentation front matter, report required-key, YAML style, and duplicate URL issues, preview missing linktitle additions, and apply only safe front matter fixes when requested."
