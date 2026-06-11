@@ -1,162 +1,43 @@
 ---
-title: التعليقات التوضيحية في PDF
-linktitle: التعليقات التوضيحية في PDF
+title: تعليقات PDF التوضيحية في بايثون
+linktitle: التعليقات التوضيحية بصيغة PDF
 type: docs
 weight: 100
 url: /ar/python-net/annotations/
-description: يوضح هذا القسم كيفية استخدام جميع أنواع التعليقات التوضيحية في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF.
-lastmod: "2023-02-17"
+description: تعرف على كيفية إضافة التعليقات التوضيحية لـ PDF وتعديلها واستخراجها وإدارتها في Python باستخدام Aspose.PDF لـ Python عبر .NET، بما في ذلك النص والإبرازات والروابط والأشكال والمزيد.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية إضافة التعليقات التوضيحية إلى PDF باستخدام Python
+Abstract: تتناول المقالة استخدام التعليقات التوضيحية في ملفات PDF كعناصر تفاعلية تعزز تفاعل المستند ومشاركة المستخدم. ويسلط الضوء على إمكانيات Aspose.PDF لمكتبة Python في دعم أنواع التعليقات التوضيحية المختلفة، بما في ذلك النص والإبرازات والأشكال والتعليقات التوضيحية متعددة الوسائط. تخدم التعليقات التوضيحية أغراضًا متعددة مثل التعليق والمراجعة ووضع علامات على المستندات وتقديم الملاحظات، مما يسهل التعاون والتواصل والفهم الأعمق لمحتوى المستند. تشير المقالة أيضًا إلى قسم يوضح بالتفصيل كيفية إضافة التعليقات التوضيحية وحذفها واسترجاعها، مع تقديم إرشادات حول إدارة هذه العناصر بفعالية داخل مستندات PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "التعليقات التوضيحية في PDF باستخدام بايثون",
-    "alternativeHeadline": "العمل مع التعليقات التوضيحية في ملفات PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, python, annotations",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يوضح هذا القسم كيفية استخدام جميع أنواع التعليقات التوضيحية في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لبايثون."
-}
-</script>
 
+التعليقات التوضيحية في ملفات PDF هي عناصر تفاعلية تتيح لك إضافة ملاحظات وتمييز النص ورسم الأشكال وإرفاق الملفات وتشغيل الإجراءات مباشرة على الصفحة. وهي مفيدة لمراجعة عمليات سير العمل والتعاون والتنقل وترميز المستندات.
 
-Annotations in PDFs are interactive elements that allow you to add notes, highlight text, draw shapes, attach files, and perform other actions that improve browsing, interactivity, and interaction.
+يدعم Aspose.PDF for Python عبر .NET مجموعة واسعة من سيناريوهات التعليقات التوضيحية، بما في ذلك التعليقات التوضيحية للملاحظات والنوافذ المنبثقة، وترميز النص، والروابط والأزرار، والأشكال، والعلامات المائية، والتعليقات التوضيحية للوسائط المتعددة، وعمليات سير عمل استيراد التعليقات التوضيحية أو تصديرها.
 
-التعليقات التوضيحية في ملفات PDF هي عناصر تفاعلية تتيح لك إضافة ملاحظات، وتظليل النص، ورسم الأشكال، وإرفاق الملفات، وأداء إجراءات أخرى تحسن من التصفح والتفاعل والتفاعل.
+استخدم هذا القسم لاختيار سير عمل التعليقات التوضيحية الذي يطابق مهمتك، سواء كنت بحاجة إلى إنشاء تعليقات توضيحية جديدة أو فحص التعليقات الموجودة أو إزالتها أو نقلها بين مستندات PDF.
 
-The Aspose.PDF for Python Library supports various types of annotations, including text annotations (such as text, and popup annotation), highlights annotations (such as text markup), figures annotations( such as circle, polyline, polygon, line, and ink), multimedia annotations ( there are screen, sound, widget, and 3D) and more.
+## موضوعات التعليقات التوضيحية
 
-تدعم مكتبة Aspose.PDF لـ Python أنواعًا مختلفة من التعليقات التوضيحية، بما في ذلك التعليقات التوضيحية النصية (مثل النص، والتعليق المنبثق)، وتعليقات التظليل (مثل تعليم النص)، وتعليقات الأشكال (مثل الدائرة، والخط المتعدد، والمضلع، والخط، والحبر)، والتعليقات التوضيحية المتعددة الوسائط (يوجد شاشة، وصوت، وودجيت، وثلاثية الأبعاد) والمزيد.
+استخدم هذا القسم عندما تحتاج إلى إضافة التعليقات التوضيحية أو استردادها أو تحديثها أو إزالتها أو نقلها في ملفات PDF باستخدام Python. تغطي الصفحات المرتبطة أدناه كلاً من عمليات سير عمل التعليقات التوضيحية ذات المستوى الأعلى ومجموعات التعليقات التوضيحية المجمعة المستخدمة في جميع الوثائق.
 
-Annotations can be used to comment, review, mark documents, provide feedback, or add additional information. Annotations allow to establish cooperation, facilitate communication, and improve understanding of the content of documents. They enhance collaboration, improve communication, and make PDF documents more dynamic and engaging for users.
+يمكنك استخدام الموضوعات التالية:
 
-يمكن استخدام التعليقات التوضيحية للتعليق، أو المراجعة، أو وضع علامات على المستندات، أو تقديم ملاحظات، أو إضافة معلومات إضافية. تتيح التعليقات التوضيحية إقامة تعاون، وتسهيل التواصل، وتحسين فهم محتوى المستندات. إنها تعزز التعاون، وتحسن التواصل، وتجعل مستندات PDF أكثر ديناميكية وجاذبية للمستخدمين.
+- [إضافة تعليق توضيحي وحذفه والحصول عليه](/pdf/ar/python-net/add-delete-and-get-annotation/) - ابدأ هنا لفئات التعليقات التوضيحية المجمعة الرئيسية ويقوم الجزء الأساسي بإنشاء عمليات سير العمل وفحصها وإزالتها.
+- [استيراد التعليقات التوضيحية وتصديرها](/pdf/ar/python-net/import-export-annotations/) - نسخ التعليقات التوضيحية من وثيقة PDF إلى ملف PDF آخر.
 
-You are able to do the following:
+### مجموعات التعليقات التوضيحية
 
-يمكنك القيام بما يلي:
+يتضمن دليل التعليقات التوضيحية المجمعة هذه الموضوعات الفرعية:
 
-- [Add, Delete and Get Annotation](/pdf/ar/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
-
-- [إضافة وحذف والحصول على التعليقات التوضيحية](/pdf/ar/python-net/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية العمل مع جميع أنواع التعليقات التوضيحية المسموح بها.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لبايثون",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [التعليقات التوضيحية النصية](/pdf/ar/python-net/text-based-Annotations/) - العمل باستخدام النص الحر، والتظليل، والتسطير، والتعرج، والشطب.
+- [التعليقات التوضيحية للتوصيف](/pdf/ar/python-net/markup-annotations/) - إضافة أو فحص الملاحظة، والتأشير، واستبدال التعليقات التوضيحية المستخدمة في سيناريوهات المراجعة.
+- [التعليقات التوضيحية التفاعلية](/pdf/ar/python-net/interactive-annotations/) - إنشاء التعليقات التوضيحية للروابط وأزرار التنقل وأزرار الطباعة.
+- [التعليقات التوضيحية للشكل](/pdf/ar/python-net/shape-annotations/) - استخدم التعليقات التوضيحية الخطية والمربعة والدائرة والمضلع والمتعددة الخطوط.
+- [التعليقات التوضيحية لوسائل الإعلام](/pdf/ar/python-net/media-annotations/) - إضافة الصوت والشاشة والوسائط الغنية والتعليقات التوضيحية ثلاثية الأبعاد.
+- [التعليقات التوضيحية للأمان](/pdf/ar/python-net/security-annotations/) - العمل مع مرفقات الملفات والتنقيح والتعليقات التوضيحية ذات الصلة الموجهة للحماية.
+- [التعليقات التوضيحية للعلامة المائية](/pdf/ar/python-net/watermark-annotations/) - إضافة عناصر العلامة المائية القائمة على التعليقات التوضيحية وإدارتها.
+تُعد التعليقات التوضيحية مفيدة بشكل خاص لمراجعة المستندات والتعاون وترميز المحتوى والتنقل التفاعلي. ابدأ بالنظرة العامة المجمعة عندما تريد استعراض أنواع التعليقات التوضيحية المدعومة، أو انتقل مباشرةً إلى موضوع معين عندما تعرف بالفعل سير العمل الذي تحتاج إليه.

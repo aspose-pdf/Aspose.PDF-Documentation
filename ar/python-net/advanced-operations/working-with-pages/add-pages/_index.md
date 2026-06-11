@@ -1,200 +1,96 @@
 ---
-title: إضافة صفحات في PDF باستخدام بايثون
+title: إضافة صفحات PDF في بايثون
 linktitle: إضافة صفحات
 type: docs
 weight: 10
 url: /ar/python-net/add-pages/
-description: تعلمك هذه المقالة كيفية إدراج (إضافة) صفحة في الموقع المطلوب في ملف PDF. تعرف على كيفية نقل، إزالة (حذف) الصفحات من ملف PDF باستخدام C#.
-lastmod: "2022-02-17"
+description: تعرف على كيفية إضافة أو إدراج صفحات في مستندات PDF في Python.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إضافة أو إدراج صفحات PDF باستخدام Python
+Abstract: توضح هذه المقالة كيفية إضافة صفحات إلى ملفات PDF باستخدام Aspose.PDF لـ Python عبر .NET. تعرف على كيفية إدراج صفحات فارغة في مواضع محددة، وإلحاق صفحات في نهاية المستند، واستيراد صفحة من PDF آخر باستخدام واجهات برمجة تطبيقات Document and PageCollection.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إضافة صفحات في PDF باستخدام بايثون",
-    "alternativeHeadline": "كيفية إضافة صفحات في مستند PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, python, إضافة صفحة pdf, إدراج صفحة pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-pages/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "تعلمك هذه المقالة كيفية إدراج (إضافة) صفحة في الموقع المطلوب في ملف PDF. تعرف على كيفية نقل، إزالة (حذف) الصفحات من ملف PDF باستخدام بايثون."
-}
-</script>
 
+يوفر Aspose.PDF لـ Python عبر .NET عمليات مرنة على مستوى الصفحة لمستندات PDF. يمكنك إدارة الصفحات من خلال [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) وأضف صفحات إلى [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) في مواقع محددة أو في نهاية الملف.
 
-Aspose.PDF لـ Python عبر .NET API يوفر مرونة كاملة للعمل مع الصفحات في مستند PDF باستخدام Python. يحتفظ بجميع صفحات مستند PDF في [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) التي يمكن استخدامها للعمل مع صفحات PDF. 
-Aspose.PDF لـ Python عبر .NET يتيح لك إدراج صفحة في مستند PDF في أي موقع في الملف بالإضافة إلى إضافة صفحات إلى نهاية ملف PDF. 
-يوضح هذا القسم كيفية إضافة صفحات إلى PDF باستخدام Python.
+استخدم هذه الصفحة عندما تحتاج إلى إدراج صفحات فارغة جديدة في PDF موجود أو إلحاق صفحات بنهاية المستند أثناء عمليات سير عمل الإنشاء.
 
-## إضافة أو إدراج صفحة في ملف PDF
+## إضافة أو إدراج صفحات في ملف PDF
 
-Aspose.PDF لـ Python عبر .NET يتيح لك إدراج صفحة في مستند PDF في أي موقع في الملف بالإضافة إلى إضافة صفحات إلى نهاية ملف PDF.
+يدعم Aspose.PDF لـ Python عبر .NET كلاً من إدراج الصفحة في فهرس معين وإلحاق الصفحات في نهاية ملف PDF.
 
-### إدراج صفحة فارغة في ملف PDF في الموقع المطلوب
+### إدراج صفحة فارغة في ملف PDF
 
 لإدراج صفحة فارغة في ملف PDF:
 
-1. قم بإنشاء كائن فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع ملف PDF المدخل.
+1. افتح ملف موجود [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) باستخدام الطرق المناسبة.
+1. أدخل صفحة فارغة جديدة في فهرس محدد باستخدام [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) `insert()` طريقة.
+1. احفظ التعديل [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) إلى مسار الإخراج المطلوب.
 
-1. استدعاء طريقة [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) لمجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) مع الفهرس المحدد.
-1. احفظ ملف PDF الناتج باستخدام طريقة [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-
-يوضح لك مقطع الشيفرة البرمجية التالي كيفية إدراج صفحة في ملف PDF.
+أدخل صفحة فارغة في ملف PDF موجود في موضع محدد:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # فتح المستند
-    document = ap.Document(input_pdf)
-    # إدراج صفحة فارغة في PDF
+def insert_empty_page(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
     document.pages.insert(2)
-    # حفظ الملف الناتج
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-### إضافة صفحة فارغة في نهاية ملف PDF
+### أضف صفحة فارغة في نهاية ملف PDF
 
-أحيانًا، تريد التأكد من أن المستند ينتهي بصفحة فارغة. يشرح هذا الموضوع كيفية إدراج صفحة فارغة في نهاية مستند PDF.
+في بعض الأحيان، تريد التأكد من أن المستند ينتهي بصفحة فارغة. يشرح هذا الموضوع كيفية إدراج صفحة فارغة في نهاية وثيقة PDF.
 
 لإدراج صفحة فارغة في نهاية ملف PDF:
 
-1. أنشئ كائن فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع ملف PDF المدخل.
+1. افتح ملف موجود [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) باستخدام الطرق المناسبة.
+1. أضف صفحة فارغة جديدة إلى نهاية المستند باستخدام [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) `add()` طريقة.
+1. احفظ التحديث [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
-1. قم باستدعاء طريقة [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) الخاصة بمجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) بدون أي معلمات.
-1. قم بحفظ ملف PDF الناتج باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-
-يظهر لك مقطع الشيفرة التالي كيفية إدراج صفحة فارغة في نهاية ملف PDF.
+يوضح لك مقتطف الشفرة التالي كيفية إدراج صفحة فارغة في نهاية ملف PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # فتح المستند
-    document = ap.Document(input_pdf)
-
-    # إدراج صفحة فارغة في نهاية ملف PDF
+def add_empty_page_to_end(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
     document.pages.add()
-
-    # حفظ ملف الإخراج
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+### إضافة صفحة من وثيقة PDF أخرى
+
+باستخدام Aspose.PDF لبيثون عبر.NET، يمكنك إنشاء ملف جديد [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)، قم بإضافة صفحة أولية، ثم قم باستيراد صفحة من PDF آخر إليها.
+
+1. قم بإنشاء ملف جديد [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. إضافة فراغ جديد [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) واكتب بعض النص عليها باستخدام [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/).
+1. افتح آخر موجود [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. انسخ أ [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) من تلك الوثيقة.
+1. قم بلصق الصفحة المنسوخة في المستند الرئيسي باستخدام [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. احفظ الملف المدمج.
+
+```python
+import aspose.pdf as ap
+
+def add_page_from_another_document(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document()
+    page = document.pages.add()
+    text_fragment = ap.text.TextFragment("This is first page!")
+    page.paragraphs.add(text_fragment)
+
+    another_document = ap.Document(input_file_name)
+    document.pages.add(another_document.pages[1])
+
+    document.save(output_file_name)
+```
+
+## موضوعات الصفحة ذات الصلة
+
+- [العمل مع صفحات PDF في بايثون](/pdf/ar/python-net/working-with-pages/)
+- [نقل صفحات PDF في بايثون](/pdf/ar/python-net/move-pages/)
+- [حذف صفحات PDF في بايثون](/pdf/ar/python-net/delete-pages/)
+- [استخراج صفحات PDF في بايثون](/pdf/ar/python-net/extract-pages/)

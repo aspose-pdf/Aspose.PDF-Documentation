@@ -1,58 +1,54 @@
 ---
-title: إنشاء PDF متوافق مع PDF/3-A وإرفاق فاتورة ZUGFeRD في بايثون
-linktitle: إرفاق ZUGFeRD إلى PDF
+title: إنشاء ملف PDF متوافق مع PDF/3-A وإرفاق فاتورة ZugFerd بلغة Python
+linktitle: قم بإرفاق ZugFerd إلى ملف PDF
 type: docs
 weight: 10
 url: /ar/python-net/attach-zugferd/
-description: تعلم كيفية إنشاء مستند PDF مع ZUGFeRD في Aspose.PDF لبايثون عبر .NET
-lastmod: "2024-01-18"
+description: تعرف على كيفية إنشاء مستند PDF باستخدام ZugFerd في Aspose.PDF لبيثون عبر .NET
+lastmod: "2026-06-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية إرفاق ZugFerd بوثيقة PDF
+Abstract: توفر المقالة دليلًا تفصيليًا حول كيفية إرفاق ZugFerd (تنسيق للفواتير الإلكترونية) بمستند PDF باستخدام مكتبة Aspose.PDF. يبدأ الإجراء باستيراد المكتبة الضرورية وإعداد مسارات الدليل لملفات الإدخال والإخراج. يتضمن تحميل ملف PDF الهدف إلى كائن المستند، وإنشاء كائن FileSpecification لملف بيانات تعريف فاتورة XML. تم تعيين الخصائص الرئيسية مثل `mime_type` و `af_relationship` لضمان التكامل الصحيح للبيانات الوصفية. ثم تتم إضافة ملف XML إلى مجموعة الملفات المضمنة في PDF، وإرفاقه بشكل فعال كبيانات وصفية. بعد ذلك، يتم تحويل مستند PDF إلى تنسيق PDF/A-3A، وهو مناسب لأرشفة المستندات الإلكترونية، قبل حفظ ملف PDF النهائي باستخدام ZugFerd المضمن. تختتم المقالة بمقتطف كود Python الذي يوضح تنفيذ هذه الخطوات، ويعرض تكامل ZugFerd مع PDF لإدارة المستندات المحسنة.
 ---
 
-## إرفاق ZUGFeRD إلى PDF
+## قم بإرفاق ZugFerd إلى ملف PDF
 
-نوصي باتباع الخطوات التالية لإرفاق ZUGFeRD إلى PDF:
+نوصي باتباع الخطوات التالية لإرفاق ZugFerd بـ PDF:
 
-1. استيراد مكتبة Aspose.PDF وإعطائها اختصار ap للراحة.
-2. تعريف المسار إلى الدليل حيث توجد ملفات PDF المدخلة والمخرجة.
-3. تعريف المسار إلى ملف PDF الذي سيتم معالجته.
-4. تحميل ملف PDF من متغير المسار وإنشاء كائن Document.
-5. إنشاء كائن FileSpecification لملف XML الذي يحتوي على بيانات الفاتورة الوصفية. استخدم متغير المسار وسلسلة وصف لإنشاء كائن FileSpecification.
-
-1. قم بتعيين خصائص `mime_type` و `af_relationship` لكائن FileSpecification إلى `text/xml` و `ALTERNATIVE` على التوالي.  
-1. أضف كائن fileSpecification إلى مجموعة الملفات المضمنة لكائن الوثيقة. هذا يرفق ملف XML بوثيقة الـ PDF كملف بيانات الفاتورة.  
-1. قم بتحويل وثيقة الـ PDF إلى تنسيق PDF/A-3A. استخدم المسار إلى ملف السجل، وتعداد `PdfFormat.PDF_A_3A`، وتعداد `ConvertErrorAction.DELETE` لتحويل كائن الوثيقة.  
-1. احفظ وثيقة الـ PDF مع مرفق ZUGFeRD.
+1. قم باستيراد مكتبة Aspose.PDF وأعطها اسمًا مستعارًا للتطبيق من أجل الراحة.
+1. حدد المسار إلى الدليل حيث توجد ملفات PDF المدخلة والمخرجة.
+1. حدد المسار إلى ملف PDF الذي ستتم معالجته.
+1. قم بتحميل ملف PDF من متغير المسار وإنشاء كائن مستند.
+1. قم بإنشاء كائن FileSpecification لملف XML الذي يحتوي على بيانات تعريف الفاتورة. استخدم متغير المسار وسلسلة الوصف لإنشاء كائن FileSpecification.
+1. قم بتعيين `mime_type` و ال `af_relationship` خصائص كائن تحديد الملف إلى `text/xml` و `ALTERNATIVE`، على التوالي.
+1. أضف كائن FileSpecification إلى مجموعة الملفات المضمنة لكائن المستند. يؤدي هذا إلى إرفاق ملف XML بمستند PDF كملف بيانات تعريف الفاتورة.
+1. قم بتحويل وثيقة PDF إلى صيغة PDF/A-3A. استخدم المسار لتسجيل الملف، `PdfFormat.PDF_A_3A` التعداد، و `ConvertErrorAction.DELETE` التعداد لتحويل كائن المستند.
+1. احفظ مستند PDF مع ZugFerd المرفق.
 
 ```python
+import sys
+import os
 import aspose.pdf as ap
 
-# تحديد المسار إلى الدليل حيث توجد ملفات PDF المدخلات والمخرجات
-_dataDir = "./"
+def attach_invoice_zugferd_format(infile, invoice, outfile):
+    document = ap.Document(infile)
 
-# تحميل ملف PDF الذي سيتم معالجته
-path = _dataDir + "ZUGFeRD/ZUGFeRD-test.pdf"
-document = ap.Document(path)
+    # Create a FileSpecification object for the XML file that contains the invoice metadata
+    description = "Invoice metadata conforming to ZUGFeRD standard"
+    file_specification = ap.FileSpecification(invoice, description)
 
-# إنشاء كائن FileSpecification لملف XML الذي يحتوي على بيانات الفاتورة
-description = "بيانات الفاتورة المتوافقة مع معيار ZUGFeRD"
-path = _dataDir + "ZUGFeRD/factur-x.xml"
-fileSpecification = ap.FileSpecification(path, description)
+    # Set the MIME type and the AFRelationship properties of the embedded file
+    file_specification.mime_type = "text/xml"
+    file_specification.af_relationship = ap.AFRelationship.ALTERNATIVE
 
-# تعيين نوع MIME وخصائص AFRelationship للملف المضمن
-fileSpecification.mime_type = "text/xml"
-fileSpecification.af_relationship = ap.AFRelationship.ALTERNATIVE
+    # Add the embedded file to the PDF document's embedded files collection
+    document.embedded_files.add("factur", file_specification)
 
-# إضافة الملف المضمن إلى مجموعة ملفات الـ PDF المضمنة
-document.embedded_files.add("factur",fileSpecification)
-
-# تحويل وثيقة الـ PDF إلى تنسيق PDF/A-3A
-path = _dataDir + "ZUGFeRD/log.xml"
-document.convert(path, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
-
-# احفظ وثيقة الـ PDF مع المرفق ZUGFeRD
-path = _dataDir + "ZUGFeRD/ZUGFeRD-res.pdf"
-document.save(path)
+    # Convert the PDF document to the PDF/A-3A format
+    log_path = outfile.replace(".pdf", "_log.xml")
+    document.convert(log_path, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
+    document.save(outfile)
 ```

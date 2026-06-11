@@ -1,150 +1,28 @@
 ---
-title: العمل مع المرفقات في PDF باستخدام Python
+title: العمل مع مرفقات PDF في بايثون
 linktitle: العمل مع المرفقات
 type: docs
 weight: 130
 url: /ar/python-net/attachments/
-description: استخدم Python PDF API للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF باستخدام Python من داخل تطبيقاتك. دليل كامل مع أمثلة كود Python.
-lastmod: "2023-02-17"
+description: تعرف على كيفية إضافة مرفقات PDF واستخراجها وتنظيمها وإزالتها في Python باستخدام Aspose.PDF لـ Python عبر .NET، بما في ذلك الملفات المضمنة وحافظات PDF.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إضافة مرفقات ومحافظ PDF وإزالتها وإدارتها في Python
+Abstract: تشرح هذه المقالة كيفية العمل مع مرفقات PDF في Aspose.PDF لـ Python عبر .NET. تعرف على كيفية إضافة ملفات مضمنة إلى مستندات PDF، وإزالة المرفقات برمجيًا، وإنشاء أو إدارة حافظات PDF التي تجمع أنواع ملفات متعددة في حاوية PDF واحدة.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "العمل مع المرفقات في PDF باستخدام Python",
-    "alternativeHeadline": "المرفقات في ملف PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, python, المرفقات في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/attachments/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/attachments/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "استخدم Python PDF API للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF باستخدام Python من داخل تطبيقاتك. دليل كامل مع أمثلة كود Python."
-}
-</script>
 
+في هذا القسم، سنشرح كيفية التعامل مع المرفقات في PDF باستخدام Aspose.PDF لـ Python عبر .NET.
+المرفق هو ملف إضافي يتم إرفاقه بمستند أصلي، ويمكن أن يكون مجموعة متنوعة من أنواع الملفات، مثل pdf أو Word أو image أو ملفات أخرى.
+سوف تتعلم كيفية إضافة المرفقات إلى pdf، والحصول على معلومات المرفق، وحفظه في ملف، وحذف المرفق من PDF برمجيًا باستخدام Python.
 
-في هذا القسم، سنشرح كيفية العمل مع المرفقات في PDF باستخدام Aspose.PDF لبايثون عبر .NET.  
-المرفق هو ملف إضافي يتم إرفاقه بمستند رئيسي، ويمكن أن يكون أنواعًا متعددة من الملفات، مثل pdf، word، صورة أو ملفات أخرى.  
-ستتعلم كيفية إضافة مرفقات إلى pdf، والحصول على معلومات المرفق، وحفظه في ملف، وحذف المرفق من PDF برمجيًا باستخدام بايثون.
+استخدم هذه المقالات عندما تحتاج إلى تضمين ملفات داعمة داخل PDF أو إزالة الملفات المضمنة من مستند موجود أو تجميع المواد ذات الصلة معًا كمحفظة PDF.
+
+## عمليات سير عمل المرفقات التي يغطيها هذا القسم
 
 - [إضافة مرفق إلى مستند PDF](/pdf/ar/python-net/add-attachment-to-pdf-document/)
-- [إزالة مرفق من PDF موجود](/pdf/ar/python-net/removing-attachment-from-an-existing-pdf/)
+- [إزالة المرفق من ملف PDF موجود](/pdf/ar/python-net/removing-attachment-from-an-existing-pdf/)
 - [محفظة](/pdf/ar/python-net/portfolio/)
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [استخراج المرفقات](/pdf/ar/python-net/extract-attachment/)

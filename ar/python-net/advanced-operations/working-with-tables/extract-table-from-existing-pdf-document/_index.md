@@ -1,167 +1,64 @@
 ---
-title: استخراج جدول من مستند PDF
-linktitle: استخراج جدول
+title: استخراج الجداول من PDF في Python
+linktitle: جدول الاستخراج
 type: docs
 weight: 20
-url: /ar/python-net/extract-table-from-existing-pdf-document/
-description: يجعل Aspose.PDF لـ Python عبر .NET من الممكن تنفيذ عمليات مختلفة مع الجداول الموجودة في مستند PDF الخاص بك.
-lastmod: "2023-02-17"
+url: /ar/python-net/extracting-table/
+description: تعرف على كيفية استخراج بيانات الجدول من مستندات PDF الموجودة في Python.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: استخراج بيانات الجدول من ملفات PDF باستخدام Python
+Abstract: توضح هذه المقالة كيفية استخراج الجداول من مستندات PDF باستخدام Aspose.PDF لـ Python عبر .NET. يوضح كيفية استخدام `TableAbsorber` لاكتشاف الجداول حسب الصفحة، وتكرار الصفوف والخلايا، واسترداد نص الخلية للتحليل ومعالجة البيانات النهائية.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "استخراج جدول من مستند PDF",
-    "alternativeHeadline": "كيفية استخراج جدول من ملف PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, python, استخراج جدول",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-table-from-existing-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-table-from-existing-pdf-document/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يجعل Aspose.PDF لـ Python عبر .NET من الممكن تنفيذ عمليات مختلفة مع الجداول الموجودة في مستند PDF الخاص بك."
-}
-</script>
 
+## استخراج الجدول من PDF
 
-## استخراج جدول من PDF
+يعد استخراج الجداول من ملفات PDF مفيدًا لإعداد التقارير وترحيل البيانات وعمليات سير عمل التحليلات. باستخدام Aspose.PDF لـ Python عبر .NET، يمكنك اكتشاف وقراءة محتوى الجدول من مستندات PDF الموجودة بكفاءة.
 
-يمكن أن يكون استخراج الجداول من ملفات PDF باستخدام Python مفيدًا للغاية لاستخراج البيانات وتحليلها. مع مكتبة Aspose.PDF لـ Python عبر .NET، يمكنك العمل بكفاءة مع الجداول المدمجة في مستندات PDF لمهام مختلفة متعلقة بالبيانات.
+يفتح مقتطف الشفرة هذا ملف PDF موجودًا، ويفحص كل صفحة بحثًا عن الجداول، ويستخرج محتوى نص الخلية. يستخدم `TableAbsorber` لاكتشاف الجداول ثم التكرار من خلال الصفوف والخلايا لطباعة النص المستخرج.
+
+1. يقوم بتحميل ملف PDF إلى كائن AP.Document.
+1. تصفح الصفحات.
+1. يقوم بإنشاء كائن TableAbsorber.
+1. قم بالتكرار من خلال الجداول.
+1. قم بالتكرار من خلال الصفوف والخلايا.
+1. استخراج النص وطباعته من الخلايا.
+
+يقوم هذا المثال بقراءة ملف PDF والعثور على جميع الجداول وطباعة محتويات الخلايا الخاصة بها صفًا تلو الآخر.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    # تحميل مستند PDF المصدر
-    pdf_document = ap.Document(input_file)
-    for page in pdf_document.pages:
+def extract(infile: str) -> None:
+    """Extract and print all tables from a PDF file."""
+    document = ap.Document(infile)
+    for page in document.pages:
         absorber = ap.text.TableAbsorber()
         absorber.visit(page)
         for table in absorber.table_list:
+            print("Table ----")
             for row in table.row_list:
+                print("Row:")
+                row_txt = ""
                 for cell in row.cell_list:
+                    cell_txt = ""
                     text_fragment_collection = cell.text_fragments
                     for fragment in text_fragment_collection:
-                        txt = ""
                         for seg in fragment.segments:
-                            txt += seg.text
-                        print(txt)
-
+                            cell_txt += seg.text
+                    row_txt += " | "
+                    row_txt += cell_txt
+                print(row_txt)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## موضوعات الجدول ذات الصلة
+
+- [العمل مع الجداول في PDF باستخدام Python](/pdf/ar/python-net/working-with-tables/)
+- [إضافة جداول إلى PDF باستخدام Python](/pdf/ar/python-net/adding-tables/)
+- [دمج جداول PDF مع مصادر البيانات](/pdf/ar/python-net/integrate-table/)
+- [إزالة الجداول من ملفات PDF الموجودة](/pdf/ar/python-net/removing-tables/)
