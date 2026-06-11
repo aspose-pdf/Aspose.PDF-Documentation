@@ -1,80 +1,23 @@
 ---
-title: التنقل والتفاعل في PDF باستخدام Python
+title: التنقل والتفاعل في ملفات PDF في بايثون
 linktitle: التنقل والتفاعل
 type: docs
 weight: 90
 url: /ar/python-net/navigation-and-interaction/
-description: يصف هذا القسم ميزات العمل مع الروابط والإجراءات والإشارات المرجعية باستخدام مكتبة Python.
-lastmod: "2023-02-17"
+description: تعرف على كيفية التعامل مع روابط PDF والإجراءات والإشارات المرجعية في Python للتنقل وسلوك المستند التفاعلي.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: العمل مع الروابط والإجراءات والإشارات المرجعية في ملفات PDF باستخدام Python
+Abstract: يشرح هذا القسم كيفية إدارة ميزات التنقل والتفاعل في مستندات PDF باستخدام Python. تعرف على كيفية إنشاء الروابط وتحديثها وإضافة إجراءات تفاعلية والعمل مع الإشارات المرجعية لتحسين التنقل في PDF وسهولة الاستخدام وسير عمل المستندات.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "التنقل والتفاعل في PDF باستخدام Python",
-    "alternativeHeadline": "الروابط والإجراءات والإشارات المرجعية في PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, python, الروابط, الإجراءات, الإشارات المرجعية في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/navigation-and-interaction/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/navigation-and-interaction/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يصف هذا القسم ميزات العمل مع الروابط والإجراءات والإشارات المرجعية."
-}
-</script>
 
+استخدم هذا القسم عندما تحتاج إلى إنشاء تنقل تفاعلي في PDF في Python، سواء كان ذلك يعني إنشاء إشارات مرجعية أو تحديث وجهات الروابط أو إرفاق الإجراءات بأحداث المستند والصفحات وعناصر النموذج.
 
-- [الإشارات المرجعية](/pdf/ar/python-net/bookmarks/) - عادةً ما تتضمن المنشورات الكبيرة إطار عمل للإشارات المرجعية التي يمكن عرضها واختيارها بسهولة في جزء الإشارات المرجعية، مما يسمح لك بالنقر على إشارة مرجعية للانتقال إلى الصفحة أو الفصل الذي تمثله. جزء الإشارات المرجعية هو عنصر مدرك للمحتوى، ويكون مرئيًا في الشريط الجانبي فقط إذا كان مستند PDF المفتوح يحتوي على بنية إشارات مرجعية.
+## موضوعات في هذا القسم
+
+- [الإجراءات](/pdf/ar/python-net/actions/) - في هذه المقالة، ستتعلم كيفية التعامل مع أنواع مختلفة من الإجراءات.
+- [الإشارات المرجعية](/pdf/ar/python-net/bookmarks/)- عادةً ما تتضمن المنشورات الكبيرة إطارًا من الإشارات المرجعية التي يمكن عرضها وتحديدها بسهولة في جزء الإشارات المرجعية، مما يسمح لك بالنقر فوق إشارة مرجعية للانتقال إلى الصفحة أو الفصل الذي تمثله. يعد جزء الإشارات المرجعية عنصرًا مدركًا للمحتوى، ولا يمكن رؤيته في الشريط الجانبي إلا إذا كانت وثيقة PDF المفتوحة تحتوي على بنية إشارة مرجعية.
+- [روابط](/pdf/ar/python-net/links/)- العمل مع الروابط في مستندات PDF باستخدام مكتبة Python.

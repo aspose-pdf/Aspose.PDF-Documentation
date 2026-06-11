@@ -1,195 +1,75 @@
 ---
-title: إزالة الجداول من ملف PDF موجود
+title: إزالة الجداول من مستندات PDF الموجودة
 linktitle: إزالة الجداول
+description: تعرف على كيفية إزالة جدول واحد أو أكثر من مستندات PDF الموجودة في Python.
+lastmod: "2026-06-11"
 type: docs
 weight: 50
-url: /ar/python-net/remove-tables-from-existing-pdf/
-lastmod: "2023-02-17"
+url: /ar/python-net/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: احذف جدولًا واحدًا أو عدة جداول من ملفات PDF باستخدام Python
+Abstract: توضح هذه المقالة كيفية إزالة الجداول من مستندات PDF الحالية باستخدام Aspose.PDF لـ Python عبر .NET. يقدم «TableAbsorber» لتحديد موقع الجداول ويوضح كيفية حذف جدول واحد أو إزالة جميع الجداول المكتشفة من الصفحة.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إزالة الجداول من ملف PDF موجود",
-    "alternativeHeadline": "كيفية حذف الجداول من PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "PDF، بايثون، إزالة الجدول، حذف الجداول",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/remove-tables-from-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/remove-tables-from-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": ""
-}
-</script>
 
+## إزالة الجدول من وثيقة PDF
 
-{{% alert color="primary" %}}
+Aspose.PDF لبيثون يتيح لك إزالة جدول من PDF. يفتح ملف PDF موجودًا، ويكتشف الجدول الأول في الصفحة الأولى باستخدام `TableAbsorber`، يحذف هذا الجدول باستخدام `remove()`، ويحفظ ملف PDF المحدث إلى ملف جديد.
 
-يوفر Aspose.PDF for Python عبر .NET القدرة على إدراج/إنشاء جدول داخل مستند PDF أثناء إنشائه من الصفر أو يمكنك أيضًا إضافة كائن الجدول في أي مستند PDF موجود. ومع ذلك، قد يكون لديك متطلب [للتعامل مع الجداول في PDF الموجود](https://docs.aspose.com/pdf/python-net/manipulate-tables-in-existing-pdf/) حيث يمكنك تحديث المحتويات في خلايا الجدول الموجودة. ومع ذلك، قد تصادف متطلبًا لإزالة كائنات الجدول من مستند PDF موجود.
-
-{{% /alert %}}
-
-لإزالة الجداول، نحتاج إلى استخدام فئة [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) للحصول على الجداول في PDF الموجود ثم استدعاء [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods).
-
-## إزالة الجدول من مستند PDF
-
-لقد أضفنا وظيفة جديدة وهي.
- [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods) إلى [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) الموجودة من أجل إزالة جدول من مستند PDF. بمجرد أن يجد الماص الجداول على الصفحة بنجاح، يصبح قادرًا على إزالتها. يرجى مراجعة مقتطف الشيفرة التالي الذي يوضح كيفية إزالة جدول من مستند PDF:
+استخدم هذه الصفحة عندما تحتاج إلى تنظيف ملفات PDF ذات الجداول الثقيلة أو إزالة المحتوى الجدولي القديم أو تبسيط المستندات قبل إعادة التوزيع.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_one_table(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # تحميل مستند PDF موجود
-    pdf_document = ap.Document(input_file)
-    # إنشاء كائن TableAbsorber للعثور على الجداول
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # زيارة الصفحة الأولى باستخدام الماص
-    absorber.visit(pdf_document.pages[1])
-    # الحصول على الجدول الأول في الصفحة
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    # Get first table on the page
     table = absorber.table_list[0]
-    # إزالة الجدول
+    # Remove the table
     absorber.remove(table)
-    # حفظ PDF
-    pdf_document.save(output_file)
+    # Save PDF
+    document.save(outfile)
 ```
 
-## إزالة جداول متعددة من مستند PDF
+## قم بإزالة جميع الجداول من وثيقة PDF
 
-قد يحتوي مستند PDF في بعض الأحيان على أكثر من جدول وقد تحتاج إلى إزالة جداول متعددة منه. في سبيل إزالة جداول متعددة من مستند PDF، يرجى استخدام مقطع الكود التالي:
+مع مكتبتنا، يمكنك إزالة جميع الجداول من صفحة معينة في PDF. يفتح الكود ملف PDF موجودًا، ويكتشف جميع الجداول في الصفحة الثانية باستخدام TableAbsorber، ويكرر الجداول المكتشفة، ويزيل كل منها، ثم يحفظ ملف PDF المعدل في ملف جديد. يكون مفيدًا عندما تحتاج إلى إزالة الجداول بشكل مجمّع من الصفحة مع ترك بقية محتوى PDF كما هو.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_all_tables(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # تحميل مستند PDF موجود
-    pdf_document = ap.Document(input_file)
-    # إنشاء كائن TableAbsorber للعثور على الجداول
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # زيارة الصفحة الثانية مع المستخدم
-    absorber.visit(pdf_document.pages[1])
-    # الحصول على نسخة من مجموعة الجداول
-    tables = absorber.table_list
-    #  التحلق عبر نسخة المجموعة وإزالة الجداول
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    #  Loop through the copy of collection and removing tables
+    tables = list(absorber.table_list)
     for table in tables:
         absorber.remove(table)
-    # حفظ المستند
-    pdf_document.save(output_file)
+
+    # Save document
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## موضوعات الجدول ذات الصلة
+
+- [العمل مع الجداول في PDF باستخدام Python](/pdf/ar/python-net/working-with-tables/)
+- [إضافة جداول إلى PDF باستخدام Python](/pdf/ar/python-net/adding-tables/)
+- [استخراج الجداول من مستندات PDF](/pdf/ar/python-net/extracting-table/)
+- [معالجة الجداول في ملفات PDF الموجودة](/pdf/ar/python-net/manipulating-tables/)

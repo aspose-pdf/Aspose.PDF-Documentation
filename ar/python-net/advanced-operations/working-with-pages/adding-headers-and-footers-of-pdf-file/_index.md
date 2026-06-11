@@ -1,308 +1,343 @@
 ---
-title: إضافة رأس وتذييل إلى PDF باستخدام بايثون
-linktitle: إضافة رأس وتذييل إلى PDF
+title: إضافة رؤوس وتذييلات PDF في Python
+linktitle: إضافة رأس وتذييل الصفحة إلى PDF
 type: docs
 weight: 50
 url: /ar/python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF لبايثون عبر .NET يتيح لك إضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
-lastmod: "2023-04-17"
+description: تعرف على كيفية إضافة الرؤوس والتذييلات إلى ملفات PDF في Python باستخدام النصوص والصور والمحتوى المنظم.
+lastmod: "2026-06-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: أضف الرؤوس والتذييلات إلى ملفات PDF باستخدام Python
+Abstract: توضح هذه المقالة كيفية إضافة الرؤوس والتذييلات إلى مستندات PDF باستخدام Aspose.PDF لـ Python عبر .NET. وهو يغطي النص وترقيم الصفحات وHTML والصورة والجدول ومحتوى رأس الصفحة وتذييلها المستند إلى اللاتكس.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إضافة رأس وتذييل إلى PDF باستخدام بايثون",
-    "alternativeHeadline": "كيفية إضافة رأس وتذييل إلى ملف PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, python, إضافة رأس, إضافة تذييل في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF لبايثون عبر .NET يتيح لك إضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp."
-}
-</script>
 
+استخدم هذه الصفحة لإضافة محتوى متسق للرأس والتذييل عبر صفحات PDF باستخدام **Aspose.pdf لـ Python عبر .NET**.
 
-**Aspose.PDF لـ Python عبر .NET** يتيح لك إضافة رأس وتذييل في ملف PDF الحالي الخاص بك. يمكنك إضافة صور أو نص إلى مستند PDF. أيضًا، حاول إضافة رؤوس مختلفة في ملف PDF واحد باستخدام Python.
+يمكنك إنشاء رؤوس وتذييلات باستخدام [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/)، و [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) الكائنات، ثم قم بتطبيقها من خلال [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) في كل صفحة.
 
-## إضافة نص في رأس ملف PDF
+## إضافة الرؤوس والتذييلات كأجزاء نصية
 
-يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) لإضافة نص في رأس ملف PDF. توفر فئة TextStamp خصائص ضرورية لإنشاء ختم نصي مثل حجم الخط، ونمط الخط، ولون الخط وغيرها. من أجل إضافة نص في الرأس، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة 'add_stamp' للصفحة لإضافة النص في رأس ملف PDF.
+أضف رؤوس وتذييلات نصية بسيطة إلى جميع الصفحات في PDF. إنه يخلق [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) الكائنات والإدخالات [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) عناصر فيها، مجموعات [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) لتحديد الموضع المناسب، وإرفاقها بكل صفحة في المستند. والنتيجة هي ملف PDF حيث تعرض كل صفحة نصًا ثابتًا لرأس وتذييل الصفحة.
 
-تحتاج إلى ضبط خاصية [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) بطريقة تضمن ضبط النص في منطقة الرأس من ملف PDF الخاص بك. تحتاج أيضًا إلى ضبط 'horizontal_alignment' إلى Center و'vertical_alignment' إلى Top.
+يوضح مقتطف الشفرة التالي كيفية إضافة الرؤوس والتذييلات كأجزاء نصية في PDF باستخدام Python:
 
-يوضح لك مقتطف الشيفرة التالي كيفية إضافة نص في رأس ملف PDF باستخدام Python:
+1. قم بإنشاء أجزاء نصية لرأس الصفحة وتذييلها.
+1. قم بإنشاء كائنات HeaderFooter وإضافة أجزاء النص إليها.
+1. حدد إعدادات الهامش للتحكم في موضع رأس الصفحة وتذييلها.
+1. قم بتحميل وثيقة PDF من ملف الإدخال.
+1. قم بالتكرار من خلال جميع الصفحات في المستند.
+1. قم بتعيين رأس الصفحة وتذييلها لكل صفحة.
+1. احفظ ملف PDF المعدل في ملف الإخراج.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_text(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Demo header")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # افتح المستند
-    document = ap.Document(input_pdf)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Demo footer")
 
-    # إنشاء رأس
-    textStamp = ap.TextStamp("Header Text")
-    # تعيين خصائص الختم
-    textStamp.top_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # إضافة رأس على جميع الصفحات
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
 
-    # حفظ المستند المحدث
-    document.save(output_pdf)
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## إضافة نص في تذييل ملف PDF
+هذه الطريقة مفيدة لإضافة عناوين متسقة أو مؤشرات الصفحات أو إخلاء المسؤولية القانونية في أعلى وأسفل كل صفحة. يمكنك أيضًا توسيعه ليشمل الصور أو المحتوى الديناميكي، مثل أرقام الصفحات.
 
-يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) لإضافة نص في تذييل ملف PDF.
- توفر فئة TextStamp الخصائص اللازمة لإنشاء ختم نصي مثل حجم الخط، نمط الخط، ولون الخط إلخ. لإضافة نص في التذييل، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة 'add_stamp' الخاصة بالصفحة لإضافة النص في تذييل ملف PDF.
+## إضافة رؤوس وتذييلات لترقيم الصفحات
 
-يُظهر لك جزء الشفرة التالي كيفية إضافة نص في تذييل ملف PDF باستخدام Python:
+أضف ترقيمًا تلقائيًا للصفحات إلى رؤوس وتذييلات مستند PDF باستخدام Aspose.PDF لـ Python. باستخدام المتغيرات المضمنة $p (رقم الصفحة الحالية) و $P (إجمالي عدد الصفحات)، يقوم البرنامج النصي بإدراج ترقيم الصفحات ديناميكيًا في كل صفحة. تعرض العناوين التنسيق «صفحة X من Y»، بينما تعرض التذييلات «الصفحة X/Y». ال [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) يضمن الموضع المناسب في كل صفحة.
+
+1. قم بإنشاء TextFragment للرأس باستخدام «صفحة $p من $P» لعرض الصفحات الحالية والإجمالية.
+1. قم بإنشاء كائن HeaderFooter وأضف نص الرأس إليه.
+1. قم بإنشاء TextFragment للتذييل باستخدام «الصفحة $p/$P» لنمط ترقيم بديل.
+1. قم بإنشاء كائن تذييل وأضف نص التذييل.
+1. حدد إعدادات الهامش (اليسار = 50، الجزء العلوي = 20) وقم بتطبيقها على كل من رأس الصفحة وتذييلها.
+1. افتح مستند PDF من ملف الإدخال.
+1. قم بالتمرير عبر جميع الصفحات وقم بتعيين رأس وتذييل الصفحة لكل صفحة.
+1. احفظ ملف PDF المحدث في مسار الإخراج.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def using_header_and_footer_for_page_numbering(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Page $p from $P")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # افتح المستند
-    document = ap.Document(input_pdf)
-    # أنشئ تذييل
-    textStamp = ap.TextStamp("Footer Text")
-    # ضبط خصائص الختم
-    textStamp.bottom_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # أضف التذييل على جميع الصفحات
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Page $p / $P")
 
-    # احفظ ملف PDF المحدث
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Create margins
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+
+    # Set header margin
+    header.margin = margin
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## إضافة صورة في رأس ملف PDF
+## إضافة رؤوس وتذييلات كأجزاء HTML
 
-يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) لإضافة صورة في رأس ملف PDF. فئة Image Stamp توفر الخصائص اللازمة لإنشاء ختم يعتمد على الصورة مثل حجم الخط، نمط الخط، ولون الخط وما إلى ذلك. لإضافة صورة في الرأس، تحتاج إلى إنشاء كائن Document وكائن Image Stamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة 'add_stamp' من الصفحة لإضافة الصورة في رأس ملف PDF.
+قم بتطبيق الرؤوس والتذييلات بتنسيق HTML على كل صفحة من مستند PDF باستخدام Aspose.PDF لـ Python. باستخدام [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/)، يتيح البرنامج النصي ظهور نمط النص الغني - مثل الخط العريض والمائل - في رأس الصفحة وتذييلها. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) يتم تطبيقه على الموضع المناسب، ويتم إرفاق نفس العناصر المنسقة بكل صفحة في المستند.
 
-يُظهر لك مقتطف الكود التالي كيفية إضافة صورة في رأس ملف PDF باستخدام Python:
+يوضح مقتطف الشفرة التالي كيفية إضافة الرؤوس والتذييلات كأجزاء HTML إلى PDF باستخدام Python:
 
-```python 
-
-    import aspose.pdf as ap
-
-    # فتح المستند
-    document = ap.Document(input_pdf)
-
-    # إنشاء الرأس
-    image_stamp = ap.ImageStamp(input_image)
-    # تعيين خصائص الختم
-    image_stamp.top_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # إضافة الرأس في جميع الصفحات
-    for page in document.pages:
-        page.add_stamp(image_stamp)
-
-    # حفظ المستند المحدث
-    document.save(output_pdf)
-```
-
-## إضافة صورة في تذييل ملف PDF
-
-يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) لإضافة صورة في تذييل ملف PDF. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) توفر الفئة الخصائص اللازمة لإنشاء ختم قائم على الصور مثل حجم الخط، ونمط الخط، ولون الخط وما إلى ذلك. لإضافة صورة في التذييل، تحتاج إلى إنشاء كائن Document وكائن Image Stamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة 'add_stamp' للصفحة لإضافة الصورة في تذييل ملف PDF.
-
-يوضح لك مقتطف الشيفرة التالي كيفية إضافة صورة في تذييل ملف PDF باستخدام Python:
+1. قم بإنشاء مقتطف رأس HTML باستخدام HtmlFragment - بما في ذلك النص المصمم مثل '<strong>'للبنط العريض.
+1. قم بإنشاء كائن HeaderFooter وأضف رأس HTML إليه.
+1. قم بإنشاء مقتطف تذييل HTML باستخدام '<i>'للتصميم المائل.
+1. قم بإنشاء كائن تذييل وأضف تذييل HTML إليه.
+1. قم بتكوين الهوامش (اليسار = 50، الجزء العلوي = 20) وقم بتعيينها لكل من الرأس والتذييل.
+1. قم بتحميل مستند PDF باستخدام «AP.document ()».
+1. قم بالتمرير عبر جميع الصفحات وقم بتعيين رأس الصفحة وتذييلها لكل منها.
+1. احفظ ملف PDF المعدل إلى مسار الإخراج المحدد.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_html(input_file, output_file):
+    # Create header HTML
+    header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_html)
 
-    # فتح الوثيقة
-    document = ap.Document(input_pdf)
-    # إنشاء تذييل
-    image_stamp = ap.ImageStamp(input_image)
-    # تعيين خصائص الختم
-    image_stamp.bottom_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # إضافة تذييل على جميع الصفحات
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer HTML
+    footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
 
-    # حفظ ملف PDF المحدث
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_html)
+
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## إضافة رؤوس مختلفة في ملف PDF واحد
+يتيح استخدام HTMLFragment التنسيق الغني باستخدام الأنماط المضمنة أو ترميز HTML، مما يمنحك المزيد من مرونة التصميم مقارنة بالنص العادي.
 
-نعلم أنه يمكننا إضافة نص مختوم في قسم الرأس/التذييل من المستند باستخدام خصائص [الهامش العلوي](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) أو [الهامش السفلي](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties)، ولكن في بعض الأحيان قد يكون لدينا حاجة لإضافة رؤوس/تذييلات متعددة في مستند PDF واحد. يوضح **Aspose.PDF for Python via .NET** كيفية القيام بذلك.
+## إضافة رؤوس وتذييلات كصور
 
-من أجل تحقيق هذا المتطلب، سنقوم بإنشاء كائنات نص مختوم فردية (يعتمد عدد الكائنات على عدد الرؤوس/التذييلات المطلوبة) وسنضيفها إلى مستند PDF.
- نحن قد نحدد أيضًا معلومات تنسيق مختلفة لكل كائن ختم فردي. في المثال التالي، قمنا بإنشاء كائن Document وثلاثة كائنات TextStamp ثم استخدمنا طريقة 'add_stamp' للصفحة لإضافة النص في قسم الرأس لملف PDF. يظهر لك مقطع الكود التالي كيفية إضافة صورة في تذييل ملف PDF باستخدام Aspose.PDF لـ Python:
+أضف الرؤوس والتذييلات المستندة إلى الصور إلى كل صفحة من وثيقة PDF باستخدام Aspose.PDF لـ Python. يتم استخدام نفس ملف الصورة لكل من رأس الصفحة وتذييلها في كل صفحة. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) يضع الصور، ويتم ضبط الصورة تلقائيًا لتناسب منطقة الرأس/التذييل.
+
+يوضح مقتطف الشفرة التالي كيفية إضافة الرؤوس والتذييلات كصور إلى PDF باستخدام Python:
+
+1. قم بتحميل الصورة إلى كائن «AP.image» وقم بإعدادها للاستخدام كرأس.
+1. قم بإنشاء كائن HeaderFooter وإرفاق صورة الرأس به.
+1. قم بتحميل نفس الصورة مرة أخرى لاستخدامها كتذييل.
+1. قم بإنشاء كائن تذييل وأضف صورة التذييل إليه.
+1. قم بتحميل مستند PDF الذي تم إدخاله باستخدام «AP.document ()».
+1. قم بالتكرار من خلال جميع صفحات المستند.
+1. قم بتطبيق الهوامش (اليسار = 50) لوضع كل من الرأس والتذييل.
+1. قم بتعيين رأس وتذييل الصفحة لكل صفحة في PDF.
+1. احفظ ملف PDF المحدث إلى ملف الإخراج المحدد.
+
+هذه التقنية مثالية لوضع العلامات التجارية للمستندات التي تحتوي على شعارات أو علامات مائية في منطقة الرأس/التذييل.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_image(input_file, image_file, output_file):
+    # Create header image
+    header_image = ap.Image()
+    header_image.file = image_file
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_image)
 
-    # إنشاء ثلاثة طوابع
-    stamp1 = ap.TextStamp("Header 1")
-    stamp2 = ap.TextStamp("Header 2")
-    stamp3 = ap.TextStamp("Header 3")
+    # Create footer image
+    footer_image = ap.Image()
+    footer_image.file = image_file
 
-    # ضبط محاذاة الطابع (وضع الطابع في أعلى الصفحة، متمركز أفقيًا)
-    stamp1.vertical_alignment = ap.VerticalAlignment.TOP
-    stamp1.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # تحديد نمط الخط كعريض
-    stamp1.text_state.font_style = ap.text.FontStyles.BOLD
-    # ضبط معلومات لون النص الأمامي كالأحمر
-    stamp1.text_state.foreground_color = ap.Color.red
-    # تحديد حجم الخط كـ 14
-    stamp1.text_state.font_size = 14
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_image)
 
-    # الآن نحتاج إلى ضبط المحاذاة الرأسية لكائن الطابع الثاني كأعلى
-    stamp2.vertical_alignment = ap.VerticalAlignment.TOP
-    # ضبط معلومات المحاذاة الأفقية للطابع كمحاذاة الوسط
-    stamp2.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # ضبط عامل التكبير لكائن الطابع
-    stamp2.zoom = 10
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Set header margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            header.margin = margin
 
-    # ضبط تنسيق كائن الطابع الثالث
-    # تحديد معلومات المحاذاة الرأسية لكائن الطابع كأعلى
-    stamp3.vertical_alignment = ap.VerticalAlignment.TOP
-    # ضبط معلومات المحاذاة الأفقية لكائن الطابع كمحاذاة الوسط
-    stamp3.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # ضبط زاوية الدوران لكائن الطابع
-    stamp3.rotate_angle = 35
-    # ضبط اللون الوردي كلون خلفية للطابع
-    stamp3.text_state.background_color = ap.Color.pink
-    # تغيير معلومات نوع الخط للطابع إلى Verdana
-    stamp3.text_state.font = ap.text.FontRepository.find_font("Verdana")
-    # يتم إضافة الطابع الأول على الصفحة الأولى;
-    document.pages[1].add_stamp(stamp1)
-    # يتم إضافة الطابع الثاني على الصفحة الثانية;
-    document.pages[2].add_stamp(stamp2)
-    # يتم إضافة الطابع الثالث على الصفحة الثالثة.
-    document.pages[3].add_stamp(stamp3)
+            # Set footer margin
+            footer.margin = margin
 
-    # حفظ المستند المحدث
-    document.save(output_pdf)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "بريطانيا",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "عرض",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "تقييم مجمع",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## إضافة رؤوس وتذييلات كجدول
+
+أضف رؤوس وتذييلات منظمة قائمة على الجدول إلى جميع صفحات مستند PDF باستخدام Aspose.PDF لـ Python. [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) توفر الكائنات تحكمًا أفضل في التخطيط والمحاذاة والتنسيق المتسق للرؤوس والتذييلات المعقدة. يتم توسيط نص الرأس بينما يتم محاذاة نص التذييل إلى اليسار، وكلاهما يستخدم خط Arial 12pt. يتم حساب عرض الأعمدة ديناميكيًا استنادًا إلى أبعاد الصفحة لضمان الموضع المناسب.
+
+يضيف مقتطف الشفرة هذا الرؤوس والتذييلات (باستخدام الجداول) إلى كل صفحة من مستند PDF باستخدام Aspose.PDF لـ Python عبر .NET.
+
+1. تعريف أنماط النص باستخدام [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) لرأس الصفحة وتذييلها (الخط والحجم والمحاذاة).
+1. ابتكر [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) كائنات لرأس الصفحة وتذييلها.
+1. قم ببناء العنوان [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) مع صف واحد وخلية تحتوي على نص العنوان.
+1. قم ببناء التذييل [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) مع صف واحد وخلية تحتوي على نص التذييل.
+1. أضف الجداول إلى المقابلة [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) الكائنات.
+1. تعيين تذييل الصفحة [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) لتحديد المواقع الأفقية المناسبة.
+1. افتح [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) باستخدام الطرق المناسبة.
+1. قم بالتكرار في جميع الصفحات وقم بتعيين رأس وتذييل المستند إلى الجدول لكل صفحة.
+1. احفظ التعديل [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) إلى ملف الإخراج.
+
+```python
+import aspose.pdf as ap
+
+def add_header_and_footer_as_table(input_file, output_file):
+    text_state_header = ap.text.TextState()
+    text_state_header.font = ap.text.FontRepository.find_font("Arial")
+    text_state_header.font_size = 12
+    text_state_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    text_state_footer = ap.text.TextState()
+    text_state_footer.font = ap.text.FontRepository.find_font("Arial")
+    text_state_footer.font_size = 12
+    text_state_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+    # Create header
+    header = ap.HeaderFooter()
+    # Create footer
+    footer = ap.HeaderFooter()
+    # Create header Table
+    table_header = ap.Table()
+    table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+    header_row = table_header.rows.add()
+    header_row.cells.add("This is a Table Header", text_state_header)
+    # Create footer Table
+    table = ap.Table()
+    table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+    table.rows.add().cells.add("Powered by Aspose.PDF", text_state_footer)
+    header.paragraphs.add(table_header)
+    footer.paragraphs.add(table)
+    # Set footer margin
+    footer.margin.left = 150
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## إضافة رؤوس وتذييلات كـ LaTeX
+
+أضف الرؤوس والتذييلات التي تحتوي على محتوى بتنسيق Latex إلى جميع صفحات مستند PDF باستخدام Aspose.PDF لـ Python. يسمح LaTeX بعرض الرموز الرياضية والتواريخ وعلامات حقوق النشر والتنسيقات المتقدمة الأخرى. يتضمن العنوان تاريخًا ديناميكيًا، بينما يعرض التذييل رمز حقوق الطبع والنشر إلى جانب رقم الصفحة الحالية وإجمالي عدد الصفحات.
+
+يوضح مقتطف الشفرة التالي كيفية الاستخدام [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) في الرؤوس والتذييلات لملف PDF باستخدام Aspose.PDF لبيثون عبر .NET.
+
+1. افتح [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) باستخدام الطرق المناسبة.
+1. حدد إجمالي عدد الصفحات لاستخدامها في التذييلات الديناميكية.
+1. قم بالتكرار من خلال جميع صفحات المستند.
+1. قم بإنشاء [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) كائن للرأس.
+1. قم بإنشاء [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) لنص العنوان الذي يحتوي على أوامر LaTeX (على سبيل المثال، `\\today\\`).
+1. قم بإنشاء [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) كائن للتذييل.
+1. قم بإنشاء [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) لنص التذييل بما في ذلك رموز LaTeX وترقيم الصفحات.
+1. أضف [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) إلى كائن الرأس/التذييل المقابل.
+1. اربط رأس الصفحة وتذييلها بالصفحة الحالية.
+1. احفظ التعديل [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) إلى ملف الإخراج.
+
+```python
+import aspose.pdf as ap
+
+def add_header_and_footer_as_latex(input_file, output_file):
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTeX Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = (
+                f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            )
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## موضوعات الصفحة ذات الصلة
+
+- [العمل مع صفحات PDF في بايثون](/pdf/ar/python-net/working-with-pages/)
+- [إضافة أرقام الصفحات إلى PDF في Python](/pdf/ar/python-net/add-page-number/)
+- [ختم صفحات PDF في بايثون](/pdf/ar/python-net/stamping/)
+- [تنسيق مستندات PDF في بايثون](/pdf/ar/python-net/formatting-pdf-document/)

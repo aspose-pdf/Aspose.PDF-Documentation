@@ -1,166 +1,67 @@
 ---
-title: إزالة المرفقات من PDF باستخدام بايثون
-linktitle: إزالة المرفقات من ملف PDF موجود
+title: إزالة المرفقات من PDF في Python
+linktitle: إزالة المرفق من ملف PDF موجود
 type: docs
 weight: 30
 url: /ar/python-net/removing-attachment-from-an-existing-pdf/
-description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم Python PDF API لإزالة المرفقات في ملفات PDF باستخدام Aspose.PDF لبايثون عبر مكتبة .NET.
-lastmod: "2023-02-17"
+description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم واجهة برمجة تطبيقات Python PDF لإزالة المرفقات في ملفات PDF باستخدام Aspose.PDF لبيثون عبر مكتبة.NET.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية حذف المرفقات من PDF باستخدام Python
+Abstract: تتناول هذه المقالة كيفية إزالة المرفقات من ملفات PDF باستخدام Aspose.PDF لـ Python. يتم تخزين المرفقات في مستند PDF ضمن مجموعة «الملفات المضمنة» لكائن «المستند». لحذف جميع المرفقات من PDF، يمكنك استدعاء طريقة `delete () `في مجموعة `EmbeddedFiles` ثم حفظ المستند المحدث باستخدام طريقة `save ()` الخاصة بكائن `Document`. يتم توفير مقتطف شفرة لتوضيح هذه العملية، وعرض خطوات فتح مستند وحذف مرفقاته وحفظ الملف المعدل.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إزالة المرفقات من PDF",
-    "alternativeHeadline": "كيفية حذف المرفقات من PDF باستخدام بايثون",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات pdf",
-    "keywords": "pdf, python, حذف المرفقات",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/removing-attachment-from-an-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/removing-attachment-from-an-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يمكن لـ Aspose.PDF لبايثون إزالة المرفقات من مستندات PDF الخاصة بك. استخدم Python PDF API لإزالة المرفقات في ملفات PDF باستخدام مكتبة Aspose.PDF."
-}
-</script>
 
+يمكن لـ Aspose.PDF لبيثون إزالة المرفقات من ملفات PDF. يتم الاحتفاظ بمرفقات وثيقة PDF في كائنات المستند [ملفات مضمّنة](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) مجموعة.
 
-Aspose.PDF for Python يمكنه إزالة المرفقات من ملفات PDF. يتم الاحتفاظ بمرفقات مستند PDF في مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) الخاصة بكائن المستند.
+يعد سير العمل هذا مفيدًا عندما تحتاج إلى تنظيف الملفات المضمنة القديمة أو تقليل حجم الحزمة أو إعداد PDF لإعادة التوزيع بدون مواد المصدر المرفقة.
 
 لحذف جميع المرفقات المرتبطة بملف PDF:
 
-1. قم باستدعاء طريقة [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) لمجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/).
-1. قم بحفظ الملف المحدث باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) الخاصة بكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. اتصل بـ [ملفات مضمّنة](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) مجموعات [حذف ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) طريقة.
+1. احفظ الملف المحدث باستخدام [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) الكائنات [حفظ ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) طريقة.
 
-يظهر الكود التالي كيفية إزالة المرفقات من مستند PDF.
+يوضح مقتطف الشفرة التالي كيفية إزالة المرفقات من مستند PDF.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    # فتح المستند
-    document = ap.Document(input_pdf)
-
-    # حذف جميع المرفقات
-    document.embedded_files.delete()
-
-    # حفظ الملف المحدث
-    document.save(output_pdf)
+def remove_attachment(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete()
+        document.save(outfile)
 ```
 
+## قم بإزالة مرفق محدد بالاسم
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
-                "areaServed": "بريطانيا",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+إذا كنت بحاجة إلى إزالة مرفق واحد فقط والاحتفاظ بالمرفقات الأخرى، فاستخدم [حذف بواسطة المفتاح ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/delete_by_key/) الطريقة وتمرير اسم المرفق.
+
+لحذف مرفق محدد:
+
+1. افتح ملف PDF المصدر.
+1. اتصل `document.embedded_files.delete_by_key(attachment_name)`.
+1. احفظ ملف PDF المحدث.
+
+يزيل مقتطف الشفرة التالي مرفقًا واحدًا باسمه.
+
+```python
+
+import aspose.pdf as ap
+
+def remove_attachment(infile, attachment_name, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete_by_key(attachment_name)
+        document.save(outfile)
+```
+
+## موضوعات المرفقات ذات الصلة
+
+- [العمل مع مرفقات PDF في بايثون](/pdf/ar/python-net/attachments/)
+- [إضافة مرفقات إلى PDF في Python](/pdf/ar/python-net/add-attachment-to-pdf-document/)
+- [إنشاء وإدارة حافظات PDF في Python](/pdf/ar/python-net/portfolio/)
+
