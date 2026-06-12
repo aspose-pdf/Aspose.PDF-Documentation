@@ -89,7 +89,7 @@ public static void ImageStampAsBackgroundInFloatingBox() {
         aBox.setTop(80);
         // Mengatur perataan horizontal untuk FloatingBox
         aBox.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Menambahkan fragmen teks ke koleksi paragraf dari FloatingBox
+        // Menambahkan fragmen teks ke koleksi `paragraphs` dari FloatingBox
         aBox.getParagraphs().add(new TextFragment("teks utama"));
         // Mengatur batas untuk FloatingBox
         aBox.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
@@ -102,7 +102,7 @@ public static void ImageStampAsBackgroundInFloatingBox() {
         // Mengatur warna latar belakang untuk FloatingBox
         aBox.setBackgroundColor(Color.getYellow());
 
-        // Menambahkan FloatingBox ke koleksi paragraf dari objek halaman
+        // Menambahkan FloatingBox ke koleksi `paragraphs` dari objek halaman
         page.getParagraphs().add(aBox);
         // Menyimpan dokumen PDF
         doc.save(_dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");

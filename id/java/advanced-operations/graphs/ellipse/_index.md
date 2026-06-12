@@ -38,7 +38,7 @@ public static void ExampleEllipse() {
 
         graph.getShapes().add(ellipse2);
 
-        // Tambahkan objek Gambar ke koleksi paragraf halaman
+        // Tambahkan objek Gambar ke koleksi `paragraphs` halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF
@@ -74,7 +74,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan objek [Elips](https://referen
         ellipse2.getGraphInfo().setFillColor(Color.getDarkRed());
         graph.getShapes().add(ellipse2);
 
-        // Tambahkan objek Gambar ke koleksi paragraf halaman
+        // Tambahkan objek Gambar ke koleksi `paragraphs` halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF
@@ -119,7 +119,7 @@ public static void ExampleEllipseWithText() {
         ellipse2.setText(textFragment);
         graph.getShapes().add(ellipse2);
 
-        // Tambahkan objek Grafis ke koleksi paragraf halaman
+        // Tambahkan objek Grafis ke koleksi `paragraphs` halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF

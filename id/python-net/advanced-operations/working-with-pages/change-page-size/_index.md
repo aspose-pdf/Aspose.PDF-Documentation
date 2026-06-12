@@ -1,172 +1,120 @@
 ---
 title: Ubah Ukuran Halaman PDF dengan Python
-linktitle: Ubah Ukuran Halaman PDF
+linktitle: Mengubah Ukuran Halaman
 type: docs
-weight: 60
+weight: 40
 url: /id/python-net/change-page-size/
-description: Ubah Ukuran Halaman dari dokumen PDF Anda menggunakan Aspose.PDF untuk Python melalui pustaka .NET.
-lastmod: "2023-04-17"
+description: Pelajari cara membaca dan mengubah dimensi halaman PDF dengan Python.
+lastmod: "2026-06-12"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Mengubah Ukuran Halaman menggunakan Python
+Abstract: Artikel ini menunjukkan cara membaca dan memodifikasi dimensi halaman PDF menggunakan Aspose.PDF. Contoh Get Page Size mengambil lebar dan tinggi dari halaman PDF tertentu, memungkinkan pengguna untuk memeriksa tata letak halaman, memvalidasi format, atau menganalisis struktur dokumen. Contoh Set Page Size menunjukkan cara mengubah dimensi halaman—seperti mengonversi halaman pertama ke ukuran A4—sementara juga menampilkan properti kotak (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) sebelum dan sesudah modifikasi.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Ubah Ukuran Halaman PDF dengan Python",
-    "alternativeHeadline": "Ubah Ukuran Halaman PDF dengan Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, ubah ukuran pdf, ubah ukuran pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/change-page-size/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/change-page-size/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Ubah Ukuran Halaman dari dokumen PDF Anda menggunakan Aspose.PDF untuk Python melalui pustaka .NET."
-}
-</script>
 
+Aspose.PDF for Python via .NET memungkinkan Anda mengubah ukuran halaman PDF dengan baris kode sederhana. Topik ini menunjukkan cara memperbarui dimensi halaman menggunakan [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) dan [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API.
 
-## Ubah Ukuran Halaman PDF
+Gunakan panduan ini ketika Anda perlu mengubah ukuran halaman PDF yang ada, menormalkan dimensi dokumen, atau memeriksa pengaturan kotak halaman dalam Python.
 
-Aspose.PDF untuk Python via .NET memungkinkan Anda mengubah ukuran halaman PDF dengan baris kode sederhana dalam aplikasi Python Anda. Topik ini menjelaskan cara memperbarui/mengubah dimensi (ukuran) halaman dari file PDF yang ada.
+{{% alert color="primary" %}}
 
-Kelas [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) berisi metode [set_page_size()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) yang memungkinkan Anda mengatur ukuran halaman. Cuplikan kode di bawah ini memperbarui dimensi halaman dalam beberapa langkah mudah:
+Harap dicatat bahwa properti tinggi dan lebar menggunakan poin sebagai satuan dasar, di mana 1 inch = 72 poin dan 1 cm = 1/2.54 inch = 0.3937 inch = 28.3 poin.
 
-1. Muat file PDF sumber.
-1. Dapatkan halaman ke dalam objek [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. Dapatkan halaman tertentu.
-1. Panggil metode set_page_size() untuk memperbarui dimensinya.
-1. Panggil metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) dari kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) untuk menghasilkan file PDF dengan dimensi halaman yang diperbarui.
+{{% /alert %}}
+
+## Atur Ukuran Halaman PDF menjadi A4
+
+Contoh ini memperbarui ukuran halaman pertama dalam dokumen PDF ke dimensi standar A4. Ini juga mencetak dimensi kotak halaman (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) sebelum dan sesudah mengubah ukuran sehingga Anda dapat memverifikasi perubahan.
+
+Potongan kode berikut menunjukkan cara mengubah dimensi halaman PDF ke ukuran A4:
+
+1. Akses yang pertama [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) dari [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Tampilkan ukuran kotak halaman sebelum modifikasi (CropBox, TrimBox, ArtBox, BleedBox, MediaBox).
+1. Terapkan dimensi A4 (597.6 × 842.4 poin) menggunakan API halaman.
+1. Tampilkan ukuran kotak halaman yang diperbarui.
+1. Simpan yang telah dimodifikasi [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) ke jalur output yang ditentukan.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    document = ap.Document(input_pdf)
-
-    # Dapatkan halaman tertentu
+def set_page_size(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+    # Get particular page
     page = document.pages[1]
 
-    # Atur ukuran halaman sebagai A4 (11.7 x 8.3 in) dan dalam Aspose.Pdf, 1 inci = 72 poin
-    # Jadi dimensi A4 dalam poin adalah (842.4, 597.6)
-    page.set_page_size(597.6, 842.4)
+    # Set the page size as A4 (8.3 x 11.7 in) and in Aspose.Pdf, 1 inch = 72 points
+    # So A4 dimensions in points will be (597.6, 842.4) for portrait orientation
+    print("Before set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
 
-    # Simpan dokumen yang diperbarui
-    document.save(output_pdf)
+    page.set_page_size(597.6, 842.4)
+    print("After set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
+
+    # Save the updated document
+    document.save(output_file_name)
 ```
 
+## Dapatkan Ukuran Halaman PDF
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Library Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+Potongan kode ini membaca PDF dan mengambil dimensi (lebar dan tinggi) dari halaman pertama. Itu menggunakan [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API untuk mengekstrak batas halaman [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) dan mencetak ukurannya ke konsol. Ini berguna untuk memeriksa tata letak halaman, memverifikasi format, atau menyiapkan dokumen untuk pemrosesan lebih lanjut.
+
+1. Muat PDF sebagai [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Akses yang pertama [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Dapatkan persegi pembatas halaman menggunakan `get_page_rect()`.
+1. Ekstrak nilai lebar dan tinggi.
+1. Cetak dimensi halaman.
+
+```python
+import aspose.pdf as ap
+
+def get_page_size(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+
+    # Get particular page
+    page = document.pages[1]
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
+
+### Dapatkan Ukuran Halaman PDF Sebelum dan Sesudah Rotasi
+
+Dapatkan dimensi halaman PDF sebelum dan sesudah menerapkan rotasi 90°. Ini mendemonstrasikan bagaimana rotasi memengaruhi lebar dan tinggi serta cara menggunakannya. `get_page_rect()` dengan atau tanpa pertimbangan rotasi.
+
+1. Buka PDF sebagai [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Akses yang pertama [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Terapkan rotasi 90° menggunakan `page.rotate = ap.Rotation.ON90` (lihat [`Rotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rotation/) enum).
+1. Ambil persegi panjang halaman tanpa rotasi menggunakan `get_page_rect(False)` dan cetak lebar serta tinggi-nya.
+1. Ambil persegi halaman dengan mempertimbangkan rotasi menggunakan `get_page_rect(True)` dan cetak lebar serta tinggi-nya.
+1. Bandingkan bagaimana dimensi berubah karena rotasi.
+
+```python
+import aspose.pdf as ap
+
+def get_page_size_rotation(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+    # Get particular page
+    page = document.pages[1]
+    page.rotate = ap.Rotation.ON90
+    rectangle = page.get_page_rect(False)
+    print(f"{rectangle.width} : {rectangle.height}")
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
+
+## Topik Halaman Terkait
+
+- [Bekerja dengan halaman PDF di Python](/pdf/id/python-net/working-with-pages/)
+- [Potong halaman PDF dengan Python](/pdf/id/python-net/crop-pages/)
+- [Dapatkan dan atur properti halaman PDF dengan Python](/pdf/id/python-net/get-and-set-page-properties/)
+- [Putar halaman PDF dengan Python](/pdf/id/python-net/rotate-pages/)

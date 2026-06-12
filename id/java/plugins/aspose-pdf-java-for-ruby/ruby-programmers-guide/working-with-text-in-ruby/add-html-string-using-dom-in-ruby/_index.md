@@ -41,7 +41,7 @@ margin.setTop(200)
 
 title.setMargin(margin)
 
-# Tambahkan Fragmen HTML ke koleksi paragraf halaman
+# Tambahkan Fragmen HTML ke koleksi `paragraphs` halaman
 
 page.getParagraphs().add(title)
 

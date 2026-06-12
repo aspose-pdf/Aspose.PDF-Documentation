@@ -13,29 +13,29 @@ sitemap:
 
 ## Tambahkan objek Persegi Panjang
 
-Aspose.PDF untuk Java mendukung fitur untuk menambahkan objek grafik (misalnya grafik, garis, persegi panjang dll.) ke dokumen PDF. Anda juga mendapatkan keuntungan untuk menambahkan objek [Persegi Panjang](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) di mana Anda juga menawarkan fitur untuk mengisi objek persegi panjang dengan warna tertentu, mengontrol Z-Order, menambahkan isian warna gradasi dan lain-lain.
+Aspose.PDF untuk Java mendukung fitur untuk menambahkan objek grafik (misalnya grafik, garis, persegi panjang dll.) ke dokumen PDF. Anda juga mendapatkan keuntungan untuk menambahkan objek [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) di mana Anda juga menawarkan fitur untuk mengisi objek persegi panjang dengan warna tertentu, mengontrol Z-Order, menambahkan isian warna gradasi dan lain-lain.
 
 Pertama, mari kita lihat kemungkinan membuat objek Persegi Panjang.
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) PDF baru
+1. Buat [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) PDF baru
 
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) ke koleksi halaman file PDF
+1. Tambahkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) ke koleksi halaman file PDF
 
-1. Tambahkan [Fragmen Teks](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) ke koleksi paragraf dari instance halaman
+1. Tambahkan [Fragmen Teks](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) ke koleksi `paragraphs` dari instance halaman
 
 1. Buat instansi [Grafik](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph)
 
-1. Atur batas untuk [objek Gambar](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame)
+1. Atur batas untuk [objek Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame)
 
 1. Buat instansi Persegi Panjang
 
-1. Tambahkan objek [Persegi Panjang](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) ke koleksi bentuk dari objek Grafik
+1. Tambahkan objek [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Rectangle) ke koleksi bentuk dari objek Grafik
 
-1. Tambahkan objek grafik ke koleksi paragraf dari instance halaman
+1. Tambahkan objek grafik ke koleksi `paragraphs` dari instance halaman
 
-1. Tambahkan [Fragmen Teks](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) ke koleksi paragraf dari instance halaman
+1. Tambahkan [Fragmen Teks](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) ke koleksi `paragraphs` dari instance halaman
 
 1. Dan simpan file PDF Anda
 
@@ -63,7 +63,7 @@ public class WorkingWithGraphs {
         // Tambahkan halaman ke koleksi halaman dari file PDF
         Page page = pdfDocument.getPages().add();
 
-        // Tambahkan fragmen teks ke koleksi paragraf dari instance halaman
+        // Tambahkan fragmen teks ke koleksi `paragraphs` dari instance halaman
         page.getParagraphs().add(new TextFragment("Teks sebelum objek Grafik"));
 
         // Buat instansi Grafik
@@ -79,10 +79,10 @@ public class WorkingWithGraphs {
         // Tambahkan objek persegi panjang ke koleksi bentuk dari objek Grafik
         graph.getShapes().add(rect);
 
-        // Tambahkan objek grafik ke koleksi paragraf dari instance halaman
+        // Tambahkan objek grafik ke koleksi `paragraphs` dari instance halaman
         page.getParagraphs().add(graph);
 
-        // Tambahkan fragmen teks ke koleksi paragraf dari instance halaman
+        // Tambahkan fragmen teks ke koleksi `paragraphs` dari instance halaman
         page.getParagraphs().add(new TextFragment("Teks setelah objek Grafik"));
 
         // Simpan file PDF
@@ -109,7 +109,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://ref
         // Buat instance Graph
         Graph graph = new Graph(100, 400);
 
-        // Tambahkan objek grafik ke koleksi paragraf dari instance halaman
+        // Tambahkan objek grafik ke koleksi `paragraphs` dari instance halaman
         page.getParagraphs().add(graph);
 
         // Buat instance Rectangle
@@ -198,7 +198,7 @@ Dalam cuplikan kode kami, kami menggunakan metode [fromArgb](https://reference.a
         rect2.getGraphInfo().setFillColor(color2);
         graph.getShapes().add(rect2);
 
-        // Tambahkan instance graph ke koleksi paragraf dari objek halaman
+        // Tambahkan instance graph ke koleksi `paragraphs` dari objek halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF

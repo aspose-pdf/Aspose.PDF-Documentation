@@ -557,7 +557,7 @@ private static void InsertPageBreak()
 
 ## Merender Tabel di Halaman Baru
 
-Secara default, paragraf ditambahkan ke koleksi Paragraf objek Halaman. Namun, dimungkinkan untuk merender tabel di halaman baru alih-alih langsung setelah objek tingkat paragraf yang sebelumnya ditambahkan di halaman.
+Secara default, paragraf ditambahkan ke koleksi `paragraphs` objek Halaman. Namun, dimungkinkan untuk merender tabel di halaman baru alih-alih langsung setelah objek tingkat paragraf yang sebelumnya ditambahkan di halaman.
 
 ### Contoh: Cara Merender Tabel di Halaman Baru menggunakan C\#
 

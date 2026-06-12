@@ -1,38 +1,38 @@
 ---
-title: Membagi File PDF dengan Python
+title: Membagi File PDF dalam Python
 linktitle: Membagi file PDF
 type: docs
 weight: 60
 url: /id/python-net/split-pdf-document/
-description: Pelajari cara membagi file PDF di Python menjadi halaman individual, bagian yang sama, grup berukuran tetap, rentang halaman khusus, serta halaman ganjil atau genap.
-lastmod: "2026-04-15"
+description: Pelajari cara membagi file PDF di Python menjadi halaman individu, bagian yang sama, grup berukuran tetap, rentang halaman khusus, serta halaman ganjil atau genap.
+lastmod: "2026-06-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Bagi PDF menjadi halaman dan rentang halaman menggunakan Python
-Abstract: Artikel ini menunjukkan cara memisahkan file PDF dengan Aspose.PDF for Python via .NET. Ini mencakup pemisahan PDF menjadi halaman individual, dua bagian yang sama, grup halaman berukuran tetap, rentang halaman khusus, grup halaman bernama, nama file yang stabil, serta file halaman ganjil atau genap.
+Abstract: Artikel ini menunjukkan cara membagi file PDF dengan Aspose.PDF for Python via .NET. Artikel ini mencakup pemecahan PDF menjadi halaman individual, dua bagian yang sama, grup halaman berukuran tetap, rentang halaman kustom, grup halaman bernama, nama file yang stabil, serta file halaman ganjil atau genap.
 ---
 
-Halaman ini menunjukkan cara **memisahkan file PDF di Python** menggunakan Aspose.PDF for Python via .NET.
+Halaman ini menunjukkan cara **memecah file PDF di Python** menggunakan Aspose.PDF for Python via .NET.
 
-Gunakan contoh-contoh ini saat Anda perlu memecah PDF besar menjadi file satu halaman, bagian-bagian yang sama, grup berukuran tetap, rentang halaman khusus, atau set halaman ganjil dan genap untuk distribusi, peninjauan, atau pemrosesan lanjutan.
+Gunakan contoh-contoh ini ketika Anda perlu memecah PDF besar menjadi file satu halaman, bagian yang sama, kelompok berukuran tetap, rentang halaman khusus, atau set halaman ganjil dan genap untuk distribusi, peninjauan, atau pemrosesan lanjutan.
 
-## Contoh Membagi PDF Online
+## Contoh Memisah PDF Online
 
-[Pemecah Aspose.PDF](https://products.aspose.app/pdf/splitter) adalah aplikasi web daring yang memungkinkan Anda menguji fungsi pemisahan PDF.
+[Pemecah Aspose.PDF](https://products.aspose.app/pdf/splitter) adalah aplikasi web daring yang memungkinkan Anda menguji fungsionalitas pemisahan PDF.
 
-[![Aspose Pisah PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
+[![Aspose Membagi PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
 Untuk membagi halaman PDF menjadi file PDF satu halaman dalam Python, ikuti langkah-langkah berikut:
 
-1. Lakukan perulangan pada halaman dokumen PDF melalui [Dokumen](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek [Koleksi Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi
-1. Untuk setiap iterasi, buat objek Document baru dan tambahkan yang individual [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek ke dalam dokumen kosong
+1. Lakukan iterasi pada halaman dokumen PDF melalui [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek [Koleksi Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi
+1. Untuk setiap iterasi, buat objek Document baru dan tambahkan yang individual [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek ke dalam dokumen kosong
 1. Simpan PDF baru menggunakan [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) metode
 
-## Membagi PDF menjadi Beberapa File dalam Python
+## Membagi PDF menjadi Beberapa File di Python
 
-Potongan kode Python berikut menunjukkan cara memisahkan halaman PDF menjadi file PDF individu.
+Potongan kode Python berikut menunjukkan cara memecah halaman PDF menjadi file PDF terpisah.
 
 ```python
 import sys
@@ -48,7 +48,7 @@ def split_documents(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num}.pdf"))
 ```
 
-## Bagi PDF menjadi Dua Bagian yang Setara
+## Pisahkan PDF menjadi Dua Bagian yang Sama
 
 1. Muat dokumen PDF.
 1. Tentukan total jumlah halaman.
@@ -84,9 +84,9 @@ def split_documents_into_two_parts(infile, outdir):
         second_document.save(path.join(outdir, "Part_2.pdf"))
 ```
 
-## Membagi PDF menjadi Beberapa File Setiap N Halaman
+## Pisahkan PDF menjadi Beberapa File Setiap N Halaman
 
-Pisahkan dokumen PDF menjadi beberapa file kecil berdasarkan jumlah halaman tetap menggunakan Aspose.PDF for Python.
+Pisahkan dokumen PDF menjadi beberapa file yang lebih kecil berdasarkan jumlah halaman tetap menggunakan Aspose.PDF for Python.
 
 1. Muat dokumen PDF.
 1. Tentukan total jumlah halaman.
@@ -94,9 +94,9 @@ Pisahkan dokumen PDF menjadi beberapa file kecil berdasarkan jumlah halaman teta
 1. Iterasi melalui dokumen dalam potongan.
 1. Hitung rentang halaman untuk setiap bagian.
 1. Buat dokumen baru untuk setiap bagian.
-1. Salin halaman ke dalam dokumen baru.
-1. Simpan dokumen yang dipisah.
-1. Ulangi hingga semua halaman diproses.
+1. Salin halaman ke dokumen baru.
+1. Simpan dokumen yang terpisah.
+1. Ulangi sampai semua halaman diproses.
 
 ```python
 import sys
@@ -122,7 +122,7 @@ def split_documents_every_n_pages(infile, outdir, pages_per_part=3):
         part_index += 1
 ```
 
-## Membagi PDF berdasarkan Rentang Halaman Kustom
+## Pisahkan PDF berdasarkan Rentang Halaman Kustom
 
 Pisahkan dokumen PDF menjadi beberapa file berdasarkan rentang halaman yang ditentukan secara khusus menggunakan Aspose.PDF for Python.
 
@@ -134,7 +134,7 @@ Pisahkan dokumen PDF menjadi beberapa file berdasarkan rentang halaman yang dite
 1. Sesuaikan halaman akhir.
 1. Validasi rentang efektif.
 1. Buat dokumen baru untuk setiap rentang.
-1. Salin halaman ke dalam dokumen baru.
+1. Salin halaman ke dokumen baru.
 1. Simpan setiap dokumen yang dipisah.
 
 ```python
@@ -165,7 +165,7 @@ def split_documents_by_page_ranges(infile, outdir):
             )
 ```
 
-## Membagi PDF menjadi Halaman Pertama dan Halaman yang Tersisa
+## Pisahkan PDF menjadi Halaman Pertama dan Halaman Sisanya
 
 Pisahkan halaman pertama dari dokumen PDF dari sisa halaman menggunakan Aspose.PDF for Python.
 
@@ -208,7 +208,7 @@ def split_documents_first_page_and_rest(infile, outdir):
 
 ## Pisahkan PDF menjadi Halaman Terakhir dan Halaman Sebelumnya
 
-Ekstrak halaman terakhir dari dokumen PDF dan pisahkan dari halaman‑halaman yang tersisa menggunakan Aspose.PDF for Python.
+Ekstrak halaman terakhir dari dokumen PDF dan pisahkan dari halaman lainnya menggunakan Aspose.PDF for Python.
 
 1. Muat dokumen PDF.
 1. Tentukan total jumlah halaman.
@@ -244,9 +244,9 @@ def split_documents_last_page_and_rest(infile, outdir):
     document.save(path.join(outdir, "Previous_Pages.pdf"))
 ```
 
-## Pisahkan PDF menjadi Tiga Bagian
+## Bagi PDF menjadi Tiga Bagian
 
-Pisahkan dokumen PDF menjadi tiga bagian terpisah menggunakan Aspose.PDF untuk Python.
+Pisahkan dokumen PDF menjadi tiga bagian terpisah menggunakan Aspose.PDF for Python.
 
 1. Muat dokumen PDF.
 1. Tentukan total jumlah halaman.
@@ -289,7 +289,7 @@ def split_documents_into_three_parts(infile, outdir):
 
 ## Pemecah Halaman PDF Kustom
 
-Membagi dokumen PDF menjadi beberapa file berdasarkan kelompok halaman yang didefinisikan secara khusus menggunakan Aspose.PDF for Python.
+Membagi dokumen PDF menjadi beberapa file berdasarkan grup halaman yang didefinisikan secara khusus menggunakan Aspose.PDF for Python.
 
 ```python
 import sys
@@ -316,9 +316,9 @@ def split_documents_custom_page_groups(infile, outdir):
             group_document.save(path.join(outdir, f"Custom_Group_{group_index}.pdf"))
 ```
 
-## Pisahkan PDF menjadi Halaman Individual dengan Nama File Stabil
+## Pisahkan PDF menjadi Halaman Individu dengan Nama File Stabil
 
-Pisahkan dokumen PDF menjadi halaman-halaman terpisah dan simpan dengan nama file yang stabil menggunakan Aspose.PDF for Python.
+Pisahkan dokumen PDF menjadi halaman-halaman terpisah dan simpan dengan nama file yang stabil menggunakan Aspose.PDF untuk Python.
 
 ```python
 import sys
@@ -338,7 +338,7 @@ def split_documents_with_stable_filenames(infile, outdir):
 
 ## Pisahkan PDF menjadi Halaman Ganjil dan Genap
 
-Pisahkan dokumen PDF menjadi dua file terpisah yang masing-masing berisi halaman ganjil dan genap menggunakan Aspose.PDF for Python.
+Pisahkan dokumen PDF menjadi dua file terpisah yang masing-masing berisi halaman ganjil dan genap menggunakan Aspose.PDF untuk Python.
 
 ```python
 import sys
@@ -367,5 +367,6 @@ def split_documents_odd_even_pages(infile, outdir):
 
 - [Bekerja dengan dokumen PDF di Python](/pdf/id/python-net/working-with-documents/)
 - [Gabungkan file PDF di Python](/pdf/id/python-net/merge-pdf-documents/)
-- [Optimalkan file PDF di Python](/pdf/id/python-net/optimize-pdf/)
-- [Memanipulasi dokumen PDF dalam Python](/pdf/id/python-net/manipulate-pdf-document/)
+- [Optimalkan file PDF dalam Python](/pdf/id/python-net/optimize-pdf/)
+- [Manipulasi dokumen PDF dalam Python](/pdf/id/python-net/manipulate-pdf-document/)
+

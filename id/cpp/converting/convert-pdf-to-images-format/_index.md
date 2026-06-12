@@ -33,7 +33,7 @@ Aspose.PDF untuk C++ menyajikan aplikasi online gratis ["PDF to TIFF"](https://p
 
 Aspose.PDF untuk С++ menjelaskan cara mengonversi semua halaman dalam file PDF ke satu gambar TIFF:
 
-1. Buka [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) dengan MakeObject.
+1. Buka [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) dengan MakeObject.
 1. Buat objek Resolution.
 1. Buat objek [TIffSettings](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_settings/).
 1. Buat [perangkat Tiff](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.devices.tiff_device/) dengan atribut yang ditentukan.

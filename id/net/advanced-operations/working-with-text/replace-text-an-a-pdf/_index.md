@@ -289,7 +289,7 @@ private static void AutomaticallyReArrangePageContents()
 
 ## Merender Simbol yang Dapat Diganti selama pembuatan PDF
 
-Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat diganti dengan konten yang sesuai pada waktu berjalan. Simbol yang dapat diganti saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p,` `\n`, `\r`. `$p` digunakan untuk menangani penomoran halaman pada waktu berjalan. `$p` diganti dengan nomor halaman tempat kelas Paragraph saat ini berada. `$P` diganti dengan total jumlah halaman dalam dokumen. Saat menambahkan `TextFragment` ke koleksi paragraf dokumen PDF, tidak mendukung pemisahan baris di dalam teks. Namun untuk menambahkan teks dengan pemisahan baris, silakan gunakan `TextFragment` dengan `TextParagraph`:
+Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat diganti dengan konten yang sesuai pada waktu berjalan. Simbol yang dapat diganti saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p,` `\n`, `\r`. `$p` digunakan untuk menangani penomoran halaman pada waktu berjalan. `$p` diganti dengan nomor halaman tempat kelas Paragraph saat ini berada. `$P` diganti dengan total jumlah halaman dalam dokumen. Saat menambahkan `TextFragment` ke koleksi `paragraphs` dokumen PDF, tidak mendukung pemisahan baris di dalam teks. Namun untuk menambahkan teks dengan pemisahan baris, silakan gunakan `TextFragment` dengan `TextParagraph`:
 
 - Gunakan "\r\n" atau Environment.NewLine di TextFragment alih-alih "\n" tunggal.
 - Buat objek TextParagraph. Ini akan menambahkan teks dengan pemisahan baris.

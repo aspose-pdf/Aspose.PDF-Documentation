@@ -290,7 +290,7 @@ void SetPDFexpiryDate() {
     // Tambahkan halaman ke koleksi halaman file PDF
     document->get_Pages()->Add();
 
-    // Tambahkan potongan teks ke koleksi paragraf dari objek halaman
+    // Tambahkan potongan teks ke koleksi `paragraphs` dari objek halaman
     document->get_Pages()->idx_get(1)->get_Paragraphs()->Add(new TextFragment(u"Hello World..."));
 
     String javascriptCode(u"var year=2017;");

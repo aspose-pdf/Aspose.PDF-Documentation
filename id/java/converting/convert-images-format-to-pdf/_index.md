@@ -246,7 +246,7 @@ public final class ConvertEMFtoPDF {
         page.setCropBox(new Rectangle(0, 0, 400, 400));
         // Buat objek gambar
         Image image1 = new Image();
-        // Tambahkan gambar ke dalam koleksi paragraf dari bagian
+        // Tambahkan gambar ke dalam koleksi `paragraphs` dari bagian
         page.getParagraphs().add(image1);
         // Atur stream file gambar
         image1.setImageStream(fs);
@@ -262,7 +262,7 @@ public final class ConvertEMFtoPDF {
 
 ### Tambahkan gambar dari BufferedImage
 
-Aspose.PDF untuk Java juga menawarkan fitur untuk memuat gambar dari instance Stream di mana gambar dapat dimuat ke objek BufferedImage dan dapat ditempatkan di dalam koleksi paragraf dari file Pdf.
+Aspose.PDF untuk Java juga menawarkan fitur untuk memuat gambar dari instance Stream di mana gambar dapat dimuat ke objek BufferedImage dan dapat ditempatkan di dalam koleksi `paragraphs` dari file Pdf.
 
 ```java
 public static void convertEMFtoPDF_02() throws IOException {    
@@ -278,7 +278,7 @@ public static void convertEMFtoPDF_02() throws IOException {
     ImageIO.write(bufferedImage, "emf", baos);
     baos.flush();
     ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-    // tambahkan gambar ke koleksi paragraf dari halaman pertama
+    // tambahkan gambar ke koleksi `paragraphs` dari halaman pertama
     page.getParagraphs().add(image1);
     // setel aliran gambar sebagai OutputStream yang menampung BufferedImage
     image1.setImageStream(bais);

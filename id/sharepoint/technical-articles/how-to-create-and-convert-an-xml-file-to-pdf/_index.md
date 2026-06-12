@@ -30,7 +30,7 @@ Langkah demi langkah, artikel ini memandu Anda melalui proses pembuatan file XML
 Pertama buat file XML berdasarkan Aspose.PDF untuk .NET Document Object Model.
 
 Menurut Aspose.PDF untuk .NET DOM, dokumen PDF berisi kumpulan objek Section, dan Section berisi satu atau lebih elemen Paragraph.
- Teks adalah objek tingkat Paragraf dan dapat berisi satu atau lebih segmen. Di bawah ini, sebuah string teks contoh ditambahkan ke objek Segmen dan ditambahkan ke objek Teks. Akhirnya, elemen Teks ditambahkan ke koleksi paragraf objek Section.
+ Teks adalah objek tingkat Paragraf dan dapat berisi satu atau lebih segmen. Di bawah ini, sebuah string teks contoh ditambahkan ke objek Segmen dan ditambahkan ke objek Teks. Akhirnya, elemen Teks ditambahkan ke koleksi `paragraphs` objek Section.
 
 **XML**
 

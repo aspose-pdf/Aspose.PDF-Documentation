@@ -16,7 +16,7 @@ sitemap:
 Dengan menambahkan tautan ke aplikasi ke dalam dokumen, dimungkinkan untuk menautkan ke aplikasi dari dokumen. Ini berguna ketika Anda ingin pembaca mengambil tindakan tertentu pada titik tertentu dalam tutorial, misalnya, atau untuk membuat dokumen yang kaya fitur. Untuk membuat tautan aplikasi:
 
 1. [Buat Objek Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
-1. Dapatkan [Halaman](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) yang ingin Anda tambahkan tautan.
+1. Dapatkan [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) yang ingin Anda tambahkan tautan.
 1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/) menggunakan objek Halaman dan [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.rectangle).
 1. Setel atribut tautan menggunakan objek [LinkAnnotation](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.link_annotation/).
 1. Juga, setel ke properti Action dari objek [LaunchAction](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.launch_action/).

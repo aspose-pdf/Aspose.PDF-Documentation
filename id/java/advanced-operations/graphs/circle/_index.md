@@ -18,14 +18,14 @@ Seperti grafik batang, grafik lingkaran dapat digunakan untuk menampilkan data d
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat instance [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)
+1. Buat instance [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)
 
-2. Buat [objek Gambar](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame) dengan dimensi tertentu
+2. Buat [objek Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/package-frame) dengan dimensi tertentu
 
 
 1. Setel [Perbatasan](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) untuk objek Gambar
 
-1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) ke koleksi paragraf halaman
+1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) ke koleksi `paragraphs` halaman
 
 1. Simpan file PDF kita
 
@@ -47,7 +47,7 @@ public static void ExampleCircle() {
         circle.getGraphInfo().setColor(Color.getGreenYellow());
         graph.getShapes().add(circle);
 
-        // Tambahkan objek Grafik ke koleksi paragraf halaman
+        // Tambahkan objek Grafik ke koleksi `paragraphs` halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF
@@ -84,7 +84,7 @@ Contoh ini menunjukkan cara menambahkan objek Lingkaran yang diisi dengan warna.
 
         graph.getShapes().add(circle);
 
-        // Tambahkan objek Graph ke koleksi paragraf halaman
+        // Tambahkan objek Graph ke koleksi `paragraphs` halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF

@@ -1,33 +1,35 @@
 ---
-title: Tinjauan
-linktitle: Tinjauan
+title: Gambaran Umum
+linktitle: Gambaran Umum
 type: docs
 weight: 20
 url: /id/python-net/overview/
-lastmod: "2022-12-20"
-description: Tinjauan fitur utama dan format yang didukung oleh Aspose.PDF untuk Python via .NET, panduan instalasi dan lisensi perpustakaan.
+lastmod: "2026-06-12"
+description: Gambaran umum fitur utama dan format yang didukung oleh Aspose.PDF for Python via .NET, manual instalasi dan lisensi pustaka.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Gambaran umum fitur utama Aspose.PDF for Python
+Abstract: Aspose.PDF for Python via .NET adalah API pemrosesan PDF komprehensif yang dirancang untuk pengembang guna menangani dokumen PDF tanpa bergantung pada Microsoft Office atau Adobe Acrobat Automation. Pustaka ini mendukung berbagai fungsionalitas, termasuk kepatuhan terhadap standar dan spesifikasi PDF yang telah ditetapkan, kemampuan untuk membaca dan mengekspor PDF dalam berbagai format gambar seperti BMP, GIF, JPEG, dan PNG, serta kemampuan untuk mengatur informasi dasar dokumen seperti penulis dan pembuat. Selain itu, pustaka memungkinkan konfigurasi properti halaman PDF, seperti lebar, tinggi, cropbox, dan bleedbox, serta fitur seperti penomoran halaman, tingkat bookmark, dan ukuran halaman. Pengguna dapat memanipulasi teks, paragraf, heading, tautan hiper, grafik, dan lampiran dalam PDF. Selain itu, Aspose.PDF for Python menyediakan kemampuan konversi yang efisien dari format seperti EPUB, Markdown, Text, XPS, PostScript, XML, dan LaTex ke PDF, dan sebaliknya, memastikan kinerja tinggi dan kualitas.
 ---
 
-_Halaman ini adalah ikhtisar fitur Aspose.PDF untuk Python._
+_Halaman ini merupakan gambaran umum  Aspose.PDF for Python fitur._
 
-**Aspose.PDF untuk Python via .NET**, API Pemrosesan PDF yang memungkinkan pengembang untuk bekerja dengan dokumen PDF tanpa memerlukan Microsoft Office® atau Adobe Acrobat Automation. Lihat Halaman Landing dari [Aspose.PDF untuk Python](https://products.aspose.com/pdf/python-net/) untuk deskripsi yang lebih rinci tentang fitur dan kemungkinan perpustakaan.
+**Aspose.PDF for Python via .NET**, API Pemrosesan PDF yang memungkinkan pengembang untuk bekerja dengan dokumen PDF tanpa memerlukan Microsoft Office® atau Otomatisasi Adobe Acrobat. Lihat Halaman Landing [Aspose.PDF for Python](https://products.aspose.com/pdf/python-net/) untuk deskripsi yang lebih rinci tentang fitur dan kemungkinan pustaka.
 
-Aspose.PDF untuk Python mendukung berbagai fungsi seperti:
+Aspose.PDF for Python mendukung berbagai fungsi seperti:
 
-- Mendukung sebagian besar standar PDF yang sudah mapan dan spesifikasi PDF.
+- Mendukung sebagian besar standar PDF yang telah ada dan spesifikasi PDF.
 - Kemampuan untuk membaca & mengekspor PDF dalam berbagai format gambar termasuk BMP, GIF, JPEG & PNG.
-- Mengatur informasi dasar (misalnya.
- author, creator) dari dokumen PDF.
-- Konfigurasi properti Halaman PDF (misalnya lebar, tinggi, cropbox, bleedbox dll.).
-- Atur penomoran halaman, tingkat bookmark, ukuran halaman dll.
-- Kemampuan untuk bekerja dengan teks, paragraf, judul, hyperlink, grafik, lampiran dll.
+- Atur informasi dasar (mis. penulis, pembuat) dari dokumen PDF.
+- Konfigurasikan properti Halaman PDF (mis. lebar, tinggi, cropbox, bleedbox, dll.).
+- Atur penomoran halaman, tingkat bookmark, ukuran halaman, dll.
+- Kemampuan untuk bekerja dengan teks, paragraf, judul, tautan hiper, grafik, lampiran, dll.
 
-Selain itu, Aspose.PDF untuk Python via .NET dapat diterapkan untuk dengan mudah mengonversi EPUB, Markdown, Teks, XPS, PostScript, XML, LaTex ke PDF dan mengonversi PDF ke berbagai format dokumen dengan kinerja yang sangat baik dan kualitas yang baik.
+Selain itu, Aspose.PDF for Python via .NET dapat diterapkan untuk dengan mudah mengonversi EPUB, Markdown, Teks, XPS, PostScript, XML, LaTex ke PDF dan mengonversi PDF ke berbagai format dokumen dengan kinerja yang luar biasa dan kualitas yang baik.
 
-Coba [Aplikasi Online Gratis](https://products.aspose.app/pdf/applications) kami yang mendemonstrasikan beberapa fungsi Aspose.PDF yang paling populer.
+Coba [Aplikasi Online](https://products.aspose.app/pdf/applications) yang menunjukkan beberapa fungsi Aspose.PDF paling populer.
 
 Pelajari lebih lanjut tentang:
 
