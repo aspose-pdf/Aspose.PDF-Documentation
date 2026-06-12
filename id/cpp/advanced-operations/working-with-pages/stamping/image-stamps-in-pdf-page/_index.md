@@ -111,7 +111,7 @@ void ImageStampAsBackgroundInFloatingBox() {
     // Mengatur penyelarasan horizontal untuk FloatingBox
     aBox->set_HorizontalAlignment(HorizontalAlignment::Center);
     
-    // Menambahkan fragmen teks ke koleksi paragraf FloatingBox    
+    // Menambahkan fragmen teks ke koleksi `paragraphs` FloatingBox    
     aBox->get_Paragraphs()->Add(MakeObject<TextFragment>(u"main text"));
 
     // Mengatur batas untuk FloatingBox
@@ -125,7 +125,7 @@ void ImageStampAsBackgroundInFloatingBox() {
     // Mengatur warna latar belakang untuk FloatingBox
     aBox->set_BackgroundColor(Color::get_Yellow());
 
-    // Menambahkan FloatingBox ke koleksi paragraf dari objek halaman
+    // Menambahkan FloatingBox ke koleksi `paragraphs` dari objek halaman
     page->get_Paragraphs()->Add(aBox);
     // Menyimpan dokumen PDF
     document->Save(_dataDir + outputFileName);

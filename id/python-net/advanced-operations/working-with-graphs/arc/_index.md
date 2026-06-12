@@ -21,11 +21,11 @@ Aspose.PDF for Python via .NET memungkinkan Anda menambahkan [Arc](https://refer
 Ikuti langkah-langkah di bawah ini:
 
 1. Buat [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instansi.
-1. Buat [Objek grafik](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) dengan dimensi tertentu.
-1. Atur [batas](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) untuk objek Graph.
-1. Buat objek busur yang sesuai.
-1. Tambahkan objek ini ke koleksi Shapes dalam objek graph.
-1. Tambah [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) objek ke koleksi paragraf halaman.
+1. Buat [objek Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) dengan dimensi tertentu.
+1. Atur [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) untuk objek Graph.
+1. Buat objek `Arc` yang sesuai.
+1. Tambahkan objek ini ke koleksi `Shapes` dalam objek graph.
+1. Tambah [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) objek ke koleksi `paragraphs` halaman.
 1. Simpan file PDF kami.
 
 Potongan kode berikut menunjukkan cara menambahkan sebuah [Arc](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/arc/) objek.

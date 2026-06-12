@@ -148,7 +148,7 @@ def rotate_text_inside_pdf_2(outfile):
 ## Putar Teks Menggunakan Paragraf Halaman di PDF
 
 Bagian ini menunjukkan metode sederhana untuk memutar teks dalam PDF menggunakan Aspose.PDF for Python via .NET.
-Berbeda dengan pendekatan tingkat rendah dengan `TextBuilder` atau `TextParagraph`, metode ini menambahkan fragmen teks berputar langsung ke koleksi paragraf halaman (`page.paragraphs`). Ini ideal ketika Anda membutuhkan rotasi teks dasar tetapi tidak memerlukan penempatan yang tepat atau struktur paragraf.
+Berbeda dengan pendekatan tingkat rendah dengan `TextBuilder` atau `TextParagraph`, metode ini menambahkan fragmen teks berputar langsung ke koleksi `paragraphs` halaman (`page.paragraphs`). Ini ideal ketika Anda membutuhkan rotasi teks dasar tetapi tidak memerlukan penempatan yang tepat atau struktur paragraf.
 
 Menghasilkan file bernama `simple_rotated_text.pdf` mengandung:
 

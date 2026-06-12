@@ -28,11 +28,11 @@ Apakah Anda membutuhkan label statis sederhana, konten yang diformat secara kaya
 Aspose.PDF for Python via .NET menunjukkan cara menambahkan fragmen teks sederhana ke posisi tertentu pada halaman. Anda akan belajar cara membuat dokumen PDF baru, menambahkan halaman, menyisipkan teks pada koordinat yang diberikan, dan menyimpan file hasilnya.
 
 1. Buat yang baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek.
-1. Gunakan `document.pages.add()` untuk membuat yang kosong baru [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Gunakan `document.pages.add()` untuk membuat yang kosong baru [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
 1. Buat sebuah [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) dengan konten teks.
 1. Atur posisi teks menggunakan [`Position`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/position/) kelas. Jika Anda menentukan `Position`, teks akan berada di dokumen Anda dari kiri ke kanan dan bergeser ke bawah.
 1. Sesuaikan tampilan teks. Anda dapat mengatur ukuran font, warna, gaya font, dan lainnya melalui [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/).
-1. Tambahkan `TextFragment` ke koleksi paragraf halaman dengan `page.paragraphs.add(text_fragment)`.
+1. Tambahkan `TextFragment` ke koleksi `paragraphs` halaman dengan `page.paragraphs.add(text_fragment)`.
 1. Simpan dokumen.
 
 Potongan kode berikut menunjukkan cara menambahkan teks dalam file PDF yang sudah ada:
@@ -69,7 +69,7 @@ Untuk informasi lebih lanjut tentang bekerja dengan teks, lihat [Pemformatan Tek
 
 Aspose.PDF for Python via .NET dapat menambahkan paragraf teks menggunakan [`TextBuilder`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textbuilder/) dan [`TextParagraph`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textparagraph/) dengan opsi pembungkusan.
 
-1. Buat yang baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) dan kosong [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) menggunakan `document.pages.add()`.
+1. Buat yang baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) dan kosong [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) menggunakan `document.pages.add()`.
 1. Baca teks dari file atau gunakan teks default.
 1. Buat sebuah [`TextBuilder`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textbuilder/) untuk menambahkan konten tingkat paragraf dengan kontrol tata letak dan pembungkusan.
 1. Buat sebuah [`TextParagraph`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textparagraph/) dan atur mode bungkus (contoh menggunakan `DISCRETIONARY_HYPHENATION`).
@@ -474,9 +474,9 @@ Ini membuat persegi panjang berwarna dengan opasitas parsial dan menimpa TextFra
 1. Gunakan 'ap.drawing.Graph' untuk membuat kanvas yang memungkinkan Anda menggambar bentuk.
 1. Tambahkan persegi panjang dengan isi semi-transparan.
 1. Cegah pergeseran posisi kanvas.
-1. Tambahkan kanvas ke halaman. Sisipkan bentuk grafis ke dalam koleksi paragraf halaman.
+1. Tambahkan kanvas ke halaman. Sisipkan bentuk grafis ke dalam koleksi `paragraphs` halaman.
 1. Buat fragmen teks transparan.
-1. Masukkan fragmen teks ke dalam koleksi paragraf halaman.
+1. Masukkan fragmen teks ke dalam koleksi `paragraphs` halaman.
 1. Simpan dokumen PDF.
 
 ```python
@@ -755,7 +755,7 @@ Kita dapat mendefinisikan fragmen HTML dan mengatur gaya teks secara langsung me
 1. Menambahkan halaman kosong ke dokumen di mana konten HTML akan ditempatkan.
 1. Siapkan Konten HTML. String HTML berisi judul h1, paragraf berwarna hijau dengan teks tebal, miring, dan bergaris bawah, serta tautan ke sebuah situs web dengan ukuran font yang diperbesar.
 1. Buat Fragmen HTML. Bungkus string HTML dalam objek HtmlFragment.
-1. Sisipkan HTML ke Halaman. Menambahkan fragmen HTML ke koleksi paragraf halaman, merender HTML sebagai konten PDF asli.
+1. Sisipkan HTML ke Halaman. Menambahkan fragmen HTML ke koleksi `paragraphs` halaman, merender HTML sebagai konten PDF asli.
 1. Simpan Dokumen.
 
 ```python
@@ -789,7 +789,7 @@ Dalam kasus ini, kita dapat mengubah gaya pelanggan dengan menggunakan TextState
 1. Siapkan Konten HTML. String HTML berisi heading h1 dengan font Verdana, paragraf berwarna hijau dengan teks tebal, miring, dan bergaris bawah, serta hyperlink ke situs web dengan ukuran font yang lebih besar.
 1. Buat Fragmen HTML. Bungkus string HTML dalam objek HtmlFragment.
 1. Timpa format teks. Buat objek TextState dan atur Font, Font Size, dan Text Color.
-1. Tambahkan fragmen HTML ke koleksi paragraf halaman.
+1. Tambahkan fragmen HTML ke koleksi `paragraphs` halaman.
 1. Simpan Dokumen.
 
 ```python

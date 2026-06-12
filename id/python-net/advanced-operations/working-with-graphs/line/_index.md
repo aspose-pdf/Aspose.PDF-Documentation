@@ -22,7 +22,7 @@ Ikuti langkah-langkah di bawah ini:
 
 1. Buat [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instansi.
 1. Buat Objek Grafik
-1. Tambah [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) objek ke koleksi paragraf halaman.
+1. Tambah [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) objek ke koleksi `paragraphs` halaman.
 1. Buat dan Konfigurasikan Garis
 1. Tambahkan [Line](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/line/) ke Grafik
 1. Simpan file PDF kami.

@@ -187,7 +187,7 @@ private static void ConvertCGMtoPDF()
 <a name="csharp-dicom-to-pdf" id="csharp-dicom-to-pdf"><strong>Mengonversi DICOM ke PDF</strong></a>
 
 1. Buat objek dari kelas Image.
-2. Tambahkan gambar ke koleksi Paragraf halaman.
+2. Tambahkan gambar ke koleksi `paragraphs` halaman.
 3. Tentukan properti [FileType](https://reference.aspose.com/pdf/id/net/aspose.pdf/image/properties/filetype).
 4. Tentukan jalur atau sumber file.
     - Jika gambar berada di lokasi di hard drive, tentukan lokasi jalur menggunakan properti Image.File.

@@ -228,7 +228,7 @@ def style_table(outfile):
 Aspose.PDF for Python via .NET memungkinkan penataan baris tabel dalam dokumen Tagged PDF. Untuk menata baris tabel, Anda dapat menggunakan properti dari [TableTRElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tabletrelement/) class. Berikut adalah daftar properti yang dapat Anda gunakan untuk menata baris tabel:
 
 - [warna_latar](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tabletrelement/#properties).
-- [batas](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tabletrelement/#properties).
+- [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tabletrelement/#properties).
 - [bawaan_sel_batas](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tabletrelement/#properties).
 - [tinggi_baris_min](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tabletrelement/#properties).
 - [tinggi_baris_tetap](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tabletrelement/#properties).
@@ -309,7 +309,7 @@ def style_table_row(outfile):
 Aspose.PDF for Python via .NET memungkinkan penataan sel tabel dalam dokumen Tagged PDF. Untuk menata sel tabel, Anda dapat menggunakan properti dari [Elemen Sel Tabel](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tablecellelement/) kelas. Berikut adalah daftar properti yang dapat Anda gunakan untuk menata sel tabel:
 
 - [warna_latar](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tablecellelement/#properties).
-- [batas](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tablecellelement/#properties).
+- [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tablecellelement/#properties).
 - [tidak_ada_batas](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tablecellelement/#properties).
 - [margin](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tablecellelement/#properties).
 - [penyelarasan](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tablecellelement/#properties).

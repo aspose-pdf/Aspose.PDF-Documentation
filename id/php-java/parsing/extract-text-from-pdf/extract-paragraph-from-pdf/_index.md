@@ -15,7 +15,7 @@ sitemap:
 
 Kita dapat mengambil teks dari dokumen PDF dengan mencari teks tertentu (menggunakan "teks biasa" atau "ekspresi reguler") dari satu halaman atau seluruh dokumen, atau kita dapat mengambil teks lengkap dari satu halaman, rentang halaman, atau seluruh dokumen. Namun, dalam beberapa kasus, Anda memerlukan untuk mengekstrak paragraf dari dokumen PDF atau teks dalam bentuk Paragraf. Kami telah mengimplementasikan fungsionalitas untuk mencari bagian dan paragraf dalam teks halaman dokumen PDF. Kami telah memperkenalkan Kelas ParagraphAbsorber (seperti TextFragmentAbsorber dan TextAbsorber), yang dapat digunakan untuk mengekstrak paragraf dari dokumen PDF.
 
-### Mengiterasi koleksi paragraf dan mendapatkan teksnya
+### Mengiterasi koleksi `paragraphs` dan mendapatkan teksnya
 
 ```php
 

@@ -13,29 +13,29 @@ sitemap:
 
 ## Tambahkan objek Persegi Panjang
 
-Aspose.PDF untuk C++ mendukung fitur untuk menambahkan objek grafis (misalnya grafik, garis, persegi panjang dll.) ke dokumen PDF. Anda juga mendapatkan keleluasaan untuk menambahkan objek [Persegi Panjang](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) di mana Anda juga menawarkan fitur untuk mengisi objek persegi panjang dengan warna tertentu, mengontrol Z-Order, menambahkan isi warna gradasi dan lain-lain.
+Aspose.PDF untuk C++ mendukung fitur untuk menambahkan objek grafis (misalnya grafik, garis, persegi panjang dll.) ke dokumen PDF. Anda juga mendapatkan keleluasaan untuk menambahkan objek [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) di mana Anda juga menawarkan fitur untuk mengisi objek persegi panjang dengan warna tertentu, mengontrol Z-Order, menambahkan isi warna gradasi dan lain-lain.
 
 Pertama, mari kita lihat kemungkinan membuat objek Persegi Panjang.
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) PDF baru
+1. Buat [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) PDF baru
 
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page/) ke koleksi halaman file PDF
+1. Tambahkan [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page/) ke koleksi halaman file PDF
 
-1. Tambahkan [Fragmen Teks](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) ke koleksi paragraf dari instance halaman
+1. Tambahkan [Fragmen Teks](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) ke koleksi `paragraphs` dari instance halaman
 
 1. Buat instance [Grafik](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph/)
 
-1. Atur batas untuk [Objek Gambar](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing)
+1. Atur batas untuk [objek Graph](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing)
 
 1. Buat instance Persegi Panjang
 
-1. Tambahkan objek [Persegi Panjang](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) ke koleksi bentuk dari objek Grafik
+1. Tambahkan objek [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) ke koleksi bentuk dari objek Grafik
 
-1. Tambahkan objek grafik ke koleksi paragraf dari instance halaman
+1. Tambahkan objek grafik ke koleksi `paragraphs` dari instance halaman
 
-1. Tambahkan [Fragmen Teks](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) ke koleksi paragraf dari instance halaman
+1. Tambahkan [Fragmen Teks](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) ke koleksi `paragraphs` dari instance halaman
 
 1. Dan simpan file PDF Anda
 
@@ -62,7 +62,7 @@ Ikuti langkah-langkah di bawah ini:
             graph.Shapes.Add(rect);
             // Atur Z-Index untuk objek persegi panjang
             graph.ZIndex = zindex;
-            // Tambahkan grafik ke koleksi paragraf dari objek halaman
+            // Tambahkan grafik ke koleksi `paragraphs` dari objek halaman
             page.Paragraphs.Add(graph);
         }
 ```
@@ -87,7 +87,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://ref
             // Membuat instance Grafik
             var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
 
-            // Menambahkan objek grafik ke koleksi paragraf dari instance halaman
+            // Menambahkan objek grafik ke koleksi `paragraphs` dari instance halaman
             page.Paragraphs.Add(graph);
 
             // Membuat instance Persegi Panjang
@@ -124,7 +124,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://ref
             var page = doc.Pages.Add();
             // Buat instance Grafis
             var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-            // Tambahkan objek grafik ke koleksi paragraf dari instance halaman
+            // Tambahkan objek grafik ke koleksi `paragraphs` dari instance halaman
             page.Paragraphs.Add(graph);
             // Buat instance Persegi Panjang
             var rect = new Rectangle(0, 0, 300, 300);
@@ -166,7 +166,7 @@ Alih-alih membuat warna transparan, setiap piksel menyimpan informasi tentang se
             var page = doc.Pages.Add();
             // Buat instance Grafik
             var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
-            // Tambahkan objek grafik ke koleksi paragraf dari halaman
+            // Tambahkan objek grafik ke koleksi `paragraphs` dari halaman
             page.Paragraphs.Add(graph);
             // Buat instance Persegi Panjang
             var rect = new Rectangle(100, 100, 200, 120);
@@ -181,7 +181,7 @@ Alih-alih membuat warna transparan, setiap piksel menyimpan informasi tentang se
             rect1.GraphInfo.FillColor = Color.FromArgb(160, 120, 0, 120);
             graph.Shapes.Add(rect1);
 
-            // Tambahkan instance grafik ke koleksi paragraf dari objek halaman
+            // Tambahkan instance grafik ke koleksi `paragraphs` dari objek halaman
             page.Paragraphs.Add(graph);
 
             // Simpan file PDF

@@ -216,7 +216,7 @@ void AddTable_MergingPadding() {
 
     // Instansiasi objek tabel
     auto tab1 = MakeObject<Table>();
-    // Tambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+    // Tambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
     page->get_Paragraphs()->Add(tab1);
     // Atur lebar kolom tabel
     tab1->set_ColumnWidths (u"50 50 50");
@@ -299,7 +299,7 @@ void AddTable_AutoFitToWindow() {
 
     // Instansiasi objek tabel
     auto tab1 = MakeObject<Aspose::Pdf::Table>();
-    // Tambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+    // Tambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
     sec1->get_Paragraphs()->Add(tab1);
 
     // Atur dengan lebar kolom tabel
@@ -397,15 +397,15 @@ void InsertSVGObject()
     auto row = table->get_Rows()->Add();
     // Membuat objek sel dan menambahkannya ke instance baris
     auto cell = row->get_Cells()->Add();
-    // Menambahkan fragmen teks ke koleksi paragraf dari objek sel
+    // Menambahkan fragmen teks ke koleksi `paragraphs` dari objek sel
     cell->get_Paragraphs()->Add(MakeObject<Aspose::Pdf::Text::TextFragment>(u"First cell"));
     // Menambahkan sel lain ke objek baris
     cell = row->get_Cells()->Add();
-    // Menambahkan gambar SVG ke koleksi paragraf dari instance sel yang baru ditambahkan
+    // Menambahkan gambar SVG ke koleksi `paragraphs` dari instance sel yang baru ditambahkan
     cell->get_Paragraphs()->Add(img);
     // Membuat objek halaman dan menambahkannya ke koleksi halaman dari instance dokumen
     auto page = document->get_Pages()->Add();
-    // Menambahkan tabel ke koleksi paragraf dari objek halaman
+    // Menambahkan tabel ke koleksi `paragraphs` dari objek halaman
     page->get_Paragraphs()->Add(table);    
     // Menyimpan file PDF
     document->Save(_dataDir + u"AddSVGObject_out.pdf");
@@ -492,7 +492,7 @@ void InsertPageBreak() {
         if (counter % 10 == 0 && counter != 0)
             row->set_IsInNewPage(true);
     }
-    // Tambahkan tabel ke koleksi paragraf file PDF
+    // Tambahkan tabel ke koleksi `paragraphs` file PDF
     page->get_Paragraphs()->Add(tab);
 
     // Simpan dokumen PDF

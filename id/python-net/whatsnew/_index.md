@@ -140,7 +140,7 @@ Potongan kode ini menunjukkan cara menyisipkan tabel setelah konten yang ada pad
 
 Skrip membuka dokumen PDF yang ada dan menghitung bounding box dari konten saat ini pada halaman pertama. Dengan menggunakan informasi ini, skrip menemukan di mana konten yang ada berakhir dan menempatkan tabel baru di bawah elemen terakhir, meninggalkan margin yang ditentukan sebelum tabel dimulai.
 
-Kemudian sebuah tabel dibuat dan diisi dengan beberapa baris dan kolom menggunakan loop. Setelah menyiapkan struktur dan konten tabel, tabel tersebut ditambahkan ke koleksi paragraf halaman. Akhirnya, dokumen yang diperbarui disimpan sebagai file PDF baru.
+Kemudian sebuah tabel dibuat dan diisi dengan beberapa baris dan kolom menggunakan loop. Setelah menyiapkan struktur dan konten tabel, tabel tersebut ditambahkan ke koleksi `paragraphs` halaman. Akhirnya, dokumen yang diperbarui disimpan sebagai file PDF baru.
 
 ```python
 import aspose.pdf as ap

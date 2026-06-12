@@ -13,7 +13,7 @@ sitemap:
 
 ## Ekstrak teks dari wilayah tertentu pada halaman
 
-Gunakan [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) bersama dengan sebuah [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) untuk membatasi ekstraksi ke area spesifik pada sebuah halaman. Pendekatan ini berguna untuk ekstraksi berbasis zona dari header, footer, sel tabel, form fields, faktur, atau wilayah tata letak tetap lainnya di mana posisi teks sudah diketahui sebelumnya.
+Gunakan [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) bersama dengan sebuah [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) untuk membatasi ekstraksi ke area spesifik pada sebuah halaman. Pendekatan ini berguna untuk ekstraksi berbasis zona dari header, footer, sel tabel, form fields, faktur, atau wilayah tata letak tetap lainnya di mana posisi teks sudah diketahui sebelumnya.
 
 1. Buka PDF sumber sebagai [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Buat sebuah `TextAbsorber` instansi.

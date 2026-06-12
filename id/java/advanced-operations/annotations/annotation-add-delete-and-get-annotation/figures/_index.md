@@ -241,7 +241,7 @@ Fitur berikutnya memungkinkan efek penerapan keterangan pada Anotasi Garis yang 
 
 Langkah-langkah dengan mana kita membuat anotasi Garis:
 
-1. Muat file PDF - [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) baru.
+1. Muat file PDF - [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) baru.
 2. Buat [Anotasi Garis](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation) baru dan atur parameter Garis (Rectangle baru, Titik baru, judul, warna, lebar, GayaMulai dan GayaAkhir).
 
 1. Buat [PopupAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PopupAnnotation) baru.

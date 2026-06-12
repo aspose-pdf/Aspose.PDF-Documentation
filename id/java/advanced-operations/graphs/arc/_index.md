@@ -23,7 +23,7 @@ Ikuti langkah-langkah di bawah ini:
 
 1. Atur [Border](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) untuk objek Drawing
 
-1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) ke koleksi paragraf halaman
+1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) ke koleksi `paragraphs` halaman
 
 1. Simpan file PDF kita
 
@@ -55,7 +55,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan objek [Arc](https://reference
         arc3.getGraphInfo().setColor(Color.getRed());
         graph.getShapes().add(arc3);
 
-        // Tambahkan objek Gambar ke koleksi paragraf dari halaman
+        // Tambahkan objek Gambar ke koleksi `paragraphs` dari halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF
@@ -90,7 +90,7 @@ Contoh berikut menunjukkan bagaimana menambahkan objek Arc yang diisi dengan war
         line.getGraphInfo().setFillColor(Color.getGreenYellow());
         graph.getShapes().add(line);
 
-        // Tambahkan objek Gambar ke koleksi paragraf halaman
+        // Tambahkan objek Gambar ke koleksi `paragraphs` halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF

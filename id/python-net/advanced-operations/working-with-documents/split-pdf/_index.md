@@ -27,7 +27,7 @@ Gunakan contoh-contoh ini ketika Anda perlu memecah PDF besar menjadi file satu 
 Untuk membagi halaman PDF menjadi file PDF satu halaman dalam Python, ikuti langkah-langkah berikut:
 
 1. Lakukan iterasi pada halaman dokumen PDF melalui [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek [Koleksi Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi
-1. Untuk setiap iterasi, buat objek Document baru dan tambahkan yang individual [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek ke dalam dokumen kosong
+1. Untuk setiap iterasi, buat objek Document baru dan tambahkan yang individual [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek ke dalam dokumen kosong
 1. Simpan PDF baru menggunakan [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) metode
 
 ## Membagi PDF menjadi Beberapa File di Python

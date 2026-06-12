@@ -17,13 +17,13 @@ Seperti grafik batang, grafik lingkaran dapat digunakan untuk menampilkan data d
 
 Ikuti langkah-langkah berikut:
 
-1. Buat instance [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)
+1. Buat instance [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)
 
-1. Buat [objek Gambar](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) dengan dimensi tertentu
+1. Buat [objek Graph](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) dengan dimensi tertentu
 
 1. Set [Border](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph#ab63dde9501441515b915fd68f66a01bd) untuk objek Drawing
 
-1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) ke koleksi paragraf halaman
+1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) ke koleksi `paragraphs` halaman
 
 1. Simpan file PDF kita
 
@@ -49,7 +49,7 @@ void ExampleCircle() {
     circle->get_GraphInfo()->set_Color(Color::get_GreenYellow());
     graph->get_Shapes()->Add(circle);
 
-    // Tambahkan objek Graph ke koleksi paragraf halaman
+    // Tambahkan objek Graph ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(graph);
 
     // Simpan file PDF
@@ -89,7 +89,7 @@ void ExampleFilledCircle() {
 
     graph->get_Shapes()->Add(circle);
 
-    // Tambahkan objek Gambar ke koleksi paragraf halaman
+    // Tambahkan objek Gambar ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(graph);
 
     // Simpan file PDF

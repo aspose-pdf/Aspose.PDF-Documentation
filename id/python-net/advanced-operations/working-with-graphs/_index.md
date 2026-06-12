@@ -30,7 +30,7 @@ Jenis bentuk berikut didukung oleh [Graph](https://reference.aspose.com/pdf/pyth
 - [Lingkaran](/pdf/id/python-net/add-circle/) - membuat outline lingkaran atau lingkaran terisi untuk penanda dan sorotan visual.
 - [Kurva](/pdf/id/python-net/add-curve/) - menambahkan kurva gaya Bezier untuk jalur khusus dan elemen grafis halus.
 - [Line](/pdf/id/python-net/add-line/) - menggambar garis lurus, termasuk garis bergaya dan garis putus-putus.
-- [Persegi panjang](/pdf/id/python-net/add-rectangle/) - buat bentuk persegi panjang berbingkai, terisi, gradien, atau transparan.
+- [Rectangle](/pdf/id/python-net/add-rectangle/) - buat bentuk persegi panjang berbingkai, terisi, gradien, atau transparan.
 - [Elips](/pdf/id/python-net/add-ellipse/) - gambar bentuk oval dan tambahkan teks di dalamnya bila diperlukan.
 
 Anda juga dapat memvalidasi penempatan bentuk dengan pemeriksaan batas:

@@ -19,7 +19,7 @@ The [Hello, World](/pdf/id/python-net/hello-world-example/) contoh menunjukkan l
 Jika kita membuat dokumen dari awal, kita perlu mengikuti langkah-langkah tertentu:
 
 1. Instansiasi sebuah [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek. Pada langkah ini kami akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
-1. Tambahkan sebuah [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) ke objek dokumen. Jadi, sekarang dokumen kami akan memiliki satu halaman.
+1. Tambahkan sebuah [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) ke objek dokumen. Jadi, sekarang dokumen kami akan memiliki satu halaman.
 1. Tambahkan sebuah [Gambar](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/) ke Halaman.
 1. Buat sebuah [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) untuk header. Untuk header kami akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
 1. Tambahkan header ke halaman [paragraf](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).

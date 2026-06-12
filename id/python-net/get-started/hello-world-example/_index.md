@@ -21,7 +21,7 @@ Dalam artikel ini, kami membuat dokumen PDF yang berisi teks "Hello World!". Set
 Potongan kode di bawah ini mengikuti langkah-langkah berikut:
 
 1. Instansiasi sebuah [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek
-1. Tambahkan sebuah [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) ke objek dokumen
+1. Tambahkan sebuah [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) ke objek dokumen
 1. Buat sebuah [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) objek
 1. Atur Warna Teks
 1. Buat Text Builder

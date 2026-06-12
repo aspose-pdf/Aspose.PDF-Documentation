@@ -30,7 +30,7 @@ Potongan kode kami menunjukkan cara mengontrol jarak baris dalam dokumen PDF. Ko
 1. Atur properti font dan spasi untuk teks. Nilai-nilai ini menentukan seberapa rapat atau longgar baris teks muncul:
     - Ukuran font: 12 poin
     - Jarak baris: 16 poin
-1. Masukkan fragmen teks terformat ke dalam koleksi paragraf halaman.
+1. Masukkan fragmen teks terformat ke dalam koleksi `paragraphs` halaman.
 1. Simpan dokumen.
 
 ```python
@@ -299,7 +299,7 @@ Menggunakan fragmen HTML memungkinkan Anda memasukkan fitur pemformatan berbasis
     - Gunakan tag HTML ol untuk daftar bernomor.
     - Bungkus setiap item dengan tag li menggunakan list comprehension.
 1. Ubah string HTML menjadi objek HtmlFragment yang dapat ditambahkan ke halaman PDF.
-1. Masukkan HtmlFragment ke dalam koleksi paragraf halaman.
+1. Masukkan HtmlFragment ke dalam koleksi `paragraphs` halaman.
 1. Simpan dokumen PDF.
 
 ```python
@@ -334,7 +334,7 @@ Perpustakaan kami menunjukkan cara membuat daftar berbulu (tidak terurut) dalam 
     - Gunakan tag HTML ul untuk daftar tidak terurut (berbulu).
     - Bungkus setiap item dengan tag li menggunakan list comprehension.
 1. Buat sebuah HtmlFragment. Konversi string HTML menjadi objek HtmlFragment yang dapat ditambahkan ke halaman PDF.
-1. Masukkan HtmlFragment ke dalam koleksi paragraf halaman.
+1. Masukkan HtmlFragment ke dalam koleksi `paragraphs` halaman.
 1. Simpan dokumen PDF.
 
 ```python

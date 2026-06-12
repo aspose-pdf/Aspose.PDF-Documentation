@@ -84,7 +84,7 @@ Pendekatan ini memeriksa posisi setiap elemen terhadap sebuah persegi panjang da
 
 1. Buka dokumen PDF.
 1. Buat sebuah `GraphicsAbsorber` dan panggil `visit` pada halaman target.
-1. Tentukan target [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/).
+1. Tentukan target [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/).
 1. Panggilan `suppress_update` untuk menjeda penulisan aliran konten.
 1. Iterasi `elements`, memanggil `remove()` pada setiap elemen yang posisinya berada di dalam persegi panjang.
 1. Panggilan `resume_update` untuk melakukan penghapusan.

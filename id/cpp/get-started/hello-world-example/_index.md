@@ -19,8 +19,8 @@ Cuplikan kode di bawah ini mengikuti langkah-langkah ini:
 
 1.
 ``` Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file.
-1. Instansiasi objek [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document). Dalam langkah ini, kita akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) ke objek dokumen. Jadi, sekarang dokumen kita akan memiliki satu halaman.
+1. Instansiasi objek [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document). Dalam langkah ini, kita akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
+1. Tambahkan [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) ke objek dokumen. Jadi, sekarang dokumen kita akan memiliki satu halaman.
 1. [Simpan](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/#ac082fe8e67b25685fc51d33e804269fa) dokumen PDF yang dihasilkan
 
 Cuplikan kode berikut adalah program Hello World untuk menunjukkan cara kerja Aspose.PDF untuk C++ API.

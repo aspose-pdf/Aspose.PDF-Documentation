@@ -47,7 +47,7 @@ Section sec1 = pdf1.getSections().add();
 
 Text text1 = new Text(sec1);
 
-//Menambahkan paragraf teks ke dalam koleksi paragraf dari bagian tersebut
+//Menambahkan paragraf teks ke dalam koleksi `paragraphs` dari bagian tersebut
 
 sec1.getParagraphs().add(text1);
 
@@ -70,7 +70,7 @@ segment1.setHyperLink(new HyperLinkToLocalPdf("product1"));
 
 Text text3 = new Text(sec1,"informasi produk 1 ...");
 
-//Menambahkan paragraf teks ke koleksi paragraf dari bagian tersebut
+//Menambahkan paragraf teks ke koleksi `paragraphs` dari bagian tersebut
 
 sec1.getParagraphs().add(text3);
 
@@ -203,7 +203,7 @@ Section sec1 = pdf1.getSections().add();
 
 Text text1 = new Text(sec1);
 
-//Tambahkan paragraf teks dalam koleksi paragraf dari section
+//Tambahkan paragraf teks dalam koleksi `paragraphs` dari section
 
 sec1.getParagraphs().add(text1);
 
@@ -232,7 +232,7 @@ Section sec2 = pdf1.getSections().add();
 
 Text text3 = new Text(sec1,"info produk 1 ...");
 
-//Tambahkan paragraf teks ke koleksi paragraf dari section
+//Tambahkan paragraf teks ke koleksi `paragraphs` dari section
 
 sec2.getParagraphs().add(text3);
 

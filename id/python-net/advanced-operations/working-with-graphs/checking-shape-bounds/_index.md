@@ -23,9 +23,9 @@ Gunakan [BoundsCheckMode](https://reference.aspose.com/pdf/python-net/aspose.pdf
 Ikuti langkah-langkah di bawah ini:
 
 1. Buat PDF baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Tambahkan sebuah [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Tambahkan sebuah [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
 1. Buat sebuah [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) dan tambahkan ke halaman.
-1. Buat sebuah [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) yang melampaui batas grafik.
+1. Buat sebuah [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) yang melampaui batas grafik.
 1. Atur mode pemeriksaan batas ke `THROW_EXCEPTION_IF_DOES_NOT_FIT`.
 1. Tambahkan persegi panjang dan tangani eksepsi.
 1. Simpan dokumen.

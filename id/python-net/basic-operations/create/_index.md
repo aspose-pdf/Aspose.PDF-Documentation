@@ -21,7 +21,7 @@ Untuk pengembang, ada banyak skenario di mana menjadi perlu untuk secara program
 Untuk membuat file PDF menggunakan Python, langkah‑langkah berikut dapat digunakan.
 
 1. Buat sebuah objek dari [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) kelas
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek ke [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) koleksi objek Document
+1. Tambahkan [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek ke [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) koleksi objek Document
 1. Tambah [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) ke [paragraf](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) koleksi halaman
 1. Simpan dokumen PDF yang dihasilkan
 

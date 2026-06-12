@@ -16,18 +16,18 @@ Abstract: Artikel ini menunjukkan cara menambahkan bentuk persegi panjang ke dok
 
 ## Tambahkan objek Rectangle
 
-Aspose.PDF for Python via .NET memungkinkan Anda menambahkan [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) bentuk ke halaman PDF melalui [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) kelas. Anda dapat menggambar persegi panjang berbingkai dan menerapkan isian padat, gradasi, atau transparan.
+Aspose.PDF for Python via .NET memungkinkan Anda menambahkan [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) bentuk ke halaman PDF melalui [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) kelas. Anda dapat menggambar persegi panjang berbingkai dan menerapkan isian padat, gradasi, atau transparan.
 
 Ikuti langkah-langkah di bawah ini:
 
 1. Buat PDF baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Tambah [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) ke koleksi halaman file PDF.
-1. Tambah [Fragmen teks](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) ke koleksi paragraf dari instance halaman.
+1. Tambah [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) ke koleksi halaman file PDF.
+1. Tambah [Fragmen teks](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) ke koleksi `paragraphs` dari instance halaman.
 1. Buat [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) instansi.
-1. Setel batas untuk [Objek grafik](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/).
-1. Tambah [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek ke koleksi bentuk dari objek Graph.
-1. Tambahkan objek grafik ke koleksi paragraf dari instance halaman.
-1. Tambah [Fragmen teks](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) ke koleksi paragraf dari instance halaman.
+1. Setel batas untuk [objek Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/).
+1. Tambah [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek ke koleksi bentuk dari objek Graph.
+1. Tambahkan objek grafik ke koleksi `paragraphs` dari instance halaman.
+1. Tambah [Fragmen teks](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) ke koleksi `paragraphs` dari instance halaman.
 1. Dan simpan file PDF Anda
 
 ```python
@@ -57,7 +57,7 @@ def add_rectangle(outfile: str):
 
 Aspose.PDF for Python via .NET juga menawarkan fitur untuk mengisi objek persegi panjang dengan warna tertentu.
 
-Potongan kode berikut menunjukkan cara menambahkan sebuah [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek yang diisi dengan warna.
+Potongan kode berikut menunjukkan cara menambahkan sebuah [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek yang diisi dengan warna.
 
 ```python
 import aspose.pdf as ap
@@ -84,7 +84,7 @@ Hasil dari persegi panjang yang diisi dengan warna solid:
 
 Aspose.PDF for Python via .NET mendukung fitur untuk menambahkan objek grafik ke dokumen PDF dan terkadang diperlukan untuk mengisi objek grafik dengan Warna Gradien.
 
-Potongan kode berikut menunjukkan cara menambahkan sebuah [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek yang diisi dengan Warna Gradien.
+Potongan kode berikut menunjukkan cara menambahkan sebuah [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek yang diisi dengan Warna Gradien.
 
 ```python
 import aspose.pdf as ap
@@ -114,7 +114,7 @@ def add_drawing_with_gradient_fill(outfile: str):
 
 Aspose.PDF untuk Python via .NET juga mendukung transparansi melalui saluran warna alfa.
 
-Potongan kode berikut menunjukkan cara menambahkan sebuah [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek dengan nilai alfa.
+Potongan kode berikut menunjukkan cara menambahkan sebuah [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek dengan nilai alfa.
 
 ```python
 import aspose.pdf as ap
@@ -143,7 +143,7 @@ def create_rectangle_with_alpha_color_channel(outfile: str):
 
 Aspose.PDF for .NET mendukung fitur untuk menambahkan objek grafik (misalnya grafik, garis, persegi panjang, dll.) ke dokumen PDF. Saat menambahkan lebih dari satu instance dari objek yang sama dalam file PDF, kami dapat mengontrol render mereka dengan menentukan Z-Order. Z-Order juga digunakan ketika kita perlu merender objek di atas satu sama lain.
 
-Potongan kode berikut menunjukkan langkah-langkah untuk merender [Persegi panjang](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek di atas satu sama lain.
+Potongan kode berikut menunjukkan langkah-langkah untuk merender [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) objek di atas satu sama lain.
 
 ```python
 import aspose.pdf as ap

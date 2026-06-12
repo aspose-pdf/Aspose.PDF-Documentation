@@ -17,13 +17,13 @@ Aspose.PDF untuk C++ mendukung fitur untuk menambahkan objek grafis (misalnya gr
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) PDF baru
+1. Buat [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) PDF baru
 
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page/) ke koleksi halaman dari file PDF
+1. Tambahkan [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page/) ke koleksi halaman dari file PDF
 
 1. Buat instance [Grafik](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph/).
 
-1. Tambahkan objek Grafik ke koleksi paragraf dari instance halaman.
+1. Tambahkan objek Grafik ke koleksi `paragraphs` dari instance halaman.
 
 1. Buat instance [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/).
 
@@ -57,7 +57,7 @@ auto page = document->get_Pages()->Add();
 auto graph = MakeObject<Aspose::Pdf::Drawing::Graph>(100, 400);
 
 
-// Tambahkan objek graph ke koleksi paragraf dari instance halaman
+// Tambahkan objek graph ke koleksi `paragraphs` dari instance halaman
 
 page->get_Paragraphs()->Add(graph);
 
@@ -112,7 +112,7 @@ auto page = document->get_Pages()->Add();
 
 auto canvas = MakeObject<Aspose::Pdf::Drawing::Graph>(100, 400);
 
-// Tambahkan objek menggambar ke koleksi paragraf dari instans halaman
+// Tambahkan objek menggambar ke koleksi `paragraphs` dari instans halaman
 
 page->get_Paragraphs()->Add(canvas);
 
@@ -192,7 +192,7 @@ void ExampleLineAcrossPage() {
 
     // Menambahkan garis ke koleksi bentuk objek Grafik
     graph->get_Shapes()->Add(line2);
-    // Menambahkan objek Grafik ke koleksi paragraf halaman
+    // Menambahkan objek Grafik ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(graph);
 
     // Menyimpan file PDF

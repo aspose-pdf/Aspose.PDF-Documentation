@@ -84,7 +84,7 @@ Untuk detail lebih lanjut, silakan kunjungi [halaman ini](http://www.enfocus.com
 
 ### Mengakses Properti Halaman
 
-The [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) kelas menyediakan semua properti yang terkait dengan halaman PDF tertentu. Semua halaman file PDF terkandung dalam the of the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi.
+The [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) kelas menyediakan semua properti yang terkait dengan halaman PDF tertentu. Semua halaman file PDF terkandung dalam the of the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi.
 
 Dari sana, dimungkinkan untuk mengakses baik individu `Page` objek menggunakan indeks mereka, atau iterasi melalui koleksi untuk mendapatkan semua halaman. Begitu sebuah halaman individu diakses, kita dapat mengambil propertinya. Potongan kode berikut menunjukkan cara mendapatkan properti halaman (the `Page` API).
 
@@ -122,9 +122,9 @@ def get_page_properties(input_file_name):
 
 ## Tentukan Warna Halaman
 
-The [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) kelas menyediakan properti yang terkait dengan halaman tertentu dalam dokumen PDF, termasuk jenis warna - RGB, hitam putih, skala abu-abu atau tidak terdefinisi - yang digunakan halaman.
+The [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) kelas menyediakan properti yang terkait dengan halaman tertentu dalam dokumen PDF, termasuk jenis warna - RGB, hitam putih, skala abu-abu atau tidak terdefinisi - yang digunakan halaman.
 
-Semua halaman file PDF terkandung dalam [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi. The [warna_jenis](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) properti menentukan warna elemen pada halaman. Untuk mendapatkan atau menentukan informasi warna untuk halaman PDF tertentu, gunakan [Halaman](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek [warna_jenis](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) properti.
+Semua halaman file PDF terkandung dalam [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi. The [warna_jenis](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) properti menentukan warna elemen pada halaman. Untuk mendapatkan atau menentukan informasi warna untuk halaman PDF tertentu, gunakan [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek [warna_jenis](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) properti.
 
 Potongan kode berikut menunjukkan cara mengiterasi setiap halaman file PDF untuk mendapatkan informasi warna.
 
