@@ -38,7 +38,7 @@ Gunakan halaman ini ketika Anda perlu mengurangi ukuran PDF untuk pengiriman web
 Optimisasi, atau linearisasi untuk Web, mengacu pada proses menjadikan file PDF cocok untuk penelusuran online menggunakan peramban web. Untuk mengoptimalkan file untuk tampilan web:
 
 1. Buka dokumen input dalam sebuah [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek.
-1. Gunakan [Optimalkan](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) metode.
+1. Gunakan [optimize](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) metode.
 1. Simpan dokumen yang dioptimalkan menggunakan [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) metode.
 
 Cuplikan kode berikut menunjukkan cara mengoptimalkan dokumen PDF untuk web.
