@@ -13,40 +13,15 @@ TechArticle: true
 AlternativeHeadline: Add Bates Numbering via Java
 Abstract: This article explains how to create and remove Bates numbering artifacts in PDF documents using Aspose.PDF for Java. It covers configuring a `BatesNArtifact`, applying it through Bates numbering helpers or generic pagination helpers, and removing Bates numbering from a document.
 ---
-## Create a Bates numbering artifact
+Bates numbering artifacts are useful in legal, archival, and document-control workflows where each page needs a persistent page-level identifier.
 
-1. Create the required artifact and configure its appearance.
-1. Create the `BatesNArtifact` and set its formatting.
-1. Set the properties required by the example, including alignment and numbering settings.
+## Add Bates numbering with the dedicated helper
 
-```java
-public static BatesNArtifact createBatesArtifact() {
-    BatesNArtifact artifact = new BatesNArtifact();
-    artifact.setStartPage(1);
-    artifact.setEndPage(0);
-    artifact.setSubset(Subset.All);
-    artifact.setNumberOfDigits(6);
-    artifact.setStartNumber(1);
-    artifact.setPrefix("");
-    artifact.setSuffix("");
-    artifact.setArtifactVerticalAlignment(VerticalAlignment.Bottom);
-    artifact.setArtifactHorizontalAlignment(HorizontalAlignment.Right);
-    artifact.setRightMargin(72);
-    artifact.setLeftMargin(72);
-    artifact.setTopMargin(36);
-    artifact.setBottomMargin(36);
-    return artifact;
-}
-```
+Use this example when you want to apply Bates numbering through the dedicated page collection helper.
 
-## Add or remove Bates numbering
-
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) items to the document.
-1. Create the required artifact and configure its appearance.
-1. Create the `BatesNArtifact` and set its formatting.
-1. Apply the Bates numbering artifact to the document pages or remove existing Bates numbering, as shown in the example.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add any extra pages required by the sample.
+1. Create the [BatesNArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/batesnartifact/) configuration.
+1. Apply Bates numbering to the page collection and save the output file.
 
 ```java
 public static void addBatesNArtifact(Path inputFile, Path outputFile) {
@@ -61,6 +36,38 @@ public static void addBatesNArtifact(Path inputFile, Path outputFile) {
     }
 }
 ```
+
+## Add Bates numbering through pagination artifacts
+
+This example applies Bates numbering by passing the Bates artifact through the generic pagination API.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add the required pages.
+1. Create the [BatesNArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/batesnartifact/) and add it to a pagination artifact list.
+1. Apply the pagination artifacts to the page collection and save the document.
+
+```java
+public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 0; i < 2; i++) {
+            document.getPages().add();
+        }
+
+        BatesNArtifact batesArtifact = createBatesArtifact();
+        List<PaginationArtifact> paginationArtifacts = new ArrayList<>();
+        paginationArtifacts.add(batesArtifact);
+        PageCollectionExtensions.addPagination(document.getPages(), paginationArtifacts);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Delete Bates numbering
+
+Use this approach when existing Bates numbering artifacts should be removed from the document.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Call the page collection helper that deletes Bates numbering.
+1. Save the cleaned output file.
 
 ```java
 public static void deleteBatesNumbering(Path inputFile, Path outputFile) {

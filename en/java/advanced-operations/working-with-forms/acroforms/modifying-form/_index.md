@@ -15,12 +15,13 @@ Abstract: This article explains how to modify AcroForm content using Aspose.PDF 
 ---
 Form maintenance often involves both field-level edits and cleanup of form-related page resources.
 
-## Clear text from a Typewriter form
+## Clear text in embedded form resources
+
+Use this example when Typewriter form content should be emptied without removing the form objects themselves.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Iterate through the [XForm](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xform/) resources and create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragmentabsorber/) for the Typewriter form resources.
-1. Iterate through the found [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) items and clear their text values.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Iterate through page form resources and locate Typewriter forms.
+1. Clear the absorbed text fragments and save the document.
 
 ```java
 public static void clearTextInForm(Path inputFile, Path outputFile) {
@@ -40,16 +41,53 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 }
 ```
 
-## Set or get a text field limit
+## Set a text field length limit
 
-`setFieldLimit` uses `FormEditor.setFieldLimit("First Name", 15)`, while `getFieldLimit` reads `TextBoxField.getMaxLen()` from the first form field.
+Use this example when a text field should accept only a limited number of characters.
 
-## Change form field font appearance
+1. Create a [FormEditor](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/formeditor/) facade and bind the source PDF.
+1. Set the maximum length for the target field.
+1. Save the updated document.
+
+```java
+public static void setFieldLimit(Path inputFile, Path outputFile) {
+    FormEditor form = new FormEditor();
+    form.bindPdf(inputFile.toString());
+    try {
+        form.setFieldLimit("First Name", 15);
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
+    }
+}
+```
+
+## Get a text field length limit
+
+Use this example when you need to inspect the current maximum length of a text field.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Get the target [Field](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/field/) and set its [DefaultAppearance](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/defaultappearance/).
-1. Set the properties required by the example.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the target field from the form collection.
+1. Read the limit from the [TextBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textboxfield/) and output it.
+
+```java
+public static void getFieldLimit(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Field field = document.getForm().getFields()[0];
+        if (field instanceof TextBoxField textBoxField) {
+            System.out.println("Limit: " + textBoxField.getMaxLen());
+        }
+    }
+}
+```
+
+## Change a form field font
+
+Use this example when an existing text field should use a different font or appearance.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the target [TextBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textboxfield/) and set a new default appearance.
+1. Save the updated PDF.
 
 ```java
 public static void setFormFieldFont(Path inputFile, Path outputFile) {
@@ -60,6 +98,23 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
                     FontRepository.findFont("Calibri"), 10, com.aspose.pdf.Color.getBlack().toRgb()));
         }
 
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Delete a form field by name
+
+Use this example when a specific field should be removed from the AcroForm.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Delete the target field from the form by its name.
+1. Save the updated document.
+
+```java
+public static void deleteFormField(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getForm().delete("First Name");
         document.save(outputFile.toString());
     }
 }

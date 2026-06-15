@@ -13,18 +13,15 @@ TechArticle: true
 AlternativeHeadline: Redact sensitive PDF content in Java with security annotations.
 Abstract: This article explains how to work with redaction annotations in PDF documents using Aspose.PDF for Java. It covers marking matched text with redaction annotations, permanently applying redactions, and redacting selected areas based on detected image placement rectangles.
 ---
-## Mark text for redaction
+Security annotation workflows in this section focus on preparing and applying redactions to sensitive PDF content.
+
+## Mark text with redaction annotations
+
+Use this example when matching text should be covered by redaction annotations before the redaction is permanently applied.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragmentabsorber/) and search for the target text.
-1. Configure the [TextSearchOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textsearchoptions/) required by the example.
-1. Create [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) items for the matched text locations.
-1. Set the [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) or related object properties required by the example.
-1. Add each [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) to the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target page.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) for each matched [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) and configure its appearance.
-1. Add the redaction annotations to their pages and save the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Search for the target text and create a [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) for each match.
+1. Configure the redaction appearance and save the document.
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {
@@ -34,19 +31,72 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
         textFragmentAbsorber.setTextSearchOptions(textSearchOptions);
         document.getPages().accept(textFragmentAbsorber);
 
-        for (TextFragment textFragment : textFragmentAbsorber.getTextFragments()) {
+        for (var textFragment : textFragmentAbsorber.getTextFragments()) {
             Page page = textFragment.getPage();
-            Rectangle annotationRectangle = textFragment.getRectangle();
-            RedactionAnnotation annotation = new RedactionAnnotation(page, annotationRectangle);
-            annotation.setFillColor(Color.getGray());
-            annotation.setBorderColor(Color.getRed());
-            annotation.setColor(Color.getWhite());
-            annotation.setOverlayText("REDACTED");
-            annotation.setTextAlignment(HorizontalAlignment.Center);
-            annotation.setRepeat(true);
-            page.getAnnotations().add(annotation, true);
+            RedactionAnnotation redactionAnnotation = new RedactionAnnotation(page, textFragment.getRectangle());
+            redactionAnnotation.setFillColor(Color.getGray());
+            redactionAnnotation.setBorderColor(Color.getRed());
+            redactionAnnotation.setColor(Color.getWhite());
+            redactionAnnotation.setOverlayText("REDACTED");
+            redactionAnnotation.setTextAlignment(HorizontalAlignment.Center);
+            redactionAnnotation.setRepeat(true);
+            page.getAnnotations().add(redactionAnnotation, true);
         }
+        document.save(outputFile.toString());
+    }
+}
+```
 
+## Apply existing redactions
+
+This example permanently applies redaction annotations that already exist on the page.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`Redaction`.
+1. Call `redact()` on each collected annotation and save the updated file.
+
+```java
+public static void applyRedaction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        List<RedactionAnnotation> redactionAnnotations = new ArrayList<>();
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Redaction) {
+                redactionAnnotations.add((RedactionAnnotation) annotation);
+            }
+        }
+        for (RedactionAnnotation redactionAnnotation : redactionAnnotations) {
+            redactionAnnotation.redact();
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Redact a selected page area
+
+Use this approach when the target content is identified by position rather than by matching text.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Detect the target rectangle on the page, for example from an image placement.
+1. Create a [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) for that area and save the document.
+
+```java
+public static void redactArea(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber imagePlacementAbsorber = new ImagePlacementAbsorber();
+        Page page = document.getPages().get_Item(1);
+        page.accept(imagePlacementAbsorber);
+
+        com.aspose.pdf.Rectangle targetRect = imagePlacementAbsorber.getImagePlacements().get_Item(2).getRectangle();
+        RedactionAnnotation redactionAnnotation = new RedactionAnnotation(page, targetRect);
+        redactionAnnotation.setFillColor(Color.getGray());
+        redactionAnnotation.setBorderColor(Color.getRed());
+        redactionAnnotation.setColor(Color.getWhite());
+        redactionAnnotation.setOverlayText("REDACTED");
+        redactionAnnotation.setTextAlignment(HorizontalAlignment.Center);
+        redactionAnnotation.setRepeat(true);
+
+        page.getAnnotations().add(redactionAnnotation, true);
         document.save(outputFile.toString());
     }
 }

@@ -26,19 +26,20 @@ Use the `Document` and `FileSpecification` APIs when you need to package invoice
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        String description = "Invoice metadata conforming to ZUGFeRD standard";
-        FileSpecification fileSpecification = new FileSpecification(invoiceFile.toString(), description);
+        try (Document document = new Document(inputFile.toString())) {
+            String description = "Invoice metadata conforming to ZUGFeRD standard";
+            FileSpecification fileSpecification = new FileSpecification(invoiceFile.toString(), description);
 
-        fileSpecification.setMIMEType("text/xml");
-        fileSpecification.setAFRelationship(AFRelationship.Alternative);
+            fileSpecification.setMIMEType("text/xml");
+            fileSpecification.setAFRelationship(AFRelationship.Alternative);
 
-        document.getEmbeddedFiles().add("factur", fileSpecification);
+            document.getEmbeddedFiles().add("factur", fileSpecification);
 
-        String outputFileName = outputFile.toString();
-        String logPath = outputFileName.replace(".pdf", "_log.xml");
-        document.convert(logPath, PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
-        document.save(outputFile.toString());
+            String outputFileName = outputFile.toString();
+            String logPath = outputFileName.replace(".pdf", "_log.xml");
+            document.convert(logPath, PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
+            document.save(outputFile.toString());
+        }
+        System.out.println("ZUGFeRD invoice attached to " + outputFile);
     }
-}
 ```

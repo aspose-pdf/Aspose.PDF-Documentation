@@ -15,14 +15,13 @@ Abstract: This article shows how to update existing link annotations using Aspos
 ---
 Existing links can be edited by finding the link annotation on a page and updating either its appearance or its action.
 
-## Update the text color under a link
+## Update linked text color
+
+Use this example when the text area covered by a link annotation should be recolored.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragmentabsorber/) and search for the target text.
-1. Configure the [TextSearchOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textsearchoptions/) required by the example.
-1. Set the required [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) formatting options, including [Color](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/color/).
-1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Find link annotations and build a text search rectangle from each annotation area.
+1. Recolor the matched text fragments and save the document.
 
 ```java
 public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile) {
@@ -48,16 +47,36 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 }
 ```
 
-## Update the link annotation color
+## Update link border color
 
-`linkAnnotationUpdateBorder` iterates through link annotations and calls `linkAnnotation.setColor(Color.getRed())`.
-
-## Update the web destination
+Use this example when the visible color of existing link annotations should be changed.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Find the [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) and update its [GoToURIAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotouriaction/).
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Iterate through the page annotations and filter for [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) objects.
+1. Update the link annotation color and save the document.
+
+```java
+public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                linkAnnotation.setColor(Color.getRed());
+            }
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Update a web link destination
+
+Use this example when an existing web link should point to a new URI.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Find link annotations whose action is a [GoToURIAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotouriaction/).
+1. Replace the URI and save the updated document.
 
 ```java
 public static void linkAnnotationUpdateWebDestination(Path inputFile, Path outputFile) {

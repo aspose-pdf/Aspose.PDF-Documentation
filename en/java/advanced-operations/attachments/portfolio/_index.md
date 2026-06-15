@@ -17,12 +17,11 @@ A PDF portfolio can bundle multiple files inside a single PDF container while pr
 
 ## Create a PDF portfolio
 
-The following example creates a new document, enables a collection, and adds several files as portfolio items:
+Use this example when you need to package several files into a PDF portfolio collection.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/) for each file that will be attached.
-1. Configure the portfolio [Collection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/collection/) required by the example.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and enable its [Collection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/collection/).
+1. Create [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/) objects for each input file and set their descriptions.
+1. Add the files to the portfolio collection and save the output document.
 
 ```java
 public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
@@ -48,11 +47,11 @@ public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
 
 ## Remove files from a PDF portfolio
 
-To clear the collection items from an existing portfolio, use `Collection.delete()`:
+Use this example when an existing PDF portfolio collection should be cleared.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access and modify the portfolio [Collection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/collection/) required by the example.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Delete the document collection entries.
+1. Save the cleaned output document.
 
 ```java
 public static void removeFilesFromPdfPortfolio(Path inputFile, Path outputFile) {

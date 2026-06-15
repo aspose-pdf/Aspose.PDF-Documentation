@@ -13,29 +13,88 @@ TechArticle: true
 AlternativeHeadline: How to Convert PDF to other formats in Java
 Abstract: This article explains how to convert PDF files into EPUB, TeX, Markdown, text, XPS, and MobiXML formats using Aspose.PDF for Java, with format-specific save options where needed.
 ---
-## Convert PDF to EPUB, TeX, Markdown, text, XPS, or MobiXML
+Aspose.PDF for Java can export PDF documents into text, ebook, print, and markup-oriented output formats.
 
-The conversion examples use the PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) as the source and save with format-specific options or target formats.
+## Convert PDF to EPUB
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create [EpubSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/epubsaveoptions/) for the conversion.
-1. Set the EPUB content recognition mode.
-1. Save the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) in EPUB format.
+Use this example when a PDF document should be exported to the EPUB ebook format.
+
+1. Open the source PDF document.
+1. Configure the save options for EPUB output.
+1. Save the converted EPUB file.
 
 ```java
 public static void convertPdfToEpub(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        EpubSaveOptions saveOptions = new EpubSaveOptions();
-        saveOptions.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
-        document.save(outputFile.toString(), saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            EpubSaveOptions saveOptions = new EpubSaveOptions();
+            saveOptions.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
+```
+
+## Convert PDF to TeX
+
+Use this example when PDF content should be exported into TeX markup.
+
+1. Open the source PDF document.
+1. Configure the save options for TeX output.
+1. Save the resulting TeX file.
+
+```java
+public static void convertPdfToTex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.save(outputFile.toString(), new TeXSaveOptions());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create `MarkdownSaveOptions` for the conversion.
-1. Set the resources directory name and enable HTML image tags.
-1. Save the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) in Markdown format.
+## Convert PDF to plain text
+
+Use this example when a PDF document should be exported as a text file.
+
+1. Open the source PDF document.
+1. Configure the text save options if needed.
+1. Save the text output file.
+
+```java
+public static void convertPdfToTxt(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextDevice device = new TextDevice();
+        device.process(document.getPages().get_Item(1), outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## Convert PDF to XPS
+
+Use this example when a PDF document should be converted into XPS format.
+
+1. Open the source PDF document.
+1. Create the XPS save options.
+1. Save the converted XPS file.
+
+```java
+public static void convertPdfToXps(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XpsSaveOptions saveOptions = new XpsSaveOptions();
+        saveOptions.setUseEmbeddedTrueTypeFonts(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## Convert PDF to Markdown
+
+Use this example when PDF content should be exported as Markdown.
+
+1. Open the source PDF document.
+1. Configure the Markdown save options.
+1. Save the generated Markdown file.
 
 ```java
 public static void convertPdfToMd(Path inputFile, Path outputFile) {
@@ -45,20 +104,23 @@ public static void convertPdfToMd(Path inputFile, Path outputFile) {
         saveOptions.setUseImageHtmlTag(true);
         document.save(outputFile.toString(), saveOptions);
     }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create [XpsSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xpssaveoptions/) for the conversion.
-1. Enable embedded TrueType fonts in the XPS output.
-1. Save the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) in XPS format.
+## Convert PDF to Mobi XML
+
+Use this example when PDF content should be exported into Mobi-compatible XML.
+
+1. Open the source PDF document.
+1. Configure the save options for Mobi XML output.
+1. Save the converted file.
 
 ```java
-public static void convertPdfToXps(Path inputFile, Path outputFile) {
+public static void convertPdfToMobiXml(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
-        XpsSaveOptions saveOptions = new XpsSaveOptions();
-        saveOptions.setUseEmbeddedTrueTypeFonts(true);
-        document.save(outputFile.toString(), saveOptions);
+        document.save(outputFile.toString(), SaveFormat.MobiXml);
     }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```

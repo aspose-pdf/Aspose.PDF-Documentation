@@ -13,18 +13,28 @@ TechArticle: true
 AlternativeHeadline: Inspect and modify existing PDF tables with Java
 Abstract: This article explains how to manipulate tables already present in PDF documents using Aspose.PDF for Java. It covers locating tables with TableAbsorber, updating text inside a cell, and replacing a detected table with a new Table object.
 ---
-## Replace text inside a detected table cell
+Use `TableAbsorber` when you need to locate existing tables and update their content.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Locate the target [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) cell and update its [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) value.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+## Replace text inside a table cell
+
+Use this example when the text in a detected cell should be updated without rebuilding the whole table.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and visit the page with [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/).
+1. Validate that the target table and cell text fragments exist.
+1. Replace the cell text and save the updated document.
 
 ```java
 public static void replaceCells(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
         absorber.visit(document.getPages().get_Item(1));
+
+        if (absorber.getTableList().isEmpty()) {
+            throw new IllegalStateException("No tables were found on page 1.");
+        }
+        if (absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0).getTextFragments().size() == 0) {
+            throw new IllegalStateException("The target cell has no text fragments.");
+        }
 
         absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0)
                 .getTextFragments().get_Item(1).setText("New Value");
@@ -33,22 +43,23 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 }
 ```
 
-The full example also validates that a table exists and that the target cell contains text fragments before updating the value.
+## Replace a detected table with a new table
 
-## Replace a whole table
+Use this example when the original table should be fully replaced by a newly constructed one.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Get the target [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/).
-1. Create the replacement [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) and configure its rows and cells.
-1. Replace the extracted table with the updated [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) content.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and detect tables on the page.
+1. Create a new [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) with the desired structure.
+1. Replace the absorbed table and save the output PDF.
 
 ```java
 public static void replaceTable(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
         absorber.visit(document.getPages().get_Item(1));
+
+        if (absorber.getTableList().isEmpty()) {
+            throw new IllegalStateException("No tables were found on page 1.");
+        }
 
         AbsorbedTable oldTable = absorber.getTableList().get(0);
         Table newTable = new Table();
@@ -59,6 +70,10 @@ public static void replaceTable(Path inputFile, Path outputFile) {
         row.getCells().add("Col 1");
         row.getCells().add("Col 2");
         row.getCells().add("Col 3");
+        row = newTable.getRows().add();
+        row.getCells().add("Col 12");
+        row.getCells().add("Col 22");
+        row.getCells().add("Col 32");
 
         absorber.replace(document.getPages().get_Item(1), oldTable, newTable);
         document.save(outputFile.toString());
