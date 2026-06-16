@@ -1,5 +1,6 @@
 ---
-title: Add File Attachment Annotation From Stream
+title: Add File Attachment Annotation From Stream
+linktitle: Add File Attachment Annotation From Stream
 type: docs
 weight: 40
 url: /python-net/add-file-attachment-annotation-from-stream/

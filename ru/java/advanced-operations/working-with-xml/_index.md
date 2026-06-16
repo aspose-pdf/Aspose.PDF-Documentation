@@ -1,5 +1,5 @@
 ---
-title: Работа с XML 
+title: Работа с XML
 linktitle: Работа с XML
 type: docs
 weight: 80

@@ -4,7 +4,7 @@ linktitle: Add backgrounds
 type: docs
 weight: 10
 url: /javascript-cpp/add-backgrounds/
-description: Add background image to the your PDF file with JavaScript via C++. 
+description: Add background image to the your PDF file with JavaScript via C++.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

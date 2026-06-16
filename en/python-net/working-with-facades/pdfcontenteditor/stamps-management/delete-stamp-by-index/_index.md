@@ -1,5 +1,6 @@
 ---
-title: Delete Stamp By Index
+title: Delete Stamp By Index
+linktitle: Delete Stamp By Index
 type: docs
 weight: 50
 url: /python-net/delete-stamp-by-index/

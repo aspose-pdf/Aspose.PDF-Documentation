@@ -1,50 +1,29 @@
 ---
-title: Delete Images from PDF File
+title: Delete Images from PDF File using Java
 linktitle: Delete Images
 type: docs
 weight: 20
 url: /java/delete-images-from-pdf-file/
-description: This section explain how to delete Images from PDF File using Aspose.PDF for Java.
-lastmod: "2025-02-17"
+description: Learn how to delete embedded images from PDF files in Java.
+lastmod: "2026-06-09"
 TechArticle: true
-AlternativeHeadline: Remove an image from a PDF file using the Aspose.PDF library for Java
-Abstract: This article provides a step-by-step guide on how to delete an image from a PDF file using the Aspose.PDF library for Java. The process begins by creating a `Document` object to open the input PDF file. The desired page containing the image is accessed through the `Pages` collection of the `Document` object. Images within a page are managed by the `Images` collection, which is part of the page's `Resources` collection. To remove an image, the `Delete` method of the `Images` collection is employed. After modifying the document, it is saved using the `Save` method of the `Document` object. The article includes a code snippet demonstrating the deletion of an image from a PDF file, showcasing the creation and configuration of a `PageNumberStamp` and its addition to a PDF page, followed by saving the updated document.
-SoftwareApplication: java
+AlternativeHeadline: Delete embedded images from PDF files with Java
+Abstract: This article shows how to delete images from PDF documents using Aspose.PDF for Java. The example removes an image resource from the first page by its index in the page image collection and then saves the modified document.
 ---
+Use the page image resource collection when you need to remove embedded images from a PDF page.
 
-To delete an image from a PDF file, simply use the Images collection's delete(..) method.
+## Delete an embedded image by index
 
-1. Create a Document object and open the input PDF file.
-1. Get the Page that holds the image from the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) collection.
-1. Images are held in the Images collection, found in the page's [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) collection.
-1. Delete an image with the Images collection's Delete method.
-1. Saved the output like using the Document object's Save method.
-
-The following code snippet shows how to delete an image from a PDF file.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the image resources on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Delete the target image from the page resource collection by its index.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.Color;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.FontRepository;
-import com.aspose.pdf.FontStyles;
-import com.aspose.pdf.HorizontalAlignment;
-import com.aspose.pdf.PageNumberStamp;
-
-public class ExampleDeleteImages {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
-
-    public static void ExampleDeleteImage() {
-
-        // Open document
-        String inputFile = Paths.get(_dataDir, "DeleteImages.pdf").toString();
-        String outputFile = Paths.get(_dataDir, "DeleteImages_out.pdf").toString();
-        Document pdfDocument = new Document(inputFile);
-        pdfDocument.getPages().get_Item(1).getResources().getImages().delete(1);
-        pdfDocument.save(outputFile);
-        pdfDocument.close();
+public static void deleteImage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().get_Item(1).getResources().getImages().delete(1);
+        document.save(outputFile.toString());
     }
 }
 ```

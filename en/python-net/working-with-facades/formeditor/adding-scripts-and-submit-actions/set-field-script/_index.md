@@ -1,5 +1,6 @@
 ---
-title: Set Field Script
+title: Set Field Script
+linktitle: Set Field Script
 type: docs
 weight: 30
 url: /python-net/set-field-script/

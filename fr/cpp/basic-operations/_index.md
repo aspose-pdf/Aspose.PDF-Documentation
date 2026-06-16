@@ -1,5 +1,5 @@
 ---
-title: Opérations de base avec les documents PDF 
+title: Opérations de base avec les documents PDF
 linktitle: Opérations de base
 type: docs
 weight: 40

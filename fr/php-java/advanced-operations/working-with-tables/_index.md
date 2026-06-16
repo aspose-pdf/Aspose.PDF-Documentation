@@ -1,5 +1,5 @@
 ---
-title: Travailler avec des tableaux dans PDF 
+title: Travailler avec des tableaux dans PDF
 linktitle: Travailler avec des tableaux
 type: docs
 weight: 50

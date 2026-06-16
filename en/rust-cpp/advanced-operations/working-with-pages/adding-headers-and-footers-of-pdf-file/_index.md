@@ -4,15 +4,15 @@ linktitle: Adding Header and Footer to PDF
 type: docs
 weight: 90
 url: /rust-cpp/add-headers-and-footers-of-pdf-file/
-description: 
+description:
 lastmod: "2026-02-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to add Header and Footer to PDF using Rust
 Abstract: This article demonstrates how to add text headers and footers to PDF documents using the asposepdf Rust library. It explains how to open an existing PDF, insert consistent text into the header or footer of every page, and save the modified document as a new file. The examples showcase a simple, error-safe workflow that can be used for tasks such as adding page numbers, titles, or branding programmatically in Rust applications.
-SoftwareApplication: rust-cpp 
+SoftwareApplication: rust-cpp
 ---
 
 ## Adding Headers and Footers as Text Fragments

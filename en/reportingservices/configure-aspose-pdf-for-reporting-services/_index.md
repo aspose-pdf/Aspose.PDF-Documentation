@@ -1,5 +1,6 @@
 ---
 title: Configure
+linktitle: Configure
 
 type: docs
 weight: 80

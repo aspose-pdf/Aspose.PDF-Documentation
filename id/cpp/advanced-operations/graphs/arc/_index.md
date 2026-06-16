@@ -17,13 +17,13 @@ Aspose.PDF untuk C++ mendukung fitur untuk menambahkan objek grafis (misalnya gr
 
 Ikuti langkah-langkah berikut:
 
-1. Buat instance [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)
+1. Buat instance [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)
 
-1. Buat [objek Gambar](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) dengan dimensi tertentu
+1. Buat [objek Graph](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) dengan dimensi tertentu
 
 1. Tetapkan [Perbatasan](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph#ab63dde9501441515b915fd68f66a01bd) untuk objek Gambar
 
-1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) ke koleksi paragraf halaman
+1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) ke koleksi `paragraphs` halaman
 
 1. Simpan file PDF kita
 
@@ -57,7 +57,7 @@ void ExampleArc() {
     arc3->get_GraphInfo()->set_Color(Color::get_Red());
     graph->get_Shapes()->Add(arc3);
 
-    // Tambahkan objek Grafis ke koleksi paragraf halaman
+    // Tambahkan objek Grafis ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(graph);
 
     // Simpan file PDF
@@ -94,7 +94,7 @@ void ExampleFilledArc() {
     line->get_GraphInfo()->set_FillColor(Color::get_GreenYellow());
     graph->get_Shapes()->Add(line);
 
-    // Menambahkan objek Gambar ke koleksi paragraf dari halaman
+    // Menambahkan objek Gambar ke koleksi `paragraphs` dari halaman
     page->get_Paragraphs()->Add(graph);
 
     // Menyimpan file PDF

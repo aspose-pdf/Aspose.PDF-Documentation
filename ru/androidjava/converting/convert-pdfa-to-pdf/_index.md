@@ -1,5 +1,5 @@
 ---
-title: Конвертировать PDF/A в PDF 
+title: Конвертировать PDF/A в PDF
 linktitle: Конвертировать PDF/A в PDF
 type: docs
 weight: 350

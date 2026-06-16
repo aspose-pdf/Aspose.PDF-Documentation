@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Add PDF Pages with Aspose.PDF for Rust
 Abstract: Aspose.PDF for Rust via C++ provides powerful functionality to add pages to PDF documents, allowing developers to create new pages dynamically and customize them according to specific requirements. The library supports inserting blank pages or copying pages from existing documents while offering options to define page size, orientation, and content. These capabilities enable seamless document expansion and customization. The documentation includes detailed instructions and code samples to help developers efficiently implement page addition features in their applications.
-SoftwareApplication: rust-cpp     
+SoftwareApplication: rust-cpp
 ---
 
 ## Add Page in a PDF File

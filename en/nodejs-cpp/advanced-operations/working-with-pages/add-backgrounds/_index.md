@@ -4,7 +4,7 @@ linktitle: Add background
 type: docs
 weight: 10
 url: /nodejs-cpp/add-background/
-description: Add a background image to your PDF file in Node.js 
+description: Add a background image to your PDF file in Node.js
 lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"

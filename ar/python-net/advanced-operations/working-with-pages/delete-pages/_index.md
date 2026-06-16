@@ -1,99 +1,64 @@
 ---
-title: حذف صفحات PDF برمجيًا باستخدام Python
+title: حذف صفحات PDF في بايثون
 linktitle: حذف صفحات PDF
 type: docs
 weight: 80
 url: /ar/python-net/delete-pages/
-description: يمكنك حذف الصفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python عبر .NET.
-lastmod: "2023-04-17"
+description: تعرف على كيفية حذف الصفحات من ملفات PDF في Python.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: احذف صفحة PDF واحدة أو أكثر في Python
+Abstract: توضح هذه المقالة كيفية إزالة الصفحات من ملفات PDF باستخدام Aspose.PDF لـ Python عبر .NET. تعرف على كيفية حذف صفحة واحدة أو عدة صفحات من مستند باستخدام PageCollection API ثم حفظ ملف PDF المحدث.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "حذف صفحات PDF برمجيًا باستخدام Python",
-    "alternativeHeadline": "كيفية إزالة صفحات PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, python, حذف صفحات pdf, إزالة صفحات pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/delete-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/delete-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "يمكنك حذف الصفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python عبر .NET."
-}
-</script>
 
+يمكنك حذف صفحات من ملف PDF باستخدام Aspose.PDF لبيثون عبر.NET. لحذف صفحة معينة، استخدم [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) من أ [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
-يمكنك حذف الصفحات من ملف PDF باستخدام Aspose.PDF for Python عبر .NET. لحذف صفحة معينة من مجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+استخدم سير العمل هذا عندما تحتاج إلى إزالة الصفحات غير المرغوب فيها من PDF قبل مشاركة المستندات أو أرشفتها أو دمجها.
 
 ## حذف صفحة من ملف PDF
 
-1. قم باستدعاء طريقة [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) وحدد مؤشر الصفحة
-2. قم باستدعاء طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) لحفظ ملف PDF المحدث
-يوضح مقتطف الشيفرة التالي كيفية حذف صفحة معينة من ملف PDF باستخدام Python.
+Aspose.PDF لـ Python عبر .NET يحذف الصفحة 2 من ملف PDF المُدخل ويحفظ المستند المحدث إلى ملف جديد. هذه الميزة مفيدة لإزالة الصفحات غير المرغوب فيها أو الحساسة دون تغيير بقية المستند.
+
+1. قم بتحميل ملف PDF المُدخل كملف [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. احذف الصفحة باستخدام [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. اتصل بـ [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) طريقة لحفظ ملف PDF المحدث.
+
+يوضح مقتطف الشفرة التالي كيفية حذف صفحة معينة من ملف PDF باستخدام Python.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # فتح المستند
-    document = ap.Document(input_pdf)
-
-    # حذف صفحة معينة
+def delete_page(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
     document.pages.delete(2)
+    document.save(output_file_name)
+```
 
-    # حفظ ملف PDF المحدث
-    document.save(output_pdf)
+## حذف صفحات متعددة من وثيقة PDF
+
+يتيح لك حذف صفحات متعددة إزالة مجموعة من الصفحات المحددة في عملية واحدة، وهي أكثر كفاءة من حذف الصفحات واحدة تلو الأخرى. يتم حفظ ملف PDF الناتج في ملف جديد، مع الحفاظ على المستند الأصلي.
+
+1. قم بتحميل ملف PDF المُدخل كملف [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. احذف الصفحات المدرجة في مصفوفة الصفحات باستخدام [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. احفظ التحديث [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) إلى ملف جديد.
+
+```python
+import aspose.pdf as ap
+
+def delete_multiple_pages(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
+    # Example: delete pages 2, 3, and 4.
+    pages = [2, 3, 4]
+    document.pages.delete(pages)
+    document.save(output_file_name)
+```
+
+## موضوعات الصفحة ذات الصلة
+
+- [العمل مع صفحات PDF في بايثون](/pdf/ar/python-net/working-with-pages/)
+- [إضافة صفحات PDF في بايثون](/pdf/ar/python-net/add-pages/)
+- [نقل صفحات PDF في بايثون](/pdf/ar/python-net/move-pages/)
+- [استخراج صفحات PDF في بايثون](/pdf/ar/python-net/extract-pages/)

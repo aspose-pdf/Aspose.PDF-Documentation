@@ -1,166 +1,67 @@
 ---
-title: Menghapus lampiran dari PDF menggunakan Python
-linktitle: Menghapus lampiran dari PDF yang sudah ada
+title: Hapus Lampiran dari PDF dengan Python
+linktitle: Menghapus lampiran dari PDF yang ada
 type: docs
 weight: 30
 url: /id/python-net/removing-attachment-from-an-existing-pdf/
-description: Aspose.PDF dapat menghapus lampiran dari dokumen PDF Anda. Gunakan Python PDF API untuk menghapus lampiran dalam file PDF menggunakan Aspose.PDF untuk Python melalui pustaka .NET.
-lastmod: "2023-02-17"
+description: Aspose.PDF dapat menghapus lampiran dari dokumen PDF Anda. Gunakan API PDF Python untuk menghapus lampiran dalam file PDF menggunakan Aspose.PDF for Python via .NET library.
+lastmod: "2026-06-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara menghapus lampiran dari PDF dengan Python
+Abstract: Artikel ini membahas cara menghapus lampiran dari file PDF menggunakan Aspose.PDF for Python. Lampiran dalam dokumen PDF disimpan dalam koleksi `EmbeddedFiles` dari objek `Document`. Untuk menghapus semua lampiran dari PDF, Anda dapat memanggil metode `delete()` pada koleksi `EmbeddedFiles` dan kemudian menyimpan dokumen yang diperbarui menggunakan metode `save()` dari objek `Document`. Sebuah cuplikan kode disediakan untuk mendemonstrasikan proses ini, menampilkan langkah-langkah membuka dokumen, menghapus lampirannya, dan menyimpan file yang telah dimodifikasi.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Menghapus lampiran dari PDF",
-    "alternativeHeadline": "Cara menghapus lampiran dari PDF dengan Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, hapus lampiran",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/removing-attachment-from-an-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/removing-attachment-from-an-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF untuk Python dapat menghapus lampiran dari dokumen PDF Anda. Gunakan Python PDF API untuk menghapus lampiran dalam file PDF menggunakan pustaka Aspose.PDF."
-}
-</script>
 
+Aspose.PDF for Python dapat menghapus lampiran dari file PDF. Lampiran dokumen PDF disimpan di objek Document. [File Tertanam](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) koleksi.
 
-Aspose.PDF untuk Python dapat menghapus lampiran dari file PDF. Lampiran dokumen PDF disimpan dalam koleksi objek Document [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/).
+Alur kerja ini berguna ketika Anda perlu membersihkan file tertanam yang usang, mengurangi ukuran paket, atau menyiapkan PDF untuk distribusi ulang tanpa materi sumber yang terlampir.
 
 Untuk menghapus semua lampiran yang terkait dengan file PDF:
 
-1. Panggil metode [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/).
-1. Simpan file yang diperbarui menggunakan metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Panggil [File Tertanam](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) koleksi [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) metode.
+1. Simpan file yang diperbarui menggunakan [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) metode.
 
-Cuplikan kode berikut menunjukkan cara menghapus lampiran dari dokumen PDF.
+Potongan kode berikut menunjukkan cara menghapus lampiran dari dokumen PDF.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    # Buka dokumen
-    document = ap.Document(input_pdf)
-
-    # Hapus semua lampiran
-    document.embedded_files.delete()
-
-    # Simpan file yang diperbarui
-    document.save(output_pdf)
+def remove_attachment(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete()
+        document.save(outfile)
 ```
 
+## Hapus lampiran tertentu berdasarkan nama
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Pustaka Python",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Pustaka Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+Jika Anda perlu menghapus hanya satu lampiran dan mempertahankan yang lain, gunakan the [delete_by_key()](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/delete_by_key/) metode dan berikan nama lampiran.
+
+Untuk menghapus lampiran tertentu:
+
+1. Buka file PDF sumber.
+1. Panggilan `document.embedded_files.delete_by_key(attachment_name)`.
+1. Simpan file PDF yang diperbarui.
+
+Potongan kode berikut menghapus satu lampiran berdasarkan namanya.
+
+```python
+
+import aspose.pdf as ap
+
+def remove_attachment(infile, attachment_name, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete_by_key(attachment_name)
+        document.save(outfile)
+```
+
+## Topik Lampiran Terkait
+
+- [Bekerja dengan lampiran PDF di Python](/pdf/id/python-net/attachments/)
+- [Menambahkan lampiran ke PDF di Python](/pdf/id/python-net/add-attachment-to-pdf-document/)
+- [Buat dan kelola portofolio PDF menggunakan Python](/pdf/id/python-net/portfolio/)
+

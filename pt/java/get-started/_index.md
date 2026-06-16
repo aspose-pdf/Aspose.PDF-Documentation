@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /pt/java/get-started/
 description: Esta seção descreve os princípios básicos de trabalho e uso da API DOM. Também demonstra exemplos simples e complexos para criar um documento PDF
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

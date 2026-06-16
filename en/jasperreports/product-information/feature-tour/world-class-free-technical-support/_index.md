@@ -1,5 +1,6 @@
 ---
 title: World Class Free Technical Support
+linktitle: World Class Free Technical Support
 type: docs
 weight: 30
 url: /jasperreports/world-class-free-technical-support/

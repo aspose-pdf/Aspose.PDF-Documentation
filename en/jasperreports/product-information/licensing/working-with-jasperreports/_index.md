@@ -1,5 +1,6 @@
 ---
 title: Working with JasperReports
+linktitle: Working with JasperReports
 type: docs
 weight: 10
 url: /jasperreports/working-with-jasperreports/

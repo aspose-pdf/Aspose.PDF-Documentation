@@ -1,10 +1,10 @@
 ---
-title: Trabalhando com Ações em PDF 
+title: Trabalhando com Ações em PDF
 linktitle: Ações
 type: docs
 weight: 20
 url: /pt/cpp/actions/
-description: Esta seção explica como adicionar ações ao documento e campos de formulário programaticamente com C++. 
+description: Esta seção explica como adicionar ações ao documento e campos de formulário programaticamente com C++.
 lastmod: "2022-01-25"
 sitemap:
     changefreq: "weekly"

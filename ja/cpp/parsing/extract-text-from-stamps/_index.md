@@ -1,5 +1,5 @@
 ---
-title: スタンプからテキストを抽出 
+title: スタンプからテキストを抽出
 linktitle: スタンプからテキストを抽出
 type: docs
 weight: 60

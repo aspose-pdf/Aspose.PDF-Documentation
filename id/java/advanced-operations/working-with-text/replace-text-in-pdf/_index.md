@@ -1,5 +1,5 @@
 ---
-title: Ganti Teks dalam PDF 
+title: Ganti Teks dalam PDF
 linktitle: Ganti Teks dalam PDF
 type: docs
 weight: 40
@@ -259,7 +259,7 @@ public static void RearrangeContent() {
 
 ## Merender Simbol yang Dapat Diganti selama Pembuatan PDF
 
-Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat digantikan dengan konten yang sesuai saat waktu berjalan. Simbol yang dapat diganti saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p`, `\n`, `\r`. `$p` dan `$P` digunakan untuk menangani penomoran halaman saat waktu berjalan. `$p` digantikan dengan nomor halaman tempat kelas Paragraf saat ini berada. `$P` digantikan dengan jumlah total halaman dalam dokumen. Saat menambahkan [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXFragment) ke koleksi paragraf dokumen PDF, itu tidak mendukung pemindah baris di dalam teks. Namun untuk menambahkan teks dengan pemindah baris, silakan gunakan [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXFragment) dengan [TextParagraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextParagraph):
+Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat digantikan dengan konten yang sesuai saat waktu berjalan. Simbol yang dapat diganti saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p`, `\n`, `\r`. `$p` dan `$P` digunakan untuk menangani penomoran halaman saat waktu berjalan. `$p` digantikan dengan nomor halaman tempat kelas Paragraf saat ini berada. `$P` digantikan dengan jumlah total halaman dalam dokumen. Saat menambahkan [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXFragment) ke koleksi `paragraphs` dokumen PDF, itu tidak mendukung pemindah baris di dalam teks. Namun untuk menambahkan teks dengan pemindah baris, silakan gunakan [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXFragment) dengan [TextParagraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextParagraph):
 
 - gunakan "\r\n" atau Environment.NewLine dalam TextFragment alih-alih menggunakan "\n" tunggal;
 - buat objek TextParagraph.
@@ -358,7 +358,7 @@ public static void ReplaceableSymbolsInHeaderFooterArea() {
     // Membuat objek tabel
     Table tab2 = new Table();
 
-    // Menambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+    // Menambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
     hfFoot.getParagraphs().add(tab2);
 
     // Mengatur lebar kolom tabel
@@ -387,7 +387,7 @@ public static void ReplaceableSymbolsInHeaderFooterArea() {
     table.getDefaultCellPadding().setTop(10);
     table.getDefaultCellPadding().setBottom(10);
 
-    // Menambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+    // Menambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
     page.getParagraphs().add(table);
 
     // Mengatur batas sel default menggunakan objek BorderInfo

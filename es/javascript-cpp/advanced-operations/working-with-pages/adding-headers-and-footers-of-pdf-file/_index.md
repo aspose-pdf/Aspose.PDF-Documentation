@@ -1,5 +1,5 @@
 ---
-title: Añadir Encabezado y Pie de Página a PDF mediante JavaScript a través de C++ 
+title: Añadir Encabezado y Pie de Página a PDF mediante JavaScript a través de C++
 linktitle: Añadir Encabezado y Pie de Página a PDF
 type: docs
 weight: 70

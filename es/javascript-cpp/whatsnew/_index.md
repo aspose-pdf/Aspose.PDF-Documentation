@@ -1,5 +1,5 @@
 ---
-title: Qué hay de nuevo 
+title: Qué hay de nuevo
 linktitle: Qué hay de nuevo
 type: docs
 weight: 10

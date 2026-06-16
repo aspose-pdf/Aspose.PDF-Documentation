@@ -1,5 +1,6 @@
 ---
-title: Split PDF Documents
+title: Split PDF Documents
+linktitle: Split PDF Documents
 type: docs
 weight: 50
 url: /python-net/splitting-pdf-documents/

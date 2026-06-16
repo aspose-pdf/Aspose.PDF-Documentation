@@ -1,6 +1,6 @@
 ---
-title: 高级操作 
-linktitle: 高级操作 
+title: 高级操作
+linktitle: 高级操作
 type: docs
 weight: 70
 url: /zh/androidjava/advanced-operations/

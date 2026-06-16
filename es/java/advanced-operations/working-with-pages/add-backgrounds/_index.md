@@ -1,5 +1,5 @@
 ---
-title: Añadir fondo al PDF 
+title: Añadir fondo al PDF
 linktitle: Añadir fondos
 type: docs
 weight: 110

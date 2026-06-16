@@ -1,5 +1,5 @@
 ---
-title: Supprimer des Pages PDF avec JavaScript via C++ 
+title: Supprimer des Pages PDF avec JavaScript via C++
 linktitle: Supprimer des Pages PDF
 type: docs
 weight: 30

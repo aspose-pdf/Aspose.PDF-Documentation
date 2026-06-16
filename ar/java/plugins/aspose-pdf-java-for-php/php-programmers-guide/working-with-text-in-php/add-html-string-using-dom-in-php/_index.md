@@ -1,10 +1,10 @@
 ---
 
-title: إضافة سلسلة HTML باستخدام DOM في PHP  
-type: docs  
-weight: 10  
-url: /ar/java/add-html-string-using-dom-in-php/  
-lastmod: "2021-06-05"  
+title: إضافة سلسلة HTML باستخدام DOM في PHP
+type: docs
+weight: 10
+url: /ar/java/add-html-string-using-dom-in-php/
+lastmod: "2021-06-05"
 ---
 ## Aspose.PDF - إضافة HTML
 

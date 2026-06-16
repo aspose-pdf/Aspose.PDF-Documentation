@@ -1,5 +1,6 @@
 ---
-title: Add Curve Annotation
+title: Add Curve Annotation
+linktitle: Add Curve Annotation
 type: docs
 weight: 20
 url: /python-net/add-curve-annotation/

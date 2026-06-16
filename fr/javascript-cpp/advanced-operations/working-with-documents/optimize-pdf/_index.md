@@ -1,5 +1,5 @@
 ---
-title: Optimiser PDF en utilisant Aspose.PDF pour JavaScript via C++ 
+title: Optimiser PDF en utilisant Aspose.PDF pour JavaScript via C++
 linktitle: Optimiser le fichier PDF
 type: docs
 weight: 10

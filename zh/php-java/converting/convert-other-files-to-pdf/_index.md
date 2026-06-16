@@ -1,6 +1,6 @@
 ---
-title: 将各种文件格式转换为PDF 
-linktitle: 将其他文件格式转换为PDF 
+title: 将各种文件格式转换为PDF
+linktitle: 将其他文件格式转换为PDF
 type: docs
 weight: 80
 url: /zh/php-java/convert-other-files-to-pdf/

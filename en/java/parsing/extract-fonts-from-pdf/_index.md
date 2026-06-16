@@ -1,36 +1,32 @@
 ---
-title: Extract fonts from PDF 
-linktitle: Extract fonts
+title: Extract Fonts from PDF via Java
+linktitle: Extract Fonts from PDF
 type: docs
 weight: 30
 url: /java/extract-fonts-from-pdf/
-description: How to extract font from PDF using Aspose.PDF for Java
-lastmod: "2025-02-17"
+description: Use Aspose.PDF for Java to inspect and extract the fonts used in a PDF document.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to extract fonts from a PDF document using Aspose.PDF for Java
-Abstract: The article provides a method to extract all fonts from a PDF document using the `Document.IDocumentFontUtilities.getAllFonts()` method from the `Document` class in Java. The process involves loading the PDF document and retrieving its fonts, which are then saved using their respective font names. The code snippet demonstrates the implementation of this process, illustrating the steps to load the document, extract fonts, and save them to a specified location. This approach is useful for users needing to access or utilize fonts embedded within PDF files.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: How to Extract Fonts from PDF using Java
+Abstract: This article explains how to inspect the fonts used in a PDF document with Aspose.PDF for Java. It shows how to open a PDF, call `getFontUtilities().getAllFonts()`, and iterate through the resulting font objects to read their names.
 ---
+Use font extraction when you need to audit document typography, inspect embedded resources, or verify font usage before conversion or archival workflows.
 
-In case you want to get all fonts from a PDF document, you can use `Document.IDocumentFontUtilities.getAllFonts()` method provided in Document class.
-Please check following code snippet in order to get all fonts from an existing PDF document:
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Get all [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) objects used in the document.
+1. Iterate through the extracted [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) objects.
+1. Print each font name.
 
 ```java
-public static void Extract_Fonts() throws FileNotFoundException
-{
-    // The path to the documents directory.
-    String filePath = "<... enter file name ...>";
-    
-    // Load PDF document
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.Font[] fonts = pdfDocument.getFontUtilities().getAllFonts();
-
-    for (com.aspose.pdf.Font font : fonts)
-    {
-        font.save(new FileOutputStream(font.getFontName()));
+public static void extractFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Font[] fonts = document.getFontUtilities().getAllFonts();
+        for (Font font : fonts) {
+            System.out.println(font.getFontName());
+        }
     }
 }
 ```

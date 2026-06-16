@@ -1,5 +1,6 @@
 ---
 title: Add TOC to Existing PDF in Python
+linktitle: Add TOC to Existing PDF in Python
 type: docs
 weight: 20
 url: /python-java/add-toc-to-existing-pdf-in-python/

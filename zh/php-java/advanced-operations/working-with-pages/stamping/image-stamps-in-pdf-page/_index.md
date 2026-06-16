@@ -1,5 +1,5 @@
 ---
-title: 在PDF中以编程方式添加图像印章 
+title: 在PDF中以编程方式添加图像印章
 linktitle: PDF文件中的图像印章
 type: docs
 weight: 10

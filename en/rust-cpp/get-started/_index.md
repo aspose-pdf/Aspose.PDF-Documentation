@@ -11,8 +11,8 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Get Started of Aspose.PDF for Rust
-Abstract: The Get Started guide for Aspose.PDF for Rust via C++ provides an introduction to working with the library, covering the basic steps to create and manipulate PDF documents. It includes a 'Hello World' example demonstrating how to generate a simple PDF file with text content, helping developers quickly understand the API's core functionality.  
-SoftwareApplication: rust-cpp      
+Abstract: The Get Started guide for Aspose.PDF for Rust via C++ provides an introduction to working with the library, covering the basic steps to create and manipulate PDF documents. It includes a 'Hello World' example demonstrating how to generate a simple PDF file with text content, helping developers quickly understand the API's core functionality.
+SoftwareApplication: rust-cpp
 ---
 
 Investigate the most basic features and requirements of the Aspose.PDF for Rust library in this Getting Started section.

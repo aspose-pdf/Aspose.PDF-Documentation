@@ -1,10 +1,10 @@
 ---
-title: Repair PDF with Rust via C++ 
+title: Repair PDF with Rust via C++
 linktitle: Repair PDF
 type: docs
 weight: 10
 url: /rust-cpp/repair-pdf/
-description: This topic describes how to Repair PDF via Rust via C++ 
+description: This topic describes how to Repair PDF via Rust via C++
 lastmod: "2024-12-12"
 sitemap:
     changefreq: "monthly"
@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Repair PDF with Aspose.PDF for Rust via C++
 Abstract: Aspose.PDF for Rust via C++ provides a robust solution for repairing damaged or corrupted PDF documents, ensuring data integrity and accessibility. The library offers powerful features to analyze and fix structural issues, recover content, and restore the document to a usable state. It supports repairing PDFs affected by issues such as missing fonts, damaged metadata, and corrupted content streams. The documentation provides step-by-step guidance and code samples to assist developers in efficiently implementing PDF repair functionality within their applications.
-SoftwareApplication: rust-cpp         
+SoftwareApplication: rust-cpp
 ---
 
 Repair PDFs are necessary for maintaining and enhancing PDF documents, especially when dealing with corrupted files or making adjustments. Repairing a PDF file and saving it as a new document is a common requirement in scenarios like document management systems, where file integrity is critical.

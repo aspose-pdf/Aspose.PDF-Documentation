@@ -1,5 +1,6 @@
 ---
-title: Add Attachment From Path
+title: Add Attachment From Path
+linktitle: Add Attachment From Path
 type: docs
 weight: 20
 url: /python-net/add-attachment-from-path/

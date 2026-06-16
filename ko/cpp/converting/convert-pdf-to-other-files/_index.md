@@ -1,6 +1,6 @@
 ---
-title: PDF 파일을 다른 형식으로 변환 
-linktitle: PDF를 다른 형식으로 변환 
+title: PDF 파일을 다른 형식으로 변환
+linktitle: PDF를 다른 형식으로 변환
 type: docs
 weight: 90
 url: /ko/cpp/convert-pdf-to-other-files/

@@ -1,5 +1,6 @@
 ---
 title: Technical Articles
+linktitle: Technical Articles
 type: docs
 weight: 120
 url: /reportingservices/technical-articles/

@@ -5,16 +5,15 @@ type: docs
 weight: 20
 url: /java/overview/
 description: Overview of key-features and supported formats of Aspose.PDF for Java, installation and licensing manual of Java library.
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Overview of the features offered by Aspose.PDF for Java
 Abstract: The article provides a detailed overview of the features offered by Aspose.PDF for Java, a comprehensive Java library for creating and manipulating PDF documents without the need for Adobe Acrobat. Key functionalities include document compression, table creation, graph support, hyperlink integration, and extensive security controls such as digital signatures. The library also supports the addition and management of bookmarks, tables of contents, attachments, annotations, and metadata. Users can edit text and images, manage pages through splitting or concatenation, and transform PDF pages into various image formats. Additionally, Aspose.PDF for Java offers robust printing capabilities across different Java environments and facilitates conversion between PDF and other document formats. The article concludes with links to resources for pricing, licensing, technical support, and further learning about the library's features and installation requirements.
 SoftwareApplication: java
 ---
-
 _This page is an overview of  Aspose.PDF for Java features._
 
 **Aspose for Java** is a robust Java component that lets developers create PDF documents from scratch without using Adobe Acrobat. Aspose.PDF for Java provides a very simple Application Programming Interface (API) for developers that is easy to learn and use.
@@ -41,22 +40,22 @@ Let's check Docs pages for more details: [Optimize PDF](/pdf/java/optimize-pdf/)
 
 ### Table creation and manipulation
 
-Tables provide a structured and organized format for presenting information in PDF documents. They allow users to categorize and arrange data into rows and columns, making it easier to comprehend complex datasets. 
+Tables provide a structured and organized format for presenting information in PDF documents. They allow users to categorize and arrange data into rows and columns, making it easier to comprehend complex datasets.
 
-With **Aspose.PDF for Java** creating and manipulating tables in PDF documents offers numerous advantages, including improved data organization, enhanced readability, better analysis capabilities, and increased flexibility in presenting information effectively. 
+With **Aspose.PDF for Java** creating and manipulating tables in PDF documents offers numerous advantages, including improved data organization, enhanced readability, better analysis capabilities, and increased flexibility in presenting information effectively.
 
 Let's check the next section for more details: [Working with Tables](/pdf/java/working-with-tables/)
 
 ### Support for Graph objects
 
-**Aspose.PDF for Java** supports adding graphs to PDF documents. The Graph class is provided for this task.  
+**Aspose.PDF for Java** supports adding graphs to PDF documents. The Graph class is provided for this task.
 Adding Graphs to PDF documents  improve data visualization, enhanced clarity and comprehension, better decision-making support, and increased engagement with readers.
 
 Let's check Docs pages for more details: [Working with Graphs](/pdf/java/graphs/)
 
 ### Extensive Hyperlink functionality
 
-Hyperlinks allow users to navigate quickly and efficiently within a PDF document. By clicking on hyperlinks, readers can jump to different sections, chapters, or pages without having to manually scroll through the document. 
+Hyperlinks allow users to navigate quickly and efficiently within a PDF document. By clicking on hyperlinks, readers can jump to different sections, chapters, or pages without having to manually scroll through the document.
 
 **Aspose.PDF for Java** provides many advantages, including improved navigation, cross-referencing, access to external resources, interactivity, and enhanced communication. They contribute to a more engaging, informative, and accessible reading experience for users.
 
@@ -66,7 +65,7 @@ Let's check the next section for more details: [Actions](/pdf/java/actions/)
 
 Security features such as digital signatures help ensure the integrity of PDF documents. By digitally signing a document, the sender can verify that the content has not been tampered with or altered since it was signed, providing assurance to recipients regarding the authenticity of the document.
 
-With **Aspose.PDF for Java** is possible to sign PDF from Smart Card, encrypt, and decrypt files, extract images, and Signature info etc. 
+With **Aspose.PDF for Java** is possible to sign PDF from Smart Card, encrypt, and decrypt files, extract images, and Signature info etc.
 
 Let's check Docs pages for more details: [Securing and Signing](/pdf/java/securing-and-signing/)
 
@@ -98,7 +97,7 @@ The Aspose.PDF for Java library has a different of manipulations with [Annotatio
 - Sticky Annotations
 - Extra Annotations
 
-Also, our Library allows you to add, extract, and remove Attachments from PDF. 
+Also, our Library allows you to add, extract, and remove Attachments from PDF.
 For more details check the next [Documentation pages](/pdf/java/attachments/).
 
 ###  PDF File Metadata
@@ -160,7 +159,6 @@ Please visit the [Licensing](/pdf/java/licensing/) page for information on licen
 ## Technical Support
 
 For more information on Aspose.PDF technical support, take a look at the [Support page](/pdf/java/technical-support/).
-
 
 Learn more about:
 

@@ -1,125 +1,147 @@
 ---
-title: Convert PDF to Excel 
+title: Convert PDF to Excel in Java
 linktitle: Convert PDF to Excel
 type: docs
 weight: 20
 url: /java/convert-pdf-to-excel/
-lastmod: "2025-02-17"
-description: Aspose.PDF for Java allows you to convert PDF to Excel format using java. During this, the individual pages of the PDF file are converted to Excel worksheets.
+lastmod: "2026-06-09"
+description: Learn how to convert PDF files to Excel in Java with Aspose.PDF, including XML Spreadsheet 2003, XLSX, XLSM, CSV, and ODS output.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to convert PDF to Excel format using Aspose.PDF for Java
-Abstract: The Aspose.PDF for Java API allows users to convert PDF files into Excel formats, specifically XLS and XLSX. This functionality complements the existing Aspose.PDF for Java API, which focuses on creating and manipulating Excel workbooks and converting them to PDF. The article introduces the ExcelSaveOptions class, a key component of the Aspose.PDF for Java library, which facilitates the conversion process. It explains how to utilize this class to perform various tasks such as adding or removing a blank column at the start of an XLS file, minimizing the number of worksheets by consolidating PDF pages into a single Excel sheet, and converting PDF files specifically to the XLSX format. Code snippets are provided to demonstrate these processes. Additionally, users are encouraged to explore an online application for converting PDFs to XLSX to assess the functionality and output quality.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: How to Convert PDF to Excel in Java
+Abstract: This article explains how to convert PDF files to Excel-compatible formats with Aspose.PDF for Java. It covers XML Spreadsheet 2003, XLSX, XLSM, CSV, and ODS output, along with options for blank-column insertion and minimizing the number of worksheets.
 ---
+Aspose.PDF for Java can export PDF content to multiple spreadsheet formats with different layout options.
 
-Aspose.PDF for Java API lets you render your PDF files to Excel [XLS](https://docs.fileformat.com/spreadsheet/xls/) and [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) file formats. We already have another API, known as [Aspose.Cells for Java](https://products.aspose.com/cells/java), that provides the capability to create and manipulate existing Excel workbooks. It also provides the capability to transform Excel workbooks to PDF format.
+## Convert PDF to Excel 2003 XML
 
-{{% alert color="primary" %}}
-**Try to convert PDF to Excel online**
+Use this example when PDF content should be exported to the Excel 2003 XML spreadsheet format.
 
-Aspose.PDF for Java presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
-
-[![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
-{{% /alert %}}
-
-## Convert PDF to Excel XLS
-
-To convert PDF files to XLS format, Aspose.PDF has a class called [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class is passed as a second argument to the Document.Save(..) method. 
-
-Converting a PDF file into XLSX format is part of the library from Aspose.PDF for Java 18.6 version. In order to convert PDF files to XLSX format, you need to set format as XLSX using setFormat() method of [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) Class.
-
-Following code snippet shows how to convert a PDF file into xls and .xlsx format:
+1. Open the source PDF document.
+1. Configure Excel save options for the Spreadsheet 2003 format.
+1. Save the converted output file.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertPDFtoXLSX {
-
-    private ConvertPDFtoXLSX() {
-
+public static void convertPdfToExcelSpreadSheet2003(Path inputFile, Path outputFile) {
+        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003);
+        saveDocument(inputFile, outputFile, saveOptions);
     }
+```
 
-    // The path to the documents directory.
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
+## Convert PDF to XLSX
 
-    public static void main(String[] args) throws IOException {
+Use this example when PDF content should be converted into the Excel 2007+ XLSX format.
 
-        ConvertPDFtoExcelSimple();
-        ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst();
-        ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets();
-        ConvertPDFtoExcelAdvanced_SaveXLSX();
-    }
+1. Open the source PDF document.
+1. Configure XLSX save options.
+1. Save the output spreadsheet file.
 
-    public static void ConvertPDFtoExcelSimple() {
-        // Load PDF document
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-
-        // Instantiate ExcelSave Option object
-        ExcelSaveOptions excelsave = new ExcelSaveOptions();
-
-        // Save the output in XLS format
-        pdfDocument.save("PDFToXLS_out.xls", excelsave);
-    }
+```java
+public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {
+    ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+    saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+    saveDocument(inputFile, outputFile, saveOptions);
 }
 ```
 
-## Convert PDF to XLS with Control Column
+## Convert PDF to XLSX with column control
 
-When converting a PDF to XLS format, a blank column is added to the output file as first column. The in [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class InsertBlankColumnAtFirst option is used to control this column. Its default value is true.
+Use this example when column handling should be adjusted during PDF-to-Excel conversion.
+
+1. Open the source PDF document.
+1. Set the Excel save options that control column behavior.
+1. Save the converted XLSX file.
 
 ```java
-    public static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
-        // Load PDF document
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-        // Instantiate ExcelSave Option object
-        ExcelSaveOptions excelsave = new ExcelSaveOptions();
-        excelsave.setInsertBlankColumnAtFirst(false);
-        // Save the output in XLS format
-        pdfDocument.save("PDFToXLS_out.xls", excelsave);
-    }
+public static void convertPdfToExcel2007ControlColumn(Path inputFile, Path outputFile) {
+    ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+    saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+    saveOptions.setInsertBlankColumnAtFirst(true);
+    saveDocument(inputFile, outputFile, saveOptions);
+}
 ```
 
-## Convert PDF to Single Excel Worksheet
+## Convert PDF to a single Excel worksheet
 
-When exporting a PDF file with a lot of pages to XLS, each page is exported to a different sheet in the Excel file. This is because the MinimizeTheNumberOfWorksheets property is set to false by default. To ensure that all pages are exported to one single sheet in the output Excel file, set the MinimizeTheNumberOfWorksheets property to true.
+Use this example when all PDF pages should be exported into one worksheet.
+
+1. Open the source PDF document.
+1. Configure the Excel save options for a single worksheet.
+1. Save the XLSX output file.
 
 ```java
-    public static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets() {
-        // Load PDF document
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-
-        // Instantiate ExcelSave Option object
-        ExcelSaveOptions excelsave = new ExcelSaveOptions();
-        excelsave.setMinimizeTheNumberOfWorksheets(true);
-
-        // Save the output in XLS format
-        pdfDocument.save("PDFToXLS_out.xls", excelsave);
-    }
+public static void convertPdfToExcel2007SingleExcelWorksheet(Path inputFile, Path outputFile) {
+    ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+    saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+    saveOptions.setMinimizeTheNumberOfWorksheets(true);
+    saveDocument(inputFile, outputFile, saveOptions);
+}
 ```
 
-## Convert to XLSX format
+## Convert PDF to XLSM
 
-By default Aspose.PDF uses XML Spreadsheet 2003 for storing data. In order to convert PDF files to XLSX format, Aspose.PDF has a class called ExcelSaveOptions with Format. An object of the [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class is passed as a second argument to the Document.Save(..) method.
+Use this example when the PDF output should be saved as a macro-enabled Excel workbook.
+
+1. Open the source PDF document.
+1. Configure Excel save options for macro-enabled output.
+1. Save the XLSM file.
 
 ```java
-    public static void ConvertPDFtoExcelAdvanced_SaveXLSX() {
-        // Load PDF document
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
+public static void convertPdfToExcel2007Macro(Path inputFile, Path outputFile) {
+    ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+    saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSM);
+    saveDocument(inputFile, outputFile, saveOptions);
+}
+```
 
-        // Instantiate ExcelSave Option object
-        ExcelSaveOptions excelSave = new ExcelSaveOptions();
-        excelSave.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+## Convert PDF to CSV
 
-        // Save the output in XLS format
-        pdfDocument.save("PDFToXLS_out.xlsx", excelSave);
+Use this example when PDF tabular content should be exported as CSV.
+
+1. Open the source PDF document.
+1. Set the spreadsheet save options for CSV output.
+1. Save the generated CSV file.
+
+```java
+public static void convertPdfToExcel2007Csv(Path inputFile, Path outputFile) {
+    ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+    saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.CSV);
+    saveDocument(inputFile, outputFile, saveOptions);
+}
+```
+
+## Convert PDF to ODS
+
+Use this example when PDF content should be exported to the OpenDocument spreadsheet format.
+
+1. Open the source PDF document.
+1. Configure spreadsheet save options for ODS.
+1. Save the converted ODS file.
+
+```java
+public static void convertPdfToOds(Path inputFile, Path outputFile) {
+    ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+    saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
+    saveDocument(inputFile, outputFile, saveOptions);
+}
+```
+
+## Reuse a shared Excel save helper
+
+Use this helper when several Excel conversion examples should save the document through a common method.
+
+1. Open the source PDF document.
+1. Pass the prepared `ExcelSaveOptions` to the helper.
+1. Save the converted spreadsheet output.
+
+```java
+private static void saveDocument(Path inputFile, Path outputFile, ExcelSaveOptions saveOptions) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.save(outputFile.toString(), saveOptions);
     }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

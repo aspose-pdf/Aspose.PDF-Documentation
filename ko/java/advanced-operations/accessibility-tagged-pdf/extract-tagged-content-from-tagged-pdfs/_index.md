@@ -1,5 +1,5 @@
 ---
-title: PDF에서 태그가 지정된 콘텐츠 추출 
+title: PDF에서 태그가 지정된 콘텐츠 추출
 linktitle: 태그가 지정된 콘텐츠 추출
 type: docs
 weight: 20

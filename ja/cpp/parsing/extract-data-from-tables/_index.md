@@ -1,5 +1,5 @@
 ---
-title: PDFからテーブルのデータを抽出する 
+title: PDFからテーブルのデータを抽出する
 linktitle: テーブルからデータを抽出する
 type: docs
 weight: 40

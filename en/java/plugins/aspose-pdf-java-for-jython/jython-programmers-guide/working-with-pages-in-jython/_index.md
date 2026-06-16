@@ -1,11 +1,12 @@
 ---
 title: Working With Pages in Jython
+linktitle: Working With Pages in Jython
 type: docs
 weight: 30
 url: /java/working-with-pages-in-jython/
-lastmod: "2021-06-05"
+description: Learn how to access, manage, and manipulate PDF pages in Jython using Aspose.PDF for flexible document processing.
+lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Concatenate PDF Files in Jython](/pdf/java/concatenate-pdf-files-in-jython/)

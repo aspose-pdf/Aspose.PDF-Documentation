@@ -1,12 +1,12 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
 url: /ja/java/get-started/
 description: このセクションでは、作業の基本原則とDOM APIの使用について説明します。また、PDFドキュメントを作成するための単純および複雑な例を示します
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

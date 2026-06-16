@@ -1,38 +1,38 @@
 ---
-title: PythonでPDFファイルを分割
-linktitle: PDFファイルを分割
+title: Python で PDF ファイルを分割する方法
+linktitle: PDF ファイルの分割
 type: docs
 weight: 60
 url: /ja/python-net/split-pdf-document/
-description: PythonでPDFファイルを個々のページ、等しい部分、固定サイズのグループ、カスタムページ範囲、奇数または偶数ページに分割する方法を学びましょう。
-lastmod: "2026-04-15"
+description: Python で PDF ファイルを個々のページ、等しい部分、固定サイズのグループ、カスタムページ範囲、奇数ページまたは偶数ページに分割する方法を学びます。
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Pythonを使用してPDFをページおよびページ範囲に分割する
-Abstract: 本記事では、Aspose.PDF for Python via .NET を使用して PDF ファイルを分割する方法を示します。PDF を個別ページに分割する方法、2 等分に分割する方法、固定サイズのページグループに分割する方法、カスタムページ範囲で分割する方法、名前付きページグループ、安定したファイル名、奇数ページまたは偶数ページのファイルに分割する方法について説明します。
+AlternativeHeadline: Python を使用して PDF をページとページ範囲に分割する
+Abstract: この記事では、.NET 経由で Python 用 Aspose.PDF を使用して PDF ファイルを分割する方法を説明します。PDF を個々のページ、2 つの等しい部分、固定サイズのページグループ、カスタムページ範囲、名前付きページグループ、固定ファイル名、奇数ページまたは偶数ページファイルに分割する方法について説明します。
 ---
 
-このページでは、Aspose.PDF for Python via .NET を使用して **Python で PDF ファイルを分割する方法** を示します。
+このページでは、.NET 経由で Aspose.PDF for Python を使用して **Python で PDF ファイルを分割**する方法を説明します。
 
-大きな PDF を単一ページのファイル、等分された部分、固定サイズのグループ、カスタムページ範囲、または奇数・偶数ページのセットに分割して、配布、レビュー、または下流処理が必要な場合に、これらの例を使用してください。
+これらの例は、大きな PDF を、配布、レビュー、または下流処理のために、単一ページのファイル、等しい部分、固定サイズのグループ、カスタムページ範囲、奇数ページセットと偶数ページセットに分割する必要がある場合に使用します。
 
-## PDF オンライン分割例
+## PDF を分割するオンライン例
 
-[Aspose.PDF スプリッタ](https://products.aspose.app/pdf/splitter) オンラインのウェブアプリケーションで、PDF分割機能をテストできます。
+[Aspose.PDF スプリッター](https://products.aspose.app/pdf/splitter) は、PDF 分割機能をテストできるオンライン Web アプリケーションです。
 
-[![Aspose PDF 分割](splitter.png)](https://products.aspose.app/pdf/splitter)
+[![アスポーススプリット PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-PythonでPDFページを単一ページのPDFファイルに分割するには、次の手順に従ってください：
+Python で PDF ページを 1 ページの PDF ファイルに分割するには、次の手順に従います。
 
-1. PDFドキュメントのページをループ処理する [ドキュメント](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [ページコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) コレクション
-1. 各イテレーションごとに、新しい Document オブジェクトを作成し、個々のものを追加します。 [ページ](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 空のドキュメントにオブジェクト
-1. 新しいPDFを保存するには [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッド
+1. PDFドキュメントのページをループ処理して [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [ページコレクション](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) コレクション
+1. イテレーションごとに、新しい Document オブジェクトを作成し、個別のオブジェクトを追加します [ページ](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) オブジェクトを空の文書に入れる
+1. 次の方法で新しい PDF を保存します。 [保存 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法
 
-## PythonでPDFを複数のファイルに分割
+## Python でPDFを複数のファイルに分割する方法
 
-以下のPythonコードスニペットは、PDFページを個別のPDFファイルに分割する方法を示しています。
+次の Python コードスニペットは、PDF ページを個別の PDF ファイルに分割する方法を示しています。
 
 ```python
 import sys
@@ -48,17 +48,17 @@ def split_documents(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num}.pdf"))
 ```
 
-## PDF を二等分に分割する
+## PDF を 2 つの等しい部分に分割する
 
-1. PDFドキュメントを読み込みます。
-1. 総ページ数を決定する。
-1. 中点を計算してください。
-1. 最初の出力ドキュメントを作成してください。
-1. 最初の文書から後半のページを削除します。
-1. 最初の部分を保存してください。
-1. 2番目の出力ドキュメントを作成してください。
-1. 2番目のドキュメントから前半のページを削除します。
-1. 2番目の部分を保存してください。
+1. PDF ドキュメントをロードします。
+1. ページの総数を決定します。
+1. 中間点を計算します。
+1. 最初の出力ドキュメントを作成します。
+1. 最初の文書から後半ページを削除します。
+1. 最初の部分を保存します。
+1. 2 番目の出力ドキュメントを作成します。
+1. 2 番目の文書から前半ページを削除します。
+1. 2 番目の部分を保存します。
 
 ```python
 import sys
@@ -84,19 +84,19 @@ def split_documents_into_two_parts(infile, outdir):
         second_document.save(path.join(outdir, "Part_2.pdf"))
 ```
 
-## PDF を N ページごとに複数のファイルに分割する
+## NページごとにPDFを複数のファイルに分割
 
-固定ページ数に基づいて、Aspose.PDF for Python を使用して PDF ドキュメントを複数の小さなファイルに分割します。
+Aspose.PDF for Python を使用して、PDF ドキュメントを一定のページ数に基づいて複数の小さなファイルに分割します。
 
-1. PDFドキュメントを読み込みます。
-1. 総ページ数を決定する。
-1. パートごとのページ数を定義する。
-1. ドキュメントをチャンクごとに反復処理する。
-1. 各パートのページ範囲を計算してください。
-1. 各パートごとに新しいドキュメントを作成してください。
-1. 新しいドキュメントにページをコピーします。
-1. 分割された文書を保存してください。
-1. すべてのページが処理されるまで繰り返す。
+1. PDF ドキュメントをロードします。
+1. ページの総数を決定します。
+1. パーツごとにページを定義します。
+1. ドキュメントをチャンク単位で反復処理します。
+1. 各パーツのページ範囲を計算します。
+1. パーツごとに新しいドキュメントを作成します。
+1. ページを新しい文書にコピーします。
+1. 分割した文書を保存します。
+1. すべてのページが処理されるまで繰り返します。
 
 ```python
 import sys
@@ -122,20 +122,20 @@ def split_documents_every_n_pages(infile, outdir, pages_per_part=3):
         part_index += 1
 ```
 
-## PDFをカスタムページ範囲で分割する
+## PDF をカスタムページ範囲で分割
 
-Aspose.PDF for Python を使用して、カスタム定義されたページ範囲に基づき PDF ドキュメントを複数のファイルに分割します。
+Aspose.PDF for Python を使用して、カスタム定義のページ範囲に基づいて PDF ドキュメントを複数のファイルに分割します。
 
-1. PDFドキュメントを読み込みます。
-1. 総ページ数を決定する。
-1. （start_page, end_page）範囲を表すタプルのリストを作成する。
-1. 定義された範囲を反復処理する。
-1. 開始ページを検証してください。
-1. 最終ページを調整してください。
+1. PDF ドキュメントをロードします。
+1. ページの総数を決定します。
+1. (開始ページ、終了ページ) 範囲を表すタプルのリストを作成します。
+1. 定義した範囲を繰り返し処理します。
+1. スタートページを検証してください。
+1. 終了ページを調整してください。
 1. 有効範囲を検証してください。
-1. 各範囲に対して新しいドキュメントを作成します。
-1. 新しいドキュメントにページをコピーします。
-1. 各分割ドキュメントを保存します。
+1. 範囲ごとに新しい文書を作成します。
+1. ページを新しい文書にコピーします。
+1. 分割された各文書を保存します。
 
 ```python
 import sys
@@ -165,20 +165,20 @@ def split_documents_by_page_ranges(infile, outdir):
             )
 ```
 
-## PDF を最初のページと残りのページに分割する
+## PDF を最初のページと残りのページに分割
 
-Aspose.PDF for Python を使用して、PDF ドキュメントの最初のページを残りのページから切り離します。
+Aspose.PDF for Python を使用して、PDF ドキュメントの最初のページを残りのページから分離します。
 
-1. PDFドキュメントを読み込みます。
-1. 総ページ数を決定する。
-1. ドキュメントが空であるかどうかを確認してください。
-1. 最初のページのドキュメントを作成してください。
-1. 最初のページを追加する。
-1. 最初のページのドキュメントを保存してください。
-1. 追加のページがあるか確認してください。
-1. 残りのページ用にドキュメントを作成してください。
-1. 残りのページをコピーする。
-1. 残りのページのドキュメントを保存します。
+1. PDF ドキュメントをロードします。
+1. ページの総数を決定します。
+1. 文書が空かどうかを確認してください。
+1. 最初のページの文書を作成します。
+1. 最初のページを追加します。
+1. 最初のページの文書を保存します。
+1. 他のページがあるか確認してください。
+1. 残りのページの文書を作成します。
+1. 残りのページをコピーします。
+1. 残りのページの文書を保存します。
 
 ```python
 import sys
@@ -206,18 +206,18 @@ def split_documents_first_page_and_rest(infile, outdir):
         remaining_pages_document.save(path.join(outdir, "Remaining_Pages.pdf"))
 ```
 
-## PDF を最後のページとそれ以前のページに分割する
+## PDF を最後のページと前のページに分割
 
-Aspose.PDF for Python を使用して、PDF ドキュメントの最後のページを抽出し、残りのページから分離します。
+Aspose.PDF for Python を使用して PDF ドキュメントの最後のページを抽出し、それを残りのページから分離します。
 
-1. PDFドキュメントを読み込みます。
-1. 総ページ数を決定する。
-1. ドキュメントが空であるかどうかを確認してください。
-1. 最後のページ用のドキュメントを作成します。
-1. 最後のページを追加する。
-1. 最後のページのドキュメントを保存します。
-1. 単一ページの文書をチェックしてください。
-1. 元のドキュメントから最後のページを削除します。
+1. PDF ドキュメントをロードします。
+1. ページの総数を決定します。
+1. 文書が空かどうかを確認してください。
+1. 最後のページの文書を作成します。
+1. 最後のページを追加します。
+1. 最後のページの文書を保存します。
+1. 単一ページの文書を確認してください。
+1. 元の文書から最後のページを削除します。
 1. 残りのページを保存します。
 
 ```python
@@ -244,20 +244,20 @@ def split_documents_last_page_and_rest(infile, outdir):
     document.save(path.join(outdir, "Previous_Pages.pdf"))
 ```
 
-## PDF を 3 部に分割する
+## PDF を 3 つの部分に分割
 
-Aspose.PDF for Python を使用して PDF 文書を 3 つの別々の部分に分割します。
+Python 用 Aspose.PDF を使用して PDF ドキュメントを 3 つの部分に分割します。
 
-1. PDFドキュメントを読み込みます。
-1. 総ページ数を決定する。
-1. ドキュメントが空であるかどうかを確認してください。
-1. パートサイズを計算する。
-1. 3つの部分を反復処理する。
-1. 各パートのページ範囲を決定します。
+1. PDF ドキュメントをロードします。
+1. ページの総数を決定します。
+1. 文書が空かどうかを確認してください。
+1. パーツサイズを計算します。
+1. 3 つのパートを繰り返します。
+1. 各パーツのページ範囲を指定します。
 1. ページ範囲を検証してください。
-1. 各パートごとに新しいドキュメントを作成してください。
-1. ページをパート文書にコピーします。
-1. 各パートを保存してください。
+1. パーツごとに新しいドキュメントを作成します。
+1. ページをパーツドキュメントにコピーします。
+1. 各パーツを保存します。
 
 ```python
 import sys
@@ -287,9 +287,9 @@ def split_documents_into_three_parts(infile, outdir):
             part_document.save(path.join(outdir, f"Three_Parts_{part_index + 1}.pdf"))
 ```
 
-## カスタム PDF ページ分割ツール
+## カスタム PDF ページスプリッター
 
-Aspose.PDF for Python を使用して、カスタムで定義されたページグループに基づき、PDF ドキュメントを複数のファイルに分割します。
+Aspose.PDF for Python を使用して、カスタム定義のページグループに基づいて PDF ドキュメントを複数のファイルに分割します。
 
 ```python
 import sys
@@ -316,9 +316,9 @@ def split_documents_custom_page_groups(infile, outdir):
             group_document.save(path.join(outdir, f"Custom_Group_{group_index}.pdf"))
 ```
 
-## PDF を個別ページに分割し、安定したファイル名を付ける
+## PDF を安定したファイル名で個々のページに分割
 
-Aspose.PDF for Python を使用して、PDF ドキュメントを個々のページに分割し、安定したファイル名で保存します。
+PDF ドキュメントを個々のページに分割し、Aspose.PDF for Python を使用して安定したファイル名で保存します。
 
 ```python
 import sys
@@ -336,9 +336,9 @@ def split_documents_with_stable_filenames(infile, outdir):
             new_document.save(path.join(outdir, f"Page_{page_num:03d}.pdf"))
 ```
 
-## PDFを奇数ページと偶数ページに分割
+## PDF を奇数ページと偶数ページに分割
 
-Aspose.PDF for Python を使用して、PDF ドキュメントを奇数ページと偶数ページそれぞれを含む 2 つの別々のファイルに分割します。
+Aspose.PDF for Python を使用して、PDF ドキュメントをそれぞれ奇数ページと偶数ページを含む 2 つのファイルに分割します。
 
 ```python
 import sys
@@ -363,9 +363,10 @@ def split_documents_odd_even_pages(infile, outdir):
             even_document.save(path.join(outdir, "Even_Pages.pdf"))
 ```
 
-## 関連文書トピック
+## 関連ドキュメントトピック
 
-- [PythonでPDF文書を扱う](/pdf/ja/python-net/working-with-documents/)
-- [PythonでPDFファイルを結合する](/pdf/ja/python-net/merge-pdf-documents/)
-- [PythonでPDFファイルを最適化する](/pdf/ja/python-net/optimize-pdf/)
-- [PythonでPDFドキュメントを操作する](/pdf/ja/python-net/manipulate-pdf-document/)
+- [Python で PDF ドキュメントを操作する](/pdf/ja/python-net/working-with-documents/)
+- [Python で PDF ファイルをマージする](/pdf/ja/python-net/merge-pdf-documents/)
+- [Python で PDF ファイルを最適化する方法](/pdf/ja/python-net/optimize-pdf/)
+- [Python で PDF ドキュメントを操作する方法](/pdf/ja/python-net/manipulate-pdf-document/)
+

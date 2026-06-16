@@ -1,5 +1,5 @@
 ---
-title: إضافة نص إلى ملف PDF 
+title: إضافة نص إلى ملف PDF
 linktitle: إضافة نص إلى ملف PDF
 type: docs
 weight: 10

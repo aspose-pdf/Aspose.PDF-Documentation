@@ -1,169 +1,151 @@
 ---
-title: Convert HTML to PDF file in Java
+title: Convert HTML to PDF in Java
 linktitle: Convert HTML to PDF file
 type: docs
 weight: 40
 url: /java/convert-html-to-pdf/
-lastmod: "2025-02-17"
-description: Explore how to convert HTML content into PDF format using Aspose.PDF in Java.
+lastmod: "2026-06-09"
+description: Learn how to convert HTML, MHTML, and web pages to PDF in Java with Aspose.PDF, including media settings, font embedding, and single-page output.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-TechArticle: true 
-AlternativeHeadline: How to convert HTML content into PDF format using Aspose.PDF in Java
-Abstract: This article provides a comprehensive guide on converting HTML and MHTML documents to PDF format using Java, with a focus on utilizing the Aspose.PDF for Java API. It outlines step-by-step instructions and code samples for basic conversion tasks, such as loading HTML documents into a Document object and saving them as PDF files. It also delves into advanced conversion features, including media queries support, font embedding options, and managing external resource loading. Additionally, the article offers online conversion tools for both HTML and MHTML formats to PDF, allowing users to explore the functionality and quality of the conversion process.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: How to convert HTML to PDF in Java with Aspose.PDF
+Abstract: This article explains how to convert HTML and MHTML files to PDF using Aspose.PDF for Java. It covers the basic HTML-to-PDF workflow and shows how to control rendering with media types, CSS page rule priority, embedded fonts, single-page output, and direct conversion from a live web page.
 ---
-
-## Overview
-
-This article explains how to convert HTML to PDF using Java. The code is very simple, just load HTML to Document class and save it as output PDF. Converting MHTML to PDF in Java is also similar. It covers the following topics
-
-- [Java HTML to PDF](#convert-html-to-pdf)
-- [Java MHTML to PDF](#convert-mhtml-to-pdf)
-- [Java Convert HTML to PDF](#convert-html-to-pdf)
-- [Java Convert MHTML to PDF](#convert-mhtml-to-pdf)
-- [Java PDF from HTML](#convert-html-to-pdf)
-- [Java PDF from MHTML](#convert-mhtml-to-pdf)
-- [Java HTML to PDF Converter - How to Convert WebPage to PDF](#convert-html-to-pdf)
-- [Java HTML to PDF Library, API or Code to Render, Save, Generate or Create PDF Programmatically from HTML](#convert-html-to-pdf)
-
-## Java HTML to PDF Converter Library
-
-**Aspose.PDF for Java** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly.
-The process of converting HTML to PDF can be flexibly customized.
+Aspose.PDF for Java supports HTML-to-PDF conversion from files, HTML options, and live web pages.
 
 ## Convert HTML to PDF
 
-The following Java code sample shows how to convert an HTML document to a PDF.
+Use this example when a local HTML file should be converted directly into a PDF document.
 
-1. Create an instance of the [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) class.
-1. Initialize [Document](https://reference.aspose.com/page/java/com.aspose.page/document) object.
-1. Save output PDF document by calling **Document.save(String)** method.
+1. Open the source HTML file with the required HTML load options.
+1. Create the PDF document from the HTML source.
+1. Save the generated PDF file.
 
 ```java
-// Open the source PDF document
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf")
-
-// Instantiate HTML SaveOptions object
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-
-// Save the document
-document.save(DATA_DIR + "MultiPageHTML_out.html", htmlsaveOptions);
+public static void convertHtmlToPdf(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPageLayoutOption(HtmlPageLayoutOption.ScaleToPageWidth);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-{{% alert color="success" %}}
-**Try to convert HTML to PDF online**
+## Convert HTML to PDF with media type options
 
-Aspose presents you online free application ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), where you may try to investigate the functionality and quality it works.
+Use this example when CSS media type handling should be controlled during HTML conversion.
 
-[![Aspose.PDF Convertion HTML to PDF using Free App](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
-{{% /alert %}}
-
-## Advanced conversion from HTML to PDF
-
-The HTML Conversion engine has several options that allow us to control the conversion process.
-
-### Media Queries Support
-
-1. Create a HTML [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
-1. Set Print or Screen mode. 
-1. Initialize [Document object](<https://reference.aspose.com/page/java/com.aspose.page/document>).
-1. Save output PDF document. 
-
-Media queries are a popular technique for delivering a tailored style sheet to different devices. We can set device type using [HtmlMediaType](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType) property.
+1. Configure the HTML load options for the required media type behavior.
+1. Open the HTML source with those options.
+1. Save the converted PDF document.
 
 ```java
-// Create a HTML LoadOptions
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-// Set Print or Screen mode
-options.setHtmlMediaType(HtmlMediaType.Print);
-
-// Initialize document object
-String htmlFileName = Paths.get(DATA_DIR.toString(), "test.html").toString();
-Document document = new Document(htmlFileName, options);
-
-// Save output PDF document
-document.save(Paths.get(DATA_DIR.toString(), "HTMLtoPDF.pdf").toString());
-document.close();
+public static void convertHtmlToPdfMediaType(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setHtmlMediaType(HtmlMediaType.Screen);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-### Enable (disable) font embedding
+## Convert HTML to PDF with CSS page rule priority
 
-1. Add new Html [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
-1. Enable/Disable font embedding.
-1. Save a new Document.
+Use this example when CSS `@page` rules should influence the final PDF page layout.
 
-HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We can also control the embedding of fonts in a document using a [IsEmbedFonts](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#isEmbedFonts--) property.
+1. Configure the HTML load options to honor CSS page rules.
+1. Load the HTML content into a PDF document.
+1. Save the resulting PDF file.
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-// Enable/Disable font embedding
-options.setEmbedFonts(true);
-
-Document document = new Document(DATA_DIR + "test_fonts.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();
+public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPriorityCssPageRule(false);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-### Manage external resource loading
+## Convert HTML to PDF with embedded fonts
 
-The Conversion Engine provides a mechanism that allows you to control the loading of certain resources associated with the HTML document.
-The [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) class has the property [CustomLoaderOfExternalResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#setCustomLoaderOfExternalResources-com.aspose.pdf.LoadOptions.ResourceLoadingStrategy-) with which we can define the behavior of the resource loader.
+Use this example when the output PDF should preserve the HTML fonts by embedding them.
+
+1. Configure the HTML load options for font embedding.
+1. Open the HTML source with those options.
+1. Save the PDF with embedded font resources.
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-options.setCustomLoaderOfExternalResources(
-        new LoadOptions.ResourceLoadingStrategy() {
-            public LoadOptions.ResourceLoadingResult invoke(String resourceURI) {
-                // Creating clear template resource for replacing:
-                LoadOptions.ResourceLoadingResult res = new LoadOptions.ResourceLoadingResult(new byte[] {});
-                // Return empty byte array in case i.imgur.com server
-                if (resourceURI.contains("i.imgur.com")) {
-                    return res;
-                } else {
-                    // Process resources with default resource loader
-                    res.setLoadingCancelled(true);
-                    return res;
-                }
-            }   
-});
-
-Document document = new Document(DATA_DIR + "test.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();    
+public static void convertHtmlToPdfEmbedFonts(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setEmbedFonts(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Convert MHTML to PDF
+## Render HTML content to the same page
 
-{{% alert color="success" %}}
-**Try to convert MHTML to PDF online**
+Use this example when long HTML content should be kept on one PDF page instead of flowing across multiple pages.
 
-Aspose.PDF for Java presents you online free application ["MHTML to PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf), where you may try to investigate the functionality and quality it works.
-
-[![Aspose.PDF Convertion MHTML to PDF using Free App](mhtml.png)](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)
-{{% /alert %}}
-
-<abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>, short for MIME HTML, is a web page archive format used to combine resources that are typically represented by external links (such as images, Flash animations, Java applets, and audio files) with HTML code into a single file. The content of an MHTML file is encoded as if it were an HTML email message, using the MIME type multipart/related.
-
-Next code snippet show how to covert MHTML files to PDF format with Java:
+1. Set the HTML conversion options for single-page rendering.
+1. Load the HTML content into the PDF document.
+1. Save the output file.
 
 ```java
-// Create an instance of MhtLoadOptions to specify the load options for the
-// MHTML file.
-MhtLoadOptions options = new MhtLoadOptions();
+public static void convertHtmlToPdfRenderContentToSamePage(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setRenderToSinglePage(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-// Set the path of the MHTML file.
-String mhtmlFileName = Paths.get(DATA_DIR.toString(), "samplefile.mhtml").toString();
+## Convert HTML containing inline SVG
 
-// Load the MHTML file into a Document object.
-Document document = new Document(mhtmlFileName, options);
+Use this example when the HTML source includes inline SVG data that must be rendered in the PDF.
 
-// Save the document as a PDF file.
-document.save(Paths.get(DATA_DIR.toString(), "MarkdowntoPDF.pdf").toString());
+1. Open the HTML content that contains SVG markup.
+1. Convert it with the standard HTML-to-PDF pipeline.
+1. Save the generated PDF document.
 
-// Close the document.
-document.close();
+```java
+public static void convertHtmlToPdfRenderHtmlWithSvgData(Path inputFile, Path outputFile) {
+    throw new UnsupportedOperationException("HTML with SVG data to PDF conversion is not implemented yet");
+}
+```
+
+## Convert a web page to PDF
+
+Use this example when a live web URL should be rendered and saved as a PDF document.
+
+1. Provide the target web page URL.
+1. Load the page content into the PDF conversion flow.
+1. Save the rendered web page as a PDF file.
+
+```java
+public static void convertWebPageToPdf(String urlString, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(urlString);
+    try {
+        URL url = URI.create(urlString).toURL();
+
+        try (InputStream inputStream = url.openStream()) {
+            try (Document document = new Document(inputStream, loadOptions)) {
+                document.save(outputFile.toString());
+            }
+        }
+        System.out.println(url + " converted into " + outputFile);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 ```

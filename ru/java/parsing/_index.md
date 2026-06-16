@@ -1,5 +1,5 @@
 ---
-title: Разбор PDF документов 
+title: Разбор PDF документов
 linktitle: Разбор PDF документов
 type: docs
 weight: 60

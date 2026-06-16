@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to Text in Python
-linktitle: Convert PDF to other formats 
+linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /python-cpp/convert-pdf-to-other-files/

@@ -1,11 +1,11 @@
 ---
-title: Convert PDF to PDF/A formats 
+title: Convert PDF to PDF/A formats
 linktitle: Convert PDF to PDF/A formats
 type: docs
 weight: 100
 url: /id/php-java/convert-pdf-to-pdfa/
 lastmod: "2024-05-20"
-description: Topik ini menunjukkan kepada Anda bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF ke file PDF yang sesuai dengan PDF/A. 
+description: Topik ini menunjukkan kepada Anda bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF ke file PDF yang sesuai dengan PDF/A.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

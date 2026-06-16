@@ -6,7 +6,7 @@ weight: 30
 url: /pt/php-java/get-started/
 description: Esta seção descreve os princípios básicos de trabalho e uso da API. Também demonstra exemplos simples e complexos para criar um documento PDF
 lastmod: "2024-06-05"
-sitemap: 
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

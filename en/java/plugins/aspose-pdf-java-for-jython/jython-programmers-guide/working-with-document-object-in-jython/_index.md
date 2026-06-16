@@ -1,12 +1,12 @@
 ---
 title: Working With Document Object in Jython
+linktitle: Working With Document Object in Jython
 type: docs
 weight: 20
 url: /java/working-with-document-object-in-jython/
 description: Understand how to manipulate PDF document objects in Jython with Aspose.PDF, allowing for efficient document management.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Adding JavaScript using DOM in Jython](/pdf/java/adding-javascript-using-dom-in-jython/)

@@ -1,5 +1,5 @@
 ---
-title: Mengonversi DICOM ke PDF 
+title: Mengonversi DICOM ke PDF
 linktitle: Mengonversi DICOM ke PDF
 type: docs
 weight: 250

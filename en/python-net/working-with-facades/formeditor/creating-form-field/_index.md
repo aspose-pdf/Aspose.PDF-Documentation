@@ -1,5 +1,6 @@
 ---
-title: Creating Form Field
+title: Creating Form Field
+linktitle: Creating Form Field
 type: docs
 weight: 50
 url: /python-net/creating-form-field/

@@ -1,5 +1,5 @@
 ---
-title: Mengonversi BMP ke PDF 
+title: Mengonversi BMP ke PDF
 linktitle: Mengonversi BMP ke PDF
 type: docs
 weight: 220

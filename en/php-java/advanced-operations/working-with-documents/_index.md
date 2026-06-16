@@ -1,5 +1,5 @@
 ---
-title: Working with PDF Documents 
+title: Working with PDF Documents
 linktitle: Working with Documents
 type: docs
 weight: 10

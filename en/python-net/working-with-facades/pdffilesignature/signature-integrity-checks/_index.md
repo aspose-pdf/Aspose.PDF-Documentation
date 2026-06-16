@@ -1,5 +1,6 @@
 ---
-title: Signature Integrity Checks
+title: Signature Integrity Checks
+linktitle: Signature Integrity Checks
 type: docs
 weight: 70
 url: /python-net/signature-integrity-checks/

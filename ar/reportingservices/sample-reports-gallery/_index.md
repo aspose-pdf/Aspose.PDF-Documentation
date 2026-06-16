@@ -1,5 +1,5 @@
 ---
-title: معرض التقارير النموذجية 
+title: معرض التقارير النموذجية
 type: docs
 weight: 40
 url: /ar/reportingservices/sample-reports-gallery/

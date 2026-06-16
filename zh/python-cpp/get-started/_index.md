@@ -1,12 +1,12 @@
 ---
-title: 开始使用 
+title: 开始使用
 linktitle: 开始使用
 type: docs
 weight: 30
 url: /zh/python-cpp/get-started/
 description: 本页面概述了如何通过 C++ 使用 Aspose.PDF for Python 来创建和编辑 PDF 文档
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

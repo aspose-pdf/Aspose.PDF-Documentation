@@ -1,168 +1,115 @@
 ---
-title: Using Tooltip 
+title: Add Tooltips to PDF Text in Java
 linktitle: PDF Tooltip
 type: docs
 weight: 20
 url: /java/pdf-tooltip/
-description: Learn how to add tooltip to the text fragment in PDF using Java and Aspose.PDF.
-lastmod: "2025-02-17"
+description: Learn how to add tooltips to text fragments in PDF documents in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to add tooltip to the text fragment in PDF using Aspose.PDF for Java
-Abstract: The article provides a detailed guide on how to add tooltips to specific text within a PDF document using Aspose.PDF for Java. The process involves creating an invisible button over the text that will display the tooltip when hovered over by the mouse. This is achieved by using the `TextFragmentAbsorber` to locate the text and `ButtonField` to create an invisible button with an `AlternateName` as the tooltip. Additionally, the article discusses implementing a feature to show or hide a text block on mouse hover using `Aspose.Pdf.Annotations.HideAction` class. The article includes Java code snippets demonstrating both functionalities and highlights compatibility considerations for different PDF readers, noting specific behaviors in browsers like Internet Explorer, Opera, and Google Chrome. It emphasizes checking PDF reader documentation for handling tooltip lengths and provides insights into ensuring the correct display of hidden text blocks across platforms.
-SoftwareApplication: java 
+TechArticle: true
+AlternativeHeadline: Add interactive tooltips to PDF text fragments using Java
+Abstract: This article shows how to add interactive help to PDF text using Aspose.PDF for Java. It covers attaching tooltip text to invisible button fields placed over matched text fragments and creating a hidden text field that appears when the pointer enters a trigger area.
 ---
+Aspose.PDF for Java lets you add interactive help by placing form fields over text fragments.
 
-## Add Tooltip to Searched Text by adding Invisible Button
+## Add tooltips to matched text
 
-It is often required to add some details for a phrase or specific word as a tooltip in the PDF document so that it can popup when the user hovers the mouse cursor over the text. Aspose.PDF for Java provides this feature to create tooltips by adding an invisible button over the searched text. The following code snippet will show you the way to achieve this functionality:
+Use this example when existing text in the PDF should show a tooltip on hover.
+
+1. Create the sample PDF and reopen it for editing.
+1. Search the target text fragments with `TextFragmentAbsorber`.
+1. Place `ButtonField` overlays on the matched text and assign tooltip text.
+1. Save the updated document.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addToolTipToSearchedText(Path outputFile) {
+        Document document = new Document();
+        document.getPages().add().getParagraphs()
+                .add(new TextFragment("Move the mouse cursor here to display a tooltip"));
+        document.getPages().get_Item(1).getParagraphs()
+                .add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        document.save(outputFile.toString());
+        document.close();
 
-import com.aspose.pdf.ButtonField;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.TextFragment;
-import com.aspose.pdf.TextFragmentAbsorber;
-import com.aspose.pdf.TextFragmentCollection;
-
-public class ExampleToolTip {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void AddToolTip() {
-        String outputFile = _dataDir + "Tooltip_out.pdf";
-
-        // Create sample document with text
-        Document doc = new Document();
-        doc.getPages().add().getParagraphs().add(new TextFragment("Move the mouse cursor here to display a tooltip"));
-        doc.getPages().get_Item(1).getParagraphs().add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
-        doc.save(outputFile);
-
-        // Open document with text
-        Document document = new Document(outputFile);
-        // Create TextAbsorber object to find all the phrases matching the regular expression
-        TextFragmentAbsorber absorber = new TextFragmentAbsorber("Move the mouse cursor here to display a tooltip");
-        // Accept the absorber for the document pages
+        document = new Document(outputFile.toString());
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                "Move the mouse cursor here to display a tooltip");
         document.getPages().accept(absorber);
-        // Get the extracted text fragments
-        TextFragmentCollection textFragments = absorber.getTextFragments();
 
-        // Loop through the fragments
-        for(TextFragment fragment : textFragments)
-        {
-            // Create invisible button on text fragment position
+        for (TextFragment fragment : absorber.getTextFragments()) {
             ButtonField field = new ButtonField(fragment.getPage(), fragment.getRectangle());
-            // AlternateName value will be displayed as tooltip by a viewer application
-            field.setAlternateName ("Tooltip for text.");
-            // Add button field to the document
+            field.setAlternateName("Tooltip for text.");
             document.getForm().add(field);
         }
 
-        // Next will be sapmle of very long tooltip
         absorber = new TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
         document.getPages().accept(absorber);
-        textFragments = absorber.getTextFragments();
 
-        for(TextFragment fragment : textFragments)
-        {
+        for (TextFragment fragment : absorber.getTextFragments()) {
             ButtonField field = new ButtonField(fragment.getPage(), fragment.getRectangle());
-            // Set very long text
-            field.setAlternateName ("Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-                                    " sed do eiusmod tempor incididunt ut labore et dolore magna" +
-                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
-                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
-                                    " Duis aute irure dolor in reprehenderit in voluptate velit" +
-                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
-                                    " occaecat cupidatat non proident, sunt in culpa qui officia" +
-                                    " deserunt mollit anim id est laborum.");
+            field.setAlternateName("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                    + " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                    + " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                    + " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    + " Duis aute irure dolor in reprehenderit in voluptate velit"
+                    + " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                    + " occaecat cupidatat non proident, sunt in culpa qui officia"
+                    + " deserunt mollit anim id est laborum.");
             document.getForm().add(field);
         }
 
-        // Save document
-        document.save(outputFile);
+        document.save(outputFile.toString());
+        document.close();
     }
-}
 ```
 
-{{% alert color="primary" %}}
+## Show a floating text block on hover
 
-Concerning to the length of the tooltip, the tooltip text is contained in the PDF document as PDF string type, outside of the content stream. There is no effective restriction on such strings in PDF files (See PDF Reference Appendix C.). However, a conforming reader (e.g. Adobe Acrobat) running on a particular processor and in a particular operating environment does have such a limit. Please refer to your PDF reader application documentation.
+Use this example when hovering over a text area should reveal a hidden text field.
 
-{{% /alert %}}
-
-## Create a Hidden Text Block and Show it on Mouse Over
-
-In Aspose.PDF, a feature to hide actions is implemented by which it is possible to show/hide text box field (or any other type of annotation) on mouse enter/exit over some invisible button. For this purpose, Aspose.Pdf.Annotations.HideAction Class is used to assign the action of hide/show to the text block. Please use the following code snippet to Show/Hide a Text Block on Mouse Enter/Exit.
-
-Please also take into account that PDF actions in the documents work fine in the conforming readers (e.g. Adobe Reader) but no warranties for other PDF readers (e.g. web browser plugins). We have provided a brief investigation and found:
-
-- All implementations of the hide action in PDF documents work fine in Internet Explorer v.11.0.
-- All implementations of the hide action also work in Opera v.12.14, but we spot some response delay at the first opening of the document.
-- Only implementation using HideAction constructor accepting field name works if Google Chrome v.61.0 browses the document; Please use corresponding constructors if browsing in the Google Chrome is significant:
-
->buttonField.Actions.OnEnter = new HideAction(floatingField.FullName, false);
->buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
+1. Create the sample PDF and reopen it for editing.
+1. Find the trigger text fragment with `TextFragmentAbsorber`.
+1. Create a hidden `TextBoxField` and a `ButtonField` with enter and exit actions.
+1. Save the final PDF.
 
 ```java
-    public static void name() {
-        String outputFile = _dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
+public static void createHiddenTextBlock(Path outputFile) {
+    Document document = new Document();
+    document.getPages().add().getParagraphs()
+            .add(new TextFragment("Move the mouse cursor here to display floating text"));
+    document.save(outputFile.toString());
+    document.close();
 
-        // Create sample document with text
-        Document doc = new Document();
-        doc.getPages().add().getParagraphs().add(new TextFragment("Move the mouse cursor here to display floating text"));
-        doc.save(outputFile);
+    document = new Document(outputFile.toString());
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+            "Move the mouse cursor here to display floating text");
+    document.getPages().accept(absorber);
+    TextFragment fragment = absorber.getTextFragments().get_Item(1);
 
-        // Open document with text
-        Document document = new Document(outputFile);
-        // Create TextAbsorber object to find all the phrases matching the regular expression
-        TextFragmentAbsorber absorber = new TextFragmentAbsorber("Move the mouse cursor here to display floating text");
-        // Accept the absorber for the document pages
-        document.getPages().accept(absorber);
-        // Get the first extracted text fragment
-        TextFragmentCollection textFragments = absorber.getTextFragments();
-        TextFragment fragment = textFragments.get_Item(1);
+    TextBoxField floatingField = new TextBoxField(
+            fragment.getPage(), new Rectangle(100.0, 700.0, 220.0, 740.0, false));
+    floatingField.setValue("This is the \"floating text field\".");
+    floatingField.setReadOnly(true);
+    floatingField.setFlags(floatingField.getFlags() | AnnotationFlags.Hidden);
+    floatingField.setPartialName("FloatingField_1");
+    floatingField.setDefaultAppearance(new DefaultAppearance("Helv", 10, java.awt.Color.BLUE));
+    floatingField.getCharacteristics().setBackground(java.awt.Color.CYAN);
+    floatingField.getCharacteristics().setBorder(java.awt.Color.BLUE);
+    floatingField.setBorder(new Border(floatingField));
+    floatingField.getBorder().setWidth(1);
+    floatingField.setMultiline(true);
 
-        // Create hidden text field for floating text in the specified rectangle of the page
-        TextBoxField floatingField = new TextBoxField(fragment.getPage(), new Rectangle(100, 700, 220, 740));
-        // Set text to be displayed as field value
-        floatingField.setValue ("This is the \"floating text field\".");
-        // We recommend to make field 'readonly' for this scenario
-        floatingField.setReadOnly(true);
+    document.getForm().add(floatingField);
 
-        // Set 'hidden' flag to make field invisible on document opening
-        floatingField.setFlags( floatingField.getFlags() | AnnotationFlags.Hidden);
+    ButtonField buttonField = new ButtonField(fragment.getPage(), fragment.getRectangle());
+    buttonField.getAnnotationActions().setOnEnter(new HideAction(floatingField, false));
+    buttonField.getAnnotationActions().setOnExit(new HideAction(floatingField));
 
-        // Setting a unique field name isn't necessary but allowed
-        floatingField.setPartialName ("FloatingField_1");
-
-        // Setting characteristics of field appearance isn't necessary but makes it better
-        DefaultAppearance da = new DefaultAppearance("Helvetica", 16, java.awt.Color.RED);
-        floatingField.setDefaultAppearance(da);
-        //new DefaultAppearance("Helv", 10, Color.getBlue()
-        floatingField.getCharacteristics().setBackground(Color.getLightBlue());
-        floatingField.getCharacteristics().setBorder(Color.getDarkBlue());;
-        floatingField.setBorder(new Border(floatingField));
-        floatingField.getBorder().setWidth(1);
-        floatingField.setMultiline(true);
-
-        // Add text field to the document
-        document.getForm().add(floatingField);
-
-        // Create invisible button on text fragment position
-        Field buttonField = new ButtonField(fragment.getPage(), fragment.getRectangle());
-        // Create new hide action for specified field (annotation) and invisibility flag.
-        // (You also may reffer floating field by the name if you specified it above.)
-        // Add actions on mouse enter/exit at the invisible button field
-        buttonField.getActions().setOnEnter(new HideAction(floatingField, false));
-        buttonField.getActions().setOnExit (new HideAction(floatingField));
-
-        // Add button field to the document
-        document.getForm().add(buttonField);
-
-        // Save document
-        document.save(outputFile);
-    }
+    document.getForm().add(buttonField);
+    document.save(outputFile.toString());
+    document.close();
+}
 ```

@@ -1,10 +1,11 @@
 ---
 title: License
+linktitle: License
 type: docs
 weight: 60
 url: /sharepoint/license-aspose-pdf-for-sharepoint/
 lastmod: "2020-12-16"
-description: Learn about installation, testing and uninstallation of PDF SharePoint API license. 
+description: Learn about installation, testing and uninstallation of PDF SharePoint API license.
 ---
 
 **This section includes the following topics:**

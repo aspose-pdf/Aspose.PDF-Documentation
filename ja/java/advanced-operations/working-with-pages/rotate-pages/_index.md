@@ -1,5 +1,5 @@
 ---
-title: プログラムでPDFページを回転 
+title: プログラムでPDFページを回転
 linktitle: PDFページを回転
 type: docs
 weight: 60

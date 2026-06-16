@@ -1,10 +1,10 @@
 ---
 title: Establecer el color de fondo para PDF con JavaScript a través de C++
-linktitle: Establecer color de fondo 
+linktitle: Establecer color de fondo
 type: docs
 weight: 80
 url: /es/javascript-cpp/set-background-color/
-description: Establecer el color de fondo para tu archivo PDF con JavaScript a través de C++. 
+description: Establecer el color de fondo para tu archivo PDF con JavaScript a través de C++.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

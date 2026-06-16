@@ -1,5 +1,6 @@
 ---
-title: Export to JSON
+title: Export to JSON
+linktitle: Export to JSON
 type: docs
 weight: 30
 url: /python-net/export-to-json/

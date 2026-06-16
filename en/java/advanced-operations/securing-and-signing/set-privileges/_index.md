@@ -1,146 +1,86 @@
 ---
-title: Set Privileges, Encrypt and Decrypt PDF File 
+title: Encrypt and Decrypt PDF Files in Java
 linktitle: Encrypt and Decrypt PDF File
 type: docs
-weight: 20
+weight: 70
 url: /java/set-privileges-encrypt-and-decrypt-pdf-file/
-description: Encrypt PDF File with Java using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
-lastmod: "2025-02-17"
+description: Learn how to set PDF privileges, encrypt files, decrypt protected PDFs, and change passwords in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Guide on managing PDF file security using Java with the Aspose.PDF library
-Abstract: This article provides a comprehensive guide on managing PDF file security using Java with the Aspose.PDF library. It begins by detailing how to set privileges on existing PDF files through the `DocumentPrivilege` class, demonstrating how to restrict access while allowing screen reading and applying encryption using the `Encrypt` method. Different encryption types and algorithms can be employed, with the ability to specify user and owner passwords, as illustrated in the provided code snippets. The article further explains the process of decrypting PDF files using the owner password and outlines a method to change the password of a PDF document, emphasizing the necessity of using the current owner password as a prerequisite. Additionally, it discusses how to determine if a PDF is password-protected using the `PdfFileInfo` class, which offers methods to ascertain the password type and whether the document has open or edit passwords. Lastly, the article presents a method to determine the correct password from an array of potential passwords, showcasing how to iterate through these options to successfully open the document
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: Set PDF permissions and manage encryption in Java
+Abstract: This article explains how to secure PDF files using Aspose.PDF for Java. It covers encrypting documents with user and owner passwords, applying permission restrictions, decrypting files, changing passwords, and setting privileges with or without exception-safe methods.
 ---
+Aspose.PDF for Java exposes PDF security operations through the `PdfFileSecurity` facade.
 
-## Set Privileges on an Existing PDF File
+## Encrypt a PDF with user and owner passwords
 
-To set privileges on a PDF file, create an object of the DocumentPrivilege class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object's [Encrypt](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-boolean-) method. The following code snippet shows you how to set the privileges of a PDF file.
+1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
+1. Configure the [DocumentPrivilege](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/documentprivilege/) and [KeySize](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/keysize/) properties required by the example.
+1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
-  public static void SetPrivilegesOnExistingPDF()
-  {
-   // Load a source PDF file
-   Document document = new Document(_dataDir + "input.pdf");
-
-   // Instantiate Document Privileges object
-   // Apply restrictions on all privileges
-   DocumentPrivilege documentPrivilege = DocumentPrivilege.getForbidAll();
-   // Only allow screen reading
-   documentPrivilege.setAllowScreenReaders(true);
-   // Encrypt the file with User and Owner password.
-   // Need to set the password, so that once the user views the file with user password,
-   // Only screen reading option is enabled
-   document.encrypt("user", "owner", documentPrivilege, CryptoAlgorithm.AESx128, false);
-   // Save updated document
-   document.save(_dataDir + "SetPrivileges_out.pdf");
-  }
+public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    fileSecurity.encryptFile("user_password", "owner_password", privilege, KeySize.x128);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
 ```
 
-## Encrypt PDF File using Different Encryption Types and Algorithms
+## Encrypt a PDF with a specific algorithm
 
-You can use the [Encrypt](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-int-int-) method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object to encrypt a PDF file. You can pass the user password, owner password, and permissions to the [Encrypt](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#encrypt-java.lang.String-java.lang.String-int-int-) method. In addition to that, you can pass any value of the [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/CryptoAlgorithm) enum. This enum provides different combinations of encryption algorithms and key sizes. You can pass the value of your choice. Finally, save the encrypted PDF file using [save(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#save--) method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object.
+`encryptPdfWithEncryptionAlgorithm` uses `KeySize.x256` together with `Algorithm.AES` to apply stronger encryption settings.
 
->Please specify different user and owner passwords while encrypting the PDF file.
+## Decrypt a protected PDF
 
-The following code snippet shows you how to encrypt PDF files.
+1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
+1. Decrypt the protected document with the owner password.
+1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
-public static void EncryptPDFFile() {
-   // Load a source PDF file
-   Document document = new Document(_dataDir + "input.pdf");
-
-   // Instantiate Document Privileges object
-   // Apply restrictions on all privileges
-   DocumentPrivilege documentPrivilege = DocumentPrivilege.getForbidAll();
-   // Only allow screen reading
-   documentPrivilege.setAllowScreenReaders(true);
-   // Encrypt the file with User and Owner password.
-   // Need to set the password, so that once the user views the file with user
-   // password,
-   // Only screen reading option is enabled
-   document.encrypt("user", "owner", documentPrivilege, CryptoAlgorithm.AESx128, false);
-   // Save updated document
-   document.save(_dataDir + "SetPrivileges_out.pdf");
-  }
+public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    fileSecurity.decryptFile("owner_password");
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
 ```
 
-## Decrypt PDF File using Owner Password
+The example set also includes `tryDecryptPdfWithoutException`, which returns `false` instead of throwing when decryption fails.
 
-In order to decrypt the PDF file, you first need to create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the PDF using the owner's password. After that, you need to call [Decrypt](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#decrypt--) method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)  object. Finally, save the updated PDF file using Save method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)  object. The following code snippet shows you how to decrypt the PDF file.
+## Change passwords and reset security
 
-```java
-public static void DecryptPDFFile() {
-   // Open document
-   Document document = new Document(_dataDir + "Decrypt.pdf", "password");
-   // Decrypt PDF
-   document.decrypt();
+The `PdfFileSecurityExamples` class demonstrates:
 
-   // Save updated PDF
-   document.save(_dataDir + "Decrypt_out.pdf");
-  }
-```
+- `changeUserAndOwnerPassword` to replace both passwords.
+- `changePasswordAndResetSecurity` to change passwords and reapply privileges in one step.
+- `tryChangePasswordWithoutException` for a non-throwing password-change flow.
 
-## Change Password of a PDF File
+## Set document privileges
 
-If you want to change the password of a PDF file, you first need to open the PDF file using owner password with the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object. After that, you need to call the [ChangePasswords](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#changePasswords-java.lang.String-java.lang.String-java.lang.String-) method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object. You need to pass the current owner password along with the new user password and new owner password to this method. Finally, save the updated PDF file using Save method of the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)  object.
+To restrict actions such as printing and copying:
 
-The following code snippet shows you how to change the password of a PDF file.
+1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
+1. Set the required [DocumentPrivilege](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/documentprivilege/) permissions or encryption options.
+1. Set the properties required by the example.
+1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
-public static void ChangePassword_PDF_File() {
-   // Open document
-   Document document = new Document(_dataDir+ "ChangePassword.pdf", "owner");
-   // Change password
-   document.changePasswords("owner", "newuser", "newowner");
-   // Save updated PDF
-   document.save(_dataDir + "ChangePassword_out.pdf");
-  }
-```
-
-## How to - determine if the source PDF is password protected
-
-Aspose.PDF for Java provides great capabilities of dealing with PDF documents. When using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class of com.aspose.pdf package to open a PDF document which is password protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorised access of document)
-
-When dealing with encrypted PDF files, you may come across the scenario where you would be interested to detect if a PDF has an open password and/or an edit password. Sometimes there are documents which do not require password information while opening them, but they require information in order to edit the contents of file.. So in order to fulfil the above requirements, PdfFileInfo class present under com.aspose.pdf.facades package provides the methods which can help in determining the required information.
-
-### Get information about PDF document security
-
-PdfFileInfo contains three methods to get information about PDF document security.
-
-1. getPasswordType() method returns PasswordType enumeration value:
-    1. PasswordType.None - document is not password protected
-    1. PasswordType.User - document was opened with user (or document open) password
-    1. PasswordType.Owner - document was opened with owner (or permissions, edit) password
-    1. PasswordType.Inaccessible - document is password protected but password is needed to open it while invalid password (or no password) was supplied.
-1. hasOpenPassword() method is used to determine if input file requires password, when opening it.
-1. hasEditPassword() method is used to determine if input file requires password to edit its contents.
-
-### Determine correct password from Array
-
-Sometimes there is a requirement to determine the correct password from an array of passwords and open the document with the correct password. The following code snippet demonstrates the steps to iterate through the array of passwords and try opening the document with the correct password.
-
-```java
-public static void DetermineCorrectPasswordFromArray() {
-     // Load source PDF file
-   PdfFileInfo info = new PdfFileInfo();
-   info.bindPdf(_dataDir + "IsPasswordProtected.pdf");
-   // Determine if the source PDF is encrypted
-   System.out.println("File is password protected " + info.isEncrypted());
-   String[] passwords = { "test", "test1", "test2", "test3", "sample" };
-   for (int passwordcount = 0; passwordcount < passwords.length; passwordcount++)
-   {
-    try
-    {
-     Document doc = new Document(_dataDir + "IsPasswordProtected.pdf", passwords[passwordcount]);
-     if (doc.getPages().size() > 0)
-      System.out.println("Number of Page in document are = " + doc.getPages().size());
-    }
-    catch (InvalidPasswordException ex)
-    {
-     System.out.println("Password = " + passwords[passwordcount] + "  is not correct");
-    }
-   }
+public static void setPdfPrivilegesWithPasswords(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    privilege.setAllowCopy(false);
+    fileSecurity.setPrivilege("user_password", "owner_password", privilege);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
 ```

@@ -1,5 +1,5 @@
 ---
-title: Добавить водяной знак в PDF 
+title: Добавить водяной знак в PDF
 linktitle: Добавить водяной знак
 type: docs
 weight: 90

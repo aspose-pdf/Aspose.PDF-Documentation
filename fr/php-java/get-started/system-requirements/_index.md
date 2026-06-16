@@ -1,5 +1,5 @@
 ---
-title: Exigences Système 
+title: Exigences Système
 linktitle: Exigences Système
 type: docs
 weight: 30

@@ -1,11 +1,11 @@
 ---
-title: Convertir archivo PDF a PDF/A 
-linktitle: Convertir archivo PDF a PDF/A 
+title: Convertir archivo PDF a PDF/A
+linktitle: Convertir archivo PDF a PDF/A
 type: docs
 weight: 180
 url: /es/androidjava/convert-pdf-file-to-pdfa/
 lastmod: "2021-06-05"
-description: Este tema muestra cómo Aspose.PDF para Java permite convertir un archivo PDF a un archivo PDF compatible con PDF/A.  
+description: Este tema muestra cómo Aspose.PDF para Java permite convertir un archivo PDF a un archivo PDF compatible con PDF/A.
 sitemap:
     changefreq: "weekly"
     priority: 0.7

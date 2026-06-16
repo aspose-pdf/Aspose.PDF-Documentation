@@ -1,5 +1,5 @@
 ---
-title: PDF를 이미지 형식으로 변환 
+title: PDF를 이미지 형식으로 변환
 linktitle: PDF를 이미지로 변환
 type: docs
 weight: 70

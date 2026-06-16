@@ -11,8 +11,8 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Main Features page of Aspose.PDF for Rust via C++
-Abstract: The Key Features page of Aspose.PDF for Rust via C++ outlines the capabilities of the library for working with PDF documents. It provides information about supported PDF versions and details the various operations that can be performed, such as text and image manipulation, document merging and splitting, annotation handling, and digital signature management.  
-SoftwareApplication: rust-cpp    
+Abstract: The Key Features page of Aspose.PDF for Rust via C++ outlines the capabilities of the library for working with PDF documents. It provides information about supported PDF versions and details the various operations that can be performed, such as text and image manipulation, document merging and splitting, annotation handling, and digital signature management.
+SoftwareApplication: rust-cpp
 ---
 
 ## Cross-platform software

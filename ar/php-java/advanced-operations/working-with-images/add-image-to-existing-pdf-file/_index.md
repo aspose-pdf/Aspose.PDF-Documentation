@@ -1,5 +1,5 @@
 ---
-title: إضافة صورة إلى ملف PDF موجود 
+title: إضافة صورة إلى ملف PDF موجود
 linktitle: إضافة صورة
 type: docs
 weight: 10

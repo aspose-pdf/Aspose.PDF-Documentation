@@ -1,5 +1,5 @@
 ---
-title: Ekstrak font dari PDF 
+title: Ekstrak font dari PDF
 linktitle: Ekstrak font
 type: docs
 weight: 30

@@ -1,5 +1,5 @@
 ---
-title: Formats de Fichiers Prise en Charge 
+title: Formats de Fichiers Prise en Charge
 type: docs
 weight: 20
 url: /fr/reportingservices/supported-file-formats/

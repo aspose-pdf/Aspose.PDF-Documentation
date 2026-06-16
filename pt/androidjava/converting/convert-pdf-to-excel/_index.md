@@ -1,6 +1,6 @@
 ---
-title: Converter PDF para Excel 
-linktitle: Converter PDF para Excel 
+title: Converter PDF para Excel
+linktitle: Converter PDF para Excel
 type: docs
 weight: 90
 url: /pt/androidjava/convert-pdf-to-excel/

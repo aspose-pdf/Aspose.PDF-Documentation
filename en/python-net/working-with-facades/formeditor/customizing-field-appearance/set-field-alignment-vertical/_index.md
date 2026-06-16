@@ -1,5 +1,6 @@
 ---
-title: Set Field Alignment Vertical
+title: Set Field Alignment Vertical
+linktitle: Set Field Alignment Vertical
 type: docs
 weight: 40
 url: /python-net/set-field-alignment-vertical/

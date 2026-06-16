@@ -1,6 +1,6 @@
 ---
-title: إضافة مرفق إلى مستند PDF 
-linktitle: إضافة مرفق إلى مستند PDF 
+title: إضافة مرفق إلى مستند PDF
+linktitle: إضافة مرفق إلى مستند PDF
 type: docs
 weight: 10
 url: /ar/java/add-attachment-to-pdf-document/

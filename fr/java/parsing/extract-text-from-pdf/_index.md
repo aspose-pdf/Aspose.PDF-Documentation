@@ -1,6 +1,6 @@
 ---
-title: Extraire du texte à partir d'un PDF 
-linktitle: Extraire du texte 
+title: Extraire du texte à partir d'un PDF
+linktitle: Extraire du texte
 type: docs
 weight: 10
 url: /fr/java/extract-text-from-pdf/

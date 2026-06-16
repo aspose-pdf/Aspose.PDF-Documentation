@@ -1,5 +1,6 @@
 ---
-title: Remove Attachments
+title: Remove Attachments
+linktitle: Remove Attachments
 type: docs
 weight: 50
 url: /python-net/remove-attachments/

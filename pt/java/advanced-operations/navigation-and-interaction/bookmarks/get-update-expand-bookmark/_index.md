@@ -1,5 +1,5 @@
 ---
-title: Obter, Atualizar e Expandir um Marcador 
+title: Obter, Atualizar e Expandir um Marcador
 linktitle: Obter, Atualizar e Expandir um Marcador
 type: docs
 weight: 20

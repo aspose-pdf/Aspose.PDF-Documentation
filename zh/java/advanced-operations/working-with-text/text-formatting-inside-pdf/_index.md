@@ -1,5 +1,5 @@
 ---
-title: PDF 中的文本格式化 
+title: PDF 中的文本格式化
 linktitle: PDF 中的文本格式化
 type: docs
 weight: 30

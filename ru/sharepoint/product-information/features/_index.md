@@ -1,5 +1,5 @@
 ---
-title: Функции 
+title: Функции
 type: docs
 weight: 30
 url: /ru/sharepoint/features/

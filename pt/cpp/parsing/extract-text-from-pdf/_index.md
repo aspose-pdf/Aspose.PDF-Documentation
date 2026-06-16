@@ -1,5 +1,5 @@
 ---
-title: Extrair Texto de PDF 
+title: Extrair Texto de PDF
 linktitle: Extrair Texto de PDF
 type: docs
 weight: 10

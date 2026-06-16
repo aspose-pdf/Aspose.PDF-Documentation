@@ -1,5 +1,5 @@
 ---
-title: PDF Annotations Collantes 
+title: PDF Annotations Collantes
 linktitle: Annotation Collante
 type: docs
 weight: 50

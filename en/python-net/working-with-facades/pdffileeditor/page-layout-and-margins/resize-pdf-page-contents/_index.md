@@ -1,5 +1,6 @@
 ---
-title: Resize PDF Page Contents
+title: Resize PDF Page Contents
+linktitle: Resize PDF Page Contents
 type: docs
 weight: 30
 url: /python-net/resize-pdf-page-contents/

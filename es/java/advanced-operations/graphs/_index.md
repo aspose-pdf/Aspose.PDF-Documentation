@@ -1,5 +1,5 @@
 ---
-title: Trabajando con Gráficos 
+title: Trabajando con Gráficos
 linktitle: Trabajando con Gráficos
 type: docs
 weight: 70

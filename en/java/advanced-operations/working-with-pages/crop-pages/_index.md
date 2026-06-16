@@ -1,72 +1,60 @@
 ---
-title: Crop PDF Pages programmatically 
-linktitle: Crop Pages
+title: Crop PDF Pages in Java
+linktitle: Cropping PDF Pages
 type: docs
-weight: 80
+weight: 70
 url: /java/crop-pages/
-description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for Java.
-lastmod: "2025-02-17"
+description: Learn how to crop PDF pages and adjust crop, trim, bleed, and media boxes in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Crop PDF Files using Aspose.PDF for Java
-Abstract: This article provides an overview of the various properties associated with pages in a PDF file, such as the media box, bleed box, trim box, art box, crop box, and page rectangle. These properties define different aspects of the page layout and dimensions, crucial for displaying and printing PDF documents accurately. The article specifically details how Aspose.PDF for Java can be used to access and manipulate these properties to manage the page layout effectively. An example Java code snippet illustrates how to crop a PDF page by setting new dimensions for the crop box, trim box, art box, and bleed box. The article includes visual examples showing the page before and after the cropping operation, demonstrating the changes made to the page layout. For further understanding of these properties, the article suggests consulting the Adobe.Pdf specification and provides an external reference link.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: Crop pages and adjust page boxes in PDF files with Java
+Abstract: This article explains how to crop PDF pages using Aspose.PDF for Java. It covers assigning a new crop rectangle to the crop, trim, art, and bleed boxes, and cropping a page automatically based on detected image content.
 ---
+Aspose.PDF for Java lets you crop pages either by explicit box coordinates or based on detected content.
 
-## Get Page Properties
+## Crop a page by setting page boxes
 
-Each page in a PDF file has a number of properties, such as the width, height, bleed-, crop- and trimbox. Aspose.PDF for Java allows you to access these properties.
+Use this example when you need to apply the same crop area to the main page boxes.
 
-- **Media box**: The media box is the largest page box. It corresponds to the page size (for example A4, A5, US Letter, etc.) selected when the document was printed to PostScript or PDF. In other words, the media box determines the physical size of the media on which the PDF document is displayed or printed.
-- **Bleed box**: If the document has bleed, the PDF will also have a bleed box. Bleed is the amount of color (or artwork) that extends beyond the edge of a page. It is used to make sure that when the document is printed and cut to size ("trimmed"), the ink will go all the way to the edge of the page. Even if the page is mistrimmed - cut slightly off the trim marks - no white edges will appear on the page.
-- **Trim box**: The trim box indicates the final size of a document after printing and trimming.
-- **Art box**: The art box is the box drawn around the actual contents of the pages in your documents. This page box is used when importing PDF documents in other applications.
-- **Crop box**: The crop box is the "page" size at which your PDF document is displayed in Adobe Acrobat. In normal view, only the contents of the crop box are displayed in Adobe Acrobat. For detailed descriptions of these properties, read the Adobe.Pdf specification, particularly 10.10.1 Page Boundaries.
-- **Page.Rect**: the intersection (commonly visible rectangle) of the MediaBox and DropBox. The picture below illustrates these properties.
-For further details, please visit [this page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
-
-The snippet below show how to crop the page:
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the new crop [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/).
+1. Apply the rectangle to the crop-related page boxes and save the document.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleCropPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    // Open document
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    public static void CropPagesPDF() {
-        Document pdfDocument = new Document("crop_page.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-
-        System.out.println(page.getCropBox());
-        System.out.println(page.getTrimBox());
-        System.out.println(page.getArtBox());
-        System.out.println(page.getBleedBox());
-        System.out.println(page.getMediaBox());
-
-        // Create new Box Rectagle
-        Rectangle newBox = new Rectangle(200, 220, 2170, 1520);
-
-        page.setCropBox(newBox);
-        page.setTrimBox(newBox);
-        page.setArtBox(newBox);
-        page.setBleedBox(newBox);
-
-        // Save output document
-        pdfDocument.save(_dataDir + "crop_page_modified.pdf");
+public static void cropPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Rectangle newBox = new Rectangle(200, 220, 2170, 1520, true);
+        document.getPages().get_Item(1).setCropBox(newBox);
+        document.getPages().get_Item(1).setTrimBox(newBox);
+        document.getPages().get_Item(1).setArtBox(newBox);
+        document.getPages().get_Item(1).setBleedBox(newBox);
+        document.save(outputFile.toString());
     }
 }
 ```
 
-In this example we used a sample file [here](crop_page.pdf). Initially our page looks like shown on the Figure 1.
-![Figure 1. Cropped Page](crop_page.png)
+## Crop a page by detected content
 
-After the change, the page will look like Figure 2.
-![Figure 2. Cropped Page](crop_page2.png)
+Use this example when the crop area should be derived from the first detected image on the page.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) to detect image placements.
+1. Set the crop box to the image rectangle if one is found, then save the document.
+
+```java
+public static void cropPageByContent(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+        if (absorber.getImagePlacements().size() > 0) {
+            document.getPages().get_Item(1).setCropBox(absorber.getImagePlacements().get_Item(1).getRectangle());
+        } else {
+            System.out.println("No images found on the first page");
+        }
+        document.save(outputFile.toString());
+    }
+}
+```

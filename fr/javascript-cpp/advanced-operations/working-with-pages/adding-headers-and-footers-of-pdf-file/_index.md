@@ -1,5 +1,5 @@
 ---
-title: Ajouter un en-tête et un pied de page au PDF via JavaScript via C++ 
+title: Ajouter un en-tête et un pied de page au PDF via JavaScript via C++
 linktitle: Ajouter un en-tête et un pied de page au PDF
 type: docs
 weight: 70

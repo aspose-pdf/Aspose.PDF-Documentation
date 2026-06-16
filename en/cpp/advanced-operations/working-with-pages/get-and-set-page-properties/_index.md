@@ -1,5 +1,6 @@
 ---
 title: Get and Set Page Properties
+linktitle: Get and Set Page Properties
 type: docs
 weight: 20
 url: /cpp/get-and-set-page-properties/

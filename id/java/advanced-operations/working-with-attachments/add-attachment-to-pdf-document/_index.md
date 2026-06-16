@@ -1,6 +1,6 @@
 ---
-title: Menambahkan Lampiran ke Dokumen PDF 
-linktitle: Menambahkan Lampiran ke Dokumen PDF 
+title: Menambahkan Lampiran ke Dokumen PDF
+linktitle: Menambahkan Lampiran ke Dokumen PDF
 type: docs
 weight: 10
 url: /id/java/add-attachment-to-pdf-document/

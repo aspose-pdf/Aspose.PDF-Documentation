@@ -1,5 +1,6 @@
 ---
 title: Page margin size
+linktitle: Page margin size
 type: docs
 weight: 70
 url: /reportingservices/page-margin-size/

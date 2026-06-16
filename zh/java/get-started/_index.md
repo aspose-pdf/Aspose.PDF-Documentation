@@ -6,7 +6,7 @@ weight: 30
 url: /zh/java/get-started/
 description: 本节介绍工作和使用DOM API的基本原则。同时展示创建PDF文档的简单和复杂示例
 lastmod: "2021-06-05"
-sitemap: 
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

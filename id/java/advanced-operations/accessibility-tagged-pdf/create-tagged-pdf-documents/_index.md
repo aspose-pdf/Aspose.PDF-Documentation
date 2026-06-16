@@ -1,6 +1,6 @@
 ---
-title: Membuat PDF Bertag 
-linktitle: Membuat PDF Bertag 
+title: Membuat PDF Bertag
+linktitle: Membuat PDF Bertag
 type: docs
 weight: 10
 lastmod: "2021-06-05"

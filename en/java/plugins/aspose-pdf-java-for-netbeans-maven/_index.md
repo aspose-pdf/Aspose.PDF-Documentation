@@ -1,11 +1,12 @@
 ---
 title: Aspose.PDF Java for NetBeans - Maven
+linktitle: Aspose.PDF Java for NetBeans - Maven
 type: docs
 weight: 70
 url: /java/aspose-pdf-java-for-netbeans-maven/
-lastmod: "2025-02-17"
+description: Learn how to use the Aspose.PDF Java for NetBeans Maven plugin to create projects and work with PDF features inside NetBeans IDE.
+lastmod: "2026-06-09"
 ---
-
 ## Introduction
 
 ### NetBeans IDE

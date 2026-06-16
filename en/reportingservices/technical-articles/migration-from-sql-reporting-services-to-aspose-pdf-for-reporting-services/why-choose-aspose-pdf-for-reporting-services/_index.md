@@ -1,5 +1,6 @@
 ---
 title: Why choose Aspose.Pdf for Reporting Services
+linktitle: Why choose Aspose.Pdf for Reporting Services
 type: docs
 weight: 10
 url: /reportingservices/why-choose-aspose-pdf-for-reporting-services/

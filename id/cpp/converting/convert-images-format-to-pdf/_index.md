@@ -23,7 +23,7 @@ Anda dapat mengonversi BMP ke file PDF dengan API Aspose.PDF untuk C++.
 
 1. Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file.
 1. Sebuah instance dari objek Dokumen baru dibuat.
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) baru ke [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
+1. Tambahkan [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) baru ke [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
 1. Sebuah Aspose.Pdf BMP baru dibuat.
 1. Objek Aspose.PDF BMP diinisialisasi menggunakan file input.
 1. Aspose.PDF BMP ditambahkan ke Halaman sebagai Paragraf.
@@ -124,7 +124,7 @@ Aspose mempersembahkan aplikasi gratis online ["DICOM ke PDF"](https://products.
 
 1. Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file.
 1. Sebuah instance dari objek Dokumen baru dibuat.
-1. Tambahkan Halaman baru ke [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
+1. Tambahkan Halaman baru ke [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
 1.  Sebuah Aspose.Pdf TIFF baru telah dibuat.
 1. Objek Aspose.PDF TIFF diinisialisasi menggunakan file input.
 1. Aspose.PDF TIFF ditambahkan ke Halaman sebagai Paragraph.
@@ -175,7 +175,7 @@ Anda dapat dengan sangat mudah mengonversi gambar JPG ke PDF dengan Aspose.PDF u
 
 1. Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file.
 1. Sebuah instance dari objek Dokumen baru dibuat.
-1. Tambahkan Halaman baru ke [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
+1. Tambahkan Halaman baru ke [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
 1. Sebuah Aspose::Pdf::Image baru dibuat.
 1. Objek Gambar Aspose.PDF diinisialisasi menggunakan file input.
 1. Aspose.PDF Image ditambahkan ke Halaman sebagai Paragraf.  
@@ -281,7 +281,7 @@ Anda dapat mengonversi gambar PNG ke PDF menggunakan langkah-langkah berikut:
 
 1. Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file.
 1. Sebuah instance dari objek Dokumen baru dibuat.
-1. Tambahkan Halaman baru ke [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
+1. Tambahkan Halaman baru ke [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
 1. Aspose.Pdf PNG baru dibuat.
 1. Objek Aspose.PDF PNG diinisialisasi menggunakan file input.
 1. Aspose.PDF PNG ditambahkan ke Halaman sebagai Paragraf.
@@ -336,7 +336,7 @@ Gambar SVG dan perilakunya didefinisikan dalam file teks XML. Ini berarti bahwa 
 
 1. Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file.
 1. Buat instance dari kelas [`SvgLoadOptions`](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.svg_load_options).
-1. Buat instance dari [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance dari [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) dengan menyebutkan nama file sumber dan opsi.
 1. Simpan dokumen dengan nama file yang diinginkan.
 
 Cuplikan kode berikut menunjukkan proses konversi file SVG ke format PDF dengan Aspose.PDF untuk C++.
@@ -402,7 +402,7 @@ Aspose.PDF untuk C++ menghadirkan aplikasi online gratis ["SVG to PDF"](https://
 TIFF atau TIF, Tagged Image File Format, mewakili gambar raster yang ditujukan untuk digunakan pada berbagai perangkat yang mematuhi standar format file ini. Gambar TIFF dapat berisi beberapa bingkai dengan gambar yang berbeda. Format file Aspose.PDF juga didukung, baik itu gambar TIFF satu bingkai atau multi-bingkai. Jadi Anda dapat mengonversi gambar TIFF ke PDF dalam aplikasi C++ Anda. Oleh karena itu, kami akan mempertimbangkan contoh konversi gambar TIFF multi-halaman ke dokumen PDF multi-halaman dengan langkah-langkah berikut:
 
 1. Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file. 1. Sebuah instance dari objek Dokumen baru dibuat.
-1. Tambahkan Halaman baru ke [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
+1. Tambahkan Halaman baru ke [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) ini.
 1. Sebuah Aspose.Pdf TIFF baru dibuat.
 1. Objek Aspose.PDF TIFF diinisialisasi menggunakan file input.
 1. Aspose.PDF TIFF ditambahkan ke Halaman sebagai Paragraf.

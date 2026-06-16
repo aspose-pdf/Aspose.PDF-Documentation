@@ -1,5 +1,5 @@
 ---
-title: Trabajando con Acciones 
+title: Trabajando con Acciones
 linktitle: Acciones
 type: docs
 weight: 20

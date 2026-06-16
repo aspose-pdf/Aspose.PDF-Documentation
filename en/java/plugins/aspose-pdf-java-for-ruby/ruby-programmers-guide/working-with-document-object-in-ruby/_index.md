@@ -1,11 +1,12 @@
 ---
 title: Working with Document Object in Ruby
+linktitle: Working with Document Object in Ruby
 type: docs
 weight: 10
 url: /java/working-with-document-object-in-ruby/
-lastmod: "2021-06-05"
+description: Learn how to work with PDF document objects in Ruby using Aspose.PDF for creating, updating, and managing document settings.
+lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Adding JavaScript in Ruby](/pdf/java/adding-javascript-in-ruby/)

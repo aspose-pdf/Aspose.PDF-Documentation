@@ -1,5 +1,6 @@
 ---
-title: Get Rich Text Values
+title: Get Rich Text Values
+linktitle: Get Rich Text Values
 type: docs
 weight: 40
 url: /python-net/get-rich-text-values/

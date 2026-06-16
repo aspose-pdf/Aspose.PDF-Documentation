@@ -1,5 +1,5 @@
 ---
-title: Ekstrak Paragraf dari PDF 
+title: Ekstrak Paragraf dari PDF
 linktitle: Ekstrak Paragraf
 type: docs
 weight: 20
@@ -65,7 +65,7 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- Dengan mengiterasi melalui koleksi paragraf dan mendapatkan teks dari mereka:**
+**2- Dengan mengiterasi melalui koleksi `paragraphs` dan mendapatkan teks dari mereka:**
 
 ```java
  public static void ExtractParagraph02() {

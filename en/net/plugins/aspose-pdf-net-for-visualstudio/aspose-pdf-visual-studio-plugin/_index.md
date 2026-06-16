@@ -1,5 +1,6 @@
 ---
 title: Aspose.PDF Visual Studio Plugin
+linktitle: Aspose.PDF Visual Studio Plugin
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

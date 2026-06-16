@@ -1,5 +1,5 @@
 ---
-title: Working with Tables in PDF 
+title: Working with Tables in PDF
 linktitle: Working with Tables
 type: docs
 weight: 50

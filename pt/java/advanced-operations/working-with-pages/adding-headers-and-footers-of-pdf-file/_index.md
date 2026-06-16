@@ -1,6 +1,6 @@
 ---
-title: Adicionar Cabeçalho e Rodapé em PDF 
-linktitle: Adicionar Cabeçalho e Rodapé 
+title: Adicionar Cabeçalho e Rodapé em PDF
+linktitle: Adicionar Cabeçalho e Rodapé
 type: docs
 weight: 70
 url: /pt/java/add-headers-and-footers-of-pdf-file/

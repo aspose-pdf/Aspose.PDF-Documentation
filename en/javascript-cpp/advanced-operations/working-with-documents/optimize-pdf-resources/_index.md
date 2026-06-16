@@ -1,5 +1,5 @@
 ---
-title: Optimize PDF Resources using JavaScript via C++ 
+title: Optimize PDF Resources using JavaScript via C++
 linktitle: Optimize PDF Resources
 type: docs
 weight: 15

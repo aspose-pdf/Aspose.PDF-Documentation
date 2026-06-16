@@ -1,31 +1,40 @@
 ---
-title: Working with com.aspose.pdf.facades
-linktitle: Working with Facades
+title: Working with PDF Facades
+linktitle: Working with PDF Facades
 type: docs
-weight: 80
+weight: 100
 url: /java/working-with-facades/
-description: This section explains how to work with com.aspose.pdf.facades - a toolset for popular operations with PDF.
-lastmod: "2025-02-17"
+description: Learn how to use Aspose.PDF Facades in Java to edit PDF content, manage forms and annotations, apply security, sign files, stamp pages, render pages, and inspect PDF metadata.
+is_node: true
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Use PDF Facades in Java for forms, signatures, security, stamps, and file processing
+Abstract: This section explains how to use Aspose.PDF Facades for Java to handle common PDF workflows with simplified APIs. The current Java coverage includes forms, form editing, annotation editing, content editing, file editing, file information, security, signatures, file stamping, viewer rendering, and stamp construction workflows.
 ---
+The Facades API provides higher-level helpers for common PDF tasks without working directly with the lower-level document object model.
 
-Aspose.PDF Facades is a set of classes that allows you to perform various operations on PDF documents without delving into their structure.
+Use this section to learn how to:
 
-In this section you will learn how to:
+- fill and edit PDF forms
+- work with annotations and content
+- merge, split, and restructure PDF files
+- inspect metadata and page information
+- apply security, signatures, stamps, and page numbering
+- render PDF pages to images with the viewer facade
 
-- [Using PdfFileEditor](/pdf/java/pdffileeditor-class/) - tool, which allow to perform operartions with PDF file (split, merge, etc)
-- [Using PdfFileMend](/pdf/java/pdffilemend-class/) -  tool for adding texts and images on the pages of existing PDF document
-- [Using PdfContentEditor](/pdf/java/pdfcontenteditor-class/) - tool  to edit PDF file's content
-- [Using PdfAnnotationEditor](/pdf/java/pdfannotationeditor-class/) - tool for work with PDF document annotations (comments)
-- [Using PdfBookmarEditor](/pdf/java/working-with-bookmarks-facades/) - tool for creating, importing, exporting and deleting bookmarks
-- [Using PdfExtractor](/pdf/java/pdfextractor-class/)  - tool for extracting images and text from PDF document
-- [Using PdfFileSignature](/pdf/java/pdffilesignature-class/) - tool to sign a pdf file with a certificate
-- [Using PdfConverter](/pdf/java/pdfconverter-class/) - tool to convert a PDF files to images (BMP, JPEG, PNG and TIFF) and vice versa
-- [Using PdfFileInfo](/pdf/java/pdffileinfo-class/) - tool for accessing meta information of PDF document
-- [Using PdfXmpMetadata](/pdf/java/pdfxmpmetadata-class/) - tool for manipulation with XMP metadata
-- [Using PdfFileSecurity](/pdf/java/pdffilesecurity-class/) - tool for manipulation with Encrypt, Decrypt and Set Privileges on PDF File
-- [Using PdfFileStamp](/pdf/java/pdffilestamp-class/) - tool for manipulation with page, image stamp
-- [Using PdfViewer](/pdf/java/pdfviewer-class/) - tool for working with PDF printing
-- [Using Form](/pdf/java/form-class/) - tool for manipulation with Acro Forms
+## Facades sections
+
+- [Form](/java/form-class/)
+- [FormEditor](/java/formeditor-class/)
+- [PdfAnnotationEditor](/java/pdfannotationeditor-class/)
+- [PdfContentEditor](/java/pdfcontenteditor-class/)
+- [PdfFileEditor](/java/pdffileeditor-class/)
+- [PdfFileInfo](/java/pdffileinfo-class/)
+- [PdfFileSecurity](/java/pdffilesecurity-class/)
+- [PdfFileSignature](/java/pdffilesignature-class/)
+- [PdfFileStamp](/java/pdffilestamp-class/)
+- [PdfViewer](/java/pdfviewer-class/)
+- [Stamp](/java/stamp-class/)

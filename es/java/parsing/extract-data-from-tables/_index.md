@@ -1,5 +1,5 @@
 ---
-title: Extraer Datos de Tabla desde PDF 
+title: Extraer Datos de Tabla desde PDF
 linktitle: Extraer Datos de Tabla
 type: docs
 weight: 40

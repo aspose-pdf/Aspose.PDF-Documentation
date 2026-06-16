@@ -1,5 +1,6 @@
 ---
-title: Clear PDF Metadata
+title: Clear PDF Metadata
+linktitle: Clear PDF Metadata
 type: docs
 weight: 10
 url: /python-net/clear-pdf-metadata/

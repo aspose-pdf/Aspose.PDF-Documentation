@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to EPUB, TeX, Text, XPS in JavaScript
-linktitle: Convert PDF to other formats 
+linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /javascript-cpp/convert-pdf-to-other-files/

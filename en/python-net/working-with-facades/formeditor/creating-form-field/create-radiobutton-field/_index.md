@@ -1,5 +1,6 @@
 ---
-title: Create RadioButton Field
+title: Create RadioButton Field
+linktitle: Create RadioButton Field
 type: docs
 weight: 40
 url: /python-net/create-radiobutton-field/

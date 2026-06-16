@@ -1,224 +1,137 @@
 ---
-title: Add Image to Existing PDF File 
+title: Add Image to PDF using Java
 linktitle: Add Image
 type: docs
 weight: 10
 url: /java/add-image-to-existing-pdf-file/
-description: This section describes how to add image to existing PDF file using Java library.
-lastmod: "2025-02-17"
-TechArticle: true 
-AlternativeHeadline: How to add image to existing PDF file using Java Library
-Abstract: The article discusses methods for manipulating images within PDF documents using the Aspose.PDF for Java library. It begins by explaining the structure of PDF files, highlighting the significance of Resources and Contents properties, where Resources include elements like images and forms, while Contents consist of PDF operators. The article provides a detailed example of adding an image to an existing PDF using operators like GSave, ConcatenateMatrix, Do, and GRestore to define image placement and save the updated graphical state. Further, it introduces the capability to add images from a BufferedImage instance directly into a PDF, starting with version 9.5.0 of Aspose.PDF for Java. Additionally, it describes an alternative, simplified method using the PdfFileMend class to insert images into PDFs. The article also covers optimizing PDF size by reusing image references with the XImageCollection.add method and discusses identifying the color type of images to apply appropriate compression techniques. Code snippets accompany each section, illustrating the implementation of these functionalities.
-SoftwareApplication: java
+description: Learn how to add images to existing PDF files in Java.
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: Add images to existing PDF files with Java
+Abstract: This article shows how to add images to PDF documents using Aspose.PDF for Java. It covers placing an image at fixed coordinates, adding images through low-level page operators, setting alternative text for accessibility, and embedding image data with Flate compression.
 ---
+Aspose.PDF for Java supports both high-level image placement and low-level operator-based drawing.
 
-Every PDF page contains Resources and Contents properties. Resources can be images and forms for example, while content is represented by a set of PDF operators. Each operator has its name and argument. This example uses operators to add an image to a PDF file.
+## Add an image with page coordinates
 
-To add an image to an existing PDF file:
+Use this example when you need to place an image at a fixed position on a PDF page.
 
-- Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object and open the input PDF document.
-- Get the page you want to add an image to.
-- Add the image into the page's [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) collection.
-- Use operators to place the image on the page:
-- Use the GSave operator to save the current graphical state.
-- Use [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/concatenatematrix) operator to specify where the image is to be placed.
-- Use the [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/class-use/Do) operator to draw the image on the page.
-- Finally, use [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/grestore) operator to save the updated graphical state.
-- Save the file.
-
-The following code snippet shows how to add the image in a PDF document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
+1. Call `page.addImage()` with the source image path and target rectangle.
+1. Save the generated PDF file.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.facades.PdfFileMend;
-import com.aspose.pdf.operators.*;
-
-public class ExampleAddImages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void AddImageToExistingPDF() throws IOException {
-        // Open a document
-        Document pdfDocument1 = new Document(_dataDir + "sample.pdf");
-
-        // Set coordinates
-        int lowerLeftX = 50;
-        int lowerLeftY = 750;
-        int upperRightX = 100;
-        int upperRightY = 800;
-
-        // Get the page you want to add the image to
-        Page page = pdfDocument1.getPages().get_Item(1);
-
-        // Load image into stream
-        java.io.FileInputStream imageStream = new java.io.FileInputStream(new java.io.File(_dataDir + "logo.png"));
-
-        // Add an image to the Images collection of the page resources
-        page.getResources().getImages().add(imageStream);
-
-        // Using the GSave operator: this operator saves current graphics state
-        page.getContents().add(new GSave());
-
-        // Create Rectangle and Matrix objects
-        Rectangle rectangle = new Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-        Matrix matrix = new Matrix(new double[] { rectangle.getURX() - rectangle.getLLX(), 0, 0,
-                rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY() });
-
-        // Using ConcatenateMatrix (concatenate matrix) operator: defines how image must
-        // be placed
-        page.getContents().add(new ConcatenateMatrix(matrix));
-        XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-
-        // Using Do operator: this operator draws image
-        page.getContents().add(new Do(ximage.getName()));
-
-        // Using GRestore operator: this operator restores graphics state
-        page.getContents().add(new GRestore());
-
-        // Save the new PDF
-        pdfDocument1.save(_dataDir + "updated_document.pdf");
-
-        // Close image stream
-        imageStream.close();
-    }
-```
-
-## Adding image from BufferedImage into PDF
-
-Starting release of Aspose.PDF for Java 9.5.0, we have introduced the support to add image from BufferedImage instance to PDF document. In order to support this requirement, a method is implemented: [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection).add(BufferedImage image);
-
-```java
-    public static void AddingImageFromBufferedImageIntoPDF() throws IOException {
-        BufferedImage originalImage = ImageIO.read(new File("anyImage.jpg"));
-        Document pdfDocument = new Document();
-        Page page = pdfDocument.getPages().add();
-        page.getResources().getImages().add(originalImage);
-    }
-```
-You can use any InputStream and not just only FileInputStream object to add image. So when using java.io.ByteArrayInputStream object, you do not need to store any files over system:
-
-```java
-    public static void AddingImageFromBufferedImageIntoPDF2() throws IOException {
-        BufferedImage originalImage = ImageIO.read(new File("anyImage.jpg"));
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
-        Document pdfDocument = new Document();
-        ImageIO.write(originalImage, "jpg", baos);
-        baos.flush();
-        Page page = pdfDocument.getPages().get_Item(1);
-        page.getResources().getImages().add(new ByteArrayInputStream(baos.toByteArray()));
-    }
-```
-
-## Add Image in an Existing PDF File (Facades)
-
-There is also an alternative, easier way to add a Image to a PDF file. You can use AddImage method of the [PdfFileMend](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileMend) class. The AddImage method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using Close method. 
-
-The following code snippet shows you how to add image in an existing PDF file.
-
-```java
-    public static void AddImageInAnExistingPDFFile_Facades() {
-        // Open document
-        PdfFileMend mender = new PdfFileMend();
-
-        // Create PdfFileMend object to add text
-        mender.bindPdf(_dataDir + "AddImage.pdf");
-
-        // Add image in the PDF file
-        mender.addImage(_dataDir + "aspose-logo.jpg", 1, 100, 600, 200, 700);
-
-        // Save changes
-        mender.save(_dataDir + "AddImage_out.pdf");
-
-        // Close PdfFileMend object
-        mender.close();
-    }
-```
-
-## Add Reference of a single Image multiple times in a PDF Document
-
-Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.add(XImage) that supports Ximage object to add in the Images Collection. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
-
-```java
-    public static void AddReferenceOfaSingleImageMultipleTimes() throws FileNotFoundException {
-        Rectangle imageRectangle = new Rectangle(0, 0, 30, 15);
-        Document document = new Document(_dataDir + "sample.pdf");
-        document.getPages().add();
-        document.getPages().add();
-        java.io.FileInputStream imageStream = new java.io.FileInputStream(
-                new java.io.File(_dataDir + "aspose-logo.png"));
-
-        XImage image = null;
-
-        for (Page page : document.getPages()) {
-            WatermarkAnnotation annotation = new WatermarkAnnotation(page, page.getRect());
-            XForm form = annotation.getAppearance().get_Item("N");
-            form.setBBox(page.getRect());
-            String name;
-            if (image == null) {
-                name = form.getResources().getImages().add(imageStream);
-                image = form.getResources().getImages().get_Item(name);
-            } else {
-                name = form.getResources().getImages().add(image);
-            }
-            form.getContents().add(new GSave());
-            form.getContents().add(new ConcatenateMatrix(
-                    new Matrix(imageRectangle.getWidth(), 0, 0, imageRectangle.getHeight(), 0, 0)));
-            form.getContents().add(new Do(name));
-            form.getContents().add(new GRestore());
-            page.getAnnotations().add(annotation, false);
-            imageRectangle = new Rectangle(0, 0, imageRectangle.getWidth() * 1.01, imageRectangle.getHeight() * 1.01);
-        }
-        document.save(_dataDir + "output.pdf");
-    }
-```
-
-## Identify if image inside PDF is Colored or Black & White
-
-Different type of compression can be applied over images to reduce their size. The type of compression being applied over image depends upon the ColorSpace of source image i.e. if image is Color (RGB), then apply JPEG2000 compression, and if it is Black & White, then JBIG2/JBIG2000 compression should be applied. Therefore identifying each image type and using an appropriate type of compression will create best/optimized output.
-
-A PDF file may contain Text, Image, Graph, Attachment, Annotation etc elements and if the source PDF file contains images, we can determine image Color space and apply appropriate compression for image to reduce PDF file size. The following code snippet shows the steps to Identify if image inside PDF is Colored or Black & White.
-
-```java
-    public static void CheckColors() {
-
-        Document document = new Document(_dataDir + "test4.pdf");
-        try {
-            // iterate through all pages of PDF file
-            for (Page page : (Iterable<Page>) document.getPages()) {
-                // create Image Placement Absorber instance
-                ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-                page.accept(abs);
-                for (ImagePlacement ia : (Iterable<ImagePlacement>) abs.getImagePlacements()) {
-                    /* ColorType */
-                    int colorType = ia.getImage().getColorType();
-                    switch (colorType) {
-                    case ColorType.Grayscale:
-                        System.out.println("Grayscale Image");
-                        break;
-                    case ColorType.Rgb:
-                        System.out.println("Colored Image");
-                        break;
-                    }
-                }
-            }
-        } catch (Exception ex) {
-            System.out.println("Error reading file = " + document.getFileName());
-        }
+public static void addImage(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.addImage(imageFile.toString(), new Rectangle(20, 730, 120, 830, true));
+        document.save(outputFile.toString());
     }
 }
 ```
 
+## Add an image with page operators
 
+Use this example when you need low-level control over image placement and scaling through page operators.
 
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and open the source image stream.
+1. Add the image to the page resources and calculate the target rectangle.
+1. Write the required graphics operators and save the document.
+
+```java
+public static void addImageUsingOperators(Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document();
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().add();
+        page.setPageSize(842, 595);
+
+        XImageCollection resourcesImages = page.getResources().getImages();
+        String imageId = resourcesImages.add(imageStream);
+        XImage xImage = resourcesImages.get_Item(resourcesImages.size());
+
+        Rectangle rectangle = new Rectangle(
+                0,
+                0,
+                page.getMediaBox().getWidth(),
+                (page.getMediaBox().getWidth() * xImage.getHeight()) / xImage.getWidth(),
+                true);
+
+        page.getContents().add(new GSave());
+
+        Matrix matrix = new Matrix(
+                rectangle.getURX() - rectangle.getLLX(),
+                0,
+                0,
+                rectangle.getURY() - rectangle.getLLY(),
+                rectangle.getLLX(),
+                rectangle.getLLX() + (page.getMediaBox().getHeight() - rectangle.getHeight()) / 2);
+        page.getContents().add(new ConcatenateMatrix(matrix));
+        page.getContents().add(new Do(imageId));
+        page.getContents().add(new GRestore());
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add an image and set alternative text
+
+Use this example when the image should include accessibility metadata for screen readers.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add the image to the page.
+1. Get the inserted [XImage](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/ximage/) from page resources.
+1. Set the alternative text and save the PDF.
+
+```java
+public static void addImageSetAlternativeTextForImage(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.setPageSize(842, 595);
+
+        page.addImage(imageFile.toString(), new Rectangle(0, 0, 842, 595, true));
+
+        XImage xImage = page.getResources().getImages().get_Item(1);
+        boolean result = xImage.trySetAlternativeText("Alternative text for image", page);
+        if (result) {
+            System.out.println("Text has been added successfuly");
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add an image with Flate compression
+
+Use this example when you want to embed image data by using Flate compression.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and open the image stream.
+1. Add the image to page resources with `ImageFilterType.Flate`.
+1. Draw the image through page operators and save the result.
+
+```java
+public static void addImageToPdfWithFlateCompression(Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document();
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().add();
+        XImageCollection resourcesImages = page.getResources().getImages();
+        String imageId = resourcesImages.add(imageStream, ImageFilterType.Flate);
+
+        page.getContents().add(new GSave());
+
+        Rectangle rectangle = new Rectangle(0, 0, 600, 600, true);
+        Matrix matrix = new Matrix(
+                rectangle.getURX() - rectangle.getLLX(),
+                0,
+                0,
+                rectangle.getURY() - rectangle.getLLY(),
+                rectangle.getLLX(),
+                rectangle.getLLY());
+
+        page.getContents().add(new ConcatenateMatrix(matrix));
+        page.getContents().add(new Do(imageId));
+        page.getContents().add(new GRestore());
+
+        document.save(outputFile.toString());
+    }
+}
+```

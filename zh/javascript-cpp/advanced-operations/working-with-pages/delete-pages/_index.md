@@ -1,5 +1,5 @@
 ---
-title: 使用 JavaScript 通过 C++ 删除 PDF 页面 
+title: 使用 JavaScript 通过 C++ 删除 PDF 页面
 linktitle: 删除 PDF 页面
 type: docs
 weight: 30

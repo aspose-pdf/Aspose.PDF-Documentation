@@ -1,5 +1,5 @@
 ---
-title: إنشاء ملف PDF من XML باستخدام XSLT 
+title: إنشاء ملف PDF من XML باستخدام XSLT
 linktitle: إنشاء ملف PDF من XML باستخدام XSLT
 type: docs
 weight: 10

@@ -1,5 +1,6 @@
 ---
 title: Uninstalling Aspose.Pdf for SharePoint
+linktitle: Uninstalling Aspose.Pdf for SharePoint
 type: docs
 weight: 50
 url: /sharepoint/uninstalling-aspose-pdf-for-sharepoint/

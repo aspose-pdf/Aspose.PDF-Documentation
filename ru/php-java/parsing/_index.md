@@ -1,5 +1,5 @@
 ---
-title: Парсинг PDF документов 
+title: Парсинг PDF документов
 linktitle: Парсинг PDF документов
 type: docs
 weight: 60

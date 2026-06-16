@@ -1,16 +1,15 @@
 ---
 
-title: PDFでのXFAフォームの操作  
-linktitle: XFAフォーム  
-type: docs  
-weight: 20  
-url: /ja/java/xfa-forms/  
-description: Aspose.PDF for Javaを使用して、ゼロからフォームを作成したり、PDFドキュメントのフォームフィールドに入力したり、フォームからデータを抽出したり、既存のフォームにフィールドを追加または削除したりできます。  
-lastmod: "2021-06-05"  
-sitemap:  
- changefreq: "weekly"  
- priority: 0.7  
-
+title: PDFでのXFAフォームの操作
+linktitle: XFAフォーム
+type: docs
+weight: 20
+url: /ja/java/xfa-forms/
+description: Aspose.PDF for Javaを使用して、ゼロからフォームを作成したり、PDFドキュメントのフォームフィールドに入力したり、フォームからデータを抽出したり、既存のフォームにフィールドを追加または削除したりできます。
+lastmod: "2021-06-05"
+sitemap:
+ changefreq: "weekly"
+ priority: 0.7
 ---
 
 XFAはXML Forms Architectureの略です。これは1999年にウェブフォームでの使用を目的に初めて開発された一連の独自のXML仕様であり、その後PDFでも利用可能になりました。

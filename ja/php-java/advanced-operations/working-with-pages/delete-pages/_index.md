@@ -1,5 +1,5 @@
 ---
-title: PDFページをプログラムで削除 
+title: PDFページをプログラムで削除
 linktitle: PDFページを削除
 type: docs
 weight: 40

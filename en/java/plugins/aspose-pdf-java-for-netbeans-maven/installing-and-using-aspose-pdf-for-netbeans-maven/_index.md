@@ -1,11 +1,12 @@
 ---
 title: Installing and Using Aspose.Pdf for NetBeans - Maven
+linktitle: Installing and Using Aspose.Pdf for NetBeans - Maven
 type: docs
 weight: 10
 url: /java/installing-and-using-aspose-pdf-for-netbeans-maven/
-lastmod: "2025-02-17"
+description: Learn how to install and use the Aspose.PDF for NetBeans Maven plugin to create and manage PDF-enabled Java projects.
+lastmod: "2026-06-09"
 ---
-
 ## Installing
 
 **Aspose.PDF Java for NetBeans (Maven)** plugin can be easily installed from the Available **Plugin** tab in the Plugin dialog.

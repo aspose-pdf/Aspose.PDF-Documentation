@@ -1,161 +1,110 @@
 ---
-title: نقل صفحات PDF برمجياً باستخدام بايثون
+title: نقل صفحات PDF في بايثون
 linktitle: نقل صفحات PDF
 type: docs
 weight: 100
 url: /ar/python-net/move-pages/
-description: حاول نقل الصفحات إلى الموقع المطلوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF لبايثون عبر .NET.
-lastmod: "2023-04-17"
+description: تعرف على كيفية نقل صفحات PDF داخل مستند أو بين المستندات في Python.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: نقل صفحات PDF بين المستندات في Python
+Abstract: توضح هذه المقالة كيفية نقل الصفحات في ملفات PDF باستخدام Aspose.PDF لـ Python عبر .NET. تعرف على كيفية نقل صفحة واحدة أو عدة صفحات إلى مستند آخر، وكيفية إعادة وضع صفحة داخل نفس PDF باستخدام واجهات برمجة تطبيقات Document و PageCollection.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "نقل صفحات PDF برمجياً باستخدام بايثون",
-    "alternativeHeadline": "كيفية نقل صفحات PDF باستخدام بايثون",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, python, نقل صفحة pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/move-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/move-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "حاول نقل الصفحات إلى الموقع المطلوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF لبايثون عبر .NET."
-}
-</script>
 
+## نقل صفحة من وثيقة PDF إلى أخرى
 
-## نقل صفحة من مستند PDF إلى آخر
+يتيح لك Aspose.PDF for Python نقل صفحة (وليس نسخها فقط) من ملف PDF إلى آخر. يقوم بإزالة الصفحة المحددة من المستند الأصلي ثم إضافتها إلى ملف PDF جديد.
 
-توضح هذه الموضوع كيفية نقل صفحة من مستند PDF إلى نهاية مستند آخر باستخدام Python.
-لنقل صفحة يجب علينا:
+فكر في الأمر على أنه قطع صفحة من كتاب ولصقها في كتاب آخر - لم تعد الصفحة موجودة في الملف الأصلي بعد النقل.
 
-1. إنشاء كائن فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع ملف PDF المصدر.
-1. إنشاء كائن فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع ملف PDF الوجهة.
-1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) إضافة الصفحة إلى مستند الوجهة.
-1. حفظ ملف PDF الناتج باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-1. [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) حذف الصفحة في المستند المصدر.
+1. افتح مستند PDF المصدر باستخدام [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة.
+1. حدد صفحة معينة لنقلها (في هذه الحالة، الصفحة 2) - يشير هذا إلى [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. قم بإنشاء مستند PDF جديد (قم بإنشاء مثيل آخر) [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
+1. أضف الصفحة المحددة إلى مستند PDF الجديد باستخدام مستند الوجهة [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (على سبيل المثال, `another_document.pages.add(page)`).
+1. احذف الصفحة من المستند الأصلي عبر [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (على سبيل المثال, `document.pages.delete(index)`).
+1. احفظ كلا المستندين.
 
-1. احفظ ملف PDF المصدر باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-
-يوضح لك مقتطف الشيفرة التالي كيفية نقل صفحة واحدة.
+يوضح لك مقتطف الشفرة التالي كيفية نقل صفحة واحدة.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
 
-    srcDocument = ap.Document(src_file_name)
-    dstDocument = ap.Document(dst_File_name)
-    page = srcDocument.pages[2]
-    dstDocument.pages.add(page)
-    # احفظ ملف الإخراج
-    dstDocument.save(dst_File_name_new)
-    srcDocument.pages.delete(2)
-    srcDocument.save(src_file_name_new)
+    document = ap.Document(input_file_name)
+    page = document.pages[2]
+    another_document = ap.Document()
+    another_document.pages.add(page)
+    document.pages.delete(2)
+    document.save(input_file_name.replace(".pdf", "_new.pdf"))
+    another_document.save(output_file_name)
 ```
 
-## نقل مجموعة من الصفحات من مستند PDF إلى آخر
+## نقل صفحات متعددة من وثيقة PDF إلى أخرى
 
-1. أنشئ كائن فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع ملف PDF المصدر.
-1. أنشئ كائن فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع ملف PDF الوجهة.
-1. حدد مصفوفة بأرقام الصفحات المراد نقلها.
-1. قم بتشغيل حلقة عبر المصفوفة:
+على عكس النسخ، تقوم هذه العملية بنقل الصفحات المحددة - إزالتها من الملف المصدر وحفظها في PDF جديد.
 
-1. احصل على الصفحة من [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) المجموعة.
-1. [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) الصفحة إلى المستند الوجهة.
-1. احفظ ملف PDF الناتج باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-1. [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) الصفحة في المستند المصدر باستخدام المصفوفة.
-1. احفظ ملف PDF المصدر باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. إنشاء مستند وجهة جديد فارغ (`Document`).
+1. حدد صفحات متعددة (في هذه الحالة، الصفحتان 1 و 3) من المستند المصدر [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. قم بالتمرير عبر الصفحات المحددة وأضف كل منها إلى مستند الوجهة [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. احفظ مستند الوجهة الذي يحتوي على الصفحات المنقولة.
+1. احذف الصفحات المنقولة من المستند المصدر باستخدام [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. احفظ المستند المصدر المعدل باسم ملف جديد للحفاظ على كلا الإصدارين.
 
-يوضح لك مقطع الشيفرة التالي كيفية إدراج صفحة فارغة في نهاية ملف PDF.
+يعرض مقتطف الشفرة التالي كيفية نقل صفحات متعددة.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    srcDocument = ap.Document(input_pdf)
-    dstDocument = ap.Document()
-    pages = [1, 3]
+def move_multiple_pages_from_one_document_to_another(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
+    dst_document = ap.Document()
+    pages = [1, 2]
     for page_index in pages:
-        page = srcDocument.pages[page_index]
-        dstDocument.pages.add(page)
-    # حفظ ملفات الإخراج
-    dstDocument.save(output_pdf_1)
-    srcDocument.pages.delete(pages)
-    srcDocument.save(output_pdf_2)
+        page = src_document.pages[page_index]
+        dst_document.pages.add(page)
+    # Save output files
+    dst_document.save(output_file_name)
+    src_document.pages.delete(pages)
+    src_document.save(input_file_name.replace(".pdf", "_new.pdf"))
 ```
 
+## نقل صفحة إلى موقع جديد في نفس وثيقة PDF
 
-## نقل صفحة إلى موقع جديد في مستند PDF الحالي
+يوضح كيفية نقل صفحة معينة إلى موضع مختلف داخل نفس المستند - وهي حاجة شائعة عند إعادة تنظيم تخطيطات PDF أو تحريرها.
 
-1. أنشئ كائن من فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع ملف PDF المصدر.
-1. احصل على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. أضف الصفحة إلى الموقع الجديد (على سبيل المثال إلى النهاية) باستخدام [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods).
-1. احذف الصفحة في الموقع السابق باستخدام [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods).
-1. احفظ ملف PDF الناتج باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. قم بتحميل مستند PDF المُدخل باستخدام [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة.
+1. حدد الصفحة التي تريد نقلها (الصفحة 2) - هذه هي [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. قم بإضافته إلى نهاية المستند باستخدام المستند [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. احذف الصفحة الأصلية من موقعها السابق عبر [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. احفظ المستند المعدل كملف جديد.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def move_page_in_new_location_in_same_document(
+    input_file_name: str, output_file_name: str
+) -> None:
+    src_document = ap.Document(input_file_name)
 
-    srcDocument = ap.Document(input_pdf)
+    page = src_document.pages[2]
+    src_document.pages.add(page)
+    src_document.pages.delete(2)
 
-    page = srcDocument.pages[2]
-    srcDocument.pages.add(page)
-    srcDocument.pages.delete(2)
+    # Save output file
+    src_document.save(output_file_name)
+```
 
-    # حفظ ملف الإخراج
-    srcDocument.save(output_pdf)
+## موضوعات الصفحة ذات الصلة
+
+- [العمل مع صفحات PDF في بايثون](/pdf/ar/python-net/working-with-pages/)
+- [إضافة صفحات PDF في بايثون](/pdf/ar/python-net/add-pages/)
+- [حذف صفحات PDF في بايثون](/pdf/ar/python-net/delete-pages/)
+- [استخراج صفحات PDF في بايثون](/pdf/ar/python-net/extract-pages/)

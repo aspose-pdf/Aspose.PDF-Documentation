@@ -261,7 +261,7 @@ public final class ConvertTextToPDF {
         // konstruktor sebagai argumen
         TextFragment text = new TextFragment(Files.readString(txtDocumentFileName, ENCODING));
 
-        // Menambahkan paragraf teks baru dalam koleksi paragraf dan mengoper objek
+        // Menambahkan paragraf teks baru dalam koleksi `paragraphs` dan mengoper objek
         // TextFragment
         page.getParagraphs().add(text);
 
@@ -309,7 +309,7 @@ public final class ConvertTextToPDF {
                 // konstruktor sebagai argumen
                 TextFragment text = new TextFragment(line);
 
-                // Tambahkan paragraf teks baru dalam koleksi paragraf dan berikan objek TextFragment
+                // Tambahkan paragraf teks baru dalam koleksi `paragraphs` dan berikan objek TextFragment
                 page.getParagraphs().add(text);
             }
 

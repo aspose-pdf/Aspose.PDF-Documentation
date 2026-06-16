@@ -1,5 +1,6 @@
 ---
 title: XMP Metadata
+linktitle: XMP Metadata
 type: docs
 weight: 80
 url: /reportingservices/xmp-metadata/

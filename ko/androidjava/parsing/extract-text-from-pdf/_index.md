@@ -1,6 +1,6 @@
 ---
-title: PDF에서 텍스트 추출 
-linktitle: 텍스트 추출 
+title: PDF에서 텍스트 추출
+linktitle: 텍스트 추출
 type: docs
 weight: 10
 url: /ko/androidjava/extract-text-from-pdf/

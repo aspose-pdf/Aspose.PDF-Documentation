@@ -1,5 +1,5 @@
 ---
-title: Travailler avec les formulaires XFA dans PDF 
+title: Travailler avec les formulaires XFA dans PDF
 linktitle: Formulaires XFA
 type: docs
 weight: 20

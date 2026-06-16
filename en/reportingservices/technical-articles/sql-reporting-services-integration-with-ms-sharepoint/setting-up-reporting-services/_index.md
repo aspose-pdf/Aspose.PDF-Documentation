@@ -1,5 +1,6 @@
 ---
 title: Setting up Reporting Services
+linktitle: Setting up Reporting Services
 type: docs
 weight: 20
 url: /reportingservices/setting-up-reporting-services/

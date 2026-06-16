@@ -1,5 +1,6 @@
 ---
 title: Security Setting
+linktitle: Security Setting
 type: docs
 weight: 30
 url: /reportingservices/security-setting/

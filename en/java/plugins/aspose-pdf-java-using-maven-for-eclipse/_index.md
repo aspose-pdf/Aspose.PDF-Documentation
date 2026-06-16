@@ -1,12 +1,12 @@
 ---
 title: Aspose.PDF Java using Maven for Eclipse
+linktitle: Aspose.PDF Java using Maven for Eclipse
 type: docs
 weight: 80
 url: /java/aspose-pdf-java-using-maven-for-eclipse/
 description: Set up Aspose.PDF for Java in Eclipse using Maven. Simplify dependency management for efficient PDF development.
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 ---
-
 ## Introduction
 
 ### Eclipse IDE
@@ -33,7 +33,7 @@ The plugin contains two wizards
 
 **Aspose.PDF Maven Project (wizard)**
 
-- This New Project wizard lets developers create a **Maven** project for using Aspose.PDF for Java from New -> Project -> Maven-> Aspose.PDF Maven Project.
+- This New Project wizard lets developers create aВ **Maven** project for using Aspose.PDF for Java from New -> Project -> Maven-> Aspose.PDF Maven Project.
 - The reference of Aspose.PDF for Java API maven dependency is automatically fetched from [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) and gets added in the pom.xml.
 - The created project will always contain the most recent available version **Maven** Dependency for Aspose.PDF for Java API.
 - The wizard steps also present with the option for downloading [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) for using Aspose.PDF for Java API.

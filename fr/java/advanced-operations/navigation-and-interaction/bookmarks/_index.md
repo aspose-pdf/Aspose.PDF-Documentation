@@ -1,5 +1,5 @@
 ---
-title: Travailler avec les signets dans PDF 
+title: Travailler avec les signets dans PDF
 linktitle: Signets
 type: docs
 weight: 30

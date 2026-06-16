@@ -1,5 +1,5 @@
 ---
-title: Extract Paragraph from PDF 
+title: Extract Paragraph from PDF
 linktitle: Extract Paragraph
 type: docs
 weight: 20

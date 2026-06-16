@@ -1,5 +1,5 @@
 ---
-title: Working with PDF File Metadata 
+title: Working with PDF File Metadata
 linktitle: PDF File Metadata
 type: docs
 weight: 140

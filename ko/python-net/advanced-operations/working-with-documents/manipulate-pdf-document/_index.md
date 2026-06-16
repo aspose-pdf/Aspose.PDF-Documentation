@@ -1,197 +1,118 @@
 ---
-title: Python을 통한 PDF 문서 조작
-linktitle: PDF 문서 조작
+title: 파이썬에서 PDF 문서 조작하기
+linktitle: PDF 문서 조작하기
 type: docs
 weight: 20
 url: /ko/python-net/manipulate-pdf-document/
-description: 이 기사는 Python을 사용하여 PDF A 표준에 대해 PDF 문서를 검증하는 방법, 목차 작업 방법, PDF 만료 날짜 설정 방법 등에 대한 정보를 포함하고 있습니다.
-lastmod: "2023-04-13"
+description: TOC 관리 및 PDF/A 검사를 포함하여 Python에서 PDF 문서를 검증, 구성 및 수정하는 방법을 알아봅니다.
+lastmod: "2026-06-10"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python을 사용한 PDF 문서 조작 가이드
+Abstract: 이 문서에서는 Python, 특히 Aspose.PDF 라이브러리를 사용하여 PDF 문서를 조작하는 방법에 대한 포괄적인 가이드를 제공합니다.여기서는 `Document` 클래스의 `validate` 메서드를 사용하여 PDF/A-1a 및 PDF/A-1b 호환성에 대한 PDF 문서의 유효성을 검사하는 것을 비롯한 여러 기능을 다룹니다.또한 다양한 TabLeader 유형 설정, 페이지 번호 숨기기, 접두사를 사용한 페이지 번호 지정 사용자 지정 등 PDF 파일에 목차 (TOC) 를 추가, 사용자 지정 및 관리하는 방법도 자세히 설명합니다.또한 이 문서에서는 액세스 제한을 위해 JavaScript를 내장하여 PDF 문서의 만료 날짜를 설정하는 방법과 채울 수 있는 양식을 PDF에 통합하여 편집할 수 없게 만드는 방법에 대해 설명합니다.각 섹션에는 Python에서 Aspose.PDF 를 사용하여 이러한 기능을 구현하는 방법을 보여주는 코드 스니펫이 함께 제공됩니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Python을 통한 PDF 문서 조작",
-    "alternativeHeadline": "Python으로 PDF 파일을 조작하는 방법",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, dotnet, python, pdf 파일 조작",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/manipulate-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/manipulate-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "이 기사는 Python을 사용하여 PDF A 표준에 대해 PDF 문서를 검증하는 방법, 목차 작업 방법, PDF 만료 날짜 설정 방법 등에 대한 정보를 포함하고 있습니다."
-}
-</script>
 
+이 페이지는 PDF 규정 준수를 확인하고, 목차를 작성 또는 사용자 지정하고, 문서 만료 동작을 설정하거나, Python 워크플로에서 채울 수 있는 PDF를 병합해야 할 때 유용합니다.
 
-## 파이썬으로 PDF 문서 조작하기
+## 파이썬에서 PDF 문서 조작하기
 
-## PDF A 표준(PDF A 1A 및 A 1B)용 PDF 문서 유효성 검사
+## PDF A 표준 (A 1A 및 A 1B) 에 대한 PDF 문서 유효성 검사
 
-PDF 문서의 PDF/A-1a 또는 PDF/A-1b 호환성을 검증하려면 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스의 [validate](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 메서드를 사용하세요. 이 메서드는 결과를 저장할 파일의 이름과 필요한 유효성 검사 유형 PdfFormat 열거형: PDF_A_1A 또는 PDF_A_1B를 지정할 수 있게 합니다.
+PDF 문서의 PDF/A-1a 또는 PDF/a-1b 호환성을 확인하려면 다음을 사용하십시오. [문서](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 수업 [유효성을 검사합니다](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 방법.이 메서드를 사용하면 결과를 저장할 파일의 이름과 필요한 검증 유형인 PDF형식 열거 (PDF_A_1A 또는 PDF_A_1B) 를 지정할 수 있습니다.
 
-다음 코드 스니펫은 PDF/A-1A에 대해 PDF 문서를 검증하는 방법을 보여줍니다.
+다음 코드 스니펫은 PDF/A-1A용 PDF 문서의 유효성을 검사하는 방법을 보여줍니다.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 문서 열기
+def validate_pdfa_standard_a1a(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
-
-    # PDF/A-1a에 대해 PDF 유효성 검사
-    document.validate(output_xml, ap.PdfFormat.PDF_A_1A)
+    document.validate(output_pdf, ap.PdfFormat.PDF_A_1A)
 ```
 
-다음 코드 스니펫은 PDF/A-1b에 대해 PDF 문서를 검증하는 방법을 보여줍니다.
+다음 코드 스니펫은 PDF/A-1b용 PDF 문서의 유효성을 검사하는 방법을 보여줍니다.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 문서 열기
+def validate_pdfa_standard_a1b(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
-
-    # PDF/A-1a에 대해 PDF 유효성 검사
-    document.validate(output_xml, ap.PdfFormat.PDF_A_1B)
+    document.validate(output_pdf, ap.PdfFormat.PDF_A_1B)
 ```
 
+## TOC로 작업하기
 
-## TOC 작업하기
+### 기존 PDF에 목차 추가
 
-### 기존 PDF에 TOC 추가
+PDF의 TOC는 “목차”의 약자입니다.섹션 및 제목에 대한 개요를 제공하여 사용자가 문서를 빠르게 탐색할 수 있게 해주는 기능입니다. 
 
-PDF에서 TOC는 "차례"를 의미합니다. 이는 사용자가 문서의 섹션 및 헤딩을 개요로 제공하여 문서를 빠르게 탐색할 수 있게 해주는 기능입니다.
-
-기존 PDF 파일에 TOC를 추가하려면 [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) 네임스페이스의 Heading 클래스를 사용합니다. [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) 네임스페이스는 새로운 PDF 파일을 생성하고 기존 PDF 파일을 조작할 수 있습니다. 기존 PDF에 TOC를 추가하려면 Aspose.Pdf 네임스페이스를 사용합니다. 다음 코드 스니펫은 Python을 통해 .NET에서 기존의 PDF 파일 내부에 목차를 생성하는 방법을 보여줍니다.
+기존 PDF 파일에 목차를 추가하려면 의 Heading 클래스를 사용하십시오. [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) 네임스페이스.더 [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) 네임스페이스는 새 PDF 파일을 만들거나 기존 PDF 파일을 조작할 수 있습니다.기존 PDF에 목차를 추가하려면 Aspose.Pdf 네임스페이스를 사용하십시오.다음 코드 스니펫은.NET을 통해 Python을 사용하여 기존 PDF 파일 내에 목차를 만드는 방법을 보여줍니다.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 기존 PDF 파일을 로드합니다
-    doc = ap.Document(input_pdf)
-
-    # PDF 파일의 첫 번째 페이지에 접근합니다
-    tocPage = doc.pages.insert(1)
-
-    # TOC 정보를 나타내기 위한 객체를 생성합니다
-    tocInfo = ap.TocInfo()
+def add_table_of_contents(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.insert(1)
+    toc_info = ap.TocInfo()
     title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
+    toc_info.title = title
+    toc_page.toc_info = toc_info
 
-    # TOC 제목을 설정합니다
-    tocInfo.title = title
-    tocPage.toc_info = tocInfo
+    titles = ["First page", "Second page"]
+    for index, title_text in enumerate(titles[:2]):
+        heading = ap.Heading(1)
+        segment = ap.text.TextSegment(title_text)
+        heading.toc_page = toc_page
+        heading.segments.append(segment)
+        destination_page = document.pages[index + 2]
+        heading.destination_page = destination_page
+        heading.top = destination_page.rect.height
+        toc_page.paragraphs.add(heading)
 
-    # TOC 요소로 사용할 문자열 객체를 생성합니다
-    titles = ["First page", "Second page", "Third page", "Fourth page"]
-    for i in range(0, 2):
-        # Heading 객체를 생성합니다
-        heading2 = ap.Heading(1)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = tocPage
-        heading2.segments.append(segment2)
-
-        # Heading 객체의 대상 페이지를 지정합니다
-        heading2.destination_page = doc.pages[i + 2]
-
-        # 대상 페이지
-        heading2.top = doc.pages[i + 2].rect.height
-
-        # 대상 좌표
-        segment2.text = titles[i]
-
-        # TOC를 포함하는 페이지에 헤딩을 추가합니다
-        tocPage.paragraphs.add(heading2)
-
-    # 업데이트된 문서를 저장합니다
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
+### 다양한 TOC 레벨에 대해 다른 테이블 리더 유형 설정
 
-### 서로 다른 TOC 레벨에 대해 다른 TabLeaderType 설정하기
-
-Aspose.PDF for Python을 사용하면 서로 다른 TOC 레벨에 대해 다른 TabLeaderType을 설정할 수 있습니다. [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/)의 [line_dash](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) 속성을 설정해야 합니다.
+파이썬용 Aspose.PDF 기능을 사용하면 TOC 수준에 따라 다른 테이블 리더 유형을 설정할 수도 있습니다.다음을 설정해야 합니다. [라인_대시](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) 의 재산 [TOC 정보](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document()
-    tocPage = doc.pages.add()
+def set_toc_levels(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.add()
     toc_info = ap.TocInfo()
-
-    # LeaderType 설정
     toc_info.line_dash = ap.text.TabLeaderType.SOLID
-    title = ap.text.TextFragment("목차")
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 30
     toc_info.title = title
-
-    # Pdf 문서의 섹션 컬렉션에 목록 섹션 추가
-    tocPage.toc_info = toc_info
-    # 왼쪽 여백을 설정하여 네 가지 수준 목록의 형식을 정의
-    # 및 각 수준의 텍스트 형식 설정
+    toc_page.toc_info = toc_info
 
     toc_info.format_array_length = 4
     toc_info.format_array[0].margin.left = 0
     toc_info.format_array[0].margin.right = 30
     toc_info.format_array[0].line_dash = ap.text.TabLeaderType.DOT
-    toc_info.format_array[0].text_state.font_style = ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    toc_info.format_array[0].text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     toc_info.format_array[1].margin.left = 10
     toc_info.format_array[1].margin.right = 30
     toc_info.format_array[1].line_dash = 3
@@ -204,225 +125,146 @@ Aspose.PDF for Python을 사용하면 서로 다른 TOC 레벨에 대해 다른 
     toc_info.format_array[3].margin.right = 30
     toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
 
-    # Pdf 문서에 섹션 생성
-    page = doc.pages.add()
+    page = document.pages.add()
+    for level in range(1, 5):
+        heading = ap.Heading(level)
+        heading.is_auto_sequence = True
+        heading.toc_page = toc_page
+        heading.text_state.font = ap.text.FontRepository.find_font("Arial")
+        segment = ap.text.TextSegment(f"Sample Heading{level}")
+        heading.segments.append(segment)
+        heading.is_in_list = True
+        page.paragraphs.add(heading)
 
-    # 섹션에 네 개의 헤딩 추가
-    for Level in range(1, 5):
-        heading2 = ap.Heading(Level)
-        segment2 = ap.text.TextSegment()
-        heading2.segments.append(segment2)
-        heading2.is_auto_sequence = True
-        heading2.toc_page = tocPage
-        segment2.text = "샘플 헤딩" + str(Level)
-        heading2.text_state.font = ap.text.FontRepository.find_font("Arial")
-
-        # 목차에 헤딩 추가.
-        heading2.is_in_list = True
-        page.paragraphs.add(heading2)
-
-    # Pdf 저장
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
+### TOC에서 페이지 번호 숨기기
 
-### 목차에서 페이지 번호 숨기기
-
-목차에 제목과 함께 페이지 번호를 표시하지 않으려면 [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) 클래스의 [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) 속성을 false로 사용할 수 있습니다. 다음 코드 스니펫을 확인하여 목차에서 페이지 번호를 숨기세요:
+TOC의 제목과 함께 페이지 번호를 표시하지 않으려는 경우 다음을 사용할 수 있습니다. [is_show_page_번호](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) 의 재산 [TOC 정보](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) 클래스는 거짓입니다.목차에서 페이지 번호를 숨기려면 다음 코드 스니펫을 확인하세요.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document()
-    toc_page = doc.pages.add()
+def hide_page_numbers_in_toc(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.add()
     toc_info = ap.TocInfo()
     title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
     toc_info.title = title
-    # Pdf 문서의 섹션 컬렉션에 목록 섹션 추가
-    toc_page.toc_info = toc_info
-    # 각 레벨의 왼쪽 여백과 텍스트 형식 설정을 설정하여 네 레벨 목록의 형식을 정의
-
     toc_info.is_show_page_numbers = False
+    toc_page.toc_info = toc_info
+
     toc_info.format_array_length = 4
     toc_info.format_array[0].margin.right = 0
-    toc_info.format_array[0].text_state.font_style = ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    toc_info.format_array[0].text_state.font_style = (
+        ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    )
     toc_info.format_array[1].margin.left = 30
     toc_info.format_array[1].text_state.underline = True
     toc_info.format_array[1].text_state.font_size = 10
     toc_info.format_array[2].text_state.font_style = ap.text.FontStyles.BOLD
     toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
-    page = doc.pages.add()
-    # 섹션에 네 개의 제목 추가
-    for Level in range(1, 5):
-        heading2 = ap.Heading(Level)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = toc_page
-        heading2.segments.append(segment2)
-        heading2.is_auto_sequence = True
-        segment2.text = "this is heading of level " + str(Level)
-        heading2.is_in_list = True
-        page.paragraphs.add(heading2)
-    doc.save(output_pdf)
 
+    page = document.pages.add()
+    for level in range(1, 2):
+        heading = ap.Heading(level)
+        heading.toc_page = toc_page
+        heading.is_auto_sequence = True
+        heading.is_in_list = True
+        segment = ap.text.TextSegment(f"this is heading of level {level}")
+        heading.segments.append(segment)
+        page.paragraphs.add(heading)
+
+    document.save(output_pdf)
 ```
 
+### TOC 추가 시 페이지 번호 사용자 지정
 
-### 목차 추가 시 페이지 번호 사용자 지정
-
-PDF 문서에 목차를 추가할 때 페이지 번호를 사용자 지정하는 것이 일반적입니다. 예를 들어, 페이지 번호 앞에 P1, P2, P3 등과 같은 접두어를 추가해야 할 수 있습니다. 이러한 경우, Aspose.PDF for Python은 [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) 클래스의 [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) 속성을 제공하여 페이지 번호를 사용자 지정할 수 있습니다. 다음 코드 샘플과 같이 사용할 수 있습니다.
+PDF 문서에 목차를 추가하는 동안 목차의 페이지 번호 매기기를 사용자 정의하는 것이 일반적입니다.예를 들어 페이지 번호 앞에 P1, P2, P3 등과 같은 접두사를 추가해야 할 수 있습니다.이런 경우, 파이썬용 Aspose.PDF 는 다음을 제공합니다. [페이지_번호_접두사](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) 의 재산 [TOC 정보](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) 다음 코드 샘플과 같이 페이지 번호를 사용자 지정하는 데 사용할 수 있는 클래스입니다.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 기존 PDF 파일 로드
-    doc = ap.Document(input_pdf)
-    # PDF 파일의 첫 번째 페이지에 액세스
-    toc_page = doc.pages.insert(1)
-    # 목차 정보를 나타내는 객체 생성
+def customize_page_numbers_in_toc(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.insert(1)
     toc_info = ap.TocInfo()
     title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
-    # 목차의 제목 설정
     toc_info.title = title
     toc_info.page_numbers_prefix = "P"
     toc_page.toc_info = toc_info
-    for i in range(len(doc.pages)):
-        # Heading 객체 생성
-        heading2 = ap.Heading(1)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = toc_page
-        heading2.segments.append(segment2)
-        # Heading 객체의 대상 페이지 지정
-        heading2.destination_page = doc.pages[i + 1]
-        # 대상 페이지
-        heading2.top = doc.pages[i + 1].rect.height
-        # 대상 좌표
-        segment2.text = "Page " + str(i)
-        # 목차가 포함된 페이지에 heading 추가
-        toc_page.paragraphs.add(heading2)
 
-    # 업데이트된 문서 저장
-    doc.save(output_pdf)
+    for index, page in enumerate(document.pages, start=1):
+        heading = ap.Heading(1)
+        heading.toc_page = toc_page
+        heading.destination_page = page
+        heading.top = page.rect.height
+        segment = ap.text.TextSegment(f"Page {index}")
+        heading.segments.append(segment)
+        toc_page.paragraphs.add(heading)
 
+    document.save(output_pdf)
 ```
 
+## PDF 만료일 설정 방법
 
-## PDF 만료 날짜 설정 방법
-
-우리는 PDF 파일에 액세스 권한을 적용하여 특정 사용자 그룹이 PDF 문서의 특정 기능/객체에 액세스할 수 있도록 합니다. PDF 파일 액세스를 제한하기 위해 일반적으로 암호화를 적용하고, 사용자가 문서를 액세스/보기할 때 PDF 파일 만료에 대한 유효한 메시지를 받도록 PDF 파일 만료를 설정해야 할 수도 있습니다.
+특정 사용자 그룹이 PDF 문서의 특정 기능/개체에 액세스할 수 있도록 PDF 파일에 대한 액세스 권한을 적용합니다.PDF 파일 액세스를 제한하기 위해 일반적으로 암호화를 적용하며, 문서에 액세스하거나 문서를 보는 사용자에게 PDF 파일 만료에 관한 유효한 메시지를 받을 수 있도록 PDF 파일 만료 시간을 설정해야 할 수도 있습니다.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Document 객체 인스턴스화
-    doc = ap.Document()
-    # PDF 파일의 페이지 컬렉션에 페이지 추가
-    doc.pages.add()
-    # 페이지 객체의 단락 컬렉션에 텍스트 조각 추가
-    doc.pages[1].paragraphs.add(ap.text.TextFragment("Hello World..."))
-    # PDF 만료 날짜를 설정하기 위한 JavaScript 객체 생성
-    javaScript = ap.annotations.JavascriptAction(
+def set_pdf_expiry_date(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    document.pages.add()
+    document.pages[1].paragraphs.add(ap.text.TextFragment("Hello World..."))
+    script = ap.annotations.JavascriptAction(
         "var year=2017;"
-        + "var month=5;"
-        + "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());"
-        + "expiry = new Date(year, month);"
-        + "if (today.getTime() > expiry.getTime())"
-        + "app.alert('The file is expired. You need a new one.');"
+        "var month=5;"
+        "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());"
+        "expiry = new Date(year, month);"
+        "if (today.getTime() > expiry.getTime())"
+        "app.alert('The file is expired. You need a new one.');"
     )
-    # JavaScript를 PDF 열기 동작으로 설정
-    doc.open_action = javaScript
-
-    # PDF 문서 저장
-    doc.save(output_pdf)
+    document.open_action = script
+    document.save(output_pdf)
 ```
 
+## 채울 수 있는 PDF를 파이썬으로 병합
 
-## 파이썬에서 작성 가능한 PDF 평탄화
-
-PDF 문서에는 라디오 버튼, 체크박스, 텍스트 상자, 목록 등과 같은 대화형 작성 가능한 위젯이 포함된 양식이 자주 포함됩니다. 다양한 응용 프로그램 목적을 위해 편집할 수 없게 만들려면 PDF 파일을 평탄화해야 합니다. Aspose.PDF는 몇 줄의 코드만으로 파이썬에서 PDF를 평탄화하는 기능을 제공합니다:
+PDF 문서에는 종종 라디오 버튼, 확인란, 텍스트 상자, 목록 등과 같이 채울 수 있는 대화형 위젯이 있는 양식이 포함됩니다. 다양한 응용 목적으로 편집할 수 없도록 하려면 PDF 파일을 평평하게 해야 합니다.
+Aspose.PDF 는 단 몇 줄의 코드로 파이썬에서 PDF를 평면화하는 함수를 제공합니다.
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 소스 PDF 양식 로드
-    doc = ap.Document(input_pdf)
-
-    # 작성 가능한 PDF 평탄화
-    if len(doc.form.fields) > 0:
-        for item in doc.form.fields:
-            item.flatten()
-
-    # 업데이트된 문서 저장
-    doc.save(output_pdf)
+def flatten_fillable_pdf(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    if document.form and document.form.fields:
+        for field in document.form.fields:
+            field.flatten()
+    document.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://releases.aspose.com/pdf/python-net",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 관련 문서 주제
+
+- [파이썬에서 PDF 문서로 작업하기](/pdf/ko/python-net/working-with-documents/)
+- [파이썬으로 PDF 문서 포맷 지정하기](/pdf/ko/python-net/formatting-pdf-document/)
+- [파이썬으로 PDF 파일 만들기](/pdf/ko/python-net/create-pdf-document/)
+- [파이썬에서 PDF 파일 최적화하기](/pdf/ko/python-net/optimize-pdf/)

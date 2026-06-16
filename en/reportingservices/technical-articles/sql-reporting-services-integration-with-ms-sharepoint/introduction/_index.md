@@ -1,5 +1,6 @@
 ---
 title: Introduction
+linktitle: Introduction
 type: docs
 weight: 10
 url: /reportingservices/introduction/

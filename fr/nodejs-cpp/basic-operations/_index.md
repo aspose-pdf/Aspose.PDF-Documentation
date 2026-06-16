@@ -1,5 +1,5 @@
 ---
-title: Opérations de base avec PDF par Aspose.PDF pour Node.js via C++ 
+title: Opérations de base avec PDF par Aspose.PDF pour Node.js via C++
 linktitle: Opérations de base
 type: docs
 weight: 40

@@ -1,5 +1,5 @@
 ---
-title: Travailler avec les Métadonnées de Fichier PDF 
+title: Travailler avec les Métadonnées de Fichier PDF
 linktitle: Métadonnées de Fichier PDF
 type: docs
 weight: 140

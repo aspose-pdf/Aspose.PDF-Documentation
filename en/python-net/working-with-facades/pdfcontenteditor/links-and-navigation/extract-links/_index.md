@@ -1,5 +1,6 @@
 ---
-title: Extract Links
+title: Extract Links
+linktitle: Extract Links
 type: docs
 weight: 70
 url: /python-net/extract-links/

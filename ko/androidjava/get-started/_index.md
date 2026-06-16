@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /ko/androidjava/get-started/
 description: 이 섹션에서는 Java를 통해 Aspose.PDF for Android를 사용하는 기본 원리를 설명합니다. 또한 PDF 문서를 생성하기 위한 간단하고 복잡한 예제를 보여줍니다.
-lastmod: "2021-08-05"   
-sitemap: 
+lastmod: "2021-08-05"
+sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---

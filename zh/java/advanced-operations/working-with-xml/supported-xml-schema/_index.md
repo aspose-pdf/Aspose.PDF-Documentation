@@ -1,5 +1,5 @@
 ---
-title: XML Schema 
+title: XML Schema
 linktitle: 支持的 XML 方案
 type: docs
 weight: 10

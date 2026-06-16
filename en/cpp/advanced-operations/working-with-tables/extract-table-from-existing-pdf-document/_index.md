@@ -1,5 +1,5 @@
 ---
-title: Extract Table from PDF 
+title: Extract Table from PDF
 linktitle: Extract Table
 type: docs
 weight: 20

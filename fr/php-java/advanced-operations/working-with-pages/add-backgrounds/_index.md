@@ -1,5 +1,5 @@
 ---
-title: Ajouter un arrière-plan au PDF 
+title: Ajouter un arrière-plan au PDF
 linktitle: Ajouter des arrière-plans
 type: docs
 weight: 110

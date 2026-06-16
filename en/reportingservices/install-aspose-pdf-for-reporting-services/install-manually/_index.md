@@ -1,5 +1,6 @@
 ---
 title: Install Manually
+linktitle: Install Manually
 type: docs
 weight: 20
 url: /reportingservices/install-manually/

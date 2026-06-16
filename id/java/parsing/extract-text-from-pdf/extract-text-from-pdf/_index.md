@@ -1,5 +1,5 @@
 ---
-title: Ekstraksi teks mentah dari file PDF 
+title: Ekstraksi teks mentah dari file PDF
 linktitle: Ekstrak teks dari PDF
 type: docs
 weight: 10

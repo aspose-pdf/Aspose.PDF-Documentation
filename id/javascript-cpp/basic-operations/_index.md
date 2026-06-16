@@ -1,5 +1,5 @@
 ---
-title: Operasi dasar dengan PDF oleh Aspose.PDF untuk JavaScript via C++ 
+title: Operasi dasar dengan PDF oleh Aspose.PDF untuk JavaScript via C++
 linktitle: Operasi dasar
 type: docs
 weight: 40

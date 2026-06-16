@@ -1,12 +1,12 @@
 ---
 title: Extract Text From All the Pages of a PDF Document in Jython
+linktitle: Extract Text From All the Pages of a PDF Document in Jython
 type: docs
 weight: 30
 url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/
 description: Discover how to extract text from all pages of a PDF document using Jython and Aspose.PDF for text analysis.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Extract Text From All Pages
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

@@ -1,5 +1,6 @@
 ---
-title: Add Polyline Annotation
+title: Add Polyline Annotation
+linktitle: Add Polyline Annotation
 type: docs
 weight: 50
 url: /python-net/add-polyline-annotation/

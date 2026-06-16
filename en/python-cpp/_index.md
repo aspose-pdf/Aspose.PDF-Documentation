@@ -7,7 +7,7 @@ weight: 50
 url: /python-cpp/
 is_root: true
 lastmod: "2024-04-24"
-description: Learn to use Aspose.PDF Python via C++ to create applications for PDF document processing on any platform using Python. Browse tutorials, sample codes, and more.    
+description: Learn to use Aspose.PDF Python via C++ to create applications for PDF document processing on any platform using Python. Browse tutorials, sample codes, and more.
 sitemap:
     changefreq: "monthly"
     priority: 0.7

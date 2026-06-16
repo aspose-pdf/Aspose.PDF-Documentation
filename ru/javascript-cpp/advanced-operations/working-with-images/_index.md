@@ -1,5 +1,5 @@
 ---
-title: Работа с изображениями в PDF с использованием JavaScript через C++ 
+title: Работа с изображениями в PDF с использованием JavaScript через C++
 linktitle: Работа с изображениями
 type: docs
 weight: 40

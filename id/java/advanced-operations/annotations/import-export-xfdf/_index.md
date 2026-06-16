@@ -1,10 +1,10 @@
 ---
-title: Impor dan Ekspor Anotasi ke format XFDF 
+title: Impor dan Ekspor Anotasi ke format XFDF
 linktitle: Impor dan Ekspor Anotasi ke format XFDF
 type: docs
 weight: 40
 url: /id/java/import-export-xfdf/
-description: Anda dapat mengimpor dan mengekspor anotasi dengan format XFDF menggunakan pustaka Aspose.PDF untuk Java. 
+description: Anda dapat mengimpor dan mengekspor anotasi dengan format XFDF menggunakan pustaka Aspose.PDF untuk Java.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

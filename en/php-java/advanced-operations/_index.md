@@ -1,10 +1,10 @@
 ---
-title: Advanced operations 
-linktitle: Advanced operations 
+title: Advanced operations
+linktitle: Advanced operations
 type: docs
 weight: 70
 url: /php-java/advanced-operations/
-description: You can perform not only simple and easy tasks but also cope with more complex goals with Aspose.PDF for PHP via Java. 
+description: You can perform not only simple and easy tasks but also cope with more complex goals with Aspose.PDF for PHP via Java.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

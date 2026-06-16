@@ -1,11 +1,11 @@
 ---
-title: Начало работы 
+title: Начало работы
 linktitle: Начало работы
 type: docs
 weight: 30
 url: /ru/nodejs-cpp/get-started/
 description: Этот раздел описывает основные принципы работы Aspose.PDF для Node.js через C++. Aspose.PDF для Node.js через C++ поддерживает широкий спектр функций.
-lastmod: "2023-11-16"   
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -21,7 +21,7 @@ Topik ini menunjukkan cara membagi halaman PDF dengan Aspose.PDF untuk Java menj
 
 1. Loop melalui halaman dokumen PDF melalui koleksi [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection) dari objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
 
-1. Untuk setiap iterasi, buat objek Dokumen baru dan tambahkan objek [Halaman](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) individu ke dalam dokumen kosong.
+1. Untuk setiap iterasi, buat objek Dokumen baru dan tambahkan objek [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) individu ke dalam dokumen kosong.
 1. Simpan PDF baru menggunakan metode Save.
 
 Cuplikan kode Java berikut menunjukkan cara membagi halaman PDF menjadi file PDF individu.

@@ -1,5 +1,6 @@
 ---
-title: Replace XFA Data
+title: Replace XFA Data
+linktitle: Replace XFA Data
 type: docs
 weight: 50
 url: /python-net/replace-xfa-data/

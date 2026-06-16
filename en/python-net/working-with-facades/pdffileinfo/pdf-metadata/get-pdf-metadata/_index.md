@@ -1,5 +1,6 @@
 ---
-title: Get PDF Metadata
+title: Get PDF Metadata
+linktitle: Get PDF Metadata
 type: docs
 weight: 20
 url: /python-net/get-pdf-metadata/

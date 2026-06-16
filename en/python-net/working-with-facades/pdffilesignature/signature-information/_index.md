@@ -1,5 +1,6 @@
 ---
-title: Signature Information
+title: Signature Information
+linktitle: Signature Information
 type: docs
 weight: 60
 url: /python-net/signature-information/

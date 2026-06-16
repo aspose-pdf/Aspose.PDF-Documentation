@@ -1,11 +1,11 @@
 ---
-title: PDF Annotations 
+title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /ko/java/annotations/
 description: 이 섹션에서는 Aspose.PDF 라이브러리를 사용하여 PDF 파일에 모든 종류의 주석을 사용하는 방법을 보여줍니다. Java로 주석을 그리거나 열거나 추가하는 방법을 배웁니다.
-lastmod: "2021-11-26"    
+lastmod: "2021-11-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

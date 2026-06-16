@@ -1,5 +1,5 @@
 ---
-title: Obtenir, Mettre à Jour et Développer un Signet 
+title: Obtenir, Mettre à Jour et Développer un Signet
 linktitle: Obtenir, Mettre à Jour et Développer un Signet
 type: docs
 weight: 20

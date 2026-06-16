@@ -1,5 +1,5 @@
 ---
-title: Удаление страниц PDF программно 
+title: Удаление страниц PDF программно
 linktitle: Удаление страниц PDF
 type: docs
 weight: 40

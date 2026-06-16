@@ -1,11 +1,12 @@
 ---
 title: Working with Pages in Python
+linktitle: Working with Pages in Python
 type: docs
 weight: 30
 url: /java/working-with-pages-in-python/
-lastmod: "2021-06-05"
+description: Learn how to work with PDF pages in Python using Aspose.PDF, including page access, updates, and document organization.
+lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Concatenate PDF Files in Python](/pdf/java/concatenate-pdf-files-in-python/)

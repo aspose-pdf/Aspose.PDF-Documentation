@@ -1,5 +1,5 @@
 ---
-title: Bekerja dengan Grafik 
+title: Bekerja dengan Grafik
 linktitle: Bekerja dengan Grafik
 type: docs
 weight: 70

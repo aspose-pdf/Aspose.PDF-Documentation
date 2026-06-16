@@ -1,11 +1,12 @@
 ---
 title: Working with Document Conversion in Python
+linktitle: Working with Document Conversion in Python
 type: docs
 weight: 10
 url: /java/working-with-document-conversion-in-python/
-lastmod: "2021-06-05"
+description: Learn how to convert PDF documents to different formats in Python using Aspose.PDF for flexible document processing.
+lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Convert PDF to DOC or DOCX format in Python](/pdf/java/convert-pdf-to-doc-or-docx-format-in-python/)

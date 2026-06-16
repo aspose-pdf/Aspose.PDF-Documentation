@@ -49,7 +49,7 @@ void GetPageCountWithoutSavingTheDocument() {
     auto page = document->get_Pages()->Add();
     // Buat instance loop
     for (int i = 0; i < 300; i++)
-        // Tambahkan TextFragment ke koleksi paragraf dari objek halaman
+        // Tambahkan TextFragment ke koleksi `paragraphs` dari objek halaman
         page->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Pengujian jumlah halaman"));
     // Proses paragraf dalam file PDF untuk mendapatkan jumlah halaman yang akurat
     document->ProcessParagraphs();

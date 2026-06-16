@@ -1,6 +1,6 @@
 ---
-title: Конвертировать JPG в PDF 
-linktitle: Конвертировать JPG в PDF 
+title: Конвертировать JPG в PDF
+linktitle: Конвертировать JPG в PDF
 type: docs
 weight: 190
 url: /ru/androidjava/convert-jpg-to-pdf/

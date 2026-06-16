@@ -1,5 +1,5 @@
 ---
-title: Extract fonts from PDF 
+title: Extract fonts from PDF
 linktitle: Extract fonts
 type: docs
 weight: 30

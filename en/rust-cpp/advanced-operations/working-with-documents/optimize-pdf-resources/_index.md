@@ -1,5 +1,5 @@
 ---
-title: Optimize PDF Resources using Rust via C++ 
+title: Optimize PDF Resources using Rust via C++
 linktitle: Optimize PDF Resources
 type: docs
 weight: 15
@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Optimize PDF Resources using Aspose.PDF for Rust
 Abstract: Aspose.PDF for Rust via C++ provides advanced capabilities to optimize PDF resources, enhancing document efficiency and reducing file size. The library allows developers to optimize fonts, images, and metadata by removing redundant data and compressing resources without compromising document quality. These optimization techniques improve document performance, making PDFs more suitable for sharing and storage. The documentation offers detailed guidance and code samples to help developers effectively implement resource optimization in their applications.
-SoftwareApplication: rust-cpp     
+SoftwareApplication: rust-cpp
 ---
 
 ## Optimize PDF Resources

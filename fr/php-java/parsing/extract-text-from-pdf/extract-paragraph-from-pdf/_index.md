@@ -1,5 +1,5 @@
 ---
-title: Extraire un paragraphe d'un PDF 
+title: Extraire un paragraphe d'un PDF
 linktitle: Extraire un paragraphe
 type: docs
 weight: 20

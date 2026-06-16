@@ -1,5 +1,6 @@
 ---
 title: Working With Text - Facades
+linktitle: Working With Text - Facades
 type: docs
 weight: 40
 url: /cpp/working-with-text-facades/

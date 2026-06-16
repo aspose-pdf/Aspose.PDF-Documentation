@@ -1,15 +1,24 @@
 ---
 title: PdfFileStamp Class
+linktitle: PdfFileStamp Class
 type: docs
-weight: 120
+weight: 155
 url: /java/pdffilestamp-class/
-description: Explore how to use the PDFFileStamp class in Java to stamp text or images onto a PDF document using Aspose.PDF.
-lastmod: "2025-02-17"
+description: Learn how to use the PdfFileStamp facade in Java to add headers, footers, page numbers, and stamps to PDF documents.
+lastmod: "2026-06-09"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Add headers, footers, page numbers, and stamps to PDF in Java with PdfFileStamp
+Abstract: This section explains how to use the PdfFileStamp facade in Aspose.PDF for Java to add repeated content to PDF documents. The current Java examples cover image stamps, text and image headers, text and image footers, and several page-number placement options.
 ---
+The Java `PdfFileStampExamples` class demonstrates the main stamping workflows available through the Facades API.
 
-- [Add PDF Page Stamp](/pdf/java/add-pdf-page-stamp/)
-- [Add Text and Image Stamp](/pdf/java/add-text-and-image-stamp/)
-- [Manage Header and Footer](/pdf/java/manage-header-and-footer/)
+Use this section to learn how to:
+
+- add an image stamp to a PDF
+- place text and image headers or footers
+- control header and footer margins
+- add page numbers with default, coordinate-based, aligned, or Roman-numbering layouts

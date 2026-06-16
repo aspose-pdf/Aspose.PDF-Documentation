@@ -1,5 +1,6 @@
 ---
 title: Easy and Lightweight Deployment
+linktitle: Easy and Lightweight Deployment
 type: docs
 weight: 10
 url: /jasperreports/easy-and-lightweight-deployment/

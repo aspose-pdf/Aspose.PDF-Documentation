@@ -1,335 +1,306 @@
 ---
-title: PDFをPythonで異なる画像形式に変換する
-linktitle: PDFを画像に変換
+title: Python でPDFをイメージフォーマットに変換する方法
+linktitle: PDF を画像に変換
 type: docs
 weight: 70
 url: /ja/python-net/convert-pdf-to-images-format/
-lastmod: "2022-12-23"
-description: このトピックでは、Aspose.PDF for Pythonを使用してPDFをTIFF、BMP、EMF、JPEG、PNG、GIF、SVGなどのさまざまな画像形式に数行のコードで変換する方法を紹介します。
+lastmod: "2026-06-09"
+description: .NET 経由の Aspose.PDF for Python を使用して、PDF ページを Python で TIFF、BMP、EMF、JPEG、PNG、GIF、SVG ファイルとしてレンダリングする方法を学びましょう。
 sitemap:
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: Python で PDF ページを TIFF、PNG、JPEG、GIF、BMP、EMF、SVG に変換
+Abstract: この記事では、.NET 経由で Aspose.PDF for Python を使用して PDF ファイルを一般的な画像形式に変換する方法について説明します。「TiffDevice」によるドキュメント全体の TIFF エクスポート、「BMPDevice」、「JpegDevice」、「PngDevice」、「PngDevice」、「GifDevice」などの「ImageDevice」サブクラスによるページごとのラスターイメージ生成、および「SVGSaveOptions」を使用した SVG へのベクターエクスポートについて説明します。各セクションには、PDF コンテンツを画像出力として保存するために必要なコアステップと Python の例が含まれています。
 ---
 
-## 概要
+## パイソン PDF を画像に変換
 
-この記事では、Pythonを使用してPDFを異なる画像形式に変換する方法を説明します。以下のトピックをカバーしています。
+**.NET 経由の Python 用 Aspose.PDF ** は、PDF コンテンツを画像に変換するいくつかの方法をサポートしています。実際には、ほとんどのワークフローでは次の 2 つのオプションのいずれかを使用します。
 
-_画像形式_: **TIFF**
-- [Python PDFをTIFFに変換](#python-pdf-to-tiff)
-- [PythonでPDFをTIFFに変換](#python-pdf-to-tiff)
-- [PythonでPDFの特定のページまたは単一ページをTIFFに変換](#python-pdf-to-tiff-pages)
+- PDF ページをラスターイメージ形式にレンダリングするためのデバイスアプローチ
+- PDF コンテンツを SVG にエクスポートするための保存オプションアプローチ
 
-_画像形式_: **BMP**
-- [Python PDFをBMPに変換](#python-pdf-to-bmp)
-- [PythonでPDFをBMPに変換](#python-pdf-to-bmp)
-- [Python PDFをBMPに変換するコンバーター](#python-pdf-to-bmp)
+この記事では、PDF ファイルを TIFF、BMP、EMF、JPEG、PNG、GIF、および SVG に変換する方法を説明します。
 
-_画像形式_: **EMF**
-- [Python PDFをEMFに変換](#python-pdf-to-emf)
-- [PythonでPDFをEMFに変換](#python-pdf-to-emf)
-- [Python PDF to EMF Converter](#python-pdf-to-emf)
+ライブラリには複数のレンダリングクラスが含まれています。 `DocumentDevice` 文書全体の変換用に設計されていますが、 `ImageDevice` 個々のページを対象としています。
 
-_画像形式_: **JPG**
-- [Python PDFをJPGに変換](#python-pdf-to-jpg)
-- [Python PDFからJPGへの変換](#python-pdf-to-jpg)
-- [Python PDFをJPGに変換するコンバーター](#python-pdf-to-jpg)
+## ドキュメントデバイスクラスを使用して PDF を変換
 
-_画像形式_: **PNG**
-- [Python PDFをPNGに変換](#python-pdf-to-png)
-- [Python PDFからPNGへの変換](#python-pdf-to-png)
-- [Python PDFをPNGに変換するコンバーター](#python-pdf-to-png)
+使用 `DocumentDevice` PDF 全体を 1 つの複数ページの TIFF ファイルにレンダリングする場合。
 
-_画像形式_: **GIF**
-- [Python PDFをGIFに変換](#python-pdf-to-gif)
-- [Python PDFからGIFへの変換](#python-pdf-to-gif)
-- [Python PDFをGIFに変換するコンバーター](#python-pdf-to-gif)
-
-_画像形式_: **SVG**
-- [Python PDFをSVGに変換](#python-pdf-to-svg)
-- [Python PDFからSVGへの変換](#python-pdf-to-svg)
-- [Python PDFをSVGに変換するコンバーター](#python-pdf-to-svg)
-
-## PythonでPDFを画像に変換
-
-**Aspose.PDF for Python** は、PDFを画像に変換するためにいくつかのアプローチを使用します。
- 一般的に言って、私たちは2つのアプローチを使用します: Deviceアプローチを使用した変換とSaveOptionを使用した変換です。このセクションでは、これらのアプローチの1つを使用してPDFドキュメントをBMP、JPEG、GIF、PNG、EMF、TIFF、SVG形式の画像に変換する方法を示します。
-
-ライブラリには、仮想デバイスを使用して画像を変換することを可能にするいくつかのクラスがあります。DocumentDeviceはドキュメント全体の変換を対象としていますが、ImageDeviceは特定のページ用です。
-
-## DocumentDeviceクラスを使用してPDFを変換
-
-**Aspose.PDF for Python** はPDFページをTIFF画像に変換することを可能にします。
-
-[TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) （DocumentDeviceに基づく）クラスは、PDFページをTIFF画像に変換することを可能にします。このクラスは、PDFファイル内のすべてのページを単一のTIFF画像に変換することを可能にする[process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods)という名前のメソッドを提供します。
+ザの [TIFF デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) クラスの基づき `DocumentDevice` そして、以下を提供します [処理する](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) PDF ファイル内のすべてのページを 1 つの TIFF 出力に変換する方法。
 
 {{% alert color="success" %}}
+**オンラインでPDFをTIFFに変換してみてください**
 
-**PDFをTIFFにオンラインで変換してみてください**
-Aspose.PDF for Python via .NETは、オンラインで無料のアプリケーション["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff)を提供しており、機能と品質を調査することができます。
+.NET 経由の Python 用 Aspose.PDF を使用するとオンラインアプリケーションが表示されます [「PDF から TIFF へ」](https://products.aspose.app/pdf/conversion/pdf-to-tiff)ここで、機能や動作品質を調べてみるといいかもしれません。
 
-[![Aspose.PDF conversion PDF to TIFF with Free App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
+[![Aspose.PDF アプリで PDF を TIFF に変換](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
 
-### PDFページを1つのTIFF画像に変換
+### PDF ページを 1 つの TIFF イメージに変換
 
-Aspose.PDF for Pythonは、PDFファイル内のすべてのページを単一のTIFF画像に変換する方法を説明します：
+.NET 経由の Python 用 Aspose.PDF では、PDF ファイル内のすべてのページを 1 つの TIFF イメージにレンダリングできます。
 
-<a name="csharp-pdf-to-tiff"><strong>手順: PythonでPDFをTIFFに変換</strong></a>
+手順:Python で PDF を TIFF に変換する
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)クラスのオブジェクトを作成します。
-2. [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/)と[TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/)オブジェクトを作成します。
+1. を使用してソース PDF をロードします。 [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。
+1. 作成 [TIFF 設定](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) そして [TIFF デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) オブジェクト。
+1. 圧縮、色深度、空白ページ処理などの TIFF オプションを設定します。
+1. に電話してください [処理する](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods) TIFF ファイルを書き込むメソッド。
 
-3. PDFドキュメントをTIFFに変換するために[process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/#methods)メソッドを呼び出します。
-4. 出力ファイルのプロパティを設定するために、[TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/)クラスを使用します。
-
-以下のコードスニペットは、すべてのPDFページを単一のTIFF画像に変換する方法を示しています。
+次のコードスニペットは、すべての PDF ページを 1 つの TIFF 画像に変換する方法を示しています。
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def convert_PDF_to_TIFF(infile, outfile):
+    document = ap.Document(infile)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_tiff.tiff"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # 解像度オブジェクトを作成
     resolution = ap.devices.Resolution(300)
-
-    # TiffSettingsオブジェクトを作成
     tiffSettings = ap.devices.TiffSettings()
     tiffSettings.compression = ap.devices.CompressionType.LZW
     tiffSettings.depth = ap.devices.ColorDepth.DEFAULT
     tiffSettings.skip_blank_pages = False
 
-    # TIFFデバイスを作成
     tiffDevice = ap.devices.TiffDevice(resolution, tiffSettings)
+    tiffDevice.process(document, f"{outfile}.tiff")
 
-    # 特定のページを変換し、画像をストリームに保存
-    tiffDevice.process(document, output_pdf)
+    print(infile + " converted into " + outfile)
 ```
 
+## イメージデバイスクラスを使用して PDF を変換する
 
-## ImageDeviceクラスを使用してPDFを変換する
+使用 `ImageDevice` ラスターイメージ形式でページごとに出力する必要がある場合。
 
-`ImageDevice`は`BmpDevice`、`JpegDevice`、`GifDevice`、`PngDevice`、`EmfDevice`の祖先です。
+`ImageDevice` はの基本クラスです `BmpDevice`, `JpegDevice`, `GifDevice`, `PngDevice`、および `EmfDevice`.
 
-- [BmpDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/)クラスを使用すると、PDFページを<abbr title="Bitmap Image File">BMP</abbr>画像に変換できます。
-- [EmfDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/emfdevice/)クラスを使用すると、PDFページを<abbr title="Enhanced Meta File">EMF</abbr>画像に変換できます。
-- [JpegDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/jpegdevice/)クラスを使用すると、PDFページをJPEG画像に変換できます。
-- [PngDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/pngdevice/)クラスを使用すると、PDFページを<abbr title="Portable Network Graphics">PNG</abbr>画像に変換できます。
+- ザの [BMP デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) クラスを使用すると、PDF ページを BMP イメージに変換できます。
+- ザの [EMF デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/emfdevice/) クラスを使用すると、PDF ページを EMF イメージに変換できます。
+- ザの [JPEG デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/jpegdevice/) クラスを使用すると、PDF ページを JPEG 画像に変換できます。
+- ザの [PNG デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/pngdevice/) クラスを使用すると、PDF ページを PNG 画像に変換できます。
+- ザの [GIF デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/gifdevice/) クラスでは、PDF ページを GIF 画像に変換できます。
 
-- [GifDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/gifdevice/)クラスを使用すると、PDFページを<abbr title="Graphics Interchange Format">GIF</abbr>画像に変換できます。
+ワークフローは各フォーマットで同じです。ドキュメントを読み込み、適切なデバイスを作成し、必要なページを処理します。
 
-以下は、PDFページを画像に変換する方法を見てみましょう。
+[BMP デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) 公開する [処理する](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/#methods) 特定のページを BMP としてレンダリングするメソッド。他のイメージデバイスクラスも同じパターンに従うため、デバイスクラスを変更することでフォーマットを切り替えることができます。
 
-[BmpDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) クラスは、PDFファイルの特定のページをBMP画像形式に変換することを可能にする [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/#methods) という名前のメソッドを提供します。他のクラスも同じメソッドを持っています。したがって、PDFページを画像に変換する必要がある場合は、必要なクラスをインスタンス化するだけです。
+次のリンクとコードサンプルは、PDF ページを一般的な画像形式にレンダリングする方法を示しています。
 
-以下の手順とPythonでのコードスニペットは、この可能性を示しています。
+- [Python で PDF を BMP に変換](#convert-pdf-to-bmp)
+- [Python で PDF を EMF に変換](#convert-pdf-to-emf)
+- [Python で PDF を JPEG に変換](#convert-pdf-to-jpeg)
+- [Python で PDF を PNG に変換](#convert-pdf-to-png)
+- [Python で PDF を GIF に変換](#convert-pdf-to-gif)
 
-- [PythonでPDFをBMPに変換](#python-pdf-to-image)
-- [PythonでPDFをEMFに変換](#python-pdf-to-image)
-- [PythonでPDFをJPGに変換](#python-pdf-to-image)
-- [PythonでPDFをPNGに変換](#python-pdf-to-image)
-- [PythonでPDFをGIFに変換](#python-pdf-to-image)
+手順:Python で PDF を画像 (BMP、EMF、JPG、PNG、GIF) に変換
 
-<a name="csharp-pdf-to-image"><strong>手順: PythonでPDFを画像(BMP, EMF, JPG, PNG, GIF)に変換</strong></a>
+1. を使用して PDF ファイルをロードします [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。
+1. 必要なインスタンスの作成 [イメージデバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/) サブクラス:
+    - [BMP デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) (PDF ファイルを BMP に変換するには)
+    - [EMF デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/emfdevice/) (PDF ファイルを EMF に変換するには)
+    - [JPEG デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/jpegdevice/) (PDFファイルをJPGに変換するには)
+    - [PNG デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/pngdevice/) (PDF ファイルを PNG に変換するには)
+    - [GIF デバイス](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/gifdevice/) (PDF を GIF に変換するには)
+1. エクスポートしたいページをループ処理します。
+1. に電話してください [イメージデバイス. プロセス ()](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/#methods) 各ページを画像として保存する方法。
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスを使用してPDFファイルをロードします。
-2. [ImageDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/) のサブクラスのインスタンスを作成します。例えば、
-   * [BmpDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) (PDFをBMPに変換)
-   * [EmfDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/emfdevice/) (PDFをEmfに変換)
-   * [JpegDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/jpegdevice/) (PDFをJPGに変換)
-   * [PngDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/pngdevice/) (PDFをPNGに変換)
-   * [GifDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/gifdevice/) (PDFをGIFに変換)
-3. [ImageDevice.Process()](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/#methods) メソッドを呼び出して、PDFから画像への変換を実行します。
-
-### PDFをBMPに変換
+### PDF ファイルを BMP ファイルに変換
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "many_pages.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_bmp"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # Resolutionオブジェクトを作成
+def convert_PDF_to_BMP(infile, outfile):
+    document = ap.Document(infile)
     resolution = ap.devices.Resolution(300)
     device = ap.devices.BmpDevice(resolution)
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(outfile + str(page_count) + "_out.bmp", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
 
-    for i in range(0, len(document.pages)):
-        # 保存用のファイルを作成
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.bmp", 'x'
-        )
-        # 特定のページを変換し、画像をストリームに保存
-        device.process(document.pages[i + 1], imageStream)
-        imageStream.close()
+    print(infile + " converted into " + outfile)
 ```
 
-
-### PDFをEMFに変換
+### PDF ファイルを EMF ファイルに変換
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_emf"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # 解像度オブジェクトを作成
+def convert_PDF_to_EMF(infile, outfile):
+    document = ap.Document(infile)
     resolution = ap.devices.Resolution(300)
     device = ap.devices.EmfDevice(resolution)
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(outfile + str(page_count) + "_out.emf", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
 
-    for i in range(0, len(document.pages)):
-        # 保存するファイルを作成
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.emf", 'x'
-        )
-        # 特定のページを変換し、画像をストリームに保存
-        device.process(document.pages[i + 1], imageStream)
-        imageStream.close()
+    print(infile + " converted into " + outfile)
 ```  
 
-### PDFをJPEGに変換
+### PDF ファイルを JPEG ファイルに変換します
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "many_pages.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_jpeg"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # 解像度オブジェクトを作成
+def convert_PDF_to_JPEG(infile, outfile):
+    document = ap.Document(infile)
     resolution = ap.devices.Resolution(300)
     device = ap.devices.JpegDevice(resolution)
+    page_count = 1
 
-    for i in range(0, len(document.pages)):
-        # 保存するファイルを作成
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.jpeg", "x"
-        )
-        # 特定のページを変換し、画像をストリームに保存
-        device.process(document.pages[i + 1], imageStream)
-        imageStream.close()  
-``` 
+    while page_count <= len(document.pages):
+        image_stream = FileIO(outfile + str(page_count) + "_out.jpeg", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
 
-
-### PDFをPNGに変換
-
-```python
-
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_png"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # Resolutionオブジェクトを作成
-    resolution = ap.devices.Resolution(300)
-    device = ap.devices.PngDevice(resolution)
-
-    for i in range(0, len(document.pages)):
-        # 保存用のファイルを作成
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.png", 'x'
-        )
-        # 特定のページを変換し、ストリームに画像を保存
-        device.process(document.pages[i + 1], imageStream)
-        imageStream.close()
-``` 
-
-### PDFをGIFに変換
-
-```python
-
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "many_pages.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_gif"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # Resolutionオブジェクトを作成
-    resolution = ap.devices.Resolution(300)
-
-    device = ap.devices.GifDevice(resolution)
-
-    for i in range(0, len(document.pages)):
-        # 保存用のファイルを作成
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.gif", 'x'
-        )
-        # 特定のページを変換し、ストリームに画像を保存
-        device.process(document.pages[i + 1], imageStream)
-        # ストリームを閉じる
-        imageStream.close()  
-``` 
-
-
-{{% alert color="success" %}}
-**PDFをPNGにオンラインで変換してみる**
-
-無料アプリケーションの動作例として、次の機能を確認してください。
-
-Aspose.PDF for Pythonは、オンライン無料アプリケーション["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png)を提供しており、その機能や品質を調査することができます。
-
-[![無料アプリを使用してPDFをPNGに変換する方法](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
-{{% /alert %}}
-
-## SaveOptionsクラスを使用してPDFを変換する
-
-この記事のこの部分では、PythonとSaveOptionsクラスを使用してPDFを<abbr title="スケーラブル・ベクター・グラフィックス">SVG</abbr>に変換する方法を示します。
-
-{{% alert color="success" %}}
-**PDFをSVGにオンラインで変換してみる**
-
-Aspose.PDF for Python via .NETは、オンライン無料アプリケーション["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg)を提供しており、その機能や品質を調査することができます。
-
-[![Aspose.PDF 無料アプリでPDFをSVGに変換](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
-{{% /alert %}}
-
-**スケーラブルベクターグラフィックス (SVG)** は、静的および動的（インタラクティブまたはアニメーション）の両方の二次元ベクターグラフィックのためのXMLベースのファイル形式の仕様ファミリーです。SVG仕様は、1999年以来World Wide Web Consortium (W3C)によって開発されているオープン標準です。
-
-SVG画像とその動作はXMLテキストファイルで定義されています。これは、それらが検索、インデックス化、スクリプト化され、必要に応じて圧縮されることを意味します。XMLファイルとして、SVG画像は任意のテキストエディタで作成および編集できますが、Inkscapeのような描画プログラムで作成する方が便利です。
-
-Aspose.PDF for Pythonは、SVG画像をPDF形式に変換する機能をサポートしており、PDFファイルをSVG形式に変換する機能も提供しています。
- この要件を達成するために、[SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) クラスが Aspose.PDF 名前空間に導入されました。SvgSaveOptions のオブジェクトをインスタンス化し、それを [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドの第二引数として渡します。
-
-以下のコードスニペットは、Python で PDF ファイルを SVG 形式に変換する手順を示しています。
-
-<a name="csharp-pdf-to-svg"><strong>手順: Python で PDF を SVG に変換する</strong></a>
-
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスのオブジェクトを作成します。
-2. 必要な設定で [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) オブジェクトを作成します。
-3. [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを呼び出し、[SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) オブジェクトを渡してPDF文書をSVGに変換します。
-
-### PDFをSVGに変換する
-
-```python
-
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_svg.svg"
-    # PDFドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # SvgSaveOptionsのオブジェクトをインスタンス化する
-    saveOptions = ap.SvgSaveOptions()
-
-    # SVG画像をZipアーカイブに圧縮しない
-    saveOptions.compress_output_to_zip_archive = False
-    saveOptions.treat_target_file_name_as_directory = True
-
-    # 出力をSVGファイルに保存する
-    document.save(output_pdf, saveOptions)
+    print(infile + " converted into " + outfile)
 ```
+
+### PDF ファイルを PNG ファイルに変換
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
+import sys
+
+def convert_PDF_to_PNG(infile, outfile):
+    document = ap.Document(infile)
+    resolution = ap.devices.Resolution(300)
+
+    device = ap.devices.PngDevice(resolution)
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(outfile + str(page_count) + "_out.png", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
+```
+
+### PDF をデフォルトフォントで PNG に変換
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
+import sys
+
+def convert_PDF_to_PNG_with_default_font(infile, outfile):
+    document = ap.Document(infile)
+    resolution = ap.devices.Resolution(300)
+
+    rendering_options = ap.RenderingOptions()
+    rendering_options.default_font_name = "Arial"
+
+    device = ap.devices.PngDevice(resolution)
+    device.rendering_options = rendering_options
+
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(outfile + str(page_count) + "_out.png", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
+```
+
+### PDF ファイルを GIF 形式に変換
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
+import sys
+
+def convert_PDF_to_GIF(infile, outfile):
+    document = ap.Document(infile)
+    resolution = ap.devices.Resolution(300)
+    device = ap.devices.GifDevice(resolution)
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(outfile + str(page_count) + "_out.gif", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
+
+    print(infile + " converted into " + outfile)
+```
+
+{{% alert color="success" %}}
+**オンラインでPDFをPNGに変換してみてください**
+
+アプリケーションの動作例として、次の機能を確認してください。
+
+Python 用の Aspose.PDF はオンラインアプリケーションを提供します [「PDF ファイルから PNG へ」](https://products.aspose.app/pdf/conversion/pdf-to-png)ここで、機能や動作品質を調べてみるといいかもしれません。
+
+[![アプリを使用してPDFをPNGに変換する方法](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
+{{% /alert %}}
+
+## 保存オプションクラスを使用して PDF を変換する
+
+使用 `SaveOptions` PDF コンテンツを SVG にエクスポートする場合。
+
+{{% alert color="success" %}}
+**オンラインでPDFをSVGに変換してみてください**
+
+.NET 経由の Python 用 Aspose.PDF を使用するとオンラインアプリケーションが表示されます [「PDF ファイルから SVG へ」](https://products.aspose.app/pdf/conversion/pdf-to-svg)ここで、機能や動作品質を調べてみるといいかもしれません。
+
+[![Aspose.PDF アプリで PDF を SVG に変換](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
+{{% /alert %}}
+
+**スケーラブルベクターグラフィックス（SVG）**は、2次元ベクターグラフィック用のXMLベースの形式です。SVG はベクターベースのままなので、Web、UI、デザインワークフローでスケーラブルな出力が必要な場合に役立ちます。
+
+SVG ファイルはテキストベースで検索可能で、他のツールで簡単に後処理できます。
+
+.NET 経由の Python 用 Aspose.PDF は、SVG を PDF に変換することも、PDF ページを SVG にエクスポートすることもできます。PDF から SVG への変換を行うには、以下を作成します。 [SVG 保存オプション](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) オブジェクトとそれを渡す [ドキュメント.save ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法。
+
+以下の手順は、Python を使用して PDF ファイルを SVG に変換する方法を示しています。
+
+手順:Python で PDF を SVG に変換する
+
+1. を使用してソース PDF をロードします。 [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。
+1. を作成 [SVG 保存オプション](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) オブジェクトを作成し、必要なオプションを設定します。
+1. に電話してください [ドキュメント.save ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを使う `SvgSaveOptions` SVG 出力を書き込むためのインスタンス。
+
+### PDF ファイルを SVG ファイルに変換します
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
+import sys
+
+def convert_PDF_to_SVG(infile, outfile):
+    document = ap.Document(infile)
+
+    save_options = ap.SvgSaveOptions()
+    save_options.compress_output_to_zip_archive = False
+    save_options.treat_target_file_name_as_directory = True
+
+    document.save(f"{outfile}.svg", save_options)
+```
+
+## 関連コンバージョン
+
+- [画像形式を PDF に変換](/pdf/ja/python-net/convert-images-format-to-pdf/) JPG、PNG、TIFF、SVG、またはその他の画像ソースから PDF を再構築する必要がある場合。
+- [PDF ファイルを HTML 形式に変換](/pdf/ja/python-net/convert-pdf-to-html/) ラスター画像の代わりにブラウザに優しい出力用。
+- [PDF を他の形式に変換](/pdf/ja/python-net/convert-pdf-to-other-files/) EPUB、マークダウン、テキスト、XPS エクスポートワークフロー用。

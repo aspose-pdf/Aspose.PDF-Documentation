@@ -1,5 +1,6 @@
 ---
 title: Working with Text in Python via Java
+linktitle: Working with Text in Python via Java
 type: docs
 weight: 40
 url: /python-java/working-with-text/

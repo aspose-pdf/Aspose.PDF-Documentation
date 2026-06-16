@@ -1,158 +1,33 @@
 ---
-title: Pythonを使用したAcroFormsの操作
-linktitle: AcroForms
+title: Python を使用してアクロフォームを操作する
+linktitle: アクロフォーム
 type: docs
 weight: 10
 url: /ja/python-net/acroforms/
-description: Aspose.PDF for Pythonを使用すると、最初からフォームを作成したり、PDFドキュメントのフォームフィールドに入力したり、フォームからデータを抽出したりすることができます。
-lastmod: "2023-02-17"
+description: .NET 経由で Aspose.PDF for Python を使用して PDF ドキュメントの AcroForm フィールドを作成、入力、抽出、インポート、エクスポート、および管理する方法を学習します。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python でアクロフォームを操作するためのガイド
+Abstract: このセクションでは AcroForms を紹介し、.NET 経由で Aspose.PDF for Python を使用してインタラクティブ PDF フォームを操作する方法について説明します。フォームの作成、フィールドへの入力、値の抽出、フォームデータのインポートとエクスポート、フォームフィールドの変更と削除などのコアワークフローについて説明します。これらのチュートリアルは、文書自動化シナリオ用の実用的なフォーム処理パイプラインを構築するのに役立ちます。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用したAcroFormsの操作",
-    "alternativeHeadline": "PDFでのAcroFormsの操作オプション",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, acroforms in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/acroforms/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/acroforms/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Pythonを使用すると、最初からフォームを作成したり、PDFドキュメントのフォームフィールドに入力したり、フォームからデータを抽出したりすることができます。"
-}
-</script>
 
+## アクロフォームの基礎
 
-## AcroFormsの基本
+AcroForms は、アドビによって導入されたインタラクティブなページ指向の PDF フォームで、バージョン 1.2 から PDF 仕様に含まれています。これらは広くサポートされており、クロスプラットフォームワークフローでのデータ収集、検証、交換に使用できます。
 
-**AcroForms** - AdobeによるユニークなPDFフォーム技術。AcroFormsはページ指向のフォームです。1998年に初めて登場しました。データフォーマットまたはFDFおよびXMLフォームデータフォーマットまたはxFDFの形式で入力を受け付けます。サードパーティプロバイダーがAcroFormsをサポートしています。AdobeがAcroFormsを導入した際、彼らはそれを「Adobe Acrobat Pro/Standardの著者によるPDFフォームであり、静的または動的なXFAフォームの特別なタイプではない」と呼びました。AcroFormsはポータブルで、すべてのプラットフォームで動作します。
+Acroformベースのワークフローでは、フォームデータをFDFやXFDFなどの形式で交換できます。そのため、AcroForms は、外部システムからフィールドを事前に入力したり、送信された値を抽出したり、文書間でフォームデータを同期したりする必要がある場合に適しています。
 
-AcroFormsを使用してPDFフォームドキュメントに追加のページを追加することができます。テンプレートの概念により、複数のデータベースレコードでフォームを埋めることをサポートするためにAcroFormsを使用できます。
+Aspose.PDF for Python via .NET には、フィールドの入力、データのエクスポート、フォーム構造の変更、送信アクションの追加など、プログラムで AcroForms を作成および管理するための API が用意されています。
 
-PDF 1.7は、データとPDFフォームを統合するための2つの異なる方法をサポートしています。
+実用的な例については、次の記事を参照してください。
 
-*AcroForms（アクロバットフォームとしても知られています）*、PDF 1.2形式仕様で導入され、含まれています。
-
-Javaライブラリの機能についての詳細な学習のために、以下の記事を参照してください：
-
-- [Create AcroForm](/pdf/ja/python-net/create-form) - Pythonでゼロからフォームを作成します。
-- [AcroForm を記入する](/pdf/ja/python-net/fill-form) - PDFドキュメントのフォームフィールドに記入します。
-- [AcroForm を抽出する](/pdf/ja/python-net/extract-form) - PDFドキュメントのすべてまたは個別のフィールドから値を取得します。
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 操作ライブラリ for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [アクロフォームを作成](/pdf/ja/python-net/create-form/) -フォームを一から作成する。
+- [アクロフォームに記入](/pdf/ja/python-net/fill-form/) -PDF ドキュメントのフォームフィールドへの入力
+- [アクロフォームを抽出](/pdf/ja/python-net/extract-form/) -すべてのフィールドまたは特定のフィールドから値を抽出します。
+- [フォームデータのインポートとエクスポート](/pdf/ja/python-net/import-export-form-data/) -フォームデータを一般的な形式でインポートおよびエクスポートします。
+- [アクロフォームの修正](/pdf/ja/python-net/modifying-form/) -AcroForm フィールドのプロパティを変更します。
+- [PDF からフォームを削除](/pdf/ja/python-net/remove-form/) -PDF ドキュメントからフォームフィールドを削除します。
+- [投稿フォーム](/pdf/ja/python-net/posting-form/) -PDF フォームに送信機能を追加します。

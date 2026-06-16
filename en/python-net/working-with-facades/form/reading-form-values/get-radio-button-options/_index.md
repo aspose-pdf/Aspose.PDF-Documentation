@@ -1,5 +1,6 @@
 ---
-title: Get Radio Button Options
+title: Get Radio Button Options
+linktitle: Get Radio Button Options
 type: docs
 weight: 20
 url: /python-net/get-radio-button-options/

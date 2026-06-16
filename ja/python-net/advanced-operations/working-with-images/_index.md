@@ -1,88 +1,30 @@
 ---
-title: Pythonを使用したPDFでの画像操作
-linktitle: 画像操作
+title: Python を使用して PDF 内の画像を操作する
+linktitle: 画像を使った作業
 type: docs
 weight: 40
 url: /ja/python-net/working-with-images/
-description: このセクションでは、Pythonライブラリを使用してPDFファイル内の画像を操作する機能について説明します。
-lastmod: "2023-04-17"
+description: Python を使用して PDF 文書内の画像を追加、削除、抽出、置換、および検査する方法を学びます。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF ファイル内の画像を管理する
+Abstract: このセクションでは、.NET 経由で Aspose.PDF for Python を使用して PDF ドキュメント内の画像を操作する方法を説明します。既存の PDF ファイル内の画像の追加、削除、抽出、置換、および検査について説明します。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用したPDFでの画像操作",
-    "alternativeHeadline": "PythonでPDFの画像を操作する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, image in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-images/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-images/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "このセクションでは、Pythonライブラリを使用してPDFファイル内の画像を操作する機能について説明します。"
-}
-</script>
 
+.NET 経由の Python 用 Aspose.PDF には、既存の PDF ドキュメントで画像操作を行うためのツール一式が用意されています。
 
-PDFドキュメントで画像を編集および操作するための多くの方法とツールがあります。  
-通常のPDFファイルへの画像の追加および削除機能に加えて、Aspose.PDF for Pythonライブラリは画像の抽出も可能です。  
-**Aspose.PDF for Python**は、既存のPDFで画像を操作するためのスマートで効率的なツールです。  
+このセクションを使用して、新しい画像の挿入、埋め込み画像の削除または置換、画像コンテンツの抽出、ページ上の画像配置の詳細の確認を行います。
 
-次のことが可能です:
+## 対象となる画像タスク
 
-- [既存のPDFファイルに画像を追加する](/pdf/ja/python-net/add-image-to-existing-pdf-file/) - PDFドキュメントに単一画像の画像と参照を追加し、その後品質をコントロールします。
-- [PDFファイルから画像を削除する](/pdf/ja/python-net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するコードスニペットを確認します。
-- [PDFファイルから画像を抽出する](/pdf/ja/python-net/extract-images-from-pdf-file/) - 次の記事では、Pythonライブラリを使用してPDFファイルから画像を抽出する方法を示します。
+次のタスクが対象です。
+
+- [既存の PDF ファイルへの画像の追加](/pdf/ja/python-net/add-image-to-existing-pdf-file/) -固定座標に画像を配置し、さまざまなオプションで画像を埋め込みます。
+- [PDF ファイルからの画像の削除](/pdf/ja/python-net/delete-images-from-pdf-file/) -選択したページから1つの画像リソースまたはすべての画像を削除します。
+- [PDF ファイルからの画像の抽出](/pdf/ja/python-net/extract-images-from-pdf-file/) -PDF ページから埋め込み画像を抽出します。
+- [既存の PDF ファイル内の画像を置換](/pdf/ja/python-net/replace-image-in-existing-pdf-file/) -埋め込まれた画像をリソースインデックスまたは配置で置き換えます。
+- [PDF ドキュメントから画像を検索して取得](/pdf/ja/python-net/search-and-get-images-from-pdf-document/) -画像を検索し、文書内の画像の配置を調べます。
+

@@ -1,5 +1,5 @@
 ---
-title: Optimalkan Sumber Daya PDF menggunakan JavaScript via C++ 
+title: Optimalkan Sumber Daya PDF menggunakan JavaScript via C++
 linktitle: Optimalkan Sumber Daya PDF
 type: docs
 weight: 15

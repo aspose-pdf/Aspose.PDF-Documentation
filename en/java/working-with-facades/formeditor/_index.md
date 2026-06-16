@@ -1,20 +1,20 @@
 ---
 title: FormEditor Class
+linktitle: FormEditor Class
 type: docs
-weight: 105
+weight: 150
 url: /java/formeditor-class/
-description: This section explains how to work with com.aspose.pdf.facades using FormEditor Class.
-lastmod: "2025-02-17"
-draft: false
-sitemap:
-    changefreq: "monthly"
-    priority: 0.7
+description: Learn how to use the FormEditor facade in Java to create form fields, modify existing fields, customize field appearance, and add scripts or submit actions in PDF forms.
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: Build and edit interactive PDF forms in Java with the FormEditor class
+Abstract: This section explains how to use the FormEditor facade in Aspose.PDF for Java to create and update interactive PDF forms. The Java examples cover creating common field types, modifying field structure, customizing appearance, and attaching scripts or submit actions.
 ---
+The Java `FormEditorExamples` class demonstrates the main field-editing workflows available through the Facades API.
 
-- [Add PDF Form Fields](/pdf/java/add-form-fields/)
-- [Decorate Form Field in PDF](/pdf/java/decorate-form-field/)
-- [Working with List Item](/pdf/java/working-with-list-item/)
-- [Copy Inner and Outer Field](/pdf/java/copy-inner-and-outer-field/)
-- [Move and Remove Form Field](/pdf/java/move-remove-form-field/)
-- [Import and Export Form Field](/pdf/java/import-export-form-field/)
+Use this section to learn how to:
 
+- create text, check box, combo box, list box, radio button, and submit button fields
+- add, delete, move, rename, copy, or convert existing fields
+- customize alignment, appearance, limits, and comb numbers
+- attach scripts, submit URLs, and remove field actions

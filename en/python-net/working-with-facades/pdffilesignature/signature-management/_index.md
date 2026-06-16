@@ -1,5 +1,6 @@
 ---
-title: Signature Management
+title: Signature Management
+linktitle: Signature Management
 type: docs
 weight: 80
 url: /python-net/signature-management/

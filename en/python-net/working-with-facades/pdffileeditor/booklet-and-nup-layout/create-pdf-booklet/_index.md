@@ -1,5 +1,6 @@
 ---
-title: Create PDF Booklet
+title: Create PDF Booklet
+linktitle: Create PDF Booklet
 type: docs
 weight: 20
 url: /python-net/create-pdf-booklet/

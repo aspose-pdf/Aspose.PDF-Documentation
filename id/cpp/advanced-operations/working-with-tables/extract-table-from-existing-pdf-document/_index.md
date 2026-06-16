@@ -1,5 +1,5 @@
 ---
-title: Ekstrak Tabel dari PDF 
+title: Ekstrak Tabel dari PDF
 linktitle: Ekstrak Tabel
 type: docs
 weight: 20

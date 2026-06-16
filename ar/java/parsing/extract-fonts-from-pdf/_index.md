@@ -1,5 +1,5 @@
 ---
-title: استخراج الخطوط من PDF 
+title: استخراج الخطوط من PDF
 linktitle: استخراج الخطوط
 type: docs
 weight: 30

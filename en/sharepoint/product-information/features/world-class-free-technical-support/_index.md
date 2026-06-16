@@ -1,5 +1,6 @@
 ---
 title: World Class Free Technical Support
+linktitle: World Class Free Technical Support
 type: docs
 weight: 20
 url: /sharepoint/world-class-free-technical-support/

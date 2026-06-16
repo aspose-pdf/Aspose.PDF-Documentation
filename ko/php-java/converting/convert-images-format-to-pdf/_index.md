@@ -1,5 +1,5 @@
 ---
-title: 다양한 이미지 형식을 PDF로 변환 
+title: 다양한 이미지 형식을 PDF로 변환
 linktitle: 이미지를 PDF로 변환
 type: docs
 weight: 60

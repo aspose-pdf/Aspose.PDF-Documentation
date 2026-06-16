@@ -1,5 +1,6 @@
 ---
 title: Feature Tour
+linktitle: Feature Tour
 type: docs
 weight: 30
 url: /jasperreports/feature-tour/

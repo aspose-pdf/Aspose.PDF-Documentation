@@ -1,5 +1,5 @@
 ---
-title: Menambahkan Gambar ke File PDF yang Ada 
+title: Menambahkan Gambar ke File PDF yang Ada
 linktitle: Menambahkan Gambar
 type: docs
 weight: 10

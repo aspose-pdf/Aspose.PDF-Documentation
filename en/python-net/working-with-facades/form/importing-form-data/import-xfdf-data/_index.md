@@ -1,5 +1,6 @@
 ---
-title: Import XFDF Data
+title: Import XFDF Data
+linktitle: Import XFDF Data
 type: docs
 weight: 20
 url: /python-net/import-xfdf-data/

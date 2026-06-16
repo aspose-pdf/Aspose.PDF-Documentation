@@ -1,5 +1,6 @@
 ---
 title: Rotating stamp about the center point
+linktitle: Rotating stamp about the center point
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

@@ -1,5 +1,5 @@
 ---
-title: PDF에서 이미지 작업 
+title: PDF에서 이미지 작업
 linktitle: 이미지 작업
 type: docs
 weight: 40

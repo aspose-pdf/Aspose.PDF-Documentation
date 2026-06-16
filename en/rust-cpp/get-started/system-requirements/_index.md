@@ -11,8 +11,8 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: System Requirements page for Aspose.PDF for Rust
-Abstract: The System Requirements page for Aspose.PDF for Rust provides the necessary details for setting up the library on various platforms. It outlines the required environment settings, such as the supported operating systems, system dependencies, and hardware configurations to ensure the library's successful installation and optimal performance. It also includes information about software prerequisites, like supported versions of Rust, and any additional configurations needed for running the library effectively on different systems. This information helps developers set up their development environment correctly.   
-SoftwareApplication: rust-cpp 
+Abstract: The System Requirements page for Aspose.PDF for Rust provides the necessary details for setting up the library on various platforms. It outlines the required environment settings, such as the supported operating systems, system dependencies, and hardware configurations to ensure the library's successful installation and optimal performance. It also includes information about software prerequisites, like supported versions of Rust, and any additional configurations needed for running the library effectively on different systems. This information helps developers set up their development environment correctly.
+SoftwareApplication: rust-cpp
 ---
 
 ## Supported Platforms of Aspose.PDF for Rust via C++

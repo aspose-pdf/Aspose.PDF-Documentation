@@ -1,5 +1,5 @@
 ---
-title: Mengonversi PDF ke DOC 
+title: Mengonversi PDF ke DOC
 linktitle: Mengonversi PDF ke DOC
 type: docs
 weight: 70

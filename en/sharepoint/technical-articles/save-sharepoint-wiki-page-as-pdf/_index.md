@@ -1,5 +1,6 @@
 ---
 title: Save SharePoint Wiki page as PDF
+linktitle: Save SharePoint Wiki page as PDF
 type: docs
 weight: 20
 url: /sharepoint/save-sharepoint-wiki-page-as-pdf/

@@ -1,5 +1,5 @@
 ---
-title: Add Pages in PDF 
+title: Add Pages in PDF
 linktitle: Agregar Páginas
 type: docs
 weight: 10

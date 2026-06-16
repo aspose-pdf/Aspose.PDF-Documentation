@@ -1,5 +1,5 @@
 ---
-title: 解析 PDF 文档 
+title: 解析 PDF 文档
 linktitle: 解析 PDF 文档
 type: docs
 weight: 60

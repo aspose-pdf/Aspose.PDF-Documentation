@@ -1,5 +1,5 @@
 ---
-title: Get, Update and Expand a Bookmark 
+title: Get, Update and Expand a Bookmark
 linktitle: Get, Update and Expand a Bookmark
 type: docs
 weight: 20

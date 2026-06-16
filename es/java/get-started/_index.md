@@ -1,12 +1,12 @@
 ---
-title: Comenzar 
+title: Comenzar
 linktitle: Comenzar
 type: docs
 weight: 30
 url: /es/java/get-started/
 description: Esta sección describe los principios básicos del trabajo y el uso de la API DOM. También demuestra ejemplos simples y complejos para crear un documento PDF
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

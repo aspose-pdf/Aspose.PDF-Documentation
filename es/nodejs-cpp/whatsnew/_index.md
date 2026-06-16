@@ -1,5 +1,5 @@
 ---
-title: Novedades 
+title: Novedades
 linktitle: Novedades
 type: docs
 weight: 10

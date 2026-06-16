@@ -1,10 +1,10 @@
 ---
-title: Operações avançadas 
-linktitle: Operações avançadas 
+title: Operações avançadas
+linktitle: Operações avançadas
 type: docs
 weight: 70
 url: /pt/php-java/advanced-operations/
-description: Você pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos com Aspose.PDF para PHP via Java. 
+description: Você pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos com Aspose.PDF para PHP via Java.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

@@ -1,5 +1,5 @@
 ---
-title: استخراج فقرة من PDF 
+title: استخراج فقرة من PDF
 linktitle: استخراج فقرة
 type: docs
 weight: 20

@@ -1,5 +1,6 @@
 ---
 title: Reporting Services and SharePoint configuration
+linktitle: Reporting Services and SharePoint configuration
 type: docs
 weight: 40
 url: /reportingservices/reporting-services-and-sharepoint-configuration/

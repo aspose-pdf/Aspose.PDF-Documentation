@@ -4,90 +4,32 @@ linktitle: Operasi lanjutan
 type: docs
 weight: 90
 url: /id/python-net/advanced-operations/
-description: Aspose.PDF untuk Python via .NET dapat melakukan tugas-tugas sederhana dan mudah serta mengatasi tujuan yang lebih kompleks. Periksa bagian berikutnya untuk pengguna dan pengembang tingkat lanjut.
-lastmod: "2023-04-17"
+description: Aspose.PDF for Python via .NET dapat melakukan tugas-tugas sederhana dan mudah serta menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut.
+lastmod: "2026-06-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Bagian Operasi Lanjutan dengan Python
+Abstract: Bagian Operasi Lanjutan memberikan panduan komprehensif tentang penanganan file PDF yang ada secara programatik, terlepas dari asalnya, menggunakan berbagai alat dan teknik. Bagian ini memperluas keterampilan dasar yang dibahas dalam Operasi Dasar dengan mengeksplorasi fungsi-fungsi lanjutan.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Operasi lanjutan dengan PDF melalui Python",
-    "alternativeHeadline": "Menggunakan Fitur Lanjutan dalam bekerja dengan PDF melalui Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, operasi lanjutan dalam pdf, buat pdf, hapus pdf, manipulasi pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/advanced-operations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/advanced-operations/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga mengatasi tujuan yang lebih kompleks. Periksa bagian berikutnya untuk pengguna dan pengembang tingkat lanjut menggunakan Python via .NET."
-}
-</script>
 
+**Operasi Lanjutan** adalah sebuah bagian tentang bagaimana menangani file PDF yang ada secara programatik, baik itu dokumen yang dibuat dengan Aspose.PDF seperti dibahas dalam [Operasi Dasar](/pdf/id/python-net/basic-operations/), atau PDF yang dibuat dengan Adobe Acrobat, Google Docs, Microsoft Office, Open Office, atau produsen PDF lainnya.
 
-**Operasi Lanjutan** adalah bagian tentang cara menangani file PDF yang sudah ada secara programatis, baik itu dokumen yang dibuat dengan Aspose.PDF seperti yang dibahas dalam [Operasi Dasar](/pdf/id/python-net/basic-operations/), atau PDF yang dibuat dengan Adobe Acrobat, Google Docs, Microsoft Office, Open Office atau produsen PDF lainnya.
+Anda akan mempelajari cara-cara berbeda untuk:
 
-Anda akan belajar berbagai cara untuk:
-
-- [Bekerja dengan Dokumen](/pdf/id/python-net/working-with-documents/) - kompres, pisahkan, dan gabungkan dokumen serta lakukan operasi lainnya dengan seluruh dokumen.
-- [Bekerja dengan Halaman](/pdf/id/python-net/working-with-pages/) - tambahkan, pindahkan atau hapus, potong halaman, tambahkan watermark, cap, dan lain-lain.
-- [Bekerja dengan Gambar](/pdf/id/python-net/working-with-images/) - tambahkan, ekstrak, atau hapus gambar dari dokumen PDF.
+- [Bekerja dengan Dokumen](/pdf/id/python-net/working-with-documents/) - mengompres, memecah, dan menggabungkan dokumen serta melakukan operasi lain pada seluruh dokumen.
+- [Bekerja dengan Halaman](/pdf/id/python-net/working-with-pages/) - menambah, memindahkan atau menghapus, memotong halaman, menambahkan watermark, stamp, dan lain-lain.
+- [Bekerja dengan Gambar](/pdf/id/python-net/working-with-images/) - menambah, mengekstrak, atau menghapus gambar dari dokumen PDF.
 - [Lampiran](/pdf/id/python-net/attachments/) - Anda akan belajar cara menambahkan dan menghapus lampiran dari PDF secara programatis dengan Python.
-- [Navigasi dan Interaksi](/pdf/id/python-net/navigation-and-interaction/) - menangani aksi, penanda buku, navigasi halaman.
-- [Anotasi](/pdf/id/python-net/annotations/) - anotasi memungkinkan pengguna untuk menambahkan konten kustom pada halaman PDF.
- You can add, delete and modify the annotation from the PDF documents.  
-- [Bekerja dengan Tabel](/pdf/id/python-net/working-with-tables/) - menyisipkan, mendekorasi tabel dalam PDF, mengekstrak data tabel.
+- [Navigasi dan Interaksi](/pdf/id/python-net/navigation-and-interaction/) - menangani aksi, bookmark, menavigasi halaman.
+- [Anotasi](/pdf/id/python-net/annotations/) - anotasi memungkinkan pengguna menambahkan konten khusus pada halaman PDF. Anda dapat menambah, menghapus, dan memodifikasi anotasi dari dokumen PDF.
+- [Bekerja dengan Tabel](/pdf/id/python-net/working-with-tables/) - menyisipkan, menghias tabel dalam PDF, mengekstrak data tabel.
 - [Bekerja dengan Formulir](/pdf/id/python-net/working-with-forms/) - menangani dokumen PDF interaktif, menambahkan formfields, mengekstrak data.
 - [Bekerja dengan Teks](/pdf/id/python-net/working-with-text/) - menambahkan, memformat, mencari dan mengganti teks dalam PDF.
+- [Bandingkan dokumen PDF](/pdf/id/python-net/compare-pdf-documents/) - memungkinkan untuk membandingkan konten dokumen PDF.
+- [Metadata dalam PDF](/pdf/id/python-net/pdf-file-metadata/) - dapatkan atau atur metadata dalam dokumen, menangani data XMP.
+- [Bekerja dengan Grafik](/pdf/id/python-net/working-with-graphs/) - memanipulasi bentuk pada halaman.
+- [Bekerja dengan Operator](/pdf/id/python-net/working-with-operators/) - melakukan operasi tingkat rendah dalam PDF.
+- [Artefak](/pdf/id/python-net/artifacts/) - menangani watermark dan objek khusus lainnya dalam PDF.
+- [Bekerja dengan lapisan PDF](/pdf/id/python-net/work-with-pdf-layers/) - mengunci lapisan, mengekstrak elemen, meratakan, dan menggabungkan lapisan PDF.

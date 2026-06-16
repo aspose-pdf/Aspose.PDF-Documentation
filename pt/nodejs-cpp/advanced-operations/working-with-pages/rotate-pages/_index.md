@@ -1,16 +1,15 @@
 ---
 
-title: Girar Páginas de PDF em Node.js  
-linktitle: Girar Páginas de PDF  
-type: docs  
-weight: 50  
-url: /pt/nodejs-cpp/rotate-pages/  
-description: Este tópico descreve como girar a orientação da página em um arquivo PDF existente programaticamente no ambiente Node.js.  
-lastmod: "2023-11-16"  
-sitemap:  
-    changefreq: "monthly"  
-    priority: 0.7  
-
+title: Girar Páginas de PDF em Node.js
+linktitle: Girar Páginas de PDF
+type: docs
+weight: 50
+url: /pt/nodejs-cpp/rotate-pages/
+description: Este tópico descreve como girar a orientação da página em um arquivo PDF existente programaticamente no ambiente Node.js.
+lastmod: "2023-11-16"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
 Esta seção descreve como girar páginas em um arquivo PDF existente usando Aspose.PDF para Node.js via C++.

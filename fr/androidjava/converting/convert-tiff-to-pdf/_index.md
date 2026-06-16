@@ -1,14 +1,14 @@
 ---
-title: Convertir TIFF en PDF 
-linktitle: Convertir TIFF en PDF 
-type: docs 
-weight: 210 
-url: /fr/androidjava/convert-tiff-to-pdf/ 
-lastmod: "2021-06-05" 
-description: Aspose.PDF pour Android via Java permet de convertir des images TIFF multi-pages ou multi-trames en applications PDF. 
-sitemap: 
-    changefreq: "weekly" 
-    priority: 0.7 
+title: Convertir TIFF en PDF
+linktitle: Convertir TIFF en PDF
+type: docs
+weight: 210
+url: /fr/androidjava/convert-tiff-to-pdf/
+lastmod: "2021-06-05"
+description: Aspose.PDF pour Android via Java permet de convertir des images TIFF multi-pages ou multi-trames en applications PDF.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF pour Android via Java** prend en charge le format de fichier, qu'il s'agisse d'une image <abbr title="Tag Image File Format">TIFF</abbr> à une seule trame ou multi-trame. Cela signifie que vous pouvez convertir l'image TIFF en PDF dans vos applications Java.

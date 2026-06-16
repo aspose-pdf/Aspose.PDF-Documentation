@@ -1,5 +1,6 @@
 ---
 title: Add Text to an existing PDF file in Python
+linktitle: Add Text to an existing PDF file in Python
 type: docs
 weight: 20
 url: /python-java/add-text-to-an-existing-pdf-file-in-python/

@@ -1,5 +1,6 @@
 ---
 title: Debug Information
+linktitle: Debug Information
 type: docs
 weight: 90
 url: /reportingservices/debug-information/

@@ -1,112 +1,77 @@
 ---
-title: Move PDF Pages 
-linktitle: Move Pages
+title: Move PDF Pages in Java
+linktitle: Moving PDF Pages
 type: docs
-weight: 20
+weight: 100
 url: /java/move-pages/
-description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for Java.
-lastmod: "2025-02-17"
+description: Learn how to move PDF pages within a document or between documents in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Guide on how to manipulate PDF documents using Aspose.PDF for Java
-Abstract: The article provides a guide on how to manipulate PDF documents using Java, specifically focusing on moving pages between documents or within a single document. It outlines the steps involved in transferring a single page or multiple pages from one PDF document to another. The process includes creating `Document` objects for both source and destination files, retrieving pages from the `PageCollection`, adding them to the destination document, saving the changes, and deleting the pages from the source document. Code snippets demonstrate practical implementations, showing how to move individual pages, multiple pages, and reposition pages within the same document. These examples leverage the Aspose.PDF Java library to accomplish the tasks.
-SoftwareApplication: java
+TechArticle: true
+AlternativeHeadline: Move PDF pages between documents in Java
+Abstract: This article explains how to move pages in PDFs using Aspose.PDF for Java. It covers moving a single page or multiple pages to another document, and repositioning a page inside the same PDF.
 ---
+Aspose.PDF for Java lets you move pages between documents or reposition pages within the same PDF.
 
-## Moving a Page from one PDF Document to Another
+## Move a page to another document
 
-This topic explains how to move page from one PDF document to the end of another document using Java.
-To move an page we should:
+Use this example when a single page should be removed from the source PDF and saved into a separate document.
 
-1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
-1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the destination PDF file.
-1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
-1. Add page to the destination document.
-1. Save the output PDF using the Save method.
-1. Delete page in source document.
-1. Save the source PDF using the Save method.
-
-The following code snippet shows you how to move one page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and create a destination document.
+1. Add the target page to the destination and delete it from the source.
+1. Save both documents.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleMovePDFPages {
-
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-  public static void MovePage() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document();
-    Document dstDocument = new Document();
-    Page page = srcDocument.getPages().get_Item(2);
-    dstDocument.getPages().add(page);
-    // Save output file
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(2);
-    srcDocument.save(dstFileName);
-  }
-```
-
-## Moving bunch of Pages from one PDF Document to Another
-
-1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
-1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the destination PDF file.
-1. Define an array with page numbers to be moved.
-1. Run loop through array:
-    1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
-    1. Add page to the destination document.
-1. Save the output PDF using the Save method.
-1. Delete page in source document using array.
-1. Save the source PDF using the Save method.
-
-The following code snippet shows you how to insert an empty page at the end of a PDF file.
-
-```java
-  public static void MoveBunchPages() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document(srcFileName);
-    Document dstDocument = new Document();
-
-    Integer[] pages = { 1, 3 };
-    for (int pageIndex : pages) {
-      Page page = srcDocument.getPages().get_Item(pageIndex);
-      dstDocument.getPages().add(page);
+public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString());
+         Document anotherDocument = new Document()) {
+        anotherDocument.getPages().add(document.getPages().get_Item(2));
+        document.getPages().delete(2);
+        document.save(sourceOutputFile.toString());
+        anotherDocument.save(outputFile.toString());
     }
-    // Save output files
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(pages);
-
-    srcDocument.save(dstFileName);
-  }
+}
 ```
 
-## Moving a Page in new location in the current PDF Document
+## Move multiple pages to another document
 
-1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class object with the source PDF file.
-1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) collection's.
-1. Add page to the new location (for example to end).
-1. Delete page in previous location.
-1. Save the output PDF using the Save method.
+Use this example when several pages should be transferred from the source PDF to a new document.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and create the destination document.
+1. Copy the selected pages into the destination document.
+1. Delete the moved pages from the source and save both files.
 
 ```java
-  public static void MovePagesInOnePDF() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
+public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString());
+         Document dstDocument = new Document()) {
+        Integer[] pages = {1, 2};
+        for (Integer pageIndex : pages) {
+            dstDocument.getPages().add(srcDocument.getPages().get_Item(pageIndex));
+        }
+        dstDocument.save(outputFile.toString());
+        srcDocument.getPages().delete(pages);
+        srcDocument.save(sourceOutputFile.toString());
+    }
+}
+```
 
-    Document srcDocument = new Document(srcFileName);
-    Page page = srcDocument.getPages().get_Item(2);
-    srcDocument.getPages().add(page);
-    srcDocument.getPages().delete(2);
+## Move a page within the same document
 
-    // Save output file
-    srcDocument.save(dstFileName);
-  }
+Use this example when a page should be repositioned to a new location in the same PDF.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Duplicate the target page into the new position and remove the original page entry.
+1. Save the reordered document.
+
+```java
+public static void movePageInNewLocationInSameDocument(Path inputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString())) {
+        srcDocument.getPages().add(srcDocument.getPages().get_Item(2));
+        srcDocument.getPages().delete(2);
+        srcDocument.save(outputFile.toString());
+    }
 }
 ```

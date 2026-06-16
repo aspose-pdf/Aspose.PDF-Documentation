@@ -1,5 +1,5 @@
 ---
-title: Membuat PDF yang kompleks 
+title: Membuat PDF yang kompleks
 linktitle: Membuat PDF yang kompleks
 type: docs
 weight: 60
@@ -17,8 +17,8 @@ Dokumen kita akan berisi gambar, dua fragmen teks (header dan paragraf), dan seb
 Jika kita membuat dokumen dari awal kita perlu mengikuti langkah-langkah tertentu:
 
 1. Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file.
-1. Instansikan objek [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document). Pada langkah ini kita akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) ke objek dokumen. Jadi, sekarang dokumen kita akan memiliki satu halaman.
+1. Instansikan objek [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document). Pada langkah ini kita akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
+1. Tambahkan [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) ke objek dokumen. Jadi, sekarang dokumen kita akan memiliki satu halaman.
 1. Tambahkan [Gambar](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image) ke Halaman.
 1. Buat [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) untuk header. Untuk header kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
 1. Tambahkan header ke [Paragraf](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#ac5c48bedc9fe8a7e0800a1d9b2c28170) halaman. Buat [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) untuk deskripsi. Untuk deskripsi kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.

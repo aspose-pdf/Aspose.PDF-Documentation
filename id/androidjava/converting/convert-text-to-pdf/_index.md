@@ -1,5 +1,5 @@
 ---
-title: Convert Text to PDF 
+title: Convert Text to PDF
 linktitle: Convert Text to PDF
 type: docs
 weight: 300
@@ -68,7 +68,7 @@ public void convertTXTtoPDF_Simple () {
         // konstruktornya sebagai argumen
         TextFragment text=new TextFragment(stringBuilder.toString());
 
-        // Tambahkan paragraf teks baru dalam koleksi paragraf dan berikan objek
+        // Tambahkan paragraf teks baru dalam koleksi `paragraphs` dan berikan objek
         // TextFragment
         page.getParagraphs().add(text);
 
@@ -131,7 +131,7 @@ public void convertTXTtoPDF_Simple () {
                 // konstruktor sebagai argumen
                 TextFragment text=new TextFragment(line);
 
-                // Tambahkan paragraf teks baru dalam koleksi paragraf dan berikan objek TextFragment
+                // Tambahkan paragraf teks baru dalam koleksi `paragraphs` dan berikan objek TextFragment
                 page.getParagraphs().add(text);
             }
         }

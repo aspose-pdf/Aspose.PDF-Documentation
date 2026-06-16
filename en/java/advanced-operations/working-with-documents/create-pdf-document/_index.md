@@ -1,127 +1,257 @@
 ---
-title: Create Document
+title: Create PDF Files in Java
+linktitle: Create PDF Document
 type: docs
 weight: 10
 url: /java/create-pdf-document/
-description: Aspose.PDF for Java helps you to create PDF document and searchable PDF file in few easy steps.
-lastmod: "2025-02-17"
+description: Learn how to create PDF files and build searchable PDFs in Java using Aspose.PDF.
+lastmod: "2026-06-09"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
 TechArticle: true
-AlternativeHeadline: Guide on using the Aspose.PDF for Java API to generate and read PDF files
-Abstract: This article provides a comprehensive guide on using the Aspose.PDF for Java API to generate and read PDF files within Java applications. Aspose.PDF for Java allows developers to embed PDF processing capabilities directly into their applications, eliminating the need for additional software installations. It supports various Java application types, including Desktop, JSP, and JSF applications. The article outlines a step-by-step process for creating PDF files using Java by instantiating a `Document` object, adding a `Page` to its pages collection, inserting a `TextFragment` into the page's paragraphs, and saving the document. An example code snippet demonstrates the creation of a simple one-page PDF with "Hello, World!" text. Additionally, the article explores creating searchable PDFs using Aspose.PDF for Java. It details the use of a callback function to perform text recognition on PDF images, leveraging external OCR tools like Google Tesseract. The complete code example illustrates the conversion process, including handling image files and generating the searchable.
-SoftwareApplication: java
+AlternativeHeadline: Create PDF files and searchable PDF documents with Java
+Abstract: This article shows how to create PDF documents using Aspose.PDF for Java. It covers creating a new PDF from scratch and converting an image-based document into a searchable PDF by supplying HOCR output from an external OCR engine.
 ---
+Aspose.PDF for Java supports both simple document creation and OCR-assisted searchable PDF workflows.
 
- In this article, we are going to show how to use Aspose.PDF for Java API to easily generate and read PDF files in Java applications.
+## Create a new PDF document
 
-Aspose.PDF for Java API lets Java application developers to embed PDF documents processing functionality in their applications. It can be used to create and read PDF files without the need of any other software installed on the underlying machine. Aspose.PDF for Java can be used in a variety of Java application types such as Desktop, JSP, and JSF applications.
+Use this approach when you need to generate a simple PDF file from scratch.
 
-## How to Create PDF File using Java
-
-To create a PDF file using Java, the following steps can be used.
-
-1. Create an object of [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) class
-1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) object to the Pages collection of the Document object
-1. Add [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) to [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/paragraphs) collection of the page
-1. Save the resultant PDF document
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
+1. Create a [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) and add it to the page.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Scanner;
-
-import javax.imageio.ImageIO;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.Document.CallBackGetHocr;
-
-public class ExampleCreate {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void Create() {
-        Document document = new Document();
-
-        //Add page
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
         Page page = document.getPages().add();
-
-        // Add text to new page
         page.getParagraphs().add(new TextFragment("Hello World!"));
-
-        // Save updated PDF
-        document.save(_dataDir+"HelloWorld_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
-In this case, we create a PDF one-page document with A4 page size, portrait orientation. Our page will contain a "Hello, World" in the upper left part of the page.
+## Create a searchable PDF
 
-Also, Aspose.PDF for Java provides the ability to create how to create a searchable PDF. Let's learn the next code snippet:
+The `createSearchablePdf` example uses `Document.convert(...)` with a `CallBackGetHocr` implementation. The callback writes the source image to a temporary file, invokes Tesseract with the `hocr` option, reads the generated HOCR markup, and returns it to Aspose.PDF.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create the `CallBackGetHocr` callback and convert the source document to searchable PDF content.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 
 ```java
-public static void CreateSearchablePDF() {
-        Document doc = new Document(_dataDir + "sample1.pdf");
+public static void createSearchablePdf(Path inputFile, Path outputFile) {
+    Path tempDir = outputFile.getParent().resolve("ocr-temp");
+    CallBackGetHocr cbgh = new CallBackGetHocr() {
+        @Override
+        public String invoke(java.awt.image.BufferedImage img) {
+            // save the image, run Tesseract with "hocr", and return the HOCR text
+            return fileContents.toString();
+        }
+    };
+    try (Document document = new Document(inputFile.toString())) {
+        document.convert(cbgh);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-        // Create callBack - logic recognize text for pdf images. Use outer OCR supports HOCR standard(http://en.wikipedia.org/wiki/HOCR).
-        // We have used free google tesseract OCR(http://en.wikipedia.org/wiki/Tesseract_%28software%29)
+## Get document window settings
 
-        CallBackGetHocr cbgh = new CallBackGetHocr() {
-            @Override
-            public String invoke(java.awt.image.BufferedImage img) {
-                File outputfile = new File(_dataDir + "test.jpg");
-                try {
-                    ImageIO.write(img, "jpg", outputfile);
-                } catch (IOException e1) {
-                    e1.printStackTrace();
+Use this example to inspect the current viewer preferences stored in an existing PDF document.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Read the required window and display properties from the document.
+1. Output the current settings for inspection or debugging.
+
+```java
+public static void getDocumentWindow(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        System.out.println("CenterWindow: " + document.isCenterWindow());
+        System.out.println("Direction: " + document.getDirection());
+        System.out.println("DisplayDocTitle: " + document.isDisplayDocTitle());
+        System.out.println("FitWindow: " + document.isFitWindow());
+        System.out.println("HideMenuBar: " + document.isHideMenubar());
+        System.out.println("HideToolBar: " + document.isHideToolBar());
+        System.out.println("HideWindowUI: " + document.isHideWindowUI());
+        System.out.println("NonFullScreenPageMode: " + document.getNonFullScreenPageMode());
+        System.out.println("PageLayout: " + document.getPageLayout());
+        System.out.println("PageMode: " + document.getPageMode());
+    }
+}
+```
+
+## Set document window preferences
+
+This example updates how the PDF should be displayed when it is opened in a compatible viewer.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Set the required window, layout, and page-mode preferences.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+
+```java
+public static void setDocumentWindow(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setCenterWindow(true);
+        document.setDirection(Direction.R2L);
+        document.setDisplayDocTitle(true);
+        document.setFitWindow(true);
+        document.setHideMenubar(true);
+        document.setHideToolBar(true);
+        document.setHideWindowUI(true);
+        document.setNonFullScreenPageMode(PageMode.UseOC);
+        document.setPageLayout(PageLayout.TwoColumnLeft);
+        document.setPageMode(PageMode.UseThumbs);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Embed fonts in an existing PDF
+
+Use this approach when a document should carry its required fonts for more reliable rendering on other systems.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Enable standard font embedding and iterate through the fonts used by each [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Mark any non-embedded [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) objects for embedding.
+1. Save the updated document.
+
+```java
+public static void embeddedFonts(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setEmbedStandardFonts(true);
+        for (Page page : document.getPages()) {
+            for (Font pageFont : page.getResources().getFonts()) {
+                if (!pageFont.isEmbedded()) {
+                    pageFont.setEmbedded(true);
                 }
-
-                try {
-                    java.lang.Process process = Runtime.getRuntime().exec("tesseract" + " " + _dataDir + "test.jpg" + " " + _dataDir + "out hocr");
-                    System.out.println("tesseract" + " " + _dataDir + "test.jpg" + " " + _dataDir + "out hocr");
-                    process.waitFor();
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                // reading out.html to string
-                File file = new File(_dataDir + "out.hocr");
-                StringBuilder fileContents = new StringBuilder((int) file.length());
-                Scanner scanner = null;
-                try {
-                    scanner = new Scanner(file);
-                    String lineSeparator = System.getProperty("line.separator");
-
-                    while (scanner.hasNextLine()) {
-                        fileContents.append(scanner.nextLine() + lineSeparator);
-                    }
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } finally {
-                    if (scanner != null)
-                        scanner.close();
-                }
-
-                // deleting temp files
-                File fileOut = new File(_dataDir + "out.hocr");
-                if (fileOut.exists()) {
-                    fileOut.delete();
-                }
-                File fileTest = new File(_dataDir + "test.jpg");
-                if (fileTest.exists()) {
-                    fileTest.delete();
-                }
-
-                return fileContents.toString();
             }
-        };
-        // End callBack
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
 
-        doc.convert(cbgh);
-        doc.save(_dataDir + "output971.pdf");
+## Embed fonts when creating a new PDF
+
+This example creates a new PDF and assigns an embedded font to the text content from the start.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Create the required [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textsegment/), and [TextState](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textstate/).
+1. Resolve the target [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) from the repository and mark it as embedded.
+1. Add the text content to the page and save the output document.
+
+```java
+public static void embeddedFontsInNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            TextFragment fragment = new TextFragment("");
+            TextSegment segment = new TextSegment(" This is a sample text using Custom font.");
+            TextState textState = new TextState();
+            Font font = FontRepository.findFont("Arial");
+            font.setEmbedded(true);
+            textState.setFont(font);
+            segment.setTextState(textState);
+            fragment.getSegments().add(segment);
+            page.getParagraphs().add(fragment);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Set a default font for PDF output
+
+Use this pattern when the saved document should fall back to a specific font during output generation.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create [PdfSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfsaveoptions/) and set the default font name.
+1. Save the document with the configured save options.
+
+```java
+public static void setDefaultFont(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfSaveOptions saveOptions = new PdfSaveOptions();
+        saveOptions.setDefaultFontName("Arial");
+        document.save(outputFile.toString(), saveOptions);
+    }
+}
+```
+
+## Get all fonts used in a PDF
+
+This example lists every font detected in the document so you can audit font usage before exporting or updating the file.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Enumerate the fonts returned by the document font utilities.
+1. Output the name of each detected [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/).
+
+```java
+public static void getAllFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Font font : document.getFontUtilities().getAllFonts()) {
+            System.out.println(font.getFontName());
+        }
+    }
+}
+```
+
+## Improve font embedding by subsetting fonts
+
+Use this approach when you want to reduce font payload while keeping embedded font data aligned with document usage.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Run font subsetting through the document font utilities with the required [FontSubsetStrategy](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fontsubsetstrategy/) values.
+1. Save the optimized document.
+
+```java
+public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Set the document open zoom factor
+
+This example configures the initial zoom level that should be applied when the PDF is opened.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [GoToAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Assign the action as the document open action and save the result.
+
+```java
+public static void setZoomFactor(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0.0, 0.0, 0.5));
+        document.setOpenAction(action);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Get the document open zoom factor
+
+Use this example to inspect whether a PDF already defines an explicit zoom level for its open action.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Check whether the open action is a [GoToAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Output the configured zoom value or report that no zoom is set.
+
+```java
+public static void getZoomFactor(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getOpenAction() instanceof GoToAction action
+                && action.getDestination() instanceof XYZExplicitDestination destination) {
+            System.out.println("Zoom: " + destination.getZoom());
+        } else {
+            System.out.println("Zoom: not set");
+        }
     }
 }
 ```

@@ -1,5 +1,6 @@
 ---
-title: PdfViewer Class
+title: PdfViewer Class
+linktitle: PdfViewer Class
 type: docs
 weight: 135
 url: /python-net/pdfviewer-class/

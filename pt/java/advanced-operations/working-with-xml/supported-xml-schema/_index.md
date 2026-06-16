@@ -1,5 +1,5 @@
 ---
-title: Esquema XML 
+title: Esquema XML
 linktitle: Esquema XML Suportado
 type: docs
 weight: 10

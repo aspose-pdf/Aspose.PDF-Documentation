@@ -1,5 +1,5 @@
 ---
-title: Tambahkan Nomor Halaman ke PDF 
+title: Tambahkan Nomor Halaman ke PDF
 linktitle: Tambahkan Nomor Halaman
 type: docs
 weight: 100

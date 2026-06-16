@@ -1,5 +1,6 @@
 ---
 title: Working with Security and Signatures - Facades
+linktitle: Working with Security and Signatures - Facades
 type: docs
 weight: 30
 url: /cpp/working-with-security-and-signatures-facades/

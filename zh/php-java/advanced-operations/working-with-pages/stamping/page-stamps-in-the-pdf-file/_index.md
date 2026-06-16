@@ -1,5 +1,5 @@
 ---
-title: 添加 PDF 页面印章到 PDF 
+title: 添加 PDF 页面印章到 PDF
 linktitle: PDF 文件中的页面印章
 type: docs
 weight: 30

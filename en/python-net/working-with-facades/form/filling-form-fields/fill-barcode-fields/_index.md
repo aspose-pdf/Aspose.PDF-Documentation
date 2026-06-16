@@ -1,5 +1,6 @@
 ---
-title: Fill Barcode Fields
+title: Fill Barcode Fields
+linktitle: Fill Barcode Fields
 type: docs
 weight: 50
 url: /python-net/fill-barcode-fields/

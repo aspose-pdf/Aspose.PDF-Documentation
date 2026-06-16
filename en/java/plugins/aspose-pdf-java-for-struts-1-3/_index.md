@@ -1,12 +1,12 @@
 ---
 title: Aspose.PDF Java for Struts 1.3
+linktitle: Aspose.PDF Java for Struts 1.3
 type: docs
 weight: 10
 url: /java/aspose-pdf-java-for-struts-1-3/
 description: Integrate Aspose.PDF for Java with Struts 1.3. Simplify PDF creation and management within your Struts applications.
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 ---
-
 ## Apache Struts Web Framework
 
 The Apache Struts web framework is a free open-source solution for creating Java web applications.
@@ -36,7 +36,6 @@ Aspose.Words Java for Struts 1.3 is simple book store web based application writ
 {{% alert color="primary" %}}
 
 Aspose.Words for Java API is very rich in features, however this demo web application shows just a fraction of it!For the complete features list of Aspose.Words for Java API, you are strongly recommended to check the API documentation at: <https://products.aspose.com/words/java/>
-
 
 {{% /alert %}}
 

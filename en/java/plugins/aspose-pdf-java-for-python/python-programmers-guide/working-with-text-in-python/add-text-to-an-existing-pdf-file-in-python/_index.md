@@ -1,12 +1,12 @@
 ---
 title: Add Text to existing PDF using Python
+linktitle: Add Text to existing PDF using Python
 type: docs
 weight: 20
 url: /java/add-text-to-an-existing-pdf-file-in-python/
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 description: Code example how to add or write text in Pdf document using Python with PDF library.
 ---
-
 ## Write or Add Text in PDF using Python
 
 To add Text string in Pdf document using **Aspose.PDF Java for Python**, simply invoke **AddText** module.
@@ -38,7 +38,6 @@ print "Text added successfully"
 
 **Download Running Code**
 
-Download **Add Text (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Add Text (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddText/AddText.py)
-

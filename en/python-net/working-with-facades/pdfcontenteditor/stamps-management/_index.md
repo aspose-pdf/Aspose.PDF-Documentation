@@ -1,5 +1,6 @@
 ---
-title: Stamps Management
+title: Stamps Management
+linktitle: Stamps Management
 type: docs
 weight: 90
 url: /python-net/stamps-management/

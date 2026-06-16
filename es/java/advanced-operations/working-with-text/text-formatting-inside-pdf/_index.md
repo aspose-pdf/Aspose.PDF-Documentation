@@ -1,5 +1,5 @@
 ---
-title: Formateo de Texto dentro de PDF 
+title: Formateo de Texto dentro de PDF
 linktitle: Formateo de Texto dentro de PDF
 type: docs
 weight: 30

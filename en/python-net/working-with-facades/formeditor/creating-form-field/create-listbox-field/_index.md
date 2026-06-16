@@ -1,5 +1,6 @@
 ---
-title: Create ListBox Field
+title: Create ListBox Field
+linktitle: Create ListBox Field
 type: docs
 weight: 30
 url: /python-net/create-listbox-field/

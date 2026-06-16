@@ -1,5 +1,6 @@
 ---
-title: Viewer Preferences
+title: Viewer Preferences
+linktitle: Viewer Preferences
 type: docs
 weight: 110
 url: /python-net/viewer-preferences/

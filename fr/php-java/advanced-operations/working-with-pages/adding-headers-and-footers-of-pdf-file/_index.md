@@ -1,5 +1,5 @@
 ---
-title: Ajouter un en-tête et un pied de page PDF 
+title: Ajouter un en-tête et un pied de page PDF
 linktitle: Ajouter un en-tête et un pied de page PDF
 type: docs
 weight: 70

@@ -1,5 +1,5 @@
 ---
-title: 从PDF中提取表格数据 
+title: 从PDF中提取表格数据
 linktitle: 提取表格数据
 type: docs
 weight: 40

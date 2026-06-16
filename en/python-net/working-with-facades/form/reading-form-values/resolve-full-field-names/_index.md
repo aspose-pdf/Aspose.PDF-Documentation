@@ -1,5 +1,6 @@
 ---
-title: Resolve Full Field Names
+title: Resolve Full Field Names
+linktitle: Resolve Full Field Names
 type: docs
 weight: 60
 url: /python-net/resolve-full-field-names/

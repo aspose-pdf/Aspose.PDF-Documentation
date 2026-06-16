@@ -1,5 +1,5 @@
 ---
-title: Trabajando con Artefactos 
+title: Trabajando con Artefactos
 linktitle: Trabajando con Artefactos
 type: docs
 weight: 110

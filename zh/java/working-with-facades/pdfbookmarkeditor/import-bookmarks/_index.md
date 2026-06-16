@@ -1,11 +1,11 @@
 ---
 
-title: 从 XML 导入书签到现有 PDF 文件 (facades)  
-type: docs  
-weight: 30  
-url: /zh/java/import-bookmark/  
-description: 本节解释如何使用 PdfBookmarEditor 类通过 Aspose.PDF Facades 导入书签。  
-lastmod: "2021-06-05"  
+title: 从 XML 导入书签到现有 PDF 文件 (facades)
+type: docs
+weight: 30
+url: /zh/java/import-bookmark/
+description: 本节解释如何使用 PdfBookmarEditor 类通过 Aspose.PDF Facades 导入书签。
+lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

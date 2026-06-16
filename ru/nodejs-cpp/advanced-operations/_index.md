@@ -1,5 +1,5 @@
 ---
-title: Продвинутые операции в Node.js 
+title: Продвинутые операции в Node.js
 linktitle: Продвинутые операции
 type: docs
 weight: 60

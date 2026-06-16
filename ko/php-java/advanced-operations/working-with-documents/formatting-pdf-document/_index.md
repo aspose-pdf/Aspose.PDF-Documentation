@@ -1,5 +1,5 @@
 ---
-title: PDF 문서 포맷팅 
+title: PDF 문서 포맷팅
 linktitle: PDF 문서 포맷팅
 type: docs
 weight: 20

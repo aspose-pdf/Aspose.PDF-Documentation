@@ -1,12 +1,12 @@
 ---
 title: Insert an Empty Page into a PDF File in Python
+linktitle: Insert an Empty Page into a PDF File in Python
 type: docs
 weight: 70
 url: /java/insert-an-empty-page-into-a-pdf-file-in-python/
 description: Learn how to insert an empty page at any position within a PDF file using Python and Aspose.PDF for flexible document structuring.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
-
 To Insert an Empty Page into a Pdf document using **Aspose.PDF Java for Python**, simply invoke **InsertEmptyPage** class.
 
 ```Python
@@ -27,7 +27,6 @@ print "Empty page added successfully!"
 
 **Download Running Code**
 
-Download **Insert an Empty Page (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Insert an Empty Page (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/InsertEmptyPage/InsertEmptyPage.py)
-

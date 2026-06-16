@@ -1,5 +1,5 @@
 ---
-title: Déplacer des Pages PDF 
+title: Déplacer des Pages PDF
 linktitle: Déplacer des Pages
 type: docs
 weight: 20

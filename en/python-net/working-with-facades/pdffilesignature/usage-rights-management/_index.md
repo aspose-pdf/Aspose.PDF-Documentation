@@ -1,5 +1,6 @@
 ---
-title: Usage Rights Management
+title: Usage Rights Management
+linktitle: Usage Rights Management
 type: docs
 weight: 100
 url: /python-net/usage-rights-management/

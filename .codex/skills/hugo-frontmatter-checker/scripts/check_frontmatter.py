@@ -27,8 +27,8 @@ from pathlib import Path
 # Configuration
 # ──────────────────────────────────────────────────────────────────────────────
 
-REQUIRED_KEYS = {"title", "type", "url", "description"}
-RECOMMENDED_KEYS = {"linktitle", "weight", "lastmod"}
+REQUIRED_KEYS = {"title", "linktitle", "type", "weight", "url", "description"}
+RECOMMENDED_KEYS = {"lastmod"}
 
 # Keys whose values must be quoted strings (YAML bare scalars would be wrong)
 MUST_BE_QUOTED = {"lastmod"}
@@ -99,7 +99,7 @@ def check_recommended_keys(keys: set[str]) -> list[str]:
 
 def check_type_value(entries: list[tuple[int, str, str]]) -> list[str]:
     for lineno, key, val in entries:
-        if key == "type" and val != "docs":
+        if key == "type" and val.strip('"').strip("'") != "docs":
             return [f"Key 'type' should be 'docs', got '{val}' at line {lineno}"]
     return []
 
@@ -148,7 +148,7 @@ def check_weight(entries: list[tuple[int, str, str]]) -> list[str]:
         if key != "weight":
             continue
         try:
-            int(val)
+            int(val.strip('"').strip("'"))
         except ValueError:
             issues.append(
                 f"Key 'weight' at line {lineno} should be an integer, got: {val}"

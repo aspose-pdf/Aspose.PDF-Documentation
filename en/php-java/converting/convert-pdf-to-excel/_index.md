@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft Excel 
+title: Convert PDF to Microsoft Excel
 linktitle: Convert PDF to Excel
 type: docs
 weight: 20

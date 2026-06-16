@@ -4,15 +4,15 @@ linktitle: Extract Text from PDF
 type: docs
 weight: 30
 url: /rust-cpp/extract-text-from-pdf/
-description: This article describes various ways to extract text from PDF documents using Aspose.PDF for Rust. 
+description: This article describes various ways to extract text from PDF documents using Aspose.PDF for Rust.
 lastmod: "2025-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Extract Text with Aspose.PDF for Rust 
+AlternativeHeadline: Extract Text with Aspose.PDF for Rust
 Abstract: Aspose.PDF for Rust via C++ provides a powerful and efficient way to extract text from PDF documents. The library supports multiple extraction techniques, allowing users to retrieve text from entire documents, specific pages, or predefined areas within a PDF.
-SoftwareApplication: rust-cpp         
+SoftwareApplication: rust-cpp
 ---
 
 ## Extract Text From PDF Document

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /pt/javascript-cpp/get-started/
 description: Esta seção descreve os princípios básicos de trabalho do Aspose.PDF para JavaScript via C++. O Aspose.PDF para JavaScript via C++ suporta uma ampla variedade de funções.
-lastmod: "2022-12-14"   
+lastmod: "2022-12-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

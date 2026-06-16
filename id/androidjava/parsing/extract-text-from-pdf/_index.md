@@ -1,6 +1,6 @@
 ---
-title: Ekstrak Teks dari PDF 
-linktitle: Ekstrak Teks 
+title: Ekstrak Teks dari PDF
+linktitle: Ekstrak Teks
 type: docs
 weight: 10
 url: /id/androidjava/extract-text-from-pdf/

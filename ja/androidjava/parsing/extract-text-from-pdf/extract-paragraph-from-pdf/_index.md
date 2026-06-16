@@ -1,5 +1,5 @@
 ---
-title: PDFから段落を抽出 
+title: PDFから段落を抽出
 linktitle: 段落を抽出
 type: docs
 weight: 20

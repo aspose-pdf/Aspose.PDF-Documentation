@@ -1,195 +1,75 @@
 ---
-title: Menghapus Tabel dari PDF yang Ada
-linktitle: Menghapus Tabel
+title: Hapus Tabel dari Dokumen PDF yang Ada
+linktitle: Hapus Tabel
+description: Pelajari cara menghapus satu atau lebih tabel dari dokumen PDF yang ada menggunakan Python.
+lastmod: "2026-06-12"
 type: docs
 weight: 50
-url: /id/python-net/remove-tables-from-existing-pdf/
-lastmod: "2023-02-17"
+url: /id/python-net/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Hapus satu atau beberapa tabel dari file PDF dengan Python
+Abstract: Artikel ini menjelaskan cara menghapus tabel dari dokumen PDF yang ada menggunakan Aspose.PDF for Python via .NET. Ini memperkenalkan `TableAbsorber` untuk menemukan tabel dan menunjukkan cara menghapus satu tabel atau menghapus semua tabel yang terdeteksi dari sebuah halaman.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Menghapus Tabel dari PDF yang Ada",
-    "alternativeHeadline": "Cara Menghapus Tabel dari PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, menghapus tabel, hapus tabel",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/remove-tables-from-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/remove-tables-from-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": ""
-}
-</script>
 
+## Hapus Tabel dari Dokumen PDF
 
-{{% alert color="primary" %}}
+Aspose.PDF for Python memungkinkan Anda menghapus tabel dari PDF. Ia membuka PDF yang ada, mendeteksi tabel pertama pada halaman pertama dengan `TableAbsorber`, menghapus tabel itu menggunakan `remove()`, dan menyimpan PDF yang diperbarui ke file baru.
 
-Aspose.PDF untuk Python via .NET menawarkan kemampuan untuk memasukkan/membuat Tabel di dalam dokumen PDF saat sedang dihasilkan dari awal atau Anda juga dapat menambahkan objek tabel di dokumen PDF yang sudah ada. Namun, Anda mungkin memiliki persyaratan untuk [Memanipulasi Tabel dalam PDF yang ada](https://docs.aspose.com/pdf/python-net/manipulate-tables-in-existing-pdf/) di mana Anda dapat memperbarui konten dalam sel tabel yang ada. Namun, Anda mungkin menemui persyaratan untuk menghapus objek tabel dari dokumen PDF yang ada.
-
-{{% /alert %}}
-
-Untuk menghapus tabel, kita perlu menggunakan kelas [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) untuk mendapatkan tabel dalam PDF yang ada dan kemudian memanggil [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods).
-
-## Menghapus Tabel dari dokumen PDF
-
-Kami telah menambahkan fungsi baru yaitu.
- [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods) ke Kelas [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) yang ada untuk menghapus tabel dari dokumen PDF. Setelah absorber berhasil menemukan tabel pada halaman, ia menjadi mampu untuk menghapusnya. Silakan periksa potongan kode berikut yang menunjukkan cara menghapus tabel dari dokumen PDF:
+Gunakan halaman ini ketika Anda perlu membersihkan PDF yang banyak berisi tabel, menghapus konten tabular yang sudah usang, atau menyederhanakan dokumen sebelum didistribusikan kembali.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_one_table(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # Muat dokumen PDF yang ada
-    pdf_document = ap.Document(input_file)
-    # Buat objek TableAbsorber untuk menemukan tabel
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # Kunjungi halaman pertama dengan absorber
-    absorber.visit(pdf_document.pages[1])
-    # Dapatkan tabel pertama pada halaman
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    # Get first table on the page
     table = absorber.table_list[0]
-    # Hapus tabel
+    # Remove the table
     absorber.remove(table)
-    # Simpan PDF
-    pdf_document.save(output_file)
+    # Save PDF
+    document.save(outfile)
 ```
 
-## Menghapus Beberapa Tabel dari dokumen PDF
+## Hapus semua Tabel dari dokumen PDF
 
-Kadang-kadang dokumen PDF dapat berisi lebih dari satu tabel dan Anda mungkin memiliki kebutuhan untuk menghapus beberapa tabel darinya. Untuk menghapus beberapa tabel dari dokumen PDF, silakan gunakan potongan kode berikut:
+Dengan perpustakaan kami, Anda dapat menghapus semua tabel dari halaman tertentu dalam PDF. Kode membuka PDF yang ada, mendeteksi semua tabel pada halaman kedua dengan TableAbsorber, iterasi melalui tabel yang terdeteksi, menghapus masing‑masing, dan kemudian menyimpan PDF yang telah dimodifikasi ke file baru. Ini berguna ketika Anda perlu menghapus banyak tabel dari sebuah halaman sambil membiarkan konten PDF lainnya tetap utuh.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_all_tables(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # Memuat dokumen PDF yang ada
-    pdf_document = ap.Document(input_file)
-    # Membuat objek TableAbsorber untuk menemukan tabel
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # Kunjungi halaman kedua dengan absorber
-    absorber.visit(pdf_document.pages[1])
-    # Dapatkan salinan koleksi tabel
-    tables = absorber.table_list
-    #  Melakukan iterasi melalui salinan koleksi dan menghapus tabel
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    #  Loop through the copy of collection and removing tables
+    tables = list(absorber.table_list)
     for table in tables:
         absorber.remove(table)
-    # Simpan dokumen
-    pdf_document.save(output_file)
+
+    # Save document
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Topik Tabel Terkait
+
+- [Bekerja dengan tabel dalam PDF menggunakan Python](/pdf/id/python-net/working-with-tables/)
+- [Tambahkan tabel ke PDF menggunakan Python](/pdf/id/python-net/adding-tables/)
+- [Ekstrak tabel dari dokumen PDF](/pdf/id/python-net/extracting-table/)
+- [Manipulasi tabel dalam PDF yang ada](/pdf/id/python-net/manipulating-tables/)

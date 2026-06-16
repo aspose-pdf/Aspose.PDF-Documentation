@@ -1,11 +1,11 @@
 ---
-title: Mengonversi PDF/A ke format PDF 
+title: Mengonversi PDF/A ke format PDF
 linktitle: Mengonversi PDF/A ke format PDF
 type: docs
 weight: 110
 url: /id/cpp/convert-pdfa-to-pdf/
 lastmod: "2021-11-19"
-description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF/A ke dokumen PDF dengan pustaka C++. 
+description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF/A ke dokumen PDF dengan pustaka C++.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

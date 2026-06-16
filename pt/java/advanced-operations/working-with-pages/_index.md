@@ -1,10 +1,10 @@
 ---
-title: Trabalhando com Páginas de PDF 
+title: Trabalhando com Páginas de PDF
 linktitle: Trabalhando com Páginas
 type: docs
 weight: 20
 url: /pt/java/working-with-pages/
-description: Com Aspose.PDF para Java você pode adicionar páginas, adicionar cabeçalhos e rodapés, adicionar marcas d'água em seu arquivo PDF. Esta seção explica todos os detalhes sobre este tópico. 
+description: Com Aspose.PDF para Java você pode adicionar páginas, adicionar cabeçalhos e rodapés, adicionar marcas d'água em seu arquivo PDF. Esta seção explica todos os detalhes sobre este tópico.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

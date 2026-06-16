@@ -1,5 +1,5 @@
 ---
-title: 添加 PDF 页眉和页脚 
+title: 添加 PDF 页眉和页脚
 linktitle: 添加 PDF 页眉和页脚
 type: docs
 weight: 70

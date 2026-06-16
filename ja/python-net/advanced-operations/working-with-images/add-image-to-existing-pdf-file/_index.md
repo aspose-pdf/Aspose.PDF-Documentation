@@ -1,28 +1,28 @@
 ---
-title: Pythonで既存のPDFに画像を追加する
-linktitle: PDFに画像を追加する
+title: Python で既存の PDF にイメージを追加する方法
+linktitle: PDF に画像を追加
 type: docs
 weight: 10
 url: /ja/python-net/add-image-to-existing-pdf-file/
-description: Pythonで既存のPDFファイルに画像を追加し、固定座標に配置し、代替テキストを設定し、画像圧縮を使用する方法を学びます。
-lastmod: "2026-05-05"
+description: Python で既存の PDF ファイルに画像を追加する方法、固定座標に配置する方法、代替テキストを設定する方法、画像圧縮を使用する方法について説明します。
+lastmod: "2026-06-09"
 TechArticle: true
-AlternativeHeadline: Pythonを使用して既存のPDFファイルに画像を追加する
-Abstract: この記事では、Aspose.PDF for Python via .NET を使用して PDF 文書に画像を追加する方法を示します。固定座標に画像を配置する方法、低レベルの PDF 演算子で画像を描画する方法、アクセシビリティのために代替テキストを割り当てる方法、そして Flate 圧縮で画像を埋め込む方法について説明します。
+AlternativeHeadline: Python を使用して既存の PDF ファイルに画像を追加する
+Abstract: この記事では、.NET 経由で Aspose.PDF for Python を使用して PDF ドキュメントに画像を追加する方法を説明します。固定座標への画像の配置、低レベルの PDF 演算子による画像の描画、アクセシビリティのための代替テキストの割り当て、Flate 圧縮による画像の埋め込みについて説明します。
 ---
 
-## Python で既存の PDF ファイルに画像を追加する
+## Python で既存の PDF ファイルにイメージを追加する方法
 
-この例では、Aspose.PDF for Python via .NET を使用して、既存の PDF ページ上の固定位置に画像を配置する方法を示します。
+この例は、.NET 経由の Aspose.PDF for Python を使用して、既存の PDF ページの固定位置に画像を配置する方法を示しています。
 
-ロゴ、写真、スタンプ、チャート、またはその他のグラフィックを既存の PDF レイアウトに追加する必要がある場合は、これらの例を使用してください。ページ座標で画像を配置したり、演算子で描画したり、アクセシビリティテキストを追加したり、画像圧縮を制御したりできます。
+既存のPDFレイアウトにロゴ、写真、スタンプ、グラフ、その他のグラフィックを追加する必要がある場合は、これらの例を使用してください。ページ座標を使用して画像を配置したり、演算子を使用して描画したり、アクセシビリティテキストを追加したり、画像圧縮を制御したりできます。
 
-1. 既存の PDF を読み込む `ap.Document(infile)`.
-1. 対象ページを選択 (`document.pages[1]` 最初のページ用に)
-1. 呼び出す `page.add_image()` と:
-    - 画像ファイルのパス。
-    - A `Rectangle` 配置座標を定義する。
-1. 更新された PDF を保存します。
+1. で既存の PDF を読み込む `ap.Document(infile)`.
+1. ターゲットページを選択してください (`document.pages[1]` 最初のページ用）。
+1. コール `page.add_image()` と:
+    -画像ファイルのパス。
+    -A `Rectangle` 配置座標の定義
+1. 更新した PDF を保存します。
 
 ```python
 import aspose.pdf as ap
@@ -37,13 +37,13 @@ def add_image(infile, image_file, outfile):
 
 ## 演算子を使用して PDF に画像を追加する
 
-このアプローチは、高レベルの PDF オペレータの代わりに、低レベルの PDF オペレータで画像を追加します。 `add_image()` ヘルパー。
+この方法では、高レベルのPDF演算子ではなく低レベルのPDF演算子を含む画像が追加されます。 `add_image()` ヘルパー。
 
-1. 新規作成 `Document` ページを追加します。
-1. ページ リソースに画像を追加する（`page.resources.images`).
-1. 変換オペレーターを作成する (`GSave`, `ConcatenateMatrix`, `Do`, `GRestore`).
-1. ページコンテンツにオペレーターを追加します。
-1. 結果として得られたPDFを保存します。
+1. 新規作成 `Document` そしてページを追加します。
+1. ページリソースに画像を追加する (`page.resources.images`).
+1. 変換演算子の作成 (`GSave`, `ConcatenateMatrix`, `Do`, `GRestore`).
+1. ページコンテンツに演算子を追加します。
+1. 結果の PDF を保存します。
 
 ```python
 import aspose.pdf as ap
@@ -81,15 +81,15 @@ def add_image_using_operators(image_file, outfile):
     document.save(outfile)
 ```
 
-## 代替テキスト付きで画像をPDFに追加
+## 代替テキスト付きの PDF への画像の追加
 
-この例では画像を追加し、アクセシビリティのために代替テキストを割り当てます。
+この例では、アクセシビリティのために画像を追加し、代替テキストを割り当てています。
 
-1. 新規作成 `Document` ページを追加します。
-1. 画像をページに追加する `page.add_image()`.
-1. 画像リソースを取得 `page.resources.images`.
-1. 代替テキストを設定する `try_set_alternative_text()`.
-1. 結果として得られたPDFを保存します。
+1. 新規作成 `Document` そしてページを追加します。
+1. を使用してページに画像を追加します `page.add_image()`.
+1. から画像リソースを取得 `page.resources.images`.
+1. 代替テキストを使用して設定 `try_set_alternative_text()`.
+1. 結果の PDF を保存します。
 
 ```python
 import aspose.pdf as ap
@@ -111,14 +111,14 @@ def add_image_set_alternative_text(image_file, outfile):
     document.save(outfile)
 ```
 
-## Flate 圧縮で PDF に画像を追加する
+## フレート圧縮による PDF への画像の追加
 
-この例では画像を埋め込みます `ImageFilterType.FLATE` 圧縮。
+この例では、を使用して画像を埋め込みます `ImageFilterType.FLATE` 圧縮。
 
-1. 新規作成 `Document` ページを追加します。
-1. Flate 圧縮でページリソースに画像を追加する。
-1. 行列演算子を使用して画像を配置し、描画する。
-1. ドキュメントを保存します。
+1. 新規作成 `Document` そしてページを追加します。
+1. Flate圧縮を使用して画像をページリソースに追加します。
+1. 行列演算子を使用して画像を配置および描画します。
+1. 文書を保存します。
 
 ```python
 import aspose.pdf as ap
@@ -153,7 +153,7 @@ def add_image_to_pdf_with_flate_compression(image_file, outfile):
 
 ## 関連画像トピック
 
-- [Python を使用して PDF の画像を操作する](/pdf/ja/python-net/working-with-images/)
-- [既存の PDF ファイルの画像を置き換える](/pdf/ja/python-net/replace-image-in-existing-pdf-file/)
-- [PDF ファイルから画像を削除する](/pdf/ja/python-net/delete-images-from-pdf-file/)
-- [PDF ファイルから画像を抽出する](/pdf/ja/python-net/extract-images-from-pdf-file/)
+- [Python を使用して PDF 内の画像を操作する](/pdf/ja/python-net/working-with-images/)
+- [既存の PDF ファイル内の画像の置換](/pdf/ja/python-net/replace-image-in-existing-pdf-file/)
+- [PDF ファイルからの画像の削除](/pdf/ja/python-net/delete-images-from-pdf-file/)
+- [PDF ファイルからの画像の抽出](/pdf/ja/python-net/extract-images-from-pdf-file/)

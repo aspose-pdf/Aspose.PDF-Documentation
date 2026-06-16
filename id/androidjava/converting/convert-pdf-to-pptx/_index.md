@@ -1,5 +1,5 @@
 ---
-title: Mengubah PDF ke PowerPoint 
+title: Mengubah PDF ke PowerPoint
 linktitle: Mengubah PDF ke PowerPoint
 type: docs
 weight: 110

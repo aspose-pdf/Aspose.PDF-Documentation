@@ -1,12 +1,12 @@
 ---
 title: Aspose.PDF Java for Jython
+linktitle: Aspose.PDF Java for Jython
 type: docs
 weight: 60
 url: /java/aspose-pdf-java-for-jython/
 description: Combine the power of Aspose.PDF for Java with Jython. Effortlessly manipulate PDF files in a Python-based Java environment.
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 ---
-
 ## Introduction
 
 ### What is Jython?
@@ -76,7 +76,6 @@ class PdfToDoc:
     def __init__(self):
         dataDir = Settings.dataDir + 'WorkingWithDocumentConversion/PdfToDoc/'
 
-
         # Open the target document
         pdf = Document(dataDir + 'input1.pdf')
 
@@ -85,8 +84,7 @@ class PdfToDoc:
 
         print "Document has been converted successfully"
 
-
-if __name__ == '__main__':       
+if __name__ == '__main__':
 
     PdfToDoc()
 ```
@@ -99,7 +97,7 @@ From the very first days of Aspose, we knew that just giving our customers good 
 
 This is why we offer free support. Anyone who uses our product, whether they have bought them or are using an evaluation, deserves our full attention and respect.
 
-You can log any issues or suggestions related to Aspose.PDF Java for Jython using any of the following platforms:
+You can log any issues or suggestions related toВ Aspose.PDF Java for Jython using any of the following platforms:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 

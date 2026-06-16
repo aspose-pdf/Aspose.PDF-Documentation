@@ -14,7 +14,7 @@ sitemap:
 aliases:
     - /net/adding-stamp-in-a-pdf-file/
     - /net/adding-text-stamp-watermark/
-    - /net/add-text-and-image-stamp/   
+    - /net/add-text-and-image-stamp/
     - /net/add-pdf-page-stamp/
     - /net/extract-image-and-change-position-of-a-stamp/
 ---

@@ -34,7 +34,7 @@ Jika Anda mengetahui nama dari field formulir yang ingin Anda ekstrak nilainya, 
 
 ## Mengambil nilai field formulir berdasarkan judul
 
-Properti Value dari field formulir memungkinkan Anda untuk mendapatkan nilai dari field tertentu. Untuk mendapatkan nilainya, dapatkan field formulir dari [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) objek [koleksi field formulir](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). Contoh ini memilih [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) dan mengambil nilainya menggunakan metode [getValue](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
+Properti Value dari field formulir memungkinkan Anda untuk mendapatkan nilai dari field tertentu. Untuk mendapatkan nilainya, dapatkan field formulir dari [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) objek [koleksi field formulir](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). Contoh ini memilih [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) dan mengambil nilainya menggunakan metode [getValue](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
 
 ```java
 public static void ExtractFormDataByName() {

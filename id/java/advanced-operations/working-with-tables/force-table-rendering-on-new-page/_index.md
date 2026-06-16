@@ -8,7 +8,7 @@ lastmod: "2021-06-05"
 
 ## Render Tabel pada Halaman Baru
 
-Secara default, paragraf ditambahkan ke koleksi Paragraf objek Page. Namun, dimungkinkan untuk merender tabel pada halaman baru alih-alih langsung setelah objek tingkat paragraf yang ditambahkan sebelumnya pada halaman.
+Secara default, paragraf ditambahkan ke koleksi `paragraphs` objek Page. Namun, dimungkinkan untuk merender tabel pada halaman baru alih-alih langsung setelah objek tingkat paragraf yang ditambahkan sebelumnya pada halaman.
 
 ### Menambahkan Tabel
 

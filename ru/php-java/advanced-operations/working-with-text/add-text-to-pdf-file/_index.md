@@ -1,5 +1,5 @@
 ---
-title: Добавление текста в PDF файл 
+title: Добавление текста в PDF файл
 linktitle: Добавление текста в PDF файл
 type: docs
 weight: 10

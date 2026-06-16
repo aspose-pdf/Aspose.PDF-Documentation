@@ -1,11 +1,11 @@
 ---
-title: 开始使用 
+title: 开始使用
 linktitle: 开始使用
 type: docs
 weight: 30
 url: /zh/nodejs-cpp/get-started/
 description: 本节介绍通过 C++ 使用 Aspose.PDF for Node.js 的基本工作原理。Aspose.PDF for Node.js via C++ 支持多种功能。
-lastmod: "2023-11-16"   
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

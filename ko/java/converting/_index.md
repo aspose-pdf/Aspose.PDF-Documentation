@@ -1,16 +1,15 @@
 ---
 
-title: PDF 문서 변환  
-linktitle: PDF 문서 변환  
-type: docs  
-weight: 50  
-url: /ko/java/converting/  
-lastmod: "2021-11-17"  
-description: 이 섹션은 Aspose.PDF 라이브러리를 사용하여 Java에서 PDF 문서를 변환할 수 있는 모든 가능한 옵션에 대한 설명을 포함합니다.  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.8  
-
+title: PDF 문서 변환
+linktitle: PDF 문서 변환
+type: docs
+weight: 50
+url: /ko/java/converting/
+lastmod: "2021-11-17"
+description: 이 섹션은 Aspose.PDF 라이브러리를 사용하여 Java에서 PDF 문서를 변환할 수 있는 모든 가능한 옵션에 대한 설명을 포함합니다.
+sitemap:
+    changefreq: "weekly"
+    priority: 0.8
 ---
 
 **Aspose.PDF for Java**는 PDF 문서를 다양한 형식으로 변환할 수 있으며, 다른 형식에서 PDF로 변환할 수도 있습니다. 또한, Aspose.PDF 변환 품질을 확인하고 Aspose.PDF 변환기 앱으로 결과를 온라인으로 볼 수 있습니다.

@@ -1,5 +1,6 @@
 ---
 title: Get and Set Page Properties
+linktitle: Get and Set Page Properties
 type: docs
 weight: 30
 url: /php-java/get-and-set-page-properties/

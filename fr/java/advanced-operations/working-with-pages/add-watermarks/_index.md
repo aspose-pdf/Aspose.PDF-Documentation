@@ -1,6 +1,6 @@
 ---
 
-title: Ajouter un filigrane au PDF 
+title: Ajouter un filigrane au PDF
 linktitle: Ajouter un filigrane
 type: docs
 weight: 90

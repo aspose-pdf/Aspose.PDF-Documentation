@@ -1,5 +1,6 @@
 ---
 title: Working with Aspose.Pdf Facades
+linktitle: Working with Aspose.Pdf Facades
 type: docs
 weight: 75
 url: /cpp/working-with-aspose-pdf-facades/

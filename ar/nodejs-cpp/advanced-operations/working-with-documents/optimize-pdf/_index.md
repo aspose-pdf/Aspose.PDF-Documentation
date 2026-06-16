@@ -1,5 +1,5 @@
 ---
-title: تحسين PDF باستخدام Aspose.PDF لـ Node.js عبر C++ 
+title: تحسين PDF باستخدام Aspose.PDF لـ Node.js عبر C++
 linktitle: تحسين ملف PDF
 type: docs
 weight: 10

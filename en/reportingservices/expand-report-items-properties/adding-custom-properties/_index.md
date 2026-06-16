@@ -1,5 +1,6 @@
 ---
 title: Adding Custom Properties
+linktitle: Adding Custom Properties
 type: docs
 weight: 10
 url: /reportingservices/adding-custom-properties/

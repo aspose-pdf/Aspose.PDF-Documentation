@@ -1,152 +1,43 @@
 ---
-title: PDF Annotations
-linktitle: PDF Annotations
+title: Anotasi PDF dalam Python
+linktitle: Anotasi PDF
 type: docs
 weight: 100
 url: /id/python-net/annotations/
-description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi pada file PDF Anda dengan pustaka Aspose.PDF.
-lastmod: "2023-02-17"
+description: Pelajari cara menambahkan, memodifikasi, mengekstrak, dan mengelola anotasi PDF dalam Python dengan Aspose.PDF for Python via .NET, termasuk teks, penyorotan, tautan, gambar, dan lainnya.
+lastmod: "2026-06-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara menambahkan Anotasi ke PDF menggunakan Python
+Abstract: Artikel ini membahas penggunaan anotasi dalam PDF sebagai elemen interaktif yang meningkatkan interaktivitas dokumen dan keterlibatan pengguna. Artikel ini menyoroti kemampuan Aspose.PDF for Python Library dalam mendukung berbagai jenis anotasi, termasuk teks, penyorotan, gambar, dan anotasi multimedia. Anotasi berfungsi untuk berbagai tujuan seperti memberi komentar, meninjau, menandai dokumen, dan memberikan umpan balik, yang memfasilitasi kolaborasi, komunikasi, serta pemahaman yang lebih mendalam tentang konten dokumen. Artikel ini juga menyebutkan bagian yang merinci cara menambahkan, menghapus, dan mengambil anotasi, memberikan panduan tentang mengelola elemen-elemen ini secara efektif dalam dokumen PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF Annotations in Python",
-    "alternativeHeadline": "Bekerja dengan Anotasi dalam PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, anotasi",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Bagian ini menunjukkan cara menggunakan semua jenis anotasi pada file PDF Anda dengan pustaka Aspose.PDF untuk Python."
-}
-</script>
 
+Anotasi dalam PDF adalah elemen interaktif yang memungkinkan Anda menambahkan catatan, menyorot teks, menggambar bentuk, melampirkan file, dan memicu tindakan langsung pada halaman. Mereka berguna untuk alur kerja peninjauan, kolaborasi, navigasi, dan penandaan dokumen.
 
-Annotations dalam PDF adalah elemen interaktif yang memungkinkan Anda menambahkan catatan, menyoroti teks, menggambar bentuk, melampirkan file, dan melakukan tindakan lain yang meningkatkan penelusuran, interaktivitas, dan interaksi.
+Aspose.PDF for Python via .NET mendukung berbagai skenario anotasi, termasuk anotasi catatan dan popup, markup teks, tautan dan tombol, bentuk, watermark, anotasi multimedia, serta alur kerja impor atau ekspor anotasi.
 
-Aspose.PDF untuk Perpustakaan Python mendukung berbagai jenis anotasi, termasuk anotasi teks (seperti teks, dan anotasi popup), anotasi sorotan (seperti markup teks), anotasi gambar (seperti lingkaran, polyline, poligon, garis, dan tinta), anotasi multimedia (ada layar, suara, widget, dan 3D) dan lainnya.
+Gunakan bagian ini untuk memilih alur kerja anotasi yang sesuai dengan tugas Anda, apakah Anda perlu membuat anotasi baru, memeriksa yang sudah ada, menghapusnya, atau mentransfernya antar dokumen PDF.
 
-Anotasi dapat digunakan untuk mengomentari, meninjau, menandai dokumen, memberikan umpan balik, atau menambahkan informasi tambahan. Anotasi memungkinkan untuk menjalin kerja sama, memfasilitasi komunikasi, dan meningkatkan pemahaman tentang isi dokumen. Mereka meningkatkan kolaborasi, memperbaiki komunikasi, dan membuat dokumen PDF lebih dinamis dan menarik bagi pengguna.
+## Topik Anotasi
 
-Anda dapat melakukan hal berikut:
+Gunakan bagian ini ketika Anda perlu menambahkan, mengambil, memperbarui, menghapus, atau mentransfer anotasi dalam file PDF dengan Python. Halaman yang ditautkan di bawah ini mencakup baik alur kerja anotasi tingkat atas maupun keluarga anotasi yang dikelompokkan yang digunakan di seluruh dokumentasi.
 
-- [Tambah, Hapus dan Dapatkan Anotasi](/pdf/id/python-net/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
+Anda dapat menggunakan topik berikut:
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Perpustakaan Python",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "AS",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Tambah, Hapus, dan Dapatkan Anotasi](/pdf/id/python-net/add-delete-and-get-annotation/) - mulai di sini untuk kategori anotasi yang dikelompokkan utama dan alur kerja inti membuat, memeriksa, dan menghapus.
+- [Impor dan Ekspor Anotasi](/pdf/id/python-net/import-export-annotations/) - menyalin anotasi dari satu dokumen PDF ke file PDF lain.
+
+### Grup Anotasi
+
+Panduan anotasi berkelompok mencakup subtopik berikut:
+
+- [Anotasi Teks](/pdf/id/python-net/text-based-Annotations/) - bekerja dengan anotasi teks bebas, sorot, garis bawah, garis bergelombang, dan coret.
+- [Anotasi Penandaan](/pdf/id/python-net/markup-annotations/) - menambahkan atau memeriksa anotasi catatan, caret, dan replace yang digunakan dalam skenario peninjauan.
+- [Anotasi Interaktif](/pdf/id/python-net/interactive-annotations/) - membuat anotasi tautan, tombol navigasi, dan tombol cetak.
+- [Anotasi Bentuk](/pdf/id/python-net/shape-annotations/) - gunakan anotasi garis, persegi, lingkaran, poligon, dan polyline.
+- [Anotasi Media](/pdf/id/python-net/media-annotations/) - tambahkan anotasi suara, layar, media kaya, dan 3D.
+- [Anotasi Keamanan](/pdf/id/python-net/security-annotations/) - bekerja dengan lampiran file, redaksi, dan anotasi yang berorientasi proteksi terkait.
+- [Anotasi Watermark](/pdf/id/python-net/watermark-annotations/) - tambahkan dan kelola elemen watermark berbasis anotasi.
+Anotasi sangat berguna untuk peninjauan dokumen, kolaborasi, penandaan konten, dan navigasi interaktif. Mulailah dengan ikhtisar terkelompok ketika Anda ingin menelusuri jenis anotasi yang didukung, atau langsung ke topik tertentu ketika Anda sudah mengetahui alur kerja yang Anda butuhkan.

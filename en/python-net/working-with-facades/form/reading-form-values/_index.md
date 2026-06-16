@@ -1,5 +1,6 @@
 ---
-title: Reading Form Values
+title: Reading Form Values
+linktitle: Reading Form Values
 type: docs
 weight: 60
 url: /python-net/reading-form-values/

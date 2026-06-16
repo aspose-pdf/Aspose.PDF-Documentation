@@ -1,5 +1,5 @@
 ---
-title: 在 PDF 中使用 XFA 表单 
+title: 在 PDF 中使用 XFA 表单
 linktitle: XFA 表单
 type: docs
 weight: 20

@@ -11,8 +11,8 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Hello World via Aspose.PDF for Rust
-Abstract: The Get Started guide for Aspose.PDF for Rust via C++ provides an introduction to working with the library, covering the basic steps to create and manipulate PDF documents. It includes a 'Hello World' example demonstrating how to generate a simple PDF file with text content, helping developers quickly understand the API's core functionality. 
-SoftwareApplication: rust-cpp   
+Abstract: The Get Started guide for Aspose.PDF for Rust via C++ provides an introduction to working with the library, covering the basic steps to create and manipulate PDF documents. It includes a 'Hello World' example demonstrating how to generate a simple PDF file with text content, helping developers quickly understand the API's core functionality.
+SoftwareApplication: rust-cpp
 ---
 
 A "Hello World" example is traditionally used to introduce features of a programming language or software with a simple use case.

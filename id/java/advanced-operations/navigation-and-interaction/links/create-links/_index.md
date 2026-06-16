@@ -16,7 +16,7 @@ sitemap:
 Aspose.PDF untuk Java memungkinkan Anda menambahkan tautan ke file PDF eksternal sehingga Anda dapat menghubungkan beberapa dokumen bersama. Dengan menambahkan tautan ke aplikasi dalam dokumen, dimungkinkan untuk menautkan ke aplikasi dari dokumen. Ini berguna ketika Anda ingin pembaca melakukan tindakan tertentu pada titik tertentu dalam tutorial, misalnya, atau untuk membuat dokumen yang kaya fitur. Untuk membuat tautan aplikasi:
 
 1. [Buat Objek Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Dapatkan [Halaman](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) yang ingin Anda tambahkan tautan.
+1. Dapatkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) yang ingin Anda tambahkan tautan.
 
 1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) menggunakan objek [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) dan [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle).
 1. Atur atribut tautan menggunakan objek [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).

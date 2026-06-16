@@ -99,7 +99,7 @@ Cuplikan kode ini menunjukkan proses pembuatan dokumen PDF dan menambahkan Float
     // Atur penyelarasan horizontal untuk FloatingBox
     $aBox->setHorizontalAlignment((new HorizontalAlignment())->getCenter());
 
-    // Tambahkan fragmen teks ke koleksi paragraf dalam FloatingBox
+    // Tambahkan fragmen teks ke koleksi `paragraphs` dalam FloatingBox
     $aBox->getParagraphs()->add(new TextFragment("teks utama"));
 
     // Atur batas untuk FloatingBox
@@ -113,7 +113,7 @@ Cuplikan kode ini menunjukkan proses pembuatan dokumen PDF dan menambahkan Float
     // Atur warna latar belakang untuk FloatingBox
     $aBox->setBackgroundColor($colors->getYellow());
 
-    // Tambahkan FloatingBox ke koleksi paragraf dari objek halaman
+    // Tambahkan FloatingBox ke koleksi `paragraphs` dari objek halaman
     $page->getParagraphs()->add($aBox);
     
     // Simpan dokumen keluaran

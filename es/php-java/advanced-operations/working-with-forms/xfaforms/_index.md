@@ -1,5 +1,5 @@
 ---
-title: Trabajando con Formularios XFA en PDF 
+title: Trabajando con Formularios XFA en PDF
 linktitle: Formularios XFA
 type: docs
 weight: 20

@@ -1,5 +1,6 @@
 ---
-title: Copy Inner Field
+title: Copy Inner Field
+linktitle: Copy Inner Field
 type: docs
 weight: 20
 url: /python-net/copy-inner-field/

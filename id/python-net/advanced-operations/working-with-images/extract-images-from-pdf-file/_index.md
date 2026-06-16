@@ -4,159 +4,66 @@ linktitle: Ekstrak Gambar
 type: docs
 weight: 30
 url: /id/python-net/extract-images-from-pdf-file/
-description: Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan pustaka Python.
-lastmod: "2023-02-17"
+description: Pelajari cara mengekstrak gambar tersemat dari file PDF dalam Python.
+lastmod: "2026-06-12"
+TechArticle: true
+AlternativeHeadline: Ekstrak gambar dari file PDF dengan Python
+Abstract: Artikel ini menunjukkan cara mengekstrak gambar dari dokumen PDF dengan Aspose.PDF for Python via .NET. Artikel ini mencakup mengekstrak satu gambar tersemat dan mengekspor gambar yang ditemukan dalam wilayah persegi panjang tertentu pada halaman.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Ekstrak Gambar dari File PDF dengan Python",
-    "alternativeHeadline": "Cara mengekstrak Gambar dari PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, Python, ekstrak gambar dari pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-images-from-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-images-from-pdf-file/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan pustaka Python."
-}
-</script>
 
+Gunakan halaman ini saat Anda perlu menggunakan kembali grafik tersemat, mengarsipkan aset gambar, atau memproses konten gambar di luar PDF.
 
-Apakah Anda perlu memisahkan gambar dari file PDF Anda? Untuk memudahkan manajemen, pengarsipan, analisis, atau berbagi gambar dari dokumen Anda, gunakan **Aspose.PDF untuk Python** dan ekstrak gambar dari file PDF.
-
-Gambar disimpan dalam koleksi [resources](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) di setiap halaman dalam koleksi [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximagecollection/). Untuk mengekstrak halaman tertentu, kemudian dapatkan gambar dari koleksi Images menggunakan indeks gambar tertentu.
-
-Indeks gambar mengembalikan objek [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/). Objek ini menyediakan metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) yang dapat digunakan untuk menyimpan gambar yang diekstrak. Cuplikan kode berikut menunjukkan cara mengekstrak gambar dari file PDF.
+1. Muat PDF sumber dengan `ap.Document(infile)`.
+1. Pilih halaman target dan indeks sumber daya gambar.
+1. Simpan objek gambar ke aliran output.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
 
-    import aspose.pdf as ap
 
-    # Buka dokumen
-    document = ap.Document(input_file)
-
-    # Ekstrak gambar tertentu
-    xImage = document.pages[2].resources.images[1]
-    outputImage = io.FileIO(output_image, "w")
-
-    # Simpan gambar keluaran
-    xImage.save(outputImage)
-    outputImage.close()
+def extract_image(infile, outfile):
+    document = ap.Document(infile)
+    x_image = document.pages[1].resources.images[1]
+    with FileIO(outfile, "wb") as output_image:
+        x_image.save(output_image)
 ```
 
+## Ekstrak Gambar dari Wilayah Spesifik dalam PDF
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Library Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+Contoh ini mengekstrak gambar yang berada dalam wilayah persegi panjang yang ditentukan pada halaman PDF dan menyimpannya sebagai file terpisah.
+
+1. Muat PDF sumber.
+1. Buat `ImagePlacementAbsorber` dan terima itu di halaman target.
+1. Definisikan persegi panjang target.
+1. Iterasi melalui penempatan gambar dan periksa apakah batas masing-masing gambar cocok dengan wilayah.
+1. Simpan gambar yang cocok ke file output.
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+
+
+def extract_image_from_specific_region(infile, outfile):
+    document = ap.Document(infile)
+    rectangle = ap.Rectangle(0, 0, 590, 590, True)
+    absorber = ap.ImagePlacementAbsorber()
+    document.pages[1].accept(absorber)
+
+    index = 1
+    for image_placement in absorber.image_placements:
+        point1 = ap.Point(image_placement.rectangle.llx, image_placement.rectangle.lly)
+        point2 = ap.Point(image_placement.rectangle.urx, image_placement.rectangle.ury)
+
+        if rectangle.contains(point1, True) and rectangle.contains(point2, True):
+            with FileIO(outfile.replace("index", str(index)), "wb") as output_image:
+                image_placement.image.save(output_image)
+            index += 1
+```
+
+## Topik Gambar Terkait
+
+- [Bekerja dengan gambar dalam PDF menggunakan Python](/pdf/id/python-net/working-with-images/)
+- [Ganti gambar dalam file PDF yang sudah ada](/pdf/id/python-net/replace-image-in-existing-pdf-file/)
+- [Hapus gambar dari file PDF](/pdf/id/python-net/delete-images-from-pdf-file/)
+- [Tambahkan gambar ke file PDF yang ada](/pdf/id/python-net/add-image-to-existing-pdf-file/)

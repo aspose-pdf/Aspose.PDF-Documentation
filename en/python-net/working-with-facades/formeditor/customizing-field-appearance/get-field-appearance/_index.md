@@ -1,5 +1,6 @@
 ---
-title: Get Field Appearance
+title: Get Field Appearance
+linktitle: Get Field Appearance
 type: docs
 weight: 20
 url: /python-net/get-field-appearance/

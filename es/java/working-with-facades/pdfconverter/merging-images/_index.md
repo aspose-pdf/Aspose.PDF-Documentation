@@ -1,5 +1,5 @@
 ---
-title: Fusionar imágenes 
+title: Fusionar imágenes
 type: docs
 weight: 10
 url: /es/java/merge-images/

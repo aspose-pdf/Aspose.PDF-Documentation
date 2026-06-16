@@ -1,209 +1,178 @@
 ---
-title: Rotate Text Inside PDF 
+title: Rotate PDF Text in Java
 linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50
 url: /java/rotate-text-inside-pdf/
-description: Learn how to rotate text inside a PDF document, providing flexibility in document layout using Aspose.PDF for Java
-lastmod: "2025-02-17"
+description: Learn how to rotate text fragments and paragraphs inside PDF documents in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to rotate text inside a PDF document using Aspose.PDF for Java
-Abstract: The article provides a comprehensive guide on how to rotate text within a PDF document using the rotation property available in the Aspose PDF library for Java. It explains the use of the `setRotation` method from the `TextFragment` class to achieve various text orientations for document customization. The article outlines several implementation scenarios - Demonstrates how to create text fragments with different rotation angles (0, 45, and 90 degrees) and append them to a PDF page using a `TextBuilder`. Illustrates the process of adding multiple rotated text fragments to a `TextParagraph`, which is then appended to a PDF page. Shows how text fragments can be rotated (angles 0, 315, and 270 degrees) and directly added to a page's paragraphs.
-SoftwareApplication: java 
+TechArticle: true
+AlternativeHeadline: Rotate text fragments and paragraphs in PDF documents with Java
+Abstract: This article explains how to rotate text in PDF documents using Aspose.PDF for Java. It shows how to rotate individual text fragments, build paragraphs containing rotated lines, and rotate complete text paragraphs for different layout scenarios.
 ---
+Aspose.PDF for Java lets you rotate individual text fragments as well as whole text paragraphs.
 
-## Rotate Text Inside PDF using Rotation Property
+## Rotate individual text fragments
 
-By using the [setRotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentState#setRotation-double-) method of [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) Class, you can rotate text at various angles. The text rotation can be used in different scenarios of document generation. You can specify the rotation angle in degrees to rotate the text as per your requirement. Please check the following different scenarios, in which you can implement text rotation.
+Use this example when several text fragments on the same line should use different rotation angles.
 
-## Implement Rotation using TextFragment and TextBuilder
+1. Create a new PDF document and add a page.
+1. Create text fragments with the required rotation values.
+1. Append them with `TextBuilder` and save the result.
 
 ```java
-public class ExampleRotateText {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+public static void rotateTextInsidePdf1(Path outputFile) {
+       try (Document document = new Document()) {
+           Page page = document.getPages().add();
 
-    public static void ImplementRotationUsingTextFragmentAndTextBuilder() {
+           TextFragment textFragment1 = new TextFragment("main text");
+           textFragment1.setPosition(new Position(100, 600));
+           textFragment1.getTextState().setFontSize(12);
+           textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
 
-        // Initialize document object
-        Document pdfDocument = new Document();
-        // Get particular page
-        Page pdfPage = pdfDocument.getPages().add();
-        // Create text fragment
-        TextFragment textFragment1 = new TextFragment("main text");
-        textFragment1.setPosition(new Position(100, 600));
+           TextFragment textFragment2 = new TextFragment("rotated text");
+           textFragment2.setPosition(new Position(200, 600));
+           textFragment2.getTextState().setFontSize(12);
+           textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           textFragment2.getTextState().setRotation(45);
 
-        // Set text properties
-        textFragment1.getTextState().setFontSize(12);
-        textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           TextFragment textFragment3 = new TextFragment("rotated text");
+           textFragment3.setPosition(new Position(300, 600));
+           textFragment3.getTextState().setFontSize(12);
+           textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           textFragment3.getTextState().setRotation(90);
 
-        // Create rotated text fragment
-        TextFragment textFragment2 = new TextFragment("rotated text");
-        textFragment2.setPosition(new Position(200, 600));
-        // Set text properties
-        textFragment2.getTextState().setFontSize(12);
-        textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment2.getTextState().setRotation(45);
+           TextBuilder builder = new TextBuilder(page);
+           builder.appendText(textFragment1);
+           builder.appendText(textFragment2);
+           builder.appendText(textFragment3);
 
-        // Create rotated text fragment
-        TextFragment textFragment3 = new TextFragment("rotated text");
-        textFragment3.setPosition(new Position(300, 600));
-
-        // Set text properties
-        textFragment3.getTextState().setFontSize(12);
-        textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment3.getTextState().setRotation(90);
-
-        // create TextBuilder object
-        TextBuilder textBuilder = new TextBuilder(pdfPage);
-        // Append the text fragment to the PDF page
-        textBuilder.appendText(textFragment1);
-        textBuilder.appendText(textFragment2);
-        textBuilder.appendText(textFragment3);
-
-        // Save document
-        pdfDocument.save(_dataDir + "TextFragmentTests_Rotated1_out.pdf");
-    }
-}
+           document.save(outputFile.toString());
+       }
+   }
 ```
 
-## Implement Rotation using TextParagraph and TextBuilder (Rotated Fragments)
+## Rotate lines inside a text paragraph
+
+Use this example when a paragraph should contain both normal and rotated lines.
+
+1. Create a new PDF document and add a page.
+1. Create a `TextParagraph` and append text fragments with different rotation settings.
+1. Add the paragraph to the page and save the document.
 
 ```java
-public static void ImplementRotationUsingTextParagraphAndTextBuilder_RotatedFragments() {
-
-    // Initialize document object
-    Document pdfDocument = new Document();
-    // Get particular page
-    Page pdfPage = (Page) pdfDocument.getPages().add();
-    TextParagraph paragraph = new TextParagraph();
-    paragraph.setPosition(new Position(200, 600));
-    // Create text fragment
-    TextFragment textFragment1 = new TextFragment("rotated text");
-    // Set text properties
-    textFragment1.getTextState().setFontSize(12);
-    textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    // Set rotation
-    textFragment1.getTextState().setRotation(45);
-
-    // Create text fragment
-    TextFragment textFragment2 = new TextFragment("main text");
-    // Set text properties
-    textFragment2.getTextState().setFontSize(12);
-    textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // Create text fragment
-    TextFragment textFragment3 = new TextFragment("another rotated text");
-    // Set text properties
-    textFragment3.getTextState().setFontSize(12);
-    textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    // Set rotation
-    textFragment3.getTextState().setRotation(-45);
-
-    // Append the text fragments to the paragraph
-    paragraph.appendLine(textFragment1);
-    paragraph.appendLine(textFragment2);
-    paragraph.appendLine(textFragment3);
-    // Create TextBuilder object
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // Append the text paragraph to the PDF page
-    textBuilder.appendParagraph(paragraph);
-    // Save document
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated2_out.pdf");
-}
-```
-
-## Implement Rotation using TextFragment and Page.Paragraphs
-
-```java
-public static void ImplementRotationUsingTextFragmentAndPageParagraphs() {
-    // Initialize document object
-    Document pdfDocument = new Document();
-    // Get particular page
-    Page pdfPage = (Page) pdfDocument.getPages().add();
-    // Create text fragment
-    TextFragment textFragment1 = new TextFragment("main text");
-    // Set text properties
-    textFragment1.getTextState().setFontSize(12);
-    textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // Create text fragment
-    TextFragment textFragment2 = new TextFragment("rotated text");
-
-    // Set text properties
-    textFragment2.getTextState().setFontSize(12);
-    textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // Set rotation
-    textFragment2.getTextState().setRotation(315);
-
-    // Create text fragment
-    TextFragment textFragment3 = new TextFragment("rotated text");
-    // Set text properties
-    textFragment3.getTextState().setFontSize(12);
-    textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // Set rotation
-    textFragment3.getTextState().setRotation(270);
-    pdfPage.getParagraphs().add(textFragment1);
-    pdfPage.getParagraphs().add(textFragment2);
-    pdfPage.getParagraphs().add(textFragment3);
-
-    // Save document
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated3_out.pdf");
-}
-```
-
-## Implement Rotation using TextParagraph and TextBuilder (Whole Paragraph Rotated)
-
-```java
-public static void ImplementRotationUsingTextParagraphAndTextBuilder() {
-
-    // Initialize document object
-    Document pdfDocument = new Document();
-    // Get particular page
-    Page pdfPage = pdfDocument.getPages().add();
-    for (int i = 0; i < 4; i++) {
+public static void rotateTextInsidePdf2(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         TextParagraph paragraph = new TextParagraph();
         paragraph.setPosition(new Position(200, 600));
-        // Specify rotation
-        paragraph.setRotation(i * 90 + 45);
-        // Create text fragment
-        TextFragment textFragment1 = new TextFragment("Paragraph Text");
-        // Create text fragment
+
+        TextFragment textFragment1 = new TextFragment("rotated text");
         textFragment1.getTextState().setFontSize(12);
         textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment1.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment1.getTextState().setForegroundColor(Color.getBlue());
+        textFragment1.getTextState().setRotation(45);
 
-        // Create text fragment
-        TextFragment textFragment2 = new TextFragment("Second line of text");
-        // Set text properties
+        TextFragment textFragment2 = new TextFragment("main text");
         textFragment2.getTextState().setFontSize(12);
         textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment2.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment2.getTextState().setForegroundColor(Color.getBlue());
 
-        // Create text fragment
-        TextFragment textFragment3 = new TextFragment("And some more text...");
-        // Set text properties
+        TextFragment textFragment3 = new TextFragment("another rotated text");
         textFragment3.getTextState().setFontSize(12);
         textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment3.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment3.getTextState().setForegroundColor(Color.getBlue());
-        textFragment3.getTextState().setUnderline(true);
+        textFragment3.getTextState().setRotation(-45);
 
         paragraph.appendLine(textFragment1);
         paragraph.appendLine(textFragment2);
         paragraph.appendLine(textFragment3);
-        // Create TextBuilder object
-        TextBuilder textBuilder = new TextBuilder(pdfPage);
-        // Append the text fragment to the PDF page
+
+        TextBuilder textBuilder = new TextBuilder(page);
         textBuilder.appendParagraph(paragraph);
+
+        document.save(outputFile.toString());
     }
-    // Save document
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated4_out.pdf");
+}
+```
+
+## Rotate paragraph fragments without explicit positions
+
+Use this example when rotated text should be added through the normal page paragraph flow.
+
+1. Create a new PDF document and add a page.
+1. Create several text fragments with different rotation values.
+1. Add them to the page paragraph collection and save the PDF.
+
+```java
+public static void rotateTextInsidePdf3(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment1 = new TextFragment("main text");
+        textFragment1.getTextState().setFontSize(12);
+        textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+
+        TextFragment textFragment2 = new TextFragment("rotated text");
+        textFragment2.getTextState().setFontSize(12);
+        textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment2.getTextState().setRotation(315);
+
+        TextFragment textFragment3 = new TextFragment("rotated text");
+        textFragment3.getTextState().setFontSize(12);
+        textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment3.getTextState().setRotation(270);
+
+        page.getParagraphs().add(textFragment1);
+        page.getParagraphs().add(textFragment2);
+        page.getParagraphs().add(textFragment3);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Rotate complete paragraphs
+
+Use this example when the entire paragraph block should be rotated while each line keeps shared styling.
+
+1. Create a new PDF document and add a page.
+1. Build several `TextParagraph` objects with paragraph-level rotation.
+1. Create the lines with a shared helper method, append them, and save the document.
+
+```java
+public static void rotateTextInsidePdf4(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        for (int i = 0; i < 4; i++) {
+            TextParagraph paragraph = new TextParagraph();
+            paragraph.setPosition(new Position(200, 600));
+            paragraph.setRotation(i * 90 + 45);
+
+            TextFragment textFragment1 = rotatedLine("Paragraph Text", false);
+            TextFragment textFragment2 = rotatedLine("Second line of text", false);
+            TextFragment textFragment3 = rotatedLine("And some more text...", true);
+
+            paragraph.appendLine(textFragment1);
+            paragraph.appendLine(textFragment2);
+            paragraph.appendLine(textFragment3);
+
+            TextBuilder builder = new TextBuilder(page);
+            builder.appendParagraph(paragraph);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+
+private static TextFragment rotatedLine(String text, boolean underline) {
+    TextFragment fragment = new TextFragment(text);
+    fragment.getTextState().setFontSize(12);
+    fragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+    fragment.getTextState().setBackgroundColor(Color.getLightGray());
+    fragment.getTextState().setForegroundColor(Color.getBlue());
+    fragment.getTextState().setUnderline(underline);
+    return fragment;
 }
 ```

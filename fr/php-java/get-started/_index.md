@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /fr/php-java/get-started/
 description: Cette section décrit les principes de base du travail et de l'utilisation de l'API. Elle démontre également des exemples simples et complexes pour créer un document PDF
-lastmod: "2024-06-05"   
-sitemap: 
+lastmod: "2024-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

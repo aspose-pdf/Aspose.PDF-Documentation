@@ -1,20 +1,20 @@
 ---
-title: Navigation and Interaction 
+title: PDF Navigation and Interaction in Java
 linktitle: Navigation and interaction
 type: docs
 weight: 90
 url: /java/navigation-and-interaction/
-description: This section describes the features of work with links, actions and bookmarks.
-lastmod: "2025-02-17"
+description: Learn how to work with PDF links, actions, and bookmarks in Java for navigation and interactive document behavior.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
-    priority: 0.7
-TechArticle: true 
-AlternativeHeadline: Work with links, actions and bookmarks using Aspose.PDF for Java
-Abstract: This article provides a comprehensive guide on managing various interactive elements within PDF files using Java. It covers the creation, updating, and extraction of links, enabling efficient hyperlink management within PDFs. Additionally, the article explores methods to add, retrieve, and remove hyperlinks, as well as manage Document Open Actions and specify PDF page views. Furthermore, it discusses the use of bookmarks in large publications, explaining how they facilitate navigation through a document by allowing users to jump to specific pages or chapters via the Bookmarks Pane. The Pane is a dynamic feature that appears in the sidebar when a PDF contains a bookmark structure, enhancing the user experience by providing easy access to content.
-SoftwareApplication: java
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Work with links, actions, and bookmarks in PDF files using Java
+Abstract: This section explains how to manage navigation and interaction features in PDF documents with Aspose.PDF for Java. Learn how to create and update links, add interactive actions, and work with bookmarks to improve PDF navigation and document workflows.
 ---
+Aspose.PDF for Java includes APIs for bookmarks, links, and interactive actions. You can use these features to improve navigation inside a document, connect to external resources, and trigger behavior from user interaction.
 
-- [Links](/pdf/java/links/) - you can easily create, update and extract links with Java.
-- [Actions](/pdf/java/actions/) - it is possible to add and get, create  hyperlinks to PDF files. Also, in this article, you will learn how to remove Document Open Action from a PDF File and how to Specify PDF Page when Viewing Document.
-- [Bookmarks](/pdf/java/bookmarks/)- large publications usually include a framework of bookmarks that can be easily viewed and selected in the Bookmarks Pane, allowing you to click on a bookmark to jump to the page or chapter it represents. The Bookmarks Pane is a content-aware element, and is visible in the side-bar only if the open PDF document contains a bookmark structure.
+- [Work with PDF links](/java/links/)
+- [Work with PDF actions](/java/actions/)
+- [Work with PDF bookmarks](/java/bookmarks/)

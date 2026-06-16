@@ -1,5 +1,6 @@
 ---
 title: C++ via COM Interop
+linktitle: C++ via COM Interop
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

@@ -1,5 +1,5 @@
 ---
-title: استخراج الصور من PDF 
+title: استخراج الصور من PDF
 linktitle: استخراج الصور
 type: docs
 weight: 20

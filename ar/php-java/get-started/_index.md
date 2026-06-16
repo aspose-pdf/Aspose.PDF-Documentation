@@ -1,12 +1,12 @@
 ---
-title: ابدأ 
+title: ابدأ
 linktitle: ابدأ
 type: docs
 weight: 30
 url: /ar/php-java/get-started/
 description: يصف هذا القسم المبادئ الأساسية للعمل واستخدام API. كما يوضح أمثلة بسيطة ومعقدة لإنشاء مستند PDF
-lastmod: "2024-06-05"   
-sitemap: 
+lastmod: "2024-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

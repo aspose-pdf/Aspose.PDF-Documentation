@@ -1,14 +1,14 @@
 ---
-title: PDF에 워터마크 추가  
-linktitle: 워터마크 추가  
-type: docs  
-weight: 90  
-url: /ko/php-java/add-watermarks/  
-description: 이 문서는 PHP를 사용하여 PDF에서 아티팩트 작업 및 워터마크 얻기 기능을 설명합니다.  
-lastmod: "2024-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: PDF에 워터마크 추가
+linktitle: 워터마크 추가
+type: docs
+weight: 90
+url: /ko/php-java/add-watermarks/
+description: 이 문서는 PHP를 사용하여 PDF에서 아티팩트 작업 및 워터마크 얻기 기능을 설명합니다.
+lastmod: "2024-06-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF for PHP via Java**는 아티팩트를 사용하여 PDF 문서에 워터마크를 추가할 수 있습니다. 이 문서를 확인하여 작업을 해결하세요.

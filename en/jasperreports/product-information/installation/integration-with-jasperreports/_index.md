@@ -1,5 +1,6 @@
 ---
 title: Integration with JasperReports
+linktitle: Integration with JasperReports
 type: docs
 weight: 20
 url: /jasperreports/integration-with-jasperreports/

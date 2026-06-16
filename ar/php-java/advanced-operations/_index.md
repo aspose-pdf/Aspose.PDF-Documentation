@@ -1,10 +1,10 @@
 ---
-title: العمليات المتقدمة 
-linktitle: العمليات المتقدمة 
+title: العمليات المتقدمة
+linktitle: العمليات المتقدمة
 type: docs
 weight: 70
 url: /ar/php-java/advanced-operations/
-description: يمكنك القيام بالمهام البسيطة والسهلة فقط ولكن أيضًا التعامل مع الأهداف الأكثر تعقيدًا باستخدام Aspose.PDF لـ PHP عبر Java. 
+description: يمكنك القيام بالمهام البسيطة والسهلة فقط ولكن أيضًا التعامل مع الأهداف الأكثر تعقيدًا باستخدام Aspose.PDF لـ PHP عبر Java.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

@@ -7,13 +7,12 @@ weight: 20
 url: /java/
 description: Learn about Aspose.PDF for Java, a robust library for creating, editing, and converting PDF files in Java applications with exceptional performance.
 is_root: true
-lastmod: "2025-02-17"
+lastmod: "2026-06-09"
 TechArticle: true
-AlternativeHeadline: Documentation Pages of Aspose.PDF for Java 
-Abstract: The Aspose.PDF for Java documentation provides a comprehensive guide to working with PDF documents programmatically using the Java programming language. It covers many features, including PDF creation, manipulation, conversion, and data extraction. Developers can learn how to add and modify text, images, tables, annotations, and form fields within PDFs. The documentation also explains advanced functionalities such as digital signatures, encryption, and optimization for better performance. With detailed code examples and step-by-step instructions, users can efficiently integrate PDF processing capabilities into their Java applications for various document automation tasks.     
+AlternativeHeadline: Documentation Pages of Aspose.PDF for Java
+Abstract: The Aspose.PDF for Java documentation provides a comprehensive guide to working with PDF documents programmatically using the Java programming language. It covers many features, including PDF creation, manipulation, conversion, and data extraction. Developers can learn how to add and modify text, images, tables, annotations, and form fields within PDFs. The documentation also explains advanced functionalities such as digital signatures, encryption, and optimization for better performance. With detailed code examples and step-by-step instructions, users can efficiently integrate PDF processing capabilities into their Java applications for various document automation tasks.
 SoftwareApplication: java
 ---
-
 {{% alert color="primary" %}}
 
 ![Aspose.PDF for Java](aspose_pdf-for-java.png)
@@ -50,7 +49,7 @@ Following are the links to some useful resources you may need to accomplish your
 
 - [Aspose.PDF for Java Online Documentation](/pdf/java/)
 - [Aspose.PDF for Java Features](/pdf/java/key-features/)
-- [Aspose.PDF for Java Release Notes](https://releases.aspose.com/pdf/java/release-notes/)
+- [Aspose.PDF for JavaВ Release Notes](https://releases.aspose.com/pdf/java/release-notes/)
 - [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java)
 - [Aspose.PDF for Java Maven Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
 - [Download Aspose.PDF for Java](https://releases.aspose.com/pdf/java/)

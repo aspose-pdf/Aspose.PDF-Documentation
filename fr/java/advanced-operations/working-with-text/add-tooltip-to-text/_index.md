@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l'info-bulle 
+title: Utilisation de l'info-bulle
 linktitle: Info-bulle PDF
 type: docs
 weight: 20

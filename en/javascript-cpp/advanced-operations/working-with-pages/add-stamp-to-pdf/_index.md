@@ -1,5 +1,5 @@
 ---
-title: Add Image stamps in PDF using JavaScript via C++ 
+title: Add Image stamps in PDF using JavaScript via C++
 linktitle: Image stamps in PDF File
 type: docs
 weight: 60

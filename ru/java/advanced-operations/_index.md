@@ -1,10 +1,10 @@
 ---
-title: Advanced operations 
-linktitle: Advanced operations 
+title: Advanced operations
+linktitle: Advanced operations
 type: docs
 weight: 70
 url: /ru/java/advanced-operations/
-description: Вы можете выполнять не только простые и легкие задачи, но и справляться с более сложными целями с Aspose. PDF for Java. 
+description: Вы можете выполнять не только простые и легкие задачи, но и справляться с более сложными целями с Aspose. PDF for Java.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

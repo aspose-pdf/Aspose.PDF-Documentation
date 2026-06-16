@@ -1,5 +1,6 @@
 ---
-title: API Limitations 
+title: API Limitations
+linktitle: API Limitations
 type: docs
 weight: 70
 url: /sharepoint/api-limitations/

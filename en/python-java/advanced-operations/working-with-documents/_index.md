@@ -1,5 +1,6 @@
 ---
 title: Working with Documents in Python via Java
+linktitle: Working with Documents in Python via Java
 type: docs
 weight: 20
 url: /python-java/working-with-documents/

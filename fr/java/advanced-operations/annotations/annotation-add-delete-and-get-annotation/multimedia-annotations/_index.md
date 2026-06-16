@@ -1,5 +1,5 @@
 ---
-title: Annotation Multimédia PDF 
+title: Annotation Multimédia PDF
 linktitle: Annotation Multimédia
 type: docs
 weight: 40

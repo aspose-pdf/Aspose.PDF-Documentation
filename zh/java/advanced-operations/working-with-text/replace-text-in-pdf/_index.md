@@ -1,5 +1,5 @@
 ---
-title: 替换 PDF 中的文本 
+title: 替换 PDF 中的文本
 linktitle: 替换 PDF 中的文本
 type: docs
 weight: 40

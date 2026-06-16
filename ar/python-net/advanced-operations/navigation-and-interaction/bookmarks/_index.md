@@ -1,150 +1,29 @@
 ---
-title: العمل مع الإشارات المرجعية في PDF باستخدام Python
+title: العمل مع إشارات PDF المرجعية في Python
 linktitle: الإشارات المرجعية
 type: docs
 weight: 30
 url: /ar/python-net/bookmarks/
-description: يشرح هذا القسم كيفية إضافة وحذف والحصول على الإشارات المرجعية باستخدام Aspose.PDF لـ Python عبر .NET.
-lastmod: "2023-02-17"
+description: تعرف على كيفية إضافة إشارات PDF المرجعية وحذفها واستردادها وتحديثها وتوسيعها في Python.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية العمل مع الإشارات المرجعية في PDF باستخدام Python
+Abstract: تتناول المقالة أهمية وفائدة الإشارات المرجعية في مستندات PDF. تعمل الإشارات المرجعية على تحسين تجربة المستخدم من خلال تمكين التنقل الفعال والتنظيم والهيكلة لملفات PDF، مما يجعل الوصول إليها أكثر سهولة. وهي تعمل كروابط تفاعلية، مما يسمح للمستخدمين بالانتقال بسرعة إلى أقسام أو صفحات محددة، على غرار جدول المحتويات. توفر المقالة إرشادات حول إدارة الإشارات المرجعية، بما في ذلك كيفية إضافتها وحذفها والحصول عليها وتحديثها وتوسيعها، وبالتالي تمكين المستخدمين من إدارة محتوى PDF وعرضه بشكل فعال.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "العمل مع الإشارات المرجعية في PDF باستخدام Python",
-    "alternativeHeadline": "كيفية إضافة إشارات مرجعية في PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, python, الإشارات المرجعية في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/bookmarks/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/bookmarks/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يشرح هذا القسم كيفية إضافة وحذف والحصول على الإشارات المرجعية باستخدام Aspose.PDF لـ Python عبر .NET."
-}
-</script>
 
+يعد استخدام الإشارات المرجعية في PDF ميزة مفيدة. باستخدامهم، يمكنك إعداد التنقل على المستندات الخاصة بك، وتنظيم وتنظيم ملفات PDF، وجعل الوصول إلى هذه الملفات أكثر سهولة. وهي بمثابة روابط تفاعلية داخل المستند، مما يتيح للمستخدمين الانتقال بسرعة إلى أقسام أو صفحات محددة.
 
-استخدام العلامات المرجعية في PDF هو ميزة مفيدة جداً. معها، يمكنك إعداد التنقل في مستنداتك، وتنظيم وهيكلة ملفات PDF، وجعل هذه الملفات أكثر سهولة في الوصول. فهي تعمل كروابط تفاعلية في المستند، مما يسمح للمستخدمين بالتنقل بسرعة إلى أقسام أو صفحات محددة.
+تعد إشارات PDF المرجعية أداة مفيدة وأساسية لقراءة ملفات PDF. إنها تسمح للمستخدمين بالانتقال بسرعة إلى أماكن أخرى في مستند PDF، والتنقل عبر الصفحات، وعرض محتويات PDF بسرعة، تمامًا مثل جدول المحتويات.
 
-تعد العلامات المرجعية في PDF أداة مفيدة وأساسية عندما يتعلق الأمر بقراءة ملفات PDF. فهي تتيح للمستخدمين القفز بسرعة إلى أماكن أخرى في مستند PDF، والتنقل عبر الصفحات، ومشاهدة محتويات ملف PDF بسرعة، تماماً كما هو الحال في جدول المحتويات.
-في هذا القسم، سوف تتعلم كيفية:
+استخدم أدلة الإشارات المرجعية التالية عندما تحتاج إلى إنشاء تجربة التنقل بأسلوب جدول المحتويات أو فحص وتحديث شجرة الإشارات المرجعية الموجودة في PDF.
 
-- [إضافة وحذف علامة مرجعية](/pdf/ar/python-net/add-and-delete-bookmark/)
-- [الحصول على، تحديث وتوسيع علامة مرجعية](/pdf/ar/python-net/get-update-and-expand-bookmark/)
+## تمت تغطية مهام الإشارة المرجعية
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+في هذا القسم، ستتعلم كيفية:
+
+- [إضافة إشارة مرجعية وحذفها](/pdf/ar/python-net/add-and-delete-bookmark/)
+- [احصل على إشارة مرجعية وقم بتحديثها وتوسيعها](/pdf/ar/python-net/get-update-and-expand-bookmark/)
+- [نظرة عامة على التنقل والتفاعل](/pdf/ar/python-net/navigation-and-interaction/)

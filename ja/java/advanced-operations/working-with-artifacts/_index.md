@@ -1,5 +1,5 @@
 ---
-title: アーティファクトの操作 
+title: アーティファクトの操作
 linktitle: アーティファクトの操作
 type: docs
 weight: 110

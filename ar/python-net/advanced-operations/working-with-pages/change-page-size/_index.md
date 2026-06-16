@@ -1,172 +1,120 @@
 ---
-title: تغيير حجم صفحة PDF باستخدام Python
-linktitle: تغيير حجم صفحة PDF
+title: تغيير حجم صفحة PDF في بايثون
+linktitle: تغيير حجم الصفحة
 type: docs
-weight: 60
+weight: 40
 url: /ar/python-net/change-page-size/
-description: تغيير حجم الصفحة من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python عبر .NET.
-lastmod: "2023-04-17"
+description: تعرف على كيفية قراءة أبعاد صفحة PDF وتغييرها في Python.
+lastmod: "2026-06-11"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: تغيير حجم الصفحة باستخدام Python
+Abstract: توضح هذه المقالة كيفية قراءة وتعديل أبعاد صفحة PDF باستخدام Aspose.PDF. يقوم مثال Get Page Size باسترداد عرض وارتفاع صفحة PDF محددة، مما يتيح للمستخدمين فحص تخطيط الصفحة أو التحقق من التنسيق أو تحليل بنية المستند. يوضح مثال تعيين حجم الصفحة كيفية تغيير أبعاد الصفحة - مثل تحويل الصفحة الأولى إلى حجم A4 - مع عرض خصائص المربع أيضًا (CropBox، TrimBox، ArtBox، BleedBox، MediaBox) قبل التعديل وبعده.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "تغيير حجم صفحة PDF باستخدام Python",
-    "alternativeHeadline": "تغيير حجم صفحة PDF باستخدام Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, python, تغيير حجم pdf, تغيير حجم pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/change-page-size/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/change-page-size/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "تغيير حجم الصفحة من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python عبر .NET."
-}
-</script>
 
+يتيح لك Aspose.PDF لـ Python عبر .NET تغيير حجم صفحة PDF بخطوط بسيطة من التعليمات البرمجية. يوضح هذا الموضوع كيفية تحديث أبعاد الصفحة باستخدام [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) و [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) واجهات برمجة التطبيقات.
 
-## تغيير حجم صفحة PDF
+استخدم هذا الدليل عندما تحتاج إلى تغيير حجم صفحات PDF الموجودة أو تطبيع أبعاد المستند أو فحص إعدادات مربع الصفحة في Python.
 
-تتيح لك Aspose.PDF لـ Python عبر .NET تغيير حجم صفحة PDF بأسطر بسيطة من التعليمات البرمجية في تطبيقات Python الخاصة بك. يشرح هذا الموضوع كيفية تحديث/تغيير أبعاد الصفحة (الحجم) لملف PDF موجود.
+{{% alert color="primary" %}}
 
-تحتوي فئة [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) على طريقة [set_page_size()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) التي تتيح لك تعيين حجم الصفحة. يقوم مقتطف الكود أدناه بتحديث أبعاد الصفحة في بضع خطوات سهلة:
+يرجى ملاحظة أن خصائص الارتفاع والعرض تستخدم النقاط كوحدة أساسية، حيث 1 بوصة = 72 نقطة و 1 سم = 1/2.54 بوصة = 0.3937 بوصة = 28.3 نقطة.
 
-1. تحميل ملف PDF المصدر.
-2. الحصول على الصفحات في كائن [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-3. الحصول على صفحة معينة.
-4. استدعاء طريقة set_page_size() لتحديث أبعادها.
-5. استدعاء طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) لفئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) لإنشاء ملف PDF بالأبعاد المحدثة للصفحة.
+{{% /alert %}}
+
+## قم بتعيين حجم صفحة PDF إلى A4
+
+يقوم المثال بتحديث حجم الصفحة الأولى في وثيقة PDF إلى أبعاد A4 القياسية. يقوم أيضًا بطباعة أبعاد مربع الصفحة (CropBox و TrimBox و ArtBox و BleedBox و MediaBox) قبل تغيير الحجم وبعده حتى تتمكن من التحقق من التغييرات.
+
+يوضح مقتطف الشفرة التالي كيفية تغيير أبعاد صفحة PDF إلى حجم A4:
+
+1. الوصول إلى الأول [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) من ال [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. اعرض أحجام مربعات الصفحة قبل التعديل (كروب بوكس، تريمبوكس، أرتبوكس، بليدبوكس، ميديابوكس).
+1. قم بتطبيق أبعاد A4 (597.6 × 842.4 نقطة) باستخدام واجهة برمجة التطبيقات للصفحة.
+1. اعرض أحجام مربعات الصفحات المحدثة.
+1. احفظ التعديل [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) إلى مسار الإخراج المحدد.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    document = ap.Document(input_pdf)
-
-    # الحصول على صفحة معينة
+def set_page_size(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+    # Get particular page
     page = document.pages[1]
 
-    # تعيين حجم الصفحة كـ A4 (11.7 × 8.3 بوصة) وفي Aspose.Pdf، 1 بوصة = 72 نقطة
-    # لذلك أبعاد A4 بالنقاط ستكون (842.4, 597.6)
-    page.set_page_size(597.6, 842.4)
+    # Set the page size as A4 (8.3 x 11.7 in) and in Aspose.Pdf, 1 inch = 72 points
+    # So A4 dimensions in points will be (597.6, 842.4) for portrait orientation
+    print("Before set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
 
-    # حفظ المستند المحدث
-    document.save(output_pdf)
+    page.set_page_size(597.6, 842.4)
+    print("After set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
+
+    # Save the updated document
+    document.save(output_file_name)
 ```
 
+## احصل على حجم صفحة PDF
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+يقرأ هذا المقتطف ملف PDF ويسترجع أبعاد (العرض والارتفاع) للصفحة الأولى. وهي تستخدم [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API لاستخراج حدود الصفحة [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) ويطبع حجمه على وحدة التحكم. هذا مفيد لفحص تخطيط الصفحة أو التحقق من التنسيقات أو إعداد المستندات لمزيد من المعالجة.
+
+1. قم بتحميل ملف PDF كملف [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. الوصول إلى الأول [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. استرجع المستطيل المحيط بالصفحة باستخدام `get_page_rect()`.
+1. استخرج قيم العرض والارتفاع.
+1. اطبع أبعاد الصفحة.
+
+```python
+import aspose.pdf as ap
+
+def get_page_size(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+
+    # Get particular page
+    page = document.pages[1]
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
+
+### احصل على حجم صفحة PDF قبل التدوير وبعده
+
+استرجع أبعاد صفحة PDF قبل وبعد تطبيق دوران 90 درجة. يوضح هذا كيف يؤثر الدوران على العرض والارتفاع وكيفية الاستخدام. `get_page_rect()` مع أو بدون النظر في التناوب.
+
+1. افتح ملف PDF كملف [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. الوصول إلى الأول [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. قم بتطبيق دوران 90 درجة باستخدام `page.rotate = ap.Rotation.ON90` (راجع [`Rotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rotation/) التعداد).
+1. استرجع مستطيل الصفحة بدون تدوير باستخدام `get_page_rect(False)` وقم بطباعة عرضها وارتفاعها.
+1. استرجع مستطيل الصفحة مع مراعاة التدوير باستخدام `get_page_rect(True)` وقم بطباعة عرضها وارتفاعها.
+1. قارن كيف تتغير الأبعاد بسبب الدوران.
+
+```python
+import aspose.pdf as ap
+
+def get_page_size_rotation(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+    # Get particular page
+    page = document.pages[1]
+    page.rotate = ap.Rotation.ON90
+    rectangle = page.get_page_rect(False)
+    print(f"{rectangle.width} : {rectangle.height}")
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
+
+## موضوعات الصفحة ذات الصلة
+
+- [العمل مع صفحات PDF في بايثون](/pdf/ar/python-net/working-with-pages/)
+- [قص صفحات PDF في بايثون](/pdf/ar/python-net/crop-pages/)
+- [الحصول على خصائص صفحة PDF وتعيينها في Python](/pdf/ar/python-net/get-and-set-page-properties/)
+- [تدوير صفحات PDF في بايثون](/pdf/ar/python-net/rotate-pages/)

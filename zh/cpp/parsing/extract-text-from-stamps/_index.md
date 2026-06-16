@@ -1,5 +1,5 @@
 ---
-title: 从印章中提取文本 
+title: 从印章中提取文本
 linktitle: 从印章中提取文本
 type: docs
 weight: 60

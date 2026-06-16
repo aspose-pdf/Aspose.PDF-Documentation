@@ -1,5 +1,6 @@
 ---
-title: Customizing Field Appearance
+title: Customizing Field Appearance
+linktitle: Customizing Field Appearance
 type: docs
 weight: 30
 url: /python-net/customizing-field-appearance/

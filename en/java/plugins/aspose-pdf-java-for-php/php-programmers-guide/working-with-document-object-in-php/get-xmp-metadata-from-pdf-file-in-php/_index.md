@@ -1,12 +1,12 @@
 ---
 title: Get XMP Metadata from PDF File in PHP
+linktitle: Get XMP Metadata from PDF File in PHP
 type: docs
 weight: 50
 url: /java/get-xmp-metadata-from-pdf-file-in-php/
 description: Learn how to extract XMP metadata from PDF documents in PHP using Aspose.PDF for advanced content analysis.
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Get XMP Metadata
 
 To get XMP Metadata from Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetXMPMetadata** class.
@@ -27,6 +27,6 @@ print "xmp:CustomProperty: " + $doc->getMetadata()->get_Item("xmp:CustomProperty
 
 **Download Running Code**
 
-Download **Get XMP Metadata (Aspose.PDF)** from any of the below mentioned social coding sites:
+DownloadВ **Get XMP Metadata (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetXMPMetadata.php)

@@ -1,5 +1,6 @@
 ---
-title: Annotations
+title: Annotations
+linktitle: Annotations
 type: docs
 weight: 10
 url: /python-net/annotations-facades/

@@ -1,6 +1,6 @@
 ---
-title: Convertir un fichier PDF en d'autres formats 
-linktitle: Convertir PDF en d'autres formats 
+title: Convertir un fichier PDF en d'autres formats
+linktitle: Convertir PDF en d'autres formats
 type: docs
 weight: 90
 url: /fr/java/convert-pdf-to-other-files/

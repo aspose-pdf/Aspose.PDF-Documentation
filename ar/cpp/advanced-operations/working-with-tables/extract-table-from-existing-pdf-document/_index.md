@@ -1,5 +1,5 @@
 ---
-title: استخراج جدول من PDF 
+title: استخراج جدول من PDF
 linktitle: استخراج جدول
 type: docs
 weight: 20

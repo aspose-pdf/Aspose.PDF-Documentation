@@ -1,5 +1,5 @@
 ---
-title: Работа с AcroForms в PDF 
+title: Работа с AcroForms в PDF
 linktitle: AcroForms
 type: docs
 weight: 10

@@ -1,5 +1,5 @@
 ---
-title: Delete PDF Pages with JavaScript via C++ 
+title: Delete PDF Pages with JavaScript via C++
 linktitle: Delete PDF Pages
 type: docs
 weight: 30

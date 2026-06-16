@@ -1,195 +1,75 @@
 ---
-title: 既存のPDFからテーブルを削除する
+title: 既存の PDF ドキュメントから表を削除
 linktitle: テーブルを削除
+description: Python で既存の PDF ドキュメントから 1 つまたは複数のテーブルを削除する方法を学びます。
+lastmod: "2026-06-09"
 type: docs
 weight: 50
-url: /ja/python-net/remove-tables-from-existing-pdf/
-lastmod: "2023-02-17"
+url: /ja/python-net/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF ファイルから 1 つまたは複数のテーブルを削除する
+Abstract: この記事では、.NET 経由で Aspose.PDF for Python を使用して既存の PDF ドキュメントからテーブルを削除する方法について説明します。テーブルを検索するための「TableAmsorber」を紹介し、1 つのテーブルを削除する方法、または検出されたすべてのテーブルをページから削除する方法を示します。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "既存のPDFからテーブルを削除する",
-    "alternativeHeadline": "PDFからテーブルを削除する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdfドキュメント生成",
-    "keywords": "pdf, python, テーブル削除, テーブルを削除する",
-    "wordcount": "302",
-    "proficiencyLevel":"初級者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/remove-tables-from-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/remove-tables-from-existing-pdf/"
-    },
-    "dateModified": "2023-02-04",
-    "description": ""
-}
-</script>
 
+## PDF ドキュメントから表を削除
 
-{{% alert color="primary" %}}
+Python 用 Aspose.PDF では、PDF からテーブルを削除できます。既存の PDF を開き、最初のページにある最初の表を検出します。 `TableAbsorber`、を使用してそのテーブルを削除します `remove()`そして、更新された PDF を新しいファイルに保存します。
 
-Aspose.PDF for Python via .NETは、PDFドキュメントが最初から生成される際に、ドキュメント内にテーブルを挿入または作成する機能を提供します。また、既存のPDFドキュメントにテーブルオブジェクトを追加することもできます。ただし、既存のテーブルセルの内容を更新できる[既存のPDF内のテーブルを操作する](https://docs.aspose.com/pdf/python-net/manipulate-tables-in-existing-pdf/)必要があるかもしれません。しかし、既存のPDFドキュメントからテーブルオブジェクトを削除する必要がある場合もあります。
-
-{{% /alert %}}
-
-テーブルを削除するためには、既存のPDF内のテーブルを取得するために[TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/)クラスを使用し、それから[remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods)を呼び出す必要があります。
-
-## PDFドキュメントからテーブルを削除
-
-新しい関数を追加しました。すなわち、
- [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods) を既存の [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) クラスに追加して、PDF ドキュメントからテーブルを削除します。アブソーバーがページ上でテーブルを正常に検出すると、それらを削除できるようになります。以下のコードスニペットを確認して、PDF ドキュメントからテーブルを削除する方法を示します。
+このページは、表形式の多いPDFをクリーンアップしたり、古い表形式のコンテンツを削除したり、再配布する前に文書を簡略化したりする必要がある場合に使用します。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_one_table(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # 既存のPDFドキュメントを読み込む
-    pdf_document = ap.Document(input_file)
-    # テーブルを見つけるためにTableAbsorberオブジェクトを作成する
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # アブソーバーで最初のページを訪問する
-    absorber.visit(pdf_document.pages[1])
-    # ページ上の最初のテーブルを取得する
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    # Get first table on the page
     table = absorber.table_list[0]
-    # テーブルを削除する
+    # Remove the table
     absorber.remove(table)
-    # PDFを保存する
-    pdf_document.save(output_file)
+    # Save PDF
+    document.save(outfile)
 ```
 
-## PDF ドキュメントから複数のテーブルを削除する
+## PDF ドキュメントからすべてのテーブルを削除
 
-時々、PDF ドキュメントには複数のテーブルが含まれていることがあり、それらを削除する必要が出てくることがあります。 複数のテーブルをPDFドキュメントから削除するためには、以下のコードスニペットを使用してください：
+ライブラリを使用すると、PDFの特定のページからすべての表を削除できます。このコードは既存の PDF を開き、2 ページ目にあるすべての表を TableAbsorber で検出し、検出された表を繰り返し処理して各表を削除し、変更した PDF を新しいファイルに保存します。PDF コンテンツの残りはそのまま残したまま、ページから表を一括削除する必要がある場合に便利です。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def remove_all_tables(infile: str, outfile: str) -> None:
+    # Load existing PDF document
+    document = ap.Document(infile)
 
-    # 既存のPDFドキュメントを読み込む
-    pdf_document = ap.Document(input_file)
-    # テーブルを見つけるためのTableAbsorberオブジェクトを作成
+    # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
-    # アブソーバーで2ページ目を訪問
-    absorber.visit(pdf_document.pages[1])
-    # テーブルコレクションのコピーを取得
-    tables = absorber.table_list
-    # コレクションのコピーをループし、テーブルを削除
+    # Visit first page with absorber
+    absorber.visit(document.pages[1])
+    #  Loop through the copy of collection and removing tables
+    tables = list(absorber.table_list)
     for table in tables:
         absorber.remove(table)
-    # ドキュメントを保存
-    pdf_document.save(output_file)
+
+    # Save document
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 関連テーブルトピック
+
+- [Python を使用して PDF 内のテーブルを操作する](/pdf/ja/python-net/working-with-tables/)
+- [Python を使用して PDF にテーブルを追加します](/pdf/ja/python-net/adding-tables/)
+- [PDF 文書から表を抽出](/pdf/ja/python-net/extracting-table/)
+- [既存の PDF 内の表を操作](/pdf/ja/python-net/manipulating-tables/)

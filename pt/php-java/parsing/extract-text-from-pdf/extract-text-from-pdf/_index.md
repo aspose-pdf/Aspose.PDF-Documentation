@@ -1,5 +1,5 @@
 ---
-title: Extraindo texto bruto de arquivo PDF 
+title: Extraindo texto bruto de arquivo PDF
 linktitle: Extrair texto de PDF
 type: docs
 weight: 10
