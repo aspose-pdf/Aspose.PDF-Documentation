@@ -4,9 +4,9 @@ linktitle: Working with Pages in PHP
 type: docs
 weight: 30
 url: /java/working-with-pages-in-php/
+description: Learn how to add, retrieve, update, and manage PDF pages in PHP using Aspose.PDF for effective document control.
 lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Concatenate PDF Files in PHP](/pdf/java/concatenate-pdf-files-in-php/)

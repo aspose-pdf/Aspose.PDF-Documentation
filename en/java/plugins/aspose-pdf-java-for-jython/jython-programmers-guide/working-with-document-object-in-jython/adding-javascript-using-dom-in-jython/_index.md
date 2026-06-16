@@ -7,7 +7,6 @@ url: /java/adding-javascript-using-dom-in-jython/
 description: Learn how to add JavaScript to a PDF document using the DOM in Jython, enhancing interactivity within the document.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Add Javascript
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

@@ -10,8 +10,6 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
-
 ## Articles in this section
 
 - [Aspose.PDF Java for Struts 1.3](/pdf/java/aspose-pdf-java-for-struts-1-3/)

@@ -7,7 +7,6 @@ url: /java/get-document-window-and-page-display-properties-in-php/
 description: Learn how to access document window and page display properties of a PDF file in PHP using Aspose.PDF.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Get Document Window and Page Display Properties
 
 To Get Document Window and Page Display Properties of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetDocumentWindow** class.

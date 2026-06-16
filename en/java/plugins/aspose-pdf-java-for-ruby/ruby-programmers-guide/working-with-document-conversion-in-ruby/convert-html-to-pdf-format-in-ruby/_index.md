@@ -7,7 +7,6 @@ url: /java/convert-html-to-pdf-format-in-ruby/
 description: Learn how to convert HTML content to PDF format in Ruby using Aspose.PDF for reliable and accurate document generation.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Convert HTML to PDF Format
 
 To convert HTML to PDF format using **Aspose.PDF Java for Ruby**, simply invoke **HtmlToPdf** module.
@@ -15,7 +14,6 @@ To convert HTML to PDF format using **Aspose.PDF Java for Ruby**, simply invoke 
 Ruby Code
 
 ```java
-
 # The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'

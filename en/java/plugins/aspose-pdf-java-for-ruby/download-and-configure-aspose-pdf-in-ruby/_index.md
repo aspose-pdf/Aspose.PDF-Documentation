@@ -7,7 +7,6 @@ url: /java/download-and-configure-aspose-pdf-in-ruby/
 description: Get started with Aspose.PDF in Ruby by downloading and configuring the library for seamless PDF management.
 lastmod: "2026-06-09"
 ---
-
 ## Download Required Libraries
 
 Download required libraries mentioned below. These are the required for executing Aspose.PDF Java for Ruby examples.

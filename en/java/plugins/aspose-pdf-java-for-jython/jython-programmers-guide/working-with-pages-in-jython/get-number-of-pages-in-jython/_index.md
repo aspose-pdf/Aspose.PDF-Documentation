@@ -7,7 +7,6 @@ url: /java/get-number-of-pages-in-jython/
 description: Learn how to obtain the number of pages in a PDF document using Jython and Aspose.PDF for document management.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Get Number Of Pages
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

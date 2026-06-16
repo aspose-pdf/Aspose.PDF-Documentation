@@ -7,7 +7,6 @@ url: /java/optimize-pdf-document-for-the-web-in-ruby/
 description: Streamline PDFs for faster web delivery and reduced file size using Aspose.PDF in Ruby.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Optimize PDF for Web
 
 To optimize PDF document for the web using **Aspose.PDF Java for Ruby**, simply invoke **optimize_web** method ofВ  **Optimize** module.

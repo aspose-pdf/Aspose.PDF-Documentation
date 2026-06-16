@@ -7,7 +7,6 @@ url: /java/split-pdf-file-into-individual-pages-in-jython/
 description: Learn how to split a PDF document into individual pages using Jython and Aspose.PDF for better document management.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Split All Pages
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

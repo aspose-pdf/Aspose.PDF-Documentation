@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Overview of basic operations with PDF using Java
 Abstract: This article provides an overview of basic PDF operations in Java using Aspose.PDF. It covers creating new documents, opening PDFs from files or streams, saving documents to files and streams, merging and splitting PDF files, and protecting documents with passwords and permissions.
 ---
-
 **Basic operations** section describes the first and simplest PDF tasks you can perform with Aspose.PDF for Java:
 
 - [Create PDF Document](/pdf/java/create-document/) - create a new PDF document programmatically in Java.

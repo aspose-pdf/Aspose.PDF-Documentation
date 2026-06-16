@@ -7,7 +7,6 @@ url: /java/convert-pdf-to-excel-workbook-in-ruby/
 description: Understand how to convert PDF data into Excel workbooks using Ruby with Aspose.PDF, simplifying data extraction and analysis.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Convert PDF to Excel Workbook
 
 To convert PDF document to Excel Workbook using **Aspose.PDF Java for Ruby**, simply invoke **PdfToExcel** module.
@@ -15,7 +14,6 @@ To convert PDF document to Excel Workbook using **Aspose.PDF Java for Ruby**, si
 Ruby Code
 
 ```java
-
 # The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'

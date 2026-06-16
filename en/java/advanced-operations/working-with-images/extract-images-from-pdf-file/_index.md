@@ -60,4 +60,3 @@ public static void extractImageFromSpecificRegion(Path inputFile, Path outputFil
     }
 }
 ```
-

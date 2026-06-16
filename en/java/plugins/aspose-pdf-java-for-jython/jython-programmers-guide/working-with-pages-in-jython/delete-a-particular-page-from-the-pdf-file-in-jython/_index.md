@@ -7,7 +7,6 @@ url: /java/delete-a-particular-page-from-the-pdf-file-in-jython/
 description: Explore how to delete a specific page from a PDF document using Jython and Aspose.PDF, allowing for efficient editing.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Delete Page
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

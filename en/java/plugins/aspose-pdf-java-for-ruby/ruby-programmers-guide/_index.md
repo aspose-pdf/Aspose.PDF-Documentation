@@ -7,7 +7,6 @@ url: /java/ruby-programmers-guide/
 description: Comprehensive guide for Ruby developers to use Aspose.PDF for creating, editing, and managing PDF documents.
 lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Working with Document Object in Ruby](/pdf/java/working-with-document-object-in-ruby/)

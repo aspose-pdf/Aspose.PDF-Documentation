@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Counting Artifacts in PDF using Java
 Abstract: This article explains how to inspect and count pagination artifacts in PDF documents using Aspose.PDF for Java. It shows how to iterate through page artifacts and count watermark, background, header, and footer subtypes.
 ---
-
 ## Count pagination artifacts on a page
 
 Use this example when you need a quick count of the main pagination artifact subtypes on a page.

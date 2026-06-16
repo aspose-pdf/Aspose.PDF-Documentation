@@ -14,5 +14,3 @@ The current Java `PdfContentEditorExamples` class directly supports:
 
 - `addRubberStamp(...)`
 - `listStamps(...)`
-
-

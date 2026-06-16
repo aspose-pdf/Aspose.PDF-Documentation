@@ -7,7 +7,6 @@ url: /java/get-a-particular-page-in-a-pdf-file-in-python/
 description: Explore how to extract a particular page from a PDF file in Python using Aspose.PDF for detailed document handling.
 lastmod: "2026-06-09"
 ---
-
 To get a Particular Page in a PDF document using **Aspose.PDF Java for Python**, simply invoke **GetPage** class.
 
 ```python
@@ -36,4 +35,3 @@ print "Process completed successfully!
 Download **Get Page (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose.PDF-for-Java_for_Python/test/WorkingWithPages/GetPage/GetPage.py)
-

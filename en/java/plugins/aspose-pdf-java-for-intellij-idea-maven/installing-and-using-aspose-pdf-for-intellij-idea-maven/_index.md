@@ -7,7 +7,6 @@ url: /java/installing-and-using-aspose-pdf-for-intellij-idea-maven/
 description: Discover the steps to install and configure Aspose.PDF for IntelliJ IDEA with Maven for efficient PDF document processing in Java.
 lastmod: "2026-06-09"
 ---
-
 ## Installing
 
 ### How to Install Aspose.PDF Java for IntelliJ IDEA (Maven)
@@ -59,7 +58,6 @@ for your maven project and click Next.
 5. You can select "Also Download Examples Source Code" checkbox to download the sample usage examples of the API (as shown in above snapshot)
 
 6. Provide a **Project Name** and **Location** just like when creating any Java application
-
 
 ![todo:image_alt_text](https://i.imgur.com/8VEeFun.jpg)
 

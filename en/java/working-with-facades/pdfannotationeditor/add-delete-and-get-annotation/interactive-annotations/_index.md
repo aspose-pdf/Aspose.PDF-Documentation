@@ -33,4 +33,3 @@ public static void linkAdd(Path inputFile, Path outputFile) {
     }
 }
 ```
-

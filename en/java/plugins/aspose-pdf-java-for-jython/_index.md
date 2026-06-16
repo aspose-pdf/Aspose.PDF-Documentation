@@ -7,7 +7,6 @@ url: /java/aspose-pdf-java-for-jython/
 description: Combine the power of Aspose.PDF for Java with Jython. Effortlessly manipulate PDF files in a Python-based Java environment.
 lastmod: "2026-06-09"
 ---
-
 ## Introduction
 
 ### What is Jython?
@@ -77,7 +76,6 @@ class PdfToDoc:
     def __init__(self):
         dataDir = Settings.dataDir + 'WorkingWithDocumentConversion/PdfToDoc/'
 
-
         # Open the target document
         pdf = Document(dataDir + 'input1.pdf')
 
@@ -86,8 +84,7 @@ class PdfToDoc:
 
         print "Document has been converted successfully"
 
-
-if __name__ == '__main__':       
+if __name__ == '__main__':
 
     PdfToDoc()
 ```

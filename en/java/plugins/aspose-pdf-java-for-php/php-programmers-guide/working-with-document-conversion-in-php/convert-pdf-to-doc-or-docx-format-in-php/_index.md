@@ -7,7 +7,6 @@ url: /java/convert-pdf-to-doc-or-docx-format-in-php/
 description: Learn how to convert PDF documents into DOC or DOCX formats in PHP using Aspose.PDF for easier document editing.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Convert PDF to DOC or DOCX
 
 To convert PDF document to DOC or DOCX format using **Aspose.PDF Java for PHP**, simply invoke **PdfToDoc** module.

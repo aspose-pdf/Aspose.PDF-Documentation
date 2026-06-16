@@ -7,7 +7,6 @@ url: /java/php-programmers-guide/
 description: Discover the PHP Programmer's Guide for Aspose.PDF, offering a step-by-step approach to managing PDF documents in PHP.
 lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Working with Document Conversion in PHP](/pdf/java/working-with-document-conversion-in-php/)

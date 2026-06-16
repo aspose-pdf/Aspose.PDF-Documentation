@@ -4,9 +4,9 @@ linktitle: Convert PDF to SVG Format in Python
 type: docs
 weight: 30
 url: /java/convert-pdf-to-svg-format-in-python/
+description: Learn how to convert PDF documents to SVG format in Python using Aspose.PDF for scalable vector output.
 lastmod: "2026-06-09"
 ---
-
 To convert PDF to SVG format using **Aspose.PDF Java for Python**, simply invoke **PdfToSvg** module.
 
 ```python
@@ -33,4 +33,3 @@ print "Document has been converted successfully"
 DownloadВ **Convert PDF to SVG Format (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToSvg/PdfToSvg.py)
-

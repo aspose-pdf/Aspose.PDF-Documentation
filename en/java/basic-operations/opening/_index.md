@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Opening PDF documents using the Aspose.PDF library in Java
 Abstract: This article shows how to open existing PDF documents in Java using Aspose.PDF. It covers opening a PDF by file path, opening a PDF from an InputStream, and opening a password-protected document, with each example reading the page count from the loaded document.
 ---
-
 Aspose.PDF for Java supports several ways to load an existing PDF document depending on where the source data comes from.
 
 ## Open a PDF document in Java

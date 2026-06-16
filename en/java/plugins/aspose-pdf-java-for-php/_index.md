@@ -7,7 +7,6 @@ url: /java/aspose-pdf-java-for-php/
 description: Learn how to integrate Aspose.PDF for Java into PHP projects. Unlock advanced PDF functionality for your web applications.
 lastmod: "2026-06-09"
 ---
-
 ## Introduction to Aspose.PDF Java for PHP
 
 ### PHP / Java Bridge
@@ -96,7 +95,6 @@ Unzip the PHP/JavaBridge binaries by issuing the following command on linux cons
 
 {{< /highlight >}}
 
-
 This will extractВ **JavaBridge.war**В file. Copy it to tomcat88В **webapps**В folder by issuing the following command on Linux console.
 
 {{< highlight actionscript3 >}}
@@ -115,12 +113,11 @@ If any error message appears then installВ  **FastCGI**В by issuing the foll
 
 {{< /highlight >}}
 
-
 IfВ **JAVA_HOME**В error is displayed, then open /etc/default/tomcat8 file and uncomment the line that sets the JAVA_HOME.
 
 ### 3. Configure Aspose.PDF Java for PHP Examples
 
-Clone, PHP examples by issuing the following commands inside webapps/JavaBridge folder.В 
+Clone, PHP examples by issuing the following commands inside webapps/JavaBridge folder.В
 
 {{< highlight actionscript3 >}}
 
