@@ -41,7 +41,7 @@ void ExampleEllipse() {
 
     graph->get_Shapes()->Add(ellipse2);
 
-    // Tambahkan objek Graph ke koleksi paragraf halaman
+    // Tambahkan objek Graph ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(graph);
 
     // Simpan file PDF
@@ -80,7 +80,7 @@ void ExampleFilledEllipse() {
     ellipse2->get_GraphInfo()->set_FillColor(Color::get_DarkRed());
     graph->get_Shapes()->Add(ellipse2);
 
-    // Tambahkan objek Gambar ke koleksi paragraf dari halaman
+    // Tambahkan objek Gambar ke koleksi `paragraphs` dari halaman
     page->get_Paragraphs()->Add(graph);
 
     // Simpan file PDF
@@ -126,7 +126,7 @@ void ExampleEllipseWithText() {
     ellipse2->set_Text(textFragment);
     graph->get_Shapes()->Add(ellipse2);
 
-    // Tambahkan objek Gambar ke koleksi paragraf halaman
+    // Tambahkan objek Gambar ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(graph);
 
     // Simpan file PDF

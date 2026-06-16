@@ -45,7 +45,7 @@ com.aspose.pdf.Page page = pdfDocument.getPages().add();
 
 Table table = new Table();
 
-//Tambahkan tabel dalam koleksi paragraf dari halaman yang diinginkan
+//Tambahkan tabel dalam koleksi `paragraphs` dari halaman yang diinginkan
 
 page.getParagraphs().add(table);
 

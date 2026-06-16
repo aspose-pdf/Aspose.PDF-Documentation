@@ -59,7 +59,7 @@ public static void GetPageCountWithoutSavingTheDocument() {
         Page page = doc.getPages().add();
         // buat loop untuk menambahkan 300 instance TextFragment
         for (int i = 0; i < 300; i++)
-            // tambahkan TextFragment ke koleksi paragraf halaman pertama PDF
+            // tambahkan TextFragment ke koleksi `paragraphs` halaman pertama PDF
             page.getParagraphs().add(new TextFragment("Uji jumlah halaman"));
         // proses paragraf untuk mendapatkan informasi jumlah halaman
         doc.processParagraphs();

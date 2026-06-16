@@ -17,13 +17,13 @@ Aspose.PDF untuk Java mendukung fitur untuk menambahkan objek grafis (misalnya g
 
 Ikuti langkah-langkah berikut:
 
-1. Buat instance [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+1. Buat instance [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
 
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) ke koleksi halaman dari file PDF.
+1. Tambahkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) ke koleksi halaman dari file PDF.
 
 1. Buat instance [Grafik](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph).
 
-1. Tambahkan objek Grafik ke koleksi paragraf dari instance halaman.
+1. Tambahkan objek Grafik ke koleksi `paragraphs` dari instance halaman.
 
 1. Buat instance [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle).
 
@@ -44,7 +44,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://ref
         // Buat instance Graph
         Graph graph = new Graph(100, 400);
 
-        // Tambahkan objek grafik ke koleksi paragraf dari instance halaman
+        // Tambahkan objek grafik ke koleksi `paragraphs` dari instance halaman
         page.getParagraphs().add(graph);
 
         // Buat instance Rectangle
@@ -74,7 +74,7 @@ public static void ExampleDashedLine() {
 
         // Buat objek Gambar dengan dimensi tertentu
         Graph canvas = new Graph(100, 400);
-        // Tambahkan objek gambar ke koleksi paragraf dari instance halaman
+        // Tambahkan objek gambar ke koleksi `paragraphs` dari instance halaman
         page.getParagraphs().add(canvas);
 
         // Buat objek Garis
@@ -132,7 +132,7 @@ Silakan lihat potongan kode berikut untuk memenuhi persyaratan ini.
 
         // Menambahkan garis ke koleksi shapes dari objek Graph
         graph.getShapes().add(line2);
-        // Menambahkan objek Graph ke koleksi paragraf dari halaman
+        // Menambahkan objek Graph ke koleksi `paragraphs` dari halaman
         page.getParagraphs().add(graph);
 
         // Menyimpan file PDF

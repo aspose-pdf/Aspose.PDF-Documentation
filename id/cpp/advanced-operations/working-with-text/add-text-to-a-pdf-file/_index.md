@@ -191,7 +191,7 @@ void AddHyperlinkToTextSegment() {
     // Tambahkan segment ke koleksi segment dari TextFragment
     tf->get_Segments()->Add(segment);
 
-    // Tambahkan TextFragment ke koleksi paragraf dari objek halaman
+    // Tambahkan TextFragment ke koleksi `paragraphs` dari objek halaman
     page1->get_Paragraphs()->Add(tf);
 
     // Simpan dokumen PDF yang dihasilkan.
@@ -224,7 +224,7 @@ void UseOTFFont() {
     // Tentukan untuk menyematkan font di dalam file PDF, sehingga ditampilkan dengan benar,
     // Meskipun font tertentu tidak terinstal/ada di mesin target
     fragment->get_TextState()->get_Font()->set_IsEmbedded(true);
-    // Tambahkan TextFragment ke koleksi paragraf dari instansi Page
+    // Tambahkan TextFragment ke koleksi `paragraphs` dari instansi Page
     page->get_Paragraphs()->Add(fragment);
     // Simpan dokumen PDF yang dihasilkan.
     document->Save(_dataDir + outputFileName);
@@ -235,7 +235,7 @@ void UseOTFFont() {
 
 Kelas Aspose.Pdf.Generator.Text mengandung properti bernama IsHtmlTagSupported yang memungkinkan untuk menambahkan tag/konten HTML ke dalam file PDF. Konten yang ditambahkan dirender dalam tag HTML asli alih-alih muncul sebagai string teks sederhana. Untuk mendukung fitur serupa dalam Model Objek Dokumen (DOM) baru dari namespace Aspose.Pdf, kelas HtmlFragment telah diperkenalkan.
 
-Instans [HtmlFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.html_fragment) dapat digunakan untuk menentukan konten HTML yang harus ditempatkan di dalam file PDF. Mirip dengan TextFragment, HtmlFragment adalah objek tingkat paragraf dan dapat ditambahkan ke koleksi paragraf objek Page. Cuplikan kode berikut menunjukkan langkah-langkah untuk menempatkan konten HTML di dalam file PDF menggunakan pendekatan DOM.
+Instans [HtmlFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.html_fragment) dapat digunakan untuk menentukan konten HTML yang harus ditempatkan di dalam file PDF. Mirip dengan TextFragment, HtmlFragment adalah objek tingkat paragraf dan dapat ditambahkan ke koleksi `paragraphs` objek Page. Cuplikan kode berikut menunjukkan langkah-langkah untuk menempatkan konten HTML di dalam file PDF menggunakan pendekatan DOM.
 
 ```cpp
 void AddingHtmlString() {
@@ -264,7 +264,7 @@ void AddingHtmlString() {
     // Tetapkan informasi margin
     title->set_Margin(margin);
 
-    // Tambahkan HTML Fragment ke koleksi paragraf halaman
+    // Tambahkan HTML Fragment ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(title);
     // Simpan file PDF
     document->Save(_dataDir + outputFileName);
@@ -324,7 +324,7 @@ void AddHTMLStringFormatting() {
     textState->set_BackgroundColor(Color::get_Coral());
     title->set_TextState(textState);
 
-    // Tambahkan Fragmen HTML ke koleksi paragraf halaman
+    // Tambahkan Fragmen HTML ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(title);
     // Simpan file PDF
     document->Save(_dataDir + outputFileName);
@@ -358,7 +358,7 @@ void AddHTMLUsingDOMAndOverwrite() {
     title->get_Margin()->set_Bottom(10);
     // Atur informasi margin atas
     title->get_Margin()->set_Top(400);
-    // Tambahkan Fragmen HTML ke koleksi paragraf halaman
+    // Tambahkan Fragmen HTML ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(title);
     // Simpan file PDF
     document->Save(_dataDir + outputFileName);
@@ -385,7 +385,7 @@ Ikuti langkah-langkah berikut:
 
 - Buat objek [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment)
 - Buat instance Catatan dan berikan nilainya ke properti TextFragment [FootNote](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#abe1663009fbceed84a0a392527463219)
-- Tambahkan TextFragment ke koleksi paragraf dari sebuah instance halaman
+- Tambahkan TextFragment ke koleksi `paragraphs` dari sebuah instance halaman
 
 ```cpp
 void AddFootNote() {
@@ -414,13 +414,13 @@ void AddFootNote() {
     auto text = MakeObject<TextFragment>("Hello World");
     // atur nilai FootNote untuk TextFragment
     text->set_FootNote(MakeObject<Note>("catatan kaki untuk teks uji 1"));
-    // tambahkan TextFragment ke koleksi paragraf dari halaman pertama dokumen
+    // tambahkan TextFragment ke koleksi `paragraphs` dari halaman pertama dokumen
     page->get_Paragraphs()->Add(text);
     // buat TextFragment kedua
     text = MakeObject<TextFragment>("Aspose.Pdf for Java");
     // atur FootNote untuk fragmen teks kedua
     text->set_FootNote(MakeObject<Note>("catatan kaki untuk teks uji 2"));
-    // tambahkan fragmen teks kedua ke koleksi paragraf dari file PDF
+    // tambahkan fragmen teks kedua ke koleksi `paragraphs` dari file PDF
     page->get_Paragraphs()->Add(text);
 
     document->Save(_dataDir + outputFileName);
@@ -462,13 +462,13 @@ void CustomFootNote_Line() {
     auto text = MakeObject<TextFragment>("Hello World");
     // atur nilai Catatan Kaki untuk TextFragment
     text->set_FootNote(MakeObject<Note>("catatan kaki untuk teks uji 1"));
-    // tambahkan TextFragment ke koleksi paragraf halaman pertama dokumen
+    // tambahkan TextFragment ke koleksi `paragraphs` halaman pertama dokumen
     page->get_Paragraphs()->Add(text);
     // buat TextFragment kedua
     text = MakeObject<TextFragment>("Aspose.Pdf untuk Java");
     // atur Catatan Kaki untuk fragmen teks kedua
     text->set_FootNote(MakeObject<Note>("catatan kaki untuk teks uji 2"));
-    // tambahkan fragmen teks kedua ke koleksi paragraf file PDF
+    // tambahkan fragmen teks kedua ke koleksi `paragraphs` file PDF
     page->get_Paragraphs()->Add(text);
     // simpan file PDF
     document->Save(_dataDir + outputFileName);
@@ -511,13 +511,13 @@ void AddCustomFootNoteLabel() {
     ts->set_FontStyle(FontStyles::Italic);
     text->get_FootNote()->set_TextState(ts);
 
-    // tambahkan TextFragment ke koleksi paragraf halaman pertama dokumen
+    // tambahkan TextFragment ke koleksi `paragraphs` halaman pertama dokumen
     page->get_Paragraphs()->Add(text);
     // buat TextFragment kedua
     text = MakeObject<TextFragment>(u"Aspose.Pdf for C++");
     // set FootNote untuk fragmen teks kedua
     text->set_FootNote(MakeObject<Note>("catatan kaki untuk teks uji 2"));
-    // tambahkan fragmen teks kedua ke koleksi paragraf file PDF
+    // tambahkan fragmen teks kedua ke koleksi `paragraphs` file PDF
     page->get_Paragraphs()->Add(text);
 
     document->Save(_dataDir + outputFileName);
@@ -565,7 +565,7 @@ void CustomFootNote_Label() {
     text->set_FootNote(MakeObject<Note>("catatan kaki untuk teks uji 1"));
     // Tentukan label khusus untuk Catatan Kaki
     text->get_FootNote()->set_Text(u" Aspose(2021)");
-    // Tambahkan TextFragment ke koleksi paragraf halaman pertama dokumen
+    // Tambahkan TextFragment ke koleksi `paragraphs` halaman pertama dokumen
     page->get_Paragraphs()->Add(text);
 
     document->Save(_dataDir + outputFileName);
@@ -574,7 +574,7 @@ void CustomFootNote_Label() {
 
 ## Menambahkan Gambar dan Tabel ke Catatan Kaki
 
-Cuplikan kode berikut menunjukkan langkah-langkah untuk menambahkan [Catatan Kaki](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#a017ff999979d9f799b8e3cd32ab95722) ke objek [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) dan kemudian menambahkan objek Gambar dan Tabel ke koleksi paragraf dari bagian Catatan Kaki.
+Cuplikan kode berikut menunjukkan langkah-langkah untuk menambahkan [Catatan Kaki](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment#a017ff999979d9f799b8e3cd32ab95722) ke objek [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment) dan kemudian menambahkan objek Gambar dan Tabel ke koleksi `paragraphs` dari bagian Catatan Kaki.
 
 ```cpp
 
@@ -644,7 +644,7 @@ void HowToCreateEndNotes() {
 
     // tentukan label kustom untuk FootNote
     text->get_EndNote()->set_Text(u" Aspose(2021)");
-    // tambahkan TextFragment ke koleksi paragraf halaman pertama dokumen
+    // tambahkan TextFragment ke koleksi `paragraphs` halaman pertama dokumen
     page->get_Paragraphs()->Add(text);
     // simpan file PDF
     document->Save(_dataDir + outputFileName);
@@ -671,7 +671,7 @@ void TextAndImageAsInLineParagraph() {
 
     // Buat TextFragment
     auto text = MakeObject<TextFragment>("Hello World.. ");
-    // Tambahkan fragmen teks ke koleksi paragraf dari objek Halaman
+    // Tambahkan fragmen teks ke koleksi `paragraphs` dari objek Halaman
     page->get_Paragraphs()->Add(text);
 
     // Buat instance gambar
@@ -687,13 +687,13 @@ void TextAndImageAsInLineParagraph() {
     image->set_FixHeight(30);
     // Atur lebar gambar (opsional)
     image->set_FixWidth(100);
-    // Tambahkan gambar ke koleksi paragraf dari objek halaman
+    // Tambahkan gambar ke koleksi `paragraphs` dari objek halaman
     page->get_Paragraphs()->Add(image);
     // Inisialisasi ulang objek TextFragment dengan konten yang berbeda
     text = MakeObject<TextFragment>(" Hello Again..");
     // Atur TextFragment sebagai paragraf sejajar
     text->set_IsInLineParagraph(true);
-    // Tambahkan TextFragment yang baru dibuat ke koleksi paragraf dari halaman
+    // Tambahkan TextFragment yang baru dibuat ke koleksi `paragraphs` dari halaman
     page->get_Paragraphs()->Add(text);
 
     document->Save(_dataDir + outputFileName);
@@ -702,7 +702,7 @@ void TextAndImageAsInLineParagraph() {
 
 ## Tentukan Spasi Karakter saat Menambahkan Teks
 
-Teks dapat ditambahkan ke koleksi paragraf PDF menggunakan instance TextFragment atau objek TextParagraph, dan Anda bahkan dapat menstempel teks di dalam PDF menggunakan kelas TextStamp. Saat menambahkan teks, kita mungkin diharuskan menentukan spasi antara karakter untuk objek teks. Untuk memenuhi persyaratan ini, properti baru telah diperkenalkan bernama Property CharacterSpacing.
+Teks dapat ditambahkan ke koleksi `paragraphs` PDF menggunakan instance TextFragment atau objek TextParagraph, dan Anda bahkan dapat menstempel teks di dalam PDF menggunakan kelas TextStamp. Saat menambahkan teks, kita mungkin diharuskan menentukan spasi antara karakter untuk objek teks. Untuk memenuhi persyaratan ini, properti baru telah diperkenalkan bernama Property CharacterSpacing.
 
 Harap pertimbangkan pendekatan berikut untuk memenuhi persyaratan ini.
 
@@ -828,7 +828,7 @@ Saat ini, kita lebih sering melihat berita ditampilkan dalam beberapa kolom pada
 
 Aspose.Pdf untuk C++ juga menawarkan kemampuan untuk membuat beberapa kolom di halaman dokumen PDF. Untuk membuat PDF dengan beberapa kolom, kita dapat menggunakan kelas [Aspose.Pdf.FloatingBox](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.floating_box) karena menyediakan properti ColumnInfo.ColumnCount untuk menentukan jumlah kolom di dalam FloatingBox, dan kita juga dapat menentukan jarak antar kolom dan lebar kolom menggunakan ColumnInfo .ColumnSpacing dan ColumnInfo .ColumnWidths masing-masing.
 
-Contoh di bawah ini menunjukkan pembuatan dua kolom dengan objek Grafik (Garis) dan mereka ditambahkan ke koleksi paragraf dari FloatingBox, yang kemudian ditambahkan ke koleksi paragraf dari instance Page.
+Contoh di bawah ini menunjukkan pembuatan dua kolom dengan objek Grafik (Garis) dan mereka ditambahkan ke koleksi `paragraphs` dari FloatingBox, yang kemudian ditambahkan ke koleksi `paragraphs` dari instance Page.
 
 ```cpp
 void CreateMultiColumn() {
@@ -850,7 +850,7 @@ void CreateMultiColumn() {
 
     auto graph1 = MakeObject<Aspose::Pdf::Drawing::Graph>(500, 2);
 
-    // Tambahkan garis ke koleksi paragraf objek bagian
+    // Tambahkan garis ke koleksi `paragraphs` objek bagian
     page->get_Paragraphs()->Add(graph1);
 
     // Tentukan koordinat untuk garis
@@ -891,7 +891,7 @@ void CreateMultiColumn() {
     auto l2 = MakeObject<Aspose::Pdf::Drawing::Line>(posArr2);
     graph2->get_Shapes()->Add(l2);
 
-    // Tambahkan garis ke koleksi paragraf objek bagian
+    // Tambahkan garis ke koleksi `paragraphs` objek bagian
     box->get_Paragraphs()->Add(graph2);
 
     auto text2 = MakeObject<TextFragment>(
@@ -1003,7 +1003,7 @@ void AddTransparentText() {
     // Menambahkan persegi panjang ke koleksi bentuk dari objek Grafik
     canvas->get_Shapes()->Add(rect);
 
-    // Menambahkan objek grafik ke koleksi paragraf dari objek halaman
+    // Menambahkan objek grafik ke koleksi `paragraphs` dari objek halaman
     page->get_Paragraphs()->Add(canvas);
 
     // Mengatur nilai untuk tidak mengubah posisi untuk objek grafik
@@ -1017,7 +1017,7 @@ void AddTransparentText() {
     alphaColor = Color::FromArgb(alpha, red, green, blue);
     // Mengatur informasi warna untuk instance teks
     text->get_TextState()->set_ForegroundColor(alphaColor);
-    // Menambahkan teks ke koleksi paragraf dari instance halaman
+    // Menambahkan teks ke koleksi `paragraphs` dari instance halaman
     page->get_Paragraphs()->Add(text);
 
     document->Save(_dataDir + outputFileName);

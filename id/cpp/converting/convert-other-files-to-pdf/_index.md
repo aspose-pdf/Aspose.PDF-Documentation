@@ -68,7 +68,7 @@ Dalam hal file teks biasa, kita dapat menggunakan teknik berikut:
 1. Instansiasi Objek [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
 1. Tambahkan [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) ke koleksi halaman dokumen.
 1. Buat objek baru dari TextFragment dan berikan objek TextReader ke konstruktor-nya.
-1. Tambahkan paragraf teks baru dalam koleksi paragraf dan berikan objek TextFragment.
+1. Tambahkan paragraf teks baru dalam koleksi `paragraphs` dan berikan objek TextFragment.
 1. Muat dan [Simpan](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) file input.
 
 ```cpp
@@ -91,7 +91,7 @@ void ConvertTextToPDF()
     // Buat instance dari TextFragment dan berikan teks dari objek pembaca ke konstruktor-nya sebagai argumen
     auto text = MakeObject<TextFragment>(content);
 
-    // Tambahkan paragraf teks baru dalam koleksi paragraf dan berikan objek TextFragment
+    // Tambahkan paragraf teks baru dalam koleksi `paragraphs` dan berikan objek TextFragment
     auto paragraphs = page->get_Paragraphs();
     paragraphs->Add(text);
 
@@ -154,7 +154,7 @@ void ConvertPreFormattedTextToPdf()
         // masukkan baris ke dalam konstruktornya sebagai argumen
         auto text = MakeObject<TextFragment>(line);
 
-        // Tambahkan paragraf teks baru dalam koleksi paragraf dan masukkan objek TextFragment
+        // Tambahkan paragraf teks baru dalam koleksi `paragraphs` dan masukkan objek TextFragment
         page->get_Paragraphs()->Add(text);
         }
     }
@@ -224,7 +224,7 @@ Format XML digunakan untuk menyimpan data terstruktur. Ada beberapa cara untuk m
 1. Buat [Kelas String](https://reference.aspose.com/pdf/cpp/class/system.string) untuk nama jalur dan nama file.
 1. Instansiasi [objek XslFoLoadOption](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.load_options).
 1. Atur strategi penanganan kesalahan.
-1. Instansiasi Objek [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
+1. Instansiasi Objek [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document).
 1. [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) file gambar input.
 
 ```cpp

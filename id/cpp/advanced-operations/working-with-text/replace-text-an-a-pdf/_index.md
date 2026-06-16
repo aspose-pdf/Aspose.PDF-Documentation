@@ -227,7 +227,7 @@ void RearrangeContent() {
 
 ## Rendering Replaceable Symbols during PDF creation
 
-Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat diganti dengan konten yang sesuai saat waktu berjalan. Simbol yang dapat diganti saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p`, `\n`, `\r`. `$p` dan `$P` digunakan untuk menangani penomoran halaman saat waktu berjalan. `$p` diganti dengan nomor halaman tempat kelas Paragraf saat ini berada. `$P` diganti dengan jumlah total halaman dalam dokumen. Ketika menambahkan `TextFragment` ke koleksi paragraf dari dokumen PDF, itu tidak mendukung pemisahan baris di dalam teks. Namun untuk menambahkan teks dengan pemisahan baris, silakan gunakan `TextFragment` dengan `TextParagraph`:
+Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat diganti dengan konten yang sesuai saat waktu berjalan. Simbol yang dapat diganti saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p`, `\n`, `\r`. `$p` dan `$P` digunakan untuk menangani penomoran halaman saat waktu berjalan. `$p` diganti dengan nomor halaman tempat kelas Paragraf saat ini berada. `$P` diganti dengan jumlah total halaman dalam dokumen. Ketika menambahkan `TextFragment` ke koleksi `paragraphs` dari dokumen PDF, itu tidak mendukung pemisahan baris di dalam teks. Namun untuk menambahkan teks dengan pemisahan baris, silakan gunakan `TextFragment` dengan `TextParagraph`:
 
 - gunakan "\r\n" atau Environment.NewLine dalam TextFragment daripada "\n" tunggal;
 - buat objek TextParagraph. Ini akan menambahkan teks dengan pemisahan baris;
@@ -292,7 +292,7 @@ void ReplaceableSymbolsInHeaderFooterArea() {
     // Instansiasi objek tabel
     auto tab2 = MakeObject<Table>();
 
-    // Tambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+    // Tambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
     hfFoot->get_Paragraphs()->Add(tab2);
 
     // Tetapkan lebar kolom dari tabel
@@ -321,7 +321,7 @@ void ReplaceableSymbolsInHeaderFooterArea() {
     table->get_DefaultCellPadding()->set_Top(10);
     table->get_DefaultCellPadding()->set_Bottom(10);
 
-    // Tambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+    // Tambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
     page.getParagraphs().add(table);
 
     // Tetapkan batas sel default menggunakan objek BorderInfo

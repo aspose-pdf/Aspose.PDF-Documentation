@@ -4,22 +4,22 @@ linktitle: Tambahkan Gambar ke PDF
 type: docs
 weight: 10
 url: /id/python-net/add-image-to-existing-pdf-file/
-description: Pelajari cara menambahkan gambar ke file PDF yang ada di Python, tempatkan pada koordinat tetap, tetapkan teks alternatif, dan gunakan kompresi gambar.
-lastmod: "2026-05-05"
+description: Pelajari cara menambahkan gambar ke file PDF yang ada di Python, menempatkannya pada koordinat tetap, mengatur teks alternatif, dan menggunakan kompresi gambar.
+lastmod: "2026-06-12"
 TechArticle: true
 AlternativeHeadline: Tambahkan gambar ke file PDF yang ada menggunakan Python
-Abstract: Artikel ini menunjukkan cara menambahkan gambar ke dokumen PDF dengan Aspose.PDF for Python via .NET. Ini mencakup penempatan gambar pada koordinat tetap, menggambar gambar dengan operator PDF tingkat rendah, menetapkan teks alternatif untuk aksesibilitas, dan menyematkan gambar dengan kompresi Flate.
+Abstract: Artikel ini menunjukkan cara menambahkan gambar ke dokumen PDF dengan Aspose.PDF for Python via .NET. Artikel ini mencakup penempatan gambar pada koordinat tetap, menggambar gambar dengan operator PDF tingkat rendah, menetapkan teks alternatif untuk aksesibilitas, dan menyematkan gambar dengan kompresi Flate.
 ---
 
-## Tambahkan Gambar ke File PDF yang Ada di Python
+## Menambahkan Gambar ke File PDF yang Ada dalam Python
 
 Contoh ini menunjukkan cara menempatkan gambar pada posisi tetap di halaman PDF yang ada menggunakan Aspose.PDF for Python via .NET.
 
-Gunakan contoh-contoh ini ketika Anda perlu menambahkan logo, foto, stempel, bagan, atau grafik lainnya ke tata letak PDF yang ada. Anda dapat menempatkan gambar dengan koordinat halaman, menggambarnya dengan operator, menambahkan teks aksesibilitas, atau mengontrol kompresi gambar.
+Gunakan contoh-contoh ini ketika Anda perlu menambahkan logo, foto, cap, grafik, atau elemen grafis lainnya ke tata letak PDF yang ada. Anda dapat menempatkan gambar dengan koordinat halaman, menggambarnya dengan operator, menambahkan teks aksesibilitas, atau mengendalikan kompresi gambar.
 
 1. Muat PDF yang ada dengan `ap.Document(infile)`.
 1. Pilih halaman target (`document.pages[1]` untuk halaman pertama).
-1. Panggil `page.add_image()` dengan:
+1. Panggilan `page.add_image()` dengan:
     - Jalur file gambar.
     - A `Rectangle` menentukan koordinat penempatan.
 1. Simpan PDF yang diperbarui.
@@ -35,14 +35,14 @@ def add_image(infile, image_file, outfile):
     document.save(outfile)
 ```
 
-## Tambahkan Gambar ke PDF Menggunakan Operator
+## Menambahkan Gambar ke PDF Menggunakan Operator
 
 Pendekatan ini menambahkan gambar dengan operator PDF tingkat rendah alih-alih yang tingkat tinggi `add_image()` pembantu.
 
-1. Buat yang baru `Document` dan tambahkan sebuah halaman.
+1. Buat yang baru `Document` dan tambahkan halaman.
 1. Tambahkan gambar ke sumber daya halaman (`page.resources.images`).
 1. Buat operator transformasi (`GSave`, `ConcatenateMatrix`, `Do`, `GRestore`).
-1. Tambahkan operator ke isi halaman.
+1. Tambahkan operator ke konten halaman.
 1. Simpan PDF yang dihasilkan.
 
 ```python
@@ -85,10 +85,10 @@ def add_image_using_operators(image_file, outfile):
 
 Contoh ini menambahkan gambar dan menetapkan teks alternatif untuk aksesibilitas.
 
-1. Buat yang baru `Document` dan tambahkan sebuah halaman.
-1. Tambah gambar ke halaman dengan `page.add_image()`.
+1. Buat yang baru `Document` dan tambahkan halaman.
+1. Tambahkan gambar ke halaman dengan `page.add_image()`.
 1. Dapatkan sumber daya gambar dari `page.resources.images`.
-1. Atur teks alt menggunakan `try_set_alternative_text()`.
+1. Atur teks alternatif menggunakan `try_set_alternative_text()`.
 1. Simpan PDF yang dihasilkan.
 
 ```python
@@ -111,11 +111,11 @@ def add_image_set_alternative_text(image_file, outfile):
     document.save(outfile)
 ```
 
-## Tambahkan Gambar ke PDF dengan Kompresi Flate
+## Menambahkan Gambar ke PDF dengan Kompresi Flate
 
 Contoh ini menyisipkan gambar menggunakan `ImageFilterType.FLATE` kompresi.
 
-1. Buat yang baru `Document` dan tambahkan sebuah halaman.
+1. Buat yang baru `Document` dan tambahkan halaman.
 1. Tambahkan gambar ke sumber daya halaman dengan kompresi Flate.
 1. Gunakan operator matriks untuk menempatkan dan menggambar gambar.
 1. Simpan dokumen.
@@ -153,7 +153,7 @@ def add_image_to_pdf_with_flate_compression(image_file, outfile):
 
 ## Topik Gambar Terkait
 
-- [Bekerja dengan gambar di PDF menggunakan Python](/pdf/id/python-net/working-with-images/)
-- [Ganti gambar dalam file PDF yang ada](/pdf/id/python-net/replace-image-in-existing-pdf-file/)
+- [Bekerja dengan gambar dalam PDF menggunakan Python](/pdf/id/python-net/working-with-images/)
+- [Ganti gambar dalam file PDF yang sudah ada](/pdf/id/python-net/replace-image-in-existing-pdf-file/)
 - [Hapus gambar dari file PDF](/pdf/id/python-net/delete-images-from-pdf-file/)
 - [Ekstrak gambar dari file PDF](/pdf/id/python-net/extract-images-from-pdf-file/)

@@ -1,103 +1,94 @@
 ---
-title: Cara Membuat PDF menggunakan Python
+title: Buat File PDF di Python
 linktitle: Buat Dokumen PDF
 type: docs
 weight: 10
 url: /id/python-net/create-pdf-document/
-description: Buat dan format Dokumen PDF dengan Aspose.PDF untuk Python via .NET.
-lastmod: "2023-04-12"
+description: Pelajari cara membuat file PDF dan membangun PDF yang dapat dicari di Python menggunakan Aspose.PDF for Python via .NET.
+lastmod: "2026-06-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Buat File PDF dengan Python
+Abstract: Aspose.PDF for Python via .NET adalah API serbaguna yang dirancang untuk pengembang guna memanipulasi file PDF dalam aplikasi Python yang menargetkan kerangka kerja .NET. API ini memungkinkan pengguna untuk membuat, memuat, memodifikasi, dan mengonversi dokumen PDF dengan mudah. Artikel ini memberikan panduan langkah demi langkah untuk membuat file PDF sederhana menggunakan Aspose.PDF. Prosesnya melibatkan inisialisasi objek `Document`, menambahkan `Page` ke dokumen, menyisipkan `TextFragment` ke dalam paragraf halaman, dan menyimpan file sebagai PDF. Potongan kode Python yang disertakan menunjukkan langkah-langkah ini dengan membuat dokumen PDF yang berisi teks "Hello World!". API ini menyederhanakan penanganan PDF dengan kode minimal, meningkatkan produktivitas pengembang yang bekerja dengan PDF di lingkungan .NET.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Cara Membuat PDF menggunakan Python",
-    "alternativeHeadline": "Buat dokumen PDF dari awal melalui Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generasi dokumen pdf",
-    "keywords": "pdf, python, dotnet, buat dokumen pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/create-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/create-pdf-document/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Buat dan format Dokumen PDF dengan Aspose.PDF untuk Python via .NET."
-}
-</script>
 
+**Aspose.PDF for Python via .NET** adalah API manipulasi PDF yang memungkinkan pengembang untuk membuat, memuat, memodifikasi, dan mengonversi file PDF langsung dari Python untuk aplikasi .NET dengan hanya beberapa baris kode.
 
-**Aspose.PDF for Python via .NET** adalah API manipulasi PDF yang memungkinkan pengembang untuk membuat, memuat, memodifikasi, dan mengonversi file PDF langsung dari aplikasi Python untuk .NET hanya dengan beberapa baris kode.
+Gunakan contoh-contoh ini ketika Anda perlu membuat file PDF baru dari awal atau mengonversi output OCR menjadi dokumen PDF yang dapat dicari di Python.
 
 ## Cara Membuat File PDF Sederhana
 
 Untuk membuat PDF menggunakan Python via .NET dengan Aspose.PDF, Anda dapat mengikuti langkah-langkah berikut:
 
-1. Buat objek dari kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)
-1. Tambahkan objek [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) ke koleksi [pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) dari objek Document
-1. Tambahkan [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) ke koleksi [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) dari halaman
+1. Buat objek dari [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) kelas
+1. Tambahkan sebuah [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek ke [pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) koleksi objek Document
+1. Tambah [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) ke [Paragraph](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) koleksi halaman
 1. Simpan dokumen PDF yang dihasilkan
 
 ```python
+import sys
+from os import path
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # Inisialisasi objek dokumen
+def create_new_document(output_pdf):
+    """Create a simple PDF with a single “Hello World!” page."""
     document = ap.Document()
-    # Tambahkan halaman
     page = document.pages.add()
-    # Tambahkan teks ke halaman baru
     page.paragraphs.add(ap.text.TextFragment("Hello World!"))
-    # Simpan PDF yang diperbarui
     document.save(output_pdf)
 ```
+
+## Cara Membuat Dokumen PDF yang Dapat Dicari
+
+Aspose.PDF for Python via .NET memungkinkan pembuatan dan manipulasi dokumen PDF yang ada. Saat menambahkan elemen Text ke file PDF, PDF yang dihasilkan dapat dicari. Namun, saat mengonversi gambar yang berisi teks ke file PDF, konten PDF yang dihasilkan tidak dapat dicari. Sebagai solusi, kita dapat menerapkan OCR pada file yang dihasilkan sehingga menjadi dapat dicari.
+
+Berikut ini adalah kode lengkap untuk memenuhi kebutuhan ini:
+
+1. Muat PDF menggunakan 'ap.Document'.
+1. Konfigurasikan resolusi rendering.
+1. Gunakan 'PngDevice.process' untuk mengubah halaman PDF yang dipilih menjadi gambar.
+1. Jalankan OCR pada gambar yang dihasilkan.
+1. Buat PDF baru dari output OCR.
+1. Simpan PDF yang dapat dicari.
+
+```python
+import aspose.pdf as ap
+import io
+
+# Requires: pip install pytesseract
+# Also ensure the Tesseract OCR engine is installed and available on your system PATH.
+import pytesseract
+from pathlib import Path
+
+
+# Path to the source PDF
+input_pdf_path = "input.pdf"
+# Path for the temporary image
+temp_image_path = "temp_image.png"
+# Path for the searchable PDF
+output_pdf_path = "output_searchable.pdf"
+page_number = 1
+image_stream = io.FileIO(temp_image_path, "w")
+try:
+    document = ap.Document(input_pdf_path)
+    resolution = ap.devices.Resolution(300)
+    png_device = ap.devices.PngDevice(resolution)
+    png_device.process(document.pages[page_number], image_stream)
+    image_stream.close()
+    pdf = pytesseract.image_to_pdf_or_hocr(temp_image_path, extension="pdf")
+    document = ap.Document(io.BytesIO(pdf))
+    document.save(output_pdf_path)
+finally:
+    image_file = Path(temp_image_path)
+    image_file.unlink(missing_ok=True)
+```
+
+## Topik Dokumen Terkait
+
+- [Bekerja dengan dokumen PDF di Python](/pdf/id/python-net/working-with-documents/)
+- [Format dokumen PDF dalam Python](/pdf/id/python-net/formatting-pdf-document/)
+- [Manipulasi dokumen PDF dalam Python](/pdf/id/python-net/manipulate-pdf-document/)
+- [Optimalkan file PDF dalam Python](/pdf/id/python-net/optimize-pdf/)
+

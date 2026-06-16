@@ -65,7 +65,7 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- Dengan mengiterasi melalui koleksi paragraf dan mendapatkan teks dari mereka:**
+**2- Dengan mengiterasi melalui koleksi `paragraphs` dan mendapatkan teks dari mereka:**
 
 ```java
  public static void ExtractParagraph02() {

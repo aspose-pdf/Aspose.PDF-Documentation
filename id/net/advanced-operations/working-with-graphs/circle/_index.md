@@ -87,10 +87,10 @@ Seperti grafik batang, grafik lingkaran dapat digunakan untuk menampilkan data d
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat instance [Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Buat [Objek Gambar](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) dengan dimensi tertentu.
-1. Atur [Batas](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) untuk objek Gambar.
-1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) ke koleksi paragraf halaman.
+1. Buat instance [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Buat [objek Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) dengan dimensi tertentu.
+1. Atur [border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) untuk objek Gambar.
+1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) ke koleksi `paragraphs` halaman.
 1. Simpan file PDF kami.
 
 ```csharp

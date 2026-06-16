@@ -116,7 +116,7 @@ public static void CreateHyperlinkToPagesInSamePDF() {
         // Atur hyperlink TextFragment
         text.setHyperlink(link);
 
-        // Tambahkan teks ke koleksi paragraf Halaman
+        // Tambahkan teks ke koleksi `paragraphs` Halaman
         page.getParagraphs().add(text);
 
         // Buat instance TextFragment baru
@@ -134,7 +134,7 @@ public static void CreateHyperlinkToPagesInSamePDF() {
         // Atur tautan untuk TextFragment kedua
         text.setHyperlink(link);
 
-        // Tambahkan teks ke koleksi paragraf objek halaman
+        // Tambahkan teks ke koleksi `paragraphs` objek halaman
         page.getParagraphs().add(text);
 
         // Simpan dokumen yang diperbarui

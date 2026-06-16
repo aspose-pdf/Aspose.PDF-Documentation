@@ -91,14 +91,14 @@ Ikuti langkah-langkah di bawah ini:
 
 1. Buat PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
 1. Tambahkan [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) ke koleksi halaman file PDF.
-1. Tambahkan [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) ke koleksi paragraf dari instance halaman.
+1. Tambahkan [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) ke koleksi `paragraphs` dari instance halaman.
 1. Buat instance [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph).
 1. Atur batas untuk [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing).
 1. Buat instance Persegi Panjang.
 
 1. Tambahkan objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) ke koleksi bentuk dari objek Graph.
-1. Tambahkan objek grafik ke koleksi paragraf dari instance halaman.
-1. Tambahkan [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) ke koleksi paragraf dari instance halaman.
+1. Tambahkan objek grafik ke koleksi `paragraphs` dari instance halaman.
+1. Tambahkan [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) ke koleksi `paragraphs` dari instance halaman.
 
 1. Dan simpan file PDF Anda.
 

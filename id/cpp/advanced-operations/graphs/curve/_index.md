@@ -21,13 +21,13 @@ Dalam artikel ini, kita akan menyelidiki kurva grafik sederhana, dan kurva yang 
 Ikuti langkah-langkah di bawah ini:
 
 1.
-``` Buat instance [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)
+``` Buat instance [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)
 
-1. Buat [objek Gambar](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) dengan dimensi tertentu
+1. Buat [objek Graph](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.drawing) dengan dimensi tertentu
 
 1. Atur [Perbatasan](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph#ab63dde9501441515b915fd68f66a01bd) untuk objek Gambar
 
-1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) ke koleksi paragraf halaman
+1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph) ke koleksi `paragraphs` halaman
 
 1. Simpan file PDF kita
 
@@ -53,7 +53,7 @@ void ExampleCurve() {
     curve1->get_GraphInfo()->set_Color(Color::get_GreenYellow());
     graph->get_Shapes()->Add(curve1);
 
-    // Tambahkan objek Grafik ke koleksi paragraf halaman
+    // Tambahkan objek Grafik ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(graph);
 
     // Simpan file PDF
@@ -90,7 +90,7 @@ void ExampleFilledCurve() {
     curve1->get_GraphInfo()->set_FillColor(Color::get_GreenYellow());
     graph->get_Shapes()->Add(curve1);
 
-    // Tambahkan objek Gambar ke koleksi paragraf halaman
+    // Tambahkan objek Gambar ke koleksi `paragraphs` halaman
     page->get_Paragraphs()->Add(graph);
 
     // Simpan file PDF

@@ -149,7 +149,7 @@ private static void DrawPolygonOnPage(Aspose.Pdf.Point[] polygon, Aspose.Pdf.Pag
 }
 ```
 
-**Dengan mengiterasi koleksi paragraf dan mendapatkan teks dari mereka:**
+**Dengan mengiterasi koleksi `paragraphs` dan mendapatkan teks dari mereka:**
 
 Cuplikan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 

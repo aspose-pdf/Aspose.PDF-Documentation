@@ -1,348 +1,158 @@
 ---
-title: Dapatkan dan Setel Properti Halaman menggunakan Python
-linktitle: Dapatkan dan Setel Properti Halaman
+title: Dapatkan dan Atur Properti Halaman PDF dengan Python
+linktitle: Mendapatkan dan Mengatur Properti Halaman
 type: docs
 weight: 90
 url: /id/python-net/get-and-set-page-properties/
-description: Bagian ini menunjukkan cara mendapatkan jumlah halaman dalam file PDF, mendapatkan informasi tentang properti halaman PDF seperti warna dan menyetel properti halaman.
-lastmod: "2023-04-17"
+description: Pelajari cara memeriksa dan memperbarui properti halaman PDF seperti ukuran, jumlah, dan informasi warna dengan Python.
+lastmod: "2026-06-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara Mendapatkan dan Mengatur Properti Halaman menggunakan Python
+Abstract: Artikel ini membahas kemampuan Aspose.PDF for Python via .NET, dengan fokus pada membaca dan mengatur properti halaman dalam file PDF menggunakan Python. Artikel ini mencakup berbagai fungsionalitas termasuk menentukan jumlah halaman dalam sebuah PDF, mengakses dan memodifikasi properti halaman, serta menangani informasi warna. Untuk mendapatkan jumlah halaman, kelas `Document` dan koleksi `PageCollection` digunakan, dengan potongan kode yang menunjukkan cara mengambil jumlah halaman, bahkan tanpa menyimpan dokumen. Artikel ini menjelaskan berbagai properti halaman seperti MediaBox, BleedBox, TrimBox, ArtBox, dan CropBox, serta menyediakan contoh kode untuk mengakses properti tersebut. Selain itu, dibahas cara mengambil halaman tertentu dari PDF dan menyimpannya sebagai dokumen terpisah, serta menentukan jenis warna setiap halaman. Contoh-contoh tersebut diimplementasikan dalam Python, menggambarkan aplikasi praktis dari fitur-fitur ini.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Dapatkan dan Setel Properti Halaman menggunakan Python",
-    "alternativeHeadline": "Mendapatkan dan Menyetel Properti Halaman PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, mendapatkan properti halaman, menyetel properti halaman",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/get-and-set-page-properties/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/get-and-set-page-properties/"
-    },
-    "dateModified": "2023-04-04",
-    "description": ""
-}
-</script>
 
+Aspose.PDF for Python via .NET memungkinkan Anda membaca dan mengatur properti halaman dalam file PDF di aplikasi Python Anda. Bagian ini menunjukkan cara memperoleh jumlah halaman dalam file PDF, mendapatkan informasi tentang properti halaman PDF seperti warna, dan mengatur properti halaman. Contoh-contoh menggunakan [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) dan [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) API dan ditulis dalam Python.
 
-Aspose.PDF untuk Python via .NET memungkinkan Anda membaca dan mengatur properti halaman dalam file PDF di aplikasi Python Anda. Bagian ini menunjukkan cara mendapatkan jumlah halaman dalam file PDF, mendapatkan informasi tentang properti halaman PDF seperti warna dan mengatur properti halaman. Contoh yang diberikan menggunakan Python.
+Gunakan panduan ini ketika Anda perlu memeriksa metadata halaman, menentukan jumlah halaman, atau memperbarui karakteristik tingkat halaman sebagai bagian dari analisis dokumen atau tugas normalisasi.
 
-## Mendapatkan Jumlah Halaman dalam File PDF
+## Dapatkan Jumlah Halaman dalam File PDF
 
-Saat bekerja dengan dokumen, Anda sering ingin mengetahui berapa banyak halaman yang mereka miliki. Dengan Aspose.PDF, ini tidak membutuhkan lebih dari dua baris kode.
+Saat bekerja dengan dokumen, Anda sering ingin mengetahui berapa banyak halaman yang mereka miliki. Dengan Aspose.PDF ini tidak memerlukan lebih dari dua baris kode.
 
 Untuk mendapatkan jumlah halaman dalam file PDF:
 
-1. Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Kemudian gunakan properti Count dari koleksi [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (dari objek Document) untuk mendapatkan total jumlah halaman dalam dokumen.
+1. Buka file PDF menggunakan [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
+1. Kemudian gunakan [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) properti Count koleksi (dari objek Document) untuk mendapatkan total jumlah halaman dalam dokumen.
 
 Cuplikan kode berikut menunjukkan cara mendapatkan jumlah halaman dari file PDF.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def get_page_count(input_file_name):
+    # Open document
+    document = ap.Document(input_file_name)
 
-    # Buka dokumen
-    document = ap.Document(input_pdf)
-
-    # Dapatkan jumlah halaman
-    print("Jumlah Halaman:", str(len(document.pages)))
+    # Get page count
+    print("Page Count:", str(len(document.pages)))
 ```
-
 
 ### Dapatkan jumlah halaman tanpa menyimpan dokumen
 
-Terkadang kita membuat file PDF secara langsung dan selama pembuatan file PDF, kita mungkin menghadapi kebutuhan (seperti membuat Daftar Isi dll.) untuk mendapatkan jumlah halaman file PDF tanpa menyimpan file di sistem atau stream. Jadi untuk memenuhi kebutuhan ini, sebuah metode [process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) telah diperkenalkan dalam kelas Document. Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mendapatkan jumlah halaman tanpa menyimpan dokumen.
+Kadang-kadang kami menghasilkan file PDF secara instan dan selama pembuatan file PDF, kami mungkin menemukan kebutuhan (membuat Daftar Isi dll.) untuk memperoleh jumlah halaman file PDF tanpa menyimpan file ke sistem atau aliran. Jadi untuk memenuhi kebutuhan ini, sebuah metode [process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) telah diperkenalkan dalam kelas Document. Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mendapatkan jumlah halaman tanpa menyimpan dokumen.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    # Membuat instance Document
+def get_page_count_without_saving(input_file_name):
+    # Instantiate Document instance
     document = ap.Document()
-    # Menambahkan halaman ke koleksi halaman file PDF
+    # Add page to pages collection of PDF file
     page = document.pages.add()
-    # Membuat instance loop
-    for i in range(0, 300):
-        # Menambahkan TextFragment ke koleksi paragraf dari objek halaman
-        page.paragraphs.add(ap.text.TextFragment("Uji jumlah halaman"))
-    # Memproses paragraf dalam file PDF untuk mendapatkan jumlah halaman yang akurat
+    # Create loop instance
+    for _ in range(0, 300):
+        # Add TextFragment to paragraphs collection of page object
+        page.paragraphs.add(ap.text.TextFragment("Pages count test"))
+    # Process the paragraphs in PDF file to get accurate page count
     document.process_paragraphs()
-    # Mencetak jumlah halaman dalam dokumen
-    print("Jumlah halaman dalam dokumen =", str(len(document.pages)))
+    # Print number of pages in document
+    print("Number of pages in document =", str(len(document.pages)))
 ```
-
 
 ## Dapatkan Properti Halaman
 
-Setiap halaman dalam file PDF memiliki sejumlah properti, seperti lebar, tinggi, bleed-, crop- dan trimbox. Aspose.PDF memungkinkan Anda untuk mengakses properti ini.
+Setiap halaman dalam file PDF memiliki sejumlah properti, seperti lebar, tinggi, bleed-, crop-, dan trimbox. Aspose.PDF memungkinkan Anda mengakses properti tersebut.
 
-### **Memahami Properti Halaman: Perbedaan antara Artbox, BleedBox, CropBox, MediaBox, TrimBox, dan properti Rect**
+### Memahami Properti Halaman: Perbedaan antara Artbox, BleedBox, CropBox, MediaBox, TrimBox, dan properti Rect
 
-- **Media box**: Media box adalah kotak halaman terbesar. Ini sesuai dengan ukuran halaman (misalnya A4, A5, US Letter, dll.) yang dipilih ketika dokumen dicetak ke PostScript atau PDF. Dengan kata lain, media box menentukan ukuran fisik media di mana dokumen PDF ditampilkan atau dicetak.
-- **Bleed box**: Jika dokumen memiliki bleed, PDF juga akan memiliki bleed box.
- Bleed adalah jumlah warna (atau karya seni) yang meluas melampaui tepi halaman. Ini digunakan untuk memastikan bahwa ketika dokumen dicetak dan dipotong sesuai ukuran ("dipotong"), tinta akan mencapai seluruh tepi halaman. Bahkan jika halaman terpotong sedikit tidak sesuai tanda potong, tidak akan ada tepi putih yang muncul pada halaman.
-- **Trim box**: Trim box menunjukkan ukuran akhir dari dokumen setelah dicetak dan dipotong.
-- **Art box**: Art box adalah kotak yang digambar di sekitar konten sebenarnya dari halaman dalam dokumen Anda. Kotak halaman ini digunakan saat mengimpor dokumen PDF dalam aplikasi lain.
-- **Crop box**: Crop box adalah ukuran "halaman" di mana dokumen PDF Anda ditampilkan di Adobe Acrobat. Dalam tampilan normal, hanya isi dari crop box yang ditampilkan di Adobe Acrobat.  
-  Untuk deskripsi detail tentang properti ini, baca spesifikasi Adobe.Pdf, terutama 10.10.1 Batas Halaman.
-- **Page.Rect**: perpotongan (umumnya persegi panjang yang terlihat) dari MediaBox dan DropBox. Gambar di bawah ini mengilustrasikan properti ini.
+- **Media box**: Media box adalah kotak halaman terbesar. Itu sesuai dengan ukuran halaman (misalnya A4, A5, US Letter, dll.) yang dipilih ketika dokumen dicetak ke PostScript atau PDF. Dengan kata lain, media box menentukan ukuran fisik media tempat dokumen PDF ditampilkan atau dicetak.
+- **Bleed box**: Jika dokumen memiliki bleed, PDF juga akan memiliki bleed box. Bleed adalah jumlah warna (atau karya seni) yang melampaui tepi halaman. Ini digunakan untuk memastikan bahwa saat dokumen dicetak dan dipotong ke ukuran (“trimmed”), tinta akan mencapai seluruh tepi halaman. Bahkan jika halaman dipotong tidak tepat - dipotong sedikit di luar tanda pemotongan - tidak akan muncul tepi putih pada halaman.
+- **Trim box**: Trim box menunjukkan ukuran akhir dokumen setelah pencetakan dan pemotongan.
+- **Art box**: Art box adalah kotak yang digambar di sekitar konten sebenarnya dari halaman dalam dokumen Anda. Kotak halaman ini digunakan saat mengimpor dokumen PDF ke dalam aplikasi lain.
+- **Crop box**: Crop box adalah ukuran “halaman” di mana dokumen PDF Anda ditampilkan di Adobe Acrobat. Dalam tampilan normal, hanya isi dari crop box yang ditampilkan di Adobe Acrobat.
+  Untuk deskripsi mendetail tentang properti ini, baca spesifikasi Adobe.Pdf, khususnya 10.10.1 Page Boundaries.
+-- **Page.Rect**: perpotongan (biasanya persegi panjang yang terlihat) dari MediaBox dan DropBox (`Page.rect`). Lihat [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) tipe untuk properti persegi panjang. Gambar di bawah ini mengilustrasikan properti tersebut.
 
 Untuk detail lebih lanjut, silakan kunjungi [halaman ini](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-### **Mengakses Properti Halaman**
+### Mengakses Properti Halaman
 
-Kelas [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) menyediakan semua properti yang terkait dengan halaman PDF tertentu. Semua halaman dari file PDF terkandung dalam koleksi [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) dari objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+The [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) kelas menyediakan semua properti yang terkait dengan halaman PDF tertentu. Semua halaman file PDF terkandung dalam the of the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) objek [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi.
 
-Dari situ, dimungkinkan untuk mengakses objek Page individual menggunakan indeksnya, atau melakukan iterasi melalui koleksi dengan menggunakan loop foreach untuk mendapatkan semua halaman. Setelah halaman individu diakses, kita dapat memperoleh propertinya. Cuplikan kode berikut menunjukkan cara mendapatkan properti halaman.
+Dari sana, dimungkinkan untuk mengakses baik individu `Page` objek menggunakan indeks mereka, atau iterasi melalui koleksi untuk mendapatkan semua halaman. Begitu sebuah halaman individu diakses, kita dapat mengambil propertinya. Potongan kode berikut menunjukkan cara mendapatkan properti halaman (the `Page` API).
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    # Buka dokumen
-    document = ap.Document(input_pdf)
-    # Dapatkan halaman tertentu
+def get_page_properties(input_file_name):
+    # Open document
+    document = ap.Document(input_file_name)
+    # Get particular page
     page = document.pages[1]
-    # Dapatkan properti halaman
-    print(
-        "ArtBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.art_box.height,
-            page.art_box.width,
-            page.art_box.llx,
-            page.art_box.lly,
-            page.art_box.urx,
-            page.art_box.ury,
-        )
-    )
-    print(
-        "BleedBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.bleed_box.height,
-            page.bleed_box.width,
-            page.bleed_box.llx,
-            page.bleed_box.lly,
-            page.bleed_box.urx,
-            page.bleed_box.ury,
-        )
-    )
-    print(
-        "CropBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.crop_box.height,
-            page.crop_box.width,
-            page.crop_box.llx,
-            page.crop_box.lly,
-            page.crop_box.urx,
-            page.crop_box.ury,
-        )
-    )
-    print(
-        "MediaBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.media_box.height,
-            page.media_box.width,
-            page.media_box.llx,
-            page.media_box.lly,
-            page.media_box.urx,
-            page.media_box.ury,
-        )
-    )
-    print(
-        "TrimBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.trim_box.height,
-            page.trim_box.width,
-            page.trim_box.llx,
-            page.trim_box.lly,
-            page.trim_box.urx,
-            page.trim_box.ury,
-        )
-    )
-    print(
-        "Rect : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.rect.height,
-            page.rect.width,
-            page.rect.llx,
-            page.rect.lly,
-            page.rect.urx,
-            page.rect.ury,
-        )
-    )
-    print("Nomor Halaman :", page.number)
-    print("Rotasi :", page.rotate)
-```
 
-## Dapatkan Halaman Tertentu dari File PDF
-
-Aspose.PDF untuk Python memungkinkan Anda untuk [memisahkan PDF menjadi halaman individu](/pdf/id/python-net/split-pdf-document/) dan menyimpannya sebagai file PDF. Mendapatkan halaman tertentu dalam file PDF dan menyimpannya sebagai PDF baru adalah operasi yang sangat mirip: buka dokumen sumber, akses halaman, buat dokumen baru dan tambahkan halaman ke dalamnya.
-
-Objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) memiliki [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection) yang menyimpan halaman dalam file PDF. Untuk mendapatkan halaman tertentu dari koleksi ini:
-
-1. Tentukan indeks halaman menggunakan properti Pages.
-1. Buat objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) baru.
-1. Tambahkan objek [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) ke objek Document baru.
-1. Simpan output menggunakan metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-
-Kode berikut menunjukkan cara mendapatkan halaman tertentu dari file PDF dan menyimpannya sebagai file baru.
-
-```python
-
-    import aspose.pdf as ap
-
-    # Buka dokumen
-    document = ap.Document(input_pdf)
-
-    # Dapatkan halaman tertentu
-    page = document.pages[2]
-
-    # Simpan halaman sebagai file PDF
-    new_document = ap.Document()
-    new_document.pages.add(page)
-    new_document.save(output_pdf)
-```
-
-## Menentukan Warna Halaman
-
-Kelas [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) menyediakan properti terkait dengan halaman tertentu dalam dokumen PDF, termasuk jenis warna apa - RGB, hitam dan putih, skala abu-abu atau tidak terdefinisi - yang digunakan halaman tersebut.
-
-Semua halaman dari file PDF terkandung dalam koleksi [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
- The [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) property menentukan warna elemen pada halaman. Untuk mendapatkan atau menentukan informasi warna untuk halaman PDF tertentu, gunakan properti [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) dari objek [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
-
-Cuplikan kode berikut menunjukkan cara untuk mengiterasi melalui halaman individu dari file PDF untuk mendapatkan informasi warna.
-
-```python
-
-    import aspose.pdf as ap
-
-    # Buka file PDF sumber
-    document = ap.Document(input_pdf)
-    # Iterasi melalui semua halaman dari file PDF
-    for page_n in range(0, len(document.pages)):
-        page_number = page_n + 1
-        # Dapatkan informasi tipe warna untuk halaman PDF tertentu
-        page_color_type = document.pages[page_number].color_type
-        if page_color_type == ap.ColorType.BLACK_AND_WHITE:
-            print("Halaman # " + str(page_number) + " adalah Hitam dan putih.")
-
-        if page_color_type == ap.ColorType.GRAYSCALE:
-            print("Halaman # " + str(page_number) + " adalah Skala Abu-abu.")
-
-        if page_color_type == ap.ColorType.RGB:
-            print("Halaman # " + str(page_number) + " adalah RGB.")
-
-        if page_color_type == ap.ColorType.UNDEFINED:
-            print("Halaman # " + str(page_number) + " Warna tidak terdefinisi.")
-```
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Python melalui .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "AS",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
+    # Get page properties
+    boxes = {
+        "ArtBox": page.art_box,
+        "BleedBox": page.bleed_box,
+        "CropBox": page.crop_box,
+        "MediaBox": page.media_box,
+        "TrimBox": page.trim_box,
+        "Rect": page.rect,
     }
-}
-</script>
+
+    # Print box properties
+    for box_name, box in boxes.items():
+        print(
+            f"{box_name} : Height={box.height},Width={box.width},LLX={box.llx},LLY={box.lly},URX={box.urx},URY={box.ury}"
+        )
+
+    # Print other page properties
+    print(f"Page Number : {page.number}")
+    print(f"Rotate : {page.rotate}")
+```
+
+## Tentukan Warna Halaman
+
+The [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) kelas menyediakan properti yang terkait dengan halaman tertentu dalam dokumen PDF, termasuk jenis warna - RGB, hitam putih, skala abu-abu atau tidak terdefinisi - yang digunakan halaman.
+
+Semua halaman file PDF terkandung dalam [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) koleksi. The [warna_jenis](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) properti menentukan warna elemen pada halaman. Untuk mendapatkan atau menentukan informasi warna untuk halaman PDF tertentu, gunakan [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) objek [warna_jenis](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) properti.
+
+Potongan kode berikut menunjukkan cara mengiterasi setiap halaman file PDF untuk mendapatkan informasi warna.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def get_page_color_type(input_file_name):
+    # Open source PDF file
+    document = ap.Document(input_file_name)
+    # Iterate through all the page of PDF file
+    for page_number in range(1, len(document.pages) + 1):
+        # Get the color type information for particular PDF page
+        page_color_type = document.pages[page_number].color_type
+        color_type_map = {
+            ap.ColorType.BLACK_AND_WHITE: "Black and white",
+            ap.ColorType.GRAYSCALE: "Gray Scale",
+            ap.ColorType.RGB: "RGB",
+            ap.ColorType.UNDEFINED: "undefined",
+        }
+        color_description = color_type_map.get(page_color_type, "unknown")
+        print(f"Page # {page_number} is {color_description}.")
+```
+
+## Topik Halaman Terkait
+
+- [Bekerja dengan halaman PDF di Python](/pdf/id/python-net/working-with-pages/)
+- [Ubah ukuran halaman PDF dalam Python](/pdf/id/python-net/change-page-size/)
+- [Memotong halaman PDF di Python](/pdf/id/python-net/crop-pages/)
+- [Putar halaman PDF di Python](/pdf/id/python-net/rotate-pages/)

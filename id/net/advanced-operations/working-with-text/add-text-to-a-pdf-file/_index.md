@@ -291,7 +291,7 @@ private static void UseOTFFont()
 
 Kelas Aspose.Pdf.Generator.Text memiliki properti bernama IsHtmlTagSupported yang memungkinkan untuk menambahkan tag/konten HTML ke dalam file PDF. Konten yang ditambahkan dirender dalam tag HTML asli alih-alih muncul sebagai string teks sederhana. Untuk mendukung fitur serupa dalam Model Objek Dokumen (DOM) baru dari namespace Aspose.Pdf, kelas HtmlFragment telah diperkenalkan.
 
-Instance [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) dapat digunakan untuk menentukan konten HTML yang harus ditempatkan di dalam file PDF. Mirip dengan TextFragment, HtmlFragment adalah objek tingkat paragraf dan dapat ditambahkan ke koleksi paragraf objek Page. Potongan kode berikut menunjukkan langkah-langkah untuk menempatkan konten HTML di dalam file PDF menggunakan pendekatan DOM.
+Instance [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) dapat digunakan untuk menentukan konten HTML yang harus ditempatkan di dalam file PDF. Mirip dengan TextFragment, HtmlFragment adalah objek tingkat paragraf dan dapat ditambahkan ke koleksi `paragraphs` objek Page. Potongan kode berikut menunjukkan langkah-langkah untuk menempatkan konten HTML di dalam file PDF menggunakan pendekatan DOM.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -422,7 +422,7 @@ Silakan ikuti langkah-langkah yang ditentukan di bawah ini untuk membuat Catatan
 - Buat objek Page.
 - Buat objek TextFragment.
 - Buat instance Note dan berikan nilainya ke properti TextFragment.FootNote.
-- Tambahkan TextFragment ke koleksi paragraf dari instance halaman.
+- Tambahkan TextFragment ke koleksi `paragraphs` dari instance halaman.
 
 ### Gaya garis kustom untuk Catatan Kaki
 
@@ -531,7 +531,7 @@ private static void CustomizeFootNoteLabel()
 
 ## Menambahkan Gambar dan Tabel ke Catatan Kaki
 
-Dalam versi rilis sebelumnya, dukungan Catatan Kaki disediakan tetapi hanya berlaku untuk objek TextFragment. Namun, mulai rilis Aspose.PDF for .NET 10.7.0, Anda juga dapat menambahkan Catatan Kaki ke objek lain di dalam dokumen PDF seperti Tabel, Sel, dll. Potongan kode berikut menunjukkan langkah-langkah untuk menambahkan Catatan Kaki ke objek TextFragment dan kemudian menambahkan objek Gambar dan Tabel ke koleksi paragraf dari bagian Catatan Kaki.
+Dalam versi rilis sebelumnya, dukungan Catatan Kaki disediakan tetapi hanya berlaku untuk objek TextFragment. Namun, mulai rilis Aspose.PDF for .NET 10.7.0, Anda juga dapat menambahkan Catatan Kaki ke objek lain di dalam dokumen PDF seperti Tabel, Sel, dll. Potongan kode berikut menunjukkan langkah-langkah untuk menambahkan Catatan Kaki ke objek TextFragment dan kemudian menambahkan objek Gambar dan Tabel ke koleksi `paragraphs` dari bagian Catatan Kaki.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -650,7 +650,7 @@ private static void TextAndImageAsParagraph()
 
 ## Tentukan Spasi karakter saat menambahkan Teks
 
-Teks dapat ditambahkan di dalam koleksi paragraf file PDF menggunakan instance TextFragment atau dengan menggunakan objek TextParagraph dan bahkan Anda dapat menempelkan teks di dalam PDF dengan menggunakan kelas TextStamp. Saat menambahkan teks, kita mungkin memiliki kebutuhan untuk menentukan spasi karakter untuk objek teks. Untuk memenuhi kebutuhan ini, properti baru bernama CharacterSpacing telah diperkenalkan. Silakan lihat pendekatan berikut untuk memenuhi kebutuhan ini.
+Teks dapat ditambahkan di dalam koleksi `paragraphs` file PDF menggunakan instance TextFragment atau dengan menggunakan objek TextParagraph dan bahkan Anda dapat menempelkan teks di dalam PDF dengan menggunakan kelas TextStamp. Saat menambahkan teks, kita mungkin memiliki kebutuhan untuk menentukan spasi karakter untuk objek teks. Untuk memenuhi kebutuhan ini, properti baru bernama CharacterSpacing telah diperkenalkan. Silakan lihat pendekatan berikut untuk memenuhi kebutuhan ini.
 
 Pendekatan berikut menunjukkan langkah-langkah untuk menentukan spasi karakter saat menambahkan teks di dalam dokumen PDF.
 
@@ -764,7 +764,7 @@ Dalam majalah dan surat kabar, kita sering melihat bahwa berita ditampilkan dala
 
 Jarak kolom berarti ruang antara kolom dan jarak default antara kolom adalah 1,25cm. Jika lebar kolom tidak ditentukan, maka [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) menghitung lebar untuk setiap kolom secara otomatis sesuai dengan ukuran halaman dan jarak kolom.
 
-Contoh diberikan di bawah ini untuk menunjukkan pembuatan dua kolom dengan objek Grafik (Garis) dan mereka ditambahkan ke koleksi paragraf dari FloatingBox, yang kemudian ditambahkan ke koleksi paragraf dari instance Page.
+Contoh diberikan di bawah ini untuk menunjukkan pembuatan dua kolom dengan objek Grafik (Garis) dan mereka ditambahkan ke koleksi `paragraphs` dari FloatingBox, yang kemudian ditambahkan ke koleksi `paragraphs` dari instance Page.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

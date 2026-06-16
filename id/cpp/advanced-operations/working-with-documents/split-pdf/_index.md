@@ -21,7 +21,7 @@ Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individu dala
 
 1. Loop melalui halaman dokumen PDF melalui koleksi [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) dari objek [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)
 1.
-``` Untuk setiap iterasi, buat objek Dokumen baru dan salin objek [Halaman](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) individual ke dalam dokumen kosong
+``` Untuk setiap iterasi, buat objek Dokumen baru dan salin objek [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) individual ke dalam dokumen kosong
 1. Simpan PDF baru menggunakan metode Simpan
 
 Cuplikan kode C++ berikut menunjukkan cara membagi halaman PDF menjadi file PDF individual.
