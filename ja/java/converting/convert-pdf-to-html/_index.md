@@ -1,6 +1,6 @@
 ---
-title: PDFファイルをHTML形式に変換する 
-linktitle: PDFファイルをHTML形式に変換する 
+title: PDFファイルをHTML形式に変換する
+linktitle: PDFファイルをHTML形式に変換する
 type: docs
 weight: 50
 url: /ja/java/convert-pdf-to-html/

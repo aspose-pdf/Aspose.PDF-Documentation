@@ -1,5 +1,5 @@
 ---
-  
+
 title: 簡単で軽量なデプロイ
 
 type: docs
@@ -9,7 +9,6 @@ weight: 10
 url: /ja/jasperreports/easy-and-lightweight-deployment/
 
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}

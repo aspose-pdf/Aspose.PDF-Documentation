@@ -1,5 +1,6 @@
 ---
-title: Stamp Class
+title: Stamp Class
+linktitle: Stamp Class
 type: docs
 weight: 150
 url: /python-net/stamp-class/

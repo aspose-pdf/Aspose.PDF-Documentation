@@ -1,5 +1,5 @@
 ---
-title: Pemformatan Teks di dalam PDF 
+title: Pemformatan Teks di dalam PDF
 linktitle: Pemformatan Teks di dalam PDF
 type: docs
 weight: 30

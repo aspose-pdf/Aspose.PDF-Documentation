@@ -1,5 +1,6 @@
 ---
 title: Custom Report Item Support
+linktitle: Custom Report Item Support
 type: docs
 weight: 30
 url: /reportingservices/custom-report-item-support/

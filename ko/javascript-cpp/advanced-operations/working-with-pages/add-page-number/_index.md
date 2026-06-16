@@ -1,5 +1,5 @@
 ---
-title: JavaScript를 통해 C++로 PDF에 페이지 번호 추가 
+title: JavaScript를 통해 C++로 PDF에 페이지 번호 추가
 linktitle: 페이지 번호 추가
 type: docs
 weight: 100

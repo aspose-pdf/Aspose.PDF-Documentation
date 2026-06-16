@@ -1,315 +1,288 @@
 ---
-title: 파이썬을 사용하여 PDF 내 텍스트 회전
-linktitle: PDF 내 텍스트 회전
+title: 파이썬에서 PDF 텍스트 회전하기
+linktitle: PDF 내에서 텍스트 회전
 type: docs
 weight: 50
 url: /ko/python-net/rotate-text-inside-pdf/
-description: PDF에 텍스트를 회전하는 다양한 방법을 배웁니다. Aspose.PDF는 텍스트를 임의의 각도로 회전하거나 텍스트 조각 또는 전체 단락을 회전할 수 있습니다.
-lastmod: "2024-02-17"
+description: Python에서 PDF 문서 내에서 텍스트 조각과 단락을 회전하는 방법을 알아봅니다.
+lastmod: "2026-06-10"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python을 사용하여 PDF 문서의 텍스트 조각과 단락을 회전시키세요
+Abstract: 이 문서에서는.NET을 통해 파이썬용 Aspose.PDF 를 사용하여 PDF 문서의 텍스트를 회전하는 방법을 설명합니다.'TextFragment'에 '회전' 속성을 설정하고, 'TextBuilder'와 'TextParagraph'를 사용하여 회전된 콘텐츠를 만들고, 다양한 레이아웃 시나리오에서 회전된 텍스트를 페이지 단락에 직접 추가하는 방법을 보여줍니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "파이썬을 사용하여 PDF 내 텍스트 회전",
-    "alternativeHeadline": "PDF 파일에서 텍스트를 회전하는 방법",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, 문서 생성",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/rotate-text-inside-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/rotate-text-inside-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "PDF에 텍스트를 회전하는 다양한 방법을 배웁니다. Aspose.PDF는 텍스트를 임의의 각도로 회전하거나 텍스트 조각 또는 전체 단락을 회전할 수 있습니다."
-}
-</script>
 
+.NET을 통해 파이썬용 Aspose.PDF 파일을 사용하여 PDF 문서의 텍스트 조각을 회전시킬 수 있습니다.이 페이지에서는 다음을 사용하여 텍스트의 위치와 회전을 제어하는 방법을 보여줍니다. `TextFragment`, `TextState`, 및 `TextBuilder`.회전 각도를 조정하여 대각선 헤더, 세로 레이블, 회전된 주석과 같은 레이아웃을 만들 수 있습니다.
 
-## PDF 내부의 텍스트 회전 속성을 사용하여 텍스트 회전
+## PDF에서 텍스트 빌더를 사용하여 텍스트 조각 회전하기
 
-[TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment) 클래스의 회전 속성을 사용하여 다양한 각도로 텍스트를 회전할 수 있습니다. 텍스트 회전은 문서 생성의 다양한 시나리오에서 사용할 수 있습니다. 요구 사항에 따라 텍스트를 회전하기 위해 각도를 도 단위로 지정할 수 있습니다. 다음은 텍스트 회전을 구현할 수 있는 다양한 시나리오를 확인해 주시기 바랍니다.
+라는 이름의 PDF 파일을 만듭니다. `rotated_fragments.pdf` 가로로 정렬된 세 개의 텍스트 조각 포함:
 
-## TextFragment 및 TextBuilder를 사용하여 회전 구현
+- 첫 번째 텍스트는 회전되지 않습니다
+- 두 번째는 45° 회전합니다.
+- 세 번째는 90° 회전합니다.
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 을 참조하세요.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// 문서 객체 초기화
-Document pdfDocument = new Document();
-// 특정 페이지 가져오기
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// 텍스트 조각 생성
-TextFragment textFragment1 = new TextFragment("main text");
-textFragment1.Position = new Position(100, 600);
-// 텍스트 속성 설정
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// 회전된 텍스트 조각 생성
-TextFragment textFragment2 = new TextFragment("rotated text");
-textFragment2.Position = new Position(200, 600);
-// 텍스트 속성 설정
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment2.TextState.Rotation = 45;
-// 회전된 텍스트 조각 생성
-TextFragment textFragment3 = new TextFragment("rotated text");
-textFragment3.Position = new Position(300, 600);
-// 텍스트 속성 설정
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment3.TextState.Rotation = 90;
-// TextBuilder 객체 생성
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// PDF 페이지에 텍스트 조각 추가
-textBuilder.AppendText(textFragment1);
-textBuilder.AppendText(textFragment2);
-textBuilder.AppendText(textFragment3);
-// 문서 저장
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
+1. 새 PDF 문서 만들기
+1. 회전된 텍스트를 호스트할 새 페이지를 삽입합니다.
+1. 첫 번째 텍스트 조각을 만듭니다 (회전 없음).
+1. 두 번째 텍스트 조각을 만듭니다 (45° 회전).
+1. 세 번째 텍스트 조각을 만듭니다 (90° 회전).
+1. 를 사용하여 텍스트 조각 추가 `TextBuilder`.
+1. 문서를 저장합니다.
+
+```python
+import aspose.pdf as ap
+
+def rotate_text_inside_pdf_1(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("main text")
+        text_fragment_1.position = ap.text.Position(100, 600)
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Create rotated text fragment
+        text_fragment_2 = ap.text.TextFragment("rotated text")
+        text_fragment_2.position = ap.text.Position(200, 600)
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        text_fragment_2.text_state.rotation = 45
+        # Create rotated text fragment
+        text_fragment_3 = ap.text.TextFragment("rotated text")
+        text_fragment_3.position = ap.text.Position(300, 600)
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        text_fragment_3.text_state.rotation = 90
+        # create TextBuilder object
+        builder = ap.text.TextBuilder(page)
+        # Append the text fragment to the PDF page
+        builder.append_text(text_fragment_1)
+        builder.append_text(text_fragment_2)
+        builder.append_text(text_fragment_3)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## PDF의 단락 내에서 개별 텍스트 조각 회전
 
-## TextParagraph 및 TextBuilder를 사용한 회전 구현 (회전된 조각)
+단락 내에서 개별 텍스트 조각을 회전시킵니다.각각 고유한 회전 각도를 가진 여러 조각 (TextFragment) 을 포함하는 여러 줄 단락 (TextParagment) 을 만드는 방법을 보여줍니다.이 방법은 가로 방향과 대각선 방향의 텍스트 (예: 양식화된 머리글, 다이어그램 또는 주석이 달린 레이블) 를 결합하여 시각적으로 풍부한 문서를 만드는 데 유용합니다.
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 을 참조하세요.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// 문서 객체 초기화
-Document pdfDocument = new Document();
-// 특정 페이지 가져오기
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-TextParagraph paragraph = new TextParagraph();
-paragraph.Position = new Position(200, 600);
-// 텍스트 조각 생성
-TextFragment textFragment1 = new TextFragment("rotated text");
-// 텍스트 속성 설정
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// 회전 설정
-textFragment1.TextState.Rotation = 45;
-// 텍스트 조각 생성
-TextFragment textFragment2 = new TextFragment("main text");
-// 텍스트 속성 설정
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// 텍스트 조각 생성
-TextFragment textFragment3 = new TextFragment("another rotated text");
-// 텍스트 속성 설정
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// 회전 설정
-textFragment3.TextState.Rotation = -45;
-// 텍스트 조각을 단락에 추가
-paragraph.AppendLine(textFragment1);
-paragraph.AppendLine(textFragment2);
-paragraph.AppendLine(textFragment3);
-// TextBuilder 객체 생성
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// PDF 페이지에 텍스트 단락 추가
-textBuilder.AppendParagraph(paragraph);
-// 문서 저장
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
+라는 이름의 PDF를 만듭니다. `rotated_paragraph_fragments.pdf` 세 줄의 텍스트가 있는 단락을 포함하며 각 줄은 다르게 회전합니다.
+
+- 첫 번째 선이 45° 회전합니다.
+- 두 번째 선은 수평 (0°) 으로 유지됩니다.
+- 세 번째 선은 -45° 회전합니다.
+
+1. 새 PDF 문서 만들기
+1. 회전된 텍스트가 표시될 빈 페이지를 추가합니다.
+1. 만들기 `TextParagraph`.
+1. 첫 번째 텍스트 조각을 만들고 구성합니다 (+45° 회전).
+1. 두 번째 텍스트 조각을 만듭니다 (회전 없음).
+1. 세 번째 텍스트 조각을 만듭니다 (-45° 회전).
+1. 단락에 텍스트 조각을 추가합니다.
+1. 를 사용하여 페이지에 단락 추가 `TextBuilder`.
+1. 문서를 저장합니다.
+
+```python
+import aspose.pdf as ap
+
+def rotate_text_inside_pdf_2(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        paragraph = ap.text.TextParagraph()
+        paragraph.position = ap.text.Position(200, 600)
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Set rotation
+        text_fragment_1.text_state.rotation = 45
+        # Create text fragment
+        text_fragment_2 = ap.text.TextFragment("main text")
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Create text fragment
+        text_fragment_3 = ap.text.TextFragment("another rotated text")
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Set rotation
+        text_fragment_3.text_state.rotation = -45
+        # Append the text fragments to the paragraph
+        paragraph.append_line(text_fragment_1)
+        paragraph.append_line(text_fragment_2)
+        paragraph.append_line(text_fragment_3)
+        # Create TextBuilder object
+        text_builder = ap.text.TextBuilder(page)
+        # Append the text paragraph to the PDF page
+        text_builder.append_paragraph(paragraph)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## PDF의 페이지 단락을 사용하여 텍스트 회전하기
 
-## TextFragment 및 Page.Paragraphs를 사용하여 회전 구현
+이 단원에서는.NET을 통해 Python용 Aspose.PDF 를 사용하여 PDF 내에서 텍스트를 회전하는 간단한 방법을 보여줍니다.
+저수준 접근 방식과 달리 `TextBuilder` 또는 `TextParagraph`, 이 메서드는 회전된 텍스트 조각을 페이지의 단락 컬렉션에 직접 추가합니다 (`page.paragraphs`).기본적인 텍스트 회전이 필요하지만 정확한 위치 지정이나 단락 구조가 필요하지 않은 경우에 이상적입니다.
 
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에 있습니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// 문서 객체 초기화
-Document pdfDocument = new Document();
-// 특정 페이지 가져오기
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// 텍스트 조각 생성
-TextFragment textFragment1 = new TextFragment("main text");
-// 텍스트 속성 설정
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// 텍스트 조각 생성
-TextFragment textFragment2 = new TextFragment("rotated text");
-// 텍스트 속성 설정
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// 회전 설정
-textFragment2.TextState.Rotation = 315;
-// 텍스트 조각 생성
-TextFragment textFragment3 = new TextFragment("rotated text");
-// 텍스트 속성 설정
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// 회전 설정
-textFragment3.TextState.Rotation = 270;
-pdfPage.Paragraphs.Add(textFragment1);
-pdfPage.Paragraphs.Add(textFragment2);
-pdfPage.Paragraphs.Add(textFragment3);
-// 문서 저장
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
+라는 파일을 생성합니다 `simple_rotated_text.pdf` 포함:
+
+- 기본 수평 텍스트 조각 0° 회전
+- 315° 회전된 프래그먼트
+- 270° 회전된 프래그먼트
+
+1. 새 PDF 문서를 초기화합니다.
+1. 회전된 텍스트를 배치할 페이지를 만듭니다.
+1. 첫 번째 텍스트 조각을 만듭니다 (회전 없음).
+1. 두 번째 텍스트 조각을 만듭니다 (315° 회전).
+1. 세 번째 텍스트 조각을 만듭니다 (270° 회전).
+1. 페이지 단락에 텍스트 조각을 직접 추가합니다.
+1. PDF 문서를 저장합니다.
+
+```python
+import aspose.pdf as ap
+
+def rotate_text_inside_pdf_3(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("main text")
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Create text fragment
+        text_fragment_2 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Set rotation
+        text_fragment_2.text_state.rotation = 315
+        # Create text fragment
+        text_fragment_3 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+        # Set rotation
+        text_fragment_3.text_state.rotation = 270
+        page.paragraphs.add(text_fragment_1)
+        page.paragraphs.add(text_fragment_2)
+        page.paragraphs.add(text_fragment_3)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## PDF에서 전체 단락 회전
 
-## TextParagraph 및 TextBuilder를 사용하여 회전 구현 (문단 전체 회전)
+이 예제는 PDF의 고급 단락 수준 텍스트 회전을 보여줍니다.각 텍스트 부분이 개별적으로 회전되는 조각 수준 회전과 달리 이 방법은 전체 단락을 서로 다른 각도로 통합된 블록으로 회전합니다.
+각 단락에는 스타일이 지정된 여러 텍스트 부분이 포함되어 있으며 전체 단락이 특정 각도로 회전되므로 복잡하고 일관된 레이아웃 변환이 가능합니다.
+이는 전체 텍스트 섹션의 방향을 다양한 방향으로 지정해야 하는 예술적인 레이아웃, 워터마크 또는 디자인이 많은 PDF에 적합합니다.
 
-```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET를 참조하세요.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// 문서 객체 초기화
-Document pdfDocument = new Document();
-// 특정 페이지 가져오기
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-for (int i = 0; i < 4; i++)
-{
-    TextParagraph paragraph = new TextParagraph();
-    paragraph.Position = new Position(200, 600);
-    // 회전 지정
-    paragraph.Rotation = i * 90 + 45;
-    // 텍스트 조각 생성
-    TextFragment textFragment1 = new TextFragment("문단 텍스트");
-    // 텍스트 조각 생성
-    textFragment1.TextState.FontSize = 12;
-    textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment1.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment1.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    // 텍스트 조각 생성
-    TextFragment textFragment2 = new TextFragment("두 번째 줄의 텍스트");
-    // 텍스트 속성 설정
-    textFragment2.TextState.FontSize = 12;
-    textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment2.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment2.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    // 텍스트 조각 생성
-    TextFragment textFragment3 = new TextFragment("그리고 더 많은 텍스트...");
-    // 텍스트 속성 설정
-    textFragment3.TextState.FontSize = 12;
-    textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment3.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment3.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    textFragment3.TextState.Underline = true;
-    paragraph.AppendLine(textFragment1);
-    paragraph.AppendLine(textFragment2);
-    paragraph.AppendLine(textFragment3);
-    // TextBuilder 객체 생성
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // PDF 페이지에 텍스트 조각 추가
-    textBuilder.AppendParagraph(paragraph);
-}
-// 문서 저장
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
+를 생성합니다 `rotated_paragraphs.pdf`, 완전히 스타일이 지정되고 회전된 네 개의 단락이 포함되어 있습니다.
+
+- 각각 고유한 각도 (45°, 135°, 225° 및 315°) 로 회전합니다.
+- 각 단락에는 색상이 지정된 배경, 밑줄 및 일관된 스타일이 적용된 세 줄의 텍스트가 있습니다.
+
+1. 새 PDF 문서 만들기
+1. 회전된 단락을 담을 빈 페이지를 추가합니다.
+1. 반복하여 여러 단락을 만들 수 있습니다.
+1. 단락을 만들고 배치합니다.
+1. 서식을 지정하여 텍스트 조각을 만들 수 있습니다.
+1. 텍스트 서식을 적용합니다.
+1. 단락에 텍스트 조각을 추가합니다.
+1. 를 사용하여 페이지에 단락 추가 `TextBuilder`.
+1. 네 회전 모두에 대해 반복합니다.
+1. PDF 문서를 저장합니다.
+
+```python
+import aspose.pdf as ap
+
+def rotate_text_inside_pdf_4(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        for i in range(4):
+            paragraph = ap.text.TextParagraph()
+            paragraph.position = ap.text.Position(200, 600)
+            # Specify rotation
+            paragraph.rotation = i * 90 + 45
+            # Create text fragment
+            text_fragment_1 = ap.text.TextFragment("Paragraph Text")
+            # Create text fragment
+            text_fragment_1.text_state.font_size = 12
+            text_fragment_1.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
+            text_fragment_1.text_state.background_color = ap.Color.light_gray
+            text_fragment_1.text_state.foreground_color = ap.Color.blue
+            # Create text fragment
+            text_fragment_2 = ap.text.TextFragment("Second line of text")
+            # Set text properties
+            text_fragment_2.text_state.font_size = 12
+            text_fragment_2.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
+            text_fragment_2.text_state.background_color = ap.Color.light_gray
+            text_fragment_2.text_state.foreground_color = ap.Color.blue
+            # Create text fragment
+            text_fragment_3 = ap.text.TextFragment("And some more text...")
+            # Set text properties
+            text_fragment_3.text_state.font_size = 12
+            text_fragment_3.text_state.font = ap.text.FontRepository.find_font(
+                "TimesNewRoman"
+            )
+            text_fragment_3.text_state.background_color = ap.Color.light_gray
+            text_fragment_3.text_state.foreground_color = ap.Color.blue
+            text_fragment_3.text_state.underline = True
+            paragraph.append_line(text_fragment_1)
+            paragraph.append_line(text_fragment_2)
+            paragraph.append_line(text_fragment_3)
+            # Create TextBuilder object
+            builder = ap.text.TextBuilder(page)
+            # Append the text fragment to the PDF page
+            builder.append_paragraph(paragraph)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## 관련 텍스트 주제
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 조작 라이브러리 for .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Python을 사용하여 PDF에서 텍스트 작업하기](/pdf/ko/python-net/working-with-text/)
+- [PDF에 텍스트 추가](/pdf/ko/python-net/add-text-to-pdf-file/)
+- [파이썬에서 PDF 텍스트 포맷 지정하기](/pdf/ko/python-net/text-formatting-inside-pdf/)
+- [PDF의 텍스트를 파이썬으로 바꾸기](/pdf/ko/python-net/replace-text-in-pdf/)

@@ -1,5 +1,5 @@
 ---
-title: Trabajando con Metadatos de Archivos PDF en Node.js 
+title: Trabajando con Metadatos de Archivos PDF en Node.js
 linktitle: Metadatos de Archivos PDF
 type: docs
 weight: 130

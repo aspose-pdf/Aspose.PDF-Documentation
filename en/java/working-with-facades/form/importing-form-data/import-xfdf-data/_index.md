@@ -1,5 +1,6 @@
 ---
 title: Import XFDF Data
+linktitle: Import XFDF Data
 type: docs
 weight: 20
 url: /java/import-xfdf-data/

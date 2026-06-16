@@ -1,5 +1,5 @@
 ---
-title: Añadir y Eliminar un Marcador 
+title: Añadir y Eliminar un Marcador
 linktitle: Añadir y Eliminar un Marcador
 type: docs
 weight: 10

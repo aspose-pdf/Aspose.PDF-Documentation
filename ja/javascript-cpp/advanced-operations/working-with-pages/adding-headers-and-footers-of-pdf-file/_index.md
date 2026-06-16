@@ -1,5 +1,5 @@
 ---
-title: JavaScriptを介してC++でPDFにヘッダーとフッターを追加 
+title: JavaScriptを介してC++でPDFにヘッダーとフッターを追加
 linktitle: PDFにヘッダーとフッターを追加
 type: docs
 weight: 70

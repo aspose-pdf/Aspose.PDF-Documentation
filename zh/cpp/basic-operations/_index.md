@@ -1,14 +1,14 @@
 ---
-title: 基本操作与PDF文档  
-linktitle: 基本操作  
-type: docs  
-weight: 40  
-url: /zh/cpp/basic-operations/  
-lastmod: "2021-11-01"  
-description: 基本操作部分描述了使用Aspose.PDF库打开和保存PDF文档的可能性。  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: 基本操作与PDF文档
+linktitle: 基本操作
+type: docs
+weight: 40
+url: /zh/cpp/basic-operations/
+lastmod: "2021-11-01"
+description: 基本操作部分描述了使用Aspose.PDF库打开和保存PDF文档的可能性。
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **基本操作**部分描述了在Aspose.PDF for C++中对PDF文档进行的第一个也是最简单的操作：

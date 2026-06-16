@@ -1,5 +1,5 @@
 ---
-title: Memutar Teks di Dalam PDF 
+title: Memutar Teks di Dalam PDF
 linktitle: Memutar Teks di Dalam PDF
 type: docs
 weight: 50

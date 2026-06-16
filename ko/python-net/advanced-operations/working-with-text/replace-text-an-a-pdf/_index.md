@@ -1,559 +1,507 @@
 ---
-title: Python을 통한 PDF에서 텍스트 교체
-linktitle: PDF에서 텍스트 교체
+title: PDF의 텍스트를 파이썬으로 바꾸기
+linktitle: PDF에서 텍스트 바꾸기
 type: docs
 weight: 40
 url: /ko/python-net/replace-text-in-pdf/
-description: Aspose.PDF for Python via .NET 라이브러리에서 텍스트를 교체 및 제거하는 다양한 방법에 대해 알아보세요.
-lastmod: "2024-02-17"
+description: 페이지 간 텍스트 바꾸기, 페이지 영역 변경 제한, 정규식 사용, 텍스트 제거 등 PDF 파일의 텍스트를 Python으로 바꾸는 방법을 알아봅니다.
+lastmod: "2026-06-10"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /python-net/replace-text-in-a-pdf-document/
+TechArticle: true
+AlternativeHeadline: Python을 사용하여 PDF 파일의 텍스트 바꾸기 및 제거
+Abstract: 이 문서에서는.NET을 통해 PDF 문서의 텍스트를 Python용 Aspose.PDF 로 바꾸는 방법을 보여줍니다.전체 페이지의 텍스트 바꾸기, 페이지 영역 바꾸기, 정규식 일치, 글꼴 바꾸기, 텍스트 레이아웃 조정, 보이거나 숨겨진 텍스트 제거에 대해 다룹니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF에서 텍스트 교체",
-    "alternativeHeadline": "PDF 파일에서 텍스트 교체 및 제거",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, 텍스트 교체, 텍스트 제거",
-    "wordcount": "302",
-    "proficiencyLevel":"초급",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/replace-text-in-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/replace-text-in-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Aspose.PDF for Python via .NET 라이브러리에서 텍스트를 교체 및 제거하는 다양한 방법에 대해 알아보세요."
-}
-</script>
 
+이 페이지에서는.NET을 통해 파이썬용 Aspose.PDF 를 사용하여**PDF의 텍스트를 파이썬으로 대체**하는 방법을 보여줍니다.
 
-## PDF 문서의 모든 페이지에서 텍스트 교체
+텍스트 값을 업데이트하거나, 불필요한 내용을 제거하거나, 특정 페이지 영역의 텍스트를 바꾸거나, 여러 PDF 페이지에 텍스트 대체 규칙을 적용해야 할 때 이러한 예를 사용하십시오.
+
+## PDF의 텍스트를 파이썬으로 바꾸기
+
+### PDF 문서의 모든 페이지에서 텍스트 바꾸기
 
 {{% alert color="primary" %}}
 
-Aspose.PDF를 사용하여 문서에서 텍스트를 찾고 교체하여 결과를 온라인으로 얻을 수 있습니다 [링크](https://products.aspose.app/pdf/redaction)
+Aspose.PDF 파일을 사용하여 온라인으로 텍스트 검색 및 바꾸기를 시도할 수 있습니다. [편집 앱](https://products.aspose.app/pdf/redaction).
 
 {{% /alert %}}
 
-PDF 문서의 모든 페이지에서 텍스트를 교체하려면 먼저 [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/)를 사용하여 교체하려는 특정 구문을 찾아야 합니다. 그런 다음 모든 TextFragment를 통해 텍스트를 교체하고 다른 속성을 변경해야 합니다. 완료한 후에는 Document 객체의 Save 메서드를 사용하여 출력 PDF를 저장하기만 하면 됩니다. 다음 코드 스니펫은 PDF 문서의 모든 페이지에서 텍스트를 교체하는 방법을 보여줍니다.
+텍스트 교체는 제품 이름 변경, 오타 수정, 여러 페이지의 용어 업데이트 등 기존 PDF 문서의 내용을 업데이트하거나 수정할 때 일반적으로 필요한 요구 사항입니다.
+
+.NET을 통한 Python용 Aspose.PDF 는 프로그래밍 방식으로 텍스트를 검색하고 바꾸는 강력하고 효율적인 방법을 제공합니다. [텍스트 프래그먼트 업소버](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) 수업.
+
+이 예제에서는 전체 PDF 문서에서 나타나는 특정 문구 (이 경우 “Black cat”) 를 모두 찾아 새 문구 (“White dog”) 로 바꾸는 방법을 보여줍니다.
+
+1. 검색 및 대체 문구를 지정합니다.찾으려는 텍스트와 대체하려는 텍스트를 설정합니다.
+1. PDF 문서를 로드합니다.
+1. 텍스트 흡수기 만들기.텍스트 프래그먼트 업소버는 검색 구문을 사용하여 초기화됩니다.문서에서 해당 구문의 모든 인스턴스를 검색합니다.
+1. 모든 페이지에 흡수기를 적용합니다.이렇게 하면 모든 페이지가 반복되고 해당 문구와 일치하는 텍스트 조각이 수집됩니다.
+1. 찾은 각 조각을 교체하십시오.“검은 고양이”의 모든 인스턴스를 “흰색 개”로 변경해야 합니다.
+1. 업데이트된 PDF를 저장합니다.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def replace_text_on_all_pages(infile, outfile):
+    search_phrase = "PDF"
+    replace_phrase = "pdf"
 
-    # 문서 열기
-    document = ap.Document(input_pdf)
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
+        document.pages.accept(absorber)
 
-    # 입력 검색 구문의 모든 인스턴스를 찾기 위해 TextAbsorber 객체 생성
-    absorber = ap.text.TextFragmentAbsorber("format")
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
 
-    # 모든 페이지에 대해 absorber 수락
+        document.save(outfile)
+```
+
+### 특정 페이지 영역의 텍스트 바꾸기
+
+전체 문서를 검색하는 대신 PDF 페이지의 특정 영역 내에서만 텍스트를 바꿔야 하는 경우가 있습니다 (예: 알려진 위치의 머리글, 바닥글 또는 표 셀 업데이트).
+
+.NET 라이브러리를 통한 파이썬용 Aspose.PDF 라이브러리는 다음을 활용하여 이 기능을 가능하게 합니다. [텍스트 프래그먼트 업소버](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) 지역 기반 텍스트 검색과 함께 사용할 수 있습니다.
+
+이 예제에서는 특정 페이지의 정의된 사각형 영역 내에 있는 대상 문구를 모두 찾아 바꾸는 방법을 보여줍니다.
+
+1. 검색 및 대체 문구를 지정합니다.
+1. PDF 문서를 로드합니다.
+1. 검색을 위한 텍스트 흡수기를 만드세요.TextFragmentAbsorber를 초기화하여 원하는 텍스트를 찾으십시오.
+1. 검색 영역을 제한합니다.사각형은 페이지의 x 및 y 좌표 제한을 지정합니다.
+1. 특정 페이지에 업소버를 적용합니다.그러면 검색이 수행되고 지정된 영역 내에서 일치하는 텍스트 조각이 수집됩니다.
+1. 찾은 텍스트를 바꿉니다.정의된 영역에 'doc'이 나타날 때마다 'DOC'가 됩니다.
+1. 업데이트된 PDF를 저장합니다.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_in_particular_page_region(infile, outfile):
+    search_phrase = "doc"
+    replace_phrase = "DOC"
+
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
+        absorber.text_search_options.limit_to_page_bounds = True
+        absorber.text_search_options.rectangle = ap.Rectangle(300, 442, 500, 742, True)
+        document.pages[1].accept(absorber)
+
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
+
+        document.save(outfile)
+```
+
+### 글꼴 크기를 변경하지 않고 텍스트 크기 조정 및 이동
+
+PDF에서 텍스트를 바꿀 때 글꼴 크기를 수정하지 않고 특정 영역에 새 텍스트를 맞추거나 위치를 조정해야 하는 경우가 있습니다.
+.NET을 통한 Python용 Aspose.PDF 파일은 원래 글꼴 크기를 그대로 유지하면서 텍스트 레이아웃과 간격을 조정할 수 있는 옵션을 제공합니다.
+
+1. PDF 문서를 로드합니다.
+1. 'TextFragmentAbsorber'를 사용하여 페이지의 모든 텍스트 조각을 수집하세요.
+1. 수정할 프래그먼트를 선택합니다.
+1. 텍스트 사각형을 이동하고 크기를 조정합니다.
+1. 텍스트 간격을 조정합니다.수정된 사각형 내에 텍스트가 맞도록 간격 조정을 활성화합니다.
+1. 프래그먼트 텍스트를 교체합니다.
+1. 업데이트된 PDF를 저장합니다.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = fragment.rectangle
+        rect.llx += 50
+        rect.urx -= 50
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### PDF에서 단락 크기 조정 및 이동
+
+PDF로 작업할 때 페이지 레이아웃에 맞게 시각적으로 정렬된 상태로 단락을 바꾸거나 확장해야 하는 경우가 있습니다.Aspose.PDF 기능을 사용하면 글꼴 크기를 변경하지 않고도 단락의 테두리 사각형 크기를 조정하고 새 텍스트에 맞게 간격을 조정할 수 있습니다.
+
+1. PDF 문서를 로드합니다.
+1. 페이지의 모든 텍스트 조각을 수집하려면 '텍스트 조각 흡수기'를 사용하십시오.
+1. 수정할 프래그먼트를 선택합니다.
+1. 단락의 크기를 조정하고 이동하십시오.페이지의 미디어 상자를 사용하여 경계를 결정하고 사각형을 조정합니다.
+1. 간격을 조정합니다.이렇게 하면 글꼴 크기를 변경하는 대신 단어/글자 사이의 간격이 수정됩니다.
+1. 프래그먼트 텍스트를 교체합니다.
+1. 수정한 PDF를 저장합니다.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_shift_paragraph(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = document.pages[1].media_box
+        rect.llx += 20
+        rect.urx -= 20
+        rect.ury -= 20
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### 텍스트 바꾸기 및 대상 영역 채우기에 맞게 글꼴 자동 확장
+
+특정 사각형 영역을 채우도록 글꼴의 크기를 자동으로 조정하고 확장하면서 PDF의 텍스트를 교체할 수 있습니다.이 코드는 Aspose.PDF for Python.NET 라이브러리를 사용하여 수동으로 글꼴을 계산할 필요 없이 새 텍스트 내용이 정의된 경계 상자에 완벽하게 맞도록 글꼴 크기와 간격을 동적으로 조정합니다.
+
+1. PDF를 로드합니다.
+1. 텍스트 조각 캡처.
+1. 특정 프래그먼트를 선택합니다.
+1. 대상 사각형을 정의합니다.
+1. 텍스트 조정 옵션을 활성화합니다.
+1. 텍스트 바꾸기.
+1. 문서를 저장합니다.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_expand_font(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = ap.Rectangle(100, 300, 512, 692, True)
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SCALE_TO_FILL
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### 텍스트 바꾸기 및 사각형에 맞추기
+
+필요한 경우 글꼴 크기를 자동으로 줄여 새 내용이 원본 텍스트의 사각형 영역에 맞도록 하면서 PDF 문서의 텍스트를 교체합니다.
+
+.NET 라이브러리를 통해 Aspose.PDF for Python을 사용하는 이 함수는 오버플로를 방지하면서 문서 구조를 보존하면서 텍스트 레이아웃과 글꼴 크기를 모두 동적으로 조정합니다.
+
+1. TextFragmentAbsorber 객체를 만들어 첫 페이지에서 모든 텍스트 조각을 추출합니다.
+1. 특정 텍스트 조각에 액세스하십시오.
+1. 교체 영역을 설정합니다.
+1. 텍스트 조정 옵션을 구성합니다.두 가지 주요 교체 옵션을 설정합니다.
+    - 글꼴 크기 조정 - 'SHRINK_TO_FIT'은 새 텍스트가 너무 길 경우 글꼴 크기를 자동으로 줄입니다.
+    - 간격 조정 - 'ADJUST_SPACE_WIDTH'는 간격을 비례적으로 유지합니다.
+1. 텍스트를 교체합니다.
+1. 수정한 PDF를 저장합니다.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_fit_text_into_rectangle(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = fragment.rectangle
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SHRINK_TO_FIT
+        )
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### 자동으로 자리표시자 텍스트 바꾸기 및 PDF 레이아웃 재정렬
+
+PDF 내의 자리 표시자 텍스트 (예: 템플릿 또는 양식) 를 이름이나 회사 정보와 같은 실제 데이터로 바꿉니다.
+사용자 지정 서식 (글꼴, 색상, 크기) 을 적용하면서 새 텍스트에 맞게 페이지 레이아웃을 자동으로 조정합니다.
+
+1. PDF를 가져오고 로드합니다.
+1. 플레이스홀더를 위한 텍스트 흡수기를 만드세요.
+1. 모든 페이지에 흡수기를 적용합니다.
+1. 찾은 텍스트 조각을 반복해서 살펴보세요.
+1. 사용자 지정 텍스트 서식을 적용합니다.
+1. 업데이트된 문서를 저장합니다.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def automatically_rearrange_page_contents(input_file, output_file):
+    document = ap.Document(input_file)
+
+    absorber = ap.text.TextFragmentAbsorber("[Long_placeholder_Long_placeholder]")
     document.pages.accept(absorber)
 
-    # 추출된 텍스트 조각 가져오기
-    collection = absorber.text_fragments
+    for text_fragment in absorber.text_fragments:
+        # text_fragment.text = "John Smith"
+        text_fragment.text = "John Smith, South Development Studio"
+        text_fragment.text_state.font = ap.text.FontRepository.find_font("Calibri")
+        text_fragment.text_state.font_size = 12
+        text_fragment.text_state.foreground_color = ap.Color.navy
 
-    # 조각을 반복
-    for text_fragment in collection:
-        # 텍스트 및 기타 속성 업데이트
-        text_fragment.text = "FORMAT"
-        text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
-        text_fragment.text_state.font_size = 22
-        text_fragment.text_state.foreground_color = ap.Color.blue
-        text_fragment.text_state.background_color = ap.Color.green
-
-    # 문서 저장
-    document.save(output_pdf)
+    # Save PDF document
+    document.save(output_file)
 ```
 
+### 정규 표현식을 기반으로 텍스트 바꾸기
 
-## 특정 페이지 영역의 텍스트 교체
+PDF 문서로 작업할 때 전화번호, 코드 또는 날짜와 같은 형식 등 특정 문구가 아닌 패턴을 따르는 텍스트를 바꿔야 할 수 있습니다.
 
-특정 페이지 영역의 텍스트를 교체하기 위해, 먼저 TextFragmentAbsorber 객체를 인스턴스화하고, TextSearchOptions.Rectangle 속성을 사용하여 페이지 영역을 지정한 다음 모든 TextFragments를 반복하여 텍스트를 교체해야 합니다. 이러한 작업이 완료되면, Document 객체의 Save 메서드를 사용하여 출력 PDF를 저장하기만 하면 됩니다. 다음 코드 스니펫은 PDF 문서의 모든 페이지에서 텍스트를 교체하는 방법을 보여줍니다.
+.NET을 통한 파이썬용 Aspose.PDF 기능을 사용하면 TextFragmentAbsorber 클래스의 정규 표현식 (regex) 을 사용하여 이러한 대체 작업을 수행할 수 있습니다.
+
+이 예제에서는 텍스트 패턴 (이 경우 1234-5678과 같이 ###-## 형식과 일치하는 모든 텍스트) 을 찾아 서식이 지정된 문자열 'ABC1-2XZY'로 바꾸는 방법을 보여 줍니다.또한 대체된 텍스트의 글꼴, 색상 및 크기를 사용자 지정하는 방법도 보여 줍니다.
+
+다음 코드 스니펫은 정규 표현식을 기반으로 텍스트를 바꾸는 방법을 보여줍니다.
+
+1. PDF 문서를 로드합니다.
+1. 정규식 기반 텍스트 흡수기 만들기정규 표현식 패턴을 사용하여 TextFragment의 흡수기를 초기화합니다.
+1. 정규 표현식 모드를 활성화합니다.'True' 파라미터는 정규 표현식 검색 모드를 활성화합니다.
+1. 페이지에 업소버를 적용합니다.이렇게 하면 페이지에서 정의된 정규식 패턴과 일치하는 모든 텍스트 부분이 검색됩니다.
+1. 각 일치 항목을 새 텍스트로 바꾸고 사용자 지정 스타일을 적용하세요.
+1. 수정된 문서를 저장합니다.
 
 ```python
-// PDF 파일 불러오기
-Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
+import sys
+import aspose.pdf as ap
+from os import path
 
-// TextFragment Absorber 객체 인스턴스화
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
+def replace_text_based_on_regex(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(r"\d{4}-\d{4}")
+        absorber.text_search_options = ap.text.TextSearchOptions(True)
+        document.pages[1].accept(absorber)
 
-// 페이지 경계 내에서 텍스트 검색
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
+        for fragment in absorber.text_fragments:
+            fragment.text = "ABC1-2XZY"
+            fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+            fragment.text_state.font_size = 12
+            fragment.text_state.foreground_color = ap.Color.blue
+            fragment.text_state.background_color = ap.Color.light_green
 
-// TextSearch 옵션에 대한 페이지 영역 지정
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
-
-// PDF 파일의 첫 페이지에서 텍스트 검색
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
-
-// 개별 TextFragment 반복
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-{
-    // 텍스트를 빈 문자로 업데이트
-    tf.Text = "";
-}
-
-// 텍스트 교체 후 업데이트된 PDF 파일 저장
-pdf.Save("c:/pdftest/TextUpdated.pdf");
+        document.save(outfile)
 ```
 
+## 글꼴 바꾸기 또는 사용하지 않는 글꼴 제거
 
-## 정규 표현식을 기반으로 텍스트 교체
+### 기존 PDF 파일의 글꼴 바꾸기
 
-정규 표현식을 기반으로 일부 구문을 교체하려면 먼저 TextFragmentAbsorber를 사용하여 특정 정규 표현식과 일치하는 모든 구문을 찾아야 합니다. TextFragmentAbsorber 생성자에 정규 표현식을 매개변수로 전달해야 합니다. 정규 표현식이 사용되는지 여부를 지정하는 TextSearchOptions 객체도 생성해야 합니다. TextFragments에서 일치하는 구문을 얻으면 모든 구문을 반복하여 필요에 따라 업데이트해야 합니다. 마지막으로, Document 객체의 Save 메서드를 사용하여 업데이트된 PDF를 저장해야 합니다. 다음 코드 스니펫은 정규 표현식을 기반으로 텍스트를 교체하는 방법을 보여줍니다.
+경우에 따라 PDF 전체의 글꼴을 표준화하거나 업데이트해야 합니다. 예를 들어 오래되거나 독점 글꼴을 접근하기 쉬운 글꼴로 교체해야 합니다..NET 라이브러리를 통한 Python용 Aspose.PDF 라이브러리를 사용하면 프로그래밍 방식으로 글꼴을 검색하고 바꿀 수 있으므로 일관된 타이포그래피와 문서 호환성을 보장할 수 있습니다.
+
+이 예제는 PDF 문서 전체에서 특정 글꼴 (예: 'Arial-Boldmt') 의 모든 인스턴스를 다른 글꼴 (예: 'Verdana') 로 바꾸는 방법을 보여줍니다.
+
+다음 코드 스니펫은 PDF 문서 내에서 글꼴을 바꾸는 방법을 보여줍니다.
+
+1. PDF 문서를 엽니다.
+1. 텍스트 조각 흡수기를 초기화합니다.
+1. 흡수기를 사용하여 문서의 모든 페이지에서 텍스트 조각을 추출합니다.
+1. 글꼴 식별 및 바꾸기.스크립트는 프래그먼트의 현재 글꼴이 'Arial-BoldMt'인지 확인합니다.참인 경우 FontRepository.find_font () 메서드를 사용하여 '베르다나' 글꼴로 대체합니다.
+1. 수정된 문서를 저장합니다.
 
 ```python
-// 전체 예제 및 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 을 참조하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
+def replace_fonts(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        document.pages.accept(absorber)
 
-// 정규 표현식과 일치하는 모든 구문을 찾기 위한 TextAbsorber 객체 생성
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // 예: 1999-2000
+        for fragment in absorber.text_fragments:
+            if fragment.text_state.font.font_name == "Arial-BoldMT":
+                fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
 
-// 정규 표현식 사용 여부를 지정하도록 텍스트 검색 옵션 설정
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
-
-// 단일 페이지에 대해 흡수기 수락
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
-
-// 추출된 텍스트 조각 가져오기
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// 조각 반복
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // 텍스트 및 기타 속성 업데이트
-    textFragment.Text = "새로운 구문";
-    // 객체의 인스턴스로 설정합니다.
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
+        document.save(outfile)
 ```
 
+### 사용하지 않는 글꼴 제거
 
-## 기존 PDF 파일에서 글꼴 교체
+시간이 지남에 따라 PDF 문서에는 사용하지 않거나 포함된 글꼴이 누적되어 파일 크기가 커지고 처리 속도가 느려질 수 있습니다.이러한 미사용 글꼴은 특히 크거나 복잡한 PDF로 작업할 때 텍스트를 편집하거나 교체한 후에도 그대로 남아 있는 경우가 많습니다.
 
-Aspose.PDF for Python via .NET은 PDF 문서에서 텍스트를 교체하는 기능을 지원합니다. 그러나 때때로 PDF 문서 내에서 사용되는 글꼴만 교체해야 할 필요가 있습니다. 따라서 텍스트를 교체하는 대신, 사용되는 글꼴만 교체됩니다. TextFragmentAbsorber 생성자의 오버로드 중 하나는 TextEditOptions 객체를 인수로 받아들이며, 우리는 TextEditOptions.FontReplace 열거형에서 RemoveUnusedFonts 값을 사용하여 우리의 요구사항을 충족할 수 있습니다. 다음 코드 스니펫은 PDF 문서 내의 글꼴을 교체하는 방법을 보여줍니다.
+.NET을 통한 파이썬용 Aspose.PDF 라이브러리는 TextEditOptions 클래스를 사용하여 이러한 중복 글꼴을 제거하는 효율적인 방법을 제공합니다.이렇게 하면 문서가 최적화될 뿐만 아니라 보이는 텍스트에 실제로 적용된 글꼴만 사용되도록 할 수 있습니다.
+
+'remove_unused_fonts () '메서드는 중복 글꼴 데이터를 제거하여 PDF 파일을 최적화하는 간단하면서도 강력한 방법입니다.
+
+이 예제에서는 다음 방법을 보여줍니다.
+
+- PDF에서 사용하지 않은 글꼴을 스캔합니다.
+- 안전하게 제거하십시오.
+- 활성 텍스트 부분을 일관된 글꼴로 재할당합니다 (예: Times New Roman).
+
+1. PDF 문서를 엽니다.
+1. 텍스트 편집 옵션을 구성합니다.그러면 엔진이 현재 보이는 텍스트에 사용되지 않는 포함된 글꼴을 제거하도록 지시합니다.
+1. 옵션을 사용하여 텍스트 흡수기를 만드십시오.텍스트 조각 흡수기는 편집을 위해 문서에서 텍스트 조각을 추출합니다.
+1. 표준 글꼴을 재할당합니다.업소버가 모든 조각을 수집한 후에는 이를 반복하여 일관된 글꼴을 적용하세요.
+1. 정리한 PDF를 저장합니다.
 
 ```python
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET를 참조하세요.
-// 문서 디렉토리의 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 소스 PDF 파일 로드
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
-// 텍스트 조각 검색 및 편집 옵션을 사용하지 않는 글꼴 제거로 설정
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
+def remove_unused_fonts(input_file, output_file):
+    # Open PDF document
+    document = ap.Document(input_file)
 
-// 모든 페이지에 대해 흡수기 허용
-pdfDocument.Pages.Accept(absorber);
-// 모든 TextFragment를 순회
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    // 글꼴 이름이 ArialMT인 경우, 글꼴 이름을 Arial로 교체
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
-    {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    }
+    # Initialize text edit options to remove unused fonts
+    options = ap.text.TextEditOptions(
+        ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS
+    )
 
-}
+    # Create a TextFragmentAbsorber with the specified options
+    absorber = ap.text.TextFragmentAbsorber(options)
+    document.pages.accept(absorber)
 
-dataDir = dataDir + "ReplaceFonts_out.pdf";
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir);
+    # Iterate through all TextFragments
+    for text_fragment in absorber.text_fragments:
+        text_fragment.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+
+    # Save the updated PDF document
+    document.save(output_file)
 ```
 
+## 모든 텍스트 제거
 
-## 텍스트 교체는 페이지 내용을 자동으로 재배치해야 합니다
+### PDF에서 텍스트 제거
 
-Aspose.PDF for Python via .NET은 PDF 파일 내에서 텍스트를 검색하고 교체하는 기능을 지원합니다. 그러나 최근 몇몇 고객들이 특정 TextFragment가 더 작은 내용으로 교체될 때 결과 PDF에 여분의 공백이 표시되거나, TextFragment가 더 긴 문자열로 교체될 때 단어가 기존 페이지 콘텐츠와 겹치는 문제가 발생했습니다. 따라서 PDF 문서 내의 텍스트가 교체되면 콘텐츠가 재배치되어야 한다는 요구사항이 있었습니다.
+이미지, 도형 및 레이아웃 구조를 그대로 유지하면서 PDF 파일에서 모든 텍스트 내용을 제거합니다.
+코드는 TextFragmentAbsorber를 사용하여 전체 문서를 효율적으로 스캔하고 각 페이지에 있는 모든 텍스트 조각을 삭제합니다.
 
-위에서 언급한 시나리오를 해결하기 위해, Aspose.PDF for Python via .NET이 향상되어, PDF 파일 내에서 텍스트를 교체할 때 이러한 문제가 발생하지 않도록 했습니다. 다음 코드 스니펫은 PDF 파일 내의 텍스트를 교체하고 페이지 내용이 자동으로 재배치되는 방법을 보여줍니다.
+1. PDF 문서를 로드합니다.
+1. TextFragmentAbsorber 객체는 PDF에서 텍스트 부분을 감지하고 처리하기 위해 만들어집니다.
+1. 모든 텍스트 내용을 제거합니다.'absorber.remove_all_text () '메서드는 로드된 문서에서 모든 텍스트 요소를 제거하여 텍스트가 아닌 구성 요소는 그대로 둡니다.
+1. 업데이트된 문서를 저장합니다.
 
 ```python
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET에서 확인하세요
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 소스 PDF 파일 로드
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
-// 정규 표현식을 사용하여 TextFragment Absorber 객체 생성
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
-// 각 TextFragment 교체
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
-{
-    // 교체되는 텍스트 조각의 글꼴 설정
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // 글꼴 크기 설정
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // 자리 표시자보다 큰 문자열로 텍스트 교체
-    textFragment.Text = "This is a Larger String for the Testing of this issue";
-}
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
-// 결과 PDF 저장
-doc.Save(dataDir);
+def remove_all_text_using_absorber1(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document)
+        document.save(outfile)
 ```
 
+### 특정 페이지에서 모든 텍스트 제거
 
-## PDF 생성 중 교체 가능한 기호 렌더링
+Aspose.PDF 의 TextFragmentAbsorber 클래스를 사용하여 PDF 문서의 단일 페이지에서 모든 텍스트를 제거합니다.
+전체 문서 제거와 달리 이 방법은 페이지 수준의 텍스트 정리를 수행하여 선택한 페이지의 텍스트만 삭제하고 다른 모든 페이지는 그대로 둡니다.
 
-교체 가능한 기호는 실행 시점에 해당 내용으로 대체될 수 있는 텍스트 문자열 내의 특별한 기호입니다. Aspose.PDF 네임스페이스의 새로운 문서 객체 모델이 현재 지원하는 교체 가능한 기호는 `$P`, `$p,` `\n`, `\r`입니다. `$p`와 `$P`는 실행 시점에 페이지 번호를 처리하는 데 사용됩니다. `$p`는 현재 Paragraph 클래스가 위치한 페이지의 번호로 대체됩니다. `$P`는 문서의 총 페이지 수로 대체됩니다. PDF 문서의 단락 컬렉션에 `TextFragment`를 추가할 때, 텍스트 내의 줄 바꿈은 지원되지 않습니다. 그러나 줄 바꿈이 있는 텍스트를 추가하기 위해서는 `TextParagraph`와 함께 `TextFragment`를 사용하십시오:
-
-- 단일 "\n" 대신 TextFragment에서 "\r\n" 또는 Environment.NewLine을 사용하십시오;
-- TextParagraph 객체를 생성하십시오. 그러면 텍스트를 줄 단위로 나누어 추가합니다;
-- TextFragment를 TextParagraph.AppendLine으로 추가하십시오;
-- TextParagraph를 TextBuilder.AppendParagraph로 추가하십시오.
+1. PDF 파일을 로드합니다.
+1. 텍스트 프래그먼트 업소버 인스턴스를 생성합니다.
+1. 첫 페이지에서 모든 텍스트를 제거합니다.
+1. 수정한 PDF를 저장합니다.
 
 ```python
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 를 참조하십시오.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
-
-// 필요한 줄 바꿈 표시를 포함한 텍스트로 새로운 TextFragment 초기화
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
-
-// 필요 시 텍스트 조각 속성 설정
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-
-// TextParagraph 객체 생성
-TextParagraph par = new TextParagraph();
-
-// 새 TextFragment를 단락에 추가
-par.AppendLine(textFragment);
-
-// 단락 위치 설정
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
-
-// TextBuilder 객체 생성
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// TextBuilder를 사용하여 TextParagraph 추가
-textBuilder.AppendParagraph(par);
-
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
+def remove_all_text_using_absorber2(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document.pages[1])
+        document.save(outfile)
 ```
 
+### PDF 페이지의 특정 영역에서 모든 텍스트 제거
 
-## 헤더/푸터 영역의 대체 가능한 기호
+Aspose.PDF TextFragmentAbsorber를 사용하여 페이지의 특정 사각형 영역에서 모든 텍스트를 제거합니다.
+이 방법은 전체 페이지를 지우는 대신 대상 텍스트 제거를 수행하여 페이지의 어느 부분이 영향을 받는지 정밀하게 제어할 수 있습니다.
 
-대체 가능한 기호는 PDF 파일의 헤더/푸터 섹션 안에 배치할 수도 있습니다. 푸터 섹션에 대체 가능한 기호를 추가하는 방법에 대한 자세한 내용은 다음 코드 스니펫을 참조하십시오.
+1. PDF 문서를 로드합니다.
+1. 텍스트 조각 흡수기를 만듭니다.
+1. 대상 영역 (직사각형) 을 정의합니다.
+1. 지정된 영역에서 텍스트를 제거합니다.
+1. 문서의 나머지 부분을 보존하십시오.
+1. 수정한 PDF를 저장합니다.
 
 ```python
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET를 참조하십시오.
-// 문서 디렉토리의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
-
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// marginInfo 인스턴스를 sec1.PageInfo의 Margin 속성에 할당합니다.
-page.PageInfo.Margin = marginInfo;
-
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
-
-// 헤더로 표시할 내용을 저장할 텍스트 단락을 인스턴스화합니다.
-TextFragment t1 = new TextFragment("report title");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
-
-TextFragment t2 = new TextFragment("Report_Name");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
-
-// 섹션에 대한 HeaderFooter 객체를 만듭니다.
-HeaderFooter hfFoot = new HeaderFooter();
-// 헤더푸터 객체를 홀수 및 짝수 페이지의 푸터에 설정합니다.
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
-
-// 현재 페이지 번호와 총 페이지 수를 포함하는 텍스트 단락을 추가합니다.
-TextFragment t3 = new TextFragment("Generated on test date");
-TextFragment t4 = new TextFragment("report name ");
-TextFragment t5 = new TextFragment("Page $p of $P");
-
-// 테이블 객체를 인스턴스화합니다.
-Table tab2 = new Table();
-
-// 원하는 섹션의 단락 컬렉션에 테이블을 추가합니다.
-hfFoot.Paragraphs.Add(tab2);
-
-// 테이블의 열 너비를 설정합니다.
-tab2.ColumnWidths = "165 172 165";
-
-// 테이블에 행을 생성한 후 행에 셀을 추가합니다.
-Row row3 = tab2.Rows.Add();
-
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
-
-// 텍스트의 수직 정렬을 가운데 정렬로 설정합니다.
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
-
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
-
-// Sec1.Paragraphs.Add(New Text("Aspose.Total for Java는 Aspose가 제공하는 모든 Java 컴포넌트의 컴파일입니다. 매일 컴파일되어 각 Java 컴포넌트의 최신 버전을 포함하는지 확인합니다. Aspose.Total for Java를 사용하여 개발자는 다양한 응용 프로그램을 만들 수 있습니다. Aspose.Total for Java는 Aspose가 제공하는 모든 Java 컴포넌트의 컴파일입니다. 매일 컴파일되어 각 Java 컴포넌트의 최신 버전을 포함하는지 확인합니다. Aspose.Total for Java를 사용하여 개발자는 다양한 응용 프로그램을 만들 수 있습니다. Aspose.Total for Java는 Aspose가 제공하는 모든 Java 컴포넌트의 컴파일입니다. 매일 컴파일되어 각 Java 컴포넌트의 최신 버전을 포함하는지 확인합니다. Aspose.Total for Java를 사용하여 개발자는 다양한 응용 프로그램을 만들 수 있습니다."))
-Table table = new Table();
-
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
-
-// 원하는 섹션의 단락 컬렉션에 테이블을 추가합니다.
-page.Paragraphs.Add(table);
-
-// BorderInfo 객체를 사용하여 기본 셀 테두리를 설정합니다.
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
-
-// 또 다른 사용자 정의 BorderInfo 객체를 사용하여 테이블 테두리를 설정합니다.
-table.Border = new BorderInfo(BorderSide.All, 1f);
-
-table.RepeatingRowsCount = 1;
-
-// 테이블에 행을 생성한 후 행에 셀을 추가합니다.
-Row row1 = table.Rows.Add();
-
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add("col3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
-{
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-            c1 = row.Cells.Add("Aspose.Total for Java는 Aspose가 제공하는 모든 Java 컴포넌트의 컴파일입니다. 매일 컴파일되어 각 Java 컴포넌트의 최신 버전을 포함하는지 확인합니다. " + CRLF + "매일 컴파일되어 각 Java 컴포넌트의 최신 버전을 포함하는지 확인합니다. " + CRLF + "Aspose.Total for Java를 사용하여 개발자는 다양한 응용 프로그램을 만들 수 있습니다.");
-        else
-            c1 = row.Cells.Add("item1" + c);
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
-    }
-}
-
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
+def remove_all_text_using_absorber3(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(
+            document.pages[1], ap.Rectangle(10, 200, 120, 600, True)
+        )
+        document.save(outfile)
 ```
 
+### PDF 문서에서 숨겨진 텍스트 모두 제거
 
-## PDF 파일에서 사용되지 않는 글꼴 제거
+Aspose.PDF TextFragmentAbsorber를 사용하여 페이지의 특정 사각형 영역에서 모든 텍스트를 제거합니다.
+이 방법은 전체 페이지를 지우는 대신 대상 텍스트 제거를 수행하여 페이지의 어느 부분이 영향을 받는지 정밀하게 제어할 수 있습니다.
 
-Aspose.PDF for Python via .NET은 PDF 문서를 생성할 때 글꼴을 포함하는 기능뿐만 아니라 기존 PDF 파일에 글꼴을 포함하는 기능도 지원합니다. Aspose.PDF for Python via .NET 7.3.0부터는 PDF 문서에서 중복되거나 사용되지 않는 글꼴을 제거할 수도 있습니다.
-
-글꼴을 교체하려면 다음 접근 방법을 사용하세요:
-
-1. [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber) 클래스를 호출합니다.
-1. TextFragmentAbsorber 클래스의 TextEditOptions.FontReplace.RemoveUnusedFonts 매개변수를 호출합니다. (이 옵션은 글꼴 교체 중 사용되지 않게 된 글꼴을 제거합니다).
-1. 각 텍스트 조각에 대해 개별적으로 글꼴을 설정합니다.
-
-다음 코드 스니펫은 모든 문서 페이지의 모든 텍스트 조각에 대해 글꼴을 교체하고 사용되지 않는 글꼴을 제거합니다.
+1. PDF 문서를 로드합니다.
+1. 텍스트 조각 흡수기를 만듭니다.
+1. 대상 영역 (직사각형) 을 정의합니다.
+1. 지정된 영역에서 텍스트를 제거합니다.
+1. 문서의 나머지 부분을 보존하십시오.
+1. 수정한 PDF를 저장합니다.
 
 ```python
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 를 참조하세요.
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 소스 PDF 파일 로드
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
-
-// 모든 TextFragments를 반복
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
-}
-
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
-// 업데이트된 문서 저장
-doc.Save(dataDir);
+def remove_hidden_text(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        text_absorber = ap.text.TextFragmentAbsorber()
+        # This option can be used to prevent other text fragments from moving after hidden text replacement
+        text_absorber.text_replace_options = ap.text.TextReplaceOptions(
+            ap.text.TextReplaceOptions.ReplaceAdjustment.NONE
+        )
+        document.pages.accept(text_absorber)
+        # Remove hidden text
+        for fragment in text_absorber.text_fragments:
+            if fragment.text_state.invisible:
+                fragment.text = ""
+        # Save PDF document
+        document.save(outfile)
 ```
 
+## 관련 텍스트 주제
 
-## PDF 문서에서 모든 텍스트 제거
-
-### 연산자를 사용하여 모든 텍스트 제거
-
-일부 텍스트 작업에서는 PDF 문서에서 모든 텍스트를 제거해야 하며, 이를 위해 일반적으로 발견된 텍스트를 빈 문자열 값으로 설정해야 합니다. 다수의 텍스트 조각의 텍스트를 변경하면 여러 검증과 텍스트 위치 조정 작업이 필요합니다. 이러한 작업은 텍스트 편집 시나리오에서 필수적입니다. 문제는 루프에서 처리될 때 얼마나 많은 텍스트 조각이 제거될지 알 수 없다는 것입니다.
-
-따라서 PDF 페이지에서 모든 텍스트를 제거하는 시나리오에서는 다른 접근 방식을 사용하는 것이 좋습니다. 다음의 매우 빠르게 작동하는 코드 스니펫을 고려해 보십시오.
-
-```python
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET를 참조하십시오.
-// 문서 디렉토리의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
-// PDF 문서의 모든 페이지를 반복
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
-{
-    Page page = pdfDocument.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
-    // 페이지의 모든 텍스트 선택
-    page.Contents.Accept(operatorSelector);
-    // 모든 텍스트 삭제
-    page.Contents.Delete(operatorSelector.Selected);
-}
-// 문서 저장
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
-```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python용 PDF 조작 라이브러리",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Python을 사용하여 PDF에서 텍스트 작업하기](/pdf/ko/python-net/working-with-text/)
+- [PDF에 텍스트 추가](/pdf/ko/python-net/add-text-to-pdf-file/)
+- [파이썬에서 PDF 텍스트 검색 및 추출](/pdf/ko/python-net/search-and-get-text-from-pdf/)
+- [파이썬에서 PDF 텍스트 포맷 지정하기](/pdf/ko/python-net/text-formatting-inside-pdf/)

@@ -1,5 +1,6 @@
 ---
 title: Get Viewer Preferences
+linktitle: Get Viewer Preferences
 type: docs
 weight: 10
 url: /java/get-viewer-preferences/

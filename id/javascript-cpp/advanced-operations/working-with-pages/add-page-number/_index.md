@@ -1,5 +1,5 @@
 ---
-title: Tambahkan Nomor Halaman ke PDF dengan JavaScript melalui C++ 
+title: Tambahkan Nomor Halaman ke PDF dengan JavaScript melalui C++
 linktitle: Tambahkan Nomor Halaman
 type: docs
 weight: 100

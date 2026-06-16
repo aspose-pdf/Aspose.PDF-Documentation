@@ -1,5 +1,5 @@
 ---
-title: Mengubah PDF ke BMP 
+title: Mengubah PDF ke BMP
 linktitle: Mengubah PDF ke BMP
 type: docs
 weight: 40

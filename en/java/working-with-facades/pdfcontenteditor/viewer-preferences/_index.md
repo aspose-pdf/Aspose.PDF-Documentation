@@ -1,5 +1,6 @@
 ---
 title: Viewer Preferences
+linktitle: Viewer Preferences
 type: docs
 weight: 100
 url: /java/pdfcontenteditor-viewer-preferences/

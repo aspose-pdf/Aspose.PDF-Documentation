@@ -1,5 +1,5 @@
 ---
-title: Operasi Lanjutan di Node.js 
+title: Operasi Lanjutan di Node.js
 linktitle: Operasi Lanjutan
 type: docs
 weight: 60

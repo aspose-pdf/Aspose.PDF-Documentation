@@ -1,5 +1,6 @@
 ---
 title: Working with Bookmarks - Facades
+linktitle: Working with Bookmarks - Facades
 type: docs
 weight: 20
 url: /cpp/working-with-bookmarks-facades/

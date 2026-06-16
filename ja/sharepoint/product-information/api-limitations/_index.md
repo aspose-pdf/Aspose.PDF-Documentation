@@ -1,6 +1,6 @@
 ---
 
-title: API Limitations 
+title: API Limitations
 
 type: docs
 
@@ -11,7 +11,6 @@ url: /ja/sharepoint/api-limitations/
 lastmod: "2020-12-16"
 
 description: この記事では、PDF SharePoint APIのいくつかの制限について説明します。
-
 ---
 
 

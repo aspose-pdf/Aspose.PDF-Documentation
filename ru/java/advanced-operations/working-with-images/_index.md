@@ -1,5 +1,5 @@
 ---
-title: Работа с изображениями в PDF 
+title: Работа с изображениями в PDF
 linktitle: Работа с изображениями
 type: docs
 weight: 40

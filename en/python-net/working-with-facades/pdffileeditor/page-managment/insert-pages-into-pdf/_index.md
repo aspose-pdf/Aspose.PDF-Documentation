@@ -1,5 +1,6 @@
 ---
-title: Insert Pages into PDF
+title: Insert Pages into PDF
+linktitle: Insert Pages into PDF
 type: docs
 weight: 40
 url: /python-net/insert-pages-into-pdf/

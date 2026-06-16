@@ -1,6 +1,6 @@
 ---
-title: 高度な操作 
-linktitle: 高度な操作 
+title: 高度な操作
+linktitle: 高度な操作
 type: docs
 weight: 70
 url: /ja/androidjava/advanced-operations/

@@ -1,11 +1,10 @@
 ---
 
-title: Aspose.PdfをStrutsでサポート、拡張、貢献する  
-type: docs  
-weight: 20  
-url: /ja/java/support-extend-and-contribute-to-aspose-pdf-in-struts/  
-lastmod: "2021-06-05"  
-
+title: Aspose.PdfをStrutsでサポート、拡張、貢献する
+type: docs
+weight: 20
+url: /ja/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
+lastmod: "2021-06-05"
 ---
 
 ## サポート

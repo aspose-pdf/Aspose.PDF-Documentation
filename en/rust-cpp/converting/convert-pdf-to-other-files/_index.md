@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to EPUB, TeX, Text, XPS in Rust
-linktitle: Convert PDF to other formats 
+linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /rust-cpp/convert-pdf-to-other-files/
@@ -11,8 +11,8 @@ sitemap:
     priority: 0.8
 TechArticle: true
 AlternativeHeadline: Rust tool for Converting PDF to EPUB, TeX, Text, and XPS
-Abstract: Aspose.PDF for Rust via C++ offers powerful capabilities to convert PDF documents into various file formats, including DOCX, PPTX, HTML, EPUB, SVG, and more. This functionality allows developers to extract and repurpose PDF content seamlessly while maintaining formatting, structure, and quality across different output formats. The library provides flexible options to customize the conversion process according to specific requirements. The documentation includes comprehensive guidelines and code samples to assist developers in efficiently implementing PDF-to-file conversion within their applications. 
-SoftwareApplication: rust-cpp     
+Abstract: Aspose.PDF for Rust via C++ offers powerful capabilities to convert PDF documents into various file formats, including DOCX, PPTX, HTML, EPUB, SVG, and more. This functionality allows developers to extract and repurpose PDF content seamlessly while maintaining formatting, structure, and quality across different output formats. The library provides flexible options to customize the conversion process according to specific requirements. The documentation includes comprehensive guidelines and code samples to assist developers in efficiently implementing PDF-to-file conversion within their applications.
+SoftwareApplication: rust-cpp
 ---
 
 ## Convert PDF to EPUB

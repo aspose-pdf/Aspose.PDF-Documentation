@@ -1,6 +1,6 @@
 ---
-title: PDFからテキストを抽出 
-linktitle: テキストを抽出 
+title: PDFからテキストを抽出
+linktitle: テキストを抽出
 type: docs
 weight: 10
 url: /ja/androidjava/extract-text-from-pdf/

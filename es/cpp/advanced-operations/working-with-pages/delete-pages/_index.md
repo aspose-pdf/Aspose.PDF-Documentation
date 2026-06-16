@@ -1,5 +1,5 @@
 ---
-title: Eliminar páginas PDF programáticamente 
+title: Eliminar páginas PDF programáticamente
 linktitle: Eliminar páginas PDF
 type: docs
 weight: 30

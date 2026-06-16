@@ -1,5 +1,6 @@
 ---
 title: Remove Field Action
+linktitle: Remove Field Action
 type: docs
 weight: 50
 url: /java/remove-field-action/

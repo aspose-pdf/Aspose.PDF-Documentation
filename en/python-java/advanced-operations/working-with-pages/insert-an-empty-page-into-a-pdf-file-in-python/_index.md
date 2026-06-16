@@ -1,5 +1,6 @@
 ---
 title: Insert an Empty Page into a PDF File in Python
+linktitle: Insert an Empty Page into a PDF File in Python
 type: docs
 weight: 70
 url: /python-java/insert-an-empty-page-into-a-pdf-file-in-python/

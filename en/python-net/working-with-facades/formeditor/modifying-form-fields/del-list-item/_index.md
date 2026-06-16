@@ -1,5 +1,6 @@
 ---
-title: Delete List Item
+title: Delete List Item
+linktitle: Delete List Item
 type: docs
 weight: 40
 url: /python-net/del-list-item/

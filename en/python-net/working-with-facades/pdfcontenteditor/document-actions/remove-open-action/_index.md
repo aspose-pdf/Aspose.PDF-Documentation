@@ -1,5 +1,6 @@
 ---
-title: Remove Open Action
+title: Remove Open Action
+linktitle: Remove Open Action
 type: docs
 weight: 30
 url: /python-net/remove-open-action/

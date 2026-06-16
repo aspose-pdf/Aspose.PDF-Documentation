@@ -1,164 +1,64 @@
 ---
-title: プログラムでPDFページを削除するPython
-linktitle: PDFページを削除
+title: Python で PDF ページを削除する方法
+linktitle: PDF ページの削除
 type: docs
 weight: 80
 url: /ja/python-net/delete-pages/
-description: Aspose.PDF for Python via .NETライブラリを使用してPDFファイルからページを削除できます。
-lastmod: "2023-04-17"
+description: Python で PDF ファイルからページを削除する方法を学びましょう。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python で 1 つまたは複数の PDF ページを削除する方法
+Abstract: この記事では、.NET 経由で Aspose.PDF for Python を使用して PDF ファイルからページを削除する方法について説明します。PageCollection API を使用して文書から 1 ページまたは複数ページを削除し、更新された PDF を保存する方法を説明します。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "プログラムでPDFページを削除するPython",
-    "alternativeHeadline": "PDFページを削除する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf文書生成",
-    "keywords": "pdf, python, PDFページを削除, PDFページを除去",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/delete-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/delete-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Aspose.PDF for Python via .NETライブラリを使用してPDFファイルからページを削除できます。"
-}
-</script>
 
+.NET 経由の Python 用 Aspose.PDF を使用すると、PDF ファイルからページを削除できます。特定のページを削除するには、 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) の [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
-You can delete pages from a PDF file using Aspose.PDF for Python via .NET. To delete a particular page from the [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) collection.
+このワークフローは、文書を共有、アーカイブ、または結合する前に PDF から不要なページを削除する必要がある場合に使用します。
 
-## PDFファイルからページを削除
+## PDF ファイルからページを削除
 
-1. [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) メソッドを呼び出し、ページのインデックスを指定します
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを呼び出して、更新されたPDFファイルを保存します
-以下のコードスニペットは、Pythonを使用してPDFファイルから特定のページを削除する方法を示しています。
+Aspose.PDF for Python via .NET は、入力 PDF から 2 ページ目を削除し、更新されたドキュメントを新しいファイルに保存します。この機能は、文書の残りの部分を変更せずに、不要なページや機密ページを削除するのに役立ちます。
+
+1. 入力 PDF をとして読み込む [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. を使用してページを削除します [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. に電話してください [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 更新された PDF ファイルを保存する方法。
+
+次のコードスニペットは、Python を使用して PDF ファイルから特定のページを削除する方法を示しています。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # 特定のページを削除
+def delete_page(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
     document.pages.delete(2)
-
-    # 更新されたPDFを保存
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## PDF ドキュメントから複数のページを削除する
+
+複数のページを削除すると、指定した一連のページを 1 回の操作で削除できます。これは、ページを 1 つずつ削除するよりも効率的です。作成された PDF は、元の文書を保持したまま、新しいファイルに保存されます。
+
+1. 入力 PDF をとして読み込む [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. ページ配列にリストされているページを、以下を使用して削除します。 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. 更新を保存する [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 新しいファイルへ。
+
+```python
+import aspose.pdf as ap
+
+def delete_multiple_pages(input_file_name: str, output_file_name: str) -> None:
+    document = ap.Document(input_file_name)
+    # Example: delete pages 2, 3, and 4.
+    pages = [2, 3, 4]
+    document.pages.delete(pages)
+    document.save(output_file_name)
+```
+
+## 関連ページトピック
+
+- [Python で PDF ページを操作する](/pdf/ja/python-net/working-with-pages/)
+- [Python で PDF ページを追加する](/pdf/ja/python-net/add-pages/)
+- [Python で PDF ページを移動する](/pdf/ja/python-net/move-pages/)
+- [Python で PDF ページを抽出](/pdf/ja/python-net/extract-pages/)

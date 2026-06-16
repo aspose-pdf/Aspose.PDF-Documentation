@@ -1,6 +1,6 @@
 ---
-title: Extraer Texto de PDF 
-linktitle: Extraer Texto 
+title: Extraer Texto de PDF
+linktitle: Extraer Texto
 type: docs
 weight: 10
 url: /es/php-java/extract-text-from-pdf/

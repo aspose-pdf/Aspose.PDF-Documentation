@@ -1,5 +1,6 @@
 ---
 title: What's is the difference between FDF, XML, and XFDF formats
+linktitle: What's is the difference between FDF, XML, and XFDF formats
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

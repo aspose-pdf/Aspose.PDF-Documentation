@@ -1,86 +1,29 @@
 ---
-title: الختم باستخدام Aspose.PDF بواسطة بايثون
+title: ختم صفحات PDF في بايثون
 linktitle: الختم
 type: docs
 weight: 120
 url: /ar/python-net/stamping/
-description: يصف هذا القسم كيفية إضافة الطوابع الصورية والنصية إلى صفحة PDF عبر بايثون.
-lastmod: "2023-04-17"
+description: تعرف على كيفية إضافة أرقام الصفحات وطوابع الصفحات وطوابع الصور والطوابع النصية إلى صفحات PDF في Python.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية إضافة طوابع إلى PDF باستخدام Python
+Abstract: تتناول هذه المقالة مفهوم وتطبيق الطوابع في مستندات PDF، والتي تشبه الطوابع المطاطية على المستندات الورقية، مما يوفر معلومات إضافية ويعزز أمان المستندات. يسلط الضوء على استخدام **aspose.pdf لبيثون عبر .NET** لإضافة طوابع صور أو نصية إلى ملفات PDF. تتضمن المقالة إرشادات حول إضافة طوابع الصور والتحكم في جودة الصورة واستخدام طوابع الصور كخلفيات، بالإضافة إلى إرشادات لإضافة طوابع نصية وإعداد المحاذاة وملء نص الخط في ملف PDF. يمكن للقراء استكشاف قسمين للحصول على إرشادات مفصلة - «إضافة طوابع صور في صفحة PDF» و «إضافة طوابع نصية في ملف PDF».
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "الختم باستخدام Aspose.PDF بواسطة بايثون",
-    "alternativeHeadline": "كيفية إضافة طابع صورة إلى PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, python, ختم pdf, طابع صورة",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/stamping/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/stamping/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يصف هذا القسم كيفية إضافة الطوابع الصورية والنصية إلى صفحة PDF."
-}
-</script>
+
+الختم في مستند PDF يشبه تطبيق ختم مطاطي على مستند ورقي.
+يوفر الختم في ملف PDF معلومات إضافية لملف PDF، مثل حماية ملف PDF لاستخدامه من قبل الآخرين وتأكيد أمان محتويات ملف PDF. **Aspose.pdf لبايثون عبر .NET** يسمح بإضافة صورة أو ختم نصي في مستند PDF الخاص بك.
+
+استخدم هذا القسم عندما تحتاج إلى إضافة تراكبات مثل أرقام الصفحات أو العلامات المائية أو الشعارات أو علامات النص إلى صفحات PDF الحالية.
+
+تحقق من الأقسام التالية لمعرفة كيفية إضافة طابع باستخدام Python:
+
+- [إضافة طوابع صور في صفحة PDF](/pdf/ar/python-net/image-stamps-in-pdf-page/) - إضافة ختم الصورة والتحكم في جودة الصورة وختم الصورة كخلفية لملف PDF الخاص بك.
+- [إضافة طوابع نصية في ملف PDF](/pdf/ar/python-net/text-stamps-in-the-pdf-file/) - إضافة طابع نصي، وتحديد المحاذاة لكائن TextStamp، وملء نص الحد كختم في ملف PDF.
+- [إضافة طوابع الصفحة في ملف PDF](/pdf/ar/python-net/page-stamps-in-the-pdf-file/) - إضافة طوابع صفحة لتراكب صفحات أو أقسام بأكملها، وهي مفيدة لوضع العلامات المائية أو إصدار المستندات أو إضافة خلفيات مخصصة إلى ملفات PDF.
+- [إضافة طوابع رقم الصفحة في ملف PDF](/pdf/ar/python-net/add-page-number/) - إضافة أرقام الصفحات إلى مستند PDF الخاص بك، وتخصيص مظهرها، والتحكم في موضعها.
 
 
-ختم في مستند PDF يشبه تطبيق ختم مطاطي على مستند ورقي.  
-الختم في ملف PDF يوفر معلومات إضافية لملف PDF، مثل حماية ملف PDF من الاستخدام بواسطة الآخرين وتأكيد أمان محتويات ملف PDF. **Aspose.PDF for Python عبر .NET** يتيح إضافة ختم صورة أو نص في مستند PDF الخاص بك.
-
-تحقق من الأقسام التالية لتتعلم كيفية إضافة ختم باستخدام Python:
-
-- [إضافة أختام الصور في صفحة PDF](/pdf/ar/python-net/image-stamps-in-pdf-page/) - أضف ختم الصورة، تحكم في جودة الصورة، ختم الصورة كخلفية لملف PDF الخاص بك.
-- [إضافة أختام النص في ملف PDF](/pdf/ar/python-net/text-stamps-in-the-pdf-file/) - أضف ختم النص، حدد محاذاة كائن TextStamp، املأ نص الضربة كختم في ملف PDF.

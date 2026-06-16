@@ -1,5 +1,6 @@
 ---
-title: Rename Field
+title: Rename Field
+linktitle: Rename Field
 type: docs
 weight: 70
 url: /python-net/rename-field/

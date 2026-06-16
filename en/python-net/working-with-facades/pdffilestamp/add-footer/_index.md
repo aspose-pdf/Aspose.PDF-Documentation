@@ -1,5 +1,6 @@
 ---
-title: Add Footer to PDF
+title: Add Footer to PDF
+linktitle: Add Footer to PDF
 type: docs
 weight: 10
 url: /python-net/add-footer/

@@ -1,5 +1,6 @@
 ---
 title: Working with Headings in PDF
+linktitle: Working with Headings in PDF
 type: docs
 weight: 90
 url: /cpp/working-with-headings/

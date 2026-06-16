@@ -1,5 +1,6 @@
 ---
 title: Justify FullJustify Text Alignment
+linktitle: Justify FullJustify Text Alignment
 type: docs
 weight: 40
 url: /reportingservices/justify-fulljustify-text-alignment/

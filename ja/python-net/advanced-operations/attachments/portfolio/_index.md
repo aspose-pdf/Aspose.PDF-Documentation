@@ -1,203 +1,85 @@
 ---
-title: Pythonを使用してPDFでポートフォリオを作成する
+title: Python で PDF ポートフォリオを作成する方法
 linktitle: ポートフォリオ
 type: docs
 weight: 20
 url: /ja/python-net/portfolio/
-description: Pythonを使用してPDFポートフォリオを作成する方法。Microsoft Excelファイル、Wordドキュメント、画像ファイルを使用してPDFポートフォリオを作成する必要があります。
-lastmod: "2023-02-17"
+description: .NET 経由の Aspose.PDF for Python を使用して Python で PDF ポートフォリオを作成および管理する方法を学びましょう。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python で埋め込みファイルを使用した PDF ポートフォリオの構築と編集
+Abstract: この記事では、.NET 経由で Aspose.PDF for Python を使用して PDF ポートフォリオを作成および管理する方法について説明します。Python を使用して複数のファイルタイプを 1 つの PDF ポートフォリオにまとめたり、文書コレクションにファイルを追加したり、ポートフォリオ項目をプログラムから削除したりする方法を学びます。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用してPDFでポートフォリオを作成する",
-    "alternativeHeadline": "PDFドキュメントでポートフォリオを作成",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdfドキュメント生成",
-    "keywords": "pdf, python, ポートフォリオ",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/portfolio/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/portfolio/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Pythonを使用してPDFポートフォリオを作成する方法。Microsoft Excelファイル、Wordドキュメント、画像ファイルを使用してPDFポートフォリオを作成する必要があります。"
-}
-</script>
 
+PDF ポートフォリオを作成すると、さまざまな種類のファイルを 1 つの一貫した文書に統合してアーカイブできます。このような文書には、テキストファイル、画像、スプレッドシート、プレゼンテーション、その他の資料を含めることができ、すべての関連資料を 1 か所に保存して整理できます。
 
-PDFポートフォリオを作成することで、さまざまな種類のファイルを1つの一貫したドキュメントにまとめてアーカイブすることができます。このようなドキュメントには、テキストファイル、画像、スプレッドシート、プレゼンテーション、およびその他の資料が含まれる可能性があり、関連するすべての資料が1か所に保存され、整理されていることを保証します。
+PDFポートフォリオは、どこで使用してもプレゼンテーションを高品質に表示するのに役立ちます。一般的に、PDF ポートフォリオの作成は最新かつ最新の作業です。
 
-PDFポートフォリオは、どこで使用しても高品質な方法でプレゼンテーションを表示するのに役立ちます。一般的に、PDFポートフォリオを作成することは非常に現在的でモダンなタスクです。
+PDF ポートフォリオは、各ファイルを元の形式のまま 1 つの PDF コンテナにまとめて配布する場合に使用します。
 
-## PDFポートフォリオの作成方法
+## PDF ポートフォリオの作成方法
 
-Aspose.PDF for Python via .NETを使用すると、[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)クラスを使用してPDFポートフォリオドキュメントを作成できます。[FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/)クラスを使用して取得した後、ファイルをdocument.collectionオブジェクトに追加します。ファイルが追加されたら、Documentクラスの[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドを使用してポートフォリオドキュメントを保存します。
+.NET 経由の Python 用 Aspose.PDF では、を使用して PDF ポートフォリオドキュメントを作成できます [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。を使用してファイルを取得した後、document.collection オブジェクトにファイルを追加します。 [ファイル仕様](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) クラス。ファイルが追加されたら、「Document クラス」を使用してください。 [保存 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) ポートフォリオドキュメントを保存する方法。
 
-以下の例では、Microsoft Excelファイル、Wordドキュメント、および画像ファイルを使用してPDFポートフォリオを作成します。
+次の例では、Microsoft Excel ファイル、Word 文書、および画像ファイルを使用して PDF ポートフォリオを作成します。
 
-以下のコードは次のポートフォリオを生成します。
+以下のコードは次のポートフォリオになります。
 
-### Aspose.PDF for Pythonを使用して作成されたPDFポートフォリオ
+### Python 用 Aspose.PDF で作成された PDF ポートフォリオ
 
-![Aspose.PDF for Pythonを使用して作成されたPDFポートフォリオ](working-with-pdf-portfolio_1.jpg)
+![Python 用 Aspose.PDF で作成された PDF ポートフォリオ](working-with-pdf-portfolio_1.jpg)
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # ドキュメントオブジェクトをインスタンス化
+def create_pdf_portfolio(input_files, outfile):
+    # Instantiate Document Object
     document = ap.Document()
 
-    # ドキュメントコレクションオブジェクトをインスタンス化
+    # Instantiate document Collection object
     document.collection = ap.Collection()
 
-    # ポートフォリオに追加するファイルを取得
-    excel = ap.FileSpecification(input_excel)
-    word = ap.FileSpecification(input_doc)
-    image = ap.FileSpecification(input_jpg)
+    # Get Files to add to Portfolio
+    excel = ap.FileSpecification(input_files[0])
+    word = ap.FileSpecification(input_files[1])
+    image = ap.FileSpecification(input_files[2])
 
-    # ファイルの説明を提供
-    excel.description = "Excel ファイル"
-    word.description = "Word ファイル"
-    image.description = "画像ファイル"
+    # Provide description of the files
+    excel.description = "Excel File"
+    word.description = "Word File"
+    image.description = "Image File"
 
-    # ファイルをドキュメントコレクションに追加
+    # Add files to document collection
     document.collection.append(excel)
     document.collection.append(word)
     document.collection.append(image)
 
-    # ポートフォリオドキュメントを保存
-    document.save(output_pdf)
+    # Save Portfolio document
+    document.save(outfile)
 ```
 
-## PDFポートフォリオからファイルを削除
+## PDF ポートフォリオからのファイルの削除
 
-PDFポートフォリオからファイルを削除するには、次のコード行を使用してみてください。
+PDF ポートフォリオからファイルを削除/削除するには、次のコード行を使用してみてください。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
+def remove_files_from_pdf_portfolio(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
     document.collection.delete()
 
-    # 更新されたファイルを保存
-    document.save(output_pdf)
+    # Save updated file
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 関連する添付トピック
+
+- [Python で PDF の添付ファイルを操作する](/pdf/ja/python-net/attachments/)
+- [Python で PDF に添付ファイルを追加する方法](/pdf/ja/python-net/add-attachment-to-pdf-document/)
+- [Python で PDF から添付ファイルを削除する](/pdf/ja/python-net/removing-attachment-from-an-existing-pdf/)
+

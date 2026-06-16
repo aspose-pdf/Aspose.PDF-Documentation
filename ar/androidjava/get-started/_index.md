@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /ar/androidjava/get-started/
 description: يصف هذا القسم المبادئ الأساسية لاستخدام Aspose.PDF لنظام Android عبر Java. كما يوضح أمثلة بسيطة ومعقدة لإنشاء مستند PDF
-lastmod: "2021-08-05"   
-sitemap: 
+lastmod: "2021-08-05"
+sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---

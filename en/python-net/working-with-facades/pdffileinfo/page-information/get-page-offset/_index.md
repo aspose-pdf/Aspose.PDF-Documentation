@@ -1,5 +1,6 @@
 ---
-title: Get Page Offset
+title: Get Page Offset
+linktitle: Get Page Offset
 type: docs
 weight: 20
 url: /python-net/get-page-offset/

@@ -1,15 +1,15 @@
 ---
 
-title: نقل صفحات PDF  
-linktitle: نقل الصفحات  
-type: docs  
-weight: 20  
-url: /ar/java/move-pages/  
-description: حاول نقل الصفحات إلى الموقع المرغوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF for Java.  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: نقل صفحات PDF
+linktitle: نقل الصفحات
+type: docs
+weight: 20
+url: /ar/java/move-pages/
+description: حاول نقل الصفحات إلى الموقع المرغوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF for Java.
+lastmod: "2021-06-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 ## نقل صفحة من مستند PDF إلى آخر
 

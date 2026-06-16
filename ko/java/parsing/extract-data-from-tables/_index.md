@@ -1,5 +1,5 @@
 ---
-title: PDF에서 표 데이터 추출 
+title: PDF에서 표 데이터 추출
 linktitle: 표 데이터 추출
 type: docs
 weight: 40

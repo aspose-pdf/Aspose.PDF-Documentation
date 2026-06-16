@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF for JavaScript를 통한 PDF의 기본 작업 C++ 
+title: Aspose.PDF for JavaScript를 통한 PDF의 기본 작업 C++
 linktitle: 기본 작업
 type: docs
 weight: 40

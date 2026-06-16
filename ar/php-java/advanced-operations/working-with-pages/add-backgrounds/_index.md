@@ -1,5 +1,5 @@
 ---
-title: إضافة خلفية إلى PDF 
+title: إضافة خلفية إلى PDF
 linktitle: إضافة خلفيات
 type: docs
 weight: 110

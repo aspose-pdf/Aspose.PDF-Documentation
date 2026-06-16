@@ -1,5 +1,6 @@
 ---
 title: Signature Management
+linktitle: Signature Management
 type: docs
 weight: 80
 url: /java/signature-management/

@@ -1,5 +1,5 @@
 ---
-title: Establecer Privilegios, Cifrar y Descifrar Archivo PDF 
+title: Establecer Privilegios, Cifrar y Descifrar Archivo PDF
 linktitle: Cifrar y Descifrar Archivo PDF
 type: docs
 weight: 20

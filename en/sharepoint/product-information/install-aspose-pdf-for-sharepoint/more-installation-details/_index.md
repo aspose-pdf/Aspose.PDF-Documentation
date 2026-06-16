@@ -1,5 +1,6 @@
 ---
 title: More installation details
+linktitle: More installation details
 type: docs
 weight: 30
 url: /sharepoint/more-installation-details/

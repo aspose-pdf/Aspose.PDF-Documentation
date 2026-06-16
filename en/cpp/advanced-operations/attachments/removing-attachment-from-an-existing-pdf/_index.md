@@ -1,5 +1,5 @@
 ---
-title: Removing attachment from PDF 
+title: Removing attachment from PDF
 linktitle: Removing attachment from an existing PDF
 type: docs
 weight: 30

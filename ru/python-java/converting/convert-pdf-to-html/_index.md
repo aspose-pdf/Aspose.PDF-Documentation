@@ -1,16 +1,15 @@
 ---
 
-title: Конвертация PDF в HTML на Python  
-linktitle: Конвертация PDF в формат HTML  
-type: docs  
-weight: 50  
-url: /ru/python-java/convert-pdf-to-html/  
-lastmod: "2021-11-01"  
-description: Эта тема показывает, как конвертировать файл PDF в формат HTML с использованием библиотеки Aspose.PDF для Python Java.  
-sitemap:  
-    changefreq: "monthly"  
-    priority: 0.8  
-
+title: Конвертация PDF в HTML на Python
+linktitle: Конвертация PDF в формат HTML
+type: docs
+weight: 50
+url: /ru/python-java/convert-pdf-to-html/
+lastmod: "2021-11-01"
+description: Эта тема показывает, как конвертировать файл PDF в формат HTML с использованием библиотеки Aspose.PDF для Python Java.
+sitemap:
+    changefreq: "monthly"
+    priority: 0.8
 ---
 
 ## Обзор

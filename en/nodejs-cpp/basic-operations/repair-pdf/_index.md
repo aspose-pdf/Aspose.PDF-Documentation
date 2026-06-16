@@ -1,5 +1,5 @@
 ---
-title: Repair PDF in Node.js 
+title: Repair PDF in Node.js
 linktitle: Repair PDF
 type: docs
 weight: 10

@@ -1,5 +1,5 @@
 ---
-title: Requisitos del Sistema 
+title: Requisitos del Sistema
 linktitle: Requisitos del Sistema
 type: docs
 weight: 30

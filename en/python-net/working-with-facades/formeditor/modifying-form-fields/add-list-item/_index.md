@@ -1,5 +1,6 @@
 ---
-title: Add List Item
+title: Add List Item
+linktitle: Add List Item
 type: docs
 weight: 10
 url: /python-net/add-list-item/

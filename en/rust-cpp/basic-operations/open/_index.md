@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Open PDF document with Aspose.PDF for Rust via C++
 Abstract: Aspose.PDF for Rust via C++ provides powerful functionality to open and load PDF documents programmatically, allowing developers to access and manipulate PDF content with ease. The library supports opening PDF files from various sources, such as file paths and memory streams, while ensuring efficient processing and resource management. It offers features to inspect document properties, extract text and images, and perform other operations on loaded PDFs. The documentation includes detailed instructions and code samples to help developers integrate PDF opening capabilities into their applications seamlessly.
-SoftwareApplication: rust-cpp      
+SoftwareApplication: rust-cpp
 ---
 
 ## Open existing PDF document

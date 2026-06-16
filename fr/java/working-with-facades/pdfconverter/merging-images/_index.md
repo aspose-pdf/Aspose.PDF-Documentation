@@ -1,11 +1,11 @@
 ---
-title: Fusionner des images  
-type: docs  
-weight: 10  
-url: /fr/java/merge-images/  
-description: Cette section explique comment fusionner des images, et il est possible de les enregistrer au format Tiff.  
-lastmod: "2021-07-01"  
-draft: false  
+title: Fusionner des images
+type: docs
+weight: 10
+url: /fr/java/merge-images/
+description: Cette section explique comment fusionner des images, et il est possible de les enregistrer au format Tiff.
+lastmod: "2021-07-01"
+draft: false
 ---
 
 Aspose.PDF 21.4 vous permet de combiner des images. La méthode [Merge Images](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) vérifie le contenu d'un dossier spécifique et travaille avec le type de fichiers spécifié qu'il contient. Lors du travail avec la fusion d'images, nous spécifions 'inputImagesStreams', le format d'image et le mode de fusion d'image (par exemple - vertical) de notre fichier. Ensuite, nous enregistrons notre résultat dans FileOutputStream.

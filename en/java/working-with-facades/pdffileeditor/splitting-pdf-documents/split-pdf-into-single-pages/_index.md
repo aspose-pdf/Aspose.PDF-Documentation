@@ -1,5 +1,6 @@
 ---
 title: Split PDF into Single Pages
+linktitle: Split PDF into Single Pages
 type: docs
 weight: 30
 url: /java/split-pdf-into-single-pages/

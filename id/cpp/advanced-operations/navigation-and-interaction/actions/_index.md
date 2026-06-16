@@ -158,7 +158,7 @@ link->set_TargetPageNumber(2);
 text->set_Hyperlink(link);
 
 
-// Tambahkan teks ke koleksi paragraf Halaman
+// Tambahkan teks ke koleksi `paragraphs` Halaman
 
 page->get_Paragraphs()->Add(text);
 
@@ -188,7 +188,7 @@ link->set_TargetPageNumber(1);
 text->set_Hyperlink(link);
 
 
-// Tambahkan teks ke koleksi paragraf objek halaman
+// Tambahkan teks ke koleksi `paragraphs` objek halaman
 
 page->get_Paragraphs()->Add(text);
 

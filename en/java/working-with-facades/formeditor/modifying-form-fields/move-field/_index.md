@@ -1,5 +1,6 @@
 ---
 title: Move Field
+linktitle: Move Field
 type: docs
 weight: 30
 url: /java/move-field/

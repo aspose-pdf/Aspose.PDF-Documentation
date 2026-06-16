@@ -1,5 +1,5 @@
 ---
-title: Add Image to PDF in Node.js 
+title: Add Image to PDF in Node.js
 linktitle: Add Image
 type: docs
 weight: 10

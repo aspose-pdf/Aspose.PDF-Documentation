@@ -1,5 +1,5 @@
 ---
-title: 使用编程方式处理PDF中的链接 
+title: 使用编程方式处理PDF中的链接
 linktitle: 链接
 type: docs
 weight: 10

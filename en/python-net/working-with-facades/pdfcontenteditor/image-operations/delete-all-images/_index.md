@@ -1,5 +1,6 @@
 ---
-title: Delete All Images from PDF
+title: Delete All Images from PDF
+linktitle: Delete All Images from PDF
 type: docs
 weight: 10
 url: /python-net/delete-all-images/

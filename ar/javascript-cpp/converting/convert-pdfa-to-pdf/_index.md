@@ -1,5 +1,5 @@
 ---
-title: تحويل PDF/A إلى تنسيق PDF 
+title: تحويل PDF/A إلى تنسيق PDF
 linktitle: تحويل PDF/A إلى تنسيق PDF
 type: docs
 weight: 110

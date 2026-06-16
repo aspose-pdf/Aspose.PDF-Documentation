@@ -1,203 +1,85 @@
 ---
-title: العمل مع المحفظة في PDF باستخدام Python
-linktitle: المحفظة
+title: إنشاء محافظ PDF في بايثون
+linktitle: محفظة
 type: docs
 weight: 20
 url: /ar/python-net/portfolio/
-description: كيفية إنشاء محفظة PDF باستخدام Python. يجب عليك استخدام ملف Microsoft Excel، ومستند Word، وملف صورة لإنشاء محفظة PDF.
-lastmod: "2023-02-17"
+description: تعرف على كيفية إنشاء وإدارة حافظات PDF في بايثون باستخدام Aspose.PDF لبيثون عبر .NET.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إنشاء وتحرير حافظات PDF مع الملفات المضمنة في Python
+Abstract: تشرح هذه المقالة كيفية إنشاء وإدارة حافظات PDF باستخدام Aspose.PDF لـ Python عبر .NET. تعرف على كيفية تجميع أنواع ملفات متعددة في محفظة PDF واحدة، وإضافة ملفات إلى مجموعة مستندات، وإزالة عناصر المحفظة برمجيًا باستخدام Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "العمل مع المحفظة في PDF باستخدام Python",
-    "alternativeHeadline": "إنشاء محفظة في وثيقة PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد وثيقة pdf في pdf",
-    "keywords": "pdf, python, portfolio",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/portfolio/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/portfolio/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "كيفية إنشاء محفظة PDF باستخدام Python. يجب عليك استخدام ملف Microsoft Excel، ومستند Word، وملف صورة لإنشاء محفظة PDF."
-}
-</script>
 
+يتيح إنشاء محفظة PDF دمج أنواع مختلفة من الملفات وأرشفتها في مستند واحد متسق. يمكن أن تتضمن هذه الوثيقة ملفات نصية وصور وجداول بيانات وعروض تقديمية ومواد أخرى، وتضمن تخزين جميع المواد ذات الصلة وتنظيمها في مكان واحد.
 
-إنشاء ملف PDF يعزز القدرة على تجميع وأرشفة أنواع مختلفة من الملفات في مستند واحد متسق. يمكن أن يتضمن مثل هذا المستند ملفات نصية، وصور، وجداول بيانات، وعروض تقديمية، ومواد أخرى، ويضمن أن يتم تخزين وتنظيم جميع المواد ذات الصلة في مكان واحد.
+سوف تساعد محفظة PDF على عرض العرض التقديمي الخاص بك بطريقة عالية الجودة، أينما كنت تستخدمه. بشكل عام، يعد إنشاء محفظة PDF مهمة حديثة وحديثة للغاية.
 
-سيساعدك ملف PDF على عرض تقديمك بجودة عالية، أينما كنت تستخدمه. بشكل عام، إنشاء ملف PDF هو مهمة حديثة ومعاصرة للغاية.
+استخدم محفظة PDF عندما تريد توزيع مجموعة من الملفات ذات الصلة معًا مع الاحتفاظ بكل ملف بتنسيقه الأصلي داخل حاوية PDF واحدة.
 
-## كيفية إنشاء ملف PDF 
+## كيفية إنشاء محفظة PDF
 
-تسمح مكتبة Aspose.PDF لبايثون عبر .NET بإنشاء مستندات PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). أضف ملفًا إلى كائن document.collection بعد الحصول عليه باستخدام فئة [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/). وعندما يتم إضافة الملفات، استخدم طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) الخاصة بفئة Document لحفظ مستند ملف PDF.
+يسمح Aspose.PDF لبيثون عبر .NET بإنشاء مستندات حافظة PDF باستخدام [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة. أضف ملفًا إلى كائن document.collection بعد الحصول عليه باستخدام [مواصفات الملف](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) فئة. عند إضافة الملفات، استخدم فئة «المستند» [حفظ ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) طريقة لحفظ مستند المحفظة.
 
-يستخدم المثال التالي ملف Excel من مايكروسوفت، ومستند وورد وملف صورة لإنشاء ملف PDF.
+يستخدم المثال التالي ملف Microsoft Excel ومستند Word وملف صورة لإنشاء محفظة PDF.
 
-الكود أدناه ينتج المحفظة التالية.
+ينتج عن الكود أدناه المحفظة التالية.
 
-### محفظة PDF تم إنشاؤها باستخدام Aspose.PDF لـ Python
+### محفظة PDF تم إنشاؤها باستخدام Aspose.PDF لبيثون
 
-![محفظة PDF تم إنشاؤها باستخدام Aspose.PDF لـ Python](working-with-pdf-portfolio_1.jpg)
+![محفظة PDF تم إنشاؤها باستخدام Aspose.PDF لبيثون](working-with-pdf-portfolio_1.jpg)
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # إنشاء كائن المستند
+def create_pdf_portfolio(input_files, outfile):
+    # Instantiate Document Object
     document = ap.Document()
 
-    # إنشاء كائن مجموعة المستندات
+    # Instantiate document Collection object
     document.collection = ap.Collection()
 
-    # الحصول على الملفات لإضافتها إلى المحفظة
-    excel = ap.FileSpecification(input_excel)
-    word = ap.FileSpecification(input_doc)
-    image = ap.FileSpecification(input_jpg)
+    # Get Files to add to Portfolio
+    excel = ap.FileSpecification(input_files[0])
+    word = ap.FileSpecification(input_files[1])
+    image = ap.FileSpecification(input_files[2])
 
-    # توفير وصف للملفات
-    excel.description = "ملف Excel"
-    word.description = "ملف Word"
-    image.description = "ملف صورة"
+    # Provide description of the files
+    excel.description = "Excel File"
+    word.description = "Word File"
+    image.description = "Image File"
 
-    # إضافة الملفات إلى مجموعة المستندات
+    # Add files to document collection
     document.collection.append(excel)
     document.collection.append(word)
     document.collection.append(image)
 
-    # حفظ مستند المحفظة
-    document.save(output_pdf)
+    # Save Portfolio document
+    document.save(outfile)
 ```
 
 ## إزالة الملفات من محفظة PDF
 
-من أجل حذف/إزالة الملفات من محفظة PDF، حاول استخدام الأسطر البرمجية التالية.
+من أجل حذف/إزالة الملفات من محفظة PDF، حاول استخدام أسطر التعليمات البرمجية التالية.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    # فتح المستند
-    document = ap.Document(input_pdf)
+def remove_files_from_pdf_portfolio(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
     document.collection.delete()
 
-    # حفظ الملف المحدث
-    document.save(output_pdf)
+    # Save updated file
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## موضوعات المرفقات ذات الصلة
+
+- [العمل مع مرفقات PDF في بايثون](/pdf/ar/python-net/attachments/)
+- [إضافة مرفقات إلى PDF في Python](/pdf/ar/python-net/add-attachment-to-pdf-document/)
+- [إزالة المرفقات من PDF في Python](/pdf/ar/python-net/removing-attachment-from-an-existing-pdf/)
+

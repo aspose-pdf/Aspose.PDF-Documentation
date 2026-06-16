@@ -1,5 +1,6 @@
 ---
 title: PDF File Metadata
+linktitle: PDF File Metadata
 type: docs
 weight: 20
 url: /cpp/pdf-file-metadata/

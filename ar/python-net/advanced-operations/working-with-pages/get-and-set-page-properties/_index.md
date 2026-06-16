@@ -1,349 +1,158 @@
 ---
-title: الحصول على خصائص الصفحة وتعيينها باستخدام Python
-linktitle: الحصول على خصائص الصفحة وتعيينها
+title: الحصول على خصائص صفحة PDF وتعيينها في Python
+linktitle: الحصول على خصائص الصفحة وإعدادها
 type: docs
 weight: 90
 url: /ar/python-net/get-and-set-page-properties/
-description: يوضح هذا القسم كيفية الحصول على عدد الصفحات في ملف PDF، والحصول على معلومات حول خصائص صفحة PDF مثل اللون وتعيين خصائص الصفحة.
-lastmod: "2023-04-17"
+description: تعرف على كيفية فحص وتحديث خصائص صفحة PDF مثل معلومات الحجم والعد واللون في Python.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية الحصول على خصائص الصفحة وتعيينها باستخدام Python
+Abstract: تتناول هذه المقالة إمكانيات Aspose.PDF لـ Python عبر .NET، مع التركيز على قراءة خصائص الصفحة وإعدادها في ملفات PDF باستخدام Python. تتناول المقالة العديد من الوظائف بما في ذلك تحديد عدد الصفحات في PDF، والوصول إلى خصائص الصفحة وتعديلها، ومعالجة معلومات الألوان. للحصول على عدد الصفحات، يتم استخدام فئة «المستند» ومجموعة «PageCollection»، مع مقتطفات التعليمات البرمجية التي توضح كيفية استرداد عدد الصفحات، حتى بدون حفظ المستند. تشرح المقالة خصائص الصفحة المختلفة مثل MediaBox و BleedBox و TrimBox و ArtBox و CropBox، وتوفر أمثلة التعليمات البرمجية للوصول إلى هذه الخصائص. بالإضافة إلى ذلك، فإنه يغطي استرداد صفحة معينة من PDF وحفظها كمستند منفصل، بالإضافة إلى تحديد نوع لون كل صفحة. يتم تنفيذ الأمثلة في كل مكان في Python، مما يوضح التطبيقات العملية لهذه الميزات.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "الحصول على خصائص الصفحة وتعيينها باستخدام Python",
-    "alternativeHeadline": "الحصول على خصائص صفحات PDF وتعيينها",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, python, الحصول على خصائص الصفحة, تعيين خصائص الصفحة",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/get-and-set-page-properties/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/get-and-set-page-properties/"
-    },
-    "dateModified": "2023-04-04",
-    "description": ""
-}
-</script>
 
+يتيح لك Aspose.PDF لـ Python عبر .NET قراءة خصائص الصفحات وتعيينها في ملف PDF في تطبيقات Python الخاصة بك. يوضح هذا القسم كيفية الحصول على عدد الصفحات في ملف PDF، والحصول على معلومات حول خصائص صفحة PDF مثل اللون وتعيين خصائص الصفحة. تستخدم الأمثلة [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) و [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) واجهات برمجة التطبيقات ومكتوبة بلغة Python.
 
-Aspose.PDF لـ Python عبر .NET يتيح لك قراءة وتعيين خصائص الصفحات في ملف PDF في تطبيقات Python الخاصة بك. يوضح هذا القسم كيفية الحصول على عدد الصفحات في ملف PDF، والحصول على معلومات حول خصائص صفحة PDF مثل اللون وتعيين خصائص الصفحة. الأمثلة المعطاة هي بلغة Python.
+استخدم هذا الدليل عندما تحتاج إلى فحص بيانات تعريف الصفحة أو تحديد عدد الصفحات أو تحديث خصائص مستوى الصفحة كجزء من تحليل المستند أو مهام التطبيع.
 
-## الحصول على عدد الصفحات في ملف PDF
+## احصل على عدد الصفحات في ملف PDF
 
-عند العمل مع المستندات، غالبًا ما ترغب في معرفة عدد الصفحات التي تحتوي عليها. مع Aspose.PDF لا يستغرق الأمر أكثر من سطرين من التعليمات البرمجية.
+عند التعامل مع المستندات، غالبًا ما تريد معرفة عدد الصفحات التي تحتوي عليها. مع Aspose.PDF لا يتطلب هذا أكثر من سطرين من التعليمات البرمجية.
 
 للحصول على عدد الصفحات في ملف PDF:
 
-1. افتح ملف PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. ثم استخدم خاصية Count لمجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (من كائن Document) للحصول على العدد الإجمالي للصفحات في المستند.
+1. افتح ملف PDF باستخدام [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة.
+1. ثم استخدم [مجموعة الصفحات](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) خاصية العد للمجموعة (من كائن المستند) للحصول على إجمالي عدد الصفحات في المستند.
 
-يظهر مقتطف الكود التالي كيفية الحصول على عدد الصفحات في ملف PDF.
+يوضح مقتطف الشفرة التالي كيفية الحصول على عدد صفحات ملف PDF.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def get_page_count(input_file_name):
+    # Open document
+    document = ap.Document(input_file_name)
 
-    # فتح المستند
-    document = ap.Document(input_pdf)
-
-    # الحصول على عدد الصفحات
-    print("عدد الصفحات:", str(len(document.pages)))
+    # Get page count
+    print("Page Count:", str(len(document.pages)))
 ```
-
 
 ### احصل على عدد الصفحات دون حفظ المستند
 
-في بعض الأحيان نقوم بإنشاء ملفات PDF بشكل فوري وأثناء إنشاء ملف PDF قد نصادف الحاجة (إنشاء جدول المحتويات، إلخ) للحصول على عدد صفحات ملف PDF دون حفظ الملف على النظام أو البث. لذلك من أجل تلبية هذا المتطلب، تم تقديم طريقة [process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) في فئة Document. يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات للحصول على عدد الصفحات دون حفظ المستند.
+في بعض الأحيان نقوم بإنشاء ملفات PDF بسرعة وأثناء إنشاء ملف PDF، قد نواجه المتطلبات (إنشاء جدول المحتويات وما إلى ذلك) للحصول على عدد صفحات ملف PDF دون حفظ الملف عبر النظام أو البث. لذلك من أجل تلبية هذا المطلب، هناك طريقة [فقرات العملية ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) تم تقديمه في فئة المستندات. يرجى إلقاء نظرة على مقتطف الشفرة التالي الذي يعرض خطوات الحصول على عدد الصفحات دون حفظ المستند.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    # إنشاء مثيل للمستند
+def get_page_count_without_saving(input_file_name):
+    # Instantiate Document instance
     document = ap.Document()
-    # إضافة صفحة إلى مجموعة الصفحات في ملف PDF
+    # Add page to pages collection of PDF file
     page = document.pages.add()
-    # إنشاء مثيل للحلقة
-    for i in range(0, 300):
-        # إضافة TextFragment إلى مجموعة الفقرات في كائن الصفحة
-        page.paragraphs.add(ap.text.TextFragment("اختبار عدد الصفحات"))
-    # معالجة الفقرات في ملف PDF للحصول على عدد صفحات دقيق
+    # Create loop instance
+    for _ in range(0, 300):
+        # Add TextFragment to paragraphs collection of page object
+        page.paragraphs.add(ap.text.TextFragment("Pages count test"))
+    # Process the paragraphs in PDF file to get accurate page count
     document.process_paragraphs()
-    # طباعة عدد الصفحات في المستند
-    print("عدد الصفحات في المستند =", str(len(document.pages)))
+    # Print number of pages in document
+    print("Number of pages in document =", str(len(document.pages)))
 ```
 
+## احصل على خصائص الصفحة
 
-## الحصول على خصائص الصفحة
+تحتوي كل صفحة في ملف PDF على عدد من الخصائص، مثل العرض والارتفاع ومربع التسييل والقص والتقطيع. Aspose.PDF يسمح لك بالوصول إلى هذه الخصائص.
 
-كل صفحة في ملف PDF تحتوي على عدد من الخصائص، مثل العرض والارتفاع وصندوق النزيف وصندوق القطع وصندوق التشذيب. تتيح لك Aspose.PDF الوصول إلى هذه الخصائص.
+### فهم خصائص الصفحة: الفرق بين Artbox و BleedBox و CropBox و MediaBox و TrimBox وخاصية Rect
 
-### **فهم خصائص الصفحة: الفرق بين Artbox وBleedBox وCropBox وMediaBox وTrimBox وRect property**
-
-- **صندوق الوسائط**: صندوق الوسائط هو أكبر صندوق للصفحة. يتوافق مع حجم الصفحة (على سبيل المثال A4، A5، رسالة الولايات المتحدة، إلخ) الذي تم اختياره عند طباعة المستند إلى PostScript أو PDF. بمعنى آخر، يحدد صندوق الوسائط الحجم الفعلي للوسائط التي يتم عرض أو طباعة مستند PDF عليها.
-- **صندوق النزيف**: إذا كان للمستند نزيف، فسيحتوي PDF أيضًا على صندوق النزيف.
- Bleed هو مقدار اللون (أو العمل الفني) الذي يمتد إلى ما بعد حافة الصفحة. يُستخدم لضمان أنه عند طباعة الوثيقة وقصها إلى الحجم المطلوب ("مُقَصَّصة")، فإن الحبر سيصل إلى حافة الصفحة. حتى إذا كانت الصفحة مقصوصة بشكل غير دقيق - مقصوصة بشكل طفيف خارج علامات القص - فلن تظهر حواف بيضاء على الصفحة.
-
-- **Trim box**: يشير مربع القص إلى الحجم النهائي لوثيقة بعد الطباعة والقص.
-- **Art box**: مربع الفن هو المربع المرسوم حول المحتويات الفعلية للصفحات في وثائقك. يُستخدم هذا المربع عند استيراد وثائق PDF في تطبيقات أخرى.
-- **Crop box**: مربع الاقتصاص هو حجم "الصفحة" الذي يتم عرض وثيقتك PDF به في Adobe Acrobat. في العرض العادي، يتم عرض محتويات مربع الاقتصاص فقط في Adobe Acrobat.
-  للحصول على وصفات مفصلة لهذه الخصائص، اقرأ مواصفات Adobe.Pdf، خاصة 10.10.1 حدود الصفحة.
-- **Page.Rect**: التقاطع (المستطيل المرئي عادة) بين MediaBox و DropBox. الصورة أدناه توضح هذه الخصائص.
+- **صندوق الوسائط**: صندوق الوسائط هو أكبر مربع صفحة. وهو يتوافق مع حجم الصفحة (على سبيل المثال A4 و A5 و US Letter وما إلى ذلك) المحدد عند طباعة المستند إلى PostScript أو PDF. بمعنى آخر، يحدد مربع الوسائط الحجم المادي للوسائط التي يتم عرض مستند PDF عليها أو طباعتها.
+- **مربع التسييل**: إذا كان المستند مضخمًا، فسيحتوي ملف PDF أيضًا على مربع التسييل. التسييل هو مقدار اللون (أو العمل الفني) الذي يمتد إلى ما وراء حافة الصفحة. يتم استخدامه للتأكد من أنه عند طباعة المستند وتقطيعه إلى حجمه («اقتطاعه»)، سينتقل الحبر إلى حافة الصفحة. حتى في حالة عدم دقة الصفحة - قم بقطع علامات القطع قليلاً - لن تظهر أي حواف بيضاء على الصفحة.
+- **صندوق التقليم**: يشير مربع القطع إلى الحجم النهائي للمستند بعد الطباعة والتشذيب.
+- **صندوق الفن**: المربع الفني هو المربع المرسوم حول المحتويات الفعلية للصفحات في مستنداتك. يتم استخدام مربع الصفحة هذا عند استيراد مستندات PDF في تطبيقات أخرى.
+- **صندوق الاقتصاص**: مربع الاقتصاص هو حجم «الصفحة» الذي يتم عرض مستند PDF به في Adobe Acrobat. في العرض العادي، يتم عرض محتويات مربع الاقتصاص فقط في Adobe Acrobat.
+  للحصول على أوصاف تفصيلية لهذه الخصائص، اقرأ مواصفات Adobe.Pdf، وخاصة حدود الصفحات 10.10.1.
+- **Page.Rect**: التقاطع (المستطيل المرئي بشكل شائع) بين MediaBox و DropBox (`Page.rect`). انظر إلى [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) اكتب خصائص المستطيل. توضح الصورة أدناه هذه الخصائص.
 
 لمزيد من التفاصيل، يرجى زيارة [هذه الصفحة](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-### **الوصول إلى خصائص الصفحة**
+### الوصول إلى خصائص الصفحة
 
-توفر فئة [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) جميع الخصائص المتعلقة بصفحة PDF معينة. تحتوي جميع صفحات ملفات PDF في مجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) الخاصة بكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+ال [صفحة](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) يوفر الفصل جميع الخصائص المتعلقة بصفحة PDF معينة. جميع صفحات ملفات PDF موجودة في [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) الكائنات [مجموعة الصفحات](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) مجموعة.
 
-من هناك، يمكن الوصول إلى كائنات الصفحة الفردية باستخدام الفهرس الخاص بها، أو التكرار عبر المجموعة باستخدام حلقة foreach للحصول على جميع الصفحات. بمجرد الوصول إلى صفحة فردية، يمكننا الحصول على خصائصها. يوضح مقطع الشيفرة التالي كيفية الحصول على خصائص الصفحة.
+من هناك، يمكن الوصول إلى أي فرد `Page` الكائنات باستخدام الفهرس الخاص بها، أو قم بالتمرير عبر المجموعة للحصول على جميع الصفحات. بمجرد الوصول إلى صفحة فردية، يمكننا الحصول على خصائصها. يوضح مقتطف الشفرة التالي كيفية الحصول على خصائص الصفحة ( `Page` API).
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    # افتح المستند
-    document = ap.Document(input_pdf)
-    # احصل على صفحة معينة
+def get_page_properties(input_file_name):
+    # Open document
+    document = ap.Document(input_file_name)
+    # Get particular page
     page = document.pages[1]
-    # احصل على خصائص الصفحة
-    print(
-        "ArtBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.art_box.height,
-            page.art_box.width,
-            page.art_box.llx,
-            page.art_box.lly,
-            page.art_box.urx,
-            page.art_box.ury,
+
+    # Get page properties
+    boxes = {
+        "ArtBox": page.art_box,
+        "BleedBox": page.bleed_box,
+        "CropBox": page.crop_box,
+        "MediaBox": page.media_box,
+        "TrimBox": page.trim_box,
+        "Rect": page.rect,
+    }
+
+    # Print box properties
+    for box_name, box in boxes.items():
+        print(
+            f"{box_name} : Height={box.height},Width={box.width},LLX={box.llx},LLY={box.lly},URX={box.urx},URY={box.ury}"
         )
-    )
-    print(
-        "BleedBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.bleed_box.height,
-            page.bleed_box.width,
-            page.bleed_box.llx,
-            page.bleed_box.lly,
-            page.bleed_box.urx,
-            page.bleed_box.ury,
-        )
-    )
-    print(
-        "CropBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.crop_box.height,
-            page.crop_box.width,
-            page.crop_box.llx,
-            page.crop_box.lly,
-            page.crop_box.urx,
-            page.crop_box.ury,
-        )
-    )
-    print(
-        "MediaBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.media_box.height,
-            page.media_box.width,
-            page.media_box.llx,
-            page.media_box.lly,
-            page.media_box.urx,
-            page.media_box.ury,
-        )
-    )
-    print(
-        "TrimBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.trim_box.height,
-            page.trim_box.width,
-            page.trim_box.llx,
-            page.trim_box.lly,
-            page.trim_box.urx,
-            page.trim_box.ury,
-        )
-    )
-    print(
-        "Rect : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.rect.height,
-            page.rect.width,
-            page.rect.llx,
-            page.rect.lly,
-            page.rect.urx,
-            page.rect.ury,
-        )
-    )
-    print("رقم الصفحة :", page.number)
-    print("التدوير :", page.rotate)
-```
 
-## الحصول على صفحة معينة من ملف PDF
-
-تتيح لك Aspose.PDF for Python [تقسيم ملف PDF إلى صفحات فردية](/pdf/ar/python-net/split-pdf-document/) وحفظها كملفات PDF. الحصول على صفحة محددة في ملف PDF وحفظها كملف PDF جديد هو عملية مشابهة جدًا: قم بفتح المستند المصدر، الوصول إلى الصفحة، إنشاء مستند جديد وإضافة الصفحة إليه.
-
-يحمل كائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) الخاص بـ [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection) الصفحات في ملف PDF. للحصول على صفحة معينة من هذه المجموعة:
-
-1. حدد فهرس الصفحة باستخدام خاصية Pages.
-2. قم بإنشاء كائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) جديد.
-3. أضف كائن [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) إلى كائن المستند الجديد.
-4. قم بحفظ النتيجة باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-
-يوضح مقطع الشيفرة التالي كيفية الحصول على صفحة معينة من ملف PDF وحفظها كملف جديد.
-
-```python
-
-    import aspose.pdf as ap
-
-    # افتح المستند
-    document = ap.Document(input_pdf)
-
-    # احصل على صفحة معينة
-    page = document.pages[2]
-
-    # احفظ الصفحة كملف PDF
-    new_document = ap.Document()
-    new_document.pages.add(page)
-    new_document.save(output_pdf)
+    # Print other page properties
+    print(f"Page Number : {page.number}")
+    print(f"Rotate : {page.rotate}")
 ```
 
 ## تحديد لون الصفحة
 
-توفر فئة [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) الخصائص المتعلقة بصفحة معينة في مستند PDF، بما في ذلك نوع اللون - RGB، الأسود والأبيض، الرمادي أو غير محدد - الذي تستخدمه الصفحة.
+ال [صفحة](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) توفر الفئة الخصائص المتعلقة بصفحة معينة في مستند PDF، بما في ذلك نوع اللون - RGB، الأسود والأبيض، الرمادي أو غير المحدد - الذي تستخدمه الصفحة.
 
-تُحتوى جميع صفحات ملفات PDF بواسطة مجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
- The [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) الخاصية تحدد لون العناصر على الصفحة. للحصول على أو تحديد معلومات اللون لصفحة PDF معينة، استخدم خاصية [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) الخاصة بكائن [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
+يتم تضمين جميع صفحات ملفات PDF بواسطة [مجموعة الصفحات](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) مجموعة. ال [نوع اللون](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) تحدد الخاصية لون العناصر على الصفحة. للحصول على معلومات اللون أو تحديدها لصفحة PDF معينة، استخدم [صفحة](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) الكائنات [نوع اللون](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) الملكية.
 
-يُظهر مقطع الشيفرة التالي كيفية التكرار عبر صفحات ملف PDF للحصول على معلومات اللون.
+يوضح مقتطف الشفرة التالي كيفية التكرار من خلال صفحة فردية من ملف PDF للحصول على معلومات اللون.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-
-    # افتح ملف PDF المصدر
-    document = ap.Document(input_pdf)
-    # كرر عبر جميع صفحات ملف PDF
-    for page_n in range(0, len(document.pages)):
-        page_number = page_n + 1
-        # احصل على معلومات نوع اللون لصفحة PDF معينة
+def get_page_color_type(input_file_name):
+    # Open source PDF file
+    document = ap.Document(input_file_name)
+    # Iterate through all the page of PDF file
+    for page_number in range(1, len(document.pages) + 1):
+        # Get the color type information for particular PDF page
         page_color_type = document.pages[page_number].color_type
-        if page_color_type == ap.ColorType.BLACK_AND_WHITE:
-            print("الصفحة رقم " + str(page_number) + " بالأبيض والأسود.")
-
-        if page_color_type == ap.ColorType.GRAYSCALE:
-            print("الصفحة رقم " + str(page_number) + " بدرجات الرمادي.")
-
-        if page_color_type == ap.ColorType.RGB:
-            print("الصفحة رقم " + str(page_number) + " بنظام RGB.")
-
-        if page_color_type == ap.ColorType.UNDEFINED:
-            print("الصفحة رقم " + str(page_number) + " لونها غير معرف.")
+        color_type_map = {
+            ap.ColorType.BLACK_AND_WHITE: "Black and white",
+            ap.ColorType.GRAYSCALE: "Gray Scale",
+            ap.ColorType.RGB: "RGB",
+            ap.ColorType.UNDEFINED: "undefined",
+        }
+        color_description = color_type_map.get(page_color_type, "unknown")
+        print(f"Page # {page_number} is {color_description}.")
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF لـ Python عبر مكتبة .NET",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "بريطانيا",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "ويندوز، ماك أو إس، لينكس",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## موضوعات الصفحة ذات الصلة
+
+- [العمل مع صفحات PDF في بايثون](/pdf/ar/python-net/working-with-pages/)
+- [تغيير حجم صفحة PDF في Python](/pdf/ar/python-net/change-page-size/)
+- [قص صفحات PDF في بايثون](/pdf/ar/python-net/crop-pages/)
+- [تدوير صفحات PDF في بايثون](/pdf/ar/python-net/rotate-pages/)

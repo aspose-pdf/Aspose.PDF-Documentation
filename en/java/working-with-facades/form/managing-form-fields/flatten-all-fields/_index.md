@@ -1,5 +1,6 @@
 ---
 title: Flatten All Fields
+linktitle: Flatten All Fields
 type: docs
 weight: 10
 url: /java/flatten-all-fields/

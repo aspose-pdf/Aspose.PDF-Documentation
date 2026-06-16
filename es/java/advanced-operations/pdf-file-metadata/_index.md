@@ -1,5 +1,5 @@
 ---
-title: Trabajando con Metadatos de Archivos PDF 
+title: Trabajando con Metadatos de Archivos PDF
 linktitle: Metadatos de Archivos PDF
 type: docs
 weight: 140

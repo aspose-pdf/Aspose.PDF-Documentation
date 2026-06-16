@@ -1,11 +1,11 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
 url: /ja/nodejs-cpp/get-started/
 description: このセクションでは、C++ 経由で Aspose.PDF for Node.js の基本原則について説明します。Aspose.PDF for Node.js via C++ は、さまざまな機能をサポートしています。
-lastmod: "2023-11-16"   
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

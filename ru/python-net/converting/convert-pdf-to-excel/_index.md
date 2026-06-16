@@ -5,38 +5,38 @@ type: docs
 weight: 20
 url: /ru/python-net/convert-pdf-to-excel/
 lastmod: "2026-04-14"
-description: Узнайте, как конвертировать PDF-файлы в Excel в Python с помощью Aspose.PDF for Python via .NET, включая XLS, XLSX, CSV, ODS и вывод в виде одного листа.
+description: Узнайте, как конвертировать PDF в Excel на Python, включая XLS, XLSX, CSV, ODS, вывод в один лист и обработку столбцов с помощью Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Как конвертировать PDF в Excel в Python
-Abstract: В этой статье представлен всесторонний руководитель по конвертации PDF‑файлов в различные форматы Excel с использованием Python, конкретно с библиотекой Aspose.PDF for Python via .NET. Описываются процессы преобразования в форматы XLS, XLSX, CSV и ODS. Документ объясняет шаги, необходимые для конвертации PDF в XLS и XLSX, выделяя создание экземпляров Document и ExcelSaveOptions, а также использование метода Document.Save() для указания выходных форматов. В статье также рассматриваются такие возможности, как контроль вставки пустых столбцов и уменьшение количества листов во время конвертации. Кроме того, приводятся примеры преобразования PDF в отдельные листы Excel и другие форматы, такие как CSV и ODS, подчёркивая гибкость и функциональность Aspose.PDF. Также упоминается онлайн‑инструмент для конвертации PDF в XLSX, позволяющий пользователям оценить качество преобразования. В заключении статьи приведён список связанных тем и фрагменты кода, помогающие лучше понять и реализовать эти конвертации программно.
+AlternativeHeadline: Конвертировать PDF в Excel, XLSX, CSV и ODS на Python
+Abstract: Эта статья показывает, как конвертировать файлы PDF в форматы электронных таблиц с использованием Aspose.PDF for Python via .NET. Она охватывает вывод в форматы XLS, XLSX, XLSM, CSV и ODS, а также параметры для управления пустыми столбцами и уменьшения количества создаваемых листов.
 ---
 
-## Преобразование PDF в Excel (Spreadsheet 2003 XML)
+## Конвертировать PDF в Excel с помощью Python
 
-**Aspose.PDF for Python via .NET** поддерживает возможность конвертации PDF‑файлов в форматы Excel и CSV.
+**Aspose.PDF for Python via .NET** поддерживает конвертирование PDF‑файлов в Excel и другие форматы электронных таблиц из кода Python.
 
-Aspose.PDF for Python via .NET — это компонент для работы с PDF, мы внедрили функцию, которая преобразует PDF‑файл в рабочую книгу Excel (файлы XLSX). Во время этого преобразования отдельные страницы PDF‑файла конвертируются в листы Excel.
+Используйте эту страницу, когда нужно конвертировать PDF в XLS, XLSX, CSV или ODS для извлечения таблиц, повторного использования отчётов, сортировки, фильтрации или последующего анализа. При конвертации PDF в Excel отдельные страницы PDF могут быть отображены как листы Excel.
 
-Используйте эту страницу, когда вам необходимо извлекать содержимое PDF, ориентированное на таблицы или в виде отчётов, в форматы таблиц для сортировки, фильтрации или последующего анализа.
+Первый пример преобразует PDF‑файл в формат Spreadsheet 2003 XML. В последующих разделах показаны форматы XLSX, XLSM, CSV, ODS и вывод в виде одного листа.
 
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в Excel онлайн**
 
-Aspose.PDF представляет вам онлайн‑приложение ["PDF в XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), где вы можете попытаться исследовать его функциональность и качество работы.
+Aspose.PDF представляет вам онлайн‑приложение ["PDF в XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), где вы можете попытаться исследовать работу функциональности и качества.
 
-[![Aspose.PDF Преобразование PDF в Excel с приложением](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![Aspose.PDF Конвертация PDF в Excel с приложением](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-Следующий фрагмент кода демонстрирует процесс преобразования PDF‑файла в формат XLS или XLSX с помощью Aspose.PDF for Python via .NET.
+Следующий фрагмент кода показывает процесс преобразования PDF‑файла в формат XLS или XLSX с помощью Aspose.PDF for Python via .NET.
 
-Шаги: Преобразовать PDF‑файл в формат Excel (XML Spreadsheet 2003)
+Шаги: Преобразовать файл PDF в формат Excel (XML Spreadsheet 2003)
 
 1. Загрузите PDF‑документ.
-1. Настройте параметры сохранения Excel с помощью [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-1. Сохраните конвертированный файл.
+1. Настройте параметры сохранения Excel, используя [ПараметрыСохраненияExcel](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Сохраните преобразованный файл.
 
 ```python
 from os import path
@@ -52,15 +52,13 @@ def convert_pdf_to_excel_spread_sheet2003(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Преобразование PDF в Excel 2007+ (XLSX)
+## Преобразовать PDF в XLSX с помощью Python
 
-Шаги: Конвертировать PDF‑файл в формат XLSX (Excel 2007+)
+Шаги: Преобразовать файл PDF в формат XLSX (Excel 2007+)
 
-1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) объект с исходным PDF-документом.
-1. Создайте экземпляр [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) с **ExcelSaveOptions.ExcelFormat.ODS**
-1. Сохраните его в формат **ODS**, вызвав [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод и его передача [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-
-Преобразование в формат ODS выполняется так же, как и все остальные форматы.
+1. Загрузите PDF‑документ.
+1. Настройте параметры сохранения Excel, используя [ПараметрыСохраненияExcel](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Сохраните преобразованный файл.
 
 ```python
 from os import path
@@ -76,9 +74,9 @@ def convert_pdf_to_excel_2007(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Преобразование PDF в XLS с контролем столбца
+## Конвертировать PDF в XLSX с управлением столбцами
 
-При конвертации PDF в формат XLS в выходной файл добавляется пустой столбец в качестве первого столбца. Опция 'insert_blank_column_at_first' в классе 'ExcelSaveOptions' используется для управления этим столбцом. Ее значение по умолчанию — true.
+При конвертации PDF в формат Excel в выходной файл может быть добавлена пустая колонка в качестве первой колонки. Используйте `insert_blank_column_at_first` вариант `ExcelSaveOptions` класс для управления этим поведением. Его значение по умолчанию — `true`.
 
 ```python
 from os import path
@@ -95,16 +93,16 @@ def convert_pdf_to_excel_2007_control_column(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Преобразование PDF в один лист Excel
+## Преобразовать PDF в один лист Excel
 
-Aspose.PDF for Python via .NET демонстрирует, как конвертировать PDF в файл Excel (.xlsx), с включённым параметром ’minimize_the_number_of_worksheets’.
+Aspose.PDF for Python via .NET показывает, как преобразовать PDF в файл Excel (.xlsx) с включённой опцией 'minimize_the_number_of_worksheets'.
 
-Шаги: Преобразовать PDF в XLS или XLSX в один лист с помощью Python
+Шаги: Конвертировать PDF в XLS или XLSX в один лист в Python
 
 1. Загрузите PDF‑документ.
-1. Настройте параметры сохранения Excel с помощью [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Настройте параметры сохранения Excel, используя [ПараметрыСохраненияExcel](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 1. Опция 'minimize_the_number_of_worksheets' уменьшает количество листов Excel, объединяя страницы PDF в меньшее число листов (например, один лист для всего документа, если это возможно).
-1. Сохранить преобразованный файл.
+1. Сохраните преобразованный файл.
 
 ```python
 from os import path
@@ -121,7 +119,7 @@ def convert_pdf_to_excel_2007_single_excel_worksheet(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Преобразование PDF в Excel 2007 с поддержкой макросов (XLSM)
+## Преобразовать PDF в Excel 2007 с поддержкой макросов (XLSM)
 
 Этот пример на Python показывает, как преобразовать файл PDF в файл Excel в формате XLSM (рабочая книга Excel с поддержкой макросов).
 
@@ -139,17 +137,17 @@ def convert_pdf_to_excel_2007_macro(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-## Преобразование в другие форматы электронных таблиц
+## Преобразовать в другие форматы электронных таблиц
 
-### Преобразование PDF в CSV
+### Преобразовать PDF в CSV
 
-Функция 'convert_pdf_to_excel_2007_csv' выполняет ту же операцию, что и раньше, но на этот раз целевой формат — CSV (значения, разделённые запятыми) вместо XLSM.
+Функция 'convert_pdf_to_excel_2007_csv' выполняет ту же операцию, что и ранее, но на этот раз целевой формат — CSV (Comma-Separated Values), а не XLSM.
 
-Шаги: Конвертировать PDF в CSV в Python
+Шаги: конвертировать PDF в CSV в Python
 
-1. Создать экземпляр [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) объект с исходным PDF документом.
-1. Создать экземпляр [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) с **ExcelSaveOptions.ExcelFormat.CSV**
-1. Сохраните его в формате **CSV**, вызвав [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* метод и его передача [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Создайте экземпляр [Документ](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) объект с исходным PDF документом.
+1. Создайте экземпляр [ПараметрыСохраненияExcel](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) с **ExcelSaveOptions.ExcelFormat.CSV**
+1. Сохраните его в формате **CSV**, вызвав [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* метод и его передачу [ПараметрыСохраненияExcel](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 ```python
 from os import path
@@ -165,15 +163,15 @@ def convert_pdf_to_excel_2007_csv(infile, outfile):
     print(infile + " converted into " + outfile)
 ```
 
-### Преобразование PDF в ODS
+### Преобразовать PDF в ODS
 
-Шаги: Преобразовать PDF в ODS в Python
+Шаги: Конвертировать PDF в ODS в Python
 
-1. Создать экземпляр [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) объект с исходным PDF документом.
-1. Создать экземпляр [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) с **ExcelSaveOptions.ExcelFormat.ODS**
-1. Сохраните его в формат **ODS**, вызывая [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод и передача его [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Создайте экземпляр [Документ](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) объект с исходным PDF документом.
+1. Создайте экземпляр [ПараметрыСохраненияExcel](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) с **ExcelSaveOptions.ExcelFormat.ODS**
+1. Сохраните его в формате **ODS**, вызвав [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) метод и передача его [ПараметрыСохраненияExcel](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
-Преобразование в формат ODS происходит так же, как и все остальные форматы.
+Конвертация в формат ODS выполняется так же, как и все остальные форматы.
 
 ```python
 from os import path
@@ -191,6 +189,6 @@ def convert_pdf_to_ods(infile, outfile):
 
 ## Связанные преобразования
 
-- [Конвертировать PDF в Word](/pdf/ru/python-net/convert-pdf-to-word/) если ваш приоритет — редактируемый поток текста, а не структура таблицы.
-- [Преобразовать PDF в HTML](/pdf/ru/python-net/convert-pdf-to-html/) когда вам нужен вывод, пригодный для браузера.
-- [Конвертировать PDF в другие форматы](/pdf/ru/python-net/convert-pdf-to-other-files/) для EPUB, Markdown, текста, XPS и связанных экспортных рабочих процессов.
+- [Конвертировать PDF в Word](/pdf/ru/python-net/convert-pdf-to-word/) если ваш приоритет — редактируемый поток текста, а не структура таблицы.
+- [Преобразовать PDF в HTML](/pdf/ru/python-net/convert-pdf-to-html/) когда вам нужен вывод, удобный для браузера.
+- [Преобразовать PDF в другие форматы](/pdf/ru/python-net/convert-pdf-to-other-files/) для EPUB, Markdown, текста, XPS и связанных процессов экспорта.

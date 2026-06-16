@@ -1,5 +1,6 @@
 ---
 title: IsFontEmbedded
+linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /reportingservices/isfontembedded/

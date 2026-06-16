@@ -1,5 +1,5 @@
 ---
-title: Format File yang Didukung 
+title: Format File yang Didukung
 
 type: docs
 
@@ -10,7 +10,6 @@ url: /id/sharepoint/format-file-yang-didukung/
 lastmod: "2020-12-16"
 
 description: API PDF SharePoint dapat memuat dan menyimpan format file yang mencakup PDF dan PDF/A.
-
 ---
 
 ## <ins>**Format Memuat yang Didukung**

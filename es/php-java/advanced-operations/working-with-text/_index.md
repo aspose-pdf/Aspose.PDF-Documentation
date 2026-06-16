@@ -1,5 +1,5 @@
 ---
-title: Trabajando con Texto en PDF 
+title: Trabajando con Texto en PDF
 linktitle: Trabajando con Texto
 type: docs
 weight: 30

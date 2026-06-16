@@ -1,5 +1,6 @@
 ---
 title: Add Footer to PDF
+linktitle: Add Footer to PDF
 type: docs
 weight: 10
 url: /java/add-footer/

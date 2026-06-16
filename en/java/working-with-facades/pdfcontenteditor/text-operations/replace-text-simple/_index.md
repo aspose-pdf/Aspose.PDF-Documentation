@@ -1,5 +1,6 @@
 ---
 title: Replace Text Simple
+linktitle: Replace Text Simple
 type: docs
 weight: 10
 url: /java/replace-text-simple/

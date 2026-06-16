@@ -1,5 +1,5 @@
 ---
-title: 从 PDF 中提取图像 
+title: 从 PDF 中提取图像
 linktitle: 从 PDF 中提取图像
 type: docs
 weight: 20

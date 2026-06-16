@@ -1,5 +1,5 @@
 ---
-title: تحويل PDF إلى DOC 
+title: تحويل PDF إلى DOC
 linktitle: تحويل PDF إلى DOC
 type: docs
 weight: 70

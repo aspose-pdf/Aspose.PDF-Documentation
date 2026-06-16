@@ -1,5 +1,5 @@
 ---
-title: 获取、更新和展开书签 
+title: 获取、更新和展开书签
 linktitle: 获取、更新和展开书签
 type: docs
 weight: 20

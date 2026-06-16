@@ -1,5 +1,6 @@
 ---
-title: Concatenate Large Number of PDF Files
+title: Concatenate Large Number of PDF Files
+linktitle: Concatenate Large Number of PDF Files
 type: docs
 weight: 10
 url: /python-net/concatenate-large-number-files/

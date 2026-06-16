@@ -1,5 +1,5 @@
 ---
-title: PDFをMicrosoft Excelに変換 
+title: PDFをMicrosoft Excelに変換
 linktitle: PDFをExcelに変換
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: 在 PDF 中使用表格 
+title: 在 PDF 中使用表格
 linktitle: 使用表格
 type: docs
 weight: 50

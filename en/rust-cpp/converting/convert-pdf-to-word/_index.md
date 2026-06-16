@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Tool for Converting PDF to Word with Aspose.PDF for Rust
 Abstract: Aspose.PDF for Rust via C++ enables the seamless conversion of PDF documents to DOC format while preserving the original text, images, tables, and overall document structure. This feature allows developers to transform static PDFs into editable Word files for further modification and processing. The library provides various customization options to control the conversion output, ensuring high fidelity and accuracy. The documentation includes detailed instructions and sample code to help developers efficiently implement PDF-to-DOC conversion in their applications.
-SoftwareApplication: rust-cpp     
+SoftwareApplication: rust-cpp
 ---
 
 To edit the content of a PDF file in Microsoft Word or other word processors that support DOC and DOCX formats. PDF files are editable, but DOC and DOCX files are more flexible and customizable.

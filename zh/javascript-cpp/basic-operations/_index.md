@@ -1,5 +1,5 @@
 ---
-title: 使用 Aspose.PDF for JavaScript via C++ 的基本操作 
+title: 使用 Aspose.PDF for JavaScript via C++ 的基本操作
 linktitle: 基本操作
 type: docs
 weight: 40

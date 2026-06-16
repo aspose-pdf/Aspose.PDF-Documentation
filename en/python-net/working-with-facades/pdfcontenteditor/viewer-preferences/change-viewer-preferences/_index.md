@@ -1,5 +1,6 @@
 ---
-title: Change PDF Viewer Preferences
+title: Change PDF Viewer Preferences
+linktitle: Change PDF Viewer Preferences
 type: docs
 weight: 10
 url: /python-net/change-viewer-preferences/

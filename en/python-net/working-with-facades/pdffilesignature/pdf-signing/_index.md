@@ -1,5 +1,6 @@
 ---
-title: Sign PDF Documents
+title: Sign PDF Documents
+linktitle: Sign PDF Documents
 type: docs
 weight: 10
 url: /python-net/pdf-signing/

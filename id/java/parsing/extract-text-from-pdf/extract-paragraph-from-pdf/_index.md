@@ -1,5 +1,5 @@
 ---
-title: Extract Paragraph from PDF 
+title: Extract Paragraph from PDF
 linktitle: Extract Paragraph
 type: docs
 weight: 20
@@ -64,7 +64,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page) {
 }
 ```
 
-**2- Dengan mengiterasi koleksi paragraf dan mendapatkan teks dari mereka:**
+**2- Dengan mengiterasi koleksi `paragraphs` dan mendapatkan teks dari mereka:**
 
 ```java
 public static void ExtractParagraph02() {

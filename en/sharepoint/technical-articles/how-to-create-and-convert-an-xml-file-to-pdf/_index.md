@@ -1,5 +1,6 @@
 ---
 title: How to Create and Convert an XML File to PDF
+linktitle: How to Create and Convert an XML File to PDF
 type: docs
 weight: 30
 url: /sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/

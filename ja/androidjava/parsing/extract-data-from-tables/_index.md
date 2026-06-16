@@ -1,5 +1,5 @@
 ---
-title: PDFから表データを抽出する 
+title: PDFから表データを抽出する
 linktitle: 表データの抽出
 type: docs
 weight: 40

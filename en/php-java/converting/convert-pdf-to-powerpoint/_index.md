@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to Microsoft PowerPoint 
+title: Convert PDF to Microsoft PowerPoint
 linktitle: Convert PDF to PowerPoint
 type: docs
 weight: 30

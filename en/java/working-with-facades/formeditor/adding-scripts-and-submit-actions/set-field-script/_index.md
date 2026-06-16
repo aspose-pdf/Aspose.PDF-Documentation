@@ -1,5 +1,6 @@
 ---
 title: Set Field Script
+linktitle: Set Field Script
 type: docs
 weight: 20
 url: /java/set-field-script/

@@ -1,5 +1,6 @@
 ---
 title: Single To Multiple
+linktitle: Single To Multiple
 type: docs
 weight: 60
 url: /java/single-to-multiple/

@@ -1,5 +1,6 @@
 ---
 title: Fill Text Fields
+linktitle: Fill Text Fields
 type: docs
 weight: 10
 url: /java/fill-text-fields/

@@ -1,5 +1,5 @@
 ---
-  
+
 title: النشر السهل والخفيف الوزن
 
 type: docs
@@ -9,7 +9,6 @@ weight: 10
 url: /ar/jasperreports/easy-and-lightweight-deployment/
 
 lastmod: "2021-06-05"
-
 ---
 
 

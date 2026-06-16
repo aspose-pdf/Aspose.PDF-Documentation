@@ -1,5 +1,5 @@
 ---
-title: Extraire des données d'un tableau dans un PDF 
+title: Extraire des données d'un tableau dans un PDF
 linktitle: Extraire des données d'un tableau
 type: docs
 weight: 40

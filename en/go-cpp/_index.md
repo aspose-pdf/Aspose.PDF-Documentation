@@ -12,9 +12,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Documentation Pages of Aspose.PDF for Go 
-Abstract: Aspose.PDF for Go via C++ is a powerful and flexible PDF processing library that allows developers to create, edit, convert, and manipulate PDF documents. It provides a comprehensive set of features, including text and image management, form field processing, annotations, watermarks, and document security through encryption and digital signatures.     
-SoftwareApplication: go-cpp   
+AlternativeHeadline: Documentation Pages of Aspose.PDF for Go
+Abstract: Aspose.PDF for Go via C++ is a powerful and flexible PDF processing library that allows developers to create, edit, convert, and manipulate PDF documents. It provides a comprehensive set of features, including text and image management, form field processing, annotations, watermarks, and document security through encryption and digital signatures.
+SoftwareApplication: go-cpp
 ---
 
 ![Aspose.PDF for Go logo image](aspose_pdf-for-go-cpp.png)

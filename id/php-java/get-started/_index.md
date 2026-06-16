@@ -1,12 +1,12 @@
 ---
-title: Memulai 
+title: Memulai
 linktitle: Memulai
 type: docs
 weight: 30
 url: /id/php-java/get-started/
 description: Bagian ini menjelaskan prinsip dasar kerja dan penggunaan API. Juga menunjukkan contoh sederhana dan kompleks untuk membuat dokumen PDF
-lastmod: "2024-06-05"   
-sitemap: 
+lastmod: "2024-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

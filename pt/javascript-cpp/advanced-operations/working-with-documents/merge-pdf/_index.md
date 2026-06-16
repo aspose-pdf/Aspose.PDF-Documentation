@@ -1,10 +1,10 @@
 ---
-title: Como Mesclar PDF usando JavaScript via C++ 
+title: Como Mesclar PDF usando JavaScript via C++
 linktitle: Mesclar arquivos PDF
 type: docs
 weight: 20
 url: /pt/javascript-cpp/merge-pdf/
-description: Esta página explica como mesclar documentos PDF em um único arquivo PDF com Aspose.PDF para JavaScript via C++ 
+description: Esta página explica como mesclar documentos PDF em um único arquivo PDF com Aspose.PDF para JavaScript via C++
 lastmod: "2022-12-15"
 sitemap:
     changefreq: "monthly"

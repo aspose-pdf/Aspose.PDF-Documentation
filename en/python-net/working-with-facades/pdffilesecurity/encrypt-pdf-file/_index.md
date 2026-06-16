@@ -1,5 +1,6 @@
 ---
-title: Encrypt PDF File
+title: Encrypt PDF File
+linktitle: Encrypt PDF File
 type: docs
 weight: 30
 url: /python-net/encrypt-pdf-file/

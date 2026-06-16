@@ -1,5 +1,5 @@
 ---
-title: PDFドキュメントの基本操作 
+title: PDFドキュメントの基本操作
 linktitle: 基本操作
 type: docs
 weight: 40

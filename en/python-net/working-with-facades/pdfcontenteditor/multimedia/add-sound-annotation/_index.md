@@ -1,5 +1,6 @@
 ---
-title: Add Sound Annotation
+title: Add Sound Annotation
+linktitle: Add Sound Annotation
 type: docs
 weight: 20
 url: /python-net/add-sound-annotation/

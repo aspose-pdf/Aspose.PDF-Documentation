@@ -1,5 +1,6 @@
 ---
 title: Set Field Limit
+linktitle: Set Field Limit
 type: docs
 weight: 50
 url: /java/set-field-limit/

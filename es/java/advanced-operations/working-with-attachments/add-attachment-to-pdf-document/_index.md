@@ -1,6 +1,6 @@
 ---
-title: Añadir Adjunto a Documento PDF 
-linktitle: Añadir Adjunto a Documento PDF 
+title: Añadir Adjunto a Documento PDF
+linktitle: Añadir Adjunto a Documento PDF
 type: docs
 weight: 10
 url: /es/java/add-attachment-to-pdf-document/

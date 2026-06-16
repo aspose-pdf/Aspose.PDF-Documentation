@@ -1,186 +1,159 @@
 ---
-title: Python을 사용하여 PDF에 이미지 추가
-linktitle: 이미지 추가
+title: 파이썬에서 기존 PDF에 이미지 추가
+linktitle: PDF에 이미지 추가
 type: docs
 weight: 10
 url: /ko/python-net/add-image-to-existing-pdf-file/
-description: 이 섹션에서는 Python 라이브러리를 사용하여 기존 PDF 파일에 이미지를 추가하는 방법을 설명합니다.
-lastmod: "2022-02-17"
+description: Python에서 기존 PDF 파일에 이미지를 추가하고, 고정된 좌표에 배치하고, 대체 텍스트를 설정하고, 이미지 압축을 사용하는 방법을 알아봅니다.
+lastmod: "2026-06-10"
+TechArticle: true
+AlternativeHeadline: Python을 사용하여 기존 PDF 파일에 이미지 추가
+Abstract: 이 문서에서는.NET을 통해 파이썬용 Aspose.PDF 를 사용하여 PDF 문서에 이미지를 추가하는 방법을 보여줍니다.고정 좌표로 이미지 배치, 저수준 PDF 연산자로 이미지 그리기, 접근성을 위한 대체 텍스트 지정, Flate 압축을 사용한 이미지 임베딩 등을 다룹니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Python을 사용하여 PDF에 이미지 추가",
-    "alternativeHeadline": "PDF에 이미지 추가하는 방법",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, pdf에 이미지 추가",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-image-to-existing-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-image-to-existing-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "이 섹션에서는 Python 라이브러리를 사용하여 기존 PDF 파일에 이미지를 추가하는 방법을 설명합니다."
-}
-</script>
 
+## Python에서 기존 PDF 파일에 이미지 추가
 
-## 기존 PDF 파일에 이미지 추가하기
+이 예제에서는 .NET을 통해 Python용 Aspose.PDF 를 사용하여 기존 PDF 페이지의 고정된 위치에 이미지를 배치하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 PDF 파일에 이미지를 추가하는 방법을 보여줍니다.
+기존 PDF 레이아웃에 로고, 사진, 스탬프, 차트 또는 기타 그래픽을 추가해야 하는 경우 이러한 예를 사용하십시오.페이지 좌표를 사용하여 이미지를 배치하거나, 연산자를 사용하여 그리거나, 접근성 텍스트를 추가하거나, 이미지 압축을 제어할 수 있습니다.
 
-1. 입력 PDF 파일을 로드합니다.
-1. 이미지가 배치될 페이지 번호를 지정합니다.
-1. 페이지에서 이미지의 위치를 정의하려면 [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 클래스의 [add_image](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) 메서드를 호출합니다.
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스의 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 메서드를 호출합니다.
+1. 를 사용하여 기존 PDF 불러오기 `ap.Document(infile)`.
+1. 대상 페이지 선택 (`document.pages[1]` 첫 페이지용).
+1. 전화 `page.add_image()` 와 함께:
+    - 이미지 파일 경로
+    - A `Rectangle` 배치 좌표 정의.
+1. 업데이트된 PDF를 저장합니다.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 문서 열기
-    document = ap.Document(input_file)
-
-    document.pages[1].add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
-
-    document.save(output_pdf)
+def add_image(infile, image_file, outfile):
+    document = ap.Document(infile)
+    page = document.pages[1]
+    page.add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
+    document.save(outfile)
 ```
 
-## 기존 PDF 파일에 이미지 추가하기 (Facades)
+## 연산자를 사용하여 PDF에 이미지 추가
 
-PDF 파일에 이미지를 추가하는 또 다른 간단한 방법도 있습니다.
- [PdfFileMend](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/) 클래스의 [AddImage](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드를 사용할 수 있습니다. [add_image()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) 메서드는 추가할 이미지, 이미지를 추가해야 하는 페이지 번호 및 좌표 정보를 필요로 합니다. 그런 다음, 업데이트된 PDF 파일을 저장하고 [close()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) 메서드를 사용하여 PdfFileMend 객체를 닫습니다. 다음 코드 스니펫은 기존 PDF 파일에 이미지를 추가하는 방법을 보여줍니다.
+이 방법은 고수준 PDF 연산자 대신 저수준 PDF 연산자를 사용하여 이미지를 추가합니다. `add_image()` 도우미.
+
+1. 새 만들기 `Document` 페이지를 추가합니다.
+1. 페이지 리소스에 이미지 추가 (`page.resources.images`).
+1. 변환 연산자 만들기 (`GSave`, `ConcatenateMatrix`, `Do`, `GRestore`).
+1. 페이지 내용에 연산자를 추가합니다.
+1. 결과 PDF를 저장합니다.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
 
-    import aspose.pdf as ap
 
-    # 문서 열기
-    mender = ap.facades.PdfFileMend()
+def add_image_using_operators(image_file, outfile):
+    document = ap.Document()
+    page = document.pages.add()
+    page.set_page_size(842, 595)
+    resources_images = page.resources.images
 
-    # 텍스트를 추가할 PdfFileMend 객체 생성
-    mender.bind_pdf(input_file)
+    with FileIO(image_file, "rb") as image_stream:
+        image_id = resources_images.add(image_stream)
 
-    # PDF 파일에 이미지 추가
-    mender.add_image(image_file, 1, 100.0, 600.0, 200.0, 700.0)
+    rectangle = ap.Rectangle(0, 0, page.media_box.width, page.media_box.height, True)
 
-    # 변경 사항 저장
-    mender.save(output_pdf)
+    operators = [
+        ap.operators.GSave(),
+        ap.operators.ConcatenateMatrix(
+            ap.Matrix(
+                rectangle.urx - rectangle.llx,
+                0,
+                0,
+                rectangle.ury - rectangle.lly,
+                rectangle.llx,
+                rectangle.lly,
+            )
+        ),
+        ap.operators.Do(image_id),
+        ap.operators.GRestore(),
+    ]
 
-    # PdfFileMend 객체 닫기
-    mender.close()
-
+    page.contents.add(operators)
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python용 PDF 조작 라이브러리",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 대체 텍스트가 포함된 PDF에 이미지 추가
+
+이 예에서는 이미지를 추가하고 접근성을 위한 대체 텍스트를 할당합니다.
+
+1. 새 만들기 `Document` 페이지를 추가합니다.
+1. 를 사용하여 페이지에 이미지 추가 `page.add_image()`.
+1. 에서 이미지 리소스 가져오기 `page.resources.images`.
+1. 를 사용하여 대체 텍스트 설정 `try_set_alternative_text()`.
+1. 결과 PDF를 저장합니다.
+
+```python
+import aspose.pdf as ap
+
+
+def add_image_set_alternative_text(image_file, outfile):
+    document = ap.Document()
+    page = document.pages.add()
+    page.set_page_size(842, 595)
+
+    page.add_image(image_file, ap.Rectangle(0, 0, 842, 595, True))
+    resources_images = page.resources.images
+    x_image = resources_images[1]
+    result = x_image.try_set_alternative_text("Alternative text for image", page)
+
+    if result:
+        print("Alternative text has been added successfully")
+
+    document.save(outfile)
+```
+
+## 플랫 압축을 사용하여 PDF에 이미지 추가
+
+이 예제에서는 다음을 사용하여 이미지를 포함합니다. `ImageFilterType.FLATE` 압축.
+
+1. 새 만들기 `Document` 페이지를 추가합니다.
+1. Flate 압축을 사용하여 페이지 리소스에 이미지를 추가합니다.
+1. 행렬 연산자를 사용하여 이미지를 배치하고 그립니다.
+1. 문서를 저장합니다.
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+
+
+def add_image_to_pdf_with_flate_compression(image_file, outfile):
+    document = ap.Document()
+    page = document.pages.add()
+    resources_images = page.resources.images
+
+    with FileIO(image_file, "rb") as image_stream:
+        image_id = resources_images.add(image_stream, ap.ImageFilterType.FLATE)
+
+    rectangle = ap.Rectangle(0, 0, 600, 600, True)
+    matrix = ap.Matrix(
+        rectangle.urx - rectangle.llx,
+        0,
+        0,
+        rectangle.ury - rectangle.lly,
+        rectangle.llx,
+        rectangle.lly,
+    )
+
+    page.contents.add([ap.operators.GSave()])
+    page.contents.add([ap.operators.ConcatenateMatrix(matrix)])
+    page.contents.add([ap.operators.Do(image_id)])
+    page.contents.add([ap.operators.GRestore()])
+
+    document.save(outfile)
+```
+
+## 관련 이미지 주제
+
+- [Python을 사용하여 PDF의 이미지로 작업하기](/pdf/ko/python-net/working-with-images/)
+- [기존 PDF 파일의 이미지 바꾸기](/pdf/ko/python-net/replace-image-in-existing-pdf-file/)
+- [PDF 파일에서 이미지 삭제](/pdf/ko/python-net/delete-images-from-pdf-file/)
+- [PDF 파일에서 이미지 추출](/pdf/ko/python-net/extract-images-from-pdf-file/)

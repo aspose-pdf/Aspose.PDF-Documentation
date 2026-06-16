@@ -1,5 +1,5 @@
 ---
-title: 设置权限，加密和解密 PDF 文件 
+title: 设置权限，加密和解密 PDF 文件
 linktitle: 加密和解密 PDF 文件
 type: docs
 weight: 20

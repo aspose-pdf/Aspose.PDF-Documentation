@@ -1,295 +1,187 @@
 ---
-title: PDF Tooltip menggunakan Python
-linktitle: PDF Tooltip
+title: Tambahkan Tooltip ke Teks PDF dalam Python
+linktitle: Tooltip PDF
 type: docs
 weight: 20
 url: /id/python-net/pdf-tooltip/
-description: Pelajari cara menambahkan tooltip ke fragmen teks dalam PDF menggunakan Python dan Aspose.PDF
-lastmod: "2024-02-17"
+description: Pelajari cara menambahkan tooltip ke fragmen teks dalam dokumen PDF menggunakan Python.
+lastmod: "2026-06-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Tambahkan tooltip interaktif ke fragmen teks PDF menggunakan Python
+Abstract: Artikel ini menyediakan dua contoh Python untuk menambahkan bantuan interaktif pada teks PDF menggunakan Aspose.PDF for Python via .NET. Contoh pertama menambahkan tooltip ke fragmen teks yang cocok dengan menempatkan elemen `ButtonField` yang tidak terlihat dan mengatur `alternate_name`. Contoh kedua membuat `TextBoxField` tersembunyi yang muncul saat mengarahkan kursor dengan menghubungkan peristiwa `HideAction` ke `ButtonField` yang tidak terlihat.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF Tooltip menggunakan Python",
-    "alternativeHeadline": "Tambahkan PDF Tooltip ke Teks",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, tambahkan pdf tooltip",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/pdf-tooltip/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/pdf-tooltip/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Pelajari cara menambahkan tooltip ke fragmen teks dalam PDF menggunakan Python dan Aspose.PDF"
-}
-</script>
 
+## Tambahkan Tooltip ke Teks yang Dicari dalam PDF
 
-## Tambahkan Tooltip ke Teks yang Dicari dengan Menambahkan Tombol Tak Terlihat
+Potongan kode ini menunjukkan cara menumpuk yang tidak terlihat [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) elemen pada spesifik [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) objek dalam PDF untuk menampilkan tooltip ketika pengguna mengarahkan kursor di atasnya. Ini mendukung pesan tooltip pendek dan panjang menggunakan `alternate_name` properti dari `ButtonField`.
 
-Kode ini menunjukkan cara menambahkan tooltip ke fragmen teks tertentu dalam dokumen PDF menggunakan Aspose.PDF. Tooltip ditampilkan ketika kursor mouse melayang di atas teks yang sesuai.
+Gunakan halaman ini ketika Anda perlu membuat teks PDF lebih interaktif dengan menambahkan bantuan saat mengarahkan kursor, penjelasan inline, atau catatan kontekstual.
 
-Cuplikan kode berikut akan menunjukkan cara mencapai fungsi ini:
+1. Buat yang baru [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Simpan dokumen awal.
+1. Buka kembali dokumen PDF.
+1. Cari teks target menggunakan [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. Tambahkan yang tidak terlihat [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) dengan tooltip singkat.
+1. Cari teks target kedua.
+1. Tambahkan yang tidak terlihat [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) dengan tooltip panjang di atas fragmen yang cocok.
+1. Simpan dokumen akhir.
 
 ```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
-
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("Gerakkan kursor mouse di sini untuk menampilkan tooltip")
-    )
-    document.pages[1].paragraphs.add(
-        ap.text.TextFragment(
-            "Gerakkan kursor mouse di sini untuk menampilkan tooltip yang sangat panjang"
+# region PDF Tooltip
+def add_tool_tip_to_searched_text(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display a tooltip")
         )
-    )
-    document.save(output_pdf)
-
-    # Buka dokumen dengan teks
-    document = ap.Document(output_pdf)
-    # Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-    absorber = ap.text.TextFragmentAbsorber(
-        "Gerakkan kursor mouse di sini untuk menampilkan tooltip"
-    )
-    # Terima absorber untuk halaman dokumen
-    document.pages.accept(absorber)
-    # Dapatkan fragmen teks yang diekstraksi
-    text_fragments = absorber.text_fragments
-
-    # Loop melalui fragmen
-    for fragment in text_fragments:
-        # Buat tombol tak terlihat pada posisi fragmen teks
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # nilai alternate_name akan ditampilkan sebagai tooltip oleh aplikasi penampil
-        field.alternate_name = "Tooltip untuk teks."
-        # Tambahkan field tombol ke dokumen
-        document.form.add(field)
-
-    # Selanjutnya akan menjadi contoh tooltip yang sangat panjang
-    absorber = ap.text.TextFragmentAbsorber(
-        "Gerakkan kursor mouse di sini untuk menampilkan tooltip yang sangat panjang"
-    )
-    document.pages.accept(absorber)
-    text_fragments = absorber.text_fragments
-
-    for fragment in text_fragments:
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # Set teks yang sangat panjang
-        field.alternate_name = (
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
-            " sed do eiusmod tempor incididunt ut labore et dolore magna"
-            " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-            " ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            " Duis aute irure dolor in reprehenderit in voluptate velit"
-            " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
-            " occaecat cupidatat non proident, sunt in culpa qui officia"
-            " deserunt mollit anim id est laborum."
+        document.pages[1].paragraphs.add(
+            ap.text.TextFragment(
+                "Move the mouse cursor here to display a very long tooltip"
+            )
         )
-        document.form.add(field)
+        document.save(outfile)
 
-    # Simpan dokumen
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display a tooltip"
+        )
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the extracted text fragments
+        text_fragments = absorber.text_fragments
+
+        # Loop through the fragments
+        for fragment in text_fragments:
+            # Create invisible button on text fragment position
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # alternate_name value will be displayed as tooltip by a viewer application
+            field.alternate_name = "Tooltip for text."
+            # Add button field to the document
+            document.form.add(field)
+
+        # Next will be sample of very long tooltip
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display a very long tooltip"
+        )
+        document.pages.accept(absorber)
+        text_fragments = absorber.text_fragments
+
+        for fragment in text_fragments:
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # Set very long text
+            field.alternate_name = (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                " Duis aute irure dolor in reprehenderit in voluptate velit"
+                " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                " occaecat cupidatat non proident, sunt in culpa qui officia"
+                " deserunt mollit anim id est laborum."
+            )
+            document.form.add(field)
+
+        # Save document
+        document.save(outfile)
 ```
 
+## Buat Blok Teks Tersembunyi yang Muncul saat Hover di PDF
 
-## Membuat Blok Teks Tersembunyi dan Menampilkannya saat Mouse Diarahkan
+Tambahkan teks mengambang interaktif ke dokumen PDF. Ini menimpa teks yang tidak terlihat [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) pada frasa target dan memperlihatkan yang tersembunyi [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) ketika pengguna mengarahkan kursor ke atasnya. Teknik ini ideal untuk bantuan kontekstual, anotasi, atau penyajian konten dinamis.
 
-Cuplikan kode Python ini menunjukkan cara menambahkan teks melayang ke dokumen PDF, yang muncul ketika kursor mouse diarahkan ke area tertentu.
-
-Pertama, dokumen PDF baru dibuat, dan sebuah paragraf yang berisi teks "Arahkan kursor mouse di sini untuk menampilkan teks melayang" ditambahkan ke dalamnya. Dokumen tersebut kemudian disimpan.
-
-Selanjutnya, dokumen yang telah disimpan dibuka kembali, dan objek TextAbsorber dibuat untuk menemukan fragmen teks yang sebelumnya ditambahkan. Fragmen teks ini kemudian digunakan untuk menentukan posisi dan karakteristik dari bidang teks melayang.
-
-Sebuah objek TextBoxField dibuat untuk mewakili bidang teks melayang, dan propertinya seperti posisi, nilai, status baca-saja, dan visibilitas diatur sesuai. Selain itu, sebuah nama unik dan karakteristik tampilan diberikan pada bidang tersebut.
-
-Bidang teks melayang ditambahkan ke dalam form dokumen, dan bidang tombol tak terlihat dibuat di posisi fragmen teks asli.
- HideAction events ditugaskan ke bidang tombol, menentukan bahwa bidang teks mengambang harus muncul ketika kursor mouse memasuki sekitarnya dan menghilang ketika kursor keluar.
-
-Akhirnya, bidang tombol ditambahkan ke formulir dokumen, dan dokumen yang dimodifikasi disimpan.
-
-Cuplikan kode ini menyediakan metode untuk membuat elemen teks mengambang interaktif dalam dokumen PDF menggunakan Aspose.PDF untuk Python.
+1. Buat dokumen PDF baru.
+1. Simpan PDF sehingga dapat dibuka kembali untuk penyiapan interaktivitas.
+1. Buka kembali dokumen PDF.
+1. Temukan teks target menggunakan [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. Buat yang tersembunyi [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
+1. Tambahkan bidang tersembunyi ke dokumen [`Form`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) koleksi.
+1. Buat tidak terlihat [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/).
+1. Tetapkan aksi mouse ("`on_enter`, `on_exit`) menggunakan [`HideAction`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/hideaction/) untuk menampilkan/menyembunyikan bidang tersembunyi.
+1. Simpan dokumen akhir.
 
 ```python
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+import sys
+from os import path
 
-    import aspose.pdf as ap
+def create_hidden_text_block(outfile):
+    # Create PDF document
+    with ap.Document() as document:
+        #  Add paragraph with text
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display floating text")
+        )
+        # Save PDF document
+        document.save(outfile)
 
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("Gerakkan kursor mouse di sini untuk menampilkan teks mengambang")
-    )
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display floating text"
+        )
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the first extracted text fragment
+        text_fragments = absorber.text_fragments
+        fragment = text_fragments[1]
 
-    # Buka dokumen dengan teks
-    document = ap.Document(output_pdf)
-    # Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-    absorber = ap.text.TextFragmentAbsorber(
-        "Gerakkan kursor mouse di sini untuk menampilkan teks mengambang"
-    )
-    # Terima absorber untuk halaman dokumen
-    document.pages.accept(absorber)
-    # Dapatkan fragmen teks pertama yang diekstraksi
-    text_fragments = absorber.text_fragments
-    fragment = text_fragments[1]
+        # Create hidden text field for floating text in the specified rectangle of the page
+        floating_field = ap.forms.TextBoxField(
+            fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
+        )
+        # Set text to be displayed as field value
+        floating_field.value = 'This is the "floating text field".'
+        # We recommend to make field 'readonly' for this scenario
+        floating_field.read_only = True
+        # Set 'hidden' flag to make field invisible on document opening
+        floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
 
-    # Buat bidang teks tersembunyi untuk teks mengambang di persegi panjang halaman yang ditentukan
-    floating_field = ap.forms.TextBoxField(
-        fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
-    )
-    # Atur teks yang akan ditampilkan sebagai nilai bidang
-    floating_field.value = 'Ini adalah "bidang teks mengambang".'
-    # Kami merekomendasikan untuk membuat bidang 'readonly' untuk skenario ini
-    floating_field.read_only = True
-    # Setel bendera 'hidden' untuk membuat bidang tidak terlihat saat membuka dokumen
-    floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
+        # Setting a unique field name isn't necessary but allowed
+        floating_field.partial_name = "FloatingField_1"
 
-    # Menetapkan nama bidang yang unik tidak diperlukan tetapi diizinkan
-    floating_field.partial_name = "FloatingField_1"
+        # Setting characteristics of field appearance isn't necessary but makes it better
+        floating_field.default_appearance = ap.annotations.DefaultAppearance(
+            "Helv", 10, drawing.Color.blue
+        )
+        floating_field.characteristics.background = drawing.Color.light_blue
+        floating_field.characteristics.border = drawing.Color.dark_blue
+        floating_field.border = ap.annotations.Border(floating_field)
+        floating_field.border.width = 1
+        floating_field.multiline = True
 
-    # Menetapkan karakteristik penampilan bidang tidak diperlukan tetapi membuatnya lebih baik
-    floating_field.default_appearance = ap.annotations.DefaultAppearance(
-        "Helv", 10, ap.Color.blue.to_rgb()
-    )
-    floating_field.characteristics.background = ap.Color.light_blue.to_rgb()
-    floating_field.characteristics.border = ap.Color.dark_blue.to_rgb()
-    floating_field.border = ap.annotations.Border(floating_field)
-    floating_field.border.width = 1
-    floating_field.multiline = True
+        # Add text field to the document
+        document.form.add(floating_field)
+        # Create invisible button on text fragment position
+        button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+        # Create new hide action for specified field (annotation) and invisibility flag.
+        # (You also may refer floating field by the name if you specified it above.)
+        # Add actions on mouse enter/exit at the invisible button field
 
-    # Tambahkan bidang teks ke dokumen
-    document.form.add(floating_field)
-    # Buat tombol tak terlihat pada posisi fragmen teks
-    button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-    # Buat aksi sembunyikan baru untuk bidang (anotasi) dan bendera ketidaknampakan yang ditentukan.
-    # (Anda juga dapat merujuk bidang mengambang dengan nama jika Anda menentukannya di atas.)
-    # Tambahkan aksi saat mouse masuk/keluar di bidang tombol tak terlihat
+        button_field.actions.on_enter = ap.annotations.HideAction(floating_field, False)
+        button_field.actions.on_exit = ap.annotations.HideAction(floating_field)
 
-    button_field.actions.on_enter = ap.annotations.HideAction(
-        floating_field.partial_name, False
-    )
-    button_field.actions.on_exit = ap.annotations.HideAction(
-        floating_field.partial_name
-    )
+        # Add button field to the document
+        document.form.add(button_field)
 
-    # Tambahkan bidang tombol ke dokumen
-    document.form.add(button_field)
-
-    # Simpan dokumen
-    document.save(output_pdf)
+        # Save document
+        document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Python melalui .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Library Manipulasi PDF untuk .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Topik Teks Terkait
+
+- [Bekerja dengan teks dalam PDF menggunakan Python](/pdf/id/python-net/working-with-text/)
+- [Gunakan FloatingBox untuk tata letak teks PDF di Python](/pdf/id/python-net/floating-box/)
+- [Cari dan ekstrak teks PDF di Python](/pdf/id/python-net/search-and-get-text-from-pdf/)
+- [Menambahkan teks ke PDF](/pdf/id/python-net/add-text-to-pdf-file/)

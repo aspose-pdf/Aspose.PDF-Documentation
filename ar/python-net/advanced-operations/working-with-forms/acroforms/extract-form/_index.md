@@ -1,164 +1,53 @@
 ---
-title: استخراج AcroForm - استخراج بيانات النماذج من PDF في بايثون
-linktitle: استخراج AcroForm
+title: استخراج AcroForm - استخراج بيانات النموذج من PDF في Python
+linktitle: استخراج أكروفورم
 type: docs
 weight: 30
 url: /ar/python-net/extract-form/
-description: استخراج نموذج من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لبايثون. احصل على قيمة من حقل فردي من ملف PDF.
-lastmod: "2023-02-17"
+description: استخرج القيم من حقول AcroForm في مستندات PDF باستخدام Aspose.PDF لبيثون عبر .NET.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية الحصول على بيانات النموذج من PDF باستخدام Python
+Abstract: توضح هذه المقالة كيفية استخراج البيانات من حقول AcroForm في مستندات PDF باستخدام Aspose.PDF لـ Python عبر .NET. يتكرر المثال من خلال أسماء حقول النموذج، ويقرأ القيم باستخدام واجهة النموذج، ويعيد قاموسًا للمعالجة النهائية. يُعد سير العمل هذا مفيدًا لإعداد التقارير والتحقق والتكامل مع الأنظمة الخارجية.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "استخراج AcroForm",
-    "alternativeHeadline": "كيفية استخراج AcroForm من PDF في بايثون",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, python, extract acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/@AsposePDF",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-form/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "استخراج نموذج من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لبايثون. احصل على قيمة من حقل فردي من ملف PDF."
-}
-</script>
-
 
 ## استخراج البيانات من النموذج
 
-### الحصول على القيم من جميع حقول مستند PDF
+### احصل على القيم من جميع الحقول في مستند PDF
 
-للحصول على القيم من جميع الحقول في مستند PDF، تحتاج إلى التنقل عبر جميع حقول النموذج ثم الحصول على القيمة باستخدام خاصية القيمة. احصل على كل حقل من مجموعة النموذج، في نوع الحقل الأساسي المسمى [Field](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/) والوصول إلى خاصية [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/#properties).
+لقراءة القيم من جميع الحقول في مستند PDF، قم بالتكرار من خلال أسماء حقول النموذج واسترجع كل قيمة من [نموذج](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form/) واجهة.
 
-توضح مقتطفات كود Python التالية كيفية الحصول على قيم جميع الحقول من مستند PDF.
+استخدم الخطوات التالية:
+
+1. قم بربط ملف PDF المُدخل بـ `Form` كائن.
+1. قم بالتكرار من خلال `field_names`.
+1. اقرأ كل قيمة باستخدام `get_field()`.
+1. قم بتخزين القيم في القاموس.
+1. قم بإرجاع القيم المستخرجة أو معالجتها.
+
+يعرض مقتطف شفرة Python التالي هذا الأسلوب.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # افتح المستند
-    pdfDocument = ap.Document(input_file)
+def get_values_from_all_fields(input_file_name):
+    form = ap.facades.Form(input_file_name)
 
-    # الحصول على القيم من جميع الحقول
-    for formField in pdfDocument.form.fields:
-        # تحليل الأسماء والقيم إذا لزم الأمر
-        print("اسم الحقل : " + formField.partial_name)
-        print("القيمة : " + str(formField.value))
+    form_values = {}
+    for field_name in form.field_names:
+        form_values[field_name] = form.get_field(field_name)
+
+    print(form_values)
+    return form_values
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## موضوعات ذات صلة
+
+- [إنشاء نموذج أكروفورم](/pdf/ar/python-net/create-form/)
+- [املأ نموذج أكروفورم](/pdf/ar/python-net/fill-form/)
+- [استيراد وتصدير بيانات النموذج](/pdf/ar/python-net/import-export-form-data/)
+- [تعديل أكروفورم](/pdf/ar/python-net/modifying-form/)

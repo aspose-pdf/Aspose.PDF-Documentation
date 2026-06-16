@@ -1,5 +1,5 @@
 ---
-title: Работа с Действиями в PDF 
+title: Работа с Действиями в PDF
 linktitle: Действия
 type: docs
 weight: 20

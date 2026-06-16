@@ -1,10 +1,10 @@
 ---
 title: Set the background color for PDF with Go
-linktitle: Set background color 
+linktitle: Set background color
 type: docs
 weight: 80
 url: /go-cpp/set-background-color/
-description: Set background color for the your PDF file with Go. 
+description: Set background color for the your PDF file with Go.
 lastmod: "2024-12-15"
 sitemap:
     changefreq: "monthly"
@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Set the background color for PDF with Aspose.PDF for Go
 Abstract: Aspose.PDF for Go via C++ offers functionality to set the background color of PDF pages, allowing developers to customize the appearance of documents. This feature enables the application of solid colors to the entire page background, enhancing the document's visual presentation. Developers can easily specify color values using standard color models such as RGB or CMYK. The documentation provides detailed instructions and code samples to help developers implement background color customization effectively within their C++ applications.
-SoftwareApplication: go-cpp     
+SoftwareApplication: go-cpp
 ---
 
 1. The provided code snippet demonstrates how to set a background color for a PDF file using the Aspose.PDF library in Go.

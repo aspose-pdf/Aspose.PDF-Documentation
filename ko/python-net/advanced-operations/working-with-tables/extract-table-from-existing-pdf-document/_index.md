@@ -1,167 +1,64 @@
 ---
-title: 기존 PDF 문서에서 테이블 추출
-linktitle: 테이블 추출
+title: 파이썬에서 PDF에서 테이블 추출하기
+linktitle: 추출 테이블
 type: docs
 weight: 20
-url: /ko/python-net/extract-table-from-existing-pdf-document/
-description: .NET을 통한 Aspose.PDF for Python은 PDF 문서에 포함된 테이블을 다양한 방식으로 조작할 수 있게 합니다.
-lastmod: "2023-02-17"
+url: /ko/python-net/extracting-table/
+description: Python으로 기존 PDF 문서에서 테이블 데이터를 추출하는 방법을 알아봅니다.
+lastmod: "2026-06-10"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python을 사용하여 PDF 파일에서 테이블 데이터를 추출합니다.
+Abstract: 이 문서에서는.NET을 통해 파이썬용 Aspose.PDF 를 사용하여 PDF 문서에서 테이블을 추출하는 방법을 설명합니다.'TableAbsorber'를 사용하여 페이지별로 테이블을 검색하고, 행과 셀을 반복하고, 분석 및 다운스트림 데이터 처리를 위해 셀 텍스트를 검색하는 방법을 보여줍니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "기존 PDF 문서에서 테이블 추출",
-    "alternativeHeadline": "PDF 파일에서 테이블을 추출하는 방법",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, 테이블 추출",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-table-from-existing-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-table-from-existing-pdf-document/"
-    },
-    "dateModified": "2023-02-04",
-    "description": ".NET을 통한 Aspose.PDF for Python은 PDF 문서에 포함된 테이블을 다양한 방식으로 조작할 수 있게 합니다."
-}
-</script>
 
+## PDF에서 표 추출
 
-## PDF에서 테이블 추출
+PDF에서 테이블을 추출하는 것은 보고, 데이터 마이그레이션 및 분석 워크플로우에 유용합니다..NET을 통한 Python용 Aspose.PDF 기능을 사용하면 기존 PDF 문서의 테이블 내용을 효율적으로 검색하고 읽을 수 있습니다.
 
-Python을 사용하여 PDF에서 테이블을 추출하는 것은 데이터 추출 및 분석에 매우 유용할 수 있습니다. Aspose.PDF for Python via .NET 라이브러리를 사용하면 다양한 데이터 관련 작업을 위해 PDF 문서에 포함된 테이블을 효율적으로 처리할 수 있습니다.
+이 코드 스니펫은 기존 PDF 파일을 열고, 각 페이지에서 표를 스캔하고, 셀 텍스트 내용을 추출합니다.를 사용합니다. `TableAbsorber` 테이블을 감지한 다음 행과 셀을 반복하여 추출된 텍스트를 인쇄합니다.
+
+1. PDF를 AP.Document 개체에 로드합니다.
+1. 페이지를 반복해서 살펴보세요.
+1. 테이블 업소버 오브젝트를 만듭니다.
+1. 테이블 전체를 반복하세요.
+1. 행과 셀을 반복합니다.
+1. 셀에서 텍스트를 추출하고 인쇄합니다.
+
+이 예제에서는 PDF를 읽고, 모든 테이블을 찾고, 셀 내용을 행별로 인쇄합니다.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    # 원본 PDF 문서 로드
-    pdf_document = ap.Document(input_file)
-    for page in pdf_document.pages:
+def extract(infile: str) -> None:
+    """Extract and print all tables from a PDF file."""
+    document = ap.Document(infile)
+    for page in document.pages:
         absorber = ap.text.TableAbsorber()
         absorber.visit(page)
         for table in absorber.table_list:
+            print("Table ----")
             for row in table.row_list:
+                print("Row:")
+                row_txt = ""
                 for cell in row.cell_list:
+                    cell_txt = ""
                     text_fragment_collection = cell.text_fragments
                     for fragment in text_fragment_collection:
-                        txt = ""
                         for seg in fragment.segments:
-                            txt += seg.text
-                        print(txt)
-
+                            cell_txt += seg.text
+                    row_txt += " | "
+                    row_txt += cell_txt
+                print(row_txt)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 관련 테이블 주제
+
+- [Python을 사용하여 PDF에서 표 작업하기](/pdf/ko/python-net/working-with-tables/)
+- [파이썬을 사용하여 PDF에 표 추가](/pdf/ko/python-net/adding-tables/)
+- [PDF 테이블을 데이터 소스와 통합](/pdf/ko/python-net/integrate-table/)
+- [기존 PDF에서 표 제거](/pdf/ko/python-net/removing-tables/)

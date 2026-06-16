@@ -22,7 +22,7 @@ margin=self.MarginInfo()
 # Mengatur informasi margin
 title.setMargin(margin)
 
-# Menambahkan Fragmen HTML ke koleksi paragraf halaman
+# Menambahkan Fragmen HTML ke koleksi `paragraphs` halaman
 page.getParagraphs().add(title)
 
 # Menyimpan file PDF

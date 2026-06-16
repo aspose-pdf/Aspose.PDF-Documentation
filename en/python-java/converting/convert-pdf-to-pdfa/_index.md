@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /python-java/convert-pdf-to-pdfa/
 lastmod: "2023-04-06"
-description: Explore the steps to convert PDF files to PDF/A format for long-term archiving using Aspose.PDF in Python via Java. 
+description: Explore the steps to convert PDF files to PDF/A format for long-term archiving using Aspose.PDF in Python via Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

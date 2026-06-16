@@ -87,17 +87,17 @@ Aspose.PDF for .NET mendukung fitur untuk menambahkan objek grafik (misalnya gra
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat PDF [Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
-1. Tambahkan [Halaman](https://reference.aspose.com/pdf/net/aspose.pdf/page) ke koleksi halaman file PDF.
+1. Buat PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
+1. Tambahkan [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) ke koleksi halaman file PDF.
 1. Buat instance [Grafik](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph).
-1. Tambahkan objek Grafik ke koleksi paragraf dari instance halaman.
-1. Buat instance [Persegi Panjang](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle).
+1. Tambahkan objek Grafik ke koleksi `paragraphs` dari instance halaman.
+1. Buat instance [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle).
 1. Atur lebar garis.
-1. Tambahkan objek [Persegi Panjang](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) ke koleksi bentuk dari objek Grafik.
+1. Tambahkan objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) ke koleksi bentuk dari objek Grafik.
 
 1. Simpan file PDF Anda.
 
-Potongan kode berikut menunjukkan cara menambahkan objek [Persegi Panjang](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) yang diisi dengan warna.
+Potongan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) yang diisi dengan warna.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

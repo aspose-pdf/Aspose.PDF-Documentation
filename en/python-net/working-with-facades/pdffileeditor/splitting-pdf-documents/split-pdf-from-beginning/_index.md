@@ -1,5 +1,6 @@
 ---
-title: Split PDF from Beginning
+title: Split PDF from Beginning
+linktitle: Split PDF from Beginning
 type: docs
 weight: 10
 url: /python-net/split-pdf-from-beginning/

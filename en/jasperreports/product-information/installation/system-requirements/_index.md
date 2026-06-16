@@ -1,5 +1,6 @@
 ---
 title: System Requirements
+linktitle: System Requirements
 type: docs
 weight: 10
 url: /jasperreports/system-requirements/

@@ -1,5 +1,6 @@
 ---
 title: Page Management
+linktitle: Page Management
 type: docs
 weight: 30
 url: /java/page-management/

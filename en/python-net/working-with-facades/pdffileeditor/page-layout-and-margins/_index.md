@@ -1,5 +1,6 @@
 ---
-title: Page Layout and Margins
+title: Page Layout and Margins
+linktitle: Page Layout and Margins
 type: docs
 weight: 20
 url: /python-net/page-layout-and-margins/

@@ -1,5 +1,5 @@
 ---
-title: Formatando Documento PDF 
+title: Formatando Documento PDF
 linktitle: Formatando Documento PDF
 type: docs
 weight: 20

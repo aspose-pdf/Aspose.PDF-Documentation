@@ -1,5 +1,5 @@
 ---
-title: Membuat atau Menambahkan Tabel Dalam PDF 
+title: Membuat atau Menambahkan Tabel Dalam PDF
 linktitle: Membuat atau Menambahkan Tabel
 type: docs
 weight: 10
@@ -165,7 +165,7 @@ public static void MargingPadding() {
         Page page = doc.getPages().add();
         // Memulai objek tabel
         Table tab1 = new Table();
-        // Menambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+        // Menambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
         page.getParagraphs().add(tab1);
         // Mengatur lebar kolom tabel
         tab1.setColumnWidths ("50 50 50");
@@ -216,7 +216,7 @@ Untuk membuat tabel dengan sudut membulat, gunakan nilai `RoundedBorderRadius` d
         // Memulai objek tabel
         Table tab1 = new Table();
 
-        // Menambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+        // Menambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
         page.getParagraphs().add(tab1);
 
         GraphInfo graph = new GraphInfo();
@@ -262,7 +262,7 @@ Untuk membuat tabel dengan sudut membulat, gunakan nilai `RoundedBorderRadius` d
 
         // Memperoleh objek tabel
         Table tab1 = new Table();
-        // Menambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
+        // Menambahkan tabel dalam koleksi `paragraphs` dari bagian yang diinginkan
         sec1.getParagraphs().add(tab1);
 
         // Mengatur lebar kolom dari tabel
@@ -315,7 +315,7 @@ public static void GetTableWidth() {
         // Inisialisasi tabel baru
         Table table = new Table();
 
-        // Tambahkan tabel dalam koleksi paragraf di bagian yang diinginkan
+        // Tambahkan tabel dalam koleksi `paragraphs` di bagian yang diinginkan
         page.getParagraphs().add(table);
         table.setColumnAdjustment(ColumnAdjustment.AutoFitToContent);
 
@@ -358,15 +358,15 @@ Cuplikan kode berikut menunjukkan langkah-langkah untuk membuat instance tabel d
         com.aspose.pdf.Row row = table.getRows().add();
         // Membuat objek sel dan menambahkannya ke instance baris
         com.aspose.pdf.Cell cell = row.getCells().add();
-        // Menambahkan fragment teks ke koleksi paragraf dari objek sel
+        // Menambahkan fragment teks ke koleksi `paragraphs` dari objek sel
         cell.getParagraphs().add(new TextFragment("Sel pertama"));
         // Menambahkan sel lain ke objek baris
         cell = row.getCells().add();
-        // Menambahkan gambar SVG ke koleksi paragraf dari instance sel yang baru saja ditambahkan
+        // Menambahkan gambar SVG ke koleksi `paragraphs` dari instance sel yang baru saja ditambahkan
         cell.getParagraphs().add(img);
         // Membuat objek halaman dan menambahkannya ke koleksi halaman dari instance dokumen
         Page page = doc.getPages().add();
-        // Menambahkan tabel ke koleksi paragraf dari objek halaman
+        // Menambahkan tabel ke koleksi `paragraphs` dari objek halaman
         page.getParagraphs().add(table);
         // Menyimpan file PDF
         doc.save(_dataDir + "AddSVGObject_out.pdf");
@@ -450,7 +450,7 @@ Sebagai perilaku default, ketika membuat tabel di dalam file PDF, tabel akan men
             if (counter % 10 == 0 && counter != 0)
                 row.setInNewPage(true);
         }
-        // Menambahkan tabel ke koleksi paragraf file PDF
+        // Menambahkan tabel ke koleksi `paragraphs` file PDF
         page.getParagraphs().add(tab);
 
         // Menyimpan dokumen PDF

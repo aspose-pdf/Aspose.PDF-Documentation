@@ -1,5 +1,6 @@
 ---
 title: Import FDF Data
+linktitle: Import FDF Data
 type: docs
 weight: 10
 url: /java/import-fdf-data/

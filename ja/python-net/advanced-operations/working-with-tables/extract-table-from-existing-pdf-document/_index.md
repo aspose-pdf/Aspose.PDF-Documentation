@@ -1,101 +1,64 @@
 ---
-title: 既存のPDFドキュメントからテーブルを抽出する
-linktitle: テーブル抽出
+title: Python で PDF からテーブルを抽出する方法
+linktitle: テーブルを抽出
 type: docs
 weight: 20
-url: /ja/python-net/extract-table-from-existing-pdf-document/
-description: Aspose.PDF for Python via .NETを使用すると、PDFドキュメント内に含まれるテーブルに対して様々な操作を行うことが可能です。
-lastmod: "2023-02-17"
+url: /ja/python-net/extracting-table/
+description: Python で既存の PDF ドキュメントからテーブルデータを抽出する方法を学びます。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF ファイルからテーブルデータを抽出する
+Abstract: この記事では、.NET 経由で Aspose.PDF for Python を使用して PDF ドキュメントからテーブルを抽出する方法について説明します。「TableAbsorber」を使用してページごとにテーブルを検出し、行とセルを反復処理し、分析やダウンストリームデータ処理のためにセルテキストを取得する方法を示します。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "既存のPDFドキュメントからテーブルを抽出する",
-    "alternativeHeadline": "PDFファイルからテーブルを抽出する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, python, テーブル抽出",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-table-from-existing-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-table-from-existing-pdf-document/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Python via .NETを使用すると、PDFドキュメント内に含まれるテーブルに対して様々な操作を行うことが可能です。"
-}
-</script>
 
+## PDF から表を抽出
 
-## PDFから表を抽出
+PDF からの表の抽出は、レポート、データ移行、分析のワークフローに役立ちます。.NET 経由の Aspose.PDF for Python を使用すると、既存の PDF ドキュメントから表の内容を効率的に検出して読み取ることができます。
 
-Pythonを使用してPDFから表を抽出することは、データの抽出と分析に非常に有用です。Aspose.PDF for Python via .NETライブラリを使用すると、PDFドキュメントに埋め込まれた表を効率的に処理し、さまざまなデータ関連のタスクを実行できます。
+このコードスニペットは、既存の PDF ファイルを開き、各ページの表をスキャンして、セルテキストの内容を抽出します。以下を使用します。 `TableAbsorber` テーブルを検出し、行とセルを反復処理して抽出されたテキストを出力します。
+
+1. PDF を AP.Document オブジェクトにロードします。
+1. ページをループ処理します。
+1. テーブルアブソーバーオブジェクトを作成します。
+1. テーブルを反復処理します。
+1. 行とセルを繰り返し処理します。
+1. セルからテキストを抽出して印刷します。
+
+次の使用例は、PDF を読み取り、すべてのテーブルを検索し、セルの内容を 1 行ずつ出力します。
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    # ソースPDFドキュメントを読み込む
-    pdf_document = ap.Document(input_file)
-    for page in pdf_document.pages:
+def extract(infile: str) -> None:
+    """Extract and print all tables from a PDF file."""
+    document = ap.Document(infile)
+    for page in document.pages:
         absorber = ap.text.TableAbsorber()
         absorber.visit(page)
         for table in absorber.table_list:
+            print("Table ----")
             for row in table.row_list:
+                print("Row:")
+                row_txt = ""
                 for cell in row.cell_list:
+                    cell_txt = ""
                     text_fragment_collection = cell.text_fragments
                     for fragment in text_fragment_collection:
-                        txt = ""
                         for seg in fragment.segments:
-                            txt += seg.text
-                        print(txt)
+                            cell_txt += seg.text
+                    row_txt += " | "
+                    row_txt += cell_txt
+                print(row_txt)
+```
+
+## 関連テーブルトピック
+
+- [Python を使用して PDF 内のテーブルを操作する](/pdf/ja/python-net/working-with-tables/)
+- [Python を使用して PDF にテーブルを追加します](/pdf/ja/python-net/adding-tables/)
+- [PDF テーブルとデータソースの統合](/pdf/ja/python-net/integrate-table/)
+- [既存の PDF から表を削除する](/pdf/ja/python-net/removing-tables/)

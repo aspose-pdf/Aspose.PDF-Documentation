@@ -1,5 +1,5 @@
 ---
-title: Add Image stamps in PDF programmatically 
+title: Add Image stamps in PDF programmatically
 linktitle: Image stamps in PDF File
 type: docs
 weight: 10

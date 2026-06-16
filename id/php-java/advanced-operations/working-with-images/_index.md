@@ -1,5 +1,5 @@
 ---
-title: Bekerja dengan Gambar dalam PDF 
+title: Bekerja dengan Gambar dalam PDF
 linktitle: Bekerja dengan Gambar
 type: docs
 weight: 40

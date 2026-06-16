@@ -1,5 +1,5 @@
 ---
-title: PDF 멀티미디어 주석 
+title: PDF 멀티미디어 주석
 linktitle: 멀티미디어 주석
 type: docs
 weight: 40

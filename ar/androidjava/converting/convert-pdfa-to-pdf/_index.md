@@ -1,5 +1,5 @@
 ---
-title: تحويل PDF/A إلى PDF 
+title: تحويل PDF/A إلى PDF
 linktitle: تحويل PDF/A إلى PDF
 type: docs
 weight: 350

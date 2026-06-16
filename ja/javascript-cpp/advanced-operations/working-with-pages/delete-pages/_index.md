@@ -1,5 +1,5 @@
 ---
-title: JavaScriptを介してC++でPDFページを削除する 
+title: JavaScriptを介してC++でPDFページを削除する
 linktitle: PDFページを削除
 type: docs
 weight: 30

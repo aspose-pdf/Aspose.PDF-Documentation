@@ -1,5 +1,5 @@
 ---
-title: Determinar el Salto de Línea en TextFragment 
+title: Determinar el Salto de Línea en TextFragment
 linktitle: Determinar el Salto de Línea
 type: docs
 weight: 70

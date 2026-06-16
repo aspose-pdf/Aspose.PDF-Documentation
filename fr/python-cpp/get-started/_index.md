@@ -1,12 +1,12 @@
 ---
-title: Commencer 
+title: Commencer
 linktitle: Commencer
 type: docs
 weight: 30
 url: /fr/python-cpp/get-started/
 description: Cette page est un aperçu de l'utilisation d'Aspose.PDF pour Python via C++ pour créer et éditer un document PDF
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

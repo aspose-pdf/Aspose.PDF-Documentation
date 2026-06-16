@@ -1,6 +1,6 @@
 ---
 
-title: 评估 Aspose.Pdf 
+title: 评估 Aspose.Pdf
 
 type: docs
 
@@ -9,7 +9,6 @@ weight: 70
 url: /zh/jasperreports/evaluate-aspose-pdf/
 
 lastmod: "2021-06-05"
-
 ---
 
 

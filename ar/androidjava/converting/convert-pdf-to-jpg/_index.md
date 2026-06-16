@@ -1,5 +1,5 @@
 ---
-title: تحويل PDF إلى JPG 
+title: تحويل PDF إلى JPG
 linktitle: تحويل PDF إلى JPG
 type: docs
 weight: 10

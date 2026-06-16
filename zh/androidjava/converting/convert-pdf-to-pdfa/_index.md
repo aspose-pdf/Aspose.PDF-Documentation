@@ -1,6 +1,6 @@
 ---
-title: 将 PDF 文件转换为 PDF/A 
-linktitle: 将 PDF 文件转换为 PDF/A 
+title: 将 PDF 文件转换为 PDF/A
+linktitle: 将 PDF 文件转换为 PDF/A
 type: docs
 weight: 180
 url: /zh/androidjava/convert-pdf-file-to-pdfa/

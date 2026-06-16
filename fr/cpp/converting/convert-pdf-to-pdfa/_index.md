@@ -1,5 +1,5 @@
 ---
-title: Convertir des PDF aux formats PDF/A 
+title: Convertir des PDF aux formats PDF/A
 linktitle: Convertir des PDF aux formats PDF/A
 type: docs
 weight: 100

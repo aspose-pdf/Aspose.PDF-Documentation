@@ -1,10 +1,10 @@
 ---
-title: Advanced operations 
-linktitle: Advanced operations 
+title: Advanced operations
+linktitle: Advanced operations
 type: docs
 weight: 70
 url: /ko/java/advanced-operations/
-description: Aspose. PDF for Java를 사용하면 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 달성할 수 있습니다. 
+description: Aspose. PDF for Java를 사용하면 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 달성할 수 있습니다.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

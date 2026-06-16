@@ -1,5 +1,6 @@
 ---
-title: Append Pages to PDF
+title: Append Pages to PDF
+linktitle: Append Pages to PDF
 type: docs
 weight: 10
 url: /python-net/append-pages-to-pdf/

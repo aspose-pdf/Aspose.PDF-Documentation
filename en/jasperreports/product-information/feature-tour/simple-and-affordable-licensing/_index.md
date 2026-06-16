@@ -1,5 +1,6 @@
 ---
 title: Simple and Affordable Licensing
+linktitle: Simple and Affordable Licensing
 type: docs
 weight: 20
 url: /jasperreports/simple-and-affordable-licensing/

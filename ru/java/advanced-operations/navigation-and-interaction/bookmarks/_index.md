@@ -1,5 +1,5 @@
 ---
-title: Работа с Закладками в PDF 
+title: Работа с Закладками в PDF
 linktitle: Закладки
 type: docs
 weight: 30

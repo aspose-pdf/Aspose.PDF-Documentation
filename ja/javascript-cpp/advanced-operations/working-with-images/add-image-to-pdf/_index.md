@@ -1,5 +1,5 @@
 ---
-title: JavaScript経由でC++を使用してPDFに画像を追加 
+title: JavaScript経由でC++を使用してPDFに画像を追加
 linktitle: 画像を追加
 type: docs
 weight: 10

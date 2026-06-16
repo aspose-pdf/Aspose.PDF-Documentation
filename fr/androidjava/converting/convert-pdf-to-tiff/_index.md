@@ -1,6 +1,6 @@
 ---
-title: Convertir PDF en TIFF 
-linktitle: Convertir PDF en TIFF  
+title: Convertir PDF en TIFF
+linktitle: Convertir PDF en TIFF
 type: docs
 weight: 30
 url: /fr/androidjava/convert-pdf-to-tiff/

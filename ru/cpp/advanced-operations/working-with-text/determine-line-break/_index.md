@@ -1,5 +1,5 @@
 ---
-title: Определение Разрыва Строки в TextFragment 
+title: Определение Разрыва Строки в TextFragment
 linktitle: Определение Разрыва Строки
 type: docs
 weight: 70

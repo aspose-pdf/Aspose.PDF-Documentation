@@ -1,5 +1,5 @@
 ---
-title: Trabalhando com Imagens em PDF 
+title: Trabalhando com Imagens em PDF
 linktitle: Trabalhando com Imagens
 type: docs
 weight: 40

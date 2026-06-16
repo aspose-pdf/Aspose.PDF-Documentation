@@ -1,5 +1,6 @@
 ---
 title: Decorate Field
+linktitle: Decorate Field
 type: docs
 weight: 10
 url: /java/decorate-field/

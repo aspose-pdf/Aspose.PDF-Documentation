@@ -1,5 +1,6 @@
 ---
-title: Add Bookmark Action
+title: Add Bookmark Action
+linktitle: Add Bookmark Action
 type: docs
 weight: 10
 url: /python-net/add-bookmark-action/

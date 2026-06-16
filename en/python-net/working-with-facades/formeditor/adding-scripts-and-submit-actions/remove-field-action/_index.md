@@ -1,5 +1,6 @@
 ---
-title: Remove Field Action
+title: Remove Field Action
+linktitle: Remove Field Action
 type: docs
 weight: 20
 url: /python-net/remove-field-action/

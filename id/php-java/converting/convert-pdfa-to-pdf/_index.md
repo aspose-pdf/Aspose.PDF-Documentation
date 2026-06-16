@@ -1,5 +1,5 @@
 ---
-title: Konversi PDF/A ke format PDF 
+title: Konversi PDF/A ke format PDF
 linktitle: Konversi PDF/A ke format PDF
 type: docs
 weight: 110

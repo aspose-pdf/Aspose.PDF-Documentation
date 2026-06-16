@@ -1,11 +1,11 @@
 ---
-title: PDF Annotations 
+title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /es/php-java/annotations/
 description: Esta sección muestra cómo usar todo tipo de anotaciones en su archivo PDF con la biblioteca Aspose.PDF. Aprenda a dibujar, abrir o agregar una anotación con PHP.
-lastmod: "2024-06-26"    
+lastmod: "2024-06-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

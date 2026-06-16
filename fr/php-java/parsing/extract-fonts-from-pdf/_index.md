@@ -1,5 +1,5 @@
 ---
-title: Extraire des polices d'un PDF 
+title: Extraire des polices d'un PDF
 linktitle: Extraire des polices
 type: docs
 weight: 30

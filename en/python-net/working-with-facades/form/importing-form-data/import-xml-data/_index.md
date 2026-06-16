@@ -1,5 +1,6 @@
 ---
-title: Import XML Data
+title: Import XML Data
+linktitle: Import XML Data
 type: docs
 weight: 40
 url: /python-net/import-xml-data/

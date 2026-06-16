@@ -1,5 +1,6 @@
 ---
 title: HTML Formatting
+linktitle: HTML Formatting
 type: docs
 weight: 20
 url: /reportingservices/html-formatting/

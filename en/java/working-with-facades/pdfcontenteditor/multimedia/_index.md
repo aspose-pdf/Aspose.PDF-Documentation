@@ -1,5 +1,6 @@
 ---
 title: Multimedia
+linktitle: Multimedia
 type: docs
 weight: 70
 url: /java/pdfcontenteditor-multimedia/

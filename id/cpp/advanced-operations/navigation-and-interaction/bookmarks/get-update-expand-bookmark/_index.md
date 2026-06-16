@@ -1,5 +1,5 @@
 ---
-title: Dapatkan, Perbarui dan Kembangkan Penanda 
+title: Dapatkan, Perbarui dan Kembangkan Penanda
 linktitle: Dapatkan, Perbarui dan Kembangkan Penanda
 type: docs
 weight: 20

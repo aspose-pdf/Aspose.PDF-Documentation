@@ -1,5 +1,5 @@
 ---
-title: Membuat Dokumen PDF 
+title: Membuat Dokumen PDF
 linktitle: Buat
 type: docs
 weight: 10

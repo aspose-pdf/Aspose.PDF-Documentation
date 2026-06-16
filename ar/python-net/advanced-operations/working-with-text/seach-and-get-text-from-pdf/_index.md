@@ -1,556 +1,430 @@
 ---
-title: البحث واستخراج النص من صفحات PDF
-linktitle: البحث واستخراج النص
+title: بحث واستخراج نص PDF في بايثون
+linktitle: ابحث واحصل على نص
 type: docs
 weight: 60
 url: /ar/python-net/search-and-get-text-from-pdf/
-description: توضح هذه المقالة كيفية استخدام أدوات مختلفة للبحث واستخراج النص من Aspose.PDF for .NET.
-lastmod: "2024-02-17"
+description: تعرف على كيفية البحث عن النص وفحصه واستخراجه من مستندات PDF في Python.
+lastmod: "2026-06-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: ابحث في نص PDF وافحص الأجزاء المستخرجة في Python
+Abstract: تشرح هذه المقالة كيفية البحث عن النص واستخراجه من مستندات PDF باستخدام Aspose.PDF لـ Python عبر .NET. ويغطي «TextAbsorber» و «TextFragmentAbsorber»، بما في ذلك الاستخراج المستند إلى المنطقة، وعمليات البحث الخاصة بالصفحة، ومطابقة العبارات، وفحص موضع النص وخصائص الخط.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "البحث واستخراج النص من صفحات PDF",
-    "alternativeHeadline": "أدوات للبحث واستخراج النص من صفحات PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, search text, get text from pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/search-and-get-text-from-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/search-and-get-text-from-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "توضح هذه المقالة كيفية استخدام أدوات مختلفة للبحث واستخراج النص من Aspose.PDF for .NET."
-}
-</script>
 
+## ابحث عن نص من PDF
 
-## البحث والحصول على النص من جميع صفحات مستند PDF
+ابحث واستخرج النص من منطقة مستطيلة محددة في مستند PDF باستخدام `TextAbsorber` فئة. يستخدم وضع تنسيق النص النقي للإخراج النظيف وغير المنسق، وهو أمر مفيد لاستخراج المحتوى من المناطق المهيكلة مثل الرؤوس أو التذييلات أو مناطق الجدول. من خلال الجمع `TextExtractionOptions` و `TextSearchOptions` باستخدام القيود المستطيلة، يمكنك التحكم في مكان وكيفية استخراج النص.
 
-تسمح لك فئة [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber) بالبحث عن النص الذي يطابق عبارة معينة من جميع صفحات مستند PDF. من أجل البحث عن النص من المستند بأكمله، تحتاج إلى استدعاء طريقة Accept من مجموعة Pages. تأخذ طريقة [Accept](https://reference.aspose.com/pdf/python-net/aspose.pdf.page/accept/methods/3) كائن TextFragmentAbsorber كمعامل، والذي يعيد مجموعة من كائنات TextFragment. يمكنك التكرار عبر جميع الأجزاء والحصول على خصائصها مثل النص، الموقع (XIndent, YIndent)، اسم الخط، حجم الخط، IsAccessible، IsEmbedded، IsSubset، لون المقدمة، إلخ.
+استخدم هذه الصفحة عندما تحتاج إلى تدقيق محتوى نص PDF أو استخراج النص للتحليل أو فحص المواضع وتنسيق أجزاء النص المتطابقة.
 
-يُظهر لك جزء الكود التالي كيفية البحث عن نص من جميع الصفحات.
+1. قم بتحميل ملف PDF باستخدام «AP.document».
+1. قم بتكوين خيارات استخراج النص.
+1. حدد منطقة البحث باستخدام قيود المستطيل.
+1. إنشاء وتكوين TextAbsorber.
+1. قم بمعالجة جميع الصفحات في المستند.
+1. استرداد النص المستخرج وعرضه.
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+def text_absorber_search(input_file_path):
+    # Open PDF document
+    document = ap.Document(input_file_path)
 
-// إنشاء كائن TextAbsorber للعثور على جميع حالات عبارة البحث المدخلة
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
+    text_extraction_options = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
+    text_search_options = ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
 
-// قبول الممتص لجميع الصفحات
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    absorber = ap.text.TextAbsorber(text_extraction_options, text_search_options)
 
-// الحصول على أجزاء النص المستخرجة
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    # Process all pages
+    document.pages.accept(absorber)
 
-// التكرار عبر الأجزاء
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-
-    Console.WriteLine("Text : {0} ", textFragment.Text);
-    Console.WriteLine("Position : {0} ", textFragment.Position);
-    Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
-    Console.WriteLine("YIndent : {0} ", textFragment.Position.YIndent);
-    Console.WriteLine("Font - Name : {0}", textFragment.TextState.Font.FontName);
-    Console.WriteLine("Font - IsAccessible : {0} ", textFragment.TextState.Font.IsAccessible);
-    Console.WriteLine("Font - IsEmbedded : {0} ", textFragment.TextState.Font.IsEmbedded);
-    Console.WriteLine("Font - IsSubset : {0} ", textFragment.TextState.Font.IsSubset);
-    Console.WriteLine("Font Size : {0} ", textFragment.TextState.FontSize);
-    Console.WriteLine("Foreground Color : {0} ", textFragment.TextState.ForegroundColor);
-}
+    print(f"Text fragments found: {absorber.text}")
 ```
 
+## ابحث عن نص من صفحة PDF محددة
 
-في حالة الحاجة للبحث عن نص داخل أي صفحة معينة من ملف PDF، يرجى تحديد رقم الصفحة من مجموعة صفحات كائن الوثيقة واستدعاء طريقة Accept ضد تلك الصفحة (كما هو موضح في سطر الكود أدناه).
+ابحث واستخرج النص من صفحة ومنطقة معينة في PDF باستخدام TextAbsorber الخاص بـ Aspose.PDF. يستهدف الصفحة 2 من المستند ويستخرج فقط النص الموجود داخل منطقة مستطيلة محددة.
+من خلال الجمع بين خيارات استخراج النص (للتحكم في التنسيق) وخيارات TextSearchOptions (لحدود المنطقة)، يمكنك إجراء استخراج دقيق لنص خاص بالصفحة بكفاءة.
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// قبول الماص لـصفحة معينة
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+1. قم بتحميل وثيقة PDF.
+1. قم بإعداد خيارات استخراج النص.
+1. قم بتقييد استخراج النص إلى منطقة مستطيلة محددة على الصفحة.
+1. إنشاء وتكوين TextAbsorber.
+1. قم بمعالجة صفحة محددة.
+1. استرداد النص المستخرج وعرضه.
+
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
+
+def text_absorber_search_page(input_file_path):
+    document = ap.Document(input_file_path)
+
+    text_extraction_options = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
+    text_search_options = ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+
+    absorber = ap.text.TextAbsorber(text_extraction_options, text_search_options)
+
+    # Only page 2
+    document.pages[2].accept(absorber)
+
+    print(f"Text fragments found: {absorber.text}")
 ```
 
-## البحث والحصول على مقاطع النص من جميع صفحات مستند PDF
+## تحليل واستخراج خصائص أجزاء النص التفصيلية من PDF
 
-من أجل البحث عن مقاطع النص من جميع الصفحات، تحتاج أولاً إلى الحصول على كائنات TextFragment من الوثيقة.
- TextFragmentAbsorber يسمح لك بالعثور على النص، المطابق لعبارة معينة، من جميع صفحات مستند PDF. من أجل البحث عن النص من المستند بأكمله، تحتاج إلى استدعاء طريقة Accept من مجموعة Pages. تأخذ طريقة Accept كائن TextFragmentAbsorber كمعامل، والذي يعيد مجموعة من كائنات TextFragment. بمجرد الحصول على TextFragmentCollection من المستند، تحتاج إلى التجول عبر هذه المجموعة والحصول على TextSegmentCollection لكل كائن TextFragment. بعد ذلك، يمكنك الحصول على جميع خصائص الكائن الفردي TextSegment. يوضح لك مقتطف الشيفرة التالي كيفية البحث عن مقاطع النص من جميع الصفحات.
+على عكس TextAbsorber، الذي يستخرج النص الخام، يوفر TextFragmentAbsorber معلومات تفصيلية منخفضة المستوى حول كل جزء من أجزاء النص - مثل موضعه وسمات الخط واللون وتفاصيل التضمين.
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. قم بتحميل وثيقة PDF.
+1. قم بتهيئة ممتص أجزاء النص.
+1. قم بمعالجة جميع الصفحات في المستند.
+1. قم بالتكرار من خلال أجزاء النص المستخرجة.
+1. طباعة معلومات النص الأساسية.
+1. طباعة الخط وتفاصيل التنسيق.
 
-// افتح المستند
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextPage.pdf");
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-// إنشاء كائن TextAbsorber للعثور على جميع الحالات لعبارة البحث المدخلة
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("Figure");
-// قبول الممتص لجميع الصفحات
-pdfDocument.Pages.Accept(textFragmentAbsorber);
-// الحصول على مقاطع النص المستخرجة
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// التجول عبر المقاطع
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    foreach (TextSegment textSegment in textFragment.Segments)
-    {
-        Console.WriteLine("النص : {0} ", textSegment.Text);
-        Console.WriteLine("الموقع : {0} ", textSegment.Position);
-        Console.WriteLine("XIndent : {0} ", textSegment.Position.XIndent);
-        Console.WriteLine("YIndent : {0} ", textSegment.Position.YIndent);
-        Console.WriteLine("الخط - الاسم : {0}", textSegment.TextState.Font.FontName);
-        Console.WriteLine("الخط - يمكن الوصول إليه : {0} ", textSegment.TextState.Font.IsAccessible);
-        Console.WriteLine("الخط - مدمج : {0} ", textSegment.TextState.Font.IsEmbedded);
-        Console.WriteLine("الخط - مجموعة فرعية : {0} ", textSegment.TextState.Font.IsSubset);
-        Console.WriteLine("حجم الخط : {0} ", textSegment.TextState.FontSize);
-        Console.WriteLine("اللون الأمامي : {0} ", textSegment.TextState.ForegroundColor);
-    }
-}
+def text_fragment_absorber_search(input_file_path):
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber()
+    document.pages.accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
+        print("XIndent:", fragment.position.x_indent)
+        print("YIndent:", fragment.position.y_indent)
+        print("Font - Name:", fragment.text_state.font.font_name)
+        print("Font - IsAccessible:", fragment.text_state.font.is_accessible)
+        print("Font - IsEmbedded:", fragment.text_state.font.is_embedded)
+        print("Font - IsSubset:", fragment.text_state.font.is_subset)
+        print("Font Size:", fragment.text_state.font_size)
+        print("Foreground Color:", fragment.text_state.foreground_color)
 ```
 
-من أجل البحث والحصول على TextSegments من صفحة معينة من ملف PDF، تحتاج إلى تحديد فهرس الصفحة المحددة عند استدعاء طريقة Accept(..). يرجى إلقاء نظرة على أسطر الكود التالية.
+## ابحث عن عبارة نصية محددة على صفحة PDF واحدة
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// قبول المستخلص لكل الصفحات
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+ابحث عن عبارة نصية محددة داخل صفحة مستند PDF باستخدام TextFragmentAbsorber. على عكس البحث في المستند بأكمله، فإن هذا الأسلوب يقصر البحث على صفحة واحدة فقط، مما يجعله أكثر كفاءة لتأكيد وجود النص وموقعه في المناطق المستهدفة مثل الرؤوس أو التذييلات أو أقسام المحتوى المحددة.
+
+1. قم بتحميل وثيقة PDF.
+1. قم بتهيئة TextFragmentAbsorber باستخدام عبارة البحث.
+1. قم بتطبيق Absorber على صفحة محددة.
+1. قم بالتكرار فوق الأجزاء الموجودة.
+
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
+
+def text_fragment_absorber_search_page(input_file_path):
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber("whale")
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
-## البحث والحصول على النص من جميع الصفحات باستخدام التعبير العادي
+## بحث نصي تسلسلي صفحة بصفحة مع نتائج تراكمية
 
-TextFragmentAbsorber يساعدك في البحث واسترجاع النص، من جميع الصفحات، بناءً على تعبير عادي.
- أولاً، تحتاج إلى تمرير تعبير عادي إلى منشئ TextFragmentAbsorber كعبارة. بعد ذلك، يجب عليك تعيين خاصية TextSearchOptions لكائن TextFragmentAbsorber. تتطلب هذه الخاصية كائن TextSearchOptions وتحتاج إلى تمرير true كمعامل لمنشئها أثناء إنشاء كائنات جديدة. نظرًا لأنك تريد استرداد النص المطابق من جميع الصفحات، تحتاج إلى استدعاء طريقة Accept على مجموعة Pages. يقوم TextFragmentAbsorber بإرجاع TextFragmentCollection يحتوي على جميع الأجزاء التي تطابق المعايير المحددة بواسطة التعبير العادي. يوضح لك جزء الكود التالي كيفية البحث والحصول على النص من جميع الصفحات بناءً على تعبير عادي.
+ابحث عن النص بشكل تدريجي عبر صفحات متعددة من مستند PDF باستخدام TextFragmentAbsorber الخاص بـ Aspose.PDF.
+بخلاف البحث في صفحة واحدة أو على مستوى المستند، يتيح لك هذا الأسلوب معالجة الصفحات بالتتابع، وجمع النتائج تدريجيًا، وتحليل أجزاء النص بسياق خاص بالصفحة. هذه الطريقة مثالية للمستندات الكبيرة أو عمليات سير عمل المعالجة التدريجية.
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. قم بتحميل وثيقة PDF.
+1. قم بتهيئة TextFragmentAbsorber وقم بتعيين عبارة البحث.
+1. معالجة الصفحة الأولى. ابحث فقط في الصفحة 1. يطبع النص ورقم الصفحة والموضع. قم بتوفير نتائج معزولة خاصة بالصفحة من أجل الوضوح.
+1. قم بمعالجة الصفحة التالية بالتتابع. انتقل إلى الصفحة 2 واستمر اختياريًا في بقية المستند. يضمن «absorber.visit ()» تراكم النتائج من جميع الصفحات التي تمت زيارتها. تطبع نتائج البحث التراكمية، مع عرض النص والموقع.
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionAll.pdf");
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-// إنشاء كائن TextAbsorber للعثور على جميع العبارات التي تطابق التعبير العادي
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // مثل 1999-2000
+def text_fragment_absorber_sequential_search(input_file_path):
+    document = ap.Document(input_file_path)
 
-// تعيين خيار بحث النص لتحديد استخدام التعبير العادي
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.phrase = "whale"
 
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
+    # First page
+    document.pages[1].accept(absorber)
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Page:", fragment.page.number)
+        print("Position:", fragment.position)
 
-// قبول الممتص لجميع الصفحات
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    print("--")
 
-// الحصول على أجزاء النص المستخرجة
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    # Continue to next page
+    document.pages[2].accept(absorber)
+    absorber.visit(document)
 
-// التكرار عبر الأجزاء
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    Console.WriteLine("Text : {0} ", textFragment.Text);
-    Console.WriteLine("Position : {0} ", textFragment.Position);
-    Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
-    Console.WriteLine("YIndent : {0} ", textFragment.Position.YIndent);
-    Console.WriteLine("Font - Name : {0}", textFragment.TextState.Font.FontName);
-    Console.WriteLine("Font - IsAccessible : {0} ", textFragment.TextState.Font.IsAccessible);
-    Console.WriteLine("Font - IsEmbedded : {0} ", textFragment.TextState.Font.IsEmbedded);
-    Console.WriteLine("Font - IsSubset : {0} ", textFragment.TextState.Font.IsSubset);
-    Console.WriteLine("Font Size : {0} ", textFragment.TextState.FontSize);
-    Console.WriteLine("Foreground Color : {0} ", textFragment.TextState.ForegroundColor);
-}
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Page:", fragment.page.number)
+        print("Position:", fragment.position)
 ```
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-TextFragmentAbsorber textFragmentAbsorber;
-// من أجل البحث عن تطابق دقيق لكلمة، يمكنك النظر في استخدام التعبير العادي.
-textFragmentAbsorber = new TextFragmentAbsorber(@"\bWord\b", new TextSearchOptions(true));
+## البحث عن عبارة مستهدفة داخل منطقة مستطيلة
 
-// من أجل البحث عن سلسلة في حالات الأحرف الكبيرة أو الصغيرة، يمكنك النظر في استخدام التعبير العادي.
-textFragmentAbsorber = new TextFragmentAbsorber("(?i)Line", new TextSearchOptions(true));
+ابحث عن عبارة محددة داخل PDF مع تقييد البحث بمنطقة مستطيلة محددة في صفحة واحدة.
+من خلال الجمع بين البحث بالعبارات والقيود المكانية، يمكنك تحديد موقع المحتوى بدقة في مناطق معينة دون مسح الصفحة أو المستند بأكمله. وهذا مفيد بشكل خاص للنماذج أو الرؤوس أو التذييلات أو التقارير المهيكلة حيث يظهر المحتوى في مواقع يمكن التنبؤ بها.
 
-// من أجل البحث عن جميع السلاسل (تحليل جميع السلاسل) داخل مستند PDF، يرجى محاولة استخدام التعبير العادي التالي.
-textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
+1. قم بتحميل وثيقة PDF.
+1. قم بتهيئة TextFragmentAbsorber باستخدام قيود العبارة والمستطيل
+1. قم بتطبيق Absorber على الصفحة 2. يقيد المعالجة إلى الصفحة 2، مما يقلل من العمليات الحسابية غير الضرورية. يضمن أن البحث خاص بالصفحة.
+1. قم بالتكرار من خلال الأجزاء الموجودة وطباعتها
 
-// ابحث عن تطابق سلسلة البحث واحصل على أي شيء بعد السلسلة حتى كسر السطر.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(?i)the ((.)*)");
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-// يرجى استخدام التعبير العادي التالي للعثور على النص الذي يتبع تطابق التعبير العادي.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(?<=word).*");
+def text_fragment_absorber_search_phrase(input_file_path):
+    document = ap.Document(input_file_path)
 
-// من أجل البحث عن الروابط/عناوين URL داخل مستند PDF، يرجى محاولة استخدام التعبير العادي التالي.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?");
+    absorber = ap.text.TextFragmentAbsorber(
+        "elephant", ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+    )
+
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
+## البحث عن نمط النص في PDF باستخدام التعبيرات العادية
 
-## البحث عن نص بناءً على تعبير عادي وإضافة رابط تشعبي
+ابحث عن أنماط النص في PDF باستخدام التعبيرات العادية. من خلال تمكين وضع regex في TextFragmentAbsorber، يمكنك تحديد الأنماط المعقدة مثل الأرقام أو التواريخ أو الأسعار أو الإحداثيات أو تنسيقات النص المخصصة. تقصر الوظيفة البحث على صفحة معينة، مما يجعلها فعالة للاستخراج المستهدف للبيانات المنظمة.
 
-إذا كنت ترغب في إضافة رابط تشعبي على عبارة نصية بناءً على تعبير عادي، أولاً قم بالعثور على جميع العبارات المطابقة لذلك التعبير العادي باستخدام TextFragmentAbsorber وأضف رابطًا تشعبيًا على هذه العبارات.
+1. قم بتحميل وثيقة PDF.
+1. قم بتهيئة TextFragmentAbsorber باستخدام نمط Regex.
+1. قم بتطبيق Absorber على الصفحة 2. يقصر البحث على الصفحة 2 من أجل الكفاءة والدقة. يتم تحليل النص الموجود في هذه الصفحة فقط.
+1. قم بالتكرار من خلال الأجزاء الموجودة. تطبع أجزاء النص المطابقة وإحداثياتها. يوفر معلومات دقيقة عن الموقع للأنماط المستخرجة.
 
-للعثور على عبارة وإضافة رابط تشعبي عليها:
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-1. مرر التعبير العادي كمعامل إلى منشئ TextFragmentAbsorber.
-2. أنشئ كائن TextSearchOptions الذي يحدد ما إذا كان سيتم استخدام التعبير العادي أم لا.
-3. احصل على العبارات المطابقة في TextFragments.
-4. قم بالتكرار عبر المطابقات للحصول على أبعادها المستطيلة، وقم بتغيير لون المقدمة إلى الأزرق (اختياري - لجعله يظهر كرابط تشعبي واستخدم طريقة CreateWebLink(..) لفئة PdfContentEditor لإنشاء رابط.
-5. احفظ ملف PDF المحدث باستخدام طريقة Save لكائن Document.
-يظهر لك مقتطف الشيفرة التالي كيفية البحث عن نص داخل ملف PDF باستخدام تعبير عادي وإضافة روابط تشعبية فوق المطابقات.
+def text_fragment_absorber_search_regex(input_file_path):
+    document = ap.Document(input_file_path)
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// إنشاء كائن ماص للعثور على جميع الحالات لعبارة البحث المدخلة
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("\\d{4}-\\d{4}");
-// تمكين البحث بالتعبير العادي
-absorber.TextSearchOptions = new TextSearchOptions(true);
-// فتح المستند
-PdfContentEditor editor = new PdfContentEditor();
-// ربط ملف PDF المصدر
-editor.BindPdf(dataDir + "SearchRegularExpressionPage.pdf");
-// قبول الماص للصفحة
-editor.Document.Pages[1].Accept(absorber);
+    absorber = ap.text.TextFragmentAbsorber(
+        r"\d+\.\d+", ap.text.TextSearchOptions(is_regular_expression_used=True)
+    )
 
-int[] dashArray = { };
-String[] LEArray = { };
-System.Drawing.Color blue = System.Drawing.Color.Blue;
+    document.pages[2].accept(absorber)
 
-// التكرار عبر الشظايا
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    System.Drawing.Rectangle rect = new System.Drawing.Rectangle((int)textFragment.Rectangle.LLX,
-        (int)Math.Round(textFragment.Rectangle.LLY), (int)Math.Round(textFragment.Rectangle.Width + 2),
-        (int)Math.Round(textFragment.Rectangle.Height + 1));
-    Enum[] actionName = new Enum[2] { Aspose.Pdf.Annotations.PredefinedAction.Document_AttachFile, Aspose.Pdf.Annotations.PredefinedAction.Document_ExtractPages };
-    editor.CreateWebLink(rect, "http:// Www.aspose.com", 1, blue, actionName);
-    editor.CreateLine(rect, "", (float)textFragment.Rectangle.LLX + 1, (float)textFragment.Rectangle.LLY - 1,
-        (float)textFragment.Rectangle.URX, (float)textFragment.Rectangle.LLY - 1, 1, 1, blue, "S", dashArray, LEArray);
-}
-
-dataDir = dataDir + "SearchTextAndAddHyperlink_out.pdf";
-editor.Save(dataDir);
-editor.Close();
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
+## تحويل تطابقات النص إلى ارتباطات تشعبية في PDF باستخدام TextFragmentAbsorber
 
-## البحث ورسم مستطيل حول كل جزء نصي
+ابحث عن عبارات نصية محددة في PDF وقم بتحويلها إلى روابط تشعبية قابلة للنقر. باستخدام TextFragmentAbsorber مع أنماط regex، فإنه يحدد الكلمات المستهدفة ويطبق التصميم المرئي (اللون والتسطير) جنبًا إلى جنب مع الروابط التفاعلية.
 
-يدعم Aspose.PDF for .NET ميزة البحث والحصول على إحداثيات كل حرف أو أجزاء النص. لذلك من أجل التأكد من الإحداثيات التي يتم إرجاعها لكل حرف، يمكننا النظر في تسليط الضوء (إضافة مستطيل) حول كل حرف.
+1. قم بتحميل وثيقة PDF.
+1. قم بتهيئة TextFragmentAbsorber باستخدام نمط Regex.
+1. قم بتطبيق Absorber على الصفحة 1.
+1. قم بتصميم وإضافة الارتباطات التشعبية للمباريات.
+1. احفظ ملف PDF المعدل.
 
-في حالة فقرة النص، يمكنك التفكير في استخدام بعض التعبيرات العادية لتحديد فاصل الفقرة ورسم مستطيل حولها. يرجى إلقاء نظرة على مقتطف الشيفرة التالي. يحصل مقتطف الشيفرة التالي على إحداثيات كل حرف وينشئ مستطيلًا حول كل حرف.
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+def text_fragment_absorber_search_and_add_hyperlink(input_file_path):
+    document = ap.Document(input_file_path)
 
-// افتح المستند
-Document document = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+    absorber = ap.text.TextFragmentAbsorber("whale|elephant")
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-// إنشاء كائن TextAbsorber للعثور على جميع العبارات التي تطابق التعبير العادي
+    absorber.visit(document.pages[1])
 
-TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(@"[\S]+");
+    for fragment in absorber.text_fragments:
+        fragment.text_state.foreground_color = ap.Color.blue
+        fragment.text_state.underline = True
+        fragment.hyperlink = ap.WebHyperlink(
+            f"https://en.wikipedia.org/wiki/{fragment.text}"
+        )
 
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-
-textAbsorber.TextSearchOptions = textSearchOptions;
-
-document.Pages.Accept(textAbsorber);
-
-var editor = new PdfContentEditor(document);
-
-foreach (TextFragment textFragment in textAbsorber.TextFragments)
-{
-    foreach (TextSegment textSegment in textFragment.Segments)
-    {
-        DrawBox(editor, textFragment.Page.Number, textSegment, System.Drawing.Color.Red);
-    }
-
-}
-dataDir = dataDir + "SearchTextAndDrawRectangle_out.pdf";
-document.Save(dataDir);
+    output = input_file_path.replace("in.pdf", "out.pdf")
+    document.save(output)
 ```
 
+## البحث وتحديد النص المصمم في PDF باستخدام TextFragmentAbsorber
 
-## تسليط الضوء على كل حرف في مستند PDF
+ابحث عن أجزاء النص في PDF بناءً على خصائص التنسيق الخاصة بها بدلاً من محتواها. باستخدام TextFragmentAbsorber، فإنه يحدد النص بأنماط محددة، مثل النص الغامق.
 
-{{% alert color="primary" %}}
+1. قم بتحميل وثيقة PDF.
+1. قم بتهيئة ممتص أجزاء النص.
+1. قم بتطبيق Absorber على الصفحة 1.
+1. افحص أجزاء النص بناءً على التنسيق. يتحقق من نمط الخط للتنسيق الغامق.
 
-يمكنك محاولة البحث عن نص في مستند باستخدام Aspose.PDF والحصول على النتائج عبر الإنترنت في هذا [الرابط](https://products.aspose.app/pdf/search)
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-{{% /alert %}}
+def text_fragment_absorber_search_styled_text(input_file_path):
+    document = ap.Document(input_file_path)
 
-يدعم Aspose.PDF لـ .NET ميزة البحث والحصول على إحداثيات كل حرف أو أجزاء النص. لذلك للتأكد من الإحداثيات التي يتم إرجاعها لكل حرف، يمكننا النظر في تسليط الضوء (إضافة مستطيل) حول كل حرف. يوضح مقتطف الشيفرة البرمجية التالي كيفية الحصول على إحداثيات كل حرف وإنشاء مستطيل حول كل حرف.
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    absorber.visit(document.pages[1])
 
-int resolution = 150;
-
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "input.pdf");
-
-using (MemoryStream ms = new MemoryStream())
-{
-    PdfConverter conv = new PdfConverter(pdfDocument);
-    conv.Resolution = new Resolution(resolution, resolution);
-    conv.GetNextImage(ms, System.Drawing.Imaging.ImageFormat.Png);
-
-    Bitmap bmp = (Bitmap)Bitmap.FromStream(ms);
-
-    using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bmp))
-    {
-        float scale = resolution / 72f;
-        gr.Transform = new System.Drawing.Drawing2D.Matrix(scale, 0, 0, -scale, 0, bmp.Height);
-
-        for (int i = 0; i < pdfDocument.Pages.Count; i++)
-        {
-Page page = pdfDocument.Pages[1];
-// إنشاء كائن TextAbsorber للعثور على كل الكلمات
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
-page.Accept(textFragmentAbsorber);
-// الحصول على أجزاء النص المستخرجة
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// التكرار عبر الأجزاء
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    if (i == 0)
-    {
-        gr.DrawRectangle(
-        Pens.Yellow,
-        (float)textFragment.Position.XIndent,
-        (float)textFragment.Position.YIndent,
-        (float)textFragment.Rectangle.Width,
-        (float)textFragment.Rectangle.Height);
-
-        for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
-        {
-TextSegment segment = textFragment.Segments[segNum];
-
-for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
-{
-    CharInfo characterInfo = segment.Characters[charNum];
-
-    Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
-    Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
-          "   TextFragment URY = " + textFragment.Rectangle.URY);
-
-    gr.DrawRectangle(
-    Pens.Black,
-    (float)characterInfo.Rectangle.LLX,
-    (float)characterInfo.Rectangle.LLY,
-    (float)characterInfo.Rectangle.Width,
-    (float)characterInfo.Rectangle.Height);
-}
-
-gr.DrawRectangle(
-Pens.Green,
-(float)segment.Rectangle.LLX,
-(float)segment.Rectangle.LLY,
-(float)segment.Rectangle.Width,
-(float)segment.Rectangle.Height);
-        }
-    }
-}
-        }
-    }
-    dataDir = dataDir + "HighlightCharacterInPDF_out.png";
-    bmp.Save(dataDir, System.Drawing.Imaging.ImageFormat.Png);
-}
+    for fragment in absorber.text_fragments:
+        if fragment.text_state.font_style == ap.text.FontStyles.BOLD:
+            print(f"Bold: {fragment.text}")
+        if fragment.text_state.invisible:
+            print(f"Invisible: {fragment.text}")
 ```
 
+## تسليط الضوء على النص المرئي في صفحات PDF
 
-## إضافة والبحث عن النص المخفي
+تجمع هذه الوظيفة بين التعرف على النص والعرض في سير عمل واحد. فهو لا يستخرج النص فحسب، بل يتخيله أيضًا من خلال تمييز الأجزاء والمقاطع والأحرف في المستطيلات المرمزة بالألوان على صور PNG لكل صفحة.
 
-أحيانًا نريد إضافة نص مخفي في مستند PDF ثم البحث عن النص المخفي واستخدام موقعه لمعالجة لاحقة. لراحتك، توفر Aspose.PDF لـ .NET هذه القدرات. يمكنك إضافة نص مخفي أثناء إنشاء المستند. أيضًا، يمكنك العثور على النص المخفي باستخدام TextFragmentAbsorber. لإضافة نص مخفي، قم بتعيين TextState.Invisible إلى 'true' للنص المضاف. يجد TextFragmentAbsorber جميع النصوص التي تطابق النمط (إذا تم تحديده). هذا هو السلوك الافتراضي الذي لا يمكن تغييره. للتحقق مما إذا كان النص الذي تم العثور عليه غير مرئي بالفعل، يمكن استخدام خاصية TextState.Invisible. يوضح مقتطف الكود أدناه كيفية استخدام هذه الميزة.
+يقوم مثالنا بعمل تصور نصي متقدم على PDF من خلال:
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+- البحث عن جميع أجزاء النص المرئية باستخدام التعبيرات العادية
+- تحويل كل صفحة PDF إلى صورة PNG عالية الدقة
+- رسم مستطيلات ملونة حول أجزاء النص ومقاطع النص والأحرف الفردية
 
-//إنشاء مستند يحتوي على نص مخفي
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-Page page = doc.Pages.Add();
-TextFragment frag1 = new TextFragment("This is common text.");
-TextFragment frag2 = new TextFragment("This is invisible text.");
+1. تعيين دقة صورة الإخراج. يتم تحويل كل صفحة PDF إلى صورة PNG 150 DPI.
+1. افتح ملف PDF وقم بتهيئة أداة امتصاص النص.
+1. قم بمعالجة كل صفحة. قم بتطبيق جهاز الامتصاص على كل صفحة. اجمع كل أجزاء النص المكتشفة ومواقعها الهندسية.
+1. تحويل الصفحة إلى بث PNG.
+1. قم بإعداد كائن الرسومات للرسم.
+1. قم بتطبيق التحويل الإحداثي. قم بتحويل إحداثيات PDF إلى وحدات بكسل للصورة.
+1. ارسم مستطيلات لعناصر النص.
+1. احفظ النتيجة.
 
-//تعيين خاصية النص - غير مرئي
-frag2.TextState.Invisible = true;
+```python
+import io
+import sys
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+from os import path
 
-page.Paragraphs.Add(frag1);
-page.Paragraphs.Add(frag2);
-doc.Save(dataDir + "39400_out.pdf");
-doc.Dispose();
+def text_fragment_absorber_search_and_highlight(infile):
+    resolution = 150
+    png_device = ap.devices.PngDevice(ap.devices.Resolution(resolution, resolution))
 
-//البحث عن النص في المستند
-doc = new Aspose.Pdf.Document(dataDir + "39400_out.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-absorber.Visit(doc.Pages[1]);
+    # Open PDF document
+    document = ap.Document(infile)
+    absorber = ap.text.TextFragmentAbsorber(r"[\S]+")
+    absorber.text_search_options.is_regular_expression_used = True
 
-foreach (TextFragment fragment in absorber.TextFragments)
-{
-    //قم بعمل شيء ما مع الأجزاء
-    Console.WriteLine("Text '{0}' on pos {1} invisibility: {2} ",
-    fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
-}
-doc.Dispose();
+    for page in document.pages:
+        page.accept(absorber)
+        stream = io.BytesIO()
+        png_device.process(page, stream)
+        with drawing.Bitmap.from_stream(stream) as bmp:
+            with drawing.Graphics.from_image(bmp) as gr:
+                scale = resolution / 72
+                gr.transform = drawing.drawing2d.Matrix(
+                    float(scale),
+                    float(0),
+                    float(0),
+                    float(-scale),
+                    float(0),
+                    float(bmp.height),
+                )
+                text_fragment_collection = absorber.text_fragments
+                # Loop through the fragments
+                for text_fragment in text_fragment_collection:
+                    gr.draw_rectangle(
+                        drawing.Pens.yellow,
+                        float(text_fragment.position.x_indent),
+                        float(text_fragment.position.y_indent),
+                        float(text_fragment.rectangle.width),
+                        float(text_fragment.rectangle.height),
+                    )
+                    for seg_num in range(1, len(text_fragment.segments) + 1):
+                        segment = text_fragment.segments[seg_num]
+                        for char_num in range(1, len(segment.characters) + 1):
+                            character_info = segment.characters[char_num]
+                            rect = page.get_page_rect(True)
+                            print(
+                                f"TextFragment = {text_fragment.text}"
+                                + f" Page URY = {rect.ury}"
+                                + f" TextFragment URY = {text_fragment.rectangle.ury}"
+                            )
+                            gr.draw_rectangle(
+                                drawing.Pens.black,
+                                float(character_info.rectangle.llx),
+                                float(character_info.rectangle.lly),
+                                float(character_info.rectangle.width),
+                                float(character_info.rectangle.height),
+                            )
+                        gr.draw_rectangle(
+                            drawing.Pens.green,
+                            float(segment.rectangle.llx),
+                            float(segment.rectangle.lly),
+                            float(segment.rectangle.width),
+                            float(segment.rectangle.height),
+                        )
+
+                # Save result
+                bmp.save(
+                    infile.replace("_in.pdf", str(page.number) + "_out.png"),
+                    drawing.imaging.ImageFormat.png,
+                )
 ```
 
+## موضوعات نصية ذات صلة
 
-## البحث عن النص باستخدام .NET Regex
-
-يوفر Aspose.PDF لـ .NET القدرة على البحث في المستندات باستخدام خيار .NET Regex القياسي. يمكن استخدام TextFragmentAbsorber لهذا الغرض كما هو موضح في نموذج الكود أدناه.
-
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// إنشاء كائن Regex للعثور على جميع الكلمات
-System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"[\S]+");
-
-// فتح المستند
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "SearchTextRegex.pdf");
-
-// الحصول على صفحة معينة
-Page page = document.Pages[1];
-
-// إنشاء كائن TextAbsorber للعثور على جميع الحالات المدخلة في regex
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(regex);
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
-
-// قبول الممتص للصفحة
-page.Accept(textFragmentAbsorber);
-
-// الحصول على أجزاء النص المستخرجة
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// حلقة عبر الأجزاء
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    Console.WriteLine(textFragment.Text);
-}
-```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [العمل مع النص في PDF باستخدام Python](/pdf/ar/python-net/working-with-text/)
+- [استبدال النص في PDF عبر Python](/pdf/ar/python-net/replace-text-in-pdf/)
+- [إضافة تلميحات الأدوات إلى نص PDF في Python](/pdf/ar/python-net/pdf-tooltip/)
+- [إضافة نص إلى PDF](/pdf/ar/python-net/add-text-to-pdf-file/)

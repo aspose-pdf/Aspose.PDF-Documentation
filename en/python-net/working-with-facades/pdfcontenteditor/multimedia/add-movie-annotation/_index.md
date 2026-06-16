@@ -1,5 +1,6 @@
 ---
-title: Add Movie Annotation
+title: Add Movie Annotation
+linktitle: Add Movie Annotation
 type: docs
 weight: 10
 url: /python-net/add-movie-annotation/

@@ -1,6 +1,6 @@
 ---
-title: استخراج النص من PDF 
-linktitle: استخراج النص 
+title: استخراج النص من PDF
+linktitle: استخراج النص
 type: docs
 weight: 10
 url: /ar/php-java/extract-text-from-pdf/

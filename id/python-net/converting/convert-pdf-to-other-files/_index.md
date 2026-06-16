@@ -1,178 +1,185 @@
 ---
-title: Convert PDF to EPUB, LaTeX, Text, XPS in Python
-linktitle: Convert PDF to other formats 
+title: Konversi PDF ke EPUB, Teks, XPS, dan Lainnya di Python
+linktitle: Konversi PDF ke format lain
 type: docs
 weight: 90
 url: /id/python-net/convert-pdf-to-other-files/
-lastmod: "2022-12-23"
-description: Topik ini menunjukkan cara mengonversi file PDF ke format file lain seperti EPUB, LaTeX, Teks, XPS, dll menggunakan Python.
+lastmod: "2026-06-12"
+description: Pelajari cara mengonversi file PDF ke EPUB, LaTeX, Markdown, teks, XPS, dan MobiXML di Python dengan Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: Cara Mengonversi PDF ke format lain di Python
+Abstract: Artikel ini menyediakan panduan komprehensif tentang mengonversi file PDF ke berbagai format menggunakan Aspose.PDF for Python. Panduan ini mencakup konversi PDF ke format EPUB, LaTeX/TeX, Text, XPS, dan XML. Setiap bagian dimulai dengan undangan untuk mencoba aplikasi online yang disediakan oleh Aspose untuk mengonversi PDF ke format masing‑masing, menyoroti kemudahan penggunaan dan kualitas alat‑alat ini.
 ---
 
-## Mengonversi PDF ke EPUB
+## Konversi PDF ke EPUB
 
 {{% alert color="success" %}}
-**Cobalah mengonversi PDF ke EPUB secara online**
+**Coba mengonversi PDF ke EPUB secara daring**
 
-Aspose.PDF untuk Python menyajikan aplikasi online gratis ["PDF ke EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for Python menyajikan aplikasi online kepada Anda ["PDF ke EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
 
-[![Konversi Aspose.PDF PDF ke EPUB dengan Aplikasi Gratis](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
+[![Aspose.PDF Konversi PDF ke EPUB dengan Aplikasi](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
 
-**<abbr title="Electronic Publication">EPUB</abbr>** adalah standar buku elektronik gratis dan terbuka dari International Digital Publishing Forum (IDPF).
- Files memiliki ekstensi .epub.  
-EPUB dirancang untuk konten yang dapat diatur ulang, artinya pembaca EPUB dapat mengoptimalkan teks untuk perangkat tampilan tertentu. EPUB juga mendukung konten dengan tata letak tetap. Format ini dimaksudkan sebagai format tunggal yang dapat digunakan penerbit dan rumah konversi secara internal, serta untuk distribusi dan penjualan. Ini menggantikan standar Open eBook.
+<abbr title="Electronic Publication">EPUB</abbr> adalah standar e-book gratis dan terbuka dari International Digital Publishing Forum (IDPF). File memiliki ekstensi .epub.
+EPUB dirancang untuk konten yang dapat diatur ulang, yang berarti pembaca EPUB dapat mengoptimalkan teks untuk perangkat tampilan tertentu. EPUB juga mendukung konten tata letak tetap. Format ini dimaksudkan sebagai satu format yang dapat digunakan oleh penerbit dan rumah konversi secara internal, serta untuk distribusi dan penjualan. Format ini menggantikan standar Open eBook.
 
-Aspose.PDF untuk Python juga mendukung fitur untuk mengonversi dokumen PDF ke format EPUB. Aspose.PDF untuk Python memiliki kelas bernama 'EpubSaveOptions' yang dapat digunakan sebagai argumen kedua untuk metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods), untuk menghasilkan file EPUB. Silakan coba menggunakan potongan kode berikut untuk memenuhi persyaratan ini dengan Python.
+Aspose.PDF for Python juga mendukung fitur untuk mengonversi dokumen PDF ke format EPUB. Aspose.PDF for Python memiliki kelas bernama 'EpubSaveOptions' yang dapat digunakan sebagai argumen kedua untuk [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) metode, untuk menghasilkan file EPUB.
+Silakan coba gunakan potongan kode berikut untuk memenuhi persyaratan ini dengan Python.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_epub.epub"
-    # Buka dokumen PDF
-    document = ap.Document(input_pdf)
-
-    # Instansiasi opsi Simpan Epub
+def convert_PDF_to_EPUB(infile, outfile):
+    document = ap.Document(infile)
     save_options = ap.EpubSaveOptions()
-
-    # Tentukan tata letak untuk konten
     save_options.content_recognition_mode = ap.EpubSaveOptions.RecognitionMode.FLOW
+    document.save(outfile, save_options)
 
-    # Simpan dokumen ePUB
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
-## Mengubah PDF ke LaTeX/TeX
+## Konversi terkait
 
-**Aspose.PDF untuk Python via .NET** mendukung konversi PDF ke LaTeX/TeX. Format file LaTeX adalah format file teks dengan markup khusus dan digunakan dalam sistem persiapan dokumen berbasis TeX untuk penyusunan berkualitas tinggi.
+- [Konversi PDF ke Word](/pdf/id/python-net/convert-pdf-to-word/) untuk output dokumen kantor yang dapat diedit.
+- [Konversi PDF ke HTML](/pdf/id/python-net/convert-pdf-to-html/) untuk output yang berorientasi pada peramban.
+- [Ubah PDF menjadi PDF/A, PDF/E, dan PDF/X](/pdf/id/python-net/convert-pdf-to-pdf_x/) untuk alur kerja konversi yang mematuhi standar dan arsip.
+
+## Konversi PDF ke LaTeX/TeX
+
+**Aspose.PDF for Python via .NET** mendukung mengonversi PDF ke LaTeX/TeX.
+Format file LaTeX adalah format file teks dengan markup khusus dan digunakan dalam sistem persiapan dokumen berbasis TeX untuk penataan huruf berkualitas tinggi.
 
 {{% alert color="success" %}}
-**Cobalah untuk mengonversi PDF ke LaTeX/TeX secara online**
+**Coba konversi PDF ke LaTeX/TeX secara online**
 
-Aspose.PDF untuk Python menghadirkan aplikasi gratis online ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), di mana Anda dapat mencoba menyelidiki fungsi dan kualitas kerjanya.
+Aspose.PDF for Python menyajikan aplikasi online kepada Anda ["PDF ke LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
 
-[![Aspose.PDF Konversi PDF ke LaTeX/TeX dengan Aplikasi Gratis](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
+[![Konversi PDF ke LaTeX/TeX dengan Aplikasi Aspose.PDF](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
 Untuk mengonversi file PDF ke TeX, Aspose.PDF memiliki kelas [LaTeXSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/latexsaveoptions/) yang menyediakan properti OutDirectoryPath untuk menyimpan gambar sementara selama proses konversi.
 
-Cuplikan kode berikut menunjukkan proses mengonversi file PDF menjadi format TEX dengan Python.
+Cuplikan kode berikut menunjukkan proses mengonversi file PDF ke format TEX dengan Python.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def convert_PDF_to_TeX(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.LaTeXSaveOptions()
+    document.save(outfile, save_options)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_tex.tex"
-    # Buka dokumen PDF
-    document = ap.Document(input_pdf)
-    # Instansiasi sebuah objek dari LaTeXSaveOptions
-    saveOptions = ap.LaTeXSaveOptions()
-    document.save(output_pdf, saveOptions)
+    print(infile + " converted into " + outfile)
 ```
 
-## Mengonversi PDF ke Teks
+## Ubah PDF menjadi Teks
 
-**Aspose.PDF untuk Python** mendukung konversi seluruh dokumen PDF dan halaman tunggal ke file Teks.
-
-### Mengonversi dokumen PDF ke file Teks
-
-Anda dapat mengonversi dokumen PDF ke file TXT menggunakan kelas 'TextDevice'.
-
-Cuplikan kode berikut menjelaskan cara mengekstrak teks dari semua halaman.
+**Aspose.PDF for Python** mendukung konversi seluruh dokumen PDF dan halaman tunggal ke file Text. Anda dapat mengonversi dokumen PDF ke file TXT menggunakan kelas 'TextDevice'. Cuplikan kode berikut menjelaskan cara mengekstrak teks dari semua halaman.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def convert_PDF_to_TXT(infile, outfile):
+    document = ap.Document(infile)
+    device = ap.devices.TextDevice()
+    device.process(document.pages[1], outfile)
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_txt.txt"
-    # Buka dokumen PDF
-    document = ap.Document(input_pdf)
-
-    # Buat perangkat Teks
-    textDevice = ap.devices.TextDevice()
-
-    # Mengonversi halaman tertentu dan simpan
-    textDevice.process(document.pages[1], output_pdf)
+    print(infile + " converted into " + outfile)
 ```
-**Coba ubah Convert PDF ke Teks secara online**
-{{% alert color="success" %}}
-
-Aspose.PDF untuk Python mempersembahkan kepada Anda aplikasi online gratis ["PDF ke Teks"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
-
-[![Aspose.PDF Konversi PDF ke Teks dengan Aplikasi Gratis](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
-{{% /alert %}}
-
-## Ubah PDF ke XPS
-
-**Aspose.PDF untuk Python** memberikan kemungkinan untuk mengonversi file PDF ke format <abbr title="XML Paper Specification">XPS</abbr>. Mari coba gunakan potongan kode yang disajikan untuk mengonversi file PDF ke format XPS dengan Python.
 
 {{% alert color="success" %}}
-**Coba ubah PDF ke XPS secara online**
+**Coba ubah PDF ke Teks secara online**
 
-Aspose.PDF untuk Python mempersembahkan kepada Anda aplikasi online gratis ["PDF ke XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for Python menyajikan aplikasi online kepada Anda ["PDF ke Teks"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
 
-[![Aspose.PDF Konversi PDF ke XPS dengan Aplikasi Gratis](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+[![Konversi PDF ke Teks dengan App Aspose.PDF](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}
 
-Jenis file XPS terutama diasosiasikan dengan XML Paper Specification oleh Microsoft Corporation. XML Paper Specification (XPS), yang sebelumnya diberi nama kode Metro dan mencakup konsep pemasaran Next Generation Print Path (NGPP), adalah inisiatif Microsoft untuk mengintegrasikan pembuatan dan penayangan dokumen ke dalam sistem operasi Windows.
+## Konversi PDF ke XPS
 
-Untuk mengonversi file PDF ke XPS, Aspose.PDF memiliki kelas [XpsSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/xpssaveoptions/) yang digunakan sebagai argumen kedua untuk metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) untuk menghasilkan file XPS.
+**Aspose.PDF for Python** memberikan kemungkinan untuk mengonversi file PDF ke format XPS. Mari coba menggunakan potongan kode yang disajikan untuk mengonversi file PDF ke format XPS dengan Python.
 
-Cuplikan kode berikut menunjukkan proses konversi file PDF ke format XPS.
+{{% alert color="success" %}}
+**Coba konversi PDF ke XPS secara online**
+
+Aspose.PDF for Python menyajikan aplikasi online kepada Anda ["PDF ke XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
+
+[![Aspose.PDF Konversi PDF ke XPS dengan Aplikasi](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+{{% /alert %}}
+
+Jenis file XPS terutama terkait dengan XML Paper Specification oleh Microsoft Corporation. XML Paper Specification (XPS), yang sebelumnya bernama kode Metro dan mencakup konsep pemasaran Next Generation Print Path (NGPP), merupakan inisiatif Microsoft untuk mengintegrasikan pembuatan dan penampilan dokumen ke dalam sistem operasi Windows.
+
+Untuk mengonversi file PDF ke XPS, Aspose.PDF memiliki kelas [XpsSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/xpssaveoptions/) yang digunakan sebagai argumen kedua untuk [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) metode untuk menghasilkan file XPS.
+
+Potongan kode berikut menunjukkan proses mengonversi file PDF ke format XPS.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xps.xps"
-    # Buka dokumen PDF
-    document = ap.Document(input_pdf)
-
-    # Memulai opsi simpan XPS
+def convert_PDF_to_XPS(infile, outfile):
+    document = ap.Document(infile)
     save_options = ap.XpsSaveOptions()
+    save_options.use_new_imaging_engine = True
+    document.save(outfile, save_options)
 
-    # Simpan dokumen XPS
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
-## Mengonversi PDF ke XML
+## Ubah PDF ke MD
 
-{{% alert color="success" %}}
-**Cobalah mengonversi PDF ke XML secara online**
+Aspose.PDF memiliki kelas 'MarkdownSaveOptions()', yang mengonversi dokumen PDF ke format Markdown (MD) sambil mempertahankan gambar dan sumber daya.
 
-Aspose.PDF untuk Python menghadirkan aplikasi gratis online ["PDF to XML"](https://products.aspose.app/pdf/conversion/pdf-to-xml), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
-
-[![Aspose.PDF Konversi PDF ke XML dengan Aplikasi Gratis](pdf_to_xml.png)](https://products.aspose.app/pdf/conversion/pdf-to-xml)
-{{% /alert %}}
-
-<abbr title="Extensible Markup Language">XML</abbr> adalah bahasa markup dan format file untuk menyimpan, mentransmisikan, dan merekonstruksi data sembarang.
-
-Aspose.PDF untuk Python juga mendukung fitur untuk mengonversi dokumen PDF ke format XML. Aspose.PDF untuk Python memiliki kelas bernama 'XmlSaveOptions' yang dapat digunakan sebagai argumen kedua untuk metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods), untuk menghasilkan file XML.
-Silakan coba gunakan potongan kode berikut untuk memenuhi persyaratan ini dengan Python.
+1. Muat PDF sumber menggunakan 'ap.Document'.
+1. Buat sebuah instance dari 'MarkdownSaveOptions'.
+1. Set 'resources_directory_name' ke 'images' – gambar yang diekstrak akan disimpan di folder ini.
+1. Simpan dokumen Markdown yang telah dikonversi menggunakan opsi yang telah dikonfigurasi.
+1. Cetak pesan konfirmasi setelah konversi.
 
 ```python
+import aspose.pdf as ap
+from os import path
+import sys
 
-    import aspose.pdf as ap
+def convert_PDF_to_MD(infile, outfile):
+    document = ap.Document(infile)
+    save_options = ap.MarkdownSaveOptions()
+    save_options.resources_directory_name = "images"
+    save_options.use_image_html_tag = True
+    document.save(outfile, save_options)
 
-    def convert_pdf_to_xml(self, infile, outfile):
-        path_infile = self.dataDir + infile
-        path_outfile = self.dataDir + outfile
+    print(infile + " converted into " + outfile)
+```
 
-        # Buka dokumen PDF
+File Markdown dengan teks dan gambar yang ditautkan disimpan di folder gambar yang ditentukan.
 
-        document = ap.Document(path_infile)
+## Konversi PDF ke MobiXML
 
-        # Instansiasi opsi Simpan XML
-        save_options = ap.XmlSaveOptions()
+Metode ini mengonversi dokumen PDF menjadi format MOBI (MobiXML), yang biasanya digunakan untuk eBook pada perangkat Kindle.
 
-        # Simpan dokumen XML
-        document.save(path_outfile, save_options)
-        print(infile + " dikonversi menjadi " + outfile)
+1. Muat dokumen PDF sumber menggunakan 'ap.Document'.
+1. Simpan dokumen dengan format 'ap.SaveFormat.MOBI_XML'.
+1. Cetak pesan konfirmasi setelah konversi selesai.
+
+```python
+import aspose.pdf as ap
+from os import path
+import sys
+
+def convert_PDF_to_MobiXML(infile, outfile):
+    document = ap.Document(infile)
+    document.save(outfile, ap.SaveFormat.MOBI_XML)
+
+    print(infile + " converted into " + outfile)
 ```

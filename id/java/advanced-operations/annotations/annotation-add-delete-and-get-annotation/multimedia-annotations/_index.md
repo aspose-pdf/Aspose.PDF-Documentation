@@ -1,5 +1,5 @@
 ---
-title: PDF Multimedia Annotation 
+title: PDF Multimedia Annotation
 linktitle: Multimedia Annotation
 type: docs
 weight: 40
@@ -329,7 +329,7 @@ Tugas utama pemodelan 3D adalah ide tentang objek masa depan atau objek karena, 
 ## Tambahkan Anotasi 3D
 
 Anotasi 3D ditambahkan menggunakan model yang dibuat dalam format U3D dengan Aspose.PDF untuk Java
-1. Buat [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) baru
+1. Buat [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) baru
 1. Muat data model 3D yang diinginkan (dalam kasus kami "Ring.u3d") untuk membuat [Konten PDF3D](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/PDF3DContent)
 1. Buat objek [Karya Seni 3d](https://reference.aspose.com/pdf/java/com.aspose.pdf/PDF3DArtwork) dan tautkan ke dokumen dan Konten3D
 1. Sesuaikan objek pdf3dArtWork:
@@ -346,7 +346,7 @@ Anotasi 3D ditambahkan menggunakan model yang dibuat dalam format U3D dengan Asp
 1. Atur tampilan default (misalnya - ATAS)
 
 1. Tambahkan beberapa parameter tambahan: nama, poster pratinjau dll.
-1. Tambahkan Anotasi ke [Halaman](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)
+1. Tambahkan Anotasi ke [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)
 1. Simpan hasilnya
 
 ## Contoh

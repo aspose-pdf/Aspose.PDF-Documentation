@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to HTML in Python 
+title: Convert PDF to HTML in Python
 linktitle: Convert PDF to HTML format
 type: docs
 weight: 50

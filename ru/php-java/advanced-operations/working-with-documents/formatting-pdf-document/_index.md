@@ -1,5 +1,5 @@
 ---
-title: Форматирование PDF документа 
+title: Форматирование PDF документа
 linktitle: Форматирование PDF документа
 type: docs
 weight: 20

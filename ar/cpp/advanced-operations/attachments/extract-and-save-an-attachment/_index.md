@@ -1,5 +1,5 @@
 ---
-title: استخراج وحفظ مرفق 
+title: استخراج وحفظ مرفق
 linktitle: استخراج وحفظ مرفق
 type: docs
 weight: 20

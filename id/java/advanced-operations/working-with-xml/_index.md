@@ -1,5 +1,5 @@
 ---
-title: Bekerja dengan XML 
+title: Bekerja dengan XML
 linktitle: Bekerja dengan XML
 type: docs
 weight: 80

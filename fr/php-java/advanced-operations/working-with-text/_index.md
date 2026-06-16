@@ -1,5 +1,5 @@
 ---
-title: Travailler avec du texte dans un PDF 
+title: Travailler avec du texte dans un PDF
 linktitle: Travailler avec du texte
 type: docs
 weight: 30

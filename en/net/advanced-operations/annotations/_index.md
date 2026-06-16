@@ -1,5 +1,5 @@
 ---
-title: Working with Annotations 
+title: Working with Annotations
 linktitle: Annotations in PDF
 type: docs
 ai_search_scope: pdf_net

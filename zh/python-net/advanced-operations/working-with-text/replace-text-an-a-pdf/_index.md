@@ -1,559 +1,507 @@
 ---
-title: 使用Python替换PDF中的文本
-linktitle: 替换PDF中的文本
+title: 使用 Python 替换 PDF 中的文本
+linktitle: 替换 PDF 中的文本
 type: docs
 weight: 40
 url: /zh/python-net/replace-text-in-pdf/
-description: 了解通过Aspose.PDF for Python via .NET库替换和删除文本的多种方法。
-lastmod: "2024-02-17"
+description: 了解如何使用 Python 替换 PDF 文件中的文字，包括跨页替换文字、将更改限制在页面区域、使用正则表达式以及删除文字。
+lastmod: "2026-06-08"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /python-net/replace-text-in-a-pdf-document/
+TechArticle: true
+AlternativeHeadline: 使用 Python 替换和删除 PDF 文件中的文字
+Abstract: 本文展示了如何使用 Aspose.PDF for Python via .NET 在 PDF 文档中替换文本。它涵盖了跨所有页面的文本替换、页面区域替换、正则表达式匹配、字体替换、文本布局调整以及删除可见或隐藏的文本。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "替换PDF中的文本",
-    "alternativeHeadline": "在PDF文件中替换和删除文本",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf文档生成",
-    "keywords": "pdf, python, 替换文本, 删除文本",
-    "wordcount": "302",
-    "proficiencyLevel":"初级",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/replace-text-in-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/replace-text-in-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "了解通过Aspose.PDF for Python via .NET库替换和删除文本的多种方法。"
-}
-</script>
 
+此页面展示了如何使用 Aspose.PDF for Python via .NET **使用 Python 替换 PDF 中的文本**。
 
-## 替换PDF文档所有页面中的文本
+当您需要更新文本值、删除不需要的内容、在特定页面区域替换文本，或在多个 PDF 页面上应用文本替换规则时，请使用这些示例。
+
+## 使用 Python 替换 PDF 中的文本
+
+### 在 PDF 文档的所有页面上替换文本
 
 {{% alert color="primary" %}}
 
-您可以尝试使用 Aspose.PDF 在文档中查找并替换文本，并在此[链接](https://products.aspose.app/pdf/redaction)上在线查看结果
+您可以尝试使用 Aspose.PDF 在线进行文本搜索和替换 [编辑隐藏应用](https://products.aspose.app/pdf/redaction).
 
 {{% /alert %}}
 
-为了替换PDF文档所有页面中的文本，您首先需要使用 [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) 来查找您想要替换的特定短语。之后，您需要遍历所有的 TextFragments 来替换文本并更改任何其他属性。完成这些操作后，您只需使用 Document 对象的 Save 方法保存输出 PDF。以下代码片段向您展示如何替换PDF文档所有页面中的文本。
+文本替换是在更新或纠正现有 PDF 文档内容时的常见需求——例如，修改产品名称、修正拼写错误，或在多个页面中更新术语。
+
+Aspose.PDF for Python via .NET 提供了一种强大且高效的方法，可通过编程方式搜索和替换文本 [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) 类。
+
+本例演示了如何在整个 PDF 文档中查找特定短语的所有出现位置（在本例中为“Black cat”），并将其替换为新短语（“White dog”）。
+
+1. 指定搜索和替换短语。设置您想要查找的文本以及要替换的文本。
+1. 加载 PDF 文档。
+1. 创建 Text Absorber。TextFragmentAbsorber 使用搜索短语进行初始化。它扫描文档中所有给定短语的实例。
+1. 将吸收器应用于所有页面。这将在所有页面上遍历并收集与该短语匹配的文本片段。
+1. 替换每个找到的片段。每个出现的“Black cat”都应更改为“White dog”。
+1. 保存已更新的 PDF。
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
+def replace_text_on_all_pages(infile, outfile):
+    search_phrase = "PDF"
+    replace_phrase = "pdf"
 
-    # 打开文档
-    document = ap.Document(input_pdf)
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
+        document.pages.accept(absorber)
 
-    # 创建 TextAbsorber 对象以查找输入搜索短语的所有实例
-    absorber = ap.text.TextFragmentAbsorber("format")
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
 
-    # 接受所有页面的吸收器
+        document.save(outfile)
+```
+
+### 在特定页面区域替换文本
+
+有时，您可能只需要在 PDF 页面中的特定区域内替换文本，而不是搜索整个文档——例如，更新已知位置的页眉、页脚或表格单元格。
+
+Aspose.PDF for Python via .NET 库通过利用实现此功能 [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) 与基于区域的文本搜索相结合。
+
+本示例演示了如何在特定页面的指定矩形区域内查找并替换目标短语的所有出现。
+
+1. 指定搜索和替换短语。
+1. 加载 PDF 文档。
+1. 创建一个 Text Absorber 用于搜索。初始化一个 TextFragmentAbsorber 来查找所需的文本。
+1. 限制搜索区域。矩形指定页面上的 x 和 y 坐标限制。
+1. 将 Absorber 应用于特定页面。这将在指定区域执行搜索并收集匹配的文本片段。
+1. 替换已找到的文本。 在定义的区域内，所有出现的 'doc' 都将变为 'DOC'。
+1. 保存已更新的 PDF。
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_in_particular_page_region(infile, outfile):
+    search_phrase = "doc"
+    replace_phrase = "DOC"
+
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
+        absorber.text_search_options.limit_to_page_bounds = True
+        absorber.text_search_options.rectangle = ap.Rectangle(300, 442, 500, 742, True)
+        document.pages[1].accept(absorber)
+
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
+
+        document.save(outfile)
+```
+
+### 在不更改字体大小的情况下调整和移动文本
+
+在 PDF 中替换文本时，有时您希望在不修改字体大小的情况下，将新文本适配或重新定位到特定区域内。
+Aspose.PDF for Python via .NET 提供了在保持原始字体大小不变的情况下调整文本布局和间距的选项。
+
+1. 加载 PDF 文档。
+1. 使用 'TextFragmentAbsorber' 收集页面上的所有文本片段。
+1. 选择要修改的片段。
+1. 平移并调整文本矩形的大小。
+1. 调整文字间距。启用间距调整以使文本适应修改后的矩形。
+1. 替换片段文本。
+1. 保存已更新的 PDF。
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = fragment.rectangle
+        rect.llx += 50
+        rect.urx -= 50
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### 在 PDF 中调整段落大小并移动
+
+在处理 PDF 时，有时需要替换或扩展段落，同时保持其在页面布局中的视觉对齐。Aspose.PDF 允许您调整段落的边界矩形大小并调整间距以适应新文本，且无需更改字体大小。
+
+1. 加载 PDF 文档。
+1. 使用 'TextFragmentAbsorber' 收集页面上的所有文本片段。
+1. 选择要修改的片段。
+1. 调整段落的大小和位置。使用页面的媒体框来确定边界并调整矩形。
+1. 调整间距。此操作修改单词/字母之间的间距，而不是更改字体大小。
+1. 替换片段文本。
+1. 保存已修改的 PDF。
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_shift_paragraph(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = document.pages[1].media_box
+        rect.llx += 20
+        rect.urx -= 20
+        rect.ury -= 20
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### 替换文本并自动扩展字体以填满目标区域
+
+在 PDF 中替换文本，同时自动调整大小并扩展字体以填满特定的矩形区域。使用 Aspose.PDF for Python via .NET 库，代码会动态调整字体大小和间距，使新文本内容恰好适配定义的边界框 —​— 无需手动计算字体。
+
+1. 加载 PDF。
+1. 捕获文本片段。
+1. 选择特定片段。
+1. 定义目标矩形。
+1. 启用文本调整选项。
+1. 替换文本。
+1. 保存文档。
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_resize_and_expand_font(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = ap.Rectangle(100, 300, 512, 692, True)
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SCALE_TO_FILL
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### 替换文本并将其适配到矩形中
+
+在 PDF 文档中替换文本，同时通过在需要时自动减小字体大小，确保新内容适应原始文本的矩形区域。
+
+使用 Aspose.PDF for Python via .NET 库，此函数动态调整文本布局和字体大小，保留文档结构并防止溢出。
+
+1. 创建一个 TextFragmentAbsorber 对象以提取第一页中的所有文本片段。
+1. 访问特定文本片段。
+1. 设置替换区域。
+1. 配置文本调整选项。设置两个关键的替换选项：
+    - 字体大小调整 - 'SHRINK_TO_FIT' 如果新文本太长，将自动减少字体大小。
+    - 间距调整 - 'ADJUST_SPACE_WIDTH' 保持间距比例。
+1. 替换文本。
+1. 保存已修改的 PDF。
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def replace_text_and_fit_text_into_rectangle(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = fragment.rectangle
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SHRINK_TO_FIT
+        )
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### 自动替换占位符文本并重新排列 PDF 布局
+
+将 PDF（例如模板或表单）中的占位符文本替换为实际数据，例如姓名或公司信息。
+它会自动调整页面布局以适应新文本，同时应用自定义格式（字体、颜色、大小）。
+
+1. 导入并加载 PDF。
+1. 为占位符创建 Text Absorber。
+1. 将吸收器应用于所有页面。
+1. 遍历已找到的 TextFragment。
+1. 应用自定义文本格式化。
+1. 保存已更新的文档。
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+
+def automatically_rearrange_page_contents(input_file, output_file):
+    document = ap.Document(input_file)
+
+    absorber = ap.text.TextFragmentAbsorber("[Long_placeholder_Long_placeholder]")
     document.pages.accept(absorber)
 
-    # 获取提取的文本片段
-    collection = absorber.text_fragments
+    for text_fragment in absorber.text_fragments:
+        # text_fragment.text = "John Smith"
+        text_fragment.text = "John Smith, South Development Studio"
+        text_fragment.text_state.font = ap.text.FontRepository.find_font("Calibri")
+        text_fragment.text_state.font_size = 12
+        text_fragment.text_state.foreground_color = ap.Color.navy
 
-    # 遍历片段
-    for text_fragment in collection:
-        # 更新文本和其他属性
-        text_fragment.text = "FORMAT"
-        text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
-        text_fragment.text_state.font_size = 22
-        text_fragment.text_state.foreground_color = ap.Color.blue
-        text_fragment.text_state.background_color = ap.Color.green
-
-    # 保存文档
-    document.save(output_pdf)
+    # Save PDF document
+    document.save(output_file)
 ```
 
+### 基于正则表达式替换文本
 
-## 替换特定页面区域的文本
+在处理 PDF 文档时，您可能需要替换符合特定模式的文本，而不是特定的短语——例如，电话号码、代码或类似日期的格式。
 
-为了替换特定页面区域的文本，首先，我们需要实例化 TextFragmentAbsorber 对象，使用 TextSearchOptions.Rectangle 属性指定页面区域，然后遍历所有的 TextFragments 来替换文本。一旦这些操作完成，我们只需使用 Document 对象的 Save 方法保存输出 PDF。以下代码片段展示了如何替换 PDF 文档所有页面的文本。
+Aspose.PDF for Python via .NET 允许您使用 TextFragmentAbsorber 类结合正则表达式（regex）执行此类替换。
+
+本示例演示了如何查找文本模式（在本例中，匹配格式 ####-#### 的任意文本，例如 1234-5678），并将其替换为格式化字符串 'ABC1-2XZY'。它还展示了如何自定义替换后文本的字体、颜色和大小。
+
+以下代码片段向您展示如何基于正则表达式替换文本。
+
+1. 加载 PDF 文档。
+1. 创建一个基于正则表达式的 Text Absorber。使用正则表达式模式初始化 TextFragmentAbsorber。
+1. 启用正则表达式模式。'True' 参数激活正则表达式搜索模式。
+1. 将 Absorber 应用于页面。此操作会扫描页面中所有匹配定义的正则表达式模式的文本片段。
+1. 将每个匹配项替换为新文本并应用自定义样式。
+1. 保存已修改的文档。
 
 ```python
-// 加载 PDF 文件
-Aspose.PDF.Document pdf = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 实例化 TextFragment Absorber 对象
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
+def replace_text_based_on_regex(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(r"\d{4}-\d{4}")
+        absorber.text_search_options = ap.text.TextSearchOptions(True)
+        document.pages[1].accept(absorber)
 
-// 在页面边界内搜索文本
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
+        for fragment in absorber.text_fragments:
+            fragment.text = "ABC1-2XZY"
+            fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+            fragment.text_state.font_size = 12
+            fragment.text_state.foreground_color = ap.Color.blue
+            fragment.text_state.background_color = ap.Color.light_green
 
-// 为 TextSearch Options 指定页面区域
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
-
-// 从 PDF 文件的第一页搜索文本
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
-
-// 遍历每个 TextFragment
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-{
-    // 将文本更新为空字符
-    tf.Text = "";
-}
-
-// 在文本替换后保存更新的 PDF 文件
-pdf.Save("c:/pdftest/TextUpdated.pdf");
+        document.save(outfile)
 ```
 
+## 替换字体或移除未使用的字体
 
-## 根据正则表达式替换文本
+### 替换现有 PDF 文件中的字体
 
-如果你想根据正则表达式替换一些短语，你首先需要使用 TextFragmentAbsorber 找到所有匹配该正则表达式的短语。你需要将正则表达式作为参数传递给 TextFragmentAbsorber 构造函数。你还需要创建一个 TextSearchOptions 对象，以指定是否使用正则表达式。一旦在 TextFragments 中获得匹配的短语，你需要遍历它们并根据需要进行更新。最后，你需要使用 Document 对象的 Save 方法保存更新后的 PDF。以下代码片段展示了如何根据正则表达式替换文本。
+有时，您需要在 PDF 中统一或更新字体——例如，将过时或专有的字体替换为更易获取的字体。Aspose.PDF for Python via .NET 库允许您以编程方式检测和替换字体，确保排版一致性和文档兼容性。
+
+此示例演示如何在 PDF 文档中将所有特定字体（例如 'Arial-BoldMT'）替换为另一种字体（例如 'Verdana'）。
+
+以下代码片段展示了如何替换 PDF 文档中的字体：
+
+1. 打开 PDF 文档。
+1. 初始化 TextFragmentAbsorber。
+1. 使用 Absorber 从文档的每一页中提取文本片段。
+1. 识别并替换字体。脚本检查片段的当前字体是否为 'Arial-BoldMT'。如果为真，它使用 FontRepository.find_font() 方法将其替换为 'Verdana' 字体。
+1. 保存已修改的文档。
 
 ```python
-// 对于完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 打开文档
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
+def replace_fonts(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        document.pages.accept(absorber)
 
-// 创建 TextAbsorber 对象以查找所有匹配正则表达式的短语
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // 如 1999-2000
+        for fragment in absorber.text_fragments:
+            if fragment.text_state.font.font_name == "Arial-BoldMT":
+                fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
 
-// 设置文本搜索选项以指定正则表达式的使用
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
-
-// 接受单页的吸收器
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
-
-// 获取提取的文本片段
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// 遍历片段
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // 更新文本和其他属性
-    textFragment.Text = "New Phrase";
-    // 设置为对象的实例。
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
+        document.save(outfile)
 ```
 
+### 删除未使用的字体
 
-## 在现有 PDF 文件中替换字体
+随着时间的推移，PDF 文档可能会累积未使用或已嵌入的字体，这会增加文件大小并减慢处理速度。这些未使用的字体即使在文本编辑或替换后仍然存在，尤其是在处理大型或复杂的 PDF 时。
 
-Aspose.PDF for Python via .NET 支持在 PDF 文档中替换文本的功能。然而，有时您可能只需要替换 PDF 文档中使用的字体。因此，不是替换文本，而是仅替换使用的字体。TextFragmentAbsorber 构造函数的一个重载接受 TextEditOptions 对象作为参数，我们可以使用 TextEditOptions.FontReplace 枚举中的 RemoveUnusedFonts 值来实现我们的要求。以下代码段显示如何替换 PDF 文档中的字体。
+Aspose.PDF for Python via .NET 库提供了一种高效的方法，可使用 TextEditOptions 类删除此类冗余字体。这不仅优化了您的文档，还确保仅使用实际应用于可见文本的字体。
+
+‘remove_unused_fonts()’ 方法是一种简单而强大的方式，通过移除冗余的字体数据来优化 PDF 文件。
+
+本示例演示如何：
+
+- 扫描 PDF 中未使用的字体。
+- 安全地删除它们。
+- 将活动文本片段重新分配为一致的字体（例如，Times New Roman）。
+
+1. 打开 PDF 文档。
+1. 配置文本编辑选项。这指示引擎删除当前在可见文本中未使用的任何嵌入字体。
+1. 创建带有选项的 Text Absorber。TextFragmentAbsorber 用于从文档中提取文本片段以进行编辑。
+1. 重新分配标准字体。一旦吸收器收集了所有片段，遍历它们并应用统一的字体。
+1. 保存清理后的 PDF。
 
 ```python
-// 有关完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 加载源 PDF 文件
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
-// 搜索文本片段并将编辑选项设置为删除未使用的字体
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
+def remove_unused_fonts(input_file, output_file):
+    # Open PDF document
+    document = ap.Document(input_file)
 
-// 接受所有页面的吸收器
-pdfDocument.Pages.Accept(absorber);
-// 遍历所有的 TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    // 如果字体名称是 ArialMT，替换字体名称为 Arial
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
-    {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    }
+    # Initialize text edit options to remove unused fonts
+    options = ap.text.TextEditOptions(
+        ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS
+    )
 
-}
+    # Create a TextFragmentAbsorber with the specified options
+    absorber = ap.text.TextFragmentAbsorber(options)
+    document.pages.accept(absorber)
 
-dataDir = dataDir + "ReplaceFonts_out.pdf";
-// 保存更新后的文档
-pdfDocument.Save(dataDir);
+    # Iterate through all TextFragments
+    for text_fragment in absorber.text_fragments:
+        text_fragment.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
+
+    # Save the updated PDF document
+    document.save(output_file)
 ```
 
+## 删除所有文本
 
-## 文本替换应自动重新排列页面内容
+### 从 PDF 中移除文本
 
-Aspose.PDF for Python via .NET 支持在 PDF 文件内搜索和替换文本的功能。然而，最近一些客户在文本替换过程中遇到了问题，当特定的 TextFragment 被替换为较小的内容时，生成的 PDF 中会显示一些额外的空格，或者在 TextFragment 被替换为较长的字符串时，单词会与现有的页面内容重叠。因此，需要引入一种机制，一旦 PDF 文档中的文本被替换，内容应该重新排列。
+从 PDF 文件中删除所有文本内容，同时保持图像、形状和布局结构完整。
+通过使用 TextFragmentAbsorber，代码高效地扫描整个文档，并删除每页上找到的所有文本片段。
 
-为了应对上述情况，Aspose.PDF for Python via .NET 已经得到增强，以便在 PDF 文件内部替换文本时不会出现此类问题。以下代码片段展示了如何在 PDF 文件内替换文本，并且页面内容应自动重新排列。
+1. 加载 PDF 文档。
+1. 创建了一个 TextFragmentAbsorber 对象，用于检测和处理 PDF 中的文本片段。
+1. 移除所有文本内容。方法 'absorber.remove_all_text()' 从已加载的文档中删除每个文本元素，保留非文本组件不变。
+1. 保存已更新的文档。
 
 ```python
-// 有关完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 加载源 PDF 文件
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
-// 创建带有正则表达式的 TextFragment 吸收器对象
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
-// 替换每个 TextFragment
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
-{
-    // 设置被替换文本片段的字体
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // 设置字体大小
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // 用比占位符更长的字符串替换文本
-    textFragment.Text = "This is a Larger String for the Testing of this issue";
-}
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
-// 保存生成的 PDF
-doc.Save(dataDir);
+def remove_all_text_using_absorber1(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document)
+        document.save(outfile)
 ```
 
+### 删除特定页面上的所有文本
 
-## PDF 创建过程中渲染可替换符号
+使用 Aspose.PDF 中的 TextFragmentAbsorber 类从 PDF 文档的单页中删除所有文本。
+与完整文档的删除不同，此方法执行页面级文本清理，仅从所选页面删除文本，其他页面保持不变。
 
-可替换符号是在文本字符串中可以在运行时用相应内容替换的特殊符号。Aspose.PDF 命名空间的新文档对象模型目前支持的可替换符号有 `$P`、`$p`、`\n`、`\r`。 `$p` 和 `$P` 用于在运行时处理页码。`$p` 被替换为当前段落类所在页面的页码。`$P` 被替换为文档中的总页数。当将 `TextFragment` 添加到 PDF 文档的段落集合中时，它不支持文本内的换行。然而，为了添加带有换行的文本，请使用带有 `TextParagraph` 的 `TextFragment`：
-
-- 在 TextFragment 中使用 "\r\n" 或 Environment.NewLine 替代单独的 "\n";
-- 创建一个 TextParagraph 对象。它将添加带有分行的文本；
-- 使用 TextParagraph.AppendLine 添加 TextFragment；
-- 使用 TextBuilder.AppendParagraph 添加 TextParagraph。
+1. 加载 PDF 文件。
+1. 创建一个 TextFragmentAbsorber 实例。
+1. 从第一页删除所有文本。
+1. 保存已修改的 PDF。
 
 ```python
-// 有关完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
-
-// 使用包含所需换行符的文本初始化新的 TextFragment
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
-
-// 如果需要，设置文本片段属性
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-
-// 创建 TextParagraph 对象
-TextParagraph par = new TextParagraph();
-
-// 将新的 TextFragment 添加到段落中
-par.AppendLine(textFragment);
-
-// 设置段落位置
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
-
-// 创建 TextBuilder 对象
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// 使用 TextBuilder 添加 TextParagraph
-textBuilder.AppendParagraph(par);
-
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
+def remove_all_text_using_absorber2(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document.pages[1])
+        document.save(outfile)
 ```
 
+### 从 PDF 页面上的特定区域删除所有文本
 
-## 页眉/页脚区域中的可替换符号
+使用 Aspose.PDF 的 TextFragmentAbsorber 从页面的特定矩形区域中删除所有文本。
+此方法并非清除整页，而是执行针对性的文本删除，能够精确控制受影响的页面部分。
 
-可替换符号也可以放置在 PDF 文件的页眉/页脚部分。请查看以下代码片段，了解如何在页脚部分添加可替换符号的详细信息。
+1. 加载 PDF 文档。
+1. 创建一个 TextFragmentAbsorber。
+1. 定义目标区域（矩形）。
+1. 从指定区域删除文本。
+1. 保留文档的其余部分。
+1. 保存已修改的 PDF。
 
 ```python
-// 有关完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
-
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// 将 marginInfo 实例分配给 sec1.PageInfo 的 Margin 属性
-page.PageInfo.Margin = marginInfo;
-
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
-
-// 实例化一个文本段落来存储要显示为页眉的内容
-TextFragment t1 = new TextFragment("报表标题");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
-
-TextFragment t2 = new TextFragment("报表名称");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
-
-// 为该部分创建一个 HeaderFooter 对象
-HeaderFooter hfFoot = new HeaderFooter();
-// 设置 HeaderFooter 对象为奇偶页脚
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
-
-// 添加一个包含当前页码和总页数的文本段落
-TextFragment t3 = new TextFragment("生成于测试日期");
-TextFragment t4 = new TextFragment("报表名称");
-TextFragment t5 = new TextFragment("第 $p 页 共 $P 页");
-
-// 实例化一个表对象
-Table tab2 = new Table();
-
-// 将表添加到所需部分的段落集合中
-hfFoot.Paragraphs.Add(tab2);
-
-// 设置表的列宽
-tab2.ColumnWidths = "165 172 165";
-
-// 在表中创建行，然后在行中创建单元格
-Row row3 = tab2.Rows.Add();
-
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
-
-// 将文本的垂直对齐设置为居中对齐
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
-
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
-
-// Sec1.Paragraphs.Add(New Text("Aspose.Total for Java 是 Aspose 提供的每个 Java 组件的汇编。它每天编译一次，以确保它包含我们每个 Java 组件的最新版本。 使用 Aspose.Total for Java 开发人员可以创建各种应用程序。 Aspose.Total for Java 是 Aspose 提供的每个 Java 组件的汇编。它每天编译一次，以确保它包含我们每个 Java 组件的最新版本。 使用 Aspose.Total for Java 开发人员可以创建各种应用程序。 Aspose.Total for Java 是 Aspose 提供的每个 Java 组件的汇编。它每天编译一次，以确保它包含我们每个 Java 组件的最新版本。 使用 Aspose.Total for Java 开发人员可以创建各种应用程序。"))
-Table table = new Table();
-
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
-
-// 将表添加到所需部分的段落集合中
-page.Paragraphs.Add(table);
-
-// 使用 BorderInfo 对象设置默认单元格边框
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
-
-// 使用另一个自定义 BorderInfo 对象设置表边框
-table.Border = new BorderInfo(BorderSide.All, 1f);
-
-table.RepeatingRowsCount = 1;
-
-// 在表中创建行，然后在行中创建单元格
-Row row1 = table.Rows.Add();
-
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add("col3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
-{
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-            c1 = row.Cells.Add("Aspose.Total for Java 是 Aspose 提供的每个 Java 组件的汇编。它每天编译一次，以确保它包含我们每个 Java 组件的最新版本。 " + CRLF + "每天编译一次，以确保它包含我们每个 Java 组件的最新版本。 " + CRLF + "使用 Aspose.Total for Java 开发人员可以创建各种应用程序。");
-        else
-            c1 = row.Cells.Add("item1" + c);
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
-    }
-}
-
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
+def remove_all_text_using_absorber3(infile, outfile):
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(
+            document.pages[1], ap.Rectangle(10, 200, 120, 600, True)
+        )
+        document.save(outfile)
 ```
 
+### 从 PDF 文档中删除所有隐藏的文本
 
-## 从 PDF 文件中移除未使用的字体
+使用 Aspose.PDF 的 TextFragmentAbsorber 从页面的特定矩形区域中删除所有文本。
+此方法并非清除整页，而是执行针对性的文本删除，能够精确控制受影响的页面部分。
 
-Aspose.PDF for Python via .NET 支持在创建 PDF 文档时嵌入字体的功能，也支持在现有 PDF 文件中嵌入字体。从 Aspose.PDF for Python via .NET 7.3.0 开始，它还允许您从 PDF 文档中移除重复或未使用的字体。
-
-要替换字体，请使用以下方法：
-
-1. 调用 [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber) 类。
-1. 调用 TextFragmentAbsorber 类的 TextEditOptions.FontReplace.RemoveUnusedFonts 参数。（这将移除在字体替换过程中变得未使用的字体）。
-1. 为每个文本片段单独设置字体。
-
-以下代码片段替换所有文档页面中所有文本片段的字体，并移除未使用的字体。
+1. 加载 PDF 文档。
+1. 创建一个 TextFragmentAbsorber。
+1. 定义目标区域（矩形）。
+1. 从指定区域删除文本。
+1. 保留文档的其余部分。
+1. 保存已修改的 PDF。
 
 ```python
-// 有关完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import sys
+import aspose.pdf as ap
+from os import path
 
-// 加载源 PDF 文件
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
-
-// 遍历所有的 TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
-}
-
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
-// 保存更新后的文档
-doc.Save(dataDir);
+def remove_hidden_text(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        text_absorber = ap.text.TextFragmentAbsorber()
+        # This option can be used to prevent other text fragments from moving after hidden text replacement
+        text_absorber.text_replace_options = ap.text.TextReplaceOptions(
+            ap.text.TextReplaceOptions.ReplaceAdjustment.NONE
+        )
+        document.pages.accept(text_absorber)
+        # Remove hidden text
+        for fragment in text_absorber.text_fragments:
+            if fragment.text_state.invisible:
+                fragment.text = ""
+        # Save PDF document
+        document.save(outfile)
 ```
 
+## 相关文本主题
 
-## 从 PDF 文档中删除所有文本
-
-### 使用运算符删除所有文本
-
-在某些文本操作中，您需要从 PDF 文档中删除所有文本，为此，通常需要将找到的文本设为空字符串。关键是更改多个文本片段的文本会引发大量的检查和文本位置调整操作。它们在文本编辑场景中是必不可少的。困难在于您无法确定在循环处理中场景中将删除多少文本片段。
-
-因此，我们建议在从 PDF 页面中删除所有文本的场景中使用另一种方法。请参考以下代码片段，它的工作速度非常快。
-
-```python
-// 有关完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// 打开文档
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
-// 遍历 PDF 文档的所有页面
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
-{
-    Page page = pdfDocument.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
-    // 选择页面上的所有文本
-    page.Contents.Accept(operatorSelector);
-    // 删除所有文本
-    page.Contents.Delete(operatorSelector.Selected);
-}
-// 保存文档
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
-```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 操作库 for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [使用 Python 在 PDF 中处理文本](/pdf/zh/python-net/working-with-text/)
+- [向 PDF 添加文本](/pdf/zh/python-net/add-text-to-pdf-file/)
+- [在 Python 中搜索并提取 PDF 文本](/pdf/zh/python-net/search-and-get-text-from-pdf/)
+- [在 Python 中格式化 PDF 文本](/pdf/zh/python-net/text-formatting-inside-pdf/)

@@ -1,5 +1,6 @@
 ---
 title: Install to Report Server
+linktitle: Install to Report Server
 type: docs
 weight: 10
 url: /reportingservices/install-to-report-server/

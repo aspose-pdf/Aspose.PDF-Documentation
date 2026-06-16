@@ -1,5 +1,5 @@
 ---
-title: Persyaratan Sistem 
+title: Persyaratan Sistem
 linktitle: Persyaratan Sistem
 type: docs
 weight: 30

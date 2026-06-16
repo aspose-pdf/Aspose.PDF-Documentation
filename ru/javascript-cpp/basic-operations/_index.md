@@ -1,5 +1,5 @@
 ---
-title: Основные операции с PDF с помощью Aspose.PDF для JavaScript через C++ 
+title: Основные операции с PDF с помощью Aspose.PDF для JavaScript через C++
 linktitle: Основные операции
 type: docs
 weight: 40

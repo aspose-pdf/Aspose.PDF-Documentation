@@ -1,5 +1,6 @@
 ---
-title: Adding Scripts and Submit Actions
+title: Adding Scripts and Submit Actions
+linktitle: Adding Scripts and Submit Actions
 type: docs
 weight: 40
 url: /python-net/adding-scripts-and-submit-actions/

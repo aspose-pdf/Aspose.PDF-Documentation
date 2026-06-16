@@ -1,5 +1,6 @@
 ---
 title: Table of Contents List of Tables or Figures
+linktitle: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
 url: /reportingservices/table-of-contents-list-of-tables-or-figures/

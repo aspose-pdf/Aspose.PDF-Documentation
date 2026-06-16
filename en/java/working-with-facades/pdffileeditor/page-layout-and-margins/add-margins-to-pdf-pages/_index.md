@@ -1,5 +1,6 @@
 ---
 title: Add Margins to PDF Pages
+linktitle: Add Margins to PDF Pages
 type: docs
 weight: 10
 url: /java/add-margins-to-pdf-pages/

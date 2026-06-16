@@ -1,235 +1,122 @@
 ---
-title: Formatting PDF Document menggunakan Python
-linktitle: Formatting PDF Document
+title: Format Dokumen PDF di Python
+linktitle: Memformat Dokumen PDF
 type: docs
 weight: 11
 url: /id/python-net/formatting-pdf-document/
-description: Buat dan format Dokumen PDF dengan Aspose.PDF untuk Python via .NET. Gunakan cuplikan kode berikut untuk menyelesaikan tugas Anda.
-lastmod: "2023-04-12"
+description: Pelajari cara memformat dokumen PDF, menyematkan font, mengontrol pengaturan penampil, dan menyesuaikan opsi tampilan di Python.
+lastmod: "2026-06-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Memformat dokumen PDF menggunakan Python
+Abstract: Artikel ini menyediakan panduan komprehensif tentang memanipulasi dan memformat dokumen PDF menggunakan pustaka Aspose.PDF dalam Python. Artikel ini mencakup berbagai aspek kustomisasi PDF, termasuk pengaturan jendela dokumen dan properti tampilan halaman seperti memusatkan jendela, arah bacaan, dan menyembunyikan elemen UI. Artikel menjelaskan cara mengambil dan mengatur properti ini secara programatis menggunakan kelas `Document`. Selain itu, artikel membahas manajemen font, merinci cara menyematkan font Standard Type 1 dan font lain ke dalam PDF, memastikan portabilitas dokumen dan konsistensi visual di seluruh sistem. Artikel juga menyoroti teknik untuk mengatur nama font default, mengambil semua font dari PDF, dan meningkatkan penyematan font menggunakan `FontSubsetStrategy`. Selanjutnya, artikel menjelaskan penyesuaian faktor zoom dokumen PDF menggunakan kelas `GoToAction` dan mengonfigurasi properti preset dialog cetak, termasuk opsi pencetakan dupleks. Potongan kode menyertai setiap bagian, memberikan contoh praktis untuk mengimplementasikan fitur-fitur ini.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Formatting PDF Document menggunakan Python",
-    "alternativeHeadline": "Cara memformat Dokumen PDF di Python melalui .NET",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, dotnet, python, format dokumen pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "AS",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/formatting-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/formatting-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Buat dan format Dokumen PDF dengan Aspose.PDF untuk Python via .NET. Gunakan cuplikan kode berikut untuk menyelesaikan tugas Anda."
-}
-</script>
 
+Panduan ini berguna ketika Anda perlu mengontrol perilaku penampil PDF, penyematan font, pengaturan tampilan default, atau preferensi pencetakan dalam dokumen yang dihasilkan oleh Python.
 
-## Formatting PDF Document
+## Memformat Dokumen PDF
 
-### Mendapatkan Properti Jendela Dokumen dan Tampilan Halaman
+### Dapatkan Properti Jendela Dokumen dan Tampilan Halaman
 
-Topik ini membantu Anda memahami cara mendapatkan properti dari jendela dokumen, aplikasi penampil, dan bagaimana halaman ditampilkan. Untuk mengatur properti ini:
+Topik ini membantu Anda memahami cara mendapatkan properti jendela dokumen, aplikasi penampil, dan bagaimana halaman ditampilkan. Untuk mengatur properti ini:
 
-Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Sekarang, Anda dapat mengatur properti objek Document, seperti
+Buka file PDF menggunakan [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) kelas. Sekarang, Anda dapat mengatur properti objek Document, seperti
 
-- CenterWindow – Memusatkan jendela dokumen di layar. Default: false.
-- Direction – Urutan membaca. Ini menentukan bagaimana halaman diatur saat ditampilkan berdampingan. Default: kiri ke kanan.
-- DisplayDocTitle – Menampilkan judul dokumen di bilah judul jendela dokumen. Default: false (judul ditampilkan).
-- HideMenuBar – Menyembunyikan atau menampilkan bilah menu jendela dokumen. Default: false (bilah menu ditampilkan).
-- HideToolBar – Menyembunyikan atau menampilkan bilah alat jendela dokumen. Default: false (bilah alat ditampilkan).
-- HideWindowUI – Menyembunyikan atau menampilkan elemen jendela dokumen seperti bilah gulir.
-  Default: false (elemen UI ditampilkan).
-- NonFullScreenPageMode – Bagaimana dokumen ditampilkan ketika tidak dalam mode layar penuh.
+- CenterWindow – Pusatkan jendela dokumen pada layar. Default: false.
+- Direction – Urutan membaca. Ini menentukan bagaimana halaman ditata ketika ditampilkan berdampingan. Default: kiri ke kanan.
+- DisplayDocTitle – Tampilkan judul dokumen di bilah judul jendela dokumen. Default: false (judul ditampilkan).
+- HideMenuBar – Sembunyikan atau tampilkan bilah menu jendela dokumen. Default: false (bilah menu ditampilkan).
+- HideToolBar – Sembunyikan atau tampilkan toolbar jendela dokumen. Default: false (toolbar ditampilkan).
+- HideWindowUI – Sembunyikan atau tampilkan elemen jendela dokumen seperti bilah gulir. Default: false (elemen UI ditampilkan).
+- NonFullScreenPageMode – Bagaimana dokumen ketika tidak ditampilkan dalam mode halaman penuh.
 - PageLayout – Tata letak halaman.
-- PageMode – Bagaimana dokumen ditampilkan ketika pertama kali dibuka. Opsi termasuk menampilkan thumbnail, layar penuh, menampilkan panel lampiran.
+- PageMode – Bagaimana dokumen ditampilkan saat pertama kali dibuka. Pilihannya adalah tampilkan thumbnail, layar penuh, tampilkan panel lampiran.
 
-Cuplikan kode berikut menunjukkan cara mendapatkan properti menggunakan kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+Potongan kode berikut menunjukkan cara Anda mendapatkan properti menggunakan [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) kelas.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Buka dokumen
+def get_document_window(input_pdf, output_pdf):
+    """Print document window metadata for inspection."""
     document = ap.Document(input_pdf)
 
-    # Dapatkan berbagai properti dokumen
-    # Posisi jendela dokumen - Default: false
-    print("CenterWindow :", document.center_window)
-
-    # Urutan membaca yang dominan; menentukan posisi halaman
-    # Ketika ditampilkan berdampingan - Default: L2R
-    print("Direction :", document.direction)
-
-    # Apakah bilah judul jendela harus menampilkan judul dokumen
-    # Jika false, bilah judul menampilkan nama file PDF - Default: false
-    print("DisplayDocTitle :", document.display_doc_title)
-
-    # Apakah ukuran jendela dokumen harus diubah untuk menyesuaikan ukuran
-    # Halaman pertama yang ditampilkan - Default: false
-    print("FitWindow :", document.fit_window)
-
-    # Apakah akan menyembunyikan bilah menu dari aplikasi penampil - Default: false
-    print("HideMenuBar :", document.hide_menubar)
-
-    # Apakah akan menyembunyikan bilah alat dari aplikasi penampil - Default: false
-    print("HideToolBar :", document.hide_tool_bar)
-
-    # Apakah akan menyembunyikan elemen UI seperti bilah gulir
-    # Dan hanya menampilkan konten halaman - Default: false
-    print("HideWindowUI :", document.hide_window_ui)
-
-    # Mode halaman dokumen. Cara menampilkan dokumen saat keluar dari mode layar penuh.
-    print("NonFullScreenPageMode :", document.non_full_screen_page_mode)
-
-    # Tata letak halaman yaitu satu halaman, satu kolom
-    print("PageLayout :", document.page_layout)
-
-    # Bagaimana dokumen harus ditampilkan saat dibuka
-    # Yaitu, menampilkan thumbnail, layar penuh, menampilkan panel lampiran
-    print("pageMode :", document.page_mode)
-
+    print("CenterWindow:", document.center_window)
+    print("Direction:", document.direction)
+    print("DisplayDocTitle:", document.display_doc_title)
+    print("FitWindow:", document.fit_window)
+    print("HideMenuBar:", document.hide_menubar)
+    print("HideToolBar:", document.hide_tool_bar)
+    print("HideWindowUI:", document.hide_window_ui)
+    print("NonFullScreenPageMode:", document.non_full_screen_page_mode)
+    print("PageLayout:", document.page_layout)
+    print("PageMode:", document.page_mode)
 ```
 
-### Setel Properti Jendela Dokumen dan Tampilan Halaman
+### Atur Jendela Dokumen dan Properti Tampilan Halaman
 
 Topik ini menjelaskan cara mengatur properti jendela dokumen, aplikasi penampil, dan tampilan halaman. Untuk mengatur properti yang berbeda ini:
 
-1. Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Buka file PDF menggunakan [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) kelas.
 1. Atur properti objek Document.
-1. Simpan file PDF yang telah diperbarui menggunakan metode save.
+1. Simpan file PDF yang diperbarui menggunakan metode save.
 
 Properti yang tersedia adalah:
 
-- CenterWindow
-- Direction
-- DisplayDocTitle
-- FitWindow
-- HideMenuBar
-- HideToolBar
-- HideWindowUI
-- NonFullScreenPageMode
-- PageLayout
-- PageMode
+- TengahJendela
+- Arah
+- TampilkanJudulDokumen
+- Sesuaikan Jendela
+- SembunyikanBilahMenu
+- SembunyikanToolbar
+- Sembunyikan UI Jendela
+- ModeHalamanNonLayarPenuh
+- Tata Letak Halaman
+- ModeHalaman
 
-Masing-masing digunakan dan dijelaskan dalam kode di bawah ini. Cuplikan kode berikut menunjukkan cara mengatur properti menggunakan kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+Setiapnya digunakan dan dijelaskan dalam kode di bawah ini. Potongan kode berikut - menunjukkan cara mengatur properti menggunakan [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) kelas.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Buka dokumen
+def set_document_window(input_pdf, output_pdf):
+    """Set document window properties and save the result."""
     document = ap.Document(input_pdf)
 
-    # Atur berbagai properti dokumen
-    # Tentukan untuk memposisikan jendela dokumen - Default: false
     document.center_window = True
-
-    # Urutan membaca yang dominan; menentukan posisi halaman
-    # Ketika ditampilkan berdampingan - Default: L2R
     document.direction = ap.Direction.R2L
-
-    # Tentukan apakah bilah judul jendela harus menampilkan judul dokumen
-    # Jika salah, bilah judul menampilkan nama file PDF - Default: false
     document.display_doc_title = True
-
-    # Tentukan apakah akan mengubah ukuran jendela dokumen agar sesuai dengan ukuran
-    # Halaman pertama yang ditampilkan - Default: false
     document.fit_window = True
-
-    # Tentukan apakah akan menyembunyikan bilah menu dari aplikasi penampil - Default: false
     document.hide_menubar = True
-
-    # Tentukan apakah akan menyembunyikan bilah alat dari aplikasi penampil - Default: false
     document.hide_tool_bar = True
-
-    # Tentukan apakah akan menyembunyikan elemen UI seperti bilah gulir
-    # Dan hanya menampilkan konten halaman - Default: false
     document.hide_window_ui = True
-
-    # Mode halaman dokumen. tentukan bagaimana menampilkan dokumen saat keluar dari mode layar penuh.
     document.non_full_screen_page_mode = ap.PageMode.USE_OC
-
-    # Tentukan tata letak halaman yaitu satu halaman, satu kolom
     document.page_layout = ap.PageLayout.TWO_COLUMN_LEFT
-
-    # Tentukan bagaimana dokumen harus ditampilkan saat dibuka
-    # Yaitu menampilkan thumbnail, layar penuh, menampilkan panel lampiran
     document.page_mode = ap.PageMode.USE_THUMBS
 
-    # Simpan file PDF yang telah diperbarui
     document.save(output_pdf)
 ```
 
+### Menyematkan Font Tipe 1 Standar
 
-### Menyematkan Font Standar Tipe 1
-
-Beberapa dokumen PDF memiliki font dari set font khusus Adobe. Font dari set ini disebut "Font Standar Tipe 1". Set ini mencakup 14 font dan menyematkan jenis font ini memerlukan penggunaan flag khusus yaitu [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). Berikut adalah potongan kode yang dapat digunakan untuk mendapatkan dokumen dengan semua font disematkan termasuk Font Standar Tipe 1:
+Beberapa dokumen PDF memiliki font dari satu set font khusus Adobe. Font dari set ini disebut “Standard Type 1 Fonts”. Set ini mencakup 14 font dan menyisipkan jenis font ini memerlukan penggunaan flag khusus yaitu [sematkan_font_standar](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). Berikut ini adalah potongan kode yang dapat digunakan untuk mendapatkan dokumen dengan semua font tersemat termasuk Standard Type 1 Fonts:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Memuat Dokumen PDF yang ada
+def embedded_fonts(input_pdf, output_pdf):
+    """Ensure fonts in an existing PDF are embedded."""
     document = ap.Document(input_pdf)
-    # Atur properti EmbedStandardFonts pada dokumen
     document.embed_standard_fonts = True
+
     for page in document.pages:
-        if page.resources.fonts != None:
+        if page.resources.fonts:
             for page_font in page.resources.fonts:
-                # Periksa apakah font sudah disematkan
                 if not page_font.is_embedded:
                     page_font.is_embedded = True
 
@@ -238,152 +125,132 @@ Beberapa dokumen PDF memiliki font dari set font khusus Adobe. Font dari set ini
 
 ### Menyematkan Font saat membuat PDF
 
-Jika Anda perlu menggunakan font selain dari 14 font inti yang didukung oleh Adobe Reader, Anda harus menyematkan deskripsi font saat membuat file PDF. Jika informasi font tidak disematkan, Adobe Reader akan mengambilnya dari Sistem Operasi jika sudah terinstal di sistem, atau akan membangun font pengganti sesuai dengan deskriptor font dalam PDF.
+Jika Anda perlu menggunakan font apa pun selain 14 font inti yang didukung oleh Adobe Reader, Anda harus menyematkan deskripsi font saat menghasilkan file PDF. Jika informasi font tidak disematkan, Adobe Reader akan mengambilnya dari Sistem Operasi jika font tersebut terpasang di sistem, atau akan membuat font pengganti sesuai dengan deskriptor font dalam PDF.
 
->Harap dicatat bahwa font yang disematkan harus diinstal pada mesin host yaitu dalam kasus kode berikut ini font 'Univers Condensed' diinstal di sistem.
+>Harap catat bahwa font yang disematkan harus diinstal pada mesin host, yaitu dalam kasus kode berikut ‘Univers Condensed’ font diinstal pada sistem.
 
-Kami menggunakan properti 'is_embedded' untuk menyematkan informasi font ke dalam file PDF. Mengatur nilai properti ini ke 'True' akan menyematkan file font lengkap ke dalam PDF, dengan mengetahui fakta bahwa itu akan meningkatkan ukuran file PDF. Berikut adalah potongan kode yang dapat digunakan untuk menyematkan informasi font ke dalam PDF.
+Kami menggunakan properti 'is_embedded' untuk menyematkan informasi font ke dalam file PDF. Menetapkan nilai properti ini ke 'True' akan menyematkan file font lengkap ke dalam PDF, dengan menyadari fakta bahwa hal itu akan meningkatkan ukuran file PDF. Berikut ini cuplikan kode yang dapat digunakan untuk menyematkan informasi font ke dalam PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Memulai objek Pdf dengan memanggil konstruktor kosongnya
-    doc = ap.Document()
-
-    # Buat sebuah bagian dalam objek Pdf
-    page = doc.pages.add()
+def embedded_fonts_in_new_document(input_pdf, output_pdf):
+    """Embed fonts while generating a document from scratch."""
+    document = ap.Document()
+    page = document.pages.add()
 
     fragment = ap.text.TextFragment("")
-    segment = ap.text.TextSegment(" Ini adalah teks sampel menggunakan font Kustom.")
-    ts = ap.text.TextState()
-    ts.font = ap.text.FontRepository.find_font("Arial")
-    ts.font.is_embedded = True
-    segment.text_state = ts
+    segment = ap.text.TextSegment(" This is a sample text using Custom font.")
+    text_state = ap.text.TextState()
+    text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_state.font.is_embedded = True
+    segment.text_state = text_state
     fragment.segments.append(segment)
     page.paragraphs.add(fragment)
 
-    # Simpan Dokumen PDF
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
-
 
 ### Atur Nama Font Default saat Menyimpan PDF
 
-Ketika dokumen PDF mengandung font yang tidak tersedia dalam dokumen itu sendiri dan pada perangkat, API mengganti font tersebut dengan font default. Jika font tersedia (terpasang pada perangkat atau tertanam dalam dokumen), PDF keluaran harus memiliki font yang sama (tidak boleh diganti dengan font default). Nilai dari font default harus mengandung nama font (bukan jalur ke file font). Kami telah mengimplementasikan fitur untuk mengatur nama font default saat menyimpan dokumen sebagai PDF. Potongan kode berikut dapat digunakan untuk mengatur font default:
+Ketika dokumen PDF berisi font yang tidak tersedia dalam dokumen itu sendiri maupun di perangkat, API menggantikan font tersebut dengan font default. Jika font tersedia (terpasang di perangkat atau disematkan ke dalam dokumen), PDF output harus menggunakan font yang sama (tidak boleh diganti dengan font default). Nilai font default harus berisi nama font (bukan jalur ke file font). Kami telah mengimplementasikan fitur untuk mengatur nama font default saat menyimpan dokumen sebagai PDF. Potongan kode berikut dapat digunakan untuk mengatur font default:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Muat dokumen PDF yang ada dengan font yang hilang
+def set_default_font(input_pdf, output_pdf):
+    """Assign a fallback font when saving a PDF."""
     document = ap.Document(input_pdf)
 
-    pdfSaveOptions = ap.PdfSaveOptions()
-    # Tentukan Nama Font Default
-    newName = "Arial"
-    pdfSaveOptions.default_font_name = newName
-    document.save(output_pdf, pdfSaveOptions)
+    save_options = ap.PdfSaveOptions()
+    save_options.default_font_name = "Arial"
+    document.save(output_pdf, save_options)
 ```
 
 ### Dapatkan Semua Font dari Dokumen PDF
 
-Jika Anda ingin mendapatkan semua font dari dokumen PDF, Anda dapat menggunakan metode [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) yang disediakan dalam kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
- Silakan periksa potongan kode berikut untuk mendapatkan semua font dari dokumen PDF yang ada:
+Jika Anda ingin mendapatkan semua font dari sebuah dokumen PDF, Anda dapat menggunakan [utilitas_font](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) metode yang disediakan dalam [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) kelas. Silakan periksa cuplikan kode berikut untuk mendapatkan semua font dari dokumen PDF yang ada:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    fonts = doc.font_utilities.get_all_fonts()
-    for font in fonts:
+def get_all_fonts(input_pdf, output_pdf):
+    """Print all fonts referenced by a document."""
+    document = ap.Document(input_pdf)
+    for font in document.font_utilities.get_all_fonts():
         print(font.font_name)
 ```
 
 ### Tingkatkan Penyematan Font menggunakan FontSubsetStrategy
 
-Potongan kode berikut menunjukkan cara mengatur [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) yang digunakan properti [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties):
+Snippet kode berikut menunjukkan cara mengatur [Strategi Subset Font](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) digunakan [utilitas_font](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) properti:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    # Semua font akan disematkan sebagai subset ke dalam dokumen jika SubsetAllFonts.
-    doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
-    # Subset font akan disematkan untuk font yang sepenuhnya disematkan tetapi font yang tidak disematkan ke dalam dokumen tidak akan terpengaruh.
-    doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY)
-    doc.save(output_pdf)
+def improve_fonts_embedding(input_pdf, output_pdf):
+    """Apply different font subset strategies to reduce file size."""
+    document = ap.Document(input_pdf)
+
+    document.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
+    document.font_utilities.subset_fonts(
+        ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY
+    )
+
+    document.save(output_pdf)
 ```
 
-### Dapatkan-Setel Faktor Zoom dari File PDF
+### Dapatkan-Setel Faktor Zoom File PDF
 
-Terkadang, Anda ingin menentukan berapa faktor zoom dokumen PDF saat ini. Dengan Aspose.Pdf, Anda dapat mengetahui nilai saat ini serta menetapkan satu.
+Kadang-kadang, Anda ingin menentukan faktor zoom saat ini dari sebuah dokumen PDF. Dengan Aspose.Pdf, Anda dapat mengetahui nilai saat ini serta menetapkan satu nilai baru.
 
-Properti Destinasi dari kelas [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) memungkinkan Anda untuk mendapatkan nilai zoom yang terkait dengan file PDF. Demikian pula, ini dapat digunakan untuk menetapkan faktor zoom sebuah file.
+The [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) properti Destination kelas memungkinkan Anda untuk mendapatkan nilai zoom yang terkait dengan file PDF. Demikian pula, dapat digunakan untuk mengatur faktor zoom sebuah file.
 
-#### Setel Faktor Zoom
+#### Atur faktor zoom
 
-Cuplikan kode berikut menunjukkan cara mengatur faktor zoom dari sebuah file PDF.
+Potongan kode berikut menunjukkan cara mengatur faktor zoom sebuah file PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Menginisialisasi objek Dokumen baru
-    doc = ap.Document(input_pdf)
+def set_zoom_factor(input_pdf, output_pdf):
+    """Set an initial zoom level via document open action."""
+    document = ap.Document(input_pdf)
 
-    action = ap.annotations.GoToAction(ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5))
-    doc.open_action = action
-    # Simpan dokumen
-    doc.save(output_pdf)
+    action = ap.annotations.GoToAction(
+        ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5)
+    )
+    document.open_action = action
+    document.save(output_pdf)
 ```
 
 #### Dapatkan Faktor Zoom
 
-Cuplikan kode berikut menunjukkan cara mendapatkan faktor zoom dari sebuah file PDF.
+Potongan kode berikut menunjukkan cara mendapatkan faktor zoom file PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # Menginisialisasi objek Dokumen baru
-    doc = ap.Document(input_pdf)
+def get_zoom_factor(input_pdf, output_pdf):
+    """Print the zoom level configured in the document open action."""
+    document = ap.Document(input_pdf)
 
-    # Buat objek GoToAction
-    action = doc.open_action
-
-    # Dapatkan faktor Zoom dari file PDF
-    print(action.destination.zoom)
+    action = document.open_action
+    if action and action.destination:
+        print("Zoom:", action.destination.zoom)
+    else:
+        print("Zoom: not set")
 ```
 
+## Topik Dokumen Terkait
 
-### Menyetel Properti Preset Dialog Cetak
-
-Aspose.PDF memungkinkan pengaturan anggota [DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members) dari dokumen PDF. Ini memungkinkan Anda mengubah properti DuplexMode untuk dokumen PDF yang diatur ke simplex secara default. Hal ini dapat dicapai menggunakan dua metodologi berbeda seperti yang ditunjukkan di bawah ini.
-
-```python
-
-    import aspose.pdf as ap
-
-    doc = ap.Document()
-    doc.pages.add()
-    doc.duplex = ap.PrintDuplex.DUPLEX_FLIP_LONG_EDGE
-    doc.save(output_pdf)
-```
-
-### Menyetel Properti Preset Dialog Cetak menggunakan Editor Konten PDF
-
-```python
-
-    import aspose.pdf as ap
-
-    ed = ap.facades.PdfContentEditor()
-    ed.bind_pdf(input_pdf)
-    if (ed.get_viewer_preference() & ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE) > 0:
-        print("File memiliki duplex flip short edge")
-
-    ed.change_viewer_preference(ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE)
-    ed.save(output_pdf)
-```
+- [Bekerja dengan dokumen PDF di Python](/pdf/id/python-net/working-with-documents/)
+- [Buat file PDF di Python](/pdf/id/python-net/create-pdf-document/)
+- [Manipulasi dokumen PDF dalam Python](/pdf/id/python-net/manipulate-pdf-document/)
+- [Optimalkan file PDF dalam Python](/pdf/id/python-net/optimize-pdf/)

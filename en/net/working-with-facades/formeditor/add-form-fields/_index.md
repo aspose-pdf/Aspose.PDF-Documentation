@@ -1,5 +1,6 @@
 ---
 title: Add PDF Form Fields
+linktitle: Add PDF Form Fields
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

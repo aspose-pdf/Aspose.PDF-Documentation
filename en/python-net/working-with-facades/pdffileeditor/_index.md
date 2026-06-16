@@ -1,5 +1,6 @@
 ---
-title: PdfFileEditor Class
+title: PdfFileEditor Class
+linktitle: PdfFileEditor Class
 type: docs
 weight: 10
 url: /python-net/pdffileeditor-class/

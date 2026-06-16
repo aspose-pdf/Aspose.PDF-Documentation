@@ -1,5 +1,5 @@
 ---
-title: Analyse des documents PDF 
+title: Analyse des documents PDF
 linktitle: Analyse des documents PDF
 type: docs
 weight: 60

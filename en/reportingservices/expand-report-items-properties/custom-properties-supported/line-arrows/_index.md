@@ -1,5 +1,6 @@
 ---
 title: Line Arrows
+linktitle: Line Arrows
 type: docs
 weight: 20
 url: /reportingservices/line-arrows/

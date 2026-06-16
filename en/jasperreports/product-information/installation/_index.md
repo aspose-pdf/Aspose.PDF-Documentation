@@ -1,5 +1,6 @@
 ---
 title: Install Aspose.PDF for JasperReports
+linktitle: Install Aspose.PDF for JasperReports
 type: docs
 weight: 50
 url: /jasperreports/installation/

@@ -1,5 +1,6 @@
 ---
 title: Using early binding in CPP
+linktitle: Using early binding in CPP
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask

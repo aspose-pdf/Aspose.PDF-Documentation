@@ -1,5 +1,5 @@
 ---
-title: PDF Липкие Аннотации 
+title: PDF Липкие Аннотации
 linktitle: Липкая Аннотация
 type: docs
 weight: 50

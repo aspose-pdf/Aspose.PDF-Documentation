@@ -209,7 +209,7 @@ Bagian ini menunjukkan langkah-langkah dasar untuk membuat anotasi 3D dalam doku
 
 Anotasi 3D ditambahkan menggunakan model yang dibuat dalam format U3D.
 
-1. Buat [Dokumen](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) baru
+1. Buat [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) baru
 1. Muat data model 3D yang diinginkan (dalam kasus kami "Ring.u3d") untuk membuat [PDF3DContent](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.p_d_f3_d_content/)
 1. Buat objek [3dArtWork](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.p_d_f3_d_artwork/) dan hubungkan ke dokumen dan 3DContent
 1. Sesuaikan objek pdf3dArtWork:

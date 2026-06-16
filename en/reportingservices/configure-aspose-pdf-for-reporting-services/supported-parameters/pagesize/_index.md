@@ -1,5 +1,6 @@
 ---
 title: PageSize
+linktitle: PageSize
 type: docs
 weight: 60
 url: /reportingservices/pagesize/

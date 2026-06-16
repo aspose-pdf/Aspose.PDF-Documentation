@@ -1,5 +1,6 @@
 ---
 title: Parameterized Report Support
+linktitle: Parameterized Report Support
 type: docs
 weight: 20
 url: /reportingservices/parameterized-report-support/

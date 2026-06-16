@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /ja/php-java/get-started/
 description: このセクションでは、APIの基本原則と使用法について説明します。また、PDFドキュメントを作成するための簡単かつ複雑な例を示します
-lastmod: "2024-06-05"   
-sitemap: 
+lastmod: "2024-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

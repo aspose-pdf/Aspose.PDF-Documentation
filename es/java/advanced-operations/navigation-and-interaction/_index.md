@@ -1,5 +1,5 @@
 ---
-title: Navegación e Interacción 
+title: Navegación e Interacción
 linktitle: Navegación e interacción
 type: docs
 weight: 90

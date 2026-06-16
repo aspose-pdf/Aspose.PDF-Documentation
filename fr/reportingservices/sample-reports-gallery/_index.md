@@ -1,5 +1,5 @@
 ---
-title: Sample Reports Gallery 
+title: Sample Reports Gallery
 type: docs
 weight: 40
 url: /fr/reportingservices/sample-reports-gallery/

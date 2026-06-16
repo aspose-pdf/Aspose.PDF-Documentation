@@ -1,5 +1,6 @@
 ---
-title: Features 
+title: Features
+linktitle: Features
 type: docs
 weight: 30
 url: /reportingservices/features/

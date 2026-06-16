@@ -1,12 +1,12 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
 url: /php-java/get-started/
 description: This section describes the basic principles of work and using API. Also demonstrates simple and complex examples for creating a PDF document
-lastmod: "2024-06-05"   
-sitemap: 
+lastmod: "2024-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

@@ -1,6 +1,6 @@
 ---
 
-title: Supported File Formats 
+title: Supported File Formats
 
 type: docs
 
@@ -9,7 +9,6 @@ weight: 20
 url: /id/jasperreports/supported-file-formats/
 
 lastmod: "2021-06-05"
-
 ---
 
 ## <ins>**Format Muat yang Didukung**

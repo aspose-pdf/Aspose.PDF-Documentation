@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Overview of Aspose.PDF for Go
 Abstract: Aspose.PDF for Go via C++ is a comprehensive library that enables developers to create, manipulate, and convert PDF documents programmatically. It offers a wide range of features, including document generation from scratch, text and image extraction, form handling, annotations, and digital signatures.
-SoftwareApplication: go-cpp    
+SoftwareApplication: go-cpp
 ---
 
 ## Aspose.PDF for Go via C++

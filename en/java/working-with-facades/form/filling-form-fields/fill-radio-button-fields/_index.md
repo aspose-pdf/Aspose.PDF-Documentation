@@ -1,5 +1,6 @@
 ---
 title: Fill Radio Button Fields
+linktitle: Fill Radio Button Fields
 type: docs
 weight: 30
 url: /java/fill-radio-button-fields/

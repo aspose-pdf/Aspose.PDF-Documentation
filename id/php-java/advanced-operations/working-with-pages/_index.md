@@ -1,10 +1,10 @@
 ---
-title: Bekerja dengan Halaman PDF 
+title: Bekerja dengan Halaman PDF
 linktitle: Bekerja dengan Halaman
 type: docs
 weight: 20
 url: /id/php-java/working-with-pages/
-description: Dengan Aspose.PDF untuk PHP via Java Anda dapat menambahkan halaman, menambahkan header dan footer, menambahkan watermark ke dalam file PDF Anda. Bagian ini menjelaskan kepada Anda semua detail tentang topik ini. 
+description: Dengan Aspose.PDF untuk PHP via Java Anda dapat menambahkan halaman, menambahkan header dan footer, menambahkan watermark ke dalam file PDF Anda. Bagian ini menjelaskan kepada Anda semua detail tentang topik ini.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

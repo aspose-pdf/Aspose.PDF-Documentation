@@ -1,5 +1,6 @@
 ---
 title: Set Field Alignment Vertical
+linktitle: Set Field Alignment Vertical
 type: docs
 weight: 30
 url: /java/set-field-alignment-vertical/

@@ -4,149 +4,26 @@ linktitle: العمل مع الجداول
 type: docs
 weight: 50
 url: /ar/python-net/working-with-tables/
-description: يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب بجدول باستخدام مكتبة بايثون.
-lastmod: "2023-09-17"
+description: تعرف على كيفية إضافة الجداول واستخراجها ودمجها ومعالجتها وإزالتها في مستندات PDF باستخدام Python.
+lastmod: "2026-06-11"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إضافة جداول PDF واستخراجها ودمجها وإدارتها في Python
+Abstract: يشرح هذا القسم كيفية العمل مع الجداول في مستندات PDF باستخدام Aspose.PDF لـ Python عبر .NET. تعرف على كيفية إنشاء الجداول وإدراجها واستخراج البيانات الجدولية ودمج الجداول مع مصادر البيانات وتعديل محتوى الجدول وإزالة الجداول من ملفات PDF الموجودة في عمليات سير عمل Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "العمل مع الجداول في PDF باستخدام Python",
-    "alternativeHeadline": "العمل مع الجداول",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, tables in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-tables/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-tables/"
-    },
-    "dateModified": "2023-09-04",
-    "description": "تصف هذه المقالة كيفية إضافة واستخراج جدول، وكيفية التلاعب ودمج جدول باستخدام مكتبة بايثون."
-}
-</script>
 
+**Aspose.pdf لبايثون عبر .NET** يوفر أدوات كاملة للعمل مع الجداول في ملفات PDF. يمكنك إنشاء الجداول وإضافتها والتحكم في تخطيط الجدول وتدفق الصفحات واستخراج البيانات الجدولية وتحديث الجداول الحالية وإزالة جدول واحد أو عدة جداول من ملفات PDF الموجودة.
 
-**Aspose.PDF for Python عبر .NET** يتيح لك العمل مع الجداول في ملف PDF بشكل متقدم. هذه الأداة المثالية تساعد في التغلب على بساطة ملفات PDF من خلال استخراج الجداول. باستخدام مكتبة Python، يمكنك بسهولة إنشاء أو إضافة جدول في مستند PDF موجود، تحديد ما إذا كان الجدول سيتكسر في الصفحة الحالية، استخراج الجداول، وإزالة الجداول من ملفات PDF الموجودة.
+استخدم هذا القسم عندما تحتاج إلى إنشاء تقارير تستند إلى الجدول أو استخراج البيانات المنظمة من ملفات PDF أو تحديث المحتوى الجدولي في المستندات الموجودة باستخدام Python.
+
+## تمت تغطية مهام الجدول
 
 يمكنك القيام بما يلي:
 
-- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/ar/python-net/add-table-in-existing-pdf-document/) - قم بإنشاء الجدول الخاص بك في ملف PDF مع دمج الأعمدة أو الصفوف مع مراعاة الحدود، الهوامش، والحشو.
-- [استخراج جدول من مستند PDF موجود](/pdf/ar/python-net/extract-table-from-existing-pdf-document/) - يمكنك استخراج الجدول من ملف PDF.
-- [التلاعب بالجداول في PDF موجود](/pdf/ar/python-net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في مستند PDF باستخدام TableAbsorber.
-
-- [إزالة الجداول من PDF موجود](/pdf/ar/python-net/remove-tables-from-existing-pdf/) - إزالة جدول أو جداول متعددة من مستند PDF.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python عبر .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "بريطانيا",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة ملفات PDF لبايثون",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "ويندوز، ماك، لينكس",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [إضافة جداول](/pdf/ar/python-net/adding-tables/) - إنشاء جداول في ملفات PDF، بما في ذلك الصفوف/الأعمدة المدمجة والحدود والهوامش والحشو.
+- [استخراج الجداول](/pdf/ar/python-net/extracting-table/) - استخراج بيانات الجدول من ملفات PDF الموجودة.
+- [دمج الجداول مع مصادر البيانات](/pdf/ar/python-net/integrate-table/) - إنشاء جداول من قواعد البيانات وبيانات الباندا DataFrame في Python.
+- [معالجة الجداول](/pdf/ar/python-net/manipulating-tables/) - فحص وتحديث الجداول الموجودة داخل مستندات PDF.
+- [إزالة الجداول](/pdf/ar/python-net/removing-tables/) - إزالة جدول واحد أو عدة جداول من مستندات PDF.

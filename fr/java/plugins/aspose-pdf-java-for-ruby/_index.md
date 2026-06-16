@@ -1,9 +1,9 @@
 ---
-title: Aspose.PDF Java pour Ruby  
-type: docs  
-weight: 20  
-url: /fr/java/aspose-pdf-java-for-ruby/  
-lastmod: "2021-06-05"  
+title: Aspose.PDF Java pour Ruby
+type: docs
+weight: 20
+url: /fr/java/aspose-pdf-java-for-ruby/
+lastmod: "2021-06-05"
 ---
 ## Introduction
 

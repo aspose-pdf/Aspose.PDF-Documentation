@@ -1,5 +1,6 @@
 ---
-title: Replace Text With State
+title: Replace Text With State
+linktitle: Replace Text With State
 type: docs
 weight: 50
 url: /python-net/replace-text-with-state/

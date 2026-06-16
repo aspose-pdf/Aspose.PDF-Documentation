@@ -1,12 +1,12 @@
 ---
-title: 시작하기 
+title: 시작하기
 linktitle: 시작하기
 type: docs
 weight: 30
 url: /ko/java/get-started/
 description: 이 섹션은 DOM API의 기본 원칙을 설명합니다. 또한 PDF 문서를 생성하는 간단하고 복잡한 예제를 보여줍니다
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

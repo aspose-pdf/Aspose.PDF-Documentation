@@ -1,5 +1,6 @@
 ---
-title: PdfFileSignature Class
+title: PdfFileSignature Class
+linktitle: PdfFileSignature Class
 type: docs
 weight: 60
 url: /python-net/pdffilesignature-class/

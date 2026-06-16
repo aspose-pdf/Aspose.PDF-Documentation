@@ -29,7 +29,7 @@ Ikuti langkah-langkah di bawah ini:
 
 1. Atur [Border](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph#setBorder-com.aspose.pdf.BorderInfo-) untuk Drawing object.
 
-1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) ke dalam koleksi paragraf halaman.
+1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/Graph) ke dalam koleksi `paragraphs` halaman.
 
 1. Simpan file PDF Anda
 
@@ -51,7 +51,7 @@ Ikuti langkah-langkah di bawah ini:
         curve1.getGraphInfo().setColor(Color.getGreenYellow());
         graph.getShapes().add(curve1);
 
-        // Tambahkan objek Graph ke dalam koleksi paragraf halaman
+        // Tambahkan objek Graph ke dalam koleksi `paragraphs` halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF
@@ -85,7 +85,7 @@ Contoh ini menunjukkan cara menambahkan objek Kurva yang diisi dengan warna.
         curve1.getGraphInfo().setFillColor(Color.getGreenYellow());
         graph.getShapes().add(curve1);
 
-        // Tambahkan objek Graph ke koleksi paragraf halaman
+        // Tambahkan objek Graph ke koleksi `paragraphs` halaman
         page.getParagraphs().add(graph);
 
         // Simpan file PDF

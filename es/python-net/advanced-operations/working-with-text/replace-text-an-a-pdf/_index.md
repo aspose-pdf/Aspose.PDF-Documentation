@@ -4,44 +4,44 @@ linktitle: Reemplazar texto en PDF
 type: docs
 weight: 40
 url: /es/python-net/replace-text-in-pdf/
-description: Aprende cómo reemplazar, reorganizar y eliminar texto en documentos PDF usando Python.
-lastmod: "2026-05-05"
+description: Aprende cómo reemplazar texto en archivos PDF con Python, incluyendo reemplazar texto en varias páginas, limitar los cambios a una región de la página, usar expresiones regulares y eliminar texto.
+lastmod: "2026-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 aliases:
     - /python-net/replace-text-in-a-pdf-document/
 TechArticle: true
-AlternativeHeadline: Reemplaza, elimina y ajusta el contenido de texto en PDF usando Python
-Abstract: Este artículo cubre flujos de trabajo prácticos de sustitución de texto en documentos PDF utilizando Aspose.PDF for Python via .NET. Incluye la sustitución de texto en varias páginas, la limitación de la sustitución a regiones específicas, el ajuste del diseño del texto durante la sustitución, el trabajo con coincidencias basadas en expresiones regulares, la sustitución de fuentes y la eliminación del contenido de texto cuando sea necesario.
+AlternativeHeadline: Reemplaza y elimina texto en archivos PDF usando Python
+Abstract: Este artículo muestra cómo reemplazar texto en documentos PDF con Aspose.PDF for Python via .NET. Cubre el reemplazo de texto en todas las páginas, el reemplazo por región de página, coincidencia regex, reemplazo de Font, ajuste del diseño del texto y eliminación de texto visible u oculto.
 ---
 
-Estos ejemplos muestran cómo **modificar o eliminar texto en un PDF existente**.
+Esta página muestra cómo **reemplazar texto en un PDF con Python** usando Aspose.PDF for Python via .NET.
 
-Utilice esta página cuando necesite actualizar valores de texto, eliminar contenido no deseado o aplicar reglas de sustitución de texto en todas las páginas del PDF.
+Utilice estos ejemplos cuando necesite actualizar valores de texto, eliminar contenido no deseado, reemplazar texto en una área específica de la página, o aplicar reglas de reemplazo de texto en múltiples páginas PDF.
 
-## Reemplazar texto existente
+## Reemplazar texto en PDF con Python
 
-### Reemplazar texto en todas las páginas del documento PDF
+### Reemplazar texto en todas las páginas de un documento PDF
 
 {{% alert color="primary" %}}
 
-Puedes intentar buscar y reemplazar el texto en el documento usando Aspose.PDF y obtener los resultados en línea en este [enlace](https://products.aspose.app/pdf/redaction)
+Puedes probar la búsqueda y reemplazo de texto en línea con Aspose.PDF [aplicación de redacción](https://products.aspose.app/pdf/redaction).
 
 {{% /alert %}}
 
-La sustitución de texto es un requisito común al actualizar o corregir contenido en documentos PDF existentes — por ejemplo, cambiar nombres de productos, corregir errores tipográficos o actualizar la terminología en varias páginas.
+El reemplazo de texto es un requisito común al actualizar o corregir contenido en documentos PDF existentes — por ejemplo, cambiar nombres de productos, corregir errores tipográficos o actualizar la terminología en varias páginas.
 
 Aspose.PDF for Python via .NET ofrece un método potente y eficiente para buscar y reemplazar texto programáticamente a través del [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) clase.
 
-Este ejemplo demuestra cómo encontrar todas las apariciones de una frase específica (en este caso, "Black cat") y reemplazarlas con una nueva frase ("White dog") a lo largo de todo un documento PDF.
+Este ejemplo muestra cómo encontrar todas las apariciones de una frase específica (en este caso, "Black cat") y reemplazarlas por una nueva frase ("White dog") a lo largo de todo un documento PDF.
 
-1. Especifique frases de búsqueda y reemplazo. Establezca el texto que desea encontrar y el texto con el que desea sustituirlo.
+1. Especifique frases de búsqueda y sustitución. Establezca el texto que desea encontrar y el texto con el que desea reemplazarlo.
 1. Cargar el documento PDF.
-1. Crea un Text Absorber. Un TextFragmentAbsorber se inicializa con la frase de búsqueda. Escanea el documento para todas las instancias de la frase dada.
-1. Aplicar el Absorber a Todas las Páginas. Esto itera a través de todas las páginas y recopila fragmentos de texto que coinciden con la frase.
-1. Reemplaza cada fragmento encontrado. Cada instancia de "Black cat" debe cambiarse a "White dog".
-1. Guardar el PDF actualizado.
+1. Cree un Text Absorber. Un TextFragmentAbsorber se inicializa con la frase de búsqueda. Escanea el documento en busca de todas las instancias de la frase dada.
+1. Aplicar el Absorber a todas las páginas. Esto recorre todas las páginas y recopila fragmentos de texto que coinciden con la frase.
+1. Reemplace cada fragmento encontrado. Cada instancia de "Black cat" debe cambiarse a "White dog".
+1. Guarde el PDF actualizado.
 
 ```python
 import sys
@@ -62,21 +62,21 @@ def replace_text_on_all_pages(infile, outfile):
         document.save(outfile)
 ```
 
-### Reemplazar texto en una región de página particular
+### Reemplazar texto en una región específica de la página
 
-A veces, es posible que necesite reemplazar texto solo dentro de un área específica de una página PDF en lugar de buscar en todo el documento — por ejemplo, actualizar un encabezado, pie de página o una celda de tabla en una posición conocida.
+A veces, puede que necesite reemplazar texto solo dentro de un área específica de una página PDF en lugar de buscar en todo el documento — por ejemplo, actualizar un encabezado, pie de página o una celda de tabla en una posición conocida.
 
-La biblioteca Aspose.PDF for Python via .NET habilita esta funcionalidad al utilizar la [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) en conjunto con la búsqueda de texto basada en regiones.
+La biblioteca Aspose.PDF for Python via .NET permite esta funcionalidad al utilizar el [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) en conjunto con la búsqueda de texto basada en regiones.
 
-Este ejemplo muestra cómo encontrar y reemplazar todas las ocurrencias de una frase objetivo dentro de una región rectangular definida en una página específica.
+Este ejemplo demuestra cómo encontrar y reemplazar todas las ocurrencias de una frase objetivo dentro de una región rectangular definida en una página específica.
 
-1. Especificar frases de búsqueda y reemplazo.
+1. Especifique frases de búsqueda y reemplazo.
 1. Cargar el documento PDF.
-1. Crear un TextAbsorber para buscar. Inicializar un TextFragmentAbsorber para encontrar el texto deseado.
-1. Restringir el área de búsqueda. El rectángulo especifica los límites de coordenadas x e y en la página.
-1. Aplicar el Absorber a una página específica. Esto realiza la búsqueda y recoge los fragmentos de texto coincidentes dentro del área especificada.
+1. Crear un Text Absorber para buscar. Inicializar un TextFragmentAbsorber para encontrar el texto deseado.
+1. Restringir el Área de Búsqueda. El rectángulo especifica los límites de coordenadas x e y en la página.
+1. Aplicar el Absorber a una página específica. Esto realiza la búsqueda y recoge fragmentos de texto coincidentes dentro del área especificada.
 1. Reemplazar el texto encontrado. Cada aparición de 'doc' en la región definida se convierte en 'DOC'.
-1. Guardar el PDF actualizado.
+1. Guarde el PDF actualizado.
 
 ```python
 import sys
@@ -102,15 +102,15 @@ def replace_text_in_particular_page_region(infile, outfile):
 ### Redimensionar y desplazar texto sin cambiar el tamaño de la fuente
 
 Al reemplazar texto en un PDF, a veces deseas ajustar o reposicionar el nuevo texto dentro de un área específica sin modificar el tamaño de la fuente.
-Aspose.PDF for Python via .NET proporciona opciones para ajustar el diseño y el espaciado del texto mientras mantiene intacto el tamaño original de Font.
+Aspose.PDF for Python via .NET ofrece opciones para ajustar el diseño y el espaciado del texto sin cambiar el tamaño de fuente original.
 
 1. Cargar el documento PDF.
-1. Recopile todos los fragmentos de texto en la página usando un 'TextFragmentAbsorber'.
-1. Seleccione el Fragmento para modificar.
-1. Desplazar y cambiar el tamaño del rectángulo de texto.
-1. Ajustar el espaciado del texto. Habilite el ajuste de espaciado para que el texto quepa dentro del rectángulo modificado.
-1. Reemplaza el texto del fragmento.
-1. Guardar el PDF actualizado.
+1. Recopile todos los fragmentos de texto de la página usando un 'TextFragmentAbsorber'.
+1. Seleccione el fragmento a modificar.
+1. Desplazar y redimensionar el rectángulo de texto.
+1. Ajustar el espacio entre caracteres. Habilitar el ajuste de espaciado para que el texto se ajuste dentro del rectángulo modificado.
+1. Reemplazar el texto del fragmento.
+1. Guarde el PDF actualizado.
 
 ```python
 import sys
@@ -136,15 +136,15 @@ def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile
 
 ### Redimensionar y desplazar un párrafo en PDF
 
-Al trabajar con PDFs, a veces es necesario reemplazar o ampliar un párrafo mientras se mantiene alineado visualmente con el diseño de la página. Aspose.PDF le permite redimensionar el rectángulo delimitador del párrafo y ajustar el espaciado para encajar el nuevo texto, todo sin cambiar el tamaño de la fuente.
+Al trabajar con PDFs, a veces necesitas reemplazar o ampliar un párrafo manteniéndolo visualmente alineado con el diseño de la página. Aspose.PDF te permite redimensionar el rectángulo delimitador del párrafo y ajustar el espaciado para que se ajuste al nuevo texto, todo sin cambiar el Font size.
 
 1. Cargar el documento PDF.
-1. Utiliza 'TextFragmentAbsorber' para recopilar todos los fragmentos de texto en la página.
-1. Seleccione el Fragmento para modificar.
-1. Redimensionar y desplazar el párrafo. Use la caja de medios de la página para determinar los límites y ajustar el rectángulo.
-1. Ajustar espaciado. Esto modifica el espaciado entre palabras/letras en lugar de cambiar el tamaño de la fuente.
-1. Reemplaza el texto del fragmento.
-1. Guarda el PDF modificado.
+1. Utilice 'TextFragmentAbsorber' para recopilar todos los fragmentos de texto en la página.
+1. Seleccione el fragmento a modificar.
+1. Cambiar el tamaño y desplazar el párrafo. Use la caja de medios de la página para determinar los límites y ajustar el rectángulo.
+1. Ajustar espaciado. Esto modifica el espacio entre palabras/letras en lugar de cambiar el tamaño de fuente.
+1. Reemplazar el texto del fragmento.
+1. Guardar el PDF modificado.
 
 ```python
 import sys
@@ -171,7 +171,7 @@ def replace_text_and_resize_and_shift_paragraph(infile, outfile):
 
 ### Reemplazar texto y expandir automáticamente la fuente para llenar el área objetivo
 
-Reemplazar texto en un PDF mientras se redimensiona y expande automáticamente la fuente para llenar un área rectangular específica. Usando la biblioteca Aspose.PDF for Python via .NET, el código ajusta dinámicamente el tamaño y el espaciado de la fuente de modo que el nuevo contenido de texto encaje perfectamente dentro de un cuadro delimitador definido — sin cálculos manuales de fuentes.
+Reemplazar texto en un PDF mientras se redimensiona y expande automáticamente la fuente para llenar un área rectangular específica. Usando la biblioteca Aspose.PDF for Python via .NET, el código ajusta dinámicamente el tamaño de la fuente y el espaciado para que el nuevo contenido de texto encaje perfectamente dentro de un cuadro delimitado definido — sin cálculos manuales de fuente.
 
 1. Cargar el PDF.
 1. Capturar fragmentos de texto.
@@ -205,18 +205,18 @@ def replace_text_and_resize_and_expand_font(infile, outfile):
 
 ### Reemplazar texto y ajustarlo a un rectángulo
 
-Reemplazar texto en un documento PDF asegurándose de que el nuevo contenido encaje dentro del área rectangular del texto original reduciendo automáticamente el tamaño de la fuente cuando sea necesario.
+Reemplazar texto en un documento PDF asegurándose de que el nuevo contenido se ajuste dentro del área rectangular del texto original reduciendo automáticamente el tamaño de la fuente cuando sea necesario.
 
-Usando la biblioteca Aspose.PDF for Python via .NET, esta función ajusta tanto el layout del texto como el tamaño de la Font de forma dinámica, preservando la estructura del documento mientras evita el desbordamiento.
+Usando la biblioteca Aspose.PDF for Python via .NET, esta función ajusta tanto el diseño del texto como el tamaño de la Font dinámicamente, preservando la estructura del documento mientras evita el desbordamiento.
 
 1. Cree un objeto TextFragmentAbsorber para extraer todos los fragmentos de texto de la primera página.
 1. Acceder a un fragmento de texto específico.
-1. Establezca el Área de Reemplazo.
+1. Establecer el área de reemplazo.
 1. Configure las opciones de ajuste de texto. Establezca dos opciones clave de reemplazo:
-    - Ajuste del tamaño de fuente - 'SHRINK_TO_FIT' reduce automáticamente el tamaño de la fuente si el nuevo texto es demasiado largo.
+    - Ajuste de tamaño de fuente - 'SHRINK_TO_FIT' reduce automáticamente el tamaño de fuente si el nuevo texto es demasiado largo.
     - Ajuste de espaciado - 'ADJUST_SPACE_WIDTH' mantiene el espaciado proporcional.
 1. Reemplazar el texto.
-1. Guarda el PDF modificado.
+1. Guardar el PDF modificado.
 
 ```python
 import sys
@@ -240,14 +240,14 @@ def replace_text_and_fit_text_into_rectangle(infile, outfile):
         document.save(outfile)
 ```
 
-### Reemplazar automáticamente el texto de marcador de posición y reorganizar el diseño del PDF
+### Reemplazar automáticamente el texto del marcador de posición y reorganizar el diseño del PDF
 
-Reemplaza el texto de marcador de posición dentro de un PDF (p. ej., plantillas o formularios) con datos reales, como nombres o información de la empresa.
-Ajusta automáticamente el diseño de la página para adaptarse al nuevo texto mientras aplica formato personalizado (Font, color, size).
+Reemplazar el texto de marcador de posición dentro de un PDF (p. ej., plantillas o formularios) con datos reales como nombres o información de la empresa.
+Ajusta automáticamente el diseño de la página para encajar el nuevo texto mientras aplica formato personalizado (fuente, color, tamaño).
 
 1. Importar y cargar el PDF.
-1. Crear un TextAbsorber para el Placeholder.
-1. Aplicar el Absorber a Todas las Páginas.
+1. Crear un TextAbsorber para el marcador de posición.
+1. Aplicar el Absorber a todas las páginas.
 1. Recorrer fragmentos de texto encontrados.
 1. Aplicar formato de texto personalizado.
 1. Guardar el documento actualizado.
@@ -276,19 +276,19 @@ def automatically_rearrange_page_contents(input_file, output_file):
 
 ### Reemplazar texto basado en una expresión regular
 
-Al trabajar con documentos PDF, es posible que necesites reemplazar texto que siga un patrón en lugar de una frase específica — por ejemplo, números de teléfono, códigos o formatos tipo fecha.
+Al trabajar con documentos PDF, puede que necesite reemplazar texto que sigue un patrón en lugar de una frase específica — por ejemplo, números de teléfono, códigos o formatos similares a fechas.
 
-Aspose.PDF for Python via .NET permite realizar tales reemplazos usando expresiones regulares (regex) con la clase TextFragmentAbsorber.
+Aspose.PDF for Python via .NET le permite realizar tales reemplazos usando expresiones regulares (regex) con la clase TextFragmentAbsorber.
 
-Este ejemplo muestra cómo encontrar patrones de texto (en este caso, cualquier texto que coincida con el formato ####-####, como 1234-5678) y reemplazarlos con una cadena formateada 'ABC1-2XZY'. También muestra cómo personalizar la fuente, el color y el tamaño del texto reemplazado.
+Este ejemplo demuestra cómo encontrar patrones de texto (en este caso, cualquier texto que coincida con el formato ####-####, como 1234-5678) y reemplazarlos con una cadena formateada 'ABC1-2XZY'. También muestra cómo personalizar la fuente, el color y el tamaño del texto reemplazado.
 
 El siguiente fragmento de código le muestra cómo reemplazar texto basado en una expresión regular.
 
 1. Cargar el documento PDF.
-1. Crear un TextAbsorber basado en expresiones regulares. Inicializar el TextFragmentAbsorber con un patrón de expresión regular.
-1. Activar el modo de expresión regular. El parámetro \u0027True\u0027 activa el modo de búsqueda de expresiones regulares.
+1. Crea un TextAbsorber basado en expresiones regulares. Inicializa el TextFragmentAbsorber con un patrón de expresión regular.
+1. Activar modo de expresiones regulares. El parámetro 'True' activa el modo de búsqueda de expresiones regulares.
 1. Aplica el Absorber a una página. Esto escanea la página en busca de todos los fragmentos de texto que coinciden con el patrón regex definido.
-1. Reemplazar cada coincidencia con nuevo texto y aplicar estilo personalizado.
+1. Reemplace cada coincidencia con texto nuevo y aplique un estilo personalizado.
 1. Guardar el documento modificado.
 
 ```python
@@ -312,20 +312,20 @@ def replace_text_based_on_regex(infile, outfile):
         document.save(outfile)
 ```
 
-## Reemplazar fuentes o eliminar fuentes no utilizadas
+## Reemplazar fuentes o eliminar fuentes no usadas
 
-### Reemplazar Font en un archivo PDF existente
+### Reemplazar fuentes en un archivo PDF existente
 
-En ocasiones, necesitas estandarizar o actualizar fuentes en un PDF — por ejemplo, reemplazando una fuente obsoleta o propietaria por una más accesible. La biblioteca Aspose.PDF for Python via .NET permite detectar y reemplazar fuentes programáticamente, garantizando una tipografía coherente y compatibilidad del documento.
+En ocasiones, es necesario estandarizar o actualizar fuentes en un PDF — por ejemplo, reemplazando una fuente anticuada o propietaria por una más accesible. La biblioteca Aspose.PDF for Python via .NET permite detectar y reemplazar fuentes de forma programática, garantizando una tipografía coherente y compatibilidad del documento.
 
-Este ejemplo muestra cómo reemplazar todas las instancias de una fuente específica (p. ej., 'Arial-BoldMT') con otra fuente (p. ej., 'Verdana') a lo largo de un documento PDF.
+Este ejemplo demuestra cómo reemplazar todas las instancias de una fuente específica (p. ej., 'Arial-BoldMT') con otra fuente (p. ej., 'Verdana') a lo largo de un documento PDF.
 
 El siguiente fragmento de código muestra cómo reemplazar la fuente dentro del documento PDF:
 
 1. Abre el documento PDF.
 1. Inicializar un TextFragmentAbsorber.
-1. Utilice el Absorber para extraer fragmentos de texto de cada página del documento.
-1. Identificar y Reemplazar Fuentes. El script verifica si la fuente actual de un fragmento es 'Arial-BoldMT'. Si es así, la reemplaza por la fuente 'Verdana' usando el método FontRepository.find_font().
+1. Utiliza el Absorber para extraer fragmentos de texto de cada página del documento.
+1. Identificar y reemplazar fuentes. El script verifica si la fuente actual de un fragmento es ‘Arial-BoldMT’. Si es verdadero, la reemplaza con la fuente ‘Verdana’ usando el método FontRepository.find_font().
 1. Guardar el documento modificado.
 
 ```python
@@ -347,23 +347,23 @@ def replace_fonts(infile, outfile):
 
 ### Eliminar fuentes no utilizadas
 
-Con el tiempo, los documentos PDF pueden acumular fuentes no utilizadas o incrustadas que aumentan el tamaño del archivo y ralentizan el procesamiento. Estas fuentes no utilizadas a menudo permanecen incluso después de ediciones o reemplazos de texto, especialmente al trabajar con PDFs grandes o complejos.
+Con el tiempo, los documentos PDF pueden acumular fuentes sin usar o incrustadas que aumentan el tamaño del archivo y ralentizan el procesamiento. Estas fuentes sin usar a menudo permanecen incluso después de editar o reemplazar texto, especialmente al trabajar con PDFs grandes o complejos.
 
-La biblioteca Aspose.PDF for Python via .NET proporciona una forma eficiente de eliminar esas fuentes redundantes usando la clase TextEditOptions. Esto no solo optimiza su documento, sino que también garantiza que solo se usen las fuentes realmente aplicadas al texto visible.
+La biblioteca Aspose.PDF for Python via .NET ofrece una forma eficiente de eliminar esas fuentes redundantes utilizando la clase TextEditOptions. Esto no solo optimiza su documento, sino que también garantiza que solo se utilicen las fuentes realmente aplicadas al texto visible.
 
-El método 'remove_unused_fonts()' es una forma simple pero poderosa de optimizar archivos PDF al eliminar datos de fuentes redundantes.
+El método 'remove_unused_fonts()' es una forma sencilla pero potente de optimizar archivos PDF al eliminar datos de fuentes redundantes.
 
 Este ejemplo demuestra cómo:
 
-- Escanea un PDF en busca de fuentes no utilizadas.
+- Escanear un PDF en busca de fuentes no utilizadas.
 - Elimínalos de forma segura.
-- Reasignar fragmentos de texto activos a una fuente consistente (p. ej., Times New Roman).
+- Reasignar fragmentos de texto activos a una fuente coherente (p. ej., Times New Roman).
 
 1. Abre el documento PDF.
-1. Configure las opciones de edición de texto. Esto instruye al motor a eliminar cualquier fuente incrustada que no se esté utilizando actualmente en el texto visible.
-1. Crea un Text Absorber con Options. Un TextFragmentAbsorber extrae fragmentos de texto del documento para editar.
-1. Reasignar una Standard Font. Una vez que el absorber haya recopilado todos los fragments, iterar a través de ellos y aplicar una fuente consistente.
-1. Guarda el PDF limpio.
+1. Configure las opciones de edición de texto. Esto indica al motor eliminar cualquier fuente incrustada que no se esté utilizando actualmente en el texto visible.
+1. Crea un Text Absorber con Opciones. Un TextFragmentAbsorber extrae fragmentos de texto del documento para editarlos.
+1. Reasignar una Font estándar. Una vez que el absorber haya recopilado todos los fragmentos, iterar a través de ellos y aplicar una Font coherente.
+1. Guarde el PDF limpiado.
 
 ```python
 import sys
@@ -397,12 +397,12 @@ def remove_unused_fonts(input_file, output_file):
 
 ### Eliminar texto del PDF
 
-Elimina todo el contenido de texto de un archivo PDF manteniendo intactas las imágenes, formas y estructuras de diseño.
+Eliminar todo el contenido de texto de un archivo PDF mientras se mantienen intactas las imágenes, formas y estructuras de diseño.
 Al usar TextFragmentAbsorber, el código escanea eficientemente todo el documento y elimina cada fragmento de texto encontrado en cada página.
 
 1. Cargar el documento PDF.
 1. Se crea un objeto TextFragmentAbsorber para detectar y manejar fragmentos de texto en el PDF.
-1. Eliminar todo el contenido de texto. El método 'absorber.remove_all_text()' elimina cada elemento de texto del documento cargado, dejando intactos los componentes que no son texto.
+1. Eliminar todo el contenido de texto. El método 'absorber.remove_all_text()' elimina cada elemento de texto del documento cargado, dejando los componentes no textuales intactos.
 1. Guardar el documento actualizado.
 
 ```python
@@ -420,12 +420,12 @@ def remove_all_text_using_absorber1(infile, outfile):
 ### Eliminar todo el texto de una página específica
 
 Eliminar todo el texto de una sola página de un documento PDF usando la clase TextFragmentAbsorber en Aspose.PDF.
-A diferencia de la eliminación de todo el documento, este método realiza una limpieza de texto a nivel de página, eliminando texto solo de la página elegida mientras deja todas las demás páginas sin tocar.
+A diferencia de la eliminación de todo el documento, este método realiza una limpieza de texto a nivel de página, eliminando texto solo de la página seleccionada mientras deja todas las demás páginas sin cambios.
 
 1. Cargar el archivo PDF.
 1. Crear una instancia de TextFragmentAbsorber.
 1. Eliminar todo el texto de la primera página.
-1. Guarda el PDF modificado.
+1. Guardar el PDF modificado.
 
 ```python
 import sys
@@ -439,17 +439,17 @@ def remove_all_text_using_absorber2(infile, outfile):
         document.save(outfile)
 ```
 
-### Eliminar todo el texto de un área específica en la página PDF
+### Eliminar todo el texto de un área particular en la página PDF
 
-Eliminar todo el texto de una región rectangular específica en una página usando Aspose.PDF’s TextFragmentAbsorber.
-En lugar de borrar una página entera, este método realiza la eliminación de texto dirigida, permitiendo un control preciso sobre qué parte de la página se ve afectada.
+Eliminar todo el texto de una región rectangular específica en una página utilizando TextFragmentAbsorber de Aspose.PDF.
+En lugar de borrar una página completa, este método realiza una eliminación de texto dirigida, lo que permite un control preciso sobre qué parte de la página se ve afectada.
 
 1. Cargar el documento PDF.
 1. Crear un TextFragmentAbsorber.
-1. Definir el Área de Destino (Rectángulo).
-1. Eliminar texto de la región especificada.
+1. Definir el Área objetivo (Rectángulo).
+1. Eliminar texto de la Región especificada.
 1. Conserve el resto del documento.
-1. Guarda el PDF modificado.
+1. Guardar el PDF modificado.
 
 ```python
 import sys
@@ -467,15 +467,15 @@ def remove_all_text_using_absorber3(infile, outfile):
 
 ### Eliminar todo el Texto oculto de un documento PDF
 
-Eliminar todo el texto de una región rectangular específica en una página usando Aspose.PDF’s TextFragmentAbsorber.
-En lugar de borrar una página entera, este método realiza la eliminación de texto dirigida, permitiendo un control preciso sobre qué parte de la página se ve afectada.
+Eliminar todo el texto de una región rectangular específica en una página utilizando TextFragmentAbsorber de Aspose.PDF.
+En lugar de borrar una página completa, este método realiza una eliminación de texto dirigida, lo que permite un control preciso sobre qué parte de la página se ve afectada.
 
 1. Cargar el documento PDF.
 1. Crear un TextFragmentAbsorber.
-1. Definir el Área de Destino (Rectángulo).
-1. Eliminar texto de la región especificada.
+1. Definir el Área objetivo (Rectángulo).
+1. Eliminar texto de la Región especificada.
 1. Conserve el resto del documento.
-1. Guarda el PDF modificado.
+1. Guardar el PDF modificado.
 
 ```python
 import sys
@@ -503,5 +503,5 @@ def remove_hidden_text(infile, outfile):
 
 - [Trabajar con texto en PDF usando Python](/pdf/es/python-net/working-with-text/)
 - [Agregar texto al PDF](/pdf/es/python-net/add-text-to-pdf-file/)
-- [Buscar y extraer texto PDF en Python](/pdf/es/python-net/search-and-get-text-from-pdf/)
+- [Buscar y extraer texto de PDF en Python](/pdf/es/python-net/search-and-get-text-from-pdf/)
 - [Formatear texto PDF en Python](/pdf/es/python-net/text-formatting-inside-pdf/)

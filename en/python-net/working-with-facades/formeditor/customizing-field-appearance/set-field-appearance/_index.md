@@ -1,5 +1,6 @@
 ---
-title: Set Field Appearance
+title: Set Field Appearance
+linktitle: Set Field Appearance
 type: docs
 weight: 50
 url: /python-net/set-field-appearance/

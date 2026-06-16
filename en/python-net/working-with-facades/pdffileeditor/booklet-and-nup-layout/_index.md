@@ -1,5 +1,6 @@
 ---
-title: Booklet and N-Up Layout
+title: Booklet and N-Up Layout
+linktitle: Booklet and N-Up Layout
 type: docs
 weight: 10
 url: /python-net/booklet-and-nup-layout/

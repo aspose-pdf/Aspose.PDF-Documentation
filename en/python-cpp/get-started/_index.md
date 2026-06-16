@@ -1,12 +1,12 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
 url: /python-cpp/get-started/
 description: This page is an overview how to use Aspose.PDF for Python via C++ for creating and editing a PDF document
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

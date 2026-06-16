@@ -1,5 +1,5 @@
 ---
-title: JavaScript를 통해 C++로 PDF 페이지 삭제 
+title: JavaScript를 통해 C++로 PDF 페이지 삭제
 linktitle: PDF 페이지 삭제
 type: docs
 weight: 30

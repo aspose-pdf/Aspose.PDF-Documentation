@@ -1,5 +1,5 @@
 ---
-title: PDF 내비게이션 및 상호작용 
+title: PDF 내비게이션 및 상호작용
 linktitle: 내비게이션 및 상호작용
 type: docs
 weight: 90

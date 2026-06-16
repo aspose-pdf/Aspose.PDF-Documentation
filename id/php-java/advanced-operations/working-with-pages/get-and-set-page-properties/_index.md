@@ -46,7 +46,7 @@ Kecuali file PDF disimpan dan semua elemen benar-benar ditempatkan di dalam file
     
     // buat loop untuk menambahkan 300 instance TextFragment
     for ($i=0; $i < 300; $i++) { 
-       // tambahkan TextFragment ke koleksi paragraf halaman pertama PDF
+       // tambahkan TextFragment ke koleksi `paragraphs` halaman pertama PDF
        $page->getParagraphs()->add(new TextFragment("Uji hitungan halaman"));
     }
     

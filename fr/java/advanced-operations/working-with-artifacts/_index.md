@@ -1,5 +1,5 @@
 ---
-title: Travailler avec des Artéfacts 
+title: Travailler avec des Artéfacts
 linktitle: Travailler avec des Artéfacts
 type: docs
 weight: 110

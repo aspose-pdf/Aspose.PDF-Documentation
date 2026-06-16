@@ -1,5 +1,5 @@
 ---
-title: Mengonversi PDF/A ke format PDF 
+title: Mengonversi PDF/A ke format PDF
 linktitle: Mengonversi PDF/A ke format PDF
 type: docs
 weight: 110

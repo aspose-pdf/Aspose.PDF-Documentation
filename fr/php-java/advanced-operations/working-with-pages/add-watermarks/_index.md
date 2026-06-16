@@ -1,16 +1,15 @@
 ---
 
-title: Ajouter un filigrane au PDF  
-linktitle: Ajouter un filigrane  
-type: docs  
-weight: 90  
-url: /fr/php-java/add-watermarks/  
-description: Cet article explique les fonctionnalités du travail avec les artefacts et l'obtention de filigranes dans les PDFs en utilisant PHP.  
-lastmod: "2024-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
-
+title: Ajouter un filigrane au PDF
+linktitle: Ajouter un filigrane
+type: docs
+weight: 90
+url: /fr/php-java/add-watermarks/
+description: Cet article explique les fonctionnalités du travail avec les artefacts et l'obtention de filigranes dans les PDFs en utilisant PHP.
+lastmod: "2024-06-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **Aspose.PDF pour PHP via Java** permet d'ajouter des filigranes à votre document PDF en utilisant des artefacts. Veuillez consulter cet article pour résoudre votre tâche.

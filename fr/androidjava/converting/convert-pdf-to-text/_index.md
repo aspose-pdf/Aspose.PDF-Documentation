@@ -1,5 +1,5 @@
 ---
-title: Convertir PDF en texte 
+title: Convertir PDF en texte
 linktitle: Convertir PDF en texte
 type: docs
 weight: 120

@@ -1,11 +1,11 @@
 ---
-title: PDF Annotations 
+title: PDF Annotations
 linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /ja/php-java/annotations/
 description: このセクションでは、Aspose.PDFライブラリを使用してPDFファイルにあらゆる種類の注釈を使用する方法を示します。PHPで注釈を描画、開く、または追加する方法を学びます。
-lastmod: "2024-06-26"    
+lastmod: "2024-06-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

@@ -1,5 +1,6 @@
 ---
-title: Text Operations
+title: Text Operations
+linktitle: Text Operations
 type: docs
 weight: 100
 url: /python-net/text-operations/

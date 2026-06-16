@@ -14,7 +14,7 @@ sitemap:
 ## Apa itu Grafik
 
 Menambahkan grafik ke dokumen PDF adalah tugas yang sangat umum bagi pengembang saat bekerja dengan Adobe Acrobat Writer atau aplikasi pemrosesan PDF lainnya. Ada banyak jenis grafik yang dapat digunakan dalam aplikasi PDF.
-[Aspose.PDF untuk C++](/pdf/id/cpp/) juga mendukung penambahan grafik ke dokumen PDF. Untuk tujuan ini, kelas Graph disediakan. Grafik adalah elemen tingkat paragraf dan dapat ditambahkan ke koleksi Paragraf dalam suatu instansi Halaman. Sebuah instansi Grafik berisi koleksi Bentuk.
+[Aspose.PDF untuk C++](/pdf/id/cpp/) juga mendukung penambahan grafik ke dokumen PDF. Untuk tujuan ini, kelas Graph disediakan. Grafik adalah elemen tingkat paragraf dan dapat ditambahkan ke koleksi `paragraphs` dalam suatu instansi Halaman. Sebuah instansi Grafik berisi koleksi Bentuk.
 
 Jenis-jenis bentuk berikut didukung oleh kelas [Graph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.graph):
 

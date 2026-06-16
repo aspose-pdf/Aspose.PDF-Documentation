@@ -1,5 +1,6 @@
 ---
-title: Replace Text Simple
+title: Replace Text Simple
+linktitle: Replace Text Simple
 type: docs
 weight: 40
 url: /python-net/replace-text-simple/

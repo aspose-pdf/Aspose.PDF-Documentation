@@ -1,5 +1,6 @@
 ---
 title: Form Class
+linktitle: Form Class
 type: docs
 weight: 140
 url: /java/form-class/

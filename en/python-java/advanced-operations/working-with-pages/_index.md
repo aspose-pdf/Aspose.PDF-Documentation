@@ -1,5 +1,6 @@
 ---
 title: Working with Pages in Python via Java
+linktitle: Working with Pages in Python via Java
 type: docs
 weight: 30
 url: /python-java/working-with-pages-in-python/

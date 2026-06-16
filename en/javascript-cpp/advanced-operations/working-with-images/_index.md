@@ -1,5 +1,5 @@
 ---
-title: Working with Images in PDF using JavaScript via C++ 
+title: Working with Images in PDF using JavaScript via C++
 linktitle: Working with Images
 type: docs
 weight: 40

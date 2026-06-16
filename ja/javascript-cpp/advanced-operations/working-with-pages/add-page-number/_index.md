@@ -1,5 +1,5 @@
 ---
-title: JavaScript経由でC++を使用してPDFにページ番号を追加 
+title: JavaScript経由でC++を使用してPDFにページ番号を追加
 linktitle: ページ番号を追加
 type: docs
 weight: 100

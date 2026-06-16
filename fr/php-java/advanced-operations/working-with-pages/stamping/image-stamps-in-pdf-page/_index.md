@@ -1,5 +1,5 @@
 ---
-title: Ajouter des tampons d'image dans un PDF par programmation 
+title: Ajouter des tampons d'image dans un PDF par programmation
 linktitle: Tampons d'image dans un fichier PDF
 type: docs
 weight: 10

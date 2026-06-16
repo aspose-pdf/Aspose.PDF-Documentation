@@ -1,162 +1,69 @@
 ---
-title: Pythonを使用してPDFファイルから画像を抽出する
+title: Python を使用して PDF ファイルから画像を抽出する
 linktitle: 画像を抽出
 type: docs
 weight: 30
 url: /ja/python-net/extract-images-from-pdf-file/
-description: このセクションでは、Pythonライブラリを使用してPDFファイルから画像を抽出する方法を示します。
-lastmod: "2023-02-17"
+description: Python で PDF ファイルから埋め込み画像を抽出する方法を学びましょう。
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF ファイルから画像を抽出する
+Abstract: この記事では、.NET 経由で Aspose.PDF for Python を使用して PDF ドキュメントから画像を抽出する方法を説明します。埋め込まれた 1 つの画像を抽出する方法と、ページ上の特定の四角形領域内にある画像をエクスポートする方法について説明しています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PythonでPDFファイルから画像を抽出する",
-    "alternativeHeadline": "PDFから画像を抽出する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdfドキュメント生成",
-    "keywords": "pdf, Python, pdfから画像を抽出",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-images-from-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-images-from-pdf-file/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "このセクションでは、Pythonライブラリを使用してPDFファイルから画像を抽出する方法を示します。"
-}
-</script>
 
+このページは、埋め込まれたグラフィックを再利用したり、画像アセットをアーカイブしたり、PDF 以外の画像コンテンツを処理したりする必要がある場合に使用します。
 
-Do you need to separate images from your PDF files? For simplified management, archiving, analysis, or sharing images of your documents, use **Aspose.PDF for Python** and extract images from PDF files.
-
-画像は、各ページの[リソース](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties)コレクションの[XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximagecollection/)コレクションに保持されます。特定のページを抽出するには、画像の特定のインデックスを使用してImagesコレクションから画像を取得します。
-
-画像のインデックスは[XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/)オブジェクトを返します。このオブジェクトは、抽出した画像を保存するために使用できる[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドを提供します。次のコードスニペットは、PDFファイルから画像を抽出する方法を示しています。
+1. ソース PDF を以下のようにロードします。 `ap.Document(infile)`.
+1. ターゲットページとイメージリソースインデックスを選択します。
+1. イメージオブジェクトを出力ストリームに保存します。
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
 
-    import aspose.pdf as ap
 
-    # ドキュメントを開く
-    document = ap.Document(input_file)
-
-    # 特定の画像を抽出する
-    xImage = document.pages[2].resources.images[1]
-    outputImage = io.FileIO(output_image, "w")
-
-    # 出力画像を保存する
-    xImage.save(outputImage)
-    outputImage.close()
+def extract_image(infile, outfile):
+    document = ap.Document(infile)
+    x_image = document.pages[1].resources.images[1]
+    with FileIO(outfile, "wb") as output_image:
+        x_image.save(output_image)
 ```
 
+## PDF の特定の領域から画像を抽出
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python ライブラリ",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python 用 PDF 操作ライブラリ",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+この例は、PDF ページの指定された矩形領域内にある画像を抽出し、それらを個別のファイルとして保存します。
+
+1. ソース PDF をロードします。
+1. 作成 `ImagePlacementAbsorber` ターゲットページで受け入れてください。
+1. ターゲットの長方形を定義します。
+1. 画像の配置を繰り返して、各画像の境界が領域に収まるかどうかを確認します。
+1. 一致した画像を出力ファイルに保存します。
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+
+
+def extract_image_from_specific_region(infile, outfile):
+    document = ap.Document(infile)
+    rectangle = ap.Rectangle(0, 0, 590, 590, True)
+    absorber = ap.ImagePlacementAbsorber()
+    document.pages[1].accept(absorber)
+
+    index = 1
+    for image_placement in absorber.image_placements:
+        point1 = ap.Point(image_placement.rectangle.llx, image_placement.rectangle.lly)
+        point2 = ap.Point(image_placement.rectangle.urx, image_placement.rectangle.ury)
+
+        if rectangle.contains(point1, True) and rectangle.contains(point2, True):
+            with FileIO(outfile.replace("index", str(index)), "wb") as output_image:
+                image_placement.image.save(output_image)
+            index += 1
+```
+
+## 関連画像トピック
+
+- [Python を使用して PDF 内の画像を操作する](/pdf/ja/python-net/working-with-images/)
+- [既存の PDF ファイル内の画像の置換](/pdf/ja/python-net/replace-image-in-existing-pdf-file/)
+- [PDF ファイルからの画像の削除](/pdf/ja/python-net/delete-images-from-pdf-file/)
+- [既存の PDF ファイルへの画像の追加](/pdf/ja/python-net/add-image-to-existing-pdf-file/)

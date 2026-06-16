@@ -1,5 +1,5 @@
 ---
-title: Définir des Privilèges, Chiffrer et Déchiffrer un Fichier PDF 
+title: Définir des Privilèges, Chiffrer et Déchiffrer un Fichier PDF
 linktitle: Chiffrer et Déchiffrer un Fichier PDF
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: Advanced operations in Node.js 
+title: Advanced operations in Node.js
 linktitle: Advanced operations
 type: docs
 weight: 60

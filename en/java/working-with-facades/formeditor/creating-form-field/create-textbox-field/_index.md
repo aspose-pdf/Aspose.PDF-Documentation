@@ -1,5 +1,6 @@
 ---
 title: Create TextBox Field
+linktitle: Create TextBox Field
 type: docs
 weight: 10
 url: /java/create-textbox-field/

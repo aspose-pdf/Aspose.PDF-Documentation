@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /androidjava/get-started/
 description: This section describes the basic principles of using Aspose.PDF for Android via Java. Also demonstrates simple and complex examples for creating a PDF document
-lastmod: "2021-08-05"   
-sitemap: 
+lastmod: "2021-08-05"
+sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---

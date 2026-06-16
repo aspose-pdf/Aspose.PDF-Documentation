@@ -1,5 +1,6 @@
 ---
-title: Add Text Annotations
+title: Add Text Annotations
+linktitle: Add Text Annotations
 type: docs
 weight: 50
 url: /python-net/add-text-annotation/

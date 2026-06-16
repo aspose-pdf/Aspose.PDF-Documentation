@@ -1,5 +1,5 @@
 ---
-title: Работа с PDF документами 
+title: Работа с PDF документами
 linktitle: Работа с документами
 type: docs
 weight: 10

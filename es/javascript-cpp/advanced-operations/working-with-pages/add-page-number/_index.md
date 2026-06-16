@@ -1,5 +1,5 @@
 ---
-title: Agregar Número de Página al PDF con JavaScript via C++ 
+title: Agregar Número de Página al PDF con JavaScript via C++
 linktitle: Agregar Número de Página
 type: docs
 weight: 100

@@ -1,6 +1,6 @@
 ---
 title: Add Text to PDF using C++
-linktitle: Add Text to PDF 
+linktitle: Add Text to PDF
 type: docs
 weight: 10
 url: /cpp/add-text-to-pdf-file/

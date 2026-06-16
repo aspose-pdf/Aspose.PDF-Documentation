@@ -1,5 +1,5 @@
 ---
-title: Converter DICOM para PDF 
+title: Converter DICOM para PDF
 linktitle: Converter DICOM para PDF
 type: docs
 weight: 250

@@ -6,7 +6,7 @@ weight: 30
 url: /ru/python-cpp/get-started/
 description: Эта страница представляет собой обзор, как использовать Aspose.PDF для Python через C++ для создания и редактирования PDF-документа
 lastmod: "2021-06-05"
-sitemap: 
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

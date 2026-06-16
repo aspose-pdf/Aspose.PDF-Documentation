@@ -1,5 +1,6 @@
 ---
 title: Add HTML String using DOM in Python
+linktitle: Add HTML String using DOM in Python
 type: docs
 weight: 10
 url: /python-java/add-html-string-using-dom-in-python/

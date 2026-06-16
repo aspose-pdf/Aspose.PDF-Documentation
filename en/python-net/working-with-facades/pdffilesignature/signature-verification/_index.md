@@ -1,5 +1,6 @@
 ---
-title: Signature Verification
+title: Signature Verification
+linktitle: Signature Verification
 type: docs
 weight: 90
 url: /python-net/signature-verification/

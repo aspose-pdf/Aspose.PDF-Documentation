@@ -1,308 +1,343 @@
 ---
-title: 파이썬을 사용하여 PDF에 헤더 및 푸터 추가
-linktitle: PDF에 헤더 및 푸터 추가
+title: 파이썬에서 PDF 머리말과 꼬리말 추가하기
+linktitle: PDF에 머리말 및 꼬리말 추가
 type: docs
 weight: 50
 url: /ko/python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for Python via .NET을 사용하면 TextStamp 클래스를 사용하여 PDF 파일에 헤더 및 푸터를 추가할 수 있습니다.
-lastmod: "2023-04-17"
+description: 텍스트, 이미지 및 구조화된 콘텐츠를 사용하여 Python에서 PDF 파일에 머리말과 꼬리말을 추가하는 방법을 알아봅니다.
+lastmod: "2026-06-10"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python을 사용하여 PDF 파일에 머리말과 꼬리말 추가
+Abstract: 이 문서에서는.NET을 통해 Python용 Aspose.PDF 를 사용하여 PDF 문서에 머리말과 꼬리말을 추가하는 방법을 보여줍니다.텍스트, 페이지 번호 지정, HTML, 이미지, 표, LaTex 기반 머리글 및 바닥글 내용을 다룹니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "파이썬을 사용하여 PDF에 헤더 및 푸터 추가",
-    "alternativeHeadline": "PDF 파일에 헤더 및 푸터 추가하는 방법",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, 헤더 추가, pdf에 푸터 추가",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for Python via .NET을 사용하면 TextStamp 클래스를 사용하여 PDF 파일에 헤더 및 푸터를 추가할 수 있습니다."
-}
-</script>
 
+이 페이지에서는**Python용 Aspose.pdf를.NET**로 PDF 페이지 전체에 일관된 머리말과 꼬리말 내용을 추가할 수 있습니다.
 
-**Aspose.PDF for Python via .NET**은 기존 PDF 파일에 헤더와 푸터를 추가할 수 있게 해줍니다. PDF 문서에 이미지나 텍스트를 추가할 수 있습니다. 또한, 하나의 PDF 파일에 서로 다른 헤더를 추가하는 것도 Python으로 시도해 보세요.
+머리말과 꼬리말은 다음과 같이 작성할 수 있습니다. [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/), 및 [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) 오브젝트를 통해 적용 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 각 페이지에.
 
-## PDF 파일 헤더에 텍스트 추가
+## 머리말과 꼬리말을 텍스트 조각으로 추가
 
-[TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) 클래스를 사용하여 PDF 파일의 헤더에 텍스트를 추가할 수 있습니다. TextStamp 클래스는 글꼴 크기, 글꼴 스타일, 글꼴 색상 등 텍스트 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 헤더에 텍스트를 추가하기 위해서는, 필요한 속성을 사용하여 Document 객체와 TextStamp 객체를 생성해야 합니다. 그런 다음, 'add_stamp' 메서드를 호출하여 PDF 헤더에 텍스트를 추가할 수 있습니다.
+PDF의 모든 페이지에 간단한 텍스트 머리말과 꼬리말을 추가합니다.그러면 생성됩니다. [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 오브젝트, 인서트 [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) 요소, 세트 [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 올바른 위치를 지정하기 위해 문서의 각 페이지에 첨부합니다.그 결과 모든 페이지에 일관된 머리말과 꼬리말 텍스트가 표시되는 PDF가 만들어집니다.
 
-PDF의 헤더 영역에 텍스트가 적절히 조정되도록 [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) 속성을 설정해야 합니다. 또한 'horizontal_alignment'를 Center로, 'vertical_alignment'를 Top으로 설정해야 합니다.
+다음 코드 스니펫은 Python을 사용하여 PDF에서 머리말과 꼬리말을 텍스트 조각으로 추가하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 Python으로 PDF 파일의 헤더에 텍스트를 추가하는 방법을 보여줍니다:
+1. 머리말과 꼬리말에 사용할 텍스트 조각을 만듭니다.
+1. HeaderFooter 객체를 만들고 여기에 텍스트 조각을 추가합니다.
+1. 머리말과 꼬리말의 배치를 제어하는 여백 설정을 정의합니다.
+1. 입력 파일에서 PDF 문서를 로드합니다.
+1. 문서의 모든 페이지를 반복합니다.
+1. 각 페이지에 머리말과 꼬리말을 지정합니다.
+1. 수정한 PDF를 출력 파일에 저장합니다.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_text(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Demo header")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # 문서 열기
-    document = ap.Document(input_pdf)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Demo footer")
 
-    # 헤더 생성
-    textStamp = ap.TextStamp("Header Text")
-    # 스탬프의 속성 설정
-    textStamp.top_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # 모든 페이지에 헤더 추가
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
 
-    # 업데이트된 문서 저장
-    document.save(output_pdf)
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## PDF 파일의 바닥글에 텍스트 추가
+이 방법은 각 페이지의 상단과 하단에 일관된 제목, 페이지 표시기 또는 법적 고지 사항을 추가하는 데 유용합니다.이미지 또는 페이지 번호와 같은 동적 콘텐츠를 포함하도록 확장할 수도 있습니다.
 
-[TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) 클래스를 사용하여 PDF 파일의 바닥글에 텍스트를 추가할 수 있습니다.
- TextStamp 클래스는 폰트 크기, 폰트 스타일, 폰트 색상 등 텍스트 기반의 스탬프를 생성하는 데 필요한 속성을 제공합니다. 하단에 텍스트를 추가하려면, Document 객체와 필수 속성을 사용하여 TextStamp 객체를 생성해야 합니다. 그런 다음, PDF의 하단에 텍스트를 추가하기 위해 Page의 'add_stamp' 메서드를 호출할 수 있습니다.
+## 페이지 번호 지정을 위한 머리말과 꼬리말 추가
 
-다음 코드 스니펫은 Python으로 PDF 파일의 하단에 텍스트를 추가하는 방법을 보여줍니다:
+Python용 Aspose.PDF 를 사용하여 PDF 문서의 머리글과 바닥글에 자동 페이지 번호 매기기를 추가합니다.스크립트는 내장 변수 $p (현재 페이지 번호) 및 $P (총 페이지 수) 를 사용하여 모든 페이지에 페이지 번호를 동적으로 삽입합니다.머리글에는 'Page X from Y' 형식이 표시되고 바닥글에는 'Page X/ Y' 형식이 표시됩니다. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 각 페이지에 적절한 배치를 보장합니다.
+
+1. “$P from $P 페이지”를 사용하여 헤더의 텍스트 조각을 만들어 현재 페이지와 전체 페이지를 표시합니다.
+1. HeaderFooter 객체를 만들고 여기에 머리글 텍스트를 추가합니다.
+1. 대체 번호 매기기 스타일로 “페이지 $p/ $P”를 사용하여 바닥글에 사용할 텍스트 조각을 만드세요.
+1. Footer 객체를 만들고 바닥글 텍스트를 추가합니다.
+1. 여백 설정 (왼쪽 = 50, 상단 = 20) 을 정의하고 머리말과 꼬리말 모두에 적용합니다.
+1. 입력 파일에서 PDF 문서를 엽니다.
+1. 모든 페이지를 반복하고 각 페이지에 머리말과 꼬리말을 할당합니다.
+1. 업데이트된 PDF를 출력 경로에 저장합니다.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def using_header_and_footer_for_page_numbering(input_file, output_file):
+    # Create header text
+    header_text = ap.text.TextFragment("Page $p from $P")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
 
-    # 문서 열기
-    document = ap.Document(input_pdf)
-    # 하단부 생성
-    textStamp = ap.TextStamp("Footer Text")
-    # 스탬프의 속성 설정
-    textStamp.bottom_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # 모든 페이지에 하단부 추가
-    for page in document.pages:
-        page.add_stamp(textStamp)
+    # Create footer text
+    footer_text = ap.text.TextFragment("Page $p / $P")
 
-    # 업데이트된 PDF 파일 저장
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Create margins
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+
+    # Set header margin
+    header.margin = margin
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## PDF 파일의 헤더에 이미지 추가
+## 머리말과 꼬리말을 HTML 조각으로 추가
 
-[ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스를 사용하여 PDF 파일의 헤더에 이미지를 추가할 수 있습니다. Image Stamp 클래스는 글꼴 크기, 글꼴 스타일, 글꼴 색상 등 이미지 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 헤더에 이미지를 추가하려면 필요한 속성을 사용하여 Document 객체와 Image Stamp 객체를 생성해야 합니다. 그런 다음, 'add_stamp' 메서드를 호출하여 PDF의 헤더에 이미지를 추가할 수 있습니다.
+파이썬용 Aspose.PDF 를 사용하여 PDF 문서의 모든 페이지에 HTML 형식의 머리말과 꼬리말을 적용합니다.를 사용하여 [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), 스크립트를 사용하면 굵게 및 기울임꼴과 같은 리치 텍스트 스타일을 머리말과 꼬리말에 표시할 수 있습니다. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 적절한 배치를 위해 적용되며 문서의 각 페이지에는 동일한 형식의 요소가 첨부됩니다.
 
-다음 코드 스니펫은 Python을 사용하여 PDF 파일의 헤더에 이미지를 추가하는 방법을 보여줍니다:
+다음 코드 스니펫은 Python을 사용하여 PDF에 머리글과 바닥글을 HTML 조각으로 추가하는 방법을 보여줍니다.
 
-```python 
-
-    import aspose.pdf as ap
-
-    # 문서 열기
-    document = ap.Document(input_pdf)
-
-    # 헤더 생성
-    image_stamp = ap.ImageStamp(input_image)
-    # 스탬프의 속성 설정
-    image_stamp.top_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # 모든 페이지에 헤더 추가
-    for page in document.pages:
-        page.add_stamp(image_stamp)
-
-    # 업데이트된 문서 저장
-    document.save(output_pdf)
-```
-
-## PDF 파일의 바닥글에 이미지 추가
-
-[ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스를 사용하여 PDF 파일의 바닥글에 이미지를 추가할 수 있습니다. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스는 글꼴 크기, 글꼴 스타일, 글꼴 색상 등 이미지 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 바닥글에 이미지를 추가하려면, Document 객체와 필요한 속성을 사용하여 Image Stamp 객체를 생성해야 합니다. 그 후, PDF의 바닥글에 이미지를 추가하기 위해 Page의 'add_stamp' 메소드를 호출할 수 있습니다.
-
-다음 코드 스니펫은 Python으로 PDF 파일의 바닥글에 이미지를 추가하는 방법을 보여줍니다:
+1. HTMLFragment를 사용하여 HTML 헤더 스니펫 만들기 (예: ') 스타일이 적용된 텍스트 포함<strong>'는 굵게 표시한다는 뜻입니다.
+1. HeaderFooter 객체를 만들고 여기에 HTML 헤더를 추가합니다.
+1. '를 사용하여 HTML 바닥글 스니펫 만들기<i>'(기울임꼴 스타일링의 경우).
+1. Footer 객체를 만들고 여기에 바닥글 HTML을 추가합니다.
+1. 여백을 설정하고 (왼쪽 = 50, 위쪽 = 20) 머리말과 꼬리말에 모두 할당합니다.
+1. 'AP.Document () '를 사용하여 PDF 문서를 로드합니다.
+1. 모든 페이지를 반복하고 각 페이지에 머리말과 꼬리말을 할당합니다.
+1. 수정한 PDF를 지정된 출력 경로에 저장합니다.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_html(input_file, output_file):
+    # Create header HTML
+    header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_html)
 
-    # 문서 열기
-    document = ap.Document(input_pdf)
-    # 바닥글 생성
-    image_stamp = ap.ImageStamp(input_image)
-    # 스탬프의 속성 설정
-    image_stamp.bottom_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # 모든 페이지에 바닥글 추가
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+    # Create footer HTML
+    footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
 
-    # 업데이트된 PDF 파일 저장
-    document.save(output_pdf)
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_html)
+
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## 하나의 PDF 파일에 다른 헤더 추가하기
+HTMLFragment를 사용하면 인라인 스타일 또는 HTML 마크업으로 풍부한 서식을 지정할 수 있으므로 일반 텍스트에 비해 디자인 유연성이 향상됩니다.
 
-우리는 [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) 또는 [bottom_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) 속성을 사용하여 문서의 헤더/푸터 섹션에 TextStamp를 추가할 수 있다는 것을 알고 있지만, 때로는 단일 PDF 문서에 여러 헤더/푸터를 추가해야 할 수도 있습니다. **Aspose.PDF for Python via .NET**은 이를 수행하는 방법을 설명합니다.
+## 머리말과 꼬리말을 이미지로 추가
 
-이 요구 사항을 달성하기 위해, 우리는 개별 TextStamp 객체를 생성하고(필요한 헤더/푸터의 수에 따라 객체의 수가 달라짐) 이를 PDF 문서에 추가할 것입니다.
- 개별 스탬프 객체에 대해 다른 서식 정보를 지정할 수도 있습니다. 다음 예제에서는 Document 객체와 세 개의 TextStamp 객체를 생성한 다음 페이지의 'add_stamp' 메서드를 사용하여 PDF의 헤더 섹션에 텍스트를 추가했습니다. 다음 코드 스니펫은 Aspose.PDF for Python을 사용하여 PDF 파일의 바닥글에 이미지를 추가하는 방법을 보여줍니다:
+Python용 Aspose.PDF 를 사용하여 PDF 문서의 각 페이지에 이미지 기반 머리글과 바닥글을 추가합니다.모든 페이지의 머리말과 꼬리말 모두에 동일한 이미지 파일이 사용됩니다. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 이미지의 위치를 지정하면 이미지가 머리말/꼬리말 영역에 맞게 자동으로 조정됩니다.
+
+다음 코드 스니펫은 Python을 사용하여 PDF에 머리말과 꼬리말을 이미지로 추가하는 방법을 보여줍니다.
+
+1. 이미지를 'ap.Image' 객체에 로드하고 헤더로 사용할 준비를 합니다.
+1. HeaderFooter 객체를 만들고 여기에 헤더 이미지를 첨부합니다.
+1. 동일한 이미지를 다시 로드하여 바닥글로 사용합니다.
+1. Footer 객체를 만들고 여기에 Footer 이미지를 추가합니다.
+1. 'AP.Document () '를 사용하여 입력된 PDF 문서를 로드합니다.
+1. 문서의 모든 페이지를 반복합니다.
+1. 머리말과 꼬리말을 모두 배치하려면 여백 (왼쪽 = 50) 을 적용합니다.
+1. PDF의 각 페이지에 머리말과 꼬리말을 지정합니다.
+1. 업데이트된 PDF를 지정된 출력 파일에 저장합니다.
+
+이 기법은 머리말/꼬리말 영역에 로고나 워터마크가 있는 문서를 브랜딩하는 데 적합합니다.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+def add_header_and_footer_as_image(input_file, image_file, output_file):
+    # Create header image
+    header_image = ap.Image()
+    header_image.file = image_file
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_image)
 
-    # 세 개의 스탬프 생성
-    stamp1 = ap.TextStamp("Header 1")
-    stamp2 = ap.TextStamp("Header 2")
-    stamp3 = ap.TextStamp("Header 3")
+    # Create footer image
+    footer_image = ap.Image()
+    footer_image.file = image_file
 
-    # 스탬프 정렬 설정 (페이지 상단에 스탬프를 배치하고 수평으로 가운데 정렬)
-    stamp1.vertical_alignment = ap.VerticalAlignment.TOP
-    stamp1.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # 글꼴 스타일을 굵게 지정
-    stamp1.text_state.font_style = ap.text.FontStyles.BOLD
-    # 텍스트 전경색 정보를 빨간색으로 설정
-    stamp1.text_state.foreground_color = ap.Color.red
-    # 글꼴 크기를 14로 지정
-    stamp1.text_state.font_size = 14
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_image)
 
-    # 이제 두 번째 스탬프 객체의 수직 정렬을 상단으로 설정해야 합니다
-    stamp2.vertical_alignment = ap.VerticalAlignment.TOP
-    # 스탬프의 수평 정렬 정보를 가운데 정렬로 설정
-    stamp2.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # 스탬프 객체의 확대 비율 설정
-    stamp2.zoom = 10
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Set header margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            header.margin = margin
 
-    # 세 번째 스탬프 객체의 서식 설정
-    # 스탬프 객체의 수직 정렬 정보를 상단으로 지정
-    stamp3.vertical_alignment = ap.VerticalAlignment.TOP
-    # 스탬프 객체의 수평 정렬 정보를 가운데 정렬로 설정
-    stamp3.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # 스탬프 객체의 회전 각도 설정
-    stamp3.rotate_angle = 35
-    # 스탬프의 배경색을 분홍색으로 설정
-    stamp3.text_state.background_color = ap.Color.pink
-    # 스탬프의 글꼴 정보를 Verdana로 변경
-    stamp3.text_state.font = ap.text.FontRepository.find_font("Verdana")
-    # 첫 번째 스탬프가 첫 페이지에 추가됩니다;
-    document.pages[1].add_stamp(stamp1)
-    # 두 번째 스탬프가 두 번째 페이지에 추가됩니다;
-    document.pages[2].add_stamp(stamp2)
-    # 세 번째 스탬프가 세 번째 페이지에 추가됩니다.
-    document.pages[3].add_stamp(stamp3)
+            # Set footer margin
+            footer.margin = margin
 
-    # 업데이트된 문서 저장
-    document.save(output_pdf)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python용 PDF 조작 라이브러리",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 머리말과 꼬리말을 표로 추가
+
+Python용 Aspose.PDF 를 사용하여 PDF 문서의 모든 페이지에 구조화된 표 기반 머리말과 꼬리말을 추가할 수 있습니다. [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) 개체는 복잡한 머리말과 꼬리말에 대해 더 나은 레이아웃 제어, 정렬 및 일관된 서식을 제공합니다.Arial 12pt 글꼴을 사용하여 머리글 텍스트는 가운데에, 바닥글 텍스트는 왼쪽으로 정렬됩니다.열 너비는 적절한 배치를 위해 페이지 크기를 기반으로 동적으로 계산됩니다.
+
+이 코드 스니펫은.NET을 통해 Python용 Aspose.PDF 를 사용하여 PDF 문서의 각 페이지에 머리글과 바닥글 (표 사용) 을 추가합니다.
+
+1. 를 사용하여 텍스트 스타일 정의 [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) 머리글 및 바닥글 (글꼴, 크기, 정렬) 용
+1. 작성 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 머리글 및 바닥글에 대한 개체
+1. 헤더 작성 [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) 단일 행과 헤더 텍스트를 포함하는 셀이 있습니다.
+1. 바닥글 만들기 [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) 단일 행과 바닥글 텍스트를 포함하는 셀이 있습니다.
+1. 해당 테이블에 테이블 추가 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 사물.
+1. 바닥글 설정 [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) 적절한 수평 위치 지정을 위해.
+1. 를 여십시오 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 적절한 방법을 사용합니다.
+1. 모든 페이지를 반복하고 각 페이지에 표 기반 머리말과 꼬리말을 할당합니다.
+1. 수정한 내용 저장 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 출력 파일에.
+
+```python
+import aspose.pdf as ap
+
+def add_header_and_footer_as_table(input_file, output_file):
+    text_state_header = ap.text.TextState()
+    text_state_header.font = ap.text.FontRepository.find_font("Arial")
+    text_state_header.font_size = 12
+    text_state_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    text_state_footer = ap.text.TextState()
+    text_state_footer.font = ap.text.FontRepository.find_font("Arial")
+    text_state_footer.font_size = 12
+    text_state_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+    # Create header
+    header = ap.HeaderFooter()
+    # Create footer
+    footer = ap.HeaderFooter()
+    # Create header Table
+    table_header = ap.Table()
+    table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+    header_row = table_header.rows.add()
+    header_row.cells.add("This is a Table Header", text_state_header)
+    # Create footer Table
+    table = ap.Table()
+    table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+    table.rows.add().cells.add("Powered by Aspose.PDF", text_state_footer)
+    header.paragraphs.add(table_header)
+    footer.paragraphs.add(table)
+    # Set footer margin
+    footer.margin.left = 150
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## 머리말과 꼬리말을 LaTeX로 추가
+
+Python용 Aspose.PDF 를 사용하여 라텍스 형식의 내용이 포함된 머리말과 꼬리말을 PDF 문서의 모든 페이지에 추가합니다.LaTeX를 사용하면 수학 기호, 날짜, 저작권 표시 및 기타 고급 서식을 렌더링할 수 있습니다.머리글에는 동적 날짜가 포함되고 바닥글에는 현재 페이지 번호 및 총 페이지 수와 함께 저작권 기호가 표시됩니다.
+
+다음 코드 스니펫은 사용 방법을 보여줍니다. [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) .NET을 통해 파이썬용 Aspose.PDF 를 사용하는 PDF의 머리말과 꼬리말에.
+
+1. 를 여십시오 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 적절한 방법을 사용합니다.
+1. 동적 바닥글에 사용할 총 페이지 수를 결정합니다.
+1. 문서의 모든 페이지를 반복합니다.
+1. 만들기 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 헤더의 객체입니다.
+1. 만들기 [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) LaTeX 명령을 포함하는 헤더 텍스트의 경우 (예: `\\today\\`).
+1. 만들기 [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) 바닥글의 객체.
+1. 만들기 [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) LaTeX 기호 및 페이지 번호 매기기를 포함한 바닥글 텍스트에 사용됩니다.
+1. 추가 [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) 해당 머리말/꼬리말 개체에.
+1. 머리말과 꼬리말을 현재 페이지에 바인딩합니다.
+1. 수정한 내용 저장 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 출력 파일에.
+
+```python
+import aspose.pdf as ap
+
+def add_header_and_footer_as_latex(input_file, output_file):
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTeX Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = (
+                f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            )
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## 관련 페이지 주제
+
+- [파이썬에서 PDF 페이지 작업하기](/pdf/ko/python-net/working-with-pages/)
+- [파이썬에서 PDF에 페이지 번호 추가](/pdf/ko/python-net/add-page-number/)
+- [파이썬으로 PDF 페이지에 스탬프 찍기](/pdf/ko/python-net/stamping/)
+- [파이썬으로 PDF 문서 포맷 지정하기](/pdf/ko/python-net/formatting-pdf-document/)

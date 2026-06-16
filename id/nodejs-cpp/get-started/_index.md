@@ -1,11 +1,11 @@
 ---
-title: Memulai 
+title: Memulai
 linktitle: Memulai
 type: docs
 weight: 30
 url: /id/nodejs-cpp/get-started/
 description: Bagian ini menjelaskan prinsip dasar kerja Aspose.PDF untuk Node.js melalui C++. Aspose.PDF untuk Node.js melalui C++ mendukung berbagai macam fungsi.
-lastmod: "2023-11-16"   
+lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

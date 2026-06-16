@@ -1,6 +1,6 @@
 ---
-title: Konversi File PDF ke Format Lain 
-linktitle: Konversi PDF ke format lain 
+title: Konversi File PDF ke Format Lain
+linktitle: Konversi PDF ke format lain
 type: docs
 weight: 90
 url: /id/java/convert-pdf-to-other-files/

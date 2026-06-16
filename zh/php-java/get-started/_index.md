@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /zh/php-java/get-started/
 description: 本节介绍工作和使用API的基本原则。同时演示创建PDF文档的简单和复杂示例
-lastmod: "2024-06-05"   
-sitemap: 
+lastmod: "2024-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

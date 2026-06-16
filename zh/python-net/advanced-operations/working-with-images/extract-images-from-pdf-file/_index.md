@@ -1,162 +1,69 @@
 ---
-title: 从 PDF 文件中提取图像使用 Python
+title: 使用 Python 从 PDF 文件中提取图像
 linktitle: 提取图像
 type: docs
 weight: 30
 url: /zh/python-net/extract-images-from-pdf-file/
-description: 本节展示如何使用 Python 库从 PDF 文件中提取图像。
-lastmod: "2023-02-17"
+description: 了解如何在 Python 中从 PDF 文件中提取嵌入的图像。
+lastmod: "2026-06-08"
+TechArticle: true
+AlternativeHeadline: 使用 Python 从 PDF 文件中提取图像
+Abstract: 本文展示了如何使用 Aspose.PDF for Python via .NET 从 PDF 文档中提取图像。内容涵盖提取单个嵌入图像以及导出页面上特定矩形区域内找到的图像。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用 Python 从 PDF 文件中提取图像",
-    "alternativeHeadline": "如何从 PDF 中提取图像",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, Python, 从 pdf 中提取图像",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-images-from-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-images-from-pdf-file/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "本节展示如何使用 Python 库从 PDF 文件中提取图像。"
-}
-</script>
 
+当您需要复用嵌入的图形、归档图像资源或在 PDF 之外处理图像内容时，请使用此页面。
 
-你是否需要从PDF文件中分离图像？为了简化管理、存档、分析或分享文档中的图像，可以使用**Aspose.PDF for Python**从PDF文件中提取图像。
-
-图像保存在每个页面的[资源](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties)集合的[XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximagecollection/)集合中。要提取特定页面的图像，可以使用图像的特定索引从Images集合中获取图像。
-
-图像的索引返回一个[XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/)对象。该对象提供一个[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)方法，可以用来保存提取的图像。以下代码片段展示了如何从PDF文件中提取图像。
+1. 使用加载源 PDF `ap.Document(infile)`.
+1. 选择目标页面和图像资源索引。
+1. 将图像对象保存到输出流。
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
 
-    import aspose.pdf as ap
 
-    # 打开文档
-    document = ap.Document(input_file)
-
-    # 提取特定图像
-    xImage = document.pages[2].resources.images[1]
-    outputImage = io.FileIO(output_image, "w")
-
-    # 保存输出图像
-    xImage.save(outputImage)
-    outputImage.close()
+def extract_image(infile, outfile):
+    document = ap.Document(infile)
+    x_image = document.pages[1].resources.images[1]
+    with FileIO(outfile, "wb") as output_image:
+        x_image.save(output_image)
 ```
 
+## 从 PDF 的特定区域提取图像
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python 库",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "用于 Python 的 PDF 操作库",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+此示例提取位于 PDF 页面上指定矩形区域内的图像，并将它们另存为单独的文件。
+
+1. 加载源 PDF。
+1. 创建 `ImagePlacementAbsorber` 并在目标页面上接受它。
+1. 定义目标矩形。
+1. 遍历图像放置项，并检查每个图像的边界是否适合该区域。
+1. 将匹配的图像保存到输出文件。
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+
+
+def extract_image_from_specific_region(infile, outfile):
+    document = ap.Document(infile)
+    rectangle = ap.Rectangle(0, 0, 590, 590, True)
+    absorber = ap.ImagePlacementAbsorber()
+    document.pages[1].accept(absorber)
+
+    index = 1
+    for image_placement in absorber.image_placements:
+        point1 = ap.Point(image_placement.rectangle.llx, image_placement.rectangle.lly)
+        point2 = ap.Point(image_placement.rectangle.urx, image_placement.rectangle.ury)
+
+        if rectangle.contains(point1, True) and rectangle.contains(point2, True):
+            with FileIO(outfile.replace("index", str(index)), "wb") as output_image:
+                image_placement.image.save(output_image)
+            index += 1
+```
+
+## 相关图像主题
+
+- [使用 Python 处理 PDF 中的图像](/pdf/zh/python-net/working-with-images/)
+- [替换现有 PDF 文件中的图像](/pdf/zh/python-net/replace-image-in-existing-pdf-file/)
+- [从 PDF 文件中删除图像](/pdf/zh/python-net/delete-images-from-pdf-file/)
+- [向现有 PDF 文件添加图像](/pdf/zh/python-net/add-image-to-existing-pdf-file/)

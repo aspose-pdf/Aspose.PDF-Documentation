@@ -1,5 +1,6 @@
 ---
 title: Set PDF Metadata
+linktitle: Set PDF Metadata
 type: docs
 weight: 50
 url: /java/set-pdf-metadata/

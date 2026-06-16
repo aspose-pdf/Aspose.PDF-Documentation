@@ -1,5 +1,6 @@
 ---
 title: Remove Field
+linktitle: Remove Field
 type: docs
 weight: 40
 url: /java/remove-field/

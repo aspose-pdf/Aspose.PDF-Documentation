@@ -1,5 +1,6 @@
 ---
 title: Working with Headings in PDF
+linktitle: Working with Headings in PDF
 type: docs
 weight: 70
 url: /php-java/working-with-headings/

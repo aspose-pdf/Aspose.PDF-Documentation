@@ -1,5 +1,6 @@
 ---
 title: Set Field Comb Number
+linktitle: Set Field Comb Number
 type: docs
 weight: 60
 url: /java/set-field-comb-number/

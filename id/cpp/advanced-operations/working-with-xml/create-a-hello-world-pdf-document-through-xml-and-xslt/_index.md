@@ -1,5 +1,5 @@
 ---
-title: Membuat PDF dari XML menggunakan XSLT 
+title: Membuat PDF dari XML menggunakan XSLT
 linktitle: Membuat PDF dari XML menggunakan XSLT
 type: docs
 weight: 10

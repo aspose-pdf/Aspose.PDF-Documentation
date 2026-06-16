@@ -1,5 +1,6 @@
 ---
 title: Customizing Field Appearance
+linktitle: Customizing Field Appearance
 type: docs
 weight: 30
 url: /java/customizing-field-appearance/

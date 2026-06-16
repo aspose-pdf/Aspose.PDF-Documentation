@@ -1,5 +1,5 @@
 ---
-title: Definir Privilégios, Criptografar e Descriptografar Arquivo PDF 
+title: Definir Privilégios, Criptografar e Descriptografar Arquivo PDF
 linktitle: Criptografar e Descriptografar Arquivo PDF
 type: docs
 weight: 20

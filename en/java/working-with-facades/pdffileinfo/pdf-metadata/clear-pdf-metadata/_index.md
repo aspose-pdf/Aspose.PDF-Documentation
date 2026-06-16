@@ -1,5 +1,6 @@
 ---
 title: Clear PDF Metadata
+linktitle: Clear PDF Metadata
 type: docs
 weight: 10
 url: /java/clear-pdf-metadata/

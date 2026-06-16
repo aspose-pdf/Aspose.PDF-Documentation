@@ -72,7 +72,7 @@ sitemap:
     },
     "dateModified": "2022-02-04",
     "description": "Contoh ini menunjukkan cara membuat dokumen PDF sederhana menggunakan Aspose.PDF untuk Python.",
-    "articleBody": "Kasus penggunaan sederhana dapat membantu menunjukkan fitur dari bahasa pemrograman atau perangkat lunak. Ini biasanya dilakukan dengan contoh \"Hello World\".\n\nAspose.PDF untuk Python via C++ adalah API PDF yang kuat yang memungkinkan pengembang untuk membuat, memanipulasi, dan mengkonversi dokumen PDF dalam aplikasi Python mereka. Ini mendukung bekerja dengan berbagai format file seperti PDF, XFA, TXT, HTML, PCL, XML, XPS, EPUB, TEX, dan format file gambar. Dalam artikel ini, kami akan menunjukkan kepada Anda bagaimana membuat dokumen PDF dengan teks \"Hello World!\" menggunakan API Aspose.PDF. Anda perlu menginstal Aspose.PDF untuk Python via C++ di lingkungan Anda sebelum menjalankan contoh kode berikut.\n1. Impor modul AsposePdfPython.\n2. Buat objek dokumen PDF baru menggunakan fungsi document_create.\n3. Dapatkan koleksi halaman dari dokumen menggunakan fungsi document_get_pages.\n4. Tambahkan halaman baru ke koleksi halaman menggunakan fungsi page_collection_add_page.\n5. Dapatkan koleksi paragraf dari halaman menggunakan fungsi page_get_paragraphs.\n6. Membuat objek gambar baru menggunakan fungsi image_create.\n7. Mengatur nama file dari objek gambar menjadi \"sample.jpg\" menggunakan fungsi image_set_file.\n8. Menambahkan objek gambar ke koleksi paragraf menggunakan fungsi paragraphs_add_image.\n9. Menyimpan dokumen ke file bernama \"document.pdf\" menggunakan fungsi document_save.\n10. Menutup pegangan dokumen menggunakan fungsi close_handle."
+    "articleBody": "Kasus penggunaan sederhana dapat membantu menunjukkan fitur dari bahasa pemrograman atau perangkat lunak. Ini biasanya dilakukan dengan contoh \"Hello World\".\n\nAspose.PDF untuk Python via C++ adalah API PDF yang kuat yang memungkinkan pengembang untuk membuat, memanipulasi, dan mengkonversi dokumen PDF dalam aplikasi Python mereka. Ini mendukung bekerja dengan berbagai format file seperti PDF, XFA, TXT, HTML, PCL, XML, XPS, EPUB, TEX, dan format file gambar. Dalam artikel ini, kami akan menunjukkan kepada Anda bagaimana membuat dokumen PDF dengan teks \"Hello World!\" menggunakan API Aspose.PDF. Anda perlu menginstal Aspose.PDF untuk Python via C++ di lingkungan Anda sebelum menjalankan contoh kode berikut.\n1. Impor modul AsposePdfPython.\n2. Buat objek dokumen PDF baru menggunakan fungsi document_create.\n3. Dapatkan koleksi halaman dari dokumen menggunakan fungsi document_get_pages.\n4. Tambahkan halaman baru ke koleksi halaman menggunakan fungsi page_collection_add_page.\n5. Dapatkan koleksi `paragraphs` dari halaman menggunakan fungsi page_get_paragraphs.\n6. Membuat objek gambar baru menggunakan fungsi image_create.\n7. Mengatur nama file dari objek gambar menjadi \"sample.jpg\" menggunakan fungsi image_set_file.\n8. Menambahkan objek gambar ke koleksi `paragraphs` menggunakan fungsi paragraphs_add_image.\n9. Menyimpan dokumen ke file bernama \"document.pdf\" menggunakan fungsi document_save.\n10. Menutup pegangan dokumen menggunakan fungsi close_handle."
 }
 </script>
 
@@ -86,10 +86,10 @@ Aspose.PDF for Python via C++ adalah API PDF yang kuat yang memungkinkan pengemb
 1. Dapatkan koleksi halaman dari dokumen menggunakan fungsi `document_get_pages`.
 1. Tambahkan halaman baru ke koleksi halaman menggunakan fungsi `page_collection_add_page`.
 
-1. Dapatkan koleksi paragraf dari halaman menggunakan fungsi `page_get_paragraphs`.
+1. Dapatkan koleksi `paragraphs` dari halaman menggunakan fungsi `page_get_paragraphs`.
 1. Membuat objek gambar baru menggunakan fungsi `image_create`.
 1. Menetapkan nama file objek gambar menjadi "sample.jpg" menggunakan fungsi `image_set_file`.
-1. Menambahkan objek gambar ke koleksi paragraf menggunakan fungsi `paragraphs_add_image`.
+1. Menambahkan objek gambar ke koleksi `paragraphs` menggunakan fungsi `paragraphs_add_image`.
 1. Menyimpan dokumen ke file bernama "document.pdf" menggunakan fungsi `document_save`.
 1. Menutup handle dokumen menggunakan fungsi `close_handle`.
 

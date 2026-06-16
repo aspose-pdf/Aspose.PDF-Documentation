@@ -1,11 +1,11 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
 url: /javascript-cpp/get-started/
 description: This section describes the basic principles of work Aspose.PDF for JavaScript via C++. Aspose.PDF for JavaScript via C++ supports a wide variety of functions.
-lastmod: "2022-12-14"   
+lastmod: "2022-12-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

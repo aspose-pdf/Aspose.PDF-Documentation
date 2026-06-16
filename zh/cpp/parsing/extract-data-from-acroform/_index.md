@@ -1,5 +1,5 @@
 ---
-title: 从AcroForm中提取数据 
+title: 从AcroForm中提取数据
 linktitle: 从AcroForm中提取数据
 type: docs
 weight: 50

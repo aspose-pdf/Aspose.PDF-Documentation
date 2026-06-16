@@ -12,7 +12,7 @@ sitemap:
 TechArticle: true
 AlternativeHeadline: Overview of Aspose.PDF for Rust
 Abstract: Aspose.PDF for Rust via C++ is a comprehensive library that enables developers to create, manipulate, and convert PDF documents programmatically. It offers a wide range of features, including document generation from scratch, text and image extraction, form handling, annotations, and digital signatures.
-SoftwareApplication: rust-cpp    
+SoftwareApplication: rust-cpp
 ---
 
 ## Aspose.PDF for Rust via C++

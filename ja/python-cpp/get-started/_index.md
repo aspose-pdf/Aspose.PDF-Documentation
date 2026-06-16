@@ -5,8 +5,8 @@ type: docs
 weight: 30
 url: /ja/python-cpp/get-started/
 description: このページは、Aspose.PDF for Python via C++ を使用してPDFドキュメントを作成および編集する方法の概要です
-lastmod: "2021-06-05"   
-sitemap: 
+lastmod: "2021-06-05"
+sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---

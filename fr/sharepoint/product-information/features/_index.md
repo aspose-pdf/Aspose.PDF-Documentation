@@ -1,5 +1,5 @@
 ---
-title: Caractéristiques 
+title: Caractéristiques
 type: docs
 weight: 30
 url: /fr/sharepoint/features/

@@ -1,5 +1,5 @@
 ---
-title: إضافة علامة مائية إلى PDF 
+title: إضافة علامة مائية إلى PDF
 linktitle: إضافة علامة مائية
 type: docs
 weight: 90

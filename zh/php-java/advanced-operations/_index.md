@@ -1,10 +1,10 @@
 ---
-title: 高级操作 
-linktitle: 高级操作 
+title: 高级操作
+linktitle: 高级操作
 type: docs
 weight: 70
 url: /zh/php-java/advanced-operations/
-description: 通过 Aspose.PDF for PHP via Java，您不仅可以执行简单和容易的任务，还可以应对更复杂的目标。 
+description: 通过 Aspose.PDF for PHP via Java，您不仅可以执行简单和容易的任务，还可以应对更复杂的目标。
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

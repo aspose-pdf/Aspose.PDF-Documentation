@@ -1,9 +1,8 @@
 ---
 
-title: Limitations de l'API 
+title: Limitations de l'API
 
 description: L'article explique certaines des limitations de l'API SharePoint PDF.
-
 ---
 
 {{% alert color="primary" %}}

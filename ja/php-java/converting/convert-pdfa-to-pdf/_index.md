@@ -1,5 +1,5 @@
 ---
-title: PDF/AをPDF形式に変換する 
+title: PDF/AをPDF形式に変換する
 linktitle: PDF/AをPDF形式に変換する
 type: docs
 weight: 110

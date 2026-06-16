@@ -1,389 +1,256 @@
 ---
-title: Pythonを使用したPDFドキュメントのフォーマット
-linktitle: PDFドキュメントのフォーマット
+title: Python で PDF ドキュメントをフォーマットする
+linktitle: PDF ドキュメントのフォーマット
 type: docs
 weight: 11
 url: /ja/python-net/formatting-pdf-document/
-description: Aspose.PDF for Python via .NETを使用してPDFドキュメントを作成およびフォーマットします。次のコードスニペットを使用してタスクを解決してください。
-lastmod: "2023-04-12"
+description: Python で PDF 文書の書式設定、フォントの埋め込み、ビューア設定の制御、表示オプションの調整を行う方法を学びます。
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF ドキュメントをフォーマットする
+Abstract: この記事では、Python の Aspose.PDF ライブラリを使用した PDF ドキュメントの操作と書式設定に関する包括的なガイドを提供します。ドキュメントウィンドウとページ表示プロパティの設定 (ウィンドウの中央配置、読み上げ方向、UI 要素の非表示など) を含む PDF カスタマイズのさまざまな側面について説明しています。この記事では、`Document` クラスを使用してこれらのプロパティをプログラムで取得および設定する方法について説明します。さらに、フォント管理についても説明し、Standard Type 1 フォントやその他のフォントを PDF に埋め込んで、システム間で文書の移植性と表示の一貫性を確保する方法についても詳しく説明しています。また、デフォルトのフォント名を設定する方法、PDF からすべてのフォントを取得する方法、「FontSubsetStrategy」を使用してフォントの埋め込みを強化する方法についても説明します。さらに、この記事では、`GoToAction` クラスを使用して PDF ドキュメントのズーム率を調整する方法と、両面印刷オプションを含む印刷ダイアログプリセットのプロパティを設定する方法について詳しく説明します。各セクションにはコードスニペットが付属しており、これらの機能を実装するための実用的な例が示されています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用したPDFドキュメントのフォーマット",
-    "alternativeHeadline": "Python via .NETでPDFドキュメントをフォーマットする方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, dotnet, python, pdfドキュメントのフォーマット",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/formatting-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/formatting-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Aspose.PDF for Python via .NETを使用してPDFドキュメントを作成およびフォーマットします。次のコードスニペットを使用してタスクを解決してください。"
-}
-</script>
 
+このガイドは、Python で生成されたドキュメントの PDF ビューアの動作、フォントの埋め込み、デフォルトの表示設定、または印刷設定を制御する必要がある場合に役立ちます。
 
-## PDFドキュメントのフォーマット
+## PDF ドキュメントのフォーマット
 
-### ドキュメントウィンドウとページ表示プロパティの取得
+### ドキュメントウィンドウとページ表示プロパティを取得
 
-このトピックでは、ドキュメントウィンドウ、ビューアアプリケーションのプロパティ、およびページがどのように表示されるかを取得する方法について説明します。これらのプロパティを設定するには:
+このトピックは、ドキュメントウィンドウ、ビューアアプリケーションのプロパティを取得する方法、およびページの表示方法を理解するのに役立ちます。これらのプロパティを設定するには:
 
-[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスを使用してPDFファイルを開きます。これで、ドキュメントオブジェクトのプロパティを設定できます。例えば、
+を使用して PDF ファイルを開きます [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。これで、Document オブジェクトのプロパティを次のように設定できるようになりました。
 
-- CenterWindow – ドキュメントウィンドウを画面の中央に配置します。デフォルト: false。
-- Direction – 読み順。これは、ページを並べて表示する際のレイアウト方法を決定します。デフォルト: 左から右。
-- DisplayDocTitle – ドキュメントウィンドウのタイトルバーにドキュメントのタイトルを表示します。デフォルト: false (タイトルが表示されます)。
-- HideMenuBar – ドキュメントウィンドウのメニューバーを非表示または表示します。デフォルト: false (メニューバーが表示されます)。
-- HideToolBar – ドキュメントウィンドウのツールバーを非表示または表示します。デフォルト: false (ツールバーが表示されます)。
-- HideWindowUI – スクロールバーなどのドキュメントウィンドウ要素を非表示または表示します。
- デフォルト: false (UI要素が表示される)。
-- NonFullScreenPageMode – ドキュメントがフルページモードで表示されていないときの表示方法。
-- PageLayout – ページのレイアウト。
-- PageMode – ドキュメントが最初に開かれたときの表示方法。オプションは、サムネイルを表示、フルスクリーン、添付ファイルパネルを表示。
+- CenterWindow — ドキュメントウィンドウを画面の中央に配置します。デフォルト:false。
+- 方向 — 読み取り順序。これにより、ページを並べて表示するときのレイアウトが決まります。デフォルト:左から右。
+- DisplayDocTitle — ドキュメントウィンドウのタイトルバーにドキュメントタイトルを表示します。デフォルト:false (タイトルが表示されます)。
+- HideMenuBar — ドキュメントウィンドウのメニューバーを表示または非表示にします。デフォルト:false (メニューバーが表示されます)。
+- HideToolbar — ドキュメントウィンドウのツールバーを表示または非表示にします。デフォルト:false (ツールバーが表示されます)。
+- HideWindowUI — スクロールバーなどのドキュメントウィンドウ要素を表示または非表示にします。デフォルト:false (UI 要素が表示されます)。
+- NonFullScreenPageMode — ドキュメントがフルページモードで表示されていないときに表示されます。
+- ページレイアウト — ページレイアウト。
+- PageMode — ドキュメントを初めて開いたときの表示方法。オプションには、サムネイル表示、全画面表示、添付パネル表示があります。
 
-以下のコードスニペットは、[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスを使用してプロパティを取得する方法を示しています。
+次のコードスニペットは、を使用してプロパティを取得する方法を示しています [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # ドキュメントを開く
+def get_document_window(input_pdf, output_pdf):
+    """Print document window metadata for inspection."""
     document = ap.Document(input_pdf)
 
-    # 異なるドキュメントプロパティを取得
-    # ドキュメントのウィンドウの位置 - デフォルト: false
-    print("CenterWindow :", document.center_window)
-
-    # 主な読み取り順序; ページの位置を決定する
-    # 並べて表示されるとき - デフォルト: L2R
-    print("Direction :", document.direction)
-
-    # ウィンドウのタイトルバーにドキュメントのタイトルを表示するかどうか
-    # falseの場合、タイトルバーにはPDFファイル名が表示される - デフォルト: false
-    print("DisplayDocTitle :", document.display_doc_title)
-
-    # ドキュメントのウィンドウを
-    # 最初に表示されるページのサイズに合わせてリサイズするかどうか - デフォルト: false
-    print("FitWindow :", document.fit_window)
-
-    # ビューアアプリケーションのメニューバーを隠すかどうか - デフォルト: false
-    print("HideMenuBar :", document.hide_menubar)
-
-    # ビューアアプリケーションのツールバーを隠すかどうか - デフォルト: false
-    print("HideToolBar :", document.hide_tool_bar)
-
-    # スクロールバーなどのUI要素を隠すかどうか
-    # ページ内容のみを表示する - デフォルト: false
-    print("HideWindowUI :", document.hide_window_ui)
-
-    # ドキュメントのページモード。フルスクリーンモードを終了したときのドキュメントの表示方法。
-    print("NonFullScreenPageMode :", document.non_full_screen_page_mode)
-
-    # ページのレイアウト、つまりシングルページ、1列
-    print("PageLayout :", document.page_layout)
-
-    # ドキュメントを開いたときの表示方法
-    # 例えば、サムネイルを表示、フルスクリーン、添付ファイルパネルを表示
-    print("pageMode :", document.page_mode)
-
+    print("CenterWindow:", document.center_window)
+    print("Direction:", document.direction)
+    print("DisplayDocTitle:", document.display_doc_title)
+    print("FitWindow:", document.fit_window)
+    print("HideMenuBar:", document.hide_menubar)
+    print("HideToolBar:", document.hide_tool_bar)
+    print("HideWindowUI:", document.hide_window_ui)
+    print("NonFullScreenPageMode:", document.non_full_screen_page_mode)
+    print("PageLayout:", document.page_layout)
+    print("PageMode:", document.page_mode)
 ```
 
 ### ドキュメントウィンドウとページ表示プロパティの設定
 
-このトピックでは、ドキュメントウィンドウ、ビューアアプリケーション、およびページ表示のプロパティを設定する方法を説明します。これらの異なるプロパティを設定するには:
+このトピックでは、ドキュメントウィンドウ、ビューアアプリケーション、およびページ表示のプロパティを設定する方法について説明します。これらのさまざまなプロパティを設定するには:
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスを使用してPDFファイルを開きます。
-1. Documentオブジェクトのプロパティを設定します。
-1. 保存メソッドを使用して更新されたPDFファイルを保存します。
+1. を使用して PDF ファイルを開きます [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。
+1. Document オブジェクトのプロパティを設定します。
+1. save メソッドを使用して、更新した PDF ファイルを保存します。
 
-利用可能なプロパティは次のとおりです:
+使用可能なプロパティは以下のとおりです。
 
-- CenterWindow
-- Direction
-- DisplayDocTitle
-- FitWindow
-- HideMenuBar
-- HideToolBar
-- HideWindowUI
-- NonFullScreenPageMode
-- PageLayout
-- PageMode
+- センターウィンドウ
+- 方向
+- ドキュメントタイトルを表示
+- フィットウィンドウ
+- メニューバーを非表示
+- ツールバーを非表示
+- ウィンドウ UI を非表示
+- 非全画面ページモード
+- ページレイアウト
+- ページモード
 
-以下のコードスニペットで、[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスを使用してプロパティを設定する方法を示します。
+それぞれが使用され、以下のコードで説明されています。次のコードスニペットは、を使用してプロパティを設定する方法を示しています。 [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # ドキュメントを開く
+def set_document_window(input_pdf, output_pdf):
+    """Set document window properties and save the result."""
     document = ap.Document(input_pdf)
 
-    # 異なるドキュメントプロパティを設定する
-    # ドキュメントウィンドウの位置を指定 - デフォルト: false
     document.center_window = True
-
-    # 主な読み取り順序を指定; ページの位置を決定する
-    # 並べて表示する場合 - デフォルト: L2R
     document.direction = ap.Direction.R2L
-
-    # ウィンドウのタイトルバーにドキュメントのタイトルを表示するか指定
-    # falseの場合、タイトルバーにはPDFファイル名が表示されます - デフォルト: false
     document.display_doc_title = True
-
-    # ドキュメントウィンドウのサイズを変更して最初に表示されるページのサイズに合わせるか指定
-    # デフォルト: false
     document.fit_window = True
-
-    # ビューアアプリケーションのメニューバーを隠すか指定 - デフォルト: false
     document.hide_menubar = True
-
-    # ビューアアプリケーションのツールバーを隠すか指定 - デフォルト: false
     document.hide_tool_bar = True
-
-    # スクロールバーなどのUI要素を隠して
-    # ページの内容のみを表示するか指定 - デフォルト: false
     document.hide_window_ui = True
-
-    # ドキュメントのページモード。全画面モードを終了したときの表示方法を指定します。
     document.non_full_screen_page_mode = ap.PageMode.USE_OC
-
-    # ページレイアウトを指定、すなわち単一ページ、1カラム
     document.page_layout = ap.PageLayout.TWO_COLUMN_LEFT
-
-    # ドキュメントを開いたときの表示方法を指定
-    # 例えば、サムネイルを表示、全画面表示、添付ファイルパネルを表示
     document.page_mode = ap.PageMode.USE_THUMBS
 
-    # 更新されたPDFファイルを保存
     document.save(output_pdf)
 ```
 
+### 標準タイプ 1 フォントの埋め込み
 
-### 標準タイプ1フォントの埋め込み
-
-一部のPDF文書には、特別なAdobeフォントセットからのフォントがあります。このセットからのフォントは「標準タイプ1フォント」と呼ばれます。このセットには14のフォントが含まれており、このタイプのフォントを埋め込むには、特別なフラグ、例えば [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) を使用する必要があります。以下は、標準タイプ1フォントを含むすべてのフォントが埋め込まれた文書を取得するために使用できるコードスニペットです:
+一部の PDF ドキュメントには、アドビの特別なフォントセットのフォントが含まれています。このセットのフォントは「標準 Type 1 フォント」と呼ばれます。このセットには 14 種類のフォントが含まれており、このタイプのフォントを埋め込むには特別なフラグを使用する必要があります。 [標準フォントを埋め込む](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties)。以下は、Standard Type 1 フォントを含むすべてのフォントが埋め込まれたドキュメントを取得するために使用できるコードスニペットです。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 既存のPDFドキュメントを読み込む
+def embedded_fonts(input_pdf, output_pdf):
+    """Ensure fonts in an existing PDF are embedded."""
     document = ap.Document(input_pdf)
-    # ドキュメントのEmbedStandardFontsプロパティを設定する
     document.embed_standard_fonts = True
+
     for page in document.pages:
-        if page.resources.fonts != None:
+        if page.resources.fonts:
             for page_font in page.resources.fonts:
-                # フォントがすでに埋め込まれているか確認する
                 if not page_font.is_embedded:
                     page_font.is_embedded = True
 
     document.save(output_pdf)
 ```
 
-### PDF作成時のフォントの埋め込み
+### PDF 作成中のフォントの埋め込み
 
-もし、Adobe Readerでサポートされている14のコアフォント以外のフォントを使用する必要がある場合は、PDFファイルを生成する際にフォントの説明を埋め込まなければなりません。フォント情報が埋め込まれていない場合、Adobe Readerはオペレーティングシステムからそれを取得します（システムにインストールされている場合）か、PDFのフォント記述子に基づいて代替フォントを構築します。
+Adobe Reader がサポートする 14 種類のコアフォント以外のフォントを使用する必要がある場合は、PDF ファイルの生成時にフォントの説明を埋め込む必要があります。フォント情報が埋め込まれていない場合、Adobe Reader がシステム上にインストールされている場合はオペレーティングシステムからフォント情報を取得するか、PDF 内のフォント記述子に従って代替フォントを作成します。
 
->埋め込まれるフォントはホストマシンにインストールされている必要があります。つまり、以下のコードで「Univers Condensed」フォントがシステムにインストールされているケースです。
+>埋め込みフォントはホストマシンにインストールする必要があることに注意してください。つまり、次のコードの場合、「Univers Condensed」フォントがシステム上にインストールされます。
 
-フォント情報をPDFファイルに埋め込むためにプロパティ「is_embedded」を使用します。このプロパティの値を「True」に設定すると、PDFに完全なフォントファイルが埋め込まれますが、これによりPDFファイルのサイズが増加することを知っておいてください。以下はフォント情報をPDFに埋め込むために使用できるコードスニペットです。
+プロパティ「is_embedded」を使用して、フォント情報をPDFファイルに埋め込みます。このプロパティの値を 'True' に設定すると、PDF ファイルのサイズが大きくなることを認識した上で、フォントファイル全体が PDF に埋め込まれます。PDF にフォント情報を埋め込むために使用できるコードスニペットを次に示します。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 空のコンストラクタを呼び出してPdfオブジェクトをインスタンス化する
-    doc = ap.Document()
-
-    # Pdfオブジェクトにセクションを作成する
-    page = doc.pages.add()
+def embedded_fonts_in_new_document(input_pdf, output_pdf):
+    """Embed fonts while generating a document from scratch."""
+    document = ap.Document()
+    page = document.pages.add()
 
     fragment = ap.text.TextFragment("")
     segment = ap.text.TextSegment(" This is a sample text using Custom font.")
-    ts = ap.text.TextState()
-    ts.font = ap.text.FontRepository.find_font("Arial")
-    ts.font.is_embedded = True
-    segment.text_state = ts
+    text_state = ap.text.TextState()
+    text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_state.font.is_embedded = True
+    segment.text_state = text_state
     fragment.segments.append(segment)
     page.paragraphs.add(fragment)
 
-    # PDFドキュメントを保存する
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
+### PDF の保存時にデフォルトフォント名を設定
 
-### PDFを保存する際にデフォルトフォント名を設定する
-
-PDFドキュメントに、ドキュメント自体やデバイスに存在しないフォントが含まれている場合、APIはこれらのフォントをデフォルトフォントに置き換えます。フォントが利用可能な場合（デバイスにインストールされているか、ドキュメントに埋め込まれている場合）、出力PDFは同じフォントを持つべきです（デフォルトフォントに置き換えられるべきではありません）。デフォルトフォントの値には、フォントファイルへのパスではなくフォントの名前が含まれている必要があります。ドキュメントをPDFとして保存する際にデフォルトフォント名を設定する機能を実装しました。デフォルトフォントを設定するには、次のコードスニペットを使用できます。
+PDF ドキュメントに、ドキュメント自体やデバイスでは使用できないフォントが含まれている場合、API はこれらのフォントをデフォルトのフォントに置き換えます。フォントが使用できる（デバイスにインストールされている、または文書に埋め込まれている）場合、出力 PDF も同じフォントである必要があります（デフォルトのフォントに置き換えないでください）。デフォルトフォントの値には、（フォントファイルへのパスではなく）フォントの名前が含まれている必要があります。文書を PDF として保存する際にデフォルトのフォント名を設定する機能が実装されました。以下のコードスニペットを使用してデフォルトフォントを設定できます。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # フォントが欠落している既存のPDFドキュメントをロードする
+def set_default_font(input_pdf, output_pdf):
+    """Assign a fallback font when saving a PDF."""
     document = ap.Document(input_pdf)
 
-    pdfSaveOptions = ap.PdfSaveOptions()
-    # デフォルトフォント名を指定する
-    newName = "Arial"
-    pdfSaveOptions.default_font_name = newName
-    document.save(output_pdf, pdfSaveOptions)
+    save_options = ap.PdfSaveOptions()
+    save_options.default_font_name = "Arial"
+    document.save(output_pdf, save_options)
 ```
 
-### PDFドキュメントからすべてのフォントを取得する
+### PDF ドキュメントからすべてのフォントを取得
 
-PDFドキュメントからすべてのフォントを取得したい場合、[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)クラスで提供されている[font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties)メソッドを使用できます。
- 既存のPDFドキュメントからすべてのフォントを取得するには、次のコードスニペットを確認してください。
+PDF文書からすべてのフォントを取得したい場合は、以下を使用できます [フォント_ユーティリティ](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) で提供されるメソッド [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラス。既存の PDF ドキュメントからすべてのフォントを取得するには、次のコードスニペットを確認してください。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    fonts = doc.font_utilities.get_all_fonts()
-    for font in fonts:
+def get_all_fonts(input_pdf, output_pdf):
+    """Print all fonts referenced by a document."""
+    document = ap.Document(input_pdf)
+    for font in document.font_utilities.get_all_fonts():
         print(font.font_name)
 ```
 
-### FontSubsetStrategyを使用したフォント埋め込みの改善
+### フォントサブセットストラテジーを使用してフォントの埋め込みを改善する
 
-以下のコードスニペットは、[font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties)プロパティで使用する[FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/)を設定する方法を示しています。
-
-```python
-
-    import aspose.pdf as ap
-
-    doc = ap.Document(input_pdf)
-    # SubsetAllFontsの場合、すべてのフォントはサブセットとしてドキュメントに埋め込まれます。
-    doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
-    # 完全に埋め込まれたフォントのためにフォントサブセットが埋め込まれますが、ドキュメントに埋め込まれていないフォントには影響しません。
-    doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY)
-    doc.save(output_pdf)
-```
-
-### PDFファイルのズームファクターの取得と設定
-
-時には、PDFドキュメントの現在のズームファクターを確認したいことがあります。Aspose.Pdfを使用すると、現在の値を確認することができ、また、設定することもできます。
-
-[GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) クラスの Destination プロパティを使用すると、PDFファイルに関連付けられたズーム値を取得できます。同様に、ファイルのズームファクターを設定するためにも使用できます。
-
-#### ズームファクターの設定
-
-次のコードスニペットは、PDFファイルのズームファクターを設定する方法を示しています。
+次のコードスニペットは、設定方法を示しています [フォントサブセット戦略](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) 使用されています [フォント_ユーティリティ](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) プロパティ:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 新しいDocumentオブジェクトをインスタンス化
-    doc = ap.Document(input_pdf)
+def improve_fonts_embedding(input_pdf, output_pdf):
+    """Apply different font subset strategies to reduce file size."""
+    document = ap.Document(input_pdf)
 
-    action = ap.annotations.GoToAction(ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5))
-    doc.open_action = action
-    # ドキュメントを保存
-    doc.save(output_pdf)
+    document.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
+    document.font_utilities.subset_fonts(
+        ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY
+    )
+
+    document.save(output_pdf)
 ```
 
-#### ズームファクターの取得
+### PDF ファイルのズーム係数の取得/設定
 
-次のコードスニペットは、PDFファイルのズームファクターを取得する方法を示しています。
+PDF ドキュメントの現在のズーム倍率を確認したい場合があります。Aspose.Pdf では、現在の値を確認できるだけでなく、設定することもできます。
+
+ザの [アクションに移動](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) class Destination プロパティを使用すると、PDF ファイルに関連付けられているズーム値を取得できます。同様に、ファイルのズーム係数を設定するのにも使用できます。
+
+#### ズーム倍率を設定
+
+次のコードスニペットは、PDF ファイルのズーム係数を設定する方法を示しています。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # 新しいDocumentオブジェクトをインスタンス化
-    doc = ap.Document(input_pdf)
+def set_zoom_factor(input_pdf, output_pdf):
+    """Set an initial zoom level via document open action."""
+    document = ap.Document(input_pdf)
 
-    # GoToActionオブジェクトを作成
-    action = doc.open_action
-
-    # PDFファイルのズームファクターを取得
-    print(action.destination.zoom)
+    action = ap.annotations.GoToAction(
+        ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5)
+    )
+    document.open_action = action
+    document.save(output_pdf)
 ```
 
+#### ズームファクターを取得
 
-### 印刷ダイアログプリセットプロパティの設定
-
-Aspose.PDFを使用すると、PDFドキュメントの[DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members)メンバーを設定できます。これにより、デフォルトではシンプルモードに設定されているPDFドキュメントのDuplexModeプロパティを変更することができます。これは、以下に示す2つの異なる方法で実現できます。
+次のコードスニペットは、PDF ファイルのズーム係数を取得する方法を示しています。
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document()
-    doc.pages.add()
-    doc.duplex = ap.PrintDuplex.DUPLEX_FLIP_LONG_EDGE
-    doc.save(output_pdf)
+def get_zoom_factor(input_pdf, output_pdf):
+    """Print the zoom level configured in the document open action."""
+    document = ap.Document(input_pdf)
+
+    action = document.open_action
+    if action and action.destination:
+        print("Zoom:", action.destination.zoom)
+    else:
+        print("Zoom: not set")
 ```
 
-### PDFコンテンツエディターを使用して印刷ダイアログプリセットプロパティを設定
+## 関連ドキュメントトピック
 
-```python
-
-    import aspose.pdf as ap
-
-    ed = ap.facades.PdfContentEditor()
-    ed.bind_pdf(input_pdf)
-    if (ed.get_viewer_preference() & ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE) > 0:
-        print("ファイルは両面短辺反転が設定されています")
-
-    ed.change_viewer_preference(ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE)
-    ed.save(output_pdf)
-```
+- [Python で PDF ドキュメントを操作する](/pdf/ja/python-net/working-with-documents/)
+- [Python で PDF ファイルを作成](/pdf/ja/python-net/create-pdf-document/)
+- [Python で PDF ドキュメントを操作する方法](/pdf/ja/python-net/manipulate-pdf-document/)
+- [Python で PDF ファイルを最適化する方法](/pdf/ja/python-net/optimize-pdf/)

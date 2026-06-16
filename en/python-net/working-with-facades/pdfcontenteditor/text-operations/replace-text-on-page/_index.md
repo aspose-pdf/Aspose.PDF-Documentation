@@ -1,5 +1,6 @@
 ---
-title: Replace Text On Page
+title: Replace Text On Page
+linktitle: Replace Text On Page
 type: docs
 weight: 10
 url: /python-net/replace-text-on-page/

@@ -1,5 +1,6 @@
 ---
-title: Add Markup Annotations
+title: Add Markup Annotations
+linktitle: Add Markup Annotations
 type: docs
 weight: 30
 url: /python-net/add-markup-annotation/

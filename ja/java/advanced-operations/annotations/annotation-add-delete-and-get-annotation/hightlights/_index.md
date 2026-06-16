@@ -1,5 +1,5 @@
 ---
-title: PDF ハイライト注釈 
+title: PDF ハイライト注釈
 linktitle: ハイライト注釈
 type: docs
 weight: 20

@@ -1,5 +1,6 @@
 ---
 title: Modifying Form Fields
+linktitle: Modifying Form Fields
 type: docs
 weight: 20
 url: /java/modifying-form-fields/

@@ -1,6 +1,6 @@
 ---
-title: Converter PDF para formatos PDF/A 
-linktitle: Converter PDF para formatos PDF/A 
+title: Converter PDF para formatos PDF/A
+linktitle: Converter PDF para formatos PDF/A
 type: docs
 weight: 100
 url: /pt/php-java/convert-pdf-to-pdfa/

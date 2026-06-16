@@ -1,5 +1,6 @@
 ---
-title: Concatenate Two PDF Files
+title: Concatenate Two PDF Files
+linktitle: Concatenate Two PDF Files
 type: docs
 weight: 60
 url: /python-net/concatenate-two-files/

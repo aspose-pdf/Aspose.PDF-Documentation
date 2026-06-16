@@ -94,7 +94,7 @@ Oleh karena itu, untuk membuat dokumen PDF dengan Aspose.PDF, Anda harus mengiku
 1. Buat objek Document.
 1. Tambahkan halaman (objek Page) untuk objek Document.
 1. Buat objek yang ditempatkan di halaman (misalnya fragmen teks, tabel, dll.).
-1. Tambahkan item yang dibuat ke koleksi yang sesuai di halaman (dalam kasus kami ini akan menjadi koleksi paragraf).
+1. Tambahkan item yang dibuat ke koleksi yang sesuai di halaman (dalam kasus kami ini akan menjadi koleksi `paragraphs`).
 1. Simpan dokumen sebagai file PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

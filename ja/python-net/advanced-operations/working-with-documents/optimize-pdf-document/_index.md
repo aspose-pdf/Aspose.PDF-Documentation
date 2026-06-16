@@ -1,401 +1,359 @@
 ---
-title: PythonでPDFサイズを最適化、圧縮または縮小
-linktitle: PDFを最適化
+title: Python で PDF ファイルを最適化する方法
+linktitle: PDF を最適化
 type: docs
 weight: 30
 url: /ja/python-net/optimize-pdf/
-description: PDFファイルを最適化し、すべての画像を縮小し、PDFサイズを減らし、埋め込みフォントを削除し、Pythonで未使用のオブジェクトを除去します。
-lastmod: "2023-04-17"
+description: Aspose.PDF を使用して Python で PDF ファイルのサイズを最適化、圧縮、縮小する方法を学びましょう。
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF ページを圧縮する
+Abstract: この記事では、PDFファイルを最適化してWebページ、電子メール、ストレージシステムなどのさまざまなプラットフォームでサイズを縮小し、パフォーマンスを向上させるための包括的なガイドを提供します。最適化手法には、画像サイズの縮小、未使用リソースの削除、フォントの埋め込み解除などがあります。Aspose.PDF for Python の「最適化」メソッドと「リソース最適化」メソッドを利用して、Web 用に PDF を最適化し、ファイル全体のサイズを小さくする具体的な方法について説明します。最適化戦略は「OptimizationOptions」でカスタマイズでき、画像の圧縮、未使用のオブジェクトやストリームの削除、重複ストリームのリンク、フォントの埋め込み解除などの対象を絞ったアクションが可能になります。その他の方法としては、注釈のフラット化、フォームフィールドの削除、PDF ファイルを RGB からグレースケールに変換してサイズをさらに小さくする方法があります。また、FlateDecode圧縮を使用して画像を最適化することで、品質と機能を維持しながら効果的なPDFファイル管理を実現する方法についても取り上げています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用してPDFを最適化",
-    "alternativeHeadline": "PythonでPDFを最適化する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, optimize pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/optimize-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/optimize-pdf/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "PDFファイルを最適化し、すべての画像を縮小し、PDFサイズを減らし、埋め込みフォントを削除し、Pythonで未使用のオブジェクトを除去します。"
-}
-</script>
 
+PDF 文書には追加のデータが含まれている場合があります。PDF ファイルのサイズを小さくすると、ネットワーク転送とストレージを最適化するのに役立ちます。これは、Web ページへの公開、ソーシャルネットワークでの共有、電子メールによる送信、またはストレージへのアーカイブに特に便利です。PDF を最適化するにはいくつかの手法を使用できます。
 
-PDFドキュメントには時々追加のデータが含まれることがあります。PDFファイルのサイズを縮小することで、ネットワークの転送とストレージを最適化するのに役立ちます。これは、ウェブページでの公開、ソーシャルネットワークでの共有、電子メールでの送信、またはストレージでのアーカイブに特に便利です。PDFを最適化するためにいくつかの技術を使用できます：
+Web 配信、E メール共有、ストレージの節約、または印刷に適した出力のために、文書をゼロから再構築せずに PDF サイズを小さくする必要がある場合は、このページを使用してください。
 
-- オンライン閲覧のためにページコンテンツを最適化する
-- すべての画像を縮小または圧縮する
+- オンラインブラウジング用にページコンテンツを最適化する
+- すべての画像を縮小または圧縮
 - ページコンテンツの再利用を有効にする
-- 重複するストリームをマージする
-- フォントの埋め込みを解除する
-- 使用されていないオブジェクトを削除する
-- フォームフィールドのフラット化を削除する
+- 重複ストリームをマージ
+- フォントの埋め込み解除
+- 未使用のオブジェクトを削除する
+- フラットニングフォームフィールドを削除する
 - 注釈を削除またはフラット化する
 
 {{% alert color="primary" %}}
 
-最適化方法の詳細な説明は、最適化方法概要ページで確認できます。
+ 最適化方法の詳細な説明は、最適化方法の概要ページにあります。
 
 {{% /alert %}}
 
-## Web用のPDFドキュメントを最適化する
+## PDF ドキュメントを Web 用に最適化
 
-Web用の最適化、または線形化とは、PDFファイルをウェブブラウザを使用してオンライン閲覧に適した状態にするプロセスを指します。ウェブ表示用にファイルを最適化するには：
+最適化、またはWebのリニアライゼーションとは、Webブラウザーを使用してオンラインブラウジングに適したPDFファイルを作成するプロセスを指します。ファイルを Web 表示用に最適化するには:
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトで入力ドキュメントを開きます。
-1. [Optimize](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを使用します。
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを使用して最適化されたドキュメントを保存します。
+1. で入力ドキュメントを開きます [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 対象。
+1. を使う [最適化](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法。
+1. を使用して最適化されたドキュメントを保存します [保存 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法。
 
-次のコードスニペットは、PDFドキュメントをWeb用に最適化する方法を示しています。
+次のコードスニペットは、PDF ドキュメントを Web 用に最適化する方法を示しています。
 
-```python 
+```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
-    import aspose.pdf as ap
 
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # Web用に最適化
+def optimize_pdf(infile, outfile):
+    document = ap.Document(infile)
     document.optimize()
-
-    # 出力ドキュメントを保存
-    document.save(output_pdf)
-```
-
-## PDFサイズの縮小
-
-[OptimizeResources()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドは、不必要な情報を除去することでドキュメントサイズを縮小することを可能にします。デフォルトでは、このメソッドは以下のように機能します：
-
-- ドキュメントページで使用されていないリソースが削除されます
-- 同一のリソースが1つのオブジェクトに結合されます
-
-- 未使用のオブジェクトが削除されます
-
-スニペット以下は一例です。ただし、この方法ではドキュメントの縮小を保証できないことに注意してください。
-
-```python
-
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-    # PDFドキュメントを最適化する。ただし、この方法ではドキュメントの縮小を保証できないことに注意してください
-    document.optimize_resources()
-    # 更新されたドキュメントを保存
-    document.save(output_pdf)
-```
-
-## 最適化戦略管理
-
-最適化戦略をカスタマイズすることもできます。現在、[OptimizeResources()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドは5つの技術を使用しています。これらの技術は [OptimizationOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/optimizationoptions/) パラメーターを使用して OptimizeResources() メソッドで適用できます。
-
-### すべての画像の縮小または圧縮
-
-画像を扱う方法は2つあります：画像の品質を下げること、または解像度を変更することです。
- いずれにせよ、[ImageCompressionOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/imagecompressionoptions/) を適用する必要があります。以下の例では、ImageQuality を 50 に減らすことで画像を縮小します。
-
-```python
-
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-    # OptimizationOptions を初期化
-    optimizeOptions = ap.optimization.OptimizationOptions()
-    # CompressImages オプションを設定
-    optimizeOptions.image_compression_options.compress_images = True
-    # ImageQuality オプションを設定
-    optimizeOptions.image_compression_options.image_quality = 50
-    # OptimizationOptions を使用して PDF ドキュメントを最適化
-    document.optimize_resources(optimizeOptions)
-    # 更新されたドキュメントを保存
-    document.save(output_pdf)
-```
-
-### 未使用オブジェクトの削除
-
-PDF ドキュメントには、ドキュメント内の他のオブジェクトから参照されていない PDF オブジェクトが含まれていることがあります。 この現象は、例えばページがドキュメントのページツリーから削除されたが、ページオブジェクト自体は削除されていない場合に起こります。これらのオブジェクトを削除してもドキュメントが無効になることはなく、むしろ縮小されます。
-
-```python
-
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-    # RemoveUsedObjectオプションを設定する
-    optimizeOptions = ap.optimization.OptimizationOptions()
-    optimizeOptions.remove_unused_objects = True
-
-    # OptimizationOptionsを使用してPDFドキュメントを最適化する
-    document.optimize_resources(optimizeOptions)
-    # 更新されたドキュメントを保存する
-    document.save(output_pdf)
-```
-
-### 未使用ストリームの削除
-
-時々、ドキュメントには未使用のリソースストリームが含まれています。 これらのストリームはページリソース辞書から参照されているため、「未使用オブジェクト」ではありません。したがって、「未使用オブジェクトを削除」する方法では削除されません。しかし、これらのストリームはページの内容で使用されることはありません。これは、画像がページから削除されたが、ページリソースから削除されていない場合に発生する可能性があります。また、ドキュメントからページが抽出され、ドキュメントページが「共通」のリソース、つまり同じResourcesオブジェクトを持っている場合にも、この状況がよく発生します。リソースストリームが使用されているかどうかを判断するためにページ内容が分析されます。未使用のストリームは削除されます。これにより、ドキュメントサイズが減少することがあります。この技術の使用は前のステップと似ています：
-
-```python
-
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-    # RemoveUsedStreamsオプションを設定
-    optimizeOptions = ap.optimization.OptimizationOptions()
-    optimizeOptions.remove_unused_streams = True
-    # OptimizationOptionsを使用してPDFドキュメントを最適化
-    document.optimize_resources(optimizeOptions)
-    # 更新されたドキュメントを保存
-    document.save(output_pdf)
-```
-
-### 重複ストリームのリンク
-
-一部の文書には、いくつかの同一のリソースストリーム（例えば画像）が含まれることがあります。これは、例えば文書がそれ自体と連結された場合に発生することがあります。出力文書には、同じリソースストリームの2つの独立したコピーが含まれています。すべてのリソースストリームを分析し、それらを比較します。ストリームが重複している場合、それらは統合され、つまり1つのコピーだけが残されます。参照が適切に変更され、オブジェクトのコピーが削除されます。場合によっては、文書のサイズを減らすのに役立ちます。
-
-```python
-
-    import aspose.pdf as ap
-
-    # 文書を開く
-    document = ap.Document(input_pdf)
-    # LinkDuplicateStreams オプションを設定
-    optimizeOptions = ap.optimization.OptimizationOptions()
-    optimizeOptions.link_duplcate_streams = True
-    # OptimizationOptions を使用してPDF文書を最適化
-    document.optimize_resources(optimizeOptions)
-    # 更新された文書を保存
-    document.save(output_pdf)
-```
-
-### フォントの埋め込み解除
-
-文書が埋め込みフォントを使用している場合、すべてのフォントデータが文書に保存されていることを意味します。
- ドキュメントの利点は、フォントがユーザーのマシンにインストールされているかどうかに関係なく表示可能であることです。しかし、フォントを埋め込むとドキュメントのサイズが大きくなります。フォントの埋め込み解除方法は、すべての埋め込みフォントを削除します。そのため、ドキュメントサイズは小さくなりますが、正しいフォントがインストールされていない場合、ドキュメント自体が読めなくなる可能性があります。
-
-```python
-
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-    # UnembedFontsオプションを設定
-    optimizeOptions = ap.optimization.OptimizationOptions()
-    optimizeOptions.unembed_fonts = True
-    # OptimizationOptionsを使用してPDFドキュメントを最適化
-    document.optimize_resources(optimizeOptions)
-    # 更新されたドキュメントを保存
-    document.save(output_pdf)
-    file_stats_1 = os.stat(input_pdf)
-    file_stats_2 = os.stat(output_pdf)
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
     print(
-        "元のファイルサイズ: {}. 削減されたファイルサイズ: {}".format(
+        "Original file size: {}. Reduced file size: {}".format(
             file_stats_1.st_size, file_stats_2.st_size
         )
     )
 ```
 
-最適化リソースは、これらの方法をドキュメントに適用します。 これらの方法のいずれかが適用されると、文書のサイズはおそらく減少します。これらの方法のいずれも適用されない場合、文書のサイズは変わらないのは明らかです。
+## PDF のサイズを小さくする
 
-## PDF文書サイズを減らすための追加の方法
+ザの [リソースの最適化 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを使用すると、不要な情報を削除してドキュメントサイズを小さくすることができます。デフォルトでは、このメソッドは次のように機能します。
+
+- ドキュメントページで使用されていないリソースは削除されます
+- 等しいリソースが 1 つのオブジェクトに結合されます
+- 未使用のオブジェクトは削除されます
+
+以下のスニペットはその一例です。ただし、この方法では文書の圧縮は保証されないことに注意してください。
+
+```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
+
+
+def reduce_size_pdf(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
+    # Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
+    document.optimize_resources()
+    # Save updated document
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
+```
+
+## 最適化戦略管理
+
+最適化戦略をカスタマイズすることもできます。現在、 [リソースの最適化 ()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドは5つのテクニックを使用します。これらのテクニックは、OptimizeResources () メソッドを次のように使用して適用できます。 [最適化オプション](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/optimizationoptions/) パラメーター。
+
+### すべての画像を縮小または圧縮する
+
+画像の処理には、画質を下げる方法と、解像度を変更する方法の2つがあります。いずれにしても、 [画像圧縮オプション](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/imagecompressionoptions/) 適用する必要があります。次の例では、ImageQuality を 50 に下げて画像を縮小しています。
+
+```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
+
+
+def shrinking_or_compressing_all_images(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
+    # Initialize OptimizationOptions
+    optimizeOptions = ap.optimization.OptimizationOptions()
+    # Set CompressImages option
+    optimizeOptions.image_compression_options.compress_images = True
+    # Set ImageQuality option
+    optimizeOptions.image_compression_options.image_quality = 50
+    # Optimize PDF document using OptimizationOptions
+    document.optimize_resources(optimizeOptions)
+    # Save updated document
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
+```
+
+### 未使用オブジェクトの削除
+
+PDF 文書には、文書内の他のオブジェクトから参照されていない PDF オブジェクトが含まれている場合があります。たとえば、ページが文書ページツリーから削除されたが、ページオブジェクト自体は削除されていない場合などがこれに該当します。これらのオブジェクトを削除しても、文書は無効になるわけではなく、むしろ縮小されます。
+
+```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
+
+
+def removing_unused_objects(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
+    # Set RemoveUnusedObjects option
+    optimizeOptions = ap.optimization.OptimizationOptions()
+    optimizeOptions.remove_unused_objects = True
+
+    # Optimize PDF document using OptimizationOptions
+    document.optimize_resources(optimizeOptions)
+    # Save updated document
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
+```
+
+### 未使用のストリームの削除
+
+ドキュメントに未使用のリソースストリームが含まれている場合があります。これらのストリームはページリソースディクショナリから参照されるため、「未使用オブジェクト」ではありません。したがって、「未使用オブジェクトの削除」メソッドを使用しても削除されません。しかし、これらのストリームはページコンテンツでは決して使用されません。これは、画像がページからは削除されているが、ページリソースからは削除されていない場合に発生する可能性があります。また、このような状況は、ページが文書から抽出され、文書ページに「共通の」リソース、つまり同じ Resources オブジェクトがある場合によく発生します。リソースストリームが使用されているかどうかを判断するために、ページの内容が分析されます。未使用のストリームは削除されます。文書サイズが小さくなることがあります。このテクニックの使用方法は前のステップと似ています。
+
+```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
+
+
+def removing_unused_streams(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
+    # Set RemoveUnusedStreams option
+    optimizeOptions = ap.optimization.OptimizationOptions()
+    optimizeOptions.remove_unused_streams = True
+    # Optimize PDF document using OptimizationOptions
+    document.optimize_resources(optimizeOptions)
+    # Save updated document
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
+```
+
+### 重複ストリームのリンク
+
+ドキュメントによっては、同じリソースストリーム (画像など) が複数含まれている場合があります。これは、たとえば文書がそれ自体と連結されている場合などに起こる可能性があります。出力ドキュメントには、同じリソースストリームの独立したコピーが 2 つ含まれています。すべてのリソースストリームを分析して比較します。ストリームが重複している場合、それらはマージされます。つまり、コピーが 1 つだけ残ります。参照は適切に変更され、オブジェクトのコピーは削除されます。場合によっては、文書サイズを小さくすると役立つことがあります。
+
+```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
+
+
+def linking_duplicate_streams(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
+    # Set link_duplicate_streams option
+    optimizeOptions = ap.optimization.OptimizationOptions()
+    optimizeOptions.link_duplicate_streams = True
+    # Optimize PDF document using OptimizationOptions
+    document.optimize_resources(optimizeOptions)
+    # Save updated document
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
+```
+
+### フォントの埋め込み解除
+
+文書が埋め込みフォントを使用している場合は、すべてのフォントデータが文書に保存されていることを意味します。その利点は、フォントがユーザーのマシンにインストールされているかどうかに関係なく、文書を表示できることです。しかし、フォントを埋め込むと文書が大きくなります。フォントの埋め込みを解除する方法では、埋め込まれたフォントがすべて削除されます。そのため、正しいフォントがインストールされていないと、文書のサイズは小さくなりますが、文書自体が読めなくなる可能性があります。
+
+```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
+
+
+def unembed_fonts(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
+    # Set unembed_fonts option
+    optimize_options = ap.optimization.OptimizationOptions()
+    optimize_options.unembed_fonts = True
+    # Optimize PDF document using OptimizationOptions
+    document.optimize_resources(optimize_options)
+    # Save updated document
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
+```
+
+最適化リソースはこれらのメソッドをドキュメントに適用します。これらの方法のいずれかを適用すると、文書のサイズは小さくなる可能性が高いです。これらの方法をどれも適用しなければ、文書サイズは変わりませんが、これは明らかです。
+
+## PDF ドキュメントサイズを縮小するその他の方法
 
 ### 注釈の削除またはフラット化
 
-注釈が不要な場合は削除できます。必要な場合でも追加の編集が不要な場合は、フラット化できます。どちらの技術もファイルサイズを削減します。
+注釈は不要になったら削除できます。必要であっても追加の編集が不要な場合は、フラット化できます。どちらの方法でもファイルサイズが小さくなります。
 
 ```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
-    import aspose.pdf as ap
 
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-    # 注釈をフラット化
+def flatten_annotations(infile, outfile):
+    # Open document
+    document = ap.Document(infile)
+    # Flatten annotations
     for page in document.pages:
         for annotation in page.annotations:
             annotation.flatten()
 
-    # 更新されたドキュメントを保存
-    document.save(output_pdf)
+    # Save updated document
+    document.save(outfile)
 ```
 
-### フォームフィールドの削除
+### フォームフィールドを削除する
 
-PDF文書にAcroFormsが含まれている場合、フォームフィールドをフラット化することでファイルサイズを減らすことができます。
+PDF ドキュメントに AcroForms が含まれている場合は、フォームフィールドをフラット化してファイルサイズを小さくすることができます。
 
 ```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
-    import aspose.pdf as ap
 
-    # ソースPDFフォームを読み込む
-    doc = ap.Document(input_pdf)
+def flatten_forms(infile, outfile):
+    # Load source PDF form
+    doc = ap.Document(infile)
 
-    # フォームをフラット化
+    # Flatten Forms
     if len(doc.form.fields) > 0:
         for item in doc.form.fields:
             item.flatten()
 
-    # 更新されたドキュメントを保存
-    doc.save(output_pdf)
+    # Save the updated document
+    doc.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
 ```
 
-### RGBカラースペースからグレースケールにPDFを変換する
+### PDF を RGB カラースペースからグレースケールに変換
 
-PDFファイルは、テキスト、画像、添付ファイル、注釈、グラフ、その他のオブジェクトで構成されています。PDFをRGBカラースペースからグレースケールに変換する必要がある場合があります。こうすることで、PDFファイルを印刷する際により速くなります。また、ファイルがグレースケールに変換されると、ドキュメントのサイズも縮小されますが、品質が低下する可能性もあります。この機能は現在Adobe Acrobatのプリフライト機能でサポートされていますが、オフィスの自動化に関しては、Aspose.PDFがドキュメント操作のための最適なソリューションを提供します。この要件を達成するために、以下のコードスニペットを使用できます。
+PDFファイルは、テキスト、画像、添付ファイル、注釈、グラフ、およびその他のオブジェクトで構成されます。PDF ファイルの印刷時間を短縮するために、PDF を RGB カラースペースからグレースケールに変換しなければならない場合があります。また、ファイルをグレースケールに変換すると、文書サイズも小さくなりますが、文書の品質が低下する場合もあります。この機能は現在 Adobe Acrobat のプリフライト機能でサポートされていますが、Office オートメーションについて言えば、このような文書操作の活用を実現する究極のソリューションが Aspose.PDF です。この要件を満たすには、次のコードスニペットを使用できます。
 
 ```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
-    import aspose.pdf as ap
 
-    # ソースPDFファイルをロード
-    document = ap.Document(input_pdf)
+def сonvert_PDF_from_RGB_colorspace_to_grayscale(infile, outfile):
+    document = ap.Document(infile)
     strategy = ap.RgbToDeviceGrayConversionStrategy()
     for page in document.pages:
-        # RGBカラースペース画像をグレースケールカラースペースに変換
+        # Convert the RGB colorspace image to GrayScale colorspace
         strategy.convert(page)
 
-    # 結果ファイルを保存
-    document.save(output_pdf)
+    # Save resultant file
+    document.save(outfile)
 ```
 
+### フラットデコード圧縮
 
-### FlateDecode 圧縮
-
-Aspose.PDF for Python via .NETは、PDF最適化機能のためのFlateDecode圧縮のサポートを提供します。以下のコードスニペットは、**FlateDecode**圧縮を使用して画像を保存するための最適化オプションの使用方法を示しています。
+.NET 経由の Python 用 Aspose.PDF は、PDF 最適化機能の FlateDecode 圧縮をサポートしています。以下のコードスニペットは、最適化のオプションを使用して **FlateDecode** 圧縮で画像を保存する方法を示しています。
 
 ```python
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
-    import aspose.pdf as ap
 
-    # ドキュメントを開く
-    doc = ap.Document(input_pdf)
-    # OptimizationOptionsを初期化する
+def using_flatedecode_compression(infile, outfile):
+
+    # Open Document
+    doc = ap.Document(infile)
+    # Initialize OptimizationOptions
     optimizationOptions = ap.optimization.OptimizationOptions()
-    # FlateDecode圧縮を使用して画像を最適化するために最適化オプションをFlateに設定する
-    optimizationOptions.image_compression_options.encoding = ap.optimization.ImageEncoding.FLATE
-    # 最適化オプションを設定する
+    # To optimise image using FlateDecode Compression set optimization options to Flate
+    optimizationOptions.image_compression_options.encoding = (
+        ap.optimization.ImageEncoding.FLATE
+    )
+    # Set Optimization Options
     doc.optimize_resources(optimizationOptions)
-    # ドキュメントを保存する
-    doc.save(output_pdf)
+    # Save Document
+    doc.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 関連ドキュメントトピック
+
+- [Python で PDF ドキュメントを操作する](/pdf/ja/python-net/working-with-documents/)
+- [Python で PDF ファイルをマージする](/pdf/ja/python-net/merge-pdf-documents/)
+- [Python で PDF ファイルを分割する方法](/pdf/ja/python-net/split-document/)
+- [Python で PDF ドキュメントを操作する方法](/pdf/ja/python-net/manipulate-pdf-document/)
+

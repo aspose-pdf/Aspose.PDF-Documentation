@@ -1,5 +1,5 @@
 ---
-title: Работа с XFA Формами в PDF 
+title: Работа с XFA Формами в PDF
 linktitle: XFA Формы
 type: docs
 weight: 20

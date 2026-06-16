@@ -1,14 +1,14 @@
 ---
-title: 高级操作  
-linktitle: 高级操作  
-type: docs  
-weight: 70  
-url: /zh/java/advanced-operations/  
-description: 您不仅可以执行简单和容易的任务，还可以使用 Aspose.PDF for Java 应对更复杂的目标。  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: 高级操作
+linktitle: 高级操作
+type: docs
+weight: 70
+url: /zh/java/advanced-operations/
+description: 您不仅可以执行简单和容易的任务，还可以使用 Aspose.PDF for Java 应对更复杂的目标。
+lastmod: "2021-06-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 **高级操作**是一个关于如何以编程方式处理现有 PDF 文件的部分，无论是使用 Aspose.PDF 创建的文档（如在[基本操作](/pdf/zh/java/basic-operations)中讨论的），还是使用 Adobe Acrobat、Google Docs、Microsoft Office、Open Office 或任何其他 PDF 制作工具创建的 PDF。

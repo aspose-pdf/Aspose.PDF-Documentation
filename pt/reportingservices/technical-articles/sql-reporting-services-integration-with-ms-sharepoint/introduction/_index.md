@@ -1,11 +1,10 @@
 ---
 
-title: Introdução  
-type: docs  
-weight: 10  
-url: /pt/reportingservices/introduction/  
-lastmod: "2021-06-05"  
-
+title: Introdução
+type: docs
+weight: 10
+url: /pt/reportingservices/introduction/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}

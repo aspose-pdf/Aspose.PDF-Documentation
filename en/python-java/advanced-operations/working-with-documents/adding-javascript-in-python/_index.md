@@ -1,5 +1,6 @@
 ---
 title: Adding JavaScript in Python
+linktitle: Adding JavaScript in Python
 type: docs
 weight: 10
 url: /python-java/adding-javascript-in-python/

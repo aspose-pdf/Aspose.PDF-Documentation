@@ -1,5 +1,5 @@
 ---
-title: Hapus Halaman PDF dengan JavaScript melalui C++ 
+title: Hapus Halaman PDF dengan JavaScript melalui C++
 linktitle: Hapus Halaman PDF
 type: docs
 weight: 30

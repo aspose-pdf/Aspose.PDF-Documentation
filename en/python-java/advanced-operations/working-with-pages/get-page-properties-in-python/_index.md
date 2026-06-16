@@ -1,5 +1,6 @@
 ---
 title: Get Page Properties in Python
+linktitle: Get Page Properties in Python
 type: docs
 weight: 50
 url: /python-java/get-page-properties-in-python/

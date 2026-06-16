@@ -1,5 +1,5 @@
 ---
-title: Обновление ссылок в PDF 
+title: Обновление ссылок в PDF
 linktitle: Обновление ссылок
 type: docs
 weight: 20

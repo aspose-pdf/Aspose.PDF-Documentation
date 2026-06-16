@@ -1,5 +1,5 @@
 ---
-title: 툴팁 사용 
+title: 툴팁 사용
 linktitle: PDF 툴팁
 type: docs
 weight: 20

@@ -1,235 +1,122 @@
 ---
-title: تنسيق مستند PDF باستخدام بايثون
+title: تنسيق مستندات PDF في بايثون
 linktitle: تنسيق مستند PDF
 type: docs
 weight: 11
 url: /ar/python-net/formatting-pdf-document/
-description: قم بإنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لبايثون عبر .NET. استخدم الجزء التالي من الكود لحل مهامك.
-lastmod: "2023-04-12"
+description: تعرف على كيفية تنسيق مستندات PDF وتضمين الخطوط والتحكم في إعدادات العارض وضبط خيارات العرض في Python.
+lastmod: "2026-06-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: تنسيق مستندات PDF باستخدام Python
+Abstract: توفر المقالة دليلًا شاملاً حول معالجة مستندات PDF وتنسيقها باستخدام مكتبة Aspose.PDF في Python. ويغطي جوانب مختلفة من تخصيص PDF، بما في ذلك إعداد نافذة المستند وخصائص عرض الصفحة مثل توسيط النافذة واتجاه القراءة وإخفاء عناصر واجهة المستخدم. توضح المقالة كيفية استرداد هذه الخصائص وتعيينها برمجيًا باستخدام فئة «المستند». بالإضافة إلى ذلك، فإنه يتناول إدارة الخطوط، ويوضح بالتفصيل كيفية تضمين خطوط Standard Type 1 والخطوط الأخرى في ملفات PDF، مما يضمن قابلية نقل المستندات والاتساق المرئي عبر الأنظمة. كما يسلط الضوء على تقنيات تعيين اسم الخط الافتراضي، واسترداد جميع الخطوط من ملف PDF، وتعزيز تضمين الخط باستخدام `FontSubsetStrategy`. علاوة على ذلك، توضح المقالة تعديل عامل التكبير لمستندات PDF باستخدام فئة «GoToAction» وتكوين خصائص الإعداد المسبق لمربع حوار الطباعة، بما في ذلك خيارات الطباعة على الوجهين. ترافق مقتطفات التعليمات البرمجية كل قسم، وتقدم أمثلة عملية لتنفيذ هذه الميزات.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "تنسيق مستند PDF باستخدام بايثون",
-    "alternativeHeadline": "كيفية تنسيق مستند PDF في بايثون عبر .NET",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, dotnet, python, تنسيق مستند pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/formatting-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/formatting-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "قم بإنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لبايثون عبر .NET. استخدم الجزء التالي من الكود لحل مهامك."
-}
-</script>
 
+هذا الدليل مفيد عندما تحتاج إلى التحكم في سلوك عارض PDF أو تضمين الخط أو إعدادات العرض الافتراضية أو تفضيلات الطباعة في المستندات التي تم إنشاؤها بواسطة Python.
 
 ## تنسيق مستند PDF
 
-### الحصول على خصائص نافذة المستند وعرض الصفحة
+### احصل على خصائص نافذة المستند وعرض الصفحة
 
-يساعدك هذا الموضوع على فهم كيفية الحصول على خصائص نافذة المستند، وتطبيق العارض، وكيفية عرض الصفحات. لتعيين هذه الخصائص:
+يساعدك هذا الموضوع على فهم كيفية الحصول على خصائص نافذة المستند وتطبيق العارض وكيفية عرض الصفحات. لتعيين هذه الخصائص:
 
-افتح ملف PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). يمكنك الآن تعيين خصائص كائن المستند، مثل
+افتح ملف PDF باستخدام [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة. الآن، يمكنك تعيين خصائص كائن المستند، مثل
 
-- CenterWindow – تمركز نافذة المستند على الشاشة. الافتراضي: خطأ.
-- Direction – ترتيب القراءة. يحدد هذا كيفية ترتيب الصفحات عند عرضها جنبًا إلى جنب. الافتراضي: من اليسار إلى اليمين.
-- DisplayDocTitle – عرض عنوان المستند في شريط عنوان نافذة المستند. الافتراضي: خطأ (يتم عرض العنوان).
-- HideMenuBar – إخفاء أو عرض شريط القوائم الخاص بنافذة المستند. الافتراضي: خطأ (يتم عرض شريط القوائم).
-- HideToolBar – إخفاء أو عرض شريط الأدوات الخاص بنافذة المستند. الافتراضي: خطأ (يتم عرض شريط الأدوات).
-- HideWindowUI – إخفاء أو عرض عناصر نافذة المستند مثل أشرطة التمرير.
- الافتراضي: false (يتم عرض عناصر واجهة المستخدم).
-- NonFullScreenPageMode – كيفية عرض المستند عند عدم عرضه في وضع الشاشة الكاملة.
-- PageLayout – تخطيط الصفحة.
-- PageMode – كيفية عرض المستند عند فتحه لأول مرة. الخيارات هي عرض الصور المصغرة، الشاشة الكاملة، عرض لوحة المرفقات.
+- CenterWindow - قم بتوسيط نافذة المستند على الشاشة. الإعداد الافتراضي: خطأ.
+- الاتجاه - ترتيب القراءة. يحدد هذا كيفية تخطيط الصفحات عند عرضها جنبًا إلى جنب. الإعداد الافتراضي: من اليسار إلى اليمين.
+- DisplayDocTitle - عرض عنوان المستند في شريط عنوان نافذة المستند. الإعداد الافتراضي: خطأ (يتم عرض العنوان).
+- HideMenuBar - إخفاء أو عرض شريط قوائم نافذة المستند. الإعداد الافتراضي: خطأ (يتم عرض شريط القوائم).
+- HideToolbar - إخفاء شريط أدوات نافذة المستند أو عرضه. الإعداد الافتراضي: خطأ (يتم عرض شريط الأدوات).
+- HideWindowUI - إخفاء أو عرض عناصر نافذة المستند مثل أشرطة التمرير. الإعداد الافتراضي: خطأ (يتم عرض عناصر واجهة المستخدم).
+- NonFullScreenPageMode - كيفية عرض المستند عندما لا يتم عرضه في وضع الصفحة الكاملة.
+- PageLayout - تخطيط الصفحة.
+- PageMode - كيفية عرض المستند عند فتحه لأول مرة. الخيارات هي عرض الصور المصغرة، ملء الشاشة، عرض لوحة المرفقات.
 
-يظهر لك مقتطف الشيفرة التالي كيفية الحصول على الخصائص باستخدام فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+يوضح لك مقتطف الشفرة التالي كيفية الحصول على الخصائص باستخدام [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # فتح المستند
+def get_document_window(input_pdf, output_pdf):
+    """Print document window metadata for inspection."""
     document = ap.Document(input_pdf)
 
-    # الحصول على خصائص المستند المختلفة
-    # موضع نافذة المستند - الافتراضي: false
-    print("CenterWindow :", document.center_window)
-
-    # ترتيب القراءة السائد؛ يحدد موضع الصفحة
-    # عندما يتم العرض جنبًا إلى جنب - الافتراضي: L2R
-    print("Direction :", document.direction)
-
-    # ما إذا كان يجب أن تعرض شريط عنوان النافذة عنوان المستند
-    # إذا كان false، يعرض شريط العنوان اسم ملف PDF - الافتراضي: false
-    print("DisplayDocTitle :", document.display_doc_title)
-
-    # ما إذا كان يجب تغيير حجم نافذة المستند لتتناسب مع حجم
-    # الصفحة الأولى المعروضة - الافتراضي: false
-    print("FitWindow :", document.fit_window)
-
-    # ما إذا كان يجب إخفاء شريط القوائم لتطبيق العارض - الافتراضي: false
-    print("HideMenuBar :", document.hide_menubar)
-
-    # ما إذا كان يجب إخفاء شريط الأدوات لتطبيق العارض - الافتراضي: false
-    print("HideToolBar :", document.hide_tool_bar)
-
-    # ما إذا كان يجب إخفاء عناصر واجهة المستخدم مثل أشرطة التمرير
-    # وترك محتويات الصفحة فقط معروضة - الافتراضي: false
-    print("HideWindowUI :", document.hide_window_ui)
-
-    # وضع صفحة المستند. كيفية عرض المستند عند الخروج من وضع الشاشة الكاملة.
-    print("NonFullScreenPageMode :", document.non_full_screen_page_mode)
-
-    # تخطيط الصفحة أي صفحة واحدة، عمود واحد
-    print("PageLayout :", document.page_layout)
-
-    # كيف ينبغي عرض المستند عند فتحه
-    # أي عرض الصور المصغرة، الشاشة الكاملة، عرض لوحة المرفقات
-    print("pageMode :", document.page_mode)
-
+    print("CenterWindow:", document.center_window)
+    print("Direction:", document.direction)
+    print("DisplayDocTitle:", document.display_doc_title)
+    print("FitWindow:", document.fit_window)
+    print("HideMenuBar:", document.hide_menubar)
+    print("HideToolBar:", document.hide_tool_bar)
+    print("HideWindowUI:", document.hide_window_ui)
+    print("NonFullScreenPageMode:", document.non_full_screen_page_mode)
+    print("PageLayout:", document.page_layout)
+    print("PageMode:", document.page_mode)
 ```
 
-### إعداد خصائص نافذة وعرض الصفحة للمستند
+### تعيين نافذة الوثيقة وخصائص عرض الصفحة
 
-يشرح هذا الموضوع كيفية إعداد خصائص نافذة المستند، وتطبيق العارض، وعرض الصفحة. لتعيين هذه الخصائص المختلفة:
+يشرح هذا الموضوع كيفية تعيين خصائص نافذة المستند وتطبيق العارض وعرض الصفحة. لتعيين هذه الخصائص المختلفة:
 
-1. افتح ملف PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. قم بتعيين خصائص كائن المستند.
-3. احفظ ملف PDF المحدث باستخدام طريقة الحفظ.
+1. افتح ملف PDF باستخدام [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة.
+1. قم بتعيين خصائص كائن المستند.
+1. احفظ ملف PDF المحدث باستخدام طريقة الحفظ.
 
 الخصائص المتاحة هي:
 
-- CenterWindow
-- Direction
-- DisplayDocTitle
-- FitWindow
-- HideMenuBar
-- HideToolBar
-- HideWindowUI
-- NonFullScreenPageMode
-- PageLayout
-- PageMode
+- النافذة المركزية
+- اتجاه
+- عنوان المستند المعروض
+- فيت واندو
+- إخفاء شريط القوائم
+- إخفاء شريط الأدوات
+- إخفاء واجهة المستخدم الخاصة بنافود
+- وضع صفحة الشاشة غير الكاملة
+- تخطيط الصفحة
+- وضع الصفحة
 
-يتم استخدام كل منها ووصفها في الشيفرة أدناه. يظهر لك مقتطف الشيفرة التالي كيفية تعيين الخصائص باستخدام فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+يتم استخدام كل منها ووصفها في الكود أدناه. يوضح لك مقتطف الشفرة التالي كيفية تعيين الخصائص باستخدام [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # افتح المستند
+def set_document_window(input_pdf, output_pdf):
+    """Set document window properties and save the result."""
     document = ap.Document(input_pdf)
 
-    # تعيين خصائص المستند المختلفة
-    # تحديد موضع نافذة المستند - الافتراضي: false
     document.center_window = True
-
-    # ترتيب القراءة السائد؛ يحدد موضع الصفحة
-    # عند العرض جنبًا إلى جنب - الافتراضي: L2R
     document.direction = ap.Direction.R2L
-
-    # تحديد ما إذا كان شريط عنوان النافذة يجب أن يعرض عنوان المستند
-    # إذا كانت false، يعرض شريط العنوان اسم ملف PDF - الافتراضي: false
     document.display_doc_title = True
-
-    # تحديد ما إذا كان يجب تغيير حجم نافذة المستند لتناسب حجم
-    # الصفحة المعروضة أولاً - الافتراضي: false
     document.fit_window = True
-
-    # تحديد ما إذا كان يجب إخفاء شريط القائمة في تطبيق العارض - الافتراضي: false
     document.hide_menubar = True
-
-    # تحديد ما إذا كان يجب إخفاء شريط الأدوات في تطبيق العارض - الافتراضي: false
     document.hide_tool_bar = True
-
-    # تحديد ما إذا كان يجب إخفاء عناصر واجهة المستخدم مثل أشرطة التمرير
-    # وترك محتويات الصفحة فقط معروضة - الافتراضي: false
     document.hide_window_ui = True
-
-    # وضع صفحة المستند. تحديد كيفية عرض المستند عند الخروج من وضع الشاشة الكاملة.
     document.non_full_screen_page_mode = ap.PageMode.USE_OC
-
-    # تحديد تخطيط الصفحة أي صفحة واحدة، عمود واحد
     document.page_layout = ap.PageLayout.TWO_COLUMN_LEFT
-
-    # تحديد كيفية عرض المستند عند فتحه
-    # أي عرض الصور المصغرة، الشاشة الكاملة، عرض لوحة المرفقات
     document.page_mode = ap.PageMode.USE_THUMBS
 
-    # حفظ ملف PDF المحدث
     document.save(output_pdf)
 ```
 
+### تضمين الخطوط القياسية من النوع 1
 
-### تضمين خطوط نوع 1 القياسية
-
-بعض مستندات PDF تحتوي على خطوط من مجموعة خطوط Adobe خاصة. وتسمى الخطوط من هذه المجموعة "خطوط نوع 1 القياسية". تتضمن هذه المجموعة 14 خطًا ويتطلب تضمين هذا النوع من الخطوط استخدام علامات خاصة مثل [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). فيما يلي مقتطف الشيفرة الذي يمكن استخدامه للحصول على مستند مع جميع الخطوط المضمنة بما في ذلك خطوط نوع 1 القياسية:
+تحتوي بعض مستندات PDF على خطوط من مجموعة خطوط Adobe خاصة. تسمى الخطوط من هذه المجموعة «الخطوط القياسية من النوع الأول». تتضمن هذه المجموعة 14 خطًا ويتطلب تضمين هذا النوع من الخطوط استخدام علامات خاصة على سبيل المثال [تضمين الخطوط القياسية](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). فيما يلي مقتطف الشفرة الذي يمكن استخدامه للحصول على مستند يحتوي على جميع الخطوط المضمنة بما في ذلك الخطوط القياسية من النوع 1:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # تحميل مستند PDF موجود
+def embedded_fonts(input_pdf, output_pdf):
+    """Ensure fonts in an existing PDF are embedded."""
     document = ap.Document(input_pdf)
-    # تعيين خاصية EmbedStandardFonts للمستند
     document.embed_standard_fonts = True
+
     for page in document.pages:
-        if page.resources.fonts != None:
+        if page.resources.fonts:
             for page_font in page.resources.fonts:
-                # التحقق مما إذا كان الخط مضمنًا بالفعل
                 if not page_font.is_embedded:
                     page_font.is_embedded = True
 
@@ -238,152 +125,132 @@ sitemap:
 
 ### تضمين الخطوط أثناء إنشاء PDF
 
-إذا كنت بحاجة لاستخدام أي خط غير الخطوط الأساسية الأربعة عشر المدعومة من قبل Adobe Reader، فيجب عليك تضمين وصف الخط أثناء إنشاء ملف PDF. إذا لم تكن معلومات الخط مضمنة، فسيقوم Adobe Reader بأخذها من نظام التشغيل إذا كانت مثبتة على النظام، أو سيقوم بتكوين خط بديل وفقًا لوصف الخط في PDF.
+إذا كنت بحاجة إلى استخدام أي خط بخلاف الخطوط الأساسية الأربعة عشر التي يدعمها Adobe Reader، فيجب عليك تضمين وصف الخط أثناء إنشاء ملف PDF. إذا لم تكن معلومات الخط مضمنة، فسيقوم Adobe Reader بأخذها من نظام التشغيل إذا تم تثبيتها على النظام، أو سيقوم بإنشاء خط بديل وفقًا لوصف الخط في PDF.
 
-> يرجى ملاحظة أنه يجب تثبيت الخط المضمن على الجهاز المضيف، أي في حالة الكود التالي، يتم تثبيت خط 'Univers Condensed' على النظام.
+>يرجى ملاحظة أنه يجب تثبيت الخط المضمن على الجهاز المضيف، أي في حالة الكود التالي، يتم تثبيت خط «Univers Condensed» على النظام.
 
-نستخدم الخاصية 'is_embedded' لتضمين معلومات الخط في ملف PDF. تعيين قيمة هذه الخاصية إلى 'True' سيقوم بتضمين ملف الخط الكامل في PDF، مع العلم أن ذلك سيزيد من حجم ملف PDF. فيما يلي مقتطف الكود الذي يمكن استخدامه لتضمين معلومات الخط في PDF.
+نحن نستخدم الخاصية 'is_embedded' لتضمين معلومات الخط في ملف PDF. سيؤدي تعيين قيمة هذه الخاصية إلى «True» إلى تضمين ملف الخط الكامل في PDF، مع العلم أنه سيزيد حجم ملف PDF. فيما يلي مقتطف الشفرة الذي يمكن استخدامه لتضمين معلومات الخط في PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # إنشاء كائن Pdf عن طريق استدعاء منشئه الفارغ
-    doc = ap.Document()
-
-    # إنشاء قسم في كائن Pdf
-    page = doc.pages.add()
+def embedded_fonts_in_new_document(input_pdf, output_pdf):
+    """Embed fonts while generating a document from scratch."""
+    document = ap.Document()
+    page = document.pages.add()
 
     fragment = ap.text.TextFragment("")
-    segment = ap.text.TextSegment(" هذا نص تجريبي باستخدام خط مخصص.")
-    ts = ap.text.TextState()
-    ts.font = ap.text.FontRepository.find_font("Arial")
-    ts.font.is_embedded = True
-    segment.text_state = ts
+    segment = ap.text.TextSegment(" This is a sample text using Custom font.")
+    text_state = ap.text.TextState()
+    text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_state.font.is_embedded = True
+    segment.text_state = text_state
     fragment.segments.append(segment)
     page.paragraphs.add(fragment)
 
-    # حفظ مستند PDF
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
+### قم بتعيين اسم الخط الافتراضي أثناء حفظ PDF
 
-### تعيين اسم الخط الافتراضي أثناء حفظ PDF
-
-عندما يحتوي مستند PDF على خطوط غير متوفرة في المستند نفسه وعلى الجهاز، تقوم API باستبدال هذه الخطوط بالخط الافتراضي. إذا كان الخط متاحًا (مثبتًا على الجهاز أو مضمنًا في المستند)، يجب أن يحتوي ملف PDF الناتج على نفس الخط (يجب ألا يتم استبداله بالخط الافتراضي). يجب أن تحتوي قيمة الخط الافتراضي على اسم الخط (وليس مسار ملفات الخط). لقد قمنا بتطبيق ميزة لتعيين اسم الخط الافتراضي أثناء حفظ المستند كملف PDF. يمكن استخدام الكود التالي لتعيين الخط الافتراضي:
+عندما يحتوي مستند PDF على خطوط غير متوفرة في المستند نفسه وعلى الجهاز، تستبدل API هذه الخطوط بالخط الافتراضي. إذا كان الخط متاحًا (مثبتًا على الجهاز أو مضمنًا في المستند)، فيجب أن يكون ملف PDF الناتج بنفس الخط (يجب عدم استبداله بالخط الافتراضي). يجب أن تحتوي قيمة الخط الافتراضي على اسم الخط (وليس المسار إلى ملفات الخطوط). لقد قمنا بتطبيق ميزة لتعيين اسم الخط الافتراضي أثناء حفظ مستند كملف PDF. يمكن استخدام مقتطف الشفرة التالي لتعيين الخط الافتراضي:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # تحميل مستند PDF موجود بخط مفقود
+def set_default_font(input_pdf, output_pdf):
+    """Assign a fallback font when saving a PDF."""
     document = ap.Document(input_pdf)
 
-    pdfSaveOptions = ap.PdfSaveOptions()
-    # تحديد اسم الخط الافتراضي
-    newName = "Arial"
-    pdfSaveOptions.default_font_name = newName
-    document.save(output_pdf, pdfSaveOptions)
+    save_options = ap.PdfSaveOptions()
+    save_options.default_font_name = "Arial"
+    document.save(output_pdf, save_options)
 ```
 
-### الحصول على جميع الخطوط من مستند PDF
+### احصل على جميع الخطوط من مستند PDF
 
-في حالة رغبتك في الحصول على جميع الخطوط من مستند PDF، يمكنك استخدام طريقة [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) المقدمة في فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
- يرجى التحقق من مقتطف الشيفرة التالي للحصول على جميع الخطوط من وثيقة PDF الموجودة:
+في حالة رغبتك في الحصول على جميع الخطوط من مستند PDF، يمكنك استخدامها [أدوات الخط](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) الطريقة المقدمة في [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) فئة. يرجى التحقق من مقتطف الشفرة التالي للحصول على جميع الخطوط من مستند PDF موجود:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    fonts = doc.font_utilities.get_all_fonts()
-    for font in fonts:
+def get_all_fonts(input_pdf, output_pdf):
+    """Print all fonts referenced by a document."""
+    document = ap.Document(input_pdf)
+    for font in document.font_utilities.get_all_fonts():
         print(font.font_name)
 ```
 
 ### تحسين تضمين الخطوط باستخدام FontSubsetStrategy
 
-يوضح مقتطف الشيفرة التالي كيفية تعيين [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) باستخدام خاصية [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties):
+يوضح مقتطف الشفرة التالي كيفية التعيين [إستراتيجية المجموعة الفرعية للخطوط](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) استعمل [أدوات الخط](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) الملكية:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    # سيتم تضمين جميع الخطوط كجزء من الوثيقة في حالة SubsetAllFonts.
-    doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
-    # سيتم تضمين جزء من الخطوط المدمجة بالكامل في الوثيقة، ولكن الخطوط التي لم يتم تضمينها لن تتأثر.
-    doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY)
-    doc.save(output_pdf)
+def improve_fonts_embedding(input_pdf, output_pdf):
+    """Apply different font subset strategies to reduce file size."""
+    document = ap.Document(input_pdf)
+
+    document.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
+    document.font_utilities.subset_fonts(
+        ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY
+    )
+
+    document.save(output_pdf)
 ```
 
-### الحصول على وتعيين عامل التكبير لملف PDF
+### احصل على عامل تكبير لملف PDF
 
-أحيانًا، تريد تحديد ما هو عامل التكبير الحالي لمستند PDF. باستخدام Aspose.Pdf، يمكنك معرفة القيمة الحالية وكذلك تعيين واحدة.
+في بعض الأحيان، تريد تحديد عامل التكبير الحالي لمستند PDF. باستخدام Aspose.Pdf، يمكنك معرفة القيمة الحالية بالإضافة إلى تعيين واحدة.
 
-تسمح لك خاصية الوجهة [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) بالحصول على قيمة التكبير المرتبطة بملف PDF. وبالمثل، يمكن استخدامها لتعيين عامل التكبير لملف.
+ال [انتقل إلى العمل](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) تسمح لك خاصية class Destination بالحصول على قيمة التكبير/التصغير المرتبطة بملف PDF. وبالمثل، يمكن استخدامه لتعيين عامل تكبير الملف.
 
-#### تعيين عامل التكبير
+#### ضبط عامل الزوم
 
-يظهر مقطع الكود التالي كيفية تعيين عامل التكبير لملف PDF.
+يوضح مقتطف الشفرة التالي كيفية تعيين عامل التكبير لملف PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # إنشاء كائن مستند جديد
-    doc = ap.Document(input_pdf)
+def set_zoom_factor(input_pdf, output_pdf):
+    """Set an initial zoom level via document open action."""
+    document = ap.Document(input_pdf)
 
-    action = ap.annotations.GoToAction(ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5))
-    doc.open_action = action
-    # حفظ المستند
-    doc.save(output_pdf)
+    action = ap.annotations.GoToAction(
+        ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5)
+    )
+    document.open_action = action
+    document.save(output_pdf)
 ```
 
-#### الحصول على عامل التكبير
+#### احصل على زوم فاكتور
 
-يظهر مقطع الكود التالي كيفية الحصول على عامل التكبير لملف PDF.
+يوضح مقتطف الشفرة التالي كيفية الحصول على عامل تكبير ملف PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # إنشاء كائن مستند جديد
-    doc = ap.Document(input_pdf)
+def get_zoom_factor(input_pdf, output_pdf):
+    """Print the zoom level configured in the document open action."""
+    document = ap.Document(input_pdf)
 
-    # إنشاء كائن GoToAction
-    action = doc.open_action
-
-    # الحصول على عامل التكبير لملف PDF
-    print(action.destination.zoom)
+    action = document.open_action
+    if action and action.destination:
+        print("Zoom:", action.destination.zoom)
+    else:
+        print("Zoom: not set")
 ```
 
+## موضوعات المستندات ذات الصلة
 
-### إعداد خصائص الطباعة المسبقة
-
-تسمح Aspose.PDF بتعيين أعضاء [DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members) لوثيقة PDF. يسمح لك بتغيير خاصية DuplexMode لوثيقة PDF التي يتم تعيينها إلى simplex بشكل افتراضي. يمكن تحقيق ذلك باستخدام منهجيتين مختلفتين كما هو موضح أدناه.
-
-```python
-
-    import aspose.pdf as ap
-
-    doc = ap.Document()
-    doc.pages.add()
-    doc.duplex = ap.PrintDuplex.DUPLEX_FLIP_LONG_EDGE
-    doc.save(output_pdf)
-```
-
-### إعداد خصائص الطباعة المسبقة باستخدام محرر محتوى PDF
-
-```python
-
-    import aspose.pdf as ap
-
-    ed = ap.facades.PdfContentEditor()
-    ed.bind_pdf(input_pdf)
-    if (ed.get_viewer_preference() & ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE) > 0:
-        print("الملف يحتوي على قلب مزدوج للحافة القصيرة")
-
-    ed.change_viewer_preference(ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE)
-    ed.save(output_pdf)
-```
+- [العمل مع مستندات PDF في بايثون](/pdf/ar/python-net/working-with-documents/)
+- [إنشاء ملفات PDF في بايثون](/pdf/ar/python-net/create-pdf-document/)
+- [معالجة مستندات PDF في Python](/pdf/ar/python-net/manipulate-pdf-document/)
+- [تحسين ملفات PDF في بايثون](/pdf/ar/python-net/optimize-pdf/)

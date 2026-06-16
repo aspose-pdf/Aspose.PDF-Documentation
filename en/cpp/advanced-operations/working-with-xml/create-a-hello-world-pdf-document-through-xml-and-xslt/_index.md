@@ -1,5 +1,5 @@
 ---
-title: Creating PDF from XML using XSLT 
+title: Creating PDF from XML using XSLT
 linktitle: Create PDF from XML using XSLT
 type: docs
 weight: 10

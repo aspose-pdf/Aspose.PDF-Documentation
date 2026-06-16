@@ -1,5 +1,5 @@
 ---
-title: Tambahkan Gambar ke PDF di Node.js 
+title: Tambahkan Gambar ke PDF di Node.js
 linktitle: Tambahkan Gambar
 type: docs
 weight: 10

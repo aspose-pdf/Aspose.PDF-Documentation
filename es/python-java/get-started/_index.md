@@ -1,14 +1,14 @@
 ---
-title: Get Started  
-linktitle: Get Started  
-type: docs  
-weight: 30  
-url: /es/python-java/get-started/  
-description: Esta página es una visión general de cómo usar Aspose.PDF para Python a través de Java para crear y editar un documento PDF  
-lastmod: "2024-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: Get Started
+linktitle: Get Started
+type: docs
+weight: 30
+url: /es/python-java/get-started/
+description: Esta página es una visión general de cómo usar Aspose.PDF para Python a través de Java para crear y editar un documento PDF
+lastmod: "2024-06-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 ## ¿Qué es Python a través de Java?
 

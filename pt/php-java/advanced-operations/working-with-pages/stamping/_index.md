@@ -1,5 +1,5 @@
 ---
-title: Estampagem 
+title: Estampagem
 linktitle: Estampagem
 type: docs
 weight: 120

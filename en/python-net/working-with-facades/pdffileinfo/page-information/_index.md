@@ -1,5 +1,6 @@
 ---
-title: Page Information
+title: Page Information
+linktitle: Page Information
 type: docs
 weight: 20
 url: /python-net/page-information/

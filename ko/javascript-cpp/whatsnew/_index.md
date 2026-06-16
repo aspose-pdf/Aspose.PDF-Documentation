@@ -1,5 +1,5 @@
 ---
-title: 새로운 기능 
+title: 새로운 기능
 linktitle: 새로운 기능
 type: docs
 weight: 10

@@ -1,15 +1,15 @@
 ---
 
-title: Création d'un PDF complexe à l'aide de Aspose.PDF  
-linktitle: Création d'un PDF complexe  
-type: docs  
-weight: 30  
-url: /fr/androidjava/complex-pdf-example/  
-description: Aspose.PDF pour Android via Java vous permet de créer des documents plus complexes contenant des images, des fragments de texte et des tableaux dans un seul document.  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+title: Création d'un PDF complexe à l'aide de Aspose.PDF
+linktitle: Création d'un PDF complexe
+type: docs
+weight: 30
+url: /fr/androidjava/complex-pdf-example/
+description: Aspose.PDF pour Android via Java vous permet de créer des documents plus complexes contenant des images, des fragments de texte et des tableaux dans un seul document.
+lastmod: "2021-06-05"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
 L'exemple [Hello, World](/pdf/fr/java/hello-world-example/) a montré des étapes simples pour créer un document PDF en utilisant Java et Aspose.PDF. Dans cet article, nous allons examiner la création d'un document plus complexe avec Java et Aspose.PDF pour Java. Comme exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers.  

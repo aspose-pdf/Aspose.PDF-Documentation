@@ -1,5 +1,6 @@
 ---
 title: Remove Open Action
+linktitle: Remove Open Action
 type: docs
 weight: 20
 url: /java/remove-open-action/

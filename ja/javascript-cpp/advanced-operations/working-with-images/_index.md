@@ -1,5 +1,5 @@
 ---
-title: JavaScript経由でC++を使用してPDF内の画像を操作する 
+title: JavaScript経由でC++を使用してPDF内の画像を操作する
 linktitle: 画像の操作
 type: docs
 weight: 40

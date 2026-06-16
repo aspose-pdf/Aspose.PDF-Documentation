@@ -1,5 +1,6 @@
 ---
-title: Set Submit Flag
+title: Set Submit Flag
+linktitle: Set Submit Flag
 type: docs
 weight: 50
 url: /python-net/set-submit-flag/

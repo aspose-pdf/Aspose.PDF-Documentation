@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to HTML in .NET 
+title: Convert PDF to HTML in .NET
 linktitle: Convert PDF to HTML format
 type: docs
 ai_search_scope: pdf_net

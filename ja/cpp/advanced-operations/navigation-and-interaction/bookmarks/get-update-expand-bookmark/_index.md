@@ -1,5 +1,5 @@
 ---
-title: ブックマークの取得、更新、展開 
+title: ブックマークの取得、更新、展開
 linktitle: ブックマークの取得、更新、展開
 type: docs
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: Add PDF Header and Footer 
+title: Add PDF Header and Footer
 linktitle: Add PDF Header and Footer
 type: docs
 weight: 70

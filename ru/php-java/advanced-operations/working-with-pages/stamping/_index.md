@@ -1,5 +1,5 @@
 ---
-title: Stamping 
+title: Stamping
 linktitle: Stamping
 type: docs
 weight: 120

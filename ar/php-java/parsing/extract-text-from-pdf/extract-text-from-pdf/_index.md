@@ -1,5 +1,5 @@
 ---
-title: استخراج النص الخام من ملف PDF 
+title: استخراج النص الخام من ملف PDF
 linktitle: استخراج النص من PDF
 type: docs
 weight: 10

@@ -1,6 +1,6 @@
 ---
-title: Преобразование различных форматов файлов в PDF 
-linktitle: Преобразование других форматов файлов в PDF 
+title: Преобразование различных форматов файлов в PDF
+linktitle: Преобразование других форматов файлов в PDF
 type: docs
 weight: 80
 url: /ru/php-java/convert-other-files-to-pdf/

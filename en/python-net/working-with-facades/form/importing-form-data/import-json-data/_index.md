@@ -1,5 +1,6 @@
 ---
-title: Import JSON Data
+title: Import JSON Data
+linktitle: Import JSON Data
 type: docs
 weight: 30
 url: /python-net/import-json-data/

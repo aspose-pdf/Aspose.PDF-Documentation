@@ -1,5 +1,5 @@
 ---
-title: PDFページをプログラムでトリミング 
+title: PDFページをプログラムでトリミング
 linktitle: ページをトリミング
 type: docs
 weight: 80

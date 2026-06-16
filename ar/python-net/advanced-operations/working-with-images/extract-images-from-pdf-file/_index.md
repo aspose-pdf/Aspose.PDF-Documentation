@@ -1,163 +1,69 @@
 ---
-title: استخراج الصور من ملف PDF باستخدام بايثون
+title: استخراج الصور من ملف PDF باستخدام Python
 linktitle: استخراج الصور
 type: docs
 weight: 30
 url: /ar/python-net/extract-images-from-pdf-file/
-description: يوضح هذا القسم كيفية استخراج الصور من ملف PDF باستخدام مكتبة بايثون.
-lastmod: "2023-02-17"
+description: تعرف على كيفية استخراج الصور المضمنة من ملفات PDF في Python.
+lastmod: "2026-06-11"
+TechArticle: true
+AlternativeHeadline: استخراج الصور من ملفات PDF باستخدام Python
+Abstract: توضح هذه المقالة كيفية استخراج الصور من مستندات PDF باستخدام Aspose.PDF لـ Python عبر .NET. وهي تغطي استخراج صورة مضمنة واحدة وتصدير الصور الموجودة داخل منطقة مستطيلة معينة على الصفحة.
 ---
 
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "استخراج الصور من ملف PDF باستخدام بايثون",
-    "alternativeHeadline": "كيفية استخراج الصور من PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد وثائق PDF",
-    "keywords": "pdf, Python, استخراج الصورة من pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-images-from-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-images-from-pdf-file/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يوضح هذا القسم كيفية استخراج الصور من ملف PDF باستخدام مكتبة بايثون."
-}
-</script>
+استخدم هذه الصفحة عندما تحتاج إلى إعادة استخدام الرسومات المضمنة أو أرشفة أصول الصور أو معالجة محتوى الصورة خارج PDF.
 
-
-هل تحتاج إلى فصل الصور من ملفات PDF الخاصة بك؟ لإدارة مبسطة أو أرشفة أو تحليل أو مشاركة صور مستنداتك، استخدم **Aspose.PDF for Python** واستخراج الصور من ملفات PDF.
-
-تُحتفظ الصور في مجموعة [الموارد](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) الخاصة بكل صفحة في مجموعة [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximagecollection/). لاستخراج صورة معينة من صفحة محددة، احصل على الصورة من مجموعة الصور باستخدام الفهرس المحدد للصورة.
-
-يعيد فهرس الصورة كائن [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/). يوفر هذا الكائن طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) والتي يمكن استخدامها لحفظ الصورة المستخرجة. يوضح مقتطف الشيفرة التالي كيفية استخراج الصور من ملف PDF.
+1. قم بتحميل ملف PDF المصدر باستخدام `ap.Document(infile)`.
+1. حدد الصفحة المستهدفة وفهرس موارد الصور.
+1. احفظ كائن الصورة إلى دفق الإخراج.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
 
-    import aspose.pdf as ap
 
-    # فتح المستند
-    document = ap.Document(input_file)
-
-    # استخراج صورة معينة
-    xImage = document.pages[2].resources.images[1]
-    outputImage = io.FileIO(output_image, "w")
-
-    # حفظ الصورة الناتجة
-    xImage.save(outputImage)
-    outputImage.close()
+def extract_image(infile, outfile):
+    document = ap.Document(infile)
+    x_image = document.pages[1].resources.images[1]
+    with FileIO(outfile, "wb") as output_image:
+        x_image.save(output_image)
 ```
 
+## استخراج الصور من منطقة معينة في PDF
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF للغة Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+يستخرج هذا المثال الصور الموجودة داخل منطقة مستطيلة محددة على صفحة PDF ويحفظها كملفات منفصلة.
+
+1. قم بتحميل ملف PDF المصدر.
+1. ابتكر `ImagePlacementAbsorber` واقبلها على الصفحة المستهدفة.
+1. حدد المستطيل المستهدف.
+1. قم بالتكرار من خلال مواضع الصور وتحقق مما إذا كانت حدود كل صورة تتناسب مع المنطقة.
+1. احفظ الصور المتطابقة لإخراج الملفات.
+
+```python
+import aspose.pdf as ap
+from io import FileIO
+
+
+def extract_image_from_specific_region(infile, outfile):
+    document = ap.Document(infile)
+    rectangle = ap.Rectangle(0, 0, 590, 590, True)
+    absorber = ap.ImagePlacementAbsorber()
+    document.pages[1].accept(absorber)
+
+    index = 1
+    for image_placement in absorber.image_placements:
+        point1 = ap.Point(image_placement.rectangle.llx, image_placement.rectangle.lly)
+        point2 = ap.Point(image_placement.rectangle.urx, image_placement.rectangle.ury)
+
+        if rectangle.contains(point1, True) and rectangle.contains(point2, True):
+            with FileIO(outfile.replace("index", str(index)), "wb") as output_image:
+                image_placement.image.save(output_image)
+            index += 1
+```
+
+## موضوعات الصور ذات الصلة
+
+- [العمل مع الصور في PDF باستخدام Python](/pdf/ar/python-net/working-with-images/)
+- [استبدل الصور في ملفات PDF الموجودة](/pdf/ar/python-net/replace-image-in-existing-pdf-file/)
+- [حذف الصور من ملفات PDF](/pdf/ar/python-net/delete-images-from-pdf-file/)
+- [إضافة صور إلى ملفات PDF الموجودة](/pdf/ar/python-net/add-image-to-existing-pdf-file/)

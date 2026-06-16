@@ -1,6 +1,6 @@
 ---
-title: Konversi JPG ke PDF 
-linktitle: Konversi JPG ke PDF 
+title: Konversi JPG ke PDF
+linktitle: Konversi JPG ke PDF
 type: docs
 weight: 190
 url: /id/androidjava/convert-jpg-to-pdf/

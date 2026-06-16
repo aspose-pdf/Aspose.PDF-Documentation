@@ -1,5 +1,6 @@
 ---
 title: PDF_A Conformance
+linktitle: PDF_A Conformance
 type: docs
 weight: 100
 url: /reportingservices/pdf_a-conformance/

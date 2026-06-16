@@ -1,5 +1,5 @@
 ---
-title: Конвертировать PDF в Microsoft Excel 
+title: Конвертировать PDF в Microsoft Excel
 linktitle: Конвертировать PDF в Excel
 type: docs
 weight: 20

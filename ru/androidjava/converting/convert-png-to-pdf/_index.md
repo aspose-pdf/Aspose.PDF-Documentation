@@ -1,5 +1,5 @@
 ---
-title: Конвертировать PNG в PDF 
+title: Конвертировать PNG в PDF
 linktitle: Конвертировать PNG в PDF
 type: docs
 weight: 200

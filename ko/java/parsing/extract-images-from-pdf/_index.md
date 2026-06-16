@@ -1,5 +1,5 @@
 ---
-title: PDF에서 이미지 추출 
+title: PDF에서 이미지 추출
 linktitle: 이미지 추출
 type: docs
 weight: 20

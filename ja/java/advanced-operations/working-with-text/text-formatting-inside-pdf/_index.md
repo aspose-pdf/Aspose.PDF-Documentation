@@ -1,6 +1,6 @@
 ---
-title: PDF内のテキストフォーマット 
-linktitle: PDF内のテキストフォーマット 
+title: PDF内のテキストフォーマット
+linktitle: PDF内のテキストフォーマット
 type: docs
 weight: 30
 url: /ja/java/text-formatting-inside-pdf/

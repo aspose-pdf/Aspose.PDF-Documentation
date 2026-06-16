@@ -1,5 +1,5 @@
 ---
-title: XML Schema 
+title: XML Schema
 linktitle: Поддерживаемая XML схема
 type: docs
 weight: 10

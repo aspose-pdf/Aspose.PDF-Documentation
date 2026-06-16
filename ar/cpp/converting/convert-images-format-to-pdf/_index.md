@@ -1,14 +1,14 @@
 ---
-title: تحويل صيغ الصور المختلفة إلى PDF  
-linktitle: تحويل الصور إلى PDF  
-type: docs  
-weight: 60  
-url: /ar/cpp/convert-images-format-to-pdf/  
-lastmod: "2021-11-19"  
-description: يوضح هذا الموضوع كيفية تحويل مكتبة Aspose.PDF for C++ لصيغ الصور المختلفة إلى PDF.  
-sitemap:  
-    changefreq: "monthly"  
-    priority: 0.5  
+title: تحويل صيغ الصور المختلفة إلى PDF
+linktitle: تحويل الصور إلى PDF
+type: docs
+weight: 60
+url: /ar/cpp/convert-images-format-to-pdf/
+lastmod: "2021-11-19"
+description: يوضح هذا الموضوع كيفية تحويل مكتبة Aspose.PDF for C++ لصيغ الصور المختلفة إلى PDF.
+sitemap:
+    changefreq: "monthly"
+    priority: 0.5
 ---
 **Aspose.PDF for C++** تتيح لك تحويل صيغ مختلفة من الصور إلى ملفات PDF. توضح مكتبتنا مقتطفات الشيفرة لتحويل أكثر صيغ الصور شيوعًا، مثل - BMP، DICOM، EMF، JPG، PNG، SVG وTIFF.
 

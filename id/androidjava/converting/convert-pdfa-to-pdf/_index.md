@@ -1,5 +1,5 @@
 ---
-title: Mengubah PDF/A ke PDF 
+title: Mengubah PDF/A ke PDF
 linktitle: Mengubah PDF/A ke PDF
 type: docs
 weight: 350

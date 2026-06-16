@@ -1,5 +1,6 @@
 ---
 title: Work with PDF Documents in Qt
+linktitle: Work with PDF Documents in Qt
 type: docs
 weight: 130
 url: /cpp/work-with-pdf-documents-in-qt/
