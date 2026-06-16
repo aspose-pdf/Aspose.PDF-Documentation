@@ -14,4 +14,3 @@ The current Java `PdfContentEditorExamples` class directly supports:
 
 - `addDocumentAction(...)`
 - `removeOpenAction(...)`
-

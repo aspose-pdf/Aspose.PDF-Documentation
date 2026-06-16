@@ -18,13 +18,13 @@ Aspose.PDF for Java provides two main ways to work with metadata:
 - The DOM API through `Document`, `DocumentInfo`, and `document.getMetadata()`.
 - The facade API through `PdfFileInfo`.
 
-## Read document information with the DOM API
+## Get PDF file information
 
-Use `DocumentInfo` when you need standard document properties such as author, title, subject, and dates:
+Use this example when you need to read standard document information fields such as author, title, subject, or keywords.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Read or update the [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) metadata properties.
-1. Read the returned values from [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) or continue with your next processing step.
+1. Access the [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) object.
+1. Read the required metadata fields and output their values.
 
 ```java
 public static void getPdfFileInformation(Path inputFile) {
@@ -41,14 +41,32 @@ public static void getPdfFileInformation(Path inputFile) {
 }
 ```
 
-## Update document information
+## Set metadata with a namespace prefix
 
-The `setFileInformation` example updates standard info fields and saves the modified PDF:
+Use this example when you need to add or update an XMP property by using a registered namespace prefix.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) object.
-1. Set the metadata properties required by the example.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Register the required XMP namespace and add the metadata item.
+1. Save the updated document.
+
+```java
+public static void setPrefixMetadata(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getMetadata().registerNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
+        document.getMetadata().addItem("xmp:ModifyDate", OffsetDateTime.now().toString());
+        document.save(outputFile.toString());
+    }
+    System.out.println("Prefix metadata saved to " + outputFile);
+}
+```
+
+## Update document information fields
+
+Use this example when you want to write standard PDF file properties such as author, title, producer, or creation date.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) and assign new metadata values.
+1. Save the document with the updated file information.
 
 ```java
 public static void setFileInformation(Path inputFile, Path outputFile) {
@@ -67,58 +85,26 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 
         document.save(outputFile.toString());
     }
+    System.out.println("File information saved to " + outputFile);
 }
 ```
 
-## Set XMP metadata and custom namespace prefixes
+## Set XMP metadata properties
 
-The metadata collection also supports namespaced XMP entries:
+Use this example when you need to store additional XMP entries, including custom metadata values.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the [Metadata](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/metadata/) collection.
-1. Set the properties required by the example, including namespace registration and XMP items.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Add the required XMP metadata items through `document.getMetadata()`.
+1. Save the output file.
 
 ```java
-public static void setPrefixMetadata(Path inputFile, Path outputFile) {
+public static void setXmpMetadata(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
-        document.getMetadata().registerNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
-        document.getMetadata().addItem("xmp:ModifyDate", OffsetDateTime.now().toString());
+        document.getMetadata().addItem("xmp:CreateDate", OffsetDateTime.now().toString());
+        document.getMetadata().addItem("xmp:Nickname", "Nickname");
+        document.getMetadata().addItem("xmp:CustomProperty", "Custom Value");
         document.save(outputFile.toString());
     }
-}
-```
-
-The related `setXmpMetadata` example adds fields such as `xmp:CreateDate`, `xmp:Nickname`, and a custom XMP property.
-
-## Inspect PDF version, privileges, page metrics, and metadata with PdfFileInfo
-
-`PdfFileInfo` provides facade-style access to metadata and file characteristics. The example set includes methods to:
-
-- Read the PDF version with `getPdfVersion`.
-- Inspect document permissions with `getDocumentPrivileges`.
-- Get page width, height, rotation, and offsets.
-- Read metadata and encryption state with `getPdfMetadata`.
-
-For example, `getPdfMetadata` reads standard fields and checks whether the file is encrypted or a portfolio:
-
-1. Open the source PDF with [PdfFileInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffileinfo/).
-1. Read the returned metadata, encryption, and portfolio values from [PdfFileInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffileinfo/).
-
-```java
-public static void getPdfMetadata(Path inputFile) {
-    PdfFileInfo pdfInfo = new PdfFileInfo(inputFile.toString());
-    System.out.println("Subject: " + pdfInfo.getSubject());
-    System.out.println("Title: " + pdfInfo.getTitle());
-    System.out.println("Keywords: " + pdfInfo.getKeywords());
-    System.out.println("Creator: " + pdfInfo.getCreator());
-    System.out.println("Creation Date: " + pdfInfo.getCreationDate());
-    System.out.println("Modification Date: " + pdfInfo.getModDate());
-    System.out.println("Is Valid PDF: " + pdfInfo.isPdfFile());
-    System.out.println("Is Encrypted: " + pdfInfo.isEncrypted());
-    System.out.println("Has Open Password: " + pdfInfo.hasOpenPassword());
-    System.out.println("Has Edit Password: " + pdfInfo.hasEditPassword());
-    System.out.println("Is Portfolio: " + pdfInfo.hasCollection());
-    pdfInfo.close();
+    System.out.println("XMP metadata saved to " + outputFile);
 }
 ```

@@ -7,7 +7,6 @@ url: /java/optimize-pdf-document-for-the-web-in-php/
 description: Learn how to optimize a PDF document for faster web performance and reduced file size in PHP with Aspose.PDF.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Optimize PDF for Web
 
 To optimize PDF document for the web using **Aspose.PDF Java for PHP**, simply invoke **optimize_web** method ofВ  **Optimize** class.
@@ -34,7 +33,7 @@ PHP Code
 
     print "Optimized PDF for the Web, please check output file." . PHP_EOL;
 
-}В В В 
+}В В В
 ```
 
 **Download Running Code**

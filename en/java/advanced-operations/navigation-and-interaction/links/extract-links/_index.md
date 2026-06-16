@@ -17,10 +17,11 @@ You can inspect PDF links by iterating over page annotations and filtering for `
 
 ## Extract link annotations
 
+Use this example when you need the location and page information for link annotations on a page.
+
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Filter for [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) items whose [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/) is `Link`.
-1. Write the extracted output or inspect the returned values.
+1. Iterate through the page annotations and filter for link annotations.
+1. Read the page index and rectangle for each matching link.
 
 ```java
 public static void extractLinkAnnotation(Path inputFile) {
@@ -36,12 +37,13 @@ public static void extractLinkAnnotation(Path inputFile) {
 }
 ```
 
-## Extract hyperlink targets
+## Extract hyperlink destinations
+
+Use this example when you need to read the target URIs from web link annotations.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Filter for [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) items and inspect their [GoToURIAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotouriaction/).
-1. Write the extracted output or inspect the returned values.
+1. Find [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) objects whose action is a [GoToURIAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotouriaction/).
+1. Print the page index and URI target for each hyperlink.
 
 ```java
 public static void extractHyperlinks(Path inputFile) {

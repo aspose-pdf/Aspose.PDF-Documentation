@@ -14,5 +14,3 @@ The current Java `PdfContentEditorExamples` class includes these attachment work
 
 - `addAttachment(...)`
 - `removeAttachments(...)`
-
-

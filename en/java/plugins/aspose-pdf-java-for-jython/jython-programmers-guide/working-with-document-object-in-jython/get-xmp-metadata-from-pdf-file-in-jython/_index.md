@@ -7,7 +7,6 @@ url: /java/get-xmp-metadata-from-pdf-file-in-jython/
 description: Explore how to extract XMP metadata from a PDF document using Jython with Aspose.PDF for detailed content analysis.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Get XMP Metadata
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

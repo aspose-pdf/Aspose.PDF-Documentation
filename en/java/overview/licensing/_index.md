@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Licensing of Aspose.PDF for Java
 Abstract: The article discusses the limitations and licensing options for Aspose.PDF for Python. It highlights that the evaluation version allows full functionality testing but adds a watermark to generated PDFs, stating "Evaluation Only" along with copyright information. For users wishing to test without these limitations, a 30-day Temporary License is available. The article further explains how to implement a classic license by loading it from a file or stream, recommending placing the license file in the same directory as the Aspose.PDF.dll file and setting the license using the `Aspose.Pdf.License` class. Code snippets are provided to illustrate the licensing process.
 ---
-
 ## Limitation of an evaluation version
 
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
@@ -62,6 +61,7 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 // Call setLicense method to set license
 license.setLicense("Aspose.Pdf.Java.lic");
 ```
+
 ### Loading the license from a stream object
 
 The following example shows how to load a license from a stream.
@@ -72,7 +72,9 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 // Set license from Stream
 license.setLicense(new java.io.FileInputStream("Aspose.Pdf.Java.lic"));
 ```
+
 #### Setting a License Purchased Before 2005/01/22
+
 **Aspose.PDF** for Java doesn't support old licenses anymore so please contact our [sales team](https://company.aspose.com/contact) to get new license file.
 
 ### Validate the License
@@ -87,6 +89,7 @@ if (com.aspose.pdf.Document.isLicensed()) {
     System.out.println("License is Set!");
 }
 ```
+
 ## Metered License
 
 Aspose.PDF allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing.В For more details, please refer toВ [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered)В section.
@@ -105,6 +108,7 @@ m.setMeteredKey(publicKey, privateKey);
 License lic = new License();
 System.out.println("License is set = " + lic.isLicensed());
 ```
+
 ## Using Multiple Products from Aspose
 
 If you use multiple Aspose products in your application, for example Aspose.PDF and Aspose.Words, here are a few useful tips.

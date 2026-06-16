@@ -13,7 +13,6 @@ AlternativeHeadline: Documentation Pages of Aspose.PDF for Java
 Abstract: The Aspose.PDF for Java documentation provides a comprehensive guide to working with PDF documents programmatically using the Java programming language. It covers many features, including PDF creation, manipulation, conversion, and data extraction. Developers can learn how to add and modify text, images, tables, annotations, and form fields within PDFs. The documentation also explains advanced functionalities such as digital signatures, encryption, and optimization for better performance. With detailed code examples and step-by-step instructions, users can efficiently integrate PDF processing capabilities into their Java applications for various document automation tasks.
 SoftwareApplication: java
 ---
-
 {{% alert color="primary" %}}
 
 ![Aspose.PDF for Java](aspose_pdf-for-java.png)

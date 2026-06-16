@@ -17,16 +17,17 @@ Aspose.PDF for Java supports several extraction flows depending on how attachmen
 
 ## Extract a single attachment by name
 
-Use this approach when you know the embedded file name in advance:
+Use this example when you need to save one specific embedded file from a PDF.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/) for the attachment you want to extract.
-1. Add or access the [EmbeddedFileCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/embeddedfilecollection/).
-1. Write the extracted output or inspect the returned values from the [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/).
+1. Iterate through the embedded file collection until the required attachment name is found.
+1. Copy the attachment stream to the output file and stop after extraction.
 
 ```java
 public static void extractSingleAttachment(Path inputFile, String attachmentName, Path outputFile) throws Exception {
     try (Document document = new Document(inputFile.toString())) {
+        System.out.println("Extracting attachment: " + attachmentName);
+
         boolean attachmentFound = false;
         for (FileSpecification fileSpecification : document.getEmbeddedFiles()) {
             if (attachmentName.equals(fileSpecification.getName())) {
@@ -34,6 +35,7 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
                      OutputStream outputStream = Files.newOutputStream(outputFile)) {
                     inputStream.transferTo(outputStream);
                 }
+                System.out.println("Attachment extracted successfully");
                 attachmentFound = true;
                 break;
             }
@@ -46,18 +48,42 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 }
 ```
 
-## Extract all embedded files
+## Print embedded file parameters
 
-This example loops through the embedded file collection, resolves a usable file name, and writes each attachment to disk:
+This helper method prints the metadata stored in a [FileParams](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fileparams/) object.
+
+1. Check whether the file parameters object exists.
+1. Read the available checksum, creation date, modification date, and size values.
+1. Print the values to the console.
+
+```java
+public static void printFileParams(FileParams params) {
+    if (params != null) {
+        try {
+            System.out.println("CheckSum: " + params.getCheckSum());
+        } catch (Exception ex) {
+            System.out.println("CheckSum: null");
+        }
+        System.out.println("Creation Date: " + params.getCreationDate());
+        System.out.println("Modification Date: " + params.getModDate());
+        System.out.println("Size: " + params.getSize());
+    }
+}
+```
+
+## Extract all embedded attachments
+
+Use this example when every embedded file in the PDF should be written to an output directory.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access each attachment as a [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/).
-1. Add or access the [EmbeddedFileCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/embeddedfilecollection/).
-1. Write the extracted output or inspect the returned values, including optional [FileParams](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fileparams/) metadata.
+1. Iterate through the embedded file collection and determine a safe output file name for each item.
+1. Print the metadata, save each attachment stream, and continue until all files are exported.
 
 ```java
 public static void extractAttachments(Path inputFile, Path outputDir) throws Exception {
     try (Document document = new Document(inputFile.toString())) {
+        System.out.println("Total files: " + document.getEmbeddedFiles().size());
+
         int fileIndex = 1;
         for (FileSpecification fileSpecification : document.getEmbeddedFiles()) {
             String fileName = fileSpecification.getName();
@@ -67,6 +93,11 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
             if (fileName == null || fileName.isBlank()) {
                 fileName = "attachment_" + fileIndex + ".bin";
             }
+
+            System.out.println("Name: " + fileName);
+            System.out.println("Description: " + fileSpecification.getDescription());
+            System.out.println("Mime Type: " + fileSpecification.getMIMEType());
+            printFileParams(fileSpecification.getParams());
 
             Path outputPath = outputDir.resolve(fileName);
             try (InputStream inputStream = fileSpecification.getContents();
@@ -79,17 +110,13 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 }
 ```
 
-The full example also reads metadata such as description, MIME type, checksum, creation date, modification date, and size from `FileParams`.
-
 ## Extract a file attachment annotation
 
-If the attachment is stored as a `FileAttachmentAnnotation`, inspect page annotations and export the associated file:
+Use this example when the file is attached through a page annotation instead of only through the embedded files collection.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Find the [FileAttachmentAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fileattachmentannotation/) whose [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/) is `FileAttachment`.
-1. Access the attached [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/).
-1. Write the extracted output or inspect the returned values from the [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/).
+1. Locate the first [FileAttachmentAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fileattachmentannotation/) on the page.
+1. Read its file specification, export the contents, and print the destination path.
 
 ```java
 public static void extractFileAttachmentAnnotation(Path inputFile, Path outputDir) throws Exception {
@@ -103,15 +130,20 @@ public static void extractFileAttachmentAnnotation(Path inputFile, Path outputDi
         }
 
         if (fileAttachment == null) {
+            System.out.println("File attachment annotation not found.");
             return;
         }
 
         FileSpecification fileSpecification = fileAttachment.getFile();
+        System.out.println("File name: " + fileSpecification.getName());
+
         Path outputPath = outputDir.resolve("extracted-" + fileSpecification.getName());
         try (InputStream inputStream = fileSpecification.getContents();
              OutputStream outputStream = Files.newOutputStream(outputPath)) {
             inputStream.transferTo(outputStream);
         }
+
+        System.out.println("Extracted to: " + outputPath);
     }
 }
 ```

@@ -7,7 +7,6 @@ url: /java/working-with-document-conversion-in-jython/
 description: Learn how to convert PDF documents to various formats using Jython with Aspose.PDF, enabling flexible document processing.
 lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Convert PDF to DOC or DOCX format in Jython](/pdf/java/convert-pdf-to-doc-or-docx-format-in-jython/)

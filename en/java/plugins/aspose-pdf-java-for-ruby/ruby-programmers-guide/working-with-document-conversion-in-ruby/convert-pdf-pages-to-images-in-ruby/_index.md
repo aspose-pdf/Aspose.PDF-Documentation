@@ -7,7 +7,6 @@ url: /java/convert-pdf-pages-to-images-in-ruby/
 description: Find out how to convert PDF pages into images using Ruby with Aspose.PDF, making it easy to extract visual content from PDFs.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Convert PDF pages to Images
 
 To convert all Pages to Images of Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **ConvertPagesToImages** module.
@@ -15,7 +14,6 @@ To convert all Pages to Images of Pdf document using **Aspose.PDF Java for Ruby*
 Ruby Code
 
 ```java
-
 # The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'

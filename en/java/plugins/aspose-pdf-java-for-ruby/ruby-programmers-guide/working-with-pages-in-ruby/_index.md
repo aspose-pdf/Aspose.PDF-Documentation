@@ -7,7 +7,6 @@ url: /java/working-with-pages-in-ruby/
 description: Add, remove, or manipulate pages in PDFs programmatically with Aspose.PDF for Ruby.
 lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Concatenate PDF Files in Ruby](/pdf/java/concatenate-pdf-files-in-ruby/)

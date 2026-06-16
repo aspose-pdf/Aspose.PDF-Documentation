@@ -10,7 +10,6 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 ## Introduction to Aspose.PDF Java for Python
 
 ## JPype

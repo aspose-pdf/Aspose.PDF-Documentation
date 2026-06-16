@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Combine PDF pages using Java
 Abstract: This article explains how to merge two PDF documents in Java using Aspose.PDF. The example opens two source documents, appends the pages of the second document to the first one, and saves the merged result as a new PDF file.
 ---
-
 Merging PDF files is useful when you need to combine related documents into a single file for distribution, archiving, or processing.
 
 ## Live Example

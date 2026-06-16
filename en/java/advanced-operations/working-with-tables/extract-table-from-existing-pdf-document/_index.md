@@ -15,12 +15,13 @@ Abstract: This article explains how to extract tables from PDF documents using A
 ---
 Use `TableAbsorber` when you need to detect table structures in an existing PDF and read their content.
 
-## Extract table data from an existing PDF
+## Extract text from detected tables
+
+Use this example when you need to locate tables on each page and collect their cell text.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit each target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Iterate through each detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedrow/), and [AbsorbedCell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedcell/).
-1. Read the extracted [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) values and output the collected table content.
+1. Visit each page with [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/).
+1. Iterate through absorbed tables, rows, and cells, then output the extracted text.
 
 ```java
 public static void extract(Path inputFile) {
@@ -31,6 +32,7 @@ public static void extract(Path inputFile) {
             for (AbsorbedTable table : absorber.getTableList()) {
                 System.out.println("Table ----");
                 for (AbsorbedRow row : table.getRowList()) {
+                    System.out.println("Row:");
                     StringBuilder rowText = new StringBuilder();
                     for (AbsorbedCell cell : row.getCellList()) {
                         StringBuilder cellText = new StringBuilder();

@@ -7,7 +7,6 @@ url: /java/remove-metadata-from-pdf-in-ruby/
 description: Erase sensitive or unwanted metadata from PDF files programmatically with Aspose.PDF for Ruby.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Remove Metadata
 
 To remove Metadata from Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **RemoveMetadata** module.
@@ -27,7 +26,7 @@ if doc.getMetadata().contains("pdfaid:part")
 
 В В В  doc.getMetadata().removeItem("pdfaid:part")
 
-endВ В  В 
+endВ В  В
 
 if doc.getMetadata().contains("dc:format")
 

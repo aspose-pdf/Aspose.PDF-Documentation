@@ -15,13 +15,13 @@ Abstract: This article shows how to remove attachments from PDF files using Aspo
 ---
 Attachments stored in a PDF document can be removed either individually or all at once through the `EmbeddedFiles` collection.
 
-## Remove a specific attachment
+## Remove a single attachment
 
-Use the attachment key to delete a single embedded file:
+Use this example when one named embedded file should be deleted from the PDF.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add or access the [EmbeddedFileCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/embeddedfilecollection/).
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Delete the attachment by its key from the embedded files collection.
+1. Save the updated output document.
 
 ```java
 public static void removeAttachment(Path inputFile, String attachmentName, Path outputFile) {
@@ -34,11 +34,11 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 
 ## Remove all attachments
 
-To clear every embedded file from the document:
+Use this approach when the entire embedded file collection should be cleared.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add or access the [EmbeddedFileCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/embeddedfilecollection/).
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Delete all items from the embedded files collection.
+1. Save the cleaned output document.
 
 ```java
 public static void removeAllAttachments(Path inputFile, Path outputFile) {

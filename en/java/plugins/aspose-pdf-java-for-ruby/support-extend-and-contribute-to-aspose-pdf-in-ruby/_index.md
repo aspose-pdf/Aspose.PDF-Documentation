@@ -7,7 +7,6 @@ url: /java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
 description: Learn how to support, extend, and contribute to Aspose.PDF for Ruby to enhance its features and improve your PDF solutions.
 lastmod: "2026-06-09"
 ---
-
 ## Support
 
 From the very first days of Aspose, we knew that just giving our customers good products would not be enough. We also needed to deliver good service. We are developers ourselves and understand how frustrating it is when a technical issue or a quirk in the software stops you from doing what you need to do. We're here to solve problems, not create them.

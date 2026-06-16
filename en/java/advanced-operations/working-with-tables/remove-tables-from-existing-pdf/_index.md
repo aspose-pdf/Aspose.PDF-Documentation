@@ -13,12 +13,15 @@ TechArticle: true
 AlternativeHeadline: Delete one or multiple tables from PDF files with Java
 Abstract: This article explains how to remove tables from existing PDF documents using Aspose.PDF for Java. It introduces TableAbsorber for locating tables and demonstrates how to delete a single table or remove all detected tables from a page.
 ---
-## Remove one table
+Use `TableAbsorber` when you need to delete one or more detected tables from an existing PDF.
+
+## Remove one detected table
+
+Use this example when only the first matched table on a page should be deleted.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Remove the target [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) from the page.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Visit the target page with [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/).
+1. Remove the first detected table and save the document.
 
 ```java
 public static void removeOneTable(Path inputFile, Path outputFile) {
@@ -31,12 +34,13 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 }
 ```
 
-## Remove all tables
+## Remove all detected tables from a page
+
+Use this example when every matched table on the page should be removed.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Iterate through the detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) objects and remove each one.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Visit the target page with [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and copy the detected tables to a list.
+1. Remove each detected table and save the updated PDF.
 
 ```java
 public static void removeAllTables(Path inputFile, Path outputFile) {

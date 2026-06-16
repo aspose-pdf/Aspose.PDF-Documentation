@@ -7,7 +7,6 @@ url: /java/set-pdf-expiration-in-ruby/
 description: Implement expiration dates in PDFs using Aspose.PDF for Ruby for time-sensitive documents.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Set PDF Expiration
 
 To set expiration ofВ  Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **SetExpiration** module.

@@ -4,9 +4,9 @@ linktitle: Add TOC to Existing PDF in Ruby
 type: docs
 weight: 30
 url: /java/add-toc-to-existing-pdf-in-ruby/
+description: Learn how to add a table of contents to an existing PDF in Ruby using Aspose.PDF for improved document navigation.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Add TOC
 
 <ins>To add TOC in Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **AddToc** module.

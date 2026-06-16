@@ -15,11 +15,13 @@ Abstract: This article explains how to remove form resources from PDF documents 
 ---
 These examples remove form resources from a page rather than just changing field values.
 
-## Remove all forms from a page
+## Remove all form resources from a page
+
+Use this example when every form resource on a selected page should be removed in one operation.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the [XFormCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xformcollection/) for the target page and clear it.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Access the [XFormCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xformcollection/) for the target page.
+1. Clear the collection and save the updated document.
 
 ```java
 public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) {
@@ -32,6 +34,8 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 ```
 
 ## Remove specific form resources
+
+Use this example when only selected form resources, such as Typewriter forms, should be deleted.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
 1. Access the [XFormCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xformcollection/) for the target page.

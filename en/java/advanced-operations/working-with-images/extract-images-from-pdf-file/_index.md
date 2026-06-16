@@ -12,12 +12,13 @@ Abstract: This article shows how to extract images from PDF documents using Aspo
 ---
 Aspose.PDF for Java supports direct image-resource extraction and placement-based filtering.
 
-## Extract a single embedded image
+## Extract an embedded image by index
+
+Use this example when you need to save a specific image resource from a PDF page.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the image resources on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Get the target [XImage](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/ximage/) resource.
-1. Write the extracted image output.
+1. Access the target [XImage](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/ximage/) from the page resources.
+1. Save the image stream to an output file.
 
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {
@@ -29,13 +30,13 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 }
 ```
 
-## Extract images from a specific region
+## Extract images from a specific page region
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) region.
-1. Create an [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Check each [ImagePlacement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacement/) against the region using [Point](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/point/) coordinates.
-1. Write each matching extracted image output.
+Use this example when only images placed inside a selected rectangle should be exported.
+
+1. Define the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) and open the source PDF.
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) to inspect image placements on the page.
+1. Save only the images whose placement fits inside the selected region.
 
 ```java
 public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {

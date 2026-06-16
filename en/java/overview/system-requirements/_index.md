@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Supported Operating Systems of Aspose.PDF for Java
 Abstract: Aspose.PDF for Python via .NET is a PDF processing API designed for developers to manage PDF documents without the need for Microsoft Office or Adobe Acrobat Automation. It supports the development of 32-bit and 64-bit Python applications on various operating systems, including Windows and Linux, where Python 3.5 or later is installed. The API is compatible with several Windows versions, from Windows XP to Windows 11, and major Linux distributions like Ubuntu, OpenSUSE, and CentOS. For Linux systems, specific requirements include GCC-6 runtime libraries, dependencies of .NET Core Runtime (without needing the runtime itself), and the pymalloc build of Python for versions 3.5-3.7. Additionally, a shared libpython library is necessary, which might require configuration adjustments for correct library path recognition.
 ---
-
 ## Overview
 
 To produce PDF documents, the machine to run [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) doesn't need to have [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) installed as Aspose.PDF for Java itself is a PDF document creation engine. However in order to view PDF documents produced by Aspose.PDF for Java the machine does need at least an [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). It can be downloaded for free.
@@ -51,7 +50,7 @@ Aspose.PDF for Java supports any 32-bit or 64-bit operating systemВ that runs 
 
 Aspose.PDF for Java supports the following Java versions:
 
-- J2SE 8.0 (1.8) or above (*for example Java 10*)В 
+- J2SE 8.0 (1.8) or above (*for example Java 10*)В
 - Support of Aspose.Pdf for Java on IBM i (Iseries or As/400)
 
 ## Development Environments
@@ -68,4 +67,3 @@ You can use Aspose.PDF for Java to develop applications in any development envir
 - Microsoft Visual Studio 2015
 - Microsoft Visual Studio 2017
 - Microsoft Visual Studio 2019
-

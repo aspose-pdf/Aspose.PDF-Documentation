@@ -15,64 +15,61 @@ Abstract: This page explains common media annotation workflows in Aspose.PDF for
 ---
 Media annotations in PDF typically cover embedded or linked multimedia content such as sound clips, screen playback regions, rich media containers, and 3D models.
 
-## Add rich media annotations
+## Add a rich media annotation
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Define the video, poster, skin, and player resource paths that will be attached to the annotation.
-1. Create a [RichMediaAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/richmediaannotation/) with the destination page and annotation [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/).
-1. Attach the player SWF, flash variables, custom skin data, poster image, and video content streams.
-1. Configure the [RichMediaAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/richmediaannotation/) type and activation event, then call `update()`.
-1. Add the annotation to the target page.
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+Use this example when a PDF page should host embedded video content with a custom player, poster image, and skin.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
+1. Create a [RichMediaAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/richmediaannotation/), configure the player assets, poster, and content stream.
+1. Add the annotation to the page and save the output document.
 
 ```java
 public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throws Exception {
-        String pathToAdobeApp = "C:\\Program Files (x86)\\Adobe\\Acrobat 2017\\Acrobat\\Multimedia Skins";
+    String pathToAdobeApp = "C:\\Program Files (x86)\\Adobe\\Acrobat 2017\\Acrobat\\Multimedia Skins";
 
-        try (Document document = new Document()) {
-            Page page = document.getPages().add();
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-            String videoName = "file_example_MP4_480_1_5MG.mp4";
-            String posterName = "file_example_MP4_480_1_5MG_poster.jpg";
-            String skinName = "SkinOverAllNoFullNoCaption.swf";
+        String videoName = "file_example_MP4_480_1_5MG.mp4";
+        String posterName = "file_example_MP4_480_1_5MG_poster.jpg";
+        String skinName = "SkinOverAllNoFullNoCaption.swf";
 
-            RichMediaAnnotation richMediaAnnotation = new RichMediaAnnotation(
-                    page,
-                    new Rectangle(100, 500, 300, 600, true));
+        RichMediaAnnotation richMediaAnnotation = new RichMediaAnnotation(
+                page,
+                new Rectangle(100, 500, 300, 600, true));
 
-            String playerPath = pathToAdobeApp + "\\Players\\Videoplayer.swf";
-            richMediaAnnotation.setCustomPlayer(new FileInputStream(playerPath));
-            richMediaAnnotation.setCustomFlashVariables("source=" + videoName + "&skin=" + skinName);
+        String playerPath = pathToAdobeApp + "\\Players\\Videoplayer.swf";
+        richMediaAnnotation.setCustomPlayer(new FileInputStream(playerPath));
+        richMediaAnnotation.setCustomFlashVariables("source=" + videoName + "&skin=" + skinName);
 
-            String skinPath = pathToAdobeApp + "\\" + skinName;
-            richMediaAnnotation.addCustomData(skinName, new FileInputStream(skinPath));
+        String skinPath = pathToAdobeApp + "\\" + skinName;
+        richMediaAnnotation.addCustomData(skinName, new FileInputStream(skinPath));
 
-            Path posterPath = mediaDir.resolve(posterName);
-            richMediaAnnotation.setPoster(new FileInputStream(posterPath.toString()));
+        Path posterPath = mediaDir.resolve(posterName);
+        richMediaAnnotation.setPoster(new FileInputStream(posterPath.toString()));
 
-            Path videoPath = mediaDir.resolve(videoName);
-            try (FileInputStream videoStream = new FileInputStream(videoPath.toString())) {
-                richMediaAnnotation.setContent(videoName, videoStream);
-            }
-
-            richMediaAnnotation.setType(RichMediaAnnotation.ContentType.Video);
-            richMediaAnnotation.setActivateOn(RichMediaAnnotation.ActivationEvent.Click);
-            richMediaAnnotation.update();
-
-            page.getAnnotations().add(richMediaAnnotation);
-            document.save(outputFile.toString());
+        Path videoPath = mediaDir.resolve(videoName);
+        try (FileInputStream videoStream = new FileInputStream(videoPath.toString())) {
+            richMediaAnnotation.setContent(videoName, videoStream);
         }
+
+        richMediaAnnotation.setType(RichMediaAnnotation.ContentType.Video);
+        richMediaAnnotation.setActivateOn(RichMediaAnnotation.ActivationEvent.Click);
+        richMediaAnnotation.update();
+
+        page.getAnnotations().add(richMediaAnnotation);
+        document.save(outputFile.toString());
     }
+}
 ```
 
 ## Delete rich media annotations
 
+This example removes existing rich media annotations from a page.
+
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Iterate through the page annotation collection and collect items whose [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/) is `RichMedia`.
-1. Delete each collected [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) from the page.
-1. Save the cleaned output [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`RichMedia`.
+1. Delete the collected annotations and save the updated document.
 
 ```java
 public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
@@ -95,11 +92,11 @@ public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
 
 ## Get multimedia annotations
 
+Use this example to inspect screen, sound, and rich media annotations already present on the page.
+
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Read or iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) items on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Define the [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/) values you want to treat as multimedia, such as screen, sound, and rich media.
-1. Iterate through the first page annotation collection.
-1. Print the annotation type and [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) for each item that matches the selected multimedia types.
+1. Define the set of multimedia annotation types you want to detect.
+1. Iterate through page annotations and print the type and rectangle for each match.
 
 ```java
 public static void multimediaAnnotationsGet(Path inputFile) {
@@ -118,15 +115,13 @@ public static void multimediaAnnotationsGet(Path inputFile) {
 }
 ```
 
-## Add 3D annotations
+## Add a 3D annotation
+
+This example adds an interactive 3D model view with predefined perspectives and rendering options.
 
 1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Wrap the content in [PDF3DArtwork](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dartwork/) by using [PDF3DContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dcontent/) and configure the lighting scheme and render mode.
-1. Create [Matrix3D](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/matrix3d/) view matrices for the predefined camera orientations you want to expose.
-1. Add those named [PDF3DView](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dview/) items to the 3D artwork view array.
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/), create a [PDF3DAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dannotation/), and configure its border, default view, flags, and display name.
-1. Add the annotation to the target page.
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Load the model into [PDF3DContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dcontent/) and configure a [PDF3DArtwork](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dartwork/).
+1. Create the [PDF3DAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dannotation/), add it to a page, and save the document.
 
 ```java
 public static void annotation3dAdd(Path modelFile, Path outputFile) {
@@ -169,13 +164,13 @@ public static void annotation3dAdd(Path modelFile, Path outputFile) {
 }
 ```
 
-## Add screen annotations
+## Add a screen annotation
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Create the required [ScreenAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/screenannotation/) with the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) and media file path.
-1. Add the annotation to the target page.
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+Use this example when a page should reference a media file through a screen playback region.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
+1. Create a [ScreenAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/screenannotation/) for the media file and target rectangle.
+1. Add the annotation to the page and save the document.
 
 ```java
 public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile) {
@@ -193,15 +188,13 @@ public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile)
 }
 ```
 
-## Add sound annotations
+## Add a sound annotation
+
+This example places a sound annotation on the page and associates it with a WAV file.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Resolve the WAV file path relative to the input file location.
-1. Create a [SoundAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/soundannotation/) with the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/), [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/), and media file path.
-1. Create the [PopupAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/popupannotation/) and associate it with the parent annotation.
-1. Set the annotation color, title, subject, and popup note.
-1. Add the annotation to the target page.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [SoundAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/soundannotation/) for the target audio file and configure its metadata.
+1. Add the annotation to the page and save the output document.
 
 ```java
 public static void soundAnnotationAdd(Path inputFile, Path outputFile) {

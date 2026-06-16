@@ -7,7 +7,6 @@ url: /java/set-pdf-expiration-in-jython/
 description: Discover how to set an expiration date for a PDF document in Jython, controlling document access and security.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Set Expiration
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

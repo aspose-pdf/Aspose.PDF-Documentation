@@ -7,7 +7,6 @@ url: /java/support-extend-and-contribute-to-aspose-pdf-in-struts/
 description: Discover how to support, extend, and contribute to Aspose.PDF for Java in Struts-based projects.
 lastmod: "2026-06-09"
 ---
-
 ## Support
 
 {{% alert color="primary" %}}
@@ -21,7 +20,6 @@ Please use any of the following project's issues tracker:
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 {{% /alert %}}
-
 
 ## Extend and Contribute
 

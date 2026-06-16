@@ -7,7 +7,6 @@ url: /java/add-text-to-an-existing-pdf-file-in-jython/
 description: Learn how to add new text to an existing PDF document using Jython and Aspose.PDF for content enhancement.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Add Text
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

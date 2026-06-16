@@ -7,7 +7,6 @@ url: /java/working-with-document-conversion-in-ruby/
 description: Explore how to convert PDF documents to other formats using Ruby and Aspose.PDF, ensuring seamless file transformations.
 lastmod: "2026-06-09"
 ---
-
 This section includes the following topics:
 
 - [Convert HTML to PDF Format in Ruby](/pdf/java/convert-html-to-pdf-format-in-ruby/)

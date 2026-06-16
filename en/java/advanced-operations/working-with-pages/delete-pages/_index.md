@@ -13,16 +13,37 @@ TechArticle: true
 AlternativeHeadline: Delete one or more PDF pages in Java
 Abstract: This article explains how to remove pages from PDF files using Aspose.PDF for Java. It covers deleting a single page and deleting multiple pages at once through the page collection API.
 ---
-## Delete one page
+Use the document page collection when you need to remove one or more pages from a PDF.
+
+## Delete a single page
+
+Use this example when you need to remove one page by its index.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Delete the required [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) from the document.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Delete the target page from the page collection.
+1. Save the updated document.
 
 ```java
 public static void deletePage(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
         document.getPages().delete(2);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Delete multiple pages
+
+Use this example when several pages should be removed in one operation.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Pass the page indexes to delete from the page collection.
+1. Save the modified PDF.
+
+```java
+public static void deleteBunchPages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(new Integer[]{2, 3, 4});
         document.save(outputFile.toString());
     }
 }

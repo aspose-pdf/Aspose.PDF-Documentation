@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Generating PDF files with Aspose.PDF for Java
 Abstract: This article shows how to create a PDF file in Java using Aspose.PDF. The example creates a new Document object, adds a page, inserts a TextFragment with sample text, and saves the result as a PDF file.
 ---
-
 Creating PDF files in code is a common requirement for reports, invoices, and generated business documents. Aspose.PDF for Java provides a direct way to build a document from scratch.
 
 ## How to create a PDF file in Java

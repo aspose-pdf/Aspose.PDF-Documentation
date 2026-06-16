@@ -7,7 +7,6 @@ url: /java/download-and-configure-aspose-pdf-in-php/
 description: Learn how to download and configure Aspose.PDF in PHP for easy integration and PDF manipulation within your PHP projects.
 lastmod: "2026-06-09"
 ---
-
 ## Download Required Libraries
 
 Download the required libraries mentioned below. These are the required for executing Aspose.PDF Java for PHP examples.
@@ -48,7 +47,6 @@ In order to download the PHP/JavaBridge binaries, issue the following command on
 
 {{< /highlight >}}
 
-
 Unzip the PHP/JavaBridge binaries by issuing the following command on the Linux console.
 
 {{< highlight actionscript3 >}}
@@ -57,7 +55,6 @@ Unzip the PHP/JavaBridge binaries by issuing the following command on the Linux 
 
 {{< /highlight >}}
 
-
 This will extractВ **JavaBridge.war**В file. Copy it to the tomcat88В **webapps**В folder by issuing the following command on the Linux console.
 
 {{< highlight actionscript3 >}}
@@ -65,7 +62,6 @@ This will extractВ **JavaBridge.war**В file. Copy it to the tomcat88В **we
   sudo cp JavaBridge.war /var/lib/tomcat8/webapps/JavaBridge.war
 
 {{< /highlight >}}
-
 
 By copying, tomcat8 will automatically create a new folder "**JavaBridge**" inВ **webapps**. Once the folder is created, make sure your tomcat8 is running and then checkВ  http://localhost:8080/JavaBridge В in the browser, it should open a default page of JavaBridge.
 

@@ -7,7 +7,6 @@ url: /java/get-document-window-and-page-display-properties-in-jython/
 description: Discover how to access document window and page display properties in a PDF file using Jython and Aspose.PDF.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Get Document Window
 
 To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.

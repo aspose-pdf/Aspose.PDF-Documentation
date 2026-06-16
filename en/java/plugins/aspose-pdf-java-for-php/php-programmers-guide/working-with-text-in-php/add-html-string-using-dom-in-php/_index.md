@@ -7,7 +7,6 @@ url: /java/add-html-string-using-dom-in-php/
 description: Explore how to add HTML content to a PDF document using the DOM in PHP with Aspose.PDF for rich document creation.
 lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - Add HTML
 
 To add HTML string in Pdf document using **Aspose.PDF Java for PHP**, simply invoke **AddHtml** module.
