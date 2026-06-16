@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/basic-text-extraction/
 description: Learn how to extract text from PDF documents in Java with Aspose.PDF from all pages, from a specific page, or by paragraph structure.
-lastmod: "2026-06-09"
+lastmod: "2026-06-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,10 +14,10 @@ sitemap:
 
 Use `TextAbsorber` to capture text from the whole document and write it to a file.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/).
-1. Visit all [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) objects in the document.
-1. Write the extracted text to the output file.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/) to accumulate text across the whole document.
+1. Call `document.getPages().accept(textAbsorber)` so every [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) is visited by the absorber.
+1. Write the extracted text buffer to the output file.
 
 ```java
 public static void extractTextFromAllPages(Path inputFile, Path outputFile) throws Exception {
@@ -33,10 +33,10 @@ public static void extractTextFromAllPages(Path inputFile, Path outputFile) thro
 
 Apply the absorber only to the page you need.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/).
-1. Visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Write the extracted text to the output file.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/) for single-page extraction.
+1. Call `accept(textAbsorber)` on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) selected by page number.
+1. Write the extracted text buffer to the output file.
 
 ```java
 public static void extractTextFromPage(Path inputFile, Path outputFile, int pageNumber) throws Exception {
@@ -52,10 +52,10 @@ public static void extractTextFromPage(Path inputFile, Path outputFile, int page
 
 Use `ParagraphAbsorber` when you need page, section, and paragraph grouping instead of a flat text stream.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [ParagraphAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/paragraphabsorber/) and visit the document.
-1. Iterate through the page markups, sections, paragraphs, lines, and [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) objects.
-1. Build the output text with page, section, and paragraph information.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create a [ParagraphAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/paragraphabsorber/) and visit the whole document to build page markup results.
+1. Iterate through the page markups, sections, paragraphs, lines, and [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) objects exposed by the absorber.
+1. Build the output text with explicit page, section, and paragraph numbering so structural grouping is preserved.
 1. Write the extracted paragraph text to the output file.
 
 ```java

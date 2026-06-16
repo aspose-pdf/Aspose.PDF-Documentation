@@ -4,7 +4,7 @@ linktitle: Convert PDF to Word
 type: docs
 weight: 10
 url: /java/convert-pdf-to-word/
-lastmod: "2026-06-09"
+lastmod: "2026-06-16"
 description: Learn how to convert PDF files to DOC and DOCX in Java with Aspose.PDF for easier document editing and reuse.
 sitemap:
     changefreq: "monthly"
@@ -19,8 +19,9 @@ Aspose.PDF for Java can export PDF documents to Microsoft Word formats with diff
 
 Use this example when a PDF document should be exported to the legacy DOC format.
 
-1. Open the source PDF document.
-1. Configure the Word save options for DOC output.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`DocSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/docsaveoptions/) and set the format to `Doc`.
+1. Pass the configured options to the shared save method so the PDF is exported to the legacy Microsoft Word binary format.
 1. Save the converted DOC file.
 
 ```java
@@ -35,8 +36,9 @@ public static void convertPdfToDoc(Path inputFile, Path outputFile) {
 
 Use this example when a PDF document should be exported as a DOCX file.
 
-1. Open the source PDF document.
-1. Configure the Word save options for DOCX output.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`DocSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/docsaveoptions/) and set the format to `DocX`.
+1. Pass the configured options to the shared save method so the PDF is exported as Office Open XML.
 1. Save the resulting DOCX file.
 
 ```java
@@ -51,9 +53,10 @@ public static void convertPdfToDocx(Path inputFile, Path outputFile) {
 
 Use this example when the Word export should use advanced recognition or layout settings.
 
-1. Open the source PDF document.
-1. Configure the advanced DOCX save options.
-1. Save the converted DOCX output.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`DocSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/docsaveoptions/) for `DocX` output.
+1. Enable `setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)` when the export should favor flowing editable content over fixed visual layout.
+1. Save the converted DOCX output through the shared save method.
 
 ```java
 public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {
@@ -64,13 +67,14 @@ public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {
 }
 ```
 
-## Reuse a shared Word save helper
+## Reuse a shared Word save method
 
-Use this helper when several PDF-to-Word examples should save through one common method.
+Use this method when several PDF-to-Word examples should save through one common export function.
 
-1. Open the source PDF document.
-1. Pass the prepared `DocSaveOptions` to the helper.
-1. Save the converted Word file.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Pass the prepared [`DocSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/docsaveoptions/) to the method together with the input and output paths.
+1. Call `document.save(outputFile.toString(), saveOptions)` so the selected Word export settings are applied consistently.
+1. Save the converted Word file and dispose the document with try-with-resources.
 
 ```java
 private static void saveDocument(Path inputFile, Path outputFile, DocSaveOptions saveOptions) {

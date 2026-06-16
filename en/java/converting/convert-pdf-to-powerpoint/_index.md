@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/convert-pdf-to-powerpoint/
 description: Learn how to convert PDF files to PowerPoint in Java with Aspose.PDF, including editable PPTX slides, image-based slides, and custom image resolution.
-lastmod: "2026-06-09"
+lastmod: "2026-06-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,9 @@ Aspose.PDF for Java supports exporting PDF pages into editable PowerPoint presen
 
 Use this example when a PDF document should be exported as a standard PowerPoint presentation.
 
-1. Open the source PDF document.
-1. Configure the PowerPoint save options.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create default [`PptxSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pptxsaveoptions/) for editable PowerPoint export.
+1. Pass the configured options to the shared save method so the PDF pages are serialized as a `.pptx` presentation.
 1. Save the converted PPTX file.
 
 ```java
@@ -33,8 +34,9 @@ public static void convertPdfToPptx(Path inputFile, Path outputFile) {
 
 Use this example when each PDF page should become an image-based PowerPoint slide.
 
-1. Open the source PDF document.
-1. Configure the PPTX save options to render slides as images.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`PptxSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pptxsaveoptions/) and enable `setSlidesAsImages(true)`.
+1. Pass the configured options to the shared save method so each PDF page is rendered as an image-backed slide.
 1. Save the generated PPTX file.
 
 ```java
@@ -49,8 +51,9 @@ public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFil
 
 Use this example when the slide image quality should be controlled during PDF-to-PPTX export.
 
-1. Open the source PDF document.
-1. Set the PPTX save options with the required image resolution.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`PptxSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pptxsaveoptions/) and set `setImageResolution(300)` for higher slide image fidelity.
+1. Pass the configured options to the shared save method so rasterized slide content is generated at the requested resolution.
 1. Save the output presentation.
 
 ```java
@@ -61,13 +64,14 @@ public static void convertPdfToPptxImageResolution(Path inputFile, Path outputFi
 }
 ```
 
-## Reuse a shared PowerPoint save helper
+## Reuse a shared PowerPoint save method
 
-Use this helper when multiple PowerPoint conversion examples should share the same save routine.
+Use this method when multiple PowerPoint conversion examples should share the same save routine.
 
-1. Open the source PDF document.
-1. Pass the prepared `PptxSaveOptions` to the helper.
-1. Save the converted PPTX output.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Pass the prepared [`PptxSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pptxsaveoptions/) to the method with the input and output paths.
+1. Call `document.save(outputFile.toString(), saveOptions)` so the selected PowerPoint export settings are applied consistently.
+1. Save the converted PPTX output and close the document automatically.
 
 ```java
 private static void saveDocument(Path inputFile, Path outputFile, PptxSaveOptions saveOptions) {

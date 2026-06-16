@@ -4,7 +4,7 @@ linktitle: Convert PDF to HTML format
 type: docs
 weight: 50
 url: /java/convert-pdf-to-html/
-lastmod: "2026-06-09"
+lastmod: "2026-06-16"
 description: Learn how to convert PDF to HTML in Java with Aspose.PDF, including multi-page output, external image folders, SVG handling, and layered HTML rendering.
 sitemap:
     changefreq: "monthly"
@@ -19,8 +19,9 @@ Aspose.PDF for Java supports HTML export with options for images, SVG, page spli
 
 Use this example when a PDF should be exported to a standard HTML document.
 
-1. Open the source PDF document.
-1. Configure the default HTML save options.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create default [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) for standard HTML export.
+1. Pass the save options to the shared save method so the PDF is serialized as HTML markup.
 1. Save the generated HTML output.
 
 ```java
@@ -33,9 +34,10 @@ public static void convertPdfToHtml(Path inputFile, Path outputFile) {
 
 Use this example when extracted images should be written as separate files during HTML export.
 
-1. Open the source PDF document.
-1. Configure HTML save options for external image storage.
-1. Save the HTML output and generated image assets.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) and set `setSpecialFolderForAllImages(...)` to an image output directory.
+1. Pass the configured save options to the shared save method so extracted images are written as separate resources.
+1. Save the HTML output together with the generated image assets.
 
 ```java
 public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile) {
@@ -49,8 +51,9 @@ public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile
 
 Use this example when each PDF page should be represented separately in HTML output.
 
-1. Open the source PDF document.
-1. Set the HTML save options for multi-page mode.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) and enable `setSplitIntoPages(true)`.
+1. Pass the configured save options to the shared save method so each PDF page is emitted as separate HTML output.
 1. Save the generated HTML files.
 
 ```java
@@ -65,8 +68,9 @@ public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
 
 Use this example when vector content should be emitted as separate SVG resources.
 
-1. Open the source PDF document.
-1. Configure HTML save options to externalize SVG content.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) and set `setSpecialFolderForSvgImages(...)` for external SVG resource storage.
+1. Pass the configured save options to the shared save method so vector content is written outside the main HTML file.
 1. Save the HTML output and SVG assets.
 
 ```java
@@ -81,9 +85,10 @@ public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
 
 Use this example when SVG output should be optimized during HTML export.
 
-1. Open the source PDF document.
-1. Enable compressed SVG output in the HTML save options.
-1. Save the converted HTML files.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) and configure a dedicated SVG resource folder.
+1. Enable `setCompressSvgGraphicsIfAny(true)` so SVG assets are optimized during export.
+1. Save the converted HTML files through the shared save method.
 
 ```java
 public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) {
@@ -98,8 +103,9 @@ public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) 
 
 Use this example when page backgrounds should be rendered as PNG images in HTML output.
 
-1. Open the source PDF document.
-1. Configure HTML save options for PNG background rendering.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) and set the raster image saving mode to PNG page backgrounds.
+1. Pass the configured save options to the shared save method so background graphics are emitted as PNG-backed page layers.
 1. Save the converted HTML output.
 
 ```java
@@ -114,9 +120,10 @@ public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile
 
 Use this example when only the body markup is needed instead of a full HTML document shell.
 
-1. Open the source PDF document.
-1. Configure the HTML save options to emit body content.
-1. Save the HTML output.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) and set the markup generation mode to `WriteOnlyBodyContent`.
+1. Keep `setSplitIntoPages(true)` enabled when body-only output should still be page-separated.
+1. Save the HTML output through the shared save method.
 
 ```java
 public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) {
@@ -131,8 +138,9 @@ public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) 
 
 Use this example when transparent text should be preserved in the HTML export.
 
-1. Open the source PDF document.
-1. Set the HTML save options for transparent text rendering.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) and enable transparent and shadowed text preservation.
+1. Pass the configured save options to the shared save method so visual transparency is retained in the generated HTML.
 1. Save the converted HTML output.
 
 ```java
@@ -148,8 +156,9 @@ public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path
 
 Use this example when PDF layer visibility should be reflected in the HTML result.
 
-1. Open the source PDF document.
-1. Configure the HTML save options for document layer rendering.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Create [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) and enable `setConvertMarkedContentToLayers(true)`.
+1. Pass the configured save options to the shared save method so marked PDF content is mapped to HTML layers.
 1. Save the exported HTML files.
 
 ```java
@@ -160,13 +169,14 @@ public static void convertPdfToHtmlDocumentLayersRendering(Path inputFile, Path 
 }
 ```
 
-## Reuse a shared HTML save helper
+## Reuse a shared HTML save method
 
-Use this helper when several HTML conversion examples should save the document through one common method.
+Use this method when several HTML conversion examples should save the document through one common export function.
 
-1. Open the source PDF document.
-1. Pass the prepared `HtmlSaveOptions` into the helper.
-1. Save the converted HTML output.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Pass the prepared [`HtmlSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlsaveoptions/) into the method with the input and output paths.
+1. Call `document.save(outputFile.toString(), saveOptions)` so the selected HTML export settings are applied consistently.
+1. Save the converted HTML output and release the document resources automatically.
 
 ```java
 private static void saveDocument(Path inputFile, Path outputFile, HtmlSaveOptions saveOptions) {
