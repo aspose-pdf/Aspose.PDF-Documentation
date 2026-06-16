@@ -36,22 +36,22 @@ Enhanced PDF sanitization is now available through HiddenDataSanitizer to improv
 
 ```java
 Document document = new Document(pdfFile);
-        try
-        {
-            HiddenDataSanitizationOptions options = HiddenDataSanitizationOptions.all();
-            ImageCompressionOptions tmp = new ImageCompressionOptions();
-            tmp.setMaxResolution(30);
-            tmp.setResizeImages(true);
-            tmp.setCompressImages(true);
-            options.setImageCompressionOptions(tmp);
-            HiddenDataSanitizer sanitizer = new HiddenDataSanitizer(options);
-            sanitizer.sanitize(document);
-            document.save(getOutputPath("clear_all_resize_img.pdf"));
-        }
-        finally
-        {
-            document.close();
-        }
+    try
+    {
+        HiddenDataSanitizationOptions options = HiddenDataSanitizationOptions.all();
+        ImageCompressionOptions tmp = new ImageCompressionOptions();
+        tmp.setMaxResolution(30);
+        tmp.setResizeImages(true);
+        tmp.setCompressImages(true);
+        options.setImageCompressionOptions(tmp);
+        HiddenDataSanitizer sanitizer = new HiddenDataSanitizer(options);
+        sanitizer.sanitize(document);
+        document.save(getOutputPath("clear_all_resize_img.pdf"));
+    }
+    finally
+    {
+        document.close();
+    }
 ```
 
 ### Improved File-Size Reduction During PDF Optimization
@@ -60,22 +60,22 @@ PDF optimization now improves file-size reduction by refining how font subsettin
 
 ```java
 Document document = new Document(inputPath);
-            try {
-                OptimizationOptions tmp = new OptimizationOptions();
-                tmp.setSubsetFonts(true);
-                tmp.setAllowReusePageContent(true);
-                tmp.setCompressObjects(true);
-                tmp.setLinkDuplicateStreams(true);
-                tmp.setRemoveUnusedObjects(true);
-                tmp.setRemoveUnusedStreams(true);
-                tmp.setCompressAllContentStreams(true);
-                OptimizationOptions optimizeOptions = tmp;
+    try {
+        OptimizationOptions tmp = new OptimizationOptions();
+        tmp.setSubsetFonts(true);
+        tmp.setAllowReusePageContent(true);
+        tmp.setCompressObjects(true);
+        tmp.setLinkDuplicateStreams(true);
+        tmp.setRemoveUnusedObjects(true);
+        tmp.setRemoveUnusedStreams(true);
+        tmp.setCompressAllContentStreams(true);
+        OptimizationOptions optimizeOptions = tmp;
 
-                document.optimizeResources(optimizeOptions);
-                document.save(outputPath);
-            } finally {
-                document.close();
-            }
+        document.optimizeResources(optimizeOptions);
+        document.save(outputPath);
+    } finally {
+        document.close();
+    }
 ```
 
 ## What's new in Aspose.PDF 25.10
@@ -96,23 +96,23 @@ Support has been added for adding HTML text inside annotations.
 
 ```java
 Document pdf = new Document();
-        Page page = pdf.getPages().add();
-        DefaultAppearance da = new DefaultAppearance("Arial", 12, java.awt.Color.BLACK);
-        FreeTextAnnotation freeTextAnnot = new FreeTextAnnotation(page, new Rectangle(100, 600, 500, 700),
-                da);
-        freeTextAnnot.setRichText("<?xml version=\"1.0\"?><body xmlns=\"http://www.w3.org/1999/xhtml\" "
-                + "xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\\\" xfa:APIVersion=\"Acrobat:11.0.23\" "
-                + "xfa:spec=\"2.0.2\"  style=\"font-size:12.0pt;color:#00eeff;font-weight:normal;font-style:normal;"
-                + "font-family:Arial;font-stretch:normal\"><p dir=\"ltr\">1<p style=\"color:#00ff00;"
-                + "font-style:italic\">2</p>3456</p></body>");
-        freeTextAnnot.getTextStyle().setColor(java.awt.Color.BLACK);
-        freeTextAnnot.getTextStyle().setFontName("Arial");
-        //freeTextAnnot.Contents = "This is a rich text";
-        freeTextAnnot.setModified(new Date());
-        freeTextAnnot.setColor(Color.getRed());
-        freeTextAnnot.getBorder().setWidth(0);
-        page.getAnnotations().add(freeTextAnnot);
-        pdf.save(getOutputPath("out1.pdf"));
+    Page page = pdf.getPages().add();
+    DefaultAppearance da = new DefaultAppearance("Arial", 12, java.awt.Color.BLACK);
+    FreeTextAnnotation freeTextAnnot = new FreeTextAnnotation(page, new Rectangle(100, 600, 500, 700),
+            da);
+    freeTextAnnot.setRichText("<?xml version=\"1.0\"?><body xmlns=\"http://www.w3.org/1999/xhtml\" "
+            + "xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\\\" xfa:APIVersion=\"Acrobat:11.0.23\" "
+            + "xfa:spec=\"2.0.2\"  style=\"font-size:12.0pt;color:#00eeff;font-weight:normal;font-style:normal;"
+            + "font-family:Arial;font-stretch:normal\"><p dir=\"ltr\">1<p style=\"color:#00ff00;"
+            + "font-style:italic\">2</p>3456</p></body>");
+    freeTextAnnot.getTextStyle().setColor(java.awt.Color.BLACK);
+    freeTextAnnot.getTextStyle().setFontName("Arial");
+    //freeTextAnnot.Contents = "This is a rich text";
+    freeTextAnnot.setModified(new Date());
+    freeTextAnnot.setColor(Color.getRed());
+    freeTextAnnot.getBorder().setWidth(0);
+    page.getAnnotations().add(freeTextAnnot);
+    pdf.save(getOutputPath("out1.pdf"));
 ```
 
 ## What's new in Aspose.PDF 25.9
@@ -155,60 +155,60 @@ Support for table border styles has been added to provide more control over tabl
 
 ```java
 Document document = new Document();
-            try {
-                Page page = document.getPages().add();
+    try {
+        Page page = document.getPages().add();
 
-                GraphInfo tmp = new GraphInfo();
-                tmp.setDashArray(new int[]{10, 10});
-                tmp.setDashPhase(5);
-                tmp.setLineWidth(3);
-                Table tmp_1 = new Table();
-                tmp_1.setBorder(new BorderInfo(BorderSide.Box, tmp));
-                tmp_1.setDefaultCellBorder(new BorderInfo(BorderSide.Box, .05f, Color.getWhite()));
-                tmp_1.setDefaultCellPadding(new MarginInfo(4.5, 3, 4.5, 3));
-                tmp_1.getDefaultCellTextState().setFont(FontRepository.findFont("Arial"));
-                tmp_1.getDefaultCellTextState().setFontSize(10);
-                tmp_1.getDefaultCellTextState().setHorizontalAlignment(HorizontalAlignment.Left);
-                tmp_1.getDefaultCellTextState().setForegroundColor(Color.getBlack());
-                Table table1_allSidesSet = tmp_1;
-                page.getParagraphs().add(table1_allSidesSet);
+        GraphInfo tmp = new GraphInfo();
+        tmp.setDashArray(new int[]{10, 10});
+        tmp.setDashPhase(5);
+        tmp.setLineWidth(3);
+        Table tmp_1 = new Table();
+        tmp_1.setBorder(new BorderInfo(BorderSide.Box, tmp));
+        tmp_1.setDefaultCellBorder(new BorderInfo(BorderSide.Box, .05f, Color.getWhite()));
+        tmp_1.setDefaultCellPadding(new MarginInfo(4.5, 3, 4.5, 3));
+        tmp_1.getDefaultCellTextState().setFont(FontRepository.findFont("Arial"));
+        tmp_1.getDefaultCellTextState().setFontSize(10);
+        tmp_1.getDefaultCellTextState().setHorizontalAlignment(HorizontalAlignment.Left);
+        tmp_1.getDefaultCellTextState().setForegroundColor(Color.getBlack());
+        Table table1_allSidesSet = tmp_1;
+        page.getParagraphs().add(table1_allSidesSet);
 
-                for (int i = 0; i < 10; i++) {
-                    Row newRow = table1_allSidesSet.getRows().add();
-                    Cell cellLvl1 = newRow.getCells().add(String.valueOf(i));
-                }
+        for (int i = 0; i < 10; i++) {
+            Row newRow = table1_allSidesSet.getRows().add();
+            Cell cellLvl1 = newRow.getCells().add(String.valueOf(i));
+        }
 
-                Table tmp_2 = new Table();
-                tmp_2.setBorder(new BorderInfo(BorderSide.Box, 1));
-                tmp_2.setDefaultCellBorder(new BorderInfo(BorderSide.Box, 0.05f, Color.getWhite()));
-                tmp_2.setDefaultCellPadding(new MarginInfo(4.5, 3, 4.5, 3));
-                tmp_2.getDefaultCellTextState().setFont(FontRepository.findFont("Arial"));
-                tmp_2.getDefaultCellTextState().setFontSize(10);
-                tmp_2.getDefaultCellTextState().setHorizontalAlignment(HorizontalAlignment.Left);
-                tmp_2.getDefaultCellTextState().setForegroundColor(Color.getBlack());
+        Table tmp_2 = new Table();
+        tmp_2.setBorder(new BorderInfo(BorderSide.Box, 1));
+        tmp_2.setDefaultCellBorder(new BorderInfo(BorderSide.Box, 0.05f, Color.getWhite()));
+        tmp_2.setDefaultCellPadding(new MarginInfo(4.5, 3, 4.5, 3));
+        tmp_2.getDefaultCellTextState().setFont(FontRepository.findFont("Arial"));
+        tmp_2.getDefaultCellTextState().setFontSize(10);
+        tmp_2.getDefaultCellTextState().setHorizontalAlignment(HorizontalAlignment.Left);
+        tmp_2.getDefaultCellTextState().setForegroundColor(Color.getBlack());
 
 //Style1 example
-                Table table2_onlyRightSideSet = tmp_2;
-                table2_onlyRightSideSet.getBorder().getRight().setDashArray(new int[]{5, 10});
-                table2_onlyRightSideSet.getBorder().getRight().setDashPhase(7);
-                page.getParagraphs().add(table2_onlyRightSideSet);
+        Table table2_onlyRightSideSet = tmp_2;
+        table2_onlyRightSideSet.getBorder().getRight().setDashArray(new int[]{5, 10});
+        table2_onlyRightSideSet.getBorder().getRight().setDashPhase(7);
+        page.getParagraphs().add(table2_onlyRightSideSet);
 //Style2 example
 //                Table table3_roundCorner= tmp_2;
 //                table3_roundCorner.setCornerStyle(BorderCornerStyle.Round);
 //                table3_roundCorner.getBorder().setRoundedBorderRadius(15);
 //                page.getParagraphs().add(table3_roundCorner);
 
-                for (int i = 0; i < 10; i++) {
-                    Row newRow = table2_onlyRightSideSet.getRows().add();
-                    Cell cellLvl1 = newRow.getCells().add(String.valueOf(i));
-                }
+        for (int i = 0; i < 10; i++) {
+            Row newRow = table2_onlyRightSideSet.getRows().add();
+            Cell cellLvl1 = newRow.getCells().add(String.valueOf(i));
+        }
 
-                document.save(output);
-            } finally {
-                if (document != null) {
-                    document.close();
-                }
-            }
+        document.save(output);
+    } finally {
+        if (document != null) {
+            document.close();
+        }
+    }
 ```
 
 ### ALT Text Extraction for Images in PDF
@@ -477,17 +477,17 @@ String iccProfile = "Coated_Fogra39L_VIGC_300.icc";
 String outputConditionIdentifier = "FOGRA39";
 
 Document pdfDocument = new Document("58191_1.pdf");
-try {
-    PdfFormatConversionOptions options = new PdfFormatConversionOptions("log.log", PdfFormat.PDF_X_1A, ConvertErrorAction.Delete);
-    options.setIccProfileFileName(iccProfile);
-    options.setOutputIntent(new OutputIntent(outputConditionIdentifier));
-    pdfDocument.convert(options);
-    pdfDocument.save("42686_1_PDF_X_1A.pdf");
-} finally {
-    if (pdfDocument != null) {
-        pdfDocument.dispose();
+    try {
+        PdfFormatConversionOptions options = new PdfFormatConversionOptions("log.log", PdfFormat.PDF_X_1A, ConvertErrorAction.Delete);
+        options.setIccProfileFileName(iccProfile);
+        options.setOutputIntent(new OutputIntent(outputConditionIdentifier));
+        pdfDocument.convert(options);
+        pdfDocument.save("42686_1_PDF_X_1A.pdf");
+    } finally {
+        if (pdfDocument != null) {
+            pdfDocument.dispose();
+        }
     }
-}
 ```
 
 Since 25.1 added the ability to obtain information about privileges when using documents:
@@ -495,35 +495,35 @@ Since 25.1 added the ability to obtain information about privileges when using d
 ```java
 Document document = new Document();
 document.getPages().add();
-try
-{
-    PdfFileInfo info = new PdfFileInfo();
-    info.bindPdf(document);
-    DocumentPrivilege privilege = info.getDocumentPrivilege();
-    System.out.println(2 == privilege.getCopyAllowLevel());
-    System.out.println(2 == privilege.getPrintAllowLevel());
-    System.out.println(-1 == privilege.getChangeAllowLevel());
+    try
+    {
+        PdfFileInfo info = new PdfFileInfo();
+        info.bindPdf(document);
+        DocumentPrivilege privilege = info.getDocumentPrivilege();
+        System.out.println(2 == privilege.getCopyAllowLevel());
+        System.out.println(2 == privilege.getPrintAllowLevel());
+        System.out.println(-1 == privilege.getChangeAllowLevel());
 
-    privilege.setCopyAllowLevel(0);
-    privilege.setCopyAllowLevel(1);
-    privilege.setCopyAllowLevel(2);
+        privilege.setCopyAllowLevel(0);
+        privilege.setCopyAllowLevel(1);
+        privilege.setCopyAllowLevel(2);
 
-    privilege.setPrintAllowLevel(0);
-    privilege.setPrintAllowLevel(1);
-    privilege.setPrintAllowLevel(2);
+        privilege.setPrintAllowLevel(0);
+        privilege.setPrintAllowLevel(1);
+        privilege.setPrintAllowLevel(2);
 
-    privilege.setChangeAllowLevel(0);
-    privilege.setChangeAllowLevel(1);
-    privilege.setChangeAllowLevel(2);
-    privilege.setChangeAllowLevel(3);
-    privilege.setChangeAllowLevel(4);
+        privilege.setChangeAllowLevel(0);
+        privilege.setChangeAllowLevel(1);
+        privilege.setChangeAllowLevel(2);
+        privilege.setChangeAllowLevel(3);
+        privilege.setChangeAllowLevel(4);
 
-    PdfFileSecurity fs = new com.aspose.pdf.facades.PdfFileSecurity(document, dataDir + "out_new_Doc"+version+".pdf");
-    fs.setPrivilege(privilege);
-}
-finally {
-    if (document != null) document.dispose();
+        PdfFileSecurity fs = new com.aspose.pdf.facades.PdfFileSecurity(document, dataDir + "out_new_Doc"+version+".pdf");
+        fs.setPrivilege(privilege);
     }
+    finally {
+        if (document != null) document.dispose();
+        }
 ```
 
 ## What's new in Aspose.PDF 24.12
@@ -2058,23 +2058,23 @@ Please use the following code:
 
 ```java
 Document pdf = new Document(inFile);
-        Page page = pdf.getPages().get_Item(1);
-        TextFragmentAbsorber textFragmentAbsorber = new com.aspose.pdf.TextFragmentAbsorber();
-        page.accept(textFragmentAbsorber);
-        TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
+    Page page = pdf.getPages().get_Item(1);
+    TextFragmentAbsorber textFragmentAbsorber = new com.aspose.pdf.TextFragmentAbsorber();
+    page.accept(textFragmentAbsorber);
+    TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
 
-        int fragmentsCount = textFragmentAbsorber.getTextFragments().size();
-        int invisibleCount = 0;
+    int fragmentsCount = textFragmentAbsorber.getTextFragments().size();
+    int invisibleCount = 0;
 
-        Iterator tmp0 = ( textFragmentCollection).iterator();
-            while (tmp0.hasNext())
-            {
-                com.aspose.pdf.TextFragment fragment = (com.aspose.pdf.TextFragment)tmp0.next();
-                System.out.println(fragment.getText());
-                System.out.println(fragment.getTextState().isInvisible());
-                if (fragment.getTextState().isInvisible())
-                    invisibleCount++;
-            }
+    Iterator tmp0 = ( textFragmentCollection).iterator();
+        while (tmp0.hasNext())
+        {
+            com.aspose.pdf.TextFragment fragment = (com.aspose.pdf.TextFragment)tmp0.next();
+            System.out.println(fragment.getText());
+            System.out.println(fragment.getTextState().isInvisible());
+            if (fragment.getTextState().isInvisible())
+                invisibleCount++;
+        }
 ```
 
 ## What's new in Aspose.PDF 21.8
@@ -2086,20 +2086,20 @@ In the 21.8 version  setForegroundColor, it allows changing text color in Digita
 ```java
 Please, use the following code:
 
-                    PdfFileSignature pdfSign = new PdfFileSignature();
-                    pdfSign.bindPdf(inFile);
-                    //create a rectangle for signature location
-                    java.awt.Rectangle rect = new java.awt.Rectangle(310, 45, 200, 50);
-                    PKCS7 pkcs = new PKCS7(inPfxFile, "");
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.bindPdf(inFile);
+    //create a rectangle for signature location
+    java.awt.Rectangle rect = new java.awt.Rectangle(310, 45, 200, 50);
+    PKCS7 pkcs = new PKCS7(inPfxFile, "");
 
-                    pkcs.setCustomAppearance( new SignatureCustomAppearance());
+    pkcs.setCustomAppearance( new SignatureCustomAppearance());
 //set text color
-                    pkcs.getCustomAppearance().setForegroundColor(Color.getGreen());
+    pkcs.getCustomAppearance().setForegroundColor(Color.getGreen());
 
-                    // sign the PDF file
-                    pdfSign.sign(1, true, rect, pkcs);
-                    //save output PDF file
-                    pdfSign.save(outFile);
+    // sign the PDF file
+    pdfSign.sign(1, true, rect, pkcs);
+    //save output PDF file
+    pdfSign.save(outFile);
 ```
 
 ## What's new in Aspose.PDF 21.6
@@ -2132,34 +2132,34 @@ Follow the next code snippet:
 ```java
 InputStream inputStream;
 
-        ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
-        InputStream inputFile300dpi = new FileInputStream("image1.jpg");
-        try  {
-            inputImagesStreams.add(inputFile300dpi);
-            InputStream inputFile600dpi = new FileInputStream("image2.jpg");
-            try {
-                inputImagesStreams.add(inputFile600dpi);
-                inputStream = PdfConverter.mergeImages(
-                        inputImagesStreams,
-                        com.aspose.pdf.ImageFormat.Jpeg,
-                        ImageMergeMode.Vertical,
-                        new Integer(1),
-                        new Integer(1)
-                );
-            } finally {
-                if (inputFile600dpi != null) (inputFile600dpi).close();
-            }
+    ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
+    InputStream inputFile300dpi = new FileInputStream("image1.jpg");
+    try  {
+        inputImagesStreams.add(inputFile300dpi);
+        InputStream inputFile600dpi = new FileInputStream("image2.jpg");
+        try {
+            inputImagesStreams.add(inputFile600dpi);
+            inputStream = PdfConverter.mergeImages(
+                    inputImagesStreams,
+                    com.aspose.pdf.ImageFormat.Jpeg,
+                    ImageMergeMode.Vertical,
+                    new Integer(1),
+                    new Integer(1)
+            );
         } finally {
-            if (inputFile300dpi != null) (inputFile300dpi).close();
+            if (inputFile600dpi != null) (inputFile600dpi).close();
         }
+    } finally {
+        if (inputFile300dpi != null) (inputFile300dpi).close();
+    }
 
-        Document doc = new Document();
-        Page p = doc.getPages().add();
-        Image image = new Image();
-        image.setImageStream(inputStream);
-        p.getParagraphs().add(image);
-        doc.save("out.pdf");
-        inputStream.close();
+    Document doc = new Document();
+    Page p = doc.getPages().add();
+    Image image = new Image();
+    image.setImageStream(inputStream);
+    p.getParagraphs().add(image);
+    doc.save("out.pdf");
+    inputStream.close();
 ```
 
 Also you may merge you images as Tiff format:
@@ -2167,28 +2167,28 @@ Also you may merge you images as Tiff format:
 ```java
 InputStream inputStream;
 
-        ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
-        InputStream inputFile1 = new FileInputStream("1.tif");
-        try  {
-            inputImagesStreams.add(inputFile1);
-            InputStream inputFile2 = new FileInputStream("2.tif");
-            try {
-                inputImagesStreams.add(inputFile2);
-                inputStream = PdfConverter.mergeImagesAsTiff(inputImagesStreams);
-            } finally {
-                if (inputFile2 != null) (inputFile2).close();
-            }
+    ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
+    InputStream inputFile1 = new FileInputStream("1.tif");
+    try  {
+        inputImagesStreams.add(inputFile1);
+        InputStream inputFile2 = new FileInputStream("2.tif");
+        try {
+            inputImagesStreams.add(inputFile2);
+            inputStream = PdfConverter.mergeImagesAsTiff(inputImagesStreams);
         } finally {
-            if (inputFile1 != null) (inputFile1).close();
+            if (inputFile2 != null) (inputFile2).close();
         }
+    } finally {
+        if (inputFile1 != null) (inputFile1).close();
+    }
 
-        Document doc = new Document();
-        Page p = doc.getPages().add();
-        Image image = new Image();
-        image.setImageStream(inputStream);
-        p.getParagraphs().add(image);
-        doc.save("out2.pdf");
-        inputStream.close();
+    Document doc = new Document();
+    Page p = doc.getPages().add();
+    Image image = new Image();
+    image.setImageStream(inputStream);
+    p.getParagraphs().add(image);
+    doc.save("out2.pdf");
+    inputStream.close();
 ```
 
 ## What's new in Aspose.PDF 21.02
