@@ -17,7 +17,7 @@ Aspose.PDF for Java can export PDF documents to Microsoft Word formats with diff
 
 ## Convert PDF to DOC
 
-Use this example when a PDF document should be exported to the legacy DOC format.
+Use this example when a PDF document should be exported to the legacy DOC format. The code creates `DocSaveOptions`, sets the format to `Doc`, and passes the options to a shared save method.
 
 1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
 1. Create [`DocSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/docsaveoptions/) and set the format to `Doc`.
@@ -37,7 +37,7 @@ public static void convertPdfToDoc(Path inputFile, Path outputFile) {
 
 ## Convert PDF to DOCX
 
-Use this example when a PDF document should be exported as a DOCX file.
+Use this example when a PDF document should be exported as a DOCX file. DOCX is the preferred format for most new Word-processing workflows because it is widely supported and easier to edit.
 
 1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
 1. Create [`DocSaveOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/docsaveoptions/) and set the format to `DocX`.
