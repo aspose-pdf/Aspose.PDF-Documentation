@@ -1,34 +1,25 @@
 ---
 title: تنسيقات الملفات المدعومة
+linktitle: تنسيقات الملفات المدعومة
+type: docs
+weight: 20
 url: /ar/sharepoint/supported-file-formats/
-lastmod: "2020-12-16"
-description: يمكن لواجهة برمجة تطبيقات PDF SharePoint تحميل وحفظ تنسيقات الملفات التي تتضمن PDF و PDF/A.
+lastmod: "2026-06-18"
+description: يمكن لواجهة برمجة تطبيقات PDF SharePoint تحميل وحفظ تنسيقات الملفات التي تشمل PDF و PDF/A.
 ---
 
 ## <ins>**تنسيقات التحميل المدعومة**
-
-الجدول التالي يشير إلى تنسيقات الملفات التي يمكن تحميلها باستخدام Aspose.PDF for SharePoint.
-
-
+الجدول التالي يوضح تنسيقات الملفات التي يمكن لـ Aspose.PDF for SharePoint تحميلها.
 
 |**التنسيق**|**الوصف**|
-
 | :- | :- |
-
-|[PDF](https://docs.fileformat.com/pdf/)|تنسيق مستند محمول|
-
-|[PDF/A](https://docs.fileformat.com/pdf/a/)|تنسيق مستند محمول|
-
-## <ins>**تنسيقات الحفظ المدعومة**
-
-الجدول التالي يشير إلى تنسيقات الملفات التي يمكن حفظ المستند بها باستخدام Aspose.PDF for SharePoint.
-
-
+|[PDF](https://docs.fileformat.com/pdf/)|تنسيق المستندات القابلة للنقل|
+|[PDF/A](https://docs.fileformat.com/pdf/a/)|تنسيق المستندات القابلة للنقل|
+## <ins>**صيغ الحفظ المدعومة**
+الجدول التالي يشير إلى صيغ الملفات التي يمكن حفظ المستند بها باستخدام Aspose.PDF لـ SharePoint. 
 
 |**التنسيق**|**الوصف**|
-
 | :- | :- |
-
-|[PDF](https://docs.fileformat.com/pdf/)|يحفظ المستند بتنسيق PDF|
-
+|[PDF](https://docs.fileformat.com/pdf/)|يحفظ المستند بصيغة PDF|
 |[PDF/A](https://docs.fileformat.com/pdf/a/)|يحفظ المستند بتنسيق PDF/A|
+

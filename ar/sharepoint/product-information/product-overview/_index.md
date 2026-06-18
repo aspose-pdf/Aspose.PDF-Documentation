@@ -1,54 +1,29 @@
 ---
-
 title: نظرة عامة على المنتج
-
+linktitle: نظرة عامة على المنتج
+type: docs
 weight: 10
-
 url: /ar/sharepoint/product-overview/
-
-lastmod: "2020-12-16"
-
-description: يسمح API SharePoint لـ Microsoft SharePoint Server للمستخدمين بتصدير قوائم وعناصر القائمة وصفحات ويكي SharePoint إلى تنسيق ملف PDF.
-
+lastmod: "2026-06-18"
+description: PDF SharePoint API for Microsoft SharePoint Server يسمح للمستخدمين بتصدير القوائم وعناصر القوائم وصفحات Wiki في SharePoint إلى تنسيق ملف PDF.
 ---
 
-
-
 {{% alert color="primary" %}}
-
-
 
 ![todo:image_alt_text](../../aspose_pdf-for-sharepoint.png)
-
-### **مرحبًا بكم في توثيق Aspose.PDF لـ SharePoint!**
-
-Aspose.PDF لـ SharePoint هو حلا يسمح للمستخدمين بتصدير القوائم وعناصر القائمة وصفحات ويكي SharePoint إلى تنسيق ملف PDF.
-
-
+### **مرحبًا بكم في وثائق Aspose.PDF لـ SharePoint!**
+Aspose.PDF for SharePoint هو حل يسمح للمستخدمين بتصدير القوائم وعناصر القوائم وصفحات Wiki في SharePoint إلى تنسيق ملف PDF.
 
 {{% /alert %}}
-
-
-
 
 
 {{% alert color="primary" %}}
+تم تصميم Aspose.PDF for SharePoint للاستخدام مع Microsoft SharePoint Server 2010. لا توجد متطلبات نظام إضافية بخلاف Microsoft SharePoint Server 2010.
 
-Aspose.PDF لـ SharePoint مصمم للاستخدام مع Microsoft SharePoint Server 2010. لا توجد متطلبات نظام إضافية بجانب Microsoft SharePoint Server 2010.
+تصف هذه الوثائق Aspose.PDF for SharePoint [الميزات](/pdf/ar/sharepoint/features/), [التثبيت](/pdf/ar/sharepoint/install-aspose-pdf-for-sharepoint/), [قيود التقييم](/pdf/ar/sharepoint/evaluate-aspose-pdf/), [الترخيص](/pdf/ar/sharepoint/license-aspose-pdf-for-sharepoint/), حالات الاستخدام الشائعة والإعدادات.
 
-
-
-
-يصف هذا التوثيق ميزات Aspose.PDF لـ SharePoint، [التثبيت](/pdf/ar/sharepoint/install-aspose-pdf-for-sharepoint/)، [قيود التقييم](/pdf/ar/sharepoint/evaluate-aspose-pdf/)، [الترخيص](/pdf/ar/sharepoint/license-aspose-pdf-for-sharepoint/)، حالات الاستخدام الشائعة والإعدادات.
-
-```
 {{% /alert %}}
 
-
-
-**يظهر جدول أدوات Aspose على شريط القوائم والمكتبات أن Aspose.PDF for SharePoint مثبت**
-
-
+**علامة التبويب Aspose Tools على شريط القوائم والمكتبات تُظهر أن Aspose.PDF for SharePoint مُثبت**
 
 ![todo:image_alt_text](product-overview_2.png)
-```
