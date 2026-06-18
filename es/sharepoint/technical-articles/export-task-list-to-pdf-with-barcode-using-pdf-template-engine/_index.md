@@ -1,10 +1,11 @@
 ---
-title: Exportar Lista de Tareas a PDF con Código de Barras usando Motor de Plantillas PDF
+title: Exportar lista de tareas a PDF con código de barras usando PDF Template Engine
+linktitle: Exportar lista de tareas a PDF con código de barras usando PDF Template Engine
 type: docs
 weight: 40
 url: /es/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
-lastmod: "2020-12-16"
-description: PDF SharePoint API puede exportar Lista de Tareas a PDF con Código de Barras usando Motor de Plantillas PDF.
+lastmod: "2026-06-18"
+description: La API PDF SharePoint puede exportar la lista de tareas a PDF con código de barras usando PDF Template Engine.
 ---
 
 {{% alert color="primary" %}}
@@ -13,23 +14,25 @@ Este artículo muestra cómo configurar y exportar una lista de tareas a PDF con
 
 {{% /alert %}}
 
-Para exportar una lista de tareas a PDF con un código de barras utilizando el motor de plantillas, siga los siguientes pasos:
+Para exportar una lista de tareas a PDF con un código de barras usando el motor de plantillas, siga los siguientes pasos:
 
 1. Cree y cargue una plantilla.
 1. Complete los campos de la plantilla y guarde la plantilla.
-1. Cree y guarde una nueva tarea.
-1. Exporte el documento a PDF.
+1. Crear y guardar una nueva tarea.
+1. Exportar el documento a PDF.
 
 El proceso se detalla a continuación.
 
-## **Exportación de Lista de Tareas a PDF**
+## **Exportando la lista de tareas a PDF**
 
 {{% alert color="primary" %}}
 
-1. Cree una lista de plantillas PDF.
+1. Crear una lista de plantillas PDF.
 
-![todo:texto_alt_de_imagen](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
-2. Después de crear la plantilla, haga clic en **Agregar nuevo elemento** en la lista y cargue el archivo XML.
+![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
+
+
+2. Después de crear la plantilla, haz clic en **Agregar nuevo elemento** en la lista y carga el archivo XML.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_2.png)
 
@@ -46,11 +49,11 @@ La plantilla ha sido configurada.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
 
-8. En la pestaña de **Herramientas Aspose**, haga clic en **Exportar a PDF**.
+8. En la pestaña **Aspose Tools**, haga clic en **Export To PDF**.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_5.png)
 
-9. Seleccione la plantilla configurada y haga clic en **Exportar**.
+9. Seleccione la plantilla configurada y haga clic en **Export**.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_6.png)
 
