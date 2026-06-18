@@ -1,15 +1,16 @@
 ---
-title: Simpan Halaman Wiki SharePoint sebagai PDF
+title: Simpan halaman Wiki SharePoint sebagai PDF
+linktitle: Simpan halaman Wiki SharePoint sebagai PDF
 type: docs
 weight: 20
 url: /id/sharepoint/save-sharepoint-wiki-page-as-pdf/
-lastmod: "2020-12-16"
-description: Perpustakaan PDF SharePoint dapat digunakan untuk mengekspor halaman Wiki SharePoint ke PDF.
+lastmod: "2026-06-18"
+description: Pustaka PDF Sharepoint dapat digunakan untuk mengekspor halaman Wiki Sharepoint ke PDF.
 ---
 
 {{% alert color="primary" %}}
 
-## Ekspor Pdf Wiki SharePoint
+## Ekspor Pdf Wiki Sharepoint
 
 Artikel ini menunjukkan cara mengekspor Halaman Wiki SharePoint ke PDF menggunakan Aspose.PDF untuk SharePoint.
 
@@ -18,9 +19,9 @@ Artikel ini menunjukkan cara mengekspor Halaman Wiki SharePoint ke PDF menggunak
 
 {{% alert color="primary" %}}
 
-Untuk menyimpan halaman Wiki ke PDF, klik **Simpan sebagai PDF** pada tab **Halaman**. Screenshot di bawah menunjukkan bagian teks seperti yang terlihat di halaman Wiki dan diekspor ke PDF.
+Untuk menyimpan halaman Wiki ke PDF, klik **Save as PDF** pada tab **Page**. Tangkapan layar di bawah menunjukkan bagian teks seperti yang terlihat pada halaman Wiki dan diekspor ke PDF.
 
-**Halaman Wiki yang akan diekspor ke file PDF.** (Perhatikan tombol **Simpan sebagai PDF** pada tab **Halaman**.)
+**Sebuah halaman Wiki yang akan diekspor ke file PDF.** (Catat tombol **Save as PDF** pada tab **Page**.)
 
 ![todo:image_alt_text](save-sharepoint-wiki-page-as-pdf_1.png)
 
@@ -32,3 +33,4 @@ Untuk menyimpan halaman Wiki ke PDF, klik **Simpan sebagai PDF** pada tab **Hala
 ![todo:image_alt_text](save-sharepoint-wiki-page-as-pdf_2.png)
 
 {{% /alert %}}
+
