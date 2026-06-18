@@ -1,24 +1,25 @@
 ---
-title: Экспорт списка задач в PDF с штрихкодом с использованием PDF Template Engine
+title: Экспорт списка задач в PDF с штрих‑кодом с использованием PDF Template Engine
+linktitle: Экспорт списка задач в PDF с штрих‑кодом с использованием PDF Template Engine
 type: docs
 weight: 40
 url: /ru/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
-lastmod: "2020-12-16"
-description: PDF SharePoint API может экспортировать список задач в PDF с штрихкодом с использованием PDF Template Engine.
+lastmod: "2026-06-18"
+description: PDF SharePoint API может экспортировать список задач в PDF с штрих‑кодом с использованием PDF Template Engine.
 ---
 
 {{% alert color="primary" %}}
 
-Эта статья показывает, как настроить и экспортировать список задач в PDF с штрихкодами, используя Aspose.PDF для SharePoint.
+В этой статье показано, как настроить и экспортировать список задач в PDF с штрих‑кодами с использованием Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
-Чтобы экспортировать список задач в PDF с штрихкодом, используя движок шаблонов, выполните следующие шаги:
+Чтобы экспортировать список задач в PDF с штрих‑кодом с помощью шаблонного движка, выполните следующие шаги:
 
 1. Создайте и загрузите шаблон.
 1. Заполните поля шаблона и сохраните шаблон.
 1. Создайте и сохраните новую задачу.
-1. Экспортируйте документ в PDF.
+1. Экспортировать документ в PDF.
 
 Процесс описан подробно ниже.
 
@@ -29,11 +30,13 @@ description: PDF SharePoint API может экспортировать спис
 1. Создайте список шаблонов PDF.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
-2. После создания шаблона нажмите **Добавить новый элемент** в списке и загрузите XML файл.
+
+
+2. После создания шаблона нажмите **Add New Item** в списке и загрузите файл XML.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_2.png)
 
-3. Когда загрузка завершена, нажмите **ОК**.
+3. Когда загрузка завершена, нажмите **OK**.
 4. Заполните поля формы.
 5. Сохраните шаблон.
 
@@ -41,16 +44,16 @@ description: PDF SharePoint API может экспортировать спис
 
 Шаблон был настроен.
 
-6. Перейдите в список **Задачи** и создайте новую задачу.
+6. Перейдите к списку **Tasks** и создайте новую задачу.
 7. Сохраните задачу.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
 
-8. На вкладке **Aspose Tools** нажмите **Экспорт в PDF**.
+8. На вкладке **Aspose Tools** нажмите **Export To PDF**.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_5.png)
 
-9. Выберите настроенный шаблон и нажмите **Экспорт**.
+9. Выберите настроенный шаблон и нажмите **Export**.
 
 ![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_6.png)
 

@@ -1,41 +1,23 @@
 ---
-
 title: Ограничения API
-
+linktitle: Ограничения API
 type: docs
-
 weight: 70
-
 url: /ru/sharepoint/api-limitations/
-
-lastmod: "2020-12-16"
-
-description: Статья объясняет некоторые ограничения API SharePoint для PDF.
-
+lastmod: "2026-06-18"
+description: В статье объясняются некоторые ограничения PDF SharePoint API.
 ---
 
-
-
 {{% alert color="primary" %}}
 
-
-
-При использовании этого компонента существуют некоторые ограничения.
-
-
+При использовании этого компонента есть некоторые ограничения.
 
 {{% /alert %}}
-
-## Информация о создателе PDF
-
-
+## Информация о PDF Creator
 
 {{% alert color="primary" %}}
 
-
-
-Обратите внимание, что вы не можете устанавливать значения для полей **Application** и **Producer**, потому что Aspose Ltd. и Aspose.PDF для SharePoint x.x.x будут отображаться в этих полях.
-
+Обратите внимание, что вы не можете задавать значения для полей **Application** и **Producer**, так как в этих полях будет отображаться Aspose Ltd. и Aspose.PDF for SharePoint x.x.x. 
 
 
 {{% /alert %}}
