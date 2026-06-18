@@ -1,87 +1,44 @@
 ---
-
-title: SharePointライブラリに追加されたPDFに透かしを追加
-
-linktitle: PDFに透かしを追加
-
+title: SharePoint ライブラリに追加された PDF に透かしを追加する
+linktitle: PDF に透かしを追加する
 type: docs
-
 weight: 20
-
 url: /ja/sharepoint/add-watermark-to-pdf/
-
-lastmod: "2020-12-16"
-
-description: PDF SharePoint APIを使用すると、ライブラリに追加されたPDFドキュメントに透かしを追加できます。
-
+lastmod: "2026-06-18"
+description: PDF SharePoint API を使用すると、ライブラリに追加された PDF ドキュメントに透かしを追加できます。
 ---
-
-
 
 {{% alert color="primary" %}}
 
-
-
-Aspose.PDF for SharePointを使用すると、PDFドキュメントに透かしを追加できます。この機能により、ライブラリに追加されたPDFドキュメントの各ページの左下隅にテキストの透かしが追加されます。
-
-
+Aspose.PDF for SharePoint を使用すると、PDF ドキュメントに透かしを追加できます。この機能は、ライブラリに追加された PDF ドキュメントの各ページの左下隅にテキスト透かしを追加します。
 
 ## **左下隅の透かしテキスト**
 
-
-
 ![todo:image_alt_text](add-watermark-to-pdf_1.jpg)
-
-
 
 {{% /alert %}}
 
-
-
 {{% alert color="primary" %}}
 
+特定のライブラリに透かし機能を有効にするには:
 
+1. **Library Tools** ダイアログの **Aspose Tools** タブで **Watermark Settings** をクリックします。
 
-特定のライブラリで透かし機能を有効にするには:
-
-
-
-1. **ライブラリツール**ダイアログの**Asposeツール**タブで、**透かし設定**をクリックします。
-
-
-
-   **ライブラリツール**
-
-
+   **ライブラリ ツール**
 
 ![todo:image_alt_text](add-watermark-to-pdf_2.jpg)
 
+透かし設定はリスト固有ですので、異なるライブラリごとに異なる透かし設定を選択できます。以下のスクリーンショットは **Shared Documents** ライブラリ用の Watermark Settings ダイアログを示しています。
 
-
-透かし設定はリスト固有であるため、異なるライブラリに対して異なる透かし設定を選択できます。 以下のスクリーンショットは、**共有ドキュメント**ライブラリのウォーターマーク設定ダイアログを示しています。
-
-
-
-## **ウォーターマーク設定**
-
-
+## **透かし設定**
 
 ![todo:image_alt_text](add-watermark-to-pdf_3.jpg)
 
+- 特定のリスト向けに透かし機能を有効にするには、**Enable watermarking for** を選択します。
+- **Watermark text** – ページに透かしとして表示されるテキストです。
+- **Font** – ウォーターマークに使用されるフォント。
+- **Color** – ウォーターマークの色。
 
-
-- 特定のリストに対してウォーターマーク機能を有効にするには、**ウォーターマークを有効にする**を選択します。
-
-- **ウォーターマークテキスト** – ページにウォーターマークとして表示されるテキスト。
-
-- **フォント** – ウォーターマークに使用されるフォント。
-
-- **色** – ウォーターマークの色。
-
-
-
-特定のライブラリに対してウォーターマークを有効にすると、Aspose.PDFはそのライブラリに追加された各PDFドキュメントにウォーターマークを追加します。
-
-
+特定のライブラリでウォーターマークを有効にすると、Aspose.PDF はそのライブラリに追加された各 PDF ドキュメントにウォーターマークを付加します。
 
 {{% /alert %}}

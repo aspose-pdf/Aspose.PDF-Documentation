@@ -1,42 +1,42 @@
 ---
-title: XMLファイルを作成しPDFに変換する方法
+title: XML ファイルを作成し PDF に変換する方法
+linktitle: XML ファイルを作成し PDF に変換する方法
 type: docs
 weight: 30
 url: /ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
-lastmod: "2020-12-16"
-description: PDF SharePoint APIはXMLファイルをPDF形式に作成および変換することができます。
+lastmod: "2026-06-18"
+description: PDF SharePoint API は XML ファイルを作成し、PDF 形式に変換することができます。
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePointは、受賞歴のあるAspose.PDF for .NETコンポーネントを基に構築されています。Aspose.PDF for .NETは、ゼロからPDFドキュメントを作成することから既存のPDFファイルを操作することまで、驚くべき機能を提供します。これらの機能の中で、XMLからPDFへの変換は、この製品がサポートする素晴らしい機能の一つです。したがって、Aspose.PDF for SharePointもまた、XMLファイルをPDF形式に変換することができると信じています。
+Aspose.PDF for SharePoint は、受賞歴のある Aspose.PDF for .NET コンポーネントの上に構築されています。Aspose.PDF for .NET は、ゼロから PDF ドキュメントを作成することから既存の PDF ファイルを操作することまで、優れた機能を提供します。これらの機能の中で、XML から PDF への変換はこの製品がサポートする重要な機能の一つです。そのため、Aspose.PDF for SharePoint も XML ファイルを PDF 形式に変換できると考えています。
 
 {{% /alert %}}
 
-## **XMLファイルを作成しPDFに変換する**
+## **XML ファイルの作成と PDF への変換**
 
 {{% alert color="primary" %}}
 
-ステップバイステップで、この記事はXMLファイルを作成しPDFに変換するプロセスを案内します：
+ステップバイステップで、この記事は XML ファイルを作成し PDF に変換するプロセスをご案内します：
 
-
-1. [XMLファイルを作成する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
+1. [XML ファイルを作成する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
 2. [PDFテンプレートを作成する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
-3. [XMLテンプレートを読み込む](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
-4. [ソースパスを指定する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
-5. [ファイルプロパティを指定する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
-6. [PDFにファイルをエクスポートする](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
+3. [XMLテンプレートをロードする](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [ソースパスへのパスを指定する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+5. [ファイルのプロパティを指定する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
+6. [ファイルをPDFにエクスポートする](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
 7. [PDFファイルを保存する](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
+#### **ステップ 1: XML ファイルの作成**
+まず、Aspose.PDF for .NET のドキュメントオブジェクトモデルに基づいて XML ファイルを作成します。
 
-#### **ステップ1: XMLファイルを作成する**
-まず、Aspose.PDF for .NET ドキュメントオブジェクトモデルに基づいてXMLファイルを作成します。
-
-Aspose.PDF for .NET DOMによると、PDFドキュメントはセクションオブジェクトのコレクションを含み、セクションは1つ以上の段落要素を含みます。
- Textは段落レベルのオブジェクトであり、1つ以上のセグメントを含むことができます。以下に、サンプルテキスト文字列をSegmentオブジェクトに追加し、Textオブジェクトに追加する例を示します。最後に、Text要素をSectionオブジェクトの段落コレクションに追加します。
+Aspose.PDF for .NET DOM によると、PDF ドキュメントは Section オブジェクトのコレクションを含み、Section は 1 つ以上の Paragraph 要素を含みます。Text は Paragraph レベルのオブジェクトで、1 つ以上のセグメントを含むことができます。以下では、サンプルのテキスト文字列を Segment オブジェクトに追加し、さらに Text オブジェクトに追加します。最後に、Text 要素を Section オブジェクトの paragraphs コレクションに追加します。
 
 **XML**
 
 {{< highlight csharp >}}
+
+
 
 <?xml version="1.0" encoding="utf-8" ?>
 
@@ -54,75 +54,86 @@ Aspose.PDF for .NET DOMによると、PDFドキュメントはセクションオ
 
   </Pdf>
 
-{{< /highlight >}}
-#### **ステップ2: PDFテンプレートを作成する**
-続行する前に、変換を行うシステムにSharePoint Foundationサーバー2010が正しくインストールされ、設定されていることを確認してください。
 
-1. SharePointサイトにログインします。
-1. **サイトの操作**および**すべてのアイテム**を選択します。
-1. **作成**オプションを選択し、リストから**PDFテンプレート**を選択します。
+
+{{< /highlight >}}
+#### **ステップ 2: PDF テンプレートの作成**
+続行する前に、変換が行われるシステムに SharePoint Foundation server 2010 が正しくインストールされ、構成されていることを確認してください。
+
+1. SharePoint サイトにログインします。
+1. **Site Action** と **All Items** を選択します。
+1. リストから **Create** オプションを選択し、**PDF Template** を選択します。
 1. テンプレート名を入力します。
-1. **作成**をクリックします。
+1. **Create** をクリックします。
+
+
+
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
-#### **ステップ3: XMLテンプレートを読み込む**
+#### **ステップ 3: XML テンプレートの読み込み**
+テンプレートが作成されたら、ロードします [XML ファイル](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
 
-テンプレートが作成されたら、[XMLファイル](/pdf/ja/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)を読み込みます。
-1. PDFテンプレートページで、**新しいアイテムを追加**を選択します。
+1. PDFテンプレートページで、**Add new item** を選択します。
 
 
 
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
-#### **ステップ 4: ソースファイルパスを指定**
+#### **ステップ 4: ソース ファイル パス の 指定**
+ドキュメントアップロード ダイアログで：
 
-ドキュメントアップロードダイアログで：
-
-1. **参照**をクリックし、システム上のXMLファイルを見つけます。既存のファイルを上書きするオプションを有効にするチェックボックスをオンにすることができます。
-1. **OK**ボタンを押します。
+1. **Browse** をクリックして、システム上の XML ファイルを見つけます。既存のファイルを上書きするオプションのチェック ボックスを有効にすることができます。
+1. **OK** ボタンを押します。
 
 
 
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
-#### **ステップ 5: ファイルプロパティを指定**
+#### **ステップ 5: ファイル プロパティ の 指定**
+ファイルがロードされたら、必須フィールド（赤いアスタリスク * でマークされたもの）に情報を追加してください。
 
-ファイルが読み込まれると、必須フィールド（赤いアスタリスクでマークされたもの: *）に情報を追加します。
-
-この例では、サンプルの説明が追加され、次のフィールドが入力されました：
+この例では、サンプルの説明が追加され、以下のフィールドが入力されました:
 
 1. ドキュメントの簡単な説明。
-1. **割り当てられたリストタイプ**フィールドに**AllListTypes**を入力します。
-1. **タイプ**メニューから**リスト**を選択します。
-   ステータスが**アクティブ**のままであることを確認してください。
-1. **保存**をクリックしてプロパティを保存します。
+1. **Assigned List Types** フィールドに **AllListTypes** を入力してください。
+1. **Type** メニューから **List** を選択してください。
+   ステータスが **Active** のままであることを確認してください。
+1. プロパティを保存するには、**Save** をクリックしてください。
 
 
 
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_4.png)
-#### **ステップ 6: PDFへエクスポート**
+#### **ステップ 6: PDF にエクスポート**
+XML ファイルが PDF テンプレートに追加されたとき:
+いずれか:
 
-XMLファイルがPDFテンプレートに追加されたとき：
-Either:
+1. test.xml ファイルを右クリックします。
+1. メニューから **Export to PDF** を選択します。
 
-1. test.xmlファイルを右クリックします。
-1. メニューから**PDFにエクスポート**を選択します。
+または:
 
-Or:
+1. **Library Tools** から **Aspose Tools** を選択してください。
+1. **Export** をクリックしてください。
 
-1. **ライブラリツール**から**Asposeツール**を選択します。
-1. **エクスポート**をクリックします。
+
+
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_5.png)
-#### **ステップ7: PDFドキュメントを保存する**
-1. PDFへのエクスポートダイアログで、**テンプレートストレージ**（ソースファイルが保存されている場所）を選択します。
-1. **テンプレート名**メニューからエクスポートするファイルを選択します。
-1. **PDFにエクスポート**をクリックして最終的なPDFドキュメントを保存します。
+#### **Step 7: PDF ドキュメントを保存**
+1. Export to PDF ダイアログで、**Template storage**（ソースファイルが保存されている場所）を選択してください。
+1. **Template name** メニューからエクスポートするファイルを選択してください。
+1. 最終的な PDF ドキュメントを保存するには、**Export to PDF** をクリックしてください。
+
+
+
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_6.png)
-#### **PDFを開く**
-PDFドキュメントが保存され、開くことができます。以下の画像では、XMLの{segment]タグにあったフレーズ「Hello World」に注目してください。また、PDFプロデューサーがAspose.PDF for SharePointであることにも注意してください。
+#### **PDF を開く**
+PDF ドキュメントが保存され、開くことができます。下の画像では、XML の {segment] タグにあったフレーズ "Hello World" に注目してください。また、PDF Producer が Aspose.PDF for SharePoint であることにも注目してください。
+
+
+
 
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
 

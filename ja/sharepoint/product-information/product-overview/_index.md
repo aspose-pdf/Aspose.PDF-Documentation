@@ -1,35 +1,29 @@
 ---
-
 title: 製品概要
-
+linktitle: 製品概要
+type: docs
 weight: 10
-
 url: /ja/sharepoint/product-overview/
-
-lastmod: "2020-12-16"
-
-description: Microsoft SharePoint ServerのPDF SharePoint APIを使用すると、ユーザーはリスト、リスト項目、SharePoint WikiページをPDFファイル形式にエクスポートできます。
-
+lastmod: "2026-06-18"
+description: Microsoft SharePoint Server 用の PDF SharePoint API は、ユーザーがリスト、リスト項目、および SharePoint Wiki ページを PDF ファイル形式にエクスポートできるようにします。
 ---
 
-![todo:image_alt_text](../../aspose_pdf-for-sharepoint.png)
-
-### **Aspose.PDF for SharePointドキュメントへようこそ！**
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePointは、ユーザーがリスト、リスト項目、SharePoint WikiページをPDFファイル形式にエクスポートできるソリューションです。
-
-Aspose.PDF for SharePointは、Microsoft SharePoint Server 2010と共に使用するように設計されています。Microsoft SharePoint Server 2010以外に追加のシステム要件はありません。
-
-このドキュメントでは、Aspose.PDF for SharePointの[機能](/pdf/ja/sharepoint/features/)、[インストール](/pdf/ja/sharepoint/install-aspose-pdf-for-sharepoint/)、[評価制限](/pdf/ja/sharepoint/evaluate-aspose-pdf/)、[ライセンス](/pdf/ja/sharepoint/license-aspose-pdf-for-sharepoint/)、一般的な使用事例や設定について説明しています。
-
+![todo:image_alt_text](../../aspose_pdf-for-sharepoint.png)
+### **Aspose.PDF for SharePoint ドキュメントへようこそ！**
+Aspose.PDF for SharePoint は、ユーザーがリスト、リスト項目、そして SharePoint Wiki ページを PDF ファイル形式にエクスポートできるソリューションです。
 
 {{% /alert %}}
 
 
+{{% alert color="primary" %}}
+Aspose.PDF for SharePoint は Microsoft SharePoint Server 2010 で使用するように設計されています。Microsoft SharePoint Server 2010 以外に追加のシステム要件はありません。
 
-**リストとライブラリのリボンのAsposeツールタブによると、Aspose.PDF for SharePointがインストールされていることが示されています**
+このドキュメントは Aspose.PDF for SharePoint の [機能](/pdf/ja/sharepoint/features/), [インストール](/pdf/ja/sharepoint/install-aspose-pdf-for-sharepoint/), [評価の制限](/pdf/ja/sharepoint/evaluate-aspose-pdf/), [ライセンス](/pdf/ja/sharepoint/license-aspose-pdf-for-sharepoint/)、一般的な使用事例と設定。
 
+{{% /alert %}}
 
+**リストとライブラリのリボンにある Aspose Tools タブは、Aspose.PDF for SharePoint がインストールされていることを示しています**
 
 ![todo:image_alt_text](product-overview_2.png)
