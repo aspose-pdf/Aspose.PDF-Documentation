@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/extract-data-from-table-in-pdf/
 description: Learn how to extract table data from PDF files with Aspose.PDF for Java and export detected tables for further processing.
-lastmod: "2026-06-09"
+lastmod: "2026-06-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,11 @@ Abstract: This article explains how to extract and process table data from PDF d
 
 Use `TableAbsorber` to find tables on each page and iterate through rows, cells, text fragments, and text segments.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Iterate through the document pages.
-1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit each [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Iterate through the detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedcell/), and [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) objects.
-1. Build the extracted row text and print the table data.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Iterate through the document [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) objects because tables are detected page by page.
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) for each page and call `visit(page)` to populate the detected table list.
+1. Iterate through the detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/), and `TextSegment` objects.
+1. Build the extracted row text from the fragment content and print the table data.
 
 ```java
 public static void extractTablesFromPdf(Path inputFile) {
@@ -63,12 +63,12 @@ public static void extractTablesFromPdf(Path inputFile) {
 
 This example finds a square annotation, compares its rectangle to each detected table, and outputs only tables inside the marked region.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Get the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and find the square [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) on that page.
-1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and visit the page.
-1. Compare each detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) with the annotation rectangle.
-1. Iterate through the matching [AbsorbedRow](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedrow/) and [AbsorbedCell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedcell/) objects.
-1. Build the extracted row text and print the table data for the marked region.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Get the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and locate the square [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) that marks the extraction region.
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and call `visit(page)` to detect tables on that page.
+1. Compare each detected [AbsorbedTable](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) with the annotation rectangle bounds.
+1. Iterate through the matching [AbsorbedRow](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedrow/) and [AbsorbedCell](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/absorbedcell/) objects and reconstruct the row text.
+1. Print the table data for the marked region only.
 
 ```java
 public static void extractTableFromSpecificArea(Path inputFile) {
@@ -130,10 +130,10 @@ public static void extractTableFromSpecificArea(Path inputFile) {
 
 ## Export tables to Excel
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
 1. Create [ExcelSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/excelsaveoptions/) for the export.
-1. Set the Excel output format to XLSX.
-1. Save the document in Excel format.
+1. Set the Excel output format to `XLSX` so detected table layout is written as an Excel workbook.
+1. Call `document.save(outputFile.toString(), excelSave)` to export the document in Excel format.
 
 ```java
 public static void exportTablesToExcel(Path inputFile, Path outputFile) {
