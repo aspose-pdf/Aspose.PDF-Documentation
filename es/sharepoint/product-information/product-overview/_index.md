@@ -1,48 +1,29 @@
 ---
-
 title: Descripción del producto
-
-url: /es/sharepoint/descripcion-del-producto/
-
-lastmod: "2020-12-16"
-
-description: PDF SharePoint API para Microsoft SharePoint Server permite a los usuarios exportar listas, elementos de lista y páginas de Wiki de SharePoint al formato de archivo PDF.
-
+linktitle: Descripción del producto
+type: docs
+weight: 10
+url: /es/sharepoint/product-overview/
+lastmod: "2026-06-18"
+description: La API PDF SharePoint para Microsoft SharePoint Server permite a los usuarios exportar listas, elementos de lista y páginas Wiki de SharePoint al formato de archivo PDF.
 ---
 
 {{% alert color="primary" %}}
 
-
-
-![todo:texto_alternativo_de_la_imagen](../../aspose_pdf-for-sharepoint.png)
-
+![todo:image_alt_text](../../aspose_pdf-for-sharepoint.png)
 ### **¡Bienvenido a la Documentación de Aspose.PDF para SharePoint!**
-
-Aspose.PDF para SharePoint es una solución que permite a los usuarios exportar listas, elementos de lista y páginas de Wiki de SharePoint al formato de archivo PDF.
-
-
+Aspose.PDF for SharePoint es una solución que permite a los usuarios exportar listas, elementos de lista y páginas Wiki de SharePoint al formato de archivo PDF.
 
 {{% /alert %}}
-
-
-
 
 
 {{% alert color="primary" %}}
+Aspose.PDF for SharePoint está diseñada para usarse con Microsoft SharePoint Server 2010. No hay requisitos de sistema adicionales además de Microsoft SharePoint Server 2010.
 
-Aspose.PDF para SharePoint está diseñado para ser utilizado con Microsoft SharePoint Server 2010. No hay requisitos adicionales del sistema además de Microsoft SharePoint Server 2010.
-
-
-
-
-Esta documentación describe las [características](/pdf/es/sharepoint/caracteristicas/), [instalación](/pdf/es/sharepoint/instalar-aspose-pdf-para-sharepoint/), [limitaciones de evaluación](/pdf/es/sharepoint/evaluar-aspose-pdf/), [licencias](/pdf/es/sharepoint/licencia-aspose-pdf-para-sharepoint/), casos de uso comunes y configuraciones de Aspose.PDF para SharePoint.
+Esta documentación describe Aspose.PDF for SharePoint [características](/pdf/es/sharepoint/features/), [instalación](/pdf/es/sharepoint/install-aspose-pdf-for-sharepoint/), [limitaciones de evaluación](/pdf/es/sharepoint/evaluate-aspose-pdf/), [licenciamiento](/pdf/es/sharepoint/license-aspose-pdf-for-sharepoint/), casos de uso comunes y configuraciones.
 
 {{% /alert %}}
 
+**La pestaña Aspose Tools en la cinta de Listas y Bibliotecas muestra que Aspose.PDF for SharePoint está instalado**
 
-
-**La pestaña Herramientas de Aspose en la cinta Listas y Bibliotecas muestra que Aspose.PDF for SharePoint está instalado**
-
-
-
-![todo:texto_alternativo_de_la_imagen](product-overview_2.png)
+![todo:image_alt_text](product-overview_2.png)
