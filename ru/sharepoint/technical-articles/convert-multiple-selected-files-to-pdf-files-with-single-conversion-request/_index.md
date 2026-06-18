@@ -1,36 +1,38 @@
 ---
-title: Convert multiple selected files to PDF files with single Conversion Request
+title: Конвертировать несколько выбранных файлов в PDF-файлы с одним запросом на конвертацию
+linktitle: Конвертировать несколько выбранных файлов в PDF-файлы с одним запросом на конвертацию
 type: docs
 weight: 50
 url: /ru/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
-lastmod: "2020-12-16"
-description: PDF SharePoint Library enables you to convert multiple selected files to PDF files with a single conversion operation.
+lastmod: "2026-06-18"
+description: PDF SharePoint Library позволяет конвертировать несколько выбранных файлов в PDF-файлы одной операцией конвертации.
 ---
 
 {{% alert color="primary" %}}
 
-Эта статья показывает, как конвертировать несколько выбранных файлов в PDF-файлы с помощью одной операции преобразования, используя Aspose.PDF для SharePoint.
+В этой статье показано, как конвертировать несколько выбранных файлов в PDF-файлы одной операцией конвертации с использованием Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
-## Преобразование нескольких выбранных файлов в PDF
+## Конвертировать несколько выбранных файлов в PDF
 
 {{% alert color="primary" %}}
 
-Чтобы конвертировать несколько выбранных файлов, выполните следующие действия:
+Чтобы конвертировать несколько выбранных файлов, выполните следующие шаги:
 
-1. Выберите файлы для преобразования
+1. Выберите файлы для конвертации
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
 
-2. Нажмите на вкладку Aspose Tools в инструментах библиотеки
+2. Щелкните вкладку Aspose Tools в Library Tools
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
-3. Нажмите «Преобразовать в PDF», чтобы преобразовать все выбранные файлы в итоговые файлы PDF.
+
+3. Щелкните Convert to PDF, чтобы преобразовать все выбранные файлы в полученные PDF‑файлы.
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_3.jpg)
 
-4. Появится запрос на загрузку преобразованных файлов.
+4. Будет показано окно для загрузки преобразованных файлов.
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_4.jpg)
 
