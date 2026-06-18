@@ -1,17 +1,18 @@
 ---
-title: Menghapus Lisensi Aspose.Pdf untuk SharePoint
+title: Mencopot Lisensi Aspose.Pdf untuk SharePoint
+linktitle: Mencopot Lisensi Aspose.Pdf untuk SharePoint
 type: docs
 weight: 30
 url: /id/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
-lastmod: "2020-12-16"
-description: Silakan ikuti langkah-langkah yang disebutkan dalam artikel ini untuk menghapus Lisensi API SharePoint PDF.
+lastmod: "2026-06-18"
+description: Silakan ikuti langkah-langkah yang disebutkan dalam artikel ini untuk mencopot Lisensi PDF SharePoint API.
 ---
 
-## Langkah-langkah Penghapusan
+## Langkah Pencopotan
 
 {{% alert color="primary" %}}
 
-Untuk menghapus lisensi Aspose.PDF untuk SharePoint, silakan gunakan langkah-langkah berikut dari konsol server.
+Untuk mencopot lisensi Aspose.PDF untuk SharePoint, silakan gunakan langkah-langkah di bawah ini dari konsol server.
 
 1. Tarik kembali solusi lisensi dari farm:
 
@@ -21,9 +22,9 @@ Untuk menghapus lisensi Aspose.PDF untuk SharePoint, silakan gunakan langkah-lan
 
   stsadm.exe -o execadmsvcjobs
 
-3. Tunggu hingga penarikan selesai. Anda dapat menggunakan Central   
+3. Tunggu penarikan selesai. Anda dapat menggunakan Central   
 
-  Administration untuk memeriksa apakah penarikan telah selesai di bawah Central Administration -> Operations -> Solution Management
+  Administration untuk memeriksa apakah penarikan selesai di Central Administration -> Operations -> Solution Management
 
 4. Hapus solusi dari penyimpanan solusi SharePoint:
 

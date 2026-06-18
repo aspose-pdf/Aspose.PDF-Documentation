@@ -1,20 +1,21 @@
 ---
-title: Detail pemasangan lebih lanjut
+title: Detail instalasi lebih lanjut
+linktitle: Detail instalasi lebih lanjut
 type: docs
 weight: 30
 url: /id/sharepoint/more-installation-details/
-lastmod: "2020-12-16"
-description: Informasi lebih lanjut tentang pemasangan PDF SharePoint API menjelaskan cara menerapkan, mengaktifkan, dan menonaktifkannya pada koleksi situs.
+lastmod: "2026-06-18"
+description: Informasi lebih lanjut tentang instalasi PDF SharePoint API menjelaskan cara menyebarkan, mengaktifkan, dan menonaktifkannya pada koleksi situs.
 ---
 
-## **Penerapan**
+## **Penyebaran**
 
 {{% alert color="primary" %}}
 
-**Aspose.PDF untuk SharePoint melakukan tindakan berikut selama penerapan:**
-- Menginstal Aspose.PDF.SharePoint.dll ke dalam Global Assembly Cache dan menambahkan entri SafeControl ke file web.config.
-- Menginstal manifest fitur dan file lain yang diperlukan ke direktori yang sesuai.
-- Mendaftarkan fitur dalam database SharePoint dan membuatnya tersedia untuk aktivasi pada lingkup fitur.
+**Aspose.PDF for SharePoint melakukan tindakan berikut selama penyebaran:**
+- Instal Aspose.PDF.SharePoint.dll ke Global Assembly Cache dan tambahkan entri SafeControl ke file web.config.
+- Instal manifest fitur dan file lain yang diperlukan ke direktori yang sesuai.
+- Daftarkan fitur di database SharePoint dan buat tersedia untuk aktivasi pada ruang lingkup fitur.
 
 {{% /alert %}}
 
@@ -23,12 +24,12 @@ description: Informasi lebih lanjut tentang pemasangan PDF SharePoint API menjel
 
 {{% alert color="primary" %}}
 
-**Aspose.PDF untuk SharePoint dikemas sebagai fitur tingkat situs (koleksi situs) dan dapat diaktifkan serta dinonaktifkan pada koleksi situs.**
+**Aspose.PDF for SharePoint dikemas sebagai fitur tingkat situs (koleksi situs) dan dapat diaktifkan serta dinonaktifkan pada koleksi situs.**
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Selama aktivasi, fitur ini membuat beberapa perubahan pada direktori virtual dari aplikasi web induk dari koleksi situs: Menambahkan halaman pengaturan konversi ke file sitemap.
- Salin file sumber daya yang diperlukan ke folder App_GlobalResources di direktori virtual.
- {{% /alert %}}
+Selama aktivasi, fitur membuat beberapa perubahan pada direktori virtual dari aplikasi web induk koleksi situs: Tambahkan halaman pengaturan konversi ke file sitemap. Salin file sumber daya yang diperlukan ke folder App_GlobalResources di direktori virtual.
+
+{{% /alert %}}
