@@ -1,39 +1,39 @@
 ---
-title: SharePointでHTML、テキスト、画像をPDFに変換
-linktitle: PDFに変換
+title: SharePoint で HTML、テキスト、画像を PDF に変換する
+linktitle: PDF に変換する
 type: docs
 weight: 30
 url: /ja/sharepoint/convert-to-pdf/
-lastmod: "2020-12-16"
-description: PDF SharePoint APIを使用すると、HTMLファイル、テキストファイル、画像（JPG、PNG、GIF、TIFF、BMP）をPDF形式に変換できます。
+lastmod: "2026-06-18"
+description: PDF SharePoint API は、HTML ファイル、テキスト ファイル、および画像（JPG、PNG、GIF、TIFF、BMP）を PDF 形式に変換できます。
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePointを使用すると、HTMLファイル、テキストファイル、画像（JPG、PNG、GIF、TIFF、BMP）をPDF形式に変換できます。
+Aspose.PDF for SharePoint は、HTML ファイル、テキスト ファイル、および画像（JPG、PNG、GIF、TIFF、BMP）を PDF 形式に変換できます。
 
 {{% /alert %}}
 
 
-## **ドキュメントをPDFに変換する**
+## **ドキュメントを PDF に変換**
 
 {{% alert color="primary" %}}
 
-ドキュメントをPDFに変換するには：
+ドキュメントを PDF に変換するには:
 
-1. ECBメニューで**PDFに変換**をクリックします。
-1. 結果のPDFファイルをダウンロードして保存します。
+1. ECB メニューで **Convert to PDF** をクリックします。
+1. 生成された PDF ファイルをダウンロードして保存します。
 
-**ECBメニューのPDFに変換オプション**
+**ECB メニューの PDF 変換オプション**
 
 ![todo:image_alt_text](convert-to-pdf_1.jpg)
 
 {{% /alert %}}
 
-## **PDFクリエイター情報**
+## **PDF 作成者情報**
 
 {{% alert color="primary" %}}
 
-- **Application**および**Producer**フィールドに対して値を設定することはできませんのでご注意ください。これらのフィールドにはAspose Ltd.およびAspose.PDF for SharePoint x.x.xが表示されます。 
+- ※ **Application** と **Producer** フィールドには値を設定できません。これらのフィールドには Aspose Ltd. および Aspose.PDF for SharePoint x.x.x が表示されますのでご注意ください。 
 
 {{% /alert %}}

@@ -1,32 +1,34 @@
 ---
-title: 複数の選択されたファイルを単一の変換リクエストでPDFファイルに変換する
+title: 単一の変換リクエストで複数の選択されたファイルを PDF ファイルに変換する
+linktitle: 単一の変換リクエストで複数の選択されたファイルを PDF ファイルに変換する
 type: docs
 weight: 50
 url: /ja/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
-lastmod: "2020-12-16"
-description: PDF SharePointライブラリは、複数の選択されたファイルを単一の変換操作でPDFファイルに変換することを可能にします。
+lastmod: "2026-06-18"
+description: PDF SharePoint Library は、単一の変換操作で複数の選択されたファイルを PDF ファイルに変換できるようにします。
 ---
 
 {{% alert color="primary" %}}
 
-この記事では、Aspose.PDF for SharePointを使用して、複数の選択されたファイルを単一の変換操作でPDFファイルに変換する方法を示します。
+この記事では、Aspose.PDF for SharePoint を使用して、単一の変換操作で複数の選択されたファイルを PDF ファイルに変換する方法を示します。
 
 {{% /alert %}}
 
-## 複数の選択されたファイルをPDFに変換する
+## 複数の選択されたファイルを PDF に変換
 
 {{% alert color="primary" %}}
 
-複数の選択されたファイルを変換するには、次の手順を実行します：
+複数の選択されたファイルを変換するには、以下の手順を実行します：
 
-1. 変換するファイルを選択する
+1. 変換するファイルを選択します
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
 
-2. ライブラリツールでAspose Toolsタブをクリックする
+2. Library Tools の Aspose Tools タブをクリック
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
-3. 選択されたすべてのファイルを変換し、結果として得られるPDFファイルにするには、「PDFに変換」をクリックします。
+
+3. Convert to PDF をクリックして、選択したすべてのファイルを結果の PDF ファイルに変換します。
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_3.jpg)
 
