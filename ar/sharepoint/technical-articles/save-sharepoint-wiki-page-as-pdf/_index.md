@@ -1,34 +1,36 @@
 ---
-title: حفظ صفحة ويكي SharePoint كملف PDF
+title: احفظ صفحة Wiki على SharePoint كملف PDF
+linktitle: احفظ صفحة Wiki على SharePoint كملف PDF
 type: docs
 weight: 20
 url: /ar/sharepoint/save-sharepoint-wiki-page-as-pdf/
-lastmod: "2020-12-16"
-description: يمكن استخدام مكتبة PDF الخاصة بـ SharePoint لتصدير صفحات ويكي SharePoint إلى PDF.
+lastmod: "2026-06-18"
+description: يمكن استخدام مكتبة PDF في SharePoint لتصدير صفحات Wiki على SharePoint إلى PDF.
 ---
 
 {{% alert color="primary" %}}
 
-## تصدير ويكي SharePoint إلى PDF
+## تصدير Wiki PDF في SharePoint
 
-توضح هذه المقالة كيفية تصدير صفحات ويكي SharePoint إلى PDF باستخدام Aspose.PDF لـ SharePoint.
+توضح هذه المقالة كيفية تصدير صفحات Wiki على SharePoint إلى PDF باستخدام Aspose.PDF لـ SharePoint.
 
 {{% /alert %}}
-## **حفظ صفحات ويكي**
+## **حفظ صفحات Wiki**
 
 {{% alert color="primary" %}}
 
-لحفظ صفحة ويكي إلى PDF، انقر على **حفظ كملف PDF** في علامة التبويب **الصفحة**. تُظهر لقطات الشاشة أدناه قسمًا من النص كما يبدو على صفحة ويكي ومصدر إلى PDF.
+لحفظ صفحة Wiki كملف PDF، انقر على **Save as PDF** في تبويب **Page**. تظهر لقطات الشاشة أدناه قسمًا من النص كما يظهر في صفحة Wiki ومُصدَّر إلى PDF.
 
-**صفحة ويكي على وشك التصدير إلى ملف PDF.** (لاحظ زر **حفظ كملف PDF** في علامة التبويب **الصفحة**.)
+**صفحة ويكي على وشك تصديرها إلى ملف PDF.** (لاحظ زر **حفظ كـ PDF** في علامة تبويب **الصفحة**.)
 
 ![todo:image_alt_text](save-sharepoint-wiki-page-as-pdf_1.png)
 
 
 
 
-**ملف PDF يظهر صفحة ويكي المصدرة.**
+**ملف PDF يوضح صفحة الويكي المُصدَّرة.**
 
 ![todo:image_alt_text](save-sharepoint-wiki-page-as-pdf_2.png)
 
 {{% /alert %}}
+

@@ -1,16 +1,16 @@
 ---
 title: تحويل HTML والنصوص والصور إلى PDF في SharePoint
-linktitle: التحويل إلى PDF
+linktitle: تحويل إلى PDF
 type: docs
 weight: 30
 url: /ar/sharepoint/convert-to-pdf/
-lastmod: "2020-12-16"
-description: يتيح PDF SharePoint API تحويل ملفات HTML وملفات النصوص والصور (JPG، PNG، GIF، TIFF، BMP) إلى تنسيق PDF.
+lastmod: "2026-06-18"
+description: يتيح API لـ PDF SharePoint تحويل ملفات HTML وملفات النص والصور (JPG، PNG، GIF، TIFF، BMP) إلى تنسيق PDF.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF لـ SharePoint يتيح تحويل ملفات HTML وملفات النصوص والصور (JPG، PNG، GIF، TIFF، BMP) إلى تنسيق PDF.
+يتيح Aspose.PDF for SharePoint تحويل ملفات HTML وملفات النص والصور (JPG، PNG، GIF، TIFF، BMP) إلى تنسيق PDF.
 
 {{% /alert %}}
 
@@ -21,10 +21,10 @@ Aspose.PDF لـ SharePoint يتيح تحويل ملفات HTML وملفات ال
 
 لتحويل مستند إلى PDF:
 
-1. انقر فوق **التحويل إلى PDF** في قائمة ECB.
+1. انقر **Convert to PDF** في قائمة ECB.
 1. قم بتنزيل وحفظ ملف PDF الناتج.
 
-**خيار التحويل إلى PDF في قائمة ECB**
+**تحويل إلى PDF في قائمة ECB**
 
 ![todo:image_alt_text](convert-to-pdf_1.jpg)
 
@@ -34,6 +34,6 @@ Aspose.PDF لـ SharePoint يتيح تحويل ملفات HTML وملفات ال
 
 {{% alert color="primary" %}}
 
-- يرجى ملاحظة أنه لا يمكنك تعيين القيم مقابل الحقول **Application** و**Producer**، لأن Aspose Ltd. وAspose.PDF لـ SharePoint x.x.x سيتم عرضها مقابل هذه الحقول.
+- يرجى ملاحظة أنه لا يمكنك تعيين قيم ضد حقلي **Application** و **Producer** ، لأن Aspose Ltd. و Aspose.PDF for SharePoint x.x.x سيظهران في هذين الحقلين. 
 
 {{% /alert %}}
