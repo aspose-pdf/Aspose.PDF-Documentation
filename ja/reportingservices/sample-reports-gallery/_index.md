@@ -1,9 +1,11 @@
 ---
 title: サンプルレポートギャラリー
+linktitle: サンプルレポートギャラリー
 type: docs
 weight: 40
 url: /ja/reportingservices/sample-reports-gallery/
-lastmod: "2024-05-05"
+description: Aspose.PDF for Reporting Services を使用して生成されたサンプルレポートを探検してください。SSRS レポートが洗練された PDF 出力に変換できる様子をご確認ください。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
@@ -12,24 +14,25 @@ lastmod: "2024-05-05"
 
 {{% /alert %}}
 
-ここに示されているレポートのほとんどは、Adventure Works データベースからのものです。Adventure Works は Microsoft SQL Server のサンプルデータベースで、[こちら](http://www.microsoft.com/downloads/details.aspx?familyid=E719ECF7-9F46-4312-AF89-6AD8702E4E6E&displaylang=en)からダウンロードできます。
+ここに示されているレポートのほとんどは Adventure Works データベースから取得されています。Adventure Works は Microsoft SQL Server 用のサンプルデータベースで、Microsoft からダウンロードできます。 [ここ](http://www.microsoft.com/downloads/details.aspx?familyid=E719ECF7-9F46-4312-AF89-6AD8702E4E6E&displaylang=en).
 
 ## 会社の売上
 
-![会社の売上レポート PDF](sample-reports-gallery_1.png)
+![PDFでの会社売上レポート](sample-reports-gallery_1.png)
 
-## 従業員の売上概要
+## 従業員売上サマリー
 
-![従業員の売上概要レポート PDF](sample-reports-gallery_2.png)
+![PDFでの従業員売上サマリーレポート](sample-reports-gallery_2.png)
 
 ## 製品カタログ
 
-![製品カタログレポート PDF](sample-reports-gallery_3.png)
+![PDF の製品カタログレポート](sample-reports-gallery_3.png)
 
-## 製品ライン売上
+## 製品ライン販売
 
-![製品ライン売上レポート PDF](sample-reports-gallery_4.png)
+![PDF の製品ライン販売レポート](sample-reports-gallery_4.png)
 
-## 売上注文の詳細
+## 販売注文詳細
 
-![売上注文の詳細レポート PDF](sample-reports-gallery_5.png)
+![PDF の販売注文詳細レポート](sample-reports-gallery_5.png)
+

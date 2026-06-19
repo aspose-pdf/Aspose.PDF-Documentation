@@ -1,21 +1,28 @@
 ---
-title: 簡単で軽量なデプロイ
+title: パラメータ化レポートサポート
+linktitle: パラメータ化レポートサポート
 type: docs
-weight: 40
-url: /ja/reportingservices/easy-and-lightweight-deployment/
-lastmod: "2021-06-05"
+weight: 20
+url: /ja/reportingservices/parameterized-report-support/
+lastmod: "2026-06-19"
 ---
 
-**Aspose.Pdf for Reporting Services** は、Microsoft SQL Server 2016/2017/2019/2022 Reporting Services および Power BI Report Server 向けのカスタムレンダリング拡張機能です。Aspose.Pdf for Reporting Services は、以下のいずれかを実行しているコンピュータにインストールできる単一の MSI インストーラとして提供されます:
+パラメータ化レポートとは、レポート処理で使用される入力値を受け取るレポートです。パラメータ化レポートを使用すると、レポート実行時に設定された値に基づいてレポートの出力を変更できます。Aspose.Pdf for Reporting Services は、レポートサーバーパラメータとレポートパラメータの 2 種類のパラメータをサポートしています。レポートサーバーパラメータはレポートサーバー上のすべてのレポートで使用されます。特定のレポートに適したパラメータにしたい場合は、レポートパラメータを使用すべきです。
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
+現在、Aspose.Pdf レンダラーは、次のような幅広いパラメータをサポートしています。
 
-Aspose.Pdf for Reporting Services は、完全に C# で書かれた、CLS に準拠し、安全なマネージコードのみを含む 1 つの .NET アセンブリ Aspose.Pdf.ReportingServices.dll で構成されているため、デプロイと管理が簡単です。サーバーに .NET Framework 4.8.1 がインストールされている必要があります。
+## **サポートされているパラメータ**
+現在のバージョンでは、Aspose.PDF レンダーはパラメータの多くの側面をサポートしており、以下の通りです。
 
-Aspose.Pdf.ReportingServices.dll は ReportServer\bin ディレクトリにコピーされ、Reporting Services が新しいレンダリング拡張機能を認識できるように構成ファイルを更新する必要があります。 These steps are performed by the Aspose.Pdf for Reporting Services installer, but you could also perform them manually as described further in this documentation.
+- ページ向き
+- HTML 書式設定
+- セキュリティ属性
+- ページサイズ
+- ページ余白サイズ
+- フォント埋め込み
+- PDF/A 準拠
+- XMP メタデータ
+- デバッグ情報
 
-これらの手順は、Aspose.Pdf for Reporting Services インストーラーによって実行されますが、このドキュメントでさらに説明されているように、手動で実行することもできます。
+パラメータについて詳しく知るには、 [Aspose.PDF for Reporting Services を構成する](/pdf/ja/reportingservices/configure-aspose-pdf-for-reporting-services/) 記事。
+

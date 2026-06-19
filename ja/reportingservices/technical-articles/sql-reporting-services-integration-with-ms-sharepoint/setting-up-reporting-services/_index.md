@@ -1,98 +1,101 @@
 ---
-title: レポート サービスのセットアップ
+title: Reporting Services の設定
+linktitle: Reporting Services の設定
 type: docs
 weight: 20
 url: /ja/reportingservices/setting-up-reporting-services/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-レポート サービス サーバーで最初に確認するのは、レポート サービス構成マネージャーです。
+Reporting Services Server での最初の目的地は Reporting Services Configuration Manager です。
 
 {{% /alert %}}
 
 ## サービス アカウント:
 
-**レポート サービスに使用しているサービス アカウントを理解していることを確認してください。問題が発生した場合、それは使用しているサービス アカウントに関連している可能性があります。デフォルトはネットワーク サービスです。新しいビルドを展開する際には、常にドメイン アカウントを使用します。これは、問題が発生しやすい場所だからです。このサーバーのインスタンスでは、RSService というドメイン アカウントを使用しました。**
+**Reporting Services で使用しているサービス アカウントを必ず理解してください。問題が発生した場合、使用しているサービス アカウントが原因である可能性があります。デフォルトは Network Service です。新しいビルドをデプロイする際は常にドメイン アカウントを使用します。なぜなら問題が発生しやすいからです。このサーバー インスタンスでは、RSService という名前のドメイン アカウントを使用しています。**
 
 ![todo:image_alt_text](setting-up-reporting-services_1.png)
 
-**画像1:- サービス アカウントのセットアップ**
+**Image1:- サービス アカウントの設定**
 
-## Web サービス URL:
+## Web Service URL:
 
 {{% alert color="primary" %}}
 
-**Web サービス URL を構成する必要があります。 これはレポートサーバーの仮想ディレクトリ（vdir）で、Webサービスが使用するレポートサービスをホストし、SharePointが通信します。vdirのプロパティ（SSL、ポート、ホストヘッダなど）をカスタマイズしたいのでなければ、ここで「適用」をクリックするだけで問題ありません。**
+**Web Service URL を構成する必要があります。これは、Reporting Services が使用する Web Services をホストする ReportServer 仮想ディレクトリ (vdir) であり、SharePoint が通信する対象です。vdir のプロパティ (例: SSL、ポート、ホストヘッダー等) をカスタマイズしたくない限り、ここで「Apply」をクリックすればすぐに使用できるはずです。**
 ![todo:image_alt_text](setting-up-reporting-services_2.png)
 
-**画像2:- WebサービスURLの設定 WebサービスURLが設定されたら、次の結果が表示されるはずです**
+**Image2:- Web Service URL の設定 Web service URL が設定されたら、以下の結果が表示されるはずです**
 
 ![todo:image_alt_text](setting-up-reporting-services_3.png)
 
-**画像3:- WebサービスURLの正常な設定**
+**Image3:- Web service URL の設定に成功**
 {{% /alert %}}
 
 ## データベース:
 
-**レポートサービスカタログデータベースを作成する必要があります。これは、任意のSQL 2008またはSQL 2008 R2データベースエンジンに配置できます。SQL11も問題なく動作しますが、まだベータ版です。このアクションにより、デフォルトで2つのデータベース、ReportServerとReportServerTempDBが作成されます。**
+**Reporting Services カタログ データベースを作成する必要があります。これは任意の SQL 2008 または SQL 2008 R2 データベース エンジンに配置できます。SQL11 も問題なく動作しますが、まだベータ版です。この操作により、デフォルトで 2 つのデータベース、ReportServer と ReportServerTempDB が作成されます。**
 
 {{% alert color="primary" %}}
-**ここでのもう一つの重要なステップは、データベースの種類としてSharePoint統合を選択することを確認することです。  この選択が行われると、変更することはできません。**
+**この際のもう一つ重要なステップは、データベースの種類として SharePoint Integrated を選択することを確認することです。この選択を行うと、変更できなくなります。**
 
 ![todo:image_alt_text](setting-up-reporting-services_4.png)
 
-**画像4:- レポートサーバーデータベースの作成**
+**Image4:- レポート サーバー データベースの作成**
 
 ![todo:image_alt_text](setting-up-reporting-services_5.png)
 
-**画像5:- データベースサーバーと認証タイプの設定**
+**Image5:- データベースサーバーと認証タイプの設定**
 
 ![todo:image_alt_text](setting-up-reporting-services_6.png)
 
-**画像6:- データベース名とモードの設定**
+**Image6:- データベース名とモードの設定**
 {{% /alert %}}
 
-**資格情報については、これはレポートサーバーがSQLサーバーと通信する方法です。選択したアカウントには、RSExecRoleを通じて、カタログデータベースおよびいくつかのシステムデータベース内で特定の権利が与えられます。サブスクリプション使用のためにSQLエージェントを利用するため、MSDBはこれらのデータベースの一つです。**
+**認証情報については、Report Server が SQL Server と通信する方法です。選択したアカウントには、RSExecRole を介して Catalog データベースおよびいくつかのシステムデータベース内で特定の権限が付与されます。MSDB は、SQL Agent を使用するサブスクリプション利用のためのデータベースの一つです。**
 
 ![todo:image_alt_text](setting-up-reporting-services_7.png)
 
-**画像7:- レポートサーバーデータベースの資格情報の設定**
+**Image7:- Report Server データベース認証情報の設定**
 
 {{% alert color="primary" %}}
 
-**データベースの資格情報が指定されると、以下のように結果を得ることができるはずです。**
-
+**データベースの資格情報が指定されると、以下に示す結果を取得できるはずです。**
 
 ![todo:image_alt_text](setting-up-reporting-services_8.png)
-**Image8:- レポートサーバーデータベース作成進行状況**
+
+**Image8:- Report Server データベース作成の進捗**
 
 ![todo:image_alt_text](setting-up-reporting-services_9.png)
 
-**Image9:- レポートサーバーデータベース完了サマリー**
+**Image9:- Report Server データベース完了の概要**
 {{% /alert %}}
 
-## レポートマネージャーURL:
+## Report Manager の URL:
 
-**SharePoint統合モードでは使用されないため、レポートマネージャーURLをスキップできます。SharePointがフロントエンドです。レポートマネージャーは機能しません。**
+**SharePoint 統合モードでは Report Manager URL は使用されないため、スキップできます。SharePoint がフロントエンドです。Report Manager は機能しません。**
 
 ## 暗号化キー:
 
 {{% alert color="primary" %}}
-**暗号化キーをバックアップし、どこに保管しているかを確認してください。データベースを移行したり復元したりする必要がある場合には、これらが必要になります。**
+**暗号化キーをバックアップし、保管場所を把握しておいてください。データベースの移行や復元が必要な状況になった場合、これらが必要になります。**
 
 ![todo:image_alt_text](setting-up-reporting-services_10.png)
 
-**Image10:- レポートサーバー暗号化キーのバックアップ**
+**Image10:- Report Server 暗号化キーのバックアップ**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**おめでとうございます！構成マネージャーを使用してレポートサービスを正常に構成しました。WebサービスURLタブのURLにアクセスすると、以下のようなものが表示されるはずです。**
+**おめでとうございます！Configuration Manager を使用して Reporting Services の構成に成功しました。Web Service URL タブの URL にアクセスすると、以下のような表示がされるはずです。**
 
 ![todo:image_alt_text](setting-up-reporting-services_11.png)
 
-**Image11:- インストール後のレポートサーバーアクセス**
+**Image11:- インストール後の Report Server アクセス**
 
-**エラーの理由: SharePointが私たちのWFEにインストールされており、Reporting Servicesのセットアップが完了しました。この例では、Reporting ServicesとSharePointは異なるマシンにあります。同じマシンにあれば、このエラーは発生しません。技術的にはRSボックスにSharePointをインストールする必要があります。それはIISも有効になることを意味します。**
+**エラーの原因: SharePoint は WFE にインストールされており、Reporting Services の設定は完了しています。この例では、Reporting Services と SharePoint が別々のマシン上にあります。同じマシン上にあれば、このエラーは発生しませんでした。実際には RS ボックスに SharePoint をインストールする必要があります。つまり、IIS も有効になるということです。**
 {{% /alert %}}
+
+
