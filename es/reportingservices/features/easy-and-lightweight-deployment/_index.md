@@ -1,12 +1,14 @@
 ---
-title: Despliegue Fácil y Liviano
+title: Despliegue fácil y ligero
+linktitle: Despliegue fácil y ligero
 type: docs
 weight: 40
 url: /es/reportingservices/easy-and-lightweight-deployment/
-lastmod: "2021-06-05"
+description: Aprenda cómo implementar Aspose.PDF for Reporting Services con un esfuerzo mínimo. La configuración ligera garantiza una implementación rápida y eficiencia.
+lastmod: "2026-06-19"
 ---
 
-**Aspose.Pdf para Reporting Services** es una extensión de renderización personalizada para Microsoft SQL Server 2016/2017/2019/2022 Reporting Services y Power BI Report Server. Aspose.Pdf para Reporting Services se proporciona como un único instalador MSI que se puede instalar en computadoras que ejecuten uno de los siguientes:
+**Aspose.Pdf for Reporting Services** es una extensión de renderizado personalizada para Microsoft SQL Server 2016/2017/2019/2022 Reporting Services y Power BI Report Server. Aspose.Pdf for Reporting Services se proporciona como un único instalador MSI que puede instalarse en los equipos que ejecuten uno de los siguientes:
 
 - Microsoft SQL Server 2016 Reporting Services  
 - Microsoft SQL Server 2017 Reporting Services  
@@ -14,6 +16,8 @@ lastmod: "2021-06-05"
 - Microsoft SQL Server 2022 Reporting Services  
 - Microsoft Power BI Report Server
  
-Aspose.Pdf para Reporting Services es fácil de desplegar y gestionar, ya que está compuesto por solo un ensamblado .NET Aspose.Pdf.ReportingServices.dll, escrito completamente en C#, compatible con CLS y que contiene solo código gestionado seguro. Se requiere tener .NET Framework 4.8.1 instalado en el servidor.
+Aspose.Pdf for Reporting Services es fácil de implementar y administrar, ya que se compone de un solo ensamblado .NET Aspose.Pdf.ReportingServices.dll, escrito completamente en C#, compatible con CLS y que contiene solo código administrado seguro. Se requiere que .NET Framework 4.8.1 esté instalado en el servidor.
 
-Aspose.Pdf.ReportingServices.dll debe copiarse en el directorio ReportServer\bin y el archivo de configuración debe actualizarse para que Reporting Services esté al tanto de la nueva extensión de renderización. Estos pasos son realizados por el instalador de Aspose.Pdf para Reporting Services, pero también podrías realizarlos manualmente como se describe más adelante en esta documentación.
+Aspose.Pdf.ReportingServices.dll debe copiarse al directorio ReportServer\bin y el archivo de configuración debe actualizarse para que Reporting Services reconozca la nueva extensión de renderizado. Estos pasos son realizados por el instalador de Aspose.Pdf for Reporting Services, pero también puede realizarlos manualmente como se describe más adelante en esta documentación.
+
+

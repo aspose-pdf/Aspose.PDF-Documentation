@@ -1,14 +1,16 @@
 ---
-title: Justificar Alineación de Texto Justificar Completo
+title: Alineación de Texto Justificar y Justificar Completo
+linktitle: Alineación de Texto Justificar y Justificar Completo
 type: docs
 weight: 40
 url: /es/reportingservices/justify-fulljustify-text-alignment/
-lastmod: "2021-06-05"
+description: Logre una alineación de texto perfecta en los informes PDF con Aspose.PDF for Reporting Services. Compatibilidad con las opciones de justificar y justificar completo.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-El generador de informes no admite la capacidad de especificar la alineación de texto para el cuadro de texto “Justificar” y “Justificar Completo”. Con Aspose.Pdf para Reporting Services, puedes hacerlo fácilmente añadiendo propiedades personalizadas.
+Report builder no admite la capacidad de especificar la alineación de texto para el cuadro de texto “Justify” y “FullJustify”. Con Aspose.Pdf for Reporting Services, puede hacerlo fácilmente añadiendo propiedades personalizadas.
 
 {{% /alert %}}
 
@@ -33,3 +35,5 @@ En el informe, el código debería ser como el siguiente:
 </Textbox>
 {{< /highlight >}}
 {{% /alert %}}
+
+
