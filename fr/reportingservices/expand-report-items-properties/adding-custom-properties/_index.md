@@ -1,31 +1,32 @@
 ---
-title: Ajouter des Propriétés Personnalisées
+title: Ajout de propriétés personnalisées
+linktitle: Ajout de propriétés personnalisées
 type: docs
 weight: 10
 url: /fr/reportingservices/adding-custom-properties/
-lastmod: "2021-06-05"
+description: Apprenez comment ajouter des propriétés personnalisées aux rapports PDF avec Aspose.PDF pour Reporting Services. Personnalisez vos documents efficacement.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Vous pouvez ajouter des propriétés personnalisées à certains éléments de rapport pour étendre leur utilisation, tels que la table des matières, les flèches de ligne, etc. Cette section décrit ce processus.
+Vous pouvez ajouter des propriétés personnalisées à certains éléments de rapport pour étendre leur utilisation, comme la ToC, les flèches de ligne, etc. Cette section décrit ce processus.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Vous pouvez ajouter des propriétés personnalisées à certains éléments de rapport pour étendre leur utilisation, tels que la table des matières, les flèches de ligne, etc. Cette section décrit ce processus.
+Vous pouvez ajouter des propriétés personnalisées à certains éléments de rapport pour étendre leur utilisation, comme la Table des matières, les flèches de ligne, etc. Cette section décrit ce processus.
 
 Pour ajouter des propriétés personnalisées, vous devez modifier le fichier de code du document RDL selon les étapes suivantes :
 
-1. Comme dans l'illustration suivante, ouvrez votre projet, naviguez jusqu'à l'explorateur de solutions et faites un clic droit sur le fichier de rapport sélectionné, puis sélectionnez l'élément de menu 'Afficher le code'.
+1. Comme le montre la figure suivante, ouvrez votre projet, naviguez jusqu’à l’explorateur de solution, cliquez avec le bouton droit sur le fichier de rapport sélectionné, puis choisissez l’option \u0027View Code\u0027 du menu.
 
 ![todo:image_alt_text](adding-custom-properties_1.png)
 
-2. Modifiez le fichier de code XML. Par exemple, si vous souhaitez ajouter une propriété personnalisée pour un élément de rapport graphique, vous devez ajouter le code similaire au texte en rouge dans l'exemple suivant.
-```
+2. Modifiez le fichier de code XML. Par exemple, si vous souhaitez ajouter une propriété personnalisée pour un élément de rapport de type graphique, vous devez ajouter le code similaire au texte rouge dans l’exemple suivant.
 
-**Example**
+**Exemple**
 
 {{< highlight csharp >}}
 
@@ -49,3 +50,4 @@ Pour ajouter des propriétés personnalisées, vous devez modifier le fichier de
 Dans cet exemple de fragment de code, le nom de la propriété personnalisée est IsInList, et la valeur est 'True'.
 
 {{% /alert %}}
+
