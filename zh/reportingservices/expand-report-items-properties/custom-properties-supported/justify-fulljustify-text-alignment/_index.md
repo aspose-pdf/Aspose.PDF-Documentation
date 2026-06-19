@@ -1,14 +1,16 @@
 ---
-title: 对齐 FullJustify 文本对齐
+title: 两端对齐 完全两端对齐 文本对齐
+linktitle: 两端对齐 完全两端对齐 文本对齐
 type: docs
 weight: 40
 url: /zh/reportingservices/justify-fulljustify-text-alignment/
-lastmod: "2021-06-05"
+description: 使用 Aspose.PDF for Reporting Services 实现 PDF 报表中文本对齐的完美效果。支持两端对齐和完全两端对齐选项。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-报告生成器不支持为文本框指定文本对齐“Justify”和“FullJustify”的功能。使用 Aspose.Pdf for Reporting Services，您可以通过添加自定义属性轻松实现。
+Report builder 不支持为文本框 “Justify” 和 “FullJustify” 指定文本对齐的功能。使用 Aspose.Pdf for Reporting Services，您可以通过添加自定义属性轻松实现此功能。
 
 {{% /alert %}}
 
@@ -33,3 +35,4 @@ lastmod: "2021-06-05"
 </Textbox>
 {{< /highlight >}}
 {{% /alert %}}
+

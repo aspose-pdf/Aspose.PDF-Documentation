@@ -1,19 +1,21 @@
 ---
-title: 目录 表格或图形列表
+title: 目录、表格列表或图形
+linktitle: 目录、表格列表或图形
 type: docs
 weight: 10
 url: /zh/reportingservices/table-of-contents-list-of-tables-or-figures/
-lastmod: "2021-06-05"
+description: 了解如何使用 Aspose.PDF for Reporting Services 在 PDF 报告中添加目录、表格列表或图形。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-报表设计器不支持为报表文档添加目录。使用 Aspose.Pdf for Reporting Services，您可以轻松指示 PDF 渲染器生成带有目录或表格或图形列表的 PDF 文档。您可以通过以下步骤来实现：
+Report Designer 不支持在报告文档中添加目录。使用 Aspose.PDF for Reporting Services，您可以轻松指示 PDF 渲染器生成带有目录、表格列表或图形的 PDF 文档。您可以按照以下步骤进行操作：
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-确保 Aspose.Pdf.ListSectionStyle.xml 文件存在于 ```<Instance>```/bin 中，其中 ```<Instance>``` 是报表服务器的目录。如果文件不存在，请在 ```<Instance>```/bin 目录中创建该文件并在其中放置以下标记。
+确保 Aspose.Pdf.ListSectionStyle.xml 文件存在于 ```<Instance>```/bin，在哪里 ```<Instance>``` 是 Report Server 的目录。如果文件不存在，请在其中创建。 ```<Instance>```/bin 目录，并将以下标记放入其中。
 
 ## 目录
 
@@ -39,7 +41,7 @@ lastmod: "2021-06-05"
 </ListSection>
 ```
 
-## 表格列表
+##  表格列表
 
 **示例**
 
@@ -64,40 +66,41 @@ lastmod: "2021-06-05"
 
 ```
 
-请参阅 Aspose.Pdf 在线文档的“目录工作”部分。
+请参阅 Aspose.Pdf 在线文档中的 'Working with TOC' 部分。
 
-**2-** 添加报告参数 'IsListSectionSupported' 并将值设置为 True，如“列表部分”段落中所示。
-**3-** 为您希望在目录、表格或图表列表中列出的报告项添加自定义属性。
+**2-** 添加报告参数 'IsListSectionSupported'，并将其值设置为 True，如 'List Section' 段落所示。
+**3-** 为您想要列入目录、表格目录或图表目录的报告项添加自定义属性。
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**自定义属性名称**: IsInList
-**属性值**: Boolean
-**自定义属性值**: True 或 False
+**自定义属性名称** :IsInList
+**属性值** :Boolean
+**自定义属性值** : True 或 False
 
 {{% alert color="primary" %}}
 
-将当前报告项标记为在目录、表格或图表列表中按索引列出。
+将当前报告项标记为在目录、表格列表或图形列表中按索引列出。
 
 {{% /alert %}}
 
-**Custom Property Name** : Title
-**Custom Property Type** : String
+**自定义属性名称** : 标题
+**自定义属性类型** : 字符串
 
 {{% alert color="primary" %}}
 
-项目标题显示在目录、表格或图表列表中。
+在目录、表格列表或图形列表中显示的项目标题。
 {{% /alert %}}
 
-**Custom Property Name** : ListLevel
-**Custom Property Type** : Integer
+**自定义属性名称** : 列表级别
+**自定义属性类型** : 整数
 
 {{% alert color="primary" %}}
 
-列出项目在目录中显示的级别。
+目录中显示的列出项的层级。
 
 {{% /alert %}}
 
 {{% /alert %}}
+

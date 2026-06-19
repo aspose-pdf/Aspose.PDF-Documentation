@@ -1,14 +1,16 @@
 ---
 title: 页面方向
+linktitle: 页面方向
 type: docs
 weight: 10
 url: /zh/reportingservices/page-orientation/
-lastmod: "2021-06-05"
+description: 在 Aspose.PDF for Reporting Services 中配置 PDF 报表的页面方向。自定义布局以获得更好的呈现效果。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-报表定义语言不允许明确指定报表中的页面方向。使用 Aspose.Pdf for Reporting Services，您可以轻松地指示导出器生成具有横向页面方向的 PDF 文档。默认方向为纵向。
+报表定义语言不允许在报表中显式指定页面方向。使用 Aspose.PDF for Reporting Services，您可以轻松指示导出器生成横向页面方向的 PDF 文档。默认方向为纵向。
 
 {{% /alert %}}
 
@@ -17,7 +19,7 @@ lastmod: "2021-06-05"
 默认方向为纵向。
 **参数名称**: IsLandscape
 **数据类型**: Boolean
-**支持的值**: True, False (默认)
+**支持的值**: True, False (default)
 
 **示例**
 {{< highlight csharp >}}
@@ -33,3 +35,4 @@ lastmod: "2021-06-05"
 {{< /highlight >}}
 
 {{% /alert %}}
+
