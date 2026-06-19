@@ -1,21 +1,22 @@
 ---
 title: IsFontEmbedded
+linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /pt/reportingservices/isfontembedded/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-O designer RS não suporta a fonte incorporada para texto; com Aspose.PDF para Reporting Services você pode facilmente incorporar informações de fonte em seu documento PDF.
+O designer do RS não oferece suporte à fonte incorporada para texto; com o Aspose.PDF for Reporting Services você pode incorporar facilmente informações de fontes em seu documento PDF.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 **Nome do Parâmetro**: IsFontEmbedded  
 **Tipo de Dados**: Boolean  
-**Valores suportados**: True, False (default)  
+**Valores suportados**: True, False (padrão)  
 
 **Exemplo**
 {{< highlight csharp >}}
@@ -32,3 +33,4 @@ O designer RS não suporta a fonte incorporada para texto; com Aspose.PDF para R
 {{< /highlight >}}
 
 {{% /alert %}}
+

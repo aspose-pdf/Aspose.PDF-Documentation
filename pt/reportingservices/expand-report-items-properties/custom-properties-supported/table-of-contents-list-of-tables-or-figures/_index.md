@@ -1,21 +1,23 @@
 ---
-title: Índice Lista de Tabelas ou Figuras
+title: Sumário Lista de Tabelas ou Figuras
+linktitle: Sumário Lista de Tabelas ou Figuras
 type: docs
 weight: 10
 url: /pt/reportingservices/table-of-contents-list-of-tables-or-figures/
-lastmod: "2021-06-05"
+description: Aprenda como adicionar um Sumário, Lista de Tabelas ou Figuras em relatórios PDF usando Aspose.PDF for Reporting Services.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-O Designer de Relatórios não suporta a adição de índice para documentos de relatório. Com Aspose.Pdf para Serviços de Relatórios, você pode facilmente instruir o renderizador PDF a produzir documentos PDF com Índice ou Lista de Tabelas ou Figuras. Você pode fazer isso nos seguintes passos:
+O Report Designer não suporta a adição de sumário para documentos de relatório. Com Aspose.Pdf for Reporting Services você pode instruir facilmente o renderizador de PDF a gerar documentos PDF com Sumário, ou Lista de Tabelas ou Figuras. Você pode fazer isso nos passos a seguir:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml exista em ```<Instance>```/bin, onde ```<Instance>``` é o diretório do Servidor de Relatórios. Se o arquivo não existir, crie-o no diretório ```<Instance>```/bin e coloque a seguinte marcação dentro.
+Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml existe em ```<Instance>```/bin, onde ```<Instance>``` é o diretório do Report Server. Se o arquivo não existir, crie-o em ```<Instance>```diretório /bin e coloque a marcação a seguir dentro.
 
-## Índice
+## Sumário
 
 **Exemplo**
 
@@ -39,7 +41,7 @@ Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml exista em ```<Ins
 </ListSection>
 ```
 
-## Lista de Tabelas
+##  Lista de Tabelas
 
 **Exemplo**
 
@@ -64,10 +66,10 @@ Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml exista em ```<Ins
 
 ```
 
-Por favor, consulte a seção 'Trabalhando com TOC' da documentação online do Aspose.Pdf.
+Consulte a seção 'Working with TOC' da documentação online do Aspose.Pdf.
 
-**2-** Adicione o parâmetro de relatório 'IsListSectionSupported' e defina o valor para True, conforme mostrado no parágrafo 'Seção de Lista'.
-**3-** Adicione uma propriedade personalizada para o item de relatório que você deseja listar no Sumário, Lista de Tabelas ou Figuras.
+**2-** Adicione o parâmetro de relatório 'IsListSectionSupported' e defina o valor como True, conforme mostrado no parágrafo 'List Section'.
+**3-** Adicione uma propriedade personalizada para o item de relatório que você deseja que seja listado no Sumário, na Lista de Tabelas ou na Lista de Figuras.
 
 {{% /alert %}}
 
@@ -75,30 +77,30 @@ Por favor, consulte a seção 'Trabalhando com TOC' da documentação online do 
 
 **Nome da Propriedade Personalizada** :IsInList
 **Valor da Propriedade** :Boolean
-**Valor da Propriedade Personalizada** : True ou False
+**Valor da Propriedade Personalizada** : Verdadeiro ou Falso
 
 {{% alert color="primary" %}}
-
 
 Marca o item de relatório atual como listado por índice no sumário, ou na lista de tabelas ou figuras.
 
 {{% /alert %}}
 
-**Custom Property Name** : Título  
-**Custom Property Type** : String
+**Nome da Propriedade Personalizada** : Title
+**Tipo da Propriedade Personalizada** : String
 
 {{% alert color="primary" %}}
 
-O título do item exibido no índice, lista de tabelas ou figuras.  
+O título do item exibido no sumário, lista de tabelas ou figuras.
 {{% /alert %}}
 
-**Custom Property Name** : ListLevel  
-**Custom Property Type** : Integer
+**Nome da Propriedade Personalizada** : ListLevel
+**Tipo de Propriedade Personalizada** : Inteiro
 
 {{% alert color="primary" %}}
 
-O nível dos itens listados exibidos no índice.
+O nível dos itens listados exibidos no sumário.
 
 {{% /alert %}}
 
 {{% /alert %}}
+

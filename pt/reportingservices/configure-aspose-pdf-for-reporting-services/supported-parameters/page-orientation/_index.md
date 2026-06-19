@@ -1,23 +1,25 @@
 ---
-title: Page Orientation
+title: Orientação da Página
+linktitle: Orientação da Página
 type: docs
 weight: 10
 url: /pt/reportingservices/page-orientation/
-lastmod: "2021-06-05"
+description: Configure a orientação da página para relatórios PDF no Aspose.PDF for Reporting Services. Personalize layouts para melhor apresentação.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-A Linguagem de Definição de Relatórios não permite especificar a orientação das páginas no relatório explicitamente. Com o Aspose.Pdf para Serviços de Relatórios, você pode facilmente instruir o exportador a produzir documentos PDF com orientação de página em paisagem. A orientação padrão é retrato.
+Report Definition Language não permite especificar a orientação das páginas no relatório explicitamente. Com Aspose.Pdf for Reporting Services você pode instruir facilmente o exportador a gerar documentos PDF com orientação de página paisagem. A orientação padrão é retrato.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
 A orientação padrão é retrato.
-**Nome do Parâmetro**: IsLandscape
-**Tipo de Dados**: Booleano
-**Valores suportados**: True, False (padrão)
+**Nome do parâmetro**: IsLandscape
+**Tipo de dado**: Boolean
+**Valores suportados**: True, False (default)
 
 **Exemplo**
 {{< highlight csharp >}}
@@ -33,3 +35,4 @@ A orientação padrão é retrato.
 {{< /highlight >}}
 
 {{% /alert %}}
+
