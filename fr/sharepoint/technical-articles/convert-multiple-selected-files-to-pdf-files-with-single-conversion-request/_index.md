@@ -1,15 +1,16 @@
 ---
-title: Convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule demande de conversion
+title: Convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule Conversion Request
+linktitle: Convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule Conversion Request
 type: docs
 weight: 50
 url: /fr/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
-lastmod: "2020-12-16"
-description: La bibliothèque PDF SharePoint vous permet de convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule opération de conversion.
+lastmod: "2026-06-18"
+description: PDF SharePoint Library vous permet de convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule opération de conversion.
 ---
 
 {{% alert color="primary" %}}
 
-Cet article montre comment convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule opération de conversion en utilisant Aspose.PDF pour SharePoint.
+Cet article montre comment convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule opération de conversion en utilisant Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
@@ -17,15 +18,16 @@ Cet article montre comment convertir plusieurs fichiers sélectionnés en fichie
 
 {{% alert color="primary" %}}
 
-Pour convertir plusieurs fichiers sélectionnés, suivez les étapes suivantes :
+Pour convertir plusieurs fichiers sélectionnés, effectuez les étapes suivantes :
 
 1. Sélectionnez les fichiers à convertir
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
 
-2. Cliquez sur l'onglet Aspose Tools dans Outils de bibliothèque
+2. Cliquez sur l'onglet Aspose Tools dans Library Tools
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
+
 3. Cliquez sur Convertir en PDF pour convertir tous les fichiers sélectionnés en fichiers PDF résultants.
 
 ![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_3.jpg)

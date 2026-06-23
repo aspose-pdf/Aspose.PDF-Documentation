@@ -1,21 +1,22 @@
 ---
 title: IsFontEmbedded
+linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /ar/reportingservices/isfontembedded/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-مصمم RS لا يدعم الخط المضمن للنص؛ مع Aspose.PDF لـ Reporting Services يمكنك بسهولة تضمين معلومات الخط في مستند PDF الخاص بك.
+لا يدعم مُصمم RS الخط المدمج للنص؛ مع Aspose.PDF for Reporting Services يمكنك بسهولة تضمين معلومات الخط في مستند PDF الخاص بك.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 **اسم المعامل**: IsFontEmbedded  
 **نوع البيانات**: Boolean  
-**القيم المدعومة**: True, False (default)  
+**القيم المدعومة**: True, False (افتراضي)  
 
 **مثال**
 {{< highlight csharp >}}
@@ -32,4 +33,4 @@ lastmod: "2021-06-05"
 {{< /highlight >}}
 
 {{% /alert %}}
-```
+

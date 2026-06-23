@@ -1,14 +1,16 @@
 ---
-title: Page Orientation
+title: اتجاه الصفحة
+linktitle: اتجاه الصفحة
 type: docs
 weight: 10
 url: /ar/reportingservices/page-orientation/
-lastmod: "2021-06-05"
+description: قم بتكوين اتجاه الصفحة لتقارير PDF في Aspose.PDF for Reporting Services. خصص التخطيطات للحصول على عرض أفضل.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-لا يسمح تعريف لغة التقرير بتحديد اتجاه الصفحات في التقرير بشكل صريح. مع Aspose.Pdf لخدمات التقارير يمكنك بسهولة توجيه المصدّر لإنشاء مستندات PDF باتجاه الصفحة الأفقي. الاتجاه الافتراضي هو عمودي.
+لغة تعريف التقرير لا تسمح بتحديد اتجاه صفحات التقرير صراحةً. باستخدام Aspose.PDF for Reporting Services يمكنك بسهولة إرشاد المُصدِّر لإنشاء مستندات PDF باتجاه صفحة عرضية. الاتجاه الافتراضي هو عمودي.
 
 {{% /alert %}}
 
@@ -33,3 +35,4 @@ lastmod: "2021-06-05"
 {{< /highlight >}}
 
 {{% /alert %}}
+

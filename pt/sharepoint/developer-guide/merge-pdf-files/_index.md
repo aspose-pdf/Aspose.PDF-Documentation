@@ -4,13 +4,13 @@ linktitle: Mesclar arquivos PDF
 type: docs
 weight: 90
 url: /pt/sharepoint/merge-pdf-files/
-lastmod: "2020-12-16"
+lastmod: "2026-06-18"
 description: Usando a API PDF SharePoint, você pode mesclar vários arquivos PDF da biblioteca de documentos do SharePoint em um único PDF.
 ---
 
 {{% alert color="primary" %}}
 
-A mesclagem/concatenação de vários arquivos PDF em um único arquivo PDF é um recurso muito popular e requisitado em aplicativos de processamento de arquivos PDF. Introduzimos este recurso importante na versão [Aspose.PDF para SharePoint 2.2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.2.0/). Mesclar dois arquivos é criar um único arquivo adicionando o segundo arquivo ao final do primeiro arquivo.
+Mesclar/concatenar vários arquivos PDF em um único arquivo PDF é um recurso muito popular e exigente em aplicativos de processamento de arquivos PDF. Introduzimos esse recurso importante em [Aspose.PDF for SharePoint 2.2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.2.0/) versão. Mesclar dois arquivos é criar um único arquivo adicionando o segundo arquivo ao final do primeiro arquivo.
 
 {{% /alert %}}
 
@@ -18,14 +18,15 @@ A mesclagem/concatenação de vários arquivos PDF em um único arquivo PDF é u
 
 Mescle vários arquivos PDF da biblioteca de documentos do SharePoint em um único PDF da seguinte forma:
 
-1.  Selecione os arquivos PDF da biblioteca de documentos do SharePoint a serem mesclados.
+1. Selecione os arquivos PDF da biblioteca de documentos do SharePoint a serem mesclados.
 
 ![todo:image_alt_text](merge-pdf-files_1.png)
 
-2.  Clique na guia Aspose Tools em Ferramentas de Biblioteca.
+2. Clique na guia Aspose Tools em Library Tools.
+
 ![todo:image_alt_text](merge-pdf-files_2.png)
 
-3. Clique na opção Mesclar para PDF em Ferramentas da Biblioteca para mesclar todos os arquivos PDF selecionados no PDF resultante.
+3. Clique na opção Merge to PDF em Library Tools para mesclar todos os arquivos PDF selecionados no PDF resultante.
 
 ![todo:image_alt_text](merge-pdf-files_3.png)
 

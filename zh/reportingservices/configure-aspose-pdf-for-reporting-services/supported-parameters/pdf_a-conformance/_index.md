@@ -1,16 +1,18 @@
 ---
 title: PDF_A 合规性
+linktitle: PDF_A 合规性
 type: docs
 weight: 100
 url: /zh/reportingservices/pdf_a-conformance/
-lastmod: "2025-05-22"
+description: 在 Aspose.PDF for Reporting Services 中启用 PDF/A 合规性。轻松创建符合归档要求的文档。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-您可以在 Aspose.PDF 文档中获取有关 PDF/A（可归档 PDF）合规性的介绍。
+您可以在 Aspose.PDF 文档中获取 PDF/A（可归档 PDF）合规性的介绍。
 
-如果您想创建一个 PDF/A 文档，请添加以下报告参数。
+如果您想创建 PDF/A 文档，请添加以下报表参数。
 
 {{% /alert %}}
 
@@ -35,3 +37,4 @@ lastmod: "2025-05-22"
 {{< /highlight >}}
 
 {{% /alert %}}
+

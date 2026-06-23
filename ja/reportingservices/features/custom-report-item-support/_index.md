@@ -1,19 +1,22 @@
 ---
-title: カスタムレポートアイテムのサポート
+title: カスタム レポート アイテムのサポート
+linktitle: カスタム レポート アイテムのサポート
 type: docs
 weight: 30
 url: /ja/reportingservices/custom-report-item-support/
-lastmod: "2021-06-05"
+description: Aspose.PDF for Reporting Services のカスタム レポート アイテム サポートを活用します。手間なく、カスタマイズされた高品質な PDF 出力を実現します。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-RS2016、RS2017、RS2019、RS2022、および Power BI の RDL 仕様では、ほぼすべてのレポートアイテムをカスタムプロパティを追加することで拡張できます。現在、Aspose.Pdf for Reporting Services 2016、2017、2019、2022、および Power BI は、次の3つのプロパティをサポートしています：
+RS2016、RS2017、RS2019、RS2022、そして Power BI の RDL 仕様では、ほぼすべてのレポート アイテムにカスタム プロパティを追加して拡張できます。現在、Aspose.PDF for Reporting Services 2016、2017、2019、2022、そして Power BI は、以下の 3 つのプロパティをサポートしています：
 
-- 目次、表や図の一覧。
+- 目次、表または図の一覧。
 - ライン矢印。
-- 脚注/文末脚注。
+- 脚注/エンドノート。
 
-これらの使い方については、[レポートアイテムプロパティの拡張](/pdf/ja/reportingservices/expand-report-items-properties/)の記事をご覧ください。
+それらの使い方を調べるには [レポート項目のプロパティを展開](/pdf/ja/reportingservices/expand-report-items-properties/) 記事。
 
 {{% /alert %}}
+

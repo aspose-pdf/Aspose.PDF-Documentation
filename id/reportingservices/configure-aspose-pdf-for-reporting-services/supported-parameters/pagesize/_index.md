@@ -1,21 +1,23 @@
 ---
-title: PageSize
+title: UkuranHalaman
+linktitle: UkuranHalaman
 type: docs
 weight: 60
 url: /id/reportingservices/pagesize/
-lastmod: "2021-06-05"
+description: Sesuaikan ukuran halaman untuk laporan PDF di Aspose.PDF for Reporting Services untuk memenuhi persyaratan dokumen khusus.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Perancang laporan Reporting Services tidak mendukung ukuran halaman umum seperti A4, B5, Letter, dan sebagainya. Dengan Aspose.Pdf untuk Reporting Services, Anda dapat mendapatkannya seperti dalam contoh berikut.
+Desainer laporan Reporting Services tidak mendukung ukuran halaman umum seperti A4, B5, Letter, dan sebagainya. Dengan Aspose.Pdf for Reporting Services, Anda dapat mengatasinya seperti pada contoh berikut.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
 **Nama Parameter**: PageSize  
-**Jenis Data**: String  
+**Tipe Tanggal**: String  
 **Nilai yang didukung**: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
 
 **Contoh**
@@ -34,3 +36,4 @@ Perancang laporan Reporting Services tidak mendukung ukuran halaman umum seperti
 {{< /highlight >}}
 
 {{% /alert %}}
+

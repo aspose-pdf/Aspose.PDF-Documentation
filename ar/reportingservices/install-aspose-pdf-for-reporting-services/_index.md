@@ -1,17 +1,20 @@
 ---
 title: تثبيت Aspose.PDF
+linktitle: تثبيت Aspose.PDF
 type: docs
 weight: 50
 url: /ar/reportingservices/install-aspose-pdf-for-reporting-services/
-lastmod: "2021-06-05"
+description: تعلم كيفية تثبيت Aspose.PDF لخدمات التقرير. اتبع هذا الدليل خطوة بخطوة لتمكين وظيفة تصدير PDF في SSRS.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
 **يتضمن هذا القسم المواضيع التالية:**
 
-- [التثبيت باستخدام MSI Installer](/pdf/ar/reportingservices/install-with-msi-installer/)
+- [تثبيت باستخدام مُثبت MSI](/pdf/ar/reportingservices/install-with-msi-installer/)
 - [التثبيت يدويًا](/pdf/ar/reportingservices/install-manually/)
-- [التثبيت باستخدام أداة التكوين](/pdf/ar/reportingservices/install-with-configuring-tool/)
+- [تثبيت باستخدام أداة التكوين](/pdf/ar/reportingservices/install-with-configuring-tool/)
 
 {{% /alert %}}
+

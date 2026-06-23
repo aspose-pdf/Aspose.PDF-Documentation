@@ -1,11 +1,14 @@
 ---
 title: Artigos Técnicos
+linktitle: Artigos Técnicos
 type: docs
 weight: 120
 url: /pt/reportingservices/technical-articles/
-lastmod: "2021-06-05"
+description: Explore artigos técnicos para Aspose.PDF for Reporting Services. Obtenha insights aprofundados e dicas práticas para renderização eficaz de PDF.
+lastmod: "2026-06-19"
 ---
 
 **Esta seção inclui os seguintes tópicos:**
-- [Migração dos Serviços de Relatórios SQL para Aspose.Pdf para Serviços de Relatórios](/pdf/pt/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/)
-- [Integração dos Serviços de Relatórios SQL com MS SharePoint](/pdf/pt/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/)
+- [Migração do SQL Reporting Services para Aspose.Pdf for Reporting Services](/pdf/pt/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/)
+- [Integração do SQL Reporting Services com MS SharePoint](/pdf/pt/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/)
+

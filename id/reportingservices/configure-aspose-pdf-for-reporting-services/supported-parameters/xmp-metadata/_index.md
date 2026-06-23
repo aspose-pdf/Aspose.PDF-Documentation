@@ -1,33 +1,35 @@
 ---
-title: XMP Metadata
+title: Metadata XMP
+linktitle: Metadata XMP
 type: docs
 weight: 80
 url: /id/reportingservices/xmp-metadata/
-lastmod: "2021-06-05"
+description: Pelajari cara mengelola metadata XMP dalam laporan PDF menggunakan Aspose.PDF untuk Reporting Services. Tingkatkan penanganan metadata dokumen.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Perancang laporan Layanan Pelaporan tidak mendukung penyematan metadata XMP dalam dokumen. Aspose.Pdf untuk Layanan Pelaporan menyediakan empat parameter untuk menetapkan metadata XMP yang sesuai, yaitu:
+Desainer laporan Reporting Services tidak mendukung penyematan metadata XMP dalam dokumen. Aspose.PDF untuk Reporting Services menyediakan empat parameter untuk mengatur metadata XMP yang sesuai, yaitu:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 **Nama Parameter**: CreationDate  
-**Tipe Data**: String  
+**Jenis Tanggal**: String  
 **Nilai yang didukung**: Tanggal dalam salah satu format tanggal
 
 **Nama Parameter**: ModifyDate  
-**Tipe Data**: String  
-**Nilai yang didukung**: Tanggal dalam salah satu format tanggal
+**Jenis Tanggal**: String  
+**Nilai yang didukung**: Tanggal dalam salah satu format tanggal 
 
 **Nama Parameter**: MetaDataDate  
-**Tipe Data**: String  
-**Nilai yang didukung**: Tanggal dalam salah satu format tanggal
+**Jenis Tanggal**: String  
+**Nilai yang didukung**: Tanggal dalam salah satu format tanggal 
 
 **Nama Parameter**: CreatorTool  
-**Tipe Data**: String  
-**Nilai yang didukung**: Teks biasa apa pun  
+**Jenis Tanggal**: String  
+**Nilai yang didukung**: Teks biasa apa saja  
 
 **Contoh**
 {{< highlight csharp >}}
@@ -36,11 +38,16 @@ Perancang laporan Layanan Pelaporan tidak mendukung penyematan metadata XMP dala
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer, Aspose.Pdf.ReportingServices">
     <Configuration>
-
     <CreationDate>2017-12-10</CreationDate>
-```
-<ModifyDate>2018-1-12</ModifyDate> <MetaDataDate>2018-3-7</MetaDataDate> <CreatorTool>Aspose.Pdf untuk Layanan Pelaporan</CreatorTool> </Configuration> </Extension> </Render> 
+    <ModifyDate>2018-1-12</ModifyDate>
+    <MetaDataDate>2018-3-7</MetaDataDate>
+    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    </Configuration>
+    </Extension>
+</Render>
 
-{{< /highlight >}} 
+{{< /highlight >}}
 
 {{% /alert %}}
+
+

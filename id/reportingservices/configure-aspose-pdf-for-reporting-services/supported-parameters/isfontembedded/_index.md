@@ -1,14 +1,15 @@
 ---
 title: IsFontEmbedded
+linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /id/reportingservices/isfontembedded/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Desainer RS tidak mendukung font yang disematkan untuk teks; dengan Aspose.PDF untuk Layanan Pelaporan Anda dapat dengan mudah menyematkan informasi font ke dalam dokumen PDF Anda.
+RS designer tidak mendukung font yang ditanamkan untuk teks; dengan Aspose.PDF for Reporting Services Anda dapat dengan mudah menyematkan informasi font ke dalam dokumen PDF Anda.
 
 {{% /alert %}}
 
@@ -32,3 +33,4 @@ Desainer RS tidak mendukung font yang disematkan untuk teks; dengan Aspose.PDF u
 {{< /highlight >}}
 
 {{% /alert %}}
+

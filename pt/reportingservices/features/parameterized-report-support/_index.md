@@ -1,19 +1,28 @@
 ---
-title: Implantação Fácil e Leve
+title: Suporte a Relatórios Parametrizados
+linktitle: Suporte a Relatórios Parametrizados
 type: docs
-weight: 40
-url: /pt/reportingservices/easy-and-lightweight-deployment/
-lastmod: "2021-06-05"
+weight: 20
+url: /pt/reportingservices/parameterized-report-support/
+lastmod: "2026-06-19"
 ---
 
-**Aspose.Pdf for Reporting Services** é uma extensão de renderização personalizada para Microsoft SQL Server 2016/2017/2019/2022 Reporting Services e Power BI Report Server. Aspose.Pdf for Reporting Services é fornecido como um único instalador MSI que pode ser instalado em computadores executando um dos seguintes:
+Um relatório parametrizado é um relatório que aceita valores de entrada usados no processamento do relatório. Com um relatório parametrizado, você pode variar a saída de um relatório com base em valores que são definidos quando o relatório é executado. Aspose.Pdf for Reporting Services suporta dois tipos de parâmetros: parâmetros do servidor de relatórios e parâmetros de relatório. Os parâmetros do servidor de relatórios são usados para todos os relatórios no servidor de relatórios. Se você quiser tornar alguns parâmetros adequados para relatórios específicos, deve usar parâmetros de relatório.
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
- 
-Aspose.Pdf for Reporting Services é fácil de implantar e gerenciar, pois é composto por apenas um assembly .NET, Aspose.Pdf.ReportingServices.dll, totalmente escrito em C#, compatível com CLS e contendo apenas código gerenciado seguro. É necessário ter o .NET Framework 4.8.1 instalado no servidor.
+Atualmente, o renderizador Aspose.Pdf suporta uma ampla variedade de parâmetros, como:
 
-Aspose.Pdf.ReportingServices.dll deve ser copiado para o diretório ReportServer\bin e o arquivo de configuração deve ser atualizado para que o Reporting Services esteja ciente da nova extensão de renderização. Esses passos são realizados pelo instalador do Aspose.Pdf for Reporting Services, mas você também pode executá-los manualmente conforme descrito mais adiante nesta documentação.
+## **Parâmetros Suportados**
+Na versão atual, o Aspose.PDF render suporta diversos aspectos dos parâmetros, que são:
+
+- Orientação da página
+- Formatação HTML
+- Atributos de segurança
+- Tamanho da página
+- Tamanho das margens da página
+- Incorporação de fontes
+- Conformidade PDF/A
+- metadados XMP
+- informações de depuração
+
+Saiba mais sobre os parâmetros a partir do [Configure Aspose.PDF for Reporting Services](/pdf/pt/reportingservices/configure-aspose-pdf-for-reporting-services/) artigo.
+

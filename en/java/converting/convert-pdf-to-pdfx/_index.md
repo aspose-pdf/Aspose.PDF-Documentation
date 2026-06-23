@@ -4,7 +4,7 @@ linktitle: Convert PDF to PDF/A, PDF/E, and PDF/X
 type: docs
 weight: 120
 url: /java/convert-pdf-to-pdf_x/
-lastmod: "2026-06-09"
+lastmod: "2026-06-16"
 description: Learn how to convert PDF files to PDF/A, PDF/E, and PDF/X in Java with Aspose.PDF for archival, engineering, accessibility, and print workflows.
 sitemap:
     changefreq: "monthly"
@@ -19,8 +19,9 @@ Aspose.PDF for Java can validate and convert standard PDF files into archival an
 
 Use this example when a standard PDF should be converted into a PDF/A-compliant archival document.
 
-1. Open the source PDF document.
-1. Run the PDF/A compliance conversion with the required target standard.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Call `document.convert(...)` with [`PdfFormat`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/) `PDF_A_1B` and [`ConvertErrorAction`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/converterroraction/) `Delete`.
+1. Write the validation log to a sidecar XML file so compliance issues are recorded during conversion.
 1. Save the validated PDF/A output.
 
 ```java
@@ -36,8 +37,9 @@ public static void convertPdfToPdfA(Path inputFile, Path outputFile) {
 
 Use this example when a PDF should be converted into the engineering-oriented PDF/E standard.
 
-1. Open the source PDF document.
-1. Run the compliance conversion for PDF/E.
+1. Create [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformatconversionoptions/) for [`PdfFormat`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/) `PDF_E_1` and the desired log-file path.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Call `document.convert(options)` so the compliance conversion is executed with the prepared options object.
 1. Save the resulting compliant PDF file.
 
 ```java
@@ -56,8 +58,9 @@ public static void convertPdfToPdfE(Path inputFile, Path outputFile) {
 
 Use this example when a PDF should be converted into the print-oriented PDF/X standard.
 
-1. Open the source PDF document.
-1. Run the compliance conversion for PDF/X.
+1. Create [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformatconversionoptions/) for [`PdfFormat`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/) `PDF_X_4` and the desired log-file path.
+1. Configure an [`OutputIntent`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/outputintent/) such as `FOGRA39` so the print-target color profile is embedded into the conversion settings.
+1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance and call `document.convert(options)`.
 1. Save the converted PDF/X output.
 
 ```java

@@ -1,37 +1,19 @@
 ---
-
-title: Informasi Produk PDF SharePoint API
-
+title: Informasi Produk dari API PDF SharePoint
 linktitle: Informasi Produk
-
 type: docs
-
 weight: 10
-
-url: /id/sharepoint/informasi-produk/
-
-lastmod: "2020-12-16"
-
-description: Bagian Informasi Produk dari PDF SharePoint mencakup topik terkait Gambaran Produk, Format File yang Didukung, Fitur, dan Instalasi.
-
+url: /id/sharepoint/product-information/
+lastmod: "2026-06-18"
+description: Bagian Informasi Produk dari PDF SharePoint mencakup topik-topik terkait Ikhtisar Produk, Format File yang Didukung, Fitur, dan Instalasi.
 ---
-
-
 
 ## **Artikel dalam bagian ini**
 
-
-
-- [Gambaran Produk](/pdf/id/sharepoint/gambaran-produk/)
-
-- [Format File yang Didukung](/pdf/id/sharepoint/format-file-yang-didukung/)
-
-- [Fitur](/pdf/id/sharepoint/fitur/)
-
-- [Instalasi Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/instalasi-aspose-pdf-untuk-sharepoint/)
-
-- [Mengevaluasi Aspose.Pdf](/pdf/id/sharepoint/menilai-aspose-pdf/)
-
-- [Lisensi Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/lisensi-aspose-pdf-untuk-sharepoint/)
-
-- [Batasan API](/pdf/id/sharepoint/batasan-api/)
+- [Gambaran Produk](/pdf/id/sharepoint/product-overview/)
+- [Format File yang Didukung](/pdf/id/sharepoint/supported-file-formats/)
+- [Fitur](/pdf/id/sharepoint/features/)
+- [Instal Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Evaluasi Aspose.Pdf](/pdf/id/sharepoint/evaluate-aspose-pdf/)
+- [Lisensikan Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Batasan API](/pdf/id/sharepoint/api-limitations/)

@@ -1,14 +1,16 @@
 ---
-title: Justifier l'alignement du texte en Justify FullJustify
+title: Justify FullJustify Alignement du texte
+linktitle: Justify FullJustify Alignement du texte
 type: docs
 weight: 40
 url: /fr/reportingservices/justify-fulljustify-text-alignment/
-lastmod: "2021-06-05"
+description: Obtenez un alignement du texte parfait dans les rapports PDF avec Aspose.PDF for Reporting Services. Prise en charge des options justify et full justify.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Le générateur de rapports ne prend pas en charge la capacité de spécifier l'alignement du texte pour la zone de texte « Justify » et « FullJustify ». Avec Aspose.Pdf pour Reporting Services, vous pouvez le faire facilement en ajoutant des propriétés personnalisées.
+Report builder ne prend pas en charge la capacité de spécifier l'alignement du texte pour la zone de texte « Justify » et « FullJustify ». Avec Aspose.Pdf for Reporting Services, vous pouvez le faire facilement en ajoutant des propriétés personnalisées.
 
 {{% /alert %}}
 
@@ -17,7 +19,7 @@ Le générateur de rapports ne prend pas en charge la capacité de spécifier l'
 **Type de propriété personnalisée** : String  
 **Valeurs de propriété personnalisée** : Justify, FullJustify  
 
-Dans le rapport, le code doit être comme suit :
+Dans le rapport, le code doit être comme suit :
 
 **Exemple**
 
@@ -33,3 +35,4 @@ Dans le rapport, le code doit être comme suit :
 </Textbox>
 {{< /highlight >}}
 {{% /alert %}}
+

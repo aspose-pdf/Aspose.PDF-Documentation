@@ -1,14 +1,16 @@
 ---
-title: PDF_A Conformance
+title: Kesesuaian PDF_A
+linktitle: Kesesuaian PDF_A
 type: docs
 weight: 100
 url: /id/reportingservices/pdf_a-conformance/
-lastmod: "2025-05-22"
+description: Aktifkan kesesuaian PDF/A di Aspose.PDF untuk Reporting Services. Buat dokumen yang sesuai dengan standar arsip dengan mudah.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Anda dapat mendapatkan pengantar tentang PDF/A (PDF yang dapat diarsipkan) Conformance dalam dokumentasi Aspose.PDF.
+Anda dapat memperoleh pengantar tentang Kesesuaian PDF/A (PDF yang Dapat Diarsipkan) dalam dokumentasi Aspose.PDF.
 
 Jika Anda ingin membuat dokumen PDF/A, tambahkan parameter laporan berikut.
 
@@ -35,3 +37,4 @@ Jika Anda ingin membuat dokumen PDF/A, tambahkan parameter laporan berikut.
 {{< /highlight >}}
 
 {{% /alert %}}
+

@@ -1,19 +1,20 @@
 ---
-title: System Requirements
+title: Persyaratan Sistem
+linktitle: Persyaratan Sistem
 type: docs
 weight: 10
 url: /id/sharepoint/system-requirements/
-lastmod: "2020-12-16"
-description: PDF SharePoint API memiliki persyaratan server dan klien, serta kebutuhan untuk komputer yang menjalankan Microsoft SharePoint Server.
+lastmod: "2026-06-18"
+description: PDF SharePoint API memiliki persyaratan server dan klien, serta memerlukan komputer yang menjalankan Microsoft SharePoint Server.
 ---
 
 ## **Persyaratan Server**
 
-Untuk menginstal Aspose.PDF untuk SharePoint, Anda memerlukan komputer yang menjalankan Microsoft SharePoint Server 2010.
+Untuk menginstal Aspose.PDF for SharePoint, Anda memerlukan komputer yang menjalankan Microsoft SharePoint Server 2010.
 
 ## **Persyaratan Klien**
 
-Anda memerlukan browser untuk mengakses situs SharePoint. Aspose.PDF untuk SharePoint telah diuji dengan browser berikut:
+Anda memerlukan browser untuk mengakses situs SharePoint. Aspose.PDF for SharePoint telah diuji dengan browser berikut:
 
 - Microsoft Internet Explorer 8
 - Mozilla FireFox 3.5

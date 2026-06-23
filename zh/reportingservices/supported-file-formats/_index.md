@@ -1,9 +1,11 @@
 ---
 title: 支持的文件格式
+linktitle: 支持的文件格式
 type: docs
 weight: 20
 url: /zh/reportingservices/supported-file-formats/
-lastmod: "2021-06-05"
+description: 查看 Aspose.PDF for Reporting Services 支持的文件格式。轻松将您的 SSRS 报表渲染为 PDF、DOC、XLS 等。
+lastmod: "2026-06-19"
 ---
 
 ## 支持的加载格式
@@ -17,11 +19,12 @@ lastmod: "2021-06-05"
 
 ## 支持的保存格式
 
-下表显示了可以使用 Aspose.PDF for Reporting Services 保存文档的文件格式。
+以下表格指示使用 Aspose.PDF for Reporting Services 时可以将文档保存的文件格式。 
 
 |**格式**|**描述**|
 | :- | :- |
-|[PDF](https://docs.fileformat.com/pdf/)|以 PDF 格式保存文档|
-|PDF/A |以 PDF/A 格式保存文档|
-|[XPS](https://docs.fileformat.com/page-description-language/xps/)|以 XML 纸张规范格式保存文档|
-|EPUB|以电子书文件格式保存文档|
+|[PDF](https://docs.fileformat.com/pdf/)|将文档保存为 PDF 格式|
+|PDF/A |将文档保存为 PDF/A 格式|
+|[XPS](https://docs.fileformat.com/page-description-language/xps/)|将文档保存为 XML Paper Specification 格式|
+|EPUB|将文档保存为电子书文件格式|
+

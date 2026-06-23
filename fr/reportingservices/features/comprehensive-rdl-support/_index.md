@@ -1,22 +1,24 @@
 ---
-title: Support RDL Complet
+title: Prise en charge complète de RDL
+linktitle: Prise en charge complète de RDL
 type: docs
 weight: 10
 url: /fr/reportingservices/comprehensive-rdl-support/
-lastmod: "2021-06-05"
+description: Découvrez la prise en charge complète de RDL dans Aspose.PDF pour Reporting Services. Générez des rapports SQL Server complexes en PDFs professionnels.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.Pdf pour Reporting Services prend en charge la spécification RDL. Cela signifie :
+Aspose.PDF pour Reporting Services prend en charge la spécification RDL. Cela signifie :
 
 * Pas besoin de redessiner ou de personnaliser les rapports existants.
 * Pas besoin d'utiliser un concepteur de rapports spécifique. Vous pouvez utiliser n'importe quel concepteur de rapports RDL et le rapport sera exporté exactement comme vous l'avez conçu.
 
 {{% /alert %}}
 
-## **Éléments RDL Pris en Charge**
-Aspose.PDF pour Reporting Services prend en charge les éléments RDL suivants :
+## **Éléments RDL pris en charge**
+Aspose.PDF for Reporting Services prend en charge les éléments RDL suivants :
 
 - Sections
 - En-têtes, pieds de page
@@ -32,3 +34,4 @@ Aspose.PDF pour Reporting Services prend en charge les éléments RDL suivants :
 - Sous-rapport
 - Panneau de jauge (RS2008)
 - Tablix (RS2008)
+

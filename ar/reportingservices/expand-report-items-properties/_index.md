@@ -1,13 +1,15 @@
 ---
 title: توسيع خصائص عناصر التقرير
+linktitle: توسيع خصائص عناصر التقرير
 type: docs
 weight: 90
 url: /ar/reportingservices/expand-report-items-properties/
-lastmod: "2021-06-05"
+description: حسّن تقارير SSRS باستخدام Aspose.PDF. تعلم كيفية توسيع خصائص عناصر التقرير لتخصيص PDF بالتفصيل.
+lastmod: "2026-06-19"
 ---
 
-**تشمل هذه القسم المواضيع التالية:**
+**هذا القسم يتضمن المواضيع التالية:**
 
 - [إضافة خصائص مخصصة](/pdf/ar/reportingservices/adding-custom-properties/)
 - [الخصائص المخصصة المدعومة](/pdf/ar/reportingservices/custom-properties-supported/)
-```
+

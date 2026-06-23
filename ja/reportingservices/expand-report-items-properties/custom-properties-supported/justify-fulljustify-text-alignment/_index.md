@@ -1,23 +1,25 @@
 ---
-title: 両端揃え（Justify FullJustify）テキスト配置
+title: Justify FullJustify テキスト配置
+linktitle: Justify FullJustify テキスト配置
 type: docs
 weight: 40
 url: /ja/reportingservices/justify-fulljustify-text-alignment/
-lastmod: "2021-06-05"
+description: Aspose.PDF for Reporting Services を使用して、PDF レポートで完璧なテキスト配置を実現します。justify と full justify のオプションをサポートします。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-レポートビルダーは、テキストボックスの「Justify」と「FullJustify」のテキスト配置を指定する機能をサポートしていません。Aspose.Pdf for Reporting Servicesを使用することで、カスタムプロパティを追加することで簡単にそれを行うことができます。
+レポート ビルダーはテキストボックス「Justify」および「FullJustify」のテキスト配置を指定する機能をサポートしていません。Aspose.Pdf for Reporting Services を使用すれば、カスタム プロパティを追加するだけで簡単に実現できます。
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**カスタムプロパティ名** : TextAlignment  
-**カスタムプロパティタイプ** : String  
-**カスタムプロパティ値** : Justify, FullJustify  
+**カスタム プロパティ名** : TextAlignment  
+**カスタム プロパティ タイプ** : String  
+**カスタム プロパティ 値** : Justify, FullJustify  
 
-レポートでのコードは次のようになります：
+レポートでは、コードは次のようにする必要があります:
 
 **例**
 
@@ -33,4 +35,4 @@ lastmod: "2021-06-05"
 </Textbox>
 {{< /highlight >}}
 {{% /alert %}}
-```
+

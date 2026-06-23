@@ -1,18 +1,19 @@
 ---
 title: إعداد SharePoint على خادم خدمات التقارير
+linktitle: إعداد SharePoint على خادم خدمات التقارير
 type: docs
 weight: 30
 url: /ar/reportingservices/setting-up-sharepoint-on-reporting-services-server/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-الآن نحتاج إلى تنفيذ خطوات مشابهة كما فعلنا مع WFE SharePoint. أول شيء هو المرور بتثبيت المتطلبات المسبقة وبمجرد الانتهاء، بدء إعداد SharePoint.
+الآن نحتاج إلى تنفيذ خطوات مماثلة لتلك التي قمنا بها لـ SharePoint WFE. أول شيء هو المرور عبر تثبيت Prereq uisites وبمجرد الانتهاء، تشغيل إعداد SharePoint.
 
 {{% /alert %}}
 
-لإعداد SharePoint اخترت Server Farm وتثبيت كامل ليتناسب مع صندوق SharePoint الخاص بي، حيث لا أريد تثبيتًا مستقلًا لـ SharePoint.
+لإعداد النظام أختار Server Farm وتثبيتًا كاملًا لمطابقة صندوق SharePoint الخاص بي، حيث لا أرغب في تثبيت مستقل لـ SharePoint.
 
 ## تكوين SharePoint
 
@@ -22,30 +23,28 @@ lastmod: "2021-06-05"
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_1.png)
 
-**الصورة 1:- معالج تكوين SharePoint**
+**Image1:- معالج تكوين SharePoint**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**ثم سنوجهه إلى قاعدة بيانات SharePoint_Config التي تستخدمها مزرعتنا.**
-``` ```
-إذا لم تكن تعرف مكان هذا، يمكنك معرفة ذلك من خلال الإدارة المركزية عبر إعدادات النظام -> إدارة الخوادم في هذه المزرعة.**
+**سنقوم بعد ذلك بتوجيهه إلى قاعدة بيانات SharePoint_Config التي تستخدمها مزرعتنا. إذا لم تكن تعرف مكانها، يمكنك اكتشاف ذلك عبر الإدارة المركزية من خلال إعدادات النظام -> إدارة الخوادم في هذه المزرعة.**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_2.png)
 
-**الصورة 2:- تحديد إعدادات تكوين قاعدة البيانات**
+**Image2:- تحديد إعدادات تكوين قاعدة البيانات**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_3.png)
 
-**الصورة 3:- معالج تكوين SharePoint**
+**Image3:- معالج تكوين SharePoint**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**بمجرد الانتهاء من المعالج، هذا كل ما نحتاج إلى القيام به على صندوق خادم التقارير في الوقت الحالي. عند العودة إلى عنوان URL الخاص بـ ReportServer، سنرى خطأ آخر، ولكن ذلك لأننا لم نقم بتكوينه عبر الإدارة المركزية.**
+**بمجرد الانتهاء من المعالج، هذا كل ما نحتاج إلى القيام به على صندوق خادم التقرير الآن. بالعودة إلى عنوان URL لخادم التقرير، سنرى خطأ آخر، لكن ذلك لأننا لم نقم بتكوينه عبر المسؤول المركزي.**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_4.png)
 
-**الصورة 4:- خطأ في خادم التقارير**
+**Image4:- خطأ خادم التقرير**
 {{% /alert %}}
-```
+

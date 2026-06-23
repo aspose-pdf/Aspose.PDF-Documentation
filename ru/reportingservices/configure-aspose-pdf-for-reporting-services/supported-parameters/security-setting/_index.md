@@ -1,41 +1,42 @@
 ---
-title: Security Setting
+title: Настройка безопасности
+linktitle: Настройка безопасности
 type: docs
 weight: 30
 url: /ru/reportingservices/security-setting/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Безопасность всегда была самой важной проблемой в каждой области, будь то защита сети или PDF-документа. Документы делают безопасными по многим возможным причинам: автор документа может захотеть сохранить его содержание в безопасности и не хочет позволять другим изменять его и т.д.
+Безопасность всегда была самой важной проблемой в любой сфере, будь то защита сети или PDF‑документа. Документы защищаются по многим возможным причинам: автор документа может захотеть сохранить содержание документа в безопасности и не желать, чтобы другие могли его изменять и т.д.
 
-Aspose.Pdf for Reporting Services уделяет большое внимание таким аспектам безопасности, предоставляя разработчикам функции, которые могут быть полезны для защиты их PDF-документов. Поэтому он содержит ряд параметров, которые позволяют разработчикам применять различные меры безопасности к PDF-документам.
+Aspose.Pdf for Reporting Services уделил большое внимание таким аспектам безопасности, предоставляя разработчикам функции, которые могут быть полезны для защиты их PDF‑документов. Поэтому он содержит ряд параметров, позволяющих разработчикам применять различные меры безопасности к PDF‑документам.
 
-Одной из этих мер является защита PDF-документа паролем во время шифрования. You can also restrict or allow contents modification, copying the content, document printing or allow/disable form filling. These features are at this time not supported by the default SQL Reporting Services PDF Exporter but you can implement these features using Aspose.Pdf for Reporting Services. Just add corresponding security parameters to a report or a report server configuration file, and you will be able to create secure PDF documents with limited privileges.
+Одной из этих мер является защита PDF‑документа паролем при шифровании. Вы также можете ограничить или разрешить изменение содержимого, копирование контента, печать документа или включить/отключить заполнение форм. В настоящее время эти функции не поддерживаются стандартным экспортёром PDF в SQL Reporting Services, но их можно реализовать с помощью Aspose.Pdf for Reporting Services. Просто добавьте соответствующие параметры безопасности в отчёт или в файл конфигурации сервера отчётов, и вы сможете создавать защищённые PDF‑документы с ограниченными привилегиями.
 
-Currently, Aspose.Pdf for Reporting Services renderer supports following security attributes:
+В настоящее время рендерер Aspose.Pdf for Reporting Services поддерживает следующие атрибуты безопасности:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Parameter Name**: User Password  
-**Date Type**: String  
-**Values supported**: Any plain text
+**Имя параметра**: Пароль пользователя  
+**Тип данных**: Строка  
+**Поддерживаемые значения**: Любой обычный текст
 
-**Parameter Name**: Master Password  
-**Date Type**: String  
-**Values supported**: Any plain text 
+**Имя параметра**: Главный пароль  
+**Тип данных**: Строка  
+**Поддерживаемые значения**: Любой обычный текст 
 
-**Parameter Name**: IsCopyingAllowed  
-**Date Type**: Boolean  
-**Values supported**: True, False (default)  
+**Имя параметра**: IsCopyingAllowed  
+**Тип данных**: Boolean  
+**Поддерживаемые значения**: True, False (по умолчанию)  
 
-**Parameter Name**: IsPrintingAllowed  
-**Date Type**: Boolean  
+**Имя параметра**: IsPrintingAllowed  
+**Тип данных**: Boolean  
+**Поддерживаемые значения**: True, False (по умолчанию)  
 
-**Values supported**: True, False (default)  
 **Имя параметра**: IsContentsModifyingAllowed  
 **Тип данных**: Boolean  
 **Поддерживаемые значения**: True, False (по умолчанию)  
@@ -62,3 +63,4 @@ Currently, Aspose.Pdf for Reporting Services renderer supports following securit
 {{< /highlight >}}
 
 {{% /alert %}}
+

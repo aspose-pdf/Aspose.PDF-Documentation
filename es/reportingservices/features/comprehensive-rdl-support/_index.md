@@ -1,22 +1,24 @@
 ---
-title: Comprehensive RDL Support
+title: Compatibilidad integral con RDL
+linktitle: Compatibilidad integral con RDL
 type: docs
 weight: 10
 url: /es/reportingservices/comprehensive-rdl-support/
-lastmod: "2021-06-05"
+description: Descubra la compatibilidad integral con RDL en Aspose.PDF for Reporting Services. Genere informes complejos de SQL Server en PDFs profesionales.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.Pdf para Reporting Services admite la especificación RDL. Significa:
+Aspose.Pdf for Reporting Services admite la especificación RDL. Significa:
 
 * No es necesario rediseñar o personalizar los informes existentes.
-* No es necesario usar un diseñador de informes específico. Puede usar cualquier diseñador de informes RDL y el informe se exportará exactamente como lo diseñó.
+* No es necesario utilizar un diseñador de informes específico. Puede usar cualquier diseñador de informes RDL y el informe se exportará exactamente como lo diseñó.
 
 {{% /alert %}}
 
-## **Elementos RDL Soportados**
-Aspose.PDF para Reporting Services admite los siguientes elementos RDL:
+## **Elementos RDL compatibles**
+Aspose.PDF for Reporting Services admite los siguientes elementos RDL:
 
 - Secciones
 - Encabezados, pies de página
@@ -30,5 +32,7 @@ Aspose.PDF para Reporting Services admite los siguientes elementos RDL:
 - Rectángulos
 - Líneas
 - Subinforme
-- Panel de medidores (RS2008)
+- Panel de medidor (RS2008)
 - Tablix (RS2008)
+
+

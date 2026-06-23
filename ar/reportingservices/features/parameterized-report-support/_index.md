@@ -1,21 +1,28 @@
 ---
-title: Easy and Lightweight Deployment
+title: دعم التقارير المعلمة
+linktitle: دعم التقارير المعلمة
 type: docs
-weight: 40
-url: /ar/reportingservices/easy-and-lightweight-deployment/
-lastmod: "2021-06-05"
+weight: 20
+url: /ar/reportingservices/parameterized-report-support/
+lastmod: "2026-06-19"
 ---
 
-**Aspose.Pdf for Reporting Services** هو امتداد تقديم مخصص لخدمات Microsoft SQL Server 2016/2017/2019/2022 Reporting Services و Power BI Report Server. يتم توفير Aspose.Pdf for Reporting Services كمثبت MSI واحد يمكن تثبيته على أجهزة الكمبيوتر التي تعمل بأحد البرامج التالية:
+التقرير المعلم هو تقرير يقبل قيم إدخال تُستخدم في معالجة التقرير. باستخدام تقرير معلم، يمكنك تغيير مخرجات التقرير بناءً على القيم التي يتم تعيينها عند تشغيل التقرير. تدعم Aspose.Pdf for Reporting Services نوعين من المعلمات: معلمات خادم التقرير ومعلمات التقرير. تُستخدم معلمات خادم التقرير لجميع التقارير على خادم التقرير. إذا أردت جعل بعض المعلمات مناسبة لتقارير معينة، يجب عليك استخدام معلمات التقرير.
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
+حاليًا، يدعم مُعالج Aspose.Pdf مجموعة واسعة من المعلمات، مثل:
 
-يعد Aspose.Pdf for Reporting Services سهل النشر والإدارة، حيث يتكون من تجميع .NET واحد فقط Aspose.Pdf.ReportingServices.dll، مكتوب بالكامل في C#، ومتوافق مع CLS ويحتوي فقط على كود مُدار آمن. يجب أن يكون لديك .NET Framework 4.8.1 مثبتًا على الخادم.
+## **المعلمات المدعومة**
+في الإصدار الحالي، يدعم Aspose.PDF render العديد من جوانب المعلمات، وهي:
 
-يجب نسخ Aspose.Pdf.ReportingServices.dll إلى دليل ReportServer\bin ويجب تحديث ملف التكوين بحيث يكون لدى Reporting Services علم بامتداد التقديم الجديد. These steps are performed by the Aspose.Pdf for Reporting Services installer, but you could also perform them manually as described further in this documentation.
+- اتجاه الصفحة
+- تنسيق HTML
+- سمات الأمان
+- حجم الصفحة
+- حجم هوامش الصفحة
+- تضمين الخط
+- توافق PDF/A
+- البيانات الوصفية XMP
+- معلومات التصحيح
 
-يتم تنفيذ هذه الخطوات بواسطة مثبت Aspose.Pdf لخدمات التقارير، ولكن يمكنك أيضًا تنفيذها يدويًا كما هو موضح لاحقًا في هذه الوثائق.
+اكتشف المزيد عن المعلمات من [تكوين Aspose.PDF لخدمات التقارير](/pdf/ar/reportingservices/configure-aspose-pdf-for-reporting-services/) مقالة.
+
