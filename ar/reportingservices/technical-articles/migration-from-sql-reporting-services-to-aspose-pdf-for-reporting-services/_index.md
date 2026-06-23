@@ -1,11 +1,14 @@
 ---
-title: الهجرة من خدمات تقارير SQL إلى Aspose.Pdf لخدمات التقارير
+title: الترحيل من SQL Reporting Services إلى Aspose.Pdf for Reporting Services
+linktitle: الترحيل من SQL Reporting Services إلى Aspose.Pdf for Reporting Services
 type: docs
 weight: 10
 url: /ar/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/
-lastmod: "2024-05-05"
+description: تعرف على كيفية الترحيل من SQL Reporting Services إلى Aspose.PDF for Reporting Services. قم بترقية عملية إنشاء ملفات PDF الخاصة بك.
+lastmod: "2026-06-19"
 ---
 
-**تتضمن هذه القسم المواضيع التالية:**
+**يتضمن هذا القسم المواضيع التالية:**
 
-- [لماذا تختار Aspose.PDF لخدمات التقارير](/pdf/ar/reportingservices/why-choose-aspose-pdf-for-reporting-services/)
+- [لماذا تختار Aspose.PDF for Reporting Services](/pdf/ar/reportingservices/why-choose-aspose-pdf-for-reporting-services/)
+

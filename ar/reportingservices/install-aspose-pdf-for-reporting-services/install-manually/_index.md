@@ -1,12 +1,14 @@
 ---
-title: التثبيت اليدوي
+title: تثبيت يدويًا
+linktitle: تثبيت يدويًا
 type: docs
 weight: 20
 url: /ar/reportingservices/install-manually/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
-**تشمل هذه القسم المواضيع التالية:**
+**يتضمن هذا القسم المواضيع التالية:**
 
-- [التثبيت على خادم التقارير](/pdf/ar/reportingservices/install-to-report-server/)
-```
+- [تثبيت إلى خادم التقارير](/pdf/ar/reportingservices/install-to-report-server/)
+
+
