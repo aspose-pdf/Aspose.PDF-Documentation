@@ -1,50 +1,54 @@
 ---
-title: Introduction
+title: Pengantar
+linktitle: Pengantar
 type: docs
 weight: 10
 url: /id/reportingservices/introduction/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF untuk Reporting Services telah sangat luar biasa untuk pembuatan PDF melalui SQL Reporting Services selama bertahun-tahun dan menyediakan beragam opsi konfigurasi dan parameterisasi yang tidak didukung secara default dalam SQL Reporting Services. Baru-baru ini kami menerima beberapa permintaan terkait Integrasi Aspose.PDF untuk Reporting Services dengan SharePoint. Untuk artikel ini, kami akan fokus pada MS SharePoint 2010. Sebelum kita melangkah lebih jauh, kami mengasumsikan bahwa Anda sudah memiliki pengaturan SharePoint Farm. Dalam contoh ini kami akan menggunakan SharePoint Cloud penuh. Namun langkah-langkahnya serupa untuk SharePoint Foundation Server.
+Aspose.PDF for Reporting Services telah sangat luar biasa untuk pembuatan PDF melalui SQL Reporting Services selama bertahun‑tahun dan menyediakan opsi konfigurasi serta parametrisasi yang beragam yang tidak didukung secara default di SQL Reporting Services. Baru-baru ini kami menerima beberapa permintaan terkait Integrasi Aspose.PDF for Reporting Services dengan SharePoint. Untuk artikel ini, kami akan fokus pada MS SharePoint 2010. Sebelum kami melanjutkan, kami mengasumsikan Anda sudah memiliki setup SharePoint Farm. Dalam contoh ini kami akan menggunakan SharePoint Cloud penuh. Namun langkah‑langkahnya serupa untuk SharePoint Foundation Server.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Sebelum kita melangkah lebih jauh, mari kita lihat topik referensi yang telah kami konsultasikan selama persiapan artikel ini.
+Sebelum kami melanjutkan lebih jauh, mari kita lihat topik referensi yang telah kami konsultasikan selama persiapan artikel ini.
 
-- [Ikhtisar Integrasi Teknologi Reporting Services dan SharePoint](http://msdn.microsoft.com/en-us/library/bb326358.aspx)
-- [Deployment Topologies for Reporting Services in SharePoint Integrated Mode](http://msdn.microsoft.com/en-us/library/bb510781.aspx)
-- [Configuring Reporting Services for SharePoint 2010 Integration](http://msdn.microsoft.com/en-us/library/bb326356.aspx)
+- [Gambaran Umum Integrasi Layanan Pelaporan dan Teknologi SharePoint](http://msdn.microsoft.com/en-us/library/bb326358.aspx)
+- [Topologi Penyebaran untuk Reporting Services dalam Mode Terintegrasi SharePoint](http://msdn.microsoft.com/en-us/library/bb510781.aspx)
+- [Mengonfigurasi Reporting Services untuk Integrasi SharePoint 2010](http://msdn.microsoft.com/en-us/library/bb326356.aspx)
 
 {{% /alert %}}
 
-## Pengaturan Lingkungan
+## Penyiapan Lingkungan
 
-Pengaturan kami terdiri dari 4 server. Ini termasuk Pengendali Domain, SQL Server, SharePoint Server, dan server untuk Layanan Pelaporan. Anda dapat memilih untuk memiliki SharePoint dan Layanan Pelaporan pada kotak yang sama, yang akan menyederhanakan ini sedikit dan saya akan menunjukkan beberapa perbedaannya.
+Penyiapan kami terdiri dari 4 server. Itu mencakup sebuah Domain Controller, sebuah SQL Server, sebuah SharePoint Server, dan sebuah server untuk Reporting Services. Anda dapat memilih untuk menempatkan SharePoint dan Reporting Services pada satu kotak yang sama, yang akan menyederhanakan ini sedikit dan saya akan menunjukkan beberapa perbedaannya.
 
-## Persyaratan Instalasi
+## Prasyarat Instalasi
 
 {{% alert color="primary" %}}
 
-Add-In Layanan Pelaporan untuk SharePoint adalah salah satu komponen utama untuk membuat Integrasi berfungsi dengan baik. The Add-In needs to be installed on any of the Web Front Ends (WFE) that is in your SharePoint farm along with the Central Admin server. Salah satu perubahan baru dengan SQL 2008 R2 & SharePoint 2010 adalah bahwa Add-In 2008 R2 sekarang menjadi prasyarat untuk Instalasi SharePoint. Ini berarti bahwa RS Add-In akan dipasang saat Anda menginstal SharePoint. Ini telah ditunjukkan dan disorot dalam gambar di bawah ini. Ini sebenarnya menghindari banyak masalah yang kita lihat dengan SP 2007 dan RS 2008 ketika menginstal Add-In.
+Add-In Reporting Services untuk SharePoint adalah salah satu komponen utama untuk membuat Integrasi berfungsi dengan baik. Add-In harus diinstal pada salah satu Web Front Ends (WFE) yang berada di farm SharePoint Anda bersama dengan server Central Admin. Salah satu perubahan baru dengan SQL 2008 R2 & SharePoint 2010 adalah bahwa Add-In 2008 R2 kini menjadi prasyarat untuk Instalasi SharePoint. Ini berarti bahwa RS Add-In akan dipasang ketika Anda menginstal SharePoint. Hal ini telah ditampilkan dan disorot pada gambar di bawah. Ini sebenarnya menghindari banyak masalah yang kami temui dengan SP 2007 dan RS 2008 saat menginstal Add-In.
 
 ![todo:image_alt_text](introduction_1.png)
 
-**Image1 :- Reporting Services Add-in for Share Point** {{% /alert %}}
+**Image1 :- Add-in Reporting Services untuk Share Point**
+{{% /alert %}}
 
-## SharePoint Authentication
+## Otentikasi SharePoint
 
-**Sebelum kita masuk ke bagian Integrasi RS, satu hal yang ingin saya tekankan tentang SharePoint Farm adalah bagaimana Anda mengatur Situs. Lebih spesifik tentang bagaimana Anda mengonfigurasi autentikasi untuk situs. Apakah akan menjadi Klasik atau Klaim. Pilihan ini penting di awal. Saya tidak percaya bahwa Anda dapat mengubah opsi ini setelah selesai. Jika Anda bisa mengubahnya, itu tidak akan menjadi proses yang sederhana.
+**Sebelum kita melompat ke bagian Integrasi RS, ada satu hal yang ingin saya sampaikan tentang SharePoint Farm yaitu cara Anda menyiapkan Situs. Lebih spesifik lagi cara Anda mengonfigurasi otentikasi untuk situs tersebut. Apakah akan menggunakan Classic atau Claims. Pilihan ini penting di awal. Saya tidak percaya Anda dapat mengubah opsi ini setelah selesai. Jika dapat mengubahnya, prosesnya tidak akan sederhana.**
 
-CATATAN: ***Layanan Pelaporan 2008 R2 TIDAK mendukung Klaim***
+CATATAN: ***Reporting Services 2008 R2 tidak mendukung Claims***
 
-Bahkan jika Anda memilih situs SharePoint Anda untuk menggunakan Klaim, Layanan Pelaporan itu sendiri tidak mendukung Klaim. Namun demikian, itu mempengaruhi bagaimana autentikasi bekerja dengan Layanan Pelaporan. Jadi, apa perbedaannya dari perspektif Layanan Pelaporan? Itu tergantung pada apakah Anda ingin meneruskan Kredensial Pengguna ke sumber data. Klasik:- Dapat menggunakan Kerberos dan meneruskan kredensial pengguna ke sumber data backend Anda (akan perlu menggunakan Kerberos untuk itu). Klaim:- Token Klaim digunakan dan bukan token windows. RS akan selalu menggunakan Autentikasi Terpercaya dalam skenario ini dan hanya akan memiliki akses ke token SPUser. Anda perlu menyimpan kredensial Anda dalam sumber data Anda.
+Meskipun Anda memilih situs SharePoint Anda untuk menggunakan Claims, Reporting Services itu sendiri tidak mendukung Claims. Meski begitu, hal ini memengaruhi cara otentikasi bekerja dengan Reporting Services. Jadi, apa perbedaannya dari perspektif Reporting Services? Semua tergantung pada apakah Anda ingin meneruskan Kredensial Pengguna ke sumber data. Classic:- Dapat menggunakan Kerberos dan meneruskan kredensial pengguna ke datasource back‑end Anda (akan perlu menggunakan Kerberos untuk itu). Claims:- Token Claims yang digunakan, bukan token Windows. RS akan selalu menggunakan Trusted Authentication dalam skenario ini dan hanya akan memiliki akses ke token SPUser. Anda perlu menyimpan kredensial Anda di dalam sumber data.
 
-Klasik :- Dapat menggunakan Kerberos dan meneruskan kredensial pengguna ke sumber data backend Anda (akan perlu menggunakan Kerberos untuk itu).
-Claims :- Token Klaim digunakan dan bukan token windows. RS akan selalu menggunakan Autentikasi Terpercaya dalam skenario ini dan hanya akan memiliki akses ke token SPUser. Anda perlu menyimpan kredensial Anda dalam sumber data Anda.
+Classic :- Dapat menggunakan Kerberos dan meneruskan kredensial pengguna ke datasource back end Anda (akan perlu menggunakan Kerberos untuk itu.
 
-Untuk saat ini, kami hanya ingin fokus pada pengaturan RS. Pada titik ini, SharePoint telah diinstal pada SharePoint Box saya dan diatur dengan Situs Autentikasi Klasik pada port 80. Di Server RS, saya baru saja menginstal Layanan Pelaporan dan hanya itu.
+Claims :- Token Claims yang digunakan, bukan token Windows. RS akan selalu menggunakan Trusted Authentication dalam skenario ini dan hanya akan memiliki akses ke token SPUser. Anda perlu menyimpan kredensial Anda di dalam sumber data.
+
+Untuk saat ini kami hanya ingin fokus pada pengaturan RS. Pada titik ini SharePoint telah terinstal di SharePoint Box saya dan diatur dengan Situs Autentikasi Klasik pada port 80. Di Server RS saya baru saja menginstal Reporting Services dan itu saja.
+

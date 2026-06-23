@@ -1,13 +1,16 @@
 ---
 title: Konfigurasi
+linktitle: Konfigurasi
 
 type: docs
 weight: 80
 url: /id/reportingservices/configure-aspose-pdf-for-reporting-services/
-lastmod: "2021-06-05"
+description: Pelajari cara mengkonfigurasi Aspose.PDF for Reporting Services untuk menyesuaikan pengaturan output PDF bagi laporan SSRS Anda secara efisien.
+lastmod: "2026-06-19"
 ---
 
-## Bagian ini mencakup topik-topik berikut:
+## Bagian ini mencakup topik berikut:
 
-- [Mengatur Parameter](/pdf/id/reportingservices/setting-parameters/)
+- [Pengaturan Parameter](/pdf/id/reportingservices/setting-parameters/)
 - [Parameter yang Didukung](/pdf/id/reportingservices/supported-parameters/)
+

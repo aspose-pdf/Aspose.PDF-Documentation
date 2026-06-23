@@ -1,21 +1,28 @@
 ---
-title: Easy and Lightweight Deployment
+title: Dukungan Laporan Parameterisasi
+linktitle: Dukungan Laporan Parameterisasi
 type: docs
-weight: 40
-url: /id/reportingservices/easy-and-lightweight-deployment/
-lastmod: "2021-06-05"
+weight: 20
+url: /id/reportingservices/parameterized-report-support/
+lastmod: "2026-06-19"
 ---
 
-**Aspose.Pdf for Reporting Services** adalah ekstensi rendering kustom untuk Microsoft SQL Server 2016/2017/2019/2022 Reporting Services dan Power BI Report Server. Aspose.Pdf for Reporting Services disediakan sebagai installer MSI tunggal yang dapat diinstal pada komputer yang menjalankan salah satu dari berikut ini:
+Laporan yang diparameterisasi adalah laporan yang menerima nilai input yang digunakan dalam pemrosesan laporan. Dengan laporan parameterisasi, Anda dapat mengubah output laporan berdasarkan nilai yang ditetapkan saat laporan dijalankan. Aspose.Pdf for Reporting Services mendukung dua jenis parameter: parameter server laporan dan parameter laporan. Parameter server laporan digunakan untuk semua laporan di server laporan. Jika Anda ingin membuat beberapa parameter cocok untuk laporan tertentu, Anda harus menggunakan parameter laporan.
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
- 
-Aspose.Pdf for Reporting Services mudah untuk diterapkan dan dikelola, karena terdiri dari hanya satu assembly .NET Aspose.Pdf.ReportingServices.dll, ditulis sepenuhnya dalam C#, sesuai CLS dan hanya mengandung kode aman yang dikelola. Anda diharuskan memiliki .NET Framework 4.8.1 terpasang di server.
+Saat ini, renderer Aspose.Pdf mendukung berbagai macam parameter, seperti:
 
-Aspose.Pdf.ReportingServices.dll harus disalin ke direktori ReportServer\bin dan file konfigurasi harus diperbarui agar Reporting Services menyadari ekstensi rendering baru. These steps are performed by the Aspose.Pdf for Reporting Services installer, but you could also perform them manually as described further in this documentation.
+## **Parameter yang Didukung**
+Pada versi saat ini, renderer Aspose.PDF mendukung banyak aspek parameter, yaitu:
 
-Langkah-langkah ini dilakukan oleh penginstal Aspose.Pdf untuk Layanan Pelaporan, tetapi Anda juga dapat melakukannya secara manual seperti yang dijelaskan lebih lanjut dalam dokumentasi ini.
+- Orientasi halaman
+- Pemformatan HTML
+- Atribut keamanan
+- Ukuran halaman
+- Ukuran margin halaman
+- Penyematan font
+- Kesesuaian PDF/A
+- metadata XMP
+- Informasi debug
+
+Pelajari lebih lanjut tentang parameter dari [Konfigurasikan Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/configure-aspose-pdf-for-reporting-services/) artikel.
+
