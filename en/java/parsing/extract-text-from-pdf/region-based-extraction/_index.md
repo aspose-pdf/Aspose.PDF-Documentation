@@ -14,10 +14,10 @@ sitemap:
 
 Use `TextSearchOptions` with a `Rectangle` to restrict extraction to a defined area on a page.
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/) to collect text from the selected page area.
-1. Create [TextSearchOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textsearchoptions/) for the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) and enable `setLimitToPageBounds(true)` so extraction stays inside the visible page box.
-1. Apply the configured search options to the absorber and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Create a [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) to collect text from the selected page area.
+1. Create [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) for the target [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) and enable `setLimitToPageBounds(true)` so extraction stays inside the visible page box.
+1. Apply the configured search options to the absorber and visit the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Write the extracted text buffer to the output file.
 
 ```java
@@ -38,10 +38,10 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 
 Use `ParagraphAbsorber` to inspect section rectangles and paragraph polygons together with the extracted text.
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Create a [ParagraphAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/paragraphabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to build page markup information.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Create a [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to build page markup information.
 1. Read the first page-markup result and iterate through its sections and paragraphs.
-1. Collect each section rectangle, paragraph polygon, and the paragraph text reconstructed from its [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) lines.
+1. Collect each section rectangle, paragraph polygon, and the paragraph text reconstructed from its [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) lines.
 1. Build the output report with geometry and extracted text details.
 1. Write the extracted details to the output file.
 

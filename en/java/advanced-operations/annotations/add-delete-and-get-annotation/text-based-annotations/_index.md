@@ -19,8 +19,8 @@ Text-based annotation workflows in this section cover free text, highlight, stri
 
 Use these examples when you need to place editable text notes, inspect them, or remove them from the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create, find, or collect [FreeTextAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/freetextannotation/) objects on the page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create, find, or collect [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) objects on the page.
 1. Save the updated document when adding or deleting annotations.
 
 ```java
@@ -72,8 +72,8 @@ public static void freeTextAnnotationDelete(Path inputFile, Path outputFile) {
 
 These examples show how to create highlight markup, inspect existing highlight annotations, and remove them.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Work with [HighlightAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/highlightannotation/) objects on the page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Work with [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) objects on the page.
 1. Save the document after adding or deleting the annotation.
 
 ```java
@@ -122,8 +122,8 @@ public static void textHighlightAnnotationDelete(Path inputFile, Path outputFile
 
 Use these examples when you need review-style strikeout markup over text ranges.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create, inspect, or collect [StrikeOutAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/strikeoutannotation/) objects.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create, inspect, or collect [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) objects.
 1. Save the document after applying changes.
 
 ```java
@@ -176,8 +176,8 @@ public static void textStrikeoutAnnotationDelete(Path inputFile, Path outputFile
 
 These examples work with squiggly markup used to emphasize text during review.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create, inspect, or collect [SquigglyAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/squigglyannotation/) objects.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create, inspect, or collect [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/) objects.
 1. Save the document after adding or deleting annotations.
 
 ```java
@@ -229,8 +229,8 @@ public static void textSquigglyAnnotationDelete(Path inputFile, Path outputFile)
 
 Use these examples when text should be underlined, inspected, or removed through annotation APIs.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Work with [UnderlineAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/underlineannotation/) objects on the page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Work with [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) objects on the page.
 1. Save the document after adding or deleting annotations.
 
 ```java
@@ -283,8 +283,8 @@ public static void textUnderlineAnnotationDelete(Path inputFile, Path outputFile
 
 This example defines the underline area explicitly through quad points derived from a rectangle.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create an [UnderlineAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/underlineannotation/) and calculate its quad points.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create an [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) and calculate its quad points.
 1. Add the annotation to the page and save the document.
 
 ```java
@@ -314,7 +314,7 @@ public static void textUnderlineWithQuadPointsAdd(Path inputFile, Path outputFil
 
 These examples read the text content associated with underline annotations, either as a full string or as individual fragments.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through underline annotations on the page.
 1. Read either `getMarkedText()` or `getMarkedTextFragments()` and print the results.
 
@@ -350,7 +350,7 @@ public static void textUnderlineMarkedFragmentsGet(Path inputFile) {
 
 Use this approach when underline annotations should be removed selectively based on their metadata.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Filter underline annotations by title.
 1. Delete the matching annotations and save the updated document.
 
@@ -378,8 +378,8 @@ public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
 
 This example adds an underline annotation and immediately flattens it into static page content.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add an [UnderlineAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/underlineannotation/) to the page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add an [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) to the page.
 1. Call `flatten()` on the annotation and save the output file.
 
 ```java

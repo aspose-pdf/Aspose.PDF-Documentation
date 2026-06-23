@@ -17,12 +17,12 @@ Use the `Document` and `FileSpecification` APIs when you need to package invoice
 
 ## Attach ZUGFeRD invoice XML to a PDF
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create the [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/) for the XML invoice file.
-1. Set the embedded file metadata, including MIME type and [AFRelationship](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/afrelationship/).
-1. Add the [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/) to the document embedded file collection.
-1. Convert the document to [PdfFormat](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create the [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) for the XML invoice file.
+1. Set the embedded file metadata, including MIME type and [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
+1. Add the [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) to the document embedded file collection.
+1. Convert the document to [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {

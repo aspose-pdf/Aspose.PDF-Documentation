@@ -19,7 +19,7 @@ Header and footer artifacts are non-content pagination elements commonly used fo
 
 Use this helper when you need a reusable header artifact with consistent text styling and alignment.
 
-1. Create a [HeaderArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/headerartifact/).
+1. Create a [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/).
 1. Set its text, font settings, and foreground color.
 1. Configure the horizontal alignment and return the artifact.
 
@@ -39,7 +39,7 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 
 This helper creates a reusable footer artifact with the same styling pattern as the header artifact.
 
-1. Create a [FooterArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/footerartifact/).
+1. Create a [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/).
 1. Set its text, text state, and foreground color.
 1. Configure the alignment and return the artifact.
 
@@ -59,7 +59,7 @@ public static FooterArtifact createFooterArtifact(String text) {
 
 Use this example when a page should display a reusable header artifact.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create the header artifact through the helper method.
 1. Add the artifact to the page and save the output file.
 
@@ -77,7 +77,7 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 
 Use this example when the page should display a footer artifact with reusable formatting.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create the footer artifact through the helper method.
 1. Add the artifact to the page and save the output file.
 
@@ -95,7 +95,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 
 Use this approach when existing header and footer artifacts should be removed from the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the page artifact collection in reverse order.
 1. Delete pagination artifacts whose subtype is header or footer, then save the document.
 

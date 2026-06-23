@@ -17,7 +17,7 @@ The `Form` facade can be used to automate field population in an existing AcroFo
 
 ## Fill AcroForm fields with new values
 
-1. Open the PDF form document with the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade.
+1. Open the PDF form document with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
 1. Iterate through the form fields and update the matching entries with the provided values.
 1. Save the updated PDF document.
 

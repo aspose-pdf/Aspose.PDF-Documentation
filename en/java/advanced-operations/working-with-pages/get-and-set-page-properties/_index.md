@@ -19,7 +19,7 @@ Aspose.PDF for Java can inspect page count, page boxes, rotation, and page color
 
 Use this example when you need to read the total number of pages in a PDF.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Read the size of the page collection.
 1. Output the total page count.
 
@@ -35,7 +35,7 @@ public static void getPageCount(Path inputFile) {
 
 Use this example when you need to know how many pages generated content will produce before writing the file.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add content to a page.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add content to a page.
 1. Process the paragraphs to force layout calculation.
 1. Read the resulting page count and output it.
 
@@ -56,7 +56,7 @@ public static void getPageCountWithoutSaving(Path inputFile) {
 
 Use this example when you need to inspect all major box dimensions and page rotation values.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and access the target page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and access the target page.
 1. Collect the page box values into a map.
 1. Output the dimensions and page rotation information.
 
@@ -92,8 +92,8 @@ public static void getPageProperties(Path inputFile) {
 
 Use this example when you need to identify whether pages are black and white, grayscale, or RGB.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Iterate through all pages and read each page [ColorType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/colortype/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterate through all pages and read each page [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
 1. Convert the enum value into readable text and output the result.
 
 ```java

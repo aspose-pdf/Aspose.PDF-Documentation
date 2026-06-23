@@ -15,12 +15,12 @@ Abstract: This article explains how to add page number stamps using Aspose.PDF f
 ---
 ## Add a page number stamp
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create the [PageNumberStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pagenumberstamp/) object.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create the [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) object.
 1. Configure the required stamp placement and numbering options.
-1. Set the required text formatting options, including [FontRepository](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fontrepository/) and [Color](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/color/).
-1. Add the configured [PageNumberStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pagenumberstamp/) to the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Set the required text formatting options, including [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) and [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Add the configured [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) to the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addPageNumStamp(Path inputFile, Path outputFile) {

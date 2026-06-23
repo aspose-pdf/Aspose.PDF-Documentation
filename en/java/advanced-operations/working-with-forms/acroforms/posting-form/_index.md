@@ -17,8 +17,8 @@ Aspose.PDF for Java supports both facade-based and DOM-based submit button creat
 
 ## Add a submit button with FormEditor
 
-1. Create a [FormEditor](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/formeditor/) facade for the source PDF document.
-1. Add the configured submit button object through the [FormEditor](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/formeditor/) facade.
+1. Create a [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) facade for the source PDF document.
+1. Add the configured submit button object through the [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) facade.
 1. Save the updated PDF document.
 
 ```java
@@ -37,10 +37,10 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 
 ## Add a submit action manually
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create the [SubmitFormAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/submitformaction/) and URL [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/).
-1. Create the [ButtonField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/buttonfield/) on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and assign the submit action.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create the [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) and URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).
+1. Create the [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) on the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and assign the submit action.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {

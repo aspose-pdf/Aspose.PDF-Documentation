@@ -19,8 +19,8 @@ Use text stamps when you need to add visible labels or watermarks to PDF pages.
 
 Use this example when a page should display a rotated text stamp with custom styling.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [TextStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textstamp/) and configure its placement and text appearance.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) and configure its placement and text appearance.
 1. Add the stamp to the target page and save the document.
 
 ```java

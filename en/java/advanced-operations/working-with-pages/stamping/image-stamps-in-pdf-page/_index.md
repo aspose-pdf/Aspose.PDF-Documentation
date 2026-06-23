@@ -19,8 +19,8 @@ Aspose.PDF for Java supports image stamps as overlays and image-backed layout el
 
 Use this example when a page should display an image stamp with custom placement and opacity.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create an [ImageStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imagestamp/) and configure its appearance.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create an [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) and configure its appearance.
 1. Add the stamp to the page and save the document.
 
 ```java
@@ -45,8 +45,8 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 
 Use this example when you need to adjust the rendering quality of the image stamp.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create an [ImageStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imagestamp/) and set the quality value.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create an [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) and set the quality value.
 1. Add the stamp to the page and save the result.
 
 ```java
@@ -64,8 +64,8 @@ public static void addImageStampWithQualityControl(Path inputFile, Path imageFil
 
 Use this example when an image should serve as the background of a styled layout container.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and access the target page.
-1. Create a [FloatingBox](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/floatingbox/) with text and border settings.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and access the target page.
+1. Create a [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) with text and border settings.
 1. Set the background image, add the box to the page, and save the document.
 
 ```java

@@ -16,7 +16,7 @@ This page covers common property-setting patterns for tagged PDF structure eleme
 
 Use this example when a tagged structure element should expose accessibility metadata such as title, language, actual text, and alternative text.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and initialize the tagged content metadata.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and initialize the tagged content metadata.
 1. Create a section and header element in the structure tree.
 1. Set the header properties and save the document.
 
@@ -50,8 +50,8 @@ public static void setProperties(Path outputFile) {
 
 Use this example when you need to add a simple paragraph element to the tagged structure tree.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [ParagraphElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.logicalstructure/paragraphelement/) and set its text.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) and set its text.
 1. Append the paragraph to the root element and save the document.
 
 ```java
@@ -74,7 +74,7 @@ public static void setTextElements(Path outputFile) {
 
 This example creates multiple block-level structure elements, including headings of several levels and a paragraph.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Add header elements for the required levels and then create a paragraph element.
 1. Append the block elements to the root structure and save the document.
 
@@ -105,7 +105,7 @@ public static void setTextBlockElements(Path outputFile) {
 
 Use this example when block structure elements should contain nested inline spans.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Build header elements and append span children to them.
 1. Create a paragraph with multiple spans and save the document.
 
@@ -148,7 +148,7 @@ public static void setInlineElements(Path outputFile) {
 
 This example assigns custom tag names to paragraph and span elements in the tagged structure.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a section element.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a section element.
 1. Create paragraphs and spans, then set custom tag names for each element.
 1. Append the elements to the section and save the document.
 
@@ -187,7 +187,7 @@ public static void setTagName(Path outputFile) {
 
 Use this example when tagged link elements should include alternate descriptions, hyperlinks, and figure content with layout attributes.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add link elements inside paragraphs.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add link elements inside paragraphs.
 1. Configure hyperlink targets, alternate descriptions, and the linked figure element.
 1. Set the required layout attribute and save the document.
 
@@ -237,7 +237,7 @@ public static void setElements(Path imageFile, Path outputFile) {
 
 This example creates paragraph elements that combine plain text and nested span elements.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create paragraph elements and add span children with custom text.
 1. Append the paragraphs to the root element and save the document.
 
@@ -271,7 +271,7 @@ public static void addLinkElement(Path outputFile) {
 
 Use this example when note structure elements should be created with automatic or explicit IDs.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a paragraph element.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a paragraph element.
 1. Create note elements and set their text and IDs as needed.
 1. Append the notes to the paragraph and save the document.
 
@@ -308,7 +308,7 @@ public static void setNoteElement(Path outputFile) {
 
 This example assigns document-level metadata and then creates paragraphs with different language values.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and set the document title and language.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and set the document title and language.
 1. Add a header element and create paragraphs for each localized phrase.
 1. Save the multilingual tagged document.
 
@@ -337,7 +337,7 @@ public static void setLanguageAndTitle(Path outputFile) {
 
 This helper method creates a paragraph, assigns its language, and appends it to the root structure.
 
-1. Create a [ParagraphElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.logicalstructure/paragraphelement/).
+1. Create a [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
 1. Set the text and language for the element.
 1. Append the paragraph to the tagged content root element.
 

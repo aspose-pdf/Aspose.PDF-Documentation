@@ -19,8 +19,8 @@ To attach a file to a PDF, load the source document, create a `FileSpecification
 
 Use this example when an external file should be embedded into an existing PDF.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [FileSpecification](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/filespecification/) for the file you want to embed.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) for the file you want to embed.
 1. Add the file specification to the `EmbeddedFiles` collection and save the updated document.
 
 ```java

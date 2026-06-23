@@ -19,8 +19,8 @@ Use the page rotation API when you need to change orientation across one or more
 
 Use this example when every page in the document should be rotated clockwise.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Iterate through all [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) objects and set the rotation value.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterate through all [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) objects and set the rotation value.
 1. Save the updated PDF.
 
 ```java

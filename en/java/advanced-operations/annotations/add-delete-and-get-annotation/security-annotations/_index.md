@@ -19,8 +19,8 @@ Security annotation workflows in this section focus on preparing and applying re
 
 Use this example when matching text should be covered by redaction annotations before the redaction is permanently applied.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Search for the target text and create a [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) for each match.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Search for the target text and create a [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) for each match.
 1. Configure the redaction appearance and save the document.
 
 ```java
@@ -51,8 +51,8 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 
 This example permanently applies redaction annotations that already exist on the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`Redaction`.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
 1. Call `redact()` on each collected annotation and save the updated file.
 
 ```java
@@ -76,9 +76,9 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 
 Use this approach when the target content is identified by position rather than by matching text.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Detect the target rectangle on the page, for example from an image placement.
-1. Create a [RedactionAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/redactionannotation/) for that area and save the document.
+1. Create a [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) for that area and save the document.
 
 ```java
 public static void redactArea(Path inputFile, Path outputFile) {

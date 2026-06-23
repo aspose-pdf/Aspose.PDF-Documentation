@@ -19,7 +19,7 @@ Formatting in Aspose.PDF for Java includes viewer behavior, font embedding, and 
 
 Use this example to inspect the current viewer preferences stored in an existing PDF document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Read the required window and display properties from the document.
 1. Output the current settings for inspection or debugging.
 
@@ -44,9 +44,9 @@ public static void getDocumentWindow(Path inputFile) {
 
 This example updates how the PDF should be displayed when it is opened in a compatible viewer.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Set the required window, layout, and page-mode preferences.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void setDocumentWindow(Path inputFile, Path outputFile) {
@@ -70,9 +70,9 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 
 Use this approach when a document should carry its required fonts for more reliable rendering on other systems.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Enable standard font embedding and iterate through the fonts used by each [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Mark any non-embedded [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) objects for embedding.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enable standard font embedding and iterate through the fonts used by each [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Mark any non-embedded [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) objects for embedding.
 1. Save the updated document.
 
 ```java
@@ -95,9 +95,9 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 
 This example creates a new PDF and assigns an embedded font to the text content from the start.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Create the required [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textsegment/), and [TextState](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textstate/).
-1. Resolve the target [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) from the repository and mark it as embedded.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Create the required [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), and [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Resolve the target [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) from the repository and mark it as embedded.
 1. Add the text content to the page and save the output document.
 
 ```java
@@ -123,8 +123,8 @@ public static void embeddedFontsInNewDocument(Path outputFile) {
 
 Use this pattern when the saved document should fall back to a specific font during output generation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create [PdfSaveOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfsaveoptions/) and set the default font name.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) and set the default font name.
 1. Save the document with the configured save options.
 
 ```java
@@ -141,9 +141,9 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 
 This example lists every font detected in the document so you can audit font usage before exporting or updating the file.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Enumerate the fonts returned by the document font utilities.
-1. Output the name of each detected [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/).
+1. Output the name of each detected [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
 
 ```java
 public static void getAllFonts(Path inputFile) {
@@ -159,8 +159,8 @@ public static void getAllFonts(Path inputFile) {
 
 Use this approach when you want to reduce font payload while keeping embedded font data aligned with document usage.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Run font subsetting through the document font utilities with the required [FontSubsetStrategy](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fontsubsetstrategy/) values.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Run font subsetting through the document font utilities with the required [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) values.
 1. Save the optimized document.
 
 ```java
@@ -177,8 +177,8 @@ public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
 
 This example configures the initial zoom level that should be applied when the PDF is opened.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [GoToAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. Assign the action as the document open action and save the result.
 
 ```java
@@ -195,8 +195,8 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 
 Use this example to inspect whether a PDF already defines an explicit zoom level for its open action.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Check whether the open action is a [GoToAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Check whether the open action is a [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. Output the configured zoom value or report that no zoom is set.
 
 ```java

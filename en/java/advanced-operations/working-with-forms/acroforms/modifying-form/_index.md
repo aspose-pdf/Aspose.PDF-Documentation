@@ -19,7 +19,7 @@ Form maintenance often involves both field-level edits and cleanup of form-relat
 
 Use this example when Typewriter form content should be emptied without removing the form objects themselves.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through page form resources and locate Typewriter forms.
 1. Clear the absorbed text fragments and save the document.
 
@@ -45,7 +45,7 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 
 Use this example when a text field should accept only a limited number of characters.
 
-1. Create a [FormEditor](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/formeditor/) facade and bind the source PDF.
+1. Create a [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) facade and bind the source PDF.
 1. Set the maximum length for the target field.
 1. Save the updated document.
 
@@ -66,9 +66,9 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 
 Use this example when you need to inspect the current maximum length of a text field.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Access the target field from the form collection.
-1. Read the limit from the [TextBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textboxfield/) and output it.
+1. Read the limit from the [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) and output it.
 
 ```java
 public static void getFieldLimit(Path inputFile) {
@@ -85,8 +85,8 @@ public static void getFieldLimit(Path inputFile) {
 
 Use this example when an existing text field should use a different font or appearance.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the target [TextBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textboxfield/) and set a new default appearance.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the target [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) and set a new default appearance.
 1. Save the updated PDF.
 
 ```java
@@ -107,7 +107,7 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 
 Use this example when a specific field should be removed from the AcroForm.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Delete the target field from the form by its name.
 1. Save the updated document.
 

@@ -19,7 +19,7 @@ Shape annotations in this section cover geometric annotation types such as squar
 
 Use these examples when you need to place geometric annotations with custom colors, opacity, popup data, or point arrays.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create the required shape annotation and configure its rectangle, points, and visual properties.
 1. Add the annotation to the page and save the updated document.
 
@@ -113,9 +113,9 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 
 These examples inspect the page annotation collection and print the rectangles of geometric annotations by type.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the page annotations.
-1. Filter by the required [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/) value and print the rectangle.
+1. Filter by the required [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) value and print the rectangle.
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -169,7 +169,7 @@ public static void polylineAnnotationGet(Path inputFile) {
 
 Use these examples when shape annotations of a specific type should be removed from the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Collect annotations of the required geometric type.
 1. Delete the collected annotations and save the output file.
 
@@ -245,8 +245,8 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 
 This example creates a line annotation with arrow endings, border formatting, and a popup note.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [LineAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/lineannotation/) with start and end points.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) with start and end points.
 1. Configure the appearance, add the popup, and save the document.
 
 ```java
@@ -281,9 +281,9 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 
 This example reads line annotations and prints their start and end coordinates.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Iterate through the page annotations and select [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`Line`.
-1. Cast each match to [LineAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/lineannotation/) and print its coordinates.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterate through the page annotations and select [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Cast each match to [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) and print its coordinates.
 
 ```java
 public static void lineAnnotationsGet(Path inputFile) {
@@ -304,8 +304,8 @@ public static void lineAnnotationsGet(Path inputFile) {
 
 Use this approach when line annotations should be removed from the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. Delete the collected annotations and save the document.
 
 ```java

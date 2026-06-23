@@ -15,12 +15,12 @@ Abstract: This article shows how to add rectangle shapes to PDF documents using 
 ---
 ## Add a rectangle outline
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Create a [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
-1. Create the [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/rectangle/) shape and configure its geometry.
-1. Add the [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/rectangle/) to the [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container.
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Create a [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
+1. Create the [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) shape and configure its geometry.
+1. Add the [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) to the [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addRectangle(Path outputFile) {
@@ -51,11 +51,11 @@ The rectangle examples include:
 
 ## Control z-order of rectangles
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Set the required [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) size.
-1. Add the configured [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/rectangle/) shapes to the target page with the required z-order.
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Set the required [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) size.
+1. Add the configured [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) shapes to the target page with the required z-order.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void controlZOrderOfRectangle(Path outputFile) {

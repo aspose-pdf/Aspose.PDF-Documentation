@@ -16,7 +16,7 @@ Aspose.PDF for Java supports several common data-exchange formats for interactiv
 
 Use this example when form values are stored in an XML file and should be applied to a PDF form.
 
-1. Create a [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
+1. Create a [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
 1. Open the XML input stream and import the data into the form.
 1. Save the updated PDF document.
 
@@ -37,7 +37,7 @@ public static void importDataFromXml(Path inputFile, Path dataFile, Path outputF
 
 Use this example when you need to store current AcroForm values in XML format.
 
-1. Create a [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
+1. Create a [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
 1. Open the output stream for the XML file.
 1. Export the form data to XML.
 
@@ -57,7 +57,7 @@ public static void exportDataToXml(Path inputFile, Path outputFile) throws Excep
 
 Use this example when form values arrive in the FDF interchange format.
 
-1. Create a [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
+1. Create a [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
 1. Open the FDF input stream and import the data.
 1. Save the filled PDF document.
 
@@ -78,7 +78,7 @@ public static void importDataFromFdf(Path inputFile, Path dataFile, Path outputF
 
 Use this example when PDF form values should be shared as an FDF file.
 
-1. Create a [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
+1. Create a [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
 1. Open the output stream for the FDF file.
 1. Export the form data in FDF format.
 
@@ -98,7 +98,7 @@ public static void exportDataToFdf(Path inputFile, Path outputFile) throws Excep
 
 Use this example when form data is provided in XFDF format and must be merged into a PDF.
 
-1. Create a [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
+1. Create a [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
 1. Open the XFDF input stream and import the values.
 1. Save the updated PDF document.
 
@@ -119,7 +119,7 @@ public static void importDataFromXfdf(Path inputFile, Path dataFile, Path output
 
 Use this example when you need an XML-based interchange file for AcroForm values.
 
-1. Create a [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
+1. Create a [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade and bind the source PDF.
 1. Open the output stream for the XFDF file.
 1. Export the current form values to XFDF.
 
@@ -139,7 +139,7 @@ public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exce
 
 Use this example when form values should be exported to a lightweight JSON representation.
 
-1. Open the PDF with the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade.
+1. Open the PDF with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
 1. Iterate through field names and serialize their values into JSON text.
 1. Write the JSON content to the target file.
 

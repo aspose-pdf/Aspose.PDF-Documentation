@@ -19,8 +19,8 @@ Bates numbering artifacts are useful in legal, archival, and document-control wo
 
 Use this example when you want to apply Bates numbering through the dedicated page collection helper.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add any extra pages required by the sample.
-1. Create the [BatesNArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/batesnartifact/) configuration.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add any extra pages required by the sample.
+1. Create the [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) configuration.
 1. Apply Bates numbering to the page collection and save the output file.
 
 ```java
@@ -41,8 +41,8 @@ public static void addBatesNArtifact(Path inputFile, Path outputFile) {
 
 This example applies Bates numbering by passing the Bates artifact through the generic pagination API.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add the required pages.
-1. Create the [BatesNArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/batesnartifact/) and add it to a pagination artifact list.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add the required pages.
+1. Create the [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) and add it to a pagination artifact list.
 1. Apply the pagination artifacts to the page collection and save the document.
 
 ```java
@@ -65,7 +65,7 @@ public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) 
 
 Use this approach when existing Bates numbering artifacts should be removed from the document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Call the page collection helper that deletes Bates numbering.
 1. Save the cleaned output file.
 

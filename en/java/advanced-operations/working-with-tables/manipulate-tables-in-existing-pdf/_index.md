@@ -19,7 +19,7 @@ Use `TableAbsorber` when you need to locate existing tables and update their con
 
 Use this example when the text in a detected cell should be updated without rebuilding the whole table.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and visit the page with [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and visit the page with [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Validate that the target table and cell text fragments exist.
 1. Replace the cell text and save the updated document.
 
@@ -47,8 +47,8 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 
 Use this example when the original table should be fully replaced by a newly constructed one.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and detect tables on the page.
-1. Create a new [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) with the desired structure.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and detect tables on the page.
+1. Create a new [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) with the desired structure.
 1. Replace the absorbed table and save the output PDF.
 
 ```java

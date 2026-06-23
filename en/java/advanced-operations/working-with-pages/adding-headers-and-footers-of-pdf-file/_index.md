@@ -19,7 +19,7 @@ Aspose.PDF for Java lets you assign `HeaderFooter` objects to each page and popu
 
 Use this example when you need simple text content at the top and bottom of each page.
 
-1. Create [HeaderFooter](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/headerfooter/) objects and add text fragments.
+1. Create [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objects and add text fragments.
 1. Configure margins for the header and footer.
 1. Apply them to each page of the source PDF and save the result.
 
@@ -51,7 +51,7 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 
 Use this example when the header or footer should show the current page number and total page count.
 
-1. Create [HeaderFooter](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/headerfooter/) objects with page numbering placeholders.
+1. Create [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objects with page numbering placeholders.
 1. Configure margins for both objects.
 1. Apply them to each page and save the updated PDF.
 
@@ -83,7 +83,7 @@ public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path out
 
 Use this example when header and footer content should include inline HTML formatting.
 
-1. Create [HeaderFooter](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/headerfooter/) objects and add [HtmlFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlfragment/) content.
+1. Create [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objects and add [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) content.
 1. Configure margins for placement.
 1. Assign the header and footer to each page and save the document.
 
@@ -115,7 +115,7 @@ public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
 
 Use this example when the header and footer should display an image on every page.
 
-1. Create [Image](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/image/) objects and add them to header and footer containers.
+1. Create [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) objects and add them to header and footer containers.
 1. Configure margins and assign the containers to each page.
 1. Save the updated PDF.
 
@@ -150,7 +150,7 @@ public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Pat
 Use this example when header and footer content should use table layout and text styling.
 
 1. Create the required text styles and table objects.
-1. Add the tables to [HeaderFooter](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/headerfooter/) containers.
+1. Add the tables to [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) containers.
 1. Apply the header and footer to each page and save the document.
 
 ```java
@@ -195,7 +195,7 @@ public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
 Use this example when the header and footer should render TeX or LaTeX content.
 
 1. Open the source PDF and determine the total page count.
-1. Create [TeXFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/texfragment/) content for the header and footer of each page.
+1. Create [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) content for the header and footer of each page.
 1. Assign the content and save the document.
 
 ```java

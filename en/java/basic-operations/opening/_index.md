@@ -19,9 +19,9 @@ Aspose.PDF for Java supports several ways to load an existing PDF document depen
 
 You can open a PDF document:
 
-1. Open a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) directly from a file path.
-1. Open a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) from an `InputStream`.
-1. Open an encrypted [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) by supplying the password.
+1. Open a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directly from a file path.
+1. Open a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) from an `InputStream`.
+1. Open an encrypted [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) by supplying the password.
 
 ## Open document from file
 

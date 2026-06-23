@@ -19,7 +19,7 @@ Watermark artifacts let you place persistent visual markings on a page without m
 
 Use this example when you need to inspect existing watermark artifacts and read their text or position.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the artifact collection of the target page.
 1. Filter watermark pagination artifacts and print their text and rectangles.
 
@@ -40,8 +40,8 @@ public static void extractWatermarkFromPdf(Path inputFile) {
 
 Use this example when the page should display a centered text watermark with custom rotation, opacity, and background placement.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [WatermarkArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/watermarkartifact/) and configure its text state and placement settings.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) and configure its text state and placement settings.
 1. Add the watermark to the page and save the output file.
 
 ```java
@@ -71,7 +71,7 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 
 Use this approach when existing watermark artifacts should be removed from the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the page artifact collection in reverse order.
 1. Delete pagination artifacts whose subtype is watermark, then save the document.
 

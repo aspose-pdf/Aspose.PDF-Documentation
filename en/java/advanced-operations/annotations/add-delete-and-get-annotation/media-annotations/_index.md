@@ -19,8 +19,8 @@ Media annotations in PDF typically cover embedded or linked multimedia content s
 
 Use this example when a PDF page should host embedded video content with a custom player, poster image, and skin.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [RichMediaAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/richmediaannotation/), configure the player assets, poster, and content stream.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), configure the player assets, poster, and content stream.
 1. Add the annotation to the page and save the output document.
 
 ```java
@@ -67,8 +67,8 @@ public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throw
 
 This example removes existing rich media annotations from a page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`RichMedia`.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
 1. Delete the collected annotations and save the updated document.
 
 ```java
@@ -94,7 +94,7 @@ public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
 
 Use this example to inspect screen, sound, and rich media annotations already present on the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Define the set of multimedia annotation types you want to detect.
 1. Iterate through page annotations and print the type and rectangle for each match.
 
@@ -119,9 +119,9 @@ public static void multimediaAnnotationsGet(Path inputFile) {
 
 This example adds an interactive 3D model view with predefined perspectives and rendering options.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Load the model into [PDF3DContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dcontent/) and configure a [PDF3DArtwork](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dartwork/).
-1. Create the [PDF3DAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdf3dannotation/), add it to a page, and save the document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Load the model into [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) and configure a [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
+1. Create the [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), add it to a page, and save the document.
 
 ```java
 public static void annotation3dAdd(Path modelFile, Path outputFile) {
@@ -168,8 +168,8 @@ public static void annotation3dAdd(Path modelFile, Path outputFile) {
 
 Use this example when a page should reference a media file through a screen playback region.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [ScreenAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/screenannotation/) for the media file and target rectangle.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) for the media file and target rectangle.
 1. Add the annotation to the page and save the document.
 
 ```java
@@ -192,8 +192,8 @@ public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile)
 
 This example places a sound annotation on the page and associates it with a WAV file.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [SoundAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/soundannotation/) for the target audio file and configure its metadata.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) for the target audio file and configure its metadata.
 1. Add the annotation to the page and save the output document.
 
 ```java

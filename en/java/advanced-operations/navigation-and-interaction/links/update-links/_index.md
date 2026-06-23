@@ -19,7 +19,7 @@ Existing links can be edited by finding the link annotation on a page and updati
 
 Use this example when the text area covered by a link annotation should be recolored.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Find link annotations and build a text search rectangle from each annotation area.
 1. Recolor the matched text fragments and save the document.
 
@@ -51,8 +51,8 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 
 Use this example when the visible color of existing link annotations should be changed.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Iterate through the page annotations and filter for [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) objects.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterate through the page annotations and filter for [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) objects.
 1. Update the link annotation color and save the document.
 
 ```java
@@ -74,8 +74,8 @@ public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
 
 Use this example when an existing web link should point to a new URI.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Find link annotations whose action is a [GoToURIAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotouriaction/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Find link annotations whose action is a [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Replace the URI and save the updated document.
 
 ```java

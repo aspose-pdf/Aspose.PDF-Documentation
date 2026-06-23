@@ -19,8 +19,8 @@ These examples remove form resources from a page rather than just changing field
 
 Use this example when every form resource on a selected page should be removed in one operation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the [XFormCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xformcollection/) for the target page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) for the target page.
 1. Clear the collection and save the updated document.
 
 ```java
@@ -37,10 +37,10 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 
 Use this example when only selected form resources, such as Typewriter forms, should be deleted.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the [XFormCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xformcollection/) for the target page.
-1. Filter the [XForm](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xform/) resources you want to remove and delete them from the collection.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) for the target page.
+1. Filter the [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) resources you want to remove and delete them from the collection.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void removeSpecifiedForm(Path inputFile, int pageNum, Path outputFile) {

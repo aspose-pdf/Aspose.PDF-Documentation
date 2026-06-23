@@ -19,7 +19,7 @@ Aspose.PDF for Java can convert standards-compliant PDF variants back to a regul
 
 Use this example when an archival PDF/A document should be downgraded to a standard PDF.
 
-1. Open the source PDF/A file in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Open the source PDF/A file in a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
 1. Call `removePdfaCompliance()` to detach the archival compliance profile from the loaded document.
 1. Save the resulting standard PDF file without the PDF/A restriction set.
 
@@ -36,7 +36,7 @@ public static void convertPdfAToPdf(Path inputFile, Path outputFile) {
 
 Use this example when an accessible PDF/UA document should be converted back to a standard PDF.
 
-1. Open the source PDF/UA file in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
+1. Open the source PDF/UA file in a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
 1. Call `removePdfUaCompliance()` to remove the accessibility compliance profile from the document metadata and structure requirements.
 1. Save the resulting PDF document as a regular PDF file.
 

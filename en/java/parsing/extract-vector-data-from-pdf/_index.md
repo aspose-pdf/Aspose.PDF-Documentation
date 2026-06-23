@@ -14,9 +14,9 @@ sitemap:
 
 Use `GraphicsAbsorber` to inspect vector graphic elements on a page and write their basic geometry to a text file.
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to collect vector graphics operations.
-1. Iterate through the extracted [GraphicElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicelement/) objects and read their rectangle, position, and operator collections.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to collect vector graphics operations.
+1. Iterate through the extracted [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) objects and read their rectangle, position, and operator collections.
 1. Build the output text with geometry and operator-count details for each element.
 1. Write the extracted vector data to the output file.
 
@@ -43,8 +43,8 @@ public static void extractGraphicsElements(Path inputFile, Path outputFile) thro
 
 ## Save page vector graphics to SVG
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Get the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) from the document.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Get the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) from the document.
 1. Call `page.trySaveVectorGraphics(outputFile.toString())` to export the vector graphics content of that page directly to SVG.
 
 ```java
@@ -58,10 +58,10 @@ public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
 
 ## Save each extracted element to a separate SVG
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Create the output directory for the extracted subpaths before writing any files.
-1. Iterate through the extracted [GraphicElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicelement/) objects and call `saveToSvg(...)` for each element.
+1. Iterate through the extracted [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) objects and call `saveToSvg(...)` for each element.
 1. Save every extracted element to a separate SVG file.
 
 ```java
@@ -83,10 +83,10 @@ public static void extractSubpathsToSvgs(Path inputFile, Path outputDir) throws 
 
 ## Combine extracted elements into a single SVG
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Create the SVG wrapper markup that will contain the combined vector fragments.
-1. Iterate through the extracted [GraphicElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicelement/) objects and append each generated SVG fragment.
+1. Iterate through the extracted [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) objects and append each generated SVG fragment.
 1. Write the combined SVG output to the target file.
 
 ```java
@@ -108,10 +108,10 @@ public static void extractListOfElementsToSingleImage(Path inputFile, Path outpu
 
 ## Extract a single vector element
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Get the required [GraphicElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/graphicelement/) from the extracted elements collection.
-1. Check whether the selected element is an [XFormPlacement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.vector/xformplacement/) and descend into its nested elements when needed.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Get the required [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) from the extracted elements collection.
+1. Check whether the selected element is an [XFormPlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) and descend into its nested elements when needed.
 1. Save the selected vector element to the output SVG file.
 
 ```java

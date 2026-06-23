@@ -19,7 +19,7 @@ You can inspect PDF links by iterating over page annotations and filtering for `
 
 Use this example when you need the location and page information for link annotations on a page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the page annotations and filter for link annotations.
 1. Read the page index and rectangle for each matching link.
 
@@ -41,8 +41,8 @@ public static void extractLinkAnnotation(Path inputFile) {
 
 Use this example when you need to read the target URIs from web link annotations.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Find [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) objects whose action is a [GoToURIAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotouriaction/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Find [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) objects whose action is a [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Print the page index and URI target for each hyperlink.
 
 ```java

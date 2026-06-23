@@ -19,12 +19,12 @@ Aspose.PDF for Java provides several APIs for securing PDF files with passwords 
 
 The examples in `ProtectDocumentExamples.java` demonstrate how to:
 
-1. Apply encryption to a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) with user and owner passwords.
-1. Restrict permissions with [DocumentPrivilege](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/documentprivilege/).
-1. Choose a [CryptoAlgorithm](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/cryptoalgorithm/) for the protected [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Decrypt a protected [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Change existing passwords on the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Test candidate passwords with [PdfFileInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffileinfo/) and [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Apply encryption to a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) with user and owner passwords.
+1. Restrict permissions with [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
+1. Choose a [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) for the protected [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Decrypt a protected [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Change existing passwords on the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Test candidate passwords with [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) and [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ## Encrypt a PDF with restricted privileges
 

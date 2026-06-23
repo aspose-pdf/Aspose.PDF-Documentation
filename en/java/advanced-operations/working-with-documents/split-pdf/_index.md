@@ -19,10 +19,10 @@ Aspose.PDF for Java supports several splitting patterns beyond one-page-per-file
 
 Use this approach when each source page should become a separate output document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) for each [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) you want to export.
-1. Add the selected [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the new document.
-1. Save each output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) for each [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) you want to export.
+1. Add the selected [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the new document.
+1. Save each output PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void splitDocuments(Path inputFile, Path outputDir) {
@@ -41,8 +41,8 @@ public static void splitDocuments(Path inputFile, Path outputDir) {
 
 This example divides the source document into two sequential output files based on the midpoint.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Calculate the midpoint of the available [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) collection.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Calculate the midpoint of the available [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) collection.
 1. Copy the first half of the pages into one output document and the remaining pages into another.
 1. Save both result documents.
 
@@ -73,8 +73,8 @@ public static void splitDocumentsIntoTwoParts(Path inputFile, Path outputDir) {
 
 Use this pattern when every output file should contain the same number of pages, except possibly the last part.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Loop through the [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) collection in groups of `pagesPerPart`.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Loop through the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) collection in groups of `pagesPerPart`.
 1. Create a new output document for each group and copy the calculated page range into it.
 1. Save each part with a generated file name.
 
@@ -102,8 +102,8 @@ public static void splitDocumentsEveryNPages(Path inputFile, Path outputDir, int
 
 This example lets you define explicit start and end pages for each output document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Define the required [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) ranges in an array or another collection.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Define the required [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ranges in an array or another collection.
 1. Validate each range against the source page count and copy the matching pages into a new document.
 1. Save each range-based output file.
 
@@ -141,8 +141,8 @@ public static void splitDocumentsByPageRanges(Path inputFile, Path outputDir) {
 
 Use this approach when the cover page should be exported separately from the rest of the document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and confirm that it contains pages.
-1. Create one output document for the first [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and confirm that it contains pages.
+1. Create one output document for the first [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Create another document for the remaining page range when more than one page is available.
 1. Save both results.
 
@@ -177,8 +177,8 @@ public static void splitDocumentsFirstPageAndRest(Path inputFile, Path outputDir
 
 This example separates the final page from the rest of the document, which is useful for extracting summary or signature pages.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and check that it is not empty.
-1. Copy the last [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) into a new output document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and check that it is not empty.
+1. Copy the last [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) into a new output document.
 1. Remove that page from the original document when earlier pages still remain.
 1. Save the last page and the remaining pages as separate files.
 
@@ -209,9 +209,9 @@ public static void splitDocumentsLastPageAndRest(Path inputFile, Path outputDir)
 
 Use this pattern when the document should be divided into three consecutive sections of roughly equal size.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and determine the total number of pages.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and determine the total number of pages.
 1. Calculate the approximate size of each output part.
-1. Create up to three documents and copy the matching [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) ranges.
+1. Create up to three documents and copy the matching [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ranges.
 1. Save each generated part.
 
 ```java
@@ -245,8 +245,8 @@ public static void splitDocumentsIntoThreeParts(Path inputFile, Path outputDir) 
 
 This example shows how to build output files from non-sequential page sets instead of continuous ranges.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Define custom groups of [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) numbers.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Define custom groups of [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) numbers.
 1. Create a new output document for each group and add only the valid pages from that group.
 1. Save each non-empty group document.
 
@@ -280,8 +280,8 @@ public static void splitDocumentsCustomPageGroups(Path inputFile, Path outputDir
 
 Use this version when the output names should remain lexically sortable, for example in automated pipelines.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create one output document for each [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create one output document for each [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Save each file with a zero-padded page number.
 
 ```java
@@ -301,8 +301,8 @@ public static void splitDocumentsWithStableFilenames(Path inputFile, Path output
 
 This example creates two outputs by separating pages according to their page number parity.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create one output document for odd [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) numbers and another for even page numbers.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create one output document for odd [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) numbers and another for even page numbers.
 1. Iterate through the source pages with the required increment for each output document.
 1. Save the odd-page and even-page results separately.
 

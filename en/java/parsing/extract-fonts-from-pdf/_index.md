@@ -15,9 +15,9 @@ Abstract: This article explains how to inspect the fonts used in a PDF document 
 ---
 Use font extraction when you need to audit document typography, inspect embedded resources, or verify font usage before conversion or archival workflows.
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Call `document.getFontUtilities().getAllFonts()` to collect every [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) resource referenced by the document.
-1. Iterate through the extracted [Font](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/font/) objects and read each font name from the font metadata.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Call `document.getFontUtilities().getAllFonts()` to collect every [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) resource referenced by the document.
+1. Iterate through the extracted [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) objects and read each font name from the font metadata.
 1. Print the font names so the document typography can be audited or exported.
 
 ```java

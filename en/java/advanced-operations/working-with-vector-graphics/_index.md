@@ -19,9 +19,9 @@ Aspose.PDF for Java exposes vector content through `GraphicsAbsorber` and `Graph
 
 Use this example when you need to enumerate vector elements and inspect their page, position, and operator count.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/vector/graphicsabsorber/) and visit the target page.
-1. Iterate through the absorbed [GraphicElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/vector/graphicelement/) objects and output their properties.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) and visit the target page.
+1. Iterate through the absorbed [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) objects and output their properties.
 
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {
@@ -47,8 +47,8 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 
 Use this example when all detected vector elements should be shifted to a new position.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Visit the target page with [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/vector/graphicsabsorber/) and temporarily suppress updates.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Visit the target page with [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) and temporarily suppress updates.
 1. Change the position of each absorbed element, resume updates, and save the document.
 
 ```java
@@ -77,8 +77,8 @@ public static void moveGraphics(Path inputFile, Path outputFile) {
 
 Use this example when vector elements inside a specific rectangle should be deleted one by one.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Visit the page with [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/vector/graphicsabsorber/) and define the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Visit the page with [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) and define the target [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Remove the matching elements, resume updates, and save the document.
 
 ```java
@@ -109,8 +109,8 @@ public static void removeGraphicsMethod1(Path inputFile, Path outputFile) {
 
 Use this example when matching vector elements should be collected first and then removed in one page operation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Visit the page with [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/vector/graphicsabsorber/) and collect the matching elements.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Visit the page with [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) and collect the matching elements.
 1. Delete the collected graphics from the page contents and save the updated document.
 
 ```java
@@ -143,9 +143,9 @@ public static void removeGraphicsMethod2(Path inputFile, Path outputFile) {
 
 Use this example when each absorbed vector element should be added individually to a new page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a destination page.
-1. Visit the source page with [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/vector/graphicsabsorber/).
-1. Add each [GraphicElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/vector/graphicelement/) to the destination page and save the document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a destination page.
+1. Visit the source page with [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
+1. Add each [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) to the destination page and save the document.
 
 ```java
 public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
@@ -173,8 +173,8 @@ public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
 
 Use this example when the entire absorbed vector graphic collection should be copied to a new page in one call.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a destination page.
-1. Visit the source page with [GraphicsAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/vector/graphicsabsorber/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a destination page.
+1. Visit the source page with [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
 1. Add the absorbed graphics collection to the destination page and save the document.
 
 ```java

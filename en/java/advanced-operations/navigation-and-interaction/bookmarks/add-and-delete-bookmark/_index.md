@@ -19,8 +19,8 @@ Use the document outline collection to manage bookmarks programmatically.
 
 Use this example when the document should include a single top-level outline entry.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create an [OutlineItemCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/outlineitemcollection/) and configure its title, style, and action.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create an [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) and configure its title, style, and action.
 1. Add the bookmark to the document outlines and save the file.
 
 ```java
@@ -42,8 +42,8 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 
 This example creates a parent bookmark and nests a child bookmark under it.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create parent and child [OutlineItemCollection](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/outlineitemcollection/) objects.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create parent and child [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) objects.
 1. Add the child to the parent, add the parent to the outline collection, and save the document.
 
 ```java
@@ -70,7 +70,7 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 
 Use this approach when the entire outline collection should be removed from the document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Delete the full outlines collection.
 1. Save the cleaned output file.
 
@@ -87,7 +87,7 @@ public static void deleteBookmarks(Path inputFile, Path outputFile) {
 
 Use this example when one named bookmark should be removed without clearing the whole outline tree.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Delete the bookmark by title from the outlines collection.
 1. Save the updated document.
 

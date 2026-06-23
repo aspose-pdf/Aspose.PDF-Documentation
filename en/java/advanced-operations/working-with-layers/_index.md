@@ -17,10 +17,10 @@ Aspose.PDF for Java exposes PDF layers through the `Layer` API on each page. You
 
 ## Add layers to a PDF page
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Create and configure the required [Layer](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/layer/) objects on the page.
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Create and configure the required [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) objects on the page.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addLayers(Path outputFile) {
@@ -43,10 +43,10 @@ The full example creates three separate layers with red, green, and blue line co
 
 ## Lock a layer
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and get its [Layer](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/layer/) collection.
-1. Lock the target [Layer](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/layer/).
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and get its [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) collection.
+1. Lock the target [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void lockLayer(Path inputFile, Path outputFile) {
