@@ -1,48 +1,49 @@
 ---
-title: Security Setting
+title: Configuração de Segurança
+linktitle: Configuração de Segurança
 type: docs
 weight: 30
 url: /pt/reportingservices/security-setting/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-A segurança sempre foi a questão mais importante em todos os campos, seja a proteção de uma rede ou de um documento PDF. Documentos são protegidos por várias razões possíveis: o autor do documento pode querer manter o conteúdo do documento seguro e não permitir que outros o alterem, etc.
+A segurança sempre foi a questão mais importante em todos os campos, seja na proteção de uma rede ou de um documento PDF. Os documentos são protegidos por muitos motivos possíveis: o autor do documento pode querer manter o conteúdo do documento seguro e não querer permitir que outros o alterem, etc.
 
-O Aspose.Pdf para Reporting Services tem cuidado com esses aspectos de segurança, fornecendo esses recursos para desenvolvedores que podem ser úteis para proteger seus documentos PDF. Portanto, ele contém vários parâmetros que permitem aos desenvolvedores aplicar diferentes medidas de segurança aos documentos PDF.
+Aspose.Pdf for Reporting Services tem se preocupado muito com esses aspectos de segurança, oferecendo esses recursos aos desenvolvedores que podem ser úteis para proteger seus documentos PDF. Portanto, ele contém diversos parâmetros que permitem aos desenvolvedores aplicar diferentes medidas de segurança aos documentos PDF.
 
-Uma dessas medidas é proteger o documento PDF com senha durante a criptografia. Você também pode restringir ou permitir a modificação de conteúdos, copiar o conteúdo, impressão do documento ou permitir/desabilitar o preenchimento de formulários. Essas funcionalidades atualmente não são suportadas pelo Exportador PDF padrão do SQL Reporting Services, mas você pode implementar essas funcionalidades usando o Aspose.Pdf para Reporting Services. Basta adicionar os parâmetros de segurança correspondentes a um relatório ou a um arquivo de configuração do servidor de relatórios, e você poderá criar documentos PDF seguros com privilégios limitados.
+Uma dessas medidas é proteger o documento PDF com senha durante a criptografia. Você também pode restringir ou permitir a modificação do conteúdo, a cópia do conteúdo, a impressão do documento ou habilitar/desabilitar o preenchimento de formulários. Esses recursos no momento não são suportados pelo Exportador PDF padrão do SQL Reporting Services, mas você pode implementá-los usando o Aspose.Pdf for Reporting Services. Basta adicionar os parâmetros de segurança correspondentes a um relatório ou ao arquivo de configuração do servidor de relatórios, e você poderá criar documentos PDF seguros com privilégios limitados.
 
-Atualmente, o renderizador Aspose.Pdf para Reporting Services suporta os seguintes atributos de segurança:
+Atualmente, o renderizador Aspose.Pdf for Reporting Services suporta os seguintes atributos de segurança:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Nome do Parâmetro**: User Password  
-**Tipo de Dado**: String  
+**Nome do parâmetro**: Senha do Usuário  
+**Tipo de data**: String  
 **Valores suportados**: Qualquer texto simples
 
-**Nome do Parâmetro**: Master Password  
-**Tipo de Dado**: String  
+**Nome do parâmetro**: Senha mestre  
+**Tipo de data**: String  
 **Valores suportados**: Qualquer texto simples 
 
 **Nome do Parâmetro**: IsCopyingAllowed  
-**Tipo de Dado**: Boolean  
-**Valores suportados**: True, False (padrão)  
+**Tipo de Dados**: Boolean  
+**Valores suportados**: True, False (default)  
 
 **Nome do Parâmetro**: IsPrintingAllowed  
-**Tipo de Dado**: Boolean  
+**Tipo de Dados**: Boolean  
+**Valores suportados**: True, False (default)  
 
-**Valores suportados**: True, False (padrão)  
 **Nome do Parâmetro**: IsContentsModifyingAllowed  
-**Tipo de Dado**: Booleano  
-**Valores suportados**: True, False (padrão)  
+**Tipo de Dados**: Boolean  
+**Valores suportados**: True, False (default)  
 
 **Nome do Parâmetro**: IsFormFillingAllowed  
-**Tipo de Dado**: Booleano  
-**Valores suportados**: True, False (padrão)  
+**Tipo de Dados**: Boolean  
+**Valores suportados**: True, False (default)  
 
 **Exemplo**
 
@@ -62,3 +63,4 @@ Atualmente, o renderizador Aspose.Pdf para Reporting Services suporta os seguint
 {{< /highlight >}}
 
 {{% /alert %}}
+

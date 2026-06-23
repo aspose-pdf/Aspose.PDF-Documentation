@@ -1,50 +1,50 @@
 ---
-title: Configurando o SharePoint no Servidor de Serviços de Relatório
+title: Configurando o SharePoint no servidor Reporting Services
+linktitle: Configurando o SharePoint no servidor Reporting Services
 type: docs
 weight: 30
 url: /pt/reportingservices/setting-up-sharepoint-on-reporting-services-server/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Agora precisamos executar etapas semelhantes às que fizemos para o WFE do SharePoint. A primeira coisa é passar pela instalação dos Pré-requisitos e, uma vez concluída, iniciar a configuração do SharePoint.
+Agora precisamos executar etapas semelhantes às que fizemos para o SharePoint WFE. A primeira coisa é passar pela instalação dos pré-requisitos do uisites e, quando isso terminar, iniciar a configuração do SharePoint.
 
 {{% /alert %}}
 
-Para a configuração, escolho Server Farm e uma instalação completa para corresponder à minha caixa do SharePoint, pois não quero uma instalação autônoma para o SharePoint.
+Para a configuração, escolho Farm de Servidores e uma instalação completa para corresponder à minha SharePoint Box, pois não quero uma instalação standalone para o SharePoint.
 
 ## Configuração do SharePoint
 
 {{% alert color="primary" %}}
 
-**No Assistente de Configuração do SharePoint, queremos nos conectar a uma farm existente.**
+**No Assistente de Configuração do SharePoint, queremos conectar a uma farm existente.**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_1.png)
 
-**Imagem1:- Assistente de configuração do SharePoint**
+**Image1:- Assistente de configuração do SharePoint**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Em seguida, apontaremos para o banco de dados SharePoint_Config que nossa farm está usando. 
-
-**Se você não sabe onde está, pode descobrir através do Central Admin em Configurações do Sistema -> Gerenciar Servidores nesta fazenda.**
+**Em seguida, apontaremos para o banco de dados SharePoint_Config que nossa fazenda está usando. Se você não souber onde ele está, pode descobrir através do Central Admin em Configurações do Sistema -> Gerenciar Servidores nesta fazenda.**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_2.png)
 
-**Imagem2:- Especificar configurações de configuração do banco de dados**
+**Image2:- Especificar configurações de banco de dados**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_3.png)
 
-**Imagem3:- Assistente de configuração do SharePoint**
+**Image3:- Assistente de configuração do SharePoint**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Uma vez que o assistente esteja concluído, isso é tudo o que precisamos fazer na Caixa do Servidor de Relatórios por enquanto. Voltando para a URL do ReportServer, veremos outro erro, mas isso é porque não o configuramos através do Administrador Central.**
+**Uma vez que o assistente terminou, isso é tudo que precisamos fazer na caixa do Report Server por enquanto. Voltando para a URL do ReportServer, veremos outro erro, mas isso ocorre porque ainda não o configuramos através do Central Administrator.**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_4.png)
 
-**Imagem4:- Erro do servidor de relatórios**
+**Image4:- Erro do servidor de relatório**
 {{% /alert %}}
+
