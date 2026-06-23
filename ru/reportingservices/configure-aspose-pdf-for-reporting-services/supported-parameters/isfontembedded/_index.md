@@ -1,14 +1,15 @@
 ---
 title: IsFontEmbedded
+linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /ru/reportingservices/isfontembedded/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Дизайнер RS не поддерживает встроенный шрифт для текста; с помощью Aspose.PDF для Reporting Services вы можете легко встроить информацию о шрифте в ваш PDF-документ.
+RS Designer не поддерживает встроенный шрифт для текста; с Aspose.PDF for Reporting Services вы можете легко внедрять информацию о шрифте в ваш PDF‑документ.
 
 {{% /alert %}}
 
@@ -32,3 +33,4 @@ lastmod: "2021-06-05"
 {{< /highlight >}}
 
 {{% /alert %}}
+

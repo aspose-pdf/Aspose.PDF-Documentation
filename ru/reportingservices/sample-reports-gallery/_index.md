@@ -1,35 +1,38 @@
 ---
-title: Sample Reports Gallery
+title: Галерея образцов отчетов
+linktitle: Галерея образцов отчетов
 type: docs
 weight: 40
 url: /ru/reportingservices/sample-reports-gallery/
-lastmod: "2024-05-05"
+description: Исследуйте образцы отчетов, сгенерированных с помощью Aspose.PDF for Reporting Services. Посмотрите, как ваши отчёты SSRS могут преобразоваться в полированные PDF‑выводы.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Эта галерея демонстрирует PDF отчеты, экспортированные с помощью Aspose.Pdf для Reporting Services.
+Эта галерея демонстрирует PDF‑отчёты, экспортированные с помощью Aspose.Pdf for Reporting Services.
 
 {{% /alert %}}
 
-Большинство отчетов, показанных здесь, взяты из базы данных Adventure Works. Adventure Works - это пример базы данных для Microsoft SQL Server, доступной для загрузки от Microsoft [здесь](http://www.microsoft.com/downloads/details.aspx?familyid=E719ECF7-9F46-4312-AF89-6AD8702E4E6E&displaylang=en).
+Большинство отчетов, представленных здесь, берутся из базы данных Adventure Works. Adventure Works — это пример базы данных для Microsoft SQL Server, доступный для загрузки с сайта Microsoft [здесь](http://www.microsoft.com/downloads/details.aspx?familyid=E719ECF7-9F46-4312-AF89-6AD8702E4E6E&displaylang=en).
 
-## Продажи компании
+## Продажи Компании
 
-![Отчет о продажах компании в PDF](sample-reports-gallery_1.png)
+![Отчет о продажах Компании в PDF](sample-reports-gallery_1.png)
 
-## Сводка продаж сотрудников
+## Сводка Продаж Сотрудников
 
-![Сводный отчет о продажах сотрудников в PDF](sample-reports-gallery_2.png)
+![Отчет о сводке продаж сотрудников в PDF](sample-reports-gallery_2.png)
 
-## Каталог продукции
+## Каталог Продукции
 
-![Отчет о каталоге продукции в PDF](sample-reports-gallery_3.png)
+![Отчет каталога продукции в PDF](sample-reports-gallery_3.png)
 
-## Продажи по линиям продукции
+## Продажи продуктовой линейки
 
-![Отчет о продажах по линиям продукции в PDF](sample-reports-gallery_4.png)
+![Отчет о продажах продуктовой линейки в PDF](sample-reports-gallery_4.png)
 
-## Детализация заказа на продажу
+## Детали заказа продажи
 
-![Отчет о детализации заказа на продажу в PDF](sample-reports-gallery_5.png)
+![Отчет о деталях заказа продажи в PDF](sample-reports-gallery_5.png)
+

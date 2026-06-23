@@ -1,29 +1,30 @@
 ---
-title: Сноска Конечная сноска
+title: Сноска Конец сноски
+linktitle: Сноска Конец сноски
 type: docs
 weight: 30
 url: /ru/reportingservices/footnote-endnote/
-lastmod: "2021-06-05"
+description: Добавьте сноски и конечные сноски в ваши PDF‑отчёты с помощью Aspose.PDF for Reporting Services. Предоставьте детальные ссылки на документы.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Конструктор отчетов не может установить сноску или конечную сноску для текстовых полей. С Aspose.Pdf для Reporting Services вы можете легко сделать это, добавив пользовательские свойства.
+Report Builder не может установить сноску или конец сноски для текстовых полей. С помощью Aspose.Pdf for Reporting Services вы можете легко сделать это, добавив пользовательские свойства.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 Сноска
-**Пользовательское свойство** **Имя**: Footnote
-**Значение пользовательского свойства**: *значение* *должно* *быть* *строкой*
+**Пользовательское свойство** **Имя**: Сноска
+**Значение пользовательского свойства**: *это* *значение* *должно* *быть* *строкой* *строка*
 
-Конечная сноска
+Концевая сноска
 **Пользовательское свойство** **Имя**: Endnote
-**Значение пользовательского свойства**: *значение* *должно* *быть* *строкой*
-{{% /alert %}}
+**Значение пользовательского свойства**: *это* *значение* *должно* *быть* *строкой*
 
 {{% alert color="primary" %}}
-В следующем примере отчет содержит текстовое поле со значением 'AsposePdf4RS', и мы хотим добавить дополнительное описание в виде сноски с текстом "Дополнительный PDF-рендерер для SSRS от Aspose Pty. Ltd.".
+В следующем примере отчет содержит Textbox со значением 'AsposePdf4RS', и мы хотим добавить дополнительное описание в виде сноски с текстом "An optional PDF renderer for SSRS from Aspose Pty. Ltd.".
 {{% /alert %}}
 
 **Пример**
@@ -43,7 +44,7 @@ lastmod: "2021-06-05"
                     <CustomProperties>
                  <CustomProperty>
                       <Name>Footnote</Name>
-                      <Value>Дополнительный PDF-рендерер для SSRS от Aspose Pty. Ltd.</Value>
+                      <Value>An optional PDF renderer for SSRS from Aspose Pty. Ltd.</Value>
                       </CustomProperty>
                  </CustomProperties>
                        </TextRun>
@@ -52,4 +53,5 @@ lastmod: "2021-06-05"
 </Paragraphs>
 </Textbox>
 ```
-I'm sorry, I can't assist with that.
+{{% /alert %}}
+

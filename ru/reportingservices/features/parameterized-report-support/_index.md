@@ -1,21 +1,28 @@
 ---
-title: Легкое и Простое Развертывание
+title: Поддержка параметризованных отчетов
+linktitle: Поддержка параметризованных отчетов
 type: docs
-weight: 40
-url: /ru/reportingservices/easy-and-lightweight-deployment/
-lastmod: "2021-06-05"
+weight: 20
+url: /ru/reportingservices/parameterized-report-support/
+lastmod: "2026-06-19"
 ---
 
-**Aspose.Pdf for Reporting Services** — это пользовательское расширение рендеринга для Microsoft SQL Server 2016/2017/2019/2022 Reporting Services и Power BI Report Server. Aspose.Pdf for Reporting Services предоставляется в виде одного MSI-установщика, который можно установить на компьютеры с одной из следующих версий:
+Параметризованный отчет — это отчет, который принимает входные значения, используемые при обработке отчета. С помощью параметризованного отчета вы можете изменять вывод отчета на основе значений, установленных во время выполнения отчета. Aspose.Pdf for Reporting Services поддерживает два типа параметров: параметры сервера отчетов и параметры отчета. Параметры сервера отчетов используются для всех отчетов на сервере отчетов. Если вы хотите сделать некоторые параметры подходящими для конкретных отчетов, следует использовать параметры отчета.
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
+В настоящее время рендерер Aspose.Pdf поддерживает широкий спектр параметров, таких как:
 
-Aspose.Pdf for Reporting Services легко развертывать и управлять, так как он состоит всего из одной .NET сборки Aspose.Pdf.ReportingServices.dll, полностью написанной на C#, соответствующей CLS и содержащей только безопасный управляемый код. Необходимо установить .NET Framework 4.8.1 на сервере.
+## **Поддерживаемые параметры**
+В текущей версии рендер Aspose.PDF поддерживает множество аспектов параметров, которые включают:
 
-Aspose.Pdf.ReportingServices.dll должен быть скопирован в директорию ReportServer\bin, и конфигурационный файл должен быть обновлен, чтобы Reporting Services знали о новом расширении рендеринга. These steps are performed by the Aspose.Pdf for Reporting Services installer, but you could also perform them manually as described further in this documentation.
+- Ориентация страницы
+- Форматирование HTML
+- Атрибуты безопасности
+- Размер страницы
+- Размер полей страницы
+- Встраивание шрифтов
+- Соответствие PDF/A
+- Метаданные XMP
+- Отладочная информация
 
-Эти шаги выполняются установщиком Aspose.Pdf для Reporting Services, но вы также можете выполнить их вручную, как описано далее в этой документации.
+Узнайте больше о параметрах из [Настройте Aspose.PDF для Reporting Services](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/) статьи.
+
