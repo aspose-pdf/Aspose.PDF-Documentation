@@ -1,19 +1,28 @@
 ---
-title: Déploiement Facile et Léger
+title: Support des rapports paramétrés
+linktitle: Support des rapports paramétrés
 type: docs
-weight: 40
-url: /fr/reportingservices/easy-and-lightweight-deployment/
-lastmod: "2021-06-05"
+weight: 20
+url: /fr/reportingservices/parameterized-report-support/
+lastmod: "2026-06-19"
 ---
 
-**Aspose.Pdf for Reporting Services** est une extension de rendu personnalisée pour Microsoft SQL Server 2016/2017/2019/2022 Reporting Services et Power BI Report Server. Aspose.Pdf for Reporting Services est fourni sous la forme d'un seul installateur MSI qui peut s'installer sur des ordinateurs exécutant l'un des éléments suivants :
+Un rapport paramétré est un rapport qui accepte des valeurs d'entrée utilisées dans le traitement du rapport. Avec un rapport paramétré, vous pouvez faire varier le résultat d'un rapport en fonction des valeurs définies lors de l'exécution du rapport. Aspose.Pdf for Reporting Services prend en charge deux types de paramètres : les paramètres du serveur de rapports et les paramètres du rapport. Les paramètres du serveur de rapports sont utilisés pour tous les rapports sur le serveur de rapports. Si vous souhaitez rendre certains paramètres spécifiques à des rapports particuliers, vous devez utiliser les paramètres du rapport.
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
+Actuellement, le moteur de rendu Aspose.Pdf prend en charge un large éventail de paramètres, tels que :
 
-Aspose.Pdf for Reporting Services est facile à déployer et à gérer, car il est composé d'une seule assembly .NET Aspose.Pdf.ReportingServices.dll, entièrement écrit en C#, conforme CLS et ne contenant que du code géré sûr. Il est nécessaire d'avoir .NET Framework 4.8.1 installé sur le serveur.
+## **Paramètres pris en charge**
+Dans la version actuelle, le rendu Aspose.PDF prend en charge de nombreux aspects des paramètres, qui sont :
 
-Aspose.Pdf.ReportingServices.dll doit être copié dans le répertoire ReportServer\bin et le fichier de configuration doit être mis à jour afin que Reporting Services soit informé de la nouvelle extension de rendu. Ces étapes sont effectuées par l'installateur d'Aspose.Pdf pour Reporting Services, mais vous pouvez également les effectuer manuellement comme décrit plus en détail dans cette documentation.
+- Orientation de page
+- mise en forme HTML
+- attributs de sécurité
+- taille de page
+- taille des marges de page
+- intégration de Font
+- conformité PDF/A
+- Métadonnées XMP
+- Informations de débogage
+
+En savoir plus sur les paramètres depuis le [Configurer Aspose.PDF pour Reporting Services](/pdf/fr/reportingservices/configure-aspose-pdf-for-reporting-services/) article.
+

@@ -1,14 +1,16 @@
 ---
-title: PDF_A Conformance
+title: Conformité PDF_A
+linktitle: Conformité PDF_A
 type: docs
 weight: 100
 url: /fr/reportingservices/pdf_a-conformance/
-lastmod: "2025-05-22"
+description: Activez la conformité PDF/A dans Aspose.PDF for Reporting Services. Créez des documents conformes aux exigences d'archivage sans effort.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Vous pouvez obtenir une introduction à la conformité PDF/A (PDF Archivable) dans la documentation Aspose.PDF.
+Vous pouvez consulter une introduction à la conformité PDF/A (PDF archivables) dans la documentation d'Aspose.PDF.
 
 Si vous souhaitez créer un document PDF/A, ajoutez le paramètre de rapport suivant.
 
@@ -18,7 +20,7 @@ Si vous souhaitez créer un document PDF/A, ajoutez le paramètre de rapport sui
 {{% alert color="primary" %}}
 
 **Nom du paramètre**: PdfConformance  
-**Type de données**: String  
+**Type de date**: String  
 **Valeurs prises en charge**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
 
 **Exemple**
@@ -35,3 +37,4 @@ Si vous souhaitez créer un document PDF/A, ajoutez le paramètre de rapport sui
 {{< /highlight >}}
 
 {{% /alert %}}
+
