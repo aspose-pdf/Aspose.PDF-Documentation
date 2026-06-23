@@ -1,14 +1,18 @@
 ---
 title: Características
+linktitle: Características
 type: docs
 weight: 30
 url: /es/reportingservices/features/
-lastmod: "2021-06-05"
+description: Descubra las características clave de Aspose.PDF for Reporting Services. Mejore los informes SSRS con capacidades avanzadas de renderizado PDF y personalización.
+lastmod: "2026-06-19"
 ---
 
 **Esta sección incluye los siguientes temas:**
-- [Soporte Integral de RDL](/pdf/es/reportingservices/comprehensive-rdl-support/)
-- [Soporte de Informe Parametrizado](/pdf/es/reportingservices/parameterized-report-support/)
-- [Soporte de Ítem de Informe Personalizado](/pdf/es/reportingservices/custom-report-item-support/)
-- [Despliegue Fácil y Ligero](/pdf/es/reportingservices/easy-and-lightweight-deployment/)
-- [Soporte Técnico Gratuito de Clase Mundial](/pdf/es/reportingservices/world-class-free-technical-support/)
+- [Compatibilidad integral con RDL](/pdf/es/reportingservices/comprehensive-rdl-support/)
+- [Compatibilidad con informes parametrizados](/pdf/es/reportingservices/parameterized-report-support/)
+- [Compatibilidad con elementos de informe personalizados](/pdf/es/reportingservices/custom-report-item-support/)
+- [Despliegue fácil y liviano](/pdf/es/reportingservices/easy-and-lightweight-deployment/)
+- [Soporte técnico gratuito de clase mundial](/pdf/es/reportingservices/world-class-free-technical-support/)
+
+

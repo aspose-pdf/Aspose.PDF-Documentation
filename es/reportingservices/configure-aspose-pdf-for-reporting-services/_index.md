@@ -1,13 +1,17 @@
 ---
 title: Configurar
+linktitle: Configurar
 
 type: docs
 weight: 80
 url: /es/reportingservices/configure-aspose-pdf-for-reporting-services/
-lastmod: "2021-06-05"
+description: Aprenda cómo configurar Aspose.PDF for Reporting Services para personalizar la configuración de salida PDF de sus informes SSRS de manera eficiente.
+lastmod: "2026-06-19"
 ---
 
 ## Esta sección incluye los siguientes temas:
 
-- [Configuración de Parámetros](/pdf/es/reportingservices/setting-parameters/)
-- [Parámetros Soportados](/pdf/es/reportingservices/supported-parameters/)
+- [Establecer parámetros](/pdf/es/reportingservices/setting-parameters/)
+- [Parámetros compatibles](/pdf/es/reportingservices/supported-parameters/)
+
+
