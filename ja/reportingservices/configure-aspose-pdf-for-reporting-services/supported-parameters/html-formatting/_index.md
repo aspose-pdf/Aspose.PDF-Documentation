@@ -1,31 +1,33 @@
 ---
-title: HTML Formatting
+title: HTML 書式設定
+linktitle: HTML 書式設定
 type: docs
 weight: 20
 url: /ja/reportingservices/html-formatting/
-lastmod: "2021-06-05"
+description: Aspose.PDF for Reporting Services を使用して PDF レポートで HTML 書式設定を有効にします。スタイルと構造を簡単に追加できます。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-時々、書式付きでテキストボックスのテキストをエクスポートしたいことがあります。残念ながら、Reporting Servicesはこれをサポートしていません。しかし、Aspose.PDF for Reporting Servicesを使用して実装することは可能です。すべてのテキストボックス内のテキストをHTMLとして扱い、出力ドキュメント内のテキストをフォーマットするために必要なHTMLタグを挿入する特別なモードを有効にしてください。たとえば、同じテキストボックス内に通常、太字、斜体のテキストを持たせるには、次のテキストボックスの値を入力します：
+テキストボックス内のテキストを書式付きでエクスポートしたくなることがありますが、残念ながら Reporting Services はこれをサポートしていません。しかし、Aspose.PDF for Reporting Services を使用すれば実装可能です。テキストボックス内のすべてのテキストを HTML として扱う特別なモードを有効にし、出力ドキュメントでテキストを書式設定するために必要な HTML タグを配置します。例えば、同じテキストボックス内で普通、太字、斜体のテキストを使用したい場合、以下のテキストボックスの値を入力します：
 
-Some of this text is ```<b>bold</b>``` and other text is ```<i>italic</i>```.
+このテキストの一部は ```<b>bold</b>``` そして他のテキストは ```<i>italic</i>```.
 
-エクスポートされると、テキストは一部が **bold** で他の部分が *italic* のように見えます。
+エクスポートすると、テキストは **bold** の一部と *italic* の他の部分のように表示されます。
 
-このアプローチにはいくつかの制限があることに注意してください
+このアプローチにはいくつかの制限があることにご注意ください
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-- 書式設定はデザイン時に表示されません（レポートビルダー、Reporting Servicesウェブポータルなど）。 HTML タグの形式のプレーンテキストを代わりに表示します。
-- Aspose.PDF for Reporting Services のレンダリング拡張機能は、テキストボックス内の HTML コードを認識し、適切にフォーマットします。Reporting Services のデフォルトの PDF レンダラーは、このマークアップをプレーンテキストとしてエクスポートします。
+- 書式はデザイン時（Report Builder、Reporting Services の Web ポータルなど）に表示されません。代わりに、タグ付きのプレーンテキストとして HTML テキストが表示されます。
+- Aspose.PDF for Reporting Services のレンダリング拡張機能は、テキストボックス内の HTML コードを認識し、適切にフォーマットします。Reporting Services のデフォルト PDF レンダラは、このマークアップをプレーンテキストとしてエクスポートします。
 
-**パラメーター名**: IsHtmlTagSupported  
+**パラメータ名**: IsHtmlTagSupported  
 **データ型**: Boolean  
-**サポートされる値**: True, False (デフォルト)   
+**サポートされる値**: True, False (default)   
 
 **例**
 
@@ -42,8 +44,10 @@ Some of this text is ```<b>bold</b>``` and other text is ```<i>italic</i>```.
 
 {{< /highlight >}}
 
-このパラメーターをレポートデザイナーに追加したい場合は、'Boolean' データ型を使用してください。
+Report Designerでこのパラメータを追加したい場合は、'Boolean' データ型を使用してください。
 
-現在、Aspose.Pdf for Reporting Services はすべての HTML タグのサブセットをサポートしています。詳細は Aspose.PDF [ドキュメント](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom) でご覧いただけます。
+ 
+現在 Aspose.Pdf for Reporting Services はすべての HTML タグのサブセットをサポートしています。詳細は Aspose.PDF のドキュメントでご確認いただけます。 [ドキュメント](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}
+

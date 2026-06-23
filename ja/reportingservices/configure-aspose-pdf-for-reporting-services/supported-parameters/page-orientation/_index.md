@@ -1,14 +1,16 @@
 ---
 title: ページの向き
+linktitle: ページの向き
 type: docs
 weight: 10
 url: /ja/reportingservices/page-orientation/
-lastmod: "2021-06-05"
+description: Aspose.PDF for Reporting Services の PDF レポートのページ向きを設定します。レイアウトをカスタマイズして、プレゼンテーションを改善します。
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-レポート定義言語では、レポート内のページの向きを明示的に指定することはできません。Aspose.Pdf for Reporting Services を使用すると、エクスポーターに指示して横向きページのPDFドキュメントを簡単に作成することができます。デフォルトの向きは縦向きです。
+Report Definition Language は、レポート内のページの向きを明示的に指定することを許可していません。Aspose.PDF for Reporting Services を使用すると、エクスポーターに対して横向きページの PDF ドキュメントを生成するよう簡単に指示できます。デフォルトの向きは縦向きです。
 
 {{% /alert %}}
 
@@ -33,3 +35,4 @@ lastmod: "2021-06-05"
 {{< /highlight >}}
 
 {{% /alert %}}
+
