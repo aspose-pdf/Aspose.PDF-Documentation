@@ -14,10 +14,10 @@ Use the page image resource collection when you need to remove embedded images f
 
 ## Delete an embedded image by index
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the image resources on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the image resources on the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Delete the target image from the page resource collection by its index.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void deleteImage(Path inputFile, Path outputFile) {

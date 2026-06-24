@@ -19,7 +19,7 @@ Aspose.PDF for Java supports conversion from document, markup, and page-descript
 
 Use this example when an OFD document should be converted into PDF.
 
-1. Open the OFD source by passing the file path and [`OfdLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/ofdloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor.
+1. Open the OFD source by passing the file path and [`OfdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ofdloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
 1. Let Aspose.PDF parse the OFD package into the PDF document model.
 1. Save the resulting PDF to the target output path.
 
@@ -36,7 +36,7 @@ public static void convertOfdToPdf(Path inputFile, Path outputFile) {
 
 Use this example when TeX content should be rendered directly as PDF.
 
-1. Open the TeX source by passing the file path and [`TeXLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/texloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor.
+1. Open the TeX source by passing the file path and [`TeXLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
 1. Let Aspose.PDF interpret the TeX markup and build the PDF layout during loading.
 1. Save the generated PDF.
 
@@ -53,7 +53,7 @@ public static void convertTexToPdf(Path inputFile, Path outputFile) {
 
 Use this example when a PostScript file should be converted into a PDF document.
 
-1. Open the PostScript source with [`PsLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/psloadoptions/) in the [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor.
+1. Open the PostScript source with [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) in the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
 1. Let Aspose.PDF translate the PostScript page-description stream into a PDF document model.
 1. Save the converted PDF file.
 
@@ -70,8 +70,8 @@ public static void convertPostScripToPdf(Path inputFile, Path outputFile) {
 
 Use this example when an Encapsulated PostScript file should be converted to PDF.
 
-1. Open the EPS source with [`PsLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/psloadoptions/) because EPS follows the same PostScript-based load path.
-1. Load the file into a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) so the page-description content is converted during import.
+1. Open the EPS source with [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) because EPS follows the same PostScript-based load path.
+1. Load the file into a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) so the page-description content is converted during import.
 1. Save the output PDF.
 
 ```java
@@ -87,7 +87,7 @@ public static void convertEpsToPdf(Path inputFile, Path outputFile) {
 
 Use this example when an EPUB eBook should be converted into PDF.
 
-1. Open the EPUB source by passing the file path and [`EpubLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/epubloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor.
+1. Open the EPUB source by passing the file path and [`EpubLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
 1. Let Aspose.PDF load the ebook structure and transform it into PDF pages.
 1. Save the converted PDF.
 
@@ -104,7 +104,7 @@ public static void convertEpubToPdf(Path inputFile, Path outputFile) {
 
 Use this example when Markdown content should be rendered and saved as PDF.
 
-1. Open the Markdown source by passing the file path and [`MdLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/mdloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor.
+1. Open the Markdown source by passing the file path and [`MdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mdloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
 1. Let Aspose.PDF interpret the Markdown content and render it into PDF page content.
 1. Save the output PDF file.
 
@@ -122,8 +122,8 @@ public static void convertMdToPdf(Path inputFile, Path outputFile) {
 Use this example when a plain text file should be quickly converted to PDF.
 
 1. Read the plain-text source with UTF-8 decoding so the text content is available as a Java string.
-1. Create an empty [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a [`Page`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Wrap the text in a [`TextFragment`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) and add it to the page paragraphs collection.
+1. Create an empty [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Wrap the text in a [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) and add it to the page paragraphs collection.
 1. Save the generated PDF.
 
 ```java
@@ -144,8 +144,8 @@ public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws
 Use this example when plain text should be converted with additional layout or encoding options.
 
 1. Read all text lines from the input file so page-break markers can be inspected during conversion.
-1. Create an empty [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and configure each [`Page`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) with margins and default text state.
-1. Resolve the monospaced font through [`FontRepository`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fontrepository/) and add each line as a [`TextFragment`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/).
+1. Create an empty [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and configure each [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) with margins and default text state.
+1. Resolve the monospaced font through [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) and add each line as a [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. Save the output file after the page-building loop completes.
 
 ```java
@@ -184,8 +184,8 @@ public static void convertTxtToPdf(Path inputFile, Path outputFile) throws Excep
 
 Use this example when a PCL print stream should be converted into PDF.
 
-1. Create [`PclLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pclloadoptions/) and enable suppressed parsing errors when lenient import behavior is required.
-1. Open the PCL source by passing the file path and load options into the [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor.
+1. Create [`PclLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pclloadoptions/) and enable suppressed parsing errors when lenient import behavior is required.
+1. Open the PCL source by passing the file path and load options into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
 1. Save the result as PDF.
 
 ```java
@@ -204,7 +204,7 @@ public static void convertPclToPdf(Path inputFile, Path outputFile) {
 Use this example when XML data should be transformed before final PDF generation.
 
 1. Transform the XML source with the XSLT file into a temporary HTML file by calling the dedicated transformation method.
-1. Pass the generated HTML file into the existing HTML-to-PDF conversion function so the final PDF uses the standard [`HtmlLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/htmlloadoptions/) workflow.
+1. Pass the generated HTML file into the existing HTML-to-PDF conversion function so the final PDF uses the standard [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) workflow.
 1. Delete the temporary HTML file in the `finally` block after conversion completes.
 1. Save the generated PDF file.
 
@@ -225,7 +225,7 @@ public static void convertXmlToPdf(Path xsltFile, Path xmlFile, Path outputFile)
 
 Use this example when an XPS document should be converted into PDF.
 
-1. Open the XPS source by passing the file path and [`XpsLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xpsloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) constructor.
+1. Open the XPS source by passing the file path and [`XpsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpsloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
 1. Let Aspose.PDF interpret the XPS page description during document loading.
 1. Save the converted PDF.
 
@@ -242,9 +242,9 @@ public static void convertXpsToPdf(Path inputFile, Path outputFile) {
 
 Use this example when XSL-FO content should be rendered as PDF.
 
-1. Create [`XslFoLoadOptions`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xslfoloadoptions/) with the XSLT path so the XML source can be transformed during loading.
+1. Create [`XslFoLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions/) with the XSLT path so the XML source can be transformed during loading.
 1. Configure the parsing error handling mode to throw immediately when invalid XSL-FO is encountered.
-1. Open the XML source in a [`Document`](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) with those load options.
+1. Open the XML source in a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) with those load options.
 1. Save the resulting PDF document.
 
 ```java

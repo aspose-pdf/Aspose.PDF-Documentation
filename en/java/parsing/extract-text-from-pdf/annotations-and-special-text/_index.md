@@ -14,9 +14,9 @@ sitemap:
 
 Iterate through page annotations and read marked text from `HighlightAnnotation`.
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) objects on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Check whether each annotation is a [HighlightAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/highlightannotation/) before casting it to the typed annotation class.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Iterate through the [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objects on the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Check whether each annotation is a [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) before casting it to the typed annotation class.
 1. Read the marked text from each highlight annotation and print it to the console.
 
 ```java
@@ -36,11 +36,11 @@ public static void extractHighlightedText(Path inputFile) {
 
 Read the normal appearance stream from a stamp annotation and pass it through `TextAbsorber`.
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Iterate through the [Annotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotation/) objects on the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Iterate through the [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objects on the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Filter the annotations to those whose type is `Stamp`.
-1. Create a [TextAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textabsorber/) and request the normal appearance entry from the stamp annotation appearance dictionary.
-1. Visit the appearance [XForm](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/xform/) and print the extracted text.
+1. Create a [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) and request the normal appearance entry from the stamp annotation appearance dictionary.
+1. Visit the appearance [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) and print the extracted text.
 
 ```java
 public static void extractStampText(Path inputFile) {
@@ -63,9 +63,9 @@ public static void extractStampText(Path inputFile) {
 
 Use `TextFragmentAbsorber` when you need both the extracted text and the superscript or subscript flags on each fragment.
 
-1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) instance.
-1. Create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragmentabsorber/) for fragment-level text analysis.
-1. Visit the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and collect its [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) objects.
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) for fragment-level text analysis.
+1. Visit the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and collect its [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objects.
 1. Iterate through those fragments and read the text together with the superscript and subscript flags from `fragment.getTextState()`.
 1. Write the extracted details to the output file.
 

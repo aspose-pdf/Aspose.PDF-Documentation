@@ -19,8 +19,8 @@ Background artifacts let you place non-content visual elements behind the main p
 
 Use this example when the page should display an image as a background artifact.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and the image input stream.
-1. Create a [BackgroundArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/backgroundartifact/) and assign the image stream.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and the image input stream.
+1. Create a [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) and assign the image stream.
 1. Add the artifact to the target page and save the output PDF.
 
 ```java
@@ -39,8 +39,8 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 
 This example places a semi-transparent background image behind the page content.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and image stream.
-1. Create a [BackgroundArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/backgroundartifact/), assign the image, and set the opacity.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and image stream.
+1. Create a [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/), assign the image, and set the opacity.
 1. Add the artifact to the page and save the document.
 
 ```java
@@ -61,8 +61,8 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
 
 Use this example when the page should use a solid background color instead of an image.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [BackgroundArtifact](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/backgroundartifact/) and assign the background color.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) and assign the background color.
 1. Add the artifact to the page and save the output file.
 
 ```java
@@ -80,7 +80,7 @@ public static void addBackgroundColorToPdf(Path inputFile, Path outputFile) {
 
 Use this approach when existing background artifacts should be deleted from the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the page artifact collection in reverse order.
 1. Delete artifacts whose type is pagination and subtype is background, then save the document.
 

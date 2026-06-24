@@ -22,8 +22,8 @@ Aspose.PDF for Java provides two main ways to work with metadata:
 
 Use this example when you need to read standard document information fields such as author, title, subject, or keywords.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) object.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) object.
 1. Read the required metadata fields and output their values.
 
 ```java
@@ -45,7 +45,7 @@ public static void getPdfFileInformation(Path inputFile) {
 
 Use this example when you need to add or update an XMP property by using a registered namespace prefix.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Register the required XMP namespace and add the metadata item.
 1. Save the updated document.
 
@@ -64,8 +64,8 @@ public static void setPrefixMetadata(Path inputFile, Path outputFile) {
 
 Use this example when you want to write standard PDF file properties such as author, title, producer, or creation date.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access [DocumentInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/documentinfo/) and assign new metadata values.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) and assign new metadata values.
 1. Save the document with the updated file information.
 
 ```java
@@ -93,7 +93,7 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 
 Use this example when you need to store additional XMP entries, including custom metadata values.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Add the required XMP metadata items through `document.getMetadata()`.
 1. Save the output file.
 

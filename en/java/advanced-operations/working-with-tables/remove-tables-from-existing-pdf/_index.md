@@ -19,8 +19,8 @@ Use `TableAbsorber` when you need to delete one or more detected tables from an 
 
 Use this example when only the first matched table on a page should be deleted.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Visit the target page with [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Visit the target page with [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Remove the first detected table and save the document.
 
 ```java
@@ -38,8 +38,8 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 
 Use this example when every matched table on the page should be removed.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Visit the target page with [TableAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tableabsorber/) and copy the detected tables to a list.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Visit the target page with [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) and copy the detected tables to a list.
 1. Remove each detected table and save the updated PDF.
 
 ```java

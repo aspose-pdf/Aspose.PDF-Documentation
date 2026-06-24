@@ -16,8 +16,8 @@ Use these APIs when you need to inspect the logical structure tree of a tagged P
 
 Use this example when you need access to the tagged content container and want to define basic document metadata such as title and language.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Get the [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/itaggedcontent/) object from the document.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Get the [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) object from the document.
 1. Set the tagged content metadata and save the output file.
 
 ```java
@@ -35,7 +35,7 @@ public static void getTaggedContent(Path outputFile) {
 
 This example shows how to inspect the root objects that represent the structure tree of a tagged PDF.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and get its tagged content.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and get its tagged content.
 1. Set the required document metadata.
 1. Read and print the structure tree root and logical root element, then save the file.
 
@@ -58,7 +58,7 @@ public static void getRootStructure(Path outputFile) {
 
 Use this example when you need to iterate through child elements in the structure tree, inspect their properties, and update selected metadata.
 
-1. Open the source tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Read the child elements from the structure tree root and print the available properties.
 1. Access the child elements of the first root child, update their metadata, and save the document.
 

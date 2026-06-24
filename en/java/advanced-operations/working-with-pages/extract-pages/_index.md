@@ -19,7 +19,7 @@ Aspose.PDF for Java lets you copy selected pages into a new destination document
 
 Use this example when you need to save one page from the source PDF into a separate document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and create a destination document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and create a destination document.
 1. Copy the target page into the destination page collection.
 1. Save the new PDF.
 
@@ -37,7 +37,7 @@ public static void extractPage(Path inputFile, Path outputFile) {
 
 Use this example when you need to copy several pages into a separate PDF.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and create a destination document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and create a destination document.
 1. Iterate through the selected page indexes and add them to the destination.
 1. Save the extracted-pages document.
 

@@ -19,8 +19,8 @@ Aspose.PDF for Java can apply a page from another PDF as a stamp or add page num
 
 Use this example when a page from a separate PDF should be used as a background stamp.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [PdfPageStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfpagestamp/) from the external PDF page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) from the external PDF page.
 1. Configure the stamp and add it to the target page, then save the result.
 
 ```java
@@ -38,8 +38,8 @@ public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputF
 
 Use this example when the target page should show the current number with custom text formatting.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create and configure a [PageNumberStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pagenumberstamp/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create and configure a [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. Add the stamp to the page and save the document.
 
 ```java
@@ -66,8 +66,8 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 
 Use this example when page numbering should start from a custom value and use uppercase Roman numerals.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [PageNumberStamp](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pagenumberstamp/) and configure Roman numeral numbering.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) and configure Roman numeral numbering.
 1. Add the stamp to all pages and save the PDF.
 
 ```java

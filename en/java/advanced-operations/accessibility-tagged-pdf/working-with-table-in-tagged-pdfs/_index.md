@@ -16,7 +16,7 @@ Tagged table APIs let you create accessible table structures with explicit heade
 
 Use this example when you need a basic accessible table with header, body, footer, and table summary metadata.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a [TableElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
 1. Configure the table border and populate the content with the shared helper method.
 1. Set the table summary attribute and save the document.
 
@@ -47,7 +47,7 @@ public static void createTable(Path outputFile) {
 
 This example applies table-level formatting such as colors, borders, column sizing, repeating rows, and alignment.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a table element.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a table element.
 1. Configure the table-level visual and layout settings.
 1. Populate the table and save the document.
 
@@ -92,7 +92,7 @@ public static void styleTable(Path outputFile) {
 
 Use this example when each row should have its own metadata, borders, height settings, and cell defaults.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add table sections for head, body, and foot.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add table sections for head, body, and foot.
 1. Create rows and configure their row-level settings such as border, padding, height, and page behavior.
 1. Populate the rows with cells and save the document.
 
@@ -152,7 +152,7 @@ public static void styleTableRow(Path outputFile) {
 
 This example uses the shared helper method to create a table with cell-level formatting and merged cells.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Add a table element and populate it through the helper method with cell styling enabled.
 1. Save the document.
 
@@ -176,8 +176,8 @@ public static void styleTableCell(Path outputFile) {
 
 Use this example when a tagged table should be positioned explicitly on the page.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a table element.
-1. Configure [PositionSettings](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) for the table.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a table element.
+1. Configure [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) for the table.
 1. Apply the position settings, populate the table, and save the document.
 
 ```java

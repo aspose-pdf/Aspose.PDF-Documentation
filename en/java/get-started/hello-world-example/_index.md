@@ -17,13 +17,13 @@ A "Hello World" example is the shortest path to understanding the basic PDF crea
 
 The Java example follows these steps:
 
-1. Create a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) object.
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Create a [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) with the text `Hello, world!`.
-1. Set the [Position](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/position/), font, font size, background color, and foreground color through the fragment [TextState](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textstate/).
-1. Create a [TextBuilder](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textbuilder/) for the page.
-1. Append the [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) to the [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
-1. Save the PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) object.
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Create a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) with the text `Hello, world!`.
+1. Set the [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), font, font size, background color, and foreground color through the fragment [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Create a [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) for the page.
+1. Append the [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) to the [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Save the PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 The following Java code is based on `GetStartedExamples.java`.
 

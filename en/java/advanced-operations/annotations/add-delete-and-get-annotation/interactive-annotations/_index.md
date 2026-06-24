@@ -19,9 +19,9 @@ Interactive annotations in this section focus on link and button-based workflows
 
 Use this example when you need to place a clickable link over text found on the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Locate the target text fragment and create a [LinkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/linkannotation/) over its rectangle.
-1. Assign a [GoToURIAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/gotouriaction/) and save the updated document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Locate the target text fragment and create a [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) over its rectangle.
+1. Assign a [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) and save the updated document.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -45,9 +45,9 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 
 This example scans the page annotation collection and reports the location of each link annotation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the annotations on the target page.
-1. Filter annotations by [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`Link` and print their rectangles.
+1. Filter annotations by [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` and print their rectangles.
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -65,8 +65,8 @@ public static void linkGet(Path inputFile) {
 
 Use this approach when existing link annotations should be removed from the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Collect annotations whose type is [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`Link`.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Collect annotations whose type is [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
 1. Delete the collected annotations and save the output file.
 
 ```java
@@ -90,8 +90,8 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 
 This example creates an interactive line annotation with arrow styles, border settings, and a popup note.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [LineAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/lineannotation/) with start and end points.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) with start and end points.
 1. Configure its appearance and popup annotation, then save the document.
 
 ```java
@@ -127,8 +127,8 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 
 Use this example when the PDF should include previous-page and next-page buttons for interactive navigation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and make sure the document has the required pages.
-1. Create [ButtonField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/buttonfield/) controls with predefined navigation actions.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and make sure the document has the required pages.
+1. Create [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) controls with predefined navigation actions.
 1. Add the buttons to the form collection and save the updated document.
 
 ```java
@@ -162,8 +162,8 @@ public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
 
 This example creates a button that triggers the print command when the user clicks it.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [ButtonField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/buttonfield/) and assign the print predefined action.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) and assign the print predefined action.
 1. Configure the button border and background, add it to the form, and save the document.
 
 ```java

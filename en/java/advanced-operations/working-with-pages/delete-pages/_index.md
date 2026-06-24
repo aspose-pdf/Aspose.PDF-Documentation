@@ -19,7 +19,7 @@ Use the document page collection when you need to remove one or more pages from 
 
 Use this example when you need to remove one page by its index.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Delete the target page from the page collection.
 1. Save the updated document.
 
@@ -36,7 +36,7 @@ public static void deletePage(Path inputFile, Path outputFile) {
 
 Use this example when several pages should be removed in one operation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Pass the page indexes to delete from the page collection.
 1. Save the modified PDF.
 

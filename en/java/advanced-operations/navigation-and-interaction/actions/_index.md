@@ -19,8 +19,8 @@ Aspose.PDF for Java lets you assign actions to buttons, documents, and pages to 
 
 Use this example when a button on the page should trigger the print command.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and select the target page.
-1. Create a [ButtonField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/buttonfield/) and assign a [NamedAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/namedaction/) for printing.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and select the target page.
+1. Create a [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) and assign a [NamedAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) for printing.
 1. Add the button to the form and save the document.
 
 ```java
@@ -49,8 +49,8 @@ public static void addNamedActionPrint(Path inputFile, Path outputFile) {
 
 Use this example when a button should show or hide a set of form fields, such as checkboxes.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and collect the target form widgets.
-1. Create a button and assign a [HideAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/hideaction/) to it.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and collect the target form widgets.
+1. Create a button and assign a [HideAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/) to it.
 1. Add the button to the form and save the updated document.
 
 ```java
@@ -80,7 +80,7 @@ public static void addNamedActionHide(Path inputFile, Path outputFile) {
 
 This example creates first, previous, next, and last page buttons across the document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create navigation buttons for each page and assign the matching predefined action.
 1. Add the buttons to the form and save the document.
 
@@ -140,8 +140,8 @@ public static void addNavigationButtons(Path inputFile, Path outputFile) {
 
 Use this example when a button should submit form data to a URL.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [SubmitFormAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/submitformaction/) with the target URL and flags.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) with the target URL and flags.
 1. Assign the action to a button field and save the document.
 
 ```java
@@ -170,8 +170,8 @@ public static void addSubmitAction(Path inputFile, Path outputFile) {
 
 This example assigns JavaScript actions that run when the document is opened, saved, or printed.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create the required [JavascriptAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/javascriptaction/) objects for the document events.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create the required [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) objects for the document events.
 1. Assign the actions and save the document.
 
 ```java
@@ -192,7 +192,7 @@ public static void addLaunchActions(Path inputFile, Path outputFile) {
 
 Use this example when a specific page should trigger actions on open and close.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and ensure the target page exists.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and ensure the target page exists.
 1. Create the page navigation and JavaScript actions.
 1. Assign the page actions and save the document.
 
@@ -220,7 +220,7 @@ public static void addPageActions(Path inputFile, Path outputFile) {
 
 Use this approach when previously assigned open and close actions should be cleared from a page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and ensure the target page exists.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and ensure the target page exists.
 1. Remove all actions from that page.
 1. Save the updated document.
 

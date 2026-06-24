@@ -19,8 +19,8 @@ Aspose.PDF for Java lets you create a wide range of AcroForm field types from sc
 
 Use this example when you need to add a single-line text input field to a new PDF form.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [TextBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textboxfield/) with a target rectangle and configure its appearance.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) with a target rectangle and configure its appearance.
 1. Add the field to the form and save the document.
 
 ```java
@@ -53,9 +53,9 @@ public static void addTextBoxField(Path outputFile) {
 
 Use this example when the same text field value should appear in several positions on the page.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
 1. Define multiple rectangles and appearances for the field widgets.
-1. Create the [TextBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textboxfield/), configure each widget, and save the document.
+1. Create the [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/), configure each widget, and save the document.
 
 ```java
 public static void addTextBoxFieldNt(Path outputFile) {
@@ -103,8 +103,8 @@ public static void addTextBoxFieldNt(Path outputFile) {
 
 Use this example when the form should let the user choose one option from a predefined set.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [RadioButtonField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/radiobuttonfield/) and add the required options.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) and add the required options.
 1. Add the field to the form and save the PDF.
 
 ```java
@@ -126,8 +126,8 @@ public static void addRadioButton(Path outputFile) {
 
 Use this example when the user should pick one value from a drop-down list.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [ComboBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/comboboxfield/) and add its selectable options.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) and add its selectable options.
 1. Set the default selection and save the document.
 
 ```java
@@ -152,8 +152,8 @@ public static void addComboBox(Path outputFile) {
 
 Use this example when the form needs a true-or-false option such as consent or feature selection.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [CheckboxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/checkboxfield/) and configure its appearance.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) and configure its appearance.
 1. Add the checkbox to the form and save the output file.
 
 ```java
@@ -175,8 +175,8 @@ public static void addCheckboxFieldToPdf(Path outputFile) {
 
 Use this example when the form should display multiple available choices in a visible list.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [ListBoxField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/listboxfield/) and add the available options.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) and add the available options.
 1. Add the field to the form and save the document.
 
 ```java
@@ -200,8 +200,8 @@ public static void addListBoxFieldToPdf(Path outputFile) {
 
 Use this example when the document must reserve a visible area for a digital signature.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [SignatureField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/signaturefield/) in the required rectangle.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) in the required rectangle.
 1. Add the field to the form and save the output PDF.
 
 ```java
@@ -221,8 +221,8 @@ public static void addSignatureField(Path outputFile) {
 
 Use this example when the form should display machine-readable data inside a barcode field.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
-1. Create a [BarcodeField](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/barcodefield/) and add the barcode value.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) and add the barcode value.
 1. Add the field to the form and save the document.
 
 ```java

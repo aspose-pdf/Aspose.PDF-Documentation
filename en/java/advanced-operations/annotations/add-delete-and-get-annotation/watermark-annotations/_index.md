@@ -19,9 +19,9 @@ Watermark annotations let you place reusable overlay content on a page while sti
 
 Use this example when you need a text watermark annotation with custom font settings and opacity.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [WatermarkAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/watermarkannotation/) and add it to the page.
-1. Configure the [TextState](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textstate/), watermark text, and opacity, then save the document.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) and add it to the page.
+1. Configure the [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/), watermark text, and opacity, then save the document.
 
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {
@@ -51,9 +51,9 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 
 This example scans the annotation collection and prints the rectangle of each watermark annotation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the annotations on the target page.
-1. Filter annotations by [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`Watermark` and print their rectangles.
+1. Filter annotations by [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` and print their rectangles.
 
 ```java
 public static void watermarkGet(Path inputFile) {
@@ -71,8 +71,8 @@ public static void watermarkGet(Path inputFile) {
 
 Use this approach when existing watermark annotations should be removed from the document.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/annotationtype/).`Watermark`.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Collect annotations of type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
 1. Delete the collected annotations and save the output file.
 
 ```java

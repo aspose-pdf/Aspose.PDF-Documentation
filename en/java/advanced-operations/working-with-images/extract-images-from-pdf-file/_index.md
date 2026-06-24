@@ -16,8 +16,8 @@ Aspose.PDF for Java supports direct image-resource extraction and placement-base
 
 Use this example when you need to save a specific image resource from a PDF page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the target [XImage](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/ximage/) from the page resources.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the target [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) from the page resources.
 1. Save the image stream to an output file.
 
 ```java
@@ -34,8 +34,8 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 
 Use this example when only images placed inside a selected rectangle should be exported.
 
-1. Define the target [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/) and open the source PDF.
-1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) to inspect image placements on the page.
+1. Define the target [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) and open the source PDF.
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) to inspect image placements on the page.
 1. Save only the images whose placement fits inside the selected region.
 
 ```java

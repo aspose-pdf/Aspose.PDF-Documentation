@@ -17,13 +17,13 @@ Aspose.PDF for Java uses `Graph` together with shape objects such as `Arc` and `
 
 ## Add arc outlines
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Create a [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
-1. Create the [Arc](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/arc/) shape and configure its geometry.
-1. Add the [Arc](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/arc/) to the [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container.
-1. Set the shape properties required by the example, including [Color](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/color/).
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Create a [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
+1. Create the [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) shape and configure its geometry.
+1. Add the [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) to the [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container.
+1. Set the shape properties required by the example, including [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addArc(Path outputFile) {
@@ -46,13 +46,13 @@ The full example adds three arcs with different radii, angles, and colors to the
 
 ## Add a filled arc segment
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Create a [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
-1. Create the [Line](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/line/) shape and configure its coordinates.
-1. Create the [Arc](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/arc/) shape and configure its geometry.
-1. Add the [Line](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/line/) and [Arc](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/arc/) to the [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container.
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Create a [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
+1. Create the [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) shape and configure its coordinates.
+1. Create the [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) shape and configure its geometry.
+1. Add the [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) and [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) to the [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container.
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addArcFilled(Path outputFile) {

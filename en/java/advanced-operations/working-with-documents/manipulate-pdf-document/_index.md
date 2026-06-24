@@ -19,8 +19,8 @@ Aspose.PDF for Java includes document-structure operations that go beyond simple
 
 Use this example when you need to check whether a document meets the PDF/A-1a archival standard.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Run validation against the required [PdfFormat](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/) target.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Run validation against the required [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) target.
 1. Save the validation report to the specified output path.
 
 ```java
@@ -35,8 +35,8 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 
 This variation validates the same source document against the PDF/A-1b conformance level.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Call the validation method with the [PdfFormat](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/) value for PDF/A-1b.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Call the validation method with the [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) value for PDF/A-1b.
 1. Write the validation result to the output report file.
 
 ```java
@@ -51,9 +51,9 @@ public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
 
 Use this approach when the document should include a generated TOC page with links to content pages.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Insert a new TOC [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and configure its [TocInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tocinfo/).
-1. Create [Heading](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/heading/) entries that point to the destination pages.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Insert a new TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and configure its [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Create [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entries that point to the destination pages.
 1. Save the updated document.
 
 ```java
@@ -88,9 +88,9 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 
 This example shows how to assign different visual settings to multiple table-of-contents levels.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a TOC [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and configure the [TocInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tocinfo/) format array.
-1. Create sample [Heading](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/heading/) entries with different levels.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and configure the [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) format array.
+1. Create sample [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entries with different levels.
 1. Save the document with the formatted TOC.
 
 ```java
@@ -142,9 +142,9 @@ public static void setTocLevels(Path inputFile, Path outputFile) {
 
 Use this example when the table of contents should show entry titles without page numbers.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a TOC [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and disable page numbers in [TocInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tocinfo/).
-1. Create the required [Heading](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/heading/) entry and add it to the content page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and disable page numbers in [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Create the required [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entry and add it to the content page.
 1. Save the updated document.
 
 ```java
@@ -188,9 +188,9 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 
 This example adds a custom prefix to the page numbers displayed in the generated table of contents.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Insert a TOC [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and set the desired page number prefix in [TocInfo](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/tocinfo/).
-1. Create [Heading](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/heading/) entries that point to each page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Insert a TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and set the desired page number prefix in [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Create [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entries that point to each page.
 1. Save the updated document.
 
 ```java
@@ -224,8 +224,8 @@ public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
 
 Use this approach when the document should run JavaScript on open and show an expiry warning after a specific date.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add any required content.
-1. Create a [JavascriptAction](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/javascriptaction/) with the expiry logic.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add any required content.
+1. Create a [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) with the expiry logic.
 1. Assign the script as the document open action and save the output file.
 
 ```java
@@ -251,9 +251,9 @@ public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
 
 This example converts interactive form fields into static page content so the resulting document is no longer editable as a form.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Check whether the document contains form widgets.
-1. Flatten each [Field](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/field/) represented by a [WidgetAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/widgetannotation/).
+1. Flatten each [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) represented by a [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
 1. Save the flattened document.
 
 ```java

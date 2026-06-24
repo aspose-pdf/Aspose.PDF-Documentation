@@ -16,7 +16,7 @@ Creating a tagged PDF means adding structure elements that make the document eas
 
 Use this example when you need a minimal tagged PDF with a heading and paragraph in the logical structure tree.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and get its [ITaggedContent](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/itaggedcontent/).
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and get its [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
 1. Set the document title and language, then create the required header and paragraph elements.
 1. Append the structure elements to the root element and save the document.
 
@@ -48,7 +48,7 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 
 This example builds a richer structure by mixing headings, paragraphs, spans, quotes, and explicit layout settings.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and initialize tagged content metadata.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and initialize tagged content metadata.
 1. Build the heading and paragraph structure, then add spans and a quote element inside the paragraph.
 1. Adjust paragraph position, append the elements to the root structure, and save the document.
 
@@ -97,7 +97,7 @@ public static void createTaggedPdfDocumentAdv(Path outputFile) {
 
 Use this example when tagged paragraph content should carry explicit font, color, and style information.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create a paragraph element and configure its structure text state.
 1. Set the paragraph text and save the document.
 
@@ -126,8 +126,8 @@ public static void addStyle(Path outputFile) {
 
 This example shows how to create a tagged figure with alternative text, title, custom tag, image content, and positioning.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create a [FigureElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.logicalstructure/figureelement/), set its accessible metadata, and assign the image.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), set its accessible metadata, and assign the image.
 1. Adjust the figure position and save the document.
 
 ```java
@@ -161,8 +161,8 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 
 Use this example when you need to check whether a tagged PDF satisfies PDF/UA validation rules.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Run validation against [PdfFormat](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Run validation against [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
 1. Write the validation log and print the validation result.
 
 ```java
@@ -178,8 +178,8 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 
 This example applies explicit margin and alignment settings to a tagged paragraph.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a paragraph structure element and prepare [PositionSettings](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a paragraph structure element and prepare [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
 1. Apply the position settings to the paragraph and save the document.
 
 ```java
@@ -218,8 +218,8 @@ public static void adjustPosition(Path outputFile) {
 
 Use this approach when an existing PDF should be converted to PDF/UA and tagged automatically during conversion.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create [PdfFormatConversionOptions](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/pdfformatconversionoptions/) and enable automatic tagging.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) and enable automatic tagging.
 1. Run the conversion and save the output document.
 
 ```java
@@ -243,7 +243,7 @@ public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outpu
 
 This example tags a signature form field so it becomes part of the logical structure tree.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page with a form field.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page with a form field.
 1. Add the form field to the document form collection.
 1. Create a tagged form structure element, associate it with the field, and save the document.
 
@@ -275,8 +275,8 @@ public static void createPdfWithTaggedFormField(Path outputFile) {
 
 Use this example when a tagged PDF should include a basic table-of-contents page linked to document headings.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a TOC page.
-1. Create the [TOCElement](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.logicalstructure/tocelement/) and a header that should appear in the TOC.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a TOC page.
+1. Create the [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) and a header that should appear in the TOC.
 1. Link the TOC entry to the heading and save the document.
 
 ```java
@@ -312,7 +312,7 @@ public static void createPdfWithTocPage(Path outputFile) {
 
 This example builds a more complex tagged TOC with linked page titles, nested list items, and multiple heading levels.
 
-1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and prepare a TOC page with a visible title.
+1. Create a new tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and prepare a TOC page with a visible title.
 1. Create the TOC structure, link the TOC title and entries to headings and list items, and add the related content elements.
 1. Save the final document with the advanced TOC structure.
 

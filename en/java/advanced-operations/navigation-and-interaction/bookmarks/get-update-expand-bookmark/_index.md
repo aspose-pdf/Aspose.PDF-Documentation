@@ -19,7 +19,7 @@ Aspose.PDF for Java exposes bookmarks through both the document outline model an
 
 Use this example when you need to inspect the top-level bookmark entries in the document outline.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the outlines collection.
 1. Read and print the bookmark title, style, and color values.
 
@@ -41,7 +41,7 @@ public static void getBookmarks(Path inputFile) {
 
 This example uses `PdfBookmarkEditor` to extract bookmark titles, levels, page numbers, and actions.
 
-1. Bind the source PDF to [PdfBookmarkEditor](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. Bind the source PDF to [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
 1. Extract the bookmark collection and iterate through it.
 1. Print the level, title, page number, and action information for each bookmark.
 
@@ -70,7 +70,7 @@ public static void getBookmarkPageNumber(Path inputFile) {
 
 Use this example when you need to inspect both top-level and nested outline items.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the top-level outlines and print their properties.
 1. Detect child bookmarks, then iterate through them and print their properties.
 
@@ -103,7 +103,7 @@ public static void getChildBookmarks(Path inputFile) {
 
 Use this example when an existing bookmark title and style should be modified.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Access the target outline item and its child bookmark.
 1. Update the bookmark properties and save the document.
 
@@ -125,7 +125,7 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 
 Use this example when the bookmark panel should open and show expanded outline items when the document is displayed.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Set the page mode to use outlines and mark each outline item as open.
 1. Save the updated document.
 

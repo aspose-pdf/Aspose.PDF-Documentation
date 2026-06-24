@@ -16,7 +16,7 @@ Aspose.PDF for Java supports both high-level image placement and low-level opera
 
 Use this example when you need to place an image at a fixed position on a PDF page.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add a page.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
 1. Call `page.addImage()` with the source image path and target rectangle.
 1. Save the generated PDF file.
 
@@ -34,7 +34,7 @@ public static void addImage(Path imageFile, Path outputFile) {
 
 Use this example when you need low-level control over image placement and scaling through page operators.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and open the source image stream.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and open the source image stream.
 1. Add the image to the page resources and calculate the target rectangle.
 1. Write the required graphics operators and save the document.
 
@@ -78,8 +78,8 @@ public static void addImageUsingOperators(Path imageFile, Path outputFile) throw
 
 Use this example when the image should include accessibility metadata for screen readers.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and add the image to the page.
-1. Get the inserted [XImage](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/ximage/) from page resources.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add the image to the page.
+1. Get the inserted [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) from page resources.
 1. Set the alternative text and save the PDF.
 
 ```java
@@ -104,7 +104,7 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
 
 Use this example when you want to embed image data by using Flate compression.
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and open the image stream.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and open the image stream.
 1. Add the image to page resources with `ImageFilterType.Flate`.
 1. Draw the image through page operators and save the result.
 

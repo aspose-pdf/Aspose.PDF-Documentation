@@ -17,13 +17,13 @@ Use `BoundsCheckMode` when you need to ensure that shapes fit inside a graph con
 
 ## Validate graph shape bounds
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Create a [Graph](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
-1. Create the [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.drawing/rectangle/) shape and configure its geometry.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Create a [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container and add it to the page.
+1. Create the [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) shape and configure its geometry.
 1. Enable strict bounds checking and try to add the shape to the graph collection with `BoundsCheckMode`.
 1. Handle the exception if the shape does not fit.
-1. Save the output PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Save the output PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void checkShapeBounds(Path outputFile) {

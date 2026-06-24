@@ -19,8 +19,8 @@ Aspose.PDF for Java lets you crop pages either by explicit box coordinates or ba
 
 Use this example when you need to apply the same crop area to the main page boxes.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Create the new crop [Rectangle](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/rectangle/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create the new crop [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Apply the rectangle to the crop-related page boxes and save the document.
 
 ```java
@@ -40,8 +40,8 @@ public static void cropPage(Path inputFile, Path outputFile) {
 
 Use this example when the crop area should be derived from the first detected image on the page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) to detect image placements.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) to detect image placements.
 1. Set the crop box to the image rectangle if one is found, then save the document.
 
 ```java

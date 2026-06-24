@@ -17,8 +17,8 @@ Use the `Form` facade when you need a simple field-name to field-value extractio
 
 ## Extract values from all AcroForm fields
 
-1. Open the PDF form document with the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade.
-1. Iterate through the field names from the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade and read each current field value into a map.
+1. Open the PDF form document with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
+1. Iterate through the field names from the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade and read each current field value into a map.
 
 ```java
 public static Map<String, String> getValuesFromAllFields(Path inputFile) {

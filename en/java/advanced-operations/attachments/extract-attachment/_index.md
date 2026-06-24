@@ -19,7 +19,7 @@ Aspose.PDF for Java supports several extraction flows depending on how attachmen
 
 Use this example when you need to save one specific embedded file from a PDF.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the embedded file collection until the required attachment name is found.
 1. Copy the attachment stream to the output file and stop after extraction.
 
@@ -50,7 +50,7 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 
 ## Print embedded file parameters
 
-This helper method prints the metadata stored in a [FileParams](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fileparams/) object.
+This helper method prints the metadata stored in a [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/) object.
 
 1. Check whether the file parameters object exists.
 1. Read the available checksum, creation date, modification date, and size values.
@@ -75,7 +75,7 @@ public static void printFileParams(FileParams params) {
 
 Use this example when every embedded file in the PDF should be written to an output directory.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through the embedded file collection and determine a safe output file name for each item.
 1. Print the metadata, save each attachment stream, and continue until all files are exported.
 
@@ -114,8 +114,8 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 
 Use this example when the file is attached through a page annotation instead of only through the embedded files collection.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Locate the first [FileAttachmentAnnotation](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/fileattachmentannotation/) on the page.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Locate the first [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) on the page.
 1. Read its file specification, export the contents, and print the destination path.
 
 ```java

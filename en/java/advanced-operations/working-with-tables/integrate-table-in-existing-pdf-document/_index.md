@@ -19,7 +19,7 @@ The Java example builds PDF tables from CSV data without relying on external dat
 
 Use this example when selected CSV columns should be transformed into a styled PDF table.
 
-1. Create a [Table](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/table/) and configure its borders.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and configure its borders.
 1. Detect the required column indexes from the CSV header row.
 1. Add the header row and the requested number of data rows, then return the table.
 
@@ -58,7 +58,7 @@ Use this example when CSV input should be rendered as a PDF table document.
 
 1. Read the CSV rows from the input file.
 1. Preview a subset of the parsed rows in the console.
-1. Create a PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/), add the generated table, and save the output file.
+1. Create a PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), add the generated table, and save the output file.
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {

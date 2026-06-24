@@ -19,7 +19,7 @@ Attachments stored in a PDF document can be removed either individually or all a
 
 Use this example when one named embedded file should be deleted from the PDF.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Delete the attachment by its key from the embedded files collection.
 1. Save the updated output document.
 
@@ -36,7 +36,7 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 
 Use this approach when the entire embedded file collection should be cleared.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Delete all items from the embedded files collection.
 1. Save the cleaned output document.
 

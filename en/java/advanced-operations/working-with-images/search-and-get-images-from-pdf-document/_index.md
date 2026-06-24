@@ -16,8 +16,8 @@ Aspose.PDF for Java can inspect image placement information as well as lower-lev
 
 Use this example when you need to inspect image geometry and effective resolution on a page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) to collect image placements.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) to collect image placements.
 1. Output the size, coordinates, and resolution for each placed image.
 
 ```java
@@ -42,9 +42,9 @@ public static void extractImageParams(Path inputFile) {
 
 Use this example when you need to count grayscale and RGB images in a PDF page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) to iterate over page images.
-1. Read the [ColorType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/colortype/) of each image and output the totals.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) to iterate over page images.
+1. Read the [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) of each image and output the totals.
 
 ```java
 public static void extractImageTypesFromPdf(Path inputFile) {
@@ -82,8 +82,8 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 
 Use this example when you need to inspect accessibility text associated with page images.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/imageplacementabsorber/) to collect image placements.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) to collect image placements.
 1. Read the alternative text for each image and output the result.
 
 ```java
@@ -109,7 +109,7 @@ public static void extractImageAltText(Path inputFile) {
 
 Use this example when you need to derive effective image size and resolution from low-level page content operators.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and collect image resource names.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and collect image resource names.
 1. Track the graphics state while iterating through page operators.
 1. Resolve each image draw operation and calculate its effective dimensions and resolution.
 

@@ -17,11 +17,11 @@ Abstract: This article explains how to extract and export AcroForm data from PDF
 
 Use `com.aspose.pdf.facades.Form` to read field names and values without working through the full document object model.
 
-1. Open the source PDF form with the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade so AcroForm fields can be read without traversing the full document object model.
+1. Open the source PDF form with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade so AcroForm fields can be read without traversing the full document object model.
 1. Call `getFieldNames()` to collect all field identifiers present in the form.
 1. Iterate through those field names and call `getField(fieldName)` to read each field value.
 1. Build the output string from the extracted key-value pairs and print the aggregated form data.
-1. Close the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade in the `finally` block.
+1. Close the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade in the `finally` block.
 
 ```java
 public static void extractFormFields(Path inputFile) {
@@ -45,10 +45,10 @@ public static void extractFormFields(Path inputFile) {
 
 ## Retrieve a field value by name
 
-1. Open the source PDF form with the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade.
+1. Open the source PDF form with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
 1. Call `getField(fieldName)` with the requested field name to read its current value from the AcroForm data.
 1. Print the extracted field value.
-1. Close the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade in the `finally` block.
+1. Close the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade in the `finally` block.
 
 ```java
 public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
@@ -64,11 +64,11 @@ public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
 
 ## Export form fields to JSON
 
-1. Open the source PDF form with the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade.
+1. Open the source PDF form with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
 1. Call `getFieldNames()` to collect all available field identifiers from the AcroForm.
 1. Iterate through those fields, escape the names and values, and build a JSON object string.
 1. Write the JSON result to the output file.
-1. Close the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade in the `finally` block.
+1. Close the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade in the `finally` block.
 
 ```java
 public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws Exception {
@@ -96,10 +96,10 @@ public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws
 
 ## Export form data to XML, FDF, and XFDF
 
-1. Create the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
+1. Create the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
 1. Open an output stream for the XML file and bind the source PDF to the facade with `bindPdf(...)`.
 1. Call `exportXml(stream)` so the current form field data is serialized as XML.
-1. Close the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade after the export completes.
+1. Close the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade after the export completes.
 
 ```java
 public static void extractDataToXml(Path inputFile, Path outputFile) throws Exception {
@@ -113,10 +113,10 @@ public static void extractDataToXml(Path inputFile, Path outputFile) throws Exce
 }
 ```
 
-1. Create the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
+1. Create the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
 1. Open an output stream for the FDF file and bind the source PDF to the facade with `bindPdf(...)`.
 1. Call `exportFdf(stream)` so the form field data is serialized in FDF format.
-1. Close the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade after the export completes.
+1. Close the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade after the export completes.
 
 ```java
 public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exception {
@@ -130,10 +130,10 @@ public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exce
 }
 ```
 
-1. Create the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
+1. Create the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
 1. Open an output stream for the XFDF file and bind the source PDF to the facade with `bindPdf(...)`.
 1. Call `exportXfdf(stream)` so the form field data is serialized in XFDF format.
-1. Close the [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/form/) facade after the export completes.
+1. Close the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade after the export completes.
 
 ```java
 public static void extractDataToXfdf(Path inputFile, Path outputFile) throws Exception {

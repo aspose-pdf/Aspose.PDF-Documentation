@@ -19,7 +19,7 @@ Aspose.PDF for Java lets you insert blank pages or import pages from another doc
 
 Use this example when you need to add a blank page in the middle of an existing PDF.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Insert a new page into the target position in the page collection.
 1. Save the updated document.
 
@@ -36,7 +36,7 @@ public static void insertEmptyPage(Path inputFile, Path outputFile) {
 
 Use this example when you need to extend the document with a new blank last page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Add a new page to the end of the page collection.
 1. Save the modified PDF.
 
@@ -53,7 +53,7 @@ public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
 
 Use this example when you want to import a page from one PDF into another PDF.
 
-1. Create the destination [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) and open the source document.
+1. Create the destination [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and open the source document.
 1. Add any required destination content and import the target page from the source PDF.
 1. Save the resulting document.
 

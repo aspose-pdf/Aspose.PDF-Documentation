@@ -17,9 +17,9 @@ Aspose.PDF for Java exposes PDF security operations through the `PdfFileSecurity
 
 ## Encrypt a PDF with user and owner passwords
 
-1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
-1. Configure the [DocumentPrivilege](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/documentprivilege/) and [KeySize](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/keysize/) properties required by the example.
-1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/).
+1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
+1. Configure the [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) and [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) properties required by the example.
+1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
 public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFile) {
@@ -39,9 +39,9 @@ public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFi
 
 ## Decrypt a protected PDF
 
-1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
+1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
 1. Decrypt the protected document with the owner password.
-1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/).
+1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
 public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) {
@@ -67,10 +67,10 @@ The `PdfFileSecurityExamples` class demonstrates:
 
 To restrict actions such as printing and copying:
 
-1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
-1. Set the required [DocumentPrivilege](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/documentprivilege/) permissions or encryption options.
+1. Create and bind the [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) facade to the source PDF document.
+1. Set the required [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) permissions or encryption options.
 1. Set the properties required by the example.
-1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/en/java/com.aspose.pdf.facades/pdffilesecurity/).
+1. Save the updated PDF document through [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
 public static void setPdfPrivilegesWithPasswords(Path inputFile, Path outputFile) {

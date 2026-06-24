@@ -19,8 +19,8 @@ Aspose.PDF for Java can both report page dimensions and update them.
 
 Use this example when you need to resize an existing page and inspect the page boxes before and after the change.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Get the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) and print its current box values.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Get the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and print its current box values.
 1. Set the new page size and save the document.
 
 ```java
@@ -39,7 +39,7 @@ public static void setPageSize(Path inputFile, Path outputFile) {
 
 Use this example when you need to read the visible dimensions of a page.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Get the page rectangle with rotation handling enabled.
 1. Output the page width and height.
 
@@ -56,8 +56,8 @@ public static void getPageSize(Path inputFile) {
 
 Use this example when you need to compare page dimensions before and after accounting for rotation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Rotate the target [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Rotate the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Read the page rectangle with and without rotation handling and output both values.
 
 ```java

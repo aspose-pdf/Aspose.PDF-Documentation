@@ -19,10 +19,10 @@ Creating PDF files in code is a common requirement for reports, invoices, and ge
 
 To create a PDF document programmatically:
 
-1. Create a [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) object.
-1. Add a [Page](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/page/) to the document.
-1. Add a [TextFragment](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/textfragment/) to the page paragraphs.
-1. Save the [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/) to an output file.
+1. Create a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) object.
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) to the document.
+1. Add a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) to the page paragraphs.
+1. Save the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) to an output file.
 
 ## Create a simple PDF document
 

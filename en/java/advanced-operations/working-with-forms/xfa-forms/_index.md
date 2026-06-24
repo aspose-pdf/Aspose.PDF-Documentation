@@ -17,9 +17,9 @@ XFA forms can be converted to standard AcroForms so they can be processed with t
 
 ## Convert a dynamic XFA form to an AcroForm
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the document [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/form/) and set the required [FormType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/formtype/) properties.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the document [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) and set the required [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) properties.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) {
@@ -32,9 +32,9 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 
 ## Convert an XFA form with `ignoreNeedsRendering`
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
-1. Access the document [Form](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/form/) and set the required `ignoreNeedsRendering` and [FormType](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/formtype/) properties.
-1. Save the updated PDF [Document](https://reference.aspose.com/pdf/en/java/com.aspose.pdf/document/).
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the document [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) and set the required `ignoreNeedsRendering` and [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) properties.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertXfaFormWithIgnoreNeedsRendering(Path inputFile, Path outputFile) {
