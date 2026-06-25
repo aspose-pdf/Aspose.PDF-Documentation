@@ -32,3 +32,4 @@ The advanced operations section groups the Java workflows used for editing, insp
 - [Securing and Signing](/pdf/java/securing-and-signing/) - protect and sign your PDF document programmatically
 - [Working with Vector Graphics](/pdf/java/working-with-vector-graphics/) - manipulate vector graphics in PDF documents.
 - [Working with ZUGFeRD](/pdf/java/working-with-zugferd/) - work with ZUGFeRD-compliant PDF documents.
+- [Working with PDF Operators](/pdf/java/working-with-operators/) - work with PDF operators for advanced PDF manipulation.
