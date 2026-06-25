@@ -1,14 +1,16 @@
 ---
-title: Orientación de Página
+title: Orientación de página
+linktitle: Orientación de página
 type: docs
 weight: 10
 url: /es/reportingservices/page-orientation/
-lastmod: "2021-06-05"
+description: Configure la orientación de página para informes PDF en Aspose.PDF for Reporting Services. Personalice los diseños para una mejor presentación.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-El Lenguaje de Definición de Informes no permite especificar la orientación de las páginas en el informe explícitamente. Con Aspose.Pdf para Reporting Services, puede instruir fácilmente al exportador para producir documentos PDF con orientación de página apaisada. La orientación predeterminada es vertical.
+El lenguaje de definición de informes (Report Definition Language) no permite especificar la orientación de las páginas del informe de forma explícita. Con Aspose.Pdf for Reporting Services puede indicar fácilmente al exportador que produzca documentos PDF con orientación de página horizontal. La orientación predeterminada es vertical.
 
 {{% /alert %}}
 
@@ -17,7 +19,7 @@ El Lenguaje de Definición de Informes no permite especificar la orientación de
 La orientación predeterminada es vertical.
 **Nombre del Parámetro**: IsLandscape
 **Tipo de Dato**: Boolean
-**Valores soportados**: True, False (predeterminado)
+**Valores compatibles**: True, False (por defecto)
 
 **Ejemplo**
 {{< highlight csharp >}}
@@ -33,3 +35,5 @@ La orientación predeterminada es vertical.
 {{< /highlight >}}
 
 {{% /alert %}}
+
+

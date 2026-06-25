@@ -1,43 +1,44 @@
 ---
-title: Reporting Services and SharePoint configuration
+title: Configuration de Reporting Services et SharePoint
+linktitle: Configuration de Reporting Services et SharePoint
 type: docs
 weight: 40
 url: /fr/reportingservices/reporting-services-and-sharepoint-configuration/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Maintenant que SharePoint est installé et configuré sur le serveur RS et que RS est configuré et mis en place via le Gestionnaire de configuration de Reporting Services, nous pouvons passer à la configuration dans l'administration centrale. RS 2008 R2 a vraiment simplifié ce processus. Nous avions l'habitude d'avoir un processus en 3 étapes à réaliser pour que cela fonctionne. Maintenant, il n'y a plus qu'une seule étape.
+Maintenant que SharePoint est installé et configuré sur le serveur RS et que RS est configuré via le Reporting Services Configuration Manager, nous pouvons passer à la configuration dans Central Admin. RS 2008 R2 a vraiment simplifié ce processus. Auparavant, nous devions suivre un processus en 3 étapes pour le faire fonctionner. Maintenant, nous n'avons plus qu'une seule étape.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Nous voulons aller sur le site Web de l'administrateur central, puis dans Paramètres généraux de l'application. Vers le bas, nous verrons Reporting Services.
+Nous voulons accéder au site Web Central Administrator, puis à Paramètres d'application généraux. Vers le bas, nous verrons Reporting Services.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_1.png)
-**Image1**:- Boîte de dialogue de configuration de SharePoint
+**Image1**:- boîte de dialogue de configuration SharePoint
 
-Sélectionnez le lien "Intégration de Reporting Services". L'écran suivant s'affichera.
+Sélectionnez le lien "Reporting Services Integration". L'écran suivant sera affiché.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_2.png)
-**Image2**:- Spécifiez les identifiants d'intégration des services de rapports
+**Image2**:- Spécifier les informations d’identification d’intégration de Reporting Services
 
 {{% /alert %}}
 
-## URL du service Web:
+## URL du service Web :
 
-**Nous fournirons l'URL du serveur de rapports que nous avons trouvée dans le Gestionnaire de configuration des services de rapports.**
+**Nous fournirons l'URL du serveur de rapports que nous avons trouvé dans le Gestionnaire de configuration des services de rapports.**
 
-## Mode d'authentification:
+## Mode d'authentification :
 
-**Nous sélectionnerons également un mode d'authentification. Le lien MSDN suivant explique en détail ce qu'ils sont.
-Vue d'ensemble de la sécurité pour les services de rapports en mode intégré SharePoint**
+**Nous sélectionnerons également un mode d'authentification. Le lien MSDN suivant explique en détail ce que c’est.
+Vue d'ensemble de la sécurité pour Reporting Services en mode intégré SharePoint**
 
 {{% alert color="primary" %}}
 
-**En bref, si votre site utilise l'authentification par revendications, vous utiliserez toujours l'authentification de confiance, quel que soit votre choix ici. Si vous souhaitez transmettre les identifiants Windows, vous voudrez choisir l'authentification Windows. Pour l'authentification de confiance, nous transmettrons le jeton SPUser et ne compterons pas sur l'identifiant Windows. Vous voudrez également utiliser l'authentification de confiance si vous avez configuré vos sites en mode classique pour NTLM et que RS est configuré pour NTLM. Kerberos serait nécessaire pour utiliser l'authentification Windows et pour la transmettre à votre source de données.**
+**En bref, si votre site utilise l'authentification par revendications, vous utiliserez toujours l'authentification fiable quel que soit votre choix ici. Si vous souhaitez transmettre les informations d'identification Windows, vous devez choisir l'authentification Windows. Pour l'authentification fiable, nous transmettrons le jeton SPUser et ne dépendrons pas des informations d'identification Windows. Vous souhaiterez également utiliser l'authentification fiable si vous avez configuré vos sites en mode classique pour NTLM et que RS est configuré pour NTLM. Kerberos serait nécessaire pour utiliser l'authentification Windows et la transmettre à votre source de données.**
 
 {{% /alert %}}
 
@@ -45,52 +46,55 @@ Vue d'ensemble de la sécurité pour les services de rapports en mode intégré 
 
 {{% alert color="primary" %}}
 
-**Cela vous donne la possibilité d'activer les Services de Reporting sur toutes les collections de sites, ou vous pouvez choisir celles sur lesquelles vous souhaitez l'activer. Cela signifie simplement quels sites pourront utiliser les Services de Reporting. Une fois terminé, vous devriez voir les résultats suivants**
+**Cela vous donne la possibilité d’activer les Reporting Services sur toutes les collections de sites, ou vous pouvez choisir celles sur lesquelles vous souhaitez les activer. Cela signifie simplement quels sites pourront utiliser les Reporting Services. Une fois terminé, vous devriez voir les résultats suivants**
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_3.png)
 
-**Image3 :**- Intégration réussie des Services de Reporting avec l'environnement SharePoint
+**Image3:**- Intégration réussie des Reporting Services avec l’environnement SharePoint
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-En revenant à l'URL ReportServer, nous devrions voir quelque chose de similaire à ce qui suit
+En revenant à l’URL ReportServer, nous devrions voir quelque chose de similaire à ce qui suit
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_4.png)
 
-**Image4 :**- Les Services de Reporting sont connectés avec succès à l'environnement SharePoint
+**Image4:**- Les Reporting Services sont connectés avec succès à l’environnement SharePoint
 
-**REMARQUE :** ***Si votre site SharePoint est configuré pour SSL, il n'apparaîtra pas dans cette liste. C'est un problème connu et cela ne signifie pas qu'il y a un problème. Vos rapports devraient toujours fonctionner.***
+**NOTE:** ***Si votre site SharePoint est configuré pour SSL, il n’apparaîtra pas dans cette liste. C’est un problème connu et cela ne signifie pas qu’il y a un problème. Vos rapports devraient toujours fonctionner.***
 {{% /alert %}}
+
 {{% alert color="primary" %}}
 
-Maintenant que nous avons intégré avec succès les deux produits, nous sommes prêts à utiliser les Services de Reporting dans SharePoint 2010. Comme la version précédente, nous avons une fonctionnalité (activée lorsque nous configurons l'intégration des Services de Reporting) dans la "Fonctionnalité de collection de sites". De plus, l'installation a ajouté 3 types de contenu à ajouter à notre site. Dans l'Image 7, nous pouvons voir 2 de ces types de contenu ajoutés dans une bibliothèque de documents pour créer un rapport personnalisé, comme nous pouvons le voir dans l'Image5 ci-dessous.
+Maintenant que nous avons intégré avec succès les deux produits, nous sommes prêts à utiliser Reporting Services dans SharePoint 2010. Comme dans la version précédente, nous disposons d’une fonctionnalité (activée lorsque nous configurons l’intégration de Reporting Services) dans la « Site Collection Feature ». L’installation a également ajouté 3 types de contenu à ajouter à notre site. Dans l’Image 7, nous pouvons voir 2 de ces types de contenu ajoutés dans une bibliothèque de documents pour créer un rapport personnalisé en les utilisant, comme nous pouvons le voir dans l’Image5 ci‑dessous.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_5.png)
 
-**Image5:**- Générateur de rapports
+**Image5 :**- Report Builder
 
-Le "Générateur de rapports" est un contrôle ActiveX, nous devons donc le télécharger sur le serveur, comme nous pouvons le voir dans l'Image 6 ci-dessous.
+Le “Reporter Builder” est un contrôle ActiveX, nous devons donc le télécharger sur le serveur, comme nous pouvons le voir dans l’Image 6 ci‑dessous.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_6.png)
 
-**Image6:**- Télécharger et installer le Générateur de rapports
+**Image6:**- Télécharger et installer Report Builder
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Une fois le processus de téléchargement terminé, chargez le contrôle "Générateur de rapports". Maintenant, nous sommes prêts à concevoir notre premier rapport, comme indiqué dans l'Image7 ci-dessous.
+Une fois le processus de téléchargement terminé, chargez le contrôle “Report Builder”. Nous sommes maintenant prêts à concevoir notre premier rapport, comme le montre l'Image7 ci‑dessous.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_7.png)
 
-**Image7:**- Générateur de rapports – Nouvel assistant de génération de rapport
+**Image7:**- Report Builder – Assistant de génération d’un nouveau rapport
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Après avoir créé notre rapport, nous pourrions le sauvegarder dans la bibliothèque de documents créée pour placer les rapports dans notre SharePoint 2010. L'autre type de contenu doit être utilisé pour créer une connexion partagée en tant que source de données et les enregistrer dans une bibliothèque de documents dans SharePoint. Nous pouvons créer une bibliothèque de documents, ajouter ce type de contenu et après nous pouvons avoir nos connexions disponibles pour changer la source de données des rapports.
+Après avoir créé notre rapport, nous pouvons l’enregistrer dans la bibliothèque de documents créée pour stocker les rapports dans notre SharePoint 2010. L’autre type de contenu doit être utilisé pour créer une connexion partagée en tant que source de données et les enregistrer dans une bibliothèque de documents dans SharePoint. Nous pouvons créer une bibliothèque de documents, ajouter ce type de contenu et, ainsi, disposer de nos connexions disponibles pour modifier la source de données des rapports.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_8.png)
 
 **Image8:**- Intégration réussie d'Aspose.PDF pour Reporting Services avec MS SharePoint
 {{% /alert %}}
+
+

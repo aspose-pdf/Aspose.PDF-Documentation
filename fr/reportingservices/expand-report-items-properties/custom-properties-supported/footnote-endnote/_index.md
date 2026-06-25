@@ -1,29 +1,30 @@
 ---
 title: Note de bas de page Note de fin
+linktitle: Note de bas de page Note de fin
 type: docs
 weight: 30
 url: /fr/reportingservices/footnote-endnote/
-lastmod: "2021-06-05"
+description: Ajoutez des notes de bas de page et des notes de fin à vos rapports PDF avec Aspose.PDF for Reporting Services. Fournissez des références détaillées aux documents.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Report Builder ne peut pas définir la note de bas de page ou la note de fin pour les zones de texte. Avec Aspose.Pdf pour Reporting Services, vous pouvez le faire facilement en ajoutant des propriétés personnalisées.
+Report Builder ne peut pas définir la note de bas de page ou la note de fin pour les zones de texte. Avec Aspose.Pdf for Reporting Services, vous pouvez le faire facilement en ajoutant des propriétés personnalisées.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 Note de bas de page
-**Nom de la propriété personnalisée**: Footnote
-**Valeur de la propriété personnalisée**: *la* *valeur* *doit* *être* *une* *chaîne*
+**Propriété personnalisée** **Nom**: Note de bas de page
+**Valeur de la propriété personnalisée**: *la* *valeur* *doit* *être* *une* *chaîne*
 
 Note de fin
-**Nom de la propriété personnalisée**: Endnote
-**Valeur de la propriété personnalisée**: *la* *valeur* *doit* *être* *une* *chaîne*
-{{% /alert %}}
+**Propriété personnalisée** **Nom**: Note de fin
+**Valeur de la propriété personnalisée**: *la* *valeur* *doit* *être* *une* *chaîne*
 
 {{% alert color="primary" %}}
-Dans l'exemple suivant, le rapport contient une zone de texte avec la valeur 'AsposePdf4RS', et nous voulons ajouter une description complémentaire sous la forme d'une note de bas de page avec le texte "Un moteur de rendu PDF optionnel pour SSRS de Aspose Pty. Ltd.".
+Dans l'exemple suivant, le rapport contient une Textbox avec la valeur 'AsposePdf4RS', et nous voulons ajouter une description supplémentaire sous la forme d'une note de bas de page avec le texte "An optional PDF renderer for SSRS from Aspose Pty. Ltd.".
 {{% /alert %}}
 
 **Exemple**
@@ -43,7 +44,7 @@ Dans l'exemple suivant, le rapport contient une zone de texte avec la valeur 'As
                     <CustomProperties>
                  <CustomProperty>
                       <Name>Footnote</Name>
-                      <Value>Un moteur de rendu PDF optionnel pour SSRS de Aspose Pty. Ltd.</Value>
+                      <Value>An optional PDF renderer for SSRS from Aspose Pty. Ltd.</Value>
                       </CustomProperty>
                  </CustomProperties>
                        </TextRun>
@@ -52,3 +53,5 @@ Dans l'exemple suivant, le rapport contient une zone de texte avec la valeur 'As
 </Paragraphs>
 </Textbox>
 ```
+{{% /alert %}}
+

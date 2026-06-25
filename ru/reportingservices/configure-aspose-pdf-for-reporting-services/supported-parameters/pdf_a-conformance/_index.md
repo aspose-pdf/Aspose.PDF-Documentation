@@ -1,16 +1,18 @@
 ---
-title: PDF_A Conformance
+title: Соответствие PDF_A
+linktitle: Соответствие PDF_A
 type: docs
 weight: 100
 url: /ru/reportingservices/pdf_a-conformance/
-lastmod: "2025-05-22"
+description: Включите соответствие PDF/A в Aspose.PDF for Reporting Services. Создавайте архивно‑совместимые документы без усилий.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Вы можете получить введение в соответствие PDF/A (архивируемого PDF) в документации Aspose.PDF.
+Вы можете получить вводную информацию о соответствии PDF/A (архивируемый PDF) в документации Aspose.PDF.
 
-Если вы хотите создать документ PDF/A, добавьте следующий параметр отчета.
+Если вы хотите создать документ PDF/A, добавьте следующий параметр отчёта.
 
 {{% /alert %}}
 
@@ -35,3 +37,4 @@ lastmod: "2025-05-22"
 {{< /highlight >}}
 
 {{% /alert %}}
+

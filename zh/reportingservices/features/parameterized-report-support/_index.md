@@ -1,19 +1,28 @@
 ---
-title: 简单且轻量的部署
+title: 参数化报告支持
+linktitle: 参数化报告支持
 type: docs
-weight: 40
-url: /zh/reportingservices/easy-and-lightweight-deployment/
-lastmod: "2021-06-05"
+weight: 20
+url: /zh/reportingservices/parameterized-report-support/
+lastmod: "2026-06-19"
 ---
 
-**Aspose.Pdf for Reporting Services** 是一个为 Microsoft SQL Server 2016/2017/2019/2022 Reporting Services 和 Power BI Report Server 提供的自定义渲染扩展。Aspose.Pdf for Reporting Services 作为一个单一的 MSI 安装程序提供，可以安装在运行以下任一系统的计算机上：
+参数化报告是一种接受用于报告处理的输入值的报告。使用参数化报告，您可以根据报告运行时设置的值来改变报告的输出。Aspose.Pdf for Reporting Services 支持两种参数：报告服务器参数和报告参数。报告服务器参数用于报告服务器上的所有报告。如果您希望使某些参数适用于特定报告，则应使用报告参数。
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
+当前，Aspose.Pdf 渲染器支持广泛的参数，例如：
 
-Aspose.Pdf for Reporting Services 易于部署和管理，因为它仅由一个 .NET 程序集 Aspose.Pdf.ReportingServices.dll 组成，完全用 C# 编写，符合 CLS，并且只包含安全的托管代码。服务器上需要安装 .NET Framework 4.8.1。
+## **支持的参数**
+在当前版本中，Aspose.PDF 渲染支持参数的许多方面，包括：
 
-必须将 Aspose.Pdf.ReportingServices.dll 复制到 ReportServer\bin 目录，并且必须更新配置文件，以便 Reporting Services 能够识别新的渲染扩展。 这些步骤由 Aspose.Pdf for Reporting Services 安装程序执行，但您也可以按照本文档中进一步描述的手动执行这些步骤。
+- 页面方向
+- HTML 格式化
+- 安全属性
+- 页面尺寸
+- 页面边距尺寸
+- 字体嵌入
+- PDF/A 合规性
+- XMP 元数据
+- 调试信息
+
+了解更多关于参数的信息 [配置 Aspose.PDF 用于 Reporting Services](/pdf/zh/reportingservices/configure-aspose-pdf-for-reporting-services/) 文章。
+

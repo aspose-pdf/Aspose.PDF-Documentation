@@ -1,14 +1,16 @@
 ---
 title: Orientasi Halaman
+linktitle: Orientasi Halaman
 type: docs
 weight: 10
 url: /id/reportingservices/page-orientation/
-lastmod: "2021-06-05"
+description: Konfigurasikan orientasi halaman untuk laporan PDF di Aspose.PDF for Reporting Services. Sesuaikan tata letak untuk tampilan yang lebih baik.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Bahasa Definisi Laporan tidak memungkinkan untuk menentukan orientasi halaman dalam laporan secara eksplisit. Dengan Aspose.Pdf untuk Layanan Pelaporan, Anda dapat dengan mudah menginstruksikan eksportir untuk menghasilkan dokumen PDF dengan orientasi halaman lanskap. Orientasi default adalah potret.
+Report Definition Language tidak mengizinkan penentuan orientasi halaman dalam laporan secara eksplisit. Dengan Aspose.PDF for Reporting Services Anda dapat dengan mudah menginstruksikan pengekspor untuk menghasilkan dokumen PDF dengan orientasi halaman lanskap. Orientasi default adalah potret.
 
 {{% /alert %}}
 
@@ -33,3 +35,4 @@ Orientasi default adalah potret.
 {{< /highlight >}}
 
 {{% /alert %}}
+

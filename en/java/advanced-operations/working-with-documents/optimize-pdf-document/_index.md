@@ -56,7 +56,7 @@ public static void reduceSizePdf(Path inputFile, Path outputFile) throws Excepti
 Use this approach when image-heavy documents need a smaller file size and some image quality reduction is acceptable.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Create [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf.optimization/optimizationoptions/) and enable image compression with the required quality level.
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) and enable image compression with the required quality level.
 1. Optimize the document resources with those settings.
 1. Save the optimized file and compare file sizes.
 

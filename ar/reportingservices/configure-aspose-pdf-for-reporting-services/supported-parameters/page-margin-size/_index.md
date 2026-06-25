@@ -1,37 +1,39 @@
 ---
 title: حجم هامش الصفحة
+linktitle: حجم هامش الصفحة
 type: docs
 weight: 70
 url: /ar/reportingservices/page-margin-size/
-lastmod: "2021-06-05"
+description: قم بضبط أحجام هوامش الصفحة في تقارير PDF باستخدام Aspose.PDF for Reporting Services لتحسين قابلية القراءة والتخطيط.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-لا يدعم مصمم تقارير خدمات التقارير إعداد حجم هوامش الصفحة. يوفر Aspose.Pdf لخدمات التقارير أربعة معلمات لتعيين حجم الهامش المقابل للصفحة، وهي:
+مصمم تقارير Reporting Services لا يدعم ضبط حجم هوامش الصفحة. يوفر Aspose.Pdf for Reporting Services أربعة معلمات لتعيين حجم هامش الصفحة المقابل، وهي:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 1)  
 **اسم المعلمة**: PageMarginLeft  
-**نوع البيانات**: Float  
-**القيم المدعومة**: أي رقم موجب أو صفر
+**نوع التاريخ**: Float  
+**القيم المدعومة**:  Any positive number or zero
 
 2)  
-**اسم المعلمة**: PageMarginRight  
-**نوع البيانات**: Float  
-**القيم المدعومة**: أي رقم موجب أو صفر
+**اسم المعامل**: PageMarginRight  
+**نوع التاريخ**: Float  
+**القيم المدعومة**:  Any positive number or zero
 
 3)  
-**اسم المعلمة**: PageMarginTop  
-**نوع البيانات**: Float  
-**القيم المدعومة**: أي رقم موجب أو صفر
+**اسم المعامل**: PageMarginTop  
+**نوع التاريخ**: Float  
+**القيم المدعومة**:  Any positive number or zero
 
 4)  
-**اسم المعلمة**: PageMarginBottom  
-**نوع البيانات**: Float  
-**القيم المدعومة**: أي رقم موجب أو صفر
+**اسم المعامل**: PageMarginBottom  
+**نوع التاريخ**: Float  
+**القيم المدعومة**:  Any positive number or zero
 
 **مثال**
 
@@ -40,19 +42,16 @@ lastmod: "2021-06-05"
 <Render>
 …
     <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
-
     <Configuration>
-```
-
-<PageMarginLeft>50</PageMarginLeft>
-<PageMarginRight>50</PageMarginRight>
-<PageMarginTop>50</PageMarginTop>
-<PageMarginBottom>50</PageMarginBottom>
-</Configuration>
-</Extension>
+    <PageMarginLeft>50</PageMarginLeft>
+    <PageMarginRight>50</PageMarginRight>
+    <PageMarginTop>50</PageMarginTop>
+    <PageMarginBottom>50</PageMarginBottom>
+    </Configuration>
+    </Extension>
 </Render>
 
 {{< /highlight >}}
 
 {{% /alert %}}
-```
+

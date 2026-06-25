@@ -1,23 +1,25 @@
 ---
-title: Justify FullJustify Text Alignment
+title: Penjajaran Teks Justify FullJustify
+linktitle: Penjajaran Teks Justify FullJustify
 type: docs
 weight: 40
 url: /id/reportingservices/justify-fulljustify-text-alignment/
-lastmod: "2021-06-05"
+description: Capai penjajaran teks yang sempurna dalam laporan PDF dengan Aspose.PDF for Reporting Services. Dukung opsi justify dan full justify.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Pembuat laporan tidak mendukung kemampuan untuk menentukan perataan teks untuk kotak teks “Justify” dan “FullJustify”. Dengan Aspose.Pdf untuk Layanan Pelaporan, Anda dapat melakukannya dengan mudah dengan menambahkan properti kustom.
+Report builder tidak mendukung kemampuan untuk menentukan penjajaran teks untuk textbox “Justify” dan “FullJustify”. Dengan Aspose.Pdf for Reporting Services, Anda dapat melakukannya dengan mudah dengan menambahkan properti khusus.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 **Nama Properti Kustom** : TextAlignment  
-**Tipe Properti Kustom** : String  
-**Nilai Properti Kustom** : Justify, FullJustify  
+**Jenis Properti Khusus** : String  
+**Nilai Properti Khusus** : Justify, FullJustify  
 
-Dalam laporan, kode harus seperti berikut ini:
+Dalam laporan kode harus seperti berikut:
 
 **Contoh**
 
@@ -33,3 +35,4 @@ Dalam laporan, kode harus seperti berikut ini:
 </Textbox>
 {{< /highlight >}}
 {{% /alert %}}
+

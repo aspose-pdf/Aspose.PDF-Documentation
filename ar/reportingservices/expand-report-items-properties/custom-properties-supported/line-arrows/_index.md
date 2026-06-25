@@ -1,65 +1,64 @@
 ---
-title: الأسهم الخطية
+title: أسهم الخط
+linktitle: أسهم الخط
 type: docs
 weight: 20
 url: /ar/reportingservices/line-arrows/
-lastmod: "2021-06-05"
+description: تعلم كيفية إضافة أسهم الخط في تقارير PDF باستخدام Aspose.PDF لخدمات التقارير. حسّن مظهر التقارير بسهولة.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-مواصفات RDL لا تحدد الأسهم حول عنصر الخط، لذا فإن مُنشئ التقارير لا يدعم إعداد الأسهم للخط. باستخدام Aspose.Pdf لخدمات التقارير يمكنك القيام بذلك بسهولة.
+مواصفة RDL لا تحدد الأسهم لعناصر الخط، لذلك لا يدعم مُنشئ التقارير إعداد الأسهم للخط. باستخدام Aspose.Pdf لخدمات التقارير يمكنك القيام بذلك بسهولة.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-حاليًا، يدعم عارض Aspose.PDF إضافة الأسهم في البداية أو النهاية للخطوط عن طريق إضافة خصائص مخصصة.
+حاليًا، يدعم مُعالج Aspose.PDF إضافة أسهم في بداية أو نهاية الخطوط عن طريق إضافة خصائص مخصصة.
 
 إضافة سهم بداية للخط  
-**اسم الخاصية المخصصة**: HasArrowAtStart  
+**خاصية مخصصة** **الاسم**: HasArrowAtStart  
 **قيمة الخاصية المخصصة**: True  
 
 إضافة سهم نهاية للخط  
-**اسم الخاصية المخصصة**: HasArrowAtEnd  
+**خاصية مخصصة** **الاسم**: HasArrowAtEnd  
 **قيمة الخاصية المخصصة**: True  
 
-على سبيل المثال، هناك خطين باسم 'line1' و 'line2' في ملف التقرير الحالي، و line1 لديه سهم بداية، و line2 لديه سهم بداية ونهاية، لتلبية هذه المتطلبات، يمكنك إضافة خصائص مخصصة كما هو موضح في جزء الكود التالي.
+على سبيل المثال، هناك خطان اسمهما 'line1' و 'line2' في ملف التقرير الحالي، والخط line1 يحتوي على سهم البداية، والخط line2 يحتوي على سهمي البداية والنهاية، لتلبية هذه المتطلبات، يمكنك إضافة الخصائص المخصصة كما هو موضح في المقتطف البرمجي التالي.
 
 **مثال**
 
 {{< highlight csharp >}}
-
  <Line Name="line1">
-```
-
-<Style>
-  ......
-</style>
-<CustomProperties>
-  <CustomProperty>
-    <Name>HasArrowAtStart</Name>
-    <Value>True</Value>
-  </CustomProperty>
-</CustomProperties>
+    <Style>
+      ......
+    </style>
+    <CustomProperties>
+      <CustomProperty>
+        <Name>HasArrowAtStart</Name>
+        <Value>True</Value>
+      </CustomProperty>
+    </CustomProperties>
 </Line>
 ......
 <Line Name="line2">
-<Style>
-  ......
-</style>
-<CustomProperties>
-  <CustomProperty>
-    <Name>HasArrowAtStart</Name>
-    <Value>True</Value>
-  </CustomProperty>
-  <CustomProperty>
-    <Name>HasArrowAtEnd</Name>
-    <Value>True</Value>
-  </CustomProperty>
-</CustomProperties>
+    <Style>
+      ......
+    </style>
+    <CustomProperties>
+      <CustomProperty>
+        <Name>HasArrowAtStart</Name>
+        <Value>True</Value>
+      </CustomProperty>
+<CustomProperty>
+        <Name>HasArrowAtEnd</Name>
+        <Value>True</Value>
+      </CustomProperty>
+    </CustomProperties>
 </Line>
 
 {{< /highlight >}}
 {{% /alert %}}
-```
+

@@ -1,14 +1,16 @@
 ---
-title: PDF_A Conformance
+title: مطابقة PDF_A
+linktitle: مطابقة PDF_A
 type: docs
 weight: 100
 url: /ar/reportingservices/pdf_a-conformance/
-lastmod: "2025-05-22"
+description: تمكين مطابقة PDF/A في Aspose.PDF for Reporting Services. إنشاء مستندات متوافقة مع الأرشفة بسهولة.
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-يمكنك الحصول على مقدمة حول توافق PDF/A (PDF المؤرشف) في وثائق Aspose.PDF.
+يمكنك الحصول على مقدمة حول مطابقة PDF/A (PDF القابل للأرشفة) في وثائق Aspose.PDF.
 
 إذا كنت تريد إنشاء مستند PDF/A، أضف معلمة التقرير التالية.
 
@@ -17,7 +19,7 @@ lastmod: "2025-05-22"
 
 {{% alert color="primary" %}}
 
-**اسم المعلمة**: PdfConformance  
+**اسم المعامل**: PdfConformance  
 **نوع البيانات**: String  
 **القيم المدعومة**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
 
@@ -35,3 +37,4 @@ lastmod: "2025-05-22"
 {{< /highlight >}}
 
 {{% /alert %}}
+

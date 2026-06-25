@@ -1,37 +1,38 @@
 ---
-title: Reporting Services ServerでのSharePointのセットアップ
+title: Reporting Services Server に SharePoint を設定する
+linktitle: Reporting Services Server に SharePoint を設定する
 type: docs
 weight: 30
 url: /ja/reportingservices/setting-up-sharepoint-on-reporting-services-server/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-次に、SharePoint WFEで行ったのと同様の手順を実行する必要があります。最初にやるべきことは、必須コンポーネントのインストールを行い、それが完了したらSharePointのセットアップを開始します。
+SharePoint WFE で行ったのと同様の手順を実行する必要があります。まず、Prereq uisites のインストールを実行し、完了したら SharePoint のセットアップを起動します。
 
 {{% /alert %}}
 
-セットアップのために、私はServer Farmと完全インストールを選択しました。これは、SharePointの単独インストールを望んでいないため、私のSharePoint Boxに合わせるためです。
+セットアップでは、Server Farm を選択し、SharePoint Box に合わせて完全インストールを行います。SharePoint のスタンドアロンインストールは希望しません。
 
-## SharePointの構成
+## SharePoint 設定
 
 {{% alert color="primary" %}}
 
-**SharePoint構成ウィザードでは、既存のファームに接続したいと思います。**
+**SharePoint 構成ウィザードでは、既存のファームに接続したいです。**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_1.png)
 
-**Image1:- SharePoint構成ウィザード**
+**Image1:- SharePoint 構成ウィザード**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**次に、私たちのファームが使用しているSharePoint_Configデータベースを指し示します。 If you don't know where this is, you can find out through Central Admin through System Settings -> Manager Servers in this farm.**
+**次に、ファームが使用している SharePoint_Config データベースを指定します。場所がわからない場合は、Central Admin の System Settings → Manager Servers からこのファームで確認できます。**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_2.png)
 
-**Image2:- データベース構成設定を指定する**
+**Image2:- データベース構成設定を指定**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_3.png)
 
@@ -40,9 +41,10 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-**ウィザードが完了したら、現在のところレポートサーバーボックスで行うべきことはすべてです。ReportServer URL に戻ると、別のエラーが表示されますが、それは中央管理者を通じて構成していないためです。**
+**ウィザードが完了したら、今のところ Report Server ボックスで行う必要があることはそれだけです。ReportServer の URL に戻ると、別のエラーが表示されますが、これは Central Administrator で構成していないためです。**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_4.png)
 
 **Image4:- レポートサーバーエラー**
 {{% /alert %}}
+

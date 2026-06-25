@@ -1,98 +1,100 @@
 ---
-title: Reporting Services and SharePoint configuration
+title: Конфигурация Reporting Services и SharePoint
+linktitle: Конфигурация Reporting Services и SharePoint
 type: docs
 weight: 40
 url: /ru/reportingservices/reporting-services-and-sharepoint-configuration/
-lastmod: "2021-06-05"
+lastmod: "2026-06-19"
 ---
 
 {{% alert color="primary" %}}
 
-Теперь, когда SharePoint установлен и настроен на сервере RS, а RS настроен и установлен через Диспетчер конфигурации Reporting Services, мы можем перейти к настройке в Центральном администрировании. RS 2008 R2 действительно упростил этот процесс. Ранее у нас был 3-шаговый процесс, который нужно было выполнить, чтобы это работало. Теперь у нас есть только один шаг.
+Теперь, когда SharePoint установлен и сконфигурирован на сервере RS, а RS настроен через Reporting Services Configuration Manager, мы можем перейти к настройке в Central Admin. RS 2008 R2 действительно упростил этот процесс. Раньше был трехшаговый процесс, который нужно было выполнить, чтобы всё работало. Теперь у нас только один шаг.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Мы хотим перейти на веб-сайт Центрального администратора, а затем в Общие настройки приложения. Внизу мы увидим Reporting Services.
+Мы хотим перейти на веб‑сайт Central Administrator, а затем в раздел General Application Settings. Прокручивая вниз, мы увидим Reporting Services.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_1.png)
-**Image1**:- Диалоговое окно конфигурации SharePoint
+**Image1**:- диалог конфигурации SharePoint
 
-Выберите ссылку "Интеграция с Reporting Services". Появится следующий экран.
+Выберите ссылку "Reporting Services Integration". Будет отображён следующий экран.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_2.png)
 **Image2**:- Укажите учетные данные интеграции Reporting Services
 
 {{% /alert %}}
 
-## URL веб-службы:
+## URL веб‑сервиса:
 
-**Мы предоставим URL-адрес сервера отчетов, который мы нашли в диспетчере конфигурации Reporting Services.**
+**Мы предоставим URL для сервера отчетов, который мы нашли в Reporting Services Configuration Manager.**
 
 ## Режим аутентификации:
 
-**Мы также выберем режим аутентификации. Следующая ссылка на MSDN подробно объясняет, что это такое.
-Обзор безопасности для Reporting Services в интегрированном режиме SharePoint**
+**Мы также выберем режим аутентификации. Следующая ссылка MSDN подробно описывает, что это такое.
+Обзор безопасности для Reporting Services в режиме интеграции с SharePoint**
 
 {{% alert color="primary" %}}
 
-**Короче говоря, если ваш сайт использует аутентификацию на основе заявлений, вы всегда будете использовать доверенную аутентификацию независимо от того, что вы выберете здесь. Если вы хотите передавать учетные данные Windows, вам следует выбрать аутентификацию Windows. Для доверенной аутентификации мы будем передавать токен SPUser и не будем полагаться на учетные данные Windows. Вы также захотите использовать доверенную аутентификацию, если вы настроили свои сайты в классическом режиме для NTLM, а RS настроен для NTLM. Для использования аутентификации Windows и передачи ее для вашего источника данных потребуется Kerberos.**
+**Короче говоря, если ваш сайт использует Claims Authentication, вы всегда будете использовать Trusted Authentication независимо от того, что вы выберете здесь. Если вы хотите передать учётные данные Windows, вам следует выбрать Windows Authentication. Для Trusted Authentication мы будем передавать токен SPUser и не полагаться на учётные данные Windows. Вы также захотите использовать Trusted Authentication, если вы настроили свои сайты в Classic Mode для NTLM и RS настроен на NTLM. Для использования Windows Authentication и передачи её через ваш источник данных понадобится Kerberos.**
 
 {{% /alert %}}
 
-## Активировать функцию:
+## Activate feature:
 
 {{% alert color="primary" %}}
 
-**Это дает вам возможность активировать Службы отчетности на всех коллекциях сайтов, или вы можете выбрать, на каких из них вы хотите ее активировать. Это действительно означает, какие сайты смогут использовать Службы отчетности. Когда это будет сделано, вы должны увидеть следующие результаты**
+**Это дает вам возможность активировать Reporting Services во всех коллекциях сайтов, или вы можете выбрать, в каких именно вы хотите её активировать. По сути это означает, какие сайты смогут использовать Reporting Services. Когда это будет сделано, вы должны увидеть следующие результаты**
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_3.png)
 
-**Изображение3:**- Успешная интеграция Служб отчетности с средой SharePoint
+**Image3:**- Успешная интеграция Reporting Services со средой SharePoint
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Возвращаясь к URL ReportServer, мы должны увидеть что-то подобное следующему
+Вернувшись к URL ReportServer, мы должны увидеть нечто похожее на следующее
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_4.png)
 
-**Изображение4:**- Службы отчетности успешно подключены к среде SharePoint
+**Image4:**- Reporting Services успешно подключён к среде SharePoint
 
-**ПРИМЕЧАНИЕ:** ***Если ваш сайт SharePoint настроен для SSL, он не отобразится в этом списке. Это известная проблема и не означает, что есть какая-то проблема. Ваши отчеты должны продолжать работать.***
+**NOTE:** ***Если ваш сайт SharePoint настроен на SSL, он не будет отображаться в этом списке. Это известная проблема и не означает, что есть проблема. Ваши отчёты всё равно должны работать.***
 {{% /alert %}}
-
 
 {{% alert color="primary" %}}
 
-Теперь, когда мы успешно интегрировали оба продукта, мы готовы использовать Reporting Services в SharePoint 2010. Как и в предыдущей версии, у нас есть функция (активируется при настройке интеграции Reporting Services) в "Функции коллекции сайтов". Также установка добавила 3 типа контента для добавления на наш сайт. На Изображении 7 мы можем увидеть 2 из этих типов контента, добавленных в библиотеку документов для создания пользовательского отчета, как мы можем видеть на Изображении 5 ниже.
+Now that we have successfully integrated both products, we are ready to use Reporting Services in SharePoint 2010. As the previous version we have a feature (activated when we configure Reporting Services Integration) in the “Site Collection Feature”. Also the installation added 3 content types to add to our site. In Image 7 we can see 2 of them content types added in a document library to create a custom report us ing the, as we can see in Image5 below.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_5.png)
 
-**Изображение 5:**- Конструктор отчетов
+**Image5:**- Report Builder
 
-"Конструктор отчетов" является элементом ActiveX, поэтому нам нужно загрузить его на сервер, как мы можем видеть на Изображении 6 ниже.
+The “Reporter Builder” is an ActiveX control so we need to download it over the server, as we can see in Image 6 below.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_6.png)
 
-**Изображение 6:**- Загрузка и установка Конструктора отчетов
+**Image6:**- Загрузите и установите Report Builder
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-После завершения процесса загрузки загрузите элемент управления "Конструктор отчетов". Теперь мы готовы создать наш первый отчет, как показано на Изображении 7 ниже.
+После завершения процесса загрузки загрузите элемент управления «Report Builder». Теперь мы готовы разработать наш первый отчёт, как показано ниже на Image7.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_7.png)
 
-**Image7:**- Мастер создания отчетов – Новый мастер генерации отчетов
+**Image7:**- Report Builder – Мастер создания нового отчёта
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-После создания нашего отчета мы могли сохранить его в библиотеке документов, созданной для размещения отчетов в нашем SharePoint 2010. Другой тип контента должен использоваться для создания общей связи как источника данных и сохранения их в библиотеке документов в SharePoint. Мы можем создать библиотеку документов, добавить этот тип контента и затем иметь доступные соединения для изменения источника данных отчетов.
+После создания нашего отчёта мы можем сохранить его в библиотеке документов, созданной для размещения отчётов в нашем SharePoint 2010. Другой тип содержимого должен быть использован для создания общих соединений в качестве источника данных и их сохранения в библиотеке документов в SharePoint. Мы можем создать библиотеку документов, добавить этот тип содержимого, и затем наши соединения будут доступны для изменения источника данных отчётов.
 
 ![todo:image_alt_text](reporting-services-and-sharepoint-configuration_8.png)
 
-**Image8:**- Успешная интеграция Aspose.PDF для Reporting Services с MS SharePoint
+**Image8:**- Успешная интеграция Aspose.PDF for Reporting Services с MS SharePoint
 {{% /alert %}}
+
+
