@@ -19,8 +19,6 @@ Splitting a PDF into separate files is useful when you need to export each page 
 
 [Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) is a free online application for testing PDF splitting in a browser.
 
-[![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
-
 This example uses the [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) class to open a PDF file and iterate through its pages. For each [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), it creates a new document, adds the page to it, and saves the result as a separate PDF file.
 
 To split a PDF into individual page files in Java:

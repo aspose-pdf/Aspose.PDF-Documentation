@@ -224,7 +224,7 @@ public static void convertPdfFromRgbColorspaceToGrayscale(Path inputFile, Path o
 Use this pattern when you want to apply Flate-based compression to images during PDF resource optimization.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Create [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) and set the image encoding to [ImageEncoding](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageencoding/).`Flate`.
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/document.optimizationoptions/) and set the image encoding to 'ImageEncoding'.`Flate`.
 1. Optimize the document resources and save the output file.
 
 ```java

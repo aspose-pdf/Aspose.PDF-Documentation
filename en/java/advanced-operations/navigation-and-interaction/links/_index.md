@@ -15,6 +15,6 @@ Abstract: This article explains how to manage link annotations in PDF documents 
 ---
 Link annotations can connect users to pages in the same document, external files, web resources, or application launch targets.
 
-- [Create PDF links](/java/create-links/)
-- [Extract PDF links](/java/extract-links/)
-- [Update PDF links](/java/update-links/)
+- [Create PDF links](/pdf/java/create-links/)
+- [Extract PDF links](/pdf/java/extract-links/)
+- [Update PDF links](/pdf/java/update-links/)

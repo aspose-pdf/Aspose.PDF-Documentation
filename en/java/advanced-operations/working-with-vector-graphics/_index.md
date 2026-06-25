@@ -20,8 +20,8 @@ Aspose.PDF for Java exposes vector content through `GraphicsAbsorber` and `Graph
 Use this example when you need to enumerate vector elements and inspect their page, position, and operator count.
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Create a [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) and visit the target page.
-1. Iterate through the absorbed [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) objects and output their properties.
+1. Create a 'GraphicsAbsorber' and visit the target page.
+1. Iterate through the absorbed 'GraphicElement' objects and output their properties.
 
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {

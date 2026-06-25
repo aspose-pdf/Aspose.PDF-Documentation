@@ -15,5 +15,5 @@ Abstract: This article explains how to work with bookmarks in PDF documents usin
 ---
 Bookmarks help users move through long PDF files quickly and provide a document outline similar to a table of contents.
 
-- [Add and delete bookmarks](/java/add-and-delete-bookmark/)
-- [Get, update, and expand bookmarks](/java/get-update-and-expand-bookmark/)
+- [Add and delete bookmarks](/pdf/java/add-and-delete-bookmark/)
+- [Get, update, and expand bookmarks](/pdf/java/get-update-and-expand-bookmark/)

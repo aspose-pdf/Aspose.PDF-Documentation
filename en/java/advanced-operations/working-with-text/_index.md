@@ -21,4 +21,4 @@ Aspose.PDF for Java provides text APIs for document generation, search and extra
 - [Replace text in PDF](/pdf/java/replace-text-in-pdf/)
 - [Rotate text inside PDF](/pdf/java/rotate-text-inside-pdf/)
 - [Search and extract text](/pdf/java/search-and-get-text-from-pdf/)
-- [Format text inside PDF](/java/text-formatting-inside-pdf/)
+- [Format text inside PDF](/pdf/java/text-formatting-inside-pdf/)
