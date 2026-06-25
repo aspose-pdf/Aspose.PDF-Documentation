@@ -73,10 +73,6 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 license.setLicense(new java.io.FileInputStream("Aspose.Pdf.Java.lic"));
 ```
 
-#### Setting a License Purchased Before 2005/01/22
-
-**Aspose.PDF** for Java doesn't support old licenses anymore so please contact our [sales team](https://company.aspose.com/contact) to get new license file.
-
 ### Validate the License
 
 It is possible to validate if the license has been set properly or not. The Document class has the isLicensed method that will return true if license has been properly set.

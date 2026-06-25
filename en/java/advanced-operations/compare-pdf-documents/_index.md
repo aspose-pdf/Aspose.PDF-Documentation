@@ -20,7 +20,11 @@ Aspose.PDF for Java provides both side-by-side and graphical comparison APIs for
 Use this example when you need image-based difference output for a specific pair of PDF pages.
 
 1. Open both source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objects.
+<<<<<<< HEAD
 1. Use [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) to get the page-level [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/).
+=======
+1. Use 'GraphicalPdfComparer' to get the page-level 'ImagesDifference'.
+>>>>>>> fix-java-docs
 1. Export the generated difference images and dispose the comparison result.
 
 ```java
@@ -46,7 +50,11 @@ public static void comparePdfWithGetDifferenceMethod(
 Use this example when only selected pages should be compared and saved as a side-by-side PDF result.
 
 1. Open both source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objects.
+<<<<<<< HEAD
 1. Configure [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) for the required comparison mode.
+=======
+1. Configure 'SideBySideComparisonOptions' for the required comparison mode.
+>>>>>>> fix-java-docs
 1. Compare the selected pages and save the output PDF.
 
 ```java

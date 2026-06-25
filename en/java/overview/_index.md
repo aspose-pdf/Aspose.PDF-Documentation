@@ -51,7 +51,7 @@ Let's check the next section for more details: [Working with Tables](/pdf/java/w
 **Aspose.PDF for Java** supports adding graphs to PDF documents. The Graph class is provided for this task.
 Adding Graphs to PDF documents  improve data visualization, enhanced clarity and comprehension, better decision-making support, and increased engagement with readers.
 
-Let's check Docs pages for more details: [Working with Graphs](/pdf/java/graphs/)
+Let's check Docs pages for more details: [Working with Graphs](/pdf/java/working-with-graphs/)
 
 ### Extensive Hyperlink functionality
 

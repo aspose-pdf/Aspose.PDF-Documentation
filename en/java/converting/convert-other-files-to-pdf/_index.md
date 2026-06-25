@@ -19,7 +19,11 @@ Aspose.PDF for Java supports conversion from document, markup, and page-descript
 
 Use this example when an OFD document should be converted into PDF.
 
+<<<<<<< HEAD
 1. Open the OFD source by passing the file path and [`OfdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ofdloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
+=======
+1. Open the OFD source by passing the file path and `OfdLoadOptions` into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
+>>>>>>> fix-java-docs
 1. Let Aspose.PDF parse the OFD package into the PDF document model.
 1. Save the resulting PDF to the target output path.
 

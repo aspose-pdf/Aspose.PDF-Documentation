@@ -242,7 +242,11 @@ public static void convertTiffToPdf(Path inputFile, Path outputFile) {
 
 Use this example when a CorelDRAW CDR file should be converted into PDF.
 
+<<<<<<< HEAD
 1. Open the CDR source by passing the file path and [`CdrLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cdrloadoptions/) into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
+=======
+1. Open the CDR source by passing the file path and `CdrLoadOptions` into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
+>>>>>>> fix-java-docs
 1. Let Aspose.PDF load the CorelDRAW content into the PDF document model.
 1. Save the converted PDF file to the requested output path.
 

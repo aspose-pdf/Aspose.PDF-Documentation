@@ -15,7 +15,7 @@ Abstract: This article explains how to work with PDF attachments using Aspose.PD
 ---
 Aspose.PDF for Java lets you manage embedded files and portfolio collections directly in PDF documents. In this section, you can learn how to add attachments, extract embedded files, remove attachments, and create or clear PDF portfolios.
 
-- [Add attachments to a PDF](/java/add-attachment-to-pdf-document/)
-- [Create or clear a PDF portfolio](/java/portfolio/)
-- [Remove attachments from an existing PDF](/java/removing-attachment-from-an-existing-pdf/)
-- [Extract attachments from a PDF](/java/extract-attachment/)
+- [Add attachments to a PDF](/pdf/java/add-attachment-to-pdf-document/)
+- [Create or clear a PDF portfolio](/pdf/java/portfolio/)
+- [Remove attachments from an existing PDF](/pdf/java/removing-attachment-from-an-existing-pdf/)
+- [Extract attachments from a PDF](/pdf/java/extract-attachment/)

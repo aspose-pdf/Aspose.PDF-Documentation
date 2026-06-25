@@ -27,9 +27,9 @@ The advanced operations section groups the Java workflows used for editing, insp
 - [Compare PDF documents](/pdf/java/compare-pdf-documents/) - possible to compare PDF documents content.
 - [Metadata in PDFs](/pdf/java/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data.
 - [Working with Graphs](/pdf/java/working-with-graphs/) - manipulate with shapes on the page.
-- [Working with Operators](/pdf/java/working-with-operators/) - make low-level operations in PDF.
 - [Artifacts](/pdf/java/artifacts/) - deal with watermarks and other special objects in PDF.
-- [Working with PDF layers](/pdf/java/work-with-pdf-layers/) - lock layers, extract elements, flatten, and merge PDF layers.
+- [Working with PDF layers](/pdf/working-with-pdf-layers/) - lock layers, extract elements, flatten, and merge PDF layers.
 - [Securing and Signing](/pdf/java/securing-and-signing/) - protect and sign your PDF document programmatically
 - [Working with Vector Graphics](/pdf/java/working-with-vector-graphics/) - manipulate vector graphics in PDF documents.
 - [Working with ZUGFeRD](/pdf/java/working-with-zugferd/) - work with ZUGFeRD-compliant PDF documents.
+- [Working with PDF Operators](/pdf/java/working-with-operators/) - work with PDF operators for advanced PDF manipulation.

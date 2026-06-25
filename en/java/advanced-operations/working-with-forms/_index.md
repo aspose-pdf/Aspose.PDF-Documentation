@@ -15,5 +15,5 @@ Abstract: This section explains how to work with PDF forms using Aspose.PDF for 
 ---
 Aspose.PDF for Java provides both DOM and facade APIs for PDF form workflows. You can build new AcroForms, update existing fields, exchange form data in common formats, and convert XFA-based documents to standard forms.
 
-- [Work with AcroForms](/java/acroforms/)
-- [Work with XFA forms](/java/xfa-forms/)
+- [Work with AcroForms](/pdf/java/acroforms/)
+- [Work with XFA forms](/pdf/java/xfa-forms/)

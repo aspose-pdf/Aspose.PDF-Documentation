@@ -15,8 +15,8 @@ Abstract: This section explains how to work with tables in PDF documents using A
 ---
 Aspose.PDF for Java supports both table creation and table analysis workflows. You can create rich layouts with borders, repeating rows, images, and formatted content, or detect and modify tables already present in an existing PDF.
 
-- [Add tables in existing PDF documents](/java/adding-tables/)
-- [Extract tables from existing PDF documents](/java/extracting-table/)
-- [Integrate tables with external data](/java/integrate-table/)
-- [Manipulate tables in existing PDF documents](/java/manipulating-tables/)
-- [Remove tables from existing PDF documents](/java/removing-tables/)
+- [Add tables in existing PDF documents](/pdf/java/adding-tables/)
+- [Extract tables from existing PDF documents](/pdf/java/extracting-table/)
+- [Integrate tables with external data](/pdf/java/integrate-table/)
+- [Manipulate tables in existing PDF documents](/pdf/java/manipulating-tables/)
+- [Remove tables from existing PDF documents](/pdf/java/removing-tables/)

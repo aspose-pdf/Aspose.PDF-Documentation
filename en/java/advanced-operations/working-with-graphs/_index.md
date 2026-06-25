@@ -15,10 +15,10 @@ Abstract: This section introduces the Graph class in Aspose.PDF for Java and exp
 ---
 Aspose.PDF for Java provides a `Graph` container for drawing vector shapes directly inside PDF pages. You can add basic geometry, apply fills and borders, place text inside shapes, and validate whether shapes fit inside the graph bounds.
 
-- [Add arcs](/java/add-arc/)
-- [Add circles](/java/add-circle/)
-- [Add curves](/java/add-curve/)
-- [Add lines](/java/add-line/)
-- [Add rectangles](/java/add-rectangle/)
-- [Add ellipses](/java/add-ellipse/)
+- [Add arcs](/pdf/java/add-arc/)
+- [Add circles](/pdf/java/add-circle/)
+- [Add curves](/pdf/java/add-curve/)
+- [Add lines](/pdf/java/add-line/)
+- [Add rectangles](/pdf/java/add-rectangle/)
+- [Add ellipses](/pdf/java/add-ellipse/)
 - [Check shape bounds](/java/aspose-pdf-drawing-graph-shapes-bounds-check/)

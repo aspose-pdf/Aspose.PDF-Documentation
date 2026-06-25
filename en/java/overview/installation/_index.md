@@ -44,8 +44,6 @@ The evaluation version of Aspose.PDF provides full product functionality, but it
 - No more than four elements of any collection can be viewed/edited.
 - **A document showing the evaluation watermark**
 
-![Evaluate of Aspose.PDF](evaluate-aspose-pdf_1.png)
-
 {{% alert color="primary" %}}
 
 If you want to test Aspose.PDF for Java without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)

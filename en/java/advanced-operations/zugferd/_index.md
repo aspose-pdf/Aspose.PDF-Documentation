@@ -15,4 +15,4 @@ Abstract: This section explains how to work with ZUGFeRD invoice attachments usi
 ---
 ZUGFeRD combines a human-readable PDF invoice with structured XML data embedded inside the document. In the current Java example set, the covered workflow is attaching the invoice XML to a PDF and converting the result to `PDF_A_3A`.
 
-- [Attach ZUGFeRD invoice data to a PDF](/java/attach-zugferd/)
+- [Attach ZUGFeRD invoice data to a PDF](/pdf/java/attach-zugferd/)

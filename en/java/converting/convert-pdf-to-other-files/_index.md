@@ -97,7 +97,11 @@ public static void convertPdfToXps(Path inputFile, Path outputFile) {
 Use this example when PDF content should be exported as Markdown.
 
 1. Open the source PDF in a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+<<<<<<< HEAD
 1. Create [`MarkdownSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/markdownsaveoptions/) and configure the image resource directory plus HTML image-tag output.
+=======
+1. Create `MarkdownSaveOptions`and configure the image resource directory plus HTML image-tag output.
+>>>>>>> fix-java-docs
 1. Call `document.save(outputFile.toString(), saveOptions)` so the PDF content is emitted as Markdown with external image resources.
 1. Save the generated Markdown file.
 

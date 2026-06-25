@@ -15,6 +15,6 @@ Abstract: This section explains how to manage navigation and interaction feature
 ---
 Aspose.PDF for Java includes APIs for bookmarks, links, and interactive actions. You can use these features to improve navigation inside a document, connect to external resources, and trigger behavior from user interaction.
 
-- [Work with PDF links](/java/links/)
-- [Work with PDF actions](/java/actions/)
-- [Work with PDF bookmarks](/java/bookmarks/)
+- [Work with PDF links](/pdf/java/links/)
+- [Work with PDF actions](/pdf/java/actions/)
+- [Work with PDF bookmarks](/pdf/java/bookmarks/)

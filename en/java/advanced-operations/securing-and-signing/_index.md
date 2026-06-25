@@ -15,7 +15,7 @@ Abstract: This section explains how to secure and sign PDF documents using Aspos
 ---
 Aspose.PDF for Java includes facade APIs for both digital signatures and document security. You can sign or certify PDF files, inspect existing signatures, encrypt and decrypt documents, and apply permission restrictions with user and owner passwords.
 
-- [Digitally sign a PDF file](/java/digitally-sign-pdf-file/)
-- [Extract signature information](/java/extract-image-and-signature-information/)
-- [Set privileges, encrypt, and decrypt PDF files](/java/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Smart card signing notes](/java/sign-pdf-document-from-smart-card/)
+- [Digitally sign a PDF file](/pdf/java/digitally-sign-pdf-file/)
+- [Extract signature information](/pdf/java/extract-image-and-signature-information/)
+- [Set privileges, encrypt, and decrypt PDF files](/pdf/java/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Smart card signing notes](/pdf/java/sign-pdf-document-from-smart-card/)
