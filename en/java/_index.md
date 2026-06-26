@@ -41,6 +41,7 @@ Aspose.PDF for Java provides following key features:
 - [Converting documents](/pdf/java/converting/)
 - [Parsing PDF documents](/pdf/java/parsing/)
 - [Advanced operations](/pdf/java/advanced-operations/)
+- [Working with Facades](/pdf/java/working-with-facades)
 - [Release Notes](https://releases.aspose.com/pdf/java/release-notes/)
 
 ## Aspose.PDF for Java Resources
