@@ -1,185 +1,184 @@
 ---
-title: Características Clave de Aspose.PDF
-linktitle: Características Clave
+title: Key Features of Aspose.PDF
+linktitle: Key Features
 type: docs
 weight: 20
 url: /es/androidjava/key-features/
-description: Aspose.PDF para Android via Java muestra las características principales en el trabajo con documentos PDF.
+description: Aspose.PDF for Android via Java shows the main features in working with PDF documents.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Características Generales
+## General Features
 
-- Aspose.PDF para Android via Java soporta cualquier dispositivo móvil que ejecute el entorno Java, incluyendo
-- La API ofrece encriptación de 40 bits o 128 bits
+- Aspose.PDF for Android via Java supports any mobile device that runs the Java runtime including
+- API offers 40-bit or 128-bit encryption
 
-## Versiones PDF Soportadas
+## Supported PDF versions
 
-Aspose.PDF para Android via Java soporta las versiones PDF 1.2, 1.3, 1.4, 1.5, 1.6 y 1.7.
+Aspose.PDF for Android via Java supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 
-## Fuentes
+## Fonts
 
-- 14 fuentes básicas.
-- Fuentes PostScript Type1.
-- Fuentes TrueType.
-- Fuentes Tipo 3.
-- Inserción de información de fuentes en PDF
-- Fuentes CJK.
-- Soporte Unicode.
+- 14 core fonts.
+- PostScript Type1 fonts.
+- TrueType fonts.
+- Type 3 fonts.
+- Font information embedding into PDF
+- CJK fonts.
+- Unicode support.
 
-## Texto
+## Text
 
-- Reemplazar texto.
-- Extraer texto (de todo el PDF, de una página en particular, o de un rango de páginas).
-- Añadir texto.
+- Replace text.
+- Extract text (from the entire PDF, a particular page, or a range of pages).
+- Add text.
 
-## Gráficos
+## Graph
 
-- Se soportan diferentes formas de gráficos, como línea, círculo, arco y curva.
-- Los gráficos pueden dibujarse en cualquier ubicación de la página especificada por coordenadas.
+- Different shapes of graphs, such as line, circle, arc, and curve are supported.
+- Graphs can be drawn on any page location specified by coordinates.
+- Graphs can be rotated, scaled, or filled, and dash and poly-dash line styles can be defined.
+- Graphs are drawn based on coordinates and have obsolete position rather than relative.
+- CMYK and Gray color spaces are supported.
 
-- Los gráficos pueden rotarse, escalarse o rellenarse, y se pueden definir estilos de línea de guion y poli-guion.
-- Los gráficos se dibujan en función de las coordenadas y tienen una posición obsoleta en lugar de relativa.
-- Se admiten los espacios de color CMYK y Gris.
+## Images
 
-## Imágenes
+- Add image in PDF file.
+- Delete images.
+- Replace images.
+- Extract images (from the entire PDF, a particular page, or a range of pages).
+- PDF to JPEG conversion (particular page or all pages).
+- PDF to TIFF conversion (single page or all pages, or to Pixelated TIFF Images ).
+- PDF to PNG conversion (particular page or all pages).
+- PDF to BMP conversion (particular page or all pages).
+- PDF to SVG conversion.
+- PDF to EMF conversion.
+- PDF to GIF conversion.
 
-- Agregar imagen en el archivo PDF.
-- Eliminar imágenes.
-- Reemplazar imágenes.
-- Extraer imágenes (de todo el PDF, de una página en particular o de un rango de páginas).
-- Conversión de PDF a JPEG (página particular o todas las páginas).
-- Conversión de PDF a TIFF (página única o todas las páginas, o a imágenes TIFF pixeladas).
-- Conversión de PDF a PNG (página particular o todas las páginas).
-- Conversión de PDF a BMP (página particular o todas las páginas).
-- Conversión de PDF a SVG.
-- Conversión de PDF a EMF.
-- Conversión de PDF a GIF.
+## Attachments
 
-## Adjuntos
+- Add attachment.
+- Get attachments.
+- Delete attachments.
+- Get attachment information.
+- Modify attachments.
 
-- Agregar adjunto.
-- Obtener adjuntos.
-- Eliminar adjuntos.
-- Obtener información de adjuntos.
-- Modificar adjuntos.
+## Page
 
-## Página
+- Get and set page properties.
+- Concatenate PDF files.
+- Insert PDF pages.
+- Append PDF files.
+- Delete PDF pages
+- Extract or insert PDF pages
+- Make NUp of PDF.
+- Make Booklet of PDF.
+- Split PDF pages (from first, to end, to bulk, to individual pages).
 
-- Obtener y establecer propiedades de la página.
-- Concatenar archivos PDF.
-- Insertar páginas PDF.
-- Adjuntar archivos PDF.
-- Eliminar páginas PDF.
-- Extraer o insertar páginas PDF.
-- Hacer NUp de PDF.
-- Hacer folleto de PDF.
-- Dividir páginas PDF (desde la primera, hasta el final, en bloque, en páginas individuales).
+## Document
 
-## Documento
+- Get document viewer properties.
+- Set document viewer properties.
+- Get page display properties.
+- Set page display properties.
+- Get PDF file information.
+- Set PDF file information.
+- Linearization (optimization for the web).
+- Set XMP metadata.
+- Get XMP metadata.
+- PDF to DOC/DOCX conversion.
+- PDF to Excel XLS and XLSX
+- PDF to HTML conversion.
+- PDF to XPS conversion.
+- PDF to Tex conversion.
+- PDF to PDF-A. 
+- PDF to PDF/A_1b. 
+- PDF to PDF/A_3b. 
+- PDF to PDF/A_3a. 
+- PDF to PDF/A_2a. 
+- PDF to PDF/A_3U.
+- Create PDF/A-3 and attach XML file.
 
-- Obtener propiedades del visor de documentos.
-- Establecer propiedades del visor de documentos.
-- Obtener propiedades de visualización de página.
-- Establecer propiedades de visualización de página.
-- Obtener información del archivo PDF.
-- Establecer información del archivo PDF.
-- Linealización (optimización para la web).
-- Establecer metadatos XMP.
-- Obtener metadatos XMP.
-- Conversión de PDF a DOC/DOCX.
-- PDF a Excel XLS y XLSX
-- Conversión de PDF a HTML.
-- Conversión de PDF a XPS.
-- Conversión de PDF a Tex.
-- PDF a PDF-A.
-- PDF a PDF/A_1b.
-- PDF a PDF/A_3b.
-- PDF a PDF/A_3a.
-- PDF a PDF/A_2a.
-- PDF a PDF/A_3U.
-- Crear PDF/A-3 y adjuntar archivo XML.
+## Bookmarks
 
-## Marcadores
+- Add bookmarks.
+- Add child bookmarks.
+- Delete bookmarks.
+- Get bookmarks.
+- Update bookmarks 
+- Expanded bookmarks 
+- Export and import bookmarks.
 
-- Añadir marcadores.
-- Añadir sub-marcadores.
-- Eliminar marcadores.
-- Obtener marcadores.
-- Actualizar marcadores.
-- Marcadores expandidos.
-- Exportar e importar marcadores.
+## Annotations
 
-## Anotaciones
+- Add annotations.
+- Get annotations.
+- Delete annotations.
+- Modify annotations.
+- Import and export annotations.
 
-- Añadir anotaciones.
-- Obtener anotaciones.
-- Eliminar anotaciones.
-- Modificar anotaciones.
-- Importar y exportar anotaciones.
+## Forms
 
-## Formularios
+- Add fields.
+- Fill fields.
+- Get option button values.
+- Get option button current Value.
+- Get form field facade (the field's visual attributes).
+- Delete field.
+- Move field to new location.
+- Flatten fields (a particular field or all).
+- Decorate Fields (a particular field or all fields of a particular type).
+- Copy inner and outer field.
+- Add and delete list item.
+- Set submission URL.
+- Set button script.
+- Import and export XML.
+- Import and export FDF.
+- Import and export XFDF.
 
-- Añadir campos.
-- Rellenar campos.
-- Obtener valores de botón de opción.
-- Obtener el valor actual del botón de opción.
-- Obtener la fachada del campo del formulario (los atributos visuales del campo).
-- Eliminar campo.
+## Stamp and Watermark
 
-- Mover campo a nueva ubicación.
-- Aplanar campos (un campo particular o todos).
-- Decorar campos (un campo particular o todos los campos de un tipo particular).
-- Copiar campo interno y externo.
-- Añadir y eliminar elemento de lista.
-- Establecer URL de envío.
-- Establecer script de botón.
-- Importar y exportar XML.
-- Importar y exportar FDF.
-- Importar y exportar XFDF.
+- Add text stamp (on all pages, or on particular pages).
+- Add image stamp (on all pages, or on particular pages).
+- Add PDF page stamp (on all pages, or on particular pages).
+- Add page number.
+- Add text to header and footer.
+- Add image to header and footer.
 
-## Sello y Marca de Agua
+## Links and Actions
 
-- Añadir sello de texto (en todas las páginas o en páginas particulares).
-- Añadir sello de imagen (en todas las páginas o en páginas particulares).
-- Añadir sello de página PDF (en todas las páginas o en páginas particulares).
-- Añadir número de página.
-- Añadir texto al encabezado y pie de página.
-- Añadir imagen al encabezado y pie de página.
+- Create application link.
+- Create local link.
+- Create JavaScript link.
+- Create document additional action.
+- Remove document open action.
+- Create PDF document link.
 
-## Enlaces y Acciones
+## Security and Signatures
 
-- Crear enlace de aplicación.
-- Crear enlace local.
-- Crear enlace JavaScript.
-- Crear acción adicional del documento.
-- Eliminar acción de apertura del documento.
-- Crear enlace de documento PDF.
+- Encrypt and decrypt PDF.
+- Set document privileges.
+- Modify passwords.
+- Add or remove digital signature.
+- Verify PDF is signed.
+- Verify signature is valid.
 
-## Seguridad y Firmas
+## Printing
 
-- Encriptar y desencriptar PDF.
-- Establecer privilegios del documento.
-- Modificar contraseñas.
-- Añadir o eliminar firma digital.
-- Verificar que el PDF está firmado.
-- Verificar que la firma es válida.
+- Print PDF to default printer.
+- Print PDF to a specified printer.
+- Print PDF to physical or virtual printer.
+- Print PDF to XPS printer.
+- Print PDF to XPS file.
+- Hide print dialog while printing PDF.
+- 
+## Miscellaneous
 
-## Impresión
+- Get build version information.
+- Changing Color Space of PDF Document
+- Add drawing with transparent Color
 
-- Imprimir PDF a la impresora predeterminada.
 
-- Imprimir PDF a una impresora especificada.
-- Imprimir PDF en una impresora física o virtual.
-- Imprimir PDF en una impresora XPS.
-- Imprimir PDF en un archivo XPS.
-- Ocultar el cuadro de diálogo de impresión mientras se imprime el PDF.
-
-## Varios
-
-- Obtener información de la versión de compilación.
-- Cambiar el espacio de color del documento PDF
-- Añadir dibujo con color transparente

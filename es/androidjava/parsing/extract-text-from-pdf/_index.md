@@ -1,20 +1,23 @@
 ---
-title: Extraer Texto de PDF
-linktitle: Extraer Texto
+title: Extract Text from PDF
+linktitle: Extract Text
 type: docs
 weight: 10
 url: /es/androidjava/extract-text-from-pdf/
-description: Aspose.PDF permite extraer diferentes tipos de información. Esta sección contiene artículos sobre la extracción de texto de documentos PDF mediante Aspose.PDF para Android a través de Java.
+description: Aspose.PDF allows for extracting different kinds of information. This section contains articles on text extraction from PDF documents using Aspose.PDF for Android via Java.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Extraer el texto de un archivo PDF es una tarea común para los desarrolladores de Android a través de Java. Utilice la biblioteca Pdf de Aspose.PDF para Android a través de Java para extraer texto en solo unas pocas líneas de código. La mayoría de los documentos PDF no son editables, lo que hace que convertir el PDF a texto sea una tarea tediosa, si no imposible, especialmente si la solución implica el procesamiento masivo de documentos PDF. La biblioteca Aspose.PDF para Android a través de Java extrae el texto utilizando la clase TextAbsorber. ¿Quién necesita la extracción de texto?
+Extract the Text from PDF file is a common task for Android via Java developers. Use the Aspose.PDF for Android via Java Pdf library to extract text in just a few lines of code. Most PDF documents are not editable, making converting the PDF to text a tedious if not impossible task, especially if the solution involves bulk processing of PDF documents.
+Aspose.PDF for Android via Java library extract the text using the TextAbsorber class.
+Who needs text extraction?
 
-Para las empresas de minería de datos, gestión de contenido y procesamiento de formularios, la extracción de texto será especialmente útil.
- Extracting text comes in handy: archiving: El texto y sus componentes se pueden recuperar para que los documentos puedan ser indexados y archivados con capacidades de búsqueda completa; recuperar y procesar datos en formularios; extraer información como datos de cuenta, direcciones postales y números de teléfono para fines administrativos; extraer fotos e imágenes.
+For data mining, content management, and form processing companies, text extraction will be especially useful. Extracting text comes in handy: archiving: Text and its components can be retrieved so that documents can be indexed and archived with full search capabilities; retrieving and processing data in forms; extract information such as account data, postal addresses, and phone numbers for administrative purposes; extract photos and images.
 
-- [Extraer texto de PDF](/pdf/es/androidjava/extract-text-from-all-pdf/)
-- [Extraer párrafo de PDF](/pdf/es/androidjava/extract-paragraph-from-pdf/)
+- [Extract Text from PDF](/pdf/androidjava/extract-text-from-all-pdf/)
+- [Extract Paragraph from PDF](/pdf/androidjava/extract-paragraph-from-pdf/)
+
+

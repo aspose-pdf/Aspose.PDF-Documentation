@@ -1,31 +1,32 @@
 ---
-title: Convertir PDF a texto
-linktitle: Convertir PDF a texto
+title: Convert PDF to text
+linktitle: Convert PDF to text
 type: docs
 weight: 120
 url: /es/androidjava/convert-pdf-to-txt/
 lastmod: "2021-06-05"
-description: Con Aspose.PDF para Android a través de Java puedes convertir un documento PDF completo a un archivo de texto o convertir solo una página PDF a un archivo de texto.
+description: With Aspose.PDF for Android via Java you can convert a whole PDF document to a text file or convert only a PDF page to a text file.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
+
 {{% alert color="primary" %}} 
 
-Prueba en línea. Puedes comprobar la calidad de la conversión de Aspose.PDF y ver los resultados en línea en este enlace [products.aspose.app/pdf/conversion/pdf-to-txt](https://products.aspose.app/pdf/conversion/pdf-to-txt)
+Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-txt](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 
 {{% /alert %}}
 
-## Convertir página PDF a archivo de texto
+## Convert PDF page to text file
 
-Puedes convertir un documento PDF a un archivo TXT con Aspose.PDF para Android a través de Java. Debes utilizar el método Visit de la clase [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) para resolver esta tarea.
+You can convert PDF document to TXT file with Aspose.PDF for Android via Java. You should use Visit method of [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) class for resolve this task.
 
-El siguiente fragmento de código explica cómo extraer los textos de las páginas particulares.
+The following code snippet explains how to extract the texts from the particular pages.
 
 ```java
 public void convertPDFPagesToTXT() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -41,7 +42,7 @@ public void convertPDFPagesToTXT() {
         }
         File txtFileName = new File(fileStorage, "PDF-to-Text.txt");
 
-        // Guardar el texto extraído en un archivo de texto
+        // Save the extracted text in text file
         BufferedWriter writer;
         try {
             writer = new BufferedWriter(new FileWriter(txtFileName));
@@ -55,3 +56,5 @@ public void convertPDFPagesToTXT() {
         resultMessage.setText(R.string.success_message);
     }
 ```
+
+

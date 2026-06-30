@@ -1,36 +1,35 @@
 ---
-title: Convertir archivo PDF a PDF/A
-linktitle: Convertir archivo PDF a PDF/A
+title: Convert PDF File to PDF/A
+linktitle: Convert PDF File to PDF/A
 type: docs
 weight: 180
 url: /es/androidjava/convert-pdf-file-to-pdfa/
 lastmod: "2021-06-05"
-description: Este tema muestra cómo Aspose.PDF para Java permite convertir un archivo PDF a un archivo PDF compatible con PDF/A.
+description: This topic show you how to Aspose.PDF for Java allows to convert a PDF file to a PDF/A compliant PDF file.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Aspose.PDF le permite convertir un archivo PDF a un archivo PDF compatible con PDF/A. Antes de hacerlo, el archivo debe ser validado. Este artículo explica cómo.
+Aspose.PDF allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This article explains how.
 
-Tenga en cuenta que seguimos Adobe Preflight para validar la conformidad con PDF/A. Todas las herramientas del mercado tienen su propia "representación" de la conformidad con PDF/A. Consulte este artículo sobre [herramientas de validación de PDF/A](http://wiki.opf-labs.org/display/SPR/PDFA+Validation+tools+give+different+results) como referencia. Elegimos productos de Adobe para verificar cómo Aspose.PDF produce archivos PDF porque Adobe está en el centro de todo lo relacionado con PDF.
+Please note we follow Adobe Preflight for validating PDF/A conformance. All tools on the market have their own "representation" of PDF/A conformance. Please check this article on [PDF/A validation tools](http://wiki.opf-labs.org/display/SPR/PDFA+Validation+tools+give+different+results) for reference. We chose Adobe products for verifying how Aspose.PDF produces PDF files because Adobe is at the center of everything connected to PDF.
 
-Antes de convertir el PDF a un archivo compatible con PDF/A, valide el PDF usando el método de validación.
- El resultado de la validación se almacena en un archivo XML y luego este resultado también se pasa al método de conversión. También puedes especificar la acción para los elementos que no pueden ser convertidos usando la enumeración [ConvertErrorAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction).
+Before converting the PDF to a PDF/A compliant file, validate the PDF using the validate method. The validation result is stored in an XML file and then this result is also passed to the convert method. You can also specify the action for the elements which can not be converted using the [ConvertErrorAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction) enumeration.
 
 {{% alert color="primary" %}}
 
-Prueba en línea. Puedes verificar la calidad de la conversión de Aspose.PDF y ver los resultados en línea en este enlace [products.aspose.app/pdf/conversion/pdf-to-pdfa1a](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-pdfa1a](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 
 {{% /alert %}}
 
-## Conversión de PDF a PDF/A_1b
+## PDF to PDF/A_1b Conversion
 
-El siguiente fragmento de código muestra cómo convertir archivos PDF a PDF compatibles con PDF/A-1b.
+The following code snippet shows how to convert PDF files to PDF/A-1b compliant PDF.
 
 ```java
 public void convertPDFtoPDFa1b() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -38,22 +37,22 @@ public void convertPDFtoPDFa1b() {
             return;
         }
 
-        // Convertir a documento compatible con PDF/A
-        // Durante el proceso de conversión, también se realiza la validación
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
         document.convert(logFileName.toString(), PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-        // Guardar documento de salida
+        // Save output document
         document.save(pdfaFileName.toString());
     }
 ```
 
-Para realizar solo la validación, use la siguiente línea de código:
+To perform validation only, use the following line of code:
 
 ```java
 public void ValidatePDF_A_1B() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -61,23 +60,23 @@ public void ValidatePDF_A_1B() {
             return;
         }
 
-        // Validar como documento compatible con PDF/A
+        // Validate to PDF/A compliant document
 
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         if (document.validate(logFileName.toString(), PdfFormat.PDF_A_1B)){
-            resultMessage.setText("El documento es válido");
+            resultMessage.setText("Document is valid");
         }
         else {
-            resultMessage.setText("El documento no es válido");
+            resultMessage.setText("Document is not valid");
         }
     }
 ```
 
-## Conversión de PDF a PDF/A_3b
+## PDF to PDF/A_3b Conversion
 
 ```java
     public void convertPDFtoPDFa3b() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -85,14 +84,14 @@ public void ValidatePDF_A_1B() {
             return;
         }
 
-        // Convertir a documento compatible con PDF/A
-        // Durante el proceso de conversión, también se realiza la validación
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
 
         document.convert(logFileName.toString(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
 
-        // Guardar documento de salida
+        // Save output document
         try {
             document.save(pdfaFileName.toString());
         }
@@ -104,12 +103,11 @@ public void ValidatePDF_A_1B() {
     }
 ```
 
-
-## Conversión de PDF a PDF/A_3a
+## PDF to PDF/A_3a Conversion
 
 ```java
 public void convertPDFtoPDFa3a() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -117,14 +115,14 @@ public void convertPDFtoPDFa3a() {
             return;
         }
 
-        // Convertir a un documento compatible con PDF/A
-        // Durante el proceso de conversión, también se realiza la validación
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
 
         document.convert(logFileName.toString(), PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
 
-        // Guardar documento de salida
+        // Save output document
         try {
             document.save(pdfaFileName.toString());
         }
@@ -136,11 +134,11 @@ public void convertPDFtoPDFa3a() {
     }
 ```
 
-## Conversión de PDF a PDF/A_2a
+## PDF to PDF/A_2a Conversion
 
 ```java
 public void convertPDFtoPDFa2a() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -148,14 +146,14 @@ public void convertPDFtoPDFa2a() {
             return;
         }
 
-        // Convertir a un documento compatible con PDF/A
-        // Durante el proceso de conversión, también se realiza la validación
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
 
         document.convert(logFileName.toString(), PdfFormat.PDF_A_2A, ConvertErrorAction.Delete);
 
-        // Guardar documento de salida
+        // Save output document
         try {
             document.save(pdfaFileName.toString());
         }
@@ -168,12 +166,11 @@ public void convertPDFtoPDFa2a() {
 
 ```
 
-
-## Conversión de PDF a PDF/A_3U
+## PDF to PDF/A_3U Conversion
 
 ```java
  public void convertPDFtoPDFa3u() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -181,14 +178,14 @@ public void convertPDFtoPDFa2a() {
             return;
         }
 
-        // Convertir a documento compatible con PDF/A
-        // Durante el proceso de conversión, también se realiza la validación
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
 
         document.convert(logFileName.toString(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
 
-        // Guardar documento de salida
+        // Save output document
         try {
             document.save(pdfaFileName.toString());
         }
@@ -200,14 +197,13 @@ public void convertPDFtoPDFa2a() {
     }
 ```
 
-## Crear PDF/A-3 y adjuntar archivo XML
+## Create PDF/A-3 and attach XML file
 
-Aspose.PDF para Android a través de Java ofrece la función de convertir archivos PDF al formato PDF/A y también soporta las capacidades de agregar archivos como un adjunto al documento PDF.
- En caso de que tenga un requisito para adjuntar archivos al formato de cumplimiento PDF/A, le recomendamos usar el valor PDF_A_3A de la enumeración com.aspose.pdf.PdfFormat. El PDF/A_3a es el formato que proporciona la función para adjuntar cualquier formato de archivo como un adjunto a un archivo compatible con PDF/A. Sin embargo, una vez que el archivo está adjunto, debe convertirlo nuevamente al formato Pdf-3a, para corregir los metadatos. Por favor, eche un vistazo al siguiente fragmento de código.
+Aspose.PDF for Android via Java offers the feature to convert PDF files to PDF/A format and it also supports the capabilities of adding files as an attachment to PDF document. In case you have a requirement to attach files to PDF/A compliance format, then we recommend using PDF_A_3A value from com.aspose.pdf.PdfFormat enumeration, the PDF/A_3a is the format that provides the feature to attach any file format as an attachment to PDF/A compliant file. However, once the file is attached, you should convert it into Pdf-3a format again, in order to fix metadata. Please take a look over the following code snippet.
 
 ```java
  public void convertPDFtoPDFa3u_attachXML() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -215,17 +211,17 @@ Aspose.PDF para Android a través de Java ofrece la función de convertir archiv
             return;
         }
 
-        // Convertir a documento compatible con PDF/A
-        // Durante el proceso de conversión, también se realiza la validación
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
         File attachment = new File(fileStorage,"sample.xml");
 
-        // Guardar documento de salida
+        // Save output document
         try {
-            // cargar archivo XML
-            FileSpecification fileSpecification = new FileSpecification(attachment.toString(), "Archivo xml de muestra");
-            // Agregar adjunto a la colección de adjuntos del documento
+            // load XML file
+            FileSpecification fileSpecification = new FileSpecification(attachment.toString(), "Sample xml file");
+            // Add attachment to document's attachment collection
             document.getEmbeddedFiles().add(fileSpecification);
             document.convert(logFileName.toString(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
             document.save(pdfaFileName.toString());
@@ -237,3 +233,5 @@ Aspose.PDF para Android a través de Java ofrece la función de convertir archiv
         resultMessage.setText(R.string.success_message);
     }
 ```
+
+

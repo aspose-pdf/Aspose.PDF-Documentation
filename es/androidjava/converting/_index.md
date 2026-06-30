@@ -1,49 +1,49 @@
 ---
-title: Convertir documentos PDF
-linktitle: Convertir documentos PDF
+title: Convert PDF documents
+linktitle: Convert PDF documents
 type: docs
 weight: 50
 url: /es/androidjava/converting/
 lastmod: "2021-06-05"
-description: Esta sección contiene una descripción de todas las opciones posibles para convertir documentos PDF en Android a través de Java utilizando la biblioteca Aspose.PDF.
+description: This section contains a description of all possible options for converting PDF documents on Android via Java using Aspose.PDF library.
 sitemap:
     changefreq: "weekly"
     priority: 0.8
 ---
 
-Aspose.PDF para Android a través de Java permite convertir documentos PDF a varios formatos y también convertir de otros formatos a PDF. Además, puedes comprobar la calidad de la conversión de Aspose.PDF y ver los resultados en línea con la aplicación de conversión Aspose.PDF.
+Aspose.PDF for Android via Java allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app.
 
-## Convertir PDF a formatos de archivo de Microsoft Office
+## Convert PDF to Microsoft Office File Formats
 
-Aspose.PDF para Android a través de Java te permite convertir rápida y fácilmente tus documentos PDF a formatos de archivo de Microsoft Office convenientes y familiares.
+Aspose.PDF for Android via Java allows you quickly and easily convert your PDF documents into convenient and familiar Microsoft Office file formats.
 
-- [Convertir PDF a DOC](/pdf/es/androidjava/convert-pdf-to-doc/)
-- [Convertir PDF a Excel](/pdf/es/androidjava/convert-pdf-to-excel/)
-- [Convertir PDF a PowerPoint](/pdf/es/androidjava/convert-pdf-to-powerpoint/)
+- [Convert PDF to DOC](/pdf/androidjava/convert-pdf-to-doc/)
+- [Convert PDF to Excel](/pdf/androidjava/convert-pdf-to-excel/)
+- [Convert PDF to PowerPoint](/pdf/androidjava/convert-pdf-to-powerpoint/)
 
+## Convert between PDF/A and PDF formats
 
-## Convertir entre formatos PDF/A y PDF
+Converting  PDF/A to PDF formats and back it's possible with Java library.
 
-Convirtiendo PDF/A a formatos PDF y viceversa es posible con la biblioteca de Java.
+- [Convert PDF to PDF/A](/pdf/androidjava/convert-pdf-file-to-pdfa/)
+- [Convert PDF/A to PDF](/pdf/androidjava/convert-pdfa-to-pdf/)
 
-- [Convertir PDF a PDF/A](/pdf/es/androidjava/convert-pdf-file-to-pdfa/)
-- [Convertir PDF/A a PDF](/pdf/es/androidjava/convert-pdfa-to-pdf/)
+## Convert images to PDF and vice versa
 
-## Convertir imágenes a PDF y viceversa
-
-| Convertir Imagen a PDF | Convertir PDF a Imagen |
+| Convert Image to PDF | Convert PDF to Image |
 | :---------------- | :------------------ |
-| [Convertir JPG a PDF](/pdf/es/androidjava/convert-jpg-to-pdf/) | [Convertir PDF a JPG](/pdf/es/androidjava/convert-pdf-to-jpg/) |
-| [Convertir BMP a PDF](/pdf/es/androidjava/convert-bmp-to-pdf/) | [Convertir PDF a BMP](/pdf/es/androidjava/convert-pdf-to-bmp/) |
-| [Convertir TIFF a PDF](/pdf/es/androidjava/convert-tiff-to-pdf/) | [Convertir PDF a TIFF](/pdf/es/androidjava/convert-pdf-to-tiff/) |
-| [Convertir PNG a PDF](/pdf/es/androidjava/convert-png-to-pdf/) | [Convertir PDF a PNG](/pdf/es/androidjava/convert-pdf-to-png/) |
-| [Convertir DICOM a PDF](/pdf/es/androidjava/convert-dicom-to-pdf/) | |
+| [Convert JPG to PDF](/pdf/androidjava/convert-jpg-to-pdf/) | [Convert PDF to JPG](/pdf/androidjava/convert-pdf-to-jpg/) |
+| [Convert BMP to PDF](/pdf/androidjava/convert-bmp-to-pdf/) | [Convert PDF to BMP](/pdf/androidjava/convert-pdf-to-bmp/) |
+| [Convert TIFF to PDF](/pdf/androidjava/convert-tiff-to-pdf/) | [Convert PDF to TIFF](/pdf/androidjava/convert-pdf-to-tiff/) |
+| [Convert PNG to PDF](/pdf/androidjava/convert-png-to-pdf/) | [Convert PDF to PNG](/pdf/androidjava/convert-pdf-to-png/) |
+| [Convert DICOM to PDF](/pdf/androidjava/convert-dicom-to-pdf/) | |
 
-## Convertir varios formatos de archivo a PDF y viceversa
+## Convert various file formats to PDF and vice versa
 
-| Convertir Archivo a PDF | Convertir PDF a Archivo |
-
+| Convert File to PDF | Convert PDF to File |
 | :---------------- | :------------------ |
-| [Convertir Texto a PDF](/pdf/es/androidjava/convert-text-to-pdf/) | [Convertir PDF a Texto](/pdf/es/androidjava/convert-pdf-to-txt/) |
-| [Convertir PCL a PDF](/pdf/es/androidjava/convert-pcl-to-pdf/) | |
-| [Convertir XML a PDF](/pdf/es/androidjava/convert-xml-to-pdf/) | |
+| [Convert Text to PDF](/pdf/androidjava/convert-text-to-pdf/) | [Convert PDF to Text](/pdf/androidjava/convert-pdf-to-txt/) |
+| [Convert XML to PDF](/pdf/androidjava/convert-xml-to-pdf/) | |
+
+
+

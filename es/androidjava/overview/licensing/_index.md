@@ -1,96 +1,95 @@
 ---
-title: Licencias y limitaciones
-linktitle: Licencias y limitaciones
+title: Licensing and limitations
+linktitle: Licensing and limitations
 type: docs
 weight: 50
 url: /es/androidjava/licensing/
-description: Aspose.PDF para Android a través de Java invita a sus clientes a obtener una licencia Clásica y una Licencia Medida. Así como usar una licencia limitada para explorar mejor el producto.
+description: Aspose.PDF for Android via Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Limitación de una versión de evaluación
+## Limitation of an evaluation version
 
-Queremos que nuestros clientes prueben nuestros componentes a fondo antes de comprarlos, por lo que la versión de evaluación le permite usarlo como lo haría normalmente.
+We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
-- **PDF creado con una marca de agua de evaluación.** La versión de evaluación de Aspose.PDF para Android a través de Java proporciona toda la funcionalidad del producto, pero todas las páginas en los documentos PDF generados están marcadas con agua con "Solo Evaluación. Creado con Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" en la parte superior.
+- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for Android via Java provides full product functionality, but all the pages in the generated PDF documents are watermarked with "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" at the top.
 
-- **El límite del número de elementos de colección que se pueden procesar.**
+- **The limit of the number of collection items that can be processed.**
+In the evaluation version from any collection, you can process only four elements (for example, only 4 pages, 4 form fields, etc.).
 
-En la versión de evaluación de cualquier colección, solo puede procesar cuatro elementos (por ejemplo, solo 4 páginas, 4 campos de formulario, etc.).
+You can download an evaluation version of Aspose.PDF for Android via Java from [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). The evaluation version provides absolutely the same capabilities as the licensed version of the product. Furthermore, evaluation version simply becomes licensed when you purchase a license and add a couple of lines of code to apply the license.
 
-Puedes descargar una versión de evaluación de Aspose.PDF para Android a través de Java desde el [Repositorio de Aspose](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). La versión de evaluación proporciona exactamente las mismas capacidades que la versión con licencia del producto. Además, la versión de evaluación simplemente se convierte en licenciada cuando compras una licencia y añades un par de líneas de código para aplicar la licencia.
+Once you are happy with your evaluation of **Aspose.PDF**, you can [purchase a license](https://purchase.aspose.com/) at the Aspose website. Make yourself familiar with the different subscription types offered. If you have any questions, do not hesitate to contact the Aspose sales team.
 
-Una vez que estés satisfecho con tu evaluación de **Aspose.PDF**, puedes [comprar una licencia](https://purchase.aspose.com/) en el sitio web de Aspose. Familiarízate con los diferentes tipos de suscripción ofrecidos. Si tienes alguna pregunta, no dudes en contactar al equipo de ventas de Aspose.
+Every Aspose license carries a one-year subscription for free upgrades to any new versions or fixes that come out during this time. Technical support is free and unlimited and provided both to licensed and evaluation users.
 
-Cada licencia de Aspose incluye una suscripción de un año para actualizaciones gratuitas a cualquier nueva versión o corrección que se publique durante este tiempo. El soporte técnico es gratuito e ilimitado y se proporciona tanto a usuarios con licencia como a usuarios de evaluación.
+>If you want to test Aspose.PDF for Android via Java without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
->Si deseas probar Aspose.PDF para Android a través de Java sin las limitaciones de la versión de evaluación, también puedes solicitar una Licencia Temporal de 30 días.
- Consulte [¿Cómo obtener una licencia temporal?](https://purchase.aspose.com/temporary-license)
+## Classic license
 
-## Licencia clásica
+The license can be loaded from a file or stream object. The easiest way to set a license is to put the license file in the same folder as the Aspose.PDF.dll file and specify the file name without a path, as shown in the example below.
 
-La licencia se puede cargar desde un archivo o un objeto de flujo. La forma más fácil de establecer una licencia es colocar el archivo de licencia en la misma carpeta que el archivo Aspose.PDF.dll y especificar el nombre del archivo sin una ruta, como se muestra en el ejemplo a continuación.
+The license is a plain text XML file that contains details such as the product name, number of developers it is licensed to, subscription expiry date and so on. The file is digitally signed, so do not modify the file; even the inadvertent addition of an extra line break into the file will invalidate it.
 
-La licencia es un archivo XML de texto plano que contiene detalles como el nombre del producto, el número de desarrolladores a los que está licenciada, la fecha de vencimiento de la suscripción, etc. El archivo está firmado digitalmente, por lo que no modifique el archivo; incluso la adición inadvertida de un salto de línea adicional en el archivo lo invalidará.
+You need to set a license before performing any operations with documents. You are only required to set a license once per application or process.
 
-Necesita establecer una licencia antes de realizar cualquier operación con documentos. Solo es necesario establecer una licencia una vez por aplicación o proceso.
+The license can be loaded from a stream or file in the following locations:
 
-La licencia se puede cargar desde un flujo o archivo en las siguientes ubicaciones:
+1. Explicit path.
+1. The folder that contains the aspose-pdf-xx.x.jar.
 
-1. Ruta explícita.
-1. La carpeta que contiene el archivo aspose-pdf-xx.x.jar.
-
-Use el método License.setLicense para licenciar el componente. A menudo, la forma más fácil de establecer una licencia es colocar el archivo de licencia en la misma carpeta que Aspose.PDF.jar y especificar solo el nombre del archivo sin la ruta, como se muestra en el siguiente ejemplo:
+Use the License.setLicense method to license the component. Often the easiest way to set a license is to put the license file in the same folder as Aspose.PDF.jar and specify just the file name without path as shown in the following example:
 
 {{% alert color="primary" %}}
 
-A partir de Aspose.PDF para Java 4.2.0, necesita llamar a las siguientes líneas de código para inicializar la licencia.
+Starting from Aspose.PDF for Java 4.2.0, you need to call the following code lines to initialize the license.
 
 {{% /alert %}}
 
-### Cargando una licencia desde un archivo
+### Loading a license from file
 
-En este ejemplo, **Aspose.PDF** intentará encontrar el archivo de licencia en la carpeta que contiene los JARs de su aplicación.
+In this example **Aspose.PDF** will attempt to find the license file in the folder that contain the JARs of your application.
 
 ```java
-// Inicializar instancia de licencia
+// Initialize License Instance
 com.aspose.pdf.License license = new com.aspose.pdf.License();
-// Llamar al método setLicense para establecer la licencia
+// Call setLicense method to set license
 license.setLicense("Aspose.Pdf.Java.lic");
 ```
 
-### Cargando la licencia desde un objeto de flujo
+### Loading the license from a stream object
 
-El siguiente ejemplo muestra cómo cargar una licencia desde un flujo.
+The following example shows how to load a license from a stream.
 
 ```java
-// Inicializar instancia de licencia
+// Initialize License Instance
 com.aspose.pdf.License license = new com.aspose.pdf.License();
-// Establecer licencia desde Stream
+// Set license from Stream
 license.setLicense(new java.io.FileInputStream("Aspose.Pdf.Java.lic"));
 ```
 
-#### Estableciendo una licencia comprada antes de 2005/01/22
-**Aspose.PDF** para Java ya no admite licencias antiguas, así que por favor contacte a nuestro [equipo de ventas](https://company.aspose.com/contact) para obtener un nuevo archivo de licencia.
+#### Setting a License Purchased Before 2005/01/22
 
-### Validar la Licencia
+**Aspose.PDF** for Java doesn't support old licenses anymore so please contact our [sales team](https://company.aspose.com/contact) to get new license file.
 
-Es posible validar si la licencia se ha establecido correctamente o no. La clase Document tiene el método isLicensed que devolverá true si la licencia se ha establecido correctamente.
+### Validate the License
+
+It is possible to validate if the license has been set properly or not. The Document class has the isLicensed method that will return true if license has been properly set.
 
 ```java
 License license = new License();
 license.setLicense("Aspose.Pdf.Java.lic");
-// Verificar si la licencia ha sido validada
+// Check if license has been validated
 if (com.aspose.pdf.Document.isLicensed()) {
-    System.out.println("¡Licencia establecida!");
+    System.out.println("License is Set!");
 }
 ```
-## Licencia Medida
+## Metered License
 
-Aspose.PDF permite a los desarrolladores aplicar una clave medida. Es un nuevo mecanismo de licenciamiento. El nuevo mecanismo de licenciamiento se utilizará junto con el método de licenciamiento existente. Aquellos clientes que deseen ser facturados en función del uso de las características de la API pueden usar la licencia medida. Para más detalles, por favor consulte la sección [Preguntas Frecuentes sobre Licencias Medidas](https://purchase.aspose.com/faqs/licensing/metered).
+Aspose.PDF allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
 
 ```java
 String publicKey = "";
@@ -99,29 +98,29 @@ String privateKey = "";
 Metered m = new Metered();
 m.setMeteredKey(publicKey, privateKey);
 
-// Opcionalmente, las siguientes dos líneas devuelven true si una licencia válida ha sido aplicada;
-// false si el componente está funcionando en modo de evaluación.
+// Optionally, the following two lines returns true if a valid license has been applied;
+// false if the component is running in evaluation mode.
 License lic = new License();
-System.out.println("La licencia está establecida = " + lic.isLicensed());
+System.out.println("License is set = " + lic.isLicensed());
 ```
+## Using Multiple Products from Aspose
 
-## Usando Múltiples Productos de Aspose
+If you use multiple Aspose products in your application, for example Aspose.PDF and Aspose.Words, here are a few useful tips.
 
-Si utiliza múltiples productos de Aspose en su aplicación, por ejemplo Aspose.PDF y Aspose.Words, aquí hay algunos consejos útiles.
-
-- **Establezca la Licencia para cada Producto de Aspose por Separado.** Incluso si tiene un solo archivo de licencia para todos los componentes, por ejemplo 'Aspose.Total.lic', aún necesita llamar a **License.SetLicense** por separado para cada producto de Aspose que esté utilizando en su aplicación.
-- **Use el Nombre de Clase de Licencia Totalmente Calificado.** Cada producto de Aspose tiene una clase **License** en su espacio de nombres. Por ejemplo, Aspose.PDF tiene **com.aspose.pdf.License** y Aspose.Words tiene la clase **com.aspose.words.License**. Usar el nombre de clase totalmente calificado le permite evitar cualquier confusión sobre qué licencia se aplica a qué producto.
+- **Set the License for each Aspose Product Separately.** Even if you have a single license file for all components, for example 'Aspose.Total.lic', you still need to call **License.SetLicense** separately for each Aspose product you are using in your application.
+- **Use Fully Qualified License Class Name.** Each Aspose product has a **License** class in its namespace. For example, Aspose.PDF has **com.aspose.pdf.License** and Aspose.Words has **com.aspose.words.License** class. Using the fully qualified class name allows you to avoid any confusion about which license is applied to which product.
 
 ```java
-// Instanciar la clase License de Aspose.Pdf
+// Instantiate the License class of Aspose.Pdf
 com.aspose.pdf.License license = new com.aspose.pdf.License();
-// Establecer la licencia
+// Set the license
 license.setLicense("Aspose.Total.Java.lic");
 
-// Estableciendo la licencia para Aspose.Words para Java
+// Setting license for Aspose.Words for Java
 
-// Instanciar la clase License de Aspose.Words
+// Instantiate the License class of Aspose.Words
 com.aspose.words.License licenseaw = new com.aspose.words.License();
-// Establecer la licencia
+// Set the license
 licenseaw.setLicense("Aspose.Total.Java.lic");
 ```
+

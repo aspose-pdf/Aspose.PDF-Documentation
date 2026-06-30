@@ -1,19 +1,19 @@
 ---
-title: Convertir PDF/A a PDF
-linktitle: Convertir PDF/A a PDF
+title: Convert PDF/A to PDF
+linktitle: Convert PDF/A to PDF
 type: docs
 weight: 350
 url: /es/androidjava/convert-pdfa-to-pdf/
 lastmod: "2021-06-05"
-description: Para convertir PDF/A a PDF, debe eliminar las restricciones del documento original. Aspose.PDF para Android a través de Java le permite resolver este problema de manera fácil y simple.
+description: To convert PDF/A to PDF you should remove restrictions from the original document. Aspose.PDF for Android via Java allows you to solve this problem easly and simply.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Convertir un documento PDF/A a PDF significa eliminar la restricción de <abbr title="Portable Document Format Archive
-">PDF/A</abbr> del documento original. La clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) tiene el método RemovePdfaCompliance(..) para eliminar
-la información de cumplimiento PDF del archivo de entrada/origen.
+Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
+">PDF/A</abbr> restriction from the original document. Class [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) has method RemovePdfaCompliance(..) to remove
+the PDF compliance information from input/source file.
 
 ```java
 
@@ -22,13 +22,13 @@ la información de cumplimiento PDF del archivo de entrada/origen.
         String pdfDocumentFileName = new File(fileStorage, "Conversion/sample-out.pdf").toString();
 
         try {
-            // Crear objeto Document
+            // Create Document object
             document = new Document(pdfaDocumentFileName);
 
-            // Eliminar información de cumplimiento PDF/A
+            // Remove PDF/A compliance information
             document.removePdfaCompliance();
 
-            // Guardar salida en formato XML
+            // Save output in XML format
             document.save(pdfDocumentFileName);
         } catch (Exception e) {
             resultMessage.setText(e.getMessage());
@@ -39,21 +39,25 @@ la información de cumplimiento PDF del archivo de entrada/origen.
     }
 ```
 
-
-Esta información también se elimina si realizas cambios en el documento (por ejemplo, agregar páginas). En el siguiente ejemplo, el documento de salida pierde la conformidad con PDF/A después de agregar la página.
+This info also removes if you make any changes in the document (e.g. add pages). In the following example, the output document loses PDF/A compliance after the page adding.
 
 ```java
    public void convertPDFAtoPDFAdvanced() {
         String pdfaDocumentFileName = new File(fileStorage, "Conversion/sample-pdfa.pdf").toString();
         String pdfDocumentFileName = new File(fileStorage, "Conversion/sample-out.pdf").toString();
 
-        // Crear objeto Document
+        // Create Document object
         document = new Document(pdfaDocumentFileName);
 
-        // Agregar una nueva página (vacía) elimina la información de conformidad con PDF/A.
+        // Adding a new (empty) page removes PDF/A compliance information.
         document.getPages().add();
 
-        // Guardar documento actualizado
+        // Save updated document
         document.save(pdfDocumentFileName);
     }
 ```
+
+
+
+
+

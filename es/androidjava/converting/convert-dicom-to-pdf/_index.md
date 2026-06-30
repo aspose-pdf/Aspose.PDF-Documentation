@@ -1,29 +1,29 @@
 ---
-title: Convertir DICOM a PDF
-linktitle: Convertir DICOM a PDF
+title: Convert DICOM to PDF
+linktitle: Convert DICOM to PDF
 type: docs
 weight: 250
 url: /es/androidjava/convert-dicom-to-pdf/
 lastmod: "2021-06-05"
-description: Convierta imágenes médicas guardadas en formato DICOM a un archivo PDF usando Aspose.PDF para Android a través de Java.
+description: Convert medical images saved in DICOM format to a PDF file using Aspose.PDF for Android via Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> es un estándar para manejar, almacenar, imprimir y transmitir información en imágenes médicas. Incluye una definición de formato de archivo y un protocolo de comunicaciones de red.
+<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> is a standard for handling, storing, printing, and transmitting information in medical imaging. It includes a file format definition and a network communications protocol.
 
-Aspose.PDF para Java le permite convertir archivos DICOM a formato PDF, ver el siguiente fragmento de código:
+Aspsoe.PDF for Java allows you to convert DICOM files to PDF format, check next code snippet:
 
-1. Cargar imagen en flujo
-1. Inicializar [`objeto Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
-1. Cargar archivo de imagen DICOM de muestra
-1. Guardar documento PDF de salida
+1. Load image into stream
+1. Initialize [`Document object`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
+1. Load sample DICOM image file
+1. Save output PDF document
 
 ```java
-//    Convertir DICOM a PDF
+//    Convert DICOM to PDF
     public void convertDICOMtoPDF () {
-        // Inicializar objeto documento
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -38,14 +38,14 @@ Aspose.PDF para Java le permite convertir archivos DICOM a formato PDF, ver el s
             return;
         }
 
-        // Cargar archivo de imagen BMP de muestra
+        // Load sample BMP image file
         image.setImageStream(inputStream);
         image.setFileType(ImageFileType.Dicom);
         page.getParagraphs().add(image);
 
         File pdfFileName=new File(fileStorage, "DICOM-to-PDF.pdf");
 
-        // Guardar documento de salida
+        // Save output document
         try {
             document.save(pdfFileName.toString());
         } catch (Exception e) {
@@ -55,3 +55,5 @@ Aspose.PDF para Java le permite convertir archivos DICOM a formato PDF, ver el s
         resultMessage.setText(R.string.success_message);
     }
 ```
+
+

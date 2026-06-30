@@ -1,37 +1,36 @@
 ---
-title: Operaciones avanzadas
-linktitle: Operaciones avanzadas
+title: Advanced operations
+linktitle: Advanced operations
 type: docs
 weight: 70
 url: /es/androidjava/advanced-operations/
-description: Aspose.PDF para Android a través de Java te permite hacer no solo tareas simples. Puedes establecer objetivos difíciles y resolverlos fácilmente.
+description: Aspose.PDF for Android via Java allows you to do not just simple tasks. You can set difficult goals and solve them easily.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-**Operaciones Avanzadas** es una sección sobre cómo manejar archivos PDF existentes de manera programática, ya sean documentos creados con Aspose.PDF como se discute en [Operaciones Básicas](/pdf/es/androidjava/basic-operations), o PDFs creados con Adobe Acrobat, Google Docs, Microsoft Office, Open Office o cualquier otro productor de PDF.
+**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/androidjava/basic-operations), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
 
-Aprenderás diferentes maneras de:
+You'll learn different ways to:
 
-- [Trabajar con Documentos](/pdf/es/androidjava/working-with-documents/) - comprimir, dividir y fusionar documentos y realizar otras operaciones con el documento completo.
-- [Trabajar con Páginas](/pdf/es/androidjava/working-with-pages/) - agregar, mover o eliminar, recortar páginas, añadir marcas de agua, sellos.
+- [Working with Documents](/pdf/androidjava/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
+- [Working with Pages](/pdf/androidjava/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps.
+- [Working with Text](/pdf/androidjava/working-with-text/) - add, format, search and replace text in PDF.
+- [Working with Images](/pdf/androidjava/working-with-images/) - insert, remove, extract image in document.
+- [Working with Tables](/pdf/androidjava/working-with-tables/) - insert, decorate table in PDF, extract tabular data.
+- [Working with Forms](/pdf/androidjava/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
+- [Working with Graphs](/pdf/androidjava/graphs/) - manipulate with shapes on the page.
+- [Working with XML](/pdf/androidjava/working-with-xml) - construct PDF documents based on the XML structure.
+- [Navigation and Interaction](/pdf/androidjava/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages.
+- [Annotations](/pdf/androidjava/annotations/) - annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
+- [Artifacts](/pdf/androidjava/artifacts/) - deal with watermarks and other special objects in PDF.
+- [Accessibility. Tagged PDF](/pdf/androidjava/accessibility-tagged-pdf/) - Tagging is essential for PDF accessibility. Aspose.PDF allows to add tags into PDF and establish logical reading order and to provide a means for indicating structure and type.
+- [Attachments](/pdf/androidjava/attachments/) - PDF documents may contain file attachments. These attachments can be other PDF documents, or any kind of file, like audio files, Microsoft Office documents etc. You will learn how to add attachments to pdf, get the information of an attachment, and save it to file, delete the attachment from PDF programmatically with Java.
+- [Metadata in PDFs](/pdf/androidjava/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data.
+- [Securing and Signing](/pdf/androidjava/securing-and-signing/) - protect and sign your PDF document programmatically
+- [Printing Document](/pdf/androidjava/print-pdf-file/) - print PDFs in various types of applications (WinForms, WPF, etc.)
+- [Operators](/pdf/androidjava/operators/) - make low-level operations in PDF.
 
-- [Trabajar con Texto](/pdf/es/androidjava/working-with-text/) - agregar, formatear, buscar y reemplazar texto en PDF.
-- [Trabajando con Imágenes](/pdf/es/androidjava/working-with-images/) - insertar, eliminar, extraer imagen en el documento.
-- [Trabajando con Tablas](/pdf/es/androidjava/working-with-tables/) - insertar, decorar tabla en PDF, extraer datos tabulares.
-- [Trabajando con Formularios](/pdf/es/androidjava/working-with-forms/) - manejar documentos PDF interactivos, agregar campos de formulario, extraer datos.
-- [Trabajando con Gráficos](/pdf/es/androidjava/graphs/) - manipular formas en la página.
-- [Trabajando con XML](/pdf/es/androidjava/working-with-xml) - construir documentos PDF basados en la estructura XML.
-- [Navegación e Interacción](/pdf/es/androidjava/navigation-and-interaction/) - manejar acciones, marcadores, navegar páginas.
-- [Anotaciones](/pdf/es/androidjava/annotations/) - las anotaciones permiten a los usuarios agregar contenido personalizado en las páginas PDF. Puedes agregar, eliminar y modificar la anotación de los documentos PDF.
-- [Artefactos](/pdf/es/androidjava/artifacts/) - manejar marcas de agua y otros objetos especiales en PDF.
-- [Accesibilidad.
- - [PDF etiquetados](/pdf/es/androidjava/accessibility-tagged-pdf/) - El etiquetado es esencial para la accesibilidad de PDF. Aspose.PDF permite agregar etiquetas a PDF, establecer un orden de lectura lógico y proporcionar un medio para indicar estructura y tipo.
-- [Adjuntos](/pdf/es/androidjava/attachments/) - Los documentos PDF pueden contener archivos adjuntos. Estos adjuntos pueden ser otros documentos PDF, o cualquier tipo de archivo, como archivos de audio, documentos de Microsoft Office, etc. Aprenderás cómo agregar adjuntos al pdf, obtener la información de un adjunto, guardarlo en un archivo, eliminar el adjunto del PDF de manera programática con Java.
-- [Metadatos en PDFs](/pdf/es/androidjava/pdf-file-metadata/) - obtener o establecer metadatos en documentos, tratando con datos XMP.
-- [Asegurar y Firmar](/pdf/es/androidjava/securing-and-signing/) - proteger y firmar tu documento PDF de manera programática
-- [Imprimir Documento](/pdf/es/androidjava/print-pdf-file/) - imprimir PDFs en varios tipos de aplicaciones (WinForms, WPF, etc.)
 
-- [Operadores](/pdf/es/androidjava/operators/) - realizar operaciones de bajo nivel en PDF.

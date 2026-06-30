@@ -1,26 +1,25 @@
 ---
-title: Extraer Párrafo de PDF
-linktitle: Extraer Párrafo
+title: Extract Paragraph from PDF
+linktitle: Extract Paragraph
 type: docs
 weight: 20
 url: /es/androidjava/extract-paragraph-from-pdf/
-description: Este artículo describe cómo usar ParagraphAbsorber - una herramienta especial en Aspose.PDF para extraer texto de documentos PDF.
+description: Learn how to extract specific paragraphs from a PDF document in Android/Java using Aspose.PDF for content extraction.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Extraer Texto de un documento PDF en forma de Párrafos
+## Extract Text from PDF document in Paragraphs form
 
-Podemos obtener texto de un documento PDF buscando un texto en particular (usando "texto plano" o "expresiones regulares") de una sola página o de todo el documento, o podemos obtener el texto completo de una sola página, un rango de páginas o del documento completo.
- Sin embargo, en algunos casos, necesitas extraer párrafos de un documento PDF o texto en forma de párrafos. Hemos implementado funcionalidad para buscar secciones y párrafos en el texto de las páginas de documentos PDF. Hemos introducido la clase ParagraphAbsorber (como TextFragmentAbsorber y TextAbsorber), que puede ser utilizada para extraer párrafos de documentos PDF. Hay dos maneras en las que puedes usar ParagraphAbsorber:
+We can get text from a PDF document by searching a particular text (using "plain text" or "regular expressions") from a single page or whole document, or we can get the complete text of a single page, range of pages or complete document. However, in some cases, you require to extract paragraphs from a PDF document or text in the form of Paragraphs. We have implemented functionality for searching sections and paragraphs in the text of PDF document pages. We have introduced ParagraphAbsorber Class (like TextFragmentAbsorber and TextAbsorber), which can be used to extract paragraphs from PDF documents. There are two following ways in which you can use ParagraphAbsorber:
 
-**1- Dibujando el borde de secciones y párrafos de texto en la página PDF:**
+**1- By drawing the border of sections and paragraphs of text on PDF page:**
 
 ```java
 public static void ExtractParagraph() {
-        // La ruta al directorio de documentos.
+        // The path to the documents directory.
         Document doc = new Document(_dataDir + "input.pdf");
         Page page = doc.getPages().get_Item(2);
 
@@ -65,13 +64,13 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- Iterando a través de la colección de párrafos y obteniendo el texto de ellos:**
+**2- By iterating through paragraphs collection and get the text of them:**
 
 ```java
  public static void ExtractParagraph02() {
-        // Abrir un archivo PDF existente
+        // Open an existing PDF file
         Document doc = new Document(_dataDir + "input.pdf");
-        // Instanciar ParagraphAbsorber
+        // Instantiate ParagraphAbsorber
         ParagraphAbsorber absorber = new ParagraphAbsorber();
         absorber.visit(doc);
 
@@ -91,7 +90,7 @@ public static void ExtractParagraph() {
                     }
                     paragraphText.append("\r\n");
 
-                    System.out.println("Párrafo " + j + " de la sección " + i + " en la página" + ":" + markup.getNumber());
+                    System.out.println("Paragraph " + j + " of section " + i + " on page" + ":" + markup.getNumber());
                     System.out.println(paragraphText.toString());
 
                     j++;
@@ -101,3 +100,5 @@ public static void ExtractParagraph() {
         }
     }
 ```
+
+

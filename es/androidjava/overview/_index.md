@@ -4,43 +4,44 @@ linktitle: Overview
 type: docs
 weight: 20
 url: /es/androidjava/overview/
-description: Descripción general de las características clave y formatos compatibles de Aspose.PDF para Android a través de Java, manual de instalación y licenciamiento de la biblioteca Java.
+description: Overview of key-features and supported formats of Aspose.PDF for Android via Java, installation and licensing manual of Java library.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-_Esta página es una descripción general de las características de Aspose.PDF para Android a través de Java._
+_This page is an overview of  Aspose.PDF for Android via Java features._
 
-Aspose.PDF para Android Java es una API de procesamiento de PDF que permite a las aplicaciones de Android leer, escribir, manipular y renderizar documentos PDF. Aspose.PDF para Android a través de Java proporciona una interfaz de programación de aplicaciones (API) muy simple para los desarrolladores que es fácil de aprender y usar.
+Aspose.PDF for Android Java is a PDF Processing API that enables the Android apps to read, write, manipulate & render PDF documents. Aspose.PDF for Android via Java provides a very simple Application Programming Interface (API) for developers that is easy to learn and use.
 
-Aspose.PDF para Android a través de Java admite una amplia variedad de funciones como:
+The Aspose.PDF for Android via Java supports a wide variety of functions such as:
 
-- compresión de documentos;
-- creación y manipulación de tablas;
-- soporte para objetos gráficos;
-- funcionalidad extensa de hipervínculos;
-- controles de seguridad extendidos;
-- manejo de fuentes personalizadas;
-- integración con fuentes de datos;
-- agregar o eliminar marcadores;
-- crear una tabla de contenido;
+- document compression;
+- table creation and manipulation;
+- support for graph objects;
+- extensive hyperlink functionality;
+- extended security controls;
+- custom font handling;
+- integration with data sources;
+- add or remove bookmarks;
+- create a table of contents;
+- add, update, delete attachments and annotations;
+- import or export PDF form data;
+- add, replace or remove text and images;
+- split, concatenate, extract or inset pages;
+- transform pages to image;
+- print PDF documents and much more.
 
-- agregar, actualizar, eliminar anexos y anotaciones;
-- importar o exportar datos de formularios PDF;
-- agregar, reemplazar o eliminar texto e imágenes;
-- dividir, concatenar, extraer o insertar páginas;
-- transformar páginas en imágenes;
-- imprimir documentos PDF y mucho más.
+In addition, Aspose.PDF for Android via Java can be applied to easily convert text, images, convert PDF to various document formats with excellent performance and good quality.
 
-Además, Aspose.PDF para Android a través de Java se puede aplicar para convertir fácilmente texto, imágenes, convertir PDF a varios formatos de documentos con excelente rendimiento y buena calidad.
+Learn more about:
 
-Aprende más sobre:
+- [Supported File Formats](/pdf/androidjava/supported-file-formats/)
+- [Key Features of Aspose.PDF](/pdf/androidjava/key-features/)
+- [System Requirements](/pdf/androidjava/system-requirements/)
+- [Installation](/pdf/androidjava/installation/)
+- [Licensing](/pdf/androidjava/licensing/)
+- [Technical Support](/pdf/androidjava/technical-support/)
 
-- [Formatos de Archivo Soportados](/pdf/es/androidjava/supported-file-formats/)
-- [Características Clave de Aspose.PDF](/pdf/es/androidjava/key-features/)
-- [Requisitos del Sistema](/pdf/es/androidjava/system-requirements/)
-- [Instalación](/pdf/es/androidjava/installation/)
-- [Licenciamiento](/pdf/es/androidjava/licensing/)
-- [Soporte Técnico](/pdf/es/androidjava/technical-support/)
+

@@ -1,39 +1,39 @@
 ---
-title: Convertir PDF a TIFF
-linktitle: Convertir PDF a TIFF
+title: Convert PDF to TIFF
+linktitle: Convert PDF to TIFF
 type: docs
 weight: 30
 url: /es/androidjava/convert-pdf-to-tiff/
 lastmod: "2021-06-05"
-description: Este artículo describe cómo convertir páginas en un documento PDF en una imagen TIFF. Aprenderás cómo convertir todas o una sola página a imágenes TIFF con Aspose.PDF para Android a través de Android a través de Java.
+description: This article describes how to convert pages in PDF document into TIFF image. You will learn how to convert all or single pages to TIFF images with Aspose.PDF for Android via Android via Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-**Aspose.PDF para Android a través de Java** hace posible convertir páginas PDF a imágenes TIFF.
+**Aspose.PDF for Android via Java** makes a possible to convert PDF Pages to TIFF  images.
 
-La [clase TiffDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice) te permite convertir páginas PDF a imágenes TIFF. Esta clase proporciona un método llamado Process que te permite convertir todas las páginas en un archivo PDF a una sola imagen TIFF.
+The [TiffDevice class](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice) allows you to convert PDF pages to TIFF images. This class provides a method named Process which allows you to convert all the pages in a PDF file to a single TIFF image.
 
 {{% alert color="primary" %}}
 
-Prueba en línea. Puedes verificar la calidad de la conversión de Aspose.PDF y ver los resultados en línea en este enlace [products.aspose.app/pdf/conversion/pdf-to-tiff](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
+Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-tiff](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 
 {{% /alert %}}
 
-## Convertir Páginas de PDF a Una Imagen TIFF
+## Convert PDF Pages to One TIFF Image
 
-Aspose.PDF para Android a través de Java explica cómo convertir todas las páginas de un archivo PDF en una única imagen TIFF:
+Aspose.PDF for Android via Java explain how to convert all pages in a PDF file to a single TIFF image:
 
-1. Crear un objeto de la clase Document.
-1. Llamar al método Process para convertir el documento.
-1. Para establecer las propiedades del archivo de salida, usar la clase TiffSettings.
+1. Create an object of the Document class.
+1. Call the Process method to convert the document.
+1. To set the output file's properties, use the TiffSettings class.
 
-El siguiente fragmento de código muestra cómo convertir todas las páginas del PDF en una sola imagen TIFF.
+The following code snippet shows how to convert all the PDF pages to a single TIFF image.
 
 ```java
 public void convertPDFtoTiffSinglePage() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -41,20 +41,20 @@ public void convertPDFtoTiffSinglePage() {
             return;
         }
 
-        // Crear objeto Resolution
+        // Create Resolution object
         Resolution resolution = new Resolution(300);
 
-        // Crear objeto TiffSettings
+        // Create TiffSettings object
         TiffSettings tiffSettings = new TiffSettings();
         tiffSettings.setCompression(CompressionType.None);
         tiffSettings.setDepth(ColorDepth.Default);
         tiffSettings.setShape(ShapeType.Landscape);
 
-        // Crear dispositivo TIFF
+        // Create TIFF device
         TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
         File file = new File(fileStorage, "PDF-to-TIFF.tiff");
         try {
-            // Convertir una página particular y guardar la imagen en el stream
+            // Convert a particular page and save the image to stream
             tiffDevice.process(document, 1, 1, file.toString());
         }
         catch (Exception e) {
@@ -64,14 +64,13 @@ public void convertPDFtoTiffSinglePage() {
 
 ```
 
+## Convert Single Page to TIFF Image
 
-## Convertir una Página a Imagen TIFF
-
-Aspose.PDF para Android a través de Java permite convertir una página particular en un archivo PDF a una imagen TIFF, utilizando una versión sobrecargada del método Process(..) que toma un número de página como argumento para la conversión. El siguiente fragmento de código muestra cómo convertir la primera página de un PDF al formato TIFF.
+Aspose.PDF for Android via Java allows to convert a particular page in a PDF file to a TIFF image, use an overloaded version of the Process(..) method which takes a page number as an argument for conversion. The following code snippet shows how to convert the first page of a PDF to TIFF format.
 
 ```java
 public void convertPDFtoTiffAllPages() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -80,21 +79,21 @@ public void convertPDFtoTiffAllPages() {
         }
 
 
-        // Crear objeto Resolution
+        // Create Resolution object
         Resolution resolution = new Resolution(300);
 
-        // Crear objeto TiffSettings
+        // Create TiffSettings object
         TiffSettings tiffSettings = new TiffSettings();
         tiffSettings.setCompression(CompressionType.None);
         tiffSettings.setDepth(ColorDepth.Default);
         tiffSettings.setShape(ShapeType.Landscape);
         tiffSettings.setSkipBlankPages(false);
 
-        // Crear dispositivo TIFF
+        // Create TIFF device
         TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
         File file = new File(fileStorage, "AllPagesToTIFF_out.tif");
         try {
-            // Convertir una página particular y guardar la imagen en el flujo
+            // Convert a particular page and save the image to stream
             tiffDevice.process(document, file.toString());
         }
         catch (Exception e) {
@@ -103,20 +102,21 @@ public void convertPDFtoTiffAllPages() {
     }
 ```
 
+## Use Bradley algorithm during conversion
 
-## Utilizar el algoritmo de Bradley durante la conversión
-
-Aspose.PDF para Android a través de Java ha estado soportando la función de convertir PDF a TIFF usando compresión LZW y luego con el uso de AForge, se puede aplicar binarización. Sin embargo, uno de los clientes solicitó que para algunas imágenes, necesitan obtener el Umbral usando Otsu, por lo que también les gustaría usar Bradley.
+Aspose.PDF for Android via Java has been supporting the feature to convert PDF to TIFF using LZW compression and then with the use of AForge, Binarization can be applied. However one of the customers requested that for some images, they need to get the Threshold using Otsu, so they also would like to use Bradley.
 
 ```java
 public void convertPDFtoTiffBradleyBinarization() {
-        //No implementado en Aspose.PDF para Android
+        //Not implemented in Aspose.PDF for Android
         throw new NotImplementedException();
     }
 
     public static void convertPDFtoTIFF_Pixelated() {
 
-        //No implementado en Aspose.PDF para Android
+        //Not implemented in Aspose.PDF for Android
         throw new NotImplementedException();
     }
 ```
+
+

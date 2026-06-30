@@ -1,50 +1,49 @@
 ---
-title: Extracción de texto sin formato de un archivo PDF
-linktitle: Extraer texto de PDF
+title: Extracting raw text from PDF file
+linktitle: Extract text from PDF
 type: docs
 weight: 10
 url: /es/androidjava/extract-text-from-all-pdf/
-description: Este artículo describe varias formas de extraer texto de documentos PDF utilizando Aspose.PDF para Android a través de Java. De páginas enteras, de una parte específica, basado en columnas, etc.
+description: This article describes various ways to extract text from PDF documents using Aspose.PDF for Android via Java. From entire pages, from a specific part, based on columns, etc.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Extraer texto de todas las páginas de un documento PDF
+## Extract Text From All the Pages of a PDF Document
 
-La extracción de texto de un documento PDF es un requisito común. En este ejemplo, verás cómo Aspose.PDF para Java permite extraer texto de todas las páginas de un documento PDF.
-Para extraer texto de todas las páginas del PDF:
+Extracting text from a PDF document is a common requirement. In this example, you'll see how Aspose.PDF for Java allows extracting text from all the pages of a PDF document.
+To extract text from all the PDF pages:
 
-1. Crea un objeto de la clase [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber).
+1. Create an object of the [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class.
+1. Open the PDF using [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) class and call the [Accept](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) method of the [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) collection.
+1. The [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) class absorbs the text from the document and returns in **Text** property.
 
-1. Abra el PDF usando la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) y llame al método [Accept](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) de la colección [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page).
-1. La clase [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) absorbe el texto del documento y lo devuelve en la propiedad **Text**.
-
-El siguiente fragmento de código muestra cómo extraer texto de todas las páginas de un documento PDF.
+The following code snippet shows you how to extract text from all pages of PDF document.
 
 ```java
 public static void ExtractFromAllPages() {
-        // La ruta al directorio de documentos.
+        // The path to the documents directory.
 
         String filePath = _dataDir + "ExtractTextAll.pdf";
 
-        // Abrir documento
+        // Open document
         Document pdfDocument = new com.aspose.pdf.Document(filePath);
 
-        // Crear objeto TextAbsorber para extraer texto
+        // Create TextAbsorber object to extract text
         TextAbsorber textAbsorber = new com.aspose.pdf.TextAbsorber();
 
-        // Aceptar el absorbedor para todas las páginas
+        // Accept the absorber for all the pages
         pdfDocument.getPages().accept(textAbsorber);
 
-        // Obtener el texto extraído
+        // Get the extracted text
         String extractedText = textAbsorber.getText();
         try {
             java.io.FileWriter writer = new java.io.FileWriter(_dataDir + "extracted-text.txt", true);
-            // Escribir una línea de texto en el archivo
+            // Write a line of text to the file
             writer.write(extractedText);
-            // Cerrar el flujo
+            // Close the stream
             writer.close();
         } catch (java.io.IOException e) {
             e.printStackTrace();
@@ -53,23 +52,22 @@ public static void ExtractFromAllPages() {
     }
 ```
 
+## Extract Highlighted Text from PDF Document
 
-## Extraer Texto Resaltado de un Documento PDF
-
-En varios escenarios de extracción de texto de un documento PDF, puedes encontrarte con el requisito de extraer solo el texto resaltado del documento PDF. Para implementar la funcionalidad, hemos añadido los métodos TextMarkupAnnotation.GetMarkedText() y TextMarkupAnnotation.GetMarkedTextFragments() en la API. Puedes extraer texto resaltado de un documento PDF filtrando TextMarkupAnnotation y usando los métodos mencionados. El siguiente fragmento de código muestra cómo puedes extraer texto resaltado de un documento PDF.
+In various scenarios of text extraction from a PDF document, you can come up with a requirement to extract only highlighted text from PDF document. In order to implement the functionality, we have added TextMarkupAnnotation.GetMarkedText() and TextMarkupAnnotation.GetMarkedTextFragments() methods in API. You can extract highlighted text from PDF document by filtering TextMarkupAnnotation and using the mentioned methods. The following code snippet shows how you can extract highlighted text from PDF document.
 
 ```java
 public static void ExtractHighlightedText() {
         Document doc = new Document(_dataDir + "ExtractHighlightedText.pdf");
-        // Recorre todas las anotaciones
+        // Loop through all the annotations
         for (Annotation annotation : doc.getPages().get_Item(1).getAnnotations()) {
-            // Filtrar TextMarkupAnnotation
+            // Filter TextMarkupAnnotation
             if (annotation.getAnnotationType() == AnnotationType.Highlight) {
                 HighlightAnnotation highlightedAnnotation = (HighlightAnnotation) annotation;
-                // Recuperar fragmentos de texto resaltado
+                // Retrieve highlighted text fragments
                 TextFragmentCollection collection = highlightedAnnotation.getMarkedTextFragments();
                 for (TextFragment tf : collection) {
-                    // Mostrar texto resaltado
+                    // Display highlighted text
                     System.out.println(tf.getText());
                 }
             }
@@ -77,12 +75,10 @@ public static void ExtractHighlightedText() {
     }
 ```
 
+## Access Text Fragment and Segment Elements from XML
 
-## Acceder a Fragmentos de Texto y Elementos de Segmento desde XML
+Sometimes we need access to TextFragement or TextSegment items when processing PDF documents generated from XML. Aspose.PDF for Android via Java provides access to such items by name. The code snippet below shows how to use this functionality.
 
-A veces necesitamos acceder a elementos TextFragment o TextSegment al procesar documentos PDF generados a partir de XML. Aspose.PDF para Android vía Java proporciona acceso a tales elementos por nombre. El fragmento de código a continuación muestra cómo usar esta funcionalidad.
-
-```java
   public static void AccessTextFragmentAndSegmentElements() {
         String inXml = "40014.xml";
         Document doc = new Document();
@@ -95,3 +91,5 @@ A veces necesitamos acceder a elementos TextFragment o TextSegment al procesar d
         
     }
 ```
+
+

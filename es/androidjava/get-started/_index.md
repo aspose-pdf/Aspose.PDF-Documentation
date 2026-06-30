@@ -1,57 +1,59 @@
 ---
-title: Comenzar
-linktitle: Comenzar
+title: Get Started
+linktitle: Get Started
 type: docs
 weight: 30
 url: /es/androidjava/get-started/
-description: Esta sección describe los principios básicos del uso de Aspose.PDF para Android a través de Java. También demuestra ejemplos simples y complejos para crear un documento PDF
+description: This section describes the basic principles of using Aspose.PDF for Android via Java. Also demonstrates simple and complex examples for creating a PDF document
 lastmod: "2021-08-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-## ¿Qué es un archivo PDF?
+## What is a PDF File?
 
-PDF significa Formato de Documento Portátil, utilizado para mostrar documentos en una forma electrónica independiente del software, hardware o sistema operativo en el que se visualizan. Desarrollado originalmente por Adobe® Systems como un formato de archivo universalmente compatible basado en el formato PostScript, se ha convertido en un estándar de facto internacional para el intercambio de documentos e información.
+PDF stands for the Portable Document Format, used to display documents in an electronic form independent of the software, hardware or operating system they are viewed on. Originally developed by Adobe® Systems as a universally compatible file format based on the PostScript format, it has become an international de-facto standard for exchanging documents and information.
 
-Un archivo PDF muestra exactamente el mismo contenido y diseño sin importar en qué sistema operativo, dispositivo o aplicación de software se visualice.
+A PDF file displays the exact same content and layout no matter which operating system, device or software application it is viewed on.
 
-El formato PDF te permite integrar varios tipos de contenido: texto, imágenes y gráficos vectoriales, videos, animaciones, archivos de audio, modelos 3D, campos interactivos, hipervínculos, botones, etc.
+The PDF format allows you to integrate various types of content – text, images and vector graphics, videos, animations, audio files, 3D models, interactive fields, hyperlinks, buttons, and etc.
 
-Los PDF son fáciles de crear, leer y usar por todos.
+PDFs are easy to create, read and use by everyone.
 
-Ofrece opciones para configurar diferentes niveles de acceso para proteger el contenido y todo el documento, como marcas de agua, contraseñas o firmas digitales.
+Offers options to set up different levels of access to protect the content and the whole document, such as watermarks, passwords or digital signatures.
 
-Sin embargo, no es suficiente solo abrir tu documento. Al trabajar con PDF, te enfrentarás a la necesidad de crear un documento nuevo, editarlo o convertirlo al formato que necesitas. Aspose.PDF para Android a través de Java te ayudará a resolver tus tareas.
+However, it is not enough just to open your document. In working with PDF, you will face the need to create such a document anew, edit it, or convert it to the format you need. Aspose.PDF for Android via Java will help you to resolve your tasks.
 
-## ¿Por qué usar Aspose.PDF para Android a través de Java?
+## Why use Aspose.PDF for Android via Java?
 
-Usar Aspose.PDF para Android a través de Java en tu proyecto te ofrece las siguientes ventajas:
+Using Aspose.PDF for Android via Java in your project gives you the following profits:
 
-- gran variedad de funciones
-- funciona con seguridad con Java Oracle JDK
-- conveniencia y facilidad de uso
-- Referencia API en formato JavaDoc
+- wide variety of functions
+- surely works with Java Oracle JDK
+- convenience and ease of use
+- API Reference in JavaDoc format
 
-Aspose.PDF para Android a través de Android a través de Java se puede integrar con cualquier aplicación, por ejemplo, una aplicación web JSP/JSF o una aplicación de Windows.
+Aspose.PDF for Android via Android via Java can be integrated with any application, for example a JSP/JSF web application or a Windows application.
 
-Aspose.PDF para Android a través de Android a través de Java es rápido y ligero. Crea documentos PDF de manera eficiente y ayuda a que tu aplicación tenga un mejor rendimiento.
+Aspose.PDF for Android via Android via Java is fast and light weight. It creates PDF documents efficiently and helps your application perform better
 
-## Gran variedad de funciones
+## Wide variety of functions
 
-- compresión de documentos
-- soporte para objetos gráficos
-- integración con fuentes de datos
-- agregar, actualizar, eliminar archivos adjuntos y anotaciones
-- soporte para convertir fácilmente PDF a otros formatos y viceversa
-- dividir, concatenar, extraer o insertar páginas y mucho más
-- manipular estilos y formato de texto
-- agregar o actualizar cifrado, contraseña y restricciones de seguridad
+- document compression
+- support for graph objects
+- integration with data sources
+- add, update, delete attachments and annotations
+- support easily converting PDF to other formats and vice versa
+- split, concatenate, extract or inset pages and much more
+- manipulate text styles and formatting
+- add or update encryption, password and security constrains
 
-### Aprende más sobre:
+### Learn more about:
 
-- [Conceptos básicos de la API DOM](/pdf/es/androidjava/basics-of-dom-api/)
-- [Ejemplo "Hola, Mundo" en Android con Java](/pdf/es/androidjava/hello-world-example/)
-- [PDF Complejo](/pdf/es/androidjava/complex-pdf-example/)
-- [Cómo ejecutar otros ejemplos](/pdf/es/androidjava/how-to-run-other-examples/)
+- [Basics of DOM API](/pdf/androidjava/basics-of-dom-api/)
+- ["Hello, World" Android via Java Example](/pdf/androidjava/hello-world-example/)
+- [Complex PDF](/pdf/androidjava/complex-pdf-example/)
+- [How to run other examples](/pdf/androidjava/how-to-run-other-examples/)
+
+

@@ -1,34 +1,33 @@
 ---
-title: Convertir PDF a DOC
-linktitle: Convertir PDF a DOC
+title: Convert PDF to DOC
+linktitle: Convert PDF to DOC
 type: docs
 weight: 70
 url: /es/androidjava/convert-pdf-to-doc/
 lastmod: "2021-06-05"
-description: Convierta archivos PDF a formato DOC con facilidad y control total con Aspose.PDF para Android a través de Java. Aprenda más sobre cómo ajustar la conversión de archivos Microsoft Word Doc a PDF.
+description: Convert PDF file to DOC format with ease and full control with Aspose.PDF for Android via Java. Learn more how to tune up Microsoft Word Doc file to PDF conversion.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Una de las características más populares es la conversión de PDF a Microsoft Word DOC, lo que hace que el contenido sea fácil de manipular. Aspose.PDF para Android a través de Java le permite convertir archivos PDF a DOC.
+One of the most popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. Aspose.PDF for Android via Java allows you to convert PDF files to DOC.
 
-**Aspose.PDF para Android a través de Java** puede crear documentos PDF desde cero y es un gran conjunto de herramientas para actualizar, editar y manipular documentos PDF existentes.
- Una característica importante es la capacidad de convertir páginas y documentos PDF completos en imágenes. Otra característica popular es la conversión de PDF a Microsoft Word DOC, lo que hace que el contenido sea fácil de manipular. (La mayoría de los usuarios no pueden editar documentos PDF, pero pueden trabajar fácilmente con tablas, texto e imágenes en Microsoft Word).
+**Aspose.PDF for Android via Java** can create PDF documents from scratch and is a great toolkit for updating, editing and manipulating existing PDF documents. An important feature is the ability to convert pages and entire PDF documents to images. Another popular feature is PDF to Microsoft Word DOC conversion, which makes the content easy to manipulate. (Most users can’t edit PDF documents but can easily work with tables, text, and images in Microsoft Word.)
 
-Para simplificar y hacer comprensible, Aspose.PDF para Android a través de Java proporciona un código de dos líneas para transformar un archivo PDF fuente en un archivo DOC.
+To make things simple and understandable, Aspose.PDF for Android via Java provides a two-line code for transforming a source PDF file into a DOC file.
 
 {{% alert color="primary" %}}
 
-Prueba en línea. Puedes comprobar la calidad de la conversión de Aspose.PDF y ver los resultados en línea en este enlace [products.aspose.app/pdf/conversion/pdf-to-doc](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+Try online. You can check the quality of Aspose.PDF conversion and view the results online at this link [products.aspose.app/pdf/conversion/pdf-to-doc](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 
 {{% /alert %}}
 
-El siguiente fragmento de código muestra el proceso de conversión de un archivo PDF a formato DOC.
+The following code snippet shows the process of converting a PDF file into DOC format.
 
 ```java
  public void convertPDFtoDOC() {
-        // Abrir el documento PDF fuente
+        // Open the source PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -38,7 +37,7 @@ El siguiente fragmento de código muestra el proceso de conversión de un archiv
         File docFileName = new File(fileStorage, "PDF-to-Word.doc");
 
         try {
-            // Guardar el archivo en formato de documento MS
+            // Save the file into MS document format
             document.save(docFileName.toString(), SaveFormat.Doc);
         }
         catch (Exception e) {
@@ -48,3 +47,6 @@ El siguiente fragmento de código muestra el proceso de conversión de un archiv
         resultMessage.setText(R.string.success_message);
     }
 ```
+
+
+

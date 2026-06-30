@@ -1,32 +1,31 @@
 ---
-title: Convertir TIFF a PDF
-linktitle: Convertir TIFF a PDF
+title: Convert TIFF to PDF
+linktitle: Convert TIFF to PDF
 type: docs
 weight: 210
 url: /es/androidjava/convert-tiff-to-pdf/
 lastmod: "2021-06-05"
-description: Aspose.PDF para Android a través de Java permite convertir imágenes TIFF de varias páginas o varios fotogramas a aplicaciones PDF.
+description: Aspose.PDF for Android via Java allows converting multi-page or multi-frame TIFF images to PDF applications.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-**Aspose.PDF para Android a través de Java** admite el formato de archivo, ya sea una imagen <abbr title="Formato de Archivo de Imagen Etiquetada">TIFF</abbr> de un solo fotograma o de varios fotogramas. Esto significa que puedes convertir la imagen TIFF a PDF en tus aplicaciones Java.
+**Aspose.PDF for Android via Java** file format supported, be it a single frame or multi-frame <abbr title="Tag Image File Format">TIFF</abbr> image. It means that you can convert the TIFF image to PDF in your Java applications.
 
-TIFF o TIF, Formato de Archivo de Imagen Etiquetada, representa imágenes rasterizadas que están destinadas a ser utilizadas en una variedad de dispositivos que cumplen con este estándar de formato de archivo.
- TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image. So you can convert the TIFF image to PDF in your Java applications. Therefore, we will consider an example of converting multi-page TIFF image to multi-page PDF document with below steps:
+TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image. So you can convert the TIFF image to PDF in your Java applications. Therefore, we will consider an example of converting multi-page TIFF image to multi-page PDF document with below steps:
 
-1. Instanciar una instancia de la clase Documento
-1. Cargar la imagen TIFF de entrada
-1. Obtener FrameDimension de los fotogramas
-1. Agregar nueva página para cada fotograma
-1. Finalmente, guardar imágenes en páginas PDF
+1. Instantiate an instance of Document class
+1. Load input TIFF image
+1. Get FrameDimension of the frames
+1. Add new page for each frame
+1. Finally, save images to PDF pages
 
-Además, el siguiente fragmento de código muestra cómo convertir una imagen TIFF de múltiples páginas o múltiples fotogramas a PDF:
+Moreover, the following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF:
 
 ```java
  public void convertTIFFtoPDF () {
-        // Inicializar objeto de documento
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -41,13 +40,13 @@ Además, el siguiente fragmento de código muestra cómo convertir una imagen TI
             return;
         }
 
-        // Cargar archivo de imagen TIFF de ejemplo
+        // Load sample TIFF image file
         image.setImageStream(inputStream);
         page.getParagraphs().add(image);
 
         File pdfFileName=new File(fileStorage, "TIFF-to-PDF.pdf");
 
-        // Guardar documento de salida
+        // Save output document
         try {
             document.save(pdfFileName.toString());
         } catch (Exception e) {
@@ -58,3 +57,5 @@ Además, el siguiente fragmento de código muestra cómo convertir una imagen TI
     }
 
 ```
+
+
