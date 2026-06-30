@@ -4,8 +4,8 @@ linktitle: استخراج بيانات الجدول
 type: docs
 weight: 40
 url: /ar/androidjava/extract-data-from-table-in-pdf/
-description: تعلّم كيفية استخراج الجداول من PDF باستخدام Aspose.PDF لنظام Android عبر Java.
-lastmod: "2021-06-05"
+description: تعلم كيفية استخراج البيانات الجدولية من PDF باستخدام Aspose.PDF for Android عبر Java.
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,24 +13,21 @@ sitemap:
 
 ## استخراج الجداول من PDF برمجياً
 
-استخراج الجداول من ملفات PDF ليس مهمة سهلة لأن الجدول يمكن أن يتم إنشاؤه بطرق مختلفة.
+استخراج الجداول من ملفات PDF ليس مهمة بسيطة لأن الجدول يمكن إنشاؤه بطرق مختلفة.
 
-يحتوي Aspose.PDF لنظام Android عبر Java على أداة لتسهيل استرجاع الجداول. لاستخراج بيانات الجدول، يجب عليك تنفيذ الخطوات التالية:
+Aspose.PDF لأجهزة Android عبر Java يحتوي على أداة تجعل استخراج الجداول سهلًا. لاستخراج بيانات الجدول، يجب عليك تنفيذ الخطوات التالية:
 
-1. فتح المستند - إنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document);
-1. إنشاء كائن [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber).
+1. افتح المستند - أنشئ كائنًا [مستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) كائن؛
+1. إنشاء [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber) كائن.
+1. قرر أي الصفحات يجب تحليلها وتطبيقها [زيارة](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) إلى الصفحات المطلوبة. سيتم مسح البيانات الجدولية، وسيتم حفظ النتيجة في قائمة من [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). يمكننا الحصول على هذه القائمة من خلال [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) طريقة.
+1. للحصول على البيانات، قم بالتكرار عبر `TableList` وتتعامل مع قائمة من [صفوف مستوعبة](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) وقائمة الخلايا المستوعبة. يمكننا الوصول إلى القائمة الأولى عن طريق الاستدعاء [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) الطريقة وإلى الثانية عن طريق الاستدعاء [getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
+1. كل [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) يحتوي على [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). يمكنك معالجته لأغراضك الخاصة.
 
-1. قرر أي الصفحات سيتم تحليلها وتطبيق [visit](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) على الصفحات المطلوبة. سيتم مسح البيانات الجدولية، وسيتم حفظ النتيجة في قائمة من [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). يمكننا الحصول على هذه القائمة من خلال طريقة [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--).
-
-1. للحصول على البيانات قم بالتكرار عبر `TableList` وتعامل مع قائمة [absorbed rows](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) وقائمة من الخلايا الممتصة. يمكننا الوصول إلى القائمة الأولى عن طريق استدعاء طريقة [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) وإلى الثانية عن طريق استدعاء طريقة [getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
-
-1. تحتوي كل [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) على [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). يمكنك معالجته لأغراضك الخاصة.
-
-المثال التالي يوضح استخراج الجدول من جميع الصفحات:
+المثال التالي يظهر استخراج الجدول من جميع الصفحات:
 
 ```java
 public void extractTable () {
-        // افتح المستند
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -51,16 +48,16 @@ public void extractTable () {
         }
 
         BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(fileOutputStream));
-        // مسح الصفحات
+        // Scan pages
         for (Page page : (Iterable<? extends Page>) document.getPages()) {
             absorber.visit(page);
             for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
                 try {
                     bw.write("Table");
                     bw.newLine();
-                    // التكرار عبر قائمة الصفوف
+                    // Iterate through list of rows
                     for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                        // التكرار عبر قائمة الخلايا
+                        // Iterate through list of cell
                         for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
                             for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
                                 StringBuilder sb=new StringBuilder();
@@ -88,18 +85,17 @@ public void extractTable () {
     }
 ```
 
+## استخراج جدول في منطقة محددة من صفحة PDF
 
-## استخراج الجدول في منطقة محددة من صفحة PDF
+كل جدول تم امتصاصه لديه [مستطيل](https://reference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rectangle) خاصية تصف موقع الجدول على الصفحة.
 
-كل جدول مستوعب يحتوي على خاصية [Rectangle](https://reference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rectangle) التي تصف موقع الجدول على الصفحة.
+لذا، إذا كنت بحاجة إلى استخراج الجداول الموجودة في منطقة محددة، يجب عليك العمل مع إحداثيات محددة.
 
-لذلك، إذا كنت بحاجة لاستخراج الجداول الموجودة في منطقة محددة، عليك العمل مع إحداثيات معينة.
-
-المثال التالي يوضح كيفية استخراج جدول محدد بتعليق مربع:
+المثال التالي يوضح كيفية استخراج الجدول المُعلَّم بتعليق مربع:
 
 ```java
 public void extractMarkedTable () {
-        // فتح المستند
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -114,7 +110,7 @@ public void extractMarkedTable () {
 
         List list=annotationSelector.getSelected();
         if (list.size() == 0) {
-            resultMessage.setText("لم يتم العثور على الجداول المحددة..");
+            resultMessage.setText("Marked tables not found..");
             return;
         }
 
@@ -144,7 +140,7 @@ public void extractMarkedTable () {
 
                     BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(fileOutputStream));
                     try {
-                        //تحليل الجدول
+                        //Parse table
                         for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
                             {
                                 for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
@@ -170,14 +166,14 @@ public void extractMarkedTable () {
     }
 ```
 
-
 ## استخراج بيانات الجدول من PDF وتخزينها في ملف CSV
 
-يوضح المثال التالي كيفية استخراج الجدول وتخزينه كملف CSV. لرؤية كيفية تحويل PDF إلى جدول بيانات Excel يرجى الرجوع إلى مقالة [تحويل PDF إلى Excel](/pdf/ar/java/convert-pdf-to-excel/).
+المثال التالي يوضح كيفية استخراج الجدول وتخزينه كملف CSV.
+لرؤية كيفية تحويل PDF إلى جدول بيانات Excel يرجى الرجوع إلى [تحويل PDF إلى Excel](/pdf/ar/java/convert-pdf-to-excel/) مقال.
 
 ```java
  public void extractTableSaveCSV () {
-        // فتح المستند
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -186,7 +182,7 @@ public void extractMarkedTable () {
         }
 
         File file=new File(fileStorage, "PDFToXLS_out.csv");
-        // إنشاء كائن ExcelSave Option
+        // Instantiate ExcelSave Option object
         com.aspose.pdf.ExcelSaveOptions excelSave=new com.aspose.pdf.ExcelSaveOptions();
         excelSave.setFormat(com.aspose.pdf.ExcelSaveOptions.ExcelFormat.CSV);
         try {
@@ -198,3 +194,4 @@ public void extractMarkedTable () {
         resultMessage.setText(R.string.success_message);
     }
 ```
+

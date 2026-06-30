@@ -4,26 +4,26 @@ linktitle: تحويل JPG إلى PDF
 type: docs
 weight: 190
 url: /ar/androidjava/convert-jpg-to-pdf/
-lastmod: "2021-06-05"
-description: تعلم كيفية تحويل صورة JPG بسهولة إلى ملف PDF. كما يمكنك تحويل صورة إلى PDF مع الاحتفاظ بنفس ارتفاع وعرض الصفحة.
+lastmod: "2026-06-30"
+description: تعلم كيفية تحويل صورة JPG بسهولة إلى ملف PDF. يمكنك أيضًا تحويل صورة إلى PDF بنفس ارتفاع وعرض الصفحة.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-لا داعي للتساؤل عن كيفية تحويل JPG إلى PDF، لأن مكتبة Apose.PDF لأندرويد عبر Java توفر أفضل حل.
+ليس هناك حاجة للتساؤل عن كيفية تحويل JPG إلى PDF، لأن مكتبة Apose.PDF لنظام Android عبر Java هي الخيار الأفضل.
 
-يمكنك بسهولة تحويل صور JPG إلى PDF باستخدام Aspose.PDF لأندرويد عبر Java باتباع الخطوات التالية:
+يمكنك بسهولة كبيرة تحويل صور JPG إلى PDF باستخدام Aspose.PDF لنظام Android عبر Java باتباع الخطوات التالية:
 
-1. تهيئة كائن من فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)
+1. تهيئة كائن من [مستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) فئة
 1. تحميل صورة JPG وإضافتها إلى الفقرة
 1. حفظ ملف PDF الناتج
 
-يوضح مقتطف الكود أدناه كيفية تحويل صورة JPG إلى PDF:
+المقتطف البرمجي أدناه يوضح كيفية تحويل صورة JPG إلى PDF:
 
 ```java
 public void convertJPEGtoPDF () {
-        // تهيئة كائن الوثيقة
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -38,13 +38,13 @@ public void convertJPEGtoPDF () {
             return;
         }
 
-        // تحميل ملف صورة JPEG التجريبي
+        // Load sample JPEG image file
         image.setImageStream(inputStream);
         page.getParagraphs().add(image);
 
         File pdfFileName=new File(fileStorage, "JPEG-to-PDF.pdf");
 
-        // حفظ الوثيقة الناتجة
+        // Save output document
         try {
             document.save(pdfFileName.toString());
         } catch (Exception e) {

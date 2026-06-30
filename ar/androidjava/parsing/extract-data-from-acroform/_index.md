@@ -1,11 +1,11 @@
 ---
-title: استخراج البيانات من AcroForm
-linktitle: استخراج البيانات من AcroForm
+title:  استخراج البيانات من AcroForm
+linktitle:  استخراج البيانات من AcroForm
 type: docs
 weight: 50
 url: /ar/androidjava/extract-data-from-acroform/
-description: توجد AcroForms في العديد من مستندات PDF. تهدف هذه المقالة إلى مساعدتك في فهم كيفية استخراج البيانات من AcroForms باستخدام Aspose.PDF.
-lastmod: "2021-06-05"
+description: توجد AcroForms في العديد من مستندات PDF. يهدف هذا المقال إلى مساعدتك في فهم كيفية استخراج البيانات من AcroForms باستخدام Aspose.PDF.
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,20 +13,20 @@ sitemap:
 
 ## استخراج حقول النموذج من مستند PDF
 
-لا يتيح لك Aspose.PDF لنظام Android عبر Java إنشاء وملء حقول النموذج فحسب، بل يسهل أيضًا استخراج بيانات حقول النموذج أو معلومات حقول النموذج من ملفات PDF.
+لا يتيح Aspose.PDF for Android عبر Java فقط إنشاء وملء حقول النموذج، بل يجعل من السهل أيضًا استخراج بيانات حقول النموذج أو معلومات حقول النموذج من ملفات PDF.
 
-افترض أننا لا نعرف أسماء حقول النموذج مسبقًا. ثم يجب علينا التكرار عبر كل صفحة في PDF لاستخراج معلومات حول جميع AcroForms في PDF وكذلك قيم حقول النموذج. للوصول إلى النموذج، نحتاج إلى استخدام طريقة [getForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--).
+لنفترض أننا لا نعرف أسماء حقول النموذج مسبقًا. ثم يجب أن نتنقل عبر كل صفحة في PDF لاستخراج المعلومات حول جميع AcroForms في PDF بالإضافة إلى قيم حقول النموذج. للوصول إلى النموذج نحتاج إلى استخدام [getForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) طريقة.
 
 ```java
  public void extractFormFields () {
-        // افتح المستند
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
             resultMessage.setText(e.getMessage());
             return;
         }
-        // احصل على القيم من جميع الحقول
+        // Get values from all fields
         StringBuilder sb=new StringBuilder();
         for (com.aspose.pdf.Field formField : document.getForm().getFields()) {
             sb.append("Field Name: ");
@@ -39,17 +39,16 @@ sitemap:
     }
 ```
 
+إذا كنت تعرف اسم حقول النموذج التي تريد استخراج القيم منها، يمكنك استخدام الفهرس في مجموعة Documents.Form لاسترجاع هذه البيانات بسرعة.
 
-إذا كنت تعرف أسماء حقول النموذج التي ترغب في استخراج القيم منها، يمكنك استخدام الفهرس في مجموعة Documents.Form لاسترداد هذه البيانات بسرعة.
+## استرجع قيمة حقل النموذج حسب العنوان
 
-## استرداد قيمة حقل النموذج حسب العنوان
-
-تسمح لك خاصية Value لحقل النموذج بالحصول على قيمة حقل معين. للحصول على القيمة، احصل على حقل النموذج من [كائن المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) [مجموعة حقول النموذج](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). يختار هذا المثال [حقل مربع النص](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) ويسترد قيمته باستخدام طريقة [getValue](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
+تسمح لك الخاصية Value لحقل النموذج بالحصول على قيمة حقل معين. للحصول على القيمة، احصل على حقل النموذج من الـ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) الكائن [مجموعة حقول النموذج](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). يختار هذا المثال [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) ويسترجع قيمتها باستخدام [getValue](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) طريقة.
 
 ```java
 
     public void extractFormDataByName () {
-        // فتح المستند
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -65,14 +64,13 @@ sitemap:
     }
 ```
 
-
 ## استخراج البيانات إلى XML من ملف PDF
 
-تسمح لك فئة Form بتصدير البيانات إلى ملف XML من ملف PDF باستخدام طريقة ExportXml. من أجل تصدير البيانات إلى XML، تحتاج إلى إنشاء كائن من فئة Form ثم استدعاء طريقة ExportXml باستخدام كائن FileStream. أخيرًا، يمكنك إغلاق كائن FileStream والتخلص من كائن Form. يعرض لك مقطع الشفرة التالي كيفية تصدير البيانات إلى ملف XML.
+تسمح لك فئة Form بتصدير البيانات إلى ملف XML من ملف PDF باستخدام طريقة ExportXml. من أجل تصدير البيانات إلى XML، تحتاج إلى إنشاء كائن من فئة Form ثم استدعاء طريقة ExportXml باستخدام كائن FileStream. أخيراً، يمكنك إغلاق كائن FileStream وإتلاف كائن Form. يُظهر مقتطف الشفرة التالي كيفية تصدير البيانات إلى ملف XML.
 
 ```java
 public void extractFormFieldsToXML () {
-        // فتح المستند
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -83,35 +81,34 @@ public void extractFormFieldsToXML () {
         form.bindPdf(document);
         File file=new File(fileStorage, "output.xml");
         try {
-            // إنشاء ملف xml.
+            // Create xml file.
             FileOutputStream xmlOutputStream;
             xmlOutputStream=new FileOutputStream(file.toString());
-            // تصدير البيانات
+            // Export data
             form.exportXml(xmlOutputStream);
 
-            // إغلاق تدفق الملف
+            // Close file stream
             xmlOutputStream.close();
         } catch (IOException e) {
             resultMessage.setText(e.getMessage());
             return;
         }
-        // إغلاق المستند
+        // Close the document
         form.dispose();
     }
 ```
 
-
 ## تصدير البيانات إلى FDF من ملف PDF
 
-لتصدير بيانات النماذج من PDF إلى ملف XFDF، يمكننا استخدام طريقة [exportFdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportFdf-java.io.OutputStream-) في فئة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form).
+لتصدير بيانات نماذج PDF إلى ملف XFDF، يمكننا استخدام [exportFdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportFdf-java.io.OutputStream-) طريقة في الـ [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) فئة.
 
-يرجى ملاحظة أن هذه فئة من `com.aspose.pdf.facades`. على الرغم من الاسم المشابه، فإن لهذه الفئة غرضًا مختلفًا قليلاً.
+يرجى ملاحظة، أن هذه فئة من `com.aspose.pdf.facades`. على الرغم من الاسم المتشابه، فإن هذه الفئة لها هدف مختلف قليلاً.
 
-من أجل تصدير البيانات إلى FDF، تحتاج إلى إنشاء كائن من فئة `Form` ومن ثم استدعاء طريقة `exportXfdf` باستخدام كائن `OutputStream`. يوضح لك مقتطف الشيفرة التالي كيفية تصدير البيانات إلى ملف XFDF.
+من أجل تصدير البيانات إلى FDF، تحتاج إلى إنشاء كائن من `Form` الفئة ثم استدعاء `exportXfdf` طريقة باستخدام الـ `OutputStream` كائن. يوضح مقطع التعليمات البرمجية التالي كيفية تصدير البيانات إلى ملف XFDF.
 
 ```java
 public void extractFormExportFDF () {
-        // فتح المستند
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -127,10 +124,10 @@ public void extractFormExportFDF () {
 
             fdfOutputStream=new FileOutputStream(file.toString());
 
-            // تصدير البيانات
+            // Export data
             form.exportFdf(fdfOutputStream);
 
-            // إغلاق تدفق الملف
+            // Close file stream
             fdfOutputStream.close();
 
         } catch (IOException e) {
@@ -141,17 +138,16 @@ public void extractFormExportFDF () {
     }
 ```
 
-
 ## تصدير البيانات إلى XFDF من ملف PDF
 
-لتصدير بيانات نماذج PDF إلى ملف XFDF، يمكننا استخدام طريقة [exportXfdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportXfdf-java.io.OutputStream-) في فئة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form).
+لتصدير بيانات نماذج PDF إلى ملف XFDF، يمكننا استخدام [exportXfdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportXfdf-java.io.OutputStream-) طريقة في الـ [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) فئة.
 
-من أجل تصدير البيانات إلى XFDF، تحتاج إلى إنشاء كائن من فئة `Form` ثم استدعاء طريقة `exportXfdf` باستخدام كائن `OutputStream`. 
-يظهر لك مقتطف الكود التالي كيفية تصدير البيانات إلى ملف XFDF.
+من أجل تصدير البيانات إلى XFDF، تحتاج إلى إنشاء كائن من `Form` الفئة ثم استدعاء `exportXfdf` طريقة باستخدام الـ `OutputStream` كائن. 
+توضح لك موجزة الشيفرة التالية كيفية تصدير البيانات إلى ملف XFDF.
 
 ```java
     public void extractFormExportXFDF () {
-        // فتح المستند
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -167,10 +163,10 @@ public void extractFormExportFDF () {
 
             fdfOutputStream=new FileOutputStream(file.toString());
 
-            // تصدير البيانات
+            // Export data
             form.exportXfdf(fdfOutputStream);
 
-            // إغلاق تدفق الملف
+            // Close file stream
             fdfOutputStream.close();
 
         } catch (IOException e) {
@@ -180,3 +176,4 @@ public void extractFormExportFDF () {
         resultMessage.setText(R.string.success_message);
     }
 ```
+

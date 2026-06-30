@@ -1,20 +1,20 @@
 ---
-title: Parsing PDF documents
-linktitle: Parsing PDF documents
+title: تحليل مستندات PDF
+linktitle: تحليل مستندات PDF
 type: docs
 weight: 60
 url: /ar/androidjava/parsing/
-description: هل تريد استخراج البيانات من مستندات PDF؟ اكتشف طرقًا مختلفة لاستخراج بيانات PDF باستخدام Aspose.PDF for Android عبر Java
-lastmod: "2021-06-05"
+description: هل تريد استخراج البيانات من مستندات PDF؟ اكتشف طرق استخراج البيانات المتنوعة من PDF باستخدام Aspose.PDF for Android عبر Java
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-يعد تحليل مستندات PDF مصطلحًا يتعلق باستخراج أنواع مختلفة من المعلومات من ملف PDF. يغطي هذا القسم كيفية:
+تحليل مستندات PDF هو مصطلح يتعلق باستخراج أنواع مختلفة من المعلومات من ملف PDF. يغطى هذا القسم كيفية:
 
-- [استخراج النص من PDF](/pdf/ar/androidjava/extract-text-from-pdf/). يعد تحليل أو استخراج النص العملية الأكثر شعبية مع ملفات PDF الجاهزة. ستتعلم كيفية تحليل النص من مستند كامل أو صفحة معينة أو منطقة معينة في صفحة.
-- [استخراج الصور من PDF](/pdf/ar/androidjava/extract-images-from-the-pdf-file/). يقوم استخراج الصور بنفس العملية للصور مثل العملية أعلاه للنص.
-- [استخراج البيانات من جدول في PDF](/pdf/ar/androidjava/extract-data-from-table-in-pdf/).
- تعلم كيفية استخراج الجداول من PDF باستخدام Aspose.PDF لنظام Android عبر Java. 
-- [استخراج البيانات من النموذج](/pdf/ar/androidjava/extract-data-from-acroform/). إذا كان لديك مجموعة من مستندات PDF تحتوي على نماذج، فمن المحتمل أنك بحاجة إلى الحصول على البيانات من تلك النماذج. ستساعد هذه المقالة على فهم كيفية استخراج بيانات AcroForms باستخدام Aspose.PDF لنظام Android عبر Java.
+- [استخراج النص من PDF](/pdf/ar/androidjava/extract-text-from-pdf/). تحليل النص أو استخراجه هو العملية الأكثر شيوعًا مع ملفات PDF الجاهزة. ستتعلم حول تحليل النص من مستند كامل، أو صفحة معينة، أو منطقة معينة في الصفحة.
+- [استخراج الصور من PDF](/pdf/ar/androidjava/extract-images-from-the-pdf-file/). استخراج الصورة يفعل نفس ما تفعله العملية المذكورة أعلاه للنص.
+- [استخراج البيانات من الجدول في PDF](/pdf/ar/androidjava/extract-data-from-table-in-pdf/). تعلم كيفية استخراج الجداول من PDF باستخدام Aspose.PDF for Android عبر Java.
+- [استخراج البيانات من Form](/pdf/ar/androidjava/extract-data-from-acroform/). إذا كان لديك مجموعة من مستندات PDF تحتوي على Forms، ربما تحتاج إلى الحصول على البيانات من تلك النماذج. سيساعدك هذا المقال على فهم كيفية استخراج بيانات AcroForms باستخدام Aspose.PDF for Android عبر Java.
+

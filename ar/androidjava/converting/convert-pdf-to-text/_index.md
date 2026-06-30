@@ -4,28 +4,29 @@ linktitle: تحويل PDF إلى نص
 type: docs
 weight: 120
 url: /ar/androidjava/convert-pdf-to-txt/
-lastmod: "2021-06-05"
-description: باستخدام Aspose.PDF لنظام Android عبر Java يمكنك تحويل مستند PDF بالكامل إلى ملف نصي أو تحويل صفحة PDF فقط إلى ملف نصي.
+lastmod: "2026-06-30"
+description: باستخدام Aspose.PDF for Android عبر Java يمكنك تحويل مستند PDF كامل إلى ملف نصي أو تحويل صفحة PDF واحدة فقط إلى ملف نصي.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
+
 {{% alert color="primary" %}} 
 
-جرب عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت من خلال هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-txt](https://products.aspose.app/pdf/conversion/pdf-to-txt)
+جرّب عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت عبر هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-txt](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 
 {{% /alert %}}
 
 ## تحويل صفحة PDF إلى ملف نصي
 
-يمكنك تحويل مستند PDF إلى ملف TXT باستخدام Aspose.PDF لنظام Android عبر Java. يجب عليك استخدام طريقة Visit من فئة [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) لحل هذه المهمة.
+يمكنك تحويل مستند PDF إلى ملف TXT باستخدام Aspose.PDF for Android عبر Java. يجب عليك استخدام طريقة Visit لـ [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) فئة لحل هذه المهمة.
 
-يوضح مقطع الشيفرة التالي كيفية استخراج النصوص من الصفحات المحددة.
+المقتطف البرمجي التالي يوضح كيفية استخراج النصوص من الصفحات المحددة.
 
 ```java
 public void convertPDFPagesToTXT() {
-        // افتح المستند
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -41,7 +42,7 @@ public void convertPDFPagesToTXT() {
         }
         File txtFileName = new File(fileStorage, "PDF-to-Text.txt");
 
-        // احفظ النص المستخرج في ملف نصي
+        // Save the extracted text in text file
         BufferedWriter writer;
         try {
             writer = new BufferedWriter(new FileWriter(txtFileName));
@@ -55,3 +56,4 @@ public void convertPDFPagesToTXT() {
         resultMessage.setText(R.string.success_message);
     }
 ```
+

@@ -4,30 +4,30 @@ linktitle: تحويل PNG إلى PDF
 type: docs
 weight: 200
 url: /ar/androidjava/convert-png-to-pdf/
-lastmod: "2021-06-05"
-description: توضح هذه المقالة كيفية تحويل PNG إلى PDF باستخدام مكتبة Aspose.PDF في تطبيقات Android عبر Java. يمكنك تحويل صور PNG إلى تنسيق PDF باستخدام خطوات بسيطة.
+lastmod: "2026-06-30"
+description: توضح هذه المقالة كيفية تحويل PNG إلى PDF باستخدام مكتبة Aspose.PDF في نظام Android عبر تطبيقات Java. يمكنك تحويل صور PNG إلى تنسيق PDF باستخدام خطوات بسيطة.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-**Aspose.PDF for Android via Java** تدعم ميزة تحويل صور PNG إلى تنسيق PDF. تحقق من مقتطف الكود التالي لتحقيق مهمتك.
+**Aspose.PDF for Android via Java** تدعم ميزة تحويل صور PNG إلى تنسيق PDF. تحقق من مقتطف الشيفرة التالي لتنفيذ مهمتك.
 
-يشير <abbr title="Graphics الشبكة المحمولة">PNG</abbr> إلى نوع من تنسيقات ملفات الصور النقطية التي تستخدم الضغط بدون فقدان، مما يجعلها شائعة بين مستخدميها.
+<abbr title="Portable Network Graphics">PNG</abbr> يشير إلى نوع من تنسيقات ملفات الصور النقطية التي تستخدم ضغطًا بدون فقدان، مما يجعله شائعًا بين مستخدميه.
 
-يمكنك تحويل صورة PNG إلى PDF باستخدام الخطوات التالية:
+يمكنك تحويل PNG إلى صورة PDF باستخدام الخطوات التالية:
 
 1. تحميل صورة PNG المدخلة
-2. قراءة قيم الطول والعرض
-3. إنشاء مستند جديد وإضافة صفحة
-4. ضبط أبعاد الصفحة
-5. حفظ الملف الناتج
+1. قراءة قيم الارتفاع والعرض
+1. إنشاء مستند جديد وإضافة صفحة
+1. تعيين أبعاد الصفحة
+1. حفظ ملف الإخراج
 
-علاوة على ذلك، يوضح مقتطف الكود أدناه كيفية تحويل PNG إلى PDF في تطبيقات Java الخاصة بك:
+علاوة على ذلك، يوضح مقطع الشيفرة أدناه كيفية تحويل PNG إلى PDF في تطبيقات Java الخاصة بك:
 
 ```java
     public void convertPNGtoPDF () {
-        // تهيئة كائن المستند
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -42,3 +42,4 @@ sitemap:
             return;
         }
 ```
+

@@ -1,32 +1,31 @@
 ---
-title: Convert TIFF to PDF
-linktitle: Convert TIFF to PDF
+title: تحويل TIFF إلى PDF
+linktitle: تحويل TIFF إلى PDF
 type: docs
 weight: 210
 url: /ar/androidjava/convert-tiff-to-pdf/
-lastmod: "2021-06-05"
-description: يسمح Aspose.PDF لنظام Android عبر Java بتحويل الصور متعددة الصفحات أو متعددة الإطارات من نوع TIFF إلى تطبيقات PDF.
+lastmod: "2026-06-30"
+description: تتيح Aspose.PDF for Android عبر Java تحويل صور TIFF متعددة الصفحات أو متعددة الإطارات إلى تطبيقات PDF.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-**Aspose.PDF لنظام Android عبر Java** يدعم تنسيق الملف، سواء كان صورة <abbr title="تنسيق ملف صورة موسوم">TIFF</abbr> بإطار واحد أو متعددة الإطارات. هذا يعني أنه يمكنك تحويل صورة TIFF إلى PDF في تطبيقات Java الخاصة بك.
+**Aspose.PDF for Android via Java** تنسيق ملف مدعوم، سواءً كان إطارًا واحدًا أو متعدد الإطارات <abbr title="Tag Image File Format">TIFF</abbr> صورة. هذا يعني أنك يمكنك تحويل صورة TIFF إلى PDF في تطبيقات Java الخاصة بك.
 
-TIFF أو TIF، تنسيق ملف صورة موسوم، يمثل الصور النقطية التي تُستخدم على مجموعة متنوعة من الأجهزة التي تتوافق مع معيار تنسيق هذا الملف.
- يمكن أن تحتوي صورة TIFF على عدة إطارات مع صور مختلفة. يتم دعم تنسيق ملف Aspose.PDF أيضًا، سواء كانت صورة TIFF بإطار واحد أو متعددة الإطارات. لذا يمكنك تحويل صورة TIFF إلى PDF في تطبيقات Java الخاصة بك. لذلك، سننظر في مثال لتحويل صورة TIFF متعددة الصفحات إلى مستند PDF متعدد الصفحات بالخطوات التالية:
+TIFF أو TIF، Tagged Image File Format، تمثل صورًا نقطية مخصصة للاستخدام على مجموعة متنوعة من الأجهزة التي تتوافق مع معيار هذا التنسيق. يمكن لصورة TIFF أن تحتوي على عدة إطارات بصور مختلفة. كما يتم دعم تنسيق Aspose.PDF، سواء كان إطارًا واحدًا أو صورة TIFF متعددة الإطارات. لذلك يمكنك تحويل صورة TIFF إلى PDF في تطبيقات Java الخاصة بك. وبالتالي، سنلقي نظرة على مثال لتحويل صورة TIFF متعددة الصفحات إلى مستند PDF متعدد الصفحات بالخطوات التالية:
 
-1. إنشاء مثيل لفئة Document
+1. إنشاء مثيل من الفئة Document
 1. تحميل صورة TIFF المدخلة
-1. الحصول على FrameDimension للإطارات
-1. إضافة صفحة جديدة لكل إطار
-1. وأخيرًا، حفظ الصور في صفحات PDF
+1. احصل على FrameDimension للإطارات
+1. أضف صفحة جديدة لكل إطار
+1. أخيرًا، احفظ الصور إلى صفحات PDF
 
-علاوة على ذلك، يوضح مقتطف الشفرة التالي كيفية تحويل صورة TIFF متعددة الصفحات أو متعددة الإطارات إلى PDF:
+علاوة على ذلك، يوضح المقتطف البرمجي التالي كيف تقوم بتحويل صورة TIFF متعددة الصفحات أو متعددة الإطارات إلى PDF:
 
 ```java
  public void convertTIFFtoPDF () {
-        // تهيئة كائن الوثيقة
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -41,13 +40,13 @@ TIFF أو TIF، تنسيق ملف صورة موسوم، يمثل الصور ال
             return;
         }
 
-        // تحميل ملف صورة TIFF النموذجية
+        // Load sample TIFF image file
         image.setImageStream(inputStream);
         page.getParagraphs().add(image);
 
         File pdfFileName=new File(fileStorage, "TIFF-to-PDF.pdf");
 
-        // حفظ وثيقة الإخراج
+        // Save output document
         try {
             document.save(pdfFileName.toString());
         } catch (Exception e) {
@@ -58,3 +57,4 @@ TIFF أو TIF، تنسيق ملف صورة موسوم، يمثل الصور ال
     }
 
 ```
+
