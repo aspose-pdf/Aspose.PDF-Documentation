@@ -4,54 +4,55 @@ linktitle: تحويل DICOM إلى PDF
 type: docs
 weight: 250
 url: /ar/androidjava/convert-dicom-to-pdf/
-lastmod: "2021-06-05"
-description: تحويل الصور الطبية المحفوظة بتنسيق DICOM إلى ملف PDF باستخدام Aspose.PDF لـ Android عبر Java.
+lastmod: "2026-06-30"
+description: تحويل الصور الطبية المحفوظة بتنسيق DICOM إلى ملف PDF باستخدام Aspose.PDF for Android عبر Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> هو معيار للتعامل مع المعلومات وتخزينها وطباعتها ونقلها في التصوير الطبي. يشمل تعريف تنسيق الملف وبروتوكول اتصالات الشبكة.
+<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> هو معيار لمعالجة وتخزين وطباعة ونقل المعلومات في التصوير الطبي. يتضمن تعريف تنسيق ملف وبروتوكول اتصالات الشبكة.
 
-Aspose.PDF for Java يتيح لك تحويل ملفات DICOM إلى تنسيق PDF، تحقق من مقتطف الشيفرة التالي:
+Aspsoe.PDF for Java يتيح لك تحويل ملفات DICOM إلى تنسيق PDF، تحقق من مقتطف الشيفرة التالي:
 
-1. تحميل الصورة إلى الدفق
-1. تهيئة [`كائن الوثيقة`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
-1. تحميل ملف صورة DICOM النموذجي
-1. حفظ وثيقة PDF الناتجة
+1. تحميل الصورة إلى تدفق
+1. تهيئة [`Document object`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
+1. تحميل ملف صورة DICOM النموذجية
+1. حفظ مستند PDF الناتج
 
 ```java
-// تحويل DICOM إلى PDF
-public void convertDICOMtoPDF () {
-    // تهيئة كائن الوثيقة
-    document = new Document();
+//    Convert DICOM to PDF
+    public void convertDICOMtoPDF () {
+        // Initialize document object
+        document=new Document();
 
-    Page page = document.getPages().add();
-    Image image = new Image();
+        Page page=document.getPages().add();
+        Image image=new Image();
 
-    File imgFileName = new File(fileStorage, "Conversion/bmode.dcm");
+        File imgFileName=new File(fileStorage, "Conversion/bmode.dcm");
 
-    try {
-        inputStream = new FileInputStream(imgFileName);
-    } catch (FileNotFoundException e) {
-        resultMessage.setText(e.getMessage());
-        return;
+        try {
+            inputStream=new FileInputStream(imgFileName);
+        } catch (FileNotFoundException e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+
+        // Load sample BMP image file
+        image.setImageStream(inputStream);
+        image.setFileType(ImageFileType.Dicom);
+        page.getParagraphs().add(image);
+
+        File pdfFileName=new File(fileStorage, "DICOM-to-PDF.pdf");
+
+        // Save output document
+        try {
+            document.save(pdfFileName.toString());
+        } catch (Exception e) {
+            resultMessage.setText(e.getMessage());
+            return;
+        }
+        resultMessage.setText(R.string.success_message);
     }
-
-    // تحميل ملف صورة BMP النموذجي
-    image.setImageStream(inputStream);
-    image.setFileType(ImageFileType.Dicom);
-    page.getParagraphs().add(image);
-
-    File pdfFileName = new File(fileStorage, "DICOM-to-PDF.pdf");
-
-    // حفظ الوثيقة الناتجة
-    try {
-        document.save(pdfFileName.toString());
-    } catch (Exception e) {
-        resultMessage.setText(e.getMessage());
-        return;
-    }
-    resultMessage.setText(R.string.success_message);
-}
 ```
+

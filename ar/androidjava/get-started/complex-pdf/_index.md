@@ -4,38 +4,37 @@ linktitle: إنشاء ملف PDF معقد
 type: docs
 weight: 30
 url: /ar/androidjava/complex-pdf-example/
-description: Aspose.PDF لنظام Android عبر Java يسمح لك بإنشاء مستندات أكثر تعقيدًا تحتوي على صور وقطع نصية وجداول في مستند واحد.
-lastmod: "2021-06-05"
+description: Aspose.PDF for Android via Java يتيح لك إنشاء مستندات أكثر تعقيدًا تحتوي على صور، مقتطفات نصية، وجداول في مستند واحد.
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-أظهر مثال [Hello, World](/pdf/ar/java/hello-world-example/) خطوات بسيطة لإنشاء مستند PDF باستخدام Java وAspose.PDF. في هذه المقالة، سنلقي نظرة على إنشاء مستند أكثر تعقيدًا باستخدام Java وAspose.PDF for Java. كمثال، سنأخذ مستندًا من شركة خيالية تعمل في خدمات نقل الركاب بالعبّارات.
-سيحتوي مستندنا على صورة، وقطعتين نصيتين (عنوان وفقرة)، وجدول. لبناء مثل هذا المستند، سنستخدم نهج يعتمد على DOM. يمكنك قراءة المزيد في قسم [أساسيات واجهة برمجة تطبيقات DOM](/pdf/ar/java/basics-of-dom-api/).
+ال [مرحبًا، عالم](/pdf/ar/java/hello-world-example/) أظهر المثال خطوات بسيطة لإنشاء مستند PDF باستخدام Java و Aspose.PDF. في هذه المقالة، سنلقي نظرة على إنشاء مستند أكثر تعقيدًا باستخدام Java و Aspose.PDF for Java. كمثال، سنأخذ مستندًا من شركة خيالية تشغل خدمات العبارات للركاب.
+سيتضمن مستندنا صورة، جزئي نص (العنوان والفقرة)، وجدول. لبناء مثل هذا المستند، سنستخدم نهج قائم على DOM. يمكنك قراءة المزيد في القسم [أساسيات واجهة برمجة تطبيقات DOM](/pdf/ar/java/basics-of-dom-api/).
 
-إذا قمنا بإنشاء مستند من البداية، نحتاج إلى اتباع خطوات معينة:
+إذا أنشأنا مستندًا من الصفر، نحتاج إلى اتباع خطوات معينة:
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document). في هذه الخطوة سنقوم بإنشاء مستند PDF فارغ مع بعض البيانات الوصفية ولكن بدون صفحات.
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) إلى كائن المستند. الآن سيكون لمستندنا صفحة واحدة.
-1. لإضافة صورة، نقوم بإنشاء FileInputStream، ونحدد المسار إلى الملف الذي نحتاجه. ثم نضيف الصورة إلى المستطيل بالإحداثيات المعطاة.
-1. إنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) للرأس. للرأس سنستخدم خط Arial بحجم خط 24pt ومحاذاة مركزية.
-1. إضافة الرأس إلى الصفحة [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
-1. إنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) للوصف. للوصف سنستخدم خط Arial بحجم خط 24pt ومحاذاة مركزية.
-
-1. أضف (الوصف) إلى فقرات الصفحة. استخدمنا خطوط "Helvetica" و"Times Roman" في مثالنا، ولكن ضع في اعتبارك أن هناك ثلاثة خطوط نظامية فقط في نظام Android:
+1. إنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) كائن. في هذه الخطوة سننشئ مستند PDF فارغ مع بعض البيانات الوصفية ولكن بدون صفحات.
+1. أضف [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) إلى كائن المستند. لذلك، الآن سيكون لدينا مستند بصفحة واحدة.
+1. لإضافة Image، نقوم بإنشاء FileInputStream، ونحدد المسار إلى الملف الذي نحتاجه. ثم نضيف الصورة إلى المستطيل مع الإحداثيات المحددة.
+1. إنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) للعنوان. للعنوان سنستخدم خط Arial بحجم 24pt ومحاذاة مركزية.
+1. إضافة العنوان إلى الصفحة [فقرات](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. إنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) للشرح. للشرح سنستخدم الخط Arial بحجم 24pt ومحاذاة مركزية.
+1. أضف (description) إلى صفحة الفقرات. استخدمنا الخطين "Helvetica" و "Times Roman" في مثالنا، لكن ضع في اعتبارك أن هناك ثلاثة خطوط نظامية فقط في Android:
 
 - عادي (Droid Sans);
-- مزخرف (Droid Serif);
-- عريض الأحرف (Droid Sans Mono).
+- سيريف (Droid Serif);
+- مونواسبيس (Droid Sans Mono).
 
-1. قم بإنشاء جدول، وأضف خصائص الجدول.
-1. أضف (الجدول) إلى صفحة [فقرات](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
-1. احفظ المستند باسم "Complex.pdf".
+1. إنشاء جدول، وإضافة خصائص الجدول.
+1. إضافة (table) إلى الصفحة [فقرات](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. احفظ مستندًا "Complex.pdf".
 
-في النهاية، يتم عرض نافذة منبثقة برسالة "تم إنشاء مستند PDF!".
+في النهاية، تُعرض نافذة منبثقة بالرسالة "PDF document has been generated!".
 
-![مثال معقد لـ Aspose.PDF لنظام Android عبر Java](complex_example.png)
+![مثال معقد لـ Aspose.PDF for Android عبر Java](complex_example.png)
 
 ```java
 package com.aspose.pdf.examplecomplex;
@@ -93,13 +92,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void RunComplexExample() {
-        // تهيئة كائن المستند
+        // Initialize document object
         Document document = new Document();
 
-        // إضافة صفحة
+        // Add page
         Page page = document.getPages().add();
 
-        // إضافة صورة
+        // Add image
         java.io.FileInputStream imageStream = null;
         try {
             imageStream = new FileInputStream("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/logo.png");
@@ -107,21 +106,21 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // إضافة الصورة إلى الصفحة
+        // Add image to the page
         page.addImage(imageStream, new Rectangle(20, 730, 120, 830));
 
-        // إضافة رأس
-        TextFragment header = new TextFragment("مسارات عبّارات جديدة في خريف 2020");
+        // Add Header
+        TextFragment header = new TextFragment("New ferry routes in Fall 2020");
         header.getTextState().setFont(FontRepository.findFont("Helvetica"));
         header.getTextState().setFontSize(24);
         header.setHorizontalAlignment (HorizontalAlignment.Center);
         header.setPosition(new Position(130, 720));
         page.getParagraphs().add(header);
 
-        // إضافة الوصف
-        String descriptionText = "يجب على الزوار شراء التذاكر عبر الإنترنت وتقتصر التذاكر " +
-                "على 5000 تذكرة في اليوم. تعمل خدمة العبّارات بسعة نصفية و" +
-                "بجدول زمني مخفض. توقع الاصطفاف.";
+        // Add description
+        String descriptionText = "Visitors must buy tickets online and tickets are " +
+                "limited to 5,000 per day. Ferry service is operating at half capacity and" +
+                " on a reduced schedule. Expect lineups.";
 
         TextFragment description = new TextFragment(descriptionText);
         description.getTextState().setFont(FontRepository.findFont("Helvetica"));
@@ -130,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         page.getParagraphs().add(description);
 
 
-        // إضافة جدول
+        // Add table
         Table table = new Table();
         table.setColumnWidths("200");
         table.setBorder(new BorderInfo(BorderSide.Box, 1f, Color.getDarkSlateGray()));
@@ -139,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
         table.getDefaultCellTextState().setFont(FontRepository.findFont("Times Roman"));
 
         Row headerRow = table.getRows().add();
-        headerRow.getCells().add("يغادر المدينة");
-        headerRow.getCells().add("يغادر الجزيرة");
+        headerRow.getCells().add("Departs City");
+        headerRow.getCells().add("Departs Island");
 
 
         for (Cell headerRowCell : (Iterable<? extends Cell>) headerRow.getCells())
@@ -166,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         document.save("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/sample.pdf");
 
         Toast toast = Toast.makeText(MainActivity.this,
-                "تم إنشاء مستند PDF!", Toast.LENGTH_LONG);
+                "PDF document has been generated!", Toast.LENGTH_LONG);
         toast.show();
     }
 
@@ -182,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
 }
 ```
-
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

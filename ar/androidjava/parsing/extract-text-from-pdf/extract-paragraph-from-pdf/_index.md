@@ -1,26 +1,25 @@
 ---
-title: استخراج فقرة من PDF
-linktitle: استخراج فقرة
+title: استخراج الفقرة من PDF
+linktitle: استخراج الفقرة
 type: docs
 weight: 20
 url: /ar/androidjava/extract-paragraph-from-pdf/
-description: تصف هذه المقالة كيفية استخدام ParagraphAbsorber - أداة خاصة في Aspose.PDF لاستخراج النص من مستندات PDF.
-lastmod: "2021-06-05"
+description: تعلم كيفية استخراج فقرات محددة من مستند PDF في Android/Java باستخدام Aspose.PDF لاستخراج المحتوى.
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## استخراج النص من مستند PDF في شكل فقرات
+## استخراج النص من مستند PDF بصيغة فقرات
 
-يمكننا الحصول على النص من مستند PDF عن طريق البحث عن نص معين (باستخدام "نص عادي" أو "تعبيرات منتظمة") من صفحة واحدة أو المستند بالكامل، أو يمكننا الحصول على النص الكامل لصفحة واحدة، أو مجموعة من الصفحات أو المستند الكامل.
- ومع ذلك، في بعض الحالات، تحتاج إلى استخراج الفقرات من مستند PDF أو النص في شكل فقرات. لقد قمنا بتنفيذ وظيفة للبحث عن الأقسام والفقرات في نص صفحات مستند PDF. لقد قدمنا فئة ParagraphAbsorber (مثل TextFragmentAbsorber وTextAbsorber)، التي يمكن استخدامها لاستخراج الفقرات من مستندات PDF. هناك طريقتان يمكنك من خلالهما استخدام ParagraphAbsorber:
+يمكننا الحصول على النص من مستند PDF عن طريق البحث عن نص معين (باستخدام "plain text" أو "regular expressions") من صفحة واحدة أو كامل المستند، أو يمكننا الحصول على النص الكامل لصفحة واحدة، أو نطاق من الصفحات، أو المستند بالكامل. ومع ذلك، في بعض الحالات، تحتاج إلى استخراج الفقرات من مستند PDF أو النص بصيغة فقرات. لقد نفذنا وظيفة للبحث عن الأقسام والفقرات في نص صفحات مستند PDF. قدمنا فئة ParagraphAbsorber (مثل TextFragmentAbsorber و TextAbsorber)، والتي يمكن استخدامها لاستخراج الفقرات من مستندات PDF. هناك طريقتان التاليان يمكنك من خلالهما استخدام ParagraphAbsorber:
 
 **1- عن طريق رسم حدود الأقسام والفقرات النصية على صفحة PDF:**
 
 ```java
 public static void ExtractParagraph() {
-        // المسار إلى دليل المستندات.
+        // The path to the documents directory.
         Document doc = new Document(_dataDir + "input.pdf");
         Page page = doc.getPages().get_Item(2);
 
@@ -52,7 +51,7 @@ public static void ExtractParagraph() {
 
     private static void DrawPolygonOnPage(Point[] polygon, Page page) {
         page.getContents().add(new GSave());
-        page.getContents().add(new ConcatenateMatrix(1, 0, 1, 0, 0));
+        page.getContents().add(new ConcatenateMatrix(1, 0, 0, 1, 0, 0));
         page.getContents().add(new SetRGBColorStroke(0, 0, 1));
         page.getContents().add(new SetLineWidth(1));
         page.getContents().add(new MoveTo(polygon[0].getX(), polygon[0].getY()));
@@ -65,13 +64,13 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- من خلال التكرار عبر مجموعة الفقرات والحصول على نصها:**
+**2- عبر التكرار عبر مجموعة الفقرات والحصول على النص الخاص بها:**
 
 ```java
  public static void ExtractParagraph02() {
-        // فتح ملف PDF موجود
+        // Open an existing PDF file
         Document doc = new Document(_dataDir + "input.pdf");
-        // إنشاء كائن ParagraphAbsorber
+        // Instantiate ParagraphAbsorber
         ParagraphAbsorber absorber = new ParagraphAbsorber();
         absorber.visit(doc);
 
@@ -91,7 +90,7 @@ public static void ExtractParagraph() {
                     }
                     paragraphText.append("\r\n");
 
-                    System.out.println("فقرة " + j + " من القسم " + i + " في الصفحة" + ":" + markup.getNumber());
+                    System.out.println("Paragraph " + j + " of section " + i + " on page" + ":" + markup.getNumber());
                     System.out.println(paragraphText.toString());
 
                     j++;
@@ -101,3 +100,4 @@ public static void ExtractParagraph() {
         }
     }
 ```
+

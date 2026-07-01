@@ -4,8 +4,8 @@ linktitle: استخراج النص من PDF
 type: docs
 weight: 10
 url: /ar/androidjava/extract-text-from-all-pdf/
-description: تصف هذه المقالة طرقًا مختلفة لاستخراج النصوص من مستندات PDF باستخدام Aspose.PDF لنظام Android عبر Java. من صفحات كاملة، من جزء محدد، بناءً على الأعمدة، إلخ.
-lastmod: "2021-06-05"
+description: تصفّح هذه المقالة الطرق المختلفة لاستخراج النص من مستندات PDF باستخدام Aspose.PDF for Android عبر Java. من الصفحات الكاملة، من جزء محدد، بناءً على الأعمدة، إلخ.
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,37 +13,37 @@ sitemap:
 
 ## استخراج النص من جميع صفحات مستند PDF
 
-يُعد استخراج النص من مستند PDF مطلبًا شائعًا. في هذا المثال، سترى كيف يسمح Aspose.PDF لـ Java باستخراج النص من جميع صفحات مستند PDF. لاستخراج النص من جميع صفحات PDF:
+استخراج النص من مستند PDF هو طلب شائع. في هذا المثال، سترى كيف يتيح Aspose.PDF for Java استخراج النص من جميع صفحات مستند PDF.
+لاستخراج النص من جميع صفحات PDF:
 
-1. قم بإنشاء كائن من فئة [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber).
+1. إنشاء كائن من [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) فئة.
+1. افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) فئة واستدعِ [قبول](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) طريقة الـ [صفحات](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) مجموعة.
+1. ال [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) الفئة تمتص النص من المستند وتعيده في **Text** خاصية.
 
-1. افتح ملف PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) واستدعِ طريقة [Accept](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection#accept-com.aspose.pdf.TextAbsorber-) من مجموعة [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page).
-2. تقوم فئة [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextAbsorber) بامتصاص النص من المستند وإرجاعه في خاصية **Text**.
-
-يوضح لك مقطع الكود التالي كيفية استخراج النص من جميع صفحات مستند PDF.
+يعرض لك مقطع الشيفرة التالي كيفية استخراج النص من جميع صفحات مستند PDF.
 
 ```java
 public static void ExtractFromAllPages() {
-        // المسار إلى دليل المستندات.
+        // The path to the documents directory.
 
         String filePath = _dataDir + "ExtractTextAll.pdf";
 
-        // افتح المستند
+        // Open document
         Document pdfDocument = new com.aspose.pdf.Document(filePath);
 
-        // إنشاء كائن TextAbsorber لاستخراج النص
+        // Create TextAbsorber object to extract text
         TextAbsorber textAbsorber = new com.aspose.pdf.TextAbsorber();
 
-        // قبول المستخلص لجميع الصفحات
+        // Accept the absorber for all the pages
         pdfDocument.getPages().accept(textAbsorber);
 
-        // الحصول على النص المستخرج
+        // Get the extracted text
         String extractedText = textAbsorber.getText();
         try {
             java.io.FileWriter writer = new java.io.FileWriter(_dataDir + "extracted-text.txt", true);
-            // كتابة سطر من النص إلى الملف
+            // Write a line of text to the file
             writer.write(extractedText);
-            // إغلاق التدفق
+            // Close the stream
             writer.close();
         } catch (java.io.IOException e) {
             e.printStackTrace();
@@ -52,23 +52,22 @@ public static void ExtractFromAllPages() {
     }
 ```
 
+## استخراج النص المبرز من مستند PDF
 
-## استخراج النص المميز من مستند PDF
-
-في مختلف السيناريوهات لاستخراج النص من مستند PDF، قد تواجه متطلبًا لاستخراج النص المميز فقط من مستند PDF. من أجل تنفيذ هذه الوظيفة، قمنا بإضافة طريقتي TextMarkupAnnotation.GetMarkedText() و TextMarkupAnnotation.GetMarkedTextFragments() في API. يمكنك استخراج النص المميز من مستند PDF عن طريق تصفية TextMarkupAnnotation واستخدام الطرق المذكورة. يوضح مقطع الشيفرة التالي كيفية استخراج النص المميز من مستند PDF.
+في سيناريوهات مختلفة لاستخراج النص من مستند PDF، قد تحتاج إلى استخراج النص المبرز فقط من مستند PDF. لتنفيذ هذه الوظيفة، قمنا بإضافة طريقتي TextMarkupAnnotation.GetMarkedText() و TextMarkupAnnotation.GetMarkedTextFragments() في الـ API. يمكنك استخراج النص المبرز من مستند PDF عن طريق تصفية TextMarkupAnnotation واستخدام الطريقتين المذكورتين. يوضح مقطع الشيفرة التالي كيفية استخراج النص المبرز من مستند PDF.
 
 ```java
 public static void ExtractHighlightedText() {
         Document doc = new Document(_dataDir + "ExtractHighlightedText.pdf");
-        // قم بالتكرار عبر جميع التعليقات التوضيحية
+        // Loop through all the annotations
         for (Annotation annotation : doc.getPages().get_Item(1).getAnnotations()) {
-            // قم بتصفية TextMarkupAnnotation
+            // Filter TextMarkupAnnotation
             if (annotation.getAnnotationType() == AnnotationType.Highlight) {
                 HighlightAnnotation highlightedAnnotation = (HighlightAnnotation) annotation;
-                // استرجاع أجزاء النص المميز
+                // Retrieve highlighted text fragments
                 TextFragmentCollection collection = highlightedAnnotation.getMarkedTextFragments();
                 for (TextFragment tf : collection) {
-                    // عرض النص المميز
+                    // Display highlighted text
                     System.out.println(tf.getText());
                 }
             }
@@ -76,20 +75,20 @@ public static void ExtractHighlightedText() {
     }
 ```
 
+## الوصول إلى مقطع النص وعناصر الجزء من XML
 
-## الوصول إلى عناصر Text Fragment و Segment من XML
+في بعض الأحيان نحتاج إلى الوصول إلى عناصر TextFragement أو TextSegment عند معالجة مستندات PDF التي تم إنشاؤها من XML. يوفر Aspose.PDF for Android via Java إمكانية الوصول إلى هذه العناصر بالاسم. يوضح مقتطف الشيفرة أدناه كيفية استخدام هذه الوظيفة.
 
-أحيانًا نحتاج إلى الوصول إلى عناصر TextFragment أو TextSegment عند معالجة مستندات PDF المولدة من XML. يوفر Aspose.PDF for Android عبر Java إمكانية الوصول إلى هذه العناصر بالاسم. يُظهر مقتطف الكود أدناه كيفية استخدام هذه الوظيفة.
+  public static void AccessTextFragmentAndSegmentElements() {
+        String inXml = \u002240014.xml\u0022;
+        Document doc = new Document();
+        doc.bindXml(_dataDir \u002B inXml);
 
-```java
-public static void AccessTextFragmentAndSegmentElements() {
-    String inXml = "40014.xml";
-    Document doc = new Document();
-    doc.bindXml(_dataDir + inXml);
+        TextSegment segment = (TextSegment) doc.getObjectById(\u0022boldHtml\u0022);
+        segment = (TextSegment) doc.getObjectById("strongHtml");
 
-    TextSegment segment = (TextSegment) doc.getObjectById("boldHtml");
-    segment = (TextSegment) doc.getObjectById("strongHtml");
-
-    System.out.println(segment.getText());
-}
+        System.out.println(segment.getText());
+        
+    }
 ```
+

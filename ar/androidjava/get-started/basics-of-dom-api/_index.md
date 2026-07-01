@@ -4,8 +4,8 @@ linktitle: أساسيات DOM API
 type: docs
 weight: 10
 url: /ar/androidjava/basics-of-dom-api/
-description: يستخدم Aspose.PDF لنظام Android عبر Java أيضًا فكرة DOM لتمثيل هيكل مستند PDF من حيث الكائنات. هنا يمكنك قراءة وصف لهذا الهيكل.
-lastmod: "2021-06-05"
+description: تستخدم Aspose.PDF لنظام Android عبر Java أيضًا فكرة DOM لتمثيل بنية مستند PDF من حيث الكائنات. هنا يمكنك قراءة وصف هذه البنية.
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,77 +13,77 @@ sitemap:
 
 ## مقدمة إلى DOM API
 
-نموذج كائن المستند (DOM) هو شكل من أشكال تمثيل المستندات المهيكلة كنموذج موجه للكائنات. DOM هو معيار رسمي من اتحاد شبكة الويب العالمية (W3C) لتمثيل المستندات المهيكلة بطريقة محايدة للنظام الأساسي واللغة.
+نموذج كائن المستند (DOM) هو شكل من أشكال تمثيل المستندات المهيكلة كنموذج كائني التوجيه. DOM هو المعيار الرسمي لمجموعة توصيات الويب العالمية (W3C) لتمثيل المستندات المهيكلة بطريقة محايدة عن النظام الأساسي واللغة.
 
-بعبارات بسيطة، DOM هو شجرة من الكائنات التي تمثل هيكل بعض المستندات.
- Aspose.PDF for Android عبر Java يستخدم أيضًا فكرة DOM لتمثيل هيكل مستند PDF من حيث الكائنات. ومع ذلك، يتم التلاعب بجوانب DOM (مثل عناصره) داخل بناء لغة البرمجة المستخدمة. يتم تحديد الواجهة العامة لـ DOM في واجهة برمجة التطبيقات الخاصة به (API).
+بكلمات بسيطة، DOM هو شجرة من الكائنات التي تمثل بنية مستند ما. تستخدم Aspose.PDF لنظام Android عبر Java أيضًا فكرة DOM لتمثيل بنية مستند PDF من حيث الكائنات. ومع ذلك، يتم التلاعب بجوانب DOM (مثل العناصر الخاصة به) داخل بنية لغة البرمجة المستخدمة. الواجهة العامة لـ DOM محددة في واجهة برمجة التطبيقات (API) الخاصة به.
 
 ### مقدمة إلى مستند PDF
 
-تنسيق المستند المحمول (PDF) هو معيار مفتوح لتبادل المستندات. مستند PDF هو مزيج من النص والبيانات الثنائية. إذا فتحته في محرر نصوص، سترى الكائنات الخام التي تحدد هيكل ومحتويات المستند.
+تنسيق المستندات القابل للنقل (PDF) هو معيار مفتوح لتبادل المستندات. مستند PDF هو مزيج من النص والبيانات الثنائية. إذا فتحته في محرر نصوص، سترى الكائنات الخام التي تحدد بنية ومحتوى المستند.
 
-الهيكل المنطقي لملف PDF هرمي ويحدد التسلسل الذي تقوم به تطبيقات العرض برسم صفحات المستند ومحتوياتها. يتكون PDF من أربعة مكونات: الكائنات، هيكل الملف، هيكل المستند وتدفقات المحتوى.
+الهيكل المنطقي لملف PDF هرمي ويحدد التسلسل الذي يرسم به تطبيق العرض صفحات المستند ومحتوياتها. يتكون PDF من أربعة مكونات: الكائنات، بنية الملف، بنية المستند وتدفقات المحتوى.
 
-### هيكل مستند PDF
+### بنية مستند PDF
 
-نظرًا لأن هيكل ملف PDF هرمي، فإن Aspose.PDF for Java يصل أيضًا إلى العناصر بنفس الطريقة. يظهر التسلسل الهرمي التالي كيف يتم تنظيم مستند PDF بشكل منطقي وكيف يقوم Aspose.PDF لـ Java DOM API ببنائه.
+نظرًا لأن بنية ملف PDF هرمية، فإن Aspose.PDF for Java يحصل أيضًا على العناصر بنفس الطريقة. تُظهر التسلسل الهرمي التالي كيف يتم هيكلة مستند PDF منطقياً وكيف يبنيها Aspose.PDF for Java DOM API.
 
-![هيكل مستند PDF](https://docs.aspose.com/pdf/java/images/structure.png)
+![بنية مستند PDF](https://docs.aspose.com/pdf/java/images/structure.png)
 
 ### الوصول إلى عناصر مستند PDF
 
-كائن المستند موجود في المستوى الجذري لنموذج الكائن. يتيح لك Aspose.PDF لنظام Android عبر Java DOM API إنشاء كائن Document ثم الوصول إلى جميع الكائنات الأخرى في التسلسل الهرمي. يمكنك إما الوصول إلى أي من المجموعات مثل Pages أو العنصر الفردي مثل Page إلخ. يوفر DOM API نقاط دخول وخروج واحدة للتلاعب بمستند PDF كما هو موضح أدناه:
+كائن Document يقع في المستوى الجذري لنموذج الكائنات. يتيح لك Aspose.PDF for Android عبر Java DOM API إنشاء كائن Document ثم الوصول إلى جميع الكائنات الأخرى في التسلسل الهرمي. يمكنك إما الوصول إلى أي من المجموعات مثل Pages أو العنصر الفردي مثل Page إلخ. يوفر DOM API نقاط دخول وخروج واحدة للتلاعب بالمستند PDF كما هو موضح أدناه:
 
 - فتح مستند PDF
-- الوصول إلى هيكل مستند PDF بأسلوب DOM
+- الوصول إلى بنية مستند PDF بنمط DOM
 - تحديث البيانات في مستند PDF
-- التحقق من صحة مستند PDF
-- تصدير مستند PDF إلى تنسيقات مختلفة
-- وأخيراً، حفظ مستند PDF المحدث
+- تحقق من صحة مستند PDF
+- تصدير مستند PDF إلى صيغ مختلفة
+- أخيرًا، احفظ مستند PDF المحدث
 
-## كيفية استخدام Aspose.PDF الجديد لنظام Android عبر Java API
+## كيفية استخدام Aspose.PDF الجديد لنظام Android عبر واجهة برمجة التطبيقات Java
 
-سيشرح هذا الموضوع Aspose.PDF الجديد لنظام Android عبر Java API ويوجهك لبدء العمل بسرعة وسهولة. يرجى ملاحظة أن التفاصيل المتعلقة باستخدام الميزات المعينة ليست جزءًا من هذه المقالة.
+ستشرح هذه الفقرة Aspose.PDF الجديد لنظام Android عبر واجهة برمجة التطبيقات Java وتوجهك للبدء بسرعة وسهولة. يرجى ملاحظة أن التفاصيل المتعلقة باستخدام الميزات المحددة ليست جزءًا من هذه المقالة.
 
-يتكون Aspose.PDF for Android عبر Java من جزئين:
+يتكون Aspose.PDF لنظام Android عبر Java من جزأين:
 
-- Aspose.PDF for Android عبر Java DOM API
-- Aspose.PDF.Facades
+- Aspose.PDF لنظام Android عبر Java DOM API
+- Aspose.PDF.Facades 
 
-ستجد تفاصيل كل من هذه المناطق أدناه.
+ستجد تفاصيل كل من هذه المجالات أدناه.
 
-### Aspose.PDF for Android عبر Java DOM API
+### Aspose.PDF لنظام Android عبر Java DOM API
 
-يتوافق API الجديد Aspose.PDF for Android عبر Java DOM مع هيكل مستندات PDF، مما يساعدك في العمل مع مستندات PDF ليس فقط على مستوى الملف والمستند، ولكن أيضًا على مستوى الكائن. لقد وفرنا مرونة أكبر للمطورين للوصول إلى جميع العناصر والكائنات في مستند PDF. باستخدام فئات Aspose.PDF DOM API، يمكنك الوصول البرمجي إلى عناصر المستند والتنسيق. يتألف هذا API الجديد من عدة مساحات اسم كما هو موضح أدناه:
+يتطابق Aspose.PDF الجديد لنظام Android عبر Java DOM API مع بنية مستند PDF، مما يساعدك على العمل مع مستندات PDF ليس فقط على مستوى الملف والمستند، بل أيضًا على مستوى الكائن. لقد وفرنا مزيدًا من المرونة للمطورين للوصول إلى جميع عناصر وكائنات مستند PDF. باستخدام فئات Aspose.PDF DOM API، يمكنك الحصول على وصول برمجي إلى عناصر المستند وتنسيقه. يتكون هذا الـ DOM API الجديد من عدة مساحات أسماء كما هو مبين أدناه:
 
 ### com.aspose.pdf
 
-توفر مساحة الاسم هذه الفئة Document التي تتيح لك فتح وحفظ مستند PDF. The License class is also a part of this namespace. It also provides classes related to PDF pages, attachments, and bookmarks like com.aspose.pdf.Page, com.aspose.pdf.PageCollection, com.aspose.pdf.FileSpecification, com.aspose.pdf.EmbeddedFileCollection, com.aspose.pdf.OutlineItemCollection, and com.aspose.pdf.OutlineCollection etc.
+توفر هذه مساحة الأسماء فئة Document التي تسمح لك بفتح وحفظ مستند PDF. فئة License هي أيضًا جزء من هذه مساحة الأسماء. كما توفر فئات متعلقة بصفحات PDF والمرفقات وعلامات الكتاب مثل com.aspose.pdf.Page، com.aspose.pdf.PageCollection، com.aspose.pdf.FileSpecification، com.aspose.pdf.EmbeddedFileCollection، com.aspose.pdf.OutlineItemCollection، و com.aspose.pdf.OutlineCollection وغيرها.
 
 #### com.aspose.pdf.text
 
-يوفر فضاء الأسماء هذا فئات تساعدك في العمل مع النص وجوانبه المختلفة، على سبيل المثال com.aspose.pdf.Font, com.aspose.pdf.FontCollection, com.aspose.pdf.FontRepository, com.aspose.pdf.FontStyles, com.aspose.pdf.TextAbsorber, com.aspose.pdf.TextFragment, com.aspose.pdf.TextFragmentAbsorber, com.aspose.pdf.TextFragmentCollection, com.aspose.pdf.TextFragmentState, com.aspose.pdf.TextSegment و com.aspose.pdf.TextSegmentCollection إلخ.
+تُوفر هذه المساحة الاسمية فئات تساعدك على العمل مع النص وجوانبه المختلفة، على سبيل المثال com.aspose.pdf.Font، com.aspose.pdf.FontCollection، com.aspose.pdf.FontRepository، com.aspose.pdf.FontStyles، com.aspose.pdf.TextAbsorber، com.aspose.pdf.TextFragment، com.aspose.pdf.TextFragmentAbsorber، com.aspose.pdf.TextFragmentCollection، com.aspose.pdf.TextFragmentState، com.aspose.pdf.TextSegment و com.aspose.pdf.TextSegmentCollection إلخ.
 
 #### com.aspose.pdf.TextOptions
 
-يوفر فضاء الأسماء هذا فئات تتيح لك تعيين خيارات مختلفة للبحث، التحرير أو استبدال النص، على سبيل المثال com.aspose.pdf.TextEditOptions, com.aspose.pdf.TextReplaceOptions, و com.aspose.pdf.TextSearchOptions.
+تُوفر هذه المساحة الاسمية فئات تتيح لك ضبط خيارات مختلفة للبحث أو التحرير أو استبدال النص، على سبيل المثال com.aspose.pdf.TextEditOptions، com.aspose.pdf.TextReplaceOptions، و com.aspose.pdf.TextSearchOptions.
+
 #### com.aspose.pdf.PdfAction
 
-تحتوي مساحة الأسماء هذه على الفئات التي تساعدك على العمل مع الميزات التفاعلية لوثيقة PDF، على سبيل المثال العمل مع الوثيقة والإجراءات الأخرى. تحتوي مساحة الأسماء هذه على فئات مثل com.aspose.pdf.GoToAction، وcom.aspose.pdf.GoToRemoteAction وcom.aspose.pdf.GoToURIAction إلخ.
+تحتوي هذه المساحة الاسمية على فئات تساعدك على العمل مع الميزات التفاعلية لمستند PDF، على سبيل المثال التعامل مع المستند وإجراءات أخرى. تحتوي هذه المساحة الاسمية على فئات مثل com.aspose.pdf.GoToAction، com.aspose.pdf.GoToRemoteAction و com.aspose.pdf.GoToURIAction إلخ.
 
 #### com.aspose.pdf.Annotation
 
-التعليقات التوضيحية هي جزء من الميزات التفاعلية لوثيقة PDF. لقد خصصنا مساحة أسماء للتعليقات التوضيحية. تحتوي مساحة الأسماء هذه على فئات تساعدك على العمل مع التعليقات التوضيحية، على سبيل المثال، com.aspose.pdf.Annotation، وcom.aspose.pdf.AnnotationCollection، وcom.aspose.pdf.CircleAnnotation وcom.aspose.pdf.LinkAnnotation إلخ.
+التعليقات التوضيحية هي جزء من ميزات التفاعل في مستند PDF. لقد خصصنا مساحة أسماء للتعليقات التوضيحية. تحتوي مساحة الاسم هذه على فئات تساعدك في التعامل مع التعليقات التوضيحية، على سبيل المثال، com.aspose.pdf.Annotation، com.aspose.pdf.AnnotationCollection، com.aspose.pdf.CircleAnnotation و com.aspose.pdf.LinkAnnotation وما إلى ذلك.
 
 #### com.aspose.pdf.Form
 
-تحتوي مساحة الأسماء هذه على الفئات التي تساعدك على العمل مع نماذج PDF وحقول النماذج، على سبيل المثال com.aspose.pdf.Form، وcom.aspose.pdf.Field، وcom.aspose.pdf.TextBoxField وcom.aspose.pdf.OptionCollection إلخ.
+تحتوي مساحة الاسم هذه على فئات تساعدك في التعامل مع نماذج PDF وحقول النماذج، على سبيل المثال com.aspose.pdf.Form، com.aspose.pdf.Field، com.aspose.pdf.TextBoxField و com.aspose.pdf.OptionCollection وما إلى ذلك.
 
 #### com.aspose.pdf.devices 
 
-يمكننا تنفيذ عمليات متنوعة على وثائق PDF مثل تحويل وثيقة PDF إلى تنسيقات صور مختلفة.
- ومع ذلك، فإن مثل هذه العمليات لا تنتمي إلى كائن Document ولا يمكننا توسيع فئة Document لمثل هذه العمليات. لهذا السبب قمنا بإدخال مفهوم الجهاز في واجهة برمجة التطبيقات الجديدة لـ DOM.
+يمكننا تنفيذ عمليات مختلفة على مستندات PDF مثل تحويل مستند PDF إلى صيغ صور متعددة. ومع ذلك، لا تنتمي هذه العمليات إلى كائن Document ولا يمكننا توسيع فئة Document لهذه العمليات. لهذا السبب قدمنا مفهوم Device في واجهة برمجة التطبيقات DOM الجديدة.
 
 ##### com.aspose.pdf.facades
 
-قبل Aspose.PDF لـ Java t.o.o، كنت بحاجة إلى Aspose.PDF.Kit لـ Java للتلاعب بملفات PDF الموجودة. لتنفيذ كود Aspose.PDF.Kit القديم، يمكن استخدام فضاء الأسماء com.aspose.pdf.facades.
+قبل Aspose.PDF for Java t.o.o، كنت تحتاج إلى Aspose.PDF.Kit for Java للتعامل مع ملفات PDF الموجودة. لتنفيذ كود Aspose.PDF.Kit القديم، يمكنك استخدام مساحة الاسم com.aspose.pdf.facades.
+

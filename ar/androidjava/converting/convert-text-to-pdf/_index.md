@@ -4,8 +4,8 @@ linktitle: تحويل النص إلى PDF
 type: docs
 weight: 300
 url: /ar/androidjava/convert-text-to-pdf/
-lastmod: "2021-06-05"
-description: يتيح لك Aspose.PDF لنظام Android عبر Java تحويل ملف نصي عادي إلى PDF أو تحويل ملف نصي مهيأ مسبقًا إلى PDF.
+lastmod: "2026-06-30"
+description: تتيح لك Aspose.PDF for Android via Java تحويل ملف نص عادي إلى PDF أو تحويل ملف نص مُنسق مسبقًا إلى PDF.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,28 +13,27 @@ sitemap:
 
 {{% alert color="primary" %}} 
 
-جرب عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF ومشاهدة النتائج عبر الإنترنت في هذا الرابط [products.aspose.app/pdf/conversion/txt-to-pdf](https://products.aspose.app/pdf/conversion/txt-to-pdf)
+جرّب عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت عبر هذا الرابط [products.aspose.app/pdf/conversion/txt-to-pdf](https://products.aspose.app/pdf/conversion/txt-to-pdf)
 
 {{% /alert %}}
 
-يوفر **Aspose.PDF لنظام Android عبر Java** القدرة على تحويل ملفات النص إلى تنسيق PDF. في هذه المقالة، نوضح كيف يمكننا بسهولة وكفاءة تحويل ملف نصي إلى PDF باستخدام Aspose.PDF.
+**Aspose.PDF for Android via Java** يوفر القدرة على تحويل ملفات النص إلى صيغة PDF. في هذا المقال، نوضح كيف يمكننا بسهولة وكفاءة تحويل ملف نصي إلى PDF باستخدام Aspose.PDF.
 
-عندما تحتاج إلى تحويل ملف نصي إلى PDF، قم في البداية بقراءة ملف النص المصدر في بعض القارئ.
- لقد استخدمنا StringBuilder لقراءة محتويات ملف النص. قم بإنشاء كائن Document وأضف صفحة جديدة في مجموعة الصفحات. أنشئ كائن جديد من TextFragment ومرر كائن StringBuilder إلى منشئه. أضف فقرة جديدة في مجموعة الفقرات باستخدام كائن TextFragment واحفظ ملف PDF الناتج باستخدام طريقة Save لفئة Document.
+عندما تحتاج إلى تحويل ملف نصي إلى PDF، ابدأ بقراءة ملف النص المصدر باستخدام أي قارئ. لقد استخدمنا StringBuilder لقراءة محتويات ملف النص. أنشئ كائن Document وأضف صفحة جديدة إلى مجموعة Pages. أنشئ كائنًا جديدًا من TextFragment ومرّر كائن StringBuilder إلى مُنشئه. أضف فقرة جديدة إلى مجموعة Paragraphs باستخدام كائن TextFragment واحفظ ملف PDF الناتج باستخدام طريقة Save في فئة Document.
 
-## تحويل ملف نصي عادي إلى PDF
+## تحويل ملف نص عادي إلى PDF
 
 ```java
 public void convertTXTtoPDF_Simple () {
-        // تهيئة كائن المستند
+        // Initialize document object
 
         File pdfDocumentFileName=new File(fileStorage, "demo_txt.pdf");
         File txtDocumentFileName=new File(fileStorage, "Conversion/rfc822.txt");
 
-        // إنشاء كائن Document عن طريق استدعاء منشئه الفارغ
+        // Instantiate a Document object by calling its empty constructor
         document=new Document();
 
-        // إضافة صفحة جديدة في مجموعة الصفحات للمستند
+        // Add a new page in Pages collection of Document
         Page page=document.getPages().add();
 
         String string;
@@ -64,13 +63,15 @@ public void convertTXTtoPDF_Simple () {
         }
 
 
-        // إنشاء مثيل لـ TextFragment وتمرير النص من كائن القارئ إلى منشئه كحجة
+        // Create an instance of TextFragment and pass the text from reader object to its
+        // constructor as argument
         TextFragment text=new TextFragment(stringBuilder.toString());
 
-        // إضافة فقرة نصية جديدة في مجموعة الفقرات وتمرير كائن TextFragment
+        // Add a new text paragraph in paragraphs collection and pass the TextFragment
+        // object
         page.getParagraphs().add(text);
 
-        // حفظ ملف PDF الناتج
+        // Save resultant PDF file
         try {
             document.save(pdfDocumentFileName.toString());
         } catch (Exception e) {
@@ -82,7 +83,7 @@ public void convertTXTtoPDF_Simple () {
 
 ```
 
-## تحويل ملف نصي منسق مسبقًا إلى PDF
+## تحويل ملف نصي مُنسق مسبقًا إلى PDF
 
 ```java
     public void convertPreFormattedTextToPdf () {
@@ -91,7 +92,7 @@ public void convertTXTtoPDF_Simple () {
         File pdfDocumentFileName=new File(fileStorage, "demo_txt.pdf");
         Path txtDocumentFileName=Paths.get(txtDocumentFile.toString());
 
-        // قراءة الملف النصي كمصفوفة من السلاسل
+        // Read the text file as array of string
         List<String> lines;
         try {
             lines=Files.readAllLines(txtDocumentFileName, ENCODING);
@@ -100,23 +101,23 @@ public void convertTXTtoPDF_Simple () {
             return;
         }
 
-        // إنشاء كائن Document عن طريق استدعاء منشئه الفارغ
+        // Instantiate a Document object by calling its empty constructor
         document=new Document();
 
-        // إضافة صفحة جديدة في مجموعة Pages من Document
+        // Add a new page in Pages collection of Document
         Page page=document.getPages().add();
         int count=4;
 
         Font font=FontRepository.findFont("Droid Sans Mono");
-        // تعيين هوامش اليسار واليمين لتحسين العرض
+        // Set left and right margins for better presentation
         page.getPageInfo().getMargin().setLeft(20);
         page.getPageInfo().getMargin().setRight(10);
         page.getPageInfo().getDefaultTextState().setFont(font);
         page.getPageInfo().getDefaultTextState().setFontSize(12);
 
         for (String line : lines) {
-            // التحقق مما إذا كانت السطر يحتوي على حرف "استمارة تغذية"
-            // انظر https://en.wikipedia.org/wiki/Page_break
+            // check if line contains "form feed" character
+            // see https://en.wikipedia.org/wiki/Page_break
             if (line.startsWith("\f")) {
                 page=document.getPages().add();
                 page.getPageInfo().getMargin().setLeft(20);
@@ -124,17 +125,17 @@ public void convertTXTtoPDF_Simple () {
                 page.getPageInfo().getDefaultTextState().setFont(font);
                 page.getPageInfo().getDefaultTextState().setFontSize(12);
             } else {
-                // إنشاء مثيل من TextFragment و
-                // تمرير السطر إلى منشئه
-                // كحجة
+                // Create an instance of TextFragment and
+                // pass the line to its
+                // constructor as argument
                 TextFragment text=new TextFragment(line);
 
-                // إضافة فقرة نصية جديدة في مجموعة الفقرات وتمرير كائن TextFragment
-                // الكائن
+                // Add a new text paragraph in paragraphs collection and pass the TextFragment
+                // object
                 page.getParagraphs().add(text);
             }
         }
-        // حفظ ملف PDF الناتج
+        // Save resultant PDF file
         try {
             document.save(pdfDocumentFileName.toString());
         } catch (Exception e) {
@@ -145,3 +146,6 @@ public void convertTXTtoPDF_Simple () {
     }
 
 ```
+
+
+

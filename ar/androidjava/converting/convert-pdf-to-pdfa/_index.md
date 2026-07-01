@@ -4,33 +4,32 @@ linktitle: تحويل ملف PDF إلى PDF/A
 type: docs
 weight: 180
 url: /ar/androidjava/convert-pdf-file-to-pdfa/
-lastmod: "2021-06-05"
-description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF for Java لتحويل ملف PDF إلى ملف PDF متوافق مع PDF/A.
+lastmod: "2026-06-30"
+description: يوضح لك هذا الموضوع كيف يتيح Aspose.PDF for Java تحويل ملف PDF إلى ملف PDF/A متوافق.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-يسمح لك Aspose.PDF بتحويل ملف PDF إلى ملف PDF متوافق مع PDF/A. قبل القيام بذلك، يجب التحقق من صحة الملف. يوضح هذا المقال كيفية القيام بذلك.
+يتيح لك Aspose.PDF تحويل ملف PDF إلى ملف PDF متوافق مع PDF/A. قبل القيام بذلك، يجب التحقق من صحة الملف. توضح هذه المقالة كيفية ذلك.
 
-يرجى ملاحظة أننا نتبع Adobe Preflight للتحقق من توافق PDF/A. جميع الأدوات في السوق لديها "تمثيلها" الخاص لتوافق PDF/A. يرجى مراجعة هذا المقال حول [أدوات التحقق من PDF/A](http://wiki.opf-labs.org/display/SPR/PDFA+Validation+tools+give+different+results) للمرجعية. اخترنا منتجات Adobe للتحقق من كيفية إنتاج Aspose.PDF للملفات لأن Adobe هي في مركز كل ما يتعلق بـ PDF.
+يرجى ملاحظة أننا نتبع Adobe Preflight للتحقق من توافق PDF/A. جميع الأدوات في السوق لديها \"representation\" الخاصة بها لتوافق PDF/A. يرجى التحقق من هذه المقالة على [أدوات التحقق من صحة PDF/A](http://wiki.opf-labs.org/display/SPR/PDFA+Validation+tools+give+different+results) للتوثيق. اخترنا منتجات أدوبي للتحقق من كيفية إنتاج Aspose.PDF لملفات PDF لأن أدوبي هي في مركز كل ما يتعلق بـ PDF.
 
-قبل تحويل PDF إلى ملف متوافق مع PDF/A، تحقق من صحة PDF باستخدام طريقة التحقق.
- تم تخزين نتيجة التحقق في ملف XML ثم يتم تمرير هذه النتيجة إلى طريقة التحويل. يمكنك أيضًا تحديد الإجراء للعناصر التي لا يمكن تحويلها باستخدام التعداد [ConvertErrorAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction).
+قبل تحويل ملف PDF إلى ملف متوافق مع PDF/A، قم بالتحقق من صحة ملف PDF باستخدام طريقة validate. يتم تخزين نتيجة التحقق في ملف XML ثم يتم تمرير هذه النتيجة أيضًا إلى طريقة convert. يمكنك أيضًا تحديد الإجراء للعناصر التي لا يمكن تحويلها باستخدام [إجراء تحويل الخطأ](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction) التعداد.
 
 {{% alert color="primary" %}}
 
-جرّب عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت على هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-pdfa1a](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+جرّب عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت من خلال هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-pdfa1a](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 
 {{% /alert %}}
 
 ## تحويل PDF إلى PDF/A_1b
 
-يوضح الجزء التالي من الشفرة كيفية تحويل ملفات PDF إلى PDF متوافق مع PDF/A-1b.
+يظهر المقتطف التالي من الكود كيفية تحويل ملفات PDF إلى PDF متوافق مع PDF/A-1b.
 
 ```java
 public void convertPDFtoPDFa1b() {
-        // افتح المستند
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -38,22 +37,22 @@ public void convertPDFtoPDFa1b() {
             return;
         }
 
-        // تحويل إلى مستند متوافق مع PDF/A
-        // أثناء عملية التحويل، يتم إجراء التحقق أيضًا
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
         document.convert(logFileName.toString(), PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-        // احفظ المستند الناتج
+        // Save output document
         document.save(pdfaFileName.toString());
     }
 ```
 
-للقيام بالتحقق فقط، استخدم السطر التالي من الكود:
+لإجراء التحقق فقط، استخدم السطر التالي من الشيفرة:
 
 ```java
 public void ValidatePDF_A_1B() {
-        // فتح المستند
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -61,14 +60,14 @@ public void ValidatePDF_A_1B() {
             return;
         }
 
-        // التحقق من المستند المتوافق مع PDF/A
+        // Validate to PDF/A compliant document
 
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         if (document.validate(logFileName.toString(), PdfFormat.PDF_A_1B)){
-            resultMessage.setText("المستند صالح");
+            resultMessage.setText("Document is valid");
         }
         else {
-            resultMessage.setText("المستند غير صالح");
+            resultMessage.setText("Document is not valid");
         }
     }
 ```
@@ -77,7 +76,7 @@ public void ValidatePDF_A_1B() {
 
 ```java
     public void convertPDFtoPDFa3b() {
-        // فتح المستند
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -85,14 +84,14 @@ public void ValidatePDF_A_1B() {
             return;
         }
 
-        // تحويل إلى مستند متوافق مع PDF/A
-        // يتم إجراء التحقق أيضًا أثناء عملية التحويل
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
 
         document.convert(logFileName.toString(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
 
-        // حفظ المستند الناتج
+        // Save output document
         try {
             document.save(pdfaFileName.toString());
         }
@@ -104,12 +103,11 @@ public void ValidatePDF_A_1B() {
     }
 ```
 
-
 ## تحويل PDF إلى PDF/A_3a
 
 ```java
 public void convertPDFtoPDFa3a() {
-        // افتح المستند
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -117,14 +115,14 @@ public void convertPDFtoPDFa3a() {
             return;
         }
 
-        // تحويل إلى مستند متوافق مع PDF/A
-        // أثناء عملية التحويل، يتم أيضًا إجراء التحقق
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
 
         document.convert(logFileName.toString(), PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
 
-        // حفظ المستند الناتج
+        // Save output document
         try {
             document.save(pdfaFileName.toString());
         }
@@ -140,7 +138,7 @@ public void convertPDFtoPDFa3a() {
 
 ```java
 public void convertPDFtoPDFa2a() {
-        // افتح المستند
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -148,14 +146,14 @@ public void convertPDFtoPDFa2a() {
             return;
         }
 
-        // تحويل إلى مستند متوافق مع PDF/A
-        // أثناء عملية التحويل، يتم أيضًا إجراء التحقق
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
 
         document.convert(logFileName.toString(), PdfFormat.PDF_A_2A, ConvertErrorAction.Delete);
 
-        // حفظ المستند الناتج
+        // Save output document
         try {
             document.save(pdfaFileName.toString());
         }
@@ -168,12 +166,11 @@ public void convertPDFtoPDFa2a() {
 
 ```
 
-
 ## تحويل PDF إلى PDF/A_3U
 
 ```java
  public void convertPDFtoPDFa3u() {
-        // فتح المستند
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -181,14 +178,14 @@ public void convertPDFtoPDFa2a() {
             return;
         }
 
-        // تحويل إلى مستند متوافق مع PDF/A
-        // أثناء عملية التحويل، يتم أيضًا إجراء التحقق
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
 
         document.convert(logFileName.toString(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
 
-        // حفظ المستند الناتج
+        // Save output document
         try {
             document.save(pdfaFileName.toString());
         }
@@ -202,12 +199,11 @@ public void convertPDFtoPDFa2a() {
 
 ## إنشاء PDF/A-3 وإرفاق ملف XML
 
-يوفر Aspose.PDF لنظام Android عبر Java ميزة تحويل ملفات PDF إلى تنسيق PDF/A ويدعم أيضًا إمكانيات إضافة الملفات كمرفقات إلى مستند PDF.
- في حال كان لديك متطلب لربط الملفات بتنسيق الامتثال PDF/A، نوصي باستخدام القيمة PDF_A_3A من تعداد com.aspose.pdf.PdfFormat، حيث أن PDF/A_3a هو التنسيق الذي يوفر ميزة إرفاق أي تنسيق ملف كملف مرفق لملف متوافق مع PDF/A. ومع ذلك، بمجرد إرفاق الملف، يجب تحويله إلى تنسيق Pdf-3a مرة أخرى، من أجل إصلاح البيانات الوصفية. يرجى الاطلاع على مقتطف الشيفرة التالي.
+يقدم Aspose.PDF for Android عبر Java ميزة تحويل ملفات PDF إلى تنسيق PDF/A كما يدعم أيضًا إمكانية إضافة ملفات كمرفق إلى مستند PDF. إذا كان لديك حاجة لإرفاق ملفات إلى تنسيق الامتثال PDF/A، فإننا نوصي باستخدام القيمة PDF_A_3A من تعداد com.aspose.pdf.PdfFormat، حيث إن PDF/A_3a هو التنسيق الذي يتيح إمكانية إرفاق أي صيغة ملف كمرفق إلى ملف متوافق مع PDF/A. ومع ذلك، بمجرد إرفاق الملف، يجب عليك تحويله مرة أخرى إلى تنسيق Pdf-3a لإصلاح البيانات الوصفية. يرجى إلقاء نظرة على مقتطف الشيفرة التالي.
 
 ```java
  public void convertPDFtoPDFa3u_attachXML() {
-        // فتح المستند
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -215,17 +211,17 @@ public void convertPDFtoPDFa2a() {
             return;
         }
 
-        // تحويل إلى مستند متوافق مع PDF/A
-        // أثناء عملية التحويل، يتم أيضًا التحقق من الصلاحية
+        // Convert to PDF/A compliant document
+        // During conversion process, the validation is also performed
         File logFileName = new File(fileStorage,"PDF-to-PDFA-log.xml");
         File pdfaFileName = new File(fileStorage,"PDF-to-PDFA.pdf");
         File attachment = new File(fileStorage,"sample.xml");
 
-        // حفظ مستند الإخراج
+        // Save output document
         try {
-            // تحميل ملف XML
+            // load XML file
             FileSpecification fileSpecification = new FileSpecification(attachment.toString(), "Sample xml file");
-            // إضافة المرفق إلى مجموعة المرفقات للمستند
+            // Add attachment to document's attachment collection
             document.getEmbeddedFiles().add(fileSpecification);
             document.convert(logFileName.toString(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
             document.save(pdfaFileName.toString());
@@ -237,3 +233,4 @@ public void convertPDFtoPDFa2a() {
         resultMessage.setText(R.string.success_message);
     }
 ```
+
