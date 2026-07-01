@@ -4,15 +4,16 @@ linktitle: 将 PDF/A 转换为 PDF
 type: docs
 weight: 350
 url: /zh/androidjava/convert-pdfa-to-pdf/
-lastmod: "2021-06-05"
-description: 要将 PDF/A 转换为 PDF，您需要从原始文档中移除限制。Aspose.PDF for Android via Java 可以轻松简单地解决这个问题。
+lastmod: "2026-07-01"
+description: 要将 PDF/A 转换为 PDF，您需要删除原始文档中的限制。Aspose.PDF for Android via Java 可让您轻松简单地解决此问题。
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-将 PDF/A 文档转换为 PDF 意味着从原始文档中移除 <abbr title="Portable Document Format Archive
-">PDF/A</abbr> 限制。类 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 具有方法 RemovePdfaCompliance(..)，用于移除输入/源文件中的 PDF 合规性信息。
+将 PDF/A 文档转换为 PDF 意味着删除 <abbr title=\"Portable Document Format Archive\"
+\" >PDF/A</abbr> 原始文档的限制。类 [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 具有方法 RemovePdfaCompliance(..) 用于移除
+输入/源文件中的 PDF 合规性信息。
 
 ```java
 
@@ -21,13 +22,13 @@ sitemap:
         String pdfDocumentFileName = new File(fileStorage, "Conversion/sample-out.pdf").toString();
 
         try {
-            // 创建 Document 对象
+            // Create Document object
             document = new Document(pdfaDocumentFileName);
 
-            // 移除 PDF/A 合规性信息
+            // Remove PDF/A compliance information
             document.removePdfaCompliance();
 
-            // 以 XML 格式保存输出
+            // Save output in XML format
             document.save(pdfDocumentFileName);
         } catch (Exception e) {
             resultMessage.setText(e.getMessage());
@@ -38,21 +39,24 @@ sitemap:
     }
 ```
 
-
-该信息还会在您对文档进行任何更改时（例如，添加页面）被移除。在以下示例中，添加页面后输出文档失去了PDF/A合规性。
+如果对文档进行任何更改（例如添加页面），此信息也会被删除。在下面的示例中，添加页面后输出文档失去 PDF/A 合规性。
 
 ```java
    public void convertPDFAtoPDFAdvanced() {
         String pdfaDocumentFileName = new File(fileStorage, "Conversion/sample-pdfa.pdf").toString();
         String pdfDocumentFileName = new File(fileStorage, "Conversion/sample-out.pdf").toString();
 
-        // 创建 Document 对象
+        // Create Document object
         document = new Document(pdfaDocumentFileName);
 
-        // 添加新（空）页面会移除PDF/A合规性信息。
+        // Adding a new (empty) page removes PDF/A compliance information.
         document.getPages().add();
 
-        // 保存更新后的文档
+        // Save updated document
         document.save(pdfDocumentFileName);
     }
 ```
+
+
+
+
