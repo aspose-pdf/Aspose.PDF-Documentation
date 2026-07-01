@@ -4,18 +4,18 @@ linktitle: Convertir PNG en PDF
 type: docs
 weight: 200
 url: /fr/androidjava/convert-png-to-pdf/
-lastmod: "2021-06-05"
-description: Cet article montre comment convertir PNG en PDF avec la bibliothèque Aspose.PDF dans vos applications Android via Java. Vous pouvez convertir des images PNG en format PDF en utilisant des étapes simples.
+lastmod: "2026-07-01"
+description: Cet article montre comment convertir PNG en PDF avec la bibliothèque Aspose.PDF dans vos applications Android via Java. Vous pouvez convertir des images PNG au format PDF en suivant des étapes simples.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-**Aspose.PDF pour Android via Java** prend en charge la fonctionnalité de conversion d'images PNG en format PDF. Consultez l'extrait de code suivant pour réaliser votre tâche.
+**Aspose.PDF for Android via Java** prend en charge la fonctionnalité de conversion des images PNG au format PDF. Consultez le fragment de code suivant pour réaliser votre tâche.
 
-<abbr title="Portable Network Graphics">PNG</abbr> fait référence à un type de format de fichier d'image raster qui utilise une compression sans perte, ce qui le rend populaire parmi ses utilisateurs.
+<abbr title="Portable Network Graphics">PNG</abbr> fait référence à un type de format de fichier image raster qui utilise une compression sans perte, ce qui le rend populaire auprès de ses utilisateurs.
 
-Vous pouvez convertir PNG en PDF en utilisant les étapes ci-dessous :
+Vous pouvez convertir une image PNG en PDF en suivant les étapes ci-dessous :
 
 1. Charger l'image PNG d'entrée
 1. Lire les valeurs de hauteur et de largeur
@@ -23,11 +23,11 @@ Vous pouvez convertir PNG en PDF en utilisant les étapes ci-dessous :
 1. Définir les dimensions de la page
 1. Enregistrer le fichier de sortie
 
-De plus, l'extrait de code ci-dessous montre comment convertir PNG en PDF dans vos applications Java :
+De plus, l'extrait de code ci‑dessous montre comment convertir un PNG en PDF dans vos applications Java :
 
 ```java
     public void convertPNGtoPDF () {
-        // Initialiser l'objet document
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -42,3 +42,4 @@ De plus, l'extrait de code ci-dessous montre comment convertir PNG en PDF dans v
             return;
         }
 ```
+

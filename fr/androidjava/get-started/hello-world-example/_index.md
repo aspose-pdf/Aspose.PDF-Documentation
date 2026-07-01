@@ -1,11 +1,11 @@
 ---
-title: Exemple Hello World Java
+title: Exemple Java Hello World
 linktitle: Exemple Hello World
 type: docs
 weight: 20
 url: /fr/androidjava/hello-world-example/
-description: Cette page montre comment utiliser une programmation simple pour créer un document PDF contenant le texte - Hello World en utilisant Aspose.PDF pour Android.
-lastmod: "2021-08-05"
+description: Cette page montre comment utiliser une programmation simple pour créer un document PDF contenant du texte - Hello World en utilisant Aspose.PDF for Android.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,20 +13,20 @@ sitemap:
 
 ## Exemple Hello World
 
-Un exemple "Hello World" est traditionnellement utilisé pour introduire les fonctionnalités d'un langage de programmation ou d'un logiciel avec un cas d'utilisation simple.
+Un exemple "Hello World" est traditionnellement utilisé pour présenter les fonctionnalités d'un langage de programmation ou d'un logiciel avec un cas d'utilisation simple.
 
-Aspose.PDF pour Android via Java API permet aux développeurs d'applications Java de créer, lire, éditer et manipuler des fichiers PDF dans leurs applications. Il vous permet de lire et de convertir plusieurs types de fichiers différents vers et depuis le format de fichier PDF. Cet article Hello World montre comment créer un fichier PDF en Java en utilisant Aspose.PDF pour Android via l'API Java.
-Après avoir [installé Aspose.PDF pour Android via Java](/pdf/fr/androidjava/installation/) dans votre environnement, vous pouvez exécuter l'exemple de code ci-dessous pour voir comment fonctionne l'API Aspose.PDF.
+Aspose.PDF for Android via Java API permet aux développeurs d'applications Java de créer, lire, modifier et manipuler des fichiers PDF dans leurs applications. Il vous permet de lire et de convertir plusieurs types de fichiers différents vers et depuis le format de fichier PDF. Cet article Hello World montre comment créer un fichier PDF en Java en utilisant Aspose.PDF for Android via Java API
+Après [installation d'Aspose.PDF pour Android via Java](/pdf/fr/androidjava/installation/) dans votre environnement, vous pouvez exécuter l'exemple de code ci-dessous pour voir comment l'API Aspose.PDF fonctionne.
 
-L'extrait de code ci-dessous suit ces étapes :
+Le fragment de code ci-dessous suit ces étapes :
 
-1. Instancier un objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document)
-1. Ajouter une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) à l'objet document
-1. Créer un objet [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment)
-1. Ajouter TextFragment à la collection [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) de la page
-1. Enregistrer le document PDF résultant
+1. Instancier un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) objet
+1. Ajouter un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) à l'objet document
+1. Créer un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) objet
+1. Ajouter TextFragment à [Paragraphe](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) collection de la page
+1. Enregistrez le document PDF résultant
 
-Le code suivant montre les étapes de base du fonctionnement de l'API Aspose.PDF pour Android.
+Le fragment de code suivant montre les étapes de base du fonctionnement d'Aspose.PDF pour l'API Android.
 
 ```java
 package com.aspose.pdf.examplesimple;
@@ -66,21 +66,21 @@ public class MainActivity extends Activity {
                 (Button) findViewById(R.id.saveExternalStorage);
         saveButton.setOnClickListener(v -> {
             try {
-                // Initialiser l'objet document
+                // Initialize document object
                 Document document = new Document();
 
-                // Ajouter une page
+                //Add page
                 Page page = document.getPages().add();
 
                 myData = inputText.getText().toString().trim();
                 if (myData.equals("")) {
-                    myData = "Bonjour, le monde!";
+                    myData = "Hello, world!";
                 }
 
-                // Ajouter du texte à la nouvelle page
+                // Add text to new page
                 page.getParagraphs().add(new TextFragment(myData));
 
-                // Enregistrer le PDF mis à jour
+                // Save updated PDF
                 document.save(myExternalFile.getAbsolutePath());
 
             } catch (Exception e) {
@@ -93,9 +93,9 @@ public class MainActivity extends Activity {
         readButton = (Button) findViewById(R.id.getExternalStorage);
         readButton.setOnClickListener(v -> {
             try {
-                // Initialiser l'objet document
+                // Initialize document object
                 Document document = new Document(myExternalFile.getAbsolutePath());
-                myData = "Le document contient "+document.getPages().size()+" page(s).";
+                myData = "Document contain "+document.getPages().size()+" page(s).";
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -123,3 +123,4 @@ public class MainActivity extends Activity {
     }
 }
 ```
+
