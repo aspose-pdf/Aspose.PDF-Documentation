@@ -4,37 +4,36 @@ linktitle: Ikhtisar
 type: docs
 weight: 20
 url: /id/androidjava/overview/
-description: Ikhtisar fitur utama dan format yang didukung oleh Aspose.PDF untuk Android via Java, manual instalasi dan lisensi pustaka Java.
-lastmod: "2021-06-05"
+description: Gambaran umum fitur utama dan format yang didukung dari Aspose.PDF for Android via Java, manual instalasi dan lisensi untuk pustaka Java.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-_Halaman ini adalah ikhtisar dari fitur-fitur Aspose.PDF untuk Android via Java._
+_Halaman ini adalah gambaran umum fitur Aspose.PDF for Android via Java._
 
-Aspose.PDF untuk Android Java adalah API Pemrosesan PDF yang memungkinkan aplikasi Android untuk membaca, menulis, memanipulasi & merender dokumen PDF. Aspose.PDF untuk Android via Java menyediakan Antarmuka Pemrograman Aplikasi (API) yang sangat sederhana untuk pengembang yang mudah dipelajari dan digunakan.
+Aspose.PDF for Android Java adalah API Pemrosesan PDF yang memungkinkan aplikasi Android untuk membaca, menulis, memanipulasi & menampilkan dokumen PDF. Aspose.PDF for Android via Java menyediakan Antarmuka Pemrograman Aplikasi (API) yang sangat sederhana untuk pengembang yang mudah dipelajari dan digunakan.
 
-Aspose.PDF untuk Android via Java mendukung berbagai macam fungsi seperti:
+Aspose.PDF for Android via Java mendukung berbagai fungsi seperti:
 
 - kompresi dokumen;
 - pembuatan dan manipulasi tabel;
-- dukungan untuk objek grafis;
+- dukungan untuk objek grafik;
 - fungsionalitas hyperlink yang luas;
 - kontrol keamanan yang diperluas;
-- penanganan font kustom;
+- penanganan font khusus;
 - integrasi dengan sumber data;
-- menambahkan atau menghapus penanda buku;
-- membuat daftar isi;
-
-- menambah, memperbarui, menghapus lampiran dan anotasi;
+- menambah atau menghapus penanda buku;
+- buat daftar isi;
+- tambahkan, perbarui, hapus lampiran dan anotasi;
 - impor atau ekspor data formulir PDF;
-- tambahkan, ganti, atau hapus teks dan gambar;
-- pisahkan, gabungkan, ekstrak, atau sisipkan halaman;
+- tambahkan, ganti atau hapus teks dan gambar;
+- bagi, gabungkan, ekstrak atau sisipkan halaman;
 - ubah halaman menjadi gambar;
-- cetak dokumen PDF dan masih banyak lagi.
+- cetak dokumen PDF dan banyak lagi.
 
-Selain itu, Aspose.PDF untuk Android melalui Java dapat diterapkan untuk dengan mudah mengonversi teks, gambar, mengonversi PDF ke berbagai format dokumen dengan kinerja yang sangat baik dan kualitas yang baik.
+Selain itu, Aspose.PDF for Android via Java dapat diterapkan untuk dengan mudah mengonversi teks, gambar, mengonversi PDF ke berbagai format dokumen dengan kinerja yang luar biasa dan kualitas yang baik.
 
 Pelajari lebih lanjut tentang:
 
@@ -44,3 +43,4 @@ Pelajari lebih lanjut tentang:
 - [Instalasi](/pdf/id/androidjava/installation/)
 - [Lisensi](/pdf/id/androidjava/licensing/)
 - [Dukungan Teknis](/pdf/id/androidjava/technical-support/)
+

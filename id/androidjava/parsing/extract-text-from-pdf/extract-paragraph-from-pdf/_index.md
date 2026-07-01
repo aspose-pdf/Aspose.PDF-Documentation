@@ -4,8 +4,8 @@ linktitle: Ekstrak Paragraf
 type: docs
 weight: 20
 url: /id/androidjava/extract-paragraph-from-pdf/
-description: Artikel ini menjelaskan cara menggunakan ParagraphAbsorber - alat khusus di Aspose.PDF untuk mengekstrak teks dari dokumen PDF.
-lastmod: "2021-06-05"
+description: Pelajari cara mengekstrak paragraf tertentu dari dokumen PDF di Android/Java menggunakan Aspose.PDF untuk ekstraksi konten.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,14 +13,13 @@ sitemap:
 
 ## Ekstrak Teks dari dokumen PDF dalam bentuk Paragraf
 
-Kita dapat mengambil teks dari dokumen PDF dengan mencari teks tertentu (menggunakan "teks biasa" atau "ekspresi reguler") dari satu halaman atau seluruh dokumen, atau kita bisa mendapatkan teks lengkap dari satu halaman, rentang halaman, atau seluruh dokumen.
- Namun, dalam beberapa kasus, Anda perlu mengekstrak paragraf dari dokumen PDF atau teks dalam bentuk Paragraf. Kami telah mengimplementasikan fungsionalitas untuk mencari bagian dan paragraf dalam teks halaman dokumen PDF. Kami telah memperkenalkan Kelas ParagraphAbsorber (seperti TextFragmentAbsorber dan TextAbsorber), yang dapat digunakan untuk mengekstrak paragraf dari dokumen PDF. Ada dua cara berikut di mana Anda dapat menggunakan ParagraphAbsorber:
+Kita dapat mengambil teks dari dokumen PDF dengan mencari teks tertentu (menggunakan \u0022plain text\u0022 atau \u0022regular expressions\u0022) dari satu halaman atau seluruh dokumen, atau kita dapat mengambil teks lengkap dari satu halaman, rentang halaman, atau seluruh dokumen. Namun, dalam beberapa kasus, Anda perlu mengekstrak paragraf dari dokumen PDF atau teks dalam bentuk Paragraf. Kami telah mengimplementasikan fungsionalitas untuk mencari bagian dan paragraf dalam teks halaman dokumen PDF. Kami memperkenalkan Kelas ParagraphAbsorber (seperti TextFragmentAbsorber dan TextAbsorber), yang dapat digunakan untuk mengekstrak paragraf dari dokumen PDF. Ada dua cara berikut yang dapat Anda gunakan dengan ParagraphAbsorber:
 
 **1- Dengan menggambar batas bagian dan paragraf teks pada halaman PDF:**
 
 ```java
 public static void ExtractParagraph() {
-        // Jalur ke direktori dokumen.
+        // The path to the documents directory.
         Document doc = new Document(_dataDir + "input.pdf");
         Page page = doc.getPages().get_Item(2);
 
@@ -65,13 +64,13 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- Dengan mengiterasi melalui koleksi `paragraphs` dan mendapatkan teks dari mereka:**
+**2- Dengan mengiterasi koleksi paragraf dan mendapatkan teksnya:**
 
 ```java
  public static void ExtractParagraph02() {
-        // Buka file PDF yang sudah ada
+        // Open an existing PDF file
         Document doc = new Document(_dataDir + "input.pdf");
-        // Instansiasi ParagraphAbsorber
+        // Instantiate ParagraphAbsorber
         ParagraphAbsorber absorber = new ParagraphAbsorber();
         absorber.visit(doc);
 
@@ -91,7 +90,7 @@ public static void ExtractParagraph() {
                     }
                     paragraphText.append("\r\n");
 
-                    System.out.println("Paragraf " + j + " dari bagian " + i + " pada halaman" + ":" + markup.getNumber());
+                    System.out.println("Paragraph " + j + " of section " + i + " on page" + ":" + markup.getNumber());
                     System.out.println(paragraphText.toString());
 
                     j++;
@@ -101,3 +100,4 @@ public static void ExtractParagraph() {
         }
     }
 ```
+

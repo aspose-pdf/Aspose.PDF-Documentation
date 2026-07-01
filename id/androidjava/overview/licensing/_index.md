@@ -1,64 +1,62 @@
 ---
-title: Lisensi dan batasan
-linktitle: Lisensi dan batasan
+title: Lisensi dan keterbatasan
+linktitle: Lisensi dan keterbatasan
 type: docs
 weight: 50
 url: /id/androidjava/licensing/
-description: Aspose.PDF untuk Android melalui Java mengundang pelanggannya untuk mendapatkan lisensi Klasik dan Lisensi Berbayar. Serta menggunakan lisensi terbatas untuk lebih mengeksplorasi produk.
-lastmod: "2021-06-05"
+description: Aspose.PDF for Android via Java mengundang pelanggannya untuk mendapatkan lisensi Classic dan lisensi Metered. Selain itu dapat menggunakan lisensi terbatas untuk menjelajahi produk dengan lebih baik.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Batasan versi evaluasi
+## Keterbatasan versi evaluasi
 
-Kami ingin pelanggan kami menguji komponen kami secara menyeluruh sebelum membeli sehingga versi evaluasi memungkinkan Anda menggunakannya seperti biasa.
+Kami ingin pelanggan kami menguji komponen kami secara menyeluruh sebelum membeli, sehingga versi evaluasi memungkinkan Anda menggunakannya seperti biasanya.
 
-- **PDF dibuat dengan watermark evaluasi.** Versi evaluasi Aspose.PDF untuk Android melalui Java menyediakan fungsionalitas produk penuh, tetapi semua halaman dalam dokumen PDF yang dihasilkan diberi watermark dengan "Hanya untuk Evaluasi. Dibuat dengan Aspose.PDF. Hak Cipta 2002-2020 Aspose Pty Ltd" di bagian atas.
+- **PDF dibuat dengan watermark evaluasi.** Versi evaluasi Aspose.PDF untuk Android via Java menyediakan fungsionalitas produk penuh, tetapi semua halaman dalam dokumen PDF yang dihasilkan memiliki watermark "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" di bagian atas.
 
-- **Batasan jumlah item koleksi yang dapat diproses.**
+- **Batas jumlah item koleksi yang dapat diproses.**
+Dalam versi evaluasi dari setiap koleksi, Anda hanya dapat memproses empat elemen (misalnya, hanya 4 halaman, 4 field formulir, dll).
 
-Dalam versi evaluasi dari koleksi mana pun, Anda hanya dapat memproses empat elemen (misalnya, hanya 4 halaman, 4 bidang formulir, dll.).
+Anda dapat mengunduh versi evaluasi Aspose.PDF untuk Android via Java dari [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). Versi evaluasi menyediakan kemampuan yang persis sama dengan versi berlisensi dari produk. Lebih lanjut, versi evaluasi secara sederhana menjadi berlisensi ketika Anda membeli lisensi dan menambahkan beberapa baris kode untuk menerapkan lisensi.
 
-Anda dapat mengunduh versi evaluasi Aspose.PDF untuk Android melalui Java dari [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). Versi evaluasi menyediakan kemampuan yang sama persis dengan versi berlisensi dari produk tersebut. Selain itu, versi evaluasi akan menjadi berlisensi ketika Anda membeli lisensi dan menambahkan beberapa baris kode untuk menerapkan lisensi tersebut.
+Setelah Anda puas dengan evaluasi **Aspose.PDF** Anda, Anda dapat [membeli lisensi](https://purchase.aspose.com/) di situs web Aspose. Kenali berbagai jenis langganan yang ditawarkan. Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi tim penjualan Aspose.
 
-Setelah Anda puas dengan evaluasi **Aspose.PDF**, Anda dapat [membeli lisensi](https://purchase.aspose.com/) di situs web Aspose. Kenali berbagai jenis langganan yang ditawarkan. Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi tim penjualan Aspose.
+Setiap lisensi Aspose mencakup langganan satu tahun untuk peningkatan gratis ke versi baru atau perbaikan yang dirilis selama periode ini. Dukungan teknis gratis dan tidak terbatas serta disediakan baik untuk pengguna berlisensi maupun pengguna evaluasi.
 
-Setiap lisensi Aspose memiliki langganan satu tahun untuk pembaruan gratis ke versi baru atau perbaikan yang dirilis selama waktu ini. Dukungan teknis gratis dan tidak terbatas, dan disediakan baik untuk pengguna berlisensi maupun evaluasi.
-
->Jika Anda ingin menguji Aspose.PDF untuk Android melalui Java tanpa batasan versi evaluasi, Anda juga dapat meminta Lisensi Sementara 30 hari.
- Silakan merujuk ke [Cara mendapatkan Lisensi Sementara?](https://purchase.aspose.com/temporary-license)
+>Jika Anda ingin menguji Aspose.PDF untuk Android via Java tanpa batasan versi evaluasi, Anda juga dapat meminta Lisensi Sementara selama 30 hari. Silakan merujuk ke [Bagaimana cara mendapatkan Lisensi Sementara?](https://purchase.aspose.com/temporary-license)
 
 ## Lisensi klasik
 
-Lisensi dapat dimuat dari file atau objek stream. Cara termudah untuk mengatur lisensi adalah dengan menempatkan file lisensi di folder yang sama dengan file Aspose.PDF.dll dan menentukan nama file tanpa jalur, seperti yang ditunjukkan dalam contoh di bawah ini.
+Lisensi dapat dimuat dari file atau objek stream. Cara termudah untuk mengatur lisensi adalah dengan menempatkan file lisensi di folder yang sama dengan file Aspose.PDF.dll dan menentukan nama file tanpa jalur, seperti yang ditunjukkan dalam contoh di bawah.
 
-Lisensi adalah file XML teks biasa yang berisi rincian seperti nama produk, jumlah pengembang yang dilisensikan, tanggal kedaluwarsa langganan, dan sebagainya. File ini ditandatangani secara digital, jadi jangan modifikasi file tersebut; bahkan penambahan tidak sengaja dari pemisah baris ekstra ke dalam file akan membatalkannya.
+Lisensi adalah file XML teks biasa yang berisi detail seperti nama produk, jumlah pengembang yang memiliki lisensi, tanggal kedaluwarsa langganan, dan sebagainya. File ini ditandatangani secara digital, jadi jangan memodifikasi file; bahkan penambahan baris kosong ekstra secara tidak sengaja ke dalam file akan membuatnya tidak valid.
 
-Anda perlu mengatur lisensi sebelum melakukan operasi apa pun dengan dokumen. Anda hanya perlu mengatur lisensi sekali per aplikasi atau proses.
+Anda harus mengatur lisensi sebelum melakukan operasi apa pun dengan dokumen. Anda hanya perlu mengatur lisensi satu kali per aplikasi atau proses.
 
-Lisensi dapat dimuat dari stream atau file di lokasi berikut:
+Lisensi dapat dimuat dari aliran atau file di lokasi berikut:
 
 1. Jalur eksplisit.
 1. Folder yang berisi aspose-pdf-xx.x.jar.
 
-Gunakan metode License.setLicense untuk melisensikan komponen. Seringkali cara termudah untuk mengatur lisensi adalah dengan menempatkan file lisensi di folder yang sama dengan Aspose.PDF.jar dan menentukan hanya nama file tanpa path seperti yang ditunjukkan dalam contoh berikut:
+Gunakan metode License.setLicense untuk melisensikan komponen. Seringkali cara termudah untuk menetapkan lisensi adalah dengan menempatkan file lisensi di folder yang sama dengan Aspose.PDF.jar dan hanya menentukan nama file tanpa jalur seperti yang ditunjukkan dalam contoh berikut:
 
 {{% alert color="primary" %}}
 
-Mulai dari Aspose.PDF untuk Java 4.2.0, Anda perlu memanggil baris kode berikut untuk menginisialisasi lisensi.
+Mulai dari Aspose.PDF for Java 4.2.0, Anda perlu memanggil baris kode berikut untuk menginisialisasi lisensi.
 
 {{% /alert %}}
 
 ### Memuat lisensi dari file
 
-Dalam contoh ini **Aspose.PDF** akan mencoba menemukan file lisensi di folder yang berisi JAR aplikasi Anda.
+Dalam contoh ini **Aspose.PDF** akan berusaha menemukan file lisensi di folder yang berisi JAR aplikasi Anda.
 
 ```java
-// Inisialisasi Instance Lisensi
+// Initialize License Instance
 com.aspose.pdf.License license = new com.aspose.pdf.License();
-// Panggil metode setLicense untuk mengatur lisensi
+// Call setLicense method to set license
 license.setLicense("Aspose.Pdf.Java.lic");
 ```
 
@@ -67,30 +65,31 @@ license.setLicense("Aspose.Pdf.Java.lic");
 Contoh berikut menunjukkan cara memuat lisensi dari stream.
 
 ```java
-// Inisialisasi Instance Lisensi
+// Initialize License Instance
 com.aspose.pdf.License license = new com.aspose.pdf.License();
-// Setel lisensi dari Stream
+// Set license from Stream
 license.setLicense(new java.io.FileInputStream("Aspose.Pdf.Java.lic"));
 ```
 
 #### Mengatur Lisensi yang Dibeli Sebelum 2005/01/22
-**Aspose.PDF** untuk Java tidak lagi mendukung lisensi lama jadi silakan hubungi [tim penjualan kami](https://company.aspose.com/contact) untuk mendapatkan file lisensi baru.
+
+**Aspose.PDF** untuk Java tidak lagi mendukung lisensi lama jadi silakan hubungi tim [tim penjualan](https://company.aspose.com/contact) untuk mendapatkan file lisensi baru.
 
 ### Validasi Lisensi
 
-Dimungkinkan untuk memvalidasi apakah lisensi telah diatur dengan benar atau tidak. Kelas Document memiliki metode isLicensed yang akan mengembalikan true jika lisensi telah diatur dengan benar.
+Anda dapat memvalidasi apakah lisensi telah diatur dengan benar atau tidak. Kelas Document memiliki metode isLicensed yang akan mengembalikan true jika lisensi telah diatur dengan benar.
 
 ```java
 License license = new License();
 license.setLicense("Aspose.Pdf.Java.lic");
-// Periksa apakah lisensi telah divalidasi
+// Check if license has been validated
 if (com.aspose.pdf.Document.isLicensed()) {
-    System.out.println("Lisensi Telah Diatur!");
+    System.out.println("License is Set!");
 }
 ```
 ## Lisensi Metered
 
-Aspose.PDF memungkinkan pengembang untuk menerapkan kunci metered. Ini adalah mekanisme lisensi baru. Mekanisme lisensi baru akan digunakan bersamaan dengan metode lisensi yang ada. Pelanggan yang ingin ditagih berdasarkan penggunaan fitur API dapat menggunakan lisensi metered. Untuk informasi lebih lanjut, silakan merujuk ke bagian [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered).
+Aspose.PDF memungkinkan pengembang untuk menerapkan kunci metered. Ini adalah mekanisme lisensi baru. Mekanisme lisensi baru akan digunakan bersama dengan metode lisensi yang ada. Pelanggan yang ingin ditagih berdasarkan penggunaan fitur API dapat menggunakan lisensi metered. Untuk detail lebih lanjut, silakan merujuk ke [FAQ Lisensi Metered](https://purchase.aspose.com/faqs/licensing/metered) bagian.
 
 ```java
 String publicKey = "";
@@ -99,29 +98,28 @@ String privateKey = "";
 Metered m = new Metered();
 m.setMeteredKey(publicKey, privateKey);
 
-// Opsional, dua baris berikut mengembalikan true jika lisensi valid telah diterapkan;
-// false jika komponen berjalan dalam mode evaluasi.
+// Optionally, the following two lines returns true if a valid license has been applied;
+// false if the component is running in evaluation mode.
 License lic = new License();
-System.out.println("Lisensi telah diatur = " + lic.isLicensed());
+System.out.println("License is set = " + lic.isLicensed());
 ```
-
 ## Menggunakan Beberapa Produk dari Aspose
 
-Jika Anda menggunakan beberapa produk Aspose dalam aplikasi Anda, misalnya Aspose.PDF dan Aspose.Words, berikut adalah beberapa tips berguna.
+Jika Anda menggunakan beberapa produk Aspose dalam aplikasi Anda, misalnya Aspose.PDF dan Aspose.Words, berikut beberapa tips berguna.
 
-- **Setel Lisensi untuk setiap Produk Aspose Secara Terpisah.** Meskipun Anda memiliki satu file lisensi untuk semua komponen, misalnya 'Aspose.Total.lic', Anda tetap perlu memanggil **License.SetLicense** secara terpisah untuk setiap produk Aspose yang Anda gunakan dalam aplikasi Anda.
-- **Gunakan Nama Kelas Lisensi yang Sepenuhnya Berkualifikasi.** Setiap produk Aspose memiliki kelas **License** dalam namespace-nya. Misalnya, Aspose.PDF memiliki kelas **com.aspose.pdf.License** dan Aspose.Words memiliki kelas **com.aspose.words.License**. Menggunakan nama kelas yang sepenuhnya berkualifikasi memungkinkan Anda menghindari kebingungan tentang lisensi mana yang diterapkan pada produk mana.
+- **Setel Lisensi untuk setiap Produk Aspose secara Terpisah.** Bahkan jika Anda memiliki satu file lisensi untuk semua komponen, misalnya 'Aspose.Total.lic', Anda tetap harus memanggil **License.SetLicense** secara terpisah untuk setiap produk Aspose yang Anda gunakan dalam aplikasi Anda.
+- **Gunakan Nama Kelas Lisensi yang Sepenuhnya Terkualifikasi.** Setiap produk Aspose memiliki kelas **License** di dalam namespace‑nya. Misalnya, Aspose.PDF memiliki kelas **com.aspose.pdf.License** dan Aspose.Words memiliki kelas **com.aspose.words.License**. Menggunakan nama kelas yang sepenuhnya terkualifikasi memungkinkan Anda menghindari kebingungan tentang lisensi mana yang diterapkan pada produk mana.
 
 ```java
-// Membuat instans dari kelas License dari Aspose.Pdf
+// Instantiate the License class of Aspose.Pdf
 com.aspose.pdf.License license = new com.aspose.pdf.License();
-// Setel lisensi
+// Set the license
 license.setLicense("Aspose.Total.Java.lic");
 
-// Menyetel lisensi untuk Aspose.Words untuk Java
+// Setting license for Aspose.Words for Java
 
-// Membuat instans dari kelas License dari Aspose.Words
+// Instantiate the License class of Aspose.Words
 com.aspose.words.License licenseaw = new com.aspose.words.License();
-// Setel lisensi
+// Set the license
 licenseaw.setLicense("Aspose.Total.Java.lic");
 ```

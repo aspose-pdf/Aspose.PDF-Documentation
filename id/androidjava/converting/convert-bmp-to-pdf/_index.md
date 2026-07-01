@@ -1,28 +1,28 @@
 ---
-title: Mengonversi BMP ke PDF
-linktitle: Mengonversi BMP ke PDF
+title: Konversi BMP ke PDF
+linktitle: Konversi BMP ke PDF
 type: docs
 weight: 220
 url: /id/androidjava/convert-bmp-to-pdf/
-lastmod: "2021-06-05"
-description: Anda dapat dengan mudah mengonversi file bitmap BMP ke PDF yang digunakan untuk menyimpan gambar bitmap digital secara terpisah dari perangkat tampilan menggunakan Aspose.PDF untuk Android melalui Java.
+lastmod: "2026-07-01"
+description: Anda dapat dengan mudah mengonversi file bitmap BMP ke PDF yang digunakan untuk menyimpan gambar bitmap digital secara terpisah dari perangkat tampilan menggunakan Aspose.PDF for Android via Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Gambar BMP adalah file dengan ekstensi .BMP yang mewakili file Gambar Bitmap yang digunakan untuk menyimpan gambar digital bitmap. Gambar-gambar ini independen dari adapter grafis dan juga disebut format file bitmap independen perangkat (DIB).
-Anda dapat mengonversi BMP ke PDF dengan API Aspose.PDF untuk Java. Oleh karena itu, Anda dapat mengikuti langkah-langkah berikut untuk mengonversi gambar BMP:
+Gambar BMP adalah File dengan ekstensi .BMP yang mewakili file Gambar Bitmap yang digunakan untuk menyimpan gambar digital bitmap. Gambar ini independen dari adaptor grafis dan juga disebut format file bitmap independen perangkat (DIB).
+Anda dapat mengonversi BMP ke PDF dengan API Aspose.PDF for Java. Oleh karena itu, Anda dapat mengikuti langkah-langkah berikut untuk mengonversi gambar BMP:
 
 1. Inisialisasi Dokumen baru
 1. Muat file gambar BMP contoh
-1. Akhirnya, simpan file PDF keluaran
+1. Terakhir, simpan file PDF output
 
-Jadi cuplikan kode berikut mengikuti langkah-langkah ini dan menunjukkan cara mengonversi BMP ke PDF menggunakan Java:
+Jadi potongan kode berikut mengikuti langkah-langkah ini dan menunjukkan cara mengonversi BMP ke PDF menggunakan Java:
 
 ```java
 public void convertBMPtoPDF () {
-        // Inisialisasi objek dokumen
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -37,13 +37,13 @@ public void convertBMPtoPDF () {
             return;
         }
 
-        // Muat file gambar BMP contoh
+        // Load sample BMP image file
         image.setImageStream(inputStream);
         page.getParagraphs().add(image);
 
         File pdfFileName=new File(fileStorage, "BMP-to-PDF.pdf");
 
-        // Simpan dokumen keluaran
+        // Save output document
         try {
             document.save(pdfFileName.toString());
         } catch (Exception e) {
@@ -53,3 +53,4 @@ public void convertBMPtoPDF () {
         resultMessage.setText(R.string.success_message);
     }
 ```
+
