@@ -1,36 +1,37 @@
----  
-title: Convert PDF to JPG  
-linktitle: Convert PDF to JPG  
-type: docs  
-weight: 10  
-url: /ru/androidjava/convert-pdf-to-jpg/  
-description:  Эта страница описывает, как преобразовать страницы PDF в изображения JPEG, как преобразовать все и отдельные страницы в изображения JPEG с помощью Aspose.PDF для Android через Java.  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
----  
+---
+title: Конвертировать PDF в JPG
+linktitle: Конвертировать PDF в JPG
+type: docs
+weight: 10
+url: /ru/androidjava/convert-pdf-to-jpg/
+description:  На этой странице описывается, как конвертировать страницы PDF в изображения JPEG, конвертировать все и отдельные страницы в изображения JPEG с помощью Aspose.PDF for Android via Java.
+lastmod: "2026-07-01"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+---
 
-## Преобразование страниц PDF в изображения JPG  
+## Конвертировать страницы PDF в изображения JPG
 
-Класс JpegDevice позволяет преобразовывать страницы PDF в изображения JPEG. Этот класс предоставляет метод с именем process(..), который позволяет преобразовать конкретную страницу PDF-файла в изображение JPEG.  
+Класс JpegDevice позволяет конвертировать страницы PDF в изображения JPEG. Этот класс предоставляет метод с именем process(..), который позволяет конвертировать определённую страницу PDF‑файла в изображение JPEG.
 
-{{% alert color="primary" %}}  
+{{% alert color="primary" %}}
 
-Попробуйте онлайн. Вы можете проверить качество преобразования Aspose.PDF и просмотреть результаты онлайн по этой ссылке [products.aspose.app/pdf/conversion/pdf-to-jpg](https://products.aspose.app/pdf/conversion/pdf-to-jpg)  
+Попробуйте онлайн. Вы можете проверить качество конвертации Aspose.PDF и просмотреть результаты онлайн по этой ссылке  [products.aspose.app/pdf/conversion/pdf-to-jpg](https://products.aspose.app/pdf/conversion/pdf-to-jpg)
 
-{{% /alert %}}  
+{{% /alert %}}
 
-## Преобразование одной страницы PDF в изображение JPG  
 
-Aspose.PDF для Android через Java позволяет преобразовать одну страницу в формат Jpeg.  
+## Преобразовать отдельную страницу PDF в изображение JPG
 
-Чтобы преобразовать только одну страницу в изображение JPEG:  
+Aspose.PDF for Android via Java позволяет вам преобразовать отдельную страницу в формат Jpeg.
 
-1. Создайте объект класса Document, чтобы получить страницу, которую хотите преобразовать.
+Чтобы преобразовать только одну страницу в изображение JPEG:
+
+1. Создайте объект класса Document, чтобы получить страницу, которую вы хотите конвертировать.
 1. Вызовите метод process(..), чтобы преобразовать страницу в изображение JPEG.
 
-Следующий фрагмент кода показывает шаги по преобразованию первой страницы PDF в формат Jpeg.
+Следующий фрагмент кода показывает шаги для преобразования первой страницы PDF в формат JPEG.
 
 ```java
 public void convertPDFtoJPEG() {
@@ -41,21 +42,21 @@ public void convertPDFtoJPEG() {
             return;
         }
         File file = new File(fileStorage, "PDF-to-JPEG.jpeg");
-        // Создайте объект потока для сохранения выходного изображения
+        // Create stream object to save the output image
         try {
             OutputStream imageStream =
                     new FileOutputStream(file.toString());
 
-            // Создайте объект Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
 
-            // Создайте объект JpegDevice с определённым разрешением
+            // Create JpegDevice object with particular resolution
             JpegDevice JpegDevice = new JpegDevice(resolution);
 
-            // Преобразуйте конкретную страницу и сохраните изображение в поток
+            // Convert a particular page and save the image to stream
             JpegDevice.process(document.getPages().get_Item(1), imageStream);
 
-            // Закройте поток
+            // Close the stream
             imageStream.close();
 
             resultMessage.setText(file.toString());
@@ -66,18 +67,17 @@ public void convertPDFtoJPEG() {
 
 ```
 
+## Конвертировать все страницы PDF в изображение JPG
 
-## Конвертировать все страницы PDF в изображения JPG
+Aspose.PDF for Android via Java позволяет конвертировать все страницы PDF‑файла в изображения:
 
-Aspose.PDF для Android через Java позволяет конвертировать все страницы в PDF-файле в изображения:
-
-1. Переберите все страницы в файле.
-1. Конвертируйте каждую страницу отдельно:
-    - Создайте объект класса Document для загрузки PDF-документа.
+1. Пройдите по всем страницам в файле.
+1. Конвертировать каждую страницу отдельно:
+    - Создайте объект класса Document для загрузки PDF‑документа.
     - Получите страницу, которую хотите конвертировать.
-    - Вызовите метод Process, чтобы конвертировать страницу в Jpeg.
+    - Вызовите метод Process, чтобы преобразовать страницу в JPEG.
 
-Следующий фрагмент кода показывает, как конвертировать все страницы PDF в изображения Jpeg.
+Следующий фрагмент кода показывает, как преобразовать все страницы PDF в изображения Jpeg.
 
 ```java
 public void convertPDFtoJPEG_AllPages() {
@@ -88,9 +88,9 @@ public void convertPDFtoJPEG_AllPages() {
             return;
         }
 
-        // Переберите все страницы PDF-файла
+        // Loop through all the pages of PDF file
         for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
-            // Создайте объект потока для сохранения выходного изображения
+            // Create stream object to save the output image
             File file = new File(fileStorage, "PDF-to-JPEG"+pageCount+".jpeg");
             java.io.OutputStream imageStream;
             try {
@@ -100,15 +100,15 @@ public void convertPDFtoJPEG_AllPages() {
                 return;
             }
 
-            // Создайте объект Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
-            // Создайте объект JpegDevice с определенным разрешением
+            // Create JpegDevice object with particular resolution
             JpegDevice JpegDevice = new JpegDevice(resolution);
 
-            // Конвертируйте определенную страницу и сохраните изображение в поток
+            // Convert a particular page and save the image to stream
             JpegDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
-            // Закройте поток
+            // Close the stream
             try {
                 imageStream.close();
             } catch (Exception e) {
@@ -120,8 +120,7 @@ public void convertPDFtoJPEG_AllPages() {
     }
 ```
 
-
-## Преобразование конкретной страницы PDF в изображение JPG
+## Преобразовать определённую страницу PDF в изображение JPG
 
 ```java
    public void convertPDFtoJPEG_ParticularPageRegion() {
@@ -131,25 +130,25 @@ public void convertPDFtoJPEG_AllPages() {
             resultMessage.setText(e.getMessage());
             return;
         }
-        // Получить прямоугольник конкретной области страницы
+        // Get rectangle of particular page region
         //x=0,y=0, w=200, h=125;
         Rectangle pageRect = new Rectangle(0, 0, 200, 125);
-        // установить значение CropBox в соответствии с прямоугольником желаемой области страницы
+        // set CropBox value as per rectangle of desired page region
         document.getPages().get_Item(1).setCropBox(pageRect);
-        // сохранить обрезанный документ в поток
+        // save cropped document into stream
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         document.save(outStream);
 
-        // открыть обрезанный PDF документ из потока и преобразовать в изображение
+        // open cropped PDF document from stream and convert to image
         document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
-        // Создать объект Resolution
+        // Create Resolution object
         Resolution resolution = new Resolution(300);
-        // Создать Jpeg устройство с указанными атрибутами
+        // Create Jpeg device with specified attributes
         JpegDevice JpegDevice = new JpegDevice(resolution);
 
         File file = new File(fileStorage, "PDF-to-JPEG.jpeg");
         try {
-            // Преобразовать конкретную страницу и сохранить изображение в поток
+            // Convert a particular page and save the image to stream
             JpegDevice.process(document.getPages().get_Item(1), file.toString());
         }
         catch (Exception e) {
