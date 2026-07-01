@@ -1,33 +1,34 @@
-title: Convert PDF ke PNG 
-linktitle: Convert PDF ke PNG 
+---
+title: Konversi PDF ke PNG
+linktitle: Konversi PDF ke PNG
 type: docs
 weight: 20
 url: /id/androidjava/convert-pdf-to-png/
-lastmod: "2021-06-05"
-description: Halaman ini menjelaskan cara mengonversi Halaman PDF ke gambar PNG, mengonversi semua dan halaman tunggal ke gambar PNG dengan Aspose.PDF untuk Android melalui Java.
+lastmod: "2026-07-01"
+description: Halaman ini menjelaskan cara mengonversi Halaman PDF ke gambar PNG, mengonversi semua dan halaman tunggal ke gambar PNG dengan Aspose.PDF for Android via Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Gunakan pustaka **Aspose.PDF untuk Android melalui Java** untuk mengonversi Halaman PDF ke Gambar <abbr title="Portable Network Graphics">PNG</abbr> dengan cara yang mudah diakses dan nyaman.
+Gunakan perpustakaan **Aspose.PDF for Android via Java** untuk mengonversi Halaman PDF menjadi <abbr title="Portable Network Graphics">PNG</abbr> Gambar dengan cara yang dapat diakses dan nyaman.
 
-Kelas PngDevice memungkinkan Anda untuk mengonversi halaman PDF ke gambar PNG. Kelas ini menyediakan metode bernama Process yang memungkinkan Anda untuk mengonversi halaman tertentu dari file PDF ke format gambar PNG.
+Kelas PngDevice memungkinkan Anda mengonversi halaman PDF menjadi gambar PNG. Kelas ini menyediakan metode bernama Process yang memungkinkan Anda mengonversi halaman tertentu dari file PDF ke format gambar PNG.
 
-## Mengonversi Halaman PDF ke Gambar PNG
+## Konversi Halaman PDF ke Gambar PNG
 
-Untuk mengonversi semua halaman dalam file PDF ke file PNG, iterasikan melalui halaman individu dan konversi masing-masing ke format PNG. Cuplikan kode berikut menunjukkan cara menelusuri semua halaman dari file PDF dan mengonversi masing-masing ke gambar PNG.
-```
-{{% alert color="primary" %}}
+Untuk mengonversi semua halaman dalam file PDF menjadi file PNG, iterasikan melalui setiap halaman dan konversi masing-masing ke format PNG. Potongan kode berikut menunjukkan cara menelusuri semua halaman dalam file PDF dan mengonversi masing-masing menjadi gambar PNG.
 
-Coba online. Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online di tautan ini [products.aspose.app/pdf/conversion/pdf-to-png](https://products.aspose.app/pdf/conversion/pdf-to-png)
+{{% alert color="primary" %}} 
+
+Coba secara daring. Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara daring di tautan ini [products.aspose.app/pdf/conversion/pdf-to-png](https://products.aspose.app/pdf/conversion/pdf-to-png)
 
 {{% /alert %}}
 
-## Konversi satu halaman PDF ke gambar PNG
+## Konversi satu halaman PDF menjadi gambar PNG
 
 Berikan indeks halaman sebagai argumen ke metode Process(..).
-Cuplikan kode berikut menunjukkan langkah-langkah untuk mengkonversi halaman pertama PDF ke format PNG.
+Potongan kode berikut menunjukkan langkah-langkah untuk mengonversi halaman pertama PDF ke format PNG.
 
 ```java
    public void convertPDFtoPNG() {
@@ -38,21 +39,21 @@ Cuplikan kode berikut menunjukkan langkah-langkah untuk mengkonversi halaman per
             return;
         }
         File file = new File(fileStorage, "PDF-to-PNG.png");
-        // Buat objek aliran untuk menyimpan gambar keluaran
+        // Create stream object to save the output image
         try {
             OutputStream imageStream =
                     new FileOutputStream(file.toString());
 
-            // Buat objek Resolusi
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
 
-            // Buat objek PngDevice dengan resolusi tertentu
+            // Create PngDevice object with particular resolution
             PngDevice PngDevice = new PngDevice(resolution);
 
-            // Konversi halaman tertentu dan simpan gambar ke aliran
+            // Convert a particular page and save the image to stream
             PngDevice.process(document.getPages().get_Item(1), imageStream);
 
-            // Tutup aliran
+            // Close the stream
             imageStream.close();
             resultMessage.setText(file.toString());
         } catch (IOException e) {
@@ -62,18 +63,17 @@ Cuplikan kode berikut menunjukkan langkah-langkah untuk mengkonversi halaman per
 
 ```
 
+## Konversi semua halaman PDF ke gambar PNG
 
-## Mengonversi semua halaman PDF ke gambar PNG
+Aspose.PDF for Android via Java menunjukkan cara mengonversi semua halaman dalam file PDF menjadi gambar:
 
-Aspose.PDF untuk Android melalui Java menunjukkan kepada Anda cara mengonversi semua halaman dalam file PDF ke gambar:
+1. Lakukan perulangan pada semua halaman dalam file.
+1. Konversi tiap halaman secara terpisah:
+    1. Buat objek dari kelas Document untuk memuat dokumen PDF.
+    1. Dapatkan halaman yang ingin Anda konversi.
+    1. Panggil metode Process untuk mengonversi halaman menjadi PNG.
 
-1. Melakukan loop melalui semua halaman dalam file.
-1. Mengonversi setiap halaman secara individu:
-    1. Membuat objek dari kelas Document untuk memuat dokumen PDF.
-    1. Mendapatkan halaman yang ingin Anda konversi.
-    1. Memanggil metode Process untuk mengonversi halaman ke Png.
-
-Cuplikan kode berikut menunjukkan kepada Anda cara mengonversi semua halaman PDF ke gambar PNG.
+Potongan kode berikut menunjukkan cara mengonversi semua halaman PDF ke gambar PNG.
 
 ```java
  public void convertPDFtoPNG_AllPages() {
@@ -84,9 +84,9 @@ Cuplikan kode berikut menunjukkan kepada Anda cara mengonversi semua halaman PDF
             return;
         }
 
-        // Melakukan loop melalui semua halaman file PDF
+        // Loop through all the pages of PDF file
         for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
-            // Membuat objek stream untuk menyimpan gambar keluaran
+            // Create stream object to save the output image
             File file = new File(fileStorage, "PDF-to-PNG"+pageCount+".png");
             java.io.OutputStream imageStream;
             try {
@@ -96,15 +96,15 @@ Cuplikan kode berikut menunjukkan kepada Anda cara mengonversi semua halaman PDF
                 return;
             }
 
-            // Membuat objek Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
-            // Membuat objek JpegDevice dengan resolusi tertentu
+            // Create JpegDevice object with particular resolution
             PngDevice JpegDevice = new PngDevice(resolution);
 
-            // Mengonversi halaman tertentu dan menyimpan gambar ke stream
+            // Convert a particular page and save the image to stream
             JpegDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
-            // Menutup stream
+            // Close the stream
             try {
                 imageStream.close();
             } catch (Exception e) {
@@ -116,10 +116,9 @@ Cuplikan kode berikut menunjukkan kepada Anda cara mengonversi semua halaman PDF
     }
 ```
 
+## Konversi halaman PDF tertentu ke gambar PNG
 
-## Mengonversi halaman PDF tertentu ke gambar PNG
-
-Aspose.PDF untuk Android melalui Java menunjukkan cara mengonversi halaman tertentu ke format PNG:
+Aspose.PDF for Android via Java menunjukkan cara mengonversi halaman tertentu ke format PNG:
 
 ```java
 public void convertPDFtoPNG_ParticularPageRegion() {
@@ -129,25 +128,25 @@ public void convertPDFtoPNG_ParticularPageRegion() {
             resultMessage.setText(e.getMessage());
             return;
         }
-        // Dapatkan persegi panjang dari area halaman tertentu
+        // Get rectangle of particular page region
         //x=0,y=0, w=200, h=125;
         Rectangle pageRect = new Rectangle(0, 0, 200, 125);
-        // setel nilai CropBox sesuai dengan persegi panjang dari area halaman yang diinginkan
+        // set CropBox value as per rectangle of desired page region
         document.getPages().get_Item(1).setCropBox(pageRect);
-        // simpan dokumen yang dipotong ke dalam stream
+        // save cropped document into stream
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         document.save(outStream);
 
-        // buka dokumen PDF yang dipotong dari stream dan konversikan ke gambar
+        // open cropped PDF document from stream and convert to image
         document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
-        // Buat objek Resolution
+        // Create Resolution object
         Resolution resolution = new Resolution(300);
-        // Buat perangkat Jpeg dengan atribut yang ditentukan
+        // Create Jpeg device with specified attributes
         PngDevice PngDevice = new PngDevice(resolution);
 
         File file = new File(fileStorage, "PDF-to-PNG.png");
         try {
-            // Konversi halaman tertentu dan simpan gambar ke stream
+            // Convert a particular page and save the image to stream
             PngDevice.process(document.getPages().get_Item(1), file.toString());
         }
         catch (Exception e) {

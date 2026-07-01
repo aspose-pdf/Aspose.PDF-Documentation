@@ -1,23 +1,23 @@
 ---
-title: System Requirements
-linktitle: System Requirements
+title: Persyaratan Sistem
+linktitle: Persyaratan Sistem
 type: docs
 weight: 30
 url: /id/androidjava/system-requirements/
-description: Bagian ini mencantumkan sistem operasi yang didukung yang dibutuhkan pengembang untuk bekerja dengan sukses menggunakan Aspose.PDF for Android via Java.
-lastmod: "2021-06-05"
+description: Bagian ini mencantumkan sistem operasi yang didukung yang diperlukan oleh pengembang untuk berhasil bekerja dengan Aspose.PDF untuk Android via Java.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Overview
+## Ikhtisar
 
-Untuk menghasilkan dokumen PDF, mesin yang menjalankan [Aspose.PDF for Android via Java](https://products.aspose.com/pdf/android-java/) tidak perlu memiliki [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) terpasang karena Aspose.PDF for Java sendiri adalah mesin pembuat dokumen PDF. Namun, untuk melihat dokumen PDF yang dihasilkan oleh Aspose.PDF for Android via Java, mesin tersebut setidaknya memerlukan [Adobe Acrobat Reader](http://www.adobe.com/products/acrobat/readermain.html). Ini dapat [diunduh](https://www.adobe.com/acrobat/pdf-reader.html) secara gratis.
+Untuk menghasilkan dokumen PDF, mesin yang menjalankan [Aspose.PDF for Android via Java](https://products.aspose.com/pdf/android-java/) tidak perlu memiliki [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) diinstal sebagai Aspose.PDF untuk Java sendiri adalah mesin pembuatan dokumen PDF. Namun untuk menampilkan dokumen PDF yang dihasilkan oleh Aspose.PDF untuk Android melalui Java, mesin tersebut setidaknya membutuhkan sebuah [Adobe Acrobat Reader](http://www.adobe.com/products/acrobat/readermain.html). Itu dapat [diunduh](https://www.adobe.com/acrobat/pdf-reader.html) secara gratis.
 
-## Supported Operating Systems
+## Sistem Operasi yang Didukung
 
-Aspose.PDF for Android via Java mendukung perangkat mobile apa pun yang menjalankan runtime Java termasuk, tetapi tidak terbatas pada:
+Aspose.PDF for Android via Java mendukung semua perangkat seluler yang menjalankan runtime Java, termasuk, tetapi tidak terbatas pada:
 
 ### Android
 
@@ -35,6 +35,8 @@ Aspose.PDF for Android via Java mendukung perangkat mobile apa pun yang menjalan
 
 ## Lingkungan Pengembangan
 
-Anda dapat menggunakan Aspose.PDF untuk Android melalui Java untuk mengembangkan aplikasi di lingkungan pengembangan apa pun yang menargetkan platform Java di bawah Android, tetapi lingkungan berikut secara eksplisit didukung:
+Anda dapat menggunakan Aspose.PDF for Android via Java untuk mengembangkan aplikasi di lingkungan pengembangan apa pun yang menargetkan platform Java di Android, tetapi lingkungan berikut secara eksplisit didukung:
 
 - Android Studio dan alat SDK
+
+

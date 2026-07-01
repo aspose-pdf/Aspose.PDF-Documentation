@@ -1,37 +1,37 @@
 ---
-title: Convert PDF to JPG
-linktitle: Convert PDF to JPG
+title: Konversi PDF ke JPG
+linktitle: Konversi PDF ke JPG
 type: docs
 weight: 10
 url: /id/androidjava/convert-pdf-to-jpg/
-description: Halaman ini menjelaskan cara mengonversi halaman PDF ke gambar JPEG, mengonversi semua dan halaman tunggal ke gambar JPEG dengan Aspose.PDF untuk Android melalui Java.
-lastmod: "2021-06-05"
+description:  Halaman ini menjelaskan cara mengonversi Halaman PDF ke gambar JPEG, mengonversi semua dan halaman tunggal ke gambar JPEG dengan Aspose.PDF for Android via Java.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Mengonversi Halaman PDF ke Gambar JPG
+## Konversi Halaman PDF ke Gambar JPG
 
-Kelas JpegDevice memungkinkan Anda untuk mengonversi halaman PDF ke gambar JPEG. Kelas ini menyediakan metode bernama process(..) yang memungkinkan Anda untuk mengonversi halaman tertentu dari file PDF ke gambar JPEG.
+Kelas JpegDevice memungkinkan Anda mengonversi halaman PDF ke gambar JPEG. Kelas ini menyediakan metode bernama process(..) yang memungkinkan Anda mengonversi halaman tertentu dari file PDF ke gambar JPEG.
 
 {{% alert color="primary" %}}
 
-Coba online. Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online di tautan ini [products.aspose.app/pdf/conversion/pdf-to-jpg](https://products.aspose.app/pdf/conversion/pdf-to-jpg)
+Coba secara daring. Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara daring di tautan ini  [products.aspose.app/pdf/conversion/pdf-to-jpg](https://products.aspose.app/pdf/conversion/pdf-to-jpg)
 
 {{% /alert %}}
 
 
-## Mengonversi halaman PDF tunggal ke gambar JPG
+## Konversi satu halaman PDF ke gambar JPG
 
-Aspose.PDF untuk Android melalui Java memungkinkan Anda untuk mengonversi satu halaman ke format Jpeg.
+Aspose.PDF for Android via Java memungkinkan Anda mengonversi satu halaman ke format Jpeg.
 
-Untuk mengonversi hanya satu halaman ke gambar JPEG:
+Untuk mengonversi hanya satu halaman menjadi gambar JPEG:
 
-1. Buat objek dari kelas Dokumen untuk mendapatkan halaman yang ingin Anda konversi.
-1. Panggil metode process(..) untuk mengkonversi halaman ke gambar JPEG.
+1. Buat sebuah objek dari kelas Document untuk mendapatkan halaman yang ingin Anda konversi.
+1. Panggil metode process(..) untuk mengonversi halaman menjadi gambar JPEG.
 
-Cuplikan kode berikut menunjukkan langkah-langkah untuk mengkonversi halaman pertama PDF ke format Jpeg.
+Potongan kode berikut menunjukkan langkah-langkah untuk mengonversi halaman pertama PDF ke format Jpeg.
 
 ```java
 public void convertPDFtoJPEG() {
@@ -42,21 +42,21 @@ public void convertPDFtoJPEG() {
             return;
         }
         File file = new File(fileStorage, "PDF-to-JPEG.jpeg");
-        // Buat objek stream untuk menyimpan gambar keluaran
+        // Create stream object to save the output image
         try {
             OutputStream imageStream =
                     new FileOutputStream(file.toString());
 
-            // Buat objek Resolusi
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
 
-            // Buat objek JpegDevice dengan resolusi tertentu
+            // Create JpegDevice object with particular resolution
             JpegDevice JpegDevice = new JpegDevice(resolution);
 
-            // Konversi halaman tertentu dan simpan gambar ke stream
+            // Convert a particular page and save the image to stream
             JpegDevice.process(document.getPages().get_Item(1), imageStream);
 
-            // Tutup stream
+            // Close the stream
             imageStream.close();
 
             resultMessage.setText(file.toString());
@@ -67,18 +67,17 @@ public void convertPDFtoJPEG() {
 
 ```
 
+## Konversi semua halaman PDF ke gambar JPG
 
-## Ubah semua halaman PDF ke gambar JPG
+Aspose.PDF for Android via Java memungkinkan Anda mengonversi semua halaman dalam file PDF menjadi gambar:
 
-Aspose.PDF untuk Android melalui Java memungkinkan Anda mengubah semua halaman dalam file PDF menjadi gambar:
-
-1. Loop melalui semua halaman dalam file.
-1. Ubah setiap halaman secara individual:
+1. Lakukan perulangan pada semua halaman dalam file.
+1. Konversi tiap halaman secara terpisah:
     - Buat objek dari kelas Document untuk memuat dokumen PDF.
-    - Dapatkan halaman yang ingin Anda ubah.
-    - Panggil metode Process untuk mengubah halaman menjadi Jpeg.
+    - Dapatkan halaman yang ingin Anda konversi.
+    - Panggil metode Process untuk mengonversi halaman ke Jpeg.
 
-Cuplikan kode berikut menunjukkan cara mengubah semua halaman PDF menjadi gambar Jpeg.
+Potongan kode berikut menunjukkan cara mengonversi semua halaman PDF menjadi gambar Jpeg.
 
 ```java
 public void convertPDFtoJPEG_AllPages() {
@@ -89,9 +88,9 @@ public void convertPDFtoJPEG_AllPages() {
             return;
         }
 
-        // Loop melalui semua halaman file PDF
+        // Loop through all the pages of PDF file
         for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
-            // Buat objek stream untuk menyimpan gambar keluaran
+            // Create stream object to save the output image
             File file = new File(fileStorage, "PDF-to-JPEG"+pageCount+".jpeg");
             java.io.OutputStream imageStream;
             try {
@@ -101,15 +100,15 @@ public void convertPDFtoJPEG_AllPages() {
                 return;
             }
 
-            // Buat objek Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
-            // Buat objek JpegDevice dengan resolusi tertentu
+            // Create JpegDevice object with particular resolution
             JpegDevice JpegDevice = new JpegDevice(resolution);
 
-            // Ubah halaman tertentu dan simpan gambar ke stream
+            // Convert a particular page and save the image to stream
             JpegDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
-            // Tutup stream
+            // Close the stream
             try {
                 imageStream.close();
             } catch (Exception e) {
@@ -121,8 +120,7 @@ public void convertPDFtoJPEG_AllPages() {
     }
 ```
 
-
-## Mengubah halaman PDF tertentu menjadi gambar JPG
+## Konversi halaman PDF tertentu ke gambar JPG
 
 ```java
    public void convertPDFtoJPEG_ParticularPageRegion() {
@@ -132,25 +130,25 @@ public void convertPDFtoJPEG_AllPages() {
             resultMessage.setText(e.getMessage());
             return;
         }
-        // Dapatkan persegi panjang dari area halaman tertentu
+        // Get rectangle of particular page region
         //x=0,y=0, w=200, h=125;
         Rectangle pageRect = new Rectangle(0, 0, 200, 125);
-        // setel nilai CropBox sesuai dengan persegi panjang dari area halaman yang diinginkan
+        // set CropBox value as per rectangle of desired page region
         document.getPages().get_Item(1).setCropBox(pageRect);
-        // simpan dokumen yang dipotong ke dalam aliran
+        // save cropped document into stream
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         document.save(outStream);
 
-        // buka dokumen PDF yang dipotong dari aliran dan ubah menjadi gambar
+        // open cropped PDF document from stream and convert to image
         document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
-        // Buat objek Resolusi
+        // Create Resolution object
         Resolution resolution = new Resolution(300);
-        // Buat perangkat Jpeg dengan atribut yang ditentukan
+        // Create Jpeg device with specified attributes
         JpegDevice JpegDevice = new JpegDevice(resolution);
 
         File file = new File(fileStorage, "PDF-to-JPEG.jpeg");
         try {
-            // Konversi halaman tertentu dan simpan gambar ke aliran
+            // Convert a particular page and save the image to stream
             JpegDevice.process(document.getPages().get_Item(1), file.toString());
         }
         catch (Exception e) {

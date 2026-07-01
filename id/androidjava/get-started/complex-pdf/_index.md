@@ -4,38 +4,37 @@ linktitle: Membuat PDF kompleks
 type: docs
 weight: 30
 url: /id/androidjava/complex-pdf-example/
-description: Aspose.PDF untuk Android melalui Java memungkinkan Anda membuat dokumen yang lebih kompleks yang berisi gambar, fragmen teks, dan tabel dalam satu dokumen.
-lastmod: "2021-06-05"
+description: Aspose.PDF for Android via Java memungkinkan Anda membuat dokumen yang lebih kompleks yang berisi gambar, fragmen teks, dan tabel dalam satu dokumen.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Contoh [Hello, World](/pdf/id/java/hello-world-example/) menunjukkan langkah-langkah sederhana untuk membuat dokumen PDF menggunakan Java dan Aspose.PDF. Dalam artikel ini, kita akan melihat cara membuat dokumen yang lebih kompleks dengan Java dan Aspose.PDF untuk Java. Sebagai contoh, kita akan mengambil dokumen dari perusahaan fiktif yang mengoperasikan layanan feri penumpang.
-Dokumen kita akan berisi gambar, dua fragmen teks (header dan paragraf), dan sebuah tabel. Untuk membangun dokumen seperti itu, kita akan menggunakan pendekatan berbasis DOM. Anda dapat membaca lebih lanjut di bagian [Dasar-dasar API DOM](/pdf/id/java/basics-of-dom-api/).
+The [Halo, Dunia](/pdf/id/java/hello-world-example/) contoh menunjukkan langkah‑langkah sederhana untuk membuat dokumen PDF menggunakan Java dan Aspose.PDF. Dalam artikel ini, kita akan melihat pembuatan dokumen yang lebih kompleks dengan Java dan Aspose.PDF for Java. Sebagai contoh, kami akan mengambil dokumen dari sebuah perusahaan fiktif yang mengoperasikan layanan feri penumpang.
+Dokumen kami akan berisi sebuah gambar, dua fragmen teks (judul dan paragraf), dan sebuah tabel. Untuk membangun dokumen seperti itu, kami akan menggunakan pendekatan berbasis DOM. Anda dapat membaca lebih lanjut di bagian [Dasar-dasar API DOM](/pdf/id/java/basics-of-dom-api/).
 
-Jika kita membuat dokumen dari awal, kita perlu mengikuti langkah-langkah tertentu:
+Jika kita membuat dokumen dari awal, kita perlu mengikuti langkah‑langkah tertentu:
 
-1. Instansiasi objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document). Pada langkah ini kita akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
-1. Tambahkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) ke objek dokumen. Jadi, sekarang dokumen kita akan memiliki satu halaman.
-1. Untuk menambahkan Gambar, kita membuat FileInputStream, menunjukkan jalur ke file yang kita butuhkan. Kemudian kita tambahkan gambar ke persegi panjang dengan koordinat yang diberikan.
-1. Buat [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) untuk header. Untuk header kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
-1. Tambahkan header ke [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--) halaman.
-1. Buat [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) untuk deskripsi. Untuk deskripsi kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
-
-1. Tambahkan (deskripsi) ke Paragraf halaman. Kami menggunakan font "Helvetica" dan "Times Roman" dalam contoh kami, tetapi ingat bahwa hanya ada tiga font sistem luas di Android:
+1. Instansiasi sebuah [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object. Pada langkah ini kita akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
+1. Tambahkan sebuah [Halaman](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) ke objek dokumen. Jadi, sekarang dokumen kami akan memiliki satu halaman.
+1. Untuk menambahkan Image, kami membuat FileInputStream, menunjukkan jalur ke file yang diperlukan. Kemudian kami menambahkan gambar ke rectangle dengan koordinat yang diberikan.
+1. Buat sebuah [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) untuk header. Untuk header, kami akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
+1. Tambahkan header ke halaman [Paragraf](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. Buat sebuah [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) untuk deskripsi. Untuk deskripsi kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
+1. Tambahkan (deskripsi) ke halaman Paragraf. Kami menggunakan font "Helvetica" dan "Times Roman" dalam contoh kami, tetapi ingat bahwa hanya ada tiga font sistem di Android:
 
 - normal (Droid Sans);
 - serif (Droid Serif);
 - monospace (Droid Sans Mono).
 
-1. Buat tabel, tambahkan properti tabel.
+1. Buat sebuah tabel, tambahkan properti tabel.
 1. Tambahkan (tabel) ke halaman [Paragraf](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
 1. Simpan dokumen "Complex.pdf".
 
-Pada akhirnya, sebuah pop-up ditampilkan dengan pesan "Dokumen PDF telah dibuat!".
+Pada akhirnya, pop-up ditampilkan dengan pesan "PDF document has been generated!".
 
-![Contoh Kompleks dari Aspose.PDF untuk Android melalui Java](complex_example.png)
+![Contoh Kompleks Aspose.PDF untuk Android via Java](complex_example.png)
 
 ```java
 package com.aspose.pdf.examplecomplex;
@@ -93,13 +92,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void RunComplexExample() {
-        // Inisialisasi objek dokumen
+        // Initialize document object
         Document document = new Document();
 
-        // Tambahkan halaman
+        // Add page
         Page page = document.getPages().add();
 
-        // Tambahkan gambar
+        // Add image
         java.io.FileInputStream imageStream = null;
         try {
             imageStream = new FileInputStream("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/logo.png");
@@ -107,21 +106,21 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Tambahkan gambar ke halaman
+        // Add image to the page
         page.addImage(imageStream, new Rectangle(20, 730, 120, 830));
 
-        // Tambahkan Header
-        TextFragment header = new TextFragment("Rute feri baru pada Musim Gugur 2020");
+        // Add Header
+        TextFragment header = new TextFragment("New ferry routes in Fall 2020");
         header.getTextState().setFont(FontRepository.findFont("Helvetica"));
         header.getTextState().setFontSize(24);
         header.setHorizontalAlignment (HorizontalAlignment.Center);
         header.setPosition(new Position(130, 720));
         page.getParagraphs().add(header);
 
-        // Tambahkan deskripsi
-        String descriptionText = "Pengunjung harus membeli tiket secara online dan tiket " +
-                "dibatasi hingga 5.000 per hari. Layanan feri beroperasi pada kapasitas setengah dan" +
-                " dengan jadwal yang dikurangi. Harapkan antrian.";
+        // Add description
+        String descriptionText = "Visitors must buy tickets online and tickets are " +
+                "limited to 5,000 per day. Ferry service is operating at half capacity and" +
+                " on a reduced schedule. Expect lineups.";
 
         TextFragment description = new TextFragment(descriptionText);
         description.getTextState().setFont(FontRepository.findFont("Helvetica"));
@@ -130,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         page.getParagraphs().add(description);
 
 
-        // Tambahkan tabel
+        // Add table
         Table table = new Table();
         table.setColumnWidths("200");
         table.setBorder(new BorderInfo(BorderSide.Box, 1f, Color.getDarkSlateGray()));
@@ -139,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
         table.getDefaultCellTextState().setFont(FontRepository.findFont("Times Roman"));
 
         Row headerRow = table.getRows().add();
-        headerRow.getCells().add("Berangkat dari Kota");
-        headerRow.getCells().add("Berangkat dari Pulau");
+        headerRow.getCells().add("Departs City");
+        headerRow.getCells().add("Departs Island");
 
 
         for (Cell headerRowCell : (Iterable<? extends Cell>) headerRow.getCells())
@@ -166,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         document.save("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/sample.pdf");
 
         Toast toast = Toast.makeText(MainActivity.this,
-                "Dokumen PDF telah dibuat!", Toast.LENGTH_LONG);
+                "PDF document has been generated!", Toast.LENGTH_LONG);
         toast.show();
     }
 
@@ -182,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
 }
 ```
-
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

@@ -4,26 +4,26 @@ linktitle: Konversi JPG ke PDF
 type: docs
 weight: 190
 url: /id/androidjava/convert-jpg-to-pdf/
-lastmod: "2021-06-05"
-description: Pelajari cara mudah mengonversi gambar JPG ke file PDF. Juga, Anda dapat mengonversi gambar ke PDF dengan tinggi dan lebar halaman yang sama.
+lastmod: "2026-07-01"
+description: Pelajari cara mudah mengonversi gambar JPG ke file PDF. Selain itu, Anda dapat mengonversi gambar ke PDF dengan tinggi dan lebar halaman yang sama.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Tidak perlu bertanya-tanya bagaimana cara mengonversi JPG ke PDF, karena Apose.PDF untuk Android melalui pustaka Java memiliki solusi terbaik.
+Tidak perlu bertanya-tanya bagaimana mengonversi JPG ke PDF, karena pustaka Apose.PDF for Android via Java adalah keputusan terbaik.
 
-Anda dapat dengan sangat mudah mengonversi gambar JPG ke PDF dengan Aspose.PDF untuk Android melalui Java dengan mengikuti langkah-langkah berikut:
+Anda dapat dengan sangat mudah mengonversi gambar JPG ke PDF dengan Aspose.PDF for Android via Java dengan mengikuti langkah-langkah berikut:
 
-1. Inisialisasi objek dari kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)
+1. Inisialisasi objek dari [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) kelas
 1. Muat gambar JPG dan tambahkan ke paragraf
-1. Simpan PDF keluaran
+1. Simpan PDF output
 
-Cuplikan kode di bawah ini menunjukkan cara mengonversi Gambar JPG ke PDF:
+Potongan kode di bawah ini menunjukkan cara mengonversi Gambar JPG ke PDF:
 
 ```java
 public void convertJPEGtoPDF () {
-        // Inisialisasi objek dokumen
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -38,13 +38,13 @@ public void convertJPEGtoPDF () {
             return;
         }
 
-        // Muat file gambar JPEG contoh
+        // Load sample JPEG image file
         image.setImageStream(inputStream);
         page.getParagraphs().add(image);
 
         File pdfFileName=new File(fileStorage, "JPEG-to-PDF.pdf");
 
-        // Simpan dokumen keluaran
+        // Save output document
         try {
             document.save(pdfFileName.toString());
         } catch (Exception e) {
