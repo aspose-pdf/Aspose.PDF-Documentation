@@ -1,41 +1,40 @@
 ---
-title: Aspose.PDF를 사용하여 복잡한 PDF 생성
-linktitle: 복잡한 PDF 생성
+title: Aspose.PDF를 사용하여 복잡한 PDF 만들기
+linktitle: 복잡한 PDF 만들기
 type: docs
 weight: 30
 url: /ko/androidjava/complex-pdf-example/
-description: Aspose.PDF for Android via Java를 사용하면 하나의 문서에 이미지, 텍스트 조각 및 표를 포함하는 더욱 복잡한 문서를 생성할 수 있습니다.
-lastmod: "2021-06-05"
+description: Aspose.PDF for Android via Java는 이미지, 텍스트 조각 및 표를 하나의 문서에 포함하는 더 복잡한 문서를 만들 수 있게 해줍니다.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-[Hello, World](/pdf/ko/java/hello-world-example/) 예제는 Java와 Aspose.PDF를 사용하여 PDF 문서를 생성하는 간단한 단계를 보여주었습니다. 이 기사에서는 Java와 Aspose.PDF for Java를 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예를 들어, 승객 페리 서비스를 운영하는 가상의 회사의 문서를 살펴보겠습니다.
-우리의 문서에는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 그리고 표가 포함될 것입니다. 이러한 문서를 만들기 위해 DOM 기반 접근 방식을 사용할 것입니다. [DOM API의 기초](/pdf/ko/java/basics-of-dom-api/) 섹션에서 더 읽어볼 수 있습니다.
+그 [안녕, 세상](/pdf/ko/java/hello-world-example/) 예제에서는 Java와 Aspose.PDF를 사용하여 PDF 문서를 만드는 간단한 단계들을 보여주었습니다. 이 문서에서는 Java와 Aspose.PDF for Java를 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예시로, 승객 페리 서비스를 운영하는 가상의 회사의 문서를 사용하겠습니다.
+우리 문서에는 이미지 하나, 두 개의 텍스트 조각(머리글 및 단락), 그리고 표가 포함됩니다. 이러한 문서를 만들기 위해서는 DOM 기반 접근 방식을 사용할 것입니다. 자세한 내용은 섹션에서 읽을 수 있습니다. [DOM API 기본](/pdf/ko/java/basics-of-dom-api/).
 
-문서를 처음부터 생성하려면 특정 단계를 따라야 합니다:
+문서를 처음부터 만들 경우, 특정 단계를 따라야 합니다:
 
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) 객체를 인스턴스화합니다. 이 단계에서는 메타데이터가 포함된 빈 PDF 문서를 생성하지만 페이지는 없습니다.
-1. 문서 객체에 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page)를 추가합니다. 이제 문서에 한 페이지가 있게 됩니다.
-1. 이미지를 추가하기 위해 FileInputStream을 생성하고, 필요한 파일의 경로를 지정합니다. 그런 다음 주어진 좌표로 사각형에 그림을 추가합니다.
-1. 헤더를 위한 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment)를 생성합니다. 헤더에는 Arial 폰트와 24pt의 글꼴 크기, 중앙 정렬을 사용할 것입니다.
-1. 페이지의 [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--)에 헤더를 추가합니다.
-1. 설명을 위한 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment)를 생성합니다. 설명에는 Arial 폰트와 24pt의 글꼴 크기, 중앙 정렬을 사용할 것입니다.
+1. 인스턴스화합니다 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) 객체. 이 단계에서는 메타데이터가 포함된 빈 PDF 문서를 페이지 없이 만들 것입니다.
+1. 추가 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) 문서 객체에. 따라서 이제 우리의 문서는 한 페이지를 갖게 됩니다.
+1. 이미지를 추가하기 위해, FileInputStream을 생성하고 필요한 파일의 경로를 지정합니다. 그런 다음 지정된 좌표가 있는 사각형에 그림을 추가합니다.
+1. 생성 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) 헤더용. 헤더에는 Arial 글꼴을 사용하고 글꼴 크기는 24pt이며 가운데 정렬을 적용합니다.
+1. 페이지에 헤더 추가 [단락](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. 생성 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) 설명을 위해. 설명을 위해 Arial 글꼴을 사용하고 폰트 크기는 24pt이며 가운데 정렬을 적용합니다.
+1. 페이지에 (description) 단락을 추가합니다. 예시에서는 "Helvetica"와 "Times Roman" 글꼴을 사용했지만, Android에는 시스템 전역 글꼴이 세 가지뿐이라는 점을 기억하세요:
 
-1. 페이지 단락에 (설명)을 추가합니다. 우리의 예제에서는 "Helvetica"와 "Times Roman" 글꼴을 사용했지만, Android에는 세 가지 시스템 전역 글꼴만 있다는 것을 명심하세요:
+- 일반 (Droid Sans);
+- 세리프 (Droid Serif);
+- 고정폭 (Droid Sans Mono).
 
-- normal (Droid Sans);
-- serif (Droid Serif);
-- monospace (Droid Sans Mono).
+1. 표를 만들고, 표 속성을 추가합니다.
+1. 페이지에 (표)를 추가 [단락](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. 문서 "Complex.pdf"를 저장합니다.
 
-1. 테이블을 생성하고, 테이블 속성을 추가합니다.
-1. 페이지에 (테이블)을 [단락](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--)에 추가합니다.
-1. 문서를 "Complex.pdf"로 저장합니다.
+끝에 "PDF document has been generated!"라는 메시지가 표시된 팝업이 나타납니다.
 
-마지막에 "PDF 문서가 생성되었습니다!"라는 메시지가 있는 팝업이 표시됩니다.
-
-![Aspose.PDF의 Android용 Java 복잡한 예제](complex_example.png)
+![Java를 사용한 Android용 Aspose.PDF 복잡한 예제](complex_example.png)
 
 ```java
 package com.aspose.pdf.examplecomplex;
@@ -93,13 +92,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void RunComplexExample() {
-        // 문서 객체 초기화
+        // Initialize document object
         Document document = new Document();
 
-        // 페이지 추가
+        // Add page
         Page page = document.getPages().add();
 
-        // 이미지 추가
+        // Add image
         java.io.FileInputStream imageStream = null;
         try {
             imageStream = new FileInputStream("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/logo.png");
@@ -107,21 +106,21 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // 페이지에 이미지 추가
+        // Add image to the page
         page.addImage(imageStream, new Rectangle(20, 730, 120, 830));
 
-        // 헤더 추가
-        TextFragment header = new TextFragment("2020년 가을 새로운 페리 노선");
+        // Add Header
+        TextFragment header = new TextFragment("New ferry routes in Fall 2020");
         header.getTextState().setFont(FontRepository.findFont("Helvetica"));
         header.getTextState().setFontSize(24);
-        header.setHorizontalAlignment(HorizontalAlignment.Center);
+        header.setHorizontalAlignment (HorizontalAlignment.Center);
         header.setPosition(new Position(130, 720));
         page.getParagraphs().add(header);
 
-        // 설명 추가
-        String descriptionText = "방문객은 온라인으로 티켓을 구매해야 하며, 티켓은 " +
-                "하루에 5,000장으로 제한됩니다. 페리 서비스는 절반의 수용 인원으로 운영되며 " +
-                "축소된 일정으로 운영됩니다. 줄을 서야 할 수도 있습니다.";
+        // Add description
+        String descriptionText = "Visitors must buy tickets online and tickets are " +
+                "limited to 5,000 per day. Ferry service is operating at half capacity and" +
+                " on a reduced schedule. Expect lineups.";
 
         TextFragment description = new TextFragment(descriptionText);
         description.getTextState().setFont(FontRepository.findFont("Helvetica"));
@@ -129,7 +128,8 @@ public class MainActivity extends AppCompatActivity {
         description.setHorizontalAlignment(HorizontalAlignment.Left);
         page.getParagraphs().add(description);
 
-        // 테이블 추가
+
+        // Add table
         Table table = new Table();
         table.setColumnWidths("200");
         table.setBorder(new BorderInfo(BorderSide.Box, 1f, Color.getDarkSlateGray()));
@@ -138,8 +138,9 @@ public class MainActivity extends AppCompatActivity {
         table.getDefaultCellTextState().setFont(FontRepository.findFont("Times Roman"));
 
         Row headerRow = table.getRows().add();
-        headerRow.getCells().add("출발 도시");
-        headerRow.getCells().add("출발 섬");
+        headerRow.getCells().add("Departs City");
+        headerRow.getCells().add("Departs Island");
+
 
         for (Cell headerRowCell : (Iterable<? extends Cell>) headerRow.getCells())
         {
@@ -164,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         document.save("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/sample.pdf");
 
         Toast toast = Toast.makeText(MainActivity.this,
-                "PDF 문서가 생성되었습니다!", Toast.LENGTH_LONG);
+                "PDF document has been generated!", Toast.LENGTH_LONG);
         toast.show();
     }
 
@@ -180,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
 }
 ```
-
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

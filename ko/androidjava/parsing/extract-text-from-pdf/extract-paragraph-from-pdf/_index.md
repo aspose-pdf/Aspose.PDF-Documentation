@@ -1,26 +1,25 @@
 ---
-title: PDF에서 단락 추출
-linktitle: 단락 추출
+title: Extract Paragraph from PDF
+linktitle: Extract Paragraph
 type: docs
 weight: 20
 url: /ko/androidjava/extract-paragraph-from-pdf/
-description: 이 문서에서는 Aspose.PDF의 특별한 도구인 ParagraphAbsorber를 사용하여 PDF 문서에서 텍스트를 추출하는 방법을 설명합니다.
+description: Learn how to extract specific paragraphs from a PDF document in Android/Java using Aspose.PDF for content extraction.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## PDF 문서에서 단락 형태로 텍스트 추출하기
+## Extract Text from PDF document in Paragraphs form
 
-특정 텍스트("일반 텍스트" 또는 "정규 표현식" 사용)를 단일 페이지 또는 전체 문서에서 검색하여 PDF 문서에서 텍스트를 가져오거나, 단일 페이지, 페이지 범위 또는 전체 문서의 모든 텍스트를 가져올 수 있습니다.
- 일부 경우에는 PDF 문서에서 단락을 추출하거나 단락 형식의 텍스트를 필요로 합니다. 우리는 PDF 문서 페이지의 텍스트에서 섹션과 단락을 검색하는 기능을 구현했습니다. 우리는 ParagraphAbsorber 클래스를 소개했으며 (TextFragmentAbsorber 및 TextAbsorber와 유사), 이를 사용하여 PDF 문서에서 단락을 추출할 수 있습니다. ParagraphAbsorber를 사용할 수 있는 두 가지 방법이 있습니다:
+We can get text from a PDF document by searching a particular text (using "plain text" or "regular expressions") from a single page or whole document, or we can get the complete text of a single page, range of pages or complete document. However, in some cases, you require to extract paragraphs from a PDF document or text in the form of Paragraphs. We have implemented functionality for searching sections and paragraphs in the text of PDF document pages. We have introduced ParagraphAbsorber Class (like TextFragmentAbsorber and TextAbsorber), which can be used to extract paragraphs from PDF documents. There are two following ways in which you can use ParagraphAbsorber:
 
-**1- PDF 페이지의 텍스트 섹션과 단락의 경계를 그리기:**
+**1- By drawing the border of sections and paragraphs of text on PDF page:**
 
 ```java
 public static void ExtractParagraph() {
-        // 문서 디렉토리 경로.
+        // The path to the documents directory.
         Document doc = new Document(_dataDir + "input.pdf");
         Page page = doc.getPages().get_Item(2);
 
@@ -65,13 +64,13 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- 단락 모음을 반복하여 그들의 텍스트를 얻기:**
+**2- By iterating through paragraphs collection and get the text of them:**
 
 ```java
  public static void ExtractParagraph02() {
-        // 기존 PDF 파일 열기
+        // Open an existing PDF file
         Document doc = new Document(_dataDir + "input.pdf");
-        // ParagraphAbsorber 인스턴스화
+        // Instantiate ParagraphAbsorber
         ParagraphAbsorber absorber = new ParagraphAbsorber();
         absorber.visit(doc);
 
@@ -91,7 +90,7 @@ public static void ExtractParagraph() {
                     }
                     paragraphText.append("\r\n");
 
-                    System.out.println("섹션 " + i + "의 단락 " + j + " 페이지" + ":" + markup.getNumber());
+                    System.out.println("Paragraph " + j + " of section " + i + " on page" + ":" + markup.getNumber());
                     System.out.println(paragraphText.toString());
 
                     j++;
@@ -101,3 +100,4 @@ public static void ExtractParagraph() {
         }
     }
 ```
+
