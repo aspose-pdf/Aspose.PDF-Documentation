@@ -1,46 +1,46 @@
 ---
-title: Overview
-linktitle: Overview
+title: 概要
+linktitle: 概要
 type: docs
 weight: 20
 url: /ja/androidjava/overview/
-description: Aspose.PDF for Android via Java の主要機能と対応フォーマットの概要、Java ライブラリのインストールおよびライセンス マニュアル。
-lastmod: "2021-06-05"
+description: Aspose.PDF for Android via Java の主要機能とサポートされているフォーマットの概要、Java ライブラリのインストールおよびライセンスマニュアル。
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-_このページは、Aspose.PDF for Android via Java の機能の概要です。_
+_このページは Aspose.PDF for Android via Java の機能の概要です。_
 
-Aspose.PDF for Android Java は、Android アプリが PDF ドキュメントを読み取り、書き込み、操作、レンダリングできる PDF 処理 API です。Aspose.PDF for Android via Java は、開発者にとって学習しやすく、使用しやすい非常にシンプルなアプリケーション プログラミング インターフェイス (API) を提供します。
+Aspose.PDF for Android Java は、Android アプリが PDF ドキュメントを読み取り、書き込み、操作し、レンダリングできるようにする PDF 処理 API です。Aspose.PDF for Android via Java は、開発者が学びやすく使いやすい非常にシンプルなアプリケーションプログラミングインターフェイス (API) を提供します。
 
-Aspose.PDF for Android via Java は、次のようなさまざまな機能をサポートしています。
+Aspose.PDF for Android via Java は、以下のような多種多様な機能をサポートしています：
 
 - ドキュメント圧縮;
 - テーブルの作成と操作;
 - グラフオブジェクトのサポート;
-- 広範なハイパーリンク機能;
-- 拡張セキュリティコントロール;
+- 包括的なハイパーリンク機能;
+- 拡張されたセキュリティコントロール;
 - カスタムフォントの処理;
 - データソースとの統合;
-- ブックマークの追加または削除;
-- 目次の作成;
-
-- 添付ファイルおよび注釈の追加、更新、削除;
-- PDFフォームデータをインポートまたはエクスポートする;
-- テキストや画像を追加、置換、削除する;
-- ページを分割、連結、抽出、挿入する;
+- ブックマークを追加または削除する;
+- 目次を作成する;
+- 添付ファイルと注釈を追加、更新、削除する;
+- PDF フォーム データをインポートまたはエクスポートする;
+- テキストと画像を追加、置換または削除する;
+- ページを分割、結合、抽出、または挿入する;
 - ページを画像に変換する;
-- PDFドキュメントを印刷するなど、さらに多くのことが可能です。
+- PDFドキュメントを印刷し、その他多数の機能があります。
 
-さらに、Aspose.PDF for Android via Javaは、優れたパフォーマンスと良好な品質で、テキストや画像を簡単に変換し、PDFをさまざまなドキュメント形式に変換することができます。
+さらに、Aspose.PDF for Android via Java を使用すると、テキストや画像を簡単に変換し、優れたパフォーマンスと高品質で PDF をさまざまな文書形式に変換できます。
 
-詳細はこちらをご覧ください:
+詳細については:
 
 - [サポートされているファイル形式](/pdf/ja/androidjava/supported-file-formats/)
-- [Aspose.PDFの主な機能](/pdf/ja/androidjava/key-features/)
+- [Aspose.PDF の主な機能](/pdf/ja/androidjava/key-features/)
 - [システム要件](/pdf/ja/androidjava/system-requirements/)
 - [インストール](/pdf/ja/androidjava/installation/)
 - [ライセンス](/pdf/ja/androidjava/licensing/)
-- [技術サポート](/pdf/ja/androidjava/technical-support/)
+- [テクニカルサポート](/pdf/ja/androidjava/technical-support/)
+

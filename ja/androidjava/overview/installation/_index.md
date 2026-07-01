@@ -1,43 +1,43 @@
 ---
-title: Aspose.PDF for AndroidをJava経由でインストール
+title: Aspose.PDF for Android via Java をインストールする
 linktitle: インストール
 type: docs
 weight: 40
 url: /ja/androidjava/installation/
-description: このセクションでは、Aspose.PDF for AndroidをJava経由でインストールするための製品説明と手順を、自分でインストールする場合とNuGetを使用する場合について説明します。
-lastmod: "2021-06-05"
+description: このセクションでは、独自に Aspose.PDF for Android via Java をインストールするための製品説明と手順、および NuGet の使用方法を示します。
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Aspose.PDF for AndroidをJava経由で使用するコンポーネント
+## Aspose.PDF for Android via Java コンポーネント
 
 {{% alert color="primary" %}}
 
-**Aspose.PDF for Android via Java**は、開発者がプログラムでPDFドキュメントを作成および操作できるコンポーネントで、シンプルなものから複雑なものまで対応します。Aspose.PDF for Android via Javaを使用すると、開発者はPDFドキュメントにテーブル、グラフ、画像、ハイパーリンク、カスタムフォントなどを挿入することができます。また、PDFドキュメントを圧縮するためにも使用できます。Aspose.PDF for Android via Javaは、安全なPDFを開発するための優れたセキュリティ機能を提供します。Aspose.PDF for Android via Javaの最も特徴的な機能は、APIを通じて、またはXMLテンプレートからPDFを作成できることです。
+**Aspose.PDF for Android via Java** は、シンプルなものから複雑なものまで、プログラムで PDF ドキュメントを作成および操作できるコンポーネントです。Aspose.PDF for Android via Java を使用すると、開発者は PDF ドキュメントに表、グラフ、画像、ハイパーリンク、カスタムフォントなどを挿入できます。また、PDF ドキュメントの圧縮にも利用できます。Aspose.PDF for Android via Java は、安全な PDF を作成するための優れたセキュリティ機能を提供します。Aspose.PDF for Android via Java の最も特徴的な機能は、API と XML テンプレートの両方から PDF 作成をサポートしていることです。
 
-{{% /alert %}}
+{{% /alert %}} 
 
 ## 製品説明
 
-**Aspose.PDF for Android Java** は、AndroidアプリケーションがPDFドキュメントを読み込み、書き込み、操作、表示するためのPDF処理APIです。APIは、HTML、TXT、EPUB、XPS、および画像を含む幅広い標準ファイル形式をサポートしています。
+**Aspose.PDF for Android Java** は、Android アプリケーションが PDF ドキュメントを読み取り、書き込み、操作、表示できる PDF 処理 API です。API は、HTML、TXT、EPUB、XPS、画像など、幅広い標準ファイル形式をサポートしています。
 
-**Aspose.PDF for Android via Java** は、圧縮オプション、グラフィックスサポート、ゼロからのドキュメント作成、テキストスタイルとフォーマットの操作、添付ファイルや注釈の追加、変更、抽出、削除などの人気の高い高度な機能を提供する手頃なソリューションです。67
+**Aspose.PDF for Android via Java** は、圧縮オプション、グラフィックサポート、ゼロからのドキュメント作成、テキストスタイルと書式設定の操作、添付ファイルや注釈の追加、変更、抽出、削除、その他の一般的な高度機能を提供する、手頃なソリューションです。67
 
 ## インストール
 
-### Aspose.PDF for Android via Java の評価
+### Aspose.PDF for Android via Java を評価する
 
 {{% alert color="primary" %}} 
 
-評価用に [Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java) をダウンロードできます。
- 評価版のダウンロードは購入版のダウンロードと同じです。評価版は、[ライセンスを適用する](/pdf/ja/androidjava/licensing/)ために数行のコードを追加すると、ライセンスが付与されます。
+ダウンロードできます [Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java) 評価用です。評価ダウンロードは購入ダウンロードと同じです。評価バージョンは、数行のコードを追加するだけでライセンスが適用されます。 [ライセンスを適用する](/pdf/ja/androidjava/licensing/).
 
-評価版の制限なしにAspose.PDF for Android via Javaをテストしたい場合は、30日間の一時ライセンスをリクエストすることもできます。[一時ライセンスの取得方法](https://purchase.aspose.com/temporary-license)をご参照ください。
+評価版の制限なしで Aspose.PDF for Android via Java をテストしたい場合は、30 日間の一時ライセンスをリクエストすることもできます。詳細は以下をご参照ください [一時ライセンスの取得方法は？](https://purchase.aspose.com/temporary-license)
 
-{{% /alert %}}
+{{% /alert %}} 
 
-## AsposeリポジトリからAspose.PDF for Android via Javaをインストールする
+## Aspose リポジトリから Aspose.PDF for Android via Java をインストールする
 
-AsposeはすべてのJava APIを[Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java)にホストしています。Mavenプロジェクトで簡単な設定でAspose.PDF for Android via Java APIを直接使用することができます。
+Aspose はすべての Java API をホストしています [Aspose リポジトリ](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java). シンプルな構成で、Maven プロジェクト内で Java API を介して Android 用 Aspose.PDF を直接簡単に使用できます。
+

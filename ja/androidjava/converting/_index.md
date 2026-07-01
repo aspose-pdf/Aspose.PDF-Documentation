@@ -1,48 +1,48 @@
 ---
-title: PDFドキュメントの変換
-linktitle: PDFドキュメントの変換
+title: PDF ドキュメントを変換する
+linktitle: PDF ドキュメントを変換する
 type: docs
 weight: 50
 url: /ja/androidjava/converting/
-lastmod: "2021-06-05"
-description: このセクションでは、Aspose.PDFライブラリを使用してJava経由でAndroid上でPDFドキュメントを変換するためのすべての可能なオプションの説明が含まれています。
+lastmod: "2026-07-01"
+description: このセクションには、Aspose.PDF ライブラリを使用して Java 経由で Android 上の PDF ドキュメントを変換するためのすべての可能なオプションの説明が含まれています。
 sitemap:
     changefreq: "weekly"
     priority: 0.8
 ---
 
-Aspose.PDF for Android via Javaは、PDFドキュメントをさまざまな形式に変換することや、他の形式からPDFに変換することを可能にします。また、Aspose.PDFコンバーターアプリを使用して、Aspose.PDF変換の品質を確認し、結果をオンラインで表示することができます。
+Aspose.PDF for Android via Java は、PDF ドキュメントをさまざまな形式に変換したり、他の形式から PDF に変換したりすることができます。また、Aspose.PDF 変換の品質を確認し、Aspose.PDF コンバーター アプリでオンラインで結果を表示することもできます。
 
-## PDFをMicrosoft Officeファイル形式に変換
+## PDF を Microsoft Office ファイル形式に変換する
 
-Aspose.PDF for Android via Javaを使用すると、PDFドキュメントを便利で馴染みのあるMicrosoft Officeファイル形式に迅速かつ簡単に変換できます。
+Aspose.PDF for Android via Java を使用すると、PDF ドキュメントを便利でなじみのある Microsoft Office ファイル形式に迅速かつ簡単に変換できます。
 
-- [PDFをDOCに変換](/pdf/ja/androidjava/convert-pdf-to-doc/)
-- [PDFをExcelに変換](/pdf/ja/androidjava/convert-pdf-to-excel/)
-- [PDFをPowerPointに変換](/pdf/ja/androidjava/convert-pdf-to-powerpoint/)
+- [PDF を DOC に変換する](/pdf/ja/androidjava/convert-pdf-to-doc/)
+- [PDF を Excel に変換](/pdf/ja/androidjava/convert-pdf-to-excel/)
+- [PDF を PowerPoint に変換](/pdf/ja/androidjava/convert-pdf-to-powerpoint/)
 
-## PDF/AとPDF形式の間で変換
+## PDF/A と PDF フォーマット間を変換
 
-PDF/AをPDF形式に変換し、その逆もJavaライブラリで可能です。
+PDF/A を PDF フォーマットに変換し、逆に戻すことは Java ライブラリで可能です。
 
-- [PDFをPDF/Aに変換する](/pdf/ja/androidjava/convert-pdf-file-to-pdfa/)
-- [PDF/AをPDFに変換する](/pdf/ja/androidjava/convert-pdfa-to-pdf/)
+- [PDF を PDF/A に変換](/pdf/ja/androidjava/convert-pdf-file-to-pdfa/)
+- [PDF/A を PDF に変換](/pdf/ja/androidjava/convert-pdfa-to-pdf/)
 
-## 画像をPDFに変換する及びその逆
+## 画像を PDF に変換し、逆方向にも変換する
 
-| 画像をPDFに変換 | PDFを画像に変換 |
+| 画像を PDF に変換 | PDF を画像に変換 |
 | :---------------- | :------------------ |
-| [JPGをPDFに変換する](/pdf/ja/androidjava/convert-jpg-to-pdf/) | [PDFをJPGに変換する](/pdf/ja/androidjava/convert-pdf-to-jpg/) |
-| [BMPをPDFに変換する](/pdf/ja/androidjava/convert-bmp-to-pdf/) | [PDFをBMPに変換する](/pdf/ja/androidjava/convert-pdf-to-bmp/) |
-| [TIFFをPDFに変換する](/pdf/ja/androidjava/convert-tiff-to-pdf/) | [PDFをTIFFに変換する](/pdf/ja/androidjava/convert-pdf-to-tiff/) |
-| [PNGをPDFに変換する](/pdf/ja/androidjava/convert-png-to-pdf/) | [PDFをPNGに変換する](/pdf/ja/androidjava/convert-pdf-to-png/) |
-| [DICOMをPDFに変換する](/pdf/ja/androidjava/convert-dicom-to-pdf/) | |
+| [JPG を PDF に変換](/pdf/ja/androidjava/convert-jpg-to-pdf/) | [PDF を JPG に変換](/pdf/ja/androidjava/convert-pdf-to-jpg/) |
+| [BMP を PDF に変換](/pdf/ja/androidjava/convert-bmp-to-pdf/) | [PDF を BMP に変換](/pdf/ja/androidjava/convert-pdf-to-bmp/) |
+| [TIFF を PDF に変換](/pdf/ja/androidjava/convert-tiff-to-pdf/) | [PDF を TIFF に変換](/pdf/ja/androidjava/convert-pdf-to-tiff/) |
+| [PNG を PDF に変換](/pdf/ja/androidjava/convert-png-to-pdf/) | [PDF を PNG に変換](/pdf/ja/androidjava/convert-pdf-to-png/) |
+| [DICOM を PDF に変換](/pdf/ja/androidjava/convert-dicom-to-pdf/) | |
 
-## 様々なファイル形式をPDFに変換する及びその逆
+## さまざまなファイル形式を PDF に変換し、逆方向も変換できます
 
-| ファイルをPDFに変換 | PDFをファイルに変換 |
-
+| ファイルを PDF に変換 | PDF をファイルに変換 |
 | :---------------- | :------------------ |
-| [テキストをPDFに変換](/pdf/ja/androidjava/convert-text-to-pdf/) | [PDFをテキストに変換](/pdf/ja/androidjava/convert-pdf-to-txt/) |
-| [PCLをPDFに変換](/pdf/ja/androidjava/convert-pcl-to-pdf/) | |
-| [XMLをPDFに変換](/pdf/ja/androidjava/convert-xml-to-pdf/) | |
+| [テキストを PDF に変換](/pdf/ja/androidjava/convert-text-to-pdf/) | [PDF をテキストに変換](/pdf/ja/androidjava/convert-pdf-to-txt/) |
+| [XML を PDF に変換](/pdf/ja/androidjava/convert-xml-to-pdf/) | |
+
+

@@ -4,23 +4,22 @@ linktitle: 段落を抽出
 type: docs
 weight: 20
 url: /ja/androidjava/extract-paragraph-from-pdf/
-description: この記事では、Aspose.PDFの特別なツールであるParagraphAbsorberを使用してPDFドキュメントからテキストを抽出する方法について説明します。
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用したコンテンツ抽出で、Android/Java で PDF ドキュメントから特定の段落を抽出する方法を学びます。
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## PDFドキュメントから段落形式でテキストを抽出
+## PDF ドキュメントからテキストを段落形式で抽出
 
-特定のテキスト（「プレーンテキスト」または「正規表現」を使用）を単一のページまたはドキュメント全体から検索することでPDFドキュメントからテキストを取得することができます。また、単一ページ、ページ範囲、またはドキュメント全体の完全なテキストを取得することもできます。
- しかし、場合によっては、PDFドキュメントから段落を抽出する必要があるか、段落形式のテキストが必要です。PDFドキュメントページのテキスト内でセクションと段落を検索する機能を実装しました。ParagraphAbsorberクラス（TextFragmentAbsorberやTextAbsorberのようなもの）を導入しており、これを使用してPDFドキュメントから段落を抽出できます。ParagraphAbsorberを使用するには、次の2つの方法があります。
+単一ページまたはドキュメント全体から特定のテキスト（「プレーンテキスト」または「正規表現」を使用）を検索してテキストを取得したり、単一ページ、ページ範囲、またはドキュメント全体の完全なテキストを取得したりできます。しかし、場合によっては PDF ドキュメントから段落や段落形式のテキストを抽出する必要があります。PDF ドキュメントページのテキスト内でセクションや段落を検索する機能を実装しました。TextFragmentAbsorber や TextAbsorber と同様の ParagraphAbsorber クラスを導入し、PDF ドキュメントから段落を抽出できるようにしました。ParagraphAbsorber を使用する方法は以下の 2 つがあります。
 
-**1- PDFページ上のテキストのセクションと段落の境界を描くことによって:**
+**1- PDF ページ上でテキストのセクションと段落の境界を描画することによって:**
 
 ```java
 public static void ExtractParagraph() {
-        // ドキュメントディレクトリへのパス。
+        // The path to the documents directory.
         Document doc = new Document(_dataDir + "input.pdf");
         Page page = doc.getPages().get_Item(2);
 
@@ -65,13 +64,13 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- 段落コレクションを反復処理してテキストを取得することによって:**
+**2- 段落コレクションを反復処理し、それらのテキストを取得する方法:**
 
 ```java
  public static void ExtractParagraph02() {
-        // 既存のPDFファイルを開く
+        // Open an existing PDF file
         Document doc = new Document(_dataDir + "input.pdf");
-        // ParagraphAbsorberをインスタンス化する
+        // Instantiate ParagraphAbsorber
         ParagraphAbsorber absorber = new ParagraphAbsorber();
         absorber.visit(doc);
 
@@ -91,7 +90,7 @@ public static void ExtractParagraph() {
                     }
                     paragraphText.append("\r\n");
 
-                    System.out.println("セクション " + i + " の段落 " + j + " ページ上の" + ":" + markup.getNumber());
+                    System.out.println("Paragraph " + j + " of section " + i + " on page" + ":" + markup.getNumber());
                     System.out.println(paragraphText.toString());
 
                     j++;
@@ -101,3 +100,4 @@ public static void ExtractParagraph() {
         }
     }
 ```
+
