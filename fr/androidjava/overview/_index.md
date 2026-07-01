@@ -1,46 +1,46 @@
 ---
-title: Vue d'ensemble
-linktitle: Vue d'ensemble
+title: Aperçu
+linktitle: Aperçu
 type: docs
 weight: 20
 url: /fr/androidjava/overview/
-description: Vue d'ensemble des fonctionnalités clés et des formats pris en charge d'Aspose.PDF pour Android via Java, manuel d'installation et de licence de la bibliothèque Java.
-lastmod: "2021-06-05"
+description: Aperçu des fonctionnalités clés et des formats pris en charge d'Aspose.PDF for Android via Java, manuel d'installation et de licence de la bibliothèque Java.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-_Cette page est une vue d'ensemble des fonctionnalités d'Aspose.PDF pour Android via Java._
+_Cette page est un aperçu des fonctionnalités d'Aspose.PDF for Android via Java._
 
-Aspose.PDF pour Android Java est une API de traitement PDF qui permet aux applications Android de lire, écrire, manipuler et rendre des documents PDF. Aspose.PDF pour Android via Java fournit une interface de programmation d'application (API) très simple pour les développeurs, facile à apprendre et à utiliser.
+Aspose.PDF for Android Java est une API de traitement PDF qui permet aux applications Android de lire, écrire, manipuler & rendre les documents PDF. Aspose.PDF for Android via Java fournit une interface de programmation d'applications (API) très simple pour les développeurs, facile à apprendre et à utiliser.
 
-Aspose.PDF pour Android via Java prend en charge une grande variété de fonctions telles que :
+Aspose.PDF for Android via Java prend en charge un large éventail de fonctions telles que :
 
-- compression de documents ;
-- création et manipulation de tableaux ;
-- support pour les objets graphiques ;
-- fonctionnalité de lien hypertexte étendue ;
-- contrôles de sécurité étendus ;
-- gestion de polices personnalisées ;
-- intégration avec des sources de données ;
-- ajout ou suppression de signets ;
-- création d'une table des matières ;
-
-- ajout, mise à jour, suppression de pièces jointes et d'annotations ;
-- importer ou exporter des données de formulaires PDF ;
-- ajouter, remplacer ou supprimer du texte et des images ;
-- diviser, concaténer, extraire ou insérer des pages ;
-- transformer des pages en image ;
+- compression de document ;
+- création et manipulation de tables;
+- prise en charge des objets graphiques;
+- fonctionnalité de lien hypertexte étendue;
+- contrôles de sécurité étendus;
+- gestion de polices personnalisées;
+- intégration avec des sources de données;
+- ajouter ou supprimer des signets;
+- créer une table des matières;
+- ajouter, mettre à jour, supprimer des pièces jointes et des annotations;
+- importer ou exporter les données de formulaire PDF;
+- ajouter, remplacer ou supprimer du texte et des images;
+- diviser, concaténer, extraire ou insérer des pages;
+- transformer les pages en image ;
 - imprimer des documents PDF et bien plus encore.
 
-De plus, Aspose.PDF pour Android via Java peut être utilisé pour convertir facilement du texte, des images, convertir des PDF en divers formats de documents avec d'excellentes performances et une bonne qualité.
+De plus, Aspose.PDF for Android via Java peut être utilisé pour convertir facilement du texte, des images, convertir des PDF en divers formats de document avec d'excellentes performances et une bonne qualité.
 
-En savoir plus sur :
+En savoir plus sur :
 
-- [Formats de fichiers pris en charge](/pdf/fr/androidjava/supported-file-formats/)
-- [Fonctionnalités clés d'Aspose.PDF](/pdf/fr/androidjava/key-features/)
-- [Configuration système requise](/pdf/fr/androidjava/system-requirements/)
+- [Formats de fichier pris en charge](/pdf/fr/androidjava/supported-file-formats/)
+- [Principales fonctionnalités d'Aspose.PDF](/pdf/fr/androidjava/key-features/)
+- [Exigences du système](/pdf/fr/androidjava/system-requirements/)
 - [Installation](/pdf/fr/androidjava/installation/)
 - [Licence](/pdf/fr/androidjava/licensing/)
-- [Support technique](/pdf/fr/androidjava/technical-support/)
+- [Assistance technique](/pdf/fr/androidjava/technical-support/)
+

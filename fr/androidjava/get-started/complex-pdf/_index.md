@@ -1,42 +1,40 @@
 ---
-
-title: Création d'un PDF complexe à l'aide de Aspose.PDF
+title: Création d'un PDF complexe à l'aide d'Aspose.PDF
 linktitle: Création d'un PDF complexe
 type: docs
 weight: 30
 url: /fr/androidjava/complex-pdf-example/
-description: Aspose.PDF pour Android via Java vous permet de créer des documents plus complexes contenant des images, des fragments de texte et des tableaux dans un seul document.
-lastmod: "2021-06-05"
+description: Aspose.PDF for Android via Java vous permet de créer des documents plus complexes contenant des images, des fragments de texte et des tableaux dans un même document.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-L'exemple [Hello, World](/pdf/fr/java/hello-world-example/) a montré des étapes simples pour créer un document PDF en utilisant Java et Aspose.PDF. Dans cet article, nous allons examiner la création d'un document plus complexe avec Java et Aspose.PDF pour Java. Comme exemple, nous prendrons un document d'une entreprise fictive qui exploite des services de ferry pour passagers.  
-Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe), et un tableau. Pour construire un tel document, nous utiliserons une approche basée sur le DOM. Vous pouvez en lire plus dans la section [Notions de base de l'API DOM](/pdf/fr/java/basics-of-dom-api/).
+Le [Bonjour, Monde](/pdf/fr/java/hello-world-example/) L'exemple présentait des étapes simples pour créer un document PDF en utilisant Java et Aspose.PDF. Dans cet article, nous examinerons la création d'un document plus complexe avec Java et Aspose.PDF pour Java. À titre d'exemple, nous prendrons un document d'une société fictive qui exploite des services de ferries de passagers.
+Notre document contiendra une image, deux fragments de texte (en-tête et paragraphe) et un tableau. Pour créer un tel document, nous utiliserons une approche basée sur le DOM. Vous pouvez en savoir plus dans la section [Bases de l'API DOM](/pdf/fr/java/basics-of-dom-api/).
 
 Si nous créons un document à partir de zéro, nous devons suivre certaines étapes :
 
-1. Instancier un objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document). Dans cette étape, nous allons créer un document PDF vide avec des métadonnées mais sans pages.
-1. Ajouter une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) à l'objet document. Ainsi, notre document aura maintenant une page.
-1. Pour ajouter une image, nous créons un FileInputStream, indiquons le chemin vers le fichier dont nous avons besoin. Ensuite, nous ajoutons l'image au rectangle avec les coordonnées données.
-1. Créer un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) pour l'en-tête. Pour l'en-tête, nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
-1. Ajouter l'en-tête aux [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--) de la page.
-1. Créer un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) pour la description. Pour la description, nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
-
-1. Ajouter (description) au paragraphe de la page. Nous avons utilisé les polices "Helvetica" et "Times Roman" dans notre exemple, mais gardez à l'esprit qu'il n'y a que trois polices système sous Android :
+1. Instancier un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) objet. Dans cette étape, nous créerons un document PDF vide avec quelques métadonnées mais sans pages.
+1. Ajouter un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) à l'objet document. Ainsi, notre document aura maintenant une page.
+1. Afin d'ajouter une image, nous créons un FileInputStream, indiquons le chemin du fichier nécessaire. Ensuite, nous ajoutons l'image au rectangle aux coordonnées données.
+1. Créer un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) Pour l'en-tête. Pour l'en-tête, nous utiliserons la police Arial avec une taille de police de 24 pt et un alignement centré.
+1. Ajouter l'en-tête à la page [Paragraphes](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. Créer un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) pour la description. Pour la description nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
+1. Ajouter (description) à la page Paragraphes. Nous avons utilisé les polices "Helvetica" et "Times Roman" dans notre exemple, mais gardez à l'esprit qu'il n'existe que trois polices système sous Android :
 
 - normal (Droid Sans);
-- serif (Droid Serif);
+- serif (Droid Serif) ;
 - monospace (Droid Sans Mono).
 
-1. Créer un tableau, ajouter des propriétés au tableau.
-1. Ajouter (table) au [Paragraphes](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--) de la page.
-1. Enregistrer un document "Complex.pdf".
+1. Créer un tableau, ajouter les propriétés du tableau.
+1. Ajouter (table) à la page [Paragraphes](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. Enregistrez un document "Complex.pdf".
 
-À la fin, une fenêtre contextuelle s'affiche avec le message "Le document PDF a été généré !".
+À la fin, une fenêtre contextuelle s'affiche avec le message "PDF document has been generated!".
 
-![Exemple Complexe de Aspose.PDF pour Android via Java](complex_example.png)
+![Exemple complexe d'Aspose.PDF pour Android via Java](complex_example.png)
 
 ```java
 package com.aspose.pdf.examplecomplex;
@@ -94,13 +92,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void RunComplexExample() {
-        // Initialiser l'objet document
+        // Initialize document object
         Document document = new Document();
 
-        // Ajouter une page
+        // Add page
         Page page = document.getPages().add();
 
-        // Ajouter une image
+        // Add image
         java.io.FileInputStream imageStream = null;
         try {
             imageStream = new FileInputStream("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/logo.png");
@@ -108,21 +106,21 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Ajouter l'image à la page
+        // Add image to the page
         page.addImage(imageStream, new Rectangle(20, 730, 120, 830));
 
-        // Ajouter un en-tête
-        TextFragment header = new TextFragment("Nouvelles routes de ferry à l'automne 2020");
+        // Add Header
+        TextFragment header = new TextFragment("New ferry routes in Fall 2020");
         header.getTextState().setFont(FontRepository.findFont("Helvetica"));
         header.getTextState().setFontSize(24);
         header.setHorizontalAlignment (HorizontalAlignment.Center);
         header.setPosition(new Position(130, 720));
         page.getParagraphs().add(header);
 
-        // Ajouter une description
-        String descriptionText = "Les visiteurs doivent acheter des billets en ligne et les billets sont " +
-                "limités à 5 000 par jour. Le service de ferry fonctionne à demi-capacité et" +
-                " sur un horaire réduit. Attendez-vous à des files d'attente.";
+        // Add description
+        String descriptionText = "Visitors must buy tickets online and tickets are " +
+                "limited to 5,000 per day. Ferry service is operating at half capacity and" +
+                " on a reduced schedule. Expect lineups.";
 
         TextFragment description = new TextFragment(descriptionText);
         description.getTextState().setFont(FontRepository.findFont("Helvetica"));
@@ -131,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         page.getParagraphs().add(description);
 
 
-        // Ajouter un tableau
+        // Add table
         Table table = new Table();
         table.setColumnWidths("200");
         table.setBorder(new BorderInfo(BorderSide.Box, 1f, Color.getDarkSlateGray()));
@@ -140,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
         table.getDefaultCellTextState().setFont(FontRepository.findFont("Times Roman"));
 
         Row headerRow = table.getRows().add();
-        headerRow.getCells().add("Départs Ville");
-        headerRow.getCells().add("Départs Île");
+        headerRow.getCells().add("Departs City");
+        headerRow.getCells().add("Departs Island");
 
 
         for (Cell headerRowCell : (Iterable<? extends Cell>) headerRow.getCells())
@@ -167,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         document.save("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/sample.pdf");
 
         Toast toast = Toast.makeText(MainActivity.this,
-                "Le document PDF a été généré !", Toast.LENGTH_LONG);
+                "PDF document has been generated!", Toast.LENGTH_LONG);
         toast.show();
     }
 
@@ -183,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
 }
 ```
-
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
