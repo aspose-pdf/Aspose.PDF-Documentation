@@ -1,11 +1,11 @@
 ---
-title: Convert PDF to text
-linktitle: Convert PDF to text
+title: Преобразовать PDF в текст
+linktitle: Преобразовать PDF в текст
 type: docs
 weight: 120
 url: /ru/androidjava/convert-pdf-to-txt/
-lastmod: "2021-06-05"
-description: С помощью Aspose.PDF для Android через Java вы можете конвертировать весь PDF-документ в текстовый файл или конвертировать только страницу PDF в текстовый файл.
+lastmod: "2026-07-01"
+description: С помощью Aspose.PDF for Android via Java вы можете преобразовать весь документ PDF в текстовый файл или преобразовать только страницу PDF в текстовый файл.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,15 +18,15 @@ sitemap:
 
 {{% /alert %}}
 
-## Конвертировать страницу PDF в текстовый файл
+## Преобразовать страницу PDF в текстовый файл
 
-Вы можете конвертировать PDF-документ в TXT файл с помощью Aspose.PDF для Android через Java. Вы должны использовать метод Visit класса [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) для решения этой задачи.
+Вы можете преобразовать документ PDF в файл TXT с помощью Aspose.PDF for Android via Java. Вам следует использовать метод Visit [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) класс для решения этой задачи.
 
 Следующий фрагмент кода объясняет, как извлечь текст с определённых страниц.
 
 ```java
 public void convertPDFPagesToTXT() {
-        // Открыть документ
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -42,7 +42,7 @@ public void convertPDFPagesToTXT() {
         }
         File txtFileName = new File(fileStorage, "PDF-to-Text.txt");
 
-        // Сохранить извлеченный текст в текстовом файле
+        // Save the extracted text in text file
         BufferedWriter writer;
         try {
             writer = new BufferedWriter(new FileWriter(txtFileName));
@@ -56,3 +56,4 @@ public void convertPDFPagesToTXT() {
         resultMessage.setText(R.string.success_message);
     }
 ```
+

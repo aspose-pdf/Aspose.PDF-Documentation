@@ -1,36 +1,35 @@
 ---
-title: PDFをExcelに変換する
-linktitle: PDFをExcelに変換する
+title: PDF を Excel に変換
+linktitle: PDF を Excel に変換
 type: docs
 weight: 90
 url: /ja/androidjava/convert-pdf-to-excel/
-lastmod: "2021-06-05"
-description: Aspose.PDF for Android via JavaはPDFをExcel形式に変換することができます。この際、PDFファイルの個々のページがExcelのワークシートに変換されます。
+lastmod: "2026-07-01"
+description: Aspose.PDF for Android via Java は、PDF を Excel 形式に変換できるようにします。この際、PDF ファイルの個々のページが Excel のワークシートに変換されます。
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Aspose.PDF for Android via Java APIを使用すると、PDFファイルをExcelの[XLS](https://docs.fileformat.com/spreadsheet/xls/)および[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)ファイル形式にレンダリングできます。既存のExcelワークブックを作成および操作する機能を提供する別のAPIである[Aspose.Cells for Java](https://products.aspose.com/cells/java)もあります。また、ExcelワークブックをPDF形式に変換する機能も提供しています。
+Aspose.PDF for Android via Java API を使用すると、PDF ファイルを Excel にレンダリングできます。 [XLS](https://docs.fileformat.com/spreadsheet/xls/) そして [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) ファイル形式です。すでに別の API があり、その名前は [Aspose.Cells for Java](https://products.aspose.com/cells/java), 既存のExcelワークブックを作成および操作する機能を提供します。\u00A0ExcelワークブックをPDF形式に変換する機能も提供します。
 
 {{% alert color="primary" %}}
 
-オンラインで試してみてください。
- Aspose.PDF の変換品質を確認し、オンラインで結果を表示するには、このリンクをクリックしてください [products.aspose.app/pdf/conversion/pdf-to-xlsx](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+オンラインでお試しください。Aspose.PDF 変換の品質を確認し、結果をオンラインでこのリンクから表示できます。 [products.aspose.app/pdf/conversion/pdf-to-xlsx](https://products.aspose.app/pdf/conversion/pdf-to-xlsx) 
 
 {{% /alert %}}
 
-## PDF を Excel XLS に変換
+## PDFをExcel XLSに変換
 
-PDF ファイルを XLS 形式に変換するには、Aspose.PDF には [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) というクラスがあります。[ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) クラスのオブジェクトは、Document.Save(..) コンストラクタの第 2 引数として渡されます。
+PDFファイルをXLS形式に変換するには、Aspose.PDFにクラスがあります [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). オブジェクトは [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) クラスは、 Document.Save(..) コンストラクタへの第2引数として渡されます。 
 
-PDF ファイルを XLSX 形式に変換することは、Aspose.PDF for Java 18.6 バージョンのライブラリの一部です。PDF ファイルを XLSX 形式に変換するには、[ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) クラスの setFormat() メソッドを使用して形式を XLSX に設定する必要があります。
+PDF ファイルを XLSX 形式に変換することは、Aspose.PDF for Java 18.6 バージョンのライブラリの一部です。PDF ファイルを XLSX 形式に変換するには、setFormat() メソッドを使用して形式を XLSX に設定する必要があります。 [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) クラス。
 
-以下のコードスニペットは、PDF ファイルを xls および .xlsx 形式に変換する方法を示しています。
+以下のコードスニペットは、PDFファイルをxlsおよび.xlsx形式に変換する方法を示しています:
 
 ```java
 public void convertPDFtoExcelSimple() {
-        // ソース PDF ドキュメントを開く
+        // Open the source PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -38,12 +37,12 @@ public void convertPDFtoExcelSimple() {
             return;
         }
 
-        // ExcelSave Option オブジェクトをインスタンス化
+        // Instantiate ExcelSave Option object
         ExcelSaveOptions saveOptions = new ExcelSaveOptions();
 
         File xlsFileName = new File(fileStorage, "PDF-to-Excel.xlsx");
         try {
-            // ファイルを MS ドキュメント形式で保存
+            // Save the file into MS document format
             document.save(xlsFileName.toString(), SaveFormat.Excel);
         }
         catch (Exception e) {
@@ -54,13 +53,13 @@ public void convertPDFtoExcelSimple() {
     }
 ```
 
-## PDFをXLSに変換して列を制御する
+## Control Column を使用して PDF を XLS に変換
 
-PDFをXLS形式に変換する際、出力ファイルの最初の列として空白の列が追加されます。[ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) クラスの InsertBlankColumnAtFirst オプションはこの列を制御するために使用されます。デフォルト値は true です。
+PDF を XLS 形式に変換する際、出力ファイルの最初の列として空白列が追加されます。The in [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) class InsertBlankColumnAtFirst オプションはこの列を制御するために使用されます。そのデフォルト値は true です。
 
 ```java
 public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
-        // ソースPDFドキュメントを開く
+        // Open the source PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -68,13 +67,13 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
             return;
         }
 
-        // ExcelSave Optionオブジェクトをインスタンス化
+        // Instantiate ExcelSave Option object
         ExcelSaveOptions excelSaveOptions = new ExcelSaveOptions();
         excelSaveOptions.setInsertBlankColumnAtFirst(false);
 
         File xlsFileName = new File(fileStorage, "PDF-to-Excel.xlsx");
         try {
-            // ファイルをMSドキュメント形式で保存
+            // Save the file into MS document format
             document.save(xlsFileName.toString(), excelSaveOptions);
         }
         catch (Exception e) {
@@ -85,14 +84,13 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
     }
 ```
 
+## PDF を単一の Excel ワークシートに変換 
 
-## PDFを単一のExcelワークシートに変換
-
-ページ数の多いPDFファイルをXLSにエクスポートする場合、各ページはExcelファイルの異なるシートにエクスポートされます。これは、MinimizeTheNumberOfWorksheetsプロパティがデフォルトでfalseに設定されているためです。出力Excelファイルで全ページを単一のシートにエクスポートするには、MinimizeTheNumberOfWorksheetsプロパティをtrueに設定します。
+ページ数の多い PDF ファイルを XLS にエクスポートする場合、各ページが Excel ファイル内の別々のシートにエクスポートされます。これは、デフォルトで MinimizeTheNumberOfWorksheets プロパティが false に設定されているためです。すべてのページを出力 Excel ファイルの 1 つのシートにエクスポートするには、MinimizeTheNumberOfWorksheets プロパティを true に設定してください。
 
 ```java
  public void convertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets() {
-        // ソースPDFドキュメントを開く
+        // Open the source PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -100,14 +98,14 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
             return;
         }
 
-        // ExcelSave Optionオブジェクトをインスタンス化
+        // Instantiate ExcelSave Option object
         ExcelSaveOptions excelSaveOptions = new ExcelSaveOptions();
         excelSaveOptions.setMinimizeTheNumberOfWorksheets(true);
 
-        // 出力をXLSXで保存
+        // Save the output in XLSX
         File xlsFileName = new File(fileStorage, "PDF-to-Excel.xlsx");
         try {
-            // MS Excel形式でファイルを保存
+            // Save the file into MS Excel format
             document.save(xlsFileName.toString(), excelSaveOptions);
         }
         catch (Exception e) {
@@ -119,14 +117,13 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
 
 ```
 
+## XLSX 形式に変換 
 
-## XLSX形式に変換する
-
-デフォルトでAspose.PDFはデータを保存するためにXML Spreadsheet 2003を使用します。PDFファイルをXLSX形式に変換するために、Aspose.PDFにはFormatを持つExcelSaveOptionsというクラスがあります。[ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions)クラスのオブジェクトは、Document.Save(..)メソッドの第二引数として渡されます。
+既定では Aspose.PDF はデータの保存に XML Spreadsheet 2003 を使用します。PDF ファイルを XLSX 形式に変換するために、Aspose.PDF には Format プロパティを持つ ExcelSaveOptions というクラスがあります。そのクラスのオブジェクトは [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) クラスは Document.Save(..) メソッドの第二引数として渡されます。
 
 ```java
  public void convertPDFtoExcelAdvanced_SaveCSV() {
-        // PDFドキュメントをロード
+        // Load PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -134,14 +131,14 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
             return;
         }
 
-        // ExcelSave Optionオブジェクトをインスタンス化
+        // Instantiate ExcelSave Option object
         ExcelSaveOptions excelSaveOptions = new ExcelSaveOptions();
         excelSaveOptions.setFormat(ExcelSaveOptions.ExcelFormat.CSV);
 
-        // 出力をCSVで保存
+        // Save the output in CSV
         File xlsFileName = new File(fileStorage, "PDF-to-Excel.csv");
         try {
-            // ファイルをCSV形式で保存
+            // Save the file into CSV format
             document.save(xlsFileName.toString(), excelSaveOptions);
         }
         catch (Exception e) {

@@ -1,36 +1,33 @@
 ---
-title: Извлечение данных таблицы из PDF
-linktitle: Извлечение данных таблицы
+title: Извлечь табличные данные из PDF
+linktitle: Извлечь табличные данные
 type: docs
 weight: 40
 url: /ru/androidjava/extract-data-from-table-in-pdf/
-description: Узнайте, как извлечь табличные данные из PDF с использованием Aspose.PDF для Android через Java.
-lastmod: "2021-06-05"
+description: Узнайте, как извлекать табличные данные из PDF с помощью Aspose.PDF for Android via Java.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-## Извлечение таблиц из PDF программно
+## Извлекать таблицы из PDF программно
 
-Извлечение таблиц из PDF не является тривиальной задачей, так как таблица может быть создана различными способами.
+Извлечение таблиц из PDF не является тривиальной задачей, поскольку таблица может быть создана различными способами.
 
-Aspose.PDF для Android через Java имеет инструмент, который облегчает извлечение таблиц. Чтобы извлечь данные таблицы, выполните следующие шаги:
+Aspose.PDF for Android via Java имеет инструмент, упрощающий извлечение таблиц. Чтобы извлечь данные таблицы, вам следует выполнить следующие шаги:
 
-1. Откройте документ - создайте объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document);
-1. Создайте объект [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber).
-
-1. Определите, какие страницы необходимо анализировать, и примените [visit](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) к нужным страницам. Табличные данные будут отсканированы, и результат будет сохранен в список [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). Мы можем получить этот список с помощью метода [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--).
-
-1. Чтобы получить данные, итерации выполняются через `TableList` и обрабатывается список [absorbed rows](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) и список поглощенных ячеек. Мы можем получить доступ к первому списку, вызвав метод [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--), а ко второму, вызвав метод [getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
-
-1. Каждый [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) содержит [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). Вы можете обрабатывать его для своих собственных целей.
+1. Откройте документ - создайте экземпляр [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object;
+1. Создайте [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber) объект.
+1. Определите, какие страницы следует проанализировать, и примените [посетить](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) к желаемым страницам. Табличные данные будут просканированы, и результат будет сохранён в список [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). Мы можем получить этот список через [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) метод.
+1. Чтобы получить данные, пройдите `TableList` и обработать список [поглощённые строки](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) и список поглощённых ячеек. Мы можем получить доступ к первому списку, вызвав [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) метод и ко второму, вызвав [getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
+1. Каждый [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) содержит [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). Вы можете использовать его в своих целях.
 
 Следующий пример показывает извлечение таблицы со всех страниц:
 
 ```java
 public void extractTable () {
-        // Открыть документ
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -51,16 +48,16 @@ public void extractTable () {
         }
 
         BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(fileOutputStream));
-        // Сканировать страницы
+        // Scan pages
         for (Page page : (Iterable<? extends Page>) document.getPages()) {
             absorber.visit(page);
             for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
                 try {
-                    bw.write("Таблица");
+                    bw.write("Table");
                     bw.newLine();
-                    // Перебрать список строк
+                    // Iterate through list of rows
                     for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                        // Перебрать список ячеек
+                        // Iterate through list of cell
                         for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
                             for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
                                 StringBuilder sb=new StringBuilder();
@@ -88,18 +85,17 @@ public void extractTable () {
     }
 ```
 
+## Извлечь таблицу в определённой области страницы PDF
 
-## Извлечение таблицы в определенной области страницы PDF
+У каждой поглощённой таблицы есть [Rectangle](https://reference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rectangle) свойство, которое описывает положение таблицы на странице.
 
-Каждая поглощенная таблица имеет свойство [Rectangle](https://reference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rectangle), которое описывает положение таблицы на странице.
+Итак, если вам нужно извлечь таблицы, расположенные в определённом регионе, вам придётся работать с конкретными координатами.
 
-Итак, если вам нужно извлечь таблицы, расположенные в определенном регионе, вам нужно работать с определенными координатами.
-
-Следующий пример показывает, как извлечь таблицу, помеченную квадратной аннотацией:
+Следующий пример показывает, как извлечь таблицу, отмеченную квадратной аннотацией:
 
 ```java
 public void extractMarkedTable () {
-        // Открыть документ
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -114,7 +110,7 @@ public void extractMarkedTable () {
 
         List list=annotationSelector.getSelected();
         if (list.size() == 0) {
-            resultMessage.setText("Помеченные таблицы не найдены..");
+            resultMessage.setText("Marked tables not found..");
             return;
         }
 
@@ -144,7 +140,7 @@ public void extractMarkedTable () {
 
                     BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(fileOutputStream));
                     try {
-                        //Разбор таблицы
+                        //Parse table
                         for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
                             {
                                 for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
@@ -170,14 +166,14 @@ public void extractMarkedTable () {
     }
 ```
 
+## Извлечь данные таблицы из PDF и сохранить их в файл CSV
 
-## Извлечение данных таблицы из PDF и сохранение в CSV файл
-
-Следующий пример показывает, как извлечь таблицу и сохранить её как CSV файл. Чтобы узнать, как конвертировать PDF в таблицу Excel, пожалуйста, обратитесь к статье [Конвертация PDF в Excel](/pdf/ru/java/convert-pdf-to-excel/).
+В следующем примере показано, как извлечь таблицу и сохранить её в файл CSV.
+Чтобы увидеть, как преобразовать PDF в таблицу Excel, пожалуйста, обратитесь к [Преобразовать PDF в Excel](/pdf/ru/java/convert-pdf-to-excel/) статья.
 
 ```java
  public void extractTableSaveCSV () {
-        // Открыть документ
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -186,7 +182,7 @@ public void extractMarkedTable () {
         }
 
         File file=new File(fileStorage, "PDFToXLS_out.csv");
-        // Создать объект параметров сохранения Excel
+        // Instantiate ExcelSave Option object
         com.aspose.pdf.ExcelSaveOptions excelSave=new com.aspose.pdf.ExcelSaveOptions();
         excelSave.setFormat(com.aspose.pdf.ExcelSaveOptions.ExcelFormat.CSV);
         try {
@@ -198,3 +194,5 @@ public void extractMarkedTable () {
         resultMessage.setText(R.string.success_message);
     }
 ```
+
+

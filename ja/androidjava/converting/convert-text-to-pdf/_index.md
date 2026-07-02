@@ -1,11 +1,11 @@
 ---
-title: テキストをPDFに変換
-linktitle: テキストをPDFに変換
+title: テキストを PDF に変換
+linktitle: テキストを PDF に変換
 type: docs
 weight: 300
 url: /ja/androidjava/convert-text-to-pdf/
-lastmod: "2021-06-05"
-description: Aspose.PDF for Android via Javaを使用すると、プレーンテキストファイルをPDFに変換したり、事前にフォーマットされたテキストファイルをPDFに変換したりできます。
+lastmod: "2026-07-01"
+description: Aspose.PDF for Android via Java を使用すると、プレーンテキストファイルを PDF に変換したり、事前にフォーマットされたテキストファイルを PDF に変換したりできます。
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,28 +13,27 @@ sitemap:
 
 {{% alert color="primary" %}} 
 
-オンラインで試すことができます。Aspose.PDFの変換品質を確認し、結果をオンラインで表示できます。このリンクで確認できます [products.aspose.app/pdf/conversion/txt-to-pdf](https://products.aspose.app/pdf/conversion/txt-to-pdf)
+オンラインで試してください。Aspose.PDF の変換品質を確認し、結果をオンラインでこのリンクで表示できます。 [products.aspose.app/pdf/conversion/txt-to-pdf](https://products.aspose.app/pdf/conversion/txt-to-pdf)
 
 {{% /alert %}}
 
-**Aspose.PDF for Android via Java** は、テキストファイルをPDF形式に変換する機能を提供します。この記事では、Aspose.PDFを使用してテキストファイルをPDFにどれほど簡単かつ効率的に変換できるかを示します。
+**Aspose.PDF for Android via Java** は、テキストファイルを PDF 形式に変換する機能を提供します。本記事では、Aspose.PDF を使用してテキストファイルを PDF に簡単かつ効率的に変換する方法を示します。
 
-テキストファイルをPDFに変換する必要がある場合、最初にソースのテキストファイルを何らかのリーダーで読み込みます。
- StringBuilderを使用してテキストファイルの内容を読み込みました。Documentオブジェクトをインスタンス化し、Pagesコレクションに新しいページを追加します。TextFragmentの新しいオブジェクトを作成し、そのコンストラクタにStringBuilderオブジェクトを渡します。TextFragmentオブジェクトを使用してParagraphsコレクションに新しい段落を追加し、DocumentクラスのSaveメソッドを使用して結果のPDFファイルを保存します。
+テキストファイルを PDF に変換する必要がある場合、まず何らかのリーダーでソースのテキストファイルを読み取ります。テキストファイルの内容を読み取るために StringBuilder を使用しました。Document オブジェクトをインスタンス化し、Pages コレクションに新しいページを追加します。TextFragment の新しいオブジェクトを作成し、コンストラクタに StringBuilder オブジェクトを渡します。TextFragment オブジェクトを使用して Paragraphs コレクションに新しい段落を追加し、Document クラスの Save メソッドで生成された PDF ファイルを保存します。
 
-## プレーンテキストファイルをPDFに変換
+## プレーンテキストファイルを PDF に変換する
 
 ```java
 public void convertTXTtoPDF_Simple () {
-        // ドキュメントオブジェクトを初期化
+        // Initialize document object
 
         File pdfDocumentFileName=new File(fileStorage, "demo_txt.pdf");
         File txtDocumentFileName=new File(fileStorage, "Conversion/rfc822.txt");
 
-        // 空のコンストラクタを呼び出してDocumentオブジェクトをインスタンス化
+        // Instantiate a Document object by calling its empty constructor
         document=new Document();
 
-        // DocumentのPagesコレクションに新しいページを追加
+        // Add a new page in Pages collection of Document
         Page page=document.getPages().add();
 
         String string;
@@ -64,14 +63,15 @@ public void convertTXTtoPDF_Simple () {
         }
 
 
-        // TextFragmentのインスタンスを作成し、readerオブジェクトからのテキストを引数として
-        // コンストラクタに渡す
+        // Create an instance of TextFragment and pass the text from reader object to its
+        // constructor as argument
         TextFragment text=new TextFragment(stringBuilder.toString());
 
-        // 段落コレクションに新しいテキスト段落を追加し、TextFragmentオブジェクトを渡す
+        // Add a new text paragraph in paragraphs collection and pass the TextFragment
+        // object
         page.getParagraphs().add(text);
 
-        // 結果のPDFファイルを保存
+        // Save resultant PDF file
         try {
             document.save(pdfDocumentFileName.toString());
         } catch (Exception e) {
@@ -83,7 +83,7 @@ public void convertTXTtoPDF_Simple () {
 
 ```
 
-## プレフォーマットされたテキストファイルをPDFに変換する
+## 事前にフォーマットされたテキストファイルをPDFに変換
 
 ```java
     public void convertPreFormattedTextToPdf () {
@@ -92,7 +92,7 @@ public void convertTXTtoPDF_Simple () {
         File pdfDocumentFileName=new File(fileStorage, "demo_txt.pdf");
         Path txtDocumentFileName=Paths.get(txtDocumentFile.toString());
 
-        // テキストファイルを文字列の配列として読み込む
+        // Read the text file as array of string
         List<String> lines;
         try {
             lines=Files.readAllLines(txtDocumentFileName, ENCODING);
@@ -101,23 +101,23 @@ public void convertTXTtoPDF_Simple () {
             return;
         }
 
-        // 空のコンストラクタを呼び出してDocumentオブジェクトをインスタンス化する
+        // Instantiate a Document object by calling its empty constructor
         document=new Document();
 
-        // DocumentのPagesコレクションに新しいページを追加する
+        // Add a new page in Pages collection of Document
         Page page=document.getPages().add();
         int count=4;
 
         Font font=FontRepository.findFont("Droid Sans Mono");
-        // より良いプレゼンテーションのために左右のマージンを設定する
+        // Set left and right margins for better presentation
         page.getPageInfo().getMargin().setLeft(20);
         page.getPageInfo().getMargin().setRight(10);
         page.getPageInfo().getDefaultTextState().setFont(font);
         page.getPageInfo().getDefaultTextState().setFontSize(12);
 
         for (String line : lines) {
-            // 行が「改ページ」文字を含むかどうかを確認する
-            // https://en.wikipedia.org/wiki/Page_break を参照
+            // check if line contains "form feed" character
+            // see https://en.wikipedia.org/wiki/Page_break
             if (line.startsWith("\f")) {
                 page=document.getPages().add();
                 page.getPageInfo().getMargin().setLeft(20);
@@ -125,15 +125,17 @@ public void convertTXTtoPDF_Simple () {
                 page.getPageInfo().getDefaultTextState().setFont(font);
                 page.getPageInfo().getDefaultTextState().setFontSize(12);
             } else {
-                // TextFragmentのインスタンスを作成し、
-                // そのコンストラクタに行を引数として渡す
+                // Create an instance of TextFragment and
+                // pass the line to its
+                // constructor as argument
                 TextFragment text=new TextFragment(line);
 
-                // 段落コレクションに新しいテキスト段落を追加し、TextFragmentオブジェクトを渡す
+                // Add a new text paragraph in paragraphs collection and pass the TextFragment
+                // object
                 page.getParagraphs().add(text);
             }
         }
-        // 結果のPDFファイルを保存する
+        // Save resultant PDF file
         try {
             document.save(pdfDocumentFileName.toString());
         } catch (Exception e) {
@@ -144,3 +146,6 @@ public void convertTXTtoPDF_Simple () {
     }
 
 ```
+
+
+

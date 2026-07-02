@@ -1,41 +1,40 @@
 ---
-title: 複雑なPDFをAspose.PDFで作成する
-linktitle: 複雑なPDFを作成する
+title: Aspose.PDF を使用して複雑な PDF を作成する
+linktitle: 複雑な PDF を作成する
 type: docs
 weight: 30
 url: /ja/androidjava/complex-pdf-example/
-description: Aspose.PDF for Android via Javaを使用すると、1つのドキュメントに画像、テキストフラグメント、テーブルを含むより複雑なドキュメントを作成できます。
-lastmod: "2021-06-05"
+description: Aspose.PDF for Android via Java は、画像、テキストフラグメント、テーブルを 1 つの文書に含む、より複雑な文書を作成できるようにします。
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-[Hello, World](/pdf/ja/java/hello-world-example/) の例では、JavaとAspose.PDFを使用してPDFドキュメントを作成する簡単なステップを示しました。この記事では、JavaとAspose.PDF for Javaを使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、架空の会社が運営する旅客フェリーサービスのドキュメントを取り上げます。
-私たちのドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを作成するために、DOMベースのアプローチを使用します。詳細は、[DOM APIの基本](/pdf/ja/java/basics-of-dom-api/)のセクションで読むことができます。
+その [こんにちは、世界](/pdf/ja/java/hello-world-example/) 例では、Java と Aspose.PDF を使用して PDF ドキュメントを作成する簡単な手順を示しました。この記事では、Java と Aspose.PDF for Java を使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを使用します。
+ドキュメントには画像 1 枚、2 つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。そのようなドキュメントを作成するには、DOM ベースのアプローチを使用します。詳細はセクションをご参照ください。 [DOM API の基本](/pdf/ja/java/basics-of-dom-api/).
 
-ドキュメントをゼロから作成する場合、特定の手順に従う必要があります：
+最初からドキュメントを作成する場合、特定の手順に従う必要があります:
 
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) オブジェクトをインスタンス化します。このステップでは、メタデータはあるがページのない空のPDFドキュメントを作成します。
-1. ドキュメントオブジェクトに [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) を追加します。これで、ドキュメントには1ページが含まれます。
-1. 画像を追加するために、FileInputStreamを作成し、必要なファイルへのパスを指定します。次に、指定された座標の矩形に画像を追加します。
-1. ヘッダー用の [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) を作成します。ヘッダーには、フォントサイズ24ptのArialフォントと中央揃えを使用します。
-1. ヘッダーをページの [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--) に追加します。
-1. 説明用の [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) を作成します。説明には、フォントサイズ24ptのArialフォントと中央揃えを使用します。
+1. インスタンス化する [ドキュメント](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) object. このステップでは、メタデータはあるがページのない空の PDF ドキュメントを作成します。
+1. 追加 [ページ](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) ドキュメントオブジェクトに追加します。したがって、今、私たちのドキュメントは1ページになります。
+1. 画像を追加するために、FileInputStream を作成し、必要なファイルへのパスを指定します。その後、指定された座標の矩形に画像を追加します。
+1. 作成する [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) ヘッダー用です。ヘッダーには Arial フォントをフォントサイズ 24pt で、中央揃えで使用します。
+1. ページにヘッダーを追加する [段落](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. 作成する [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) 説明用です。説明には Arial フォントをフォントサイズ 24pt、センター揃えで使用します。
+1. ページの段落に (description) を追加します。サンプルでは "Helvetica" と "Times Roman" フォントを使用しましたが、Android にはシステム全体で利用できるフォントが 3 つしかないことに注意してください：
 
-1. ページの段落に（説明）を追加します。例では「Helvetica」と「Times Roman」フォントを使用しましたが、Androidにはシステム全体で使用できるフォントが3つしかないことを忘れないでください。
-
-- normal (Droid Sans);
-- serif (Droid Serif);
-- monospace (Droid Sans Mono).
+- 標準 (Droid Sans);
+- セリフ (Droid Serif);
+- 等幅 (Droid Sans Mono).
 
 1. テーブルを作成し、テーブルのプロパティを追加します。
-1. ページに（テーブル）を[段落](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--)として追加します。
-1. ドキュメントを「Complex.pdf」として保存します。
+1. ページに (table) を追加 [段落](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--).
+1. ドキュメント "Complex.pdf" を保存します。
 
-最後に、「PDFドキュメントが生成されました！」というメッセージのポップアップが表示されます。
+最後に、メッセージ「PDF document has been generated!」というポップアップが表示されます。
 
-![Aspose.PDFの複雑な例（Java経由のAndroid）](complex_example.png)
+![Android 用 Aspose.PDF の Java 経由の複雑な例](complex_example.png)
 
 ```java
 package com.aspose.pdf.examplecomplex;
@@ -93,13 +92,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void RunComplexExample() {
-        // ドキュメントオブジェクトを初期化
+        // Initialize document object
         Document document = new Document();
 
-        // ページを追加
+        // Add page
         Page page = document.getPages().add();
 
-        // 画像を追加
+        // Add image
         java.io.FileInputStream imageStream = null;
         try {
             imageStream = new FileInputStream("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/logo.png");
@@ -107,20 +106,21 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // 画像をページに追加
+        // Add image to the page
         page.addImage(imageStream, new Rectangle(20, 730, 120, 830));
 
-        // ヘッダーを追加
-        TextFragment header = new TextFragment("2020年秋の新しいフェリー路線");
+        // Add Header
+        TextFragment header = new TextFragment("New ferry routes in Fall 2020");
         header.getTextState().setFont(FontRepository.findFont("Helvetica"));
         header.getTextState().setFontSize(24);
         header.setHorizontalAlignment (HorizontalAlignment.Center);
         header.setPosition(new Position(130, 720));
         page.getParagraphs().add(header);
 
-        // 説明を追加
-        String descriptionText = "訪問者はオンラインでチケットを購入する必要があり、チケットは1日あたり5,000枚に制限されています。フェリーサービスは半分の容量で運行されており、" +
-                "スケジュールが削減されています。行列が予想されます。";
+        // Add description
+        String descriptionText = "Visitors must buy tickets online and tickets are " +
+                "limited to 5,000 per day. Ferry service is operating at half capacity and" +
+                " on a reduced schedule. Expect lineups.";
 
         TextFragment description = new TextFragment(descriptionText);
         description.getTextState().setFont(FontRepository.findFont("Helvetica"));
@@ -128,7 +128,8 @@ public class MainActivity extends AppCompatActivity {
         description.setHorizontalAlignment(HorizontalAlignment.Left);
         page.getParagraphs().add(description);
 
-        // テーブルを追加
+
+        // Add table
         Table table = new Table();
         table.setColumnWidths("200");
         table.setBorder(new BorderInfo(BorderSide.Box, 1f, Color.getDarkSlateGray()));
@@ -137,8 +138,9 @@ public class MainActivity extends AppCompatActivity {
         table.getDefaultCellTextState().setFont(FontRepository.findFont("Times Roman"));
 
         Row headerRow = table.getRows().add();
-        headerRow.getCells().add("出発都市");
-        headerRow.getCells().add("出発島");
+        headerRow.getCells().add("Departs City");
+        headerRow.getCells().add("Departs Island");
+
 
         for (Cell headerRowCell : (Iterable<? extends Cell>) headerRow.getCells())
         {
@@ -163,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         document.save("/storage/0F03-0F02/Android/data/com.aspose.pdf.examplecomplex/files/MyFileStorage/sample.pdf");
 
         Toast toast = Toast.makeText(MainActivity.this,
-                "PDFドキュメントが生成されました！", Toast.LENGTH_LONG);
+                "PDF document has been generated!", Toast.LENGTH_LONG);
         toast.show();
     }
 
@@ -179,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
 }
 ```
-
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

@@ -4,12 +4,13 @@ linktitle: Convertir PDF a texto
 type: docs
 weight: 120
 url: /es/androidjava/convert-pdf-to-txt/
-lastmod: "2021-06-05"
-description: Con Aspose.PDF para Android a través de Java puedes convertir un documento PDF completo a un archivo de texto o convertir solo una página PDF a un archivo de texto.
+lastmod: "2026-06-30"
+description: Con Aspose.PDF for Android via Java puedes convertir un documento PDF completo a un archivo de texto o convertir solo una página PDF a un archivo de texto.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+
 
 {{% alert color="primary" %}} 
 
@@ -19,13 +20,13 @@ Prueba en línea. Puedes comprobar la calidad de la conversión de Aspose.PDF y 
 
 ## Convertir página PDF a archivo de texto
 
-Puedes convertir un documento PDF a un archivo TXT con Aspose.PDF para Android a través de Java. Debes utilizar el método Visit de la clase [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) para resolver esta tarea.
+Puede convertir un documento PDF a un archivo TXT con Aspose.PDF for Android mediante Java. Debe usar el método Visit de [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) clase para resolver esta tarea.
 
-El siguiente fragmento de código explica cómo extraer los textos de las páginas particulares.
+El siguiente fragmento de código explica cómo extraer los textos de las páginas específicas.
 
 ```java
 public void convertPDFPagesToTXT() {
-        // Abrir documento
+        // Open document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -41,7 +42,7 @@ public void convertPDFPagesToTXT() {
         }
         File txtFileName = new File(fileStorage, "PDF-to-Text.txt");
 
-        // Guardar el texto extraído en un archivo de texto
+        // Save the extracted text in text file
         BufferedWriter writer;
         try {
             writer = new BufferedWriter(new FileWriter(txtFileName));
@@ -55,3 +56,4 @@ public void convertPDFPagesToTXT() {
         resultMessage.setText(R.string.success_message);
     }
 ```
+

@@ -1,38 +1,37 @@
 ---
-title: Mengubah PDF ke BMP
-linktitle: Mengubah PDF ke BMP
+title: Konversi PDF ke BMP
+linktitle: Konversi PDF ke BMP
 type: docs
 weight: 40
 url: /id/androidjava/convert-pdf-to-bmp/
-lastmod: "2021-06-05"
-description: Artikel ini menjelaskan cara mengubah Halaman PDF ke gambar BMP, mengubah semua Halaman ke gambar BMP dan mengubah satu halaman PDF ke gambar BMP dengan Java.
+lastmod: "2026-07-01"
+description: Artikel ini menjelaskan cara mengonversi Halaman PDF ke gambar BMP, mengonversi semua Halaman ke gambar BMP, dan mengonversi satu halaman PDF menjadi gambar BMP dengan Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Kelas [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) memungkinkan Anda untuk mengubah halaman PDF menjadi gambar <abbr title="Bitmap Image File">BMP</abbr>. Kelas ini menyediakan metode bernama [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) yang memungkinkan Anda untuk mengubah halaman tertentu dari file PDF ke format gambar BMP.
+The [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) kelas memungkinkan Anda mengonversi halaman PDF menjadi <abbr title="Bitmap Image File">BMP</abbr> gambar. Kelas ini menyediakan metode bernama [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) yang memungkinkan Anda mengonversi halaman tertentu dari file PDF ke format gambar Bmp.
 
 {{% alert color="primary" %}}
 
-Coba online. Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online di tautan ini [products.aspose.app/pdf/conversion/pdf-to-bmp](https://products.aspose.app/pdf/conversion/pdf-to-bmp)
+Coba secara daring. Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara daring di tautan ini [products.aspose.app/pdf/conversion/pdf-to-bmp](https://products.aspose.app/pdf/conversion/pdf-to-bmp)
 
 {{% /alert %}}
 
-Kelas BmpDevice memungkinkan Anda untuk mengubah halaman PDF menjadi gambar BMP.
- Kelas ini menyediakan metode bernama process(..) yang memungkinkan Anda untuk mengubah halaman tertentu dari file PDF menjadi gambar BMP.
+Kelas BmpDevice memungkinkan Anda mengonversi halaman PDF ke gambar BMP. Kelas ini menyediakan metode bernama process(..) yang memungkinkan Anda mengonversi halaman tertentu dari file PDF ke gambar BMP.
 
-## Mengonversi Halaman PDF ke Gambar BMP
+## Mengonversi Halaman PDF menjadi Gambar BMP
 
-Untuk mengonversi halaman PDF ke gambar BMP:
+Untuk mengonversi halaman PDF menjadi gambar BMP:
 
-1. Buat objek dari kelas Document, untuk mendapatkan halaman tertentu yang ingin Anda konversi.
-2. Panggil metode process(..) untuk mengonversi halaman ke BMP.
+1. Buat sebuah objek dari kelas Document, untuk mendapatkan halaman tertentu yang ingin Anda konversi.
+1. Panggil metode process(..) untuk mengonversi halaman menjadi BMP.
 
-Cuplikan kode berikut menunjukkan kepada Anda cara mengonversi halaman tertentu ke gambar BMP.
+Potongan kode berikut menunjukkan cara mengonversi halaman tertentu ke gambar BMP.
 
 ```java
-//Mengonversi PDF ke BMP
+//Convert PDF to BMP
     public void convertPDFtoBMP() {
         try {
             document = new Document(inputStream);
@@ -41,21 +40,21 @@ Cuplikan kode berikut menunjukkan kepada Anda cara mengonversi halaman tertentu 
             return;
         }
         File file = new File(fileStorage, "PDF-to-BMP.bmp");
-        // Buat objek stream untuk menyimpan gambar keluaran
+        // Create stream object to save the output image
         try {
             OutputStream imageStream =
                     new FileOutputStream(file.toString());
 
-            // Buat objek Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
 
-            // Buat objek BmpDevice dengan resolusi tertentu
+            // Create BmpDevice object with particular resolution
             BmpDevice BmpDevice = new BmpDevice(resolution);
 
-            // Konversi halaman tertentu dan simpan gambar ke stream
+            // Convert a particular page and save the image to stream
             BmpDevice.process(document.getPages().get_Item(1), imageStream);
 
-            // Tutup stream
+            // Close the stream
             imageStream.close();
             resultMessage.setText(file.toString());
         } catch (IOException e) {
@@ -64,9 +63,9 @@ Cuplikan kode berikut menunjukkan kepada Anda cara mengonversi halaman tertentu 
     }
 ```
 
-## Mengubah Semua Halaman PDF ke Gambar BMP
+## Konversi Semua Halaman PDF ke Gambar BMP
 
-Untuk mengubah semua halaman file PDF ke format BMP, Anda perlu mengiterasi untuk mendapatkan setiap halaman individu dan mengonversinya ke format BMP. Cuplikan kode berikut menunjukkan kepada Anda cara menelusuri semua halaman file PDF dan mengonversinya ke BMP.
+Untuk mengonversi semua halaman file PDF ke format BMP, Anda perlu mengiterasi untuk mendapatkan masing-masing halaman secara individual dan mengonversinya ke format BMP. Potongan kode berikut menunjukkan cara menelusuri semua halaman file PDF dan mengonversinya ke BMP.
 
 ```java
 public void convertPDFtoBMP_AllPages() {
@@ -77,9 +76,9 @@ public void convertPDFtoBMP_AllPages() {
             return;
         }
 
-        // Loop melalui semua halaman file PDF
+        // Loop through all the pages of PDF file
         for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
-            // Buat objek stream untuk menyimpan gambar keluaran
+            // Create stream object to save the output image
             File file = new File(fileStorage, "PDF-to-BMP"+pageCount+".BMP");
             java.io.OutputStream imageStream;
             try {
@@ -89,15 +88,15 @@ public void convertPDFtoBMP_AllPages() {
                 return;
             }
 
-            // Buat objek Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
-            // Buat objek BmpDevice dengan resolusi tertentu
+            // Create BmpDevice object with particular resolution
             BmpDevice BmpDevice = new BmpDevice(resolution);
 
-            // Konversi halaman tertentu dan simpan gambar ke stream
+            // Convert a particular page and save the image to stream
             BmpDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
-            // Tutup stream
+            // Close the stream
             try {
                 imageStream.close();
             } catch (Exception e) {
@@ -109,12 +108,11 @@ public void convertPDFtoBMP_AllPages() {
     }
 ```
 
+## Konversi wilayah halaman tertentu menjadi Gambar (DOM)
 
-## Konversi wilayah halaman tertentu ke Gambar (DOM)
+Kami dapat mengonversi dokumen PDF ke berbagai format Image menggunakan objek perangkat image dari Aspose.PDF. Namun terkadang ada kebutuhan untuk mengonversi wilayah halaman tertentu ke format Image. Kami dapat memenuhi kebutuhan ini dalam dua langkah. Pertama, memotong halaman PDF ke wilayah yang diinginkan dan kemudian mengonversinya ke gambar menggunakan objek perangkat Image yang diinginkan.
 
-Kita dapat mengonversi dokumen PDF ke berbagai format Gambar menggunakan objek perangkat gambar dari Aspose.PDF. Namun, terkadang ada kebutuhan untuk mengonversi wilayah halaman tertentu ke format Gambar. Kita dapat memenuhi kebutuhan ini dalam dua langkah. Pertama, potong halaman PDF ke wilayah yang diinginkan dan kemudian konversi ke gambar menggunakan objek perangkat Gambar yang diinginkan.
-
-Cuplikan kode berikut menunjukkan kepada Anda cara mengonversi halaman PDF ke gambar.
+Potongan kode berikut menunjukkan cara mengonversi halaman PDF menjadi gambar.
 
 ```java
 public void convertPDFtoBmp_ParticularPageRegion() {
@@ -124,25 +122,25 @@ public void convertPDFtoBmp_ParticularPageRegion() {
             resultMessage.setText(e.getMessage());
             return;
         }
-        // Dapatkan persegi panjang dari wilayah halaman tertentu
+        // Get rectangle of particular page region
         //x=0,y=0, w=200, h=125;
         Rectangle pageRect = new Rectangle(0, 0, 200, 125);
-        // setel nilai CropBox sesuai dengan persegi panjang wilayah halaman yang diinginkan
+        // set CropBox value as per rectangle of desired page region
         document.getPages().get_Item(1).setCropBox(pageRect);
-        // simpan dokumen yang telah dipotong ke stream
+        // save cropped document into stream
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         document.save(outStream);
 
-        // buka dokumen PDF yang telah dipotong dari stream dan konversi ke gambar
+        // open cropped PDF document from stream and convert to image
         document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
-        // Buat objek Resolusi
+        // Create Resolution object
         Resolution resolution = new Resolution(300);
-        // Buat perangkat BMP dengan atribut yang ditentukan
+        // Create BMP device with specified attributes
         BmpDevice BmpDevice = new BmpDevice(resolution);
 
         File file = new File(fileStorage, "PDF-to-BMP.BMP");
         try {
-            // Konversi halaman tertentu dan simpan gambar ke stream
+            // Convert a particular page and save the image to stream
             BmpDevice.process(document.getPages().get_Item(1), file.toString());
         }
         catch (Exception e) {

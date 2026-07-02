@@ -4,8 +4,8 @@ linktitle: Convertir XML en PDF
 type: docs
 weight: 320
 url: /fr/androidjava/convert-xml-to-pdf/
-lastmod: "2021-06-05"
-description: La bibliothèque Aspose.PDF présente plusieurs façons de convertir XML en PDF. Vous pouvez utiliser les XslFoLoadOptions ou le faire avec une structure de fichier incorrecte.
+lastmod: "2026-07-01"
+description: La bibliothèque Aspose.PDF propose plusieurs manières de convertir XML en PDF. Vous pouvez utiliser XslFoLoadOptions ou le faire avec une structure de fichier incorrecte.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,17 +17,18 @@ Essayez en ligne. Vous pouvez vérifier la qualité de la conversion Aspose.PDF 
 
 {{% /alert %}}
 
-Le format XML est utilisé pour stocker des données structurées. Il existe plusieurs façons de convertir <abbr title="Extensible Markup Language">XML</abbr> en PDF dans Aspose.PDF.
+Le format XML utilisé pour stocker des données structurées. Il existe plusieurs façons de convertir <abbr title="Extensible Markup Language">XML</abbr> vers PDF dans Aspose.PDF.
 
-Considérez l'option d'utilisation d'un document XML basé sur la norme XSL-FO.
+Envisagez l'option d'utiliser un document XML basé sur la norme XSL-FO.
 
 ## Convertir XSL-FO en PDF
 
-La conversion de fichiers XSL-FO en PDF peut être mise en œuvre en utilisant l'objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) avec [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions), mais parfois vous pouvez rencontrer une structure de fichier incorrecte.
- 
-// Convertir XML en PDF
+La conversion des fichiers XSL-FO en PDF peut être implémentée à l'aide de [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) objet avec [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions),  mais parfois vous pouvez rencontrer une structure de fichier incorrecte. 
+
+```java
+// Convert XML to PDF
     public void convertXMLtoPDF() {
-        // Initialiser l'objet document
+        // Initialize document object
         String pdfDocumentFileName = new File(fileStorage,"XML-to-PDF.pdf").toString();
         String xmlDocumentFileName = new File(fileStorage,"Conversion/employees.xml").toString();
         String xsltDocumentFileName = new File(fileStorage, "Conversion/employees.xslt").toString();
@@ -35,7 +36,7 @@ La conversion de fichiers XSL-FO en PDF peut être mise en œuvre en utilisant l
         try {
             XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
             document = new Document(xmlDocumentFileName,options);
-            // Enregistrer le fichier PDF résultant
+            // Save resultant PDF file
             document.save(pdfDocumentFileName.toString());
         } catch (Exception e) {
             resultMessage.setText(e.getMessage());
@@ -44,3 +45,4 @@ La conversion de fichiers XSL-FO en PDF peut être mise en œuvre en utilisant l
         resultMessage.setText(R.string.success_message);
     }    
     ```
+    

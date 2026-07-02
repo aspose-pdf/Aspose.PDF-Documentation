@@ -1,11 +1,11 @@
 ---
-title: Hello World Java Example
-linktitle: Hello World Example
+title: مثال Hello World بلغة Java
+linktitle: مثال Hello World
 type: docs
 weight: 20
 url: /ar/androidjava/hello-world-example/
-description: هذه الصفحة تعرض كيفية استخدام البرمجة البسيطة لإنشاء مستند PDF يحتوي على نص - Hello World باستخدام Aspose.PDF لنظام Android.
-lastmod: "2021-08-05"
+description: تُظهر هذه الصفحة كيفية استخدام برمجة بسيطة لإنشاء مستند PDF يحتوي على نص - Hello World باستخدام Aspose.PDF for Android.
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,20 +13,20 @@ sitemap:
 
 ## مثال Hello World
 
-يستخدم عادةً مثال "Hello World" لتعريف ميزات لغة البرمجة أو البرنامج من خلال حالة استخدام بسيطة.
+يُستخدم مثال \"Hello World\" تقليديًا لتقديم ميزات لغة برمجة أو برنامج ما من خلال حالة بسيطة.
 
-تمكن Aspose.PDF for Android عبر Java API مطوري تطبيقات Java من إنشاء وقراءة وتحرير ومعالجة ملفات PDF في تطبيقاتهم. يتيح لك قراءة وتحويل عدة أنواع ملفات مختلفة إلى ومن تنسيق ملف PDF. يوضح هذا المقال كيفية إنشاء ملف PDF في Java باستخدام Aspose.PDF لنظام Android عبر Java API.
-بعد [تثبيت Aspose.PDF لنظام Android عبر Java](/pdf/ar/androidjava/installation/) في بيئتك، يمكنك تنفيذ عينة الكود أدناه لترى كيف يعمل Aspose.PDF API.
+يوفر Aspose.PDF for Android عبر Java API للمطورين الذين يستخدمون جافا القدرة على إنشاء ملفات PDF وقراءتها وتحريرها ومعالجتها في تطبيقاتهم. يتيح لك قراءة وتحويل عدة أنواع مختلفة من الملفات إلى تنسيق PDF ومنه. تُظهر مقالة Hello World هذه كيفية إنشاء ملف PDF في جافا باستخدام Aspose.PDF for Android عبر Java API.
+بعد [تثبيت Aspose.PDF لـ Android عبر Java](/pdf/ar/androidjava/installation/) في بيئتك، يمكنك تنفيذ عينة الكود أدناه لمعرفة كيف يعمل Aspose.PDF API.
 
-يتبع مقطع الكود أدناه هذه الخطوات:
+يتبع مقتطف الكود أدناه هذه الخطوات:
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document)
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) إلى كائن المستند
-1. إنشاء كائن [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment)
-1. إضافة TextFragment إلى مجموعة [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) في الصفحة
-1. حفظ مستند PDF الناتج
+1. إنشاء كائن [مستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) كائن
+1. إضافة [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) إلى كائن المستند
+1. إنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) كائن
+1. إضافة TextFragment إلى [فقرة](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) مجموعة من الصفحة
+1. احفظ مستند PDF الناتج
 
-يوضح مقطع الشيفرة التالي الخطوات الأساسية لعمل Aspose.PDF لـ Android API.
+يوضح مقطع الشيفرة التالي الخطوات الأساسية لعمل Aspose.PDF for Android API.
 
 ```java
 package com.aspose.pdf.examplesimple;
@@ -66,10 +66,10 @@ public class MainActivity extends Activity {
                 (Button) findViewById(R.id.saveExternalStorage);
         saveButton.setOnClickListener(v -> {
             try {
-                // تهيئة كائن المستند
+                // Initialize document object
                 Document document = new Document();
 
-                //إضافة صفحة
+                //Add page
                 Page page = document.getPages().add();
 
                 myData = inputText.getText().toString().trim();
@@ -77,10 +77,10 @@ public class MainActivity extends Activity {
                     myData = "Hello, world!";
                 }
 
-                // إضافة نص إلى الصفحة الجديدة
+                // Add text to new page
                 page.getParagraphs().add(new TextFragment(myData));
 
-                // حفظ PDF المحدث
+                // Save updated PDF
                 document.save(myExternalFile.getAbsolutePath());
 
             } catch (Exception e) {
@@ -93,9 +93,9 @@ public class MainActivity extends Activity {
         readButton = (Button) findViewById(R.id.getExternalStorage);
         readButton.setOnClickListener(v -> {
             try {
-                // تهيئة كائن المستند
+                // Initialize document object
                 Document document = new Document(myExternalFile.getAbsolutePath());
-                myData = "المستند يحتوي على " + document.getPages().size() + " صفحة/صفحات.";
+                myData = "Document contain "+document.getPages().size()+" page(s).";
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -123,3 +123,4 @@ public class MainActivity extends Activity {
     }
 }
 ```
+

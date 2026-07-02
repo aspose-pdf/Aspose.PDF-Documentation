@@ -4,27 +4,26 @@ linktitle: تحويل مستندات PDF
 type: docs
 weight: 50
 url: /ar/androidjava/converting/
-lastmod: "2021-06-05"
-description: تحتوي هذه القسم على وصف لجميع الخيارات الممكنة لتحويل مستندات PDF على Android عبر Java باستخدام مكتبة Aspose.PDF.
+lastmod: "2026-06-30"
+description: يتضمن هذا القسم وصفًا لجميع الخيارات الممكنة لتحويل مستندات PDF على Android عبر Java باستخدام مكتبة Aspose.PDF.
 sitemap:
     changefreq: "weekly"
     priority: 0.8
 ---
 
-يسمح Aspose.PDF لـ Android عبر Java بتحويل مستندات PDF إلى تنسيقات مختلفة وأيضًا التحويل من تنسيقات أخرى إلى PDF. أيضًا، يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت باستخدام تطبيق محول Aspose.PDF.
+يتيح Aspose.PDF for Android عبر Java تحويل مستندات PDF إلى صيغ متعددة وأيضًا التحويل من صيغ أخرى إلى PDF. يمكنك أيضًا التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت باستخدام تطبيق Aspose.PDF converter.
 
-## تحويل PDF إلى تنسيقات ملفات Microsoft Office
+## تحويل PDF إلى صيغ ملفات Microsoft Office
 
-يسمح Aspose.PDF لـ Android عبر Java بتحويل مستندات PDF الخاصة بك بسرعة وسهولة إلى تنسيقات ملفات Microsoft Office المألوفة والمريحة.
+يتيح Aspose.PDF for Android عبر Java لك تحويل مستندات PDF بسرعة وسهولة إلى صيغ ملفات Microsoft Office المريحة والمعروفة.
 
 - [تحويل PDF إلى DOC](/pdf/ar/androidjava/convert-pdf-to-doc/)
 - [تحويل PDF إلى Excel](/pdf/ar/androidjava/convert-pdf-to-excel/)
 - [تحويل PDF إلى PowerPoint](/pdf/ar/androidjava/convert-pdf-to-powerpoint/)
 
-## التحويل بين تنسيقات PDF/A و PDF
+## تحويل بين صيغ PDF/A و PDF
 
-
-تحويل PDF/A إلى تنسيقات PDF والعودة ممكن مع مكتبة جافا.
+تحويل PDF/A إلى صيغ PDF والعكس ممكن باستخدام مكتبة Java.
 
 - [تحويل PDF إلى PDF/A](/pdf/ar/androidjava/convert-pdf-file-to-pdfa/)
 - [تحويل PDF/A إلى PDF](/pdf/ar/androidjava/convert-pdfa-to-pdf/)
@@ -39,11 +38,11 @@ sitemap:
 | [تحويل PNG إلى PDF](/pdf/ar/androidjava/convert-png-to-pdf/) | [تحويل PDF إلى PNG](/pdf/ar/androidjava/convert-pdf-to-png/) |
 | [تحويل DICOM إلى PDF](/pdf/ar/androidjava/convert-dicom-to-pdf/) | |
 
-## تحويل تنسيقات الملفات المختلفة إلى PDF والعكس
+## تحويل صيغ الملفات المختلفة إلى PDF والعكس
 
 | تحويل الملف إلى PDF | تحويل PDF إلى ملف |
-
 | :---------------- | :------------------ |
 | [تحويل النص إلى PDF](/pdf/ar/androidjava/convert-text-to-pdf/) | [تحويل PDF إلى نص](/pdf/ar/androidjava/convert-pdf-to-txt/) |
-| [تحويل PCL إلى PDF](/pdf/ar/androidjava/convert-pcl-to-pdf/) | |
 | [تحويل XML إلى PDF](/pdf/ar/androidjava/convert-xml-to-pdf/) | |
+
+

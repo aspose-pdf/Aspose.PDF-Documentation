@@ -1,11 +1,11 @@
 ---
-title: XMLをPDFに変換
-linktitle: XMLをPDFに変換
+title: XML を PDF に変換
+linktitle: XML を PDF に変換
 type: docs
 weight: 320
 url: /ja/androidjava/convert-xml-to-pdf/
-lastmod: "2021-06-05"
-description: Aspose.PDFライブラリは、XMLをPDFに変換するためのいくつかの方法を提供します。XslFoLoadOptionsを使用するか、不正なファイル構造でこれを行うことができます。
+lastmod: "2026-07-01"
+description: Aspose.PDF ライブラリは、XML を PDF に変換するいくつかの方法を提供しています。XslFoLoadOptions を使用するか、誤ったファイル構造でこれを行うことができます。
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,21 +13,22 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-オンラインで試してみてください。Aspose.PDFの変換品質をチェックし、このリンクで結果をオンラインで確認できます [products.aspose.app/pdf/conversion/xml-to-pdf](https://products.aspose.app/pdf/conversion/xml-to-pdf)
+オンラインで試してください。Aspose.PDF の変換品質を確認し、結果をオンラインでこのリンクで表示できます。 [products.aspose.app/pdf/conversion/xml-to-pdf](https://products.aspose.app/pdf/conversion/xml-to-pdf)
 
 {{% /alert %}}
 
-XML形式は構造化データを保存するために使用されます。Aspose.PDFでは、<abbr title="Extensible Markup Language">XML</abbr>をPDFに変換するいくつかの方法があります。
+構造化データを保存するために使用されるXML形式です。Aspose.PDFで<abbr title="Extensible Markup Language">XML</abbr>をPDFに変換する方法はいくつかあります。
 
-XSL-FO標準に基づいたXMLドキュメントを使用するオプションを考慮してください。
+XSL-FO標準に基づくXMLドキュメントを使用するオプションを検討してください。
 
-## XSL-FOをPDFに変換
+## XSL-FOをPDFに変換する
 
-XSL-FOファイルのPDFへの変換は、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document)オブジェクトと[XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions)を使用して実装できますが、時には不正なファイル構造に遭遇することもあります。
- 
-// XMLをPDFに変換
+XSL-FOファイルをPDFに変換することは、次を使用して実装できます。 [ドキュメント](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) オブジェクトとともに [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions), しかし時々、誤ったファイル構造に遭遇することがあります。 
+
+```java
+// Convert XML to PDF
     public void convertXMLtoPDF() {
-        // ドキュメントオブジェクトを初期化
+        // Initialize document object
         String pdfDocumentFileName = new File(fileStorage,"XML-to-PDF.pdf").toString();
         String xmlDocumentFileName = new File(fileStorage,"Conversion/employees.xml").toString();
         String xsltDocumentFileName = new File(fileStorage, "Conversion/employees.xslt").toString();
@@ -35,7 +36,7 @@ XSL-FOファイルのPDFへの変換は、[Document](https://reference.aspose.co
         try {
             XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
             document = new Document(xmlDocumentFileName,options);
-            // 結果のPDFファイルを保存
+            // Save resultant PDF file
             document.save(pdfDocumentFileName.toString());
         } catch (Exception e) {
             resultMessage.setText(e.getMessage());
@@ -44,3 +45,4 @@ XSL-FOファイルのPDFへの変換は、[Document](https://reference.aspose.co
         resultMessage.setText(R.string.success_message);
     }    
     ```
+    

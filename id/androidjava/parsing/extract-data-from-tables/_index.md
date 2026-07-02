@@ -4,33 +4,30 @@ linktitle: Ekstrak Data Tabel
 type: docs
 weight: 40
 url: /id/androidjava/extract-data-from-table-in-pdf/
-description: Pelajari cara mengekstrak tabel dari PDF menggunakan Aspose.PDF untuk Android via Java.
-lastmod: "2021-06-05"
+description: Pelajari cara mengekstrak data tabel dari PDF menggunakan Aspose.PDF untuk Android via Java.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-## Mengekstrak Tabel dari PDF secara Programatik
+## Ekstrak Tabel dari PDF secara programatik
 
-Mengekstrak tabel dari PDF bukanlah tugas yang sepele karena tabel dapat dibuat dengan berbagai cara.
+Mengekstrak tabel dari PDF bukanlah tugas yang sederhana karena tabel dapat dibuat dengan berbagai cara.
 
-Aspose.PDF untuk Android via Java memiliki alat untuk memudahkan pengambilan tabel. Untuk mengekstrak data tabel, Anda harus melakukan langkah-langkah berikut:
+Aspose.PDF untuk Android via Java memiliki alat yang memudahkan pengambilan tabel. Untuk mengekstrak data tabel, Anda harus melakukan langkah-langkah berikut:
 
-1. Buka dokumen - instansiasi objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document);
-2. Buat objek [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber).
-
-1. Tentukan halaman mana yang akan dianalisis dan terapkan [visit](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) ke halaman yang diinginkan. Data tabular akan dipindai, dan hasilnya akan disimpan dalam daftar [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). Kita dapat memperoleh daftar ini melalui metode [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--).
-
-1. Untuk mendapatkan data, iterasi melalui `TableList` dan tangani daftar [absorbed rows](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) dan daftar sel yang diserap. Kita dapat mengakses daftar pertama dengan memanggil metode [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) dan ke daftar kedua dengan memanggil [getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
-
-1. Setiap [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) berisi [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). Anda dapat memprosesnya untuk tujuan Anda sendiri.
+1. Buka dokumen - buat sebuah [Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) objek;
+1. Buat sebuah [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber) objek.
+1. Tentukan halaman mana yang akan dianalisis dan terapkan [kunjungi](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) ke halaman yang diinginkan. Data tabel akan dipindai, dan hasilnya akan disimpan dalam daftar [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). Kami dapat memperoleh daftar ini melalui [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) metode.
+1. Untuk mendapatkan data, lakukan iterasi melalui `TableList` dan menangani daftar [baris yang diserap](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) dan daftar sel yang diserap. Kami dapat mengakses daftar pertama dengan memanggil [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) metode dan ke yang kedua dengan memanggil [getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
+1. Setiap [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) mengandung [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). Anda dapat memprosesnya untuk keperluan Anda sendiri.
 
 Contoh berikut menunjukkan ekstraksi tabel dari semua halaman:
 
 ```java
 public void extractTable () {
-        // Buka dokumen
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -51,16 +48,16 @@ public void extractTable () {
         }
 
         BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(fileOutputStream));
-        // Pindai halaman
+        // Scan pages
         for (Page page : (Iterable<? extends Page>) document.getPages()) {
             absorber.visit(page);
             for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
                 try {
                     bw.write("Table");
                     bw.newLine();
-                    // Iterasi melalui daftar baris
+                    // Iterate through list of rows
                     for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                        // Iterasi melalui daftar sel
+                        // Iterate through list of cell
                         for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
                             for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
                                 StringBuilder sb=new StringBuilder();
@@ -88,18 +85,17 @@ public void extractTable () {
     }
 ```
 
+## Ekstrak tabel di area spesifik halaman PDF
 
-## Ekstrak tabel di area tertentu pada halaman PDF
+Setiap tabel abosorbed memiliki [Rectangle](https://reference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rectangle) properti yang menggambarkan posisi tabel pada halaman.
 
-Setiap tabel yang diserap memiliki properti [Rectangle](https://reference.aspose.com/pdf/java/aspose.pdf.text/absorbedtable/properties/rectangle) yang menggambarkan posisi tabel pada halaman.
-
-Jadi, jika Anda perlu mengekstrak tabel yang terletak di wilayah tertentu, Anda harus bekerja dengan koordinat tertentu.
+Jadi, jika Anda perlu mengekstrak tabel yang berada di wilayah tertentu, Anda harus bekerja dengan koordinat tertentu.
 
 Contoh berikut menunjukkan cara mengekstrak tabel yang ditandai dengan Square Annotation:
 
 ```java
 public void extractMarkedTable () {
-        // Buka dokumen
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -114,7 +110,7 @@ public void extractMarkedTable () {
 
         List list=annotationSelector.getSelected();
         if (list.size() == 0) {
-            resultMessage.setText("Tabel yang ditandai tidak ditemukan..");
+            resultMessage.setText("Marked tables not found..");
             return;
         }
 
@@ -144,7 +140,7 @@ public void extractMarkedTable () {
 
                     BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(fileOutputStream));
                     try {
-                        //Parse tabel
+                        //Parse table
                         for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
                             {
                                 for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
@@ -170,14 +166,14 @@ public void extractMarkedTable () {
     }
 ```
 
+## Ekstrak Data Tabel dari PDF dan simpan ke dalam file CSV
 
-## Ekstrak Data Tabel dari PDF dan simpan dalam file CSV
-
-Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file CSV. Untuk melihat cara mengonversi PDF ke Spreadsheet Excel, silakan merujuk ke artikel [Convert PDF to Excel](/pdf/id/java/convert-pdf-to-excel/).
+Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file CSV.
+Untuk melihat cara mengonversi PDF ke Spreadsheet Excel, silakan merujuk ke [Konversi PDF ke Excel](/pdf/id/java/convert-pdf-to-excel/) artikel.
 
 ```java
  public void extractTableSaveCSV () {
-        // Buka dokumen
+        // Open document
         try {
             document=new Document(inputStream);
         } catch (Exception e) {
@@ -186,7 +182,7 @@ Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file 
         }
 
         File file=new File(fileStorage, "PDFToXLS_out.csv");
-        // Buat objek ExcelSave Option
+        // Instantiate ExcelSave Option object
         com.aspose.pdf.ExcelSaveOptions excelSave=new com.aspose.pdf.ExcelSaveOptions();
         excelSave.setFormat(com.aspose.pdf.ExcelSaveOptions.ExcelFormat.CSV);
         try {
@@ -198,3 +194,4 @@ Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file 
         resultMessage.setText(R.string.success_message);
     }
 ```
+

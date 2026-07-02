@@ -1,34 +1,34 @@
 ---
-title: Convert PDF to PNG
-linktitle: Convert PDF to PNG
+title: تحويل PDF إلى PNG
+linktitle: تحويل PDF إلى PNG
 type: docs
 weight: 20
 url: /ar/androidjava/convert-pdf-to-png/
-lastmod: "2021-06-05"
-description: تصفح هذه الصفحة كيفية تحويل صفحات PDF إلى صورة PNG، تحويل جميع الصفحات وصفحة واحدة إلى صور PNG باستخدام Aspose.PDF for Android عبر Java.
+lastmod: "2026-06-30"
+description: تصف هذه الصفحة كيفية تحويل صفحات PDF إلى صورة PNG، وتحويل جميع الصفحات والصفحات الفردية إلى صور PNG باستخدام Aspose.PDF for Android via Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-استخدم مكتبة **Aspose.PDF for Android via Java** لتحويل صفحات PDF إلى صور <abbr title="Portable Network Graphics">PNG</abbr> بطريقة سهلة ومريحة.
+استخدم مكتبة **Aspose.PDF for Android via Java** لتحويل صفحات PDF إلى <abbr title="Portable Network Graphics">PNG</abbr> الصور بطريقة قابلة للوصول ومريحة.
 
-تسمح لك فئة PngDevice بتحويل صفحات PDF إلى صور PNG. توفر هذه الفئة طريقة اسمها Process والتي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة PNG.
+تسمح لك فئة PngDevice بتحويل صفحات PDF إلى صور PNG. توفر هذه الفئة طريقة تسمى Process والتي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة PNG.
 
 ## تحويل صفحات PDF إلى صور PNG
 
-لتحويل جميع الصفحات في ملف PDF إلى ملفات PNG، قم بالتكرار عبر الصفحات الفردية وقم بتحويل كل منها إلى تنسيق PNG. يوضح مقتطف الشيفرة التالي كيفية الانتقال عبر جميع صفحات ملف PDF وتحويل كل منها إلى صورة PNG.
+لتحويل جميع الصفحات في ملف PDF إلى ملفات PNG، قم بالتكرار عبر الصفحات الفردية وتحويل كل منها إلى تنسيق PNG. يوضح المقتطع البرمجي التالي كيفية التنقل عبر جميع صفحات ملف PDF وتحويل كل صفحة إلى صورة PNG.
 
+{{% alert color="primary" %}} 
 
-{{% alert color="primary" %}}
-
-تحقق عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت على هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-png](https://products.aspose.app/pdf/conversion/pdf-to-png)
+جربه عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت عبر هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-png](https://products.aspose.app/pdf/conversion/pdf-to-png)
 
 {{% /alert %}}
 
 ## تحويل صفحة PDF واحدة إلى صورة PNG
 
-قم بتمرير مؤشر الصفحة كمعامل إلى طريقة Process(..). يوضح مقتطف الشيفرة التالي الخطوات لتحويل الصفحة الأولى من PDF إلى تنسيق PNG.
+مرّر فهرس الصفحة كوسيط إلى طريقة Process(..).
+يعرض مقتطف الشيفرة التالي الخطوات لتحويل الصفحة الأولى من PDF إلى تنسيق PNG.
 
 ```java
    public void convertPDFtoPNG() {
@@ -39,21 +39,21 @@ sitemap:
             return;
         }
         File file = new File(fileStorage, "PDF-to-PNG.png");
-        // إنشاء كائن تدفق لحفظ الصورة الناتجة
+        // Create stream object to save the output image
         try {
             OutputStream imageStream =
                     new FileOutputStream(file.toString());
 
-            // إنشاء كائن Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
 
-            // إنشاء كائن PngDevice بدقة معينة
+            // Create PngDevice object with particular resolution
             PngDevice PngDevice = new PngDevice(resolution);
 
-            // تحويل صفحة معينة وحفظ الصورة في التدفق
+            // Convert a particular page and save the image to stream
             PngDevice.process(document.getPages().get_Item(1), imageStream);
 
-            // إغلاق التدفق
+            // Close the stream
             imageStream.close();
             resultMessage.setText(file.toString());
         } catch (IOException e) {
@@ -63,18 +63,17 @@ sitemap:
 
 ```
 
-
 ## تحويل جميع صفحات PDF إلى صورة PNG
 
-يوضح لك Aspose.PDF لـ Android عبر Java كيفية تحويل جميع الصفحات في ملف PDF إلى صور:
+Aspose.PDF for Android via Java يوضح لك كيفية تحويل جميع الصفحات في ملف PDF إلى صور:
 
-1. قم بالتكرار عبر جميع الصفحات في الملف.
-2. قم بتحويل كل صفحة بشكل فردي:
-    1. إنشاء كائن من فئة Document لتحميل مستند PDF.
-    2. الحصول على الصفحة التي تريد تحويلها.
-    3. استدعاء طريقة Process لتحويل الصفحة إلى Png.
+1. تنقل عبر جميع الصفحات في الملف.
+1. قم بتحويل كل صفحة على حدة:
+    1. أنشئ كائنًا من فئة Document لتحميل مستند PDF.
+    1. احصل على الصفحة التي تريد تحويلها.
+    1. استدعِ طريقة Process لتحويل الصفحة إلى PNG.
 
-يُظهر لك مقتطف الشيفرة التالي كيفية تحويل جميع صفحات PDF إلى صور PNG.
+يوضح مقطع الشيفرة التالي كيفية تحويل جميع صفحات PDF إلى صور PNG.
 
 ```java
  public void convertPDFtoPNG_AllPages() {
@@ -85,9 +84,9 @@ sitemap:
             return;
         }
 
-        // التكرار عبر جميع صفحات ملف PDF
+        // Loop through all the pages of PDF file
         for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
-            // إنشاء كائن تدفق لحفظ صورة الإخراج
+            // Create stream object to save the output image
             File file = new File(fileStorage, "PDF-to-PNG"+pageCount+".png");
             java.io.OutputStream imageStream;
             try {
@@ -97,15 +96,15 @@ sitemap:
                 return;
             }
 
-            // إنشاء كائن Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
-            // إنشاء كائن JpegDevice بدقة معينة
+            // Create JpegDevice object with particular resolution
             PngDevice JpegDevice = new PngDevice(resolution);
 
-            // تحويل صفحة معينة وحفظ الصورة في التدفق
+            // Convert a particular page and save the image to stream
             JpegDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
-            // إغلاق التدفق
+            // Close the stream
             try {
                 imageStream.close();
             } catch (Exception e) {
@@ -117,10 +116,9 @@ sitemap:
     }
 ```
 
+## تحويل صفحة PDF معينة إلى صورة PNG
 
-## تحويل صفحة معينة من PDF إلى صورة PNG
-
-يوضح Aspose.PDF لـ Android عبر Java كيفية تحويل صفحة معينة إلى تنسيق PNG:
+Aspose.PDF لنظام Android عبر Java يوضح لك كيفية تحويل صفحة معينة إلى تنسيق PNG:
 
 ```java
 public void convertPDFtoPNG_ParticularPageRegion() {
@@ -130,25 +128,25 @@ public void convertPDFtoPNG_ParticularPageRegion() {
             resultMessage.setText(e.getMessage());
             return;
         }
-        // الحصول على مستطيل منطقة صفحة معينة
+        // Get rectangle of particular page region
         //x=0,y=0, w=200, h=125;
         Rectangle pageRect = new Rectangle(0, 0, 200, 125);
-        // تعيين قيمة CropBox وفقًا لمستطيل منطقة الصفحة المطلوبة
+        // set CropBox value as per rectangle of desired page region
         document.getPages().get_Item(1).setCropBox(pageRect);
-        // حفظ المستند المقصوص في التدفق
+        // save cropped document into stream
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         document.save(outStream);
 
-        // فتح مستند PDF المقصوص من التدفق وتحويله إلى صورة
+        // open cropped PDF document from stream and convert to image
         document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
-        // إنشاء كائن Resolution
+        // Create Resolution object
         Resolution resolution = new Resolution(300);
-        // إنشاء جهاز Jpeg بخصائص محددة
+        // Create Jpeg device with specified attributes
         PngDevice PngDevice = new PngDevice(resolution);
 
         File file = new File(fileStorage, "PDF-to-PNG.png");
         try {
-            // تحويل صفحة معينة وحفظ الصورة في التدفق
+            // Convert a particular page and save the image to stream
             PngDevice.process(document.getPages().get_Item(1), file.toString());
         }
         catch (Exception e) {

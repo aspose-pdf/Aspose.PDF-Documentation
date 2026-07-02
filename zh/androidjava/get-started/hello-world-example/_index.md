@@ -4,8 +4,8 @@ linktitle: Hello World 示例
 type: docs
 weight: 20
 url: /zh/androidjava/hello-world-example/
-description: 本页展示如何使用简单的编程创建包含文本 - Hello World 的 PDF 文档，使用 Aspose.PDF for Android。
-lastmod: "2021-08-05"
+description: 本页展示如何使用简单的编程创建包含文本 “Hello World” 的 PDF 文档，使用 Aspose.PDF for Android。
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,20 +13,20 @@ sitemap:
 
 ## Hello World 示例
 
-“Hello World” 示例传统上用于通过一个简单的用例介绍编程语言或软件的功能。
+“Hello World” 示例传统上用于通过一个简单的用例来介绍编程语言或软件的特性。
 
-Aspose.PDF for Android via Java API 使 Java 应用程序开发人员能够在其应用程序中创建、读取、编辑和操作 PDF 文件。它允许您读取和转换多种不同的文件类型到 PDF 文件格式和从 PDF 文件格式转换。本 Hello World 文章展示了如何使用 Aspose.PDF for Android via Java API 在 Java 中创建 PDF 文件。
-在您的环境中[安装 Aspose.PDF for Android via Java](/pdf/zh/androidjava/installation/)后，您可以执行下面的代码示例，看看 Aspose.PDF API 是如何工作的。
+Aspose.PDF for Android via Java API 为 Java 应用程序开发人员提供了在其应用中创建、读取、编辑和操作 PDF 文件的能力。它允许您读取并在 PDF 文件格式之间相互转换多种不同的文件类型。本文的 Hello World 示例展示了如何使用 Aspose.PDF for Android via Java API 在 Java 中创建 PDF 文件。
+之后 [通过 Java 安装 Aspose.PDF for Android](/pdf/zh/androidjava/installation/) 在您的环境中，您可以执行以下代码示例，以了解 Aspose.PDF API 的工作方式。
 
-下面的代码片段遵循这些步骤：
+下面的代码片段遵循以下步骤：
 
-1. 实例化一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) 对象
-1. 向文档对象添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page)
+1. 实例化一个 [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) 对象
+1. 添加一个 [页面](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) 到文档对象
 1. 创建一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) 对象
-1. 将 TextFragment 添加到页面的 [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) 集合中
+1. 将 TextFragment 添加到 [段落](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) 页面的集合
 1. 保存生成的 PDF 文档
 
-以下代码片段展示了 Aspose.PDF for Android API 的基本工作步骤。
+下面的代码片段展示了 Aspose.PDF for Android API 的工作基本步骤。
 
 ```java
 package com.aspose.pdf.examplesimple;
@@ -66,10 +66,10 @@ public class MainActivity extends Activity {
                 (Button) findViewById(R.id.saveExternalStorage);
         saveButton.setOnClickListener(v -> {
             try {
-                // 初始化文档对象
+                // Initialize document object
                 Document document = new Document();
 
-                // 添加页面
+                //Add page
                 Page page = document.getPages().add();
 
                 myData = inputText.getText().toString().trim();
@@ -77,10 +77,10 @@ public class MainActivity extends Activity {
                     myData = "Hello, world!";
                 }
 
-                // 将文本添加到新页面
+                // Add text to new page
                 page.getParagraphs().add(new TextFragment(myData));
 
-                // 保存更新的 PDF
+                // Save updated PDF
                 document.save(myExternalFile.getAbsolutePath());
 
             } catch (Exception e) {
@@ -93,7 +93,7 @@ public class MainActivity extends Activity {
         readButton = (Button) findViewById(R.id.getExternalStorage);
         readButton.setOnClickListener(v -> {
             try {
-                // 初始化文档对象
+                // Initialize document object
                 Document document = new Document(myExternalFile.getAbsolutePath());
                 myData = "Document contain "+document.getPages().size()+" page(s).";
             } catch (Exception e) {
@@ -123,3 +123,4 @@ public class MainActivity extends Activity {
     }
 }
 ```
+

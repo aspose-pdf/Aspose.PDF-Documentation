@@ -5,6 +5,7 @@ second_title: Aspose.PDF for Android via Java
 type: docs
 weight: 100
 url: /ko/androidjava/
+description: Explore Aspose.PDF for Android via Java. Create, manipulate, and convert PDF files seamlessly in Android applications with powerful features.
 is_root: true
 lastmod: "2021-05-08"
 ---
@@ -13,33 +14,33 @@ lastmod: "2021-05-08"
 
 ![Aspose.PDF for Android via Java Logo](aspose_pdf-for-android.png)
 
-<h2>Aspose.PDF for Android via Java에 오신 것을 환영합니다</h2>
+<h2>Welcome to Aspose.PDF for Android via Java </h2>
 
-Aspose.PDF for Android via Java는 개발자가 PDF 문서를 프로그래밍 방식으로 생성하고 조작할 수 있도록 하는 구성 요소로, 간단하거나 복잡한 문서도 가능합니다. Aspose.PDF for Android via Java는 개발자가 표, 그래프, 이미지, 하이퍼링크, 사용자 정의 글꼴 등을 PDF 문서에 삽입할 수 있도록 합니다. 또한 PDF 문서를 압축하는 데 사용할 수도 있습니다. Aspose.PDF for Android via Java는 안전한 PDF를 개발하기 위한 뛰어난 보안 기능을 제공합니다. Aspose.PDF for Android via Java의 가장 두드러진 특징은 API를 통해서나 XML 템플릿에서 PDF 생성이 가능하다는 것입니다.
+Aspose.PDF for Android via Java is a component that allows developers to create and manipulate PDF documents programmatically, whether simple or complex. Aspose.PDF for Android via Java allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. It can also be used to compress PDF documents. Aspose.PDF for Android via Java provides excellent security features for developing secure PDFs. Aspose.PDF for Android via Java's most distinctive feature is that it supports PDF creation through both an API and from XML templates.
 
 {{% /alert %}}
 
-<h3>Aspose.PDF for Android via Java 리소스</h3>
+<h3>Aspose.PDF for Android via Java Resources</h3>
 
-<h2>챕터</h2>
+<h2>Chapters </h2>
 
-- [개요](/pdf/ko/androidjava/overview/)
-- [시작하기](/pdf/ko/androidjava/get-started/)
-- [문서 변환하기](/pdf/ko/androidjava/converting/)
-- [고급 작업](/pdf/ko/java/advanced-operations/)(Aspose.PDF for Android via Java는 Aspose.PDF for Java와 매우 유사합니다. 따라서 동일한 API 참조 가이드를 사용할 수 있습니다)
-- [PDF 문서 파싱](/pdf/ko/androidjava/parsing/)
-- [릴리스 노트](https://releases.aspose.com/pdf/androidjava/release-notes/)
+- [Overview](/pdf/androidjava/overview/)
+- [Get Started](/pdf/androidjava/get-started/)
+- [Converting documents](/pdf/androidjava/converting/)
+- [Advanced operations](/pdf/java/advanced-operations/)(Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same API Reference Guide)
+- [Parsing PDF documents](/pdf/androidjava/parsing/)
+- [Release Notes](https://releases.aspose.com/pdf/androidjava/release-notes/)
 
-다음은 작업을 수행하는 데 필요할 수 있는 유용한 리소스에 대한 링크입니다.
+Following are the links to some useful resources you may need to accomplish your tasks.
 
-- [Aspose.PDF for Android via Java 온라인 문서](/pdf/ko/androidjava/) (Aspose.PDF for Android via Java는 Aspose.PDF for Android via Java와 매우 유사합니다. 따라서 동일한 문서를 사용할 수 있습니다)
-- [Aspose.PDF for Android via Java 기능](/pdf/ko/androidjava/key-features/)
-- [Aspose.PDF for Android via Java 릴리스 노트](https://releases.aspose.com/pdf/androidjava/release-notes/)
-- [Aspose.PDF for Android via Java 제품 페이지](https://products.aspose.com/pdf/android-java)
+- [Aspose.PDF for Android via Java Online Documentation](/pdf/androidjava/) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Android via Java. So, you can use the same documentation)
+- [Aspose.PDF for Android via Java Features](/pdf/androidjava/key-features/)
+- [Aspose.PDF for Android via Java Release Notes](https://releases.aspose.com/pdf/androidjava/release-notes/)
+- [Aspose.PDF for Android via Java Product Page](https://products.aspose.com/pdf/android-java)
+- [Download Aspose.PDF for Android via Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java)
+- [Install Aspose.PDF for Android via Java](/pdf/androidjava/installation/)
+- [Aspose.PDF for Android via Java API Reference Guide](https://reference.aspose.com/java/pdf) (Aspose.PDF for Android via Java is very similar to Aspose.PDF for Java. So, you can use the same API Reference Guide)
+- [Download Aspose.PDF for Android via Java](https://releases.aspose.com/pdf/androidjava/)
+- [Aspose.PDF for Android via Java Free Support Forum](https://forum.aspose.com/c/pdf)
+- [Aspose.PDF for Android via Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
-- [Aspose.PDF for Android via Java 다운로드](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf-android-via-java)
-- [Aspose.PDF for Android via Java 설치](/pdf/ko/androidjava/installation/)
-- [Aspose.PDF for Android via Java API 참조 가이드](https://reference.aspose.com/java/pdf) (Aspose.PDF for Android via Java는 Aspose.PDF for Java와 매우 유사합니다. 따라서 동일한 API 참조 가이드를 사용할 수 있습니다)
-- [Aspose.PDF for Android via Java 다운로드](https://releases.aspose.com/pdf/androidjava/)
-- [Aspose.PDF for Android via Java 무료 지원 포럼](https://forum.aspose.com/c/pdf)
-- [Aspose.PDF for Android via Java 유료 지원 헬프데스크](https://helpdesk.aspose.com/)

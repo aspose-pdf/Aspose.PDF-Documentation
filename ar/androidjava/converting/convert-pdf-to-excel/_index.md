@@ -4,32 +4,32 @@ linktitle: تحويل PDF إلى Excel
 type: docs
 weight: 90
 url: /ar/androidjava/convert-pdf-to-excel/
-lastmod: "2021-06-05"
-description: يسمح لك Aspose.PDF لنظام Android عبر Java بتحويل PDF إلى تنسيق Excel. أثناء ذلك، يتم تحويل الصفحات الفردية من ملف PDF إلى أوراق عمل Excel.
+lastmod: "2026-06-30"
+description: يسمح لك Aspose.PDF for Android عبر Java بتحويل PDF إلى تنسيق Excel. أثناء ذلك، يتم تحويل الصفحات الفردية لملف PDF إلى أوراق عمل Excel.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-تمكنك Aspose.PDF لنظام Android عبر Java API من عرض ملفات PDF الخاصة بك إلى تنسيقات ملفات Excel [XLS](https://docs.fileformat.com/spreadsheet/xls/) و [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/). لدينا بالفعل واجهة برمجة تطبيقات أخرى، تعرف باسم [Aspose.Cells for Java](https://products.aspose.com/cells/java)، التي توفر القدرة على إنشاء ومعالجة دفاتر العمل الموجودة في Excel. كما توفر القدرة على تحويل دفاتر العمل في Excel إلى تنسيق PDF.
+تمكنك Aspose.PDF for Android عبر Java API من تحويل ملفات PDF الخاصة بك إلى Excel [XLS](https://docs.fileformat.com/spreadsheet/xls/) و [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) تنسيقات الملفات. لدينا بالفعل واجهة برمجة تطبيقات أخرى معروفة باسم [Aspose.Cells for Java](https://products.aspose.com/cells/java), التي توفر القدرة على إنشاء ومعالجة كتب عمل Excel الحالية. كما توفر القدرة على تحويل كتب عمل Excel إلى صيغة PDF.
 
 {{% alert color="primary" %}}
 
-جرب عبر الإنترنت.
- يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت على هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-xlsx](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+جرّب عبر الإنترنت. يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت على هذا الرابط [products.aspose.app/pdf/conversion/pdf-to-xlsx](https://products.aspose.app/pdf/conversion/pdf-to-xlsx) 
+
 {{% /alert %}}
 
 ## تحويل PDF إلى Excel XLS
 
-لتحويل ملفات PDF إلى صيغة XLS، يحتوي Aspose.PDF على فئة تسمى [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). يتم تمرير كائن من فئة [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) كوسيطة ثانية إلى منشئ Document.Save(..).
+لتحويل ملفات PDF إلى صيغة XLS، يحتوي Aspose.PDF على فئة تسمى [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). كائن من الـ [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) يتم تمرير الفئة كوسيط ثانٍ إلى الـ Document.Save(..) المنشئ. 
 
-تحويل ملف PDF إلى صيغة XLSX هو جزء من المكتبة من Aspose.PDF لإصدار Java 18.6. من أجل تحويل ملفات PDF إلى صيغة XLSX، تحتاج إلى تعيين الصيغة كـ XLSX باستخدام طريقة setFormat() لفئة [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions).
+تحويل ملف PDF إلى تنسيق XLSX هو جزء من المكتبة في Aspose.PDF for Java الإصدار 18.6. لتحويل ملفات PDF إلى تنسيق XLSX، تحتاج إلى تعيين التنسيق كـ XLSX باستخدام طريقة setFormat() من [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) الفئة.
 
-يظهر مقتطف الشيفرة التالي كيفية تحويل ملف PDF إلى صيغة xls و .xlsx:
+يُظهر مقتطف الشيفرة التالي كيفية تحويل ملف PDF إلى صيغ xls و .xlsx:
 
 ```java
 public void convertPDFtoExcelSimple() {
-        // فتح مستند PDF المصدر
+        // Open the source PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -37,12 +37,12 @@ public void convertPDFtoExcelSimple() {
             return;
         }
 
-        // إنشاء كائن ExcelSave Option
+        // Instantiate ExcelSave Option object
         ExcelSaveOptions saveOptions = new ExcelSaveOptions();
 
         File xlsFileName = new File(fileStorage, "PDF-to-Excel.xlsx");
         try {
-            // حفظ الملف بتنسيق مستند MS
+            // Save the file into MS document format
             document.save(xlsFileName.toString(), SaveFormat.Excel);
         }
         catch (Exception e) {
@@ -53,13 +53,13 @@ public void convertPDFtoExcelSimple() {
     }
 ```
 
-## تحويل PDF إلى XLS مع التحكم في العمود
+## تحويل PDF إلى XLS مع عمود التحكم
 
-عند تحويل ملف PDF إلى تنسيق XLS، يتم إضافة عمود فارغ إلى الملف الناتج كأول عمود. يتم استخدام الخيار InsertBlankColumnAtFirst في فئة [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) للتحكم في هذا العمود. القيمة الافتراضية لها هي true.
+عند تحويل PDF إلى صيغة XLS، يتم إضافة عمود فارغ إلى ملف الإخراج كأول عمود. الـ في [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) الخيار class InsertBlankColumnAtFirst يُستخدم للتحكم في هذا العمود. القيمة الافتراضية له هي true.
 
 ```java
 public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
-        // افتح مستند PDF المصدر
+        // Open the source PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -67,13 +67,13 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
             return;
         }
 
-        // إنشاء كائن خيار ExcelSave
+        // Instantiate ExcelSave Option object
         ExcelSaveOptions excelSaveOptions = new ExcelSaveOptions();
         excelSaveOptions.setInsertBlankColumnAtFirst(false);
 
         File xlsFileName = new File(fileStorage, "PDF-to-Excel.xlsx");
         try {
-            // احفظ الملف في تنسيق مستند MS
+            // Save the file into MS document format
             document.save(xlsFileName.toString(), excelSaveOptions);
         }
         catch (Exception e) {
@@ -84,14 +84,13 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
     }
 ```
 
+## تحويل PDF إلى ورقة عمل Excel واحدة 
 
-## تحويل PDF إلى ورقة عمل Excel واحدة
-
-عند تصدير ملف PDF يحتوي على الكثير من الصفحات إلى XLS، يتم تصدير كل صفحة إلى ورقة مختلفة في ملف Excel. هذا لأن خاصية MinimizeTheNumberOfWorksheets تم تعيينها على false افتراضيًا. لضمان تصدير جميع الصفحات إلى ورقة واحدة في ملف Excel الناتج، قم بتعيين خاصية MinimizeTheNumberOfWorksheets إلى true.
+عند تصدير ملف PDF يحتوي على عدد كبير من الصفحات إلى XLS، يتم تصدير كل صفحة إلى ورقة مختلفة في ملف Excel. يحدث هذا لأن الخاصية MinimizeTheNumberOfWorksheets مُعَدة على false بشكل افتراضي. لضمان تصدير جميع الصفحات إلى ورقة واحدة فقط في ملف Excel الناتج، قم بتعيين الخاصية MinimizeTheNumberOfWorksheets إلى true.
 
 ```java
  public void convertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets() {
-        // فتح مستند PDF المصدر
+        // Open the source PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -99,14 +98,14 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
             return;
         }
 
-        // إنشاء كائن ExcelSave Option
+        // Instantiate ExcelSave Option object
         ExcelSaveOptions excelSaveOptions = new ExcelSaveOptions();
         excelSaveOptions.setMinimizeTheNumberOfWorksheets(true);
 
-        // حفظ الناتج في XLSX
+        // Save the output in XLSX
         File xlsFileName = new File(fileStorage, "PDF-to-Excel.xlsx");
         try {
-            // حفظ الملف بتنسيق MS Excel
+            // Save the file into MS Excel format
             document.save(xlsFileName.toString(), excelSaveOptions);
         }
         catch (Exception e) {
@@ -118,14 +117,13 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
 
 ```
 
+## تحويل إلى تنسيق XLSX 
 
-## التحويل إلى تنسيق XLSX
-
-افتراضيًا، تستخدم Aspose.PDF XML Spreadsheet 2003 لتخزين البيانات. من أجل تحويل ملفات PDF إلى تنسيق XLSX، تقدم Aspose.PDF فئة تسمى ExcelSaveOptions مع Format. يتم تمرير كائن من فئة [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) كمعامل ثانٍ لطريقة Document.Save(..).
+بشكل افتراضي، يستخدم Aspose.PDF تنسيق XML Spreadsheet 2003 لتخزين البيانات. لتحويل ملفات PDF إلى تنسيق XLSX، يحتوي Aspose.PDF على فئة تسمى ExcelSaveOptions مع Format. كائن من الـ [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) الفئة تُمرَّر كمعامل ثانٍ إلى طريقة Document.Save(..).
 
 ```java
  public void convertPDFtoExcelAdvanced_SaveCSV() {
-        // تحميل مستند PDF
+        // Load PDF document
         try {
             document = new Document(inputStream);
         } catch (Exception e) {
@@ -133,14 +131,14 @@ public void convertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
             return;
         }
 
-        // إنشاء كائن ExcelSave Option
+        // Instantiate ExcelSave Option object
         ExcelSaveOptions excelSaveOptions = new ExcelSaveOptions();
         excelSaveOptions.setFormat(ExcelSaveOptions.ExcelFormat.CSV);
 
-        // حفظ المخرج في CSV
+        // Save the output in CSV
         File xlsFileName = new File(fileStorage, "PDF-to-Excel.csv");
         try {
-            // حفظ الملف في تنسيق CSV
+            // Save the file into CSV format
             document.save(xlsFileName.toString(), excelSaveOptions);
         }
         catch (Exception e) {

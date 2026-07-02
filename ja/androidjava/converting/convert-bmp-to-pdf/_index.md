@@ -1,28 +1,28 @@
 ---
-title: BMPをPDFに変換する
-linktitle: BMPをPDFに変換する
+title: BMP を PDF に変換する
+linktitle: BMP を PDF に変換する
 type: docs
 weight: 220
 url: /ja/androidjava/convert-bmp-to-pdf/
-lastmod: "2021-06-05"
-description: ディスプレイデバイスから独立してデジタルビットマップ画像を保存するために使用されるBMPビットマップファイルを、Aspose.PDFを使用して簡単にPDFに変換できます。Java経由でAndroid用。
+lastmod: "2026-07-01"
+description: Aspose.PDF. for Android via Java を使用して、ディスプレイ デバイスから独立してデジタル ビットマップ画像を保存するための PDF に BMP ビットマップ ファイルを簡単に変換できます。
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-BMP画像は、拡張子.BMPを持つファイルで、ビットマップ画像ファイルを表し、ビットマップデジタル画像を保存するために使用されます。これらの画像はグラフィックスアダプタに依存せず、デバイス独立ビットマップ（DIB）ファイル形式とも呼ばれます。  
-Aspose.PDF for Java APIを使用してBMPをPDFに変換できます。そのため、次の手順に従ってBMP画像を変換できます：
+BMP 画像は、拡張子 .BMP を持つファイルで、ビットマップ画像ファイルを表し、ビットマップ デジタル画像の保存に使用されます。これらの画像はグラフィック アダプタに依存せず、デバイス非依存ビットマップ (DIB) ファイル形式とも呼ばれます。
+Aspose.PDF for Java API を使用して BMP を PDF に変換できます。したがって、BMP 画像を変換するために次の手順に従うことができます：
 
-1. 新しいドキュメントを初期化する
-2. サンプルのBMP画像ファイルをロードする
-3. 最後に、出力PDFファイルを保存する
+1. 新しい Document を初期化する
+1. サンプル BMP 画像ファイルをロードする
+1. 最後に、出力PDFファイルを保存します
 
-次のコードスニペットはこれらの手順に従い、Javaを使用してBMPをPDFに変換する方法を示しています：
+以下のコードスニペットはこれらの手順に従い、Java を使用して BMP を PDF に変換する方法を示しています:
 
 ```java
 public void convertBMPtoPDF () {
-        // ドキュメントオブジェクトを初期化する
+        // Initialize document object
         document=new Document();
 
         Page page=document.getPages().add();
@@ -37,13 +37,13 @@ public void convertBMPtoPDF () {
             return;
         }
 
-        // サンプルのBMP画像ファイルをロードする
+        // Load sample BMP image file
         image.setImageStream(inputStream);
         page.getParagraphs().add(image);
 
         File pdfFileName=new File(fileStorage, "BMP-to-PDF.pdf");
 
-        // 出力ドキュメントを保存する
+        // Save output document
         try {
             document.save(pdfFileName.toString());
         } catch (Exception e) {
@@ -53,3 +53,4 @@ public void convertBMPtoPDF () {
         resultMessage.setText(R.string.success_message);
     }
 ```
+
