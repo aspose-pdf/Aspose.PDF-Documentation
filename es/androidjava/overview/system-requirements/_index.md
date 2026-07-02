@@ -1,23 +1,23 @@
 ---
-title: System Requirements
-linktitle: System Requirements
+title: Requisitos del sistema
+linktitle: Requisitos del sistema
 type: docs
 weight: 30
 url: /es/androidjava/system-requirements/
-description: Esta sección enumera los sistemas operativos compatibles que un desarrollador necesita para trabajar exitosamente con Aspose.PDF para Android a través de Java.
-lastmod: "2021-06-05"
+description: Esta sección enumera los sistemas operativos compatibles que un desarrollador necesita para trabajar con éxito con Aspose.PDF for Android via Java.
+lastmod: "2026-06-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Overview
+## Visión general
 
-Para producir documentos PDF, la máquina para ejecutar [Aspose.PDF para Android a través de Java](https://products.aspose.com/pdf/android-java/) no necesita tener [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) instalado ya que Aspose.PDF para Java en sí mismo es un motor de creación de documentos PDF. Sin embargo, para visualizar documentos PDF producidos por Aspose.PDF para Android a través de Java, la máquina sí necesita al menos un [Adobe Acrobat Reader](http://www.adobe.com/products/acrobat/readermain.html). Se puede [descargar](https://www.adobe.com/acrobat/pdf-reader.html) de forma gratuita.
+Para producir documentos PDF, la máquina que ejecuta [Aspose.PDF for Android via Java](https://products.aspose.com/pdf/android-java/) no necesita tener [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) instalar como Aspose.PDF for Java en sí es un motor de creación de documentos PDF. Sin embargo, para ver documentos PDF producidos por Aspose.PDF for Android a través de Java, la máquina necesita al menos un [Adobe Acrobat Reader](http://www.adobe.com/products/acrobat/readermain.html). Puede ser [descargado](https://www.adobe.com/acrobat/pdf-reader.html) gratis.
 
-## Supported Operating Systems
+## Sistemas operativos compatibles
 
-Aspose.PDF para Android a través de Java es compatible con cualquier dispositivo móvil que ejecute el entorno de ejecución de Java, incluyendo, pero no limitado a:
+Aspose.PDF for Android via Java admite cualquier dispositivo móvil que ejecute el tiempo de ejecución de Java, incluyendo, pero no limitado a:
 
 ### Android
 
@@ -33,8 +33,10 @@ Aspose.PDF para Android a través de Java es compatible con cualquier dispositiv
 - Android 11.0
 
 
-## Entornos de Desarrollo
+## Entornos de desarrollo
 
-Puede usar Aspose.PDF para Android a través de Java para desarrollar aplicaciones en cualquier entorno de desarrollo que apunte a la plataforma Java en Android, pero los siguientes entornos son explícitamente compatibles:
+Puede usar Aspose.PDF for Android via Java para desarrollar aplicaciones en cualquier entorno de desarrollo que apunte a la plataforma Java en Android, pero los siguientes entornos son soportados explícitamente:
 
 - Android Studio y herramientas SDK
+
+

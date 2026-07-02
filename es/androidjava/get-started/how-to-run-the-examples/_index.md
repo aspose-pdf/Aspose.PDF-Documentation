@@ -1,64 +1,60 @@
 ---
-title: Cómo ejecutar otros ejemplos de Aspose.PDF para Android vía Java
+title: Cómo ejecutar otros ejemplos de Aspose.PDF for Android via Java
 linktitle: Cómo ejecutar otros ejemplos
 type: docs
 weight: 40
 url: /es/androidjava/how-to-run-other-examples/
-description: Esta página demuestra pautas que serán útiles para los siguientes requisitos antes de descargar y ejecutar los ejemplos.
-lastmod: "2021-06-05"
+description: Explore cómo ejecutar varios ejemplos usando Aspose.PDF en Android/Java para aprovechar las funcionalidades PDF en aplicaciones móviles.
+lastmod: "2026-06-30"
 ---
 
 ## Descargar desde GitHub
 
-Todos los ejemplos de Aspose.PDF para Android vía Java están alojados en [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java). Puedes clonar el repositorio usando tu cliente de Github favorito o descargar el archivo ZIP desde [aquí](https://github.com/aspose-pdf/Aspose.PDF-for-Java/archive/master.zip).
+Todos los ejemplos de Aspose.PDF for Android via Java se alojan en [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java). Puedes clonar el repositorio usando tu cliente de Github favorito o descargar el archivo ZIP desde [aquí](https://github.com/aspose-pdf/Aspose.PDF-for-Java/archive/master.zip).
 
-Extrae el contenido del archivo ZIP a cualquier carpeta en tu computadora. Todos los ejemplos están ubicados en la carpeta **Examples**.
+Extrae el contenido del archivo ZIP a cualquier carpeta en tu computadora. Todos los ejemplos se encuentran en la carpeta **Examples**.
 
 ![todo:image_alt_text](how-to-run-the-examples_1.png)
 
-El proyecto utiliza el sistema de construcción Maven.
- Cualquier IDE moderno puede abrir o importar fácilmente el proyecto y sus dependencias. A continuación, te mostramos cómo usar IDEs populares para construir y ejecutar los ejemplos.
+El proyecto utiliza el sistema de compilación Maven. Cualquier IDE moderno puede abrir o importar fácilmente el proyecto y sus dependencias. A continuación, te mostramos cómo usar IDEs populares para compilar y ejecutar los ejemplos.
 
 ### IntelliJ IDEA
 
-Haz clic en el menú **Archivo** y elige **Abrir**. Navega hasta la carpeta del proyecto y selecciona el archivo **pom.xml**.
+Haga clic en el menú **File** y elija **Open**. Navegue hasta la carpeta del proyecto y seleccione el archivo **pom.xml**.
 
 ![todo:image_alt_text](how-to-run-the-examples_2.png)
 
-Se abrirá el proyecto y descargará las dependencias automáticamente. Desde la pestaña Proyecto, navega por los ejemplos en la carpeta **src/main/java**. Para ejecutar un ejemplo, simplemente haz clic derecho en el archivo y elige "Ejecutar ..", el ejemplo se ejecutará y la salida se mostrará en la ventana de salida de consola integrada.
+Se abrirá el proyecto y se descargarán las dependencias automáticamente. Desde la pestaña Project, navegue los ejemplos en la carpeta **src/main/java**. Para ejecutar un ejemplo, simplemente haga clic con el botón derecho en el archivo y elija "Run ..", el ejemplo se ejecutará y la salida se mostrará en la ventana de salida de consola incorporada.
 
 ![todo:image_alt_text](how-to-run-the-examples_3.png)
 
 ### Eclipse
 
-Haz clic en el menú **Archivo** y elige **Importar**. Selecciona **Maven** - Proyectos Maven Existentes.
+Haga clic en el menú **File** y elija **Import**. Seleccione **Maven** - Existing Maven Projects.
 
 ![todo:image_alt_text](how-to-run-the-examples_4.png)
 
-Navega hasta la carpeta que clonaste o descargaste de GitHub y selecciona el archivo **pom.xml**.
+Navegue hasta la carpeta que clonó o descargó de GitHub y seleccione el archivo **pom.xml**.
 
 ![todo:image_alt_text](how-to-run-the-examples_5.png)
 
-Se abrirá el proyecto y descargará las dependencias automáticamente. Desde la pestaña del Explorador de Paquetes, navega por los ejemplos en la carpeta **src/main/java**. Para ejecutar un ejemplo, simplemente haz clic derecho en el archivo y elige **Run As** - **Java Application**, el ejemplo se ejecutará y la salida se mostrará en la ventana de salida de la consola integrada.
+Se abrirá el proyecto y se descargarán las dependencias automáticamente. Desde la pestaña Package Explorer, navegue los ejemplos en la carpeta **src/main/java**. Para ejecutar un ejemplo, simplemente haga clic con el botón derecho en el archivo y elija **Run As** - **Java Application**, el ejemplo se ejecutará y la salida se mostrará en la ventana de salida de consola incorporada.
 
 ![todo:image_alt_text](how-to-run-the-examples_6.png)
 
 ### NetBeans
 
-Haz clic en el menú **File** y elige **Open Project**. Navega a la carpeta que clonaste o descargaste de GitHub. El icono de la carpeta **Examples** mostrará que es un proyecto Maven. Selecciona Examples y ábrelo.
+Haga clic en el menú **File** y seleccione **Open Project**. Navegue a la carpeta que clonó o descargó de GitHub. El ícono de la carpeta **Examples** mostrará que es un proyecto Maven. Seleccione Examples y ábralo.
 
 ![todo:image_alt_text](how-to-run-the-examples_7.png)
 
-Se abrirá el proyecto y descargará las dependencias automáticamente. Desde la pestaña Proyectos, navega por los ejemplos en **source packages**. Para ejecutar un ejemplo, simplemente haz clic derecho en el archivo y elige **Run File**, el ejemplo se ejecutará y la salida se mostrará en la ventana de salida de la consola integrada.
+Se abrirá el proyecto y descargará las dependencias automáticamente. Desde la pestaña Projects, explore los ejemplos en **source packages**. Para ejecutar un ejemplo, simplemente haga clic derecho en el archivo y seleccione **Run File**, el ejemplo se ejecutará y la salida se mostrará en la ventana de consola incorporada.
 
 ![todo:image_alt_text](how-to-run-the-examples_8.png)
 
-### Contribute
+### Contribuir
 
-Si deseas agregar o mejorar un ejemplo, te animamos a contribuir al proyecto. All examples and showcase projects in this repository are open source and can be freely used in your own applications.
+Si desea agregar o mejorar un ejemplo, lo animamos a contribuir al proyecto. Todos los ejemplos y proyectos de muestra en este repositorio son de código abierto y pueden usarse libremente en sus propias aplicaciones.
 
-Todos los ejemplos y proyectos de demostración en este repositorio son de código abierto y pueden ser utilizados libremente en sus propias aplicaciones.
+Para contribuir, puede bifurcar el repositorio, editar el código fuente y crear una solicitud de extracción. Revisaremos los cambios y los incluiremos en el repositorio si resultan útiles.
 
-To contribute, you can fork the repository, edit the source code and create a pull request. We will review the changes and include it in the repository if found helpful.
-
-Para contribuir, puedes hacer un fork del repositorio, editar el código fuente y crear una solicitud de extracción. Revisaremos los cambios y los incluiremos en el repositorio si resultan útiles.
