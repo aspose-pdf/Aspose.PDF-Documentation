@@ -1,26 +1,25 @@
 ---
-title: Извлечение абзаца из PDF
-linktitle: Извлечение абзаца
+title: Извлечь абзац из PDF
+linktitle: Извлечь абзац
 type: docs
 weight: 20
 url: /ru/androidjava/extract-paragraph-from-pdf/
-description: В этой статье описывается, как использовать ParagraphAbsorber - специальный инструмент в Aspose.PDF для извлечения текста из PDF-документов.
-lastmod: "2021-06-05"
+description: Узнайте, как извлекать конкретные абзацы из PDF‑документа в Android/Java с помощью Aspose.PDF для извлечения содержимого.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Извлечение текста из PDF-документа в форме абзацев
+## Извлечь текст из PDF‑документа в виде абзацев
 
-Мы можем получить текст из PDF-документа, выполнив поиск определенного текста (используя "обычный текст" или "регулярные выражения") на одной странице или во всем документе, или мы можем получить полный текст одной страницы, диапазона страниц или всего документа.
- Однако, в некоторых случаях вам требуется извлечь абзацы из PDF-документа или текст в виде абзацев. Мы реализовали функциональность для поиска разделов и абзацев в тексте страниц PDF-документа. Мы представили класс ParagraphAbsorber (как TextFragmentAbsorber и TextAbsorber), который можно использовать для извлечения абзацев из PDF-документов. Существует два следующих способа, которыми вы можете использовать ParagraphAbsorber:
+Мы можем получить текст из PDF‑документа, ищя определённый текст (using "plain text" or "regular expressions") на одной странице или во всём документе, либо получить полный текст одной страницы, диапазона страниц или всего документа. Однако в некоторых случаях вам требуется извлекать абзацы из PDF‑документа или текст в виде абзацев. Мы реализовали функциональность поиска разделов и абзацев в тексте страниц PDF‑документов. Мы представили класс ParagraphAbsorber (как TextFragmentAbsorber и TextAbsorber), который можно использовать для извлечения абзацев из PDF‑документов. Существует два следующих способа использования ParagraphAbsorber:
 
-**1- Путем обведения границ разделов и абзацев текста на странице PDF:**
+**1- По рисованию границы разделов и абзацев текста на странице PDF:**
 
 ```java
 public static void ExtractParagraph() {
-        // Путь к каталогу с документами.
+        // The path to the documents directory.
         Document doc = new Document(_dataDir + "input.pdf");
         Page page = doc.getPages().get_Item(2);
 
@@ -52,7 +51,7 @@ public static void ExtractParagraph() {
 
     private static void DrawPolygonOnPage(Point[] polygon, Page page) {
         page.getContents().add(new GSave());
-        page.getContents().add(new ConcatenateMatrix(1, 0, 1, 0, 0));
+        page.getContents().add(new ConcatenateMatrix(1, 0, 0, 1, 0, 0));
         page.getContents().add(new SetRGBColorStroke(0, 0, 1));
         page.getContents().add(new SetLineWidth(1));
         page.getContents().add(new MoveTo(polygon[0].getX(), polygon[0].getY()));
@@ -65,13 +64,13 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- Путем итерации по коллекции абзацев и получения их текста:**
+**2- Итерация по коллекции абзацев и получение их текста:**
 
 ```java
  public static void ExtractParagraph02() {
-        // Открыть существующий PDF файл
+        // Open an existing PDF file
         Document doc = new Document(_dataDir + "input.pdf");
-        // Инициализация ParagraphAbsorber
+        // Instantiate ParagraphAbsorber
         ParagraphAbsorber absorber = new ParagraphAbsorber();
         absorber.visit(doc);
 
@@ -91,7 +90,7 @@ public static void ExtractParagraph() {
                     }
                     paragraphText.append("\r\n");
 
-                    System.out.println("Абзац " + j + " раздела " + i + " на странице" + ":" + markup.getNumber());
+                    System.out.println("Paragraph " + j + " of section " + i + " on page" + ":" + markup.getNumber());
                     System.out.println(paragraphText.toString());
 
                     j++;
@@ -101,3 +100,4 @@ public static void ExtractParagraph() {
         }
     }
 ```
+

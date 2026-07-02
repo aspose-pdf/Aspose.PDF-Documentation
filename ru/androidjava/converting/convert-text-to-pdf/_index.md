@@ -1,11 +1,11 @@
 ---
-title: Convert Text to PDF
-linktitle: Convert Text to PDF
+title: Преобразовать текст в PDF
+linktitle: Преобразовать текст в PDF
 type: docs
 weight: 300
 url: /ru/androidjava/convert-text-to-pdf/
-lastmod: "2021-06-05"
-description: Aspose.PDF for Android via Java позволяет конвертировать простой текстовый файл в PDF или конвертировать предварительно форматированный текстовый файл в PDF.
+lastmod: "2026-07-01"
+description: Aspose.PDF for Android via Java позволяет преобразовывать обычный текстовый файл в PDF или преобразовывать предварительно отформатированный текстовый файл в PDF.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,24 +17,23 @@ sitemap:
 
 {{% /alert %}}
 
-**Aspose.PDF for Android via Java** предоставляет возможность конвертировать текстовые файлы в формат PDF. В этой статье мы демонстрируем, как легко и эффективно мы можем конвертировать текстовый файл в PDF, используя Aspose.PDF.
+**Aspose.PDF for Android via Java** предоставляет возможность преобразовывать текстовые файлы в формат PDF. В этой статье мы покажем, как легко и эффективно можно преобразовать текстовый файл в PDF с помощью Aspose.PDF.
 
-Когда вам нужно конвертировать текстовый файл в PDF, сначала прочитайте исходный текстовый файл в некотором ридере.
- Мы использовали StringBuilder для чтения содержимого текстового файла. Создайте объект Document и добавьте новую страницу в коллекцию Pages. Создайте новый объект TextFragment и передайте объект StringBuilder в его конструктор. Добавьте новый параграф в коллекцию Paragraphs, используя объект TextFragment, и сохраните полученный PDF-файл, используя метод Save класса Document.
+Когда необходимо преобразовать файл Text в PDF, сначала считайте исходный текстовый файл с помощью какого‑либо считывателя. Мы использовали StringBuilder для чтения содержимого файла Text. Создайте объект Document и добавьте новую страницу в коллекцию Pages. Создайте новый объект TextFragment и передайте объект StringBuilder в его конструктор. Добавьте новый абзац в коллекцию Paragraphs, используя объект TextFragment, и сохраните полученный PDF‑файл с помощью метода Save класса Document.
 
-## Конвертировать текстовый файл в PDF
+## Преобразовать обычный текстовый файл в PDF
 
 ```java
 public void convertTXTtoPDF_Simple () {
-        // Инициализировать объект документа
+        // Initialize document object
 
         File pdfDocumentFileName=new File(fileStorage, "demo_txt.pdf");
         File txtDocumentFileName=new File(fileStorage, "Conversion/rfc822.txt");
 
-        // Создать объект Document, вызвав его пустой конструктор
+        // Instantiate a Document object by calling its empty constructor
         document=new Document();
 
-        // Добавить новую страницу в коллекцию Pages документа
+        // Add a new page in Pages collection of Document
         Page page=document.getPages().add();
 
         String string;
@@ -63,15 +62,16 @@ public void convertTXTtoPDF_Simple () {
             return;
         }
 
-        // Создать экземпляр TextFragment и передать текст из объекта reader в его
-        // конструктор в качестве аргумента
+
+        // Create an instance of TextFragment and pass the text from reader object to its
+        // constructor as argument
         TextFragment text=new TextFragment(stringBuilder.toString());
 
-        // Добавить новый текстовый параграф в коллекцию параграфов и передать объект
-        // TextFragment
+        // Add a new text paragraph in paragraphs collection and pass the TextFragment
+        // object
         page.getParagraphs().add(text);
 
-        // Сохранить полученный PDF-файл
+        // Save resultant PDF file
         try {
             document.save(pdfDocumentFileName.toString());
         } catch (Exception e) {
@@ -83,7 +83,7 @@ public void convertTXTtoPDF_Simple () {
 
 ```
 
-## Преобразование предварительно отформатированного текстового файла в PDF
+## Конвертировать предварительно отформатированный текстовый файл в PDF
 
 ```java
     public void convertPreFormattedTextToPdf () {
@@ -92,7 +92,7 @@ public void convertTXTtoPDF_Simple () {
         File pdfDocumentFileName=new File(fileStorage, "demo_txt.pdf");
         Path txtDocumentFileName=Paths.get(txtDocumentFile.toString());
 
-        // Читать текстовый файл как массив строк
+        // Read the text file as array of string
         List<String> lines;
         try {
             lines=Files.readAllLines(txtDocumentFileName, ENCODING);
@@ -101,23 +101,23 @@ public void convertTXTtoPDF_Simple () {
             return;
         }
 
-        // Создать экземпляр объекта Document, используя его пустой конструктор
+        // Instantiate a Document object by calling its empty constructor
         document=new Document();
 
-        // Добавить новую страницу в коллекцию страниц документа
+        // Add a new page in Pages collection of Document
         Page page=document.getPages().add();
         int count=4;
 
         Font font=FontRepository.findFont("Droid Sans Mono");
-        // Установить левые и правые поля для лучшего представления
+        // Set left and right margins for better presentation
         page.getPageInfo().getMargin().setLeft(20);
         page.getPageInfo().getMargin().setRight(10);
         page.getPageInfo().getDefaultTextState().setFont(font);
         page.getPageInfo().getDefaultTextState().setFontSize(12);
 
         for (String line : lines) {
-            // проверить, содержит ли строка символ "подача формы"
-            // см. https://en.wikipedia.org/wiki/Page_break
+            // check if line contains "form feed" character
+            // see https://en.wikipedia.org/wiki/Page_break
             if (line.startsWith("\f")) {
                 page=document.getPages().add();
                 page.getPageInfo().getMargin().setLeft(20);
@@ -125,16 +125,17 @@ public void convertTXTtoPDF_Simple () {
                 page.getPageInfo().getDefaultTextState().setFont(font);
                 page.getPageInfo().getDefaultTextState().setFontSize(12);
             } else {
-                // Создать экземпляр TextFragment и
-                // передать строку его
-                // конструктору как аргумент
+                // Create an instance of TextFragment and
+                // pass the line to its
+                // constructor as argument
                 TextFragment text=new TextFragment(line);
 
-                // Добавить новый текстовый абзац в коллекцию абзацев и передать объект TextFragment
+                // Add a new text paragraph in paragraphs collection and pass the TextFragment
+                // object
                 page.getParagraphs().add(text);
             }
         }
-        // Сохранить полученный PDF файл
+        // Save resultant PDF file
         try {
             document.save(pdfDocumentFileName.toString());
         } catch (Exception e) {
@@ -145,3 +146,6 @@ public void convertTXTtoPDF_Simple () {
     }
 
 ```
+
+
+

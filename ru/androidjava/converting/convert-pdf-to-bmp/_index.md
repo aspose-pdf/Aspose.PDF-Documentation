@@ -1,38 +1,37 @@
 ---
-title: Конвертировать PDF в BMP
-linktitle: Конвертировать PDF в BMP
+title: Преобразовать PDF в BMP
+linktitle: Преобразовать PDF в BMP
 type: docs
 weight: 40
 url: /ru/androidjava/convert-pdf-to-bmp/
-lastmod: "2021-06-05"
-description: В этой статье описывается, как конвертировать страницы PDF в изображение BMP, конвертировать все страницы в изображения BMP и конвертировать одну страницу PDF в изображение BMP с помощью Java.
+lastmod: "2026-07-01"
+description: В этой статье описывается, как преобразовать страницы PDF в изображение BMP, как преобразовать все страницы в изображения BMP и как преобразовать отдельную страницу PDF в изображение BMP с помощью Java.
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Класс [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) позволяет конвертировать страницы PDF в изображения <abbr title="Bitmap Image File">BMP</abbr>. Этот класс предоставляет метод под названием [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process), который позволяет конвертировать конкретную страницу PDF файла в формат изображения Bmp.
+Этот [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) класс позволяет конвертировать страницы PDF в <abbr title="Bitmap Image File">BMP</abbr> изображения. Этот класс предоставляет метод с именем [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) который позволяет преобразовать конкретную страницу PDF‑файла в формат изображения Bmp.
 
 {{% alert color="primary" %}}
 
-Попробуйте онлайн. Вы можете проверить качество преобразования Aspose.PDF и просмотреть результаты онлайн по этой ссылке [products.aspose.app/pdf/conversion/pdf-to-bmp](https://products.aspose.app/pdf/conversion/pdf-to-bmp)
+Попробуйте онлайн. Вы можете проверить качество конвертации Aspose.PDF и просмотреть результаты онлайн по этой ссылке [products.aspose.app/pdf/conversion/pdf-to-bmp](https://products.aspose.app/pdf/conversion/pdf-to-bmp)
 
 {{% /alert %}}
 
-Класс BmpDevice позволяет конвертировать страницы PDF в изображения BMP.
- Этот класс предоставляет метод с именем process(..), который позволяет преобразовать определенную страницу PDF файла в изображение BMP.
+Класс BmpDevice позволяет конвертировать страницы PDF в BMP‑изображения. Этот класс предоставляет метод с именем process(..), который позволяет конвертировать определённую страницу PDF‑файла в BMP‑изображение.
 
-## Преобразование страницы PDF в изображение BMP
+## Конвертировать страницу PDF в BMP‑изображение
 
-Чтобы преобразовать страницу PDF в изображение BMP:
+Чтобы конвертировать страницу PDF в BMP‑изображение:
 
-1. Создайте объект класса Document, чтобы получить нужную страницу, которую вы хотите преобразовать.
-1. Вызовите метод process(..), чтобы преобразовать страницу в BMP.
+1. Создайте объект класса Document, чтобы получить нужную страницу для конвертации.
+1. Вызовите метод process(..), чтобы конвертировать страницу в BMP.
 
-Следующий пример кода показывает, как преобразовать определенную страницу в изображение BMP.
+В следующем фрагменте кода показано, как преобразовать конкретную страницу в изображение BMP.
 
 ```java
-//Преобразование PDF в BMP
+//Convert PDF to BMP
     public void convertPDFtoBMP() {
         try {
             document = new Document(inputStream);
@@ -41,21 +40,21 @@ sitemap:
             return;
         }
         File file = new File(fileStorage, "PDF-to-BMP.bmp");
-        // Создайте объект потока для сохранения выходного изображения
+        // Create stream object to save the output image
         try {
             OutputStream imageStream =
                     new FileOutputStream(file.toString());
 
-            // Создайте объект Resolution
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
 
-            // Создайте объект BmpDevice с определенным разрешением
+            // Create BmpDevice object with particular resolution
             BmpDevice BmpDevice = new BmpDevice(resolution);
 
-            // Преобразуйте определенную страницу и сохраните изображение в поток
+            // Convert a particular page and save the image to stream
             BmpDevice.process(document.getPages().get_Item(1), imageStream);
 
-            // Закройте поток
+            // Close the stream
             imageStream.close();
             resultMessage.setText(file.toString());
         } catch (IOException e) {
@@ -64,9 +63,9 @@ sitemap:
     }
 ```
 
-## Преобразование всех страниц PDF в изображения BMP
+## Конвертировать все страницы PDF в BMP-изображения
 
-Чтобы преобразовать все страницы PDF файла в формат BMP, необходимо перебрать каждую отдельную страницу и преобразовать её в формат BMP. В следующем фрагменте кода показано, как перебрать все страницы PDF файла и преобразовать их в BMP.
+Чтобы конвертировать все страницы PDF‑файла в формат BMP, необходимо пройтись по ним, получить каждую отдельную страницу и преобразовать её в BMP‑формат. Ниже приведён фрагмент кода, показывающий, как пройтись по всем страницам PDF‑файла и преобразовать их в BMP.
 
 ```java
 public void convertPDFtoBMP_AllPages() {
@@ -77,9 +76,9 @@ public void convertPDFtoBMP_AllPages() {
             return;
         }
 
-        // Перебор всех страниц PDF файла
+        // Loop through all the pages of PDF file
         for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
-            // Создать объект потока для сохранения выходного изображения
+            // Create stream object to save the output image
             File file = new File(fileStorage, "PDF-to-BMP"+pageCount+".BMP");
             java.io.OutputStream imageStream;
             try {
@@ -89,15 +88,15 @@ public void convertPDFtoBMP_AllPages() {
                 return;
             }
 
-            // Создать объект разрешения
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
-            // Создать объект BmpDevice с определённым разрешением
+            // Create BmpDevice object with particular resolution
             BmpDevice BmpDevice = new BmpDevice(resolution);
 
-            // Преобразовать конкретную страницу и сохранить изображение в поток
+            // Convert a particular page and save the image to stream
             BmpDevice.process(document.getPages().get_Item(pageCount), imageStream);
 
-            // Закрыть поток
+            // Close the stream
             try {
                 imageStream.close();
             } catch (Exception e) {
@@ -109,12 +108,11 @@ public void convertPDFtoBMP_AllPages() {
     }
 ```
 
+## Преобразовать определённый регион страницы в изображение (DOM)
 
-## Преобразование конкретной области страницы в изображение (DOM)
+Мы можем конвертировать PDF‑документы в различные форматы Image, используя объекты image devices из Aspose.PDF. Однако иногда возникает требование конвертировать определённый регион страницы в формат Image. Мы можем выполнить это требование в два шага. Сначала обрезаем страницу PDF до нужного региона, а затем конвертируем её в изображение, используя нужный объект Image device.
 
-Мы можем преобразовать PDF-документы в различные форматы изображений, используя объекты устройств изображения Aspose.PDF. Однако иногда возникает необходимость преобразовать конкретную область страницы в формат изображения. Мы можем выполнить это требование в два этапа. Сначала обрезать страницу PDF до нужной области, а затем преобразовать ее в изображение, используя нужный объект устройства изображения.
-
-Следующий фрагмент кода показывает, как преобразовать страницы PDF в изображения.
+Следующий фрагмент кода показывает, как конвертировать страницы PDF в изображения.
 
 ```java
 public void convertPDFtoBmp_ParticularPageRegion() {
@@ -124,25 +122,25 @@ public void convertPDFtoBmp_ParticularPageRegion() {
             resultMessage.setText(e.getMessage());
             return;
         }
-        // Получить прямоугольник конкретной области страницы
+        // Get rectangle of particular page region
         //x=0,y=0, w=200, h=125;
         Rectangle pageRect = new Rectangle(0, 0, 200, 125);
-        // установить значение CropBox в соответствии с прямоугольником нужной области страницы
+        // set CropBox value as per rectangle of desired page region
         document.getPages().get_Item(1).setCropBox(pageRect);
-        // сохранить обрезанный документ в поток
+        // save cropped document into stream
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         document.save(outStream);
 
-        // открыть обрезанный PDF-документ из потока и преобразовать в изображение
+        // open cropped PDF document from stream and convert to image
         document = new Document(new ByteArrayInputStream(outStream.toByteArray()));
-        // Создать объект Resolution
+        // Create Resolution object
         Resolution resolution = new Resolution(300);
-        // Создать BMP-устройство с указанными атрибутами
+        // Create BMP device with specified attributes
         BmpDevice BmpDevice = new BmpDevice(resolution);
 
         File file = new File(fileStorage, "PDF-to-BMP.BMP");
         try {
-            // Преобразовать конкретную страницу и сохранить изображение в поток
+            // Convert a particular page and save the image to stream
             BmpDevice.process(document.getPages().get_Item(1), file.toString());
         }
         catch (Exception e) {
