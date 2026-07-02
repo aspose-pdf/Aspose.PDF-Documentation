@@ -4,8 +4,8 @@ linktitle: Extrair Parágrafo
 type: docs
 weight: 20
 url: /pt/androidjava/extract-paragraph-from-pdf/
-description: Este artigo descreve como usar o ParagraphAbsorber - uma ferramenta especial no Aspose.PDF para extrair texto de documentos PDF.
-lastmod: "2021-06-05"
+description: Saiba como extrair parágrafos específicos de um documento PDF em Android/Java usando Aspose.PDF para extração de conteúdo.
+lastmod: "2026-07-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,14 +13,13 @@ sitemap:
 
 ## Extrair Texto de documento PDF em forma de Parágrafos
 
-Podemos obter texto de um documento PDF pesquisando um texto específico (usando "texto simples" ou "expressões regulares") de uma única página ou de todo o documento, ou podemos obter o texto completo de uma única página, intervalo de páginas ou documento completo.
- Porém, em alguns casos, você precisa extrair parágrafos de um documento PDF ou texto na forma de Parágrafos. Implementamos a funcionalidade para pesquisar seções e parágrafos no texto das páginas do documento PDF. Introduzimos a Classe ParagraphAbsorber (como TextFragmentAbsorber e TextAbsorber), que pode ser usada para extrair parágrafos de documentos PDF. Existem duas maneiras a seguir nas quais você pode usar o ParagraphAbsorber:
+Podemos obter texto de um documento PDF pesquisando um texto específico (usando "plain text" ou "regular expressions") em uma única página ou em todo o documento, ou podemos obter o texto completo de uma única página, intervalo de páginas ou do documento completo. No entanto, em alguns casos, você precisa extrair parágrafos de um documento PDF ou texto na forma de Parágrafos. Implementamos funcionalidade para pesquisar seções e parágrafos no texto das páginas de documentos PDF. Introduzimos a classe ParagraphAbsorber (como TextFragmentAbsorber e TextAbsorber), que pode ser usada para extrair parágrafos de documentos PDF. Existem duas maneiras a seguir nas quais você pode usar o ParagraphAbsorber:
 
-**1- Desenhando a borda das seções e parágrafos de texto na página do PDF:**
+**1- Desenhando a borda das seções e parágrafos de texto na página PDF:**
 
 ```java
 public static void ExtractParagraph() {
-        // O caminho para o diretório de documentos.
+        // The path to the documents directory.
         Document doc = new Document(_dataDir + "input.pdf");
         Page page = doc.getPages().get_Item(2);
 
@@ -52,7 +51,7 @@ public static void ExtractParagraph() {
 
     private static void DrawPolygonOnPage(Point[] polygon, Page page) {
         page.getContents().add(new GSave());
-        page.getContents().add(new ConcatenateMatrix(1, 0, 1, 0, 0, 0));
+        page.getContents().add(new ConcatenateMatrix(1, 0, 0, 1, 0, 0));
         page.getContents().add(new SetRGBColorStroke(0, 0, 1));
         page.getContents().add(new SetLineWidth(1));
         page.getContents().add(new MoveTo(polygon[0].getX(), polygon[0].getY()));
@@ -65,13 +64,13 @@ public static void ExtractParagraph() {
     }
 ```
 
-**2- Ao iterar pela coleção de parágrafos e obter o texto deles:**
+**2- Iterando pela coleção de parágrafos e obtendo o texto deles:**
 
 ```java
  public static void ExtractParagraph02() {
-        // Abrir um arquivo PDF existente
+        // Open an existing PDF file
         Document doc = new Document(_dataDir + "input.pdf");
-        // Instanciar ParagraphAbsorber
+        // Instantiate ParagraphAbsorber
         ParagraphAbsorber absorber = new ParagraphAbsorber();
         absorber.visit(doc);
 
@@ -91,7 +90,7 @@ public static void ExtractParagraph() {
                     }
                     paragraphText.append("\r\n");
 
-                    System.out.println("Parágrafo " + j + " da seção " + i + " na página" + ":" + markup.getNumber());
+                    System.out.println("Paragraph " + j + " of section " + i + " on page" + ":" + markup.getNumber());
                     System.out.println(paragraphText.toString());
 
                     j++;
@@ -101,3 +100,4 @@ public static void ExtractParagraph() {
         }
     }
 ```
+
