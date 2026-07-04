@@ -23,8 +23,8 @@ El ejemplo es simple y conciso, lo que lo hace fácil de entender e implementar.
 
 **Aspose.PDF for Go** permite una reparación de PDF de alta calidad. El archivo PDF puede no abrirse por cualquier razón, independientemente del programa o navegador. En algunos casos el documento puede ser restaurado, prueba el siguiente código y compruébalo tú mismo.
 
-1. Abrir un documento PDF usando [Abrir](https://reference.aspose.com/pdf/go-cpp/core/open/) función.
-1. Reparar el documento PDF con [Reparar](https://reference.aspose.com/pdf/go-cpp/organize/repair/) función.
+1. Abrir un documento PDF usando [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) función.
+1. Reparar el documento PDF con [Repair](https://reference.aspose.com/pdf/go-cpp/organize/repair/) función.
 1. Guardar el documento PDF reparado usando [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) método.
 
 ```go

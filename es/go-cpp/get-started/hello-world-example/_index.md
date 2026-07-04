@@ -17,7 +17,7 @@ SoftwareApplication: go-cpp
 
 Un ejemplo "Hello World" se utiliza tradicionalmente para introducir características de un lenguaje de programación o software con un caso de uso simple.
 
-**Aspose.PDF for Go** es una API de PDF rica en funciones que permite a los desarrolladores incrustar la creación, manipulación y conversión de documentos PDF con Go. Soporta muchos formatos de archivo populares, incluyendo PDF, TXT, XPS, EPUB, TEX, DOC, DOCX, PPTX, formatos de imagen, etc. En este artículo, estamos creando un documento PDF que contiene el texto \u0022Hello World!\u0022. Después de instalar Aspose.PDF for Go en su entorno, puede ejecutar el ejemplo de código para ver cómo funciona la API de Aspose.PDF.
+**Aspose.PDF for Go** es una API de PDF rica en funciones que permite a los desarrolladores incrustar la creación, manipulación y conversión de documentos PDF con Go. Soporta muchos formatos de archivo populares, incluyendo PDF, TXT, XPS, EPUB, TEX, DOC, DOCX, PPTX, formatos de imagen, etc. En este artículo, estamos creando un documento PDF que contiene el texto "Hello World!". Después de instalar Aspose.PDF for Go en su entorno, puede ejecutar el ejemplo de código para ver cómo funciona la API de Aspose.PDF.
 El siguiente fragmento de código sigue estos pasos:
 
 1. Cree una nueva instancia de documento PDF.

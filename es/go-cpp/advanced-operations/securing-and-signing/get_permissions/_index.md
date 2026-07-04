@@ -4,7 +4,7 @@ linktitle: Obtener permisos
 type: docs
 weight: 60
 url: /es/go-cpp/get-permissions/
-description: Leer y mostrar los permisos de acceso de un documento PDF protegido con contraseña con Aspose.PDF for Go via C\u002B\u002B.
+description: Leer y mostrar los permisos de acceso de un documento PDF protegido con contraseña con Aspose.PDF for Go via C++.
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## Obtener permisos de un documento PDF protegido con contraseña
 
-Este ejemplo muestra cómo recuperar, interpretar y mostrar los permisos de acceso de un documento PDF protegido con contraseña en Go usando Aspose.PDF for Go via C\u002B\u002B.
+Este ejemplo muestra cómo recuperar, interpretar y mostrar los permisos de acceso de un documento PDF protegido con contraseña en Go usando Aspose.PDF for Go via C++.
 El PDF se abre con la contraseña de propietario, sus indicadores de permiso se leen, y cada permiso habilitado se convierte en una descripción legible por humanos antes de imprimirse en la consola.
 
 1. Definir asignaciones de nombres de permisos.

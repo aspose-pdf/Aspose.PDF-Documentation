@@ -4,7 +4,7 @@ linktitle: Descifrar archivo PDF
 type: docs
 weight: 40
 url: /es/go-cpp/decrypt-pdf/
-description: Descifrar archivo PDF con Aspose.PDF for Go via C\u002B\u002B.
+description: Descifrar archivo PDF con Aspose.PDF for Go via C++.
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## Descifrar archivo PDF usando contraseña del propietario
 
-Puede abrir, descifrar y guardar un documento PDF protegido con contraseña usando Aspose.PDF for Go vía C\u002B\u002B. El archivo PDF se abre con la contraseña del propietario, se descifra para eliminar todas las restricciones de seguridad y luego se guarda como un nuevo documento sin protección.
+Puede abrir, descifrar y guardar un documento PDF protegido con contraseña usando Aspose.PDF for Go vía C++. El archivo PDF se abre con la contraseña del propietario, se descifra para eliminar todas las restricciones de seguridad y luego se guarda como un nuevo documento sin protección.
 
 1. Llamar [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) y proporcione el nombre del archivo junto con la contraseña del propietario para acceder al PDF cifrado.
 1. Llame al [Decrypt](https://reference.aspose.com/pdf/go-cpp/security/decrypt/) método para eliminar la protección con contraseña y todas las restricciones de seguridad asociadas del documento.

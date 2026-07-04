@@ -21,8 +21,8 @@ El fragmento de código Go proporcionado muestra cómo ejecutar la operación Ad
 
 1. El [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) La función permite al programa cargar un archivo PDF existente (sample.pdf) para su manipulación. Esto es esencial para cualquier operación relacionada con PDF, como editar, agregar contenido o leer datos.
 1. El [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) El método se utiliza para insertar una nueva página en blanco en el documento PDF existente. Esto es útil para ampliar un documento o prepararlo para contenido adicional.
-1. El [Guardar](https://reference.aspose.com/pdf/go-cpp/core/save/) El método garantiza que las modificaciones al PDF se escriban de nuevo en el archivo. Este paso es crucial para preservar los cambios, como la adición de nuevas páginas.
-1. El [Cerrar](https://reference.aspose.com/pdf/go-cpp/core/close/) El método se llama usando defer para liberar cualquier recurso asignado durante las operaciones con PDF. Esto es importante para prevenir fugas de memoria y garantizar un uso eficiente de los recursos.
+1. El [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) El método garantiza que las modificaciones al PDF se escriban de nuevo en el archivo. Este paso es crucial para preservar los cambios, como la adición de nuevas páginas.
+1. El [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) El método se llama usando defer para liberar cualquier recurso asignado durante las operaciones con PDF. Esto es importante para prevenir fugas de memoria y garantizar un uso eficiente de los recursos.
 
 Este fragmento es un ejemplo conciso y eficiente de cómo usar la biblioteca Aspose.PDF Go para tareas básicas de manipulación de PDF.
 

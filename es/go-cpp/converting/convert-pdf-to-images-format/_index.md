@@ -19,7 +19,7 @@ SoftwareApplication: go-cpp
 
 En este artículo, le mostraremos las opciones para convertir PDF a formatos de imagen.
 
-Los documentos escaneados previamente a menudo se guardan en el formato de archivo PDF. Sin embargo, ¿necesita editarlos en un editor gráfico o enviarlos posteriormente en formato de imagen? Tenemos una herramienta universal para usted que convierte PDF a imágenes usando **Aspose.PDF for Go via C\u002B\u002B**.
+Los documentos escaneados previamente a menudo se guardan en el formato de archivo PDF. Sin embargo, ¿necesita editarlos en un editor gráfico o enviarlos posteriormente en formato de imagen? Tenemos una herramienta universal para usted que convierte PDF a imágenes usando **Aspose.PDF for Go via C++**.
 La tarea más común es cuando necesitas guardar un documento PDF completo o algunas páginas específicas de un documento como un conjunto de imágenes. **Aspose.PDF for Go via C++** permite convertir PDF a formatos JPG y PNG para simplificar los pasos necesarios para obtener tus imágenes de un archivo PDF específico.
 
 **Aspose.PDF for Go via C++** soporta la conversión de PDF a varios formatos de imagen. Por favor, revisa la sección [Formatos de archivo compatibles con Aspose.PDF](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/).
@@ -107,7 +107,7 @@ Aspose.PDF for Go le presenta una aplicación gratuita en línea ["PDF a TIFF"](
 El fragmento de código Go proporcionado demuestra cómo convertir la primera página de un documento PDF en una imagen PNG usando la biblioteca Aspose.PDF:
 
 1. Abre un documento PDF.
-1. Convertir una página a PNG usando [PáginaAPng](https://reference.aspose.com/pdf/go-cpp/convert/pagetopng/) función.
+1. Convertir una página a PNG usando [PageToPng](https://reference.aspose.com/pdf/go-cpp/convert/pagetopng/) función.
 1. Cierre el documento PDF y libere cualquier recurso asignado.
 
 ```go
@@ -150,7 +150,7 @@ Aspose.PDF for Go le presenta una aplicación gratuita en línea ["PDF a PNG"](h
 El fragmento de código Go proporcionado demuestra cómo convertir la primera página de un documento PDF en una imagen SVG utilizando la biblioteca Aspose.PDF:
 
 1. Abre un documento PDF.
-1. Convertir una página a SVG usando [PáginaASvg](https://reference.aspose.com/pdf/go-cpp/convert/pagetosvg/) función.
+1. Convertir una página a SVG usando [PageToSvg](https://reference.aspose.com/pdf/go-cpp/convert/pagetosvg/) función.
 1. Cierre el documento PDF y libere cualquier recurso asignado.
 
 ```go

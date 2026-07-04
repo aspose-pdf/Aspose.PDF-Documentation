@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Licenciamiento de Aspose.PDF para Go vía C\u002B\u002B
-Abstract: La página de Licenciamiento de Aspose.PDF para Go a través de C\u002B\u002B explica las opciones de licencia disponibles para el producto. Los clientes pueden elegir entre una Classic License, una Metered License o una licencia limitada para propósitos de evaluación. La página también destaca los beneficios de obtener una licencia adecuada, como desbloquear la funcionalidad completa y eliminar las limitaciones de evaluación.
+AlternativeHeadline: Licenciamiento de Aspose.PDF para Go vía C++
+Abstract: La página de Licenciamiento de Aspose.PDF para Go a través de C++ explica las opciones de licencia disponibles para el producto. Los clientes pueden elegir entre una Classic License, una Metered License o una licencia limitada para propósitos de evaluación. La página también destaca los beneficios de obtener una licencia adecuada, como desbloquear la funcionalidad completa y eliminar las limitaciones de evaluación.
 SoftwareApplication: go-cpp
 ---
 

@@ -19,7 +19,7 @@ Puede eliminar páginas de un archivo PDF usando **Aspose.PDF for Go a través d
 
 1. Abriendo un archivo PDF.
 1. Eliminando una página específica con [PageDelete](https://reference.aspose.com/pdf/go-cpp/core/pagedelete/) función.
-1. Guardando el documento usando [Guardar](https://reference.aspose.com/pdf/go-cpp/core/save/) método.
+1. Guardando el documento usando [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) método.
 
 ```go
 

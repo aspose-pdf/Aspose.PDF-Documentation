@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Página de características principales de Aspose.PDF for Go vía C\u002B\u002B
-Abstract: La página de características clave de Aspose.PDF for Go vía C\u002B\u002B describe las capacidades de la biblioteca para trabajar con documentos PDF. Proporciona información sobre las versiones de PDF compatibles y detalla las diversas operaciones que se pueden realizar, como la manipulación de texto e imágenes, la combinación y división de documentos, la gestión de anotaciones y la administración de firmas digitales.
+AlternativeHeadline: Página de características principales de Aspose.PDF for Go vía C++
+Abstract: La página de características clave de Aspose.PDF for Go vía C++ describe las capacidades de la biblioteca para trabajar con documentos PDF. Proporciona información sobre las versiones de PDF compatibles y detalla las diversas operaciones que se pueden realizar, como la manipulación de texto e imágenes, la combinación y división de documentos, la gestión de anotaciones y la administración de firmas digitales.
 SoftwareApplication: go-cpp
 ---
 

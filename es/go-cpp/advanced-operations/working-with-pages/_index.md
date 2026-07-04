@@ -4,14 +4,14 @@ linktitle: Trabajando con páginas
 type: docs
 weight: 20
 url: /es/go-cpp/working-with-pages/
-description: Cómo agregar páginas, rotar páginas, agregar número de página, puedes saber en esta sección. Aspose.PDF for Go via C\u002B\u002B te explica todos los detalles sobre este tema.
+description: Cómo agregar páginas, rotar páginas, agregar número de página, puedes saber en esta sección. Aspose.PDF for Go via C++ te explica todos los detalles sobre este tema.
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Trabajando con páginas PDF usando Aspose.PDF for Go
-Abstract: Aspose.PDF for Go via C\u002B\u002B ofrece un conjunto completo de funciones para trabajar con páginas PDF, lo que permite a los desarrolladores manipular el contenido y la estructura de las páginas con facilidad. La biblioteca soporta operaciones como agregar, eliminar, reordenar y rotar páginas, así como ajustar el tamaño y la orientación de la página. También permite la extracción y el reemplazo del contenido de la página para satisfacer diversas necesidades de procesamiento de documentos. La documentación proporciona instrucciones paso a paso y ejemplos de código para ayudar a los desarrolladores a implementar de manera eficiente las funciones de manipulación de páginas en sus aplicaciones.
+Abstract: Aspose.PDF for Go via C++ ofrece un conjunto completo de funciones para trabajar con páginas PDF, lo que permite a los desarrolladores manipular el contenido y la estructura de las páginas con facilidad. La biblioteca soporta operaciones como agregar, eliminar, reordenar y rotar páginas, así como ajustar el tamaño y la orientación de la página. También permite la extracción y el reemplazo del contenido de la página para satisfacer diversas necesidades de procesamiento de documentos. La documentación proporciona instrucciones paso a paso y ejemplos de código para ayudar a los desarrolladores a implementar de manera eficiente las funciones de manipulación de páginas en sus aplicaciones.
 SoftwareApplication: go-cpp
 ---
 

@@ -21,7 +21,7 @@ Para cifrar documentos de forma fácil y segura, puedes usar Aspose.PDF for Go a
 El PDF está protegido con contraseñas de usuario y de propietario, configurado con permisos de acceso específicos y cifrado usando el algoritmo AES-128 con seguridad compatible con PDF 2.0. El documento cifrado se guarda luego en el disco.
 
 1. Crear un nuevo documento PDF.
-1. Cifrar el documento PDF con [cifrar](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) método.
+1. Cifrar el documento PDF con [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) método.
 1. Especifique una contraseña de usuario para restringir la apertura del documento.
 1. Especifique una contraseña de propietario para controlar los permisos.
 1. Defina acciones permitidas usando una bandera de bits de permisos.

@@ -104,7 +104,7 @@ Aspose.PDF for Go le presenta una aplicación en línea gratuita ["PDF a LaTeX"]
 El fragmento de código Go proporcionado demuestra cómo convertir un documento PDF a TXT utilizando la biblioteca Aspose.PDF:
 
 1. Abrir un documento PDF.
-1. Convertir un archivo PDF a TXT usando [GuardarTxt](https://reference.aspose.com/pdf/go-cpp/convert/savetxt/) función.
+1. Convertir un archivo PDF a TXT usando [SaveTxt](https://reference.aspose.com/pdf/go-cpp/convert/savetxt/) función.
 1. Cierre el documento PDF y libere los recursos asignados.
 
 ```go
@@ -147,7 +147,7 @@ El tipo de archivo XPS está asociado principalmente con la Especificación de P
 El fragmento de código Go proporcionado muestra cómo convertir un documento PDF a XPS utilizando la biblioteca Aspose.PDF:
 
 1. Abrir un documento PDF.
-1. Convertir un archivo PDF a XPS usando [GuardarXps](https://reference.aspose.com/pdf/go-cpp/convert/savexps/) función.
+1. Convertir un archivo PDF a XPS usando [SaveXps](https://reference.aspose.com/pdf/go-cpp/convert/savexps/) función.
 1. Cierre el documento PDF y libere los recursos asignados.
 
 ```go
@@ -186,7 +186,7 @@ Aspose.PDF for Go le presenta una aplicación en línea gratuita ["PDF a XPS"](h
 El fragmento de código Go proporcionado muestra cómo convertir la primera página de un documento PDF a un PDF en escala de grises usando la biblioteca Aspose.PDF:
 
 1. Abrir un documento PDF.
-1. Convertir una página PDF a PDF en escala de grises usando [Página en escala de grises](https://reference.aspose.com/pdf/go-cpp/organize/pagegrayscale/) función.
+1. Convertir una página PDF a PDF en escala de grises usando [PageGrayscale](https://reference.aspose.com/pdf/go-cpp/organize/pagegrayscale/) función.
 1. Cierre el documento PDF y libere los recursos asignados.
 
 Este ejemplo convierte una página específica de su PDF a escala de grises:

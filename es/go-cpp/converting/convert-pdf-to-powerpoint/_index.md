@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Herramienta Golang para Convertir PDF a PowerPoint
-Abstract: Aspose.PDF for Go via C\u002B\u002B ofrece una solución fiable para convertir documentos PDF al formato PowerPoint (PPTX) manteniendo el diseño original, el formato y la estructura del contenido. Esta funcionalidad permite a los desarrolladores transformar sin problemas archivos PDF estáticos en presentaciones dinámicas y editables. La biblioteca ofrece opciones de personalización para controlar el proceso de conversión, garantizando una salida de alta calidad adecuada para uso empresarial y profesional. La documentación proporciona instrucciones paso a paso y ejemplos de código para ayudar a los desarrolladores a integrar eficientemente la conversión de PDF a PowerPoint en sus aplicaciones.
+Abstract: Aspose.PDF for Go via C++ ofrece una solución fiable para convertir documentos PDF al formato PowerPoint (PPTX) manteniendo el diseño original, el formato y la estructura del contenido. Esta funcionalidad permite a los desarrolladores transformar sin problemas archivos PDF estáticos en presentaciones dinámicas y editables. La biblioteca ofrece opciones de personalización para controlar el proceso de conversión, garantizando una salida de alta calidad adecuada para uso empresarial y profesional. La documentación proporciona instrucciones paso a paso y ejemplos de código para ayudar a los desarrolladores a integrar eficientemente la conversión de PDF a PowerPoint en sus aplicaciones.
 SoftwareApplication: go-cpp
 ---
 
