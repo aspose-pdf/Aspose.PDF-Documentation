@@ -4,14 +4,14 @@ linktitle: 打开 PDF
 type: docs
 weight: 20
 url: /zh/go-cpp/open-pdf-document/
-description: 了解如何使用 Aspose.PDF for Go 通过 C\u002B\u002B 打开 PDF 文件。
+description: 了解如何使用 Aspose.PDF for Go 通过 C++ 打开 PDF 文件。
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: 使用 Aspose.PDF for Go 通过 C\u002B\u002B 打开 PDF 文档
-Abstract: Aspose.PDF for Go 通过 C\u002B\u002B 提供强大的功能，以编程方式打开和加载 PDF 文档，使开发者能够轻松访问和操作 PDF 内容。该库支持从多种来源打开 PDF 文件，例如文件路径和内存流，同时确保高效的处理和资源管理。它提供检查文档属性、提取文本和图像以及对已加载的 PDF 执行其他操作的功能。文档包含详细的说明和代码示例，帮助开发者无缝地将 PDF 打开功能集成到其应用程序中。
+AlternativeHeadline: 使用 Aspose.PDF for Go 通过 C++ 打开 PDF 文档
+Abstract: Aspose.PDF for Go 通过 C++ 提供强大的功能，以编程方式打开和加载 PDF 文档，使开发者能够轻松访问和操作 PDF 内容。该库支持从多种来源打开 PDF 文件，例如文件路径和内存流，同时确保高效的处理和资源管理。它提供检查文档属性、提取文本和图像以及对已加载的 PDF 执行其他操作的功能。文档包含详细的说明和代码示例，帮助开发者无缝地将 PDF 打开功能集成到其应用程序中。
 SoftwareApplication: go-cpp
 ---
 

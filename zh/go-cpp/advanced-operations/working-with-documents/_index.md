@@ -4,14 +4,14 @@ linktitle: 处理文档
 type: docs
 weight: 10
 url: /zh/go-cpp/working-with-documents/
-description: 本文向您描述了使用 Aspose.PDF for Go 通过 C\u002B\u002B 库可以对文档进行的操作。
+description: 本文向您描述了使用 Aspose.PDF for Go 通过 C++ 库可以对文档进行的操作。
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 使用 Aspose.PDF for Go 处理 PDF 文档
-Abstract: Aspose.PDF for Go via C\u002B\u002B 提供了广泛的功能用于处理 PDF 文档，使开发者能够优化和压缩 PDF。这些功能实现了高效的文档管理和自定义，以满足各种应用需求。文档提供了分步指导和代码示例，帮助开发者在其 C\u002B\u002B 应用中有效利用这些功能处理 PDF 文档。
+Abstract: Aspose.PDF for Go via C++ 提供了广泛的功能用于处理 PDF 文档，使开发者能够优化和压缩 PDF。这些功能实现了高效的文档管理和自定义，以满足各种应用需求。文档提供了分步指导和代码示例，帮助开发者在其 C++ 应用中有效利用这些功能处理 PDF 文档。
 SoftwareApplication: go-cpp
 ---
 

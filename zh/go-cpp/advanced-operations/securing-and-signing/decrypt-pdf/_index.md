@@ -17,7 +17,7 @@ sitemap:
 
 1. 调用 [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) 并提供文件名以及所有者密码以访问加密的 PDF。
 1. 调用 [Decrypt](https://reference.aspose.com/pdf/go-cpp/security/decrypt/) 方法，以移除文档的密码保护和所有相关的安全限制。
-1. 使用以下方式保存已解密的 PDF [保存为](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
+1. 使用以下方式保存已解密的 PDF [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
 
 ```go
 

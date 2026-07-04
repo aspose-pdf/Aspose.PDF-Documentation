@@ -17,7 +17,7 @@ SoftwareApplication: go-cpp
 
 ## 将 PDF 文档保存到文件系统
 
-该示例展示了 [新](https://reference.aspose.com/pdf/go-cpp/core/new/) 用于创建新 PDF 文档的方法，这是动态生成文档（如报告或发票）的基本功能。
+该示例展示了 [New](https://reference.aspose.com/pdf/go-cpp/core/new/) 用于创建新 PDF 文档的方法，这是动态生成文档（如报告或发票）的基本功能。
 
 代码简洁，可作为添加文本、图像或注释等更高级功能的模板。
 

@@ -17,11 +17,11 @@ SoftwareApplication: go-cpp
 
 ## 优化 PDF 文档
 
-使用 Aspose.PDF for Go via C\u002B\u002B 的工具包可让您优化 PDF 文档。
+使用 Aspose.PDF for Go via C++ 的工具包可让您优化 PDF 文档。
 
 此代码片段对那些减少 PDF 文件大小或提升效率至关重要的应用程序非常有用，例如网页上传、归档或在带宽受限的情况下共享。
 
-1. 该 [打开](https://reference.aspose.com/pdf/go-cpp/core/open/) 方法将指定的 PDF 文件（sample.pdf）加载到内存中。
+1. 该 [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) 方法将指定的 PDF 文件（sample.pdf）加载到内存中。
 1. 该 [Optimize 方法](https://reference.aspose.com/pdf/go-cpp/organize/optimize/) 通过执行诸如删除未使用的对象、压缩图像、扁平化注释、取消嵌入字体以及启用内容复用等优化来减小文件大小。这些步骤有助于降低存储需求并提升 PDF 文档的处理速度。
 1. 该 [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) 此方法将优化后的 PDF 保存到新文件中。
 

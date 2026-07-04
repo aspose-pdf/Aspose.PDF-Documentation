@@ -57,7 +57,7 @@ Aspose.PDF for Go 允许您读取和设置 PDF 文件中页面的属性。本节
 
 在此示例中，方法 pdf.PageSetSize() 更改 PDF 文档首页的尺寸。PageSizeA1 常量确保首页被设为 A1 纸张尺寸。这在将文档转换为标准化格式或确保特定内容在页面上正确适配时非常有用。
 
-1. 使用以下方式打开 PDF 文档 [打开](https://reference.aspose.com/pdf/go-cpp/core/open/) 方法。
+1. 使用以下方式打开 PDF 文档 [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) 方法。
 1. 使用以下方式设置页面尺寸 [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/) 函数。
 1. 使用以下方式保存文档 [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) 方法。
 

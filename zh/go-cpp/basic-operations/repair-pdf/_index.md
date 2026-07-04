@@ -23,8 +23,8 @@ SoftwareApplication: go-cpp
 
 **Aspose.PDF for Go** 支持高质量的 PDF 修复。PDF 文件可能因任何原因无法打开，无论使用何种程序或浏览器。在某些情况下文档可以被恢复，请尝试以下代码亲自看看。
 
-1. 使用以下方式打开 PDF 文档 [打开](https://reference.aspose.com/pdf/go-cpp/core/open/) 函数。
-1. 使用以下方式修复 PDF 文档 [修复](https://reference.aspose.com/pdf/go-cpp/organize/repair/) 函数。
+1. 使用以下方式打开 PDF 文档 [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) 函数。
+1. 使用以下方式修复 PDF 文档 [Repair](https://reference.aspose.com/pdf/go-cpp/organize/repair/) 函数。
 1. 使用以下方式保存已修复的 PDF 文档 [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) 方法。
 
 ```go

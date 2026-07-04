@@ -20,7 +20,7 @@ SoftwareApplication: go-cpp
 
 我们希望客户在购买前对我们的组件进行彻底测试，因此评估版允许您像平常一样使用它。
 
-- **带有评估水印的文档。** Aspose.PDF for Go 的评估版提供完整的产品功能，但生成文件的所有页面顶部都带有文字 \u0022Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd.\u0022 的水印。
+- **带有评估水印的文档。** Aspose.PDF for Go 的评估版提供完整的产品功能，但生成文件的所有页面顶部都带有文字 "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd." 的水印。
 
 - **限制可处理的页数。**
 在评估版中，您只能处理文档的前四页。

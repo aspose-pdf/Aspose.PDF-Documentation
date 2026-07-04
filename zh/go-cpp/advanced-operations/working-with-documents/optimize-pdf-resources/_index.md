@@ -25,7 +25,7 @@ SoftwareApplication: go-cpp
 
 优化可能包括压缩图像、删除未使用的对象以及优化字体，以减小文件大小并提升性能。此操作期间的任何错误都会被记录并终止程序。  
  
-1. 该 [打开](https://reference.aspose.com/pdf/go-cpp/core/open/) method 将指定的 PDF 文件 (sample.pdf) 加载到内存中。
+1. 该 [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method 将指定的 PDF 文件 (sample.pdf) 加载到内存中。
 1. 使用优化 PDF 中的资源以提高效率 [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) method.
 1. 该 [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method 将优化后的 PDF 保存到新文件中。
 

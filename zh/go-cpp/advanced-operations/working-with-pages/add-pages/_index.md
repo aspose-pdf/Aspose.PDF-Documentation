@@ -19,10 +19,10 @@ SoftwareApplication: go-cpp
 
 提供的 Go 代码片段演示了如何使用 Aspose.PDF 库在 PDF 末尾执行添加页面操作。 
 
-1. 该 [打开](https://reference.aspose.com/pdf/go-cpp/core/open/) function 允许程序加载现有的 PDF 文件（sample.pdf）以进行操作。这对于任何 PDF 相关的操作都是必不可少的，例如编辑、添加内容或读取数据。
+1. 该 [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) function 允许程序加载现有的 PDF 文件（sample.pdf）以进行操作。这对于任何 PDF 相关的操作都是必不可少的，例如编辑、添加内容或读取数据。
 1. 该 [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) method 用于向现有 PDF 文档插入一个新的空白页。这对于扩展文档或为追加内容做准备很有用。
-1. 该 [保存](https://reference.aspose.com/pdf/go-cpp/core/save/) 方法确保对 PDF 的修改写回文件。此步骤对于持久化更改至关重要，例如新增页面的添加。
-1. 该 [关闭](https://reference.aspose.com/pdf/go-cpp/core/close/) 方法通过 defer 调用，以释放在 PDF 操作期间分配的任何资源。这对于防止内存泄漏并确保高效的资源使用非常重要。
+1. 该 [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) 方法确保对 PDF 的修改写回文件。此步骤对于持久化更改至关重要，例如新增页面的添加。
+1. 该 [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) 方法通过 defer 调用，以释放在 PDF 操作期间分配的任何资源。这对于防止内存泄漏并确保高效的资源使用非常重要。
 
 此代码段是一个简明高效的示例，展示如何使用 Aspose.PDF Go 库执行基本的 PDF 操作任务。
 

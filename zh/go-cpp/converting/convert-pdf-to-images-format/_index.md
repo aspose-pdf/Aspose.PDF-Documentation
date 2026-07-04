@@ -19,7 +19,7 @@ SoftwareApplication: go-cpp
 
 在本文中，我们将向您展示将 PDF 转换为图像格式的选项。
 
-之前扫描的文档通常以 PDF 文件格式保存。然而，您是否需要在图形编辑器中编辑它或进一步以图像格式发送？我们为您提供了一款通用工具，可使用 **Aspose.PDF for Go via C\u002B\u002B** 将 PDF 转换为图像。
+之前扫描的文档通常以 PDF 文件格式保存。然而，您是否需要在图形编辑器中编辑它或进一步以图像格式发送？我们为您提供了一款通用工具，可使用 **Aspose.PDF for Go via C++** 将 PDF 转换为图像。
 最常见的任务是当您需要将整个 PDF 文档或文档的某些特定页面保存为一组图像时。**Aspose.PDF for Go via C++** 允许您将 PDF 转换为 JPG 和 PNG 格式，以简化从特定 PDF 文件获取图像所需的步骤。
 
 **Aspose.PDF for Go via C++** 支持各种 PDF 到图像格式的转换。请检查该部分 [Aspose.PDF 支持的文件格式](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/).
@@ -29,7 +29,7 @@ SoftwareApplication: go-cpp
 提供的 Go 代码片段演示了如何使用 Aspose.PDF 库将 PDF 文档的第一页转换为 JPEG 图像：
 
 1. 打开 PDF 文档。
-1. 使用 将页面转换为 JPEG [页面转Jpg](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) 函数。
+1. 使用 将页面转换为 JPEG [PageToJpg](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) 函数。
 1. 关闭 PDF 文档并释放所有已分配的资源。
 
 ```go
@@ -68,7 +68,7 @@ Aspose.PDF for Go 为您提供在线免费应用程序 ["PDF 转 JPEG"](https://
 提供的 Go 代码片段演示了如何使用 Aspose.PDF 库将 PDF 文档的首页转换为 TIFF 图像：
 
 1. 打开 PDF 文档。
-1. 使用 将页面转换为 TIFF [页面转Tiff](https://reference.aspose.com/pdf/go-cpp/convert/pagetotiff/) 函数。
+1. 使用 将页面转换为 TIFF [PageToTiff](https://reference.aspose.com/pdf/go-cpp/convert/pagetotiff/) 函数。
 1. 关闭 PDF 文档并释放所有已分配的资源。
 
 ```go
@@ -150,7 +150,7 @@ Aspose.PDF for Go 为您提供在线免费应用程序 ["PDF 到 PNG"](https://p
 提供的 Go 代码片段演示了如何使用 Aspose.PDF 库将 PDF 文档的第一页转换为 SVG 图像：
 
 1. 打开 PDF 文档。
-1. 使用将页面转换为 SVG [页面转Svg](https://reference.aspose.com/pdf/go-cpp/convert/pagetosvg/) 函数。
+1. 使用将页面转换为 SVG [PageToSvg](https://reference.aspose.com/pdf/go-cpp/convert/pagetosvg/) 函数。
 1. 关闭 PDF 文档并释放所有已分配的资源。
 
 ```go
@@ -189,7 +189,7 @@ Aspose.PDF for Go 为您提供在线免费应用程序 ["PDF 转 SVG"](https://p
 提供的 Go 代码片段演示了如何使用 Aspose.PDF 库将 PDF 文档的首页转换为 DICOM 图像：
 
 1. 打开 PDF 文档。
-1. 使用将页面转换为 DICOM [页面转DICOM](https://reference.aspose.com/pdf/go-cpp/convert/pagetodicom/) 函数。
+1. 使用将页面转换为 DICOM [PageToDICOM](https://reference.aspose.com/pdf/go-cpp/convert/pagetodicom/) 函数。
 1. 关闭 PDF 文档并释放所有已分配的资源。
 
 ```go
@@ -220,7 +220,7 @@ Aspose.PDF for Go 为您提供在线免费应用程序 ["PDF 转 SVG"](https://p
 提供的 Go 代码片段演示了如何使用 Aspose.PDF 库将 PDF 文档的第一页转换为 BMP 图像：
 
 1. 打开 PDF 文档。
-1. 使用 将页面转换为 BMP [页面转Bmp](https://reference.aspose.com/pdf/go-cpp/convert/pagetobmp/) 函数。
+1. 使用 将页面转换为 BMP [PageToBmp](https://reference.aspose.com/pdf/go-cpp/convert/pagetobmp/) 函数。
 1. 关闭 PDF 文档并释放所有已分配的资源。
 
 ```go
