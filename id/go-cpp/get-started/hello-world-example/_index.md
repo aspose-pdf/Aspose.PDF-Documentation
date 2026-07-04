@@ -23,7 +23,7 @@ Potongan kode di bawah ini mengikuti langkah-langkah berikut:
 1. Buat instance dokumen PDF baru.
 1. Tambahkan halaman baru ke dokumen PDF menggunakan [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) fungsi.
 1. Atur ukuran halaman menggunakan [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/).
-1. Tambahkan teks \u0022Hello World!\u0022 ke halaman pertama menggunakan [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/).
+1. Tambahkan teks "Hello World!" ke halaman pertama menggunakan [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/).
 1. Simpan dokumen PDF yang diperbaiki menggunakan [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) metode.
 1. Tutup dokumen PDF dan lepaskan sumber daya yang telah dialokasikan.
 

@@ -19,10 +19,10 @@ SoftwareApplication: go-cpp
 
 Potongan kode Go yang disediakan menunjukkan cara melakukan operasi Add Page di akhir PDF menggunakan pustaka Aspose.PDF. 
 
-1. The [Buka](https://reference.aspose.com/pdf/go-cpp/core/open/) fungsi memungkinkan program memuat file PDF yang ada (sample.pdf) untuk manipulasi. Ini penting untuk segala operasi terkait PDF, seperti mengedit, menambahkan konten, atau membaca data.
+1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) fungsi memungkinkan program memuat file PDF yang ada (sample.pdf) untuk manipulasi. Ini penting untuk segala operasi terkait PDF, seperti mengedit, menambahkan konten, atau membaca data.
 1. The [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) metode digunakan untuk menyisipkan halaman kosong baru ke dalam dokumen PDF yang ada. Ini berguna untuk memperluas dokumen atau menyiapkannya untuk konten tambahan.
-1. The [Simpan](https://reference.aspose.com/pdf/go-cpp/core/save/) metode memastikan bahwa modifikasi pada PDF ditulis kembali ke file. Langkah ini penting untuk mempertahankan perubahan, seperti penambahan halaman baru.
-1. The [Tutup](https://reference.aspose.com/pdf/go-cpp/core/close/) metode dipanggil menggunakan defer untuk melepaskan sumber daya apa pun yang dialokasikan selama operasi PDF. Hal ini penting untuk mencegah kebocoran memori dan memastikan penggunaan sumber daya yang efisien.
+1. The [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) metode memastikan bahwa modifikasi pada PDF ditulis kembali ke file. Langkah ini penting untuk mempertahankan perubahan, seperti penambahan halaman baru.
+1. The [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) metode dipanggil menggunakan defer untuk melepaskan sumber daya apa pun yang dialokasikan selama operasi PDF. Hal ini penting untuk mencegah kebocoran memori dan memastikan penggunaan sumber daya yang efisien.
 
 Potongan kode ini adalah contoh yang singkat dan efisien tentang cara menggunakan pustaka Aspose.PDF Go untuk tugas manipulasi PDF dasar.
 

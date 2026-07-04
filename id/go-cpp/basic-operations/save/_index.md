@@ -17,7 +17,7 @@ SoftwareApplication: go-cpp
 
 ## Simpan dokumen PDF ke sistem file
 
-Contoh tersebut memperlihatkan [Baru](https://reference.aspose.com/pdf/go-cpp/core/new/) metode untuk membuat dokumen PDF baru, yang merupakan fitur dasar untuk menghasilkan dokumen secara dinamis, seperti laporan atau faktur.
+Contoh tersebut memperlihatkan [New](https://reference.aspose.com/pdf/go-cpp/core/new/) metode untuk membuat dokumen PDF baru, yang merupakan fitur dasar untuk menghasilkan dokumen secara dinamis, seperti laporan atau faktur.
 
 Kode ini sederhana dan dapat berfungsi sebagai templat untuk fitur yang lebih canggih seperti menambahkan teks, gambar, atau anotasi ke PDF.
 

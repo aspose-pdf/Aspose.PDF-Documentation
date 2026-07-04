@@ -21,7 +21,7 @@ Untuk mengenkripsi dokumen dengan mudah dan aman, Anda dapat menggunakan Aspose.
 PDF dilindungi dengan kata sandi pengguna dan pemilik, dikonfigurasi dengan izin akses spesifik, dan dienkripsi menggunakan algoritma AES‑128 dengan keamanan yang kompatibel dengan PDF 2.0. Dokumen terenkripsi kemudian disimpan ke disk.
 
 1. Buat dokumen PDF baru.
-1. Enkripsi dokumen PDF dengan [enkripsi](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) metode.
+1. Enkripsi dokumen PDF dengan [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) metode.
 1. Tentukan kata sandi pengguna untuk membatasi pembukaan dokumen.
 1. Tentukan kata sandi pemilik untuk mengendalikan izin.
 1. Definisikan tindakan yang diizinkan menggunakan bitflag izin.

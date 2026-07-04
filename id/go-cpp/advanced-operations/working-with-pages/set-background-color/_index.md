@@ -16,7 +16,7 @@ SoftwareApplication: go-cpp
 ---
 
 1. Potongan kode yang disediakan menampilkan cara mengatur warna latar belakang untuk file PDF menggunakan perpustakaan Aspose.PDF dalam Go.
-1. The [Buka](https://reference.aspose.com/pdf/go-cpp/core/open/) method memuat file PDF yang ditentukan ke memori, memungkinkan manipulasi lebih lanjut, seperti memodifikasi tampilan atau kontennya.
+1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method memuat file PDF yang ditentukan ke memori, memungkinkan manipulasi lebih lanjut, seperti memodifikasi tampilan atau kontennya.
 1. The [SetBackground](https://reference.aspose.com/pdf/go-cpp/organize/setbackground/) method menerapkan warna latar belakang baru ke dokumen PDF. Nilai RGB memungkinkan pengguna menyesuaikan gaya visual dokumen.
 1. The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) metode menyimpan PDF yang diperbarui dengan nama baru.
 

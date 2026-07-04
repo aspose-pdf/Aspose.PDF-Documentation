@@ -18,7 +18,7 @@ Aspose.PDF for Go memungkinkan Anda membaca dan mengatur properti halaman dalam 
 
 Saat bekerja dengan dokumen, Anda sering ingin mengetahui berapa banyak halaman yang mereka miliki. Dengan Aspose.PDF ini tidak memerlukan lebih dari dua baris kode.
 
-**Aspose.PDF for Go via C\u002B\u002B** memungkinkan Anda menghitung Halaman dengan [PageCount](https://reference.aspose.com/pdf/go-cpp/core/pagecount/) fungsi.
+**Aspose.PDF for Go via C++** memungkinkan Anda menghitung Halaman dengan [PageCount](https://reference.aspose.com/pdf/go-cpp/core/pagecount/) fungsi.
 
 Potongan kode berikut dirancang untuk membuka dokumen PDF, mengambil jumlah halamannya, dan kemudian mencetak hasilnya.
 
@@ -57,7 +57,7 @@ Untuk mendapatkan jumlah halaman dalam file PDF:
 
 Dalam contoh ini, metode pdf.PageSetSize() mengubah ukuran halaman pertama dari dokumen PDF. Konstanta PageSizeA1 memastikan bahwa halaman pertama diatur ke ukuran kertas A1. Ini berguna saat mengonversi dokumen ke format standar atau memastikan bahwa konten tertentu cocok dengan benar pada halaman.
 
-1. Membuka Dokumen PDF dengan [Buka](https://reference.aspose.com/pdf/go-cpp/core/open/) metode.
+1. Membuka Dokumen PDF dengan [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) metode.
 1. Mengatur Ukuran Halaman dengan [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/) fungsi.
 1. Menyimpan Dokumen menggunakan [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) metode.
 

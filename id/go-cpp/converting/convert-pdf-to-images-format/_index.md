@@ -29,7 +29,7 @@ Tugas paling umum adalah ketika Anda perlu menyimpan seluruh dokumen PDF atau be
 Potongan kode Go yang disediakan menunjukkan cara mengonversi halaman pertama dari dokumen PDF menjadi gambar JPEG menggunakan perpustakaan Aspose.PDF:
 
 1. Buka dokumen PDF.
-1. Konversi Halaman ke JPEG menggunakan [HalamanKeJpg](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) fungsi.
+1. Konversi Halaman ke JPEG menggunakan [PageToJpg](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) fungsi.
 1. Tutup dokumen PDF dan lepaskan semua sumber daya yang dialokasikan.
 
 ```go
@@ -107,7 +107,7 @@ Aspose.PDF for Go mempersembahkan aplikasi gratis online ["PDF ke TIFF"](https:/
 Potongan kode Go yang disediakan menunjukkan cara mengonversi halaman pertama dari dokumen PDF menjadi gambar PNG menggunakan pustaka Aspose.PDF:
 
 1. Buka dokumen PDF.
-1. Konversi Halaman ke PNG menggunakan [HalamanKePng](https://reference.aspose.com/pdf/go-cpp/convert/pagetopng/) fungsi.
+1. Konversi Halaman ke PNG menggunakan [PageToPng](https://reference.aspose.com/pdf/go-cpp/convert/pagetopng/) fungsi.
 1. Tutup dokumen PDF dan lepaskan semua sumber daya yang dialokasikan.
 
 ```go
@@ -189,7 +189,7 @@ Aspose.PDF for Go mempersembahkan aplikasi gratis online ["PDF ke SVG"](https://
 Potongan kode Go yang diberikan menunjukkan cara mengonversi halaman pertama dokumen PDF menjadi gambar DICOM menggunakan perpustakaan Aspose.PDF:
 
 1. Buka dokumen PDF.
-1. Konversi Halaman ke DICOM menggunakan [HalamanKeDICOM](https://reference.aspose.com/pdf/go-cpp/convert/pagetodicom/) fungsi.
+1. Konversi Halaman ke DICOM menggunakan [PageToDICOM](https://reference.aspose.com/pdf/go-cpp/convert/pagetodicom/) fungsi.
 1. Tutup dokumen PDF dan lepaskan semua sumber daya yang dialokasikan.
 
 ```go

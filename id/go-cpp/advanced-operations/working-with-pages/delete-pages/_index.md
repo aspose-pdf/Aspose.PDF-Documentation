@@ -19,7 +19,7 @@ Anda dapat menghapus halaman dari file PDF menggunakan **Aspose.PDF for Go via C
 
 1. Membuka File PDF.
 1. Menghapus Halaman Tertentu dengan [PageDelete](https://reference.aspose.com/pdf/go-cpp/core/pagedelete/) fungsi.
-1. Menyimpan Dokumen menggunakan [Simpan](https://reference.aspose.com/pdf/go-cpp/core/save/) metode.
+1. Menyimpan Dokumen menggunakan [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) metode.
 
 ```go
 

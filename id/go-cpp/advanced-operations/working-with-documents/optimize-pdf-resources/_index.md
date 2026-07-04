@@ -25,7 +25,7 @@ Optimalkan sumber daya dalam dokumen:
 
 Optimisasi dapat mencakup kompresi gambar, menghapus objek yang tidak digunakan, dan mengoptimalkan font untuk mengurangi ukuran file serta meningkatkan kinerja. Setiap kesalahan selama operasi ini dicatat dan menghentikan program.  
  
-1. The [Buka](https://reference.aspose.com/pdf/go-cpp/core/open/) metode memuat file PDF yang ditentukan (sample.pdf) ke memori.
+1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) metode memuat file PDF yang ditentukan (sample.pdf) ke memori.
 1. Mengoptimalkan sumber daya dalam PDF untuk efisiensi menggunakan [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) metode.
 1. The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) metode menyimpan PDF yang dioptimalkan ke file baru.
 

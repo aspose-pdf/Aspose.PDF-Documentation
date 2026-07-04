@@ -23,8 +23,8 @@ Contoh ini sederhana dan ringkas, sehingga mudah dipahami dan diterapkan. Ini ad
 
 **Aspose.PDF for Go** memungkinkan perbaikan PDF berkualitas tinggi. File PDF mungkin tidak dapat dibuka karena alasan apa pun, terlepas dari program atau browser. Dalam beberapa kasus dokumen dapat dipulihkan, coba kode berikut dan lihat sendiri.
 
-1. Buka dokumen PDF menggunakan [Buka](https://reference.aspose.com/pdf/go-cpp/core/open/) fungsi.
-1. Perbaiki dokumen PDF dengan [Perbaiki](https://reference.aspose.com/pdf/go-cpp/organize/repair/) fungsi.
+1. Buka dokumen PDF menggunakan [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) fungsi.
+1. Perbaiki dokumen PDF dengan [Repair](https://reference.aspose.com/pdf/go-cpp/organize/repair/) fungsi.
 1. Simpan dokumen PDF yang telah diperbaiki menggunakan [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) metode.
 
 ```go
