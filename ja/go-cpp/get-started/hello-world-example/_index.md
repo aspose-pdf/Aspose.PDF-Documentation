@@ -23,7 +23,7 @@ SoftwareApplication: go-cpp
 1. 新しい PDF 文書インスタンスを作成します。
 1. PDF 文書に新しいページを追加するには、 [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) 関数です。
 1. ページサイズを設定するには [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/).
-1. 最初のページに \u0022Hello World!\u0022 テキストを追加するには [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/).
+1. 最初のページに "Hello World!" テキストを追加するには [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/).
 1. 修復された PDF ドキュメントを保存するには [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) メソッド。
 1. PDFドキュメントを閉じ、割り当てられたリソースを解放します。
 

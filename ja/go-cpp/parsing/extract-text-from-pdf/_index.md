@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Aspose.PDF for Go でテキストを抽出する
-Abstract: C\u002B\u002B 経由の Aspose.PDF for Go は、PDF ドキュメントからテキストを抽出するための強力かつ効率的な方法を提供します。このライブラリは複数の抽出手法をサポートしており、ユーザーは文書全体、特定のページ、または PDF 内の事前に定義された領域からテキストを取得できます。
+Abstract: C++ 経由の Aspose.PDF for Go は、PDF ドキュメントからテキストを抽出するための強力かつ効率的な方法を提供します。このライブラリは複数の抽出手法をサポートしており、ユーザーは文書全体、特定のページ、または PDF 内の事前に定義された領域からテキストを取得できます。
 SoftwareApplication: go-cpp
 ---
 

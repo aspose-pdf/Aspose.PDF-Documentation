@@ -25,7 +25,7 @@ SoftwareApplication: go-cpp
 
 最適化には画像の圧縮、未使用オブジェクトの削除、フォントの最適化が含まれ、ファイルサイズの削減とパフォーマンスの向上が図られます。この操作中にエラーが発生した場合はログに記録され、プログラムが終了します。  
  
-1. The [開く](https://reference.aspose.com/pdf/go-cpp/core/open/) method は指定された PDF ファイル (sample.pdf) をメモリにロードします。
+1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method は指定された PDF ファイル (sample.pdf) をメモリにロードします。
 1. PDF 内のリソースを効率化のために最適化します using [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) method。
 1. The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method は最適化された PDF を新しいファイルに保存します。
 

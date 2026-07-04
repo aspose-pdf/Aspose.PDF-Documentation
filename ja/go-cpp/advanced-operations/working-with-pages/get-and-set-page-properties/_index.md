@@ -57,7 +57,7 @@ PDFファイルのページ数を取得するには:
 
 この例では、メソッド pdf.PageSetSize() が PDF ドキュメントの最初のページのサイズを変更します。PageSizeA1 定数は、最初のページが A1 用紙サイズに設定されることを保証します。これは、ドキュメントを標準化された形式に変換する場合や、特定のコンテンツがページに正しく収まることを保証する場合に便利です。
 
-1. PDF ドキュメントを開くには [開く](https://reference.aspose.com/pdf/go-cpp/core/open/) メソッド。
+1. PDF ドキュメントを開くには [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) メソッド。
 1. ページサイズを設定するには [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/) 関数。
 1. ドキュメントを使用して保存する [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) メソッド。
 

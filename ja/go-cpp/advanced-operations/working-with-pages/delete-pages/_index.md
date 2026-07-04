@@ -19,7 +19,7 @@ SoftwareApplication: go-cpp
 
 1. PDF ファイルを開く。
 1. 特定のページを削除する [PageDelete](https://reference.aspose.com/pdf/go-cpp/core/pagedelete/) 関数。
-1. ドキュメントを保存する [保存](https://reference.aspose.com/pdf/go-cpp/core/save/) メソッド。
+1. ドキュメントを保存する [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) メソッド。
 
 ```go
 

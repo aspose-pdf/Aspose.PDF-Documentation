@@ -21,8 +21,8 @@ SoftwareApplication: go-cpp
 
 1. その [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) この関数は、プログラムが既存の PDF ファイル (sample.pdf) を読み込み、操作できるようにします。これは、編集、コンテンツの追加、データの読み取りなど、あらゆる PDF 関連の操作に不可欠です。
 1. その [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) このメソッドは、既存の PDF ドキュメントに新しい空白ページを挿入するために使用されます。これは、ドキュメントを拡張したり、追加コンテンツの準備をしたりするのに便利です。
-1. その [保存](https://reference.aspose.com/pdf/go-cpp/core/save/) このメソッドは PDF への変更がファイルに書き戻されることを保証します。このステップは、新しいページの追加などの変更を永続化するために重要です。
-1. その [閉じる](https://reference.aspose.com/pdf/go-cpp/core/close/) このメソッドは defer を使用して呼び出され、PDF 操作中に割り当てられたリソースを解放します。これはメモリリークを防止し、効率的なリソース使用を確保するために重要です。
+1. その [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) このメソッドは PDF への変更がファイルに書き戻されることを保証します。このステップは、新しいページの追加などの変更を永続化するために重要です。
+1. その [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) このメソッドは defer を使用して呼び出され、PDF 操作中に割り当てられたリソースを解放します。これはメモリリークを防止し、効率的なリソース使用を確保するために重要です。
 
 このスニペットは、基本的な PDF 操作タスクに Aspose.PDF Go ライブラリを使用する方法の簡潔で効率的な例です。
 

@@ -16,7 +16,7 @@ SoftwareApplication: go-cpp
 ---
 
 1. 提供されたコードスニペットは、Go で Aspose.PDF ライブラリを使用して PDF ファイルの背景色を設定する方法を示しています。
-1. その [開く](https://reference.aspose.com/pdf/go-cpp/core/open/) メソッドは指定されたPDFファイルをメモリにロードし、外観やコンテンツの変更など、さらなる操作を可能にします。
+1. その [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) メソッドは指定されたPDFファイルをメモリにロードし、外観やコンテンツの変更など、さらなる操作を可能にします。
 1. その [SetBackground](https://reference.aspose.com/pdf/go-cpp/organize/setbackground/) メソッドはPDFドキュメントに新しい背景色を適用します。RGB値により、ユーザーはドキュメントのビジュアルスタイルをカスタマイズできます。
 1. その [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) メソッドは更新された PDF を新しい名前で保存します。
 
