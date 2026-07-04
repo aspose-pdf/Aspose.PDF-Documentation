@@ -19,7 +19,7 @@ Você pode excluir páginas de um arquivo PDF usando **Aspose.PDF for Go via C++
 
 1. Abrindo um arquivo PDF.
 1. Excluindo uma página específica com [PageDelete](https://reference.aspose.com/pdf/go-cpp/core/pagedelete/) função.
-1. Salvando o documento usando [Salvar](https://reference.aspose.com/pdf/go-cpp/core/save/) método.
+1. Salvando o documento usando [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) método.
 
 ```go
 

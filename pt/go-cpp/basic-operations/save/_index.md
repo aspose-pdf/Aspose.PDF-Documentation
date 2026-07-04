@@ -17,7 +17,7 @@ SoftwareApplication: go-cpp
 
 ## Salvar documento PDF no sistema de arquivos
 
-O exemplo demonstra o [Novo](https://reference.aspose.com/pdf/go-cpp/core/new/) método para criar um novo documento PDF, que é um recurso fundamental para gerar documentos dinamicamente, como relatórios ou faturas.
+O exemplo demonstra o [New](https://reference.aspose.com/pdf/go-cpp/core/new/) método para criar um novo documento PDF, que é um recurso fundamental para gerar documentos dinamicamente, como relatórios ou faturas.
 
 O código é simples e pode servir como modelo para recursos mais avançados, como adicionar texto, imagens ou anotações ao PDF.
 

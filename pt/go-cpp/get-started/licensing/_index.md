@@ -20,7 +20,7 @@ SoftwareApplication: go-cpp
 
 Queremos que nossos clientes testem nossos componentes de forma completa antes de comprar, portanto a versão de avaliação permite que você a use como normalmente faria.
 
-- **Documentos criados com marca d'água de avaliação.** A versão de avaliação do Aspose.PDF for Go fornece funcionalidade completa do produto, mas todas as páginas nos arquivos gerados são marcadas com a marca d'água contendo o texto \u0022Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd.\u0022 no topo.
+- **Documentos criados com marca d'água de avaliação.** A versão de avaliação do Aspose.PDF for Go fornece funcionalidade completa do produto, mas todas as páginas nos arquivos gerados são marcadas com a marca d'água contendo o texto "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd." no topo.
 
 - **Limite o número de páginas que podem ser processadas.**
 Na versão de avaliação, você só pode processar as quatro primeiras páginas de um documento.

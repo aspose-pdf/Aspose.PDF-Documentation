@@ -16,9 +16,9 @@ SoftwareApplication: go-cpp
 ---
 
 O PDF foi desenvolvido para oferecer um padrão para a apresentação de documentos e outros materiais de referência em um formato que é independente de software de aplicação, hardware e sistema operacional. O conteúdo dos arquivos PDF não se limita a texto; pode incluir hyperlinks, imagens, botões clicáveis e formulários, assinaturas eletrônicas, marcas d'água e muito mais. Portanto, muitas vezes é necessário converter arquivos PDF para outro formato a fim de editar ou alterar seu conteúdo.
-**Our Aspose.PDF for Go via C\u002B\u002B** ferramenta permite que você converta seus documentos PDF de forma bem‑sucedida, rápida e fácil para os formatos mais populares. Para uma lista completa de formatos suportados, veja a seção [Aspose.PDF Formatos de Arquivo Suportados](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/).
+**Our Aspose.PDF for Go via C++** ferramenta permite que você converta seus documentos PDF de forma bem‑sucedida, rápida e fácil para os formatos mais populares. Para uma lista completa de formatos suportados, veja a seção [Aspose.PDF Formatos de Arquivo Suportados](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/).
 
-Aspose.PDF for Go via C\u002B\u002B* permite converter documentos PDF para vários formatos. Além disso, você pode verificar a qualidade da conversão do Aspose.PDF e visualizar os resultados online com o aplicativo conversor Aspose.PDF. Aprenda as seções de conversão de documentos com trechos de código.
+Aspose.PDF for Go via C++* permite converter documentos PDF para vários formatos. Além disso, você pode verificar a qualidade da conversão do Aspose.PDF e visualizar os resultados online com o aplicativo conversor Aspose.PDF. Aprenda as seções de conversão de documentos com trechos de código.
 
 ## Como usar Go para conversão
 

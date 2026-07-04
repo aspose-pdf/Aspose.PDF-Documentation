@@ -17,7 +17,7 @@ Você pode abrir, descriptografar e salvar um documento PDF protegido por senha 
 
 1. Chamar [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) e forneça o nome do arquivo juntamente com a senha do proprietário para acessar o PDF criptografado.
 1. Chame o [Decrypt](https://reference.aspose.com/pdf/go-cpp/security/decrypt/) método para remover a proteção por senha e todas as restrições de segurança associadas do documento.
-1. Salve o PDF descriptografado usando [SalvarComo](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
+1. Salve o PDF descriptografado usando [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
 
 ```go
 

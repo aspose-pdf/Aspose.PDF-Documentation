@@ -104,7 +104,7 @@ Aspose.PDF for Go apresenta-lhe uma aplicação online gratuita ["PDF para LaTeX
 O trecho de código Go fornecido demonstra como converter um documento PDF em um TXT usando a biblioteca Aspose.PDF:
 
 1. Abrir um documento PDF.
-1. Converter um arquivo PDF para TXT usando [SalvarTxt](https://reference.aspose.com/pdf/go-cpp/convert/savetxt/) função.
+1. Converter um arquivo PDF para TXT usando [SaveTxt](https://reference.aspose.com/pdf/go-cpp/convert/savetxt/) função.
 1. Feche o documento PDF e libere quaisquer recursos alocados.
 
 ```go
@@ -147,7 +147,7 @@ O tipo de arquivo XPS está principalmente associado à XML Paper Specification 
 O trecho de código Go fornecido demonstra como converter um documento PDF em XPS usando a biblioteca Aspose.PDF:
 
 1. Abrir um documento PDF.
-1. Converter um arquivo PDF para XPS usando [SalvarXps](https://reference.aspose.com/pdf/go-cpp/convert/savexps/) função.
+1. Converter um arquivo PDF para XPS usando [SaveXps](https://reference.aspose.com/pdf/go-cpp/convert/savexps/) função.
 1. Feche o documento PDF e libere quaisquer recursos alocados.
 
 ```go
@@ -186,7 +186,7 @@ Aspose.PDF for Go apresenta-lhe uma aplicação online gratuita ["PDF para XPS"]
 O trecho de código Go fornecido demonstra como converter a primeira página de um documento PDF em um PDF em escala de cinza usando a biblioteca Aspose.PDF:
 
 1. Abrir um documento PDF.
-1. Converter uma página PDF para PDF em tons de cinza usando [Página em escala de cinza](https://reference.aspose.com/pdf/go-cpp/organize/pagegrayscale/) função.
+1. Converter uma página PDF para PDF em tons de cinza usando [PageGrayscale](https://reference.aspose.com/pdf/go-cpp/organize/pagegrayscale/) função.
 1. Feche o documento PDF e libere quaisquer recursos alocados.
 
 Este exemplo converte uma página específica do seu PDF para tons de cinza:

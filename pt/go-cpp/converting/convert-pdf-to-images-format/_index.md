@@ -19,7 +19,7 @@ SoftwareApplication: go-cpp
 
 Neste artigo, mostraremos as opções para converter PDF em formatos de imagem.
 
-Documentos digitalizados anteriormente costumam ser salvos no formato de arquivo PDF. No entanto, você precisa editá‑los em um editor gráfico ou enviá‑los posteriormente em formato de imagem? Temos uma ferramenta universal para você converter PDF em imagens usando **Aspose.PDF for Go via C\u002B\u002B**.
+Documentos digitalizados anteriormente costumam ser salvos no formato de arquivo PDF. No entanto, você precisa editá‑los em um editor gráfico ou enviá‑los posteriormente em formato de imagem? Temos uma ferramenta universal para você converter PDF em imagens usando **Aspose.PDF for Go via C++**.
 A tarefa mais comum é quando você precisa salvar um documento PDF inteiro ou algumas páginas específicas de um documento como um conjunto de imagens. **Aspose.PDF for Go via C++** permite converter PDF para os formatos JPG e PNG para simplificar as etapas necessárias para obter suas imagens a partir de um arquivo PDF específico.
 
 **Aspose.PDF for Go via C++** suporta várias conversões de PDF para formatos de imagem. Por favor, verifique a seção [Aspose.PDF Formatos de Arquivo Compatíveis](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/).
@@ -220,7 +220,7 @@ O trecho de código Go fornecido demonstra como converter a primeira página de 
 O trecho de código Go fornecido demonstra como converter a primeira página de um documento PDF em uma imagem BMP usando a biblioteca Aspose.PDF:
 
 1. Abra um documento PDF.
-1. Converter uma página para BMP usando [PáginaParaBmp](https://reference.aspose.com/pdf/go-cpp/convert/pagetobmp/) função.
+1. Converter uma página para BMP usando [PageToBmp](https://reference.aspose.com/pdf/go-cpp/convert/pagetobmp/) função.
 1. Feche o documento PDF e libere quaisquer recursos alocados.
 
 ```go

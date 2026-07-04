@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Otimizar recursos de PDF usando Aspose.PDF para Go
-Abstract: Aspose.PDF for Go via C\u002B\u002B oferece recursos avançados para otimizar recursos de PDF, aprimorando a eficiência do documento e reduzindo o tamanho do arquivo. A biblioteca permite que os desenvolvedores otimizem fontes, imagens e metadados removendo dados redundantes e comprimindo recursos sem comprometer a qualidade do documento. Essas técnicas de otimização melhoram o desempenho do documento, tornando os PDFs mais adequados para compartilhamento e armazenamento. A documentação fornece orientações detalhadas e exemplos de código para ajudar os desenvolvedores a implementar efetivamente a otimização de recursos em suas aplicações.
+Abstract: Aspose.PDF for Go via C++ oferece recursos avançados para otimizar recursos de PDF, aprimorando a eficiência do documento e reduzindo o tamanho do arquivo. A biblioteca permite que os desenvolvedores otimizem fontes, imagens e metadados removendo dados redundantes e comprimindo recursos sem comprometer a qualidade do documento. Essas técnicas de otimização melhoram o desempenho do documento, tornando os PDFs mais adequados para compartilhamento e armazenamento. A documentação fornece orientações detalhadas e exemplos de código para ajudar os desenvolvedores a implementar efetivamente a otimização de recursos em suas aplicações.
 SoftwareApplication: go-cpp
 ---
 
@@ -25,7 +25,7 @@ Otimizar recursos no documento:
 
 A otimização pode incluir compressão de imagens, remoção de objetos não utilizados e otimização de fontes para reduzir o tamanho do arquivo e melhorar o desempenho. Qualquer erro durante esta operação é registrado e termina o programa.  
  
-1. O [Abrir](https://reference.aspose.com/pdf/go-cpp/core/open/) method carrega o arquivo PDF especificado (sample.pdf) na memória.
+1. O [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method carrega o arquivo PDF especificado (sample.pdf) na memória.
 1. Optimiza os recursos dentro do PDF para eficiência usando [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) método.
 1. O [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method salva o PDF otimizado em um novo arquivo.
 

@@ -21,7 +21,7 @@ Para criptografar documentos de forma fácil e segura, você pode usar Aspose.PD
 O PDF está protegido com senhas de usuário e proprietário, configurado com permissões de acesso específicas, e criptografado usando o algoritmo AES-128 com segurança compatível com PDF 2.0. O documento criptografado é então salvo no disco.
 
 1. Crie um novo documento PDF.
-1. Criptografe o documento PDF com [criptografar](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) método.
+1. Criptografe o documento PDF com [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) método.
 1. Especifique uma senha de usuário para restringir a abertura do documento.
 1. Especifique uma senha de proprietário para controlar as permissões.
 1. Defina ações permitidas usando uma bandeira de bits de permissões.

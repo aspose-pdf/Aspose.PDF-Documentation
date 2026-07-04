@@ -4,7 +4,7 @@ linktitle: Obter permissões
 type: docs
 weight: 60
 url: /pt/go-cpp/get-permissions/
-description: Ler e exibir as permissões de acesso de um documento PDF protegido por senha com Aspose.PDF for Go via C\u002B\u002B.
+description: Ler e exibir as permissões de acesso de um documento PDF protegido por senha com Aspose.PDF for Go via C++.
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## Obter permissões de um documento PDF protegido por senha
 
-Este exemplo demonstra como recuperar, interpretar e exibir as permissões de acesso de um documento PDF protegido por senha em Go usando Aspose.PDF for Go via C\u002B\u002B.
+Este exemplo demonstra como recuperar, interpretar e exibir as permissões de acesso de um documento PDF protegido por senha em Go usando Aspose.PDF for Go via C++.
 O PDF é aberto com a senha do proprietário, suas bandeiras de permissão são lidas e cada permissão habilitada é convertida em uma descrição legível antes de ser impressa no console.
 
 1. Defina mapeamentos de nomes de permissões.

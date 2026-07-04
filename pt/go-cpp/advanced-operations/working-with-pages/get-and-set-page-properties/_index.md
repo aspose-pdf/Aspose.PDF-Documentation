@@ -7,7 +7,7 @@ description: Aprenda como obter e definir propriedades de página para documento
 lastmod: "2026-07-04"
 TechArticle: true
 AlternativeHeadline: Obter e Definir Propriedades da Página com Aspose.PDF for Go
-Abstract: Aspose.PDF for Go via C\u002B\u002B oferece recursos abrangentes para obter e definir propriedades de página em documentos PDF, permitindo que os desenvolvedores acessem e modifiquem vários atributos da página, como tamanho, rotação, margens e metadados. Essas capacidades possibilitam controle preciso sobre o layout e a aparência do documento para atender a requisitos específicos da aplicação. A biblioteca garante personalização e otimização contínua das páginas PDF. A documentação oferece orientações detalhadas e exemplos de código para ajudar os desenvolvedores a recuperar e atualizar propriedades de página de forma eficiente em suas aplicações.
+Abstract: Aspose.PDF for Go via C++ oferece recursos abrangentes para obter e definir propriedades de página em documentos PDF, permitindo que os desenvolvedores acessem e modifiquem vários atributos da página, como tamanho, rotação, margens e metadados. Essas capacidades possibilitam controle preciso sobre o layout e a aparência do documento para atender a requisitos específicos da aplicação. A biblioteca garante personalização e otimização contínua das páginas PDF. A documentação oferece orientações detalhadas e exemplos de código para ajudar os desenvolvedores a recuperar e atualizar propriedades de página de forma eficiente em suas aplicações.
 SoftwareApplication: go-cpp
 ---
 
@@ -57,7 +57,7 @@ Para obter o número de páginas em um arquivo PDF:
 
 Neste exemplo, o método pdf.PageSetSize() altera o tamanho da primeira página do documento PDF. A constante PageSizeA1 garante que a primeira página seja definida para o tamanho de papel A1. Isso é útil ao converter documentos para um formato padronizado ou ao garantir que conteúdo específico se ajuste corretamente nas páginas.
 
-1. Abrindo o documento PDF com [Abrir](https://reference.aspose.com/pdf/go-cpp/core/open/) método.
+1. Abrindo o documento PDF com [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) método.
 1. Definindo o tamanho da página com [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/) função.
 1. Salvando o Documento usando [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) método.
 
