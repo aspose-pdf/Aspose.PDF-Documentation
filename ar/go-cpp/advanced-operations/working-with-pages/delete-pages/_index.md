@@ -19,7 +19,7 @@ SoftwareApplication: go-cpp
 
 1. فتح ملف PDF.
 1. حذف صفحة محددة باستخدام [PageDelete](https://reference.aspose.com/pdf/go-cpp/core/pagedelete/) دالة.
-1. حفظ المستند باستخدام [حفظ](https://reference.aspose.com/pdf/go-cpp/core/save/) طريقة.
+1. حفظ المستند باستخدام [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) طريقة.
 
 ```go
 

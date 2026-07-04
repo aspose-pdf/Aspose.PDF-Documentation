@@ -25,7 +25,7 @@ SoftwareApplication: go-cpp
 
 قد تشمل التحسينات ضغط الصور، وإزالة الكائنات غير المستخدمة، وتحسين الخطوط لتقليل حجم الملف وتحسين الأداء. أي خطأ يحدث أثناء هذه العملية يتم تسجيله ويتسبب في إيقاف البرنامج.  
  
-1. ال [فتح](https://reference.aspose.com/pdf/go-cpp/core/open/) الطريقة تحمل ملف PDF المحدد (sample.pdf) في الذاكرة.
+1. ال [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) الطريقة تحمل ملف PDF المحدد (sample.pdf) في الذاكرة.
 1. يحسن الموارد داخل ملف PDF لزيادة الكفاءة باستخدام [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) طريقة.
 1. ال [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) الطريقة تحفظ ملف PDF المحسن إلى ملف جديد.
 

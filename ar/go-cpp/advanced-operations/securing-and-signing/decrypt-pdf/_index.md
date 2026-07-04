@@ -16,8 +16,8 @@ sitemap:
 يمكنك فتح، فك تشفير، وحفظ مستند PDF محمي بكلمة مرور باستخدام Aspose.PDF for Go عبر C++. يتم فتح ملف PDF باستخدام كلمة مرور المالك، يتم فك تشفيره لإزالة جميع قيود الأمان، ثم يتم حفظه كمستند جديد غير محمي.
 
 1. استدعاء [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) وفر اسم الملف مع كلمة مرور المالك للوصول إلى ملف PDF المشفر.
-1. استدعِ [فك التشفير](https://reference.aspose.com/pdf/go-cpp/security/decrypt/) الطريقة لإزالة حماية كلمة المرور وجميع القيود الأمنية المرتبطة من المستند.
-1. احفظ ملف PDF المفكوك باستخدام [حفظ كـ](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
+1. استدعِ [Decrypt](https://reference.aspose.com/pdf/go-cpp/security/decrypt/) الطريقة لإزالة حماية كلمة المرور وجميع القيود الأمنية المرتبطة من المستند.
+1. احفظ ملف PDF المفكوك باستخدام [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
 
 ```go
 

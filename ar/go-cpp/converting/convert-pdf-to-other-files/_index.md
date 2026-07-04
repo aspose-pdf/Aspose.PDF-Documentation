@@ -186,7 +186,7 @@ SoftwareApplication: go-cpp
 يوضح مقطع الشيفرة بلغة Go المقدم كيفية تحويل الصفحة الأولى من مستند PDF إلى PDF بتدرج الرمادي باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة PDF إلى PDF بالأبيض والأسود باستخدام [تدرج رمادي للصفحة](https://reference.aspose.com/pdf/go-cpp/organize/pagegrayscale/) دالة.
+1. تحويل صفحة PDF إلى PDF بالأبيض والأسود باستخدام [PageGrayscale](https://reference.aspose.com/pdf/go-cpp/organize/pagegrayscale/) دالة.
 1. أغلق مستند PDF وحرّر أي موارد مخصصة.
 
 هذا المثال يحوِّل صفحة محددة من ملف PDF الخاص بك إلى اللون الرمادي:

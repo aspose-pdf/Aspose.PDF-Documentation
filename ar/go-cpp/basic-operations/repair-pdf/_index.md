@@ -23,8 +23,8 @@ SoftwareApplication: go-cpp
 
 **Aspose.PDF for Go** يتيح إصلاح PDF عالي الجودة. قد لا يفتح ملف PDF لأي سبب، بغض النظر عن البرنامج أو المتصفح. في بعض الحالات يمكن استعادة المستند، جرّب الشيفرة التالية وشاهد بنفسك.
 
-1. افتح مستند PDF باستخدام [فتح](https://reference.aspose.com/pdf/go-cpp/core/open/) دالة.
-1. إصلاح مستند PDF باستخدام [إصلاح](https://reference.aspose.com/pdf/go-cpp/organize/repair/) دالة.
+1. افتح مستند PDF باستخدام [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) دالة.
+1. إصلاح مستند PDF باستخدام [Repair](https://reference.aspose.com/pdf/go-cpp/organize/repair/) دالة.
 1. احفظ مستند PDF المُصلح باستخدام [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) طريقة.
 
 ```go

@@ -29,7 +29,7 @@ SoftwareApplication: go-cpp
 مقتطف الشيفرة Go المقدم يوضح كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة JPEG باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى JPEG باستخدام [صفحة إلى JPG](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) دالة.
+1. تحويل صفحة إلى JPEG باستخدام [PageToJpg](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) دالة.
 1. أغلق مستند PDF وحرّر أي موارد مخصصة.
 
 ```go
@@ -68,7 +68,7 @@ SoftwareApplication: go-cpp
 المقتطف البرمجي المقدم بلغة Go يوضح كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة TIFF باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى TIFF باستخدام [صفحة إلى Tiff](https://reference.aspose.com/pdf/go-cpp/convert/pagetotiff/) دالة.
+1. تحويل صفحة إلى TIFF باستخدام [PageToTiff](https://reference.aspose.com/pdf/go-cpp/convert/pagetotiff/) دالة.
 1. أغلق مستند PDF وحرّر أي موارد مخصصة.
 
 ```go
@@ -107,7 +107,7 @@ SoftwareApplication: go-cpp
 يظهر مقتطف الكود المقدم بلغة Go كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة PNG باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى PNG باستخدام [صفحة إلى PNG](https://reference.aspose.com/pdf/go-cpp/convert/pagetopng/) دالة.
+1. تحويل صفحة إلى PNG باستخدام [PageToPng](https://reference.aspose.com/pdf/go-cpp/convert/pagetopng/) دالة.
 1. أغلق مستند PDF وحرّر أي موارد مخصصة.
 
 ```go
@@ -150,7 +150,7 @@ SoftwareApplication: go-cpp
 يوضح مقتطف الشيفرة Go المقدم كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة SVG باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى SVG باستخدام [صفحة إلى SVG](https://reference.aspose.com/pdf/go-cpp/convert/pagetosvg/) دالة.
+1. تحويل صفحة إلى SVG باستخدام [PageToSvg](https://reference.aspose.com/pdf/go-cpp/convert/pagetosvg/) دالة.
 1. أغلق مستند PDF وحرّر أي موارد مخصصة.
 
 ```go
@@ -189,7 +189,7 @@ SoftwareApplication: go-cpp
 المقتطف البرمجي المقدم بلغة Go يوضح كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة DICOM باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى DICOM باستخدام [صفحة إلى DICOM](https://reference.aspose.com/pdf/go-cpp/convert/pagetodicom/) دالة.
+1. تحويل صفحة إلى DICOM باستخدام [PageToDICOM](https://reference.aspose.com/pdf/go-cpp/convert/pagetodicom/) دالة.
 1. أغلق مستند PDF وحرّر أي موارد مخصصة.
 
 ```go
