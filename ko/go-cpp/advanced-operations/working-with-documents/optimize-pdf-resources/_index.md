@@ -25,7 +25,7 @@ SoftwareApplication: go-cpp
 
 최적화에는 이미지 압축, 사용되지 않은 객체 제거, 파일 크기 감소와 성능 향상을 위한 글꼴 최적화가 포함될 수 있습니다. 이 작업 중 발생하는 모든 오류는 기록되며 프로그램을 종료합니다.  
  
-1. 그 [열기](https://reference.aspose.com/pdf/go-cpp/core/open/) method는 지정된 PDF 파일(sample.pdf)을 메모리로 로드합니다.
+1. 그 [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method는 지정된 PDF 파일(sample.pdf)을 메모리로 로드합니다.
 1. PDF 내부의 리소스를 효율성을 위해 최적화합니다 using [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) method.
 1. 그 [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method는 최적화된 PDF를 새 파일에 저장합니다.
 

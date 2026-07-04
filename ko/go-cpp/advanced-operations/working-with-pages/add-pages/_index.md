@@ -19,10 +19,10 @@ SoftwareApplication: go-cpp
 
 제공된 Go 코드 스니펫은 Aspose.PDF 라이브러리를 사용하여 PDF 끝에 페이지를 추가하는 작업을 수행하는 방법을 보여줍니다. 
 
-1. 그 [열기](https://reference.aspose.com/pdf/go-cpp/core/open/) 함수는 프로그램이 기존 PDF 파일(sample.pdf)을 로드하여 조작할 수 있게 합니다. 이는 편집, 콘텐츠 추가, 데이터 읽기와 같은 모든 PDF 관련 작업에 필수적입니다.
+1. 그 [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) 함수는 프로그램이 기존 PDF 파일(sample.pdf)을 로드하여 조작할 수 있게 합니다. 이는 편집, 콘텐츠 추가, 데이터 읽기와 같은 모든 PDF 관련 작업에 필수적입니다.
 1. 그 [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) 메서드는 기존 PDF 문서에 새로운 빈 페이지를 삽입하는 데 사용됩니다. 이는 문서를 확장하거나 추가 콘텐츠를 준비하는 데 유용합니다.
-1. 그 [저장](https://reference.aspose.com/pdf/go-cpp/core/save/) method는 PDF에 대한 수정 사항이 파일에 다시 기록되도록 보장합니다. 이 단계는 새 페이지 추가와 같은 변경 사항을 지속시키는 데 필수적입니다.
-1. 그 [닫기](https://reference.aspose.com/pdf/go-cpp/core/close/) method는 defer를 사용하여 호출되며, PDF 작업 중에 할당된 모든 리소스를 해제합니다. 이는 메모리 누수를 방지하고 효율적인 리소스 사용을 보장하는 데 중요합니다.
+1. 그 [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) method는 PDF에 대한 수정 사항이 파일에 다시 기록되도록 보장합니다. 이 단계는 새 페이지 추가와 같은 변경 사항을 지속시키는 데 필수적입니다.
+1. 그 [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) method는 defer를 사용하여 호출되며, PDF 작업 중에 할당된 모든 리소스를 해제합니다. 이는 메모리 누수를 방지하고 효율적인 리소스 사용을 보장하는 데 중요합니다.
 
 이 코드는 기본 PDF 조작 작업을 위해 Aspose.PDF Go 라이브러리를 사용하는 간결하고 효율적인 예시입니다.
 

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Aspose.PDF for Go를 사용한 텍스트 추출
-Abstract: Aspose.PDF for Go via C\u002B\u002B는 PDF 문서에서 텍스트를 추출하는 강력하고 효율적인 방법을 제공합니다. 이 라이브러리는 다양한 추출 기술을 지원하여 사용자가 전체 문서, 특정 페이지 또는 PDF 내의 사전 정의된 영역에서 텍스트를 가져올 수 있도록 합니다.
+Abstract: Aspose.PDF for Go via C++는 PDF 문서에서 텍스트를 추출하는 강력하고 효율적인 방법을 제공합니다. 이 라이브러리는 다양한 추출 기술을 지원하여 사용자가 전체 문서, 특정 페이지 또는 PDF 내의 사전 정의된 영역에서 텍스트를 가져올 수 있도록 합니다.
 SoftwareApplication: go-cpp
 ---
 

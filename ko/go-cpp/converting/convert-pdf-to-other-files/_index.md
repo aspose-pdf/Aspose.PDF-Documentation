@@ -104,7 +104,7 @@ Aspose.PDF for Go가 온라인 무료 애플리케이션을 제공합니다 ["PD
 제공된 Go 코드 스니펫은 Aspose.PDF 라이브러리를 사용하여 PDF 문서를 TXT로 변환하는 방법을 보여줍니다:
 
 1. PDF 문서를 엽니다.
-1. PDF 파일을 TXT로 변환하기 위해 [텍스트 저장](https://reference.aspose.com/pdf/go-cpp/convert/savetxt/) 함수.
+1. PDF 파일을 TXT로 변환하기 위해 [SaveTxt](https://reference.aspose.com/pdf/go-cpp/convert/savetxt/) 함수.
 1. PDF 문서를 닫고 할당된 모든 리소스를 해제하십시오.
 
 ```go
@@ -186,7 +186,7 @@ Aspose.PDF for Go가 온라인 무료 애플리케이션을 제공합니다 ["PD
 제공된 Go 코드 스니펫은 Aspose.PDF 라이브러리를 사용하여 PDF 문서의 첫 페이지를 그레이스케일 PDF로 변환하는 방법을 보여줍니다:
 
 1. PDF 문서를 엽니다.
-1. PDF 페이지를 그레이스케일 PDF로 변환하기 [페이지 그레이스케일](https://reference.aspose.com/pdf/go-cpp/organize/pagegrayscale/) 함수.
+1. PDF 페이지를 그레이스케일 PDF로 변환하기 [PageGrayscale](https://reference.aspose.com/pdf/go-cpp/organize/pagegrayscale/) 함수.
 1. PDF 문서를 닫고 할당된 모든 리소스를 해제하십시오.
 
 이 예제는 PDF의 특정 페이지를 회색조로 변환합니다:

@@ -17,7 +17,7 @@ SoftwareApplication: go-cpp
 
 ## PDF 문서를 파일 시스템에 저장
 
-예제는 다음을 보여줍니다 [새로운](https://reference.aspose.com/pdf/go-cpp/core/new/) 새 PDF 문서를 생성하는 메서드로, 보고서나 청구서와 같이 동적으로 문서를 생성하는 기본 기능입니다.
+예제는 다음을 보여줍니다 [New](https://reference.aspose.com/pdf/go-cpp/core/new/) 새 PDF 문서를 생성하는 메서드로, 보고서나 청구서와 같이 동적으로 문서를 생성하는 기본 기능입니다.
 
 코드는 간단하며 텍스트, 이미지 또는 주석을 PDF에 추가하는 등 더 고급 기능을 위한 템플릿 역할을 할 수 있습니다.
 

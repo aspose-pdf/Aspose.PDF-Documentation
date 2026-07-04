@@ -19,7 +19,7 @@ SoftwareApplication: go-cpp
 
 이 기사에서는 PDF를 이미지 형식으로 변환하는 옵션을 보여드리겠습니다.
 
-이전에 스캔한 문서는 종종 PDF 파일 형식으로 저장됩니다. 그러나 그래픽 편집기에서 편집하거나 이미지 형식으로 추가 전송해야 합니까? 우리는 **Aspose.PDF for Go via C\u002B\u002B**를 사용하여 PDF를 이미지로 변환하는 범용 도구를 제공합니다.
+이전에 스캔한 문서는 종종 PDF 파일 형식으로 저장됩니다. 그러나 그래픽 편집기에서 편집하거나 이미지 형식으로 추가 전송해야 합니까? 우리는 **Aspose.PDF for Go via C++**를 사용하여 PDF를 이미지로 변환하는 범용 도구를 제공합니다.
 가장 일반적인 작업은 전체 PDF 문서 또는 문서의 특정 페이지를 이미지 세트로 저장해야 할 때입니다. **Aspose.PDF for Go via C++**는 PDF를 JPG 및 PNG 형식으로 변환하여 특정 PDF 파일에서 이미지를 얻는 데 필요한 단계를 간소화합니다.
 
 **Aspose.PDF for Go via C++** 다양한 PDF를 이미지 형식으로 변환하는 것을 지원합니다. 섹션을 확인하십시오. [Aspose.PDF 지원 파일 형식](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/).
@@ -29,7 +29,7 @@ SoftwareApplication: go-cpp
 제공된 Go 코드 스니펫은 Aspose.PDF 라이브러리를 사용하여 PDF 문서의 첫 페이지를 JPEG 이미지로 변환하는 방법을 보여줍니다:
 
 1. PDF 문서를 엽니다.
-1. 페이지를 JPEG로 변환하기 [페이지를 JPG로](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) 함수.
+1. 페이지를 JPEG로 변환하기 [PageToJpg](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) 함수.
 1. PDF 문서를 닫고 할당된 모든 리소스를 해제하십시오.
 
 ```go
@@ -189,7 +189,7 @@ Aspose.PDF for Go는 온라인 무료 애플리케이션을 제공합니다 [PDF
 제공된 Go 코드 스니펫은 Aspose.PDF 라이브러리를 사용하여 PDF 문서의 첫 페이지를 DICOM 이미지로 변환하는 방법을 보여줍니다:
 
 1. PDF 문서를 엽니다.
-1. 페이지를 DICOM으로 변환하기 [페이지에서 DICOM으로](https://reference.aspose.com/pdf/go-cpp/convert/pagetodicom/) 함수.
+1. 페이지를 DICOM으로 변환하기 [PageToDICOM](https://reference.aspose.com/pdf/go-cpp/convert/pagetodicom/) 함수.
 1. PDF 문서를 닫고 할당된 모든 리소스를 해제하십시오.
 
 ```go

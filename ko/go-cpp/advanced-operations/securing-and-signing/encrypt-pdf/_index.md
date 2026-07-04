@@ -21,7 +21,7 @@ sitemap:
 PDF는 사용자 및 owner passwords로 보호되며, 특정 접근 권한이 설정되고 PDF 2.0 호환 보안으로 AES-128 알고리즘을 사용해 암호화됩니다. 암호화된 문서는 이후 디스크에 저장됩니다.
 
 1. 새 PDF 문서를 생성합니다.
-1. PDF 문서를 다음으로 암호화합니다. [암호화](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) 방법.
+1. PDF 문서를 다음으로 암호화합니다. [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) 방법.
 1. 문서를 열지 못하도록 사용자 비밀번호를 지정하십시오.
 1. 권한을 제어하기 위해 소유자 비밀번호를 지정하십시오.
 1. 권한 비트플래그를 사용하여 허용되는 작업을 정의하십시오.

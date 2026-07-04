@@ -1,6 +1,6 @@
 ---
 title: 문서
-linktitle: Aspose.PDF for Go via C\u002B\u002B를 통한
+linktitle: Aspose.PDF for Go via C++를 통한
 second_title: Aspose.PDF for Go via C++
 type: docs
 weight: 85
@@ -13,7 +13,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Aspose.PDF for Go 문서 페이지
-Abstract: Aspose.PDF for Go via C\u002B\u002B는 개발자가 PDF 문서를 생성, 편집, 변환 및 조작할 수 있도록 하는 강력하고 유연한 PDF 처리 라이브러리입니다. 텍스트 및 이미지 관리, 양식 필드 처리, 주석, 워터마크, 그리고 암호화와 디지털 서명을 통한 문서 보안 등 포괄적인 기능을 제공합니다.
+Abstract: Aspose.PDF for Go via C++는 개발자가 PDF 문서를 생성, 편집, 변환 및 조작할 수 있도록 하는 강력하고 유연한 PDF 처리 라이브러리입니다. 텍스트 및 이미지 관리, 양식 필드 처리, 주석, 워터마크, 그리고 암호화와 디지털 서명을 통한 문서 보안 등 포괄적인 기능을 제공합니다.
 SoftwareApplication: go-cpp
 ---
 
