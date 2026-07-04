@@ -21,7 +21,7 @@ Le kit d'outils avec Aspose.PDF for Go via C++ vous permet d'optimiser un docume
 
 Cet extrait de code est utile pour les applications où réduire la taille ou améliorer l'efficacité des fichiers PDF est crucial, par exemple pour les téléchargements web, l'archivage ou le partage avec une bande passante limitée.
 
-1. Le [Ouvrir](https://reference.aspose.com/pdf/go-cpp/core/open/) la méthode charge le fichier PDF spécifié (sample.pdf) en mémoire.
+1. Le [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) la méthode charge le fichier PDF spécifié (sample.pdf) en mémoire.
 1. Le [Méthode Optimize](https://reference.aspose.com/pdf/go-cpp/organize/optimize/) réduit la taille du fichier en effectuant des optimisations telles que la suppression d'objets inutilisés, la compression des images, l'aplatissement des annotations, le désembarquement des polices et l'activation de la réutilisation du contenu. Ces étapes aident à réduire les besoins de stockage et à améliorer la vitesse de traitement du document PDF.
 1. Le [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) La méthode enregistre le PDF optimisé dans un nouveau fichier.
 

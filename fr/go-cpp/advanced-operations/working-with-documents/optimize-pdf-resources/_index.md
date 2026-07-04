@@ -25,7 +25,7 @@ Optimiser les ressources dans le document :
 
 L'optimisation peut inclure la compression d'images, la suppression d'objets inutilisés et l'optimisation des polices pour réduire la taille du fichier et améliorer les performances. Toute erreur survenant pendant cette opération est enregistrée et termine le programme.  
  
-1. Le [Ouvrir](https://reference.aspose.com/pdf/go-cpp/core/open/) La méthode charge le fichier PDF spécifié (sample.pdf) en mémoire.
+1. Le [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) La méthode charge le fichier PDF spécifié (sample.pdf) en mémoire.
 1. Optimise les ressources du PDF pour l'efficacité en utilisant [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) méthode.
 1. Le [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) La méthode enregistre le PDF optimisé dans un nouveau fichier.
 

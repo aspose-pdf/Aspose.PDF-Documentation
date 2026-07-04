@@ -19,10 +19,10 @@ SoftwareApplication: go-cpp
 
 L'extrait de code Go fourni montre comment exécuter l'opération Add Page à la fin du PDF en utilisant la bibliothèque Aspose.PDF. 
 
-1. Le [Ouvrir](https://reference.aspose.com/pdf/go-cpp/core/open/) La fonction permet au programme de charger un fichier PDF existant (sample.pdf) pour le manipuler. C’est essentiel pour toutes les opérations liées aux PDF, telles que l’édition, l’ajout de contenu ou la lecture de données.
+1. Le [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) La fonction permet au programme de charger un fichier PDF existant (sample.pdf) pour le manipuler. C’est essentiel pour toutes les opérations liées aux PDF, telles que l’édition, l’ajout de contenu ou la lecture de données.
 1. Le [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) La méthode est utilisée pour insérer une nouvelle page vierge dans le document PDF existant. Cela est utile pour étendre un document ou le préparer à du contenu supplémentaire.
-1. Le [Enregistrer](https://reference.aspose.com/pdf/go-cpp/core/save/) la méthode garantit que les modifications du PDF sont réécrites dans le fichier. Cette étape est cruciale pour la persistance des modifications, comme l'ajout de nouvelles pages.
-1. Le [Fermer](https://reference.aspose.com/pdf/go-cpp/core/close/) la méthode est appelée à l'aide de defer pour libérer toutes les ressources allouées pendant les opérations PDF. Cela est important pour prévenir les fuites de mémoire et assurer une utilisation efficace des ressources.
+1. Le [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) la méthode garantit que les modifications du PDF sont réécrites dans le fichier. Cette étape est cruciale pour la persistance des modifications, comme l'ajout de nouvelles pages.
+1. Le [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) la méthode est appelée à l'aide de defer pour libérer toutes les ressources allouées pendant les opérations PDF. Cela est important pour prévenir les fuites de mémoire et assurer une utilisation efficace des ressources.
 
 Cet extrait est un exemple concis et efficace montrant comment utiliser la bibliothèque Aspose.PDF Go pour des tâches de manipulation PDF de base.
 

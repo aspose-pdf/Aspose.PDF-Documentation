@@ -21,13 +21,13 @@ Pour crypter les documents facilement et en toute sécurité, vous pouvez utilis
 Le PDF est protégé par des mots de passe utilisateur et propriétaire, configuré avec des autorisations d'accès spécifiques, et chiffré à l'aide de l'algorithme AES-128 avec une sécurité compatible PDF 2.0. Le document chiffré est ensuite enregistré sur le disque.
 
 1. Créer un nouveau document PDF.
-1. Chiffrer le document PDF avec [chiffrer](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) méthode.
+1. Chiffrer le document PDF avec [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) méthode.
 1. Spécifiez un mot de passe utilisateur pour restreindre l'ouverture du document.
 1. Spécifiez un mot de passe propriétaire pour contrôler les autorisations.
 1. Définissez les actions autorisées à l'aide d'un drapeau de bits de permissions.
 1. Choisissez AES-128 comme algorithme de chiffrement.
 1. Activez le chiffrement PDF 2.0 pour une conformité de sécurité moderne.
-1. Enregistrez le document sécurisé en utilisant [EnregistrerSous](https://reference.aspose.com/pdf/go-cpp/core/saveas/), en l'écrivant dans un nouveau fichier.
+1. Enregistrez le document sécurisé en utilisant [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/), en l'écrivant dans un nouveau fichier.
 
 ```go
 

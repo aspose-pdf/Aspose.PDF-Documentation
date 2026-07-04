@@ -17,7 +17,7 @@ Vous pouvez ouvrir, décrypter et enregistrer un document PDF protégé par mot 
 
 1. Appel [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) et fournissez le nom du fichier ainsi que le mot de passe propriétaire pour accéder au PDF chiffré.
 1. Appelez le [Decrypt](https://reference.aspose.com/pdf/go-cpp/security/decrypt/) méthode pour supprimer la protection par mot de passe et toutes les restrictions de sécurité associées du document.
-1. Enregistrez le PDF déchiffré en utilisant [EnregistrerSous](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
+1. Enregistrez le PDF déchiffré en utilisant [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
 
 ```go
 

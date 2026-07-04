@@ -4,14 +4,14 @@ linktitle: Faire pivoter les pages PDF
 type: docs
 weight: 50
 url: /fr/go-cpp/rotate-pages/
-description: Ce sujet décrit comment faire pivoter l'orientation de la page dans un fichier PDF existant de manière programmatique avec Go via C\u002B\u002B
+description: Ce sujet décrit comment faire pivoter l'orientation de la page dans un fichier PDF existant de manière programmatique avec Go via C++
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Faire pivoter les pages PDF avec Aspose.PDF for Go
-Abstract: Aspose.PDF for Go via C\u002B\u002B offre une fonctionnalité robuste pour faire pivoter les pages des documents PDF, permettant aux développeurs de modifier l'orientation des pages selon les besoins. La bibliothèque prend en charge la rotation des pages de 90, 180 ou 270 degrés, permettant des ajustements rapides et efficaces de la mise en page du document. Cette fonctionnalité est utile pour corriger les pages mal orientées ou modifier la présentation du document\u2019s. La documentation comprend des instructions étape par étape ainsi que des exemples de code pour aider les développeurs à intégrer de manière transparente les capacités de rotation des pages dans leurs applications.
+Abstract: Aspose.PDF for Go via C++ offre une fonctionnalité robuste pour faire pivoter les pages des documents PDF, permettant aux développeurs de modifier l'orientation des pages selon les besoins. La bibliothèque prend en charge la rotation des pages de 90, 180 ou 270 degrés, permettant des ajustements rapides et efficaces de la mise en page du document. Cette fonctionnalité est utile pour corriger les pages mal orientées ou modifier la présentation du document\u2019s. La documentation comprend des instructions étape par étape ainsi que des exemples de code pour aider les développeurs à intégrer de manière transparente les capacités de rotation des pages dans leurs applications.
 SoftwareApplication: go-cpp
 ---
 

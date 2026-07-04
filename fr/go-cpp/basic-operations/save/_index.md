@@ -17,7 +17,7 @@ SoftwareApplication: go-cpp
 
 ## Enregistrer le document PDF sur le système de fichiers
 
-L'exemple démontre le [Nouveau](https://reference.aspose.com/pdf/go-cpp/core/new/) méthode de création d'un nouveau document PDF, qui est une fonctionnalité fondamentale pour générer des documents dynamiquement, tels que des rapports ou des factures.
+L'exemple démontre le [New](https://reference.aspose.com/pdf/go-cpp/core/new/) méthode de création d'un nouveau document PDF, qui est une fonctionnalité fondamentale pour générer des documents dynamiquement, tels que des rapports ou des factures.
 
 Le code est simple et peut servir de modèle pour des fonctionnalités plus avancées comme l'ajout de texte, d'images ou d'annotations au PDF.
 

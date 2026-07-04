@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Extraire du texte avec Aspose.PDF for Go
-Abstract: Aspose.PDF for Go via C\u002B\u002B offre un moyen puissant et efficace d'extraire du texte des documents PDF. La bibliothèque prend en charge plusieurs techniques d'extraction, permettant aux utilisateurs de récupérer du texte de documents entiers, de pages spécifiques ou de zones prédéfinies au sein d'un PDF.
+Abstract: Aspose.PDF for Go via C++ offre un moyen puissant et efficace d'extraire du texte des documents PDF. La bibliothèque prend en charge plusieurs techniques d'extraction, permettant aux utilisateurs de récupérer du texte de documents entiers, de pages spécifiques ou de zones prédéfinies au sein d'un PDF.
 SoftwareApplication: go-cpp
 ---
 

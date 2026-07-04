@@ -18,7 +18,7 @@ Aspose.PDF for Go vous permet de lire et de définir les propriétés des pages 
 
 Lorsque vous travaillez avec des documents, vous souhaitez souvent savoir combien de pages ils contiennent. Avec Aspose.PDF, cela ne nécessite pas plus de deux lignes de code.
 
-**Aspose.PDF for Go via C\u002B\u002B** vous permet de compter les Pages avec [PageCount](https://reference.aspose.com/pdf/go-cpp/core/pagecount/) fonction.
+**Aspose.PDF for Go via C++** vous permet de compter les Pages avec [PageCount](https://reference.aspose.com/pdf/go-cpp/core/pagecount/) fonction.
 
 Le fragment de code suivant est conçu pour ouvrir un document PDF, récupérer le nombre de ses pages, puis afficher le résultat.
 
@@ -57,7 +57,7 @@ Pour obtenir le nombre de pages dans un fichier PDF :
 
 Dans cet exemple, la méthode pdf.PageSetSize() modifie la taille de la première page du document PDF. La constante PageSizeA1 garantit que la première page est définie au format de papier A1. Ceci est utile lors de la conversion de documents vers un format standardisé ou pour s'assurer que le contenu spécifique s'adapte correctement aux pages.
 
-1. Ouverture du document PDF avec [Ouvrir](https://reference.aspose.com/pdf/go-cpp/core/open/) méthode.
+1. Ouverture du document PDF avec [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) méthode.
 1. Définir la taille de la page avec [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/) fonction.
 1. Enregistrement du document avec [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) méthode.
 

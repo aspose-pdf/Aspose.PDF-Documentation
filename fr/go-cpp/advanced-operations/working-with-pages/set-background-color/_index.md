@@ -16,7 +16,7 @@ SoftwareApplication: go-cpp
 ---
 
 1. L’extrait de code fourni montre comment définir une couleur de fond pour un fichier PDF en utilisant la bibliothèque Aspose.PDF en Go.
-1. Le [Ouvrir](https://reference.aspose.com/pdf/go-cpp/core/open/) la méthode charge le fichier PDF spécifié en mémoire, permettant d’autres manipulations, comme la modification de son apparence ou de son contenu.
+1. Le [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) la méthode charge le fichier PDF spécifié en mémoire, permettant d’autres manipulations, comme la modification de son apparence ou de son contenu.
 1. Le [SetBackground](https://reference.aspose.com/pdf/go-cpp/organize/setbackground/) la méthode applique une nouvelle couleur d’arrière-plan au document PDF. Les valeurs RVB permettent aux utilisateurs de personnaliser le style visuel du document.
 1. Le [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) la méthode enregistre le PDF mis à jour sous un nouveau nom.
 

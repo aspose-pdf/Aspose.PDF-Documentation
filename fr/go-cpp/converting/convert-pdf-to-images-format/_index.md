@@ -29,7 +29,7 @@ La tâche la plus courante est lorsque vous devez enregistrer un document PDF co
 L'extrait de code Go fourni montre comment convertir la première page d'un document PDF en image JPEG à l'aide de la bibliothèque Aspose.PDF :
 
 1. Ouvrez un document PDF.
-1. Convertir une page en JPEG en utilisant [PageEnJpg](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) fonction.
+1. Convertir une page en JPEG en utilisant [PageToJpg](https://reference.aspose.com/pdf/go-cpp/convert/pagetojpg/) fonction.
 1. Fermez le document PDF et libérez toutes les ressources allouées.
 
 ```go
@@ -107,7 +107,7 @@ Aspose.PDF for Go vous présente une application en ligne gratuite ["PDF en TIFF
 L'extrait de code Go fourni montre comment convertir la première page d'un document PDF en image PNG en utilisant la bibliothèque Aspose.PDF :
 
 1. Ouvrez un document PDF.
-1. Convertir une page en PNG en utilisant [PageEnPng](https://reference.aspose.com/pdf/go-cpp/convert/pagetopng/) fonction.
+1. Convertir une page en PNG en utilisant [PageToPng](https://reference.aspose.com/pdf/go-cpp/convert/pagetopng/) fonction.
 1. Fermez le document PDF et libérez toutes les ressources allouées.
 
 ```go
