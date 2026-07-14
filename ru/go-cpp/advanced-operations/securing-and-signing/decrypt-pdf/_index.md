@@ -15,7 +15,7 @@ sitemap:
 
 Вы можете открыть, расшифровать и сохранить защищённый паролем PDF‑документ с помощью Aspose.PDF for Go via C++. PDF‑файл открывается с паролем владельца, расшифровывается для снятия всех ограничений безопасности и затем сохраняется как новый, незащищённый документ.
 
-1. Вызов [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) и укажите имя файла вместе с паролем владельца для доступа к зашифрованному PDF.
+1. Вызовите [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) и укажите имя файла вместе с паролем владельца для доступа к зашифрованному PDF.
 1. Вызовите [Decrypt](https://reference.aspose.com/pdf/go-cpp/security/decrypt/) метод для снятия защиты паролем и всех связанных с ней ограничений безопасности из документа.
 1. Сохраните расшифрованный PDF, используя [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
 
