@@ -49,7 +49,7 @@ SoftwareApplication: go-cpp
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в PowerPoint онлайн**
 
-Aspose.PDF for Go представляет вам онлайн бесплатное приложение [“PDF to PPTX”](https://products.aspose.app/pdf/conversion/pdf-to-pptx), где вы можете попробовать изучить функциональность и качество, с которым он работает.
+Aspose.PDF представляет вам онлайн приложение [“PDF to PPTX”](https://products.aspose.app/pdf/conversion/pdf-to-pptx), где вы можете попробовать изучить функциональность и качество, с которым он работает.
 
-[![Aspose.PDF Конвертация PDF в PPTX с бесплатным приложением](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
+[![Aspose.PDF Конвертация PDF в PPTX с приложением](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}

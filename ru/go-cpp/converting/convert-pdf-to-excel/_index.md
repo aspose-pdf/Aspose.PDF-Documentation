@@ -54,7 +54,7 @@ Aspose.PDF for Go использует [SaveXlsX](https://reference.aspose.com/p
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в Excel онлайн**
 
-Aspose.PDF for Go представляет вам онлайн бесплатное приложение ["PDF в XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), где вы можете попробовать исследовать функциональность и качество его работы.
+Aspose.PDF представляет вам онлайн приложение ["PDF в XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), где вы можете попробовать исследовать функциональность и качество его работы.
 
-[![Конвертация Aspose.PDF PDF в Excel с бесплатным приложением](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![Конвертация Aspose.PDF PDF в Excel с приложением](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
