@@ -32,5 +32,5 @@ SoftwareApplication: go-cpp
 |[PNG](https://docs.fileformat.com/image/png/)|Сохраняет документ в формате PNG||{{< emoticons/tick >}} | |
 |[BMP](https://docs.fileformat.com/image/bmp/)|Сохраняет документ в формате BMP||{{< emoticons/tick >}}| |
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Сохраняет документ как одно- или многостраничное изображение TIFF||{{< emoticons/tick >}} | |
-|[Текст](https://docs.fileformat.com/word-processing/txt/)|Сохранить документ в текстовом формате||{{< emoticons/tick >}} | |
+|[Текст](https://docs.fileformat.com/word-processing/txt/)|Сохраняет документ в текстовом формате||{{< emoticons/tick >}} | |
 |DICOM|Сохранить документ в текстовом формате DICOM||{{< emoticons/tick >}} | |
