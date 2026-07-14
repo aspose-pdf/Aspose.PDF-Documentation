@@ -16,7 +16,7 @@ sitemap:
 Se crea un nuevo documento PDF y se protege con contraseñas de usuario y propietario, mientras que permisos específicos—como imprimir, modificar contenido y rellenar formularios—se permiten explícitamente. Luego, el documento se guarda con estas restricciones de permisos aplicadas.
 
 1. Crear un nuevo documento PDF.
-1. Llamar [SetPermissions](https://reference.aspose.com/pdf/go-cpp/security/setpermissions/) para proteger el documento.
+1. Llama al método [SetPermissions](https://reference.aspose.com/pdf/go-cpp/security/setpermissions/) para proteger el documento.
 1. Especifique una contraseña de usuario para restringir el acceso.
 1. Especifique una contraseña de propietario para controlar la configuración de seguridad.
 1. Defina las operaciones permitidas usando una bandera de bits de permisos.

@@ -16,7 +16,7 @@ sitemap:
 Este fragmento de código explica cómo abrir un documento PDF protegido con contraseña usando Aspose.PDF for Go vía C++. El documento se abre con la contraseña del propietario, que brinda acceso completo y permite operaciones adicionales como leer metadatos, inspeccionar permisos, descifrar el archivo o modificar el contenido.
 
 1. Abrir el documento PDF protegido.
-1. Llamar [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) y proporcione el nombre del archivo junto con la contraseña del propietario para desbloquear el documento.
+1. Llama al método [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) y proporcione el nombre del archivo junto con la contraseña del propietario para desbloquear el documento.
 1. Utilice 'defer pdf.Close()' para liberar todos los recursos asignados una vez que el procesamiento haya finalizado.
 1. Después de abrir el documento, puede continuar con tareas adicionales como descifrar el PDF, cambiar los permisos o extraer información.
 

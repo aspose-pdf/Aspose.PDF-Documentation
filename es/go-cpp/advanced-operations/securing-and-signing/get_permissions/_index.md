@@ -20,7 +20,7 @@ El PDF se abre con la contraseña de propietario, sus indicadores de permiso se 
 1. Convertir indicadores de permisos a texto legible.
 1. Usar [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) con la contraseña del propietario para obtener acceso a la información de seguridad del documento.
 1. Asegurar la limpieza adecuada de recursos.
-1. Llamar [GetPermissions](https://reference.aspose.com/pdf/go-cpp/security/getpermissions/) para obtener la bandera de bits de permiso actual asignada al PDF.
+1. Llama al método [GetPermissions](https://reference.aspose.com/pdf/go-cpp/security/getpermissions/) para obtener la bandera de bits de permiso actual asignada al PDF.
 1. Mostrar los permisos.
 
 ```go
