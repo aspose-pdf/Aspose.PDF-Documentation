@@ -42,7 +42,7 @@ Veamos las páginas de Docs para más detalles: [Optimizar PDF](/pdf/es/go-cpp/o
 
 ### Agregar, eliminar o rotar páginas
 
-El [Trabajando con páginas PDF](/pdf/es/go-cpp/working-with-pages/) La sección explica cómo puedes agregar, eliminar y rotar páginas en PDF.
+La sección [Trabajando con páginas PDF](/pdf/es/go-cpp/working-with-pages/) explica cómo puedes agregar, eliminar y rotar páginas en PDF.
 
 Puedes añadir, eliminar y rotar páginas PDF, obtener y establecer propiedades de la página, y establecer el color de fondo, mejorando la organización y accesibilidad del documento.
 

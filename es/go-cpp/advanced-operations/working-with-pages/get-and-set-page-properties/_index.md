@@ -11,7 +11,6 @@ Abstract: Aspose.PDF for Go via C++ proporciona funciones completas para obtener
 SoftwareApplication: go-cpp
 ---
 
-
 Aspose.PDF for Go le permite leer y establecer propiedades de páginas en un archivo PDF. Esta sección muestra cómo obtener el número de páginas en un archivo PDF, obtener información sobre propiedades de página PDF como el color y establecer propiedades de página.
 
 ## Obtener número de páginas en un archivo PDF
@@ -22,7 +21,7 @@ Al trabajar con documentos, a menudo deseas saber cuántas páginas contienen. C
 
 El siguiente fragmento de código está diseñado para abrir un documento PDF, obtener su recuento de páginas y luego imprimir el resultado.
 
-El [PageCount](https://reference.aspose.com/pdf/go-cpp/core/pagecount/) El método se llama para obtener el número total de páginas en el documento PDF. Esto es útil para tareas que necesitan conocer la longitud del documento, como al extraer páginas específicas o realizar operaciones en todas las páginas. Este método es una forma directa de consultar la estructura del documento.’
+El método [PageCount](https://reference.aspose.com/pdf/go-cpp/core/pagecount/) se llama para obtener el número total de páginas en el documento PDF. Esto es útil para tareas que necesitan conocer la longitud del documento, como al extraer páginas específicas o realizar operaciones en todas las páginas. Este método es una forma directa de consultar la estructura del documento.’
 
 Para obtener el número de páginas en un archivo PDF:
 

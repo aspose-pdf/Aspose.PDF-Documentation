@@ -21,9 +21,9 @@ Toolkit con Aspose.PDF for Go a través de C++ le permite optimizar un documento
 
 Este fragmento es útil para aplicaciones donde reducir el tamaño o mejorar la eficiencia de los archivos PDF es crítico, como para cargas web, archivado o compartir mediante un ancho de banda limitado.
 
-1. El [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) método carga el archivo PDF especificado (sample.pdf) en la memoria.
-1. El [Método Optimize](https://reference.aspose.com/pdf/go-cpp/organize/optimize/) reduce el tamaño del archivo al realizar optimizaciones como eliminar objetos no utilizados, comprimir imágenes, aplanar anotaciones, desenlazar fuentes y habilitar la reutilización de contenido. Estos pasos ayudan a reducir los requisitos de almacenamiento y a mejorar la velocidad de procesamiento del documento PDF.
-1. El [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) el método guarda el PDF optimizado en un nuevo archivo.
+1. El método [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) carga el archivo PDF especificado (sample.pdf) en la memoria.
+1. El método [Optimize](https://reference.aspose.com/pdf/go-cpp/organize/optimize/) reduce el tamaño del archivo al realizar optimizaciones como eliminar objetos no utilizados, comprimir imágenes, aplanar anotaciones, desenlazar fuentes y habilitar la reutilización de contenido. Estos pasos ayudan a reducir los requisitos de almacenamiento y a mejorar la velocidad de procesamiento del documento PDF.
+1. El método [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) el PDF optimizado en un nuevo archivo.
 
 ```go
 

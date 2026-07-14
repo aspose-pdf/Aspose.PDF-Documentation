@@ -17,12 +17,12 @@ SoftwareApplication: go-cpp
 
 ## Agregar página en un archivo PDF
 
-El fragmento de código Go proporcionado muestra cómo ejecutar la operación Add Page al final del PDF usando la biblioteca Aspose.PDF. 
+El fragmento de código Go proporcionado muestra cómo ejecutar la operación Add Page al final del PDF usando la biblioteca Aspose.PDF.
 
-1. El [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) La función permite al programa cargar un archivo PDF existente (sample.pdf) para su manipulación. Esto es esencial para cualquier operación relacionada con PDF, como editar, agregar contenido o leer datos.
-1. El [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) El método se utiliza para insertar una nueva página en blanco en el documento PDF existente. Esto es útil para ampliar un documento o prepararlo para contenido adicional.
-1. El [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) El método garantiza que las modificaciones al PDF se escriban de nuevo en el archivo. Este paso es crucial para preservar los cambios, como la adición de nuevas páginas.
-1. El [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) El método se llama usando defer para liberar cualquier recurso asignado durante las operaciones con PDF. Esto es importante para prevenir fugas de memoria y garantizar un uso eficiente de los recursos.
+1. El método [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) permite al programa cargar un archivo PDF existente (sample.pdf) para su manipulación. Esto es esencial para cualquier operación relacionada con PDF, como editar, agregar contenido o leer datos.
+1. El método [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) se utiliza para insertar una nueva página en blanco en el documento PDF existente. Esto es útil para ampliar un documento o prepararlo para contenido adicional.
+1. El método [Save](https://reference.aspose.com/pdf/go-cpp/core/save/) garantiza que las modificaciones al PDF se escriban de nuevo en el archivo. Este paso es crucial para preservar los cambios, como la adición de nuevas páginas.
+1. El método [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) se llama usando defer para liberar cualquier recurso asignado durante las operaciones con PDF. Esto es importante para prevenir fugas de memoria y garantizar un uso eficiente de los recursos.
 
 Este fragmento es un ejemplo conciso y eficiente de cómo usar la biblioteca Aspose.PDF Go para tareas básicas de manipulación de PDF.
 
@@ -58,7 +58,7 @@ Aspose.PDF for Go le permite insertar una página en un documento PDF en cualqui
 
 ## Insertar página en un archivo PDF
 
-El [PageInsert](https://reference.aspose.com/pdf/go-cpp/core/pageinsert/) El método inserta una nueva página en la posición especificada. Esta función es útil cuando necesitas insertar páginas adicionales en un documento existente, por ejemplo, añadiendo una nueva sección o contenido a un informe o presentación.
+El método [PageInsert](https://reference.aspose.com/pdf/go-cpp/core/pageinsert/) inserta una nueva página en la posición especificada. Esta función es útil cuando necesitas insertar páginas adicionales en un documento existente, por ejemplo, añadiendo una nueva sección o contenido a un informe o presentación.
 
 ```go
 

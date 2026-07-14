@@ -20,8 +20,8 @@ Esta sección describe cómo cambiar la orientación de la página de paisaje a 
 Rotar páginas asegura una alineación adecuada para imprimir o visualizar PDFs en entornos profesionales
 
 1. Abra el documento PDF.
-1. Rotar páginas PDF. El [PageRotate](https://reference.aspose.com/pdf/go-cpp/organize/rotate/) función aplica una rotación específica (en este caso, 180 grados) a una página dada.
-1. Guardar cambios en un nuevo archivo. El [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) La función crea un nuevo archivo PDF para preservar el original mientras almacena la versión actualizada.
+1. Rotar páginas PDF. La función [PageRotate](https://reference.aspose.com/pdf/go-cpp/organize/rotate/) aplica una rotación específica (en este caso, 180 grados) a una página dada.
+1. Guardar cambios en un nuevo archivo. La función [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) crea un nuevo archivo PDF para preservar el original mientras almacena la versión actualizada.
 
 En este ejemplo, rotas una página específica en un documento PDF:
 
