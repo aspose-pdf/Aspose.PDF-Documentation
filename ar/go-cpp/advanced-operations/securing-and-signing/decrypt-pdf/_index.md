@@ -4,7 +4,7 @@ linktitle: فك تشفير ملف PDF
 type: docs
 weight: 40
 url: /ar/go-cpp/decrypt-pdf/
-description: فك تشفير ملف PDF باستخدام Aspose.PDF for Go عبر C++ .
+description: فك تشفير ملف PDF باستخدام Aspose.PDF for Go via C++ .
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## فك تشفير ملف PDF باستخدام كلمة مرور المالك
 
-يمكنك فتح، فك تشفير، وحفظ مستند PDF محمي بكلمة مرور باستخدام Aspose.PDF for Go عبر C++. يتم فتح ملف PDF باستخدام كلمة مرور المالك، يتم فك تشفيره لإزالة جميع قيود الأمان، ثم يتم حفظه كمستند جديد غير محمي.
+يمكنك فتح، فك تشفير، وحفظ مستند PDF محمي بكلمة مرور باستخدام Aspose.PDF for Go via C++. يتم فتح ملف PDF باستخدام كلمة مرور المالك، يتم فك تشفيره لإزالة جميع قيود الأمان، ثم يتم حفظه كمستند جديد غير محمي.
 
 1. استدعاء [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) وفر اسم الملف مع كلمة مرور المالك للوصول إلى ملف PDF المشفر.
 1. استدعِ [Decrypt](https://reference.aspose.com/pdf/go-cpp/security/decrypt/) الطريقة لإزالة حماية كلمة المرور وجميع القيود الأمنية المرتبطة من المستند.

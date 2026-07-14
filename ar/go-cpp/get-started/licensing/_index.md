@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: الترخيص لـ Aspose.PDF for Go عبر C++
-Abstract: صفحة الترخيص لـ Aspose.PDF for Go عبر C++ تشرح خيارات الترخيص المتاحة للمنتج. يمكن للعملاء الاختيار بين Classic License، Metered License، أو رخصة محدودة لأغراض التقييم. كما تسلط الصفحة الضوء على فوائد الحصول على رخصة صحيحة، مثل إتاحة كامل الوظائف وإزالة قيود التقييم.
+AlternativeHeadline: الترخيص لـ Aspose.PDF for Go via C++
+Abstract: صفحة الترخيص لـ Aspose.PDF for Go via C++ تشرح خيارات الترخيص المتاحة للمنتج. يمكن للعملاء الاختيار بين Classic License، Metered License، أو رخصة محدودة لأغراض التقييم. كما تسلط الصفحة الضوء على فوائد الحصول على رخصة صحيحة، مثل إتاحة كامل الوظائف وإزالة قيود التقييم.
 SoftwareApplication: go-cpp
 ---
 

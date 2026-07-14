@@ -4,7 +4,7 @@ linktitle: تشفير ملف PDF
 type: docs
 weight: 10
 url: /ar/go-cpp/encrypt-pdf/
-description: تشفير ملف PDF باستخدام Aspose.PDF for Go عبر C++.
+description: تشفير ملف PDF باستخدام Aspose.PDF for Go via C++.
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## تشفير ملف PDF باستخدام كلمة مرور المستخدم أو المالك
 
-لتشفير المستندات بسهولة وأمان، يمكنك استخدام Aspose.PDF for Go عبر C++.
+لتشفير المستندات بسهولة وأمان، يمكنك استخدام Aspose.PDF for Go via C++.
 
 - ‏**userPassword**، إذا تم تعيينه، هو ما تحتاج إلى تقديمه لفتح ملف PDF. سيُظهر Acrobat/Reader للمستخدم طلب إدخال كلمة مرور المستخدم. إذا لم تكن صحيحة، فإن المستند لن يفتح.
 - إذا تم ضبط **ownerPassword**، فإنه يتحكم في الأذونات، مثل الطباعة، التحرير، الاستخراج، التعليق، إلخ. سيمنع Acrobat/Reader هذه الأشياء بناءً على إعدادات الأذونات. سيتطلب Acrobat كلمة السر هذه إذا كنت ترغب في ضبط/تغيير الأذونات.

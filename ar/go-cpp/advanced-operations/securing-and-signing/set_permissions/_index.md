@@ -4,7 +4,7 @@ linktitle: تعيين الأذونات
 type: docs
 weight: 80
 url: /ar/go-cpp/set_permissions/
-description: تعيين أذونات لمستند PDF باستخدام Aspose.PDF for Go عبر C++.
+description: تعيين أذونات لمستند PDF باستخدام Aspose.PDF for Go via C++.
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"

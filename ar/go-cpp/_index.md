@@ -1,6 +1,6 @@
 ---
 title: التوثيق
-linktitle: Aspose.PDF for Go عبر C++
+linktitle: Aspose.PDF for Go via C++
 second_title: Aspose.PDF for Go via C++
 type: docs
 weight: 85
@@ -13,17 +13,17 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: صفحات التوثيق لـ Aspose.PDF for Go
-Abstract: Aspose.PDF for Go عبر C++ هي مكتبة معالجة PDF قوية ومرنة تمكن المطورين من إنشاء وتحرير وتحويل ومعالجة مستندات PDF. توفر مجموعة شاملة من الميزات، بما في ذلك إدارة النصوص والصور، معالجة حقول النموذج، التعليقات التوضيحية، العلامات المائية، وأمان المستندات من خلال التشفير والتوقيعات الرقمية.
+Abstract: Aspose.PDF for Go via C++ هي مكتبة معالجة PDF قوية ومرنة تمكن المطورين من إنشاء وتحرير وتحويل ومعالجة مستندات PDF. توفر مجموعة شاملة من الميزات، بما في ذلك إدارة النصوص والصور، معالجة حقول النموذج، التعليقات التوضيحية، العلامات المائية، وأمان المستندات من خلال التشفير والتوقيعات الرقمية.
 SoftwareApplication: go-cpp
 ---
 
 ![صورة شعار Aspose.PDF for Go](aspose_pdf-for-go-cpp.png)
 
-## مرحبًا بك في Aspose.PDF for Go عبر C++
+## مرحبًا بك في Aspose.PDF for Go via C++
 
 {{% alert color="primary" %}}
 
-أداة **Aspose.PDF for Go عبر C++** قوية تسمح للمطورين بالتعامل مباشرة مع ملفات PDF وتساعد في أداء مهام مختلفة للـ PDF. تحتوي على ميزات فريدة لتحويل PDF إلى صيغ أخرى.
+أداة **Aspose.PDF for Go via C++** قوية تسمح للمطورين بالتعامل مباشرة مع ملفات PDF وتساعد في أداء مهام مختلفة للـ PDF. تحتوي على ميزات فريدة لتحويل PDF إلى صيغ أخرى.
 
 {{% /alert %}}
 
