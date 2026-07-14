@@ -4,7 +4,7 @@ linktitle: Удалить страницы PDF
 type: docs
 weight: 30
 url: /ru/go-cpp/delete-pages/
-description: Вы можете удалить страницы из вашего PDF‑файла, используя Aspose.PDF for Go через C++.
+description: Вы можете удалить страницы из вашего PDF‑файла, используя Aspose.PDF for Go via C++.
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"

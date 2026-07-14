@@ -1,5 +1,5 @@
 ---
-title: Базовые операции с PDF с помощью Aspose.PDF for Go через C++
+title: Базовые операции с PDF с помощью Aspose.PDF for Go via C++
 linktitle: Базовые операции
 type: docs
 weight: 40
@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Go via C++ предоставляет базовые о
 SoftwareApplication: go-cpp
 ---
 
-**Basic operations** раздел описывает первую и простейшую операцию с PDF‑документами в Aspose.PDF for Go через C++:
+**Basic operations** раздел описывает первую и простейшую операцию с PDF‑документами в Aspose.PDF for Go via C++:
 
 - [Восстановить PDF](/pdf/ru/go-cpp/repair-pdf/)
 - [Открыть PDF](/pdf/ru/go-cpp/open-pdf-document/)

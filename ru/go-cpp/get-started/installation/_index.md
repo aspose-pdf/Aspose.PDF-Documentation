@@ -1,5 +1,5 @@
 ---
-title: Как установить Aspose.PDF for Go через C++
+title: Как установить Aspose.PDF for Go via C++
 linktitle: Установка
 type: docs
 weight: 20

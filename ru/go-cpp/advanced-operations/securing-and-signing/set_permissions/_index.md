@@ -4,7 +4,7 @@ linktitle: Установить разрешения
 type: docs
 weight: 80
 url: /ru/go-cpp/set_permissions/
-description: Установить разрешения для PDF‑документа с помощью Aspose.PDF for Go через C++.
+description: Установить разрешения для PDF‑документа с помощью Aspose.PDF for Go via C++.
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
