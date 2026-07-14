@@ -23,7 +23,7 @@ O trecho de código abaixo segue estas etapas:
 1. Crie uma nova instância de documento PDF.
 1. Adicione uma nova página ao documento PDF usando [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) função.
 1. Defina o tamanho da página usando [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/).
-1. Adicione o texto \"Hello World!\" à primeira página usando [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/).
+1. Adicione o texto Hello World à primeira página usando [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/).
 1. Salve o documento PDF reparado usando [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) método.
 1. Feche o documento PDF e libere quaisquer recursos alocados.
 
