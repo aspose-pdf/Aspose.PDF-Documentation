@@ -26,7 +26,7 @@ SoftwareApplication: go-cpp
 Оптимизация может включать сжатие изображений, удаление неиспользуемых объектов и оптимизацию шрифтов для уменьшения размера файла и повышения производительности. Любая ошибка во время этой операции регистрируется и завершает работу программы.  
  
 1. Откройте указанный PDF‑файл (sample.pdf) с помощью метода [Open](https://reference.aspose.com/pdf/go-cpp/core/open/).
-1. Оптимизирует ресурсы внутри PDF для повышения эффективности, используя [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) метод.
+1. Оптимизируйте ресурсы внутри PDF для повышения эффективности, используя [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) метод.
 1. Сохраните оптимизированный PDF в новый файл с помощью метода [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
 
 В следующем фрагменте кода показано, как оптимизировать PDF‑документ.
