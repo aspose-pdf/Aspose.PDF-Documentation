@@ -20,8 +20,8 @@ SoftwareApplication: go-cpp
 ページを回転させることで、専門的な環境で PDF を印刷または表示する際に適切な位置合わせが保証されます
 
 1. PDF ドキュメントを開きます。
-1. PDF ページを回転させます。The [PageRotate](https://reference.aspose.com/pdf/go-cpp/organize/rotate/) 関数は、指定されたページに特定の回転（この場合は 180 度）を適用します。
-1. 変更を新しいファイルに保存します。The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) この関数は、元のPDFファイルを保持しながら、更新されたバージョンを保存するために新しいPDFファイルを作成します。
+1. PDF ページを回転させます。[PageRotate](https://reference.aspose.com/pdf/go-cpp/organize/rotate/) 関数は、指定されたページに特定の回転（この場合は 180 度）を適用します。
+1. 変更を新しいファイルに保存します。[SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) 関数は、元のPDFファイルを保持しながら、更新されたバージョンを保存するために新しいPDFファイルを作成します。
 
 この例では、PDFドキュメントの特定のページを回転させます。
 

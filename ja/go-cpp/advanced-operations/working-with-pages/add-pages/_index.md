@@ -17,7 +17,7 @@ SoftwareApplication: go-cpp
 
 ## PDFファイルにページを追加
 
-提供された Go コードスニペットは、Aspose.PDF ライブラリを使用して PDF の末尾に Add Page 操作を実行する方法を示しています。 
+提供された Go コードスニペットは、Aspose.PDF ライブラリを使用して PDF の末尾にページを追加する操作を実行する方法を示しています。
 
 1. その [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) この関数は、プログラムが既存の PDF ファイル (sample.pdf) を読み込み、操作できるようにします。これは、編集、コンテンツの追加、データの読み取りなど、あらゆる PDF 関連の操作に不可欠です。
 1. その [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) このメソッドは、既存の PDF ドキュメントに新しい空白ページを挿入するために使用されます。これは、ドキュメントを拡張したり、追加コンテンツの準備をしたりするのに便利です。

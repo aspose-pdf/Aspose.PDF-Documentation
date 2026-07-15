@@ -20,7 +20,7 @@ SoftwareApplication: go-cpp
 提供された Go コードスニペットは、Aspose.PDF ライブラリを使用して PDF ドキュメントを PPTX に変換する方法を示しています。
 
 1. PDF ドキュメントを開く。
-1. PDF ファイルを PPTX に変換するには、 [SavePptx](https://reference.aspose.com/pdf/go-cpp/convert/savepptx/) function。
+1. PDF ファイルを PPTX に変換するには、[SavePptx](https://reference.aspose.com/pdf/go-cpp/convert/savepptx/) 関数を使用します。
 1. PDF ドキュメントを閉じ、割り当てられたリソースをすべて解放します。
 
 ```go

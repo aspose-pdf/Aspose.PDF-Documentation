@@ -15,6 +15,6 @@ Abstract: Aspose.PDF for Go via C++ は、開発者が PDF 文書からコンテ
 SoftwareApplication: go-cpp
 ---
 
-**Parse PDF** 文書は、PDF ファイルからさまざまな情報を抽出することに関連する用語です。このセクションでは、以下の方法について説明します:
+**PDF の解析** とは、PDF ファイルからさまざまな情報を抽出することに関連する用語です。このセクションでは、以下の方法について説明します:
 
 - [PDF からテキストを抽出する](/pdf/ja/go-cpp/extract-text-from-pdf/). 以下のGoの例は、Aspose.PDF ライブラリを使用して PDF ファイルからテキストを抽出し、コンソールに表示する方法を示しています。

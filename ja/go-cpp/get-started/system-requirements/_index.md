@@ -20,7 +20,7 @@ SoftwareApplication: go-cpp
 パッケージ asposepdf は、開発者が PDF ファイルを直接操作できる強力なツールキットであり、PDF に関するさまざまなタスクを実行するのに役立ちます。
 PDF を他の形式に変換するための固有機能が含まれています。
 
-Linux x64、macOS x86_64、macOS arm64、および Windows x64 プラットフォームのサポートを実装しました。Used [cgo](https://go.dev/wiki/cgo).
+Linux x64、macOS x86_64、macOS arm64、および Windows x64 プラットフォームのサポートを実装しました。[cgo](https://go.dev/wiki/cgo) を使用しています。
 
 パッケージのルートディレクトリにある ‘lib’ フォルダーからのプラットフォーム固有の動的ライブラリのバージョンが、結果として得られるアプリケーションを配布するために必要です：
 
