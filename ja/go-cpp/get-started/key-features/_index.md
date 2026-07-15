@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: C++ 経由の Aspose.PDF for Go の主な機能ページ
-Abstract: C++ 経由の Aspose.PDF for Go の主な機能ページは、PDF ドキュメントを操作するためのライブラリの機能を概説しています。サポートされている PDF バージョンに関する情報を提供し、テキストや画像の操作、文書の結合と分割、アノテーションの処理、デジタル署名の管理など、実行可能なさまざまな操作の詳細を示しています。
+AlternativeHeadline: Aspose.PDF for Go via C++ の主な機能ページ
+Abstract: Aspose.PDF for Go via C++ の主な機能ページは、PDF ドキュメントを操作するためのライブラリの機能を概説しています。サポートされている PDF バージョンに関する情報を提供し、テキストや画像の操作、文書の結合と分割、アノテーションの処理、デジタル署名の管理など、実行可能なさまざまな操作の詳細を示しています。
 SoftwareApplication: go-cpp
 ---
 

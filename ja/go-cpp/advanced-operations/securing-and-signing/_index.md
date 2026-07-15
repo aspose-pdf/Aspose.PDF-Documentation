@@ -31,11 +31,9 @@ Set Permissions と Get Permissions の手順については、PDF Permissions R
 | :- | :- |
 | PrintDocument | 印刷を許可 |
 | ModifyContent | コンテンツの変更を許可（フォーム/注釈を除く） |
-| コンテンツの抽出 | テキストと画像のコピー/抽出を許可 |
-| テキスト注釈の変更 | テキスト注釈の追加/変更を許可 |
-| フォームに入力 | インタラクティブフォームの入力を許可する |
-| 障害者向けコンテンツ抽出 | アクセシビリティのためのコンテンツ抽出を許可する |
-| ドキュメントの組み立て | ページの挿入/回転/削除や構造の変更を許可する |
-| 印刷品質 | 高品質／忠実な印刷を許可 |
-
-
+| ExtractContent | テキストと画像のコピー/抽出を許可 |
+| ModifyTextAnnotations | テキスト注釈の追加/変更を許可 |
+| FillForm | インタラクティブフォームの入力を許可する |
+| ExtractContentWithDisabilities | アクセシビリティのためのコンテンツ抽出を許可する |
+| AssembleDocument | ページの挿入/回転/削除や構造の変更を許可する |
+| PrintingQuality | 高品質／忠実な印刷を許可 |

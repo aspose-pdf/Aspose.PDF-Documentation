@@ -23,7 +23,7 @@ EPUBはリフロー可能コンテンツ用に設計されており、EPUBリー
 提供されたGoコードスニペットは、Aspose.PDFライブラリを使用してPDFドキュメントをEPUBに変換する方法を示しています:
 
 1. PDFドキュメントを開く。
-1. PDFファイルをEPUBに変換するには [SaveEpub]() 関数。
+1. PDFファイルをEPUBに変換するには [SaveEpub](https://reference.aspose.com/pdf/go-cpp/convert/saveepub/) 関数。
 1. PDFドキュメントを閉じ、割り当てられたリソースをすべて解放します。
 
 ```go

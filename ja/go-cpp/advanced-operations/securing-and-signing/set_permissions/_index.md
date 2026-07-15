@@ -16,11 +16,11 @@ sitemap:
 新しい PDF ドキュメントが作成され、ユーザー パスワードと所有者パスワードで保護されます。その際、印刷、コンテンツの変更、フォームへの入力など、特定の権限が明示的に許可されます。その後、これらの権限制限が適用された状態でドキュメントが保存されます。
 
 1. 新しい PDF ドキュメントを作成する。
-1. 呼び出す [SetPermissions](https://reference.aspose.com/pdf/go-cpp/security/setpermissions/) ドキュメントを保護するために。
+1. [SetPermissions](https://reference.aspose.com/pdf/go-cpp/security/setpermissions/)を呼び出してドキュメントを保護します。
 1. アクセスを制限するためにユーザーパスワードを指定します。
 1. セキュリティ設定を制御するためにオーナーパスワードを指定します。
 1. 許可ビットフラグを使用して許可された操作を定義します。
-1. 権限が適用された PDF を保存するには [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
+1. 権限を適用したPDFを保存するには、[SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/)を使用します。
 
 ```go
 

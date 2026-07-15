@@ -16,9 +16,9 @@ SoftwareApplication: go-cpp
 
 既存の PDF ファイルにテキストを追加するには：
 
-1. PDF ファイルを開く。
-1. PDF ドキュメントにテキストを追加するには [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/) 関数。
-1. 変更を同じファイルに保存します。
+1. PDFファイルを開きます。
+1. [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/)関数を使用して、PDFドキュメントにテキストを追加します。
+1. 変更内容を同じファイルに保存します。
 
 ## テキストの追加
 

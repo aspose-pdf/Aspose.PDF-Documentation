@@ -20,12 +20,12 @@ SoftwareApplication: go-cpp
 **Aspose.PDF for Go** は、開発者が Go で PDF 文書の作成、操作、および変換機能を組み込むことができる機能豊富な PDF API です。PDF、TXT、XPS、EPUB、TEX、DOC、DOCX、PPTX、画像フォーマットなど、多くの一般的なファイル形式をサポートしています。本記事では、テキスト「Hello World!」を含む PDF 文書を作成します。環境に Aspose.PDF for Go をインストールした後、コードサンプルを実行して Aspose.PDF API の動作を確認できます。
 以下のコードスニペットは次の手順に従います：
 
-1. 新しい PDF 文書インスタンスを作成します。
-1. PDF 文書に新しいページを追加するには、 [PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) 関数です。
-1. ページサイズを設定するには [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/).
-1. 最初のページに "Hello World!" テキストを追加するには [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/).
-1. 修復された PDF ドキュメントを保存するには [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) メソッド。
-1. PDFドキュメントを閉じ、割り当てられたリソースを解放します。
+1. 新しい PDF ドキュメント インスタンスを作成します。
+1. PDF ドキュメントに新しいページを追加するには、[PageAdd](https://reference.aspose.com/pdf/go-cpp/core/pageadd/) 関数を使用します。
+1. ページ サイズを設定するには、[PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/) を使用します。
+1. 最初のページに「Hello World!」というテキストを追加するには、[PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/) を使用します。
+1. 作成した PDF ドキュメントを保存するには、[SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) メソッドを使用します。
+1. PDF ドキュメントを閉じ、割り当てられたリソースを解放します。
 
 以下のコードスニペットは、Aspose.PDF for Go API の動作を示す Hello World プログラムです。
 

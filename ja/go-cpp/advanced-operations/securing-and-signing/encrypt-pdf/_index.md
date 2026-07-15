@@ -21,13 +21,13 @@ sitemap:
 PDF はユーザー パスワードとオーナーパスワードで保護され、特定のアクセス権限が設定され、AES-128 アルゴリズムと PDF 2.0 互換のセキュリティで暗号化されています。暗号化されたドキュメントはその後ディスクに保存されます。
 
 1. 新しい PDF ドキュメントを作成します。
-1. PDF ドキュメントを暗号化します [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) 方法。
+1. [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/)メソッドを使用してPDFドキュメントを暗号化します。
 1. ドキュメントの開封を制限するためにユーザーパスワードを指定します。
 1. 権限を管理するためにオーナーパスワードを指定します。
 1. 許可されたアクションをパーミッションビットフラグで定義します。
 1. 暗号化アルゴリズムとして AES-128 を選択します。
 1. 最新のセキュリティ要件に対応するため、PDF 2.0 暗号化を有効にします。
-1. 使用して保護されたドキュメントを保存します。 [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/)、新しいファイルに書き込んでいます。
+1. 保護されたドキュメントを新しいファイルに書き込んで保存するには、[SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/)を使用します。
 
 ```go
 

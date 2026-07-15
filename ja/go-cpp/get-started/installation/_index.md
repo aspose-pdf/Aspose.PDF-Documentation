@@ -19,7 +19,7 @@ SoftwareApplication: go-cpp
 
 このパッケージには、bzip2 アーカイブとして保存されている大きなファイルが含まれています。
 
-1. Your Project に asposepdf パッケージを追加してください：
+1. asposepdf パッケージをプロジェクトに追加します。
 
 ```sh
 go get github.com/aspose-pdf/aspose-pdf-go-cpp@latest

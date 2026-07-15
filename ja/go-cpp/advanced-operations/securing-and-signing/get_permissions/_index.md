@@ -4,7 +4,7 @@ linktitle: 権限を取得する
 type: docs
 weight: 60
 url: /ja/go-cpp/get-permissions/
-description: C++ 経由で Aspose.PDF for Go を使用して、パスワードで保護された PDF ドキュメントのアクセス権限を読み取り、表示します。
+description: Aspose.PDF for Go via C++ を使用して、パスワードで保護された PDF ドキュメントのアクセス権限を読み取り、表示します。
 lastmod: "2026-07-04"
 sitemap:
     changefreq: "monthly"
@@ -13,15 +13,15 @@ sitemap:
 
 ## パスワードで保護された PDF ドキュメントの権限を取得する
 
-この例では、C++ 経由で Aspose.PDF for Go を使用して、Go でパスワードで保護された PDF ドキュメントからアクセス権限を取得し、解釈し、表示する方法を示します。
+この例では、Aspose.PDF for Go via C++ を使用して、Go でパスワードで保護された PDF ドキュメントからアクセス権限を取得し、解釈し、表示する方法を示します。
 PDF は所有者パスワードで開かれ、権限フラグが読み取られ、許可されている各権限は人間が読める説明に変換され、コンソールに出力されます。
 
 1. 権限名のマッピングを定義します。
-1. 権限フラグを可読テキストに変換します。
-1. 使用する [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) 所有者パスワードを使用して、文書のセキュリティ情報へのアクセスを取得します。
-1. 適切なリソースのクリーンアップを確保します。
-1. 呼び出す [GetPermissions](https://reference.aspose.com/pdf/go-cpp/security/getpermissions/) PDFに割り当てられた現在の権限ビットフラグを取得するために。
-1. 権限を表示する。
+1. 権限フラグを読みやすいテキストに変換します。
+1. [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) を使用して、所有者のパスワードでドキュメントのセキュリティ情報にアクセスします。
+1. 適切なリソースのクリーンアップが行われていることを確認します。
+1. [GetPermissions](https://reference.aspose.com/pdf/go-cpp/security/getpermissions/) を呼び出して、PDF に割り当てられている現在の権限ビットフラグを取得します。
+1. 権限を表示します。
 
 ```go
 

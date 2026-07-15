@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Aspose.PDF for Go を使用して PDF リソースを最適化する
-Abstract: C++ を介した Aspose.PDF for Go は、PDF リソースを最適化する高度な機能を提供し、文書の効率を向上させ、ファイルサイズを削減します。このライブラリは、開発者がフォント、画像、メタデータを冗長データを削除し、リソースを圧縮することで、文書の品質を損なうことなく最適化できるようにします。これらの最適化手法は文書のパフォーマンスを向上させ、PDF を共有や保存により適したものにします。ドキュメントには、開発者がアプリケーションでリソース最適化を効果的に実装できるよう、詳細なガイダンスとコードサンプルが提供されています。
+Abstract: Aspose.PDF for Go via C++ は、PDF リソースを最適化する高度な機能を提供し、文書の効率を向上させ、ファイルサイズを削減します。このライブラリは、開発者がフォント、画像、メタデータを冗長データを削除し、リソースを圧縮することで、文書の品質を損なうことなく最適化できるようにします。これらの最適化手法は文書のパフォーマンスを向上させ、PDF を共有や保存により適したものにします。ドキュメントには、開発者がアプリケーションでリソース最適化を効果的に実装できるよう、詳細なガイダンスとコードサンプルが提供されています。
 SoftwareApplication: go-cpp
 ---
 
@@ -19,17 +19,17 @@ SoftwareApplication: go-cpp
 
 ドキュメント内のリソースを最適化する：
 
-  1. ドキュメントページで使用されていないリソースは削除されます。
-  1. 同等のリソースは単一のオブジェクトに結合されます。
-  1. 未使用のオブジェクトは削除されます。
+1. ドキュメントページで使用されていないリソースは削除されます。
+1. 同等のリソースは単一のオブジェクトに結合されます。
+1. 未使用のオブジェクトは削除されます。
 
-最適化には画像の圧縮、未使用オブジェクトの削除、フォントの最適化が含まれ、ファイルサイズの削減とパフォーマンスの向上が図られます。この操作中にエラーが発生した場合はログに記録され、プログラムが終了します。  
- 
-1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method は指定された PDF ファイル (sample.pdf) をメモリにロードします。
-1. PDF 内のリソースを効率化のために最適化します using [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) method。
-1. The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method は最適化された PDF を新しいファイルに保存します。
+最適化には、画像圧縮、未使用オブジェクトの削除、フォント最適化が含まれ、ファイルサイズの削減とパフォーマンスの向上を目的としています。この処理中にエラーが発生した場合は、ログに記録され、プログラムは終了します。
 
-次のコードスニペットは、PDF ドキュメントを最適化する方法を示しています。
+1. [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) を使用して、指定された PDF ファイル (sample.pdf) をメモリに読み込みます。
+1. [OptimizeResource](https://reference.aspose.com/pdf/go-cpp/organize/optimizeresource/) メソッドを使用して、PDF ファイル内のリソースを最適化します。
+1. [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) を使用して、最適化された PDF ファイルを新しいファイルに保存します。
+
+以下のコード断片は、PDF ドキュメントを最適化する方法を示しています。
 
 ```go
 

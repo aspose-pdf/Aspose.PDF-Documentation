@@ -17,13 +17,13 @@ SoftwareApplication: go-cpp
 
 ## PDF ドキュメントを最適化する
 
-C++ を介した Aspose.PDF for Go ツールキットを使用すると、PDF ドキュメントを最適化できます。
+Aspose.PDF for Go via C++ ツールキットを使用すると、PDF ドキュメントを最適化できます。
 
-このスニペットは、PDF ファイルのサイズ削減や効率向上が重要なアプリケーション、例えばウェブへのアップロード、アーカイブ、または帯域幅が制限された環境での共有などに役立ちます。
+このコードスニペットは、Web アップロード、アーカイブ、ネットワーク帯域幅が限られた環境での共有など、PDF ファイルのサイズを削減し、効率を向上させることが重要なアプリケーションで役立ちます。
 
-1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) メソッドは、指定された PDF ファイル (sample.pdf) をメモリにロードします。
-1. The [Optimize メソッド](https://reference.aspose.com/pdf/go-cpp/organize/optimize/) 未使用オブジェクトの削除、画像の圧縮、注釈のフラット化、フォントの埋め込み解除、コンテンツ再利用の有効化といった最適化を実行することで、ファイルサイズを削減します。これらの手順により、PDF ドキュメントの保存容量が減少し、処理速度が向上します。
-1. The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) このメソッドは最適化された PDF を新しいファイルに保存します。
+1. [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) メソッドを使用して、指定された PDF ファイル (sample.pdf) をメモリに読み込みます。
+1. [Optimize](https://reference.aspose.com/pdf/go-cpp/organize/optimize/) メソッドを使用して、未使用オブジェクトの削除、画像の圧縮、注釈の単一形式への統合、埋め込みフォントの削除、コンテンツの再利用の確保などの最適化を実行することで、ファイルサイズを削減します。これらの処理により、PDF ドキュメントの保存に必要なメモリ量が削減され、処理速度が向上します。
+1. [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/)を使用します。このメソッドは、最適化されたPDFファイルを新しいファイルに保存します。
 
 ```go
 
