@@ -30,5 +30,4 @@ SoftwareApplication: go-cpp
 ## 了解更多关于
 
 - [基本操作](/pdf/zh/go-cpp/basic-operations/)
-- [\"Hello, World\" Go 示例](/pdf/zh/go-cpp/hello-world-example/)
-
+- ["Hello, World" Go 示例](/pdf/zh/go-cpp/hello-world-example/)

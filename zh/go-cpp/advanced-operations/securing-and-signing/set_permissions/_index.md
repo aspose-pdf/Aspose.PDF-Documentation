@@ -16,11 +16,11 @@ sitemap:
 创建一个新的 PDF 文档，并使用用户密码和所有者密码进行保护，同时明确允许特定权限——如打印、修改内容和填写表单。随后将文档保存，并应用这些权限限制。
 
 1. 创建一个新的 PDF 文档。
-1. 调用 [SetPermissions](https://reference.aspose.com/pdf/go-cpp/security/setpermissions/) 以保护文档。
-1. 指定用户密码以限制访问。
+1. 调用 [SetPermissions](https://reference.aspose.com/pdf/go-cpp/security/setpermissions/)来保护文档。
+1. 指定用户密码以限制访问权限。
 1. 指定所有者密码以控制安全设置。
 1. 使用权限位标志定义允许的操作。
-1. 使用保存已应用权限的 PDF [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
+1. 使用 [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) 保存应用了相应权限的 PDF 文件。
 
 ```go
 

@@ -51,14 +51,14 @@ SoftwareApplication: go-cpp
 {{% alert color="success" %}}
 **尝试在线将 PDF 转换为 DOC**
 
-Aspose.PDF for Go 为您呈现在线免费应用 ["PDF 转 DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)，在此您可以尝试调查其功能和质量的工作方式。
+Aspose.PDF 为您呈现在线免费应用 ["PDF 转 DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)，在此您可以尝试调查其功能和质量的工作方式。
 
-[![将 PDF 转换为 DOC](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) 
+[![将 PDF 转换为 DOC](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## 将 PDF 转换为 DOCX
 
-Aspose.PDF for Go API 让您能够读取并将 PDF 文档转换为 DOCX。DOCX 是一种广为人知的 Microsoft Word 文档格式，其结构已从纯二进制更改为 XML 与二进制文件的组合。Docx 文件可以在 Word 2007 及其后续版本中打开，但不能在早期支持 DOC 文件扩展名的 MS Word 版本中打开。
+Aspose.PDF for Go API 让您能够读取并将 PDF 文档转换为 DOCX。DOCX 是一种广为人知的 Microsoft Word 文档格式，其结构已从纯二进制更改为 XML 与二进制文件的组合。DOCX 文件可以在 Word 2007 及其后续版本中打开，但不能在早期支持 DOC 文件扩展名的 MS Word 版本中打开。
 
 提供的 Go 代码片段演示了如何使用 Aspose.PDF 库将 PDF 文档转换为 DOCX：
 

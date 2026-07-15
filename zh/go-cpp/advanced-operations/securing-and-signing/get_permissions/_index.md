@@ -18,9 +18,9 @@ sitemap:
 
 1. 定义权限名称映射。
 1. 将权限标志转换为可读文本。
-1. 使用 [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) 使用所有者密码获取文档的安全信息。
-1. 确保正确的资源清理。
-1. 调用 [GetPermissions](https://reference.aspose.com/pdf/go-cpp/security/getpermissions/) 获取分配给 PDF 的当前权限位标志。
+1. 使用 `[OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/)` 通过所有者密码检索文档安全信息。
+1. 确保资源验证正确。
+1. 调用 `[GetPermissions](https://reference.aspose.com/pdf/go-cpp/security/getpermissions/)` 获取分配给 PDF 文件的当前权限位标志。
 1. 显示权限。
 
 ```go

@@ -29,13 +29,11 @@ sitemap:
 
 | **权限** | **描述** |
 | :- | :- |
-| 打印文档 | 允许打印 |
-| 修改内容 | 允许修改内容（表单/注释除外） |
+| PrintDocument | 允许打印 |
+| ModifyContent | 允许修改内容（表单/注释除外） |
 | ExtractContent | 允许复制/提取文本和图形 |
 | ModifyTextAnnotations | 允许添加/修改文本注释 |
 | FillForm | 允许填写交互式表单 |
-| 提取带残障的内容 | 允许为可访问性提取内容 |
-| 组装文档 | 允许插入/旋转/删除页面或更改结构 |
-| 打印质量 | 允许高质量/忠实打印 |
-
-
+| ExtractContentWithDisabilities | 允许为可访问性提取内容 |
+| AssembleDocument | 允许插入/旋转/删除页面或更改结构 |
+| PrintingQuality | 允许高质量/忠实打印 |

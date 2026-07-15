@@ -37,5 +37,3 @@ To work through the Set Permissions and Get Permissions, please refer to the PDF
 | ExtractContentWithDisabilities | Allow content extraction for accessibility |
 | AssembleDocument | Allow inserting/rotating/deleting pages or changing structure |
 | PrintingQuality | Allow high-quality / faithful printing |
-
-

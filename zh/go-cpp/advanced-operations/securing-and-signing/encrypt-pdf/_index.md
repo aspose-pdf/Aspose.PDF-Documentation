@@ -21,13 +21,13 @@ sitemap:
 该 PDF 受用户密码和所有者密码保护，配置了特定的访问权限，并使用 AES-128 算法以及 PDF 2.0–兼容的安全性进行加密。加密后的文档随后被保存到磁盘。
 
 1. 创建一个新的 PDF 文档。
-1. 使用以下方式加密 PDF 文档 [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) 方法。
+1. 要加密 PDF 文档，请使用以下方法：[encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/)。
 1. 指定用户密码以限制打开文档。
 1. 指定所有者密码以控制权限。
 1. 使用权限位标志定义允许的操作。
 1. 选择 AES-128 作为加密算法。
 1. 启用 PDF 2.0 加密以符合现代安全合规性。
-1. 使用 以下方式保存已加密的文档。 [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/), 将其写入新文件。
+1. 使用以下方法保存加密文档：[SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/)，这将把文档写入一个新文件。
 
 ```go
 

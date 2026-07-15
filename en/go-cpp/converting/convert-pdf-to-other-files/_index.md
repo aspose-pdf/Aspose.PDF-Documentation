@@ -23,7 +23,7 @@ EPUB is designed for reflowable content, meaning that an EPUB reader can optimiz
 The provided Go code snippet demonstrates how to convert a PDF document into a EPUB using the Aspose.PDF library:
 
 1. Open a PDF document.
-1. Convert a PDF file to EPUB using [SaveEpub]() function.
+1. Convert a PDF file to EPUB using [SaveEpub](https://reference.aspose.com/pdf/go-cpp/convert/saveepub/) function.
 1. Close the PDF document and release any allocated resources.
 
 ```go

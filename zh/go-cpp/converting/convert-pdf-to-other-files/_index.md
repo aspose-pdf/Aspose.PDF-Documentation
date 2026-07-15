@@ -23,7 +23,7 @@ EPUB 旨在可重排内容，这意味着 EPUB 阅读器可以针对特定显示
 提供的 Go 代码片段演示了如何使用 Aspose.PDF 库将 PDF 文档转换为 EPUB：
 
 1. 打开 PDF 文档。
-1. 使用 将 PDF 文件转换为 EPUB [保存Epub]() 函数。
+1. 使用 将 PDF 文件转换为 EPUB [SaveEpub](https://reference.aspose.com/pdf/go-cpp/convert/saveepub/) 函数。
 1. 关闭 PDF 文档并释放任何已分配的资源。
 
 ```go
