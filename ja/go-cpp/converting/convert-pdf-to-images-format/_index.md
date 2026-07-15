@@ -5,7 +5,8 @@ type: docs
 weight: 70
 url: /ja/go-cpp/convert-pdf-to-images-format/
 lastmod: "2026-07-04"
-description: このトピックでは、Aspose.PDF for Go を使用して PDF をさまざまな画像形式（例: TIFF、BMP、JPEG、PNG、SVG）に数行のコードで変換する方法を示します。
+description: >
+  このトピックでは、Aspose.PDF for Go を使用して PDF をさまざまな画像形式（例: TIFF、BMP、JPEG、PNG、SVG）に数行のコードで変換する方法を示します。
 sitemap:
     changefreq: "monthly"
     priority: 0.5
