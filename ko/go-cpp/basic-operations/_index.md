@@ -1,5 +1,5 @@
 ---
-title: C++를 통한 Aspose.PDF for Go를 사용한 PDF 기본 작업
+title: Aspose.PDF for Go via C++를 사용한 PDF 기본 작업
 linktitle: 기본 작업
 type: docs
 weight: 40

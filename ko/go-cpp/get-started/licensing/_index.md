@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: C++를 통한 Aspose.PDF for Go의 라이선스
-Abstract: C++를 통한 Aspose.PDF for Go의 라이선스 페이지에서는 제품에 대한 사용 가능한 라이선스 옵션을 설명합니다. 고객은 클래식 라이선스, Metered License 또는 평가용 제한된 라이선스 중에서 선택할 수 있습니다. 또한 이 페이지는 전체 기능을 활성화하고 평가 제한을 제거하는 등 적절한 라이선스를 확보했을 때의 이점을 강조합니다.
+AlternativeHeadline: Aspose.PDF for Go via C++의 라이선스
+Abstract: Aspose.PDF for Go via C++의 라이선스 페이지에서는 제품에 대한 사용 가능한 라이선스 옵션을 설명합니다. 고객은 클래식 라이선스, Metered License 또는 평가용 제한된 라이선스 중에서 선택할 수 있습니다. 또한 이 페이지는 전체 기능을 활성화하고 평가 제한을 제거하는 등 적절한 라이선스를 확보했을 때의 이점을 강조합니다.
 SoftwareApplication: go-cpp
 ---
 

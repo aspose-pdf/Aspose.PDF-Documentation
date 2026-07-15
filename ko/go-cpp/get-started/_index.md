@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Aspose.PDF for Go 시작하기
-Abstract: C++를 통한 Aspose.PDF for Go 시작 가이드는 라이브러리 사용에 대한 소개를 제공하며, PDF 문서를 생성하고 조작하는 기본 단계를 다룹니다. 여기에는 텍스트 콘텐츠가 포함된 간단한 PDF 파일을 생성하는 방법을 보여주는 'Hello World' 예제가 포함되어 있어 개발자가 API의 핵심 기능을 빠르게 이해할 수 있도록 돕습니다.
+Abstract: Aspose.PDF for Go via C++ 시작 가이드는 라이브러리 사용에 대한 소개를 제공하며, PDF 문서를 생성하고 조작하는 기본 단계를 다룹니다. 여기에는 텍스트 콘텐츠가 포함된 간단한 PDF 파일을 생성하는 방법을 보여주는 'Hello World' 예제가 포함되어 있어 개발자가 API의 핵심 기능을 빠르게 이해할 수 있도록 돕습니다.
 SoftwareApplication: go-cpp
 ---
 

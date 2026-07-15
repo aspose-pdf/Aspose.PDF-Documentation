@@ -11,11 +11,11 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Aspose.PDF for Go 개요
-Abstract: C++를 통한 Aspose.PDF for Go는 개발자가 PDF 문서를 프로그래밍 방식으로 생성, 조작 및 변환할 수 있도록 하는 포괄적인 라이브러리입니다. 여기에는 처음부터 문서 생성, 텍스트 및 이미지 추출, Form 처리, 주석 및 디지털 서명을 포함한 다양한 기능이 제공됩니다.
+Abstract: Aspose.PDF for Go via C++는 개발자가 PDF 문서를 프로그래밍 방식으로 생성, 조작 및 변환할 수 있도록 하는 포괄적인 라이브러리입니다. 여기에는 처음부터 문서 생성, 텍스트 및 이미지 추출, Form 처리, 주석 및 디지털 서명을 포함한 다양한 기능이 제공됩니다.
 SoftwareApplication: go-cpp
 ---
 
-## C++를 통한 Aspose.PDF for Go
+## Aspose.PDF for Go via C++
 
 _이 페이지는 Aspose.PDF for Go 기능에 대한 개요입니다._
 
