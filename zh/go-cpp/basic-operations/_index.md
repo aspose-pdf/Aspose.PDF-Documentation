@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Go via C++ 提供了用于处理 PDF 文档的基本操
 SoftwareApplication: go-cpp
 ---
 
-**Basic operations** 部分描述了在 Aspose.PDF for Go via C++ 中对 PDF 文档进行的首次且最简操作：
+**基本操作** 部分描述了在 Aspose.PDF for Go via C++ 中对 PDF 文档进行的首次且最简操作：
 
 - [修复 PDF](/pdf/zh/go-cpp/repair-pdf/)
 - [打开 PDF](/pdf/zh/go-cpp/open-pdf-document/)

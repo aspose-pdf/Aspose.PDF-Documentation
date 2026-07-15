@@ -16,9 +16,9 @@ SoftwareApplication: go-cpp
 ---
 
 PDF 的开发旨在提供一种标准，用于以独立于应用软件、硬件和操作系统的格式呈现文档及其他参考资料。PDF 文件的内容不仅限于文本，还可以是超链接、图像、可点击的按钮和表单、电子签名、水印等。因此，通常需要将 PDF 文件转换为其他格式，以便编辑或更改其内容。
-**Our Aspose.PDF for Go via C++** 工具能够帮助您成功、快速且轻松地将 PDF 文档转换为最流行的格式。完整的支持格式列表，请参见本节。 [Aspose.PDF 支持的文件格式](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/).
+**我们的 Aspose.PDF for Go via C++** 工具能够帮助您成功、快速且轻松地将 PDF 文档转换为最流行的格式。完整的支持格式列表，请参见本节 [Aspose.PDF 支持的文件格式](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/)。
 
-Aspose.PDF for Go via C++* 允许将 PDF 文档转换为多种格式。此外，您可以使用 Aspose.PDF 转换器应用在线检查转换质量并查看结果。通过代码示例了解文档转换的各个章节。
+Aspose.PDF for Go via C++ 允许将 PDF 文档转换为多种格式。此外，您可以使用 Aspose.PDF 转换器应用在线检查转换质量并查看结果。通过代码示例了解文档转换的各个章节。
 
 ## 如何使用 Go 进行转换
 

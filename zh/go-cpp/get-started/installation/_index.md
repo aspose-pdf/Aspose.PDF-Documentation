@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Aspose.PDF for Go 安装指南
-Abstract: Aspose.PDF for Go via C++ 安装指南提供逐步说明，用于在 Go 项目中进行 C++ 集成时安装和配置该库。它涵盖了多种安装方式，包括手动设置以及使用 NuGet 等包管理器。指南还概述了系统要求、依赖项以及确保在开发环境中实现无缝集成的必要配置步骤。此文档帮助开发者在 Go 中通过 C++ 有效地创建、读取和操作 PDF 文档。
+Abstract: Aspose.PDF for Go via C++ 安装指南提供逐步说明，用于在 Go 项目中进行 C++ 集成时安装和配置该库。它涵盖了多种安装方式，包括手动设置以及使用 Go Modules（go get）等依赖管理方式。指南还概述了系统要求、依赖项以及确保在开发环境中实现无缝集成的必要配置步骤。此文档帮助开发者在 Go 中通过 C++ 有效地创建、读取和操作 PDF 文档。
 SoftwareApplication: go-cpp
 ---
 
