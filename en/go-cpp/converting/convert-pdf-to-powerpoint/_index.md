@@ -4,8 +4,8 @@ linktitle: Convert PDF to PowerPoint
 type: docs
 weight: 30
 url: /go-cpp/convert-pdf-to-powerpoint/
-lastmod: "2024-11-01"
-description: Aspose.PDF allows you to convert PDF to PPTX format using Go.
+lastmod: "2026-07-16"
+description: Aspose.PDF allows you to convert PDF documents to PPTX format using Go.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,13 @@ SoftwareApplication: go-cpp
 
 ## Convert PDF to PPTX
 
-The provided Go code snippet demonstrates how to convert a PDF document into a PPTX using the Aspose.PDF library:
+PowerPoint conversion is useful when you need to turn a static PDF into slides that can be reused in meetings, training materials, or business presentations. This workflow helps you preserve the visual structure of the original document while moving the content into a presentation-friendly format.
 
-1. Open a PDF document.
-1. Convert a PDF file to PPTX using [SavePptx](https://reference.aspose.com/pdf/go-cpp/convert/savepptx/) function.
-1. Close the PDF document and release any allocated resources.
+The following example shows how to convert a PDF document to PPTX with Aspose.PDF for Go via C++.
+
+1. Use the [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method to load the source PDF file and return a `Document` instance for processing.
+1. Call the [SavePptX](https://reference.aspose.com/pdf/go-cpp/convert/savepptx/) method to convert the opened PDF document and save the generated PowerPoint presentation to the target path.
+1. Use the [Close](https://reference.aspose.com/pdf/go-cpp/core/close/) method after conversion to release the resources associated with the opened PDF document.
 
 ```go
 
@@ -36,13 +38,13 @@ The provided Go code snippet demonstrates how to convert a PDF document into a P
       if err != nil {
         log.Fatal(err)
       }
+      // Close() releases allocated resources for PDF-document
+      defer pdf.Close()
       // SavePptX(filename string) saves previously opened PDF-document as PptX-document with filename
       err = pdf.SavePptX("sample.pptx")
       if err != nil {
         log.Fatal(err)
       }
-      // Close() releases allocated resources for PDF-document
-      defer pdf.Close()
     }
 ```
 
