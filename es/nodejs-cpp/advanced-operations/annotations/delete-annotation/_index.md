@@ -1,34 +1,33 @@
 ---
-title: Eliminar Anotación en Node.js
-linktitle: Eliminar Anotación
+title: Eliminar anotación en Node.js
+linktitle: Eliminar anotación
 type: docs
 weight: 10
 url: /es/nodejs-cpp/delete-annotation/
-description: Con Aspose.PDF para Node.js puedes eliminar anotaciones de tu archivo PDF.
-lastmod: "2023-11-16"
+description: Con Aspose.PDF for Node.js puede eliminar la anotación de su archivo PDF.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-Puedes eliminar anotaciones de un archivo PDF usando Aspose.PDF para Node.js vía C++. En caso de que quieras eliminar anotaciones de un PDF, puedes usar la función [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/). 
-Por favor, revisa el siguiente fragmento de código para eliminar anotaciones de un archivo PDF en el entorno de Node.js.
+Puede eliminar anotaciones de un archivo PDF usando Aspose.PDF for Node.js via C\u002B\u002B. En caso de que quiera eliminar anotaciones de un PDF, puede utilizar [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/) función. 
+Por favor, revise el siguiente fragmento de código para eliminar anotaciones de un archivo PDF en un entorno Node.js.
 
 **CommonJS:**
 
-1. Llama a `require` e importa el módulo `asposepdfnodejs` como variable `AsposePdf`.
-1. Especifica el nombre del archivo PDF del cual se eliminará la anotación.
-1. Llama a `AsposePdf` como Promise y realiza la operación para eliminar anotaciones. Recibe el objeto si es exitoso.
-
+1. Llamar `require` y importar `asposepdfnodejs` módulo como `AsposePdf` variable.
+1. Especifique el nombre del archivo PDF del cual se eliminará la anotación.
+1. Llamar `AsposePdf` como Promise y realice la operación para eliminar anotaciones. Reciba el objeto si es exitoso.
 1. Llame a la función [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/).
-1. Eliminar anotaciones. Así, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultPdfDeleteAnnotations.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en su archivo, la información del error estará contenida en 'json.errorText'.
+1. Eliminar anotaciones. Por lo tanto, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultPdfDeleteAnnotations.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en su archivo, la información del error se encontrará en 'json.errorText'.
 
 ```js
 
     const AsposePdf = require('asposepdfnodejs');
     const pdf_file = 'Aspose.pdf';
     AsposePdf().then(AsposePdfModule => {
-        /*Eliminar anotaciones de un archivo PDF y guardar en "ResultPdfDeleteAnnotations.pdf"*/
+        /*Delete annotations from a PDF-file and save the "ResultPdfDeleteAnnotations.pdf"*/
         const json = AsposePdfModule.AsposePdfDeleteAnnotations(pdf_file, "ResultPdfDeleteAnnotations.pdf");
         console.log("AsposePdfDeleteAnnotations => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
     });
@@ -36,19 +35,18 @@ Por favor, revisa el siguiente fragmento de código para eliminar anotaciones de
 
 **ECMAScript/ES6:**
 
-1. Importe el módulo `asposepdfnodejs`.
+1. Importar el `asposepdfnodejs` módulo.
 1. Especifique el nombre del archivo PDF del cual se eliminará la anotación.
-
 1. Inicializa el módulo AsposePdf. Recibe el objeto si tiene éxito.
-1. Llama a la función [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/).
-1. Eliminar anotaciones. Así, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultPdfDeleteAnnotations.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en tu archivo, la información del error estará contenida en 'json.errorText'.
+1. Llame a la función [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/).
+1. Eliminar anotaciones. Por lo tanto, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultPdfDeleteAnnotations.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en su archivo, la información del error se encontrará en 'json.errorText'.
 
 ```js
 
     import AsposePdf from 'asposepdfnodejs';
     const AsposePdfModule = await AsposePdf();
     const pdf_file = 'Aspose.pdf';
-    /*Eliminar anotaciones de un archivo PDF y guardar en "ResultPdfDeleteAnnotations.pdf"*/
+    /*Delete annotations from a PDF-file and save the "ResultPdfDeleteAnnotations.pdf"*/
     const json = AsposePdfModule.AsposePdfDeleteAnnotations(pdf_file, "ResultPdfDeleteAnnotations.pdf");
     console.log("AsposePdfDeleteAnnotations => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```

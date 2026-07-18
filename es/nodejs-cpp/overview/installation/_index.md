@@ -1,11 +1,11 @@
 ---
-title: Instalar Aspose.PDF para Node.js a través de C++
+title: Instalar Aspose.PDF for Node.js via C++
 linktitle: Instalación
 type: docs
 weight: 40
 url: /es/nodejs-cpp/installation/
-description: Esta sección muestra una descripción del producto e instrucciones para instalar Aspose.PDF para Node.js a través de C++.
-lastmod: "2023-11-16"
+description: Esta sección muestra una descripción del producto y instrucciones para instalar Aspose.PDF for Node.js via C++.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,17 +13,20 @@ sitemap:
 
 # Instalación
 
-**Aspose.PDF para Node.js a través de C++** es un conjunto de herramientas fácil y seguro utilizado para trabajar con PDF directamente en el entorno de Node.js.
+**Aspose.PDF for Node.js via C++** es una herramienta fácil y segura utilizada para trabajar con PDF directamente en el entorno Node.js. 
 
-Para instalar y usar Aspose.PDF para Node.js a través de C++ desde un archivo -*ZIP, siga las siguientes instrucciones:
+Para instalar y usar Aspose.PDF for Node.js via C++ desde un -*ZIP archive, siga las siguientes instrucciones:
 
-- descargue el archivo desde el sitio de Aspose.PDF
+- descargue el archive desde el sitio de Aspose.PDF
 - extraiga los archivos del archivo ZIP
 - renombre su archivo *.lic a 'aspose.lic' si existe
 
-Siga el enlace para [Descarga Directa](https://releases.aspose.com/pdf/nodejscpp/)
+Siga el enlace para [Descarga directa](https://releases.aspose.com/pdf/nodejscpp/)
 
-Para instalar y usar Aspose.PDF para Node.js a través de C++ desde NPMJS, siga las siguientes instrucciones:
+Para instalar y usar Aspose.PDF for Node.js via C++ desde NPMJS, siga las siguientes instrucciones:
 
 - npm i asposepdfnodejs
-- renombre su archivo *.lic a 'aspose.lic' si existe
+- renombre su archivo *.lic a ‘aspose.lic’ si existe
+
+
+

@@ -1,30 +1,29 @@
 ---
-title: Añadir Imagen a PDF en Node.js
-linktitle: Añadir Imagen
+title: Agregar imagen a PDF en Node.js
+linktitle: Agregar imagen
 type: docs
 weight: 10
 url: /es/nodejs-cpp/add-image-to-pdf/
-description: Esta sección describe cómo añadir una imagen a un archivo PDF existente usando Aspose.PDF para Node.js vía C++.
-lastmod: "2023-11-16"
+description: Esta sección describe cómo agregar una imagen a un archivo PDF existente usando Aspose.PDF for Node.js via C++.
+lastmod: "2026-07-18"
 ---
 
-## Añadir una imagen a un archivo PDF existente
+## Agregar una imagen a un archivo PDF existente
 
-Comúnmente se cree que agregar imágenes a archivos PDF requiere una herramienta especial compleja. Sin embargo, con Aspose.PDF para Node.js puedes rápida y fácilmente añadir las imágenes que necesitas al PDF en el entorno de Node.js.
+Se cree comúnmente que agregar imágenes a archivos PDF requiere una herramienta especial compleja. Sin embargo, con Aspose.PDF for Node.js puedes agregar rápida y fácilmente las imágenes que necesitas a PDF en un entorno Node.js.
 
-Podemos agregar imágenes solo al final del archivo, por lo tanto, el ejemplo correcto es tener algunas páginas de documentos escaneados y convertirlas en un solo PDF.
+Solo podemos agregar imágenes al final del archivo, por lo tanto, el ejemplo correcto es que tenemos algunas páginas de documentos escaneados y las convertimos en un solo PDF.
 
-En caso de que quieras añadir imágenes, puedes usar la función [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/).
-Por favor, revisa el siguiente fragmento de código para añadir imágenes en el entorno de Node.js.
+En caso de que desees agregar imágenes, puedes utilizar [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/) función. 
+Por favor, revisa el siguiente fragmento de código para agregar imágenes en el entorno Node.js.
 
 **CommonJS:**
 
-1. Llama a `require` e importa el módulo `asposepdfnodejs` como variable `AsposePdf`.
-
-1. Especifique el nombre del archivo PDF en el cual se añadirá la imagen.
-1. Llame a `AsposePdf` como Promesa y realice la operación para agregar la imagen. Reciba el objeto si es exitoso.
+1. Llamar `require` y importar `asposepdfnodejs` módulo como `AsposePdf` variable.
+1. Especifica el nombre del archivo PDF en el que se agregará la imagen.
+1. Llamar `AsposePdf` como Promise y realiza la operación para agregar una imagen. Recibe el objeto si tiene éxito.
 1. Llame a la función [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/).
-1. Añadir imagen al final de un PDF. Así, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultAddImage.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en su archivo, la información del error estará contenida en 'json.errorText'.
+1. Agregar imagen al final de un PDF. Por lo tanto, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultAddImage.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en tu archivo, la información del error se encontrará en 'json.errorText'.
 
 ```js
 
@@ -32,7 +31,7 @@ Por favor, revisa el siguiente fragmento de código para añadir imágenes en el
   const pdf_file = 'Aspose.pdf';
   const image_file = 'Aspose.jpg';
   AsposePdf().then(AsposePdfModule => {
-      /*Añadir una imagen al final de un archivo PDF y guardar el "ResultImage.pdf"*/
+      /*Add an image to end a PDF-file and save the "ResultImage.pdf"*/
       const json = AsposePdfModule.AsposePdfAddImage(pdf_file, image_file, "ResultAddImage.pdf");
       console.log("AsposePdfAddImage => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
@@ -40,11 +39,11 @@ Por favor, revisa el siguiente fragmento de código para añadir imágenes en el
 
 **ECMAScript/ES6:**
 
-1. Importa el módulo `asposepdfnodejs`.
-1. Especifica el nombre del archivo PDF en el que se añadirá la imagen.
-1. Inicializa el módulo AsposePdf. Recibe el objeto si es exitoso.
-1. Llama a la función [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/).
-1. Añade una imagen al final de un PDF. Así, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultAddImage.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en tu archivo, la información del error se encontrará en 'json.errorText'.
+1. Importar el `asposepdfnodejs` módulo.
+1. Especifica el nombre del archivo PDF en el que se agregará la imagen.
+1. Inicializa el módulo AsposePdf. Recibe el objeto si tiene éxito.
+1. Llame a la función [AsposePdfAddImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddimage/).
+1. Agregar imagen al final de un PDF. Por lo tanto, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultAddImage.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en tu archivo, la información del error se encontrará en 'json.errorText'.
 
 ```js
 
@@ -52,7 +51,7 @@ Por favor, revisa el siguiente fragmento de código para añadir imágenes en el
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   const image_file = 'Aspose.jpg';
-  /*Añadir una imagen al final de un archivo PDF y guardar en "ResultImage.pdf"*/
+  /*Add an image to end a PDF-file and save the "ResultImage.pdf"*/
   const json = AsposePdfModule.AsposePdfAddImage(pdf_file, image_file, "ResultAddImage.pdf");
   console.log("AsposePdfAddImage => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
