@@ -1,57 +1,56 @@
 ---
-title: Get Started
-linktitle: Get Started
+title: はじめに
+linktitle: はじめに
 type: docs
 weight: 30
 url: /ja/nodejs-cpp/get-started/
-description: このセクションでは、C++ 経由で Aspose.PDF for Node.js の基本原則について説明します。Aspose.PDF for Node.js via C++ は、さまざまな機能をサポートしています。
-lastmod: "2023-11-16"
+description: このセクションでは、Aspose.PDF for Node.js via C++ の基本的な動作原理について説明します。Aspose.PDF for Node.js via C++ は、さまざまな機能をサポートしています。
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## PDFファイルとは何ですか？
+## PDF ファイルとは何ですか？
 
-PDFは、1990年代にAdobeによって、2つの目的を達成するために作成されました。1つ目は、ドキュメントを作成に使用されたアプリを持っていなくても、任意のハードウェアまたはオペレーティングシステムでドキュメントを開くことができるようにすることです。必要なのはPDFリーダーだけで、最近ではほとんどのウェブブラウザがその要件を満たしています。2つ目は、PDFをどこで開いても、ドキュメントのレイアウトが同じように見えることです。
+PDF は 1990 年代に Adobe によって、2 つの目的を達成するために作られました。1 つ目は、作成に使用されたアプリケーションがなくても、任意のハードウェアやオペレーティングシステムでドキュメントを開くことができることです—必要なのは PDF リーダーだけで、現在ではほとんどのウェブブラウザがそれに該当します。2 つ目は、PDF をどこで開いても文書のレイアウトが同じに見えることです。
 
-しかし、ドキュメントを開くだけでは不十分です。PDFを操作する際には、新たにそのようなドキュメントを作成したり、編集したり、必要な形式に変換したりする必要が生じます。
+しかし、単にドキュメントを開くだけでは不十分です。PDF を扱う際には、ドキュメントを新規作成したり、編集したり、必要な形式に変換したりする必要が出てきます。
 
-## なぜ C++ 経由で Aspose.PDF for Node.js を使用するのか？
+## なぜ Aspose.PDF for Node.js via C++ を使用するのですか？
 
-プロジェクトで Aspose.PDF for Node.js を使用することで、次の利益が得られます。
+プロジェクトで Aspose.PDF for Node.js を使用すると、次のメリットがあります：
 
-- 様々な機能
-- Node.js環境でPDFを操作するためのツールキット
-- Aspose.PDF for .NETに基づく
+- 幅広い機能
+- Node.js 環境で PDF を扱うために使用されるツールキット
+- Aspose.PDF for .NET に基づいています
 
-## 様々な機能
+## 幅広い機能
 
-- [PDFからテキストを抽出する](/pdf/ja/nodejs-cpp/extract-text/)
-- [PDFドキュメントを最適化する](/pdf/ja/nodejs-cpp/optimize-pdf/)
-- [PDFファイルにスタンプを追加する](/pdf/ja/nodejs-cpp/add-stamp-to-pdf/)
-- [PDFファイルに画像を追加する](/pdf/ja/nodejs-cpp/add-image-to-pdf/)
-- [PDFを2つのファイルに分割する](/pdf/ja/nodejs-cpp/split-pdf/)
-- [2つのファイルをPDFにマージする](/pdf/ja/nodejs-cpp/merge-pdf/)
-- [PDFドキュメントを暗号化する](/pdf/ja/nodejs-cpp/encrypt-pdf/)
-- [PDFドキュメントを復号化する](/pdf/ja/nodejs-cpp/decrypt-pdf/)
+- [PDF からテキストを抽出する](/pdf/ja/nodejs-cpp/extract-text/)
+- [PDF ドキュメントを最適化する](/pdf/ja/nodejs-cpp/optimize-pdf/)
+- [PDF ファイルにスタンプを追加する](/pdf/ja/nodejs-cpp/stamping/)
+- [PDF ファイルに画像を追加する](/pdf/ja/nodejs-cpp/add-image-to-pdf/)
+- [PDF を 2 つのファイルに分割する](/pdf/ja/nodejs-cpp/split-pdf/)
+- [2 つのファイルを PDF に結合する](/pdf/ja/nodejs-cpp/merge-pdf/)
+- [PDF ドキュメントを暗号化する](/pdf/ja/nodejs-cpp/encrypt-pdf/) 
+- [PDFドキュメントを復号化](/pdf/ja/nodejs-cpp/decrypt-pdf/)
 
 ## 変換機能
 
-- [PDFをJPEGに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをPNGに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをTIFFに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをBMPに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをSVGに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
-
-- [PDFをSVG(Zip)に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
-- [PDFをTeXに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDFをXPSに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDFをCSVに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-xlsx/)
-- [PDFをTXTに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDFをWordに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-doc/)
-- [PDFをXLSXに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-xlsx/)
-- [PDFをグレースケールPDFに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
-- [PDFをMicrosoft PowerPointに変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-powerpoint/)
-- [PDF/AをPDF形式に変換する](/pdf/ja/nodejs-cpp/convert-pdfa-to-pdf/)
-- [PDFをPDF/A形式に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-pdfa/)
+- [PDFをJPEGに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをPNGに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをTIFFに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをBMPに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをSVGに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをSVG(Zip)に変換](/pdf/ja/nodejs-cpp/convert-pdf-to-images-format/)
+- [PDFをTeXに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDFをXPSに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDFをCSVに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-xlsx/)
+- [PDFをTXTに変換](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDF を Word に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-doc/)
+- [PDF を XLSX に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-xlsx/)
+- [PDF をグレースケール PDF に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-other-files/)
+- [PDF を Microsoft PowerPoint に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-powerpoint/)
+- [PDF/A を PDF 形式に変換する](/pdf/ja/nodejs-cpp/convert-pdfa-to-pdf/)
+- [PDF を PDF/A 形式に変換する](/pdf/ja/nodejs-cpp/convert-pdf-to-pdfa/)
