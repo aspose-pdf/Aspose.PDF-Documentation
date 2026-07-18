@@ -1,23 +1,23 @@
 ---
-title: Travailler avec des Pages PDF dans Node.js
-linktitle: Travailler avec les Pages
+title: Travailler avec les pages PDF dans Node.js
+linktitle: Travailler avec les pages
 type: docs
 weight: 20
 url: /fr/nodejs-cpp/working-with-pages/
-description: Comment ajouter des pages, ajouter des en-têtes et pieds de page, faire pivoter les pages, vous pouvez le savoir dans cette section. Aspose.PDF pour Node.js via C++ vous explique tous les détails sur ce sujet.
-lastmod: "2023-11-16"
+description: Comment ajouter des pages, ajouter des en-têtes et pieds de page, faire pivoter les pages, vous pouvez le savoir dans cette section. Aspose.PDF for Node.js via C++ vous explique tous les détails sur ce sujet.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Vous êtes capable de faire ce qui suit :
+Vous pouvez faire ce qui suit :
 
-- [Supprimer des Pages](/pdf/fr/nodejs-cpp/delete-pages/) - supprimer une page de votre fichier PDF dans l'environnement Node.js.
-- [Faire Pivoter des Pages](/pdf/fr/nodejs-cpp/rotate-pages/) - vous pouvez changer l'orientation des pages dans un fichier PDF existant.
-- [Ajouter des En-têtes et Pieds de Page](/pdf/fr/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - ajouter du texte ou des images aux en-têtes, pieds de page, ou les deux.
-- [Ajouter une Numérotation de Page dans un Fichier PDF](/pdf/fr/nodejs-cpp/add-page-number/) - les fonctions AsposePdfAddPageNum vous aideront à ajouter un numéro de page dans votre fichier PDF.
+- [Supprimer les pages](/pdf/fr/nodejs-cpp/delete-pages/) - supprimer la page de votre fichier PDF dans un environnement Node.js.
+- [Faire pivoter les pages](/pdf/fr/nodejs-cpp/rotate-pages/) - vous pouvez changer l'orientation des pages dans un fichier PDF existant.
+- [Ajouter des en-têtes et des pieds de page](/pdf/fr/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - ajoutez du texte ou des images aux en-têtes, pieds de page, ou aux deux.
+- [Ajouter la numérotation des pages dans le fichier PDF](/pdf/fr/nodejs-cpp/add-page-number/) - Les fonctions AsposePdfAddPageNum vous aideront à ajouter un numéro de page dans votre fichier PDF.
+- [Ajouter un arrière-plan](/pdf/fr/nodejs-cpp/add-background/) - les images d'arrière-plan peuvent ajouter un filigrane.
+- [Tamponnage](/pdf/fr/nodejs-cpp/stamping/) - vous pouvez utiliser la fonction AsposePdfAddStamp pour ajouter un tampon d'image à un fichier PDF.
+- [Définir la couleur d'arrière-plan pour le PDF](/pdf/fr/nodejs-cpp/set-background-color/) - définir la couleur d'arrière-plan pour votre fichier PDF.
 
-- [Ajouter un Fond](/pdf/fr/nodejs-cpp/add-background/) - les images de fond peuvent ajouter un filigrane.
-- [Stamping](/pdf/fr/nodejs-cpp/stamping/) - vous pouvez utiliser la fonction AsposePdfAddStamp pour ajouter un tampon d'image à un fichier PDF.
-- [Définir la couleur de fond pour PDF](/pdf/fr/nodejs-cpp/set-background-color/) - définissez la couleur de fond pour votre fichier PDF.
