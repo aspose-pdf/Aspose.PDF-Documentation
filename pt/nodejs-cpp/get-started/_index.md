@@ -4,36 +4,36 @@ linktitle: Começar
 type: docs
 weight: 30
 url: /pt/nodejs-cpp/get-started/
-description: Esta seção descreve os princípios básicos de trabalho do Aspose.PDF para Node.js via C++. O Aspose.PDF para Node.js via C++ suporta uma ampla variedade de funções.
-lastmod: "2023-11-16"
+description: Esta seção descreve os princípios básicos de funcionamento do Aspose.PDF for Node.js via C++. O Aspose.PDF for Node.js via C++ oferece uma ampla variedade de funções.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## O que é um Arquivo PDF?
+## O que é um arquivo PDF?
 
-O PDF foi criado pela Adobe nos anos 1990 para alcançar duas coisas. A primeira é que você deve ser capaz de abrir os documentos em qualquer hardware ou sistema operacional, sem precisar ter o aplicativo usado para criá-los — tudo o que você precisa é de um leitor de PDF, e hoje em dia a maioria dos navegadores da web atende a essa exigência. A segunda é que, onde quer que você abra um PDF, o layout do documento deve parecer o mesmo.
+O PDF foi criado pela Adobe na década de 1990 para alcançar duas coisas. A primeira é que você deve ser capaz de abrir os documentos em qualquer hardware ou sistema operacional, sem precisar ter o aplicativo usado para criá-los — tudo o que você precisa é um leitor de PDF, e hoje em dia a maioria dos navegadores da web atende a essa necessidade. A segunda é que, onde quer que você abra um PDF, o layout do documento deve permanecer o mesmo.
 
-No entanto, não é suficiente apenas abrir seu documento. Ao trabalhar com PDF, você enfrentará a necessidade de criar tal documento do zero, editá-lo ou convertê-lo para o formato de que precisa.
+No entanto, não basta apenas abrir o seu documento. Ao trabalhar com PDF, você enfrentará a necessidade de criar um documento assim do zero, editá-lo ou convertê-lo para o formato que precisar.
 
-## Por que usar Aspose.PDF para Node.js via C++?
+## Por que usar o Aspose.PDF for Node.js via C++?
 
-Usar o Aspose.PDF para Node.js em seu projeto oferece os seguintes benefícios:
+Usar Aspose.PDF for Node.js em seu projeto lhe oferece os seguintes benefícios:
 
 - ampla variedade de funções
-- conjunto de ferramentas usado para trabalhar com PDF no ambiente Node.js
-- baseado no Aspose.PDF para .NET
+- kit de ferramentas usado para trabalhar com PDF no ambiente Node.js
+- baseado no Aspose.PDF for .NET
 
 ## Ampla variedade de funções
 
-- [Extrair texto de PDF](/pdf/pt/nodejs-cpp/extract-text/)
+- [Extrair um texto de PDF](/pdf/pt/nodejs-cpp/extract-text/)
 - [Otimizar documento PDF](/pdf/pt/nodejs-cpp/optimize-pdf/)
-- [Adicionar um carimbo ao arquivo PDF](/pdf/pt/nodejs-cpp/add-stamp-to-pdf/)
+- [Adicionar um selo ao arquivo PDF](/pdf/pt/nodejs-cpp/stamping/)
 - [Adicionar uma imagem ao arquivo PDF](/pdf/pt/nodejs-cpp/add-image-to-pdf/)
 - [Dividir PDF em dois arquivos](/pdf/pt/nodejs-cpp/split-pdf/)
 - [Mesclar dois arquivos em PDF](/pdf/pt/nodejs-cpp/merge-pdf/)
-- [Criptografar documentos PDF](/pdf/pt/nodejs-cpp/encrypt-pdf/)
+- [Criptografar documentos PDF](/pdf/pt/nodejs-cpp/encrypt-pdf/) 
 - [Descriptografar documentos PDF](/pdf/pt/nodejs-cpp/decrypt-pdf/)
 
 ## Recursos de Conversão
@@ -43,7 +43,6 @@ Usar o Aspose.PDF para Node.js em seu projeto oferece os seguintes benefícios:
 - [Converter um PDF para TIFF](/pdf/pt/nodejs-cpp/convert-pdf-to-images-format/)
 - [Converter um PDF para BMP](/pdf/pt/nodejs-cpp/convert-pdf-to-images-format/)
 - [Converter um PDF para SVG](/pdf/pt/nodejs-cpp/convert-pdf-to-images-format/)
-
 - [Converter um PDF para SVG(Zip)](/pdf/pt/nodejs-cpp/convert-pdf-to-images-format/)
 - [Converter um PDF para TeX](/pdf/pt/nodejs-cpp/convert-pdf-to-other-files/)
 - [Converter um PDF para XPS](/pdf/pt/nodejs-cpp/convert-pdf-to-other-files/)
