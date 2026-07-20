@@ -4,55 +4,54 @@ linktitle: 概要
 type: docs
 weight: 20
 url: /ja/nodejs-cpp/overview/
-description: Aspose.PDF for Node.js via C++ の主要機能とサポートされている形式の概要、インストールおよびライセンスマニュアル。
-lastmod: "2023-11-16"
+description: Aspose.PDF for Node.js via C++ の主要機能とサポートされているフォーマットの概要、インストールおよびライセンスマニュアル。
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-_このページは、Aspose.PDF for Node.js via C++ の機能の概要です。_
+_このページは Aspose.PDF for Node.js via C++ の機能の概要です。_
 
-**Aspose.PDF for Node.js via C++** は、開発者が Node.js 環境で直接 PDF ファイルを操作できるようにします。この Node.js ソリューションは、WebAssembly 技術を使用して構築されており、Aspose.PDF for .NET に基づいています。Node.js via C++ 用の aspose-pdf を簡単に使用し、インストール手順に従うことができます。
+**Aspose.PDF for Node.js via C++** は、開発者が Node.js 環境で PDF ファイルを直接操作できるようにします。この Node.js ソリューションは WebAssembly 技術の使用に基づいて構築され、Aspose.PDF for .NET をベースとしています。aspose-pdf for Node.js via C++ を簡単に利用でき、インストール手順に従ってください。
 
 **CJS と MJS ファイル拡張子について**
 
-Node.js は、コードを整理および共有するための2つのモジュールシステムをサポートしています。それらは：
+Node.js はコードを整理および共有するための 2 つのモジュールシステムをサポートしています。以下があります：
 
-- CommonJS モジュール
-- ECMAScript モジュール
+- CommonJSモジュール
+- ECMAScriptモジュール
 
-CommonJS モジュールは、Node.js における従来の依存関係処理の方法であり、ECMAScript モジュールは、新しい追加機能であり、モダンなブラウザで使用される標準フォーマットに従います。
- 'cjs', 'mjs' - は、JavaScriptファイルで使用されるモジュール形式（CommonJSとECMAScript Modules）を指定するために使用される拡張子です。
+CommonJSモジュールはNode.jsでの従来の依存関係処理方法でしたが、ECMAScriptモジュールは新しい追加機能であり、モダンブラウザーで使用される標準フォーマットに従います。'cjs'、'mjs' は、JavaScriptファイルで使用されるモジュール形式（CommonJS と ECMAScript モジュール）を指定するための拡張子です。 
 
-コードスニペットでは、AsposePDFforNode.jsモジュールの作業に違いがあることに気づくでしょう。'require'と'import'の主な違いは、それらの使用ケースにあります。**Require**はモジュール全体のインポートに限定されますが、**Import**はモジュール全体とそのモジュールから特定のエクスポートの両方をインポートする柔軟性があります。
+コードスニペットでは、AsposePDFforNode.jsモジュールの使用に違いがあることに気付くでしょう。'require' と 'import' の主な違いは使用ケースにあります。**Require** はモジュール全体のインポートに限定されますが、**Import** はモジュール全体とそのモジュールからの特定のエクスポートの両方をインポートできる柔軟性があります。
 
 **二つの異なるアプローチ**
 
-JavaScriptは、非同期操作を処理するために、'then'と'await'という二つのアプローチを提供します。
+JavaScript は、非同期操作を処理するために 'then' と 'await' の二つのアプローチを提供します。
 
-'then'メソッドは、順次の順序で成功した結果とエラーの両方を管理するためにプロミスと連携します。対照的に、'await'は、文字通りそのプロミスが解決して結果を返すまでJavaScriptの関数の実行を一時停止させます。
+'then' メソッドは、プロミスを使用して成功結果とエラーの両方を順次管理します。対照的に、'await' は JavaScript を待機させ、文字通りそのプロミスが解決され結果が返されるまで関数の実行を一時停止します。
 
-Aspose.PDF for Node.jsは、以下のようなさまざまな機能をサポートしています：
+Aspose.PDF for Node.js は、次のような幅広い機能をサポートしています:
 
-- PDFファイル情報の設定、取得、削除
+- PDF ファイル情報の設定、取得、削除
 - ブックマークの削除
 - 注釈の削除
-- PDFからのテキストの抽出
-
-- PDFドキュメントの最適化- リソースの最適化
-- PDF を2つのファイルに分割する。
-- 2つのファイルをPDFにマージする
-- PDFを修復する
+- PDF からテキストを抽出する
+- PDFドキュメントを最適化
+- リソースを最適化 
+- PDFを2つのファイルに分割します。
+- 2つのファイルをPDFに結合
+- PDFを修復
 - 変換機能
 
-さらに、Aspose.PDF for Node.js via C++ は、PDF ドキュメントを高性能かつ完璧な品質でさまざまな形式に簡単に変換するために適用できます。セクション [Aspose.PDF サポートされているファイル形式](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/) を参照してください。また、このツールキットは、PDFドキュメントの暗号化と復号化をサポートしています。
+さらに、Aspose.PDF for Node.js via C++ は、高性能かつ完璧な品質で PDF ドキュメントをさまざまな形式に簡単に変換するために使用できます。セクションをご覧ください。 [Aspose.PDF がサポートするファイル形式](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/). また、このツールキットは PDF ドキュメントの暗号化および復号化をサポートしています。
 
-詳細は以下をご覧ください:
+詳しくは:
 
 - [サポートされているファイル形式](/pdf/ja/nodejs-cpp/supported-file-formats/)
-- [Aspose.PDFの主な機能](/pdf/ja/nodejs-cpp/key-features/)
+- [Aspose.PDF の主な機能](/pdf/ja/nodejs-cpp/key-features/)
 - [システム要件](/pdf/ja/nodejs-cpp/system-requirements/)
 - [インストール](/pdf/ja/nodejs-cpp/installation/)
 - [ライセンス](/pdf/ja/nodejs-cpp/licensing/)
-- [技術サポート](/pdf/ja/nodejs-cpp/technical-support/)
+- [テクニカルサポート](/pdf/ja/nodejs-cpp/technical-support/)

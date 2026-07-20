@@ -4,52 +4,50 @@ linktitle: 背景色を設定する
 type: docs
 weight: 80
 url: /ja/nodejs-cpp/set-background-color/
-description: C++を介してNode.jsでPDFファイルの背景色を設定します。
-lastmod: "2023-11-16"
+description: Node.js経由でC++を使用して、あなたのPDFファイルの背景色を設定する。
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-PDFの背景色を設定したい場合は、[AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/) 関数を使用できます。
+PDFの背景色を設定したい場合は、次を使用できます [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/) 関数。 
 
-以下のコードスニペットを確認して、Node.js環境でPDFの背景色を設定してください。
+Node.js 環境で PDF の背景色を設定するために、以下のコードスニペットを確認してください。
 
 **CommonJS:**
 
-1. `require`を呼び出し、`asposepdfnodejs`モジュールを`AsposePdf`変数としてインポートします。
-1. 背景色を設定したいPDFファイルの名前を指定します。
-1. `AsposePdf`をPromiseとして呼び出し、背景色を設定する操作を実行します。成功した場合はオブジェクトを受け取ります。
-
-1. 関数 [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/) を呼び出します。
-1. PDFファイルの背景色を設定します。この関数には3つの引数を渡す必要があります: 入力ファイル名、16進数形式の希望する色、および出力ファイル名です。したがって、'json.errorCode'が0の場合、操作の結果は"ResultRotation.pdf"に保存されます。json.errorCodeパラメータが0でない場合、そしてそれに応じてファイルにエラーが表示される場合、エラー情報は'json.errorText'に含まれます。
+1. 呼び出す `require` そしてインポート `asposepdfnodejs` モジュールとして `AsposePdf` 変数。
+1. 背景色を設定したい PDF ファイルの名前を指定します。
+1. 呼び出す `AsposePdf` Promiseとして背景色設定の操作を実行し、成功した場合はオブジェクトを受け取ります。
+1. 関数を呼び出します [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
+1. PDFファイルの背景色を設定します。この関数には3つの引数を渡す必要があります：入力ファイル名、16進数形式の希望色、そして出力ファイル名です。したがって、‘json.errorCode’が0の場合、操作の結果は“ResultRotation.pdf”に保存されます。json.errorCode パラメータが0でない場合、ファイルにエラーが発生し、そのエラー情報は‘json.errorText’に含まれます。
 
 ```js
 
   const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
-      /* PDFファイルの背景色を設定し、"ResultPdfSetBackgroundColor.pdf"として保存 */
+      /*Set the background color for the PDF-file and save the "ResultPdfSetBackgroundColor.pdf"*/
       const json = AsposePdfModule.AsposePdfSetBackgroundColor(pdf_file, "#426bf4", "ResultPdfSetBackgroundColor.pdf");
       console.log("AsposePdfSetBackgroundColor => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
 ```
 
-
 **ECMAScript/ES6:**
 
-1. `asposepdfnodejs`モジュールをインポートします。
-1. 背景色を設定したいPDFファイルの名前を指定します。
-1. AsposePdfモジュールを初期化します。成功した場合はオブジェクトを受け取ります。
-1. 関数[AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/)を呼び出します。
-1. PDFファイルの背景色を設定します。背景色は青の色合いを表す16進数のカラーコードである"#426bf4"に設定されます。したがって、'json.errorCode'が0である場合、操作の結果は"ResultRotation.pdf"に保存されます。json.errorCodeパラメータが0でない場合、つまりファイルにエラーが発生した場合、エラー情報は'json.errorText'に含まれます。
+1. インポート `asposepdfnodejs` モジュール。
+1. 背景色を設定したい PDF ファイルの名前を指定します。
+1. `AsposePdf` モジュールを初期化します。成功した場合はオブジェクトを受け取ります。
+1. 関数を呼び出します [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
+1. PDF ファイルの背景色を設定します。背景色は "#426bf4" に設定されており、これは青系の色を表す 16 進カラーコードです。そのため、'json.errorCode' が 0 の場合、操作の結果は "ResultRotation.pdf" に保存されます。'json.errorCode' パラメータが 0 でない場合、ファイルにエラーが発生し、エラー情報は 'json.errorText' に含まれます。
 
 ```js
 
   import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
-  /*PDFファイルの背景色を設定し、"ResultPdfSetBackgroundColor.pdf"に保存します*/
+  /*Set the background color for the PDF-file and save the "ResultPdfSetBackgroundColor.pdf"*/
   const json = AsposePdfModule.AsposePdfSetBackgroundColor(pdf_file, "#426bf4", "ResultPdfSetBackgroundColor.pdf");
   console.log("AsposePdfSetBackgroundColor => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
