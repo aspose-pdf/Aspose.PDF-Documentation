@@ -1,11 +1,11 @@
 ---
-title: Memulai
-linktitle: Memulai
+title: Mulai
+linktitle: Mulai
 type: docs
 weight: 30
 url: /id/nodejs-cpp/get-started/
-description: Bagian ini menjelaskan prinsip dasar kerja Aspose.PDF untuk Node.js melalui C++. Aspose.PDF untuk Node.js melalui C++ mendukung berbagai macam fungsi.
-lastmod: "2023-11-16"
+description: Bagian ini menjelaskan prinsip dasar kerja Aspose.PDF for Node.js via C++. Aspose.PDF for Node.js via C++ mendukung berbagai fungsi.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,27 +13,27 @@ sitemap:
 
 ## Apa itu File PDF?
 
-PDF dibuat oleh Adobe pada tahun 1990-an untuk mencapai dua hal. Yang pertama adalah Anda harus dapat membuka dokumen pada perangkat keras atau sistem operasi apa pun, tanpa perlu memiliki aplikasi yang digunakan untuk membuatnya—yang Anda butuhkan hanyalah pembaca PDF, dan saat ini sebagian besar peramban web sudah memenuhinya. Yang kedua adalah di mana pun Anda membuka PDF, tata letak dokumen harus terlihat sama.
+PDF dibuat oleh Adobe pada tahun 1990-an untuk mencapai dua hal. Pertama, Anda harus dapat membuka dokumen pada perangkat keras atau sistem operasi apa pun, tanpa harus memiliki aplikasi yang digunakan untuk membuatnya—yang Anda butuhkan hanyalah pembaca PDF, dan saat ini kebanyakan peramban web sudah memadai. Kedua, di mana pun Anda membuka PDF, tata letak dokumen harus terlihat sama.
 
-Namun, tidak cukup hanya membuka dokumen Anda. Dalam bekerja dengan PDF, Anda akan menghadapi kebutuhan untuk membuat dokumen semacam itu dari awal, mengeditnya, atau mengonversinya ke format yang Anda butuhkan.
+Namun, tidak cukup hanya membuka dokumen Anda. Dalam bekerja dengan PDF, Anda akan menghadapi kebutuhan untuk membuat dokumen seperti itu baru, mengeditnya, atau mengonversinya ke format yang Anda perlukan.
 
-## Mengapa menggunakan Aspose.PDF untuk Node.js melalui C++?
+## Mengapa menggunakan Aspose.PDF for Node.js via C++?
 
-Menggunakan Aspose.PDF untuk Node.js dalam proyek Anda memberikan keuntungan sebagai berikut:
+Menggunakan Aspose.PDF for Node.js dalam proyek Anda memberikan keuntungan berikut:
 
-- berbagai macam fungsi
-- toolkit yang digunakan untuk bekerja dengan PDF di lingkungan Node.js
-- berdasarkan Aspose.PDF untuk .NET
+- beragam fungsi
+- perangkat alat yang digunakan untuk bekerja dengan PDF di lingkungan Node.js
+- berbasis Aspose.PDF for .NET
 
-## Berbagai macam fungsi
+## Beragam fungsi
 
 - [Ekstrak teks dari PDF](/pdf/id/nodejs-cpp/extract-text/)
 - [Optimalkan dokumen PDF](/pdf/id/nodejs-cpp/optimize-pdf/)
-- [Tambahkan stempel ke file PDF](/pdf/id/nodejs-cpp/add-stamp-to-pdf/)
+- [Tambahkan stempel ke file PDF](/pdf/id/nodejs-cpp/stamping/)
 - [Tambahkan gambar ke file PDF](/pdf/id/nodejs-cpp/add-image-to-pdf/)
-- [Pisahkan PDF ke dua file](/pdf/id/nodejs-cpp/split-pdf/)
-- [Gabungkan dua file ke PDF](/pdf/id/nodejs-cpp/merge-pdf/)
-- [Enkripsi dokumen PDF](/pdf/id/nodejs-cpp/encrypt-pdf/)
+- [Bagi PDF menjadi dua file](/pdf/id/nodejs-cpp/split-pdf/)
+- [Gabungkan dua file menjadi PDF](/pdf/id/nodejs-cpp/merge-pdf/)
+- [Enkripsi dokumen PDF](/pdf/id/nodejs-cpp/encrypt-pdf/) 
 - [Dekripsi dokumen PDF](/pdf/id/nodejs-cpp/decrypt-pdf/)
 
 ## Fitur Konversi
@@ -43,7 +43,6 @@ Menggunakan Aspose.PDF untuk Node.js dalam proyek Anda memberikan keuntungan seb
 - [Konversi PDF ke TIFF](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
 - [Konversi PDF ke BMP](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
 - [Konversi PDF ke SVG](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
-
 - [Konversi PDF ke SVG(Zip)](/pdf/id/nodejs-cpp/convert-pdf-to-images-format/)
 - [Konversi PDF ke TeX](/pdf/id/nodejs-cpp/convert-pdf-to-other-files/)
 - [Konversi PDF ke XPS](/pdf/id/nodejs-cpp/convert-pdf-to-other-files/)

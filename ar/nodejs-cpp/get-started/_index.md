@@ -4,8 +4,8 @@ linktitle: ابدأ
 type: docs
 weight: 30
 url: /ar/nodejs-cpp/get-started/
-description: يصف هذا القسم المبادئ الأساسية لعمل Aspose.PDF لـ Node.js عبر C++. يدعم Aspose.PDF لـ Node.js عبر C++ مجموعة واسعة من الوظائف.
-lastmod: "2023-11-16"
+description: يصف هذا القسم المبادئ الأساسية للعمل مع Aspose.PDF لـ Node.js عبر C++. ويدعم Aspose.PDF لـ Node.js عبر C++ مجموعة واسعة من الوظائف.
+lastmod: "2026-07-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,27 +13,27 @@ sitemap:
 
 ## ما هو ملف PDF؟
 
-تم إنشاء PDF من قبل Adobe في التسعينيات لتحقيق هدفين. الأول هو أنه يجب أن تكون قادرًا على فتح المستندات على أي جهاز أو نظام تشغيل، دون الحاجة إلى التطبيق المستخدم لإنشائها - كل ما تحتاجه هو قارئ PDF، وفي هذه الأيام معظم متصفحات الويب تفي بالغرض. الثاني هو أنه أينما فتحت ملف PDF، يجب أن يبدو تخطيط المستند هو نفسه.
+تم إنشاء PDF بواسطة Adobe في التسعينات لتحقيق هدفين. الأول هو أنه يجب أن تكون قادرًا على فتح المستندات على أي جهاز أو نظام تشغيل، دون الحاجة إلى التطبيق المستخدم لإنشائها — كل ما تحتاجه هو قارئ PDF، وفي الوقت الحالي معظم متصفحات الويب تلبي هذا المتطلب. الثاني هو أنه أينما فتحت ملف PDF، يجب أن يكون تخطيط المستند هو نفسه.
 
-ومع ذلك، ليس كافيًا فقط فتح المستند. عند العمل مع PDF، ستواجه الحاجة إلى إنشاء مثل هذا المستند من جديد، تحريره، أو تحويله إلى التنسيق الذي تحتاجه.
+ومع ذلك، لا يكفي مجرد فتح المستند. فعند العمل مع PDF ستحتاج إلى إنشاء هذا النوع من المستندات من جديد أو تعديله أو تحويله إلى الصيغة التي تحتاجها.
 
 ## لماذا تستخدم Aspose.PDF لـ Node.js عبر C++؟
 
-استخدام Aspose.PDF لـ Node.js في مشروعك يمنحك الفوائد التالية:
+يوفر استخدام Aspose.PDF لـ Node.js في مشروعك المزايا التالية:
 
-- مجموعة متنوعة من الوظائف
-- مجموعة أدوات تستخدم للعمل مع PDF في بيئة Node.js
-- تعتمد على Aspose.PDF لـ .NET
+- مجموعة واسعة من الوظائف
+- مجموعة أدوات للعمل مع PDF في بيئة Node.js
+- مبني على Aspose.PDF for .NET
 
-## مجموعة متنوعة من الوظائف
+## تنوع واسع من الوظائف
 
 - [استخراج نص من PDF](/pdf/ar/nodejs-cpp/extract-text/)
 - [تحسين مستند PDF](/pdf/ar/nodejs-cpp/optimize-pdf/)
-- [إضافة ختم لملف PDF](/pdf/ar/nodejs-cpp/add-stamp-to-pdf/)
-- [إضافة صورة لملف PDF](/pdf/ar/nodejs-cpp/add-image-to-pdf/)
-- [تقسيم ملف PDF إلى ملفين](/pdf/ar/nodejs-cpp/split-pdf/)
-- [دمج ملفين في PDF](/pdf/ar/nodejs-cpp/merge-pdf/)
-- [تشفير مستندات PDF](/pdf/ar/nodejs-cpp/encrypt-pdf/)
+- [إضافة ختم إلى ملف PDF](/pdf/ar/nodejs-cpp/stamping/)
+- [إضافة صورة إلى ملف PDF](/pdf/ar/nodejs-cpp/add-image-to-pdf/)
+- [تقسيم PDF إلى ملفين](/pdf/ar/nodejs-cpp/split-pdf/)
+- [دمج ملفين إلى PDF](/pdf/ar/nodejs-cpp/merge-pdf/)
+- [تشفير مستندات PDF](/pdf/ar/nodejs-cpp/encrypt-pdf/) 
 - [فك تشفير مستندات PDF](/pdf/ar/nodejs-cpp/decrypt-pdf/)
 
 ## ميزات التحويل
@@ -43,7 +43,6 @@ sitemap:
 - [تحويل PDF إلى TIFF](/pdf/ar/nodejs-cpp/convert-pdf-to-images-format/)
 - [تحويل PDF إلى BMP](/pdf/ar/nodejs-cpp/convert-pdf-to-images-format/)
 - [تحويل PDF إلى SVG](/pdf/ar/nodejs-cpp/convert-pdf-to-images-format/)
-
 - [تحويل PDF إلى SVG(Zip)](/pdf/ar/nodejs-cpp/convert-pdf-to-images-format/)
 - [تحويل PDF إلى TeX](/pdf/ar/nodejs-cpp/convert-pdf-to-other-files/)
 - [تحويل PDF إلى XPS](/pdf/ar/nodejs-cpp/convert-pdf-to-other-files/)
@@ -51,7 +50,7 @@ sitemap:
 - [تحويل PDF إلى TXT](/pdf/ar/nodejs-cpp/convert-pdf-to-other-files/)
 - [تحويل PDF إلى Word](/pdf/ar/nodejs-cpp/convert-pdf-to-doc/)
 - [تحويل PDF إلى XLSX](/pdf/ar/nodejs-cpp/convert-pdf-to-xlsx/)
-- [تحويل PDF إلى PDF بتدرجات الرمادي](/pdf/ar/nodejs-cpp/convert-pdf-to-other-files/)
+- [تحويل PDF إلى PDF بتدرج الرمادي](/pdf/ar/nodejs-cpp/convert-pdf-to-other-files/)
 - [تحويل PDF إلى Microsoft PowerPoint](/pdf/ar/nodejs-cpp/convert-pdf-to-powerpoint/)
 - [تحويل PDF/A إلى صيغة PDF](/pdf/ar/nodejs-cpp/convert-pdfa-to-pdf/)
 - [تحويل PDF إلى صيغة PDF/A](/pdf/ar/nodejs-cpp/convert-pdf-to-pdfa/)

@@ -1,11 +1,11 @@
 ---
-title: Decrypt PDF in Node.js
-linktitle: Decrypt PDF File
+title: فك تشفير PDF في Node.js
+linktitle: فك تشفير ملف PDF
 type: docs
 weight: 40
 url: /ar/nodejs-cpp/decrypt-pdf/
-description: فك تشفير ملف PDF باستخدام Aspose.PDF لـ Node.js عبر C++.
-lastmod: "2023-11-16"
+description: فك تشفير ملف PDF باستخدام Aspose.PDF for Node.js عبر C++.
+lastmod: "2026-07-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,26 +13,27 @@ sitemap:
 
 ## فك تشفير ملف PDF باستخدام كلمة مرور المالك
 
-مؤخراً، يقوم المزيد والمزيد من المستخدمين بتبادل المستندات المشفرة من أجل عدم الوقوع ضحايا للاحتيال عبر الإنترنت وحماية مستنداتهم. في هذا الصدد، يصبح من الضروري الوصول إلى ملف PDF المشفر، حيث يمكن الحصول على هذا الوصول فقط من قبل مستخدم معتمد. أيضاً، يبحث الناس عن حلول مختلفة لفك تشفير ملفات PDF.
+مؤخرًا، يتبادل المزيد والمزيد من المستخدمين المستندات المشفرة لتجنب الوقوع كضحايا للاحتيال على الإنترنت وحماية مستنداتهم.
+في هذا الصدد، يصبح من الضروري الوصول إلى ملف PDF المشفر، حيث لا يمكن الحصول على مثل هذا الوصول إلا من قبل مستخدم مخول. كما يبحث الناس عن حلول مختلفة لفك تشفير ملفات PDF. 
 
-في حال كنت ترغب في فك تشفير ملف PDF، يمكنك استخدام وظيفة [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/). إذا كنت ترغب في فك تشفير ملف PDF جرب الكود التالي:
+في حالة رغبتك في فك تشفير ملف PDF، يمكنك استخدام [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/) دالة. 
+إذا كنت تريد فك تشفير ملف PDF جرب مقتطف الشيفرة التالي:
 
 **CommonJS:**
 
-1. قم باستدعاء `require` واستيراد وحدة `asposepdfnodejs` كمتغير `AsposePdf`.
-1. حدد اسم ملف PDF الذي سيتم تغيير فك تشفيره.
-
-1. استدعاء `AsposePdf` كوعد وتنفيذ العملية لفك تشفير الملف. استقبال الكائن إذا كانت العملية ناجحة.
-1. استدعاء وظيفة [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/).
-1. فك تشفير ملف PDF بكلمة المرور "owner".
-1. وبالتالي، إذا كان 'json.errorCode' يساوي 0، يتم حفظ نتيجة العملية في "ResultDecrypt.pdf". إذا لم يكن معامل json.errorCode يساوي 0، وبناءً على ذلك، يظهر خطأ في ملفك، فسيتم تضمين معلومات الخطأ في 'json.errorText'.
+1. اتصال `require` و استيراد `asposepdfnodejs` الوحدة ك `AsposePdf` متغير.
+1. حدد اسم ملف PDF الذي سيغير حالة فك التشفير.
+1. اتصال `AsposePdf` كـ Promise وقم بتنفيذ العملية لفك تشفير الملف. استقبل الكائن إذا نجح.
+1. استدعِ الـ [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/) دالة.
+1. فك تشفير ملف PDF باستخدام كلمة المرور "owner".
+1. وبالتالي، إذا كان 'json.errorCode' يساوي 0، يتم حفظ نتيجة العملية في "ResultDecrypt.pdf". إذا لم يكن معلمة json.errorCode 0، وبالتالي ظهر خطأ في ملفك، فإن معلومات الخطأ ستتضمن في 'json.errorText'.
 
 ```js
 
   const AsposePdf = require('asposepdfnodejs');
   const pdf_encrypt_file = 'ResultEncrypt.pdf';
   AsposePdf().then(AsposePdfModule => {
-      /*فك تشفير ملف PDF بكلمة المرور "owner" وحفظ "ResultDecrypt.pdf"*/
+      /*Decrypt a PDF-file with password is "owner" and save the "ResultDecrypt.pdf"*/
       const json = AsposePdfModule.AsposePdfDecrypt(pdf_encrypt_file, "owner", "ResultDecrypt.pdf");
       console.log("AsposePdfDecrypt => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
@@ -40,19 +41,19 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. استيراد وحدة `asposepdfnodejs`.
-1. تحديد اسم ملف PDF الذي سيتم تغيير فك تشفيره.
-1. تهيئة وحدة AsposePdf. استلم الكائن إذا نجحت العملية.
-1. استدعاء وظيفة [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/).
-1. فك تشفير ملف PDF بكلمة المرور "owner".
-1. وبالتالي، إذا كان 'json.errorCode' يساوي 0، يتم حفظ نتيجة العملية في "ResultDecrypt.pdf". إذا لم يكن معلم json.errorCode يساوي 0 وظهرت خطأ في ملفك، سيتم تضمين معلومات الخطأ في 'json.errorText'.
+1. استيراد `asposepdfnodejs` الوحدة.
+1. حدد اسم ملف PDF الذي سيغير حالة فك التشفير.
+1. قم بتهيئة وحدة AsposePdf. استلم الكائن إذا نجح.
+1. استدعِ الـ [AsposePdfDecrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfdecrypt/) دالة.
+1. فك تشفير ملف PDF باستخدام كلمة المرور "owner".
+1. وبالتالي، إذا كان 'json.errorCode' يساوي 0، يتم حفظ نتيجة العملية في "ResultDecrypt.pdf". إذا لم يكن معلمة json.errorCode 0، وبالتالي ظهر خطأ في ملفك، فإن معلومات الخطأ ستتضمن في 'json.errorText'.
 
 ```js
 
   import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_encrypt_file = 'ResultEncrypt.pdf';
-  /*فك تشفير ملف PDF بكلمة المرور "owner" وحفظ "ResultDecrypt.pdf"*/
+  /*Decrypt a PDF-file with password is "owner" and save the "ResultDecrypt.pdf"*/
   const json = AsposePdfModule.AsposePdfDecrypt(pdf_encrypt_file, "owner", "ResultDecrypt.pdf");
   console.log("AsposePdfDecrypt => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```

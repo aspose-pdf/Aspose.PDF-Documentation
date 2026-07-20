@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ja/nodejs-cpp/split-pdf/
 description: このトピックでは、Aspose.PDF for Node.js via C++ を使用して、PDFページを個別のPDFファイルに分割する方法を示します。
-lastmod: "2023-11-16"
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,26 +13,26 @@ sitemap:
 
 ## Node.jsを使用してPDFを2つのファイルに分割する
 
-単一のPDFを部分に分割したい場合は、[AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/)関数を使用できます。 Node.js環境で2つのPDFを分割するための以下のコードスニペットを確認してください。
+単一のPDFを分割したい場合は、次の方法を使用できます [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/) 関数。 
+Node.js 環境で 2 つの PDF を分割するために、以下のコードスニペットをご確認ください。
 
 **CommonJS:**
 
-1. `require`を呼び出し、`asposepdfnodejs`モジュールを`AsposePdf`変数としてインポートします。
-1. 分割するPDFファイルの名前を指定します。
-1. `AsposePdf`をPromiseとして呼び出し、ファイルを分割する操作を実行します。成功した場合はオブジェクトを受け取ります。
-1. 関数[AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/)を呼び出します。
-
-1. 2つのPDFファイルを分割します。PDFファイルがページ1で分割されることを示すために、変数pageToSplitを1に設定します。
-1. したがって、'json.errorCode'が0の場合、操作の結果は"ResultSplit1.pdf"と"ResultSplit2.pdf"に保存されます。json.errorCodeパラメータが0でない場合、したがってファイルにエラーが表示される場合、エラー情報は'json.errorText'に含まれます。
+1. 呼び出し `require` およびインポート `asposepdfnodejs` モジュールとして `AsposePdf` 変数。
+1. 分割する PDF ファイルの名前を指定します。
+1. 呼び出し `AsposePdf` Promiseとして、ファイル分割の操作を実行します。成功した場合はオブジェクトを受け取ります。
+1. 関数を呼び出す [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/).
+1. 2つの PDF ファイルを分割します。変数 pageToSplit を 1 に設定し、PDF ファイルがページ 1 で分割されることを示します。 
+1. したがって、'json.errorCode' が 0 の場合、操作の結果は "ResultSplit1.pdf" および "ResultSplit2.pdf" に保存されます。json.errorCode パラメータが 0 でない場合、ファイルにエラーが表示され、そのエラー情報は 'json.errorText' に含まれます。
 
 ```js
 
   const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
-      /*分割するページ番号を設定*/
+      /*Set number a page to split*/
       const pageToSplit = 1;
-      /*2つのPDFファイルに分割し、"ResultSplit1.pdf"、"ResultSplit2.pdf"を保存する*/
+      /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
       const json = AsposePdfModule.AsposePdfSplit2Files(pdf_file, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf");
       console.log("AsposePdfSplit2Files => %O", json.errorCode == 0 ? [json.fileNameResult1, json.fileNameResult2] : json.errorText);
   });
@@ -40,21 +40,21 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. `asposepdfnodejs`モジュールをインポートします。
-
-1. 分割されるPDFファイルの名前を指定します。
-1. AsposePdfモジュールを初期化します。成功した場合はオブジェクトを受け取ります。
-1. 関数[AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/)を呼び出します。
-1. 2つのPDFファイルを分割します。pageToSplit変数を1に設定し、PDFファイルがページ1で分割されることを示します。
-1. したがって、'json.errorCode'が0の場合、操作の結果は"ResultSplit1.pdf"と"ResultSplit2.pdf"に保存されます。json.errorCodeパラメータが0でない場合、したがってエラーがファイルに表示される場合、エラー情報は'json.errorText'に含まれます。
+1. インポート `asposepdfnodejs` モジュール。
+1. 分割する PDF ファイルの名前を指定します。
+1. AsposePdf モジュールを初期化します。成功した場合はオブジェクトを受け取ります。
+1. 関数を呼び出す [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/).
+1. 2つの PDF ファイルを分割します。変数 pageToSplit を 1 に設定し、PDF ファイルがページ 1 で分割されることを示します。 
+1. したがって、'json.errorCode' が 0 の場合、操作の結果は "ResultSplit1.pdf" および "ResultSplit2.pdf" に保存されます。json.errorCode パラメータが 0 でない場合、ファイルにエラーが表示され、そのエラー情報は 'json.errorText' に含まれます。
 
 ```js
+
   import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
-  /*分割するページ番号を設定*/
+  /*Set number a page to split*/
   const pageToSplit = 1;
-  /*2つのPDFファイルに分割し、"ResultSplit1.pdf"と"ResultSplit2.pdf"を保存*/
+  /*Split to two PDF-files and save the "ResultSplit1.pdf", "ResultSplit2.pdf"*/
   const json = AsposePdfModule.AsposePdfSplit2Files(pdf_file, pageToSplit, "ResultSplit1.pdf", "ResultSplit2.pdf");
   console.log("AsposePdfSplit2Files => %O", json.errorCode == 0 ? [json.fileNameResult1, json.fileNameResult2] : json.errorText);
 ```
