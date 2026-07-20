@@ -1,0 +1,150 @@
+---
+title: Principais recursos do Aspose.PDF for Rust
+linktitle: Recursos principais
+type: docs
+weight: 80
+url: /pt/rust-cpp/key-features/
+description: O Aspose.PDF for Rust demonstra seus recursos gerais. Ele mostra as versões de PDF suportadas e todas as manipulações que podemos fazer com PDF.
+lastmod: "2026-07-20"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Página de recursos principais do Aspose.PDF for Rust via C++
+Abstract: A página de Recursos Principais do Aspose.PDF for Rust via C++ descreve as capacidades da biblioteca para trabalhar com documentos PDF. Ela fornece informações sobre as versões de PDF suportadas e detalha as diversas operações que podem ser realizadas, como manipulação de texto e imagem, mesclagem e divisão de documentos, tratamento de anotações e gerenciamento de assinatura digital.
+SoftwareApplication: rust-cpp
+---
+
+## Software multiplataforma
+
+Suporta várias plataformas e versões do Rust. Veja [Requisitos do Sistema](/pdf/pt/rust-cpp/system-requirements/) para detalhes.
+
+## Recursos Gerais
+
+Suporta carregamento a partir e gravação em uma ampla lista de [formatos de arquivo](/pdf/pt/rust-cpp/supported-file-formats/).
+
+## Padrões PDF suportados
+
+Aspose.PDF for Rust suporta as versões PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
+
+## Recursos por tipo de função
+
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th scope="col" rowspan="10">
+        Operação principal
+      </th>
+      <td>
+        novo PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        abrir PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        salvar PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        salvar_como.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        página_inserir.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        página_adicionar.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        contagem_de_páginas.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        excluir_página.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        extrair_texto.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        definir_licença.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="10">
+        Organizar
+      </th>
+      <td>
+        otimizar.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        otimizar_recurso.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        tons_de_cinza.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        girar.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        definir_fundo.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        reparar.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        pagina_adicionar_texto.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        tamanho_conjunto_página.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        girar_página.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        pagina_tons_de_cinza.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="1">
+        Convertendo e Salvando
+      </th>
+      <td>
+        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
