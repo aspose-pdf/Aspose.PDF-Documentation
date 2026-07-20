@@ -5,16 +5,17 @@ type: docs
 weight: 120
 url: /ar/nodejs-cpp/attachments/
 description: العمليات الأساسية مع المرفقات في PDF في Node.js. دليل مع أمثلة.
-lastmod: "2023-11-16"
+lastmod: "2026-07-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-في هذا القسم، سنشرح كيفية العمل مع المرفقات في PDF باستخدام Aspose.PDF لـ Node.js عبر C++.
+في هذا القسم، سنشرح كيفية العمل مع المرفقات في PDF باستخدام Aspose.PDF for Node.js via C++.
 
-المرفق هو ملف إضافي يتم إرفاقه بمستند رئيسي، ويمكن أن يكون من أنواع ملفات متنوعة، مثل PDF، Word، صورة، أو ملفات أخرى.
+المرفق هو ملف إضافي يتم إرفاقه بالمستند الأصل، ويمكن أن يكون مجموعة متنوعة من أنواع الملفات، مثل pdf، word، image، أو ملفات أخرى.
 
-سوف تتعلم كيفية حذف المرفقات من PDF برمجيًا باستخدام Node.js.
+ستتعلم كيفية حذف المرفقات من PDF برمجياً باستخدام Node.js.
 
-- [إزالة المرفق من ملف PDF موجود](/pdf/ar/nodejs-cpp/removing-attachment-from-an-existing-pdf/)
+- [إزالة المرفق من PDF موجود](/pdf/ar/nodejs-cpp/removing-attachment-from-an-existing-pdf/)
+
