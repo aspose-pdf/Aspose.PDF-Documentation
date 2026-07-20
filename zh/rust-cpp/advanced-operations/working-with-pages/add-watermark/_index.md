@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 添加文本水印
-Abstract: Aspose.PDF for Rust via C\u002B\u002B 提供了一种灵活的方式来向 PDF 文档添加文本水印。此示例演示了如何通过指定文本内容、字体、大小、颜色、位置、旋转角度、层叠行为和透明度来插入可自定义的水印。水印通常用于品牌标识、机密标签、草稿标记或文档保护。
+Abstract: Aspose.PDF for Rust via C++ 提供了一种灵活的方式来向 PDF 文档添加文本水印。此示例演示了如何通过指定文本内容、字体、大小、颜色、位置、旋转角度、层叠行为和透明度来插入可自定义的水印。水印通常用于品牌标识、机密标签、草稿标记或文档保护。
 SoftwareApplication: rust-cpp
 ---
 
