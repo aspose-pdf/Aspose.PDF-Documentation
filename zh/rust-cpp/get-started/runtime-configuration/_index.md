@@ -23,7 +23,7 @@ SoftwareApplication: rust-cpp
 
 ## 选项 1：项目级别配置（推荐）
 
-创建一个名为 `.cargo` 在您的项目根目录（如果不存在）中创建一个名为 `config.toml` 内部：
+在您的项目根目录创建名为 `.cargo` 的目录（如果不存在），并在其中创建 `config.toml`：
 
 ```toml
 [target.'cfg(target_os = "linux")']

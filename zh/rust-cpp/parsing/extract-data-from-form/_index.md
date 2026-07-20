@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 如何通过 Rust 从 AcroForm 提取数据
-Abstract: 这篇文章解释了如何使用 Aspose.PDF for Rust via C++ 从 PDF 文件中提取 AcroForm 数据，并将其导出为广泛使用的数据交换格式——XML、FDD 和 XFDF。它演示了如何打开包含交互式表单字段的 PDF 文档，并以编程方式导出表单字段的名称和值，以便在原始 PDF 之外重新使用。通过为每种导出格式提供实用的 Rust 示例，文章突出了常见工作流，包括数据处理、表单提交、系统集成和长期数据存储，帮助开发者在应用程序中高效管理和重用 PDF 表单数据。
+Abstract: 这篇文章解释了如何使用 Aspose.PDF for Rust via C++ 从 PDF 文件中提取 AcroForm 数据，并将其导出为广泛使用的数据交换格式——XML、FDF 和 XFDF。它演示了如何打开包含交互式表单字段的 PDF 文档，并以编程方式导出表单字段的名称和值，以便在原始 PDF 之外重新使用。通过为每种导出格式提供实用的 Rust 示例，文章突出了常见工作流，包括数据处理、表单提交、系统集成和长期数据存储，帮助开发者在应用程序中高效管理和重用 PDF 表单数据。
 ---
 
 ## 将 PDF 文件中的数据导出为 XML

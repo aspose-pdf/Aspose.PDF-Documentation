@@ -4,7 +4,7 @@ linktitle: 添加水印
 type: docs
 weight: 80
 url: /zh/rust-cpp/add-watermarks/
-description: 此示例演示了如何使用 Aspose.PDF for Rust via C\u002B\u002B 向 PDF 文档添加可自定义的文本水印。
+description: 此示例演示了如何使用 Aspose.PDF for Rust via C++ 向 PDF 文档添加可自定义的文本水印。
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"

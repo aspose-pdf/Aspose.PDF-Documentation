@@ -172,7 +172,7 @@ Aspose.PDF for Rust 为您呈现在线免费应用 ["PDF 转 XPS"](https://produ
   }
 ```
 
-## 将 PDF 转换为 Markdawn
+## 将 PDF 转换为 Markdown
 
 提供的 Rust 代码片段演示了如何使用 Aspose.PDF for Rust 将 PDF 文档转换为 Markdown（.md）文件。
 
