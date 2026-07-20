@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/nodejs-cpp/convert-pdf-to-xlsx/
 lastmod: "2026-07-16"
-description: تتيح لك Aspose.PDF for Node.js تحويل PDF إلى تحويل PDF إلى تنسيق XLSX.
+description: تتيح لك Aspose.PDF for Node.js تحويل PDF إلى تنسيق XLSX.
 sitemap:
     changefreq: "monthly"
     priority: 0.7

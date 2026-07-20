@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-يمكنك حذف المرفقات من ملف PDF باستخدام Aspose.PDF for Node.js عبر C\u002B\u002B. في حال رغبتك في حذف المرفقات من PDF، يمكنك الاستخدام [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/) دالة. 
+يمكنك حذف المرفقات من ملف PDF باستخدام Aspose.PDF for Node.js عبر C++. في حال رغبتك في حذف المرفقات من PDF، يمكنك الاستخدام [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/) دالة. 
 يرجى فحص مقتطف الشيفرة التالي بهدف حذف المرفقات من ملف PDF في بيئة Node.js.
 
 **CommonJS:**

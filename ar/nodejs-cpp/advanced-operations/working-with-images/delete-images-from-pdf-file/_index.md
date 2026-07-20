@@ -4,12 +4,12 @@ linktitle: حذف الصور
 type: docs
 weight: 20
 url: /ar/nodejs-cpp/delete-images-from-pdf-file/
-description: تشرح هذه الفقرة كيفية حذف الصور من ملف PDF باستخدام Aspose.PDF for Node.js عبر C\u002B\u002B.
+description: تشرح هذه الفقرة كيفية حذف الصور من ملف PDF باستخدام Aspose.PDF for Node.js عبر C++.
 lastmod: "2026-07-16"
 ---
 
 
-يمكنك حذف الصور من ملف PDF باستخدام Aspose.PDF for Node.js عبر C\u002B\u002B.
+يمكنك حذف الصور من ملف PDF باستخدام Aspose.PDF for Node.js عبر C++.
 
 في حال رغبتك في حذف الصور من PDF، يمكنك استخدام [AsposePdfDeleteImages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteimages/) دالة. 
 يرجى التحقق من مقتطف الشيفرة التالي من أجل حذف الصور في بيئة Node.js.

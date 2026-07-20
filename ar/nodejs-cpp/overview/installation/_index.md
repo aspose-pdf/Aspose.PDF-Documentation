@@ -19,14 +19,14 @@ sitemap:
 
 - قم بتنزيل الأرشيف من موقع Aspose.PDF
 - استخرج الملفات من أرشيف ZIP
-- أعد تسمية ملف *.lic الخاص بك إلى ‘aspose.lic’ إذا كان موجودًا
+- أعد تسمية ملف *.lic الخاص بك إلى `aspose.lic` إذا كان موجودًا
 
 استخدم رابط [التحميل المباشر](https://releases.aspose.com/pdf/nodejscpp/)
 
 لتثبيت واستخدام Aspose.PDF لـ Node.js عبر C++ من `NPMJS`، اتبع التعليمات التالية:
 
 - `npm i asposepdfnodejs`
-- أعد تسمية ملف *.lic الخاص بك إلى ‘aspose.lic’ إذا كان موجودًا
+- أعد تسمية ملف *.lic الخاص بك إلى `aspose.lic` إذا كان موجودًا
 
 
 

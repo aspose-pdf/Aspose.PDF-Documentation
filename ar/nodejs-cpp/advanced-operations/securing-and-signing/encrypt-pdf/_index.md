@@ -47,12 +47,12 @@ sitemap:
 
 - Module.Permissions.PrintDocument
 - Module.Permissions.ModifyContent
-- الوحدة.الأذونات.استخراج المحتوى
-- الوحدة.الأذونات.تعديل تعليقات النص
-- الوحدة.الأذونات.ملء النموذج
-- الوحدة.الأذونات.استخراج المحتوى مع الإعاقات
-- الوحدة.الأذونات.تجميع المستند
-- الوحدة.الأذونات.جودة الطباعة
+- Module.Permissions.ExtractContent
+- Module.Permissions.ModifyTextAnnotations
+- Module.Permissions.FillForm
+- Module.Permissions.ExtractContentWithDisabilities
+- Module.Permissions.AssembleDocument
+- Module.Permissions.PrintingQuality
 
 هناك عدة [خوارزميات التشفير](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#ae15d4d8afe86aae14972a6e493d19f66):
 

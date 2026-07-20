@@ -26,12 +26,12 @@ sitemap:
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|يحفظ المستند بتنسيق عروض Microsoft PowerPoint| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|يحفظ المستند بتنسيق Microsoft Word| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|يحفظ المستند بتنسيق Microsoft Word| |{{< emoticons/tick >}}| |
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|يحفظ المستند بتنسيق JPEG| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[PNG](https://docs.fileformat.com/image/png/)|يحفظ المستند بتنسيق PNG| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[BMP](https://docs.fileformat.com/image/bmp/)|يحفظ المستند بتنسيق BMP| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[TIFF](https://docs.fileformat.com/image/tiff/)|يحفظ المستند كصورة TIFF أحادية أو متعددة الصفحات| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|يحفظ المستند بتنسيق JPEG| |{{< emoticons/tick >}}| |
+|[PNG](https://docs.fileformat.com/image/png/)|يحفظ المستند بتنسيق PNG| |{{< emoticons/tick >}}| |
+|[BMP](https://docs.fileformat.com/image/bmp/)|يحفظ المستند بتنسيق BMP| |{{< emoticons/tick >}}| |
+|[TIFF](https://docs.fileformat.com/image/tiff/)|يحفظ المستند كصورة TIFF أحادية أو متعددة الصفحات| |{{< emoticons/tick >}}| |
 |تدرج الرمادي|يحفظ المستند بتدرج الرمادي| |{{< emoticons/tick >}}| |
-|[نص](https://docs.fileformat.com/word-processing/txt/)|احفظ المستند بصيغة نص| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[نص](https://docs.fileformat.com/word-processing/txt/)|احفظ المستند بصيغة نص| |{{< emoticons/tick >}}| |
 |[DICOM](https://docs.fileformat.com/image/dicom/)|يحفظ المستند كصورة DICOM| |{{< emoticons/tick >}}| |
 |[CSV](https://docs.fileformat.com/spreadsheet/csv/)|يحفظ المستند بتنسيق CSV| |{{< emoticons/tick >}}| |
 

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-يوضح هذا القسم كيفية تدوير الصفحات في ملف PDF موجود باستخدام Aspose.PDF for Node.js via C\u002B\u002B.
+يوضح هذا القسم كيفية تدوير الصفحات في ملف PDF موجود باستخدام Aspose.PDF for Node.js via C++.
 
 في حال رغبتك في تدوير صفحات PDF، يمكنك استخدام [AsposePdfRotateAllPages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrotateallpages/) دالة. تستخدم هذه الدالة معاملًا خاصًا 'AsposePdfModule.Rotation' لقيمة الدوران. يمكنك من خلاله تحديد عدد الدرجات التي تحتاج إلى تدوير PDF بها. هناك خيارات: لا شيء، 90، 180، أو 270 درجة.
 
