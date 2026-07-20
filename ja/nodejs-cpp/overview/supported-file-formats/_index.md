@@ -26,12 +26,12 @@ sitemap:
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|ドキュメントを Microsoft PowerPoint プレゼンテーション形式で保存します| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|ドキュメントをMicrosoft Word形式で保存します| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|ドキュメントをMicrosoft Word形式で保存します| |{{< emoticons/tick >}}| |
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|ドキュメントをJPEG形式で保存します| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[PNG](https://docs.fileformat.com/image/png/)|文書を PNG 形式で保存します。| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[BMP](https://docs.fileformat.com/image/bmp/)|文書を BMP 形式で保存します。| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[TIFF](https://docs.fileformat.com/image/tiff/)|ドキュメントをシングルまたはマルチページTIFF画像として保存| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|ドキュメントをJPEG形式で保存します| |{{< emoticons/tick >}}| |
+|[PNG](https://docs.fileformat.com/image/png/)|文書を PNG 形式で保存します。| |{{< emoticons/tick >}}| |
+|[BMP](https://docs.fileformat.com/image/bmp/)|文書を BMP 形式で保存します。| |{{< emoticons/tick >}}| |
+|[TIFF](https://docs.fileformat.com/image/tiff/)|ドキュメントをシングルまたはマルチページTIFF画像として保存| |{{< emoticons/tick >}}| |
 |グレースケール|ドキュメントをグレースケールとして保存| |{{< emoticons/tick >}}| |
-|[テキスト](https://docs.fileformat.com/word-processing/txt/)|テキスト形式でドキュメントを保存| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[テキスト](https://docs.fileformat.com/word-processing/txt/)|テキスト形式でドキュメントを保存| |{{< emoticons/tick >}}| |
 |[DICOM](https://docs.fileformat.com/image/dicom/)|ドキュメントを DICOM 画像として保存| |{{< emoticons/tick >}}| |
 |[CSV](https://docs.fileformat.com/spreadsheet/csv/)|ドキュメントを CSV として保存します| |{{< emoticons/tick >}}| |
 

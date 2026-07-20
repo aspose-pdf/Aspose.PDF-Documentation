@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Advanced Operations は、プログラムで既存の PDF ファイルを扱う方法に関するセクションであり、Aspose.PDF で作成されたドキュメントについては、前述のとおりです。 [基本操作](/pdf/ja/nodejs-cpp/basic-operations/)、または Adobe Acrobat、Google Docs、Microsoft Office、Open Office、またはその他の PDF 作成ツールで生成された PDF。
+**高度な操作**は、プログラムで既存の PDF ファイルを扱う方法に関するセクションであり、Aspose.PDF で作成されたドキュメントについては、前述のとおりです。 [基本操作](/pdf/ja/nodejs-cpp/basic-operations/)、または Adobe Acrobat、Google Docs、Microsoft Office、Open Office、またはその他の PDF 作成ツールで生成された PDF。
 さまざまな方法を学びます:
 
 - [ドキュメントの操作](/pdf/ja/nodejs-cpp/working-with-documents/) - ドキュメントを圧縮、分割、結合し、全体に対して他の操作を行います。

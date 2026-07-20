@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-**Aspose.PDF for Node.js** は PDF ファイルを a に変換できるようにします <abbr title="Portable Document Format for Archiving of electronic documents">PDF/A</abbr> 準拠した PDF ファイル。 
+**Aspose.PDF for Node.js** は PDF ファイルを <abbr title="Portable Document Format for Archiving of electronic documents">PDF/A</abbr> 準拠した PDF ファイルに変換できるようにします。
 
 {{% alert color="success" %}}
 **PDF を PDF/A にオンラインで変換してみてください**
@@ -41,7 +41,7 @@ Node.js 環境で変換するために、以下のコードスニペットをご
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Convert a PDF-file to PDF/A(1A) and save the "ResultConvertToPDFA.pdf"*/
-      /*During conversion process, the validation is also performed, "ResultConvertToPDFA.xml"*/
+      /*During conversion process, the validation is also performed, "ResultConvertToPDFALog.xml"*/
       const json = AsposePdfModule.AsposePdfConvertToPDFA(pdf_file, AsposePdfModule.PdfFormat.PDF_A_1A, "ResultConvertToPDFA.pdf", "ResultConvertToPDFALog.xml");
       console.log("AsposePdfConvertToPDFA => %O", json.errorCode == 0 ? [json.fileNameResult, json.fileNameLogResult] : json.errorText);
   });
@@ -61,7 +61,7 @@ Node.js 環境で変換するために、以下のコードスニペットをご
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Convert a PDF-file to PDF/A(1A) and save the "ResultConvertToPDFA.pdf"*/
-  /*During conversion process, the validation is also performed, "ResultConvertToPDFA.xml"*/
+  /*During conversion process, the validation is also performed, "ResultConvertToPDFALog.xml"*/
   const json = AsposePdfModule.AsposePdfConvertToPDFA(pdf_file, AsposePdfModule.PdfFormat.PDF_A_1A, "ResultConvertToPDFA.pdf", "ResultConvertToPDFALog.xml");
   console.log("AsposePdfConvertToPDFA => %O", json.errorCode == 0 ? [json.fileNameResult, json.fileNameLogResult] : json.errorText);
 ```
