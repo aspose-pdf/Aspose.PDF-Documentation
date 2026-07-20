@@ -218,7 +218,7 @@ Harap periksa cuplikan kode berikut untuk menghapus metadata dari PDF di lingkun
 1. Tentukan nama file PDF dari mana informasi akan dihapus.
 1. Inisialisasi modul AsposePdf. Terima objek jika berhasil.
 1. Panggil fungsi [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
-1. Hapus informasi file PDF. Jadi, jika \u0027json.errorCode\u0027 adalah 0, hasil operasi disimpan dalam \u0022ResultPdfRemoveMetadata.pdf\u0022. Jika parameter json.errorCode bukan 0 dan, sesuai, muncul kesalahan pada file Anda, informasi kesalahan akan terdapat dalam \u0027json.errorText\u0027.
+1. Hapus informasi file PDF. Jadi, jika 'json.errorCode' adalah 0, hasil operasi disimpan dalam "ResultPdfRemoveMetadata.pdf". Jika parameter json.errorCode bukan 0 dan, sesuai, muncul kesalahan pada file Anda, informasi kesalahan akan terdapat dalam 'json.errorText'.
 
 ```js
 
@@ -237,7 +237,7 @@ Harap periksa cuplikan kode berikut untuk menghapus metadata dari PDF di lingkun
 1. Tentukan nama file PDF dari mana informasi akan dihapus.
 1. Inisialisasi modul AsposePdf. Terima objek jika berhasil.
 1. Panggil fungsi [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
-1. Hapus informasi file PDF. Jadi, jika \u0027json.errorCode\u0027 adalah 0, hasil operasi disimpan dalam \u0022ResultPdfRemoveMetadata.pdf\u0022. Jika parameter json.errorCode bukan 0 dan, sesuai, muncul kesalahan pada file Anda, informasi kesalahan akan terdapat dalam \u0027json.errorText\u0027.
+1. Hapus informasi file PDF. Jadi, jika 'json.errorCode' adalah 0, hasil operasi disimpan dalam "ResultPdfRemoveMetadata.pdf". Jika parameter json.errorCode bukan 0 dan, sesuai, muncul kesalahan pada file Anda, informasi kesalahan akan terdapat dalam 'json.errorText'.
 
 ```js
 

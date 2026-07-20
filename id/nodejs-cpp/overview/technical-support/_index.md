@@ -21,7 +21,7 @@ Aspose.PDF memungkinkan Anda menggunakan dukungan teknis gratis untuk semua prod
 
 Jika Anda membutuhkan bantuan dengan masalah pada Aspose.PDF, ikuti rekomendasi berikut untuk memastikan masalah terselesaikan dengan cara paling efisien:
 
-- Pertama, periksa bahwa Anda menggunakan versi Aspose.PDF terbaru sebelum melaporkan masalah, lihat [Unduhan Aspose.PDF for Node.js]() untuk mengetahui versi terbaru.
+- Pertama, periksa bahwa Anda menggunakan versi Aspose.PDF terbaru sebelum melaporkan masalah, lihat [Unduhan Aspose.PDF for Node.js](https://releases.aspose.com/pdf/nodejscpp/) untuk mengetahui versi terbaru.
 
 - Mungkin solusi untuk masalah Anda sudah dibahas dan memiliki solusi, untuk itu, pelajari forum dan dokumentasi, periksa API Reference sebelum melaporkan masalah.
 

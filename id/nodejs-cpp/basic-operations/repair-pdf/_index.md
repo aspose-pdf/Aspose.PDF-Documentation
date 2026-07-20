@@ -21,7 +21,7 @@ Silakan periksa potongan kode berikut untuk memperbaiki file PDF dalam lingkunga
 1. Tentukan nama file PDF yang akan diperbaiki.
 1. Panggil `AsposePdf` sebagai Promise dan lakukan operasi untuk memperbaiki file. Terima objek jika berhasil.
 1. Panggil fungsi [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/).
-1. Perbaiki file PDF. Jadi, jika \u0027json.errorCode\u0027 adalah 0, hasil operasi disimpan dalam \u0022ResultPdfRepair.pdf\u0022. Jika parameter json.errorCode bukan 0 dan, sesuai, muncul kesalahan dalam file Anda, informasi kesalahan akan berada dalam \u0027json.errorText\u0027.
+1. Perbaiki file PDF. Jadi, jika 'json.errorCode' adalah 0, hasil operasi disimpan dalam "ResultPdfRepair.pdf". Jika parameter json.errorCode bukan 0 dan, sesuai, muncul kesalahan dalam file Anda, informasi kesalahan akan berada dalam 'json.errorText'.
 
 ```js
 
@@ -40,7 +40,7 @@ Silakan periksa potongan kode berikut untuk memperbaiki file PDF dalam lingkunga
 1. Tentukan nama file PDF yang akan diperbaiki.
 1. Inisialisasi modul AsposePdf. Terima objek jika berhasil.
 1. Panggil fungsi [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/).
-1. Perbaiki file PDF. Jadi, jika \u0027json.errorCode\u0027 adalah 0, hasil operasi disimpan dalam \u0022ResultPdfRepair.pdf\u0022. Jika parameter json.errorCode bukan 0 dan, sesuai, muncul kesalahan dalam file Anda, informasi kesalahan akan berada dalam \u0027json.errorText\u0027.
+1. Perbaiki file PDF. Jadi, jika 'json.errorCode' adalah 0, hasil operasi disimpan dalam "ResultPdfRepair.pdf". Jika parameter json.errorCode bukan 0 dan, sesuai, muncul kesalahan dalam file Anda, informasi kesalahan akan berada dalam 'json.errorText'.
 
 ```js
 
