@@ -1,48 +1,47 @@
 ---
-title: Convertir des PDF aux formats PDF/A dans Node.js
-linktitle: Convertir des PDF aux formats PDF/A
+title: Convertir le PDF en formats PDF/A dans Node.js
+linktitle: Convertir le PDF en formats PDF/A
 type: docs
 weight: 100
 url: /fr/nodejs-cpp/convert-pdf-to-pdfa/
-lastmod: "2023-11-16"
-description: Ce sujet vous montre comment Aspose.PDF permet de convertir un fichier PDF en un fichier PDF conforme à la norme PDF/A dans l'environnement Node.js.
+lastmod: "2026-07-18"
+description: Ce sujet vous montre comment Aspose.PDF permet de convertir un fichier PDF en un fichier PDF conforme à PDF/A dans l'environnement Node.js.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
 
-**Aspose.PDF pour Node.js** vous permet de convertir un fichier PDF en un fichier PDF conforme à la norme <abbr title="Format de Document Portable pour l'Archivage de documents électroniques">PDF/A</abbr>.
+**Aspose.PDF for Node.js** vous permet de convertir un fichier PDF en un <abbr title="Portable Document Format for Archiving of electronic documents">PDF/A</abbr> fichier PDF conforme. 
 
 {{% alert color="success" %}}
-**Essayez de convertir un PDF en PDF/A en ligne**
+**Essayez de convertir le PDF en PDF/A en ligne**
 
-Aspose.PDF pour Node.js vous présente une application en ligne gratuite ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), où vous pouvez essayer d'examiner la fonctionnalité et la qualité de son fonctionnement.
+Aspose.PDF for Node.js vous présente une application en ligne gratuite ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), où vous pouvez essayer d'examiner la fonctionnalité et la qualité de son fonctionnement.
 
-[![Conversion Aspose.PDF de PDF en PDF/A avec une application gratuite](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+[![Aspose.PDF Conversion PDF vers PDF/A avec Application gratuite](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
 
-## Convertir un PDF au format PDF/A
+## Convertir le PDF au format PDF/A
 
-Si vous souhaitez convertir un document PDF, vous pouvez utiliser la fonction [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/).
- 
-Veuillez vérifier l'extrait de code suivant afin de le convertir dans l'environnement Node.js.
+Dans le cas où vous souhaitez convertir un document PDF, vous pouvez utiliser [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/) fonction. 
+Veuillez consulter l'extrait de code suivant afin de convertir dans un environnement Node.js.
 
-**CommonJS :**
+**CommonJS:**
 
-1. Appelez `require` et importez le module `asposepdfnodejs` en tant que variable `AsposePdf`.
+1. Appeler `require` et importer `asposepdfnodejs` module comme `AsposePdf` variable.
 1. Spécifiez le nom du fichier PDF qui sera converti.
-1. Appelez `AsposePdf` en tant que Promise et effectuez l'opération de conversion du fichier. Recevez l'objet si réussi.
+1. Appeler `AsposePdf` comme Promise et effectuer l'opération de conversion de fichier. Recevoir l'objet si succès.
 1. Appelez la fonction [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/).
-1. Réparez le fichier PDF. Ainsi, si 'json.errorCode' est 0, le résultat de l'opération est enregistré dans "ResultConvertToPDFA.pdf". Pendant le processus de conversion, une validation est effectuée, et les résultats de la validation sont enregistrés sous "ResultConvertToPDFALog.xml". Si le paramètre json.errorCode n'est pas 0 et qu'une erreur apparaît dans votre fichier en conséquence, les informations d'erreur seront contenues dans 'json.errorText'.
+1. Réparez le fichier PDF. Ainsi, si ‘json.errorCode’ est 0, le résultat de l'opération est enregistré dans "ResultConvertToPDFA.pdf". Au cours du processus de conversion, une validation est effectuée, et les résultats de la validation sont enregistrés sous "ResultConvertToPDFALog.xml." Si le paramètre json.errorCode n'est pas 0 et, en conséquence, une erreur apparaît dans votre fichier, les informations d'erreur seront contenues dans ‘json.errorText’.
 
 ```js
 
   const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
-      /*Convertir un fichier PDF en PDF/A(1A) et enregistrer le "ResultConvertToPDFA.pdf"*/
-      /*Pendant le processus de conversion, la validation est également effectuée, "ResultConvertToPDFA.xml"*/
+      /*Convert a PDF-file to PDF/A(1A) and save the "ResultConvertToPDFA.pdf"*/
+      /*During conversion process, the validation is also performed, "ResultConvertToPDFA.xml"*/
       const json = AsposePdfModule.AsposePdfConvertToPDFA(pdf_file, AsposePdfModule.PdfFormat.PDF_A_1A, "ResultConvertToPDFA.pdf", "ResultConvertToPDFALog.xml");
       console.log("AsposePdfConvertToPDFA => %O", json.errorCode == 0 ? [json.fileNameResult, json.fileNameLogResult] : json.errorText);
   });
@@ -50,19 +49,24 @@ Veuillez vérifier l'extrait de code suivant afin de le convertir dans l'environ
 
 **ECMAScript/ES6:**
 
-1. Importez le module `asposepdfnodejs`.
+1. Importer le `asposepdfnodejs` module.
 1. Spécifiez le nom du fichier PDF qui sera converti.
 1. Initialisez le module AsposePdf. Recevez l'objet en cas de succès.
 1. Appelez la fonction [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/).
-1. Réparez le fichier PDF. Ainsi, si 'json.errorCode' est 0, le résultat de l'opération est enregistré dans "ResultConvertToPDFA.pdf". Pendant le processus de conversion, une validation est effectuée, et les résultats de la validation sont enregistrés sous "ResultConvertToPDFALog.xml." Si le paramètre json.errorCode n'est pas 0 et, en conséquence, qu'une erreur apparaît dans votre fichier, les informations sur l'erreur seront contenues dans 'json.errorText'.
+1. Réparez le fichier PDF. Ainsi, si ‘json.errorCode’ est 0, le résultat de l'opération est enregistré dans "ResultConvertToPDFA.pdf". Au cours du processus de conversion, une validation est effectuée, et les résultats de la validation sont enregistrés sous "ResultConvertToPDFALog.xml." Si le paramètre json.errorCode n'est pas 0 et, en conséquence, une erreur apparaît dans votre fichier, les informations d'erreur seront contenues dans ‘json.errorText’.
 
 ```js
 
   import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
-  /*Convertir un fichier PDF en PDF/A(1A) et enregistrer le "ResultConvertToPDFA.pdf"*/
-  /*Pendant le processus de conversion, la validation est également effectuée, "ResultConvertToPDFA.xml"*/
+  /*Convert a PDF-file to PDF/A(1A) and save the "ResultConvertToPDFA.pdf"*/
+  /*During conversion process, the validation is also performed, "ResultConvertToPDFA.xml"*/
   const json = AsposePdfModule.AsposePdfConvertToPDFA(pdf_file, AsposePdfModule.PdfFormat.PDF_A_1A, "ResultConvertToPDFA.pdf", "ResultConvertToPDFALog.xml");
   console.log("AsposePdfConvertToPDFA => %O", json.errorCode == 0 ? [json.fileNameResult, json.fileNameLogResult] : json.errorText);
 ```
+
+
+
+
+
