@@ -179,7 +179,7 @@ XPS 文件类型主要与微软公司推出的 XML Paper Specification（XML 纸
 
 **Aspose.PDF for Node.js** 提供了将 PDF 文件转换为 <abbr title="XML Paper Specification">XPS</abbr> 格式。让我们尝试使用提供的代码片段将 PDF 文件转换为 XPS 格式（使用 Node.js）。
 
-如果您想转换 PDF 文档，可以使用 [AsposePdf转Xps](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxps/) 函数。 
+如果您想转换 PDF 文档，可以使用 [AsposePdfToXps](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxps/) 函数。
 请查看以下代码片段，以在 Node.js 环境中进行转换。
 
 **CommonJS:**
@@ -187,7 +187,7 @@ XPS 文件类型主要与微软公司推出的 XML Paper Specification（XML 纸
 1. 调用 `require` 并导入 `asposepdfnodejs` 模块 作为 `AsposePdf` 变量。
 1. 指定将要转换的 PDF 文件的名称。
 1. 调用 `AsposePdf` 作为 Promise 并执行文件转换操作。如果成功，则接收该对象。
-1. 调用函数 [AsposePdf转Xps](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxps/).
+1. 调用函数 [AsposePdfToXps](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxps/).
 1. 转换 PDF 文件。因此，如果 'json.errorCode' 为 0，则操作结果保存在 "ResultPDFtoXps.xps" 中。如果 json.errorCode 参数不为 0，并相应地在您的文件中出现错误，则错误信息将包含在 'json.errorText' 中。
 
 ```js
@@ -206,7 +206,7 @@ XPS 文件类型主要与微软公司推出的 XML Paper Specification（XML 纸
 1. 导入 `asposepdfnodejs` 模块。
 1. 指定将要转换的 PDF 文件的名称。
 1. 初始化 AsposePdf 模块。如果成功，则接收对象。
-1. 调用函数 [AsposePdf转Xps](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxps/).
+1. 调用函数 [AsposePdfToXps](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxps/).
 1. 转换 PDF 文件。因此，如果 'json.errorCode' 为 0，则操作结果保存在 "ResultPDFtoXps.xps" 中。如果 json.errorCode 参数不为 0，并相应地在您的文件中出现错误，则错误信息将包含在 'json.errorText' 中。
 
 ```js
@@ -263,8 +263,6 @@ AsposePdf().then(AsposePdfModule => {
   const json = AsposePdfModule.AsposePdfConvertToGrayscale(pdf_file, "ResultConvertToGrayscale.pdf");
   console.log("AsposePdfConvertToGrayscale => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
-
-
 
 
 

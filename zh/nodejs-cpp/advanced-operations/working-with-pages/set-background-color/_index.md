@@ -21,7 +21,7 @@ sitemap:
 1. 指定要设置背景颜色的 PDF 文件的名称。
 1. 调用 `AsposePdf` 作为 Promise 并执行设置背景颜色的操作。如果成功，接收该对象。
 1. 调用函数 [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
-1. 为 PDF 文件设置背景颜色。您需要向此函数传递 3 个参数：输入文件名、十六进制形式的目标颜色以及输出文件名。因此，如果 ‘json.errorCode’ 为 0，则操作结果保存为 “ResultRotation.pdf”。如果 json.errorCode 参数不为 0，则您的文件中会出现错误，错误信息将包含在 ‘json.errorText’ 中。
+1. 为 PDF 文件设置背景颜色。您需要向此函数传递 3 个参数：输入文件名、十六进制形式的目标颜色以及输出文件名。因此，如果 ‘json.errorCode’ 为 0，则操作结果保存为 “ResultPdfSetBackgroundColor.pdf”。如果 json.errorCode 参数不为 0，则您的文件中会出现错误，错误信息将包含在 ‘json.errorText’ 中。
 
 ```js
 
@@ -40,7 +40,7 @@ sitemap:
 1. 指定要设置背景颜色的 PDF 文件的名称。
 1. 初始化 AsposePdf 模块。如果成功，则接收对象。
 1. 调用函数 [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
-1. 设置 PDF 文件的背景颜色。背景颜色设置为 "#426bf4,"，这是表示蓝色阴影的十六进制颜色代码。因此，如果 'json.errorCode' 为 0，操作结果将保存为 "ResultRotation.pdf"。如果 json.errorCode 参数不是 0，并且相应地在您的文件中出现错误，错误信息将包含在 'json.errorText' 中。
+1. 设置 PDF 文件的背景颜色。背景颜色设置为 "#426bf4"，这是表示蓝色阴影的十六进制颜色代码。因此，如果 'json.errorCode' 为 0，操作结果将保存为 "ResultPdfSetBackgroundColor.pdf"。如果 json.errorCode 参数不是 0，并且相应地在您的文件中出现错误，错误信息将包含在 'json.errorText' 中。
 
 ```js
 

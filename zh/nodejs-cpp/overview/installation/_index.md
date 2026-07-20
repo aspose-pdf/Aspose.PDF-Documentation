@@ -15,7 +15,7 @@ sitemap:
 
 **Aspose.PDF for Node.js via C++** 是一个易于使用且安全的工具包，用于在 Node.js 环境中直接处理 PDF。 
 
-要从 -*ZIP 存档中安装和使用 Aspose.PDF for Node.js via C++，请遵循以下说明：
+要从 ZIP 存档中安装和使用 Aspose.PDF for Node.js via C++，请遵循以下说明：
 
 - 从 Aspose.PDF 网站下载存档
 - 从 ZIP 存档中提取文件
@@ -27,6 +27,5 @@ sitemap:
 
 - npm i asposepdfnodejs
 - 如果存在，请将您的 *.lic 文件重命名为 ‘aspose.lic’
-
 
 

@@ -4,7 +4,7 @@ linktitle: 高级操作
 type: docs
 weight: 60
 url: /zh/nodejs-cpp/advanced-operations/
-description: Aspose.PDF for Node.js via C\u002B\u002B 不仅能完成简单易行的任务，还能应对更复杂的目标。请查看下一节，了解针对高级用户和开发者的内容。
+description: Aspose.PDF for Node.js via C++ 不仅能完成简单易行的任务，还能应对更复杂的目标。请查看下一节，了解针对高级用户和开发者的内容。
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"

@@ -13,7 +13,7 @@ sitemap:
 
 ## 获取 PDF 文件信息
 
-如果您想获取 PDF 文件信息，您可以使用 [AsposePdf获取信息](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/) 函数。 
+如果您想获取 PDF 文件信息，您可以使用 [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/) 函数。
 请检查以下代码片段，以在 Node.js 环境中获取 PDF 文件信息。
 
 **CommonJS:**
@@ -21,7 +21,7 @@ sitemap:
 1. 调用 `require` 并导入 `asposepdfnodejs` 模块 作为 `AsposePdf` 变量。
 1. 指定要提取信息的 PDF 文件的名称。
 1. 调用 `AsposePdf` 作为 Promise 并执行提取信息的操作。如果成功，接收该对象。
-1. 调用函数 [AsposePdf获取信息](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/).
+1. 调用函数 [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/).
 1. 提取的元数据存储在 JSON 对象中。因此，如果 'json.errorCode' 为 0，则使用 console.log 显示提取的元数据。如果 json.errorCode 参数不为 0，并且相应地在您的文件中出现错误，错误信息将包含在 'json.errorText' 中。
 
 ```js
@@ -64,7 +64,7 @@ sitemap:
 1. 导入 `asposepdfnodejs` 模块。
 1. 指定要提取信息的 PDF 文件的名称。
 1. 初始化 AsposePdf 模块。如果成功，则接收对象。
-1. 调用函数 [AsposePdf获取信息](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/).
+1. 调用函数 [AsposePdfGetInfo](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetinfo/).
 1. 提取的元数据存储在 JSON 对象中。因此，如果 'json.errorCode' 为 0，则使用 console.log 显示提取的元数据。如果 json.errorCode 参数不为 0，并且相应地在您的文件中出现错误，错误信息将包含在 'json.errorText' 中。
 
 ```js

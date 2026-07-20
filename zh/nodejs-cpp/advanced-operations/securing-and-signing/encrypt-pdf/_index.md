@@ -1,5 +1,5 @@
 ---
-title:  在 Node.js 中加密 PDF
+title: 在 Node.js 中加密 PDF
 linktitle: 加密 PDF 文件
 type: docs
 weight: 50
@@ -67,7 +67,7 @@ sitemap:
 1. 指定要更改加密的 PDF 文件的名称。
 1. 初始化 AsposePdf 模块。如果成功，则接收对象。
 1. 调用 [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/) 函数。 
-1. 使用密码 "user" 和 "owner" 解密 PDF 文件。
+1. 使用密码 "user" 和 "owner" 加密 PDF 文件。
 1. 因此，如果 'json.errorCode' 为 0，则操作结果保存为 "ResultEncrypt.pdf"。如果 json.errorCode 参数不为 0，并且相应地在您的文件中出现错误，则错误信息将包含在 'json.errorText' 中。
 
 ```js

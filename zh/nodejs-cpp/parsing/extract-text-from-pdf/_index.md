@@ -17,7 +17,7 @@ sitemap:
 从 PDF 中提取文本有多种用途，包括提升搜索和可用性，以及在商业、研究和信息管理等各个领域实现数据分析和自动化。
 
 如果您想从 PDF 文档中提取文本，您可以使用 [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) 函数。 
-请检查以下代码片段，以使用 Node.js via C\u002B\u002B 提取 PDF 文件中的文本。
+请检查以下代码片段，以使用 Node.js via C++ 提取 PDF 文件中的文本。
 
 检查代码片段并按照步骤从 PDF 中提取文本：
 

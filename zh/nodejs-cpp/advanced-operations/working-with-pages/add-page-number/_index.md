@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-页码使读者更容易定位文档的不同部分 以下代码片段展示了如何使用 [AsposePdfAddPageNum](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddpagenum/) 函数在 Node.js 中。
+页码使读者更容易定位文档的不同部分。以下代码片段展示了如何使用 [AsposePdfAddPageNum](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddpagenum/) 函数在 Node.js 中为 PDF 添加页码。
 
 请查看以下代码片段，以在 Node.js 环境中向 PDF 添加页码。
 

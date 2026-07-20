@@ -26,15 +26,14 @@ sitemap:
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|将文档保存为 Microsoft PowerPoint 演示文稿格式| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|将文档保存为 Microsoft Word 格式| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|将文档保存为 Microsoft Word 格式| |{{< emoticons/tick >}}| |
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|以 JPEG 格式保存文档| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[PNG](https://docs.fileformat.com/image/png/)|以 PNG 格式保存文档| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[BMP](https://docs.fileformat.com/image/bmp/)|以 BMP 格式保存文档| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[TIFF](https://docs.fileformat.com/image/tiff/)|将文档保存为单页或多页 TIFF 图像| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|以 JPEG 格式保存文档| |{{< emoticons/tick >}}| |
+|[PNG](https://docs.fileformat.com/image/png/)|以 PNG 格式保存文档| |{{< emoticons/tick >}}| |
+|[BMP](https://docs.fileformat.com/image/bmp/)|以 BMP 格式保存文档| |{{< emoticons/tick >}}| |
+|[TIFF](https://docs.fileformat.com/image/tiff/)|将文档保存为单页或多页 TIFF 图像| |{{< emoticons/tick >}}| |
 |灰度|将文档另存为灰度| |{{< emoticons/tick >}}| |
 |[文本](https://docs.fileformat.com/word-processing/txt/)|将文档另存为文本格式| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
 |[DICOM](https://docs.fileformat.com/image/dicom/)|将文档另存为 DICOM 图像| |{{< emoticons/tick >}}| |
 |[CSV](https://docs.fileformat.com/spreadsheet/csv/)|将文档保存为 CSV| |{{< emoticons/tick >}}| |
-
 
 
 

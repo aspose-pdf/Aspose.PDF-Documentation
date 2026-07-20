@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-以下代码片段展示了如何使用 [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddbackgroundimage/) 函数在 Node.js 中。
+以下代码片段展示了如何使用 [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddbackgroundimage/) 函数在 Node.js 中为 PDF 页面添加背景图像。
 
 请检查以下代码片段，以在 Node.js 环境中添加背景图像。
 
@@ -29,7 +29,7 @@ sitemap:
   const pdf_file = 'Aspose.pdf';
   const background_file = 'Aspose.jpg';
   AsposePdf().then(AsposePdfModule => {
-      /*Add background image to a PDF-file and save the "ResultBackgroundImage.pdf"*/
+      /*Add background image to a PDF-file and save the "ResultAddBackgroundImage.pdf"*/
       const json = AsposePdfModule.AsposePdfAddBackgroundImage(pdf_file, background_file, "ResultAddBackgroundImage.pdf");
       console.log("AsposePdfAddBackgroundImage => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
@@ -49,7 +49,7 @@ sitemap:
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   const background_file = 'Aspose.jpg';
-  /*Add background image to a PDF-file and save the "ResultBackgroundImage.pdf"*/
+  /*Add background image to a PDF-file and save the "ResultAddBackgroundImage.pdf"*/
   const json = AsposePdfModule.AsposePdfAddBackgroundImage(pdf_file, background_file, "ResultAddBackgroundImage.pdf");
   console.log("AsposePdfAddBackgroundImage => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
