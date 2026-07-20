@@ -4,20 +4,20 @@ linktitle: العمل مع الصفحات
 type: docs
 weight: 20
 url: /ar/nodejs-cpp/working-with-pages/
-description: كيف تضيف صفحات، تضيف رؤوس وتذييلات، وتدوير الصفحات يمكنك معرفتها في هذا القسم. Aspose.PDF ل Node.js عبر C++ يشرح لك جميع التفاصيل حول هذا الموضوع.
-lastmod: "2023-11-16"
+description: يشرح هذا القسم كيفية إضافة الصفحات والرؤوس والتذييلات وتدوير الصفحات باستخدام Aspose.PDF لـ Node.js عبر C++.
+lastmod: "2026-07-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-أنت قادر على القيام بما يلي:
+يمكنك القيام بما يلي:
 
 - [حذف الصفحات](/pdf/ar/nodejs-cpp/delete-pages/) - حذف صفحة من ملف PDF الخاص بك في بيئة Node.js.
-- [تدوير الصفحات](/pdf/ar/nodejs-cpp/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.
-- [إضافة رؤوس وتذييلات](/pdf/ar/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - إضافة نص أو صور إلى الرؤوس، التذييلات، أو كلاهما.
-- [إضافة ترقيم الصفحات في ملف PDF](/pdf/ar/nodejs-cpp/add-page-number/) - وظائف AsposePdfAddPageNum ستساعدك في إضافة رقم صفحة في ملف PDF الخاص بك.
+- [تدوير الصفحات](/pdf/ar/nodejs-cpp/rotate-pages/) - يمكنك تغيير اتجاه الصفحة للصفحات في ملف PDF موجود.
+- [إضافة رؤوس وتذييلات](/pdf/ar/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - أضف نصًا أو صورًا إلى الرؤوس أو التذييلات أو كليهما.
+- [إضافة ترقيم الصفحات في ملف PDF](/pdf/ar/nodejs-cpp/add-page-number/) - ستساعدك وظائف AsposePdfAddPageNum في إضافة رقم صفحة في ملف PDF الخاص بك.
+- [إضافة خلفية](/pdf/ar/nodejs-cpp/add-background/) - يمكن استخدام الصور الخلفية لإضافة علامة مائية.
+- [الختم](/pdf/ar/nodejs-cpp/stamping/) - يمكنك استخدام الدالة `AsposePdfAddStamp` لإضافة ختم صورة إلى ملف PDF.
+- [تعيين لون الخلفية لملف PDF](/pdf/ar/nodejs-cpp/set-background-color/) - تعيين لون الخلفية لملف PDF الخاص بك.
 
-- [إضافة خلفية](/pdf/ar/nodejs-cpp/add-background/) - يمكن أن تضيف الصور الخلفية علامة مائية.
-- [Stamping](/pdf/ar/nodejs-cpp/stamping/) - يمكنك استخدام وظيفة AsposePdfAddStamp لإضافة ختم صورة إلى ملف PDF.
-- [Set the background color for PDF](/pdf/ar/nodejs-cpp/set-background-color/) - قم بتعيين لون الخلفية لملف PDF الخاص بك.

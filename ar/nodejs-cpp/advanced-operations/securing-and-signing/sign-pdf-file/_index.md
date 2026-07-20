@@ -1,21 +1,22 @@
 ---
-title: إضافة توقيع رقمي في PDF باستخدام Node.js
-linktitle: التوقيع الرقمي لملف PDF
+title: إضافة توقيع رقمي في PDF في Node.js
+linktitle: توقيع PDF رقمياً
 type: docs
 weight: 70
 url: /ar/nodejs-cpp/sign-pdf/
-description: توقيع مستندات PDF رقميًا في بيئة Node.js.
-lastmod: "2023-11-16"
+description: توقيع مستندات PDF رقمياً في بيئة Node.js.
+lastmod: "2026-07-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-التوقيع الرقمي في مستند PDF هو وسيلة للتحقق من صحة المستند وسلامته. هذه هي عملية التوقيع الإلكتروني لمستند PDF باستخدام مفتاح خاص وشهادة رقمية. يضمن هذا التوقيع لحامله أن المستند لم يتم تغييره أو تعديله منذ التوقيع وأن الموقع هو من يوافق عليه. لتوقيع PDF باستخدام Node.js، استخدم أداة Aspose.PDF.
 
-في حال كنت ترغب في توقيع ملف PDF، يمكنك استخدام دالة [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/).
+التوقيع الرقمي في مستند PDF هو وسيلة للتحقق من أصالة المستند وسلامته. هذه العملية هي توقيع إلكتروني لمستند PDF باستخدام مفتاح خاص وشهادة رقمية. يضمن هذا التوقيع للمالك أن المستند لم يتغير أو يُعدل منذ التوقيع وأن الموقع هو الشخص الذي يوافق عليه. لتوقيع PDF باستخدام Node.js، استخدم أداة Aspose.PDF.
 
-يمكن استخدام **البارامترات** المتعلقة بالتوقيع:
+في حال رغبتك في توقيع ملف PDF، يمكنك استخدام [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) دالة.
+
+من الممكن استخدام **parameters** المتعلقة بالتوقيع:
 
 - fileName
 - pageNum
@@ -27,33 +28,32 @@ sitemap:
 - setWidth
 - reason
 - contact
-- الموقع
+- location
 - isVisible
 - signatureAppearance
-- fileNameResult
+- fileNameResult 
 
-يستخدم مقتطف الشيفرة هذا وحدة AsposePDFforNode.js في بيئة Node.js لتوقيع ملف PDF رقميًا باستخدام توقيع PKCS7.
+يستخدم هذا المقتطف من الكود وحدة AsposePDFforNode.js في بيئة Node.js لتوقيع ملف PDF رقمياً باستخدام توقيع PKCS7.
 
 **CommonJS:**
 
-1. استدعاء `require` واستيراد وحدة `asposepdfnodejs` كمتغير `AsposePdf`.
-1. حدد اسم ملف PDF المراد توقيعه، وملف مفتاح PKCS7، وملف صورة شكل التوقيع. يمكن وضع الشهادة والصورة في أي مكان على نظام الملفات الخاص بك حيث تقوم بتحميلها لتوقيع PDF.
-1. استدعاء `AsposePdf` كـ Promise وتنفيذ العملية لتوقيع الملف. استلم الكائن إذا كانت العملية ناجحة.
-1. استدعاء وظيفة [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/).
-1. قم بتوقيع ملف PDF بتوقيعات رقمية. المعلمات المتعلقة بالتوقيع (مثل ملف المفتاح، كلمة المرور، الإحداثيات، السبب، الاتصال، الموقع، إلخ).
-
-1. وبالتالي، إذا كان 'json.errorCode' يساوي 0، يتم حفظ نتيجة العملية في "ResultSignPKCS7.pdf". إذا لم يكن معامل json.errorCode يساوي 0 وظهرت بالتالي خطأ في ملفك، سيتم احتواء معلومات الخطأ في 'json.errorText'.
+1. اتصل `require` و استيراد `asposepdfnodejs` وحدة كـ `AsposePdf` متغير.
+1. حدّد اسم ملف PDF الذي سيُوقّع، ملف مفتاح PKCS7، وملف صورة مظهر التوقيع. يمكن وضع الشهادة والصورة في أي مكان على نظام الملفات الخاص بك حيث تقوم بتحميلها للتوقيع على PDF.
+1. اتصل `AsposePdf` كـ Promise ونفّذ العملية لتوقيع الملف. استقبل الكائن إذا كان ناجحًا.
+1. استدعِ الـ [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) دالة. 
+1. وقّع ملف PDF باستخدام توقيعات رقمية. المعلمات المتعلقة بالتوقيع (مثل ملف المفتاح، كلمة المرور، الإحداثيات، السبب، جهة الاتصال، الموقع، إلخ). 
+1. وبالتالي، إذا كان 'json.errorCode' يساوي 0، يتم حفظ نتيجة العملية في "ResultSignPKCS7.pdf". إذا لم يكن معامل json.errorCode يساوي 0 وبالتالي ظهر خطأ في ملفك، ستحتوي معلومات الخطأ على 'json.errorText'.
 
 ```js
 
   const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
-      /*ملف PKCS7*/
+      /*Key PKCS7*/
       const test_pfx_file = 'test.pfx';
-      /*مظهر التوقيع*/
+      /*Signature appearance*/
       const sign_img_file = 'Aspose.jpg';
-      /*توقيع ملف PDF بالتوقيعات الرقمية وحفظه في "ResultSignPKCS7.pdf"*/
+      /*Sign a PDF-file with digital signatures and save the "ResultSignPKCS7.pdf"*/
       const json = AsposePdfModule.AsposePdfSignPKCS7(pdf_file, 1, test_pfx_file, "Pa$$w0rd2023", 100, 100, 200, 100, "Reason", "Contact", "Location", 1, sign_img_file, "ResultSignPKCS7.pdf");
       console.log("AsposePdfSignPKCS7 => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
@@ -61,13 +61,12 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. استيراد وحدة `asposepdfnodejs`.
-
-1. حدد اسم ملف PDF المراد توقيعه، وملف المفتاح PKCS7، وملف صورة مظهر التوقيع.
-1. قم بتهيئة وحدة AsposePdf. احصل على الكائن إذا نجحت العملية.
-1. استدع دالة [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/).
-1. قم بتوقيع ملف PDF بتوقيعات رقمية. المعلمات المتعلقة بالتوقيع (مثل ملف المفتاح، كلمة المرور، الإحداثيات، السبب، جهة الاتصال، الموقع، إلخ).
-1. بالتالي، إذا كان 'json.errorCode' يساوي 0، يتم حفظ نتيجة العملية في "ResultSignPKCS7.pdf". إذا كانت قيمة json.errorCode لا تساوي 0، وظهر خطأ في ملفك، فإن معلومات الخطأ ستكون موجودة في 'json.errorText'.
+1. استيراد `asposepdfnodejs` وحدة.
+1. حدد اسم ملف PDF الذي سيُوقع، وملف مفتاح PKCS7، وملف صورة مظهر التوقيع.
+1. تهيئة وحدة AsposePdf. استلم الكائن إذا نجح.
+1. استدعِ الـ [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) دالة. 
+1. وقّع ملف PDF باستخدام توقيعات رقمية. المعلمات المتعلقة بالتوقيع (مثل ملف المفتاح، كلمة المرور، الإحداثيات، السبب، جهة الاتصال، الموقع، إلخ). 
+1. وبالتالي، إذا كان 'json.errorCode' يساوي 0، يتم حفظ نتيجة العملية في "ResultSignPKCS7.pdf". إذا لم يكن معامل json.errorCode يساوي 0 وبالتالي ظهر خطأ في ملفك، ستحتوي معلومات الخطأ على 'json.errorText'.
 
 ```js
 

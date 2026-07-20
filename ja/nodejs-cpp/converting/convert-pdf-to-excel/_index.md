@@ -1,48 +1,47 @@
 ---
-title: Node.jsでPDFをExcelに変換する
-linktitle: PDFをExcelに変換
+title: Node.js で PDF を Excel に変換する
+linktitle: PDF を Excel に変換する
 type: docs
 weight: 20
 url: /ja/nodejs-cpp/convert-pdf-to-xlsx/
-lastmod: "2023-11-16"
-description: Aspose.PDF for Node.jsを使ってPDFをXLSX形式に変換します。
+lastmod: "2026-07-18"
+description: Aspose.PDF for Node.js は、PDF を XLSX 形式に変換することを可能にします。
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-## Node.jsを使用してPDFからスプレッドシートを作成する
+## Node.js を使用して PDF からスプレッドシートを作成する 
 
-**Aspose.PDF for Node.js via C++**は、PDFファイルをExcelファイルに変換する機能をサポートしています。
+**Aspose.PDF for Node.js via C++** は、PDF ファイルを Excel ファイルに変換する機能をサポートしています。
 
 {{% alert color="success" %}}
-**PDFをExcelにオンラインで変換してみてください**
+**PDFをExcelにオンラインで変換してみましょう**
 
-Aspose.PDF for Node.jsは、オンラインで無料アプリケーション["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)を提供しており、その機能と品質を試すことができます。
+Aspose.PDF for Node.js はオンラインの無料アプリケーションを提供します ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), その機能と品質を試すことができます。
 
-[![Aspose.PDFで無料アプリを使用してPDFをExcelに変換](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![Aspose.PDF 無料アプリでPDFからExcelへの変換](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-## PDFをXLSXに変換
+## PDF を XLSX に変換
 
-PDFドキュメントを変換したい場合は、[AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/)関数を使用できます。
- 
-次のコードスニペットを確認して、Node.js環境に変換してください。
+PDF ドキュメントを変換したい場合は、次のものを使用できます [AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/) 関数。 
+Node.js 環境で変換するために、以下のコードスニペットをご確認ください。
 
 **CommonJS:**
 
-1. `require`を呼び出し、`asposepdfnodejs`モジュールを`AsposePdf`変数としてインポートします。
-1. 変換されるPDFファイルの名前を指定します。
-1. `AsposePdf`をPromiseとして呼び出し、ファイル変換の操作を行います。成功した場合はオブジェクトを受け取ります。
-1. 関数[AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/)を呼び出します。
-1. PDFファイルを変換します。したがって、'json.errorCode'が0の場合、操作の結果は「ResultPDFtoXlsX.xlsx」に保存されます。json.errorCodeパラメータが0でなく、それに応じてファイルにエラーが表示される場合、エラー情報は'json.errorText'に含まれます。
+1. 呼び出す `require` およびインポート `asposepdfnodejs` モジュールとして `AsposePdf` 変数。
+1. 変換対象となる PDF ファイルの名前を指定します。
+1. 呼び出す `AsposePdf` Promise として、ファイル変換の操作を実行します。成功した場合は、オブジェクトを受け取ります。
+1. 関数を呼び出す [AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/).
+1. PDF ファイルを変換します。したがって、‘json.errorCode’ が 0 の場合、操作結果は “ResultPDFtoXlsX.xlsx” に保存されます。‘json.errorCode’ パラメータが 0 でない場合、ファイルにエラーが表示され、そのエラー情報は ‘json.errorText’ に含まれます。
 
 ```js
 
   const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
-      /*PDFファイルをXlsXに変換し、「ResultPDFtoXlsX.xlsx」に保存する*/
+      /*Convert a PDF-file to XlsX and save the "ResultPDFtoXlsX.xlsx"*/
       const json = AsposePdfModule.AsposePdfToXlsX(pdf_file, "ResultPDFtoXlsX.xlsx");
       console.log("AsposePdfToXlsX => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
@@ -50,18 +49,19 @@ PDFドキュメントを変換したい場合は、[AsposePdfToXlsX](https://ref
 
 **ECMAScript/ES6:**
 
-1. `asposepdfnodejs`モジュールをインポートします。
-1. 変換されるPDFファイルの名前を指定します。
-1. AsposePdfモジュールを初期化します。成功した場合はオブジェクトを受け取ります。
-1. 関数[AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/)を呼び出します。
-1. PDFファイルを変換します。したがって、'json.errorCode'が0の場合、操作の結果は"ResultPDFtoXlsX.xlsx"に保存されます。json.errorCodeパラメータが0でない場合で、ファイルにエラーが表示される場合、エラー情報は'json.errorText'に含まれます。
+1. インポート `asposepdfnodejs` モジュール。
+1. 変換対象となる PDF ファイルの名前を指定します。
+1. AsposePdf モジュールを初期化します。成功した場合はオブジェクトが返されます。
+1. 関数を呼び出す [AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/).
+1. PDF ファイルを変換します。したがって、‘json.errorCode’ が 0 の場合、操作結果は “ResultPDFtoXlsX.xlsx” に保存されます。‘json.errorCode’ パラメータが 0 でない場合、ファイルにエラーが表示され、そのエラー情報は ‘json.errorText’ に含まれます。
 
 ```js
 
   import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
-  /*PDFファイルをXlsXに変換し、"ResultPDFtoXlsX.xlsx"として保存*/
+  /*Convert a PDF-file to XlsX and save the "ResultPDFtoXlsX.xlsx"*/
   const json = AsposePdfModule.AsposePdfToXlsX(pdf_file, "ResultPDFtoXlsX.xlsx");
   console.log("AsposePdfToXlsX => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```
+
