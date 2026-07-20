@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Chiffrer le fichier PDF en utilisant en utilisant le mot de passe Utilisateur ou Propriétaire
+## Chiffrer le fichier PDF en utilisant le mot de passe utilisateur ou propriétaire
 
 Si vous envoyez un courriel à quelqu’un avec une pièce jointe PDF contenant des informations confidentielles  vous pourriez souhaiter ajouter une sécurité au préalable afin d’empêcher qu’elle tombe entre de mauvaises mains. La meilleure façon de limiter l’accès non autorisé à un document PDF est de le protéger avec un mot de passe. Pour chiffrer facilement et en toute sécurité les documents, vous pouvez utiliser Aspose.PDF for Node.js via C++.
 
@@ -47,12 +47,12 @@ Il y a différents [autorisations de chiffrement](https://reference.aspose.com/p
 
 - Module.Permissions.PrintDocument
 - Module.Permissions.ModifyContent
-- Module.Permissions.ExtraireContenu
-- Module.Permissions.ModifierAnnotationsDeTexte
-- Module.Permissions.RemplirFormulaire
-- Module.Permissions.ExtraireContenuAvecDesHandicaps
-- Module.Permissions.AssemblerDocument
-- Module.Permissions.QualitéImpression
+- Module.Permissions.ExtractContent
+- Module.Permissions.ModifyTextAnnotations
+- Module.Permissions.FillForm
+- Module.Permissions.ExtractContentWithDisabilities
+- Module.Permissions.AssembleDocument
+- Module.Permissions.PrintingQuality
 
 Il existe plusieurs [algorithmes de chiffrement](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#ae15d4d8afe86aae14972a6e493d19f66):
 
@@ -67,7 +67,7 @@ Il existe plusieurs [algorithmes de chiffrement](https://reference.aspose.com/pd
 1. Spécifiez le nom du fichier PDF dont le chiffrement sera modifié.
 1. Initialisez le module AsposePdf. Recevez l'objet en cas de succès.
 1. Appelez le [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/) fonction. 
-1. Déchiffrez le fichier PDF avec les mots de passe "user" et "owner".
+1. Chiffrez le fichier PDF avec les mots de passe "user" et "owner".
 1. Ainsi, si 'json.errorCode' est 0, le résultat de l'opération est enregistré dans "ResultEncrypt.pdf". Si le paramètre json.errorCode n'est pas 0 et, en conséquence, une erreur apparaît dans votre fichier, les informations d'erreur seront contenues dans 'json.errorText'.
 
 ```js

@@ -26,12 +26,12 @@ Le tableau suivant indique les formats de fichiers que Aspose.PDF for Node.js vi
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Enregistre le document au format Microsoft PowerPoint Presentations| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Enregistre le document au format Microsoft Word| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Enregistre le document au format Microsoft Word| |{{< emoticons/tick >}}| |
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|Enregistre le document au format JPEG| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[PNG](https://docs.fileformat.com/image/png/)|Enregistre le document au format PNG| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[BMP](https://docs.fileformat.com/image/bmp/)|Enregistre le document au format BMP| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
-|[TIFF](https://docs.fileformat.com/image/tiff/)|Enregistre le document en tant qu'image TIFF simple ou à plusieurs pages| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|Enregistre le document au format JPEG| |{{< emoticons/tick >}}| |
+|[PNG](https://docs.fileformat.com/image/png/)|Enregistre le document au format PNG| |{{< emoticons/tick >}}| |
+|[BMP](https://docs.fileformat.com/image/bmp/)|Enregistre le document au format BMP| |{{< emoticons/tick >}}| |
+|[TIFF](https://docs.fileformat.com/image/tiff/)|Enregistre le document en tant qu'image TIFF simple ou à plusieurs pages| |{{< emoticons/tick >}}| |
 |Niveaux de gris|Enregistre le document en niveaux de gris| |{{< emoticons/tick >}}| |
-|[Texte](https://docs.fileformat.com/word-processing/txt/)|Enregistrez le document au format Texte| |{{< emoticons/tick >}}| |{{< emoticons/tick >}}| |
+|[Texte](https://docs.fileformat.com/word-processing/txt/)|Enregistrez le document au format Texte| |{{< emoticons/tick >}}| |
 |[DICOM](https://docs.fileformat.com/image/dicom/)|Enregistre le document en tant qu'image DICOM| |{{< emoticons/tick >}}| |
 |[CSV](https://docs.fileformat.com/spreadsheet/csv/)|Enregistre le document au format CSV| |{{< emoticons/tick >}}| |
 

@@ -85,7 +85,7 @@ Veuillez vérifier le fragment de code suivant afin de convertir dans un environ
 1. Spécifiez le nom du fichier PDF qui sera converti.
 1. Appeler `AsposePdf` en tant que Promise et exécuter l'opération de conversion du fichier. Recevoir l'objet si succès.
 1. Appelez la fonction [AsposePdfToDocX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftodocx/).
-1. Convertir le fichier PDF. Ainsi, si 'json.errorCode' vaut 0, le résultat de l'opération est enregistré dans \"ResultPDFtoDocX.docx\". Si le paramètre json.errorCode n'est pas 0 et, en conséquence, une erreur apparaît dans votre fichier, les informations d'erreur seront contenues dans 'json.errorText'.
+1. Convertir le fichier PDF. Ainsi, si 'json.errorCode' vaut 0, le résultat de l'opération est enregistré dans "ResultPDFtoDocX.docx". Si le paramètre json.errorCode n'est pas 0 et, en conséquence, une erreur apparaît dans votre fichier, les informations d'erreur seront contenues dans 'json.errorText'.
 
 ```js
 
@@ -104,7 +104,7 @@ Veuillez vérifier le fragment de code suivant afin de convertir dans un environ
 1. Spécifiez le nom du fichier PDF qui sera converti
 1. Initialisez le module AsposePdf. Recevez l'objet si l'opération réussit.
 1. Appelez la fonction [AsposePdfToDocX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftodocx/).
-1. Convertir le fichier PDF. Ainsi, si 'json.errorCode' vaut 0, le résultat de l'opération est enregistré dans \"ResultPDFtoDocX.docx\". Si le paramètre json.errorCode n'est pas 0 et, en conséquence, une erreur apparaît dans votre fichier, les informations d'erreur seront contenues dans 'json.errorText'.
+1. Convertir le fichier PDF. Ainsi, si 'json.errorCode' vaut 0, le résultat de l'opération est enregistré dans "ResultPDFtoDocX.docx". Si le paramètre json.errorCode n'est pas 0 et, en conséquence, une erreur apparaît dans votre fichier, les informations d'erreur seront contenues dans 'json.errorText'.
 
 ```js
 
