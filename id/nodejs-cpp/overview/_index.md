@@ -1,57 +1,56 @@
 ---
-title: Ikhtisar
-linktitle: Ikhtisar
+title: Gambaran Umum
+linktitle: Gambaran Umum
 type: docs
 weight: 20
 url: /id/nodejs-cpp/overview/
-description: Ikhtisar fitur utama dan format yang didukung dari Aspose.PDF untuk Node.js melalui C++, panduan instalasi dan lisensi.
-lastmod: "2023-11-16"
+description: Gambaran umum tentang fitur utama dan format yang didukung oleh Aspose.PDF for Node.js via C++, manual instalasi dan lisensi.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-_Halaman ini adalah ikhtisar fitur Aspose.PDF untuk Node.js melalui C++._
+_Halaman ini merupakan gambaran umum tentang fitur Aspose.PDF for Node.js via C++._
 
-**Aspose.PDF untuk Node.js melalui C++** memungkinkan pengembang memanipulasi file PDF langsung di lingkungan Node.js. Solusi Node.js ini dibangun dengan menggunakan teknologi WebAssembly dan didasarkan pada Aspose.PDF untuk .NET. Anda dapat dengan mudah menggunakan aspose-pdf untuk Node.js melalui C++ dan kemudian mengikuti petunjuk instalasinya.
+**Aspose.PDF for Node.js via C++** memungkinkan pengembang memanipulasi file PDF secara langsung di lingkungan Node.js. Solusi Node.js ini dibangun dengan menggunakan teknologi WebAssembly dan berbasis pada Aspose.PDF for .NET. Anda dapat dengan mudah menggunakan aspose-pdf untuk Node.js via C++ dan kemudian mengikuti petunjuk instalasi.
 
 **Tentang ekstensi file CJS dan MJS**
 
-Node.js mendukung dua sistem modular untuk mengorganisir dan berbagi kode. Ada:
+Node.js mendukung dua sistem modular untuk mengatur dan berbagi kode. Yaitu:
 
 - Modul CommonJS
-- Modul ECMAScript
+- modul ECMAScript
 
-Modul CommonJS adalah metode pemrosesan ketergantungan klasik di Node.js, sementara modul ECMAScript adalah tambahan yang lebih baru dan mengikuti format standar yang digunakan di browser modern.
- 'cjs', 'mjs' - adalah ekstensi yang digunakan untuk menentukan format modul (CommonJS dan ECMAScript Modules) yang digunakan dalam file JavaScript.
+Modul CommonJS adalah metode pemrosesan dependensi klasik di Node.js, sementara modul ECMAScript adalah tambahan yang lebih baru dan mengikuti format standar yang digunakan di browser modern. 'cjs', 'mjs' - adalah ekstensi yang digunakan untuk menentukan format modul (CommonJS dan Modul ECMAScript) yang digunakan dalam file JavaScript. 
 
-Dalam potongan kode, Anda akan melihat perbedaan dalam bekerja dengan modul AsposePDFforNode.js. Perbedaan utama antara 'require' dan 'import' terletak pada penggunaan kasusnya. **Require** terbatas untuk mengimpor seluruh modul, sedangkan **Import** memiliki fleksibilitas untuk mengimpor baik seluruh modul maupun ekspor spesifik dari modul tersebut.
+Di dalam potongan kode, Anda akan melihat perbedaan dalam penggunaan modul AsposePDFforNode.js. Perbedaan utama antara 'require' dan 'import' terletak pada kasus penggunaannya. **Require** terbatas pada mengimpor seluruh modul, sedangkan **Import** memiliki fleksibilitas untuk mengimpor baik seluruh modul maupun ekspor spesifik dari modul-modul tersebut.
 
 **Dua pendekatan berbeda**
 
 JavaScript menawarkan dua pendekatan, 'then' dan 'await', untuk menangani operasi asinkron.
 
-Metode 'then' bekerja dengan janji untuk mengelola hasil yang sukses dan kesalahan dalam urutan berurutan. Sebaliknya, 'await' membuat JavaScript menunggu, secara harfiah menghentikan eksekusi fungsi sampai janji itu terselesaikan dan mengembalikan hasilnya.
+Metode 'then' bekerja dengan promises untuk mengelola baik hasil yang berhasil maupun error secara berurutan. Sebaliknya, 'await' membuat JavaScript menunggu, secara harfiah menangguhkan eksekusi fungsi hingga promise tersebut selesai dan mengembalikan hasilnya.
 
-Aspose.PDF untuk Node.js mendukung berbagai fungsi seperti:
+Aspose.PDF for Node.js mendukung berbagai macam fungsi seperti:
 
-- Menetapkan, Mendapatkan, dan Menghapus Informasi File PDF
-- Menghapus Penanda Buku
-- Menghapus Anotasi
-- Mengekstrak teks dari PDF
-
-- Mengoptimalkan dokumen PDF- Optimalkan sumber daya
+- Set, Get, dan Remove Informasi File PDF
+- Hapus Bookmark
+- Hapus Anotasi
+- Ekstrak teks dari PDF
+- Optimalkan dokumen PDF
+- Optimalkan sumber daya 
 - Pisahkan PDF menjadi dua file.
-- Gabungkan dua file ke PDF
+- Gabungkan dua file menjadi PDF
 - Perbaiki PDF
 - Fitur konversi
 
-Selain itu, Aspose.PDF untuk Node.js melalui C++ dapat diterapkan untuk dengan mudah mengonversi dokumen PDF ke berbagai format dengan kinerja tinggi dan kualitas sempurna. Lihat bagian [Format File yang Didukung Aspose.PDF](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/). Juga, toolkit ini mendukung enkripsi dan dekripsi dokumen PDF.
+Selain itu, Aspose.PDF for Node.js via C++ dapat diterapkan untuk dengan mudah mengubah dokumen PDF ke berbagai format dengan kinerja tinggi dan kualitas sempurna. Lihat bagian [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/). Juga, toolkit ini mendukung enkripsi dan dekripsi dokumen PDF.
 
 Pelajari lebih lanjut tentang:
 
-- [Format File yang Didukung](/pdf/id/nodejs-cpp/supported-file-formats/)
-- [Fitur Utama dari Aspose.PDF](/pdf/id/nodejs-cpp/key-features/)
+- [Format Berkas yang Didukung](/pdf/id/nodejs-cpp/supported-file-formats/)
+- [Fitur Utama Aspose.PDF](/pdf/id/nodejs-cpp/key-features/)
 - [Persyaratan Sistem](/pdf/id/nodejs-cpp/system-requirements/)
 - [Instalasi](/pdf/id/nodejs-cpp/installation/)
 - [Lisensi](/pdf/id/nodejs-cpp/licensing/)
