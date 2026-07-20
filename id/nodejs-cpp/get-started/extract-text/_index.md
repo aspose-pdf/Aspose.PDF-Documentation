@@ -1,39 +1,38 @@
----  
-title: Extract Text from PDF in Node.js  
-linktitle: Extract Text from PDF  
-type: docs  
-weight: 10  
-url: /id/nodejs-cpp/extract-text/  
-description: Bagian ini menjelaskan cara mengekstrak teks dari dokumen PDF menggunakan Aspose.PDF untuk Node.js melalui toolkit C++.  
-lastmod: "2023-11-16"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
+---
+title: Ekstrak Teks dari PDF di Node.js
+linktitle: Ekstrak Teks dari PDF
+type: docs
+weight: 10
+url: /id/nodejs-cpp/extract-text/
+description: Bagian ini menjelaskan cara mengekstrak teks dari dokumen PDF menggunakan toolkit Aspose.PDF for Node.js via C++.
+lastmod: "2026-07-18"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
 ---
 
-## Ekstrak Teks Dari Semua Halaman Dokumen PDF
+## Ekstrak Teks dari Semua Halaman Dokumen PDF
 
-Mengekstrak teks dari PDF tidaklah mudah. Hanya beberapa pembaca PDF yang dapat mengekstrak teks dari gambar PDF atau PDF yang dipindai. Tetapi alat **Aspose.PDF untuk Node.js melalui C++** memungkinkan Anda dengan mudah mengekstrak teks dari semua file PDF di lingkungan Node.js.
+Mengekstrak teks dari PDF tidaklah mudah. Hanya beberapa pembaca PDF yang dapat mengekstrak teks dari gambar PDF atau PDF yang dipindai. Namun alat **Aspose.PDF for Node.js via C++** memungkinkan Anda dengan mudah mengekstrak teks dari semua file PDF di lingkungan Node.js. 
 
-Kode ini menunjukkan cara menggunakan modul AsposePDFforNode.js untuk mengekstrak teks dari file PDF yang ditentukan dan mencatat teks yang diekstrak atau kesalahan yang ditemukan.
+Kode ini menunjukkan cara menggunakan modul AsposePDFforNode.js untuk mengekstrak teks dari file PDF yang ditentukan dan mencatat baik teks yang diekstrak maupun kesalahan yang terjadi.
 
-Periksa cuplikan kode dan ikuti langkah-langkah untuk mengekstrak teks dari PDF Anda:
+Periksa potongan kode dan ikuti langkah-langkah untuk mengekstrak teks dari PDF Anda:
 
 **CommonJS:**
 
-1. Panggil `require` dan impor modul `asposepdfnodejs` sebagai variabel `AsposePdf`.
-
-1. Tentukan nama untuk file PDF dari mana teks akan diekstraksi.
-1. Panggil `AsposePdf` sebagai Promise dan lakukan operasi untuk mengekstraksi teks. Terima objek jika berhasil.
+1. Panggil `require` dan impor `asposepdfnodejs` modul sebagai `AsposePdf` variabel.
+1. Tentukan nama file PDF yang akan diekstrak teksnya.
+1. Panggil `AsposePdf` sebagai Promise dan lakukan operasi untuk mengekstrak teks. Terima objek jika berhasil.
 1. Panggil fungsi [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
-1. Teks yang diekstraksi disimpan dalam objek JSON. Jadi, jika 'json.errorCode' adalah 0, teks yang diekstraksi ditampilkan menggunakan console.log. Jika parameter json.errorCode bukan 0 dan, sesuai, kesalahan muncul dalam file Anda, informasi kesalahan akan terdapat dalam 'json.errorText'.
+1. Teks yang diekstrak disimpan dalam objek JSON. Jadi, jika 'json.errorCode' adalah 0, teks yang diekstrak ditampilkan menggunakan console.log. Jika parameter json.errorCode bukan 0 dan, sesuai, terjadi kesalahan dalam file Anda, informasi kesalahan akan berada dalam 'json.errorText'.
 
 ```js
 
   const AsposePdf = require('asposepdfnodejs');
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
-      /*Ekstrak teks dari file PDF*/
+      /*Extract text from a PDF-file*/
       const json = AsposePdfModule.AsposePdfExtractText(pdf_file);
       console.log("AsposePdfExtractText => %O", json.errorCode == 0 ? json.extractText : json.errorText);
   });
@@ -41,19 +40,18 @@ Periksa cuplikan kode dan ikuti langkah-langkah untuk mengekstrak teks dari PDF 
 
 **ECMAScript/ES6:**
 
-1. Impor modul `asposepdfnodejs`.
-
-1. Tentukan nama untuk file PDF dari mana teks akan diekstraksi.
+1. Impor `asposepdfnodejs` modul.
+1. Tentukan nama file PDF yang akan diekstrak teksnya.
 1. Inisialisasi modul AsposePdf. Terima objek jika berhasil.
 1. Panggil fungsi [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
-1. Teks yang diekstraksi disimpan dalam objek JSON. Jadi, jika 'json.errorCode' adalah 0, teks yang diekstraksi ditampilkan menggunakan console.log. Jika parameter json.errorCode bukan 0 dan, dengan demikian, muncul kesalahan dalam file Anda, informasi kesalahan akan terkandung dalam 'json.errorText'.
+1. Teks yang diekstrak disimpan dalam objek JSON. Jadi, jika 'json.errorCode' adalah 0, teks yang diekstrak ditampilkan menggunakan console.log. Jika parameter json.errorCode bukan 0 dan, sesuai, terjadi kesalahan dalam file Anda, informasi kesalahan akan berada dalam 'json.errorText'.
 
 ```js
 
   import AsposePdf from 'asposepdfnodejs';
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
-  /*Ekstrak teks dari file PDF*/
+  /*Extract text from a PDF-file*/
   const json = AsposePdfModule.AsposePdfExtractText(pdf_file);
   console.log("AsposePdfExtractText => %O", json.errorCode == 0 ? json.extractText : json.errorText);
 ```
