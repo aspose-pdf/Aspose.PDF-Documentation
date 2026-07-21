@@ -4,14 +4,14 @@ linktitle: Agregar encabezado y pie de página al PDF
 type: docs
 weight: 70
 url: /es/nodejs-cpp/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for Node.js via C\u002B\u002B le permite agregar encabezados y pies de página a su archivo PDF usando AsposePdfAddTextHeaderFooter.
+description: Aspose.PDF for Node.js via C++ le permite agregar encabezados y pies de página a su archivo PDF usando AsposePdfAddTextHeaderFooter.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-**Aspose.PDF for Node.js via C\u002B\u002B** le permite agregar encabezado y pie de página en su archivo PDF existente. 
+**Aspose.PDF for Node.js via C++** le permite agregar encabezado y pie de página en su archivo PDF existente. 
 
 En caso de que desee agregar encabezado y pie de página, puede usar [AsposePdfAddTextHeaderFooter](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddtextheaderfooter/) función. 
 
@@ -31,7 +31,7 @@ Por favor, revise el siguiente fragmento de código para agregar encabezado y pi
   const pdf_file = 'Aspose.pdf';
   AsposePdf().then(AsposePdfModule => {
       /*Add text in Header/Footer of a PDF-file and save the "ResultAddHeaderFooter.pdf"*/
-      const json = AsposePdfModule.AsposePdfAddTextHeaderFooter(pdf_file, "Aspose.PDF for Node.js via C++ via C++", "ASPOSE", "ResultAddHeaderFooter.pdf");
+      const json = AsposePdfModule.AsposePdfAddTextHeaderFooter(pdf_file, "Aspose.PDF for Node.js via C++", "ASPOSE", "ResultAddHeaderFooter.pdf");
       console.log("AsposePdfAddTextHeaderFooter => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
   });
 ```
@@ -50,6 +50,6 @@ Por favor, revise el siguiente fragmento de código para agregar encabezado y pi
   const AsposePdfModule = await AsposePdf();
   const pdf_file = 'Aspose.pdf';
   /*Add text in Header/Footer of a PDF-file and save the "ResultAddHeaderFooter.pdf"*/
-  const json = AsposePdfModule.AsposePdfAddTextHeaderFooter(pdf_file, "Aspose.PDF for Node.js via C++ via C++", "ASPOSE", "ResultAddHeaderFooter.pdf");
+  const json = AsposePdfModule.AsposePdfAddTextHeaderFooter(pdf_file, "Aspose.PDF for Node.js via C++", "ASPOSE", "ResultAddHeaderFooter.pdf");
   console.log("AsposePdfAddTextHeaderFooter => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
 ```

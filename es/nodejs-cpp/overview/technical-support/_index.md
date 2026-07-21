@@ -21,11 +21,11 @@ Aspose.PDF le permite utilizar soporte técnico gratuito para todos sus producto
 
 Si necesitas ayuda con un problema de Aspose.PDF, sigue las siguientes recomendaciones para asegurarte de que se resuelva de la manera más eficiente:
 
-- En primer lugar, verifica que uses la última versión de Aspose.PDF antes de reportar el problema, consulta [Descargas de Aspose.PDF para Node.js]() para conocer la última versión.
+- En primer lugar, verifica que uses la última versión de Aspose.PDF antes de reportar el problema; consulta [Descargas de Aspose.PDF para Node.js](https://releases.aspose.com/pdf/nodejscpp/) para conocer la última versión.
 
 - Tal vez la solución a tu problema ya se ha discutido y tiene una solución; para ello, estudia el foro y la documentación, revisa la Referencia de API antes de reportar el problema.
 
 - Al formular tu pregunta, por favor incluye el documento original y, posiblemente, un fragmento de tu código que cause el problema. Puedes comprimir estos archivos en un solo documento si son varios.
 
-- No te preocupes, sólo tú y los desarrolladores de Aspose tienen acceso a los archivos pegajosos.
+- No te preocupes, sólo tú y los desarrolladores de Aspose tienen acceso a los archivos adjuntos.
 

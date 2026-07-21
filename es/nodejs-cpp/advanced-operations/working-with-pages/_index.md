@@ -4,7 +4,7 @@ linktitle: Trabajando con páginas
 type: docs
 weight: 20
 url: /es/nodejs-cpp/working-with-pages/
-description: Cómo agregar páginas, agregar encabezados y pies de página, rotar páginas que puedes conocer en esta sección. Aspose.PDF for Node.js via C\u002B\u002B te explica todos los detalles sobre este tema.
+description: Cómo agregar páginas, agregar encabezados y pies de página, rotar páginas que puedes conocer en esta sección. Aspose.PDF for Node.js via C++ te explica todos los detalles sobre este tema.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"

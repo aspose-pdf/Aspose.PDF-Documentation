@@ -26,7 +26,7 @@ Siga el enlace para [Descarga directa](https://releases.aspose.com/pdf/nodejscpp
 Para instalar y usar Aspose.PDF for Node.js via C++ desde NPMJS, siga las siguientes instrucciones:
 
 - npm i asposepdfnodejs
-- renombre su archivo *.lic a ‘aspose.lic’ si existe
+- renombre su archivo *.lic a 'aspose.lic' si existe
 
 
 

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Puede eliminar anotaciones de un archivo PDF usando Aspose.PDF for Node.js via C\u002B\u002B. En caso de que quiera eliminar anotaciones de un PDF, puede utilizar [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/) función. 
+Puede eliminar anotaciones de un archivo PDF usando Aspose.PDF for Node.js via C++. En caso de que quiera eliminar anotaciones de un PDF, puede utilizar [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/) función. 
 Por favor, revise el siguiente fragmento de código para eliminar anotaciones de un archivo PDF en un entorno Node.js.
 
 **CommonJS:**

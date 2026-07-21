@@ -45,7 +45,7 @@ El Aspose.PDF for Node.js soporta una amplia variedad de funciones, como:
 - Reparar PDF
 - Funciones de conversión
 
-Además, Aspose.PDF for Node.js via C\u002B\u002B puede usarse para convertir fácilmente documentos PDF a varios formatos con alto rendimiento y calidad perfecta. Ver la sección [Formatos de archivo compatibles con Aspose.PDF](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/). Además, este conjunto de herramientas soporta el cifrado y descifrado de documentos PDF.
+Además, Aspose.PDF for Node.js via C++ puede usarse para convertir fácilmente documentos PDF a varios formatos con alto rendimiento y calidad perfecta. Ver la sección [Formatos de archivo compatibles con Aspose.PDF](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/). Además, este conjunto de herramientas soporta el cifrado y descifrado de documentos PDF.
 
 Más información sobre:
 

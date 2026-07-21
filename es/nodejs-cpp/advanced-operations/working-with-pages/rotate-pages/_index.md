@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Esta sección describe cómo rotar páginas en un archivo PDF existente usando Aspose.PDF for Node.js via C\u002B\u002B.
+Esta sección describe cómo rotar páginas en un archivo PDF existente usando Aspose.PDF for Node.js via C++.
 
 En caso de que desee rotar páginas PDF, puede usar [AsposePdfRotateAllPages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrotateallpages/) función. Esta función usa un parámetro especial 'AsposePdfModule.Rotation' para el valor de rotación. Con él puedes establecer cuántos grados necesitas rotar el PDF. Hay variantes: Ninguno, 90, 180 o 270 grados.
 

@@ -4,7 +4,7 @@ linktitle: Comenzar
 type: docs
 weight: 30
 url: /es/nodejs-cpp/get-started/
-description: Esta sección describe los principios básicos de trabajo de Aspose.PDF for Node.js via C\u002B\u002B. Aspose.PDF for Node.js via C\u002B\u002B admite una amplia variedad de funciones.
+description: Esta sección describe los principios básicos de trabajo de Aspose.PDF for Node.js via C++. Aspose.PDF for Node.js via C++ admite una amplia variedad de funciones.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
@@ -17,7 +17,7 @@ PDF fue creado por Adobe en la década de 1990 para lograr dos cosas. La primera
 
 Sin embargo, no basta solo con abrir tu documento. Al trabajar con PDF, te enfrentarás a la necesidad de crear un documento nuevo, editarlo o convertirlo al formato que necesitas.
 
-## ¿Por qué usar Aspose.PDF for Node.js via C\u002B\u002B?
+## ¿Por qué usar Aspose.PDF for Node.js via C++?
 
 Usar Aspose.PDF for Node.js en su proyecto le brinda los siguientes beneficios:
 

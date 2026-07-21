@@ -209,7 +209,7 @@ Posible establecer:
 
 Aspose.PDF for Node.js via C++ permite eliminar los metadatos del archivo PDF:
 
-En caso de que desees eliminar los metadatos del PDF, puedes usar [AsposePdfEliminarMetadatos](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/) función. 
+En caso de que desees eliminar los metadatos del PDF, puedes usar la función [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
 Por favor, revise el siguiente fragmento de código para eliminar los metadatos del PDF en un entorno Node.js.
 
 **CommonJS:**
@@ -217,7 +217,7 @@ Por favor, revise el siguiente fragmento de código para eliminar los metadatos 
 1. Requiere el módulo AsposePDFforNode.js.
 1. Especifique el nombre del archivo PDF del cual se eliminará la información.
 1. Inicializa el módulo AsposePdf. Recibe el objeto si tiene éxito.
-1. Llame a la función [AsposePdfEliminarMetadatos](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
+1. Llame a la función [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
 1. Eliminar la información del archivo PDF. Por lo tanto, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultPdfRemoveMetadata.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en su archivo, la información del error se encontrará en 'json.errorText'.
 
 ```js
@@ -236,7 +236,7 @@ Por favor, revise el siguiente fragmento de código para eliminar los metadatos 
 1. Importar el `asposepdfnodejs` módulo.
 1. Especifique el nombre del archivo PDF del cual se eliminará la información.
 1. Inicializa el módulo AsposePdf. Recibe el objeto si tiene éxito.
-1. Llame a la función [AsposePdfEliminarMetadatos](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
+1. Llame a la función [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfremovemetadata/).
 1. Eliminar la información del archivo PDF. Por lo tanto, si 'json.errorCode' es 0, el resultado de la operación se guarda en "ResultPdfRemoveMetadata.pdf". Si el parámetro json.errorCode no es 0 y, en consecuencia, aparece un error en su archivo, la información del error se encontrará en 'json.errorText'.
 
 ```js

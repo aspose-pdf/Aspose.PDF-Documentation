@@ -49,10 +49,10 @@ Hay diferentes [permisos de cifrado](https://reference.aspose.com/pdf/cpp/namesp
 - Module.Permissions.ModifyContent
 - Module.Permissions.ExtractContent
 - Module.Permissions.ModifyTextAnnotations
-- Módulo.Permisos.RellenarFormulario
-- Módulo.Permisos.ExtraerContenidoConDiscapacidades
-- Módulo.Permisos.EnsamblarDocumento
-- Módulo.Permisos.CalidadDeImpresión
+- Module.Permissions.FillForm
+- Module.Permissions.ExtractContentWithDisabilities
+- Module.Permissions.AssembleDocument
+- Module.Permissions.PrintingQuality
 
 Hay varios [algoritmos de cifrado](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#ae15d4d8afe86aae14972a6e493d19f66):
 
