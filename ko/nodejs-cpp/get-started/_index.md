@@ -4,7 +4,7 @@ linktitle: 시작하기
 type: docs
 weight: 30
 url: /ko/nodejs-cpp/get-started/
-description: 이 섹션에서는 Aspose.PDF for Node.js via C\u002B\u002B의 작업 기본 원칙에 대해 설명합니다. Aspose.PDF for Node.js via C\u002B\u002B는 다양한 기능을 지원합니다.
+description: 이 섹션에서는 Aspose.PDF for Node.js via C++의 작업 기본 원칙에 대해 설명합니다. Aspose.PDF for Node.js via C++는 다양한 기능을 지원합니다.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
@@ -17,7 +17,7 @@ PDF는 1990년대에 Adobe에서 두 가지 목표를 달성하기 위해 만들
 
 하지만 문서를 단순히 여는 것만으로는 충분하지 않습니다. PDF 작업을 하다 보면 해당 문서를 새로 만들거나, 편집하거나, 필요한 형식으로 변환해야 할 상황이 생깁니다.
 
-## 왜 Aspose.PDF for Node.js via C\u002B\u002B를 사용합니까?
+## 왜 Aspose.PDF for Node.js via C++를 사용합니까?
 
 프로젝트에서 Aspose.PDF for Node.js를 사용하면 다음과 같은 이점을 얻을 수 있습니다:
 

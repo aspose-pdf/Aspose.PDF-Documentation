@@ -4,7 +4,7 @@ linktitle: PDF에서 이미지 추출
 type: docs
 weight: 20
 url: /ko/nodejs-cpp/extract-images-from-the-pdf-file/
-description: Aspose.PDF for Node.js via C\u002B\u002B 툴킷을 사용하여 PDF에서 이미지의 일부를 추출하는 방법.
+description: Aspose.PDF for Node.js via C++ 툴킷을 사용하여 PDF에서 이미지의 일부를 추출하는 방법.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"

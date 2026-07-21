@@ -4,7 +4,7 @@ linktitle: PDF 문서 변환
 type: docs
 weight: 50
 url: /ko/nodejs-cpp/conversion/
-description: 이 섹션에는 Aspose.PDF for Node.js via C\u002B\u002B를 사용하여 PDF 문서를 다른 형식으로 변환하는 관련 기사들이 포함되어 있습니다.
+description: 이 섹션에는 Aspose.PDF for Node.js via C++를 사용하여 PDF 문서를 다른 형식으로 변환하는 관련 기사들이 포함되어 있습니다.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "monthly"

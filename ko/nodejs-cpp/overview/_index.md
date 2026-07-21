@@ -45,7 +45,7 @@ Aspose.PDF for Node.js는 다음과 같은 다양한 기능을 지원합니다:
 - PDF 복구
 - 변환 기능
 
-또한, Aspose.PDF for Node.js via C\u002B\u002B는 높은 성능과 완벽한 품질로 PDF 문서를 다양한 형식으로 쉽게 변환하는 데 적용할 수 있습니다. 섹션을 참조하십시오 [Aspose.PDF 지원 파일 형식](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/). 또한, 이 툴킷은 PDF 문서의 암호화 및 복호화를 지원합니다.
+또한, Aspose.PDF for Node.js via C++는 높은 성능과 완벽한 품질로 PDF 문서를 다양한 형식으로 쉽게 변환하는 데 적용할 수 있습니다. 섹션을 참조하십시오 [Aspose.PDF 지원 파일 형식](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/). 또한, 이 툴킷은 PDF 문서의 암호화 및 복호화를 지원합니다.
 
 자세히 알아보기:
 
