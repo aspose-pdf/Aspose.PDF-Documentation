@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## PDF Document 최적화
+## PDF 문서 최적화
 
 Aspose.PDF for Node.js via C++의 툴킷을 사용하면 Node.js 환경을 위한 PDF 콘텐츠를 최적화할 수 있습니다. 
 

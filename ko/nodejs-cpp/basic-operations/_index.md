@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-**Basic operations** 섹션에서는 Aspose.PDF for Node.js via C++에서 PDF 문서에 대한 첫 번째이자 가장 간단한 작업을 설명합니다:
+**기본 작업** 섹션에서는 Aspose.PDF for Node.js via C++에서 PDF 문서에 대한 첫 번째이자 가장 간단한 작업을 설명합니다:
 
 - [PDF 복구](/pdf/ko/nodejs-cpp/repair-pdf/)
 - [PDF 파일 최적화](/pdf/ko/nodejs-cpp/optimize-pdf/)

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose.PDF for Node.js via C\u002B\u002B를 사용하여 PDF 파일에서 주석을 삭제할 수 있습니다. PDF에서 주석을 삭제하려는 경우, 다음을 사용할 수 있습니다 [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/) 함수. 
+Aspose.PDF for Node.js via C++를 사용하여 PDF 파일에서 주석을 삭제할 수 있습니다. PDF에서 주석을 삭제하려는 경우, 다음을 사용할 수 있습니다 [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteannotations/) 함수.
 Node.js 환경에서 PDF 파일의 주석을 삭제하기 위해 다음 코드 스니펫을 확인해주세요.
 
 **CommonJS:**

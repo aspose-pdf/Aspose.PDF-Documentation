@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-이 섹션에서는 Aspose.PDF for Node.js via C\u002B\u002B를 사용하여 기존 PDF 파일의 페이지를 회전하는 방법을 설명합니다.
+이 섹션에서는 Aspose.PDF for Node.js via C++를 사용하여 기존 PDF 파일의 페이지를 회전하는 방법을 설명합니다.
 
 PDF 페이지를 회전하려는 경우, 다음을 사용할 수 있습니다. [AsposePdfRotateAllPages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrotateallpages/) 함수. 이 함수는 회전 값을 위한 특수 매개변수 'AsposePdfModule.Rotation'을 사용합니다. 이를 통해 PDF를 회전시켜야 할 각도를 설정할 수 있습니다. 옵션은 다음과 같습니다: None, 90, 180, 또는 270도.
 

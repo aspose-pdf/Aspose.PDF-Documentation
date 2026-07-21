@@ -18,7 +18,7 @@ sitemap:
 이전에 스캔한 문서는 종종 PDF 파일 형식으로 저장됩니다. 하지만 그래픽 편집기에서 편집하거나 이미지 형식으로 추가 전송해야 합니까? 우리는 PDF를 이미지로 변환하기 위한 범용 도구를 제공합니다 
 가장 일반적인 작업은 전체 PDF 문서 또는 문서의 특정 페이지를 이미지 세트로 저장해야 할 때입니다. **Aspose.PDF for Node.js via C++**는 PDF를 JPG 및 PNG 형식으로 변환하여 특정 PDF 파일에서 이미지를 얻는 데 필요한 단계를 간소화합니다.
 
-**Aspose.PDF for Node.js via C\u002B\u002B** 다양한 PDF를 이미지 형식으로 변환하는 것을 지원합니다. 섹션을 확인하십시오. [Aspose.PDF 지원 파일 형식](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/).
+**Aspose.PDF for Node.js via C++** 다양한 PDF를 이미지 형식으로 변환하는 것을 지원합니다. 섹션을 확인하십시오. [Aspose.PDF 지원 파일 형식](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/).
 
 {{% alert color="success" %}}
 **PDF를 JPEG로 온라인 변환해 보세요**

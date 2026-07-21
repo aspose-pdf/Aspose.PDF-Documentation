@@ -4,14 +4,14 @@ linktitle: 고급 작업
 type: docs
 weight: 60
 url: /ko/nodejs-cpp/advanced-operations/
-description: Aspose.PDF for Node.js via C\u002B\u002B는 단순하고 쉬운 작업뿐만 아니라 보다 복잡한 목표도 수행할 수 있습니다. 고급 사용자와 개발자를 위한 다음 섹션을 확인하십시오.
+description: Aspose.PDF for Node.js via C++는 단순하고 쉬운 작업뿐만 아니라 보다 복잡한 목표도 수행할 수 있습니다. 고급 사용자와 개발자를 위한 다음 섹션을 확인하십시오.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Advanced Operations는 프로그래밍 방식으로 기존 PDF 파일을 처리하는 방법에 대한 섹션이며, Aspose.PDF로 만든 문서들에 대해 논의된 바와 같이 [기본 작업](/pdf/ko/nodejs-cpp/basic-operations/), 또는 Adobe Acrobat, Google Docs, Microsoft Office, Open Office 또는 기타 PDF 제작 도구로 생성된 PDF.
+고급 작업 섹션에서는 Aspose.PDF로 만든 문서뿐 아니라 [기본 작업](/pdf/ko/nodejs-cpp/basic-operations/)에서 다룬 것처럼 Adobe Acrobat, Google Docs, Microsoft Office, Open Office 등으로 생성된 기존 PDF 파일을 프로그래밍 방식으로 처리하는 방법을 설명합니다.
 다양한 방법을 배우게 됩니다:
 
 - [문서 작업하기](/pdf/ko/nodejs-cpp/working-with-documents/) - 문서를 압축하고, 분할하고, 병합하며 전체 문서에 대한 기타 작업을 수행합니다.

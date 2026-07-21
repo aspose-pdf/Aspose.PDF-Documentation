@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-다음 코드 스니펫은 PDF 페이지에 배경 이미지를 추가하는 방법을 보여줍니다, using the [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddbackgroundimage/) Node.js에서 함수.
+다음 코드 스니펫은 Node.js의 [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddbackgroundimage/) 함수를 사용하여 PDF 페이지에 배경 이미지를 추가하는 방법을 보여줍니다.
 
 Node.js 환경에서 배경 이미지를 추가하기 위해 다음 코드 스니펫을 확인하십시오.
 
