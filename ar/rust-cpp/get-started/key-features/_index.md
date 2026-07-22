@@ -119,7 +119,7 @@ Aspose.PDF for Rust يدعم إصدارات PDF 1.2 و 1.3 و 1.4 و 1.5 و 1.6 
     </tr>
     <tr>
       <td>
-        إضافة_نص_إلى_الصفحة.
+        page_add_text.
       </td>
     </tr>
     <tr>
