@@ -99,22 +99,22 @@ Aspose.PDF for Rust يدعم إصدارات PDF 1.2 و 1.3 و 1.4 و 1.5 و 1.6 
     </tr>
     <tr>
       <td>
-        تدرج_الرمادي.
+        grayscale.
       </td>
     </tr>
     <tr>
       <td>
-        تدوير.
+        rotate.
       </td>
     </tr>
     <tr>
       <td>
-        ضبط_الخلفية.
+        set_background.
       </td>
     </tr>
     <tr>
       <td>
-        إصلاح.
+        repair.
       </td>
     </tr>
     <tr>
