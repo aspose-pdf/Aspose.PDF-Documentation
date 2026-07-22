@@ -13,7 +13,7 @@ sitemap:
 
 ## Visão geral
 
-Para processar documentos PDF usando o [Aspose.PDF for Node.js via C\u002B\u002B](https://products.aspose.com/pdf/nodejs-cpp/), não precisa de bibliotecas e programas de terceiros.
+Para processar documentos PDF usando o [Aspose.PDF for Node.js via C++](https://products.aspose.com/pdf/nodejs-cpp/), não precisa de bibliotecas e programas de terceiros.
 Requer instalado [Node.js](https://nodejs.org/). Você deve ter a versão 16 ou superior do Node.js. Recomendamos fortemente o uso de versões LTS.
 Node.js pode ser [instalado](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs) de diferentes maneiras.
 
