@@ -51,17 +51,17 @@ Aspose.PDF for Rust suporta as versões PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
     </tr>
     <tr>
       <td>
-        salvar_como.
+        save_as.
       </td>
     </tr>
     <tr>
       <td>
-        página_inserir.
+        page_insert.
       </td>
     </tr>
     <tr>
       <td>
-        página_adicionar.
+        page_add.
       </td>
     </tr>
     <tr>
