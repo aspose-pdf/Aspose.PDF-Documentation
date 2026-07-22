@@ -17,7 +17,7 @@ SoftwareApplication: rust-cpp
 
 Um exemplo "Hello World" é tradicionalmente usado para introduzir recursos de uma linguagem de programação ou software com um caso de uso simples.
 
-**Aspose.PDF for Rust** é uma API PDF rica em recursos que permite aos desenvolvedores incorporar a criação, manipulação e conversão de documentos PDF com Rust. Ela suporta muitos formatos de arquivo populares, incluindo PDF, TXT, XLSX, EPUB, TEX, DOC, DOCX, PPTX, formatos de imagem etc. Neste artigo, estamos criando um documento PDF contendo o texto "Hello World!" After installing Aspose.PDF for Rust in your environment, you can execute the code sample to see how the Aspose.PDF API works.
+**Aspose.PDF for Rust** é uma API PDF rica em recursos que permite aos desenvolvedores incorporar a criação, manipulação e conversão de documentos PDF com Rust. Ela suporta muitos formatos de arquivo populares, incluindo PDF, TXT, XLSX, EPUB, TEX, DOC, DOCX, PPTX, formatos de imagem etc. Neste artigo, estamos criando um documento PDF contendo o texto "Hello World!" Depois de instalar o Aspose.PDF for Rust no seu ambiente, você pode executar o exemplo de código para ver como a API Aspose.PDF funciona.
 O trecho de código abaixo segue estas etapas:
 
 1. Crie uma nova instância de documento PDF.
