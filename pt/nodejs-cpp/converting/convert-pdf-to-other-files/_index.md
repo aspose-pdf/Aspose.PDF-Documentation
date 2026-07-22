@@ -51,7 +51,7 @@ Por favor, verifique o trecho de código a seguir para converter no ambiente Nod
 1. Importar o `asposepdfnodejs` módulo.
 1. Especifique o nome do arquivo PDF que será convertido
 1. Inicialize o módulo AsposePdf. Receba o objeto se for bem-sucedido.
-1. Chame a função [AsposePdfParaEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/).
+1. Chame a função [AsposePdfToEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/).
 1. Converter o arquivo PDF. Assim, se 'json.errorCode' for 0, o resultado da operação será salvo em "ResultPDFtoEPUB.epub". Se o parâmetro json.errorCode não for 0 e, consequentemente, aparecer um erro no seu arquivo, as informações do erro estarão contidas em 'json.errorText'.
 
 ```js
