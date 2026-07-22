@@ -36,11 +36,14 @@ The following code snippet shows how to optimize a PDF document.
   use asposepdf::Document;
 
   fn main() -> Result<(), Box<dyn std::error::Error>> {
-      // Open a PDF-document named "sample.pdf"
+      // Open a PDF-document with filename
       let pdf = Document::open("sample.pdf")?;
 
+      // Optimize resources of PDF-document
+      pdf.optimize_resource()?;
+
       // Save the previously opened PDF-document with new filename
-      pdf.save_as("sample_open.pdf")?;
+      pdf.save_as("sample_optimize_resource.pdf")?;
 
       Ok(())
   }
