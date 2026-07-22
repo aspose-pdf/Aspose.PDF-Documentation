@@ -1,5 +1,5 @@
 ---
-title: Работа с PDF‑документами с использованием Rust через C++
+title: Работа с PDF‑документами с использованием Rust via C++
 linktitle: Работа с документами
 type: docs
 weight: 10

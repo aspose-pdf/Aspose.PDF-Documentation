@@ -1,6 +1,6 @@
 ---
 title: Документация
-linktitle: Aspose.PDF для Rust через C++
+linktitle: Aspose.PDF for Rust via C++
 second_title: Aspose.PDF for Rust via C++
 type: docs
 weight: 70
@@ -15,9 +15,9 @@ sitemap:
 
 ![Изображение логотипа Aspose.PDF для Rust](aspose-pdf-for-rust-cpp.png)
 
-## Добро пожаловать в Aspose.PDF для Rust через C++
+## Добро пожаловать в Aspose.PDF for Rust via C++
 
-**Aspose.PDF для Rust через C++** — это мощный набор инструментов, который позволяет разработчикам напрямую манипулировать PDF‑файлами и выполнять различные задачи с ними. Содержит уникальные возможности для конвертации PDF в другие форматы.
+**Aspose.PDF for Rust via C++** — это мощный набор инструментов, который позволяет разработчикам напрямую манипулировать PDF‑файлами и выполнять различные задачи с ними. Содержит уникальные возможности для конвертации PDF в другие форматы.
 
 ## Главы
 
@@ -26,7 +26,7 @@ sitemap:
 - [Базовые операции](/pdf/ru/rust-cpp/basic-operations/)
 - [Примечания к выпуску](https://releases.aspose.com/pdf/rustcpp/release-notes/)
 
-## Ресурсы Aspose.PDF для Rust
+## Ресурсы Aspose.PDF for Rust
 
 Ниже представлены ссылки на некоторые полезные ресурсы, которые могут понадобиться вам для выполнения ваших задач.
 
@@ -35,5 +35,5 @@ sitemap:
 - [Скачать Aspose.PDF for Rust](https://releases.aspose.com/pdf/rustcpp/)
 - [Aspose.PDF for Rust Страница продукта](https://products.aspose.com/pdf/rust-cpp/)
 - [Справочник по API Aspose.PDF for Rust](https://reference.aspose.com/pdf/rust-cpp/)
-- [Aspose.PDF для Rust Бесплатный форум поддержки](https://forum.aspose.com/c/pdf/10)
-- [Aspose.PDF для Rust Платная служба поддержки](https://helpdesk.aspose.com/)
+- [Aspose.PDF for Rust Бесплатный форум поддержки](https://forum.aspose.com/c/pdf/10)
+- [Aspose.PDF for Rust Платная служба поддержки](https://helpdesk.aspose.com/)

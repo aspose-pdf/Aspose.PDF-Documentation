@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Лицензирование Aspose.PDF для Rust через C++
-Abstract: Страница лицензирования Aspose.PDF для Rust через C++ объясняет доступные варианты лицензирования продукта. Клиенты могут выбрать Classic License, Metered License или limited license для целей оценки. Страница также подчеркивает преимущества получения полной лицензии, такие как разблокировка полной функциональности и снятие ограничений оценки.
+AlternativeHeadline: Лицензирование Aspose.PDF для Rust via C++
+Abstract: Страница лицензирования Aspose.PDF для Rust via C++ объясняет доступные варианты лицензирования продукта. Клиенты могут выбрать Classic License, Metered License или limited license для целей оценки. Страница также подчеркивает преимущества получения полной лицензии, такие как разблокировка полной функциональности и снятие ограничений оценки.
 SoftwareApplication: rust-cpp
 ---
 

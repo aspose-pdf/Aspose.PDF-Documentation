@@ -4,7 +4,7 @@ linktitle: Установить разрешения
 type: docs
 weight: 80
 url: /ru/rust-cpp/set_permissions/
-description: Установить разрешения для PDF‑документа с помощью Aspose.PDF для Rust через C++.
+description: Установить разрешения для PDF‑документа с помощью Aspose.PDF для Rust via C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"

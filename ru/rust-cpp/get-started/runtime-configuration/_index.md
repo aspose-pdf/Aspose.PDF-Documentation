@@ -1,5 +1,5 @@
 ---
-title: Конфигурация среды выполнения Aspose.PDF для Rust через C++
+title: Конфигурация среды выполнения Aspose.PDF для Rust via C++
 linktitle: Конфигурация среды выполнения
 type: docs
 weight: 100

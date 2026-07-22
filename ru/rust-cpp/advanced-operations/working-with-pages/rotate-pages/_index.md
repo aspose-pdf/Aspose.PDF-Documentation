@@ -1,10 +1,10 @@
 ---
-title: Поворот страниц PDF с помощью Rust через C++
+title: Поворот страниц PDF с помощью Rust via C++
 linktitle: Поворот страниц PDF
 type: docs
 weight: 50
 url: /ru/rust-cpp/rotate-pages/
-description: В этом разделе описывается, как программно изменить ориентацию страниц в существующем файле PDF с использованием Rust через C++
+description: В этом разделе описывается, как программно изменить ориентацию страниц в существующем файле PDF с использованием Rust via C++
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"

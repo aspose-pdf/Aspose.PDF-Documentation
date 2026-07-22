@@ -4,7 +4,7 @@ linktitle: Получить разрешения
 type: docs
 weight: 60
 url: /ru/rust-cpp/get-permissions/
-description: Прочитать и отобразить разрешения доступа к защищенному паролем PDF-документу с помощью Aspose.PDF for Rust через C++.
+description: Прочитать и отобразить разрешения доступа к защищенному паролем PDF-документу с помощью Aspose.PDF for Rust via C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"

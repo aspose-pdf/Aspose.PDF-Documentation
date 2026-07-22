@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Rust через C\u002B\u002B — это комплек
 SoftwareApplication: rust-cpp
 ---
 
-## Aspose.PDF for Rust через C++
+## Aspose.PDF for Rust via C++
 
 _Эта страница представляет обзор функций Aspose.PDF for Rust._
 
