@@ -74,7 +74,7 @@ Cuplikan kode Rust yang disediakan menunjukkan cara mengonversi dokumen PDF menj
 {{% alert color="success" %}}
 **Coba konversi PDF ke DOCX secara online**
 
-Aspose.PDF for Rust mempersembahkan Anda aplikasi online gratis ["PDF ke Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)", di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya."
+Aspose.PDF for Rust mempersembahkan Anda aplikasi online gratis ["PDF ke Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aplikasi Gratis Konversi PDF ke Word Aspose.PDF](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
