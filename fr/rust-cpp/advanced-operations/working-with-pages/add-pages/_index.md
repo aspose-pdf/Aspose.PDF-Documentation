@@ -21,7 +21,7 @@ L'extrait de code Rust fourni montre comment exécuter l'opération Add Page à 
 
 1. Le [open](https://reference.aspose.com/pdf/rust-cpp/core/open/) La fonction permet au programme de charger un fichier PDF existant (sample.pdf) pour le manipuler. Ceci est essentiel pour toutes les opérations liées au PDF, telles que l'édition, l'ajout de contenu ou la lecture de données.
 1. Le [page_add](https://reference.aspose.com/pdf/rust-cpp/core/page_add/) La méthode est utilisée pour insérer une nouvelle page vierge dans le document PDF existant. Cela est utile pour étendre un document ou le préparer à du contenu supplémentaire.
-1. Le [enregistrer](https://reference.aspose.com/pdf/rust-cpp/core/save/) la méthode garantit que les modifications apportées au PDF sont réécrites dans le fichier. Cette étape est cruciale pour conserver les changements, comme l'ajout de nouvelles pages.
+1. La [save](https://reference.aspose.com/pdf/rust-cpp/core/save/) méthode garantit que les modifications apportées au PDF sont réécrites dans le fichier. Cette étape est cruciale pour conserver les changements, comme l'ajout de nouvelles pages.
 
 Cet extrait est un exemple concis et efficace de la façon d'utiliser la bibliothèque Aspose.PDF Rust pour des tâches de manipulation de PDF de base.
 
