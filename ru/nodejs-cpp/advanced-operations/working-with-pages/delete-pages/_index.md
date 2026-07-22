@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Если вы хотите удалить PDF pages, вы можете использовать [AsposePdfDeletePages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletepages/) функция. 
+Если вы хотите удалить страницы из PDF, вы можете использовать функцию [AsposePdfDeletePages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletepages/).
 
 Особенность этой функции заключается в том, что она может принимать несколько типов в качестве параметра numPages:
 
