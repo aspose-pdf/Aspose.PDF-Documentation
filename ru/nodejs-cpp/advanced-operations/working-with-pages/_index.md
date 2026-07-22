@@ -4,7 +4,7 @@ linktitle: Работа со страницами
 type: docs
 weight: 20
 url: /ru/nodejs-cpp/working-with-pages/
-description: Как добавить страницы, добавить колонтитулы и нижние колонтитулы, вращать страницы, вы можете узнать в этом разделе. Aspose.PDF for Node.js via C\u002B\u002B объяснит вам все детали по этой теме.
+description: Как добавить страницы, добавить колонтитулы и нижние колонтитулы, вращать страницы, вы можете узнать в этом разделе. Aspose.PDF for Node.js via C++ объяснит вам все детали по этой теме.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
