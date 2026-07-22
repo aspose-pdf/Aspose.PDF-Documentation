@@ -17,9 +17,9 @@ SoftwareApplication: rust-cpp
 
 Вы можете удалять страницы из PDF‑файла, используя **Aspose.PDF for Rust via C\u002B\u002B**. Следующий фрагмент кода демонстрирует, как манипулировать PDF‑документом, удаляя конкретную страницу. Этот метод эффективен для задач манипуляции PDF‑документами, в частности для удаления страниц, сохранения изменённого документа и обеспечения надлежащего управления ресурсами.
 
-1. Открытие PDF‑файла.
-1. Удаление определённой страницы с [page_delete](https://reference.aspose.com/pdf/rust-cpp/core/page_delete/) функция.
-1. Сохранение документа с помощью [save](https://reference.aspose.com/pdf/rust-cpp/core/save/) метод.
+1. Откройте PDF‑файл.
+1. Удалите нужную страницу с помощью функции [page_delete](https://reference.aspose.com/pdf/rust-cpp/core/page_delete/).
+1. Сохраните документ с помощью метода [save](https://reference.aspose.com/pdf/rust-cpp/core/save/).
 
 ```rs
 

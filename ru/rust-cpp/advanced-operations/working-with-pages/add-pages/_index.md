@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Rust via C++ предоставляет мощный ф
 SoftwareApplication: rust-cpp
 ---
 
-## Добавить страницу в PDF‑файл
+## Добавьте страницу в PDF‑файл
 
 Предоставленный фрагмент кода на Rust демонстрирует, как выполнить операцию Add Page в конце PDF, используя библиотеку Aspose.PDF.
 

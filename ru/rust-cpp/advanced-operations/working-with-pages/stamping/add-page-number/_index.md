@@ -24,8 +24,8 @@ Aspose.PDF for Rust via C++ предоставляет встроенный фу
 После добавления номеров страниц обновлённый документ сохраняется как новый PDF‑файл.
 
 1. Откройте существующий PDF‑документ.
-1. Добавить нумерацию страниц с [add_page_num()](https://reference.aspose.com/pdf/rust-cpp/organize/add_page_num/) метод.
-1. Сохранить обновлённый документ.
+1. Добавьте нумерацию страниц с помощью метода [add_page_num()](https://reference.aspose.com/pdf/rust-cpp/organize/add_page_num/).
+1. Сохраните обновлённый документ.
 
 ```rs
 
