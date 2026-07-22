@@ -36,7 +36,7 @@ HyperText Markup Language는 하이퍼텍스트 문서 기술 언어이며, 웹 
 
 - [PDF를 다양한 이미지 형식으로 변환](/pdf/ko/nodejs-cpp/convert-pdf-to-images-format/) - PDF 페이지를 JPEG, PNG, SVG 등 다른 형식의 이미지로 변환합니다
 
-이 섹션에는 다음과 같은 형식이 포함됩니다: EPUB, XPS, TeX, Text, 및 Grayscale PDF.
+이 섹션에는 다음과 같은 형식이 포함됩니다: EPUB, XPS, TeX, 텍스트 및 그레이스케일 PDF.
 
 - [PDF 파일을 다른 형식으로 변환하기](/pdf/ko/nodejs-cpp/convert-pdf-to-other-files/) - 이 항목은 PDF 문서를 다양한 형식으로 변환하는 방법을 설명합니다
 
