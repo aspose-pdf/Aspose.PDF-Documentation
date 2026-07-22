@@ -89,17 +89,17 @@ Aspose.PDF for Rust suporta as versões PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
         Organizar
       </th>
       <td>
-        otimizar.
+        optimize.
       </td>
     </tr>
     <tr>
       <td>
-        otimizar_recurso.
+        optimize_resource.
       </td>
     </tr>
     <tr>
       <td>
-        tons_de_cinza.
+        grayscale.
       </td>
     </tr>
     <tr>
