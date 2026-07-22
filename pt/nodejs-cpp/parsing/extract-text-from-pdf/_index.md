@@ -17,7 +17,7 @@ Extrair texto do documento PDF é uma tarefa muito comum e útil.
 Extrair texto de PDFs atende a uma variedade de propósitos, desde melhorar a pesquisa e a disponibilidade até permitir a análise e a automação de dados em diversos campos, como negócios, pesquisa e gestão da informação.
 
 Caso você queira extrair texto de um documento PDF, pode usar [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) função. 
-Por favor, verifique o trecho de código a seguir para extrair texto de um arquivo PDF usando Node.js via C\u002B\u002B.
+Por favor, verifique o trecho de código a seguir para extrair texto de um arquivo PDF usando Node.js via C++.
 
 Verifique os trechos de código e siga os passos para extrair texto do seu PDF:
 
