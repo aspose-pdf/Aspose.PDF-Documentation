@@ -46,7 +46,7 @@ Para obtener el número de páginas en un archivo PDF:
 
 ## Establecer tamaño de página
 
-En este ejemplo, el método pdf.PageSetSize() cambia el tamaño de la primera página del documento PDF. La constante PageSizeA1 garantiza que la primera página se establezca al tamaño de papel A1. Esto es útil al convertir documentos a un formato estandarizado o al asegurar que el contenido específico encaje correctamente en las páginas.
+En este ejemplo, el método pdf.page_set_size() cambia el tamaño de la primera página del documento PDF. La constante PageSize::A1 garantiza que la primera página se establezca al tamaño de papel A1. Esto es útil al convertir documentos a un formato estandarizado o al asegurar que el contenido específico encaje correctamente en las páginas.
 
 1. Abriendo el documento PDF con [abrir](https://reference.aspose.com/pdf/rust-cpp/core/open/) método.
 1. Estableciendo el tamaño de página con [page_set_size](https://reference.aspose.com/pdf/rust-cpp/organize/page_set_size/) función.
