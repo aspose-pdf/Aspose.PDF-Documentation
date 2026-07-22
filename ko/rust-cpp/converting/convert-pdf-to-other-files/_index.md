@@ -172,7 +172,7 @@ Aspose.PDF for Rust가 온라인 무료 애플리케이션을 제공합니다 ["
   }
 ```
 
-## PDF를 Markdawn으로 변환
+## PDF를 Markdown으로 변환
 
 제공된 Rust 코드 스니펫은 Aspose.PDF for Rust를 사용하여 PDF 문서를 Markdown (.md) 파일로 변환하는 방법을 보여줍니다.
 
