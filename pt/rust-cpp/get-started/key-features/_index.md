@@ -104,17 +104,17 @@ Aspose.PDF for Rust suporta as versões PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
     </tr>
     <tr>
       <td>
-        girar.
+        rotate.
       </td>
     </tr>
     <tr>
       <td>
-        definir_fundo.
+        set_background.
       </td>
     </tr>
     <tr>
       <td>
-        reparar.
+        repair.
       </td>
     </tr>
     <tr>
