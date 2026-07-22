@@ -25,7 +25,7 @@ SoftwareApplication: rust-cpp
 Пожалуйста, ознакомьтесь со следующим фрагментом кода, чтобы извлечь текст из PDF‑файла с помощью Rust.
 
 1. Откройте PDF‑документ с указанным именем файла.
-1. Вызовите [extract_text](https://reference.aspose.com/pdf/rust-cpp/core/extract_text/), чтобы извлечь текстовое содержимое из PDF‑документа.
+1. Извлеките текстовое содержимое из PDF‑документа с помощью [extract_text](https://reference.aspose.com/pdf/rust-cpp/core/extract_text/).
 1. Выведите извлечённый текст в консоль.
 
 ```rs

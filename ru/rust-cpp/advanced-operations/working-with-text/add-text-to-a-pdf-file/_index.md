@@ -18,7 +18,7 @@ SoftwareApplication: rust-cpp
 
 1. Откройте PDF‑файл.
 1. Добавьте текст в PDF‑документ с помощью [page_add_text](https://reference.aspose.com/pdf/rust-cpp/organize/page_add_text/) функция.
-1. Сохраняет изменения в тот же файл.
+1. Сохраните изменения в тот же файл.
 
 ## Добавление текста
 
