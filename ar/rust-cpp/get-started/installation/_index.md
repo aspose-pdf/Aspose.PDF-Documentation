@@ -48,7 +48,7 @@ SoftwareApplication: rust-cpp
      cargo add asposepdf --path {path}/asposepdf
      ```
 
-   - **تحرير يدوي** `Cargo.toml`:**
+   - **تحرير يدوي `Cargo.toml`:**
      افتح مشروعك `Cargo.toml` وأضف ما يلي تحت `[dependencies]`:
 
      ```toml
