@@ -27,138 +27,50 @@ SoftwareApplication: go-cpp
 
 Aspose.PDF for Go 支持 PDF 版本 1.2、1.3、1.4、1.5、1.6 和 1.7。
 
-## 按功能类型划分的特性
+## 功能分類
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="6">
-        核心操作
-      </th>
-      <td>
-        新建 PDF。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        打开 PDF。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        保存 PDF。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        另存为。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        关闭
-      </td>
-    </tr>
-    <tr>
-      <td>
-        设置许可证
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        页面核心操作
-      </th>
-     <td>
-        添加页面。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        插入页面。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        删除页面。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        计数页面。
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="6">
-        组织
-      </th>
-      <td>
-        优化。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        优化资源。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        灰度。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        旋转。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        设置背景。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        维修。
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        页面组织
-      </th>
-      <td>
-        旋转。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        设置尺寸。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        灰度。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        添加文本。
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        其他
-      </th>
-      <td>
-        获取内容为纯文本。
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        转换并保存
-      </th>
-      <td>
-        DOC，DOCX，XLSX，PPTX，JPEG，PNG，BMP，TIFF，EPUB，DICOM，SVG，XPS，TEX，TXT。
-      </td>
-    </tr>
-  </tbody>
-</table>
+### 核心操作
 
+- New PDF
+- Open PDF
+- Save PDF
+- SaveAs
+- Close
+- SetLicense
+
+### 頁面操作
+
+- Add page
+- Insert page
+- Delete page
+- Count page
+
+### 頁面整理
+
+- Optimize
+- OptimizeResource
+- Grayscale
+- Rotate
+- SetBackground
+- Repair
+
+### 整理
+
+- Optimize
+- OptimizeResource
+- Grayscale
+
+### 頁面整理
+
+- Rotate
+- SetSize
+- Grayscale
+- AddText
+
+### 其他
+
+- Get contents as plain text
+
+### 轉換與儲存
+
+- DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

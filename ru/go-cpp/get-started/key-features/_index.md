@@ -27,138 +27,50 @@ SoftwareApplication: go-cpp
 
 Aspose.PDF for Go поддерживает версии PDF 1.2, 1.3, 1.4, 1.5, 1.6 и 1.7.
 
-## Возможности по типу функции
+## Функции по группам
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="6">
-        Основная операция
-      </th>
-      <td>
-        Новый PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Открыть PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Сохранить PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SaveAs.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Закрыть
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SetLicense
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        Основная операция со страницей
-      </th>
-     <td>
-        Добавить страницу.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Вставить страницу.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Удалить страницу.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Подсчитать страницу.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="6">
-        Организовать
-      </th>
-      <td>
-        Оптимизировать.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        OptimizeResource.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Grayscale.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SetBackground.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Ремонт.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        Упорядочить страницу
-      </th>
-      <td>
-        Rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        УстановитьРазмер.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Grayscale.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ДобавитьТекст.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Другие
-      </th>
-      <td>
-        Получить содержимое в виде простого текста.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Конвертирование и сохранение
-      </th>
-      <td>
-        DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Основные операции
 
+- New PDF
+- Open PDF
+- Save PDF
+- SaveAs
+- Close
+- SetLicense
+
+### Операции со страницами
+
+- Add page
+- Insert page
+- Delete page
+- Count page
+
+### Организация страниц
+
+- Optimize
+- OptimizeResource
+- Grayscale
+- Rotate
+- SetBackground
+- Repair
+
+### Организация
+
+- Optimize
+- OptimizeResource
+- Grayscale
+
+### Организация страниц
+
+- Rotate
+- SetSize
+- Grayscale
+- AddText
+
+### Другие
+
+- Get contents as plain text
+
+### Конвертация и сохранение
+
+- DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

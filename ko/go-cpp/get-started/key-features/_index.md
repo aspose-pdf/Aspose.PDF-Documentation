@@ -27,138 +27,50 @@ SoftwareApplication: go-cpp
 
 Aspose.PDF for Go는 PDF 버전 1.2, 1.3, 1.4, 1.5, 1.6 및 1.7을 지원합니다.
 
-## 기능 유형별 기능
+## 그룹별 기능
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="6">
-        핵심 작업
-      </th>
-      <td>
-        새 PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        PDF 열기.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        PDF 저장.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        다른 이름으로 저장.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        닫기
-      </td>
-    </tr>
-    <tr>
-      <td>
-        라이선스 설정
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        페이지 핵심 작업
-      </th>
-     <td>
-        페이지 추가.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        페이지 삽입.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        페이지 삭제.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        페이지 수.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="6">
-        정리
-      </th>
-      <td>
-        최적화.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        OptimizeResource.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        흑백.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        회전.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SetBackground.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        수리.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        페이지 정리
-      </th>
-      <td>
-        회전.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SetSize.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        흑백.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        AddText.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        기타
-      </th>
-      <td>
-        내용을 일반 텍스트로 가져옵니다.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        변환 및 저장
-      </th>
-      <td>
-        DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### 핵심 작업
 
+- New PDF
+- Open PDF
+- Save PDF
+- SaveAs
+- Close
+- SetLicense
+
+### 페이지 작업
+
+- Add page
+- Insert page
+- Delete page
+- Count page
+
+### 페이지 구성
+
+- Optimize
+- OptimizeResource
+- Grayscale
+- Rotate
+- SetBackground
+- Repair
+
+### 구성
+
+- Optimize
+- OptimizeResource
+- Grayscale
+
+### 페이지 구성
+
+- Rotate
+- SetSize
+- Grayscale
+- AddText
+
+### 기타
+
+- Get contents as plain text
+
+### 변환 및 저장
+
+- DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

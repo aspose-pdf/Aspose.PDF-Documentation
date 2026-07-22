@@ -27,138 +27,50 @@ SoftwareApplication: go-cpp
 
 يدعم Aspose.PDF for Go إصدارات PDF 1.2، 1.3، 1.4، 1.5، 1.6 و 1.7.
 
-## الميزات حسب نوع الدالة
+## الميزات حسب المجموعة
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="6">
-        العملية الأساسية
-      </th>
-      <td>
-        PDF جديد.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        فتح PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        حفظ PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SaveAs.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        إغلاق
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SetLicense
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        العملية الأساسية للصفحة
-      </th>
-     <td>
-        إضافة صفحة.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        إدراج صفحة.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        حذف صفحة.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        عدد الصفحة.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="6">
-        تنظيم
-      </th>
-      <td>
-        تحسين.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        تحسينالمورد.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        تدرج الرمادي.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        تدوير.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        تعيين الخلفية.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        إصلاح.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        تنظيم الصفحة
-      </th>
-      <td>
-        تدوير.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SetSize.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        تدرج الرمادي.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        AddText.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        أخرى
-      </th>
-      <td>
-        احصل على المحتويات كنص عادي.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        التحويل والحفظ
-      </th>
-      <td>
-        DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### العمليات الأساسية
 
+- New PDF
+- Open PDF
+- Save PDF
+- SaveAs
+- Close
+- SetLicense
+
+### عمليات الصفحة
+
+- Add page
+- Insert page
+- Delete page
+- Count page
+
+### تنظيم الصفحة
+
+- Optimize
+- OptimizeResource
+- Grayscale
+- Rotate
+- SetBackground
+- Repair
+
+### تنظيم
+
+- Optimize
+- OptimizeResource
+- Grayscale
+
+### تنظيم الصفحة
+
+- Rotate
+- SetSize
+- Grayscale
+- AddText
+
+### أخرى
+
+- Get contents as plain text
+
+### التحويل والحفظ
+
+- DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT
