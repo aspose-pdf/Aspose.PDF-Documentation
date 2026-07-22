@@ -26,7 +26,7 @@ sitemap:
 
 ## Versões de PDF suportadas
 
-Aspose.PDF for Node.jssuporta versões de PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
+Aspose.PDF for Node.js suporta versões de PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
 
 ## Fontes
 
