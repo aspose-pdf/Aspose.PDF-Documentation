@@ -23,7 +23,7 @@ EPUB dirancang untuk konten yang dapat mengalir kembali, yang berarti pembaca EP
 Potongan kode Rust yang disediakan menunjukkan cara mengonversi dokumen PDF menjadi EPUB menggunakan pustaka Aspose.PDF:
 
 1. Buka dokumen PDF.
-1. Konversi file PDF ke EPUB menggunakan [simpan_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) fungsi.
+1. Konversi file PDF ke EPUB menggunakan [save_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) fungsi.
 
 ```rs
 
