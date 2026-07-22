@@ -123,7 +123,7 @@ SoftwareApplication: rust-cpp
 يوضح مقطع كود Rust المقدم كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة SVG باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى SVG باستخدام [صفحة_إلى_SVG](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_svg/) دالة.
+1. تحويل صفحة إلى SVG باستخدام [page_to_svg](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_svg/) دالة.
 
 ```rs
 
