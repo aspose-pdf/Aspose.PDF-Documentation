@@ -1,46 +1,46 @@
 ---
-title: Características Clave de Aspose.PDF para Node.js
-linktitle: Características Clave
+title: Características clave de Aspose.PDF for Node.js
+linktitle: Características clave
 type: docs
 weight: 20
 url: /es/nodejs-cpp/key-features/
-description: Aspose.PDF para Node.js via C++ demuestra sus características generales. Esta página describe las versiones de PDF compatibles, y todas las manipulaciones que podemos hacer con texto, imágenes, páginas, etc.
-lastmod: "2023-11-16"
+description: Aspose.PDF for Node.js via C++ demuestra sus características generales. Esta página describe las versiones de PDF compatibles y todas las manipulaciones que podemos realizar con texto, imágenes, páginas, etc.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Características Generales
+## Características generales
 
-- **Aspose.PDF para Node.js via C++** está construido sobre el uso de la tecnología WebAssembly y se basa en Aspose.PDF para .NET
-- Establecer, Obtener y Eliminar Información del Archivo PDF
-- Eliminar Marcadores
-- Eliminar Anotaciones
-- Extraer un texto del PDF
+- **Aspose.PDF for Node.js via C++** está construido sobre el uso de la tecnología WebAssembly y se basa en Aspose.PDF for .NET
+- Establecer, Obtener y Eliminar información del archivo PDF
+- Eliminar marcadores
+- Eliminar anotaciones
+- Extraer un texto de PDF
 - Optimizar documento PDF
-- Optimizar recursos
+- Optimizar recursos 
 - Dividir PDF en dos archivos
 - Combinar dos archivos en PDF
 - Reparar PDF
 
-## Versiones de PDF Compatibles
+## Versiones PDF compatibles
 
-Aspose.PDF para Node.js soporta las versiones de PDF 1.2, 1.3, 1.4, 1.5, 1.6 y 1.7.
+Aspose.PDF for Node.js admite versiones PDF 1.2, 1.3, 1.4, 1.5, 1.6 y 1.7.
 
 ## Fuentes
 
-- 14 fuentes principales.
-- Fuentes PostScript Type1.
-- Fuentes TrueType.
-- Fuentes Tipo 3.
-- Inserción de información de fuentes en PDF
-- Fuentes CJK.
+- 14 core fonts.
+- PostScript Type1 fonts.
+- TrueType fonts.
+- Type 3 fonts.
+- Incrustación de información de Font en PDF
+- CJK fonts.
 - Soporte Unicode
 
 ## Texto
 
-- Extraer texto de PDF
+- Extraer un texto de PDF
 
 ## Conversión
 
@@ -52,10 +52,10 @@ Aspose.PDF para Node.js soporta las versiones de PDF 1.2, 1.3, 1.4, 1.5, 1.6 y 1
 - Convertir un archivo PDF a PDF en escala de grises
 - Convertir un archivo PDF a TXT
 - Convertir un archivo PDF a TEX
-- Convertir un archivo PDF a CSV
+- Convertir un archivo PDF a CSV 
 - Convertir un archivo PDF a PDF/A
 - Convertir un archivo PDF/A a PDF
-- Convertir PDF a formatos de imagen
+- Convertir PDF a formatos de imagen 
 
 ## Imágenes
 
@@ -70,8 +70,8 @@ Aspose.PDF para Node.js soporta las versiones de PDF 1.2, 1.3, 1.4, 1.5, 1.6 y 1
 
 ## Página
 
-- Combinar páginas de PDF
-- Dividir páginas de PDF
+- Combinar páginas PDF
+- Dividir páginas PDF 
 - Agregar fondos
 - Agregar números de página
 - Agregar encabezados y pies de página
@@ -80,26 +80,26 @@ Aspose.PDF para Node.js soporta las versiones de PDF 1.2, 1.3, 1.4, 1.5, 1.6 y 1
 
 ## Sello
 
-- Agregar un sello a PDF
+- Agregar un sello al PDF
 
-## Características de Hipervínculos y Adjuntos
+## Funciones de hipervínculo y archivos adjuntos
 
 El kit de herramientas permite agregar:
 
-- Eliminar adjuntos de PDF
-- Atajos de hipervínculo a otras páginas dentro de un documento PDF
+- Eliminar archivos adjuntos de PDF
+- Accesos directos de hipervínculo a otras páginas dentro de un documento PDF
 - Hipervínculos a páginas en otros documentos PDF
 - Hipervínculos a archivos que no son PDF
-
 - Hipervínculos a ubicaciones web.
 
-Along with hyperlink creation, you also get the capabilities to extract hyperlinks from a PDF document
+Junto con la creación de hipervínculos, también obtienes la capacidad de extraer hipervínculos de un documento PDF
 
-## Funciones de Seguridad de PDF
+## Características de seguridad de PDF
 
-API ofrece cifrado de 40 bits o 128 bits. Uno también puede establecer contraseñas de usuario y maestro para mayor seguridad. La manipulación de contenido en archivos como copiar contenido, imprimir, impresión degradada, modificación de anotaciones, completar campos de formulario así como el ensamblaje de archivos PDF pueden ser restringidos utilizando esta biblioteca.
+La API ofrece cifrado de 40 bits o 128 bits. También se pueden establecer contraseñas de usuario y maestras para mayor seguridad. La manipulación de contenido en los archivos, como copiar contenido, imprimir, imprimir en calidad reducida, modificar anotaciones, completar campos de formulario, así como ensamblar archivos PDF, pueden restringirse utilizando esta biblioteca.
 
-- Encriptar archivo PDF
-- Desencriptar archivo PDF
+- Cifrar archivo PDF
+- Descifrar archivo PDF
 - Cambiar contraseña
 - Firmar PDF
+
