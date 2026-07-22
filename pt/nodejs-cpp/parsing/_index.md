@@ -1,18 +1,19 @@
 ---
-title: Parse documentos PDF
-linktitle: Parse documentos PDF
+title: Analisar documentos PDF
+linktitle: Analisar documentos PDF
 type: docs
 weight: 65
 url: /pt/nodejs-cpp/parsing/
-description: Você quer analisar documentos PDF? Descubra vários métodos de extração de dados PDF com Aspose.PDF para Node.js via C++.
-lastmod: "2023-11-16"
+description: Pretende analisar documentos PDF? Descubra vários métodos de extração de dados de PDF com o Aspose.PDF para Node.js via C++.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-**Parse documento PDF** é um termo relacionado à extração de vários tipos de informação de um arquivo PDF. Esta seção abrange como:
+**Parse PDF** documentos é um termo relacionado à extração de vários tipos de informação de um arquivo PDF. Esta seção aborda como:
 
-- [Extrair Imagens do PDF](/pdf/pt/nodejs-cpp/extract-images-from-the-pdf-file/). A Extração de Imagens permite extrair imagens e armazená-las como arquivos separados.
-- [Extrair Texto do PDF](/pdf/pt/nodejs-cpp/extract-text-from-pdf/). A Análise ou Extração de Texto é a operação mais popular com PDFs prontos. Você aprenderá sobre a análise de texto de um documento inteiro, de uma página específica ou de uma região específica em uma página.
-- [Extrair Tabelas do PDF](/pdf/pt/nodejs-cpp/extract-tables-from-the-pdf-file/). Converter PDF para formato CSV usando Aspose.PDF para Node.js via C++.
+- [Extrair imagens de PDF](/pdf/pt/nodejs-cpp/extract-images-from-the-pdf-file/). A extração de imagens permite extrair imagens e armazená‑las como arquivos separados.
+- [Extrair texto de PDF](/pdf/pt/nodejs-cpp/extract-text-from-pdf/). A análise ou extração de texto é a operação mais popular em PDFs prontos. Você aprenderá sobre análise de texto a partir de um documento inteiro, de uma página específica ou de uma região específica em uma página.
+- [Extrair tabelas de PDF](/pdf/pt/nodejs-cpp/extract-tables-from-the-pdf-file/). Converta PDF para o formato CSV usando Aspose.PDF for Node.js via C++.
+
