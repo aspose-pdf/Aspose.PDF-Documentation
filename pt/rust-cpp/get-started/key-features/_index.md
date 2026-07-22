@@ -119,22 +119,22 @@ Aspose.PDF for Rust suporta as versões PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
     </tr>
     <tr>
       <td>
-        pagina_adicionar_texto.
+        page_add_text.
       </td>
     </tr>
     <tr>
       <td>
-        tamanho_conjunto_página.
+        page_set_size.
       </td>
     </tr>
     <tr>
       <td>
-        girar_página.
+        page_rotate.
       </td>
     </tr>
     <tr>
       <td>
-        pagina_tons_de_cinza.
+        page_grayscale.
       </td>
     </tr>
     <tr>
