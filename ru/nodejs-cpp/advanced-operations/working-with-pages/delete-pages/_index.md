@@ -1,6 +1,6 @@
 ---
-title: Удалить Page в PDF в Node.js
-linktitle: Удалить PDF Pages
+title: Удалить страницы из PDF в Node.js
+linktitle: Удалить страницы PDF
 type: docs
 weight: 30
 url: /ru/nodejs-cpp/delete-pages/
