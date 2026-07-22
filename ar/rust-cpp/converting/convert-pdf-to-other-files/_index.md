@@ -23,7 +23,7 @@ SoftwareApplication: rust-cpp
 يظهر مقطع الشيفرة Rust المقدم كيفية تحويل مستند PDF إلى EPUB باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل ملف PDF إلى EPUB باستخدام [حفظ_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) دالة.
+1. تحويل ملف PDF إلى EPUB باستخدام [save_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) دالة.
 
 ```rs
 
