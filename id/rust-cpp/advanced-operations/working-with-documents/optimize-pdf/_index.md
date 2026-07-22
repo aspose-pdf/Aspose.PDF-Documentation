@@ -17,7 +17,7 @@ SoftwareApplication: rust-cpp
 
 ## Optimalkan Dokumen PDF
 
-Toolkit dengan Aspose.PDF for Rust via C\u002B\u002B memungkinkan Anda mengoptimalkan dokumen PDF.
+Toolkit dengan Aspose.PDF for Rust via C++ memungkinkan Anda mengoptimalkan dokumen PDF.
 
 Potongan kode ini berguna untuk aplikasi di mana pengurangan ukuran atau peningkatan efisiensi file PDF sangat penting, seperti untuk unggahan web, pengarsipan, atau berbagi melalui bandwidth terbatas.
 
