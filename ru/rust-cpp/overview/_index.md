@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/rust-cpp/overview/
 lastmod: "2026-07-20"
-description: Обзор ключевых возможностей и поддерживаемых форматов Aspose.PDF for Rust, руководство по установке и лицензированию Rust через библиотеку C\u002B\u002B.
+description: Обзор ключевых возможностей и поддерживаемых форматов Aspose.PDF for Rust, руководство по установке и лицензированию Rust через библиотеку C++.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Rust через C\u002B\u002B — это комплек
 SoftwareApplication: rust-cpp
 ---
 
-## Aspose.PDF for Rust через C\u002B\u002B
+## Aspose.PDF for Rust через C++
 
 _Эта страница представляет обзор функций Aspose.PDF for Rust._
 
