@@ -30,6 +30,8 @@ Abstract: Aspose.PDF for Python via .NET adalah perpustakaan komprehensif yang d
 
 ## Evaluasi Aspose.PDF for Python via .NET
 
+Anda dapat dengan mudah mengunduh Aspose.PDF for Python untuk evaluasi. Unduhan evaluasi sama dengan unduhan yang dibeli. Versi evaluasi akan menjadi berlisensi ketika Anda menambahkan beberapa baris kode untuk menerapkan lisensi.
+
 Anda dapat mengunduh [Aspose.PDF for Python](https://releases.aspose.com/pdf/pythonnet/) untuk evaluasi. Unduhan evaluasi sama dengan unduhan yang dibeli. Versi evaluasi menjadi berlisensi ketika Anda menambahkan beberapa baris kode ke [ajukan lisensi](/pdf/id/python-net/licensing/).
 
 Versi evaluasi dari Aspose.PDF (tanpa lisensi yang ditentukan) memberikan fungsi penuh produk, tetapi memiliki dua keterbatasan: ia menyisipkan watermark evaluasi, dan hanya empat elemen dari setiap koleksi yang dapat dilihat/disunting.

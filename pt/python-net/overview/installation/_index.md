@@ -30,6 +30,8 @@ Abstract: Aspose.PDF for Python via .NET é uma biblioteca abrangente projetada 
 
 ## Avalie Aspose.PDF for Python via .NET
 
+Você pode baixar facilmente o Aspose.PDF for Python para avaliação. O download de avaliação é o mesmo que o download comprado. A versão de avaliação simplesmente se torna licenciada quando você adiciona algumas linhas de código para aplicar a licença.
+
 Você pode baixar [Aspose.PDF for Python](https://releases.aspose.com/pdf/pythonnet/) para avaliação. O download de avaliação é o mesmo que o download comprado. A versão de avaliação se torna licenciada quando você adiciona algumas linhas de código para [aplicar a licença](/pdf/pt/python-net/licensing/).
 
 A versão de avaliação do Aspose.PDF (sem uma licença especificada) fornece funcionalidade total do produto, mas tem duas limitações: insere uma marca d'água de avaliação e apenas quatro elementos de qualquer coleção podem ser visualizados/editar.
