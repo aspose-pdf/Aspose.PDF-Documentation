@@ -48,7 +48,7 @@ Ce paquet inclut un fichier volumineux qui est stocké sous forme d'archive bzip
      cargo add asposepdf --path {path}/asposepdf
      ```
 
-   - **Modification manuelle** `Cargo.toml`:**
+   - **Modification manuelle de `Cargo.toml` :**
      Ouvrez le projet de votre `Cargo.toml` et ajoutez ce qui suit sous `[dependencies]`:
 
      ```toml
