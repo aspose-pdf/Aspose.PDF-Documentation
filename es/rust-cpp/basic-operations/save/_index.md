@@ -4,7 +4,7 @@ linktitle: Guardar PDF
 type: docs
 weight: 30
 url: /es/rust-cpp/save-pdf-document/
-description: Aprenda cómo guardar un archivo PDF con Aspose.PDF para Rust a través de C\u002B\u002B.
+description: Aprenda cómo guardar un archivo PDF con Aspose.PDF para Rust a través de C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
