@@ -172,7 +172,7 @@ Contoh ini mengonversi halaman tertentu dari PDF Anda ke Grayscale:
   }
 ```
 
-## Konversi PDF ke Markdawn
+## Konversi PDF ke Markdown
 
 Potongan kode Rust yang diberikan menunjukkan cara mengonversi dokumen PDF menjadi file Markdown (.md) menggunakan Aspose.PDF untuk Rust.
 
