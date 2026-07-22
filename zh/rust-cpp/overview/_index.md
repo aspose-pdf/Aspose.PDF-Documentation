@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /zh/rust-cpp/overview/
 lastmod: "2026-07-20"
-description: Aspose.PDF for Rust 的关键功能和受支持格式概览，Rust via C++ 库的安装和许可手册。
+description: Aspose.PDF for Rust via C++ 的主要特性和支持的格式概述，以及 Rust 库的安装和许可手册。
 sitemap:
     changefreq: "monthly"
     priority: 0.7
