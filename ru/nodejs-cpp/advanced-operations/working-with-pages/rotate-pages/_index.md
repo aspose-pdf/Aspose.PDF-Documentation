@@ -13,7 +13,7 @@ sitemap:
 
 В этом разделе описывается, как повернуть страницы в существующем PDF‑файле, используя Aspose.PDF for Node.js via C++.
 
-Если вы хотите повернуть страницы PDF, вы можете использовать [AsposePdfRotateAllPages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrotateallpages/) function. Эта функция использует специальный параметр \u0027AsposePdfModule.Rotation\u0027 для задания значения вращения. С помощью него можно установить, на сколько градусов нужно повернуть PDF. Доступные варианты: None, 90, 180 или 270 градусов.
+Если вы хотите повернуть страницы PDF, вы можете использовать функцию [AsposePdfRotateAllPages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrotateallpages/). Эта функция использует специальный параметр `AsposePdfModule.Rotation` для задания значения вращения. С его помощью можно установить, на сколько градусов нужно повернуть PDF. Доступные варианты: None, 90, 180 или 270 градусов.
 
 Пожалуйста, проверьте следующий фрагмент кода, чтобы повернуть страницы PDF в среде Node.js.
 
