@@ -39,9 +39,11 @@ SoftwareApplication: rust-cpp
       // Open a PDF-document named "sample.pdf"
       let pdf = Document::open("sample.pdf")?;
 
+      // Optimize PDF-document resources
+      pdf.optimize_resource()?;
+
       // Save the previously opened PDF-document with new filename
       pdf.save_as("sample_open.pdf")?;
-
       Ok(())
   }
 ```
