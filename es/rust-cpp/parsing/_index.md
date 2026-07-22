@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Analiza páginas PDF con Aspose.PDF for Rust
-Abstract: Aspose.PDF for Rust via C\u002B\u002B ofrece potentes capacidades de análisis que permiten a los desarrolladores extraer y manipular contenido de documentos PDF de manera eficiente. La API proporciona funciones robustas para manejar PDFs encriptados o complejos, garantizando rendimiento y fiabilidad en diversas plataformas.
+Abstract: Aspose.PDF for Rust via C++ ofrece potentes capacidades de análisis que permiten a los desarrolladores extraer y manipular contenido de documentos PDF de manera eficiente. La API proporciona funciones robustas para manejar PDFs encriptados o complejos, garantizando rendimiento y fiabilidad en diversas plataformas.
 SoftwareApplication: rust-cpp
 ---
 
