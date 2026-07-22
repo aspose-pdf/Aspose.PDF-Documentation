@@ -1,6 +1,6 @@
 ---
 title: Trabalhando com Documentos PDF usando Rust via C\u002B\u002B
-linktitle: Trabalhando com Documents
+linktitle: Trabalhando com Documentos
 type: docs
 weight: 10
 url: /pt/rust-cpp/working-with-documents/
