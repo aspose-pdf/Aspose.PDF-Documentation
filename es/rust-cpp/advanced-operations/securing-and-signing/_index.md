@@ -13,7 +13,7 @@ sitemap:
 
 Esta sección ofrece una guía completa para trabajar con documentos PDF asegurados usando Aspose.PDF para Rust a través de C++. Explica cómo proteger archivos PDF con contraseñas, gestionar permisos de acceso y abrir o desbloquear de forma segura documentos cifrados en Rust.
 
-El artículo repasa tareas comunes relacionadas con la seguridad en PDF, incluyendo el cifrado de PDFs con algoritmos criptográficos modernos, la descifrado de archivos protegidos con contraseña y el control del acceso de usuarios mediante banderas de permiso. También aprenderá cómo inspeccionar la configuración de permisos existente y abrir documentos asegurados usando las credenciales del propietario para su posterior procesamiento.
+El artículo repasa tareas comunes relacionadas con la seguridad en PDF, incluyendo el cifrado de PDFs con algoritmos criptográficos modernos, el descifrado de archivos protegidos con contraseña y el control del acceso de usuarios mediante banderas de permiso. También aprenderá cómo inspeccionar la configuración de permisos existente y abrir documentos asegurados usando las credenciales del propietario para su posterior procesamiento.
 
 Aprenderá cómo crear documentos PDF, aplicar protección criptográfica moderna utilizando cifrado basado en AES y controlar las capacidades de los usuarios, como imprimir, editar contenido y rellenar formularios. El artículo también muestra cómo abrir PDFs protegidos con contraseña usando las credenciales del propietario y descifrarlos para generar documentos sin restricciones adecuados para su posterior procesamiento.
 
