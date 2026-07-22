@@ -89,12 +89,12 @@ Aspose.PDF for Rust يدعم إصدارات PDF 1.2 و 1.3 و 1.4 و 1.5 و 1.6 
         تنظيم
       </th>
       <td>
-        تحسين.
+        optimize.
       </td>
     </tr>
     <tr>
       <td>
-        تحسين_المورد.
+        optimize_resource.
       </td>
     </tr>
     <tr>
