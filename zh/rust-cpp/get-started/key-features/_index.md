@@ -33,35 +33,35 @@ Aspose.PDF for Rust 支持 PDF 版本 1.2、1.3、1.4、1.5、1.6 和 1.7。
   <tbody>
     <tr>
       <th scope="col" rowspan="10">
-        核心操作
+        Core operation
       </th>
       <td>
-        新 PDF。
+        new PDF.
       </td>
     </tr>
     <tr>
       <td>
-        打开 PDF。
+        open PDF.
       </td>
     </tr>
     <tr>
       <td>
-        保存 PDF。
+        save PDF.
       </td>
     </tr>
     <tr>
       <td>
-        另存为。
+        save_as.
       </td>
     </tr>
     <tr>
       <td>
-        插入页面。
+        page_insert.
       </td>
     </tr>
     <tr>
       <td>
-        添加页面。
+        page_add.
       </td>
     </tr>
     <tr>
@@ -86,40 +86,40 @@ Aspose.PDF for Rust 支持 PDF 版本 1.2、1.3、1.4、1.5、1.6 和 1.7。
     </tr>
     <tr>
       <th scope="col" rowspan="10">
-        组织
+        Organize
       </th>
       <td>
-        优化。
+        optimize.
       </td>
     </tr>
     <tr>
       <td>
-        优化资源。
+        optimize_resource.
       </td>
     </tr>
     <tr>
       <td>
-        灰度。
+        grayscale.
       </td>
     </tr>
     <tr>
       <td>
-        旋转。
+        rotate.
       </td>
     </tr>
     <tr>
       <td>
-        设置背景。
+        set_background.
       </td>
     </tr>
     <tr>
       <td>
-        修复。
+        repair.
       </td>
     </tr>
     <tr>
       <td>
-        页面添加文本。
+        page_add_text.
       </td>
     </tr>
     <tr>
@@ -139,10 +139,10 @@ Aspose.PDF for Rust 支持 PDF 版本 1.2、1.3、1.4、1.5、1.6 和 1.7。
     </tr>
     <tr>
       <th scope="col" rowspan="1">
-        转换并保存
+        Converting and Saving
       </th>
       <td>
-        PDF、DOC、DOCX、XLSX、PPTX、JPEG、PNG、BMP、TIFF、EPUB、DICOM、SVG、XPS、TEX、TXT。
+        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
       </td>
     </tr>
   </tbody>
