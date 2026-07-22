@@ -50,7 +50,7 @@ En este ejemplo, el método pdf.page_set_size() cambia el tamaño de la primera 
 
 1. Abriendo el documento PDF con [abrir](https://reference.aspose.com/pdf/rust-cpp/core/open/) método.
 1. Estableciendo el tamaño de página con [page_set_size](https://reference.aspose.com/pdf/rust-cpp/organize/page_set_size/) función.
-1. Guardando el Document usando [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) método.
+1. Guardando el documento usando [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) método.
 
 ```rs
 
