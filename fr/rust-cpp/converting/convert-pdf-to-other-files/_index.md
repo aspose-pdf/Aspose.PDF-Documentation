@@ -172,7 +172,7 @@ Cet exemple convertit une page spécifique de votre PDF en niveaux de gris :
   }
 ```
 
-## Convertir PDF en Markdawn
+## Convertir PDF en Markdown
 
 Le fragment de code Rust fourni montre comment convertir un document PDF en fichier Markdown (.md) à l'aide d'Aspose.PDF for Rust.
 
