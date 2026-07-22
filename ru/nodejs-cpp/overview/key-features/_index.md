@@ -30,9 +30,9 @@ Aspose.PDF for Node.js поддерживает версии PDF 1.2, 1.3, 1.4, 
 
 ## Шрифты
 
-- 14 основных Font.
-- PostScript Type1 Font.
-- TrueType Font.
+- 14 основных шрифтов.
+- Шрифты PostScript Type1.
+- Шрифты TrueType.
 - Type 3 Font.
 - Встраивание информации о Font в PDF
 - CJK Font.
