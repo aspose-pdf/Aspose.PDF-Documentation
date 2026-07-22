@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Вы можете удалять вложения из PDF‑файла, используя Aspose.PDF for Node.js via C++. Если вы хотите удалить вложения из PDF, вы можете использовать [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/) функция. 
+Вы можете удалять вложения из PDF‑файла, используя Aspose.PDF for Node.js via C++. Если вы хотите удалить вложения из PDF, вы можете использовать [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/) функция.
 Пожалуйста, ознакомьтесь со следующим фрагментом кода, чтобы удалить вложения из PDF‑файла в среде Node.js.
 
 **CommonJS:**

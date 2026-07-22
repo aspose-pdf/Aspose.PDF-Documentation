@@ -21,7 +21,6 @@ Aspose.PDF for Node.js представляет вам онлайн беспла
 [![Aspose.PDF Конвертация PDF в PDF/A с помощью бесплатного приложения](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
-
 ## Конвертируйте PDF в формат PDF/A
 
 Если вы хотите конвертировать PDF-документ, вы можете использовать [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/) функция. 

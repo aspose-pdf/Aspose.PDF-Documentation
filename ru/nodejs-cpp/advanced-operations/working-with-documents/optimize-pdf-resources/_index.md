@@ -19,7 +19,6 @@ sitemap:
 1. Эквивалентные ресурсы объединяются в один объект
 1. Неиспользуемые объекты удаляются
  
-
 Если вы хотите оптимизировать ресурсы PDF, вы можете использовать [AsposePdfOptimizeResource](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimizeresource/) функция. 
 Пожалуйста, проверьте следующий фрагмент кода, чтобы оптимизировать ресурсы PDF в среде Node.js.
 
