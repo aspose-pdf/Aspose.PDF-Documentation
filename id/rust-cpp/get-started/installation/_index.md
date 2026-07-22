@@ -127,7 +127,7 @@ Skrip build akan menemukan, memverifikasi, dan mengekstrak pustaka native yang s
 
 2. **Setel jalur** ke direktori yang berisi pustaka asli dan unduh file yang diperlukan:
 
-   - **Setel variabel lingkungan** `ASPOSE_PDF_LIB_DIR`** untuk menunjuk ke folder tempat Anda akan menempatkan native `.bz2` arsip, mereka `.sha256` file checksum, dan perpustakaan native yang diekstrak (`.dll`, `.so`, `.dylib`, dan untuk Windows juga `.lib`):
+   - **Setel variabel lingkungan `ASPOSE_PDF_LIB_DIR`** untuk menunjuk ke folder tempat Anda akan menempatkan native `.bz2` arsip, mereka `.sha256` file checksum, dan perpustakaan native yang diekstrak (`.dll`, `.so`, `.dylib`, dan untuk Windows juga `.lib`):
 
      - Di Linux/macOS:
 
