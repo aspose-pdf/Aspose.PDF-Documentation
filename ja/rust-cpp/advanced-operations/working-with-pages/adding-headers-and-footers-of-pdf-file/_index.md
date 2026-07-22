@@ -4,7 +4,7 @@ linktitle: PDF にヘッダーとフッターを追加する
 type: docs
 weight: 90
 url: /ja/rust-cpp/add-headers-and-footers-of-pdf-file/
-description:
+description: Rust と Aspose.PDF を使用して、既存の PDF の各ページにヘッダーおよびフッターを追加する方法を説明します。
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
