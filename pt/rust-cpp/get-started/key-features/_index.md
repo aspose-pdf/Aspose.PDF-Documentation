@@ -66,22 +66,22 @@ Aspose.PDF for Rust suporta as versões PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
     </tr>
     <tr>
       <td>
-        contagem_de_páginas.
+        page_count.
       </td>
     </tr>
     <tr>
       <td>
-        excluir_página.
+        page_delete.
       </td>
     </tr>
     <tr>
       <td>
-        extrair_texto.
+        extract_text.
       </td>
     </tr>
     <tr>
       <td>
-        definir_licença.
+        set_license.
       </td>
     </tr>
     <tr>
