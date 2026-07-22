@@ -13,9 +13,9 @@ lastmod: "2026-07-18"
 
 Temos o prazer de anunciar a primeira versão pública do Aspose.PDF for Node.js via C++.
 
-**Aspose.PDF for Node.js via C++** permite que os desenvolvedores manipulem arquivos PDF diretamente na Web. Esta solução Node.js é construída com base na tecnologia WebAssembly e baseia‑se no Aspose.PDF for .NET. Você pode usar facilmente o aspose-pdf para Node.js via C++ a partir de e então seguir as instruções de instalação.
+**Aspose.PDF for Node.js via C++** permite que os desenvolvedores manipulem arquivos PDF diretamente na Web. Esta solução Node.js é construída com base na tecnologia WebAssembly e baseia‑se no Aspose.PDF for .NET. Você pode usar facilmente o aspose-pdf para Node.js via C++ e então seguir as instruções de instalação.
 
-Por favor, visite [Página do Produto](https://products.aspose.com/pdf/nodejs-cpp/) para mais detalhes e ter a chance de baixar a primeira versão de [Aspose.PDF for Node.js via C\u002B\u002B]().
+Por favor, visite a [Página do Produto](https://products.aspose.com/pdf/nodejs-cpp/) para mais detalhes e ter a chance de baixar a primeira versão do [Aspose.PDF for Node.js via C++](https://releases.aspose.com/pdf/nodejscpp/).
 
 ## **Principais recursos suportados**
 
