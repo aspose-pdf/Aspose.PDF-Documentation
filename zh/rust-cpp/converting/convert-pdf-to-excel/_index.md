@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 用于将 PDF 转换为 Excel 文档的 Rust 工具
-Abstract: Aspose.PDF for Rust via C\u002B\u002B 库提供了一套强大的解决方案，可将 PDF 文档高精度、高效率地转换为 XLSX 格式。此功能使开发者能够从 PDF 中提取表格数据，同时保留 Excel 工作表的原始布局、结构和格式。文档提供了关于实现转换过程的详细指南，包括示例代码和步骤说明，以便在 Rust 应用程序中实现无缝集成。
+Abstract: Aspose.PDF for Rust via C++ 库提供了一套强大的解决方案，可将 PDF 文档高精度、高效率地转换为 XLSX 格式。此功能使开发者能够从 PDF 中提取表格数据，同时保留 Excel 工作表的原始布局、结构和格式。文档提供了关于实现转换过程的详细指南，包括示例代码和步骤说明，以便在 Rust 应用程序中实现无缝集成。
 SoftwareApplication: rust-cpp
 ---
 

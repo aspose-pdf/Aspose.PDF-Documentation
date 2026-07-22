@@ -21,5 +21,5 @@ SoftwareApplication: rust-cpp
 
 - [使用 Document](/pdf/zh/rust-cpp/working-with-documents/) - 压缩、拆分和合并文档，并对整个文档进行其他操作。
 - [使用 Page](/pdf/zh/rust-cpp/working-with-pages/) - 添加、移动或删除、旋转页面。
-- [使用文本](/pdf/zh/rust-cpp/working-with-text/) - 使用 Aspose.PDF 和 Rust 向 PDF 添加文本。
+- [使用文本](/pdf/zh/rust-cpp/working-with-text/) - 使用 Aspose.PDF for Rust via C++ 向 PDF 添加文本。
 - [安全与签名](/pdf/zh/rust-cpp/securing-and-signing/) - 以编程方式保护和签署您的 PDF 文档

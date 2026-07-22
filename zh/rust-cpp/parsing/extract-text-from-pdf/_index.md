@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 使用 Aspose.PDF for Rust 提取文本
-Abstract: 通过 C++ 的 Aspose.PDF for Rust 提供了一种强大且高效的从 PDF 文档中提取文本的方法。该库支持多种提取技术，使用户能够从整个文档、特定页面或 PDF 中的预定义区域检索文本。
+Abstract: Aspose.PDF for Rust via C++ 提供了一种强大而高效的方式来从 PDF 文档中提取文本。该库支持多种提取技术，使用户能够从整个文档、特定页面或 PDF 中的预定义区域检索文本。
 SoftwareApplication: rust-cpp
 ---
 

@@ -4,7 +4,7 @@ linktitle: 许可及限制
 type: docs
 weight: 90
 url: /zh/rust-cpp/licensing/
-description: Aspose. PDF for Rust 邀请其客户获取 Classic License。也可以使用有限许可证来更好地探索产品。
+description: Aspose.PDF for Rust 邀请其客户获取 Classic License。也可以使用有限许可证来更好地探索产品。
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"

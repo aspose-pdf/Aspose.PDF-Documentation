@@ -56,7 +56,7 @@ SoftwareApplication: rust-cpp
      asposepdf = { path = "{path}/asposepdf" }
      ```
 
-4. **构建你的项目** (`cargo build`). 在第一次构建时，适用于您平台的相应动态库将自动从 the 中提取。 `.bz2` 存档在 `lib` 文件夹并链接到您的项目。
+4. **构建你的项目** (`cargo build`). 在第一次构建时，适用于您平台的相应动态库将自动从 `lib` 文件夹中的 `.bz2` 存档中提取并链接到您的项目。
 
 **注释**
 
@@ -88,10 +88,10 @@ SoftwareApplication: rust-cpp
     > **注意:** 要使用特定的发布版本，您可以指定标签:
     >
     > ```toml
-    > asposepdf = { git = \"https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.26.1" }
+> asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.26.1" }
     > ```
 
-2. **构建你的项目** (`cargo build`). 在第一次构建时，适用于您平台的相应动态库将自动从 the 中提取。 `.bz2` 存档在 `lib` 文件夹并链接到您的项目。
+2. **构建你的项目** (`cargo build`). 在第一次构建时，适用于您平台的相应动态库将自动从 `lib` 文件夹中的 `.bz2` 存档中提取并链接到您的项目。
 
 **注释**
 

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 用于将 PDF 转换为 PowerPoint 的 Rust 工具
-Abstract: 通过 C++ 的 Aspose.PDF for Rust 提供了一个可靠的解决方案，可将 PDF 文档转换为 PowerPoint（PPTX）格式，同时保留原始布局、格式和内容结构。此功能使开发人员能够无缝地将静态 PDF 文件转换为动态、可编辑的演示文稿。该库提供自定义选项以控制转换过程，确保输出质量高，适用于商业和专业用途。文档提供了分步说明和代码示例，帮助开发人员高效地将 PDF 转 PowerPoint 转换集成到其应用程序中。
+Abstract: Aspose.PDF for Rust 提供了一种可靠的解决方案，可将 PDF 文档转换为 PowerPoint (PPTX) 格式，同时保留原始布局、格式和内容结构。此功能使开发人员能够无缝地将静态 PDF 文件转换为动态、可编辑的演示文稿。该库提供自定义选项来控制转换过程，确保输出高质量，满足商业和专业用途。文档提供分步说明和代码示例，帮助开发人员高效地将 PDF 到 PowerPoint 的转换功能集成到他们的应用程序中。
 SoftwareApplication: rust-cpp
 ---
 

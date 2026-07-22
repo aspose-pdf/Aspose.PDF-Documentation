@@ -4,7 +4,7 @@ linktitle: 为 PDF 添加页眉和页脚
 type: docs
 weight: 90
 url: /zh/rust-cpp/add-headers-and-footers-of-pdf-file/
-description:
+description: 本文演示了如何使用 Aspose.PDF for Rust via C++ 为 PDF 文档添加文本页眉和页脚。
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
