@@ -4,7 +4,7 @@ linktitle: Abrir PDF
 type: docs
 weight: 20
 url: /es/rust-cpp/open-pdf-document/
-description: Aprenda cómo abrir un archivo PDF con Aspose.PDF for Rust via C\u002B\u002B.
+description: Aprenda cómo abrir un archivo PDF con Aspose.PDF for Rust via C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
