@@ -46,7 +46,7 @@ PDF ファイルのページ数を取得するには：
 
 ## ページサイズを設定
 
-この例では、メソッド pdf.PageSetSize() が PDF ドキュメントの最初のページのサイズを変更します。PageSizeA1 定数により、最初のページが A1 用紙サイズに設定されます。これは、ドキュメントを標準化された形式に変換する場合や、特定のコンテンツがページに正しく収まることを保証する場合に便利です。
+この例では、メソッド pdf.page_set_size() が PDF ドキュメントの最初のページのサイズを変更します。PageSize::A1 により、最初のページが A1 用紙サイズに設定されます。これは、ドキュメントを標準化された形式に変換する場合や、特定のコンテンツがページに正しく収まることを保証する場合に便利です。
 
 1. PDF ドキュメントを開くには [open](https://reference.aspose.com/pdf/rust-cpp/core/open/) メソッド。
 1. ページサイズの設定には [page_set_size](https://reference.aspose.com/pdf/rust-cpp/organize/page_set_size/) 関数。
