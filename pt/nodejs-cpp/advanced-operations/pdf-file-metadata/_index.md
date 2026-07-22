@@ -105,7 +105,7 @@ Por favor, verifique o trecho de código a seguir para obter informações de ar
 
 Obter fontes de um arquivo PDF pode ser uma maneira útil de reutilizar fontes em outros documentos ou aplicativos. 
 
-Caso deseje obter fontes de um arquivo PDF, você pode usar [AsposePdfObterTodasAsFontes](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/) função. 
+Caso deseje obter fontes de um arquivo PDF, você pode usar [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/) função. 
 Por favor, verifique o trecho de código a seguir para obter fontes de um arquivo PDF em um ambiente Node.js.
 
 **CommonJS:**
@@ -113,7 +113,7 @@ Por favor, verifique o trecho de código a seguir para obter fontes de um arquiv
 1. Chamada `require` e importar `asposepdfnodejs` módulo como `AsposePdf` variável.
 1. Especifique o nome do arquivo PDF a partir do qual as fontes serão extraídas.
 1. Chamada `AsposePdf` como Promise e execute a operação para extrair fontes. Receba o objeto se for bem-sucedido.
-1. Chame a função [AsposePdfObterTodasAsFontes](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/).
+1. Chame a função [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/).
 1. Fonts extraídos são armazenados no objeto JSON. Assim, se 'json.errorCode' for 0, ele exibe um array de detalhes das fontes, incluindo o nome da fonte, se está embutida e seu status de acessibilidade usando console.log. Se o parâmetro json.errorCode não for 0 e, consequentemente, ocorrer um erro no seu arquivo, as informações do erro estarão contidas em 'json.errorText'.
 
 ```js
@@ -133,7 +133,7 @@ Por favor, verifique o trecho de código a seguir para obter fontes de um arquiv
 1. Importar o `asposepdfnodejs` módulo.
 1. Especifique o nome do arquivo PDF a partir do qual as fontes serão extraídas.
 1. Inicialize o módulo AsposePdf. Receba o objeto se for bem-sucedido.
-1. Chame a função [AsposePdfObterTodasAsFontes](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/).
+1. Chame a função [AsposePdfGetAllFonts](https://reference.aspose.com/pdf/nodejs-cpp/metadata/asposepdfgetallfonts/).
 1. Fonts extraídos são armazenados no objeto JSON. Assim, se 'json.errorCode' for 0, ele exibe um array de detalhes das fontes, incluindo o nome da fonte, se está embutida e seu status de acessibilidade usando console.log. Se o parâmetro json.errorCode não for 0 e, consequentemente, ocorrer um erro no seu arquivo, as informações do erro estarão contidas em 'json.errorText'.
 
 ```js

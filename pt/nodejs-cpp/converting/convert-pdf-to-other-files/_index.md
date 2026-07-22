@@ -14,7 +14,7 @@ sitemap:
 {{% alert color="success" %}}
 **Tente converter PDF para EPUB online**
 
-Aspose.PDF for Node.js apresenta a você um aplicativo gratuito online ["PDF para EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
+Aspose.PDF for Node.js apresenta a você um aplicativo gratuito online ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
 
 [![Conversão de PDF para EPUB com Aspose.PDF e aplicativo gratuito](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
@@ -24,7 +24,7 @@ Aspose.PDF for Node.js apresenta a você um aplicativo gratuito online ["PDF par
 **<abbr title="Electronic Publication">EPUB</abbr>** é um padrão de e-book livre e aberto do International Digital Publishing Forum (IDPF). Os arquivos têm a extensão .epub.
 O EPUB foi projetado para conteúdo refluível, o que significa que um leitor de EPUB pode otimizar o texto para um dispositivo de exibição específico. O EPUB também suporta conteúdo de layout fixo. O formato foi concebido como um formato único que editores e casas de conversão podem usar internamente, bem como para distribuição e venda. Ele substitui o padrão Open eBook.
 
-Caso queira converter um documento PDF, você pode usar [AsposePdfParaEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/) função. 
+Caso queira converter um documento PDF, você pode usar [AsposePdfToEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/) função. 
 Por favor, verifique o trecho de código a seguir para converter no ambiente Node.js.
 
 **CommonJS:**
@@ -32,7 +32,7 @@ Por favor, verifique o trecho de código a seguir para converter no ambiente Nod
 1. Chamada `require` e importar `asposepdfnodejs` módulo como `AsposePdf` variável.
 1. Especifique o nome do arquivo PDF que será convertido.
 1. Chamada `AsposePdf` como Promise e execute a operação de conversão de arquivo. Receba o objeto caso seja bem-sucedido.
-1. Chame a função [AsposePdfParaEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/).
+1. Chame a função [AsposePdfToEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/).
 1. Converter o arquivo PDF. Assim, se 'json.errorCode' for 0, o resultado da operação será salvo em "ResultPDFtoEPUB.epub". Se o parâmetro json.errorCode não for 0 e, consequentemente, aparecer um erro no seu arquivo, as informações do erro estarão contidas em 'json.errorText'.
 
 ```js
@@ -51,7 +51,7 @@ Por favor, verifique o trecho de código a seguir para converter no ambiente Nod
 1. Importar o `asposepdfnodejs` módulo.
 1. Especifique o nome do arquivo PDF que será convertido
 1. Inicialize o módulo AsposePdf. Receba o objeto se for bem-sucedido.
-1. Chame a função [AsposePdfParaEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/).
+1. Chame a função [AsposePdfToEPUB](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoepub/).
 1. Converter o arquivo PDF. Assim, se 'json.errorCode' for 0, o resultado da operação será salvo em "ResultPDFtoEPUB.epub". Se o parâmetro json.errorCode não for 0 e, consequentemente, aparecer um erro no seu arquivo, as informações do erro estarão contidas em 'json.errorText'.
 
 ```js
@@ -67,7 +67,7 @@ Por favor, verifique o trecho de código a seguir para converter no ambiente Nod
 {{% alert color="success" %}}
 **Tente converter PDF para LaTeX/TeX online**
 
-Aspose.PDF for Node.js apresenta a você um aplicativo gratuito online ["PDF para LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
+Aspose.PDF for Node.js apresenta a você um aplicativo gratuito online ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
 
 [![Aspose.PDF Conversão de PDF para LaTeX/TeX com aplicativo gratuito](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}

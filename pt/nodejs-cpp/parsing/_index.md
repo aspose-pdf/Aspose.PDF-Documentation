@@ -1,10 +1,10 @@
 ---
-title: Parse PDF documents
-linktitle: Parse PDF documents
+title: Analisar documentos PDF
+linktitle: Analisar documentos PDF
 type: docs
 weight: 65
 url: /pt/nodejs-cpp/parsing/
-description: Do you want to parse PDF documents? Discover various PDF data extraction methods with Aspose.PDF for Node.js via C++.
+description: Pretende analisar documentos PDF? Descubra vários métodos de extração de dados de PDF com o Aspose.PDF para Node.js via C++.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "monthly"
