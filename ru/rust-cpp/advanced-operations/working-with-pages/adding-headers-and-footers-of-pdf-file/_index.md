@@ -68,4 +68,3 @@ SoftwareApplication: rust-cpp
         Ok(())
     }
 ```
-
