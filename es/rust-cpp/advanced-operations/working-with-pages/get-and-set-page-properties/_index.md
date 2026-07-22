@@ -18,7 +18,7 @@ Aspose.PDF para Rust le permite leer y establecer propiedades de las páginas en
 
 Al trabajar con documentos, a menudo deseas saber cuántas páginas contienen. Con Aspose.PDF esto no lleva más de dos líneas de código.
 
-**Aspose.PDF for Rust via C\u002B\u002B** permite contar Pages con [page_count](https://reference.aspose.com/pdf/rust-cpp/core/page_count/) función.
+**Aspose.PDF for Rust via C++** permite contar páginas con [page_count](https://reference.aspose.com/pdf/rust-cpp/core/page_count/) función.
 
 El siguiente fragmento de código está diseñado para abrir un documento PDF, obtener su recuento de páginas y luego imprimir el resultado.
 

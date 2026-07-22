@@ -21,7 +21,7 @@ SoftwareApplication: rust-cpp
 
 Este paquete incluye un archivo grande que se almacena como un archivo bzip2.
 
-1. **Descargar** el archivo **Aspose.PDF for Rust via C\u002B\u002B** del sitio web oficial de Aspose.
+1. **Descargar** el archivo **Aspose.PDF for Rust via C++** del sitio web oficial de Aspose.
    La versión más reciente (más actual) está listada en la parte superior y se descarga por defecto cuando haces clic en el botón **Download**.
    Se recomienda usar esta última versión. Sólo descargue una versión anterior si es necesario.
    Ejemplo: `Aspose.PDF-for-Rust-via-CPP-25.6.zip`

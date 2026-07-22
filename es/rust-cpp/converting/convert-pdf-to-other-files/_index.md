@@ -23,7 +23,7 @@ EPUB está diseñado para contenido refluible, lo que significa que un lector EP
 El fragmento de código Rust proporcionado muestra cómo convertir un documento PDF a un EPUB usando la biblioteca Aspose.PDF:
 
 1. Abra un documento PDF.
-1. Convertir un archivo PDF a EPUB usando [guardar_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) función.
+1. Convertir un archivo PDF a EPUB usando [save_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) la función.
 
 ```rs
 
@@ -120,7 +120,7 @@ El tipo de archivo XPS está asociado principalmente con la XML Paper Specificat
 El fragmento de código Rust proporcionado demuestra cómo convertir un documento PDF a XPS utilizando la biblioteca Aspose.PDF:
 
 1. Abra un documento PDF.
-1. Convertir un archivo PDF a XPS usando [guardar_xps](https://reference.aspose.com/pdf/rust-cpp/convert/save_xps/) función.
+1. Convertir un archivo PDF a XPS usando [save_xps](https://reference.aspose.com/pdf/rust-cpp/convert/save_xps/) la función.
 
 ```rs
 
@@ -172,7 +172,7 @@ Este ejemplo convierte una página específica de su PDF a escala de grises:
   }
 ```
 
-## Convertir PDF a Markdawn
+## Convertir PDF a Markdown
 
 El fragmento de código Rust proporcionado demuestra cómo convertir un documento PDF en un archivo Markdown (.md) utilizando Aspose.PDF for Rust.
 

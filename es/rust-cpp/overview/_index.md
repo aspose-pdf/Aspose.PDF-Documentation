@@ -38,7 +38,7 @@ Veamos las páginas de Docs para más detalles: [Optimizar PDF](/pdf/es/rust-cpp
 
 ### Agregar, eliminar o rotar páginas
 
-El [Trabajando con páginas PDF](/pdf/es/rust-cpp/working-with-pages/) section in explica cómo puedes agregar, eliminar, rotar páginas en PDF.
+La sección [Trabajando con páginas PDF](/pdf/es/rust-cpp/working-with-pages/) explica cómo puedes agregar, eliminar y rotar páginas en un PDF.
 
 Puedes agregar, eliminar y rotar páginas PDF, obtener y establecer propiedades de página, y establecer el color de fondo, mejorando la organización y accesibilidad del documento.
 
@@ -63,9 +63,9 @@ Convertir páginas PDF a imágenes hace que el contenido sea más accesible para
 
 Puedes visitar el [Convertir formato PDF](/pdf/es/rust-cpp/conversion/) página para detalles.
 
-## función de análisis
+## Funciones de análisis
 
-[Extraer texto de PDF](/pdf/es/rust-cpp/extract-text-from-pdf/) Document con Aspose.PDF para Rust.
+[Extraer texto de PDF](/pdf/es/rust-cpp/extract-text-from-pdf/) con Aspose.PDF para Rust.
 
 ## Precios y Políticas
 

@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Guardar documento PDF con Aspose.PDF para Rust a través de C\u002B\u002B
-Abstract: Aspose.PDF para Rust a través de C\u002B\u002B ofrece una funcionalidad integral para guardar documentos PDF en varios formatos y ubicaciones con alta eficiencia y flexibilidad. La biblioteca permite a los desarrolladores guardar PDFs en sistemas de archivos y flujos de memoria, o exportarlos a formatos alternativos como DOCX, XLSX e imágenes. Proporciona opciones para personalizar los parámetros de guardado, optimizar el tamaño del archivo y garantizar la integridad de los datos. La documentación incluye instrucciones detalladas y ejemplos de código para ayudar a los desarrolladores a implementar eficientemente las capacidades de guardado de PDF en sus aplicaciones.
+AlternativeHeadline: Guardar documento PDF con Aspose.PDF para Rust a través de C++
+Abstract: Aspose.PDF para Rust a través de C++ ofrece una funcionalidad integral para guardar documentos PDF en varios formatos y ubicaciones con alta eficiencia y flexibilidad. La biblioteca permite a los desarrolladores guardar PDFs en sistemas de archivos y flujos de memoria, o exportarlos a formatos alternativos como DOCX, XLSX e imágenes. Proporciona opciones para personalizar los parámetros de guardado, optimizar el tamaño del archivo y garantizar la integridad de los datos. La documentación incluye instrucciones detalladas y ejemplos de código para ayudar a los desarrolladores a implementar eficientemente las capacidades de guardado de PDF en sus aplicaciones.
 SoftwareApplication: rust-cpp
 ---
 

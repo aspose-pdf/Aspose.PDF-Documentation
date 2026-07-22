@@ -4,7 +4,7 @@ linktitle: Agregar encabezado y pie de página al PDF
 type: docs
 weight: 90
 url: /es/rust-cpp/add-headers-and-footers-of-pdf-file/
-description:
+description: Este artículo muestra cómo agregar encabezados y pies de página de texto a documentos PDF usando Aspose.PDF for Rust via C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"

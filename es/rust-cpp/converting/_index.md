@@ -4,7 +4,7 @@ linktitle: Convertir documentos PDF
 type: docs
 weight: 50
 url: /es/rust-cpp/conversion/
-description: Esta sección contiene artículos relacionados con convertir documentos PDF a otros formatos con Aspose.PDF para Rust vía C\u002B\u002B.
+description: Esta sección contiene artículos relacionados con convertir documentos PDF a otros formatos con Aspose.PDF para Rust vía C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
@@ -16,13 +16,13 @@ SoftwareApplication: rust-cpp
 ---
 
 El PDF fue desarrollado para proporcionar un estándar para presentar documentos y otros materiales de referencia en un formato que es independiente del software de aplicación, el hardware y el sistema operativo. El contenido de los archivos PDF no se limita al texto; puede incluir hipervínculos, imágenes, botones y formularios clicables, firmas electrónicas, marcas de agua y más. Por lo tanto, a menudo es necesario convertir los archivos PDF a otro formato para editar o cambiar su contenido.
-**Nuestro Aspose.PDF for Rust via C\u002B\u002B** herramienta le permite convertir sus documentos PDF de manera exitosa, rápida y fácil a los formatos más populares. Para una lista completa de los formatos compatibles, consulte la sección [Formatos de archivo compatibles con Aspose.PDF](https://docs.aspose.com/pdf/rust-cpp/supported-file-formats/).
+**Nuestro Aspose.PDF for Rust via C++** herramienta le permite convertir sus documentos PDF de manera exitosa, rápida y fácil a los formatos más populares. Para una lista completa de los formatos compatibles, consulte la sección [Formatos de archivo compatibles con Aspose.PDF](https://docs.aspose.com/pdf/rust-cpp/supported-file-formats/).
 
-**Aspose.PDF for Rust via C\u002B\u002B** permite convertir documentos PDF a varios formatos. También, puede comprobar la calidad de la conversión de Aspose.PDF y ver los resultados en línea con la aplicación convertidora de Aspose.PDF. Aprenda las secciones de conversión de documentos con fragmentos de código.
+**Aspose.PDF for Rust via C++** permite convertir documentos PDF a varios formatos. También, puede comprobar la calidad de la conversión de Aspose.PDF y ver los resultados en línea con la aplicación convertidora de Aspose.PDF. Aprenda las secciones de conversión de documentos con fragmentos de código.
 
 ## Cómo usar Rust para la conversión
 
-Los documentos Word son los más versátiles y editables posibles. Convertir PDF a DOC manualmente es una tarea muy que consume tiempo. En este artículo, aprenderá cómo convertir PDF a DOC y DOCX en Rust.
+Los documentos Word son los más versátiles y editables posibles. Convertir PDF a DOC manualmente es una tarea que consume mucho tiempo. En este artículo, aprenderá cómo convertir PDF a DOC y DOCX en Rust.
 
 - [Convertir PDF a DOC](/pdf/es/rust-cpp/convert-pdf-to-doc/) - puedes convertir tu documento PDF al formato Word con Rust.
 

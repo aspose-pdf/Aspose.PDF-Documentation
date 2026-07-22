@@ -20,7 +20,7 @@ SoftwareApplication: rust-cpp
 En este artículo, le mostraremos las opciones para convertir PDF a formatos de imagen.
 
 Los documentos escaneados previamente a menudo se guardan en el formato de archivo PDF. Sin embargo, ¿necesita editarlos en un editor gráfico o enviarlos posteriormente en formato de imagen? Tenemos una herramienta universal para usted que convierte PDF a imágenes usando **Aspose.PDF for Rust via C++**.
-La tarea más común es cuando necesitas guardar un documento PDF completo o algunas páginas específicas de un documento como un conjunto de imágenes. **Aspose.PDF for Rust via C\u002B\u002B** te permite convertir PDF a formatos JPG y PNG para simplificar los pasos necesarios para obtener tus imágenes de un archivo PDF específico.
+La tarea más común es cuando necesitas guardar un documento PDF completo o algunas páginas específicas de un documento como un conjunto de imágenes. **Aspose.PDF for Rust via C++** te permite convertir PDF a formatos JPG y PNG para simplificar los pasos necesarios para obtener tus imágenes de un archivo PDF específico.
 
 **Aspose.PDF for Rust via C++** admite la conversión de varios formatos de PDF a imagen. Por favor, consulte la sección [Aspose.PDF Formatos de archivo compatibles](https://docs.aspose.com/pdf/rust-cpp/supported-file-formats/).
 

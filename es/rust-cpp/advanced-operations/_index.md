@@ -19,7 +19,7 @@ SoftwareApplication: rust-cpp
 
 Aprenderás diferentes formas de:
 
-- [Trabajando con Documents](/pdf/es/rust-cpp/working-with-documents/) - comprimir, dividir y combinar documentos y realizar otras operaciones con el documento completo.
+- [Trabajando con documentos](/pdf/es/rust-cpp/working-with-documents/) - comprimir, dividir y combinar documentos y realizar otras operaciones con el documento completo.
 - [Trabajando con páginas](/pdf/es/rust-cpp/working-with-pages/) - agregar, mover o eliminar, rotar páginas.
 - [Trabajando con texto](/pdf/es/rust-cpp/working-with-text/) - agregar texto en PDF usando Aspose.PDF y Rust.
 - [Seguridad y firma](/pdf/es/rust-cpp/securing-and-signing/) - proteger y firmar su documento PDF programáticamente

@@ -1,17 +1,17 @@
 ---
-title: Imposición de PDF usando Aspose.PDF for Rust via C\u002B\u002B
+title: Imposición de PDF usando Aspose.PDF for Rust via C++
 linktitle: Imposición de PDF
 type: docs
 weight: 30
 url: /es/rust-cpp/pdf-imposition/
-description: Este artículo explica cómo reorganizar páginas PDF para diseños optimizados para impresión usando Aspose.PDF for Rust via C\u002B\u002B.
+description: Este artículo explica cómo reorganizar páginas PDF para diseños optimizados para impresión usando Aspose.PDF for Rust via C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Cómo crear un folleto o N-Up de archivos PDF
-Abstract: Aspose.PDF for Rust via C\u002B\u002B proporciona herramientas potentes para reestructurar documentos PDF para cumplir con los requisitos de impresión y diseño. Este artículo demuestra cómo convertir un PDF estándar en un folleto, asegurando el orden correcto de las páginas para el plegado, y cómo crear un PDF N-Up que combina múltiples páginas en una sola hoja. Usando ejemplos concisos de código Rust, los desarrolladores pueden implementar rápidamente transformaciones de PDF listas para imprimir en flujos de trabajo de documentación, publicación y archivo.
+Abstract: Aspose.PDF for Rust via C++ proporciona herramientas potentes para reestructurar documentos PDF para cumplir con los requisitos de impresión y diseño. Este artículo demuestra cómo convertir un PDF estándar en un folleto, asegurando el orden correcto de las páginas para el plegado, y cómo crear un PDF N-Up que combina múltiples páginas en una sola hoja. Usando ejemplos concisos de código Rust, los desarrolladores pueden implementar rápidamente transformaciones de PDF listas para imprimir en flujos de trabajo de documentación, publicación y archivo.
 SoftwareApplication: rust-cpp
 ---
 
