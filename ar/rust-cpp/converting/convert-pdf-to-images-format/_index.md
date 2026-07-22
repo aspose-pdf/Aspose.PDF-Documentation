@@ -29,7 +29,7 @@ SoftwareApplication: rust-cpp
 يعرض مقتطف كود Rust المقدم كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة JPEG باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى JPEG باستخدام [صفحة_إلى_JPG](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_jpg/) دالة.
+1. تحويل صفحة إلى JPEG باستخدام [page_to_jpg](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_jpg/) دالة.
 
 ```rs
 
