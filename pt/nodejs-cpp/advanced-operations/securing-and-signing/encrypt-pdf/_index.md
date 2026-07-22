@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Criptografar arquivo PDF usando usando senha de usuário ou de proprietário
+## Criptografar arquivo PDF usando senha de usuário ou de proprietário
 
 Se você está enviando um e‑mail para alguém com um anexo PDF que contém informações confidenciais, pode desejar adicionar alguma segurança a ele primeiro para evitar que caia em mãos erradas. A melhor maneira de limitar o acesso não autorizado a um documento PDF é protegê-lo com uma senha. Para criptografar documentos de forma fácil e segura, você pode usar Aspose.PDF for Node.js via C++.
 
