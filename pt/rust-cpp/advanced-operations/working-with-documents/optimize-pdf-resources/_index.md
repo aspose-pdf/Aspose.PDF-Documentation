@@ -39,8 +39,11 @@ O seguinte trecho de código mostra como otimizar um documento PDF.
       // Open a PDF-document named "sample.pdf"
       let pdf = Document::open("sample.pdf")?;
 
+      // Optimize PDF resources
+      pdf.optimize_resource()?;
+
       // Save the previously opened PDF-document with new filename
-      pdf.save_as("sample_open.pdf")?;
+      pdf.save_as("sample_optimize_resource.pdf")?;
 
       Ok(())
   }
