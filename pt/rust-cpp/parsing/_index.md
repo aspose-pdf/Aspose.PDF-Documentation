@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Rust via C++ fornece poderosas capacidades de análise 
 SoftwareApplication: rust-cpp
 ---
 
-**Parse PDF** documentos é um termo relacionado à extração de vários tipos de informação de um arquivo PDF. Esta seção cobre como:
+**Analisar documentos PDF** é um termo relacionado à extração de vários tipos de informação de um arquivo PDF. Esta seção cobre como:
 
 - [Extrair Texto de PDF](/pdf/pt/rust-cpp/extract-text-from-pdf/). O exemplo a seguir em Rust demonstra como usar a biblioteca Aspose.PDF para extrair texto de um arquivo PDF e exibi-lo no console.
 - [Extrair Dados do AcroForm](/pdf/pt/rust-cpp/extract-data-from-acroform/). O exemplo a seguir em Rust demonstra como extrair dados de campos de formulário de arquivos PDF.
