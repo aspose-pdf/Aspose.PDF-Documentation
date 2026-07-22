@@ -4,7 +4,7 @@ linktitle: إضافة رأس وتذييل إلى PDF
 type: docs
 weight: 90
 url: /ar/rust-cpp/add-headers-and-footers-of-pdf-file/
-description:
+description: تعلم كيفية إضافة رؤوس وتذييلات إلى ملف PDF باستخدام Aspose.PDF for Rust عبر C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
