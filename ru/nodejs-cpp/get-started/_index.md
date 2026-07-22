@@ -4,7 +4,7 @@ linktitle: Начать
 type: docs
 weight: 30
 url: /ru/nodejs-cpp/get-started/
-description: В этом разделе описываются базовые принципы работы Aspose.PDF for Node.js via C\u002B\u002B. Aspose.PDF for Node.js via C\u002B\u002B поддерживает широкий набор функций.
+description: В этом разделе описываются базовые принципы работы Aspose.PDF for Node.js via C++. Aspose.PDF for Node.js via C++ поддерживает широкий набор функций.
 lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
