@@ -84,7 +84,7 @@ Por favor, verifique o trecho de código a seguir para converter no ambiente Nod
 1. Especifique o nome do arquivo PDF que será convertido.
 1. Chamada `AsposePdf` como Promise e execute a operação de conversão de arquivo. Receba o objeto caso seja bem-sucedido.
 1. Chame a função [AsposePdfToTeX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftotex/).
-1. Converter arquivo PDF. Assim, se 'json.errorCode' for 0, o resultado da opera\u00e7\u00e3o ser\u00e1 salvo em \"ResultPDFtoTeX.tex\". Se o par\u00e2metro json.errorCode n\u00e3o for 0 e, consequentemente, ocorrer um erro no seu arquivo, as informa\u00e7\u00f5es do erro estar\u00e3o contidas em 'json.errorText'.
+1. Converter arquivo PDF. Assim, se 'json.errorCode' for 0, o resultado da operação será salvo em "ResultPDFtoTeX.tex". Se o parâmetro json.errorCode não for 0 e, consequentemente, ocorrer um erro no seu arquivo, as informações do erro estarão contidas em 'json.errorText'.
 
 ```js
 
