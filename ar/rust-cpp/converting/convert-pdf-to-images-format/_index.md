@@ -89,7 +89,7 @@ SoftwareApplication: rust-cpp
 يظهر مقطع الكود Rust المقدم كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة PNG باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى PNG باستخدام [صفحة_إلى_png](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_png/) دالة.
+1. تحويل صفحة إلى PNG باستخدام [page_to_png](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_png/) دالة.
 
 ```rs
 
