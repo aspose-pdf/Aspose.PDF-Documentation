@@ -88,7 +88,7 @@ Ce package comprend des bibliothèques natives précompilées ("`.dll`, `.so`, `
     > **Note :** Pour utiliser une version de publication spécifique, vous pouvez spécifier une balise :
     >
     > ```toml
-    > asposepdf = { git = \"https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.26.1" }
+    > asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.26.1" }
     > ```
 
 2. **Construisez votre projet** (`cargo build`). Lors de la première construction, la bibliothèque dynamique appropriée pour votre plateforme sera automatiquement extraite du `.bz2` archiver dans le `lib` dossier et lié à votre projet.
