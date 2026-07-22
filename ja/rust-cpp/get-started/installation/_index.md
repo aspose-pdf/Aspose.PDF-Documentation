@@ -149,7 +149,7 @@ SoftwareApplication: rust-cpp
 
 **ASPOSE_PDF_LIB_DIR に関する注意**
 
-その `ASPOSE_PDF_LIB_DIR` environment variable はビルドスクリプトの作業ディレクトリを定義します。 この変数は **コンパイル中のみ** 使用され、ネイティブライブラリのアーカイブを検索、検証、抽出します。 この変数を設定しても、ディレクトリがシステムの実行時ライブラリ検索パスに自動的に追加されることは **ありません** (see [ランタイム構成](#runtime-configuration)).
+その `ASPOSE_PDF_LIB_DIR` environment variable はビルドスクリプトの作業ディレクトリを定義します。 この変数は **コンパイル中のみ** 使用され、ネイティブライブラリのアーカイブを検索、検証、抽出します。 この変数を設定しても、ディレクトリがシステムの実行時ライブラリ検索パスに自動的に追加されることは **ありません** (see [ランタイム構成](/pdf/ja/rust-cpp/runtime-configuration/)).
 
   - **必要なものをダウンロード** `.bz2` GitHub リポジトリのアーカイブ** とチェックサムファイル [`lib/` フォルダー](https://github.com/aspose-pdf/aspose-pdf-rust-cpp/tree/main/lib) そして **それらを** 設定されたフォルダーに入れます `ASPOSE_PDF_LIB_DIR`:
 
