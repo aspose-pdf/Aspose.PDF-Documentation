@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: C\u002B\u002B를 통한 Aspose.PDF for Rust로 PDF 문서를 저장
-Abstract: C\u002B\u002B를 통한 Aspose.PDF for Rust는 PDF 문서를 다양한 형식 및 위치에 고효율과 유연성으로 저장할 수 있는 포괄적인 기능을 제공합니다. 이 라이브러리를 사용하면 개발자가 PDF를 파일 시스템이나 메모리 스트림에 저장하거나 DOCX, XLSX, 이미지와 같은 다른 형식으로 출력할 수 있습니다. 저장 매개변수를 사용자 정의하고 파일 크기를 최적화하며 데이터 무결성을 보장하는 옵션을 제공합니다. 문서에는 자세한 설명과 코드 샘플이 포함되어 있어 개발자가 애플리케이션에 PDF 저장 기능을 효율적으로 구현할 수 있도록 돕습니다.
+AlternativeHeadline: C++를 통한 Aspose.PDF for Rust로 PDF 문서를 저장
+Abstract: C++를 통한 Aspose.PDF for Rust는 PDF 문서를 다양한 형식 및 위치에 고효율과 유연성으로 저장할 수 있는 포괄적인 기능을 제공합니다. 이 라이브러리를 사용하면 개발자가 PDF를 파일 시스템이나 메모리 스트림에 저장하거나 DOCX, XLSX, 이미지와 같은 다른 형식으로 출력할 수 있습니다. 저장 매개변수를 사용자 정의하고 파일 크기를 최적화하며 데이터 무결성을 보장하는 옵션을 제공합니다. 문서에는 자세한 설명과 코드 샘플이 포함되어 있어 개발자가 애플리케이션에 PDF 저장 기능을 효율적으로 구현할 수 있도록 돕습니다.
 SoftwareApplication: rust-cpp
 ---
 

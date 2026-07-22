@@ -60,7 +60,7 @@ SoftwareApplication: rust-cpp
 
 **노트**
 
-- 빌드 스크립트는 출력 디렉터리(예:,)에 라이브러리의 **symbolic link**를 만들려고 시도합니다 `target/debug/`).
+- 빌드 스크립트는 출력 디렉터리(예: `target/debug/`)에 라이브러리의 **symbolic link**를 만들려고 시도합니다.
 - **Linux 및 macOS**에 대해, 귀하는 또한 다음을 따라야 합니다. [런타임 구성](#runtime-configuration) 실행 파일이 런타임에 라이브러리를 찾을 수 있도록 아래 섹션을 확인하십시오.
 - 모두 `.bz2` 아카이브는 해당됩니다 `.sha256` 체크섬 파일. 체크섬이 누락되었거나 잘못된 경우, 빌드가 실패합니다.
 
@@ -88,7 +88,7 @@ SoftwareApplication: rust-cpp
     > **Note:** 특정 릴리스 버전을 사용하려면 태그를 지정할 수 있습니다:
     >
     > ```toml
-    > asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", 태그 = "v1.26.1" }
+    > asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.26.1" }
     > ```
 
 2. **프로젝트를 빌드** (`cargo build`). 첫 번째 빌드 시, 플랫폼에 적합한 동적 라이브러리가 자동으로 추출됩니다 `.bz2` 아카이브 안에 `lib` 폴더와 프로젝트에 연결되었습니다.
@@ -96,7 +96,7 @@ SoftwareApplication: rust-cpp
 **노트**
 
 - 수동으로 파일을 다운로드하거나 추출할 필요가 없습니다 - 모든 것이 GitHub 저장소에 포함되어 있습니다.
-- 빌드 스크립트는 출력 디렉터리(예:,)에 라이브러리의 **symbolic link**를 만들려고 시도합니다 `target/debug/`).
+- 빌드 스크립트는 출력 디렉터리(예: `target/debug/`)에 라이브러리의 **symbolic link**를 만들려고 시도합니다.
 - **Linux 및 macOS**에 대해, 귀하는 또한 다음을 따라야 합니다. [런타임 구성](#runtime-configuration) 실행 파일이 런타임에 라이브러리를 찾을 수 있도록 아래 섹션을 확인하십시오.
 - 모두 `.bz2` 아카이브가 일치합니다 `.sha256` checksum 파일. 체크섬은 압축을 풀기 전에 확인됩니다.
 - 체크섬 검증에 실패하거나 아카이브가 없으면, 빌드가 상세 오류와 함께 실패합니다.
@@ -180,7 +180,7 @@ SoftwareApplication: rust-cpp
 **노트**
 
 - 그 `ASPOSE_PDF_LIB_DIR` 변수는 **빌드 과정 중에만** 아카이브를 찾고 추출하는 데 사용됩니다.
-- 빌드 스크립트는 추출된 라이브러리에 대한 **심볼릭 링크**를 출력 디렉터리(예:,)} `target/debug/`).
+- 빌드 스크립트는 추출된 라이브러리에 대한 **심볼릭 링크**를 출력 디렉터리(예: `target/debug/`)에 만들려고 시도합니다.
 - 포함하는 폴더를 제공해야 합니다 `.bz2` 그리고 `.sha256` 파일을 별도로, 이러한 바이너리 아카이브는 crates.io를 통해 배포되지 않기 때문입니다.
 - 필수 아카이브가 없거나 체크섬이 실패하면, 빌드가 상세 오류와 함께 실패합니다.
 - GitHub 또는 Aspose 웹사이트를 통해 설치에 사용된 동일한 바이너리 파일을 여기에서 재사용할 수 있습니다.
