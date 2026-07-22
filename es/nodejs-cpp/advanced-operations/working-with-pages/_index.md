@@ -1,23 +1,23 @@
 ---
-title: Trabajando con Páginas PDF en Node.js
-linktitle: Trabajando con Páginas
+title: Trabajando con páginas PDF en Node.js
+linktitle: Trabajando con páginas
 type: docs
 weight: 20
 url: /es/nodejs-cpp/working-with-pages/
-description: Cómo añadir páginas, añadir encabezados y pies de página, rotar páginas puedes conocer en esta sección. Aspose.PDF para Node.js a través de C++ te explica todos los detalles sobre este tema.
-lastmod: "2023-11-16"
+description: Cómo agregar páginas, agregar encabezados y pies de página, rotar páginas que puedes conocer en esta sección. Aspose.PDF for Node.js via C++ te explica todos los detalles sobre este tema.
+lastmod: "2026-07-18"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Puedes hacer lo siguiente:
+Usted puede hacer lo siguiente:
 
-- [Eliminar Páginas](/pdf/es/nodejs-cpp/delete-pages/) - elimina páginas de tu archivo PDF en el entorno de Node.js.
-- [Rotar Páginas](/pdf/es/nodejs-cpp/rotate-pages/) - puedes cambiar la orientación de las páginas en un archivo PDF existente.
-- [Añadir Encabezados y Pies de Página](/pdf/es/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - añade texto o imágenes a los encabezados, pies de página, o ambos.
-- [Añadir Numeración de Páginas en el Archivo PDF](/pdf/es/nodejs-cpp/add-page-number/) - las funciones AsposePdfAddPageNum te ayudarán a añadir un Número de Página en tu archivo PDF.
+- [Eliminar páginas](/pdf/es/nodejs-cpp/delete-pages/) - eliminar página de tu archivo PDF en el entorno Node.js.
+- [Rotar páginas](/pdf/es/nodejs-cpp/rotate-pages/) - usted puede cambiar la orientación de página de las páginas en un archivo PDF existente.
+- [Agregar encabezados y pies de página](/pdf/es/nodejs-cpp/add-headers-and-footers-of-pdf-file/) - agregar texto o imágenes a los encabezados, pies de página o ambos.
+- [Agregar numeración de página en archivo PDF](/pdf/es/nodejs-cpp/add-page-number/) - Las funciones AsposePdfAddPageNum le ayudarán a agregar un número de página en su archivo PDF.
+- [Agregar fondo](/pdf/es/nodejs-cpp/add-background/) - Las imágenes de fondo pueden agregar una marca de agua.
+- [Estampado](/pdf/es/nodejs-cpp/stamping/) - puede usar la función AsposePdfAddStamp para agregar un sello de imagen a un archivo PDF.
+- [Establecer el color de fondo para PDF](/pdf/es/nodejs-cpp/set-background-color/) - establecer el color de fondo para su archivo PDF.
 
-- [Añadir Fondo](/pdf/es/nodejs-cpp/add-background/) - las imágenes de fondo pueden añadir una marca de agua.
-- [Stamping](/pdf/es/nodejs-cpp/stamping/) - puedes usar la función AsposePdfAddStamp para agregar un sello de imagen a un archivo PDF.
-- [Set the background color for PDF](/pdf/es/nodejs-cpp/set-background-color/) - establece el color de fondo para tu archivo PDF.

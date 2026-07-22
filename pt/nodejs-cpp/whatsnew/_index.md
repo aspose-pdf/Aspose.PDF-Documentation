@@ -1,31 +1,32 @@
 ---
-title: O que há de novo
-linktitle: O que há de novo
+title: Novidades
+linktitle: Novidades
 type: docs
 weight: 10
 url: /pt/nodejs-cpp/whatsnew/
-description: Nesta página são introduzidos os novos recursos mais populares no Aspose.PDF para Node.js via C++ que foram introduzidos em lançamentos recentes.
+description: Nesta página são apresentados os recursos novos mais populares no Aspose.PDF for Node.js via C++ que foram introduzidos nas versões recentes.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2023-11-16"
+lastmod: "2026-07-18"
 ---
 
-Estamos satisfeitos em anunciar o primeiro lançamento público do Aspose.PDF para Node.js via C++.
+Temos o prazer de anunciar a primeira versão pública do Aspose.PDF for Node.js via C++.
 
-**Aspose.PDF para Node.js via C++** permite que os desenvolvedores manipulem arquivos PDF diretamente na Web. Esta solução Node.js é construída com o uso da tecnologia WebAssembly e é baseada no Aspose.PDF para .NET. Você pode facilmente usar aspose-pdf para Node.js via C++ e depois seguir as instruções de instalação.
+**Aspose.PDF for Node.js via C++** permite que os desenvolvedores manipulem arquivos PDF diretamente na Web. Esta solução Node.js é construída com base na tecnologia WebAssembly e baseia‑se no Aspose.PDF for .NET. Você pode usar facilmente o aspose-pdf para Node.js via C++ e então seguir as instruções de instalação.
 
-Por favor, visite a [Página do Produto](https://products.aspose.com/pdf/nodejs-cpp/) para mais detalhes e tenha a chance de baixar o primeiro lançamento do [Aspose.PDF para Node.js via C++]().
+Por favor, visite a [Página do Produto](https://products.aspose.com/pdf/nodejs-cpp/) para mais detalhes e ter a chance de baixar a primeira versão do [Aspose.PDF for Node.js via C++](https://releases.aspose.com/pdf/nodejscpp/).
 
-## **Principais Funcionalidades Suportadas**
+## **Principais recursos suportados**
 
-- Definir, Obter e Remover Informações de Arquivo PDF
+- Definir, obter e remover informações de arquivo PDF
 - Excluir Marcadores
 - Excluir Anotações
-
-- Extrair texto de PDF
+- Extrair um texto de PDF
 - Otimizar documento PDF
-- Otimizar recursos
+- Otimizar recursos 
 - Dividir PDF em dois arquivos
 - Mesclar dois arquivos em PDF
 - Reparar PDF
+
+
