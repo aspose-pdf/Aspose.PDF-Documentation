@@ -27,124 +27,34 @@ SoftwareApplication: rust-cpp
 
 Aspose.PDF for Rust は PDF バージョン 1.2、1.3、1.4、1.5、1.6 および 1.7 をサポートしています。
 
-## 関数タイプ別の機能
+## 機能タイプ別の機能
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="10">
-        コア操作
-      </th>
-      <td>
-        新しい PDF。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        PDFを開く。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        PDFを保存する。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        save_as.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_insert.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_add.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ページ数。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ページ削除。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        テキスト抽出。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ライセンス設定。
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="10">
-        整理
-      </th>
-      <td>
-        最適化。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        リソースを最適化。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        グレースケール。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        回転。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        背景を設定。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        修復。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ページにテキストを追加。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ページ設定サイズ。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ページ回転。
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ページグレースケール。
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        変換と保存
-      </th>
-      <td>
-        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### コア操作
 
+- new PDF
+- open PDF
+- save PDF
+- save_as
+- page_insert
+- page_add
+- page_count
+- page_delete
+- extract_text
+- set_license
+
+### 整理
+
+- optimize
+- optimize_resource
+- grayscale
+- rotate
+- set_background
+- repair
+- page_add_text
+- page_set_size
+- page_rotate
+- page_grayscale
+
+### 変換と保存
+
+- PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

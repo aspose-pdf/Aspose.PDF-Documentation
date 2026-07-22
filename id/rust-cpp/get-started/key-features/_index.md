@@ -27,124 +27,34 @@ Mendukung pemuatan dari dan penyimpanan ke daftar luas [format file](/pdf/id/rus
 
 Aspose.PDF for Rust mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, dan 1.7.
 
-## Fitur berdasarkan tipe fungsi
+## Fitur berdasarkan jenis fungsi
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="10">
-        Operasi inti
-      </th>
-      <td>
-        PDF baru.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        buka PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        simpan PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        simpan_sebagai.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        halaman_sisip.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        halaman_tambah.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        jumlah_halaman.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        hapus_halaman.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ekstrak_teks.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        atur_izin.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="10">
-        Atur
-      </th>
-      <td>
-        optimalkan.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        optimalkan_sumber_daya.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        skala_abu_abu.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        putar.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        atur_latar_belakang.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        perbaiki.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        halaman_tambah_teks.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_set_size.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_grayscale.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Mengonversi dan Menyimpan
-      </th>
-      <td>
-        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Operasi inti
 
+- new PDF
+- open PDF
+- save PDF
+- save_as
+- page_insert
+- page_add
+- page_count
+- page_delete
+- extract_text
+- set_license
+
+### Mengatur
+
+- optimize
+- optimize_resource
+- grayscale
+- rotate
+- set_background
+- repair
+- page_add_text
+- page_set_size
+- page_rotate
+- page_grayscale
+
+### Mengonversi dan Menyimpan
+
+- PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

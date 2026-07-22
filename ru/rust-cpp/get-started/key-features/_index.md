@@ -27,124 +27,34 @@ SoftwareApplication: rust-cpp
 
 Aspose.PDF for Rust поддерживает версии PDF 1.2, 1.3, 1.4, 1.5, 1.6 и 1.7.
 
-## Функциональные возможности по типу функции
+## Функции по типу
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="10">
-        Основная операция
-      </th>
-      <td>
-        новый PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        открыть PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        сохранить PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        save_as.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_insert.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_add.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        количество_страниц.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        удалить_страницу.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        извлечь_текст.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        установить_лицензию.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="10">
-        Организовать
-      </th>
-      <td>
-        оптимизировать.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        оптимизировать_ресурс.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        градация_серого.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        вращать.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        установить_фон.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        восстановить.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        страница_добавить_текст.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_set_size.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_grayscale.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Конвертирование и сохранение
-      </th>
-      <td>
-        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Основные операции
 
+- new PDF
+- open PDF
+- save PDF
+- save_as
+- page_insert
+- page_add
+- page_count
+- page_delete
+- extract_text
+- set_license
+
+### Организация
+
+- optimize
+- optimize_resource
+- grayscale
+- rotate
+- set_background
+- repair
+- page_add_text
+- page_set_size
+- page_rotate
+- page_grayscale
+
+### Преобразование и сохранение
+
+- PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

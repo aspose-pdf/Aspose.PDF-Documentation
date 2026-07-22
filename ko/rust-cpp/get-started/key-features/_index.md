@@ -27,124 +27,34 @@ SoftwareApplication: rust-cpp
 
 Aspose.PDF for Rust는 PDF 버전 1.2, 1.3, 1.4, 1.5, 1.6 및 1.7을 지원합니다.
 
-## 기능 유형별
+## 기능 유형별 특징
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="10">
-        핵심 작업
-      </th>
-      <td>
-        새 PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        PDF 열기.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        PDF 저장.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        다른 이름으로 저장.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        페이지 삽입.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        페이지 추가.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_count.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_delete.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        extract_text.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        set_license.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="10">
-        정리
-      </th>
-      <td>
-        최적화.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        리소스 최적화.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        그레이스케일.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        회전.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        배경 설정.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        복구.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_add_text.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_set_size.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_grayscale.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        변환 및 저장
-      </th>
-      <td>
-        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### 핵심 작업
 
+- new PDF
+- open PDF
+- save PDF
+- save_as
+- page_insert
+- page_add
+- page_count
+- page_delete
+- extract_text
+- set_license
+
+### 정리
+
+- optimize
+- optimize_resource
+- grayscale
+- rotate
+- set_background
+- repair
+- page_add_text
+- page_set_size
+- page_rotate
+- page_grayscale
+
+### 변환 및 저장
+
+- PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

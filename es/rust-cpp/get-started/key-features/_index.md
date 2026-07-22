@@ -27,124 +27,34 @@ Admite la carga y el guardado de una amplia lista de [formatos de archivo](/pdf/
 
 Aspose.PDF for Rust admite versiones PDF 1.2, 1.3, 1.4, 1.5, 1.6 y 1.7.
 
-## Características por tipo de función
+## Funcionalidades por tipo de función
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="10">
-        Operación principal
-      </th>
-      <td>
-        nuevo PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        abrir PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        guardar PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        save_as.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_insert.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_add.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_count.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_delete.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        extract_text.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        set_license.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="10">
-        Organize
-      </th>
-      <td>
-        optimize.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        optimize_resource.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_grayscale.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        set_background.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        reparar.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        pagina_agregar_texto.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        página_establecer_tamaño.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        página_rotar.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        página_escala_de_grises.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Convertir y guardar
-      </th>
-      <td>
-        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Operaciones principales
 
+- new PDF
+- open PDF
+- save PDF
+- save_as
+- page_insert
+- page_add
+- page_count
+- page_delete
+- extract_text
+- set_license
+
+### Organizar
+
+- optimize
+- optimize_resource
+- grayscale
+- rotate
+- set_background
+- repair
+- page_add_text
+- page_set_size
+- page_rotate
+- page_grayscale
+
+### Convertir y guardar
+
+- PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT
