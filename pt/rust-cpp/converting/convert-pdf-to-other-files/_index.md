@@ -172,7 +172,7 @@ Este exemplo converte uma página específica do seu PDF para escala de cinza:
   }
 ```
 
-## Converter PDF para Markdawn
+## Converter PDF para Markdown
 
 O trecho de código Rust fornecido demonstra como converter um documento PDF em um arquivo Markdown (.md) usando Aspose.PDF for Rust.
 
