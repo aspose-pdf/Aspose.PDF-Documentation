@@ -116,7 +116,7 @@ Skrip build akan menemukan, memverifikasi, dan mengekstrak pustaka native yang s
      cargo add asposepdf
      ```
 
-   - **Pengeditan manual** `Cargo.toml`:**
+   - **Pengeditan manual `Cargo.toml`:**
 
      Buka proyek Anda `Cargo.toml` dan tambahkan yang berikut di bawah `[dependencies]`:
 
