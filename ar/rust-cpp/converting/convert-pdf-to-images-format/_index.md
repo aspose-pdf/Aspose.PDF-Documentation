@@ -197,7 +197,7 @@ SoftwareApplication: rust-cpp
 المقتطف البرمجي Rust المقدم يوضح كيفية تحويل الصفحة الأولى من مستند PDF إلى صورة BMP باستخدام مكتبة Aspose.PDF:
 
 1. افتح مستند PDF.
-1. تحويل صفحة إلى BMP باستخدام [صفحة_إلى_bmp](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_bmp/) دالة.
+1. تحويل صفحة إلى BMP باستخدام [page_to_bmp](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_bmp/) دالة.
 
 ```rs
 
