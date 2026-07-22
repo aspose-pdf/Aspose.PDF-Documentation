@@ -76,7 +76,7 @@ Paket ini mencakup pustaka native yang telah dikompilasi sebelumnya (`.dll`, `.s
      cargo add asposepdf --git https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git
      ```
 
-   - **Pengeditan manual** `Cargo.toml`:**
+   - **Pengeditan manual `Cargo.toml`:**
 
      Buka proyek Anda `Cargo.toml` dan tambahkan yang berikut di bawah `[dependencies]`:
 
