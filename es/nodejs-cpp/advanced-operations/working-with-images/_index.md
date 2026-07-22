@@ -12,7 +12,7 @@ sitemap:
 ---
 
 
-Utilice el **Aspose.PDF for Node.js via C\u002B\u002B** para trabajar con imágenes en documentos PDF. Es posible agregar y eliminar imágenes en su archivo PDF en el entorno Node.js.
+Utilice el **Aspose.PDF for Node.js via C++** para trabajar con imágenes en documentos PDF. Es posible agregar y eliminar imágenes en su archivo PDF en el entorno Node.js.
 
 Usted puede hacer lo siguiente:
 
