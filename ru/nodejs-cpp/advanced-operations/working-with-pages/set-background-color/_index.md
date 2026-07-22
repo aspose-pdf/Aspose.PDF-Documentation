@@ -17,9 +17,9 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF-файла, цвет фона которого вы хотите задать.
-1. Вызов `AsposePdf` как Promise и выполнить операцию установки цвета фона. Получить объект в случае успеха.
+1. Вызовите `AsposePdf` как Promise и выполните операцию установки цвета фона. Получите объект в случае успеха.
 1. Вызовите функцию [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
 1. Установите цвет фона для PDF-файла. Вам необходимо передать 3 аргумента в эту функцию: имя входного файла, желаемый цвет в шестнадцатеричном виде и имя выходного файла. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultRotation.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
@@ -36,7 +36,7 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF-файла, цвет фона которого вы хотите задать.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 

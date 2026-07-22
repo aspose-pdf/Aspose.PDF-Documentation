@@ -17,9 +17,9 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, в который будет добавлено фоновое изображение.
-1. Вызов `AsposePdf` в виде Promise и выполните операцию по добавлению фонового изображения. Получите объект при успешном выполнении.
+1. Вызовите `AsposePdf` как Promise и выполните операцию по добавлению фонового изображения. Получите объект при успешном выполнении.
 1. Вызовите функцию [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddbackgroundimage/).
 1. Добавьте фоновое изображение в PDF‑файл. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в “ResultAddBackgroundImage.pdf”. Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
 
@@ -37,7 +37,7 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, в который будет добавлено фоновое изображение.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfAddBackgroundImage](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddbackgroundimage/).

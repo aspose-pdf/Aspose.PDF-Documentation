@@ -11,18 +11,18 @@ sitemap:
     priority: 0.7
 ---
 
-## Удалить конкретную закладку из PDF‑документа
+## Удалите конкретную закладку из PDF‑документа
 
 Вы можете удалить закладки из PDF‑файла, используя Aspose.PDF for Node.js via C++. Если вы хотите удалить закладки из PDF, вы можете использовать [AsposePdfDeleteBookmarks](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletebookmarks/) функция. 
 Пожалуйста, проверьте следующий фрагмент кода, чтобы удалить закладки из PDF‑файла в среде Node.js.
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, из которого будут удалены закладки.
-1. Вызов `AsposePdf` в виде Promise и выполнить операцию по удалению закладки. Получить объект при успешном выполнении.
+1. Вызовите `AsposePdf` как Promise и выполните операцию по удалению закладки. Получите объект при успешном выполнении.
 1. Вызовите функцию [AsposePdfDeleteBookmarks](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletebookmarks/).
-1. Удалить закладки. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в «ResultPdfDeleteBookmarks.pdf». Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
+1. Удалите закладки. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в «ResultPdfDeleteBookmarks.pdf». Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
 
 ```js
 
@@ -37,11 +37,11 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, из которого будут удалены закладки.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfDeleteBookmarks](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeletebookmarks/).
-1. Удалить закладки. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в «ResultPdfDeleteBookmarks.pdf». Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
+1. Удалите закладки. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в «ResultPdfDeleteBookmarks.pdf». Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
 
 ```js
 

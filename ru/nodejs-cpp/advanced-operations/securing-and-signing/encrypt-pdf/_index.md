@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Зашифровать PDF-файл, используя пользовательский или владельческий пароль
+## Зашифруйте PDF-файл, используя пользовательский или владельческий пароль
 
 Если вы отправляете по электронной почте кому‑то PDF‑вложение, содержащее конфиденциальную информацию, вы можете захотеть сначала добавить к нему защиту, чтобы не допустить попадания в неправильные руки. Лучший способ ограничить неавторизованный доступ к PDF‑документу — защитить его паролем. Чтобы легко и безопасно шифровать документы, вы можете использовать Aspose.PDF for Node.js via C++.
 
@@ -25,10 +25,10 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, который будет зашифрован.
-1. Вызов `AsposePdf` в виде Promise и выполнить операцию шифрования файла. Получить объект, если успешно.
-1. Вызовите the [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/) функция. 
+1. Вызовите `AsposePdf` как Promise и выполните операцию шифрования файла. Получите объект, если успешно.
+1. Вызовите функцию [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/). 
 1. Зашифруйте PDF‑файл с паролями "user" и "owner".
 1. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultEncrypt.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
@@ -63,11 +63,11 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, который будет изменять зашифрованный.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
-1. Вызовите the [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/) функция. 
-1. Расшифровать PDF‑файл с паролями "user" и "owner".
+1. Вызовите функцию [AsposePdfEncrypt](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfencrypt/). 
+1. Зашифруйте PDF‑файл с паролями "user" и "owner".
 1. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultEncrypt.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
 ```js

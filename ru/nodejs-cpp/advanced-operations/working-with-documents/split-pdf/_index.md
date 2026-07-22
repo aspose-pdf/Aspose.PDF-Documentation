@@ -11,16 +11,16 @@ sitemap:
     priority: 0.7
 ---
 
-## Разделить PDF на два файла с использованием Node.js
+## Разделите PDF на два файла с использованием Node.js
 
 Если вы хотите разделить один PDF на части, вы можете использовать [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/) функция. 
 Пожалуйста, проверьте следующий фрагмент кода, чтобы разделить два PDF в среде Node.js.
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файлов, которые будут разделены.
-1. Вызов `AsposePdf` в виде Promise и выполнить операцию разделения файла. Получить объект, если успешно.
+1. Вызовите `AsposePdf` как Promise и выполните операцию разделения файла. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/).
 1. Разделите два PDF‑файла. Задается переменная pageToSplit со значением 1, указывая, что PDF‑файл будет разделён на странице 1. 
 1. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в «ResultSplit1.pdf» и «ResultSplit2.pdf». Если параметр json.errorCode не равен 0 и соответственно в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
@@ -40,7 +40,7 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файлов, которые будут разделены.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfSplit2Files](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsplit2files/).

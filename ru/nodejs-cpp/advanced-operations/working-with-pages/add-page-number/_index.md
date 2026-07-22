@@ -17,9 +17,9 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, в который будут добавлены номера страниц.
-1. Вызов `AsposePdf` как Promise и выполнить операцию добавления номеров страниц. Получить объект при успехе.
+1. Вызовите `AsposePdf` как Promise и выполните операцию добавления номеров страниц. Получите объект при успехе.
 1. Вызовите функцию [AsposePdfAddPageNum](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddpagenum/).
 1. Добавьте номер страницы в PDF‑файл. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultAddPageNum.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
@@ -36,7 +36,7 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, в который будут добавлены номера страниц.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfAddPageNum](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddpagenum/).

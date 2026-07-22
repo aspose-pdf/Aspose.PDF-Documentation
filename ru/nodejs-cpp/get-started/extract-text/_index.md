@@ -21,9 +21,9 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, из которого будет извлечён текст.
-1. Вызов `AsposePdf` как Promise и выполнить операцию по извлечению текста. Получить объект в случае успеха.
+1. Вызовите `AsposePdf` как Promise и выполните операцию по извлечению текста. Получите объект в случае успеха.
 1. Вызовите функцию [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
 1. Извлечённый текст сохраняется в JSON‑объекте. Таким образом, если 'json.errorCode' равен 0, извлечённый текст выводится с помощью console.log. Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
@@ -40,7 +40,7 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, из которого будет извлечён текст.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).

@@ -13,18 +13,18 @@ sitemap:
 
 ## Извлекать таблицы при конвертации PDF в CSV файлы
 
-### Конвертировать PDF в CSV
+### Конвертируйте PDF в CSV
 
 Если в PDF есть таблицы, они сохраняются в отдельные CSV файлы. В случае, если вы хотите конвертировать документ PDF, вы можете использовать [AsposePdfTablesToCSV](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftablestocsv/) функция. 
 Пожалуйста, проверьте следующий фрагмент кода, чтобы конвертировать PDF-файл в среде Node.js.
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, который будет конвертирован.
-1. Вызов `AsposePdf` в виде Promise и выполнить операцию по конвертации файла. Получить объект при успешном выполнении.
+1. Вызовите `AsposePdf` как Promise и выполните операцию конвертации файла. Получите объект при успешном выполнении.
 1. Вызовите функцию [AsposePdfTablesToCSV](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftablestocsv/).
-1. Преобразовать PDF‑файл. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultPDFtoXlsX.xlsx". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
+1. Преобразуйте PDF‑файл. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultPDFtoXlsX.xlsx". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
 ```js
 
@@ -39,11 +39,11 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, который будет конвертирован.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfTablesToCSV](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftablestocsv/).
-1. Преобразовать PDF‑файл. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultPDFtoXlsX.xlsx". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
+1. Преобразуйте PDF‑файл. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultPDFtoXlsX.xlsx". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
 ```js
 

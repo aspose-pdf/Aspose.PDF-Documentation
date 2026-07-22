@@ -19,9 +19,9 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, в который будет добавлен заголовок и нижний колонтитул.
-1. Вызов `AsposePdf` как Promise и выполнить операцию по добавлению заголовка и нижнего колонтитула. Получить объект при успешном выполнении.
+1. Вызовите `AsposePdf` как Promise и выполните операцию по добавлению заголовка и нижнего колонтитула. Получите объект при успешном выполнении.
 1. Вызовите функцию [AsposePdfAddTextHeaderFooter](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddtextheaderfooter/).
 1. Добавьте текст в заголовок и нижний колонтитул PDF‑файла. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в “ResultAddHeaderFooter.pdf”. Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
 
@@ -38,7 +38,7 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, в который будет добавлен заголовок и нижний колонтитул.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfAddTextHeaderFooter](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfaddtextheaderfooter/).

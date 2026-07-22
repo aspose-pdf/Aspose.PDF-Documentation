@@ -16,9 +16,9 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, из которого будут удалены вложения.
-1. Вызов `AsposePdf` в виде Promise и выполнить операцию по удалению вложений. Получить объект при успешном выполнении.
+1. Вызовите `AsposePdf` как Promise и выполните операцию по удалению вложений. Получите объект при успешном выполнении.
 1. Вызовите функцию [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/).
 1. Удалите вложения. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в «ResultPdfDeleteAttachments.pdf». Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
 
@@ -35,7 +35,7 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, из которого будут удалены вложения.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteattachments/).

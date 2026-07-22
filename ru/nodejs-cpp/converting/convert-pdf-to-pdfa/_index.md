@@ -22,16 +22,16 @@ Aspose.PDF for Node.js представляет вам онлайн беспла
 {{% /alert %}}
 
 
-## Конвертировать PDF в формат PDF/A
+## Конвертируйте PDF в формат PDF/A
 
 Если вы хотите конвертировать PDF-документ, вы можете использовать [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/) функция. 
 Пожалуйста, проверьте следующий фрагмент кода, чтобы выполнить конвертацию в среде Node.js.
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, который будет конвертирован.
-1. Вызов `AsposePdf` в виде Promise и выполнить операцию по конвертации файла. Получить объект при успешном выполнении.
+1. Вызовите `AsposePdf` как Promise и выполните операцию конвертации файла. Получите объект при успешном выполнении.
 1. Вызовите функцию [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/).
 1. Восстановите PDF‑файл. Таким образом, если 'json.errorCode' равен 0, результат операции сохраняется в "ResultConvertToPDFA.pdf". Во время процесса конвертации выполняется проверка, и результаты проверки сохраняются как "ResultConvertToPDFALog.xml". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
@@ -49,7 +49,7 @@ Aspose.PDF for Node.js представляет вам онлайн беспла
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, который будет конвертирован.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfConvertToPDFA](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfconverttopdfa/).

@@ -19,9 +19,9 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF-файла, из которого будет извлечено изображение.
-1. Вызов `AsposePdf` как Promise и выполните операцию по извлечению изображения. Получите объект, если успешно.
+1. Вызовите `AsposePdf` как Promise и выполните операцию по извлечению изображения. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/).
 1. Извлеките изображения из PDF-файла. Таким образом, если ‘json.errorCode’ равен 0, результат операции сохраняется в “ResultPdfExtractImage{0:D2}.jpg”. Где {0:D2} представляет номер страницы в двухциферном формате. Изображения сохраняются с разрешением 150 DPI. Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
 
@@ -38,7 +38,7 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF-файла, из которого будет извлечено изображение.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfExtractImage](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextractimage/).

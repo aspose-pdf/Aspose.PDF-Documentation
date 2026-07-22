@@ -25,11 +25,11 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, ресурсы которого будут оптимизированы.
-1. Вызов `AsposePdf` как Promise и выполнить операцию по оптимизации файла. Получить объект при успехе.
+1. Вызовите `AsposePdf` как Promise и выполните операцию по оптимизации файла. Получите объект при успехе.
 1. Вызовите функцию [AsposePdfOptimizeResource](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimizeresource/).
-1. Оптимизировать ресурсы PDF. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultPdfOptimizeResource.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
+1. Оптимизируйте ресурсы PDF. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultPdfOptimizeResource.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
 ```js
 
@@ -44,11 +44,11 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, ресурсы которого будут оптимизированы.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfOptimizeResource](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimizeresource/).
-1. Оптимизировать ресурсы PDF. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultPdfOptimizeResource.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
+1. Оптимизируйте ресурсы PDF. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultPdfOptimizeResource.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
 ```js
 

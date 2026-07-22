@@ -16,9 +16,9 @@ lastmod: "2026-07-18"
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, из которого будет удалено изображение.
-1. Вызов `AsposePdf` в виде Promise и выполнить операцию по удалению изображений. Получить объект при успешном выполнении.
+1. Вызовите `AsposePdf` как Promise и выполните операцию по удалению изображений. Получите объект при успешном выполнении.
 1. Вызовите функцию [AsposePdfDeleteImages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteimages/).
 1. Удалите изображения из PDF. Таким образом, если ‘json.errorCode’ равно 0, результат операции сохраняется в “ResultPdfDeleteImages.pdf”. Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в ‘json.errorText’.
 
@@ -35,7 +35,7 @@ lastmod: "2026-07-18"
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла, из которого будет удалено изображение.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
 1. Вызовите функцию [AsposePdfDeleteImages](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfdeleteimages/).

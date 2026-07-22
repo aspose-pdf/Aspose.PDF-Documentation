@@ -37,10 +37,10 @@ sitemap:
 
 **CommonJS:**
 
-1. Вызов `require` и импортировать `asposepdfnodejs` модуль как `AsposePdf` переменная.
+1. Вызовите `require` и импортируйте модуль `asposepdfnodejs` как переменную `AsposePdf`.
 1. Укажите имя PDF‑файла, который нужно подписать, файл ключа PKCS7 и файл изображения внешнего вида подписи. Сертификат и изображение могут находиться в любом месте файловой системы, откуда вы их загружаете для подписания PDF.
-1. Вызов `AsposePdf` как Promise и выполнить операцию подписи файла. Получить объект в случае успеха.
-1. Вызовите the [AsposePdfSignPKS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) функция. 
+1. Вызовите `AsposePdf` как Promise и выполните операцию подписи файла. Получите объект в случае успеха.
+1. Вызовите функцию [AsposePdfSignPKS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/). 
 1. Подпишите PDF‑файл цифровыми подписями. Параметры, связанные с подписью (например, файл ключа, пароль, координаты, причина, контакт, местоположение и т.д.). 
 1. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultSignPKCS7.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
@@ -61,10 +61,10 @@ sitemap:
 
 **ECMAScript/ES6:**
 
-1. Импортировать `asposepdfnodejs` модуль.
+1. Импортируйте модуль `asposepdfnodejs`.
 1. Укажите имя PDF‑файла для подписи, файл ключа PKCS7 и файл изображения внешнего вида подписи.
 1. Инициализируйте модуль AsposePdf. Получите объект, если успешно.
-1. Вызовите the [AsposePdfSignPKS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/) функция. 
+1. Вызовите функцию [AsposePdfSignPKS7](https://reference.aspose.com/pdf/nodejs-cpp/security/asposepdfsignpkcs7/). 
 1. Подпишите PDF‑файл цифровыми подписями. Параметры, связанные с подписью (например, файл ключа, пароль, координаты, причина, контакт, местоположение и т.д.). 
 1. Таким образом, если 'json.errorCode' равно 0, результат операции сохраняется в "ResultSignPKCS7.pdf". Если параметр json.errorCode не равен 0 и, соответственно, в вашем файле появляется ошибка, информация об ошибке будет содержаться в 'json.errorText'.
 
