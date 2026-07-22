@@ -16,7 +16,7 @@ sitemap:
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в PDF/A онлайн**
 
-Aspose.PDF for Node.js представляет вам онлайн бесплатное приложение [\u0022PDF в PDF/A-1A\u0022](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), где вы можете попробовать исследовать функциональность и качество его работы.
+Aspose.PDF for Node.js представляет вам онлайн бесплатное приложение ["PDF в PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), где вы можете попробовать исследовать функциональность и качество его работы.
 
 [![Aspose.PDF Конвертация PDF в PDF/A с помощью бесплатного приложения](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
