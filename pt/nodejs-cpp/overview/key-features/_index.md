@@ -68,7 +68,7 @@ Aspose.PDF for Node.js suporta versões de PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
 - Conversão de PDF para SVG
 - Conversão de PDF para SVG(Zip)
 
-## Page
+## Página
 
 - Mesclar páginas PDF
 - Dividir páginas PDF 
