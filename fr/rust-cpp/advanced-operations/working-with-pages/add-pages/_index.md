@@ -25,7 +25,7 @@ L'extrait de code Rust fourni montre comment exécuter l'opération Add Page à 
 
 Cet extrait est un exemple concis et efficace de la façon d'utiliser la bibliothèque Aspose.PDF Rust pour des tâches de manipulation de PDF de base.
 
-Aspose.PDF for Rust vous permet d'insérer une page dans un document PDF à n\'importe quel emplacement du fichier ainsi que d\'ajouter des pages à la fin d\'un fichier PDF.
+Aspose.PDF for Rust vous permet d'insérer une page dans un document PDF à n’importe quel emplacement du fichier ainsi que d'ajouter des pages à la fin d'un fichier PDF.
 
 ```rs
 
