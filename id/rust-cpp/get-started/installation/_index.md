@@ -48,7 +48,7 @@ Paket ini menyertakan file besar yang disimpan sebagai arsip bzip2.
      cargo add asposepdf --path {path}/asposepdf
      ```
 
-   - **Pengeditan manual** `Cargo.toml`:**
+   - **Pengeditan manual `Cargo.toml`:**
      Buka proyek Anda `Cargo.toml` dan tambahkan yang berikut di bawah `[dependencies]`:
 
      ```toml
