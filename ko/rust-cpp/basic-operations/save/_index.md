@@ -4,7 +4,7 @@ linktitle: PDF 저장
 type: docs
 weight: 30
 url: /ko/rust-cpp/save-pdf-document/
-description: C\u002B\u002B를 통한 Aspose.PDF for Rust로 PDF 파일을 저장하는 방법을 알아보세요.
+description: C++를 통한 Aspose.PDF for Rust로 PDF 파일을 저장하는 방법을 알아보세요.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
