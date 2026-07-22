@@ -76,7 +76,7 @@ Ce package comprend des bibliothèques natives précompilées ("`.dll`, `.so`, `
      cargo add asposepdf --git https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git
      ```
 
-   - **Modification manuelle** `Cargo.toml`:**
+   - **Modification manuelle de `Cargo.toml` :**
 
      Ouvrez le projet de votre `Cargo.toml` et ajoutez ce qui suit sous `[dependencies]`:
 
