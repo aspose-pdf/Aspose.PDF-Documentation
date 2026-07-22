@@ -20,8 +20,8 @@ SoftwareApplication: rust-cpp
 ページを回転させることで、プロフェッショナルな環境でのPDFの印刷や表示時に適切な配置が保証されます
 
 1. PDFドキュメントを開きます。
-1. PDFページを回転させます。The [回転](https://reference.aspose.com/pdf/rust-cpp/organize/rotate/) 関数は特定の回転（この場合、180度）を指定されたページに適用します。
-1. 変更を新しいファイルに保存します。The [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) この関数は、元の PDF を保持しながら更新されたバージョンを保存するために、新しい PDF ファイルを作成します。
+1. PDFページを回転させます。[rotate](https://reference.aspose.com/pdf/rust-cpp/organize/rotate/) 関数は特定の回転（この場合、270度）を指定されたページに適用します。
+1. 変更を新しいファイルに保存します。[save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) 関数は、元の PDF を保持しながら更新されたバージョンを保存するために、新しい PDF ファイルを作成します。
 
 この例では、PDF ドキュメントの特定のページを回転させます。
 
