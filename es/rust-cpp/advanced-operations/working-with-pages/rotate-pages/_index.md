@@ -19,7 +19,7 @@ Esta sección describe cómo cambiar la orientación de la página de apaisado a
 
 Rotar páginas garantiza una alineación adecuada para imprimir o mostrar PDFs en entornos profesionales
 
-1. Abrir el Document PDF.
+1. Abra el documento PDF.
 1. Rotar páginas PDF. El [rotar](https://reference.aspose.com/pdf/rust-cpp/organize/rotate/) la función aplica una rotación específica (en este caso, 180 grados) a una página dada.
 1. Guardar cambios en un archivo nuevo. El [guardar_como](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) La función crea un nuevo archivo PDF para preservar el original mientras guarda la versión actualizada.
 
