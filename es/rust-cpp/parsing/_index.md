@@ -4,7 +4,7 @@ linktitle: Analizar documentos PDF
 type: docs
 weight: 65
 url: /es/rust-cpp/parsing/
-description: ¿Quieres analizar documentos PDF? Descubre varios métodos de extracción de datos PDF con Aspose.PDF for Rust via C\u002B\u002B.
+description: ¿Quieres analizar documentos PDF? Descubre varios métodos de extracción de datos PDF con Aspose.PDF for Rust via C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
