@@ -65,7 +65,7 @@ Você pode visitar o [Converter formato PDF](/pdf/pt/rust-cpp/conversion/) pági
 
 ## Recurso de análise
 
-[Extrair texto do PDF](/pdf/pt/rust-cpp/extract-text-from-pdf/) Document com Aspose.PDF para Rust.
+[Extrair texto do PDF](/pdf/pt/rust-cpp/extract-text-from-pdf/) Documento com Aspose.PDF para Rust.
 
 ## Preços e Políticas
 
