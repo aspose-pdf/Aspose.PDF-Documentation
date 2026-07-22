@@ -4,7 +4,7 @@ linktitle: 런타임 구성
 type: docs
 weight: 100
 url: /ko/rust-cpp/runtime-configuration/
-description: Rust 애플리케이션이 네이티브 동적 라이브러리(예: Aspose.PDF)에 의존하는 경우, Linux 및 macOS 시스템에서 제대로 작동하려면 올바른 런타임 경로 구성이 필요합니다.
+description: "Rust 애플리케이션이 네이티브 동적 라이브러리(예: Aspose.PDF)에 의존하는 경우, Linux 및 macOS 시스템에서 제대로 작동하려면 올바른 런타임 경로 구성이 필요합니다."
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"

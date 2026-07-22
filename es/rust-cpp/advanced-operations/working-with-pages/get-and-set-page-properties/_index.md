@@ -2,6 +2,7 @@
 title: Obtener y establecer propiedades de página
 linktitle: Obtener y establecer propiedades de página
 type: docs
+weight: 70
 url: /es/rust-cpp/get-and-set-page-properties/
 description: Aprenda cómo obtener y establecer propiedades de página para documentos PDF usando Aspose.PDF para Rust, lo que permite una personalización del formato del documento.
 lastmod: "2026-07-20"

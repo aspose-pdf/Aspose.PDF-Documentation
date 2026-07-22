@@ -2,6 +2,7 @@
 title: 获取和设置页面属性
 linktitle: 获取和设置页面属性
 type: docs
+weight: 70
 url: /zh/rust-cpp/get-and-set-page-properties/
 description: 了解如何使用 Aspose.PDF for Rust 获取和设置 PDF 文档的页面属性，从而实现自定义文档格式化。
 lastmod: "2026-07-20"

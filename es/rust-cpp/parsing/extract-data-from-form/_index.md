@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Cómo extraer datos de AcroForm vía Rust
-Abstract: Este artículo explica cómo extraer datos AcroForm de archivos PDF usando Aspose.PDF para Rust vía C++ y exportarlos a formatos de intercambio de datos ampliamente utilizados: XML, FDF y XFDF. Demuestra cómo abrir un documento PDF que contiene campos de formulario interactivos y exportar programáticamente los nombres y valores de los campos de formulario para reutilizarlos fuera del PDF original. Al proporcionar ejemplos prácticos en Rust para cada formato de exportación, el artículo destaca flujos de trabajo comunes, incluyendo procesamiento de datos, envío de formularios, integración de sistemas y almacenamiento de datos a largo plazo, ayudando a los desarrolladores a gestionar y reutilizar eficientemente los datos de formularios PDF en sus aplicaciones.
+Abstract: "Este artículo explica cómo extraer datos AcroForm de archivos PDF usando Aspose.PDF para Rust vía C++ y exportarlos a formatos de intercambio de datos ampliamente utilizados: XML, FDF y XFDF. Demuestra cómo abrir un documento PDF que contiene campos de formulario interactivos y exportar programáticamente los nombres y valores de los campos de formulario para reutilizarlos fuera del PDF original. Al proporcionar ejemplos prácticos en Rust para cada formato de exportación, el artículo destaca flujos de trabajo comunes, incluyendo procesamiento de datos, envío de formularios, integración de sistemas y almacenamiento de datos a largo plazo, ayudando a los desarrolladores a gestionar y reutilizar eficientemente los datos de formularios PDF en sus aplicaciones."
 ---
 
 ## Exportar datos a XML desde un archivo PDF

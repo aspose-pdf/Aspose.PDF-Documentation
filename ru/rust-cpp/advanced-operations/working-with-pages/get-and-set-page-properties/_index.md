@@ -2,6 +2,7 @@
 title: Получить и установить свойства страниц
 linktitle: Получить и установить свойства страниц
 type: docs
+weight: 70
 url: /ru/rust-cpp/get-and-set-page-properties/
 description: Узнайте, как получить и установить свойства страниц PDF‑документов с помощью Aspose.PDF for Rust, позволяя настраивать форматирование документа.
 lastmod: "2026-07-20"

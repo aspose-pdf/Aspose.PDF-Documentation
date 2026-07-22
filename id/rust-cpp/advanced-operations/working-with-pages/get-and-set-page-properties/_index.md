@@ -2,6 +2,7 @@
 title: Dapatkan dan Atur Properti Halaman
 linktitle: Dapatkan dan Atur Properti Halaman
 type: docs
+weight: 70
 url: /id/rust-cpp/get-and-set-page-properties/
 description: Pelajari cara mendapatkan dan mengatur properti halaman untuk dokumen PDF menggunakan Aspose.PDF for Rust, memungkinkan format dokumen yang disesuaikan.
 lastmod: "2026-07-20"

@@ -2,6 +2,7 @@
 title: 페이지 속성 가져오기 및 설정
 linktitle: 페이지 속성 가져오기 및 설정
 type: docs
+weight: 70
 url: /ko/rust-cpp/get-and-set-page-properties/
 description: Aspose.PDF for Rust를 사용하여 PDF 문서의 페이지 속성을 가져오고 설정하는 방법을 배워 맞춤형 문서 형식을 구현할 수 있습니다.
 lastmod: "2026-07-20"

@@ -2,6 +2,7 @@
 title: ページ プロパティの取得と設定
 linktitle: ページ プロパティの取得と設定
 type: docs
+weight: 70
 url: /ja/rust-cpp/get-and-set-page-properties/
 description: Aspose.PDF for Rust を使用して PDF ドキュメントのページ プロパティを取得および設定する方法を学び、ドキュメントの書式設定をカスタマイズできるようにします。
 lastmod: "2026-07-20"
