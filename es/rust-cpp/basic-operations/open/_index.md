@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Abrir documento PDF con Aspose.PDF for Rust via C\u002B\u002B
-Abstract: Aspose.PDF for Rust via C\u002B\u002B proporciona una funcionalidad poderosa para abrir y cargar documentos PDF de forma programática, permitiendo a los desarrolladores acceder y manipular el contenido PDF con facilidad. La biblioteca admite la apertura de archivos PDF desde diversas fuentes, como rutas de archivo y flujos de memoria, garantizando un procesamiento eficiente y una gestión adecuada de los recursos. Ofrece características para inspeccionar las propiedades del documento, extraer texto e imágenes, y realizar otras operaciones sobre los PDFs cargados. La documentación incluye instrucciones detalladas y ejemplos de código para ayudar a los desarrolladores a integrar capacidades de apertura de PDF en sus aplicaciones sin problemas.
+AlternativeHeadline: Abrir documento PDF con Aspose.PDF for Rust via C++
+Abstract: Aspose.PDF for Rust via C++ proporciona una funcionalidad poderosa para abrir y cargar documentos PDF de forma programática, permitiendo a los desarrolladores acceder y manipular el contenido PDF con facilidad. La biblioteca admite la apertura de archivos PDF desde diversas fuentes, como rutas de archivo y flujos de memoria, garantizando un procesamiento eficiente y una gestión adecuada de los recursos. Ofrece características para inspeccionar las propiedades del documento, extraer texto e imágenes, y realizar otras operaciones sobre los PDFs cargados. La documentación incluye instrucciones detalladas y ejemplos de código para ayudar a los desarrolladores a integrar capacidades de apertura de PDF en sus aplicaciones sin problemas.
 SoftwareApplication: rust-cpp
 ---
 
