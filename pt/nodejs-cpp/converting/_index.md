@@ -12,7 +12,7 @@ sitemap:
 ---
 
 O PDF foi desenvolvido para fornecer um padrão para apresentação de documentos e outros materiais de referência em um formato independente de software de aplicação, hardware e sistema operacional. O conteúdo dos arquivos PDF não se limita a texto; pode incluir hiperlinks, imagens, botões clicáveis e formulários, assinaturas eletrônicas, marcas d'água e muito mais. Portanto, muitas vezes é necessário converter arquivos PDF para algum outro formato a fim de editar ou alterar seu conteúdo. 
-**Our Aspose.PDF for Node.js via C++** permite que você converta seus documentos PDF de forma bem-sucedida, rápida e fácil para os formatos mais populares. Para uma lista completa dos formatos suportados, veja a seção. [Aspose.PDF Formatos de Arquivo Suportados](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/).
+**O Aspose.PDF for Node.js via C++** permite que você converta seus documentos PDF de forma bem-sucedida, rápida e fácil para os formatos mais populares. Para uma lista completa dos formatos suportados, veja a seção [Aspose.PDF Formatos de Arquivo Suportados](https://docs.aspose.com/pdf/nodejs-cpp/supported-file-formats/).
 
 Aspose.PDF for Node.js via C++ permite converter documentos PDF para vários formatos no ambiente Node.js. Além disso, você pode verificar a qualidade da conversão do Aspose.PDF e visualizar os resultados online com o aplicativo conversor Aspose.PDF. Aprenda as seções de conversão de documentos com trechos de código.
 
