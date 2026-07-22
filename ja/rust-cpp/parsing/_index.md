@@ -4,7 +4,7 @@ linktitle: PDF ドキュメントを解析する
 type: docs
 weight: 65
 url: /ja/rust-cpp/parsing/
-description: PDF ドキュメントを解析したいですか？Aspose.PDF for Rust via C\u002B\u002B を使用したさまざまな PDF データ抽出方法をご確認ください。
+description: PDF ドキュメントを解析したいですか？Aspose.PDF for Rust via C++ を使用したさまざまな PDF データ抽出方法をご確認ください。
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
