@@ -30,8 +30,8 @@ Você pode usar **Aspose.PDF for Rust via C++** gratuitamente para avaliação. 
 
 Queremos que nossos clientes testem nossos componentes de forma completa antes de comprar, por isso a versão de avaliação permite que você a use como faria normalmente.
 
-- **Documents created with an evaluation watermark**. A versão de avaliação do Aspose.PDF for Rust fornece funcionalidade completa do produto, mas todas as páginas nos arquivos gerados são marcadas com a marca d'água contendo o texto "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd." no topo.
-- **Limit the number of pages that can be processed**. Na versão de avaliação, você só pode processar as quatro primeiras páginas de um documento.
+- **Documentos criados com uma marca d'água de avaliação**. A versão de avaliação do Aspose.PDF for Rust fornece funcionalidade completa do produto, mas todas as páginas nos arquivos gerados são marcadas com a marca d'água contendo o texto "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd." no topo.
+- **Limitar o número de páginas que podem ser processadas**. Na versão de avaliação, você só pode processar as quatro primeiras páginas de um documento.
 
 ### Uso em produção
 
