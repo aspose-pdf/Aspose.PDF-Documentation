@@ -20,7 +20,7 @@ SoftwareApplication: rust-cpp
 Предоставленный фрагмент кода на Rust демонстрирует, как преобразовать PDF‑документ в PPTX с помощью библиотеки Aspose.PDF:
 
 1. Откройте PDF‑документ.
-1. Преобразовать PDF‑файл в PPTX с помощью [save_pptx](https://reference.aspose.com/pdf/rust-cpp/convert/save_pptx/) функция.
+1. Преобразуйте PDF‑файл в PPTX с помощью [save_pptx](https://reference.aspose.com/pdf/rust-cpp/convert/save_pptx/) функция.
 
 ```rust
 

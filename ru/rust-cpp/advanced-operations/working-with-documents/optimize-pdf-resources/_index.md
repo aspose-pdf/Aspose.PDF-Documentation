@@ -25,9 +25,9 @@ SoftwareApplication: rust-cpp
 
 Оптимизация может включать сжатие изображений, удаление неиспользуемых объектов и оптимизацию шрифтов для уменьшения размера файла и повышения производительности. Любая ошибка во время этой операции журналируется и завершает работу программы.  
  
-1. The [открыть](https://reference.aspose.com/pdf/rust-cpp/core/open/) метод загружает указанный PDF‑файл (sample.pdf) в память.
-1. Оптимизирует ресурсы внутри PDF для повышения эффективности, используя [optimize_resource](https://reference.aspose.com/pdf/rust-cpp/organize/optimize_resource/) метод.
-1. The [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) метод сохраняет оптимизированный PDF в новый файл.
+1. Откройте указанный PDF‑файл (sample.pdf) с помощью метода [открыть](https://reference.aspose.com/pdf/rust-cpp/core/open/).
+1. Оптимизируйте ресурсы PDF с помощью метода [optimize_resource](https://reference.aspose.com/pdf/rust-cpp/organize/optimize_resource/).
+1. Сохраните оптимизированный PDF в новый файл с помощью метода [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/).
 
 Следующий фрагмент кода показывает, как оптимизировать PDF‑документ.
 

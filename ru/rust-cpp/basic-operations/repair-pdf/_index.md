@@ -24,8 +24,8 @@ SoftwareApplication: rust-cpp
 **Aspose.PDF for Rust** позволяет выполнять высококачественное восстановление PDF. Файл PDF может не открываться по любой причине, независимо от программы или браузера. В некоторых случаях документ можно восстановить; попробуйте следующий код и убедитесь в этом сами.
 
 1. Откройте PDF‑документ с помощью [open](https://reference.aspose.com/pdf/rust-cpp/core/open/) функция.
-1. Восстановить PDF‑документ с помощью [восстановить](https://reference.aspose.com/pdf/rust-cpp/organize/repair/) функция.
-1. Сохранить восстановленный PDF‑документ, используя [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) метод.
+1. Восстановите PDF‑документ с помощью [восстановить](https://reference.aspose.com/pdf/rust-cpp/organize/repair/) функция.
+1. Сохраните восстановленный PDF‑документ, используя [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) метод.
 
 ```rs
 
