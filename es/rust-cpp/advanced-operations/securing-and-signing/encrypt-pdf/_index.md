@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Cifrar archivo PDF usando usando contraseña de usuario o de propietario
+## Cifrar archivo PDF usando contraseña de usuario o de propietario
 
 Para cifrar documentos de forma fácil y segura, puedes usar Aspose.PDF for Rust a través de C++.
 
