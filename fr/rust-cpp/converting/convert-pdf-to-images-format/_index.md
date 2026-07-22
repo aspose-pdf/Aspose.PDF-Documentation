@@ -88,9 +88,7 @@ Aspose.PDF for Rust vous présente une application en ligne gratuite [PDF en TIF
 
 L'extrait de code Rust fourni démontre comment convertir la première page d'un document PDF en image PNG en utilisant la bibliothèque Aspose.PDF :
 
-1. Ouvrez un document PDF.
-1. Convertir une Page en PNG en utilisant [page_vers_png](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_png/) fonction.
-
+1. Convertir une Page en PNG en utilisant [page_to_png](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_png/) fonction.
 ```rs
 
   use asposepdf::Document;
