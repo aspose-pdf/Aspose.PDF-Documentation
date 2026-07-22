@@ -88,7 +88,7 @@ SoftwareApplication: rust-cpp
     > **ملاحظة:** لاستخدام نسخة إصدار محددة، يمكنك تحديد علامة:
     >
     > ```toml
-    > asposepdf = { git = \"https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.26.1" }
+> asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.26.1" }
     > ```
 
 2. **بناء مشروعك** (`cargo build`). في البناء الأول، سيتم استخراج المكتبة الديناميكية المناسبة لمنصتك تلقائيًا من الـ `.bz2` أرشيف في الـ `lib` المجلد وربطه بمشروعك.
