@@ -24,7 +24,7 @@ O exemplo é simples e conciso, facilitando a compreensão e a implementação. 
 **Aspose.PDF for Rust** permite reparo de PDF de alta qualidade. O arquivo PDF pode não abrir por qualquer motivo, independentemente do programa ou navegador. Em alguns casos, o documento pode ser restaurado; experimente o código a seguir e veja por si mesmo.
 
 1. Abra um documento PDF usando [open](https://reference.aspose.com/pdf/rust-cpp/core/open/) função.
-1. Reparar o documento PDF com [reparar](https://reference.aspose.com/pdf/rust-cpp/organize/repair/) função.
+1. Reparar o documento PDF com [repair](https://reference.aspose.com/pdf/rust-cpp/organize/repair/) função.
 1. Salvar o documento PDF reparado usando [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) método.
 
 ```rs
