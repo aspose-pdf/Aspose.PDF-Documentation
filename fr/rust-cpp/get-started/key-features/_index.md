@@ -114,12 +114,12 @@ Aspose.PDF for Rust prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6 et 
     </tr>
     <tr>
       <td>
-        réparer.
+        repair.
       </td>
     </tr>
     <tr>
       <td>
-        page_ajouter_texte.
+        page_add_text.
       </td>
     </tr>
     <tr>
