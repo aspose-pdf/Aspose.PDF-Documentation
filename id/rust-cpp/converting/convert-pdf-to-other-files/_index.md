@@ -23,7 +23,7 @@ EPUB dirancang untuk konten yang dapat mengalir kembali, yang berarti pembaca EP
 Potongan kode Rust yang disediakan menunjukkan cara mengonversi dokumen PDF menjadi EPUB menggunakan pustaka Aspose.PDF:
 
 1. Buka dokumen PDF.
-1. Konversi file PDF ke EPUB menggunakan [simpan_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) fungsi.
+1. Konversi file PDF ke EPUB menggunakan [save_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) fungsi.
 
 ```rs
 
@@ -172,7 +172,7 @@ Contoh ini mengonversi halaman tertentu dari PDF Anda ke Grayscale:
   }
 ```
 
-## Konversi PDF ke Markdawn
+## Konversi PDF ke Markdown
 
 Potongan kode Rust yang diberikan menunjukkan cara mengonversi dokumen PDF menjadi file Markdown (.md) menggunakan Aspose.PDF untuk Rust.
 

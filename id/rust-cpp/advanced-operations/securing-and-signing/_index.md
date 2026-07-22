@@ -34,6 +34,6 @@ Untuk mengerjakan Set Permissions dan Get Permissions, silakan merujuk ke tabel 
 | Permissions::EXTRACT_CONTENT | Izinkan menyalin/mengambil teks dan grafik |
 | Permissions::MODIFY_TEXT_ANNOTATIONS | Izinkan menambahkan/memodifikasi anotasi teks |
 | Permissions::FILL_FORM | Izinkan mengisi formulir interaktif |
-| Permissions::EKSTRAK_KONTEN_DENGAN_DISABILITAS | Izinkan ekstraksi konten untuk aksesibilitas |
-| Permissions::MERAKIT_DOKUMEN | Izinkan menyisipkan/memutar/menghapus halaman atau mengubah struktur |
-| Permissions::KUALITAS_PENCETAKAN | Izinkan pencetakan berkualitas tinggi / setia |
+| Permissions::EXTRACT_CONTENT_WITH_DISABILITIES | Izinkan ekstraksi konten untuk aksesibilitas |
+| Permissions::ASSEMBLE_DOCUMENT | Izinkan menyisipkan/memutar/menghapus halaman atau mengubah struktur |
+| Permissions::PRINTING_QUALITY | Izinkan pencetakan berkualitas tinggi / setia |

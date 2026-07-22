@@ -38,7 +38,7 @@ Mari periksa halaman Docs untuk detail lebih lanjut: [Optimalkan PDF](/pdf/id/ru
 
 ### Tambah, hapus, atau putar halaman
 
-The [Bekerja dengan Halaman PDF](/pdf/id/rust-cpp/working-with-pages/) bagian ini menjelaskan cara Anda dapat menambah, menghapus, memutar halaman dalam PDF.
+Bagian [Bekerja dengan Halaman PDF](/pdf/id/rust-cpp/working-with-pages/) menjelaskan cara Anda dapat menambah, menghapus, dan memutar halaman dalam PDF.
 
 Anda dapat menambah, menghapus, dan memutar halaman PDF, mendapatkan serta mengatur properti halaman, serta mengatur warna latar belakang, meningkatkan organisasi dokumen dan aksesibilitas.
 
