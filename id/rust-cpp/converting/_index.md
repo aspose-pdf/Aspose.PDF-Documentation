@@ -4,7 +4,7 @@ linktitle: Konversi dokumen PDF
 type: docs
 weight: 50
 url: /id/rust-cpp/conversion/
-description: Bagian ini berisi artikel yang berkaitan dengan mengonversi dokumen PDF ke format lain dengan Aspose.PDF for Rust via C\u002B\u002B.
+description: Bagian ini berisi artikel yang berkaitan dengan mengonversi dokumen PDF ke format lain dengan Aspose.PDF for Rust via C++.
 lastmod: "2026-07-20"
 sitemap:
     changefreq: "monthly"
