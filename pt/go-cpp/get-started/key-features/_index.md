@@ -27,138 +27,50 @@ Suporta carregamento e gravação a partir de uma ampla lista de [formatos de ar
 
 Aspose.PDF for Go suporta as versões PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
 
-## Recursos por tipo de função
+## Recursos por grupo
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="6">
-        Operação principal
-      </th>
-      <td>
-        Novo PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Abrir PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Salvar PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SalvarComo.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Fechar
-      </td>
-    </tr>
-    <tr>
-      <td>
-        DefinirLicença
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        Operação principal da página
-      </th>
-     <td>
-        Adicionar página.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Inserir página.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Excluir página.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Contar página.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="6">
-        Organizar
-      </th>
-      <td>
-        Otimizar.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        OtimizarRecurso.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        EscalaDeCinza.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Rotacionar.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        DefinirFundo.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Reparar.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        Organizar página
-      </th>
-      <td>
-        Rotacionar.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        DefinirTamanho.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        EscalaDeCinza.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        AdicionarTexto.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Outros
-      </th>
-      <td>
-        Obtenha o conteúdo como texto simples.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Convertendo e Salvando
-      </th>
-      <td>
-        DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Operações principais
 
+- New PDF
+- Open PDF
+- Save PDF
+- SaveAs
+- Close
+- SetLicense
+
+### Operações de página
+
+- Add page
+- Insert page
+- Delete page
+- Count page
+
+### Organização da página
+
+- Optimize
+- OptimizeResource
+- Grayscale
+- Rotate
+- SetBackground
+- Repair
+
+### Organizar
+
+- Optimize
+- OptimizeResource
+- Grayscale
+
+### Organização da página
+
+- Rotate
+- SetSize
+- Grayscale
+- AddText
+
+### Outros
+
+- Get contents as plain text
+
+### Converter e guardar
+
+- DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

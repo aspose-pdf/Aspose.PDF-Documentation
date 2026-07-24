@@ -27,138 +27,50 @@ Prend en charge le chargement depuis et l'enregistrement vers une large liste de
 
 Aspose.PDF for Go prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6 et 1.7.
 
-## Fonctionnalités par type de fonction
+## Fonctionnalités par groupe
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="6">
-        Opération principale
-      </th>
-      <td>
-        Nouveau PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Ouvrir le PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Enregistrer le PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Enregistrer sous.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Fermer
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SetLicense
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        Opération de base de page
-      </th>
-     <td>
-        Ajouter une page.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Insérer une page.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Supprimer la page.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Compter la page.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="6">
-        Organiser
-      </th>
-      <td>
-        Optimiser.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        OptimiserRessource.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        NiveauxDeGris.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Pivoter.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        DéfinirArrièrePlan.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Réparer.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        Organiser la page
-      </th>
-      <td>
-        Pivoter.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        DéfinirTaille.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        NiveauxDeGris.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        AjouterTexte.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Autres
-      </th>
-      <td>
-        Obtenez le contenu sous forme de texte brut.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Conversion et enregistrement
-      </th>
-      <td>
-        DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Opérations principales
 
+- New PDF
+- Open PDF
+- Save PDF
+- SaveAs
+- Close
+- SetLicense
+
+### Opérations sur la page
+
+- Add page
+- Insert page
+- Delete page
+- Count page
+
+### Organisation de la page
+
+- Optimize
+- OptimizeResource
+- Grayscale
+- Rotate
+- SetBackground
+- Repair
+
+### Organiser
+
+- Optimize
+- OptimizeResource
+- Grayscale
+
+### Organisation de la page
+
+- Rotate
+- SetSize
+- Grayscale
+- AddText
+
+### Autres
+
+- Get contents as plain text
+
+### Conversion et enregistrement
+
+- DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

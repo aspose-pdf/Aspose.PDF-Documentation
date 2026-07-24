@@ -29,122 +29,33 @@ Aspose.PDF for Rust يدعم إصدارات PDF 1.2 و 1.3 و 1.4 و 1.5 و 1.6 
 
 ## الميزات حسب نوع الوظيفة
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="10">
-        العملية الأساسية
-      </th>
-      <td>
-        PDF جديد.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        فتح PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        حفظ PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        save_as.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_insert.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_add.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_count.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_delete.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        extract_text.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        set_license.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="10">
-        تنظيم
-      </th>
-      <td>
-        optimize.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        optimize_resource.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        grayscale.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        set_background.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        repair.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_add_text.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_set_size.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_grayscale.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        التحويل والحفظ
-      </th>
-      <td>
-        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### العمليات الأساسية
+
+- new PDF
+- open PDF
+- save PDF
+- save_as
+- page_insert
+- page_add
+- page_count
+- page_delete
+- extract_text
+- set_license
+
+### التنظيم
+
+- optimize
+- optimize_resource
+- grayscale
+- rotate
+- set_background
+- repair
+- page_add_text
+- page_set_size
+- page_rotate
+- page_grayscale
+
+### التحويل والحفظ
+
+- PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT
 

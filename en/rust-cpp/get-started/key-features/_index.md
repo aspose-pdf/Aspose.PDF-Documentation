@@ -29,122 +29,32 @@ Aspose.PDF for Rust supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 
 ## Features by the function type
 
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="10">
-        Core operation
-      </th>
-      <td>
-        new PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        open PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        save PDF.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        save_as.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_insert.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_add.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_count.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_delete.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        extract_text.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        set_license.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="10">
-        Organize
-      </th>
-      <td>
-        optimize.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        optimize_resource.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        grayscale.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        set_background.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        repair.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_add_text.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_set_size.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_rotate.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        page_grayscale.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="1">
-        Converting and Saving
-      </th>
-      <td>
-        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Core operations
 
+- new PDF
+- open PDF
+- save PDF
+- save_as
+- page_insert
+- page_add
+- page_count
+- page_delete
+- extract_text
+- set_license
+
+### Organize
+
+- optimize
+- optimize_resource
+- grayscale
+- rotate
+- set_background
+- repair
+- page_add_text
+- page_set_size
+- page_rotate
+- page_grayscale
+
+### Converting and Saving
+
+- PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT

@@ -2,7 +2,7 @@
 title: Parse PDF documents
 linktitle: Parse PDF documents
 type: docs
-weight: 65
+weight: 55
 url: /go-cpp/parsing/
 description: Do you want to parse PDF documents? Discover various PDF data extraction methods with Aspose.PDF for Go via C++.
 lastmod: "2024-09-05"
