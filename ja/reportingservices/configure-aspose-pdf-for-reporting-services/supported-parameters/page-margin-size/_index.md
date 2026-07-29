@@ -4,13 +4,13 @@ linktitle: ページ余白サイズ
 type: docs
 weight: 70
 url: /ja/reportingservices/page-margin-size/
-description: Aspose.PDF for Reporting Services を使用して PDF レポートのページ余白サイズを調整し、読みやすさとレイアウトを向上させます。
-lastmod: "2026-06-19"
+description: Aspose.PDF for Reporting Services を使用して PDF レポートのページ余白サイズを調整し、可読性とレイアウトを向上させます。
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Reporting Services のレポート デザイナーはページ余白サイズの設定をサポートしていません。Aspose.Pdf for Reporting Services は対応するページ余白サイズを設定するための4つのパラメータを提供しています。そのパラメータは次のとおりです：
+Reporting Services のレポート デザイナーはページ余白サイズの設定をサポートしていません。Aspose.PDF for Reporting Services は、対応するページ余白サイズを設定するための 4 つのパラメータを提供します。それらは次のとおりです：
 
 {{% /alert %}}
 
@@ -54,4 +54,3 @@ Reporting Services のレポート デザイナーはページ余白サイズの
 {{< /highlight >}}
 
 {{% /alert %}}
-

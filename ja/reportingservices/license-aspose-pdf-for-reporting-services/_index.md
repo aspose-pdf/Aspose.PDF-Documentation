@@ -1,23 +1,23 @@
 ---
-title: ライセンス
-linktitle: ライセンス
+title: License
+linktitle: License
 
 type: docs
 weight: 70
-url: /ja/reportingservices/license-aspose-pdf-for-reporting-services/
-description: Aspose.PDF for Reporting Services のライセンスオプションについて理解しましょう。ライセンスの有効化方法と全機能のロック解除方法をご確認ください。
-lastmod: "2026-06-19"
+url: /reportingservices/license-aspose-pdf-for-reporting-services/
+description: Understand licensing options for Aspose.PDF for Reporting Services. Find out how to activate your license and unlock full functionality.
+lastmod: "2021-06-05"
 ---
 
-**Aspose.Pdf for Reporting Services** 評価版は、ライセンス版に含まれる同じ機能セットを提供しますが、評価版を使用した際に生成される PDF に評価用の透かしが付くことを除きます。弊社ウェブサイトにアクセスして製品バージョンをダウンロードし、評価モードで完全な機能セットを備えた製品をぜひお試しください。
+**Aspose.PDF for Reporting Services** evaluation version provide the same set of features as present in Licensed version, except for the evaluation watermark in resultant PDF when using evaluation version. Please visit our website and download the product version and start exploring our product with complete set of features in an evaluation mode.
 
-評価に満足されたら、 [ライセンスを購入する](https://purchase.aspose.com/buy). 購入前に、ライセンスサブスクリプション条件を理解し、同意していることをご確認ください。
+When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
 
-注文が支払われた後、ライセンスは注文ページからダウンロードできるようになります。ライセンスはプレーンテキストのデジタル署名されたXMLファイルです。ライセンスには、クライアント名、購入した製品、ライセンスの種類などの情報が含まれます。ライセンスファイルの内容を変更しないでください。変更するとライセンスが無効になります。
+The license will be available for download from the order page after the order is paid. The license is a clear text, digitally signed XML file. The license contains information such as the client's name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
 
-## サーバーのライセンス付与
+## Licensing a Server
 
-ライセンス ファイルをダウンロードし、C:\Program Files\Microsoft SQL Server\ にコピーします。```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
+Download the license file and copy it to the C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
 
 ```<Instance>``` is the subdirectory name that corresponds to the Microsoft SQL Server 2016 instance you want to license.
 
@@ -50,4 +50,3 @@ Please note that that supported license file names are Aspose.PDF.ReportingServi
 You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}
-

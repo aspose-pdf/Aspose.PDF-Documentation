@@ -4,19 +4,19 @@ linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /ja/reportingservices/isfontembedded/
-lastmod: "2026-06-19"
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-RS デザイナーはテキストの埋め込みフォントをサポートしていません。Aspose.PDF for Reporting Services を使用すれば、PDF ドキュメントにフォント情報を簡単に埋め込むことができます。
+RS デザイナーはテキストの埋め込みフォントをサポートしていません；Aspose.PDF for Reporting Services を使用すれば、フォント情報を PDF ドキュメントに簡単に埋め込むことができます。
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**パラメータ名**: IsFontEmbedded  
+**パラメーター名**: IsFontEmbedded  
 **データ型**: Boolean  
-**サポートされている値**: True, False (default)  
+**サポートされる値**: True, False（デフォルト）  
 
 **例**
 {{< highlight csharp >}}
@@ -25,7 +25,7 @@ RS デザイナーはテキストの埋め込みフォントをサポートし�
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
-    <IsFontEmbedded>True</IsFontEmbedded>
+    <IsFontEmbedded>真</IsFontEmbedded>
     </Configuration>
     </Extension>
 </Render>
@@ -33,4 +33,3 @@ RS デザイナーはテキストの埋め込みフォントをサポートし�
 {{< /highlight >}}
 
 {{% /alert %}}
-

@@ -4,21 +4,21 @@ linktitle: 包括的な RDL サポート
 type: docs
 weight: 10
 url: /ja/reportingservices/comprehensive-rdl-support/
-description: Aspose.PDF for Reporting Services で包括的な RDL サポートを発見しましょう。複雑な SQL Server レポートをプロフェッショナルな PDF にレンダリングします。
-lastmod: "2026-06-19"
+description: Aspose.PDF for Reporting Services で包括的な RDL サポートを体験してください。複雑な SQL Server レポートをプロフェッショナルな PDF に変換します。
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.Pdf for Reporting Services は RDL 仕様をサポートしています。つまり、
+Aspose.PDF for Reporting Services は RDL 仕様をサポートしています。つまり、
 
-* 既存のレポートを再設計したりカスタマイズする必要はありません。
-* 特定のレポート デザイナーを使用する必要はありません。任意の RDL レポート デザイナーを使用でき、レポートは設計どおりにエクスポートされます。
+* 既存のレポートを再設計したりカスタマイズしたりする必要はありません。
+* 特定のレポートデザイナを使用する必要はありません。任意の RDL レポートデザイナを使用でき、レポートは設計した通りにエクスポートされます。
 
 {{% /alert %}}
 
 ## **サポートされている RDL 要素**
-Aspose.PDF for Reporting Services は次の RDL 要素をサポートしています:
+Aspose.PDF for Reporting Services は、次の RDL 要素をサポートしています:
 
 - セクション
 - ヘッダー、フッター
@@ -32,6 +32,5 @@ Aspose.PDF for Reporting Services は次の RDL 要素をサポートしてい�
 - 長方形
 - 線
 - サブレポート
-- ゲージパネル (RS2008)
+- ゲージ パネル (RS2008)
 - Tablix (RS2008)
-

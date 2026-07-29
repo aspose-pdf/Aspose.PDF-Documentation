@@ -1,22 +1,22 @@
 ---
-title: 設定パラメータ
-linktitle: 設定パラメータ
+title: Setting Parameters
+linktitle: Setting Parameters
 type: docs
 weight: 10
-url: /ja/reportingservices/setting-parameters/
-description: Aspose.PDF for Reporting Services における PDF レンダリングのパラメータ設定方法をご確認ください。出力を正確に制御できます。
-lastmod: "2026-06-19"
+url: /reportingservices/setting-parameters/
+description: Find out how to set parameters for PDF rendering in Aspose.PDF for Reporting Services. Achieve precise control over output.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.Pdf for Reporting Services がドキュメントを生成する際に影響する特定の構成パラメータを指定できます。このセクションではその手順を説明します。
+You can specify certain configuration parameters that affect how Aspose.PDF for Reporting Services generates documents. This section describes this process.
 
 {{% /alert %}}
 
-Aspose.Pdf for Reporting Services を構成するには、C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config ファイルを編集する必要があります。このファイルは XML ファイルで、レンダラー構成は内部にあります。 ```<Extension>``` Aspose.PDF レンダラに対応する要素。
+To configure Aspose.PDF for Reporting Services, you need to edit the C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config file. This is an XML file and the renderer configuration is inside the ```<Extension>``` element corresponding to the Aspose.PDF renderer.
 
-**例**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -35,15 +35,14 @@ For PageOrientation -->
 
 {{% alert color="primary" %}}
 
-サーバー上のすべてのレポートではなく、特定のレポート ファイルに対してだけパラメータを設定したい場合は、Report Builder で特定のレポートにレポート パラメータを追加できます。以下の手順に従ってください（例として、前述の ‘IsLandscape’ パラメータを追加します）。
+If you want to set parameters for specific report file but not for every report on the server, you can add a report parameter for the specific report in the Report Builder as the following steps (for example, we’ll add an 'IsLandscape' parameter shown earlier):
 
-1. Report Designer でレポートを開き、‘Report Data’ ペインの ‘Parameters’ フォルダーを右クリックし、‘Add Parameter…’ を選択します（または、‘New’ リストを下に展開して ‘Parameter…’ を選択することもできます）。
+1. Open the report in the Report Designer, right-click on the 'Parameters' folder in the 'Report Data' pane, and select 'Add Parameter…' (or, alternately, pull down the 'New' list and select 'Parameter…').
  
 ![todo:image_alt_text](setting-parameters_1.png)
 
-1. ‘Report Parameter Properties’ ダイアログで、名前を ‘IsLandscape’ とするパラメータを作成し、データ型を Boolean に設定し、‘Default Values’ タブで値 True を追加します。
+1. In the 'Report Parameter Properties' dialog, create the parameter named 'IsLandscape', with the data type of Boolean, and add the value True in the 'Default Values' tab.
 
 ![todo:image_alt_text](setting-parameters_2.png)
 
 {{% /alert %}}
-

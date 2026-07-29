@@ -4,13 +4,13 @@ linktitle: サンプルレポートギャラリー
 type: docs
 weight: 40
 url: /ja/reportingservices/sample-reports-gallery/
-description: Aspose.PDF for Reporting Services を使用して生成されたサンプルレポートを探検してください。SSRS レポートが洗練された PDF 出力に変換できる様子をご確認ください。
-lastmod: "2026-06-19"
+description: Aspose.PDF for Reporting Services を使用して生成されたサンプルレポートを探索します。SSRS レポートが洗練された PDF 出力に変換される様子をご覧ください。
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-このギャラリーは、Aspose.Pdf for Reporting Services によってエクスポートされた PDF レポートを示しています。
+このギャラリーは Aspose.PDF for Reporting Services によってエクスポートされた PDF レポートを示しています。
 
 {{% /alert %}}
 
@@ -28,11 +28,10 @@ lastmod: "2026-06-19"
 
 ![PDF の製品カタログレポート](sample-reports-gallery_3.png)
 
-## 製品ライン販売
+## 製品ライン売上
 
-![PDF の製品ライン販売レポート](sample-reports-gallery_4.png)
+![PDF の製品ライン売上レポート](sample-reports-gallery_4.png)
 
 ## 販売注文詳細
 
 ![PDF の販売注文詳細レポート](sample-reports-gallery_5.png)
-
