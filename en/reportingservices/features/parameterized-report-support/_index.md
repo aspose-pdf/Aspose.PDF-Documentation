@@ -7,7 +7,7 @@ url: /reportingservices/parameterized-report-support/
 lastmod: "2021-06-05"
 ---
 
-A parameterized report is a report that accepts input values used in report processing. With a parameterized report, you can vary the output of a report based on values that are set when the report runs. Aspose.Pdf for Reporting Services supports two kinds of parameters: report server parameters and report parameters. Report server parameters are used for all the reports on the report server. If you want to make some parameters suitable for specific reports, you should use report parameters.
+A parameterized report is a report that accepts input values used in report processing. With a parameterized report, you can vary the output of a report based on values that are set when the report runs. Aspose.PDF for Reporting Services supports two kinds of parameters: report server parameters and report parameters. Report server parameters are used for all the reports on the report server. If you want to make some parameters suitable for specific reports, you should use report parameters.
 
 Currently, Aspose.Pdf renderer supports a wide range of parameters, such as:
 

@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Reporting Services report designer does not support setting page margins size. Aspose.Pdf for Reporting Services provides four parameters to set the corresponding page margin size, they are:
+Reporting Services report designer does not support setting page margins size. Aspose.PDF for Reporting Services provides four parameters to set the corresponding page margin size, they are:
 
 {{% /alert %}}
 

@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Report builder does not support the capability to specify text alignment for textbox “Justify” and “FullJustify”. With Aspose.Pdf for Reporting Services, you can do that easily by adding custom properties.
+Report builder does not support the capability to specify text alignment for textbox “Justify” and “FullJustify”. With Aspose.PDF for Reporting Services, you can do that easily by adding custom properties.
 
 {{% /alert %}}
 

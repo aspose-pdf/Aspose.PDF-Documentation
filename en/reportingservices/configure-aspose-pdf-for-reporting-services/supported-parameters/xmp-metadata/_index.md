@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Reporting Services report designer does not support embedding XMP metadata in the document. Aspose.Pdf for Reporting Services provides four parameters to set the corresponding XMP metadata, they are:
+Reporting Services report designer does not support embedding XMP metadata in the document. Aspose.PDF for Reporting Services provides four parameters to set the corresponding XMP metadata, they are:
 
 {{% /alert %}}
 
@@ -41,7 +41,7 @@ Reporting Services report designer does not support embedding XMP metadata in th
     <CreationDate>2017-12-10</CreationDate>
     <ModifyDate>2018-1-12</ModifyDate>
     <MetaDataDate>2018-3-7</MetaDataDate>
-    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    <CreatorTool>Aspose.PDF for Reporting Services</CreatorTool>
     </Configuration>
     </Extension>
 </Render>
