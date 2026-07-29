@@ -4,32 +4,32 @@ linktitle: XMP 메타데이터
 type: docs
 weight: 80
 url: /ko/reportingservices/xmp-metadata/
-description: Aspose.PDF for Reporting Services를 사용하여 PDF 보고서에서 XMP 메타데이터를 관리하는 방법을 배우세요. 문서 메타데이터 처리를 향상시킵니다.
-lastmod: "2026-06-19"
+description: Aspose.PDF for Reporting Services를 사용하여 PDF 보고서에서 XMP 메타데이터를 관리하는 방법을 학습하십시오. 문서 메타데이터 처리를 향상시킵니다.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Reporting Services 보고서 디자이너는 문서에 XMP 메타데이터를 삽입하는 것을 지원하지 않습니다. Aspose.Pdf for Reporting Services는 해당 XMP 메타데이터를 설정하기 위한 네 가지 매개변수를 제공하며, 이들은 다음과 같습니다:
+Reporting Services 보고서 디자이너는 문서에 XMP 메타데이터를 삽입하는 것을 지원하지 않습니다. Aspose.PDF for Reporting Services는 해당 XMP 메타데이터를 설정하기 위한 네 가지 매개변수를 제공합니다. 이들은 다음과 같습니다:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 **매개변수 이름**: CreationDate  
 **Date Type**: 문자열  
-**Values supported**: 날짜 형식 중 하나에 해당하는 날짜
+**Values supported**: 날짜 형식 중 하나의 날짜
 
-**매개변수 이름**: ModifyDate  
+**Parameter Name**: ModifyDate  
 **Date Type**: 문자열  
-**Values supported**: 날짜 형식 중 하나에 해당하는 날짜 
+**Values supported**: 날짜 형식 중 하나의 날짜 
 
-**매개변수 이름**: MetaDataDate  
+**Parameter Name**: MetaDataDate  
 **Date Type**: 문자열  
-**Values supported**: 날짜 형식 중 하나에 해당하는 날짜 
+**Values supported**: 날짜 형식 중 하나의 날짜 
 
-**매개변수 이름**: CreatorTool  
+**Parameter Name**: CreatorTool  
 **Date Type**: 문자열  
-**Values supported**: 어떤 일반 텍스트든  
+**Values supported**: 임의의 일반 텍스트  
 
 **예시**
 {{< highlight csharp >}}
@@ -41,7 +41,7 @@ Reporting Services 보고서 디자이너는 문서에 XMP 메타데이터를 �
     <CreationDate>2017-12-10</CreationDate>
     <ModifyDate>2018-1-12</ModifyDate>
     <MetaDataDate>2018-3-7</MetaDataDate>
-    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    <CreatorTool>Aspose.PDF for Reporting Services</CreatorTool>
     </Configuration>
     </Extension>
 </Render>
@@ -49,6 +49,4 @@ Reporting Services 보고서 디자이너는 문서에 XMP 메타데이터를 �
 {{< /highlight >}}
 
 {{% /alert %}}
-
-
 

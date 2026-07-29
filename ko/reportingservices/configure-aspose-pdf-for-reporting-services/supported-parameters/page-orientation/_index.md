@@ -4,13 +4,13 @@ linktitle: 페이지 방향
 type: docs
 weight: 10
 url: /ko/reportingservices/page-orientation/
-description: Aspose.PDF for Reporting Services의 PDF 보고서에 대한 페이지 방향을 구성합니다. 더욱 나은 표시를 위해 레이아웃을 사용자 지정합니다.
-lastmod: "2026-06-19"
+description: Aspose.PDF for Reporting Services에서 PDF 보고서의 페이지 방향을 구성합니다. 더 나은 표시를 위해 레이아웃을 사용자 지정합니다.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Report Definition Language는 보고서에서 페이지 방향을 명시적으로 지정하는 것을 허용하지 않습니다. Aspose.Pdf for Reporting Services를 사용하면 내보내기 프로그램에 가로 페이지 방향의 PDF 문서를 생성하도록 쉽게 지시할 수 있습니다. 기본 방향은 세로입니다.
+Report Definition Language는 보고서에서 페이지 방향을 명시적으로 지정하는 것을 허용하지 않습니다. Aspose.PDF for Reporting Services를 사용하면 내보내기 도구에 가로 페이지 방향으로 PDF 문서를 생성하도록 쉽게 지시할 수 있습니다. 기본 방향은 세로입니다.
 
 {{% /alert %}}
 
@@ -18,7 +18,7 @@ Report Definition Language는 보고서에서 페이지 방향을 명시적으�
 
 기본 방향은 세로입니다.
 **매개변수 이름**: IsLandscape
-**데이터 유형**: Boolean
+**날짜 유형**: Boolean
 **지원되는 값**: True, False (default)
 
 **예시**
@@ -27,7 +27,7 @@ Report Definition Language는 보고서에서 페이지 방향을 명시적으�
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
-    <IsLandscape>True</IsLandscape>
+    <IsLandscape>참</IsLandscape>
     </Configuration>
     </Extension>
 </Render>
@@ -35,5 +35,3 @@ Report Definition Language는 보고서에서 페이지 방향을 명시적으�
 {{< /highlight >}}
 
 {{% /alert %}}
-
-

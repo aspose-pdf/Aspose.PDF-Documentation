@@ -1,25 +1,25 @@
 ---
-title: 목차, 표 목록 또는 그림
-linktitle: 목차, 표 목록 또는 그림
+title: Table of Contents List of Tables or Figures
+linktitle: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
-url: /ko/reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Aspose.PDF for Reporting Services를 사용하여 PDF 보고서에 목차, 표 목록 또는 그림을 추가하는 방법을 알아보세요.
-lastmod: "2026-06-19"
+url: /reportingservices/table-of-contents-list-of-tables-or-figures/
+description: Learn how to add a Table of Contents, List of Tables, or Figures in PDF reports using Aspose.PDF for Reporting Services.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer는 보고서 문서에 목차를 추가하는 것을 지원하지 않습니다. Aspose.Pdf for Reporting Services를 사용하면 PDF 렌더에 목차 또는 표 목록, 그림이 포함된 PDF 문서를 생성하도록 쉽게 지시할 수 있습니다. 다음 단계에 따라 수행할 수 있습니다:
+Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-Aspose.Pdf.ListSectionStyle.xml 파일이 존재하는지 확인하세요 ```<Instance>```/bin, 어디에 ```<Instance>``` 은(는) Report Server의 디렉터리입니다. 파일이 존재하지 않으면 해당 디렉터리에 생성하십시오. ```<Instance>```/bin 디렉터리 안에 다음 마크업을 넣으세요.
+Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
 
-## 목차
+## Table of Contents
 
-**예시**
+**Example**
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +41,9 @@ Aspose.Pdf.ListSectionStyle.xml 파일이 존재하는지 확인하세요 ```<In
 </ListSection>
 ```
 
-##  표 목록
+##  List of TableS
 
-**예시**
+**Example**
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -53,9 +53,9 @@ Aspose.Pdf.ListSectionStyle.xml 파일이 존재하는지 확인하세요 ```<In
 </ListSection>
 ```
 
-## 그림 목록
+## List of Figures
 
-**예시**
+**Example**
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -68,40 +68,38 @@ Aspose.Pdf.ListSectionStyle.xml 파일이 존재하는지 확인하세요 ```<In
 
 Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
 
-**2-** 보고서 매개변수 'IsListSectionSupported'를 추가하고 'List Section' 단락에 표시된 대로 값을 True로 설정하십시오.
-**3-** 목차, 표 목록 또는 그림에 나열하려는 보고서 항목에 대한 사용자 지정 속성을 추가하십시오.
+**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
+**3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**사용자 지정 속성 이름** :IsInList
-**속성 값** :Boolean
-**사용자 지정 속성 값** : True 또는 False
+**Custom Property Name** :IsInList
+**Property Value** :Boolean
+**Custom Property Value** : True or False
 
 {{% alert color="primary" %}}
 
-현재 보고서 항목을 목차, 표 목록 또는 그림 목록에서 인덱스로 표시합니다.
+Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
 
 {{% /alert %}}
 
-**사용자 정의 속성 이름** : 제목
-**사용자 정의 속성 유형** : 문자열
+**Custom Property Name** : Title
+**Custom Property Type** : String
 
 {{% alert color="primary" %}}
 
-목차, 표 또는 그림 목록에 표시되는 항목 제목입니다.
+The item title displayed in the table of contents, list of tables or figures.
 {{% /alert %}}
 
-**사용자 정의 속성 이름** : 목록 수준
-**맞춤 속성 유형** : 정수
+**Custom Property Name** : ListLevel
+**Custom Property Type** : Integer
 
 {{% alert color="primary" %}}
 
-목차에 표시되는 항목들의 수준입니다.
+The level of listed items displayed in the table of contents.
 
 {{% /alert %}}
 
 {{% /alert %}}
-
-

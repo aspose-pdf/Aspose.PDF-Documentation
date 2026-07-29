@@ -1,35 +1,35 @@
 ---
-title: HTML 서식
-linktitle: HTML 서식
+title: HTML Formatting
+linktitle: HTML Formatting
 type: docs
 weight: 20
-url: /ko/reportingservices/html-formatting/
-description: Aspose.PDF for Reporting Services를 사용하여 PDF 보고서에서 HTML 서식을 활성화합니다. 스타일과 구조를 손쉽게 추가합니다.
-lastmod: "2026-06-19"
+url: /reportingservices/html-formatting/
+description: Enable HTML formatting in PDF reports using Aspose.PDF for Reporting Services. Add styles and structure with ease.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-때때로 텍스트 상자에서 서식이 적용된 텍스트를 내보내고 싶을 수 있습니다. 불행히도 Reporting Services는 이를 지원하지 않습니다. 그러나 여전히 Aspose.PDF for Reporting Services를 사용하여 구현할 수 있습니다. 텍스트 상자 내 모든 텍스트를 HTML로 처리하고 필요한 HTML 태그를 넣어 출력 문서에서 텍스트를 서식 지정하는 특수 모드를 활성화하기만 하면 됩니다. 예를 들어, 동일한 텍스트 상자에 일반, 굵게 및 기울임 텍스트를 표시하려면 다음 텍스트 상자 값을 입력하세요:
+Sometimes you might wish to export text in textboxes with formatting. Unfortunately, Reporting Services does not support this. However, you still can implement it using Aspose.PDF for Reporting Services. Just enable a special mode in which all text in textboxes is treated as HTML and put the necessary HTML tags to format the text in the output document. For example, to have normal, bold and italic text in the same textbox, enter the following textbox value:
 
-이 텍스트 중 일부는 ```<b>bold</b>``` 그리고 다른 텍스트는 ```<i>italic</i>```.
+Some of this text is ```<b>bold</b>``` and other text is ```<i>italic</i>```.
 
-내보낸 후에는 이 텍스트 중 일부는 **bold**, 다른 텍스트는 *italic*처럼 보입니다.
+When exported, the text will look like as some of this text is **bold** and other text is *italic*.
 
-이 접근 방식에는 몇 가지 제한 사항이 있음을 참고하십시오.
+Please note that this approach has some limitations
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-- 디자인 시간(Report Builder, Reporting Services 웹 포털 등)에서는 서식이 표시되지 않습니다. 대신 HTML 텍스트가 태그가 포함된 일반 텍스트 형태로 보입니다.
-- Aspose.PDF for Reporting Services 렌더링 확장 기능은 텍스트 상자에서 HTML 코드를 인식하고 올바르게 서식 지정합니다. Reporting Services의 기본 PDF 렌더러는 이 마크업을 일반 텍스트로 내보냅니다.
+- The formatting isn’t visible in design time (in the Report Builder, Reporting Services web portal etc.). Instead, you will see the HTML text in form of plain text with tags.
+- Aspose.PDF for Reporting Services rendering extension recognizes and properly formats HTML code in textboxes. The default PDF renderer of Reporting Services will export this markup as plain text.
 
-**매개변수 이름**: IsHtmlTagSupported  
-**날짜 유형**: Boolean  
-**지원되는 값**: True, False (default)   
+**Parameter Name**: IsHtmlTagSupported  
+**Date Type**: Boolean  
+**Values supported**: True, False (default)   
 
-**예제**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -44,11 +44,9 @@ lastmod: "2026-06-19"
 
 {{< /highlight >}}
 
-Report Designer에 이 매개변수를 추가하려면 'Boolean' 데이터 유형을 사용하십시오.
+If you want to add this parameter in the Report Designer, use the 'Boolean' data type.
 
  
-현재 Aspose.Pdf for Reporting Services는 모든 HTML 태그 중 일부만 지원합니다. 자세한 정보는 Aspose.PDF에서 찾을 수 있습니다. [문서](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
+Currently Aspose.PDF for Reporting Services supports a subset of all the HTML tags. You may find more information in the Aspose.PDF [Documentation](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}
-
-
