@@ -1,27 +1,27 @@
 ---
-title: Setting Parameters
-linktitle: Setting Parameters
+title: パラメータの設定
+linktitle: パラメータの設定
 type: docs
 weight: 10
-url: /reportingservices/setting-parameters/
-description: Find out how to set parameters for PDF rendering in Aspose.PDF for Reporting Services. Achieve precise control over output.
-lastmod: "2021-06-05"
+url: /ja/reportingservices/setting-parameters/
+description: Aspose.PDF for Reporting Services で PDF レンダリング用のパラメータを設定し、出力を正確に制御する方法を説明します。
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-You can specify certain configuration parameters that affect how Aspose.PDF for Reporting Services generates documents. This section describes this process.
+Aspose.PDF for Reporting Services がドキュメントを生成する方法に影響する特定の設定パラメータを指定できます。このセクションでは、その手順を説明します。
 
 {{% /alert %}}
 
-To configure Aspose.PDF for Reporting Services, you need to edit the C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config file. This is an XML file and the renderer configuration is inside the ```<Extension>``` element corresponding to the Aspose.PDF renderer.
+Aspose.PDF for Reporting Services を設定するには、`C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config` ファイルを編集する必要があります。これは XML ファイルで、レンダラーの設定は Aspose.PDF レンダラーに対応する ```<Extension>``` 要素の中にあります。
 
 **Example**
 
 {{< highlight csharp >}}
 
 <Render>
-…
+...
 <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
 <!--Insert configuration elements for exporting to PDF here. The following is an example
 For PageOrientation -->
@@ -35,13 +35,13 @@ For PageOrientation -->
 
 {{% alert color="primary" %}}
 
-If you want to set parameters for specific report file but not for every report on the server, you can add a report parameter for the specific report in the Report Builder as the following steps (for example, we’ll add an 'IsLandscape' parameter shown earlier):
+サーバー上のすべてのレポートではなく、特定のレポートファイルだけにパラメータを設定したい場合は、Report Builder でそのレポートにレポートパラメータを追加できます。以下の手順では、先ほど示した `IsLandscape` パラメータを追加する例を使用します。
 
-1. Open the report in the Report Designer, right-click on the 'Parameters' folder in the 'Report Data' pane, and select 'Add Parameter…' (or, alternately, pull down the 'New' list and select 'Parameter…').
+1. Report Designer でレポートを開き、`Report Data` ペインの `Parameters` フォルダを右クリックして `Add Parameter...` を選択します。別の方法として、`New` リストを開いて `Parameter...` を選択してもかまいません。
  
 ![todo:image_alt_text](setting-parameters_1.png)
 
-1. In the 'Report Parameter Properties' dialog, create the parameter named 'IsLandscape', with the data type of Boolean, and add the value True in the 'Default Values' tab.
+1. `Report Parameter Properties` ダイアログで `IsLandscape` という名前のパラメータを作成し、データ型を Boolean に設定したうえで、`Default Values` タブに True を追加します。
 
 ![todo:image_alt_text](setting-parameters_2.png)
 
