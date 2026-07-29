@@ -1,23 +1,23 @@
 ---
-title: Lisensi
-linktitle: Lisensi
+title: License
+linktitle: License
 
 type: docs
 weight: 70
-url: /id/reportingservices/license-aspose-pdf-for-reporting-services/
-description: Pahami opsi lisensi untuk Aspose.PDF for Reporting Services. Ketahui cara mengaktifkan lisensi Anda dan membuka semua fungsi.
-lastmod: "2026-06-19"
+url: /reportingservices/license-aspose-pdf-for-reporting-services/
+description: Understand licensing options for Aspose.PDF for Reporting Services. Find out how to activate your license and unlock full functionality.
+lastmod: "2021-06-05"
 ---
 
-**Aspose.Pdf for Reporting Services** versi evaluasi menyediakan serangkaian fitur yang sama dengan versi Berlisensi, kecuali watermark evaluasi pada PDF yang dihasilkan saat menggunakan versi evaluasi. Silakan kunjungi situs web kami dan unduh versi produk serta mulai menjelajahi produk kami dengan set lengkap fitur dalam mode evaluasi.
+**Aspose.PDF for Reporting Services** evaluation version provide the same set of features as present in Licensed version, except for the evaluation watermark in resultant PDF when using evaluation version. Please visit our website and download the product version and start exploring our product with complete set of features in an evaluation mode.
 
-Saat Anda puas dengan evaluasi Anda, [beli lisensi](https://purchase.aspose.com/buy). Sebelum membeli, pastikan Anda memahami dan menyetujui ketentuan langganan lisensi.
+When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
 
-Lisensi akan tersedia untuk diunduh dari halaman pesanan setelah pesanan dibayar. Lisensi adalah file XML teks jelas yang ditandatangani secara digital. Lisensi berisi informasi seperti nama klien, produk yang dibeli, dan jenis lisensi. Jangan mengubah isi file lisensi karena akan membuat lisensi tidak valid.
+The license will be available for download from the order page after the order is paid. The license is a clear text, digitally signed XML file. The license contains information such as the client's name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
 
-## Melisensikan Server
+## Licensing a Server
 
-Unduh file lisensi dan salin ke C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
+Download the license file and copy it to the C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
 
 ```<Instance>``` is the subdirectory name that corresponds to the Microsoft SQL Server 2016 instance you want to license.
 
@@ -50,4 +50,3 @@ Please note that that supported license file names are Aspose.PDF.ReportingServi
 You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}
-

@@ -1,13 +1,13 @@
 ---
 title: Dokumentasi
-linktitle:  Aspose.PDF untuk Reporting Services
+linktitle:  Aspose.PDF for Reporting Services
 second_title: Aspose.PDF for Reporting Services
 type: docs
 weight: 120
 url: /id/reportingservices/
-description: Temukan Aspose.PDF for Reporting Services. Buat laporan PDF langsung dari SQL Server Reporting Services (SSRS) dengan penyesuaian lanjutan.
+description: Temukan Aspose.PDF for Reporting Services. Hasilkan laporan PDF langsung dari SQL Server Reporting Services (SSRS) dengan kustomisasi lanjutan.
 is_root: true
-lastmod: "2026-06-19"
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
@@ -22,27 +22,26 @@ Microsoft SQL Server Reporting Services memenuhi kebutuhan yang dimiliki banyak 
 
 ## Topik
 
-- [Ikhtisar Produk](/pdf/id/reportingservices/product-overview/)
+- [Gambaran Produk](/pdf/id/reportingservices/product-overview/)
 - [Format File yang Didukung](/pdf/id/reportingservices/supported-file-formats/)
 - [Fitur](/pdf/id/reportingservices/features/)
-- [Galeri Laporan Contoh](/pdf/id/reportingservices/sample-reports-gallery/)
-- [Instal Aspose.Pdf untuk Reporting Services](/pdf/id/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [Lisensi Aspose.Pdf untuk Reporting Services](/pdf/id/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Konfigurasikan Aspose.Pdf untuk Reporting Services](/pdf/id/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Galeri Contoh Laporan](/pdf/id/reportingservices/sample-reports-gallery/)
+- [Instal Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [Lisensi Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [Konfigurasikan Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Perluas Properti Item Laporan](/pdf/id/reportingservices/expand-report-items-properties/)
-- [Evaluasi Aspose.Pdf untuk Reporting Services](/pdf/id/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [Evaluasi Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
-## Sumber Daya Aspose.PDF untuk Reporting Services
+## Aspose.PDF for Reporting Services Sumber Daya
 
-- [Gambaran Produk Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/product-overview/)
-- [Format File yang Didukung Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/supported-file-formats/)
-- [Fitur Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/features/)
-- [Catatan Rilis Aspose.PDF untuk Reporting Services](https://releases.aspose.com/pdf/reportingservices/release-notes/)
-- [Unduh Aspose.PDF untuk Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
-- [Galeri Laporan Contoh Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/sample-reports-gallery/)
-- [Instal Aspose.Pdf untuk Reporting Services](/pdf/id/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [Lisensi Aspose.Pdf untuk Reporting Services](/pdf/id/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Konfigurasikan Aspose.Pdf untuk Reporting Services](/pdf/id/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Aspose.PDF for Reporting Services Gambaran Produk](/pdf/id/reportingservices/product-overview/)
+- [Aspose.PDF for Reporting Services Format File yang Didukung](/pdf/id/reportingservices/supported-file-formats/)
+- [Aspose.PDF for Reporting Services Fitur](/pdf/id/reportingservices/features/)
+- [Aspose.PDF for Reporting Services Catatan Rilis](https://releases.aspose.com/pdf/reportingservices/release-notes/)
+- [Unduh Aspose.PDF for Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
+- [Galeri Laporan Contoh Aspose.PDF for Reporting Services](/pdf/id/reportingservices/sample-reports-gallery/)
+- [Instal Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [Lisensi Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [Konfigurasikan Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Perluas Properti Item Laporan](/pdf/id/reportingservices/expand-report-items-properties/)
-- [Evaluasi Aspose.Pdf untuk Reporting Services](/pdf/id/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
-
+- [Evaluasi Aspose.PDF untuk Reporting Services](/pdf/id/reportingservices/evaluate-aspose-pdf-for-reporting-services/)

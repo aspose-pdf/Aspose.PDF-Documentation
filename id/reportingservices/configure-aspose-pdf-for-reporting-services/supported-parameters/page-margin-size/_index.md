@@ -4,13 +4,13 @@ linktitle: Ukuran margin halaman
 type: docs
 weight: 70
 url: /id/reportingservices/page-margin-size/
-description: Sesuaikan ukuran margin halaman dalam laporan PDF dengan Aspose.PDF for Reporting Services untuk meningkatkan keterbacaan dan tata letak.
-lastmod: "2026-06-19"
+description: Sesuaikan ukuran margin halaman pada laporan PDF dengan Aspose.PDF for Reporting Services untuk meningkatkan keterbacaan dan tata letak.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Perancang laporan Reporting Services tidak mendukung pengaturan ukuran margin halaman. Aspose.Pdf for Reporting Services menyediakan empat parameter untuk mengatur ukuran margin halaman yang sesuai, yaitu:
+Desainer laporan Reporting Services tidak mendukung pengaturan ukuran margin halaman. Aspose.PDF for Reporting Services menyediakan empat parameter untuk mengatur ukuran margin halaman yang sesuai, yaitu:
 
 {{% /alert %}}
 
@@ -54,4 +54,3 @@ Perancang laporan Reporting Services tidak mendukung pengaturan ukuran margin ha
 {{< /highlight >}}
 
 {{% /alert %}}
-

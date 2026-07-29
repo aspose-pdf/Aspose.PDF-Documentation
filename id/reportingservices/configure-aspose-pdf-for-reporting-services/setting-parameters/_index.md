@@ -1,22 +1,22 @@
 ---
-title: Mengatur Parameter
-linktitle: Mengatur Parameter
+title: Setting Parameters
+linktitle: Setting Parameters
 type: docs
 weight: 10
-url: /id/reportingservices/setting-parameters/
-description: Cari tahu cara mengatur parameter untuk render PDF di Aspose.PDF untuk Reporting Services. Capai kontrol yang tepat atas output.
-lastmod: "2026-06-19"
+url: /reportingservices/setting-parameters/
+description: Find out how to set parameters for PDF rendering in Aspose.PDF for Reporting Services. Achieve precise control over output.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Anda dapat menentukan parameter konfigurasi tertentu yang memengaruhi bagaimana Aspose.Pdf untuk Reporting Services menghasilkan dokumen. Bagian ini menjelaskan proses tersebut.
+You can specify certain configuration parameters that affect how Aspose.PDF for Reporting Services generates documents. This section describes this process.
 
 {{% /alert %}}
 
-Untuk mengkonfigurasi Aspose.Pdf untuk Reporting Services, Anda perlu mengedit file C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config. Ini adalah file XML dan konfigurasi renderer berada di dalamnya. ```<Extension>``` elemen yang sesuai dengan renderer Aspose.PDF.
+To configure Aspose.PDF for Reporting Services, you need to edit the C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config file. This is an XML file and the renderer configuration is inside the ```<Extension>``` element corresponding to the Aspose.PDF renderer.
 
-**Contoh**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -35,15 +35,14 @@ For PageOrientation -->
 
 {{% alert color="primary" %}}
 
-Jika Anda ingin mengatur parameter untuk file laporan tertentu tetapi tidak untuk setiap laporan di server, Anda dapat menambahkan parameter laporan untuk laporan tertentu di Report Builder dengan langkah-langkah berikut (misalnya, kami akan menambahkan parameter ‘IsLandscape’ yang ditunjukkan sebelumnya):
+If you want to set parameters for specific report file but not for every report on the server, you can add a report parameter for the specific report in the Report Builder as the following steps (for example, we’ll add an 'IsLandscape' parameter shown earlier):
 
-1. Buka laporan di Report Designer, klik kanan pada folder ‘Parameters’ di panel ‘Report Data’, dan pilih ‘Add Parameter…’ (atau, alternatifnya, tarik turun daftar ‘New’ dan pilih ‘Parameter…’).
+1. Open the report in the Report Designer, right-click on the 'Parameters' folder in the 'Report Data' pane, and select 'Add Parameter…' (or, alternately, pull down the 'New' list and select 'Parameter…').
  
 ![todo:image_alt_text](setting-parameters_1.png)
 
-1. Dalam dialog ‘Report Parameter Properties’, buat parameter dengan nama ‘IsLandscape’, dengan tipe data Boolean, dan tambahkan nilai True pada tab ‘Default Values’.
+1. In the 'Report Parameter Properties' dialog, create the parameter named 'IsLandscape', with the data type of Boolean, and add the value True in the 'Default Values' tab.
 
 ![todo:image_alt_text](setting-parameters_2.png)
 
 {{% /alert %}}
-

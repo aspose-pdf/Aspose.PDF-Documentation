@@ -1,40 +1,40 @@
 ---
-title: Instal ke Report Server
-linktitle: Instal ke Report Server
+title: Install to Report Server
+linktitle: Install to Report Server
 type: docs
 weight: 10
-url: /id/reportingservices/install-to-report-server/
-lastmod: "2026-06-19"
+url: /reportingservices/install-to-report-server/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Anda hanya perlu mengikuti langkah-langkah ini jika Anda menginstal Aspose.PDF for Reporting Services secara manual, tidak menggunakan installer MSI. Installer MSI melakukan semua tindakan instalasi dan pendaftaran yang diperlukan secara otomatis.
+You only need to follow these steps if you install Aspose.PDF for Reporting Services manually, not using the MSI installer. MSI installer performs all necessary installation and registration actions automatically.
 
 {{% /alert %}}
 
-Dalam langkah-langkah berikut, Anda perlu menyalin dan memodifikasi file di direktori tempat Microsoft SQL Server Reporting Services diinstal. Assembly SSRS 2016 terletak di direktori \Bin\SSRS2016 dalam paket zip; assembly SSRS 2017 terletak di direktori \Bin\SSRS2017; assembly SSRS 2019 terletak di direktori \Bin\SSRS2019; assembly SSRS 2022 terletak di direktori \Bin\SSRS2022; assembly Power BI Report Server terletak di direktori \Bin\PowerBI. 
+In the following steps, you will need to copy and modify files in the directory where Microsoft SQL Server Reporting Services is installed. The SSRS 2016 assembly is located in the \Bin\SSRS2016 directory of the zip package; the SSRS 2017 assembly is located in the \Bin\SSRS2017 directory; the SSRS 2019 assembly is located in the \Bin\SSRS2019 directory; the SSRS 2022 assembly is located in the \Bin\SSRS2022 directory; the Power BI Report Server assembly is located in the \Bin\PowerBI directory. 
 
 {{% alert color="primary" %}}
 
-**Step 1.** Temukan direktori instalasi Report Server. Direktori root untuk Microsoft SQL Server biasanya C:\Program Files\Microsoft SQL Server. Proses selanjutnya sedikit berbeda untuk Reporting Services 2016, Reporting Services 2017 dan yang lebih baru, serta Power BI Report Server:
+**Step 1.** Locate the Report Server installation directory. The root directory for Microsoft SQL Server is usually C:\Program Files\Microsoft SQL Server. Further process is slightly different for Reporting Services 2016, Reporting Services 2017 and later, and Power BI Report Server:
 
-- Report Server 2016 secara default diinstal di direktori C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer. Jika Anda menggunakan instance dengan nama khusus selain yang default, jalur default akan menjadi C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
-- Report Server 2017 dan versi selanjutnya secara default diinstal di direktori C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer.
-- Power BI Report Server secara default diinstal di direktori C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer.
+- Report Server 2016 by default is installed in the C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer directory. If you are using custom named instances instead of the default one, the default path will be C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
+- Report Server 2017 and later by default is installed in the C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer directory.
+- Power BI Report Server by default is installed in the C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer directory.
 
-Dalam teks berikut, direktori instalasi Reporting Services (salah satu jalur yang disebutkan di atas) akan dirujuk sebagai ```<Instance>```.
+In the following text the installation directory of the Reporting Services (one of the aforementioned paths) will be referenced to as ```<Instance>```.
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Langkah 2.** Salin Aspose.Pdf.ReportingServices.dll untuk versi SSRS yang sesuai ke ```<Instance>```folder \bin.
+**Step 2.** Copy Aspose.Pdf.ReportingServices.dll for the corresponding SSRS version to the ```<Instance>```\bin folder.
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Langkah 3.** Daftarkan Aspose.Pdf untuk Reporting Services sebagai ekstensi rendering. Buka ```<Instance>```\rsreportserver.config file dan tambahkan baris berikut ke dalam ```<Render>``` elemen:
+**Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. Open the ```<Instance>```\rsreportserver.config file and add the following lines into the ```<Render>``` element:
 {{% /alert %}}
 
-**Contoh**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -49,10 +49,10 @@ Dalam teks berikut, direktori instalasi Reporting Services (salah satu jalur yan
 {{< /highlight >}}
 
 {{% alert color="primary" %}}
-**Step 4.** Sediakan Aspose.Pdf for Reporting Services dengan izin untuk dijalankan. Buka file ```<Instance>```\rssrvpolicy.config dan tambahkan teks berikut sebagai item terakhir dalam elemen ```<CodeGroup>``` kedua dari luar (yang seharusnya ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```):
+**Step 4.** Provide Aspose.PDF for Reporting Services with permissions to execute. Open the ```<Instance>```\rssrvpolicy.config file and add the following text as the last item in the second to outer ```<CodeGroup>``` element (which should be ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
 {{% /alert %}}
 
-**Contoh**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -81,20 +81,16 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 {{< /highlight >}}
 
 {{% alert color="primary" %}}
-**Langkah 5.** Verifikasi bahwa Aspose.Pdf for Reporting Services telah diinstal dengan sukses. Buka portal web Reporting Services dan periksa daftar format ekspor yang tersedia untuk sebuah laporan. Anda dapat meluncurkan portal web dengan memulai peramban web dan mengetikkan URL portal web Reporting Services di bilah alamat (secara default adalah http://```<Reporting_Services_server_name>```/reports/). Pilih salah satu laporan yang tersedia di portal web Anda dan tarik daftar dropdown Export. Anda harus melihat daftar format ekspor termasuk yang disediakan oleh ekstensi Aspose.Pdf for Reporting Services. Pilih item PDF via Aspose.PDF.
+**Step 5.** Verify that Aspose.PDF for Reporting Services was installed successfully. Open the Reporting Services web portal and check the list of available export formats for a report. You can launch the web portal by starting a web browser and typing the Reporting Services web portal URL in the address bar (by default it is http://```<Reporting_Services_server_name>```/reports/). Select one of the reports available in your web portal and pull the Export dropdown list. You should see the list of export formats including the ones provided by the Aspose.PDF for Reporting Services extension. Select PDF via Aspose.PDF item.
 
  
 {{% /alert %}}
 
 ![todo:image_alt_text](install-to-report-server_1.png)
 
-Klik item yang dipilih. Itu akan menghasilkan laporan dalam format yang dipilih, mengirimkannya ke klien, dan, tergantung pada pengaturan peramban web Anda, baik menampilkan dialog Simpan File untuk memilih tempat menyimpan laporan yang diekspor, atau secara otomatis mengunduh file ke folder Unduhan Anda.
+Click the selected item. It will generate the report in the selected format, send it to the client, and, depending on your web browser settings, either show you the Save File dialog to choose where to save the exported report, or automatically download the file to the your Downloads folder.
 
 {{% alert color="primary" %}}
-Selamat, Anda telah berhasil menginstal Aspose.Pdf for Reporting Services dan mengekspor laporan sebagai dokumen PDF!
+Congratulations, you’ve successfully installed Aspose.PDF for Reporting Services and exported a report as a PDF document!
 {{% /alert %}}
-
-
-
-
 

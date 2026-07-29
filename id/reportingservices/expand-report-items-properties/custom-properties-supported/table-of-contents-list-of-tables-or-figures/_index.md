@@ -1,25 +1,25 @@
 ---
-title: Daftar Isi Daftar Tabel atau Gambar
-linktitle: Daftar Isi Daftar Tabel atau Gambar
+title: Table of Contents List of Tables or Figures
+linktitle: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
-url: /id/reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Pelajari cara menambahkan Daftar Isi, Daftar Tabel, atau Gambar dalam laporan PDF menggunakan Aspose.PDF for Reporting Services.
-lastmod: "2026-06-19"
+url: /reportingservices/table-of-contents-list-of-tables-or-figures/
+description: Learn how to add a Table of Contents, List of Tables, or Figures in PDF reports using Aspose.PDF for Reporting Services.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer tidak mendukung penambahan daftar isi untuk dokumen laporan. Dengan Aspose.Pdf for Reporting Services Anda dapat dengan mudah menginstruksikan perender PDF untuk menghasilkan dokumen PDF dengan Daftar Isi, atau Daftar Tabel atau Gambar. Anda dapat melakukannya dalam langkah-langkah berikut:
+Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-Pastikan bahwa file Aspose.Pdf.ListSectionStyle.xml ada di ```<Instance>```/bin, di mana ```<Instance>``` adalah direktori dari Report Server. Jika file tidak ada, buat di dalamnya ```<Instance>```direktori /bin dan letakkan markup berikut di dalamnya.
+Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
 
-## Daftar Isi
+## Table of Contents
 
-**Contoh**
+**Example**
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +41,9 @@ Pastikan bahwa file Aspose.Pdf.ListSectionStyle.xml ada di ```<Instance>```/bin,
 </ListSection>
 ```
 
-##  Daftar Tabel
+##  List of TableS
 
-**Contoh**
+**Example**
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -53,9 +53,9 @@ Pastikan bahwa file Aspose.Pdf.ListSectionStyle.xml ada di ```<Instance>```/bin,
 </ListSection>
 ```
 
-## Daftar Gambar
+## List of Figures
 
-**Contoh**
+**Example**
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,41 +66,40 @@ Pastikan bahwa file Aspose.Pdf.ListSectionStyle.xml ada di ```<Instance>```/bin,
 
 ```
 
-Silakan merujuk ke bagian 'Working with TOC' dari dokumentasi online Aspose.Pdf.
+Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
 
-**2-** Tambahkan parameter laporan 'IsListSectionSupported' dan setel nilainya menjadi True seperti yang ditunjukkan dalam paragraf 'List Section'.
-**3-** Tambahkan properti khusus untuk item laporan Anda yang ingin Anda masukkan dalam Daftar Isi, Daftar Tabel, atau Daftar Gambar.
+**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
+**3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Nama Properti Kustom** :IsInList
-**Nilai Properti** :Boolean
-**Nilai Properti Kustom** : True or False
+**Custom Property Name** :IsInList
+**Property Value** :Boolean
+**Custom Property Value** : True or False
 
 {{% alert color="primary" %}}
 
-Menandai item laporan saat ini sebagai terdaftar berdasarkan indeks dalam tabel isi, atau daftar tabel atau gambar.
+Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
 
 {{% /alert %}}
 
-**Nama Properti Kustom** : Judul
-**Tipe Properti Kustom** : String
+**Custom Property Name** : Title
+**Custom Property Type** : String
 
 {{% alert color="primary" %}}
 
-Judul item yang ditampilkan dalam tabel isi, daftar tabel, atau gambar.
+The item title displayed in the table of contents, list of tables or figures.
 {{% /alert %}}
 
-**Nama Properti Kustom** : ListLevel
-**Tipe Properti Kustom** : Integer
+**Custom Property Name** : ListLevel
+**Custom Property Type** : Integer
 
 {{% alert color="primary" %}}
 
-Tingkat item yang terdaftar yang ditampilkan dalam daftar isi.
+The level of listed items displayed in the table of contents.
 
 {{% /alert %}}
 
 {{% /alert %}}
-

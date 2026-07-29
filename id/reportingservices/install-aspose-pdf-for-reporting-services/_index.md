@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /id/reportingservices/install-aspose-pdf-for-reporting-services/
 description: Pelajari cara menginstal Aspose.PDF untuk Reporting Services. Ikuti panduan langkah demi langkah ini untuk mengaktifkan fungsi ekspor PDF di SSRS.
-lastmod: "2026-06-19"
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
@@ -17,4 +17,3 @@ lastmod: "2026-06-19"
 - [Instal dengan Alat Konfigurasi](/pdf/id/reportingservices/install-with-configuring-tool/)
 
 {{% /alert %}}
-

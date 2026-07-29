@@ -1,35 +1,35 @@
 ---
-title: Pemformatan HTML
-linktitle: Pemformatan HTML
+title: HTML Formatting
+linktitle: HTML Formatting
 type: docs
 weight: 20
-url: /id/reportingservices/html-formatting/
-description: Aktifkan pemformatan HTML dalam laporan PDF menggunakan Aspose.PDF for Reporting Services. Tambahkan gaya dan struktur dengan mudah.
-lastmod: "2026-06-19"
+url: /reportingservices/html-formatting/
+description: Enable HTML formatting in PDF reports using Aspose.PDF for Reporting Services. Add styles and structure with ease.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Kadang-kadang Anda mungkin ingin mengekspor teks dalam kotak teks dengan pemformatan. Sayangnya, Reporting Services tidak mendukung hal ini. Namun, Anda masih dapat melakukannya menggunakan Aspose.PDF for Reporting Services. Cukup aktifkan mode khusus di mana semua teks dalam kotak teks diperlakukan sebagai HTML dan masukkan tag HTML yang diperlukan untuk memformat teks dalam dokumen keluaran. Misalnya, untuk memiliki teks normal, tebal, dan miring dalam kotak teks yang sama, masukkan nilai kotak teks berikut:
+Sometimes you might wish to export text in textboxes with formatting. Unfortunately, Reporting Services does not support this. However, you still can implement it using Aspose.PDF for Reporting Services. Just enable a special mode in which all text in textboxes is treated as HTML and put the necessary HTML tags to format the text in the output document. For example, to have normal, bold and italic text in the same textbox, enter the following textbox value:
 
-Sebagian teks ini adalah ```<b>bold</b>``` dan teks lainnya adalah ```<i>italic</i>```.
+Some of this text is ```<b>bold</b>``` and other text is ```<i>italic</i>```.
 
-Saat diekspor, teks akan terlihat seperti sebagian dari teks ini **bold** dan teks lainnya *italic*.
+When exported, the text will look like as some of this text is **bold** and other text is *italic*.
 
-Harap perhatikan bahwa pendekatan ini memiliki beberapa keterbatasan
+Please note that this approach has some limitations
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-- Pemformatan tidak terlihat pada waktu desain (di Report Builder, portal web Reporting Services, dll.). Sebaliknya, Anda akan melihat teks HTML dalam bentuk teks biasa dengan tag.
-- Ekstensi render Aspose.PDF untuk Reporting Services mengenali dan memformat kode HTML dengan benar di kotak teks. Renderer PDF default dari Reporting Services akan mengekspor markup ini sebagai teks biasa.
+- The formatting isn’t visible in design time (in the Report Builder, Reporting Services web portal etc.). Instead, you will see the HTML text in form of plain text with tags.
+- Aspose.PDF for Reporting Services rendering extension recognizes and properly formats HTML code in textboxes. The default PDF renderer of Reporting Services will export this markup as plain text.
 
-**Nama Parameter**: IsHtmlTagSupported  
-**Tipe Data**: Boolean  
-**Nilai yang didukung**: True, False (default)   
+**Parameter Name**: IsHtmlTagSupported  
+**Date Type**: Boolean  
+**Values supported**: True, False (default)   
 
-**Contoh**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -44,10 +44,9 @@ Harap perhatikan bahwa pendekatan ini memiliki beberapa keterbatasan
 
 {{< /highlight >}}
 
-Jika Anda ingin menambahkan parameter ini di Report Designer, gunakan tipe data 'Boolean'.
+If you want to add this parameter in the Report Designer, use the 'Boolean' data type.
 
  
-Saat ini Aspose.Pdf for Reporting Services mendukung sebagian subset dari semua tag HTML. Anda dapat menemukan informasi lebih lanjut di Aspose.PDF [Dokumentasi](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
+Currently Aspose.PDF for Reporting Services supports a subset of all the HTML tags. You may find more information in the Aspose.PDF [Documentation](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}
-
