@@ -1,35 +1,35 @@
 ---
-title: HTML 格式化
-linktitle: HTML 格式化
+title: HTML Formatting
+linktitle: HTML Formatting
 type: docs
 weight: 20
-url: /zh/reportingservices/html-formatting/
-description: 使用 Aspose.PDF for Reporting Services 在 PDF 报告中启用 HTML 格式化。轻松添加样式和结构。
-lastmod: "2026-06-19"
+url: /reportingservices/html-formatting/
+description: Enable HTML formatting in PDF reports using Aspose.PDF for Reporting Services. Add styles and structure with ease.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-有时您可能希望导出带有格式的文本框文本。遗憾的是，Reporting Services 不支持此功能。不过，您仍然可以使用 Aspose.PDF for Reporting Services 实现它。只需启用一种特殊模式，使所有文本框中的文本都被视为 HTML，并放置必要的 HTML 标记以在输出文档中格式化文本。例如，要在同一个文本框中拥有普通、粗体和斜体文本，请输入以下文本框值：
+Sometimes you might wish to export text in textboxes with formatting. Unfortunately, Reporting Services does not support this. However, you still can implement it using Aspose.PDF for Reporting Services. Just enable a special mode in which all text in textboxes is treated as HTML and put the necessary HTML tags to format the text in the output document. For example, to have normal, bold and italic text in the same textbox, enter the following textbox value:
 
-这段文字的一部分是 ```<b>bold</b>``` 以及其他文本是 ```<i>italic</i>```.
+Some of this text is ```<b>bold</b>``` and other text is ```<i>italic</i>```.
 
-导出后，文本看起来会像这段文字的一部分是 **bold**，另一部分是 *italic*。
+When exported, the text will look like as some of this text is **bold** and other text is *italic*.
 
-请注意，此方法有一些限制
+Please note that this approach has some limitations
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-- 在设计时（在 Report Builder、Reporting Services web portal 等）中，格式不可见。相反，您会看到以标签形式的纯文本 HTML 文本。
-- Aspose.PDF for Reporting Services 渲染扩展能够识别并正确格式化文本框中的 HTML 代码。Reporting Services 的默认 PDF 渲染器会将此标记导出为纯文本。
+- The formatting isn’t visible in design time (in the Report Builder, Reporting Services web portal etc.). Instead, you will see the HTML text in form of plain text with tags.
+- Aspose.PDF for Reporting Services rendering extension recognizes and properly formats HTML code in textboxes. The default PDF renderer of Reporting Services will export this markup as plain text.
 
-**参数名称**: IsHtmlTagSupported  
-**数据类型**: Boolean  
-**支持的值**: True, False (default)   
+**Parameter Name**: IsHtmlTagSupported  
+**Date Type**: Boolean  
+**Values supported**: True, False (default)   
 
-**示例**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -44,10 +44,9 @@ lastmod: "2026-06-19"
 
 {{< /highlight >}}
 
-如果您想在 Report Designer 中添加此参数，请使用 ‘Boolean’ 数据类型。
+If you want to add this parameter in the Report Designer, use the 'Boolean' data type.
 
  
-当前 Aspose.Pdf for Reporting Services 支持所有 HTML 标签的一个子集。您可以在 Aspose.PDF 中找到更多信息。 [文档](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
+Currently Aspose.PDF for Reporting Services supports a subset of all the HTML tags. You may find more information in the Aspose.PDF [Documentation](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}
-

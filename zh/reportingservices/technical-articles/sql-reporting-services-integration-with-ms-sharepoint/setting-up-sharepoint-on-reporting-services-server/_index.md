@@ -4,22 +4,22 @@ linktitle: 在 Reporting Services 服务器上设置 SharePoint
 type: docs
 weight: 30
 url: /zh/reportingservices/setting-up-sharepoint-on-reporting-services-server/
-lastmod: "2026-06-19"
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-现在我们需要执行与 SharePoint WFE 相同的步骤。首先要完成 Prereq uisites 安装，完成后启动 SharePoint 安装。
+现在我们需要执行与 SharePoint WFE 相同的步骤。第一件事是完成 Prereq uisites 安装，一旦完成，就启动 SharePoint 设置。
 
 {{% /alert %}}
 
-对于设置，我选择服务器场并进行完整安装以匹配我的 SharePoint Box，因为我不想进行独立的 SharePoint 安装。
+对于设置，我选择 Server Farm 并进行完整安装以匹配我的 SharePoint Box，因为我不想为 SharePoint 使用独立安装。
 
 ## SharePoint 配置
 
 {{% alert color="primary" %}}
 
-**在 SharePoint 配置向导中，我们希望连接到现有的服务器农场。**
+**在 SharePoint Configuration Wizard 中，我们希望连接到现有的 Server Farm。**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_1.png)
 
@@ -28,7 +28,7 @@ lastmod: "2026-06-19"
 
 {{% alert color="primary" %}}
 
-**然后我们将其指向我们农场使用的 SharePoint_Config 数据库。如果您不知道它的位置，可以通过 Central Admin 的 System Settings -> Manager Servers 在此农场中查找。**
+**我们随后会将其指向我们农场使用的 SharePoint_Config 数据库。如果您不知道它在哪里，可以通过中央管理的系统设置 -> 管理服务器 来查找此农场。**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_2.png)
 
@@ -41,10 +41,9 @@ lastmod: "2026-06-19"
 
 {{% alert color="primary" %}}
 
-**一旦向导完成，这就是我们目前在报告服务器盒子上需要做的全部工作。返回 ReportServer URL 时，我们会看到另一个错误，但那是因为我们尚未通过 Central Administrator 进行配置。**
+**一旦向导完成，这就是我们目前在 Report Server 机器上需要做的全部工作。返回 ReportServer URL 时，我们会看到另一个错误，但那是因为我们尚未通过 Central Administrator 进行配置。**
 
 ![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_4.png)
 
 **Image4:- 报告服务器错误**
 {{% /alert %}}
-

@@ -4,13 +4,13 @@ linktitle: 示例报告画廊
 type: docs
 weight: 40
 url: /zh/reportingservices/sample-reports-gallery/
-description: 探索使用 Aspose.PDF for Reporting Services 生成的示例报告。了解您的 SSRS 报告如何转化为精美的 PDF 输出。
-lastmod: "2026-06-19"
+description: 探索使用 Aspose.PDF for Reporting Services 生成的示例报告。了解您的 SSRS 报告如何转换为精美的 PDF 输出。
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-此画廊展示了由 Aspose.Pdf for Reporting Services 导出的 PDF 报告。
+此画廊展示了由 Aspose.PDF for Reporting Services 导出的 PDF 报告。
 
 {{% /alert %}}
 
@@ -20,9 +20,9 @@ lastmod: "2026-06-19"
 
 ![公司销售  PDF 报告](sample-reports-gallery_1.png)
 
-## 员工销售摘要
+## 员工销售汇总
 
-![员工销售摘要 PDF 报告](sample-reports-gallery_2.png)
+![员工销售汇总 PDF 报告](sample-reports-gallery_2.png)
 
 ## 产品目录
 
@@ -35,4 +35,3 @@ lastmod: "2026-06-19"
 ## 销售订单详情
 
 ![PDF 中的销售订单详情报告](sample-reports-gallery_5.png)
-

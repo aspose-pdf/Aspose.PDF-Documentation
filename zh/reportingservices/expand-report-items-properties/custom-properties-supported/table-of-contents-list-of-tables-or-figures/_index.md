@@ -1,25 +1,25 @@
 ---
-title: 目录、表格列表或图形
-linktitle: 目录、表格列表或图形
+title: Table of Contents List of Tables or Figures
+linktitle: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
-url: /zh/reportingservices/table-of-contents-list-of-tables-or-figures/
-description: 了解如何使用 Aspose.PDF for Reporting Services 在 PDF 报告中添加目录、表格列表或图形。
-lastmod: "2026-06-19"
+url: /reportingservices/table-of-contents-list-of-tables-or-figures/
+description: Learn how to add a Table of Contents, List of Tables, or Figures in PDF reports using Aspose.PDF for Reporting Services.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer 不支持在报告文档中添加目录。使用 Aspose.PDF for Reporting Services，您可以轻松指示 PDF 渲染器生成带有目录、表格列表或图形的 PDF 文档。您可以按照以下步骤进行操作：
+Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-确保 Aspose.Pdf.ListSectionStyle.xml 文件存在于 ```<Instance>```/bin，在哪里 ```<Instance>``` 是 Report Server 的目录。如果文件不存在，请在其中创建。 ```<Instance>```/bin 目录，并将以下标记放入其中。
+Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
 
-## 目录
+## Table of Contents
 
-**示例**
+**Example**
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +41,9 @@ Report Designer 不支持在报告文档中添加目录。使用 Aspose.PDF for 
 </ListSection>
 ```
 
-##  表格列表
+##  List of TableS
 
-**示例**
+**Example**
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -53,9 +53,9 @@ Report Designer 不支持在报告文档中添加目录。使用 Aspose.PDF for 
 </ListSection>
 ```
 
-## 图表列表
+## List of Figures
 
-**示例**
+**Example**
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,41 +66,40 @@ Report Designer 不支持在报告文档中添加目录。使用 Aspose.PDF for 
 
 ```
 
-请参阅 Aspose.Pdf 在线文档中的 'Working with TOC' 部分。
+Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
 
-**2-** 添加报告参数 'IsListSectionSupported'，并将其值设置为 True，如 'List Section' 段落所示。
-**3-** 为您想要列入目录、表格目录或图表目录的报告项添加自定义属性。
+**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
+**3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**自定义属性名称** :IsInList
-**属性值** :Boolean
-**自定义属性值** : True 或 False
+**Custom Property Name** :IsInList
+**Property Value** :Boolean
+**Custom Property Value** : True or False
 
 {{% alert color="primary" %}}
 
-将当前报告项标记为在目录、表格列表或图形列表中按索引列出。
+Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
 
 {{% /alert %}}
 
-**自定义属性名称** : 标题
-**自定义属性类型** : 字符串
+**Custom Property Name** : Title
+**Custom Property Type** : String
 
 {{% alert color="primary" %}}
 
-在目录、表格列表或图形列表中显示的项目标题。
+The item title displayed in the table of contents, list of tables or figures.
 {{% /alert %}}
 
-**自定义属性名称** : 列表级别
-**自定义属性类型** : 整数
+**Custom Property Name** : ListLevel
+**Custom Property Type** : Integer
 
 {{% alert color="primary" %}}
 
-目录中显示的列出项的层级。
+The level of listed items displayed in the table of contents.
 
 {{% /alert %}}
 
 {{% /alert %}}
-
