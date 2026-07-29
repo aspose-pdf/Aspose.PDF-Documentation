@@ -3,25 +3,25 @@ title: Setting Parameters
 linktitle: Setting Parameters
 type: docs
 weight: 10
-url: /reportingservices/setting-parameters/
-description: Find out how to set parameters for PDF rendering in Aspose.PDF for Reporting Services. Achieve precise control over output.
-lastmod: "2021-06-05"
+url: /ru/reportingservices/setting-parameters/
+description: Узнайте, как задать параметры для рендеринга PDF в Aspose.PDF for Reporting Services и добиться точного контроля над выводом.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-You can specify certain configuration parameters that affect how Aspose.PDF for Reporting Services generates documents. This section describes this process.
+Вы можете указать определенные параметры конфигурации, которые влияют на то, как Aspose.PDF for Reporting Services создает документы. В этом разделе описан данный процесс.
 
 {{% /alert %}}
 
-To configure Aspose.PDF for Reporting Services, you need to edit the C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config file. This is an XML file and the renderer configuration is inside the ```<Extension>``` element corresponding to the Aspose.PDF renderer.
+Чтобы настроить Aspose.PDF for Reporting Services, нужно отредактировать файл `C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config`. Это XML-файл, а конфигурация рендерера находится внутри элемента ```<Extension>```, соответствующего рендереру Aspose.PDF.
 
 **Example**
 
 {{< highlight csharp >}}
 
 <Render>
-…
+...
 <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
 <!--Insert configuration elements for exporting to PDF here. The following is an example
 For PageOrientation -->
@@ -35,13 +35,13 @@ For PageOrientation -->
 
 {{% alert color="primary" %}}
 
-If you want to set parameters for specific report file but not for every report on the server, you can add a report parameter for the specific report in the Report Builder as the following steps (for example, we’ll add an 'IsLandscape' parameter shown earlier):
+Если вы хотите задать параметры только для конкретного файла отчета, а не для всех отчетов на сервере, вы можете добавить параметр отчета для этого отчета в Report Builder, выполнив следующие действия. В качестве примера ниже добавляется параметр `IsLandscape`, показанный ранее.
 
-1. Open the report in the Report Designer, right-click on the 'Parameters' folder in the 'Report Data' pane, and select 'Add Parameter…' (or, alternately, pull down the 'New' list and select 'Parameter…').
+1. Откройте отчет в Report Designer, щелкните правой кнопкой мыши папку `Parameters` на панели `Report Data` и выберите `Add Parameter...`. Также можно открыть список `New` и выбрать `Parameter...`.
  
 ![todo:image_alt_text](setting-parameters_1.png)
 
-1. In the 'Report Parameter Properties' dialog, create the parameter named 'IsLandscape', with the data type of Boolean, and add the value True in the 'Default Values' tab.
+1. В диалоговом окне `Report Parameter Properties` создайте параметр с именем `IsLandscape`, задайте тип данных Boolean и добавьте значение True на вкладке `Default Values`.
 
 ![todo:image_alt_text](setting-parameters_2.png)
 
