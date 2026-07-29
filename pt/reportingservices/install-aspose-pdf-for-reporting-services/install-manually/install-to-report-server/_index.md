@@ -1,40 +1,40 @@
 ---
-title: Instalar no Report Server
-linktitle: Instalar no Report Server
+title: Install to Report Server
+linktitle: Install to Report Server
 type: docs
 weight: 10
-url: /pt/reportingservices/install-to-report-server/
-lastmod: "2026-06-19"
+url: /reportingservices/install-to-report-server/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Você só precisa seguir estas etapas se instalar o Aspose.PDF for Reporting Services manualmente, não usando o instalador MSI. O instalador MSI executa todas as ações necessárias de instalação e registro automaticamente.
+You only need to follow these steps if you install Aspose.PDF for Reporting Services manually, not using the MSI installer. MSI installer performs all necessary installation and registration actions automatically.
 
 {{% /alert %}}
 
-Nas etapas seguintes, você precisará copiar e modificar arquivos no diretório onde o Microsoft SQL Server Reporting Services está instalado. O assembly do SSRS 2016 está localizado no diretório \Bin\SSRS2016 do pacote zip; o assembly do SSRS 2017 está localizado no diretório \Bin\SSRS2017; o assembly do SSRS 2019 está localizado no diretório \Bin\SSRS2019; o assembly do SSRS 2022 está localizado no diretório \Bin\SSRS2022; o assembly do Power BI Report Server está localizado no diretório \Bin\PowerBI. 
+In the following steps, you will need to copy and modify files in the directory where Microsoft SQL Server Reporting Services is installed. The SSRS 2016 assembly is located in the \Bin\SSRS2016 directory of the zip package; the SSRS 2017 assembly is located in the \Bin\SSRS2017 directory; the SSRS 2019 assembly is located in the \Bin\SSRS2019 directory; the SSRS 2022 assembly is located in the \Bin\SSRS2022 directory; the Power BI Report Server assembly is located in the \Bin\PowerBI directory. 
 
 {{% alert color="primary" %}}
 
-**Etapa 1.** Localize o diretório de instalação do Report Server. O diretório raiz do Microsoft SQL Server geralmente é C:\Program Files\Microsoft SQL Server. O processo posterior é um pouco diferente para Reporting Services 2016, Reporting Services 2017 e posteriores, e para o Power BI Report Server:
+**Step 1.** Locate the Report Server installation directory. The root directory for Microsoft SQL Server is usually C:\Program Files\Microsoft SQL Server. Further process is slightly different for Reporting Services 2016, Reporting Services 2017 and later, and Power BI Report Server:
 
-- O Report Server 2016, por padrão, é instalado no diretório C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer. Se você estiver usando instâncias com nomes personalizados em vez da padrão, o caminho padrão será C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
-- O Report Server 2017 e versões posteriores, por padrão, são instalados no diretório C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer.
-- O Power BI Report Server, por padrão, é instalado no diretório C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer.
+- Report Server 2016 by default is installed in the C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer directory. If you are using custom named instances instead of the default one, the default path will be C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
+- Report Server 2017 and later by default is installed in the C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer directory.
+- Power BI Report Server by default is installed in the C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer directory.
 
-No texto a seguir, o diretório de instalação do Reporting Services (um dos caminhos mencionados) será referenciado como ```<Instance>```.
+In the following text the installation directory of the Reporting Services (one of the aforementioned paths) will be referenced to as ```<Instance>```.
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Etapa 2.** Copie Aspose.Pdf.ReportingServices.dll para a versão correspondente do SSRS para ```<Instance>```pasta \bin.
+**Step 2.** Copy Aspose.Pdf.ReportingServices.dll for the corresponding SSRS version to the ```<Instance>```\bin folder.
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Etapa 3.** Registre o Aspose.Pdf for Reporting Services como uma extensão de renderização. Abra o ```<Instance>```\rsreportserver.config file e adicione as linhas a seguir no ```<Render>``` elemento:
+**Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. Open the ```<Instance>```\rsreportserver.config file and add the following lines into the ```<Render>``` element:
 {{% /alert %}}
 
-**Exemplo**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -49,10 +49,10 @@ No texto a seguir, o diretório de instalação do Reporting Services (um dos ca
 {{< /highlight >}}
 
 {{% alert color="primary" %}}
-**Etapa 4.** Forneça o Aspose.Pdf for Reporting Services com permissões para executar. Abra o ```<Instance>```arquivo \\rssrvpolicy.config e adicione o texto a seguir como o último item no segundo ao externo ```<CodeGroup>``` elemento (que deve ser ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
+**Step 4.** Provide Aspose.PDF for Reporting Services with permissions to execute. Open the ```<Instance>```\rssrvpolicy.config file and add the following text as the last item in the second to outer ```<CodeGroup>``` element (which should be ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
 {{% /alert %}}
 
-**Exemplo**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -81,19 +81,16 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 {{< /highlight >}}
 
 {{% alert color="primary" %}}
-**Etapa 5.** Verifique se o Aspose.Pdf for Reporting Services foi instalado com sucesso. Abra o portal web do Reporting Services e verifique a lista de formatos de exportação disponíveis para um relatório. Você pode iniciar o portal web iniciando um navegador e digitando a URL do portal web do Reporting Services na barra de endereço (por padrão, ela é http://```<Reporting_Services_server_name>```/reports/). Selecione um dos relatórios disponíveis em seu portal da Web e abra a lista suspensa Exportar. Você deve ver a lista de formatos de exportação, incluindo os fornecidos pela extensão Aspose.Pdf for Reporting Services. Selecione o item PDF via Aspose.PDF.
+**Step 5.** Verify that Aspose.PDF for Reporting Services was installed successfully. Open the Reporting Services web portal and check the list of available export formats for a report. You can launch the web portal by starting a web browser and typing the Reporting Services web portal URL in the address bar (by default it is http://```<Reporting_Services_server_name>```/reports/). Select one of the reports available in your web portal and pull the Export dropdown list. You should see the list of export formats including the ones provided by the Aspose.PDF for Reporting Services extension. Select PDF via Aspose.PDF item.
 
  
 {{% /alert %}}
 
 ![todo:image_alt_text](install-to-report-server_1.png)
 
-Clique no item selecionado. Ele gerará o relatório no formato selecionado, enviará ao cliente e, dependendo das configurações do seu navegador, exibirá a caixa de diálogo Salvar arquivo para escolher onde salvar o relatório exportado ou baixará automaticamente o arquivo para a sua pasta Downloads.
+Click the selected item. It will generate the report in the selected format, send it to the client, and, depending on your web browser settings, either show you the Save File dialog to choose where to save the exported report, or automatically download the file to the your Downloads folder.
 
 {{% alert color="primary" %}}
-Parabéns, você instalou o Aspose.Pdf for Reporting Services com sucesso e exportou um relatório como documento PDF!
+Congratulations, you’ve successfully installed Aspose.PDF for Reporting Services and exported a report as a PDF document!
 {{% /alert %}}
-
-
-
 

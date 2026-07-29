@@ -1,23 +1,23 @@
 ---
-title: Licença
-linktitle: Licença
+title: License
+linktitle: License
 
 type: docs
 weight: 70
-url: /pt/reportingservices/license-aspose-pdf-for-reporting-services/
-description: Entenda as opções de licenciamento para Aspose.PDF for Reporting Services. Descubra como ativar sua licença e desbloquear todas as funcionalidades.
-lastmod: "2026-06-19"
+url: /reportingservices/license-aspose-pdf-for-reporting-services/
+description: Understand licensing options for Aspose.PDF for Reporting Services. Find out how to activate your license and unlock full functionality.
+lastmod: "2021-06-05"
 ---
 
-**Aspose.Pdf for Reporting Services** versão de avaliação fornece o mesmo conjunto de recursos presente na versão Licenciada, exceto pela marca d'água de avaliação no PDF resultante ao usar a versão de avaliação. Por favor, visite nosso site e faça o download da versão do produto e comece a explorar nosso produto com o conjunto completo de recursos em modo de avaliação.
+**Aspose.PDF for Reporting Services** evaluation version provide the same set of features as present in Licensed version, except for the evaluation watermark in resultant PDF when using evaluation version. Please visit our website and download the product version and start exploring our product with complete set of features in an evaluation mode.
 
-Quando estiver satisfeito com sua avaliação, [compre uma licença](https://purchase.aspose.com/buy). Antes de comprar, certifique-se de que entende e concorda com os termos da assinatura da licença.
+When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
 
-A licença estará disponível para download na página de pedido após o pagamento do pedido. A licença é um arquivo XML em texto simples, assinado digitalmente. A licença contém informações como o nome do cliente, o produto adquirido e o tipo da licença. Não modifique o conteúdo do arquivo de licença, pois isso invalidará a licença.
+The license will be available for download from the order page after the order is paid. The license is a clear text, digitally signed XML file. The license contains information such as the client's name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
 
-## Licenciando um Servidor
+## Licensing a Server
 
-Baixe o arquivo de licença e copie-o para C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
+Download the license file and copy it to the C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
 
 ```<Instance>``` is the subdirectory name that corresponds to the Microsoft SQL Server 2016 instance you want to license.
 
@@ -50,4 +50,3 @@ Please note that that supported license file names are Aspose.PDF.ReportingServi
 You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}
-

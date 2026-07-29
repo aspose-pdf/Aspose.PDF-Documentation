@@ -4,18 +4,18 @@ linktitle: Metadados XMP
 type: docs
 weight: 80
 url: /pt/reportingservices/xmp-metadata/
-description: Aprenda a gerenciar metadados XMP em relatórios PDF usando Aspose.PDF for Reporting Services. Aprimore o gerenciamento de metadados de documentos.
-lastmod: "2026-06-19"
+description: Aprenda a gerenciar metadados XMP em relatórios PDF usando Aspose.PDF for Reporting Services. Melhore o tratamento de metadados de documentos.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-O designer de relatórios do Reporting Services não oferece suporte à incorporação de metadados XMP no documento. Aspose.Pdf for Reporting Services fornece quatro parâmetros para definir os metadados XMP correspondentes, que são:
+O designer de relatórios do Reporting Services não suporta a incorporação de metadados XMP no documento. Aspose.PDF for Reporting Services fornece quatro parâmetros para definir os respectivos metadados XMP, são eles:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Nome do parâmetro**: CreationDate  
+**Nome do Parâmetro**: CreationDate  
 **Tipo de Data**: String  
 **Valores suportados**: Data em um dos formatos de data
 
@@ -41,7 +41,7 @@ O designer de relatórios do Reporting Services não oferece suporte à incorpor
     <CreationDate>2017-12-10</CreationDate>
     <ModifyDate>2018-1-12</ModifyDate>
     <MetaDataDate>2018-3-7</MetaDataDate>
-    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    <CreatorTool>Aspose.PDF for Reporting Services</CreatorTool>
     </Configuration>
     </Extension>
 </Render>
@@ -49,5 +49,4 @@ O designer de relatórios do Reporting Services não oferece suporte à incorpor
 {{< /highlight >}}
 
 {{% /alert %}}
-
 

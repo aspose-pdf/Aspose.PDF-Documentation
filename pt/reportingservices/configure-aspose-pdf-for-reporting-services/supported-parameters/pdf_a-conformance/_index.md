@@ -4,15 +4,15 @@ linktitle: Conformidade PDF_A
 type: docs
 weight: 100
 url: /pt/reportingservices/pdf_a-conformance/
-description: Habilite a conformidade PDF/A no Aspose.PDF for Reporting Services. Crie documentos compatíveis com arquivamento sem esforço.
-lastmod: "2026-06-19"
+description: Ative a conformidade PDF/A no Aspose.PDF for Reporting Services. Crie documentos compatíveis com arquivamento sem esforço.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Você pode obter uma introdução à Conformidade PDF/A (PDF Arquivável) na documentação do Aspose.PDF.
+Você pode obter uma introdução à conformidade PDF/A (PDF Arquivável) na documentação do Aspose.PDF.
 
-Se você quiser criar um documento PDF/A, adicione o seguinte parâmetro de relatório.
+Se você deseja criar um documento PDF/A, adicione o seguinte parâmetro de relatório.
 
 {{% /alert %}}
 
@@ -37,4 +37,3 @@ Se você quiser criar um documento PDF/A, adicione o seguinte parâmetro de rela
 {{< /highlight >}}
 
 {{% /alert %}}
-
