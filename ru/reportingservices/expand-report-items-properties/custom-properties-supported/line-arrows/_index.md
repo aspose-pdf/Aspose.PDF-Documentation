@@ -4,13 +4,13 @@ linktitle: Стрелки линии
 type: docs
 weight: 20
 url: /ru/reportingservices/line-arrows/
-description: Узнайте, как добавлять стрелки к линиям в PDF‑отчетах с помощью Aspose.PDF for Reporting Services. Улучшайте визуальное оформление отчётов без усилий.
-lastmod: "2026-06-19"
+description: Узнайте, как добавить стрелки к линиям в PDF‑отчетах с помощью Aspose.PDF for Reporting Services. Легко улучшайте визуальное оформление отчетов.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Спецификация RDL не определяет стрелки для элемента line, поэтому Report Builder не поддерживает настройку стрелок для линий. С помощью Aspose.Pdf for Reporting Services вы можете легко это сделать.
+Спецификация RDL не определяет стрелки для элемента line, поэтому Report Builder не поддерживает настройку стрелок для линии. С помощью Aspose.PDF for Reporting Services вы можете легко сделать это.
 
 {{% /alert %}}
 
@@ -18,15 +18,15 @@ lastmod: "2026-06-19"
 
 В настоящее время рендерер Aspose.PDF поддерживает добавление стрелок в начале или в конце линий с помощью пользовательских свойств.
 
-Добавить начальную стрелку к линии  
-**Пользовательское свойство** **Имя**: HasArrowAtStart  
-**Значение пользовательского свойства**: True  
+Добавить стрелку в начале линии  
+**Свойство** **Имя**: HasArrowAtStart  
+**Значение свойства**: True  
 
-Добавить конечную стрелку к линии  
-**Пользовательское свойство** **Имя**: HasArrowAtEnd  
-**Значение пользовательского свойства**: True  
+Добавить стрелку в конце линии  
+**Свойство** **Имя**: HasArrowAtEnd  
+**Значение свойства**: True  
 
-Например, в текущем файле отчета есть две линии с именами 'line1' и 'line2', при этом line1 имеет начальную стрелку, line2 имеет начальную и конечную стрелки; чтобы удовлетворить этим требованиям, вы можете добавить пользовательские свойства, как показано в следующем фрагменте кода.
+Например, в текущем файле отчёта есть две линии с именами 'line1' и 'line2', при этом line1 имеет стрелку в начале, line2 — стрелку в начале и в конце; чтобы удовлетворить этим требованиям, вы можете добавить пользовательские свойства, как показано в следующем фрагменте кода.
 
 **Пример**
 
@@ -38,7 +38,7 @@ lastmod: "2026-06-19"
     <CustomProperties>
       <CustomProperty>
         <Name>HasArrowAtStart</Name>
-        <Value>True</Value>
+        <Value>Истина</Value>
       </CustomProperty>
     </CustomProperties>
 </Line>
@@ -50,15 +50,14 @@ lastmod: "2026-06-19"
     <CustomProperties>
       <CustomProperty>
         <Name>HasArrowAtStart</Name>
-        <Value>True</Value>
+        <Value>Истина</Value>
       </CustomProperty>
 <CustomProperty>
-        <Name>HasArrowAtEnd</Name>
-        <Value>True</Value>
+        <Name>ИмеетСтрелкуВКонце</Name>
+        <Value>Истина</Value>
       </CustomProperty>
     </CustomProperties>
 </Line>
 
 {{< /highlight >}}
 {{% /alert %}}
-

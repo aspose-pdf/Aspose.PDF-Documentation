@@ -1,34 +1,34 @@
 ---
-title: Метаданные XMP
-linktitle: Метаданные XMP
+title: XMP‑метаданные
+linktitle: XMP‑метаданные
 type: docs
 weight: 80
 url: /ru/reportingservices/xmp-metadata/
-description: Узнайте, как управлять метаданными XMP в PDF‑отчетах с помощью Aspose.PDF for Reporting Services. Улучшите обработку метаданных документа.
-lastmod: "2026-06-19"
+description: Научитесь управлять XMP‑метаданными в PDF‑отчётах с помощью Aspose.PDF for Reporting Services. Улучшите обработку метаданных документа.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Конструктор отчетов Reporting Services не поддерживает встраивание метаданных XMP в документ. Aspose.Pdf for Reporting Services предоставляет четыре параметра для установки соответствующих метаданных XMP, они следующие:
+Конструктор отчётов Reporting Services не поддерживает встраивание XMP‑метаданных в документ. Aspose.PDF for Reporting Services предоставляет четыре параметра для установки соответствующих XMP‑метаданных, они:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 **Имя параметра**: CreationDate  
-**Тип даты**: Строка  
+**Тип даты**: String  
 **Поддерживаемые значения**: Дата в одном из форматов даты
 
 **Имя параметра**: ModifyDate  
-**Тип даты**: Строка  
+**Тип даты**: String  
 **Поддерживаемые значения**: Дата в одном из форматов даты 
 
 **Имя параметра**: MetaDataDate  
-**Тип даты**: Строка  
+**Тип даты**: String  
 **Поддерживаемые значения**: Дата в одном из форматов даты 
 
 **Имя параметра**: CreatorTool  
-**Тип даты**: Строка  
+**Тип даты**: String  
 **Поддерживаемые значения**: Любой простой текст  
 
 **Пример**
@@ -41,7 +41,7 @@ lastmod: "2026-06-19"
     <CreationDate>2017-12-10</CreationDate>
     <ModifyDate>2018-1-12</ModifyDate>
     <MetaDataDate>2018-3-7</MetaDataDate>
-    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    <CreatorTool>Aspose.PDF for Reporting Services</CreatorTool>
     </Configuration>
     </Extension>
 </Render>
@@ -49,5 +49,4 @@ lastmod: "2026-06-19"
 {{< /highlight >}}
 
 {{% /alert %}}
-
 

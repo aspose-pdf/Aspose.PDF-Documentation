@@ -4,13 +4,13 @@ linktitle: Ориентация страницы
 type: docs
 weight: 10
 url: /ru/reportingservices/page-orientation/
-description: Настройте ориентацию страниц для PDF‑отчетов в Aspose.PDF for Reporting Services. Настройте макеты для лучшего представления.
-lastmod: "2026-06-19"
+description: Настройте ориентацию страниц для PDF‑отчетов в Aspose.PDF for Reporting Services. Настраивайте макеты для лучшего отображения.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Report Definition Language не позволяет явно указывать ориентацию страниц в отчете. С помощью Aspose.Pdf for Reporting Services вы можете легко указать экспортеру создавать PDF‑документы с альбомной ориентацией страниц. Ориентация по умолчанию — портретная.
+Язык определения отчетов (Report Definition Language) не позволяет явно задавать ориентацию страниц в отчете. С помощью Aspose.PDF for Reporting Services вы можете легко указать экспортеру создавать PDF‑документы с альбомной ориентацией страниц. Ориентация по умолчанию — портретная.
 
 {{% /alert %}}
 
@@ -19,7 +19,7 @@ Report Definition Language не позволяет явно указывать �
 Ориентация по умолчанию — портретная.
 **Имя параметра**: IsLandscape
 **Тип данных**: Boolean
-**Поддерживаемые значения**: True, False (default)
+**Поддерживаемые значения**: True, False (по умолчанию)
 
 **Пример**
 {{< highlight csharp >}}
@@ -27,7 +27,7 @@ Report Definition Language не позволяет явно указывать �
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
-    <IsLandscape>True</IsLandscape>
+    <IsLandscape>Истина</IsLandscape>
     </Configuration>
     </Extension>
 </Render>
@@ -35,4 +35,3 @@ Report Definition Language не позволяет явно указывать �
 {{< /highlight >}}
 
 {{% /alert %}}
-

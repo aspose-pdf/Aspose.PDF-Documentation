@@ -4,8 +4,8 @@ linktitle: Поддерживаемые форматы файлов
 type: docs
 weight: 20
 url: /ru/reportingservices/supported-file-formats/
-description: Ознакомьтесь с поддерживаемыми форматами файлов Aspose.PDF for Reporting Services. Легко преобразуйте ваши отчеты SSRS в PDF, DOC, XLS и другие форматы.
-lastmod: "2026-06-19"
+description: Ознакомьтесь с поддерживаемыми форматами файлов Aspose.PDF for Reporting Services. Преобразуйте свои отчёты SSRS в PDF, DOC, XLS и другие форматы с лёгкостью.
+lastmod: "2026-07-29"
 ---
 
 ## Поддерживаемые форматы загрузки
@@ -19,7 +19,7 @@ lastmod: "2026-06-19"
 
 ## Поддерживаемые форматы сохранения
 
-В следующей таблице указаны форматы файлов, в которых документ может быть сохранён с помощью Aspose.PDF for Reporting Services. 
+В следующей таблице указаны форматы файлов, в которых документ может быть сохранён с использованием Aspose.PDF for Reporting Services. 
 
 |**Формат**|**Описание**|
 | :- | :- |
@@ -27,4 +27,3 @@ lastmod: "2026-06-19"
 |PDF/A |Сохраняет документ в формате PDF/A|
 |[XPS](https://docs.fileformat.com/page-description-language/xps/)|Сохраняет документ в формате XML Paper Specification|
 |EPUB|Сохраняет документ в формате электронных книг|
-

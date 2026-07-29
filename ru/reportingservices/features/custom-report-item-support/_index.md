@@ -4,8 +4,8 @@ linktitle: Поддержка пользовательских элементо�
 type: docs
 weight: 30
 url: /ru/reportingservices/custom-report-item-support/
-description: Воспользуйтесь поддержкой пользовательских элементов отчета в Aspose.PDF for Reporting Services. Легко получайте настроенные, высококачественные PDF‑выводы.
-lastmod: "2026-06-19"
+description: Используйте поддержку пользовательских элементов отчета в Aspose.PDF for Reporting Services. Легко получайте настроенные, высококачественные PDF‑выводы.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
@@ -14,9 +14,8 @@ lastmod: "2026-06-19"
 
 - Оглавление, список таблиц или рисунков.
 - Линейные стрелки.
-- Сноска/Концевая сноска.
+- Сноска/концевая сноска.
 
 Узнайте, как их использовать в [Развернуть свойства элементов отчёта](/pdf/ru/reportingservices/expand-report-items-properties/) статья.
 
 {{% /alert %}}
-

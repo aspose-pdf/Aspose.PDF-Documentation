@@ -4,13 +4,13 @@ linktitle: Размер полей страницы
 type: docs
 weight: 70
 url: /ru/reportingservices/page-margin-size/
-description: Отрегулируйте размеры полей страниц в PDF‑отчетах с помощью Aspose.PDF for Reporting Services для улучшения читаемости и макета.
-lastmod: "2026-06-19"
+description: Настройте размеры полей страницы в PDF‑отчетах с помощью Aspose.PDF for Reporting Services для улучшения читаемости и макета.
+lastmod: "2026-07-29"
 ---
 
 {{% alert color="primary" %}}
 
-Конструктор отчетов Reporting Services не поддерживает настройку размеров полей страницы. Aspose.Pdf for Reporting Services предоставляет четыре параметра для установки соответствующего размера полей страницы, они:
+Конструктор отчетов Reporting Services не поддерживает установку размера полей страницы. Aspose.PDF for Reporting Services предоставляет четыре параметра для установки соответствующего размера полей, они следующие:
 
 {{% /alert %}}
 
@@ -54,4 +54,3 @@ lastmod: "2026-06-19"
 {{< /highlight >}}
 
 {{% /alert %}}
-

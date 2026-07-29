@@ -1,35 +1,35 @@
 ---
-title: HTML-форматирование
-linktitle: HTML-форматирование
+title: HTML Formatting
+linktitle: HTML Formatting
 type: docs
 weight: 20
-url: /ru/reportingservices/html-formatting/
-description: Включите форматирование HTML в PDF‑отчетах, используя Aspose.PDF for Reporting Services. Добавляйте стили и структуру с лёгкостью.
-lastmod: "2026-06-19"
+url: /reportingservices/html-formatting/
+description: Enable HTML formatting in PDF reports using Aspose.PDF for Reporting Services. Add styles and structure with ease.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Иногда вы можете захотеть экспортировать текст в текстовых полях с форматированием. К сожалению, Reporting Services не поддерживает это. Однако вы всё равно можете реализовать это с помощью Aspose.PDF for Reporting Services. Просто включите специальный режим, в котором весь текст в текстовых полях рассматривается как HTML, и добавьте необходимые HTML‑теги для форматирования текста в выходном документе. Например, чтобы иметь обычный, жирный и курсивный текст в одном текстовом поле, введите следующее значение текстового поля:
+Sometimes you might wish to export text in textboxes with formatting. Unfortunately, Reporting Services does not support this. However, you still can implement it using Aspose.PDF for Reporting Services. Just enable a special mode in which all text in textboxes is treated as HTML and put the necessary HTML tags to format the text in the output document. For example, to have normal, bold and italic text in the same textbox, enter the following textbox value:
 
-Некоторая часть этого текста ```<b>bold</b>``` и другой текст ```<i>italic</i>```.
+Some of this text is ```<b>bold</b>``` and other text is ```<i>italic</i>```.
 
-При экспорте текст будет выглядеть так, как будто часть этого текста **bold**, а другая часть *italic*.
+When exported, the text will look like as some of this text is **bold** and other text is *italic*.
 
-Обратите внимание, что у этого подхода есть некоторые ограничения
+Please note that this approach has some limitations
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-- Форматирование не отображается во время разработки (в Report Builder, веб‑портале Reporting Services и т.д.). Вместо этого вы увидите HTML‑текст в виде обычного текста с тегами.
-- Расширение рендеринга Aspose.PDF for Reporting Services распознаёт и правильно форматирует HTML‑код в текстовых полях. Стандартный PDF‑рендерер Reporting Services экспортирует эту разметку как обычный текст.
+- The formatting isn’t visible in design time (in the Report Builder, Reporting Services web portal etc.). Instead, you will see the HTML text in form of plain text with tags.
+- Aspose.PDF for Reporting Services rendering extension recognizes and properly formats HTML code in textboxes. The default PDF renderer of Reporting Services will export this markup as plain text.
 
-**Имя параметра**: IsHtmlTagSupported  
-**Тип данных**: Boolean  
-**Поддерживаемые значения**: True, False (по умолчанию)   
+**Parameter Name**: IsHtmlTagSupported  
+**Date Type**: Boolean  
+**Values supported**: True, False (default)   
 
-**Пример**
+**Example**
 
 {{< highlight csharp >}}
 
@@ -44,10 +44,9 @@ lastmod: "2026-06-19"
 
 {{< /highlight >}}
 
-Если вы хотите добавить этот параметр в Report Designer, используйте тип данных 'Boolean'.
+If you want to add this parameter in the Report Designer, use the 'Boolean' data type.
 
  
-В настоящее время Aspose.Pdf for Reporting Services поддерживает подмножество всех HTML‑тегов. Вы можете найти более подробную информацию в Aspose.PDF. [Документация](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
+Currently Aspose.PDF for Reporting Services supports a subset of all the HTML tags. You may find more information in the Aspose.PDF [Documentation](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}
-

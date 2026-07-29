@@ -1,25 +1,25 @@
 ---
-title: Оглавление Список таблиц или рисунков
-linktitle: Оглавление Список таблиц или рисунков
+title: Table of Contents List of Tables or Figures
+linktitle: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
-url: /ru/reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Узнайте, как добавить Оглавление, Список таблиц или рисунков в PDF‑отчеты, используя Aspose.PDF for Reporting Services.
-lastmod: "2026-06-19"
+url: /reportingservices/table-of-contents-list-of-tables-or-figures/
+description: Learn how to add a Table of Contents, List of Tables, or Figures in PDF reports using Aspose.PDF for Reporting Services.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer не поддерживает добавление оглавления для документов отчётов. С помощью Aspose.Pdf for Reporting Services вы можете легко указать PDF‑рендереру создавать PDF‑документы с Оглавлением, Список таблиц или рисунков. Вы можете сделать это в следующих шагах:
+Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-Убедитесь, что файл Aspose.Pdf.ListSectionStyle.xml существует в ```<Instance>```/bin, где ```<Instance>``` это каталог Report Server. Если файл не существует, создайте его в ```<Instance>```директорию /bin и разместите внутри следующую разметку.
+Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
 
-## Оглавление
+## Table of Contents
 
-**Пример**
+**Example**
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +41,9 @@ Report Designer не поддерживает добавление оглавл�
 </ListSection>
 ```
 
-##  Список таблиц
+##  List of TableS
 
-**Пример**
+**Example**
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -53,9 +53,9 @@ Report Designer не поддерживает добавление оглавл�
 </ListSection>
 ```
 
-## Список рисунков
+## List of Figures
 
-**Пример**
+**Example**
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,41 +66,40 @@ Report Designer не поддерживает добавление оглавл�
 
 ```
 
-Пожалуйста, обратитесь к разделу 'Working with TOC' в онлайн-документации Aspose.Pdf.
+Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
 
-**2-** Добавьте параметр отчёта 'IsListSectionSupported' и установите значение True, как показано в абзаце 'List Section'.
-**3-** Добавьте пользовательское свойство для элемента вашего отчёта, которое вы хотите включить в Содержание, Список таблиц или Список рисунков.
+**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
+**3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Имя пользовательского свойства** :IsInList
-**Значение свойства** :Boolean
-**Значение пользовательского свойства** : True or False
+**Custom Property Name** :IsInList
+**Property Value** :Boolean
+**Custom Property Value** : True or False
 
 {{% alert color="primary" %}}
 
-Отмечает текущий элемент отчета как включенный в список по индексу в оглавлении, списке таблиц или рисунков.
+Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
 
 {{% /alert %}}
 
-**Имя пользовательского свойства** : Заголовок
-**Тип пользовательского свойства** : Строка
+**Custom Property Name** : Title
+**Custom Property Type** : String
 
 {{% alert color="primary" %}}
 
-Заголовок элемента, отображаемый в оглавлении, списке таблиц или рисунков.
+The item title displayed in the table of contents, list of tables or figures.
 {{% /alert %}}
 
-**Имя пользовательского свойства** : Уровень списка
-**Тип пользовательского свойства** : Integer
+**Custom Property Name** : ListLevel
+**Custom Property Type** : Integer
 
 {{% alert color="primary" %}}
 
-Уровень перечисленных элементов, отображаемых в таблице содержимого.
+The level of listed items displayed in the table of contents.
 
 {{% /alert %}}
 
 {{% /alert %}}
-
