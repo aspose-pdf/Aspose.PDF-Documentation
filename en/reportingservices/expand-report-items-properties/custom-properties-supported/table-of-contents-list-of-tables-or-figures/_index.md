@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Report Designer does not support adding table of contents for report documents. With Aspose.Pdf for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
+Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
 
 {{% /alert %}}
 

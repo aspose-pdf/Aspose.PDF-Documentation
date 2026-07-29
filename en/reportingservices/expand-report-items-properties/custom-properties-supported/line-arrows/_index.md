@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-RDL specification does not specify the arrows about the line element, so report builder doesn’t support the setting of arrows for line. With Aspose.Pdf for Reporting Services you can do that easily.
+RDL specification does not specify the arrows about the line element, so report builder doesn’t support the setting of arrows for line. With Aspose.PDF for Reporting Services you can do that easily.
 
 {{% /alert %}}
 

@@ -10,7 +10,7 @@ lastmod: "2024-05-05"
 
 {{% alert color="primary" %}}
 
-This gallery demonstrates PDF reports exported by Aspose.Pdf for Reporting Services.
+This gallery demonstrates PDF reports exported by Aspose.PDF for Reporting Services.
 
 {{% /alert %}}
 

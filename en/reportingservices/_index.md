@@ -26,11 +26,11 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [Supported File Formats](/pdf/reportingservices/supported-file-formats/)
 - [Features](/pdf/reportingservices/features/)
 - [Sample Reports Gallery](/pdf/reportingservices/sample-reports-gallery/)
-- [Install Aspose.Pdf for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [License Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Configure Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Install Aspose.PDF for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [License Aspose.PDF for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [Configure Aspose.PDF for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
-- [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [Evaluate Aspose.PDF for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
 ## Aspose.PDF for Reporting Services Resources
 
@@ -40,8 +40,8 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [Aspose.PDF for Reporting Services Release Notes](https://releases.aspose.com/pdf/reportingservices/release-notes/)
 - [Download Aspose.PDF for Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
 - [Sample Reports Gallery Aspose.PDF for Reporting Services](/pdf/reportingservices/sample-reports-gallery/)
-- [Install Aspose.Pdf for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [License Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Configure Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Install Aspose.PDF for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [License Aspose.PDF for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [Configure Aspose.PDF for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
-- [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [Evaluate Aspose.PDF for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)

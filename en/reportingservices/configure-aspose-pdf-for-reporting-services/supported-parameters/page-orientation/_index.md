@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Report Definition Language does not allow specifying the orientation of pages in the report explicitly. With Aspose.Pdf for Reporting Services you can easily instruct the exporter to produce PDF documents with landscape page orientation. The default orientation is portrait.
+Report Definition Language does not allow specifying the orientation of pages in the report explicitly. With Aspose.PDF for Reporting Services you can easily instruct the exporter to produce PDF documents with landscape page orientation. The default orientation is portrait.
 
 {{% /alert %}}
 

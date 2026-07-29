@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Reporting Services report designer does not support common page sizes such as A4, B5, Letter and so on. With Aspose.Pdf for Reporting Services, you can get it as in the following example.
+Reporting Services report designer does not support common page sizes such as A4, B5, Letter and so on. With Aspose.PDF for Reporting Services, you can get it as in the following example.
 
 {{% /alert %}}
 
