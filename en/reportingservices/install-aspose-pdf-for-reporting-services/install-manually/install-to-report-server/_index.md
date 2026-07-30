@@ -31,7 +31,7 @@ In the following text the installation directory of the Reporting Services (one 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Step 3.** Register Aspose.Pdf for Reporting Services as a rendering extension. Open the ```<Instance>```\rsreportserver.config file and add the following lines into the ```<Render>``` element:
+**Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. Open the ```<Instance>```\rsreportserver.config file and add the following lines into the ```<Render>``` element:
 {{% /alert %}}
 
 **Example**
@@ -49,7 +49,7 @@ In the following text the installation directory of the Reporting Services (one 
 {{< /highlight >}}
 
 {{% alert color="primary" %}}
-**Step 4.** Provide Aspose.Pdf for Reporting Services with permissions to execute. Open the ```<Instance>```\rssrvpolicy.config file and add the following text as the last item in the second to outer ```<CodeGroup>``` element (which should be ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
+**Step 4.** Provide Aspose.PDF for Reporting Services with permissions to execute. Open the ```<Instance>```\rssrvpolicy.config file and add the following text as the last item in the second to outer ```<CodeGroup>``` element (which should be ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
 {{% /alert %}}
 
 **Example**
@@ -81,7 +81,7 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 {{< /highlight >}}
 
 {{% alert color="primary" %}}
-**Step 5.** Verify that Aspose.Pdf for Reporting Services was installed successfully. Open the Reporting Services web portal and check the list of available export formats for a report. You can launch the web portal by starting a web browser and typing the Reporting Services web portal URL in the address bar (by default it is http://```<Reporting_Services_server_name>```/reports/). Select one of the reports available in your web portal and pull the Export dropdown list. You should see the list of export formats including the ones provided by the Aspose.Pdf for Reporting Services extension. Select PDF via Aspose.PDF item.
+**Step 5.** Verify that Aspose.PDF for Reporting Services was installed successfully. Open the Reporting Services web portal and check the list of available export formats for a report. You can launch the web portal by starting a web browser and typing the Reporting Services web portal URL in the address bar (by default it is http://```<Reporting_Services_server_name>```/reports/). Select one of the reports available in your web portal and pull the Export dropdown list. You should see the list of export formats including the ones provided by the Aspose.PDF for Reporting Services extension. Select PDF via Aspose.PDF item.
 
  
 {{% /alert %}}
@@ -91,6 +91,6 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 Click the selected item. It will generate the report in the selected format, send it to the client, and, depending on your web browser settings, either show you the Save File dialog to choose where to save the exported report, or automatically download the file to the your Downloads folder.
 
 {{% alert color="primary" %}}
-Congratulations, you’ve successfully installed Aspose.Pdf for Reporting Services and exported a report as a PDF document!
+Congratulations, you’ve successfully installed Aspose.PDF for Reporting Services and exported a report as a PDF document!
 {{% /alert %}}
 

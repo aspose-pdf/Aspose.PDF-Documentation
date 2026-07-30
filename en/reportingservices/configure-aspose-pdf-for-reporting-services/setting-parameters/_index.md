@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-You can specify certain configuration parameters that affect how Aspose.Pdf for Reporting Services generates documents. This section describes this process.
+You can specify certain configuration parameters that affect how Aspose.PDF for Reporting Services generates documents. This section describes this process.
 
 {{% /alert %}}
 
