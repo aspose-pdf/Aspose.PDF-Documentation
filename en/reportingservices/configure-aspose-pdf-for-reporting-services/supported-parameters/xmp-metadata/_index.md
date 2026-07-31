@@ -15,27 +15,27 @@ Reporting Services report designer does not support embedding XMP metadata in th
 {{% /alert %}}
 
 ```text
-**Parameter Name**: CreationDate  
-**Date Type**: String  
-**Values supported**: Date in one of the date formats
+**Parameter Name: CreationDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats
 ```
 
 ```text
-**Parameter Name**: ModifyDate  
-**Date Type**: String  
-**Values supported**: Date in one of the date formats 
+**Parameter Name: ModifyDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
 ```
 
 ```text
-**Parameter Name**: MetaDataDate  
-**Date Type**: String  
-**Values supported**: Date in one of the date formats 
+**Parameter Name: MetaDataDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
 ```
 
 ```text
-**Parameter Name**: CreatorTool  
-**Date Type**: String  
-**Values supported**: Any plain text  
+**Parameter Name: CreatorTool  
+**Date Type: String  
+**Values supported: Any plain text  
 ```
 
 ## Example
