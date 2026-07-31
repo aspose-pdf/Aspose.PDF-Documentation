@@ -33,7 +33,7 @@ Values supported: True, False (default)
 
 ## Example
 
-```txt
+```xml
 <Render>
 ...
     <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices ">

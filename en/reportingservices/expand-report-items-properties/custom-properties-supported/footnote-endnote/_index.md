@@ -14,20 +14,21 @@ Report Builder cannot set the footnote or endnote for textboxes. With Aspose.PDF
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
 Footnote
-**Custom Property** **Name**: Footnote
-**Custom Property Value**: *the* *value* *should* *be* *a* *string*
+Custom Property `Name`: Footnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
+```text
 Endnote
-**Custom Property** **Name**: Endnote
-**Custom Property Value**: *the* *value* *should* *be* *a* *string*
+Custom Property `Name`: Endnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-{{% alert color="primary" %}}
-In the following example, the report contains a Textbox with the value 'AsposePdf4RS', and we want to add a supplementary description in the form of a footnote with text "An optional PDF renderer for SSRS from Aspose Pty. Ltd.".
-{{% /alert %}}
+In the following example, the report contains a Textbox with the value `AsposePdf4RS`, and we want to add a supplementary description in the form of a footnote with text "An optional PDF renderer for SSRS from Aspose Pty. Ltd.".
 
-**Example**
+## Example
 
 ```cs
 <Textbox Name="Textbox1">
@@ -53,4 +54,3 @@ In the following example, the report contains a Textbox with the value 'AsposePd
 </Paragraphs>
 </Textbox>
 ```
-{{% /alert %}}
