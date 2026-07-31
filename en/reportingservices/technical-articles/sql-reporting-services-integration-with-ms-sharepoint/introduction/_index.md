@@ -33,7 +33,7 @@ Out setup consists of 4 servers. It includes of a Domain Controller, a SQL Serve
 
 The Reporting Services Add-In for SharePoint is one of the key components to getting Integration working properly. The Add-In needs to be installed on any of the Web Front Ends (WFE) that is in your SharePoint farm along with the Central Admin server. One of the new changes with SQL 2008 R2 & SharePoint 2010 is that the 2008 R2 Add-In is now a pre-requisite for the SharePoint Install. This means that the RS Add-In will be laid down when you go to install SharePoint. It has been shown and highlighted in figure below. This actually avoids a lot of issues we saw with SP 2007 and RS 2008 when installing the Add-In.
 
-![todo:image_alt_text](introduction_1.png)
+![Introduction](introduction_1.png)
 
 **Image1 :- Reporting Services Add-in for Share Point**
 {{% /alert %}}

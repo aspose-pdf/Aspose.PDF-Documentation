@@ -14,15 +14,16 @@ Report Definition Language does not allow specifying the orientation of pages in
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-
+```text
 The default orientation is portrait.
-**Parameter Name**: IsLandscape
-**Date Type**: Boolean
-**Values supported**: True, False (default)
+Parameter Name: IsLandscape
+Date Type: Boolean
+Values supported: True, False (default)
+```
 
-**Example**
-{{< highlight csharp >}}
+## Example
+
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -31,7 +32,5 @@ The default orientation is portrait.
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
-
-{{% /alert %}}

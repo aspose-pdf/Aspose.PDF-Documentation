@@ -26,5 +26,5 @@ Aspose.PDF for Reporting Services creates documents on the server without utiliz
 
 ## Aspose.PDF for Reporting Services makes it possible to export any report in PDF format
 
-![todo:image_alt_text](product-overview_2.png)
+![Product Overview](product-overview_2.png)
 

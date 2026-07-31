@@ -13,23 +13,21 @@ RS designer does not support the embedded font for text; with Aspose.PDF for Rep
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Parameter Name**: IsFontEmbedded  
-**Date Type**: Boolean  
-**Values supported**: True, False (default)  
+```txt
+Parameter Name: IsFontEmbedded  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**Example**
-{{< highlight csharp >}}
+## Example
 
+```xml
 <Render>
-…
+...
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
     <IsFontEmbedded>True</IsFontEmbedded>
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```

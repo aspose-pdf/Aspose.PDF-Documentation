@@ -17,7 +17,7 @@ Aspose.PDF for Reporting Services supports RDL specification. It means:
 
 {{% /alert %}}
 
-## **Supported RDL Elements**
+## Supported RDL Elements
 Aspose.PDF for Reporting Services supports the following RDL elements:
 
 - Sections
