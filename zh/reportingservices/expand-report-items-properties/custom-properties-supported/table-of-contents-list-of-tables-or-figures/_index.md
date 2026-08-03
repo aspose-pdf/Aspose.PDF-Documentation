@@ -1,25 +1,24 @@
 ---
-title: Table of Contents List of Tables or Figures
-linktitle: Table of Contents List of Tables or Figures
+title: 目录 表格或图形列表
+linktitle: 目录 表格或图形列表
 type: docs
 weight: 10
 url: /reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Learn how to add a Table of Contents, List of Tables, or Figures in PDF reports using Aspose.PDF for Reporting Services.
+description: 了解如何使用 Aspose.PDF for Reporting Services 在 PDF 报告中添加目录、表格列表或图表。
 lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
+报表设计器不支持添加报表文档的目录。使用 Aspose.PDF for Reporting Services，您可以轻松指示 PDF 渲染器生成带有目录、表格或图形列表的 PDF 文档。您可以按照以下步骤进行操作：
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
+确保 Aspose.Pdf.ListSectionStyle.xml 文件存在于 ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin 目录中，并将以下标记放入其中。
 
-## Table of Contents
+## 目录
 
-**Example**
+### 例子
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +40,9 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 </ListSection>
 ```
 
-##  List of TableS
+##  表列表
 
-**Example**
+### 例子
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -53,9 +52,9 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 </ListSection>
 ```
 
-## List of Figures
+## 图列表
 
-**Example**
+### 例子
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,40 +65,29 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 
 ```
 
-Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
+请参阅 Aspose.Pdf 在线文档的“使用 TOC”部分。
 
-**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
-**3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
+**2-** 添加报告参数`IsListSectionSupported` 并将值设置为True，如`List Section` 段落中所示。
+**3-** 为您想要在目录、表格或图形列表中列出的报告项目添加自定义属性。
 
-{{% /alert %}}
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
-{{% alert color="primary" %}}
+将当前报告项目标记为按目录或表格或图形列表中的索引列出。
 
-**Custom Property Name** :IsInList
-**Property Value** :Boolean
-**Custom Property Value** : True or False
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
-{{% alert color="primary" %}}
+目录、表格或图形列表中显示的项目标题。
 
-Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
-{{% /alert %}}
-
-**Custom Property Name** : Title
-**Custom Property Type** : String
-
-{{% alert color="primary" %}}
-
-The item title displayed in the table of contents, list of tables or figures.
-{{% /alert %}}
-
-**Custom Property Name** : ListLevel
-**Custom Property Type** : Integer
-
-{{% alert color="primary" %}}
-
-The level of listed items displayed in the table of contents.
-
-{{% /alert %}}
-
-{{% /alert %}}
+目录中显示的列出项目的级别。

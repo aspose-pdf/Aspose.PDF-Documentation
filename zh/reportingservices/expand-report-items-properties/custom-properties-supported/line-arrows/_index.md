@@ -1,44 +1,46 @@
 ---
-title: 线条箭头
-linktitle: 线条箭头
+title: 线箭头
+linktitle: 线箭头
 type: docs
 weight: 20
-url: /zh/reportingservices/line-arrows/
-description: 学习如何在 PDF 报告中使用 Aspose.PDF for Reporting Services 添加线条箭头。轻松提升报告视觉效果。
-lastmod: "2026-07-29"
+url: /reportingservices/line-arrows/
+description: 了解使用 Aspose.PDF for Reporting Services 在 PDF 报告中添加线条箭头。轻松增强报告视觉效果。
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-RDL 规范未对线元素的箭头进行规定，因此 Report Builder 不支持线的箭头设置。使用 Aspose.PDF for Reporting Services，您可以轻松实现此功能。
+RDL规范没有指定线元素的箭头，因此报表生成器不支持线的箭头设置。借助 Aspose.PDF for Reporting Services，您可以轻松做到这一点。
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+目前，Aspose.PDF 渲染器支持通过添加自定义属性在行的开头或结尾添加箭头。
 
-当前，Aspose.PDF 渲染器支持通过添加自定义属性为线的起点或终点添加箭头。
+```text
+Add Start Arrow for Line  
+Custom Property `Name`: HasArrowAtStart  
+Custom Property `Value`: True  
+```
 
-为线添加起始箭头  
-**自定义属性** **名称**: HasArrowAtStart  
-**自定义属性值**: True  
+```text
+Add End Arrow for Line  
+Custom Property `Name`: HasArrowAtEnd  
+Custom Property `Value`: True  
+```
 
-为线添加结束箭头  
-**自定义属性** **名称**: HasArrowAtEnd  
-**自定义属性值**: True  
+例如，有两行名为 `line1` 和 `line2` 在当前报表文件中，line1 有开始箭头，line2 有开始和结束箭头，为了满足这些要求，您可以添加自定义属性，如以下代码片段所示。
 
-例如，在当前报告文件中有两条线，分别名为 'line1' 和 'line2'，其中 line1 带有起始箭头，line2 带有起始和结束箭头。为满足这些要求，您可以按以下代码片段添加自定义属性。
+## 例子
 
-**示例**
-
-{{< highlight csharp >}}
+```xml
  <Line Name="line1">
     <Style>
       ......
     </style>
     <CustomProperties>
       <CustomProperty>
-        <Name>起始处有箭头</Name>
-        <Value>真</Value>
+        <Name>HasArrowAtStart</Name>
+        <Value>True</Value>
       </CustomProperty>
     </CustomProperties>
 </Line>
@@ -49,15 +51,14 @@ RDL 规范未对线元素的箭头进行规定，因此 Report Builder 不支持
     </style>
     <CustomProperties>
       <CustomProperty>
-        <Name>起始处有箭头</Name>
-        <Value>真</Value>
+        <Name>HasArrowAtStart</Name>
+        <Value>True</Value>
       </CustomProperty>
 <CustomProperty>
-        <Name>末尾有箭头</Name>
-        <Value>真</Value>
+        <Name>HasArrowAtEnd</Name>
+        <Value>True</Value>
       </CustomProperty>
     </CustomProperties>
 </Line>
+```
 
-{{< /highlight >}}
-{{% /alert %}}

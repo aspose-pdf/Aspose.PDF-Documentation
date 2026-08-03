@@ -1,14 +1,14 @@
 ---
-title: 展开报表项属性
-linktitle: 展开报表项属性
+title: 展开报告项目道具
+linktitle: 展开报告项目道具
 type: docs
 weight: 90
-url: /zh/reportingservices/expand-report-items-properties/
-description: 使用 Aspose.PDF 增强 SSRS 报表。了解如何展开报表项属性以实现详细的 PDF 定制。
-lastmod: "2026-07-29"
+url: /reportingservices/expand-report-items-properties/
+description: 使用 Aspose.PDF 增强 SSRS 报告。了解如何扩展报表项属性以进行详细的 PDF 自定义。
+lastmod: "2021-06-05"
 ---
 
-**此章节包括以下主题：**
+**本节包括以下主题：**
 
 - [添加自定义属性](/pdf/zh/reportingservices/adding-custom-properties/)
 - [支持自定义属性](/pdf/zh/reportingservices/custom-properties-supported/)

@@ -1,37 +1,37 @@
 ---
-title: 对齐 FullJustify 文本对齐
-linktitle: 对齐 FullJustify 文本对齐
+title: Justify FullJustify 文本对齐
+linktitle: Justify FullJustify 文本对齐
 type: docs
 weight: 40
-url: /zh/reportingservices/justify-fulljustify-text-alignment/
-description: 使用 Aspose.PDF for Reporting Services 实现 PDF 报表中文本对齐的完美效果。支持两端对齐和完全两端对齐选项。
-lastmod: "2026-07-29"
+url: /reportingservices/justify-fulljustify-text-alignment/
+description: 使用 Aspose.PDF for Reporting Services 在 PDF 报告中实现完美的文本对齐。支持对齐和完全对齐选项。
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-报表生成器不支持为文本框 “Justify” 与 “FullJustify” 指定文本对齐的功能。使用 Aspose.PDF for Reporting Services，您可以通过添加自定义属性轻松实现此功能。
+报表生成器不支持为文本框指定文本对齐方式的功能 `Justify` 和 `FullJustify`。借助 Aspose.PDF for Reporting Services，您可以通过添加自定义属性轻松实现这一点。
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**自定义属性名称** : TextAlignment  
-**自定义属性类型** : 字符串  
-**自定义属性值** : Justify, FullJustify  
+```text
+Custom Property `Name`: TextAlignment  
+Custom Property `Type`: String  
+Custom Property `Values`: Justify, FullJustify  
+```
 
-在报告中，代码应如下所示:
+报告中的代码应如下所示：
 
-**示例**
+## 例子
 
-{{< highlight csharp >}}
+```xml
 <Textbox Name="textbox1">
 <value> AsposePdf4RS </value>     
   <CustomProperties>
    <CustomProperty>
-     <Name>文本对齐</Name>
-     <Value>两端对齐</Value>
+     <Name>TextAlignment</Name>
+     <Value>Justify</Value>
    </CustomProperty>
   </CustomProperties>
 </Textbox>
-{{< /highlight >}}
-{{% /alert %}}
+```

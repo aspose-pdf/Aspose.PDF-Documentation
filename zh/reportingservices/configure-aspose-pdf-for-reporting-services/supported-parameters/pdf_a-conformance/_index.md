@@ -1,31 +1,30 @@
 ---
-title: PDF_A 合规性
-linktitle: PDF_A 合规性
+title: PDF_A 一致性
+linktitle: PDF_A 一致性
 type: docs
 weight: 100
-url: /zh/reportingservices/pdf_a-conformance/
-description: 在 Aspose.PDF for Reporting Services 中启用 PDF/A 合规性。轻松创建符合归档要求的文档。
-lastmod: "2026-07-29"
+url: /reportingservices/pdf_a-conformance/
+description: 在 Aspose.PDF for Reporting Services 中启用 PDF/A 一致性。轻松创建符合存档要求的文档。
+lastmod: "2025-05-22"
 ---
 
 {{% alert color="primary" %}}
 
-您可以在 Aspose.PDF 文档中了解 PDF/A（可归档 PDF）合规性的介绍。
+您可以在 Aspose.PDF 文档中了解 PDF/A（可存档 PDF）一致性的介绍。
 
-如果您想创建 PDF/A 文档，请添加以下报表参数。
+如果要创建 PDF/A 文档，请添加以下报告参数。
 
 {{% /alert %}}
 
+```text
+Parameter Name: PdfConformance  
+Date Type: String  
+Values supported: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
+```
 
-{{% alert color="primary" %}}
+## 例子
 
-**参数名称**: PdfConformance  
-**数据类型**: 字符串  
-**支持的值**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
-
-**示例**
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -34,6 +33,4 @@ lastmod: "2026-07-29"
     </Configuration>
     </Extension>
 </Render>
-{{< /highlight >}}
-
-{{% /alert %}}
+```

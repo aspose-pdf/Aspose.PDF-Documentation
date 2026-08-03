@@ -1,6 +1,6 @@
 ---
-title: Install to Report Server
-linktitle: Install to Report Server
+title: 安装到报表服务器
+linktitle: 安装到报表服务器
 type: docs
 weight: 10
 url: /reportingservices/install-to-report-server/
@@ -9,52 +9,38 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-You only need to follow these steps if you install Aspose.PDF for Reporting Services manually, not using the MSI installer. MSI installer performs all necessary installation and registration actions automatically.
+如果您手动安装 Aspose.PDF for Reporting Services，而不是使用 MSI 安装程序，则只需执行这些步骤。 MSI 安装程序自动执行所有必要的安装和注册操作。
 
 {{% /alert %}}
 
-In the following steps, you will need to copy and modify files in the directory where Microsoft SQL Server Reporting Services is installed. The SSRS 2016 assembly is located in the \Bin\SSRS2016 directory of the zip package; the SSRS 2017 assembly is located in the \Bin\SSRS2017 directory; the SSRS 2019 assembly is located in the \Bin\SSRS2019 directory; the SSRS 2022 assembly is located in the \Bin\SSRS2022 directory; the Power BI Report Server assembly is located in the \Bin\PowerBI directory. 
+在以下步骤中，您将需要复制并修改 Microsoft SQL Server Reporting Services 安装目录中的文件。 SSRS 2016程序集位于zip包的\Bin\SSRS2016目录下； SSRS 2017 程序集位于 \Bin\SSRS2017 目录中； SSRS 2019 程序集位于 \Bin\SSRS2019 目录中； SSRS 2022 程序集位于 \Bin\SSRS2022 目录中； Power BI 报表服务器程序集位于 \Bin\PowerBI 目录中。
 
-{{% alert color="primary" %}}
+**步骤 1.** 找到报表服务器安装目录。 Microsoft SQL Server 的根目录通常为C:\Program Files\Microsoft SQL Server。 Reporting Services 2016、Reporting Services 2017 及更高版本以及 Power BI 报表服务器的进一步流程略有不同：
 
-**Step 1.** Locate the Report Server installation directory. The root directory for Microsoft SQL Server is usually C:\Program Files\Microsoft SQL Server. Further process is slightly different for Reporting Services 2016, Reporting Services 2017 and later, and Power BI Report Server:
+- 默认情况下，Report Server 2016 安装在 C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer 目录中。如果您使用自定义命名实例而不是默认实例，则默认路径将为 C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
+- 默认情况下，Report Server 2017 及更高版本安装在 C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer 目录中。
+- Power BI 报表服务器默认安装在 C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer 目录中。
 
-- Report Server 2016 by default is installed in the C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer directory. If you are using custom named instances instead of the default one, the default path will be C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
-- Report Server 2017 and later by default is installed in the C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer directory.
-- Power BI Report Server by default is installed in the C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer directory.
+在下文中，Reporting Services 的安装目录（上述路径之一）将被引用为 `<Instance>`。
 
-In the following text the installation directory of the Reporting Services (one of the aforementioned paths) will be referenced to as ```<Instance>```.
-{{% /alert %}}
+**步骤2.** 将相应SSRS版本的Aspose.Pdf.ReportingServices.dll复制到`<Instance>\bin`文件夹。
 
-{{% alert color="primary" %}}
-**Step 2.** Copy Aspose.Pdf.ReportingServices.dll for the corresponding SSRS version to the ```<Instance>```\bin folder.
-{{% /alert %}}
+**步骤 3.** 将 Aspose.PDF for Reporting Services 注册为渲染扩展。打开 `<Instance>\rsreportserver.config` 文件并将以下行添加到 `<Render>` 元素中：
 
-{{% alert color="primary" %}}
-**Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. Open the ```<Instance>```\rsreportserver.config file and add the following lines into the ```<Render>``` element:
-{{% /alert %}}
+## 例子
 
-**Example**
-
-{{< highlight csharp >}}
-
- <Render>
+```xml
+<Render>
 ...
-<!--Start here.-->
-
 <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices"/>
-
 </Render>
+```
 
-{{< /highlight >}}
+**步骤 4.** 为 Aspose.PDF for Reporting Services 提供执行权限。打开`<Instance>\rssrvpolicy.config` 文件并将以下文本添加为​​第二个外部`<CodeGroup>` 元素中的最后一项，该元素应为`<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):`
 
-{{% alert color="primary" %}}
-**Step 4.** Provide Aspose.PDF for Reporting Services with permissions to execute. Open the ```<Instance>```\rssrvpolicy.config file and add the following text as the last item in the second to outer ```<CodeGroup>``` element (which should be ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
-{{% /alert %}}
+## 例子
 
-**Example**
-
-{{< highlight csharp >}}
+```xml
 
  <CodeGroup>
 ...
@@ -77,20 +63,14 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 </CodeGroup>
 
 </CodeGroup>
+```
 
-{{< /highlight >}}
+**步骤 5.** 验证 Aspose.PDF for Reporting Services 是否已成功安装。打开 Reporting Services Web 门户并检查报表的可用导出格式列表。您可以通过启动 Web 浏览器并在地址栏中键入 Reporting Services Web 门户 URL（默认情况下为http://@@KEEP_0@@/reports/).）来启动 Web 门户。选择 Web 门户中可用的报告之一并拉出“导出”下拉列表。您应该看到导出格式列表，包括 Aspose.PDF for Reporting Services 扩展提供的格式。通过 Aspose.PDF 项选择 PDF。
 
-{{% alert color="primary" %}}
-**Step 5.** Verify that Aspose.PDF for Reporting Services was installed successfully. Open the Reporting Services web portal and check the list of available export formats for a report. You can launch the web portal by starting a web browser and typing the Reporting Services web portal URL in the address bar (by default it is http://```<Reporting_Services_server_name>```/reports/). Select one of the reports available in your web portal and pull the Export dropdown list. You should see the list of export formats including the ones provided by the Aspose.PDF for Reporting Services extension. Select PDF via Aspose.PDF item.
+![Install to report server](install-to-report-server_1.png)
 
- 
-{{% /alert %}}
+单击所选项目。它将以所选格式生成报告，将其发送到客户端，并且根据您的 Web 浏览器设置，显示“保存文件”对话框以选择保存导出报告的位置，或自动将文件下载到您的“下载”文件夹。
 
-![todo:image_alt_text](install-to-report-server_1.png)
+恭喜，您已成功安装 Aspose.PDF for Reporting Services 并将报告导出为 PDF 文档！
 
-Click the selected item. It will generate the report in the selected format, send it to the client, and, depending on your web browser settings, either show you the Save File dialog to choose where to save the exported report, or automatically download the file to the your Downloads folder.
-
-{{% alert color="primary" %}}
-Congratulations, you’ve successfully installed Aspose.PDF for Reporting Services and exported a report as a PDF document!
-{{% /alert %}}
 

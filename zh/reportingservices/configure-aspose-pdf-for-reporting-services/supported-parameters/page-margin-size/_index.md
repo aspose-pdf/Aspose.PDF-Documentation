@@ -1,44 +1,46 @@
 ---
-title: 页面边距大小
-linktitle: 页面边距大小
+title: 页边距大小
+linktitle: 页边距大小
 type: docs
 weight: 70
-url: /zh/reportingservices/page-margin-size/
-description: 使用 Aspose.PDF for Reporting Services 调整 PDF 报告中的页面边距大小，以提高可读性和布局。
-lastmod: "2026-07-29"
+url: /reportingservices/page-margin-size/
+description: 使用 Aspose.PDF for Reporting Services 调整 PDF 报告中的页边距大小，以提高可读性和布局。
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Reporting Services 报表设计器不支持设置页面边距大小。Aspose.PDF for Reporting Services 提供四个参数来设置相应的页面边距大小，它们是：
+Reporting Services 报表设计器不支持设置页边距大小。 Aspose.PDF for Reporting Services提供了四个参数来设置相应的页边距大小，它们是：
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-1)  
-**参数名称**: PageMarginLeft  
-**日期类型**: Float  
-**支持的值**:  任意正数或零
+```text
+Parameter Name: PageMarginLeft  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-2)  
-**参数名称**: PageMarginRight  
-**日期类型**: Float  
-**支持的值**:  任意正数或零
+```text
+Parameter Name: PageMarginRight  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-3)  
-**参数名称**: PageMarginTop  
-**日期类型**: Float  
-**支持的值**:  任意正数或零
+```text
+Parameter Name: PageMarginTop  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-4)  
-**参数名称**: PageMarginBottom  
-**日期类型**: Float  
-**支持的值**:  任意正数或零
+```text
+Parameter Name: PageMarginBottom  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-**示例**
+## 例子
 
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
@@ -50,7 +52,4 @@ Reporting Services 报表设计器不支持设置页面边距大小。Aspose.PDF
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```

@@ -3,63 +3,70 @@ title: 安全设置
 linktitle: 安全设置
 type: docs
 weight: 30
-url: /zh/reportingservices/security-setting/
-lastmod: "2026-07-29"
+url: /reportingservices/security-setting/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-安全始终是所有领域中最重要的问题，无论是网络保护还是 PDF 文档的保护。文档之所以被加密，可能有多种原因：文档作者可能希望保持文档内容的安全，并且不希望他人进行更改，等等。
+安全一直是各个领域最重要的问题，无论是网络还是 PDF 文档的保护。确保文档安全的原因有很多：文档的作者可能希望保证文档内容的安全并且不希望允许其他人更改它，等等。
 
-Aspose.PDF for Reporting Services 通过向开发者提供这些可用于保护 PDF 文档的功能，对此类安全方面给予了充分关注。因此，它包含了许多参数，允许开发者对 PDF 文档实施不同的安全措施。
+Aspose.PDF for Reporting Services 非常重视此类安全方面的问题，为开发人员提供了这些功能，这些功能可帮助他们保护 PDF 文档。因此，它包含许多参数，允许开发人员对 PDF 文档应用不同的安全措施。
 
-其中一项措施是在加密过程中对 PDF 文档进行密码保护。您还可以限制或允许内容修改、复制内容、文档打印或启用/禁用表单填写。当前默认的 SQL Reporting Services PDF 导出器不支持这些功能，但您可以使用 Aspose.PDF for Reporting Services 实现这些功能。只需在报告或报告服务器配置文件中添加相应的安全参数，即可创建具有受限权限的安全 PDF 文档。
+其中一项措施是在加密过程中使用密码保护 PDF 文档。您还可以限制或允许内容修改、复制内容、文档打印或允许/禁用表单填写。默认的 SQL Reporting Services PDF 导出器目前不支持这些功能，但您可以使用 Aspose.PDF for Reporting Services 来实现这些功能。只需将相应的安全参数添加到报表或报表服务器配置文件中，您就可以使用有限的权限创建安全的 PDF 文档。
 
-当前，Aspose.PDF for Reporting Services 渲染器支持以下安全属性：
+目前，Aspose.PDF for Reporting Services 渲染器支持以下安全属性：
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+Parameter Name: User Password  
+Date Type: String  
+Values supported: Any plain text
+```
 
-**参数名称**: User Password  
-**日期类型**: String  
-**支持的值**: Any plain text
+```text
+Parameter Name: Master Password  
+Date Type: String  
+Values supported: Any plain text 
+```
 
-**参数名称**: Master Password  
-**日期类型**: String  
-**支持的值**: Any plain text 
+```text
+Parameter Name: IsCopyingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default) 
+```
 
-**参数名称**: IsCopyingAllowed  
-**数据类型**: Boolean  
-**支持的值**: True, False (默认)  
+```text
+Parameter Name: IsPrintingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**参数名称**: IsPrintingAllowed  
-**数据类型**: Boolean  
-**支持的值**: True, False (默认)  
+```text
+Parameter Name: IsContentsModifyingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default) 
+```
 
-**参数名称**: IsContentsModifyingAllowed  
-**数据类型**: Boolean  
-**支持的值**: True, False (默认)  
+```text
+Parameter Name: IsFormFillingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**参数名称**: IsFormFillingAllowed  
-**数据类型**: Boolean  
-**支持的值**: True, False (默认)  
+## 例子
 
-**示例**
-
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
     <UserPassword>aspose</UserPassword>
-    <IsCopyingAllowed>假</IsCopyingAllowed>
-    <IsPrintingAllowed>假</IsPrintingAllowed>
+    <IsCopyingAllowed>False</IsCopyingAllowed>
+    <IsPrintingAllowed>False</IsPrintingAllowed>
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
-
-{{% /alert %}}

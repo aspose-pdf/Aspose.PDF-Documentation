@@ -1,35 +1,33 @@
 ---
-title: IsFontEmbedded
-linktitle: IsFontEmbedded
+title: 是否嵌入字体
+linktitle: 是否嵌入字体
 type: docs
 weight: 50
-url: /zh/reportingservices/isfontembedded/
-lastmod: "2026-07-29"
+url: /reportingservices/isfontembedded/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-RS 设计器不支持文本的嵌入字体；使用 Aspose.PDF for Reporting Services，您可以轻松地将字体信息嵌入到 PDF 文档中。
+RS Designer 不支持文本的嵌入字体；使用 Aspose.PDF for Reporting Services，您可以轻松地将字体信息嵌入到 PDF 文档中。
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**参数名称**: IsFontEmbedded  
-**数据类型**: Boolean  
-**支持的值**: True, False (默认)  
+```txt
+Parameter Name: IsFontEmbedded  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**示例**
-{{< highlight csharp >}}
+## 例子
 
+```xml
 <Render>
-…
+...
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
-    <IsFontEmbedded>真</IsFontEmbedded>
+    <IsFontEmbedded>True</IsFontEmbedded>
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```

@@ -1,19 +1,17 @@
 ---
-title: 安装 Aspose.PDF
-linktitle: 安装 Aspose.PDF
+title: 安装Aspose.PDF
+linktitle: 安装Aspose.PDF
 type: docs
 weight: 50
-url: /zh/reportingservices/install-aspose-pdf-for-reporting-services/
-description: 了解如何安装 Aspose.PDF for Reporting Services。按照本分步指南启用 SSRS 中的 PDF 导出功能。
-lastmod: "2026-07-29"
+url: /reportingservices/install-aspose-pdf-for-reporting-services/
+description: 了解如何安装 Aspose.PDF for Reporting Services。按照此分步指南在 SSRS 中启用 PDF 导出功能。
+lastmod: "2021-06-05"
 ---
-
-{{% alert color="primary" %}}
 
 **本节包括以下主题：**
 
-- [使用 MSI Installer 安装](/pdf/zh/reportingservices/install-with-msi-installer/)
-- [手动安装](/pdf/zh/reportingservices/install-manually/)
-- [使用配置工具进行安装](/pdf/zh/reportingservices/install-with-configuring-tool/)
+- [使用 MSI 安装程序安装](/pdf/reportingservices/install-with-msi-installer/)
+- [手动安装](/pdf/reportingservices/install-manually/)
+- [使用配置工具安装](/pdf/reportingservices/install-with-configuring-tool/)
 
-{{% /alert %}}
+
