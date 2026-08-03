@@ -1,29 +1,30 @@
 ---
-title: Justify FullJustify Alignement du texte
-linktitle: Justify FullJustify Alignement du texte
+title: Justifier l'alignement complet du texte
+linktitle: Justifier l'alignement complet du texte
 type: docs
 weight: 40
-url: /fr/reportingservices/justify-fulljustify-text-alignment/
-description: Obtenez un alignement du texte parfait dans les rapports PDF avec Aspose.PDF for Reporting Services. Prise en charge des options justify et full justify.
-lastmod: "2026-06-19"
+url: /reportingservices/justify-fulljustify-text-alignment/
+description: Obtenez un alignement parfait du texte dans les rapports PDF avec Aspose.PDF pour Reporting Services. Prise en charge des options de justification et de justification complète.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report builder ne prend pas en charge la capacité de spécifier l'alignement du texte pour la zone de texte « Justify » et « FullJustify ». Avec Aspose.Pdf for Reporting Services, vous pouvez le faire facilement en ajoutant des propriétés personnalisées.
+Le générateur de rapports ne prend pas en charge la possibilité de spécifier l'alignement du texte pour la zone de texte. `Justify` et `FullJustify`. Avec Aspose.PDF pour Reporting Services, vous pouvez le faire facilement en ajoutant des propriétés personnalisées.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Nom de la propriété personnalisée** : TextAlignment  
-**Type de propriété personnalisée** : String  
-**Valeurs de propriété personnalisée** : Justify, FullJustify  
+```text
+Custom Property `Name`: TextAlignment  
+Custom Property `Type`: String  
+Custom Property `Values`: Justify, FullJustify  
+```
 
-Dans le rapport, le code doit être comme suit :
+Dans le rapport, le code devrait ressembler à ce qui suit :
 
-**Exemple**
+## Exemple
 
-{{< highlight csharp >}}
+```xml
 <Textbox Name="textbox1">
 <value> AsposePdf4RS </value>     
   <CustomProperties>
@@ -33,6 +34,4 @@ Dans le rapport, le code doit être comme suit :
    </CustomProperty>
   </CustomProperties>
 </Textbox>
-{{< /highlight >}}
-{{% /alert %}}
-
+```

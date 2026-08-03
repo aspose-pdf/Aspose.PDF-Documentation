@@ -3,37 +3,44 @@ title: Métadonnées XMP
 linktitle: Métadonnées XMP
 type: docs
 weight: 80
-url: /fr/reportingservices/xmp-metadata/
-description: Apprenez à gérer les métadonnées XMP dans les rapports PDF à l'aide d'Aspose.PDF for Reporting Services. Améliorez la gestion des métadonnées des documents.
-lastmod: "2026-06-19"
+url: /reportingservices/xmp-metadata/
+description: Apprenez à gérer les métadonnées XMP dans les rapports PDF à l'aide d'Aspose.PDF pour Reporting Services. Améliorez la gestion des métadonnées des documents.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Le concepteur de rapports Reporting Services ne prend pas en charge l’intégration des métadonnées XMP dans le document. Aspose.Pdf for Reporting Services fournit quatre paramètres pour définir les métadonnées XMP correspondantes, à savoir :
+Le concepteur de rapports Reporting Services ne prend pas en charge l'intégration de métadonnées XMP dans le document. Aspose.PDF pour Reporting Services fournit quatre paramètres pour définir les métadonnées XMP correspondantes :
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Nom du paramètre** : CreationDate  
-**Date Type**: Chaîne  
-**Values supported**: Date dans l'un des formats de date
+```text
+**Parameter Name: CreationDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats
+```
 
-**Parameter Name**: ModifyDate  
-**Date Type**: Chaîne  
-**Values supported**: Date dans l'un des formats de date 
+```text
+**Parameter Name: ModifyDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**Parameter Name**: MetaDataDate  
-**Date Type**: Chaîne  
-**Values supported**: Date dans l'un des formats de date 
+```text
+**Parameter Name: MetaDataDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**Parameter Name**: CreatorTool  
-**Date Type**: Chaîne  
-**Values supported**: Tout texte simple  
+```text
+**Parameter Name: CreatorTool  
+**Date Type: String  
+**Values supported: Any plain text  
+```
 
-**Exemple**
-{{< highlight csharp >}}
+## Exemple
 
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer, Aspose.Pdf.ReportingServices">
@@ -41,13 +48,10 @@ Le concepteur de rapports Reporting Services ne prend pas en charge l’intégra
     <CreationDate>2017-12-10</CreationDate>
     <ModifyDate>2018-1-12</ModifyDate>
     <MetaDataDate>2018-3-7</MetaDataDate>
-    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    <CreatorTool>Aspose.PDF for Reporting Services</CreatorTool>
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```
 
 

@@ -1,25 +1,24 @@
 ---
-title: Table des matières Liste des tableaux ou des figures
-linktitle: Table des matières Liste des tableaux ou des figures
+title: Table des matières Liste des tableaux ou figures
+linktitle: Table des matières Liste des tableaux ou figures
 type: docs
 weight: 10
-url: /fr/reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Apprenez comment ajouter une table des matières, une liste des tableaux ou des figures dans les rapports PDF en utilisant Aspose.PDF for Reporting Services.
-lastmod: "2026-06-19"
+url: /reportingservices/table-of-contents-list-of-tables-or-figures/
+description: Découvrez comment ajouter une table des matières, une liste de tableaux ou des figures dans des rapports PDF à l'aide d'Aspose.PDF pour Reporting Services.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer ne prend pas en charge l’ajout d’une table des matières aux documents de rapport. Avec Aspose.Pdf for Reporting Services, vous pouvez facilement indiquer au rendu PDF de produire des documents PDF avec une table des matières, ou une liste des tableaux ou des figures. Vous pouvez le faire en suivant les étapes suivantes :
+Report Designer ne prend pas en charge l'ajout de table des matières pour les documents de rapport. Avec Aspose.PDF pour Reporting Services, vous pouvez facilement demander au rendu PDF de produire des documents PDF avec une table des matières ou une liste de tableaux ou de figures. Vous pouvez le faire en procédant comme suit :
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Assurez-vous que le fichier Aspose.Pdf.ListSectionStyle.xml existe dans ```<Instance>```/bin, où ```<Instance>``` est le répertoire du serveur de rapports. Si le fichier n'existe pas, créez-le dans le ```<Instance>```Répertoire /bin et placez le balisage suivant à l'intérieur.
+Assurez-vous que le fichier Aspose.Pdf.ListSectionStyle.xml existe dans le répertoire ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin et placez le balisage suivant à l'intérieur.
 
 ## Table des matières
 
-**Exemple**
+### Exemple
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +40,9 @@ Assurez-vous que le fichier Aspose.Pdf.ListSectionStyle.xml existe dans ```<Inst
 </ListSection>
 ```
 
-##  Liste des tables
+##  Liste des tableaux
 
-**Exemple**
+### Exemple
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -55,7 +54,7 @@ Assurez-vous que le fichier Aspose.Pdf.ListSectionStyle.xml existe dans ```<Inst
 
 ## Liste des figures
 
-**Exemple**
+### Exemple
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,41 +65,29 @@ Assurez-vous que le fichier Aspose.Pdf.ListSectionStyle.xml existe dans ```<Inst
 
 ```
 
-Veuillez vous référer à la section 'Working with TOC' de la documentation en ligne d'Aspose.Pdf.
+Veuillez vous référer à la section « Travailler avec la table des matières » de la documentation en ligne Aspose.Pdf.
 
-**2-** Ajoutez le paramètre de rapport 'IsListSectionSupported' et définissez la valeur sur True comme indiqué dans le paragraphe 'List Section'.
-**3-** Ajoutez une propriété personnalisée pour l'élément de rapport que vous souhaitez voir répertorié dans la Table des matières, la Liste des tableaux ou la Liste des figures.
+**2-** Ajoutez le paramètre de rapport `IsListSectionSupported` et définissez la valeur sur True comme indiqué dans le paragraphe `List Section`.
+**3-** Ajoutez une propriété personnalisée pour l'élément de rapport que vous souhaitez répertorier dans la table des matières, la liste des tableaux ou des figures.
 
-{{% /alert %}}
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
-{{% alert color="primary" %}}
+Marque l'élément de rapport actuel comme répertorié par index dans la table des matières ou dans la liste des tableaux ou des figures.
 
-**Nom de la propriété personnalisée** :IsInList
-**Valeur de la propriété** :Boolean
-**Valeur de la propriété personnalisée** : Vrai ou Faux
-
-{{% alert color="primary" %}}
-
-Marque l'élément de rapport actuel comme répertorié par index dans la table des matières, ou la liste des tableaux ou des figures.
-
-{{% /alert %}}
-
-**Nom de la propriété personnalisée** : Titre
-**Type de propriété personnalisée** : Chaîne
-
-{{% alert color="primary" %}}
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
 Le titre de l'élément affiché dans la table des matières, la liste des tableaux ou des figures.
-{{% /alert %}}
 
-**Nom de la propriété personnalisée** : NiveauListe
-**Type de propriété personnalisée** : Entier
-
-{{% alert color="primary" %}}
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
 Le niveau des éléments répertoriés affichés dans la table des matières.
-
-{{% /alert %}}
-
-{{% /alert %}}
-

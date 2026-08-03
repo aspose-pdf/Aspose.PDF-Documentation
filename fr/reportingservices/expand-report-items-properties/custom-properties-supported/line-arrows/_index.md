@@ -3,34 +3,36 @@ title: Flèches de ligne
 linktitle: Flèches de ligne
 type: docs
 weight: 20
-url: /fr/reportingservices/line-arrows/
-description: Apprenez à ajouter des flèches de ligne dans les rapports PDF à l’aide d’Aspose.PDF for Reporting Services. Améliorez l’aspect visuel des rapports sans effort.
-lastmod: "2026-06-19"
+url: /reportingservices/line-arrows/
+description: Apprenez à ajouter des flèches de ligne dans les rapports PDF à l'aide d'Aspose.PDF pour Reporting Services. Améliorez les visuels des rapports sans effort.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-La spécification RDL ne définit pas les flèches pour l’élément ligne, de sorte que le générateur de rapports ne prend pas en charge le paramétrage des flèches pour les lignes. Avec Aspose.Pdf for Reporting Services, vous pouvez le faire facilement.
+La spécification RDL ne spécifie pas les flèches sur l'élément de ligne, donc le générateur de rapports ne prend pas en charge la définition des flèches pour la ligne. Avec Aspose.PDF pour Reporting Services, vous pouvez le faire facilement.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+Actuellement, le moteur de rendu Aspose.PDF prend en charge l'ajout de flèches au début ou à la fin des lignes en ajoutant des propriétés personnalisées.
 
-Actuellement, le rendu Aspose.PDF prend en charge l’ajout de flèches au début ou à la fin des lignes en ajoutant des propriétés personnalisées.
+```text
+Add Start Arrow for Line  
+Custom Property `Name`: HasArrowAtStart  
+Custom Property `Value`: True  
+```
 
-Ajouter une flèche de début pour la ligne  
-**Propriété personnalisée** **Nom**: HasArrowAtStart  
-**Valeur de la propriété personnalisée**: True  
+```text
+Add End Arrow for Line  
+Custom Property `Name`: HasArrowAtEnd  
+Custom Property `Value`: True  
+```
 
-Ajouter une flèche de fin pour la ligne  
-**Propriété personnalisée** **Nom**: HasArrowAtEnd  
-**Valeur de la propriété personnalisée**: True  
+Par exemple, il y a deux lignes nommées `line1` et `line2` dans le fichier de rapport actuel, et line1 a la flèche de début, line2 a les flèches de début et de fin, pour satisfaire ces exigences, vous pouvez ajouter des propriétés personnalisées comme dans le fragment de code suivant.
 
-Par exemple, il existe deux lignes nommées 'line1' et 'line2' dans le fichier de rapport actuel, et line1 possède la flèche de départ, line2 possède les flèches de départ et de fin, pour répondre à ces exigences, vous pouvez ajouter des propriétés personnalisées comme dans le fragment de code suivant.
+## Exemple
 
-**Exemple**
-
-{{< highlight csharp >}}
+```xml
  <Line Name="line1">
     <Style>
       ......
@@ -58,7 +60,5 @@ Par exemple, il existe deux lignes nommées 'line1' et 'line2' dans le fichier d
       </CustomProperty>
     </CustomProperties>
 </Line>
-
-{{< /highlight >}}
-{{% /alert %}}
+```
 

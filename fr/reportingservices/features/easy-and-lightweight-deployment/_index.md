@@ -1,22 +1,21 @@
 ---
-title: Déploiement simple et léger
-linktitle: Déploiement simple et léger
+title: Déploiement facile et léger
+linktitle: Déploiement facile et léger
 type: docs
 weight: 40
-url: /fr/reportingservices/easy-and-lightweight-deployment/
-description: Apprenez comment déployer Aspose.PDF for Reporting Services avec un minimum d'effort. Une configuration légère garantit une mise en œuvre rapide et une efficacité optimale.
-lastmod: "2026-06-19"
+url: /reportingservices/easy-and-lightweight-deployment/
+description: Découvrez comment déployer Aspose.PDF pour Reporting Services avec un minimum d'effort. Une configuration légère garantit une mise en œuvre rapide et efficace.
+lastmod: "2021-06-05"
 ---
 
-**Aspose.Pdf for Reporting Services** est une extension de rendu personnalisée pour Microsoft SQL Server 2016/2017/2019/2022 Reporting Services et Power BI Report Server. Aspose.Pdf for Reporting Services est fourni sous forme d'un seul installateur MSI qui peut être installé sur les ordinateurs exécutant l'une des options suivantes :
+**Aspose.PDF pour Reporting Services** est une extension de rendu personnalisée pour Microsoft SQL Server 2016/2017/2019/2022 Reporting Services et Power BI Report Server. Aspose.PDF pour Reporting Services est fourni sous la forme d'un programme d'installation MSI unique pouvant être installé sur les ordinateurs exécutant l'un des éléments suivants :
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
+- Services de rapports Microsoft SQL Server 2016
+- Services de rapports Microsoft SQL Server 2017
+- Services de rapports Microsoft SQL Server 2019
+- Services de rapports Microsoft SQL Server 2022
+- Serveur de rapports Microsoft Power BI
  
-Aspose.Pdf for Reporting Services est facile à déployer et à gérer, car il ne comprend qu'une seule assembly .NET Aspose.Pdf.ReportingServices.dll, écrite entièrement en C#, conforme CLS et ne contenant que du code géré sûr. Vous devez disposer du .NET Framework 4.8.1 installé sur le serveur.
+Aspose.PDF pour Reporting Services est facile à déployer et à gérer, car il est composé d'un seul assemblage .NET Aspose.Pdf.ReportingServices.dll, entièrement écrit en C#, conforme CLS et contenant uniquement du code géré sécurisé. Vous devez avoir .NET Framework 4.8.1 installé sur le serveur.
 
-Aspose.Pdf.ReportingServices.dll doit être copié dans le répertoire ReportServer\bin et le fichier de configuration doit être mis à jour afin que Reporting Services prenne connaissance de la nouvelle extension de rendu. Ces étapes sont effectuées par le programme d'installation d'Aspose.Pdf for Reporting Services, mais vous pouvez également les réaliser manuellement comme décrit plus loin dans cette documentation.
-
+Aspose.Pdf.ReportingServices.dll doit être copié dans le répertoire ReportServer\bin et le fichier de configuration doit être mis à jour afin que Reporting Services connaisse la nouvelle extension de rendu. Ces étapes sont effectuées par le programme d'installation d'Aspose.PDF pour Reporting Services, mais vous pouvez également les effectuer manuellement comme décrit plus en détail dans cette documentation.
