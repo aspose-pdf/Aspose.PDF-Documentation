@@ -1,44 +1,46 @@
 ---
 title: Ukuran margin halaman
-linktitle: Ukuran margin halaman
+linktitle: Page margin size
 type: docs
 weight: 70
-url: /id/reportingservices/page-margin-size/
-description: Sesuaikan ukuran margin halaman pada laporan PDF dengan Aspose.PDF for Reporting Services untuk meningkatkan keterbacaan dan tata letak.
-lastmod: "2026-07-29"
+url: /reportingservices/page-margin-size/
+description: Sesuaikan ukuran margin halaman dalam laporan PDF dengan Aspose.PDF untuk Layanan Pelaporan untuk meningkatkan keterbacaan dan tata letak.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Desainer laporan Reporting Services tidak mendukung pengaturan ukuran margin halaman. Aspose.PDF for Reporting Services menyediakan empat parameter untuk mengatur ukuran margin halaman yang sesuai, yaitu:
+Perancang laporan Layanan Pelaporan tidak mendukung pengaturan ukuran margin halaman. Aspose.PDF untuk Layanan Pelaporan menyediakan empat parameter untuk mengatur ukuran margin halaman yang sesuai, yaitu:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-1)  
-**Nama Parameter**: PageMarginLeft  
-**Tipe Tanggal**: Float  
-**Nilai yang didukung**:  Setiap angka positif atau nol
+```text
+Parameter Name: PageMarginLeft  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-2)  
-**Nama Parameter**: PageMarginRight  
-**Tipe Tanggal**: Float  
-**Nilai yang didukung**:  Setiap angka positif atau nol
+```text
+Parameter Name: PageMarginRight  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-3)  
-**Nama Parameter**: PageMarginTop  
-**Tipe Tanggal**: Float  
-**Nilai yang didukung**:  Setiap angka positif atau nol
+```text
+Parameter Name: PageMarginTop  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-4)  
-**Nama Parameter**: PageMarginBottom  
-**Tipe Tanggal**: Float  
-**Nilai yang didukung**:  Setiap angka positif atau nol
+```text
+Parameter Name: PageMarginBottom  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-**Contoh**
+## Contoh
 
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
@@ -50,7 +52,4 @@ Desainer laporan Reporting Services tidak mendukung pengaturan ukuran margin hal
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```

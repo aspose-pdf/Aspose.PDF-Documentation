@@ -1,37 +1,36 @@
 ---
 title: Orientasi Halaman
-linktitle: Orientasi Halaman
+linktitle: Page Orientation
 type: docs
 weight: 10
-url: /id/reportingservices/page-orientation/
-description: Konfigurasikan orientasi halaman untuk laporan PDF di Aspose.PDF for Reporting Services. Sesuaikan tata letak untuk presentasi yang lebih baik.
-lastmod: "2026-07-29"
+url: /reportingservices/page-orientation/
+description: Konfigurasikan orientasi halaman untuk laporan PDF di Aspose.PDF untuk Layanan Pelaporan. Sesuaikan tata letak untuk presentasi yang lebih baik.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Definition Language tidak memungkinkan menentukan orientasi halaman dalam laporan secara eksplisit. Dengan Aspose.PDF for Reporting Services Anda dapat dengan mudah menginstruksikan pengekspor untuk menghasilkan dokumen PDF dengan orientasi halaman lanskap. Orientasi default adalah potret.
+Bahasa Definisi Laporan tidak memungkinkan penentuan orientasi halaman dalam laporan secara eksplisit. Dengan Aspose.PDF untuk Layanan Pelaporan Anda dapat dengan mudah menginstruksikan eksportir untuk menghasilkan dokumen PDF dengan orientasi halaman lanskap. Orientasi defaultnya adalah potret.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+The default orientation is portrait.
+Parameter Name: IsLandscape
+Date Type: Boolean
+Values supported: True, False (default)
+```
 
-Orientasi default adalah potret.
-**Nama Parameter**: IsLandscape
-**Tipe Data**: Boolean
-**Nilai yang didukung**: True, False (bawaan)
+## Contoh
 
-**Contoh**
-{{< highlight csharp >}}
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
-    <IsLandscape>Benar</IsLandscape>
+    <IsLandscape>True</IsLandscape>
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
-
-{{% /alert %}}

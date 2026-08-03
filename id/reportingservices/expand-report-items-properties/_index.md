@@ -1,11 +1,11 @@
 ---
-title: Perluas Properti Item Laporan
-linktitle: Perluas Properti Item Laporan
+title: Perluas Alat Peraga Item Laporan
+linktitle: Expand Report Items Props
 type: docs
 weight: 90
-url: /id/reportingservices/expand-report-items-properties/
-description: Tingkatkan laporan SSRS dengan Aspose.PDF. Pelajari cara memperluas properti item laporan untuk penyesuaian PDF yang terperinci.
-lastmod: "2026-07-29"
+url: /reportingservices/expand-report-items-properties/
+description: Tingkatkan laporan SSRS dengan Aspose.PDF. Pelajari cara memperluas properti item laporan untuk penyesuaian PDF mendetail.
+lastmod: "2021-06-05"
 ---
 
 **Bagian ini mencakup topik berikut:**

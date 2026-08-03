@@ -1,24 +1,24 @@
 ---
-title: Galeri Laporan Contoh
-linktitle: Galeri Laporan Contoh
+title: Galeri Contoh Laporan
+linktitle: Sample Reports Gallery
 type: docs
 weight: 40
-url: /id/reportingservices/sample-reports-gallery/
-description: Jelajahi laporan contoh yang dihasilkan menggunakan Aspose.PDF for Reporting Services. Lihat bagaimana laporan SSRS Anda dapat diubah menjadi output PDF yang halus.
-lastmod: "2026-07-29"
+url: /reportingservices/sample-reports-gallery/
+description: Jelajahi contoh laporan yang dihasilkan menggunakan Aspose.PDF untuk Layanan Pelaporan. Lihat bagaimana laporan SSRS Anda dapat diubah menjadi keluaran PDF yang sempurna.
+lastmod: "2024-05-05"
 ---
 
 {{% alert color="primary" %}}
 
-Galeri ini menunjukkan laporan PDF yang diekspor oleh Aspose.PDF for Reporting Services.
+Galeri ini menunjukkan laporan PDF yang diekspor oleh Aspose.PDF untuk Layanan Pelaporan.
 
 {{% /alert %}}
 
-Sebagian besar laporan yang ditampilkan di sini berasal dari basis data Adventure Works. Adventure Works adalah basis data contoh untuk Microsoft SQL Server, tersedia untuk diunduh dari Microsoft [di sini](http://www.microsoft.com/downloads/details.aspx?familyid=E719ECF7-9F46-4312-AF89-6AD8702E4E6E&displaylang=en).
+Sebagian besar laporan yang ditampilkan di sini berasal dari database Adventure Works. Adventure Works adalah contoh database untuk Microsoft SQL Server, tersedia untuk diunduh dari Microsoft [Di Sini](http://www.microsoft.com/downloads/details.aspx?familyid=E719ECF7-9F46-4312-AF89-6AD8702E4E6E&displaylang=en).
 
 ## Penjualan Perusahaan
 
-![Penjualan Perusahaan  laporan dalam PDF](sample-reports-gallery_1.png)
+![Laporan Penjualan Perusahaan dalam PDF](sample-reports-gallery_1.png)
 
 ## Ringkasan Penjualan Karyawan
 

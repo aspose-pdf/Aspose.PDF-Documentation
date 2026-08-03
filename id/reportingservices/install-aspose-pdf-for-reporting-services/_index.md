@@ -1,19 +1,17 @@
 ---
 title: Instal Aspose.PDF
-linktitle: Instal Aspose.PDF
+linktitle: Install Aspose.PDF
 type: docs
 weight: 50
-url: /id/reportingservices/install-aspose-pdf-for-reporting-services/
-description: Pelajari cara menginstal Aspose.PDF untuk Reporting Services. Ikuti panduan langkah demi langkah ini untuk mengaktifkan fungsi ekspor PDF di SSRS.
-lastmod: "2026-07-29"
+url: /reportingservices/install-aspose-pdf-for-reporting-services/
+description: Pelajari cara menginstal Aspose.PDF untuk Layanan Pelaporan. Ikuti panduan langkah demi langkah ini untuk mengaktifkan fungsionalitas ekspor PDF di SSRS.
+lastmod: "2021-06-05"
 ---
-
-{{% alert color="primary" %}}
 
 **Bagian ini mencakup topik berikut:**
 
-- [Instal dengan MSI Installer](/pdf/id/reportingservices/install-with-msi-installer/)
-- [Instal secara manual](/pdf/id/reportingservices/install-manually/)
-- [Instal dengan Alat Konfigurasi](/pdf/id/reportingservices/install-with-configuring-tool/)
+- [Instal dengan Penginstal MSI](/pdf/reportingservices/install-with-msi-installer/)
+- [Instal Secara Manual](/pdf/reportingservices/install-manually/)
+- [Instal dengan Alat Konfigurasi](/pdf/reportingservices/install-with-configuring-tool/)
 
-{{% /alert %}}
+

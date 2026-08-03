@@ -1,52 +1,50 @@
 ---
-title: License
+title: Lisensi
 linktitle: License
 
 type: docs
 weight: 70
 url: /reportingservices/license-aspose-pdf-for-reporting-services/
-description: Understand licensing options for Aspose.PDF for Reporting Services. Find out how to activate your license and unlock full functionality.
+description: Memahami opsi lisensi untuk Aspose.PDF untuk Layanan Pelaporan. Cari tahu cara mengaktifkan lisensi Anda dan membuka fungsionalitas penuh.
 lastmod: "2021-06-05"
 ---
 
-**Aspose.PDF for Reporting Services** evaluation version provide the same set of features as present in Licensed version, except for the evaluation watermark in resultant PDF when using evaluation version. Please visit our website and download the product version and start exploring our product with complete set of features in an evaluation mode.
+**Aspose.PDF untuk Layanan Pelaporan** versi evaluasi menyediakan serangkaian fitur yang sama seperti yang ada dalam versi Berlisensi, kecuali untuk tanda air evaluasi dalam PDF yang dihasilkan saat menggunakan versi evaluasi. Silakan kunjungi situs web kami dan unduh versi produk dan mulailah menjelajahi produk kami dengan serangkaian fitur lengkap dalam mode evaluasi.
 
-When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
+Jika Anda puas dengan evaluasi Anda, [beli lisensi](https://purchase.aspose.com/buy). Sebelum membeli, pastikan Anda memahami dan menyetujui persyaratan berlangganan lisensi.
 
-The license will be available for download from the order page after the order is paid. The license is a clear text, digitally signed XML file. The license contains information such as the client's name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
+Lisensi akan tersedia untuk diunduh dari halaman pemesanan setelah pesanan dibayar. Lisensinya berupa file XML teks yang jelas dan ditandatangani secara digital. Lisensi berisi informasi seperti nama klien, produk yang dibeli, dan jenis lisensi. Jangan mengubah konten file lisensi karena akan membatalkan lisensi.
 
-## Licensing a Server
+## Melisensikan Server
 
-Download the license file and copy it to the C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
+Unduh file lisensi dan salin ke folder C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\bin, atau C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, atau C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin di server (folder yang sama di mana Aspose.Pdf.ReportingServices.dll ditempatkan).
 
-```<Instance>``` is the subdirectory name that corresponds to the Microsoft SQL Server 2016 instance you want to license.
+`<Instance>` adalah nama subdirektori yang sesuai dengan instans Microsoft SQL Server 2016 yang ingin Anda lisensikan.
 
-The default instance directory for Microsoft SQL Server 2016 is MSRS13.MSSQLSERVER.
-For the Microsoft SQL Server 2017 and later the default instance path is C:\Program Files\Microsoft SQL Server\SSRS.
-For the Power BI Report Server the default instance path is C:\Program Files\Microsoft Power BI Report Server\PBIRS.
+Direktori instans default untuk Microsoft SQL Server 2016 adalah MSRS13.MSSQLSERVER.
+Untuk Microsoft SQL Server 2017 dan yang lebih baru, jalur instans default adalah C:\Program Files\Microsoft SQL Server\SSRS.
+Untuk Server Laporan Power BI, jalur instans default adalah C:\Program Files\Microsoft Power BI Report Server\PBIRS.
 
-**PDF generated using “Territory sales drilldown” report**
+**PDF dibuat menggunakan laporan "Penelusuran penjualan wilayah"**
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_1.png)
+![License-Territory sales drilldown](license-aspose-pdf-for-reporting-services_1.png)
 
+**PDF dibuat menggunakan laporan "Rincian Pesanan Penjualan"**
 
-**PDF generated using “Sales Order details” report**
+![License-Sales Order details](license-aspose-pdf-for-reporting-services_2.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_2.png)
+Jika ada masalah saat menginisialisasi lisensi, tanda air evaluasi ditampilkan dalam dokumen PDF yang dihasilkan seperti yang ditentukan di bawah ini.
 
-If there is a problem while initializing the license, an evaluation watermark is displayed in the resultant PDF document as specified below.
+**Dokumen PDF dibuat menggunakan "Penelusuran Penjualan Wilayah" dengan tanda air**
 
-**PDF document generated using “Territory Sales Drilldown” with watermark**
+![License-Territory Sales Drilldown](license-aspose-pdf-for-reporting-services_3.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_3.png)
+Harap perhatikan bahwa nama file lisensi yang didukung adalah Aspose.PDF.ReportingServices.lic, Aspose.Total.ReportingServices.lic dan Aspose.Total.Product.Family.lic. Jika file tersebut memiliki nama lain, silakan ganti namanya.
 
-Please note that that supported license file names are Aspose.PDF.ReportingServices.lic, Aspose.Total.ReportingServices.lic and Aspose.Total.Product.Family.lic. If the file has any other name, please rename it.
-
-
-## Temporary License
+## Lisensi Sementara
 
 {{% alert color="primary" %}}
 
-You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
+Anda juga dapat meminta lisensi sementara selama 30 hari untuk menguji produk. Silakan kunjungi tautan berikut untuk informasi lebih lanjut tentang cara mendapatkan lisensi Sementara. [Dapatkan Lisensi Sementara](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}

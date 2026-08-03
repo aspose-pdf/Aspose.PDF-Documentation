@@ -1,13 +1,14 @@
 ---
 title: Artikel Teknis
-linktitle: Artikel Teknis
+linktitle: Technical Articles
 type: docs
 weight: 120
-url: /id/reportingservices/technical-articles/
-description: Jelajahi artikel teknis untuk Aspose.PDF for Reporting Services. Dapatkan wawasan mendalam dan tip praktis untuk rendering PDF yang efektif.
-lastmod: "2026-07-29"
+url: /reportingservices/technical-articles/
+description: Jelajahi artikel teknis untuk Aspose.PDF untuk Layanan Pelaporan. Dapatkan wawasan mendalam dan tip praktis untuk rendering PDF yang efektif.
+lastmod: "2021-06-05"
 ---
 
 **Bagian ini mencakup topik berikut:**
-- [Migrasi dari SQL Reporting Services ke Aspose.PDF for Reporting Services](/pdf/id/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/)
-- [Integrasi SQL Reporting Services dengan MS SharePoint](/pdf/id/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/)
+
+- [Migrasi dari Layanan Pelaporan SQL ke Aspose.PDF untuk Layanan Pelaporan](/pdf/id/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/)
+- [Integrasi Layanan Pelaporan SQL dengan MS SharePoint](/pdf/id/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/)

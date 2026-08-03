@@ -1,36 +1,38 @@
 ---
 title: Informasi Debug
-linktitle: Informasi Debug
+linktitle: Debug Information
 type: docs
 weight: 90
-url: /id/reportingservices/debug-information/
-description: Akses dan analisis informasi debug untuk rendering PDF di Aspose.PDF for Reporting Services guna memecahkan masalah secara efektif.
-lastmod: "2026-07-29"
+url: /reportingservices/debug-information/
+description: Akses dan analisis informasi debug untuk rendering PDF di Aspose.PDF untuk Layanan Pelaporan guna memecahkan masalah secara efektif.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Tidak dapat dihindari bahwa ada sesuatu yang salah dengan rendering atau hasil rendering. Karena beberapa alasan seperti kerahasiaan atau privasi, kami tidak dapat memperoleh sumber data yang digunakan dalam laporan pengguna, sehingga tidak dapat mereproduksi kesalahan dalam laporan tersebut. Untuk mempermudah dan memperlancar komunikasi antara pelanggan dan pengembang, kami menambahkan parameter ini. Jika Anda mengalami masalah saat merender laporan Anda dengan Aspose.PDF for Reporting Services, silakan atur parameter laporan ini, maka Anda akan mendapatkan dokumen yang dirender dalam format XML. Setelah itu, harap unggah file XML tersebut kepada kami di forum produk.
+Tidak dapat dipungkiri jika ada yang salah pada rendering atau hasil yang dirender. Karena beberapa alasan seperti kerahasiaan atau privasi, kami tidak dapat menggunakan sumber data dalam laporan pengguna, sehingga tidak dapat mereproduksi kesalahan dalam laporan. Untuk membuat komunikasi antara pelanggan dan pengembang lebih mudah dan lancar, kami menambahkan parameter ini. Jika Anda menemui kendala saat merender laporan Anda dengan Aspose.PDF untuk Reporting Services, silakan atur parameter laporan ini, maka Anda akan mendapatkan dokumen yang dirender dengan format XML. Setelah itu, silakan posting file XML untuk kami di forum produk.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Nama Parameter**: SavingXmlFormat  
-**Tipe Tanggal**: Boolean  
-**Nilai yang didukung**: True, False (default)  
 
-**Contoh**
-{{< highlight csharp >}}
+```txt
+Parameter Name: SavingXmlFormat
+Date Type: Boolean  
+Values supported**: True, False (default)
+```
 
+## Contoh
+
+```xml
 <Render>
 ...
 <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices">
 <Configuration>
-<SavingXmlFormat > Benar </SavingXmlFormat>
+<SavingXmlFormat > True </SavingXmlFormat>
 </Configuration>
 </Extension>
 </Render>
-
-{{< /highlight >}}
+```
 
 {{% /alert %}}

@@ -1,49 +1,49 @@
 ---
-title: Menyiapkan SharePoint di Server Reporting Services
-linktitle: Menyiapkan SharePoint di Server Reporting Services
+title: Menyiapkan SharePoint di Server Layanan Pelaporan
+linktitle: Setting up SharePoint on Reporting Services Server
 type: docs
 weight: 30
-url: /id/reportingservices/setting-up-sharepoint-on-reporting-services-server/
-lastmod: "2026-07-29"
+url: /reportingservices/setting-up-sharepoint-on-reporting-services-server/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Sekarang kita perlu melakukan langkah serupa seperti yang kita lakukan untuk SharePoint WFE. Hal pertama adalah menjalani instalasi Prereq uisites dan setelah selesai, memulai penyiapan SharePoint.
+Sekarang kita perlu melakukan langkah serupa seperti yang kita lakukan untuk SharePoint WFE. Hal pertama adalah melalui instalasi Prereq uisites dan setelah selesai, mulai pengaturan SharePoint.
 
 {{% /alert %}}
 
-Untuk pengaturan, saya memilih Server Farm dan instalasi lengkap untuk mencocokkan SharePoint Box saya, karena saya tidak menginginkan instalasi mandiri untuk SharePoint.
+Untuk pengaturan saya memilih Server Farm dan instalasi lengkap agar sesuai dengan SharePoint Box saya, karena saya tidak ingin instalasi mandiri untuk SharePoint.
 
 ## Konfigurasi SharePoint
 
 {{% alert color="primary" %}}
 
-**Dalam SharePoint Configuration Wizard, kami ingin terhubung ke farm yang ada.**
+**Di Wizard Konfigurasi SharePoint, kami ingin menyambungkan ke farm yang sudah ada.**
 
-![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_1.png)
+![Panduan Konfigurasi SharePoint](setting-up-sharepoint-on-reporting-services-server_1.png)
 
-**Gambar1:- wizard konfigurasi SharePoint**
+**Gambar1:- Wizard konfigurasi SharePoint**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Kami kemudian akan mengarahkannya ke basis data SharePoint_Config yang digunakan oleh farm kami. Jika Anda tidak tahu di mana letaknya, Anda dapat menemukannya melalui Central Admin melalui System Settings -> Manager Servers di farm ini.**
+**Kami kemudian akan mengarahkannya ke database SharePoint_Config yang digunakan peternakan kami. Jika belum tahu ini dimana, bisa mengetahuinya melalui Admin Pusat melalui Pengaturan Sistem -> Server Manajer di peternakan ini.**
 
-![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_2.png)
+![Basis Data Konfigurasi SharePoint](setting-up-sharepoint-on-reporting-services-server_2.png)
 
-**Gambar2:- Tentukan pengaturan konfigurasi basis data**
+**Gambar2:- Tentukan pengaturan konfigurasi database**
 
-![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_3.png)
+![Panduan Konfigurasi SharePoint](setting-up-sharepoint-on-reporting-services-server_3.png)
 
-**Gambar3:- wizard konfigurasi SharePoint**
+**Gambar3:- Wizard konfigurasi SharePoint**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Setelah wizard selesai, itu semua yang perlu kita lakukan pada kotak Report Server untuk saat ini. Kembali ke URL ReportServer, kita akan melihat kesalahan lain, tetapi itu karena kita belum mengkonfigurasinya melalui Central Administrator.**
+**Setelah wizard selesai, hanya itu yang perlu kita lakukan pada Kotak Server Laporan untuk saat ini. Kembali ke URL ReportServer, kita akan melihat kesalahan lain, tapi itu karena kita belum mengkonfigurasinya melalui Administrator Pusat.**
 
-![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_4.png)
+![Kesalahan Konfigurasi SharePoint](setting-up-sharepoint-on-reporting-services-server_4.png)
 
-**Image4:- Kesalahan server laporan**
+**Gambar4:- Laporkan kesalahan server**
 {{% /alert %}}

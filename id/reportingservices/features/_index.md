@@ -1,17 +1,17 @@
 ---
 title: Fitur
-linktitle: Fitur
+linktitle: Features
 type: docs
 weight: 30
-url: /id/reportingservices/features/
-description: Temukan fitur utama Aspose.PDF for Reporting Services. Tingkatkan laporan SSRS dengan kemampuan render PDF canggih dan kustomisasi.
-lastmod: "2026-07-29"
+url: /reportingservices/features/
+description: Temukan fitur utama Aspose.PDF untuk Layanan Pelaporan. Sempurnakan laporan SSRS dengan kemampuan dan penyesuaian rendering PDF tingkat lanjut.
+lastmod: "2021-06-05"
 ---
 
 **Bagian ini mencakup topik berikut:**
 
-- [Dukungan RDL Komprehensif](/pdf/id/reportingservices/comprehensive-rdl-support/)
+- [Dukungan RDL yang Komprehensif](/pdf/id/reportingservices/comprehensive-rdl-support/)
 - [Dukungan Laporan Berparameter](/pdf/id/reportingservices/parameterized-report-support/)
 - [Dukungan Item Laporan Kustom](/pdf/id/reportingservices/custom-report-item-support/)
-- [Penyebaran yang Mudah dan Ringan](/pdf/id/reportingservices/easy-and-lightweight-deployment/)
+- [Penerapan yang Mudah dan Ringan](/pdf/id/reportingservices/easy-and-lightweight-deployment/)
 - [Dukungan Teknis Gratis Kelas Dunia](/pdf/id/reportingservices/world-class-free-technical-support/)

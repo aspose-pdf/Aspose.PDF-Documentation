@@ -1,37 +1,37 @@
 ---
-title: Penjajaran Teks Justify FullJustify
-linktitle: Penjajaran Teks Justify FullJustify
+title: Justify FullJustify Perataan Teks
+linktitle: Justify FullJustify Text Alignment
 type: docs
 weight: 40
-url: /id/reportingservices/justify-fulljustify-text-alignment/
-description: Capai penjajaran teks yang sempurna dalam laporan PDF dengan Aspose.PDF for Reporting Services. Mendukung opsi justify dan full justify.
-lastmod: "2026-07-29"
+url: /reportingservices/justify-fulljustify-text-alignment/
+description: Raih perataan teks sempurna dalam laporan PDF dengan Aspose.PDF untuk Layanan Pelaporan. Dukungan untuk opsi pembenaran dan pembenaran penuh.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report builder tidak mendukung kemampuan untuk menentukan penjajaran teks untuk kotak teks “Justify” dan “FullJustify”. Dengan Aspose.PDF for Reporting Services, Anda dapat melakukannya dengan mudah dengan menambahkan properti khusus.
+Pembuat laporan tidak mendukung kemampuan untuk menentukan perataan teks untuk kotak teks `Justify` Dan `FullJustify`. Dengan Aspose.PDF untuk Layanan Pelaporan, Anda dapat melakukannya dengan mudah dengan menambahkan properti khusus.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Nama Properti Kustom** : TextAlignment  
-**Tipe Properti Kustom** : String  
-**Nilai Properti Kustom** : Justify, FullJustify  
+```text
+Custom Property `Name`: TextAlignment  
+Custom Property `Type`: String  
+Custom Property `Values`: Justify, FullJustify  
+```
 
-Dalam laporan, kode harus seperti berikut:
+Dalam laporan, kodenya harus seperti berikut:
 
-**Contoh**
+## Contoh
 
-{{< highlight csharp >}}
+```xml
 <Textbox Name="textbox1">
 <value> AsposePdf4RS </value>     
   <CustomProperties>
    <CustomProperty>
-     <Name>Perataan Teks</Name>
-     <Value>Ratakan</Value>
+     <Name>TextAlignment</Name>
+     <Value>Justify</Value>
    </CustomProperty>
   </CustomProperties>
 </Textbox>
-{{< /highlight >}}
-{{% /alert %}}
+```

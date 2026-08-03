@@ -1,33 +1,34 @@
 ---
 title: Catatan Kaki Catatan Akhir
-linktitle: Catatan Kaki Catatan Akhir
+linktitle: Footnote Endnote
 type: docs
 weight: 30
-url: /id/reportingservices/footnote-endnote/
-description: Tambahkan catatan kaki dan catatan akhir ke laporan PDF Anda dengan Aspose.PDF for Reporting Services. Berikan referensi dokumen yang detail.
-lastmod: "2026-07-29"
+url: /reportingservices/footnote-endnote/
+description: Tambahkan catatan kaki dan catatan akhir ke laporan PDF Anda dengan Aspose.PDF untuk Layanan Pelaporan. Berikan referensi dokumen terperinci.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Builder tidak dapat mengatur catatan kaki atau catatan akhir untuk kotak teks. Dengan Aspose.PDF for Reporting Services, Anda dapat melakukannya dengan mudah dengan menambahkan properti khusus.
+Pembuat Laporan tidak dapat menyetel catatan kaki atau catatan akhir untuk kotak teks. Dengan Aspose.PDF untuk Layanan Pelaporan, Anda dapat melakukannya dengan mudah dengan menambahkan properti khusus.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Catatan Kaki
-**Custom Property** **Name**: Catatan Kaki
-**Custom Property Value**: *nilai* *harus* *berupa* *string*
+```text
+Footnote
+Custom Property `Name`: Footnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-Catatan Akhir
-**Custom Property** **Name**: Catatan Akhir
-**Custom Property Value**: *nilai* *harus* *berupa* *sebuah* *string*
+```text
+Endnote
+Custom Property `Name`: Endnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-{{% alert color="primary" %}}
-Dalam contoh berikut, laporan berisi sebuah Textbox dengan nilai 'AsposePdf4RS', dan kami ingin menambahkan deskripsi tambahan dalam bentuk catatan kaki dengan teks "An optional PDF renderer for SSRS from Aspose Pty. Ltd.".
-{{% /alert %}}
+Dalam contoh berikut, laporan berisi Kotak Teks dengan nilai `AsposePdf4RS`, dan kami ingin menambahkan deskripsi tambahan dalam bentuk catatan kaki dengan teks "Perender PDF opsional untuk SSRS dari Aspose Pty. Ltd.".
 
-**Contoh**
+## Contoh
 
 ```cs
 <Textbox Name="Textbox1">
@@ -53,4 +54,3 @@ Dalam contoh berikut, laporan berisi sebuah Textbox dengan nilai 'AsposePdf4RS',
 </Paragraphs>
 </Textbox>
 ```
-{{% /alert %}}

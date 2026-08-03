@@ -1,39 +1,46 @@
 ---
 title: Metadata XMP
-linktitle: Metadata XMP
+linktitle: XMP Metadata
 type: docs
 weight: 80
-url: /id/reportingservices/xmp-metadata/
-description: Pelajari cara mengelola metadata XMP dalam laporan PDF menggunakan Aspose.PDF for Reporting Services. Tingkatkan penanganan metadata dokumen.
-lastmod: "2026-07-29"
+url: /reportingservices/xmp-metadata/
+description: Pelajari cara mengelola metadata XMP dalam laporan PDF menggunakan Aspose.PDF untuk Layanan Pelaporan. Meningkatkan penanganan metadata dokumen.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Desainer laporan Reporting Services tidak mendukung penyisipan metadata XMP ke dalam dokumen. Aspose.PDF for Reporting Services menyediakan empat parameter untuk mengatur metadata XMP yang sesuai, yaitu:
+Perancang laporan Layanan Pelaporan tidak mendukung penyematan metadata XMP dalam dokumen. Aspose.PDF untuk Layanan Pelaporan menyediakan empat parameter untuk mengatur metadata XMP yang sesuai, yaitu:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Nama Parameter**: CreationDate  
-**Tipe Tanggal**: String  
-**Nilai yang didukung**: Tanggal dalam salah satu format tanggal
+```text
+**Parameter Name: CreationDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats
+```
 
-**Nama Parameter**: ModifyDate  
-**Tipe Tanggal**: String  
-**Nilai yang didukung**: Tanggal dalam salah satu format tanggal 
+```text
+**Parameter Name: ModifyDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**Nama Parameter**: MetaDataDate  
-**Tipe Tanggal**: String  
-**Nilai yang didukung**: Tanggal dalam salah satu format tanggal 
+```text
+**Parameter Name: MetaDataDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**Nama Parameter**: CreatorTool  
-**Tipe Tanggal**: String  
-**Nilai yang didukung**: Teks biasa apa saja  
+```text
+**Parameter Name: CreatorTool  
+**Date Type: String  
+**Values supported: Any plain text  
+```
 
-**Contoh**
-{{< highlight csharp >}}
+## Contoh
 
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer, Aspose.Pdf.ReportingServices">
@@ -45,8 +52,6 @@ Desainer laporan Reporting Services tidak mendukung penyisipan metadata XMP ke d
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
-
-{{% /alert %}}
 

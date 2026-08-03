@@ -1,5 +1,5 @@
 ---
-title: Install to Report Server
+title: Instal ke Server Laporan
 linktitle: Install to Report Server
 type: docs
 weight: 10
@@ -9,52 +9,38 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-You only need to follow these steps if you install Aspose.PDF for Reporting Services manually, not using the MSI installer. MSI installer performs all necessary installation and registration actions automatically.
+Anda hanya perlu mengikuti langkah-langkah ini jika Anda menginstal Aspose.PDF untuk Layanan Pelaporan secara manual, tidak menggunakan penginstal MSI. Penginstal MSI melakukan semua tindakan instalasi dan registrasi yang diperlukan secara otomatis.
 
 {{% /alert %}}
 
-In the following steps, you will need to copy and modify files in the directory where Microsoft SQL Server Reporting Services is installed. The SSRS 2016 assembly is located in the \Bin\SSRS2016 directory of the zip package; the SSRS 2017 assembly is located in the \Bin\SSRS2017 directory; the SSRS 2019 assembly is located in the \Bin\SSRS2019 directory; the SSRS 2022 assembly is located in the \Bin\SSRS2022 directory; the Power BI Report Server assembly is located in the \Bin\PowerBI directory. 
+Pada langkah-langkah berikut, Anda perlu menyalin dan memodifikasi file di direktori tempat Layanan Pelaporan Microsoft SQL Server diinstal. Perakitan SSRS 2016 terletak di direktori \Bin\SSRS2016 paket zip; perakitan SSRS 2017 terletak di direktori \Bin\SSRS2017; perakitan SSRS 2019 terletak di direktori \Bin\SSRS2019; perakitan SSRS 2022 terletak di direktori \Bin\SSRS2022; rakitan Server Laporan Power BI terletak di direktori \Bin\PowerBI.
 
-{{% alert color="primary" %}}
+**Langkah 1.** Temukan direktori instalasi Server Laporan. Direktori akar untuk Microsoft SQL Server biasanya C:\Program Files\Microsoft SQL Server. Proses lebih lanjut sedikit berbeda untuk Layanan Pelaporan 2016, Layanan Pelaporan 2017 dan yang lebih baru, dan Server Laporan Power BI:
 
-**Step 1.** Locate the Report Server installation directory. The root directory for Microsoft SQL Server is usually C:\Program Files\Microsoft SQL Server. Further process is slightly different for Reporting Services 2016, Reporting Services 2017 and later, and Power BI Report Server:
+- Report Server 2016 secara default diinstal di direktori C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer. Jika Anda menggunakan instans dengan nama khusus dan bukan instans default, jalur defaultnya adalah C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
+- Report Server 2017 dan yang lebih baru secara default diinstal di direktori C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer.
+- Server Laporan Power BI secara default diinstal di direktori C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer.
 
-- Report Server 2016 by default is installed in the C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer directory. If you are using custom named instances instead of the default one, the default path will be C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
-- Report Server 2017 and later by default is installed in the C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer directory.
-- Power BI Report Server by default is installed in the C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer directory.
+Dalam teks berikut, direktori instalasi Layanan Pelaporan (salah satu jalur yang disebutkan di atas) akan dirujuk sebagai `<Instance>`.
 
-In the following text the installation directory of the Reporting Services (one of the aforementioned paths) will be referenced to as ```<Instance>```.
-{{% /alert %}}
+**Langkah 2.** Salin Aspose.Pdf.ReportingServices.dll untuk versi SSRS yang sesuai ke folder `<Instance>\bin`.
 
-{{% alert color="primary" %}}
-**Step 2.** Copy Aspose.Pdf.ReportingServices.dll for the corresponding SSRS version to the ```<Instance>```\bin folder.
-{{% /alert %}}
+**Langkah 3.** Daftarkan Aspose.PDF untuk Layanan Pelaporan sebagai ekstensi rendering. Buka file `<Instance>\rsreportserver.config` dan tambahkan baris berikut ke dalam elemen `<Render>`:
 
-{{% alert color="primary" %}}
-**Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. Open the ```<Instance>```\rsreportserver.config file and add the following lines into the ```<Render>``` element:
-{{% /alert %}}
+## Contoh
 
-**Example**
-
-{{< highlight csharp >}}
-
- <Render>
+```xml
+<Render>
 ...
-<!--Start here.-->
-
 <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices"/>
-
 </Render>
+```
 
-{{< /highlight >}}
+**Langkah 4.** Berikan Aspose.PDF untuk Layanan Pelaporan dengan izin untuk mengeksekusi. Buka file `<Instance>\rssrvpolicy.config` dan tambahkan teks berikut sebagai item terakhir di elemen kedua di luar `<CodeGroup>` yang seharusnya `<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):`
 
-{{% alert color="primary" %}}
-**Step 4.** Provide Aspose.PDF for Reporting Services with permissions to execute. Open the ```<Instance>```\rssrvpolicy.config file and add the following text as the last item in the second to outer ```<CodeGroup>``` element (which should be ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
-{{% /alert %}}
+## Contoh
 
-**Example**
-
-{{< highlight csharp >}}
+```xml
 
  <CodeGroup>
 ...
@@ -77,20 +63,14 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 </CodeGroup>
 
 </CodeGroup>
+```
 
-{{< /highlight >}}
+**Langkah 5.** Verifikasi bahwa Aspose.PDF untuk Layanan Pelaporan berhasil diinstal. Buka portal web Layanan Pelaporan dan periksa daftar format ekspor yang tersedia untuk laporan. Anda dapat meluncurkan portal web dengan memulai browser web dan mengetikkan URL portal web Layanan Pelaporan di bilah alamat (secara default adalah http://@@KEEP_0@@/reports/). Pilih salah satu laporan yang tersedia di portal web Anda dan tarik daftar tarik-turun Ekspor. Anda akan melihat daftar format ekspor termasuk yang disediakan oleh ekstensi Aspose.PDF untuk Layanan Pelaporan. Pilih PDF melalui item Aspose.PDF.
 
-{{% alert color="primary" %}}
-**Step 5.** Verify that Aspose.PDF for Reporting Services was installed successfully. Open the Reporting Services web portal and check the list of available export formats for a report. You can launch the web portal by starting a web browser and typing the Reporting Services web portal URL in the address bar (by default it is http://```<Reporting_Services_server_name>```/reports/). Select one of the reports available in your web portal and pull the Export dropdown list. You should see the list of export formats including the ones provided by the Aspose.PDF for Reporting Services extension. Select PDF via Aspose.PDF item.
+![Install to report server](install-to-report-server_1.png)
 
- 
-{{% /alert %}}
+Klik item yang dipilih. Ini akan menghasilkan laporan dalam format yang dipilih, mengirimkannya ke klien, dan, tergantung pada pengaturan browser web Anda, menampilkan dialog Simpan File untuk memilih tempat menyimpan laporan yang diekspor, atau secara otomatis mengunduh file ke folder Unduhan Anda.
 
-![todo:image_alt_text](install-to-report-server_1.png)
+Selamat, Anda telah berhasil menginstal Aspose.PDF untuk Layanan Pelaporan dan mengekspor laporan sebagai dokumen PDF!
 
-Click the selected item. It will generate the report in the selected format, send it to the client, and, depending on your web browser settings, either show you the Save File dialog to choose where to save the exported report, or automatically download the file to the your Downloads folder.
-
-{{% alert color="primary" %}}
-Congratulations, you’ve successfully installed Aspose.PDF for Reporting Services and exported a report as a PDF document!
-{{% /alert %}}
 

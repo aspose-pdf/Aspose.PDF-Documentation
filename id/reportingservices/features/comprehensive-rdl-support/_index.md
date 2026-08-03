@@ -1,30 +1,30 @@
 ---
 title: Dukungan RDL yang Komprehensif
-linktitle: Dukungan RDL yang Komprehensif
+linktitle: Comprehensive RDL Support
 type: docs
 weight: 10
-url: /id/reportingservices/comprehensive-rdl-support/
-description: Temukan dukungan RDL yang komprehensif dalam Aspose.PDF untuk Reporting Services. Render laporan SQL Server kompleks menjadi PDF profesional.
-lastmod: "2026-07-29"
+url: /reportingservices/comprehensive-rdl-support/
+description: Temukan dukungan RDL yang komprehensif di Aspose.PDF untuk Layanan Pelaporan. Render laporan SQL Server yang kompleks ke PDF profesional.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF untuk Reporting Services mendukung spesifikasi RDL. Artinya:
+Aspose.PDF untuk Layanan Pelaporan mendukung spesifikasi RDL. Artinya:
 
 * Tidak perlu mendesain ulang atau menyesuaikan laporan yang ada.
-* Tidak perlu menggunakan desainer laporan tertentu. Anda dapat menggunakan desainer laporan RDL apa pun dan laporan akan diekspor persis seperti yang Anda rancang.
+* Tidak perlu menggunakan perancang laporan tertentu. Anda dapat menggunakan perancang laporan RDL mana pun dan laporan akan diekspor persis seperti yang Anda rancang.
 
 {{% /alert %}}
 
-## **Elemen RDL yang Didukung**
-Aspose.PDF for Reporting Services mendukung elemen RDL berikut:
+## Elemen RDL yang didukung
+Aspose.PDF untuk Layanan Pelaporan mendukung elemen RDL berikut:
 
 - Bagian
 - Header, footer
-- Kotak Teks
+- Kotak teks
 - Gambar
-- Diagram
+- Grafik
 - Daftar
 - Tabel
 - Matriks
@@ -32,5 +32,5 @@ Aspose.PDF for Reporting Services mendukung elemen RDL berikut:
 - Persegi panjang
 - Garis
 - Sub Laporan
-- Panel gauge (RS2008)
+- Panel pengukur (RS2008)
 - Tablix (RS2008)

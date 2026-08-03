@@ -1,44 +1,46 @@
 ---
 title: Panah Garis
-linktitle: Panah Garis
+linktitle: Line Arrows
 type: docs
 weight: 20
-url: /id/reportingservices/line-arrows/
-description: Pelajari cara menambahkan panah garis dalam laporan PDF menggunakan Aspose.PDF for Reporting Services. Tingkatkan visual laporan dengan mudah.
-lastmod: "2026-07-29"
+url: /reportingservices/line-arrows/
+description: Pelajari cara menambahkan panah garis dalam laporan PDF menggunakan Aspose.PDF untuk Layanan Pelaporan. Sempurnakan visual laporan dengan mudah.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Spesifikasi RDL tidak menentukan panah pada elemen garis, sehingga report builder tidak mendukung pengaturan panah untuk garis. Dengan Aspose.PDF for Reporting Services Anda dapat melakukannya dengan mudah.
+Spesifikasi RDL tidak menentukan panah pada elemen garis, sehingga pembuat laporan tidak mendukung pengaturan panah untuk garis. Dengan Aspose.PDF untuk Layanan Pelaporan Anda dapat melakukannya dengan mudah.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+Saat ini, perender Aspose.PDF mendukung penambahan panah di awal atau akhir baris dengan menambahkan properti khusus.
 
-Saat ini, renderer Aspose.PDF mendukung penambahan panah di awal atau akhir garis dengan menambahkan properti khusus.
+```text
+Add Start Arrow for Line  
+Custom Property `Name`: HasArrowAtStart  
+Custom Property `Value`: True  
+```
 
-Tambahkan Panah Awal untuk Garis  
-**Properti Kustom** **Nama**: HasArrowAtStart  
-**Nilai Properti Kustom**: True  
+```text
+Add End Arrow for Line  
+Custom Property `Name`: HasArrowAtEnd  
+Custom Property `Value`: True  
+```
 
-Tambahkan Panah Akhir untuk Garis  
-**Properti Kustom** **Nama**: HasArrowAtEnd  
-**Nilai Properti Kustom**: True  
+Misalnya, ada dua baris yang diberi nama `line1` Dan `line2` dalam file laporan saat ini, dan baris1 memiliki panah awal, baris2 memiliki panah awal dan akhir, untuk memenuhi persyaratan ini, Anda dapat menambahkan properti khusus seperti pada potongan kode berikut.
 
-Sebagai contoh, terdapat dua garis bernama 'line1' dan 'line2' dalam file laporan saat ini, dan line1 memiliki panah awal, line2 memiliki panah awal dan akhir; untuk memenuhi persyaratan ini, Anda dapat menambahkan properti kustom seperti pada fragmen kode berikut.
+## Contoh
 
-**Contoh**
-
-{{< highlight csharp >}}
+```xml
  <Line Name="line1">
     <Style>
       ......
     </style>
     <CustomProperties>
       <CustomProperty>
-        <Name>MemilikiPanahDiAwal</Name>
-        <Value>Benar</Value>
+        <Name>HasArrowAtStart</Name>
+        <Value>True</Value>
       </CustomProperty>
     </CustomProperties>
 </Line>
@@ -49,15 +51,14 @@ Sebagai contoh, terdapat dua garis bernama 'line1' dan 'line2' dalam file lapora
     </style>
     <CustomProperties>
       <CustomProperty>
-        <Name>MemilikiPanahDiAwal</Name>
-        <Value>Benar</Value>
+        <Name>HasArrowAtStart</Name>
+        <Value>True</Value>
       </CustomProperty>
 <CustomProperty>
         <Name>HasArrowAtEnd</Name>
-        <Value>Benar</Value>
+        <Value>True</Value>
       </CustomProperty>
     </CustomProperties>
 </Line>
+```
 
-{{< /highlight >}}
-{{% /alert %}}

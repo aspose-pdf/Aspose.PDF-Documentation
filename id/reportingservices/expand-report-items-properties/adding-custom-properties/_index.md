@@ -1,35 +1,32 @@
 ---
 title: Menambahkan Properti Kustom
-linktitle: Menambahkan Properti Kustom
+linktitle: Adding Custom Properties
 type: docs
 weight: 10
-url: /id/reportingservices/adding-custom-properties/
-description: Pelajari cara menambahkan properti kustom ke laporan PDF dengan Aspose.PDF for Reporting Services. Sesuaikan dokumen Anda dengan efisien.
-lastmod: "2026-07-29"
+url: /reportingservices/adding-custom-properties/
+description: Pelajari cara menambahkan properti khusus ke laporan PDF dengan Aspose.PDF untuk Layanan Pelaporan. Sesuaikan dokumen Anda secara efisien.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Anda dapat menambahkan properti kustom untuk beberapa item laporan guna memperluas penggunaannya, seperti ToC, panah garis, dan sebagainya. Bagian ini menjelaskan proses tersebut.
+Anda dapat menambahkan properti khusus untuk beberapa item laporan guna memperluas penggunaannya, seperti ToC, panah garis, dan sebagainya. Bagian ini menjelaskan proses ini.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+Anda dapat menambahkan properti khusus untuk beberapa item laporan guna memperluas penggunaannya, seperti Daftar Isi, panah garis, dan sebagainya. Bagian ini menjelaskan proses ini.
 
-Anda dapat menambahkan properti kustom untuk beberapa item laporan guna memperluas penggunaannya, seperti Daftar Isi, panah garis, dan sebagainya. Bagian ini menjelaskan proses tersebut.
+Untuk menambahkan properti khusus, Anda perlu mengedit file kode dokumen RDL dengan langkah-langkah berikut:
 
-Untuk menambahkan properti khusus, Anda perlu mengedit file kode dokumen RDL dalam langkah-langkah berikut:
+1. Seperti pada gambar berikut, buka proyek Anda, navigasikan ke penjelajah solusi, dan klik kanan pada file laporan yang dipilih, lalu pilih item menu 'Lihat Kode'.
 
-1. Seperti pada gambar berikut, buka proyek Anda, navigasikan ke Solution Explorer, dan klik kanan pada file laporan yang dipilih, kemudian pilih menu ‘View Code’.
+![Add Custom Properties](adding-custom-properties_1.png)
 
-![todo:image_alt_text](adding-custom-properties_1.png)
+2. Edit file kode XML. Misalnya, jika Anda ingin menambahkan properti khusus untuk item laporan bagan, Anda perlu menambahkan kode yang mirip dengan teks merah pada contoh berikut.
 
-2. Edit file kode XML. Misalnya, jika Anda ingin menambahkan properti khusus untuk item laporan chart, Anda perlu menambahkan kode yang mirip dengan teks berwarna merah pada contoh berikut.
+## Contoh
 
-**Contoh**
-
-{{< highlight csharp >}}
-
+```xml
 <chart Name="chart1">
     <Left>5.5cm</Left>
     <Top>0.5cm</Top>
@@ -39,14 +36,12 @@ Untuk menambahkan properti khusus, Anda perlu mengedit file kode dokumen RDL dal
     </style>     
     <CustomProperties>
       <CustomProperty>
-        <Name>ApakahDalamDaftar</Name>
-        <Value>Benar</Value>
+        <Name>IsInList</Name>
+        <Value>True</Value>
       </CustomProperty>
     </CustomProperties>
 </chart> 
+```
 
-{{< /highlight >}}
+Dalam contoh fragmen kode ini, nama properti khusus adalah IsInList, dan nilainya adalah `True`.
 
-Dalam contoh fragmen kode ini, nama properti khusus adalah IsInList, dan nilainya adalah 'True'.
-
-{{% /alert %}}

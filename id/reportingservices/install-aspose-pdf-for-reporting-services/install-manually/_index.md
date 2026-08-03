@@ -1,13 +1,13 @@
 ---
 title: Instal Secara Manual
-linktitle: Instal Secara Manual
+linktitle: Install Manually
 type: docs
 weight: 20
-url: /id/reportingservices/install-manually/
-lastmod: "2026-07-29"
+url: /reportingservices/install-manually/
+lastmod: "2021-06-05"
 ---
 
-**Bagian ini mencakup topik-topik berikut:**
+**Bagian ini mencakup topik berikut:**
 
-- [Instal ke Report Server](/pdf/id/reportingservices/install-to-report-server/)
+- [Instal ke Server Laporan](/pdf/reportingservices/install-to-report-server/)
 
