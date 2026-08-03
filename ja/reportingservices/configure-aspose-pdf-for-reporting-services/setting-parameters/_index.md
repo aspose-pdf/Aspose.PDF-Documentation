@@ -3,25 +3,24 @@ title: パラメータの設定
 linktitle: パラメータの設定
 type: docs
 weight: 10
-url: /ja/reportingservices/setting-parameters/
-description: Aspose.PDF for Reporting Services で PDF レンダリング用のパラメータを設定し、出力を正確に制御する方法を説明します。
-lastmod: "2026-07-29"
+url: /reportingservices/setting-parameters/
+description: Aspose.PDF for Reporting Services で PDF レンダリングのパラメーターを設定する方法を確認してください。出力の正確な制御を実現します。
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for Reporting Services がドキュメントを生成する方法に影響する特定の設定パラメータを指定できます。このセクションでは、その手順を説明します。
+Aspose.PDF for Reporting Services がドキュメントを生成する方法に影響を与える特定の構成パラメーターを指定できます。このセクションでは、このプロセスについて説明します。
 
 {{% /alert %}}
 
-Aspose.PDF for Reporting Services を設定するには、`C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config` ファイルを編集する必要があります。これは XML ファイルで、レンダラーの設定は Aspose.PDF レンダラーに対応する ```<Extension>``` 要素の中にあります。
+Reporting Services 用に Aspose.Pdf を構成するには、`C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config` ファイルを編集する必要があります。これは XML ファイルであり、レンダラー構成は Aspose.PDF レンダラーに対応する `<Extension>` 要素内にあります。
 
-**Example**
+## 例
 
-{{< highlight csharp >}}
-
+```xml
 <Render>
-...
+…
 <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
 <!--Insert configuration elements for exporting to PDF here. The following is an example
 For PageOrientation -->
@@ -30,19 +29,18 @@ For PageOrientation -->
     </Configuration>
 </Extension>
 </Render>
-
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}}
 
-サーバー上のすべてのレポートではなく、特定のレポートファイルだけにパラメータを設定したい場合は、Report Builder でそのレポートにレポートパラメータを追加できます。以下の手順では、先ほど示した `IsLandscape` パラメータを追加する例を使用します。
+サーバー上のすべてのレポートではなく、特定のレポート ファイルにパラメーターを設定したい場合は、次の手順でレポート ビルダーで特定のレポートにレポート パラメーターを追加できます (たとえば、前に示した 'IsLandscape' パラメーターを追加します)。
 
-1. Report Designer でレポートを開き、`Report Data` ペインの `Parameters` フォルダを右クリックして `Add Parameter...` を選択します。別の方法として、`New` リストを開いて `Parameter...` を選択してもかまいません。
- 
-![todo:image_alt_text](setting-parameters_1.png)
+1. レポート デザイナーでレポートを開き、[レポート データ] ペインの [パラメーター] フォルダーを右クリックして、[パラメーターの追加…] を選択します (または、[新規] リストをプルダウンして [パラメーター…] を選択します)。
 
-1. `Report Parameter Properties` ダイアログで `IsLandscape` という名前のパラメータを作成し、データ型を Boolean に設定したうえで、`Default Values` タブに True を追加します。
+![Parameters set up. Step 1](setting-parameters_1.png)
 
-![todo:image_alt_text](setting-parameters_2.png)
+1. [レポート パラメーター プロパティ] ダイアログで、ブール型のデータ型で「IsLandscape」という名前のパラメーターを作成し、[デフォルト値] タブに値 True を追加します。
+
+![Parameters set up. Step 2](setting-parameters_2.png)
 
 {{% /alert %}}

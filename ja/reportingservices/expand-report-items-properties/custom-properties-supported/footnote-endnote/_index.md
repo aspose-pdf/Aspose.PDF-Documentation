@@ -1,33 +1,34 @@
 ---
-title: 脚注 エンドノート
-linktitle: 脚注 エンドノート
+title: 脚注 文末脚注
+linktitle: 脚注 文末脚注
 type: docs
 weight: 30
-url: /ja/reportingservices/footnote-endnote/
-description: Aspose.PDF for Reporting Services を使用して PDF レポートに脚注とエンドノートを追加します。詳細な文書参照を提供します。
-lastmod: "2026-07-29"
+url: /reportingservices/footnote-endnote/
+description: Aspose.PDF for Reporting Services を使用して、PDF レポートに脚注と文末脚注を追加します。詳細なドキュメント参照を提供します。
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Builder ではテキストボックスに対して脚注またはエンドノートを設定できません。Aspose.PDF for Reporting Services を使用すれば、カスタム プロパティを追加するだけで簡単に設定できます。
+レポート ビルダーは、テキストボックスの脚注または文末脚注を設定できません。 Aspose.PDF for Reporting Services を使用すると、カスタム プロパティを追加することでこれを簡単に行うことができます。
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-脚注
-**Custom Property** **Name**: 脚注
-**Custom Property Value**: *その* *値* *は* *文字列* *である* *必要があります*
+```text
+Footnote
+Custom Property `Name`: Footnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-エンドノート
-**Custom Property** **Name**: エンドノート
-**Custom Property Value**: *その* *値* *は* *文字列* *である* *必要があります*
+```text
+Endnote
+Custom Property `Name`: Endnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-{{% alert color="primary" %}}
-次の例では、レポートに 'AsposePdf4RS' という値を持つテキストボックスが含まれており、フットノートとしてテキスト "An optional PDF renderer for SSRS from Aspose Pty. Ltd." を付加した補足説明を追加したいです。
-{{% /alert %}}
+次の例では、レポートに次の値を含むテキストボックスが含まれています。 `AsposePdf4RS`、「Aspose Pty. Ltd. の SSRS 用のオプションの PDF レンダラー」というテキストを含む脚注の形式で補足説明を追加したいと考えています。
 
-**例**
+## 例
 
 ```cs
 <Textbox Name="Textbox1">
@@ -53,4 +54,3 @@ Report Builder ではテキストボックスに対して脚注またはエン�
 </Paragraphs>
 </Textbox>
 ```
-{{% /alert %}}

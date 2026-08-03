@@ -1,29 +1,30 @@
 ---
-title: Justify FullJustify Text Alignment
-linktitle: Justify FullJustify Text Alignment
+title: 全行揃えテキストの配置
+linktitle: 全行揃えテキストの配置
 type: docs
 weight: 40
 url: /reportingservices/justify-fulljustify-text-alignment/
-description: Achieve perfect text alignment in PDF reports with Aspose.PDF for Reporting Services. Support for justify and full justify options.
+description: Aspose.PDF for Reporting Services を使用して、PDF レポートで完璧なテキストの配置を実現します。両端揃えおよび完全両端揃えオプションのサポート。
 lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report builder does not support the capability to specify text alignment for textbox “Justify” and “FullJustify”. With Aspose.PDF for Reporting Services, you can do that easily by adding custom properties.
+レポート ビルダーは、テキストボックスのテキスト配置を指定する機能をサポートしていません。 `Justify` そして `FullJustify`。 Aspose.PDF for Reporting Services を使用すると、カスタム プロパティを追加することでこれを簡単に行うことができます。
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Custom Property Name** : TextAlignment  
-**Custom Property Type** : String  
-**Custom Property Values** : Justify, FullJustify  
+```text
+Custom Property `Name`: TextAlignment  
+Custom Property `Type`: String  
+Custom Property `Values`: Justify, FullJustify  
+```
 
-In report the code should be like the following:
+レポートのコードは次のようになります。
 
-**Example**
+## 例
 
-{{< highlight csharp >}}
+```xml
 <Textbox Name="textbox1">
 <value> AsposePdf4RS </value>     
   <CustomProperties>
@@ -33,5 +34,4 @@ In report the code should be like the following:
    </CustomProperty>
   </CustomProperties>
 </Textbox>
-{{< /highlight >}}
-{{% /alert %}}
+```

@@ -1,36 +1,36 @@
 ---
-title: なぜ Aspose.PDF for Reporting Services を選ぶのか
-linktitle: なぜ Aspose.PDF for Reporting Services を選ぶのか
+title: Reporting Services に Aspose.PDF を選択する理由
+linktitle: Reporting Services に Aspose.PDF を選択する理由
 type: docs
 weight: 10
-url: /ja/reportingservices/why-choose-aspose-pdf-for-reporting-services/
-lastmod: "2026-07-29"
+url: /reportingservices/why-choose-aspose-pdf-for-reporting-services/
+lastmod: "2021-06-05"
 ---
 
-**Aspose.PDF for Reporting Services** は、Microsoft SQL Server 2016、2017、2019、2022 Reporting Services と Microsoft Power BI Report Server を使用して PDF レポートを作成できる、堅牢な .NET ソリューションです。Aspose.PDF for Reporting Services は単独で動作するわけではなく、SQL Reporting Services のレンダリング拡張機能です。テーブル、チャート、画像、ヘッダー/フッター、線などの基本的なレポート要素をサポートするだけでなく、SQL Reporting Services に対して追加の優位性をもたらすカスタムプロパティを追加する機能も提供します。これらのプロパティを使用すると、Report Designer ではサポートされていない目次を生成できます。結果として得られる PDF 文書には、Report Builder ではデフォルトでサポートされていない脚注/文末脚注を含めることができます。もう一つの興味深い機能は、SQL Reporting Services ではサポートされていないライン矢印を追加できることで、Aspose.PDF for Reporting Services は線要素の先頭または末尾に矢印を付加する機能を提供します。さらに、Aspose.PDF for Reporting Services は、Report Designer ではサポートされていないテキスト配置（Justify または FullJustify）情報を指定する機能も提供します。これらのテキストモードにより、生成された文書はより整ったフォーマットとなり、読みやすくなります。
+**Aspose.PDF for Reporting Services** は、Microsoft SQL Server 2016、2017、2019、および 2022 Reporting Services、および Microsoft Power BI Report Server を使用して PDF レポートを作成できる堅牢な .NET ソリューションです。 Aspose.PDF for Reporting Services は独立して動作しませんが、SQL Reporting Services の表示拡張機能です。テーブル、チャート、画像、ヘッダー/フッター、行などの基本的なレポート要素をサポートするだけでなく、SQL Reporting Services をさらに活用するカスタム プロパティを追加する機能も提供します。これらのプロパティを使用すると、レポート デザイナーでサポートされていないコンテンツのリストを生成できます。結果として得られる PDF ドキュメントには、レポート ビルダーでネイティブにサポートされていない脚注/文末脚注が含まれる場合があります。もう 1 つの興味深い機能は線矢印です。これも SQL Reporting Services ではサポートされていませんが、Aspose.PDF for Reporting Services では線要素の先頭または末尾に矢印を追加する機能を提供できます。さらに、Aspose.PDF for Reporting Services は、レポート デザイナーではサポートされていないテキストの配置 (Justify または FullJustify) 情報を指定する機能を提供します。これらのテキスト モードにより、結果として得られるドキュメントがより適切にフォーマットされ、読みやすくなります。
 
-前述の機能に加えて、レポートに対して他の設定パラメータを設定することができ、SQL Reporting Services がネイティブにサポートしていない機能を取得できます。以下は、Aspose.PDF for Reporting Services が提供するそのような機能の簡単な概要です。
+前述の機能に加えて、レポートの他の特定の構成パラメーターを設定して、SQL Reporting Services でネイティブにサポートされていない機能を取得することもできます。以下は、Aspose.PDF for Reporting Services によって提供される機能の概要です。
 
 ## セキュリティ設定
 
-場合によっては、パスワードで保護され、テキストのコピーや印刷権限が制限された PDF ドキュメントをエクスポートしたいことがあります。残念ながら、Reporting Services はこの機能をサポートしていません。しかし、Aspose.PDF for Reporting Services を使用すれば実装可能です。レポートまたはレポートサーバーに対応するセキュリティ パラメータを追加するだけで、権限が制限されたセキュアな PDF ドキュメントを取得できます。詳細については、\u0027Security Setting\u0027 セクションを参照してください。
+場合によっては、テキストのコピーや印刷の権限を制限して、パスワードで保護された PDF ドキュメントをエクスポートしたい場合があります。残念ながら、Reporting Services はこの可能性をサポートしていません。ただし、Aspose.PDF for Reporting Services を使用して実装することはできます。対応するセキュリティ パラメーターをレポートまたはレポート サーバーに追加するだけで、権限が制限された安全な PDF ドキュメントを取得できます。詳細については、「セキュリティ設定」セクションを参照してください。
 
-## カスタム フォント埋め込み
+## カスタムフォントの埋め込み
 
-Reporting Services デザイナーはテキスト用の埋め込みフォントをサポートしていません。Aspose.PDF for Reporting Services を使用すれば、フォント情報を簡単に PDF ドキュメントに埋め込むことができます。詳細については、\u0027IsFontEmbedded\u0027 セクションを参照してください。
+Reporting Services デザイナーはテキストの埋め込みフォントをサポートしていません。 Aspose.PDF for Reporting Services を使用すると、PDF ドキュメントにフォント情報を簡単に埋め込むことができます。詳細については、「IsFontEmbedded」セクションを参照してください。
 
-## XMP メタデータ
+## XMPメタデータ
 
-Reporting Services デザイナーは XMP メタデータの埋め込みをサポートしていません。Aspose.PDF for Reporting Services は、対応する XMP メタデータを設定するための 4 つのパラメータ (CreationDate、ModifyDate、MetaDataDate、CreatorTool) を提供します。詳細については、'XMP Metadata' セクションをご参照ください。
+Reporting Services デザイナーは、XMP メタデータの埋め込みをサポートしていません。 Aspose.PDF for Reporting Services は、対応する XMP メタデータを設定するための 4 つのパラメーター (CreationDate、ModifyDate、MetaDataDate、および CreatorTool) を提供します。詳細については、「XMP メタデータ」セクションを参照してください。
 
 ## PDF/A
 
-SQL Server Reporting Services を使用する場合、PDF ドキュメントはシンプルな形式でしか生成できず、PDF/A ドキュメントの生成はサポートされていません。しかし、Aspose.PDF for Reporting Services は、単一の構成パラメータを追加することで PDF/A 準拠のドキュメントを作成する機能を提供します。詳細については、'PDF Conformance' セクションをご参照ください。
+SQL Server Reporting Services を使用する場合、PDF ドキュメントは単純な形式でのみ生成できますが、PDF/A ドキュメントの生成はサポートされていません。ただし、Aspose.PDF for Reporting Services には、構成パラメーターを 1 つ追加するだけで PDF/A 準拠のドキュメントを作成する機能が提供されます。詳細については、「PDF の適合性」セクションを参照してください。
 
-## Page Rotation Angle
+## ページ回転角度
 
-Aspose.PDF for Reporting Services を使用すると、表示または印刷時にページを時計回りに回転させる角度（度数）を設定できます。詳細については、'Page Rotating Angle' セクションをご参照ください。
+Reporting Services に Aspose.PDF を使用する場合、表示または印刷時にページを時計回りに回転させる度数を設定できます。詳細については、「ページ回転角度」セクションを参照してください。
 
-## Page Margin Size
+## ページ余白サイズ
 
-Reporting Services デザイナーはページ余白のサイズ設定をサポートしていません。一方、Aspose.PDF for Reporting Services は、対応するページ余白のサイズを設定するための 4 つのパラメータを提供します。これらは PageMarginLeft、PageMarginRight、PageMarginTop、PageMarginBottom です。詳細については、'Page Margin Size' セクションをご参照ください。
+Reporting Services デザイナーは、ページ余白サイズの設定をサポートしていません。一方、Aspose.PDF for Reporting Services には、対応するページ余白サイズを設定するための 4 つのパラメーターが用意されています。これらは、PageMarginLeft、PageMarginRight、PageMarginTop、および PageMarginBottom です。詳細については、「ページ余白サイズ」セクションを参照してください。

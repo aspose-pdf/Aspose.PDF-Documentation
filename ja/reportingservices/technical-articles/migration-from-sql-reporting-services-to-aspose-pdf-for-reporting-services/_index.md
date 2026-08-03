@@ -3,11 +3,11 @@ title: SQL Reporting Services から Aspose.PDF for Reporting Services への移
 linktitle: SQL Reporting Services から Aspose.PDF for Reporting Services への移行
 type: docs
 weight: 10
-url: /ja/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/
-description: SQL Reporting Services から Aspose.PDF for Reporting Services への移行方法を学びましょう。PDF 生成プロセスをアップグレードしてください。
-lastmod: "2026-07-29"
+url: /reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/
+description: Learn how to migrate from SQL Reporting Services to Aspose.PDF for Reporting Services. PDF 生成プロセスをアップグレードします。
+lastmod: "2024-05-05"
 ---
 
-**このセクションには次のトピックが含まれます:**
+**このセクションには次のトピックが含まれています:**
 
-- [なぜ Aspose.PDF for Reporting Services を選ぶのか](/pdf/ja/reportingservices/why-choose-aspose-pdf-for-reporting-services/)
+- [Reporting Services に Aspose.PDF を選択する理由](/pdf/ja/reportingservices/why-choose-aspose-pdf-for-reporting-services/)

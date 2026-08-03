@@ -1,13 +1,13 @@
 ---
-title: 手動でインストール
-linktitle: 手動でインストール
+title: 手動でインストールする
+linktitle: 手動でインストールする
 type: docs
 weight: 20
-url: /ja/reportingservices/install-manually/
-lastmod: "2026-07-29"
+url: /reportingservices/install-manually/
+lastmod: "2021-06-05"
 ---
 
 **このセクションには次のトピックが含まれています:**
 
-- [Report Server にインストール](/pdf/ja/reportingservices/install-to-report-server/)
+- [レポート サーバーにインストール](/pdf/reportingservices/install-to-report-server/)
 

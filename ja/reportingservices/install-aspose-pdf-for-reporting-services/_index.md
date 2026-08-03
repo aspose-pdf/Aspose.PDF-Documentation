@@ -1,19 +1,17 @@
 ---
-title: Aspose.PDF をインストール
-linktitle: Aspose.PDF をインストール
+title: Aspose.PDF をインストールする
+linktitle: Aspose.PDF をインストールする
 type: docs
 weight: 50
-url: /ja/reportingservices/install-aspose-pdf-for-reporting-services/
-description: Aspose.PDF for Reporting Services のインストール方法を学びます。このステップバイステップ ガイドに従って、SSRS で PDF エクスポート機能を有効にしてください。
-lastmod: "2026-07-29"
+url: /reportingservices/install-aspose-pdf-for-reporting-services/
+description: Reporting Services 用の Aspose.PDF をインストールする方法を学習します。このステップバイステップ ガイドに従って、SSRS で PDF エクスポート機能を有効にします。
+lastmod: "2021-06-05"
 ---
 
-{{% alert color="primary" %}}
+**このセクションには次のトピックが含まれています:**
 
-**このセクションには次のトピックが含まれます：**
+- [MSI インストーラーでインストール](/pdf/reportingservices/install-with-msi-installer/)
+- [手動でインストール](/pdf/reportingservices/install-manually/)
+- [設定ツールによるインストール](/pdf/reportingservices/install-with-configuring-tool/)
 
-- [MSI インストーラでインストール](/pdf/ja/reportingservices/install-with-msi-installer/)
-- [手動でインストール](/pdf/ja/reportingservices/install-manually/)
-- [Configuring Toolでインストール](/pdf/ja/reportingservices/install-with-configuring-tool/)
 
-{{% /alert %}}

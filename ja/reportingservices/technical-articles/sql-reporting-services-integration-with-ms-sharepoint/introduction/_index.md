@@ -1,53 +1,53 @@
 ---
-title: Introduction
-linktitle: Introduction
+title: 導入
+linktitle: 導入
 type: docs
 weight: 10
-url: /ja/reportingservices/introduction/
-lastmod: "2026-07-29"
+url: /reportingservices/introduction/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for Reporting Services は、長年にわたり SQL Reporting Services を介した PDF 生成で非常に優れた実績があり、SQL Reporting Services ではデフォルトでサポートされていない多様な構成およびパラメータ化オプションを提供します。最近、Aspose.PDF for Reporting Services の SharePoint との統合に関するリクエストを受けました。本記事では MS SharePoint 2010 に焦点を当てます。先に進む前提として、すでに SharePoint Farm がセットアップされているものとします。この例ではフル SharePoint Cloud を使用しますが、手順は SharePoint Foundation Server でも同様です。
+Aspose.PDF for Reporting Services は、SQL Reporting Services を介した PDF 生成において長年にわたって非常に注目されており、SQL Reporting Services ではデフォルトではサポートされていない多様な構成およびパラメーター化オプションを提供します。最近、Reporting Services を SharePoint と統合するための Aspose.PDF に関するリクエストをいくつか受け取りました。この記事では、MS SharePoint 2010 に焦点を当てます。先に進む前に、SharePoint ファームがすでにセットアップされていることを前提としています。この例では、完全な SharePoint Cloud を使用します。ただし、SharePoint Foundation Server の場合でも手順は似ています。
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-先に進む前に、この記事の作成中に参照した参考トピックを見てみましょう。
+先に進む前に、この記事の準備中に参考にした参考トピックを見てみましょう。
 
-- [Reporting Services と SharePoint テクノロジー統合の概要](http://msdn.microsoft.com/en-us/library/bb326358.aspx)
-- [SharePoint 統合モードにおける Reporting Services の展開トポロジー](http://msdn.microsoft.com/en-us/library/bb510781.aspx)
-- [SharePoint 2010 統合のための Reporting Services の構成](http://msdn.microsoft.com/en-us/library/bb326356.aspx)
+- [Reporting Services と SharePoint テクノロジの統合の概要](http://msdn.microsoft.com/en-us/library/bb326358.aspx)
+- [SharePoint 統合モードでの Reporting Services の展開トポロジ](http://msdn.microsoft.com/en-us/library/bb510781.aspx)
+- [SharePoint 2010 統合用の Reporting Services の構成](http://msdn.microsoft.com/en-us/library/bb326356.aspx)
 
 {{% /alert %}}
 
 ## 環境設定
 
-当社のセットアップは 4 台のサーバーで構成されています。ドメイン コントローラー、SQL Server、SharePoint Server、そして Reporting Services 用のサーバーが含まれます。SharePoint と Reporting Services を同じサーバー上に配置することも可能で、これによりやや簡素化できます。その際の違いについていくつか指摘します。
+セットアップは 4 つのサーバーで構成されます。これには、ドメイン コントローラー、SQL サーバー、SharePoint サーバー、および Reporting Services 用のサーバーが含まれます。 SharePoint と Reporting Services を同じボックスに入れることを選択することもできます。これにより、これが少し簡素化され、いくつかの違いを指摘します。
 
-## インストール前提条件
+## インストールの前提条件
 
 {{% alert color="primary" %}}
 
-Reporting Services Add-In for SharePoint は、統合を適切に機能させるための重要なコンポーネントの一つです。Add‑In は、SharePoint ファーム内の任意の Web Front End (WFE) と Central Admin サーバーの両方にインストールする必要があります。SQL 2008 R2 & SharePoint 2010 の新たな変更点のひとつは、2008 R2 Add‑In が SharePoint インストールの前提条件となったことです。これにより、SharePoint をインストールする際に RS Add‑In が自動的に配置されます。以下の図に示しハイライトされています。この方式により、Add‑In のインストール時に SP 2007 と RS 2008 で見られた多くの問題が実際に回避されます。
+SharePoint 用 Reporting Services アドインは、統合を適切に機能させるための重要なコンポーネントの 1 つです。アドインは、中央管理サーバーとともに SharePoint ファーム内のいずれかの Web フロント エンド (WFE) にインストールする必要があります。 SQL 2008 R2 および SharePoint 2010 の新しい変更点の 1 つは、2008 R2 アドインが SharePoint インストールの前提条件になったことです。これは、SharePoint をインストールするときに RS アドインが配置されることを意味します。それは以下の図に示され、強調表示されています。これにより、アドインのインストール時に SP 2007 および RS 2008 で発生した多くの問題が実際に回避されます。
 
-![todo:image_alt_text](introduction_1.png)
+![Introduction](introduction_1.png)
 
-**Image1 :- Share Point 用 Reporting Services アドイン**
+**画像 1 :- Share Point 用 Reporting Services アドイン**
 {{% /alert %}}
 
-## SharePoint 認証
+## SharePoint認証
 
-**RS 統合のパーツに入る前に、SharePoint ファームについて指摘したいことがあります。それはサイトの設定方法です。特にサイトの認証方法の構成です。Classic か Claims のどちらかです。この選択は最初に重要です。一度設定するとこのオプションを変更できるとは思っていません。もし変更できたとしても、簡単なプロセスではありません。**
+**RS 統合の説明に入る前に、SharePoint ファームについて指摘しておきたいのは、サイトのセットアップ方法です。より具体的には、サイトの認証を構成する方法です。クラシックかクレームか。この選択は最初は重要です。このオプションは一度完了すると変更できないと思います。変更できるとしても、それは簡単なプロセスではありません。
 
-NOTE: ***Reporting Services 2008 R2 は Claims に対応していません***
+注: ***Reporting Services 2008 R2 はクレームに対応していません***
 
-たとえ SharePoint サイトで Claims を使用するように設定しても、Reporting Services 自体は Claims を認識していません。ただし、これにより Reporting Services の認証動作に影響があります。では、Reporting Services の観点からどのような違いがあるのでしょうか？ポイントは、ユーザー資格情報をデータ ソースに転送するかどうかです。Classic:- Kerberos を使用でき、ユーザーの資格情報をバックエンド データ ソースに転送できます（そのためには Kerberos が必要です）。Claims:- Claims トークンが使用され、Windows トークンではありません。RS は常に Trusted Authentication を使用し、このシナリオでは SPUser トークンへのアクセスしか持ちません。データ ソース内に資格情報を保存する必要があります。
+SharePoint サイトで Claims を使用することを選択した場合でも、Reporting Services 自体は Claims を認識しません。ただし、Reporting Services での認証の動作には影響します。では、Reporting Services の観点から見た違いは何でしょうか?結局のところ、ユーザー資格情報をデータ ソースに転送するかどうかが決まります。クラシック:- Kerberos を使用し、ユーザーの資格情報をバックエンド データソースに転送できます (そのためには Kerberos を使用する必要があります)。クレーム:- Windows トークンではなく、クレーム トークンが使用されます。 RS は、このシナリオでは常に信頼された認証を使用し、SPUser トークンにのみアクセスできます。資格情報をデータ ソース内に保存する必要があります。
 
-Classic :- Kerberos を使用でき、ユーザーの資格情報をバックエンド データ ソースに転送できます（そのためには Kerberos が必要です）。
+クラシック:- Kerberos を使用し、ユーザーの資格情報をバックエンド データソースに転送できます (そのためには Kerberos を使用する必要があります)。
 
-Claims :- Claims トークンが使用され、Windows トークンではありません。RS は常に Trusted Authentication を使用し、このシナリオでは SPUser トークンへのアクセスしか持ちません。データ ソース内に資格情報を保存する必要があります。
+Claims :- Windows トークンではなく、Claims トークンが使用されます。このシナリオでは、RS は常に信頼された認証を使用し、SPUser トークンにのみアクセスできます。資格情報をデータ ソース内に保存する必要があります。
 
-今のところ、私たちはRSのセットアップに集中したいだけです。現時点でSharePointは私のSharePoint Boxにインストールされ、ポート80のClassic Authサイトとして設定されています。RSサーバーではReporting Servicesをインストールしただけです。
+今のところ、RS のセットアップに焦点を当てたいと思います。この時点で、SharePoint は SharePoint ボックスにインストールされ、ポート 80 でクラシック認証サイトがセットアップされています。RS サーバーには、Reporting Services をインストールしただけです。それだけです。

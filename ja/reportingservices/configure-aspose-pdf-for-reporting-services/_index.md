@@ -1,15 +1,15 @@
 ---
-title: 構成
-linktitle: 構成
+title: 設定する
+linktitle: 設定する
 
 type: docs
 weight: 80
-url: /ja/reportingservices/configure-aspose-pdf-for-reporting-services/
-description: Aspose.PDF for Reporting Services を構成して、SSRS レポート用の PDF 出力設定を効率的にカスタマイズする方法を学びます。
-lastmod: "2026-07-29"
+url: /reportingservices/configure-aspose-pdf-for-reporting-services/
+description: SSRS レポートの PDF 出力設定を効率的にカスタマイズするために、Aspose.PDF for Reporting Services を構成する方法について説明します。
+lastmod: "2021-06-05"
 ---
 
-## このセクションには次のトピックが含まれます：
+## このセクションには次のトピックが含まれています。
 
-- [パラメーターの設定](/pdf/ja/reportingservices/setting-parameters/)
-- [サポートされているパラメーター](/pdf/ja/reportingservices/supported-parameters/)
+- [パラメータの設定](/pdf/ja/reportingservices/setting-parameters/)
+- [サポートされているパラメータ](/pdf/ja/reportingservices/supported-parameters/)

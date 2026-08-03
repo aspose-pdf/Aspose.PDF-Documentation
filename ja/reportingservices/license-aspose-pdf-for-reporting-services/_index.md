@@ -1,52 +1,50 @@
 ---
-title: License
-linktitle: License
+title: ライセンス
+linktitle: ライセンス
 
 type: docs
 weight: 70
 url: /reportingservices/license-aspose-pdf-for-reporting-services/
-description: Understand licensing options for Aspose.PDF for Reporting Services. Find out how to activate your license and unlock full functionality.
+description: Aspose.PDF for Reporting Services のライセンス オプションを理解します。ライセンスをアクティブ化し、すべての機能をロック解除する方法を確認してください。
 lastmod: "2021-06-05"
 ---
 
-**Aspose.PDF for Reporting Services** evaluation version provide the same set of features as present in Licensed version, except for the evaluation watermark in resultant PDF when using evaluation version. Please visit our website and download the product version and start exploring our product with complete set of features in an evaluation mode.
+**Aspose.PDF for Reporting Services** 評価版は、評価版を使用する場合に生成される PDF に評価用ウォーターマークが含まれることを除き、ライセンス版と同じ一連の機能を提供します。当社の Web サイトにアクセスして製品バージョンをダウンロードし、評価モードで完全な機能セットを備えた製品の探索を開始してください。
 
-When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
+評価に満足したら、[ライセンスを購入](https://purchase.aspose.com/buy)してください。購入する前に、必ずライセンス サブスクリプション条項を理解し、同意してください。
 
-The license will be available for download from the order page after the order is paid. The license is a clear text, digitally signed XML file. The license contains information such as the client's name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
+ライセンスは、注文の支払い後に注文ページからダウンロードできるようになります。ライセンスはクリア テキストのデジタル署名された XML ファイルです。ライセンスには、クライアントの名前、購入した製品、ライセンスの種類などの情報が含まれます。ライセンスが無効になるため、ライセンス ファイルの内容を変更しないでください。
 
-## Licensing a Server
+## サーバーのライセンス取得
 
-Download the license file and copy it to the C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
+ライセンス ファイルをダウンロードし、サーバー上の C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\bin、または C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin、または C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin フォルダー (サーバー上のAspose.Pdf.ReportingServices.dll が配置されます)。
 
-```<Instance>``` is the subdirectory name that corresponds to the Microsoft SQL Server 2016 instance you want to license.
+`<Instance>` は、ライセンスを取得する Microsoft SQL Server 2016 インスタンスに対応するサブディレクトリ名です。
 
-The default instance directory for Microsoft SQL Server 2016 is MSRS13.MSSQLSERVER.
-For the Microsoft SQL Server 2017 and later the default instance path is C:\Program Files\Microsoft SQL Server\SSRS.
-For the Power BI Report Server the default instance path is C:\Program Files\Microsoft Power BI Report Server\PBIRS.
+Microsoft SQL Server 2016 のデフォルトのインスタンス ディレクトリは MSRS13.MSSQLSERVER です。
+Microsoft SQL Server 2017 以降の場合、デフォルトのインスタンス パスは C:\Program Files\Microsoft SQL Server\SSRS です。
+Power BI Report Server の場合、既定のインスタンス パスは C:\Program Files\Microsoft Power BI Report Server\PBIRS です。
 
-**PDF generated using “Territory sales drilldown” report**
+**「テリトリー販売ドリルダウン」レポートを使用して生成された PDF**
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_1.png)
+![License-Territory sales drilldown](license-aspose-pdf-for-reporting-services_1.png)
 
+**「販売注文の詳細」レポートを使用して生成された PDF**
 
-**PDF generated using “Sales Order details” report**
+![License-Sales Order details](license-aspose-pdf-for-reporting-services_2.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_2.png)
+ライセンスの初期化中に問題が発生した場合、以下に指定されているように、結果の PDF ドキュメントに評価ウォーターマークが表示されます。
 
-If there is a problem while initializing the license, an evaluation watermark is displayed in the resultant PDF document as specified below.
+**透かし付きの「テリトリー セールス ドリルダウン」を使用して生成された PDF ドキュメント**
 
-**PDF document generated using “Territory Sales Drilldown” with watermark**
+![License-Territory Sales Drilldown](license-aspose-pdf-for-reporting-services_3.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_3.png)
+サポートされているライセンス ファイル名は、Aspose.PDF.ReportingServices.lic、Aspose.Total.ReportingServices.lic、および Aspose.Total.Product.Family.lic であることに注意してください。ファイルに別の名前が付いている場合は、名前を変更してください。
 
-Please note that that supported license file names are Aspose.PDF.ReportingServices.lic, Aspose.Total.ReportingServices.lic and Aspose.Total.Product.Family.lic. If the file has any other name, please rename it.
-
-
-## Temporary License
+## 仮免許
 
 {{% alert color="primary" %}}
 
-You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
+製品をテストするために 30 日間の一時ライセンスをリクエストすることもできます。一時ライセンスの取得方法の詳細については、次のリンクを参照してください。 [一時ライセンスを取得](https://purchase.aspose.com/temporary-license)。
 
 {{% /alert %}}

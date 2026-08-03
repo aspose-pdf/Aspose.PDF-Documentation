@@ -3,42 +3,44 @@ title: ページ余白サイズ
 linktitle: ページ余白サイズ
 type: docs
 weight: 70
-url: /ja/reportingservices/page-margin-size/
-description: Aspose.PDF for Reporting Services を使用して PDF レポートのページ余白サイズを調整し、可読性とレイアウトを向上させます。
-lastmod: "2026-07-29"
+url: /reportingservices/page-margin-size/
+description: Aspose.PDF for Reporting Services を使用して PDF レポートのページ余白サイズを調整し、読みやすさとレイアウトを向上させます。
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Reporting Services のレポート デザイナーはページ余白サイズの設定をサポートしていません。Aspose.PDF for Reporting Services は、対応するページ余白サイズを設定するための 4 つのパラメータを提供します。それらは次のとおりです：
+Reporting Services レポート デザイナーは、ページ余白サイズの設定をサポートしていません。 Aspose.PDF for Reporting Services には、対応するページ余白サイズを設定するための 4 つのパラメータが用意されています。
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-1)  
-**パラメータ名**: PageMarginLeft  
-**日付型**: Float  
-**サポートされる値**:  任意の正の数またはゼロ
+```text
+Parameter Name: PageMarginLeft  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-2)  
-**パラメータ名**: PageMarginRight  
-**日付型**: Float  
-**サポートされる値**:  任意の正の数またはゼロ
+```text
+Parameter Name: PageMarginRight  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-3)  
-**パラメータ名**: PageMarginTop  
-**日付型**: Float  
-**サポートされる値**:  任意の正の数またはゼロ
+```text
+Parameter Name: PageMarginTop  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-4)  
-**パラメータ名**: PageMarginBottom  
-**日付型**: Float  
-**サポートされる値**:  任意の正の数またはゼロ
+```text
+Parameter Name: PageMarginBottom  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-**例**
+## 例
 
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
@@ -50,7 +52,4 @@ Reporting Services のレポート デザイナーはページ余白サイズの
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```

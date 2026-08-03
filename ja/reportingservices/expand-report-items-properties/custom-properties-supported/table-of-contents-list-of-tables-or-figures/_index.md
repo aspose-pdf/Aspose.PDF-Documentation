@@ -1,25 +1,24 @@
 ---
-title: Table of Contents List of Tables or Figures
-linktitle: Table of Contents List of Tables or Figures
+title: 目次 表または図のリスト
+linktitle: 目次 表または図のリスト
 type: docs
 weight: 10
 url: /reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Learn how to add a Table of Contents, List of Tables, or Figures in PDF reports using Aspose.PDF for Reporting Services.
+description: Aspose.PDF for Reporting Services を使用して、PDF レポートに目次、表のリスト、または図を追加する方法を学習します。
 lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
+レポート デザイナーは、レポート ドキュメントの目次の追加をサポートしていません。 Aspose.PDF for Reporting Services を使用すると、PDF レンダリングに目次、表や図のリストを含む PDF ドキュメントを生成するよう簡単に指示できます。次の手順で実行できます。
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
+Aspose.Pdf.ListSectionStyle.xml ファイルが ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin ディレクトリに存在することを確認し、その中に次のマークアップを配置します。
 
-## Table of Contents
+## 目次
 
-**Example**
+### 例
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +40,9 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 </ListSection>
 ```
 
-##  List of TableS
+##  テーブルのリスト
 
-**Example**
+### 例
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -53,9 +52,9 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 </ListSection>
 ```
 
-## List of Figures
+## フィギュア一覧
 
-**Example**
+### 例
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,40 +65,29 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 
 ```
 
-Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
+Aspose.Pdf オンライン ドキュメントの「目次の操作」セクションを参照してください。
 
-**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
-**3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
+**2-** レポート パラメータ `IsListSectionSupported` を追加し、`List Section` 段落に示すように値を True に設定します。
+**3-** 目次、表または図のリストに表示するレポート アイテムのカスタム プロパティを追加します。
 
-{{% /alert %}}
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
-{{% alert color="primary" %}}
+現在のレポート アイテムを、目次、または表や図のリストのインデックスによってリストされているようにマークします。
 
-**Custom Property Name** :IsInList
-**Property Value** :Boolean
-**Custom Property Value** : True or False
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
-{{% alert color="primary" %}}
+目次、表または図のリストに表示される項目のタイトル。
 
-Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
-{{% /alert %}}
-
-**Custom Property Name** : Title
-**Custom Property Type** : String
-
-{{% alert color="primary" %}}
-
-The item title displayed in the table of contents, list of tables or figures.
-{{% /alert %}}
-
-**Custom Property Name** : ListLevel
-**Custom Property Type** : Integer
-
-{{% alert color="primary" %}}
-
-The level of listed items displayed in the table of contents.
-
-{{% /alert %}}
-
-{{% /alert %}}
+目次に表示されるリスト項目のレベル。

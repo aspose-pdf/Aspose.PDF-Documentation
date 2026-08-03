@@ -1,6 +1,6 @@
 ---
-title: Install to Report Server
-linktitle: Install to Report Server
+title: レポート サーバーにインストールする
+linktitle: レポート サーバーにインストールする
 type: docs
 weight: 10
 url: /reportingservices/install-to-report-server/
@@ -9,52 +9,38 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-You only need to follow these steps if you install Aspose.PDF for Reporting Services manually, not using the MSI installer. MSI installer performs all necessary installation and registration actions automatically.
+MSI インストーラーを使用せずに、Aspose.PDF for Reporting Services を手動でインストールする場合にのみ、次の手順に従う必要があります。 MSI インストーラーは、必要なインストールと登録のアクションをすべて自動的に実行します。
 
 {{% /alert %}}
 
-In the following steps, you will need to copy and modify files in the directory where Microsoft SQL Server Reporting Services is installed. The SSRS 2016 assembly is located in the \Bin\SSRS2016 directory of the zip package; the SSRS 2017 assembly is located in the \Bin\SSRS2017 directory; the SSRS 2019 assembly is located in the \Bin\SSRS2019 directory; the SSRS 2022 assembly is located in the \Bin\SSRS2022 directory; the Power BI Report Server assembly is located in the \Bin\PowerBI directory. 
+次の手順では、Microsoft SQL Server Reporting Services がインストールされているディレクトリ内のファイルをコピーして変更する必要があります。 SSRS 2016 アセンブリは、zip パッケージの \Bin\SSRS2016 ディレクトリにあります。 SSRS 2017 アセンブリは \Bin\SSRS2017 ディレクトリにあります。 SSRS 2019 アセンブリは \Bin\SSRS2019 ディレクトリにあります。 SSRS 2022 アセンブリは \Bin\SSRS2022 ディレクトリにあります。 Power BI Report Server アセンブリは \Bin\PowerBI ディレクトリにあります。
 
-{{% alert color="primary" %}}
+**ステップ 1.** レポート サーバーのインストール ディレクトリを見つけます。 Microsoft SQL Server のルート ディレクトリは通常、C:\Program Files\Microsoft SQL Server です。これ以降のプロセスは、Reporting Services 2016、Reporting Services 2017 以降、Power BI Report Server では若干異なります。
 
-**Step 1.** Locate the Report Server installation directory. The root directory for Microsoft SQL Server is usually C:\Program Files\Microsoft SQL Server. Further process is slightly different for Reporting Services 2016, Reporting Services 2017 and later, and Power BI Report Server:
+- Report Server 2016 は、既定で C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer ディレクトリにインストールされます。デフォルトのインスタンスではなくカスタムの名前付きインスタンスを使用している場合、デフォルトのパスは C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer になります。
+- Report Server 2017 以降は、既定で C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer ディレクトリにインストールされます。
+- Power BI Report Server は、既定で C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer ディレクトリにインストールされます。
 
-- Report Server 2016 by default is installed in the C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer directory. If you are using custom named instances instead of the default one, the default path will be C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
-- Report Server 2017 and later by default is installed in the C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer directory.
-- Power BI Report Server by default is installed in the C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer directory.
+以下のテキストでは、Reporting Services のインストール ディレクトリ (前述のパスの 1 つ) を `<Instance>` として参照します。
 
-In the following text the installation directory of the Reporting Services (one of the aforementioned paths) will be referenced to as ```<Instance>```.
-{{% /alert %}}
+**ステップ 2.** 対応する SSRS バージョンの Aspose.Pdf.ReportingServices.dll を `<Instance>\bin` フォルダーにコピーします。
 
-{{% alert color="primary" %}}
-**Step 2.** Copy Aspose.Pdf.ReportingServices.dll for the corresponding SSRS version to the ```<Instance>```\bin folder.
-{{% /alert %}}
+**ステップ 3.** Reporting Services の Aspose.PDF を表示拡張機能として登録します。 `<Instance>\rsreportserver.config` ファイルを開き、次の行を `<Render>` 要素に追加します。
 
-{{% alert color="primary" %}}
-**Step 3.** Register Aspose.PDF for Reporting Services as a rendering extension. Open the ```<Instance>```\rsreportserver.config file and add the following lines into the ```<Render>``` element:
-{{% /alert %}}
+## 例
 
-**Example**
-
-{{< highlight csharp >}}
-
- <Render>
+```xml
+<Render>
 ...
-<!--Start here.-->
-
 <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices"/>
-
 </Render>
+```
 
-{{< /highlight >}}
+**ステップ 4.** Aspose.PDF for Reporting Services に実行権限を与えます。 `<Instance>\rssrvpolicy.config` ファイルを開き、外側の `<CodeGroup>` 要素 (`<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):`) の 2 番目の要素の最後の項目として次のテキストを追加します。
 
-{{% alert color="primary" %}}
-**Step 4.** Provide Aspose.PDF for Reporting Services with permissions to execute. Open the ```<Instance>```\rssrvpolicy.config file and add the following text as the last item in the second to outer ```<CodeGroup>``` element (which should be ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
-{{% /alert %}}
+## 例
 
-**Example**
-
-{{< highlight csharp >}}
+```xml
 
  <CodeGroup>
 ...
@@ -77,20 +63,14 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 </CodeGroup>
 
 </CodeGroup>
+```
 
-{{< /highlight >}}
+**ステップ 5.** Aspose.PDF for Reporting Services が正常にインストールされたことを確認します。 Reporting Services Web ポータルを開き、レポートで使用可能なエクスポート形式のリストを確認します。 Web ブラウザを起動し、アドレス バーに Reporting Services Web ポータルの URL (デフォルトでは http://@@KEEP_0@@/reports/). です) を入力することで、Web ポータルを起動できます。Web ポータルで利用可能なレポートの 1 つを選択し、[エクスポート] ドロップダウン リストをプルします。Aspose.PDF for Reporting Services 拡張機能によって提供される形式を含むエクスポート形式のリストが表示されます。Aspose.PDF 項目で PDF を選択します。
 
-{{% alert color="primary" %}}
-**Step 5.** Verify that Aspose.PDF for Reporting Services was installed successfully. Open the Reporting Services web portal and check the list of available export formats for a report. You can launch the web portal by starting a web browser and typing the Reporting Services web portal URL in the address bar (by default it is http://```<Reporting_Services_server_name>```/reports/). Select one of the reports available in your web portal and pull the Export dropdown list. You should see the list of export formats including the ones provided by the Aspose.PDF for Reporting Services extension. Select PDF via Aspose.PDF item.
+![Install to report server](install-to-report-server_1.png)
 
- 
-{{% /alert %}}
+選択した項目をクリックします。選択した形式でレポートが生成され、クライアントに送信され、Web ブラウザの設定に応じて、エクスポートされたレポートの保存場所を選択するための [ファイルの保存] ダイアログが表示されるか、ファイルがダウンロード フォルダーに自動的にダウンロードされます。
 
-![todo:image_alt_text](install-to-report-server_1.png)
+おめでとうございます。Aspose.PDF for Reporting Services が正常にインストールされ、レポートが PDF ドキュメントとしてエクスポートされました。
 
-Click the selected item. It will generate the report in the selected format, send it to the client, and, depending on your web browser settings, either show you the Save File dialog to choose where to save the exported report, or automatically download the file to the your Downloads folder.
-
-{{% alert color="primary" %}}
-Congratulations, you’ve successfully installed Aspose.PDF for Reporting Services and exported a report as a PDF document!
-{{% /alert %}}
 

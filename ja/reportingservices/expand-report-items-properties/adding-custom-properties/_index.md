@@ -1,35 +1,32 @@
 ---
-title: カスタム プロパティの追加
-linktitle: カスタム プロパティの追加
+title: カスタムプロパティの追加
+linktitle: カスタムプロパティの追加
 type: docs
 weight: 10
-url: /ja/reportingservices/adding-custom-properties/
-description: Aspose.PDF for Reporting Services を使用して PDF レポートにカスタム プロパティを追加する方法を学びます。ドキュメントを効率的にカスタマイズできます。
-lastmod: "2026-07-29"
+url: /reportingservices/adding-custom-properties/
+description: Aspose.PDF for Reporting Services を使用して PDF レポートにカスタム プロパティを追加する方法を学びます。ドキュメントを効率的にカスタマイズします。
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-ToC や線矢印など、一部のレポート アイテムの使用範囲を拡大するためにカスタム プロパティを追加できます。このセクションではそのプロセスについて説明します。
+一部のレポート アイテムにカスタム プロパティを追加して、目次、線の矢印などの使用方法を拡張できます。このセクションでは、このプロセスについて説明します。
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+一部のレポート アイテムにカスタム プロパティを追加して、目次、線の矢印などの用途を拡張できます。このセクションでは、このプロセスについて説明します。
 
-目次、線矢印など、一部のレポート アイテムの使用範囲を拡大するためにカスタム プロパティを追加できます。このセクションではそのプロセスについて説明します。
+カスタム プロパティを追加するには、次の手順で RDL ドキュメントのコード ファイルを編集する必要があります。
 
-カスタムプロパティを追加するには、次の手順で RDL ドキュメントのコードファイルを編集する必要があります。
+1. 次の図のように、プロジェクトを開いてソリューション エクスプローラーに移動し、選択したレポート ファイルを右クリックして、[コードの表示] メニュー項目を選択します。
 
-1. 以下の図のように、プロジェクトを開き、ソリューション エクスプローラーへ移動し、選択したレポート ファイルを右クリックして、\u0027View Code\u0027 メニュー項目を選択します。
+![Add Custom Properties](adding-custom-properties_1.png)
 
-![todo:image_alt_text](adding-custom-properties_1.png)
+2. XMLコードファイルを編集します。たとえば、グラフ レポート アイテムのカスタム プロパティを追加する場合は、次の例の赤いテキストのようなコードを追加する必要があります。
 
-2. XML コード ファイルを編集します。たとえば、チャート レポート アイテムにカスタム プロパティを追加したい場合は、以下の例の赤いテキストに似たコードを追加する必要があります。
+## 例
 
-**例**
-
-{{< highlight csharp >}}
-
+```xml
 <chart Name="chart1">
     <Left>5.5cm</Left>
     <Top>0.5cm</Top>
@@ -39,14 +36,12 @@ ToC や線矢印など、一部のレポート アイテムの使用範囲を拡
     </style>     
     <CustomProperties>
       <CustomProperty>
-        <Name>リスト内か</Name>
-        <Value>真</Value>
+        <Name>IsInList</Name>
+        <Value>True</Value>
       </CustomProperty>
     </CustomProperties>
 </chart> 
+```
 
-{{< /highlight >}}
+このコード例では、カスタム プロパティ名は IsInList、値は `True` です。
 
-このコードフラグメント例では、カスタムプロパティ名は IsInList で、値は 'True' です。
-
-{{% /alert %}}
