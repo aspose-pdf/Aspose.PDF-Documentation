@@ -14,16 +14,15 @@ Reporting Services report designer does not support common page sizes such as A4
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+Parameter Name: PageSize  
+Date Type: String  
+Values supported: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+```
 
-**Parameter Name**: PageSize  
-**Date Type**: String  
-**Values supported**: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+## Example
 
-**Example**
-
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -32,7 +31,4 @@ Reporting Services report designer does not support common page sizes such as A4
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```
