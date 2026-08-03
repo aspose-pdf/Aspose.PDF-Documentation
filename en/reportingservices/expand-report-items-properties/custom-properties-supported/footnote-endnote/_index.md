@@ -30,7 +30,7 @@ In the following example, the report contains a Textbox with the value `AsposePd
 
 ## Example
 
-```cs
+```xml
 <Textbox Name="Textbox1">
 ...
 <Paragraphs>

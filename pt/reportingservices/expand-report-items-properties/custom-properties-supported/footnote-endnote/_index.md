@@ -30,7 +30,7 @@ No exemplo a seguir, o relatório contém uma caixa de texto com o valor `Aspose
 
 ## Exemplo
 
-```cs
+```xml
 <Textbox Name="Textbox1">
 ...
 <Paragraphs>
