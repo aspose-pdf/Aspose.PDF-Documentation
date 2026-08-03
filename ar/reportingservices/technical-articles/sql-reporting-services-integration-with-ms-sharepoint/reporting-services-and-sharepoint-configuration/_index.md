@@ -1,44 +1,44 @@
 ---
-title: تكوين خدمات التقارير وSharePoint
-linktitle: تكوين خدمات التقارير وSharePoint
+title: Reporting Services and SharePoint configuration
+linktitle: تكوين Reporting Services وSharePoint
 type: docs
 weight: 40
-url: /ar/reportingservices/reporting-services-and-sharepoint-configuration/
-lastmod: "2026-06-19"
+url: /reportingservices/reporting-services-and-sharepoint-configuration/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-الآن بعد أن تم تثبيت SharePoint وتكوينه على خادم RS وتم إعداد RS عبر مدير تكوين Reporting Services، يمكننا الانتقال إلى الإعداد داخل Central Admin. لقد بسّط RS 2008 R2 هذه العملية فعلاً. كنا نمتلك عملية من ثلاث خطوات كان عليك تنفيذها لجعلها تعمل. الآن لدينا خطوة واحدة فقط.
+Now that SharePoint is installed and configured on the RS server and RS is setup and setup through the Reporting Services Configuration Manager, we can move onto the configuration within Central Admin. RS 2008 R2 has really simplified this process. We use to have a 3 step process that you had to perform to get this to work. Now we just have one step.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-نريد الانتقال إلى موقع مسؤول المركز ثم إلى إعدادات التطبيق العامة. نحو الأسفل سنرى خدمات التقارير.
+نريد الانتقال إلى موقع ويب المسؤول المركزي ثم إلى إعدادات التطبيق العامة. نحو الأسفل سنرى خدمات التقارير.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_1.png)
-**Image1**:- حوار تكوين SharePoint
+![Configuration-step1](reporting-services-and-sharepoint-configuration_1.png)
+**Image1**: - مربع حوار تكوين SharePoint
 
-حدد رابط "Reporting Services Integration". سيتم عرض الشاشة التالية.
+Select "Reporting Services Integration" link. Following screen will be displayed.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_2.png)
-**Image2**:- تحديد بيانات اعتماد تكامل خدمات التقارير
+![Configuration-step2](reporting-services-and-sharepoint-configuration_2.png)
+**Image2**: - حدد بيانات اعتماد تكامل خدمات التقارير
 
 {{% /alert %}}
 
 ## عنوان URL لخدمة الويب:
 
-**سنزوّدك بعنوان URL لخادم التقارير الذي وجدناه في مدير تكوين خدمات التقارير.**
+**سنقدم عنوان URL لخادم التقارير الذي عثرنا عليه في مدير تكوين خدمات التقارير.**
 
 ## وضع المصادقة:
 
-**سنقوم أيضًا باختيار وضع المصادقة. الرابط التالي في MSDN يشرح بالتفصيل ما هي هذه الخيارات.
+**سنقوم أيضًا بتحديد وضع المصادقة. يشرح رابط MSDN التالي بالتفصيل ما هي هذه العناصر.
 نظرة عامة على الأمان لخدمات التقارير في وضع SharePoint المتكامل**
 
 {{% alert color="primary" %}}
 
-**باختصار، إذا كان موقعك يستخدم مصادقة المطالبات، فستستخدم دائمًا المصادقة الموثوقة بغض النظر عما تختاره هنا. إذا أردت تمرير بيانات اعتماد ويندوز، فستحتاج إلى اختيار مصادقة ويندوز. بالنسبة للمصادقة الموثوقة، سنمرّر رمز SPUser ولن نعتمد على بيانات اعتماد ويندوز. ستحتاج أيضًا إلى استخدام المصادقة الموثوقة إذا قمت بتكوين مواقع الوضع الكلاسيكي للعمل مع NTLM وتم إعداد RS لـ NTLM. سيُحتاج إلى Kerberos لاستخدام مصادقة ويندوز ولتمرير ذلك إلى مصدر البيانات الخاص بك.**
+**باختصار، إذا كان موقعك يستخدم مصادقة المطالبات، فستستخدم دائمًا المصادقة الموثوقة بغض النظر عما تختاره هنا. إذا كنت تريد تمرير بيانات اعتماد Windows، فستحتاج إلى اختيار مصادقة Windows. بالنسبة للمصادقة الموثوقة، سنمرر رمز SPUser المميز ولن نعتمد على بيانات اعتماد Windows. ستحتاج أيضًا إلى استخدام المصادقة الموثوقة إذا قمت بتكوين مواقع الوضع الكلاسيكي الخاصة بك لـ NTLM وتم إعداد RS لـ NTLM. ستكون هناك حاجة إلى Kerberos لاستخدام مصادقة Windows وتمرير ذلك لمصدر البيانات الخاص بك.**
 
 {{% /alert %}}
 
@@ -46,55 +46,54 @@ lastmod: "2026-06-19"
 
 {{% alert color="primary" %}}
 
-**هذا يمنحك خيار تفعيل خدمات التقارير على جميع مجموعات المواقع، أو يمكنك اختيار أي منها تريد تفعيلها. هذا يعني ببساطة أي المواقع التي ستتمكن من استخدام خدمات التقارير. عند الانتهاء، يجب أن ترى النتائج التالية**
+**يمنحك هذا خيار تنشيط خدمات التقارير على كافة مجموعات الموقع، أو يمكنك اختيار المجموعات التي تريد تنشيطها عليها. وهذا يعني حقًا المواقع التي ستكون قادرة على استخدام خدمات التقارير. عند الانتهاء من ذلك، يجب أن ترى النتائج التالية **
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_3.png)
+![Configuration-step3](reporting-services-and-sharepoint-configuration_3.png)
 
-**Image3:**- نجاح تكامل خدمات التقارير مع بيئة SharePoint
+**Image3:**- التكامل الناجح لخدمات التقارير مع بيئة SharePoint
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-بالعودة إلى عنوان URL الخاص بـ ReportServer، ينبغي أن نرى شيئًا مشابهًا لما يلي
+بالعودة إلى عنوان URL الخاص بـ ReportServer، يجب أن نرى شيئًا مشابهًا لما يلي
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_4.png)
+![Configuration-step4](reporting-services-and-sharepoint-configuration_4.png)
 
-**Image4:**- تم اتصال خدمات التقارير بنجاح مع بيئة SharePoint
+**Image4:**- تم ربط خدمات التقارير ببيئة SharePoint بنجاح
 
-**ملاحظة:** ***إذا تم تكوين موقع SharePoint الخاص بك لاستخدام SSL، فلن يظهر في هذه القائمة. إنها مشكلة معروفة ولا تعني وجود مشكلة. يجب أن تظل تقاريرك تعمل.***
+**ملاحظة:** ***إذا تم تكوين موقع SharePoint الخاص بك لـ SSL، فلن يظهر في هذه القائمة. إنها مشكلة معروفة ولا تعني أن هناك مشكلة. من المفترض أن تظل تقاريرك تعمل.***
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-الآن بعد أن نجحنا في دمج كلا المنتجين، نحن جاهزون لاستخدام Reporting Services في SharePoint 2010. كما في الإصدار السابق لدينا ميزة (يتم تنشيطها عند تكوين تكامل Reporting Services Integration) في "Site Collection Feature". أيضًا أضاف التثبيت 3 أنواع محتوى لإضافتها إلى موقعنا. في Image 7 يمكننا أن نرى 2 من أنواع المحتوى المضافة في مكتبة مستندات لإنشاء تقرير مخصص باستخدامها، كما نرى في Image5 أدناه.
+Now that we have successfully integrated both products, we are ready to use Reporting Services in SharePoint 2010. As the previous version we have a feature (activated when we configure Reporting Services Integration) in the “Site Collection Feature”. Also the installation added 3 content types to add to our site. In Image 7 we can see 2 of them content types added in a document library to create a custom report us ing the, as we can see in Image5 below.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_5.png)
+![Configuration-step5](reporting-services-and-sharepoint-configuration_5.png)
 
-**Image5:**- مُنشئ التقارير
+**الصورة5:**- منشئ التقارير
 
-المُنشئ “Reporter Builder” هو عنصر تحكم ActiveX لذا نحتاج إلى تنزيله عبر الخادم، كما نرى في Image 6 أدناه.
+يعد "Reporter Builder" أحد عناصر تحكم ActiveX لذا نحتاج إلى تنزيله عبر الخادم، كما نرى في الصورة 6 أدناه.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_6.png)
+![Configuration-step6](reporting-services-and-sharepoint-configuration_6.png)
 
-**Image6:**- تنزيل وتثبيت Report Builder
+**Image6:**- قم بتنزيل وتثبيت Report Builder
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-بمجرد اكتمال عملية التنزيل، قم بتحميل عنصر التحكم “Report Builder”. الآن نحن جاهزون لتصميم تقريرنا الأول، كما هو موضح في Image7 أدناه.
+بمجرد اكتمال عملية التنزيل، قم بتحميل عنصر التحكم "منشئ التقرير". نحن الآن جاهزون لتصميم تقريرنا الأول، كما هو موضح في الصورة 7 أدناه.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_7.png)
+![Configuration-step7](reporting-services-and-sharepoint-configuration_7.png)
 
-**Image7:**- Report Builder – معالج إنشاء تقرير جديد
+**الصورة7:**- منشئ التقارير – معالج إنشاء التقارير الجديد
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-بعد إنشاء تقريرنا يمكننا حفظه في مكتبة المستندات التي تم إنشاؤها لوضع التقارير في SharePoint 2010. يجب استخدام نوع المحتوى الآخر لإنشاء اتصال مشترك كمصدر بيانات وحفظه في مكتبة مستندات في SharePoint. يمكننا إنشاء مكتبة مستندات، إضافة هذا النوع من المحتوى ثم يصبح لدينا اتصالات متاحة لتغيير مصدر بيانات التقارير.
+بعد إنشاء تقريرنا، يمكننا حفظه في مكتبة المستندات التي تم إنشاؤها لوضع التقارير في SharePoint 2010. ويجب استخدام نوع المحتوى الآخر لإنشاء اتصال مشترك كمصدر بيانات وحفظه في مكتبة مستندات في SharePoint. يمكننا إنشاء مكتبة مستندات وإضافة نوع المحتوى هذا وبعد ذلك يمكننا إتاحة اتصالاتنا لتغيير مصدر بيانات التقارير.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_8.png)
+![Configuration-step8](reporting-services-and-sharepoint-configuration_8.png)
 
-**Image8:**- تكامل ناجح لـ Aspose.PDF لخدمات التقارير مع MS SharePoint
+**Image8:**- الدمج الناجح لملف Aspose.PDF لخدمات التقارير مع MS SharePoint
 {{% /alert %}}
-
 

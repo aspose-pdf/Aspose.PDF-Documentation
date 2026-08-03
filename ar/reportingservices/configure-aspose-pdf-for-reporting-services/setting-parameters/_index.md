@@ -1,25 +1,24 @@
 ---
-title: ضبط المعلمات
-linktitle: ضبط المعلمات
+title: إعداد المعلمات
+linktitle: إعداد المعلمات
 type: docs
 weight: 10
-url: /ar/reportingservices/setting-parameters/
-description: اكتشف كيفية ضبط المعلمات لتصيير PDF في Aspose.PDF لخدمات التقارير. احصل على تحكم دقيق في النتيجة.
-lastmod: "2026-06-19"
+url: /reportingservices/setting-parameters/
+description: تعرف على كيفية تعيين المعلمات لعرض PDF في Aspose.PDF لخدمات التقارير. تحقيق التحكم الدقيق في الإخراج.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-يمكنك تحديد بعض معلمات التكوين التي تؤثر على طريقة إنشاء Aspose.Pdf لخدمات التقارير للمستندات. يصف هذا القسم هذه العملية.
+يمكنك تحديد معلمات تكوين معينة تؤثر على كيفية قيام Aspose.PDF for Reporting Services بإنشاء المستندات. يصف هذا القسم هذه العملية.
 
 {{% /alert %}}
 
-لتكوين Aspose.Pdf لخدمات التقارير، تحتاج إلى تحرير ملف C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config. هذا ملف XML وتكوين المرسِّل موجود داخل ```<Extension>``` العنصر المقابل لمعالج Aspose.PDF.
+لتكوين Aspose.Pdf لخدمات التقارير، تحتاج إلى تحرير الملف `C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\rsreportserver.config`. هذا ملف XML وتكوين العارض موجود داخل العنصر `<Extension>` المطابق لعارض Aspose.PDF.
 
-**مثال**
+## مثال
 
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
 <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -30,20 +29,18 @@ For PageOrientation -->
     </Configuration>
 </Extension>
 </Render>
-
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}}
 
-إذا أردت ضبط معلمات لملف تقرير محدد ولكن ليس لكل تقرير على الخادم، يمكنك إضافة معلمة تقرير للتقرير المحدد في Report Builder كما في الخطوات التالية (على سبيل المثال، سنضيف معلمة ‘IsLandscape’ المذكورة سابقًا):
+إذا كنت تريد تعيين معلمات لملف تقرير معين ولكن ليس لكل تقرير على الخادم، فيمكنك إضافة معلمة تقرير لتقرير معين في أداة إنشاء التقارير بالخطوات التالية (على سبيل المثال، سنضيف معلمة "IsLandscape" الموضحة سابقًا):
 
-1. افتح التقرير في Report Designer، انقر بزر الماوس الأيمن على مجلد ‘Parameters’ في لوحة ‘Report Data’، واختر ‘Add Parameter…’ (أو، بدلاً من ذلك، اسحب قائمة ‘New’ واختر ‘Parameter…’).
- 
-![todo:image_alt_text](setting-parameters_1.png)
+1. افتح التقرير في مصمم التقارير، وانقر بزر الماوس الأيمن على مجلد "المعلمات" في جزء "بيانات التقرير"، وحدد "إضافة معلمة..." (أو، بدلاً من ذلك، اسحب القائمة "جديد" للأسفل وحدد "معلمة...").
 
-1. في مربع الحوار ‘Report Parameter Properties’، أنشئ المعلمة باسم ‘IsLandscape’، مع نوع البيانات Boolean، وأضف القيمة True في علامة التبويب ‘Default Values’.
+![Parameters set up. Step 1](setting-parameters_1.png)
 
-![todo:image_alt_text](setting-parameters_2.png)
+1. في مربع الحوار "خصائص معلمة التقرير"، قم بإنشاء المعلمة المسماة "IsLandscape"، بنوع البيانات المنطقية، وأضف القيمة True في علامة التبويب "القيم الافتراضية".
+
+![Parameters set up. Step 2](setting-parameters_2.png)
 
 {{% /alert %}}
-

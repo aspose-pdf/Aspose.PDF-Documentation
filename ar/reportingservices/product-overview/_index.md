@@ -3,9 +3,9 @@ title: نظرة عامة على المنتج
 linktitle: نظرة عامة على المنتج
 type: docs
 weight: 10
-url: /ar/reportingservices/product-overview/
-description: نظرة عامة على Aspose.PDF for Reporting Services – حل شامل لتحويل تقارير SSRS إلى PDF مع ميزات تخطيط متقدمة.
-lastmod: "2026-06-19"
+url: /reportingservices/product-overview/
+description: نظرة عامة على Aspose.PDF لخدمات التقارير - حل شامل لعرض تقارير SSRS إلى PDF مع ميزات التخطيط المتقدمة.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
@@ -14,18 +14,17 @@ lastmod: "2026-06-19"
 
 {{% /alert %}}
 
-## مرحبًا بك في Aspose.PDF for Reporting Services!
+## مرحبًا بك في Aspose.PDF لخدمات التقارير!
 
-Microsoft SQL Server Reporting Services يلبي الحاجة التي تواجهها العديد من المؤسسات - الحاجة إلى بناء حلول ذكاء الأعمال والتقارير. حتى الآن، كان على المطورين تضمين التقارير في تطبيقاتهم، أو كان على المؤسسات شراء حلول تقارير طرف ثالث مكلفة وأحيانًا إشكالية. الآن، يقدم Microsoft SQL Server Reporting Services حلاً كاملاً لتوزيع التقارير عبر المؤسسة؛ مما يمكّن الأعمال من اتخاذ قرارات أفضل وأسرع.
+تلبي خدمات تقارير Microsoft SQL Server الحاجة التي تواجهها العديد من المؤسسات - الحاجة إلى إنشاء حلول ذكاء الأعمال وإعداد التقارير. حتى الآن، كان مطلوبًا من المطورين تضمين التقارير في تطبيقاتهم، أو كان يتعين على المؤسسات شراء حلول تقارير باهظة الثمن وأحيانًا مثيرة للمشاكل من طرف ثالث. الآن، تقدم خدمات تقارير Microsoft SQL Server حلاً كاملاً لتوزيع التقارير عبر المؤسسة؛ تمكين الشركات من اتخاذ القرارات بشكل أفضل وأسرع.
 
-**Aspose.Pdf for Reporting Services** هو حل فريد آخر من Aspose، يجعل من الممكن إنشاء تقارير PDF في Microsoft SQL Server 2016/2017/2019/2022 Reporting Services وPower BI Report Server. جميع ميزات تقارير RDL، بما في ذلك الجداول والمصفوفات والرسوم البيانية والصور، تُحول بأعلى درجة من الدقة إلى PDF.
+**Aspose.PDF for Reporting Services** is another unique solution from Aspose, that makes possible generating PDF reports in Microsoft SQL Server 2016/2017/2019/2022 Reporting Services and Power BI Report Server. All RDL report features, including tables, matrices, charts and images are converted with the highest degree of precision to PDF.
 
-Microsoft SQL Server Reporting Services لديها قدرات مدمجة لتصدير التقارير كوثائق PDF، لكنها تفتقر إلى توفير الدعم الفني اللازم للمستخدم النهائي. تسعى Aspose.Pdf لتقديم دعم فني متفوق وفعال.
+تتمتع خدمات تقارير Microsoft SQL Server بإمكانيات مدمجة لتصدير التقارير كمستندات PDF، ولكنها تفتقر إلى توفير الدعم الفني اللازم للمستخدم النهائي. يسعى Aspose.Pdf جاهداً لتوفير دعم فني عالي الجودة وفعال.
 
-Aspose.Pdf for Reporting Services ينشئ المستندات على الخادم دون الاستفادة من Adobe.Pdf SDK. يستخدم Aspose.Pdf for Reporting Services داخليًا Aspose.Pdf for .NET – المكوّن العالمي المستوى لمعالجة المستندات على الخادم والتحويلات.
+Aspose.PDF for Reporting Services creates documents on the server without utilizing Adobe.Pdf SDK. Aspose.PDF for Reporting Services internally uses Aspose.PDF for .NET – the world-class component for server-side document processing and conversions.
 
-## Aspose.PDF for Reporting Services يتيح إمكانية تصدير أي تقرير بتنسيق PDF
+## Aspose.PDF لخدمات التقارير يجعل من الممكن تصدير أي تقرير بتنسيق PDF
 
-![todo:image_alt_text](product-overview_2.png)
-
+![Product Overview](product-overview_2.png)
 

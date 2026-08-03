@@ -1,33 +1,34 @@
 ---
-title: حاشية سفلية هامش نهائي
-linktitle: حاشية سفلية هامش نهائي
+title: حاشية سفلية
+linktitle: حاشية سفلية
 type: docs
 weight: 30
-url: /ar/reportingservices/footnote-endnote/
-description: أضف الحواشي السفلية والهوامش النهائية إلى تقارير PDF الخاصة بك باستخدام Aspose.PDF for Reporting Services. قدّم مراجع مستندات مفصلة.
-lastmod: "2026-06-19"
+url: /reportingservices/footnote-endnote/
+description: أضف الحواشي السفلية والتعليقات الختامية إلى تقارير PDF الخاصة بك باستخدام Aspose.PDF لخدمات التقارير. توفير مراجع وثيقة مفصلة.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-لا يمكن لبرنامج Report Builder تعيين الحاشية السفلية أو الهامش النهائي لمربعات النص. باستخدام Aspose.Pdf for Reporting Services، يمكنك القيام بذلك بسهولة عن طريق إضافة خصائص مخصصة.
+لا يمكن لمنشئ التقرير تعيين الحاشية السفلية أو التعليق الختامي لمربعات النص. باستخدام Aspose.PDF لخدمات التقارير، يمكنك القيام بذلك بسهولة عن طريق إضافة خصائص مخصصة.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-حاشية سفلية
-**خاصية مخصصة** **الاسم**: حاشية
-**قيمة الخاصية المخصصة**: *ال* *قيمة* *يجب* *أن تكون* *سلسلة*
+```text
+Footnote
+Custom Property `Name`: Footnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-حاشية ختامية
-**خاصية مخصصة** **الاسم**: حاشية ختامية
-**قيمة الخاصية المخصصة**: *ال* *قيمة* *يجب* *أن تكون* *سلسلة*
+```text
+Endnote
+Custom Property `Name`: Endnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-{{% alert color="primary" %}}
-في المثال التالي، يحتوي التقرير على مربع نص بالقيمة 'AsposePdf4RS'، ونريد إضافة وصف تكميلي على شكل حاشية بالنص "An optional PDF renderer for SSRS from Aspose Pty. Ltd.".
-{{% /alert %}}
+في المثال التالي، يحتوي التقرير على مربع نص بالقيمة `AsposePdf4RS`، ونريد إضافة وصف تكميلي في شكل حاشية سفلية مع النص "عارض PDF اختياري لـ SSRS من Aspose Pty. Ltd.".
 
-**مثال**
+## مثال
 
 ```cs
 <Textbox Name="Textbox1">
@@ -53,5 +54,3 @@ lastmod: "2026-06-19"
 </Paragraphs>
 </Textbox>
 ```
-{{% /alert %}}
-

@@ -1,29 +1,30 @@
 ---
-title: محاذاة النص مبرر ومبرر بالكامل
-linktitle: محاذاة النص مبرر ومبرر بالكامل
+title: ضبط كاملضبط محاذاة النص
+linktitle: ضبط كاملضبط محاذاة النص
 type: docs
 weight: 40
-url: /ar/reportingservices/justify-fulljustify-text-alignment/
-description: تحقق من محاذاة النص المثالية في تقارير PDF باستخدام Aspose.PDF لخدمات التقارير. يدعم خيارات المبرر والمبرر بالكامل.
-lastmod: "2026-06-19"
+url: /reportingservices/justify-fulljustify-text-alignment/
+description: حقق محاذاة مثالية للنص في تقارير PDF باستخدام Aspose.PDF لخدمات التقارير. دعم خيارات التبرير والتبرير الكامل.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-لا يدعم مُنشئ التقارير القدرة على تحديد محاذاة النص لصندوق النص “Justify” و “FullJustify”. باستخدام Aspose.Pdf لخدمات التقارير، يمكنك القيام بذلك بسهولة عن طريق إضافة خصائص مخصصة.
+لا يدعم منشئ التقارير القدرة على تحديد محاذاة النص لمربع النص `Justify` و `FullJustify`. باستخدام Aspose.PDF لخدمات التقارير، يمكنك القيام بذلك بسهولة عن طريق إضافة خصائص مخصصة.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**اسم الخاصية المخصصة** : محاذاة النص  
-**نوع الخاصية المخصصة** : String  
-**قيم الخاصية المخصصة** : Justify, FullJustify  
+```text
+Custom Property `Name`: TextAlignment  
+Custom Property `Type`: String  
+Custom Property `Values`: Justify, FullJustify  
+```
 
-في التقرير يجب أن يكون الكود كما يلي:
+يجب أن يكون الكود في التقرير كما يلي:
 
-**مثال**
+## مثال
 
-{{< highlight csharp >}}
+```xml
 <Textbox Name="textbox1">
 <value> AsposePdf4RS </value>     
   <CustomProperties>
@@ -33,6 +34,4 @@ lastmod: "2026-06-19"
    </CustomProperty>
   </CustomProperties>
 </Textbox>
-{{< /highlight >}}
-{{% /alert %}}
-
+```

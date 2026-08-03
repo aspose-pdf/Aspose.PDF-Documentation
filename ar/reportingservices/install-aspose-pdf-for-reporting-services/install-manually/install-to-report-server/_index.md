@@ -1,60 +1,46 @@
 ---
-title: تثبيت إلى خادم التقارير
-linktitle: تثبيت إلى خادم التقارير
+title: التثبيت على خادم التقرير
+linktitle: التثبيت على خادم التقرير
 type: docs
 weight: 10
-url: /ar/reportingservices/install-to-report-server/
-lastmod: "2026-06-19"
+url: /reportingservices/install-to-report-server/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-ما عليك إلا اتباع هذه الخطوات إذا قمت بتثبيت Aspose.PDF لخدمات التقارير يدويًا، دون استخدام مثبت MSI. يقوم مثبت MSI بتنفيذ جميع إجراءات التثبيت والتسجيل اللازمة تلقائيًا.
+ما عليك سوى اتباع هذه الخطوات إذا قمت بتثبيت Aspose.PDF لخدمات التقارير يدويًا، وليس باستخدام مثبت MSI. يقوم برنامج تثبيت MSI بتنفيذ جميع إجراءات التثبيت والتسجيل اللازمة تلقائيًا.
 
 {{% /alert %}}
 
-في الخطوات التالية، ستحتاج إلى نسخ وتعديل الملفات في الدليل حيث تم تثبيت Microsoft SQL Server Reporting Services. تجميع SSRS 2016 موجود في دليل \Bin\SSRS2016 داخل حزمة zip؛ تجميع SSRS 2017 موجود في دليل \Bin\SSRS2017؛ تجميع SSRS 2019 موجود في دليل \Bin\SSRS2019؛ تجميع SSRS 2022 موجود في دليل \Bin\SSRS2022؛ تجميع Power BI Report Server موجود في دليل \Bin\PowerBI. 
+في الخطوات التالية، ستحتاج إلى نسخ الملفات وتعديلها في الدليل المثبت عليه Microsoft SQL Server Reporting Services. يقع تجميع SSRS 2016 في الدليل \Bin\SSRS2016 الخاص بالحزمة المضغوطة؛ يقع تجميع SSRS 2017 في الدليل \Bin\SSRS2017؛ يقع تجميع SSRS 2019 في الدليل \Bin\SSRS2019؛ يقع تجميع SSRS 2022 في الدليل \Bin\SSRS2022؛ يقع تجميع Power BI Report Server في الدليل \Bin\PowerBI.
 
-{{% alert color="primary" %}}
+**الخطوة 1.** حدد موقع دليل تثبيت خادم التقارير. عادةً ما يكون الدليل الجذر لـ Microsoft SQL Server هو C:\Program Files\Microsoft SQL Server. تختلف العملية الإضافية قليلاً بالنسبة إلى Reporting Services 2016 وReporting Services 2017 والإصدارات الأحدث وPower BI Report Server:
 
-**Step 1.** حدد دليل تثبيت Report Server. الدليل الجذر لـ Microsoft SQL Server عادةً هو C:\Program Files\Microsoft SQL Server. العملية اللاحقة تختلف قليلاً بالنسبة لـ Reporting Services 2016 وReporting Services 2017 وما بعدها، وPower BI Report Server:
-
-- يتم تثبيت Report Server 2016 افتراضيًا في الدليل C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer. إذا كنت تستخدم مثيلات مسماة مخصصًا بدلاً من المثيل الافتراضي، فسيكون المسار الافتراضي هو C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
-- يتم تثبيت Report Server 2017 وما بعده افتراضيًا في الدليل C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer.
+- يتم تثبيت Report Server 2016 افتراضيًا في الدليل C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer. إذا كنت تستخدم مثيلات مسماة مخصصة بدلاً من المثيل الافتراضي، فسيكون المسار الافتراضي هو C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer
+- يتم تثبيت Report Server 2017 والإصدارات الأحدث بشكل افتراضي في الدليل C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer.
 - يتم تثبيت Power BI Report Server افتراضيًا في الدليل C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer.
 
-في النص التالي سيتم الإشارة إلى دليل تثبيت Reporting Services (أحد المسارات المذكورة أعلاه) على أنه ```<Instance>```.
-{{% /alert %}}
+في النص التالي، سيتم الإشارة إلى دليل تثبيت خدمات التقارير (أحد المسارات المذكورة أعلاه) باسم `<Instance>`.
 
-{{% alert color="primary" %}}
-**الخطوة 2.** نسخ Aspose.Pdf.ReportingServices.dll للإصدار المقابل من SSRS إلى المجلد ```<Instance>```\bin.
-{{% /alert %}}
+**الخطوة 2.** انسخ Aspose.Pdf.ReportingServices.dll لإصدار SSRS المقابل إلى المجلد `<Instance>\bin`.
 
-{{% alert color="primary" %}}
-**الخطوة 3.** تسجيل Aspose.Pdf لـ Reporting Services كملحق عرض. افتح ملف ```<Instance>```\rsreportserver.config وأضف الأسطر التالية إلى العنصر ```<Render>```:
-{{% /alert %}}
+**الخطوة 3.** قم بتسجيل Aspose.PDF لخدمات التقارير كملحق للعرض. افتح الملف `<Instance>\rsreportserver.config` وأضف الأسطر التالية إلى العنصر `<Render>`:
 
-**مثال**
+## مثال
 
-{{< highlight csharp >}}
-
- <Render>
+```xml
+<Render>
 ...
-<!--Start here.-->
-
 <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices"/>
-
 </Render>
+```
 
-{{< /highlight >}}
+**الخطوة 4.** قم بتوفير Aspose.PDF لخدمات التقارير مع أذونات التنفيذ. افتح الملف `<Instance>\rssrvpolicy.config` وأضف النص التالي باعتباره العنصر الأخير في العنصر الثاني إلى العنصر الخارجي `<CodeGroup>` والذي يجب أن يكون `<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):`
 
-{{% alert color="primary" %}}
-**الخطوة 4.** قدم Aspose.Pdf لخدمات التقارير مع الأذونات للتنفيذ. افتح ملف ```<Instance>```\\rssrvpolicy.config وأضف النص التالي كآخر عنصر في العنصر ```<CodeGroup>``` الثاني إلى الخارجي (يجب أن يكون ```<CodeGroup class="FirstMatchCodeGroup" version="1" PermissionSetName="Execution" Description="This code group grants MyComputer code Execution permission. ">):```
-{{% /alert %}}
+## مثال
 
-**مثال**
-
-{{< highlight csharp >}}
+```xml
 
  <CodeGroup>
 ...
@@ -77,21 +63,14 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 </CodeGroup>
 
 </CodeGroup>
+```
 
-{{< /highlight >}}
+**الخطوة 5.** تأكد من تثبيت Aspose.PDF for Reporting Services بنجاح. افتح بوابة الويب الخاصة بخدمات التقارير وتحقق من قائمة تنسيقات التصدير المتاحة للتقرير. يمكنك تشغيل بوابة الويب عن طريق تشغيل متصفح ويب وكتابة عنوان URL لبوابة الويب الخاصة بخدمات التقارير في شريط العناوين (افتراضيًا هو `http://<Reporting_Services_server_name>/reports/`). حدد أحد التقارير المتوفرة في بوابة الويب الخاصة بك واسحب القائمة المنسدلة "تصدير". يجب أن تشاهد قائمة تنسيقات التصدير بما في ذلك تلك التي يوفرها ملحق Aspose.PDF لخدمات التقارير. حدد PDF عبر عنصر Aspose.PDF.
 
-{{% alert color="primary" %}}
-**الخطوة 5.** تحقق من أن Aspose.Pdf for Reporting Services تم تثبيته بنجاح. افتح بوابة الويب لخدمات التقارير وتحقق من قائمة صيغ التصدير المتاحة لتقرير. يمكنك تشغيل بوابة الويب ببدء متصفح ويب وكتابة عنوان URL لبوابة الويب لخدمات التقارير في شريط العنوان (بشكل افتراضي هو http://```<Reporting_Services_server_name>```/reports/). اختر أحد التقارير المتوفرة في بوابة الويب الخاصة بك واسحب قائمة التصدير من القائمة المنسدلة. يجب أن ترى قائمة صيغ التصدير بما في ذلك تلك التي يوفرها ملحق Aspose.Pdf for Reporting Services. اختر العنصر PDF via Aspose.PDF.
+![Install to report server](install-to-report-server_1.png)
 
- 
-{{% /alert %}}
+انقر فوق العنصر المحدد. سيقوم بإنشاء التقرير بالتنسيق المحدد، وإرساله إلى العميل، ووفقًا لإعدادات متصفح الويب الخاص بك، إما أن يعرض لك مربع حوار حفظ الملف لاختيار مكان حفظ التقرير الذي تم تصديره، أو تنزيل الملف تلقائيًا إلى مجلد التنزيلات الخاص بك.
 
-![todo:image_alt_text](install-to-report-server_1.png)
-
-انقر على العنصر المحدد. سيولد التقرير بالتنسيق المختار، ويرسله إلى العميل، واعتمادًا على إعدادات متصفح الويب الخاص بك، إما أن يعرض لك مربع حوار حفظ الملف لاختيار مكان حفظ التقرير المُصدَّر، أو يقوم بتنزيل الملف تلقائيًا إلى مجلد التنزيلات الخاص بك.
-
-{{% alert color="primary" %}}
-تهانينا، لقد قمت بتثبيت Aspose.Pdf for Reporting Services بنجاح وتصدير تقرير كملف PDF!
-{{% /alert %}}
+تهانينا، لقد نجحت في تثبيت Aspose.PDF لخدمات التقارير وتصدير تقرير كمستند PDF!
 
 

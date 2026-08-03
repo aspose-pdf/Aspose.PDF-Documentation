@@ -3,37 +3,38 @@ title: تنسيق HTML
 linktitle: تنسيق HTML
 type: docs
 weight: 20
-url: /ar/reportingservices/html-formatting/
-description: تمكين تنسيق HTML في تقارير PDF باستخدام Aspose.PDF لخدمات التقارير. أضف الأنماط والهيكل بسهولة.
-lastmod: "2026-06-19"
+url: /reportingservices/html-formatting/
+description: تمكين تنسيق HTML في تقارير PDF باستخدام Aspose.PDF لخدمات التقارير. أضف الأنماط والبنية بسهولة.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-أحيانًا قد ترغب في تصدير النص الموجود في صناديق النص مع التنسيق. للأسف، لا تدعم خدمات التقارير هذا. ومع ذلك، لا يزال بإمكانك تنفيذه باستخدام Aspose.PDF لخدمات التقارير. فقط قم بتمكين وضع خاص تُعامل فيه جميع النصوص داخل صناديق النص كـHTML وضع علامات HTML اللازمة لتنسيق النص في مستند الإخراج. على سبيل المثال، للحصول على نص عادي وعريض ومائل في نفس صندوق النص، أدخل القيمة التالية لصندوق النص:
+في بعض الأحيان قد ترغب في تصدير النص في مربعات النص ذات التنسيق. لسوء الحظ، لا تدعم خدمات التقارير هذا. ومع ذلك، لا يزال بإمكانك تنفيذ ذلك باستخدام Aspose.PDF لخدمات التقارير. ما عليك سوى تمكين وضع خاص يتم فيه التعامل مع كل النص الموجود في مربعات النص على أنه HTML ووضع علامات HTML الضرورية لتنسيق النص في مستند الإخراج. على سبيل المثال، للحصول على نص عادي وغامق ومائل في نفس مربع النص، أدخل قيمة مربع النص التالي:
 
-بعض هذا النص هو ```<b>bold</b>``` ونص آخر هو ```<i>italic</i>```.
+بعض هذا النص هو `<b>bold</b>` والنص الآخر هو `<i>italic</i>`.
 
-عند التصدير، سيظهر النص كما أن بعض هذا النص هو **عريض** والنص الآخر هو *مائل*.
+عند التصدير، سيبدو النص كما يلي: بعض هذا النص **غامق** والنص الآخر *مائل*.
 
-يرجى ملاحظة أن لهذه المقاربة بعض القيود
+يرجى ملاحظة أن هذا النهج له بعض القيود
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-- التنسيق غير مرئي في وقت التصميم (في Report Builder، بوابة ويب Reporting Services وغيرها). بدلاً من ذلك، سترى نص HTML على شكل نص عادي مع العلامات.
-- امتداد العرض Aspose.PDF for Reporting Services يتعرف على شفرة HTML في مربعات النص ويقوم بتنسيقها بشكل صحيح. مُعالج PDF الافتراضي في Reporting Services سيصدّر هذا الترميز كنص عادي.
+- لا يكون التنسيق مرئيًا في وقت التصميم (في Report Builder، وبوابة الويب الخاصة بخدمات التقارير، وما إلى ذلك). بدلاً من ذلك، ستشاهد نص HTML في شكل نص عادي مع العلامات.
+- يتعرف ملحق العرض Aspose.PDF for Reporting Services على تعليمات HTML البرمجية ويقوم بتنسيقها بشكل صحيح في مربعات النص. سيقوم عارض PDF الافتراضي لخدمات التقارير بتصدير هذا الترميز كنص عادي.
 
-**اسم المعامل**: IsHtmlTagSupported  
-**نوع البيانات**: Boolean  
-**القيم المدعومة**: True, False (default)   
+```text
+Parameter Name: IsHtmlTagSupported  
+Date Type: Boolean  
+Values supported: True, False (default)   
+```
 
-**مثال**
+## مثال
 
-{{< highlight csharp >}}
-
- <Render>
+```xml
+<Render>
 ...
     <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices ">
     <Configuration>
@@ -41,13 +42,10 @@ lastmod: "2026-06-19"
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
+إذا كنت تريد إضافة هذه المعلمة في مصمم التقارير، استخدم نوع البيانات `Boolean`.
 
-إذا كنت ترغب في إضافة هذا المعامل في مصمم التقرير، استخدم نوع البيانات 'Boolean'.
-
- 
-حاليًا يدعم Aspose.Pdf for Reporting Services مجموعة فرعية من جميع وسوم HTML. يمكنك العثور على مزيد من المعلومات في Aspose.PDF [توثيق](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
+حاليًا، يدعم Aspose.Pdf for Reporting Services مجموعة فرعية من كافة علامات HTML. قد تجد المزيد من المعلومات في Aspose.PDF [الوثائق](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}
-

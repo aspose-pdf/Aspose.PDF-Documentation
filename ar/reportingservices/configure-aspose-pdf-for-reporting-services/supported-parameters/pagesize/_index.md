@@ -1,29 +1,28 @@
 ---
 title: PageSize
-linktitle: PageSize
+linktitle: حجم الصفحة
 type: docs
 weight: 60
-url: /ar/reportingservices/pagesize/
-description: قم بتخصيص أحجام الصفحات لتقارير PDF في Aspose.PDF لخدمات التقارير لتلبية متطلبات المستند المحددة.
-lastmod: "2026-06-19"
+url: /reportingservices/pagesize/
+description: Customize page sizes for PDF reports in Aspose.PDF for Reporting Services to meet specific document requirements.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-مصمم تقارير Reporting Services لا يدعم أحجام الصفحات الشائعة مثل A4 و B5 و Letter وما إلى ذلك. باستخدام Aspose.PDF لخدمات التقارير، يمكنك الحصول عليها كما هو موضح في المثال التالي.
+لا يدعم مصمم تقارير خدمات التقارير أحجام الصفحات الشائعة مثل A4 وB5 وLetter وما إلى ذلك. باستخدام Aspose.PDF لخدمات التقارير، يمكنك الحصول عليه كما في المثال التالي.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+Parameter Name: PageSize  
+Date Type: String  
+Values supported: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+```
 
-**اسم المعامل**: PageSize  
-**نوع التاريخ**: String  
-**القيم المدعومة**: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+## Example
 
-**مثال**
-
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -32,8 +31,4 @@ lastmod: "2026-06-19"
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
-
+```

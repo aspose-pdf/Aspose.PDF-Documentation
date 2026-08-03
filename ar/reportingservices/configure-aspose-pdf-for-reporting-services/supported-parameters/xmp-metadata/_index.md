@@ -1,39 +1,46 @@
 ---
-title: بيانات XMP الوصفية
-linktitle: بيانات XMP الوصفية
+title: بيانات تعريف XMP
+linktitle: بيانات تعريف XMP
 type: docs
 weight: 80
-url: /ar/reportingservices/xmp-metadata/
-description: تعلم كيفية إدارة بيانات XMP الوصفية في تقارير PDF باستخدام Aspose.PDF لـ Reporting Services. حسّن التعامل مع بيانات المستند الوصفية.
-lastmod: "2026-06-19"
+url: /reportingservices/xmp-metadata/
+description: تعرف على كيفية إدارة بيانات تعريف XMP في تقارير PDF باستخدام Aspose.PDF لخدمات التقارير. تحسين معالجة البيانات التعريفية للوثيقة.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-مصمم تقارير Reporting Services لا يدعم تضمين بيانات XMP الوصفية في المستند. يوفر Aspose.Pdf لـ Reporting Services أربعة معلمات لتعيين بيانات XMP الوصفية المقابلة، وهي:
+لا يدعم مصمم تقارير خدمات التقارير تضمين بيانات تعريف XMP في المستند. يوفر Aspose.PDF لخدمات التقارير أربع معلمات لتعيين بيانات تعريف XMP المقابلة، وهي:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**اسم المعامل**: CreationDate  
-**نوع التاريخ**: String  
-**القيم المدعومة**: التاريخ بأحد تنسيقات التاريخ
+```text
+**Parameter Name: CreationDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats
+```
 
-**اسم المعامل**: ModifyDate  
-**نوع التاريخ**: String  
-**القيم المدعومة**: التاريخ بأحد تنسيقات التاريخ 
+```text
+**Parameter Name: ModifyDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**اسم المعامل**: MetaDataDate  
-**نوع التاريخ**: String  
-**القيم المدعومة**: التاريخ بأحد تنسيقات التاريخ 
+```text
+**Parameter Name: MetaDataDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**اسم المعامل**: CreatorTool  
-**نوع التاريخ**: String  
-**القيم المدعومة**: أي نص عادي  
+```text
+**Parameter Name: CreatorTool  
+**Date Type: String  
+**Values supported: Any plain text  
+```
 
-**مثال**
-{{< highlight csharp >}}
+## مثال
 
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer, Aspose.Pdf.ReportingServices">
@@ -41,13 +48,10 @@ lastmod: "2026-06-19"
     <CreationDate>2017-12-10</CreationDate>
     <ModifyDate>2018-1-12</ModifyDate>
     <MetaDataDate>2018-3-7</MetaDataDate>
-    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    <CreatorTool>Aspose.PDF for Reporting Services</CreatorTool>
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```
 
 

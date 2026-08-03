@@ -1,31 +1,30 @@
 ---
-title: مطابقة PDF_A
-linktitle: مطابقة PDF_A
+title: PDF_A المطابقة
+linktitle: PDF_A المطابقة
 type: docs
 weight: 100
-url: /ar/reportingservices/pdf_a-conformance/
-description: تمكين مطابقة PDF/A في Aspose.PDF for Reporting Services. إنشاء مستندات متوافقة مع الأرشفة بسهولة.
-lastmod: "2026-06-19"
+url: /reportingservices/pdf_a-conformance/
+description: تمكين توافق PDF/A في Aspose.PDF لخدمات التقارير. قم بإنشاء مستندات متوافقة مع الأرشيف دون عناء.
+lastmod: "2025-05-22"
 ---
 
 {{% alert color="primary" %}}
 
-يمكنك الحصول على مقدمة حول مطابقة PDF/A (PDF القابل للأرشفة) في وثائق Aspose.PDF.
+يمكنك الحصول على مقدمة حول توافق PDF/A (ملف PDF قابل للأرشفة) في وثائق Aspose.PDF.
 
 إذا كنت تريد إنشاء مستند PDF/A، أضف معلمة التقرير التالية.
 
 {{% /alert %}}
 
+```text
+Parameter Name: PdfConformance  
+Date Type: String  
+Values supported: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
+```
 
-{{% alert color="primary" %}}
+## مثال
 
-**اسم المعامل**: PdfConformance  
-**نوع البيانات**: String  
-**القيم المدعومة**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
-
-**مثال**
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -34,7 +33,4 @@ lastmod: "2026-06-19"
     </Configuration>
     </Extension>
 </Render>
-{{< /highlight >}}
-
-{{% /alert %}}
-
+```

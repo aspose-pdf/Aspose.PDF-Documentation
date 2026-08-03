@@ -1,17 +1,17 @@
 ---
-title: الميزات
-linktitle: الميزات
+title: سمات
+linktitle: سمات
 type: docs
 weight: 30
-url: /ar/reportingservices/features/
-description: اكتشف الميزات الرئيسية ل Aspose.PDF for Reporting Services. عزز تقارير SSRS بقدرات متقدمة في عرض PDF وتخصيصها.
-lastmod: "2026-06-19"
+url: /reportingservices/features/
+description: اكتشف الميزات الرئيسية لـ Aspose.PDF لخدمات التقارير. قم بتحسين تقارير SSRS من خلال إمكانيات عرض ملفات PDF المتقدمة والتخصيص.
+lastmod: "2021-06-05"
 ---
 
-**يتضمن هذا القسم المواضيع التالية:**
-- [دعم شامل لـ RDL](/pdf/ar/reportingservices/comprehensive-rdl-support/)
-- [دعم التقارير المُعلمة](/pdf/ar/reportingservices/parameterized-report-support/)
-- [دعم عنصر تقرير مخصص](/pdf/ar/reportingservices/custom-report-item-support/)
-- [نشر سهل وخفيف الوزن](/pdf/ar/reportingservices/easy-and-lightweight-deployment/)
-- [دعم فني مجاني من الطراز العالمي](/pdf/ar/reportingservices/world-class-free-technical-support/)
+**يحتوي هذا القسم على المواضيع التالية:**
 
+- [دعم RDL الشامل](/pdf/ar/reportingservices/comprehensive-rdl-support/)
+- [دعم التقارير ذات المعلمات](/pdf/ar/reportingservices/parameterized-report-support/)
+- [دعم عنصر التقرير المخصص](/pdf/ar/reportingservices/custom-report-item-support/)
+- [نشر سهل وخفيف الوزن](/pdf/ar/reportingservices/easy-and-lightweight-deployment/)
+- [دعم فني مجاني على مستوى عالمي](/pdf/ar/reportingservices/world-class-free-technical-support/)

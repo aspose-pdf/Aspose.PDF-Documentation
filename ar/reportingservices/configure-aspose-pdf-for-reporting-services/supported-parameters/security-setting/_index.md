@@ -3,52 +3,61 @@ title: إعداد الأمان
 linktitle: إعداد الأمان
 type: docs
 weight: 30
-url: /ar/reportingservices/security-setting/
-lastmod: "2026-06-19"
+url: /reportingservices/security-setting/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-الأمان كان دائمًا أهم قضية في كل مجال، سواء كان حماية شبكة أو مستند PDF. يتم تأمين المستندات لأسباب عديدة محتملة: قد يرغب كاتب المستند في الحفاظ على محتوى المستند آمنًا ولا يريد السماح للآخرين بتغييره، إلخ.
+لقد كان الأمن دائمًا هو القضية الأكثر أهمية في كل مجال، سواء كان ذلك حماية الشبكة أو مستند PDF. يتم جعل المستندات آمنة لعدة أسباب محتملة: قد يرغب كاتب المستند في الحفاظ على محتوى المستند آمنًا ولا يريد السماح للآخرين بتغييره، وما إلى ذلك.
 
-قامت Aspose.PDF for Reporting Services بالاهتمام الكبير بهذه الجوانب الأمنية من خلال توفير هذه الميزات للمطورين التي يمكن أن تكون مفيدة لهم لحماية مستندات PDF الخاصة بهم. وبالتالي، تحتوي على عدد من المعلمات التي تسمح للمطورين بتطبيق إجراءات أمنية مختلفة على مستندات PDF.
+لقد اهتمت Aspose.PDF لخدمات التقارير كثيرًا بهذه الجوانب الأمنية من خلال توفير هذه الميزات للمطورين والتي يمكن أن تكون مفيدة لهم لحماية مستندات PDF الخاصة بهم. لذلك، فهو يحتوي على عدد من المعلمات التي تسمح للمطورين بتطبيق إجراءات أمنية مختلفة على مستندات PDF.
 
-إحدى هذه الإجراءات هي حماية مستند PDF بكلمة مرور أثناء التشفير. يمكنك أيضًا تقييد أو السماح بتعديل المحتوى، نسخ المحتوى، طباعة المستند أو السماح/تعطيل ملء النماذج. هذه الميزات غير مدعومة في الوقت الحالي من قبل مُصدّر PDF الافتراضي في SQL Reporting Services، ولكن يمكنك تنفيذ هذه الميزات باستخدام Aspose.PDF for Reporting Services. فقط أضف معلمات الأمان المقابلة إلى تقرير أو ملف إعداد خادم التقارير، وستتمكن من إنشاء مستندات PDF آمنة مع امتيازات محدودة.
+أحد هذه الإجراءات هو حماية مستند PDF بكلمة مرور أثناء التشفير. يمكنك أيضًا تقييد أو السماح بتعديل المحتويات، أو نسخ المحتوى، أو طباعة المستندات، أو السماح/تعطيل ملء النماذج. هذه الميزات غير مدعومة في الوقت الحالي بواسطة SQL Reporting Services PDF Exporter الافتراضي، ولكن يمكنك تنفيذ هذه الميزات باستخدام Aspose.PDF لخدمات التقارير. ما عليك سوى إضافة معلمات الأمان المقابلة إلى تقرير أو ملف تكوين خادم التقارير، وستكون قادرًا على إنشاء مستندات PDF آمنة بامتيازات محدودة.
 
-حاليًا، يدعم المكوّن Aspose.Pdf لخدمات التقارير السمات الأمنية التالية:
+حاليًا، يدعم عارض Aspose.PDF لخدمات التقارير سمات الأمان التالية:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+Parameter Name: User Password  
+Date Type: String  
+Values supported: Any plain text
+```
 
-**Parameter Name**: كلمة مرور المستخدم  
-**Date Type**: نص  
-**Values supported**: أي نص عادي
+```text
+Parameter Name: Master Password  
+Date Type: String  
+Values supported: Any plain text 
+```
 
-**Parameter Name**: كلمة مرور المدير  
-**Date Type**: نص  
-**Values supported**: أي نص عادي 
+```text
+Parameter Name: IsCopyingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default) 
+```
 
-**اسم المعامل**: IsCopyingAllowed  
-**نوع البيانات**: منطقي  
-**القيم المدعومة**: صحيح، خطأ (الافتراضي)  
+```text
+Parameter Name: IsPrintingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**اسم المعامل**: IsPrintingAllowed  
-**نوع البيانات**: منطقي  
-**القيم المدعومة**: صحيح، خطأ (الافتراضي)  
+```text
+Parameter Name: IsContentsModifyingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default) 
+```
 
-**اسم المعامل**: IsContentsModifyingAllowed  
-**نوع البيانات**: منطقي  
-**القيم المدعومة**: صحيح، خطأ (الافتراضي)  
+```text
+Parameter Name: IsFormFillingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**اسم المعامل**: IsFormFillingAllowed  
-**نوع البيانات**: منطقي  
-**القيم المدعومة**: صحيح، خطأ (الافتراضي)  
+## مثال
 
-**مثال**
-
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -59,8 +68,5 @@ lastmod: "2026-06-19"
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```
 

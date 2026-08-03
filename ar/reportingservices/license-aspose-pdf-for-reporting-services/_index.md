@@ -4,50 +4,47 @@ linktitle: رخصة
 
 type: docs
 weight: 70
-url: /ar/reportingservices/license-aspose-pdf-for-reporting-services/
-description: افهم خيارات الترخيص لـ Aspose.PDF for Reporting Services. اكتشف كيفية تفعيل رخصتك وإلغاء قفل كامل الوظائف.
-lastmod: "2026-06-19"
+url: /reportingservices/license-aspose-pdf-for-reporting-services/
+description: فهم خيارات الترخيص لـ Aspose.PDF لخدمات التقارير. تعرف على كيفية تنشيط الترخيص الخاص بك وفتح الوظائف الكاملة.
+lastmod: "2021-06-05"
 ---
 
-**Aspose.Pdf for Reporting Services** نسخة التقييم توفر نفس مجموعة الميزات الموجودة في النسخة المرخصة، باستثناء علامة مائية التقييم في ملف PDF الناتج عند استخدام نسخة التقييم. يرجى زيارة موقعنا على الويب وتنزيل نسخة المنتج والبدء في استكشاف منتجنا مع مجموعة كاملة من الميزات في وضع التقييم.
+**يوفر الإصدار التقييمي **Aspose.PDF لخدمات التقارير** نفس مجموعة الميزات الموجودة في الإصدار المرخص، باستثناء العلامة المائية للتقييم في ملف PDF الناتج عند استخدام الإصدار التقييمي. يرجى زيارة موقعنا على الإنترنت وتنزيل إصدار المنتج والبدء في استكشاف منتجنا مع مجموعة كاملة من الميزات في وضع التقييم.
 
-عند رضاك عن تقييمك، [اشترِ رخصة](https://purchase.aspose.com/buy). قبل الشراء، تأكد من أنك تفهم وتوافق على شروط اشتراك الرخصة.
+عندما تكون راضيًا عن تقييمك، [قم بشراء ترخيص](https://purchase.aspose.com/buy). قبل الشراء، تأكد من أنك تفهم شروط الاشتراك في الترخيص وتوافق عليها.
 
-سيكون الترخيص متاحًا للتنزيل من صفحة الطلب بعد دفع الطلب. الترخيص هو ملف XML نص واضح وموقع رقمياً. يحتوي الترخيص على معلومات مثل اسم العميل والمنتج الذي تم شراؤه ونوع الترخيص. لا تقم بتعديل محتوى ملف الترخيص لأنه سيجعل الترخيص غير صالح.
+سيكون الترخيص متاحًا للتنزيل من صفحة الطلب بعد دفع الطلب. الترخيص عبارة عن نص واضح وملف XML موقّع رقميًا. يحتوي الترخيص على معلومات مثل اسم العميل والمنتج الذي تم شراؤه ونوع الترخيص. لا تقم بتعديل محتوى ملف الترخيص لأن ذلك سيؤدي إلى إبطال الترخيص.
 
-## ترخيص خادم
+## ترخيص الخادم
 
-قم بتنزيل ملف الترخيص ونسخه إلى C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
+قم بتنزيل ملف الترخيص وانسخه إلى C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\bin، أو C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin، أو C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin المجلد على الخادم (نفسه) المجلد حيث تم وضع Aspose.Pdf.ReportingServices.dll).
 
-```<Instance>``` is the subdirectory name that corresponds to the Microsoft SQL Server 2016 instance you want to license.
+`<Instance>` هو اسم الدليل الفرعي الذي يتوافق مع مثيل Microsoft SQL Server 2016 الذي تريد ترخيصه.
 
-The default instance directory for Microsoft SQL Server 2016 is MSRS13.MSSQLSERVER.
-For the Microsoft SQL Server 2017 and later the default instance path is C:\Program Files\Microsoft SQL Server\SSRS.
-For the Power BI Report Server the default instance path is C:\Program Files\Microsoft Power BI Report Server\PBIRS.
+دليل المثيل الافتراضي لـ Microsoft SQL Server 2016 هو MSRS13.MSSQLSERVER.
+بالنسبة لـ Microsoft SQL Server 2017 والإصدارات الأحدث، يكون مسار المثيل الافتراضي هو C:\Program Files\Microsoft SQL Server\SSRS.
+بالنسبة لخادم Power BI Report Server، يكون مسار المثيل الافتراضي هو C:\Program Files\Microsoft Power BI Report Server\PBIRS.
 
-**PDF generated using “Territory sales drilldown” report**
+**تم إنشاء ملف PDF باستخدام تقرير "التنقل التفصيلي لمبيعات المنطقة"**
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_1.png)
+![License-Territory sales drilldown](license-aspose-pdf-for-reporting-services_1.png)
 
+**PDF generated using "Sales Order details" report**
 
-**PDF generated using “Sales Order details” report**
+![License-Sales Order details](license-aspose-pdf-for-reporting-services_2.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_2.png)
+إذا كانت هناك مشكلة أثناء تهيئة الترخيص، فسيتم عرض علامة مائية للتقييم في مستند PDF الناتج كما هو محدد أدناه.
 
-If there is a problem while initializing the license, an evaluation watermark is displayed in the resultant PDF document as specified below.
+**تم إنشاء مستند PDF باستخدام "التنقل بين مبيعات المنطقة" مع العلامة المائية**
 
-**PDF document generated using “Territory Sales Drilldown” with watermark**
+![License-Territory Sales Drilldown](license-aspose-pdf-for-reporting-services_3.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_3.png)
+يرجى ملاحظة أن أسماء ملفات الترخيص المدعومة هي Aspose.PDF.ReportingServices.lic وAspose.Total.ReportingServices.lic وAspose.Total.Product.Family.lic. إذا كان للملف أي اسم آخر، يرجى إعادة تسميته.
 
-Please note that that supported license file names are Aspose.PDF.ReportingServices.lic, Aspose.Total.ReportingServices.lic and Aspose.Total.Product.Family.lic. If the file has any other name, please rename it.
-
-
-## Temporary License
+## ترخيص مؤقت
 
 {{% alert color="primary" %}}
 
-You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
+يمكنك أيضًا طلب ترخيص مؤقت لمدة 30 يومًا لاختبار المنتج. يرجى زيارة الرابط التالي لمزيد من المعلومات حول كيفية الحصول على ترخيص مؤقت. [الحصول على ترخيص مؤقت](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}
-

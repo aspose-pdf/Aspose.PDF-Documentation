@@ -3,52 +3,51 @@ title: مقدمة
 linktitle: مقدمة
 type: docs
 weight: 10
-url: /ar/reportingservices/introduction/
-lastmod: "2026-06-19"
+url: /reportingservices/introduction/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-كانت Aspose.PDF for Reporting Services مميزة للغاية في إنشاء ملفات PDF عبر SQL Reporting Services منذ سنوات عديدة وتوفر خيارات تكوين ومعلمات متنوعة غير مدعومة بشكل افتراضي في SQL Reporting Services. مؤخرًا تلقينا بعض الطلبات بخصوص دمج Aspose.PDF for Reporting Services مع SharePoint. في هذه المقالة، سنركز على MS SharePoint 2010. قبل المتابعة، نفترض أنك قد أعددت بالفعل بيئة SharePoint Farm. في هذا المثال سنستخدم SharePoint Cloud الكامل. ومع ذلك، الخطوات مماثلة لـ SharePoint Foundation Server.
+Aspose.PDF for Reporting Services has been very remarkable for PDF generation through SQL Reporting Services since many years and it provides diverse configuration and parameterization options which are not supported by default in SQL Reporting Services. Recently we have received some requested regarding Aspose.PDF for Reporting Services Integration with SharePoint. For this article, we are going to focus on MS SharePoint 2010. Before we proceed further, we assume that you already have a SharePoint Farm setup. In this example we are going to use full SharePoint Cloud. However the steps are similar for SharePoint Foundation Server.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-قبل أن نتابع أكثر، دعنا نلقي نظرة على المواضيع المرجعية التي استشرناها أثناء إعداد هذه المقالة.
+Before we proceed further, let's take a look over reference topics that we have consulted during the preparation of this article.
 
-- [نظرة عامة على تكامل خدمات التقارير وتكنولوجيا SharePoint](http://msdn.microsoft.com/en-us/library/bb326358.aspx)
-- [طوبولوجيات النشر لخدمات Reporting Services في وضع SharePoint المتكامل](http://msdn.microsoft.com/en-us/library/bb510781.aspx)
-- [تكوين Reporting Services لتكامل SharePoint 2010](http://msdn.microsoft.com/en-us/library/bb326356.aspx)
+- [نظرة عامة على خدمات التقارير وتكامل تكنولوجيا SharePoint](http://msdn.microsoft.com/en-us/library/bb326358.aspx)
+- [طبولوجيا النشر لخدمات التقارير في وضع SharePoint المتكامل](http://msdn.microsoft.com/en-us/library/bb510781.aspx)
+- [Configuring Reporting Services for SharePoint 2010 Integration](http://msdn.microsoft.com/en-us/library/bb326356.aspx)
 
 {{% /alert %}}
 
-## إعداد البيئة
+## Environment Setup
 
-يتكون إعدادنا من 4 خوادم. يشمل ذلك وحدة تحكم المجال، خادم SQL، خادم SharePoint وخادم لخدمات Reporting Services. يمكنك اختيار وضع SharePoint وReporting Services على نفس الصندوق، مما سيسهل الأمر قليلاً وسأشير إلى بعض الاختلافات.
+يتكون الإعداد الخارجي من 4 خوادم. وهو يشتمل على وحدة تحكم المجال وSQL Server وSharePoint Server وخادم لخدمات التقارير. يمكنك اختيار وجود SharePoint وReporting Services في نفس المربع، مما سيبسط الأمر قليلاً وسأشير إلى بعض الاختلافات.
 
-## المتطلبات المسبقة للتثبيت
+## متطلبات التثبيت المسبقة
 
 {{% alert color="primary" %}}
 
-الإضافة (Add-In) الخاصة بـ Reporting Services لـ SharePoint هي أحد المكونات الرئيسية لجعل التكامل يعمل بشكل صحيح. يجب تثبيت الإضافة على أي من واجهات الويب الأمامية (Web Front Ends (WFE)) الموجودة في مزرعة SharePoint الخاصة بك إلى جانب خادم Central Admin. أحد التغييرات الجديدة مع SQL 2008 R2 & SharePoint 2010 هو أن إضافة 2008 R2 أصبحت الآن شرطًا مسبقًا لتثبيت SharePoint. وهذا يعني أنه سيتم وضع RS Add-In عندما تقوم بتثبيت SharePoint. وقد تم عرض ذلك وتحديده في الشكل أدناه. هذا في الواقع يجنّب الكثير من المشكلات التي رأيناها مع SP 2007 و RS 2008 عند تثبيت الإضافة.
+تعد الوظيفة الإضافية لخدمات التقارير لـ SharePoint أحد المكونات الأساسية لتشغيل التكامل بشكل صحيح. يجب تثبيت الوظيفة الإضافية على أي من واجهات الويب الأمامية (WFE) الموجودة في مزرعة SharePoint الخاصة بك بالإضافة إلى خادم الإدارة المركزية. أحد التغييرات الجديدة في SQL 2008 R2 وSharePoint 2010 هو أن الوظيفة الإضافية 2008 R2 أصبحت الآن شرطًا أساسيًا لتثبيت SharePoint. وهذا يعني أنه سيتم وضع وظيفة RS الإضافية عندما تنتقل إلى تثبيت SharePoint. وقد تم عرضه وإبرازه في الشكل أدناه. يؤدي هذا في الواقع إلى تجنب الكثير من المشكلات التي رأيناها مع SP 2007 وRS 2008 عند تثبيت الوظيفة الإضافية.
 
-![todo:image_alt_text](introduction_1.png)
+![Introduction](introduction_1.png)
 
-**Image1 :- إضافة Reporting Services لـ Share Point**
+**Image1 :- Reporting Services Add-in for Share Point**
 {{% /alert %}}
 
-## مصادقة SharePoint
+## مصادقة شيربوينت
 
-**قبل أن ننتقل إلى أجزاء تكامل RS، هناك شيء أريد الإشارة إليه بشأن مزرعة SharePoint وهو كيفية إعداد الموقع. وبشكل أكثر تحديدًا كيفية تكوين المصادقة للموقع. سواء كان كلاسيكيًا أو Claims. هذا الاختيار مهم في البداية. لا أعتقد أنه يمكنك تغيير هذا الخيار بمجرد إتمامه. إذا استطعت تغييره، فلن تكون عملية بسيطة.
+**قبل أن ننتقل إلى أجزاء تكامل RS، هناك شيء واحد أريد الإشارة إليه حول SharePoint Farm وهو كيفية إعداد الموقع. وبشكل أكثر تحديدًا كيفية تكوين المصادقة للموقع. سواء كانت كلاسيكية أو مطالبات. هذا الاختيار مهم في البداية. لا أعتقد أنه يمكنك تغيير هذا الخيار بمجرد الانتهاء منه. إذا كان بإمكانك تغييره، فلن تكون عملية بسيطة.
 
-ملاحظة: ***Reporting Services 2008 R2 غير مدعوم للـ Claims***
+NOTE: ***Reporting Services 2008 R2 is NOT Claims aware***
 
-حتى لو اخترت أن يستخدم موقع SharePoint الخاص بك نظام المطالبات (Claims)، فإن خدمات التقارير نفسها ليست على دراية بالمطالبات. ومع ذلك، فإن ذلك يؤثر على طريقة عمل المصادقة مع خدمات التقارير. إذن، ما هو الفرق من منظور خدمات التقارير؟ الأمر يعود إلى ما إذا كنت تريد تمرير بيانات اعتماد المستخدم إلى مصدر البيانات. Classic:- يمكن استخدام Kerberos وتمرير بيانات اعتماد المستخدم إلى مصدر البيانات الخلفي (ستحتاج إلى استخدام Kerberos لذلك). Claims:- يتم استخدام رمز المطالبات (Claims token) وليس رمز Windows. ستستخدم RS دائمًا المصادقة الموثوقة في هذا السيناريو وستكون لديها إمكانية الوصول فقط إلى رمز SPUser. سيتعين عليك تخزين بيانات الاعتماد الخاصة بك داخل مصدر البيانات.
+Even if you choose your SharePoint site to use Claims, Reporting Services itself isn't Claims aware. That said, it does affect how authentication works with Reporting Services. So, what is the difference from a Reporting Services perspective? It comes down to whether you want to forward User Credentials to the data source. Classic:- Can use Kerberos and forward the user's credentials to your back end datasource (will need to use Kerberos for that). Claims:- A Claims token is used and not a windows token. RS will always use Trusted Authentication in this scenario and will only have access to the SPUser token. You will need to store your credentials within your data source.
 
-Classic :- يمكن استخدام Kerberos وتمرير بيانات اعتماد المستخدم إلى مصدر البيانات الخلفي (ستحتاج إلى استخدام Kerberos لذلك).
+كلاسيكي: - يمكن استخدام Kerberos وإعادة توجيه بيانات اعتماد المستخدم إلى مصدر البيانات الخلفي الخاص بك (سوف تحتاج إلى استخدام Kerberos لذلك.
 
-Claims :- يتم استخدام رمز المطالبات وليس رمز Windows. ستستخدم RS دائمًا المصادقة الموثوقة في هذا السيناريو وستكون لديها إمكانية الوصول فقط إلى رمز SPUser. سيتعين عليك تخزين بيانات الاعتماد الخاصة بك داخل مصدر البيانات.
+Claims :- A Claims token is used and not a windows token. RS will always use Trusted Authentication in this scenario and will only have access to the SPUser token. You will need to store your credentials within your data source.
 
-في الوقت الحالي نريد فقط التركيز على إعداد RS. في هذه المرحلة تم تثبيت SharePoint على صندوق SharePoint الخاص بي وتم إعداده مع موقع Classic Auth على المنفذ 80. على خادم RS قمت للتو بتثبيت Reporting Services وهذا كل شيء.
-
+في الوقت الحالي، نريد فقط التركيز على إعداد RS. في هذه المرحلة، تم تثبيت SharePoint على SharePoint Box الخاص بي وتم إعداده باستخدام موقع Classic Auth على المنفذ 80. على خادم RS، قمت للتو بتثبيت خدمات التقارير وهذا كل شيء.

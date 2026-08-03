@@ -1,28 +1,29 @@
 ---
-title: اتجاه الصفحة
+title: Page Orientation
 linktitle: اتجاه الصفحة
 type: docs
 weight: 10
-url: /ar/reportingservices/page-orientation/
-description: قم بتكوين اتجاه الصفحة لتقارير PDF في Aspose.PDF for Reporting Services. خصص التخطيطات للحصول على عرض أفضل.
-lastmod: "2026-06-19"
+url: /reportingservices/page-orientation/
+description: قم بتكوين اتجاه الصفحة لتقارير PDF في Aspose.PDF لخدمات التقارير. تخصيص التخطيطات لعرض أفضل.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-لغة تعريف التقرير لا تسمح بتحديد اتجاه صفحات التقرير صراحةً. باستخدام Aspose.PDF for Reporting Services يمكنك بسهولة إرشاد المُصدِّر لإنشاء مستندات PDF باتجاه صفحة عرضية. الاتجاه الافتراضي هو عمودي.
+لغة تعريف التقرير لا تسمح بتحديد اتجاه الصفحات في التقرير بشكل صريح. باستخدام Aspose.PDF لخدمات التقارير، يمكنك بسهولة توجيه المُصدر لإنتاج مستندات PDF ذات اتجاه الصفحة الأفقي. الاتجاه الافتراضي هو عمودي.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+The default orientation is portrait.
+Parameter Name: IsLandscape
+Date Type: Boolean
+Values supported: True, False (default)
+```
 
-الاتجاه الافتراضي هو عمودي.
-**اسم المعامل**: IsLandscape
-**نوع البيانات**: Boolean
-**القيم المدعومة**: True, False (default)
+## مثال
 
-**مثال**
-{{< highlight csharp >}}
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -31,8 +32,5 @@ lastmod: "2026-06-19"
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```
 
