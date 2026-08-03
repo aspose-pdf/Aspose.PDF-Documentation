@@ -19,36 +19,45 @@ Currently, Aspose.PDF for Reporting Services renderer supports following securit
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+Parameter Name: User Password  
+Date Type: String  
+Values supported: Any plain text
+```
 
-**Parameter Name**: User Password  
-**Date Type**: String  
-**Values supported**: Any plain text
+```text
+Parameter Name: Master Password  
+Date Type: String  
+Values supported: Any plain text 
+```
 
-**Parameter Name**: Master Password  
-**Date Type**: String  
-**Values supported**: Any plain text 
+```text
+Parameter Name: IsCopyingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default) 
+```
 
-**Parameter Name**: IsCopyingAllowed  
-**Date Type**: Boolean  
-**Values supported**: True, False (default)  
+```text
+Parameter Name: IsPrintingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**Parameter Name**: IsPrintingAllowed  
-**Date Type**: Boolean  
-**Values supported**: True, False (default)  
+```text
+Parameter Name: IsContentsModifyingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default) 
+```
 
-**Parameter Name**: IsContentsModifyingAllowed  
-**Date Type**: Boolean  
-**Values supported**: True, False (default)  
+```text
+Parameter Name: IsFormFillingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**Parameter Name**: IsFormFillingAllowed  
-**Date Type**: Boolean  
-**Values supported**: True, False (default)  
+## Example
 
-**Example**
-
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -59,7 +68,5 @@ Currently, Aspose.PDF for Reporting Services renderer supports following securit
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
-
-{{% /alert %}}

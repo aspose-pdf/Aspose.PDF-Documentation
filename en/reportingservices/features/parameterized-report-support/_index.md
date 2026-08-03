@@ -11,7 +11,7 @@ A parameterized report is a report that accepts input values used in report proc
 
 Currently, Aspose.Pdf renderer supports a wide range of parameters, such as:
 
-## **Supported Parameters**
+## Supported Parameters
 In the current version, Aspose.PDF render supports many aspects of parameters, which are:
 
 - Page orientation
