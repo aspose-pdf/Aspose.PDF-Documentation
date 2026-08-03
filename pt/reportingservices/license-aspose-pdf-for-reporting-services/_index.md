@@ -1,52 +1,50 @@
 ---
-title: License
+title: Licença
 linktitle: License
 
 type: docs
 weight: 70
 url: /reportingservices/license-aspose-pdf-for-reporting-services/
-description: Understand licensing options for Aspose.PDF for Reporting Services. Find out how to activate your license and unlock full functionality.
+description: Entenda as opções de licenciamento do Aspose.PDF para Reporting Services. Descubra como ativar sua licença e desbloquear todas as funcionalidades.
 lastmod: "2021-06-05"
 ---
 
-**Aspose.PDF for Reporting Services** evaluation version provide the same set of features as present in Licensed version, except for the evaluation watermark in resultant PDF when using evaluation version. Please visit our website and download the product version and start exploring our product with complete set of features in an evaluation mode.
+A versão de avaliação **Aspose.PDF for Reporting Services** fornece o mesmo conjunto de recursos presente na versão licenciada, exceto pela marca d'água de avaliação no PDF resultante ao usar a versão de avaliação. Visite nosso site e baixe a versão do produto e comece a explorar nosso produto com um conjunto completo de recursos em modo de avaliação.
 
-When you are happy with your evaluation, [buy a license](https://purchase.aspose.com/buy). Before purchasing, make sure you understand and agree to the license subscription terms.
+Quando você estiver satisfeito com sua avaliação, [buy a license](https://purchase.aspose.com/buy). Antes de comprar, certifique-se de compreender e concordar com os termos de assinatura da licença.
 
-The license will be available for download from the order page after the order is paid. The license is a clear text, digitally signed XML file. The license contains information such as the client's name, the purchased product and the type of the license. Do not modify the content of the license file as it will invalidate the license.
+A licença estará disponível para download na página do pedido após o pagamento do pedido. A licença é um arquivo XML de texto não criptografado e assinado digitalmente. A licença contém informações como o nome do cliente, o produto adquirido e o tipo de licença. Não modifique o conteúdo do arquivo de licença, pois isso invalidará a licença.
 
-## Licensing a Server
+## Licenciamento de um servidor
 
-Download the license file and copy it to the C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
+Baixe o arquivo de licença e copie-o para a pasta C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\bin ou C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin ou C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin no servidor (a mesma pasta onde está o Aspose.Pdf.ReportingServices.dll é colocado).
 
-```<Instance>``` is the subdirectory name that corresponds to the Microsoft SQL Server 2016 instance you want to license.
+`<Instance>` é o nome do subdiretório que corresponde à instância do Microsoft SQL Server 2016 que você deseja licenciar.
 
-The default instance directory for Microsoft SQL Server 2016 is MSRS13.MSSQLSERVER.
-For the Microsoft SQL Server 2017 and later the default instance path is C:\Program Files\Microsoft SQL Server\SSRS.
-For the Power BI Report Server the default instance path is C:\Program Files\Microsoft Power BI Report Server\PBIRS.
+O diretório de instância padrão do Microsoft SQL Server 2016 é MSRS13.MSSQLSERVER.
+Para o Microsoft SQL Server 2017 e posterior, o caminho da instância padrão é C:\Program Files\Microsoft SQL Server\SSRS.
+Para o Servidor de Relatórios do Power BI, o caminho da instância padrão é C:\Arquivos de Programas\Microsoft Power BI Report Server\PBIRS.
 
-**PDF generated using “Territory sales drilldown” report**
+**PDF gerado usando o relatório "Detalhamento de vendas por território"**
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_1.png)
+![License-Territory sales drilldown](license-aspose-pdf-for-reporting-services_1.png)
 
+**PDF gerado usando o relatório "Detalhes do pedido de vendas"**
 
-**PDF generated using “Sales Order details” report**
+![License-Sales Order details](license-aspose-pdf-for-reporting-services_2.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_2.png)
+Se houver algum problema ao inicializar a licença, uma marca d’água de avaliação será exibida no documento PDF resultante, conforme especificado abaixo.
 
-If there is a problem while initializing the license, an evaluation watermark is displayed in the resultant PDF document as specified below.
+**Documento PDF gerado usando "Detalhamento de Vendas por Território" com marca d'água**
 
-**PDF document generated using “Territory Sales Drilldown” with watermark**
+![License-Territory Sales Drilldown](license-aspose-pdf-for-reporting-services_3.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_3.png)
+Observe que os nomes dos arquivos de licença suportados são Aspose.PDF.ReportingServices.lic, Aspose.Total.ReportingServices.lic e Aspose.Total.Product.Family.lic. Se o arquivo tiver outro nome, renomeie-o.
 
-Please note that that supported license file names are Aspose.PDF.ReportingServices.lic, Aspose.Total.ReportingServices.lic and Aspose.Total.Product.Family.lic. If the file has any other name, please rename it.
-
-
-## Temporary License
+## Licença Temporária
 
 {{% alert color="primary" %}}
 
-You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
+Você também pode solicitar uma licença temporária de 30 dias para testar o produto. Visite o link a seguir para obter mais informações sobre como obter licença temporária. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}

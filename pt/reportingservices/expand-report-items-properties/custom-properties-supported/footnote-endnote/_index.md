@@ -1,33 +1,34 @@
 ---
-title: Nota de rodapé Nota final
-linktitle: Nota de rodapé Nota final
+title: Nota final
+linktitle: Footnote Endnote
 type: docs
 weight: 30
-url: /pt/reportingservices/footnote-endnote/
-description: Adicione notas de rodapé e notas finais aos seus relatórios PDF com Aspose.PDF for Reporting Services. Forneça referências detalhadas ao documento.
-lastmod: "2026-07-29"
+url: /reportingservices/footnote-endnote/
+description: Adicione notas de rodapé e notas finais aos seus relatórios PDF com Aspose.PDF for Reporting Services. Forneça referências detalhadas de documentos.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-O Report Builder não pode definir a nota de rodapé ou a nota final para caixas de texto. Com Aspose.PDF for Reporting Services, você pode fazer isso facilmente adicionando propriedades personalizadas.
+O Report Builder não pode definir notas de rodapé ou notas finais para caixas de texto. Com Aspose.PDF for Reporting Services, você pode fazer isso facilmente adicionando propriedades personalizadas.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Nota de rodapé
-**Propriedade Personalizada** **Nome**: Nota de rodapé
-**Valor da Propriedade Personalizada**: *o* *valor* *deve* *ser* *um* *string*
+```text
+Footnote
+Custom Property `Name`: Footnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-Nota de fim
-**Propriedade Personalizada** **Nome**: Nota de fim
-**Valor da Propriedade Personalizada**: *o* *valor* *deve* *ser* *um* *string*
+```text
+Endnote
+Custom Property `Name`: Endnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-{{% alert color="primary" %}}
-No exemplo a seguir, o relatório contém uma Textbox com o valor 'AsposePdf4RS', e queremos adicionar uma descrição suplementar na forma de uma nota de rodapé com o texto "Um renderizador PDF opcional para SSRS da Aspose Pty. Ltd.".
-{{% /alert %}}
+No exemplo a seguir, o relatório contém uma caixa de texto com o valor `AsposePdf4RS`, e queremos adicionar uma descrição suplementar na forma de uma nota de rodapé com o texto "Um renderizador PDF opcional para SSRS da Aspose Pty. Ltd.".
 
-**Exemplo**
+## Exemplo
 
 ```cs
 <Textbox Name="Textbox1">
@@ -53,4 +54,3 @@ No exemplo a seguir, o relatório contém uma Textbox com o valor 'AsposePdf4RS'
 </Paragraphs>
 </Textbox>
 ```
-{{% /alert %}}

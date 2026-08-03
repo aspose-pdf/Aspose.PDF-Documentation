@@ -1,25 +1,24 @@
 ---
-title: Table of Contents List of Tables or Figures
+title: Índice Lista de tabelas ou figuras
 linktitle: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
 url: /reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Learn how to add a Table of Contents, List of Tables, or Figures in PDF reports using Aspose.PDF for Reporting Services.
+description: Aprenda como adicionar um índice, uma lista de tabelas ou figuras em relatórios PDF usando Aspose.PDF para Reporting Services.
 lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
+O Designer de Relatórios não oferece suporte à adição de sumário para documentos de relatório. Com Aspose.PDF for Reporting Services você pode facilmente instruir o renderizador de PDF para produzir documentos PDF com Índice ou Lista de Tabelas ou Figuras. Você pode fazer isso nas seguintes etapas:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
+Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml exista no diretório ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin e coloque a seguinte marcação dentro dele.
 
-## Table of Contents
+## Índice
 
-**Example**
+### Exemplo
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +40,9 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 </ListSection>
 ```
 
-##  List of TableS
+##  Lista de Tabelas
 
-**Example**
+### Exemplo
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -53,9 +52,9 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 </ListSection>
 ```
 
-## List of Figures
+## Lista de Figuras
 
-**Example**
+### Exemplo
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,40 +65,29 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 
 ```
 
-Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
+Consulte a seção 'Trabalhando com TOC' da documentação online do Aspose.Pdf.
 
-**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
-**3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
+**2-** Adicione o parâmetro de relatório `IsListSectionSupported` e defina o valor como True conforme mostrado no parágrafo `List Section`.
+**3-** Adicione uma propriedade personalizada para o item do relatório que você deseja que seja listado no Índice, Lista de Tabelas ou Figuras.
 
-{{% /alert %}}
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
-{{% alert color="primary" %}}
+Marca o item do relatório atual como listado por índice no índice ou na lista de tabelas ou figuras.
 
-**Custom Property Name** :IsInList
-**Property Value** :Boolean
-**Custom Property Value** : True or False
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
-{{% alert color="primary" %}}
+O título do item exibido no índice, lista de tabelas ou figuras.
 
-Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
-{{% /alert %}}
-
-**Custom Property Name** : Title
-**Custom Property Type** : String
-
-{{% alert color="primary" %}}
-
-The item title displayed in the table of contents, list of tables or figures.
-{{% /alert %}}
-
-**Custom Property Name** : ListLevel
-**Custom Property Type** : Integer
-
-{{% alert color="primary" %}}
-
-The level of listed items displayed in the table of contents.
-
-{{% /alert %}}
-
-{{% /alert %}}
+O nível dos itens listados exibidos no índice.
