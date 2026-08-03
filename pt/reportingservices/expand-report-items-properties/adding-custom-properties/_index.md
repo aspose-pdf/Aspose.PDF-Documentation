@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Você pode adicionar propriedades personalizadas a alguns itens de relatório para expandir seu uso, como ToC, setas de linha e assim por diante. Esta seção descreve esse processo.
+Você pode adicionar propriedades personalizadas para alguns itens de relatório para expandir seu uso, como ToC, setas de linha e assim por diante. Esta seção descreve esse processo.
 
 {{% /alert %}}
 
@@ -20,7 +20,7 @@ Para adicionar propriedades customizadas, você precisa editar o arquivo de cód
 
 1. Como na figura a seguir, abra seu projeto, navegue até o gerenciador de soluções, clique com o botão direito no arquivo de relatório selecionado e selecione o item de menu 'Exibir código'.
 
-![Adicionar propriedades personalizadas](adding-custom-properties_1.png)
+![Add Custom Properties](adding-custom-properties_1.png)
 
 2. Edite o arquivo de código XML. Por exemplo, se desejar adicionar uma propriedade customizada para o item de relatório gráfico, será necessário adicionar o código semelhante ao texto em vermelho no exemplo a seguir.
 

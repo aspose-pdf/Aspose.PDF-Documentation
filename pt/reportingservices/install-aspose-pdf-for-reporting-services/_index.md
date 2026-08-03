@@ -10,8 +10,8 @@ lastmod: "2021-06-05"
 
 **Esta seção inclui os seguintes tópicos:**
 
-- [Install with MSI Installer](/pdf/reportingservices/install-with-msi-installer/)
-- [Install Manually](/pdf/reportingservices/install-manually/)
-- [Install with Configuring Tool](/pdf/reportingservices/install-with-configuring-tool/)
+- [Instalar com o instalador MSI](/pdf/reportingservices/install-with-msi-installer/)
+- [Instalar manualmente](/pdf/reportingservices/install-manually/)
+- [Instalar com ferramenta de configuração](/pdf/reportingservices/install-with-configuring-tool/)
 
 

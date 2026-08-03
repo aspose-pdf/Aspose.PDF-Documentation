@@ -46,6 +46,6 @@ Values supported: True, False (default)
 
 Se desejar adicionar esse parâmetro no Report Designer, use o tipo de dados `Boolean`.
 
-Atualmente Aspose.Pdf para Reporting Services oferece suporte a um subconjunto de todas as tags HTML. Você pode encontrar mais informações no Aspose.PDF [Documentation](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
+Atualmente Aspose.Pdf para Reporting Services oferece suporte a um subconjunto de todas as tags HTML. Você pode encontrar mais informações em Aspose.PDF [Documentação](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}
