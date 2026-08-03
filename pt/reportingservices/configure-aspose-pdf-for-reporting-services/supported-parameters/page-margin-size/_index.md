@@ -1,44 +1,46 @@
 ---
 title: Tamanho da margem da página
-linktitle: Tamanho da margem da página
+linktitle: Page margin size
 type: docs
 weight: 70
-url: /pt/reportingservices/page-margin-size/
-description: Ajuste os tamanhos das margens da página em relatórios PDF com Aspose.PDF for Reporting Services para melhorar a legibilidade e o layout.
-lastmod: "2026-06-19"
+url: /reportingservices/page-margin-size/
+description: Ajuste os tamanhos das margens das páginas em relatórios PDF com Aspose.PDF para Reporting Services para melhorar a legibilidade e o layout.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-O designer de relatórios do Reporting Services não suporta a definição do tamanho das margens da página. Aspose.Pdf for Reporting Services fornece quatro parâmetros para definir o tamanho correspondente da margem da página, que são:
+O designer de relatórios do Reporting Services não dá suporte à configuração do tamanho das margens da página. Aspose.PDF para Reporting Services fornece quatro parâmetros para definir o tamanho da margem da página correspondente, são eles:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-1)  
-**Nome do parâmetro**: PageMarginLeft  
-**Tipo de Dados**: Float  
-**Valores suportados**:  Qualquer número positivo ou zero
+```text
+Parameter Name: PageMarginLeft  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-2)  
-**Nome do Parâmetro**: PageMarginRight  
-**Tipo de Dados**: Float  
-**Valores suportados**:  Qualquer número positivo ou zero
+```text
+Parameter Name: PageMarginRight  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-3)  
-**Nome do Parâmetro**: PageMarginTop  
-**Tipo de Dados**: Float  
-**Valores suportados**:  Qualquer número positivo ou zero
+```text
+Parameter Name: PageMarginTop  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-4)  
-**Nome do Parâmetro**: PageMarginBottom  
-**Tipo de Dados**: Float  
-**Valores suportados**:  Qualquer número positivo ou zero
+```text
+Parameter Name: PageMarginBottom  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-**Exemplo**
+## Exemplo
 
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
@@ -50,8 +52,4 @@ O designer de relatórios do Reporting Services não suporta a definição do ta
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
-
+```

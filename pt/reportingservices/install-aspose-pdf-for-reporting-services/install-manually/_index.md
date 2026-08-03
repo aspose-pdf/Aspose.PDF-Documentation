@@ -1,14 +1,13 @@
 ---
 title: Instalar manualmente
-linktitle: Instalar manualmente
+linktitle: Install Manually
 type: docs
 weight: 20
-url: /pt/reportingservices/install-manually/
-lastmod: "2026-06-19"
+url: /reportingservices/install-manually/
+lastmod: "2021-06-05"
 ---
 
 **Esta seção inclui os seguintes tópicos:**
 
-- [Instalar no Report Server](/pdf/pt/reportingservices/install-to-report-server/)
-
+- [Instalar no servidor de relatório](/pdf/pt/reportingservices/install-to-report-server/)
 

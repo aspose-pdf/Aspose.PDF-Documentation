@@ -1,25 +1,24 @@
 ---
-title: Sumário Lista de Tabelas ou Figuras
-linktitle: Sumário Lista de Tabelas ou Figuras
+title: Índice Lista de tabelas ou figuras
+linktitle: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
-url: /pt/reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Aprenda como adicionar um Sumário, Lista de Tabelas ou Figuras em relatórios PDF usando Aspose.PDF for Reporting Services.
-lastmod: "2026-06-19"
+url: /reportingservices/table-of-contents-list-of-tables-or-figures/
+description: Aprenda como adicionar um índice, uma lista de tabelas ou figuras em relatórios PDF usando Aspose.PDF para Reporting Services.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-O Report Designer não suporta a adição de sumário para documentos de relatório. Com Aspose.Pdf for Reporting Services você pode instruir facilmente o renderizador de PDF a gerar documentos PDF com Sumário, ou Lista de Tabelas ou Figuras. Você pode fazer isso nos passos a seguir:
+O Designer de Relatórios não oferece suporte à adição de sumário para documentos de relatório. Com Aspose.PDF for Reporting Services você pode facilmente instruir o renderizador de PDF para produzir documentos PDF com Índice ou Lista de Tabelas ou Figuras. Você pode fazer isso nas seguintes etapas:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml existe em ```<Instance>```/bin, onde ```<Instance>``` é o diretório do Report Server. Se o arquivo não existir, crie-o em ```<Instance>```diretório /bin e coloque a marcação a seguir dentro.
+Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml exista no diretório ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin e coloque a seguinte marcação dentro dele.
 
-## Sumário
+## Índice
 
-**Exemplo**
+### Exemplo
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -43,7 +42,7 @@ Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml existe em ```<Ins
 
 ##  Lista de Tabelas
 
-**Exemplo**
+### Exemplo
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -55,7 +54,7 @@ Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml existe em ```<Ins
 
 ## Lista de Figuras
 
-**Exemplo**
+### Exemplo
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,41 +65,29 @@ Certifique-se de que o arquivo Aspose.Pdf.ListSectionStyle.xml existe em ```<Ins
 
 ```
 
-Consulte a seção 'Working with TOC' da documentação online do Aspose.Pdf.
+Consulte a seção 'Trabalhando com TOC' da documentação online do Aspose.Pdf.
 
-**2-** Adicione o parâmetro de relatório 'IsListSectionSupported' e defina o valor como True, conforme mostrado no parágrafo 'List Section'.
-**3-** Adicione uma propriedade personalizada para o item de relatório que você deseja que seja listado no Sumário, na Lista de Tabelas ou na Lista de Figuras.
+**2-** Adicione o parâmetro de relatório `IsListSectionSupported` e defina o valor como True conforme mostrado no parágrafo `List Section`.
+**3-** Adicione uma propriedade personalizada para o item do relatório que você deseja que seja listado no Índice, Lista de Tabelas ou Figuras.
 
-{{% /alert %}}
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
-{{% alert color="primary" %}}
+Marca o item do relatório atual como listado por índice no índice ou na lista de tabelas ou figuras.
 
-**Nome da Propriedade Personalizada** :IsInList
-**Valor da Propriedade** :Boolean
-**Valor da Propriedade Personalizada** : Verdadeiro ou Falso
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
-{{% alert color="primary" %}}
+O título do item exibido no índice, lista de tabelas ou figuras.
 
-Marca o item de relatório atual como listado por índice no sumário, ou na lista de tabelas ou figuras.
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
-{{% /alert %}}
-
-**Nome da Propriedade Personalizada** : Title
-**Tipo da Propriedade Personalizada** : String
-
-{{% alert color="primary" %}}
-
-O título do item exibido no sumário, lista de tabelas ou figuras.
-{{% /alert %}}
-
-**Nome da Propriedade Personalizada** : ListLevel
-**Tipo de Propriedade Personalizada** : Inteiro
-
-{{% alert color="primary" %}}
-
-O nível dos itens listados exibidos no sumário.
-
-{{% /alert %}}
-
-{{% /alert %}}
-
+O nível dos itens listados exibidos no índice.

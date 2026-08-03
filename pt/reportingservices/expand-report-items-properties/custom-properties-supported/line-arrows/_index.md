@@ -1,36 +1,38 @@
 ---
-title: Setas de Linha
-linktitle: Setas de Linha
+title: Setas de linha
+linktitle: Line Arrows
 type: docs
 weight: 20
-url: /pt/reportingservices/line-arrows/
-description: Aprenda a adicionar setas de linha em relatórios PDF usando Aspose.PDF for Reporting Services. Melhore os visuais dos relatórios sem esforço.
-lastmod: "2026-06-19"
+url: /reportingservices/line-arrows/
+description: Aprenda a adicionar setas de linha em relatórios PDF usando Aspose.PDF para Reporting Services. Aprimore o visual do relatório sem esforço.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-A especificação RDL não especifica setas para o elemento de linha, portanto o report builder não oferece suporte à configuração de setas para linhas. Com Aspose.Pdf for Reporting Services você pode fazer isso facilmente.
+A especificação RDL não especifica as setas sobre o elemento de linha, portanto, o construtor de relatórios não suporta a configuração de setas para linha. Com Aspose.PDF for Reporting Services você pode fazer isso facilmente.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+Atualmente, o renderizador Aspose.PDF oferece suporte à adição de setas no início ou no final das linhas, adicionando propriedades personalizadas.
 
-Atualmente, o renderizador Aspose.PDF suporta a adição de setas no início ou no final de linhas adicionando propriedades personalizadas.
+```text
+Add Start Arrow for Line  
+Custom Property `Name`: HasArrowAtStart  
+Custom Property `Value`: True  
+```
 
-Adicionar seta inicial para a linha  
-**Propriedade Personalizada** **Nome**: HasArrowAtStart  
-**Valor da Propriedade Personalizada**: True  
+```text
+Add End Arrow for Line  
+Custom Property `Name`: HasArrowAtEnd  
+Custom Property `Value`: True  
+```
 
-Adicionar seta final para a linha  
-**Propriedade Personalizada** **Nome**: HasArrowAtEnd  
-**Valor da Propriedade Personalizada**: True  
+Por exemplo, existem duas linhas nomeadas `line1` e `line2` no arquivo de relatório atual, e a linha1 possui a seta inicial, a linha2 possui as setas inicial e final. Para atender a esses requisitos, você pode adicionar propriedades customizadas como no fragmento de código a seguir.
 
-Por exemplo, há duas linhas chamadas ‘line1’ e ‘line2’ no arquivo de relatório atual, e a line1 tem a seta inicial, a line2 tem as setas inicial e final; para atender a esses requisitos, você pode adicionar propriedades personalizadas como no fragmento de código a seguir.
+## Exemplo
 
-**Exemplo**
-
-{{< highlight csharp >}}
+```xml
  <Line Name="line1">
     <Style>
       ......
@@ -58,7 +60,5 @@ Por exemplo, há duas linhas chamadas ‘line1’ e ‘line2’ no arquivo de re
       </CustomProperty>
     </CustomProperties>
 </Line>
-
-{{< /highlight >}}
-{{% /alert %}}
+```
 
