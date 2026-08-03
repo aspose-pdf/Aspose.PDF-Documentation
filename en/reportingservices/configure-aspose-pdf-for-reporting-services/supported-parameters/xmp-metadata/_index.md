@@ -14,26 +14,33 @@ Reporting Services report designer does not support embedding XMP metadata in th
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Parameter Name**: CreationDate  
-**Date Type**: String  
-**Values supported**: Date in one of the date formats
+```text
+**Parameter Name: CreationDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats
+```
 
-**Parameter Name**: ModifyDate  
-**Date Type**: String  
-**Values supported**: Date in one of the date formats 
+```text
+**Parameter Name: ModifyDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**Parameter Name**: MetaDataDate  
-**Date Type**: String  
-**Values supported**: Date in one of the date formats 
+```text
+**Parameter Name: MetaDataDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**Parameter Name**: CreatorTool  
-**Date Type**: String  
-**Values supported**: Any plain text  
+```text
+**Parameter Name: CreatorTool  
+**Date Type: String  
+**Values supported: Any plain text  
+```
 
-**Example**
-{{< highlight csharp >}}
+## Example
 
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer, Aspose.Pdf.ReportingServices">
@@ -45,8 +52,6 @@ Reporting Services report designer does not support embedding XMP metadata in th
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
-
-{{% /alert %}}
 

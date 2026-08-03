@@ -14,23 +14,25 @@ RDL specification does not specify the arrows about the line element, so report 
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-
 Currently, Aspose.PDF renderer support adding arrows at the start or end for lines by adding custom properties.
 
+```text
 Add Start Arrow for Line  
-**Custom Property** **Name**: HasArrowAtStart  
-**Custom Property Value**: True  
+Custom Property `Name`: HasArrowAtStart  
+Custom Property `Value`: True  
+```
 
+```text
 Add End Arrow for Line  
-**Custom Property** **Name**: HasArrowAtEnd  
-**Custom Property Value**: True  
+Custom Property `Name`: HasArrowAtEnd  
+Custom Property `Value`: True  
+```
 
-For example, there are two lines named 'line1' and 'line2' in the current report file, and line1 has the start arrow, line2 has the start and end arrows, to satisfy these requirements, you can add custom properties as in the following code fragment.
+For example, there are two lines named `line1` and `line2` in the current report file, and line1 has the start arrow, line2 has the start and end arrows, to satisfy these requirements, you can add custom properties as in the following code fragment.
 
-**Example**
+## Example
 
-{{< highlight csharp >}}
+```xml
  <Line Name="line1">
     <Style>
       ......
@@ -58,6 +60,5 @@ For example, there are two lines named 'line1' and 'line2' in the current report
       </CustomProperty>
     </CustomProperties>
 </Line>
+```
 
-{{< /highlight >}}
-{{% /alert %}}
