@@ -1,44 +1,46 @@
 ---
-title: Размер полей страницы
-linktitle: Размер полей страницы
+title: Размер поля страницы
+linktitle: Размер поля страницы
 type: docs
 weight: 70
-url: /ru/reportingservices/page-margin-size/
-description: Настройте размеры полей страницы в PDF‑отчетах с помощью Aspose.PDF for Reporting Services для улучшения читаемости и макета.
-lastmod: "2026-07-29"
+url: /reportingservices/page-margin-size/
+description: Настройте размеры полей страниц в отчетах PDF с помощью Aspose.PDF for Reporting Services для улучшения читаемости и макета.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Конструктор отчетов Reporting Services не поддерживает установку размера полей страницы. Aspose.PDF for Reporting Services предоставляет четыре параметра для установки соответствующего размера полей, они следующие:
+Конструктор отчетов служб Reporting Services не поддерживает настройку размера полей страницы. Aspose.PDF для служб Reporting Services предоставляет четыре параметра для установки соответствующего размера поля страницы:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-1)  
-**Имя параметра**: PageMarginLeft  
-**Тип данных**: Float  
-**Поддерживаемые значения**:  Любое положительное число или ноль
+```text
+Parameter Name: PageMarginLeft  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-2)  
-**Имя параметра**: PageMarginRight  
-**Тип данных**: Float  
-**Поддерживаемые значения**:  Любое положительное число или ноль
+```text
+Parameter Name: PageMarginRight  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-3)  
-**Имя параметра**: PageMarginTop  
-**Тип данных**: Float  
-**Поддерживаемые значения**:  Любое положительное число или ноль
+```text
+Parameter Name: PageMarginTop  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-4)  
-**Имя параметра**: PageMarginBottom  
-**Тип данных**: Float  
-**Поддерживаемые значения**:  Любое положительное число или ноль
+```text
+Parameter Name: PageMarginBottom  
+Date Type: Float  
+Values supported:  Any positive number or zero
+```
 
-**Пример**
+## Пример
 
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type=" Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices ">
@@ -50,7 +52,4 @@ lastmod: "2026-07-29"
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```

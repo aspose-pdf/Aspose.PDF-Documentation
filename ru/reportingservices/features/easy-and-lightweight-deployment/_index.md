@@ -1,21 +1,21 @@
 ---
-title: Лёгкое и компактное развертывание
-linktitle: Лёгкое и компактное развертывание
+title: Простое и легкое развертывание
+linktitle: Простое и легкое развертывание
 type: docs
 weight: 40
-url: /ru/reportingservices/easy-and-lightweight-deployment/
-description: Узнайте, как развернуть Aspose.PDF for Reporting Services с минимальными усилиями. Компактная настройка обеспечивает быструю реализацию и эффективность.
-lastmod: "2026-07-29"
+url: /reportingservices/easy-and-lightweight-deployment/
+description: Узнайте, как развернуть Aspose.PDF для служб Reporting Services с минимальными усилиями. Легкая установка обеспечивает быстрое внедрение и эффективность.
+lastmod: "2021-06-05"
 ---
 
-**Aspose.PDF for Reporting Services** — это пользовательское расширение визуализации для Microsoft SQL Server 2016/2017/2019/2022 Reporting Services и Power BI Report Server. Aspose.PDF for Reporting Services поставляется в виде единого MSI‑установщика, который можно установить на компьютеры, работающие на одной из следующих платформ:
+**Aspose.PDF для служб Reporting Services** — это настраиваемое расширение рендеринга для служб отчетов Microsoft SQL Server 2016/2017/2019/2022 и сервера отчетов Power BI. Aspose.PDF для служб Reporting Services предоставляется в виде единого установщика MSI, который можно установить на компьютеры, на которых выполняется одно из следующих действий:
 
-- Microsoft SQL Server 2016 Reporting Services  
-- Microsoft SQL Server 2017 Reporting Services  
-- Microsoft SQL Server 2019 Reporting Services  
-- Microsoft SQL Server 2022 Reporting Services  
-- Microsoft Power BI Report Server
+- Службы отчетов Microsoft SQL Server 2016  
+- Службы отчетов Microsoft SQL Server 2017  
+- Службы отчетов Microsoft SQL Server 2019  
+- Службы отчетов Microsoft SQL Server 2022  
+- Сервер отчетов Microsoft Power BI
  
-Aspose.PDF for Reporting Services легко развернуть и управлять, так как он состоит только из одной сборки .NET Aspose.Pdf.ReportingServices.dll, полностью написанной на C#, совместимой с CLS и содержащей только безопасный управляемый код. Требуется, чтобы на сервере был установлен .NET Framework 4.8.1.
+Aspose.PDF для служб Reporting Services легко развертывать и управлять, поскольку он состоит только из одной сборки .NET Aspose.Pdf.ReportingServices.dll, полностью написанной на C#, совместимой с CLS и содержащей только безопасный управляемый код. На сервере должна быть установлена ​​.NET Framework 4.8.1.
 
-Aspose.Pdf.ReportingServices.dll должен быть скопирован в каталог ReportServer\bin, а конфигурационный файл должен быть обновлён, чтобы Reporting Services был осведомлён о новом расширении отрисовки. Эти шаги выполняются установщиком Aspose.PDF for Reporting Services, но вы также можете выполнить их вручную, как описано далее в этой документации.
+Aspose.Pdf.ReportingServices.dll необходимо скопировать в каталог ReportServer\bin, а файл конфигурации необходимо обновить, чтобы службы Reporting Services знали о новом расширении рендеринга. Эти шаги выполняются установщиком Aspose.PDF for Reporting Services, но вы также можете выполнить их вручную, как описано далее в этой документации.

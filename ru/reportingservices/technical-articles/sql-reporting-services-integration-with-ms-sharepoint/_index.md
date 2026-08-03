@@ -1,15 +1,15 @@
 ---
-title: Интеграция SQL Reporting Services с MS SharePoint
-linktitle: Интеграция SQL Reporting Services с MS SharePoint
+title: Интеграция служб отчетов SQL с MS SharePoint
+linktitle: Интеграция служб отчетов SQL с MS SharePoint
 type: docs
 weight: 20
-url: /ru/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/
-lastmod: "2026-07-29"
+url: /reportingservices/sql-reporting-services-integration-with-ms-sharepoint/
+lastmod: "2021-06-05"
 ---
 
-**Этот раздел включает следующие темы:**
+**В этот раздел включены следующие темы:**
 
 - [Введение](/pdf/ru/reportingservices/introduction/)
-- [Настройка Reporting Services](/pdf/ru/reportingservices/setting-up-reporting-services/)
-- [Настройка SharePoint на сервере Reporting Services](/pdf/ru/reportingservices/setting-up-sharepoint-on-reporting-services-server/)
-- [Конфигурация Reporting Services и SharePoint](/pdf/ru/reportingservices/reporting-services-and-sharepoint-configuration/)
+- [Настройка служб отчетов](/pdf/ru/reportingservices/setting-up-reporting-services/)
+- [Настройка SharePoint на сервере служб отчетов](/pdf/ru/reportingservices/setting-up-sharepoint-on-reporting-services-server/)
+- [Службы отчетов и конфигурация SharePoint](/pdf/ru/reportingservices/reporting-services-and-sharepoint-configuration/)

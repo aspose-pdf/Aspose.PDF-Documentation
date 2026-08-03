@@ -1,39 +1,40 @@
 ---
-title: HTML Formatting
-linktitle: HTML Formatting
+title: HTML-форматирование
+linktitle: HTML-форматирование
 type: docs
 weight: 20
 url: /reportingservices/html-formatting/
-description: Enable HTML formatting in PDF reports using Aspose.PDF for Reporting Services. Add styles and structure with ease.
+description: Включите форматирование HTML в отчетах PDF с помощью Aspose.PDF для служб Reporting Services. Легко добавляйте стили и структуру.
 lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Sometimes you might wish to export text in textboxes with formatting. Unfortunately, Reporting Services does not support this. However, you still can implement it using Aspose.PDF for Reporting Services. Just enable a special mode in which all text in textboxes is treated as HTML and put the necessary HTML tags to format the text in the output document. For example, to have normal, bold and italic text in the same textbox, enter the following textbox value:
+Иногда вам может потребоваться экспортировать текст в текстовые поля с форматированием. К сожалению, службы Reporting Services не поддерживают это. Однако вы все равно можете реализовать его с помощью Aspose.PDF для служб Reporting Services. Просто включите специальный режим, в котором весь текст в текстовых полях обрабатывается как HTML, и поместите необходимые HTML-теги для форматирования текста в выходном документе. Например, чтобы в одном текстовом поле был обычный, жирный и курсивный текст, введите следующее значение текстового поля:
 
-Some of this text is ```<b>bold</b>``` and other text is ```<i>italic</i>```.
+Часть этого текста — `<b>bold</b>`, а другая — `<i>italic</i>`.
 
-When exported, the text will look like as some of this text is **bold** and other text is *italic*.
+При экспорте текст будет выглядеть так: часть этого текста выделена **жирным**, а другая часть — *курсивом*.
 
-Please note that this approach has some limitations
+Обратите внимание, что этот подход имеет некоторые ограничения.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-- The formatting isn’t visible in design time (in the Report Builder, Reporting Services web portal etc.). Instead, you will see the HTML text in form of plain text with tags.
-- Aspose.PDF for Reporting Services rendering extension recognizes and properly formats HTML code in textboxes. The default PDF renderer of Reporting Services will export this markup as plain text.
+- Форматирование не отображается во время разработки (в построителе отчетов, веб-портале служб Reporting Services и т. д.). Вместо этого вы увидите HTML-текст в виде обычного текста с тегами.
+- Расширение рендеринга Aspose.PDF для служб Reporting Services распознает и правильно форматирует HTML-код в текстовых полях. Средство обработки PDF-файлов по умолчанию служб Reporting Services экспортирует эту разметку как обычный текст.
 
-**Parameter Name**: IsHtmlTagSupported  
-**Date Type**: Boolean  
-**Values supported**: True, False (default)   
+```text
+Parameter Name: IsHtmlTagSupported  
+Date Type: Boolean  
+Values supported: True, False (default)   
+```
 
-**Example**
+## Пример
 
-{{< highlight csharp >}}
-
- <Render>
+```xml
+<Render>
 ...
     <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices ">
     <Configuration>
@@ -41,12 +42,10 @@ Please note that this approach has some limitations
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
+Если вы хотите добавить этот параметр в Дизайнер отчетов, используйте тип данных `Boolean`.
 
-If you want to add this parameter in the Report Designer, use the 'Boolean' data type.
-
- 
-Currently Aspose.PDF for Reporting Services supports a subset of all the HTML tags. You may find more information in the Aspose.PDF [Documentation](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
+В настоящее время Aspose.Pdf для служб Reporting Services поддерживает подмножество всех тегов HTML. Дополнительную информацию можно найти в Aspose.PDF [Документация](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}

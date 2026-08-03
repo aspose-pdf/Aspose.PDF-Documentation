@@ -4,12 +4,12 @@ linktitle: Настроить
 
 type: docs
 weight: 80
-url: /ru/reportingservices/configure-aspose-pdf-for-reporting-services/
-description: Узнайте, как настроить Aspose.PDF for Reporting Services для эффективного изменения настроек вывода PDF в ваших отчетах SSRS.
-lastmod: "2026-07-29"
+url: /reportingservices/configure-aspose-pdf-for-reporting-services/
+description: Узнайте, как настроить Aspose.PDF для служб Reporting Services, чтобы эффективно настроить параметры вывода PDF для ваших отчетов SSRS.
+lastmod: "2021-06-05"
 ---
 
-## Этот раздел включает следующие темы:
+## В этот раздел включены следующие темы:
 
-- [Настройка параметров](/pdf/ru/reportingservices/setting-parameters/)
-- [Поддерживаемые параметры](/pdf/ru/reportingservices/supported-parameters/)
+- [Настройка параметров](/pdf/reportingservices/setting-parameters/)
+- [Поддерживаемые параметры](/pdf/reportingservices/supported-parameters/)

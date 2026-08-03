@@ -1,22 +1,22 @@
 ---
 title: Документация
-linktitle:  Aspose.PDF for Reporting Services
+linktitle:  Aspose.PDF для служб отчетов
 second_title: Aspose.PDF for Reporting Services
 type: docs
 weight: 120
-url: /ru/reportingservices/
-description: Откройте для себя Aspose.PDF for Reporting Services. Создавайте PDF‑отчеты непосредственно из SQL Server Reporting Services (SSRS) с расширенной настройкой.
+url: /reportingservices/
+description: Откройте для себя Aspose.PDF для служб отчетов. Создавайте отчеты в формате PDF непосредственно из служб SQL Server Reporting Services (SSRS) с расширенными возможностями настройки.
 is_root: true
-lastmod: "2026-07-29"
+lastmod: "2024-05-05"
 ---
 
 {{% alert color="primary" %}}
 
-![Aspose.PDF for Reporting Services Логотип](home_5.png)
+![Aspose.PDF для логотипа служб отчетов](home_5.png)
 
-## Добро пожаловать в Aspose.PDF for Reporting Services
+## Добро пожаловать в Aspose.PDF для служб отчетов
 
-Microsoft SQL Server Reporting Services удовлетворяет потребность, которую имеют многие организации: потребность создавать решения бизнес-аналитики и отчетности. До настоящего времени разработчикам приходилось встраивать отчеты в свои приложения, а организациям требовалось приобретать дорогие и иногда проблемные сторонние решения для отчетности. Сейчас Microsoft SQL Server Reporting Services предлагает полное решение для распространения отчетов по всей компании; позволяя бизнесу принимать решения лучше и быстрее.
+Службы отчетов Microsoft SQL Server удовлетворяют потребность многих организаций: необходимость создания решений для бизнес-аналитики и отчетности. До сих пор разработчикам приходилось встраивать отчеты в свои приложения, а организациям приходилось покупать дорогие, а иногда и проблематичные сторонние решения для создания отчетов. Теперь службы отчетов Microsoft SQL Server предлагают комплексное решение для распространения отчетов по предприятию; позволяя предприятиям принимать решения лучше и быстрее.
 
 {{% /alert %}}
 
@@ -25,23 +25,23 @@ Microsoft SQL Server Reporting Services удовлетворяет потреб�
 - [Обзор продукта](/pdf/ru/reportingservices/product-overview/)
 - [Поддерживаемые форматы файлов](/pdf/ru/reportingservices/supported-file-formats/)
 - [Функции](/pdf/ru/reportingservices/features/)
-- [Галерея образцов отчетов](/pdf/ru/reportingservices/sample-reports-gallery/)
-- [Установить Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [Лицензировать Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Настроить Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Галерея примеров отчетов](/pdf/ru/reportingservices/sample-reports-gallery/)
+- [Установите Aspose.PDF для служб отчетов.](/pdf/ru/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [Лицензия Aspose.PDF для служб отчетов](/pdf/ru/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [Настройка Aspose.PDF для служб отчетов](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Развернуть свойства элементов отчета](/pdf/ru/reportingservices/expand-report-items-properties/)
-- [Оценить Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [Оцените Aspose.PDF для служб отчетов](/pdf/ru/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
-## Aspose.PDF for Reporting Services Ресурсы
+## Aspose.PDF для ресурсов служб отчетов
 
-- [Aspose.PDF for Reporting Services Обзор продукта](/pdf/ru/reportingservices/product-overview/)
-- [Aspose.PDF for Reporting Services Поддерживаемые форматы файлов](/pdf/ru/reportingservices/supported-file-formats/)
-- [Aspose.PDF for Reporting Services Возможности](/pdf/ru/reportingservices/features/)
-- [Aspose.PDF for Reporting Services Примечания к выпуску](https://releases.aspose.com/pdf/reportingservices/release-notes/)
-- [Скачать Aspose.PDF for Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
-- [Галерея образцов отчетов Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/sample-reports-gallery/)
-- [Установить Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [Лицензировать Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Настроить Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Обзор продукта Aspose.PDF для служб Reporting Services](/pdf/ru/reportingservices/product-overview/)
+- [Aspose.PDF для Reporting Services Поддерживаемые форматы файлов](/pdf/ru/reportingservices/supported-file-formats/)
+- [Aspose.PDF для функций Reporting Services](/pdf/ru/reportingservices/features/)
+- [Примечания к выпуску Aspose.PDF для служб Reporting Services](https://releases.aspose.com/pdf/reportingservices/release-notes/)
+- [Загрузите Aspose.PDF для служб отчетов](https://releases.aspose.com/pdf/reportingservices/)
+- [Галерея примеров отчетов Aspose.PDF для служб отчетов](/pdf/ru/reportingservices/sample-reports-gallery/)
+- [Установите Aspose.PDF для служб отчетов.](/pdf/ru/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [Лицензия Aspose.PDF для служб отчетов](/pdf/ru/reportingservices/license-aspose-pdf-for-reporting-services/)
+- [Настройка Aspose.PDF для служб отчетов](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Развернуть свойства элементов отчета](/pdf/ru/reportingservices/expand-report-items-properties/)
-- [Оценить Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
+- [Оцените Aspose.PDF для служб отчетов](/pdf/ru/reportingservices/evaluate-aspose-pdf-for-reporting-services/)

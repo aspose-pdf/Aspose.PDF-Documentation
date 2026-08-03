@@ -1,36 +1,36 @@
 ---
-title: Почему стоит выбрать Aspose.PDF for Reporting Services
-linktitle: Почему стоит выбрать Aspose.PDF for Reporting Services
+title: Почему стоит выбрать Aspose.PDF для служб отчетов
+linktitle: Почему стоит выбрать Aspose.PDF для служб отчетов
 type: docs
 weight: 10
-url: /ru/reportingservices/why-choose-aspose-pdf-for-reporting-services/
-lastmod: "2026-07-29"
+url: /reportingservices/why-choose-aspose-pdf-for-reporting-services/
+lastmod: "2021-06-05"
 ---
 
-**Aspose.PDF for Reporting Services** — надежное .NET‑решение, позволяющее создавать PDF‑отчеты с использованием Microsoft SQL Server 2016, 2017, 2019 и 2022 Reporting Services, а также Microsoft Power BI Report Server. Aspose.PDF for Reporting Services не работает автономно, а является расширением рендеринга для SQL Reporting Services. Он поддерживает не только базовые элементы отчета, такие как таблицы, диаграммы, изображения, заголовки/колонтитулы, линии и т.д., но и предоставляет возможность добавлять пользовательские свойства, что дает дополнительное преимущество при работе с SQL Reporting Services. При использовании этих свойств можно генерировать Список содержимого, который не поддерживается Report Designer. В результирующем PDF‑документе могут быть сноски/концевые сноски, которые нативно не поддерживаются Report Builder. Еще одной интересной функцией являются Стрелки к линии, которые также не поддерживаются SQL Reporting Services, но Aspose.PDF for Reporting Services может добавить стрелки в начале или в конце элемента линии. Кроме того, Aspose.PDF for Reporting Services предоставляет возможность задавать выравнивание текста (Justify или FullJustify), что не поддерживается Report Designer. Эти режимы текста делают итоговый документ лучше отформатированным и легко читаемым.
+**Aspose.PDF для служб Reporting Services** — это надежное решение .NET, которое позволяет создавать отчеты в формате PDF с использованием служб отчетов Microsoft SQL Server 2016, 2017, 2019 и 2022, а также сервера отчетов Microsoft Power BI. Aspose.PDF for Reporting Services не работает независимо, а является расширением рендеринга для SQL Reporting Services. Он не только поддерживает основные элементы отчета, такие как таблицы, диаграммы, изображения, верхние и нижние колонтитулы, строки и т. д., но также предоставляет возможность добавлять пользовательские свойства, что дает ему дополнительные возможности для служб SQL Reporting Services. Используя эти свойства, вы можете создать список содержания, который не поддерживается дизайнером отчетов. В результирующем PDF-документе могут быть сноски/концевые сноски, которые изначально не поддерживаются построителем отчетов. Еще одной интересной особенностью является наличие стрелок линий, которые также не поддерживаются службами отчетов SQL, но Aspose.PDF для служб отчетов может предоставить возможность добавлять стрелки в начале или в конце элемента строки. Более того, Aspose.PDF для служб Reporting Services предоставляет возможность указать информацию о выравнивании текста (Justify или FullJustify), которая не поддерживается дизайнером отчетов. Эти текстовые режимы делают полученный документ лучше отформатированным и легко читаемым.
 
-Помимо ранее упомянутых функций, вы также можете задать некоторые другие параметры конфигурации для отчетов, чтобы получить возможности, которые не поддерживаются нативно SQL Reporting Services. Ниже приведён краткий обзор таких возможностей, предлагаемых Aspose.PDF for Reporting Services
+Помимо ранее упомянутых функций, вы также можете установить некоторые другие параметры конфигурации для отчетов, чтобы получить функции, которые изначально не поддерживаются службами SQL Reporting Services. Ниже приводится краткое описание таких функций, которые предлагает Aspose.PDF для служб отчетов.
 
 ## Настройки безопасности
 
-Иногда вам может потребоваться экспортировать PDF‑документ, защищённый паролем, с ограниченными правами на копирование текста и печать. К сожалению, Reporting Services не поддерживает эту возможность. Тем не менее, вы всё равно можете реализовать её с помощью Aspose.PDF for Reporting Services. Просто добавьте соответствующие параметры безопасности в отчёт или сервер отчётов, чтобы получить защищённый PDF‑документ с ограниченными привилегиями. Для получения дополнительной информации, пожалуйста, обратитесь к разделу 'Security Setting'.
+Иногда вам может потребоваться экспортировать PDF-документ, защищенный паролем, с ограниченными правами на копирование и печать текста. К сожалению, службы Reporting Services не поддерживают такую ​​возможность. Однако вы все равно можете реализовать его с помощью Aspose.PDF для служб Reporting Services. Просто добавьте соответствующие параметры безопасности в отчет или на сервер отчетов, чтобы получить защищенный PDF-документ с ограниченными правами. Для получения дополнительной информации обратитесь к разделу «Настройка безопасности».
 
-## Встраивание пользовательского шрифта
+## Встраивание пользовательских шрифтов
 
-Конструктор Reporting Services не поддерживает встраивание шрифтов для текста; с помощью Aspose.PDF for Reporting Services вы можете легко встраивать информацию о шрифте в ваш PDF‑документ. Для получения дополнительной информации, пожалуйста, обратитесь к разделу 'IsFontEmbedded'.
+Конструктор служб Reporting Services не поддерживает встроенный шрифт для текста; с помощью Aspose.PDF for Reporting Services вы можете легко встраивать информацию о шрифтах в свой PDF-документ. Для получения дополнительной информации обратитесь к разделу «IsFontEmbedded».
 
-## Метаданные XMP
+## XMP-метаданные
 
-Reporting Services designer does not support embedding the XMP metadata. Aspose.PDF for Reporting Services provides four parameters (CreationDate, ModifyDate, MetaDataDate and CreatorTool) to set the corresponding XMP Metadata. For more information, please refer to the 'XMP Metadata' section.
+Конструктор служб Reporting Services не поддерживает внедрение метаданных XMP. Aspose.PDF для служб Reporting Services предоставляет четыре параметра (CreationDate, ModifyDate, MetaDataDate и CreatorTool) для установки соответствующих метаданных XMP. Для получения дополнительной информации обратитесь к разделу «Метаданные XMP».
 
-## PDF/A
+## PDF/А
 
-When using SQL Server Reporting Services, you can only generate the PDF document in simple format whereas the generation of PDF/A documents is not supported. But Aspose.PDF for Reporting Services provides the feature to create PDF/A compliant documents with the addition of a single configuration parameter. For more information, please refer to the 'PDF Conformance' section.
+При использовании служб SQL Server Reporting Services вы можете создавать PDF-документы только в простом формате, тогда как создание документов PDF/A не поддерживается. Но Aspose.PDF for Reporting Services предоставляет возможность создавать документы, совместимые с PDF/A, с добавлением одного параметра конфигурации. Для получения дополнительной информации обратитесь к разделу «Соответствие PDF».
 
-## Page Rotation Angle
+## Угол поворота страницы
 
-When using Aspose.PDF for Reporting Services, you can set the number of degrees by which the page should be rotated clockwise when displayed or printed. For more information, please refer to the 'Page Rotating Angle' section.
+При использовании Aspose.PDF для служб Reporting Services вы можете установить количество градусов, на которое страница должна быть повернута по часовой стрелке при отображении или печати. Дополнительную информацию см. в разделе «Угол поворота страницы».
 
-## Page Margin Size
+## Размер поля страницы
 
-Конструктор Reporting Services не поддерживает настройку размеров полей страницы. Aspose.PDF for Reporting Services, с другой стороны, предоставляет четыре параметра для установки соответствующего размера полей страницы. Это PageMarginLeft, PageMarginRight, PageMarginTop и PageMarginBottom. Для получения дополнительной информации см. раздел 'Page Margin Size'.
+Конструктор служб Reporting Services не поддерживает настройку размера полей страницы. С другой стороны, Aspose.PDF для служб Reporting Services предоставляет четыре параметра для установки соответствующего размера поля страницы. Это PageMarginLeft, PageMarginRight, PageMarginTop и PageMarginBottom. Дополнительную информацию см. в разделе «Размер полей страницы».

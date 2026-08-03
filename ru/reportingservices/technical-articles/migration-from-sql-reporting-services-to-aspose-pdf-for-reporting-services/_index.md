@@ -1,13 +1,13 @@
 ---
-title: Миграция с SQL Reporting Services на Aspose.PDF for Reporting Services
-linktitle: Миграция с SQL Reporting Services на Aspose.PDF for Reporting Services
+title: Миграция со служб SQL Reporting Services на Aspose.PDF для служб отчетов
+linktitle: Миграция со служб SQL Reporting Services на Aspose.PDF для служб отчетов
 type: docs
 weight: 10
-url: /ru/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/
-description: Узнайте, как перейти с SQL Reporting Services на Aspose.PDF for Reporting Services. Усовершенствуйте процесс создания PDF.
-lastmod: "2026-07-29"
+url: /reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/
+description: Узнайте, как перейти со служб SQL Reporting Services на Aspose.PDF для служб Reporting Services. Обновите процесс создания PDF-файлов.
+lastmod: "2024-05-05"
 ---
 
-**В этом разделе рассматриваются следующие темы:**
+**В этот раздел включены следующие темы:**
 
-- [Почему выбрать Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/why-choose-aspose-pdf-for-reporting-services/)
+- [Почему стоит выбрать Aspose.PDF для служб отчетов](/pdf/ru/reportingservices/why-choose-aspose-pdf-for-reporting-services/)

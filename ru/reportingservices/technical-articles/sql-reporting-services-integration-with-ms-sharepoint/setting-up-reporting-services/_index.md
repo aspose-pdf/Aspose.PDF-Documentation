@@ -1,100 +1,100 @@
 ---
-title: Настройка Reporting Services
-linktitle: Настройка Reporting Services
+title: Setting up Reporting Services
+linktitle: Setting up Reporting Services
 type: docs
 weight: 20
-url: /ru/reportingservices/setting-up-reporting-services/
-lastmod: "2026-07-29"
+url: /reportingservices/setting-up-reporting-services/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Нашей первой остановкой на сервере Reporting Services является Reporting Services Configuration Manager.
+Our first stop on the Reporting Services Server is the Reporting Services Configuration Manager.
 
 {{% /alert %}}
 
-## Служебная учетная запись:
+## Service Account:
 
-**Убедитесь, что вы понимаете, какую служебную учетную запись используете для Reporting Services. Если возникнут проблемы, они могут быть связаны с используемой служебной учетной записью. По умолчанию используется Network Service. При развертывании новых сборок мы всегда используем доменные учетные записи, поскольку именно в этом случае мы, скорее всего, столкнёмся с проблемами. Для данного экземпляра сервера мы использовали доменную учетную запись под названием RSService.**
+**Be sure to understand what service account you are using for Reporting Services. If we run into issues, it may be related to the service account you are using. The default is Network Service. When we go to deploy new builds, we always use Domain Accounts, because that is where we are likely to hit issues. For this instance of server, we have used a Domain Account called RSService.**
 
-![todo:image_alt_text](setting-up-reporting-services_1.png)
+![Set Up](setting-up-reporting-services_1.png)
 
-**Image1:- Настройка служебной учетной записи**
+**Image1:- Setting-up service account**
 
-## URL веб‑сервиса:
+## Web Service URL:
 
 {{% alert color="primary" %}}
 
-**Нам нужно будет настроить URL веб‑сервиса. Это виртуальный каталог (vdir) ReportServer, в котором размещаются веб‑сервисы, используемые Reporting Services, и с которым будет взаимодействовать SharePoint. Если вы не хотите настраивать свойства vdir (т. е. SSL, порты, заголовки хоста и т. д.), вы просто можете нажать «Применить» здесь, и всё будет готово.**
-![todo:image_alt_text](setting-up-reporting-services_2.png)
+**We will need to configure the Web Service URL. This is the ReportServer virtual directory (vdir) that hosts the Web Services Reporting Services uses, and what SharePoint will communicate with. Unless you want to customize the properties of the vdir (i.e. SSL, ports, host headers, etc…), you should just be able to click Apply here and be good to go.**
+![Web Service URL](setting-up-reporting-services_2.png)
 
-**Image2:- Настройка URL веб‑сервиса После настройки URL веб‑сервиса вы должны увидеть следующие результаты**
+**Image2:- Setting up Web Service URL Once Web service URL have been setup, you should able to see the following results**
 
-![todo:image_alt_text](setting-up-reporting-services_3.png)
+![Web Service URL Results](setting-up-reporting-services_3.png)
 
-**Image3:- Успешная настройка URL веб‑сервиса**
+**Image3:- Successful setup of Web service URL**
 {{% /alert %}}
 
-## База данных:
+## Database:
 
-**Нам необходимо создать базу данных каталога Reporting Services. Она может быть размещена на любом SQL 2008 или SQL 2008 R2 Database Engine. SQL11 также подойдет, но всё ещё находится в BETA. Это действие создаст по умолчанию две базы данных, ReportServer и ReportServerTempDB.**
+**We need to create the Reporting Services Catalog Database. This can be placed on any SQL 2008 or SQL 2008 R2 Database Engine. SQL11 would work ok as well, but that is still in BETA. This action will create two databases, ReportServer and ReportServerTempDB, by default.**
 
 {{% alert color="primary" %}}
-**Другой важный шаг — убедиться, что вы выбираете тип базы данных SharePoint Integrated. После того как этот выбор сделан, его нельзя изменить.**
+**The other important step with this is to make sure that you choose SharePoint Integrated for the database type. Once this choice is made, it cannot be changed.**
 
-![todo:image_alt_text](setting-up-reporting-services_4.png)
+![Creating Report Server Database](setting-up-reporting-services_4.png)
 
-**Image4:- Создание базы данных сервера отчетов**
+**Image4:- Creating report server database**
 
-![todo:image_alt_text](setting-up-reporting-services_5.png)
+![Setting up Database Server and Authentication Type](setting-up-reporting-services_5.png)
 
-**Image5:- Настройка сервера баз данных и типа аутентификации**
+**Image5:- Setting up database server and authentication type**
 
-![todo:image_alt_text](setting-up-reporting-services_6.png)
+![Setting up Database Name and Mode](setting-up-reporting-services_6.png)
 
-**Image6:- Настройка имени базы данных и режима**
+**Image6:- Setting up database name and Mode**
 {{% /alert %}}
 
-**Для учетных данных это то, как Report Server будет взаимодействовать с SQL Server. Любая выбранная вами учетная запись получит определенные права в базе данных Catalog, а также в нескольких системных базах данных через роль RSExecRole. MSDB — одна из этих баз данных для использования подписок, поскольку мы используем SQL Agent.**
+**For the credentials, this is how the Report Server will communicate with the SQL Server. Whatever account you select, will be given certain rights within the Catalog database as well as a few of the system databases via the RSExecRole. MSDB is one of these database for Subscription usage as we make use of SQL Agent.**
 
-![todo:image_alt_text](setting-up-reporting-services_7.png)
+![Setting up Report Server database credentials](setting-up-reporting-services_7.png)
 
-**Image7:- Настройка учетных данных базы данных Report Server**
+**Image7:- Setting up Report Server database credentials**
 
 {{% alert color="primary" %}}
 
-**Как только учетные данные базы данных указаны, мы должны получить результаты, как указано ниже.**
+**Once database credentials are specified, we should be able to get the results as specified below.**
 
-![todo:image_alt_text](setting-up-reporting-services_8.png)
+![Report Server database creation progress](setting-up-reporting-services_8.png)
 
-**Image8:- Прогресс создания базы данных Report Server**
+**Image8:- Report Server database creation progress**
 
-![todo:image_alt_text](setting-up-reporting-services_9.png)
+![Report Server database completion summary](setting-up-reporting-services_9.png)
 
-**Image9:- Сводка завершения базы данных Report Server**
+**Image9:- Report Server database completion summary**
 {{% /alert %}}
 
-## URL-адрес Report Manager:
+## Report Manager URL:
 
-**Мы можем пропустить URL Report Manager, поскольку он не используется в режиме интеграции с SharePoint. SharePoint — наш фронтенд. Report Manager не работает.**
+**We can skip the Report Manager URL as it isn't used when we are in SharePoint Integrated mode. SharePoint is our frontend. Report Manager doesn't work.**
 
-## Ключи шифрования:
+## Encryption Keys:
 
 {{% alert color="primary" %}}
-**Сделайте резервную копию ваших ключей шифрования и убедитесь, что знаете, где их храните. Если возникнет ситуация, когда вам понадобится мигрировать базу данных или восстановить её, эти ключи понадобятся.**
+**Backup your Encryption Keys and make sure you know where you keep them. If you get into a situation where you need to migrate the Database or restore it, you will need these.**
 
-![todo:image_alt_text](setting-up-reporting-services_10.png)
+![Report Server Encryption key backup](setting-up-reporting-services_10.png)
 
-**Image10:- Резервное копирование ключа шифрования сервера отчетов**
+**Image10:- Report Server Encryption key backup**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Поздравляем! Мы успешно настроили Reporting Services с помощью Configuration Manager. Если перейти по URL на вкладке Web Service URL, должно отображаться что-то похожее на следующее.**
+**Congratulation! We have successfully configured Reporting Services using Configuration Manager. If you browse to the URL on the Web Service URL tab, it should show something similar to the following.**
 
-![todo:image_alt_text](setting-up-reporting-services_11.png)
+![Report Server access after installation](setting-up-reporting-services_11.png)
 
-**Image11:- Доступ к Report Server после установки**
+**Image11:- Report Server access after installation**
 
-**Причина ошибки: SharePoint установлен на нашем WFE, и мы завершили настройку Reporting Services. В этом примере Reporting Services и SharePoint находятся на разных машинах. Если бы они были на одной машине, вы бы не увидели эту ошибку. Технически нам нужно установить SharePoint на RS Box. Это означает, что IIS также будет включён.**
+**Reason of error: SharePoint is installed on our WFE and we finished setting up Reporting Services. In this example, Reporting Services and SharePoint are on different machines. If they were on the same machine, you wouldn't have seen this error. We technically need to install SharePoint on the RS Box. That means IIS will be enabled as well.**
 {{% /alert %}}
 

@@ -1,17 +1,17 @@
 ---
-title: Возможности
-linktitle: Возможности
+title: Функции
+linktitle: Функции
 type: docs
 weight: 30
-url: /ru/reportingservices/features/
-description: Узнайте о ключевых возможностях Aspose.PDF for Reporting Services. Улучшите отчёты SSRS с помощью расширенных возможностей рендеринга PDF и настройки.
-lastmod: "2026-07-29"
+url: /reportingservices/features/
+description: Откройте для себя ключевые возможности Aspose.PDF для служб Reporting Services. Усовершенствуйте отчеты SSRS с помощью расширенных возможностей рендеринга и настройки PDF-файлов.
+lastmod: "2021-06-05"
 ---
 
-**Этот раздел включает следующие темы:**
+**В этот раздел включены следующие темы:**
 
-- [Полная поддержка RDL](/pdf/ru/reportingservices/comprehensive-rdl-support/)
-- [Поддержка параметризованных отчётов](/pdf/ru/reportingservices/parameterized-report-support/)
-- [Поддержка пользовательских элементов отчёта](/pdf/ru/reportingservices/custom-report-item-support/)
-- [Простое и легковесное развертывание](/pdf/ru/reportingservices/easy-and-lightweight-deployment/)
-- [Техническая поддержка мирового класса бесплатно](/pdf/ru/reportingservices/world-class-free-technical-support/)
+- [Комплексная поддержка RDL](/pdf/ru/reportingservices/comprehensive-rdl-support/)
+- [Поддержка параметризованных отчетов](/pdf/ru/reportingservices/parameterized-report-support/)
+- [Поддержка элементов пользовательского отчета](/pdf/ru/reportingservices/custom-report-item-support/)
+- [Простое и легкое развертывание](/pdf/ru/reportingservices/easy-and-lightweight-deployment/)
+- [Бесплатная техническая поддержка мирового класса](/pdf/ru/reportingservices/world-class-free-technical-support/)

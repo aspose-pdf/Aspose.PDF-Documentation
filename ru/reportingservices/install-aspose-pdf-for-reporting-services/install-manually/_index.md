@@ -3,11 +3,11 @@ title: Установить вручную
 linktitle: Установить вручную
 type: docs
 weight: 20
-url: /ru/reportingservices/install-manually/
-lastmod: "2026-07-29"
+url: /reportingservices/install-manually/
+lastmod: "2021-06-05"
 ---
 
-**Этот раздел включает следующие темы:**
+**В этот раздел включены следующие темы:**
 
-- [Установить на сервер отчетов](/pdf/ru/reportingservices/install-to-report-server/)
+- [Установить на сервер отчетов](/pdf/reportingservices/install-to-report-server/)
 

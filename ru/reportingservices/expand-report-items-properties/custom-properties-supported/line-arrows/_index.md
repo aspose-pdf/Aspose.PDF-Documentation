@@ -1,36 +1,38 @@
 ---
-title: Стрелки линии
-linktitle: Стрелки линии
+title: Линейные стрелки
+linktitle: Линейные стрелки
 type: docs
 weight: 20
-url: /ru/reportingservices/line-arrows/
-description: Узнайте, как добавить стрелки к линиям в PDF‑отчетах с помощью Aspose.PDF for Reporting Services. Легко улучшайте визуальное оформление отчетов.
-lastmod: "2026-07-29"
+url: /reportingservices/line-arrows/
+description: Научитесь добавлять стрелки в отчеты PDF с помощью Aspose.PDF для Reporting Services. Улучшайте визуальные эффекты отчета без особых усилий.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Спецификация RDL не определяет стрелки для элемента line, поэтому Report Builder не поддерживает настройку стрелок для линии. С помощью Aspose.PDF for Reporting Services вы можете легко сделать это.
+Спецификация RDL не определяет стрелки для элемента линии, поэтому построитель отчетов не поддерживает настройку стрелок для линии. С помощью Aspose.PDF for Reporting Services вы можете сделать это легко.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+В настоящее время средство рендеринга Aspose.PDF поддерживает добавление стрелок в начале или конце линий путем добавления пользовательских свойств.
 
-В настоящее время рендерер Aspose.PDF поддерживает добавление стрелок в начале или в конце линий с помощью пользовательских свойств.
+```text
+Add Start Arrow for Line  
+Custom Property `Name`: HasArrowAtStart  
+Custom Property `Value`: True  
+```
 
-Добавить стрелку в начале линии  
-**Свойство** **Имя**: HasArrowAtStart  
-**Значение свойства**: True  
+```text
+Add End Arrow for Line  
+Custom Property `Name`: HasArrowAtEnd  
+Custom Property `Value`: True  
+```
 
-Добавить стрелку в конце линии  
-**Свойство** **Имя**: HasArrowAtEnd  
-**Значение свойства**: True  
+Например, есть две строки с именем `line1` и `line2` в текущем файле отчета, а строка 1 имеет стрелку начала, строка 2 имеет стрелки начала и конца. Чтобы удовлетворить этим требованиям, вы можете добавить пользовательские свойства, как в следующем фрагменте кода.
 
-Например, в текущем файле отчёта есть две линии с именами 'line1' и 'line2', при этом line1 имеет стрелку в начале, line2 — стрелку в начале и в конце; чтобы удовлетворить этим требованиям, вы можете добавить пользовательские свойства, как показано в следующем фрагменте кода.
+## Пример
 
-**Пример**
-
-{{< highlight csharp >}}
+```xml
  <Line Name="line1">
     <Style>
       ......
@@ -38,7 +40,7 @@ lastmod: "2026-07-29"
     <CustomProperties>
       <CustomProperty>
         <Name>HasArrowAtStart</Name>
-        <Value>Истина</Value>
+        <Value>True</Value>
       </CustomProperty>
     </CustomProperties>
 </Line>
@@ -50,14 +52,13 @@ lastmod: "2026-07-29"
     <CustomProperties>
       <CustomProperty>
         <Name>HasArrowAtStart</Name>
-        <Value>Истина</Value>
+        <Value>True</Value>
       </CustomProperty>
 <CustomProperty>
-        <Name>ИмеетСтрелкуВКонце</Name>
-        <Value>Истина</Value>
+        <Name>HasArrowAtEnd</Name>
+        <Value>True</Value>
       </CustomProperty>
     </CustomProperties>
 </Line>
+```
 
-{{< /highlight >}}
-{{% /alert %}}
