@@ -23,5 +23,3 @@ Currently, Aspose.Pdf renderer supports a wide range of parameters, such as:
 - [XMP Metadata](/pdf/reportingservices/xmp-metadata/)
 - [Debug Information](/pdf/reportingservices/debug-information/)
 - [PDF_A Conformance](/pdf/reportingservices/pdf_a-conformance/)
-
-

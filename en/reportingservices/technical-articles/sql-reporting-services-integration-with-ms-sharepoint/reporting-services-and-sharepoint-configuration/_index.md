@@ -17,12 +17,12 @@ Now that SharePoint is installed and configured on the RS server and RS is setup
 
 We want to go to the Central Administrator Web site and then into General Application Settings. Towards the bottom we will see Reporting Services.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_1.png)
+![Configuration-step1](reporting-services-and-sharepoint-configuration_1.png)
 **Image1**:- SharePoint configuration dialog
 
 Select "Reporting Services Integration" link. Following screen will be displayed.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_2.png)
+![Configuration-step2](reporting-services-and-sharepoint-configuration_2.png)
 **Image2**:- Specify Reporting Services integration credentials
 
 {{% /alert %}}
@@ -48,7 +48,7 @@ Security Overview for Reporting Services in SharePoint Integrated Mode**
 
 **This gives you an option of activating the Reporting Services on all Site collections, or you can choose which ones you want to activate it on. This just really means which sites will be able to use Reporting Services. When it is done, you should see the following results**
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_3.png)
+![Configuration-step3](reporting-services-and-sharepoint-configuration_3.png)
 
 **Image3:**- Successful integration of Reporting Services with SharePoint environment
 {{% /alert %}}
@@ -57,7 +57,7 @@ Security Overview for Reporting Services in SharePoint Integrated Mode**
 
 Going back to the ReportServer URL, we should see something similar to the following
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_4.png)
+![Configuration-step4](reporting-services-and-sharepoint-configuration_4.png)
 
 **Image4:**- Reporting Services is successfully connected with SharePoint environment
 
@@ -68,13 +68,13 @@ Going back to the ReportServer URL, we should see something similar to the follo
 
 Now that we have successfully integrated both products, we are ready to use Reporting Services in SharePoint 2010. As the previous version we have a feature (activated when we configure Reporting Services Integration) in the “Site Collection Feature”. Also the installation added 3 content types to add to our site. In Image 7 we can see 2 of them content types added in a document library to create a custom report us ing the, as we can see in Image5 below.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_5.png)
+![Configuration-step5](reporting-services-and-sharepoint-configuration_5.png)
 
 **Image5:**- Report Builder
 
 The “Reporter Builder” is an ActiveX control so we need to download it over the server, as we can see in Image 6 below.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_6.png)
+![Configuration-step6](reporting-services-and-sharepoint-configuration_6.png)
 
 **Image6:**- Download and install Report Builder
 {{% /alert %}}
@@ -83,7 +83,7 @@ The “Reporter Builder” is an ActiveX control so we need to download it over 
 
 Once the download process is completed, load the “Report Builder” control. Now we are ready to design our first report, as shown in Image7 below.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_7.png)
+![Configuration-step7](reporting-services-and-sharepoint-configuration_7.png)
 
 **Image7:**- Report Builder – New Report generation wizard
 {{% /alert %}}
@@ -92,7 +92,7 @@ Once the download process is completed, load the “Report Builder” control. N
 
 After create our report we could save it in the document library created to put the reports in our SharePoint 2010. The other content type must be used to create shared connection as data source and save them in a document library in SharePoint. We can create a document library, add this content type and after we can have our connections available to change the data source of the reports.
 
-![todo:image_alt_text](reporting-services-and-sharepoint-configuration_8.png)
+![Configuration-step8](reporting-services-and-sharepoint-configuration_8.png)
 
 **Image8:**- Successful Integration of Aspose.PDF for Reporting Services with MS SharePoint
 {{% /alert %}}

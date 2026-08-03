@@ -16,6 +16,6 @@ Aspose.Blogs is the place to look for information about latest releases and abou
 
 There is plenty of activity in Aspose.Support Forums:
 
-![todo:image_alt_text](world-class-free-technical-support.png)
+![Free Technical Support](world-class-free-technical-support.png)
 
  

@@ -15,13 +15,16 @@ It is unavoidable that there is something wrong with the rendering or rendered r
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Parameter Name**: SavingXmlFormat  
-**Date Type**: Boolean  
-**Values supported**: True, False (default)  
 
-**Example**
-{{< highlight csharp >}}
+```txt
+Parameter Name: SavingXmlFormat
+Date Type: Boolean  
+Values supported**: True, False (default)
+```
 
+## Example
+
+```xml
 <Render>
 ...
 <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices">
@@ -30,7 +33,6 @@ It is unavoidable that there is something wrong with the rendering or rendered r
 </Configuration>
 </Extension>
 </Render>
-
-{{< /highlight >}}
+```
 
 {{% /alert %}}
