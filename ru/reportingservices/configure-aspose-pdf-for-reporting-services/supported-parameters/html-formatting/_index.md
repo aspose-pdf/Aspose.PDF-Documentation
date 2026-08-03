@@ -4,7 +4,7 @@ linktitle: HTML-форматирование
 type: docs
 weight: 20
 url: /reportingservices/html-formatting/
-description: Включите форматирование HTML в отчетах PDF с помощью Aspose.PDF для служб Reporting Services. Легко добавляйте стили и структуру.
+description: Включите форматирование HTML в отчетах PDF с помощью Aspose.PDF для Reporting Services. Легко добавляйте стили и структуру.
 lastmod: "2021-06-05"
 ---
 

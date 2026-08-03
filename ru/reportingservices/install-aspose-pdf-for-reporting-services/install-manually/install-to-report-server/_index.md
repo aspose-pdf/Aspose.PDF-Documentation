@@ -15,7 +15,7 @@ lastmod: "2021-06-05"
 
 На следующих шагах вам потребуется скопировать и изменить файлы в каталоге, в котором установлены службы отчетов Microsoft SQL Server. Сборка SSRS 2016 расположена в каталоге \Bin\SSRS2016 zip-пакета; сборка SSRS 2017 находится в каталоге \Bin\SSRS2017; сборка SSRS 2019 находится в каталоге \Bin\SSRS2019; сборка SSRS 2022 находится в каталоге \Bin\SSRS2022; Сборка Сервера отчетов Power BI находится в каталоге \Bin\PowerBI.
 
-**Шаг 1.** Найдите каталог установки сервера отчетов. Корневым каталогом Microsoft SQL Server обычно является C:\Program Files\Microsoft SQL Server. Дальнейший процесс немного отличается для служб Reporting Services 2016, Reporting Services 2017 и более поздних версий, а также сервера отчетов Power BI:
+**Шаг 1.** Найдите каталог установки сервера отчетов. Корневым каталогом Microsoft SQL Server обычно является C:\Program Files\Microsoft SQL Server. Дальнейший процесс немного отличается для Reporting Services 2016, Reporting Services 2017 и более поздних версий, а также сервера отчетов Power BI:
 
 - Сервер отчетов 2016 по умолчанию устанавливается в каталог C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer. Если вы используете экземпляры с собственным именем вместо экземпляра по умолчанию, путь по умолчанию будет C:\Program Files\Microsoft SQL Server\MSRS13.[SSRSInstanceName]\Reporting Services\ReportServer.
 - Сервер отчетов 2017 и более поздних версий по умолчанию устанавливается в каталог C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer.
@@ -65,7 +65,7 @@ Name="Aspose.Pdf_for_Reporting_Services" Description="This code group grants ful
 </CodeGroup>
 ```
 
-**Шаг 5.** Убедитесь, что Aspose.PDF for Reporting Services успешно установлен. Откройте веб-портал служб Reporting Services и проверьте список доступных форматов экспорта отчета. Вы можете запустить веб-портал, запустив веб-браузер и введя URL-адрес веб-портала служб Reporting Services в адресной строке (по умолчанию это http://@@KEEP_0@@/reports/).). Выберите один из отчетов, доступных на вашем веб-портале, и откройте раскрывающийся список «Экспорт». Вы должны увидеть список форматов экспорта, включая те, которые предоставляются расширением Aspose.PDF для служб Reporting Services. Выберите PDF через элемент Aspose.PDF.
+**Шаг 5.** Убедитесь, что Aspose.PDF for Reporting Services успешно установлен. Откройте веб-портал служб Reporting Services и проверьте список доступных форматов экспорта отчета. Вы можете запустить веб-портал, открыв веб-браузер и введя URL-адрес веб-портала служб Reporting Services в адресной строке (по умолчанию это `http://<Reporting_Services_server_name>/reports/`). Выберите один из отчетов, доступных на вашем веб-портале, и откройте раскрывающийся список «Экспорт». Вы должны увидеть список форматов экспорта, включая те, которые предоставляются расширением Aspose.PDF для служб Reporting Services. Выберите PDF через элемент Aspose.PDF.
 
 ![Install to report server](install-to-report-server_1.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Table of Contents List of Tables or Figures
+title: Оглавление Список таблиц и рисунков
 linktitle: Оглавление Список таблиц и рисунков
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ lastmod: "2021-06-05"
 
 {{% /alert %}}
 
-Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
+Убедитесь, что файл Aspose.Pdf.ListSectionStyle.xml существует в каталоге ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin и поместите внутрь следующую разметку.
 
 ## Оглавление
 

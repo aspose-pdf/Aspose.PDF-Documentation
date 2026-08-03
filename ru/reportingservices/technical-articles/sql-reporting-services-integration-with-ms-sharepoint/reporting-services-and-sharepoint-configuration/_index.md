@@ -17,12 +17,12 @@ lastmod: "2021-06-05"
 
 Мы хотим перейти на веб-сайт Центрального администратора, а затем в Общие настройки приложения. Внизу мы увидим службы Reporting Services.
 
-![Конфигурация-шаг 1](reporting-services-and-sharepoint-configuration_1.png)
+![Configuration-step1](reporting-services-and-sharepoint-configuration_1.png)
 **Изображение1**: — Диалоговое окно настройки SharePoint.
 
 Выберите ссылку «Интеграция служб Reporting Services». Появится следующий экран.
 
-![Конфигурация-шаг 2](reporting-services-and-sharepoint-configuration_2.png)
+![Configuration-step2](reporting-services-and-sharepoint-configuration_2.png)
 **Image2**: — укажите учетные данные интеграции служб Reporting Services.
 
 {{% /alert %}}
@@ -48,7 +48,7 @@ lastmod: "2021-06-05"
 
 **Это дает вам возможность активировать службы Reporting Services во всех семействах веб-сайтов или выбрать, для каких из них вы хотите их активировать. На самом деле это просто означает, какие сайты смогут использовать службы Reporting Services. Когда это будет сделано, вы должны увидеть следующие результаты**
 
-![Конфигурация-шаг 3](reporting-services-and-sharepoint-configuration_3.png)
+![Configuration-step3](reporting-services-and-sharepoint-configuration_3.png)
 
 **Изображение3:** – Успешная интеграция служб Reporting Services со средой SharePoint.
 {{% /alert %}}
@@ -57,7 +57,7 @@ lastmod: "2021-06-05"
 
 Возвращаясь к URL-адресу ReportServer, мы должны увидеть что-то похожее на следующее:
 
-![Конфигурация-шаг 4](reporting-services-and-sharepoint-configuration_4.png)
+![Configuration-step4](reporting-services-and-sharepoint-configuration_4.png)
 
 **Изображение4:**- Службы Reporting Services успешно подключены к среде SharePoint.
 
@@ -68,13 +68,13 @@ lastmod: "2021-06-05"
 
 Теперь, когда мы успешно интегрировали оба продукта, мы готовы использовать службы Reporting Services в SharePoint 2010. Как и в предыдущей версии, у нас есть функция (активируемая при настройке интеграции служб Reporting Services) в «Функции семейства веб-сайтов». Также при установке на наш сайт были добавлены 3 типа контента. На изображении 7 мы видим, что два из них типов контента добавлены в библиотеку документов для создания пользовательского отчета с использованием, как мы видим на изображении 5 ниже.
 
-![Конфигурация-шаг 5](reporting-services-and-sharepoint-configuration_5.png)
+![Configuration-step5](reporting-services-and-sharepoint-configuration_5.png)
 
 **Изображение5:** – Конструктор отчетов
 
 «Reporter Builder» — это элемент управления ActiveX, поэтому нам необходимо загрузить его с сервера, как мы видим на рисунке 6 ниже.
 
-![Конфигурация-шаг 6](reporting-services-and-sharepoint-configuration_6.png)
+![Configuration-step6](reporting-services-and-sharepoint-configuration_6.png)
 
 **Изображение6:** – Загрузите и установите построитель отчетов.
 {{% /alert %}}
@@ -83,7 +83,7 @@ lastmod: "2021-06-05"
 
 После завершения процесса загрузки загрузите элемент управления «Построитель отчетов». Теперь мы готовы разработать наш первый отчет, как показано на изображении 7 ниже.
 
-![Конфигурация-шаг7](reporting-services-and-sharepoint-configuration_7.png)
+![Configuration-step7](reporting-services-and-sharepoint-configuration_7.png)
 
 **Изображение7:**- Построитель отчетов – мастер создания новых отчетов.
 {{% /alert %}}
@@ -92,7 +92,7 @@ lastmod: "2021-06-05"
 
 После создания нашего отчета мы можем сохранить его в библиотеке документов, созданной для размещения отчетов в нашем SharePoint 2010. Другой тип контента должен использоваться для создания общего соединения в качестве источника данных и сохранения их в библиотеке документов в SharePoint. Мы можем создать библиотеку документов, добавить этот тип контента и после того, как мы сможем иметь доступ к нашим соединениям, изменить источник данных отчетов.
 
-![Конфигурация-шаг 8](reporting-services-and-sharepoint-configuration_8.png)
+![Configuration-step8](reporting-services-and-sharepoint-configuration_8.png)
 
 **Изображение8:** – Успешная интеграция Aspose.PDF для служб отчетов с MS SharePoint.
 {{% /alert %}}
