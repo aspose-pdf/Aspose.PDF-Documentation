@@ -3,63 +3,70 @@ title: 보안 설정
 linktitle: 보안 설정
 type: docs
 weight: 30
-url: /ko/reportingservices/security-setting/
-lastmod: "2026-07-29"
+url: /reportingservices/security-setting/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-보안은 네트워크 보호이든 PDF 문서 보호이든 모든 분야에서 언제나 가장 중요한 문제였습니다. 문서는 다양한 이유로 보안이 적용됩니다: 문서 작성자가 문서 내용을 안전하게 보관하고 싶으며 다른 사람이 변경하도록 허용하고 싶지 않을 수 있습니다, 등.
+네트워크 보호, PDF 문서 보호 등 모든 분야에서 보안은 항상 가장 중요한 문제였습니다. 문서는 여러 가지 이유로 안전하게 만들어집니다. 문서 작성자는 문서의 내용을 안전하게 유지하고 다른 사람이 이를 변경하는 것을 허용하지 않기를 원할 수 있습니다.
 
-Aspose.PDF for Reporting Services는 이러한 보안 측면을 충분히 고려하여 개발자가 PDF 문서를 보호하는 데 유용한 기능을 제공합니다. 따라서 다양한 보안 조치를 PDF 문서에 적용할 수 있는 여러 매개변수를 포함하고 있습니다.
+Reporting Services용 Aspose.PDF는 개발자에게 PDF 문서를 보호하는 데 유용할 수 있는 이러한 기능을 제공함으로써 이러한 보안 측면에 많은 관심을 기울였습니다. 따라서 여기에는 개발자가 PDF 문서에 다양한 보안 조치를 적용할 수 있는 다양한 매개변수가 포함되어 있습니다.
 
-이러한 조치 중 하나는 암호화 시 PDF 문서를 비밀번호로 보호하는 것입니다. 또한 내용 수정, 콘텐츠 복사, 문서 인쇄를 제한하거나 허용하거나 양식 입력을 허용/비활성화할 수 있습니다. 이러한 기능은 현재 기본 SQL Reporting Services PDF Exporter에서는 지원되지 않지만 Aspose.PDF for Reporting Services를 사용하면 구현할 수 있습니다. 보고서 또는 보고서 서버 구성 파일에 해당 보안 매개변수를 추가하기만 하면 제한된 권한으로 보안된 PDF 문서를 생성할 수 있습니다.
+이러한 조치 중 하나는 암호화 중에 PDF 문서를 암호로 보호하는 것입니다. 또한 콘텐츠 수정, 콘텐츠 복사, 문서 인쇄를 제한하거나 허용하거나 양식 작성을 허용/비활성화할 수 있습니다. 이러한 기능은 현재 기본 SQL Reporting Services PDF 내보내기에서 지원되지 않지만 Reporting Services용 Aspose.PDF를 사용하여 이러한 기능을 구현할 수 있습니다. 해당 보안 매개변수를 보고서 또는 보고서 서버 구성 파일에 추가하기만 하면 제한된 권한으로 안전한 PDF 문서를 만들 수 있습니다.
 
-현재 Aspose.PDF for Reporting Services 렌더러는 다음 보안 속성을 지원합니다:
+현재 Reporting Services 렌더러용 Aspose.PDF는 다음 보안 속성을 지원합니다.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+Parameter Name: User Password  
+Date Type: String  
+Values supported: Any plain text
+```
 
-**매개변수 이름**: 사용자 비밀번호  
-**데이터 유형**: 문자열  
-**지원되는 값**: 모든 일반 텍스트
+```text
+Parameter Name: Master Password  
+Date Type: String  
+Values supported: Any plain text 
+```
 
-**매개변수 이름**: 마스터 비밀번호  
-**데이터 유형**: 문자열  
-**지원되는 값**: 모든 일반 텍스트 
+```text
+Parameter Name: IsCopyingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default) 
+```
 
-**매개변수 이름**: IsCopyingAllowed  
-**데이터 유형**: Boolean  
-**지원되는 값**: True, False (기본값)  
+```text
+Parameter Name: IsPrintingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**매개변수 이름**: IsPrintingAllowed  
-**데이터 유형**: Boolean  
-**지원되는 값**: True, False (기본값)  
+```text
+Parameter Name: IsContentsModifyingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default) 
+```
 
-**매개변수 이름**: IsContentsModifyingAllowed  
-**데이터 유형**: Boolean  
-**지원되는 값**: True, False (기본값)  
+```text
+Parameter Name: IsFormFillingAllowed  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**매개변수 이름**: IsFormFillingAllowed  
-**데이터 유형**: Boolean  
-**지원되는 값**: True, False (기본값)  
+## 예
 
-**예시**
-
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
     <UserPassword>aspose</UserPassword>
-    <IsCopyingAllowed>거짓</IsCopyingAllowed>
-    <IsPrintingAllowed>거짓</IsPrintingAllowed>
+    <IsCopyingAllowed>False</IsCopyingAllowed>
+    <IsPrintingAllowed>False</IsPrintingAllowed>
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
-
-{{% /alert %}}

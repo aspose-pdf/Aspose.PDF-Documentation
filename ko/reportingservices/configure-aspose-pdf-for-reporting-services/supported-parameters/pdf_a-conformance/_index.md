@@ -3,29 +3,28 @@ title: PDF_A 적합성
 linktitle: PDF_A 적합성
 type: docs
 weight: 100
-url: /ko/reportingservices/pdf_a-conformance/
-description: Aspose.PDF for Reporting Services에서 PDF/A 적합성을 활성화합니다. 아카이브 요구 사항을 충족하는 문서를 손쉽게 생성합니다.
-lastmod: "2026-07-29"
+url: /reportingservices/pdf_a-conformance/
+description: Reporting Services에 대해 Aspose.PDF에서 PDF/A 규격을 활성화합니다. 보관 규정을 준수하는 문서를 손쉽게 생성하세요.
+lastmod: "2025-05-22"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF 문서에서 PDF/A(아카이브 가능한 PDF) 적합성에 대한 소개를 확인할 수 있습니다.
+Aspose.PDF 문서에서 PDF/A(보관 가능 PDF) 적합성에 대한 소개를 얻을 수 있습니다.
 
-PDF/A 문서를 만들고 싶다면, 다음 보고서 매개변수를 추가하십시오.
+PDF/A 문서를 생성하려면 다음 보고서 매개변수를 추가하세요.
 
 {{% /alert %}}
 
+```text
+Parameter Name: PdfConformance  
+Date Type: String  
+Values supported: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
+```
 
-{{% alert color="primary" %}}
+## 예
 
-**매개변수 이름**: PdfConformance  
-**데이터 유형**: 문자열  
-**지원되는 값**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
-
-**예시**
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -34,6 +33,4 @@ PDF/A 문서를 만들고 싶다면, 다음 보고서 매개변수를 추가하�
     </Configuration>
     </Extension>
 </Render>
-{{< /highlight >}}
-
-{{% /alert %}}
+```

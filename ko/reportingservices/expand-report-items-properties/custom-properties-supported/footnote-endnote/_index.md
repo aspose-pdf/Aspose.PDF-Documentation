@@ -3,31 +3,32 @@ title: 각주 미주
 linktitle: 각주 미주
 type: docs
 weight: 30
-url: /ko/reportingservices/footnote-endnote/
-description: Aspose.PDF for Reporting Services를 사용하여 PDF 보고서에 각주 및 미주를 추가하십시오. 자세한 문서 참조를 제공하십시오.
-lastmod: "2026-07-29"
+url: /reportingservices/footnote-endnote/
+description: Reporting Services용 Aspose.PDF를 사용하여 PDF 보고서에 각주와 미주를 추가하세요. 자세한 문서 참조를 제공하십시오.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Builder에서는 텍스트 상자에 각주 또는 미주를 설정할 수 없습니다. Aspose.PDF for Reporting Services를 사용하면 사용자 지정 속성을 추가하여 쉽게 수행할 수 있습니다.
+보고서 작성기는 텍스트 상자의 각주나 미주를 설정할 수 없습니다. Reporting Services용 Aspose.PDF를 사용하면 사용자 지정 속성을 추가하여 쉽게 수행할 수 있습니다.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-각주
-**맞춤 속성** **이름**: 각주
-**맞춤 속성 값**: *그*\u00A0*값* *은*\u00A0*이어야*\u00A0*하나의*\u00A0*문자열*
+```text
+Footnote
+Custom Property `Name`: Footnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-미주
-**맞춤 속성** **이름**: 미주
-**맞춤 속성 값**: *그*\u00A0*값* *은*\u00A0*이어야* *하나의*\u00A0*문자열*
+```text
+Endnote
+Custom Property `Name`: Endnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
-{{% alert color="primary" %}}
-다음 예제에서는 보고서에 값이 'AsposePdf4RS'인 텍스트 상자가 포함되어 있으며, 여기서 텍스트 "An optional PDF renderer for SSRS from Aspose Pty. Ltd."를 각주의 형태로 보조 설명을 추가하고자 합니다.
-{{% /alert %}}
+다음 예에서 보고서에는 `AsposePdf4RS` 값이 있는 텍스트 상자가 포함되어 있으며 "Aspose Pty. Ltd.의 SSRS용 선택적 PDF 렌더러"라는 텍스트가 있는 각주 형식의 보충 설명을 추가하려고 합니다.
 
-**예제**
+## 예
 
 ```cs
 <Textbox Name="Textbox1">
@@ -53,4 +54,3 @@ Report Builder에서는 텍스트 상자에 각주 또는 미주를 설정할 �
 </Paragraphs>
 </Textbox>
 ```
-{{% /alert %}}

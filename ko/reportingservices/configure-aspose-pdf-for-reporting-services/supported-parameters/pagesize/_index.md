@@ -3,27 +3,26 @@ title: 페이지 크기
 linktitle: 페이지 크기
 type: docs
 weight: 60
-url: /ko/reportingservices/pagesize/
-description: Aspose.PDF for Reporting Services에서 PDF 보고서의 페이지 크기를 사용자 지정하여 특정 문서 요구 사항을 충족합니다.
-lastmod: "2026-07-29"
+url: /reportingservices/pagesize/
+description: 특정 문서 요구 사항을 충족하려면 Reporting Services용 Aspose.PDF에서 PDF 보고서의 페이지 크기를 사용자 지정하세요.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Reporting Services 보고서 디자이너는 A4, B5, Letter 등 일반적인 페이지 크기를 지원하지 않습니다. Aspose.PDF for Reporting Services를 사용하면 다음 예시와 같이 사용할 수 있습니다.
+Reporting Services 보고서 디자이너는 A4, B5, Letter 등과 같은 일반적인 페이지 크기를 지원하지 않습니다. Reporting Services용 Aspose.PDF를 사용하면 다음 예와 같이 얻을 수 있습니다.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+Parameter Name: PageSize  
+Date Type: String  
+Values supported: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+```
 
-**매개변수 이름**: PageSize  
-**날짜 형식**: 문자열  
-**지원되는 값**: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+## 예
 
-**예시**
-
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -32,7 +31,4 @@ Reporting Services 보고서 디자이너는 A4, B5, Letter 등 일반적인 페
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
+```
