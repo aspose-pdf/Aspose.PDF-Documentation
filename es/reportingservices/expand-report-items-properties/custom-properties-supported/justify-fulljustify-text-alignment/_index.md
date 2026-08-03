@@ -1,29 +1,30 @@
 ---
-title: Alineación de Texto Justificar y Justificar Completo
-linktitle: Alineación de Texto Justificar y Justificar Completo
+title: Justificar alineación completa del texto
+linktitle: Justificar alineación completa del texto
 type: docs
 weight: 40
-url: /es/reportingservices/justify-fulljustify-text-alignment/
-description: Logre una alineación de texto perfecta en los informes PDF con Aspose.PDF for Reporting Services. Compatibilidad con las opciones de justificar y justificar completo.
-lastmod: "2026-06-19"
+url: /reportingservices/justify-fulljustify-text-alignment/
+description: Logre una alineación perfecta del texto en informes PDF con Aspose.PDF para Reporting Services. Soporte para opciones de justificación y justificación completa.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report builder no admite la capacidad de especificar la alineación de texto para el cuadro de texto “Justify” y “FullJustify”. Con Aspose.Pdf for Reporting Services, puede hacerlo fácilmente añadiendo propiedades personalizadas.
+El generador de informes no admite la capacidad de especificar la alineación del texto para el cuadro de texto `Justify` y `FullJustify`. Con Aspose.PDF para Reporting Services, puede hacerlo fácilmente agregando propiedades personalizadas.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Nombre de Propiedad Personalizada** : TextAlignment  
-**Tipo de Propiedad Personalizada** : String  
-**Valores de Propiedad Personalizada** : Justify, FullJustify  
+```text
+Custom Property `Name`: TextAlignment  
+Custom Property `Type`: String  
+Custom Property `Values`: Justify, FullJustify  
+```
 
-En el informe, el código debería ser como el siguiente:
+En el informe el código debería ser como el siguiente:
 
-**Ejemplo**
+## Ejemplo
 
-{{< highlight csharp >}}
+```xml
 <Textbox Name="textbox1">
 <value> AsposePdf4RS </value>     
   <CustomProperties>
@@ -33,7 +34,4 @@ En el informe, el código debería ser como el siguiente:
    </CustomProperty>
   </CustomProperties>
 </Textbox>
-{{< /highlight >}}
-{{% /alert %}}
-
-
+```

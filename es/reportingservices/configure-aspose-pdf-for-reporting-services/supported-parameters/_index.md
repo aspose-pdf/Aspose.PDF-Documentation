@@ -3,27 +3,23 @@ title: Parámetros admitidos
 linktitle: Parámetros admitidos
 type: docs
 weight: 20
-url: /es/reportingservices/supported-parameters/
-description: Explore los parámetros admitidos en Aspose.PDF for Reporting Services para controlar y personalizar la generación de PDF con facilidad.
-lastmod: "2026-06-19"
+url: /reportingservices/supported-parameters/
+description: Explore los parámetros admitidos en Aspose.PDF para Reporting Services para controlar y personalizar la representación de su PDF con facilidad.
+lastmod: "2021-06-05"
 ---
 
-Un informe parametrizado es un informe que acepta valores de entrada utilizados en el procesamiento del informe. Con un informe parametrizado, puedes variar la salida de un informe en función de los valores que se establecen cuando se ejecuta el informe. Aspose.Pdf for Reporting Services admite dos tipos de parámetros: parámetros del servidor de informes y parámetros del informe. Los parámetros del servidor de informes se utilizan para todos los informes en el servidor de informes. Si deseas que algunos parámetros sean adecuados para informes específicos, debes usar los parámetros del informe.
+Un informe parametrizado es un informe que acepta valores de entrada utilizados en el procesamiento de informes. Con un informe parametrizado, puede variar la salida de un informe en función de los valores que se establecen cuando se ejecuta el informe. Aspose.PDF para Reporting Services admite dos tipos de parámetros: parámetros del servidor de informes y parámetros del informe. Los parámetros del servidor de informes se utilizan para todos los informes del servidor de informes. Si desea que algunos parámetros sean adecuados para informes específicos, debe utilizar parámetros de informe.
 
-Actualmente, el renderizador Aspose.Pdf admite una amplia gama de parámetros, como:
+Actualmente, el renderizador Aspose.Pdf admite una amplia gama de parámetros, como por ejemplo:
 
 **Esta sección incluye los siguientes temas:**
 
-- [Orientación de página](/pdf/es/reportingservices/page-orientation/)
-- [Formato HTML](/pdf/es/reportingservices/html-formatting/)
-- [Configuración de seguridad](/pdf/es/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/es/reportingservices/isfontembedded/)
-- [Tamaño de página](/pdf/es/reportingservices/pagesize/)
-- [Tamaño del margen de página](/pdf/es/reportingservices/page-margin-size/)
-- [Metadatos XMP](/pdf/es/reportingservices/xmp-metadata/)
-- [Información de depuración](/pdf/es/reportingservices/debug-information/)
-- [Conformidad PDF_A](/pdf/es/reportingservices/pdf_a-conformance/)
-
-
-
-
+- [Orientación de la página](/pdf/reportingservices/page-orientation/)
+- [Formato HTML](/pdf/reportingservices/html-formatting/)
+- [Configuración de seguridad](/pdf/reportingservices/security-setting/)
+- [Está incrustado](/pdf/reportingservices/isfontembedded/)
+- [Tamaño de página](/pdf/reportingservices/pagesize/)
+- [Tamaño del margen de página](/pdf/reportingservices/page-margin-size/)
+- [XMP Metadata](/pdf/reportingservices/xmp-metadata/)
+- [Información de depuración](/pdf/reportingservices/debug-information/)
+- [Conformidad PDF_A](/pdf/reportingservices/pdf_a-conformance/)

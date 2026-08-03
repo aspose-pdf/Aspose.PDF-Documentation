@@ -1,29 +1,28 @@
 ---
-title: TamañoDePágina
-linktitle: TamañoDePágina
+title: Tamaño de página
+linktitle: Tamaño de página
 type: docs
 weight: 60
-url: /es/reportingservices/pagesize/
-description: Personaliza los tamaños de página para los informes PDF en Aspose.PDF for Reporting Services para cumplir con requisitos específicos de documentos.
-lastmod: "2026-06-19"
+url: /reportingservices/pagesize/
+description: Personalice los tamaños de página para informes PDF en Aspose.PDF para Reporting Services para cumplir con requisitos de documentos específicos.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-El diseñador de informes de Reporting Services no admite tamaños de página comunes como A4, B5, Letter, etc. Con Aspose.Pdf for Reporting Services, puedes lograrlo como en el siguiente ejemplo.
+El diseñador de informes de Reporting Services no admite tamaños de página comunes, como A4, B5, Carta, etc. Con Aspose.PDF para Reporting Services, puede obtenerlo como en el siguiente ejemplo.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
+```text
+Parameter Name: PageSize  
+Date Type: String  
+Values supported: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+```
 
-**Nombre del parámetro**: PageSize  
-**Date Type**: Cadena  
-**Valores admitidos**: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+## Ejemplo
 
-**Ejemplo**
-
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -32,9 +31,4 @@ El diseñador de informes de Reporting Services no admite tamaños de página co
     </Configuration>
     </Extension>
 </Render>
-
-{{< /highlight >}}
-
-{{% /alert %}}
-
-
+```

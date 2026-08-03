@@ -1,31 +1,29 @@
 ---
-title: Formatos de archivo compatibles
-linktitle: Formatos de archivo compatibles
+title: Formatos de archivo admitidos
+linktitle: Formatos de archivo admitidos
 type: docs
 weight: 20
-url: /es/reportingservices/supported-file-formats/
-description: Consulte los formatos de archivo compatibles de Aspose.PDF for Reporting Services. Renderice sus informes SSRS a PDF, DOC, XLS y más con facilidad.
-lastmod: "2026-06-19"
+url: /reportingservices/supported-file-formats/
+description: Consulte los formatos de archivo compatibles de Aspose.PDF para Reporting Services. Represente sus informes SSRS a PDF, DOC, XLS y más con facilidad.
+lastmod: "2021-06-05"
 ---
 
-## Formatos de carga compatibles
+## Formatos de carga admitidos
 
-La tabla siguiente indica los formatos de archivo que Aspose.PDF for Reporting Services puede cargar.
+La siguiente tabla indica los formatos de archivo que puede cargar Aspose.PDF para Reporting Services.
 
 |**Formato**|**Descripción**|
 | :- | :- |
-|RDL|Lenguaje de Definición de Informes|
-|[HTML](https://docs.fileformat.com/web/html/)|Lenguaje de Marcado de Hipertexto|
+|RDL|Lenguaje de definición de informe|
+|[HTML](https://docs.fileformat.com/web/html/)|Lenguaje de marcado de hipertexto|
 
-## Formatos de Guardado Compatibles
+## Formatos de guardado admitidos
 
-La tabla siguiente indica los formatos de archivo en los que el documento puede guardarse utilizando Aspose.PDF for Reporting Services. 
+La siguiente tabla indica los formatos de archivo en los que se puede guardar el documento utilizando Aspose.PDF para Reporting Services.
 
 |**Formato**|**Descripción**|
 | :- | :- |
 |[PDF](https://docs.fileformat.com/pdf/)|Guarda el documento en formato PDF|
 |PDF/A |Guarda el documento en formato PDF/A|
-|[XPS](https://docs.fileformat.com/page-description-language/xps/)|Guarda el documento en formato XML Paper Specification|
-|EPUB|Guarda el documento en formato de libro electrónico|
-
-
+|[XPS](https://docs.fileformat.com/page-description-language/xps/)|Guarda el documento en formato XML Paper Especificación|
+|EPUB|Guarda el documento en formato de archivo de libro electrónico|

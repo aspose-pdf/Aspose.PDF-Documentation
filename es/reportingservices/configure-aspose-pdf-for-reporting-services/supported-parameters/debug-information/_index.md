@@ -3,25 +3,28 @@ title: Información de depuración
 linktitle: Información de depuración
 type: docs
 weight: 90
-url: /es/reportingservices/debug-information/
-description: Acceda y analice la información de depuración para la renderización de PDF en Aspose.PDF for Reporting Services para solucionar problemas de manera eficaz.
-lastmod: "2026-06-19"
+url: /reportingservices/debug-information/
+description: Acceda y analice información de depuración para la representación de PDF en Aspose.PDF para Reporting Services para solucionar problemas de manera efectiva.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Es inevitable que haya algo incorrecto en la renderización o el resultado renderizado. Por razones como la confidencialidad o la privacidad, no podemos obtener la fuente de datos utilizada en el informe del usuario, por lo que no podemos reproducir el error en el informe. Para facilitar y agilizar la comunicación entre clientes y desarrolladores, añadimos este parámetro. Si encuentra problemas al renderizar su informe con Aspose.PDF for Reporting Services, establezca este parámetro del informe; así obtendrá el documento renderizado en formato XML. Después, por favor publique el archivo XML para nosotros en el foro del producto.
+Es inevitable que haya algún problema con la renderización o el resultado renderizado. Por algunas razones, como el secreto o la privacidad, no pudimos obtener la fuente de datos utilizada en el informe del usuario, por lo que no pudimos reproducir el error en el informe. Para que la comunicación entre clientes y desarrolladores sea más fácil y fluida, agregamos este parámetro. Si tiene problemas al renderizar su informe con Aspose.PDF para Reporting Services, configure este parámetro de informe y obtendrá el documento renderizado con el formato XML. Después de eso, publique el archivo XML en el foro del producto.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Nombre del parámetro**: SavingXmlFormat  
-**Tipo de fecha**: Booleano  
-**Valores admitidos**: Verdadero, Falso (predeterminado)  
 
-**Ejemplo**
-{{< highlight csharp >}}
+```txt
+Parameter Name: SavingXmlFormat
+Date Type: Boolean  
+Values supported**: True, False (default)
+```
 
+## Ejemplo
+
+```xml
 <Render>
 ...
 <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices">
@@ -30,9 +33,6 @@ Es inevitable que haya algo incorrecto en la renderización o el resultado rende
 </Configuration>
 </Extension>
 </Render>
-
-{{< /highlight >}}
+```
 
 {{% /alert %}}
-
-

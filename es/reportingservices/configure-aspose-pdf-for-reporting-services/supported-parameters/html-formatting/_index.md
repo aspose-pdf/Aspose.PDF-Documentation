@@ -3,37 +3,38 @@ title: Formato HTML
 linktitle: Formato HTML
 type: docs
 weight: 20
-url: /es/reportingservices/html-formatting/
-description: Habilite el formato HTML en los informes PDF usando Aspose.PDF for Reporting Services. Agregue estilos y estructura con facilidad.
-lastmod: "2026-06-19"
+url: /reportingservices/html-formatting/
+description: Habilite el formato HTML en informes PDF usando Aspose.PDF para Reporting Services. Agregue estilos y estructura con facilidad.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-A veces puede desear exportar texto en los cuadros de texto con formato. Desafortunadamente, Reporting Services no admite esto. Sin embargo, aún puede implementarlo usando Aspose.PDF for Reporting Services. Simplemente habilite un modo especial en el que todo el texto en los cuadros de texto se trate como HTML y coloque las etiquetas HTML necesarias para formatear el texto en el documento de salida. Por ejemplo, para tener texto normal, en negrita y en cursiva en el mismo cuadro de texto, ingrese el siguiente valor del cuadro de texto:
+A veces es posible que desees exportar texto en cuadros de texto con formato. Lamentablemente, Reporting Services no admite esto. Sin embargo, aún puede implementarlo utilizando Aspose.PDF para Reporting Services. Simplemente habilite un modo especial en el que todo el texto en los cuadros de texto se trata como HTML y coloque las etiquetas HTML necesarias para formatear el texto en el documento de salida. Por ejemplo, para tener texto normal, negrita y cursiva en el mismo cuadro de texto, ingrese el siguiente valor de cuadro de texto:
 
-Parte de este texto es ```<b>bold</b>``` y otro texto es ```<i>italic</i>```.
+Parte de este texto es `<b>bold</b>` y otro texto es `<i>italic</i>`.
 
-Al exportarse, el texto aparecerá con parte de este texto en **bold** y otro texto en *italic*.
+When exported, the text will look like as some of this text is **bold** and other text is *italic*.
 
-Tenga en cuenta que este enfoque tiene algunas limitaciones
+Tenga en cuenta que este enfoque tiene algunas limitaciones.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-- El formato no es visible en tiempo de diseño (en Report Builder, el portal web de Reporting Services, etc.). En su lugar, verá el texto HTML en forma de texto plano con etiquetas.
-- La extensión de renderizado Aspose.PDF para Reporting Services reconoce y formatea correctamente el código HTML en los cuadros de texto. El renderizador PDF predeterminado de Reporting Services exportará este marcado como texto plano.
+- El formato no es visible en tiempo de diseño (en el Generador de informes, el portal web de Reporting Services, etc.). En su lugar, verá el texto HTML en forma de texto sin formato con etiquetas.
+- La extensión de representación Aspose.PDF para Reporting Services reconoce y formatea correctamente el código HTML en los cuadros de texto. El procesador de PDF predeterminado de Reporting Services exportará este marcado como texto sin formato.
 
-**Nombre del parámetro**: IsHtmlTagSupported  
-**Tipo de dato**: Boolean  
-**Valores compatibles**: True, False (predeterminado)   
+```text
+Parameter Name: IsHtmlTagSupported  
+Date Type: Boolean  
+Values supported: True, False (default)   
+```
 
-**Ejemplo**
+## Ejemplo
 
-{{< highlight csharp >}}
-
- <Render>
+```xml
+<Render>
 ...
     <Extension Name="APPDF" Type=" Aspose.PDF.ReportingServices.Renderer,Aspose.PDF.ReportingServices ">
     <Configuration>
@@ -41,14 +42,10 @@ Tenga en cuenta que este enfoque tiene algunas limitaciones
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
+Si desea agregar este parámetro en el Diseñador de informes, utilice el tipo de datos `Boolean`.
 
-Si desea agregar este parámetro en el Report Designer, use el tipo de datos 'Boolean'.
-
- 
-Actualmente Aspose.Pdf for Reporting Services admite un subconjunto de todas las etiquetas HTML. Puede encontrar más información en el Aspose.PDF [Documentación](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
+Actualmente, Aspose.Pdf para Reporting Services admite un subconjunto de todas las etiquetas HTML. Puede encontrar más información en Aspose.PDF [Documentación](https://docs.aspose.com/pdf/net/add-text-to-pdf-file/#add-html-string-using-dom).
 
 {{% /alert %}}
-
-

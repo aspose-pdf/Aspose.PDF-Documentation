@@ -1,102 +1,100 @@
 ---
-title: Configurando Reporting Services
-linktitle: Configurando Reporting Services
+title: Configurar servicios de informes
+linktitle: Configurar servicios de informes
 type: docs
 weight: 20
-url: /es/reportingservices/setting-up-reporting-services/
-lastmod: "2026-06-19"
+url: /reportingservices/setting-up-reporting-services/
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Nuestro primer destino en el servidor Reporting Services es el Administrador de Configuración de Reporting Services.
+Nuestra primera parada en el servidor de Reporting Services es el Administrador de configuración de Reporting Services.
 
 {{% /alert %}}
 
 ## Cuenta de servicio:
 
-**Asegúrese de comprender qué cuenta de servicio está utilizando para Reporting Services. Si encontramos problemas, pueden estar relacionados con la cuenta de servicio que está usando. El valor predeterminado es Network Service. Cuando vamos a desplegar nuevas compilaciones, siempre usamos cuentas de dominio, porque es allí donde probablemente surjan problemas. Para esta instancia del servidor, hemos utilizado una cuenta de dominio llamada RSService.**
+**Be sure to understand what service account you are using for Reporting Services. If we run into issues, it may be related to the service account you are using. The default is Network Service. When we go to deploy new builds, we always use Domain Accounts, because that is where we are likely to hit issues. For this instance of server, we have used a Domain Account called RSService.**
 
-![todo:image_alt_text](setting-up-reporting-services_1.png)
+![Set Up](setting-up-reporting-services_1.png)
 
-**Image1:- Configuración de la cuenta de servicio**
+**Imagen 1: Configuración de cuenta de servicio**
 
-## URL del Servicio Web:
+## URL del servicio web:
 
 {{% alert color="primary" %}}
 
-**Necesitaremos configurar la URL del Servicio Web. Este es el directorio virtual (vdir) de ReportServer que aloja los Servicios Web que usa Reporting Services, y con lo que SharePoint se comunicará. A menos que desees personalizar las propiedades del vdir (p. ej., SSL, puertos, encabezados de host, etc…) deberías poder simplemente hacer clic en Aplicar aquí y estar listo para usar.**
-![todo:image_alt_text](setting-up-reporting-services_2.png)
+**Necesitaremos configurar la URL del servicio web. Este es el directorio virtual de ReportServer (vdir) que aloja los servicios web que utiliza Reporting Services y con el que se comunicará SharePoint. A menos que desee personalizar las propiedades del vdir (es decir, SSL, puertos, encabezados de host, etc.), debería poder hacer clic en Aplicar aquí y estar listo para comenzar.**
+![Web Service URL](setting-up-reporting-services_2.png)
 
-**Image2:- Configuración de la URL del Servicio Web Una vez que la URL del Servicio Web esté configurada, deberías poder ver los siguientes resultados**
+**Imagen 2: Configuración de la URL del servicio web Una vez que se haya configurado la URL del servicio web, debería poder ver los siguientes resultados**
 
-![todo:image_alt_text](setting-up-reporting-services_3.png)
+![Web Service URL Results](setting-up-reporting-services_3.png)
 
-**Image3:- Configuración exitosa de la URL del Servicio Web**
+**Imagen 3: - Configuración exitosa de la URL del servicio web**
 {{% /alert %}}
 
 ## Base de datos:
 
-**Necesitamos crear la base de datos del catálogo de Reporting Services. Esto puede ubicarse en cualquier motor de base de datos SQL 2008 o SQL 2008 R2. SQL11 también funcionaría bien, pero todavía está en BETA. Esta acción creará dos bases de datos, ReportServer y ReportServerTempDB, por defecto.**
+**Necesitamos crear la base de datos del catálogo de Reporting Services. Esto se puede colocar en cualquier motor de base de datos SQL 2008 o SQL 2008 R2. SQL11 también funcionaría bien, pero todavía está en BETA. Esta acción creará dos bases de datos, ReportServer y ReportServerTempDB, de forma predeterminada.**
 
 {{% alert color="primary" %}}
-**El otro paso importante con esto es asegurarse de que elija SharePoint Integrated para el tipo de base de datos. Una vez que se ha hecho esta elección, no se puede cambiar.**
+**El otro paso importante es asegurarse de elegir SharePoint integrado para el tipo de base de datos. Una vez realizada esta elección, no se puede cambiar.**
 
-![todo:image_alt_text](setting-up-reporting-services_4.png)
+![Creating Report Server Database](setting-up-reporting-services_4.png)
 
-**Image4:- Creando base de datos del servidor de informes**
+**Imagen 4: Creación de la base de datos del servidor de informes**
 
-![todo:image_alt_text](setting-up-reporting-services_5.png)
+![Setting up Database Server and Authentication Type](setting-up-reporting-services_5.png)
 
-**Image5:- Configuración del servidor de bases de datos y tipo de autenticación**
+**Imagen 5: Configuración del servidor de base de datos y tipo de autenticación**
 
-![todo:image_alt_text](setting-up-reporting-services_6.png)
+![Setting up Database Name and Mode](setting-up-reporting-services_6.png)
 
-**Image6:- Configuración del nombre de la base de datos y modo**
+**Imagen 6: Configuración del nombre y modo de la base de datos**
 {{% /alert %}}
 
-**Para las credenciales, así es como el Report Server se comunicará con el SQL Server. La cuenta que seleccione recibirá ciertos derechos dentro de la base de datos Catalog así como en algunas de las bases de datos del sistema a través del RSExecRole. MSDB es una de estas bases de datos para el uso de suscripciones ya que utilizamos SQL Agent.**
+**Para las credenciales, así es como el servidor de informes se comunicará con el servidor SQL. Cualquiera que sea la cuenta que seleccione, se le otorgarán ciertos derechos dentro de la base de datos del catálogo, así como algunas de las bases de datos del sistema a través de RSExecRole. MSDB es una de estas bases de datos para uso de suscripción, ya que utilizamos el Agente SQL.**
 
-![todo:image_alt_text](setting-up-reporting-services_7.png)
+![Setting up Report Server database credentials](setting-up-reporting-services_7.png)
 
-**Image7:- Configuración de las credenciales de la base de datos del Report Server**
+**Imagen 7: Configuración de las credenciales de la base de datos del servidor de informes**
 
 {{% alert color="primary" %}}
 
-**Una vez que se especifican las credenciales de la base de datos, deberíamos poder obtener los resultados como se indica a continuación.**
+**Una vez especificadas las credenciales de la base de datos, deberíamos poder obtener los resultados como se especifica a continuación.**
 
-![todo:image_alt_text](setting-up-reporting-services_8.png)
+![Report Server database creation progress](setting-up-reporting-services_8.png)
 
-**Image8:- Progreso de creación de la base de datos del servidor de informes**
+**Imagen 8: Progreso de la creación de la base de datos del servidor de informes**
 
-![todo:image_alt_text](setting-up-reporting-services_9.png)
+![Report Server database completion summary](setting-up-reporting-services_9.png)
 
-**Image9:- Resumen de finalización de la base de datos del servidor de informes**
+**Imagen 9: Resumen de finalización de la base de datos del servidor de informes**
 {{% /alert %}}
 
-## URL del Administrador de Informes:
+## URL del administrador de informes:
 
-**Podemos omitir la URL de Report Manager ya que no se usa cuando estamos en modo integrado de SharePoint. SharePoint es nuestra interfaz frontal. Report Manager no funciona.**
+**Podemos omitir la URL del Administrador de informes, ya que no se usa cuando estamos en el modo integrado de SharePoint. SharePoint es nuestra interfaz. El Administrador de informes no funciona.**
 
 ## Claves de cifrado:
 
 {{% alert color="primary" %}}
-**Realice una copia de seguridad de sus claves de cifrado y asegúrese de saber dónde las guarda. Si se encuentra en una situación en la que necesita migrar la base de datos o restaurarla, las necesitará.**
+**Haga una copia de seguridad de sus claves de cifrado y asegúrese de saber dónde las guarda. Si se encuentra en una situación en la que necesita migrar la base de datos o restaurarla, los necesitará.**
 
-![todo:image_alt_text](setting-up-reporting-services_10.png)
+![Report Server Encryption key backup](setting-up-reporting-services_10.png)
 
-**Image10:- Copia de seguridad de la clave de cifrado del servidor de informes**
+**Imagen 10: - Copia de seguridad de la clave de cifrado del servidor de informes**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**¡Felicidades! Hemos configurado con éxito Reporting Services usando Configuration Manager. Si navegas a la URL en la pestaña Web Service URL, debería mostrar algo similar a lo siguiente.**
+**¡Felicitaciones! Hemos configurado correctamente Reporting Services mediante Configuration Manager. Si busca la URL en la pestaña URL del servicio web, debería mostrar algo similar a lo siguiente.**
 
-![todo:image_alt_text](setting-up-reporting-services_11.png)
+![Report Server access after installation](setting-up-reporting-services_11.png)
 
-**Image11:- Acceso al Report Server después de la instalación**
+**Imagen 11: Acceso al servidor de informes después de la instalación**
 
-**Razón del error: SharePoint está instalado en nuestro WFE y hemos terminado de configurar Reporting Services. En este ejemplo, Reporting Services y SharePoint están en máquinas diferentes. Si estuvieran en la misma máquina, no habrías visto este error. Técnicamente necesitamos instalar SharePoint en la caja RS. Eso significa que IIS también se habilitará.**
+**Motivo del error: SharePoint está instalado en nuestro WFE y terminamos de configurar Reporting Services. En este ejemplo, Reporting Services y SharePoint están en máquinas diferentes. Si estuvieran en la misma máquina, no habría visto este error. Técnicamente necesitamos instalar SharePoint en RS Box. Eso significa que IIS también estará habilitado.**
 {{% /alert %}}
-
-
 

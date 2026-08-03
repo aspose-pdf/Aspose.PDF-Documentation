@@ -1,25 +1,24 @@
 ---
-title: Tabla de contenido Lista de tablas o figuras
-linktitle: Tabla de contenido Lista de tablas o figuras
+title: Tabla de Contenidos Lista de Tablas o Figuras
+linktitle: Tabla de Contenidos Lista de Tablas o Figuras
 type: docs
 weight: 10
-url: /es/reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Aprenda cómo agregar una tabla de contenido, lista de tablas o figuras en informes PDF usando Aspose.Pdf for Reporting Services.
-lastmod: "2026-06-19"
+url: /reportingservices/table-of-contents-list-of-tables-or-figures/
+description: Aprenda a agregar una tabla de contenido, una lista de tablas o figuras en informes PDF usando Aspose.PDF para Reporting Services.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Report Designer no admite agregar tabla de contenido para documentos de informe. Con Aspose.Pdf for Reporting Services puedes indicar fácilmente al renderizador PDF que produzca documentos PDF con tabla de contenido, o lista de tablas o figuras. Puedes hacerlo en los siguientes pasos:
+Report Designer no admite la adición de tablas de contenido para documentos de informes. Con Aspose.PDF para Reporting Services, puede indicar fácilmente al renderizado de PDF que produzca documentos PDF con tabla de contenido o lista de tablas o figuras. Puedes hacerlo en los siguientes pasos:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Asegúrese de que el archivo Aspose.Pdf.ListSectionStyle.xml exista en ```<Instance>```/bin, dónde ```<Instance>``` es el directorio del Report Server. Si el archivo no existe, créalo en el ```<Instance>```directorio /bin y coloque el siguiente marcado dentro.
+Asegúrese de que el archivo Aspose.Pdf.ListSectionStyle.xml exista en el directorio ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin y coloque el siguiente marcado dentro.
 
-## Tabla de contenidos
+## Tabla de contenido
 
-**Ejemplo**
+### Ejemplo
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -41,9 +40,9 @@ Asegúrese de que el archivo Aspose.Pdf.ListSectionStyle.xml exista en ```<Insta
 </ListSection>
 ```
 
-##  Lista de Tablas
+##  Lista de tablas
 
-**Ejemplo**
+### Ejemplo
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -55,7 +54,7 @@ Asegúrese de que el archivo Aspose.Pdf.ListSectionStyle.xml exista en ```<Insta
 
 ## Lista de figuras
 
-**Ejemplo**
+### Ejemplo
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -66,42 +65,29 @@ Asegúrese de que el archivo Aspose.Pdf.ListSectionStyle.xml exista en ```<Insta
 
 ```
 
-Consulte la sección 'Working with TOC' de la documentación en línea de Aspose.Pdf.
+Consulte la sección 'Trabajar con TOC' de la documentación en línea de Aspose.Pdf.
 
-**2-** Agregue el parámetro de informe 'IsListSectionSupported' y establezca el valor en True como se muestra en el párrafo 'List Section'.
-**3-** Agregue una propiedad personalizada para el elemento de informe que desea que aparezca en la Tabla de Contenidos, Lista de Tablas o Figuras.
+**2-** Agregue el parámetro de informe `IsListSectionSupported` y establezca el valor en Verdadero como se muestra en el párrafo `List Section`.
+**3-** Agregue una propiedad personalizada para el elemento de su informe que desea que aparezca en la Tabla de contenido, Lista de tablas o Figuras.
 
-{{% /alert %}}
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
-{{% alert color="primary" %}}
+Marca el elemento del informe actual según el índice de la tabla de contenido o de la lista de tablas o figuras.
 
-**Nombre de Propiedad Personalizada** :IsInList
-**Valor de Propiedad** :Boolean
-**Valor de Propiedad Personalizada** : True or False
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
-{{% alert color="primary" %}}
+El título del elemento que se muestra en la tabla de contenido, lista de tablas o figuras.
 
-Marca el elemento de informe actual como listado por índice en la tabla de contenido, o en la lista de tablas o figuras.
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
-{{% /alert %}}
-
-**Nombre de propiedad personalizada** : Título
-**Tipo de propiedad personalizada** : String
-
-{{% alert color="primary" %}}
-
-El título del elemento que se muestra en el índice, lista de tablas o figuras.
-{{% /alert %}}
-
-**Nombre de propiedad personalizada** : ListLevel
-**Tipo de propiedad personalizada** : Entero
-
-{{% alert color="primary" %}}
-
-El nivel de los elementos listados que se muestra en la tabla de contenidos.
-
-{{% /alert %}}
-
-{{% /alert %}}
-
-
+El nivel de los elementos enumerados que se muestran en la tabla de contenido.
