@@ -34,3 +34,6 @@ A continuación se encuentran los enlaces a algunos recursos útiles que puede n
 - [Aspose.PDF para limitaciones de la API de JasperReports](/pdf/es/jasperreports/api-limitations/)
 
 {{% /alert %}}
+
+
+

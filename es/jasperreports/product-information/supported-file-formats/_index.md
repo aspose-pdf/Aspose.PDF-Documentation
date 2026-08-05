@@ -27,3 +27,5 @@ La siguiente tabla indica los formatos de archivo en los que se puede guardar el
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Guarda el documento en formato de presentaciones de Microsoft PowerPoint|
 
 
+
+

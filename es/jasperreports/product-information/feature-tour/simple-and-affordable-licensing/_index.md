@@ -4,7 +4,7 @@ linktitle: Licencias simples y asequibles
 type: docs
 weight: 20
 url: /es/jasperreports/simple-and-affordable-licensing/
-description: Discover simple and affordable licensing options for Aspose.PDF for JasperReports. Unlock powerful PDF export features at great value.
+description: Descubra opciones de licencia sencillas y asequibles para Aspose.PDF para JasperReports. Desbloquee potentes funciones de exportación de PDF a un precio excelente.
 lastmod: "2021-06-05"
 ---
 
@@ -18,5 +18,6 @@ Aspose.PDF para la evaluación de JasperReports y las versiones pagas son la mis
 
 Aproveche la versión de evaluación de Aspose.PDF para JasperReports: no tiene limitaciones de tiempo y viene con soporte técnico gratuito.
 
-El modo de evaluación inyecta marcas de agua en los informes exportados. Cuando [compra una licencia](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simplemente aplica la licencia](/pdf/jasperreports/licensing/) y la marca de agua ya no aparecerá en los documentos de salida.
+El modo de evaluación inyecta marcas de agua en los informes exportados. Cuando [compra una licencia](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simplemente aplica la licencia](/pdf/es/jasperreports/licensing/) y la marca de agua ya no aparecerá en los documentos de salida.
+
 

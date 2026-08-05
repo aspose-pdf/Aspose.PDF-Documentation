@@ -36,3 +36,5 @@ exporter.exportReport();
 
 El fragmento de código anterior se ha probado con JasperReports 3.5.2. Si utiliza JasperReports 3.1.0, intente utilizar import com.aspose.pdf.jr3_1_0.jasperreports.; y reemplace también la versión del producto en el resto del código.
 
+
+

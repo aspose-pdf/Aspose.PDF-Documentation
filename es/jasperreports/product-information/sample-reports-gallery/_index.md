@@ -52,3 +52,5 @@ Los informes que se muestran a continuación se basan en datos de muestra instal
 
 ![Standard charts report](sample-reports-gallery_9.png)
 
+
+

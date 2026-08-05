@@ -41,3 +41,5 @@ Aspose.PDF para JasperReports inyecta una marca de agua cuando se trabaja en mod
 
 ![Integration with JasperServer_2](working-with-jasperserver_2.png)
 
+
+

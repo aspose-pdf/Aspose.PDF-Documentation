@@ -1,5 +1,5 @@
 ﻿---
-title: Cómo: actualizar las demostraciones existentes de JasperReports para usar Aspose.PDF para JasperReports
+title: How to - Update existing JasperReports demos to use Aspose.PDF for JasperReports
 linktitle: Cómo: actualizar las demostraciones existentes de JasperReports para usar Aspose.PDF para JasperReports
 type: docs
 weight: 20
@@ -10,20 +10,20 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF. These demos are based on standard JasperReports demos that have been modified to demonstrate how to use new exporters. This tutorial, goes through the steps required to update the existing JasperReports demos to use Aspose.PDF for JasperReports.
+Aspose.PDF para JasperReports incluye una serie de proyectos de demostración para ayudarle a comenzar a exportar informes a PDF. Estas demostraciones se basan en demostraciones estándar de JasperReports que se han modificado para demostrar cómo utilizar nuevos exportadores. Este tutorial recorre los pasos necesarios para actualizar las demostraciones de JasperReports existentes para usar Aspose.PDF para JasperReports.
 
 {{% /alert %}}
 
-## Updating Demos to use Aspose.PDF
+## Actualización de demostraciones para usar Aspose.PDF
 
 {{% alert color="primary" %}}
 
 Los siguientes pasos explican cómo actualizar demostraciones existentes para usar Aspose.PDF para la extensión de exportación de JasperReports en lugar de usar la función de exportación de PDF estándar de JasperReport.
 
-1. Download JasperReports from <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>.
-   Asegúrese de descargar todo el proyecto archivado con el código fuente y las demostraciones, no solo un JAR. Este tutorial se preparó utilizando JasperReports-3.5.2.
-2. Desempaquete el proyecto archivado en alguna ubicación de su disco duro, por ejemplo C:\.
-3. Copie **aspose.pdf.jasperreports.jar** de la carpeta \lib en **Aspose.PDF.JasperReports.zip** a ```<InstallDir>```\jasperreports\lib.
+1. Descargue JasperReports de <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>.
+   Make sure to download the entire archived project with the source code and demos, not just a single JAR. This tutorial was prepared using JasperReports-3.5.2.
+2. Unpack the archived project to some location on your hard disk, for example C:\.
+3. Copy **aspose.pdf.jasperreports.jar** from the \lib folder in **Aspose.PDF.JasperReports.zip** to ```<InstallDir>```\jasperreports\lib.
 4. Abra ```<InstallDir>```\jasperreports\demo\samples, (where ```<InstallDir>``` es la ubicación donde descomprimió JasperReports) para actualizar una demostración existente. Si ha seleccionado la demostración de fuentes, por ejemplo, para usar con Aspose.PDF para JasperReports, cree una copia para que la demostración original siga siendo la misma. A los efectos de este ejemplo, hemos denominado la nueva carpeta **fonts.ap**.
 Nota: las demostraciones se ejecutarán desde ```<InstallDir>``` \jasperreports\demo\samples porque los scripts de compilación de demostración se basan en la estructura de carpetas de JasperReports. Si cambia la carpeta de muestra, debe modificar los scripts de compilación.
 5. Abra el archivo **FontsApp.java** de la carpeta src y agregue una referencia a Aspose.PDF para JasperReports:
@@ -66,7 +66,7 @@ com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
 ```
 
 9. Abra el archivo **build.xml**.
-10. Haga una copia del siguiente segmento y colóquelo dentro del mismo archivo:
+10. Make a copy of the following segment and place it inside the same file:
 
 ```xml
  <target name="pdf" description="Generat PDF via Aspose.PDF for JasperReports.">
@@ -85,8 +85,8 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 
 11. Para ejecutar la demostración:
    -  Descargue la herramienta ANT de <http://ant.apache.org/bindownload.cgi>.
-   - Desempaquete la herramienta ANT y configure las variables de entorno como se describe en el manual de la herramienta.
-   -  Cambie el directorio actual a <InstallDir>\demo\hsqldb y ejecute la siguiente línea de comando:
+   - Unpack the ANT tool and set up environment variables as described in the tool's manual.
+   -  Change the current directory to <InstallDir>\demo\hsqldb and run the following command line:
       servidor de ejecución de hormigas
 12. Abra una nueva instancia del símbolo del sistema y cambie el directorio actual a <InstallDir>\demo\samples\fonts.ap y ejecute los siguientes comandos en la línea de comando:
 13. ant javac: para compilar los archivos fuente Java de la aplicación de prueba
@@ -96,4 +96,5 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 17. Abra el PDF resultante (**FontsReport.pdf**) de la carpeta <InstallDir>\demo\samples\ fonts.ap\build\reports\.
 
 {{% /alert %}}
+
 
