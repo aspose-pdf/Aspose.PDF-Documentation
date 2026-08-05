@@ -1,15 +1,11 @@
----
-
-title: Simple and Affordable Licensing
-
+﻿---
+title: Licencias simples y asequibles
+linktitle: Licencias simples y asequibles
 type: docs
-
 weight: 20
-
 url: /es/jasperreports/simple-and-affordable-licensing/
-
+description: Discover simple and affordable licensing options for Aspose.PDF for JasperReports. Unlock powerful PDF export features at great value.
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
@@ -18,8 +14,9 @@ Cada licencia de Aspose viene con 1 año de actualizaciones de software gratuita
 
 {{% /alert %}}
 
-Las versiones de evaluación y pagadas de Aspose.PDF para JasperReports son la misma descarga. La versión de prueba proporciona las mismas características que la versión con licencia, con la excepción de que inserta una marca de agua de evaluación en el documento PDF de salida. Puede [descargar Aspose.PDF para JasperReports](http://www.aspose.com/community/files/67/jasperreports-exporters/aspose.pdf-for-jasperreports/default.aspx) e instalarlo. Funciona automáticamente en modo de evaluación.
+Aspose.PDF para la evaluación de JasperReports y las versiones pagas son la misma descarga. La versión de prueba proporciona las mismas funciones que la versión con licencia, con la excepción de que inserta una marca de agua de evaluación en el documento PDF de salida. Puede [descargar Aspose.PDF para JasperReports](http://www.aspose.com/community/files/67/jasperreports-exporters/aspose.pdf-for-jasperreports/default.aspx) e instalarlo. Funciona en modo de evaluación de forma automática.
 
-Por favor, aproveche la versión de evaluación de Aspose.PDF para JasperReports: no tiene limitaciones de tiempo y viene con soporte técnico gratuito.
+Aproveche la versión de evaluación de Aspose.PDF para JasperReports: no tiene limitaciones de tiempo y viene con soporte técnico gratuito.
 
-El modo de evaluación inyecta marcas de agua en los informes exportados. Cuando usted [compra una licencia](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simplemente aplique la licencia](/pdf/es/jasperreports/licensing/) y la marca de agua ya no aparecerá en los documentos de salida.
+El modo de evaluación inyecta marcas de agua en los informes exportados. Cuando [compra una licencia](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simplemente aplica la licencia](/pdf/jasperreports/licensing/) y la marca de agua ya no aparecerá en los documentos de salida.
+

@@ -1,25 +1,16 @@
----
-
-title: Feature Tour
-
+﻿---
+title: Tour de funciones
+linktitle: Tour de funciones
 type: docs
-
 weight: 30
-
 url: /es/jasperreports/feature-tour/
-
+description: Realice un recorrido por las funciones de Aspose.PDF para JasperReports. Explore herramientas para crear informes PDF visualmente ricos y bien estructurados.
 lastmod: "2021-06-05"
-
 ---
 
+Esta sección incluye los siguientes temas:
 
+- [Implementación fácil y liviana](/pdf/es/jasperreports/easy-and-lightweight-deployment/)
+- [Licencias simples y asequibles](/pdf/es/jasperreports/simple-and-affordable-licensing/)
+- [Soporte técnico gratuito de clase mundial](/pdf/es/jasperreports/world-class-free-technical-support/)
 
-**Esta sección incluye los siguientes temas:**
-
-
-
-- [Despliegue Fácil y Ligero](/pdf/es/jasperreports/easy-and-lightweight-deployment/)
-
-- [Licenciamiento Simple y Asequible](/pdf/es/jasperreports/simple-and-affordable-licensing/)
-
-- [Soporte Técnico gratuito de Clase Mundial](/pdf/es/jasperreports/world-class-free-technical-support/)
