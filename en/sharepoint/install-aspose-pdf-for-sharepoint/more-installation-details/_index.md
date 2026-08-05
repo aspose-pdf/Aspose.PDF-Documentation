@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 description: More information on the installation of PDF SharePoint API explains how to deploy, activate, and deactivate it on site collections.
 ---
 
-## **Deployment**
+## Deployment
 
 {{% alert color="primary" %}}
 
@@ -19,8 +19,7 @@ description: More information on the installation of PDF SharePoint API explains
 
 {{% /alert %}}
 
-
-## **Activation**
+## Activation
 
 {{% alert color="primary" %}}
 

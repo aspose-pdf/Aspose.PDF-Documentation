@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 description: Technical Articles of PDF SharePoint API cover topics such as creating, exporting and saving SharePoint Wiki page and XML file to PDF.
 ---
 
-## **Articles in this section**
+## Articles in this section
 
 - [Creating and Exporting Template](/pdf/sharepoint/creating-and-exporting-template/)
 - [Save SharePoint Wiki page as PDF](/pdf/sharepoint/save-sharepoint-wiki-page-as-pdf/)

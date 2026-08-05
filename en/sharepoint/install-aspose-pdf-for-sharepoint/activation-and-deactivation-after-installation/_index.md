@@ -16,4 +16,4 @@ During installation, Aspose.PDF for SharePoint is activated for all selected sit
 
 ## Activating Aspose.PDF for SharePoint on a site collection 
 
-![todo:image_alt_text](activation-and-deactivation-after-installation_1.png)**
+![Activate Aspose.PDF for SharePoint](activation-and-deactivation-after-installation_1.png)**

@@ -14,7 +14,7 @@ Aspose.PDF for SharePoint is downloadable as Aspose.PDF.SharePoint.zip archive.
 
 {{% /alert %}}
 
-**This archive contains:**
+This archive contains:
 
 - Aspose.PDF.SharePoint.wsp
   SharePoint solution file. Aspose.PDF for SharePoint is packaged as a SharePoint solution to facilitate deployment/retraction and feature activation/deactivation across the server farm.
@@ -55,29 +55,21 @@ The setup program checks the following conditions before proceeding:
 
 - Check installation prerequisites. Setup will not continue if any check fails.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_1.png)
-
-
+![Check Installation Prerequisites](installing-aspose-pdf-for-sharepoint_1.png)
 
 - Display End User License Agreement. The user must accept the agreement in order to proceed.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_2.png)
-
-
+![Display License Agreement](installing-aspose-pdf-for-sharepoint_2.png)
 
 - Display deployment target selection dialog. The user selects web applications and site collections where the feature shall be activated. See the figure below.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_3.png)
-
-
+![Display Deployment Target Selection](installing-aspose-pdf-for-sharepoint_3.png)
 
 - Deploy the feature to the server farm.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_4.png)
-
-
+![Deploy Feature](installing-aspose-pdf-for-sharepoint_4.png)
 
 - Activate the feature for the selected site collections and configure their parent web applications.
 - Display a list of web applications and site collections where the feature has been deployed and activated.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_5.png)
+![Display Deployed Features](installing-aspose-pdf-for-sharepoint_5.png)
