@@ -1,37 +1,22 @@
----
-
+﻿---
 title: Simple and Affordable Licensing
-
+linktitle: Lisensi Sederhana dan Terjangkau
 type: docs
-
 weight: 20
-
 url: /id/jasperreports/simple-and-affordable-licensing/
-
+description: Discover simple and affordable licensing options for Aspose.PDF for JasperReports. Unlock powerful PDF export features at great value.
 lastmod: "2021-06-05"
-
 ---
-
-
 
 {{% alert color="primary" %}}
 
-
-
-Setiap lisensi Aspose datang dengan 1 tahun pembaruan perangkat lunak gratis dan dukungan teknis tanpa batas gratis.
-
-
+Every Aspose license comes with 1 year of free software updates and unlimited free technical support.
 
 {{% /alert %}}
 
+Aspose.PDF untuk evaluasi JasperReports dan versi berbayar adalah unduhan yang sama. Versi uji coba menyediakan fitur yang sama dengan versi berlisensi, dengan pengecualian versi ini menyisipkan tanda air evaluasi dalam dokumen PDF keluaran. Anda dapat [mengunduh Aspose.PDF untuk JasperReports](http://www.aspose.com/community/files/67/jasperreports-exporters/aspose.pdf-for-jasperreports/default.aspx) dan menginstalnya. Ia bekerja dalam mode evaluasi secara otomatis.
 
+Please take an advantage of the evaluation version of Aspose.PDF for JasperReports: it does not have time limitations and comes with free technical support.
 
-Versi evaluasi dan berbayar Aspose.PDF untuk JasperReports adalah unduhan yang sama. Versi percobaan menyediakan fitur yang sama dengan versi berlisensi, dengan pengecualian bahwa versi ini menyisipkan watermark evaluasi pada dokumen PDF keluaran. Anda dapat [mengunduh Aspose.PDF untuk JasperReports](http://www.aspose.com/community/files/67/jasperreports-exporters/aspose.pdf-for-jasperreports/default.aspx) dan menginstalnya. Ini bekerja dalam mode evaluasi secara otomatis.
+Mode evaluasi memasukkan tanda air ke dalam laporan yang diekspor. Ketika Anda [membeli lisensi](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [cukup menerapkan lisensi](/pdf/id/jasperreports/licensing/) dan tanda air tidak akan muncul lagi di dokumen keluaran.
 
-
-
-Silakan manfaatkan versi evaluasi dari Aspose.PDF untuk JasperReports: ini tidak memiliki batasan waktu dan datang dengan dukungan teknis gratis.
-
-
-
-Mode evaluasi menyuntikkan watermark ke laporan yang diekspor. When you [membeli lisensi](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [cukup terapkan lisensi](/pdf/id/jasperreports/licensing/) dan watermark tidak akan lagi muncul di dokumen keluaran.

@@ -1,33 +1,25 @@
----
-
-title: Ikhtisar Produk
-
+﻿---
+title: Product Overview
+linktitle: Ikhtisar Produk
 type: docs
-
 weight: 10
-
 url: /id/jasperreports/product-overview/
-
+description: Get an overview of Aspose.PDF for JasperReports. Transform JasperReports into high-quality PDFs with advanced customization options.
 lastmod: "2021-06-05"
-
 ---
-
-
 
 {{% alert color="primary" %}}
 
+![Aspose.PDF for JasperReports Logo](../../aspose_pdf-for-jasperreports.png)
 
+## Welcome to the Aspose.PDF for JasperReports documentation
 
-![Logo Aspose.PDF untuk JasperReports](../../aspose_pdf-for-jasperreports.png)
-
-### **Selamat datang di dokumentasi Aspose.PDF untuk JasperReports!**
-
-Aspose.PDF untuk JasperReports adalah komponen fleksibel yang dirancang untuk mengekspor laporan dari JasperReports dan JasperServer ke Portable Document Format (PDF). Fitur laporan penting seperti tabel, grafik, dan gambar dikonversi ke PDF dengan tingkat presisi tertinggi.
-
-
+Aspose.PDF for JasperReports is a flexible component designed to export reports from JasperReports and JasperServer to Portable Document Format (PDF). Important report features such as tables, charts and images are converted to PDF with the highest degree of precision.
 
 {{% /alert %}}
 
-### **Deskripsi Produk**
+### Deskripsi Produk
 
-Untuk membuat dokumen PDF, Aspose.PDF untuk JasperReports mengandalkan versi bawaan dari [Aspose.PDF untuk Java](https://products.aspose.com/pdf/java/), perpustakaan terkemuka di pasar dari Aspose. Adobe Acrobat Professional tidak harus diinstal pada sistem untuk menghasilkan dokumen PDF dengan Aspose.PDF untuk JasperReports.
+Untuk membuat dokumen PDF, Aspose.PDF untuk JasperReports mengandalkan versi bawaan [Aspose.PDF untuk Java](https://products.aspose.com/pdf/java/), perpustakaan terkemuka di pasar dari Aspose. Adobe Acrobat Professional tidak harus diinstal pada sistem untuk menghasilkan dokumen PDF dengan Aspose.PDF untuk JasperReports.
+
+

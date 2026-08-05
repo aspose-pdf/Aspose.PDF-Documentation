@@ -1,30 +1,28 @@
-title: Evaluasi Aspose.Pdf
-
+﻿---
+title: Evaluasi Aspose.PDF
+linktitle: Evaluasi Aspose.PDF
 type: docs
-
 weight: 70
-
 url: /id/jasperreports/evaluate-aspose-pdf/
-
+description: Evaluasi Aspose.PDF untuk JasperReports secara gratis. Rasakan kemampuan ekspor PDF tingkat lanjut sebelum melakukan.
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
 
-Pastikan untuk memanfaatkan evaluasi gratis Aspose.PDF untuk JasperReports karena tidak memiliki batasan waktu, dan dukungan teknis gratis juga disediakan untuk pengguna evaluasi.
+Pastikan untuk memanfaatkan evaluasi Aspose.PDF untuk JasperReports gratis karena tidak memiliki batasan waktu, dan dukungan teknis gratis juga disediakan untuk pengguna evaluasi.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Ini adalah unduhan yang sama untuk versi evaluasi dan versi berbayar dari Aspose.PDF untuk JasperReports. Cukup unduh Aspose.PDF untuk JasperReports dari halaman unduhan, instal, dan secara default akan berfungsi dalam mode evaluasi.
+Ini adalah unduhan yang sama untuk evaluasi dan versi berbayar Aspose.PDF untuk JasperReports. Cukup unduh Aspose.PDF untuk JasperReports dari halaman unduh, instal dan itu akan bekerja dalam mode evaluasi secara default.
 
-Mode evaluasi menyisipkan Peringatan Evaluasi ke dalam dokumen yang diekspor. Ketika Anda telah membeli lisensi, cukup terapkan lisensi tersebut dan Aspose.PDF untuk JasperReports kemudian akan bekerja dalam mode berlisensi.
+Mode Evaluasi memasukkan Peringatan Evaluasi ke dalam dokumen yang diekspor. Ketika Anda telah membeli lisensi, cukup terapkan lisensi tersebut dan Aspose.PDF untuk JasperReports kemudian akan berfungsi dalam mode berlisensi.
 
-**Aspose.PDF untuk JasperReports menyisipkan Peringatan Evaluasi ketika bekerja dalam mode evaluasi.**
+**Aspose.PDF untuk JasperReports memasukkan Peringatan Evaluasi saat bekerja dalam mode evaluasi.**
 
-![todo:image_alt_text](evaluate-aspose-pdf_1.png)
+![Evaluasi Aspose.PDF](evaluate-aspose-pdf_1.png)
 
 {{% /alert %}}
-```
+
