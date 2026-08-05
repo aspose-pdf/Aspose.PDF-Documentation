@@ -1,27 +1,24 @@
-```
-title: Limitations de l'API
-
+﻿---
+title: Limites de l'API
+linktitle: Limites de l'API
 type: docs
-
 weight: 80
-
 url: /fr/jasperreports/api-limitations/
-
+description: Comprendre les limitations de l'API d'Aspose.PDF pour JasperReports. Trouvez des détails pour optimiser l’intégration avec vos rapports.
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
 
-Il y a certaines limitations lors de l'utilisation de ce composant.
+Il existe certaines limitations lors de l'utilisation de ce composant.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-## **Informations sur le créateur de PDF**
+## Informations sur le créateur de PDF
 
-Veuillez noter que vous ne pouvez pas définir de valeurs pour les champs **Application** et **Producteur**, car Aspose Ltd. et Aspose.PDF pour JasperReports x.x.x seront affichés pour ces champs.
+Veuillez noter que vous ne pouvez pas définir de valeurs pour les champs **Application** et **Producteur** , car Aspose Ltd. et Aspose.PDF pour JasperReports x.x.x seront affichés dans ces champs. 
 
 {{% /alert %}}
-```
+

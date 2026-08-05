@@ -1,31 +1,28 @@
----
-
-title: Évaluer Aspose.Pdf
-
+﻿---
+title: Évaluer Aspose.PDF
+linktitle: Évaluer Aspose.PDF
 type: docs
-
 weight: 70
-
 url: /fr/jasperreports/evaluate-aspose-pdf/
-
+description: Évaluez Aspose.PDF pour JasperReports gratuitement. Découvrez les capacités avancées d’exportation PDF avant de vous engager.
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
 
-Assurez-vous de profiter de l'évaluation gratuite d'Aspose.PDF pour JasperReports car elle n'a pas de limite de temps, et un support technique gratuit est également fourni pour les utilisateurs évaluateurs.
+Assurez-vous de profiter de l'évaluation gratuite d'Aspose.PDF pour JasperReports car elle n'a pas de limite de durée et une assistance technique gratuite est également fournie aux utilisateurs de l'évaluation.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-C'est le même téléchargement pour les versions d'évaluation et payante d'Aspose.PDF pour JasperReports. Il suffit de télécharger Aspose.PDF pour JasperReports depuis la page de téléchargement, de l'installer et il fonctionnera en mode d'évaluation par défaut.
+Il s'agit du même téléchargement pour la version d'évaluation et la version payante d'Aspose.PDF pour JasperReports. Téléchargez simplement Aspose.PDF pour JasperReports à partir de la page de téléchargement, installez-le et il fonctionnera en mode d'évaluation par défaut.
 
-Le mode d'évaluation injecte un Avertissement d'Évaluation dans les documents exportés. Lorsque vous avez acheté une licence, appliquez simplement la licence et Aspose.PDF pour JasperReports fonctionnera alors en mode sous licence.
+Le mode évaluation injecte un avertissement d’évaluation dans les documents exportés. Lorsque vous avez acheté une licence, appliquez simplement la licence et Aspose.PDF pour JasperReports fonctionnera alors en mode licence.
 
-**Aspose.PDF pour JasperReports injecte un Avertissement d'Évaluation lors du fonctionnement en mode d'évaluation.**
+**Aspose.PDF pour JasperReports injecte un avertissement d'évaluation lorsque vous travaillez en mode évaluation.**
 
-![todo:image_alt_text](evaluate-aspose-pdf_1.png)
+![Évaluer Aspose.PDF](evaluate-aspose-pdf_1.png)
 
 {{% /alert %}}
+

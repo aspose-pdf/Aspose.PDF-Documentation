@@ -1,42 +1,29 @@
----
-
-title: Supported File Formats
-
+﻿---
+title: Formats de fichiers pris en charge
+linktitle: Formats de fichiers pris en charge
 type: docs
-
 weight: 20
-
 url: /fr/jasperreports/supported-file-formats/
-
+description: Découvrez les formats de fichiers pris en charge dans Aspose.PDF pour JasperReports. Exportez des rapports au format PDF, XPS, DOC, etc.
 lastmod: "2021-06-05"
 ---
 
-
-
-## <ins>**Formats de Chargement Pris en Charge**
+## Formats de chargement pris en charge
 
 Le tableau suivant indique les formats de fichiers qu'Aspose.PDF pour JasperReports peut charger.
 
-
-
 |**Format**|**Description**|
-
 | :- | :- |
-
 |JRXML|Fichier de mise en page JasperReports|
 
-## <ins>**Formats d'Enregistrement Pris en Charge**
+## Formats de sauvegarde pris en charge
 
-Le tableau suivant indique les formats de fichiers dans lesquels le document peut être enregistré en utilisant Aspose.PDF pour JasperReports. 
-
-
+Le tableau suivant indique les formats de fichiers dans lesquels le document peut être enregistré à l'aide d'Aspose.PDF pour JasperReports. 
 
 |**Format**|**Description**|
-
 | :- | :- |
-
 |[PDF](https://docs.fileformat.com/view/pdf/)|Enregistre le document au format PDF|
-
 |PDF/A|Enregistre le document au format PDF/A|
+|[PPTX](https://docs.fileformat.com/presentation/pptx/)|Enregistre le document au format Présentations Microsoft PowerPoint|
 
-|[PPTX](https://docs.fileformat.com/presentation/pptx/)|Enregistre le document au format Microsoft PowerPoint Presentations|
+
