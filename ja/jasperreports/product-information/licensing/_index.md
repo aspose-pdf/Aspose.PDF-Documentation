@@ -1,12 +1,15 @@
----
+﻿---
 title: ライセンス
+linktitle: Licensing
 type: docs
 weight: 60
 url: /ja/jasperreports/licensing/
+description: Aspose.PDF for JasperReports のライセンス オプションについて説明します。ライセンスをアクティベートすると、すべての機能にアクセスできます。
 lastmod: "2021-06-05"
 ---
 
-**このセクションには次のトピックが含まれています：**
+**This section includes the following topics:**
 
-- [JasperReportsの操作](/pdf/ja/jasperreports/working-with-jasperreports/)
-- [JasperServerの操作](/pdf/ja/jasperreports/working-with-jasperserver/)
+- [JasperReports の使用](/pdf/ja/jasperreports/working-with-jasperreports/)
+- [Working with JasperServer](/pdf/ja/jasperreports/working-with-jasperserver/)
+

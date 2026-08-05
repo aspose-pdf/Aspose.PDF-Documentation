@@ -1,94 +1,72 @@
----
-
-title: Working with JasperReports
-
+﻿---
+title: JasperReports の操作
+linktitle: JasperReports の操作
 type: docs
-
 weight: 10
-
 url: /ja/jasperreports/working-with-jasperreports/
-
+description: Master working with JasperReports using Aspose.PDF. Create and export detailed reports in PDF format with advanced features.
 lastmod: "2021-06-05"
-
 ---
-
-
 
 {{% alert color="primary" %}}
 
+Aspose.Words for JasperReports is available for free, time unlimited evaluation from the download page. The evaluation and licensed versions of the product is the same download.
 
-
-Aspose.Words for JasperReportsは、ダウンロードページから無料で、時間無制限の評価版を利用できます。製品の評価版とライセンス版は同じダウンロードです。
-
-
-
-評価版に満足したら、[ライセンスを購入](http://www.aspose.com/purchase/default.aspx)してください。ライセンス条件を理解し、同意することを確認してください。
-
-
+When you are happy with the evaluation version, [purchase a license](http://www.aspose.com/purchase/default.aspx). Make sure you understand and agree to the license terms.
 
 {{% /alert %}}
 
+ライセンスは、注文の支払い後に注文ページからダウンロードできます。ライセンスはクリア テキストのデジタル署名された XML ファイルです。ライセンスには、クライアント名、購入した製品、ライセンスの種類などの情報が含まれます。ライセンス ファイルの内容は変更しないでください。変更するとライセンスが無効になります。
 
+There are several ways to activate a license:
 
-ライセンスは、注文が支払われた後、注文ページからダウンロードできます。ライセンスはクリアテキストの、デジタル署名されたXMLファイルです。ライセンスには、クライアント名、購入した製品、ライセンスタイプなどの情報が含まれています。ライセンスファイルの内容を変更しないでください。ライセンスが無効になります。
+- [Call setLicense](/pdf/ja/jasperreports/working-with-jasperreports/#call-setlicense).
+- [コード内にエクスポータ パラメータを設定します](/pdf/ja/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code)。
+- [**applicationContext.xml** にエクスポータ パラメータを設定します](/pdf/ja/jasperreports/working-with-jasperserver/)。
 
+最初の 2 つは JasperReports で使用され、最後の 2 つは JasperServer で使用されます。
 
+## Call setLicense
 
-ライセンスをアクティブにする方法はいくつかあります:
+このメソッドは JasperReports で使用されます。
 
+1. ライセンスをコンピュータにダウンロードし、適切なフォルダ (たとえば、アプリケーションのフォルダまたは JasperReports\lib) にコピーします。
+2. 次のコードをプロジェクトに追加します。
 
+```java
+import com.aspose.pdf.jr3_7_0.jasperreports.*;
+try
+{ 
+    // create a stream object containing the license file
+   FileInputStream fstream = new FileInputStream("C:\\Aspose.PDF.JasperReports.lic");  
 
-- [setLicenseを呼び出す](/pdf/ja/jasperreports/working-with-jasperreports/#call-setlicense)。
-
-
-- [コード内でエクスポーターパラメータを設定する](/pdf/ja/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code)。
-
-- [**applicationContext.xml** にエクスポーターパラメータを設定する](/pdf/ja/jasperreports/working-with-jasperserver/)。
-
-最初の2つはJasperReportsで使用され、最後のものはJasperServerで使用されます。
-
-#### **setLicenseを呼び出す**
-
-<ins> **この方法はJasperReportsで使用されます。**
-
-1. ライセンスをコンピュータにダウンロードし、適切なフォルダ（例えばアプリケーションフォルダやJasperReports\lib）にコピーします。
-
-2. 以下のコードをプロジェクトに追加します：
+    // Set the license through the stream object
+ 
+   License license = new License();
+   license.setLicense(fstream);
+}
+catch(Exception ex)
+{
+   System.out.println(ex.toString());
+}
 
 ```
+
+## コードでのlicenseFile Exporterパラメータの設定
+
+このメソッドは JasperReports で使用されます。
+
+1. Download the license to your computer and copy it to the appropriate folder (for example your application's folder or JasperReports\lib).
+2. 次のコードをプロジェクトに追加します。
+
+```java
 
 import com.aspose.pdf.jr3_7_0.jasperreports.*;
 
-try
-
-{ 
-
-    // ライセンスファイルを含むストリームオブジェクトを作成
-
-   FileInputStream fstream = new FileInputStream("C:\\Aspose.PDF.JasperReports.lic");  
-
-    // ストリームオブジェクトを通してライセンスを設定
-
-   License license = new License();
-
-   license.setLicense(fstream);
-
-}
-
-catch(Exception ex)
-
-{
-
-   System.out.println(ex.toString());
-
-}
+com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
+exporter.setParameter(PdfExporterParameter.LICENSE, "Aspose.PDF.JasperReports.lic");
+exporter.exportReport();
 
 ```
 
-#### **コード内でlicenseFileエクスポーターパラメータを設定する**
 
-<ins> **この方法はJasperReportsで使用されます。**
-
-1. ダウンロードしたライセンスをコンピュータに保存し、適切なフォルダ（例えば、アプリケーションのフォルダやJasperReports\lib）にコピーしてください。
-
-2. 次のコードをプロジェクトに追加します：

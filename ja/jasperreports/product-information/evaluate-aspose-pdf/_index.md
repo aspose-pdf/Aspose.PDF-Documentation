@@ -1,51 +1,28 @@
----
-
-title: Evaluate Aspose.Pdf
-
+﻿---
+title: Aspose.PDF を評価する
+linktitle: Aspose.PDF を評価する
 type: docs
-
 weight: 70
-
 url: /ja/jasperreports/evaluate-aspose-pdf/
-
+description: JasperReports 用の Aspose.PDF を無料で評価します。コミットする前に、高度な PDF エクスポート機能を体験してください。
 lastmod: "2021-06-05"
-
 ---
 
-
-
 {{% alert color="primary" %}}
 
-
-
-JasperReports の評価版 Aspose.PDF を活用してください。時間制限がなく、評価ユーザーには無料の技術サポートも提供されます。
-
-
+JasperReports の無料評価版 Aspose.PDF には期限がなく、評価ユーザーにも無料の技術サポートが提供されているので、ぜひご利用ください。
 
 {{% /alert %}}
 
-
-
 {{% alert color="primary" %}}
 
+これは、Aspose.PDF for JasperReports の評価版と有料版の両方で同じダウンロードです。ダウンロード ページから Aspose.PDF for JasperReports をダウンロードしてインストールするだけで、デフォルトで評価モードで動作します。
 
+評価モードでは、エクスポートされたドキュメントに評価警告が挿入されます。ライセンスを購入したら、そのライセンスを適用するだけで、Aspose.PDF for JasperReports がライセンス モードで動作するようになります。
 
-評価版と有料版の Aspose.PDF for JasperReports は同じダウンロードです。ダウンロードページから Aspose.PDF for JasperReports をダウンロードし、インストールすると、デフォルトで評価モードで動作します。
+**Aspose.PDF for JasperReports は、評価モードで作業しているときに評価警告を挿入します。**
 
-
-
-評価モードでは、エクスポートされたドキュメントに評価警告が挿入されます。ライセンスを購入した場合は、ライセンスを適用するだけで、Aspose.PDF for JasperReports はライセンスモードで動作します。
-
-
-
-**Aspose.PDF for JasperReports は、評価モードで動作する際に評価警告を挿入します。**
-
-
-
-
-
-![todo:image_alt_text](evaluate-aspose-pdf_1.png)
-
-
+![Aspose.PDF を評価する](evaluate-aspose-pdf_1.png)
 
 {{% /alert %}}
+

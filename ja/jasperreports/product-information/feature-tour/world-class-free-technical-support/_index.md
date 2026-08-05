@@ -1,35 +1,30 @@
----
-
-title: ワールドクラスの無料技術サポート
-
+﻿---
+title: World Class Free Technical Support
+linktitle: ワールドクラスの無料テクニカルサポート
 type: docs
-
 weight: 30
-
 url: /ja/jasperreports/world-class-free-technical-support/
-
+description: Enjoy world-class free technical support for Aspose.PDF for JasperReports. Get expert help for any query or technical issue.
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
 
-Asposeは、製品の開発者によって直接提供される無料で無制限の技術サポートで有名です。製品の新しいバージョンが利用可能な場合、または質問を解決するための修正が必要な場合、アクティブなサブスクリプションがあればすべての新しいリリースが無料です。
+Aspose は、製品開発者によって直接提供される無料かつ無制限の技術サポートで有名です。製品の新しいバージョンが利用可能な場合、または質問を解決することで修正が行われた場合、有効なサブスクリプションをお持ちであれば、すべての新しいリリースは無料です。
 
 {{% /alert %}}
 
-### **サポートを受ける**
+## Getting Support
 
-#### **フォーラム**
+### フォーラム
 
-[Asposeのサポートフォーラム](http://www.aspose.com/Community/Forums/)は、技術的な問題を解決するだけでなく、Asposeユーザーの活気に満ちた成長するコミュニティとのディスカッションに参加する場所です。現在、Asposeウェブサイトには19万人以上のユーザーが登録されています。
+[Aspose のサポート フォーラム](http://www.aspose.com/Community/Forums/) は、技術的な問題を解決するだけでなく、活発で成長を続ける Aspose ユーザーのコミュニティとのディスカッションに参加する場所です。現在、Aspose Web サイトには 190,000 人を超えるユーザーが登録しています。
 
-#### **ブログ**
+### ブログ
 
-[Aspose.Blogs](http://www.aspose.com/Community/Blogs/)は、最新のリリースやAspose開発者の意見を知るための場所です。
+[Aspose.Blogs](http://www.aspose.com/Community/Blogs/) は、最新リリースに関する情報や、Aspose 開発者の意見を探す場所です。
 
-#### **もっとサポートが必要ですか？**
+### さらにサポートが必要ですか?
 
-Asposeはすべてのユーザーに無料のサポートを提供しています。 For companies want that their issue will get prioritized, or who want to influence our product development road map, there are [advanced support options](http://www.aspose.com/corporate/services/support-options.aspx) like Priority Support and Enterprise Support.
+Aspose はすべてのユーザーに無料のサポートを提供します。問題を優先してもらいたい企業、または当社の製品開発ロードマップに影響を与えたい企業の場合は、優先サポートやエンタープライズ サポートなどの [高度なサポート オプション](http://www.aspose.com/corporate/services/support-options.aspx) をご利用いただけます。
 
-企業が自社の問題を優先的に取り扱ってほしい、または製品開発のロードマップに影響を与えたい場合、優先サポートやエンタープライズサポートといった[高度なサポートオプション](http://www.aspose.com/corporate/services/support-options.aspx)があります。

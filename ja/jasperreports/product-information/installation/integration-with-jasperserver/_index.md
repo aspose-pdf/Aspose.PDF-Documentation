@@ -1,127 +1,98 @@
-title: JasperServerとの統合
-
+﻿---
+title: JasperServer との統合
+linktitle: Integration with JasperServer
 type: docs
-
 weight: 30
-
 url: /ja/jasperreports/integration-with-jasperserver/
-
+description: Aspose.PDF を JasperServer と統合する方法を学びます。サーバー レポートを高品質の PDF 形式で簡単にエクスポートします。
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for JasperReportsとJasperServerの統合について以下に説明します。
+Aspose.PDF for JasperReports と JasperServer の統合については、以下で説明します。
 
 {{% /alert %}}
 
-以下のステップで <InstallDir> はJasperServerのインストールディレクトリを表します。
+次の手順の <InstallDir> は、JasperServer インストール ディレクトリを表します。
 
 {{% alert color="primary" %}}
 
-1. 以下の新しいエクスポーターのプロパティを **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** ファイルに追加します。
+1. 次の新しいエクスポータ プロパティを
+
+**<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** ファイル。
 
 {{% /alert %}}
 
-```
-
-<bean id="AsposePdfExporter" class="com.aspose.pdf.jr3_7_0.jasperreports.AsposeServerPdfExporter" parent="baseReportExporter">
-
+```xml
+ <bean id="AsposePdfExporter" class="com.aspose.pdf.jr3_7_0.jasperreports.AsposeServerPdfExporter" parent="baseReportExporter">
    <property name="exportParameters" ref="AsposeExportParameters"/>
-
    <property name="setResponseContentLength" value="true"/>
-
 </bean>
 
 <bean id="AsposePdfExporterConfiguration" class="com.jaspersoft.jasperserver.war.action.ExporterConfigurationBean">
-
    <property name="descriptionKey" value="Pdf - PDF via Aspose.PDF for JasperReports"/>
-```
-
-```
-<property name="iconSrc" value="/images/pdf.gif"/>
-
-<property name="parameterDialogName" value="dlg"/>
-
-<property name="exportParameters" ref="AsposeExportParameters"/>
-
-<property name="currentExporter" ref="AsposePdfExporter"/>
-
+   <property name="iconSrc" value="/images/pdf.gif"/>
+   <property name="parameterDialogName" value="dlg"/>
+   <property name="exportParameters" ref="AsposeExportParameters"/>
+   <property name="currentExporter" ref="AsposePdfExporter"/>
 </bean>
+
 ```
 
 {{% alert color="primary" %}}
 
-2. **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** ファイル内の <util:map id=”exporterConfigMap> 要素を見つけて、次の行を追加してください:
+2. <util:map id=”exporterConfigMap> 要素を見つけます。
+
+**<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** ファイルに次の行を追加します。
 
 {{% /alert %}}
 
-```
-<util:map id="exporterConfigMap">
+```xml
+ <util:map id="exporterConfigMap">
 
-<entry key="pdf" value-ref="pdfExporterConfiguration"/>
-
-<entry key="xls" value-ref="xlsExporterConfiguration"/>
-
-<entry key="rtf" value-ref="rtfExporterConfiguration"/>
-
-<entry key="csv" value-ref="csvExporterConfiguration"/>
-
-<entry key="swf" value-ref="swfExporterConfiguration"/>
+   <entry key="pdf" value-ref="pdfExporterConfiguration"/>
+   <entry key="xls" value-ref="xlsExporterConfiguration"/>
+   <entry key="rtf" value-ref="rtfExporterConfiguration"/>
+   <entry key="csv" value-ref="csvExporterConfiguration"/>
+   <entry key="swf" value-ref="swfExporterConfiguration"/>
 
 <!-- START of ADDED LINES -->
-
-<entry key="Aspose_pdf" value-ref="AsposePdfExporterConfiguration"/>
-
+   <entry key="Aspose_pdf" value-ref="AsposePdfExporterConfiguration"/>
 <!-- END of NEW LINES -->
 
 </util:map>
-```
 
+```
 {{% alert color="primary" %}}
 
-3. **Aspose-pdf-jasperreports.zip** の \lib フォルダからすべての GIF 画像を <InstallDir>\apache-tomcat\webapps\jasperserver\images\ にコピーします。
+3. **Aspose-pdf-jasperreports.zip** の \lib フォルダーからすべての GIF 画像を <InstallDir>\apache-tomcat\webapps\jasperserver\images\ にコピーします。
+4. **Aspose-pdf-jasperreports.jar** を **Aspose.PDF.JasperReports.zip** の \lib フォルダーから <InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\lib\ にコピーします。
+5. **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml** ファイルに次の行を追加します。
 
-4. **Aspose.PDF.JasperReports.zip** の \lib フォルダから **Aspose-pdf-jasperreports.jar** を <InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\lib\ にコピーします。
-
-5. 次の行を **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml** ファイルに追加します。
-
-
-
-   このビーンには、エクスポートを構成するためのさまざまな設定が含まれている場合があります。例えば、JasperReports のフォントマッピング機能を使用したり、Aspose.Cells for JasperReports ライセンスファイルの場所を指定したりできます。
-
+   この Bean には、エクスポートを構成するためのさまざまな構成設定が含まれる場合があります。たとえば、JasperReports フォント マッピング機能を使用したり、Aspose.Cells for JasperReports ライセンス ファイルの場所を指定したりできます。
   
-
 {{% /alert %}}
 
-
-
-```
-
+```xml
 <bean id="AsposeExportParameters" class="com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
-
 <property name="localizedFontMap" ref="localePdfFontMap"/>
 
-
-
-<!-- ライセンスを適用するにはコメントを外します。ライセンスパスを確認してください。
-
+<!-- Uncomment to apply a license. Check the license path.
 <property name="licenseFile" value="C:/jasperserver-3.0/apache-tomcat/webapps/
-
-
 jasperserver/WEB-INF/Aspose.PDF.JasperReports.lic"/>
-
-```
+-->
 </bean>
+
 ```
 
 {{% alert color="primary" %}}
 
-6. JasperServerを実行し、任意のレポートを開いて表示します。前のステップが正しく実行された場合、使用可能な形式のリストにAspose.PDF for JasperReportsによるエクスポート用のアイコンが表示されます。
+6. JasperServer を実行し、表示するレポートを開いてください。前の手順が適切に実行された場合は、使用可能な形式のリストに、JasperReports 用の Aspose.PDF 経由でエクスポートするためのアイコンが表示されます。
 
-   **Aspose.PDF for JasperReportsが統合されています**
+   **JasperReports 用の Aspose.PDF が統合されました**
 
-![todo:image_alt_text](integration-with-jasperserver_1.png)
+![Integration with JasperServer](integration-with-jasperserver_1.png)
 
 {{% /alert %}}
+
