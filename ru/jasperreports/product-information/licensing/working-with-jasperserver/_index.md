@@ -1,80 +1,43 @@
----
-
-title: Работа с JasperServer
-
+﻿---
+title: Работа с Джасперсервером
+linktitle: Работа с Джасперсервером
 type: docs
-
 weight: 20
-
-url: /ru/jasperreports/working-with-jasperserver/
-
+description: Узнайте, как эффективно работать с JasperServer с помощью Aspose.PDF. Легко экспортируйте отчеты в профессиональные PDF-файлы.
 lastmod: "2021-06-05"
-
 ---
 
-
-
-#### <ins>**Установите параметр licenseFile Exporter в applicationContext.xml**
+## <ins>Задайте параметр LicenseFile Exporter в applicationContext.xml.
 
 {{% alert color="primary" %}}
-
-
 
 Этот метод используется с JasperServer.
 
-
-
 {{% /alert %}}
 
-
-
-1. Скачайте лицензию на ваш компьютер и скопируйте её в папку ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF```, где ```<InstallDir>``` обозначает директорию установки JasperServer.
-
+1. Загрузите лицензию на свой компьютер и скопируйте ее в ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF``` folder, where  ```<InstallDir>```, обозначающую каталог установки JasperServer.
 2. Найдите файл ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` и добавьте следующие строки:
 
-
-
-```
-
+```xml
  <bean id="AsposeExportParameters" class="comcom.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
-
     <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-  
-
     INF/Aspose.Total.JasperReports.lic"/>
-
 </bean>
-
 ```
 
 {{% alert color="primary" %}}
-
-
-Примечание: Обратите внимание, что путь установки не должен содержать пробелов, например C:/Program Files/JasperServer… так как это вызывает проблемы при доступе к файлу лицензии.
-
+Примечание. Обратите внимание, что путь установки не должен содержать пробелов, например C:/Program Files/JasperServer…, поскольку это вызывает проблемы при доступе к файлу лицензии.
 {{% /alert %}}
 
+## Убедитесь, что лицензия работает
 
+Экспортируйте любой отчет в формат PDF и проверьте, содержит ли отчет оценочное сообщение. Если сообщение об оценке отсутствует, значит, лицензия работает правильно.
 
-#### **Проверьте, что лицензия работает**
+Aspose.PDF для JasperReports вставляет водяной знак при работе в ознакомительном режиме.
 
-Экспортируйте любой отчет в формат PDF и проверьте, содержит ли отчет сообщение об оценке. Если сообщения об оценке нет, значит, лицензия работает правильно.
+![Integration with JasperServer_1](working-with-jasperserver_1.png)
 
+Aspose.PDF для JasperReports вставляет водяной знак при работе в ознакомительном режиме.
 
+![Integration with JasperServer_2](working-with-jasperserver_2.png)
 
-**Aspose.PDF for JasperReports добавляет водяной знак при работе в режиме оценки**
-
-
-
-![todo:image_alt_text](working-with-jasperserver_1.png)
-
-
-
-
-
-
-
-**Aspose.PDF for JasperReports добавляет водяной знак при работе в режиме оценки**
-
-
-
-![todo:image_alt_text](working-with-jasperserver_2.png)

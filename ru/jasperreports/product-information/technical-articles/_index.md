@@ -1,12 +1,15 @@
----
+﻿---
 title: Технические статьи
+linktitle: Технические статьи
 type: docs
 weight: 90
 url: /ru/jasperreports/technical-articles/
+description: Прочтите технические статьи об Aspose.PDF для JasperReports. Получите расширенную информацию для улучшения преобразования JasperReports в PDF.
 lastmod: "2021-06-05"
 ---
 
-**Этот раздел включает следующие темы:**
+В этот раздел включены следующие темы:
 
-- [Как - использовать оффлайн демо Aspose.Pdf для JasperReports](/pdf/ru/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/)
-- [Как - обновить существующие демо JasperReports для использования Aspose.Pdf для JasperReports](/pdf/ru/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/)
+- [Как использовать Aspose.PDF для автономных демонстраций JasperReports](/pdf/ru/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/)
+- [ Практическое руководство. Обновление существующих демонстраций JasperReports для использования Aspose.PDF для JasperReports.](/pdf/ru/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/)
+

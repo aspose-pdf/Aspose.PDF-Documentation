@@ -1,58 +1,54 @@
+﻿---
 title: Галерея примеров отчетов
-
+linktitle: Галерея примеров отчетов
 type: docs
-
 weight: 40
-
 url: /ru/jasperreports/sample-reports-gallery/
-
+description: Просмотрите примеры отчетов, созданных с помощью Aspose.PDF для JasperReports. Посмотрите, как это расширяет возможности экспорта PDF.
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
 
-Эта галерея демонстрирует PDF отчеты, экспортированные с помощью Aspose.PDF для JasperReports.
+В этой галерее показаны отчеты в формате PDF, экспортированные Aspose.PDF для JasperReports.
 
 {{% /alert %}}
 
-Отчеты, показанные ниже, основаны на примерах данных, установленных с JasperServer.
+Показанные ниже отчеты основаны на примерах данных, установленных вместе с JasperServer.
 
-**Отчет по всем счетам**
+## Отчет по всем счетам
 
-![todo:image_alt_text](sample-reports-gallery_1.png)
+![Отчет по всем счетам](sample-reports-gallery_1.png)
 
-**Отчет по магазинам супермаркетов**
+## Отчет о магазинах Supermart
 
-![todo:image_alt_text](sample-reports-gallery_2.png)
+![Отчет о магазинах Supermart](sample-reports-gallery_2.png)
 
-**Отчет по стандартным диаграммам Эгейского региона**
+## Стандартные карты Эгейский отчет
 
-![todo:image_alt_text](sample-reports-gallery_3.png)
+![Стандартные карты Эгейский отчет](sample-reports-gallery_3.png)
 
-**Отчет по стандартным диаграммам Эгейского региона**
+## Стандартные карты Эгейский отчет
 
-![todo:image_alt_text](sample-reports-gallery_4.png)
+![Стандартные карты Эгейский отчет](sample-reports-gallery_4.png)
 
-**Отчет по стандартным диаграммам, радующий глаз**
+## Стандартный отчет о привлекательных диаграммах
 
-![todo:image_alt_text](sample-reports-gallery_5.png)
+![Стандартный отчет о привлекательных диаграммах](sample-reports-gallery_5.png)
 
-**Отчет по стандартным диаграммам, радующий глаз**
+## Стандартный отчет о привлекательных диаграммах
 
-![todo:image_alt_text](sample-reports-gallery_6.png)
+![Стандартный отчет о привлекательных диаграммах](sample-reports-gallery_6.png)
 
-**Отчет по стандартным диаграммам, радующий глаз**
+## Стандартный отчет о привлекательных диаграммах
 
-![todo:image_alt_text](sample-reports-gallery_7.png)
+![Стандартный отчет о привлекательных диаграммах](sample-reports-gallery_7.png)
 
-**Отчет по стандартным диаграммам**
-```
+## Стандартный отчет с диаграммами
 
+![Стандартный отчет с диаграммами](sample-reports-gallery_8.png)
 
-![todo:image_alt_text](sample-reports-gallery_8.png)
+## Стандартный отчет с диаграммами
 
-**Стандартный отчет с диаграммами**
+![Стандартный отчет с диаграммами](sample-reports-gallery_9.png)
 
-![todo:image_alt_text](sample-reports-gallery_9.png)
-```

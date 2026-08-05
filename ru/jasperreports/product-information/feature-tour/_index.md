@@ -1,20 +1,16 @@
-title: Feature Tour
-
+﻿---
+title: Функциональный тур
+linktitle: Функциональный тур
 type: docs
-
 weight: 30
-
 url: /ru/jasperreports/feature-tour/
-
+description: Ознакомьтесь с обзором Aspose.PDF для JasperReports. Изучите инструменты для создания визуально насыщенных и хорошо структурированных отчетов в формате PDF.
 lastmod: "2021-06-05"
-
 ---
 
-**Этот раздел включает следующие темы:**
+В этот раздел включены следующие темы:
 
-- [Легкое и простое развертывание](/pdf/ru/jasperreports/easy-and-lightweight-deployment/)
-
+- [Простое и легкое развертывание](/pdf/ru/jasperreports/easy-and-lightweight-deployment/)
 - [Простое и доступное лицензирование](/pdf/ru/jasperreports/simple-and-affordable-licensing/)
+- [Бесплатная техническая поддержка мирового класса](/pdf/ru/jasperreports/world-class-free-technical-support/)
 
-- [Мировая бесплатная техническая поддержка](/pdf/ru/jasperreports/world-class-free-technical-support/)
-```
