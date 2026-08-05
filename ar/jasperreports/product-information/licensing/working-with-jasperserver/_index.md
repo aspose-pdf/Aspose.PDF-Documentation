@@ -1,80 +1,44 @@
----
-
-title: العمل مع JasperServer
-
+﻿---
+title: العمل مع جاسبرسيرفر
+linktitle: العمل مع جاسبرسيرفر
 type: docs
-
 weight: 20
-
-url: /ar/jasperreports/working-with-jasperserver/
-
+description: اكتشف كيفية العمل بكفاءة مع JasperServer باستخدام Aspose.PDF. تصدير التقارير إلى ملفات PDF احترافية بسهولة.
 lastmod: "2021-06-05"
-
 ---
 
-
-
-#### <ins>**تعيين معلمة Exporter الخاصة بـ licenseFile في applicationContext.xml**
+## <ins> قم بتعيين معلمة مُصدِّر ملف الترخيص في applicationContext.xml
 
 {{% alert color="primary" %}}
 
-
-
-تُستخدم هذه الطريقة مع JasperServer.
-
-
+يتم استخدام هذه الطريقة مع JasperServer.
 
 {{% /alert %}}
 
-
-
-1. قم بتنزيل الترخيص على جهاز الكمبيوتر الخاص بك ونسخه إلى مجلد ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF``` حيث يشير ```<InstallDir>``` إلى دليل تثبيت JasperServer.
-
+1. قم بتنزيل الترخيص على جهاز الكمبيوتر الخاص بك وانسخه إلى ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF``` folder, where  ```<InstallDir>``` وهو اختصار لدليل تثبيت JasperServer.
 2. حدد موقع الملف ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` وأضف الأسطر التالية:
 
-
-
-```
-
+```xml
  <bean id="AsposeExportParameters" class="comcom.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
-
     <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-  
-
     INF/Aspose.Total.JasperReports.lic"/>
-
 </bean>
-
 ```
 
 {{% alert color="primary" %}}
-
-
-ملاحظة: يرجى ملاحظة أن مسار التثبيت يجب ألا يحتوي على أي مسافات، على سبيل المثال C:/Program Files/JasperServer… لأن ذلك يسبب مشاكل عند الوصول إلى ملف الترخيص.
-
+ملاحظة: يرجى ملاحظة أن مسار التثبيت يجب ألا يحتوي على أي مسافات، على سبيل المثال C:/Program Files/JasperServer... لأن ذلك يسبب مشاكل عند الوصول إلى ملف الترخيص.
 {{% /alert %}}
 
+## التحقق من أن الترخيص يعمل
+
+قم بتصدير أي تقرير إلى تنسيق PDF وتحقق مما إذا كان التقرير يحتوي على رسالة تقييم. إذا لم تكن هناك رسالة تقييم، فهذا يعني أن الترخيص يعمل بشكل صحيح.
+
+يقوم Aspose.PDF for JasperReports بإدخال علامة مائية عند العمل في وضع التقييم
+
+![Integration with JasperServer_1](working-with-jasperserver_1.png)
+
+يقوم Aspose.PDF for JasperReports بإدخال علامة مائية عند العمل في وضع التقييم
+
+![Integration with JasperServer_2](working-with-jasperserver_2.png)
 
 
-#### **تحقق من أن الرخصة تعمل**
-
-قم بتصدير أي تقرير إلى صيغة PDF وتحقق مما إذا كان التقرير يحتوي على رسالة تقييم. إذا لم تكن هناك رسالة تقييم، فهذا يعني أن الرخصة تعمل بشكل صحيح.
-
-
-
-**يقوم Aspose.PDF for JasperReports بإضافة علامة مائية عند العمل في وضع التقييم**
-
-
-
-![todo:image_alt_text](working-with-jasperserver_1.png)
-
-
-
-
-
-
-
-**يقوم Aspose.PDF for JasperReports بإضافة علامة مائية عند العمل في وضع التقييم**
-
-
-
-![todo:image_alt_text](working-with-jasperserver_2.png)

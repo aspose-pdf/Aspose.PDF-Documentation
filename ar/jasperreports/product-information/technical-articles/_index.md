@@ -1,12 +1,16 @@
----
-title: مقالات تقنية
+﻿---
+title: المقالات الفنية
+linktitle: المقالات الفنية
 type: docs
 weight: 90
 url: /ar/jasperreports/technical-articles/
+description: اقرأ المقالات الفنية حول Aspose.PDF لـ JasperReports. احصل على رؤى متقدمة لتحسين تحويلات JasperReports إلى PDF.
 lastmod: "2021-06-05"
 ---
 
-**تشمل هذه القسم المواضيع التالية:**
+يتضمن هذا القسم المواضيع التالية:
 
-- [كيفية - استخدام Aspose.Pdf لعروض JasperReports التجريبية دون اتصال](/pdf/ar/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/)
-- [كيفية - تحديث عروض JasperReports التجريبية الحالية لاستخدام Aspose.Pdf for JasperReports](/pdf/ar/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/)
+- [How to - use Aspose.PDF for JasperReports offline demos](/pdf/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/)
+- [ كيفية - تحديث العروض التوضيحية الحالية لـ JasperReports لاستخدام Aspose.PDF لـ JasperReports](/pdf/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/)
+
+

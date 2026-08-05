@@ -1,13 +1,16 @@
----
+﻿---
 title: الترخيص
+linktitle: الترخيص
 type: docs
 weight: 60
 url: /ar/jasperreports/licensing/
+description: تعرف على خيارات الترخيص لـ Aspose.PDF لـ JasperReports. قم بتنشيط الترخيص الخاص بك للوصول إلى الوظائف والميزات الكاملة.
 lastmod: "2021-06-05"
 ---
 
-**تشمل هذه القسم الموضوعات التالية:**
+**يحتوي هذا القسم على المواضيع التالية:**
 
-- [العمل مع JasperReports](/pdf/ar/jasperreports/working-with-jasperreports/)
-- [العمل مع JasperServer](/pdf/ar/jasperreports/working-with-jasperserver/)
-```
+- [Working with JasperReports](/pdf/jasperreports/working-with-jasperreports/)
+- [العمل مع JasperServer](/pdf/jasperreports/working-with-jasperserver/)
+
+

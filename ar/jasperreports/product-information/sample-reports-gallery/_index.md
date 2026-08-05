@@ -1,57 +1,55 @@
-```
-title: Sample Reports Gallery 
-
+﻿---
+title: معرض نماذج التقارير
+linktitle: معرض نماذج التقارير
 type: docs
-
 weight: 40
-
 url: /ar/jasperreports/sample-reports-gallery/
-
+description: عرض نماذج التقارير التي تم إنشاؤها باستخدام Aspose.PDF لـ JasperReports. انظر كيف يعزز قدرات تصدير PDF.
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
 
-يُظهر هذا المعرض تقارير PDF التي تم تصديرها بواسطة Aspose.PDF لـ JasperReports.
+يوضح هذا المعرض تقارير PDF التي تم تصديرها بواسطة Aspose.PDF لـ JasperReports.
 
 {{% /alert %}}
 
-التقارير الموضحة أدناه تستند إلى بيانات عينة تم تثبيتها مع JasperServer.
+تعتمد التقارير الموضحة أدناه على بيانات نموذجية تم تثبيتها باستخدام JasperServer.
 
-**تقرير جميع الحسابات**
+## تقرير جميع الحسابات
 
-![todo:image_alt_text](sample-reports-gallery_1.png)
+![All accounts report](sample-reports-gallery_1.png)
 
-**تقرير متاجر السوبرماركت**
+## تقرير محلات السوبر ماركت
 
-![todo:image_alt_text](sample-reports-gallery_2.png)
+![Supermart stores report](sample-reports-gallery_2.png)
 
-**تقرير الرسوم البيانية القياسية Aegean**
+## تقرير الرسوم البيانية القياسية لبحر إيجه
 
-![todo:image_alt_text](sample-reports-gallery_3.png)
+![Standard charts Aegean report](sample-reports-gallery_3.png)
 
-**تقرير الرسوم البيانية القياسية Aegean**
+## تقرير الرسوم البيانية القياسية لبحر إيجه
 
-![todo:image_alt_text](sample-reports-gallery_4.png)
+![Standard charts Aegean report](sample-reports-gallery_4.png)
 
-**تقرير الرسوم البيانية القياسية الجذابة**
+## الرسوم البيانية القياسية تقرير حلوى العين
 
-![todo:image_alt_text](sample-reports-gallery_5.png)
+![Standard charts eye candy report](sample-reports-gallery_5.png)
 
-**تقرير الرسوم البيانية القياسية الجذابة**
+## الرسوم البيانية القياسية تقرير حلوى العين
 
-![todo:image_alt_text](sample-reports-gallery_6.png)
+![Standard charts eye candy report](sample-reports-gallery_6.png)
 
-**تقرير الرسوم البيانية القياسية الجذابة**
+## الرسوم البيانية القياسية تقرير حلوى العين
 
-![todo:image_alt_text](sample-reports-gallery_7.png)
+![Standard charts eye candy report](sample-reports-gallery_7.png)
 
-**تقرير الرسوم البيانية القياسية**
-```
+## تقرير الرسوم البيانية القياسية
 
-![todo:image_alt_text](sample-reports-gallery_8.png)
+![Standard charts report](sample-reports-gallery_8.png)
 
-**تقرير الرسوم البيانية القياسية**
+## تقرير الرسوم البيانية القياسية
 
-![todo:image_alt_text](sample-reports-gallery_9.png)
+![Standard charts report](sample-reports-gallery_9.png)
+
+

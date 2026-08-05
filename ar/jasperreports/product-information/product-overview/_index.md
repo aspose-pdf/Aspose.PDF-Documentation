@@ -1,27 +1,26 @@
-```
+﻿---
 title: نظرة عامة على المنتج
-
+linktitle: نظرة عامة على المنتج
 type: docs
-
 weight: 10
-
 url: /ar/jasperreports/product-overview/
-
+description: احصل على نظرة عامة على Aspose.PDF لـ JasperReports. قم بتحويل JasperReports إلى ملفات PDF عالية الجودة مع خيارات التخصيص المتقدمة.
 lastmod: "2021-06-05"
-
 ---
 
 {{% alert color="primary" %}}
 
-![شعار Aspose.PDF for JasperReports](../../aspose_pdf-for-jasperreports.png)
+![Aspose.PDF for JasperReports Logo](../../aspose_pdf-for-jasperreports.png)
 
-### **مرحباً بكم في توثيق Aspose.PDF for JasperReports!**
+## مرحبًا بك في ملف Aspose.PDF الخاص بوثائق JasperReports
 
-Aspose.PDF for JasperReports هو مكون مرن مصمم لتصدير التقارير من JasperReports و JasperServer إلى تنسيق المستندات المحمولة (PDF). يتم تحويل ميزات التقرير الهامة مثل الجداول والمخططات والصور إلى PDF بأعلى درجة من الدقة.
+يعد Aspose.PDF for JasperReports مكونًا مرنًا مصممًا لتصدير التقارير من JasperReports وJasperServer إلى تنسيق المستندات المحمولة (PDF). يتم تحويل ميزات التقرير المهمة مثل الجداول والمخططات والصور إلى PDF بأعلى درجة من الدقة.
 
 {{% /alert %}}
 
-### **وصف المنتج**
+### وصف المنتج
 
-لإنشاء مستندات PDF، يعتمد Aspose.PDF for JasperReports على نسخة مدمجة من [Aspose.PDF for Java](https://products.aspose.com/pdf/java/)، المكتبة الرائدة في السوق من Aspose. لا يلزم تثبيت Adobe Acrobat Professional على النظام لتوليد مستندات PDF باستخدام Aspose.PDF for JasperReports.
-```
+لإنشاء مستندات PDF، يعتمد Aspose.PDF for JasperReports على إصدار مدمج من [Aspose.PDF for Java](https://products.aspose.com/pdf/java/)، المكتبة الرائدة في السوق من Aspose. لا يلزم تثبيت Adobe Acrobat Professional على النظام لإنشاء مستندات PDF باستخدام Aspose.PDF لـ JasperReports.
+
+
+
