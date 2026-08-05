@@ -44,5 +44,4 @@ stsadm.exe -o execadmsvcjobs
 
 **Note:** You will receive a warning when running deployment step if Windows SharePoint Services Administration service is not started. Stsadm.exe relies on this service and Windows SharePoint Timer Service to replicate solution data across the farm. If these services are not running on your server farm, you may need to deploy the license at each server.
 
-
 {{% /alert %}}

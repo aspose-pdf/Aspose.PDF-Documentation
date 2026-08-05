@@ -20,4 +20,4 @@ Evaluation mode injects an Evaluation Warning into exported documents. When you 
 
 **Aspose.PDF for SharePoint injects an Evaluation Warning when working in the evaluation mode.**
 
-![todo:image_alt_text](evaluate-aspose-pdf_1.png)
+![Evaluation Warning](evaluate-aspose-pdf_1.png)
