@@ -16,7 +16,6 @@ When you are happy with the evaluation version, [purchase a license](http://www.
 
 {{% /alert %}}
 
-
 The license is available for download from the order page after the order was paid. The license is a clear text, digitally signed XML file. The license contains information such as the client name, the purchased product and the type of the license. Do not modify the content of the license file: it invalidates the license.
 
 There are several ways to activate a license:
@@ -26,13 +25,15 @@ There are several ways to activate a license:
 - [Set an exporter parameter in **applicationContext.xml**](/pdf/jasperreports/working-with-jasperserver/).
 
 The first two are used with JasperReports, the last with JasperServer.
-#### **Call setLicense**
-<ins> **This method is used with JasperReports.**
+
+## Call setLicense
+
+This method is used with JasperReports.
 
 1. Download the license to your computer and copy it to the appropriate folder (for example your application's folder or JasperReports\lib).
 2. Add the following code to your project:
 
-```
+```java
 import com.aspose.pdf.jr3_7_0.jasperreports.*;
 try
 { 
@@ -51,14 +52,14 @@ catch(Exception ex)
 
 ```
 
-#### **Set the licenseFile Exporter Parameter in the Code**
+## Set the licenseFile Exporter Parameter in the Code
 
-<ins> **This method is used with JasperReports.**
+This method is used with JasperReports.
 
 1. Download the license to your computer and copy it to the appropriate folder (for example your application's folder or JasperReports\lib).
 2. Add the following code to your project:
 
-```
+```java
 
 import com.aspose.pdf.jr3_7_0.jasperreports.*;
 

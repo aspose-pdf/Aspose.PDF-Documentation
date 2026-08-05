@@ -8,7 +8,7 @@ description: Step-by-step installation guide for Aspose.PDF for JasperReports. S
 lastmod: "2021-06-05"
 ---
 
-**This section includes the following topics:**
+This section includes the following topics:
 
 - [System Requirements](/pdf/jasperreports/system-requirements/)
 - [Integration with ](/pdf/jasperreports/integration-with-jasperreports/)

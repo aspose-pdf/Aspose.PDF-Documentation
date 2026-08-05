@@ -8,13 +8,16 @@ description: Learn about supported file formats in Aspose.PDF for JasperReports.
 lastmod: "2021-06-05"
 ---
 
-## <ins>**Supported Load Formats**
+## Supported Load Formats
+
 The following table indicates the file formats that Aspose.PDF for JasperReports can load.
 
 |**Format**|**Description**|
 | :- | :- |
 |JRXML|JasperReports Layout File|
-## <ins>**Supported Save Formats**
+
+## Supported Save Formats
+
 The following table indicates the file formats in which the document can be saved by using Aspose.PDF for JasperReports. 
 
 |**Format**|**Description**|

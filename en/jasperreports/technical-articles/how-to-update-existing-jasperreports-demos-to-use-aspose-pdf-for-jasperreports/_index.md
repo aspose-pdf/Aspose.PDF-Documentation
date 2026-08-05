@@ -13,7 +13,8 @@ lastmod: "2021-06-05"
 Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF. These demos are based on standard JasperReports demos that have been modified to demonstrate how to use new exporters. This tutorial, goes through the steps required to update the existing JasperReports demos to use Aspose.PDF for JasperReports.
 
 {{% /alert %}}
-### **Updating Demos to use Aspose.PDF**
+
+## Updating Demos to use Aspose.PDF
 
 {{% alert color="primary" %}}
 
@@ -33,7 +34,7 @@ Note: demos will run from ```<InstallDir>``` \jasperreports\demo\samples because
 7. Locate the for else if (TASK_PDF.equals(taskName)) code segment and copy the whole segment.
 8. Paste the code snippet under same segment.
 
-```
+```java
  else if (TASK_PDF.equals(taskName))
 {
   File sourceFile = new File(fileName);
@@ -52,7 +53,7 @@ Note: demos will run from ```<InstallDir>``` \jasperreports\demo\samples because
 }
 ```
 
-```
+```text
 update
 else if (TASK_PDF.equals(taskName))
 as
@@ -63,10 +64,11 @@ with
 com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new
 com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
 ```
+
 9. Open the **build.xml** file.
 10. Make a copy of the following segment and place it inside the same file:
 
-```
+```xml
  <target name="pdf" description="Generat PDF via Aspose.PDF for JasperReports.">
     <java classname="${class.name}">
         <arg value="pdf"/>
@@ -76,7 +78,7 @@ com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
 </target>
 ```
 
-```
+```diff
 update  name="pdf"  as   name="aspose_pdf"
 update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 ```

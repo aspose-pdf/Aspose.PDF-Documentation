@@ -8,7 +8,7 @@ description: Take a feature tour of Aspose.PDF for JasperReports. Explore tools 
 lastmod: "2021-06-05"
 ---
 
-**This section includes the following topics:**
+This section includes the following topics:
 
 - [Easy and Lightweight Deployment](/pdf/jasperreports/easy-and-lightweight-deployment/)
 - [Simple and Affordable Licensing](/pdf/jasperreports/simple-and-affordable-licensing/)

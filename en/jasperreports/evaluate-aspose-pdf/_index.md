@@ -22,7 +22,6 @@ Evaluation mode injects an Evaluation Warning into exported documents. When you 
 
 **Aspose.PDF for JasperReports injects an Evaluation Warning when working in the evaluation mode.**
 
-
-![todo:image_alt_text](evaluate-aspose-pdf_1.png)
+![Evaluate Aspose.PDF](evaluate-aspose-pdf_1.png)
 
 {{% /alert %}}

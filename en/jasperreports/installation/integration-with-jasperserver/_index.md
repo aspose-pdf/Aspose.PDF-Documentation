@@ -18,11 +18,13 @@ In following steps <InstallDir> stands for the JasperServer installation directo
 
 {{% alert color="primary" %}}
 
-1. Add the following new exporter properties to the **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file.
+1. Add the following new exporter properties to the
+
+**<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file.
 
 {{% /alert %}}
 
-```
+```xml
  <bean id="AsposePdfExporter" class="com.aspose.pdf.jr3_7_0.jasperreports.AsposeServerPdfExporter" parent="baseReportExporter">
    <property name="exportParameters" ref="AsposeExportParameters"/>
    <property name="setResponseContentLength" value="true"/>
@@ -37,13 +39,16 @@ In following steps <InstallDir> stands for the JasperServer installation directo
 </bean>
 
 ```
+
 {{% alert color="primary" %}}
 
-2. Locate the <util:map id=”exporterConfigMap> element in the **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file and add the following lines:
+2. Locate the <util:map id=”exporterConfigMap> element in the 
+
+**<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file and add the following lines:
 
 {{% /alert %}}
 
-```
+```xml
  <util:map id="exporterConfigMap">
 
    <entry key="pdf" value-ref="pdfExporterConfiguration"/>
@@ -69,7 +74,7 @@ In following steps <InstallDir> stands for the JasperServer installation directo
   
 {{% /alert %}}
 
-```
+```xml
 <bean id="AsposeExportParameters" class="com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
 <property name="localizedFontMap" ref="localePdfFontMap"/>
 
@@ -80,12 +85,13 @@ jasperserver/WEB-INF/Aspose.PDF.JasperReports.lic"/>
 </bean>
 
 ```
+
 {{% alert color="primary" %}}
 
 6. Run JasperServer and open any report to view. If the previous steps were performed properly, you will see an icon for export via Aspose.PDF for JasperReports in the list of available formats.
 
    **Aspose.PDF for JasperReports is integrated**
 
-![todo:image_alt_text](integration-with-jasperserver_1.png)
+![Integration with JasperServer](integration-with-jasperserver_1.png)
 
 {{% /alert %}}

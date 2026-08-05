@@ -13,7 +13,9 @@ lastmod: "2021-06-05"
 Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF formats from your application. The demos are standard JasperReports demos that have been modified to demonstrate how to use new exporters.
 
 {{% /alert %}}
-### **Running Aspose.PDF for JasperReports Demos**
+
+## Running Aspose.PDF for JasperReports Demos
+
 To run Aspose.PDF for JasperReports demos:
 
 {{% alert color="primary" %}}
