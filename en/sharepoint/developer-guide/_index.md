@@ -8,7 +8,7 @@ lastmod: "2020-12-16"
 description: Developer Guide of PDF SharePoint API covers topics such as exporting items to PDF, add watermark and convert different formats to PDF and merge PDF files.
 ---
 
-## **Articles in this section**
+## Articles in this section
 
 - [Export a Particular Item from a List](/pdf/sharepoint/export-a-particular-item-from-a-list/)
 - [Add Watermark to PDF](/pdf/sharepoint/add-watermark-to-pdf/)
