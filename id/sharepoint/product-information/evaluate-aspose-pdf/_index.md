@@ -1,23 +1,24 @@
----
-title: Evaluasi Aspose.Pdf untuk SharePoint
-linktitle: Evaluasi
+﻿---
+title: Evaluasi Aspose.PDF untuk SharePoint
+linktitle: Mengevaluasi
 type: docs
 weight: 50
 url: /id/sharepoint/evaluate-aspose-pdf/
-lastmod: "2026-06-18"
-description: Manfaatkan evaluasi gratis API PDF SharePoint karena tidak memiliki batas waktu, dan dukungan teknis gratis juga disediakan untuk pengguna evaluasi.
+lastmod: "2020-12-16"
+description: Manfaatkan evaluasi gratis PDF SharePoint API karena tidak memiliki batasan waktu, dan dukungan teknis gratis juga disediakan untuk pengguna evaluasi.
 ---
 
 {{% alert color="primary" %}}
 
-Pastikan untuk memanfaatkan evaluasi gratis Aspose.PDF untuk SharePoint karena tidak memiliki batas waktu, dan dukungan teknis gratis juga disediakan untuk pengguna evaluasi.
+Pastikan untuk memanfaatkan evaluasi Aspose.PDF untuk SharePoint gratis karena tidak memiliki batasan waktu, dan dukungan teknis gratis juga disediakan untuk pengguna evaluasi.
 
 {{% /alert %}}
 
-Ini adalah unduhan yang sama untuk versi evaluasi dan versi berbayar Aspose.PDF untuk SharePoint. Cukup unduh Aspose.PDF untuk SharePoint dari halaman unduhan, instal, dan secara default akan berjalan dalam mode evaluasi.
+Ini adalah unduhan yang sama untuk evaluasi dan versi berbayar Aspose.PDF untuk SharePoint. Cukup unduh Aspose.PDF untuk SharePoint dari halaman unduh, instal dan itu akan bekerja dalam mode evaluasi secara default.
 
-Mode evaluasi menyisipkan Peringatan Evaluasi ke dalam dokumen yang diekspor. Saat Anda telah membeli lisensi, cukup instal solusi lisensi di atas salinan evaluasi Aspose.PDF untuk SharePoint yang telah diinstal dan kemudian akan berjalan dalam mode berlisensi.
+Mode Evaluasi memasukkan Peringatan Evaluasi ke dalam dokumen yang diekspor. Ketika Anda telah membeli lisensi, cukup instal solusi lisensi melalui salinan evaluasi Aspose.PDF untuk SharePoint yang diinstal dan kemudian akan berfungsi dalam mode berlisensi.
 
-**Aspose.PDF for SharePoint menyisipkan Peringatan Evaluasi saat bekerja dalam mode evaluasi.**
+**Aspose.PDF untuk SharePoint memasukkan Peringatan Evaluasi saat bekerja dalam mode evaluasi.**
 
-![todo:image_alt_text](evaluate-aspose-pdf_1.png)
+![Peringatan Evaluasi](evaluate-aspose-pdf_1.png)
+

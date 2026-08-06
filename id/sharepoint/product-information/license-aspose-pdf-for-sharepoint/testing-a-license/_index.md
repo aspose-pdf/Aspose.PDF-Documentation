@@ -1,15 +1,16 @@
----
+﻿---
 title: Menguji Lisensi
 linktitle: Menguji Lisensi
 type: docs
 weight: 20
 url: /id/sharepoint/testing-a-license/
-lastmod: "2026-06-18"
-description: Untuk menguji bahwa lisensi untuk PDF SharePoint API telah dipasang dengan sukses, konversikan dokumen apa pun ke format yang diinginkan dan seharusnya dihasilkan tanpa Evaluation Warning.
+lastmod: "2020-12-16"
+description: Untuk menguji apakah lisensi PDF SharePoint API telah berhasil diinstal, konversikan dokumen apa pun ke format yang diinginkan dan dokumen tersebut harus dibuat tanpa Peringatan Evaluasi apa pun.
 ---
 
 {{% alert color="primary" %}}
 
-Untuk menguji bahwa lisensi telah dipasang dengan benar, konversikan dokumen apa pun ke format yang diinginkan. Jika dokumen tidak mengandung Evaluation Warning, lisensi telah diaktifkan dengan sukses.
+Untuk menguji apakah lisensi telah diinstal dengan benar, konversikan dokumen apa pun ke format yang diinginkan. Jika dokumen tidak berisi Peringatan Evaluasi, lisensi berhasil diaktifkan.
 
 {{% /alert %}}
+

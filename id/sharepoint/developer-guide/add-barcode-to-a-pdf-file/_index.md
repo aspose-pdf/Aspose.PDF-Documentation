@@ -1,33 +1,34 @@
----
-title: Tambahkan Kode Bar ke File PDF di SharePoint
-linktitle: Tambahkan Kode Bar ke File PDF
+﻿---
+title: Tambahkan Kode Batang ke File PDF di SharePoint
+linktitle: Tambahkan Kode Batang ke File PDF
 type: docs
 weight: 40
 url: /id/sharepoint/add-barcode-to-a-pdf-file/
-lastmod: "2026-06-18"
-description: API PDF SharePoint memungkinkan Anda menambahkan kode bar ke dokumen PDF seperti yang ditunjukkan pada gambar di bawah.
+lastmod: "2020-12-16"
+description: PDF SharePoint API memungkinkan Anda menambahkan kode batang ke dokumen PDF seperti yang ditunjukkan pada gambar di bawah.
 ---
 
-## **Tambahkan Kode Bar ke File PDF**
+## Tambahkan Kode Batang ke File PDF
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint memungkinkan Anda menambahkan kode bar ke dokumen PDF. Pengguna dapat menambahkan kode bar ke sudut kiri bawah setiap halaman dokumen PDF yang ditambahkan ke perpustakaan. Gambar di bawah memberikan gambaran tentang bagaimana tampilan dokumen PDF dengan kode bar yang ditambahkan.
+Aspose.PDF untuk SharePoint memungkinkan Anda menambahkan kode batang ke dokumen PDF. Pengguna dapat menambahkan kode batang di pojok kiri bawah setiap halaman dokumen PDF yang ditambahkan ke perpustakaan. Gambar di bawah memberikan gambaran bagaimana tampilan dokumen PDF dengan tambahan barcode.
 
-**Barcode di sudut kiri bawah**
+### Barcode di pojok kiri bawah
 
-![todo:image_alt_text](add-barcode-to-a-pdf-file_1.png)
+![Tambahkan Barcode ke File PDF-contoh 1](add-barcode-to-a-pdf-file_1.png)
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Untuk mengaktifkan fitur barcode untuk perpustakaan tertentu, gunakan tombol **Watermark Settings** di tab **Aspose PDF Watermark Tools** pada **Library Tools** seperti yang ditunjukkan di bawah.
+Untuk mengaktifkan fitur kode batang untuk perpustakaan tertentu, gunakan tombol **Pengaturan Tanda Air** di tab **Ajukan Alat Tanda Air PDF** di **Alat Perpustakaan** seperti yang ditunjukkan di bawah ini.
 
-**Pengaturan watermark PDF**
+### Pengaturan tanda air PDF
 
-![todo:image_alt_text](add-barcode-to-a-pdf-file_2.png)
+![Tambahkan Barcode ke File PDF-contoh 2](add-barcode-to-a-pdf-file_2.png)
 
-Setelah Anda mengaktifkan barcode untuk perpustakaan tertentu, Aspose.PDF for SharePoint menambahkan barcode ke setiap dokumen PDF yang ditambahkan ke perpustakaan tersebut.
+Setelah Anda mengaktifkan kode batang untuk perpustakaan tertentu, Aspose.PDF untuk SharePoint menambahkan kode batang ke dokumen PDF apa pun yang ditambahkan ke perpustakaan itu.
 
 {{% /alert %}}
+

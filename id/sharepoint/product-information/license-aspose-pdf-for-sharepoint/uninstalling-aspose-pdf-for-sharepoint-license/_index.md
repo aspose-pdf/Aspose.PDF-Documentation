@@ -1,33 +1,34 @@
----
-title: Mencopot Lisensi Aspose.Pdf untuk SharePoint
-linktitle: Mencopot Lisensi Aspose.Pdf untuk SharePoint
+﻿---
+title: Menghapus instalasi Aspose.PDF untuk Lisensi SharePoint
+linktitle: Menghapus instalasi Aspose.PDF untuk Lisensi SharePoint
 type: docs
 weight: 30
 url: /id/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
-lastmod: "2026-06-18"
-description: Silakan ikuti langkah-langkah yang disebutkan dalam artikel ini untuk mencopot Lisensi PDF SharePoint API.
+lastmod: "2020-12-16"
+description: Silakan ikuti langkah-langkah yang disebutkan dalam artikel ini untuk menghapus instalasi Lisensi PDF SharePoint API.
 ---
 
-## Langkah Pencopotan
+## Langkah-Langkah Penghapusan Instalasi
 
 {{% alert color="primary" %}}
 
-Untuk mencopot lisensi Aspose.PDF untuk SharePoint, silakan gunakan langkah-langkah di bawah ini dari konsol server.
+Untuk menghapus instalasi Aspose.PDF untuk lisensi SharePoint, silakan gunakan langkah-langkah di bawah ini dari konsol server.
 
-1. Tarik kembali solusi lisensi dari farm:
+1. Cabut solusi lisensi dari peternakan:
 
-  stsadm.exe -o retractsolution -name Aspose.PDF.SharePoint.License.wsp -immediate
+  stsadm.exe -o retractsolution -nama Aspose.PDF.SharePoint.License.wsp -langsung
 
-2. Jalankan pekerjaan timer administratif untuk menyelesaikan penarikan segera:
+2. Jalankan tugas pengatur waktu administratif untuk segera menyelesaikan pencabutan:
 
   stsadm.exe -o execadmsvcjobs
 
-3. Tunggu penarikan selesai. Anda dapat menggunakan Central   
+3. Tunggu hingga pencabutan selesai. Anda dapat menggunakan Pusat   
 
-  Administration untuk memeriksa apakah penarikan selesai di Central Administration -> Operations -> Solution Management
+  Administrasi untuk memeriksa apakah pencabutan selesai di bawah Administrasi Pusat -> Operasi -> Manajemen Solusi
 
 4. Hapus solusi dari penyimpanan solusi SharePoint:
 
-  stsadm.exe -o deletesolution -name Aspose.PDF.SharePoint.License.wsp
+  stsadm.exe -o deletesolution -nama Aspose.PDF.SharePoint.License.wsp
 
 {{% /alert %}}
+

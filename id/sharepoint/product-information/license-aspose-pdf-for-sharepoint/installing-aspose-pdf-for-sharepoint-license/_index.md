@@ -1,48 +1,48 @@
----
-title: Menginstal Lisensi Aspose.Pdf untuk SharePoint
-linktitle: Menginstal Lisensi Aspose.Pdf untuk SharePoint
+﻿---
+title: Menginstal Aspose.PDF untuk Lisensi SharePoint
+linktitle: Menginstal Aspose.PDF untuk Lisensi SharePoint
 type: docs
 weight: 10
 url: /id/sharepoint/installing-aspose-pdf-for-sharepoint-license/
-lastmod: "2026-06-18"
-description: Setelah Anda puas dengan evaluasi Anda, Anda dapat membeli lisensi untuk API PDF SharePoint dan mengikuti petunjuk instalasi untuk menerapkannya.
+lastmod: "2020-12-16"
+description: Once you are happy with your evaluation, you can purchase a license for PDF SharePoint API and follow the installation instructions to apply it.
 ---
 
 {{% alert color="primary" %}}
 
-Setelah Anda puas dengan evaluasi Anda, Anda dapat [membeli lisensi](https://purchase.aspose.com/buy). Sebelum membeli pastikan Anda memahami dan menyetujui ketentuan langganan lisensi.
+Once you are happy with your evaluation, you can [purchase a license](https://purchase.aspose.com/buy). Before purchasing make sure you understand and agree to the license subscription terms.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Lisensi akan dikirimkan ke email Anda setelah pesanan dibayar. Lisensi berupa arsip .zip yang berisi paket solusi SharePoint reguler.
+Lisensi akan dikirimkan melalui email kepada Anda setelah pesanan dibayar. Lisensinya adalah arsip .zip yang berisi paket solusi SharePoint reguler.
 
 Arsip ini berisi:
 
 - Aspose.PDF.SharePoint.License.wsp
 
-File paket solusi SharePoint. Lisensi Aspose.PDF untuk SharePoint dikemas sebagai solusi SharePoint untuk memudahkan penyebaran/pengambilan kembali di seluruh farm server.
+SharePoint solution package file. Aspose.PDF for SharePoint License is packaged as a SharePoint solution to facilitate deployment/retraction across the server farm.
 
 - readme.txt
 
-Instruksi pemasangan lisensi. Pemasangan lisensi dilakukan dari konsol server melalui stsadm.exe. Langkah-langkah yang diperlukan untuk memasang lisensi diberikan di bawah ini.
+License installation instructions. License installation is performed from the server console via stsadm.exe. The steps required to install the license are given below.
 
-**Catatan:** Jalur-jalur dihilangkan demi kejelasan. Anda mungkin perlu menambahkan jalur sebenarnya ke stsadm.exe dan/atau file solusi saat mengeksekusinya.
+**Note:** The paths are omitted for clarity. You may need to add the actual path to stsadm.exe and/or solution file when executing them.
 
 1. Jalankan stsadm untuk menambahkan solusi ke penyimpanan solusi SharePoint:
 
-stsadm.exe -o addsolution -filename Aspose.PDF.SharePoint.License.wsp
+stsadm.exe -o tambahkan solusi -nama file Aspose.PDF.SharePoint.License.wsp
 
-2. Sebarkan solusi ke semua server di farm:
+2. Deploy the solution to all servers in the farm:
 
-stsadm.exe -o deploysolution -name Aspose.PDF.SharePoint.License.wsp -immediate -force
+stsadm.exe -o deploysolution -nama Aspose.PDF.SharePoint.License.wsp -langsung -kekuatan
 
-3. Jalankan pekerjaan timer administratif untuk menyelesaikan penyebaran secara langsung.
+3. Jalankan tugas pengatur waktu administratif untuk segera menyelesaikan penerapan.
 
 stsadm.exe -o execadmsvcjobs
 
-**Note:** Anda akan menerima peringatan saat menjalankan langkah penyebaran jika layanan Windows SharePoint Services Administration tidak dimulai. Stsadm.exe bergantung pada layanan ini dan Windows SharePoint Timer Service untuk mereplikasi data solusi di seluruh farm. Jika layanan ini tidak berjalan di farm server Anda, Anda mungkin perlu menyebarkan lisensi di setiap server.
-
+**Catatan:** Anda akan menerima peringatan saat menjalankan langkah penerapan jika layanan Administrasi Layanan Windows SharePoint tidak dimulai. Stsadm.exe mengandalkan layanan ini dan Layanan Windows SharePoint Timer untuk mereplikasi data solusi di seluruh farm. Jika layanan ini tidak berjalan di server farm Anda, Anda mungkin perlu menyebarkan lisensi di setiap server.
 
 {{% /alert %}}
+

@@ -1,83 +1,76 @@
----
-title: Menginstal Aspose.Pdf untuk SharePoint
-linktitle: Menginstal Aspose.Pdf untuk SharePoint
+﻿---
+title: Menginstal Aspose.PDF untuk SharePoint
+linktitle: Installing Aspose.PDF for SharePoint
 type: docs
 weight: 20
 url: /id/sharepoint/installing-aspose-pdf-for-sharepoint/
-lastmod: "2026-06-18"
-description: API PDF SharePoint dipaketkan sebagai solusi SharePoint untuk menyederhanakan penyebaran farm server, penarikan kembali, aktivasi, dan deaktivasi.
+lastmod: "2020-12-16"
+description: PDF SharePoint API dikemas sebagai solusi SharePoint untuk menyederhanakan penerapan, pencabutan, aktivasi, dan penonaktifan server farm.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint dapat diunduh sebagai arsip Aspose.PDF.SharePoint.zip.
+Aspose.PDF untuk SharePoint dapat diunduh sebagai arsip Aspose.PDF.SharePoint.zip.
 
 {{% /alert %}}
 
-**Arsip ini berisi:**
+Arsip ini berisi:
 
 - Aspose.PDF.SharePoint.wsp
-  File solusi SharePoint. Aspose.PDF for SharePoint dikemas sebagai solusi SharePoint untuk memfasilitasi penyebaran/penarikan kembali dan aktivasi/deaktivasi fitur di seluruh farm server.
+  File solusi SharePoint. Aspose.PDF untuk SharePoint dikemas sebagai solusi SharePoint untuk memfasilitasi penerapan/pencabutan dan aktivasi/penonaktifan fitur di seluruh server farm.
 - Aspose_LicenseAgreement.rtf
 
-**Perjanjian lisensi pengguna akhir:**
+**End user license agreement:**
 
-- Aspose.PDF for SharePoint.pdf
+- Aspose.PDF untuk SharePoint.pdf
 
 **Dokumentasi pengguna:**
 
-- Aspose.PDF for SharePoint Documentation.chm
+- Aspose.PDF untuk Dokumentasi SharePoint.chm
 
-**Dokumentasi pengguna dengan referensi API Publik:**
+**User documentation with Public API reference:**
 
 - setup.exe
 
-**Program pemasangan:**
+**Setup program:**
 
 - setup.exe.config
 
-**File konfigurasi pemasangan:**
+**Setup configuration file:**
 
-Program pemasangan memeriksa kondisi berikut sebelum melanjutkan:
+Program pengaturan memeriksa kondisi berikut sebelum melanjutkan:
 
-- SharePoint 2010 terinstal.
-- Pengguna memiliki izin untuk menginstal solusi SharePoint.
-- Database SharePoint sedang online.
-- Layanan SharePoint Administration sudah dimulai.
-- Layanan SharePoint Timer sudah dimulai. Layanan SharePoint Administration dan Timer diperlukan karena beberapa tindakan penyiapan mengandalkan pekerjaan timer untuk menyebar ke semua server di farm server.
+- SharePoint 2010 is installed.
+- The user has permission to install SharePoint solutions.
+- SharePoint database is online.
+- Layanan Administrasi SharePoint dimulai.
+- SharePoint Timer service is started. SharePoint Administration service and Timer service are needed because some setup actions rely on a timer job to propagate to all servers in the server farm.
 
 **Untuk menginstal Aspose.PDF untuk SharePoint:**
 
-- Ekstrak zip Aspose.PDF.SharePoint ke drive lokal.
-- Jalankan setup.exe dan ikuti instruksi di layar.
+- Unpack Aspose.PDF.SharePoint zip to the local drive.
+- Run setup.exe and follow the instructions on the screen.
 
-**Program pemasangan melakukan tindakan berikut:**
+**The setup program performs the following actions:**
 
-- Periksa prasyarat instalasi. Pemasangan tidak akan dilanjutkan jika ada pemeriksaan yang gagal.
+- Check installation prerequisites. Setup will not continue if any check fails.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_1.png)
+![Check Installation Prerequisites](installing-aspose-pdf-for-sharepoint_1.png)
 
+- Display End User License Agreement. The user must accept the agreement in order to proceed.
 
+![Display License Agreement](installing-aspose-pdf-for-sharepoint_2.png)
 
-- Tampilkan Perjanjian Lisensi Pengguna Akhir. Pengguna harus menerima perjanjian tersebut untuk melanjutkan.
+- Tampilkan dialog pemilihan target penerapan. Pengguna memilih aplikasi web dan kumpulan situs di mana fitur tersebut akan diaktifkan. Lihat gambar di bawah ini.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_2.png)
+![Display Deployment Target Selection](installing-aspose-pdf-for-sharepoint_3.png)
 
+- Deploy the feature to the server farm.
 
+![Deploy Feature](installing-aspose-pdf-for-sharepoint_4.png)
 
-- Tampilkan dialog pemilihan target penyebaran. Pengguna memilih aplikasi web dan koleksi situs tempat fitur akan diaktifkan. Lihat gambar di bawah.
+- Activate the feature for the selected site collections and configure their parent web applications.
+- Menampilkan daftar aplikasi web dan kumpulan situs tempat fitur tersebut telah disebarkan dan diaktifkan.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_3.png)
+![Display Deployed Features](installing-aspose-pdf-for-sharepoint_5.png)
 
-
-
-- Sebarkan fitur ke farm server.
-
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_4.png)
-
-
-
-- Aktifkan fitur untuk koleksi situs yang dipilih dan konfigurasikan aplikasi web induknya.
-- Tampilkan daftar aplikasi web dan koleksi situs tempat fitur telah diterapkan dan diaktifkan.
-
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_5.png)
