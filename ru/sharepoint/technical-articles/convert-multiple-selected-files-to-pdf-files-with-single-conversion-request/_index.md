@@ -1,16 +1,16 @@
----
-title: Конвертировать несколько выбранных файлов в PDF-файлы с одним запросом на конвертацию
-linktitle: Конвертировать несколько выбранных файлов в PDF-файлы с одним запросом на конвертацию
+﻿---
+title: Конвертируйте несколько выбранных файлов в файлы PDF с помощью одного запроса на преобразование.
+linktitle: Конвертируйте несколько выбранных файлов в файлы PDF с помощью одного запроса на преобразование.
 type: docs
 weight: 50
 url: /ru/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
-lastmod: "2026-06-18"
-description: PDF SharePoint Library позволяет конвертировать несколько выбранных файлов в PDF-файлы одной операцией конвертации.
+lastmod: "2020-12-16"
+description: Библиотека PDF SharePoint позволяет конвертировать несколько выбранных файлов в файлы PDF с помощью одной операции преобразования.
 ---
 
 {{% alert color="primary" %}}
 
-В этой статье показано, как конвертировать несколько выбранных файлов в PDF-файлы одной операцией конвертации с использованием Aspose.PDF for SharePoint.
+В этой статье показано, как преобразовать несколько выбранных файлов в файлы PDF с помощью одной операции преобразования с помощью Aspose.PDF для SharePoint.
 
 {{% /alert %}}
 
@@ -18,24 +18,25 @@ description: PDF SharePoint Library позволяет конвертирова�
 
 {{% alert color="primary" %}}
 
-Чтобы конвертировать несколько выбранных файлов, выполните следующие шаги:
+Чтобы преобразовать несколько выбранных файлов, выполните следующие действия:
 
 1. Выберите файлы для конвертации
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
+![Выберите файлы](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
 
-2. Щелкните вкладку Aspose Tools в Library Tools
+2. Перейдите на вкладку «Инструменты Aspose» в разделе «Инструменты библиотеки».
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
+![Нажмите «Инструменты Aspose».](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
 
-3. Щелкните Convert to PDF, чтобы преобразовать все выбранные файлы в полученные PDF‑файлы.
+3. Нажмите «Преобразовать в PDF», чтобы преобразовать все выбранные файлы в конечные файлы PDF.
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_3.jpg)
+![Конвертировать в PDF](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_3.jpg)
 
-4. Будет показано окно для загрузки преобразованных файлов.
+4. Появится приглашение загрузить преобразованные файлы.
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_4.jpg)
+![Загрузить конвертированные файлы](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_4.jpg)
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_5.jpg)
+![Загрузить конвертированные файлы](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_5.jpg)
 
 {{% /alert %}}
+

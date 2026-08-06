@@ -1,36 +1,37 @@
----
-title: Объединить PDF-файлы в SharePoint
+﻿---
+title: Объединение PDF-файлов в SharePoint
 linktitle: Объединить PDF-файлы
 type: docs
 weight: 90
 url: /ru/sharepoint/merge-pdf-files/
-lastmod: "2026-06-18"
-description: С помощью PDF SharePoint API вы можете объединить несколько PDF-файлов из библиотеки документов SharePoint в один PDF.
+lastmod: "2020-12-16"
+description: Using the PDF SharePoint API, you can merge multiple PDF files from SharePoint Document library in a single PDF.
 ---
 
 {{% alert color="primary" %}}
 
-Объединение/конкатенация нескольких PDF-файлов в один PDF-файл является очень популярной и востребованной функцией в приложениях для обработки PDF-файлов. Мы внедрили эту важную функцию в [Aspose.PDF for SharePoint 2.2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.2.0/) версия. Объединение двух файлов — это создание единого файла путем добавления второго файла в конец первого файла.
+Объединение/конкатенация нескольких файлов PDF в один файл PDF является очень популярной и востребованной функцией в приложениях для обработки файлов PDF. Мы представили эту важную функцию в версии [Aspose.PDF for SharePoint 2.2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.2.0/). Объединение двух файлов — это создание одного файла путем добавления второго файла в конец первого файла.
 
 {{% /alert %}}
 
-## **Объединить PDF‑файлы**
+## Объединить PDF-файлы
 
-Объедините несколько PDF‑файлов из библиотеки документов SharePoint в один PDF следующим образом:
+Merge multiple PDF files from SharePoint Document library in a single PDF as following:
 
-1.  Выберите PDF‑файлы из библиотеки документов SharePoint для объединения.
+1.  Select the PDF files from SharePoint Document library to be merged.
 
-![todo:image_alt_text](merge-pdf-files_1.png)
+![Selecting PDF files](merge-pdf-files_1.png)
 
-2.  Нажмите вкладку Aspose Tools в Library Tools.
+2.  Click Aspose Tools tab in Library Tools.
 
-![todo:image_alt_text](merge-pdf-files_2.png)
+![Click Aspose Tools](merge-pdf-files_2.png)
 
-3.  Нажмите опцию Merge to PDF в Library Tools, чтобы объединить все выбранные PDF‑файлы в результирующий PDF.
+3.  Click Merge to PDF option from Library Tools to merge all the selected PDF files to resultant PDF.
 
-![todo:image_alt_text](merge-pdf-files_3.png)
+![Merge to PDF](merge-pdf-files_3.png)
 
-4.  Появится запрос на загрузку/сохранение результирующего PDF‑файла с соответствующим именем.
+4.  Prompt will be shown to download/save the resultant PDF file with appropriate name.
 
-![todo:image_alt_text](merge-pdf-files_4.png)
+![Output](merge-pdf-files_4.png)
+
 

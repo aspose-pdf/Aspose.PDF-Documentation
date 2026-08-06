@@ -1,22 +1,23 @@
----
+﻿---
 title: Системные требования
 linktitle: Системные требования
 type: docs
 weight: 10
 url: /ru/sharepoint/system-requirements/
-lastmod: "2026-06-18"
-description: PDF SharePoint API имеет серверные и клиентские требования, а также необходимость наличия компьютера с установленным Microsoft SharePoint Server.
+lastmod: "2020-12-16"
+description: PDF SharePoint API предъявляет требования к серверу и клиенту, а также необходимость наличия компьютера под управлением Microsoft SharePoint Server.
 ---
 
-## **Требования к серверу**
+## Требования к серверу
 
-Для установки Aspose.PDF for SharePoint вам потребуется компьютер с установленным Microsoft SharePoint Server 2010.
+To install Aspose.PDF for SharePoint you need a computer running Microsoft SharePoint Server 2010.
 
-## **Требования к клиенту**
+## Требования клиента
 
-Вам нужен браузер для доступа к сайтам SharePoint. Aspose.PDF for SharePoint был протестирован со следующими браузерами:
+Для доступа к сайтам SharePoint вам понадобится браузер. Aspose.PDF для SharePoint был протестирован со следующими браузерами:
 
-- Microsoft Internet Explorer 8
-- Mozilla FireFox 3.5
-- Google Chrome 3
-- Safari 4
+- Microsoft Интернет Эксплорер 8
+- Мозилла ФайерФокс 3.5
+- Гугл Хром 3
+- Сафари 4
+

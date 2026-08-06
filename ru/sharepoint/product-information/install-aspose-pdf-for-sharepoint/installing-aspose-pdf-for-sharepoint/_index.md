@@ -1,34 +1,34 @@
----
-title: Установка Aspose.Pdf для SharePoint
-linktitle: Установка Aspose.Pdf для SharePoint
+﻿---
+title: Installing Aspose.PDF for SharePoint
+linktitle: Установка Aspose.PDF для SharePoint
 type: docs
 weight: 20
 url: /ru/sharepoint/installing-aspose-pdf-for-sharepoint/
-lastmod: "2026-06-18"
-description: PDF SharePoint API упакован как решение SharePoint для упрощения развертывания, отката, активации и деактивации фермы серверов.
+lastmod: "2020-12-16"
+description: PDF SharePoint API is packaged as a SharePoint solution to simplify server farm deployment, retraction, activation, and deactivation.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF для SharePoint можно загрузить в виде архива Aspose.PDF.SharePoint.zip.
+Aspose.PDF for SharePoint is downloadable as Aspose.PDF.SharePoint.zip archive.
 
 {{% /alert %}}
 
-**Этот архив содержит:**
+Этот архив содержит:
 
 - Aspose.PDF.SharePoint.wsp
-  Файл решения SharePoint. Aspose.PDF для SharePoint упакован как решение SharePoint для облегчения развертывания/отката и активации/деактивации функций в ферме серверов.
+  SharePoint solution file. Aspose.PDF for SharePoint is packaged as a SharePoint solution to facilitate deployment/retraction and feature activation/deactivation across the server farm.
 - Aspose_LicenseAgreement.rtf
 
-**Лицензионное соглашение конечного пользователя:**
+**End user license agreement:**
 
-- Aspose.PDF for SharePoint.pdf
+- Aspose.PDF для SharePoint.pdf
 
-**Документация пользователя:**
+**User documentation:**
 
-- Aspose.PDF for SharePoint Documentation.chm
+- Aspose.PDF для SharePoint Documentation.chm
 
-**Документация пользователя с публичным справочником API:**
+**Документация пользователя со ссылкой на общедоступный API:**
 
 - setup.exe
 
@@ -38,46 +38,39 @@ Aspose.PDF для SharePoint можно загрузить в виде архи�
 
 **Файл конфигурации установки:**
 
-Программа установки проверяет следующие условия перед продолжением:
+Прежде чем продолжить, программа установки проверяет следующие условия:
 
 - SharePoint 2010 установлен.
-- У пользователя есть разрешение устанавливать решения SharePoint.
-- База данных SharePoint онлайн.
+- У пользователя есть разрешение на установку решений SharePoint.
+- База данных SharePoint находится в сети.
 - Служба администрирования SharePoint запущена.
-- Служба таймера SharePoint запущена. Служба администрирования SharePoint и служба таймера нужны, потому что некоторые действия настройки зависят от задания таймера, которое распространяется на все серверы в ферме серверов.
+- Служба таймера SharePoint запущена. Служба администрирования SharePoint и служба таймера необходимы, поскольку некоторые действия по настройке зависят от задания таймера для распространения на все серверы в ферме серверов.
 
-**Для установки Aspose.PDF for SharePoint:**
+**Чтобы установить Aspose.PDF для SharePoint:**
 
-- Разархивируйте Aspose.PDF.SharePoint zip на локальном диске.
+- Распакуйте zip-архив Aspose.PDF.SharePoint на локальный диск.
 - Запустите setup.exe и следуйте инструкциям на экране.
 
 **Программа установки выполняет следующие действия:**
 
-- Проверьте предварительные требования к установке. Установка не продолжится, если какая‑либо проверка не будет пройдена.
+- Проверьте предварительные условия установки. Установка не продолжится, если какая-либо проверка не пройдена.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_1.png)
+![Check Installation Prerequisites](installing-aspose-pdf-for-sharepoint_1.png)
 
+- Отобразить лицензионное соглашение с конечным пользователем. Пользователь должен принять соглашение, чтобы продолжить.
 
+![Display License Agreement](installing-aspose-pdf-for-sharepoint_2.png)
 
-- Отобразить Лицензионное соглашение конечного пользователя. Пользователь должен принять соглашение, чтобы продолжить.
+- Отобразить диалоговое окно выбора цели развертывания. Пользователь выбирает веб-приложения и семейства веб-сайтов, в которых эта функция должна быть активирована. См. рисунок ниже.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_2.png)
+![Display Deployment Target Selection](installing-aspose-pdf-for-sharepoint_3.png)
 
+- Разверните эту функцию на ферме серверов.
 
+![Deploy Feature](installing-aspose-pdf-for-sharepoint_4.png)
 
-- Отобразить диалог выбора цели развертывания. Пользователь выбирает веб‑приложения и коллекции сайтов, где будет активирована функция. Смотрите рисунок ниже.
+- Активируйте эту функцию для выбранных семейств веб-сайтов и настройте их родительские веб-приложения.
+- Отображение списка веб-приложений и семейств веб-сайтов, в которых эта функция была развернута и активирована.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_3.png)
+![Display Deployed Features](installing-aspose-pdf-for-sharepoint_5.png)
 
-
-
-- Разверните функцию на серверной ферме.
-
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_4.png)
-
-
-
-- Активировать функцию для выбранных коллекций сайтов и настроить их родительские веб-приложения.
-- Отобразить список веб-приложений и коллекций сайтов, где функция была развернута и активирована.
-
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_5.png)

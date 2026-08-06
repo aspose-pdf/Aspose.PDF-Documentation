@@ -1,39 +1,39 @@
----
-title: Преобразовать HTML, текст и изображения в PDF в SharePoint
-linktitle: Преобразовать в PDF
+﻿---
+title: Преобразование HTML, текста и изображений в PDF в SharePoint
+linktitle: Конвертировать в PDF
 type: docs
 weight: 30
 url: /ru/sharepoint/convert-to-pdf/
-lastmod: "2026-06-18"
-description: PDF SharePoint API позволяет преобразовывать HTML‑файлы, текстовые файлы и изображения (JPG, PNG, GIF, TIFF, BMP) в формат PDF.
+lastmod: "2020-12-16"
+description: PDF SharePoint API позволяет конвертировать HTML-файлы, текстовые файлы и изображения (JPG, PNG, GIF, TIFF, BMP) в формат PDF.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint позволяет преобразовывать HTML‑файлы, текстовые файлы и изображения (JPG, PNG, GIF, TIFF, BMP) в формат PDF.
+Aspose.PDF для SharePoint позволяет конвертировать HTML-файлы, текстовые файлы и изображения (JPG, PNG, GIF, TIFF, BMP) в формат PDF.
 
 {{% /alert %}}
 
-
-## **Преобразовать документ в PDF**
+## Конвертировать документ в PDF
 
 {{% alert color="primary" %}}
 
 Чтобы преобразовать документ в PDF:
 
-1. Щёлкните **Convert to PDF** в меню ECB.
-1. Скачайте и сохраните полученный PDF‑файл.
+1. Нажмите **Конвертировать в PDF** в меню ЕЦБ.
+1. Загрузите и сохраните полученный PDF-файл.
 
-**Параметр Convert to PDF в меню ECB**
+Опция «Конвертировать в PDF» в меню ЕЦБ.
 
-![todo:image_alt_text](convert-to-pdf_1.jpg)
+![Конвертировать в PDF](convert-to-pdf_1.jpg)
 
 {{% /alert %}}
 
-## **Информация о PDF Creator**
+## Информация о создателе PDF-файлов
 
 {{% alert color="primary" %}}
 
-- Обратите внимание, что вы не можете задавать значения для полей **Application** и **Producer**, так как в этих полях будет отображаться Aspose Ltd. и Aspose.PDF for SharePoint x.x.x. 
+- Обратите внимание, что вы не можете установить значения для полей **Приложение** и **Производитель** , поскольку в этих полях будут отображаться Aspose Ltd. и Aspose.PDF for SharePoint x.x.x. 
 
 {{% /alert %}}
+

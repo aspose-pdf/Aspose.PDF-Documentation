@@ -1,23 +1,24 @@
----
-title: Оценить Aspose.Pdf for SharePoint
-linktitle: Оценить
+﻿---
+title: Оцените Aspose.PDF для SharePoint
+linktitle: Evaluate
 type: docs
 weight: 50
 url: /ru/sharepoint/evaluate-aspose-pdf/
-lastmod: "2026-06-18"
-description: Воспользуйтесь бесплатной оценкой PDF SharePoint API, так как она не имеет ограничения по времени, и бесплатная техническая поддержка также предоставляется пользователям оценки.
+lastmod: "2020-12-16"
+description: Take advantage of the free evaluation of PDF SharePoint API as it has no time limit, and free technical support is provided for evaluation users too.
 ---
 
 {{% alert color="primary" %}}
 
-Убедитесь, что вы воспользовались бесплатной оценкой Aspose.PDF for SharePoint, так как она не имеет ограничения по времени, и бесплатная техническая поддержка также предоставляется пользователям оценки.
+Make sure to take advantage of the free Aspose.PDF for SharePoint evaluation as it has no time limit, and free technical support is provided for evaluation users too.
 
 {{% /alert %}}
 
-Это один и тот же загрузочный файл как для оценочной, так и для платной версии Aspose.PDF for SharePoint. Просто скачайте Aspose.PDF for SharePoint со страницы загрузки, установите его, и он будет работать в режиме оценки по умолчанию.
+It is the same download for both the evaluation and the paid version of Aspose.PDF for SharePoint. Simply download Aspose.PDF for SharePoint from the download page, install it and it will work in the evaluation mode by default.
 
-Режим оценки вставляет предупреждение об оценке в экспортированные документы. После приобретения лицензии просто установите лицензионное решение поверх установленной оценочной копии Aspose.PDF for SharePoint, и тогда он будет работать в лицензированном режиме.
+В режиме оценки в экспортированные документы вводится предупреждение об оценке. Когда вы приобрели лицензию, просто установите лицензионное решение поверх установленной ознакомительной копии Aspose.PDF для SharePoint, и тогда оно будет работать в лицензионном режиме.
 
-**Aspose.PDF for SharePoint вставляет предупреждение об оценке при работе в режиме оценки.**
+**Aspose.PDF для SharePoint вводит оценочное предупреждение при работе в оценочном режиме.**
 
-![todo:image_alt_text](evaluate-aspose-pdf_1.png)
+![Evaluation Warning](evaluate-aspose-pdf_1.png)
+
