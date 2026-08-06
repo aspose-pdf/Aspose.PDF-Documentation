@@ -1,38 +1,38 @@
----
-title: تثبيت Aspose.Pdf لـ SharePoint
-linktitle: تثبيت Aspose.Pdf لـ SharePoint
+﻿---
+title: تثبيت Aspose.PDF لـ SharePoint
+linktitle: تثبيت Aspose.PDF لـ SharePoint
 type: docs
 weight: 20
 url: /ar/sharepoint/installing-aspose-pdf-for-sharepoint/
-lastmod: "2026-06-18"
-description: يتم تجميع PDF SharePoint API كحل SharePoint لتبسيط نشر مزرعة الخوادم، السحب، التفعيل، وإلغاء التفعيل.
+lastmod: "2020-12-16"
+description: يتم حزم PDF SharePoint API كحل SharePoint لتبسيط نشر مزرعة الخوادم، والسحب، والتنشيط، وإلغاء التنشيط.
 ---
 
 {{% alert color="primary" %}}
 
-يمكن تنزيل Aspose.PDF لـ SharePoint كأرشيف Aspose.PDF.SharePoint.zip.
+يمكن تنزيل Aspose.PDF for SharePoint كأرشيف Aspose.PDF.SharePoint.zip.
 
 {{% /alert %}}
 
-**يحتوي هذا الأرشيف على:**
+يحتوي هذا الأرشيف على:
 
 - Aspose.PDF.SharePoint.wsp
-  ملف حل SharePoint. يتم تجميع Aspose.PDF لـ SharePoint كحل SharePoint لتسهيل النشر/السحب وتفعيل/إلغاء تفعيل الميزات عبر مزرعة الخوادم.
+  ملف حل SharePoint. يتم حزم Aspose.PDF for SharePoint كحل SharePoint لتسهيل النشر/السحب وتنشيط/إلغاء تنشيط الميزات عبر مزرعة الخوادم.
 - Aspose_LicenseAgreement.rtf
 
 **اتفاقية ترخيص المستخدم النهائي:**
 
-- Aspose.PDF for SharePoint.pdf
+- Aspose.PDF لـ SharePoint.pdf
 
-**توثيق المستخدم:**
+**وثائق المستخدم:**
 
-- Aspose.PDF for SharePoint Documentation.chm
+- Aspose.PDF لـ SharePoint Documentation.chm
 
-**توثيق المستخدم مع مرجع API العامة:**
+**وثائق المستخدم مع مرجع API العام:**
 
 - setup.exe
 
-**برنامج الإعداد:**
+** برنامج الإعداد: **
 
 - setup.exe.config
 
@@ -41,43 +41,36 @@ description: يتم تجميع PDF SharePoint API كحل SharePoint لتبسيط
 يتحقق برنامج الإعداد من الشروط التالية قبل المتابعة:
 
 - تم تثبيت SharePoint 2010.
-- المستخدم لديه إذن لتثبيت حلول SharePoint.
-- قاعدة بيانات SharePoint متصلة.
-- تم بدء خدمة إدارة SharePoint.
-- تم بدء خدمة مؤقت SharePoint. خدمة إدارة SharePoint وخدمة المؤقت مطلوبة لأن بعض إجراءات الإعداد تعتمد على مهمة مؤقت لتنتشر إلى جميع الخوادم في حقل الخوادم.
+- لدى المستخدم إذن لتثبيت حلول SharePoint.
+- قاعدة بيانات SharePoint متاحة على الإنترنت.
+- يتم بدء تشغيل خدمة إدارة SharePoint.
+- يتم بدء تشغيل خدمة SharePoint Timer. هناك حاجة إلى خدمة إدارة SharePoint وخدمة المؤقت لأن بعض إجراءات الإعداد تعتمد على مهمة مؤقت للنشر إلى كافة الخوادم في مزرعة الخوادم.
 
 **لتثبيت Aspose.PDF لـ SharePoint:**
 
-- افك ضغط ملف Aspose.PDF.SharePoint zip إلى القرص المحلي.
-- شغّل setup.exe واتبع التعليمات على الشاشة.
+- قم بفك ضغط ملف Aspose.PDF.SharePoint المضغوط على محرك الأقراص المحلي.
+- قم بتشغيل setup.exe واتبع الإرشادات التي تظهر على الشاشة.
 
-**يقوم برنامج الإعداد بالإجراءات التالية:**
+** يقوم برنامج الإعداد بالإجراءات التالية:**
 
-- تحقق من متطلبات التثبيت. لن يواصل الإعداد إذا فشل أي فحص.
+- التحقق من متطلبات التثبيت. لن يستمر الإعداد في حالة فشل أي عملية تحقق.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_1.png)
-
-
+![Check Installation Prerequisites](installing-aspose-pdf-for-sharepoint_1.png)
 
 - عرض اتفاقية ترخيص المستخدم النهائي. يجب على المستخدم قبول الاتفاقية للمتابعة.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_2.png)
+![Display License Agreement](installing-aspose-pdf-for-sharepoint_2.png)
 
+- عرض مربع حوار تحديد هدف النشر. يقوم المستخدم باختيار تطبيقات الويب ومجموعات المواقع حيث سيتم تفعيل الميزة. انظر الشكل أدناه.
 
+![Display Deployment Target Selection](installing-aspose-pdf-for-sharepoint_3.png)
 
-- عرض حوار اختيار هدف النشر. يختار المستخدم تطبيقات الويب ومجموعات المواقع التي سيُفعَّل فيها الميزة. انظر الشكل أدناه.
+- انشر الميزة في مزرعة الخوادم.
 
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_3.png)
+![Deploy Feature](installing-aspose-pdf-for-sharepoint_4.png)
 
+- قم بتنشيط الميزة لمجموعات الموقع المحددة وقم بتكوين تطبيقات الويب الأصلية الخاصة بها.
+- عرض قائمة بتطبيقات الويب ومجموعات المواقع حيث تم نشر الميزة وتنشيطها.
 
+![Display Deployed Features](installing-aspose-pdf-for-sharepoint_5.png)
 
-- نشر الميزة إلى مزرعة الخادم.
-
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_4.png)
-
-
-
-- قم بتنشيط الميزة لمجموعات المواقع المحددة وقم بتكوين تطبيقات الويب الأم لها.
-- اعرض قائمة بتطبيقات الويب ومجموعات المواقع حيث تم نشر الميزة وتنشيطها.
-
-![todo:image_alt_text](installing-aspose-pdf-for-sharepoint_5.png)

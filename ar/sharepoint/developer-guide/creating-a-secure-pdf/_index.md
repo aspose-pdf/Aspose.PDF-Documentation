@@ -1,52 +1,52 @@
----
-title: إنشاء ملف PDF آمن في SharePoint
-linktitle: إنشاء ملف PDF آمن
+﻿---
+title: Create a Secure PDF in SharePoint
+linktitle: Creating a Secure PDF
 type: docs
 weight: 60
 url: /ar/sharepoint/creating-a-secure-pdf/
-lastmod: "2026-06-18"
-description: باستخدام واجهة برمجة تطبيقات PDF في SharePoint، يمكنك إنشاء ملفات PDF آمنة ومشفرة وتحديد كلمات مرورها في SharePoint.
+lastmod: "2020-12-16"
+description: باستخدام PDF SharePoint API، يمكنك إنتاج ملفات PDF آمنة ومشفرة وتحديد كلمات المرور الخاصة بها في SharePoint.
 ---
 
 {{% alert color="primary" %}}
 
-يدعم Aspose.PDF for SharePoint إنشاء ملفات PDF آمنة. يضيف تثبيت Aspose.PDF for SharePoint خيار **PDF Secure Settings** في إعدادات الموقع. هنا، يمكنك تعيين كلمة مرور المستخدم، كلمة مرور المالك وأي قيمة من قائمة الخوارزميات لتشفير ملف PDF الناتج. توفر قائمة الخوارزميات تركيبات مختلفة من خوارزميات التشفير وأحجام المفاتيح. اختر القيمة التي تريدها.
+Aspose.PDF for SharePoint supports creating secure PDFs. Installing Aspose.PDF for SharePoint adds a **PDF Secure Settings** option in Site Setting. Here, You can set the user password, owner password and any value from the algorithm list to encrypt the output PDF. The algorithm list provides different combinations of encryption algorithms and key sizes. Pass the value of your choice.
 
-توضح هذه المقالة كيفية استخدام Aspose.PDF for SharePoint لإنشاء ملف PDF مشفر.
+توضح هذه المقالة كيفية استخدام Aspose.PDF لـ SharePoint لإنشاء ملف PDF مشفر.
 
 {{% /alert %}}
 
-## **إنشاء ملف PDF آمن**
+## Creating a Secure PDF
 
-لتوضيح الميزة، أولاً نقوم بتكوين خيار **إعداد PDF الآمن** لكلمة مرور المالك والمستخدم وخوارزمية التشفير. ثم يقوم المثال بدمج مستندين من مكتبة المستندات.
+لتوضيح هذه الميزة، نقوم أولاً بتكوين خيار **إعدادات PDF الآمنة** لكلمة مرور المالك والمستخدم وخوارزمية التشفير. يقوم المثال بعد ذلك بدمج مستندين من مكتبة المستندات.
 
-### **ضبط خيارات إعداد PDF الآمن**
+### ضبط خيارات الإعداد الآمن لملف PDF
 
-افتح خيار **إعداد PDF الآمن** من إعدادات الموقع وقم بتعيين الخوارزمية، كلمة مرور المالك وكلمة مرور المستخدم.
+Open **PDF Secure Settings** option from Site Settings and set algorithm, owner password and user password.
 
-حدد كلمات مرور مختلفة للمالك والمستخدم أثناء تشفير ملف PDF.
+حدد كلمات مرور مختلفة للمستخدم والمالك أثناء تشفير ملف PDF.
 
-- كلمة مرور المستخدم، إذا تم تعيينها، هي ما تحتاج لتقديمه لفتح ملف PDF. يطلب برنامج Acrobat Reader من المستخدم إدخال كلمة مرور المستخدم. إذا كانت خاطئة، لن يتم فتح المستند.
-- كلمة مرور المالك، إذا تم تعيينها، تتحكم في الأذونات مثل الطباعة، التحرير، الاستخراج، التعليق، إلخ. يمنع Acrobat Reader هذه الميزات استنادًا إلى إعدادات الأذونات. يتطلب Acrobat هذه الكلمة إذا أردت ضبط/تغيير الأذونات.
+- كلمة مرور المستخدم، إذا تم تعيينها، هي ما تحتاج إلى توفيره لفتح ملف PDF. يطالب برنامج Acrobat Reader المستخدم بإدخال كلمة مرور المستخدم. إذا كان الخطأ، لا يتم فتح المستند.
+- تتحكم كلمة مرور المالك، إذا تم تعيينها، في الأذونات مثل الطباعة والتحرير والاستخراج والتعليق وما إلى ذلك. ولا يسمح Acrobat Reader بهذه الميزات بناءً على إعدادات الأذونات. يتطلب Acrobat كلمة المرور هذه إذا كنت تريد تعيين/تغيير الأذونات.
 
-![todo:image_alt_text](creating-a-secure-pdf_1.png)
+![PDF Secure Settings](creating-a-secure-pdf_1.png)
 
-### **دمج المستندات**
+### دمج المستندات
 
-دمج مستندين باستخدام خيار **Convert to PDF**. تُدمج هذه الميزة ملفات غير PDF متعددة (HTML، نص أو صورة) في ملف PDF.
+Merge two documents using the **Convert to PDF** option. This feature merges multiple non-PDF files (HTML, text or image) into a PDF file.
 
 1. افتح مكتبة المستندات وحدد المستندات المطلوبة من القائمة.
 
-![todo:image_alt_text](creating-a-secure-pdf_2.png)
+![Merge Documents](creating-a-secure-pdf_2.png)
 
+1. استخدم خيار **Merge to PDF** من Library Tools لحفظ ملف الإخراج. تتم مطالبتك بحفظ ملف الإخراج على القرص.
 
-1. استخدم خيار **Merge to PDF** من أدوات المكتبة لحفظ ملف الإخراج. سيُطلب منك حفظ ملف الإخراج على القرص.
+![Merge to PDF](creating-a-secure-pdf_3.png)
 
-![todo:image_alt_text](creating-a-secure-pdf_3.png)
-
-### **الإخراج**
+### الإخراج
 
 ملف الإخراج مشفر.
 
-![todo:image_alt_text](creating-a-secure-pdf_4.png)
+![Output](creating-a-secure-pdf_4.png)
+
 

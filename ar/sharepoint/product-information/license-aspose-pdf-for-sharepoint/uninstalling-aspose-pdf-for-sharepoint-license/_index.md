@@ -1,10 +1,10 @@
----
-title: إلغاء تثبيت ترخيص Aspose.Pdf لـ SharePoint
-linktitle: إلغاء تثبيت ترخيص Aspose.Pdf لـ SharePoint
+﻿---
+title: إلغاء تثبيت Aspose.PDF لترخيص SharePoint
+linktitle: إلغاء تثبيت Aspose.PDF لترخيص SharePoint
 type: docs
 weight: 30
 url: /ar/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
-lastmod: "2026-06-18"
+lastmod: "2020-12-16"
 description: يرجى اتباع الخطوات المذكورة في هذه المقالة لإلغاء تثبيت ترخيص PDF SharePoint API.
 ---
 
@@ -12,22 +12,23 @@ description: يرجى اتباع الخطوات المذكورة في هذه ا�
 
 {{% alert color="primary" %}}
 
-لإلغاء تثبيت ترخيص Aspose.PDF لـ SharePoint، يرجى استخدام الخطوات أدناه من وحدة التحكم الخاصة بالخادم.
+لإلغاء تثبيت Aspose.PDF لترخيص SharePoint، يرجى استخدام الخطوات أدناه من وحدة تحكم الخادم.
 
 1. سحب حل الترخيص من المزرعة:
 
   stsadm.exe -o retractsolution -name Aspose.PDF.SharePoint.License.wsp -immediate
 
-2. نفّذ وظائف المؤقت الإدارية لإكمال السحب فورًا:
+2. قم بتنفيذ مهام المؤقت الإداري لإكمال عملية السحب على الفور:
 
   stsadm.exe -o execadmsvcjobs
 
-3. انتظر حتى يكتمل السحب. يمكنك استخدام الإدارة المركزية   
+3. انتظر حتى يكتمل التراجع. يمكنك استخدام المركزية   
 
-  الإدارة للتحقق مما إذا كان السحب قد اكتمل تحت الإدارة المركزية -> العمليات -> إدارة الحلول
+  الإدارة للتحقق مما إذا كان السحب قد اكتمل ضمن الإدارة المركزية -> العمليات -> إدارة الحلول
 
-4. أزل الحل من مخزن حلول SharePoint:
+4. قم بإزالة الحل من مخزن حلول SharePoint:
 
-  stsadm.exe -o deletesolution -name Aspose.PDF.SharePoint.License.wsp
+  stsadm.exe -o حذف الحل -اسم Aspose.PDF.SharePoint.License.wsp
 
 {{% /alert %}}
+

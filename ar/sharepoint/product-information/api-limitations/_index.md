@@ -1,23 +1,24 @@
----
+﻿---
 title: قيود واجهة برمجة التطبيقات
 linktitle: قيود واجهة برمجة التطبيقات
 type: docs
 weight: 70
 url: /ar/sharepoint/api-limitations/
-lastmod: "2026-06-18"
-description: توضح المقالة بعض قيود واجهة برمجة تطبيقات PDF SharePoint.
+lastmod: "2020-12-16"
+description: تشرح المقالة بعض قيود PDF SharePoint API.
 ---
 
 {{% alert color="primary" %}}
 
-هناك بعض القيود عند استخدام هذا المكوّن.
+هناك بعض القيود أثناء استخدام هذا المكون.
 
 {{% /alert %}}
-## معلومات منشئ PDF
+
+## معلومات منشئ ملفات PDF
 
 {{% alert color="primary" %}}
 
-يرجى ملاحظة أنه لا يمكنك تعيين قيم ضد حقلي **Application** و **Producer** ، لأن Aspose Ltd. و Aspose.PDF for SharePoint x.x.x سيظهران في هذين الحقلين. 
-
+يرجى ملاحظة أنه لا يمكنك تعيين قيم في الحقلين **Application** و **Producer** ، لأنه سيتم عرض Aspose Ltd. وAspose.PDF for SharePoint x.x.x مقابل هذه الحقول. 
 
 {{% /alert %}}
+

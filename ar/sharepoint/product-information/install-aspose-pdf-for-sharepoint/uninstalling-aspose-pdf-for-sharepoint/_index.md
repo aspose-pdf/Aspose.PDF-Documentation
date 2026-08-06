@@ -1,19 +1,20 @@
----
-title: إلغاء تثبيت Aspose.Pdf لـ SharePoint
-linktitle: إلغاء تثبيت Aspose.Pdf لـ SharePoint
+﻿---
+title: Uninstalling Aspose.PDF for SharePoint
+linktitle: إلغاء تثبيت Aspose.PDF لـ SharePoint
 type: docs
 weight: 50
 url: /ar/sharepoint/uninstalling-aspose-pdf-for-sharepoint/
-lastmod: "2026-06-18"
-description: قم ببساطة بتشغيل تطبيق الإعداد لإزالة PDF SharePoint API، وسيتم إلغاء تثبيته وتعطيله لجميع مجموعات المواقع.
+lastmod: "2020-12-16"
+description: ما عليك سوى تشغيل تطبيق الإعداد لإزالة PDF SharePoint API، وسيقوم بإلغاء تثبيته وإلغاء تنشيطه لجميع مجموعات الموقع.
 ---
 
 {{% alert color="primary" %}}
 
-لإلغاء تثبيت Aspose.PDF لـ SharePoint، ما عليك سوى تشغيل برنامج الإعداد. إذا كان Aspose.PDF لـ SharePoint مثبتًا بالفعل، يقترح برنامج الإعداد إزالته.
+لإلغاء تثبيت Aspose.PDF لـ SharePoint، ما عليك سوى تشغيل برنامج الإعداد. إذا كان Aspose.PDF for SharePoint مثبتًا بالفعل، يقترح برنامج الإعداد إزالته.
 
-![todo:image_alt_text](uninstalling-aspose-pdf-for-sharepoint_1.png)
+![Uninstall Aspose.PDF for SharePoint](uninstalling-aspose-pdf-for-sharepoint_1.png)
 
-أثناء إلغاء التثبيت، يقوم برنامج الإعداد بتعطيل ميزة Aspose.PDF لـ SharePoint لجميع مجموعات المواقع ويسحب الحل من مزرعة الخوادم.
+أثناء إلغاء التثبيت، يقوم برنامج الإعداد بإلغاء تنشيط ميزة Aspose.PDF for SharePoint لجميع مجموعات المواقع ويسحب الحل من مزرعة الخوادم.
 
 {{% /alert %}}
+

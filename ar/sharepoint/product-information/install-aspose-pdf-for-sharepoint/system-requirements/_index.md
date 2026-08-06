@@ -1,22 +1,23 @@
----
-title: متطلبات النظام
-linktitle: متطلبات النظام
+﻿---
+title: System Requirements
+linktitle: System Requirements
 type: docs
 weight: 10
 url: /ar/sharepoint/system-requirements/
-lastmod: "2026-06-18"
-description: يحتوي PDF SharePoint API على متطلبات الخادم والعميل، بالإضافة إلى الحاجة إلى جهاز كمبيوتر يعمل بنظام Microsoft SharePoint Server.
+lastmod: "2020-12-16"
+description: يحتوي PDF SharePoint API على متطلبات الخادم والعميل، بالإضافة إلى ضرورة وجود جهاز كمبيوتر يقوم بتشغيل Microsoft SharePoint Server.
 ---
 
-## **متطلبات الخادم**
+## متطلبات الخادم
 
-لتثبيت Aspose.PDF for SharePoint تحتاج إلى جهاز كمبيوتر يعمل بنظام Microsoft SharePoint Server 2010.
+لتثبيت Aspose.PDF لـ SharePoint، تحتاج إلى جهاز كمبيوتر يعمل بنظام Microsoft SharePoint Server 2010.
 
-## **متطلبات العميل**
+## متطلبات العميل
 
-تحتاج إلى متصفح للوصول إلى مواقع SharePoint. تم اختبار Aspose.PDF for SharePoint مع المتصفحات التالية:
+أنت بحاجة إلى متصفح للوصول إلى مواقع SharePoint. تم اختبار Aspose.PDF for SharePoint باستخدام المتصفحات التالية:
 
 - مايكروسوفت إنترنت إكسبلورر 8
 - موزيلا فايرفوكس 3.5
 - جوجل كروم 3
 - سفاري 4
+

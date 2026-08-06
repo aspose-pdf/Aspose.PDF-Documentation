@@ -1,89 +1,85 @@
----
+﻿---
 title: إنشاء وتصدير القالب
 linktitle: إنشاء وتصدير القالب
 type: docs
 weight: 10
 url: /ar/sharepoint/creating-and-exporting-template/
-lastmod: "2026-06-18"
-description: يمكنك إنشاء وتصدير القوالب إلى PDF في SharePoint باستخدام واجهة برمجة تطبيقات PDF SharePoint.
+lastmod: "2020-12-16"
+description: يمكنك إنشاء وتصدير القوالب إلى PDF في SharePoint باستخدام PDF SharePoint API.
 ---
 
 {{% alert color="primary" %}}
 
-توضح هذه المقالة كيفية إنشاء وتصدير القوالب باستخدام Aspose.PDF لـ SharePoint.
+This article shows how to create and export templates using Aspose.PDF for SharePoint.
 
-ابتداءً من Aspose.PDF لـ SharePoint 1.9.2، يدعم قوالب PDF أيضًا مواقع SharePoint الفرعية.
+From Aspose.PDF for SharePoint 1.9.2, PDF template support also covers SharePoint subsites.
 
 {{% /alert %}}
 
-## **إنشاء وتصدير القوالب**
+## إنشاء وتصدير القوالب
+
 {{% alert color="primary" %}}
 
-لاستخدام ميزة التصدير في Aspose.PDF لـ SharePoint، أنشئ أولاً قائمة تستخدم “قوالب PDF”.
+To use the Aspose.PDF for SharePoint export feature, first create a list that uses “PDF Templates”.
 
-إنشاء قائمة تستخدم قوالب PDF:
+Creating a list that uses PDF Templates:
 
-![todo:image_alt_text](creating-and-exporting-template_1.png)
+![Create PDF Template List](creating-and-exporting-template_1.png)
 
-تم إنشاء قالبين للمستندات، Task Form Templates و Task List Templates:
+يتم إنشاء قالبين للمستندات، قوالب نماذج المهام وقوالب قائمة المهام:
 
-![todo:image_alt_text](creating-and-exporting-template_2.png)
+![Document Templates](creating-and-exporting-template_2.png)
 
+يتيح لك نموذج القالب إدخال المعلومات التالية:
 
+- **Name**: the template's file name.
+- **العنوان**: عنوان القالب. (افتراضيًا، هو نفس اسم الملف.)
+- **Description**: a description of the template. A good description makes the template easier to use.
+- **أنواع القائمة المعينة**: معرفات القائمة المفصولة بفواصل (ذات صلة بالقالب. قد يحتوي هذا الحقل أيضًا على القيمة
+- **AllListTypes**. This field is only applicable when the **Type** field is set to **List**).
+- **أنواع المحتوى المعينة**: معرفات أنواع المحتوى المفصولة بفواصل المرتبطة بالقالب. قد يحتوي هذا الحقل على **AllListTypes**. ينطبق هذا الحقل فقط عند تعيين الحقل **النوع** على **العنصر**.
+- **النوع**: إما قالب القائمة أو قالب العنصر.
+- **الحالة**: الخيارات نشطة، وغير نشطة (غير مرئية للجميع)، وتصحيح الأخطاء (مرئية فقط للمسؤولين).
 
-تتيح لك نموذج القالب إدخال المعلومات التالية:
+The Task List Templates form:
 
-- **Name**: اسم ملف القالب.
-- **Title**: عنوان القالب. (افتراضيًا، يكون نفس اسم الملف.)
-- **Description**: وصف للقالب. الوصف الجيد يجعل القالب أسهل في الاستخدام.
-- **Assigned List Types**: معرّفات قوائم مفصولة بفواصل (مرتبطة بالقالب. قد يحتوي هذا الحقل أيضًا على القيمة **AllListTypes**. هذا الحقل ينطبق فقط عندما يكون الحقل **Type** مضبوطًا على **List**).
-- **Assigned Content Types**: معرّفات نوع المحتوى مفصولة بفواصل (مرتبطة بالقالب. قد يتم تعيين هذا الحقل إلى **AllListTypes**. هذا الحقل ينطبق فقط عندما يكون الحقل **Type** مضبوطًا على **Item**).
-- **Type**: إما قالب قائمة أو قالب عنصر.
-- **Status**: الخيارات هي نشط، غير نشط (غير مرئي للجميع)، وتصحيح (مرئي فقط للمسؤولين).
+![Task List Templates](creating-and-exporting-template_3.png)
 
-**نموذج قوالب قوائم المهام:**
+نموذج قوالب نموذج المهمة:
 
-![todo:image_alt_text](creating-and-exporting-template_3.png)
+![Task Form Templates](creating-and-exporting-template_4.png)
 
+عند حفظها، تظهر القوالب الجديدة في قائمة القوالب، وتكون جاهزة للاستخدام:
 
+قالبان لقائمة المهام:*
 
+![Task List Templates](creating-and-exporting-template_5.png)
 
-**نموذج قوالب نماذج المهام:**
+نموذج نماذج المهام:
 
-![todo:image_alt_text](creating-and-exporting-template_4.png)
+![Task Form Templates](creating-and-exporting-template_6.png)
 
+### تطوير القوالب
 
+A template is an XML file based on Aspose XML PDF. To make a template for a list, place special markers related to the SharePoint target content type field's internal name into the XML PDF file.
 
+### علامات
 
-عند حفظها، تظهر القوالب الجديدة في قائمة القوالب، جاهزة للاستخدام:
-
-**قالبان لقائمة المهام:**
-
-![todo:image_alt_text](creating-and-exporting-template_5.png)
-
-
-
-**قالب نماذج مهمة:**
-
-![todo:image_alt_text](creating-and-exporting-template_6.png)
-
-
-
-#### **تطوير القوالب**
-القالب هو ملف XML يعتمد على Aspose XML PDF. لإنشاء قالب لقائمة، ضع علامات خاصة مرتبطة بالاسم الداخلي لحقل نوع المحتوى المستهدف في SharePoint داخل ملف XML PDF.
-##### **علامات**
 - **SPListItemsCount** – تم استبداله بعدد عناصر القائمة.
-- **SPListTitle** – تم استبداله بعنوان القائمة.
-- **SPTableIterator** – يُوضع في أول خلية من الجدول ويُعلّم الجدول للتكرار الكامل.
-- **SPRowIterator** – يُوضع في أول خلية من الجدول ويُعلّم الجدول للتكرار على الصفوف.
+- **SPListTitle** – replaced by list title.
+- **SPTableIterator** - يتم وضعه في خلية الجدول الأولى ووضع علامة على الجدول للتكرار الكامل.
+- **SPRowIterator** - يتم وضعه في خلية الجدول الأول ووضع علامة على الجدول لتكرار الصف.
 - **SPField** – تم استبداله بقيمة حقل العنصر.
 
-للمراجعة، يرجى التحميل [ملفات XML للقوالب](attachments/8421394/8618082.zip).
-#### **تصدير إلى PDF**
-عند اكتمال تكوين القالب، تكون جاهزًا لتصدير القوائم أو العناصر إلى ملفات PDF.
+كمرجع، يرجى تنزيل [ملفات قالب XML](attachments/8421394/8618082.zip).
 
-**تصدير قائمة إلى PDF باستخدام قالب قائمة مهام:**
+### تصدير إلى PDF
 
-![todo:image_alt_text](creating-and-exporting-template_7.png)
+عندما يتم تكوين القالب بالكامل، تكون جاهزًا لتصدير القوائم أو العناصر إلى ملفات PDF.
+
+تصدير قائمة إلى PDF باستخدام قالب قائمة المهام:
+
+![Export to PDF](creating-and-exporting-template_7.png)
 
 {{% /alert %}}
+

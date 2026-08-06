@@ -1,14 +1,15 @@
----
-title: الميزات
-linktitle: الميزات
+﻿---
+title: سمات
+linktitle: سمات
 type: docs
 weight: 30
 url: /ar/sharepoint/features/
-lastmod: "2026-06-18"
-description: تتضمن ميزات PDF SharePoint API تصديرًا إلى PDF ودعمًا فنيًا مجانيًا.
+lastmod: "2020-12-16"
+description: تتضمن ميزات PDF SharePoint API التصدير إلى PDF والدعم الفني المجاني.
 ---
 
-**يتضمن هذا القسم المواضيع التالية:**
+يتضمن هذا القسم المواضيع التالية:
 
 - [تصدير إلى PDF](/pdf/ar/sharepoint/export-to-pdf/)
-- [دعم فني مجاني من الطراز العالمي](/pdf/ar/sharepoint/world-class-free-technical-support/)
+- [دعم فني مجاني على مستوى عالمي](/pdf/ar/sharepoint/world-class-free-technical-support/)
+
