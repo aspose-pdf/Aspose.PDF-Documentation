@@ -1,14 +1,15 @@
----
-title: Fonctionnalités
-linktitle: Fonctionnalités
+﻿---
+title: Caractéristiques
+linktitle: Caractéristiques
 type: docs
 weight: 30
 url: /fr/sharepoint/features/
-lastmod: "2026-06-18"
-description: Les fonctionnalités de l'API PDF SharePoint comprennent l'Exportation vers PDF et le Support technique gratuit.
+lastmod: "2020-12-16"
+description: Les fonctionnalités de l'API PDF SharePoint incluent l'exportation au format PDF et une assistance technique gratuite.
 ---
 
-**Cette section comprend les sujets suivants :**
+Cette section comprend les sujets suivants :
 
-- [Exporter en PDF](/pdf/fr/sharepoint/export-to-pdf/)
-- [Support Technique Gratuit de Classe Mondiale](/pdf/fr/sharepoint/world-class-free-technical-support/)
+- [Exporter au format PDF](/pdf/fr/sharepoint/export-to-pdf/)
+- [Support technique gratuit de classe mondiale](/pdf/fr/sharepoint/world-class-free-technical-support/)
+

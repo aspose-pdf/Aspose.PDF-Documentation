@@ -1,28 +1,29 @@
----
-title: Convertir le PDF en HTML dans SharePoint
-linktitle: Convertir le PDF en HTML
+﻿---
+title: Convert PDF to HTML in SharePoint
+linktitle: Convertir un PDF en HTML
 type: docs
 weight: 80
 url: /fr/sharepoint/convert-pdf-to-html/
-lastmod: "2026-06-18"
-description: En utilisant l'API PDF SharePoint, vous pouvez convertir un document PDF de la bibliothèque de documents SharePoint au format HTML.
+lastmod: "2020-12-16"
+description: Using the PDF SharePoint API, you can convert PDF document form SharePoint document library to HTML format.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint prend en charge la fonctionnalité de conversion d'un document PDF de la bibliothèque de documents SharePoint au format HTML. Dans cet article, nous allons démontrer la conversion de PDF en HTML.
+Aspose.PDF pour SharePoint prend en charge la fonctionnalité permettant de convertir la bibliothèque de documents SharePoint de la forme d'un document PDF au format HTML. Dans cet article, nous démontrerons la conversion PDF en HTML.
 
 {{% /alert %}}
 
-## **Conversion de document PDF en HTML**
+## Conversion d'un document PDF en HTML
 
-Convertissez le document PDF de la bibliothèque de documents SharePoint en HTML comme suit :
+Convert PDF document from SharePoint Document library to HTML as following:
 
-1. Cliquez sur **Convert to HTML** dans le menu ECB du document PDF.
+1. Click **Convert to HTML** in the ECB menu of PDF document.
 
-![todo:image_alt_text](convert-pdf-to-html_1.png)
+![Convert PDF to HTML-example 1](convert-pdf-to-html_1.png)
 
-2. Téléchargez et enregistrez le fichier HTML résultant sur le disque.
+2. Download and save the resultant HTML file to disk.
 
-![todo:image_alt_text](convert-pdf-to-html_2.png)
+![Convert PDF to HTML-example 2](convert-pdf-to-html_2.png)
+
 

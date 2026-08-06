@@ -1,23 +1,24 @@
----
-title: Évaluer Aspose.Pdf pour SharePoint
+﻿---
+title: Évaluer Aspose.PDF pour SharePoint
 linktitle: Évaluer
 type: docs
 weight: 50
 url: /fr/sharepoint/evaluate-aspose-pdf/
-lastmod: "2026-06-18"
-description: Profitez de l'évaluation gratuite de l'API PDF SharePoint car elle n'a aucune limite de temps, et un support technique gratuit est également fourni aux utilisateurs d'évaluation.
+lastmod: "2020-12-16"
+description: Profitez de l'évaluation gratuite de l'API PDF SharePoint car elle n'a pas de limite de temps et une assistance technique gratuite est également fournie aux utilisateurs d'évaluation.
 ---
 
 {{% alert color="primary" %}}
 
-Assurez-vous de profiter de l'évaluation gratuite d'Aspose.PDF pour SharePoint car elle n'a aucune limite de temps, et un support technique gratuit est également fourni aux utilisateurs d'évaluation.
+Assurez-vous de profiter de l'évaluation gratuite d'Aspose.PDF pour SharePoint, car elle n'a pas de limite de durée et une assistance technique gratuite est également fournie aux utilisateurs de l'évaluation.
 
 {{% /alert %}}
 
-Il s'agit du même téléchargement pour l'évaluation et la version payante d'Aspose.PDF pour SharePoint. Téléchargez simplement Aspose.PDF pour SharePoint depuis la page de téléchargement, installez-le et il fonctionnera en mode évaluation par défaut.
+Il s'agit du même téléchargement pour la version d'évaluation et la version payante d'Aspose.PDF pour SharePoint. Téléchargez simplement Aspose.PDF pour SharePoint à partir de la page de téléchargement, installez-le et il fonctionnera en mode d'évaluation par défaut.
 
-Le mode évaluation injecte un avertissement d'évaluation dans les documents exportés. Lorsque vous avez acheté une licence, installez simplement la solution de licence sur la copie d'évaluation installée d'Aspose.PDF pour SharePoint et il fonctionnera alors en mode licencié.
+Le mode évaluation injecte un avertissement d’évaluation dans les documents exportés. Lorsque vous avez acheté une licence, installez simplement la solution de licence sur la copie d'évaluation installée d'Aspose.PDF pour SharePoint et elle fonctionnera alors en mode licence.
 
-**Aspose.PDF for SharePoint insère un avertissement d'évaluation lorsqu'il fonctionne en mode d'évaluation.**
+**Aspose.PDF pour SharePoint injecte un avertissement d'évaluation lorsque vous travaillez en mode évaluation.**
 
-![todo:image_alt_text](evaluate-aspose-pdf_1.png)
+![Avertissement d'évaluation](evaluate-aspose-pdf_1.png)
+

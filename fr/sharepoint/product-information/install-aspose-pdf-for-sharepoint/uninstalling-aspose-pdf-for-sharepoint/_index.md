@@ -1,19 +1,20 @@
----
-title: Désinstallation d'Aspose.Pdf pour SharePoint
-linktitle: Désinstallation d'Aspose.Pdf pour SharePoint
+﻿---
+title: Désinstallation d'Aspose.PDF pour SharePoint
+linktitle: Désinstallation d'Aspose.PDF pour SharePoint
 type: docs
 weight: 50
 url: /fr/sharepoint/uninstalling-aspose-pdf-for-sharepoint/
-lastmod: "2026-06-18"
-description: Exécutez simplement l'application d'installation pour supprimer l'API PDF SharePoint, et elle désinstallera et désactivera cela pour toutes les collections de sites.
+lastmod: "2020-12-16"
+description: Exécutez simplement l'application d'installation pour supprimer l'API PDF SharePoint, et elle la désinstallera et la désactivera pour toutes les collections de sites.
 ---
 
 {{% alert color="primary" %}}
 
-Pour désinstaller Aspose.PDF pour SharePoint, exécutez simplement le programme d'installation. Si Aspose.PDF pour SharePoint est déjà installé, le programme d'installation propose de le supprimer.
+Pour désinstaller Aspose.PDF pour SharePoint, exécutez simplement le programme d'installation. Si Aspose.PDF pour SharePoint est déjà installé, le programme d'installation suggère de le supprimer.
 
-![todo:image_alt_text](uninstalling-aspose-pdf-for-sharepoint_1.png)
+![Désinstaller Aspose.PDF pour SharePoint](uninstalling-aspose-pdf-for-sharepoint_1.png)
 
-Lors de la désinstallation, le programme d'installation désactive la fonctionnalité Aspose.PDF pour SharePoint pour toutes les collections de sites et retire la solution de la ferme de serveurs.
+Lors de la désinstallation, le programme d'installation désactive la fonctionnalité Aspose.PDF pour SharePoint pour toutes les collections de sites et retire la solution de la batterie de serveurs.
 
 {{% /alert %}}
+

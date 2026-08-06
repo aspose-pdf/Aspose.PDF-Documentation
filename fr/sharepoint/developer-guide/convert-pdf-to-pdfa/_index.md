@@ -1,29 +1,30 @@
----
-title: Convertir un PDF en PDFA dans SharePoint
+﻿---
+title: Convert PDF to PDFA in SharePoint
 linktitle: Convertir un PDF en PDFA
 type: docs
 weight: 70
 url: /fr/sharepoint/convert-pdf-to-pdfa/
-lastmod: "2026-06-18"
-description: En utilisant l'API PDF SharePoint, vous pouvez convertir le PDF au format PDFA. Actuellement, elle ne prend en charge que la norme PDF/A-1b.
+lastmod: "2020-12-16"
+description: Using the PDF SharePoint API, you may convert PDF to PDFA format. Currently it supports only PDF/A-1b standard.
 ---
 
 {{% alert color="primary" %}}
 
-Dans [Aspose.PDF for SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.0.0/) dans la version, nous avons ajouté la prise en charge de créer des PDF conformes à PDFA.
+In [Aspose.PDF for SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.0.0/) release we have added support to create PDFA compliant PDF.
 
-Actuellement, Aspose.PDF for SharePoint ne prend en charge que la norme PDFA1b.
+Currently Aspose.PDF for SharePoint supports only PDFA1b standard.
 
 {{% /alert %}}
 
-## **Création d'un document conforme PDFA**
+## Création d'un document conforme PDFA
 
-Convertissez le PDF depuis la bibliothèque de documents SharePoint vers PDFA comme suit :
+Convert PDF from SharePoint Document library to PDFA as following:
 
-1. Cliquez sur **Convert to PDF** dans le menu ECB.
+1. Cliquez sur **Convertir en PDF** dans le menu de la BCE.
 
-![todo:image_alt_text](convert-pdf-to-pdfa_1.png)
+![Convert PDF to PDFA-example 1](convert-pdf-to-pdfa_1.png)
 
-2. Téléchargez et enregistrez le fichier PDF résultant.
+2. Téléchargez et enregistrez le fichier PDF obtenu.
 
-![todo:image_alt_text](convert-pdf-to-pdfa_2.png)
+![Convert PDF to PDFA-example 2](convert-pdf-to-pdfa_2.png)
+

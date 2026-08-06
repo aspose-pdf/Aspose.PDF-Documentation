@@ -1,19 +1,20 @@
----
-title: Activation et désactivation après l'installation
-linktitle: Activation et désactivation après l'installation
+﻿---
+title: Activation and Deactivation after installation
+linktitle: Activation and Deactivation after installation
 type: docs
 weight: 40
 url: /fr/sharepoint/activation-and-deactivation-after-installation/
-lastmod: "2026-06-18"
-description: Après l'installation de l'API PDF SharePoint, vous pouvez utiliser le menu Actions du site à la racine du site Web d'une collection de sites pour l'activer et le désactiver.
+lastmod: "2020-12-16"
+description: Après l'installation de l'API PDF SharePoint, vous pouvez utiliser le menu Actions du site sur le site Web racine d'une collection de sites pour l'activer et la désactiver.
 ---
 
 {{% alert color="primary" %}}
 
-Pendant l'installation, Aspose.PDF for SharePoint est activé pour toutes les collections de sites sélectionnées. Après l'installation, vous pouvez utiliser le menu Actions du site à la racine du site Web d'une collection de sites pour activer et désactiver Aspose.PDF for SharePoint.
+Lors de l'installation, Aspose.PDF pour SharePoint est activé pour toutes les collections de sites sélectionnées. Après l'installation, vous pouvez utiliser le menu Actions du site sur le site Web racine d'une collection de sites pour activer et désactiver Aspose.PDF pour SharePoint.
 
 {{% /alert %}}
 
-## Activation d'Aspose.PDF for SharePoint sur une collection de sites 
+## Activating Aspose.PDF for SharePoint on a site collection 
 
-![todo:image_alt_text](activation-and-deactivation-after-installation_1.png)**
+![Activate Aspose.PDF for SharePoint](activation-and-deactivation-after-installation_1.png)
+
