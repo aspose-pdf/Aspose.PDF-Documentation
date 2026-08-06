@@ -1,52 +1,52 @@
----
-title: SharePoint でセキュア PDF を作成する
-linktitle: セキュア PDF の作成
+﻿---
+title: SharePoint で安全な PDF を作成する
+linktitle: 安全な PDF の作成
 type: docs
 weight: 60
 url: /ja/sharepoint/creating-a-secure-pdf/
-lastmod: "2026-06-18"
-description: PDF SharePoint API を使用すると、安全で暗号化された PDF を作成し、SharePoint でパスワードを指定できます。
+lastmod: "2020-12-16"
+description: Using the PDF SharePoint API, you may produce safe, encrypted PDFs and specify their passwords in SharePoint.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint はセキュア PDF の作成に対応しています。Aspose.PDF for SharePoint をインストールすると、サイト設定に **PDF Secure Settings** オプションが追加されます。ここで、ユーザーパスワード、所有者パスワード、およびアルゴリズム リストから任意の値を設定して出力 PDF を暗号化できます。アルゴリズム リストは、暗号化アルゴリズムと鍵サイズのさまざまな組み合わせを提供します。希望の値を指定してください。
+Aspose.PDF for SharePoint は、安全な PDF の作成をサポートしています。 Aspose.PDF for SharePoint をインストールすると、サイト設定に **PDF セキュリティ設定** オプションが追加されます。ここでは、出力 PDF を暗号化するために、ユーザー パスワード、所有者パスワード、およびアルゴリズム リストの任意の値を設定できます。アルゴリズム リストには、暗号化アルゴリズムとキー サイズのさまざまな組み合わせが示されています。選択した値を渡します。
 
-この記事では、Aspose.PDF for SharePoint を使用して暗号化された PDF を生成する方法を示します。
+この記事では、Aspose.PDF for SharePoint を使用して暗号化された PDF を生成する方法を説明します。
 
 {{% /alert %}}
 
-## **セキュア PDF の作成**
+## 安全な PDF の作成
 
-機能を実証するために、まず所有者パスワードとユーザーパスワード、および暗号化アルゴリズムの **PDF Secure Setting** オプションを設定します。次に、例としてドキュメント ライブラリから 2 つの文書をマージします。
+この機能をデモンストレーションするために、まず所有者とユーザーのパスワードと暗号化アルゴリズムの **PDF セキュリティ設定** オプションを構成します。次に、この例では、ドキュメント ライブラリから 2 つのドキュメントを結合します。
 
-### **PDF Secure Setting オプションの設定**
+### PDF セキュア設定オプションの設定
 
-サイト設定から **PDF Secure Settings** オプションを開き、アルゴリズム、所有者パスワード、ユーザーパスワードを設定します。
+Open **PDF Secure Settings** option from Site Settings and set algorithm, owner password and user password.
 
-PDF ファイルを暗号化する際に、異なるユーザーパスワードと所有者パスワードを指定します。
+PDF ファイルを暗号化する際に、異なるユーザーと所有者のパスワードを指定します。
 
-- ユーザーパスワードが設定されている場合、PDF を開くために入力する必要があるものです。Acrobat Reader はユーザーにユーザーパスワードの入力を求めます。パスワードが間違っていると、文書は開きません。
-- 所有者パスワードが設定されている場合、印刷、編集、抽出、コメント付けなどの権限を制御します。Acrobat Reader は権限設定に基づきこれらの機能を無効にします。権限の設定/変更を行いたい場合、Acrobat はこのパスワードが必要です。
+- ユーザー パスワードが設定されている場合、PDF を開くために入力する必要があります。 Acrobat Reader は、ユーザーにユーザーパスワードの入力を求めるプロンプトを表示します。間違っている場合、ドキュメントは開きません。
+- The owner password, if set, controls permissions such as printing, editing, extracting, commenting, etc. Acrobat Reader disallows these features based on the permission settings. Acrobat requires this password if you want to set/change permissions.
 
-![todo:image_alt_text](creating-a-secure-pdf_1.png)
+![PDF Secure Settings](creating-a-secure-pdf_1.png)
 
-### **ドキュメントの結合**
+### ドキュメントを結合する
 
-**Convert to PDF**オプションを使用して2つのドキュメントを結合します。この機能は、複数の非PDFファイル（HTML、テキストまたは画像）をPDFファイルに結合します。
+**PDF に変換** オプションを使用して 2 つのドキュメントを結合します。この機能は、複数の非 PDF ファイル (HTML、テキスト、または画像) を 1 つの PDF ファイルに結合します。
 
 1. ドキュメント ライブラリを開き、リストから目的のドキュメントを選択します。
 
-![todo:image_alt_text](creating-a-secure-pdf_2.png)
+![Merge Documents](creating-a-secure-pdf_2.png)
 
+1. ライブラリ ツールの **PDF に結合** オプションを使用して、出力ファイルを保存します。出力ファイルをディスクに保存するように求められます。
 
-1. ライブラリ ツールの**Merge to PDF**オプションを使用して出力ファイルを保存します。出力ファイルをディスクに保存するように求められます。
+![Merge to PDF](creating-a-secure-pdf_3.png)
 
-![todo:image_alt_text](creating-a-secure-pdf_3.png)
+### Output
 
-### **出力**
+出力ファイルは暗号化されます。
 
-出力ファイルは暗号化されています。
+![Output](creating-a-secure-pdf_4.png)
 
-![todo:image_alt_text](creating-a-secure-pdf_4.png)
 

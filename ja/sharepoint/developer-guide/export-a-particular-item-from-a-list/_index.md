@@ -1,28 +1,27 @@
----
-title: SharePoint のリストから特定の項目を PDF にエクスポートする
+﻿---
+title: SharePoint でリストから特定のアイテムを PDF にエクスポートする
 linktitle: リストから特定の項目をエクスポートする
 type: docs
 weight: 10
 url: /ja/sharepoint/export-a-particular-item-from-a-list/
-lastmod: "2026-06-18"
-description: PDF SharePoint API を使用すると、複数のドキュメントまたは 1 つずつを PDF に変換できます（この記事に示す通り）。
+lastmod: "2020-12-16"
+description: PDF SharePoint API を使用すると、この記事で示すように、複数のドキュメントを、または一度に 1 つずつ PDF に変換できます。
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint は、複数のドキュメントまたは 1 つずつを変換できます。本記事では、リストから項目をエクスポートする方法を示しています。
+Aspose.PDF for SharePoint lets you convert several documents, or one at a time. This article shows how to export an item from a list.
 
 {{% /alert %}}
 
-特定の項目をリストからエクスポートするには、項目の Edit Control Block（ECB）から **Export to Pdf** を選択します。
+リストから特定のアイテムをエクスポートするには: アイテムの編集コントロール ブロック (ECB) から [**PDF にエクスポート**] を選択します。
 
-## **項目の ECB で Export to Pdf を選択**
+## Selecting Export to Pdf in the item's ECB
 
-![todo:image_alt_text](export-a-particular-item-from-a-list_1.png)
+![Selecting Export to Pdf](export-a-particular-item-from-a-list_1.png)
 
+## PDF にエクスポート
 
+![Export to PDF](export-a-particular-item-from-a-list_2.png)
 
-## **PDFへエクスポート**
-
-![todo:image_alt_text](export-a-particular-item-from-a-list_2.png)
 
