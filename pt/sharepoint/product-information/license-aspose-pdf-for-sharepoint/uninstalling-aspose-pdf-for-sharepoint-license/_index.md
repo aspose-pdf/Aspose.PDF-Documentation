@@ -1,33 +1,34 @@
----
-title: Desinstalando a Licença Aspose.Pdf para SharePoint
-linktitle: Desinstalando a Licença Aspose.Pdf para SharePoint
+﻿---
+title: Desinstalando Aspose.PDF para licença do SharePoint
+linktitle: Desinstalando Aspose.PDF para licença do SharePoint
 type: docs
 weight: 30
 url: /pt/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
-lastmod: "2026-06-18"
-description: Por favor, siga as etapas mencionadas neste artigo para desinstalar a Licença PDF SharePoint API.
+lastmod: "2020-12-16"
+description: Siga as etapas mencionadas neste artigo para desinstalar a licença da API do PDF SharePoint.
 ---
 
-## Etapas de Desinstalação
+## Uninstallation Steps
 
 {{% alert color="primary" %}}
 
-Para desinstalar a licença Aspose.PDF para SharePoint, por favor use as etapas abaixo no console do servidor.
+Para desinstalar a licença Aspose.PDF para SharePoint, siga as etapas abaixo no console do servidor.
 
-1. Retire a solução de licença da farm:
+1. Retire a solução de licença do farm:
 
   stsadm.exe -o retractsolution -name Aspose.PDF.SharePoint.License.wsp -immediate
 
-2. Execute trabalhos de temporizador administrativos para concluir a retração imediatamente:
+2. Execute administrative timer jobs to complete the retraction immediately:
 
   stsadm.exe -o execadmsvcjobs
 
-3. Aguarde a conclusão da retração. Você pode usar Central   
+3. Aguarde a conclusão da retração. Você pode usar Central
 
-  Administração para verificar se a retração foi concluída em Administração Central -\u003E Operações -\u003E Gerenciamento de Soluções
+  Administração para verificar se a retirada foi concluída em Administração Central -> Operações -> Gerenciamento de Soluções
 
-4. Remova a solução do repositório de soluções do SharePoint:
+4. Remova a solução do armazenamento de soluções do SharePoint:
 
   stsadm.exe -o deletesolution -name Aspose.PDF.SharePoint.License.wsp
 
 {{% /alert %}}
+

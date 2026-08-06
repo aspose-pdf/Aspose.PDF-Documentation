@@ -1,15 +1,16 @@
----
-title: Testando uma Licença
-linktitle: Testando uma Licença
+﻿---
+title: Testando uma licença
+linktitle: Testando uma licença
 type: docs
 weight: 20
 url: /pt/sharepoint/testing-a-license/
-lastmod: "2026-06-18"
-description: Para testar se uma licença para a API PDF SharePoint foi instalada com sucesso, converta qualquer documento para o formato desejado e ele deve ser gerado sem nenhum Aviso de Avaliação.
+lastmod: "2020-12-16"
+description: Para testar se uma licença para PDF SharePoint API foi instalada com sucesso, converta qualquer documento no formato desejado e ele deverá ser gerado sem qualquer Aviso de Avaliação.
 ---
 
 {{% alert color="primary" %}}
 
-Para testar se uma licença foi instalada corretamente, converta qualquer documento para o formato desejado. Se o documento não contiver Aviso de Avaliação, a licença foi ativada com sucesso.
+Para testar se uma licença foi instalada corretamente, converta qualquer documento no formato desejado. Se o documento não contiver nenhum Aviso de Avaliação, a licença foi ativada com sucesso.
 
 {{% /alert %}}
+

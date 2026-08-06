@@ -1,48 +1,48 @@
----
-title: Instalando a Licença Aspose.Pdf para SharePoint
-linktitle: Instalando a Licença Aspose.Pdf para SharePoint
+﻿---
+title: Instalando Aspose.PDF para licença do SharePoint
+linktitle: Instalando Aspose.PDF para licença do SharePoint
 type: docs
 weight: 10
 url: /pt/sharepoint/installing-aspose-pdf-for-sharepoint-license/
-lastmod: "2026-06-18"
-description: Quando estiver satisfeito com sua avaliação, você pode adquirir uma licença para a API PDF SharePoint e seguir as instruções de instalação para aplicá‑la.
+lastmod: "2020-12-16"
+description: Quando estiver satisfeito com sua avaliação, você poderá adquirir uma licença para PDF SharePoint API e seguir as instruções de instalação para aplicá-la.
 ---
 
 {{% alert color="primary" %}}
 
-Quando estiver satisfeito com sua avaliação, você pode [adquirir uma licença](https://purchase.aspose.com/buy). Antes de comprar, certifique‑se de que entende e concorda com os termos de assinatura da licença.
+Quando estiver satisfeito com sua avaliação, você poderá [comprar uma licença](https://purchase.aspose.com/buy). Antes de comprar, certifique-se de compreender e concordar com os termos de assinatura da licença.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-A licença será enviada por e‑mail para você após o pagamento do pedido. A licença é um arquivo .zip que contém um pacote de solução SharePoint padrão.
+A licença será enviada para você por e-mail após o pagamento do pedido. A licença é um arquivo .zip que contém um pacote de solução regular do SharePoint.
 
 Este arquivo contém:
 
 - Aspose.PDF.SharePoint.License.wsp
 
-Arquivo de pacote de solução SharePoint. A licença Aspose.PDF for SharePoint é empacotada como uma solução SharePoint para facilitar a implantação/retração na fazenda de servidores.
+Arquivo do pacote de solução do SharePoint. A licença Aspose.PDF para SharePoint é empacotada como uma solução SharePoint para facilitar a implantação/retração em todo o farm de servidores.
 
-- readme.txt
+- leia-me.txt
 
-Instruções de instalação da licença. A instalação da licença é realizada a partir do console do servidor via stsadm.exe. As etapas necessárias para instalar a licença são apresentadas abaixo.
+Instruções de instalação da licença. A instalação da licença é realizada no console do servidor por meio de stsadm.exe. As etapas necessárias para instalar a licença são fornecidas abaixo.
 
-**Nota:** Os caminhos foram omitidos para clareza. Pode ser necessário adicionar o caminho real para stsadm.exe e/ou arquivo de solução ao executá‑los.
+**Observação:** Os caminhos foram omitidos para maior clareza. Pode ser necessário adicionar o caminho real para stsadm.exe e/ou arquivo de solução ao executá-los.
 
-1. Execute o stsadm para adicionar a solução ao repositório de soluções do SharePoint:
+1. Execute stsadm para adicionar a solução ao armazenamento de soluções do SharePoint:
 
-stsadm.exe -o addsolution -filename Aspose.PDF.SharePoint.License.wsp
+stsadm.exe -o addolution -nome do arquivo Aspose.PDF.SharePoint.License.wsp
 
-2. Implante a solução em todos os servidores da fazenda:
+2. Implante a solução em todos os servidores do farm:
 
-stsadm.exe -o deploysolution -name Aspose.PDF.SharePoint.License.wsp -immediate -force
+stsadm.exe -o implantsolution -name Aspose.PDF.SharePoint.License.wsp -immediate -force
 
-3. Execute trabalhos de temporizador administrativos para concluir a implantação imediatamente.
+3. Execute trabalhos de timer administrativo para concluir a implantação imediatamente.
 
 stsadm.exe -o execadmsvcjobs
 
-**Nota:** Você receberá um aviso ao executar a etapa de implantação se o serviço Windows SharePoint Services Administration não estiver iniciado. O Stsadm.exe depende deste serviço e do Windows SharePoint Timer Service para replicar os dados da solução em toda a fazenda. Se esses serviços não estiverem em execução na sua fazenda de servidores, pode ser necessário implantar a licença em cada servidor.
-
+**Observação:** Você receberá um aviso ao executar a etapa de implantação se o serviço de Administração do Windows SharePoint Services não for iniciado. Stsadm.exe depende desse serviço e do Windows SharePoint Timer Service para replicar dados da solução em todo o farm. Se esses serviços não estiverem em execução no farm de servidores, talvez seja necessário implantar a licença em cada servidor.
 
 {{% /alert %}}
+
