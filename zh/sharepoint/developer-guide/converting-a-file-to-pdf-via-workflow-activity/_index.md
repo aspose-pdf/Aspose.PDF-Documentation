@@ -1,108 +1,93 @@
----
-title: 通过工作流活动将文件转换为 PDF
-linktitle: 通过工作流活动将文件转换为 PDF
+﻿---
+title: 通过工作流程活动将文件转换为 PDF
+linktitle: 通过工作流程活动将文件转换为 PDF
 type: docs
 weight: 50
 url: /zh/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
-lastmod: "2026-06-18"
-description: PDF SharePoint API 可在将文档转换为 PDF 的 SharePoint 工作流中使用。
+lastmod: "2020-12-16"
+description: PDF SharePoint API 可以在将文档转换为 PDF 的 SharePoint 工作流中使用。
 ---
 
 {{% alert color="primary" %}}
 
-对工作流的支持是 Microsoft Office SharePoint Server 的关键功能。工作流帮助根据业务逻辑自动化文档的流转，并简化文档组织的成本和时间。本篇文章演示如何在工作流中使用 Aspose.PDF for SharePoint 将文档转换为 PDF。
+Support for workflows is key functionality of Microsoft Office SharePoint Server. Workflows help automate movement of documents according to business logic and streamline the cost and time of document organization. This article demonstrates how to use Aspose.PDF for SharePoint in a workflow that converts a document to PDF.
 
 {{% /alert %}}
-## **设置工作流**
 
-此示例创建一个工作流，将文档库中的任何新项目转换为 PDF 格式并存储到另一个文档库中。示例使用 **Personal Documents** 库作为源库，使用 **Shared Documents** 库中的 **Pdf** 子文件夹作为目标库。
+## Setting up a Workflow
 
-Aspose.PDF for SharePoint 支持 HTML、文本和图像文件的转换。
+此示例创建一个工作流，将文档库中的任何新项目转换为 PDF 格式并将其存储在另一个文档库中。该示例使用 **个人文档** 库作为源库，使用 **共享文档** 库中的 *​​Pdf** 子文件夹作为目标库。
 
-### **使用 SharePoint Designer 设计工作流**
+Aspose.PDF for SharePoint supports conversion of HTML, text and image files.
 
-1. 打开 **SharePoint Designer** 并连接到将实现工作流的站点。
-1. 从 **site objects** 中选择 **Workflows**，然后打开 **List Workflow**。
-1. 选择 **Personal Documents** 库，以在文档库中创建并附加一个新的列表工作流。
+### Design the Workflow using SharePoint Designer
 
-   **从菜单中选择 Personal Documents**
+1. Open **SharePoint Designer** and connect to the site where the workflow will be implemented.
+1. Select **Workflows** from **site objects** and then open **List Workflow**.
+1. 选择 **个人文档** 库以创建新的列表工作流程并将其附加到文档库。
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_1.png)
+   **从菜单中选择个人文档**
 
+![Converting file to PDF via Workflow Activity_1](converting-a-file-to-pdf-via-workflow-activity_1.png)
 
-1. 通过输入工作流名称和描述，将列表工作流创建并附加到 **Personal Documents** 库。
-1. 单击 **OK** 完成此步骤。
+1. Create and attach the list workflow to the **Personal Documents** library by typing a workflow name and description.
+1. Click **OK** to complete this step.
 
-   **创建列表工作流**
+   **Creating a list workflow**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_2.png)
+![Converting file to PDF via Workflow Activity_2](converting-a-file-to-pdf-via-workflow-activity_2.png)
 
+将出现工作流程步骤编辑器。这用于定义工作流程的条件和操作。现在添加一个操作，从 **Aspose Actions** 无条件地将新文档转换为 PDF。
 
+1. Select the **Convert file to PDF via Aspose.PDF** action from the **Action** menu.
 
-出现工作流步骤编辑器。该编辑器用于为工作流定义条件和操作。现在，从 **Aspose Actions** 添加一个操作，将新文档转换为 PDF，且没有任何条件。
+   **Selecting and action**
 
-1. 从 **Action** 菜单中选择 **Convert file to PDF via Aspose.PDF** 操作。
+![Converting file to PDF via Workflow Activity_3](converting-a-file-to-pdf-via-workflow-activity_3.png)
 
-   **选择操作**
+1. Configure the action parameters:
+   1. Set **this folder** parameter to the destination folder.
+   1. Either leave the other action parameters as default values or set using the action properties window. The default value for the **Overwrite** parameter is false.
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_3.png)
+      **The Workflow Editor**
 
+![Converting file to PDF via Workflow Activity_4](converting-a-file-to-pdf-via-workflow-activity_4.png)
 
-1. 配置操作参数：
-   1. 将 **this folder** 参数设置为目标文件夹。
-   1. 可以保持其他操作参数为默认值，或在操作属性窗口中进行设置。**Overwrite** 参数的默认值为 false。
+**Setting the destination library**
 
-      **工作流编辑器**
+![Converting file to PDF via Workflow Activity_5](converting-a-file-to-pdf-via-workflow-activity_5.png)
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_4.png)
+**Setting the properties**
 
+![Converting file to PDF via Workflow Activity_6](converting-a-file-to-pdf-via-workflow-activity_6.png)
 
+1. 从 **工作流程** 菜单中，选择 **工作流程设置**。
+1. 选择**创建新项目时自动启动工作流程**并从**启动选项**中清除其他选项。
 
-**设置目标库**
+   **Setting the start options**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_5.png)
+![Converting file to PDF via Workflow Activity_7](converting-a-file-to-pdf-via-workflow-activity_7.png)
 
+The workflow design is finished.
 
+1. 保存并发布工作流以在 SharePoint 网站上实施它。
 
-**设置属性**
+### Test the Workflow
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_6.png)
+To test the workflow:
 
-
-
-
-1. 在 **Workflow** 菜单中，选择 **Workflow Settings**。
-1. 选择 **在创建新项目时自动启动工作流**，并清除 **启动选项** 中的其他选项。
-
-   **设置启动选项**
-
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_7.png)
-
-
-
-工作流设计已完成。
-
-1. 保存并发布工作流，以在 SharePoint 网站上实施它。
-
-### **测试工作流**
-
-测试工作流的方法：
-
-1. 打开 SharePoint 站点并将新文档上传到 **Personal Documents** 文档库。
-   Aspose.PDF for SharePoint 支持将 HTML 文件、文本文件和图像（JPG、PNG、GIF、TIFF 和 BMP*）转换为 PDF。工作流已配置为在创建新项时自动启动，文件会自动处理。
+1. 打开 SharePoint 网站并将新文档上传到 **个人文档** 文档库。
+   Aspose.PDF for SharePoint supports conversion from HTML files, text files, and images (JPG, PNG, GIF, TIFF and BMP*) to PDF. The workflow is configured to start automatically when a new item is created, so files are process automatically.
 1. 刷新浏览器。
-   工作流状态显示在工作流列中，此例为 **Aspose.PDF Workflow**。
+   工作流程状态显示在工作流程列中，在本例中为 **Aspose.PDF Workflow**。
 
-   **将文档添加到源库**
+   **Adding a document to the source library**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_8.png)
+![Converting file to PDF via Workflow Activity_8](converting-a-file-to-pdf-via-workflow-activity_8.png)
 
+1. Open the destination document library to view the converted document. **Shared Documents/Pdf** is the path in this example.
 
+   **目标图书馆**
 
-
-1. 打开目标文档库以查看已转换的文档。本示例中的路径为 **Shared Documents/Pdf**。
-
-   **目标库**
-
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_9.png)
+![Converting file to PDF via Workflow Activity_9](converting-a-file-to-pdf-via-workflow-activity_9.png)
 
