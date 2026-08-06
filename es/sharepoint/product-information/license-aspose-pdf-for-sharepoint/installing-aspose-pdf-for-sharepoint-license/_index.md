@@ -1,48 +1,48 @@
----
-title: Instalando la licencia de Aspose.Pdf para SharePoint
-linktitle: Instalando la licencia de Aspose.Pdf para SharePoint
+﻿---
+title: Instalación de Aspose.PDF para licencia de SharePoint
+linktitle: Instalación de Aspose.PDF para licencia de SharePoint
 type: docs
 weight: 10
 url: /es/sharepoint/installing-aspose-pdf-for-sharepoint-license/
-lastmod: "2026-06-18"
-description: Una vez que estés satisfecho con tu evaluación, puedes comprar una licencia para PDF SharePoint API y seguir las instrucciones de instalación para aplicarla.
+lastmod: "2020-12-16"
+description: Una vez que esté satisfecho con su evaluación, puede comprar una licencia para PDF SharePoint API y seguir las instrucciones de instalación para aplicarla.
 ---
 
 {{% alert color="primary" %}}
 
-Una vez que estés satisfecho con tu evaluación, puedes [comprar una licencia](https://purchase.aspose.com/buy). Antes de comprar, asegúrate de comprender y aceptar los términos de suscripción de la licencia.
+Once you are happy with your evaluation, you can [purchase a license](https://purchase.aspose.com/buy). Before purchasing make sure you understand and agree to the license subscription terms.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-La licencia se enviará por correo electrónico después de que se haya pagado el pedido. La licencia es un archivo .zip que contiene un paquete de solución regular de SharePoint.
+La licencia se le enviará por correo electrónico una vez que se haya pagado el pedido. La licencia es un archivo .zip que contiene un paquete de solución SharePoint normal.
 
 Este archivo contiene:
 
 - Aspose.PDF.SharePoint.License.wsp
 
-Archivo de paquete de solución de SharePoint. Aspose.PDF for SharePoint License se empaqueta como una solución de SharePoint para facilitar el despliegue/retiro en toda la granja de servidores.
+Archivo del paquete de solución de SharePoint. Aspose.PDF para la licencia de SharePoint está empaquetado como una solución de SharePoint para facilitar la implementación/retirada en toda la granja de servidores.
 
-- readme.txt
+- Léame.txt
 
-Instrucciones de instalación de la licencia. La instalación de la licencia se realiza desde la consola del servidor mediante stsadm.exe. Los pasos necesarios para instalar la licencia se indican a continuación.
+Instrucciones de instalación de licencia. La instalación de la licencia se realiza desde la consola del servidor a través de stsadm.exe. Los pasos necesarios para instalar la licencia se detallan a continuación.
 
-**Nota:** Las rutas se omiten por claridad. Es posible que necesite agregar la ruta real a stsadm.exe y/o al archivo de solución al ejecutarlos.
+**Nota:** Las rutas se omiten para mayor claridad. Es posible que deba agregar la ruta real a stsadm.exe y/o al archivo de solución al ejecutarlos.
 
 1. Ejecute stsadm para agregar la solución al almacén de soluciones de SharePoint:
 
-stsadm.exe -o addsolution -filename Aspose.PDF.SharePoint.License.wsp
+stsadm.exe -o addsolution -nombre de archivo Aspose.PDF.SharePoint.License.wsp
 
-2. Despliegue la solución en todos los servidores de la granja:
+2. Implemente la solución en todos los servidores de la granja:
 
 stsadm.exe -o deploysolution -name Aspose.PDF.SharePoint.License.wsp -immediate -force
 
-3. Ejecute los trabajos temporizadores administrativos para completar el despliegue inmediatamente.
+3. Ejecute trabajos del temporizador administrativo para completar la implementación de inmediato.
 
 stsadm.exe -o execadmsvcjobs
 
-**Nota:** Recibirás una advertencia al ejecutar el paso de implementación si el servicio Windows SharePoint Services Administration no está iniciado. Stsadm.exe depende de este servicio y del Windows SharePoint Timer Service para replicar los datos de la solución en toda la granja. Si estos servicios no están ejecutándose en tu granja de servidores, es posible que necesites desplegar la licencia en cada servidor.
-
+**Note:** You will receive a warning when running deployment step if Windows SharePoint Services Administration service is not started. Stsadm.exe relies on this service and Windows SharePoint Timer Service to replicate solution data across the farm. If these services are not running on your server farm, you may need to deploy the license at each server.
 
 {{% /alert %}}
+

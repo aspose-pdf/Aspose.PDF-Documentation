@@ -1,20 +1,20 @@
----
-title: Agregar marca de agua a PDF añadido a la biblioteca de SharePoint
+﻿---
+title: Agregar marca de agua a PDF agregado a la biblioteca de SharePoint
 linktitle: Agregar marca de agua a PDF
 type: docs
 weight: 20
 url: /es/sharepoint/add-watermark-to-pdf/
-lastmod: "2026-06-18"
-description: La API PDF SharePoint le permite agregar una marca de agua a los documentos PDF añadidos a la biblioteca.
+lastmod: "2020-12-16"
+description: PDF SharePoint API le permite agregar marcas de agua a documentos PDF agregados a la biblioteca.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint le permite agregar una marca de agua a un documento PDF. La función agrega una marca de agua de texto en la esquina inferior izquierda de cada página de un documento PDF añadido a la biblioteca.
+Aspose.PDF para SharePoint le permite agregar una marca de agua a un documento PDF. La función agrega una marca de agua de texto en la esquina inferior izquierda de cada página de un documento PDF agregado a la biblioteca.
 
-## **Texto de marca de agua en la esquina inferior izquierda**
+## Texto de marca de agua en la esquina inferior izquierda
 
-![todo:image_alt_text](add-watermark-to-pdf_1.jpg)
+![Agregar marca de agua a PDF: ejemplo 1](add-watermark-to-pdf_1.jpg)
 
 {{% /alert %}}
 
@@ -22,23 +22,24 @@ Aspose.PDF for SharePoint le permite agregar una marca de agua a un documento PD
 
 Para habilitar la función de marca de agua para una biblioteca específica:
 
-1. Haga clic en **Watermark Settings** en la pestaña **Aspose Tools** del cuadro de diálogo **Library Tools**.
+1. Haga clic en **Configuración de marca de agua** en la pestaña **Herramientas de Aspose** en el cuadro de diálogo **Herramientas de biblioteca**.
 
    **Herramientas de biblioteca**
 
-![todo:image_alt_text](add-watermark-to-pdf_2.jpg)
+![Agregar marca de agua a PDF: ejemplo 2](add-watermark-to-pdf_2.jpg)
 
-La configuración de marca de agua es específica de la lista, por lo que puede elegir una configuración de marca de agua diferente para distintas bibliotecas. La siguiente captura de pantalla muestra el cuadro de diálogo Watermark Settings para la biblioteca **Shared Documents**.
+La configuración de marca de agua es específica de la lista, por lo que puede elegir diferentes configuraciones de marca de agua para diferentes bibliotecas. La siguiente captura de pantalla muestra el cuadro de diálogo Configuración de marca de agua para la biblioteca **Documentos compartidos**.
 
-## **Configuración de marca de agua**
+## Configuración de marca de agua
 
-![todo:image_alt_text](add-watermark-to-pdf_3.jpg)
+![Agregar marca de agua a PDF: ejemplo 3](add-watermark-to-pdf_3.jpg)
 
-- Seleccione **Enable watermarking for** para habilitar la función de marca de agua para una lista específica.
-- **Watermark text** – el texto que aparecerá en la página como marca de agua.
-- **Font** – la fuente usada para la marca de agua.
-- **Color** – el color de la marca de agua.
+- Seleccione **Habilitar marca de agua para** para habilitar la función de marca de agua para una lista específica.
+- **Texto de marca de agua**: el texto que aparecerá en la página como marca de agua.
+- **Fuente**: la fuente utilizada para la marca de agua.
+- **Color**: el color de la marca de agua.
 
-Después de habilitar la marca de agua para una biblioteca específica, Aspose.PDF agrega marcas de agua a cada documento PDF añadido a esa biblioteca.
+Después de habilitar la marca de agua para una biblioteca específica, Aspose.PDF agrega marcas de agua a cada documento PDF agregado a esa biblioteca.
 
 {{% /alert %}}
+

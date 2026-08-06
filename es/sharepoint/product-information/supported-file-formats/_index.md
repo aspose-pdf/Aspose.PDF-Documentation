@@ -1,25 +1,29 @@
----
-title: Formatos de archivo compatibles
-linktitle: Formatos de archivo compatibles
+﻿---
+title: Formatos de archivo admitidos
+linktitle: Formatos de archivo admitidos
 type: docs
 weight: 20
 url: /es/sharepoint/supported-file-formats/
-lastmod: "2026-06-18"
+lastmod: "2020-12-16"
 description: PDF SharePoint API puede cargar y guardar formatos de archivo que incluyen PDF y PDF/A.
 ---
 
-## <ins>**Formatos de carga compatibles**
-La tabla siguiente indica los formatos de archivo que Aspose.PDF for SharePoint puede cargar.
+## Formatos de carga admitidos
+
+La siguiente tabla indica los formatos de archivo que puede cargar Aspose.PDF para SharePoint.
 
 |**Formato**|**Descripción**|
 | :- | :- |
 |[PDF](https://docs.fileformat.com/pdf/)|Formato de documento portátil|
 |[PDF/A](https://docs.fileformat.com/pdf/a/)|Formato de documento portátil|
-## <ins>**Formatos de guardado compatibles**
-La tabla siguiente indica los formatos de archivo en los que se puede guardar el documento utilizando Aspose.PDF para SharePoint. 
+
+## Formatos de guardado admitidos
+
+La siguiente tabla indica los formatos de archivo en los que se puede guardar el documento utilizando Aspose.PDF para SharePoint. 
 
 |**Formato**|**Descripción**|
 | :- | :- |
-|[PDF](https://docs.fileformat.com/pdf/)|Guarda el documento en formato PDF|
-|[PDF/A](https://docs.fileformat.com/pdf/a/)|Guarda el documento en formato PDF/A|
+|[PDF](https://docs.fileformat.com/pdf/)|Guarda el documento en formato PDF.|
+|[PDF/A](https://docs.fileformat.com/pdf/a/)|Guarda el documento en formato PDF/A.|
+
 
