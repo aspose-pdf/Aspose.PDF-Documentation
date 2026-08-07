@@ -1,64 +1,63 @@
-﻿---
-title: Exportar lista de tarefas para PDF com código de barras usando PDF Template Engine
-linktitle: Exportar lista de tarefas para PDF com código de barras usando PDF Template Engine
+---
+title: Exportar lista de tarefas para PDF com código de barras usando o mecanismo de modelo PDF
+linktitle: Exportar lista de tarefas para PDF com código de barras usando o mecanismo de modelo PDF
 type: docs
 weight: 40
 url: /pt/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
-lastmod: "2020-12-16"
-description: PDF SharePoint API can export Task List to PDF with Barcode using PDF Template Engine.
+lastmod: "2026-08-07"
+description: A API PDF SharePoint pode exportar lista de tarefas para PDF com código de barras usando o mecanismo de modelo PDF.
 ---
 
 {{% alert color="primary" %}}
 
-Este artigo mostra como configurar e exportar uma lista de tarefas para PDF com códigos de barras usando Aspose.PDF para SharePoint.
+Este artigo mostra como configurar e exportar uma lista de tarefas para PDF com códigos de barras usando Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
-Para exportar uma lista de tarefas para PDF com código de barras usando o mecanismo de modelo, siga as seguintes etapas:
+Para exportar uma lista de tarefas para PDF com um código de barras usando o mecanismo de modelo, siga os passos a seguir:
 
-1. Crie e carregue um modelo.
-1. Preencha os campos do modelo e salve o modelo.
-1. Crie e salve uma nova tarefa.
-1. Exporte o documento para PDF.
+1. Criar e enviar um modelo.
+1. Preencher os campos do modelo e salvar o modelo.
+1. Criar e salvar uma nova tarefa.
+1. Exportar o documento para PDF.
 
-O processo é fornecido em detalhes abaixo.
+O processo é fornecido em detalhe abaixo.
 
-## Exportando lista de tarefas para PDF
+## Exportando Lista de Tarefas para PDF
 
 {{% alert color="primary" %}}
 
-1. Crie uma lista de modelos de PDF.
+1. Criar uma lista de modelos PDF.
 
-![Create PDF Template List](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
+![Criar Lista de Modelos PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
 
-2. Após criar o modelo, clique em **Adicionar novo item** na lista e carregue o arquivo XML.
+2. Após criar o modelo, clique em **Add New Item** na lista e faça o upload do arquivo XML.
 
-![Upload XML File](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_2.png)
+![Carregar Arquivo XML](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_2.png)
 
 3. Quando o upload for concluído, clique em **OK**.
 4. Preencha os campos do formulário.
-5. Salve o modelo.
+5. Salvar o modelo.
 
-![Configure Template](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_3.png)
+![Configurar Modelo](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_3.png)
 
-The template has been configured.
+O modelo foi configurado.
 
-6. Acesse a lista **Tarefas** e crie uma nova tarefa.
-7. Salve a tarefa.
+6. Vá para a lista **Tasks** e crie uma nova tarefa.
+7. Salvar a tarefa.
 
-![Create Task](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
+![Criar Tarefa](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
 
-8. Na guia **Ferramentas Aspose**, clique em **Exportar para PDF**.
+8. Na aba **Aspose Tools**, clique em **Export To PDF**.
 
-![Export To PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_5.png)
+![Exportar para PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_5.png)
 
-9. Selecione o modelo configurado e clique em **Exportar**.
+9. Selecione o modelo configurado e clique em **Export**.
 
-![Select Template](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_6.png)
+![Selecionar Modelo](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_6.png)
 
 O PDF exportado:
 
-![Exported PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_7.png)
+![PDF exportado](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_7.png)
 
 {{% /alert %}}
-
