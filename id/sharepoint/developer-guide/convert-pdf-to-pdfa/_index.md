@@ -1,30 +1,29 @@
-﻿---
+---
 title: Konversi PDF ke PDFA di SharePoint
 linktitle: Konversi PDF ke PDFA
 type: docs
 weight: 70
 url: /id/sharepoint/convert-pdf-to-pdfa/
-lastmod: "2020-12-16"
-description: Menggunakan PDF SharePoint API, Anda dapat mengonversi PDF ke format PDFA. Saat ini hanya mendukung standar PDF/A-1b.
+lastmod: "2026-08-07"
+description: Menggunakan API PDF SharePoint, Anda dapat mengonversi PDF ke format PDFA. Saat ini hanya mendukung standar PDF/A-1b.
 ---
 
 {{% alert color="primary" %}}
 
-Dalam rilis [Aspose.PDF untuk SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.0.0/) kami telah menambahkan dukungan untuk membuat PDF yang sesuai dengan PDFA.
+Di [Aspose.PDF untuk SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.0.0/) rilis kami telah menambahkan dukungan untuk membuat PDF yang mematuhi PDFA.
 
-Saat ini Aspose.PDF untuk SharePoint hanya mendukung standar PDFA1b.
+Saat ini Aspose.PDF for SharePoint hanya mendukung standar PDFA1b.
 
 {{% /alert %}}
 
-## Creating a PDFA compliant Document
+## Membuat Dokumen yang Mematuhi PDFA
 
-Convert PDF from SharePoint Document library to PDFA as following:
+Konversi PDF dari perpustakaan Dokumen SharePoint ke PDFA sebagai berikut:
 
-1. Click **Convert to PDF** in the ECB menu.
+1. Klik **Convert to PDF** pada menu ECB.
 
-![Convert PDF to PDFA-example 1](convert-pdf-to-pdfa_1.png)
+![Konversi PDF ke PDFA-contoh 1](convert-pdf-to-pdfa_1.png)
 
 2. Unduh dan simpan file PDF yang dihasilkan.
 
-![Convert PDF to PDFA-example 2](convert-pdf-to-pdfa_2.png)
-
+![Konversi PDF ke PDFA-contoh 2](convert-pdf-to-pdfa_2.png)

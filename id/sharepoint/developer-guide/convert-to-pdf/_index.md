@@ -1,16 +1,16 @@
-﻿---
-title: Konversi HTML, Teks dan Gambar ke PDF di SharePoint
-linktitle: Konversikan ke PDF
+---
+title: Konversi HTML, Teks, dan Gambar ke PDF di SharePoint
+linktitle: Konversi ke PDF
 type: docs
 weight: 30
 url: /id/sharepoint/convert-to-pdf/
-lastmod: "2020-12-16"
-description: PDF SharePoint API memungkinkan konversi file HTML, file teks, dan gambar (JPG, PNG, GIF, TIFF, BMP) ke format PDF.
+lastmod: "2026-08-07"
+description: API PDF SharePoint memungkinkan mengonversi file HTML, file teks, dan gambar (JPG, PNG, GIF, TIFF, BMP) ke format PDF.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF untuk SharePoint memungkinkan konversi file HTML, file teks, dan gambar (JPG, PNG, GIF, TIFF, BMP) ke format PDF.
+Aspose.PDF for SharePoint memungkinkan mengonversi file HTML, file teks, dan gambar (JPG, PNG, GIF, TIFF, BMP) ke format PDF.
 
 {{% /alert %}}
 
@@ -20,20 +20,19 @@ Aspose.PDF untuk SharePoint memungkinkan konversi file HTML, file teks, dan gamb
 
 Untuk mengonversi dokumen ke PDF:
 
-1. Klik **Konversikan ke PDF** di menu ECB.
+1. Klik **Convert to PDF** di menu ECB.
 1. Unduh dan simpan file PDF yang dihasilkan.
 
-Opsi Konversi ke PDF di menu ECB
+Opsi Convert to PDF di menu ECB
 
-![Convert to PDF](convert-to-pdf_1.jpg)
+![Konversi ke PDF](convert-to-pdf_1.jpg)
 
 {{% /alert %}}
 
-## Informasi Pembuat PDF
+## Informasi PDF Creator
 
 {{% alert color="primary" %}}
 
-- Harap perhatikan bahwa Anda tidak dapat menetapkan nilai pada kolom `**Aplikasi** dan `**Producer**, karena Aspose Ltd. dan Aspose.PDF untuk SharePoint x.x.x akan ditampilkan pada kolom ini.
+- Harap catat bahwa Anda tidak dapat mengatur nilai pada bidang **Application** dan **Producer**, karena Aspose Ltd. dan Aspose.PDF for SharePoint x.x.x akan ditampilkan pada bidang-bidang ini. 
 
 {{% /alert %}}
-

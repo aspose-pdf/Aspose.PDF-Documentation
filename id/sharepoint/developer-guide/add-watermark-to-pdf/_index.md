@@ -1,45 +1,44 @@
-﻿---
-title: Tambahkan Tanda Air ke PDF yang ditambahkan ke Perpustakaan SharePoint
-linktitle: Tambahkan Tanda Air ke PDF
+---
+title: Tambahkan Watermark ke PDF yang ditambahkan ke Perpustakaan SharePoint
+linktitle: Tambahkan Watermark ke PDF
 type: docs
 weight: 20
 url: /id/sharepoint/add-watermark-to-pdf/
-lastmod: "2020-12-16"
-description: PDF SharePoint API memungkinkan Anda menambahkan tanda air ke dokumen PDF yang ditambahkan ke perpustakaan.
+lastmod: "2026-08-07"
+description: API PDF SharePoint memungkinkan Anda menambahkan watermark ke dokumen PDF yang ditambahkan ke perpustakaan.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF untuk SharePoint memungkinkan Anda menambahkan tanda air ke dokumen PDF. Fitur ini menambahkan tanda air teks ke sudut kiri bawah setiap halaman dokumen PDF yang ditambahkan ke perpustakaan.
+Aspose.PDF for SharePoint memungkinkan Anda menambahkan watermark ke dokumen PDF. Fitur ini menambahkan watermark teks ke pojok kiri bawah setiap halaman dalam dokumen PDF yang ditambahkan ke perpustakaan.
 
-## Teks Tanda Air di pojok kiri bawah
+## Teks Watermark di pojok kiri bawah
 
-![Tambahkan Tanda Air ke contoh PDF 1](add-watermark-to-pdf_1.jpg)
+![Tambahkan Watermark ke PDF-contoh 1](add-watermark-to-pdf_1.jpg)
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Untuk mengaktifkan fitur tanda air untuk perpustakaan tertentu:
+Untuk mengaktifkan fitur watermark untuk perpustakaan tertentu:
 
-1. Klik **Pengaturan Tanda Air** di tab **Apose Tools** dalam dialog **Alat Perpustakaan**.
+1. Klik **Watermark Settings** pada tab **Aspose Tools** di dialog **Library Tools**.
 
-   **Alat perpustakaan**
+   **Library tools**
 
-![Tambahkan Tanda Air ke contoh PDF 2](add-watermark-to-pdf_2.jpg)
+![Tambahkan Watermark ke PDF-contoh 2](add-watermark-to-pdf_2.jpg)
 
-Pengaturan tanda air bersifat spesifik pada daftar sehingga Anda dapat memilih pengaturan tanda air yang berbeda untuk perpustakaan yang berbeda. Cuplikan layar berikut menampilkan dialog Pengaturan Tanda Air untuk pustaka **Dokumen Bersama**.
+Pengaturan watermark bersifat spesifik untuk daftar sehingga Anda dapat memilih pengaturan watermark yang berbeda untuk perpustakaan yang berbeda. Tangkap layar berikut menunjukkan dialog Watermark Settings untuk perpustakaan **Shared Documents**.
 
-## Pengaturan tanda air
+## Watermark Settings
 
-![Tambahkan Tanda Air ke contoh PDF 3](add-watermark-to-pdf_3.jpg)
+![Tambah Watermark ke PDF-example 3](add-watermark-to-pdf_3.jpg)
 
-- Pilih **Aktifkan watermarking untuk** guna mengaktifkan fitur watermark untuk daftar tertentu.
-- **Teks ​​tanda air** – teks yang akan muncul di halaman sebagai tanda air.
-- **Font** – font yang digunakan untuk tanda air.
-- **Warna** – warna tanda air.
+- Pilih **Enable watermarking for** untuk mengaktifkan fitur watermark pada daftar tertentu.
+- **Watermark text** – teks yang akan tampil pada halaman sebagai watermark.
+- **Font** – font yang digunakan untuk watermark.
+- **Color** – warna watermark.
 
-Setelah Anda mengaktifkan tanda air untuk perpustakaan tertentu, Aspose.PDF menambahkan tanda air ke setiap dokumen PDF yang ditambahkan ke perpustakaan itu.
+Setelah Anda mengaktifkan watermark untuk perpustakaan tertentu, Aspose.PDF menambahkan watermark ke setiap dokumen PDF yang ditambahkan ke perpustakaan tersebut.
 
 {{% /alert %}}
-

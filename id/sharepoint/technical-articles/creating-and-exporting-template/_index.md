@@ -1,18 +1,18 @@
-﻿---
-title: Membuat dan Mengekspor Templat
-linktitle: Creating and Exporting Template
+---
+title: Membuat dan Mengekspor Template
+linktitle: Membuat dan Mengekspor Template
 type: docs
 weight: 10
 url: /id/sharepoint/creating-and-exporting-template/
-lastmod: "2020-12-16"
-description: You can create and export templates to PDF in SharePoint using PDF SharePoint API.
+lastmod: "2026-08-07"
+description: Anda dapat membuat dan mengekspor template ke PDF di SharePoint menggunakan PDF SharePoint API.
 ---
 
 {{% alert color="primary" %}}
 
-Artikel ini memperlihatkan cara membuat dan mengekspor templat menggunakan Aspose.PDF untuk SharePoint.
+Artikel ini menunjukkan cara membuat dan mengekspor template menggunakan Aspose.PDF for SharePoint.
 
-Dari Aspose.PDF untuk SharePoint 1.9.2, dukungan templat PDF juga mencakup subsitus SharePoint.
+Mulai dari Aspose.PDF for SharePoint 1.9.2, dukungan template PDF juga mencakup subsite SharePoint.
 
 {{% /alert %}}
 
@@ -20,66 +20,65 @@ Dari Aspose.PDF untuk SharePoint 1.9.2, dukungan templat PDF juga mencakup subsi
 
 {{% alert color="primary" %}}
 
-To use the Aspose.PDF for SharePoint export feature, first create a list that uses “PDF Templates”.
+Untuk menggunakan fitur ekspor Aspose.PDF for SharePoint, pertama buat daftar yang menggunakan “PDF Templates”.
 
-Membuat daftar yang menggunakan Templat PDF:
+Membuat daftar yang menggunakan PDF Templates:
 
-![Create PDF Template List](creating-and-exporting-template_1.png)
+![Buat Daftar Template PDF](creating-and-exporting-template_1.png)
 
-Two document templates, Task Form Templates and Task List Templates are created:
+Dua template dokumen, Task Form Templates dan Task List Templates dibuat:
 
-![Document Templates](creating-and-exporting-template_2.png)
+![Template Dokumen](creating-and-exporting-template_2.png)
 
-The template form lets you enter the following information:
+Formulir templat memungkinkan Anda memasukkan informasi berikut:
 
-- **Name**: the template's file name.
-- **Title**: the template's title. (By default, the same as the file name.)
-- **Deskripsi**: deskripsi template. Deskripsi yang baik membuat template lebih mudah digunakan.
-- **Assigned List Types**: comma separated list IDs (related to the template. This field may also contain the value
-- **AllListTypes**. This field is only applicable when the **Type** field is set to **List**).
-- **Tipe Konten yang Ditugaskan**: ID tipe konten yang dipisahkan koma terkait dengan templat. Bidang ini mungkin berisi yang disetel ke **AllListTypes**. Bidang ini hanya berlaku bila bidang **Jenis** diatur ke **Item**.
-- **Jenis**: templat daftar atau templat item.
-- **Status**: opsinya aktif, tidak aktif (tidak terlihat oleh semua), dan debugging (hanya terlihat oleh admin).
+- **Name**: nama file templat.
+- **Title**: judul templat. (Secara default, sama dengan nama file.)
+- **Description**: deskripsi templat. Deskripsi yang baik membuat templat lebih mudah digunakan.
+- **Assigned List Types**: ID daftar yang dipisahkan koma (terkait dengan templat. Kolom ini juga dapat berisi nilai
+- **AllListTypes**. Kolom ini hanya berlaku ketika kolom **Type** disetel ke **List**).
+- **Assigned Content Types**: ID tipe konten yang dipisahkan koma terkait dengan templat. Bidang ini dapat diatur menjadi **AllListTypes**. Bidang ini hanya berlaku ketika bidang **Type** diatur ke **Item**.
+- **Type**: baik templat daftar maupun templat item.
+- **Status**: opsi-opsinya adalah aktif, tidak aktif (tidak terlihat oleh siapa pun), dan debug (hanya terlihat oleh admin).
 
-The Task List Templates form:
+Form Templat Daftar Tugas:
 
-![Task List Templates](creating-and-exporting-template_3.png)
+![Templat Daftar Tugas](creating-and-exporting-template_3.png)
 
-The Task Form Templates form:
+Form Templat Form Tugas:
 
-![Task Form Templates](creating-and-exporting-template_4.png)
+![Template Form Tugas](creating-and-exporting-template_4.png)
 
-When they have been saved, the new templates show up in the template list, ready to be used:
+Setelah disimpan, template baru muncul dalam daftar template, siap untuk digunakan:
 
-Two task list templates:*
+Dua template daftar tugas:*
 
-![Task List Templates](creating-and-exporting-template_5.png)
+![Templat Daftar Tugas](creating-and-exporting-template_5.png)
 
-Templat formulir tugas:
+Sebuah template formulir tugas:
 
-![Task Form Templates](creating-and-exporting-template_6.png)
+![Template Form Tugas](creating-and-exporting-template_6.png)
 
-### Developing Templates
+### Mengembangkan Template
 
-A template is an XML file based on Aspose XML PDF. To make a template for a list, place special markers related to the SharePoint target content type field's internal name into the XML PDF file.
+Template adalah file XML yang berbasis Aspose XML PDF. Untuk membuat template untuk sebuah daftar, tempatkan penanda khusus yang terkait dengan nama internal bidang tipe konten target SharePoint ke dalam file XML PDF.
 
 ### Penanda
 
-- **SPListItemsCount** – replaced by count of list items.
-- **SPListTitle** – replaced by list title.
-- **SPTableIterator** – placed to first table cell and mark table for full iteration.
-- **SProwIterator** – ditempatkan ke sel tabel pertama dan menandai tabel untuk iterasi baris.
-- **SPField** – diganti dengan nilai bidang item.
+- **SPListItemsCount** – diganti dengan jumlah item daftar.
+- **SPListTitle** – diganti dengan judul daftar.
+- **SPTableIterator** – ditempatkan pada sel tabel pertama dan menandai tabel untuk iterasi penuh.
+- **SPRowIterator** – ditempatkan pada sel tabel pertama dan menandai tabel untuk iterasi baris.
+- **SPField** – diganti dengan nilai field item.
 
-For reference, please download [template XML files](attachments/8421394/8618082.zip).
+Untuk referensi, silakan unduh [file XML templat](attachments/8421394/8618082.zip).
 
 ### Ekspor ke PDF
 
-Ketika templat telah dikonfigurasi sepenuhnya, Anda siap mengekspor daftar atau item ke file PDF.
+Ketika sebuah templat sudah sepenuhnya dikonfigurasi, Anda siap mengekspor daftar atau item ke file PDF.
 
-Exporting a list to PDF using a task list template:
+Mengekspor daftar ke PDF menggunakan templat daftar tugas:
 
-![Export to PDF](creating-and-exporting-template_7.png)
+![Ekspor ke PDF](creating-and-exporting-template_7.png)
 
 {{% /alert %}}
-
