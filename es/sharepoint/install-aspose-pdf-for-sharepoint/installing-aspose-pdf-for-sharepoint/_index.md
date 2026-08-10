@@ -1,6 +1,6 @@
 ﻿---
-title: Instalación de Aspose.PDF para SharePoint
-linktitle: Instalación de Aspose.PDF para SharePoint
+title: Instalación de Aspose.PDF for SharePoint
+linktitle: Instalación de Aspose.PDF for SharePoint
 type: docs
 weight: 20
 url: /es/sharepoint/installing-aspose-pdf-for-sharepoint/
@@ -10,23 +10,23 @@ description: PDF SharePoint API está empaquetado como una solución de SharePoi
 
 {{% alert color="primary" %}}
 
-Aspose.PDF para SharePoint se puede descargar como archivo Aspose.PDF.SharePoint.zip.
+Aspose.PDF for SharePoint se puede descargar como archivo Aspose.PDF.SharePoint.zip.
 
 {{% /alert %}}
 
 Este archivo contiene:
 
 - Aspose.PDF.SharePoint.wsp
-  Archivo de solución de SharePoint. Aspose.PDF para SharePoint está empaquetado como una solución de SharePoint para facilitar la implementación/retirada y la activación/desactivación de funciones en toda la granja de servidores.
+  Archivo de solución de SharePoint. Aspose.PDF for SharePoint está empaquetado como una solución de SharePoint para facilitar la implementación/retirada y la activación/desactivación de funciones en toda la granja de servidores.
 - Aspose_LicenseAgreement.rtf
 
 **Acuerdo de licencia de usuario final:**
 
-- Aspose.PDF para SharePoint.pdf
+- Aspose.PDF for SharePoint.pdf
 
 **Documentación de usuario:**
 
-- Aspose.PDF para SharePoint Documentación.chm
+- Aspose.PDF for SharePoint Documentación.chm
 
 **Documentación de usuario con referencia de API pública:**
 
@@ -46,7 +46,7 @@ El programa de instalación comprueba las siguientes condiciones antes de contin
 - Se inicia el servicio de administración de SharePoint.
 - Se inicia el servicio del temporizador de SharePoint. El servicio de administración de SharePoint y el servicio de temporizador son necesarios porque algunas acciones de configuración dependen de un trabajo del temporizador para propagarse a todos los servidores de la granja de servidores.
 
-**Para instalar Aspose.PDF para SharePoint:**
+**Para instalar Aspose.PDF for SharePoint:**
 
 - Descomprima el zip Aspose.PDF.SharePoint en la unidad local.
 - Ejecute setup.exe y siga las instrucciones en pantalla.

@@ -12,7 +12,8 @@ description: Más información sobre la instalación de PDF SharePoint API expli
 
 {{% alert color="primary" %}}
 
-**Aspose.PDF para SharePoint realiza las siguientes acciones durante la implementación:**
+**Aspose.PDF for SharePoint realiza las siguientes acciones durante la implementación:**
+
 - Instale Aspose.PDF.SharePoint.dll en la caché de ensamblados global y agregue la entrada SafeControl al archivo web.config.
 - Instale el manifiesto de funciones y otros archivos necesarios en los directorios apropiados.
 - Registre la función en la base de datos de SharePoint y póngala a disposición para la activación en el alcance de la función.
@@ -23,7 +24,7 @@ description: Más información sobre la instalación de PDF SharePoint API expli
 
 {{% alert color="primary" %}}
 
-**Aspose.PDF para SharePoint está empaquetado como una característica a nivel de sitio (colección de sitios) y se puede activar y desactivar en colecciones de sitios.**
+**Aspose.PDF for SharePoint está empaquetado como una característica a nivel de sitio (colección de sitios) y se puede activar y desactivar en colecciones de sitios.**
 
 {{% /alert %}}
 

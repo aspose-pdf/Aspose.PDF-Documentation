@@ -10,11 +10,11 @@ description: PDF SharePoint API tiene requisitos de servidor y cliente, así com
 
 ## Requisitos del servidor
 
-Para instalar Aspose.PDF para SharePoint, necesita una computadora que ejecute Microsoft SharePoint Server 2010.
+Para instalar Aspose.PDF for SharePoint, necesita una computadora que ejecute Microsoft SharePoint Server 2010.
 
 ## Requisitos del cliente
 
-Necesita un navegador para acceder a los sitios de SharePoint. Aspose.PDF para SharePoint ha sido probado con los siguientes navegadores:
+Necesita un navegador para acceder a los sitios de SharePoint. Aspose.PDF for SharePoint ha sido probado con los siguientes navegadores:
 
 - MicrosoftInternet Explorer 8
 - Mozilla Firefox 3.5

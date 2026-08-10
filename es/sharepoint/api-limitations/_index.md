@@ -18,7 +18,7 @@ Existen algunas limitaciones al utilizar este componente.
 
 {{% alert color="primary" %}}
 
-Tenga en cuenta que no puede establecer valores en los campos **Aplicación** y **Productor** , porque Aspose Ltd. y Aspose.PDF para SharePoint x.x.x se mostrarán en estos campos. 
+Tenga en cuenta que no puede establecer valores en los campos **Aplicación** y **Productor** , porque Aspose Ltd. y Aspose.PDF for SharePoint x.x.x se mostrarán en estos campos.
 
 {{% /alert %}}
 

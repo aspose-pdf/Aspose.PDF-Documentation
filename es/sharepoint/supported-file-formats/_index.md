@@ -10,7 +10,7 @@ description: PDF SharePoint API puede cargar y guardar formatos de archivo que i
 
 ## Formatos de carga admitidos
 
-La siguiente tabla indica los formatos de archivo que puede cargar Aspose.PDF para SharePoint.
+La siguiente tabla indica los formatos de archivo que puede cargar Aspose.PDF for SharePoint.
 
 |**Formato**|**Descripción**|
 | :- | :- |
@@ -19,7 +19,7 @@ La siguiente tabla indica los formatos de archivo que puede cargar Aspose.PDF pa
 
 ## Formatos de guardado admitidos
 
-La siguiente tabla indica los formatos de archivo en los que se puede guardar el documento utilizando Aspose.PDF para SharePoint. 
+La siguiente tabla indica los formatos de archivo en los que se puede guardar el documento utilizando Aspose.PDF for SharePoint. 
 
 |**Formato**|**Descripción**|
 | :- | :- |
