@@ -10,7 +10,7 @@ description: La bibliothèque PDF SharePoint vous permet de convertir plusieurs 
 
 {{% alert color="primary" %}}
 
-Cet article montre comment convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule opération de conversion à l'aide d'Aspose.PDF pour SharePoint.
+Cet article montre comment convertir plusieurs fichiers sélectionnés en fichiers PDF avec une seule opération de conversion à l'aide d'Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 

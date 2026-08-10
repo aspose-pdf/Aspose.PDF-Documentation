@@ -22,7 +22,7 @@ Ces archives contiennent :
 
 - Aspose.PDF.SharePoint.License.wsp
 
-Fichier de package de solution SharePoint. La licence Aspose.PDF pour SharePoint est présentée sous forme de solution SharePoint pour faciliter le déploiement/la rétractation sur la batterie de serveurs.
+Fichier de package de solution SharePoint. La licence Aspose.PDF for SharePoint est présentée sous forme de solution SharePoint pour faciliter le déploiement/la rétractation sur la batterie de serveurs.
 
 - lisezmoi.txt
 

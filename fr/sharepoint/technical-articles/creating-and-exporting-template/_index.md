@@ -10,9 +10,9 @@ description: Vous pouvez créer et exporter des modèles au format PDF dans Shar
 
 {{% alert color="primary" %}}
 
-Cet article montre comment créer et exporter des modèles à l'aide d'Aspose.PDF pour SharePoint.
+Cet article montre comment créer et exporter des modèles à l'aide d'Aspose.PDF for SharePoint.
 
-Depuis Aspose.PDF pour SharePoint 1.9.2, la prise en charge des modèles PDF couvre également les sous-sites SharePoint.
+Depuis Aspose.PDF for SharePoint 1.9.2, la prise en charge des modèles PDF couvre également les sous-sites SharePoint.
 
 {{% /alert %}}
 
@@ -20,7 +20,7 @@ Depuis Aspose.PDF pour SharePoint 1.9.2, la prise en charge des modèles PDF cou
 
 {{% alert color="primary" %}}
 
-Pour utiliser la fonctionnalité d'exportation Aspose.PDF pour SharePoint, créez d'abord une liste qui utilise des « Modèles PDF ».
+Pour utiliser la fonctionnalité d'exportation Aspose.PDF for SharePoint, créez d'abord une liste qui utilise des « Modèles PDF ».
 
 Création d'une liste qui utilise des modèles PDF :
 

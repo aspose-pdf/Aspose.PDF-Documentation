@@ -12,7 +12,7 @@ description: Veuillez suivre les étapes mentionnées dans cet article pour dés
 
 {{% alert color="primary" %}}
 
-Pour désinstaller la licence Aspose.PDF pour SharePoint, veuillez suivre les étapes ci-dessous à partir de la console du serveur.
+Pour désinstaller la licence Aspose.PDF for SharePoint, veuillez suivre les étapes ci-dessous à partir de la console du serveur.
 
 1. Retirez la solution de licence de la batterie :
 
@@ -22,7 +22,7 @@ Pour désinstaller la licence Aspose.PDF pour SharePoint, veuillez suivre les é
 
   stsadm.exe -o execadmsvcjobs
 
-3. Wait for the retraction to complete. You can use Central   
+3. Wait for the retraction to complete. You can use Central
 
   Administration pour vérifier si la rétractation est terminée sous Administration centrale -> Opérations -> Gestion des solutions
 

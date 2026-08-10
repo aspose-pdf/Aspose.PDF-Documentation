@@ -1,6 +1,6 @@
 ﻿---
-title: Installation d'Aspose.PDF pour SharePoint
-linktitle: Installation d'Aspose.PDF pour SharePoint
+title: Installation d'Aspose.PDF for SharePoint
+linktitle: Installation d'Aspose.PDF for SharePoint
 type: docs
 weight: 20
 url: /fr/sharepoint/installing-aspose-pdf-for-sharepoint/
@@ -17,16 +17,16 @@ Aspose.PDF for SharePoint is downloadable as Aspose.PDF.SharePoint.zip archive.
 This archive contains:
 
 - Aspose.PDF.SharePoint.wsp
-  Fichier de solution SharePoint. Aspose.PDF pour SharePoint est présenté comme une solution SharePoint pour faciliter le déploiement/la rétractation et l'activation/désactivation des fonctionnalités sur la batterie de serveurs.
+  Fichier de solution SharePoint. Aspose.PDF for SharePoint est présenté comme une solution SharePoint pour faciliter le déploiement/la rétractation et l'activation/désactivation des fonctionnalités sur la batterie de serveurs.
 - Aspose_LicenseAgreement.rtf
 
 **Contrat de licence utilisateur final :**
 
-- Aspose.PDF pour SharePoint.pdf
+- Aspose.PDF for SharePoint.pdf
 
 **Documentation utilisateur :**
 
-- Aspose.PDF pour SharePoint Documentation.chm
+- Aspose.PDF for SharePoint Documentation.chm
 
 **Documentation utilisateur avec référence à l'API publique :**
 
@@ -46,7 +46,7 @@ Le programme d'installation vérifie les conditions suivantes avant de continuer
 - Le service d'administration SharePoint est démarré.
 - Le service SharePoint Timer est démarré. Le service d'administration SharePoint et le service Minuterie sont nécessaires car certaines actions de configuration reposent sur un travail de minuterie pour se propager à tous les serveurs de la batterie de serveurs.
 
-**Pour installer Aspose.PDF pour SharePoint :**
+**Pour installer Aspose.PDF for SharePoint :**
 
 - Décompressez le zip Aspose.PDF.SharePoint sur le lecteur local.
 - Exécutez setup.exe et suivez les instructions à l'écran.
@@ -55,22 +55,22 @@ Le programme d'installation vérifie les conditions suivantes avant de continuer
 
 - Vérifiez les conditions préalables à l'installation. L'installation ne continuera pas si une vérification échoue.
 
-![Check Installation Prerequisites](installing-aspose-pdf-for-sharepoint_1.png)
+![Vérifier les prérequis d'installation](installing-aspose-pdf-for-sharepoint_1.png)
 
 - Afficher le contrat de licence utilisateur final. L'utilisateur doit accepter l'accord pour pouvoir continuer.
 
-![Display License Agreement](installing-aspose-pdf-for-sharepoint_2.png)
+![Contrat de licence d'affichage](installing-aspose-pdf-for-sharepoint_2.png)
 
 - Afficher la boîte de dialogue de sélection de la cible de déploiement. L'utilisateur sélectionne les applications Web et les collections de sites sur lesquelles la fonctionnalité doit être activée. Voir la figure ci-dessous.
 
-![Display Deployment Target Selection](installing-aspose-pdf-for-sharepoint_3.png)
+![Selection de la cible de déploiement](installing-aspose-pdf-for-sharepoint_3.png)
 
 - Déployez la fonctionnalité sur la batterie de serveurs.
 
-![Deploy Feature](installing-aspose-pdf-for-sharepoint_4.png)
+![Fonctionnalité de déploiement](installing-aspose-pdf-for-sharepoint_4.png)
 
 - Activez la fonctionnalité pour les collections de sites sélectionnées et configurez leurs applications Web parentes.
 - Affichez une liste des applications Web et des collections de sites dans lesquelles la fonctionnalité a été déployée et activée.
 
-![Display Deployed Features](installing-aspose-pdf-for-sharepoint_5.png)
+![Fonctionnalités déployées d'affichage](installing-aspose-pdf-for-sharepoint_5.png)
 

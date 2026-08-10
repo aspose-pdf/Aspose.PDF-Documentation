@@ -14,23 +14,23 @@ description: PDF SharePoint est une solution qui permet aux utilisateurs d'expor
 
 ![Aspose.PDF for Sharepoint logo](aspose_pdf-for-sharepoint.png)
 
-## Bienvenue dans Aspose.PDF pour SharePoint
+## Bienvenue dans Aspose.PDF for SharePoint
 
-Aspose.PDF for SharePoint is a solution that allows the users to export lists, list items and SharePoint Wiki pages to the PDF file format.
+Aspose.PDF for SharePoint est une solution qui permet aux utilisateurs d'exporter des listes, des éléments de liste et des pages Wiki SharePoint au format PDF.
 
 {{% /alert %}}
 
-## Aspose.PDF pour les ressources SharePoint
+## Aspose.PDF for SharePoint les ressources
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+Vous trouverez ci-dessous des liens vers des ressources utiles qui pourraient vous être nécessaires pour accomplir vos tâches.
 
-- [Aspose.PDF pour présentation du produit SharePoint] (/pdf/sharepoint/product-overview/)
-- [Aspose.PDF pour les formats de fichiers pris en charge par SharePoint] (/pdf/sharepoint/supported-file-formats/)
-- [Aspose.PDF pour les fonctionnalités SharePoint] (/pdf/sharepoint/features/)
-- [Aspose.PDF pour les notes de version SharePoint] (https://releases.aspose.com/pdf/sharepoint/release-notes/)
-- [Télécharger Aspose.PDF pour SharePoint] (https://releases.aspose.com/pdf/sharepoint/)
-- [Installer Aspose.PDF pour SharePoint] (/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
-- [Évaluer Aspose.PDF] (/pdf/sharepoint/evaluate-aspose-pdf/)
-- [Licence Aspose.PDF pour SharePoint] (/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
-- [Limitations de l'API] (/pdf/sharepoint/api-limitations/)
+- [Présentation du produit Aspose.PDF for SharePoint](/pdf/sharepoint/product-overview/)
+- [Formats de fichiers pris en charge par Aspose.PDF for SharePoint](/pdf/sharepoint/supported-file-formats/)
+- [Fonctionnalités d'Aspose.PDF for SharePoint](/pdf/sharepoint/features/)
+- [Notes de version d'Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/release-notes/)
+- [Télécharger Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/)
+- [Installer Aspose.PDF for SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Évaluer Aspose.PDF](/pdf/sharepoint/evaluate-aspose-pdf/)
+- [Licence d'Aspose.PDF for SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Limitations de l'API](/pdf/sharepoint/api-limitations/)
 

@@ -10,9 +10,9 @@ description: À l'aide de l'API PDF SharePoint, vous pouvez produire des PDF sé
 
 {{% alert color="primary" %}}
 
-Aspose.PDF pour SharePoint prend en charge la création de PDF sécurisés. L'installation d'Aspose.PDF pour SharePoint ajoute une option **Paramètres sécurisés PDF** dans les paramètres du site. Ici, vous pouvez définir le mot de passe utilisateur, le mot de passe propriétaire et toute valeur de la liste d'algorithmes pour crypter le PDF de sortie. La liste des algorithmes propose différentes combinaisons d'algorithmes de chiffrement et de tailles de clés. Passez la valeur de votre choix.
+Aspose.PDF for SharePoint prend en charge la création de PDF sécurisés. L'installation d'Aspose.PDF for SharePoint ajoute une option **Paramètres sécurisés PDF** dans les paramètres du site. Ici, vous pouvez définir le mot de passe utilisateur, le mot de passe propriétaire et toute valeur de la liste d'algorithmes pour crypter le PDF de sortie. La liste des algorithmes propose différentes combinaisons d'algorithmes de chiffrement et de tailles de clés. Passez la valeur de votre choix.
 
-Cet article montre comment utiliser Aspose.PDF pour SharePoint pour générer un PDF chiffré.
+Cet article montre comment utiliser Aspose.PDF for SharePoint pour générer un PDF chiffré.
 
 {{% /alert %}}
 

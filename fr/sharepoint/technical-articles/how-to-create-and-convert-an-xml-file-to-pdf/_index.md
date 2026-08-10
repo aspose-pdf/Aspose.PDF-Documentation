@@ -10,7 +10,7 @@ description: L'API PDF SharePoint est capable de créer et de convertir des fich
 
 {{% alert color="primary" %}}
 
-Aspose.PDF pour SharePoint est construit sur notre composant primé Aspose.PDF pour .NET. Aspose.PDF pour .NET offre des fonctionnalités remarquables depuis la création d'un document PDF à partir de zéro jusqu'à la manipulation de fichiers PDF existants. Parmi ces fonctionnalités, la conversion XML en PDF est l'une des fonctionnalités intéressantes prises en charge par ce produit. Nous pensons donc qu'Aspose.PDF pour SharePoint sera également capable de convertir des fichiers XML au format PDF.
+Aspose.PDF for SharePoint est construit sur notre composant primé Aspose.PDF pour .NET. Aspose.PDF pour .NET offre des fonctionnalités remarquables depuis la création d'un document PDF à partir de zéro jusqu'à la manipulation de fichiers PDF existants. Parmi ces fonctionnalités, la conversion XML en PDF est l'une des fonctionnalités intéressantes prises en charge par ce produit. Nous pensons donc qu'Aspose.PDF for SharePoint sera également capable de convertir des fichiers XML au format PDF.
 
 {{% /alert %}}
 
@@ -28,7 +28,7 @@ Aspose.PDF pour SharePoint est construit sur notre composant primé Aspose.PDF p
 6. [Exporter le fichier au format PDF](/pdf/fr/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
 7. [Enregistrez le fichier PDF](/pdf/fr/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document)
 
-### Étape 1 : Créer un fichier XML
+### Étape 1 Créer un fichier XML
 
 Créez d’abord un fichier XML basé sur le modèle d’objet de document Aspose.PDF pour .NET.
 
@@ -54,7 +54,7 @@ Selon Aspose.PDF pour .NET DOM, un document PDF contient une collection d'objets
 
 ```
 
-### Étape 2 : Créer un modèle PDF
+### Étape 2 Créer un modèle PDF
 
 Avant de continuer, assurez-vous que le serveur SharePoint Foundation 2010 est correctement installé et configuré sur le système sur lequel la conversion aura lieu.
 
@@ -66,7 +66,7 @@ Avant de continuer, assurez-vous que le serveur SharePoint Foundation 2010 est c
 
 ![Créer un modèle PDF](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 
-### Étape 3 : Charger le modèle XML
+### Étape 3 Charger le modèle XML
 
 Une fois le modèle créé, chargez [le fichier XML](/pdf/fr/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)
 
@@ -74,7 +74,7 @@ Une fois le modèle créé, chargez [le fichier XML](/pdf/fr/sharepoint/how-to-c
 
 ![Charger le modèle XML](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
 
-### Étape 4 : Spécifiez le chemin du fichier source
+### Étape 4 Spécifiez le chemin du fichier source
 
 Dans la boîte de dialogue de téléchargement de document :
 
@@ -83,7 +83,7 @@ Dans la boîte de dialogue de téléchargement de document :
 
 ![Spécifier le chemin du fichier source](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
 
-### Étape 5 : Spécifier les propriétés du fichier
+### Étape 5 Spécifier les propriétés du fichier
 
 Une fois le fichier chargé, ajoutez des informations dans les champs obligatoires (marqués d'un astérisque rouge : *).
 
@@ -97,7 +97,7 @@ Pour cet exemple, une description d'échantillon a été ajoutée et les champs 
 
 ![Spécifier les propriétés du fichier](how-to-create-and-convert-an-xml-file-to-pdf_4.png)
 
-### Étape 6 : Exporter au format PDF
+### Étape 6 Exporter au format PDF
 
 Lorsque le fichier XML a été ajouté au modèle PDF :
 Soit:
@@ -112,7 +112,7 @@ Ou:
 
 ![Exporter au format PDF](how-to-create-and-convert-an-xml-file-to-pdf_5.png)
 
-### Étape 7 : Enregistrer le document PDF
+### Étape 7 Enregistrer le document PDF
 
 1. Dans la boîte de dialogue Exporter au format PDF, sélectionnez **Stockage du modèle** (l'emplacement où le fichier source est stocké).
 1. Sélectionnez le fichier à exporter dans le menu **Nom du modèle**.
@@ -122,7 +122,7 @@ Ou:
 
 ## Ouvrez le PDF
 
-Le document PDF a été enregistré et peut être ouvert. Dans l'image ci-dessous, notez l'expression « Hello World » qui se trouvait dans la balise de segment du XML. Notez également que PDF Producer est Aspose.PDF pour SharePoint.
+Le document PDF a été enregistré et peut être ouvert. Dans l'image ci-dessous, notez l'expression « Hello World » qui se trouvait dans la balise de segment du XML. Notez également que PDF Producer est Aspose.PDF for SharePoint.
 
 ![Ouvrez le PDF](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
 

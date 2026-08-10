@@ -10,13 +10,13 @@ description: L'API PDF SharePoint peut exporter des listes, des éléments de li
 
 {{% alert color="primary" %}}
 
-Avec Aspose.PDF pour SharePoint, vous pouvez exporter des listes, des éléments de liste et des pages Wiki SharePoint depuis les bibliothèques SharePoint au format PDF.
+Avec Aspose.PDF for SharePoint, vous pouvez exporter des listes, des éléments de liste et des pages Wiki SharePoint depuis les bibliothèques SharePoint au format PDF.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Pour générer des documents, Aspose.PDF pour SharePoint s'appuie sur une version intégrée de [Aspose.PDF pour .NET] (http://www.aspose.com/categories/.net-components/aspose.pdf-for-.net/default.aspx).
+Pour générer des documents, Aspose.PDF for SharePoint s'appuie sur une version intégrée de [Aspose.PDF for .NET](http://www.aspose.com/categories/.net-components/aspose.pdf-for-.net/default.aspx).
 
 {{% /alert %}}
 

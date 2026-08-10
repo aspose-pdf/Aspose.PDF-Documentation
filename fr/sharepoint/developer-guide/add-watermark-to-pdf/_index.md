@@ -10,7 +10,7 @@ description: L'API PDF SharePoint vous permet d'ajouter un filigrane à un docum
 
 {{% alert color="primary" %}}
 
-Aspose.PDF pour SharePoint vous permet d'ajouter un filigrane à un document PDF. La fonctionnalité ajoute un filigrane de texte dans le coin inférieur gauche de chaque page d'un document PDF ajouté à la bibliothèque.
+Aspose.PDF for SharePoint vous permet d'ajouter un filigrane à un document PDF. La fonctionnalité ajoute un filigrane de texte dans le coin inférieur gauche de chaque page d'un document PDF ajouté à la bibliothèque.
 
 ## Texte en filigrane dans le coin inférieur gauche
 
