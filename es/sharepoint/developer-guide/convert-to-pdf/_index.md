@@ -10,7 +10,7 @@ description: PDF SharePoint API permite convertir archivos HTML, archivos de tex
 
 {{% alert color="primary" %}}
 
-Aspose.PDF para SharePoint permite convertir archivos HTML, archivos de texto e imágenes (JPG, PNG, GIF, TIFF, BMP) a formato PDF.
+Aspose.PDF for SharePoint permite convertir archivos HTML, archivos de texto e imágenes (JPG, PNG, GIF, TIFF, BMP) a formato PDF.
 
 {{% /alert %}}
 
@@ -33,7 +33,7 @@ Opción Convertir a PDF en el menú del BCE
 
 {{% alert color="primary" %}}
 
-- Tenga en cuenta que no puede establecer valores en los campos **Aplicación** y **Productor** , porque Aspose Ltd. y Aspose.PDF para SharePoint x.x.x se mostrarán en estos campos. 
+- Tenga en cuenta que no puede establecer valores en los campos **Aplicación** y **Productor** , porque Aspose Ltd. y Aspose.PDF for SharePoint x.x.x se mostrarán en estos campos.
 
 {{% /alert %}}
 

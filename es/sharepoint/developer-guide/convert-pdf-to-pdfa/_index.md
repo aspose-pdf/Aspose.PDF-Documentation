@@ -10,9 +10,9 @@ description: Con la API de PDF SharePoint, puede convertir PDF a formato PDFA. A
 
 {{% alert color="primary" %}}
 
-En [Aspose.PDF para SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.0.0/) lanzamiento, hemos agregado soporte para crear PDF compatible con PDFA.
+En [Aspose.PDF for SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.0.0/) lanzamiento, hemos agregado soporte para crear PDF compatible con PDFA.
 
-Actualmente, Aspose.PDF para SharePoint solo admite el estándar PDFA1b.
+Actualmente, Aspose.PDF for SharePoint solo admite el estándar PDFA1b.
 
 {{% /alert %}}
 

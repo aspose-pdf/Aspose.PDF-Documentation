@@ -12,7 +12,7 @@ description: La biblioteca PDF de Sharepoint se puede utilizar para exportar pá
 
 ## Exportación de PDF a Sharepoint Wiki
 
-Este artículo muestra cómo exportar páginas Wiki de SharePoint a PDF usando Aspose.PDF para SharePoint.
+Este artículo muestra cómo exportar páginas Wiki de SharePoint a PDF usando Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 

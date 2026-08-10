@@ -10,7 +10,7 @@ description: PDF SharePoint API le permite convertir varios documentos, o uno a 
 
 {{% alert color="primary" %}}
 
-Aspose.PDF para SharePoint le permite convertir varios documentos o uno a la vez. Este artículo muestra cómo exportar un elemento de una lista.
+Aspose.PDF for SharePoint le permite convertir varios documentos o uno a la vez. Este artículo muestra cómo exportar un elemento de una lista.
 
 {{% /alert %}}
 
@@ -23,5 +23,3 @@ Para exportar un elemento en particular de una lista: seleccione **Exportar a Pd
 ## Exportar a PDF
 
 ![Exportar a PDF](export-a-particular-item-from-a-list_2.png)
-
-

@@ -10,7 +10,7 @@ description: Con la API de PDF SharePoint, puede combinar varios archivos PDF de
 
 {{% alert color="primary" %}}
 
-Fusionar/concatenar varios archivos PDF en un solo archivo PDF es una característica muy popular y exigente en las aplicaciones de procesamiento de archivos PDF. Hemos introducido esta importante característica en la versión [Aspose.PDF para SharePoint 2.2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.2.0/). Fusionar dos archivos es crear un solo archivo agregando el segundo archivo al final del primero.
+Fusionar/concatenar varios archivos PDF en un solo archivo PDF es una característica muy popular y exigente en las aplicaciones de procesamiento de archivos PDF. Hemos introducido esta importante característica en la versión [Aspose.PDF for SharePoint 2.2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.2.0/). Fusionar dos archivos es crear un solo archivo agregando el segundo archivo al final del primero.
 
 {{% /alert %}}
 

@@ -10,9 +10,9 @@ description: Puede crear y exportar plantillas a PDF en SharePoint utilizando la
 
 {{% alert color="primary" %}}
 
-Este artículo muestra cómo crear y exportar plantillas usando Aspose.PDF para SharePoint.
+Este artículo muestra cómo crear y exportar plantillas usando Aspose.PDF for SharePoint.
 
-Desde Aspose.PDF para SharePoint 1.9.2, la compatibilidad con plantillas PDF también cubre los subsitios de SharePoint.
+Desde Aspose.PDF for SharePoint 1.9.2, la compatibilidad con plantillas PDF también cubre los subsitios de SharePoint.
 
 {{% /alert %}}
 
@@ -20,7 +20,7 @@ Desde Aspose.PDF para SharePoint 1.9.2, la compatibilidad con plantillas PDF tam
 
 {{% alert color="primary" %}}
 
-Para utilizar la función de exportación Aspose.PDF para SharePoint, primero cree una lista que utilice "Plantillas PDF".
+Para utilizar la función de exportación Aspose.PDF for SharePoint, primero cree una lista que utilice "Plantillas PDF".
 
 Crear una lista que utilice plantillas PDF:
 

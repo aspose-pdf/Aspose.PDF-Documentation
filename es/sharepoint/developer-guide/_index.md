@@ -1,5 +1,5 @@
 ﻿---
-title: Guía para desarrolladores: PDF API de SharePoint
+title: Guía para desarrolladores- PDF API de SharePoint
 linktitle: Guía para desarrolladores
 type: docs
 weight: 20

@@ -122,7 +122,7 @@ O:
 
 ## Abre el PDF
 
-El documento PDF se ha guardado y se puede abrir. En la imagen siguiente, observe la frase "Hola mundo" que estaba en la etiqueta de segmento en el XML. También tenga en cuenta que el productor de PDF es Aspose.PDF para SharePoint.
+El documento PDF se ha guardado y se puede abrir. En la imagen siguiente, observe la frase "Hola mundo" que estaba en la etiqueta de segmento en el XML. También tenga en cuenta que el productor de PDF es Aspose.PDF for SharePoint.
 
 ![Open the PDF](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
 

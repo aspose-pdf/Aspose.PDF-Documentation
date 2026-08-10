@@ -1,5 +1,5 @@
 ﻿---
-title: Artículos técnicos: Biblioteca PDF de SharePoint
+title: Artículos técnicos- Biblioteca PDF de SharePoint
 linktitle: Artículos técnicos
 type: docs
 weight: 30

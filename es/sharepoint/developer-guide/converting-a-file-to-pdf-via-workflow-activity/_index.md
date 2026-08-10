@@ -10,7 +10,7 @@ description: PDF SharePoint API se puede utilizar en un flujo de trabajo de Shar
 
 {{% alert color="primary" %}}
 
-La compatibilidad con flujos de trabajo es una funcionalidad clave de Microsoft Office SharePoint Server. Los flujos de trabajo ayudan a automatizar el movimiento de documentos según la lógica empresarial y agilizan el coste y el tiempo de organización de los documentos. Este artículo demuestra cómo usar Aspose.PDF para SharePoint en un flujo de trabajo que convierte un documento a PDF.
+La compatibilidad con flujos de trabajo es una funcionalidad clave de Microsoft Office SharePoint Server. Los flujos de trabajo ayudan a automatizar el movimiento de documentos según la lógica empresarial y agilizan el coste y el tiempo de organización de los documentos. Este artículo demuestra cómo usar Aspose.PDF for SharePoint en un flujo de trabajo que convierte un documento a PDF.
 
 {{% /alert %}}
 
@@ -18,7 +18,7 @@ La compatibilidad con flujos de trabajo es una funcionalidad clave de Microsoft 
 
 Este ejemplo crea un flujo de trabajo que convierte cualquier elemento nuevo en una biblioteca de documentos a formato PDF y lo almacena en otra biblioteca de documentos. En el ejemplo se utiliza la biblioteca **Documentos personales** como biblioteca de origen y la subcarpeta **Pdf** de la biblioteca **Documentos compartidos** como biblioteca de destino.
 
-Aspose.PDF para SharePoint admite la conversión de archivos HTML, de texto e imágenes.
+Aspose.PDF for SharePoint admite la conversión de archivos HTML, de texto e imágenes.
 
 ### Diseñe el flujo de trabajo usando SharePoint Designer
 
@@ -28,14 +28,14 @@ Aspose.PDF para SharePoint admite la conversión de archivos HTML, de texto e im
 
    **Seleccionando Documentos Personales en el menú**
 
-![Converting file to PDF via Workflow Activity_1](converting-a-file-to-pdf-via-workflow-activity_1.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_1](converting-a-file-to-pdf-via-workflow-activity_1.png)
 
 1. Cree y adjunte el flujo de trabajo de la lista a la biblioteca **Documentos personales** escribiendo un nombre y una descripción del flujo de trabajo.
 1. Haga clic en **Aceptar** para completar este paso.
 
    **Crear un flujo de trabajo de lista**
 
-![Converting file to PDF via Workflow Activity_2](converting-a-file-to-pdf-via-workflow-activity_2.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_2](converting-a-file-to-pdf-via-workflow-activity_2.png)
 
 Aparece un editor de pasos del flujo de trabajo. Esto se utiliza para definir condiciones y acciones para flujos de trabajo. Ahora agregue una acción para convertir un nuevo documento a PDF sin ninguna condición, desde **Aspose Actions**.
 
@@ -43,7 +43,7 @@ Aparece un editor de pasos del flujo de trabajo. Esto se utiliza para definir co
 
    **Selección y acción**
 
-![Converting file to PDF via Workflow Activity_3](converting-a-file-to-pdf-via-workflow-activity_3.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_3](converting-a-file-to-pdf-via-workflow-activity_3.png)
 
 1. Configure los parámetros de la acción:
    1. Establezca el parámetro **esta carpeta** en la carpeta de destino.
@@ -51,22 +51,22 @@ Aparece un editor de pasos del flujo de trabajo. Esto se utiliza para definir co
 
       **El editor de flujo de trabajo**
 
-![Converting file to PDF via Workflow Activity_4](converting-a-file-to-pdf-via-workflow-activity_4.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_4](converting-a-file-to-pdf-via-workflow-activity_4.png)
 
 **Configuración de la biblioteca de destino**
 
-![Converting file to PDF via Workflow Activity_5](converting-a-file-to-pdf-via-workflow-activity_5.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_5](converting-a-file-to-pdf-via-workflow-activity_5.png)
 
 **Configurando las propiedades**
 
-![Converting file to PDF via Workflow Activity_6](converting-a-file-to-pdf-via-workflow-activity_6.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_6](converting-a-file-to-pdf-via-workflow-activity_6.png)
 
 1. En el menú **Flujo de trabajo**, seleccione **Configuración del flujo de trabajo**.
 1. Seleccione **iniciar el flujo de trabajo automáticamente cuando se cree un nuevo elemento** y borre otras opciones de **Opciones de inicio**.
 
    **Configuración de las opciones de inicio**
 
-![Converting file to PDF via Workflow Activity_7](converting-a-file-to-pdf-via-workflow-activity_7.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_7](converting-a-file-to-pdf-via-workflow-activity_7.png)
 
 El diseño del flujo de trabajo está terminado.
 
@@ -77,17 +77,17 @@ El diseño del flujo de trabajo está terminado.
 Para probar el flujo de trabajo:
 
 1. Abra el sitio de SharePoint y cargue un nuevo documento en la biblioteca de documentos **Documentos personales**.
-   Aspose.PDF para SharePoint admite la conversión de archivos HTML, archivos de texto e imágenes (JPG, PNG, GIF, TIFF y BMP*) a PDF. El flujo de trabajo está configurado para iniciarse automáticamente cuando se crea un nuevo elemento, por lo que los archivos se procesan automáticamente.
+   Aspose.PDF for SharePoint admite la conversión de archivos HTML, archivos de texto e imágenes (JPG, PNG, GIF, TIFF y BMP*) a PDF. El flujo de trabajo está configurado para iniciarse automáticamente cuando se crea un nuevo elemento, por lo que los archivos se procesan automáticamente.
 1. Actualiza el navegador.
    El estado del flujo de trabajo aparece en la columna del flujo de trabajo, **Aspose.PDF Workflow** en este caso.
 
    **Agregar un documento a la biblioteca fuente**
 
-![Converting file to PDF via Workflow Activity_8](converting-a-file-to-pdf-via-workflow-activity_8.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_8](converting-a-file-to-pdf-via-workflow-activity_8.png)
 
 1. Abra la biblioteca de documentos de destino para ver el documento convertido. **Documentos compartidos/Pdf** es la ruta en este ejemplo.
 
    **La biblioteca de destino**
 
-![Converting file to PDF via Workflow Activity_9](converting-a-file-to-pdf-via-workflow-activity_9.png)
+![Conversión de archivo a PDF mediante la actividad de flujo de trabajo_9](converting-a-file-to-pdf-via-workflow-activity_9.png)
 
