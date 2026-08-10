@@ -1,24 +1,23 @@
-﻿---
-title: APIの制限事項
-linktitle: APIの制限事項
+---
+title: API の制限
+linktitle: API の制限
 type: docs
 weight: 70
 url: /ja/sharepoint/api-limitations/
-lastmod: "2020-12-16"
-description: この記事では、PDF SharePoint API の制限の一部について説明します。
+lastmod: "2026-08-10"
+description: この記事では、PDF SharePoint API のいくつかの制限について説明しています。
 ---
 
 {{% alert color="primary" %}}
 
-このコンポーネントの使用にはいくつかの制限があります。
+このコンポーネントを使用する際にいくつかの制限があります。
 
 {{% /alert %}}
 
-## PDF作成者情報
+## PDF Creator の情報
 
 {{% alert color="primary" %}}
 
-**Application** および **Producer** フィールドに対して値を設定することはできないことに注意してください。これは、Aspose Ltd. および Aspose.PDF for SharePoint x.x.x がこれらのフィールドに対して表示されるためです。 
+ご注意ください、**Application** と **Producer** フィールドに値を設定することはできません。これは、Aspose Ltd. および Aspose.PDF for SharePoint x.x.x がこれらのフィールドに表示されるためです。 
 
 {{% /alert %}}
-

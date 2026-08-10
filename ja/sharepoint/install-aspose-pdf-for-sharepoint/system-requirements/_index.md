@@ -1,23 +1,22 @@
-﻿---
+---
 title: システム要件
 linktitle: システム要件
 type: docs
 weight: 10
 url: /ja/sharepoint/system-requirements/
-lastmod: "2020-12-16"
-description: PDF SharePoint API には、サーバーとクライアントの要件に加えて、Microsoft SharePoint Server を実行するコンピューターの必要性もあります。
+lastmod: "2026-08-10"
+description: PDF SharePoint API にはサーバー要件とクライアント要件があり、さらに Microsoft SharePoint Server が実行されているコンピューターが必要です。
 ---
 
 ## サーバー要件
 
-Aspose.PDF for SharePoint をインストールするには、Microsoft SharePoint Server 2010 を実行しているコンピューターが必要です。
+Aspose.PDF for SharePoint をインストールするには、Microsoft SharePoint Server 2010 が実行されているコンピューターが必要です。
 
-## クライアントの要件
+## クライアント要件
 
-SharePoint サイトにアクセスするにはブラウザが必要です。 Aspose.PDF for SharePoint は、次のブラウザでテストされています。
+SharePoint サイトにアクセスするにはブラウザーが必要です。Aspose.PDF for SharePoint は以下のブラウザーでテストされています：
 
 - Microsoft Internet Explorer 8
-- モジラ ファイアフォックス 3.5
-- グーグルクローム3
-- サファリ4
-
+- Mozilla FireFox 3.5
+- Google Chrome 3
+- Safari 4

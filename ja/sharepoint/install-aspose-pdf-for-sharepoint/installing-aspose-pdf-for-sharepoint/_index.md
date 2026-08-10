@@ -1,11 +1,11 @@
-﻿---
+---
 title: Aspose.PDF for SharePoint のインストール
 linktitle: Aspose.PDF for SharePoint のインストール
 type: docs
 weight: 20
 url: /ja/sharepoint/installing-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
-description: PDF SharePoint API は、サーバー ファームの展​​開、撤回、アクティブ化、非アクティブ化を簡素化する SharePoint ソリューションとしてパッケージ化されています。
+lastmod: "2026-08-10"
+description: PDF SharePoint API は、サーバーファームの展開、撤回、アクティベーション、非アクティベーションを簡素化するために、SharePoint ソリューションとしてパッケージ化されています。
 ---
 
 {{% alert color="primary" %}}
@@ -14,63 +14,62 @@ Aspose.PDF for SharePoint は、Aspose.PDF.SharePoint.zip アーカイブとし�
 
 {{% /alert %}}
 
-このアーカイブには以下が含まれます。
+このアーカイブには次のものが含まれています：
 
 - Aspose.PDF.SharePoint.wsp
-  SharePoint ソリューション ファイル。 Aspose.PDF for SharePoint は、サーバー ファーム全体での展開/撤回および機能のアクティブ化/非アクティブ化を容易にする SharePoint ソリューションとしてパッケージ化されています。
+  SharePoint ソリューション ファイル。Aspose.PDF for SharePoint は、サーバーファーム全体でのデプロイ/リトラクションおよび機能の有効化/無効化を容易にするために SharePoint ソリューションとしてパッケージ化されています。
 - Aspose_LicenseAgreement.rtf
 
-**エンドユーザー使用許諾契約:**
+**エンドユーザー ライセンス契約:**
 
 - Aspose.PDF for SharePoint.pdf
 
-**User documentation:**
+**ユーザー ドキュメント:**
 
-- SharePoint 用 Aspose.PDF Documentation.chm
+- Aspose.PDF for SharePoint Documentation.chm
 
-**パブリック API リファレンスを含むユーザー ドキュメント:**
+**パブリックAPIリファレンスを含むユーザードキュメント:**
 
 - setup.exe
 
-**Setup program:**
+**セットアッププログラム:**
 
 - setup.exe.config
 
 **セットアップ構成ファイル:**
 
-セットアップ プログラムは、続行する前に次の条件をチェックします。
+セットアッププログラムは、続行する前に以下の条件をチェックします：
 
-- SharePoint2010がインストールされています。
-- The user has permission to install SharePoint solutions.
-- SharePoint データベースはオンラインです。
-- SharePoint 管理サービスが開始されます。
-- SharePoint タイマー サービスが開始されます。一部のセットアップ アクションはタイマー ジョブに依存してサーバー ファーム内のすべてのサーバーに伝播されるため、SharePoint Administration サービスとタイマー サービスが必要です。
+- SharePoint 2010 がインストールされています。
+- ユーザーは SharePoint ソリューションをインストールする権限があります。
+- SharePoint データベースがオンラインです。
+- SharePoint 管理サービスが開始されています。
+- SharePoint タイマーサービスが開始されています。SharePoint 管理サービスとタイマーサービスは、一部のセットアップ操作がサーバーファーム内のすべてのサーバーに伝搬するタイマー ジョブに依存しているため必要です。
 
-**Aspose.PDF for SharePoint をインストールするには:**
+**Aspose.PDF for SharePoint のインストール方法:**
 
-- Aspose.PDF.SharePoint zip をローカル ドライブに解凍します。
-- setup.exe を実行し、画面の指示に従います。
+- Aspose.PDF.SharePoint の zip をローカルドライブに展開します。
+- setup.exe を実行し、画面の指示に従ってください。
 
-**セットアップ プログラムは次のアクションを実行します:**
+**セットアッププログラムは次の操作を実行します:**
 
-- インストールの前提条件を確認してください。いずれかのチェックが失敗すると、セットアップは続行されません。
+- インストール前提条件を確認します。いずれかのチェックが失敗した場合、セットアップは続行されません。
 
-![Check Installation Prerequisites](installing-aspose-pdf-for-sharepoint_1.png)
+![インストール前提条件の確認](installing-aspose-pdf-for-sharepoint_1.png)
 
-- Display End User License Agreement. The user must accept the agreement in order to proceed.
+- エンドユーザー ライセンス契約書を表示します。ユーザーは続行するために契約書に同意する必要があります。
 
-![Display License Agreement](installing-aspose-pdf-for-sharepoint_2.png)
+![ライセンス契約書を表示](installing-aspose-pdf-for-sharepoint_2.png)
 
-- デプロイ先選択ダイアログを表示します。ユーザーは、機能を有効にする Web アプリケーションとサイト コレクションを選択します。以下の図を参照してください。
+- 展開対象選択ダイアログを表示します。ユーザーは機能を有効化する Web アプリケーションとサイト コレクションを選択します。下の図をご参照ください。
 
-![Display Deployment Target Selection](installing-aspose-pdf-for-sharepoint_3.png)
+![展開対象選択を表示](installing-aspose-pdf-for-sharepoint_3.png)
 
-- 機能をサーバー ファームに展開します。
+- 機能をサーバーファームに展開します。
 
-![Deploy Feature](installing-aspose-pdf-for-sharepoint_4.png)
+![機能を展開](installing-aspose-pdf-for-sharepoint_4.png)
 
-- 選択したサイト コレクションの機能をアクティブ化し、その親 Web アプリケーションを構成します。
-- 機能が展開およびアクティブ化されている Web アプリケーションとサイト コレクションのリストを表示します。
+- 選択したサイト コレクションの機能を有効にし、親 Web アプリケーションを構成します。
+- 機能が展開および有効化された Web アプリケーションとサイト コレクションの一覧を表示します。
 
-![Display Deployed Features](installing-aspose-pdf-for-sharepoint_5.png)
-
+![展開された機能を表示](installing-aspose-pdf-for-sharepoint_5.png)

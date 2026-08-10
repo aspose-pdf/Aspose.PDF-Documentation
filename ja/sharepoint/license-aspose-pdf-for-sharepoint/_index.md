@@ -1,16 +1,15 @@
-﻿---
+---
 title: ライセンス
 linktitle: ライセンス
 type: docs
 weight: 60
 url: /ja/sharepoint/license-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
-description: PDF SharePoint API ライセンスのインストール、テスト、アンインストールについて説明します。
+lastmod: "2026-08-10"
+description: PDF SharePoint API ライセンスのインストール、テスト、アンインストールについて学びます。
 ---
 
-このセクションには次のトピックが含まれています。
+このセクションには以下のトピックが含まれます：
 
-- [Aspose.PDF for SharePoint ライセンスのインストール](/pdf/ja/sharepoint/installing-aspose-pdf-for-sharepoint-license/)
+- [Aspose.Pdf for SharePoint ライセンスのインストール](/pdf/ja/sharepoint/installing-aspose-pdf-for-sharepoint-license/)
 - [ライセンスのテスト](/pdf/ja/sharepoint/testing-a-license/)
-- [Aspose.PDF for SharePoint ライセンスのアンインストール](/pdf/ja/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/)
-
+- [Aspose.Pdf for SharePoint ライセンスのアンインストール](/pdf/ja/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/)
