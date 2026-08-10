@@ -10,7 +10,7 @@ description: يسمح PDF SharePoint API بتحويل ملفات HTML والمل
 
 {{% alert color="primary" %}}
 
-يسمح Aspose.PDF لـ SharePoint بتحويل ملفات HTML والملفات النصية والصور (JPG وPNG وGIF وTIFF وBMP) إلى تنسيق PDF.
+يسمح Aspose.PDF for SharePoint بتحويل ملفات HTML والملفات النصية والصور (JPG وPNG وGIF وTIFF وBMP) إلى تنسيق PDF.
 
 {{% /alert %}}
 
@@ -25,7 +25,7 @@ description: يسمح PDF SharePoint API بتحويل ملفات HTML والمل
 
 خيار التحويل إلى PDF في قائمة البنك المركزي الأوروبي
 
-![Convert to PDF](convert-to-pdf_1.jpg)
+![تحويل إلى PDF](convert-to-pdf_1.jpg)
 
 {{% /alert %}}
 
@@ -33,6 +33,6 @@ description: يسمح PDF SharePoint API بتحويل ملفات HTML والمل
 
 {{% alert color="primary" %}}
 
-- يرجى ملاحظة أنه لا يمكنك تعيين قيم في الحقلين **Application** و **Producer** ، لأنه سيتم عرض Aspose Ltd. وAspose.PDF لـ SharePoint x.x.x مقابل هذه الحقول.
+- يرجى ملاحظة أنه لا يمكنك تعيين قيم في الحقلين **Application** و **Producer** ، لأنه سيتم عرض Aspose Ltd. وAspose.PDF for SharePoint x.x.x مقابل هذه الحقول.
 
 {{% /alert %}}

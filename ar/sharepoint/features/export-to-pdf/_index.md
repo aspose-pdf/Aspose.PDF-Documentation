@@ -10,12 +10,12 @@ description: يمكن لـ PDF SharePoint API تصدير القوائم وعنا
 
 {{% alert color="primary" %}}
 
-باستخدام Aspose.PDF لـ SharePoint، يمكنك تصدير القوائم وعناصر القائمة وصفحات SharePoint Wiki من مكتبات SharePoint إلى تنسيق PDF.
+باستخدام Aspose.PDF for SharePoint، يمكنك تصدير القوائم وعناصر القائمة وصفحات SharePoint Wiki من مكتبات SharePoint إلى تنسيق PDF.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-لإنشاء المستندات، يعتمد Aspose.PDF لـ SharePoint على إصدار مضمن من [Aspose.PDF for .NET](http://www.aspose.com/categories/.net-components/Aspose.PDF-for-.net/default.aspx).
+لإنشاء المستندات، يعتمد Aspose.PDF for SharePoint على إصدار مضمن من [Aspose.PDF for .NET](http://www.aspose.com/categories/.net-components/Aspose.PDF-for-.net/default.aspx).
 
 {{% /alert %}}

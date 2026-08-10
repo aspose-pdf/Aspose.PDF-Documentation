@@ -10,7 +10,7 @@ description: باستخدام PDF SharePoint API، يمكنك تحويل مست�
 
 {{% alert color="primary" %}}
 
-يدعم Aspose.PDF لـ SharePoint ميزة تحويل مستند PDF من مكتبة مستندات SharePoint إلى تنسيق HTML. في هذه المقالة سوف نوضح تحويل PDF إلى HTML.
+يدعم Aspose.PDF for SharePoint ميزة تحويل مستند PDF من مكتبة مستندات SharePoint إلى تنسيق HTML. في هذه المقالة سوف نوضح تحويل PDF إلى HTML.
 
 {{% /alert %}}
 
@@ -20,9 +20,9 @@ description: باستخدام PDF SharePoint API، يمكنك تحويل مست�
 
 1. انقر **تحويل إلى HTML** في قائمة البنك المركزي الأوروبي لمستند PDF.
 
-![Convert PDF to HTML-example 1](convert-pdf-to-html_1.png)
+![تحويل PDF إلى HTML - مثال 1](convert-pdf-to-html_1.png)
 
 2. قم بتنزيل وحفظ ملف HTML الناتج على القرص.
 
-![Convert PDF to HTML-example 2](convert-pdf-to-html_2.png)
+![تحويل PDF إلى HTML - مثال 2](convert-pdf-to-html_2.png)
 

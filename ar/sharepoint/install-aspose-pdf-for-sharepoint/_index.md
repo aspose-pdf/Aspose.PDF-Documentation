@@ -10,7 +10,7 @@ description: يغطي قسم تثبيت PDF SharePoint API الموضوعات ا
 
 
 - [متطلبات النظام](/pdf/ar/sharepoint/system-requirements/)
-- [تثبيت Aspose.PDF لـ SharePoint](/pdf/ar/sharepoint/installing-aspose-pdf-for-sharepoint/)
+- [تثبيت Aspose.PDF for SharePoint](/pdf/ar/sharepoint/installing-aspose-pdf-for-sharepoint/)
 - [مزيد من تفاصيل التثبيت](/pdf/ar/sharepoint/more-installation-details/)
 - [التنشيط وإلغاء التنشيط بعد التثبيت](/pdf/ar/sharepoint/activation-and-deactivation-after-installation/)
-- [إلغاء تثبيت Aspose.PDF لـ SharePoint](/pdf/ar/sharepoint/uninstalling-aspose-pdf-for-sharepoint/)
+- [إلغاء تثبيت Aspose.PDF for SharePoint](/pdf/ar/sharepoint/uninstalling-aspose-pdf-for-sharepoint/)

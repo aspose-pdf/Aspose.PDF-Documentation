@@ -10,7 +10,7 @@ description: يمكن لـ PDF SharePoint API تصدير قائمة المهام
 
 {{% alert color="primary" %}}
 
-توضح هذه المقالة كيفية إعداد قائمة مهام وتصديرها إلى ملف PDF باستخدام الرموز الشريطية باستخدام Aspose.PDF لـ SharePoint.
+توضح هذه المقالة كيفية إعداد قائمة مهام وتصديرها إلى ملف PDF باستخدام الرموز الشريطية باستخدام Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
@@ -29,35 +29,35 @@ description: يمكن لـ PDF SharePoint API تصدير قائمة المهام
 
 1. إنشاء قائمة قوالب PDF.
 
-![Create PDF Template List](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
+![إنشاء قائمة قوالب PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
 
 2. بعد إنشاء القالب، انقر فوق **إضافة عنصر جديد** في القائمة وقم بتحميل ملف XML.
 
-![Upload XML File](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_2.png)
+![تحميل ملف XML](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_2.png)
 
 3. عند اكتمال التحميل، انقر فوق **موافق**.
 4. املأ حقول النموذج.
 5. احفظ القالب.
 
-![Configure Template](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_3.png)
+![تكوين القالب](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_3.png)
 
 تم تكوين القالب.
 
 6. انتقل إلى قائمة **المهام** وقم بإنشاء مهمة جديدة.
 7. احفظ المهمة.
 
-![Create Task](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
+![إنشاء مهمة](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
 
 8. في علامة التبويب **Aspose Tools**، انقر فوق **Export To PDF**.
 
-![Export To PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_5.png)
+![تصدير إلى ملف PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_5.png)
 
 9. حدد القالب الذي تم تكوينه وانقر فوق **تصدير**.
 
-![Select Template](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_6.png)
+![اختر القالب](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_6.png)
 
 ملف PDF الذي تم تصديره:
 
-![Exported PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_7.png)
+![ملف PDF مُصدّر](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_7.png)
 
 {{% /alert %}}

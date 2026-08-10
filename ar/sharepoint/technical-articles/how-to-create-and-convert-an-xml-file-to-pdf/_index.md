@@ -10,7 +10,7 @@ description: PDF SharePoint API قادر على إنشاء وتحويل ملفا
 
 {{% alert color="primary" %}}
 
-تم إنشاء Aspose.PDF لـ SharePoint على أساس مكون Aspose.PDF الحائز على جوائز لمكون .NET. يوفر Aspose.PDF for .NET ميزات رائعة بدءًا من إنشاء مستند PDF من البداية وحتى معالجة ملفات PDF الموجودة. ومن بين هذه الميزات، يعد تحويل XML إلى PDF أحد الميزات الرائعة التي يدعمها هذا المنتج. لذلك نعتقد أن Aspose.PDF لـ SharePoint سيكون قادرًا أيضًا على تحويل ملفات XML إلى تنسيق PDF.
+تم إنشاء Aspose.PDF for SharePoint على أساس مكون Aspose.PDF الحائز على جوائز لمكون .NET. يوفر Aspose.PDF for .NET ميزات رائعة بدءًا من إنشاء مستند PDF من البداية وحتى معالجة ملفات PDF الموجودة. ومن بين هذه الميزات، يعد تحويل XML إلى PDF أحد الميزات الرائعة التي يدعمها هذا المنتج. لذلك نعتقد أن Aspose.PDF for SharePoint سيكون قادرًا أيضًا على تحويل ملفات XML إلى تنسيق PDF.
 
 {{% /alert %}}
 
@@ -64,7 +64,7 @@ description: PDF SharePoint API قادر على إنشاء وتحويل ملفا
 1. أدخل اسم القالب.
 1. انقر **إنشاء**.
 
-![Create PDF Template](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
+![إنشاء قالب PDF](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 
 ### الخطوة 3: تحميل قالب XML
 
@@ -72,7 +72,7 @@ description: PDF SharePoint API قادر على إنشاء وتحويل ملفا
 
 1. في صفحة قالب PDF، حدد **إضافة عنصر جديد**.
 
-![Load XML Template](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
+![تحميل قالب XML](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
 
 ### الخطوة 4: تحديد مسار الملف المصدر
 
@@ -81,7 +81,7 @@ description: PDF SharePoint API قادر على إنشاء وتحويل ملفا
 1. انقر فوق **تصفح** وحدد موقع ملف XML على نظامك. يمكنك تمكين خانة الاختيار للكتابة فوق خيار الملف الموجود.
 1. اضغط على زر **موافق**.
 
-![Specify Source File Path](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
+![حدد مسار ملف المصدر](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
 
 ### الخطوة 5: تحديد خصائص الملف
 
@@ -95,7 +95,7 @@ description: PDF SharePoint API قادر على إنشاء وتحويل ملفا
    تأكد من بقاء الحالة **نشطة**.
 1. انقر **حفظ** لحفظ الخصائص.
 
-![Specify File Properties](how-to-create-and-convert-an-xml-file-to-pdf_4.png)
+![تحديد خصائص الملف](how-to-create-and-convert-an-xml-file-to-pdf_4.png)
 
 ### الخطوة 6: التصدير إلى PDF
 
@@ -110,7 +110,7 @@ description: PDF SharePoint API قادر على إنشاء وتحويل ملفا
 1. حدد **Aspose Tools** من **Library Tools**.
 1. انقر **تصدير**.
 
-![Export to PDF](how-to-create-and-convert-an-xml-file-to-pdf_5.png)
+![تصدير إلى PDF](how-to-create-and-convert-an-xml-file-to-pdf_5.png)
 
 ### الخطوة 7: حفظ مستند PDF
 
@@ -118,11 +118,11 @@ description: PDF SharePoint API قادر على إنشاء وتحويل ملفا
 1. حدد الملف المراد تصديره من قائمة **اسم القالب**.
 1. انقر **تصدير إلى PDF** لحفظ مستند PDF النهائي.
 
-![Save PDF Document](how-to-create-and-convert-an-xml-file-to-pdf_6.png)
+![حفظ مستند PDF](how-to-create-and-convert-an-xml-file-to-pdf_6.png)
 
 ## افتح ملف بي دي إف
 
-تم حفظ مستند PDF ويمكن فتحه. في الصورة أدناه، لاحظ العبارة "Hello World" التي كانت موجودة في علامة المقطع في ملف XML. لاحظ أيضًا أن منتج PDF هو Aspose.PDF لـ SharePoint.
+تم حفظ مستند PDF ويمكن فتحه. في الصورة أدناه، لاحظ العبارة "Hello World" التي كانت موجودة في علامة المقطع في ملف XML. لاحظ أيضًا أن منتج PDF هو Aspose.PDF for SharePoint.
 
 ![Open the PDF](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
 

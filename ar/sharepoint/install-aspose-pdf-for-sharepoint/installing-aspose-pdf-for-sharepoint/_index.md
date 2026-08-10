@@ -1,6 +1,6 @@
 ---
-title: تثبيت Aspose.PDF لـ SharePoint
-linktitle: تثبيت Aspose.PDF لـ SharePoint
+title: تثبيت Aspose.PDF for SharePoint
+linktitle: تثبيت Aspose.PDF for SharePoint
 type: docs
 weight: 20
 url: /ar/sharepoint/installing-aspose-pdf-for-sharepoint/
@@ -10,23 +10,23 @@ description: يتم حزم PDF SharePoint API كحل SharePoint لتبسيط ن�
 
 {{% alert color="primary" %}}
 
-يمكن تنزيل Aspose.PDF لـ SharePoint كأرشيف Aspose.PDF.SharePoint.zip.
+يمكن تنزيل Aspose.PDF for SharePoint كأرشيف Aspose.PDF.SharePoint.zip.
 
 {{% /alert %}}
 
 يحتوي هذا الأرشيف على:
 
 - Aspose.PDF.SharePoint.wsp
-  ملف حل SharePoint. يتم حزم Aspose.PDF لـ SharePoint كحل SharePoint لتسهيل النشر/السحب وتنشيط/إلغاء تنشيط الميزات عبر مزرعة الخوادم.
+  ملف حل SharePoint. يتم حزم Aspose.PDF for SharePoint كحل SharePoint لتسهيل النشر/السحب وتنشيط/إلغاء تنشيط الميزات عبر مزرعة الخوادم.
 - Aspose_LicenseAgreement.rtf
 
 **اتفاقية ترخيص المستخدم النهائي:**
 
-- Aspose.PDF لـ SharePoint.pdf
+- Aspose.PDF for SharePoint.pdf
 
 **وثائق المستخدم:**
 
-- Aspose.PDF لـ SharePoint Documentation.chm
+- Aspose.PDF for SharePoint Documentation.chm
 
 **وثائق المستخدم مع مرجع API العام:**
 
@@ -46,7 +46,7 @@ description: يتم حزم PDF SharePoint API كحل SharePoint لتبسيط ن�
 - يتم بدء تشغيل خدمة إدارة SharePoint.
 - يتم بدء تشغيل خدمة SharePoint Timer. هناك حاجة إلى خدمة إدارة SharePoint وخدمة المؤقت لأن بعض إجراءات الإعداد تعتمد على مهمة مؤقت للنشر إلى كافة الخوادم في مزرعة الخوادم.
 
-**لتثبيت Aspose.PDF لـ SharePoint:**
+**لتثبيت Aspose.PDF for SharePoint:**
 
 - قم بفك ضغط ملف Aspose.PDF.SharePoint المضغوط على محرك الأقراص المحلي.
 - قم بتشغيل setup.exe واتبع الإرشادات التي تظهر على الشاشة.
@@ -55,21 +55,21 @@ description: يتم حزم PDF SharePoint API كحل SharePoint لتبسيط ن�
 
 - التحقق من متطلبات التثبيت. لن يستمر الإعداد في حالة فشل أي عملية تحقق.
 
-![Check Installation Prerequisites](installing-aspose-pdf-for-sharepoint_1.png)
+![تحقق من متطلبات التثبيت](installing-aspose-pdf-for-sharepoint_1.png)
 
 - عرض اتفاقية ترخيص المستخدم النهائي. يجب على المستخدم قبول الاتفاقية للمتابعة.
 
-![Display License Agreement](installing-aspose-pdf-for-sharepoint_2.png)
+![اتفاقية ترخيص العرض](installing-aspose-pdf-for-sharepoint_2.png)
 
 - عرض مربع حوار تحديد هدف النشر. يقوم المستخدم باختيار تطبيقات الويب ومجموعات المواقع حيث سيتم تفعيل الميزة. انظر الشكل أدناه.
 
-![Display Deployment Target Selection](installing-aspose-pdf-for-sharepoint_3.png)
+![عرض تحديد هدف النشر](installing-aspose-pdf-for-sharepoint_3.png)
 
 - انشر الميزة في مزرعة الخوادم.
 
-![Deploy Feature](installing-aspose-pdf-for-sharepoint_4.png)
+![نشر الميزة](installing-aspose-pdf-for-sharepoint_4.png)
 
 - قم بتنشيط الميزة لمجموعات الموقع المحددة وقم بتكوين تطبيقات الويب الأصلية الخاصة بها.
 - عرض قائمة بتطبيقات الويب ومجموعات المواقع حيث تم نشر الميزة وتنشيطها.
 
-![Display Deployed Features](installing-aspose-pdf-for-sharepoint_5.png)
+![عرض الميزات المنشورة](installing-aspose-pdf-for-sharepoint_5.png)

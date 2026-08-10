@@ -10,9 +10,9 @@ description: باستخدام PDF SharePoint API، يمكنك تحويل PDF إ�
 
 {{% alert color="primary" %}}
 
-في إصدار [Aspose.PDF لـ SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/Aspose.PDF-for-SharePoint-2.0.0/) أضفنا دعمًا لإنشاء ملف PDF متوافق مع PDFA.
+في إصدار [Aspose.PDF for SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/Aspose.PDF-for-SharePoint-2.0.0/) أضفنا دعمًا لإنشاء ملف PDF متوافق مع PDFA.
 
-حاليًا، يدعم Aspose.PDF لـ SharePoint معيار PDFA1b فقط.
+حاليًا، يدعم Aspose.PDF for SharePoint معيار PDFA1b فقط.
 
 {{% /alert %}}
 
@@ -22,8 +22,8 @@ description: باستخدام PDF SharePoint API، يمكنك تحويل PDF إ�
 
 1. انقر **تحويل إلى PDF** في قائمة البنك المركزي الأوروبي.
 
-![Convert PDF to PDFA-example 1](convert-pdf-to-pdfa_1.png)
+![تحويل ملف PDF إلى PDFA - مثال 1](convert-pdf-to-pdfa_1.png)
 
 2. قم بتنزيل وحفظ ملف PDF الناتج.
 
-![Convert PDF to PDFA-example 2](convert-pdf-to-pdfa_2.png)
+![تحويل PDF إلى PDFA - مثال 2](convert-pdf-to-pdfa_2.png)

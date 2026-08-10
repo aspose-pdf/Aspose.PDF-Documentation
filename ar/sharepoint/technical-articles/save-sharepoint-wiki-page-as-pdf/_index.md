@@ -12,7 +12,7 @@ description: يمكن استخدام مكتبة SharePoint PDF لتصدير صف
 
 ## SharePoint ويكي تصدير قوات الدفاع الشعبي
 
-توضح هذه المقالة كيفية تصدير SharePoint Wiki Pages إلى PDF باستخدام Aspose.PDF لـ SharePoint.
+توضح هذه المقالة كيفية تصدير SharePoint Wiki Pages إلى PDF باستخدام Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
@@ -24,11 +24,11 @@ description: يمكن استخدام مكتبة SharePoint PDF لتصدير صف
 
 **صفحة Wiki على وشك أن يتم تصديرها إلى ملف PDF.** (لاحظ الزر **حفظ بتنسيق PDF** في علامة التبويب **الصفحة**.)
 
-![Save Wiki Page as PDF](save-SharePoint-wiki-page-as-pdf_1.png)
+![احفظ صفحة ويكي كملف PDF](save-SharePoint-wiki-page-as-pdf_1.png)
 
 ملف PDF يعرض صفحة Wiki المصدرة.
 
-![Exported Wiki Page](save-SharePoint-wiki-page-as-pdf_2.png)
+![صفحة ويكي المصدرة](save-SharePoint-wiki-page-as-pdf_2.png)
 
 {{% /alert %}}
 

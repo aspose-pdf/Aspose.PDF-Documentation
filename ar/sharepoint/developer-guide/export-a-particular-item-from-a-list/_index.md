@@ -10,7 +10,7 @@ description: يتيح لك PDF SharePoint API تحويل عدة مستندات،
 
 {{% alert color="primary" %}}
 
-يتيح لك Aspose.PDF لـ SharePoint تحويل عدة مستندات، أو واحدة تلو الأخرى. توضح هذه المقالة كيفية تصدير عنصر من القائمة.
+يتيح لك Aspose.PDF for SharePoint تحويل عدة مستندات، أو واحدة تلو الأخرى. توضح هذه المقالة كيفية تصدير عنصر من القائمة.
 
 {{% /alert %}}
 
@@ -18,9 +18,9 @@ description: يتيح لك PDF SharePoint API تحويل عدة مستندات،
 
 ## تحديد تصدير إلى Pdf في البنك المركزي الأوروبي للعنصر
 
-![Selecting Export to Pdf](export-a-particular-item-from-a-list_1.png)
+![تحديد خيار التصدير إلى ملف PDF](export-a-particular-item-from-a-list_1.png)
 
 ## تصدير إلى PDF
 
-![Export to PDF](export-a-particular-item-from-a-list_2.png)
+![تصدير إلى PDF](export-a-particular-item-from-a-list_2.png)
 

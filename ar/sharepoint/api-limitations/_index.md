@@ -18,6 +18,6 @@ description: تشرح المقالة بعض قيود PDF SharePoint API.
 
 {{% alert color="primary" %}}
 
-يرجى ملاحظة أنه لا يمكنك تعيين قيم في الحقلين **Application** و **Producer** ، لأنه سيتم عرض Aspose Ltd. وAspose.PDF لـ SharePoint x.x.x مقابل هذه الحقول.
+يرجى ملاحظة أنه لا يمكنك تعيين قيم في الحقلين **Application** و **Producer** ، لأنه سيتم عرض Aspose Ltd. وAspose.PDF for SharePoint x.x.x مقابل هذه الحقول.
 
 {{% /alert %}}

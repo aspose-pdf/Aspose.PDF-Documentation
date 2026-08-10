@@ -10,11 +10,11 @@ description: يحتوي PDF SharePoint API على متطلبات الخادم و
 
 ## متطلبات الخادم
 
-لتثبيت Aspose.PDF لـ SharePoint، تحتاج إلى جهاز كمبيوتر يعمل بنظام Microsoft SharePoint Server 2010.
+لتثبيت Aspose.PDF for SharePoint، تحتاج إلى جهاز كمبيوتر يعمل بنظام Microsoft SharePoint Server 2010.
 
 ## متطلبات العميل
 
-أنت بحاجة إلى متصفح للوصول إلى مواقع SharePoint. تم اختبار Aspose.PDF لـ SharePoint باستخدام المتصفحات التالية:
+أنت بحاجة إلى متصفح للوصول إلى مواقع SharePoint. تم اختبار Aspose.PDF for SharePoint باستخدام المتصفحات التالية:
 
 - مايكروسوفت إنترنت إكسبلورر 8
 - موزيلا فايرفوكس 3.5

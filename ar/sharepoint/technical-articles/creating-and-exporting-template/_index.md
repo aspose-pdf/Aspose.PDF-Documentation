@@ -10,9 +10,9 @@ description: يمكنك إنشاء وتصدير القوالب إلى PDF في S
 
 {{% alert color="primary" %}}
 
-توضح هذه المقالة كيفية إنشاء القوالب وتصديرها باستخدام Aspose.PDF لـ SharePoint.
+توضح هذه المقالة كيفية إنشاء القوالب وتصديرها باستخدام Aspose.PDF for SharePoint.
 
-من Aspose.PDF لـ SharePoint 1.9.2، يغطي دعم قالب PDF أيضًا مواقع SharePoint الفرعية.
+من Aspose.PDF for SharePoint 1.9.2، يغطي دعم قالب PDF أيضًا مواقع SharePoint الفرعية.
 
 {{% /alert %}}
 
@@ -20,15 +20,15 @@ description: يمكنك إنشاء وتصدير القوالب إلى PDF في S
 
 {{% alert color="primary" %}}
 
-لاستخدام ميزة التصدير Aspose.PDF لـ SharePoint، قم أولاً بإنشاء قائمة تستخدم "قوالب PDF".
+لاستخدام ميزة التصدير Aspose.PDF for SharePoint، قم أولاً بإنشاء قائمة تستخدم "قوالب PDF".
 
 إنشاء قائمة تستخدم قوالب PDF:
 
-![Create PDF Template List](creating-and-exporting-template_1.png)
+![إنشاء قائمة قوالب PDF](creating-and-exporting-template_1.png)
 
 يتم إنشاء قالبين للمستندات، قوالب نماذج المهام وقوالب قائمة المهام:
 
-![Document Templates](creating-and-exporting-template_2.png)
+![قوالب المستندات](creating-and-exporting-template_2.png)
 
 يتيح لك نموذج القالب إدخال المعلومات التالية:
 
@@ -43,7 +43,7 @@ description: يمكنك إنشاء وتصدير القوالب إلى PDF في S
 
 نموذج قوالب قائمة المهام:
 
-![Task List Templates](creating-and-exporting-template_3.png)
+![قوالب قوائم المهام](creating-and-exporting-template_3.png)
 
 نموذج قوالب نموذج المهمة:
 
@@ -53,11 +53,11 @@ description: يمكنك إنشاء وتصدير القوالب إلى PDF في S
 
 قالبان لقائمة المهام:*
 
-![Task List Templates](creating-and-exporting-template_5.png)
+![قوالب قوائم المهام](creating-and-exporting-template_5.png)
 
 نموذج نماذج المهام:
 
-![Task Form Templates](creating-and-exporting-template_6.png)
+![قوالب نماذج المهام](creating-and-exporting-template_6.png)
 
 ### تطوير القوالب
 
