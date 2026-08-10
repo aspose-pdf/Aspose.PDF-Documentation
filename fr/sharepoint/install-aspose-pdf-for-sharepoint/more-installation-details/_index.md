@@ -1,4 +1,4 @@
-﻿---
+---
 title: Plus de détails d'installation
 linktitle: Plus de détails d'installation
 type: docs

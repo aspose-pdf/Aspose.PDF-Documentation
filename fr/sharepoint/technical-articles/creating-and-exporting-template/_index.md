@@ -1,4 +1,4 @@
-﻿---
+---
 title: Création et exportation d'un modèle
 linktitle: Création et exportation d'un modèle
 type: docs

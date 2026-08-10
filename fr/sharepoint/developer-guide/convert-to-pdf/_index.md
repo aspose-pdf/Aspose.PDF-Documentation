@@ -1,4 +1,4 @@
-﻿---
+---
 title: Convertissez du HTML, du texte et des images en PDF dans SharePoint
 linktitle: Convertir en PDF
 type: docs

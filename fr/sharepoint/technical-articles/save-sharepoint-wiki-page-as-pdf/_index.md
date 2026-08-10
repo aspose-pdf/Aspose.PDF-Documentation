@@ -1,4 +1,4 @@
-﻿---
+---
 title: Enregistrer la page Wiki SharePoint au format PDF
 linktitle: Enregistrer la page Wiki SharePoint au format PDF
 type: docs

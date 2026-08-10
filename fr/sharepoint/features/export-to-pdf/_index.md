@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exporter au format PDF dans SharePoint
 linktitle: Exporter au format PDF
 type: docs

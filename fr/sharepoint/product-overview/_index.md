@@ -1,4 +1,4 @@
-﻿---
+---
 title: Product Overview
 linktitle: Présentation du produit
 type: docs

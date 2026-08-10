@@ -1,4 +1,4 @@
-﻿---
+---
 title: Installer SharePoint
 linktitle: Installer SharePoint
 type: docs

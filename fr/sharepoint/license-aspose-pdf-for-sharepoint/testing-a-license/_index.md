@@ -1,4 +1,4 @@
-﻿---
+---
 title: Tester une licence
 linktitle: Tester une licence
 type: docs

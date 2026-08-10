@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exporter un élément particulier d'une liste au format PDF dans SharePoint
 linktitle: Exporter un élément particulier à partir d'une liste
 type: docs

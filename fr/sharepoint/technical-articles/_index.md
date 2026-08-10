@@ -1,4 +1,4 @@
-﻿---
+---
 title: Articles techniques - Bibliothèque PDF SharePoint
 linktitle: Articles techniques
 type: docs

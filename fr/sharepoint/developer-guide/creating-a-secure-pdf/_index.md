@@ -1,4 +1,4 @@
-﻿---
+---
 title: Créer un PDF sécurisé dans SharePoint
 linktitle: Créer un PDF sécurisé
 type: docs

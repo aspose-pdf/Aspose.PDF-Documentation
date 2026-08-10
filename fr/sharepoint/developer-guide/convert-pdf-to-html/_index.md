@@ -1,4 +1,4 @@
-﻿---
+---
 title: Convertir un PDF en HTML dans SharePoint
 linktitle: Convertir un PDF en HTML
 type: docs

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Licence
 linktitle: Licence
 type: docs

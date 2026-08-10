@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configuration système requise
 linktitle: Configuration système requise
 type: docs

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Désinstallation d'Aspose.PDF pour la licence SharePoint
 linktitle: Désinstallation d'Aspose.PDF pour la licence SharePoint
 type: docs

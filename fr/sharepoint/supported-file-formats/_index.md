@@ -1,4 +1,4 @@
-﻿---
+---
 title: Formats de fichiers pris en charge
 linktitle: Formats de fichiers pris en charge
 type: docs

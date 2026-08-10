@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ajouter un code-barres à un fichier PDF dans SharePoint
 linktitle: Ajouter un code-barres à un fichier PDF
 type: docs

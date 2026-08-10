@@ -1,4 +1,4 @@
-﻿---
+---
 title: Convertissez plusieurs fichiers sélectionnés en fichiers PDF avec une seule demande de conversion
 linktitle: Convertissez plusieurs fichiers sélectionnés en fichiers PDF avec une seule demande de conversion
 type: docs

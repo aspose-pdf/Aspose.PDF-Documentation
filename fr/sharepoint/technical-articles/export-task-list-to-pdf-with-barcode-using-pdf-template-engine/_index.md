@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exporter la liste des tâches au format PDF avec code-barres à l'aide du moteur de modèles PDF
 linktitle: Exporter la liste des tâches au format PDF avec code-barres à l'aide du moteur de modèles PDF
 type: docs

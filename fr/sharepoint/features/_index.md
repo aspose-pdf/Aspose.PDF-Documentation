@@ -1,4 +1,4 @@
-﻿---
+---
 title: Caractéristiques
 linktitle: Caractéristiques
 type: docs

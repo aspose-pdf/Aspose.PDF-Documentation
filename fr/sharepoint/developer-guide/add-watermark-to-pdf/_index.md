@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ajouter un filigrane au PDF ajouté à la bibliothèque SharePoint
 linktitle: Add Watermark to PDF
 type: docs
