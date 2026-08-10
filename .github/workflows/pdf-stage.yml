@@ -13,7 +13,7 @@ jobs:
       LANGUAGES: "ar en es fr id ja ko pt ru zh"
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6.0.2
       with:
           submodules: true
           fetch-depth: 0
