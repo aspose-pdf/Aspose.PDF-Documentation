@@ -1,29 +1,28 @@
-﻿---
-title: SharePoint で PDF を HTML に変換する
+---
+title: SharePoint で PDF を HTML に変換
 linktitle: PDF を HTML に変換
 type: docs
 weight: 80
 url: /ja/sharepoint/convert-pdf-to-html/
-lastmod: "2020-12-16"
-description: PDF SharePoint API を使用すると、PDF ドキュメントを SharePoint ドキュメント ライブラリから HTML 形式に変換できます。
+lastmod: "2026-08-10"
+description: PDF SharePoint API を使用すると、SharePoint ドキュメント ライブラリ内の PDF ドキュメントを HTML 形式に変換できます。
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint は、PDF ドキュメントを SharePoint ドキュメント ライブラリから HTML 形式に変換する機能をサポートしています。この記事では、PDF から HTML への変換について説明します。
+Aspose.PDF for SharePoint は、SharePoint ドキュメント ライブラリ内の PDF ドキュメントを HTML 形式に変換する機能をサポートしています。本記事では、PDF から HTML への変換を実演します。
 
 {{% /alert %}}
 
-## PDF ドキュメントを HTML に変換する
+## PDF ドキュメントを HTML に変換
 
-次のように、PDF ドキュメントを SharePoint ドキュメント ライブラリから HTML に変換します。
+SharePoint ドキュメント ライブラリから PDF ドキュメントを HTML に変換する手順は次のとおりです:
 
-1. PDF ドキュメントの ECB メニューで [**HTML に変換**] をクリックします。
+1. PDF ドキュメントの ECB メニューで **Convert to HTML** をクリックします。
 
-![PDF を HTML に変換する - 例 1](convert-pdf-to-html_1.png)
+![PDF を HTML に変換 - 例 1](convert-pdf-to-html_1.png)
 
-2. 結果の HTML ファイルをダウンロードしてディスクに保存します。
+2. 生成された HTML ファイルをダウンロードし、ディスクに保存します。
 
-![PDF から HTML への変換 - 例 2](convert-pdf-to-html_2.png)
-
+![PDF を HTML に変換 - 例 2](convert-pdf-to-html_2.png)
 

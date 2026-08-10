@@ -1,16 +1,16 @@
-﻿---
+---
 title: テンプレートの作成とエクスポート
 linktitle: テンプレートの作成とエクスポート
 type: docs
 weight: 10
 url: /ja/sharepoint/creating-and-exporting-template/
-lastmod: "2020-12-16"
-description: PDF SharePoint API を使用して、SharePoint でテンプレートを作成し、PDF にエクスポートできます。
+lastmod: "2026-08-10"
+description: PDF SharePoint API を使用して、SharePoint でテンプレートを PDF に作成およびエクスポートできます。
 ---
 
 {{% alert color="primary" %}}
 
-この記事では、Aspose.PDF for SharePoint を使用してテンプレートを作成およびエクスポートする方法を説明します。
+この記事では、Aspose.PDF for SharePoint を使用してテンプレートを作成およびエクスポートする方法を示します。
 
 Aspose.PDF for SharePoint 1.9.2 以降、PDF テンプレートのサポートは SharePoint サブサイトもカバーします。
 
@@ -20,66 +20,65 @@ Aspose.PDF for SharePoint 1.9.2 以降、PDF テンプレートのサポート�
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint エクスポート機能を使用するには、まず「PDF テンプレート」を使用するリストを作成します。
+Aspose.PDF for SharePoint のエクスポート機能を使用するには、まず「PDF Templates」を使用するリストを作成します。
 
-PDF テンプレートを使用したリストの作成:
+PDF Templates を使用するリストの作成:
 
-![PDFテンプレートリストの作成](creating-and-exporting-template_1.png)
+![PDF テンプレート リストを作成](creating-and-exporting-template_1.png)
 
-タスク フォーム テンプレートとタスク リスト テンプレートという 2 つのドキュメント テンプレートが作成されます。
+2 つのドキュメントテンプレート、Task Form Templates と Task List Templates が作成されます:
 
-![ドキュメントテンプレート](creating-and-exporting-template_2.png)
+![ドキュメント テンプレート](creating-and-exporting-template_2.png)
 
-テンプレート フォームでは、次の情報を入力できます。
+テンプレート フォームでは、次の情報を入力できます:
 
-- **名前**: テンプレートのファイル名。
-- **タイトル**: テンプレートのタイトル。 (デフォルトではファイル名と同じです。)
-- **説明**: テンプレートの説明。適切な説明があると、テンプレートが使いやすくなります。
-- **割り当てられたリスト タイプ**: カンマ区切りのリスト ID (テンプレートに関連します。このフィールドには値も含まれる場合があります)
-- **すべてのリストタイプ**。このフィールドは、**タイプ** フィールドが **リスト** に設定されている場合にのみ適用されます。
-- **割り当てられたコンテンツ タイプ**: テンプレートに関連するカンマ区切りのコンテンツ タイプ ID。このフィールドには **AllListTypes** が設定されている可能性があります。このフィールドは、**タイプ** フィールドが **項目** に設定されている場合にのみ適用されます。
-- **タイプ**: リスト テンプレートまたはアイテム テンプレートのいずれか。
-- **ステータス**: オプションはアクティブ、非アクティブ (全員に表示)、およびデバッグ (管理者のみに表示) です。
+- **Name**: テンプレートのファイル名です。
+- **Title**: テンプレートのタイトルです。（デフォルトでは、ファイル名と同じです。）
+- **Description**: テンプレートの説明です。適切な説明により、テンプレートの使用が容易になります。
+- **Assigned List Types**: カンマで区切ったリスト ID（テンプレートに関連付けられます。このフィールドは、値も含めることがあります
+- **AllListTypes**. このフィールドは、**Type** フィールドが **List** に設定されている場合にのみ適用されます。)
+- **Assigned Content Types**: テンプレートに関連するコンテンツ タイプ ID をカンマ区切りで指定します。このフィールドは **AllListTypes** に設定できる場合があります。このフィールドは **Type** フィールドが **Item** に設定されている場合にのみ適用されます。
+- **Type**: リストテンプレートまたはアイテムテンプレートのいずれか。
+- **Status**: オプションは active、inactive（すべてに対して非表示）、debugging（管理者にのみ表示）の3つです。
 
-タスク リスト テンプレートの形式は次のとおりです。
+The Task List Templates form:
 
-![タスクリストのテンプレート](creating-and-exporting-template_3.png)
+![Task List Templates](creating-and-exporting-template_3.png)
 
-タスク フォーム テンプレートの形式は次のとおりです。
+The Task Form Templates form:
 
-![タスクフォームのテンプレート](creating-and-exporting-template_4.png)
+![タスク フォーム テンプレート](creating-and-exporting-template_4.png)
 
-保存すると、新しいテンプレートがテンプレート リストに表示され、使用できるようになります。
+保存すると、新しいテンプレートがテンプレート一覧に表示され、すぐに使用できるようになります：
 
-2 つのタスク リスト テンプレート:*
+2つのタスク リスト テンプレート:*
 
-![タスクリストのテンプレート](creating-and-exporting-template_5.png)
+![Task List Templates](creating-and-exporting-template_5.png)
 
-タスクフォームテンプレート:
+タスク フォーム テンプレート：
 
-![タスクフォームのテンプレート](creating-and-exporting-template_6.png)
+![タスク フォーム テンプレート](creating-and-exporting-template_6.png)
 
 ### テンプレートの開発
 
-テンプレートは、Aspose XML PDF に基づく XML ファイルです。リストのテンプレートを作成するには、SharePoint ターゲット コンテンツ タイプ フィールドの内部名に関連する特別なマーカーを XML PDF ファイルに配置します。
+テンプレートは Aspose XML PDF に基づく XML ファイルです。リスト用のテンプレートを作成するには、SharePoint の対象コンテンツタイプフィールドの内部名前に関連する特別なマーカーを XML PDF ファイルに配置します。
 
 ### マーカー
 
 - **SPListItemsCount** – リスト項目の数に置き換えられます。
 - **SPListTitle** – リストのタイトルに置き換えられます。
-- **SPTableIterator** – 最初のテーブルセルに配置され、完全な反復のためにテーブルをマークします。
-- **SPRowIterator** – 最初のテーブル セルに配置され、行反復のテーブルにマークが付けられます。
+- **SPTableIterator** – 最初の表セルに配置され、表全体の繰り返し用にマークされます。
+- **SPRowIterator** – 最初の表セルに配置され、行の繰り返し用に表がマークされます。
 - **SPField** – 項目フィールドの値に置き換えられます。
 
-参考までにダウンロードしてください [テンプレートXMLファイル](attachments/8421394/8618082.zip).
+参考のために、ダウンロードしてください [テンプレート XML ファイル](attachments/8421394/8618082.zip).
 
 ### PDF にエクスポート
 
-テンプレートの構成が完了したら、リストまたは項目を PDF ファイルにエクスポートする準備が整います。
+テンプレートが完全に設定されたら、リストや項目を PDF ファイルにエクスポートする準備が整います。
 
-タスク リスト テンプレートを使用してリストを PDF にエクスポートする:
+タスクリストテンプレートを使用してリストを PDF にエクスポートする方法:
 
 ![PDF にエクスポート](creating-and-exporting-template_7.png)
 
 {{% /alert %}}
-
