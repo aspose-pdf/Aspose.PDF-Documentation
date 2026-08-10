@@ -1,4 +1,4 @@
-﻿---
+---
 title: Licencia
 linktitle: Licencia
 type: docs

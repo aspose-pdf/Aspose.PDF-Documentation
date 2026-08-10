@@ -1,4 +1,4 @@
-﻿---
+---
 title: Agregar marca de agua a PDF agregado a la biblioteca de SharePoint
 linktitle: Agregar marca de agua a PDF
 type: docs

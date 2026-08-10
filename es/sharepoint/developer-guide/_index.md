@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía para desarrolladores- PDF API de SharePoint
 linktitle: Guía para desarrolladores
 type: docs

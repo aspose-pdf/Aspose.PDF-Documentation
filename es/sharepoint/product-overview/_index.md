@@ -1,4 +1,4 @@
-﻿---
+---
 title: Descripción general del producto
 linktitle: Descripción general del producto
 type: docs

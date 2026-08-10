@@ -1,4 +1,4 @@
-﻿---
+---
 title: Fusionar archivos PDF en SharePoint
 linktitle: Fusionar archivos PDF
 type: docs

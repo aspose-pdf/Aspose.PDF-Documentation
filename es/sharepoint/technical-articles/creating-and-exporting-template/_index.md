@@ -1,4 +1,4 @@
-﻿---
+---
 title: Crear y exportar plantilla
 linktitle: Crear y exportar plantilla
 type: docs

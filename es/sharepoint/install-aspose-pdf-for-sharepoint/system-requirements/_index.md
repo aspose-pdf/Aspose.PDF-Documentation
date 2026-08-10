@@ -1,4 +1,4 @@
-﻿---
+---
 title: Requisitos del sistema
 linktitle: Requisitos del sistema
 type: docs

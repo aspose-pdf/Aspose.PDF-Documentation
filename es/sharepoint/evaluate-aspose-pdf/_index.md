@@ -1,4 +1,4 @@
-﻿---
+---
 title: Evaluar Aspose.PDF for SharePoint
 linktitle: Evaluar
 type: docs

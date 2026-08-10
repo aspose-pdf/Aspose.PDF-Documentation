@@ -1,4 +1,4 @@
-﻿---
+---
 title: Instalar SharePoint
 linktitle: Instalar SharePoint
 type: docs

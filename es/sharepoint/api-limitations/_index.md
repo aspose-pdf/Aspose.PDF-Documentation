@@ -1,4 +1,4 @@
-﻿---
+---
 title: Limitaciones de la API
 linktitle: Limitaciones de la API
 type: docs

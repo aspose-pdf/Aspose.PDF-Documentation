@@ -1,4 +1,4 @@
-﻿---
+---
 title: Convertir un archivo a PDF a través de una actividad de flujo de trabajo
 linktitle: Convertir un archivo a PDF a través de una actividad de flujo de trabajo
 type: docs

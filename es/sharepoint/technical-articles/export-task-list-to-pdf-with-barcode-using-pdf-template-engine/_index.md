@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exportar lista de tareas a PDF con código de barras usando PDF Template Engine
 linktitle: Export Task List to PDF with Barcode using PDF Template Engine
 type: docs

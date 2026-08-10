@@ -1,4 +1,4 @@
-﻿---
+---
 title: Probar una licencia
 linktitle: Probar una licencia
 type: docs

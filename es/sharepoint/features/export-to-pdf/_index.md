@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exportar a PDF en SharePoint
 linktitle: Exportar a PDF
 type: docs

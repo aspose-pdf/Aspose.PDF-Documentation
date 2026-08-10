@@ -1,4 +1,4 @@
-﻿---
+---
 title: Agregar código de barras a un archivo PDF en SharePoint
 linktitle: Agregar código de barras a un archivo PDF
 type: docs

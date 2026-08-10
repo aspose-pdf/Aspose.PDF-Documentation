@@ -1,4 +1,4 @@
-﻿---
+---
 title: Cómo crear y convertir un archivo XML a PDF
 linktitle: How to Create and Convert an XML File to PDF
 type: docs

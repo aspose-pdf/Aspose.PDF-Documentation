@@ -1,4 +1,4 @@
-﻿---
+---
 title: Convertir PDF a PDFA en SharePoint
 linktitle: Convertir PDF a PDFA
 type: docs

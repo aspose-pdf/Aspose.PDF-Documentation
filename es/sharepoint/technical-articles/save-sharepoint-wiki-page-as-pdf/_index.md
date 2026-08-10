@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guarde la página Wiki de SharePoint como PDF
 linktitle: Guarde la página Wiki de SharePoint como PDF
 type: docs

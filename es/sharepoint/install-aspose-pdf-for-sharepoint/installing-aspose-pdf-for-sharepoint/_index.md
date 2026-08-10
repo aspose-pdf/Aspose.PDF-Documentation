@@ -1,4 +1,4 @@
-﻿---
+---
 title: Instalación de Aspose.PDF for SharePoint
 linktitle: Instalación de Aspose.PDF for SharePoint
 type: docs

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Formatos de archivo admitidos
 linktitle: Formatos de archivo admitidos
 type: docs

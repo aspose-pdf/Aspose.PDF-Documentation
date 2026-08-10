@@ -1,4 +1,4 @@
-﻿---
+---
 title: Activación y Desactivación después de la instalación
 linktitle: Activación y Desactivación después de la instalación
 type: docs
