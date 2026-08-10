@@ -1,0 +1,84 @@
+---
+title: 템플릿 만들기 및 내보내기
+linktitle: 템플릿 만들기 및 내보내기
+type: docs
+weight: 10
+url: /ko/sharepoint/creating-and-exporting-template/
+lastmod: "2026-08-10"
+description: PDF SharePoint API를 사용하여 SharePoint에서 템플릿을 PDF로 만들고 내보낼 수 있습니다.
+---
+
+{{% alert color="primary" %}}
+
+이 문서는 Aspose.PDF for SharePoint를 사용하여 템플릿을 만들고 내보내는 방법을 보여줍니다.
+
+Aspose.PDF for SharePoint 1.9.2부터 PDF 템플릿 지원은 SharePoint 하위 사이트도 포함합니다.
+
+{{% /alert %}}
+
+## 템플릿 만들기 및 내보내기
+
+{{% alert color="primary" %}}
+
+Aspose.PDF for SharePoint 내보내기 기능을 사용하려면 먼저 “PDF Templates”를 사용하는 목록을 생성하십시오.
+
+PDF Templates를 사용하는 목록 만들기:
+
+![PDF 템플릿 목록 만들기](creating-and-exporting-template_1.png)
+
+두 개의 문서 템플릿, Task Form Templates와 Task List Templates가 생성됩니다:
+
+![문서 템플릿](creating-and-exporting-template_2.png)
+
+템플릿 양식에서는 다음 정보를 입력할 수 있습니다:
+
+- **Name**: 템플릿의 파일 이름.
+- **Title**: 템플릿의 제목입니다. (기본값은 파일 이름과 동일합니다.)
+- **Description**: 템플릿에 대한 설명입니다. 좋은 설명은 템플릿을 더 쉽게 사용할 수 있게 합니다.
+- **Assigned List Types**: 쉼표로 구분된 목록 ID(템플릿과 관련됨. 이 필드는 또한 값
+- **AllListTypes**. 이 필드는 **Type** 필드가 **List**로 설정된 경우에만 적용됩니다.)
+- **Assigned Content Types**: 템플릿과 관련된 콘텐츠 유형 ID를 쉼표로 구분한 목록입니다. 이 필드는 **AllListTypes** 로 설정될 수 있습니다. 이 필드는 **Type** 필드가 **Item**으로 설정된 경우에만 적용됩니다.
+- **Type**: 목록 템플릿 또는 아이템 템플릿 중 하나입니다.
+- **Status**: 옵션은 active, inactive(모두에게 보이지 않음), debugging(관리자에게만 표시)입니다.
+
+Task List Templates 양식:
+
+![작업 목록 템플릿](creating-and-exporting-template_3.png)
+
+Task Form Templates 양식:
+
+![Task Form 템플릿](creating-and-exporting-template_4.png)
+
+저장되면 새 템플릿이 템플릿 목록에 표시되어 사용 준비가 됩니다:
+
+두 개의 작업 목록 템플릿:*
+
+![작업 목록 템플릿](creating-and-exporting-template_5.png)
+
+Task Form 템플릿:
+
+![Task Form 템플릿](creating-and-exporting-template_6.png)
+
+### 템플릿 개발
+
+템플릿은 Aspose XML PDF를 기반으로 하는 XML 파일입니다. 목록용 템플릿을 만들려면 SharePoint 대상 콘텐츠 유형 필드의 내부 이름과 관련된 특수 마커를 XML PDF 파일에 삽입하십시오.
+
+### 마커
+
+- **SPListItemsCount** – 목록 항목 수로 대체됩니다.
+- **SPListTitle** – 목록 제목으로 대체됩니다.
+- **SPTableIterator** – 첫 번째 테이블 셀에 배치되고 전체 반복을 위해 테이블을 표시합니다.
+- **SPRowIterator** – 첫 번째 테이블 셀에 배치되고 행 반복을 위해 테이블을 표시합니다.
+- **SPField** – 항목 필드의 값으로 대체됩니다.
+
+참고용으로, 다운로드해 주세요 [템플릿 XML 파일](attachments/8421394/8618082.zip).
+
+### PDF로 내보내기
+
+템플릿이 완전히 구성되면, 목록이나 항목을 PDF 파일로 내보낼 준비가 됩니다.
+
+작업 목록 템플릿을 사용하여 목록을 PDF로 내보내기:
+
+![PDF로 내보내기](creating-and-exporting-template_7.png)
+
+{{% /alert %}}
