@@ -25,7 +25,7 @@ Cette documentation décrit les [fonctionnalités](/pdf/sharepoint/features/), [
 
 {{% /alert %}}
 
-L'onglet Outils Aspose sur le ruban Listes et bibliothèques montre qu'Aspose.PDF for SharePoint est installé
+L'onglet Aspose Tools sur le ruban Listes et bibliothèques montre qu'Aspose.PDF for SharePoint est installé
 
 ![Aspose.PDF for SharePoint Installed](product-overview_2.png)
 

@@ -20,17 +20,17 @@ Aspose.PDF for SharePoint vous permet d'ajouter un filigrane à un document PDF.
 
 {{% alert color="primary" %}}
 
-Pour activer la fonctionnalité de filigrane pour une bibliothèque spécifique :
+Pour activer la fonctionnalité de filigrane pour une bibliothèque spécifique:
 
-1. Cliquez sur **Paramètres du filigrane** dans l'onglet **Aspose Tools** de la boîte de dialogue **Outils de bibliothèque**.
+1. Cliquez sur **Watermark Settings** dans l'onglet **Aspose Tools** de la boîte de dialogue **Library Tools**.
 
-   **Outils de bibliothèque**
+   **Library Tools**
 
 ![Add Watermark to PDF-example 2](add-watermark-to-pdf_2.jpg)
 
 Les paramètres de filigrane sont spécifiques à une liste, vous pouvez donc choisir différents paramètres de filigrane pour différentes bibliothèques. La capture d'écran suivante montre la boîte de dialogue Paramètres de filigrane pour la bibliothèque **Documents partagés**.
 
-## Paramètres du filigrane
+## Watermark Settings
 
 ![Add Watermark to PDF-example 3](add-watermark-to-pdf_3.jpg)
 

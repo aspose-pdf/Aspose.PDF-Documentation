@@ -39,7 +39,7 @@ Fusionnez deux documents à l'aide de l'option **Convertir en PDF**. Cette fonct
 
 ![Fusionner des documents](creating-a-secure-pdf_2.png)
 
-1. Utilisez l'option **Fusionner au format PDF** des Outils de bibliothèque pour enregistrer le fichier de sortie. Vous êtes invité à enregistrer le fichier de sortie sur le disque.
+1. Utilisez l'option **Fusionner au format PDF** des Library Tools pour enregistrer le fichier de sortie. Vous êtes invité à enregistrer le fichier de sortie sur le disque.
 
 ![Fusionner en PDF](creating-a-secure-pdf_3.png)
 

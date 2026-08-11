@@ -22,11 +22,11 @@ Fusionnez plusieurs fichiers PDF de la bibliothèque de documents SharePoint en 
 
 ![Sélection de fichiers PDF](merge-pdf-files_1.png)
 
-2.  Cliquez sur l'onglet Outils Aspose dans Outils de bibliothèque.
+2.  Cliquez sur l'onglet Aspose Tools dans Library Tools.
 
-![Cliquez sur Outils Aspose](merge-pdf-files_2.png)
+![Cliquez sur Aspose Tools](merge-pdf-files_2.png)
 
-3.  Cliquez sur l'option Fusionner vers PDF dans les outils de bibliothèque pour fusionner tous les fichiers PDF sélectionnés dans le PDF résultant.
+3.  Cliquez sur l'option Fusionner vers PDF dans les Library Tools pour fusionner tous les fichiers PDF sélectionnés dans le PDF résultant.
 
 ![Fusionner en PDF](merge-pdf-files_3.png)
 

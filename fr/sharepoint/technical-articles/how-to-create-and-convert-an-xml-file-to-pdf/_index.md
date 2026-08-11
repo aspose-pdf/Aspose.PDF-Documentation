@@ -107,7 +107,7 @@ Soit:
 
 Ou:
 
-1. Sélectionnez **Aspose Tools** dans **Outils de bibliothèque**.
+1. Sélectionnez **Aspose Tools** dans **Library Tools**.
 1. Cliquez sur **Exporter**.
 
 ![Exporter au format PDF](how-to-create-and-convert-an-xml-file-to-pdf_5.png)

@@ -22,7 +22,7 @@ Aspose.PDF for SharePoint vous permet d'ajouter un code-barres à un document PD
 
 {{% alert color="primary" %}}
 
-Pour activer la fonctionnalité de code-barres pour une bibliothèque spécifique, utilisez le bouton **Paramètres de filigrane** dans l'onglet **Aspose PDF Watermark Tools** dans **Outils de bibliothèque**, comme indiqué ci-dessous.
+Pour activer la fonctionnalité de code-barres pour une bibliothèque spécifique, utilisez le bouton **Paramètres de filigrane** dans l'onglet **Aspose PDF Watermark Tools** dans **Library Tools**, comme indiqué ci-dessous.
 
 ### Paramètres de filigrane PDF
 

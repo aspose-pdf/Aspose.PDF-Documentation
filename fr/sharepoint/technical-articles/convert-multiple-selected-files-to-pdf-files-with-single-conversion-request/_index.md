@@ -24,9 +24,9 @@ Pour convertir plusieurs fichiers sélectionnés, effectuez les étapes suivante
 
 ![Sélectionner des fichiers](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
 
-2. Cliquez sur l'onglet Outils Aspose dans les outils de la bibliothèque.
+2. Cliquez sur l'onglet Aspose Tools dans les outils de la bibliothèque.
 
-![Cliquez sur Outils Aspose](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
+![Cliquez sur Aspose Tools](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
 
 3. Cliquez sur Convertir en PDF pour convertir tous les fichiers sélectionnés en fichiers PDF résultants.
 
