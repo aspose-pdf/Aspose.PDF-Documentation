@@ -16,17 +16,17 @@ Aspose.PDF for SharePoint le permite agregar un código de barras a un documento
 
 **Código de barras en la esquina inferior izquierda**
 
-![todo:image_alt_text](add-barcode-to-a-pdf-file_1.png)
+![Add barcode to PDF file](add-barcode-to-a-pdf-file_1.png)
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-Para habilitar la función de código de barras para una biblioteca específica, use el botón **Configuración de marca de agua** en la pestaña **Herramientas de marca de agua de Aspose PDF** dentro de **Herramientas de biblioteca**, como se muestra a continuación.
+Para habilitar la función de código de barras para una biblioteca específica, use el botón **Watermark Settings** en la pestaña **Herramientas de marca de agua de Aspose PDF** dentro de **Herramientas de biblioteca**, como se muestra a continuación.
 
-**Configuración de marca de agua de PDF**
+**Watermark Settings de PDF**
 
-![todo:image_alt_text](add-barcode-to-a-pdf-file_2.png)
+![Add barcode to PDF file](add-barcode-to-a-pdf-file_2.png)
 
 Después de habilitar los códigos de barras para la biblioteca específica, Aspose.PDF for SharePoint agrega un código de barras a cualquier documento PDF añadido a esa biblioteca.
 
