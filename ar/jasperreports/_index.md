@@ -1,11 +1,11 @@
 ﻿---
 title: التوثيق
-linktitle: Aspose.PDF لـ JasperReports
+linktitle: Aspose.PDF for JasperReports
 second_title: Aspose.PDF for JasperReports
 type: docs
 weight: 120
 url: /ar/jasperreports/
-description: اكتشف Aspose.PDF لـ JasperReports. قم بإنشاء تقارير PDF مباشرة من JasperReports مع التخصيص المتقدم.
+description: اكتشف Aspose.PDF for JasperReports. قم بإنشاء تقارير PDF مباشرة من JasperReports مع التخصيص المتقدم.
 is_root: true
 lastmod: "2026-08-04"
 ---
@@ -24,12 +24,12 @@ lastmod: "2026-08-04"
 
 - [Aspose.PDF لمحة عامة عن منتج JasperReports](/pdf/ar/jasperreports/product-overview/)
 - [Aspose.PDF لتنسيقات الملفات المدعومة من JasperReports](/pdf/ar/jasperreports/supported-file-formats/)
-- [جولة مميزة Aspose.PDF لـ JasperReports](/pdf/ar/jasperreports/feature-tour/)
+- [جولة مميزة Aspose.PDF for JasperReports](/pdf/ar/jasperreports/feature-tour/)
 - [Aspose.PDF لملاحظات إصدار JasperReports](https://releases.aspose.com/pdf/jassperreport/release-notes/)
-- [قم بتنزيل Aspose.PDF لـ JasperReports](https://releases.aspose.com/pdf/jassperreport/)
+- [قم بتنزيل Aspose.PDF for JasperReports](https://releases.aspose.com/pdf/jassperreport/)
 - [Aspose.PDF لمعرض التقارير النموذجية لـ JasperReports](/pdf/ar/jasperreports/sample-reports-gallery/)
-- [تركيب Aspose.PDF لـ JasperReports](/pdf/ar/jasperreports/installation/)
-- [ترخيص Aspose.PDF لـ JasperReports](/pdf/ar/jasperreports/licensing/)
+- [تركيب Aspose.PDF for JasperReports](/pdf/ar/jasperreports/installation/)
+- [ترخيص Aspose.PDF for JasperReports](/pdf/ar/jasperreports/licensing/)
 - [تقييم Aspose.PDF](/pdf/ar/jasperreports/evaluate-aspose-pdf/)
 - [Aspose.PDF لقيود JasperReports API](/pdf/ar/jasperreports/api-limitations/)
 
