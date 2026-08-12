@@ -18,7 +18,7 @@ Existen algunas limitaciones al utilizar este componente.
 
 ## Información del creador de PDF
 
-Tenga en cuenta que no puede establecer valores en los campos **Aplicación** y **Productor** , porque Aspose Ltd. y Aspose.PDF para JasperReports x.x.x se mostrarán en estos campos. 
+Tenga en cuenta que no puede establecer valores en los campos **Aplicación** y **Productor** , porque Aspose Ltd. y Aspose.PDF for JasperReportsx.x.x se mostrarán en estos campos. 
 
 {{% /alert %}}
 

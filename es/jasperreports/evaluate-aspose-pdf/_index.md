@@ -4,7 +4,7 @@ linktitle: Evaluar Aspose.PDF
 type: docs
 weight: 70
 url: /es/jasperreports/evaluate-aspose-pdf/
-description: Evalúe Aspose.PDF para JasperReports de forma gratuita. Experimente capacidades avanzadas de exportación de PDF antes de comprometerse.
+description: Evalúe Aspose.PDF for JasperReportsde forma gratuita. Experimente capacidades avanzadas de exportación de PDF antes de comprometerse.
 lastmod: "2021-06-05"
 ---
 
@@ -16,11 +16,11 @@ Asegúrese de aprovechar Aspose.PDF gratuito para la evaluación de JasperReport
 
 {{% alert color="primary" %}}
 
-Es la misma descarga tanto para la versión de evaluación como para la versión paga de Aspose.PDF para JasperReports. Simplemente descargue Aspose.PDF para JasperReports desde la página de descarga, instálelo y funcionará en el modo de evaluación de forma predeterminada.
+Es la misma descarga tanto para la versión de evaluación como para la versión paga de Aspose.PDF para JasperReports. Simplemente descargue Aspose.PDF for JasperReportsdesde la página de descarga, instálelo y funcionará en el modo de evaluación de forma predeterminada.
 
-El modo de evaluación inyecta una advertencia de evaluación en los documentos exportados. Cuando haya comprado una licencia, simplemente aplíquela y Aspose.PDF para JasperReports funcionará en el modo de licencia.
+El modo de evaluación inyecta una advertencia de evaluación en los documentos exportados. Cuando haya comprado una licencia, simplemente aplíquela y Aspose.PDF for JasperReportsfuncionará en el modo de licencia.
 
-**Aspose.PDF para JasperReports inyecta una advertencia de evaluación cuando se trabaja en el modo de evaluación.**
+**Aspose.PDF for JasperReportsinyecta una advertencia de evaluación cuando se trabaja en el modo de evaluación.**
 
 ![Evaluar Aspose.PDF](evaluate-aspose-pdf_1.png)
 

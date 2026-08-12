@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Aspose.PDF para JasperReports incluye una serie de proyectos de demostración para ayudarle a comenzar a exportar informes a formatos PDF desde su aplicación. Las demostraciones son demostraciones estándar de JasperReports que se han modificado para demostrar cómo utilizar nuevos exportadores.
+Aspose.PDF for JasperReportsincluye una serie de proyectos de demostración para ayudarle a comenzar a exportar informes a formatos PDF desde su aplicación. Las demostraciones son demostraciones estándar de JasperReports que se han modificado para demostrar cómo utilizar nuevos exportadores.
 
 {{% /alert %}}
 

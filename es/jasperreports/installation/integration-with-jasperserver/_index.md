@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-A continuación se describe la integración de Aspose.PDF para JasperReports con JasperServer.
+A continuación se describe la integración de Aspose.PDF for JasperReportscon JasperServer.
 
 {{% /alert %}}
 
@@ -88,9 +88,9 @@ jasperserver/WEB-INF/Aspose.PDF.JasperReports.lic"/>
 
 {{% alert color="primary" %}}
 
-6. Ejecute JasperServer y abra cualquier informe para verlo. Si los pasos anteriores se realizaron correctamente, verá un ícono para exportar a través de Aspose.PDF para JasperReports en la lista de formatos disponibles.
+6. Ejecute JasperServer y abra cualquier informe para verlo. Si los pasos anteriores se realizaron correctamente, verá un ícono para exportar a través de Aspose.PDF for JasperReportsen la lista de formatos disponibles.
 
-   **Aspose.PDF para JasperReports está integrado**
+   **Aspose.PDF for JasperReportsestá integrado**
 
 ![Integración con JasperServer](integration-with-jasperserver_1.png)
 

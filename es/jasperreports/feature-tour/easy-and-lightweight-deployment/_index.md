@@ -4,15 +4,15 @@ linktitle: Implementación fácil y liviana
 type: docs
 weight: 10
 url: /es/jasperreports/easy-and-lightweight-deployment/
-description: Aprenda cómo implementar Aspose.PDF para JasperReports con facilidad. La configuración mínima garantiza una integración rápida y un rendimiento excelente.
+description: Aprenda cómo implementar Aspose.PDF for JasperReportscon facilidad. La configuración mínima garantiza una integración rápida y un rendimiento excelente.
 lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF para JasperReports es una extensión de exportación para [JasperReports](http://www.jaspersoft.com/jasperreports).
+Aspose.PDF for JasperReportses una extensión de exportación para [JasperReports](http://www.jaspersoft.com/jasperreports).
 
-Aspose.PDF para JasperReports se proporciona como un único archivo JAR y se puede integrar fácilmente con JasperReports y JasperServer.
+Aspose.PDF for JasperReportsse proporciona como un único archivo JAR y se puede integrar fácilmente con JasperReports y JasperServer.
 
 {{% /alert %}}
 

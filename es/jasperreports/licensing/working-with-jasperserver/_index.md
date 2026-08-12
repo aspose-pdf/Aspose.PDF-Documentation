@@ -33,11 +33,11 @@ Nota: Tenga en cuenta que la ruta de instalación no debe contener espacios, por
 
 Exporte cualquier informe a formato PDF y compruebe si el informe contiene un mensaje de evaluación. Si no aparece ningún mensaje de evaluación, entonces la licencia funciona correctamente.
 
-Aspose.PDF para JasperReports inyecta una marca de agua cuando se trabaja en modo de evaluación
+Aspose.PDF for JasperReportsinyecta una marca de agua cuando se trabaja en modo de evaluación
 
 ![Integration with JasperServer_1](working-with-jasperserver_1.png)
 
-Aspose.PDF para JasperReports inyecta una marca de agua cuando se trabaja en modo de evaluación
+Aspose.PDF for JasperReportsinyecta una marca de agua cuando se trabaja en modo de evaluación
 
 ![Integration with JasperServer_2](working-with-jasperserver_2.png)
 

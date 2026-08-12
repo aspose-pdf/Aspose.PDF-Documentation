@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Para usar Aspose.PDF para JasperReports en su aplicación, copie **aspose.pdf.jasperreports.jar** de la carpeta \lib en **Aspose.PDF.JasperReports.zip** al directorio JasperReports\lib o a una carpeta de biblioteca de su aplicación. Después de eso, puede acceder a los exportadores mediante programación.
+Para usar Aspose.PDF for JasperReportsen su aplicación, copie **aspose.pdf.jasperreports.jar** de la carpeta \lib en **Aspose.PDF.JasperReports.zip** al directorio JasperReports\lib o a una carpeta de biblioteca de su aplicación. Después de eso, puede acceder a los exportadores mediante programación.
 
 {{% /alert %}}
 
