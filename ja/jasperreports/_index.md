@@ -5,7 +5,7 @@ second_title: Aspose.PDF for JasperReports
 type: docs
 weight: 120
 url: /ja/jasperreports/
-description: JasperReports 用の Aspose.PDF を発見してください。高度なカスタマイズを使用して、JasperReports から PDF レポートを直接生成します。
+description: Aspose.PDF for JasperReports を発見してください。高度なカスタマイズを使用して、JasperReports から PDF レポートを直接生成します。
 is_root: true
 lastmod: "2026-08-04"
 ---
@@ -26,9 +26,9 @@ Aspose.PDF for JasperReports は、JasperReports および JasperServer から P
 - [Aspose.PDF for JasperReports サポートされるファイル形式](/pdf/ja/jasperreports/supported-file-formats/)
 - [JasperReports の機能ツアー Aspose.PDF](/pdf/ja/jasperreports/feature-tour/)
 - [Aspose.PDF for JasperReports リリース ノート](https://releases.aspose.com/pdf/jassperreport/release-notes/)
-- [JasperReports 用の Aspose.PDF をダウンロード](https://releases.aspose.com/pdf/jassperreport/)
+- [Aspose.PDF for JasperReports をダウンロード](https://releases.aspose.com/pdf/jassperreport/)
 - [Aspose.PDF for JasperReports サンプル レポート ギャラリー](/pdf/ja/jasperreports/sample-reports-gallery/)
-- [JasperReports 用の Aspose.PDF のインストール](/pdf/ja/jasperreports/installation/)
+- [Aspose.PDF for JasperReports のインストール](/pdf/ja/jasperreports/installation/)
 - [JasperReports の Aspose.PDF のライセンス](/pdf/ja/jasperreports/licensing/)
 - [Aspose.PDF を評価する](/pdf/ja/jasperreports/evaluate-aspose-pdf/)
 - [Aspose.PDF for JasperReports API の制限事項](/pdf/ja/jasperreports/api-limitations/)
