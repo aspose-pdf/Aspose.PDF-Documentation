@@ -14,7 +14,7 @@ Aspose.PDF for SharePoint позволяет добавить водяной з�
 
 ## **Текст водяного знака в левом нижнем углу**
 
-![todo:image_alt_text](add-watermark-to-pdf_1.jpg)
+![Add watermark to PDF](add-watermark-to-pdf_1.jpg)
 
 {{% /alert %}}
 
@@ -24,15 +24,15 @@ Aspose.PDF for SharePoint позволяет добавить водяной з�
 
 1. Щелкните **Watermark Settings** во вкладке **Aspose Tools** в диалоговом окне **Library Tools**.
 
-   **Библиотечные инструменты**
+   **Library Tools**
 
-![todo:image_alt_text](add-watermark-to-pdf_2.jpg)
+![Add watermark to PDF](add-watermark-to-pdf_2.jpg)
 
-Настройки водяного знака зависят от списка, поэтому вы можете выбирать разные настройки водяного знака для разных библиотек. На следующем снимке экрана показано диалоговое окно Watermark Settings для библиотеки **Shared Documents**.
+Watermark Settings зависят от списка, поэтому вы можете выбирать разные Watermark Settings для разных библиотек. На следующем снимке экрана показано диалоговое окно Watermark Settings для библиотеки **Shared Documents**.
 
-## **Настройки водяного знака**
+## **Watermark Settings**
 
-![todo:image_alt_text](add-watermark-to-pdf_3.jpg)
+![Add watermark to PDF](add-watermark-to-pdf_3.jpg)
 
 - Выберите **Enable watermarking for**, чтобы включить функцию водяного знака для конкретного списка.
 - **Watermark text** – текст, который будет отображаться на странице в виде водяного знака.
