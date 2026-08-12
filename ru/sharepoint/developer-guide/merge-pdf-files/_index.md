@@ -14,23 +14,23 @@ description: Using the PDF SharePoint API, you can merge multiple PDF files from
 
 {{% /alert %}}
 
-## Объединить PDF-файлы
+## Объедините PDF-файлы
 
-Merge multiple PDF files from SharePoint Document library in a single PDF as following:
+Чтобы объединить несколько PDF-файлов из библиотеки документов SharePoint в один PDF, выполните следующие действия:
 
-1.  Select the PDF files from SharePoint Document library to be merged.
+1. Выберите PDF-файлы из библиотеки документов SharePoint, которые нужно объединить.
 
 ![Selecting PDF files](merge-pdf-files_1.png)
 
-2.  Click Aspose Tools tab in Library Tools.
+2. Перейдите на вкладку **Aspose Tools** в разделе **Library Tools**.
 
 ![Click Aspose Tools](merge-pdf-files_2.png)
 
-3.  Click Merge to PDF option from Library Tools to merge all the selected PDF files to resultant PDF.
+3. Нажмите **Объединить в PDF** в разделе **Library Tools**, чтобы объединить все выбранные PDF-файлы в один итоговый PDF.
 
 ![Merge to PDF](merge-pdf-files_3.png)
 
-4.  Prompt will be shown to download/save the resultant PDF file with appropriate name.
+4. Загрузите или сохраните итоговый PDF-файл с подходящим именем, когда появится соответствующее приглашение.
 
 ![Output](merge-pdf-files_4.png)
 

@@ -59,7 +59,7 @@ A task forms template:
 
 ![Task Form Templates](creating-and-exporting-template_6.png)
 
-### Разработка шаблонов
+### Разрабатывайте шаблоны
 
 A template is an XML file based on Aspose XML PDF. To make a template for a list, place special markers related to the SharePoint target content type field's internal name into the XML PDF file.
 

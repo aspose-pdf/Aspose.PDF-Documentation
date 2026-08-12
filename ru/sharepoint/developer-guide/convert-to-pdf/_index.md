@@ -14,7 +14,7 @@ Aspose.PDF для SharePoint позволяет конвертировать HTM
 
 {{% /alert %}}
 
-## Конвертировать документ в PDF
+## Конвертируйте документ в PDF
 
 {{% alert color="primary" %}}
 

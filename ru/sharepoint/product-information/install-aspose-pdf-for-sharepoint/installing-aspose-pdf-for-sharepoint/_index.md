@@ -57,11 +57,11 @@ Aspose.PDF for SharePoint is downloadable as Aspose.PDF.SharePoint.zip archive.
 
 ![Check Installation Prerequisites](installing-aspose-pdf-for-sharepoint_1.png)
 
-- Отобразить лицензионное соглашение с конечным пользователем. Пользователь должен принять соглашение, чтобы продолжить.
+- Отобразите лицензионное соглашение с конечным пользователем. Пользователь должен принять соглашение, чтобы продолжить.
 
 ![Display License Agreement](installing-aspose-pdf-for-sharepoint_2.png)
 
-- Отобразить диалоговое окно выбора цели развертывания. Пользователь выбирает веб-приложения и семейства веб-сайтов, в которых эта функция должна быть активирована. См. рисунок ниже.
+- Отобразите диалоговое окно выбора цели развертывания. Пользователь выбирает веб-приложения и семейства веб-сайтов, в которых эта функция должна быть активирована. См. рисунок ниже.
 
 ![Display Deployment Target Selection](installing-aspose-pdf-for-sharepoint_3.png)
 
@@ -70,7 +70,7 @@ Aspose.PDF for SharePoint is downloadable as Aspose.PDF.SharePoint.zip archive.
 ![Deploy Feature](installing-aspose-pdf-for-sharepoint_4.png)
 
 - Активируйте эту функцию для выбранных семейств веб-сайтов и настройте их родительские веб-приложения.
-- Отображение списка веб-приложений и семейств веб-сайтов, в которых эта функция была развернута и активирована.
+- Отобразите список веб-приложений и семейств веб-сайтов, в которых эта функция была развернута и активирована.
 
 ![Display Deployed Features](installing-aspose-pdf-for-sharepoint_5.png)
 

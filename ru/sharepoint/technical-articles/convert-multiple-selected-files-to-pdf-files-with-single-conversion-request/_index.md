@@ -14,7 +14,7 @@ description: Библиотека PDF SharePoint позволяет конвер
 
 {{% /alert %}}
 
-## Конвертировать несколько выбранных файлов в PDF
+## Конвертируйте несколько выбранных файлов в PDF
 
 {{% alert color="primary" %}}
 
@@ -24,9 +24,9 @@ description: Библиотека PDF SharePoint позволяет конвер
 
 ![Выберите файлы](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
 
-2. Перейдите на вкладку «Инструменты Aspose» в разделе «Инструменты библиотеки».
+2. Перейдите на вкладку «Aspose Tools» в разделе «Library Tools».
 
-![Нажмите «Инструменты Aspose».](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
+![Нажмите «Aspose Tools».](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
 
 3. Нажмите «Преобразовать в PDF», чтобы преобразовать все выбранные файлы в конечные файлы PDF.
 
