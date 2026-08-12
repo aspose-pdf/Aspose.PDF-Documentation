@@ -10,7 +10,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Esta galería muestra informes en PDF exportados por Aspose.PDF para JasperReports.
+Esta galería muestra informes en PDF exportados por Aspose.PDF for JasperReports.
 
 {{% /alert %}}
 

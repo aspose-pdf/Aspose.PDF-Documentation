@@ -14,7 +14,7 @@ Para usar Aspose.PDF for JasperReportsen su aplicación, copie **aspose.pdf.jasp
 
 {{% /alert %}}
 
-El siguiente ejemplo muestra el código típico necesario para exportar un informe a formato PDF usando Aspose.PDF para JasperReports. Se pueden encontrar más ejemplos en los informes de demostración incluidos en la descarga del producto.
+El siguiente ejemplo muestra el código típico necesario para exportar un informe a formato PDF usando Aspose.PDF for JasperReports. Se pueden encontrar más ejemplos en los informes de demostración incluidos en la descarga del producto.
 
 ```java
 import com.aspose.pdf.jr3_7_0.jasperreports.*;

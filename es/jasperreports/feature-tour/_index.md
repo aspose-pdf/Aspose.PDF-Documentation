@@ -4,7 +4,7 @@ linktitle: Tour de funciones
 type: docs
 weight: 30
 url: /es/jasperreports/feature-tour/
-description: Realice un recorrido por las funciones de Aspose.PDF para JasperReports. Explore herramientas para crear informes PDF visualmente ricos y bien estructurados.
+description: Realice un recorrido por las funciones de Aspose.PDF for JasperReports. Explore herramientas para crear informes PDF visualmente ricos y bien estructurados.
 lastmod: "2021-06-05"
 ---
 

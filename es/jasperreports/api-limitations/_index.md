@@ -4,7 +4,7 @@ linktitle: Limitaciones de la API
 type: docs
 weight: 80
 url: /es/jasperreports/api-limitations/
-description: Comprenda las limitaciones de la API de Aspose.PDF para JasperReports. Encuentre detalles para optimizar la integración con sus informes.
+description: Comprenda las limitaciones de la API de Aspose.PDF for JasperReports. Encuentre detalles para optimizar la integración con sus informes.
 lastmod: "2021-06-05"
 ---
 

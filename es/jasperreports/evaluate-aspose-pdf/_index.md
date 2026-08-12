@@ -16,7 +16,7 @@ Asegúrese de aprovechar Aspose.PDF gratuito para la evaluación de JasperReport
 
 {{% alert color="primary" %}}
 
-Es la misma descarga tanto para la versión de evaluación como para la versión paga de Aspose.PDF para JasperReports. Simplemente descargue Aspose.PDF for JasperReportsdesde la página de descarga, instálelo y funcionará en el modo de evaluación de forma predeterminada.
+Es la misma descarga tanto para la versión de evaluación como para la versión paga de Aspose.PDF for JasperReports. Simplemente descargue Aspose.PDF for JasperReportsdesde la página de descarga, instálelo y funcionará en el modo de evaluación de forma predeterminada.
 
 El modo de evaluación inyecta una advertencia de evaluación en los documentos exportados. Cuando haya comprado una licencia, simplemente aplíquela y Aspose.PDF for JasperReportsfuncionará en el modo de licencia.
 

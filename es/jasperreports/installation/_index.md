@@ -1,10 +1,10 @@
 ﻿---
-title: Instale Aspose.PDF para JasperReports
-linktitle: Instale Aspose.PDF para JasperReports
+title: Instale Aspose.PDF for JasperReports
+linktitle: Instale Aspose.PDF for JasperReports
 type: docs
 weight: 50
 url: /es/jasperreports/installation/
-description: Guía de instalación paso a paso de Aspose.PDF para JasperReports. Comience a crear archivos PDF profesionales desde JasperReports hoy.
+description: Guía de instalación paso a paso de Aspose.PDF for JasperReports. Comience a crear archivos PDF profesionales desde JasperReports hoy.
 lastmod: "2021-06-05"
 ---
 
