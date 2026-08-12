@@ -26,7 +26,7 @@ Aspose.Words для JasperReports доступен бесплатно, неог�
 
 Первые два используются с JasperReports, последний — с JasperServer.
 
-## Вызов setLicense
+## Вызовите setLicense
 
 Этот метод используется с JasperReports.
 

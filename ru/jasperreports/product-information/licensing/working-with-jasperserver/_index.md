@@ -15,7 +15,7 @@ lastmod: "2021-06-05"
 
 {{% /alert %}}
 
-1. Загрузите лицензию на свой компьютер и скопируйте ее в ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF``` folder, where  ```<InstallDir>```, обозначающую каталог установки JasperServer.
+1. Загрузите лицензию на свой компьютер и скопируйте ее в папку ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF```, где ```<InstallDir>``` обозначает каталог установки JasperServer.
 2. Найдите файл ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` и добавьте следующие строки:
 
 ```xml

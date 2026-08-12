@@ -18,9 +18,9 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-1. Добавьте следующие новые свойства экспортера в
+1. Добавьте следующие новые свойства экспортера в файл
 
-**<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file.
+**<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml**.
 
 {{% /alert %}}
 
@@ -42,7 +42,7 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-2. Locate the <util:map id=”exporterConfigMap> element in the 
+2. Найдите элемент `<util:map id="exporterConfigMap">` в файле
 
 **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** и добавьте следующие строки:
 
@@ -68,7 +68,7 @@ lastmod: "2021-06-05"
 
 3. Скопируйте все изображения GIF из папки \lib **Aspose-pdf-jasperreports.zip** в <InstallDir>\apache-tomcat\webapps\jasperserver\images\.
 4. Скопируйте **Aspose-pdf-jasperreports.jar** из папки \lib в **Aspose.PDF.JasperReports.zip** в <InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\lib\.
-5. Добавьте следующие строки в файл **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml** файл.
+5. Добавьте следующие строки в файл **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml**.
 
    Этот компонент может содержать различные параметры конфигурации, предназначенные для настройки экспорта. Например, вы можете использовать функцию сопоставления шрифтов JasperReports или указать расположение файла лицензии Aspose.Cells для JasperReports.
   
