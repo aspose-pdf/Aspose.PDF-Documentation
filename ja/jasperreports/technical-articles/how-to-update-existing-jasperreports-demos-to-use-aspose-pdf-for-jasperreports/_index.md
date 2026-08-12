@@ -92,7 +92,7 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 13. ant javac – テスト アプリケーションの Java ソース ファイルをコンパイルします。
 14. ant コンパイル - XML レポート設計をコンパイルし、.jasper ファイルを生成します。
 15. ant fill – コンパイルされたレポート設計にデータを入力し、.jrprint ファイルを生成します。
-16. ant aspose_ pdf – JasperReports 用の Aspose.PDF を使用して PDF ファイルを生成します。
+16. ant aspose_ pdf – Aspose.PDF for JasperReports を使用して PDF ファイルを生成します。
 17. <InstallDir>\demo\samples\ fonts.ap\build\reports\ フォルダーから結果の PDF (**FontsReport.pdf**) を開きます。
 
 {{% /alert %}}

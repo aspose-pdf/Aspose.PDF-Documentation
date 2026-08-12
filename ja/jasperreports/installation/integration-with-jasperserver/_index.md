@@ -88,9 +88,9 @@ jasperserver/WEB-INF/Aspose.PDF.JasperReports.lic"/>
 
 {{% alert color="primary" %}}
 
-6. JasperServer を実行し、表示するレポートを開いてください。前の手順が適切に実行された場合は、使用可能な形式のリストに、JasperReports 用の Aspose.PDF 経由でエクスポートするためのアイコンが表示されます。
+6. JasperServer を実行し、表示するレポートを開いてください。前の手順が適切に実行された場合は、使用可能な形式のリストに、Aspose.PDF for JasperReports 経由でエクスポートするためのアイコンが表示されます。
 
-   **JasperReports 用の Aspose.PDF が統合されました**
+   **Aspose.PDF for JasperReports が統合されました**
 
 ![Integration with JasperServer](integration-with-jasperserver_1.png)
 

@@ -4,7 +4,7 @@ linktitle: 技術記事
 type: docs
 weight: 90
 url: /ja/jasperreports/technical-articles/
-description: JasperReports 用の Aspose.PDF に関する技術記事をお読みください。高度な洞察を取得して、JasperReports から PDF への変換を強化します。
+description: Aspose.PDF for JasperReports に関する技術記事をお読みください。高度な洞察を取得して、JasperReports から PDF への変換を強化します。
 lastmod: "2021-06-05"
 ---
 

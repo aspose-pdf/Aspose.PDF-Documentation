@@ -1,6 +1,6 @@
 ﻿---
-title: JasperReports 用の Aspose.PDF をインストールする
-linktitle: JasperReports 用の Aspose.PDF をインストールする
+title: Aspose.PDF for JasperReports をインストールする
+linktitle: Aspose.PDF for JasperReports をインストールする
 type: docs
 weight: 50
 url: /ja/jasperreports/installation/
