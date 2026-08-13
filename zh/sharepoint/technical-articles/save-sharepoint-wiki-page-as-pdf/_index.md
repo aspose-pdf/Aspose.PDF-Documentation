@@ -28,7 +28,7 @@ description: SharePoint PDF 库可用于将 SharePoint Wiki 页面导出为 PDF�
 
 显示导出的 Wiki 页面的 PDF。
 
-![匯出的維基頁面](save-sharepoint-wiki-page-as-pdf_2.png)
+![导出的维基百科页面](save-sharepoint-wiki-page-as-pdf_2.png)
 
 {{% /alert %}}
 
