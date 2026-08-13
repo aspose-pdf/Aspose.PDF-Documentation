@@ -4,7 +4,7 @@ linktitle: Création et exportation d'un modèle
 type: docs
 weight: 10
 url: /fr/sharepoint/creating-and-exporting-template/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Vous pouvez créer et exporter des modèles au format PDF dans SharePoint à l'aide de l'API PDF SharePoint.
 ---
 

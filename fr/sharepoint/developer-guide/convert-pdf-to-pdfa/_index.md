@@ -4,7 +4,7 @@ linktitle: Convertir un PDF en PDFA
 type: docs
 weight: 70
 url: /fr/sharepoint/convert-pdf-to-pdfa/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: L'API PDF SharePoint permet de convertir des fichiers PDF au format PDFA. Actuellement, elle prend uniquement en charge la norme PDF/A-1b.
 ---
 

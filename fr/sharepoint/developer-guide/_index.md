@@ -4,7 +4,7 @@ linktitle: Guide du développeur
 type: docs
 weight: 20
 url: /fr/sharepoint/developer-guide/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Le guide du développeur de l'API PDF SharePoint couvre des sujets tels que l'exportation d'éléments au format PDF, l'ajout d'un filigrane, la conversion de différents formats en PDF et la fusion de fichiers PDF.
 ---
 

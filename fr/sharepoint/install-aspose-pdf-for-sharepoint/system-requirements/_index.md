@@ -4,7 +4,7 @@ linktitle: Configuration système requise
 type: docs
 weight: 10
 url: /fr/sharepoint/system-requirements/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: L'API PDF SharePoint a des exigences en matière de serveur et de client, ainsi que la nécessité d'un ordinateur exécutant Microsoft SharePoint Server.
 ---
 

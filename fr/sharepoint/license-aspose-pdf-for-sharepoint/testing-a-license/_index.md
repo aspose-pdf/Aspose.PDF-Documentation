@@ -4,7 +4,7 @@ linktitle: Tester une licence
 type: docs
 weight: 20
 url: /fr/sharepoint/testing-a-license/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Pour tester qu'une licence pour l'API PDF SharePoint a été installée avec succès, convertissez n'importe quel document au format souhaité et il doit être généré sans aucun avertissement d'évaluation.
 ---
 

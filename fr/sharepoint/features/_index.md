@@ -4,7 +4,7 @@ linktitle: Caractéristiques
 type: docs
 weight: 30
 url: /fr/sharepoint/features/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Les fonctionnalités de l'API PDF SharePoint incluent l'exportation au format PDF et une assistance technique gratuite.
 ---
 

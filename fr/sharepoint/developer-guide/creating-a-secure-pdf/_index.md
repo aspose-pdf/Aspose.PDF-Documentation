@@ -4,7 +4,7 @@ linktitle: Créer un PDF sécurisé
 type: docs
 weight: 60
 url: /fr/sharepoint/creating-a-secure-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: À l'aide de l'API PDF SharePoint, vous pouvez produire des PDF sécurisés et cryptés et spécifier leurs mots de passe dans SharePoint.
 ---
 

@@ -4,7 +4,7 @@ linktitle: Évaluer
 type: docs
 weight: 50
 url: /fr/sharepoint/evaluate-aspose-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Profitez de l'évaluation gratuite de l'API PDF SharePoint car elle n'a pas de limite de temps et une assistance technique gratuite est également fournie aux utilisateurs d'évaluation.
 ---
 

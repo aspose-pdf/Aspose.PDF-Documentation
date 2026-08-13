@@ -4,7 +4,7 @@ linktitle: Ajouter un code-barres à un fichier PDF
 type: docs
 weight: 40
 url: /fr/sharepoint/add-barcode-to-a-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: L'API PDF SharePoint vous permet d'ajouter un code-barres à un document PDF, comme indiqué dans l'image ci-dessous.
 ---
 

@@ -4,7 +4,7 @@ linktitle: Plus de détails d'installation
 type: docs
 weight: 30
 url: /fr/sharepoint/more-installation-details/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Plus d'informations sur l'installation de l'API PDF SharePoint explique comment la déployer, l'activer et la désactiver sur les collections de sites.
 ---
 

@@ -4,7 +4,7 @@ linktitle: Articles techniques
 type: docs
 weight: 30
 url: /fr/sharepoint/technical-articles/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Les articles techniques de l'API PDF SharePoint couvrent des sujets tels que la création, l'exportation et l'enregistrement d'une page Wiki SharePoint et d'un fichier XML au format PDF.
 ---
 

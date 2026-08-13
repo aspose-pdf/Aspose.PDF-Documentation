@@ -4,7 +4,7 @@ linktitle: Add Watermark to PDF
 type: docs
 weight: 20
 url: /fr/sharepoint/add-watermark-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: L'API PDF SharePoint vous permet d'ajouter un filigrane à un document PDF ajouté à la bibliothèque.
 ---
 

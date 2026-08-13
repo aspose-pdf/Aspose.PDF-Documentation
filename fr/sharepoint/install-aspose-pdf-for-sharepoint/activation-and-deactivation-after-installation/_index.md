@@ -4,7 +4,7 @@ linktitle: Activation et désactivation après l'installation
 type: docs
 weight: 40
 url: /fr/sharepoint/activation-and-deactivation-after-installation/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Après l'installation de l'API PDF SharePoint, vous pouvez utiliser le menu Actions du site sur le site Web racine d'une collection de sites pour l'activer et la désactiver.
 ---
 

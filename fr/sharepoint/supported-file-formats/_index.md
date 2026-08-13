@@ -4,7 +4,7 @@ linktitle: Formats de fichiers pris en charge
 type: docs
 weight: 20
 url: /fr/sharepoint/supported-file-formats/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: L'API PDF SharePoint peut charger et enregistrer des formats de fichiers incluant PDF et PDF/A.
 ---
 
