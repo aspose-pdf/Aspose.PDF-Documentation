@@ -1,4 +1,0 @@
-interface:
-  display_name: "Front Matter SEO"
-  short_description: "Analyze docs front matter and add missing SEO fields"
-  default_prompt: "Use $frontmatter-seo-enricher to inspect Markdown front matter and add missing AlternativeHeadline, Abstract, and TechArticle fields."
