@@ -4,7 +4,7 @@ linktitle: احفظ صفحة SharePoint Wiki بصيغة PDF
 type: docs
 weight: 20
 url: /ar/sharepoint/save-sharepoint-wiki-page-as-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يمكن استخدام مكتبة SharePoint PDF لتصدير صفحات SharePoint Wiki إلى PDF.
 ---
 

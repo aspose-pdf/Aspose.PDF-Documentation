@@ -4,7 +4,7 @@ linktitle: رخصة
 type: docs
 weight: 60
 url: /ar/sharepoint/license-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: تعرف على كيفية تثبيت ترخيص PDF SharePoint API واختباره وإلغاء تثبيته.
 ---
 

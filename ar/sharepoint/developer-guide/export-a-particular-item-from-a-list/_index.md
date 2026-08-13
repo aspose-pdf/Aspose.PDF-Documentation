@@ -4,7 +4,7 @@ linktitle: تصدير عنصر معين من القائمة
 type: docs
 weight: 10
 url: /ar/sharepoint/export-a-particular-item-from-a-list/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يتيح لك PDF SharePoint API تحويل عدة مستندات، أو واحدة تلو الأخرى إلى PDF كما هو موضح في هذه المقالة.
 ---
 

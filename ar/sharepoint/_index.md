@@ -6,7 +6,7 @@ type: docs
 weight: 110
 url: /ar/sharepoint/
 is_root: true
-lastmod: "2021-06-01"
+lastmod: "2026-08-13"
 description: يعد PDF SharePoint حلاً يسمح للمستخدمين بتصدير القوائم وعناصر القائمة وصفحات SharePoint Wiki إلى تنسيق ملف PDF.
 ---
 

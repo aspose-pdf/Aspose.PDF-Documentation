@@ -4,7 +4,7 @@ linktitle: تحويل قوات الدفاع الشعبي إلى HTML
 type: docs
 weight: 80
 url: /ar/sharepoint/convert-pdf-to-html/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: باستخدام PDF SharePoint API، يمكنك تحويل مستند PDF من مكتبة مستندات SharePoint إلى تنسيق HTML.
 ---
 

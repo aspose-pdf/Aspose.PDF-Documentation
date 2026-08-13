@@ -4,7 +4,7 @@ linktitle: تصدير قائمة المهام إلى PDF باستخدام الب
 type: docs
 weight: 40
 url: /ar/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يمكن لـ PDF SharePoint API تصدير قائمة المهام إلى PDF باستخدام الرمز الشريطي باستخدام PDF Template Engine.
 ---
 

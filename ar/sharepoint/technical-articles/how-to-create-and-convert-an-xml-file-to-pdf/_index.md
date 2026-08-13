@@ -4,7 +4,7 @@ linktitle: كيفية إنشاء وتحويل ملف XML إلى PDF
 type: docs
 weight: 30
 url: /ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API قادر على إنشاء وتحويل ملفات XML إلى تنسيق PDF.
 ---
 

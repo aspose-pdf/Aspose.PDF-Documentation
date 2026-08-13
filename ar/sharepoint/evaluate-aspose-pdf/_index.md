@@ -4,7 +4,7 @@ linktitle: يقيم
 type: docs
 weight: 50
 url: /ar/sharepoint/evaluate-aspose-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: استفد من التقييم المجاني لـ PDF SharePoint API لأنه ليس له حد زمني، ويتم توفير الدعم الفني المجاني لمستخدمي التقييم أيضًا.
 ---
 

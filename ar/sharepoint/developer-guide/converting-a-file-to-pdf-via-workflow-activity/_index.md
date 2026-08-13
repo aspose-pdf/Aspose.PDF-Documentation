@@ -4,7 +4,7 @@ linktitle: تحويل ملف إلى PDF عبر نشاط سير العمل
 type: docs
 weight: 50
 url: /ar/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يمكن استخدام PDF SharePoint API في سير عمل SharePoint الذي يحول مستندًا إلى PDF.
 ---
 

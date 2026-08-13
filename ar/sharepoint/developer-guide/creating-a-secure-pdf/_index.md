@@ -4,7 +4,7 @@ linktitle: إنشاء ملف PDF آمن
 type: docs
 weight: 60
 url: /ar/sharepoint/creating-a-secure-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: باستخدام PDF SharePoint API، يمكنك إنتاج ملفات PDF آمنة ومشفرة وتحديد كلمات المرور الخاصة بها في SharePoint.
 ---
 

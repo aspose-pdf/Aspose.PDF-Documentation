@@ -4,7 +4,7 @@ linktitle: المقالات الفنية
 type: docs
 weight: 30
 url: /ar/sharepoint/technical-articles/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: تغطي المقالات الفنية الخاصة بـ PDF SharePoint API موضوعات مثل إنشاء وتصدير وحفظ صفحة SharePoint Wiki وملف XML إلى PDF.
 ---
 

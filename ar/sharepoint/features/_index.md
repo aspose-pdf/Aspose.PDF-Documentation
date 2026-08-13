@@ -4,7 +4,7 @@ linktitle: سمات
 type: docs
 weight: 30
 url: /ar/sharepoint/features/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: تتضمن ميزات PDF SharePoint API التصدير إلى PDF والدعم الفني المجاني.
 ---
 

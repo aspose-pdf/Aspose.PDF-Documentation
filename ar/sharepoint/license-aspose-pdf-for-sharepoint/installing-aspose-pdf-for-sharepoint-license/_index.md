@@ -4,7 +4,7 @@ linktitle: تثبيت Aspose.PDF لترخيص SharePoint
 type: docs
 weight: 10
 url: /ar/sharepoint/installing-aspose-pdf-for-sharepoint-license/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: بمجرد أن تصبح راضيًا عن تقييمك، يمكنك شراء ترخيص لـ PDF SharePoint API واتباع تعليمات التثبيت لتطبيقه.
 ---
 

@@ -4,7 +4,7 @@ linktitle: تصدير إلى PDF
 type: docs
 weight: 10
 url: /ar/sharepoint/export-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يمكن لـ PDF SharePoint API تصدير القوائم وعناصر القائمة وصفحات SharePoint Wiki من مكتبات SharePoint إلى تنسيق PDF.
 ---
 

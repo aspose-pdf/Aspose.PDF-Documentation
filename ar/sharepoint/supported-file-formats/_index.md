@@ -4,7 +4,7 @@ linktitle: تنسيقات الملفات المدعومة
 type: docs
 weight: 20
 url: /ar/sharepoint/supported-file-formats/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يمكن لـ PDF SharePoint API تحميل وحفظ تنسيقات الملفات التي تتضمن PDF وPDF/A.
 ---
 

@@ -4,7 +4,7 @@ linktitle: تثبيت Aspose.PDF for SharePoint
 type: docs
 weight: 20
 url: /ar/sharepoint/installing-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يتم حزم PDF SharePoint API كحل SharePoint لتبسيط نشر مزرعة الخوادم، والسحب، والتنشيط، وإلغاء التنشيط.
 ---
 

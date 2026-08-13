@@ -4,7 +4,7 @@ linktitle: تحويل إلى قوات الدفاع الشعبي
 type: docs
 weight: 30
 url: /ar/sharepoint/convert-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يسمح PDF SharePoint API بتحويل ملفات HTML والملفات النصية والصور (JPG وPNG وGIF وTIFF وBMP) إلى تنسيق PDF.
 ---
 

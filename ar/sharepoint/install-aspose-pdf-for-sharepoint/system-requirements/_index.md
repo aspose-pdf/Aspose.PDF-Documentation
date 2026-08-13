@@ -4,7 +4,7 @@ linktitle: متطلبات النظام
 type: docs
 weight: 10
 url: /ar/sharepoint/system-requirements/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يحتوي PDF SharePoint API على متطلبات الخادم والعميل، بالإضافة إلى ضرورة وجود جهاز كمبيوتر يقوم بتشغيل Microsoft SharePoint Server.
 ---
 

@@ -4,7 +4,7 @@ linktitle: قم بتحويل ملفات محددة متعددة إلى ملفا�
 type: docs
 weight: 50
 url: /ar/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: تمكنك مكتبة PDF SharePoint من تحويل عدة ملفات محددة إلى ملفات PDF بعملية تحويل واحدة.
 ---
 

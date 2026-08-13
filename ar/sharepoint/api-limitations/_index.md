@@ -4,7 +4,7 @@ linktitle: قيود واجهة برمجة التطبيقات
 type: docs
 weight: 70
 url: /ar/sharepoint/api-limitations/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: تشرح المقالة بعض قيود PDF SharePoint API.
 ---
 

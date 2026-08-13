@@ -4,7 +4,7 @@ linktitle: دعم فني مجاني على مستوى عالمي
 type: docs
 weight: 20
 url: /ar/sharepoint/world-class-free-technical-support/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يوفر PDF SharePoint API دعمًا فنيًا مجانيًا وغير محدود من خلال المنتديات والمدونات والدعم ذي الأولوية.
 ---
 

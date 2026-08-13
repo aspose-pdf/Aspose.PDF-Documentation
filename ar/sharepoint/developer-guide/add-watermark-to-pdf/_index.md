@@ -4,7 +4,7 @@ linktitle: إضافة علامة مائية إلى PDF
 type: docs
 weight: 20
 url: /ar/sharepoint/add-watermark-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يتيح لك PDF SharePoint API إضافة علامة مائية إلى مستندات PDF المضافة إلى المكتبة.
 ---
 

@@ -4,7 +4,7 @@ linktitle: إلغاء تثبيت Aspose.PDF for SharePoint
 type: docs
 weight: 50
 url: /ar/sharepoint/uninstalling-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: ما عليك سوى تشغيل تطبيق الإعداد لإزالة PDF SharePoint API، وسيقوم بإلغاء تثبيته وإلغاء تنشيطه لجميع مجموعات الموقع.
 ---
 

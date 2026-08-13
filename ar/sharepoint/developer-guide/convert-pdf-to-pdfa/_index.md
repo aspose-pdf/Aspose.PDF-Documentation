@@ -4,7 +4,7 @@ linktitle: تحويل قوات الدفاع الشعبي إلى PDFA
 type: docs
 weight: 70
 url: /ar/sharepoint/convert-pdf-to-pdfa/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: باستخدام PDF SharePoint API، يمكنك تحويل PDF إلى تنسيق PDFA. وهو يدعم حاليًا معيار PDF/A-1b فقط.
 ---
 

@@ -4,7 +4,7 @@ linktitle: دمج ملفات PDF
 type: docs
 weight: 90
 url: /ar/sharepoint/merge-pdf-files/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: باستخدام PDF SharePoint API، يمكنك دمج ملفات PDF متعددة من مكتبة مستندات SharePoint في ملف PDF واحد.
 ---
 

@@ -4,7 +4,7 @@ linktitle: قم بتثبيت شيربوينت
 type: docs
 weight: 40
 url: /ar/sharepoint/install-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يغطي قسم تثبيت PDF SharePoint API الموضوعات المتعلقة بمتطلبات النظام والتثبيت في SharePoint Server والتنشيط وإلغاء التنشيط وإلغاء تثبيت المنتج.
 ---
 

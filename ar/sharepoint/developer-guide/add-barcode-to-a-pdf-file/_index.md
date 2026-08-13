@@ -4,7 +4,7 @@ linktitle: إضافة الباركود إلى ملف PDF
 type: docs
 weight: 40
 url: /ar/sharepoint/add-barcode-to-a-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يتيح لك PDF SharePoint API إضافة رمز شريطي إلى مستند PDF كما هو موضح في الصورة أدناه.
 ---
 

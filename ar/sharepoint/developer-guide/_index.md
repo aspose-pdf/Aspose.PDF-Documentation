@@ -4,7 +4,7 @@ linktitle: دليل المطور
 type: docs
 weight: 20
 url: /ar/sharepoint/developer-guide/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يغطي دليل مطور PDF SharePoint API موضوعات مثل تصدير العناصر إلى PDF وإضافة علامة مائية وتحويل تنسيقات مختلفة إلى PDF ودمج ملفات PDF.
 ---
 

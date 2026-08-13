@@ -4,7 +4,7 @@ linktitle: مزيد من تفاصيل التثبيت
 type: docs
 weight: 30
 url: /ar/sharepoint/more-installation-details/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: مزيد من المعلومات حول تثبيت PDF SharePoint API يشرح كيفية نشره وتنشيطه وإلغاء تنشيطه على مجموعات الموقع.
 ---
 

@@ -4,7 +4,7 @@ linktitle: نظرة عامة على المنتج
 type: docs
 weight: 10
 url: /ar/sharepoint/product-overview/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: يتيح PDF SharePoint API لـ Microsoft SharePoint Server للمستخدمين تصدير القوائم وعناصر القائمة وصفحات SharePoint Wiki إلى تنسيق ملف PDF.
 ---
 
