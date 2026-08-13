@@ -6,7 +6,7 @@ type: docs
 weight: 110
 url: /zh/sharepoint/
 is_root: true
-lastmod: "2021-06-01"
+lastmod: "2026-08-13"
 description: PDF SharePoint 是一个允许用户将列表、列表项和 SharePoint Wiki 页面导出为 PDF 文件格式的解决方案。
 ---
 
