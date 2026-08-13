@@ -4,7 +4,7 @@ linktitle: 安装 Aspose.PDF for SharePoint
 type: docs
 weight: 20
 url: /zh/sharepoint/installing-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 打包为 SharePoint 解决方案，以简化服务器场部署、撤销、激活和停用。
 ---
 

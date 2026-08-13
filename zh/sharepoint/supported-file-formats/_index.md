@@ -4,7 +4,7 @@ linktitle: 支持的文件格式
 type: docs
 weight: 20
 url: /zh/sharepoint/supported-file-formats/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 可以加载和保存包括 PDF 和 PDF/A 在内的文件格式。
 ---
 

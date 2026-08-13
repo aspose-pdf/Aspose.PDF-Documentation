@@ -4,7 +4,7 @@ linktitle: 卸载 Aspose.PDF for SharePoint
 type: docs
 weight: 50
 url: /zh/sharepoint/uninstalling-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 只需运行安装应用程序即可删除 PDF SharePoint API，它将卸载并停用所有网站集。
 ---
 

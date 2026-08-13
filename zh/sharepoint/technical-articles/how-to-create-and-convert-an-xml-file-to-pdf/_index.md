@@ -4,7 +4,7 @@ linktitle: 如何创建 XML 文件并将其转换为 PDF
 type: docs
 weight: 30
 url: /zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 能够创建 XML 文件并将其转换为 PDF 格式。
 ---
 

@@ -4,7 +4,7 @@ linktitle: 将条形码添加到 PDF 文件
 type: docs
 weight: 40
 url: /zh/sharepoint/add-barcode-to-a-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 允许您将条形码添加到 PDF 文档，如下图所示。
 ---
 

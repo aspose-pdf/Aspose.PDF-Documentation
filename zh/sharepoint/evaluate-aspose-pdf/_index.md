@@ -4,7 +4,7 @@ linktitle: 评价
 type: docs
 weight: 50
 url: /zh/sharepoint/evaluate-aspose-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 利用 PDF SharePoint API 的免费评估，因为它没有时间限制，并且还为评估用户提供免费的技术支持。
 ---
 

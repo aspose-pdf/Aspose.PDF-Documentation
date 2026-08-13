@@ -4,7 +4,7 @@ linktitle: 开发者指南
 type: docs
 weight: 20
 url: /zh/sharepoint/developer-guide/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 开发人员指南涵盖了将项目导出为 PDF、添加水印、将不同格式转换为 PDF 以及合并 PDF 文件等主题。
 ---
 

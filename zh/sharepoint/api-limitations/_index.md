@@ -4,7 +4,7 @@ linktitle: API 限制
 type: docs
 weight: 70
 url: /zh/sharepoint/api-limitations/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 本文解释了 PDF SharePoint API 的一些限制。
 ---
 

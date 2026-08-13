@@ -4,7 +4,7 @@ linktitle: 从列表中导出特定项目
 type: docs
 weight: 10
 url: /zh/sharepoint/export-a-particular-item-from-a-list/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 允许您将多个文档或一次将一个文档转换为 PDF，如本文所示。
 ---
 

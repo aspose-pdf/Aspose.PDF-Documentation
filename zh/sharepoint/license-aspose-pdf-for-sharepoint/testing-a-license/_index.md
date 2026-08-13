@@ -4,7 +4,7 @@ linktitle: 测试许可证
 type: docs
 weight: 20
 url: /zh/sharepoint/testing-a-license/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 要测试 PDF SharePoint API 的许可证是否已成功安装，请将任何文档转换为所需的格式，并且生成的文档应该没有任何评估警告。
 ---
 

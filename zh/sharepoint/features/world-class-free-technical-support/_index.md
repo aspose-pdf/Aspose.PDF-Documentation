@@ -4,7 +4,7 @@ linktitle: 世界一流的免费技术支持
 type: docs
 weight: 20
 url: /zh/sharepoint/world-class-free-technical-support/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 通过其论坛、博客和优先支持提供免费且无限制的技术支持。
 ---
 

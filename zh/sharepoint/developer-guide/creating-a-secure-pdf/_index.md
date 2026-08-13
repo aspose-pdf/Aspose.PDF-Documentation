@@ -4,7 +4,7 @@ linktitle: 创建安全的 PDF
 type: docs
 weight: 60
 url: /zh/sharepoint/creating-a-secure-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 使用 PDF SharePoint API，您可以生成安全、加密的 PDF 并在 SharePoint 中指定其密码。
 ---
 

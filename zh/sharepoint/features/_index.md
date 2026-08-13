@@ -4,7 +4,7 @@ linktitle: 特征
 type: docs
 weight: 30
 url: /zh/sharepoint/features/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 功能包括导出为 PDF 和免费技术支持。
 ---
 

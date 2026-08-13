@@ -4,7 +4,7 @@ linktitle: 使用 PDF 模板引擎将任务列表导出为带有条形码的 PDF
 type: docs
 weight: 40
 url: /zh/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 可以使用 PDF 模板引擎将任务列表导出为带有条形码的 PDF。
 ---
 

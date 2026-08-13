@@ -4,7 +4,7 @@ linktitle: 将 PDF 转换为 PDFA
 type: docs
 weight: 70
 url: /zh/sharepoint/convert-pdf-to-pdfa/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 使用 PDF SharePoint API，您可以将 PDF 转换为 PDFA 格式。目前仅支持 PDF/A-1b 标准。
 ---
 

@@ -4,7 +4,7 @@ linktitle: 将 PDF 转换为 HTML
 type: docs
 weight: 80
 url: /zh/sharepoint/convert-pdf-to-html/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 使用 PDF SharePoint API，您可以将 SharePoint 文档库中的 PDF 文档转换为 HTML 格式。
 ---
 
@@ -25,4 +25,3 @@ Aspose.PDF for SharePoint 支持将 SharePoint 文档库中的 PDF 文档转换�
 2. 下载生成的 HTML 文件并将其保存到磁盘。
 
 ![將 PDF 轉換為 HTML - 範例 2](convert-pdf-to-html_2.png)
-

@@ -4,7 +4,7 @@ linktitle: 执照
 type: docs
 weight: 60
 url: /zh/sharepoint/license-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 了解 PDF SharePoint API 许可证的安装、测试和卸载。
 ---
 

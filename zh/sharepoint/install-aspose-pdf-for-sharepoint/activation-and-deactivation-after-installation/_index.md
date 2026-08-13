@@ -4,7 +4,7 @@ linktitle: 安装后激活和停用
 type: docs
 weight: 40
 url: /zh/sharepoint/activation-and-deactivation-after-installation/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 安装 PDF SharePoint API 后，您可以使用网站集根网站上的“网站操作”菜单来激活和停用它。
 ---
 

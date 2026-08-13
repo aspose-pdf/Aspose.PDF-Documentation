@@ -4,7 +4,7 @@ linktitle: 通过单个转换请求将多个选定文件转换为 PDF 文件
 type: docs
 weight: 50
 url: /zh/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint 库使您能够通过一次转换操作将多个选定的文件转换为 PDF 文件。
 ---
 

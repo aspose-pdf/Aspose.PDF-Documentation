@@ -4,7 +4,7 @@ linktitle: 技术文章
 type: docs
 weight: 30
 url: /zh/sharepoint/technical-articles/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 的技术文章涵盖了创建、导出 SharePoint Wiki 页面和 XML 文件以及将其保存为 PDF 等主题。
 ---
 

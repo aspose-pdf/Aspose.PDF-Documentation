@@ -4,7 +4,7 @@ linktitle: 更多安装细节
 type: docs
 weight: 30
 url: /zh/sharepoint/more-installation-details/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 有关安装 PDF SharePoint API 的更多信息解释了如何在网站集上部署、激活和停用它。
 ---
 

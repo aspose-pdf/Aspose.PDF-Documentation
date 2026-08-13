@@ -4,7 +4,7 @@ linktitle: 合并 PDF 文件
 type: docs
 weight: 90
 url: /zh/sharepoint/merge-pdf-files/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: 使用 PDF SharePoint API，您可以将 SharePoint 文档库中的多个 PDF 文件合并为一个 PDF。
 ---
 

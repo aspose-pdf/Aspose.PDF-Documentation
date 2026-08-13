@@ -4,7 +4,7 @@ linktitle: 添加水印到 PDF
 type: docs
 weight: 20
 url: /zh/sharepoint/add-watermark-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API 允许您向添加到库的 PDF 文档添加水印。
 ---
 

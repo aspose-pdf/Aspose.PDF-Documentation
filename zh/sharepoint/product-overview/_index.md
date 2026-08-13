@@ -4,7 +4,7 @@ linktitle: 产品概述
 type: docs
 weight: 10
 url: /zh/sharepoint/product-overview/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Microsoft SharePoint Server 的 PDF SharePoint API 允许用户将列表、列表项和 SharePoint Wiki 页面导出为 PDF 文件格式。
 ---
 
