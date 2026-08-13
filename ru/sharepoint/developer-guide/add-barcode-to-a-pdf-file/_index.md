@@ -1,10 +1,10 @@
-﻿---
+---
 title: Добавить штрих-код в PDF-файл в SharePoint
 linktitle: Добавить штрих-код в PDF-файл
 type: docs
 weight: 40
 url: /ru/sharepoint/add-barcode-to-a-pdf-file/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API позволяет добавлять штрих-код в PDF-документ, как показано на изображении ниже.
 ---
 

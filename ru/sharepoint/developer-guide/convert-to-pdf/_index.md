@@ -1,10 +1,10 @@
-﻿---
+---
 title: Преобразование HTML, текста и изображений в PDF в SharePoint
 linktitle: Конвертировать в PDF
 type: docs
 weight: 30
 url: /ru/sharepoint/convert-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API позволяет конвертировать HTML-файлы, текстовые файлы и изображения (JPG, PNG, GIF, TIFF, BMP) в формат PDF.
 ---
 

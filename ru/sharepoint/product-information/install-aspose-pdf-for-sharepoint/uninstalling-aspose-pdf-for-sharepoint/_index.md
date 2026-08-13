@@ -1,10 +1,10 @@
-﻿---
+---
 title: Удаление Aspose.PDF для SharePoint
 linktitle: Удаление Aspose.PDF для SharePoint
 type: docs
 weight: 50
 url: /ru/sharepoint/uninstalling-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Просто запустите приложение установки, чтобы удалить PDF SharePoint API, и оно удалит и деактивирует его для всех семейств веб-сайтов.
 ---
 

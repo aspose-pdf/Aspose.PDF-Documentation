@@ -1,10 +1,10 @@
-﻿---
+---
 title: Преобразование PDF в PDFA в SharePoint
 linktitle: Конвертировать PDF в PDFA
 type: docs
 weight: 70
 url: /ru/sharepoint/convert-pdf-to-pdfa/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Используя PDF SharePoint API, вы можете конвертировать PDF в формат PDFA. В настоящее время он поддерживает только стандарт PDF/A-1b.
 ---
 

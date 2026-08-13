@@ -1,10 +1,10 @@
-﻿---
+---
 title: Технические статьи — PDF-библиотека SharePoint
 linktitle: Технические статьи
 type: docs
 weight: 30
 url: /ru/sharepoint/technical-articles/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Технические статьи PDF SharePoint API охватывают такие темы, как создание, экспорт и сохранение вики-страницы SharePoint и XML-файла в формате PDF.
 ---
 

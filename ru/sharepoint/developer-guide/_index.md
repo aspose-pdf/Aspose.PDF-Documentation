@@ -1,10 +1,10 @@
-﻿---
+---
 title: Руководство разработчика — PDF-файл SharePoint API
 linktitle: Руководство разработчика
 type: docs
 weight: 20
 url: /ru/sharepoint/developer-guide/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Руководство разработчика PDF SharePoint API охватывает такие темы, как экспорт элементов в PDF, добавление водяных знаков, преобразование различных форматов в PDF и объединение PDF-файлов.
 ---
 

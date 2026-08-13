@@ -1,4 +1,4 @@
-﻿---
+---
 title: Документация
 linktitle: Aspose.PDF для SharePoint
 second_title: Aspose.PDF for SharePoint
@@ -6,7 +6,7 @@ type: docs
 weight: 110
 url: /ru/sharepoint/
 is_root: true
-lastmod: "2021-06-01"
+lastmod: "2026-08-13"
 description: PDF SharePoint — это решение, которое позволяет пользователям экспортировать списки, элементы списков и вики-страницы SharePoint в формат файла PDF.
 ---
 

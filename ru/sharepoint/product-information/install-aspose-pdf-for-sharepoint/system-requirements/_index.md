@@ -1,10 +1,10 @@
-﻿---
+---
 title: Системные требования
 linktitle: Системные требования
 type: docs
 weight: 10
 url: /ru/sharepoint/system-requirements/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API предъявляет требования к серверу и клиенту, а также необходимость наличия компьютера под управлением Microsoft SharePoint Server.
 ---
 

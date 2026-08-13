@@ -1,10 +1,10 @@
-﻿---
+---
 title: Создайте безопасный PDF-файл в SharePoint
 linktitle: Создание безопасного PDF-файла
 type: docs
 weight: 60
 url: /ru/sharepoint/creating-a-secure-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Используя PDF SharePoint API, вы можете создавать безопасные зашифрованные PDF-файлы и указывать их пароли в SharePoint.
 ---
 

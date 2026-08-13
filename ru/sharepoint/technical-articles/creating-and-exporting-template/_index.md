@@ -1,10 +1,10 @@
-﻿---
+---
 title: Creating and Exporting Template
 linktitle: Создание и экспорт шаблона
 type: docs
 weight: 10
 url: /ru/sharepoint/creating-and-exporting-template/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Вы можете создавать и экспортировать шаблоны в PDF в SharePoint с помощью PDF SharePoint API.
 ---
 

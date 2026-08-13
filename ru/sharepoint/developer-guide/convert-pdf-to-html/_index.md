@@ -1,10 +1,10 @@
-﻿---
+---
 title: Преобразование PDF в HTML в SharePoint
 linktitle: Конвертировать PDF в HTML
 type: docs
 weight: 80
 url: /ru/sharepoint/convert-pdf-to-html/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Используя PDF SharePoint API, вы можете конвертировать PDF-документ из библиотеки документов SharePoint в формат HTML.
 ---
 

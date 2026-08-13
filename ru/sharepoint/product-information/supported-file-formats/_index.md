@@ -1,10 +1,10 @@
-﻿---
+---
 title: Поддерживаемые форматы файлов
 linktitle: Поддерживаемые форматы файлов
 type: docs
 weight: 20
 url: /ru/sharepoint/supported-file-formats/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API может загружать и сохранять форматы файлов, включая PDF и PDF/A.
 ---
 

@@ -1,10 +1,10 @@
-﻿---
+---
 title: Как создать и преобразовать XML-файл в PDF
 linktitle: Как создать и преобразовать XML-файл в PDF
 type: docs
 weight: 30
 url: /ru/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API способен создавать и преобразовывать XML-файлы в формат PDF.
 ---
 

@@ -1,10 +1,10 @@
-﻿---
+---
 title: Обзор продукта
 linktitle: Обзор продукта
 type: docs
 weight: 10
 url: /ru/sharepoint/product-overview/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API для Microsoft SharePoint Server позволяет пользователям экспортировать списки, элементы списков и вики-страницы SharePoint в формат файла PDF.
 ---
 

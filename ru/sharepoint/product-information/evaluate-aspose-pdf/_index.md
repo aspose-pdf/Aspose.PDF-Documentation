@@ -1,10 +1,10 @@
-﻿---
+---
 title: Оцените Aspose.PDF для SharePoint
 linktitle: Evaluate
 type: docs
 weight: 50
 url: /ru/sharepoint/evaluate-aspose-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Take advantage of the free evaluation of PDF SharePoint API as it has no time limit, and free technical support is provided for evaluation users too.
 ---
 

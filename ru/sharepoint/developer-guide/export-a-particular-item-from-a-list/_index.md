@@ -1,10 +1,10 @@
-﻿---
+---
 title: Экспорт определенного элемента из списка в PDF в SharePoint
 linktitle: Экспортировать определенный элемент из списка
 type: docs
 weight: 10
 url: /ru/sharepoint/export-a-particular-item-from-a-list/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API позволяет конвертировать несколько документов или один за раз в PDF, как показано в этой статье.
 ---
 

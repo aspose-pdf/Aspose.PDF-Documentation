@@ -1,10 +1,10 @@
-﻿---
+---
 title: Сохранить вики-страницу SharePoint в формате PDF
 linktitle: Сохранить вики-страницу SharePoint в формате PDF
 type: docs
 weight: 20
 url: /ru/sharepoint/save-sharepoint-wiki-page-as-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Библиотеку SharePoint PDF можно использовать для экспорта страниц SharePoint Wiki в PDF.
 ---
 

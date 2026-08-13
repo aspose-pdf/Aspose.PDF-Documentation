@@ -1,10 +1,10 @@
-﻿---
+---
 title: Добавить водяной знак в PDF-файл, добавленный в библиотеку SharePoint
 linktitle: Добавить водяной знак в PDF
 type: docs
 weight: 20
 url: /ru/sharepoint/add-watermark-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API позволяет добавлять водяные знаки в PDF-документы, добавленные в библиотеку.
 ---
 

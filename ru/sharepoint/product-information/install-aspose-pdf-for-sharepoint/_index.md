@@ -1,10 +1,10 @@
-﻿---
+---
 title: Установить SharePoint
 linktitle: Установить SharePoint
 type: docs
 weight: 40
 url: /ru/sharepoint/install-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF Раздел установки SharePoint API охватывает темы, касающиеся системных требований, установки на SharePoint Server, активации, деактивации и удаления продукта.
 ---
 

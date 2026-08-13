@@ -1,10 +1,10 @@
-﻿---
+---
 title: Преобразование файла в PDF с помощью действия рабочего процесса
 linktitle: Преобразование файла в PDF с помощью действия рабочего процесса
 type: docs
 weight: 50
 url: /ru/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: PDF SharePoint API можно использовать в рабочем процессе SharePoint, который преобразует документ в PDF.
 ---
 

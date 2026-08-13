@@ -1,10 +1,10 @@
-﻿---
+---
 title: Удаление лицензии Aspose.PDF для SharePoint
 linktitle: Удаление лицензии Aspose.PDF для SharePoint
 type: docs
 weight: 30
 url: /ru/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
-lastmod: "2020-12-16"
+lastmod: "2026-08-13"
 description: Выполните действия, описанные в этой статье, чтобы удалить лицензию PDF SharePoint API.
 ---
 
