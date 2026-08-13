@@ -12,7 +12,7 @@ description: PDF SharePoint 是一个允许用户将列表、列表项和 ShareP
 
 {{% alert color="primary" %}}
 
-![Aspose.PDF for Sharepoint logo](aspose_pdf-for-sharepoint.png)
+![Aspose.PDF for SharePoint logo](aspose_pdf-for-sharepoint.png)
 
 ## 欢迎使用 Aspose.PDF for SharePoint
 

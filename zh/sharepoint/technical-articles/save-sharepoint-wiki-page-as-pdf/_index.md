@@ -5,12 +5,12 @@ type: docs
 weight: 20
 url: /zh/sharepoint/save-sharepoint-wiki-page-as-pdf/
 lastmod: "2026-08-13"
-description: Sharepoint PDF 库可用于将 SharePoint Wiki 页面导出为 PDF。
+description: SharePoint PDF 库可用于将 SharePoint Wiki 页面导出为 PDF。
 ---
 
 {{% alert color="primary" %}}
 
-## Sharepoint Wiki Pdf 导出
+## SharePoint Wiki PDF 导出
 
 本文介绍如何使用 Aspose.PDF for SharePoint 将 SharePoint Wiki 页面导出为 PDF。
 

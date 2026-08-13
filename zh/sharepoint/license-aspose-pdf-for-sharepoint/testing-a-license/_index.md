@@ -10,6 +10,6 @@ description: 要测试 PDF SharePoint API 的许可证是否已成功安装，�
 
 {{% alert color="primary" %}}
 
-要测试许可证是否已正确安装，请将任何文档转换为所需的格式。如果文档中没有出现Evaluation warning，则说明License激活成功。
+要测试许可证是否已正确安装，请将任何文档转换为所需的格式。如果文档中没有出现评估警告，则说明许可证激活成功。
 
 {{% /alert %}}

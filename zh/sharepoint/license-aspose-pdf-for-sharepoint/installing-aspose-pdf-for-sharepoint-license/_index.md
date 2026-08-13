@@ -32,7 +32,7 @@ SharePoint 解决方案包文件。 Aspose.PDF for SharePoint 许可证打包为
 
 1. 运行 stsadm 将解决方案添加到 SharePoint 解决方案存储：
 
-stsadm.exe -o addsolution -文件名 Aspose.PDF.SharePoint.License.wsp
+stsadm.exe -o addsolution -filename Aspose.PDF.SharePoint.License.wsp
 
 2. 将解决方案部署到场中的所有服务器：
 

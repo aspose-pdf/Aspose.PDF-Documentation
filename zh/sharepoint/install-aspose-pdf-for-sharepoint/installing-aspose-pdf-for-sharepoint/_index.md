@@ -30,7 +30,7 @@ Aspose.PDF for SharePoint 可作为 Aspose.PDF.SharePoint.zip 存档下载。
 
 **带有公共 API 参考的用户文档：**
 
-- 安装程序
+- setup.exe
 
 **安装程序：**
 

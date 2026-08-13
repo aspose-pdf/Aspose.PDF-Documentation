@@ -1,6 +1,6 @@
 ---
 title: 评估 SharePoint 的 Aspose.PDF
-linktitle: 评价
+linktitle: 评估
 type: docs
 weight: 50
 url: /zh/sharepoint/evaluate-aspose-pdf/

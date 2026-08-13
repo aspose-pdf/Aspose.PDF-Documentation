@@ -16,7 +16,7 @@ description: 请按照本文中提到的步骤卸载 PDF SharePoint API 许可�
 
 1. 从场中撤回许可证解决方案：
 
-  stsadm.exe -o 收缩解决方案 -name Aspose.PDF.SharePoint.License.wsp -immediate
+  stsadm.exe -o retractsolution -name Aspose.PDF.SharePoint.License.wsp -immediate
 
 2. 执行管理计时器作业以立即完成撤回：
 
