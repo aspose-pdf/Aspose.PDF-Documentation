@@ -1,22 +1,24 @@
 ---
-title: Working with Forms
-linktitle: Working with Forms
+title: Java를 사용하여 양식 작업
+linktitle: 양식 작업
 type: docs
-weight: 50
-url: /ko/java/working-with-forms/
-description: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서에서 AcroForms 및 XFA Forms를 다루는 방법을 설명합니다.
-lastmod: "2021-06-05"
+weight: 60
+url: /java/working-with-forms/
+description: Aspose.PDF를 사용하여 Java에서 PDF 양식을 생성, 채우기, 추출, 수정, 제출, 가져오기, 내보내기 및 변환하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java를 사용하여 AcroForms 및 XFA 양식 생성 및 관리
+Abstract: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 양식으로 작업하는 방법을 설명합니다. AcroForm 필드 생성, 양식 데이터 채우기 및 추출, 양식 값 가져오기 및 내보내기, 필드 수정 또는 제거, 양식 데이터 게시, XFA 양식을 표준 AcroForms로 변환 등을 다룹니다.
 ---
 
-양식은 정보를 수집하고 저장하기 위해 사용자가 선택하거나 정보를 입력할 수 있는 영역이 있는 파일입니다.
+Aspose.PDF for Java는 PDF 양식 워크플로우를 위한 DOM 및 Facade API를 모두 제공합니다. 새로운 AcroForms를 구축하고, 기존 필드를 업데이트하고, 양식 데이터를 일반 형식으로 교환하고, XFA 기반 문서를 표준 양식으로 변환할 수 있습니다.
 
-AcroForms는 양식 필드를 포함하는 PDF 파일입니다. 최종 사용자 또는 양식 작성자가 수동으로 또는 자동화된 프로세스를 통해 이러한 필드에 데이터를 입력할 수 있습니다. 내부적으로 AcroForms는 PDF 문서에 적용된 주석 또는 필드입니다.
 
-이 섹션에서는 Aspose.PDF를 사용하여 PDF 문서를 프로그래밍 방식으로 완료하는 간단하고 빠른 접근 방식을 설명합니다.
- 섹션에서는 기존 PDF에서 AcroForms를 사용하여 사용 가능한 필드를 발견하고 매핑하는 방법에 대해 논의합니다. 또한 XML 기반의 프레젠테이션 폼에 대한 또 다른 기술인 XFA를 사용하는 방법에 대해서도 배울 수 있습니다.
+- 
+[AcroForms로 작업하기](/pdf/java/acroforms/)
 
-- [AcroForms](/pdf/ko/java/acroforms/) - 폼 생성, 폼 필드 채우기, 폼에서 데이터 추출, Java 라이브러리를 사용하여 PDF의 필드를 수정합니다.
-- [XFA Forms](/pdf/ko/java/xfa-forms/) - XFA 필드 채우기, XFA 변환, XFA 필드 속성 가져오기.
+- 
+[XFA 양식 작업](/pdf/java/xfa-forms/)

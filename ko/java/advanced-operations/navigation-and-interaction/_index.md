@@ -1,16 +1,27 @@
 ---
-title: 탐색 및 상호작용
-linktitle: 탐색 및 상호작용
+title: Java의 PDF 탐색 및 상호 작용
+linktitle: 탐색 및 상호 작용
 type: docs
 weight: 90
-url: /ko/java/navigation-and-interaction/
-description: 이 섹션에서는 링크, 작업 및 책갈피와의 작업 기능을 설명합니다.
-lastmod: "2021-06-05"
+url: /java/navigation-and-interaction/
+description: 탐색 및 대화형 문서 동작을 위해 Java에서 PDF 링크, 작업 및 책갈피를 사용하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Java를 사용하여 PDF 파일의 링크, 작업 및 책갈피 작업
+Abstract: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서의 탐색 및 상호 작용 기능을 관리하는 방법을 설명합니다. 링크를 생성 및 업데이트하고, 대화형 작업을 추가하고, 책갈피를 사용하여 PDF 탐색 및 문서 작업 흐름을 개선하는 방법을 알아보세요.
 ---
 
-- [링크](/pdf/ko/java/links/) - Java로 링크를 쉽게 생성, 업데이트 및 추출할 수 있습니다.
-- [작업](/pdf/ko/java/actions/) - PDF 파일에 대한 하이퍼링크를 추가하고 가져올 수 있습니다. 또한 이 기사에서는 PDF 파일에서 문서 열기 작업을 제거하는 방법과 문서를 볼 때 PDF 페이지를 지정하는 방법을 배웁니다.
-- [책갈피](/pdf/ko/java/bookmarks/)- 대형 출판물에는 일반적으로 책갈피 창에서 쉽게 보고 선택할 수 있는 책갈피 프레임워크가 포함되어 있어 책갈피를 클릭하여 해당 페이지나 챕터로 이동할 수 있습니다. 책갈피 창은 콘텐츠 인식 요소이며, 열려 있는 PDF 문서에 책갈피 구조가 포함된 경우에만 사이드바에 표시됩니다.
+Aspose.PDF for Java에는 책갈피, 링크 및 대화형 작업을 위한 API가 포함되어 있습니다. 이러한 기능을 사용하면 문서 내부 탐색을 개선하고, 외부 리소스에 연결하고, 사용자 상호 작용에서 동작을 트리거할 수 있습니다.
+
+
+- 
+[PDF 링크 작업](/pdf/java/links/)
+
+- 
+[PDF 작업 작업](/pdf/java/actions/)
+
+- 
+[PDF 북마크 작업](/pdf/java/bookmarks/)

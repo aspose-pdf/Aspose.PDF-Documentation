@@ -1,167 +1,278 @@
 ---
-title: 자바에서 HTML을 PDF 파일로 변환
-linktitle: HTML을 PDF 파일로 변환
+title: Convert HTML to PDF in Java
+linktitle: Convert HTML to PDF file
 type: docs
 weight: 40
-url: /ko/java/convert-html-to-pdf/
-lastmod: "2021-11-19"
-description: 이 주제는 Aspose.PDF가 HTML 및 MHTML 형식을 PDF 파일로 변환하는 방법을 보여줍니다.
+url: /java/convert-html-to-pdf/
+lastmod: "2026-06-16"
+description: Learn how to convert HTML, MHTML, and web pages to PDF in Java with Aspose.PDF, including media settings, CSS page rules, font embedding, SVG content, and single-page output.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: How to convert HTML to PDF in Java with Aspose.PDF
+Abstract: This article explains how to convert HTML and MHTML files to PDF using Aspose.PDF for Java. It covers the basic HTML-to-PDF workflow and shows how to control rendering with media types, CSS page rule priority, embedded fonts, SVG content, single-page output, and direct conversion from a live web page.
 ---
 
-## 개요
+Aspose.PDF for Java can convert local HTML files, archived MHTML content, and live web pages into PDF documents. You can control the conversion pipeline with `HtmlLoadOptions` and `MhtLoadOptions` to influence layout scaling, CSS media handling, page-rule priority, font embedding, resource resolution, and single-page rendering behavior.
 
-이 문서는 자바를 사용하여 HTML을 PDF로 변환하는 방법을 설명합니다. 코드는 매우 간단하며, HTML을 Document 클래스에 로드하고 출력 PDF로 저장하기만 하면 됩니다. 자바에서 MHTML을 PDF로 변환하는 것도 유사합니다. 다음 주제를 다룹니다.
 
-- [Java HTML에서 PDF로](#convert-html-to-pdf)
-- [Java MHTML에서 PDF로](#convert-mhtml-to-pdf)
-- [Java에서 HTML을 PDF로 변환](#convert-html-to-pdf)
-- [Java에서 MHTML을 PDF로 변환](#convert-mhtml-to-pdf)
-- [Java에서 HTML로부터 PDF](#convert-html-to-pdf)
-- [Java에서 MHTML로부터 PDF](#convert-mhtml-to-pdf)
-- [Java HTML에서 PDF 변환기 - 웹 페이지를 PDF로 변환하는 방법](#convert-html-to-pdf)
+## 
+Convert HTML to PDF
 
-- [Java HTML에서 PDF 라이브러리, API 또는 코드로 프로그래밍 방식으로 HTML에서 PDF를 렌더링, 저장, 생성 또는 만들기](#convert-html-to-pdf)
 
-## Java HTML to PDF Converter Library
 
-**Aspose.PDF for Java**는 기존의 HTML 문서를 PDF로 원활하게 변환할 수 있는 PDF 조작 API입니다. HTML을 PDF로 변환하는 과정은 유연하게 사용자 정의할 수 있습니다.
+Use this example when a local HTML file should be converted directly into a PDF document.
 
-## Convert HTML to PDF
 
-다음 Java 코드 샘플은 HTML 문서를 PDF로 변환하는 방법을 보여줍니다.
+1. 
+Create an [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance to configure how the HTML source is interpreted during import.
 
-1. [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) 클래스의 인스턴스를 생성합니다.
-1. [Document](https://reference.aspose.com/page/java/com.aspose.page/document) 객체를 초기화합니다.
-1. **Document.save(String)** 메서드를 호출하여 출력 PDF 문서를 저장합니다.
+1. 
+Set [`HtmlPageLayoutOption`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlpagelayoutoption/) to `ScaleToPageWidth` so wide HTML content is scaled to the target PDF page width instead of being clipped.
+
+1. 
+Open the source HTML file by passing its path and the configured load options into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
+
+1. 
+Save the generated [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) as a PDF file at the target output path.
+
 
 ```java
-// 소스 PDF 문서를 엽니다.
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf")
-
-// HTML SaveOptions 객체를 인스턴스화합니다.
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-
-// 문서를 저장합니다.
-document.save(DATA_DIR + "MultiPageHTML_out.html", htmlsaveOptions);
+public static void convertHtmlToPdf(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPageLayoutOption(HtmlPageLayoutOption.ScaleToPageWidth);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-{{% alert color="success" %}}
-**온라인에서 HTML을 PDF로 변환해보세요**
+## 
+Convert HTML to PDF with media type options
 
-Aspose는 ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf)라는 무료 온라인 애플리케이션을 제공합니다. 여기서 기능과 품질을 조사해 볼 수 있습니다.
 
-[![Aspose.PDF Convertion HTML to PDF using Free App](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
-{{% /alert %}}
 
-## HTML에서 PDF로의 고급 변환
+Use this example when CSS media type handling should be controlled during HTML conversion.
 
-HTML 변환 엔진은 변환 프로세스를 제어할 수 있는 여러 옵션을 제공합니다.
 
-### 미디어 쿼리 지원
+1. 
+Create an [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance for the conversion settings.
 
-1. HTML [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions)를 생성합니다.
-1. 인쇄 또는 화면 모드를 설정합니다.
-1. [문서 객체](<https://reference.aspose.com/page/java/com.aspose.page/document>)를 초기화합니다.
-1. 출력 PDF 문서를 저장합니다.
+1. 
+Set [`HtmlMediaType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlmediatype/) to `Screen` when the HTML should be rendered with CSS rules intended for on-screen display instead of print media.
 
-미디어 쿼리는 다양한 장치에 맞춘 스타일 시트를 제공하기 위한 인기 있는 기술입니다. 우리는 [HtmlMediaType](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType) 속성을 사용하여 장치 유형을 설정할 수 있습니다.
+1. 
+Open the HTML file with the configured load options so media-query-dependent styles are applied during conversion.
+
+1. 
+Save the resulting [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) as a PDF file.
+
 
 ```java
-// Create a HTML LoadOptions
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-// Set Print or Screen mode
-options.setHtmlMediaType(HtmlMediaType.Print);
-
-// Initialize document object
-String htmlFileName = Paths.get(DATA_DIR.toString(), "test.html").toString();
-Document document = new Document(htmlFileName, options);
-
-// Save output PDF document
-document.save(Paths.get(DATA_DIR.toString(), "HTMLtoPDF.pdf").toString());
-document.close();
+public static void convertHtmlToPdfMediaType(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setHtmlMediaType(HtmlMediaType.Screen);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
+## 
+Convert HTML to PDF with CSS page rule priority
 
-### 글꼴 임베딩 활성화 (비활성화)
 
-1. 새로운 Html [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) 추가.
-1. 글꼴 임베딩 활성화/비활성화.
-1. 새로운 문서 저장.
 
-HTML 페이지는 종종 글꼴을 사용합니다 (예: 로컬 폴더의 글꼴, Google Fonts 등). 우리는 [IsEmbedFonts](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#isEmbedFonts--) 속성을 사용하여 문서에서 글꼴의 임베딩을 제어할 수 있습니다.
+Use this example when CSS `@page` rules should influence the final PDF page layout.
+
+
+1. 
+Create an [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance before opening the HTML file.
+
+1. 
+Configure `setPriorityCssPageRule(false)` when other layout settings should take precedence over CSS `@page` declarations in the source markup.
+
+1. 
+Load the HTML content into a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) with the configured options so the page layout is resolved during import.
+
+1. 
+Save the generated PDF file.
+
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-// 글꼴 임베딩 활성화/비활성화
-options.setEmbedFonts(true);
-
-Document document = new Document(DATA_DIR + "test_fonts.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();
+public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPriorityCssPageRule(false);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-### 외부 리소스 로딩 관리
+## 
+Convert HTML to PDF with embedded fonts
 
-변환 엔진은 HTML 문서와 관련된 특정 리소스의 로딩을 제어할 수 있는 메커니즘을 제공합니다.
 
-[HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) 클래스는 [CustomLoaderOfExternalResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#setCustomLoaderOfExternalResources-com.aspose.pdf.LoadOptions.ResourceLoadingStrategy-) 속성을 가지고 있으며, 이를 통해 리소스 로더의 동작을 정의할 수 있습니다.
+
+Use this example when the output PDF should preserve the HTML fonts by embedding them.
+
+
+1. 
+Create an [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance for the HTML import configuration.
+
+1. 
+Enable `setEmbedFonts(true)` so the fonts resolved during HTML rendering are stored in the output PDF.
+
+1. 
+Open the HTML source with these load options to keep the original typography available in the final document.
+
+1. 
+Save the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) as a PDF with the embedded font resources included.
+
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-options.setCustomLoaderOfExternalResources(
-        new LoadOptions.ResourceLoadingStrategy() {
-            public LoadOptions.ResourceLoadingResult invoke(String resourceURI) {
-                // 교체를 위한 명확한 템플릿 리소스 생성:
-                LoadOptions.ResourceLoadingResult res = new LoadOptions.ResourceLoadingResult(new byte[] {});
-                // i.imgur.com 서버의 경우 빈 바이트 배열 반환
-                if (resourceURI.contains("i.imgur.com")) {
-                    return res;
-                } else {
-                    // 기본 리소스 로더로 리소스 처리
-                    res.setLoadingCancelled(true);
-                    return res;
-                }
-            }   
-});
-
-Document document = new Document(DATA_DIR + "test.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();    
+public static void convertHtmlToPdfEmbedFonts(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setEmbedFonts(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## MHTML을 PDF로 변환
-
-{{% alert color="success" %}}
-**MHTML을 PDF로 온라인에서 변환해 보세요**
+## 
+Render HTML content on a single PDF page
 
 
-Aspose.PDF for Java는 온라인 무료 애플리케이션 ["MHTML to PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)를 제공합니다. 여기에서 기능과 품질을 조사해 볼 수 있습니다.
 
-[![Aspose.PDF Convertion MHTML to PDF using Free App](mhtml.png)](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)
-{{% /alert %}}
+Use this example when long HTML content should be kept on one PDF page instead of flowing across multiple pages.
 
-<abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>은 MIME HTML의 약자로, 일반적으로 외부 링크(예: 이미지, 플래시 애니메이션, 자바 애플릿 및 오디오 파일)로 표현되는 리소스를 HTML 코드와 결합하여 단일 파일로 만드는 웹 페이지 아카이브 형식입니다. MHTML 파일의 내용은 MIME 타입 multipart/related를 사용하여 HTML 이메일 메시지처럼 인코딩됩니다.
 
-다음 코드 스니펫은 Java를 사용하여 MHTML 파일을 PDF 형식으로 변환하는 방법을 보여줍니다:
+1. 
+Create an [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance for the conversion settings.
+
+1. 
+Enable `setRenderToSinglePage(true)` so the imported HTML is laid out on one PDF page rather than split across several pages.
+
+1. 
+Open the source HTML with the configured load options and let Aspose.PDF build the page layout in a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Save the output PDF file.
+
 
 ```java
-// MHTML 파일의 로드 옵션을 지정하기 위해 MhtLoadOptions의 인스턴스를 생성합니다.
-MhtLoadOptions options = new MhtLoadOptions();
+public static void convertHtmlToPdfRenderContentToSamePage(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setRenderToSinglePage(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-// MHTML 파일의 경로를 설정합니다.
-String mhtmlFileName = Paths.get(DATA_DIR.toString(), "samplefile.mhtml").toString();
+## 
+Convert HTML containing inline SVG
 
-// MHTML 파일을 Document 객체에 로드합니다.
-Document document = new Document(mhtmlFileName, options);
 
-// 문서를 PDF 파일로 저장합니다.
-document.save(Paths.get(DATA_DIR.toString(), "MarkdowntoPDF.pdf").toString());
 
-// 문서를 닫습니다.
-document.close();
+Use this example when the HTML source includes inline SVG data that must be rendered in the PDF.
+
+
+1. 
+Create an [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance with the HTML file's parent directory as the base path so related resources can be resolved consistently during conversion.
+
+1. 
+Open the HTML file that contains inline SVG markup by passing the source path and load options into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
+
+1. 
+Let Aspose.PDF render the HTML DOM together with the embedded SVG elements into the PDF page content.
+
+1. 
+Save the generated PDF document.
+
+
+```java
+public static void convertHtmlToPdfWithSvgData(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(inputFile.getParent().toString());
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 
+Convert a web page to PDF
+
+
+
+Use this example when a live web URL should be rendered and saved as a PDF document.
+
+
+1. 
+Create an [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance with the target URL so relative resources such as stylesheets and images can be resolved against that address.
+
+1. 
+Convert the URL string into a `URL` object and open its input stream to fetch the live HTML content.
+
+1. 
+Create a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) from the response stream and the configured load options so the downloaded page is processed with the correct base URL.
+
+1. 
+Save the rendered web page as a PDF file and close the stream resources automatically with try-with-resources.
+
+
+```java
+public static void convertWebPageToPdf(String urlString, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(urlString);
+    try {
+        URL url = URI.create(urlString).toURL();
+
+        try (InputStream inputStream = url.openStream()) {
+            try (Document document = new Document(inputStream, loadOptions)) {
+                document.save(outputFile.toString());
+            }
+        }
+        System.out.println(url + " converted into " + outputFile);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+```
+
+## 
+Convert MHTML to PDF
+
+
+
+Use this example when an archived MHTML file should be converted into a PDF document.
+
+
+1. 
+Create an [`MhtLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mhtloadoptions/) instance to tell Aspose.PDF to load the source as MIME HTML content.
+
+1. 
+Open the `.mht` or `.mhtml` file by passing its path and the MHTML load options into the [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
+
+1. 
+Let Aspose.PDF parse the archived HTML content and its embedded resources into the PDF document model.
+
+1. 
+Save the generated PDF file.
+
+```java
+public static void convertMhtmlToPdf(Path inputFile, Path outputFile) {
+    MhtLoadOptions loadOptions = new MhtLoadOptions();
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

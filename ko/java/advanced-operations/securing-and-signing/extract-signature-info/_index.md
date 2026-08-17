@@ -1,86 +1,111 @@
 ---
-title: 이미지 및 서명 정보 추출
-linktitle: 이미지 및 서명 정보 추출
+title: Java의 PDF에서 서명 정보 추출
+linktitle: 서명에서 세부정보 추출
 type: docs
-weight: 30
-url: /ko/java/extract-image-and-signature-information/
-description: Java에서 SignatureField 클래스를 사용하여 서명 필드에서 이미지를 추출하고 서명 정보를 추출할 수 있습니다.
-lastmod: "2021-06-05"
+weight: 20
+url: /java/extract-image-and-signature-information/
+description: Java의 PDF 파일에서 인증서 및 디지털 서명 세부 정보를 추출하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java로 서명된 PDF에서 서명 세부 정보 및 인증서 데이터 추출
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서의 디지털 서명을 검사하는 방법을 설명합니다. 서명자 세부 정보를 읽고, 서명을 확인하고, 서명이 문서 전체에 적용되는지 확인하고, 내장된 서명 인증서를 추출하고, 기존 서명을 제거하는 방법을 알아보세요.
 ---
 
-## 서명 필드에서 이미지 추출
+PDF 문서에 이미 존재하는 서명을 검사하고 관리하려면 `PdfFileSignature`을 사용하세요.
 
-Aspose.PDF for Java는 [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) 클래스를 사용하여 PDF 파일에 디지털 서명을 추가하는 기능을 지원하며, 문서에 서명할 때 SignatureAppearance에 대한 이미지를 설정할 수도 있습니다. 이제 이 API는 서명 필드와 연관된 이미지뿐만 아니라 서명 정보를 추출할 수 있는 기능도 제공합니다.
 
-서명 정보를 추출하기 위해 우리는 [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) 클래스에 [ExtractImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField#extractImage--) 메서드를 도입했습니다.
- 다음은 SignatureField 객체에서 이미지를 추출하는 단계들을 보여주는 코드 스니펫입니다:
+## 
+서명 정보 읽기
+
+
+1. 
+[PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 파사드를 생성하고 소스 PDF 문서를 바인딩합니다.
+
+1. 
+문서 서명 이름에 액세스하고 예제에 필요한 서명 검사 흐름을 구성합니다.
+
+1. 
+[PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 파사드에서 서명 정보를 읽고 확인하세요.
+
+1. 
+반환된 값을 읽거나 다음 처리 단계를 계속하세요.
+
 
 ```java
-public class ExampleExtractImageAndSignature {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Secure-Sign/";
-
-    public static void ExtractingImageFromSignatureField() {
-        Document pdfDocument = new Document(_dataDir + "ExtractingImage.pdf");
-
-        int i = 0;
-        try {
-            for (WidgetAnnotation field : pdfDocument.getForm()) {
-                SignatureField sf = (SignatureField) field;
-                if (sf != null) {
-                    FileOutputStream output = new FileOutputStream(_dataDir + "im" + i + ".jpeg");
-                    InputStream tempStream = sf.extractImage();
-                    byte[] b = new byte[tempStream.available()];
-                    tempStream.read(b);
-                    output.write(b);
-                    output.close();
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (pdfDocument != null)
-                pdfDocument.dispose();
-        }
-
+public static void getSignatureInformation(Path inputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        System.out.println("Signature Names: " + pdfSignature.getSignNames());
+        System.out.println("Signer: " + pdfSignature.getSignerName(signatureName));
+        System.out.println("Date: " + pdfSignature.getDateTime(signatureName));
+        System.out.println("Reason: " + pdfSignature.getReason(signatureName));
+        System.out.println("Location: " + pdfSignature.getLocation(signatureName));
+    } finally {
+        pdfSignature.close();
     }
+}
 ```
 
-### 서명 이미지 교체
+## 
+서명 확인
 
-때때로 PDF 파일 안에 이미 존재하는 서명 필드의 이미지만 교체해야 하는 요구사항이 있을 수 있습니다. 이 요구사항을 충족하기 위해서는 먼저 PDF 파일 안의 양식 필드를 검색하고, 서명 필드를 식별한 다음 서명 필드의 치수(사각형 치수)를 얻은 후 동일한 치수에 이미지를 스탬프해야 합니다.
 
-## 서명 정보 추출
+1. 
+[PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 파사드를 생성하고 소스 PDF 문서를 바인딩합니다.
 
-Aspose.PDF for Java는 [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) 클래스를 사용하여 PDF 파일에 디지털 서명을 할 수 있는 기능을 지원합니다. 현재 우리는 인증서의 유효성을 확인할 수 있지만 전체 인증서를 추출할 수는 없습니다. 추출할 수 있는 정보는 공개 키, 지문, 발급자 등이 있습니다.
+1. 
+문서 서명 이름에 액세스하고 예시에 필요한 확인 흐름을 구성합니다.
 
-서명 정보를 추출하기 위해 [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) 클래스에 [ExtractCertificate](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField#extractCertificate--) 메서드를 도입했습니다.
- 다음은 SignatureField 객체에서 인증서를 추출하는 단계를 보여주는 코드 조각입니다:
+1. 
+[PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 파사드에서 서명 정보를 읽고 확인합니다.
+
 
 ```java
-    public static void ExtractSignatureInformation() throws IOException {
-        String input = _dataDir + "ExtractSignatureInfo.pdf";
-        Document pdfDocument = new Document(input);
+public static void verifyPdfSignature(Path inputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        System.out.println("Signature '" + signatureName + "' is valid: "
+                + pdfSignature.verifySignature(signatureName));
+        System.out.println("Signature covers whole document: "
+                + pdfSignature.coversWholeDocument(signatureName));
+    } finally {
+        pdfSignature.close();
+    }
+}
+```
 
-        for (WidgetAnnotation field : pdfDocument.getForm()) {
-            SignatureField sf = (SignatureField) field;
-            if (sf != null) {
-                InputStream cerStream = sf.extractCertificate();
-                if (cerStream != null) {
+## 
+서명 인증서 추출
 
-                    byte[] buffer = new byte[cerStream.available()];
-                    cerStream.read(buffer);
 
-                    File targetFile = new File(_dataDir+"targetFile.cer");
-                    OutputStream outStream = new FileOutputStream(targetFile);
-                    outStream.write(buffer);
-                    outStream.close();
-                }
-            }
+1. 
+[PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 파사드를 생성하고 소스 PDF 문서를 바인딩합니다.
+
+1. 
+인증서 추출에 필요한 문서 서명 이름에 접근합니다.
+
+1. 
+추출된 출력을 작성하거나 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 파사드에서 반환된 값을 검사합니다.
+
+```java
+public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        try (InputStream inputStream = pdfSignature.extractCertificate(signatureName);
+             OutputStream outputStream = Files.newOutputStream(outputFile)) {
+            inputStream.transferTo(outputStream);
         }
+    } finally {
+        pdfSignature.close();
     }
 }
 ```

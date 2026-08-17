@@ -1,477 +1,348 @@
 ---
-title: 태그가 지정된 PDF에서 테이블 작업하기
-linktitle: 태그가 지정된 PDF에서 테이블 작업하기
+title: Java에서 태그가 있는 PDF의 표 작업
+linktitle: 태그가 있는 PDF의 표 작업
 type: docs
 weight: 40
-url: /ko/java/working-with-table-in-tagged-pdfs/
-description: 이 문서에서는 Aspose.PDF for Java를 사용하여 태그가 지정된 PDF 문서에서 테이블을 다루는 방법을 설명합니다.
-lastmod: "2021-06-05"
+url: /java/working-with-table-in-tagged-pdfs/
+description: 테이블 구조, 셀 범위, 스타일 지정, 행 설정 및 위치 지정을 포함하여 Aspose.PDF를 사용하여 Java에서 태그가 지정된 PDF의 액세스 가능한 테이블로 작업하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
-{{% alert color="primary" %}}
+태그가 있는 테이블 API를 사용하면 명시적인 머리글, 본문 행, 바닥글 및 셀별 의미 체계를 사용하여 액세스 가능한 테이블 구조를 만들 수 있습니다.
 
-이 기능은 버전 19.6 이상에서 지원됩니다.
 
-{{% /alert %}}
+## 
+태그가 지정된 테이블 만들기
 
-## 태그가 지정된 PDF에서 테이블 생성하기
 
-Aspose.PDF for Java는 태그가 지정된 PDF 문서에서 테이블을 생성할 수 있습니다.
- 테이블 작업을 위해 API는 [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement) 클래스를 제공합니다. 테이블을 생성하려면 [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) 인터페이스의 [createTableElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) 메서드를 사용할 수 있습니다. 또한, 테이블 헤드, 테이블 본문 및 테이블 풋을 각각 생성하기 위해 TableElement 클래스의 [createTHead()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTHead--), [createTBody()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTBody--) 및 [createTFoot()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTFoot--) 메서드를 사용할 수 있습니다. 테이블 행을 생성하려면 [TableRowCollectionElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement) 클래스의 [createTR()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement#createTR--) 메서드를 사용할 수 있습니다. 다음 코드 스니펫은 태그가 지정된 PDF 문서에서 테이블을 생성하는 방법을 보여줍니다:
+
+머리글, 본문, 바닥글 및 테이블 요약 메타데이터가 포함된 기본 액세스 가능 테이블이 필요한 경우 이 예를 사용하십시오.
+
+
+1. 
+새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/)를 추가합니다.
+
+1. 
+테이블 테두리를 구성하고 공유 도우미 메서드로 콘텐츠를 채웁니다.
+
+1. 
+테이블 요약 속성을 설정하고 문서를 저장합니다.
+
 
 ```java
-// 완전한 예제 및 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-Java를 참조하십시오.
-// 문서 디렉토리의 경로입니다.
-String path = Utils.getDataDir() + "TaggedPDFs\\";
+public static void createTable(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table");
+        taggedContent.setLanguage("en-US");
 
-// 문서 생성
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+        tableElement.setBorder(new BorderInfo(BorderSide.All, 1.2f, Color.getDarkBlue()));
 
-taggedContent.setTitle("Example table");
-taggedContent.setLanguage("en-US");
+        fillTable(tableElement, 50, 4, true);
 
-// 루트 구조 요소 가져오기
-StructureElement rootElement = taggedContent.getRootElement();
+        StructureAttributes tableAttributes = tableElement.getAttributes().getAttributes(AttributeOwnerStandard.Table);
+        StructureAttribute summaryAttribute = new StructureAttribute(AttributeKey.Summary);
+        summaryAttribute.setStringValue("The summary text for table");
+        tableAttributes.setAttribute(summaryAttribute);
 
-
-TableElement tableElement = taggedContent.createTableElement();
-rootElement.appendChild(tableElement);
-
-tableElement.setBorder(new BorderInfo(BorderSide.All, 1.2F, Color.getDarkBlue()));
-
-TableTHeadElement tableTHeadElement = tableElement.createTHead();
-TableTBodyElement tableTBodyElement = tableElement.createTBody();
-TableTFootElement tableTFootElement = tableElement.createTFoot();
-int rowCount = 50;
-int colCount = 4;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.createTR();
-headTrElement.setAlternativeText("Head Row");
-
-headTrElement.setBackgroundColor(Color.getLightGray());
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.createTH();
-    thElement.setText(String.format("Head %s", colIndex));
-
-    thElement.setBackgroundColor(Color.getGreenYellow());
-    thElement.setBorder(new BorderInfo(BorderSide.All, 4.0F, Color.getLightGray()));
-
-    thElement.setMargin(new MarginInfo(16.0, 2.0, 8.0, 2.0));
-
-    thElement.setAlignment(HorizontalAlignment.Right);
+        document.save(outputFile.toString());
+    }
 }
+```
 
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.createTR();
-    trElement.setAlternativeText(String.format("Row %s", rowIndex));
+## 
+태그가 지정된 테이블 스타일 지정
 
-    for (colIndex = 0; colIndex < colCount; colIndex++)
-    {
-        int colSpan = 1;
-        int rowSpan = 1;
 
-        if (colIndex == 1 && rowIndex == 1)
-        {
-            colSpan = 2;
-            rowSpan = 2;
+
+이 예에서는 색상, 테두리, 열 크기 조정, 반복 행 및 정렬과 같은 테이블 수준 서식을 적용합니다.
+
+
+1. 
+새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 테이블 요소를 추가합니다.
+
+1. 
+테이블 수준 시각적 개체 및 레이아웃 설정을 구성합니다.
+
+1. 
+테이블을 채우고 문서를 저장합니다.
+
+
+```java
+public static void styleTable(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table style");
+        taggedContent.setLanguage("en-US");
+
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+
+        tableElement.setBackgroundColor(Color.getBeige());
+        tableElement.setBorder(new BorderInfo(BorderSide.All, 0.80f, Color.getGray()));
+        tableElement.setAlignment(HorizontalAlignment.Center);
+        tableElement.setBroken(TableBroken.Vertical);
+        tableElement.setColumnAdjustment(ColumnAdjustment.AutoFitToWindow);
+        tableElement.setColumnWidths("80 80 80 80 80");
+        tableElement.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.50f, Color.getDarkBlue()));
+        tableElement.setDefaultCellPadding(new MarginInfo(16.0, 2.0, 8.0, 2.0));
+        tableElement.getDefaultCellTextState().setForegroundColor(Color.getDarkCyan());
+        tableElement.getDefaultCellTextState().setFontSize(8.0f);
+        tableElement.setDefaultColumnWidth("70");
+        tableElement.setBordersIncluded(true);
+        tableElement.setLeft(0.0f);
+        tableElement.setTop(40.0f);
+        tableElement.setRepeatingColumnsCount(2);
+        tableElement.setRepeatingRowsCount(3);
+
+        TextState rowStyle = new TextState();
+        rowStyle.setBackgroundColor(Color.getLightCoral());
+        tableElement.setRepeatingRowsStyle(rowStyle);
+
+        fillTable(tableElement, 10, 5, false);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+태그가 지정된 테이블 행 스타일 지정
+
+
+
+각 행에 고유한 메타데이터, 테두리, 높이 설정 및 셀 기본값이 있어야 하는 경우 이 예를 사용합니다.
+
+
+1. 
+새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 머리, 몸, 발에 대한 테이블 섹션을 추가합니다.
+
+1. 
+행을 만들고 테두리, 안쪽 여백, 높이, 페이지 동작 등 행 수준 설정을 구성합니다.
+
+1. 
+행을 셀로 채우고 문서를 저장합니다.
+
+
+```java
+public static void styleTableRow(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table style");
+        taggedContent.setLanguage("en-US");
+
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+        TableTHeadElement tableTHeadElement = tableElement.createTHead();
+        TableTBodyElement tableTBodyElement = tableElement.createTBody();
+        TableTFootElement tableTFootElement = tableElement.createTFoot();
+
+        TableTRElement headTrElement = tableTHeadElement.createTR();
+        headTrElement.setAlternativeText("Head Row");
+        for (int colIndex = 0; colIndex < 3; colIndex++) {
+            headTrElement.createTH().setText("Head " + colIndex);
         }
-        else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
-        {
-            continue;
+
+        for (int rowIndex = 0; rowIndex < 7; rowIndex++) {
+            TableTRElement trElement = tableTBodyElement.createTR();
+            trElement.setAlternativeText("Row " + rowIndex);
+            trElement.setBackgroundColor(Color.getLightGoldenrodYellow());
+            trElement.setBorder(new BorderInfo(BorderSide.All, 0.75f, Color.getDarkGray()));
+            trElement.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.50f, Color.getBlue()));
+            trElement.setMinRowHeight(100.0);
+            trElement.setFixedRowHeight(120.0);
+            trElement.setInNewPage(rowIndex % 3 == 1);
+            trElement.setRowBroken(true);
+
+            TextState cellTextState = new TextState();
+            cellTextState.setForegroundColor(Color.getRed());
+            trElement.setDefaultCellTextState(cellTextState);
+            trElement.setDefaultCellPadding(new MarginInfo(16.0, 2.0, 8.0, 2.0));
+            trElement.setVerticalAlignment(VerticalAlignment.Bottom);
+
+            for (int colIndex = 0; colIndex < 3; colIndex++) {
+                trElement.createTD().setText("Cell [" + rowIndex + ", " + colIndex + "]");
+            }
         }
-        else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
-        {
-            continue;
+
+        TableTRElement footTrElement = tableTFootElement.createTR();
+        footTrElement.setAlternativeText("Foot Row");
+        for (int colIndex = 0; colIndex < 3; colIndex++) {
+            footTrElement.createTD().setText("Foot " + colIndex);
         }
 
-        TableTDElement tdElement = trElement.createTD();
-        tdElement.setText(String.format("Cell [%s, %s]", rowIndex, colIndex));
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+스타일 태그가 지정된 표 셀
 
 
-        tdElement.setBackgroundColor(Color.getYellow());
-        tdElement.setBorder(new BorderInfo(BorderSide.All, 4.0F, Color.getGray()));
+
+이 예에서는 공유 도우미 메서드를 사용하여 셀 수준 서식 및 병합된 셀이 포함된 테이블을 만듭니다.
 
 
-        tdElement.setMargin(new MarginInfo(8.0, 2.0, 8.0, 2.0));
+1. 
+새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만듭니다.
 
+1. 
+테이블 요소를 추가하고 셀 스타일 지정이 활성화된 도우미 메서드를 통해 요소를 채웁니다.
+
+1. 
+문서를 저장합니다.
+
+
+```java
+public static void styleTableCell(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table cell style");
+        taggedContent.setLanguage("en-US");
+
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+        fillTable(tableElement, 4, 4, true);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+태그가 지정된 테이블 위치 조정
+
+
+
+태그가 지정된 테이블을 페이지에 명시적으로 배치해야 하는 경우 이 예를 사용하세요.
+
+
+1. 
+새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 테이블 요소를 추가합니다.
+
+1. 
+테이블에 대한 [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/)를 구성합니다.
+
+1. 
+위치 설정을 적용하고 테이블을 채운 다음 문서를 저장합니다.
+
+
+```java
+public static void adjustTablePosition(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table position");
+        taggedContent.setLanguage("en-US");
+
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+
+        PositionSettings positionSettings = new PositionSettings();
+        positionSettings.setHorizontalAlignment(HorizontalAlignment.None);
+        positionSettings.setMargin(new MarginInfo(20, 0, 0, 0));
+        positionSettings.setVerticalAlignment(VerticalAlignment.None);
+        positionSettings.setFirstParagraphInColumn(false);
+        positionSettings.setKeptWithNext(false);
+        positionSettings.setInNewPage(false);
+        positionSettings.setInLineParagraph(false);
+        tableElement.adjustPosition(positionSettings);
+
+        fillTable(tableElement, 4, 4, true);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+구조화된 콘텐츠로 태그가 지정된 테이블 채우기
+
+
+
+이 도우미 메서드는 테이블의 머리글, 본문, 바닥글 행을 만들고 선택적으로 셀 스타일과 범위를 적용합니다.
+
+
+1. 
+테이블 머리 부분, 몸체 부분, 바닥 부분을 만듭니다.
+
+1. 
+머리글, 본문, 바닥글 행을 액세스 가능한 셀 요소로 채웁니다.
+
+1. 
+필요에 따라 스타일이 지정된 셀, 병합된 셀 및 텍스트 상태 값을 구성합니다.
+
+```java
+private static void fillTable(TableElement tableElement, int rowCount, int colCount, boolean styleCells) {
+    TableTHeadElement tableTHeadElement = tableElement.createTHead();
+    TableTBodyElement tableTBodyElement = tableElement.createTBody();
+    TableTFootElement tableTFootElement = tableElement.createTFoot();
+
+    TableTRElement headTrElement = tableTHeadElement.createTR();
+    headTrElement.setAlternativeText("Head Row");
+    headTrElement.setBackgroundColor(Color.getLightGray());
+
+    for (int columnIndex = 0; columnIndex < colCount; columnIndex++) {
+        TableTHElement thElement = headTrElement.createTH();
+        thElement.setText("Head " + columnIndex);
+        thElement.setBackgroundColor(Color.getGreenYellow());
+        thElement.setBorder(new BorderInfo(BorderSide.All, 4.0f, Color.getGray()));
+        thElement.setNoBorder(true);
+        thElement.setMargin(new MarginInfo(16.0, 2.0, 8.0, 2.0));
+        thElement.setAlignment(HorizontalAlignment.Right);
+    }
+
+    for (int rowIndex = 0; rowIndex < rowCount; rowIndex++) {
+        TableTRElement trElement = tableTBodyElement.createTR();
+        trElement.setAlternativeText("Row " + rowIndex);
+
+        for (int columnIndex = 0; columnIndex < colCount; columnIndex++) {
+            int colSpan = 1;
+            int rowSpan = 1;
+
+            if (styleCells && columnIndex == 1 && rowIndex == 1) {
+                colSpan = 2;
+                rowSpan = 2;
+            } else if (styleCells && ((rowIndex == 1 && columnIndex == 2)
+                    || (rowIndex == 2 && (columnIndex == 1 || columnIndex == 2)))) {
+                continue;
+            }
+
+            TableTDElement tdElement = trElement.createTD();
+            tdElement.setText("Cell [" + rowIndex + ", " + columnIndex + "]");
+            tdElement.setBackgroundColor(Color.getYellow());
+            tdElement.setBorder(new BorderInfo(BorderSide.All, 4.0f, Color.getGray()));
+            tdElement.setNoBorder(false);
+            tdElement.setMargin(new MarginInfo(8.0, 2.0, 8.0, 2.0));
+            tdElement.setAlignment(HorizontalAlignment.Center);
+
+            TextState cellTextState = new TextState();
+            cellTextState.setForegroundColor(Color.getDarkBlue());
+            cellTextState.setFontSize(7.5f);
+            cellTextState.setFontStyle(FontStyles.Bold);
+            cellTextState.setFont(FontRepository.findFont("Arial"));
+            tdElement.setDefaultCellTextState(cellTextState);
+
+            tdElement.setWordWrapped(true);
+            tdElement.setVerticalAlignment(VerticalAlignment.Center);
+            tdElement.setColSpan(colSpan);
+            tdElement.setRowSpan(rowSpan);
+        }
+    }
+
+    TableTRElement footTrElement = tableTFootElement.createTR();
+    footTrElement.setAlternativeText("Foot Row");
+    footTrElement.setBackgroundColor(Color.getLightSeaGreen());
+
+    for (int columnIndex = 0; columnIndex < colCount; columnIndex++) {
+        TableTDElement tdElement = footTrElement.createTD();
+        tdElement.setText("Foot " + columnIndex);
         tdElement.setAlignment(HorizontalAlignment.Center);
-
-        TextState cellTextState = new TextState();
-        cellTextState.setForegroundColor(Color.getDarkBlue());
-        cellTextState.setFontSize(7.5F);
-        cellTextState.setFontStyle(FontStyles.Bold);
-        cellTextState.setFont(FontRepository.findFont("Arial"));
-        tdElement.setDefaultCellTextState(cellTextState);
-
-        tdElement.isWordWrapped();
-        tdElement.setVerticalAlignment(VerticalAlignment.Center);
-
-        tdElement.setColSpan(colSpan);
-        tdElement.setRowSpan(rowSpan);
+        tdElement.getStructureTextState().setFontSize(com.aspose.pdf.Nullable.of(7.0f));
+        tdElement.getStructureTextState().setFontStyle(com.aspose.pdf.Nullable.of(FontStyles.Bold));
     }
 }
-
-TableTRElement footTrElement = tableTFootElement.createTR();
-footTrElement.setAlternativeText("Foot Row");
-
-footTrElement.setBackgroundColor(Color.getLightSeaGreen());
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.createTD();
-    tdElement.setText(String.format("Foot %s", colIndex));
-
-    tdElement.setAlignment(HorizontalAlignment.Center);
-    tdElement.getStructureTextState().setFontSize(7F);
-    tdElement.getStructureTextState().setFontStyle(FontStyles.Bold);
-}
-
-
-StructureAttributes tableAttributes = tableElement.getAttributes().getAttributes(AttributeOwnerStandard.Table);
-StructureAttribute summaryAttribute = new StructureAttribute(AttributeKey.Summary);
-summaryAttribute.setStringValue("The summary text for table");
-tableAttributes.setAttribute(summaryAttribute);
-
-
-// 태그가 지정된 PDF 문서 저장
-document.save(path + "CreateTableElement.pdf");
-```
-
-## 스타일 테이블 요소
-
-Aspose.PDF for Java는 태그가 지정된 PDF 문서에서 테이블의 스타일을 지정할 수 있습니다. 테이블의 스타일을 지정하기 위해서는 [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) 인터페이스의 [createTableElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) 메소드를 사용하여 테이블을 생성할 수 있습니다. 그리고 [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement) 클래스의 속성을 사용하여 테이블 스타일을 설정할 수 있습니다. 테이블 스타일을 지정할 때 사용할 수 있는 속성 목록은 다음과 같습니다:
-
-- BackgroundColor
-- Border
-- Alignment
-- CornerStyle
-- Broken
-- ColumnAdjustment
-- ColumnWidths
-- DefaultCellBorder
-- DefaultCellPadding
-- DefaultCellTextState
-- DefaultColumnWidth
-- IsBroken
-- IsBordersIncluded
-- Left
-- Top
-
-다음 코드 스니펫은 태그가 지정된 PDF 문서에서 테이블 스타일을 지정하는 방법을 보여줍니다:
-
-```java
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-Java 를 참조하세요
-// 문서 디렉토리 경로
-String path = Utils.getDataDir() + "TaggedPDFs\\";
-
-// 문서 생성
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("예제 테이블 스타일");
-taggedContent.setLanguage("en-US");
-
-// 루트 구조 요소 가져오기
-StructureElement rootElement = taggedContent.getRootElement();
-
-// 테이블 구조 요소 생성
-TableElement tableElement = taggedContent.createTableElement();
-rootElement.appendChild(tableElement);
-
-tableElement.setBackgroundColor(Color.getBeige());
-tableElement.setBorder(new BorderInfo(BorderSide.All, 0.80F, Color.getGray()));
-tableElement.setAlignment(HorizontalAlignment.Center);
-tableElement.setBroken(TableBroken.Vertical);
-tableElement.setColumnAdjustment(ColumnAdjustment.AutoFitToWindow);
-tableElement.setColumnWidths("80 80 80 80 80");
-tableElement.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.50F, Color.getDarkBlue()));
-tableElement.setDefaultCellPadding(new MarginInfo(16.0, 2.0, 8.0, 2.0));
-tableElement.getDefaultCellTextState().setForegroundColor(Color.getDarkCyan());
-tableElement.getDefaultCellTextState().setFontSize(8F);
-tableElement.setDefaultColumnWidth("70");
-
-tableElement.setBroken(false);
-tableElement.setBordersIncluded(true);
-
-tableElement.setLeft(0F);
-tableElement.setTop(40F);
-
-tableElement.setRepeatingColumnsCount(2);
-tableElement.setRepeatingRowsCount(3);
-TextState rowStyle = new TextState();
-rowStyle.setBackgroundColor(Color.getLightCoral());
-tableElement.setRepeatingRowsStyle(rowStyle);
-
-TableTHeadElement tableTHeadElement = tableElement.createTHead();
-TableTBodyElement tableTBodyElement = tableElement.createTBody();
-TableTFootElement tableTFootElement = tableElement.createTFoot();
-int rowCount = 10;
-int colCount = 5;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.createTR();
-headTrElement.setAlternativeText("헤드 행");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.createTH();
-    thElement.setText(String.format("헤드 %s", colIndex));
-}
-
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.createTR();
-    trElement.setAlternativeText(String.format("행 %s", rowIndex));
-
-    for (colIndex = 0; colIndex < colCount; colIndex++)
-    {
-        TableTDElement tdElement = trElement.createTD();
-        tdElement.setText(String.format("셀 [%s, %s]", rowIndex, colIndex));
-    }
-}
-
-TableTRElement footTrElement = tableTFootElement.createTR();
-footTrElement.setAlternativeText("풋 행");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.createTD();
-    tdElement.setText(String.format("풋 %s", colIndex));
-}
-
-// 태그가 지정된 PDF 문서 저장
-document.save(path + "StyleTableElement.pdf");
-```
-
-
-## 스타일 테이블 행
-
-Aspose.PDF for Java는 Tagged PDF 문서에서 테이블 행을 스타일링할 수 있도록 합니다. 테이블 행을 스타일링하기 위해 [TableTRElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableTRElement) 클래스의 속성을 사용할 수 있습니다. 테이블 행을 스타일링하는 데 사용할 수 있는 속성 목록은 다음과 같습니다:
-
-- BackgroundColor
-- Border
-- DefaultCellBorder
-- MinRowHeight
-- FixedRowHeight
-- IsInNewPage
-- IsRowBroken
-- DefaultCellTextState
-- DefaultCellPadding
-- VerticalAlignment
-
-다음 코드 스니펫은 Tagged PDF 문서에서 테이블 행을 스타일링하는 방법을 보여줍니다:
-
-```java
-// 완전한 예시와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-Java를 참조하세요.
-// 문서 디렉토리의 경로입니다.
-String path = Utils.getDataDir() + "TaggedPDFs\\";
-
-// 문서 생성
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("예제 테이블 행 스타일");
-taggedContent.setLanguage("en-US");
-
-// 루트 구조 요소 가져오기
-StructureElement rootElement = taggedContent.getRootElement();
-
-
-// 테이블 구조 요소 생성
-TableElement tableElement = taggedContent.createTableElement();
-rootElement.appendChild(tableElement);
-
-
-TableTHeadElement tableTHeadElement = tableElement.createTHead();
-TableTBodyElement tableTBodyElement = tableElement.createTBody();
-TableTFootElement tableTFootElement = tableElement.createTFoot();
-int rowCount = 7;
-int colCount = 3;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.createTR();
-headTrElement.setAlternativeText("헤드 행");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.createTH();
-    thElement.setText(String.format("헤드 %s", colIndex));
-}
-
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.createTR();
-    trElement.setAlternativeText(String.format("행 %s", rowIndex));
-
-    trElement.setBackgroundColor(Color.getLightSeaGreen());
-    trElement.setBorder(new BorderInfo(BorderSide.All, 0.75F, Color.getDarkGray()));
-
-    trElement.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.50F, Color.getBlue()));
-    trElement.setMinRowHeight(100.0);
-    trElement.setFixedRowHeight(120.0);
-    trElement.setRowBroken(true);
-
-    TextState cellTextState = new TextState();
-    cellTextState.setForegroundColor(Color.getRed());
-    trElement.setDefaultCellTextState(cellTextState);
-
-    trElement.setDefaultCellPadding(new MarginInfo(16.0, 2.0, 8.0, 2.0));
-    trElement.setVerticalAlignment(VerticalAlignment.Bottom);
-
-    for (colIndex = 0; colIndex < colCount; colIndex++)
-    {
-        TableTDElement tdElement = trElement.createTD();
-        tdElement.setText(String.format("셀 [{0}, {1}]", rowIndex, colIndex));
-    }
-}
-
-TableTRElement footTrElement = tableTFootElement.createTR();
-footTrElement.setAlternativeText("풋 행");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.createTD();
-    tdElement.setText(String.format("풋 %s", colIndex));
-}
-
-
-
-// Tagged Pdf 문서 저장
-document.save(path + "StyleTableRow.pdf");
-```
-
-
-## 스타일 테이블 셀
-
-Aspose.PDF for Java는 태그된 PDF 문서에서 테이블 셀을 스타일링할 수 있게 해줍니다. 테이블 셀을 스타일링하기 위해서는 [TableCellElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableCellElement) 클래스의 속성을 사용할 수 있습니다. 다음은 테이블 셀을 스타일링하기 위해 사용할 수 있는 속성 목록입니다:
-
-- BackgroundColor
-- Border
-- IsNoBorder
-- Margin
-- Alignment
-- DefaultCellTextState
-- IsWordWrapped
-- VerticalAlignment
-- ColSpan
-- RowSpan
-
-다음 코드 스니펫은 태그된 PDF 문서에서 테이블 셀을 스타일링하는 방법을 보여줍니다. 생성된 문서의 **PDF/UA** 준수 여부를 확인할 수도 있습니다. 아래 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다.
-
-```java
-// 전체 예제 및 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-Java를 참조하세요.
-// 문서 디렉토리 경로.
-String path = Utils.getDataDir() + "TaggedPDFs\\";
-
-// 문서 생성
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("예제 테이블 셀 스타일");
-taggedContent.setLanguage("en-US");
-
-// 루트 구조 요소 가져오기
-StructureElement rootElement = taggedContent.getRootElement();
-
-// 테이블 구조 요소 생성
-TableElement tableElement = taggedContent.createTableElement();
-rootElement.appendChild(tableElement);
-
-TableTHeadElement tableTHeadElement = tableElement.createTHead();
-TableTBodyElement tableTBodyElement = tableElement.createTBody();
-TableTFootElement tableTFootElement = tableElement.createTFoot();
-int rowCount = 4;
-int colCount = 4;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.createTR();
-headTrElement.setAlternativeText("헤드 행");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.createTH();
-    thElement.setText(String.format("헤드 %s", colIndex));
-
-    thElement.setBackgroundColor(Color.getGreenYellow());
-    thElement.setBorder(new BorderInfo(BorderSide.All, 4.0F, Color.getGray()));
-
-    thElement.setNoBorder(false);
-    thElement.setMargin(new MarginInfo(16.0, 2.0, 8.0, 2.0));
-
-    thElement.setAlignment(HorizontalAlignment.Right);
-}
-
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.createTR();
-    trElement.setAlternativeText(String.format("행 %s", rowIndex));
-
-    for (colIndex = 0; colIndex < colCount; colIndex++)
-    {
-        int colSpan = 1;
-        int rowSpan = 1;
-
-        if (colIndex == 1 && rowIndex == 1)
-        {
-            colSpan = 2;
-            rowSpan = 2;
-        }
-        else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
-        {
-            continue;
-        }
-        else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
-        {
-            continue;
-        }
-
-        TableTDElement tdElement = trElement.createTD();
-        tdElement.setText(String.format("셀 [%s, %s]", rowIndex, colIndex));
-
-        tdElement.setBackgroundColor(Color.getYellow());
-        tdElement.setBorder(new BorderInfo(BorderSide.All, 4.0F, Color.getGray()));
-
-        tdElement.setNoBorder(false);
-        tdElement.setMargin(new MarginInfo(8.0, 2.0, 8.0, 2.0));
-
-        tdElement.setAlignment(HorizontalAlignment.Center);
-
-        TextState cellTextState = new TextState();
-        cellTextState.setForegroundColor(Color.getDarkBlue());
-        cellTextState.setFontSize(7.5F);
-        cellTextState.setFontStyle(FontStyles.Bold);
-        cellTextState.setFont(FontRepository.findFont("Arial"));
-        tdElement.setDefaultCellTextState(cellTextState);
-
-        tdElement.setWordWrapped(false);
-        tdElement.setVerticalAlignment(VerticalAlignment.Center);
-
-        tdElement.setColSpan(colSpan);
-        tdElement.setRowSpan(rowSpan);
-    }
-}
-
-TableTRElement footTrElement = tableTFootElement.createTR();
-footTrElement.setAlternativeText("풋 행");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.createTD();
-    tdElement.setText(String.format("풋 %s", colIndex));
-}
-
-// 태그된 PDF 문서 저장
-document.save(path + "StyleTableCell.pdf");
 ```

@@ -1,82 +1,73 @@
 ---
-title: PDF 문서 열기
-linktitle: 열기
+title: 프로그래밍 방식으로 PDF 문서 열기
+linktitle: PDF 열기
 type: docs
 weight: 20
-url: /ko/java/open-pdf-document/
-description: Aspose.PDF for Java를 사용하여 PDF 파일을 여는 방법을 배웁니다.
-lastmod: "2021-06-05"
+url: /java/open-pdf-document/
+description: 파일 경로, 스트림 또는 비밀번호에서 Aspose.PDF를 사용하여 Java에서 PDF 파일을 여는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java에서 Aspose.PDF 라이브러리를 사용하여 PDF 문서 열기
+Abstract: 이 문서에서는 Aspose.PDF를 사용하여 Java에서 기존 PDF 문서를 여는 방법을 보여줍니다. 파일 경로로 PDF 열기, InputStream에서 PDF 열기, 비밀번호로 보호된 문서 열기를 다루고 있으며, 각 예제는 로드된 문서에서 페이지 수를 읽습니다.
 ---
 
-## 기존 PDF 문서 열기
+Aspose.PDF for Java는 소스 데이터의 출처에 따라 기존 PDF 문서를 로드하는 여러 가지 방법을 지원합니다.
 
-문서를 여는 방법은 여러 가지가 있습니다. 가장 쉬운 방법은 파일 이름을 지정하는 것입니다.
+
+## 
+Java에서 PDF 문서 열기
+
+
+
+PDF 문서를 열 수 있습니다.
+
+
+1. 
+파일 경로에서 직접 [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+`InputStream`에서 [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+비밀번호를 입력하여 암호화된 [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+
+## 
+파일에서 문서 열기
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.InputStream;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import com.aspose.pdf.*;
-import com.aspose.pdf.internal.pcl.util.BufferedInputStream;
-
-public final class BasicOperationsOpen {
-
-    private BasicOperationsOpen() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) {
-        OpenDocument();
-        OpenDocumentStream();
-        OpenDocumentWithPassword();
-    }
-
-    public static void OpenDocument() {
-        String fileName = _dataDir+"/tourguidev2_gb_tags.pdf";
-        Document pdfDocument = new Document(fileName);
-        System.out.println("Pages +" + pdfDocument.getPages().size());
-    }
-
+public static void openDocumentFromFile(Path inputFile) {
+    Document document = new Document(inputFile.toString());
+    System.out.println("Pages: " + document.getPages().size());
+    document.close();
+}
 ```
 
+## 
+스트림에서 문서 열기
 
-## 스트림에서 기존 PDF 문서 열기
 
 ```java
-    public static void OpenDocumentStream() {
-        String remoteURL = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
-        String fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
-        try (BufferedInputStream in = new BufferedInputStream(new java.net.URL(remoteURL + fileName).openStream())) {
-            InputStream inputStream = in;
-            Document pdfDocument = new Document(inputStream);
-            System.out.println("페이지 수: " + pdfDocument.getPages().size());
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+public static void openDocumentFromStream(Path inputFile) throws Exception {
+    try (InputStream stream = Files.newInputStream(inputFile)) {
+        Document document = new Document(stream);
+        System.out.println("Pages: " + document.getPages().size());
+        document.close();
     }
+}
 ```
 
-## 암호화된 PDF 문서 열기
+## 
+암호화된 문서 열기
 
 ```java
-   public static void OpenDocumentWithPassword() {
-        String fileName = "C:\\tmp\\DocSite.pdf";
-        String password = "Aspose2020";
-        try {
-            Document pdfDocument = new Document(fileName, password);
-            System.out.println("페이지 수: " + pdfDocument.getPages().size());
-        } catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
-    }
-
+public static void openDocumentEncrypted(Path inputFile) {
+    Document document = new Document(inputFile.toString(), "P@ssw0rd");
+    System.out.println("Pages: " + document.getPages().size());
+    document.close();
 }
 ```

@@ -1,296 +1,916 @@
 ---
-title: PDF 내 텍스트 서식
-linktitle: PDF 내 텍스트 서식
+title: Format PDF Text in Java
+linktitle: Text Formatting inside PDF
 type: docs
-weight: 30
-url: /ko/java/text-formatting-inside-pdf/
-description: 이 페이지는 PDF 파일 내에서 텍스트를 서식화하는 방법을 설명합니다. 줄 들여쓰기 추가, 텍스트 경계 추가, 밑줄 텍스트 추가, 추가된 텍스트 주위에 경계 추가, 플로팅 박스 내용의 텍스트 정렬 등을 포함합니다.
-lastmod: "2021-06-05"
+weight: 70
+url: /java/text-formatting-inside-pdf/
+description: Learn how to format text inside PDF documents in Java using spacing, notes, lists, multi-column layout, and styling options.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Format and style text inside PDF files with Java
+Abstract: This article explains how to format text in PDF documents using Aspose.PDF for Java. It covers line spacing, character spacing, bullet and numbered lists, footnotes and endnotes, inline paragraph content, multi-column layout, forced page breaks, and custom tab stops.
 ---
 
-## PDF에 줄 들여쓰기 추가하는 방법
+Aspose.PDF for Java offers text formatting controls for spacing, lists, notes, inline layout, and multi-column composition.
 
-Aspose.PDF for Java는 [TextFormattingOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions) 클래스에 SubsequentLinesIndent 속성을 제공합니다. 이 속성은 TextFragment 및 Paragraphs 컬렉션과 함께 PDF 생성 시나리오에서 줄 들여쓰기를 지정하는 데 사용할 수 있습니다.
 
-다음 코드 스니펫을 사용하여 속성을 사용하는 방법을 참고하세요:
+## 
+Set simple line spacing
+
+
+
+Use this example when paragraph text should use a fixed line spacing value.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Load or prepare the source text and create a `TextFragment`.
+
+1. 
+Set the line spacing, add the fragment to the page, and save the document.
+
 
 ```java
-public static void AddLineIndentToPDF() {
-        // 새로운 문서 객체 생성
-        Document document = new Document();
-        Page page = document.getPages().add();
+public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exception {
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
 
-        TextFragment text = new TextFragment(
-                "A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
+            Path loremPath = dataDir.resolve("lorem.txt");
+            String text = Files.exists(loremPath) ? Files.readString(loremPath) : "Lorem ipsum text not found.";
 
-        // 텍스트 조각에 대한 TextFormattingOptions 초기화 및
-        // SubsequentLinesIndent 값 지정
-        TextFormattingOptions textOptions = new TextFormattingOptions();
-        textOptions.setSubsequentLinesIndent(20);
-        text.getTextState().setFormattingOptions(textOptions);
+            TextFragment textFragment = new TextFragment(text);
+            textFragment.getTextState().setFontSize(12);
+            textFragment.getTextState().setLineSpacing(16);
+            page.getParagraphs().add(textFragment);
 
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line2");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line3");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line4");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line5");
-        page.getParagraphs().add(text);
-
-        document.save(_dataDir + "SubsequentIndent_out.pdf");
+            document.save(outputFile.toString());
+        }
     }
 ```
 
+## 
+Compare line spacing modes with a custom font
 
-## 텍스트 테두리 추가 방법
 
-다음 코드 스니펫은 TextBuilder를 사용하여 텍스트에 테두리를 추가하고 TextState의 DrawTextRectangleBorder 메서드를 설정하는 방법을 보여줍니다:
+
+Use this example when line spacing should be tested with different formatting modes for the same font.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Load the custom font and prepare two fragments with different line spacing modes.
+
+1. 
+Add both fragments to the page and save the PDF.
+
 
 ```java
-public static void AddTextBorder() {
-    // 새 문서 객체 생성
-    Document pdfDocument = new Document();
-    // 특정 페이지 가져오기
-    Page pdfPage = pdfDocument.getPages().add();
-    // 텍스트 조각 생성
-    TextFragment textFragment = new TextFragment("main text");
-    textFragment.setPosition(new Position(100, 600));
-    // 텍스트 속성 설정
-    textFragment.getTextState().setFontSize(12);
-    textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    textFragment.getTextState().setBackgroundColor (Color.getLightGray());
-    textFragment.getTextState().setForegroundColor (Color.getRed());
-    // 텍스트 사각형 주위에 경계를 그리기 위해 setStrokingColor 사용
-    textFragment.getTextState().setStrokingColor (Color.getDarkRed());
-    // setDrawTextRectangleBorder 메서드를 사용하여 true 값을 설정
-    textFragment.getTextState().setDrawTextRectangleBorder(true);
-    TextBuilder tb = new TextBuilder(pdfPage);
-    tb.appendText(textFragment);
-    // 문서 저장
-    pdfDocument.save(_dataDir + "PDFWithTextBorder_out.pdf");
+public static void specifyLineSpacingSpecificCase(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        Path fontFile = dataDir.resolve("HPSimplified.ttf");
+        Path loremPath = dataDir.resolve("lorem.txt");
+        String text = Files.exists(loremPath) ? Files.readString(loremPath) : "Lorem ipsum text not found.";
+
+        try (InputStream fontStream = Files.newInputStream(fontFile)) {
+            Font font = FontRepository.openFont(fontStream, FontTypes.TTF);
+
+            TextFragment fragment1 = new TextFragment(text);
+            fragment1.getTextState().setFont(font);
+            fragment1.getTextState().setFormattingOptions(new TextFormattingOptions());
+            fragment1.getTextState().getFormattingOptions().setLineSpacing(TextFormattingOptions.LineSpacingMode.FontSize);
+            page.getParagraphs().add(fragment1);
+
+            TextFragment fragment2 = new TextFragment(text);
+            fragment2.getTextState().setFont(font);
+            fragment2.getTextState().setFormattingOptions(new TextFormattingOptions());
+            fragment2.getTextState().getFormattingOptions().setLineSpacing(TextFormattingOptions.LineSpacingMode.FullSize);
+            page.getParagraphs().add(fragment2);
+        }
+
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 
+Set character spacing with text fragments
 
-## 밑줄 텍스트 추가 방법
 
-다음 코드 스니펫은 새 PDF 파일을 생성할 때 밑줄 텍스트를 추가하는 방법을 보여줍니다.
+
+Use this example when the same text should be shown with different character spacing values.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Build text fragments with the helper method for several spacing values.
+
+1. 
+Add the fragments to the page and save the document.
+
 
 ```java
-public static void AddUnderlineText(){
-    // 문서 객체 생성
-    Document pdfDocument = new Document();
-    // PDF 문서에 페이지 추가
-    Page page = pdfDocument.getPages().add();
-    // 첫 번째 페이지에 대한 TextBuilder 생성
-    TextBuilder tb = new TextBuilder(page);
-    // 샘플 텍스트가 포함된 TextFragment
-    TextFragment fragment = new TextFragment("밑줄 장식이 있는 텍스트");
-    // TextFragment에 대한 폰트 설정
+public static void characterSpacingUsingTextFragment(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        page.getParagraphs().add(makeCharacterSpacingFragment(2.0f));
+        page.getParagraphs().add(makeCharacterSpacingFragment(1.0f));
+        page.getParagraphs().add(makeCharacterSpacingFragment(0.75f));
+
+        document.save(outputFile.toString());
+    }
+}
+
+private static TextFragment makeCharacterSpacingFragment(float spacing) {
+    TextFragment fragment = new TextFragment("Sample Text with character spacing");
     fragment.getTextState().setFont(FontRepository.findFont("Arial"));
-    fragment.getTextState().setFontSize(10);
-    // 텍스트 형식을 밑줄로 설정
-    fragment.getTextState().setUnderline(true);
-    // TextFragment가 배치될 위치 지정
-    fragment.setPosition(new Position(10, 800));
-    // PDF 파일에 TextFragment 추가
-    tb.appendText(fragment);
-
-    // 결과 PDF 문서 저장
-    pdfDocument.save(_dataDir + "AddUnderlineText_out.pdf");
+    fragment.getTextState().setFontSize(14);
+    fragment.getTextState().setCharacterSpacing(spacing);
+    return fragment;
 }
 ```
 
+## 
+Set character spacing inside a text paragraph
 
-## 텍스트에 추가된 테두리를 추가하는 방법
 
-추가한 텍스트의 외관을 제어할 수 있습니다. 아래 예시는 추가한 텍스트 주위에 사각형을 그려 테두리를 추가하는 방법을 보여줍니다. [PdfContentEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor) 클래스에 대해 더 알아보세요.
+
+Use this example when character spacing should be applied inside a bounded text paragraph.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Create a `TextParagraph` with a target rectangle and wrapping options.
+
+1. 
+Append the styled text fragment and save the PDF.
+
 
 ```java
-public static void AddBorderAroundAddedText() {
-    PdfContentEditor editor = new PdfContentEditor();
-    editor.bindPdf(_dataDir + "input.pdf");
-    LineInfo lineInfo = new LineInfo();
-    lineInfo.setLineWidth(2);
-    lineInfo.setVerticeCoordinate (new float[] { 0, 0, 100, 100, 50, 100 });
-    lineInfo.setVisibility(true);
-    editor.createPolygon(lineInfo, 1, new java.awt.Rectangle(0, 0, 0, 0), "");
+public static void characterSpacingUsingTextParagraph(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-    // 결과 PDF 문서를 저장합니다.
-    editor.save(_dataDir + "AddingBorderAroundAddedText_out.pdf");
+        TextBuilder builder = new TextBuilder(page);
+        TextParagraph paragraph = new TextParagraph();
+        paragraph.setRectangle(new Rectangle(100, 700, 500, 750, true));
+        paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
+
+        TextFragment fragment = new TextFragment("Sample Text with character spacing");
+        fragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment.getTextState().setFontSize(14);
+        fragment.getTextState().setCharacterSpacing(2.0f);
+
+        paragraph.appendLine(fragment);
+        builder.appendParagraph(paragraph);
+        document.save(outputFile.toString());
+    }
 }
 ```
 
-## 줄바꿈 추가하는 방법
+## 
+Create a bullet list with HTML
 
-TextFragment는 텍스트 내에서 줄바꿈을 지원하지 않습니다.
- 하지만 줄 바꿈이 있는 텍스트를 추가하려면 TextFragment와 TextParagraph를 사용하세요:
 
-- 단일 “\n” 대신 TextFragment에서 "\r\n" 또는 Environment.NewLine을 사용합니다;
-- TextParagraph 객체를 생성합니다. 이것은 텍스트를 줄 나누기로 추가합니다;
-- TextFragment를 TextParagraph.AppendLine과 함께 추가합니다;
-- TextParagraph를 TextBuilder.AppendParagraph와 함께 추가합니다.
-아래 코드 스니펫을 사용하세요.
+
+Use this example when unordered list formatting should be produced from HTML markup.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Build the HTML list string.
+
+1. 
+Add it as an `HtmlFragment` and save the document.
+
 
 ```java
-public static void AddNewLineFeed() {        
-    Document pdfDocument = new Document();
-    Page page = pdfDocument.getPages().add();
-
-    // 필요한 줄 바꿈 표시가 포함된 텍스트로 새 TextFragment 초기화
-    TextFragment textFragment = new TextFragment("Applicant Name: " + System.lineSeparator() + " Joe Smoe");
-
-    // 필요시 텍스트 프래그먼트 속성 설정
-    textFragment.getTextState().setFontSize (12);
-    textFragment.getTextState().setFont(FontRepository.findFont("DejaVu Serif"));
-    textFragment.getTextState().setBackgroundColor (Color.getLightGray());
-    textFragment.getTextState().setForegroundColor (Color.getRed());
-
-    // TextParagraph 객체 생성
-    TextParagraph par = new TextParagraph();
-
-    // 새 TextFragment를 단락에 추가
-    par.appendLine(textFragment);
-
-    // 단락 위치 설정
-    par.setPosition (new Position(100, 600));
-
-    // TextBuilder 객체 생성
-    TextBuilder textBuilder = new TextBuilder(page);
-    // TextBuilder를 사용하여 TextParagraph 추가
-    textBuilder.appendParagraph(par);
-
-    // 결과 PDF 문서 저장.
-    pdfDocument.save(_dataDir + "AddNewLineFeed_out.pdf");
+public static void createBulletListHtmlVersion(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String htmlList = "<ul><li>First item in the list</li>"
+                + "<li>Second item with more text to demonstrate wrapping behavior.</li>"
+                + "<li>Third item</li><li>Fourth item</li></ul>";
+        page.getParagraphs().add(new HtmlFragment(htmlList));
+        document.save(outputFile.toString());
+    }
 }
 ```
 
-## StrikeOut 텍스트 추가 방법
+## 
+Create a numbered list with HTML
 
-TextState 클래스는 PDF 문서에 배치되는 TextFragments의 서식을 설정할 수 있는 기능을 제공합니다. 이 클래스를 사용하여 텍스트 서식을 굵게, 기울임꼴, 밑줄로 설정할 수 있으며, 이번 릴리스부터는 텍스트 서식을 취소선으로 표시할 수 있는 기능이 제공됩니다. 다음 코드 스니펫을 사용하여 취소선 서식이 있는 TextFragment를 추가해 보세요.
 
-전체 코드 스니펫을 사용하세요:
+
+Use this example when ordered list formatting should be produced from HTML markup.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Build the ordered HTML list string.
+
+1. 
+Add it as an `HtmlFragment` and save the document.
+
 
 ```java
-public static void AddStrikeOutText(){
-    // 문서 열기
-    Document pdfDocument = new Document();
-    // 특정 페이지 가져오기
-    Page pdfPage = (Page)pdfDocument.getPages().add();
-
-    // 텍스트 조각 생성
-    TextFragment textFragment = new TextFragment("main text");
-    textFragment.setPosition (new Position(100, 600));
-
-    // 텍스트 속성 설정
-    textFragment.getTextState().setFontSize(12);
-    textFragment.getTextState().setFont(FontRepository.findFont("DejaVu Serif"));
-    textFragment.getTextState().setBackgroundColor(Color.getLightGray());
-    textFragment.getTextState().setForegroundColor(Color.getRed());
-    // setStrikeOut 메서드를 사용하여 취소선 텍스트 활성화
-    textFragment.getTextState().setStrikeOut(true);
-    // 텍스트를 굵게 표시
-    textFragment.getTextState().setFontStyle(FontStyles.Bold);
-
-    // TextBuilder 객체 생성
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // PDF 페이지에 텍스트 조각 추가
-    textBuilder.appendText(textFragment);
-
-    // 결과 PDF 문서 저장
-    pdfDocument.save(_dataDir + "AddStrikeOutText_out.pdf");        
+public static void createNumberedListHtmlVersion(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String htmlList = "<ol><li>First item in the list</li>"
+                + "<li>Second item with more text to demonstrate wrapping behavior.</li>"
+                + "<li>Third item</li><li>Fourth item</li></ol>";
+        page.getParagraphs().add(new HtmlFragment(htmlList));
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 
+Create a bullet list with LaTeX
 
-## 텍스트에 그라데이션 음영 적용
 
-텍스트 편집 시나리오를 위한 API에서 텍스트 서식이 더욱 향상되어 이제 PDF 문서 내에 패턴 색상 공간으로 텍스트를 추가할 수 있습니다. com.aspose.pdf.Color 클래스는 텍스트에 음영 색상을 지정할 수 있는 새로운 메서드 `setPatternColorSpace`를 도입하여 더욱 향상되었습니다. 이 새로운 메서드는 다음 코드 스니펫에 표시된 대로 축 음영, 방사형 (타입 3) 음영 등 텍스트에 다양한 그라데이션 음영을 추가합니다:
+
+Use this example when unordered list formatting should be rendered from TeX markup.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Prepare the TeX list string with the `itemize` environment.
+
+1. 
+Add it as a `TeXFragment` and save the PDF.
+
 
 ```java
-public static void ApplyGradientShading() {
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("항상 올바르게 인쇄");
-    pdfDocument.getPages().accept(absorber);
-
-    TextFragment textFragment = absorber.getTextFragments().get_Item(1);
-
-    Color foregroundColor = new com.aspose.pdf.Color();
-    foregroundColor.setPatternColorSpace(new GradientAxialShading(Color.getRed(), Color.getBlue()));
-
-    // 패턴 색상 공간으로 새로운 색상 생성
-    textFragment.getTextState().setForegroundColor (foregroundColor);
-
-    textFragment.getTextState().setUnderline(true);
-
-    pdfDocument.save(_dataDir + "text_out.pdf");
+public static void createBulletListLatexVersion(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String texList = "Lists are easy to create: \\begin{itemize}"
+                + "\\item First item"
+                + "\\item Second item with more text to demonstrate wrapping behavior."
+                + "\\item Third item"
+                + "\\item Fourth item"
+                + "\\end{itemize}";
+        page.getParagraphs().add(new TeXFragment(texList));
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 
+Create a numbered list with LaTeX
 
-방사형 그라디언트를 적용하려면 위 코드 스니펫에서 `GradientRadialShading(startingColor, endingColor)`과 같은 `setPatternColorSpace` 메소드를 사용할 수 있습니다.
+
+
+Use this example when ordered list formatting should be rendered from TeX markup.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Prepare the TeX list string with the `enumerate` environment.
+
+1. 
+Add it as a `TeXFragment` and save the PDF.
+
 
 ```java
-public static void ApplyGradientShadingRadial() {
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("항상 올바르게 인쇄");
-    pdfDocument.getPages().accept(absorber);
-
-    TextFragment textFragment = absorber.getTextFragments().get_Item(1);
-
-    Color foregroundColor = new com.aspose.pdf.Color();
-    foregroundColor.setPatternColorSpace(new GradientRadialShading(Color.getRed(), Color.getBlue()));
-
-    // 패턴 색상 공간을 가진 새로운 색상 생성
-    textFragment.getTextState().setForegroundColor (foregroundColor);
-
-    textFragment.getTextState().setUnderline(true);
-
-    pdfDocument.save(_dataDir + "text_out.pdf");
+public static void createNumberedListLatexVersion(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String texList = "Lists are easy to create: \\begin{enumerate}"
+                + "\\item First item"
+                + "\\item Second item with more text to demonstrate wrapping behavior."
+                + "\\item Third item"
+                + "\\item Fourth item"
+                + "\\end{enumerate}";
+        page.getParagraphs().add(new TeXFragment(texList));
+        document.save(outputFile.toString());
+    }
 }
 ```
 
-## 플로팅 콘텐츠에 텍스트 정렬하는 방법
+## 
+Create a bullet list with text paragraphs
 
-Aspose.PDF는 플로팅 박스 요소 내부의 콘텐츠에 대한 텍스트 정렬 설정을 지원합니다.
- Aspose.Pdf.FloatingBox 인스턴스의 정렬 속성은 다음 코드 샘플과 같이 이를 달성하는 데 사용할 수 있습니다.
+
+
+Use this example when a manual bullet list should be built from plain text fragments.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Build a `TextParagraph` and append bullet-prefixed fragments.
+
+1. 
+Add the paragraph to the page and save the document.
+
 
 ```java
-public static void AlignTextToFloatContent() {
-    Document pdfDocument = new Document();
-    Page page = pdfDocument.getPages().add();
+public static void createBulletList(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String[] items = {
+                "First item in the list",
+                "Second item with more text to demonstrate wrapping behavior.",
+                "Third item",
+                "Fourth item"
+        };
 
-    FloatingBox floatBox = new FloatingBox(100, 100);
-    floatBox.setVerticalAlignment(VerticalAlignment.Bottom); // 수직 정렬을 아래로 설정
-    floatBox.setHorizontalAlignment (HorizontalAlignment.Right); // 수평 정렬을 오른쪽으로 설정
-    floatBox.getParagraphs().add(new TextFragment("FloatingBox_bottom")); // 텍스트 추가
-    floatBox.setBorder(new BorderInfo(BorderSide.All, Color.getBlue())); // 테두리 설정
-    
-    page.getParagraphs().add(floatBox);
+        TextBuilder builder = new TextBuilder(page);
+        TextParagraph paragraph = new TextParagraph();
+        paragraph.setRectangle(new Rectangle(80, 200, 400, 800, true));
+        paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
 
-    FloatingBox floatBox1 = new FloatingBox(100, 100);
-    floatBox1.setVerticalAlignment(VerticalAlignment.Center); // 수직 정렬을 중앙으로 설정
-    floatBox1.setHorizontalAlignment (HorizontalAlignment.Right); // 수평 정렬을 오른쪽으로 설정
-    floatBox1.getParagraphs().add(new TextFragment("FloatingBox_center")); // 텍스트 추가
-    floatBox1.setBorder (new BorderInfo(BorderSide.All, Color.getBlue())); // 테두리 설정
-    page.getParagraphs().add(floatBox1);
+        for (String item : items) {
+            TextFragment fragment = new TextFragment("- " + item);
+            fragment.getTextState().setFont(FontRepository.findFont("Times New Roman"));
+            fragment.getTextState().setFontSize(12);
+            paragraph.appendLine(fragment);
+        }
 
-    FloatingBox floatBox2 = new FloatingBox(100, 100);
-    floatBox2.setVerticalAlignment(VerticalAlignment.Top); // 수직 정렬을 위로 설정
-    floatBox2.setHorizontalAlignment (HorizontalAlignment.Right); // 수평 정렬을 오른쪽으로 설정
-    floatBox2.getParagraphs().add(new TextFragment("FloatingBox_top")); // 텍스트 추가
-    floatBox2.setBorder (new BorderInfo(BorderSide.All, Color.getBlue())); // 테두리 설정
-    page.getParagraphs().add(floatBox2);
+        builder.appendParagraph(paragraph);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-    pdfDocument.save(_dataDir + "FloatingBox_alignment_review_out.pdf"); // 문서 저장        
+## 
+Create a numbered list with text paragraphs
+
+
+
+Use this example when a manual numbered list should be built from plain text fragments.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Build a `TextParagraph` and append numbered fragments.
+
+1. 
+Add the paragraph to the page and save the document.
+
+
+```java
+public static void createNumberedList(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String[] items = {
+                "First item in the list",
+                "Second item with more text to demonstrate wrapping behavior.",
+                "Third item",
+                "Fourth item"
+        };
+
+        TextBuilder builder = new TextBuilder(page);
+        TextParagraph paragraph = new TextParagraph();
+        paragraph.setRectangle(new Rectangle(80, 200, 400, 800, true));
+        paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
+
+        for (int i = 0; i < items.length; i++) {
+            TextFragment fragment = new TextFragment((i + 1) + ". " + items[i]);
+            fragment.getTextState().setFont(FontRepository.findFont("Times New Roman"));
+            fragment.getTextState().setFontSize(12);
+            paragraph.appendLine(fragment);
+        }
+
+        builder.appendParagraph(paragraph);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Add a basic footnote
+
+
+
+Use this example when a text fragment should reference a simple footnote.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Create the main text fragment and assign a `Note` as a footnote.
+
+1. 
+Add any inline continuation text and save the document.
+
+
+```java
+public static void addFootnote(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with a footnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.setFootNote(new Note("This is the footnote content."));
+        page.getParagraphs().add(textFragment);
+
+        TextFragment inlineText = new TextFragment(" This is another text after footnote in the same paragraph.");
+        inlineText.setInLineParagraph(true);
+        inlineText.getTextState().setFont(FontRepository.findFont("Arial"));
+        inlineText.getTextState().setFontSize(14);
+        page.getParagraphs().add(inlineText);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Add a footnote with custom text style
+
+
+
+Use this example when footnote content should use its own font, size, and color settings.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Create the main text fragment and configure a styled footnote note.
+
+1. 
+Attach the note and save the PDF.
+
+
+```java
+public static void addFootnoteCustomTextStyle(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with a footnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+
+        Note note = new Note("This is the footnote content with custom text style.");
+        TextState noteTextState = new TextState();
+        noteTextState.setFont(FontRepository.findFont("Times New Roman"));
+        noteTextState.setFontSize(10);
+        noteTextState.setForegroundColor(Color.getRed());
+        noteTextState.setFontStyle(FontStyles.Italic);
+        note.setTextState(noteTextState);
+        textFragment.setFootNote(note);
+
+        page.getParagraphs().add(textFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Add a footnote with custom marker text
+
+
+
+Use this example when the visible footnote marker should be replaced with custom text.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Assign the footnote to the main text fragment and override its marker text.
+
+1. 
+Add the remaining content and save the document.
+
+
+```java
+public static void addFootnoteCustomText(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with a footnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.setFootNote(new Note("This is the footnote content."));
+        textFragment.getFootNote().setText("***");
+        page.getParagraphs().add(textFragment);
+
+        TextFragment anotherText = new TextFragment(" This is another text without footnote.");
+        anotherText.getTextState().setFont(FontRepository.findFont("Arial"));
+        anotherText.getTextState().setFontSize(14);
+        page.getParagraphs().add(anotherText);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Customize the footnote separator line
+
+
+
+Use this example when the line that separates footnotes from page content should be styled explicitly.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Configure the page note line style through `GraphInfo`.
+
+1. 
+Add text fragments with footnotes and save the document.
+
+
+```java
+public static void addFootnoteWithCustomLineStyle(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        GraphInfo graphInfo = new GraphInfo();
+        graphInfo.setLineWidth(2);
+        graphInfo.setColor(Color.getRed());
+        graphInfo.setDashArray(new int[] {3});
+        graphInfo.setDashPhase(1);
+        page.setNoteLineStyle(graphInfo);
+
+        TextFragment text1 = new TextFragment("This is a sample text with a footnote.");
+        text1.setFootNote(new Note("foot note for text 1"));
+        page.getParagraphs().add(text1);
+
+        TextFragment text2 = new TextFragment("This is yet another sample text with a footnote.");
+        text2.setFootNote(new Note("foot note for text 2"));
+        page.getParagraphs().add(text2);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Add a footnote with image and table content
+
+
+
+Use this example when the footnote itself should contain rich content such as images, text, and tables.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Build a `Note` object with an image, inline text, and a table.
+
+1. 
+Attach it to the main text fragment and save the document.
+
+
+```java
+public static void addFootnoteWithImageAndTable(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment text = new TextFragment("This is a sample text with a footnote.");
+        page.getParagraphs().add(text);
+
+        Note note = new Note();
+
+        Image imageNote = new Image();
+        imageNote.setFile(dataDir.resolve("logo.jpg").toString());
+        imageNote.setFixHeight(20);
+        imageNote.setFixWidth(20);
+        note.getParagraphs().add(imageNote);
+
+        TextFragment textNote = new TextFragment("This is the footnote content.");
+        textNote.getTextState().setFontSize(20);
+        textNote.setInLineParagraph(true);
+        note.getParagraphs().add(textNote);
+
+        Table table = new Table();
+        table.getRows().add().getCells().add("Cell 1,1");
+        table.getRows().add().getCells().add("Cell 1,2");
+        note.getParagraphs().add(table);
+
+        text.setFootNote(note);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Add an endnote
+
+
+
+Use this example when a text fragment should reference endnote content instead of a page footnote.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Assign an endnote to the main text fragment and add supporting body text.
+
+1. 
+Save the document with the generated endnote content.
+
+
+```java
+public static void addEndnote(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with an endnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.setEndNote(new Note("This is the EndNote content."));
+        page.getParagraphs().add(textFragment);
+
+        String textContent = loremText();
+        for (int i = 0; i < 5; i++) {
+            TextFragment text = new TextFragment(textContent);
+            text.getTextState().setFont(FontRepository.findFont("Arial"));
+            text.getTextState().setFontSize(14);
+            page.getParagraphs().add(text);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+
+private static String loremText() throws Exception {
+    Path loremPath = dataDir.resolve("lorem.txt");
+    return Files.exists(loremPath) ? Files.readString(loremPath) : "Lorem ipsum sample text not found.";
+}
+```
+
+## 
+Add an endnote with custom marker text
+
+
+
+Use this example when the endnote marker should use a custom visible label.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Assign an endnote to the main text fragment and override its marker text.
+
+1. 
+Add the remaining document text and save the PDF.
+
+
+```java
+public static void addEndnoteCustomText(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with an endnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.setEndNote(new Note("This is the EndNote content."));
+        textFragment.getEndNote().setText("***");
+        page.getParagraphs().add(textFragment);
+
+        String textContent = loremText();
+        for (int i = 0; i < 5; i++) {
+            TextFragment text = new TextFragment(textContent);
+            text.getTextState().setFont(FontRepository.findFont("Arial"));
+            text.getTextState().setFontSize(14);
+            page.getParagraphs().add(text);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Force table content onto a new page
+
+
+
+Use this example when formatted content should explicitly start on a new page.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Build a table and populate its rows.
+
+1. 
+Set the table to start on a new page and save the document.
+
+
+```java
+public static void forceNewPage(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        Table table = new Table();
+        table.setColumnWidths("150 150 150");
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All));
+
+        for (int i = 0; i < 5; i++) {
+            Row row = table.getRows().add();
+            row.getCells().add("Row " + (i + 1) + " - Col 1");
+            row.getCells().add("Row " + (i + 1) + " - Col 2");
+            row.getCells().add("Row " + (i + 1) + " - Col 3");
+        }
+
+        table.setInNewPage(true);
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Mix inline content inside one paragraph flow
+
+
+
+Use this example when text and images should continue inside the same paragraph flow.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Add the first text fragment, then an inline image, then another inline text fragment.
+
+1. 
+Add any following standalone paragraph and save the document.
+
+
+```java
+public static void usingInlineParagraphProperty(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment fragment1 = new TextFragment("This is the first part of the paragraph. ");
+        fragment1.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment1.getTextState().setFontSize(14);
+        page.getParagraphs().add(fragment1);
+
+        Image image = new Image();
+        image.setInLineParagraph(true);
+        image.setFile(dataDir.resolve("logo.jpg").toString());
+        image.setFixHeight(30);
+        image.setFixWidth(30);
+        page.getParagraphs().add(image);
+
+        TextFragment fragment2 = new TextFragment("This is the second part of the same paragraph.");
+        fragment2.setInLineParagraph(true);
+        fragment2.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment2.getTextState().setFontSize(14);
+        page.getParagraphs().add(fragment2);
+
+        TextFragment fragment3 = new TextFragment("This is a new paragraph.");
+        fragment3.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment3.getTextState().setFontSize(14);
+        page.getParagraphs().add(fragment3);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Create a multi-column text layout
+
+
+
+Use this example when article-style text should flow through multiple columns.
+
+
+1. 
+Create a new PDF document and configure page margins.
+
+1. 
+Add the heading content and create a multi-column `FloatingBox`.
+
+1. 
+Fill it with text and save the final PDF.
+
+
+```java
+public static void createMultiColumnPdf(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        document.getPageInfo().getMargin().setLeft(40);
+        document.getPageInfo().getMargin().setRight(40);
+        Page page = document.getPages().add();
+
+        com.aspose.pdf.drawing.Graph graph1 = new com.aspose.pdf.drawing.Graph(500.0, 2.0);
+        page.getParagraphs().add(graph1);
+        graph1.getShapes().addItem(new com.aspose.pdf.drawing.Line(new float[] {1.0f, 2.0f, 500.0f, 2.0f}));
+
+        String html = "<span style=\"font-family: 'Times New Roman'; font-size: 18px;\"><strong>How to Steer Clear of money scams</strong></span>";
+        page.getParagraphs().add(new HtmlFragment(html));
+
+        FloatingBox box = new FloatingBox();
+        box.getColumnInfo().setColumnCount(2);
+        box.getColumnInfo().setColumnSpacing("5");
+        box.getColumnInfo().setColumnWidths("105 105");
+
+        TextFragment text1 = new TextFragment("By A Googler (The Official Google Blog)");
+        text1.getTextState().setFontSize(8);
+        text1.getTextState().setLineSpacing(2);
+        box.getParagraphs().add(text1);
+
+        text1.getTextState().setFontSize(10);
+        text1.getTextState().setFontStyle(FontStyles.Italic);
+
+        com.aspose.pdf.drawing.Graph graph2 = new com.aspose.pdf.drawing.Graph(50.0, 10.0);
+        graph2.getShapes().addItem(new com.aspose.pdf.drawing.Line(new float[] {1.0f, 10.0f, 100.0f, 10.0f}));
+        box.getParagraphs().add(graph2);
+
+        String loremText = loremText();
+        box.getParagraphs().add(new TextFragment(loremText.repeat(5)));
+        page.getParagraphs().add(box);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Create aligned text with custom tab stops
+
+
+
+Use this example when text should align like a simple table by using tab stop positions.
+
+
+1. 
+Create a new PDF document and add a page.
+
+1. 
+Configure the tab stops with alignment and leader settings.
+
+1. 
+Create the text fragments that use those tab stops and save the document.
+
+```java
+public static void customTabStops(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TabStops tabStops = new TabStops();
+        TabStop tabStop1 = tabStops.add(100);
+        tabStop1.setAlignmentType(TabAlignmentType.Right);
+        tabStop1.setLeaderType(TabLeaderType.Solid);
+
+        TabStop tabStop2 = tabStops.add(200);
+        tabStop2.setAlignmentType(TabAlignmentType.Center);
+        tabStop2.setLeaderType(TabLeaderType.Dash);
+
+        TabStop tabStop3 = tabStops.add(300);
+        tabStop3.setAlignmentType(TabAlignmentType.Left);
+        tabStop3.setLeaderType(TabLeaderType.Dot);
+
+        TextFragment header = new TextFragment("This is an example of forming table with TAB stops", tabStops);
+        TextFragment text0 = new TextFragment("#$TABHead1 #$TABHead2 #$TABHead3", tabStops);
+        TextFragment text1 = new TextFragment("#$TABdata11 #$TABdata12 #$TABdata13", tabStops);
+
+        TextFragment text2 = new TextFragment("#$TABdata21 ", tabStops);
+        text2.getSegments().add(new TextSegment("#$TAB"));
+        text2.getSegments().add(new TextSegment("data22 "));
+        text2.getSegments().add(new TextSegment("#$TAB"));
+        text2.getSegments().add(new TextSegment("data23"));
+
+        page.getParagraphs().add(header);
+        page.getParagraphs().add(text0);
+        page.getParagraphs().add(text1);
+        page.getParagraphs().add(text2);
+
+        document.save(outputFile.toString());
+    }
 }
 ```

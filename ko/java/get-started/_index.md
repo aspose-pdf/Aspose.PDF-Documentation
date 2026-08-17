@@ -3,47 +3,28 @@ title: 시작하기
 linktitle: 시작하기
 type: docs
 weight: 30
-url: /ko/java/get-started/
-description: 이 섹션은 DOM API의 기본 원칙을 설명합니다. 또한 PDF 문서를 생성하는 간단하고 복잡한 예제를 보여줍니다
-lastmod: "2021-06-05"
+url: /java/get-started/
+description: Java용 Aspose.PDF를 시작하여 PDF 문서를 만들고 텍스트, 이미지, 표로 고급 예제를 작성하는 방법을 알아보세요.
+is_node: true
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
-이 시작하기 섹션에서 Aspose.PDF for Java 라이브러리의 가장 기본적인 기능과 요구 사항을 조사하십시오.
-
-Aspose.PDF에 대해 더 알아보려면 적절한 섹션을 선택하십시오:
-
-[왜 Aspose.PDF인가](/pdf/ko/java/why-aspose-pdf/) – 예를 들어, Microsoft Office Automation 또는 Open XML SDK보다 Aspose 제품을 사용하는 것이 더 나을 수 있는 이유를 설명합니다
-
-[설치](/pdf/ko/java/installation/) – Aspose.PDF를 설치하는 방법에 대한 정보를 제공합니다
-
-[시스템 요구 사항](/pdf/ko/java/system-requirements/) – 시스템 및 개발 환경 요구 사항에 대한 정보를 제공합니다
+Aspose.PDF for Java는 Java 애플리케이션에서 PDF 문서를 생성, 로드, 편집, 변환 및 저장하는 데 필요한 핵심 API를 제공합니다.
 
 
-[헬로 월드](/pdf/ko/java/hello-world-example/) – Java와 Aspose.PDF를 사용하여 간단한 PDF 문서를 만드는 방법에 대한 정보를 제공합니다
 
-[예제 실행 방법](/pdf/ko/java/how-to-run-other-examples/) – 예제를 다운로드하고 실행하는 방법과 필요한 소프트웨어 요구 사항을 설명합니다
-
-[복잡한 PDF](/pdf/ko/java/complex-pdf-example/) – Java 라이브러리를 사용하여 더 복잡한 문서를 만드는 방법을 설명합니다
-
-[지원되는 문서 형식](/pdf/ko/java/supported-file-formats/) – 지원되는 형식에 대한 정보를 제공합니다
-
-[지원되는 기능](/pdf/ko/java/key-features/) – 다양한 형식으로 문서를 로드하거나 저장할 때 지원되는 기능에 대한 정보를 제공합니다
-
-[라이선스 및 구독](/pdf/ko/java/licensing/) – 라이선스를 적용하고 여러 Aspose 제품을 사용하는 방법에 대한 정보를 제공합니다
-
-[기술 지원](/pdf/ko/java/technical-support/) – 이 페이지는 작업을 신속하고 품질 있게 해결하기 위한 권장 사항을 제공합니다
-
-[고급 기능](/pdf/ko/java/advanced-features/) – Aspose.PDF for Java를 사용하여 PDF 문서에서 LaTeX 태그를 사용하는 방법에 대한 정보를 제공합니다
+이 섹션에서는 Java 예제 프로젝트의 두 가지 소스 기반 예제가 포함된 라이브러리를 소개합니다.
 
 
-[Aspose.PDF DOM API의 기본 사항](/pdf/ko/java/basics-of-dom-api/) – 이 섹션은 DOM 작업의 기능과 객체 지향 모델로서의 구조화된 문서의 표현 형태를 보여줍니다
+- 
+[Hello World 예제](/pdf/java/hello-world-example/) - 간단한 PDF 문서를 만들고 페이지에 스타일이 지정된 텍스트 조각을 배치합니다.
 
-### 자세히 알아보기:
+- 
+[복잡한 PDF 만들기](/pdf/java/complex-pdf-example/) - 이미지, 위치가 지정된 텍스트, 서식이 지정된 표를 사용하여 더욱 풍부한 PDF를 만듭니다.
 
-- [DOM API의 기본](/pdf/ko/java/basics-of-dom-api/)
-- ["Hello, World" Java 예제](/pdf/ko/java/hello-world-example/)
-- [복합 PDF](/pdf/ko/java/complex-pdf-example/)
-- [다른 예제 실행 방법](/pdf/ko/java/how-to-run-other-examples/)
+
+
+텍스트, 이미지, 페이지, 양식 및 변환에 대한 더 광범위한 Java 문서 섹션으로 이동하기 전에 이러한 예제를 출발점으로 사용하십시오.

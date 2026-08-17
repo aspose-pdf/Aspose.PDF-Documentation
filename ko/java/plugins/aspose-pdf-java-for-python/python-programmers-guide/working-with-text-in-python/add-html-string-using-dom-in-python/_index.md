@@ -1,18 +1,23 @@
 ---
-title: 파이썬에서 DOM을 사용하여 HTML 문자열 추가
+title: Python에서 DOM을 사용하여 HTML 문자열 추가
+linktitle: Python에서 DOM을 사용하여 HTML 문자열 추가
 type: docs
 weight: 10
-url: /ko/java/add-html-string-using-dom-in-python/
-lastmod: "2021-06-05"
-description: 파이썬의 PDF 파일 형식 라이브러리를 사용하여 DOM에 HTML 문자열을 추가하는 방법을 설명합니다
+url: /java/add-html-string-using-dom-in-python/
+lastmod: "2026-06-09"
+description: PDF 파일 형식 라이브러리와 함께 Python을 사용하여 DOM에 HTML 문자열을 추가하는 방법을 설명합니다.
 ---
+## 
+Python을 사용하여 PDF DOM에 HTML 문자열 추가
 
-## 파이썬에서 PDF DOM에 HTML 문자열 추가
-**Aspose.PDF Java for Python**을 사용하여 PDF 문서에 HTML 문자열을 추가하려면, **AddHtml** 모듈을 호출하십시오.
+
+
+**Aspose.PDF Java for Python**을 사용하여 PDF 문서에 HTML 문자열을 추가하려면 **AddHtml** 모듈을 호출하기만 하면 됩니다.
+
 
 ```python
 
-# Document 객체 인스턴스화
+# Instantiate Document object
 doc=self.Document()
 page=doc.getPages().add()
 
@@ -22,20 +27,25 @@ margin=self.MarginInfo()
 #margin.setBottom(10)
 #margin.setTop(200)
 
-# 여백 정보 설정
+# Set margin information
 title.setMargin(margin)
 
-# 페이지의 단락 컬렉션에 HTML 조각 추가
+# Add HTML Fragment to paragraphs collection of page
 page.getParagraphs().add(title)
 
-# PDF 파일 저장
+# Save PDF file
 doc.save(self.dataDir + 'html.output.pdf')
 
-print "HTML이 성공적으로 추가되었습니다"
+print "HTML added successfully"
 ```
+
 
 **실행 코드 다운로드**
 
-아래 언급된 소셜 코딩 사이트 중 하나에서 **Add HTML (Aspose.PDF)**를 다운로드하십시오:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddHtml/AddHtml.py)
+
+아래에 언급된 소셜 코딩 사이트 중 하나에서 HTML(Aspose.PDF) 추가**를 다운로드하세요.
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddHtml/AddHtml.py)

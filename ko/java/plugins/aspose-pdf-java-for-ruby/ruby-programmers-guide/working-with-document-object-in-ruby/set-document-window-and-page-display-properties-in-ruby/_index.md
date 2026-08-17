@@ -1,80 +1,95 @@
 ---
 title: Ruby에서 문서 창 및 페이지 표시 속성 설정
+linktitle: Ruby에서 문서 창 및 페이지 표시 속성 설정
 type: docs
 weight: 100
-url: /ko/java/set-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/set-document-window-and-page-display-properties-in-ruby/
+description: Ruby 및 Aspose.PDF를 사용하여 PDF의 문서 및 페이지 표시 설정을 사용자 정의하세요.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - 문서 창 및 페이지 표시 속성 설정
 
-## Aspose.PDF - 문서 창 및 페이지 표시 속성 설정
 
-**Aspose.PDF Java for Ruby**를 사용하여 Pdf 문서의 문서 창 및 페이지 표시 속성을 설정하려면, 간단히 **SetDocumentWindow** 모듈을 호출하십시오.
+
+**Aspose.PDF Java for Ruby**를 사용하여 PDF 문서의 문서 창 및 페이지 표시 속성을 설정하려면 **SetDocumentWindow** 모듈을 호출하기만 하면 됩니다.
+
+
 
 루비 코드
 
+
 ```java
-# 문서 디렉토리 경로.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# PDF 문서를 엽니다.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# 다양한 문서 속성을 설정합니다.
+# Set different document properties
 
-# 문서 창의 위치 - 기본값: false
+# Position of document's window - Default: false
 
 doc.setCenterWindow(true)
 
-# 주요 읽기 순서; 페이지의 위치를 결정합니다.
+# Predominant reading order; determine the position of page
 
-# 나란히 표시될 때 - 기본값: L2R
+# when displayed side by side - Default: L2R
 
 #doc.setDirection(Rjb::import('com.aspose.pdf.Direction.L2R'))
 
-# 창의 제목 표시줄이 문서 제목을 표시할지 여부.
+# Whether window's title bar should display document title.
 
-# false인 경우 제목 표시줄은 PDF 파일 이름을 표시합니다 - 기본값: false
+# If false, title bar displays PDF file name - Default: false
 
 doc.setDisplayDocTitle(true)
 
-# 첫 번째 표시된 페이지 크기에 맞게 문서 창 크기를 조정할지 여부 - 기본값: false
+# Whether to resize the document's window to fit the size of
+
+# first displayed page - Default: false
 
 doc.setFitWindow(true)
 
-# 뷰어 애플리케이션의 메뉴 바를 숨길지 여부 - 기본값: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 doc.setHideMenubar(true)
 
-# 뷰어 애플리케이션의 도구 바를 숨길지 여부 - 기본값: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 doc.setHideToolBar(true)
 
-# 스크롤 바와 같은 UI 요소를 숨기고 페이지 내용만 표시할지 여부 - 기본값: false
+# Whether to hide UI elements like scroll bars
+
+# and leaving only the page contents displayed - Default: false
 
 doc.setHideWindowUI(true)
 
-# 문서의 페이지 모드. 전체 화면 모드를 종료할 때 문서를 어떻게 표시할지.
+# The document's page mode. How to display document on exiting full-screen mode.
 
 doc.setNonFullScreenPageMode(Rjb::import('com.aspose.pdf.PageMode.UseOC'))
 
-# 페이지 레이아웃, 즉 단일 페이지, 한 열.
+# The page layout i.e. single page, one column
 
 doc.setPageLayout(Rjb::import('com.aspose.pdf.PageLayout.TwoColumnLeft'))
 
-# 문서를 열 때 어떻게 표시할지.
+# How the document should display when opened.
 
 doc.setPageMode()
 
-# 업데이트된 PDF 파일 저장
+# Save updated PDF file
 
 doc.save(data_dir + "Set Document Window.pdf")
 ```
 
+## 
+실행 코드 다운로드
 
-## 코드 실행 다운로드
 
-아래 언급된 소셜 코딩 사이트 중 하나에서 **문서 창 및 페이지 표시 속성 설정 (Aspose.PDF)**을 다운로드하세요:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)
+아래에 언급된 소셜 코딩 사이트에서 **문서 창 및 페이지 표시 속성 설정(Aspose.PDF)**을 다운로드하세요.
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

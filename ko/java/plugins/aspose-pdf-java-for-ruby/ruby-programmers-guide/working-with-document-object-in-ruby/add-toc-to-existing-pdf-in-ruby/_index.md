@@ -1,94 +1,105 @@
 ---
-title: 기존 PDF에 목차 추가하기 - Ruby
+title: Ruby의 기존 PDF에 TOC 추가
+linktitle: Ruby의 기존 PDF에 TOC 추가
 type: docs
 weight: 30
-url: /ko/java/add-toc-to-existing-pdf-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-ruby/
+description: 향상된 문서 탐색을 위해 Aspose.PDF를 사용하여 Ruby에서 기존 PDF에 목차를 추가하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - 목차 추가
 
-## Aspose.PDF - 목차 추가
 
-<ins>**Aspose.PDF Java for Ruby**를 사용하여 PDF 문서에 목차를 추가하려면, **AddToc** 모듈을 호출하세요.
 
-Ruby 코드
+<ins> **Aspose.PDF Java for Ruby**를 사용하여 PDF 문서에 목차를 추가하려면 **AddToc** 모듈을 호출하기만 하면 됩니다.
+
+
+
+루비 코드
+
 
 ```java
-# 문서 디렉토리의 경로입니다.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# PDF 문서를 엽니다.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# PDF 파일의 첫 번째 페이지에 접근합니다.
+# Get access to first page of PDF file
 
 toc_page = doc.getPages().insert(1)
 
-# 목차 정보를 나타내는 객체를 생성합니다.
+# Create object to represent TOC information
 
 toc_info = Rjb::import('com.aspose.pdf.TocInfo').new
 
-title = Rjb::import('com.aspose.pdf.TextFragment').new("목차")
+title = Rjb::import('com.aspose.pdf.TextFragment').new("Table Of Contents")
 
 title.getTextState().setFontSize(20)
 
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# 목차의 제목을 설정합니다.
+# Set the title for TOC
 
 toc_info.setTitle(title)
 
 toc_page.setTocInfo(toc_info)
 
-# 목차 요소로 사용할 문자열 객체를 생성합니다.
+# Create string objects which will be used as TOC elements
 
-titles = Array["첫 번째 페이지", "두 번째 페이지"]
+titles = Array["First page", "Second page"]
 
 i = 0
 
 while i < 2
 
-    # Heading 객체를 생성합니다.
+В В В  # Create Heading object
 
-    heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+В В В  heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
 
-    segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+В В В  segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
 
-    heading2.setTocPage(toc_page)
+В В В  heading2.setTocPage(toc_page)
 
-    heading2.getSegments().add(segment2)
+В В В  heading2.getSegments().add(segment2)
 
-    # Heading 객체의 대상 페이지를 지정합니다.
+В В В  # Specify the destination page for heading object
 
-    heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
+В В В  heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-    # 대상 페이지
+В В В  # Destination page
 
-    heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
+В В В  heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-    # 대상 좌표
+В В В  # Destination coordinate
 
-    segment2.setText(titles[i])
+В В В  segment2.setText(titles[i])
 
-    # 목차를 포함하는 페이지에 Heading을 추가합니다.
+В В В  # Add heading to page containing TOC
 
-    toc_page.getParagraphs().add(heading2)
+В В В  toc_page.getParagraphs().add(heading2)
 
-    i +=1
+В В В  i +=1
 
 end
 
-# PDF 문서를 저장합니다.
+# Save PDF Document
 
 doc.save(data_dir + "TOC.pdf")
 
-puts "목차를 성공적으로 추가했습니다. 출력 파일을 확인하세요."
+puts "Added TOC Successfully, please check the output file."
 ```
 
+## 
+<ins> **실행 코드 다운로드
 
-## <ins> **실행 코드 다운로드
 
-**Add TOC (Aspose.PDF)**를 아래 언급된 소셜 코딩 사이트 중 하나에서 다운로드하십시오:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)
+아래에 언급된 소셜 코딩 사이트 중 하나에서 В **TOC 추가(Aspose.PDF)**В를 다운로드하세요.
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

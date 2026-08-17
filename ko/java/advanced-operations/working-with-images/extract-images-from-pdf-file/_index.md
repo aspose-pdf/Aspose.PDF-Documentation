@@ -1,51 +1,83 @@
 ---
-title: PDF 파일에서 이미지 추출
+title: Java를 사용하여 PDF 파일에서 이미지 추출
 linktitle: 이미지 추출
 type: docs
 weight: 30
-url: /ko/java/extract-images-from-pdf-file/
-description: 이 섹션에서는 Java 라이브러리를 사용하여 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
-lastmod: "2021-06-05"
+url: /java/extract-images-from-pdf-file/
+description: Java에서 PDF 파일에 포함된 이미지를 추출하는 방법을 알아보세요.
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: Java를 사용하여 PDF 파일에서 이미지 추출
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에서 이미지를 추출하는 방법을 보여줍니다. 페이지에서 특정 이미지 리소스를 저장하고 선택한 직사각형 영역 내에 있는 이미지를 내보내는 방법을 다룹니다.
 ---
 
-각 페이지는 [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) 컬렉션을 보유하고 있으며, 이는 다시 페이지의 모든 이미지가 저장되는 Images 컬렉션을 보유합니다. [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage) 객체는 Images 컬렉션에서 주어진 이미지를 가져옵니다.
+Aspose.PDF for Java는 직접적인 이미지 리소스 추출 및 배치 기반 필터링을 지원합니다.
 
-페이지에서 이미지를 추출하려면:
 
-이미지 인덱스를 사용하여 Images 컬렉션에서 이미지를 가져옵니다.
-추출한 이미지를 저장하기 위해 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage) 객체의 save(..) 메소드를 사용합니다.
+## 
+인덱스별로 삽입된 이미지 추출
 
-다음 코드 스니펫은 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
+
+
+PDF 페이지에서 특정 이미지 리소스를 저장해야 할 때 이 예를 사용하세요.
+
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+페이지 리소스에서 대상 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/)에 액세스합니다.
+
+1. 
+이미지 스트림을 출력 파일에 저장합니다.
+
 
 ```java
-package com.aspose.pdf.examples;
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
+    }
+}
+```
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+## 
+특정 페이지 영역에서 이미지 추출
 
-import com.aspose.pdf.*;
-import com.aspose.pdf.internal.html.rendering.image.ImageFormat;
 
-public class ExampleExtractImages {
 
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+선택한 직사각형 내부에 배치된 이미지만 내보내야 하는 경우 이 예를 사용하십시오.
 
-    public static void ExtractImages() throws IOException {
 
-        // 문서 열기
-        Document pdfDocument = new Document(_dataDir + "ExtractImages.pdf");
+1. 
+대상 [사각형](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/)을 정의하고 소스 PDF를 엽니다.
 
-        // 특정 이미지 추출
-        XImage xImage = pdfDocument.getPages().get_Item(1).getResources().getImages().get_Item(1);
+1. 
+[ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/)를 사용하여 페이지의 이미지 배치를 검사하세요.
 
-        FileOutputStream outputImage = new FileOutputStream(_dataDir + "output.jpg");
+1. 
+선택한 영역 내에 위치가 맞는 이미지만 저장합니다.
 
-        // 출력 이미지 저장
-        xImage.save(outputImage, ImageFormat.Jpeg);
-        outputImage.close();
+```java
+public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {
+    Rectangle rectangle = new Rectangle(0, 0, 590, 590, true);
 
-        // 업데이트된 PDF 파일 저장
-        pdfDocument.save(_dataDir + "ExtractImages_out.pdf");
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+        int index = 1;
+        for (ImagePlacement imagePlacement : absorber.getImagePlacements()) {
+            Point point1 = new Point(imagePlacement.getRectangle().getLLX(), imagePlacement.getRectangle().getLLY());
+            Point point2 = new Point(imagePlacement.getRectangle().getURX(), imagePlacement.getRectangle().getURX());
+            if (rectangle.contains(point1, true) && rectangle.contains(point2, true)) {
+                Path indexedOutputFile = Path.of(outputFile.toString().replace("index", String.valueOf(index)));
+                try (OutputStream outputImage = Files.newOutputStream(indexedOutputFile)) {
+                    imagePlacement.getImage().save(outputImage);
+                }
+                index++;
+            }
+        }
     }
 }
 ```
