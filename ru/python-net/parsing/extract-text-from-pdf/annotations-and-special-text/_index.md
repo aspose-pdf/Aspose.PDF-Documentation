@@ -1,5 +1,5 @@
 ---
-title: Извлеките аннотации и специальный текст с помощью Python
+title: Извлечение аннотаций и специального текста с помощью Python
 linktitle: Аннотации и специальный текст
 type: docs
 weight: 40
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Извлеките текст из stamp-аннотаций
+## Извлечение текста из stamp-аннотаций
 
 Используйте [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber), чтобы извлекать текст, встроенный в поток внешнего вида [StampAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/stampannotation). Это полезно, когда содержимое штампа визуализируется как form XObject, а не хранится как обычный текст.
 
@@ -51,7 +51,7 @@ def extract_text_from_stamp(infile, page_number, annotation_index, outfile):
         document.close()
 ```
 
-## Извлеките выделенный текст
+## Извлечение выделенного текста
 
 Переберите аннотации страницы и используйте [HighlightAnnotation.get_marked_text()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation), чтобы читать текстовые фрагменты, покрытые каждым выделением. Коллекция аннотаций страницы индексируется с 1.
 
@@ -86,7 +86,7 @@ def extract_highlight_text(infile):
             print(highlight_annotation.get_marked_text())
 ```
 
-## Извлеките надстрочный и подстрочный текст
+## Извлечение надстрочного и подстрочного текста
 
 Надстрочные и подстрочные элементы часто встречаются в формулах, математических выражениях и названиях химических соединений. Aspose.PDF for Python via .NET поддерживает извлечение такого содержимого через [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber), который определяет метаданные позиционирования на уровне символов.
 

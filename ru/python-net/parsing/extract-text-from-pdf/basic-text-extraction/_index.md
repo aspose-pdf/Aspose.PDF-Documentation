@@ -1,6 +1,6 @@
 ---
-title: Извлеките текст базовым способом с помощью Python
-linktitle: Извлеките текст базовым способом
+title: Извлечение текста базовым способом с помощью Python
+linktitle: Извлечение текста базовым способом
 type: docs
 weight: 10
 url: /ru/python-net/basic-text-extraction/
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Извлеките текст со всех страниц PDF-документа
+## Извлечение текста со всех страниц PDF-документа
 
 Используйте [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber), чтобы собрать весь текст со всех страниц PDF-документа и записать его в текстовый файл. Этот подход хорошо подходит для преобразования PDF в пригодный для поиска текст, анализа содержимого или подготовки данных для индексирования и последующей обработки.
 
@@ -46,7 +46,7 @@ def extract_text_from_all_pages(infile, outfile):
         tw.write(extracted_text)
 ```
 
-## Извлеките текст с определённой страницы
+## Извлечение текста с определённой страницы
 
 Примените [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber) к одной странице, чтобы изолировать и сохранить текст из нужной части многостраничного документа. Это полезно, когда содержимое требуется только с одной страницы, например из счёта, раздела отчёта или сводки формы.
 
@@ -77,7 +77,7 @@ def extract_text_from_page(infile, outfile, page_number):
         tw.write(extracted_text)
 ```
 
-## Извлеките абзацы с помощью их перебора
+## Извлечение абзацев с помощью их перебора
 
 Используйте [ParagraphAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/), если вам нужно извлечение с учётом структуры абзацев, а не только плоский текст страницы. В отличие от [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) и [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/), этот API организует результат по страницам, разделам и абзацам, что удобно для текстового анализа, структурированного экспорта и обработки с учётом макета.
 

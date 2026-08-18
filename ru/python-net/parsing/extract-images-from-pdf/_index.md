@@ -1,6 +1,6 @@
 ---
-title: Извлеките изображения из PDF с помощью Python
-linktitle: Извлеките изображения из PDF
+title: Извлечение изображений из PDF с помощью Python
+linktitle: Извлечение изображений из PDF
 type: docs
 weight: 20
 url: /ru/python-net/extract-images-from-the-pdf-file/

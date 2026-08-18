@@ -1,6 +1,6 @@
 ---
-title: Извлеките шрифты из PDF с помощью Python
-linktitle: Извлеките шрифты из PDF
+title: Извлечение шрифтов из PDF с помощью Python
+linktitle: Извлечение шрифтов из PDF
 type: docs
 weight: 30
 url: /ru/python-net/extract-fonts-from-pdf/

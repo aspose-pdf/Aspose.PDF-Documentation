@@ -1,6 +1,6 @@
 ---
-title: Извлеките текст из PDF с помощью Python
-linktitle: Извлеките текст из PDF
+title: Извлечение текста из PDF с помощью Python
+linktitle: Извлечение текста из PDF
 type: docs
 weight: 10
 url: /ru/python-net/extract-text-from-pdf/
