@@ -1,56 +1,56 @@
 ---
-title: Obter Propriedades da Página em Ruby
+title: Obtenha propriedades da página em Ruby
+linktitle: Obtenha propriedades da página em Ruby
 type: docs
 weight: 50
-url: /pt/java/get-page-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-ruby/
+description: Aprenda como recuperar propriedades de página em um arquivo PDF usando Ruby com Aspose.PDF para gerenciar e manipular seus documentos com eficiência.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Obtenha propriedades da página
 
-## Aspose.PDF - Obter Propriedades da Página
-
-Para obter propriedades da página de um documento Pdf usando **Aspose.PDF Java for Ruby**, simplesmente invoque o módulo **GetPageProperties**.
+Para obter as propriedades da página do documento PDF usando **Aspose.PDF Java para Ruby**, basta invocar o módulo **GetPageProperties**.
 
 Código Ruby
 
 ```java
-# O caminho para o diretório de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Criar documento PDF
+# Create PDF document
 
 pdf_document = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# obter coleção de páginas
+# get page collection
 
 page_collection = pdf_document.getPages()
 
-# obter página específica
+# get particular page
 
 pdf_page = page_collection.get_Item(1)
 
-#obter propriedades da página
+#get page properties
 
-puts "ArtBox : Altura = " + pdf_page.getArtBox().getHeight().to_s + ", Largura = " + pdf_page.getArtBox().getWidth().to_s + ", LLX = " + pdf_page.getArtBox().getLLX().to_s + ", LLY = " + pdf_page.getArtBox().getLLY().to_s + ", URX = " + pdf_page.getArtBox().getURX().to_s + ", URY = " + pdf_page.getArtBox().getURY().to_s
+puts "ArtBox : Height = " + pdf_page.getArtBox().getHeight().to_s + ", Width = " + pdf_page.getArtBox().getWidth().to_s + ", LLX = " + pdf_page.getArtBox().getLLX().to_s + ", LLY = " + pdf_page.getArtBox().getLLY().to_s + ", URX = " + pdf_page.getArtBox().getURX().to_s + ", URY = " + pdf_page.getArtBox().getURY().to_s
 
-puts "BleedBox : Altura = " + pdf_page.getBleedBox().getHeight().to_s + ", Largura = " + pdf_page.getBleedBox().getWidth().to_s + ", LLX = " + pdf_page.getBleedBox().getLLX().to_s + ", LLY = " + pdf_page.getBleedBox().getLLY().to_s + ", URX = " + pdf_page.getBleedBox().getURX().to_s + ", URY = " + pdf_page.getBleedBox().getURY().to_s
+puts "BleedBox : Height = " + pdf_page.getBleedBox().getHeight().to_s + ", Width = " + pdf_page.getBleedBox().getWidth().to_s + ", LLX = " + pdf_page.getBleedBox().getLLX().to_s + ", LLY = " + pdf_page.getBleedBox().getLLY().to_s + ", URX = " + pdf_page.getBleedBox().getURX().to_s + ", URY = " + pdf_page.getBleedBox().getURY().to_s
 
-puts "CropBox : Altura = " + pdf_page.getCropBox().getHeight().to_s + ", Largura = " + pdf_page.getCropBox().getWidth().to_s + ", LLX = " + pdf_page.getCropBox().getLLX().to_s + ", LLY = " + pdf_page.getCropBox().getLLY().to_s + ", URX = " + pdf_page.getCropBox().getURX().to_s + ", URY = " + pdf_page.getCropBox().getURY().to_s
+puts "CropBox : Height = " + pdf_page.getCropBox().getHeight().to_s + ", Width = " + pdf_page.getCropBox().getWidth().to_s + ", LLX = " + pdf_page.getCropBox().getLLX().to_s + ", LLY = " + pdf_page.getCropBox().getLLY().to_s + ", URX = " + pdf_page.getCropBox().getURX().to_s + ", URY = " + pdf_page.getCropBox().getURY().to_s
 
-puts "MediaBox : Altura = " + pdf_page.getMediaBox().getHeight().to_s + ", Largura = " + pdf_page.getMediaBox().getWidth().to_s + ", LLX = " + pdf_page.getMediaBox().getLLX().to_s + ", LLY = " + pdf_page.getMediaBox().getLLY().to_s + ", URX = " + pdf_page.getMediaBox().getURX().to_s + ", URY = " + pdf_page.getMediaBox().getURY().to_s
+puts "MediaBox : Height = " + pdf_page.getMediaBox().getHeight().to_s + ", Width = " + pdf_page.getMediaBox().getWidth().to_s + ", LLX = " + pdf_page.getMediaBox().getLLX().to_s + ", LLY = " + pdf_page.getMediaBox().getLLY().to_s + ", URX = " + pdf_page.getMediaBox().getURX().to_s + ", URY = " + pdf_page.getMediaBox().getURY().to_s
 
-puts "TrimBox : Altura = " + pdf_page.getTrimBox().getHeight().to_s + ", Largura = " + pdf_page.getTrimBox().getWidth().to_s + ", LLX = " + pdf_page.getTrimBox().getLLX().to_s + ", LLY = " + pdf_page.getTrimBox().getLLY().to_s + ", URX = " + pdf_page.getTrimBox().getURX().to_s + ", URY = " + pdf_page.getTrimBox().getURY().to_s
+puts "TrimBox : Height = " + pdf_page.getTrimBox().getHeight().to_s + ", Width = " + pdf_page.getTrimBox().getWidth().to_s + ", LLX = " + pdf_page.getTrimBox().getLLX().to_s + ", LLY = " + pdf_page.getTrimBox().getLLY().to_s + ", URX = " + pdf_page.getTrimBox().getURX().to_s + ", URY = " + pdf_page.getTrimBox().getURY().to_s
 
-puts "Rect : Altura = " + pdf_page.getRect().getHeight().to_s + ", Largura = " + pdf_page.getRect().getWidth().to_s + ", LLX = " + pdf_page.getRect().getLLX().to_s + ", LLY = " + pdf_page.getRect().getLLY().to_s + ", URX = " + pdf_page.getRect().getURX().to_s + ", URY = " + pdf_page.getRect().getURY().to_s
+puts "Rect : Height = " + pdf_page.getRect().getHeight().to_s + ", Width = " + pdf_page.getRect().getWidth().to_s + ", LLX = " + pdf_page.getRect().getLLX().to_s + ", LLY = " + pdf_page.getRect().getLLY().to_s + ", URX = " + pdf_page.getRect().getURX().to_s + ", URY = " + pdf_page.getRect().getURY().to_s
 
-puts "Número da Página :- " + pdf_page.getNumber().to_s
+puts "Page Number :- " + pdf_page.getNumber().to_s
 
-puts "Rotação :-" + pdf_page.getRotate().to_s
+puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
+## Baixar código em execução
 
-## Download Running Code
-
-Baixar **Obter Propriedades da Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Obter propriedades da página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

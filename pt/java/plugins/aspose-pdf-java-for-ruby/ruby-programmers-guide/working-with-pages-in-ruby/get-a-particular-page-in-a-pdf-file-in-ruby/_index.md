@@ -1,47 +1,48 @@
 ---
-title: Obter uma Página Específica em um Arquivo PDF em Ruby
+title: Obtenha uma página específica em um arquivo PDF em Ruby
+linktitle: Obtenha uma página específica em um arquivo PDF em Ruby
 type: docs
 weight: 30
-url: /pt/java/get-a-particular-page-in-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-a-particular-page-in-a-pdf-file-in-ruby/
+description: Acesse e manipule páginas individuais em documentos PDF usando Ruby e Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Obter página
 
-## Aspose.PDF - Obter Página
-
-Para obter uma Página Específica em um documento PDF usando **Aspose.PDF Java para Ruby**, simplesmente invoque o módulo **GetPage**.
+Para obter uma página específica em um documento PDF usando **Aspose.PDF Java para Ruby**, basta invocar o módulo **GetPage**.
 
 Código Ruby
 
 ```java
-# O caminho para o diretório de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abra o documento alvo
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# obter a página no índice específico da Coleção de Páginas
+# get the page at particular index of Page Collection
 
 pdf_page = pdf.getPages().get_Item(1)
 
-# criar um novo objeto Documento
+# create a new Document object
 
 new_document = Rjb::import('com.aspose.pdf.Document').new
 
-# adicionar página à coleção de páginas do novo objeto de documento
+# add page to pages collection of new document object
 
 new_document.getPages().add(pdf_page)
 
-# salvar o arquivo PDF recém-gerado
+# save the newly generated PDF file
 
 new_document.save(data_dir + "output.pdf")
 
-puts "Processo concluído com sucesso!"
+puts "Process completed successfully!"
 ```
 
-## Baixar Código em Execução
+## Baixar código em execução
 
-Baixe **Get Page (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Get Page (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpage.rb)

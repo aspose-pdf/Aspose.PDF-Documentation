@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, remover a ação as
 ---
 ## Remover uma ação de campo
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
-2. Chamar `removeFieldAction(...)` para o campo de destino.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `removeFieldAction(...)` para o campo de destino.
 3. Salve o documento atualizado.
 
 ```java

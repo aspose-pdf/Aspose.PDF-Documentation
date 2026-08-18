@@ -1,20 +1,20 @@
 ---
-title: Trabalhando com Páginas em Python
+title: Trabalhando com páginas em Python
+linktitle: Trabalhando com páginas em Python
 type: docs
 weight: 30
-url: /pt/java/working-with-pages-in-python/
-lastmod: "2021-06-05"
+url: /java/working-with-pages-in-python/
+description: Aprenda como trabalhar com páginas PDF em Python usando Aspose.PDF, incluindo acesso a páginas, atualizações e organização de documentos.
+lastmod: "2026-06-09"
 ---
-
 Esta seção inclui os seguintes tópicos:
 
-- [Concatenar Arquivos PDF em Python](/pdf/pt/java/concatenate-pdf-files-in-python/)
-- [Excluir uma Página Particular do Arquivo PDF em Python](/pdf/pt/java/delete-a-particular-page-from-the-pdf-file-in-python/)
-- [Obter uma Página Particular em um Arquivo PDF em Python](/pdf/pt/java/get-a-particular-page-in-a-pdf-file-in-python/)
-- [Obter Contagem de Páginas do PDF em Python](/pdf/pt/java/get-page-count-of-pdf-in-python/)
-- [Obter Propriedades da Página em Python](/pdf/pt/java/get-page-properties-in-python/)
-- [Inserir uma Página Vazia no Final do Arquivo PDF em Python](/pdf/pt/java/insert-an-empty-page-at-end-of-pdf-file-in-python/)
-- [Inserir uma Página Vazia em um Arquivo PDF em Python](/pdf/pt/java/insert-an-empty-page-into-a-pdf-file-in-python/)
-- [Dividir Arquivo PDF em Páginas Individuais em Python](/pdf/pt/java/split-pdf-file-into-individual-pages-in-python/)
-
-- [Atualizar Dimensões da Página em Python](/pdf/pt/java/update-page-dimensions-in-python/)
+- [Concatenar arquivos PDF em Python](/pdf/java/concatenate-pdf-files-in-python/)
+- [Excluir uma página específica do arquivo PDF em Python](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-python/)
+- [Obtenha uma página específica em um arquivo PDF em Python](/pdf/java/get-a-particular-page-in-a-pdf-file-in-python/)
+- [Obter contagem de páginas de PDF em Python](/pdf/java/get-page-count-of-pdf-in-python/)
+- [Obter propriedades da página em Python](/pdf/java/get-page-properties-in-python/)
+- [Insira uma página vazia no final do arquivo PDF em Python](/pdf/java/insert-an-empty-page-at-end-of-pdf-file-in-python/)
+- [Insira uma página vazia em um arquivo PDF em Python](/pdf/java/insert-an-empty-page-into-a-pdf-file-in-python/)
+- [Dividir arquivo PDF em páginas individuais em Python](/pdf/java/split-pdf-file-into-individual-pages-in-python/)
+- [Atualizar dimensões da página em Python](/pdf/java/update-page-dimensions-in-python/)

@@ -1,61 +1,61 @@
 ---
-title: Obter Propriedades de Janela de Documento e Exibição de Página em PHP
+title: Obtenha propriedades de janela de documento e exibição de página em PHP
+linktitle: Obtenha propriedades de janela de documento e exibição de página em PHP
 type: docs
 weight: 30
-url: /pt/java/get-document-window-and-page-display-properties-in-php/
-lastmod: "2021-06-05"
+url: /java/get-document-window-and-page-display-properties-in-php/
+description: Aprenda como acessar a janela do documento e as propriedades de exibição da página de um arquivo PDF em PHP usando Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Obtenha a janela do documento e as propriedades de exibição da página
 
-## Aspose.PDF - Obter Propriedades de Janela de Documento e Exibição de Página
-
-Para obter as propriedades da janela do documento e exibição de página de um documento PDF usando **Aspose.PDF Java para PHP**, simplesmente invoque a classe **GetDocumentWindow**.
+Para obter as propriedades de exibição da janela do documento e da página do documento PDF usando **Aspose.PDF Java para PHP**, basta invocar a classe **GetDocumentWindow**.
 
 Código PHP
 
 ```php
 
-# Abrir um documento pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Obter diferentes propriedades do documento
-# Posição da janela do documento - Padrão: false
+# Get different document properties
+# Position of document's window - Default: false
 print "CenterWindow :- " . $doc->getCenterWindow() . PHP_EOL;
 
-# Ordem de leitura predominante; determinar a posição da página
-# quando exibida lado a lado - Padrão: L2R
+# Predominant reading order; determine the position of page
+# when displayed side by side - Default: L2R
 print "Direction :- " . $doc->getDirection() . PHP_EOL;
 
-# Se a barra de título da janela deve exibir o título do documento.
-# Se falso, a barra de título exibe o nome do arquivo PDF - Padrão: false
+# Whether window's title bar should display document title.
+# If false, title bar displays PDF file name - Default: false
 print "DisplayDocTitle :- " . $doc->getDisplayDocTitle() . PHP_EOL;
 
-# Se deve redimensionar a janela do documento para caber no tamanho da
-# primeira página exibida - Padrão: false
+#Whether to resize the document's window to fit the size of
+#first displayed page - Default: false
 print "FitWindow :- " . $doc->getFitWindow() . PHP_EOL;
 
-# Se deve ocultar a barra de menu do aplicativo visualizador - Padrão: false
+# Whether to hide menu bar of the viewer application - Default: false
 print "HideMenuBar :-" . $doc->getHideMenubar() . PHP_EOL;
 
-# Se deve ocultar a barra de ferramentas do aplicativo visualizador - Padrão: false
+# Whether to hide tool bar of the viewer application - Default: false
 print "HideToolBar :-" . $doc->getHideToolBar() . PHP_EOL;
 
-# Se deve ocultar elementos da interface do usuário como barras de rolagem
-# deixando apenas o conteúdo da página exibido - Padrão: false
+# Whether to hide UI elements like scroll bars
+# and leaving only the page contents displayed - Default: false
 print "HideWindowUI :-" . $doc->getHideWindowUI() . PHP_EOL;
 
-# O modo de página do documento. Como exibir o documento ao sair do modo de tela cheia.
+# The document's page mode. How to display document on exiting full-screen mode.
 print "NonFullScreenPageMode :-" . $doc->getNonFullScreenPageMode() . PHP_EOL;
 
-# O layout da página, ou seja, página única, uma coluna
+# The page layout i.e. single page, one column
 print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 
-# Como o documento deve ser exibido quando aberto.
+#How the document should display when opened.
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 ```
 
+**Baixar código em execução**
 
-**Baixar Código em Execução**
-
-Baixe **Obter Propriedades da Janela do Documento e Exibição de Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Obter propriedades de exibição da janela e da página do documento (Aspose.PDF)**В de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

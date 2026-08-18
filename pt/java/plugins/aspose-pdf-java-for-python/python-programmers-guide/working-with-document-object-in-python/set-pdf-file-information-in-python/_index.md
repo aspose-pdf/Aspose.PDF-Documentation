@@ -1,36 +1,37 @@
 ---
-title: Definir Informações do Arquivo PDF em Python
+title: Definir informações do arquivo PDF em Python
+linktitle: Definir informações do arquivo PDF em Python
 type: docs
 weight: 90
-url: /pt/java/set-pdf-file-information-in-python/
-lastmod: "2021-06-05"
+url: /java/set-pdf-file-information-in-python/
+description: Aprenda como definir informações de arquivos PDF, como autor, título e muito mais em Python usando Aspose.PDF para organizar documentos.
+lastmod: "2026-06-09"
 ---
-
-Para atualizar as informações do documento Pdf usando **Aspose.PDF Java for Python**, simplesmente invoque a classe **SetPdfFileInfo**.
+Para atualizar as informações do documento PDF usando **Aspose.PDF Java para Python**, basta invocar a classe **SetPdfFileInfo**.
 
 ```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Obter informações do documento
+# Get document information
 doc_info = doc.getInfo();
 
-doc_info.setAuthor("Aspose.PDF para java");
+doc_info.setAuthor("Aspose.PDF for java");
 doc_info.setCreationDate(datetime.today.strftime("%m/%d/%Y"));
 doc_info.setKeywords("Aspose.PDF, DOM, API");
 doc_info.setModDate(datetime.today.strftime("%m/%d/%Y"));
-doc_info.setSubject("Informações do PDF");
-doc_info.setTitle("Definindo Informações do Documento PDF");
+doc_info.setSubject("PDF Information");
+doc_info.setTitle("Setting PDF Document Information");
 
-# salvar documento atualizado com novas informações
+# save update document with new information
 
 doc.save(self.dataDir + "Updated_Information.pdf")
-print "Atualize as informações do documento, por favor verifique o arquivo de saída."
+print "Update document information, please check output file."
 ```
 
-**Baixar Código em Execução**
+**Baixar código em execução**
 
-Baixe **Set PDF File Information (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Definir informações do arquivo PDF (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetPdfFileInfo/SetPdfFileInfo.py)

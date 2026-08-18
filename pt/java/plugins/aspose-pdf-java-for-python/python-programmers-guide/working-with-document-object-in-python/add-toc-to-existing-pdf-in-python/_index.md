@@ -1,67 +1,67 @@
 ---
-title: Adicionar TOC a um PDF Existente em Python
+title: Adicionar sumário a PDF existente em Python
+linktitle: Adicionar sumário a PDF existente em Python
 type: docs
 weight: 20
-url: /pt/java/add-toc-to-existing-pdf-in-python/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-python/
+description: Aprenda como adicionar um índice (TOC) a um documento PDF existente em Python com Aspose.PDF para facilitar a navegação.
+lastmod: "2026-06-09"
 ---
-
-Para adicionar TOC em um documento Pdf usando **Aspose.PDF Java para Python**, basta invocar a classe **AddToc**.
+Para adicionar TOC em documento PDF usando **Aspose.PDF Java para Python**, basta invocar a classe **AddToc**.
 
 ```python
 
-# Abrir um documento pdf.
+# Open a pdf document.
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Obter acesso à primeira página do arquivo PDF
+# Get access to first page of PDF file
 toc_page = doc.getPages().insert(1)
 
-# Criar objeto para representar informações do TOC
+# Create object to represent TOC information
 toc_info = self.TocInfo()
-title = self.TextFragment("Índice")
+title = self.TextFragment("Table Of Contents")
 title.getTextState().setFontSize(20)
 
-# Definir o título para o TOC
+# Set the title for TOC
 toc_info.setTitle(title)
 toc_page.setTocInfo(toc_info)
 
-# Criar objetos de string que serão usados como elementos do TOC
-titles = ["Primeira página", "Segunda página"]
+# Create string objects which will be used as TOC elements
+titles = ["First page", "Second page"]
 
 i = 0;
 while (i < 2):
 
-# Criar objeto de Cabeçalho
+# Create Heading object
 heading2 = self.Heading(1);
 
 segment2 = self.TextSegment
 heading2.setTocPage(toc_page)
 heading2.getSegments().add(segment2)
 
-# Especificar a página de destino para o objeto de cabeçalho
+# Specify the destination page for heading object
 heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-# Página de destino
+# Destination page
 heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-# Coordenada de destino
+# Destination coordinate
 segment2.setText(titles[i])
 
-# Adicionar cabeçalho à página contendo o TOC
+# Add heading to page containing TOC
 toc_page.getParagraphs().add(heading2)
 
 i +=1;
 
-# Salvar Documento PDF
+# Save PDF Document
 doc.save(self.dataDir + "TOC.pdf")
 
-print "TOC adicionado com sucesso, por favor verifique o arquivo de saída."
+print "Added TOC Successfully, please check the output file."
 ```
 
-
-**Baixar Código em Execução**
+**Baixar código em execução**
 
 Baixe **Adicionar TOC (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 

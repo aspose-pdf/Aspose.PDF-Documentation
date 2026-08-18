@@ -1,40 +1,41 @@
 ---
-title: Obter uma Página Específica em um Arquivo PDF em PHP
+title: Obtenha uma página específica em um arquivo PDF em PHP
+linktitle: Obtenha uma página específica em um arquivo PDF em PHP
 type: docs
 weight: 30
-url: /pt/java/obter-uma-pagina-especifica-em-um-arquivo-pdf-em-php/
-lastmod: "2021-06-05"
+url: /java/get-a-particular-page-in-a-pdf-file-in-php/
+description: Aprenda como recuperar uma página específica de um arquivo PDF em PHP usando Aspose.PDF para processamento de página direcionado.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Obter página
 
-## Aspose.PDF - Obter Página
-
-Para obter uma Página Específica em um documento PDF usando **Aspose.PDF Java for Ruby**, basta invocar a classe **GetPage**.
+Para obter uma página específica em um documento PDF usando **Aspose.PDF Java para Ruby**, basta invocar a classe **GetPage**.
 
 Código Ruby
 
 ```php
 
-# Abrir o documento alvo
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# obter a página em um índice específico da Coleção de Páginas
+# get the page at particular index of Page Collection
 $pdf_page = $pdf->getPages()->get_Item(1);
 
-# criar um novo objeto Documento
+# create a new Document object
 $new_document = new Document();
 
-# adicionar página à coleção de páginas do novo objeto documento
+# add page to pages collection of new document object
 $new_document->getPages()->add($pdf_page);
 
-# salvar o arquivo PDF recém-gerado
+# save the newly generated PDF file
 $new_document->save($dataDir . "output.pdf");
 
-print "Processo concluído com sucesso!";
+print "Process completed successfully!";
 
 ```
 
-## Baixar Código em Execução
+## Baixar código em execução
 
-Baixe **Obter Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Get Page (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPage.php)

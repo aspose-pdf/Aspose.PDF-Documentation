@@ -1,23 +1,24 @@
 ---
-title: Dividir Arquivo PDF em Páginas Individuais em PHP
+title: Divida o arquivo PDF em páginas individuais em PHP
+linktitle: Divida o arquivo PDF em páginas individuais em PHP
 type: docs
 weight: 80
-url: /pt/java/split-pdf-file-into-individual-pages-in-php/
-lastmod: "2021-06-05"
+url: /java/split-pdf-file-into-individual-pages-in-php/
+description: Descubra como dividir um documento PDF em páginas individuais usando PHP e Aspose.PDF para extração eficiente de páginas.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Dividir páginas
 
-## Aspose.PDF - Dividir Páginas
-
-Para dividir um documento PDF em páginas individuais usando **Aspose.PDF Java for PHP**, simplesmente invoque a classe **SplitAllPages**.
+Para dividir um documento PDF em páginas individuais usando **Aspose.PDF Java para PHP**, basta invocar a classe **SplitAllPages**.
 
 Código PHP
 
 ```php
 
-# Abrir o documento alvo
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# loop através de todas as páginas
+# loop through all the pages
 $pdf_page = 1;
 $total_size = $pdf->getPages()->size();
 #for (int pdfPage = 1; pdfPage<= pdfDocument1.getPages().size(); pdfPage++)
@@ -25,25 +26,25 @@ while ($pdf_page <= $total_size)
 
 {
 
-    # criar um novo objeto Document
+    # create a new Document object
     $new_document = new Document();
 
-    # obter a página em um índice particular da Coleção de Páginas
+    # get the page at particular index of Page Collection
     $new_document->getPages()->add($pdf->getPages()->get_Item($pdf_page));
 
-    # salvar o arquivo PDF recém-gerado
+    # save the newly generated PDF file
     $new_document->save($dataDir . "page_#{$pdf_page}.pdf");
 
     $pdf_page++;
 
 }
 
-print "Processo de divisão concluído com sucesso!";
+print "Split process completed successfully!";
 
 ```
 
-**Baixar Código em Execução**
+**Baixar código em execução**
 
-Baixe **Dividir Páginas (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Split Pages (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/SplitAllPages.php)

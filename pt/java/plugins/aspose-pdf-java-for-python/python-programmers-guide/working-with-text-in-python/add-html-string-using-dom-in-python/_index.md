@@ -1,41 +1,42 @@
 ---
-title: Adicionar String HTML usando DOM em Python
+title: Adicionar string HTML usando DOM em Python
+linktitle: Adicionar string HTML usando DOM em Python
 type: docs
 weight: 10
-url: /pt/java/add-html-string-using-dom-in-python/
-lastmod: "2021-06-05"
+url: /java/add-html-string-using-dom-in-python/
+lastmod: "2026-06-09"
 description: Explica como adicionar string HTML no DOM usando Python com biblioteca de formato de arquivo PDF
 ---
+## Adicionar string HTML em PDF DOM usando Python
 
-## Adicionar string HTML no DOM do PDF usando Python
-Para adicionar string HTML em um documento Pdf usando **Aspose.PDF Java para Python**, simplesmente invoque o módulo **AddHtml**.
+Para adicionar uma string HTML em um documento PDF usando **Aspose.PDF Java para Python**, basta invocar o módulo **AddHtml**.
 
 ```python
 
-# Instanciar objeto Document
+# Instantiate Document object
 doc=self.Document()
 page=doc.getPages().add()
 
-title=self.HtmlFragment("<fontsize=10><b><i>Tabela</i></b></fontsize>")
+title=self.HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>")
 
 margin=self.MarginInfo()
 #margin.setBottom(10)
 #margin.setTop(200)
 
-# Definir informações de margem
+# Set margin information
 title.setMargin(margin)
 
-# Adicionar Fragmento HTML à coleção de parágrafos da página
+# Add HTML Fragment to paragraphs collection of page
 page.getParagraphs().add(title)
 
-# Salvar arquivo PDF
+# Save PDF file
 doc.save(self.dataDir + 'html.output.pdf')
 
-print "HTML adicionado com sucesso"
+print "HTML added successfully"
 ```
 
-**Baixar Código em Execução**
+**Baixar código em execução**
 
-Baixar **Adicionar HTML (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Adicione HTML (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddHtml/AddHtml.py)

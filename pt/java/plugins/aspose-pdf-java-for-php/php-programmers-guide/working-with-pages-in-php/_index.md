@@ -1,19 +1,20 @@
 ---
-title: Trabalhando com Páginas em PHP
+title: Trabalhando com páginas em PHP
+linktitle: Trabalhando com páginas em PHP
 type: docs
 weight: 30
-url: /pt/java/working-with-pages-in-php/
-lastmod: "2021-06-05"
+url: /java/working-with-pages-in-php/
+description: Aprenda como adicionar, recuperar, atualizar e gerenciar páginas PDF em PHP usando Aspose.PDF para um controle eficaz de documentos.
+lastmod: "2026-06-09"
 ---
-
 Esta seção inclui os seguintes tópicos:
 
-- [Concatenar Arquivos PDF em PHP](/pdf/pt/java/concatenate-pdf-files-in-php/)
-- [Excluir uma Página Particular do Arquivo PDF em PHP](/pdf/pt/java/delete-a-particular-page-from-the-pdf-file-in-php/)
-- [Obter uma Página Particular em um Arquivo PDF em PHP](/pdf/pt/java/get-a-particular-page-in-a-pdf-file-in-php/)
-- [Obter Contagem de Páginas do PDF em PHP](/pdf/pt/java/get-page-count-of-pdf-in-php/)
-- [Obter Propriedades da Página em PHP](/pdf/pt/java/get-page-properties-in-php/)
-- [Inserir uma Página Vazia no Final do Arquivo PDF em PHP](/pdf/pt/java/insert-an-empty-page-at-end-of-pdf-file-in-php/)
-- [Inserir uma Página Vazia em um Arquivo PDF em PHP](/pdf/pt/java/insert-an-empty-page-into-a-pdf-file-in-php/)
-- [Dividir Arquivo PDF em Páginas Individuais em PHP](/pdf/pt/java/split-pdf-file-into-individual-pages-in-php/)
-- [Atualizar Dimensões da Página em PHP](/pdf/pt/java/update-page-dimensions-in-php/)
+- [Concatenar arquivos PDF em PHP](/pdf/java/concatenate-pdf-files-in-php/)
+- [Excluir uma página específica do arquivo PDF em PHP](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-php/)
+- [Obtenha uma página específica em um arquivo PDF em PHP](/pdf/java/get-a-particular-page-in-a-pdf-file-in-php/)
+- [Obter contagem de páginas de PDF em PHP](/pdf/java/get-page-count-of-pdf-in-php/)
+- [Obter propriedades da página em PHP](/pdf/java/get-page-properties-in-php/)
+- [Insira uma página vazia no final do arquivo PDF em PHP](/pdf/java/insert-an-empty-page-at-end-of-pdf-file-in-php/)
+- [Insira uma página vazia em um arquivo PDF em PHP](/pdf/java/insert-an-empty-page-into-a-pdf-file-in-php/)
+- [Dividir arquivo PDF em páginas individuais em PHP](/pdf/java/split-pdf-file-into-individual-pages-in-php/)
+- [Atualizar dimensões da página em PHP](/pdf/java/update-page-dimensions-in-php/)

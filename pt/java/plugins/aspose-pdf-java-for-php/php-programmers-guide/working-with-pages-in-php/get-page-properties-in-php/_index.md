@@ -1,48 +1,48 @@
 ---
-title: Obter Propriedades da Página em PHP
+title: Obtenha propriedades da página em PHP
+linktitle: Obtenha propriedades da página em PHP
 type: docs
 weight: 50
-url: /pt/java/get-page-properties-in-php/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-php/
+description: Explore como recuperar as propriedades de páginas específicas em um documento PDF em PHP usando Aspose.PDF para controle detalhado.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Obtenha propriedades da página
 
-## Aspose.PDF - Obter Propriedades da Página
-
-Para obter propriedades de página do documento Pdf usando **Aspose.PDF Java para PHP**, basta invocar a classe **GetPageProperties**.
+Para obter as propriedades da página do documento PDF usando **Aspose.PDF Java para PHP**, basta invocar a classe **GetPageProperties**.
 
 Código PHP
 
 ```php
 
-# Criar documento PDF
+# Create PDF document
 $pdf_document = new Document($dataDir . 'input1.pdf');
 
-# obter coleção de páginas
+# get page collection
 $page_collection = $pdf_document->getPages();
 
-# obter página específica
+# get particular page
 $pdf_page = $page_collection->get_Item(1);
 
-# obter propriedades da página
-print "ArtBox : Altura = " . $pdf_page->getArtBox()->getHeight() . ", Largura = " . $pdf_page->getArtBox()->getWidth() . ", LLX = " . $pdf_page->getArtBox()->getLLX() . ", LLY = " . $pdf_page->getArtBox()->getLLY() . ", URX = " . $pdf_page->getArtBox()->getURX() . ", URY = " . $pdf_page->getArtBox()->getURY() . PHP_EOL ;
+# get page properties
+print "ArtBox : Height = " . $pdf_page->getArtBox()->getHeight() . ", Width = " . $pdf_page->getArtBox()->getWidth() . ", LLX = " . $pdf_page->getArtBox()->getLLX() . ", LLY = " . $pdf_page->getArtBox()->getLLY() . ", URX = " . $pdf_page->getArtBox()->getURX() . ", URY = " . $pdf_page->getArtBox()->getURY() . PHP_EOL ;
 
-print "BleedBox : Altura = " . $pdf_page->getBleedBox()->getHeight() . ", Largura = " . $pdf_page->getBleedBox()->getWidth() . ", LLX = " . $pdf_page->getBleedBox()->getLLX() . ", LLY = " . $pdf_page->getBleedBox()->getLLY() . ", URX = " . $pdf_page->getBleedBox()->getURX() . ", URY = " . $pdf_page->getBleedBox()->getURY() . PHP_EOL ;
+print "BleedBox : Height = " . $pdf_page->getBleedBox()->getHeight() . ", Width = " . $pdf_page->getBleedBox()->getWidth() . ", LLX = " . $pdf_page->getBleedBox()->getLLX() . ", LLY = " . $pdf_page->getBleedBox()->getLLY() . ", URX = " . $pdf_page->getBleedBox()->getURX() . ", URY = " . $pdf_page->getBleedBox()->getURY() . PHP_EOL ;
 
-print "CropBox : Altura = " . $pdf_page->getCropBox()->getHeight() . ", Largura = " . $pdf_page->getCropBox()->getWidth() . ", LLX = " . $pdf_page->getCropBox()->getLLX() . ", LLY = " . $pdf_page->getCropBox()->getLLY() . ", URX = " . $pdf_page->getCropBox()->getURX() . ", URY = " . $pdf_page->getCropBox()->getURY() . PHP_EOL ;
+print "CropBox : Height = " . $pdf_page->getCropBox()->getHeight() . ", Width = " . $pdf_page->getCropBox()->getWidth() . ", LLX = " . $pdf_page->getCropBox()->getLLX() . ", LLY = " . $pdf_page->getCropBox()->getLLY() . ", URX = " . $pdf_page->getCropBox()->getURX() . ", URY = " . $pdf_page->getCropBox()->getURY() . PHP_EOL ;
 
-print "MediaBox : Altura = " . $pdf_page->getMediaBox()->getHeight() . ", Largura = " . $pdf_page->getMediaBox()->getWidth() . ", LLX = " . $pdf_page->getMediaBox()->getLLX() . ", LLY = " . $pdf_page->getMediaBox()->getLLY() . ", URX = " . $pdf_page->getMediaBox()->getURX() . ", URY = " . $pdf_page->getMediaBox()->getURY() . PHP_EOL ;
+print "MediaBox : Height = " . $pdf_page->getMediaBox()->getHeight() . ", Width = " . $pdf_page->getMediaBox()->getWidth() . ", LLX = " . $pdf_page->getMediaBox()->getLLX() . ", LLY = " . $pdf_page->getMediaBox()->getLLY() . ", URX = " . $pdf_page->getMediaBox()->getURX() . ", URY = " . $pdf_page->getMediaBox()->getURY() . PHP_EOL ;
 
-print "TrimBox : Altura = " . $pdf_page->getTrimBox()->getHeight() . ", Largura = " . $pdf_page->getTrimBox()->getWidth() . ", LLX = " . $pdf_page->getTrimBox()->getLLX() . ", LLY = " . $pdf_page->getTrimBox()->getLLY() . ", URX = " . $pdf_page->getTrimBox()->getURX() . ", URY = " . $pdf_page->getTrimBox()->getURY() . PHP_EOL ;
+print "TrimBox : Height = " . $pdf_page->getTrimBox()->getHeight() . ", Width = " . $pdf_page->getTrimBox()->getWidth() . ", LLX = " . $pdf_page->getTrimBox()->getLLX() . ", LLY = " . $pdf_page->getTrimBox()->getLLY() . ", URX = " . $pdf_page->getTrimBox()->getURX() . ", URY = " . $pdf_page->getTrimBox()->getURY() . PHP_EOL ;
 
-print "Rect : Altura = " . $pdf_page->getRect()->getHeight() . ", Largura = " . $pdf_page->getRect()->getWidth() . ", LLX = " . $pdf_page->getRect()->getLLX() . ", LLY = " . $pdf_page->getRect()->getLLY() . ", URX = " . $pdf_page->getRect()->getURX() . ", URY = " . $pdf_page->getRect()->getURY() . PHP_EOL ;
-print "Número da Página :- " . $pdf_page->getNumber() . PHP_EOL ;
-print "Rotação :-" . $pdf_page->getRotate() . PHP_EOL ;
+print "Rect : Height = " . $pdf_page->getRect()->getHeight() . ", Width = " . $pdf_page->getRect()->getWidth() . ", LLX = " . $pdf_page->getRect()->getLLX() . ", LLY = " . $pdf_page->getRect()->getLLY() . ", URX = " . $pdf_page->getRect()->getURX() . ", URY = " . $pdf_page->getRect()->getURY() . PHP_EOL ;
+print "Page Number :- " . $pdf_page->getNumber() . PHP_EOL ;
+print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 ```
 
+**Baixar código em execução**
 
-**Baixar Código em Execução**
-
-Baixar **Obter Propriedades da Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Obter propriedades da página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

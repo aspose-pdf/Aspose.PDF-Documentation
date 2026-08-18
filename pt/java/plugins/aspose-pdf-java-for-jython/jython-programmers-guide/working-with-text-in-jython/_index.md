@@ -9,6 +9,6 @@ lastmod: "2026-06-09"
 ---
 Esta seção inclui os seguintes tópicos:
 
-- [Adicionar string HTML usando DOM em Jython](/pdf/pt/java/add-html-string-using-dom-in-jython/)
-- [Adicione texto a um arquivo PDF existente em Jython](/pdf/pt/java/add-text-to-an-existing-pdf-file-in-jython/)
-- [Extraia texto de todas as páginas de um documento PDF em Jython](/pdf/pt/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/)
+- [Adicionar string HTML usando DOM em Jython](/pdf/java/add-html-string-using-dom-in-jython/)
+- [Adicionar texto a um arquivo PDF existente em Jython](/pdf/java/add-text-to-an-existing-pdf-file-in-jython/)
+- [Extrair texto de todas as páginas de um documento PDF em Jython](/pdf/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/)

@@ -1,12 +1,13 @@
 ---
-title: Converter PDF para Planilha Excel em Python
+title: Converter PDF em pasta de trabalho do Excel em Python
+linktitle: Converter PDF em pasta de trabalho do Excel em Python
 type: docs
 weight: 20
-url: /pt/java/convert-pdf-to-excel-workbook-in-python/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-excel-workbook-in-python/
+description: Aprenda como converter documentos PDF em pastas de trabalho do Excel em Python usando Aspose.PDF para extração estruturada de dados.
+lastmod: "2026-06-09"
 ---
-
-Para converter um documento PDF em uma Planilha Excel usando **Aspose.PDF Java para Python**, simplesmente invoque o módulo **PdfToExcel**.
+Para converter um documento PDF em uma pasta de trabalho do Excel usando **Aspose.PDF Java para Python**, basta invocar o módulo **PdfToExcel**.
 
 ```python
 
@@ -14,16 +15,16 @@ doc=self.Document()
 pdf = self.Document()
 pdf=self.dataDir +'input1.pdf'
 
-# Instanciar objeto ExcelSave Option
+# Instantiate ExcelSave Option object
 excelsave=self.ExcelSaveOptions();
 
-# Salvar a saída no formato XLS
+# Save the output to XLS format
 doc.save(self.dataDir + "Converted_Excel.xls", excelsave);
-print "Documento foi convertido com sucesso"
+print "Document has been converted successfully"
 ```
 
-**Baixar Código em Execução**
+**Baixar código em execução**
 
-Baixe **Converter PDF para Planilha Excel (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Converter PDF para Excel Workbook (Aspose.PDF)**Â de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)

@@ -1,80 +1,80 @@
 ---
-title: Obter Propriedades da Janela do Documento e Exibição de Página em Ruby
+title: Obtenha propriedades de janela de documento e exibição de página em Ruby
+linktitle: Obtenha propriedades de janela de documento e exibição de página em Ruby
 type: docs
 weight: 40
-url: /pt/java/get-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-document-window-and-page-display-properties-in-ruby/
+description: Recupere e personalize propriedades de janela de documento e exibição de página em arquivos PDF usando Ruby e Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Obtenha a janela do documento e as propriedades de exibição da página
 
-## Aspose.PDF - Obter Propriedades da Janela do Documento e Exibição de Página
-
-Para Obter Propriedades da Janela do Documento e Exibição de Página de um documento Pdf usando **Aspose.PDF Java for Ruby**, simplesmente invoque o módulo **GetDocumentWindow**.
+Para obter as propriedades de exibição da janela do documento e da página do documento PDF usando **Aspose.PDF Java para Ruby**, basta invocar o módulo **GetDocumentWindow**.
 
 Código Ruby
 
 ```java
-# O caminho para o diretório de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abra um documento pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Obter diferentes propriedades do documento
+# Get different document properties
 
-# Posição da janela do documento - Padrão: false
+# Position of document's window - Default: false
 
 puts "CenterWindow :- " + doc.getCenterWindow().to_s
 
-# Ordem de leitura predominante; determina a posição da página
+# Predominant reading order; determine the position of page
 
-# quando exibido lado a lado - Padrão: L2R
+# when displayed side by side - Default: L2R
 
 puts "Direction :- " + doc.getDirection().to_s
 
-# Se a barra de título da janela deve exibir o título do documento.
+# Whether window's title bar should display document title.
 
-# Se falso, a barra de título exibe o nome do arquivo PDF - Padrão: false
+# If false, title bar displays PDF file name - Default: false
 
 puts "DisplayDocTitle :- " + doc.getDisplayDocTitle().to_s
 
-# Se deve redimensionar a janela do documento para ajustar o tamanho da
+# Whether to resize the document's window to fit the size of
 
-# primeira página exibida - Padrão: false
+# first displayed page - Default: false
 
 puts "FitWindow :- " + doc.getFitWindow().to_s
 
-# Se deve ocultar a barra de menu do aplicativo visualizador - Padrão: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 puts "HideMenuBar :-" + doc.getHideMenubar().to_s
 
-# Se deve ocultar a barra de ferramentas do aplicativo visualizador - Padrão: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 puts "HideToolBar :-" + doc.getHideToolBar().to_s
 
-# Se deve ocultar elementos da UI como barras de rolagem
+# Whether to hide UI elements like scroll bars
 
-# deixando apenas o conteúdo da página exibido - Padrão: false
+# and leaving only the page contents displayed - Default: false
 
 puts "HideWindowUI :-" + doc.getHideWindowUI().to_s
 
-# O modo de página do documento. Como exibir o documento ao sair do modo de tela cheia.
+# The document's page mode. How to display document on exiting full-screen mode.
 
 puts "NonFullScreenPageMode :-" + doc.getNonFullScreenPageMode().to_s
 
-# O layout da página, ou seja, página única, uma coluna
+# The page layout i.e. single page, one column
 
 puts "PageLayout :-" + doc.getPageLayout().to_s
 
-# Como o documento deve ser exibido quando aberto.
+# How the document should display when opened.
 
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
+## Baixar código em execução
 
-## Download Running Code
-
-Baixar **Obter Propriedades de Janela de Documento e Exibição de Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Obter propriedades de exibição da janela e da página do documento (Aspose.PDF)**В de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

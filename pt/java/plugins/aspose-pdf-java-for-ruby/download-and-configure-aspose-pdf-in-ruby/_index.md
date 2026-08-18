@@ -1,18 +1,19 @@
 ---
-title: Baixar e Configurar Aspose.Pdf em Ruby
+title: Baixe e configure Aspose.Pdf em Ruby
+linktitle: Baixe e configure Aspose.Pdf em Ruby
 type: docs
 weight: 10
-url: /pt/java/download-and-configure-aspose-pdf-in-ruby/
-lastmod: "2021-06-05"
+url: /java/download-and-configure-aspose-pdf-in-ruby/
+description: Comece a usar Aspose.PDF em Ruby baixando e configurando a biblioteca para gerenciamento perfeito de PDF.
+lastmod: "2026-06-09"
 ---
+## Baixe as bibliotecas necessárias
 
-## Baixar Bibliotecas Necessárias
+Baixe as bibliotecas necessárias mencionadas abaixo. Estes são os necessários para executar exemplos Aspose.PDF Java para Ruby.
 
-Baixe as bibliotecas necessárias mencionadas abaixo. Estas são necessárias para executar os exemplos do Aspose.PDF Java para Ruby.
+- [Aspose.PDF para componente Java](https://downloads.aspose.com/pdf/java)
 
-- [Componente Aspose.PDF para Java](https://downloads.aspose.com/pdf/java)
-
-## Baixar Exemplos de Sites de Codificação Social
+## Baixe exemplos de sites de codificação social
 
 As seguintes versões de exemplos em execução estão disponíveis para download nos sites de codificação social mencionados abaixo:
 

@@ -1,26 +1,27 @@
 ---
-title: Suporte, Estender e Contribuir para Aspose.Pdf em Python
+title: Apoie, estenda e contribua para Aspose.Pdf em Python
+linktitle: Apoie, estenda e contribua para Aspose.Pdf em Python
 type: docs
 weight: 30
-url: /pt/java/support-extend-and-contribute-to-aspose-pdf-in-python/
-lastmod: "2021-06-05"
+url: /java/support-extend-and-contribute-to-aspose-pdf-in-python/
+description: Entenda como oferecer suporte e estender o Aspose.PDF em Python e contribua para melhorar sua funcionalidade para obter melhores soluções de PDF.
+lastmod: "2026-06-09"
 ---
-## Suporte
+## Apoiar
 
-Desde os primeiros dias da Aspose, sabíamos que apenas oferecer bons produtos aos nossos clientes não seria suficiente. Também precisávamos oferecer um bom serviço. Nós mesmos somos desenvolvedores e entendemos como é frustrante quando um problema técnico ou uma peculiaridade no software impede você de fazer o que precisa. Estamos aqui para resolver problemas, não criá-los.
+Desde os primeiros dias da Aspose, sabíamos que apenas oferecer bons produtos aos nossos clientes não seria suficiente. Também precisávamos prestar um bom serviço. Nós mesmos somos desenvolvedores e entendemos como é frustrante quando um problema técnico ou uma peculiaridade no software impede você de fazer o que precisa. Estamos aqui para resolver problemas e não para criá-los.
 
-É por isso que oferecemos suporte gratuito. Qualquer pessoa que use nosso produto, seja comprando ou usando uma avaliação, merece nossa total atenção e respeito.
+É por isso que oferecemos suporte gratuito. Qualquer pessoa que utilize nosso produto, seja ele comprado ou em avaliação, merece toda nossa atenção e respeito.
 
-Você pode registrar quaisquer problemas ou sugestões relacionados ao Aspose.PDF Java para Python usando qualquer uma das seguintes plataformas:
+Você pode registrar quaisquer problemas ou sugestões relacionadas ao Aspose.PDF Java para Python usando qualquer uma das seguintes plataformas:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-## Estender e Contribuir
+## Estenda e contribua
 
-Aspose.PDF Java para Python é open source e seu código-fonte está disponível nos principais sites de codificação social listados abaixo.
- Desenvolvedores são incentivados a baixar o código-fonte e contribuir sugerindo ou adicionando novas funcionalidades ou melhorando as existentes, para que outros também possam se beneficiar disso.
+Aspose.PDF Java para Python é de código aberto e seu código-fonte está disponível nos principais sites de codificação social listados abaixo. Os desenvolvedores são incentivados a baixar o código-fonte e contribuir sugerindo ou adicionando novos recursos ou melhorando os existentes, para que outros também possam se beneficiar dele.
 
-## Código-Fonte
+## Código Fonte
 
 Você pode obter o código-fonte mais recente em um dos seguintes locais
 

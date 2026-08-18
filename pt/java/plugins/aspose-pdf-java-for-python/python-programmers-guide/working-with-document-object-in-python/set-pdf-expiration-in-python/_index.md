@@ -1,12 +1,13 @@
 ---
-title: Definir Expiração de PDF em Python
+title: Definir expiração de PDF em Python
+linktitle: Definir expiração de PDF em Python
 type: docs
 weight: 80
-url: /pt/java/set-pdf-expiration-in-python/
-lastmod: "2021-06-05"
+url: /java/set-pdf-expiration-in-python/
+description: Aprenda como definir uma data de expiração para um arquivo PDF em Python usando Aspose.PDF para acesso a documentos urgentes.
+lastmod: "2026-06-09"
 ---
-
-Para definir a expiração de um documento Pdf usando **Aspose.PDF Java for Python**, basta invocar a classe **SetExpiration**.
+Para definir a expiração do documento PDF usando **Aspose.PDF Java para Python**, basta invocar a classe **SetExpiration**.
 
 ```python
 
@@ -16,18 +17,18 @@ pdf=self.dataDir + 'input1.pdf'
 
 javascript = self.JavascriptAction(
 
-"var year=2021; var month=4;today = new Date();today = new Date(today.getFullYear(), today.getMonth());expiry = new Date(year, month);if (today.getTime() > expiry.getTime())app.alert('O arquivo está expirado. Você precisa de um novo.');");
+"var year=2021; var month=4;today = new Date();today = new Date(today.getFullYear(), today.getMonth());expiry = new Date(year, month);if (today.getTime() > expiry.getTime())app.alert('The file is expired. You need a new one.');");
 
 doc.setOpenAction(javascript);
 
-# salvar documento atualizado com novas informações
+# save update document with new information
 doc.save(self.dataDir + "set_expiration.pdf");
 
-print "Atualizar informações do documento, por favor verifique o arquivo de saída."
+print "Update document information, please check output file."
 ```
 
-**Baixar Código em Execução**
+**Baixar código em execução**
 
-Baixe **Definir Expiração de PDF (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixe **Definir expiração de PDF (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetExpiration/SetExpiration.py)

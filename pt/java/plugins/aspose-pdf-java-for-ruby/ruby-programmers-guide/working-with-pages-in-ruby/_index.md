@@ -1,19 +1,20 @@
 ---
-title: Trabalhando com Páginas em Ruby
+title: Trabalhando com páginas em Ruby
+linktitle: Trabalhando com páginas em Ruby
 type: docs
 weight: 20
-url: /pt/java/working-with-pages-in-ruby/
-lastmod: "2021-06-05"
+url: /java/working-with-pages-in-ruby/
+description: Adicione, remova ou manipule páginas em PDFs programaticamente com Aspose.PDF para Ruby.
+lastmod: "2026-06-09"
 ---
-
 Esta seção inclui os seguintes tópicos:
 
-- [Concatenar Arquivos PDF em Ruby](/pdf/pt/java/concatenate-pdf-files-in-ruby/)
-- [Excluir uma Página Específica do Arquivo PDF em Ruby](/pdf/pt/java/delete-a-particular-page-from-the-pdf-file-in-ruby/)
-- [Obter uma Página Específica em um Arquivo PDF em Ruby](/pdf/pt/java/get-a-particular-page-in-a-pdf-file-in-ruby/)
-- [Obter Contagem de Páginas do PDF em Ruby](/pdf/pt/java/get-page-count-of-pdf-in-ruby/)
-- [Obter Propriedades da Página em Ruby](/pdf/pt/java/get-page-properties-in-ruby/)
-- [Inserir uma Página Vazia no Final do Arquivo PDF em Ruby](/pdf/pt/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/)
-- [Inserir uma Página Vazia em um Arquivo PDF em Ruby](/pdf/pt/java/insert-an-empty-page-into-a-pdf-file-in-ruby/)
-- [Dividir Arquivo PDF em Páginas Individuais em Ruby](/pdf/pt/java/split-pdf-file-into-individual-pages-in-ruby/)
-- [Atualizar Dimensões da Página em Ruby](/pdf/pt/java/update-page-dimensions-in-ruby/)
+- [Concatenar arquivos PDF em Ruby](/pdf/java/concatenate-pdf-files-in-ruby/)
+- [Excluir uma página específica do arquivo PDF em Ruby](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-ruby/)
+- [Obtenha uma página específica em um arquivo PDF em Ruby](/pdf/java/get-a-particular-page-in-a-pdf-file-in-ruby/)
+- [Obter contagem de páginas de PDF em Ruby](/pdf/java/get-page-count-of-pdf-in-ruby/)
+- [Obter propriedades da página em Ruby](/pdf/java/get-page-properties-in-ruby/)
+- [Insira uma página vazia no final do arquivo PDF em Ruby](/pdf/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/)
+- [Insira uma página vazia em um arquivo PDF em Ruby](/pdf/java/insert-an-empty-page-into-a-pdf-file-in-ruby/)
+- [Dividir arquivo PDF em páginas individuais em Ruby](/pdf/java/split-pdf-file-into-individual-pages-in-ruby/)
+- [Atualizar dimensões da página em Ruby](/pdf/java/update-page-dimensions-in-ruby/)
