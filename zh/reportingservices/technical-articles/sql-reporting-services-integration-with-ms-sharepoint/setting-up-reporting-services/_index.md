@@ -4,6 +4,7 @@ linktitle: 设置 Reporting Services
 type: docs
 weight: 20
 url: /zh/reportingservices/setting-up-reporting-services/
+description: "了解 Aspose.PDF for Reporting Services 中的设置 Reporting Services。"
 lastmod: "2026-06-19"
 ---
 

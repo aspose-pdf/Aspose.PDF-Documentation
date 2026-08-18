@@ -4,6 +4,7 @@ linktitle: تثبيت يدويًا
 type: docs
 weight: 20
 url: /ar/reportingservices/install-manually/
+description: "تعرّف على تثبيت يدويًا في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

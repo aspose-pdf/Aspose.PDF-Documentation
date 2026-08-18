@@ -4,6 +4,7 @@ linktitle: Security Setting
 type: docs
 weight: 30
 url: /reportingservices/security-setting/
+description: "Learn about Security Setting in Aspose.PDF for Reporting Services."
 lastmod: "2021-06-05"
 ---
 

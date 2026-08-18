@@ -4,6 +4,7 @@ linktitle: Configuración de seguridad
 type: docs
 weight: 30
 url: /es/reportingservices/security-setting/
+description: "Descubra Configuración de seguridad en Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

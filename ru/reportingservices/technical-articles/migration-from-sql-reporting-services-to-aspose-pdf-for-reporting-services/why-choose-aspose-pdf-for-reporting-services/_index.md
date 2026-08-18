@@ -4,6 +4,7 @@ linktitle: Почему выбрать Aspose.Pdf для Reporting Services
 type: docs
 weight: 10
 url: /ru/reportingservices/why-choose-aspose-pdf-for-reporting-services/
+description: "Узнайте о Почему выбрать Aspose.Pdf для Reporting Services в Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

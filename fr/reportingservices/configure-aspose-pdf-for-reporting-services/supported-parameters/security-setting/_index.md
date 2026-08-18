@@ -4,6 +4,7 @@ linktitle: Paramètre de sécurité
 type: docs
 weight: 30
 url: /fr/reportingservices/security-setting/
+description: "Découvrez Paramètre de sécurité dans Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

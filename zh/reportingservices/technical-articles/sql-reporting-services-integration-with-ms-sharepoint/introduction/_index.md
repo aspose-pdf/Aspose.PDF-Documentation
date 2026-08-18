@@ -4,6 +4,7 @@ linktitle: 介绍
 type: docs
 weight: 10
 url: /zh/reportingservices/introduction/
+description: "了解 Aspose.PDF for Reporting Services 中的介绍。"
 lastmod: "2026-06-19"
 ---
 

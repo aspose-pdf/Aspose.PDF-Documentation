@@ -4,6 +4,7 @@ linktitle: Установить на сервер отчетов
 type: docs
 weight: 10
 url: /ru/reportingservices/install-to-report-server/
+description: "Узнайте о Установить на сервер отчетов в Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

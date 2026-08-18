@@ -4,6 +4,7 @@ linktitle: Введение
 type: docs
 weight: 10
 url: /ru/reportingservices/introduction/
+description: "Узнайте о Введение в Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

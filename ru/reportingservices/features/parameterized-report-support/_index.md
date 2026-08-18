@@ -4,6 +4,7 @@ linktitle: Поддержка параметризованных отчетов
 type: docs
 weight: 20
 url: /ru/reportingservices/parameterized-report-support/
+description: "Узнайте о Поддержка параметризованных отчетов в Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

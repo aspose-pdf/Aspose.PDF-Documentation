@@ -4,6 +4,7 @@ linktitle: Настройка SharePoint на сервере Reporting Services
 type: docs
 weight: 30
 url: /ru/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+description: "Узнайте о Настройка SharePoint на сервере Reporting Services в Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

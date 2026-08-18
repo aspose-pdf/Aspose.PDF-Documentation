@@ -4,6 +4,7 @@ linktitle: Installer manuellement
 type: docs
 weight: 20
 url: /fr/reportingservices/install-manually/
+description: "Découvrez Installer manuellement dans Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

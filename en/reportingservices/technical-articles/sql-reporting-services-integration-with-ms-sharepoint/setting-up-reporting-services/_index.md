@@ -4,6 +4,7 @@ linktitle: Setting up Reporting Services
 type: docs
 weight: 20
 url: /reportingservices/setting-up-reporting-services/
+description: "Learn about Setting up Reporting Services in Aspose.PDF for Reporting Services."
 lastmod: "2021-06-05"
 ---
 
