@@ -1,146 +1,110 @@
 ---
-title: 使用PDF文件元数据
-linktitle: PDF文件元数据
+title: 在 Java 中处理 PDF 文件元数据
+linktitle: PDF 文件元数据
 type: docs
-weight: 140
-url: /zh/java/pdf-file-metadata/
-description: 本节解释如何获取PDF文件信息，如何从PDF文件获取XMP元数据，设置PDF文件信息。
-lastmod: "2021-06-05"
+weight: 200
+url: /java/pdf-file-metadata/
+description: 了解如何使用 Aspose.PDF 在 Java 中提取、更新和管理 PDF 文件元数据、文档信息和 XMP 属性。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在Java中获取和设置PDF文档信息和XMP元数据
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 处理 PDF 元数据。了解如何读取文档信息（例如作者、标题和关键字）、更新文件属性、检查 PDF 版本和权限、设置 XMP 元数据字段以及通过 DOM 和 Facade API 保存元数据。
 ---
+Aspose.PDF for Java 提供了两种处理元数据的主要方法：
+
+- 通过`Document`、`DocumentInfo` 和`document.getMetadata()` 的 DOM API。
+- 通过 `PdfFileInfo` 的门面 API。
 
 ## 获取PDF文件信息
 
-要获取有关PDF文件的特定信息，首先使用[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)类的[getInfo()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getInfo--)方法获取[DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo)对象。一旦检索到[DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo)对象，就可以获取各个属性的值。
+当您需要阅读标准文档信息字段（例如作者、标题、主题或关键字）时，请使用此示例。
 
-以下代码片段展示了如何设置PDF文件信息。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 访问 [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) 对象。
+1. 读取所需的元数据字段并输出它们的值。
 
 ```java
-public class ExampleMetadata {
+public static void getPdfFileInformation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocumentInfo docInfo = document.getInfo();
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Metadata/";
-
-    public static void GetPDFFileInformation() {
-        // 创建一个新的PDF文档
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-        // 获取文档信息
-        DocumentInfo docInfo = pdfDocument.getInfo();
-        // 显示文档信息
-        System.out.println("作者: " + docInfo.getAuthor());
-        System.out.println("创建日期: " + docInfo.getCreationDate());
-        System.out.println("关键词: " + docInfo.getKeywords());
-        System.out.println("修改日期: " + docInfo.getModDate());
-        System.out.println("主题: " + docInfo.getSubject());
-        System.out.println("标题: " + docInfo.getTitle());
+        System.out.println("Author: " + docInfo.getAuthor());
+        System.out.println("Creation Date: " + docInfo.getCreationDate());
+        System.out.println("Keywords: " + docInfo.getKeywords());
+        System.out.println("Modify Date: " + docInfo.getModDate());
+        System.out.println("Subject: " + docInfo.getSubject());
+        System.out.println("Title: " + docInfo.getTitle());
     }
+}
 ```
 
+## 使用命名空间前缀设置元数据
 
-## 设置 PDF 文件信息
+当您需要使用注册的命名空间前缀添加或更新 XMP 属性时，请使用此示例。
 
-Aspose.PDF for Java 允许您为 PDF 设置特定于文件的信息，例如作者、创建日期、主题和标题。
-
-要设置此信息：
-
-1. 创建一个 [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo) 对象。
-1. 设置属性的值。
-1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 类的 [save()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) 方法保存更新后的文档。
-
-{{% alert color="primary" %}}
-
-请注意，您不能对 **Producer** 和 **Creator** 字段设置值，因为 Aspose.PDF for Java x.x.x 将显示在这些字段中。
-
-{{% /alert %}}
-
-以下代码片段向您展示如何设置 PDF 文件信息。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 注册所需的 XMP 命名空间并添加元数据项。
+1. 保存更新的文档。
 
 ```java
- public static void SetPDFFileInformation() {
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
+public static void setPrefixMetadata(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getMetadata().registerNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
+        document.getMetadata().addItem("xmp:ModifyDate", OffsetDateTime.now().toString());
+        document.save(outputFile.toString());
+    }
+    System.out.println("Prefix metadata saved to " + outputFile);
+}
+```
 
-        // 指定文档信息
-        DocumentInfo docInfo = new DocumentInfo(pdfDocument);
+## 更新文档信息字段
+
+当您想要写入标准 PDF 文件属性（例如作者、标题、制作人或创建日期）时，请使用此示例。
+
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 访问 [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) 并分配新的元数据值。
+1. 使用更新的文件信息保存文档。
+
+```java
+public static void setFileInformation(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocumentInfo docInfo = document.getInfo();
+        Date now = new Date();
 
         docInfo.setAuthor("Aspose");
-        docInfo.setCreationDate(new java.util.Date());
+        docInfo.setCreationDate(now);
         docInfo.setKeywords("Aspose.Pdf, DOM, API");
-        docInfo.setModDate(new java.util.Date());
-        docInfo.setSubject("PDF 信息");
-        docInfo.setTitle("设置 PDF 文档信息");
+        docInfo.setModDate(now);
+        docInfo.setSubject("PDF Information");
+        docInfo.setTitle("Setting PDF Document Information");
+        docInfo.setProducer("Custom producer");
+        docInfo.setCreator("Custom creator");
 
-        // 保存输出文档
-        pdfDocument.save(_dataDir + "SetFileInfo_out.pdf");
+        document.save(outputFile.toString());
     }
+    System.out.println("File information saved to " + outputFile);
+}
 ```
 
+## 设置 XMP 元数据属性
 
-## 从 PDF 文件获取 XMP 元数据
+当您需要存储其他 XMP 条目（包括自定义元数据值）时，请使用此示例。
 
-Aspose.PDF for Java 允许您访问 PDF 文件的 XMP 元数据。
-
-要获取 PDF 文件的元数据，
-
-1. 创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 对象并打开输入的 PDF 文件。
-1. 使用 [getMetadata()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getMetadata--) 属性来获取元数据。
-
-以下代码片段向您展示了如何从 PDF 文件中获取元数据。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 通过`document.getMetadata()`添加所需的XMP元数据项。
+1. 保存输出文件。
 
 ```java
-   public static void GetXMPMetadata() {
-
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "SetXMPMetadata.pdf");
-
-        System.out.println("xmp:CreateDate: " + pdfDocument.getMetadata().get_Item("xmp:CreateDate"));
-        System.out.println("xmp:Nickname: " + pdfDocument.getMetadata().get_Item("xmp:Nickname"));
-        System.out.println("xmp:CustomProperty: " + pdfDocument.getMetadata().get_Item("xmp:CustomProperty"));
-
+public static void setXmpMetadata(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getMetadata().addItem("xmp:CreateDate", OffsetDateTime.now().toString());
+        document.getMetadata().addItem("xmp:Nickname", "Nickname");
+        document.getMetadata().addItem("xmp:CustomProperty", "Custom Value");
+        document.save(outputFile.toString());
     }
-```
-
-## 在 PDF 文件中设置 XMP 元数据
-
-Aspose.PDF for Java 允许您在 PDF 文件中设置元数据。
- 设置元数据：
-
-1. 创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 对象。
-1. 使用 [getMetadata()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getMetadata--) 属性设置元数据值。
-1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 对象的 [save()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) 方法保存更新后的文档。
-
-以下代码片段展示了如何在 PDF 文件中设置元数据。
-
-```java
-    public static void SetXMPMetadata() {
-
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-        // 设置属性
-        pdfDocument.getMetadata().set_Item("xmp:CreateDate", new XmpValue(new java.util.Date()));
-        pdfDocument.getMetadata().set_Item("xmp:Nickname", new XmpValue("Nickname"));
-        pdfDocument.getMetadata().set_Item("xmp:CustomProperty", new XmpValue("Custom Value"));
-
-        // 保存文档
-        pdfDocument.save(_dataDir + "SetXMPMetadata.pdf");
-    }
-```
-
-## 插入带前缀的元数据
-
-一些开发人员需要创建一个带有前缀的新元数据命名空间。以下代码片段展示了如何插入带前缀的元数据。
-
-```java
-    public static void InsertMetadataWithPrefix() {
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "SetXMPMetadata.pdf");
-        pdfDocument.getMetadata().registerNamespaceUri("adc", "http://tempuri.org/adc/1.0");
-        pdfDocument.getMetadata().set_Item("adc:format", new XmpValue("application/pdf"));
-        pdfDocument.getMetadata().set_Item("adc:title", new XmpValue("alternative title"));        
-        // 保存文档
-        pdfDocument.save(_dataDir + "SetPrefixMetadata_out.pdf");
-    }
+    System.out.println("XMP metadata saved to " + outputFile);
 }
 ```

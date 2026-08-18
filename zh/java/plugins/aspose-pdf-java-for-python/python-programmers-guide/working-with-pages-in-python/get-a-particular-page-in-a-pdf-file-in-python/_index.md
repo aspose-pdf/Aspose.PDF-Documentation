@@ -1,35 +1,37 @@
 ---
-title: 在 Python 中获取 PDF 文件中的特定页面
+title: 使用 Python 获取 PDF 文件中的特定页面
+linktitle: 使用 Python 获取 PDF 文件中的特定页面
 type: docs
 weight: 30
-url: /zh/java/get-a-particular-page-in-a-pdf-file-in-python/
-lastmod: "2021-06-05"
+url: /java/get-a-particular-page-in-a-pdf-file-in-python/
+description: 探索如何使用 Aspose.PDF 从 Python 中的 PDF 文件中提取特定页面，以进行详细的文档处理。
+lastmod: "2026-06-09"
 ---
-
-要使用 **Aspose.PDF Java for Python** 在 PDF 文档中获取特定页面，只需调用 **GetPage** 类。
+要使用 **Aspose.PDF Java for Python** 获取 PDF 文档中的特定页面，只需调用 **GetPage** 类即可。
 
 ```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# 获取页面集合中特定索引的页面
+# get the page at particular index of Page Collection
 pdf_page = pdf.getPages().get_Item(1)
 
-# 创建一个新的 Document 对象
+# create a new Document object
 new_document = self.Document()
 
-# 将页面添加到新文档对象的页面集合
+# add page to pages collection of new document object
 new_document.getPages().add(pdf_page)
 
-# 保存新生成的 PDF 文件
+# save the newly generated PDF file
 new_document.save(self.dataDir + "output.pdf")
 
-print "流程成功完成！
+print "Process completed successfully!
+
 ```
 
-**下载运行代码**
+ **下载运行代码**
 
-从以下任何一个社交编码网站下载 **Get Page (Aspose.PDF)**：
+从以下任何社交编码网站下载 **获取页面 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose.PDF-for-Java_for_Python/test/WorkingWithPages/GetPage/GetPage.py)

@@ -1,52 +1,52 @@
 ---
 title: 在 Ruby 中添加 JavaScript
+linktitle: 在 Ruby 中添加 JavaScript
 type: docs
 weight: 10
-url: /zh/java/adding-javascript-in-ruby/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-in-ruby/
+description: 使用 Ruby 中的 Aspose.PDF 在 PDF 中启用 JavaScript 功能，以实现交互性和自动化。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 添加 JavaScript
 
-要在 Pdf 文档中使用 **Aspose.PDF Java for Ruby** 添加 JavaScript，只需调用 **AddJavaScript** 模块。
+要使用 **Aspose.PDF Java for Ruby** 在 Pdf 文档中添加 JavaScript，只需调用 **AddJavaScript** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开一个 PDF 文档。
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# 在文档级别添加 JavaScript
+# Adding JavaScript at Document Level
 
-# 用所需的 JavaScript 语句实例化 JavascriptAction
+# Instantiate JavascriptAction with desried JavaScript statement
 
 javaScript = Rjb::import('com.aspose.pdf.JavascriptAction').new("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
-# 将 JavascriptAction 对象分配给文档的所需操作
+# Assign JavascriptAction object to desired action of Document
 
 doc.setOpenAction(javaScript)
 
-# 在页面级别添加 JavaScript
+# Adding JavaScript at Page Level
 
 doc.getPages().get_Item(2).getActions().setOnOpen(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('page 2 is opened')"))
 
 doc.getPages().get_Item(2).getActions().setOnClose(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('page 2 is closed')"))
 
-# 保存 PDF 文档
+# Save PDF Document
 
 doc.save(data_dir + "JavaScript-Added.pdf")
 
-puts "成功添加 JavaScript，请检查输出文件。"
+puts "Added JavaScript Successfully, please check the output file."
 ```
-
 
 ## 下载运行代码
 
-从以下任一社交编码网站下载**添加JavaScript (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**添加 JavaScript (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)

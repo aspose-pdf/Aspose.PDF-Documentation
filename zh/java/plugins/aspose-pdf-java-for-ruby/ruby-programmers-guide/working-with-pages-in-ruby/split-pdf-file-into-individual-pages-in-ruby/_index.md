@@ -1,28 +1,28 @@
 ---
-title: 将 PDF 文件拆分为单独页面在 Ruby 中
+title: 在 Ruby 中将 PDF 文件拆分为单独的页面
+linktitle: 在 Ruby 中将 PDF 文件拆分为单独的页面
 type: docs
 weight: 80
-url: /zh/java/split-pdf-file-into-individual-pages-in-ruby/
-lastmod: "2021-06-05"
+url: /java/split-pdf-file-into-individual-pages-in-ruby/
+description: 了解如何使用 Ruby 和 Aspose.PDF 将 PDF 文件拆分为单独的页面，从而更轻松地管理和提取内容。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 拆分页面
 
-要使用 **Aspose.PDF Java for Ruby** 将 PDF 文档拆分为单独的页面，只需调用 **SplitAllPages** 模块。
+要使用 **Aspose.PDF Java for Ruby** 将 PDF 文档拆分为单独的页面，只需调用 **SplitAllPages** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开目标文档
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# 遍历所有页面
+# loop through all the pages
 
 pdf_page = 1
 
@@ -30,15 +30,15 @@ pdf_page = 1
 
 while pdf_page <= pdf.getPages().size()
 
-# 创建一个新的 Document 对象
+# create a new Document object
 
 new_document = Rjb::import('com.aspose.pdf.Document').new
 
-# 在页面集合中获取特定索引的页面
+# get the page at particular index of Page Collection
 
 new_document.getPages().add(pdf.getPages().get_Item(pdf_page))
 
-# 保存新生成的 PDF 文件
+# save the newly generated PDF file
 
 new_document.save(data_dir + "page_#{pdf_page}.pdf")
 
@@ -46,12 +46,11 @@ pdf_page +=1
 
 end
 
-puts "拆分过程成功完成！"
+puts "Split process completed successfully!"
 ```
-
 
 ## 下载运行代码
 
-从以下任一社交编程网站下载 **拆分页面 (Aspose.PDF)**：
+从以下任何一个社交编码网站下载 **拆分页面 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/splitallpages.rb)

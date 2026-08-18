@@ -1,20 +1,25 @@
 ---
-title: PdfContentEditor 类
+title: PdfContentEditor类
+linktitle: PdfContentEditor类
 type: docs
 weight: 30
-url: /zh/java/pdfcontenteditor-class/
-description: 本节介绍如何使用 PdfContentEditor 类处理 Aspose.PDF 外观。
-lastmod: "2021-06-05"
+url: /java/pdfcontenteditor-class/
+description: 了解如何使用 Java 中的 PdfContentEditor 类编辑 PDF 内容、管理注释和附件、处理文档操作、图像、文本、多媒体、图章和查看器首选项。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 PdfContentEditor 在 Java 中编辑 PDF 内容和交互元素
+Abstract: 本节介绍如何使用 Aspose.PDF for Java 中的 PdfContentEditor 类来实现内容级 PDF 工作流程。当前的 Java 示例集涵盖注释、附件、文档操作、绘图标记、图像替换、多媒体、图章、文本替换和查看器首选项。
 ---
+Java `PdfContentEditorExamples` 类演示了 Facades API 公开的主要内容编辑工作流程。
 
-- [向现有 PDF 文件添加 Javascript 动作](/pdf/zh/java/adding-javascript-actions/)
-- [向现有 PDF 文件添加书签动作](/pdf/zh/java/adding-bookmark-actions/)
-- [处理图像（外观）](/pdf/zh/java/working-with-image/)
-- [替换文本（外观）](/pdf/zh/java/replace-text/)
-- [处理附件](/pdf/zh/java/working-with-attachments/)
-- [设置现有 PDF 文件的查看器偏好](/pdf/zh/java/set-viewer-preference-of-an-existing-pdf-file/)
-- [获取现有 PDF 文件的查看器偏好](/pdf/zh/java/get-viewer-preference-of-an-existing-pdf-file/)
-- [向现有 PDF 文件添加注释](/pdf/zh/java/adding-annotations-to-existing-pdf-file/)
+使用本部分了解如何：
+
+- 添加文本、线条、多边形、影片和橡皮图章注释
+- 添加或删除文档附件
+- bind a PDF from a stream and save the result
+- add or remove document open actions
+- replace text and images
+- get and change viewer preferences

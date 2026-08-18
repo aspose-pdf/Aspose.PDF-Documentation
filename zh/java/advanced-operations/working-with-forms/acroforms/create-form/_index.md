@@ -1,253 +1,240 @@
 ---
-title: 创建 AcroForms - 在 Java 中创建可填写的 PDF
-linktitle: 创建 AcroForms
+title: Create AcroForm - 在 Java 中创建可填写的 PDF
+linktitle: 创建 AcroForm
 type: docs
 weight: 10
-url: /zh/java/create-forms/
-description: 本节解释如何在 PDF 文档中使用 Aspose.PDF for Java 从头创建 AcroForms。
-lastmod: "2021-06-05"
+url: /java/create-form/
+description: 使用 Aspose.PDF for Java 在 PDF 文档中从头开始创建 AcroForm 字段。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 在 PDF 文件中创建交互式 AcroForm 字段
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 创建 AcroForm 字段。它涵盖交互式 PDF 表单的文本框、多小部件文本字段、单选按钮、组合框、复选框、列表框、签名字段和条形码字段。
 ---
+Aspose.PDF for Java 允许您从头开始创建各种 AcroForm 字段类型。
 
-## 在 PDF 文档中添加表单字段
+## 创建文本框字段
 
-[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 类提供了一个名为 Form 的集合，帮助管理 PDF 文档中的表单字段。
+当您需要向新的 PDF 表单添加单行文本输入字段时，请使用此示例。
 
-要添加一个表单字段：
-
-1. 创建要添加的表单字段。
-2. 调用 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/Form) 集合的添加方法。
-
-此示例展示如何添加一个 TextBoxField。您可以使用相同的方法添加任何表单字段：
-
-1. 首先，创建一个字段对象并设置其属性。
-2. 然后，将字段添加到 Form 集合中。
-
-### 添加 TextBoxField
-
-文本字段是一个允许接收者在表单中输入文本的表单元素。
- 这会在您希望允许用户自由输入他们想要的内容时使用。
-
-以下代码片段展示了如何向 PDF 文档中添加一个 TextBoxField。
+1. 创建新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加页面。
+1. 使用目标矩形创建一个 [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) 并配置其外观。
+1. 将字段添加到表单并保存文档。
 
 ```java
-public class ExamplesCreateForm {
+public static void addTextBoxField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void AddingTextBoxField() {
-
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // 创建一个字段
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
+        Rectangle rectangle = new Rectangle(10, 600, 110, 620, true);
+        TextBoxField textBoxField = new TextBoxField(page, rectangle);
         textBoxField.setPartialName("textbox1");
         textBoxField.setValue("Text Box");
+        textBoxField.setDefaultAppearance(new DefaultAppearance("Arial", 10, Color.getDarkBlue().toRgb()));
 
-        // TextBoxField.Border = new Border(
         Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
+        border.setWidth(1);
+        border.setStyle(BorderStyle.Dashed);
+        border.setDash(new Dash(3, 3));
         textBoxField.setBorder(border);
 
-        textBoxField.setColor(Color.getGreen());
+        textBoxField.getCharacteristics().setBorder(Color.getRed());
+        textBoxField.getCharacteristics().setBackground(Color.getYellow().toRgb());
 
-        // 将字段添加到文档中
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // 保存修改后的 PDF
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+        document.getForm().add(textBoxField, 1);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## 添加 RadioButtonField
+## 创建一个包含多个小部件的文本框字段
 
-单选按钮通常用于选择题的场景，其中只能选择一个答案。
+当相同的文本字段值应出现在页面上的多个位置时，请使用此示例。
 
-以下代码片段展示了如何在 PDF 文档中添加 [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField)。
-
-```java
-public static void AddingRadioButton() {
-        Document pdfDocument = new Document();
-        // 添加页面到 PDF 文件
-        pdfDocument.getPages().add();
-
-        // 创建 RadioButtonField 对象，并传递页码作为参数
-        RadioButtonField radio = new RadioButtonField(pdfDocument.getPages().get_Item(1));
-
-        // 添加第一个单选按钮选项，并使用 Rectangle 对象指定其起始位置
-        radio.addOption("Test", new Rectangle(20, 720, 40, 740));
-        // 添加第二个单选按钮选项
-        radio.addOption("Test1", new Rectangle(120, 720, 140, 740));
-        // 将单选按钮添加到 Document 对象的表单对象中
-        pdfDocument.getForm().add(radio);
-        // 保存 PDF 文件
-        pdfDocument.save("RadioButtonSample.pdf");
-
-    }
-```
-
-
-以下代码片段显示了添加具有三个选项的[RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField)并将其放置在表格单元格中的步骤。
+1. 创建新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加页面。
+1. 为字段小部件定义多个矩形和外观。
+1. 创建 [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/)，配置每个小部件，然后保存文档。
 
 ```java
-public static void AddingRadioButtonAdvanced() {
-        Document doc = new Document();
-        Page page = doc.getPages().add();
-        Table table = new Table();
-        table.setColumnWidths("120 120 120");
-        page.getParagraphs().add(table);
-        Row r1 = table.getRows().add();
-        Cell c1 = r1.getCells().add();
-        Cell c2 = r1.getCells().add();
-        Cell c3 = r1.getCells().add();
+public static void addTextBoxFieldNt(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-        RadioButtonField rf = new RadioButtonField(page);
-        rf.setPartialName("radio");
-        doc.getForm().add(rf, 1);
+        Rectangle[] rects = {
+                new Rectangle(10, 600, 110, 620, true),
+                new Rectangle(10, 630, 110, 650, true),
+                new Rectangle(10, 660, 110, 680, true)
+        };
 
-        RadioButtonOptionField opt1 = new RadioButtonOptionField();
-        RadioButtonOptionField opt2 = new RadioButtonOptionField();
-        RadioButtonOptionField opt3 = new RadioButtonOptionField();
+        DefaultAppearance[] defaultAppearances = {
+                new DefaultAppearance("Arial", 10, Color.getDarkBlue().toRgb()),
+                new DefaultAppearance("Helvetica", 12, Color.getDarkGreen().toRgb()),
+                new DefaultAppearance(FontRepository.findFont("Calibri"), 14, Color.getDarkMagenta().toRgb())
+        };
 
-        opt1.setOptionName("Item1");
-        opt2.setOptionName("Item2");
-        opt3.setOptionName("Item3");
+        TextBoxField textBoxField = new TextBoxField(page, rects);
+        textBoxField.setPartialName("textbox1");
+        textBoxField.setValue("Some text");
 
-        opt1.setWidth(15);
-        opt1.setHeight(15);
-        opt2.setWidth(15);
-        opt2.setHeight(15);
-        opt3.setWidth(15);
-        opt3.setHeight(15);
-
-        rf.add(opt1);
-        rf.add(opt2);
-        rf.add(opt3);
-
-        opt1.setBorder(new Border(opt1));
-        opt1.getBorder().setWidth(1);
-        opt1.getBorder().setStyle(BorderStyle.Solid);
-        opt1.getCharacteristics().setBorder(Color.getBlack());
-        opt1.getDefaultAppearance().setTextColor(java.awt.Color.RED);
-        opt1.setCaption(new TextFragment("Item1"));
-        opt2.setBorder(new Border(opt2));
-        opt2.getBorder().setWidth(1);
-        opt2.getBorder().setStyle(BorderStyle.Solid);
-        opt2.getCharacteristics().setBorder(java.awt.Color.BLACK);
-        opt2.getDefaultAppearance().setTextColor(java.awt.Color.RED);
-        opt2.setCaption(new TextFragment("Item2"));
-        opt3.setBorder(new Border(opt3));
-        opt3.getBorder().setWidth(1);
-        opt3.getBorder().setStyle(BorderStyle.Solid);
-        opt3.getCharacteristics().setBorder(java.awt.Color.BLACK);
-        opt3.getDefaultAppearance().setTextColor(java.awt.Color.RED);
-        opt3.setCaption(new TextFragment("Item3"));
-        c1.getParagraphs().add(opt1);
-        c2.getParagraphs().add(opt2);
-        c3.getParagraphs().add(opt3);
-
-        doc.save("RadioButtonField.pdf");
-    }
-```
-
-
-## 为 RadioButtonField 添加标题
-
-以下代码片段展示了如何添加将与 [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField) 关联的标题：
-
-```java
-public static void AddingCaptionToRadioButtonField() {
-        // 加载源 PDF 表单
-        com.aspose.pdf.facades.Form form1 = new com.aspose.pdf.facades.Form(_dataDir + "RadioButtonField.pdf");
-        Document document = new Document(_dataDir + "RadioButtonField.pdf");
-        for (String item : form1.getFieldNames()) {
-            System.out.println(item.toString());
-            if (item.contains("radio1")) {
-                RadioButtonField field0 = (RadioButtonField) document.getForm().get(item);
-                RadioButtonOptionField fieldoption = new RadioButtonOptionField();
-                fieldoption.setOptionName("Yes");
-                fieldoption.setPartialName("Yesname");
-
-                var updatedFragment = new TextFragment("test123");
-                updatedFragment.getTextState().setFont(FontRepository.findFont("Arial"));
-                updatedFragment.getTextState().setFontSize(10);
-                updatedFragment.getTextState().setLineSpacing(6.32f);
-
-                // 创建 TextParagraph 对象
-                TextParagraph par = new TextParagraph();
-
-                // 设置段落位置
-                par.setPosition(new Position(field0.getRect().getLLX(),
-                        field0.getRect().getLLY() + updatedFragment.getTextState().getFontSize()));
-                // 指定换行模式
-                par.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
-
-                // 将新的 TextFragment 添加到段落
-                par.appendLine(updatedFragment);
-
-                // 使用 TextBuilder 添加 TextParagraph
-                TextBuilder textBuilder = new TextBuilder(document.getPages().get_Item(1));
-                textBuilder.appendParagraph(par);
-
-                field0.deleteOption("item1");
-            }
+        int index = 0;
+        for (WidgetAnnotation widget : textBoxField) {
+            widget.setDefaultAppearance(defaultAppearances[index]);
+            index++;
         }
-        document.save(_dataDir + "RadioButtonField_out.pdf");
 
+        Border border = new Border(textBoxField);
+        border.setWidth(1);
+        border.setStyle(BorderStyle.Dashed);
+        border.setDash(new Dash(3, 3));
+        textBoxField.setBorder(border);
+
+        textBoxField.getCharacteristics().setBorder(Color.getRed());
+        textBoxField.getCharacteristics().setBackground(Color.getYellow().toRgb());
+
+        document.getForm().add(textBoxField);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 创建单选按钮字段
 
-## 添加 ComboBox 字段
+当表单应让用户从预定义的集合中选择一个选项时，请使用此示例。
 
-组合框是一个表单字段，可以在您的文档中添加下拉菜单。
-
-以下代码片段展示了如何在 PDF 文档中添加 [ComboBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/ComboBoxField) 字段。
+1. 创建新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加页面。
+1. 创建一个 [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) 并添加所需的选项。
+1. 将字段添加到表单并保存 PDF。
 
 ```java
-public static void AddingComboboxField() {
-        // 创建 Document 对象
-        Document doc = new Document();
-        // 向文档对象添加页面
-        doc.getPages().add();
-        // 实例化 ComboBox 字段对象
-        ComboBoxField combo = new ComboBoxField(doc.getPages().get_Item(1), new Rectangle(100, 600, 150, 616));
-        // 向 ComboBox 添加选项
+public static void addRadioButton(Path outputFile) {
+    try (Document document = new Document()) {
+        document.getPages().add();
+
+        RadioButtonField radio = new RadioButtonField(document.getPages().get_Item(1));
+        radio.addOption("Option 1", new Rectangle(100, 640, 120, 680, true));
+        radio.addOption("Option 2", new Rectangle(140, 640, 160, 680, true));
+
+        document.getForm().add(radio);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 创建组合框字段
+
+当用户应从下拉列表中选择一个值时，请使用此示例。
+
+1. 创建新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加页面。
+1. 创建一个 [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) 并添加其可选选项。
+1. 设置默认选择并保存文档。
+
+```java
+public static void addComboBox(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        ComboBoxField combo = new ComboBoxField(page, new Rectangle(100, 640, 150, 656, true));
         combo.addOption("Red");
         combo.addOption("Yellow");
         combo.addOption("Green");
         combo.addOption("Blue");
-        // 将组合框对象添加到文档对象的表单字段集合中
-        doc.getForm().add(combo);
-        // 保存 PDF 文档
-        doc.save("ComboBox_Added.pdf");
+        combo.setSelected(3);
+
+        document.getForm().add(combo);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## 为表单添加工具提示
+## 创建复选框字段
 
-Document 类提供了一个名为 Form 的集合，用于管理 PDF 文档中的表单字段。
- 要为表单字段添加工具提示，请使用字段类的备用名称。Adobe Acrobat 使用“备用名称”作为字段工具提示。
+当表单需要是非判断选项（例如同意或功能选择）时，请使用此示例。
 
-以下代码片段展示了如何使用 Java 为表单字段添加工具提示。
+1. 创建新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加页面。
+1. 创建一个 [CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) 并配置其外观。
+1. 将复选框添加到表单并保存输​​出文件。
 
 ```java
-public static void AddTooltipToFormField() {
-        // 加载源 PDF 表单
-        Document doc = new Document(_dataDir + "AddTooltipToField.pdf");
+public static void addCheckboxFieldToPdf(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-        // 获取一个字段
-        TextBoxField textBoxField = (TextBoxField) doc.getForm().get("textbox1");
+        CheckboxField checkbox = new CheckboxField(page, new Rectangle(50, 620, 100, 650, true));
+        checkbox.getCharacteristics().setBackground(Color.getAqua().toRgb());
+        checkbox.setStyle(BoxStyle.Circle);
 
-        // 为文本框设置工具提示
-        textBoxField.setAlternateName("文本框工具提示");
-
-        // 保存修改后的文档
-        doc.save("output.pdf");
+        document.getForm().add(checkbox);
+        document.save(outputFile.toString());
     }
+}
+```
+
+## 创建列表框字段
+
+当表单应在可见列表中显示多个可用选项时，请使用此示例。
+
+1. 创建新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加页面。
+1. 创建一个 [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) 并添加可用选项。
+1. 将字段添加到表单并保存文档。
+
+```java
+public static void addListBoxFieldToPdf(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        ListBoxField listBox = new ListBoxField(page, new Rectangle(50, 650, 100, 700, true));
+        listBox.setPartialName("list");
+        listBox.addOption("Red");
+        listBox.addOption("Green");
+        listBox.addOption("Blue");
+
+        document.getForm().add(listBox);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 创建签名字段
+
+当文档必须为数字签名保留可见区域时，请使用此示例。
+
+1. 创建新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加页面。
+1. 在所需的矩形中创建一个 [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/)。
+1. 将字段添加到表单并保存输​​出 PDF。
+
+```java
+public static void addSignatureField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        SignatureField signatureField = new SignatureField(page, new Rectangle(100, 700, 200, 800, true));
+        signatureField.setPartialName("Signature1");
+        document.getForm().add(signatureField);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 创建条形码字段
+
+当表单应在条形码字段内显示机器可读数据时，请使用此示例。
+
+1. 创建新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加页面。
+1. 创建一个 [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) 并添加条形码值。
+1. 将字段添加到表单并保存文档。
+
+```java
+public static void addBarcodeField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        BarcodeField barcode = new BarcodeField(page, new Rectangle(100, 700, 200, 740, true));
+        barcode.setPartialName("Barcode1");
+        barcode.addBarcode("1234567890");
+        document.getForm().add(barcode);
+        document.save(outputFile.toString());
+    }
+}
 ```

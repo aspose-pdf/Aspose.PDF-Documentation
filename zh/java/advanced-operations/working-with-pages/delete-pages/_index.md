@@ -1,45 +1,50 @@
 ---
-title: 使用编程方式删除 PDF 页面
+title: 用Java删除PDF页面
 linktitle: 删除 PDF 页面
 type: docs
-weight: 40
-url: /zh/java/delete-pages/
-description: 您可以使用 Java 库从 PDF 文件中删除页面。
-lastmod: "2021-06-05"
+weight: 80
+url: /java/delete-pages/
+description: 了解如何使用 Java 从 PDF 文件中删除页面。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 删除一页或多页 PDF
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 从 PDF 文件中删除页面。它包括通过页面收集 API 删除单个页面和一次删除多个页面。
 ---
+当您需要从 PDF 中删除一页或多页时，请使用文档页面集合。
 
-您可以使用 Aspose.PDF for Java 从 PDF 文件中删除页面。要从 [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection) 中删除特定页面，只需调用 delete() 方法并指定要删除的特定页面的索引。然后调用 save 方法以保存更新后的 PDF 文件。
+## 删除单个页面
 
-## 从 PDF 文件中删除页面
+当您需要按索引删除一页时，请使用此示例。
 
-1. 调用 Delete 方法并指定页面的索引
-1. 调用 Save 方法以保存更新后的 PDF 文件
-
-以下代码片段展示了如何使用 Java 从 PDF 文件中删除特定页面。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 从页面集合中删除目标页面。
+1. 保存更新的文档。
 
 ```java
-package com.aspose.pdf.examples;
+public static void deletePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(2);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import com.aspose.pdf.*;
+## 删除多个页面
 
-public class ExampleDeletePage {
+当应在一次操作中删除多个页面时，请使用此示例。
 
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 传递要从页面集合中删除的页面索引。
+1. 保存修改后的 PDF。
 
-  public static void DeletePageFromPDFFile() {
-
-    // 打开文档
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    // 删除特定页面
-    pdfDocument.getPages().delete(2);
-
-    _dataDir = _dataDir + "DeleteParticularPage_out.pdf";
-    // 保存更新后的 PDF
-    pdfDocument.save(_dataDir);    
-
-  }
+```java
+public static void deleteBunchPages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(new Integer[]{2, 3, 4});
+        document.save(outputFile.toString());
+    }
+}
 ```

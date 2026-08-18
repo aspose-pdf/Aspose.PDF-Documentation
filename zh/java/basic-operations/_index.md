@@ -1,18 +1,23 @@
 ---
-title: 基本操作与PDF文档
+title: PDF文档的基本操作
 linktitle: 基本操作
 type: docs
-weight: 40
-url: /zh/java/basic-operations/
-lastmod: "2021-06-05"
-description: 基本操作部分描述了使用Aspose.PDF for Java打开和保存PDF文档的可能性。
+weight: 60
+url: /java/basic-operations/
+lastmod: "2026-06-09"
+description: 基本操作部分介绍了如何使用 Aspose.PDF for Java 创建、打开、保存、合并、分割和保护 PDF 文档。
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: 使用 Java 对 PDF 进行基本操作的概述
+Abstract: 本文概述了使用 Aspose.PDF 在 Java 中进行基本 PDF 操作。它涵盖创建新文档、从文件或流打开 PDF、将文档保存到文件和流、合并和拆分 PDF 文件以及使用密码和权限保护文档。
 ---
+**基本操作**部分描述了您可以使用 Aspose.PDF for Java 执行的第一个也是最简单的 PDF 任务：
 
-**基本操作**部分描述了在Aspose.PDF for Java中对PDF文档进行的第一个和最简单的操作：
-
-- [创建PDF文档](/pdf/zh/java/create-document/) - 本文描述了如何使用Java创建PDF文件。
-- [打开PDF文档](/pdf/zh/java/open-pdf-document/) - 本文描述了在Java应用程序中打开PDF文档的各种方法。
-- [保存PDF文档](/pdf/zh/java/save-pdf-document/) - 本文描述了将PDF文档保存到文件、流、发送到Web或保存为PDF/A（或PDF/X）文档的各种方法。
+- [创建 PDF 文档](/pdf/java/create-document/) - 使用 Java 以编程方式创建新的 PDF 文档。
+- [打开 PDF 文档](/pdf/java/open-pdf-document/) - 从路径、流或使用密码打开 PDF 文件。
+- [保存 PDF 文档](/pdf/java/save-pdf-document/) - 将文档保存到文件、流或作为 PDF 标准。
+- [合并 PDF](/pdf/java/merge-pdf/) - 将多个 PDF 文件合并为一个输出文档。
+- [拆分 PDF](/pdf/java/split-pdf/) - 将 PDF 页面拆分为单独的单页 PDF 文件。
+- [Encrypt and Decrypt PDF File](/pdf/java/protect-pdf-file/) - apply passwords, permissions, and decryption to PDF files.

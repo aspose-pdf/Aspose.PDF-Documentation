@@ -1,32 +1,40 @@
 ---
-title: 使用 com.aspose.pdf.facades
-linktitle: 使用 Facades
+title: 使用 PDF 立面
+linktitle: 使用 PDF 立面
 type: docs
-weight: 80
-url: /zh/java/working-with-facades/
-description: 本节解释如何使用 com.aspose.pdf.facades - 一个用于常见 PDF 操作的工具集。
-lastmod: "2021-06-05"
+weight: 100
+url: /java/working-with-facades/
+description: 了解如何使用 Java 中的 Aspose.PDF Facades 编辑 PDF 内容、管理表单和注释、应用安全性、签署文件、盖章页面、渲染页面以及检查 PDF 元数据。
+is_node: true
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在 Java 中使用 PDF Facades 进行表单、签名、安全、图章和文件处理
+Abstract: 本节介绍如何使用 Aspose.PDF Facades for Java 通过简化的 API 处理常见的 PDF 工作流程。当前的 Java 覆盖范围包括表单、表单编辑、注释编辑、内容编辑、文件编辑、文件信息、安全性、签名、文件标记、查看器渲染和标记构建工作流程。
 ---
+Facades API 为常见 PDF 任务提供了更高级别的帮助程序，而无需直接使用较低级别的文档对象模型。
 
-Aspose.PDF Facades 是一组类，允许您在不深入了解 PDF 结构的情况下对其进行各种操作。
+使用本部分了解如何：
 
-在本节中，您将学习如何：
+- 填写和编辑 PDF 表单
+- 使用注释和内容
+- 合并、拆分和重组 PDF 文件
+- 检查元数据和页面信息
+- 应用安全性、签名、印章和页码
+- 使用查看器外观将 PDF 页面渲染为图像
 
-- [使用 PdfFileEditor](/pdf/zh/java/pdffileeditor-class/) - 工具，允许对 PDF 文件进行操作（分割、合并等）
-- [使用 PdfFileMend](/pdf/zh/java/pdffilemend-class/) - 用于在现有 PDF 文档的页面上添加文本和图像的工具
-- [使用 PdfContentEditor](/pdf/zh/java/pdfcontenteditor-class/) - 用于编辑 PDF 文件内容的工具
-- [使用 PdfAnnotationEditor](/pdf/zh/java/pdfannotationeditor-class/) - 用于处理 PDF 文档注释（评论）的工具
+## 外墙部分
 
-- [使用 PdfBookmarEditor](/pdf/zh/java/working-with-bookmarks-facades/) - 用于创建、导入、导出和删除书签的工具
-- [使用 PdfExtractor](/pdf/zh/java/pdfextractor-class/) - 用于从 PDF 文档中提取图像和文本的工具
-- [使用 PdfFileSignature](/pdf/zh/java/pdffilesignature-class/) - 用于使用证书签署 PDF 文件的工具
-- [使用 PdfConverter](/pdf/zh/java/pdfconverter-class/) - 用于将 PDF 文件转换为图像（BMP、JPEG、PNG 和 TIFF）及其反向转换的工具
-- [使用 PdfFileInfo](/pdf/zh/java/pdffileinfo-class/) - 用于访问 PDF 文档元信息的工具
-- [使用 PdfXmpMetadata](/pdf/zh/java/pdfxmpmetadata-class/) - 用于操作 XMP 元数据的工具
-- [使用 PdfFileSecurity](/pdf/zh/java/pdffilesecurity-class/) - 用于操作 PDF 文件的加密、解密和设置权限的工具
-- [使用 PdfFileStamp](/pdf/zh/java/pdffilestamp-class/) - 用于页面和图像印章操作的工具
-- [使用 PdfViewer](/pdf/zh/java/pdfviewer-class/) - 用于处理 PDF 打印的工具
-- [使用 Form](/pdf/zh/java/form-class/) - 用于操作 Acro 表单的工具
+- [表格](/pdf/java/form-class/)
+- [表单编辑器](/pdf/java/formeditor-class/)
+- [Pdf注释编辑器](/pdf/java/pdfannotationeditor-class/)
+- [Pdf内容编辑器](/pdf/java/pdfcontenteditor-class/)
+- [Pdf文件编辑器](/pdf/java/pdffileeditor-class/)
+- [Pdf文件信息](/pdf/java/pdffileinfo-class/)
+- [Pdf文件安全](/pdf/java/pdffilesecurity-class/)
+- [Pdf文件签名](/pdf/java/pdffilesignature-class/)
+- [PdfFileStamp](/pdf/java/pdffilestamp-class/)
+- [PdfViewer](/pdf/java/pdfviewer-class/)
+- [图章](/pdf/java/stamp-class/)

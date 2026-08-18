@@ -1,141 +1,143 @@
 ---
-title: 获取、更新和展开书签
+title: 在 Java 中获取、更新和展开 PDF 书签
 linktitle: 获取、更新和展开书签
 type: docs
 weight: 20
-url: /zh/java/get-update-and-expand-bookmark/
-description: 本文描述了如何在 PDF 文件中使用书签。使用我们的 Java 库，您可以从 PDF 文件中获取书签，获取书签的页码，更新 PDF 文档中的书签，以及在查看文档时展开书签。
-lastmod: "2021-06-05"
+url: /java/get-update-and-expand-bookmark/
+description: 了解如何使用 Java 检索、更新和扩展 PDF 文档中的书签。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 检查书签属性并扩展 PDF 文件中的轮廓
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 读取、更新和展开书签。它包括迭代大纲项目、使用 PdfBookmarkEditor 提取书签页码、读取子书签、更新书签标题和样式以及在显示文档时强制打开大纲。
 ---
+Aspose.PDF for Java 通过文档大纲模型和`PdfBookmarkEditor` 外观公开书签。
 
-## 获取书签
+## 获取书签属性
 
-[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 对象的 [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 集合包含了 PDF 文件的所有书签。本文解释了如何从 PDF 文件中获取书签，以及如何获取特定书签所在的页面。
+当您需要检查文档大纲中的顶级书签条目时，请使用此示例。
 
-要获取书签，遍历 [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 集合，并在 OutlineItemCollection 中获取每个书签。
- OutlineItemCollection提供对所有书签属性的访问。以下代码片段向您展示如何从PDF文件中获取书签。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历轮廓集合。
+1. 读取并打印书签标题、样式和颜色值。
 
 ```java
-    public static void GettingBookmarks() {
-        // 打开文档
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // 遍历所有书签
-        for (OutlineItemCollection outlineItem : (Iterable<OutlineItemCollection>) pdfDocument.getOutlines()) {
-            System.out.println("标题 :- " + outlineItem.getTitle());
-            System.out.println("是否斜体 :- " + outlineItem.getItalic());
-            System.out.println("是否加粗 :- " + outlineItem.getBold());
-            System.out.println("颜色 :- " + outlineItem.getColor());
+public static void getBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
         }
     }
+}
 ```
 
-## 获取书签的页码
+## 获取书签页码
 
-一旦您添加了书签，您可以通过获取与书签对象关联的目标页码来找出它位于哪一页。
+此示例使用 `PdfBookmarkEditor` 提取书签标题、级别、页码和操作。
+
+1. 将源 PDF 绑定到 [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/)。
+1. 提取书签集合并迭代它。
+1. 打印每个书签的级别、标题、页码和操作信息。
 
 ```java
-    public static void GettingBookmarksPageNumber() {
-        // 创建PdfBookmarkEditor
-        PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-        // 打开PDF文件
-        bookmarkEditor.bindPdf(GetDataDir() + "UpdateBookmarks.pdf");
-        // 提取书签
-        Bookmarks bookmarks = bookmarkEditor.extractBookmarks();
-        for (Bookmark bookmark : (Iterable<Bookmark>) bookmarks) {
-            String strLevelSeprator = "";
-            for (int i = 1; i < bookmark.getLevel(); i++) {
-                strLevelSeprator += "---- ";
+public static void getBookmarkPageNumber(Path inputFile) {
+    PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
+    try {
+        bookmarkEditor.bindPdf(inputFile.toString());
+        for (Bookmark bookmark : bookmarkEditor.extractBookmarks()) {
+            String levelSeparator = "";
+            for (int i = 0; i < bookmark.getLevel(); i++) {
+                levelSeparator += "----";
             }
-            System.out.println("标题 :- " + strLevelSeprator + bookmark.getTitle());
-            System.out.println("页码 :- " + strLevelSeprator + bookmark.getPageNumber());
-            System.out.println("页面动作 :- " + strLevelSeprator + bookmark.getAction());
+
+            System.out.println(levelSeparator + " Title: " + bookmark.getTitle());
+            System.out.println(levelSeparator + " Page Number: " + bookmark.getPageNumber());
+            System.out.println(levelSeparator + " Page Action: " + bookmark.getAction());
+        }
+    } finally {
+        bookmarkEditor.close();
+    }
+}
+```
+
+## 获取子书签
+
+当您需要检查顶级和嵌套大纲项时，请使用此示例。
+
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 迭代顶级轮廓并打印它们的属性。
+1. 检测子书签，然后迭代它们并打印它们的属性。
+
+```java
+public static void getChildBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
+            int count = outlineItem.size();
+            if (count > 0) {
+                System.out.println("Child Bookmarks");
+                for (int j = 1; j <= outlineItem.size(); j++) {
+                    OutlineItemCollection childOutlineItem = outlineItem.get_Item(j);
+                    System.out.println(childOutlineItem.getTitle());
+                    System.out.println(childOutlineItem.getItalic());
+                    System.out.println(childOutlineItem.getBold());
+                    System.out.println(childOutlineItem.getColor());
+                }
+            }
         }
     }
+}
 ```
 
-## 更新 PDF 文档中的书签
+## 更新书签
 
-要在 PDF 文件中更新书签，首先通过指定书签的索引，从 Document 对象的 OutlineCollection 集合中获取特定的书签。一旦将书签检索到 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 对象中，可以更新其属性，然后使用 Save 方法保存更新后的 PDF 文件。以下代码片段展示了如何在 PDF 文档中更新书签。
+当应修改现有书签标题和样式时，请使用此示例。
 
-```java
-    public static void UpdateBookmarksInPDFDocument() {
-        // 打开文档
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // 获取书签对象
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-
-        // 更新书签对象
-        pdfOutline.setTitle("Updated Outline");
-        pdfOutline.setItalic(true);
-        pdfOutline.setBold(true);
-        // 将目标页面设置为 2
-        pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // 保存输出
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
-    }
-```
-
-
-## 更新 PDF 文档中的子书签
-
-要更新子书签：
-
-1. 通过首先获取父书签，然后使用适当的索引值获取子书签，从 PDF 文件中检索要更新的子书签。
-2. 使用 Save 方法保存更新后的 PDF 文件。
-
-{{% alert color="primary" %}}
-
-通过指定书签的索引从 Document 对象的 OutlineCollection 集合中获取书签，然后通过指定父书签的索引获取子书签。
-
-{{% /alert %}}
-
-以下代码片段向您展示如何在 PDF 文档中更新子书签。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 访问目标大纲项目及其子书签。
+1. 更新书签属性并保存文档。
 
 ```java
-    public static void UpdateChildBookmarksInPDFDocument() {
-        // 打开文档
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // 获取书签对象
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-        // 获取子书签对象
-        OutlineItemCollection childOutline = pdfOutline.get_Item(1);
-
-        // 更新书签对象
+public static void updateBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection outline = document.getOutlines().get_Item(1);
+        OutlineItemCollection childOutline = outline.get_Item(1);
         childOutline.setTitle("Updated Outline");
         childOutline.setItalic(true);
         childOutline.setBold(true);
-        // 将目标页面设置为2
-        childOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
 
-        // 保存输出
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 默认展开书签
 
-## 查看文档时展开书签
+当书签面板应在显示文档时打开并显示展开的大纲项目时，请使用此示例。
 
-书签保存在 Document 对象的 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) 集合中，它本身位于 [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 集合中。然而，我们可能需要在查看 PDF 文件时将所有书签展开。
-
-为了实现这一要求，我们可以将每个大纲/书签项的打开状态设置为 Open。以下代码段向您展示如何在 PDF 文档中将每个书签的打开状态设置为展开。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将页面模式设置为使用大纲并将每个大纲项目标记为打开。
+1. 保存更新的文档。
 
 ```java
-    public static void ExpandedBookmarks() {    
-        Document doc = new Document(GetDataDir()+"UpdateBookmarks.pdf");
-        // 设置页面查看模式，例如显示缩略图，全屏，显示附件面板
-        doc.setPageMode(PageMode.UseOutlines);
-        // 打印 PDF 文件中书签的总数
-        System.out.println(doc.getOutlines().size());
-        // 遍历 PDF 文件的大纲集合中的每个大纲项
-        for (int counter = 1; counter <= doc.getOutlines().size(); counter++) {
-            // 设置大纲项的打开状态
-            doc.getOutlines().get_Item(counter).setOpen(true);
+public static void expandedBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setPageMode(PageMode.UseOutlines);
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection item = document.getOutlines().get_Item(i);
+            item.setOpen(true);
         }
-        // 保存 PDF 文件
-        doc.save(_dataDir+"Bookmarks_Expanded.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```

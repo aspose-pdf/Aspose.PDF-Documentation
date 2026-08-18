@@ -1,47 +1,48 @@
 ---
-title: 获取 PDF 文件信息在 Ruby 中
+title: 在 Ruby 中获取 PDF 文件信息
+linktitle: 在 Ruby 中获取 PDF 文件信息
 type: docs
 weight: 50
-url: /zh/java/get-pdf-file-information-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-pdf-file-information-in-ruby/
+description: 使用 Ruby 中的 Aspose.PDF 以编程方式从 PDF 文件中提取元数据和详细信息。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 获取 PDF 文件信息
 
-要使用 **Aspose.PDF Java for Ruby** 获取 PDF 文档的文件信息，只需调用 **GetPdfFileInfo** 模块。
+要使用 **Aspose.PDF Java for Ruby** 获取 Pdf 文档的文件信息，只需调用 **GetPdfFileInfo** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开一个 pdf 文档。
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# 获取文档信息
+# Get document information
 
 doc_info = doc.getInfo()
 
-# 显示文档信息
+# Show document information
 
-puts "作者:-" + doc_info.getAuthor().to_s
+puts "Author:-" + doc_info.getAuthor().to_s
 
-puts "创建日期:-" + doc_info.getCreationDate().to_string
+puts "Creation Date:-" + doc_info.getCreationDate().to_string
 
-puts "关键词:-" + doc_info.getKeywords().to_s
+puts "Keywords:-" + doc_info.getKeywords().to_s
 
-puts "修改日期:-" + doc_info.getModDate().to_string
+puts "Modify Date:-" + doc_info.getModDate().to_string
 
-puts "主题:-" + doc_info.getSubject().to_s
+puts "Subject:-" + doc_info.getSubject().to_s
 
-puts "标题:-" + doc_info.getTitle().to_s
+puts "Title:-" + doc_info.getTitle().to_s
 ```
 
 ## 下载运行代码
 
-从以下任何一个社交编码网站下载 **获取 PDF 文件信息 (Aspose.PDF)**:
+从以下任何一个社交编码网站下载**获取 PDF 文件信息 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)

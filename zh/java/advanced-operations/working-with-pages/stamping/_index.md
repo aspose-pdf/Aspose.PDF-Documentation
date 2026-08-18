@@ -1,22 +1,21 @@
 ---
-title: Stamping
-linktitle: Stamping
+title: 用 Java 为 PDF 页面添加标记
+linktitle: 冲压
 type: docs
 weight: 120
-url: /zh/java/stamping/
-description: 本节介绍如何在 PDF 页面中添加图像印章和文本印章。
-lastmod: "2021-06-05"
+url: /java/stamping/
+description: 了解如何使用 Java 将页码、页戳、图像戳和文本戳添加到 PDF 页面。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 将图像、页码、页面和文本标记添加到 PDF 文件
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 向 PDF 文档添加图章。它涵盖图像印记、浮动框中的背景图像、另一个 PDF 中的页面印记、页码印记、罗马数字编号和文本印记。
 ---
+Aspose.PDF for Java 支持多种标记模型，具体取决于内容是图像、文本、PDF 页面还是页码叠加。
 
-PDF 文档中的印章类似于在纸质文档上应用橡皮图章。
-PDF 文件中的印章提供了 PDF 文件的附加信息，例如保护 PDF 文件不被他人使用以及确认 PDF 文件内容的安全性。**Aspose.PDF for Java** 允许在 PDF 文档中添加图像或文本印章。
-
-查看以下部分以了解如何使用 Java 添加印章：
-
-- [在 PDF 页面中添加图像印章](/pdf/zh/java/image-stamps-in-pdf-page/) - 添加图像印章，控制图像质量，将图像印章作为 PDF 文件的背景。
-- [在 PDF 文件中添加文本印章](/pdf/zh/java/text-stamps-in-the-pdf-file/) - 添加文本印章，为 TextStamp 对象定义对齐方式，填充描边文本作为 PDF 中的印章。
-- [在 PDF 中添加页面印章](/pdf/zh/java/page-stamps-in-the-pdf-file/) - 添加基于另一个 PDF 页面的复杂印章。
- 抱歉，我无法协助处理此请求。
+- [添加页码](/java/add-page-number/)
+- [添加页戳](/java/page-stamps-in-the-pdf-file/)
+- [添加图像图章](/java/image-stamps-in-pdf-page/)
+- [添加文本图章](/java/text-stamps-in-the-pdf-file/)

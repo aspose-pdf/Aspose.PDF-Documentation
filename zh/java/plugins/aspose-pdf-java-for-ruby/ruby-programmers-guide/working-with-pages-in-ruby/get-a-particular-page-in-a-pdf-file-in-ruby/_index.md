@@ -1,47 +1,48 @@
 ---
-title: 获取 PDF 文件中特定页面的 Ruby
+title: 使用 Ruby 获取 PDF 文件中的特定页面
+linktitle: 使用 Ruby 获取 PDF 文件中的特定页面
 type: docs
 weight: 30
-url: /zh/java/get-a-particular-page-in-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-a-particular-page-in-a-pdf-file-in-ruby/
+description: 使用 Ruby 和 Aspose.PDF 访问和操作 PDF 文档中的各个页面。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 获取页面
 
-要使用 **Aspose.PDF Java for Ruby** 在 PDF 文档中获取特定页面，只需调用 **GetPage** 模块。
+要使用 **Aspose.PDF Java for Ruby** 获取 PDF 文档中的特定页面，只需调用 **GetPage** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开目标文档
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# 获取页面集合中特定索引的页面
+# get the page at particular index of Page Collection
 
 pdf_page = pdf.getPages().get_Item(1)
 
-# 创建一个新的 Document 对象
+# create a new Document object
 
 new_document = Rjb::import('com.aspose.pdf.Document').new
 
-# 将页面添加到新文档对象的页面集合中
+# add page to pages collection of new document object
 
 new_document.getPages().add(pdf_page)
 
-# 保存新生成的 PDF 文件
+# save the newly generated PDF file
 
 new_document.save(data_dir + "output.pdf")
 
-puts "处理成功完成！"
+puts "Process completed successfully!"
 ```
 
 ## 下载运行代码
 
-从以下任意一个社交编码网站下载 **Get Page (Aspose.PDF)**：
+从以下任何一个社交编码网站下载 **获取页面 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpage.rb)

@@ -1,16 +1,20 @@
 ---
-title: 导航和交互
-linktitle: 导航和交互
+title: Java 中的 PDF 导航和交互
+linktitle: 导航与交互
 type: docs
 weight: 90
-url: /zh/java/navigation-and-interaction/
-description: 本节描述了与链接、动作和书签相关的工作特性。
-lastmod: "2021-06-05"
+url: /java/navigation-and-interaction/
+description: 了解如何在 Java 中使用 PDF 链接、操作和书签来实现导航和交互式文档行为。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: 使用 Java 处理 PDF 文件中的链接、操作和书签
+Abstract: 本节介绍如何使用 Aspose.PDF for Java 管理 PDF 文档中的导航和交互功能。了解如何创建和更新链接、添加交互操作以及使用书签来改进 PDF 导航和文档工作流程。
 ---
+Aspose.PDF for Java 包括用于书签、链接和交互操作的 API。您可以使用这些功能来改进文档内的导航、连接到外部资源以及触发用户交互的行为。
 
-- [链接](/pdf/zh/java/links/) - 您可以轻松地使用Java创建、更新和提取链接。
-- [动作](/pdf/zh/java/actions/) - 可以添加和获取、创建到PDF文件的超链接。此外，在本文中，您将学习如何从PDF文件中删除文档打开动作以及如何指定查看文档时的PDF页面。
-- [书签](/pdf/zh/java/bookmarks/) - 大型出版物通常包含一个书签框架，可以在书签窗格中轻松查看和选择，允许您点击书签跳转到其代表的页面或章节。书签窗格是一个内容感知元素，只有在打开的PDF文档包含书签结构时才在侧边栏中可见。
+- [使用 PDF 链接](/pdf/java/links/)
+- [使用 PDF 操作](/pdf/java/actions/)
+- [使用 PDF 书签](/pdf/java/bookmarks/)

@@ -1,12 +1,13 @@
 ---
-title: 在 Python 中设置 PDF 到期
+title: 在 Python 中设置 PDF 过期时间
+linktitle: 在 Python 中设置 PDF 过期时间
 type: docs
 weight: 80
-url: /zh/java/set-pdf-expiration-in-python/
-lastmod: "2021-06-05"
+url: /java/set-pdf-expiration-in-python/
+description: 了解如何使用 Aspose.PDF 在 Python 中设置 PDF 文件的到期日期，以进行时间敏感的文档访问。
+lastmod: "2026-06-09"
 ---
-
-要使用 **Aspose.PDF Java for Python** 设置 PDF 文档的到期，只需调用 **SetExpiration** 类。
+要使用 **Aspose.PDF Java for Python** 设置 Pdf 文档的过期时间，只需调用 **SetExpiration** 类即可。
 
 ```python
 
@@ -20,14 +21,14 @@ javascript = self.JavascriptAction(
 
 doc.setOpenAction(javascript);
 
-# 保存更新的文档并添加新信息
+# save update document with new information
 doc.save(self.dataDir + "set_expiration.pdf");
 
-print "更新文档信息，请检查输出文件。"
+print "Update document information, please check output file."
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载 **Set PDF Expiration (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**设置 PDF 过期时间 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetExpiration/SetExpiration.py)

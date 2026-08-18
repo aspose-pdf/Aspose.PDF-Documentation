@@ -1,1207 +1,1766 @@
 ---
-title: 有什么新功能
-linktitle: 有什么新功能
+title: 什么是新的
+linktitle: 什么是新的
 type: docs
 weight: 10
-url: /zh/java/whatsnew/
-description: 本页面介绍了Aspose.PDF for Java最近发布版本中引入的最受欢迎的新功能。
+url: /java/whatsnew/
+description: 本页介绍了 Aspose.PDF for Java 中最近版本中引入的最流行的新功能。
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2021-06-05"
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: Aspose.PDF for Java 中的热门新功能
+Abstract: Aspose.PDF for Java 文档的“新增功能”部分概述了最近版本中引入的最新更新、增强功能和错误修复。它重点介绍了新功能、性能改进和兼容性更新，以帮助开发人员随时了解 PDF 处理的最新进展。该文档还包括有关已弃用功能和推荐替代方案的详细信息。通过定期查看本节，开发人员可以确保他们在 Java 应用程序中利用最高效和最新的功能来实现无缝 PDF 管理。
+SoftwareApplication: java
 ---
+## Aspose.PDF 25.12 中的新增功能
 
-## Aspose.PDF 24.8 中的新功能
+### XFDF 中任意旋转的自由文本注释
 
-自24.8以来，支持PDF/A-4格式：
+XFDF 中的自由文本注释添加了对任意旋转角度的支持，使导入和导出的注释布局更加灵活。
 
 ```java
-
-    Document document = new Document(inputPdf);
-    // 只有PDF-2.x文档可以转换为PDF/A-4
-    document.convert(new ByteArrayOutputStream(), PdfFormat.v_2_0, ConvertErrorAction.Delete);
-    boolean converted = document.convert(logFile, PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
-    document.save(outputFile);
+Document pdfDocument = new Document(inputPdf);
+com.aspose.pdf.facades.PdfAnnotationEditor editor = new PdfAnnotationEditor();
+editor.bindPdf(pdfDocument);
+editor.importAnnotationsFromXfdf(inputXfdf);
+editor.save(output);
 ```
 
-此外，可以为图像印章添加替代文本：
+## Aspose.PDF 25.11 中的新增功能
 
-在ImageStamp中添加了AlternativeText属性——如果为其赋值，则在向文档添加ImageStamp时具有替代文本。
+### 隐藏数据清理改进
 
-```java
-
-    String p1_Alt1 = "*** 第1页，替代文本1 ***",
-                    p1_Alt2 = "*** 第1页，替代文本2 ***",
-                    p2_Alt1 = "--- 第1页，替代文本1 ---",
-                    p2_Alt2 = "--- 第1页，替代文本2 ---";
-
-    StructTreeRootElement structTreeRoot = document.getTaggedContent().getStructTreeRootElement();
-
-    ImageStamp imageStamp = new ImageStamp(dataDir + "test.jpg");
-    imageStamp.setXIndent(100);
-    imageStamp.setYIndent(700);
-    imageStamp.setWidth(50);
-    imageStamp.setHeight(50);
-    imageStamp.setQuality(100);
-    imageStamp.setAlternativeText(p1_Alt1);
-
-    // 到第1页
-    document.getPages().get_Item(1).addStamp(imageStamp);
-
-    imageStamp.setYIndent(500);
-    imageStamp.setAlternativeText(p1_Alt2);
-    document.getPages().get_Item(1).addStamp(imageStamp);
-
-    // 到第2页
-    document.getPages().add();
-    imageStamp.setXIndent(400);
-    imageStamp.setYIndent(700);
-    imageStamp.setWidth(50);
-    imageStamp.setHeight(50);
-    imageStamp.setAlternativeText(p2_Alt1);
-    document.getPages().get_Item(2).addStamp(imageStamp);
-
-    imageStamp.setYIndent(500);
-    imageStamp.setAlternativeText(p2_Alt2);
-    document.getPages().get_Item(2).addStamp(imageStamp);
-
-    // 保存文档
-    document.save(outFile);
-```
-
-
-此外，以下代码显示了如何在 FigureElements 中的现有图像中添加替代文本。
+现在可通过 HiddenDataSanitizer 增强 PDF 清理功能，以改进文档中隐藏内容的删除。
 
 ```java
-
-    String inFile = dataDir + "46040.pdf";
-    String outFile = dataDir + "46040_1_out.pdf";
-
-    Document document = new Document(inFile);
-
-    ITaggedContent taggedContent = document.getTaggedContent();
-    StructureElement rootElement = taggedContent.getRootElement();
-
-    Iterator tmp0 = (rootElement.getChildElements()).iterator();
-    while (tmp0.hasNext())
+Document document = new Document(pdfFile);
+    try
     {
-        com.aspose.pdf.tagged.logicalstructure.elements.Element element = (com.aspose.pdf.tagged.logicalstructure.elements.Element)tmp0.next();
-        if (element instanceof com.aspose.pdf.tagged.logicalstructure.elements.FigureElement)
-                {
-            com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figureElement = (com.aspose.pdf.tagged.logicalstructure.elements.FigureElement)element;
+        HiddenDataSanitizationOptions options = HiddenDataSanitizationOptions.all();
+        ImageCompressionOptions tmp = new ImageCompressionOptions();
+        tmp.setMaxResolution(30);
+        tmp.setResizeImages(true);
+        tmp.setCompressImages(true);
+        options.setImageCompressionOptions(tmp);
+        HiddenDataSanitizer sanitizer = new HiddenDataSanitizer(options);
+        sanitizer.sanitize(document);
+        document.save(getOutputPath("clear_all_resize_img.pdf"));
+    }
+    finally
+    {
+        document.close();
+    }
+```
 
-            // 设置替代文本
-            figureElement.setAlternativeText("图像替代文本（技术1）");
+### 改进了 PDF 优化过程中文件大小的减小
+
+PDF 优化现在通过改进字体子集的处理方式来改进文件大小的减小。
+
+```java
+Document document = new Document(inputPath);
+    try {
+        OptimizationOptions tmp = new OptimizationOptions();
+        tmp.setSubsetFonts(true);
+        tmp.setAllowReusePageContent(true);
+        tmp.setCompressObjects(true);
+        tmp.setLinkDuplicateStreams(true);
+        tmp.setRemoveUnusedObjects(true);
+        tmp.setRemoveUnusedStreams(true);
+        tmp.setCompressAllContentStreams(true);
+        OptimizationOptions optimizeOptions = tmp;
+
+        document.optimizeResources(optimizeOptions);
+        document.save(outputPath);
+    } finally {
+        document.close();
+    }
+```
+
+## Aspose.PDF 25.10 中的新增功能
+
+### PDF 到 PDF/E 转换支持
+
+Aspose.PDF for Java 现在支持将 PDF 文档转换为 PDF/E 格式。
+
+```java
+Document document = new Document(inputPdf);
+document.convert(conversionLog, PdfFormat.PDF_E_1, ConvertErrorAction.Delete);
+document.save(outputPdf);
+```
+
+### 注释中的 HTML 文本
+
+添加了在注释内添加 HTML 文本的支持。
+
+```java
+Document pdf = new Document();
+    Page page = pdf.getPages().add();
+    DefaultAppearance da = new DefaultAppearance("Arial", 12, java.awt.Color.BLACK);
+    FreeTextAnnotation freeTextAnnot = new FreeTextAnnotation(page, new Rectangle(100, 600, 500, 700),
+            da);
+    freeTextAnnot.setRichText("<?xml version=\"1.0\"?><body xmlns=\"http://www.w3.org/1999/xhtml\" "
+            + "xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\\\" xfa:APIVersion=\"Acrobat:11.0.23\" "
+            + "xfa:spec=\"2.0.2\"  style=\"font-size:12.0pt;color:#00eeff;font-weight:normal;font-style:normal;"
+            + "font-family:Arial;font-stretch:normal\"><p dir=\"ltr\">1<p style=\"color:#00ff00;"
+            + "font-style:italic\">2</p>3456</p></body>");
+    freeTextAnnot.getTextStyle().setColor(java.awt.Color.BLACK);
+    freeTextAnnot.getTextStyle().setFontName("Arial");
+    //freeTextAnnot.Contents = "This is a rich text";
+    freeTextAnnot.setModified(new Date());
+    freeTextAnnot.setColor(Color.getRed());
+    freeTextAnnot.getBorder().setWidth(0);
+    page.getAnnotations().add(freeTextAnnot);
+    pdf.save(getOutputPath("out1.pdf"));
+```
+
+## Aspose.PDF 25.9 中的新增功能
+
+### HTML 转 PDF 插件
+
+Aspose.PDF for Java 现在包含 Html 到 Pdf 插件，以简化 HTML 到 PDF 处理工作流程。
+
+```java
+// Specify the input and output file paths.
+String inputPath = "sample.pdf";
+String outputPath = "sample.html";
+
+// Create an instance of the PdfHtmlplugin.
+PdfHtml converter = new PdfHtml();
+
+// Create an instance of the HtmlToPdfOptionsclass.
+HtmlToPdfOptions options = new HtmlToPdfOptions();
+
+// Add the input and output file paths to the options.
+options.addInput(new FileDataSource(inputPath));
+options.addOutput(new FileDataSource(outputPath));
+
+// Process the PDF to HTML conversion using the plugin and options.
+ResultContainer htmlResultContainer = converter.process(options);
+
+// Get the result from the result container.
+IOperationResult result = htmlResultContainer.getResultCollectionInternal().get_Item(0);
+```
+
+### PDF 1.6 一致性支持
+
+对于需要此文档版本的场景，添加了对 PDF 1.6 一致性的支持。
+
+## Aspose.PDF 25.8 中的新增功能
+
+### 表格边框样式支持
+
+添加了对表格边框样式的支持，以提供对表格外观的更多控制。
+
+```java
+Document document = new Document();
+    try {
+        Page page = document.getPages().add();
+
+        GraphInfo tmp = new GraphInfo();
+        tmp.setDashArray(new int[]{10, 10});
+        tmp.setDashPhase(5);
+        tmp.setLineWidth(3);
+        Table tmp_1 = new Table();
+        tmp_1.setBorder(new BorderInfo(BorderSide.Box, tmp));
+        tmp_1.setDefaultCellBorder(new BorderInfo(BorderSide.Box, .05f, Color.getWhite()));
+        tmp_1.setDefaultCellPadding(new MarginInfo(4.5, 3, 4.5, 3));
+        tmp_1.getDefaultCellTextState().setFont(FontRepository.findFont("Arial"));
+        tmp_1.getDefaultCellTextState().setFontSize(10);
+        tmp_1.getDefaultCellTextState().setHorizontalAlignment(HorizontalAlignment.Left);
+        tmp_1.getDefaultCellTextState().setForegroundColor(Color.getBlack());
+        Table table1_allSidesSet = tmp_1;
+        page.getParagraphs().add(table1_allSidesSet);
+
+        for (int i = 0; i < 10; i++) {
+            Row newRow = table1_allSidesSet.getRows().add();
+            Cell cellLvl1 = newRow.getCells().add(String.valueOf(i));
+        }
+
+        Table tmp_2 = new Table();
+        tmp_2.setBorder(new BorderInfo(BorderSide.Box, 1));
+        tmp_2.setDefaultCellBorder(new BorderInfo(BorderSide.Box, 0.05f, Color.getWhite()));
+        tmp_2.setDefaultCellPadding(new MarginInfo(4.5, 3, 4.5, 3));
+        tmp_2.getDefaultCellTextState().setFont(FontRepository.findFont("Arial"));
+        tmp_2.getDefaultCellTextState().setFontSize(10);
+        tmp_2.getDefaultCellTextState().setHorizontalAlignment(HorizontalAlignment.Left);
+        tmp_2.getDefaultCellTextState().setForegroundColor(Color.getBlack());
+
+//Style1 example
+        Table table2_onlyRightSideSet = tmp_2;
+        table2_onlyRightSideSet.getBorder().getRight().setDashArray(new int[]{5, 10});
+        table2_onlyRightSideSet.getBorder().getRight().setDashPhase(7);
+        page.getParagraphs().add(table2_onlyRightSideSet);
+//Style2 example
+//                Table table3_roundCorner= tmp_2;
+//                table3_roundCorner.setCornerStyle(BorderCornerStyle.Round);
+//                table3_roundCorner.getBorder().setRoundedBorderRadius(15);
+//                page.getParagraphs().add(table3_roundCorner);
+
+        for (int i = 0; i < 10; i++) {
+            Row newRow = table2_onlyRightSideSet.getRows().add();
+            Cell cellLvl1 = newRow.getCells().add(String.valueOf(i));
+        }
+
+        document.save(output);
+    } finally {
+        if (document != null) {
+            document.close();
         }
     }
-
-    // 保存文档
-    document.save(outFile);
 ```
 
+### PDF 图像的 ALT 文本提取
 
-## Aspose.PDF 24.7 有什么新功能
-
-自24.7版本以来，作为编辑标记PDF的一部分，已在 **Aspose.Pdf.LogicalStructure.Element** 中添加了方法：
-
-- Tag（向特定操作符如图像、文本和链接添加标签）
-- InsertChild
-- RemoveChild
-- ClearChilds
-
-这些方法允许您编辑PDF文件标签，例如：
+您现在可以获得 PDF 文档中图像的 ALT 文本描述，这有助于面向辅助功能的处理。
 
 ```java
+Document doc = new Document("input.pdf");
+    try  {
+        // Create ImagePlacementAbsorber object to perform image placement search
+        ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
 
+        // Accept the absorber for all the pages
+        doc.getPages().accept(abs);
+
+        // Loop through all ImagePlacements, get image and ImagePlacement Properties
+        ImagePlacement imagePlacement = abs.getImagePlacements().get_Item(1);
+        {
+            // Get the image using ImagePlacement object
+            XImage image = imagePlacement.getImage();
+            List<String> altTexts = image.getAlternativeText(imagePlacement.getPage());
+            System.out.println(altTexts.get(0));
+        }
+    } finally {
+        if (doc != null)
+            doc.close();
+    }
+```
+
+## Aspose.PDF 25.7 中的新增功能
+
+### PDF ChatGPT 插件
+
+Aspose.PDF for Java 现在包含一个 PDF ChatGPT 插件，用于以 PDF 为中心的 AI 交互场景。
+
+该示例演示了如何通过添加文件作为消息源来使用 PdfChatGpt 插件：
+
+```java
+PdfChatGpt plugin = new PdfChatGpt();
+PdfChatGptRequestOptions options = new PdfChatGptRequestOptions();
+options.addOutput(new FileDataSource("PdfChatGPT_output.pdf")); // Add the output file path.
+// Add the PDF text source.
+// In case of multiple sources, the text from each document will be added to the request message collection
+// as a separate message with the role "user".
+options.addInput(new FileDataSource("TextSource.pdf"));
+options.setApiKey("Your API key.");  // You need to provide the key to access the API.
+options.setMaxTokens(1000); // The maximum number of tokens to generate in the chat completion.
+// Add the request message.
+// In this case, the system message with Content = "You are a helpful assistant." is added by default.
+// The role of the query message is "user" by default.
+options.setQuery("How many letters in the provided text?");
+// Process the request.
+ResultContainer result = plugin.process(options);
+String fileResultPath = result.getResultCollection().get(0).getData().toString();
+ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData();
+```
+
+该示例演示了如何通过向请求添加消息来使用 PdfChatGpt 插件：
+
+```java
+PdfChatGpt plugin = new PdfChatGpt();
+PdfChatGptRequestOptions options = new PdfChatGptRequestOptions();
+options.addOutput(new FileDataSource("PdfChatGPT_output.pdf")); // Add the output file path.
+options.setApiKey("Your API key."); // You need to provide the key to access the API.
+options.setMaxTokens(1000); // The maximum number of tokens to generate in the chat completion.
+// Add the request messages.
+Message message1 = new Message() ;
+message1.setContent("You are a helpful assistant.");
+message1.setRole(Role.System);
+options.getMessages().add(message1);
+
+Message message2 = new Message() ;
+message2.setContent("What is the biggest pizza diameter ever made?");
+message2.setRole(Role.User);
+options.getMessages().add(message2);
+
+// Process the request.
+ResultContainer result = plugin.process(options);
+String fileResultPath = result.getResultCollection().get(0).getData().toString();
+ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData(); // The ChatGPT API chat completion object.
+```
+
+该示例演示了如何通过向请求添加一条消息来使用 PdfChatGpt 插件：
+
+```java
+PdfChatGpt plugin = new PdfChatGpt();
+PdfChatGptRequestOptions options = new PdfChatGptRequestOptions();
+options.addOutput(new FileDataSource("PdfChatGPT_output.pdf")); // Add the output file path.
+options.setApiKey("Your API key."); // You need to provide the key to access the API.
+options.setMaxTokens(1000); // The maximum number of tokens to generate in the chat completion.
+// Add the request message.
+// In this case, the system message with Content = "You are a helpful assistant." is added by default.
+// The role of the query message is "user" by default.
+options.setQuery("What is the lowest temperature recorded on the Earth?");
+// Process the request.
+ResultContainer result = plugin.process(options);
+String fileResultPath = result.getResultCollection().get(0).getData().toString();
+ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData(); // The ChatGPT API chat completion object.
+```
+
+## Aspose.PDF 25.6 中的新增功能
+
+### 改进了 PDF 到 DOCX 的输出格式
+
+对于以前输出格式不正确的文档，PDF 到 DOCX 的转换已得到改进。
+
+```java
+Document doc = new Document(dataDir + "SD_Aspose.pdf");
+DocSaveOptions saveOption = new DocSaveOptions();
+saveOption.setMode(DocSaveOptions.RecognitionMode.EnhancedFlow);
+saveOption.setFormat(DocSaveOptions.DocFormat.DocX);
+saveOption.setRecognizeBullets(true);
+doc.save(dataDir + "SD_Aspose.docx", saveOption);
+```
+
+## Aspose.PDF 25.5 中的新增功能
+
+### 在 PDF 到 ODS 转换中保留图像
+
+现在，将 PDF 文档转换为 ODS 时会保留图像。
+
+```java
+Document doc = new Document("input.pdf");
+ExcelSaveOptions options = new ExcelSaveOptions();
+options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
+doc.save("output.ods", options);
+```
+
+### PDF 到 PDF/A 转换过程中自动创建标签
+
+PDF 到 PDF/A 转换现在支持自动标记创建，以改进输出文档中的标记结果。
+
+```java
+Document document = new Document(dataDir+"source.pdf");
+
+PdfFormat format = PdfFormat.PDF_A_1A;
+PdfFormatConversionOptions options = new PdfFormatConversionOptions(format, ConvertErrorAction.Delete);
+options.setAutoTaggingSettings(AutoTaggingSettings.getDefault());
+
+document.convert(options);
+document.save(dataDir+"out_"+BuildVersionInfo.ASSEMBLY_VERSION+"_"+format+"_"+document.getFileName());
+document.close();
+```
+
+## Aspose.PDF 25.4 中的新增功能
+
+### 保留 PDF 到 XLSX 转换中的超链接
+
+现在，将 PDF 文档转换为 XLSX 时会保留超链接，从而改进导出的电子表格中的导航。
+
+```java
+Document doc = new Document("input.pdf");
+ExcelSaveOptions options = new ExcelSaveOptions();
+doc.save("output.xlsx", options);
+```
+
+## Aspose.PDF 25.3 中的新增功能
+
+自 25.2 起添加了检测 PDF 数字签名泄露的功能。您可以使用“SignaturesCompromiseDetector”类来验证数字签名是否被泄露。调用 check() 方法来检查文档的签名。如果没有检测到签名泄露，该方法将返回 true。要验证现有签名是否覆盖整个文档，请使用“SignaturesCoverage 属性”。
+
+```java
+void check(String pdfFile) {
+    final Document document = new Document(pdfFile);
+    try {
+        SignaturesCompromiseDetector detector = new SignaturesCompromiseDetector(document);
+
+        CompromiseCheckResult result = null;
+        CompromiseCheckResult[] referenceToResult = {result};
+        System.out.println(detector.check(referenceToResult));
+        if (detector.check(referenceToResult)){
+            System.out.println("No signature compromise detected");
+        }
+        result = referenceToResult[0];
+        System.out.println(SignaturesCoverage.PartiallySigned == result.getSignaturesCoverage());
+        System.out.println(result.hasCompromisedSignatures());
+    } finally {
+        if (document != null) {
+            (document).close();
+        }
+    }
+}
+```
+
+## Aspose.PDF 25.2 中的新增功能
+
+从 25.2 开始添加了将 PDF 转换为 PDF/X-4 文件格式的功能：
+
+```java
+String iccProfile = "PSO_MFC_Paper_eci";
+String outputConditionIdentifier = "FOGRA41";
+String inputPdf= dataDir + "PDFToPDFX.pdf";
+String outputPdf= dataDir + "PDFToPDFX_out.pdf";
+PdfFormat format = PdfFormat.PDF_X_4;
+
+Document document = new Document(inputPdf);
+PdfFormatConversionOptions options = new PdfFormatConversionOptions(format, ConvertErrorAction.Delete);
+options.setIccProfileFileName(dataDir + iccProfile + ".icc");
+options.setOutputIntent(new OutputIntent(outputConditionIdentifier));
+
+document.convert(options);
+document.save(outputPdf);
+```
+
+从版本 25.2 开始，可以居中对齐输出 HTML：
+
+```java
+Document doc = new Document(dataDir + "pdf_sample.pdf");
+// Instantiate HTML Save options object
+HtmlSaveOptions newOptions = new HtmlSaveOptions();
+
+// Enable option to embed all resources inside the HTML
+newOptions.PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml;
+
+// This is just optimization for IE and can be omitted
+newOptions.LettersPositioningMethod = LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss;
+newOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
+newOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.SaveInAllFormats;
+newOptions.AntialiasingProcessing = HtmlSaveOptions.AntialiasingProcessingType.TryCorrectResultHtml;
+newOptions.setSplitIntoPages(false);// force write HTMLs of all pages into one output document
+newOptions.setUseZOrder(true);
+
+com.aspose.pdf.SaveOptions.BorderPartStyle style = new com.aspose.pdf.SaveOptions.BorderPartStyle();
+style.LineType = com.aspose.pdf.SaveOptions.HtmlBorderLineType.Solid;
+style.color = java.awt.Color.BLACK;
+style.setWidthInPoints(1);
+newOptions.PageBorderIfAny = new com.aspose.pdf.SaveOptions.BorderInfo(style);
+doc.save(dataDir + "HTML_19.6.html", newOptions);
+```
+
+此外，自版本 25.2 以来，可以使用 Aspose.PDF 获取给定字体和大小的文本的上升和下降。新功能已实现到“com.aspose.pdf.Font”类中。
+
+新增方法：
+
+**测量最大上升点**
+
+-public double getAscentPoint(String str, float fontSize)
+
+**测量最大下降点**
+
+- 公共双 getDescentPoint(String str, float fontSize)
+
+```java
+String someText = "Testing text";
+float fontSize = 10;
+TextFragment tf = new TextFragment(someText);
+Font f1 = tf.getTextState().getFont();
+
+double getWidthPoint = f1.measureString(someText, fontSize);
+double getAscentPoint = f1.getAscentPoint(someText, fontSize);
+double getDescentPoint = f1.getDescentPoint(someText, fontSize);
+
+System.out.println(f1.getFontName());
+System.out.println(getWidthPoint);
+System.out.println(getAscentPoint);
+System.out.println(getDescentPoint);
+```
+
+## Aspose.PDF 25.1 中的新增功能
+
+将路径传递到外部 ICC 配置文件以进行 PDF/X 和 PDF/A 转换的功能已在库中存在多年，由 PdfFormatConversionOptions.IccProfileFileName 属性启用。现在还可以使用 OutputIntent 类的对象传递数据来填充 OutputIntent 属性。
+
+以下代码片段展示了如何使用注释 FOGRA39 ICC 配置文件将注释文档转换为 PDF/X-1：
+
+```java
+String iccProfile = "Coated_Fogra39L_VIGC_300.icc";
+String outputConditionIdentifier = "FOGRA39";
+
+Document pdfDocument = new Document("58191_1.pdf");
+    try {
+        PdfFormatConversionOptions options = new PdfFormatConversionOptions("log.log", PdfFormat.PDF_X_1A, ConvertErrorAction.Delete);
+        options.setIccProfileFileName(iccProfile);
+        options.setOutputIntent(new OutputIntent(outputConditionIdentifier));
+        pdfDocument.convert(options);
+        pdfDocument.save("42686_1_PDF_X_1A.pdf");
+    } finally {
+        if (pdfDocument != null) {
+            pdfDocument.dispose();
+        }
+    }
+```
+
+从 25.1 开始添加了使用文档时获取有关权限信息的功能：
+
+```java
+Document document = new Document();
+document.getPages().add();
+    try
+    {
+        PdfFileInfo info = new PdfFileInfo();
+        info.bindPdf(document);
+        DocumentPrivilege privilege = info.getDocumentPrivilege();
+        System.out.println(2 == privilege.getCopyAllowLevel());
+        System.out.println(2 == privilege.getPrintAllowLevel());
+        System.out.println(-1 == privilege.getChangeAllowLevel());
+
+        privilege.setCopyAllowLevel(0);
+        privilege.setCopyAllowLevel(1);
+        privilege.setCopyAllowLevel(2);
+
+        privilege.setPrintAllowLevel(0);
+        privilege.setPrintAllowLevel(1);
+        privilege.setPrintAllowLevel(2);
+
+        privilege.setChangeAllowLevel(0);
+        privilege.setChangeAllowLevel(1);
+        privilege.setChangeAllowLevel(2);
+        privilege.setChangeAllowLevel(3);
+        privilege.setChangeAllowLevel(4);
+
+        PdfFileSecurity fs = new com.aspose.pdf.facades.PdfFileSecurity(document, dataDir + "out_new_Doc"+version+".pdf");
+        fs.setPrivilege(privilege);
+    }
+    finally {
+        if (document != null) document.dispose();
+        }
+```
+
+## Aspose.PDF 24.12 中的新增功能
+
+从版本 24.12 开始，可以支持代理对字符。
+
+术语“代理对”是指在 UTF-16 编码方案中对具有高代码点的 Unicode 字符进行编码。
+
+```java
+String surrogate_pair  = "рџЊ‰";
+    System.out.println(surrogate_pair.length());//==2
+    Document doc = new Document();
+    Page p = doc. getPages().add();
+//add the path to the required fonts that contains surrogate pair characters
+    FontRepository.addLocalFontPath("C:\\Fonts\\Noto_Emoji");
+    Font f = FontRepository.findFont("Noto Emoji");
+    System.out.println(f.doesFontContainAllCharacters(surrogate_pair));
+    TextFragment textFragment = new TextFragment();
+    TextSegment segment = new TextSegment(surrogate_pair);
+    segment.getTextState().setFont(f);
+    textFragment.setText(surrogate_pair);
+    textFragment.getSegments().add(segment);
+
+    p.getParagraphs().add(textFragment);
+    doc.save(dataDir + "out_24_11_.pdf");
+```
+
+从版本 24.12 开始，可以将 PDF 文档转换为 PDF/A-4。该标准的第 4 部分基于 PDF 2.0，于 2020 年底发布。
+
+以下代码片段演示了当输入文档是早于 2.0 的 PDF 版本时如何将文档转换为 PDF/A-4 格式。
+
+```java
+Document document = new Document(inputPdf);
+// Only PDF-2.x documents can be converted to PDF/A-4
+document.convert("log1.xml", PdfFormat.v_2_0, ConvertErrorAction.Delete);
+document.save(tmpOutputFile);
+
+document = new Document(tmpOutputFile);
+document.convert("log2.xml", PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
+document.save("output.pdf");
+```
+
+## Aspose.PDF 24.9 中的新增功能
+
+在此版本中，可以使用低级函数创建可访问的 PDF：
+
+下一个代码片段使用 Aspose.PDF 库来处理 PDF 文档及其标记内容。
+
+```java
+//Create template document with simple text
+Document documentTemp = new Document();
+        Page page = documentTemp .getPages().add();
+        TextFragment fragment = new TextFragment("Helloworld");
+        page.getParagraphs().add(fragment);
+        documentTemp .save(output);
+
+//Add tag to the text in the document
+Document document = new Document(output);
+        OperatorCollection operators = document.getPages().get_Item(1).getContents();
+        for (int i = 1; i <= operators.size(); i++) {
+            Operator op = operators.get_Item(i);
+            if (op instanceof BT) {
+                BDC bdc = new BDC("P", new BDCProperties(new Integer[]{1}, "ru", "Hello world"));
+                operators.insert(i - 1, bdc);
+                i += 1;
+            }
+
+            if (op instanceof ET) {
+                operators.insert(i + 1, new EMC());
+                i += 1;
+            }
+        }
+
+        ITaggedContent content = document.getTaggedContent();
+        SpanElement span = content.createSpanElement();
+        content.getRootElement().appendChild(span);
+        for (Operator op :  operators) {
+            if (op instanceof BDC) {
+                BDC bdc = (BDC)op;
+                if (bdc != null) {
+                    span.tag(bdc);
+                }
+            }
+        }
+
+        document.save(output);
+```
+
+添加`GraphicalPdfComparer`类用于PDF文档和页面的图形比较。图形比较涉及文档页面图像。它将结果作为 `ImagesDifference` 对象或 PDF 文档返回，其中包含从原始图像合并的图像和差异。图形比较对于文本或图形内容存在微小差异的文档最有用。
+
+以下代码片段演示了两个 PDF 文档的图形比较，并将具有差异的图像保存到生成的 PDF 文档中：
+
+```java
+GraphicalPdfComparer comparer = new GraphicalPdfComparer();
+    comparer.setThreshold(3.0);
+    comparer.setColor(Color.getRed());
+    comparer.setResolution(new Resolution(300));
+
+    Document doc1 = new Document(dataDir+"graph_compare.pdf");
+    Document doc2 = new Document(dataDir+"graph_compare_.pdf");
+    comparer.compareDocumentsToPdf(doc2, doc1, dataDir+"graph_compare_24_9__.pdf");
+    doc1.close();
+    doc2.close();
+```
+
+## Aspose.PDF 24.8 中的新增功能
+
+从24.8开始，支持PDF/A-4格式：
+
+```java
+Document document = new Document(inputPdf);
+// Only PDF-2.x documents can be converted to PDF/A-4
+document.convert(new ByteArrayOutputStream(), PdfFormat.v_2_0, ConvertErrorAction.Delete);
+boolean converted = document.convert(logFile, PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
+document.save(outputFile);
+```
+
+另外，是否可以为图像标记添加替代文本：
+
+AlternativeText 属性已添加到 ImageStamp - 如果为其分配了值，那么当将 ImageStamp 添加到文档时，它就会具有替代文本。
+
+```java
+String p1_Alt1 = "*** page 1, Alt text 1 ***",
+                p1_Alt2 = "*** page 1, Alt text 2 ***",
+                p2_Alt1 = "--- page 1, Alt text 1 ---",
+                p2_Alt2 = "--- page 1, Alt text 2 ---";
+
+StructTreeRootElement structTreeRoot = document.getTaggedContent().getStructTreeRootElement();
+
+ImageStamp imageStamp = new ImageStamp(dataDir + "test.jpg");
+imageStamp.setXIndent(100);
+imageStamp.setYIndent(700);
+imageStamp.setWidth(50);
+imageStamp.setHeight(50);
+imageStamp.setQuality(100);
+imageStamp.setAlternativeText(p1_Alt1);
+
+// To page 1
+document.getPages().get_Item(1).addStamp(imageStamp);
+
+imageStamp.setYIndent(500);
+imageStamp.setAlternativeText(p1_Alt2);
+document.getPages().get_Item(1).addStamp(imageStamp);
+
+// To page 2
+document.getPages().add();
+imageStamp.setXIndent(400);
+imageStamp.setYIndent(700);
+imageStamp.setWidth(50);
+imageStamp.setHeight(50);
+imageStamp.setAlternativeText(p2_Alt1);
+document.getPages().get_Item(2).addStamp(imageStamp);
+
+imageStamp.setYIndent(500);
+imageStamp.setAlternativeText(p2_Alt2);
+document.getPages().get_Item(2).addStamp(imageStamp);
+
+// Save document
+document.save(outFile);
+```
+
+另外，以下代码显示了如何在FigureElements 的现有图像中添加AlternativeText。
+
+```java
+String inFile = dataDir + "46040.pdf";
+String outFile = dataDir + "46040_1_out.pdf";
+
+Document document = new Document(inFile);
+
+ITaggedContent taggedContent = document.getTaggedContent();
+StructureElement rootElement = taggedContent.getRootElement();
+
+Iterator tmp0 = (rootElement.getChildElements()).iterator();
+while (tmp0.hasNext())
+{
+    com.aspose.pdf.tagged.logicalstructure.elements.Element element = (com.aspose.pdf.tagged.logicalstructure.elements.Element)tmp0.next();
+    if (element instanceof com.aspose.pdf.tagged.logicalstructure.elements.FigureElement)
+            {
+        com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figureElement = (com.aspose.pdf.tagged.logicalstructure.elements.FigureElement)element;
+
+        // Set Alternative Text
+        figureElement.setAlternativeText("Figure alternative text (technique 1)");
+    }
+}
+
+// Save document
+document.save(outFile);
+```
+
+## Aspose.PDF 24.7 中的新增功能
+
+自 24.7 版本以来，作为编辑标记 PDF 的一部分，在 **Aspose.Pdf.LogicalStructure.Element** 上添加了方法：
+
+- 标签（为特定操作符添加标签，如图像、文本和链接）
+- 插入子项
+- 删除子项
+- 克利尔儿童
+
+这些方法允许您编辑 PDF 文件标签，例如：
+
+```java
     Document document = new Document(dataDir + "test.pdf");
 
-    // 检索文档的第一页。
+    // Retrieve the first page of the document.
     Page page = document.getPages().get_Item(1);
 
-    // 初始化变量以保存用于不同目的的BDC（开始字典上下文）元素。
+    // Initialize variables to hold BDC (Begin Dictionary Context) elements for different purposes.
     BDC imageBdc = null;
     BDC pBdc = null;
     BDC link1Bdc = null;
     BDC link2Bdc = null;
     BDC helloBdc = null;
 
-    // 迭代页面内容。
+    // Iterate through the contents of the page.
     for (int i = 1; i <= page.getContents().size(); i++)
     {
-        // 从页面内容中获取当前操作符。
+        // Get the current operator from the page contents.
         Operator op = page.getContents().get_Item(i);
 
-        // 检查操作符是否是BDC的实例。
+        // Check if the operator is an instance of BDC.
         if (op instanceof BDC) {
-        BDC bdc = (BDC)op; // 将操作符转换为BDC类型。
+        BDC bdc = (BDC)op; // Cast the operator to BDC type.
         if (bdc != null)
         {
-            // 检查BDC的MCID（标记内容标识符）是否为0。
+            // Check if the MCID (Mark Content Identifier) of the BDC is 0.
             if (bdc.getProperties().getMCID()[0] != null && bdc.getProperties().getMCID()[0] == 0)
             {
-                helloBdc = bdc; // 存储BDC以备后用。
+                helloBdc = bdc; // Store the BDC for later use.
             }
         }
     }
 
-    // 检查操作符是否是Do（绘制对象）的实例。
+    // Check if the operator is an instance of Do (Draw Object).
     if (op instanceof Do) {
-        Do doXobj = (Do)op; // 将操作符转换为Do类型。
+        Do doXobj = (Do)op; // Cast the operator to Do type.
         if (doXobj != null)
         {
-            // 为图像创建一个新的BDC并将其插入页面内容中。
+            // Create a new BDC for an image and insert it into the page contents.
             imageBdc = new BDC("Figure");
-            page.getContents().insert(i - 2, imageBdc); // 在当前操作符之前插入。
-            i++; // 增加索引以考虑插入的BDC。
-            page.getContents().insert(i + 1, new EMC()); // 插入一个EMC（结束标记内容）。
-            i++; // 再次增加索引。
+            page.getContents().insert(i - 2, imageBdc); // Insert before the current operator.
+            i++; // Increment the index to account for the inserted BDC.
+            page.getContents().insert(i + 1, new EMC()); // Insert an EMC (End Mark Content).
+            i++; // Increment the index again.
         }
     }
 
-    // 检查操作符是否为TextShowOperator（用于文本显示）的实例。
+    // Check if the operator is an instance of TextShowOperator (for text display).
     if (op instanceof TextShowOperator) {
-        TextShowOperator tx = (TextShowOperator)op; // 将操作符转换为TextShowOperator类型。
+        TextShowOperator tx = (TextShowOperator)op; // Cast the operator to TextShowOperator type.
         if (tx != null)
         {
-            // 检查特定文本内容并插入相应的BDC。
+            // Check for specific text content and insert corresponding BDCs.
             if (tx.getText().contains("efter Ukendt forfatter er licenseret under"))
             {
                 pBdc = new BDC("P");
-                page.getContents().insert(i - 1, pBdc); // 在当前操作符之前插入。
-                i++; // 增加索引。
-                page.getContents().insert(i + 1, new EMC()); // 插入一个EMC。
-                i++; // 增加索引。
+                page.getContents().insert(i - 1, pBdc); // Insert before the current operator.
+                i++; // Increment the index.
+                page.getContents().insert(i + 1, new EMC()); // Insert an EMC.
+                i++; // Increment the index.
             }
             if (tx.getText().contains("CC"))
             {
                 link1Bdc = new BDC("Link");
-                page.getContents().insert(i - 1, link1Bdc); // 在当前操作符之前插入。
-                i++; // 增加索引。
-                page.getContents().insert(i + 1, new EMC()); // 插入一个EMC。
-                i++; // 增加索引。
+                page.getContents().insert(i - 1, link1Bdc); // Insert before the current operator.
+                i++; // Increment the index.
+                page.getContents().insert(i + 1, new EMC()); // Insert an EMC.
+                i++; // Increment the index.
             }
             if (tx.getText().contains("Dette billede"))
             {
                 link2Bdc = new BDC("Link");
-                page.getContents().insert(i - 1, link2Bdc); // 在当前操作符之前插入。
-                i++; // 增加索引。
-                page.getContents().insert(i + 1, new EMC()); // 插入一个EMC。
-                i++; // 增加索引。
+                page.getContents().insert(i - 1, link2Bdc); // Insert before the current operator.
+                i++; // Increment the index.
+                page.getContents().insert(i + 1, new EMC()); // Insert an EMC.
+                i++; // Increment the index.
             }
         }
     }
 }
- 
-    // 从文档中检索标记内容。
+
+    // Retrieve the tagged content from the document.
     ITaggedContent tagged = document.getTaggedContent();
 
-    // 处理标记内容以修改结构属性。
-    // 获取标记内容中根元素的第一个子元素。
+    // Process the tagged content to modify structure attributes.
+    // Get the first child element of the root element in the tagged content.
     com.aspose.pdf.tagged.logicalstructure.elements.Element p = tagged.getRootElement().getChildElements().get_Item(1);
-    p.clearChilds(); // 清除现有子元素。
+    p.clearChilds(); // Clear existing child elements.
 
-    // 用父结构元素标记helloBdc。
+    // Tag the helloBdc with the parent structure element.
     MCRElement mcr = p.tag(helloBdc);
 
-    // 创建并设置标记元素的结构属性。
+    // Create and set structure attributes for the tagged element.
     StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
             .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
     StructureAttribute attr = new StructureAttribute(AttributeKey.SpaceAfter);
-    attr.setNumberValue(30.625); // 设置元素后的空白距离。
-    attrs.setAttribute(attr); // 将属性应用于结构。
+    attr.setNumberValue(30.625); // Set space after attribute.
+    attrs.setAttribute(attr); // Apply the attribute to the structure.
 
-    // 在标记内容中创建一个新的FigureElement。
+    // Create  a new FigureElement in the tagged content.
     com.aspose.pdf.tagged.logicalstructure.elements.FigureElement figure = tagged.createFigureElement();
-    tagged.getRootElement().insertChild(figure, 2); // 在第二个位置插入图元素。
-    figure.setAlternativeText("A fly."); // 设置图的替代文本。
+    tagged.getRootElement().insertChild(figure, 2); // Insert the figure element at the second position.
+    figure.setAlternativeText("A fly."); // Set alternative text for the figure.
 
-    // 用图元素标记imageBdc。
+    // Tag the imageBdc with the figure element.
     MCRElement mcr = figure.tag(imageBdc);
 
-    // 检索指定MCR（标记内容引用）的父结构元素
+    // Retrieve the parent structure element of the specified MCR (Marked Content Reference)
     StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
     .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-    // 为元素后的空间创建一个新的StructureAttribute
+    // Create a new StructureAttribute for space after the element
     StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
-    spaceAfter.setNumberValue(3.625); // 将元素后的空间设置为3.625单位
-    attrs.setAttribute(spaceAfter); // 将空间后的属性分配给结构属性
+    spaceAfter.setNumberValue(3.625); // Set the space after value to 3.625 units
+    attrs.setAttribute(spaceAfter); // Assign the space after attribute to the structure attributes
 
-    // 为边界框（BBox）创建一个新的StructureAttribute
+    // Create a new StructureAttribute for bounding box (BBox)
     StructureAttribute bbox = new StructureAttribute(AttributeKey.BBox);
     bbox.setArrayNumberValue(new Double[][] { new Double[] { (71.9971) }, new Double[] { (375.839) }, new Double[] { (523.299) }, new Double[] { (714.345) } });
-    // 设置结构属性的边界框值
-    attrs.setAttribute(bbox); // 将边界框属性分配给结构属性
+    // Set the bounding box values for the structure attribute
+    attrs.setAttribute(bbox); // Assign the bounding box attribute to the structure attributes
 
-    // 为放置位置创建一个新的StructureAttribute
+    // Create a new StructureAttribute for placement
     StructureAttribute placement = new StructureAttribute(AttributeKey.Placement);
-    placement.setNameValue(AttributeName.Placement_Block); // 将放置类型设置为块
-    attrs.setAttribute(placement); // 将放置属性分配给结构属性
+    placement.setNameValue(AttributeName.Placement_Block); // Set the placement type to block
+    attrs.setAttribute(placement); // Assign the placement attribute to the structure attributes
 
-    // 从标记结构的根元素中检索第四个子元素
+    // Retrieve the fourth child element from the root element of the tagged structure
     StructureElement p2 = (StructureElement)tagged.getRootElement().getChildElements().get_Item(3);
-    p2.clearChilds(); // 清除p2中任何现有的子元素
+    p2.clearChilds(); // Clear any existing child elements from p2
 
-    // 创建一个新的SpanElement以添加到p2中
+    // Create a new SpanElement to be added to p2
     SpanElement span1 = tagged.createSpanElement();
 
-    // 为span元素创建结构属性
+    // Create structure attributes for the span element
     StructureAttributes attrs = span1.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-    // 为文本装饰类型创建一个新的StructureAttribute
+    // Create a new StructureAttribute for text decoration type
     StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
-    textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline); // 将文本装饰设置为下划线
-    attrs.setAttribute(textDecorationType); // 将文本装饰类型属性分配给结构属性
+    textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline); // Set text decoration to underline
+    attrs.setAttribute(textDecorationType); // Assign the text decoration type attribute to the structure attributes
 
-    // 为文本装饰厚度创建一个新的StructureAttribute
+    // Create a new StructureAttribute for text decoration thickness
     StructureAttribute textDecorationThickness = new StructureAttribute(AttributeKey.TextDecorationThickness);
-    textDecorationThickness.setNumberValue(0); // 将文本装饰厚度设置为0
-    attrs.setAttribute(textDecorationThickness); // 将文本装饰厚度属性分配给结构属性
+    textDecorationThickness.setNumberValue(0); // Set the thickness of the text decoration to 0
+    attrs.setAttribute(textDecorationThickness); // Assign the text decoration thickness attribute to the structure attributes
 
-    // 为文本装饰颜色创建一个新的StructureAttribute
+    // Create a new StructureAttribute for text decoration color
     StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
     textDecorationColor.setArrayNumberValue(new Double[][] { new Double[] { (0.0196075) }, new Double[] { (0.384308) }, new Double[] { (0.756866) } });
-    // 设置文本装饰的RGB颜色值
-    attrs.setAttribute(textDecorationColor); // 将文本装饰颜色属性分配给结构属性
+    // Set the RGB color values for the text decoration
+    attrs.setAttribute(textDecorationColor); // Assign the text decoration color attribute to the structure attributes
 
-    p2.appendChild(span1); // 将span1元素附加到p2中
+    p2.appendChild(span1); // Append the span1 element to p2
 
-
-    // 创建一个新的MCR元素并用pBdc标记它
+    // Create a new MCR element and tag it with pBdc
     MCRElement mcr = p2.tag(pBdc);
-    // 检索MCR的父结构元素并创建布局属性
+    // Retrieve the parent structure element of the MCR and create layout attributes
     StructureAttributes attrs = com.aspose.pdf.tagged.logicalstructure.elements.InternalHelper.getParentStructureElement(mcr)
     .getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-    // 为文本对齐创建一个新的StructureAttribute
+    // Create a new StructureAttribute for text alignment
     StructureAttribute textAlign = new StructureAttribute(AttributeKey.TextAlign);
-    textAlign.setNameValue(AttributeName.TextAlign_Center); // 将文本对齐设置为居中
-    attrs.setAttribute(textAlign); // 将文本对齐属性分配给结构属性
+    textAlign.setNameValue(AttributeName.TextAlign_Center); // Set text alignment to center
+    attrs.setAttribute(textAlign); // Assign the text alignment attribute to the structure attributes
 
-    // 为元素后的空间创建一个新的StructureAttribute
+    // Create a new StructureAttribute for space after the element
     StructureAttribute spaceAfter = new StructureAttribute(AttributeKey.SpaceAfter);
-    spaceAfter.setNumberValue(21.75); // 将元素后的空间设置为21.75单位
-    attrs.setAttribute(spaceAfter); // 将空间后的属性分配给结构属性
+    spaceAfter.setNumberValue(21.75); // Set the space after value to 21.75 units
+    attrs.setAttribute(spaceAfter); // Assign the space after attribute to the structure attributes
 
-
-    // 创建一个新的SpanElement以添加到p2中
+    // Create a new SpanElement to be added to p2
     SpanElement span2 = tagged.createSpanElement();
 
-    // 为span元素创建结构属性
+    // Create structure attributes for the span element
     StructureAttributes attrs = span2.getAttributes().createAttributes(AttributeOwnerStandard.Layout);
 
-    // 为文本装饰类型创建一个新的StructureAttribute
+    // Create a new StructureAttribute for text decoration type
     StructureAttribute textDecorationType = new StructureAttribute(AttributeKey.TextDecorationType);
-    textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline); // 将文本装饰设置为下划线
-    attrs.setAttribute(textDecorationType); // 将文本装饰类型属性分配给结构属性
+    textDecorationType.setNameValue(AttributeName.TextDecorationType_Underline); // Set text decoration to underline
+    attrs.setAttribute(textDecorationType); // Assign the text decoration type attribute to the structure attributes
 
-    // 使用指定的键为文本装饰颜色创建一个新的StructureAttribute。
+    // Create a new StructureAttribute for text decoration color using the specified key.
     StructureAttribute textDecorationColor = new StructureAttribute(AttributeKey.TextDecorationColor);
 
-    // 为文本装饰颜色属性设置数组数字值。
-    // 颜色以RGB值数组表示，其中每个值都是一个Double。
+    // Set the array number value for the text decoration color attribute.
+    // The color is represented in an array of RGB values, where each value is a Double.
     textDecorationColor.setArrayNumberValue(new Double[][] {
-    new Double[] { (0.0196075) }, // 红色分量
-    new Double[] { (0.384308) },  // 绿色分量
-    new Double[] { (0.756866) }   // 蓝色分量
+    new Double[] { (0.0196075) }, // Red component
+    new Double[] { (0.384308) },  // Green component
+    new Double[] { (0.756866) }   // Blue component
     });
 
-    // 将文本装饰颜色属性设置为attrs对象。
+    // Set the text decoration color attribute to the attrs object.
     attrs.setAttribute(textDecorationColor);
 
-    // 将子span元素附加到父元素p2。
+    // Append a child span element to the parent element p2.
     p2.appendChild(span2);
 
-    // 为第二个链接创建一个新的LinkElement实例。
+    // Create a new LinkElement instance for the second link.
     LinkElement link2 = tagged.createLinkElement();
 
-    // 使用随机生成的UUID为链接元素分配唯一ID。
+    // Assign a unique ID to the link element using a randomly generated UUID.
     link2.setId(UUID.randomUUID().toString());
 
-    // 将link2元素作为span2的子元素附加。
+    // Append the link2 element as a child of span2.
     span2.appendChild(link2);
 
-    // 使用页面注释中的对应注释标记link2元素。
+    // Tag the link2 element with the corresponding annotation from the page's annotations.
     link2.tag(page.getAnnotations().get_Item(1));
 
-    // 用额外的元数据或上下文（link2Bdc）标记link2元素。
+    // Tag the link2 element with additional metadata or context (link2Bdc).
     link2.tag(link2Bdc);
 
-    // 为第一个链接创建另一个LinkElement实例。
+    // Create another LinkElement instance for the first link.
     LinkElement link1 = tagged.createLinkElement();
 
-    // 使用随机生成的UUID为link1元素分配唯一ID。
+    // Assign a unique ID to the link1 element using a randomly generated UUID.
     link1.setId(UUID.randomUUID().toString());
 
-    // 将link1元素作为span1的子元素附加。
+    // Append the link1 element as a child of span1.
     span1.appendChild(link1);
 
-    // 使用页面注释中的对应注释标记link1元素。
+    // Tag the link1 element with the corresponding annotation from the page's annotations.
     link1.tag(page.getAnnotations().get_Item(2));
 
-    // 用额外的元数据或上下文（link1Bdc）标记link1元素。
+    // Tag the link1 element with additional metadata or context (link1Bdc).
     link1.tag(link1Bdc);
 
-    // 从标记文档的根元素中删除第一个子元素。
+    // Remove the first child element from the root element of the tagged document.
     tagged.getRootElement().removeChild(0);
 
-    // 将文档保存到指定的输出目录，文件名为"_out.pdf"。
+    // Save the document to the specified output directory with the filename "_out.pdf".
     document.save(dataDir + "_out.pdf");
-
 ```
 
+## Aspose.PDF 24.6 中的新增功能
 
-## Aspose.PDF 24.6 中的新功能
+自 24.6 Aspose.PDF for Java 允许使用 java.security.cert.X509Certificate、java.security.PrivateKey 对 PDF 进行签名：
 
-自 24.6 起，Aspose.PDF for Java 允许使用 java.security.cert.X509Certificate, java.security.PrivateKey 对 PDF 进行签名：
-
-此代码从证书存储中检索证书和私钥，然后使用它们对 PDF 文档的第一页应用数字签名。
+此代码从证书存储中检索证书和私钥，然后使用它们将数字签名应用于 PDF 文档的第一页。
 
 ```java
+KeyStore trustStore = KeyStore.getInstance("Windows");
+trustStore.load(null, null);
+java.security.cert.X509Certificate certificate = (java.security.cert.X509Certificate) trustStore.getCertificate("ProfMoriarty");
+PrivateKey key = (PrivateKey) trustStore.getKey("ProfMoriarty", null);
 
-    KeyStore trustStore = KeyStore.getInstance("Windows");
-    trustStore.load(null, null);
-    java.security.cert.X509Certificate certificate = (java.security.cert.X509Certificate) trustStore.getCertificate("ProfMoriarty");
-    PrivateKey key = (PrivateKey) trustStore.getKey("ProfMoriarty", null);
+PdfFileSignature pdfSign = new PdfFileSignature(getInputPdf());
+Signature signature = new ExternalSignature(certificate, key);
+pdfSign.sign(1, "reasonTest", "contactTest", "locationTest", true, new java.awt.Rectangle(1, 691, 100, 100), signature);
 
-    PdfFileSignature pdfSign = new PdfFileSignature(getInputPdf());
-    Signature signature = new ExternalSignature(certificate, key);
-    pdfSign.sign(1, "reasonTest", "contactTest", "locationTest", true, new java.awt.Rectangle(1, 691, 100, 100), signature);
-
-    pdfSign.save("PDFJAVA.pdf");
-    pdfSign.close();
+pdfSign.save("PDFJAVA.pdf");
+pdfSign.close();
 ```
 
-## Aspose.PDF 24.5 中的新功能
+## Aspose.PDF 24.5 中的新增功能
 
-自从24.5版本发布以来，表单编辑器插件已实现。
+自 24.5 版本以来，实施了表单编辑器插件。
 
-**如何使用表单编辑器在PDF中编辑表单**
+**如何使用表单编辑器编辑 PDF 中的表单**
 
 - 设置您的许可证密钥
-- 创建一个FormEditor类的实例，该类提供用于操作PDF表单的方法
-- 创建一个FormEditorAddOptions类的实例，该类指定向PDF文档添加表单字段的选项
-- 使用代表文件路径或流的FileDataSource类向FormEditorAddOptions对象添加输入文件源和输出文件源
-- 调用FormEditor对象的Process方法，将FormEditorAddOptions对象作为参数传递
-- 使用ResultContainer.resultCollection访问结果
+- 创建 FormEditor 类的实例，该类提供操作 PDF 表单的方法
+- 创建 FormEditorAddOptions 类的实例，该实例指定用于将表单字段添加到 PDF 文档的选项
+- 使用表示文件路径或流的 FileDataSource 类将输入文件源和输出文件源添加到 FormEditorAddOptions 对象
+- 调用 FormEditor 对象的 Process 方法，并将 FormEditorAddOptions 对象作为参数传递
+- 使用 ResultContainer.resultCollection 访问结果
 
 ```java
+// Specify the input and output paths for the PDF files.
+String inputPath = "sample.pdf";
+String outputPath = "out.pdf";
 
-    // 指定PDF文件的输入和输出路径。
-    String inputPath = "sample.pdf";
-    String outputPath = "out.pdf";
+// Create an instance of the FormEditor plugin.
+FormEditor pdfFormPlugin = new FormEditor();
 
-    // 创建FormEditor插件的实例。
-    FormEditor pdfFormPlugin = new FormEditor();
+// Create options for adding form fields.
+ArrayList<FormFieldCreateOptions> options = new ArrayList<FormFieldCreateOptions>();
 
-    // 创建用于添加表单字段的选项。
-    ArrayList<FormFieldCreateOptions> options = new ArrayList<FormFieldCreateOptions>();
+// Create a textbox form field.
+FormTextBoxFieldCreateOptions tmp1 = new FormTextBoxFieldCreateOptions(1, new Rectangle(10, 600, 90, 610));
+tmp1.setValue("TextBoxField");
+tmp1.setColor(Color.getChocolate());
+tmp1.setPartialName("TexBoxField");
+options.add(tmp1);
 
-    // 创建一个文本框表单字段。
-    FormTextBoxFieldCreateOptions tmp1 = new FormTextBoxFieldCreateOptions(1, new Rectangle(10, 600, 90, 610));
-    tmp1.setValue("TextBoxField");
-    tmp1.setColor(Color.getChocolate());
-    tmp1.setPartialName("TexBoxField");
-    options.add(tmp1);
+// Create a combo box form field.
+FormComboBoxFieldCreateOptions tmp2 = new FormComboBoxFieldCreateOptions(1, new Rectangle(310, 800, 350, 815));
 
-    // 创建一个组合框表单字段。
-    FormComboBoxFieldCreateOptions tmp2 = new FormComboBoxFieldCreateOptions(1, new Rectangle(310, 800, 350, 815));
+tmp2.setColor(com.aspose.pdf.Color.getRed());
+tmp2.setEditable(new Boolean[]{true});
+tmp2.setDefaultAppearance(new DefaultAppearance("Arial Bold", 12, java.awt.Color.GREEN));
+ArrayList<String> list1 = new ArrayList<String>();
+list1.add("p1");
+list1.add("p2");
+list1.add("p3");
+tmp2.setOptions(list1);
+tmp2.setSelected(new Integer[]{2});
+tmp2.setPartialName("ComboBoxField");
+options.add(tmp2);
 
-    tmp2.setColor(com.aspose.pdf.Color.getRed());
-    tmp2.setEditable(new Boolean[]{true});
-    tmp2.setDefaultAppearance(new DefaultAppearance("Arial Bold", 12, java.awt.Color.GREEN));
-    ArrayList<String> list1 = new ArrayList<String>();
-    list1.add("p1");
-    list1.add("p2");
-    list1.add("p3");
-    tmp2.setOptions(list1);
-    tmp2.setSelected(new Integer[]{2});
-    tmp2.setPartialName("ComboBoxField");
-    options.add(tmp2);
+// Create a checkbox form field.
+FormCheckBoxFieldCreateOptions tmp3 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(10, 700, 90, 715));
+tmp3.setValue("CheckBoxField 1");
+tmp3.setPartialName("CheckBoxField_1");
+tmp3.setColor(Color.getBlue());
+options.add(tmp3);
 
-    // 创建一个复选框表单字段。
-    FormCheckBoxFieldCreateOptions tmp3 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(10, 700, 90, 715));
-    tmp3.setValue("CheckBoxField 1");
-    tmp3.setPartialName("CheckBoxField_1");
-    tmp3.setColor(Color.getBlue());
-    options.add(tmp3);
+// Create a checkbox form field.
+FormCheckBoxFieldCreateOptions tmp4 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(100, 700, 190, 715));
+tmp4.setChecked(new Boolean[]{true});
+tmp4.setValue("CheckBoxField 2");
+tmp4.setDefaultAppearance(new DefaultAppearance("Arial Bold", 12, java.awt.Color.GREEN));
+tmp4.setStyle(new Integer[]{BoxStyle.Cross});
+options.add(tmp4);
 
+// Create a checkbox form field.
+FormCheckBoxFieldCreateOptions tmp5 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(200, 700, 390, 715));
+tmp5.setPartialName("CheckBoxField_3");
+tmp5.setValue("CheckBoxField 3");
+tmp5.setStyle(new Integer[]{BoxStyle.Star});
+tmp5.setChecked(new Boolean[]{true});
+tmp5.setTextHorizontalAlignment(new HorizontalAlignment[]{HorizontalAlignment.Center});
+options.add(tmp5);
 
-    // 创建一个复选框表单字段。
-    FormCheckBoxFieldCreateOptions tmp4 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(100, 700, 190, 715));
-    tmp4.setChecked(new Boolean[]{true});
-    tmp4.setValue("CheckBoxField 2");
-    tmp4.setDefaultAppearance(new DefaultAppearance("Arial Bold", 12, java.awt.Color.GREEN));
-    tmp4.setStyle(new Integer[]{BoxStyle.Cross});
-    options.add(tmp4);
+FormEditorAddOptions opt = new FormEditorAddOptions(options);
 
+// Add input and output files to the options.
+opt.addInput(new FileDataSource(inputPath));
+opt.addOutput(new FileDataSource(outputPath));
 
-    // 创建一个复选框表单字段。
-    FormCheckBoxFieldCreateOptions tmp5 = new FormCheckBoxFieldCreateOptions(1, new Rectangle(200, 700, 390, 715));
-    tmp5.setPartialName("CheckBoxField_3");
-    tmp5.setValue("CheckBoxField 3");
-    tmp5.setStyle(new Integer[]{BoxStyle.Star});
-    tmp5.setChecked(new Boolean[]{true});
-    tmp5.setTextHorizontalAlignment(new HorizontalAlignment[]{HorizontalAlignment.Center});
-    options.add(tmp5);
-
-    FormEditorAddOptions opt = new FormEditorAddOptions(options);
-
-    // 向选项添加输入和输出文件。
-    opt.addInput(new FileDataSource(inputPath));
-    opt.addOutput(new FileDataSource(outputPath));
-
-    // 使用插件处理表单字段。
-    ResultContainer results = pdfFormPlugin.process(opt);
+// Process the form fields using the plugin.
+ResultContainer results = pdfFormPlugin.process(opt);
 ```
 
+此版本允许我们使用 PDF 图层。例如：
 
-这个版本允许我们处理PDF图层。例如：
-
-- 锁定PDF图层
+- 锁定 PDF 图层
 - 提取PDF图层元素
-- 扁平化分层PDF
-- 将PDF中的所有图层合并为一个
+- 拼合分层 PDF
+- 将 PDF 中的所有图层合并为一个
 
-**锁定PDF图层**
+**锁定 PDF 图层**
 
-从24.5版本开始，您可以打开PDF，在第一页上锁定特定图层，并保存更改后的文档。新增了两个方法和一个属性：
+自 24.5 版本以来，您可以打开 PDF，锁定首页上的特定图层，然后保存更改后的文档。有两种新方法并添加了一个属性：
 
 Layer.Lock(); - 锁定图层。
 Layer.Unlock(); - 解锁图层。
-Layer.Locked; - 属性，指示图层的锁定状态。
+图层.锁定; - 属性，表示图层锁定状态。
 
 ```java
+Document document = new Document(input);
+Page page = document.getPages().get_Item(1);
+Layer layer = page.getLayers().get(0);
 
-    Document document = new Document(input);
-    Page page = document.getPages().get_Item(1);
-    Layer layer = page.getLayers().get(0);
+layer.lock();
 
-    layer.lock();
-
-    document.save(output);
+document.save(output);
 ```
 
 **提取PDF图层元素**
 
-Aspose.PDF for Java库允许从第一页提取每个图层，并将每个图层保存到一个单独的文件。
+Aspose.PDF for Java 库允许从第一页中提取每个图层并将每个图层保存到单独的文件中。
 
-要从一个图层创建一个新的PDF，可以使用以下代码片段：
-
-```java
-
-    Document document = new Document(inputPath);
-    java.util.List<Layer> layers = document.getPages().get_Item(1).getLayers();
-
-    for (Layer layer : layers)
-    {
-        layer.save(outputPath);
-    }
-```
-
-
-**将分层 PDF 扁平化**
-
-Aspose.PDF for Java 库打开一个 PDF，遍历第一页上的每个图层，并将每个图层扁平化，使其在页面上永久保留。
+要从图层创建新的 PDF，可以使用以下代码片段：
 
 ```java
+Document document = new Document(inputPath);
+java.util.List<Layer> layers = document.getPages().get_Item(1).getLayers();
 
-    Document document = new Document(input);
-    Page page = document.getPages().get_Item(1);
-
-    for (Layer layer : page.getLayers())
-    {
-        layer.flatten(true);
-    }
-    document.save(output);
+for (Layer layer : layers)
+{
+    layer.save(outputPath);
+}
 ```
 
-`Layer.flatten(boolean cleanupContentStream)` 方法接受一个布尔参数，该参数指定是否从内容流中删除可选内容组标记。将 `cleanupContentStream` 参数设置为 `false` 可以加速扁平化过程。
+**拼合分层 PDF**
 
-**将 PDF 内的所有图层合并为一个**
+Aspose.PDF for Java 库打开一个 PDF，遍历第一页上的每个层，然后展平每个层，使其永久显示在页面上。
 
-Aspose.PDF for Java 库允许将所有 PDF 图层或第一页上的特定图层合并到一个新图层中，并保存更新后的文档。
+```java
+Document document = new Document(input);
+Page page = document.getPages().get_Item(1);
 
-添加了两种方法来合并页面上的所有图层：
+for (Layer layer : page.getLayers())
+{
+    layer.flatten(true);
+}
+document.save(output);
+```
+
+Layer.flatten(boolean cleanupContentStream) 方法接受布尔参数，该参数指定是否从内容流中删除可选内容组标记。
+将 cleanupContentStream 参数设置为 false 可加快展平过程。
+
+**将 PDF 中的所有图层合并为一个**
+
+Aspose.PDF for Java 库允许将所有 PDF 图层或第一页上的特定图层合并到新图层中并保存更新的文档。
+
+Two methods were added to merge all layers on the page:
 
 - void mergeLayers(String newLayerName);
-
 - void mergeLayers(String newLayerName, String newOptionalContentGroupId);
 
-第二个参数允许重命名可选内容组标记。默认值是 "oc1" (/OC /oc1 BDC)。
+The second parameter allows renaming the optional content group marker. The default value is "oc1" (/OC /oc1 BDC).
 
 ```java
+Document document = new Document(input);
+Page page = document.getPages().get_Item(1);
+page.mergeLayers("NewLayerName");
 
-    Document document = new Document(input);
-    Page page = document.getPages().get_Item(1);
-    page.mergeLayers("NewLayerName");
+// Or page.mergeLayers("NewLayerName", "OC1");
 
-    // 或者 page.mergeLayers("NewLayerName", "OC1");
-
-    document.save(output);
+document.save(output);
 ```
 
-## Aspose.PDF 24.4 的新功能
+## What's new in Aspose.PDF 24.4
 
-此版本为 PDF 引入了 Java 插件：
+This release introduced Java plugins for PDF:
 
-- 表单展平插件
+- Form Flattener Plugin
 
 ```java
+FormFlattener pdfFormPlugin = new FormFlattener();
 
-    FormFlattener pdfFormPlugin = new FormFlattener();
+FormFlattenAllFieldsOptions opt = new FormFlattenAllFieldsOptions();
 
-    FormFlattenAllFieldsOptions opt = new FormFlattenAllFieldsOptions();
+opt.addInput(new FileDataSource("sample.pdf"));
+opt.addOutput(new FileDataSource("sample-flat.pdf"));
 
-    opt.addInput(new FileDataSource("sample.pdf"));
-    opt.addOutput(new FileDataSource("sample-flat.pdf"));
+ResultContainer result = pdfFormPlugin.process(opt);
 
-    ResultContainer result = pdfFormPlugin.process(opt);
-
-    // 检查结果。
-    java.util.List < IOperationResult > resultCollectionInternal = result.getResultCollection();
+// Check result.
+java.util.List < IOperationResult > resultCollectionInternal = result.getResultCollection();
 ```
 
-- 表单导出器
+- Form Exporter
 
 ```java
+Rectangle rect = new com.aspose.pdf.Rectangle(0, 220, 600, 330);
 
-    Rectangle rect = new com.aspose.pdf.Rectangle(0, 220, 600, 330);
+// Plugin use.
+FormExporter pdfFormPlugin = new FormExporter();
+SelectField selectField = new SelectField() {
+  public boolean invoke(Field field) {
+    return field instanceof TextBoxField && field.getPageIndex() == 2 && rect.isInclude(field.getRect(), 0);
+  }
+};
+FormExporterValuesToCsvOptions opt = new FormExporterValuesToCsvOptions(selectField, ';');
 
-    // 插件使用。
-    FormExporter pdfFormPlugin = new FormExporter();
-    SelectField selectField = new SelectField() {
-      public boolean invoke(Field field) {
-        return field instanceof TextBoxField && field.getPageIndex() == 2 && rect.isInclude(field.getRect(), 0);
-      }
-    };
-    FormExporterValuesToCsvOptions opt = new FormExporterValuesToCsvOptions(selectField, ';');
+opt.addInput(new FileDataSource(inputFileNameWithFields));
+opt.addInput(new FileDataSource(getInputPath("document-1.pdf")));
+opt.addInput(new FileDataSource(getInputPath("document-2.pdf")));
+opt.addInput(new FileDataSource(getInputPath("document-3.pdf")));
+opt.addOutput(new FileDataSource(getOutputPath("out.csv")));
+ResultContainer result = pdfFormPlugin.process(opt);
 
-    opt.addInput(new FileDataSource(inputFileNameWithFields));
-    opt.addInput(new FileDataSource(getInputPath("document-1.pdf")));
-    opt.addInput(new FileDataSource(getInputPath("document-2.pdf")));
-    opt.addInput(new FileDataSource(getInputPath("document-3.pdf")));
-    opt.addOutput(new FileDataSource(getOutputPath("out.csv")));
-    ResultContainer result = pdfFormPlugin.process(opt);
-
-    // 检查结果。
-    System.out.println(result.getResultCollectionInternal().size() > 0);
-    System.out.println(result.getResultCollectionInternal().get_Item(0).isFile());
-    System.out.println(result.getResultCollectionInternal().get_Item(0).getData().toString());
+// Check result.
+System.out.println(result.getResultCollectionInternal().size() > 0);
+System.out.println(result.getResultCollectionInternal().get_Item(0).isFile());
+System.out.println(result.getResultCollectionInternal().get_Item(0).getData().toString());
 ```
 
-
-- 合并插件
+- Merger Plugin
 
 ```java
+String input1 = "sample.pdf";
+String input2 = "sample.pdf";
 
-    String input1 = "sample.pdf";
-    String input2 = "sample.pdf";
+String output = "TestMergeFileAndStream_ResultAsFile.pdf";
 
-    String output = "TestMergeFileAndStream_ResultAsFile.pdf";
+Merger merger = new Merger();
 
-    Merger merger = new Merger();
+MergeOptions opt = new MergeOptions();
+opt.addInput(new FileDataSource(input1));
+opt.addInput(new StreamDataSource(new FileInputStream(input2)));
 
-    MergeOptions opt = new MergeOptions();
-    opt.addInput(new FileDataSource(input1));
-    opt.addInput(new StreamDataSource(new FileInputStream(input2)));
+opt.addOutput(new FileDataSource(output));
 
-    opt.addOutput(new FileDataSource(output));
+ResultContainer results = merger.process(opt);
 
-    ResultContainer results = merger.process(opt);
-
-    System.out.println(results.getResultCollection().size());
-    System.out.println(results.getResultCollection().get(0).isFile());
+System.out.println(results.getResultCollection().size());
+System.out.println(results.getResultCollection().get(0).isFile());
 ```
 
-- 优化器插件
+- Optimizer Plugin
 
-如何减小PDF文档的大小？
+How to reduce size of PDF Documents?
 
 ```java
+String input = "Test.pdf";
+String output = "Optimized.pdf";
 
-    String input = "Test.pdf";
-    String output = "Optimized.pdf";
+Optimizer optimizer = new Optimizer();
 
-    Optimizer optimizer = new Optimizer();
+OptimizeOptions opt = new OptimizeOptions();
+opt.addInput(new FileDataSource(input));
+opt.addOutput(new FileDataSource(output));
 
-    OptimizeOptions opt = new OptimizeOptions();
-    opt.addInput(new FileDataSource(input));
-    opt.addOutput(new FileDataSource(output));
-
-    optimizer.process(opt);
+optimizer.process(opt);
 ```
 
-如何调整PDF文档的大小？
+How to resize PDF Documents?
 
 ```java
+String input = "sample.pdf";
+String output = "ResizeMain.pdf";
 
-    String input = "sample.pdf";
-    String output = "ResizeMain.pdf";
+Optimizer organizer = new Optimizer();
 
-    Optimizer organizer = new Optimizer();
+ResizeOptions opt = new ResizeOptions();
+opt.addInput(new FileDataSource(input));
+opt.addOutput(new FileDataSource(output));
 
-    ResizeOptions opt = new ResizeOptions();
-    opt.addInput(new FileDataSource(input));
-    opt.addOutput(new FileDataSource(output));
+opt.setPageSize(PageSize.getA1());
 
-    opt.setPageSize(PageSize.getA1());
-
-    organizer.process(opt);
+organizer.process(opt);
 ```
 
-
-如何旋转PDF文档？
+How to rotate PDF Documents?
 
 ```java
+String input = "sample.pdf";
+String output = "OptimizerRotateMain.pdf";
 
-    String input = "sample.pdf";
-    String output = "OptimizerRotateMain.pdf";
+Optimizer optimizer = new Optimizer();
 
-    Optimizer optimizer = new Optimizer();
+RotateOptions opt = new RotateOptions();
+opt.addInput(new FileDataSource(input));
+opt.addOutput(new FileDataSource(output));
+opt.setRotation(Rotation.on90);
 
-    RotateOptions opt = new RotateOptions();
-    opt.addInput(new FileDataSource(input));
-    opt.addOutput(new FileDataSource(output));
-    opt.setRotation(Rotation.on90);
-
-    ResultContainer results = optimizer.process(opt);
+ResultContainer results = optimizer.process(opt);
 ```
 
-## Aspose.PDF 24.3 的新功能
+## What's new in Aspose.PDF 24.3
 
-从24.3开始，在TextFragmentAbsorber中实现通过短语列表的搜索。
+From 24.3 implement a search through a list of phrases in a TextFragmentAbsorber.
 
 ```java
+String[] expressions = new String[] {
+  //detect phone number
+  "\\b\\d{3}-\\d{3}-\\d{4}\\b",
+  //detect card number
+  "\\b(?:\\d[ -]*?){13,16}\\b"
+};
+Document document = new Document(input);
 
-    String[] expressions = new String[] {
-      //检测电话号码
-      "\\b\\d{3}-\\d{3}-\\d{4}\\b",
-      //检测卡号
-      "\\b(?:\\d[ -]*?){13,16}\\b"
-    };
-    Document document = new Document(input);
+TextFragmentCollection newTextFragmentCollection = new TextFragmentCollection();
 
-    TextFragmentCollection newTextFragmentCollection = new TextFragmentCollection();
-
-    Pattern[] regexes = new Pattern[6];
-    for (int i = 0; i < expressions.length; i++) {
-      regexes[i] = Pattern.compile(expressions[i], Pattern.CASE_INSENSITIVE);
-    }
-    TextFragmentAbsorber newAbsorber = new TextFragmentAbsorber(regexes, new TextSearchOptions(true));
-    document.getPages().accept(newAbsorber);
-    HashMap < Pattern, TextFragmentCollection > map = newAbsorber.getRegexResults();
+Pattern[] regexes = new Pattern[6];
+for (int i = 0; i < expressions.length; i++) {
+  regexes[i] = Pattern.compile(expressions[i], Pattern.CASE_INSENSITIVE);
+}
+TextFragmentAbsorber newAbsorber = new TextFragmentAbsorber(regexes, new TextSearchOptions(true));
+document.getPages().accept(newAbsorber);
+HashMap < Pattern, TextFragmentCollection > map = newAbsorber.getRegexResults();
 ```
 
-
-接下来的功能是为PDF到Markdown转换器添加转换表格的功能
+Next feature is adding  the ability to convert tables for the PDF to Markdown converter
 
 ```java
-
-    Document doc = new Document(dataDir + "56201.pdf");
-    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
-    doc.save(dataDir + "56201.md", saveOptions);
+Document doc = new Document(dataDir + "56201.pdf");
+MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+doc.save(dataDir + "56201.md", saveOptions);
 ```
 
-## Aspose.PDF 24.2中的新功能
+## What's new in Aspose.PDF 24.2
 
-从24.2版本开始，可以在带有AcroForms的PDF中添加水印。TextStamp适用于AcroForm文件。如果在XFA文件中使用TextStamp，文本会像普通PDF文件一样绘制在页面上（可以在无法读取XFA文件的PDF查看器中看到，例如在Chrome浏览器中）。要向XFA文件添加文本，必须在XFA文件的内部XML中更改。
+From 24.2 possible to add the Watermark in PDF with AcroForms. TextStamp is suitable for use with AcroForm files. If you use TextStamp for XFA files, the text is drawn on the page as in a usual PDF file (it can be seen in those PDF viewers that cannot read XFA files, for example, in a Chrome browser). To add text to the XFA file, it must be changed in the XFA file's internal XML.
 
 ```java
+String sourceName = dataDir + "551.3xfa.pdf";
+String targetName = dataDir + "output_2_" + BuildVersionInfo.AssemblyVersion + ".pdf";
 
-    String sourceName = dataDir + "551.3xfa.pdf";
-    String targetName = dataDir + "output_2_" + BuildVersionInfo.AssemblyVersion + ".pdf";
+Document pdfDocument = new Document(sourceName);
+XFA xfa = pdfDocument.getForm().getXFA();
 
-    Document pdfDocument = new Document(sourceName);
-    XFA xfa = pdfDocument.getForm().getXFA();
+String watermark =
+"<subform>" +
+"<draw rotate=\"90\" x=\"100px\" y=\"100px\">" +
+"<value>" +
+"<text>Sample Stamp</text>\n" +
+"</value>" +
+"<font typeface=\"Arial\" size=\"14px\" weight=\"bold\" posture=\"italic\">" +
+"<fill>" +
+"<color value=\"0,128,0\"/>" +
+"</fill>" +
+"</font>" +
+"</draw>" +
+"</subform>";
 
-    String watermark =
-    "<subform>" +
-    "<draw rotate=\"90\" x=\"100px\" y=\"100px\">" +
-    "<value>" +
-    "<text>Sample Stamp</text>\n" +
-    "</value>" +
-    "<font typeface=\"Arial\" size=\"14px\" weight=\"bold\" posture=\"italic\">" +
-    "<fill>" +
-    "<color value=\"0,128,0\"/>" +
-    "</fill>" +
-    "</font>" +
-    "</draw>" +
-    "</subform>";
+xfa.appendToTemplate("//tpl:pageArea", watermark);
 
-    xfa.appendToTemplate("//tpl:pageArea", watermark);
-
-    pdfDocument.save(targetName);
-    pdfDocument.close();
+pdfDocument.save(targetName);
+pdfDocument.close();
 ```
 
-
-设置用于注释的状态模型  
-我们可以使用 MarkupAnnotation 类中的 setReviewState 和 setMarkedState 来设置所需的状态。  
-所有标记注释都有一个可用的设置状态选项。
+Set StateModel for Annotation
+We can use setReviewState and setMarkedState from MarkupAnnotation class to set needed state.
+All markup annotations have a Set State option available.
 
 ```java
+// Open the source PDF document
+Document pdfDocument = new Document();
+pdfDocument.getPages().add();
+// Create annotation
+TextAnnotation textAnnotation = new TextAnnotation(pdfDocument.getPages().get_Item(1), new Rectangle(200,
+        400, 400, 600));
 
-    // 打开源 PDF 文档
-    Document pdfDocument = new Document();
-    pdfDocument.getPages().add();
-    // 创建注释
-    TextAnnotation textAnnotation = new TextAnnotation(pdfDocument.getPages().get_Item(1), new Rectangle(200,
-            400, 400, 600));
+//Set annotation title
+textAnnotation.setTitle("Sample Annotation Title");
 
-    // 设置注释标题
-    textAnnotation.setTitle("示例注释标题");
+//Set annotation subject
+textAnnotation.setSubject("Sample Subject");
+//Specify the annotation contents
+textAnnotation.setContents("Sample contents for the annotation");
+textAnnotation.setOpen(true);
+textAnnotation.setIcon(TextIcon.Key);
+com.aspose.pdf.Border border = new com.aspose.pdf.Border(textAnnotation);
+border.setWidth(5);
+border.setDash(new Dash(1, 1));
+textAnnotation.setBorder(border);
+String userName1 = "Aspose1";
+textAnnotation.setReviewState(AnnotationState.Rejected, userName1);
+textAnnotation.setRect(new Rectangle(200, 400, 400, 600));
 
-    // 设置注释主题
-    textAnnotation.setSubject("示例主题");
-    // 指定注释内容
-    textAnnotation.setContents("注释的示例内容");
-    textAnnotation.setOpen(true);
-    textAnnotation.setIcon(TextIcon.Key);
-    com.aspose.pdf.Border border = new com.aspose.pdf.Border(textAnnotation);
-    border.setWidth(5);
-    border.setDash(new Dash(1, 1));
-    textAnnotation.setBorder(border);
-    String userName1 = "Aspose1";
-    textAnnotation.setReviewState(AnnotationState.Rejected, userName1);
-    textAnnotation.setRect(new Rectangle(200, 400, 400, 600));
+//Add annotation in the annotations collection of the page
+pdfDocument.getPages().get_Item(1).getAnnotations().add(textAnnotation);
+pdfDocument.processParagraphs();
 
-    // 添加注释到页面的注释集合中
-    pdfDocument.getPages().get_Item(1).getAnnotations().add(textAnnotation);
-    pdfDocument.processParagraphs();
+//Save the output file
+pdfDocument.save(dataDir + "output_24_2_Rejected.pdf");
 
-    // 保存输出文件
-    pdfDocument.save(dataDir + "output_24_2_Rejected.pdf");
+pdfDocument = new Document(dataDir + "output" + version + "3.pdf");
+TextAnnotation textAnnotation2 = (TextAnnotation) pdfDocument.getPages().get_Item(1).getAnnotations().get_Item(1);
 
-    pdfDocument = new Document(dataDir + "output" + version + "3.pdf");
-    TextAnnotation textAnnotation2 = (TextAnnotation) pdfDocument.getPages().get_Item(1).getAnnotations().get_Item(1);
-
-    String userName2 = "Aspose2";
-    textAnnotation2.setReviewState(AnnotationState.Accepted, userName2);
-    pdfDocument.save(dataDir + "output_24_2_Rejected_and_Accepted.pdf");
+String userName2 = "Aspose2";
+textAnnotation2.setReviewState(AnnotationState.Accepted, userName2);
+pdfDocument.save(dataDir + "output_24_2_Rejected_and_Accepted.pdf");
 ```
 
-
-从24.2开始实现OFD到PDF的转换：
+From 24.2 implement OFD to PDF conversion:
 
 ```java
-
-    Document document = new Document(inputPath, new OfdLoadOptions());
-    document.save(outputPath);
+Document document = new Document(inputPath, new OfdLoadOptions());
+document.save(outputPath);
 ```
 
-## Aspose.PDF 24.1中的新增功能
+## What's new in Aspose.PDF 24.1
 
-从24.1版本开始实现PDF到Markdown的转换：
+From 24.1 release implement PDF to Markdown conversion:
 
 ```java
-
-    final Document doc = new Document(inputPdfPath);
-    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
-    saveOptions.setHeadingRecognitionStrategy(HeadingRecognitionStrategy.Outlines);
-    doc.save(markdownOutputFilePath, saveOptions);
+final Document doc = new Document(inputPdfPath);
+MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+saveOptions.setHeadingRecognitionStrategy(HeadingRecognitionStrategy.Outlines);
+doc.save(markdownOutputFilePath, saveOptions);
 ```
 
-此外，在24.1中实现了使用InterruptMonitor的线程中断。
+Also, in 24.1 thread interruption using the InterruptMonitor has been implemented.
 
 ```java
+final InterruptMonitor monitor = new InterruptMonitor();
 
-    final InterruptMonitor monitor = new InterruptMonitor();
+new Thread(new Runnable() {
 
-    new Thread(new Runnable() {
+  public void run() {
 
-      public void run() {
+    InterruptMonitor.setThreadLocalInstance(monitor);
+    Document document = new Document();
 
-        InterruptMonitor.setThreadLocalInstance(monitor);
-        Document document = new Document();
+    try {
+      Page page = document.getPages().insert(1);
+      PageInfo pageInfo = page.getPageInfo();
+      pageInfo.setLandscape(true);
+      Table topicTable = new Table();
+      topicTable.setBorder(new BorderInfo(BorderSide.All, 0.5 f, Color.getBlack()));
+      topicTable.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5 f, Color.getBlack()));
+      topicTable.setColumnWidths("5% 10% 5% 60% 10% 10%");
+      topicTable.setRepeatingRowsCount(1);
 
-        try {
-          Page page = document.getPages().insert(1);
-          PageInfo pageInfo = page.getPageInfo();
-          pageInfo.setLandscape(true);
-          Table topicTable = new Table();
-          topicTable.setBorder(new BorderInfo(BorderSide.All, 0.5 f, Color.getBlack()));
-          topicTable.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5 f, Color.getBlack()));
-          topicTable.setColumnWidths("5% 10% 5% 60% 10% 10%");
-          topicTable.setRepeatingRowsCount(1);
+      Row topicRow = topicTable.getRows().add();
 
-          Row topicRow = topicTable.getRows().add();
+      topicRow.getCells().add("text");
+      topicRow.getCells().add("text");
+      topicRow.getCells().add("text");
+      topicRow.getCells().add("text");
+      topicRow.getCells().add("text");
+      topicRow.getCells().add("text");
 
-          topicRow.getCells().add("text");
-          topicRow.getCells().add("text");
-          topicRow.getCells().add("text");
-          topicRow.getCells().add("text");
-          topicRow.getCells().add("text");
-          topicRow.getCells().add("text");
-
-          //foreach to while statements conversion
-          Iterator tmp0 = (topicRow.getCells()).iterator();
-          while (tmp0.hasNext()) {
-            Cell cell = (Cell) tmp0.next();
-            cell.setVerticalAlignment(VerticalAlignment.Center);
-            cell.setAlignment(HorizontalAlignment.Center);
-          }
-
-          Row row2 = topicTable.getRows().add();
-          row2.getCells().add("text");
-          row2.getCells().add("text");
-          row2.getCells().add("text");
-          String LongText = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.";
-          row2.getCells().add(LongText);
-          row2.getCells().add("text");
-          row2.getCells().add("text");
-          page.getParagraphs().add(topicTable);
-          document.save(dataDir + "out" + version + ".pdf");
-
-        } catch (com.aspose.pdf.exceptions.OperationCanceledException ex) {
-          System.out.println("Interrupting the save thread at " + System.currentTimeMillis());
-        } finally {
-          if (document != null) {
-            document.close();
-          }
-        }
-
+      //foreach to while statements conversion
+      Iterator tmp0 = (topicRow.getCells()).iterator();
+      while (tmp0.hasNext()) {
+        Cell cell = (Cell) tmp0.next();
+        cell.setVerticalAlignment(VerticalAlignment.Center);
+        cell.setAlignment(HorizontalAlignment.Center);
       }
 
-    }).start();
+      Row row2 = topicTable.getRows().add();
+      row2.getCells().add("text");
+      row2.getCells().add("text");
+      row2.getCells().add("text");
+      String LongText = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.";
+      row2.getCells().add(LongText);
+      row2.getCells().add("text");
+      row2.getCells().add("text");
+      page.getParagraphs().add(topicTable);
+      document.save(dataDir + "out" + version + ".pdf");
 
-    System.out.println("Process is started thread at " + System.currentTimeMillis());
-
-    // The timeout should be less than the time required for full document save (without interruption).
-    Thread.sleep(500);
-
-    // Interrupt the process
-    monitor.interrupt();
-
-    System.out.println("Interrupted the save thread at " + System.currentTimeMillis());
-```
-
-
-## Aspose.PDF 23.12 中的新功能
-
-可以使用以下代码片段找到表单并替换文本：
-
-```java
-
-    Document document = new Document(input);
-    String expectedText = "This is a text added while creating new PDF in Kofx Power PDF Standard.";
-
-    XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
-
-    Iterator tmp0 = (forms).iterator();
-    while (tmp0.hasNext()) {
-      XForm form = (XForm) tmp0.next();
-      if ("Typewriter".equals(form.getIT()) && "Form".equals(form.getSubtype())) {
-        TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-        absorber.visit(form);
-
-        Iterator tmp1 = (absorber.getTextFragments()).iterator();
-        while (tmp1.hasNext()) {
-          TextFragment fragment = (TextFragment) tmp1.next();
-          fragment.setText("");
-        }
+    } catch (com.aspose.pdf.exceptions.OperationCanceledException ex) {
+      System.out.println("Interrupting the save thread at " + System.currentTimeMillis());
+    } finally {
+      if (document != null) {
+        document.close();
       }
     }
 
-    document.save(output);
+  }
+
+}).start();
+
+System.out.println("Process is started thread at " + System.currentTimeMillis());
+
+// The timeout should be less than the time required for full document save (without interruption).
+Thread.sleep(500);
+
+// Interrupt the process
+monitor.interrupt();
+
+System.out.println("Interrupted the save thread at " + System.currentTimeMillis());
 ```
 
-或者，可以完全删除表单：
+## What's new in Aspose.PDF 23.12
+
+The form can be found and the text can be replaced using the following code snippet:
 
 ```java
+Document document = new Document(input);
+String expectedText = "This is a text added while creating new PDF in Kofx Power PDF Standard.";
 
-    Document document = new Document(input);
-    XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
+XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
 
-    //foreach 转换为 while 语句
-    Iterator tmp0 = (forms).iterator();
-    while (tmp0.hasNext()) {
-        XForm form = (XForm) tmp0.next();
-        if ("Typewriter".equals(form.getIT()) && "Form".equals(form.getSubtype())) {
-            String name = forms.getFormName(form);
-            forms.delete(name);
-        }
-    }
-
-    document.save(output);
-```
-
-
-另一种删除表单的变体：
-
-```java
-
-    Document document = new Document(input);
-
-    XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
-
-    for (int i = 1; i <= forms.size(); i++) {
-        if ("Typewriter".equals(forms.get_Item(i).getIT()) && "Form".equals(forms.get_Item(i).getSubtype())) {
-            forms.delete(forms.get_Item(i).getName());
-        }
-    }
-
-    document.save(output);
-``` 
-
-- 可以使用以下代码片段删除所有表单：
-
-```java
-
-    Document document = new Document(input);
-
-    XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
-
-    forms.clear();
-
-    document.save(output);
-```
-
-## Aspose.PDF 23.11 的新功能
-
-从这个版本开始，可以从 PDF 文件中删除隐藏文本：
-
-```java
-
-    Document document = new Document(inputFile);
-
-    TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber();
-    textAbsorber.setTextReplaceOptions(new TextReplaceOptions(TextReplaceOptions.ReplaceAdjustment.None));
-    document.getPages().accept(textAbsorber);
-
-    msStringBuilder result = new msStringBuilder();
-
-    // foreach 循环转换为 while 语句
-    Iterator tmp0 = (textAbsorber.getTextFragments()).iterator();
-        while (tmp0.hasNext()) {
-            TextFragment fragment = (TextFragment) tmp0.next();
-            if (fragment.getTextState().isInvisible()) {
-                result.append(fragment.getText());
-                fragment.setText("");
-            }
-        }
-
-    document.save(outputFile);
-```
-
-
-## Aspose.PDF 23.10 中的更新内容
-
-当前更新提供了三种从标记的 PDF 中移除标签的方法。
-
-- 从 documentElement（根树元素）中移除某个节点元素：
-
-```java
-
-    Document document = new Document(inputPath);
-    RootElement structure = document.getLogicalStructure();
-    Element documentElement = structure.getChildren().get_Item(0);
-    Element structElement = (documentElement.getChildren().getCount() > 1) ?  documentElement.getChildren().get_Item(1) : null;
-    documentElement.getChildren().remove(structElement);
-    // 您也可以删除 structElement 本身
-                //if (structElement != null)
-                //{
-                //    structElement.remove();
-                //}
-    document.save(outputPath);
-```
-
-- 从文档中移除所有标记的元素标签，但保留结构元素：
-
-```java
-
-    Document document = new Document(inputPath);
-    RootElement structure = document.getLogicalStructure();
-    Element root= structure.getChildren().get_Item(0);
-    Queue<Element> queue = new ArrayDeque<Element>();
-    queue.add(root);
-    for (Element element : structure.getChildren() ) {
-        queue.add(element);
-        for (Element child : element.getChildren())
-        {
-            queue.add(child);
-        }
-    }
-    for (Element element:queue ) {
-        if (element instanceof TextElement  || element instanceof FigureElement)
-            element.remove();
-    }
-    document.save(outputPath);
-```
-
-
-- 完全删除标签：
-
-```java
-
-    Document document = new Document(inputPath);
-    RootElement structure = document.getLogicalStructure();
-    Element root = structure.getChildren().get_Item(0);
-    root.remove();
-    document.save(outputPath);
-```
-
-我们实现了一个新功能来测量字符高度。使用以下代码来测量字符的高度：
-
-```java
-
-    Document doc = new Document("input.pdf");
+Iterator tmp0 = (forms).iterator();
+while (tmp0.hasNext()) {
+  XForm form = (XForm) tmp0.next();
+  if ("Typewriter".equals(form.getIT()) && "Form".equals(form.getSubtype())) {
     TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-    absorber.visit(doc.getPages().get_Item(1));
-    double height = absorber.getTextFragments().get_Item(1).getTextState().measureHeight('h')
+    absorber.visit(form);
+
+    Iterator tmp1 = (absorber.getTextFragments()).iterator();
+    while (tmp1.hasNext()) {
+      TextFragment fragment = (TextFragment) tmp1.next();
+      fragment.setText("");
+    }
+  }
+}
+
+document.save(output);
 ```
 
-请注意，测量是基于文档中嵌入的字体。如果缺少任何尺寸信息，此方法将返回0。
-
-## Aspose.PDF 23.9 中的新功能
-
-从23.9开始支持从可填写字段中删除子注释。
-
-示例1：
+Or, the form can be completely removed:
 
 ```java
+Document document = new Document(input);
+XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
 
-    String input = "55343_1.pdf";
-    Document doc = new Document(input);
-    final String fieldName = "1 Vehicle Identification Number";
-    Field field = (Field) doc.getForm().get_Item(fieldName);
-    System.out.println(0 == field.size());
-    Rectangle rect = field.getRect();
-    doc.getForm().addFieldAppearance(field, 2, rect);
-    System.out.println(2 == field.size());
+//foreach to while statements conversion
+Iterator tmp0 = (forms).iterator();
+while (tmp0.hasNext()) {
+    XForm form = (XForm) tmp0.next();
+    if ("Typewriter".equals(form.getIT()) && "Form".equals(form.getSubtype())) {
+        String name = forms.getFormName(form);
+        forms.delete(name);
+    }
+}
 
-    field = (Field) doc.getForm().get_Item(fieldName);
-    System.out.println(2 == field.size());
-    doc.getForm().removeFieldAppearance(field, 1);
-
-    System.out.println(0 == field.size());
-    field = (Field) doc.getForm().get_Item(fieldName);
-    System.out.println(0 == field.size());
+document.save(output);
 ```
 
+Another variant of removing the form:
+
+```java
+Document document = new Document(input);
+
+XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
+
+for (int i = 1; i <= forms.size(); i++) {
+    if ("Typewriter".equals(forms.get_Item(i).getIT()) && "Form".equals(forms.get_Item(i).getSubtype())) {
+        forms.delete(forms.get_Item(i).getName());
+    }
+}
+
+document.save(output);
+```
+
+- All forms can be deleted using the following code snippet:
+
+```java
+Document document = new Document(input);
+
+XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
+
+forms.clear();
+
+document.save(output);
+```
+
+## What's new in Aspose.PDF 23.11
+
+From this release possible to remove hidden text from PDF file:
+
+```java
+Document document = new Document(inputFile);
+
+TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber();
+textAbsorber.setTextReplaceOptions(new TextReplaceOptions(TextReplaceOptions.ReplaceAdjustment.None));
+document.getPages().accept(textAbsorber);
+
+msStringBuilder result = new msStringBuilder();
+
+//foreach to while statements conversion
+Iterator tmp0 = (textAbsorber.getTextFragments()).iterator();
+    while (tmp0.hasNext()) {
+        TextFragment fragment = (TextFragment) tmp0.next();
+        if (fragment.getTextState().isInvisible()) {
+            result.append(fragment.getText());
+            fragment.setText("");
+        }
+    }
+
+document.save(outputFile);
+```
+
+## What's new in Aspose.PDF 23.10
+
+The current update presents three versions of Removing tags from tagged PDFs.
+
+- Remove some node element from a documentElement (root tree element):
+
+```java
+Document document = new Document(inputPath);
+RootElement structure = document.getLogicalStructure();
+Element documentElement = structure.getChildren().get_Item(0);
+Element structElement = (documentElement.getChildren().getCount() > 1) ?  documentElement.getChildren().get_Item(1) : null;
+documentElement.getChildren().remove(structElement);
+// You can also delete the structElement itself
+            //if (structElement != null)
+            //{
+            //    structElement.remove();
+            //}
+document.save(outputPath);
+```
+
+- Remove all marked elements tags from the document, but keep the structure elements:
+
+```java
+Document document = new Document(inputPath);
+RootElement structure = document.getLogicalStructure();
+Element root= structure.getChildren().get_Item(0);
+Queue<Element> queue = new ArrayDeque<Element>();
+queue.add(root);
+for (Element element : structure.getChildren() ) {
+    queue.add(element);
+    for (Element child : element.getChildren())
+    {
+        queue.add(child);
+    }
+}
+for (Element element:queue ) {
+    if (element instanceof TextElement  || element instanceof FigureElement)
+        element.remove();
+}
+document.save(outputPath);
+```
+
+- Remove tags at all:
+
+```java
+Document document = new Document(inputPath);
+RootElement structure = document.getLogicalStructure();
+Element root = structure.getChildren().get_Item(0);
+root.remove();
+document.save(outputPath);
+```
+
+We've implemented a new feature to measure character height. Use the following code to measure the height of a character:
+
+```java
+Document doc = new Document("input.pdf");
+TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+absorber.visit(doc.getPages().get_Item(1));
+double height = absorber.getTextFragments().get_Item(1).getTextState().measureHeight('h')
+```
+
+Note that the measurement is based on the font embedded in the document. If any information for a dimension is missing, this method returns 0.
+
+## What's new in Aspose.PDF 23.9
+
+From 23.9 support to remove a child annotation from a fillable field.
+
+example 1:
+
+```java
+String input = "55343_1.pdf";
+Document doc = new Document(input);
+final String fieldName = "1 Vehicle Identification Number";
+Field field = (Field) doc.getForm().get_Item(fieldName);
+System.out.println(0 == field.size());
+Rectangle rect = field.getRect();
+doc.getForm().addFieldAppearance(field, 2, rect);
+System.out.println(2 == field.size());
+
+field = (Field) doc.getForm().get_Item(fieldName);
+System.out.println(2 == field.size());
+doc.getForm().removeFieldAppearance(field, 1);
+
+System.out.println(0 == field.size());
+field = (Field) doc.getForm().get_Item(fieldName);
+System.out.println(0 == field.size());
+```
 
 example 2:
 
 ```java
+{
+String option1 = "option 1";
+String option2 = "option 2";
+String outputPdf = "output.pdf";
 
-    {
-    String option1 = "选项 1";
-    String option2 = "选项 2";
-    String outputPdf = "输出.pdf";
-
-    final Document document = new Document();
-    try /*JAVA: 使用中*/ {
-        Page page = document.getPages().add();
-
-        CheckboxField checkbox = new CheckboxField(page, new Rectangle(50, 50, 70, 70));
-
-        // 设置第一个复选框组的选项值
-        checkbox.setExportValue(option1);
-        checkbox.addOption(option2);
-        document.getForm().add(checkbox);
-        java.util.List < String > tmp0 = new ArrayList < String > ();
-        tmp0.add("Off");
-        tmp0.add(option1);
-        tmp0.add(option2);
-        System.out.println(collectionAssert_AreEqual(tmp0, checkbox.getAllowedStates()));
-        checkbox.setValue(option2);
-
-        WidgetAnnotation f = document.getForm().get_Item(1);
-        document.getForm().removeFieldAppearance((Field) f, 2);
-
-        checkbox = (CheckboxField) document.getForm().get_Item(1);
-        java.util.List < String > tmp1 = new java.util.ArrayList < String > ();
-        tmp1.add("Off");
-        tmp1.add(option1);
-        System.out.println(collectionAssert_AreEqual(tmp1, checkbox.getAllowedStates()));
-
-        document.save(outputPdf);
-    } finally {
-        if (document != null)(document).close();
-    }
-    }
-    public static boolean collectionAssert_AreEqual(java.util.List < String > value1,
-    java.util.List < String > value2) {
-    if (value1.size() == value2.size()) {
-        for (int i = 0; i < value1.size(); i++) {
-        if (!value1.get(i).equals(value2.get(i)))
-            return false;
-        }
-    } else {
-        return false;
-    }
-    return true;
-    }
-```
-
-
-添加使用 ImageFilterType.Flate 的图像不保留透明度。
-
-```java
-
-    Document document = new Document();
+final Document document = new Document();
+try /*JAVA: was using*/ {
     Page page = document.getPages().add();
 
-    FileInputStream stream = new FileInputStream(("55037_1.png"));
+    CheckboxField checkbox = new CheckboxField(page, new Rectangle(50, 50, 70, 70));
 
-    page.getResources().getImages().addWithImageFilterType(stream, ImageFilterType.Flate);
-    page.getContents().add(new GSave());
-    Rectangle rectangle = new Rectangle(413, 428, 548, 564);
-    Matrix matrix = new Matrix(
-      new double[] {
-        rectangle.getURX() - rectangle.getLLX(), 0, 0, rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY()
-      });
+    // Set the first checkbox group option value
+    checkbox.setExportValue(option1);
+    checkbox.addOption(option2);
+    document.getForm().add(checkbox);
+    java.util.List < String > tmp0 = new ArrayList < String > ();
+    tmp0.add("Off");
+    tmp0.add(option1);
+    tmp0.add(option2);
+    System.out.println(collectionAssert_AreEqual(tmp0, checkbox.getAllowedStates()));
+    checkbox.setValue(option2);
 
-    page.getContents().add(new ConcatenateMatrix(matrix));
-    XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-    page.getContents().add(new Do(ximage.getName()));
-    page.getContents().add(new GRestore());
-    document.save(getOutputPath("55157.pdf"));
-    stream.close();
+    WidgetAnnotation f = document.getForm().get_Item(1);
+    document.getForm().removeFieldAppearance((Field) f, 2);
+
+    checkbox = (CheckboxField) document.getForm().get_Item(1);
+    java.util.List < String > tmp1 = new java.util.ArrayList < String > ();
+    tmp1.add("Off");
+    tmp1.add(option1);
+    System.out.println(collectionAssert_AreEqual(tmp1, checkbox.getAllowedStates()));
+
+    document.save(outputPdf);
+} finally {
+    if (document != null)(document).close();
+}
+}
+public static boolean collectionAssert_AreEqual(java.util.List < String > value1,
+java.util.List < String > value2) {
+if (value1.size() == value2.size()) {
+    for (int i = 0; i < value1.size(); i++) {
+    if (!value1.get(i).equals(value2.get(i)))
+        return false;
+    }
+} else {
+    return false;
+}
+return true;
+}
 ```
 
-## Aspose.PDF 23.8 中的新功能是什么
-
-在23.8中添加了检测PDF文档增量更新的功能。此功能在文档以增量更新保存时返回“true”，否则返回“false”。
+Adding image with ImageFilterType.Flate does not preserve transparency.
 
 ```java
+Document document = new Document();
+Page page = document.getPages().add();
 
-    Document doc = new Document(dataDir+"PDF_Support_Tech_Note.pdf");
-    boolean not_updatedIncrementally = doc.hasIncrementalUpdate();
-    System.out.println(not_updatedIncrementally);
+FileInputStream stream = new FileInputStream(("55037_1.png"));
 
-    doc.getPages().add();
-    doc.saveIncrementally(dataDir+"PDF_updatedIncrementally.pdf");
+page.getResources().getImages().addWithImageFilterType(stream, ImageFilterType.Flate);
+page.getContents().add(new GSave());
+Rectangle rectangle = new Rectangle(413, 428, 548, 564);
+Matrix matrix = new Matrix(
+  new double[] {
+    rectangle.getURX() - rectangle.getLLX(), 0, 0, rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY()
+  });
 
-    doc = new Document(dataDir+"PDF_updatedIncrementally.pdf");
-    boolean updatedIncrementally = doc.hasIncrementalUpdate();
-    System.out.println(updatedIncrementally);
-    doc.close();
-```    
+page.getContents().add(new ConcatenateMatrix(matrix));
+XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
+page.getContents().add(new Do(ximage.getName()));
+page.getContents().add(new GRestore());
+document.save(getOutputPath("55157.pdf"));
+stream.close();
+```
 
-另一个功能是将输入PDF中的输出意图复制到目标PDF中。
+## What's new in Aspose.PDF 23.8
 
-我们添加了一个新的公共属性Document.getOutputIntents()，以允许访问文档中的输出意图。目前仅支持使用某些文档中已存在的输出意图，用户无法从头创建OutputIntent。
-
-```java
-
-    Document document1 = new Document(dataDir+"pdfa.pdf");
-    Document resultDocument = new Document();
-    resultDocument.getPages().add(document1.getPages());
-
-    for (OutputIntent intent : document1.getOutputIntents())
-    {
-        resultDocument.getOutputIntents().addItem(intent);
-    }
-
-    resultDocument.save(dataDir+"resultpath.pdf");
-```  
-
-
-从 Aspose.PDF 23.8 支持添加形状提取：
+The function for detecting Incremental Updates in a PDF document has been added in 23.8. This function returns 'true' where document was saved with incremental updates, otherwise, it returns 'false'.
 
 ```java
+Document doc = new Document(dataDir+"PDF_Support_Tech_Note.pdf");
+boolean not_updatedIncrementally = doc.hasIncrementalUpdate();
+System.out.println(not_updatedIncrementally);
 
+doc.getPages().add();
+doc.saveIncrementally(dataDir+"PDF_updatedIncrementally.pdf");
+
+doc = new Document(dataDir+"PDF_updatedIncrementally.pdf");
+boolean updatedIncrementally = doc.hasIncrementalUpdate();
+System.out.println(updatedIncrementally);
+doc.close();
+```
+
+One more feature is Copy OutputIntents from input PDF to destination PDF
+
+We add a new public property Document.getOutputIntents() to allow access to output intents in a document.
+For a time being only the usage of already existing in some document output intents is supported, user can't create OutputIntent from scratch.
+
+```java
+Document document1 = new Document(dataDir+"pdfa.pdf");
+Document resultDocument = new Document();
+resultDocument.getPages().add(document1.getPages());
+
+for (OutputIntent intent : document1.getOutputIntents())
+{
+    resultDocument.getOutputIntents().addItem(intent);
+}
+
+resultDocument.save(dataDir+"resultpath.pdf");
+```
+
+From Aspose.PDF 23.8 support to add the shape extraction:
+
+```java
 {
     String input1 = getInputPdf("46298_1");
     String input2 = getInputPdf("46298_2");
@@ -1214,7 +1773,7 @@ example 2:
     TextFragmentAbsorber tfAbsorber = new TextFragmentAbsorber();
     tfAbsorber.visit(source.getPages().get_Item(1));
 
-    // foreach 转换为 while 语句
+    //foreach to while statements conversion
     Iterator tmp0 = ( tfAbsorber.getTextFragments()).iterator();
         while (tmp0.hasNext())
         {
@@ -1245,7 +1804,7 @@ example 2:
         TextFragment local = new TextFragment();
         local.setPosition(textFragment.getPosition());
 
-        // 重新计算新位置，因为页面大小与原始 PDF 不同
+        // Recalculate a new position since page size differs the originl PDF
         local.getPosition().setXIndent(textFragment.getPosition().getXIndent());//2.5 * 72;
         double newPageHeight = page.getPageRect(true).getHeight();
         double oldPageHeight = textFragment.getPage().getPageRect(true).getHeight();
@@ -1263,406 +1822,386 @@ example 2:
     }
 ```
 
-
-还支持在添加文本时检测溢出的能力：
-
-```java
-
-    Document doc = new Document();
-    String paragraphContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl tortor, efficitur sed cursus in, lobortis vitae nulla. Quisque rhoncus, felis sed dictum semper, est tellus finibus augue, ut feugiat enim risus eget tortor. Nulla finibus velit nec ante gravida sollicitudin. Morbi sollicitudin vehicula facilisis. Vestibulum ac convallis erat. Ut eget varius sem. Nam varius pharetra lorem, id ullamcorper justo auctor ac. Integer quis erat vitae lacus mollis volutpat eget et eros. Donec a efficitur dolor. Maecenas non dapibus nisi, ut pellentesque elit. Sed pellentesque rhoncus ante, a consectetur ligula viverra vel. Integer eget bibendum ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur elementum, sem a auctor vulputate, ante libero iaculis dolor, vitae facilisis dolor lorem at orci. Sed laoreet dui id nisi accumsan, id posuere diam accumsan.";
-    Rectangle rectangle = new Rectangle(100, 600, 500, 700, false);
-    TextParagraph paragraph = new TextParagraph();
-    TextFragment fragment = new TextFragment(paragraphContent);
-    paragraph.setVerticalAlignment(VerticalAlignment.Top);
-    paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
-    paragraph.setRectangle(rectangle);
-    boolean isFitRectangle = fragment.getTextState().isFitRectangle(paragraphContent, rectangle);
-    while (!isFitRectangle)
-    {
-        fragment.getTextState().setFontSize(fragment.getTextState().getFontSize() - 0.5f);
-        isFitRectangle = fragment.getTextState().isFitRectangle(paragraphContent, rectangle);
-    }
-    paragraph.appendLine(fragment);
-    TextBuilder builder = new TextBuilder(doc.getPages().add());
-    builder.appendParagraph(paragraph);
-    doc.save(output);
-```
-
-
-## Aspose.PDF 23.7 中的新增功能
-
-从23.7版本开始支持打印对话框预设页面缩放：
+Also supports the ability to detect Overflow when adding text:
 
 ```java
-
-    Document document = new Document();
-    document.getPages().add();
-    document.setPrintScaling(PrintScaling.None);//PrintScaling.Default
-    document.save(outputPdf);
-
-    Document documentOutput = new Document(outputPdf);
-    int printScaling = documentOutput.getPrintScaling();
-    System.out.println("PrintScaling: " + printScaling);
+Document doc = new Document();
+String paragraphContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl tortor, efficitur sed cursus in, lobortis vitae nulla. Quisque rhoncus, felis sed dictum semper, est tellus finibus augue, ut feugiat enim risus eget tortor. Nulla finibus velit nec ante gravida sollicitudin. Morbi sollicitudin vehicula facilisis. Vestibulum ac convallis erat. Ut eget varius sem. Nam varius pharetra lorem, id ullamcorper justo auctor ac. Integer quis erat vitae lacus mollis volutpat eget et eros. Donec a efficitur dolor. Maecenas non dapibus nisi, ut pellentesque elit. Sed pellentesque rhoncus ante, a consectetur ligula viverra vel. Integer eget bibendum ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur elementum, sem a auctor vulputate, ante libero iaculis dolor, vitae facilisis dolor lorem at orci. Sed laoreet dui id nisi accumsan, id posuere diam accumsan.";
+Rectangle rectangle = new Rectangle(100, 600, 500, 700, false);
+TextParagraph paragraph = new TextParagraph();
+TextFragment fragment = new TextFragment(paragraphContent);
+paragraph.setVerticalAlignment(VerticalAlignment.Top);
+paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
+paragraph.setRectangle(rectangle);
+boolean isFitRectangle = fragment.getTextState().isFitRectangle(paragraphContent, rectangle);
+while (!isFitRectangle)
+{
+    fragment.getTextState().setFontSize(fragment.getTextState().getFontSize() - 0.5f);
+    isFitRectangle = fragment.getTextState().isFitRectangle(paragraphContent, rectangle);
+}
+paragraph.appendLine(fragment);
+TextBuilder builder = new TextBuilder(doc.getPages().add());
+builder.appendParagraph(paragraph);
+doc.save(output);
 ```
 
-## Aspose.PDF 23.6 中的新增功能
+## What's new in Aspose.PDF 23.7
 
-从23.6版本开始支持设置HTML、Epub页面标题的功能。
-
-HTML代码：
+From 23.7 version support the Print Dialog Presets Page Scaling:
 
 ```java
+Document document = new Document();
+document.getPages().add();
+document.setPrintScaling(PrintScaling.None);//PrintScaling.Default
+document.save(outputPdf);
 
-    HtmlSaveOptions options = new HtmlSaveOptions();
-    options.setFixedLayout(true);
-    options.setRasterImagesSavingMode(HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
-    options.setPartsEmbeddingMode(HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml);
-    options.setTitle("</title>NEW PAGE & TITILE</head>");
-
-    Document document = new Document(inputPath);
-    document.save(outPath, options);
+Document documentOutput = new Document(outputPdf);
+int printScaling = documentOutput.getPrintScaling();
+System.out.println("PrintScaling: " + printScaling);
 ```
 
+## What's new in Aspose.PDF 23.6
 
-代码用于 EPUB:
+From 23.6 version support the add the ability to set the title of the HTML, Epub page.
+
+code for HTML:
 
 ```java
+HtmlSaveOptions options = new HtmlSaveOptions();
+options.setFixedLayout(true);
+options.setRasterImagesSavingMode(HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
+options.setPartsEmbeddingMode(HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml);
+options.setTitle("</title>NEW PAGE & TITILE</head>");
 
-    EpubSaveOptions epubSaveOptions = new EpubSaveOptions();
-    epubSaveOptions.setTitle("</title>新页面 & 标题</head>");
-    epubSaveOptions.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.PdfFlow);
-
-    Document document = new Document(inputPath);
-    document.save(outPath, epubSaveOptions);
+Document document = new Document(inputPath);
+document.save(outPath, options);
 ```
 
-从 23.6 开始支持提供定位矢量图形的 API:
+code for EPUB:
 
 ```java
+EpubSaveOptions epubSaveOptions = new EpubSaveOptions();
+epubSaveOptions.setTitle("</title>NEW PAGE & TITILE</head>");
+epubSaveOptions.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.PdfFlow);
 
-    Document document = new Document(input);
-    VectorGraphicsAbsorber vectorAbsorber = new VectorGraphicsAbsorber();
-    vectorAbsorber.visit(document.getPages().get_Item(1));
-
-    SubPath subPath1 = vectorAbsorber.getSubPaths().get_Item(2);
-    SubPath subPath2 = vectorAbsorber.getSubPaths().get_Item(3);
-    SubPath subPath3 = vectorAbsorber.getSubPaths().get_Item(4);
-
-    Point point1 = new Point(subPath1.getPosition().getX() + 200, subPath1.getPosition().getY() - 100);
-    Point point2 = new Point(subPath2.getPosition().getX() + 200, subPath2.getPosition().getY() - 100);
-    Point point3 = new Point(subPath3.getPosition().getX() + 200, subPath3.getPosition().getY() - 100);
-
-    subPath1.setPosition(point1);
-    subPath2.setPosition(point2);
-    subPath3.setPosition(point3);
-
-    document.save(output);
+Document document = new Document(inputPath);
+document.save(outPath, epubSaveOptions);
 ```
 
-## Aspose.PDF 23.1 中的新增功能
-
-从23.1版本开始支持创建PrinterMark注释。添加了一种注释变体：ColorBarAnnotation。
+From 23.6 support to provide an API for positioning vector graphics:
 
 ```java
+Document document = new Document(input);
+VectorGraphicsAbsorber vectorAbsorber = new VectorGraphicsAbsorber();
+vectorAbsorber.visit(document.getPages().get_Item(1));
 
-    Document doc = new Document();
-    Page page = doc.getPages().add();
-    page.setTrimBox(new com.aspose.pdf.Rectangle(20, 20, 580, 820));
-    Rectangle rectBlack = new com.aspose.pdf.Rectangle(100, 300, 300, 320);
-    Rectangle rectCyan = new com.aspose.pdf.Rectangle(200, 600, 260, 690);
-    Rectangle rectMagenta = new com.aspose.pdf.Rectangle(10, 650, 140, 670);
+SubPath subPath1 = vectorAbsorber.getSubPaths().get_Item(2);
+SubPath subPath2 = vectorAbsorber.getSubPaths().get_Item(3);
+SubPath subPath3 = vectorAbsorber.getSubPaths().get_Item(4);
 
-    ColorBarAnnotation colorBarBlack = new ColorBarAnnotation(page, rectBlack);
-    ColorBarAnnotation colorBarCyan = new ColorBarAnnotation(page, rectCyan, ColorsOfCMYK.Cyan);
-    ColorBarAnnotation colorBaMagenta = new ColorBarAnnotation(page, rectMagenta);
-    colorBaMagenta.setColorOfCMYK(ColorsOfCMYK.Magenta);
-    ColorBarAnnotation colorBarYellow = new ColorBarAnnotation(page, new com.aspose.pdf.Rectangle(400, 250, 450, 700), ColorsOfCMYK.Yellow);
+Point point1 = new Point(subPath1.getPosition().getX() + 200, subPath1.getPosition().getY() - 100);
+Point point2 = new Point(subPath2.getPosition().getX() + 200, subPath2.getPosition().getY() - 100);
+Point point3 = new Point(subPath3.getPosition().getX() + 200, subPath3.getPosition().getY() - 100);
 
-    page.getAnnotations().add(colorBarBlack);
-    page.getAnnotations().add(colorBarCyan);
-    page.getAnnotations().add(colorBaMagenta);
-    page.getAnnotations().add(colorBarYellow);
-    doc.save("outFile.pdf");
+subPath1.setPosition(point1);
+subPath2.setPosition(point2);
+subPath3.setPosition(point3);
+
+document.save(output);
 ```
 
+## What's new in Aspose.PDF 23.1
 
-## Aspose.PDF 22.12 中的新功能
-
-从此版本开始支持将 PDF 转换为 DICOM 图像：
+From 23.1 version support to create PrinterMark annotation. Added one of the annotation variant: ColorBarAnnotation.
 
 ```java
+Document doc = new Document();
+Page page = doc.getPages().add();
+page.setTrimBox(new com.aspose.pdf.Rectangle(20, 20, 580, 820));
+Rectangle rectBlack = new com.aspose.pdf.Rectangle(100, 300, 300, 320);
+Rectangle rectCyan = new com.aspose.pdf.Rectangle(200, 600, 260, 690);
+Rectangle rectMagenta = new com.aspose.pdf.Rectangle(10, 650, 140, 670);
 
-    DicomDevice device = new DicomDevice(PageSize.getA4());
-    Document doc = new Document("Input.pdf");
-    ByteArrayOutputStream stream = new ByteArrayOutputStream();
-    device.process(doc.getPages().get_Item(1), stream);
+ColorBarAnnotation colorBarBlack = new ColorBarAnnotation(page, rectBlack);
+ColorBarAnnotation colorBarCyan = new ColorBarAnnotation(page, rectCyan, ColorsOfCMYK.Cyan);
+ColorBarAnnotation colorBaMagenta = new ColorBarAnnotation(page, rectMagenta);
+colorBaMagenta.setColorOfCMYK(ColorsOfCMYK.Magenta);
+ColorBarAnnotation colorBarYellow = new ColorBarAnnotation(page, new com.aspose.pdf.Rectangle(400, 250, 450, 700), ColorsOfCMYK.Yellow);
+
+page.getAnnotations().add(colorBarBlack);
+page.getAnnotations().add(colorBarCyan);
+page.getAnnotations().add(colorBaMagenta);
+page.getAnnotations().add(colorBarYellow);
+doc.save("outFile.pdf");
 ```
 
-## Aspose.PDF 22.9 中的新功能
+## What's new in Aspose.PDF 22.12
 
-从 22.09 开始支持添加属性以修改签名中的主题标题顺序 (E=, CN=, O=, OU=)。
+From this release support to convert PDF to DICOM Image:
 
 ```java
-
-    String inputPdf = getInputPath("input.pdf");
-    String inputPfx = getInputPath("input.pfx");
-    String outputPdf = getOutputPath("out.pdf");
-
-    final PdfFileSignature fileSign = new PdfFileSignature();
-    try 
-    {
-        fileSign.bindPdf(inputPdf);
-        java.awt.Rectangle rect = new java.awt.Rectangle(100, 100, 400, 100);
-        PKCS7Detached signature = new PKCS7Detached(inputPfx, "123456789");
-        signature.setDate(new Date());
-        signature.setCustomAppearance( new SignatureCustomAppearance());
-        signature.getCustomAppearance().setUseDigitalSubjectFormat(true);
-        signature.getCustomAppearance().setDigitalSubjectFormat(new /*SubjectNameElements*/int[] { SubjectNameElements.CN, SubjectNameElements.O });
-
-        fileSign.sign(1, true, rect, signature);
-        fileSign.save(outputPdf);
-    }
-    finally { 
-        if (fileSign != null) 
-            fileSign.close(); 
-    }
+DicomDevice device = new DicomDevice(PageSize.getA4());
+Document doc = new Document("Input.pdf");
+ByteArrayOutputStream stream = new ByteArrayOutputStream();
+device.process(doc.getPages().get_Item(1), stream);
 ```
 
-## Aspose.PDF 22.8 的新功能
+## What's new in Aspose.PDF 22.9
 
-从 Aspose.PDF 23.8 开始支持添加重建 xref 表的方法：
+From 22.09 support adding property for modify the order of the subject rubrics (E=, CN=, O=, OU=, ) into the signature.
 
 ```java
+String inputPdf = getInputPath("input.pdf");
+String inputPfx = getInputPath("input.pfx");
+String outputPdf = getOutputPath("out.pdf");
 
-    PdfFileSanitization sanitizer = new PdfFileSanitization();
-    try {
-        sanitizer.bindPdf(dataDir + "50528_1.pdf");
-        sanitizer.rebuildXrefAndTrailer();
-        sanitizer.save(dataDir + "50528_1" + version + ".pdf");
-    } finally {
-        if (sanitizer != null) ( sanitizer).close();
-    }
+final PdfFileSignature fileSign = new PdfFileSignature();
+try
+{
+    fileSign.bindPdf(inputPdf);
+    java.awt.Rectangle rect = new java.awt.Rectangle(100, 100, 400, 100);
+    PKCS7Detached signature = new PKCS7Detached(inputPfx, "123456789");
+    signature.setDate(new Date());
+    signature.setCustomAppearance( new SignatureCustomAppearance());
+    signature.getCustomAppearance().setUseDigitalSubjectFormat(true);
+    signature.getCustomAppearance().setDigitalSubjectFormat(new /*SubjectNameElements*/int[] { SubjectNameElements.CN, SubjectNameElements.O });
+
+    fileSign.sign(1, true, rect, signature);
+    fileSign.save(outputPdf);
+}
+finally {
+    if (fileSign != null)
+        fileSign.close();
+}
 ```
 
+## What's new in Aspose.PDF 22.8
 
-## Aspose.PDF 22.6 的新功能
-
-PDF 转换为 PDF_A_1A - 实现去除透明色的选项以避免输出文件过大。
-
-从版本 22.5 开始，客户能够控制转换后的透明度质量，以及由此产生的输出文件大小：
+From Aspose.PDF 23.8 support to add method for rebuild xref table:
 
 ```java
-    opts.setTransparencyResolution(300);
+PdfFileSanitization sanitizer = new PdfFileSanitization();
+try {
+    sanitizer.bindPdf(dataDir + "50528_1.pdf");
+    sanitizer.rebuildXrefAndTrailer();
+    sanitizer.save(dataDir + "50528_1" + version + ".pdf");
+} finally {
+    if (sanitizer != null) ( sanitizer).close();
+}
 ```
 
-## Aspose.PDF 22.5 的新功能
+## What's new in Aspose.PDF 22.6
 
-在 PDF/A 转换过程中，透明内容被移除并替换为图像。我们实现了一个新功能，现在客户可以通过 TransparencyResolution 参数控制图像质量：
+PDF to PDF_A_1A - implement option to remove transparency color to avoid large output file size.
+
+From version 22.5 customer is able to control quality of converted transparency, and the output file size as a result:
 
 ```java
-
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document("input.pdf");
-    PdfFormatConversionOptions options = new PdfFormatConversionOptions("log.xml", PdfFormat.PDF_A_1A, ConvertErrorAction.Delete);
-    options.setTransparencyResolution(300);
-    pdfDocument.convert(options);
-    pdfDocument.save("finalOutput.pdf");
+opts.setTransparencyResolution(300);
 ```
 
+## Aspose.PDF 22.5 中的新增功能
 
-## Aspose.PDF 22.4 中的新功能
-
-此版本包含有关 Aspose.PDF for Java 的信息：
-
-- PDF 到 ODS：识别下标和上标中的文本；
-
-**示例**
+在 PDF/A 转换过程中，透明内容将被删除并替换为图像。
+我们实现了一项新功能，现在客户可以通过参数 TransparencyResolution 控制图像的质量：
 
 ```java
-
-    Document pdfDocument = new Document("Superscript-Subscript.pdf");
-    ExcelSaveOptions options = new ExcelSaveOptions();
-    options.Format = ExcelSaveOptions.ExcelFormat.ODS;
-    pdfDocument.Save("output.ods"), options);
+com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document("input.pdf");
+PdfFormatConversionOptions options = new PdfFormatConversionOptions("log.xml", PdfFormat.PDF_A_1A, ConvertErrorAction.Delete);
+options.setTransparencyResolution(300);
+pdfDocument.convert(options);
+pdfDocument.save("finalOutput.pdf");
 ```
 
-- PDF 到 XMLSpreadSheet2003：识别下标和上标中的文本；
+## Aspose.PDF 22.4 中的新增功能
 
-- PDF 到 Excel：识别下标和上标中的文本；
+此版本包含 Aspose.PDF for Java 的信息：
 
-## Aspose.PDF 22.3 中的新功能
+- PDF转ODS：识别下标和上标文本；
 
-PDF 到 ODS：版本 22.3 中提供了对 RTL 的支持
+**例子**
 
 ```java
-
-    ExcelSaveOptions options = new ExcelSaveOptions();
-    options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
-    pdfDocument.save("output.ods", options);
+Document pdfDocument = new Document("Superscript-Subscript.pdf");
+ExcelSaveOptions options = new ExcelSaveOptions();
+options.Format = ExcelSaveOptions.ExcelFormat.ODS;
+pdfDocument.Save("output.ods"), options);
 ```
 
-## Aspose.PDF 22.2 中的新功能
+- PDF to XMLSpreadSheet2003：识别下标和上标文本；
 
-此版本包括 PDF 到 XSLX：支持 RTL（希伯来语，阿拉伯语）。
+- PDF转Excel：识别下标和上标文本；
 
-## Aspose.PDF 22.1 中的新功能
+## Aspose.PDF 22.3 中的新增功能
 
-Aspose.PDF for Java 允许加载文档便携式文档格式 (PDF) 版本 2.0。
+PDF 到 ODS：22.3 版本中提供了对 RTL 的支持
 
-## Aspose.PDF 21.10 中的新功能
+```java
+ExcelSaveOptions options = new ExcelSaveOptions();
+options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
+pdfDocument.save("output.ods", options);
+```
+
+## Aspose.PDF 22.2 中的新增功能
+
+此版本包括 PDF 到 XSLX：支持 RTL（希伯来语、阿拉伯语）。
+
+## Aspose.PDF 22.1 中的新增功能
+
+Aspose.PDF for Java 允许加载文档可移植文档格式 (PDF) 2.0 版。
+
+## Aspose.PDF 21.10 中的新增功能
 
 ### 如何检测隐藏文本？
 
 请使用以下代码：
 
 ```java
-
 Document pdf = new Document(inFile);
-        Page page = pdf.getPages().get_Item(1);
-        TextFragmentAbsorber textFragmentAbsorber = new com.aspose.pdf.TextFragmentAbsorber();
-        page.accept(textFragmentAbsorber);
-        TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
+    Page page = pdf.getPages().get_Item(1);
+    TextFragmentAbsorber textFragmentAbsorber = new com.aspose.pdf.TextFragmentAbsorber();
+    page.accept(textFragmentAbsorber);
+    TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
 
-        int fragmentsCount = textFragmentAbsorber.getTextFragments().size();
-        int invisibleCount = 0;
+    int fragmentsCount = textFragmentAbsorber.getTextFragments().size();
+    int invisibleCount = 0;
 
-        Iterator tmp0 = ( textFragmentCollection).iterator();
-            while (tmp0.hasNext())
-            {
-                com.aspose.pdf.TextFragment fragment = (com.aspose.pdf.TextFragment)tmp0.next();
-                System.out.println(fragment.getText());
-                System.out.println(fragment.getTextState().isInvisible());
-                if (fragment.getTextState().isInvisible())
-                    invisibleCount++;
-            }
-```
-
-
-## Aspose.PDF 21.8 中的新功能
-
-### 如何更改数字签名中的文字颜色？
-
-在21.8版本中，setForegroundColor允许更改数字签名中的文字颜色：
-
-```java
-请使用以下代码：
-
-                    PdfFileSignature pdfSign = new PdfFileSignature();                
-                    pdfSign.bindPdf(inFile);
-                    //创建一个用于签名位置的矩形
-                    java.awt.Rectangle rect = new java.awt.Rectangle(310, 45, 200, 50);
-                    PKCS7 pkcs = new PKCS7(inPfxFile, "");
-
-                    pkcs.setCustomAppearance( new SignatureCustomAppearance());
-//设置文字颜色
-                    pkcs.getCustomAppearance().setForegroundColor(Color.getGreen());
-
-                    // 签署PDF文件
-                    pdfSign.sign(1, true, rect, pkcs);
-                    //保存输出的PDF文件
-                    pdfSign.save(outFile);
-```
-
-## Aspose.PDF 21.6 中的新功能
-
-### 使用 ImagePlacementAbsorber 隐藏文档中的图像
-
-使用 Aspose.PDF for Java，您可以使用 ImagePlacementAbsorber 从文档中隐藏图像：
-
-```java
-      Document doc = new Document("input.pdf");
-
-        for (Page page : doc.getPages()) {
-            ImagePlacementAbsorber ipa = new ImagePlacementAbsorber();
-            ipa.visit(page);
-            for (ImagePlacement ip : ipa.getImagePlacements()) {
-                ip.hide();
-            }
+    Iterator tmp0 = ( textFragmentCollection).iterator();
+        while (tmp0.hasNext())
+        {
+            com.aspose.pdf.TextFragment fragment = (com.aspose.pdf.TextFragment)tmp0.next();
+            System.out.println(fragment.getText());
+            System.out.println(fragment.getTextState().isInvisible());
+            if (fragment.getTextState().isInvisible())
+                invisibleCount++;
         }
-
-        doc.save("out.pdf");
 ```
 
-## Aspose.PDF 21.5 有什么新功能
+## Aspose.PDF 21.8 中的新增功能
 
-### 添加用于合并图像的 API
+### 如何更改数字签名中的文本颜色？
 
-Aspose.PDF 21.4 允许您组合图像。将图像流列表合并为一个图像流。支持的输出格式包括 Png/jpg/tiff，如果使用不支持的格式，输出流默认编码为 Jpeg。
-请参见下面的代码片段：
+In the 21.8 version  setForegroundColor, it allows changing text color in Digital Signature:
+
+```java
+Please, use the following code:
+
+    PdfFileSignature pdfSign = new PdfFileSignature();
+    pdfSign.bindPdf(inFile);
+    //create a rectangle for signature location
+    java.awt.Rectangle rect = new java.awt.Rectangle(310, 45, 200, 50);
+    PKCS7 pkcs = new PKCS7(inPfxFile, "");
+
+    pkcs.setCustomAppearance( new SignatureCustomAppearance());
+//set text color
+    pkcs.getCustomAppearance().setForegroundColor(Color.getGreen());
+
+    // sign the PDF file
+    pdfSign.sign(1, true, rect, pkcs);
+    //save output PDF file
+    pdfSign.save(outFile);
+```
+
+## Aspose.PDF 21.6 中的新增功能
+
+### 使用 ImagePlacementAbsorber 从文档中隐藏图像
+
+借助 Aspose.PDF for Java，您可以使用 ImagePlacementAbsorber 从文档中隐藏图像：
+
+```java
+Document doc = new Document("input.pdf");
+
+  for (Page page : doc.getPages()) {
+      ImagePlacementAbsorber ipa = new ImagePlacementAbsorber();
+      ipa.visit(page);
+      for (ImagePlacement ip : ipa.getImagePlacements()) {
+          ip.hide();
+      }
+  }
+
+  doc.save("out.pdf");
+```
+
+## Aspose.PDF 21.5 中的新增功能
+
+### 添加用于合并图像的API
+
+Aspose.PDF 21.4 允许您组合图像。将图像流列表合并为一个图像流。支持 Png/jpg/tiff 输出格式，以防使用默认编码为 Jpeg 的不支持格式输出流。
+请遵循下一个代码片段：
 
 ```java
 InputStream inputStream;
 
-        ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
-        InputStream inputFile300dpi = new FileInputStream("image1.jpg");
-        try  {
-            inputImagesStreams.add(inputFile300dpi);
-            InputStream inputFile600dpi = new FileInputStream("image2.jpg");
-            try {
-                inputImagesStreams.add(inputFile600dpi);
-                inputStream = PdfConverter.mergeImages(
-                        inputImagesStreams,
-                        com.aspose.pdf.ImageFormat.Jpeg,
-                        ImageMergeMode.Vertical,
-                        new Integer(1),
-                        new Integer(1)
-                );
-            } finally {
-                if (inputFile600dpi != null) (inputFile600dpi).close();
-            }
+    ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
+    InputStream inputFile300dpi = new FileInputStream("image1.jpg");
+    try  {
+        inputImagesStreams.add(inputFile300dpi);
+        InputStream inputFile600dpi = new FileInputStream("image2.jpg");
+        try {
+            inputImagesStreams.add(inputFile600dpi);
+            inputStream = PdfConverter.mergeImages(
+                    inputImagesStreams,
+                    com.aspose.pdf.ImageFormat.Jpeg,
+                    ImageMergeMode.Vertical,
+                    new Integer(1),
+                    new Integer(1)
+            );
         } finally {
-            if (inputFile300dpi != null) (inputFile300dpi).close();
+            if (inputFile600dpi != null) (inputFile600dpi).close();
         }
+    } finally {
+        if (inputFile300dpi != null) (inputFile300dpi).close();
+    }
 
-        Document doc = new Document();
-        Page p = doc.getPages().add();
-        Image image = new Image();
-        image.setImageStream(inputStream);
-        p.getParagraphs().add(image);
-        doc.save("out.pdf");
-        inputStream.close();
+    Document doc = new Document();
+    Page p = doc.getPages().add();
+    Image image = new Image();
+    image.setImageStream(inputStream);
+    p.getParagraphs().add(image);
+    doc.save("out.pdf");
+    inputStream.close();
 ```
 
-
-也可以将您的图像合并为Tiff格式：
+您也可以将图像合并为 Tiff 格式：
 
 ```java
 InputStream inputStream;
 
-        ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
-        InputStream inputFile1 = new FileInputStream("1.tif");
-        try  {
-            inputImagesStreams.add(inputFile1);
-            InputStream inputFile2 = new FileInputStream("2.tif");
-            try {
-                inputImagesStreams.add(inputFile2);
-                inputStream = PdfConverter.mergeImagesAsTiff(inputImagesStreams);
-            } finally {
-                if (inputFile2 != null) (inputFile2).close();
-            }
+    ArrayList<InputStream> inputImagesStreams = new ArrayList<InputStream>();
+    InputStream inputFile1 = new FileInputStream("1.tif");
+    try  {
+        inputImagesStreams.add(inputFile1);
+        InputStream inputFile2 = new FileInputStream("2.tif");
+        try {
+            inputImagesStreams.add(inputFile2);
+            inputStream = PdfConverter.mergeImagesAsTiff(inputImagesStreams);
         } finally {
-            if (inputFile1 != null) (inputFile1).close();
+            if (inputFile2 != null) (inputFile2).close();
         }
+    } finally {
+        if (inputFile1 != null) (inputFile1).close();
+    }
 
-        Document doc = new Document();
-        Page p = doc.getPages().add();
-        Image image = new Image();
-        image.setImageStream(inputStream);
-        p.getParagraphs().add(image);
-        doc.save("out2.pdf");
-        inputStream.close();
+    Document doc = new Document();
+    Page p = doc.getPages().add();
+    Image image = new Image();
+    image.setImageStream(inputStream);
+    p.getParagraphs().add(image);
+    doc.save("out2.pdf");
+    inputStream.close();
 ```
 
-## Aspose.PDF 21.02 中的新功能是什么
+## Aspose.PDF 21.02 中的新增功能
 
 Aspose.PDF v21.02 使用 PAdES LTV 签名签署 PDF
 
 ```java
 final Document document = new Document(inputPdf);
-    try 
+    try
     {
         PdfFileSignature signature = new PdfFileSignature(document);
         PKCS7 pkcs7 = new PKCS7(getInputPath("cert.pfx"), "password");
-        //使用 PAdES LTV 签名签署 PDF
+        //Sign PDF with PAdES LTV Signatures
         pkcs7.setUseLtv(true);
 
         signature.sign(1, true, new Rectangle(100, 100, 300, 300), pkcs7);

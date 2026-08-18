@@ -1,123 +1,158 @@
 ---
-title: 将PDF转换为Excel
-linktitle: 将PDF转换为Excel
+title: 在 Java 中将 PDF 转换为 Excel
+linktitle: 将 PDF 转换为 Excel
 type: docs
 weight: 20
-url: /zh/java/convert-pdf-to-excel/
-lastmod: "2021-11-19"
-description: Aspose.PDF for Java允许您使用Java将PDF转换为Excel格式。在此过程中，PDF文件的各个页面被转换为Excel工作表。
+url: /java/convert-pdf-to-excel/
+lastmod: "2026-06-16"
+description: 了解如何使用 Aspose.PDF 将 PDF 文件转换为 Java 中的 Excel，包括 XML Spreadsheet 2003、XLSX、XLSM、CSV 和 ODS 输出。
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 如何用 Java 将 PDF 转换为 Excel
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 将 PDF 文件转换为与 Excel 兼容的格式。它涵盖 XML Spreadsheet 2003、XLSX、XLSM、CSV 和 ODS 输出，以及空白列插入和最小化工作表数量的选项。
 ---
+Aspose.PDF for Java 可以将 PDF 内容导出为具有不同布局选项的多种电子表格格式。使用 [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) 选择目标工作簿格式并控制如何将页面内容映射到工作表和列中。
 
-Aspose.PDF for Java API允许您将PDF文件渲染为Excel [XLS](https://docs.fileformat.com/spreadsheet/xls/) 和 [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) 文件格式。我们已经有另一个API，称为 [Aspose.Cells for Java](https://products.aspose.com/cells/java)，它提供了创建和操作现有Excel工作簿的功能。它还提供了将Excel工作簿转换为PDF格式的功能。
+## 将 PDF 转换为 Excel 2003 XML
 
-{{% alert color="primary" %}}
+当 PDF 内容应导出为 Excel 2003 XML 电子表格格式时，请使用此示例。
 
-**尝试在线将PDF转换为Excel**
-
-Aspose.PDF for Java 为您提供在线免费应用程序 ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)，您可以在此尝试研究其功能和工作质量。
-
-[![Aspose.PDF 转换 PDF 到 Excel 使用免费应用程序](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
-{{% /alert %}}
-
-## 将 PDF 转换为 Excel XLS
-
-要将 PDF 文件转换为 XLS 格式，Aspose.PDF 有一个名为 [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) 的类。 [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) 类的对象作为第二个参数传递给 Document.Save(..) 方法。
-
-将 PDF 文件转换为 XLSX 格式是 Aspose.PDF for Java 18.6 版本库的一部分。为了将 PDF 文件转换为 XLSX 格式，您需要使用 [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) 类的 setFormat() 方法将格式设置为 XLSX。
-
-以下代码片段展示了如何将 PDF 文件转换为 xls 和 .xlsx 格式：
+1. 在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 创建 [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) 并将其格式设置为`XMLSpreadSheet2003`。
+1. 调用 `document.save(outputFile.toString(), saveOptions)` 以便加载的 PDF 在 Excel 2003 XML 架构中序列化。
+1. 保存转换后的输出文件。
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertPDFtoXLSX {
-
-    private ConvertPDFtoXLSX() {
-
+public static void convertPdfToExcelSpreadSheet2003(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003);
+        document.save(outputFile.toString(), saveOptions);
     }
-
-    // 文档目录的路径。
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
-
-        ConvertPDFtoExcelSimple();
-        ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst();
-        ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets();
-        ConvertPDFtoExcelAdvanced_SaveXLSX();
-    }
-
-    public static void ConvertPDFtoExcelSimple() {
-        // 加载 PDF 文档
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-
-        // 实例化 ExcelSave 选项对象
-        ExcelSaveOptions excelsave = new ExcelSaveOptions();
-
-        // 以 XLS 格式保存输出
-        pdfDocument.save("PDFToXLS_out.xls", excelsave);
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-## 将 PDF 转换为带控制列的 XLS
+## 将 PDF 转换为 XLSX
 
-当将PDF转换为XLS格式时，输出文件中会在第一列添加一个空白列。在 [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) 类中使用 InsertBlankColumnAtFirst 选项来控制这一列。其默认值为 true。
+当 PDF 内容应转换为 Excel 2007+ XLSX 格式时，请使用此示例。
+
+1. 在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 创建 [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) 并将其格式设置为`XLSX`。
+1. 调用`document.save(outputFile.toString(), saveOptions)`，以便将 PDF 布局导出为 Office Open XML 工作簿。
+1. 保存输出电子表格文件。
 
 ```java
-    public static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst() {
-        // 加载PDF文档
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-        // 实例化 ExcelSave Option 对象
-        ExcelSaveOptions excelsave = new ExcelSaveOptions();
-        excelsave.setInsertBlankColumnAtFirst(false);
-        // 以XLS格式保存输出
-        pdfDocument.save("PDFToXLS_out.xls", excelsave);
+public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+        document.save(outputFile.toString(), saveOptions);
     }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## 将PDF转换为单个Excel工作表
+## 使用列控制将 PDF 转换为 XLSX
 
-当将包含许多页面的PDF文件导出到XLS时，每个页面将导出到Excel文件中的不同工作表。
- 这是因为 MinimizeTheNumberOfWorksheets 属性默认设置为 false。为了确保所有页面都导出到输出 Excel 文件中的一个单独工作表中，将 MinimizeTheNumberOfWorksheets 属性设置为 true。
+当在 PDF 到 Excel 转换期间应调整列处理时，请使用此示例。
+
+1. 在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 为 `XLSX` 输出创建 [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/)。
+1. 当需要额外的前导列来改进从 PDF 生成的工作表布局时，启用 `setInsertBlankColumnAtFirst(true)`。
+1. 调用`document.save(outputFile.toString(), saveOptions)`并写入转换后的XLSX文件。
 
 ```java
-    public static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets() {
-        // 加载PDF文档
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-
-        // 实例化 ExcelSave Option 对象
-        ExcelSaveOptions excelsave = new ExcelSaveOptions();
-        excelsave.setMinimizeTheNumberOfWorksheets(true);
-
-        // 以 XLS 格式保存输出
-        pdfDocument.save("PDFToXLS_out.xls", excelsave);
+public static void convertPdfToExcel2007ControlColumn(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+        saveOptions.setInsertBlankColumnAtFirst(true);
+        document.save(outputFile.toString(), saveOptions);
     }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## 转换为 XLSX 格式
+## 将 PDF 转换为单个 Excel 工作表
 
-默认情况下，Aspose.PDF 使用 XML Spreadsheet 2003 来存储数据。 为了将PDF文件转换为XLSX格式，Aspose.PDF有一个名为ExcelSaveOptions的类，其包含Format。一个[ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions)类的对象作为第二个参数传递给Document.Save(..)方法。
+Use this example when all PDF pages should be exported into one worksheet.
+
+1. 在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 为 `XLSX` 导出创建 [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/)。
+1. 启用`setMinimizeTheNumberOfWorksheets(true)`，以便将多个 PDF 页面合并为更少的工作表。
+1. 调用 `document.save(outputFile.toString(), saveOptions)` 并保存 XLSX 输出文件。
 
 ```java
-    public static void ConvertPDFtoExcelAdvanced_SaveXLSX() {
-        // 加载PDF文档
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-
-        // 实例化Excel保存选项对象
-        ExcelSaveOptions excelSave = new ExcelSaveOptions();
-        excelSave.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
-
-        // 以XLS格式保存输出
-        pdfDocument.save("PDFToXLS_out.xlsx", excelSave);
+public static void convertPdfToExcel2007SingleExcelWorksheet(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+        saveOptions.setMinimizeTheNumberOfWorksheets(true);
+        document.save(outputFile.toString(), saveOptions);
     }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 将 PDF 转换为 XLSM
+
+当 PDF 输出应保存为启用宏的 Excel 工作簿时，请使用此示例。
+
+1. 在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 创建[`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/)并将格式设置为`XLSM`。
+1. 调用`document.save(outputFile.toString(), saveOptions)`，以便将 PDF 内容导出到启用宏的工作簿容器。
+1. 保存 XLSM 文件。
+
+```java
+public static void convertPdfToExcel2007Macro(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSM);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 将 PDF 转换为 CSV
+
+当 PDF 表格内容应导出为 CSV 时，请使用此示例。
+
+1. 在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 创建[`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/)并将格式设置为`CSV`。
+1. 调用`document.save(outputFile.toString(), saveOptions)`，以便将 PDF 内容展平为以逗号分隔的文本输出。
+1. 保存生成的 CSV 文件。
+
+```java
+public static void convertPdfToExcel2007Csv(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.CSV);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 将 PDF 转换为 ODS
+
+当 PDF 内容应导出为 OpenDocument 电子表格格式时，请使用此示例。
+
+1. 在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 创建[`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/)并将格式设置为`ODS`。
+1. 调用`document.save(outputFile.toString(), saveOptions)`，以便以 OpenDocument 电子表格格式导出 PDF。
+1. 保存转换后的 ODS 文件。
+
+```java
+public static void convertPdfToOds(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

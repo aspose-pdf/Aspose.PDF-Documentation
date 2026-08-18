@@ -1,176 +1,311 @@
 ---
-title: 从PDF文档页面中搜索和获取文本
-linktitle: 搜索和获取文本
+title: 使用 Java 搜索和提取 PDF 文本
+linktitle: 搜索并获取文本
 type: docs
 weight: 60
-url: /zh/java/search-and-get-text-from-pdf/
-description: 本文解释了如何使用各种工具从PDF文档中搜索和获取文本。我们可以从特定或整个页面使用正则表达式进行搜索。
-lastmod: "2021-06-05"
+url: /java/search-and-get-text-from-pdf/
+description: 了解如何使用 Java 从 PDF 文档中搜索、检查和提取文本。
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在 Java 中搜索 PDF 文本并检查提取的片段
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 从 PDF 文档中搜索和提取文本。 It covers TextAbsorber and TextFragmentAbsorber, including region-based extraction, page-specific searches, regex and phrase matching, hyperlink insertion, styled-text inspection, and fragment highlighting.
 ---
+Aspose.PDF for Java 支持原始文本提取和带有坐标、样式和正则表达式匹配的片段级搜索。
 
-## 从PDF文档的所有页面中搜索和获取文本
+## 使用 TextAbsorber 从所有页面提取文本
 
-TextFragmentAbsorber允许您从PDF文档的所有页面中找到匹配特定短语的文本。
+当您需要从所有页面的选定文档区域中提取纯文本时，请使用此示例。
 
-要在整个文档中搜索文本，请调用[Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)集合的accept()方法。
- [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) 方法接受一个 TextFragmentAbsorber 对象作为参数，该对象返回一个 TextFragment 对象的集合。循环遍历所有的片段以获取其属性，例如文本、位置、XIndent、YIndent、FontName、FontSize、IsAccessible、IsEmbedded、IsSubset、ForegroundColor 等。
-
-以下代码片段展示了如何搜索整个文档并在控制台显示所有匹配项。
+1. 打开源 PDF 文档。
+1. 创建`TextExtractionOptions` 和基于区域的`TextSearchOptions`。
+1. 在所有页面上运行`TextAbsorber`并输出提取的文本。
 
 ```java
-// 打开文档
-Document pdfDocument = new Document("input.pdf");
+public static void textAbsorberSearch(Path inputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            TextExtractionOptions textExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+            TextSearchOptions textSearchOptions = new TextSearchOptions(new Rectangle(0, 0, 842, 250, true));
+            TextAbsorber absorber = new TextAbsorber(textExtractionOptions, textSearchOptions);
 
-// 创建 TextAbsorber 对象以查找输入搜索短语的所有实例
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("sample");
-
-// 接受所有页面的吸收器
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// 将提取的文本片段放入集合
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// 循环遍历片段
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    System.out.println("文本 :- " + textFragment.getText());
-    System.out.println("位置 :- " + textFragment.getPosition());
-    System.out.println("X缩进 :- " + textFragment.getPosition().getXIndent());
-    System.out.println("Y缩进 :- " + textFragment.getPosition().getYIndent());
-    System.out.println("字体 - 名称 :- " + textFragment.getTextState().getFont().getFontName());
-    System.out.println("字体 - 是否可访问 :- " + textFragment.getTextState().getFont().isAccessible());
-    System.out.println("字体 - 是否嵌入 - " + textFragment.getTextState().getFont().isEmbedded());
-    System.out.println("字体 - 是否子集 :- " + textFragment.getTextState().getFont().isSubset());
-    System.out.println("字体大小 :- " + textFragment.getTextState().getFontSize());
-    System.out.println("前景色 :- " + textFragment.getTextState().getForegroundColor());
-}
+            document.getPages().accept(absorber);
+            System.out.println("Text fragments found: " + absorber.getText());
+        }
+    }
 ```
 
-要在特定页面上搜索文本并获取与其关联的属性，请提供页面索引：
+## 使用 TextAbsorber 从一页中提取文本
+
+当纯文本提取应限制在一页时，请使用此示例。
+
+1. 打开源 PDF 文档。
+1. 使用目标区域配置文本提取和搜索选项。
+1. 在所选页面上运行`TextAbsorber`并输出结果。
 
 ```java
-// 接受文档第一页的吸收器
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber);
-```
+public static void textAbsorberSearchPage(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextExtractionOptions textExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+        TextSearchOptions textSearchOptions = new TextSearchOptions(new Rectangle(0, 0, 842, 250, true));
+        TextAbsorber absorber = new TextAbsorber(textExtractionOptions, textSearchOptions);
 
-## 从PDF页面搜索和获取文本片段
-
-要在文档的所有页面上搜索文本片段，请获取文档的TextFragment对象。
-
-TextFragmentAbsorber允许您从PDF文档的所有页面中找到匹配特定短语的文本。要在整个文档中搜索文本，请调用[Pages](https://reference.aspose.com/pdf//java/com.aspose.pdf/pagecollection)集合的[accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber)方法。[accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber)方法接受一个TextFragmentAbsorber对象作为参数，该对象返回一个TextFragment对象的集合。
-
-{{% alert color="primary" %}}
-
-当从文档中获取到TextFragmentCollection集合后，循环遍历它以获取每个TextFragment对象的TextSegmentCollection集合。
- 在那之后，你可以获取单独的 TextSegment 对象的属性。
-
-{{% /alert %}}
-
-以下代码片段展示了如何在所有页面上搜索文本段。
-
-```java
-// 打开文档
-Document pdfDocument = new Document("input.pdf");
-
-// 创建 TextAbsorber 对象以找到输入搜索短语的所有实例
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("sample");
-
-// 接受文档第一页的吸收器
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// 将提取的文本片段获取到集合中
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// 遍历文本片段
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    // 遍历文本段
-    for (TextSegment textSegment : (Iterable<TextSegment>) textFragment.getSegments()) {
-        System.out.println("Text :- " + textSegment.getText());
-        System.out.println("Position :- " + textSegment.getPosition());
-        System.out.println("XIndent :- " + textSegment.getPosition().getXIndent());
-        System.out.println("YIndent :- " + textSegment.getPosition().getYIndent());
-        System.out.println("Font - Name :- " + textSegment.getTextState().getFont().getFontName());
-        System.out.println("Font - IsAccessible :- " + textSegment.getTextState().getFont().isAccessible());
-        System.out.println("Font - IsEmbedded - " + textSegment.getTextState().getFont().isEmbedded());
-        System.out.println("Font - IsSubset :- " + textSegment.getTextState().getFont().isSubset());
-        System.out.println("Font Size :- " + textSegment.getTextState().getFontSize());
-        System.out.println("Foreground Color :- " + textSegment.getTextState().getForegroundColor());
+        document.getPages().get_Item(2).accept(absorber);
+        System.out.println("Text fragments found: " + absorber.getText());
     }
 }
 ```
 
-要搜索特定文本段并获取相关属性，请指定您要搜索的页面的页面索引：
+## 检查文档中的所有文本片段
+
+当您需要文本内容以及字体、位置和颜色元数据时，请使用此示例。
+
+1. 打开源 PDF 文档。
+1. 在所有页面上运行`TextFragmentAbsorber`。
+1. 迭代片段并输出其元数据。
 
 ```java
-// 接受文档第一页的吸收器。
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber);
-```
+public static void textFragmentAbsorberSearch(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+        document.getPages().accept(absorber);
 
-## 使用正则表达式搜索和获取页面上的文本
-
-TextFragmentAbsorber帮助您根据正则表达式搜索和检索文档中所有页面的文本。
-
-要从文档中搜索和获取文本：
-
-1. 将搜索词作为正则表达式传递给TextFragmentAbsorber构造函数。
-2. 设置TextFragmentAbsorber对象的TextSearchOptions属性。
-   此属性需要一个TextSearchOptions对象：在创建新对象时将true传递给其构造函数。
-3. 要从所有页面检索匹配的文本，请调用[Pages](https://reference.aspose.com/pdf//java/com.aspose.pdf/pagecollection)集合的[accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber)方法。
-
-   TextFragmentAbsorber返回一个TextFragmentCollection，其中包含所有符合正则表达式指定条件的片段。
-
-以下代码片段展示了如何在文档中搜索所有页面并根据正则表达式获取文本。
-
-```java
-// 打开一个文档
-Document pdfDocument = new Document("source.pdf");
-
-// 创建 TextAbsorber 对象来查找输入搜索短语的所有实例
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // 例如 1999-2000
-
-// 设置文本搜索选项以指定正则表达式的使用
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.setTextSearchOptions(textSearchOptions);
-
-// 接受文档第一页的吸收器
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// 将提取的文本片段放入集合
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// 遍历片段
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    System.out.println("文本 :- " + textFragment.getText());
-    System.out.println("位置 :- " + textFragment.getPosition());
-    System.out.println("X偏移 :- " + textFragment.getPosition().getXIndent());
-    System.out.println("Y偏移 :- " + textFragment.getPosition().getYIndent());
-    System.out.println("字体 - 名称 :- " + textFragment.getTextState().getFont().getFontName());
-    System.out.println("字体 - 是否可访问 :- " + textFragment.getTextState().getFont().isAccessible());
-    System.out.println("字体 - 是否嵌入 - " + textFragment.getTextState().getFont().isEmbedded());
-    System.out.println("字体 - 是否子集 :- " + textFragment.getTextState().getFont().isSubset());
-    System.out.println("字体大小 :- " + textFragment.getTextState().getFontSize());
-    System.out.println("前景颜色 :- " + textFragment.getTextState().getForegroundColor());
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+            System.out.println("XIndent: " + fragment.getPosition().getXIndent());
+            System.out.println("YIndent: " + fragment.getPosition().getYIndent());
+            System.out.println("Font - Name: " + fragment.getTextState().getFont().getFontName());
+            System.out.println("Font - IsAccessible: " + fragment.getTextState().getFont().isAccessible());
+            System.out.println("Font - IsEmbedded: " + fragment.getTextState().getFont().isEmbedded());
+            System.out.println("Font - IsSubset: " + fragment.getTextState().getFont().isSubset());
+            System.out.println("Font Size: " + fragment.getTextState().getFontSize());
+            System.out.println("Foreground Color: " + fragment.getTextState().getForegroundColor());
+        }
+    }
 }
 ```
 
+## 在特定页面上搜索一个短语
 
-要在特定页面上搜索文本并获取其属性，请指定页面索引：
+当只应在选定页面上找到目标词时，请使用此示例。
+
+1. 打开源 PDF 文档。
+1. 使用目标短语创建`TextFragmentAbsorber`。
+1. 访问所选页面并输出匹配的片段位置。
 
 ```java
-// 接受文档第一页的吸收器。
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber)
+public static void textFragmentAbsorberSearchPage(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber("whale");
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
 ```
 
-为了在大小写中搜索字符串，可以考虑使用正则表达式。
+## 继续跨页面顺序搜索
+
+当您想要在从一页搜索移动到下一页时重复使用一个吸收器时，请使用此示例。
+
+1. 打开源 PDF 文档并创建可重复使用的吸收器。
+1. 搜索第一页并检查结果。
+1. 继续搜索其他页面并查看更新的匹配项。
 
 ```java
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("(?i)Line", new TextSearchOptions(true));
+public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
+    Document document = new Document(inputFile.toString());
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+    absorber.setPhrase("whale");
+
+    document.getPages().get_Item(1).accept(absorber);
+    for (TextFragment fragment : absorber.getTextFragments()) {
+        System.out.println("Text: " + fragment.getText());
+        System.out.println("Page: " + fragment.getPage().getNumber());
+        System.out.println("Position: " + fragment.getPosition());
+    }
+
+    System.out.println("--");
+
+    document.getPages().get_Item(2).accept(absorber);
+    absorber.visit(document);
+
+    for (TextFragment fragment : absorber.getTextFragments()) {
+        System.out.println("Text: " + fragment.getText());
+        System.out.println("Page: " + fragment.getPage().getNumber());
+        System.out.println("Position: " + fragment.getPosition());
+    }
+}
 ```
 
-示例：
+## 在选定的矩形内搜索短语
+
+当短语匹配应限制在一页上的某个区域时，请使用此示例。
+
+1. 打开源 PDF 文档。
+1. 使用目标短语和基于矩形的`TextSearchOptions` 创建`TextFragmentAbsorber`。
+1. 访问页面并输出匹配的片段位置。
 
 ```java
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[\\S]+");
+public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                "elephant", new TextSearchOptions(new Rectangle(0, 0, 842, 250, true)));
+
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
+```
+
+## 通过正则表达式搜索文本
+
+当应该通过正则表达式模式而不是固定短语找到匹配项时，请使用此示例。
+
+1. 打开源 PDF 文档。
+1. 创建启用正则表达式的`TextFragmentAbsorber`。
+1. 访问目标页面并输出匹配的片段。
+
+```java
+public static void textFragmentAbsorberSearchRegex(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                Pattern.compile("\\d+\\.\\d+"), new TextSearchOptions(true));
+
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
+```
+
+## 按正则表达式模式搜索短语列表
+
+当应在一次遍历中找到多个目标短语时，请使用此示例。
+
+1. 打开源 PDF 文档。
+1. 创建正则表达式模式数组并将其传递给`TextFragmentAbsorber`。
+1. 访问文档并检查分组的正则表达式结果。
+
+```java
+public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Pattern[] patterns = new Pattern[] {
+                Pattern.compile("whale"),
+                Pattern.compile("elephant")
+        };
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(patterns, new TextSearchOptions(true));
+        document.getPages().accept(absorber);
+
+        for (TextFragmentCollection fragments : absorber.getRegexResults().values()) {
+            for (TextFragment fragment : fragments) {
+                System.out.println("Text: " + fragment.getText());
+                System.out.println("Position: " + fragment.getPosition());
+            }
+        }
+    }
+}
+```
+
+## 查找文本并将其转换为超链接
+
+当需要突出显示匹配的单词并将其转换为可点击的链接时，请使用此示例。
+
+1. 打开源 PDF 文档。
+1. 启用正则表达式搜索来搜索目标单词。
+1. 更新文本样式、附加超链接并保存修改后的 PDF。
+
+```java
+public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber("whale|elephant");
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+        absorber.visit(document.getPages().get_Item(1));
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            fragment.getTextState().setForegroundColor(Color.getBlue());
+            fragment.getTextState().setUnderline(true);
+            fragment.setHyperlink(new WebHyperlink("https://en.wikipedia.org/wiki/" + fragment.getText()));
+        }
+
+        document.save(inputFile.toString().replace("in.pdf", "out.pdf"));
+    }
+}
+```
+
+## 按风格特征搜索文本
+
+当您需要根据粗体或不可见文本等格式检查片段时，请使用此示例。
+
+1. 打开源 PDF 文档。
+1. 在目标页面上运行`TextFragmentAbsorber`。
+1. 检查每个片段样式并输出匹配的条目。
+
+```java
+public static void textFragmentAbsorberSearchStyledText(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+        absorber.visit(document.getPages().get_Item(1));
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            if (fragment.getTextState().getFontStyle() == FontStyles.Bold) {
+                System.out.println("Bold: " + fragment.getText());
+            }
+            if (fragment.getTextState().isInvisible()) {
+                System.out.println("Invisible: " + fragment.getText());
+            }
+        }
+    }
+}
+```
+
+## 在渲染的页面预览中突出显示搜索结果
+
+当文本匹配应与渲染的页面图像相关以进行目视检查时，请使用此示例。
+
+1. 创建具有所需分辨率的 PNG 设备。
+1. 使用 `TextFragmentAbsorber` 搜索每个页面并将页面渲染到图像流。
+1. 写入页面预览图像并输出片段坐标以供检查。
+
+```java
+public static void textFragmentAbsorberSearchAndHighlight(Path inputFile) throws Exception {
+    int resolution = 150;
+    PngDevice pngDevice = new PngDevice(new Resolution(resolution, resolution));
+
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(Pattern.compile("[\\S]+"));
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+
+        for (int pageNumber = 1; pageNumber <= document.getPages().size(); pageNumber++) {
+            Page page = document.getPages().get_Item(pageNumber);
+            page.accept(absorber);
+
+            try (ByteArrayOutputStream stream = new ByteArrayOutputStream()) {
+                pngDevice.process(page, stream);
+                Path output = Path.of(inputFile.toString().replace("_in.pdf", page.getNumber() + "_out.png"));
+                Files.write(output, stream.toByteArray());
+            }
+
+            for (TextFragment textFragment : absorber.getTextFragments()) {
+                Rectangle pageRect = page.getPageRect(true);
+                System.out.println("TextFragment = " + textFragment.getText()
+                        + " Page URY = " + pageRect.getURY()
+                        + " TextFragment URY = " + textFragment.getRectangle().getURY());
+            }
+        }
+    }
+}
 ```

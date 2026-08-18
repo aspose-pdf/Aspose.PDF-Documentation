@@ -1,216 +1,218 @@
 ---
-title: 添加 PDF 页眉和页脚
-linktitle: 添加页眉和页脚
+title: 在 Java 中添加 PDF 页眉和页脚
+linktitle: 向 PDF 添加页眉和页脚
 type: docs
-weight: 70
-url: /zh/java/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for Java 允许您使用 TextStamp 类向 PDF 文件添加页眉和页脚。
-lastmod: "2021-06-05"
+weight: 50
+url: /java/add-headers-and-footers-of-pdf-file/
+description: 了解如何使用文本、图像和结构化内容在 Java 中向 PDF 文件添加页眉和页脚。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 将页眉和页脚添加到 PDF 文件
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 向 PDF 文档添加页眉和页脚。它涵盖文本、页码、HTML、图像、表格以及基于 LaTeX 的页眉和页脚内容。
 ---
+Aspose.PDF for Java 允许您将 `HeaderFooter` 对象分配给每个页面并使用不同的内容类型填充它们。
 
-PDF 印章通常用于合同、报告和机密材料，以证明文件已被审阅并标记为“已读”、“合格”或“机密”等。本文将向您展示如何使用 **Aspose.PDF for Java** 向 PDF 文档添加图像印章和文字印章。
+## 添加文本页眉和页脚
 
-如果逐行阅读上面的代码片段，您必须会发现语法和代码逻辑非常易于理解。
+当您需要在每个页面的顶部和底部显示简单的文本内容时，请使用此示例。
 
-## 在 PDF 文件的页眉中添加文字
-
-您可以使用 [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) 类在 PDF 文件的页眉中添加文字。
- TextStamp 类提供了创建基于文本的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页眉中添加文本，您需要创建一个 Document 对象和一个使用所需属性的 TextStamp 对象。之后，您可以调用 Page 的 AddStamp 方法将文本添加到 PDF 的页眉中。
-
-您需要设置 TopMargin 属性，以便它调整 PDF 页眉区域中的文本。您还需要将 HorizontalAlignment 设置为 Center 和 VerticalAlignment 设置为 Top。
-
-以下代码片段展示了如何使用 Java 在 PDF 文件的页眉中添加文本。
+1. 创建 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 对象并添加文本片段。
+1. 配置页眉和页脚的边距。
+1. 将它们应用到源 PDF 的每个页面并保存结果。
 
 ```java
-package com.aspose.pdf.examples;
+public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Demo header"));
 
-import com.aspose.pdf.*;
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Demo footer"));
 
-public class ExampleAddPDFHeaderandFooter {
-    // 文档目录的路径。
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-    public static void AddingTextInHeaderOfPDFFile() {
-
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
-
-        // 创建页眉
-        TextStamp textStamp = new TextStamp("Header Text");
-
-        // 设置印章的属性
-        textStamp.setTopMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Top);
-
-        // 在所有页面上添加页眉
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        // 保存更新后的文档
-        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## 在 PDF 文件的页脚添加文本
-
-您可以使用 TextStamp 类在 PDF 文件的页脚添加文本。TextStamp 类提供了创建基于文本的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页脚添加文本，您需要使用所需属性创建一个 Document 对象和一个 TextStamp 对象。之后，您可以调用 Page 的 AddStamp 方法在 PDF 的页脚添加文本。
-
-以下代码片段向您展示了如何使用 Java 在 PDF 文件的页脚添加文本。
-
-```java
-    public static void AddingTextInFooterOfPDFFile() {
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
-        // 创建页脚
-        TextStamp textStamp = new TextStamp("Footer Text");
-        // 设置印章的属性
-        textStamp.setBottomMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // 在所有页面上添加页脚
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
-        }
-        _dataDir = _dataDir + "TextinFooter_out.pdf";
-        // 保存更新的 PDF 文件
-        pdfDocument.save(_dataDir);
-    }
-```
-
-
-## 在 PDF 文件的页眉中添加图像
-
-您可以使用 [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) 类在 PDF 文件的页眉中添加图像。Image Stamp 类提供了创建基于图像的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页眉中添加图像，您需要使用所需的属性创建一个 Document 对象和一个 Image Stamp 对象。之后，您可以调用 Page 的 [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) 方法将图像添加到 PDF 的页眉中。
-
-```java
-public static void AddingImageInHeaderOfPDFFile() {
-
-// 打开文档
-Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
-
-// 创建页眉
-ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
-
-// 设置印章的属性
-imageStamp.setTopMargin(10);
-imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-imageStamp.setVerticalAlignment(VerticalAlignment.Top);
-// 在所有页面上添加页眉
-for (Page page : pdfDocument.getPages()) {
-page.addStamp(imageStamp);
-}
-
-_dataDir = _dataDir + "ImageInHeader_out.pdf";
-
-// 保存更新后的 PDF 文件
-pdfDocument.save(_dataDir);
 }
 ```
 
+## 添加页眉和页脚以及页码
 
-以下代码片段演示了如何使用 Java 在 PDF 文件的页眉中添加图像。
+当页眉或页脚应显示当前页码和总页数时，请使用此示例。
 
-## 在 PDF 文件的页脚中添加图像
-
-您可以使用 Image Stamp 类在 PDF 文件的页脚中添加图像。Image Stamp 类提供了创建基于图像的印章所需的属性，例如字体大小、字体样式和字体颜色等。为了在页脚中添加图像，您需要使用所需属性创建一个 Document 对象和一个 Image Stamp 对象。之后，您可以调用 Page 的 AddStamp 方法将图像添加到 PDF 的页脚中。
-
-{{% alert color="primary" %}}
-
-您需要设置 BottomMargin 属性，以便在 PDF 的页脚区域调整图像。您还需要将 [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) 设置为 `Center` 和 [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) 设置为 `Bottom`。
-
-{{% /alert %}}
-
-以下代码片段演示了如何使用 Java 在 PDF 文件的页脚中添加图像。
+1. 使用页码占位符创建 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 对象。
+1. 配置两个对象的边距。
+1. 将它们应用到每个页面并保存更新的 PDF。
 
 ```java
-    public static void AddingImageInFooterOfPDFFile() {
+public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Page $p from $P"));
 
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
 
-        // 创建页脚
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // 设置图章的属性
-        imageStamp.setBottomMargin(10);
-        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // 在所有页面上添加页脚
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(imageStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        _dataDir = _dataDir + "ImageInFooter_out.pdf";
-
-        // 保存更新后的 PDF 文件
-        pdfDocument.save(_dataDir);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## 在一个 PDF 文件中添加不同的页眉
+## 添加 HTML 页眉和页脚
 
-我们知道可以通过使用 TopMargin 或 Bottom Margin 属性在文档的页眉/页脚部分添加 TextStamp，但有时我们可能需要在单个 PDF 文档中添加多个页眉/页脚。
- **Aspose.PDF for Java** 解释了如何实现这一点。
+当页眉和页脚内容应包含内联 HTML 格式时，请使用此示例。
 
-为了满足这一要求，我们将创建单独的 [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) 对象（对象的数量取决于所需的页眉/页脚数量）并将它们添加到 PDF 文档中。我们还可以为单个印章对象指定不同的格式信息。在以下示例中，我们创建了一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 对象和三个 [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) 对象，然后我们使用 Page 的 [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) 方法将文本添加到 PDF 的页眉部分。以下代码片段向您展示了如何使用 Aspose.PDF for Java 将图像添加到 PDF 文件的页脚中。
+1. 创建 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 对象并添加 [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) 内容。
+1. 配置放置边距。
+1. 为每个页面分配页眉和页脚并保存文档。
 
 ```java
-public static void AddingDifferentHeadersInOnePDFFile() {
+public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
 
-        // 打开源文档
-        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
 
-        // 创建三个印章
-        TextStamp stamp1 = new TextStamp("Header 1");
-        TextStamp stamp2 = new TextStamp("Header 2");
-        TextStamp stamp3 = new TextStamp("Header 3");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // 设置印章对齐方式（将印章放在页面顶部，水平居中）
-        stamp1.setVerticalAlignment (VerticalAlignment.Top);
-        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
-        // 指定字体样式为粗体
-        stamp1.getTextState().setFontStyle(FontStyles.Bold);
-        // 设置文本前景色信息为红色
-        stamp1.getTextState().setForegroundColor(Color.getRed());
-        // 指定字体大小为14
-        stamp1.getTextState().setFontSize(14);
-
-        // 现在我们需要将第二个印章对象的垂直对齐方式设置为顶部
-        stamp2.setVerticalAlignment(VerticalAlignment.Top);
-        // 设置印章的水平对齐信息为居中对齐
-        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
-        // 设置印章对象的缩放因子
-        stamp2.setZoom (10);
-
-        // 设置第三个印章对象的格式
-        // 指定印章对象的垂直对齐信息为顶部
-        stamp3.setVerticalAlignment(VerticalAlignment.Top);
-        // 设置印章对象的水平对齐信息为居中对齐
-        stamp3.setHorizontalAlignment (HorizontalAlignment.Center);
-        // 设置印章对象的旋转角度
-        stamp3.setRotateAngle(35);
-        // 设置粉色为印章的背景色
-        stamp3.getTextState().setBackgroundColor (Color.getPink());
-        
-        // 将印章的字体信息更改为 Verdana
-        stamp3.getTextState().setFont (FontRepository.findFont("Verdana"));
-        // 第一个印章添加到第一页；
-        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
-        // 第二个印章添加到第二页；
-        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
-        // 第三个印章添加到第三页。
-        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
-
-        _dataDir = _dataDir + "multiheader_out.pdf";
-
-        // 保存更新后的 PDF 文件
-        pdfDocument.save(_dataDir);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
     }
+}
+```
 
+## 添加图像页眉和页脚
+
+当页眉和页脚应在每个页面上显示图像时，请使用此示例。
+
+1. 创建 [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) 对象并将其添加到页眉和页脚容器中。
+1. 配置边距并将容器分配给每个页面。
+1. 保存更新的 PDF。
+
+```java
+public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
+    Image headerImage = new Image();
+    headerImage.setFile(imageFile.toString());
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(headerImage);
+
+    Image footerImage = new Image();
+    footerImage.setFile(imageFile.toString());
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(footerImage);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            MarginInfo margin = new MarginInfo();
+            margin.setLeft(50);
+            header.setMargin(margin);
+            footer.setMargin(margin);
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 添加基于表格的页眉和页脚
+
+当页眉和页脚内容应使用表格布局和文本样式时，请使用此示例。
+
+1. 创建所需的文本样式和表格对象。
+1. 将表添加到 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 容器。
+1. 将页眉和页脚应用到每个页面并保存文档。
+
+```java
+public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
+    TextState textStateHeader = new TextState();
+    textStateHeader.setFont(FontRepository.findFont("Arial"));
+    textStateHeader.setFontSize(12);
+    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
+
+    TextState textStateFooter = new TextState();
+    textStateFooter.setFont(FontRepository.findFont("Arial"));
+    textStateFooter.setFontSize(12);
+    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
+
+    HeaderFooter header = new HeaderFooter();
+    HeaderFooter footer = new HeaderFooter();
+
+    Table tableHeader = new Table();
+    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
+    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
+
+    Table table = new Table();
+    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
+    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
+
+    header.getParagraphs().add(tableHeader);
+    footer.getParagraphs().add(table);
+    footer.getMargin().setLeft(150);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 添加 LaTeX 页眉和页脚
+
+当页眉和页脚应呈现 TeX 或 LaTeX 内容时使用此示例。
+
+1. 打开源 PDF 并确定总页数。
+1. 为每个页面的页眉和页脚创建 [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 内容。
+1. 分配内容并保存文档。
+
+```java
+public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int pageCount = document.getPages().size();
+        for (int i = 1; i <= pageCount; i++) {
+            HeaderFooter header = new HeaderFooter();
+            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
+
+            HeaderFooter footer = new HeaderFooter();
+            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
+
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
 }
 ```

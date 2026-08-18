@@ -1,43 +1,44 @@
 ---
-title: 连接 PDF 文件在 Ruby 中
+title: 在 Ruby 中连接 PDF 文件
+linktitle: 在 Ruby 中连接 PDF 文件
 type: docs
 weight: 10
-url: /zh/java/concatenate-pdf-files-in-ruby/
-lastmod: "2021-06-05"
+url: /java/concatenate-pdf-files-in-ruby/
+description: 使用 Ruby 和 Aspose.PDF 有效地将多个 PDF 合并到一个文档中。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 连接 PDF 文件
 
-要使用 **Aspose.PDF Java for Ruby** 连接 PDF 文件，只需调用 **ConcatenatePdfFiles** 模块。
+要使用 **Aspose.PDF Java for Ruby** 连接 PDF 文件，只需调用 **ConcatenatePdfFiles** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开目标文档
+# Open the target document
 
 pdf1 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# 打开源文档
+# Open the source document
 
 pdf2 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input2.pdf')
 
-# 将源文档的页面添加到目标文档
+# Add the pages of the source document to the target document
 
 pdf1.getPages().add(pdf2.getPages())
 
-# 保存连接后的输出文件（目标文档）
+# Save the concatenated output file (the target document)
 
 pdf1.save(data_dir+ "Concatenate_output.pdf")
 
-puts "新文档已保存，请检查输出文件"
+puts "New document has been saved, please check the output file"
 ```
 
 ## 下载运行代码
 
-从以下任意一个社交编码网站下载 **Concatenate PDF Files (Aspose.PDF)**:
+从以下任何社交编码网站下载**连接 PDF 文件 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)

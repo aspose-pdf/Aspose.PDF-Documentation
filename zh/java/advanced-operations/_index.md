@@ -2,35 +2,34 @@
 title: 高级操作
 linktitle: 高级操作
 type: docs
-weight: 70
-url: /zh/java/advanced-operations/
-description: 您不仅可以执行简单和容易的任务，还可以使用 Aspose.PDF for Java 应对更复杂的目标。
-lastmod: "2021-06-05"
+weight: 90
+url: /java/advanced-operations/
+description: 了解如何使用 Java 中的高级 PDF 功能，包括注释、表单、页面、表格、文本、图像、图层、矢量图形、签名和元数据。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Aspose.PDF for Java 中的高级 PDF 处理功能
+Abstract: 本节介绍使用 Aspose.PDF for Java 的高级 PDF 处理工作流程。它包括处理注释、表单、页面、表格、文本、图像、图层、矢量图形、可访问性、安全性、元数据、ZUGFeRD 附件以及复杂 PDF 自动化场景的其他文档级功能。
 ---
+高级操作部分对用于编辑、检查、保护和丰富现有 PDF 文档的 Java 工作流程进行了分组，超出了基本的创建、打开、保存、合并和拆分操作。
 
-**高级操作**是一个关于如何以编程方式处理现有 PDF 文件的部分，无论是使用 Aspose.PDF 创建的文档（如在[基本操作](/pdf/zh/java/basic-operations)中讨论的），还是使用 Adobe Acrobat、Google Docs、Microsoft Office、Open Office 或任何其他 PDF 制作工具创建的 PDF。
-
-您将学习不同的方法来：
-
-- [处理文档](/pdf/zh/java/working-with-documents/) - 压缩、拆分和合并文档，并对整个文档进行其他操作。
-- [处理页面](/pdf/zh/java/working-with-pages/) - 添加、移动或删除、裁剪页面，添加水印、印章。
-
-- [处理文本](/pdf/zh/java/working-with-text/) - 在 PDF 中添加、格式化、搜索和替换文本。
-- [处理图像](/pdf/zh/java/working-with-images/) - 在文档中插入、移除、提取图像。
-- [处理表格](/pdf/zh/java/working-with-tables/) - 在PDF中插入、装饰表格，提取表格数据。
-- [处理表单](/pdf/zh/java/working-with-forms/) - 处理交互式PDF文档，添加表单字段，提取数据。
-- [处理图形](/pdf/zh/java/graphs/) - 操作页面上的形状。
-- [处理XML](/pdf/zh/java/working-with-xml) - 基于XML结构构建PDF文档。
-- [导航和交互](/pdf/zh/java/navigation-and-interaction/) - 处理动作、书签、页面导航。
-- [注释](/pdf/zh/java/annotations/) - 注释允许用户在PDF页面上添加自定义内容。您可以添加、删除和修改PDF文档中的注释。
-- [附属物](/pdf/zh/java/artifacts/) - 处理PDF中的水印和其他特殊对象。
-- [无障碍访问]
- - [标记的 PDF](/pdf/zh/java/accessibility-tagged-pdf/) - 标记对于 PDF 的可访问性至关重要。Aspose.PDF 允许在 PDF 中添加标记，建立逻辑阅读顺序，并提供指示结构和类型的方法。
-- [附件](/pdf/zh/java/attachments/) - PDF 文档可能包含文件附件。这些附件可以是其他 PDF 文档或任何类型的文件，如音频文件、Microsoft Office 文档等。您将学习如何向 PDF 添加附件，获取附件的信息，将其保存到文件中，并使用 Java 程序化地从 PDF 中删除附件。
-- [PDF 中的元数据](/pdf/zh/java/pdf-file-metadata/) - 获取或设置文档中的元数据，处理 XMP 数据。
-- [安全和签名](/pdf/zh/java/securing-and-signing/) - 程序化地保护和签署您的 PDF 文档。
-- [打印文档](/pdf/zh/java/print-pdf-file/) - 在各种类型的应用程序中打印 PDF（WinForms、WPF 等）。
-- [操作符](/pdf/zh/java/operators/) - 在 PDF 中进行低级别的操作。
+- [处理文档](/pdf/java/working-with-documents/) - 压缩、分割和合并文档并对整个文档进行其他操作。
+- [使用页面](/pdf/java/working-with-pages/) - 添加、移动或删除、裁剪页面、添加水印、图章等。
+- [使用图像](/pdf/java/working-with-images/) - 从 PDF 文档中添加、提取或删除图像。
+- [附件](/pdf/java/attachments/) - 您将学习如何使用 Python 以编程方式在 PDF 中添加和删除附件。
+- [导航和交互](/pdf/java/navigation-and-interaction/) - 处理操作、书签、导航页面。
+- [注释](/pdf/java/annotations/) - 注释允许用户在 PDF 页面上添加自定义内容。您可以在 PDF 文档中添加、删除和修改注释。
+- [使用表格](/pdf/java/working-with-tables/) - 在 PDF 中插入、修饰表格，提取表格数据。
+- [使用表单](/pdf/java/working-with-forms/) - 处理交互 PDF 文档、添加表单字段、提取数据。
+- [处理文本](/pdf/java/working-with-text/) - 在 PDF 中添加、格式化、搜索和替换文本。
+- [比较PDF文档](/pdf/java/compare-pdf-documents/) - 可以比较PDF文档内容。
+- [PDF 中的元数据](/pdf/java/pdf-file-metadata/) - 获取或设置文档中的元数据，处理 XMP 数据。
+- [使用图形](/pdf/java/working-with-graphs/) - 操作页面上的形状。
+- [Artifacts](/pdf/java/artifacts/) - 处理 PDF 中的水印和其他特殊对象。
+- [使用 PDF 图层](/pdf/working-with-pdf-layers/) - 锁定图层、提取元素、拼合和合并 PDF 图层。
+- [保护和签名](/pdf/java/securing-and-signing/) - 以编程方式保护和签署您的 PDF 文档
+- [使用矢量图形](/pdf/java/working-with-vector-graphics/) - 操作 PDF 文档中的矢量图形。
+- [使用 ZUGFeRD](/pdf/java/working-with-zugferd/) - 处理符合 ZUGFeRD 的 PDF 文档。
+- [使用 PDF 操作符](/pdf/java/working-with-operators/) - 使用 PDF 操作符进行高级 PDF 操作。

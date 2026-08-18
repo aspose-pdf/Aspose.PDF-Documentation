@@ -1,44 +1,62 @@
 ---
-title: 从PDF文件中提取链接
+title: 用 Java 提取 PDF 链接
 linktitle: 提取链接
 type: docs
 weight: 30
-url: /zh/java/extract-links/
-description: 使用Java从PDF中提取链接。本主题向您解释如何使用AnnotationSelector类提取链接。
-lastmod: "2021-06-05"
+url: /java/extract-links/
+description: 了解如何使用 Java 从 PDF 文档中提取链接注释和超链接。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 从 PDF 文件中提取链接注释和 URI 目标
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 从 PDF 文档中提取链接注释。它展示了如何枚举页面上的链接注释、读取其页面索引和矩形以及从 GoToURIAction 实例中提取 URI 目标。
 ---
+您可以通过迭代页面注释并过滤 `AnnotationType.Link` 来检查 PDF 链接。
 
-## 从PDF文件中提取链接
+## 提取链接注释
 
-链接在PDF文件中表示为注释，因此要提取链接，需要提取所有[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation)对象。
+当您需要页面上链接注释的位置和页面信息时，请使用此示例。
 
-1. 创建一个[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)对象。
-2. 获取您想要从中提取链接的[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)。
-3. 使用[AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector)类从指定页面中提取所有[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation)对象。
-
-1. 将 [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) 对象传递给 Page 对象的 Accept 方法。
-1. 使用 [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) 对象的 [getSelected](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector#getSelected--) 方法，将所有选定的链接注释获取到一个 IList 对象中。
-
-以下代码片段向您展示如何从 PDF 文件中提取链接。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 迭代页面注释并过滤链接注释。
+1. 读取每个匹配链接的页面索引和矩形。
 
 ```java
-    public static void ExtractLinksFromThePDFFile() {        
-        // 加载 PDF 文件
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-           
-        AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Rectangle.getTrivial()));
-        page.accept(selector);
-        java.util.List<Annotation> list = selector.getSelected();
-        for(Annotation annot : list)
-        {
-            System.out.println("注释位置: " + annot.getRect());
+public static void extractLinkAnnotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                System.out.println("Page: " + linkAnnotation.getPageIndex()
+                        + ", location: " + linkAnnotation.getRect());
+            }
         }
-                
-        // 保存具有更新链接的文档
-        //document.save(_dataDir + "ExtractLinks_out.pdf");
     }
+}
+```
+
+## 提取超链接目标
+
+当您需要从 Web 链接注释中读取目标 URI 时，请使用此示例。
+
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 查找其操作为 [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) 的 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 对象。
+1. 打印每个超链接的页面索引和 URI 目标。
+
+```java
+public static void extractHyperlinks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    System.out.println("Page " + linkAnnotation.getPageIndex() + ", URI:" + action.getURI());
+                }
+            }
+        }
+    }
+}
 ```

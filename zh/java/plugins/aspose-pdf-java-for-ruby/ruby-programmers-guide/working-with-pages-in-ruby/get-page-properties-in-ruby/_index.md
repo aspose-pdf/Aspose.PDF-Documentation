@@ -1,35 +1,36 @@
 ---
-title: 获取 Ruby 中的页面属性
+title: 在 Ruby 中获取页面属性
+linktitle: 在 Ruby 中获取页面属性
 type: docs
 weight: 50
-url: /zh/java/get-page-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-ruby/
+description: 了解如何使用 Ruby 和 Aspose.PDF 检索 PDF 文件中的页面属性，以有效地管理和操作文档。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 获取页面属性
 
-要使用 **Aspose.PDF Java for Ruby** 获取 Pdf 文档的页面属性，只需调用 **GetPageProperties** 模块。
+要使用 **Aspose.PDF Java for Ruby** 获取 Pdf 文档的页面属性，只需调用 **GetPageProperties** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 创建 PDF 文档
+# Create PDF document
 
 pdf_document = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# 获取页面集合
+# get page collection
 
 page_collection = pdf_document.getPages()
 
-# 获取特定页面
+# get particular page
 
 pdf_page = page_collection.get_Item(1)
 
-# 获取页面属性
+#get page properties
 
 puts "ArtBox : Height = " + pdf_page.getArtBox().getHeight().to_s + ", Width = " + pdf_page.getArtBox().getWidth().to_s + ", LLX = " + pdf_page.getArtBox().getLLX().to_s + ", LLY = " + pdf_page.getArtBox().getLLY().to_s + ", URX = " + pdf_page.getArtBox().getURX().to_s + ", URY = " + pdf_page.getArtBox().getURY().to_s
 
@@ -48,9 +49,8 @@ puts "Page Number :- " + pdf_page.getNumber().to_s
 puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
-
 ## 下载运行代码
 
-从以下任一社交编码网站下载**获取页面属性 (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**获取页面属性 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

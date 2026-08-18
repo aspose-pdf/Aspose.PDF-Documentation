@@ -1,116 +1,96 @@
 ---
-title: 从 PDF 中提取标记内容
+title: 使用 Java 从 PDF 中提取标记内容
 linktitle: 提取标记内容
 type: docs
 weight: 20
-url: /zh/java/extract-tagged-content-from-tagged-pdfs/
-description: 本文解释了如何使用 Aspose.PDF for Java 从 PDF 文档中提取标记内容
-lastmod: "2021-06-05"
+url: /java/extract-tagged-content-from-tagged-pdfs/
+description: 了解如何使用 Aspose.PDF 检查 Java 中标记的 PDF 内容，包括标记内容访问、根结构访问和子结构元素。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+当您需要检查带标签的 PDF 的逻辑结构树并检查或更新结构元素元数据时，请使用这些 API。
 
-## 获取标记的 PDF 内容
+## 获取标记的内容元数据
 
-为了获取包含标记文本的 PDF 文档的内容，Aspose.PDF 提供了 [getTaggedContent()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getTaggedContent--) 方法，该方法属于 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 类。以下代码片段展示了如何获取包含标记文本的 PDF 文档的内容：
+当您需要访问标记的内容容器并想要定义基本文档元数据（例如标题和语言）时，请使用此示例。
 
-```java
-// 完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// 文档目录的路径。
-String path = "pathTodir";
-
-// 创建 Pdf 文档
-Document document = new Document();
-
-// 获取用于处理 TaggedPdf 的内容
-ITaggedContent taggedContent = document.getTaggedContent();
-
-//
-// 处理标记的 Pdf 内容
-//
-
-// 设置文档的标题和语言
-taggedContent.setTitle("Simple Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
-
-// 保存标记的 Pdf 文档
-document.save(path + "TaggedPDFContent.pdf");
-```
-
-
-## 获取根结构
-
-为了获取标记 PDF 文档的根结构，Aspose.PDF 提供了 [getStructTreeRootElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#getStructTreeRootElement--) 和 **getStructureElement()** 方法，通过 [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) 接口实现。以下代码片段展示了如何获取标记 PDF 文档的根结构：
+1. 创建一个新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 从文档中获取 [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) 对象。
+1. 设置标记的内容元数据并保存输出文件。
 
 ```java
-// 有关完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// 文档目录的路径。
-String path = "pathTodir";
-// 创建 Pdf 文档
-Document document = new Document();
-
-// 获取用于处理 TaggedPdf 的内容
-ITaggedContent taggedContent = document.getTaggedContent();
-
-// 设置文档的标题和语言
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
-
-// 属性 StructTreeRootElement 和 RootElement 用于访问
-// PDF 文档的 StructTreeRoot 对象和根结构元素（文档结构元素）。
-StructTreeRootElement structTreeRootElement = taggedContent.getStructTreeRootElement();
-StructureElement rootElement = taggedContent.getRootElement();
-```
-
-
-## 访问子元素
-
-为了访问标记 PDF 文档的子元素，Aspose.PDF 提供了 **ElementList** 类。以下代码片段展示了如何访问标记 PDF 文档的子元素：
-
-```java
-// 有关完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-Java
-String path = "pathTodir";
-// 打开 Pdf 文档
-Document document = new Document( path +"StructureElements.pdf");
-
-// 获取用于处理 TaggedPdf 的内容
-ITaggedContent taggedContent = document.getTaggedContent();
-
-// 访问根元素
-ElementList elementList = taggedContent.getStructTreeRootElement().getChildElements();
-for (Element element : elementList)
-{
-    if (element instanceof StructureElement)
-    {
-        StructureElement structureElement =  (StructureElement)element;
-
-        // 获取属性
-        String title = structureElement.getTitle();
-        String language = structureElement.getLanguage();
-        String actualText = structureElement.getActualText();
-        String expansionText = structureElement.getExpansionText();
-        String alternativeText = structureElement.getAlternativeText();
+public static void getTaggedContent(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Simple Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
+        document.save(outputFile.toString());
     }
 }
+```
 
-// 访问根元素中第一个元素的子元素
-elementList = taggedContent.getRootElement().getChildElements().get_Item(1).getChildElements();
-for (Element element : elementList)
-{
-    if (element instanceof StructureElement)
-    {
-        StructureElement structureElement = (StructureElement)element;
+## 获取带标签的 PDF 的根结构
 
-        // 设置属性
-        structureElement.setTitle("title");
-        structureElement.setLanguage("fr-FR");
-        structureElement.setActualText("actual text");
-        structureElement.setExpansionText("exp");
-        structureElement.setAlternativeText("alt");
+此示例演示如何检查表示带标签的 PDF 的结构树的根对象。
+
+1. 创建一个新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并获取其标记内容。
+1. 设置所需的文档元数据。
+1. 读取并打印结构树根和逻辑根元素，然后保存文件。
+
+```java
+public static void getRootStructure(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
+
+        System.out.println("StructTreeRootElement: " + taggedContent.getStructTreeRootElement());
+        System.out.println("RootElement: " + taggedContent.getRootElement());
+
+        document.save(outputFile.toString());
     }
 }
+```
 
-// 保存标记的 Pdf 文档
-document.save( path +"AccessChildrenElements.pdf");
+## 访问和更新子结构元素
+
+当您需要迭代结构树中的子元素、检查其属性并更新选定的元数据时，请使用此示例。
+
+1. 打开标记为 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 的源。
+1. 从结构树根读取子元素并打印可用属性。
+1. 访问第一个根子元素的子元素，更新其元数据，然后保存文档。
+
+```java
+public static void accessChildElements(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+
+        ElementList elementList = taggedContent.getStructTreeRootElement().getChildElements();
+        for (Object element : elementList) {
+            if (element instanceof StructureElement structureElement) {
+                System.out.println("StructureElement properties - "
+                        + "title: " + structureElement.getTitle()
+                        + ", language: " + structureElement.getLanguage()
+                        + ", actual_text: " + structureElement.getActualText()
+                        + ", expansion_text: " + structureElement.getExpansionText()
+                        + ", alternative_text: " + structureElement.getAlternativeText());
+            }
+        }
+
+        Element firstChild = taggedContent.getRootElement().getChildElements().get_Item(1);
+        for (Object element : firstChild.getChildElements()) {
+            if (element instanceof StructureElement structureElement) {
+                structureElement.setTitle("title");
+                structureElement.setLanguage("fr-FR");
+                structureElement.setActualText("actual text");
+                structureElement.setExpansionText("exp");
+                structureElement.setAlternativeText("alt");
+            }
+        }
+
+        document.save(outputFile.toString());
+    }
+}
 ```

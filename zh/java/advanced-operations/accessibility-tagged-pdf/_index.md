@@ -1,24 +1,20 @@
 ---
-title: 使用无障碍和标记的PDF
-linktitle: 无障碍。标记PDF
+title: Java 中的辅助功能和标记 PDF
+linktitle: 可达性。带标签的 PDF
 type: docs
-weight: 120
-url: /zh/java/accessibility-tagged-pdf/
-description: Aspose.PDF提供创建标记PDF文档的功能，使您能够标记结构元素。了解更多关于如何获得无障碍PDF。
-lastmod: "2021-06-05"
+weight: 180
+url: /java/accessibility-tagged-pdf/
+description: 了解如何使用 Aspose.PDF 在 Java 中创建可访问的标记 PDF，包括 PDF/UA 结构、标记内容提取、结构属性和可访问表格。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+带标签的 PDF 文档提供语义结构，帮助屏幕阅读器和其他辅助技术正确解释标题、段落、链接、图形、表格、表格和阅读顺序。
 
-标记的PDF文档可以被残障人士访问。向PDF文件添加无障碍标签使屏幕阅读器和其他辅助技术更容易读取和浏览文档，包括目录、超链接、书签、替代文本等。
+当您需要用 Java 构建或检查可访问的 PDF 文档时，请使用此部分：
 
-Aspose.PDF提供了创建与PDF/UA标准（也称为“第508节”或“WCAG标准”）兼容的PDF文档的功能，并检查与这些标准的兼容性。
- 这些标准描述了文档内容的要求，以使其对残障人士和使用设备极其有限的用户更加友好和有用。当您使您的PDF文档可访问或创建标记的PDF时，这意味着添加标签、书签、替代文本和其他信息，使文件对视力或行动不便的用户可读和可导航。使用Aspose.PDF，现在可以创建有效且可访问的PDF文档。以下部分展示了如何添加标记内容以创建标记的PDF。
-
-本节涵盖以下主题：
-
-- [创建标记的PDF](/pdf/zh/java/create-tagged-pdf-documents/)
-- [从标记的PDF中提取标记内容](/pdf/zh/java/extract-tagged-content-from-tagged-pdfs/)
-- [设置结构元素属性](/pdf/zh/java/set-tagged-pdfs-element-properties/)
-- [在标记的PDF中处理表格](/pdf/zh/java/working-with-table-in-tagged-pdfs/)
+- [创建带标签的 PDF](/pdf/java/create-tagged-pdf/)
+- [从带标签的 PDF 中提取带标签的内容](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
+- [设置结构元素属性](/pdf/java/setting-structure-elements-properties/)
+- [使用带标签的 PDF 中的表格](/pdf/java/working-with-table-in-tagged-pdfs/)

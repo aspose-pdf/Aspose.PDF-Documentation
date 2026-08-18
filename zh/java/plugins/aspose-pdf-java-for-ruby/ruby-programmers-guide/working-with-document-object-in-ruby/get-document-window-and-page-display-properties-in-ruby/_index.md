@@ -1,80 +1,80 @@
 ---
-title: 获取文档窗口和页面显示属性在 Ruby 中
+title: 在 Ruby 中获取文档窗口和页面显示属性
+linktitle: 在 Ruby 中获取文档窗口和页面显示属性
 type: docs
 weight: 40
-url: /zh/java/get-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-document-window-and-page-display-properties-in-ruby/
+description: 使用 Ruby 和 Aspose.PDF 检索和自定义 PDF 文件中的文档窗口和页面显示属性。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 获取文档窗口和页面显示属性
 
-要使用 **Aspose.PDF Java for Ruby** 获取 PDF 文档的窗口和页面显示属性，只需调用 **GetDocumentWindow** 模块。
+要使用 **Aspose.PDF Java for Ruby** 获取 Pdf 文档的文档窗口和页面显示属性，只需调用 **GetDocumentWindow** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开一个 pdf 文档。
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# 获取不同的文档属性
+# Get different document properties
 
-# 文档窗口的位置 - 默认值: false
+# Position of document's window - Default: false
 
 puts "CenterWindow :- " + doc.getCenterWindow().to_s
 
-# 主要阅读顺序；确定页面的位置
+# Predominant reading order; determine the position of page
 
-# 当并排显示时 - 默认值: L2R
+# when displayed side by side - Default: L2R
 
 puts "Direction :- " + doc.getDirection().to_s
 
-# 是否窗口标题栏应显示文档标题。
+# Whether window's title bar should display document title.
 
-# 如果为 false，标题栏显示 PDF 文件名 - 默认值: false
+# If false, title bar displays PDF file name - Default: false
 
 puts "DisplayDocTitle :- " + doc.getDisplayDocTitle().to_s
 
-# 是否调整文档窗口的大小以适应
+# Whether to resize the document's window to fit the size of
 
-# 首次显示的页面大小 - 默认值: false
+# first displayed page - Default: false
 
 puts "FitWindow :- " + doc.getFitWindow().to_s
 
-# 是否隐藏查看器应用程序的菜单栏 - 默认值: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 puts "HideMenuBar :-" + doc.getHideMenubar().to_s
 
-# 是否隐藏查看器应用程序的工具栏 - 默认值: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 puts "HideToolBar :-" + doc.getHideToolBar().to_s
 
-# 是否隐藏 UI 元素如滚动条
+# Whether to hide UI elements like scroll bars
 
-# 并仅显示页面内容 - 默认值: false
+# and leaving only the page contents displayed - Default: false
 
 puts "HideWindowUI :-" + doc.getHideWindowUI().to_s
 
-# 文档的页面模式。在退出全屏模式时如何显示文档。
+# The document's page mode. How to display document on exiting full-screen mode.
 
 puts "NonFullScreenPageMode :-" + doc.getNonFullScreenPageMode().to_s
 
-# 页面布局，即单页，一列
+# The page layout i.e. single page, one column
 
 puts "PageLayout :-" + doc.getPageLayout().to_s
 
-# 打开文档时应如何显示。
+# How the document should display when opened.
 
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-
 ## 下载运行代码
 
-从以下任一社交编码网站下载**获取文档窗口和页面显示属性 (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**获取文档窗口和页面显示属性 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

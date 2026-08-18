@@ -1,16 +1,17 @@
 ---
-title: 在 PHP 中优化 PDF 文档以用于网络
+title: 使用 PHP 优化 Web PDF 文档
+linktitle: 使用 PHP 优化 Web PDF 文档
 type: docs
 weight: 60
-url: /zh/java/optimize-pdf-document-for-the-web-in-php/
-lastmod: "2021-06-05"
+url: /java/optimize-pdf-document-for-the-web-in-php/
+description: 了解如何使用 Aspose.PDF 在 PHP 中优化 PDF 文档，以提高 Web 性能并减小文件大小。
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - 优化 Web PDF
 
-## Aspose.PDF - 优化 PDF 以用于网络
+要使用 **Aspose.PDF Java for PHP** 优化 Web PDF 文档，只需调用 **Optimize** 类的 **optimize_web** 方法即可。
 
-要使用 **Aspose.PDF Java for PHP** 优化 PDF 文档以用于网络，只需调用 **Optimize** 类的 **optimize_web** 方法。
-
-PHP 代码
+PHP代码
 
 ```php
 
@@ -18,25 +19,25 @@ PHP 代码
 
 {
 
-    # 打开一个 pdf 文档。
+    # Open a pdf document.
 
     $doc = new Document($dataDir . "input1.pdf");
 
-    # 优化以用于网络
+    # Optimize for web
 
     $doc->optimize();
 
-    # 保存输出文档
+    #Save output document
 
     $doc->save($dataDir . "Optimized_Web.pdf");
 
-    print "已优化 PDF 以用于网络，请检查输出文件。" . PHP_EOL;
+    print "Optimized PDF for the Web, please check output file." . PHP_EOL;
 
-}    
+}В В В
 ```
 
 **下载运行代码**
 
-从以下任何一个社交编码网站下载 **Optimize PDF for Web (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**优化 Web PDF (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/Optimize.php)

@@ -1,38 +1,38 @@
 ---
-title: 获取 PDF 文件信息在 PHP 中
+title: 在 PHP 中获取 PDF 文件信息
+linktitle: 在 PHP 中获取 PDF 文件信息
 type: docs
 weight: 40
-url: /zh/java/get-pdf-file-information-in-php/
-lastmod: "2021-06-05"
+url: /java/get-pdf-file-information-in-php/
+description: 了解如何在 PHP 中使用 Aspose.PDF 检索有关 PDF 文件的详细信息，包括元数据和属性。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 获取 PDF 文件信息
 
-要使用 **Aspose.PDF Java for PHP** 获取 Pdf 文档的信息，只需调用 **GetPdfFileInfo** 类。
+要使用 **Aspose.PDF Java for PHP** 获取 Pdf 文档的文件信息，只需调用 **GetPdfFileInfo** 类即可。
 
-PHP 代码
+PHP代码
 
 ```php
 
-# 打开一个 pdf 文档。
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# 获取文档信息
+# Get document information
 $doc_info = $doc->getInfo();
 
-# 显示文档信息
-print "作者:-" . $doc_info->getAuthor();
-print "创建日期:-" . $doc_info->getCreationDate();
-print "关键词:-" . $doc_info->getKeywords();
-print "修改日期:-" . $doc_info->getModDate();
-print "主题:-" . $doc_info->getSubject();
-print "标题:-" . $doc_info->getTitle();
+# Show document information
+print "Author:-" . $doc_info->getAuthor();
+print "Creation Date:-" . $doc_info->getCreationDate();
+print "Keywords:-" . $doc_info->getKeywords();
+print "Modify Date:-" . $doc_info->getModDate();
+print "Subject:-" . $doc_info->getSubject();
+print "Title:-" . $doc_info->getTitle();
 
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载 **获取 PDF 文件信息 (Aspose.PDF)**：
-
+从以下任何一个社交编码网站下载**获取 PDF 文件信息 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetPdfFileInfo.php)

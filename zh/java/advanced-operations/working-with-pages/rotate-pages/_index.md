@@ -1,57 +1,35 @@
 ---
-title: 以编程方式旋转PDF页面
-linktitle: 旋转PDF页面
+title: 在 Java 中旋转 PDF 页面
+linktitle: 旋转 PDF 页面
 type: docs
-weight: 60
-url: /zh/java/rotate-pages/
-description: 使用Java更改页面方向并将页面内容调整到新页面方向。
-lastmod: "2021-06-05"
+weight: 110
+url: /java/rotate-pages/
+description: 了解如何在 Java 中旋转 PDF 页面和更改页面方向。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 旋转 PDF 页面
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 旋转 PDF 页面。该示例迭代文档中的所有页面，应用 90 度旋转，并保存更新的 PDF。
 ---
+当您需要更改一页或多页的方向时，请使用页面旋转 API。
 
-## 更改页面方向
+## 将所有页面旋转 90 度
 
-本文介绍如何更新或更改现有PDF文件中页面的方向。
+当文档中的每一页都应顺时针旋转时，请使用此示例。
 
-Aspose.PDF for Java具有将页面方向从横向更改为纵向，反之亦然的功能。要更改页面方向，请使用以下代码片段设置页面的[MediaBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#setMediaBox-com.aspose.pdf.Rectangle-)。
-
-您还可以通过使用Rotate()方法设置旋转角度来更改页面方向。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 迭代所有 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 对象并设置旋转值。
+1. 保存更新的 PDF。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleRotatePDFPages  {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void RotatePages() {
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "sample2.pdf");
-
-        for (Page page : pdfDocument.getPages())
-        {            
-            // Rectangle r = page.getMediaBox();
-            // double newHeight = r.getWidth();
-            // double newWidth = r.getHeight();
-            // double newLLX = r.getLLX();
-            // // 我们必须向上移动页面以补偿页面大小的变化
-            // // （页面的下边缘是0,0，信息通常从页面顶部放置。因此我们将下边缘向上移动旧高度与新高度之间的差异。
-            // double newLLY = r.getLLY() + (r.getHeight() - newHeight);
-            // page.setMediaBox (new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-            // // 有时我们还需要设置CropBox（如果在原始文件中设置了）
-            // page.setCropBox(new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-
-            // 设置页面的旋转角度
+public static void rotatePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
             page.setRotate(Rotation.on90);
         }
-
-        _dataDir = _dataDir + "ChangeOrientation_out.pdf";
-        // 保存输出文件
-        pdfDocument.save(_dataDir);
-    }    
+        document.save(outputFile.toString());
+    }
 }
 ```

@@ -1,64 +1,29 @@
 ---
-title: 从 PDF 文件中删除图像
+title: 使用 Java 从 PDF 文件中删除图像
 linktitle: 删除图像
 type: docs
 weight: 20
-url: /zh/java/delete-images-from-pdf-file/
-description: 本节解释如何使用 Aspose.PDF for Java 从 PDF 文件中删除图像。
-lastmod: "2021-06-05"
+url: /java/delete-images-from-pdf-file/
+description: 了解如何使用 Java 从 PDF 文件中删除嵌入图像。
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: 使用 Java 删除 PDF 文件中嵌入的图像
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 从 PDF 文档中删除图像。该示例通过页面图像集合中的索引从第一页中删除图像资源，然后保存修改后的文档。
 ---
+当您需要从 PDF 页面中删除嵌入的图像时，请使用页面图像资源集合。
 
-要从 PDF 文件中删除图像，只需使用 Images 集合的 delete(..) 方法。
+## 按索引删除嵌入图像
 
-1. 创建一个 Document 对象并打开输入 PDF 文件。
-1. 从 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 对象的 [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) 集合中获取包含图像的页面。
-1. 图像保存在页面的 [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) 集合中的 Images 集合中。
-1. 使用 Images 集合的 Delete 方法删除图像。
-1. 使用 Document 对象的 Save 方法保存输出。
-
-以下代码片段展示了如何从 PDF 文件中删除图像。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 访问目标[页面](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)上的图片资源。
+1. 通过索引从页面资源集合中删除目标图像。
+1. 保存更新的 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.Color;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.FontRepository;
-import com.aspose.pdf.FontStyles;
-import com.aspose.pdf.HorizontalAlignment;
-import com.aspose.pdf.PageNumberStamp;
-
-public class ExampleDeleteImages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ExampleAddPageNumber() {
-
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "PageNumberStamp.pdf");
-
-        // 创建页码印章
-        PageNumberStamp pageNumberStamp = new PageNumberStamp();
-
-        // 印章是否为背景
-        pageNumberStamp.setBackground(false);
-        pageNumberStamp.setFormat("Page # of " + pdfDocument.getPages().size());
-        pageNumberStamp.setBottomMargin (10);
-        pageNumberStamp.setHorizontalAlignment ( HorizontalAlignment.Center);
-        pageNumberStamp.setStartingNumber(1);
-        // 设置文本属性
-        pageNumberStamp.getTextState().setFont (FontRepository.findFont("Arial"));
-        pageNumberStamp.getTextState().setFontSize (14.0F);
-        pageNumberStamp.getTextState().setFontStyle (FontStyles.Bold);        
-        pageNumberStamp.getTextState().setForegroundColor (Color.getAqua());
-
-        // 将印章添加到特定页面
-        pdfDocument.getPages().get_Item(1).addStamp(pageNumberStamp);
-
-        _dataDir = _dataDir + "PageNumberStamp_out.pdf";
-        // 保存输出文档
-        pdfDocument.save(_dataDir);
-
+public static void deleteImage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().get_Item(1).getResources().getImages().delete(1);
+        document.save(outputFile.toString());
     }
 }
 ```

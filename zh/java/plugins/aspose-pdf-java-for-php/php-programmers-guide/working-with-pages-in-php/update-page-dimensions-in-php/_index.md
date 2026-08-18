@@ -1,41 +1,42 @@
 ---
 title: 在 PHP 中更新页面尺寸
+linktitle: 在 PHP 中更新页面尺寸
 type: docs
 weight: 90
-url: /zh/java/update-page-dimensions-in-php/
-lastmod: "2021-06-05"
+url: /java/update-page-dimensions-in-php/
+description: 了解如何使用 Aspose.PDF 在 PHP 中修改 PDF 文档中的页面尺寸，以实现更好的布局控制。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 更新页面尺寸
 
-要使用 **Aspose.PDF Java for PHP** 更新页面尺寸，只需调用 **UpdatePageDimensions** 类。
+要使用 **Aspose.PDF Java for PHP** 更新页面尺寸，只需调用 **UpdatePageDimensions** 类即可。
 
-PHP 代码
+PHP代码
 
 ```php
 
-# 打开目标文档
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# 获取页面集合
+# get page collection
 $page_collection = $pdf->getPages();
 
-# 获取特定页面
+# get particular page
 $pdf_page = $page_collection->get_Item(1);
 
-# 将页面大小设置为 A4 (11.7 x 8.3 英寸)，在 Aspose.PDF 中，1 英寸 = 72 点
-# 因此 A4 的尺寸以点为单位为 (842.4, 597.6)
+# set the page size as A4 (11.7 x 8.3 in) and in Aspose.PDF, 1 inch = 72 points
+# so A4 dimensions in points will be (842.4, 597.6)
 $pdf_page->setPageSize(597.6,842.4);
 
-# 保存新生成的 PDF 文件
+# save the newly generated PDF file
 $pdf->save($dataDir . "output.pdf");
 
-print "尺寸更新成功！" . PHP_EOL;
+print "Dimensions updated successfully!" . PHP_EOL;
 
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载 **更新页面尺寸 (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**更新页面尺寸 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/UpdatePageDimensions.php)

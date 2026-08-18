@@ -1,110 +1,77 @@
 ---
-title: 移动 PDF 页面
-linktitle: 移动页面
+title: 在 Java 中移动 PDF 页面
+linktitle: 移动 PDF 页面
 type: docs
-weight: 20
-url: /zh/java/move-pages/
-description: 尝试使用 Aspose.PDF for Java 将页面移动到 PDF 文件的所需位置或末尾。
-lastmod: "2021-06-05"
+weight: 100
+url: /java/move-pages/
+description: 了解如何使用 Java 在文档内或文档之间移动 PDF 页面。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 在文档之间移动 PDF 页面
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 移动 PDF 中的页面。它涵盖将单个页面或多页面移动到另一个文档，以及在同一 PDF 中重新定位页面。
 ---
+Aspose.PDF for Java 允许您在文档之间移动页面或在同一 PDF 内重新定位页面。
 
-## 将页面从一个 PDF 文档移动到另一个
+## 将页面移动到另一个文档
 
-本主题解释了如何使用 Java 将页面从一个 PDF 文档移动到另一个文档的末尾。
-要移动页面，我们应该：
+当应从源 PDF 中删除单个页面并将其保存到单独的文档中时，请使用此示例。
 
-1. 使用源 PDF 文件创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 类对象。
-1. 使用目标 PDF 文件创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 类对象。
-1. 从 [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) 集合中获取页面。
-1. 将页面添加到目标文档。
-1. 使用 Save 方法保存输出 PDF。
-1. 删除源文档中的页面。
-1. 使用 Save 方法保存源 PDF。
-
-
-以下代码片段向您展示如何移动一个页面。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并创建目标文档。
+1. 将目标页面添加到目标并将其从源中删除。
+1. 保存两个文档。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleMovePDFPages {
-
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-  public static void MovePage() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document();
-    Document dstDocument = new Document();
-    Page page = srcDocument.getPages().get_Item(2);
-    dstDocument.getPages().add(page);
-    // 保存输出文件
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(2);
-    srcDocument.save(dstFileName);
-  }
-```
-
-## 从一个PDF文档移动一批页面到另一个
-
-1. 使用源PDF文件创建一个[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)类对象。
-1. 使用目标PDF文件创建一个[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)类对象。
-1. 定义一个数组，其中包含要移动的页码。
-
-1. 遍历数组循环：
-    1. 从 [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) 集合中获取页面。
-    1. 将页面添加到目标文档。
-1. 使用 Save 方法保存输出 PDF。
-1. 使用数组删除源文档中的页面。
-1. 使用 Save 方法保存源 PDF。
-
-以下代码片段展示了如何在 PDF 文件末尾插入一个空白页面。
-
-```java
-  public static void MoveBunchPages() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document(srcFileName);
-    Document dstDocument = new Document();
-
-    Integer[] pages = { 1, 3 };
-    for (int pageIndex : pages) {
-      Page page = srcDocument.getPages().get_Item(pageIndex);
-      dstDocument.getPages().add(page);
+public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString());
+         Document anotherDocument = new Document()) {
+        anotherDocument.getPages().add(document.getPages().get_Item(2));
+        document.getPages().delete(2);
+        document.save(sourceOutputFile.toString());
+        anotherDocument.save(outputFile.toString());
     }
-    // 保存输出文件
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(pages);
-
-    srcDocument.save(dstFileName);
-  }
+}
 ```
 
-## 在当前 PDF 文档中移动页面到新位置
+## 将多个页面移动到另一个文档
 
-1. 使用源PDF文件创建一个[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)类对象。
-1. 从[PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection)集合中获取页面。
-1. 将页面添加到新位置（例如末尾）。
-1. 删除页面在先前的位置。
-1. 使用Save方法保存输出PDF。
+当需要将多个页面从源 PDF 传输到新文档时，请使用此示例。
+
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并创建目标文档。
+1. 将选定的页面复制到目标文档中。
+1. 从源中删除移动的页面并保存这两个文件。
 
 ```java
-  public static void MovePagesInOnePDF() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
+public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString());
+         Document dstDocument = new Document()) {
+        Integer[] pages = {1, 2};
+        for (Integer pageIndex : pages) {
+            dstDocument.getPages().add(srcDocument.getPages().get_Item(pageIndex));
+        }
+        dstDocument.save(outputFile.toString());
+        srcDocument.getPages().delete(pages);
+        srcDocument.save(sourceOutputFile.toString());
+    }
+}
+```
 
-    Document srcDocument = new Document(srcFileName);
-    Page page = srcDocument.getPages().get_Item(2);
-    srcDocument.getPages().add(page);
-    srcDocument.getPages().delete(2);
+## 在同一文档中移动页面
 
-    // 保存输出文件
-    srcDocument.save(dstFileName);
-  }
+当需要将页面重新定位到同一 PDF 中的新位置时，请使用此示例。
+
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将目标页面复制到新位置并删除原始页面条目。
+1. 保存重新排序的文档。
+
+```java
+public static void movePageInNewLocationInSameDocument(Path inputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString())) {
+        srcDocument.getPages().add(srcDocument.getPages().get_Item(2));
+        srcDocument.getPages().delete(2);
+        srcDocument.save(outputFile.toString());
+    }
 }
 ```

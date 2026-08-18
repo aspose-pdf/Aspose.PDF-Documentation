@@ -1,31 +1,32 @@
 ---
-title: 获取 PDF 页数在 PHP 中
+title: 在 PHP 中获取 PDF 的页数
+linktitle: 在 PHP 中获取 PDF 的页数
 type: docs
 weight: 40
-url: /zh/java/get-page-count-of-pdf-in-php/
-lastmod: "2021-06-05"
+url: /java/get-page-count-of-pdf-in-php/
+description: 了解如何使用 Aspose.PDF 在 PHP 中检索 PDF 文档的总页数进行文档分析。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 获取页数
 
-要使用 **Aspose.PDF Java for PHP** 获取 PDF 文档的页数，只需调用 **GetNumberOfPages** 类。
+要使用 **Aspose.PDF Java for PHP** 获取 Pdf 文档的页数，只需调用 **GetNumberOfPages** 类即可。
 
-PHP 代码
+PHP代码
 
 ```php
 
-# 创建 PDF 文档
+# Create PDF document
 
 $pdf = new Document($dataDir . 'input1.pdf');
 
 $page_count = $pdf->getPages()->size();
 
-print "页数:" . $page_count . PHP_EOL;
+print "Page Count:" . $page_count . PHP_EOL;
 
 ```
 
 **下载运行代码**
 
-从以下任一社会编码网站下载 **获取页数 (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**获取页数 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetNumberOfPages.php)

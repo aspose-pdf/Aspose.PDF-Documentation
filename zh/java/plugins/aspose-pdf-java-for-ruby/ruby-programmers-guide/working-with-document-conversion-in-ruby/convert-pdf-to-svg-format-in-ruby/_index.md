@@ -1,45 +1,44 @@
 ---
-title: 将 PDF 转换为 SVG 格式在 Ruby 中
+title: 在 Ruby 中将 PDF 转换为 SVG 格式
+linktitle: 在 Ruby 中将 PDF 转换为 SVG 格式
 type: docs
 weight: 50
-url: /zh/java/convert-pdf-to-svg-format-in-ruby/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-svg-format-in-ruby/
+description: 了解如何使用 Ruby 和 Aspose.PDF 将 PDF 文件转换为 SVG 格式，从而实现可扩展和可编辑的矢量图形。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 将 PDF 转换为 SVG
 
-要使用 **Aspose.PDF Java for Ruby** 将 PDF 转换为 SVG 格式，只需调用 **PdfToSvg** 模块。
+要使用 **Aspose.PDF Java for Ruby** 将 PDF 转换为 SVG 格式，只需调用 **PdfToSvg** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开目标文档
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# 实例化 SvgSaveOptions 对象
+# instantiate an object of SvgSaveOptions
 
 save_options = Rjb::import('com.aspose.pdf.SvgSaveOptions').new
 
-# 不将 SVG 图像压缩到 Zip 压缩包中
+# do not compress SVG image to Zip archive
 
 save_options.CompressOutputToZipArchive = false
 
-# 将输出保存为 XLS 格式
+# Save the output to XLS format
 
 pdf.save(data_dir + "Output.svg", save_options)
 
-puts "文档已成功转换"
+puts "Document has been converted successfully"
 ```
 
 ## 下载运行代码
 
-从以下任一社交编码网站下载 **Convert PDF to SVG Format (Aspose.PDF)**：
-
+从以下任何社交编码网站下载**将 PDF 转换为 SVG 格式 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftosvg.rb)

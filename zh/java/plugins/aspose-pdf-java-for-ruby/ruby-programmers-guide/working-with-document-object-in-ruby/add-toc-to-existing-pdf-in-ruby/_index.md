@@ -1,94 +1,94 @@
 ---
-title: 将目录添加到现有的PDF中使用Ruby
+title: 使用 Ruby 将目录添加到现有 PDF
+linktitle: 使用 Ruby 将目录添加到现有 PDF
 type: docs
 weight: 30
-url: /zh/java/add-toc-to-existing-pdf-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-ruby/
+description: 了解如何使用 Aspose.PDF 将目录添加到 Ruby 中的现有 PDF，以改进文档导航。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 添加目录
 
-<ins>要在Pdf文档中添加目录使用 **Aspose.PDF Java for Ruby**，只需调用 **AddToc** 模块。
+<ins>要使用 **Aspose.PDF Java for Ruby** 在 Pdf 文档中添加 TOC，只需调用 **AddToc** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开一个pdf文档。
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# 访问PDF文件的第一页
+# Get access to first page of PDF file
 
 toc_page = doc.getPages().insert(1)
 
-# 创建对象以表示目录信息
+# Create object to represent TOC information
 
 toc_info = Rjb::import('com.aspose.pdf.TocInfo').new
 
-title = Rjb::import('com.aspose.pdf.TextFragment').new("目录")
+title = Rjb::import('com.aspose.pdf.TextFragment').new("Table Of Contents")
 
 title.getTextState().setFontSize(20)
 
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# 设置目录的标题
+# Set the title for TOC
 
 toc_info.setTitle(title)
 
 toc_page.setTocInfo(toc_info)
 
-# 创建将用作目录元素的字符串对象
+# Create string objects which will be used as TOC elements
 
-titles = Array["第一页", "第二页"]
+titles = Array["First page", "Second page"]
 
 i = 0
 
 while i < 2
 
-    # 创建标题对象
+В В В  # Create Heading object
 
-    heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+В В В  heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
 
-    segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+В В В  segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
 
-    heading2.setTocPage(toc_page)
+В В В  heading2.setTocPage(toc_page)
 
-    heading2.getSegments().add(segment2)
+В В В  heading2.getSegments().add(segment2)
 
-    # 指定标题对象的目标页
+В В В  # Specify the destination page for heading object
 
-    heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
+В В В  heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-    # 目标页
+В В В  # Destination page
 
-    heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
+В В В  heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-    # 目标坐标
+В В В  # Destination coordinate
 
-    segment2.setText(titles[i])
+В В В  segment2.setText(titles[i])
 
-    # 将标题添加到包含目录的页面
+В В В  # Add heading to page containing TOC
 
-    toc_page.getParagraphs().add(heading2)
+В В В  toc_page.getParagraphs().add(heading2)
 
-    i +=1
+В В В  i +=1
 
 end
 
-# 保存PDF文档
+# Save PDF Document
 
 doc.save(data_dir + "TOC.pdf")
 
-puts "成功添加目录，请检查输出文件。"
+puts "Added TOC Successfully, please check the output file."
 ```
-
 
 ## <ins> **下载运行代码
 
-从以下任何一个社交编程网站下载 **Add TOC (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**添加目录 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

@@ -1,37 +1,38 @@
 ---
-title: 将PDF转换为SVG格式在PHP中
+title: 在 PHP 中将 PDF 转换为 SVG 格式
+linktitle: 在 PHP 中将 PDF 转换为 SVG 格式
 type: docs
 weight: 30
-url: /zh/java/convert-pdf-to-svg-format-in-php/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-svg-format-in-php/
+description: 了解如何在 PHP 中使用 Aspose.PDF 将 PDF 文档转换为 SVG 格式，以实现高质量矢量图形转换。
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - 将 PDF 转换为 SVG
 
-## Aspose.PDF - 将PDF转换为SVG
-
-要使用**Aspose.PDF Java for PHP**将PDF转换为SVG格式，只需调用**PdfToSvg**模块。
+要使用 **Aspose.PDF Java for PHP** 将 PDF 转换为 SVG 格式，只需调用 **PdfToSvg** 模块即可。
 
 PHP代码
 
 ```php
 
-# 打开目标文档
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# 实例化一个SvgSaveOptions对象
+# instantiate an object of SvgSaveOptions
 $save_options = new SvgSaveOptions();
 
-# 不将SVG图像压缩到Zip档案
+# do not compress SVG image to Zip archive
 $save_options->CompressOutputToZipArchive = false;
 
-# 将输出保存为XLS格式
+# Save the output to XLS format
 $pdf->save($dataDir . "Output.svg", $save_options);
 
-print "文档已成功转换" . PHP_EOL;
+print "Document has been converted successfully" . PHP_EOL;
 
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载**将PDF转换为SVG格式 (Aspose.PDF)**：
+从以下任何社交编码网站下载**将 PDF 转换为 SVG 格式 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToSvg.php)

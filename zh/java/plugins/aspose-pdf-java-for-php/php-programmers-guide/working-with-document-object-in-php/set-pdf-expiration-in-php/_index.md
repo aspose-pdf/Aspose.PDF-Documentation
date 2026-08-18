@@ -1,20 +1,21 @@
 ---
-title: 设置 PDF 到期时间在 PHP 中
+title: 在 PHP 中设置 PDF 过期时间
+linktitle: 在 PHP 中设置 PDF 过期时间
 type: docs
 weight: 80
-url: /zh/java/set-pdf-expiration-in-php/
-lastmod: "2021-06-05"
+url: /java/set-pdf-expiration-in-php/
+description: 了解如何在 PHP 中设置 PDF 文件的到期日期，并使用 Aspose.PDF 控制访问。
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - 设置 PDF 过期时间
 
-## Aspose.PDF - 设置 PDF 到期时间
+要使用 **Aspose.PDF Java for PHP** 设置 Pdf 文档的过期时间，只需调用 **SetExpiration** 类即可。
 
-要使用 **Aspose.PDF Java for PHP** 设置 PDF 文档的到期时间，只需调用 **SetExpiration** 类。
-
-PHP 代码
+PHP代码
 
 ```php
 
-# 打开一个 PDF 文档。
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 $javascript = new JavascriptAction(
@@ -24,18 +25,18 @@ $javascript = new JavascriptAction(
     today = new Date(today.getFullYear(), today.getMonth());
     expiry = new Date(year, month);
     if (today.getTime() > expiry.getTime())
-    app.alert('文件已过期。您需要一个新的。');");
+    app.alert('The file is expired. You need a new one.');");
 $doc->setOpenAction($javascript);
 
-# 保存更新的文档带有新信息
+# save update document with new information
 $doc->save($dataDir . "set_expiration.pdf");
 
-print "更新文档信息，请检查输出文件。" . PHP_EOL;
+print "Update document information, please check output file." . PHP_EOL;
 
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载 **Set PDF Expiration (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**设置 PDF 过期时间 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetExpiration.php)

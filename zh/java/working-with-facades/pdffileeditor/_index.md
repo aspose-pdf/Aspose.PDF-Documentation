@@ -1,15 +1,24 @@
 ---
-title: PdfFileEditor 类
+title: PdfFileEditor Class
+linktitle: PdfFileEditor Class
 type: docs
 weight: 10
-url: /zh/java/pdffileeditor-class/
-description: 本节解释如何使用 PdfFileEditor 类操作 Aspose.PDF Facades。
-lastmod: "2021-06-05"
+url: /java/pdffileeditor-class/
+description: Learn how to use the PdfFileEditor facade in Java to merge documents, split PDFs, rearrange pages, and adjust page layout.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Edit PDF document structure and page layout in Java with PdfFileEditor
+Abstract: This section explains how to use the PdfFileEditor facade in Aspose.PDF for Java for document-level editing workflows. The current Java example set covers merging files, splitting PDFs, extracting or deleting pages, inserting or appending pages, booklet and N-Up layout generation, and page layout adjustments.
 ---
+The Java `PdfFileEditorExamples` class demonstrates the main document-editing workflows exposed by the Facades API.
 
-- [合并 PDF 文档](/pdf/zh/java/concatenate-pdf-documents/)
-- [提取 PDF 页面](/pdf/zh/java/extract-pdf-pages/)
-- [在现有 PDF 中分页](/pdf/zh/java/page-break-in-existing-pdf/)
+Use this section to learn how to:
+
+- merge PDF files with the `concatenate` method
+- split a document from the beginning, to the end, or into single-page files
+- extract, delete, insert, and append pages
+- create booklet and N-Up output for printing
+- add margins, resize page contents, and insert page breaks

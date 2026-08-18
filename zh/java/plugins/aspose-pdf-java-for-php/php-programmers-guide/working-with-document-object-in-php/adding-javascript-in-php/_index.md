@@ -1,41 +1,41 @@
 ---
 title: 在 PHP 中添加 JavaScript
+linktitle: 在 PHP 中添加 JavaScript
 type: docs
 weight: 10
-url: /zh/java/adding-javascript-in-php/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-in-php/
+description: 了解如何使用 PHP 和 Aspose.PDF 将 JavaScript 添加到 PDF 文件以增强文档交互性。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 添加 JavaScript
 
-要在 Pdf 文档中使用 **Aspose.PDF Java for PHP** 添加 JavaScript，只需调用 **AddJavaScript** 类。
+要使用 **Aspose.PDF Java for PHP** 在 Pdf 文档中添加 JavaScript，只需调用 **AddJavaScript** 类即可。
 
-PHP 代码
+PHP代码
 
 ```php
-# 打开一个 pdf 文档。
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# 在文档级别添加 JavaScript
-# 使用所需的 JavaScript 语句实例化 JavascriptAction
+# Adding JavaScript at Document Level
+# Instantiate JavascriptAction with desried JavaScript statement
 $javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
-# 将 JavascriptAction 对象分配给文档的所需动作
+# Assign JavascriptAction object to desired action of Document
 $doc->setOpenAction($javaScript);
 
-# 在页面级别添加 JavaScript
+# Adding JavaScript at Page Level
 $doc->getPages()->get_Item(2)->getActions()->setOnOpen(new JavascriptAction("app.alert('page 2 is opened')"));
 $doc->getPages()->get_Item(2)->getActions()->setOnClose(new JavascriptAction("app.alert('page 2 is closed')"));
 
-# 保存 PDF 文档
+# Save PDF Document
 $doc->save($dataDir . "JavaScript-Added.pdf");
 
-print "成功添加 JavaScript，请检查输出文件。";
+print "Added JavaScript Successfully, please check the output file.";
 ```
-
 
 **下载运行代码**
 
-从以下任一社交编码网站下载**添加 JavaScript (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**添加 JavaScript (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddJavascript.php)

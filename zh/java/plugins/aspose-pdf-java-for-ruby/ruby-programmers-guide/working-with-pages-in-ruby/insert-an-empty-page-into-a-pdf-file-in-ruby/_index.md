@@ -1,40 +1,40 @@
 ---
-title: 在 Ruby 中将空白页插入 PDF 文件
+title: 在 Ruby 中将空页面插入 PDF 文件
+linktitle: 在 Ruby 中将空页面插入 PDF 文件
 type: docs
 weight: 70
-url: /zh/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/insert-an-empty-page-into-a-pdf-file-in-ruby/
+description: 了解如何使用 Ruby 和 Aspose.PDF 将空白页面插入 PDF 文档中的特定位置，以实现精确的文档管理。
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - 插入空白页
 
-要使用 **Aspose.PDF Java for Ruby** 将空白页插入到 PDF 文档中，只需调用 **InsertEmptyPage** 模块。
+要使用 **Aspose.PDF Java for Ruby** 将空页面插入 Pdf 文档中，只需调用 **InsertEmptyPage** 模块即可。
 
-Ruby 代码
+红宝石代码
 
 ```java
-
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 打开目标文档
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# 在 PDF 中插入空白页
+# insert a empty page in a PDF
 
 pdf.getPages().insert(1)
 
-# 保存连接后的输出文件（目标文档）
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "空白页插入成功!"
+puts "Empty page added successfully!"
 ```
 
 ## 下载运行代码
 
-从以下任一社交编码网站下载 **Insert an Empty Page (Aspose.PDF)**：
+从以下任何一个社交编码网站下载**插入空页 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypage.rb)

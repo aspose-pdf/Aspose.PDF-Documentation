@@ -1,51 +1,62 @@
 ---
-title: 从PDF文件中提取图像
+title: 使用 Java 从 PDF 文件中提取图像
 linktitle: 提取图像
 type: docs
 weight: 30
-url: /zh/java/extract-images-from-pdf-file/
-description: 本节介绍如何使用Java库从PDF文件中提取图像。
-lastmod: "2021-06-05"
+url: /java/extract-images-from-pdf-file/
+description: 了解如何使用 Java 从 PDF 文件中提取嵌入图像。
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: 使用 Java 从 PDF 文件中提取图像
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 从 PDF 文档中提取图像。它包括保存页面中的特定图像资源以及导出位于选定矩形区域内的图像。
 ---
+Aspose.PDF for Java 支持直接图像资源提取和基于位置的过滤。
 
-每个页面都有一个[资源](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources)集合，而该集合中包含了图像集合，其中保存了页面中的所有图像。 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage)对象可以获取图像集合中的指定图像。
+## 通过索引提取嵌入图像
 
-要从页面中提取图像：
+当您需要保存 PDF 页面中的特定图像资源时，请使用此示例。
 
-从图像集合中使用图像索引获取图像。
-使用[XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage)对象的save(..)方法保存提取的图像。
-
-以下代码片段向您展示如何从PDF文件中提取图像。
+1. 打开源 PDF [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 从页面资源访问目标 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/)。
+1. 将图像流保存到输出文件。
 
 ```java
-package com.aspose.pdf.examples;
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
+    }
+}
+```
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+## 从特定页面区域提取图像
 
-import com.aspose.pdf.*;
-import com.aspose.pdf.internal.html.rendering.image.ImageFormat;
+当仅应导出放置在选定矩形内的图像时，请使用此示例。
 
-public class ExampleExtractImages {
+1. 定义目标 [矩形](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 并打开源 PDF。
+1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 检查页面上的图像位置。
+1. 仅保存位置适合所选区域的图像。
 
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+```java
+public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {
+    Rectangle rectangle = new Rectangle(0, 0, 590, 590, true);
 
-    public static void ExtractImages() throws IOException {
-
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "ExtractImages.pdf");
-
-        // 提取特定图像
-        XImage xImage = pdfDocument.getPages().get_Item(1).getResources().getImages().get_Item(1);
-
-        FileOutputStream outputImage = new FileOutputStream(_dataDir + "output.jpg");
-
-        // 保存输出图像
-        xImage.save(outputImage, ImageFormat.Jpeg);
-        outputImage.close();
-
-        // 保存更新的PDF文件
-        pdfDocument.save(_dataDir + "ExtractImages_out.pdf");
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+        int index = 1;
+        for (ImagePlacement imagePlacement : absorber.getImagePlacements()) {
+            Point point1 = new Point(imagePlacement.getRectangle().getLLX(), imagePlacement.getRectangle().getLLY());
+            Point point2 = new Point(imagePlacement.getRectangle().getURX(), imagePlacement.getRectangle().getURX());
+            if (rectangle.contains(point1, true) && rectangle.contains(point2, true)) {
+                Path indexedOutputFile = Path.of(outputFile.toString().replace("index", String.valueOf(index)));
+                try (OutputStream outputImage = Files.newOutputStream(indexedOutputFile)) {
+                    imagePlacement.getImage().save(outputImage);
+                }
+                index++;
+            }
+        }
     }
 }
 ```

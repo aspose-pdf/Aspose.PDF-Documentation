@@ -1,113 +1,126 @@
 ---
-title: 从PDF中提取表格数据
-linktitle: 提取表格数据
+title: 使用 Java 从 PDF 表格中提取数据
+linktitle: 从表中提取数据
 type: docs
 weight: 40
-url: /zh/java/extract-data-from-table-in-pdf/
-description: 学习如何使用Aspose.PDF for Java从PDF中提取表格数据
-lastmod: "2021-06-05"
+url: /java/extract-data-from-table-in-pdf/
+description: 了解如何使用 Aspose.PDF for Java 从 PDF 文件中提取表格数据并导出检测到的表格以进行进一步处理。
+lastmod: "2026-06-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 如何通过Java从PDF表格中提取数据
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 从 PDF 文档中提取和处理表​​格数据。它展示了如何使用`TableAbsorber`扫描页面，从检测到的表中读取行和单元格，将提取限制到特定的注释区域，以及将结果导出到Excel。
 ---
+## 从 PDF 中提取表格
 
-## 以编程方式从PDF中提取表格
+使用`TableAbsorber` 查找每个页面上的表格并迭代行、单元格、文本片段和文本段。
 
-从PDF中提取表格并不是一项简单的任务，因为表格的创建方式多种多样。
-
-Aspose.PDF for Java 提供了一个工具，可以轻松检索表格。要提取表格数据，您应该执行以下步骤：
-
-1. 打开文档 - 实例化一个[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)对象；
-1. 创建一个[TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber)对象。
-
-1. 决定要分析哪些页面，并对所需页面应用[访问](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-)。表格数据将被扫描，结果将保存在[AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable)的列表中。我们可以通过[getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--)方法获取此列表。
-
-1. 要获取数据，遍历`TableList`并处理[吸收行](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow)列表和吸收单元格列表。我们可以通过调用[getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--)方法访问第一个列表，通过调用[getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--)访问第二个列表。
-
-1. 每个 [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) 包含 [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection)。您可以根据自己的需要处理它。
-
-以下示例显示了从所有页面中提取表格：
+1. 在 [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 迭代文档 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 对象，因为表是逐页检测的。
+1. 为每个页面创建一个[TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/)，并调用`visit(page)`来填充检测到的表列表。
+1. 迭代检测到的 [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/)、[AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/)、[AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/)、[TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 和 `TextSegment` 对象。
+1. 从片段内容构建提取的行文本并打印表数据。
 
 ```java
-public static void Extract_Table() {
-    // 加载源 PDF 文档
-    String filePath = "/home/aspose/pdf-examples/Samples/sample_table.pdf";
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
+public static void extractTablesFromPdf(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
+            TableAbsorber absorber = new TableAbsorber();
+            absorber.visit(page);
 
-    // 扫描页面
-    for (com.aspose.pdf.Page page : pdfDocument.getPages()) {
-        absorber.visit(page);
-        for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
-            System.out.println("表格");
-            // 迭代行列表
-            for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                // 迭代单元格列表
-                for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
-                    for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
-                        StringBuilder sb = new StringBuilder();
-                        for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
-                            sb.append(seg.getText());
-                        System.out.print(sb.toString() + "|");
+            for (AbsorbedTable table : absorber.getTableList()) {
+                System.out.println("Table");
+                for (AbsorbedRow row : table.getRowList()) {
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        if (rowText.length() > 0) {
+                            rowText.append("|");
+                        }
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder fragmentText = new StringBuilder();
+                            for (TextSegment segment : fragment.getSegments()) {
+                                fragmentText.append(segment.getText());
+                            }
+                            if (cellText.length() > 0) {
+                                cellText.append("|");
+                            }
+                            cellText.append(fragmentText);
+                        }
+                        rowText.append(cellText);
                     }
+                    System.out.println(rowText);
                 }
-                System.out.println();
             }
         }
     }
 }
 ```
 
+## 从特定标记区域中提取表格
 
-## 在PDF页面的特定区域提取表格
+此示例找到一个方形注释，将其矩形与每个检测到的表格进行比较，并仅输出标记区域内的表格。
 
-每个吸收的表格都有一个[矩形](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable#getRectangle--)属性，该属性描述了表格在页面上的位置。
-
-因此，如果您需要提取位于特定区域的表格，您必须处理特定的坐标。
-
-以下示例显示如何提取用方形注释标记的表格：
+1. 在 [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 获取目标[页面](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)并找到标记提取区域的正方形[注释](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/)。
+1. 创建一个 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) 并调用 `visit(page)` 来检测该页面上的表。
+1. 将每个检测到的 [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) [矩形](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 与注释矩形边界进行比较。
+1. 迭代匹配的 [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) 和 [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) 对象并重建行文本。
+1. 仅打印标记区域的表数据。
 
 ```java
-public static void Extract_Marked_Table() {
-    // 加载源PDF文档
-    String filePath = "<... 这里输入PDF文件路径 ...>";
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
+public static void extractTableFromSpecificArea(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
 
-    com.aspose.pdf.AnnotationSelector annotationSelector = new com.aspose.pdf.AnnotationSelector(
-            new com.aspose.pdf.SquareAnnotation(page, com.aspose.pdf.Rectangle.getTrivial()));
+        Annotation squareAnnotation = null;
+        for (Annotation annotation : page.getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Square) {
+                squareAnnotation = annotation;
+                break;
+            }
+        }
 
-    java.util.List<com.aspose.pdf.Annotation> list = annotationSelector.getSelected();
-    if (list.size() == 0) {
-        System.out.println("未找到标记的表格..");
-        return;
-    }
+        if (squareAnnotation == null) {
+            System.out.println("No square annotation found.");
+            return;
+        }
 
-    com.aspose.pdf.SquareAnnotation squareAnnotation = (com.aspose.pdf.SquareAnnotation) list.get(0);
+        TableAbsorber absorber = new TableAbsorber();
+        absorber.visit(page);
 
-    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
-    absorber.visit(page);
+        for (AbsorbedTable table : absorber.getTableList()) {
+            Rectangle tableRect = table.getRectangle();
+            Rectangle annotationRect = squareAnnotation.getRect();
 
-    for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
-        {
-            boolean isInRegion = (squareAnnotation.getRect().getLLX() < table.getRectangle().getLLX())
-                    && (squareAnnotation.getRect().getLLY() < table.getRectangle().getLLY())
-                    && (squareAnnotation.getRect().getURX() > table.getRectangle().getURX())
-                    && (squareAnnotation.getRect().getURY() > table.getRectangle().getURY());
+            boolean isInRegion = annotationRect.getLLX() < tableRect.getLLX()
+                    && annotationRect.getLLY() < tableRect.getLLY()
+                    && annotationRect.getURX() > tableRect.getURX()
+                    && annotationRect.getURY() > tableRect.getURY();
 
             if (isInRegion) {
-                for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                    {
-                        for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
-                            for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
-                                StringBuilder sb = new StringBuilder();
-                                for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
-                                    sb.append(seg.getText());
-                                System.out.print(sb.toString() + "|");
-                            }
+                for (AbsorbedRow row : table.getRowList()) {
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        if (rowText.length() > 0) {
+                            rowText.append("|");
                         }
-                        System.out.println();
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder fragmentText = new StringBuilder();
+                            for (TextSegment segment : fragment.getSegments()) {
+                                fragmentText.append(segment.getText());
+                            }
+                            if (cellText.length() > 0) {
+                                cellText.append("|");
+                            }
+                            cellText.append(fragmentText);
+                        }
+                        rowText.append(cellText);
                     }
+                    System.out.println(rowText);
                 }
             }
         }
@@ -115,23 +128,19 @@ public static void Extract_Marked_Table() {
 }
 ```
 
+## 将表格导出到 Excel
 
-## 从 PDF 提取表格数据并存储到 CSV 文件
-
-以下示例展示了如何提取表格并将其存储为 CSV 文件。要了解如何将 PDF 转换为 Excel 电子表格，请参阅 [Convert PDF to Excel](/pdf/zh/java/convert-pdf-to-excel/) 文章。
+1. 在 [文档](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例中打开源 PDF。
+1. 创建 [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) 用于导出。
+1. 将 Excel 输出格式设置为`XLSX`，以便将检测到的表布局写入 Excel 工作簿。
+1. 调用`document.save(outputFile.toString(), excelSave)`将文档导出为Excel格式。
 
 ```java
-public static void Extract_Table_Save_CSV()
-{
-    String filePath = "/home/admin1/pdf-examples/Samples/sample_table.pdf";
-    // 加载 PDF 文档
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-    // 实例化 ExcelSaveOption 对象
-    com.aspose.pdf.ExcelSaveOptions excelSave = new com.aspose.pdf.ExcelSaveOptions();
-    excelSave.setFormat(com.aspose.pdf.ExcelSaveOptions.ExcelFormat.CSV);
-
-    // 以 XLS 格式保存输出
-    pdfDocument.save("PDFToXLS_out.xlsx", excelSave);
+public static void exportTablesToExcel(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions excelSave = new ExcelSaveOptions();
+        excelSave.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+        document.save(outputFile.toString(), excelSave);
+    }
 }
 ```

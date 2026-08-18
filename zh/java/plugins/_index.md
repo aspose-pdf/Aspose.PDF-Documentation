@@ -1,21 +1,22 @@
 ---
-title: 来自Java的插件
+title: 来自 Java 的插件
+linktitle: 来自 Java 的插件
 type: docs
 weight: 100
-url: /zh/java/plugins/
-lastmod: "2021-06-05"
+url: /java/plugins/
+description: 使用插件增强 Aspose.PDF for Java。了解如何使用其他工具和集成来扩展 PDF 处理功能。
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+## 本节的文章
 
-## 本节中的文章
-
-- [Aspose.PDF Java用于Struts 1.3](/pdf/zh/java/aspose-pdf-java-for-struts-1-3/)
-- [Aspose.PDF Java用于Ruby](/pdf/zh/java/aspose-pdf-java-for-ruby/)
-- [Aspose.PDF Java用于IntelliJ IDEA - Maven](/pdf/zh/java/aspose-pdf-java-for-intellij-idea-maven/)
-- [Aspose.PDF Java用于Python](/pdf/zh/java/aspose-pdf-java-for-python/)
-- [Aspose.PDF Java用于PHP](/pdf/zh/java/aspose-pdf-java-for-php/)
-- [Aspose.PDF Java用于Jython](/pdf/zh/java/aspose-pdf-java-for-jython/)
-- [Aspose.PDF Java用于NetBeans - Maven](/pdf/zh/java/aspose-pdf-java-for-netbeans-maven/)
-- [Aspose.PDF Java在Eclipse中使用Maven](/pdf/zh/java/aspose-pdf-java-using-maven-for-eclipse/)
+- [Aspose.PDF Java for Struts 1.3](/pdf/java/aspose-pdf-java-for-struts-1-3/)
+- [Aspose.PDF Java for Ruby](/pdf/java/aspose-pdf-java-for-ruby/)
+- [Aspose.PDF Java for IntelliJ IDEA - Maven](/pdf/java/aspose-pdf-java-for-intellij-idea-maven/)
+- [Aspose.PDF Java for Python](/pdf/java/aspose-pdf-java-for-python/)
+- [Aspose.PDF Java for PHP](/pdf/java/aspose-pdf-java-for-php/)
+- [Aspose.PDF Java for Jython](/pdf/java/aspose-pdf-java-for-jython/)
+- [Aspose.PDF Java for NetBeans - Maven](/pdf/java/aspose-pdf-java-for-netbeans-maven/)
+- [Aspose.PDF Java 使用 Maven for Eclipse](/pdf/java/aspose-pdf-java-using-maven-for-eclipse/)

@@ -1,296 +1,705 @@
 ---
-title: PDF 中的文本格式化
-linktitle: PDF 中的文本格式化
+title: 用 Java 格式化 PDF 文本
+linktitle: PDF 中的文本格式
 type: docs
-weight: 30
-url: /zh/java/text-formatting-inside-pdf/
-description: 本页解释了如何在 PDF 文件中格式化文本。这包括添加行缩进、添加文本边框、添加下划线文本、在添加的文本周围添加边框、浮动框内容的文本对齐等。
-lastmod: "2021-06-05"
+weight: 70
+url: /java/text-formatting-inside-pdf/
+description: 了解如何使用 Java 中的间距、注释、列表、多列布局和样式选项来格式化 PDF 文档中的文本。
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 设置 PDF 文件内文本的格式和样式
+Abstract: 本文介绍如何使用 Aspose.PDF for Java 格式化 PDF 文档中的文本。它涵盖行间距、字符间距、项目符号和编号列表、脚注和尾注、内联段落内容、多列布局、强制分页符和自定义制表位。
 ---
+Aspose.PDF for Java 提供了用于间距、列表、注释、内联布局和多列组合的文本格式控件。
 
-## 如何向 PDF 添加行缩进
+## 设置简单行距
 
-Aspose.PDF for Java 为 [TextFormattingOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions) 类提供了 SubsequentLinesIndent 属性。可以在使用 TextFragment 和段落集合的 PDF 生成场景中指定行缩进。
+当段落文本应使用固定行距值时，请使用此示例。
 
-请使用以下代码片段来使用该属性：
+1. 创建新的 PDF 文档并添加页面。
+1. 加载或准备源文本并创建`TextFragment`。
+1. 设置行距，将片段添加到页面，然后保存文档。
 
 ```java
-public static void AddLineIndentToPDF() {
-        // 创建新的文档对象
-        Document document = new Document();
-        Page page = document.getPages().add();
+public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exception {
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
 
-        TextFragment text = new TextFragment(
-                "A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog. A quick brown fox jumped over the lazy dog.");
+            Path loremPath = dataDir.resolve("lorem.txt");
+            String text = Files.exists(loremPath) ? Files.readString(loremPath) : "Lorem ipsum text not found.";
 
-        // 初始化文本片段的 TextFormattingOptions，并指定
-        // SubsequentLinesIndent 值
-        TextFormattingOptions textOptions = new TextFormattingOptions();
-        textOptions.setSubsequentLinesIndent(20);
-        text.getTextState().setFormattingOptions(textOptions);
+            TextFragment textFragment = new TextFragment(text);
+            textFragment.getTextState().setFontSize(12);
+            textFragment.getTextState().setLineSpacing(16);
+            page.getParagraphs().add(textFragment);
 
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line2");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line3");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line4");
-        page.getParagraphs().add(text);
-
-        text = new TextFragment("Line5");
-        page.getParagraphs().add(text);
-
-        document.save(_dataDir + "SubsequentIndent_out.pdf");
+            document.save(outputFile.toString());
+        }
     }
 ```
 
+## 将行距模式与自定义字体进行比较
 
-## 如何添加文字边框
+当应使用同一字体的不同格式模式测试行间距时，请使用此示例。
 
-以下代码片段展示了如何使用 TextBuilder 并设置 TextState 的 DrawTextRectangleBorder 方法为文本添加边框：
+1. 创建新的 PDF 文档并添加页面。
+1. 加载自定义字体并准备两个具有不同行距模式的片段。
+1. 将两个片段添加到页面并保存 PDF。
 
 ```java
-public static void AddTextBorder() {
-    // 创建新的文档对象
-    Document pdfDocument = new Document();
-    // 获取特定页面
-    Page pdfPage = pdfDocument.getPages().add();
-    // 创建文本片段
-    TextFragment textFragment = new TextFragment("main text");
-    textFragment.setPosition(new Position(100, 600));
-    // 设置文本属性
-    textFragment.getTextState().setFontSize(12);
-    textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    textFragment.getTextState().setBackgroundColor (Color.getLightGray());
-    textFragment.getTextState().setForegroundColor (Color.getRed());
-    // 使用 setStrokingColor 为文本矩形周围绘制边框（描边）
-    textFragment.getTextState().setStrokingColor (Color.getDarkRed());
-    // 使用 setDrawTextRectangleBorder 方法将值设置为 true
-    textFragment.getTextState().setDrawTextRectangleBorder(true);
-    TextBuilder tb = new TextBuilder(pdfPage);
-    tb.appendText(textFragment);
-    // 保存文档
-    pdfDocument.save(_dataDir + "PDFWithTextBorder_out.pdf");
+public static void specifyLineSpacingSpecificCase(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        Path fontFile = dataDir.resolve("HPSimplified.ttf");
+        Path loremPath = dataDir.resolve("lorem.txt");
+        String text = Files.exists(loremPath) ? Files.readString(loremPath) : "Lorem ipsum text not found.";
+
+        try (InputStream fontStream = Files.newInputStream(fontFile)) {
+            Font font = FontRepository.openFont(fontStream, FontTypes.TTF);
+
+            TextFragment fragment1 = new TextFragment(text);
+            fragment1.getTextState().setFont(font);
+            fragment1.getTextState().setFormattingOptions(new TextFormattingOptions());
+            fragment1.getTextState().getFormattingOptions().setLineSpacing(TextFormattingOptions.LineSpacingMode.FontSize);
+            page.getParagraphs().add(fragment1);
+
+            TextFragment fragment2 = new TextFragment(text);
+            fragment2.getTextState().setFont(font);
+            fragment2.getTextState().setFormattingOptions(new TextFormattingOptions());
+            fragment2.getTextState().getFormattingOptions().setLineSpacing(TextFormattingOptions.LineSpacingMode.FullSize);
+            page.getParagraphs().add(fragment2);
+        }
+
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 使用文本片段设置字符间距
 
-## 如何添加下划线文本
+当相同的文本应以不同的字符间距值显示时，请使用此示例。
 
-以下代码片段展示了在创建新的PDF文件时如何添加下划线文本。
+1. 创建新的 PDF 文档并添加页面。
+1. 使用辅助方法针对多个间距值构建文本片段。
+1. 将片段添加到页面并保存文档。
 
 ```java
-public static void AddUnderlineText(){
-    // 创建文档对象
-    Document pdfDocument = new Document();
-    // 向PDF文档添加页面
-    Page page = pdfDocument.getPages().add();
-    // 为第一页创建TextBuilder
-    TextBuilder tb = new TextBuilder(page);
-    // 带有示例文本的TextFragment
-    TextFragment fragment = new TextFragment("带下划线装饰的文本");
-    // 设置TextFragment的字体
-    fragment.getTextState().setFont (FontRepository.findFont("Arial"));
-    fragment.getTextState().setFontSize (10);
-    // 将文本格式设置为下划线
-    fragment.getTextState().setUnderline(true);
-    // 指定TextFragment需要放置的位置
-    fragment.setPosition (new Position(10, 800));
-    // 将TextFragment添加到PDF文件
-    tb.appendText(fragment);
+public static void characterSpacingUsingTextFragment(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-    // 保存生成的PDF文档。
-    pdfDocument.save(_dataDir + "AddUnderlineText_out.pdf");
+        page.getParagraphs().add(makeCharacterSpacingFragment(2.0f));
+        page.getParagraphs().add(makeCharacterSpacingFragment(1.0f));
+        page.getParagraphs().add(makeCharacterSpacingFragment(0.75f));
+
+        document.save(outputFile.toString());
+    }
+}
+
+private static TextFragment makeCharacterSpacingFragment(float spacing) {
+    TextFragment fragment = new TextFragment("Sample Text with character spacing");
+    fragment.getTextState().setFont(FontRepository.findFont("Arial"));
+    fragment.getTextState().setFontSize(14);
+    fragment.getTextState().setCharacterSpacing(spacing);
+    return fragment;
 }
 ```
 
+## 设置文本段落内的字符间距
 
-## 如何在添加的文本周围添加边框
+当应在有界文本段落内应用字符间距时，请使用此示例。
 
-您可以控制添加文本的外观和感觉。下面的示例显示了如何通过在添加的文本周围绘制一个矩形来添加边框。了解更多关于 [PdfContentEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor) 类的信息。
+1. 创建新的 PDF 文档并添加页面。
+1. 创建一个带有目标矩形和环绕选项的`TextParagraph`。
+1. 附加样式文本片段并保存 PDF。
 
 ```java
-public static void AddBorderAroundAddedText() {
-    PdfContentEditor editor = new PdfContentEditor();
-    editor.bindPdf(_dataDir + "input.pdf");
-    LineInfo lineInfo = new LineInfo();
-    lineInfo.setLineWidth(2);
-    lineInfo.setVerticeCoordinate (new float[] { 0, 0, 100, 100, 50, 100 });
-    lineInfo.setVisibility(true);
-    editor.createPolygon(lineInfo, 1, new java.awt.Rectangle(0, 0, 0, 0), "");
+public static void characterSpacingUsingTextParagraph(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-    // 保存生成的 PDF 文档。
-    editor.save(_dataDir + "AddingBorderAroundAddedText_out.pdf");
+        TextBuilder builder = new TextBuilder(page);
+        TextParagraph paragraph = new TextParagraph();
+        paragraph.setRectangle(new Rectangle(100, 700, 500, 750, true));
+        paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
+
+        TextFragment fragment = new TextFragment("Sample Text with character spacing");
+        fragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment.getTextState().setFontSize(14);
+        fragment.getTextState().setCharacterSpacing(2.0f);
+
+        paragraph.appendLine(fragment);
+        builder.appendParagraph(paragraph);
+        document.save(outputFile.toString());
+    }
 }
 ```
 
-## 如何添加换行符
+## 使用 HTML 创建项目符号列表
 
-TextFragment 不支持文本内部的换行符。
- 然而，为了添加带有换行符的文本，请使用 TextFragment 和 TextParagraph：
+当应从 HTML 标记生成无序列表格式时，请使用此示例。
 
-- 在 TextFragment 中使用 "\r\n" 或 Environment.NewLine，而不是单个“\n”；
-- 创建 TextParagraph 对象。它将添加带有行拆分的文本；
-- 使用 TextParagraph.AppendLine 添加 TextFragment；
-- 使用 TextBuilder.AppendParagraph 添加 TextParagraph。
-请使用下面的代码片段。
+1. 创建新的 PDF 文档并添加页面。
+1. 构建 HTML 列表字符串。
+1. 将其添加为 `HtmlFragment` 并保存文档。
 
 ```java
-public static void AddNewLineFeed() {        
-    Document pdfDocument = new Document();
-    Page page = pdfDocument.getPages().add();
-
-    // 初始化包含所需换行符标记的文本的新 TextFragment
-    TextFragment textFragment = new TextFragment("申请人姓名: " + System.lineSeparator() + " Joe Smoe");
-
-    // 如有必要，设置文本片段属性
-    textFragment.getTextState().setFontSize (12);
-    textFragment.getTextState().setFont(FontRepository.findFont("DejaVu Serif"));
-    textFragment.getTextState().setBackgroundColor (Color.getLightGray());
-    textFragment.getTextState().setForegroundColor (Color.getRed());
-
-    // 创建 TextParagraph 对象
-    TextParagraph par = new TextParagraph();
-
-    // 将新的 TextFragment 添加到段落
-    par.appendLine(textFragment);
-
-    // 设置段落位置
-    par.setPosition (new Position(100, 600));
-
-    // 创建 TextBuilder 对象
-    TextBuilder textBuilder = new TextBuilder(page);
-    // 使用 TextBuilder 添加 TextParagraph
-    textBuilder.appendParagraph(par);
-
-    // 保存生成的 PDF 文档。
-    pdfDocument.save(_dataDir + "AddNewLineFeed_out.pdf");
+public static void createBulletListHtmlVersion(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String htmlList = "<ul><li>First item in the list</li>"
+                + "<li>Second item with more text to demonstrate wrapping behavior.</li>"
+                + "<li>Third item</li><li>Fourth item</li></ul>";
+        page.getParagraphs().add(new HtmlFragment(htmlList));
+        document.save(outputFile.toString());
+    }
 }
 ```
 
-## 如何添加删除线文本
+## 使用 HTML 创建编号列表
 
-TextState 类提供了设置 PDF 文档中放置的 TextFragments 格式的功能。您可以使用此类将文本格式设置为粗体、斜体、下划线，并且从此版本开始，API 提供了将文本格式标记为删除线的功能。请尝试使用以下代码片段添加带有删除线格式的 TextFragment。
+当应从 HTML 标记生成有序列表格式时，请使用此示例。
 
-请使用完整的代码片段：
+1. 创建新的 PDF 文档并添加页面。
+1. 构建有序的 HTML 列表字符串。
+1. 将其添加为 `HtmlFragment` 并保存文档。
 
 ```java
-public static void AddStrikeOutText(){
-    // 打开文档
-    Document pdfDocument = new Document();
-    // 获取特定页面
-    Page pdfPage = (Page)pdfDocument.getPages().add();
-
-    // 创建文本片段
-    TextFragment textFragment = new TextFragment("main text");
-    textFragment.setPosition (new Position(100, 600));
-
-    // 设置文本属性
-    textFragment.getTextState().setFontSize(12);
-    textFragment.getTextState().setFont(FontRepository.findFont("DejaVu Serif"));
-    textFragment.getTextState().setBackgroundColor(Color.getLightGray());
-    textFragment.getTextState().setForegroundColor(Color.getRed());
-    // 使用 setStrikeOut 方法启用删除线文本
-    textFragment.getTextState().setStrikeOut(true);
-    // 将文本标记为粗体
-    textFragment.getTextState().setFontStyle(FontStyles.Bold);
-
-    // 创建 TextBuilder 对象
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // 将文本片段追加到 PDF 页面
-    textBuilder.appendText(textFragment);
-
-    // 保存生成的 PDF 文档。
-    pdfDocument.save(_dataDir + "AddStrikeOutText_out.pdf");        
+public static void createNumberedListHtmlVersion(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String htmlList = "<ol><li>First item in the list</li>"
+                + "<li>Second item with more text to demonstrate wrapping behavior.</li>"
+                + "<li>Third item</li><li>Fourth item</li></ol>";
+        page.getParagraphs().add(new HtmlFragment(htmlList));
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 使用 LaTeX 创建项目符号列表
 
-## 应用渐变着色到文本
+当应从 TeX 标记呈现无序列表格式时，请使用此示例。
 
-在文本编辑场景中，API 的文本格式化功能已得到进一步增强，现在您可以在 PDF 文档中添加带有图案颜色空间的文本。com.aspose.pdf.Color 类通过引入新方法 `setPatternColorSpace` 得到了进一步增强，该方法可用于指定文本的着色颜色。这个新方法为文本添加了不同的渐变着色，例如：轴向着色，径向（类型 3）着色，如以下代码片段所示：
+1. 创建新的 PDF 文档并添加页面。
+1. 使用 `itemize` 环境准备 TeX 列表字符串。
+1. 将其添加为 `TeXFragment` 并保存 PDF。
 
 ```java
-public static void ApplyGradientShading() {
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("always print correctly");
-    pdfDocument.getPages().accept(absorber);
-
-    TextFragment textFragment = absorber.getTextFragments().get_Item(1);
-
-    Color foregroundColor = new com.aspose.pdf.Color();
-    foregroundColor.setPatternColorSpace(new GradientAxialShading(Color.getRed(), Color.getBlue()));
-
-    // 使用图案颜色空间创建新颜色
-    textFragment.getTextState().setForegroundColor (foregroundColor);
-
-    textFragment.getTextState().setUnderline(true);
-
-    pdfDocument.save(_dataDir + "text_out.pdf");
+public static void createBulletListLatexVersion(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String texList = "Lists are easy to create: \\begin{itemize}"
+                + "\\item First item"
+                + "\\item Second item with more text to demonstrate wrapping behavior."
+                + "\\item Third item"
+                + "\\item Fourth item"
+                + "\\end{itemize}";
+        page.getParagraphs().add(new TeXFragment(texList));
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 使用 LaTeX 创建编号列表
 
-为了应用径向渐变，您可以在上面的代码片段中使用`setPatternColorSpace`方法等于`GradientRadialShading(startingColor, endingColor)`。
+当应从 TeX 标记呈现有序列表格式时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 使用 `enumerate` 环境准备 TeX 列表字符串。
+1. 将其添加为 `TeXFragment` 并保存 PDF。
 
 ```java
-public static void ApplyGradientShadingRadial() {
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("always print correctly");
-    pdfDocument.getPages().accept(absorber);
-
-    TextFragment textFragment = absorber.getTextFragments().get_Item(1);
-
-    Color foregroundColor = new com.aspose.pdf.Color();
-    foregroundColor.setPatternColorSpace(new GradientRadialShading(Color.getRed(), Color.getBlue()));
-
-    // 使用图案颜色空间创建新颜色
-    textFragment.getTextState().setForegroundColor (foregroundColor);
-
-    textFragment.getTextState().setUnderline(true);
-
-    pdfDocument.save(_dataDir + "text_out.pdf");
+public static void createNumberedListLatexVersion(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String texList = "Lists are easy to create: \\begin{enumerate}"
+                + "\\item First item"
+                + "\\item Second item with more text to demonstrate wrapping behavior."
+                + "\\item Third item"
+                + "\\item Fourth item"
+                + "\\end{enumerate}";
+        page.getParagraphs().add(new TeXFragment(texList));
+        document.save(outputFile.toString());
+    }
 }
 ```
 
-## 如何将文本对齐到浮动内容
+## 创建包含文本段落的项目符号列表
 
-Aspose.PDF支持为浮动框元素内的内容设置文本对齐。
- Aspose.Pdf.FloatingBox 实例的对齐属性可用于实现这一点，如以下代码示例所示。
+当应从纯文本片段构建手动项目符号列表时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 构建 `TextParagraph` 并附加以项目符号为前缀的片段。
+1. 将段落添加到页面并保存文档。
 
 ```java
-public static void AlignTextToFloatContent() {
-    Document pdfDocument = new Document();
-    Page page = pdfDocument.getPages().add();
+public static void createBulletList(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String[] items = {
+                "First item in the list",
+                "Second item with more text to demonstrate wrapping behavior.",
+                "Third item",
+                "Fourth item"
+        };
 
-    FloatingBox floatBox = new FloatingBox(100, 100);
-    floatBox.setVerticalAlignment(VerticalAlignment.Bottom);
-    floatBox.setHorizontalAlignment (HorizontalAlignment.Right);
-    floatBox.getParagraphs().add(new TextFragment("FloatingBox_bottom"));
-    floatBox.setBorder(new BorderInfo(BorderSide.All, Color.getBlue()));
-    
-    page.getParagraphs().add(floatBox);
+        TextBuilder builder = new TextBuilder(page);
+        TextParagraph paragraph = new TextParagraph();
+        paragraph.setRectangle(new Rectangle(80, 200, 400, 800, true));
+        paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
 
-    FloatingBox floatBox1 = new FloatingBox(100, 100);
-    floatBox1.setVerticalAlignment(VerticalAlignment.Center);
-    floatBox1.setHorizontalAlignment (HorizontalAlignment.Right);
-    floatBox1.getParagraphs().add(new TextFragment("FloatingBox_center"));
-    floatBox1.setBorder (new BorderInfo(BorderSide.All, Color.getBlue()));
-    page.getParagraphs().add(floatBox1);
+        for (String item : items) {
+            TextFragment fragment = new TextFragment("- " + item);
+            fragment.getTextState().setFont(FontRepository.findFont("Times New Roman"));
+            fragment.getTextState().setFontSize(12);
+            paragraph.appendLine(fragment);
+        }
 
-    FloatingBox floatBox2 = new FloatingBox(100, 100);
-    floatBox2.setVerticalAlignment(VerticalAlignment.Top);
-    floatBox2.setHorizontalAlignment (HorizontalAlignment.Right);
-    floatBox2.getParagraphs().add(new TextFragment("FloatingBox_top"));
-    floatBox2.setBorder (new BorderInfo(BorderSide.All, Color.getBlue()));
-    page.getParagraphs().add(floatBox2);
+        builder.appendParagraph(paragraph);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-    pdfDocument.save(_dataDir + "FloatingBox_alignment_review_out.pdf");        
+## 创建包含文本段落的编号列表
+
+当应从纯文本片段构建手动编号列表时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 构建一个 `TextParagraph` 并附加编号的片段。
+1. 将段落添加到页面并保存文档。
+
+```java
+public static void createNumberedList(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String[] items = {
+                "First item in the list",
+                "Second item with more text to demonstrate wrapping behavior.",
+                "Third item",
+                "Fourth item"
+        };
+
+        TextBuilder builder = new TextBuilder(page);
+        TextParagraph paragraph = new TextParagraph();
+        paragraph.setRectangle(new Rectangle(80, 200, 400, 800, true));
+        paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
+
+        for (int i = 0; i < items.length; i++) {
+            TextFragment fragment = new TextFragment((i + 1) + ". " + items[i]);
+            fragment.getTextState().setFont(FontRepository.findFont("Times New Roman"));
+            fragment.getTextState().setFontSize(12);
+            paragraph.appendLine(fragment);
+        }
+
+        builder.appendParagraph(paragraph);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 添加基本​​脚注
+
+当文本片段应引用简单的脚注时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 创建主文本片段并指定 `Note` 作为脚注。
+1. 添加任何内联延续文本并保存文档。
+
+```java
+public static void addFootnote(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with a footnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.setFootNote(new Note("This is the footnote content."));
+        page.getParagraphs().add(textFragment);
+
+        TextFragment inlineText = new TextFragment(" This is another text after footnote in the same paragraph.");
+        inlineText.setInLineParagraph(true);
+        inlineText.getTextState().setFont(FontRepository.findFont("Arial"));
+        inlineText.getTextState().setFontSize(14);
+        page.getParagraphs().add(inlineText);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 添加具有自定义文本样式的脚注
+
+当脚注内容应使用自己的字体、大小和颜色设置时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 创建主要文本片段并配置样式脚注注释。
+1. 附上注释并保存 PDF。
+
+```java
+public static void addFootnoteCustomTextStyle(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with a footnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+
+        Note note = new Note("This is the footnote content with custom text style.");
+        TextState noteTextState = new TextState();
+        noteTextState.setFont(FontRepository.findFont("Times New Roman"));
+        noteTextState.setFontSize(10);
+        noteTextState.setForegroundColor(Color.getRed());
+        noteTextState.setFontStyle(FontStyles.Italic);
+        note.setTextState(noteTextState);
+        textFragment.setFootNote(note);
+
+        page.getParagraphs().add(textFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 添加带有自定义标记文本的脚注
+
+当可见脚注标记应替换为自定义文本时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 将脚注分配给主要文本片段并覆盖其标记文本。
+1. 添加剩余内容并保存文档。
+
+```java
+public static void addFootnoteCustomText(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with a footnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.setFootNote(new Note("This is the footnote content."));
+        textFragment.getFootNote().setText("***");
+        page.getParagraphs().add(textFragment);
+
+        TextFragment anotherText = new TextFragment(" This is another text without footnote.");
+        anotherText.getTextState().setFont(FontRepository.findFont("Arial"));
+        anotherText.getTextState().setFontSize(14);
+        page.getParagraphs().add(anotherText);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 自定义脚注分隔线
+
+当应明确设置脚注与页面内容分隔线的样式时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 通过`GraphInfo`配置页面注释线条样式。
+1. 添加带有脚注的文本片段并保存文档。
+
+```java
+public static void addFootnoteWithCustomLineStyle(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        GraphInfo graphInfo = new GraphInfo();
+        graphInfo.setLineWidth(2);
+        graphInfo.setColor(Color.getRed());
+        graphInfo.setDashArray(new int[] {3});
+        graphInfo.setDashPhase(1);
+        page.setNoteLineStyle(graphInfo);
+
+        TextFragment text1 = new TextFragment("This is a sample text with a footnote.");
+        text1.setFootNote(new Note("foot note for text 1"));
+        page.getParagraphs().add(text1);
+
+        TextFragment text2 = new TextFragment("This is yet another sample text with a footnote.");
+        text2.setFootNote(new Note("foot note for text 2"));
+        page.getParagraphs().add(text2);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 添加包含图像和表格内容的脚注
+
+当脚注本身应包含丰富的内容（例如图像、文本和表格）时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 使用图像、内联文本和表格构建 `Note` 对象。
+1. 将其附加到主要文本片段并保存文档。
+
+```java
+public static void addFootnoteWithImageAndTable(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment text = new TextFragment("This is a sample text with a footnote.");
+        page.getParagraphs().add(text);
+
+        Note note = new Note();
+
+        Image imageNote = new Image();
+        imageNote.setFile(dataDir.resolve("logo.jpg").toString());
+        imageNote.setFixHeight(20);
+        imageNote.setFixWidth(20);
+        note.getParagraphs().add(imageNote);
+
+        TextFragment textNote = new TextFragment("This is the footnote content.");
+        textNote.getTextState().setFontSize(20);
+        textNote.setInLineParagraph(true);
+        note.getParagraphs().add(textNote);
+
+        Table table = new Table();
+        table.getRows().add().getCells().add("Cell 1,1");
+        table.getRows().add().getCells().add("Cell 1,2");
+        note.getParagraphs().add(table);
+
+        text.setFootNote(note);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 添加尾注
+
+当文本片段应引用尾注内容而不是页面脚注时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 为主要文本片段分配尾注并添加支持正文文本。
+1. 使用生成的尾注内容保存文档。
+
+```java
+public static void addEndnote(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with an endnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.setEndNote(new Note("This is the EndNote content."));
+        page.getParagraphs().add(textFragment);
+
+        String textContent = loremText();
+        for (int i = 0; i < 5; i++) {
+            TextFragment text = new TextFragment(textContent);
+            text.getTextState().setFont(FontRepository.findFont("Arial"));
+            text.getTextState().setFontSize(14);
+            page.getParagraphs().add(text);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+
+private static String loremText() throws Exception {
+    Path loremPath = dataDir.resolve("lorem.txt");
+    return Files.exists(loremPath) ? Files.readString(loremPath) : "Lorem ipsum sample text not found.";
+}
+```
+
+## 添加带有自定义标记文本的尾注
+
+当尾注标记应使用自定义可见标签时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 将尾注分配给主要文本片段并覆盖其标记文本。
+1. 添加剩余的文档文本并保存 PDF。
+
+```java
+public static void addEndnoteCustomText(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is a sample text with an endnote.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.setEndNote(new Note("This is the EndNote content."));
+        textFragment.getEndNote().setText("***");
+        page.getParagraphs().add(textFragment);
+
+        String textContent = loremText();
+        for (int i = 0; i < 5; i++) {
+            TextFragment text = new TextFragment(textContent);
+            text.getTextState().setFont(FontRepository.findFont("Arial"));
+            text.getTextState().setFontSize(14);
+            page.getParagraphs().add(text);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 将表格内容强制放到新页面上
+
+当格式化内容应明确从新页面开始时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 构建一个表并填充其行。
+1. 将表格设置为从新页面开始并保存文档。
+
+```java
+public static void forceNewPage(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        Table table = new Table();
+        table.setColumnWidths("150 150 150");
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All));
+
+        for (int i = 0; i < 5; i++) {
+            Row row = table.getRows().add();
+            row.getCells().add("Row " + (i + 1) + " - Col 1");
+            row.getCells().add("Row " + (i + 1) + " - Col 2");
+            row.getCells().add("Row " + (i + 1) + " - Col 3");
+        }
+
+        table.setInNewPage(true);
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 在一个段落流中混合内联内容
+
+当文本和图像应在同一段落流内继续时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 添加第一个文本片段，然后添加内嵌图像，然后添加另一个内嵌文本片段。
+1. 添加以下任何独立段落并保存文档。
+
+```java
+public static void usingInlineParagraphProperty(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment fragment1 = new TextFragment("This is the first part of the paragraph. ");
+        fragment1.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment1.getTextState().setFontSize(14);
+        page.getParagraphs().add(fragment1);
+
+        Image image = new Image();
+        image.setInLineParagraph(true);
+        image.setFile(dataDir.resolve("logo.jpg").toString());
+        image.setFixHeight(30);
+        image.setFixWidth(30);
+        page.getParagraphs().add(image);
+
+        TextFragment fragment2 = new TextFragment("This is the second part of the same paragraph.");
+        fragment2.setInLineParagraph(true);
+        fragment2.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment2.getTextState().setFontSize(14);
+        page.getParagraphs().add(fragment2);
+
+        TextFragment fragment3 = new TextFragment("This is a new paragraph.");
+        fragment3.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment3.getTextState().setFontSize(14);
+        page.getParagraphs().add(fragment3);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 创建多列文本布局
+
+当文章样式文本应流经多列时，请使用此示例。
+
+1. 创建新的 PDF 文档并配置页边距。
+1. 添加标题内容并创建多列`FloatingBox`。
+1. 填写文本并保存最终的 PDF。
+
+```java
+public static void createMultiColumnPdf(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        document.getPageInfo().getMargin().setLeft(40);
+        document.getPageInfo().getMargin().setRight(40);
+        Page page = document.getPages().add();
+
+        com.aspose.pdf.drawing.Graph graph1 = new com.aspose.pdf.drawing.Graph(500.0, 2.0);
+        page.getParagraphs().add(graph1);
+        graph1.getShapes().addItem(new com.aspose.pdf.drawing.Line(new float[] {1.0f, 2.0f, 500.0f, 2.0f}));
+
+        String html = "<span style=\"font-family: 'Times New Roman'; font-size: 18px;\"><strong>How to Steer Clear of money scams</strong></span>";
+        page.getParagraphs().add(new HtmlFragment(html));
+
+        FloatingBox box = new FloatingBox();
+        box.getColumnInfo().setColumnCount(2);
+        box.getColumnInfo().setColumnSpacing("5");
+        box.getColumnInfo().setColumnWidths("105 105");
+
+        TextFragment text1 = new TextFragment("By A Googler (The Official Google Blog)");
+        text1.getTextState().setFontSize(8);
+        text1.getTextState().setLineSpacing(2);
+        box.getParagraphs().add(text1);
+
+        text1.getTextState().setFontSize(10);
+        text1.getTextState().setFontStyle(FontStyles.Italic);
+
+        com.aspose.pdf.drawing.Graph graph2 = new com.aspose.pdf.drawing.Graph(50.0, 10.0);
+        graph2.getShapes().addItem(new com.aspose.pdf.drawing.Line(new float[] {1.0f, 10.0f, 100.0f, 10.0f}));
+        box.getParagraphs().add(graph2);
+
+        String loremText = loremText();
+        box.getParagraphs().add(new TextFragment(loremText.repeat(5)));
+        page.getParagraphs().add(box);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 创建带有自定义制表位的对齐文本
+
+当文本需要使用制表位位置像简单表格一样对齐时，请使用此示例。
+
+1. 创建新的 PDF 文档并添加页面。
+1. 使用对齐和引线设置配置制表位。
+1. 创建使用这些制表位的文本片段并保存文档。
+
+```java
+public static void customTabStops(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TabStops tabStops = new TabStops();
+        TabStop tabStop1 = tabStops.add(100);
+        tabStop1.setAlignmentType(TabAlignmentType.Right);
+        tabStop1.setLeaderType(TabLeaderType.Solid);
+
+        TabStop tabStop2 = tabStops.add(200);
+        tabStop2.setAlignmentType(TabAlignmentType.Center);
+        tabStop2.setLeaderType(TabLeaderType.Dash);
+
+        TabStop tabStop3 = tabStops.add(300);
+        tabStop3.setAlignmentType(TabAlignmentType.Left);
+        tabStop3.setLeaderType(TabLeaderType.Dot);
+
+        TextFragment header = new TextFragment("This is an example of forming table with TAB stops", tabStops);
+        TextFragment text0 = new TextFragment("#$TABHead1 #$TABHead2 #$TABHead3", tabStops);
+        TextFragment text1 = new TextFragment("#$TABdata11 #$TABdata12 #$TABdata13", tabStops);
+
+        TextFragment text2 = new TextFragment("#$TABdata21 ", tabStops);
+        text2.getSegments().add(new TextSegment("#$TAB"));
+        text2.getSegments().add(new TextSegment("data22 "));
+        text2.getSegments().add(new TextSegment("#$TAB"));
+        text2.getSegments().add(new TextSegment("data23"));
+
+        page.getParagraphs().add(header);
+        page.getParagraphs().add(text0);
+        page.getParagraphs().add(text1);
+        page.getParagraphs().add(text2);
+
+        document.save(outputFile.toString());
+    }
 }
 ```

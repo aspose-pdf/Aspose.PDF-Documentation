@@ -1,39 +1,40 @@
 ---
-title: 将 PDF 文件拆分为单独页面的 Python 实现
+title: 在Python中将PDF文件分割成单独的页面
+linktitle: 在Python中将PDF文件分割成单独的页面
 type: docs
 weight: 80
-url: /zh/java/split-pdf-file-into-individual-pages-in-python/
-lastmod: "2021-06-05"
+url: /java/split-pdf-file-into-individual-pages-in-python/
+description: 探索如何使用 Aspose.PDF 在 Python 中将 PDF 拆分为单独的页面，从而轻松提取和管理页面。
+lastmod: "2026-06-09"
 ---
-
-要使用 **Aspose.PDF Java for PHP** 将 PDF 文档拆分为单独的页面，只需调用 **SplitAllPages** 类。
+要使用 **Aspose.PDF Java for PHP** 将 PDF 文档拆分为单独的页面，只需调用 **SplitAllPages** 类即可。
 
 ```python
 
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# 遍历所有页面
+# loop through all the pages
 pdf_page = 1
 total_size = pdf.getPages().size()
 while (pdf_page <= total_size):
 
-# 创建一个新的 Document 对象
+# create a new Document object
 new_document = self.Document();
 
-# 获取页面集合中特定索引的页面
+# get the page at particular index of Page Collection
 new_document.getPages().add(pdf.getPages().get_Item(pdf_page))
 
-# 保存新生成的 PDF 文件
+# save the newly generated PDF file
 new_document.save(self.dataDir + "page_#{$pdf_page}.pdf")
 
 pdf_page+=1
 
-print "拆分过程成功完成!";
+print "Split process completed successfully!";
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载 **Split Pages (Aspose.PDF)**：
+从以下任何一个社交编码网站下载 **拆分页面 (Aspose.PDF)**：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/SplitAllPages/SplitAllPages.py)
