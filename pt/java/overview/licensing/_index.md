@@ -24,11 +24,11 @@ Na versão de avaliação de qualquer coleção, é possível processar apenas q
 
 Você pode baixar uma versão de avaliação do **Aspose.PDF** para Java em [Repositório Aspose](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). A versão de avaliação oferece absolutamente os mesmos recursos que a versão licenciada do produto. Além disso, a versão de avaliação simplesmente se torna licenciada quando você compra uma licença e adiciona algumas linhas de código para aplicá-la.
 
-Quando estiver satisfeito com sua avaliação de **Aspose.PDF**, você pode [comprar uma licença](https://purchase.aspose.com/) no site da Aspose. Familiarize-se com os diferentes tipos de assinatura oferecidos. Se você tiver alguma dúvida, não hesite em entrar em contato com a equipe de vendas da Aspose.
+Quando estiver satisfeito com sua avaliação do **Aspose.PDF**, você poderá [comprar uma licença](https://purchase.aspose.com/) no site do Aspose. Familiarize-se com os diferentes tipos de assinatura oferecidos. Se você tiver alguma dúvida, não hesite em entrar em contato com a equipe de vendas da Aspose.
 
 Cada licença Aspose traz uma assinatura de um ano para atualizações gratuitas para quaisquer novas versões ou correções lançadas durante esse período. O suporte técnico é gratuito e ilimitado e fornecido tanto para usuários licenciados quanto para avaliação.
 
->Se quiser testar o Aspose.PDF para Java sem as limitações da versão de avaliação, você também pode solicitar uma licença temporária de 30 dias. Consulte [Como obter uma Licença Temporária?](https://purchase.aspose.com/temporary-license)
+>Se quiser testar o Aspose.PDF para Java sem as limitações da versão de avaliação, você também pode solicitar uma licença temporária de 30 dias. Consulte [Como obter uma licença temporária?](https://purchase.aspose.com/temporary-license)
 
 ## Licença clássica
 
@@ -88,9 +88,9 @@ if (com.aspose.pdf.Document.isLicensed()) {
 
 ## Licença medida
 
-Aspose.PDF permite que os desenvolvedores apliquem chave medida. É um novo mecanismo de licenciamento. O novo mecanismo de licenciamento será utilizado juntamente com o método de licenciamento existente. Os clientes que desejam ser cobrados com base no uso dos recursos da API podem usar o licenciamento medido. Para obter mais detalhes, consulte [Perguntas frequentes sobre licenciamento medido](https://purchase.aspose.com/faqs/licensing/metered)Seção.
+Aspose.PDF permite que os desenvolvedores apliquem chave medida. É um novo mecanismo de licenciamento. O novo mecanismo de licenciamento será utilizado juntamente com o método de licenciamento existente. Os clientes que desejam ser cobrados com base no uso dos recursos da API podem usar o licenciamento medido. Para obter mais detalhes, consulte a seção [Perguntas frequentes sobre licenciamento medido](https://purchase.aspose.com/faqs/licensing/metered).
 
-Uma nova classe [Medido](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered)В foi introduzido para aplicar chave medida. A seguir está o código de exemplo que demonstra como definir chaves públicas e privadas medidas.
+Uma nova classe [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered) foi introduzida para aplicar a chave medida. A seguir está o código de exemplo que demonstra como definir chaves públicas e privadas medidas.
 
 ```java
 String publicKey = "";
