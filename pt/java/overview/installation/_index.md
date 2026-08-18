@@ -34,7 +34,7 @@ Usando esta biblioteca, você pode implementar recursos avançados para criar ar
 
 {{% alert color="primary" %}}
 
-Você pode baixar [Aspose.PDF para Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) para avaliação. O download de avaliação é igual ao download adquirido. A versão de avaliação simplesmente se torna licenciada quando você adiciona algumas linhas de código ao [aplicar a licença](/pdf/pt/java/licensing/).
+Você pode baixar [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) para avaliação. O download de avaliação é igual ao download adquirido. A versão de avaliação simplesmente se torna licenciada quando você adiciona algumas linhas de código a [aplicar a licença](/pdf/java/licensing/).
 
 {{% /alert %}}
 
@@ -46,13 +46,13 @@ A versão de avaliação do Aspose.PDF fornece funcionalidade completa do produt
 
 {{% alert color="primary" %}}
 
-Se quiser testar o Aspose.PDF para Java sem as limitações da versão de avaliação, você também pode solicitar uma licença temporária de 30 dias. Consulte [Como obter uma Licença Temporária?](https://purchase.aspose.com/temporary-license)
+Se quiser testar o Aspose.PDF para Java sem as limitações da versão de avaliação, você também pode solicitar uma licença temporária de 30 dias. Consulte [Como obter uma licença temporária?](https://purchase.aspose.com/temporary-license)
 
 {{% /alert %}}
 
 ## Instalando Aspose.PDF para Java do Repositório Aspose
 
-Aspose hospeda todas as APIs Java em [Repositório Aspose](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). Você pode usar facilmente a API Aspose.PDF for Java diretamente em seus projetos Maven com configurações simples.
+O Aspose hospeda todas as APIs Java no [Repositório Aspose](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). Você pode usar facilmente a API Aspose.PDF for Java diretamente em seus projetos Maven com configurações simples.
 
 ### Especifique a configuração do repositório Aspose
 
