@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/python-net/basic-text-extraction/
 description: تعرف على كيفية استخراج النص من مستندات PDF باستخدام Aspose.PDF لـ Python - من جميع الصفحات مرة واحدة أو من صفحة معينة.
-lastmod: "2026-06-11"
+lastmod: "2026-08-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
