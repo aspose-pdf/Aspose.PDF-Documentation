@@ -4,41 +4,39 @@ linktitle: كيفية إنشاء وتحويل ملف XML إلى PDF
 type: docs
 weight: 30
 url: /ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
-lastmod: "2026-06-18"
-description: API PDF لـ SharePoint قادر على إنشاء وتحويل ملفات XML إلى صيغة PDF.
+lastmod: "2026-08-13"
+description: PDF SharePoint API قادر على إنشاء وتحويل ملفات XML إلى تنسيق PDF.
 ---
 
 {{% alert color="primary" %}}
 
-تم بناء Aspose.PDF لـ SharePoint فوق مكوّن Aspose.PDF لـ .NET الحائز على جوائز. يقدم Aspose.PDF لـ .NET ميزات رائعة بدءًا من إنشاء مستند PDF من الصفر إلى معالجة ملفات PDF الموجودة. من بين هذه الميزات، التحويل من XML إلى PDF هو أحد الميزات الكبيرة التي يدعمها هذا المنتج. لذلك نعتقد أن Aspose.PDF لـ SharePoint سيكون أيضًا قادرًا على تحويل ملفات XML إلى صيغة PDF.
+تم إنشاء Aspose.PDF for SharePoint على أساس مكون Aspose.PDF الحائز على جوائز لمكون .NET. يوفر Aspose.PDF for .NET ميزات رائعة بدءًا من إنشاء مستند PDF من البداية وحتى معالجة ملفات PDF الموجودة. ومن بين هذه الميزات، يعد تحويل XML إلى PDF أحد الميزات الرائعة التي يدعمها هذا المنتج. لذلك نعتقد أن Aspose.PDF for SharePoint سيكون قادرًا أيضًا على تحويل ملفات XML إلى تنسيق PDF.
 
 {{% /alert %}}
 
-## **إنشاء ملف XML وتحويله إلى PDF**
+## إنشاء ملف XML وتحويله إلى PDF
 
 {{% alert color="primary" %}}
 
-خطوة بخطوة، يشرح لك هذا المقال عملية إنشاء ملف XML وتحويله إلى PDF:
+سترشدك هذه المقالة خطوة بخطوة خلال عملية إنشاء ملف XML وتحويله إلى PDF:
 
 1. [إنشاء ملف XML](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
 2. [إنشاء قالب PDF](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
-3. [تحميل قالب XML](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
-4. [تحديد المسار إلى مسار المصدر](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
-5. [تحديد خصائص الملف](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
+3. [قم بتحميل قالب XML](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [حدد المسار إلى المسار المصدر](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+5. [حدد خصائص الملف](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
 6. [تصدير الملف إلى PDF](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
-7. [حفظ ملف PDF](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
-#### **الخطوة 1: إنشاء ملف XML**
-أولاً، أنشئ ملف XML بناءً على نموذج كائن المستند Aspose.PDF لـ .NET.
+7. [احفظ ملف PDF](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document)
 
-وفقًا لنموذج كائن المستند Aspose.PDF لـ .NET، يحتوي مستند PDF على مجموعة من كائنات Section، وتحتوي كل Section على عنصر واحد أو أكثر من Paragraph. النص هو كائن على مستوى Paragraph وقد يحتوي على مقاطع واحدة أو أكثر. أدناه، يتم إضافة سلسلة نصية نموذجية إلى كائن Segment ثم إضافتها إلى كائن Text. أخيرًا، يتم إضافة عنصر Text إلى مجموعة الفقرات الخاصة بكائن Section.
+### الخطوة 1: إنشاء ملف XML
 
-**XML**
+قم أولاً بإنشاء ملف XML استنادًا إلى Aspose.PDF لـ .NET Document Object Model.
 
-{{< highlight csharp >}}
+وفقًا لـ DOM الخاص بـ Aspose.PDF for .NET، يحتوي مستند PDF على مجموعة من كائنات Section، ويحتوي كل Section على عنصر Paragraph واحد أو أكثر. ويُعد Text كائنًا على مستوى Paragraph وقد يحتوي على مقطع واحد أو أكثر. في المثال أدناه، تتم إضافة سلسلة نصية نموذجية إلى كائن Segment ثم تُضاف إلى كائن Text. وأخيرًا، يُضاف عنصر Text إلى مجموعة الفقرات الخاصة بكائن Section.
 
+```xml
 
-
-\u003C?xml version=\u00221.0\u0022 encoding=\u0022utf-8\u0022 ?\u003E
+<?xml version="1.0" encoding="utf-8" ?>
 
   <Pdf xmlns="Aspose.PDF">
 
@@ -46,7 +44,7 @@ description: API PDF لـ SharePoint قادر على إنشاء وتحويل م�
 
     <Text>
 
-            <Segment>مرحبا بالعالم</Segment>
+            <Segment>Hello World</Segment>
 
     </Text>
 
@@ -54,87 +52,78 @@ description: API PDF لـ SharePoint قادر على إنشاء وتحويل م�
 
   </Pdf>
 
+```
 
+### الخطوة 2: إنشاء قالب PDF
 
-{{< /highlight >}}
-#### **الخطوة 2: إنشاء قالب PDF**
-قبل المتابعة، تأكد من أن خادم SharePoint Foundation 2010 مثبت بشكل صحيح ومُعَد على النظام الذي ستجرى عليه عملية التحويل.
+قبل المتابعة، تأكد من تثبيت SharePoint Foundation server 2010 وتكوينه بشكل صحيح على النظام الذي سيتم فيه التحويل.
 
-1. سجِّل الدخول إلى موقع SharePoint.
-1. اختر **Site Action** و **All Items**.
-1. حدد خيار **Create** واختر **PDF Template** من القائمة.
+1. قم بتسجيل الدخول إلى موقع SharePoint.
+1. حدد **إجراء الموقع** و**كافة العناصر**.
+1. حدد خيار **إنشاء** وحدد **قالب PDF** من القائمة.
 1. أدخل اسم القالب.
-1. انقر على **Create**.
+1. انقر **إنشاء**.
 
+![إنشاء قالب PDF](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 
+### الخطوة 3: تحميل قالب XML
 
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
-#### **الخطوة 3: تحميل قالب XML**
-بمجرد إنشاء القالب، قم بتحميل [ملف XML](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
+بمجرد إنشاء القالب، قم بتحميل [ملف XML](/pdf/ar/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)
 
 1. في صفحة قالب PDF، حدد **إضافة عنصر جديد**.
 
+![تحميل قالب XML](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
 
+### الخطوة 4: تحديد مسار الملف المصدر
 
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
-#### **الخطوة 4: تحديد مسار ملف المصدر**
 في مربع حوار تحميل المستند:
 
-1. انقر على **Browse** وحدد موقع ملف XML على نظامك. يمكنك تمكين خانة الاختيار لتجاوز خيار الملف الموجود.
-1. اضغط زر **OK**.
+1. انقر فوق **تصفح** وحدد موقع ملف XML على نظامك. يمكنك تمكين خانة الاختيار للكتابة فوق خيار الملف الموجود.
+1. اضغط على زر **موافق**.
 
+![حدد مسار ملف المصدر](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
 
+### الخطوة 5: تحديد خصائص الملف
 
+عند تحميل الملف، قم بإضافة المعلومات في الحقول الإلزامية (المميزة بعلامة النجمة الحمراء: *).
 
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
-#### **الخطوة 5: تحديد خصائص الملف**
-عند تحميل الملف، أضف المعلومات إلى الحقول الإلزامية (المعلّمة بنجمة حمراء: *).
+في هذا المثال، تمت إضافة وصف نموذجي وإكمال الحقول التالية:
 
-في هذا المثال، تمت إضافة وصف تجريبي وتم إكمال الحقول التالية:
-
-1. وصف مختصر للوثيقة.
-1. اكتب **AllListTypes** في حقل **Assigned List Types**.
-1. اختر **List** من قائمة **Type**.
-   تأكد من أن الحالة تظل **Active**.
+1. وصف موجز للوثيقة.
+1. أدخل **AllListTypes** في الحقل **Assigned List Types**.
+1. حدد **قائمة** من قائمة **النوع**.
+   تأكد من بقاء الحالة **نشطة**.
 1. انقر **حفظ** لحفظ الخصائص.
 
+![تحديد خصائص الملف](how-to-create-and-convert-an-xml-file-to-pdf_4.png)
 
+### الخطوة 6: التصدير إلى PDF
 
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_4.png)
-#### **الخطوة 6: تصدير إلى PDF**
 عند إضافة ملف XML إلى قالب PDF:
-إما:
+أيضاً:
 
-1. انقر بزر الماوس الأيمن على ملف test.xml.
-1. اختر **تصدير إلى PDF** من القائمة.
+1. انقر بزر الماوس الأيمن فوق ملف test.xml.
+1. حدد **تصدير إلى PDF** من القائمة.
 
 أو:
 
 1. حدد **Aspose Tools** من **Library Tools**.
-1. انقر **Export**.
+1. انقر **تصدير**.
 
+![تصدير إلى PDF](how-to-create-and-convert-an-xml-file-to-pdf_5.png)
 
+### الخطوة 7: حفظ مستند PDF
 
+1. في مربع الحوار "تصدير إلى PDF"، حدد **تخزين القالب** (الموقع الذي يتم فيه تخزين الملف المصدر).
+1. حدد الملف المراد تصديره من قائمة **اسم القالب**.
+1. انقر **تصدير إلى PDF** لحفظ مستند PDF النهائي.
 
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_5.png)
-#### **الخطوة 7: حفظ مستند PDF**
-1. في مربع حوار تصدير إلى PDF، حدد **Template storage** (الموقع الذي يُخزن فيه ملف المصدر).
-1. حدد الملف المراد تصديره من قائمة **Template name**.
-1. انقر **Export to PDF** لحفظ مستند PDF النهائي.
+![حفظ مستند PDF](how-to-create-and-convert-an-xml-file-to-pdf_6.png)
 
+## افتح ملف بي دي إف
 
+تم حفظ مستند PDF ويمكن فتحه. في الصورة أدناه، لاحظ العبارة "Hello World" التي كانت موجودة في علامة المقطع في ملف XML. لاحظ أيضًا أن منتج PDF هو Aspose.PDF for SharePoint.
 
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_6.png)
-#### **افتح ملف PDF**
-تم حفظ مستند PDF ويمكن فتحه. في الصورة أدناه، لاحظ العبارة "Hello World" التي كانت في الوسم {segment] داخل XML. لاحظ أيضًا أن منتج PDF هو Aspose.PDF for SharePoint.
-
-
-
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
+![Open the PDF](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
 
 {{% /alert %}}

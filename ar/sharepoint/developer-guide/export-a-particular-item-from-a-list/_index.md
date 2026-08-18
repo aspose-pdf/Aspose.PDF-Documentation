@@ -1,28 +1,26 @@
 ---
 title: تصدير عنصر معين من قائمة إلى PDF في SharePoint
-linktitle: تصدير عنصر معين من قائمة
+linktitle: تصدير عنصر معين من القائمة
 type: docs
 weight: 10
 url: /ar/sharepoint/export-a-particular-item-from-a-list/
-lastmod: "2026-06-18"
-description: يتيح لك PDF SharePoint API تحويل عدة مستندات، أو مستند واحد في كل مرة إلى PDF كما هو موضح في هذه المقالة.
+lastmod: "2026-08-13"
+description: يتيح لك PDF SharePoint API تحويل عدة مستندات، أو واحدة تلو الأخرى إلى PDF كما هو موضح في هذه المقالة.
 ---
 
 {{% alert color="primary" %}}
 
-يتيح لك Aspose.PDF for SharePoint تحويل عدة مستندات، أو مستند واحد في كل مرة. توضح هذه المقالة كيفية تصدير عنصر من قائمة.
+يتيح لك Aspose.PDF for SharePoint تحويل عدة مستندات، أو واحدة تلو الأخرى. توضح هذه المقالة كيفية تصدير عنصر من القائمة.
 
 {{% /alert %}}
 
-لتصدير عنصر معين من قائمة: اختر **Export to Pdf** من كتلة التحكم في تحرير العنصر (ECB).
+لتصدير عنصر معين من قائمة: حدد **تصدير إلى Pdf** من كتلة التحكم في تحرير العنصر (ECB).
 
-## **اختيار Export to Pdf في الـ ECB الخاص بالعنصر**
+## تحديد تصدير إلى Pdf في البنك المركزي الأوروبي للعنصر
 
-![todo:image_alt_text](export-a-particular-item-from-a-list_1.png)
+![تحديد خيار التصدير إلى ملف PDF](export-a-particular-item-from-a-list_1.png)
 
+## تصدير إلى PDF
 
-
-## **تصدير إلى PDF**
-
-![todo:image_alt_text](export-a-particular-item-from-a-list_2.png)
+![تصدير إلى PDF](export-a-particular-item-from-a-list_2.png)
 

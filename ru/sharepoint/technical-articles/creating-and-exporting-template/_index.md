@@ -1,89 +1,85 @@
 ---
-title: Создание и экспорт шаблона
+title: Creating and Exporting Template
 linktitle: Создание и экспорт шаблона
 type: docs
 weight: 10
 url: /ru/sharepoint/creating-and-exporting-template/
-lastmod: "2026-06-18"
-description: Вы можете создавать и экспортировать шаблоны в PDF в SharePoint, используя PDF SharePoint API.
+lastmod: "2026-08-13"
+description: Вы можете создавать и экспортировать шаблоны в PDF в SharePoint с помощью PDF SharePoint API.
 ---
 
 {{% alert color="primary" %}}
 
-В этой статье показано, как создавать и экспортировать шаблоны, используя Aspose.PDF for SharePoint.
+В этой статье показано, как создавать и экспортировать шаблоны с помощью Aspose.PDF для SharePoint.
 
-Начиная с Aspose.PDF for SharePoint 1.9.2, поддержка PDF-шаблонов также охватывает подсайты SharePoint.
+From Aspose.PDF for SharePoint 1.9.2, PDF template support also covers SharePoint subsites.
 
 {{% /alert %}}
 
-## **Создание и экспорт шаблонов**
+## Создание и экспорт шаблонов
+
 {{% alert color="primary" %}}
 
-Чтобы использовать функцию экспорта Aspose.PDF for SharePoint, сначала создайте список, использующий “PDF Templates”.
+To use the Aspose.PDF for SharePoint export feature, first create a list that uses “PDF Templates”.
 
 Создание списка, использующего шаблоны PDF:
 
-![todo:image_alt_text](creating-and-exporting-template_1.png)
+![Create PDF Template List](creating-and-exporting-template_1.png)
 
-Созданы два шаблона документов, Task Form Templates и Task List Templates:
+Создаются два шаблона документов: шаблоны форм задач и шаблоны списков задач:
 
-![todo:image_alt_text](creating-and-exporting-template_2.png)
+![Document Templates](creating-and-exporting-template_2.png)
 
+The template form lets you enter the following information:
 
+- **Name**: the template's file name.
+- **Название**: название шаблона. (По умолчанию совпадает с именем файла.)
+- **Description**: a description of the template. A good description makes the template easier to use.
+- **Назначенные типы списков**: идентификаторы списков, разделенные запятыми (относящиеся к шаблону). Это поле также может содержать значение
+- **ВсеТипыСписков**. Это поле применимо только в том случае, если для поля **Тип** установлено значение **Список**).
+- **Назначенные типы контента**: идентификаторы типов контента, разделенные запятыми, связанные с шаблоном. Это поле может содержать значение **AllListTypes**. Это поле применимо только в том случае, если в поле **Тип** установлено значение **Товар**.
+- **Тип**: либо шаблон списка, либо шаблон элемента.
+- **Status**: the options are active, inactive (invisible to all), and debugging (visible only to admins).
 
-Форма шаблона позволяет ввести следующую информацию:
+Форма «Шаблоны списка задач»:
 
-- **Name**: имя файла шаблона.
-- **Title**: заголовок шаблона. (По умолчанию тот же, что и имя файла.)
-- **Description**: описание шаблона. Хорошее описание упрощает использование шаблона.
-- **Assigned List Types**: список идентификаторов, разделённых запятыми (относятся к шаблону. Это поле может также содержать значение **AllListTypes**. Это поле применимо только когда поле **Type** установлено в **List**).
-- **Assigned Content Types**: список идентификаторов типов контента, разделённых запятыми (относятся к шаблону. Это поле может быть установлено в **AllListTypes**. Это поле применимо только когда поле **Type** установлено в **Item**).
-- **Type**: либо шаблон списка, либо шаблон элемента.
-- **Status**: варианты — active, inactive (невидим для всех) и debugging (видим только администраторам).
+![Task List Templates](creating-and-exporting-template_3.png)
 
-**Форма шаблонов списка задач:**
+The Task Form Templates form:
 
-![todo:image_alt_text](creating-and-exporting-template_3.png)
+![Task Form Templates](creating-and-exporting-template_4.png)
 
+После сохранения новые шаблоны появятся в списке шаблонов и будут готовы к использованию:
 
+Два шаблона списка задач:*
 
+![Task List Templates](creating-and-exporting-template_5.png)
 
-**Форма шаблонов формы задачи:**
+A task forms template:
 
-![todo:image_alt_text](creating-and-exporting-template_4.png)
+![Task Form Templates](creating-and-exporting-template_6.png)
 
+### Разрабатывайте шаблоны
 
+A template is an XML file based on Aspose XML PDF. To make a template for a list, place special markers related to the SharePoint target content type field's internal name into the XML PDF file.
 
+### Маркеры
 
-Когда они будут сохранены, новые шаблоны появятся в списке шаблонов, готовые к использованию:
-
-**Два шаблона списка задач:**
-
-![todo:image_alt_text](creating-and-exporting-template_5.png)
-
-
-
-**Шаблон форм задач:**
-
-![todo:image_alt_text](creating-and-exporting-template_6.png)
-
-
-
-#### **Разработка шаблонов**
-Шаблон — это XML‑файл, основанный на Aspose XML PDF. Чтобы создать шаблон для списка, поместите специальные маркеры, связанные с внутренним именем поля целевого типа контента SharePoint, в файл XML PDF.
-##### **Маркеры**
-- **SPListItemsCount** – заменяется количеством элементов списка.
+- **SPListItemsCount** – заменено количеством элементов списка.
 - **SPListTitle** – заменяется заголовком списка.
-- **SPTableIterator** – помещается в первую ячейку таблицы и отмечает таблицу для полной итерации.
-- **SPRowIterator** – помещается в первую ячейку таблицы и отмечает таблицу для итерации по строкам.
+- **SPTableIterator** — помещается в первую ячейку таблицы и помечает таблицу для полной итерации.
+- **SPRowIterator** – placed to first table cell and mark table for row iteration.
 - **SPField** – заменяется значением поля элемента.
 
-Для справки, пожалуйста, скачайте [XML‑файлы шаблонов](attachments/8421394/8618082.zip).
-#### **Экспорт в PDF**
-Когда шаблон полностью настроен, вы готовы экспортировать списки или элементы в файлы PDF.
+Для справки загрузите [файлы шаблонов XML](attachments/8421394/8618082.zip).
 
-**Экспорт списка в PDF с использованием шаблона списка задач:**
+### Экспорт в PDF
 
-![todo:image_alt_text](creating-and-exporting-template_7.png)
+When a template is completely configured, you are ready to export lists or items to PDF files.
+
+Exporting a list to PDF using a task list template:
+
+![Export to PDF](creating-and-exporting-template_7.png)
 
 {{% /alert %}}
+
