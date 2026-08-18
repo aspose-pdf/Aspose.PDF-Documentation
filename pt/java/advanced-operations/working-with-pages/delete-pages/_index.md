@@ -1,44 +1,50 @@
 ---
-title: Excluir Páginas PDF programaticamente
-linktitle: Excluir Páginas PDF
+title: Excluir páginas PDF em Java
+linktitle: Excluindo páginas PDF
 type: docs
-weight: 40
-url: /pt/java/delete-pages/
-description: Você pode excluir páginas do seu arquivo PDF usando a biblioteca Java.
-lastmod: "2021-06-05"
+weight: 80
+url: /java/delete-pages/
+description: Aprenda como excluir páginas de arquivos PDF em Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Exclua uma ou mais páginas PDF em Java
+Abstract: Este artigo explica como remover páginas de arquivos PDF usando Aspose.PDF para Java. Abrange a exclusão de uma única página e a exclusão de várias páginas de uma vez por meio da API de coleção de páginas.
 ---
+Use a coleção de páginas do documento quando precisar remover uma ou mais páginas de um PDF.
 
-Você pode excluir páginas de um arquivo PDF usando o Aspose.PDF para Java. Para excluir uma página específica da [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection) simplesmente chame o método delete() e especifique o índice da página específica que você deseja excluir. Em seguida, chame o método save para salvar o arquivo PDF atualizado.
+## Excluir uma única página
 
-## Excluir Página do Arquivo PDF
+Use este exemplo quando precisar remover uma página pelo seu índice.
 
-1. Chame o método Delete e especifique o índice da página
-1. Chame o método Save para salvar o arquivo PDF atualizado
-O seguinte trecho de código mostra como excluir uma página específica do arquivo PDF usando Java.
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Exclua a página de destino da coleção de páginas.
+1. Salve o documento atualizado.
 
 ```java
-package com.aspose.pdf.examples;
+public static void deletePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(2);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import com.aspose.pdf.*;
+## Excluir várias páginas
 
-public class ExampleDeletePage {
+Use este exemplo quando várias páginas precisarem ser removidas em uma operação.
 
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Passe os índices de páginas a serem excluídos da coleção de páginas.
+1. Salve o PDF modificado.
 
-  public static void DeletePageFromPDFFile() {
-
-    // Abrir documento
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    // Excluir uma página específica
-    pdfDocument.getPages().delete(2);
-
-    _dataDir = _dataDir + "DeleteParticularPage_out.pdf";
-    // Salvar PDF atualizado
-    pdfDocument.save(_dataDir);    
-
-  }
+```java
+public static void deleteBunchPages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(new Integer[]{2, 3, 4});
+        document.save(outputFile.toString());
+    }
+}
 ```

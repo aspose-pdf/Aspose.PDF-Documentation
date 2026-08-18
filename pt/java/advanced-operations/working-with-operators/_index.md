@@ -1,263 +1,141 @@
 ---
-title: Trabalhando com Operadores
+title: Trabalhe com operadores PDF em Java
 linktitle: Trabalhando com Operadores
 type: docs
-weight: 170
-url: /pt/java/operators/
-description: Este tópico explica como usar operadores com Aspose.PDF. As classes de operadores fornecem ótimos recursos para manipulação de PDF.
-lastmod: "2021-06-05"
+weight: 90
+url: /java/working-with-operators/
+description: Aprenda como usar operadores PDF de baixo nível em Java para manipulação de fluxo de conteúdo, posicionamento de imagens, reutilização de XForm e limpeza de gráficos.
+lastmod: "2026-06-25"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Use operadores PDF de baixo nível para controle de fluxo de conteúdo em Java
+Abstract: Este artigo explica como trabalhar com operadores PDF de baixo nível em Aspose.PDF para Java. Aprenda como posicionar imagens com precisão, desenhar conteúdo XForm reutilizável e remover operadores gráficos de páginas PDF.
 ---
+## Introdução aos operadores PDF e seu uso
 
-## Introdução aos Operadores PDF e Seu Uso
+Um operador é uma palavra-chave PDF que especifica alguma ação que deve ser executada, como pintar uma forma gráfica na página. Uma palavra-chave de operador se distingue de um objeto nomeado pela ausência de um caractere solidus inicial (2Fh). Os operadores são significativos apenas dentro do fluxo de conteúdo.
 
-Um operador é uma palavra-chave PDF que especifica alguma ação a ser realizada, como pintar uma forma gráfica na página. Uma palavra-chave de operador é diferenciada de um objeto nomeado pela ausência de um caractere de barra inicial (2Fh). Os operadores são significativos apenas dentro do fluxo de conteúdo.
+Um fluxo de conteúdo é um objeto de fluxo PDF cujos dados consistem em instruções que descrevem os elementos gráficos a serem pintados em uma página. Mais detalhes sobre operadores PDF podem ser encontrados em [especificação PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/).
 
-Um fluxo de conteúdo é um objeto de fluxo PDF cujos dados consistem em instruções que descrevem os elementos gráficos a serem pintados em uma página. Mais detalhes sobre os operadores PDF podem ser encontrados na [especificação PDF](https://www.adobe.com/devnet/pdf/pdf_reference.html).
+Use esta página quando precisar de controle direto sobre um fluxo de conteúdo PDF em Java, como colocar uma imagem com matemática de matriz explícita, reutilizar o mesmo gráfico diversas vezes por meio de um XForm ou excluir instruções de desenho de baixo nível de uma página.
 
-### Detalhes da Implementação
+## Adicione uma imagem com operadores PDF
 
-Este tópico explica como usar operadores com Aspose.PDF.
- O exemplo selecionado adiciona uma imagem em um arquivo PDF para ilustrar o conceito. Para adicionar uma imagem em um arquivo PDF, diferentes operadores são necessários. Este exemplo usa [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) e [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore).
+Use operadores de baixo nível quando o posicionamento da imagem precisar ser controlado precisamente no nível do fluxo de conteúdo, em vez de por meio de APIs de layout de nível superior.
 
-- O operador [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) salva o estado gráfico atual do PDF.
-- Este tópico explica como usar operadores com Aspose.PDF. O exemplo selecionado adiciona uma imagem em um arquivo PDF para ilustrar o conceito. Para adicionar uma imagem em um arquivo PDF, diferentes operadores são necessários. Este exemplo usa [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) e [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore). 
-O operador (concatenate matrix) é usado para definir como uma imagem deve ser posicionada na página do PDF.
-- O operador [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) desenha a imagem na página.
-- O operador [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) restaura o estado gráfico.
-
-Para adicionar uma imagem em um arquivo PDF:
-
-1. Crie um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) e abra o documento PDF de entrada.
-1. Obtenha a página específica na qual a imagem será adicionada.
-1. Adicione a imagem à coleção de Recursos da página.
-1. Use os operadores para colocar a imagem na página:
-   - Primeiro, use o operador [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) para salvar o estado gráfico atual.
-   - Em seguida, use o operador [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix) para especificar onde a imagem deve ser colocada.
-   - Use o operador [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) para desenhar a imagem na página.
-1. Finalmente, use o operador [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) para salvar o estado gráfico atualizado.
-
-O trecho de código a seguir mostra como usar os operadores de PDF.
+1. Abra o PDF de origem com [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obtenha a [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Adicione o fluxo de imagem de entrada aos recursos da página e mantenha o nome do recurso retornado.
+1. Crie um [Retângulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) que defina a área alvo e construa uma [Matriz](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) a partir de seus limites.
+1. Use [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) para preservar o estado gráfico atual, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) para posicionar a imagem, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) para pintá-la e [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para restaurar o estado anterior.
+1. Salve o documento PDF atualizado.
 
 ```java
-public class WorkingWithOperators {
+public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().get_Item(1);
+        String imageName = page.getResources().getImages().add(imageStream);
 
-    private static String _dataDir = "/home/aspose/pdf-exemplos/Exemplos/Operadores/";
+        Rectangle rectangle = new Rectangle(100, 100, 200, 200, true);
+        Matrix matrix = new Matrix(new double[]{
+                rectangle.getURX() - rectangle.getLLX(),
+                0,
+                0,
+                rectangle.getURY() - rectangle.getLLY(),
+                rectangle.getLLX(),
+                rectangle.getLLY()
+        });
 
-    public static void AddImageUsingOpeartors() {
-
-        // Cria um novo documento PDF
-        Document pdfDocument = new Document(_dataDir + "PDFOperators.pdf");
-
-        // Obtenha a página onde a imagem precisa ser adicionada
-        Page page = pdfDocument.getPages().get_Item(1);
-
-        // Defina as coordenadas
-        int lowerLeftX = 100;
-        int lowerLeftY = 100;
-        int upperRightX = 200;
-        int upperRightY = 200;
-
-        // Carregar imagem em fluxo
-        FileInputStream imageStream = null;
-        try {
-            imageStream = new FileInputStream(_dataDir + "PDFOperators.jpg");
-        } catch (FileNotFoundException e) {
-            // TODO Bloco de captura gerado automaticamente
-            e.printStackTrace();
-        }
-
-        // Adicionar imagem à coleção de Imagens dos Recursos da Página
-        page.getResources().getImages().add(imageStream);
-
-        // Usando o operador GSave: este operador salva o estado gráfico atual
         page.getContents().add(new GSave());
-        // Criar objetos Rectangle e Matrix
-        Rectangle rectangle = new Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-        Matrix matrix = new Matrix(new double[] { rectangle.getURX() - rectangle.getLLX(), 0, 0,
-                rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY() });
-
-        // Usando o operador ConcatenateMatrix (concatenar matriz): define como a imagem
-        // deve ser colocada
         page.getContents().add(new ConcatenateMatrix(matrix));
-
-        XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-        // Usando o operador Do: este operador desenha a imagem
-        page.getContents().add(new Do(ximage.getName()));
-        // Usando o operador GRestore: este operador restaura o estado gráfico
+        page.getContents().add(new Do(imageName));
         page.getContents().add(new GRestore());
-
-        // Salvar documento atualizado
-        pdfDocument.save(_dataDir + "PDFOperators_out.pdf");
+        document.save(outputFile.toString());
     }
+    System.out.println("Image added with PDF operators to " + outputFile);
+}
 ```
 
+## Desenhe conteúdo XForm reutilizável em uma página
 
-## Desenhar XForm na Página usando Operadores
+Use esta abordagem quando a mesma imagem ou gráfico precisar ser renderizado mais de uma vez sem duplicar o recurso no arquivo PDF.
 
-Este tópico demonstra como usar os operadores GSave/GRestore, o operador ConcatenateMatrix para posicionar um xForm e o operador Do para desenhar um xForm em uma página.
-
-O código abaixo envolve o conteúdo existente de um arquivo PDF com o par de operadores GSave/GRestore. Esta abordagem ajuda a obter o estado gráfico inicial no final dos conteúdos existentes. Sem essa abordagem, transformações indesejáveis podem permanecer no final da cadeia de operadores existente.
+1. Abra o PDF de origem com [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), obtenha a [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino e acesse seu [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
+1. Envolva o conteúdo da página existente com [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) e [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para que transformações posteriores não vazem para o fluxo de conteúdo original.
+1. Crie um recurso [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/), adicione a imagem aos recursos do formulário e use [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) mais [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) para desenhar a imagem dentro do formulário.
+1. Coloque o mesmo formulário em coordenadas de múltiplas páginas adicionando uma matriz de tradução e executando o nome do formulário com o operador `Do`.
+1. Restaure o estado dos gráficos e salve o PDF de saída.
 
 ```java
-    public static void DrawXFormUsingOpeartors() {
-        String imageFile = _dataDir + "aspose-logo.jpg";
-        String inFile = _dataDir + "DrawXFormOnPage.pdf";
-        String outFile = _dataDir + "blank-sample2_out.pdf";
+public static void drawXFormOnPage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().get_Item(1);
+        OperatorCollection pageContents = page.getContents();
 
-        Document pdfDocument = new Document(inFile);
-        OperatorCollection pageContents = pdfDocument.getPages().get_Item(1).getContents();
-
-        // O exemplo demonstra
-        // uso dos operadores GSave/GRestore
-        // uso do operador ConcatenateMatrix para posicionar xForm
-        // uso do operador Do para desenhar xForm na página
-
-        // Envolver conteúdos existentes com o par de operadores GSave/GRestore
-        // isso é para obter o estado gráfico inicial no final dos conteúdos existentes
-        // caso contrário, podem permanecer algumas transformações indesejáveis no final da
-        // cadeia de operadores existente
         pageContents.insert(1, new GSave());
         pageContents.add(new GRestore());
-
-        // Adicionar operador de estado gráfico de salvamento para limpar adequadamente o estado gráfico após
-        // novos comandos
         pageContents.add(new GSave());
 
-        // Criar xForm
-        XForm form = XForm.createNewForm(pdfDocument.getPages().get_Item(1), pdfDocument);
-        pdfDocument.getPages().get_Item(1).getResources().getForms().add(form);
+        XForm form = XForm.createNewForm(page, document);
+        page.getResources().getForms().add(form);
+
         form.getContents().add(new GSave());
-
-        // Definir largura e altura da imagem
         form.getContents().add(new ConcatenateMatrix(200, 0, 0, 200, 0, 0));
-
-        // Carregar imagem no fluxo
-        FileInputStream imageStream = null;
-        try {
-            imageStream = new FileInputStream(imageFile);
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-        // Adicionar imagem à coleção de Imagens dos Recursos XForm
-        form.getResources().getImages().add(imageStream);
-        XImage ximage = form.getResources().getImages().get_Item(form.getResources().getImages().size());
-        // Usando o operador Do: este operador desenha a imagem
-        form.getContents().add(new Do(ximage.getName()));
+        String imageName = form.getResources().getImages().add(imageStream);
+        form.getContents().add(new Do(imageName));
         form.getContents().add(new GRestore());
 
-        pageContents.add(new GSave());
-        // Colocar o formulário nas coordenadas x=100 y=500
-        pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, 100, 500));
-        // Desenhar formulário com o operador Do
-        pageContents.add(new Do(form.getName()));
+        addFormAt(pageContents, form.getName(), 100, 500);
+        addFormAt(pageContents, form.getName(), 100, 300);
+
         pageContents.add(new GRestore());
-
-        pageContents.add(new GSave());
-
-        // Colocar o formulário nas coordenadas x=100 y=300
-        pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, 100, 300));
-
-        // Desenhar formulário com o operador Do
-        pageContents.add(new Do(form.getName()));
-        pageContents.add(new GRestore());
-
-        // // Restaurar estado gráfico com GRestore após o GSave
-        pageContents.add(new GRestore());
-        pdfDocument.save(outFile);
+        document.save(outputFile.toString());
     }
+    System.out.println("XForm drawn on page in " + outputFile);
+}
+
+private static void addFormAt(OperatorCollection pageContents, String formName, double x, double y) {
+    pageContents.add(new GSave());
+    pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, x, y));
+    pageContents.add(new Do(formName));
+    pageContents.add(new GRestore());
+}
 ```
 
+## Remover operadores gráficos de uma página
 
-## Remover Objetos Gráficos usando Classes de Operadores
+Use este exemplo quando uma página contém operadores de desenho vetorial que devem ser removidos diretamente do fluxo de conteúdo.
 
-As classes de operadores oferecem grandes recursos para manipulação de PDFs. Quando um arquivo PDF contém gráficos que não podem ser removidos usando o método [DeleteImage](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor#deleteImage--) da classe [PdfContentEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor), as classes de operadores podem ser usadas para removê-los.
+1. Abra o PDF de origem com [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obtenha a [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Itere pelos operadores de conteúdo da página e colete instâncias de [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/) e [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
+1. Exclua os operadores coletados do conteúdo da página e salve o PDF atualizado.
 
-O seguinte trecho de código mostra como remover gráficos. Por favor, note que se o arquivo PDF contiver rótulos de texto para os gráficos, eles podem persistir no arquivo PDF, usando esta abordagem. Portanto, pesquise os operadores gráficos para um método alternativo para excluir tais imagens.
-
-```java
-    public static void RemoveGraphicsOpeartors() {
-        Document pdfDocument  = new Document(_dataDir+ "RemoveGraphicsObjects.pdf");
-        Page page = pdfDocument.getPages().get_Item(2);
-        OperatorCollection oc = page.getContents();
-
-        // Operadores de pintura de caminho usados
-        Operator[] operators = new Operator[] {
-                new Stroke(),
-                new ClosePathStroke(),
-                new Fill()
-        };
-
-        oc.delete(operators);
-        pdfDocument.save(_dataDir+ "No_Graphics_out.pdf");
-    }
-```
-
-
-## Mudando o Espaço de Cor de um Documento PDF
-
-{{% alert color="primary" %}}
-
-Aspose.PDF para Java 9.0.0 suporta a mudança do espaço de cor de um documento PDF. É possível mudar a cor RGB para CMYK e vice-versa.
-
-{{% /alert %}}
-
-Os seguintes métodos foram implementados na classe [Operator](https://reference.aspose.com/java/pdf/com.aspose.pdf/Operator) para permitir que você altere o espaço de cor. Use-o para mudar algumas cores RGB/CMYK específicas para o espaço de cor CMYK/RGB, mantendo o restante do documento PDF como está.
-
-{{% alert color="primary" %}}
-**Mudanças na API Pública**
-Os seguintes métodos são implementados:
-
-- com.aspose.pdf.Operator.SetRGBColorStroke.getCMYKColor(new double[3], new double[4])
-- com.aspose.pdf.Operator.SetRGBColor.getCMYKColor(new double[3], new double[4])
-- com.aspose.pdf.Operator.SetCMYKColorStroke.getRGBColor(new double[4], new double[3])
-- com.aspose.pdf.Operator.SetCMYKColor.getRGBColor(new double[4], new double[3])
-
-{{% /alert %}}
-
-
-O seguinte trecho de código demonstra como mudar o espaço de cor usando Aspose.PDF para Java.
+Esta técnica remove apenas as instruções de desenho direcionadas. Se a página também contiver rótulos de texto relacionados ou outros operadores não gráficos, esses itens permanecerão no fluxo de conteúdo e poderão precisar de uma etapa de limpeza separada.
 
 ```java
-Documento doc = new Documento("input_color.pdf");
-OperatorCollection contents = doc.getPages().get_Item(1).getContents();
-System.out.println("Valores dos operadores de cor RGB no documento pdf");
-for (int j = 1; j <= contents.size(); j++) {
-    Operator oper = contents.get_Item(j);
-    if (oper instanceof Operator.SetRGBColor || oper instanceof Operator.SetRGBColorStroke)
-        try {
-            // Convertendo cor RGB para CMYK
-            System.out.println(oper.toString());
-
-            double[] rgbFloatArray = new double[] { Double.valueOf(oper.getParameters().get(0).toString()), Double.valueOf(oper.getParameters().get(1).toString()), Double.valueOf(oper.getParameters().get(2).toString()), };
-            double[] cmyk = new double[4];
-            if (oper instanceof Operator.SetRGBColor) {
-                ((Operator.SetRGBColor) oper).getCMYKColor(rgbFloatArray, cmyk);
-                contents.set_Item(j, new Operator.SetCMYKColor(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-            } else if (oper instanceof Operator.SetRGBColorStroke) {
-                ((Operator.SetRGBColorStroke) oper).getCMYKColor(rgbFloatArray, cmyk);
-                contents.set_Item(j, new Operator.SetCMYKColorStroke(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-            } else
-                throw new java.lang.Throwable("Comando não suportado");
-
-        } catch (Throwable e) {
-            e.printStackTrace();
+public static void removeGraphicsObjects(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        List<Operator> operatorsToRemove = new ArrayList<>();
+        for (Object item : page.getContents()) {
+            Operator operator = (Operator) item;
+            if (operator instanceof Stroke || operator instanceof ClosePathStroke || operator instanceof Fill) {
+                operatorsToRemove.add(operator);
+            }
         }
-}
-doc.save("input_colorout.pdf");
-
-// Testando o resultado
-System.out.println("Valores dos operadores de cor CMYK convertidos no documento pdf resultante");
-doc = new Documento("input_colorout.pdf");
-contents = doc.getPages().get_Item(1).getContents();
-for (int j = 1; j <= contents.size(); j++) {
-    Operator oper = contents.get_Item(j);
-    if (oper instanceof Operator.SetCMYKColor || oper instanceof Operator.SetCMYKColorStroke) {
-        System.out.println(oper.toString());
+        page.getContents().delete(operatorsToRemove);
+        document.save(outputFile.toString());
     }
+    System.out.println("Graphics operators removed in " + outputFile);
 }
 ```
+
+## Tópicos Relacionados
+
+- [Operações avançadas de PDF em Java](/pdf/java/advanced-operations/)
+- [Trabalhar com imagens em PDF usando Java](/pdf/java/working-with-images/)
+- [Trabalhar com páginas PDF em Java](/pdf/java/working-with-pages/)
+- [Trabalhar com gráficos vetoriais em Java](/pdf/java/working-with-vector-graphics/)

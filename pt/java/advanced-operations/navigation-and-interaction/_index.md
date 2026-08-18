@@ -1,16 +1,20 @@
 ---
-title: Navegação e Interação
+title: Navegação e interação de PDF em Java
 linktitle: Navegação e interação
 type: docs
 weight: 90
-url: /pt/java/navigation-and-interaction/
-description: Esta seção descreve os recursos de trabalho com links, ações e marcadores.
-lastmod: "2021-06-05"
+url: /java/navigation-and-interaction/
+description: Aprenda como trabalhar com links, ações e marcadores de PDF em Java para navegação e comportamento interativo de documentos.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Trabalhe com links, ações e marcadores em arquivos PDF usando Java
+Abstract: Esta seção explica como gerenciar recursos de navegação e interação em documentos PDF com Aspose.PDF para Java. Aprenda como criar e atualizar links, adicionar ações interativas e trabalhar com marcadores para melhorar a navegação em PDF e os fluxos de trabalho de documentos.
 ---
+Aspose.PDF para Java inclui APIs para marcadores, links e ações interativas. Você pode usar esses recursos para melhorar a navegação dentro de um documento, conectar-se a recursos externos e acionar comportamento a partir da interação do usuário.
 
-- [Links](/pdf/pt/java/links/) - você pode criar, atualizar e extrair links facilmente com Java.
-- [Ações](/pdf/pt/java/actions/) - é possível adicionar e obter, criar hyperlinks para arquivos PDF. Além disso, neste artigo, você aprenderá como remover a Ação de Abertura de Documento de um Arquivo PDF e como Especificar a Página do PDF ao Visualizar o Documento.
-- [Marcadores](/pdf/pt/java/bookmarks/)- publicações grandes geralmente incluem uma estrutura de marcadores que pode ser facilmente visualizada e selecionada no Painel de Marcadores, permitindo que você clique em um marcador para ir à página ou capítulo que ele representa. O Painel de Marcadores é um elemento sensível ao conteúdo e é visível na barra lateral apenas se o documento PDF aberto contiver uma estrutura de marcadores.
+- [Trabalhar com links de PDF](/pdf/java/links/)
+- [Trabalhar com ações de PDF](/pdf/java/actions/)
+- [Trabalhar com marcadores de PDF](/pdf/java/bookmarks/)

@@ -17,14 +17,14 @@ Aspose.PDF for Java fornece várias APIs para proteger arquivos PDF com senhas e
 
 ## Proteja documentos PDF em Java
 
-Os exemplos em `ProtectDocumentExamples.java` demonstrar como:
+Os exemplos em `ProtectDocumentExamples.java` demonstram como:
 
-1. Aplicar criptografia a um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) com senhas de usuário e proprietário.
-1. Restringir permissões com [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
-1. Escolha um [CriptoAlgoritmo](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) para os protegidos [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Descriptografar um protegido [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Aplique criptografia a um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) com senhas de usuário e proprietário.
+1. Restrinja as permissões com [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
+1. Escolha um [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) para o [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) protegido.
+1. Descriptografe um [documento] protegido (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Altere as senhas existentes no [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Teste senhas candidatas com [Informações do arquivo PDF](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) e [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Teste as senhas dos candidatos com [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) e [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ## Criptografe um PDF com privilégios restritos
 

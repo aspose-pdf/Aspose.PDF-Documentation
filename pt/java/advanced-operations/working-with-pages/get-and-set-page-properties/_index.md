@@ -1,165 +1,113 @@
 ---
-title: Obter e Definir Propriedades da Página
+title: Obtenha e defina propriedades de páginas PDF em Java
+linktitle: Obtendo e configurando propriedades da página
 type: docs
-weight: 30
-url: /pt/java/get-and-set-page-properties/
-description: Este tópico explica como obter números em um arquivo PDF, obter propriedades da página e determinar a cor da página usando Aspose.PDF para Java.
-lastmod: "2021-06-05"
+weight: 90
+url: /java/get-and-set-page-properties/
+description: Aprenda como inspecionar propriedades de páginas PDF, como contagem, caixas, rotação e informações de cores em Java.
+lastmod: "2026-06-09"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Inspecione a contagem de páginas, caixas e tipo de cor em arquivos PDF com Java
+Abstract: Este artigo explica como inspecionar as propriedades da página usando Aspose.PDF para Java. Abrange a leitura da contagem de páginas, a geração de parágrafos e a verificação da contagem resultante antes de salvar, a impressão de todos os principais valores da caixa de página e a identificação do tipo de cor de cada página.
 ---
+Aspose.PDF para Java pode inspecionar a contagem de páginas, caixas de páginas, rotação e tipo de cor da página.
 
-Aspose.PDF para Java permite ler e definir propriedades de páginas em um arquivo PDF em suas aplicações Java. Esta seção mostra como obter o número de páginas em um arquivo PDF, obter informações sobre as propriedades da página PDF, como cor, e definir propriedades da página.
+## Obtenha a contagem de páginas
 
-## Obter Número de Páginas em um Arquivo PDF
+Use este exemplo quando precisar ler o número total de páginas de um PDF.
 
-Ao trabalhar com documentos, muitas vezes você quer saber quantas páginas eles contêm. Com Aspose.PDF isso não leva mais do que duas linhas de código.
-
-Para obter o número de páginas em um arquivo PDF:
-
-1. Abra o arquivo PDF usando a classe [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-1. Em seguida, use a propriedade Count da coleção [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/PageCollection) (do objeto Document) para obter o número total de páginas no documento.
-
-O trecho de código a seguir mostra como obter o número de páginas de um arquivo PDF.
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Leia o tamanho da coleção de páginas.
+1. Produza a contagem total de páginas.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleGetAndSetPageProperties {
-    // O caminho para o diretório dos documentos.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void GetNumberOfPagesInaPDFFile() {
-
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "GetNumberofPages.pdf");
-
-        // Obter contagem de páginas
-        System.out.println("Contagem de Páginas : " + pdfDocument.getPages().size());
-        _dataDir = _dataDir + "ApplyNumberStyle_out.pdf";
-        pdfDocument.save(_dataDir);
-
+public static void getPageCount(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        System.out.println("Page Count: " + document.getPages().size());
     }
+}
 ```
 
-### Obter contagem de páginas sem salvar o documento
+## Obtenha a contagem de páginas antes de salvar
 
-A menos que o arquivo PDF seja salvo e todos os elementos sejam realmente colocados dentro do arquivo PDF, não podemos obter a contagem de páginas para um documento específico (porque não podemos ter certeza sobre o número de páginas em que todos os elementos serão acomodados).
- No entanto, a partir do lançamento do Aspose.PDF para Java 10.1.0, introduzimos um método chamado [processParagraphs(...)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#processParagraphs--) que fornece a funcionalidade de obter a contagem de páginas para um documento PDF, sem salvar o arquivo. Assim, podemos obter a informação de contagem de páginas instantaneamente. Por favor, tente usar o seguinte trecho de código para cumprir este requisito.
+Use este exemplo quando precisar saber quantas páginas o conteúdo gerado produzirá antes de gravar o arquivo.
+
+1. Crie um novo [documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione conteúdo a uma página.
+1. Processe os parágrafos para forçar o cálculo do layout.
+1. Leia a contagem de páginas resultante e produza-a.
 
 ```java
-public static void GetPageCountWithoutSavingTheDocument() {
-
-        // Para exemplos completos e arquivos de dados, por favor acesse
-        // https://github.com/aspose-pdf/Aspose.Pdf-for-Java
-        // instanciar a instância do Document
-        Document doc = new Document();
-        // adicionar página à coleção de páginas do arquivo PDF
-        Page page = doc.getPages().add();
-        // criar um loop para adicionar 300 instâncias de TextFragment
-        for (int i = 0; i < 300; i++)
-            // adicionar TextFragment à coleção de parágrafos da primeira página do PDF
-            page.getParagraphs().add(new TextFragment("Teste de contagem de páginas"));
-        // processar parágrafos para obter informações de contagem de páginas
-        doc.processParagraphs();
-        System.out.println("Número de Páginas no PDF = " + doc.getPages().size());
+public static void getPageCountWithoutSaving(Path inputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        for (int i = 0; i < 300; i++) {
+            page.getParagraphs().add(new TextFragment("Pages count test"));
+        }
+        document.processParagraphs();
+        System.out.println("Number of pages in document = " + document.getPages().size());
     }
+}
 ```
 
-## Obter Propriedades da Página
+## Obtenha propriedades da caixa de página
 
-Cada página em um arquivo PDF possui várias propriedades, como largura, altura, bleed-, crop- e trimbox. Aspose.PDF permite que você acesse essas propriedades.
+Use este exemplo quando precisar inspecionar todas as principais dimensões da caixa e valores de rotação de página.
 
-### **Compreendendo as Propriedades da Página: a Diferença entre as Propriedades Artbox, BleedBox, CropBox, MediaBox, TrimBox e Rect**
-
-- **Caixa de mídia**: A caixa de mídia é a maior caixa da página. Ela corresponde ao tamanho da página (por exemplo, A4, A5, Carta dos EUA, etc.) selecionado quando o documento foi impresso em PostScript ou PDF. Em outras palavras, a caixa de mídia determina o tamanho físico do meio no qual o documento PDF é exibido ou impresso.
-- **Caixa de sangramento**: Se o documento tiver sangramento, o PDF também terá uma caixa de sangramento.
- Bleed é a quantidade de cor (ou arte) que se estende além da borda de uma página. É usado para garantir que, quando o documento for impresso e cortado no tamanho (“refilado”), a tinta irá até a borda da página. Mesmo que a página seja mal refilada - cortada ligeiramente fora das marcas de corte - não aparecerão bordas brancas na página.
-- **Caixa de refilo**: A caixa de refilo indica o tamanho final de um documento após a impressão e o corte.
-- **Caixa de arte**: A caixa de arte é a caixa desenhada ao redor do conteúdo real das páginas em seus documentos. Esta caixa de página é usada ao importar documentos PDF em outras aplicações.
-- **Caixa de corte**: A caixa de corte é o tamanho da “página” em que seu documento PDF é exibido no Adobe Acrobat. Na visualização normal, apenas o conteúdo da caixa de corte é exibido no Adobe Acrobat. Para descrições detalhadas dessas propriedades, leia a especificação Adobe.Pdf, particularmente 10.10.1 Limites de Página.
-- **Page.Rect**: a interseção (retângulo comumente visível) do MediaBox e DropBox. A imagem abaixo ilustra essas propriedades.
-
-Para mais detalhes, por favor visite [esta página](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
-
-### Acessando Propriedades da Página
-
-A classe [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) fornece todas as propriedades relacionadas a uma página PDF específica. Todas as páginas dos arquivos PDF estão contidas na coleção [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/PageCollection) do objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-A partir daí, é possível acessar objetos Page individuais usando seu índice, ou percorrer a coleção, usando um loop foreach, para obter todas as páginas. Uma vez que uma página individual é acessada, podemos obter suas propriedades. O seguinte trecho de código mostra como obter propriedades de página.
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e acesse a página de destino.
+1. Colete os valores da caixa de página em um mapa.
+1. Produza as dimensões e as informações de rotação da página.
 
 ```java
-    public static void AccessingPageProperties() {
+public static void getPageProperties(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        Map<String, Rectangle> boxes = new LinkedHashMap<>();
+        boxes.put("ArtBox", page.getArtBox());
+        boxes.put("BleedBox", page.getBleedBox());
+        boxes.put("CropBox", page.getCropBox());
+        boxes.put("MediaBox", page.getMediaBox());
+        boxes.put("TrimBox", page.getTrimBox());
+        boxes.put("Rect", page.getRect());
 
-        Document pdfDocument = new Document("input.pdf");
+        for (Map.Entry<String, Rectangle> entry : boxes.entrySet()) {
+            Rectangle box = entry.getValue();
+            System.out.println(entry.getKey() + " : Height=" + box.getHeight()
+                    + ",Width=" + box.getWidth()
+                    + ",LLX=" + box.getLLX()
+                    + ",LLY=" + box.getLLY()
+                    + ",URX=" + box.getURX()
+                    + ",URY=" + box.getURY());
+        }
 
-        // Obter a coleção de páginas
-        PageCollection pageCollection = pdfDocument.getPages();
-
-        // Obter uma página específica
-        Page pdfPage = pageCollection.get_Item(1);
-
-        // Obter as propriedades da página
-        System.out.printf("\n ArtBox : Altura = " + pdfPage.getArtBox().getHeight() + ", Largura = "
-                + pdfPage.getArtBox().getWidth() + ", LLX = " + pdfPage.getArtBox().getLLX() + ", LLY = "
-                + pdfPage.getArtBox().getLLY() + ", URX = " + pdfPage.getArtBox().getURX() + ", URY = "
-                + pdfPage.getArtBox().getURY());
-        System.out.printf("\n BleedBox : Altura = " + pdfPage.getBleedBox().getHeight() + ", Largura = "
-                + pdfPage.getBleedBox().getWidth() + ", LLX = " + pdfPage.getBleedBox().getLLX() + ", LLY = "
-                + pdfPage.getBleedBox().getLLY() + ", URX = " + pdfPage.getBleedBox().getURX() + ", URY = "
-                + pdfPage.getBleedBox().getURY());
-        System.out.printf("\n CropBox : Altura = " + pdfPage.getCropBox().getHeight() + ", Largura = "
-                + pdfPage.getCropBox().getWidth() + ", LLX = " + pdfPage.getCropBox().getLLX() + ", LLY = "
-                + pdfPage.getCropBox().getLLY() + ", URX = " + pdfPage.getCropBox().getURX() + ", URY = "
-                + pdfPage.getCropBox().getURY());
-        System.out.printf("\n MediaBox : Altura = " + pdfPage.getMediaBox().getHeight() + ", Largura = "
-                + pdfPage.getMediaBox().getWidth() + ", LLX = " + pdfPage.getMediaBox().getLLX() + ", LLY = "
-                + pdfPage.getMediaBox().getLLY() + ", URX = " + pdfPage.getMediaBox().getURX() + ", URY = "
-                + pdfPage.getMediaBox().getURY());
-        System.out.printf("\n TrimBox : Altura = " + pdfPage.getTrimBox().getHeight() + ", Largura = "
-                + pdfPage.getTrimBox().getWidth() + ", LLX = " + pdfPage.getTrimBox().getLLX() + ", LLY = "
-                + pdfPage.getTrimBox().getLLY() + ", URX = " + pdfPage.getTrimBox().getURX() + ", URY = "
-                + pdfPage.getTrimBox().getURY());
-        System.out.printf(
-                "\n Rect : Altura = " + pdfPage.getRect().getHeight() + ", Largura = " + pdfPage.getRect().getWidth()
-                        + ", LLX = " + pdfPage.getRect().getLLX() + ", LLY = " + pdfPage.getRect().getLLY() + ", URX = "
-                        + pdfPage.getRect().getURX() + ", URY = " + pdfPage.getRect().getURY());
-        System.out.printf("\n Número da Página :- " + pdfPage.getNumber());
-        System.out.printf("\n Rotacionar :-" + pdfPage.getRotate());
+        System.out.println("Page Number : " + page.getNumber());
+        System.out.println("Rotate : " + page.getRotate());
     }
+}
 ```
 
-## Determinar Cor da Página
+## Obtenha o tipo de cor de cada página
 
-A classe [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) fornece as propriedades relacionadas a uma página específica em um documento PDF, incluindo que tipo de cor - RGB, preto e branco, escala de cinza ou indefinido - a página utiliza.
+Use este exemplo quando precisar identificar se as páginas são em preto e branco, em tons de cinza ou RGB.
 
-Todas as páginas dos arquivos PDF estão contidas na coleção [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection). A propriedade [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ColorType) especifica a cor dos elementos na página. Para obter ou determinar as informações de cor de uma página PDF específica, use a propriedade [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ColorType) do objeto da classe [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page).
-
-O trecho de código a seguir mostra como iterar através de cada página do arquivo PDF para obter informações de cor.
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere por todas as páginas e leia cada página [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
+1. Converta o valor enum em texto legível e produza o resultado.
 
 ```java
-    public static void DeterminePageColor () {
-
-        Document pdfDocument = new Document("input.pdf");
-        // Iterar através de todas as páginas do arquivo PDF
-        for (int pageCount = 1; pageCount <= pdfDocument.getPages().size(); pageCount++) {
-            // Obter as informações do tipo de cor para uma página PDF específica
-            int pageColorType = pdfDocument.getPages().get_Item(pageCount).getColorType();
-            switch (pageColorType) {
-            case 2:
-                System.out.println("Página # -" + pageCount + " é Preto e branco..");
-                break;
-            case 1:
-                System.out.println("Página # -" + pageCount + " é Escala de Cinza...");
-                break;
-            case 0:
-                System.out.println("Página # -" + pageCount + " é RGB..");
-                break;
-            case 3:
-                System.out.println("Página # -" + pageCount + " Cor é indefinida..");
-                break;
-            }
+public static void getPageColorType(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int pageNumber = 1; pageNumber <= document.getPages().size(); pageNumber++) {
+            ColorType pageColorType = document.getPages().get_Item(pageNumber).getColorType();
+            String colorDescription = switch (pageColorType) {
+                case BlackAndWhite -> "Black and white";
+                case Grayscale -> "Gray Scale";
+                case Rgb -> "RGB";
+                case Undefined -> "undefined";
+            };
+            System.out.println("Page # " + pageNumber + " is " + colorDescription + ".");
         }
     }
 }

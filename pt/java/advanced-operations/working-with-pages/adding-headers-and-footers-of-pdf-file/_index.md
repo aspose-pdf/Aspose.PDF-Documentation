@@ -1,216 +1,218 @@
 ---
-title: Adicionar Cabeçalho e Rodapé em PDF
-linktitle: Adicionar Cabeçalho e Rodapé
+title: Adicionar cabeçalhos e rodapés de PDF em Java
+linktitle: Adicionando cabeçalho e rodapé ao PDF
 type: docs
-weight: 70
-url: /pt/java/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF para Java permite que você adicione cabeçalhos e rodapés ao seu arquivo PDF usando a classe TextStamp.
-lastmod: "2021-06-05"
+weight: 50
+url: /java/add-headers-and-footers-of-pdf-file/
+description: Aprenda como adicionar cabeçalhos e rodapés a arquivos PDF em Java usando texto, imagens e conteúdo estruturado.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Adicione cabeçalhos e rodapés a arquivos PDF com Java
+Abstract: Este artigo mostra como adicionar cabeçalhos e rodapés a documentos PDF usando Aspose.PDF para Java. Abrange texto, numeração de páginas, HTML, imagem, tabela e conteúdo de cabeçalho e rodapé baseado em LaTeX.
 ---
+Aspose.PDF para Java permite atribuir objetos `HeaderFooter` a cada página e preenchê-los com diferentes tipos de conteúdo.
 
-Carimbos em PDF são frequentemente usados em contratos, relatórios e materiais restritos, para provar que os documentos foram revisados e marcados como "lido", "qualificado" ou "confidencial", etc. Este artigo mostrará como podemos adicionar carimbos de imagem e carimbos de texto a documentos PDF usando **Aspose.PDF para Java**.
+## Adicione cabeçalhos e rodapés de texto
 
-Se você ler os trechos de código acima linha por linha, deve achar que a sintaxe e a lógica do código são bastante fáceis de entender.
+Use este exemplo quando precisar de conteúdo de texto simples na parte superior e inferior de cada página.
 
-## Adicionando Texto no Cabeçalho do Arquivo PDF
-
-Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) para adicionar texto no cabeçalho de um arquivo PDF.
- TextStamp class fornece as propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar texto no cabeçalho, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Page para adicionar o texto no cabeçalho do PDF.
-
-Você precisa definir a propriedade TopMargin de forma que ajuste o texto na área do cabeçalho do seu PDF. Você também precisa definir HorizontalAlignment para Center e VerticalAlignment para Top.
-
-O seguinte trecho de código mostra como adicionar texto no cabeçalho de um arquivo PDF com Java.
+1. Crie objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) e adicione fragmentos de texto.
+1. Configure margens para o cabeçalho e rodapé.
+1. Aplique-os a cada página do PDF de origem e salve o resultado.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Demo header"));
 
-import com.aspose.pdf.*;
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Demo footer"));
 
-public class ExampleAddPDFHeaderandFooter {
-    // O caminho para o diretório de documentos.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-    public static void AddingTextInHeaderOfPDFFile() {
-
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
-
-        // Criar cabeçalho
-        TextStamp textStamp = new TextStamp("Header Text");
-
-        // Definir propriedades do carimbo
-        textStamp.setTopMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Top);
-
-        // Adicionar cabeçalho em todas as páginas
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        // Salvar documento atualizado
-        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## Adicionando Texto no Rodapé do Arquivo PDF
-
-Você pode usar a classe TextStamp para adicionar texto no rodapé de um arquivo PDF. A classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar texto no rodapé, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades requeridas. Depois disso, você pode chamar o método AddStamp da Página para adicionar o texto no rodapé do PDF.
-
-O trecho de código a seguir mostra como adicionar texto no rodapé de um arquivo PDF com Java.
-
-```java
-    public static void AddingTextInFooterOfPDFFile() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
-        // Criar rodapé
-        TextStamp textStamp = new TextStamp("Texto do Rodapé");
-        // Definir propriedades do carimbo
-        textStamp.setBottomMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // Adicionar rodapé em todas as páginas
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
-        }
-        _dataDir = _dataDir + "TextinFooter_out.pdf";
-        // Salvar arquivo PDF atualizado
-        pdfDocument.save(_dataDir);
-    }
-```
-
-
-## Adicionando Imagem no Cabeçalho do Arquivo PDF
-
-Você pode usar a classe [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) para adicionar uma imagem no cabeçalho de um arquivo PDF. A classe Image Stamp fornece propriedades necessárias para criar um carimbo baseado em imagem, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar uma imagem no cabeçalho, você precisa criar um objeto Document e um objeto Image Stamp usando as propriedades necessárias. Depois disso, você pode chamar o método [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) da Página para adicionar a imagem no cabeçalho do PDF.
-
-```java
-public static void AddingImageInHeaderOfPDFFile() {
-
-// Abrir documento
-Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
-
-// Criar cabeçalho
-ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
-
-// Definir propriedades do carimbo
-imageStamp.setTopMargin(10);
-imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-imageStamp.setVerticalAlignment(VerticalAlignment.Top);
-// Adicionar cabeçalho em todas as páginas
-for (Page page : pdfDocument.getPages()) {
-page.addStamp(imageStamp);
-}
-
-_dataDir = _dataDir + "ImageInHeader_out.pdf";
-
-// Salvar arquivo PDF atualizado
-pdfDocument.save(_dataDir);
 }
 ```
 
+## Adicione cabeçalhos e rodapés com numeração de páginas
 
-O seguinte trecho de código mostra como adicionar uma imagem no cabeçalho de um arquivo PDF com Java.
+Use este exemplo quando o cabeçalho ou rodapé mostrar o número da página atual e a contagem total de páginas.
 
-## Adicionando Imagem no Rodapé de um Arquivo PDF
-
-Você pode usar a classe Image Stamp para adicionar imagem no rodapé de um arquivo PDF. A classe Image Stamp fornece as propriedades necessárias para criar um carimbo baseado em imagem, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar uma imagem no rodapé, você precisa criar um objeto Document e um objeto Image Stamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Page para adicionar a imagem no rodapé do PDF.
-
-{{% alert color="primary" %}}
-
-Você precisa definir a propriedade BottomMargin de tal forma que ajuste a imagem na área do rodapé do seu PDF. Você também precisa definir [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) para `Center` e [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) para `Bottom`.
-
-{{% /alert %}}
-
-O seguinte trecho de código mostra como adicionar uma imagem no rodapé de um arquivo PDF com Java.
+1. Crie objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) com espaços reservados para numeração de páginas.
+1. Configure margens para ambos os objetos.
+1. Aplique-os a cada página e salve o PDF atualizado.
 
 ```java
-    public static void AddingImageInFooterOfPDFFile() {
+public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Page $p from $P"));
 
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
 
-        // Criar rodapé
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // Definir propriedades do carimbo
-        imageStamp.setBottomMargin(10);
-        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // Adicionar rodapé em todas as páginas
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(imageStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        _dataDir = _dataDir + "ImageInFooter_out.pdf";
-
-        // Salvar arquivo PDF atualizado
-        pdfDocument.save(_dataDir);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## Adicionando diferentes Cabeçalhos em um Arquivo PDF
+## Adicione cabeçalhos e rodapés HTML
 
-Sabemos que podemos adicionar TextStamp na seção de Cabeçalho/Rodapé do documento usando as propriedades TopMargin ou Bottom Margin, mas às vezes podemos ter a necessidade de adicionar múltiplos cabeçalhos/rodapés em um único documento PDF.
- **Aspose.PDF for Java** explica como fazer isso.
+Use este exemplo quando o conteúdo do cabeçalho e rodapé incluir formatação HTML embutida.
 
-Para cumprir este requisito, criaremos objetos individuais [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) (o número de objetos depende do número de cabeçalhos/rodapés necessários) e os adicionaremos ao documento PDF. Também podemos especificar diferentes informações de formatação para cada objeto de carimbo individual. No exemplo a seguir, criamos um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) e três objetos [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) e, em seguida, usamos o método [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) da página para adicionar o texto na seção do cabeçalho do PDF. O snippet de código a seguir mostra como adicionar uma imagem no rodapé de um arquivo PDF com Aspose.PDF para Java.
+1. Crie objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) e adicione conteúdo [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/).
+1. Configure margens para posicionamento.
+1. Atribua o cabeçalho e rodapé a cada página e salve o documento.
 
 ```java
-public static void AddingDifferentHeadersInOnePDFFile() {
+public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
 
-        // Abrir documento de origem
-        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
 
-        // Criar três carimbos
-        TextStamp stamp1 = new TextStamp("Cabeçalho 1");
-        TextStamp stamp2 = new TextStamp("Cabeçalho 2");
-        TextStamp stamp3 = new TextStamp("Cabeçalho 3");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // Definir alinhamento do carimbo (colocar carimbo no topo da página, centralizado horizontalmente)
-        stamp1.setVerticalAlignment (VerticalAlignment.Top);
-        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Especificar o estilo da fonte como Negrito
-        stamp1.getTextState().setFontStyle(FontStyles.Bold);
-        // Definir a cor do primeiro plano do texto como vermelho
-        stamp1.getTextState().setForegroundColor(Color.getRed());
-        // Especificar o tamanho da fonte como 14
-        stamp1.getTextState().setFontSize(14);
-
-        // Agora precisamos definir o alinhamento vertical do segundo objeto de carimbo como Top
-        stamp2.setVerticalAlignment(VerticalAlignment.Top);
-        // Definir informações de alinhamento horizontal para o carimbo como centralizado
-        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Definir o fator de zoom para o objeto de carimbo
-        stamp2.setZoom (10);
-
-        // Definir a formatação do terceiro objeto de carimbo
-        // Especificar informações de alinhamento vertical para o objeto de carimbo como TOP
-        stamp3.setVerticalAlignment(VerticalAlignment.Top);
-        // Definir informações de alinhamento horizontal para o objeto de carimbo como centralizado
-        stamp3.setHorizontalAlignment (HorizontalAlignment.Center);
-        // Definir o ângulo de rotação para o objeto de carimbo
-        stamp3.setRotateAngle(35);
-        // Definir rosa como cor de fundo para o carimbo
-        stamp3.getTextState().setBackgroundColor (Color.getPink());
-        
-        // Alterar informações da fonte do carimbo para Verdana
-        stamp3.getTextState().setFont (FontRepository.findFont("Verdana"));
-        // Primeiro carimbo é adicionado na primeira página;
-        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
-        // Segundo carimbo é adicionado na segunda página;
-        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
-        // Terceiro carimbo é adicionado na terceira página.
-        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
-
-        _dataDir = _dataDir + "multiheader_out.pdf";
-
-        // Salvar arquivo PDF atualizado
-        pdfDocument.save(_dataDir);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
     }
+}
+```
 
+## Adicione cabeçalhos e rodapés de imagens
+
+Use este exemplo quando o cabeçalho e o rodapé exibirem uma imagem em cada página.
+
+1. Crie objetos [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) e adicione-os aos contêineres de cabeçalho e rodapé.
+1. Configure as margens e atribua os containers a cada página.
+1. Salve o PDF atualizado.
+
+```java
+public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
+    Image headerImage = new Image();
+    headerImage.setFile(imageFile.toString());
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(headerImage);
+
+    Image footerImage = new Image();
+    footerImage.setFile(imageFile.toString());
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(footerImage);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            MarginInfo margin = new MarginInfo();
+            margin.setLeft(50);
+            header.setMargin(margin);
+            footer.setMargin(margin);
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Adicione cabeçalhos e rodapés baseados em tabelas
+
+Use este exemplo quando o conteúdo do cabeçalho e rodapé precisar usar layout de tabela e estilo de texto.
+
+1. Crie os estilos de texto e objetos de tabela necessários.
+1. Adicione as tabelas aos contêineres [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/).
+1. Aplique o cabeçalho e rodapé a cada página e salve o documento.
+
+```java
+public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
+    TextState textStateHeader = new TextState();
+    textStateHeader.setFont(FontRepository.findFont("Arial"));
+    textStateHeader.setFontSize(12);
+    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
+
+    TextState textStateFooter = new TextState();
+    textStateFooter.setFont(FontRepository.findFont("Arial"));
+    textStateFooter.setFontSize(12);
+    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
+
+    HeaderFooter header = new HeaderFooter();
+    HeaderFooter footer = new HeaderFooter();
+
+    Table tableHeader = new Table();
+    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
+    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
+
+    Table table = new Table();
+    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
+    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
+
+    header.getParagraphs().add(tableHeader);
+    footer.getParagraphs().add(table);
+    footer.getMargin().setLeft(150);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Adicione cabeçalhos e rodapés LaTeX
+
+Use este exemplo quando o cabeçalho e o rodapé devem renderizar conteúdo TeX ou LaTeX.
+
+1. Abra o PDF de origem e determine a contagem total de páginas.
+1. Crie conteúdo [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) para o cabeçalho e rodapé de cada página.
+1. Atribua o conteúdo e salve o documento.
+
+```java
+public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int pageCount = document.getPages().size();
+        for (int i = 1; i <= pageCount; i++) {
+            HeaderFooter header = new HeaderFooter();
+            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
+
+            HeaderFooter footer = new HeaderFooter();
+            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
+
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
 }
 ```

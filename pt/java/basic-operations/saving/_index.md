@@ -19,9 +19,9 @@ Aspose.PDF para Java oferece várias maneiras de salvar um documento, dependendo
 
 Você pode salvar um documento:
 
-1. Salve o [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) diretamente para um arquivo no disco.
-1. Salve o [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para um `OutputStream`.
-1. Converta o [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) com [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) e salve-o em um formato padrão, como [Formato PDF](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
+1. Salve o [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) diretamente em um arquivo no disco.
+1. Salve o [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) em `OutputStream`.
+1. Converta o [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) com [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) e salve-o em um formato padrão como [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
 
 ## Salvar documento em arquivo
 

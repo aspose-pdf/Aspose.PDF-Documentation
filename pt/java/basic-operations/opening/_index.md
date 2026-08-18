@@ -21,7 +21,7 @@ Você pode abrir um documento PDF:
 
 1. Abra um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) diretamente de um caminho de arquivo.
 1. Abra um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) de um `InputStream`.
-1. Abra um criptografado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) fornecendo a senha.
+1. Abra um [Documento] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) criptografado fornecendo a senha.
 
 ## Abrir documento do arquivo
 

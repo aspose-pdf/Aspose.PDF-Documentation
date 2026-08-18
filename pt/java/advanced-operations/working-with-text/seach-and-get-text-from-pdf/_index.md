@@ -1,176 +1,311 @@
 ---
-title: Pesquisar e Obter Texto das Páginas de um Documento PDF
-linktitle: Pesquisar e Obter Texto
+title: Pesquise e extraia texto PDF em Java
+linktitle: Pesquise e obtenha texto
 type: docs
 weight: 60
-url: /pt/java/search-and-get-text-from-pdf/
-description: Este artigo explica como usar várias ferramentas para pesquisar e obter texto de documentos PDF. Podemos pesquisar com expressão regular em páginas específicas ou em todo o documento.
-lastmod: "2021-06-05"
+url: /java/search-and-get-text-from-pdf/
+description: Aprenda como pesquisar, inspecionar e extrair texto de documentos PDF em Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Pesquise texto em PDF e inspecione fragmentos extraídos em Java
+Abstract: Este artigo explica como pesquisar e extrair texto de documentos PDF usando Aspose.PDF para Java. Abrange TextAbsorber e TextFragmentAbsorber, incluindo extração baseada em região, pesquisas específicas de página, correspondência de regex e frase, inserção de hiperlink, inspeção de texto estilizado e realce de fragmentos.
 ---
+Aspose.PDF para Java oferece suporte à extração de texto bruto e pesquisa em nível de fragmento com coordenadas, estilos e correspondência de regex.
 
-## Pesquisar e Obter Texto de Todas as Páginas de um Documento PDF
+## Extraia texto de todas as páginas com TextAbsorber
 
-TextFragmentAbsorber permite que você encontre texto, correspondendo a uma frase específica, de todas as páginas de um documento PDF.
+Use este exemplo quando precisar de texto simples extraído de uma região selecionada do documento em todas as páginas.
 
-Para pesquisar texto em todo o documento, chame o método accept() da coleção [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page).
- O método [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) aceita um objeto TextFragmentAbsorber como parâmetro, que retorna uma coleção de objetos TextFragment. Percorra todos os fragmentos para obter suas propriedades, por exemplo, Texto, Posição, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor etc.
-
-O trecho de código a seguir mostra como pesquisar em todo o documento e exibir todas as correspondências em um console.
+1. Abra o documento PDF de origem.
+1. Crie `TextExtractionOptions` e `TextSearchOptions` baseado na região.
+1. Execute `TextAbsorber` em todas as páginas e produza o texto extraído.
 
 ```java
-// Abrir documento
-Document pdfDocument = new Document("input.pdf");
+public static void textAbsorberSearch(Path inputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            TextExtractionOptions textExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+            TextSearchOptions textSearchOptions = new TextSearchOptions(new Rectangle(0, 0, 842, 250, true));
+            TextAbsorber absorber = new TextAbsorber(textExtractionOptions, textSearchOptions);
 
-// Criar objeto TextAbsorber para encontrar todas as instâncias da frase de busca de entrada
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("sample");
-
-// Aceitar o absorvedor para todas as páginas
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// Obter os fragmentos de texto extraídos em uma coleção
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// Percorrer os fragmentos
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    System.out.println("Texto :- " + textFragment.getText());
-    System.out.println("Posição :- " + textFragment.getPosition());
-    System.out.println("XIndent :- " + textFragment.getPosition().getXIndent());
-    System.out.println("YIndent :- " + textFragment.getPosition().getYIndent());
-    System.out.println("Fonte - Nome :- " + textFragment.getTextState().getFont().getFontName());
-    System.out.println("Fonte - É Acessível :- " + textFragment.getTextState().getFont().isAccessible());
-    System.out.println("Fonte - Está Incorporada - " + textFragment.getTextState().getFont().isEmbedded());
-    System.out.println("Fonte - É Subconjunto :- " + textFragment.getTextState().getFont().isSubset());
-    System.out.println("Tamanho da Fonte :- " + textFragment.getTextState().getFontSize());
-    System.out.println("Cor de Primeiro Plano :- " + textFragment.getTextState().getForegroundColor());
-}
+            document.getPages().accept(absorber);
+            System.out.println("Text fragments found: " + absorber.getText());
+        }
+    }
 ```
 
-Para pesquisar texto em uma página específica e obter propriedades associadas a ele, forneça o índice da página:
+## Extraia texto de uma página com TextAbsorber
+
+Use este exemplo quando a extração de texto simples deve ser limitada a uma página.
+
+1. Abra o documento PDF de origem.
+1. Configure a extração de texto e as opções de pesquisa com a região de destino.
+1. Execute `TextAbsorber` na página selecionada e produza o resultado.
 
 ```java
-// Aceitar o absorvedor para a primeira página do documento
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber);
-```
+public static void textAbsorberSearchPage(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextExtractionOptions textExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+        TextSearchOptions textSearchOptions = new TextSearchOptions(new Rectangle(0, 0, 842, 250, true));
+        TextAbsorber absorber = new TextAbsorber(textExtractionOptions, textSearchOptions);
 
-## Pesquisar e Obter Segmentos de Texto das Páginas do PDF
-
-Para pesquisar segmentos de texto em todas as páginas de um documento, obtenha objetos TextFragment de um documento.
-
-TextFragmentAbsorber permite encontrar texto que corresponde a uma frase específica em todas as páginas de um documento PDF. Para pesquisar texto em todo o documento, chame o método [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) da coleção [Pages](https://reference.aspose.com/pdf//java/com.aspose.pdf/pagecollection). O método [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) leva um objeto TextFragmentAbsorber como parâmetro, que retorna uma coleção de objetos TextFragment.
-
-{{% alert color="primary" %}}
-
-Quando a coleção TextFragmentCollection foi extraída do documento, faça um loop através dela para obter a coleção TextSegmentCollection de cada objeto TextFragment.
- Após isso, você pode obter as propriedades individuais do objeto TextSegment.
-
-{{% /alert %}}
-
-O trecho de código a seguir mostra como pesquisar segmentos de texto em todas as páginas.
-
-```java
-// Abrir documento
-Document pdfDocument = new Document("input.pdf");
-
-// Criar objeto TextAbsorber para encontrar todas as instâncias da frase de busca de entrada
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("sample");
-
-// Aceitar o absorvedor para a primeira página do documento
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// Obter os fragmentos de texto extraídos em uma coleção
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// Percorrer os fragmentos de texto
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    // Iterar através dos segmentos de texto
-    for (TextSegment textSegment : (Iterable<TextSegment>) textFragment.getSegments()) {
-        System.out.println("Texto :- " + textSegment.getText());
-        System.out.println("Posição :- " + textSegment.getPosition());
-        System.out.println("XIndent :- " + textSegment.getPosition().getXIndent());
-        System.out.println("YIndent :- " + textSegment.getPosition().getYIndent());
-        System.out.println("Fonte - Nome :- " + textSegment.getTextState().getFont().getFontName());
-        System.out.println("Fonte - É Acessível :- " + textSegment.getTextState().getFont().isAccessible());
-        System.out.println("Fonte - Está Incorporada - " + textSegment.getTextState().getFont().isEmbedded());
-        System.out.println("Fonte - É Subconjunto :- " + textSegment.getTextState().getFont().isSubset());
-        System.out.println("Tamanho da Fonte :- " + textSegment.getTextState().getFontSize());
-        System.out.println("Cor de Primeiro Plano :- " + textSegment.getTextState().getForegroundColor());
+        document.getPages().get_Item(2).accept(absorber);
+        System.out.println("Text fragments found: " + absorber.getText());
     }
 }
 ```
 
-Para buscar um segmento de texto específico e obter as propriedades associadas, especifique o índice da página para a página que você deseja buscar:
+## Inspecione todos os fragmentos de texto no documento
+
+Use este exemplo quando precisar de conteúdo de texto junto com metadados de fonte, posição e cor.
+
+1. Abra o documento PDF de origem.
+1. Execute `TextFragmentAbsorber` em todas as páginas.
+1. Itere pelos fragmentos e produza seus metadados.
 
 ```java
-// Aceitar o absorvedor para a primeira página do documento.
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber);
-```
+public static void textFragmentAbsorberSearch(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+        document.getPages().accept(absorber);
 
-## Buscar e Obter Texto das páginas usando Expressão Regular
-
-TextFragmentAbsorber ajuda você a buscar e recuperar texto de todas as páginas de um documento, com base em uma expressão regular.
-
-Para buscar e obter texto de um documento:
-
-1. Passe o termo de busca como uma expressão regular para o construtor do TextFragmentAbsorber.
-1. Defina a propriedade TextSearchOptions do objeto TextFragmentAbsorber.
-   Esta propriedade requer um objeto TextSearchOptions: passe true para seu construtor ao criar um novo objeto.
-1. Para recuperar o texto correspondente de todas as páginas, chame o método [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) da coleção [Pages](https://reference.aspose.com/pdf//java/com.aspose.pdf/pagecollection).
-
-   TextFragmentAbsorber retorna um TextFragmentCollection contendo todos os fragmentos que correspondem aos critérios especificados pela expressão regular.
-
-O trecho de código a seguir mostra como pesquisar todas as páginas de um documento e obter texto com base em uma expressão regular.
-
-```java
-// Abrir um documento
-Document pdfDocument = new Document("source.pdf");
-
-// Criar objeto TextAbsorber para encontrar todas as instâncias da frase de pesquisa de entrada
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // como 1999-2000
-
-// Definir a opção de pesquisa de texto para especificar o uso de expressão regular
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.setTextSearchOptions(textSearchOptions);
-
-// Aceitar o absorvedor para a primeira página do documento
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// Obter os fragmentos de texto extraídos na coleção
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// Percorrer os fragmentos
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    System.out.println("Texto :- " + textFragment.getText());
-    System.out.println("Posição :- " + textFragment.getPosition());
-    System.out.println("XIndent :- " + textFragment.getPosition().getXIndent());
-    System.out.println("YIndent :- " + textFragment.getPosition().getYIndent());
-    System.out.println("Fonte - Nome :- " + textFragment.getTextState().getFont().getFontName());
-    System.out.println("Fonte - É Acessível :- " + textFragment.getTextState().getFont().isAccessible());
-    System.out.println("Fonte - Está Incorporada - " + textFragment.getTextState().getFont().isEmbedded());
-    System.out.println("Fonte - É Subconjunto :- " + textFragment.getTextState().getFont().isSubset());
-    System.out.println("Tamanho da Fonte :- " + textFragment.getTextState().getFontSize());
-    System.out.println("Cor do Primeiro Plano :- " + textFragment.getTextState().getForegroundColor());
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+            System.out.println("XIndent: " + fragment.getPosition().getXIndent());
+            System.out.println("YIndent: " + fragment.getPosition().getYIndent());
+            System.out.println("Font - Name: " + fragment.getTextState().getFont().getFontName());
+            System.out.println("Font - IsAccessible: " + fragment.getTextState().getFont().isAccessible());
+            System.out.println("Font - IsEmbedded: " + fragment.getTextState().getFont().isEmbedded());
+            System.out.println("Font - IsSubset: " + fragment.getTextState().getFont().isSubset());
+            System.out.println("Font Size: " + fragment.getTextState().getFontSize());
+            System.out.println("Foreground Color: " + fragment.getTextState().getForegroundColor());
+        }
+    }
 }
 ```
 
+## Pesquise uma frase em uma página específica
 
-Para buscar texto em uma página específica e obter suas propriedades, especifique o índice da página:
+Use este exemplo quando uma palavra alvo deve ser encontrada apenas em uma página selecionada.
+
+1. Abra o documento PDF de origem.
+1. Crie `TextFragmentAbsorber` com a frase alvo.
+1. Visite a página escolhida e produza as posições dos fragmentos correspondentes.
 
 ```java
-// Aceite o absorvedor para a primeira página do documento.
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber)
+public static void textFragmentAbsorberSearchPage(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber("whale");
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
 ```
 
-Para buscar uma string em maiúsculas ou minúsculas, você pode considerar usar expressão regular.
+## Continue uma pesquisa sequencial nas páginas
+
+Use este exemplo quando quiser reutilizar um absorvedor enquanto passa de uma pesquisa de página para outra.
+
+1. Abra o documento PDF de origem e crie um absorvedor reutilizável.
+1. Pesquise a primeira página e inspecione os resultados.
+1. Continue pesquisando páginas adicionais e revise as correspondências atualizadas.
 
 ```java
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("(?i)Line", new TextSearchOptions(true));
+public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
+    Document document = new Document(inputFile.toString());
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+    absorber.setPhrase("whale");
+
+    document.getPages().get_Item(1).accept(absorber);
+    for (TextFragment fragment : absorber.getTextFragments()) {
+        System.out.println("Text: " + fragment.getText());
+        System.out.println("Page: " + fragment.getPage().getNumber());
+        System.out.println("Position: " + fragment.getPosition());
+    }
+
+    System.out.println("--");
+
+    document.getPages().get_Item(2).accept(absorber);
+    absorber.visit(document);
+
+    for (TextFragment fragment : absorber.getTextFragments()) {
+        System.out.println("Text: " + fragment.getText());
+        System.out.println("Page: " + fragment.getPage().getNumber());
+        System.out.println("Position: " + fragment.getPosition());
+    }
+}
 ```
 
-Exemplo:
+## Pesquise uma frase dentro de um retângulo selecionado
+
+Use este exemplo quando a correspondência de frase for limitada a uma região de uma página.
+
+1. Abra o documento PDF de origem.
+1. Crie `TextFragmentAbsorber` com a frase alvo e `TextSearchOptions` baseado em retângulo.
+1. Visite a página e produza as posições dos fragmentos correspondentes.
 
 ```java
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[\\S]+");
+public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                "elephant", new TextSearchOptions(new Rectangle(0, 0, 842, 250, true)));
+
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
+```
+
+## Pesquisar texto por expressão regular
+
+Use este exemplo quando as correspondências precisarem ser encontradas por um padrão regex em vez de uma frase fixa.
+
+1. Abra o documento PDF de origem.
+1. Crie um `TextFragmentAbsorber` habilitado para regex.
+1. Visite a página de destino e produza os fragmentos correspondentes.
+
+```java
+public static void textFragmentAbsorberSearchRegex(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                Pattern.compile("\\d+\\.\\d+"), new TextSearchOptions(true));
+
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
+```
+
+## Pesquise uma lista de frases por padrões regex
+
+Use este exemplo quando várias frases-alvo devem ser encontradas em uma passagem.
+
+1. Abra o documento PDF de origem.
+1. Crie uma matriz de padrões regex e passe-a para `TextFragmentAbsorber`.
+1. Visite o documento e inspecione os resultados de regex agrupados.
+
+```java
+public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Pattern[] patterns = new Pattern[] {
+                Pattern.compile("whale"),
+                Pattern.compile("elephant")
+        };
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(patterns, new TextSearchOptions(true));
+        document.getPages().accept(absorber);
+
+        for (TextFragmentCollection fragments : absorber.getRegexResults().values()) {
+            for (TextFragment fragment : fragments) {
+                System.out.println("Text: " + fragment.getText());
+                System.out.println("Position: " + fragment.getPosition());
+            }
+        }
+    }
+}
+```
+
+## Encontre texto e transforme-o em hiperlinks
+
+Use este exemplo quando as palavras correspondentes devem ser destacadas e convertidas em links clicáveis.
+
+1. Abra o documento PDF de origem.
+1. Pesquise as palavras-alvo com a pesquisa regex habilitada.
+1. Atualize o estilo do texto, anexe hiperlinks e salve o PDF modificado.
+
+```java
+public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber("whale|elephant");
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+        absorber.visit(document.getPages().get_Item(1));
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            fragment.getTextState().setForegroundColor(Color.getBlue());
+            fragment.getTextState().setUnderline(true);
+            fragment.setHyperlink(new WebHyperlink("https://en.wikipedia.org/wiki/" + fragment.getText()));
+        }
+
+        document.save(inputFile.toString().replace("in.pdf", "out.pdf"));
+    }
+}
+```
+
+## Pesquise texto por características de estilo
+
+Use este exemplo quando precisar inspecionar fragmentos com base na formatação, como texto em negrito ou invisível.
+
+1. Abra o documento PDF de origem.
+1. Execute `TextFragmentAbsorber` na página de destino.
+1. Verifique cada estilo de fragmento e produza as entradas correspondentes.
+
+```java
+public static void textFragmentAbsorberSearchStyledText(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+        absorber.visit(document.getPages().get_Item(1));
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            if (fragment.getTextState().getFontStyle() == FontStyles.Bold) {
+                System.out.println("Bold: " + fragment.getText());
+            }
+            if (fragment.getTextState().isInvisible()) {
+                System.out.println("Invisible: " + fragment.getText());
+            }
+        }
+    }
+}
+```
+
+## Destacar os resultados da pesquisa em visualizações de páginas renderizadas
+
+Use este exemplo quando as correspondências de texto precisarem ser correlacionadas com imagens de páginas renderizadas para inspeção visual.
+
+1. Crie um dispositivo PNG com a resolução necessária.
+1. Pesquise cada página com `TextFragmentAbsorber` e renderize a página em um fluxo de imagem.
+1. Escreva as imagens de visualização da página e as coordenadas do fragmento de saída para inspeção.
+
+```java
+public static void textFragmentAbsorberSearchAndHighlight(Path inputFile) throws Exception {
+    int resolution = 150;
+    PngDevice pngDevice = new PngDevice(new Resolution(resolution, resolution));
+
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(Pattern.compile("[\\S]+"));
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+
+        for (int pageNumber = 1; pageNumber <= document.getPages().size(); pageNumber++) {
+            Page page = document.getPages().get_Item(pageNumber);
+            page.accept(absorber);
+
+            try (ByteArrayOutputStream stream = new ByteArrayOutputStream()) {
+                pngDevice.process(page, stream);
+                Path output = Path.of(inputFile.toString().replace("_in.pdf", page.getNumber() + "_out.png"));
+                Files.write(output, stream.toByteArray());
+            }
+
+            for (TextFragment textFragment : absorber.getTextFragments()) {
+                Rectangle pageRect = page.getPageRect(true);
+                System.out.println("TextFragment = " + textFragment.getText()
+                        + " Page URY = " + pageRect.getURY()
+                        + " TextFragment URY = " + textFragment.getRectangle().getURY());
+            }
+        }
+    }
+}
 ```

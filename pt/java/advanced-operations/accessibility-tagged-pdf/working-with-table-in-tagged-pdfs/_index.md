@@ -1,478 +1,287 @@
 ---
-title: Trabalhando com Tabela em PDFs Marcados
-linktitle: Trabalhando com Tabela em PDFs Marcados
+title: Trabalhe com tabelas em PDFs marcados em Java
+linktitle: Trabalhando com tabela em PDFs marcados
 type: docs
 weight: 40
-url: /pt/java/working-with-table-in-tagged-pdfs/
-description: Este artigo explica como trabalhar com tabela em documento PDF Marcado com Aspose.PDF para Java.
-lastmod: "2021-06-05"
+url: /java/working-with-table-in-tagged-pdfs/
+description: Aprenda como trabalhar com tabelas acessíveis em PDFs marcados em Java com Aspose.PDF, incluindo estrutura de tabela, extensões de células, estilo, configurações de linha e posicionamento.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+As APIs de tabela marcada permitem criar estruturas de tabela acessíveis com cabeçalhos, linhas de corpo, rodapés e semântica por célula explícitos.
 
-{{% alert color="primary" %}}
+## Crie uma tabela marcada
 
-Este recurso é suportado pela versão 19.6 ou superior.
+Use este exemplo quando precisar de uma tabela acessível básica com cabeçalho, corpo, rodapé e metadados de resumo da tabela.
 
-{{% /alert %}}
-
-## Criar Tabela em PDF Marcado
-
-Aspose.PDF para Java permite criar uma tabela em documentos PDF Marcados.
- Para trabalhar com tabelas, a API fornece a classe [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement). Para criar uma tabela, você pode usar o método [createTableElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) da interface [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). Além disso, você pode usar os métodos [createTHead()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTHead--), [createTBody()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTBody--) e [createTFoot()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement#createTFoot--) da classe TableElement para criar Cabeçalho da Tabela, Corpo da Tabela e Rodapé da Tabela, respectivamente. Para criar uma linha de tabela, você pode usar o método [createTR()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement#createTR--) da classe [TableRowCollectionElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableRowCollectionElement). O trecho de código a seguir mostra como criar uma tabela no documento PDF Marcado:
+1. Crie um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. Configure a borda da tabela e preencha o conteúdo com o método auxiliar compartilhado.
+1. Defina o atributo de resumo da tabela e salve o documento.
 
 ```java
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// O caminho para o diretório de documentos.
-String path = Utils.getDataDir() + "TaggedPDFs\\";
+public static void createTable(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table");
+        taggedContent.setLanguage("en-US");
 
-// Criar documento
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+        tableElement.setBorder(new BorderInfo(BorderSide.All, 1.2f, Color.getDarkBlue()));
 
-taggedContent.setTitle("Exemplo de tabela");
-taggedContent.setLanguage("en-US");
+        fillTable(tableElement, 50, 4, true);
 
-// Obter elemento de estrutura raiz
-StructureElement rootElement = taggedContent.getRootElement();
+        StructureAttributes tableAttributes = tableElement.getAttributes().getAttributes(AttributeOwnerStandard.Table);
+        StructureAttribute summaryAttribute = new StructureAttribute(AttributeKey.Summary);
+        summaryAttribute.setStringValue("The summary text for table");
+        tableAttributes.setAttribute(summaryAttribute);
 
-
-TableElement tableElement = taggedContent.createTableElement();
-rootElement.appendChild(tableElement);
-
-tableElement.setBorder(new BorderInfo(BorderSide.All, 1.2F, Color.getDarkBlue()));
-
-TableTHeadElement tableTHeadElement = tableElement.createTHead();
-TableTBodyElement tableTBodyElement = tableElement.createTBody();
-TableTFootElement tableTFootElement = tableElement.createTFoot();
-int rowCount = 50;
-int colCount = 4;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.createTR();
-headTrElement.setAlternativeText("Linha de Cabeçalho");
-
-headTrElement.setBackgroundColor(Color.getLightGray());
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.createTH();
-    thElement.setText(String.format("Cabeçalho %s", colIndex));
-
-    thElement.setBackgroundColor(Color.getGreenYellow());
-    thElement.setBorder(new BorderInfo(BorderSide.All, 4.0F, Color.getLightGray()));
-
-    thElement.setMargin(new MarginInfo(16.0, 2.0, 8.0, 2.0));
-
-    thElement.setAlignment(HorizontalAlignment.Right);
+        document.save(outputFile.toString());
+    }
 }
+```
 
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.createTR();
-    trElement.setAlternativeText(String.format("Linha %s", rowIndex));
+## Estilizar uma tabela marcada
 
-    for (colIndex = 0; colIndex < colCount; colIndex++)
-    {
-        int colSpan = 1;
-        int rowSpan = 1;
+Este exemplo aplica formatação em nível de tabela, como cores, bordas, dimensionamento de colunas, linhas repetidas e alinhamento.
 
-        if (colIndex == 1 && rowIndex == 1)
-        {
-            colSpan = 2;
-            rowSpan = 2;
+1. Crie um novo PDF marcado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de tabela.
+1. Defina as configurações visuais e de layout em nível de tabela.
+1. Preencha a tabela e salve o documento.
+
+```java
+public static void styleTable(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table style");
+        taggedContent.setLanguage("en-US");
+
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+
+        tableElement.setBackgroundColor(Color.getBeige());
+        tableElement.setBorder(new BorderInfo(BorderSide.All, 0.80f, Color.getGray()));
+        tableElement.setAlignment(HorizontalAlignment.Center);
+        tableElement.setBroken(TableBroken.Vertical);
+        tableElement.setColumnAdjustment(ColumnAdjustment.AutoFitToWindow);
+        tableElement.setColumnWidths("80 80 80 80 80");
+        tableElement.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.50f, Color.getDarkBlue()));
+        tableElement.setDefaultCellPadding(new MarginInfo(16.0, 2.0, 8.0, 2.0));
+        tableElement.getDefaultCellTextState().setForegroundColor(Color.getDarkCyan());
+        tableElement.getDefaultCellTextState().setFontSize(8.0f);
+        tableElement.setDefaultColumnWidth("70");
+        tableElement.setBordersIncluded(true);
+        tableElement.setLeft(0.0f);
+        tableElement.setTop(40.0f);
+        tableElement.setRepeatingColumnsCount(2);
+        tableElement.setRepeatingRowsCount(3);
+
+        TextState rowStyle = new TextState();
+        rowStyle.setBackgroundColor(Color.getLightCoral());
+        tableElement.setRepeatingRowsStyle(rowStyle);
+
+        fillTable(tableElement, 10, 5, false);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Estilizar linhas da tabela marcadas
+
+Use este exemplo quando cada linha tiver seus próprios metadados, bordas, configurações de altura e padrões de célula.
+
+1. Crie um novo PDF marcado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione seções de tabela para cabeça, corpo e pé.
+1. Crie linhas e defina suas configurações em nível de linha, como borda, preenchimento, altura e comportamento da página.
+1. Preencha as linhas com células e salve o documento.
+
+```java
+public static void styleTableRow(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table style");
+        taggedContent.setLanguage("en-US");
+
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+        TableTHeadElement tableTHeadElement = tableElement.createTHead();
+        TableTBodyElement tableTBodyElement = tableElement.createTBody();
+        TableTFootElement tableTFootElement = tableElement.createTFoot();
+
+        TableTRElement headTrElement = tableTHeadElement.createTR();
+        headTrElement.setAlternativeText("Head Row");
+        for (int colIndex = 0; colIndex < 3; colIndex++) {
+            headTrElement.createTH().setText("Head " + colIndex);
         }
-        else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
-        {
-            continue;
+
+        for (int rowIndex = 0; rowIndex < 7; rowIndex++) {
+            TableTRElement trElement = tableTBodyElement.createTR();
+            trElement.setAlternativeText("Row " + rowIndex);
+            trElement.setBackgroundColor(Color.getLightGoldenrodYellow());
+            trElement.setBorder(new BorderInfo(BorderSide.All, 0.75f, Color.getDarkGray()));
+            trElement.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.50f, Color.getBlue()));
+            trElement.setMinRowHeight(100.0);
+            trElement.setFixedRowHeight(120.0);
+            trElement.setInNewPage(rowIndex % 3 == 1);
+            trElement.setRowBroken(true);
+
+            TextState cellTextState = new TextState();
+            cellTextState.setForegroundColor(Color.getRed());
+            trElement.setDefaultCellTextState(cellTextState);
+            trElement.setDefaultCellPadding(new MarginInfo(16.0, 2.0, 8.0, 2.0));
+            trElement.setVerticalAlignment(VerticalAlignment.Bottom);
+
+            for (int colIndex = 0; colIndex < 3; colIndex++) {
+                trElement.createTD().setText("Cell [" + rowIndex + ", " + colIndex + "]");
+            }
         }
-        else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
-        {
-            continue;
+
+        TableTRElement footTrElement = tableTFootElement.createTR();
+        footTrElement.setAlternativeText("Foot Row");
+        for (int colIndex = 0; colIndex < 3; colIndex++) {
+            footTrElement.createTD().setText("Foot " + colIndex);
         }
 
-        TableTDElement tdElement = trElement.createTD();
-        tdElement.setText(String.format("Célula [%s, %s]", rowIndex, colIndex));
+        document.save(outputFile.toString());
+    }
+}
+```
 
-        tdElement.setBackgroundColor(Color.getYellow());
-        tdElement.setBorder(new BorderInfo(BorderSide.All, 4.0F, Color.getGray()));
+## Estilizar células de tabela marcadas
 
-        tdElement.setMargin(new MarginInfo(8.0, 2.0, 8.0, 2.0));
+Este exemplo usa o método auxiliar compartilhado para criar uma tabela com formatação em nível de célula e células mescladas.
 
+1. Crie um novo PDF marcado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione um elemento de tabela e preencha-o por meio do método auxiliar com o estilo de célula ativado.
+1. Salve o documento.
+
+```java
+public static void styleTableCell(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table cell style");
+        taggedContent.setLanguage("en-US");
+
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+        fillTable(tableElement, 4, 4, true);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Ajustar a posição da tabela marcada
+
+Use este exemplo quando uma tabela marcada deve ser posicionada explicitamente na página.
+
+1. Crie um novo PDF marcado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de tabela.
+1. Configure [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) para a tabela.
+1. Aplique as configurações de posição, preencha a tabela e salve o documento.
+
+```java
+public static void adjustTablePosition(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Example table position");
+        taggedContent.setLanguage("en-US");
+
+        TableElement tableElement = taggedContent.createTableElement();
+        taggedContent.getRootElement().appendChild(tableElement, true);
+
+        PositionSettings positionSettings = new PositionSettings();
+        positionSettings.setHorizontalAlignment(HorizontalAlignment.None);
+        positionSettings.setMargin(new MarginInfo(20, 0, 0, 0));
+        positionSettings.setVerticalAlignment(VerticalAlignment.None);
+        positionSettings.setFirstParagraphInColumn(false);
+        positionSettings.setKeptWithNext(false);
+        positionSettings.setInNewPage(false);
+        positionSettings.setInLineParagraph(false);
+        tableElement.adjustPosition(positionSettings);
+
+        fillTable(tableElement, 4, 4, true);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Preencha uma tabela marcada com conteúdo estruturado
+
+Este método auxiliar cria as linhas de cabeçalho, corpo e rodapé de uma tabela e, opcionalmente, aplica estilos e extensões de células.
+
+1. Crie as seções da cabeça, do corpo e dos pés da mesa.
+1. Preencha linhas de cabeçalho, corpo e rodapé com elementos de célula acessíveis.
+1. Opcionalmente, configure células estilizadas, células mescladas e valores de estado de texto.
+
+```java
+private static void fillTable(TableElement tableElement, int rowCount, int colCount, boolean styleCells) {
+    TableTHeadElement tableTHeadElement = tableElement.createTHead();
+    TableTBodyElement tableTBodyElement = tableElement.createTBody();
+    TableTFootElement tableTFootElement = tableElement.createTFoot();
+
+    TableTRElement headTrElement = tableTHeadElement.createTR();
+    headTrElement.setAlternativeText("Head Row");
+    headTrElement.setBackgroundColor(Color.getLightGray());
+
+    for (int columnIndex = 0; columnIndex < colCount; columnIndex++) {
+        TableTHElement thElement = headTrElement.createTH();
+        thElement.setText("Head " + columnIndex);
+        thElement.setBackgroundColor(Color.getGreenYellow());
+        thElement.setBorder(new BorderInfo(BorderSide.All, 4.0f, Color.getGray()));
+        thElement.setNoBorder(true);
+        thElement.setMargin(new MarginInfo(16.0, 2.0, 8.0, 2.0));
+        thElement.setAlignment(HorizontalAlignment.Right);
+    }
+
+    for (int rowIndex = 0; rowIndex < rowCount; rowIndex++) {
+        TableTRElement trElement = tableTBodyElement.createTR();
+        trElement.setAlternativeText("Row " + rowIndex);
+
+        for (int columnIndex = 0; columnIndex < colCount; columnIndex++) {
+            int colSpan = 1;
+            int rowSpan = 1;
+
+            if (styleCells && columnIndex == 1 && rowIndex == 1) {
+                colSpan = 2;
+                rowSpan = 2;
+            } else if (styleCells && ((rowIndex == 1 && columnIndex == 2)
+                    || (rowIndex == 2 && (columnIndex == 1 || columnIndex == 2)))) {
+                continue;
+            }
+
+            TableTDElement tdElement = trElement.createTD();
+            tdElement.setText("Cell [" + rowIndex + ", " + columnIndex + "]");
+            tdElement.setBackgroundColor(Color.getYellow());
+            tdElement.setBorder(new BorderInfo(BorderSide.All, 4.0f, Color.getGray()));
+            tdElement.setNoBorder(false);
+            tdElement.setMargin(new MarginInfo(8.0, 2.0, 8.0, 2.0));
+            tdElement.setAlignment(HorizontalAlignment.Center);
+
+            TextState cellTextState = new TextState();
+            cellTextState.setForegroundColor(Color.getDarkBlue());
+            cellTextState.setFontSize(7.5f);
+            cellTextState.setFontStyle(FontStyles.Bold);
+            cellTextState.setFont(FontRepository.findFont("Arial"));
+            tdElement.setDefaultCellTextState(cellTextState);
+
+            tdElement.setWordWrapped(true);
+            tdElement.setVerticalAlignment(VerticalAlignment.Center);
+            tdElement.setColSpan(colSpan);
+            tdElement.setRowSpan(rowSpan);
+        }
+    }
+
+    TableTRElement footTrElement = tableTFootElement.createTR();
+    footTrElement.setAlternativeText("Foot Row");
+    footTrElement.setBackgroundColor(Color.getLightSeaGreen());
+
+    for (int columnIndex = 0; columnIndex < colCount; columnIndex++) {
+        TableTDElement tdElement = footTrElement.createTD();
+        tdElement.setText("Foot " + columnIndex);
         tdElement.setAlignment(HorizontalAlignment.Center);
-
-        TextState cellTextState = new TextState();
-        cellTextState.setForegroundColor(Color.getDarkBlue());
-        cellTextState.setFontSize(7.5F);
-        cellTextState.setFontStyle(FontStyles.Bold);
-        cellTextState.setFont(FontRepository.findFont("Arial"));
-        tdElement.setDefaultCellTextState(cellTextState);
-
-        tdElement.isWordWrapped();
-        tdElement.setVerticalAlignment(VerticalAlignment.Center);
-
-        tdElement.setColSpan(colSpan);
-        tdElement.setRowSpan(rowSpan);
+        tdElement.getStructureTextState().setFontSize(com.aspose.pdf.Nullable.of(7.0f));
+        tdElement.getStructureTextState().setFontStyle(com.aspose.pdf.Nullable.of(FontStyles.Bold));
     }
 }
-
-TableTRElement footTrElement = tableTFootElement.createTR();
-footTrElement.setAlternativeText("Linha de Rodapé");
-
-footTrElement.setBackgroundColor(Color.getLightSeaGreen());
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.createTD();
-    tdElement.setText(String.format("Rodapé %s", colIndex));
-
-    tdElement.setAlignment(HorizontalAlignment.Center);
-    tdElement.getStructureTextState().setFontSize(7F);
-    tdElement.getStructureTextState().setFontStyle(FontStyles.Bold);
-}
-
-StructureAttributes tableAttributes = tableElement.getAttributes().getAttributes(AttributeOwnerStandard.Table);
-StructureAttribute summaryAttribute = new StructureAttribute(AttributeKey.Summary);
-summaryAttribute.setStringValue("O texto de resumo para a tabela");
-tableAttributes.setAttribute(summaryAttribute);
-
-// Salvar Documento PDF Marcado
-document.save(path + "CreateTableElement.pdf");
-```
-
-## Estilo de Elemento de Tabela
-
-Aspose.PDF para Java permite estilizar uma tabela em um documento PDF marcado. Para estilizar uma tabela, você pode criar uma tabela usando o método [createTableElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createTableElement--) da interface [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent).  e definir o estilo da tabela usando as propriedades da classe [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableElement). A seguir está a lista de propriedades que você pode usar para estilizar uma tabela:
-
-- BackgroundColor
-- Border
-- Alignment
-- CornerStyle
-- Broken
-- ColumnAdjustment
-- ColumnWidths
-- DefaultCellBorder
-- DefaultCellPadding
-- DefaultCellTextState
-- DefaultColumnWidth
-- IsBroken
-- IsBordersIncluded
-- Left
-- Top
-
-O trecho de código a seguir mostra como estilizar uma tabela em um documento PDF marcado:
-
-```java
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// O caminho para o diretório de documentos.
-String path = Utils.getDataDir() + "TaggedPDFs\\";
-
-// Criar documento
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("Exemplo de estilo de tabela");
-taggedContent.setLanguage("en-US");
-
-// Obter elemento de estrutura raiz
-StructureElement rootElement = taggedContent.getRootElement();
-
-
-// Criar elemento de estrutura de tabela
-TableElement tableElement = taggedContent.createTableElement();
-rootElement.appendChild(tableElement);
-
-tableElement.setBackgroundColor(Color.getBeige());
-tableElement.setBorder(new BorderInfo(BorderSide.All, 0.80F, Color.getGray()));
-tableElement.setAlignment(HorizontalAlignment.Center);
-tableElement.setBroken(TableBroken.Vertical);
-tableElement.setColumnAdjustment(ColumnAdjustment.AutoFitToWindow);
-tableElement.setColumnWidths("80 80 80 80 80");
-tableElement.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.50F, Color.getDarkBlue()));
-tableElement.setDefaultCellPadding(new MarginInfo(16.0, 2.0, 8.0, 2.0));
-tableElement.getDefaultCellTextState().setForegroundColor(Color.getDarkCyan());
-tableElement.getDefaultCellTextState().setFontSize(8F);
-tableElement.setDefaultColumnWidth("70");
-
-tableElement.setBroken(false);
-tableElement.setBordersIncluded(true);
-
-tableElement.setLeft(0F);
-tableElement.setTop(40F);
-
-tableElement.setRepeatingColumnsCount(2);
-tableElement.setRepeatingRowsCount(3);
-TextState rowStyle = new TextState();
-rowStyle.setBackgroundColor(Color.getLightCoral());
-tableElement.setRepeatingRowsStyle(rowStyle);
-
-TableTHeadElement tableTHeadElement = tableElement.createTHead();
-TableTBodyElement tableTBodyElement = tableElement.createTBody();
-TableTFootElement tableTFootElement = tableElement.createTFoot();
-int rowCount = 10;
-int colCount = 5;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.createTR();
-headTrElement.setAlternativeText("Linha de Cabeçalho");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.createTH();
-    thElement.setText(String.format("Cabeçalho %s", colIndex));
-}
-
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.createTR();
-    trElement.setAlternativeText(String.format("Linha %s", rowIndex));
-
-    for (colIndex = 0; colIndex < colCount; colIndex++)
-    {
-        TableTDElement tdElement = trElement.createTD();
-        tdElement.setText(String.format("Célula [%s, %s]", rowIndex, colIndex));
-    }
-}
-
-TableTRElement footTrElement = tableTFootElement.createTR();
-footTrElement.setAlternativeText("Linha de Rodapé");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.createTD();
-    tdElement.setText(String.format("Rodapé %s", colIndex));
-}
-
-// Salvar Documento PDF Marcado
-document.save(path + "StyleTableElement.pdf");
-```
-
-
-## Estilo de Linha de Tabela
-
-Aspose.PDF para Java permite estilizar uma linha de tabela em um documento PDF Marcado. Para estilizar uma linha de tabela, você pode usar as propriedades da classe [TableTRElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableTRElement). A seguir está a lista de propriedades que você pode usar para estilizar uma linha de tabela:
-
-- BackgroundColor
-- Border
-- DefaultCellBorder
-- MinRowHeight
-- FixedRowHeight
-- IsInNewPage
-- IsRowBroken
-- DefaultCellTextState
-- DefaultCellPadding
-- VerticalAlignment
-
-O trecho de código a seguir mostra como estilizar uma linha de tabela no documento PDF Marcado:
-
-```java
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// O caminho para o diretório de documentos.
-String path = Utils.getDataDir() + "TaggedPDFs\\";
-
-// Criar documento
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("Exemplo de estilo de linha de tabela");
-taggedContent.setLanguage("en-US");
-
-// Obter elemento de estrutura raiz
-StructureElement rootElement = taggedContent.getRootElement();
-
-
-// Criar elemento de estrutura de tabela
-TableElement tableElement = taggedContent.createTableElement();
-rootElement.appendChild(tableElement);
-
-
-TableTHeadElement tableTHeadElement = tableElement.createTHead();
-TableTBodyElement tableTBodyElement = tableElement.createTBody();
-TableTFootElement tableTFootElement = tableElement.createTFoot();
-int rowCount = 7;
-int colCount = 3;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.createTR();
-headTrElement.setAlternativeText("Linha de Cabeçalho");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.createTH();
-    thElement.setText(String.format("Cabeçalho %s", colIndex));
-}
-
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.createTR();
-    trElement.setAlternativeText(String.format("Linha %s", rowIndex));
-
-    trElement.setBackgroundColor(Color.getLightSeaGreen());
-    trElement.setBorder(new BorderInfo(BorderSide.All, 0.75F, Color.getDarkGray()));
-
-    trElement.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.50F, Color.getBlue()));
-    trElement.setMinRowHeight(100.0);
-    trElement.setFixedRowHeight(120.0);
-    trElement.setRowBroken(true);
-
-    TextState cellTextState = new TextState();
-    cellTextState.setForegroundColor(Color.getRed());
-    trElement.setDefaultCellTextState(cellTextState);
-
-    trElement.setDefaultCellPadding(new MarginInfo(16.0, 2.0, 8.0, 2.0));
-    trElement.setVerticalAlignment(VerticalAlignment.Bottom);
-
-    for (colIndex = 0; colIndex < colCount; colIndex++)
-    {
-        TableTDElement tdElement = trElement.createTD();
-        tdElement.setText(String.format("Célula [{0}, {1}]", rowIndex, colIndex));
-    }
-}
-
-TableTRElement footTrElement = tableTFootElement.createTR();
-footTrElement.setAlternativeText("Linha de Rodapé");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.createTD();
-    tdElement.setText(String.format("Rodapé %s", colIndex));
-}
-
-
-
-// Salvar Documento PDF Marcado
-document.save(path + "StyleTableRow.pdf");
-```
-
-
-## Estilo da Célula da Tabela
-
-Aspose.PDF para Java permite estilizar uma célula de tabela em um documento PDF Marcado. Para estilizar uma célula de tabela, você pode usar as propriedades da classe [TableCellElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.bls/TableCellElement). A seguir está a lista de propriedades que você pode usar para estilizar uma célula de tabela:
-
-- BackgroundColor
-- Border
-- IsNoBorder
-- Margin
-- Alignment
-- DefaultCellTextState
-- IsWordWrapped
-- VerticalAlignment
-- ColSpan
-- RowSpan
-
-O seguinte trecho de código mostra como estilizar uma célula de tabela no documento PDF Marcado. Você também pode verificar a conformidade **PDF/UA** do documento criado. O trecho de código abaixo mostra como usar essa funcionalidade.
-
-```java
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// O caminho para o diretório de documentos.
-String path = Utils.getDataDir() + "TaggedPDFs\\";
-
-// Criar documento
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("Exemplo de estilo de célula de tabela");
-taggedContent.setLanguage("en-US");
-
-// Obter elemento de estrutura raiz
-StructureElement rootElement = taggedContent.getRootElement();
-
-
-// Criar elemento de estrutura de tabela
-TableElement tableElement = taggedContent.createTableElement();
-rootElement.appendChild(tableElement);
-
-
-TableTHeadElement tableTHeadElement = tableElement.createTHead();
-TableTBodyElement tableTBodyElement = tableElement.createTBody();
-TableTFootElement tableTFootElement = tableElement.createTFoot();
-int rowCount = 4;
-int colCount = 4;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.createTR();
-headTrElement.setAlternativeText("Linha de Cabeçalho");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.createTH();
-    thElement.setText(String.format("Cabeçalho %s", colIndex));
-
-    thElement.setBackgroundColor(Color.getGreenYellow());
-    thElement.setBorder(new BorderInfo(BorderSide.All, 4.0F, Color.getGray()));
-
-    thElement.setNoBorder(false);
-    thElement.setMargin(new MarginInfo(16.0, 2.0, 8.0, 2.0));
-
-    thElement.setAlignment(HorizontalAlignment.Right);
-}
-
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.createTR();
-    trElement.setAlternativeText(String.format("Linha %s", rowIndex));
-
-    for (colIndex = 0; colIndex < colCount; colIndex++)
-    {
-        int colSpan = 1;
-        int rowSpan = 1;
-
-        if (colIndex == 1 && rowIndex == 1)
-        {
-            colSpan = 2;
-            rowSpan = 2;
-        }
-        else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
-        {
-            continue;
-        }
-        else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
-        {
-            continue;
-        }
-
-        TableTDElement tdElement = trElement.createTD();
-        tdElement.setText(String.format("Célula [%s, %s]", rowIndex, colIndex));
-
-
-        tdElement.setBackgroundColor(Color.getYellow());
-        tdElement.setBorder(new BorderInfo(BorderSide.All, 4.0F, Color.getGray()));
-
-        tdElement.setNoBorder(false);
-        tdElement.setMargin(new MarginInfo(8.0, 2.0, 8.0, 2.0));
-
-        tdElement.setAlignment(HorizontalAlignment.Center);
-
-        TextState cellTextState = new TextState();
-        cellTextState.setForegroundColor(Color.getDarkBlue());
-        cellTextState.setFontSize(7.5F);
-        cellTextState.setFontStyle(FontStyles.Bold);
-        cellTextState.setFont(FontRepository.findFont("Arial"));
-        tdElement.setDefaultCellTextState(cellTextState);
-
-        tdElement.setWordWrapped(false);
-        tdElement.setVerticalAlignment(VerticalAlignment.Center);
-
-        tdElement.setColSpan(colSpan);
-        tdElement.setRowSpan(rowSpan);
-    }
-}
-
-TableTRElement footTrElement = tableTFootElement.createTR();
-footTrElement.setAlternativeText("Linha de Rodapé");
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.createTD();
-    tdElement.setText(String.format("Rodapé %s", colIndex));
-}
-
-
-// Salvar Documento PDF Marcado
-document.save(path + "StyleTableCell.pdf");
 ```

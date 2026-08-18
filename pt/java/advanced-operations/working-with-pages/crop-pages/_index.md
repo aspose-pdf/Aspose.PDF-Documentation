@@ -1,68 +1,60 @@
 ---
-title: Cortar Páginas de PDF programaticamente
-linktitle: Cortar Páginas
+title: Cortar páginas PDF em Java
+linktitle: Cortar páginas PDF
 type: docs
-weight: 80
-url: /pt/java/crop-pages/
-description: Você pode obter propriedades da página, como largura, altura, bleed-, crop- e trimbox usando Aspose.PDF para Java.
-lastmod: "2021-06-05"
+weight: 70
+url: /java/crop-pages/
+description: Aprenda como cortar páginas PDF e ajustar caixas de corte, corte, sangramento e mídia em Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cortar páginas e ajustar caixas de páginas em arquivos PDF com Java
+Abstract: Este artigo explica como cortar páginas PDF usando Aspose.PDF para Java. Ele abrange a atribuição de um novo retângulo de corte às caixas de corte, corte, arte e sangramento, e o corte automático de uma página com base no conteúdo da imagem detectada.
 ---
+Aspose.PDF para Java permite cortar páginas por coordenadas de caixa explícitas ou com base no conteúdo detectado.
 
-## Obter Propriedades da Página
+## Cortar uma página definindo caixas de página
 
-Cada página em um arquivo PDF possui várias propriedades, como largura, altura, bleed-, crop- e trimbox. Aspose.PDF para Java permite que você acesse essas propriedades.
+Use este exemplo quando precisar aplicar a mesma área de corte às caixas da página principal.
 
-- **Caixa de mídia**: A caixa de mídia é a maior caixa de página. Ela corresponde ao tamanho da página (por exemplo, A4, A5, Carta dos EUA, etc.) selecionado quando o documento foi impresso em PostScript ou PDF. Em outras palavras, a caixa de mídia determina o tamanho físico do meio no qual o documento PDF é exibido ou impresso.
-- **Caixa de sangria**: Se o documento tiver sangria, o PDF também terá uma caixa de sangria.
- Bleed é a quantidade de cor (ou arte) que se estende além da borda de uma página. É usado para garantir que, quando o documento for impresso e cortado no tamanho ("refilado"), a tinta vá até a borda da página. Mesmo se a página for cortada incorretamente - cortada ligeiramente fora das marcas de corte - não aparecerão bordas brancas na página.
-- **Trim box**: A caixa de corte indica o tamanho final de um documento após impressão e corte.
-- **Art box**: A caixa de arte é a caixa desenhada em torno do conteúdo real das páginas em seus documentos. Esta caixa de página é usada ao importar documentos PDF em outras aplicações.
-- **Crop box**: A caixa de corte é o tamanho da "página" em que seu documento PDF é exibido no Adobe Acrobat. Na visualização normal, apenas o conteúdo da caixa de corte é exibido no Adobe Acrobat. Para descrições detalhadas dessas propriedades, leia a especificação Adobe.Pdf, particularmente 10.10.1 Limites de Página.
-- **Page.Rect**: a interseção (retângulo comumente visível) do MediaBox e DropBox. A imagem abaixo ilustra essas propriedades. Para mais detalhes, por favor visite [esta página](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
-
-O trecho abaixo mostra como cortar a página:
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie o novo corte [Retângulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Aplique o retângulo às caixas de página relacionadas ao corte e salve o documento.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleCropPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    // Abrir documento
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    public static void CropPagesPDF() {
-        Document pdfDocument = new Document("crop_page.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-
-        System.out.println(page.getCropBox());
-        System.out.println(page.getTrimBox());
-        System.out.println(page.getArtBox());
-        System.out.println(page.getBleedBox());
-        System.out.println(page.getMediaBox());
-
-        // Criar um novo Box Retângulo
-        Rectangle newBox = new Rectangle(200, 220, 2170, 1520);
-
-        page.setCropBox(newBox);
-        page.setTrimBox(newBox);
-        page.setArtBox(newBox);
-        page.setBleedBox(newBox);
-
-        // Salvar documento de saída
-        pdfDocument.save(_dataDir + "crop_page_modified.pdf");
+public static void cropPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Rectangle newBox = new Rectangle(200, 220, 2170, 1520, true);
+        document.getPages().get_Item(1).setCropBox(newBox);
+        document.getPages().get_Item(1).setTrimBox(newBox);
+        document.getPages().get_Item(1).setArtBox(newBox);
+        document.getPages().get_Item(1).setBleedBox(newBox);
+        document.save(outputFile.toString());
     }
 }
 ```
 
-In this example we used a sample file [here](crop_page.pdf). Inicialmente, nossa página se parece com a mostrada na Figura 1.
-![Figure 1. Página Recortada](crop_page.png)
+## Cortar uma página por conteúdo detectado
 
-Após a alteração, a página se parecerá com a Figura 2.
-![Figure 2. Página Recortada](crop_page2.png)
+Use este exemplo quando a área de corte precisar ser derivada da primeira imagem detectada na página.
+
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para detectar posicionamentos de imagens.
+1. Defina a caixa de corte para o retângulo da imagem, se for encontrado, e salve o documento.
+
+```java
+public static void cropPageByContent(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+        if (absorber.getImagePlacements().size() > 0) {
+            document.getPages().get_Item(1).setCropBox(absorber.getImagePlacements().get_Item(1).getRectangle());
+        } else {
+            System.out.println("No images found on the first page");
+        }
+        document.save(outputFile.toString());
+    }
+}
+```

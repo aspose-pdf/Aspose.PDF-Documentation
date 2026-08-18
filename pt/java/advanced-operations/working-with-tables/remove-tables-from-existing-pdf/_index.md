@@ -1,80 +1,57 @@
 ---
-title: Remover Tabelas de um PDF Existente
-linktitle: Remover Tabelas
+title: Remover tabelas de documentos PDF existentes
+linktitle: Remover tabelas
+description: Aprenda como remover uma ou mais tabelas de documentos PDF existentes em Java.
+lastmod: "2026-06-09"
 type: docs
-weight: 40
-url: /pt/java/remove-tables-from-existing-pdf/
-description: Aspose.PDF para Java permite que você remova tabela e múltiplas tabelas do seu documento PDF.
-lastmod: "2021-06-05"
+weight: 50
+url: /java/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Exclua uma ou várias tabelas de arquivos PDF com Java
+Abstract: Este artigo explica como remover tabelas de documentos PDF existentes usando Aspose.PDF para Java. Ele apresenta o TableAbsorber para localizar tabelas e demonstra como excluir uma única tabela ou remover todas as tabelas detectadas de uma página.
 ---
+Use `TableAbsorber` quando precisar excluir uma ou mais tabelas detectadas de um PDF existente.
 
-{{% alert color="primary" %}}
+## Remover uma tabela detectada
 
-Aspose.PDF para Java oferece as capacidades de inserir/criar Tabela dentro de um documento PDF enquanto está sendo gerado do zero ou você também pode adicionar o objeto de tabela em qualquer documento PDF existente. No entanto, você pode ter uma necessidade de [Manipular Tabelas em PDF Existente](https://docs.aspose.com/pdf/java/manipulate-tables-in-existing-pdf/) onde você pode atualizar os conteúdos em células de tabela existentes. No entanto, você pode se deparar com uma necessidade de remover objetos de tabela de um documento PDF existente.
+Use este exemplo quando apenas a primeira tabela correspondente em uma página precisar ser excluída.
 
-{{% /alert %}}
-
-Para remover as tabelas, precisamos usar a classe [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) para obter as tabelas no PDF existente e, em seguida, chamar o método [Remove](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#remove-com.aspose.pdf.AbsorbedTable-).
-
-## Remover Tabela de Documento PDF
-
-Adicionamos uma nova função, ou seja, Remove(), à Classe [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) existente para remover a tabela do documento PDF. Uma vez que o absorvedor encontra com sucesso as tabelas na página, ele se torna capaz de removê-las. Por favor, verifique o trecho de código a seguir mostrando como remover uma tabela de um documento PDF:
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Visite a página de destino com [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Remova a primeira tabela detectada e salve o documento.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleRemoveTable {
-    
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void RemoveTable() {
-        // Carregar documento PDF existente
-        Document pdfDocument = new Document(_dataDir + "Table_input.pdf");
-
-        // Criar objeto TableAbsorber para encontrar tabelas
+public static void removeOneTable(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
-
-        // Visitar a primeira página com o absorvedor
-        absorber.visit(pdfDocument.getPages().get_Item(1));
-
-        // Obter a primeira tabela na página
-        AbsorbedTable table = absorber.getTableList().get(0);
-
-        // Remover a tabela
-        absorber.remove(table);
-
-        // Salvar PDF
-        pdfDocument.save(_dataDir + "Table_out.pdf");
-    }  
+        absorber.visit(document.getPages().get_Item(1));
+        absorber.remove(absorber.getTableList().get(0));
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Remover todas as tabelas detectadas de uma página
 
-## Remover Várias Tabelas de um Documento PDF
+Use este exemplo quando todas as tabelas correspondentes na página precisarem ser removidas.
 
-Às vezes, um documento PDF pode conter mais de uma tabela e você pode ter a necessidade de remover várias tabelas dele. Para remover múltiplas tabelas de um documento PDF, por favor, use o seguinte trecho de código:
+1. Abra o PDF de origem [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Visite a página de destino com [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) e copie as tabelas detectadas para uma lista.
+1. Remova cada tabela detectada e salve o PDF atualizado.
 
 ```java
-    public static void RemoveMultipleTable() {
-        // Carregar documento PDF existente
-        Document pdfDocument = new Document(_dataDir + "Table_input2.pdf");
-
-        // Criar objeto TableAbsorber para encontrar tabelas
+public static void removeAllTables(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
-
-        // Visitar a segunda página com o absorvedor
-        absorber.visit(pdfDocument.getPages().get_Item(2));
-
-        // Percorrer a cópia da coleção e remover tabelas
-        for (AbsorbedTable table : absorber.getTableList())
+        absorber.visit(document.getPages().get_Item(1));
+        List<AbsorbedTable> tables = new ArrayList<>(absorber.getTableList());
+        for (AbsorbedTable table : tables) {
             absorber.remove(table);
-
-        // Salvar documento
-        pdfDocument.save(_dataDir + "Table2_out.pdf");
+        }
+        document.save(outputFile.toString());
     }
 }
 ```
