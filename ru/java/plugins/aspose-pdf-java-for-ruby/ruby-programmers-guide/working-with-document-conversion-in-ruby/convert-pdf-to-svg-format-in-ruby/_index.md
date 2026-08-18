@@ -1,44 +1,44 @@
 ---
-title: Конвертировать PDF в формат SVG на Ruby
+title: Конвертируйте PDF в формат SVG в Ruby
+linktitle: Конвертируйте PDF в формат SVG в Ruby
 type: docs
 weight: 50
-url: /ru/java/convert-pdf-to-svg-format-in-ruby/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-svg-format-in-ruby/
+description: Узнайте, как конвертировать PDF-файлы в формат SVG с помощью Ruby и Aspose.PDF, обеспечивая масштабируемую и редактируемую векторную графику.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — конвертирование PDF в SVG
 
-## Aspose.PDF - Конвертация PDF в SVG
+Чтобы преобразовать PDF в формат SVG с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **PdfToSvg**.
 
-Чтобы конвертировать PDF в формат SVG, используя **Aspose.PDF Java для Ruby**, просто вызовите модуль **PdfToSvg**.
-
-Код на Ruby
+Рубиновый код
 
 ```java
-
-# Путь к каталогу документов.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть целевой документ
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# создать объект SvgSaveOptions
+# instantiate an object of SvgSaveOptions
 
 save_options = Rjb::import('com.aspose.pdf.SvgSaveOptions').new
 
-# не сжимать изображение SVG в архив Zip
+# do not compress SVG image to Zip archive
 
 save_options.CompressOutputToZipArchive = false
 
-# Сохранить вывод в формате XLS
+# Save the output to XLS format
 
 pdf.save(data_dir + "Output.svg", save_options)
 
-puts "Документ был успешно преобразован"
+puts "Document has been converted successfully"
 ```
 
-## Скачать исполняемый код
+## Загрузите рабочий код
 
-Скачайте **Конвертировать PDF в формат SVG (Aspose.PDF)** с любого из указанных ниже сайтов социального кодирования:
+Загрузите **Конвертируйте PDF в формат SVG (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftosvg.rb)

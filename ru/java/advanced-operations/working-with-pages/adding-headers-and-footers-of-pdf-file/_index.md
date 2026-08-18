@@ -1,216 +1,218 @@
 ---
-title: Добавление заголовка и нижнего колонтитула в PDF
-linktitle: Добавить заголовок и нижний колонтитул
+title: Добавьте верхние и нижние колонтитулы PDF в Java
+linktitle: Добавление верхнего и нижнего колонтитула в PDF
 type: docs
-weight: 70
-url: /ru/java/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF для Java позволяет добавлять заголовки и нижние колонтитулы в ваш PDF файл с помощью класса TextStamp.
-lastmod: "2021-06-05"
+weight: 50
+url: /java/add-headers-and-footers-of-pdf-file/
+description: Узнайте, как добавлять верхние и нижние колонтитулы в файлы PDF на Java, используя текст, изображения и структурированный контент.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Добавляйте верхние и нижние колонтитулы в PDF-файлы с помощью Java
+Abstract: В этой статье показано, как добавлять верхние и нижние колонтитулы в PDF-документы с помощью Aspose.PDF для Java. Он охватывает текст, нумерацию страниц, HTML, изображения, таблицы, а также содержимое верхнего и нижнего колонтитула на основе LaTeX.
 ---
+Aspose.PDF для Java позволяет назначать объекты `HeaderFooter` каждой странице и наполнять их различными типами контента.
 
-Штампы PDF часто используются в контрактах, отчетах и ограниченных материалах, чтобы подтвердить, что документы были проверены и помечены как "прочитано", "квалифицировано" или "конфиденциально" и т.д. В этой статье будет показано, как мы можем добавить штампы изображений и текстовые штампы в PDF документы, используя **Aspose.PDF для Java**.
+## Добавьте текстовые верхние и нижние колонтитулы
 
-Если вы будете читать приведенные выше фрагменты кода построчно, вы должны обнаружить, что синтаксис и логика кода довольно просты для понимания.
+Используйте этот пример, если вам нужен простой текстовый контент вверху и внизу каждой страницы.
 
-## Добавление текста в заголовок PDF файла
-
-Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) для добавления текста в заголовок PDF файла.
- TextStamp класс предоставляет свойства, необходимые для создания штампа на основе текста, такие как размер шрифта, стиль шрифта и цвет шрифта и т.д. Для того чтобы добавить текст в заголовок, вам нужно создать объект Document и объект TextStamp, используя необходимые свойства. После этого вы можете вызвать метод AddStamp страницы, чтобы добавить текст в заголовок PDF.
-
-Вам нужно установить свойство TopMargin таким образом, чтобы оно корректировало текст в области заголовка вашего PDF. Также необходимо установить HorizontalAlignment в Center и VerticalAlignment в Top.
-
-Следующий фрагмент кода показывает, как добавить текст в заголовок PDF файла с помощью Java.
+1. Создайте объекты [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) и добавьте фрагменты текста.
+1. Настройте поля для верхнего и нижнего колонтитула.
+1. Примените их к каждой странице исходного PDF-файла и сохраните результат.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Demo header"));
 
-import com.aspose.pdf.*;
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Demo footer"));
 
-public class ExampleAddPDFHeaderandFooter {
-    // Путь к директории с документами.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-    public static void AddingTextInHeaderOfPDFFile() {
-
-        // Открыть документ
-        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
-
-        // Создать заголовок
-        TextStamp textStamp = new TextStamp("Header Text");
-
-        // Установить свойства штампа
-        textStamp.setTopMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Top);
-
-        // Добавить заголовок на все страницы
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        // Сохранить обновленный документ
-        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## Добавление текста в нижний колонтитул PDF файла
-
-Вы можете использовать класс TextStamp для добавления текста в нижний колонтитул PDF файла. Класс TextStamp предоставляет свойства, необходимые для создания текстового штампа, такие как размер шрифта, стиль шрифта и цвет шрифта и т.д. Для того чтобы добавить текст в нижний колонтитул, вам нужно создать объект Document и объект TextStamp с использованием необходимых свойств. После этого вы можете вызвать метод AddStamp страницы для добавления текста в нижний колонтитул PDF.
-
-Следующий фрагмент кода показывает, как добавить текст в нижний колонтитул PDF файла с помощью Java.
-
-```java
-    public static void AddingTextInFooterOfPDFFile() {
-        // Открыть документ
-        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
-        // Создать нижний колонтитул
-        TextStamp textStamp = new TextStamp("Footer Text");
-        // Установить свойства штампа
-        textStamp.setBottomMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // Добавить нижний колонтитул на все страницы
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
-        }
-        _dataDir = _dataDir + "TextinFooter_out.pdf";
-        // Сохранить обновленный PDF файл
-        pdfDocument.save(_dataDir);
-    }
-```
-
-
-## Добавление изображения в заголовок PDF-файла
-
-Вы можете использовать класс [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) для добавления изображения в заголовок PDF-файла. Класс ImageStamp предоставляет свойства, необходимые для создания штампа на основе изображения, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить изображение в заголовок, вам нужно создать объект Document и объект ImageStamp с использованием необходимых свойств. После этого вы можете вызвать метод [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) страницы, чтобы добавить изображение в заголовок PDF-файла.
-
-```java
-public static void AddingImageInHeaderOfPDFFile() {
-
-// Открыть документ
-Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
-
-// Создать заголовок
-ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
-
-// Установить свойства штампа
-imageStamp.setTopMargin(10);
-imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-imageStamp.setVerticalAlignment(VerticalAlignment.Top);
-// Добавить заголовок на все страницы
-for (Page page : pdfDocument.getPages()) {
-page.addStamp(imageStamp);
-}
-
-_dataDir = _dataDir + "ImageInHeader_out.pdf";
-
-// Сохранить обновленный PDF-файл
-pdfDocument.save(_dataDir);
 }
 ```
 
+## Добавьте верхние и нижние колонтитулы с нумерацией страниц.
 
-Следующий фрагмент кода показывает, как добавить изображение в заголовок PDF файла с помощью Java.
+Используйте этот пример, когда в верхнем или нижнем колонтитуле должен отображаться номер текущей страницы и общее количество страниц.
 
-## Добавление изображения в нижний колонтитул PDF файла
-
-Вы можете использовать класс Image Stamp для добавления изображения в нижний колонтитул PDF файла. Класс Image Stamp предоставляет свойства, необходимые для создания штампа на основе изображения, такие как размер шрифта, стиль шрифта и цвет шрифта и т.д. Для того чтобы добавить изображение в нижний колонтитул, вам нужно создать объект Document и объект Image Stamp с использованием необходимых свойств. После этого вы можете вызвать метод AddStamp страницы, чтобы добавить изображение в нижний колонтитул PDF.
-
-{{% alert color="primary" %}}
-
-Вам нужно установить свойство BottomMargin таким образом, чтобы оно настраивало изображение в области нижнего колонтитула вашего PDF. Также необходимо установить [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) на `Center` и [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) на `Bottom`.
-
-{{% /alert %}}
-
-Следующий фрагмент кода показывает, как добавить изображение в нижний колонтитул PDF файла с помощью Java.
+1. Создайте объекты [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) с заполнителями нумерации страниц.
+1. Настройте поля для обоих объектов.
+1. Примените их к каждой странице и сохраните обновленный PDF-файл.
 
 ```java
-    public static void AddingImageInFooterOfPDFFile() {
+public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Page $p from $P"));
 
-        // Открыть документ
-        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
 
-        // Создать нижний колонтитул
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // Установить свойства штампа
-        imageStamp.setBottomMargin(10);
-        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // Добавить нижний колонтитул на все страницы
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(imageStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        _dataDir = _dataDir + "ImageInFooter_out.pdf";
-
-        // Сохранить обновленный PDF файл
-        pdfDocument.save(_dataDir);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## Добавление различных заголовков в один PDF файл
+## Добавьте верхние и нижние колонтитулы HTML
 
-Мы знаем, что можем добавить TextStamp в раздел Заголовка/Нижнего колонтитула документа, используя свойства TopMargin или Bottom Margin, но иногда может возникнуть необходимость добавить несколько заголовков/нижних колонтитулов в один PDF документ.
- **Aspose.PDF для Java** объясняет, как это сделать.
+Используйте этот пример, когда содержимое верхнего и нижнего колонтитула должно включать встроенное форматирование HTML.
 
-Для выполнения этого требования мы создадим отдельные объекты [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) (количество объектов зависит от количества необходимых заголовков/нижних колонтитулов) и добавим их в PDF-документ. Мы также можем указать различную информацию о форматировании для каждого отдельного объекта штампа. В следующем примере мы создали объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) и три объекта [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp), а затем использовали метод [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) страницы для добавления текста в раздел заголовка PDF. Следующий фрагмент кода показывает, как добавить изображение в нижний колонтитул PDF-файла с помощью Aspose.PDF для Java.
+1. Создайте объекты [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) и добавьте контент [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/).
+1. Настройте поля для размещения.
+1. Назначьте верхний и нижний колонтитулы каждой странице и сохраните документ.
 
 ```java
-public static void AddingDifferentHeadersInOnePDFFile() {
+public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
 
-        // Открыть исходный документ
-        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
 
-        // Создать три штампа
-        TextStamp stamp1 = new TextStamp("Header 1");
-        TextStamp stamp2 = new TextStamp("Header 2");
-        TextStamp stamp3 = new TextStamp("Header 3");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // Установить выравнивание штампа (разместить штамп в верхней части страницы, по центру по горизонтали)
-        stamp1.setVerticalAlignment (VerticalAlignment.Top);
-        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Указать стиль шрифта как жирный
-        stamp1.getTextState().setFontStyle(FontStyles.Bold);
-        // Установить цвет текста переднего плана как красный
-        stamp1.getTextState().setForegroundColor(Color.getRed());
-        // Указать размер шрифта как 14
-        stamp1.getTextState().setFontSize(14);
-
-        // Теперь нам нужно установить вертикальное выравнивание второго объекта штампа как верхнее
-        stamp2.setVerticalAlignment(VerticalAlignment.Top);
-        // Установить горизонтальное выравнивание штампа как центрированное
-        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Установить коэффициент масштабирования для объекта штампа
-        stamp2.setZoom (10);
-
-        // Установить форматирование третьего объекта штампа
-        // Указать информацию о вертикальном выравнивании для объекта штампа как ВЕРХ
-        stamp3.setVerticalAlignment(VerticalAlignment.Top);
-        // Установить горизонтальное выравнивание для объекта штампа как центрированное
-        stamp3.setHorizontalAlignment (HorizontalAlignment.Center);
-        // Установить угол поворота для объекта штампа
-        stamp3.setRotateAngle(35);
-        // Установить розовый как цвет фона для штампа
-        stamp3.getTextState().setBackgroundColor (Color.getPink());
-        
-        // Изменить информацию о шрифте для штампа на Verdana
-        stamp3.getTextState().setFont (FontRepository.findFont("Verdana"));
-        // Первый штамп добавляется на первую страницу;
-        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
-        // Второй штамп добавляется на вторую страницу;
-        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
-        // Третий штамп добавляется на третью страницу.
-        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
-
-        _dataDir = _dataDir + "multiheader_out.pdf";
-
-        // Сохранить обновленный PDF файл
-        pdfDocument.save(_dataDir);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
     }
+}
+```
 
+## Добавьте верхние и нижние колонтитулы изображений
+
+Используйте этот пример, когда верхний и нижний колонтитулы должны отображать изображение на каждой странице.
+
+1. Создайте объекты [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) и добавьте их в контейнеры верхнего и нижнего колонтитула.
+1. Настройте поля и назначьте контейнеры для каждой страницы.
+1. Сохраните обновленный PDF-файл.
+
+```java
+public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
+    Image headerImage = new Image();
+    headerImage.setFile(imageFile.toString());
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(headerImage);
+
+    Image footerImage = new Image();
+    footerImage.setFile(imageFile.toString());
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(footerImage);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            MarginInfo margin = new MarginInfo();
+            margin.setLeft(50);
+            header.setMargin(margin);
+            footer.setMargin(margin);
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавьте верхние и нижние колонтитулы на основе таблиц.
+
+Используйте этот пример, когда содержимое верхнего и нижнего колонтитула должно использовать макет таблицы и стиль текста.
+
+1. Создайте необходимые стили текста и объекты таблиц.
+1. Добавьте таблицы в контейнеры [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/).
+1. Примените верхний и нижний колонтитулы к каждой странице и сохраните документ.
+
+```java
+public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
+    TextState textStateHeader = new TextState();
+    textStateHeader.setFont(FontRepository.findFont("Arial"));
+    textStateHeader.setFontSize(12);
+    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
+
+    TextState textStateFooter = new TextState();
+    textStateFooter.setFont(FontRepository.findFont("Arial"));
+    textStateFooter.setFontSize(12);
+    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
+
+    HeaderFooter header = new HeaderFooter();
+    HeaderFooter footer = new HeaderFooter();
+
+    Table tableHeader = new Table();
+    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
+    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
+
+    Table table = new Table();
+    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
+    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
+
+    header.getParagraphs().add(tableHeader);
+    footer.getParagraphs().add(table);
+    footer.getMargin().setLeft(150);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавьте верхние и нижние колонтитулы LaTeX
+
+Используйте этот пример, когда верхний и нижний колонтитулы должны отображать содержимое TeX или LaTeX.
+
+1. Откройте исходный PDF-файл и определите общее количество страниц.
+1. Создайте контент [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) для верхнего и нижнего колонтитула каждой страницы.
+1. Назначьте содержимое и сохраните документ.
+
+```java
+public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int pageCount = document.getPages().size();
+        for (int i = 1; i <= pageCount; i++) {
+            HeaderFooter header = new HeaderFooter();
+            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
+
+            HeaderFooter footer = new HeaderFooter();
+            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
+
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
 }
 ```

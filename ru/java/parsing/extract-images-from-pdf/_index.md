@@ -1,49 +1,31 @@
 ---
-title: Извлечение изображений из PDF
-linktitle: Извлечение изображений
+title: Извлечение изображений из PDF с помощью Java
+linktitle: Извлечь изображения из PDF
 type: docs
 weight: 20
-url: /ru/java/extract-images-from-the-pdf-file/
-description: Как извлечь часть изображения из PDF с использованием Aspose.PDF для Java
-lastmod: "2021-06-05"
+url: /java/extract-images-from-the-pdf-file/
+description: Узнайте, как извлекать встроенные изображения из файлов PDF с помощью Aspose.PDF для Java.
+lastmod: "2026-06-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как извлечь изображения из PDF с помощью Java
+Abstract: В этой статье объясняется, как извлечь встроенные изображения из PDF-документа с помощью Aspose.PDF для Java. Он показывает, как открыть исходный PDF-файл, получить доступ к изображению из коллекции ресурсов страницы и сохранить извлеченный XImage во внешний файл.
 ---
+Извлекайте изображения из страниц PDF, когда вам нужно повторно использовать встроенную графику, проверять ресурсы документа или экспортировать изображения для последующей обработки.
 
-Каждая страница в PDF документе содержит ресурсы (изображения, формы и шрифты). Мы можем получить доступ к этим ресурсам, вызвав метод [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--). Класс [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) содержит [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection), и мы можем получить список изображений, вызвав метод [getImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--).
-
-Таким образом, чтобы извлечь изображение со страницы, нам нужно получить ссылку на страницу, затем на ресурсы страницы и, наконец, на коллекцию изображений.
-Конкретное изображение мы можем извлечь, например, по индексу.
-
-Индекс изображения возвращает объект [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage).
-Этот объект предоставляет метод [Save](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage#save-java.io.OutputStream-), который может быть использован для сохранения извлеченного изображения. Следующий фрагмент кода показывает, как извлечь изображения из PDF файла.
+1. Откройте исходный PDF-файл в экземпляре [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и откройте выходной поток для извлеченного файла изображения.
+1. Get the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) from the document and access its `Resources.Images` collection.
+1. Retrieve the required [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) object from that image collection by index.
+1. Вызовите `image.save(outputImage)`, чтобы записать извлеченные байты изображения в целевой поток.
 
 ```java
-public static void Extract_Images(){
-       // Путь к каталогу с документами.
-       String _dataDir = "/home/admin1/pdf-examples/Samples/";
-       String filePath = _dataDir + "ExtractImages.pdf";
-
-       // Загрузить PDF документ
-       com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-       com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
-       com.aspose.pdf.XImageCollection xImageCollection = page.getResources().getImages();
-       // Извлечь конкретное изображение
-       com.aspose.pdf.XImage xImage = xImageCollection.get_Item(1);
-
-       try {
-           java.io.FileOutputStream outputImage = new java.io.FileOutputStream(_dataDir + "output.jpg");
-           // Сохранить выходное изображение
-           xImage.save(outputImage);
-           outputImage.close();
-       } catch (java.io.FileNotFoundException e) {
-           // TODO: обработать исключение
-           e.printStackTrace();
-       } catch (java.io.IOException e) {
-           // TODO: обработать исключение
-           e.printStackTrace();
-       }
-   }
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
+    }
+}
 ```

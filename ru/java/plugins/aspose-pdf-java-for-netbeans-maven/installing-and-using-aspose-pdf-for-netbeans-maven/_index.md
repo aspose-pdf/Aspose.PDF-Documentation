@@ -1,56 +1,59 @@
 ---
-title: Установка и использование Aspose.Pdf для NetBeans - Maven
+title: Установка и использование Aspose.Pdf для NetBeans — Maven
+linktitle: Установка и использование Aspose.Pdf для NetBeans — Maven
 type: docs
 weight: 10
-url: /ru/java/installing-and-using-aspose-pdf-for-netbeans-maven/
-lastmod: "2021-06-05"
+url: /java/installing-and-using-aspose-pdf-for-netbeans-maven/
+description: Узнайте, как установить и использовать подключаемый модуль Aspose.PDF для NetBeans Maven для создания проектов Java с поддержкой PDF и управления ими.
+lastmod: "2026-06-09"
 ---
+## Установите
 
-## Установка
+Плагин **Aspose.PDF Java для NetBeans (Maven)** можно легко установить на вкладке «Доступные **Плагины**» в диалоговом окне «Плагин».
 
-Плагин **Aspose.PDF Java для NetBeans (Maven)** можно легко установить из вкладки **Доступные плагины** в диалоговом окне Плагины.
-
-- Чтобы открыть его, выберите **Плагины** из меню **Инструменты** в NetBeans.
+- Чтобы открыть его, выберите **Плагины** в меню **Инструменты** в NetBeans.
 
 ![todo:image_alt_text](installing-and-using-aspose-pdf-for-netbeans-maven_1.png)
 
-- Это добавляет **Aspose.PDF Maven Project** в мастер Нового проекта и **Aspose.PDF Code Example** в мастер Нового файла в NetBeans IDE.
+- При этом добавляется **Проект Aspose.PDF Maven** в мастере создания проекта и **Пример кода Aspose.PDF** в мастере создания нового файла среды IDE NetBeans.
 
-## Использование
+## С использованием
 
-### Aspose.PDF Maven Project (мастер)
+### Проект Aspose.PDF Maven (мастер)
 
-Чтобы создать **Maven Project** с помощью мастера для использования [Aspose.PDF для Java API](http://www.aspose.com/java/pdf-component.aspx):
+Чтобы создать **Проект Maven** с помощью мастера для использования [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx):
 
 1. Выберите **Новый проект**.
-2. Выберите **Aspose.PDF Maven Project** в категории **Maven**.
+2. Выберите **Проект Aspose.PDF Maven** в категории **Maven**.
 3. Нажмите **Далее**.
 
-Укажите **Имя проекта, Местоположение, GroupId, ArtifactId** и **Версию** для вашего Maven-проекта и нажмите **Готово.**
+Укажите **Имя проекта, Местоположение, GroupId, ArtifactId** и **Версию** для вашего проекта Maven и нажмите **Готово.**
 
-Это получит последнюю [Maven Dependency](http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/) ссылку на [Aspose.PDF для Java](http://www.aspose.com/java/pdf-component.aspx) из [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) и настроит его в **pom.xml**.
- Если вы выбрали **Также загрузить примеры кода**, начнется загрузка **Примеров кода** из [репозитория примеров Aspose.PDF для Java API.](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) Следующий **Maven** проект будет создан в вашей **NetBeans IDE** после завершения мастера:
+Это позволит получить последнюю ссылку на [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) [Maven Dependency](http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/) из [Репозитория Aspose Cloud Maven](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) и настроить ее в **pom.xml**. Если вы выбрали вариант **Также загружать примеры кода**, загрузка **Примеров кода** также начнется из [Aspose.PDF для репозитория примеров API Java. ](@@ДЕРЖАТЬ_3@@)
+Следующий проект **Maven** будет создан в вашей **NetBeans IDE** после завершения работы мастера:
 
-Созданный **Maven проект** настроен для использования **Aspose.PDF для Java API** и готов к улучшению в соответствии с требованиями вашего проекта. Если вы выбрали загрузку [Примеров кода](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples), вы можете использовать **Мастер примеров кода Aspose.PDF** для импорта необходимых **Примеров кода** API [Aspose.PDF для Java](http://www.aspose.com/java/pdf-component.aspx) в ваш проект.
+Созданный **Проект Maven** настроен на использование **Aspose.PDF for Java API** и готов к улучшению в соответствии с требованиями вашего проекта.
+   Если вы решили загрузить [Примеры кода](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples), вы можете использовать **Пример кода Aspose.PDF (мастер)** для импорта необходимых **Примеров кода** API [Aspose.PDF для Java](http://www.aspose.com/java/pdf-component.aspx) в свой проект.
 
-### Мастер примеров кода Aspose.PDF
+### Пример кода Aspose.PDF (мастер)
 
-**Мастер примеров кода Aspose.PDF** позволяет вам попробовать многие образцы, предоставленные для API [Aspose.PDF для Java](http://www.aspose.com/java/pdf-component.aspx).
+**Мастер примеров кода Aspose.PDF** позволяет вам опробовать множество примеров, предоставленных для API [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx).
 
 {{% alert color="primary" %}}
 
-Чтобы иметь возможность комфортно использовать **Мастер примеров кода Aspose.PDF**: рекомендуется всегда выбирать **Также загрузить примеры кода** при создании **Maven проекта** в **Мастере Maven проекта Aspose.PDF**,
+Чтобы иметь возможность удобно использовать **Мастер примеров кода Aspose.PDF**: рекомендуется всегда выбирать **Также загружать примеры кода** при создании **Проекта Maven** в **Проекте Aspose.PDF Maven** в **мастере**,
+
 {{% /alert %}}
 
 Чтобы использовать примеры, просто:
 
-1. Нажмите **New File** в **NetBeans**.
-2. Выберите ваш проект и затем выберите **Aspose.PDF Code Example** в категории **Java**.
-3. Нажмите **Next**.
+1. Нажмите **Новый файл** в **NetBeans**.
+2. Выберите свой проект, а затем выберите **Пример кода Aspose.PDF** в категории **Java**.
+3. Нажмите **Далее**.
 
-Разверните дерево, чтобы выбрать категорию **Code Example**, и нажмите **Finish**.
+Разверните дерево, выберите категорию **Пример кода** и нажмите **Готово**.
 
-Это скопирует выбранные файлы Java из категории **Code Examples** в проект под пакетом **com.aspose.pdf.examples**. Также любые необходимые ресурсы, нужные для примеров кода, будут скопированы в папку **src/main/resources**, как показано ниже:
+ При этом файлы Java выбранной категории **Примеры кода** будут скопированы в проект в пакете **com.aspose.pdf.examples**. Также все необходимые ресурсы, необходимые для примеров кода, будут скопированы в папку **src/main/resources**, как показано ниже:
 
-Просмотрите пример кода, скомпилируйте и запустите.
-Теперь вы можете тестировать другие примеры и начать создавать своё собственное приложение, используя [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx).
+ Просмотрите пример кода, скомпилируйте и запустите.
+ Теперь вы можете протестировать другие примеры и начать создавать собственное приложение, используя [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx).

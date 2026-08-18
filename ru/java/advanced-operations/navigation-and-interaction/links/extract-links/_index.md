@@ -1,44 +1,62 @@
 ---
-title: Извлечение ссылок из PDF-файла
-linktitle: Извлечение ссылок
+title: Извлечение PDF-ссылок в Java
+linktitle: Извлечь ссылки
 type: docs
 weight: 30
-url: /ru/java/extract-links/
-description: Извлечение ссылок из PDF с помощью Java. Эта тема объясняет, как извлечь ссылки с помощью класса AnnotationSelector.
-lastmod: "2021-06-05"
+url: /java/extract-links/
+description: Узнайте, как извлекать аннотации и гиперссылки из PDF-документов на Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Извлечение аннотаций ссылок и целевых объектов URI из файлов PDF с помощью Java
+Abstract: В этой статье объясняется, как извлечь аннотации ссылок из PDF-документов с помощью Aspose.PDF для Java. Он показывает, как перечислять аннотации ссылок на странице, читать их индекс страницы и прямоугольник, а также извлекать целевые URI из экземпляров GoToURIAction.
 ---
+Вы можете проверять ссылки PDF, перебирая аннотации страниц и фильтруя их по `AnnotationType.Link`.
 
-## Извлечение ссылок из PDF-файла
+## Извлеките аннотации ссылок
 
-Ссылки представлены как аннотации в PDF-файле, поэтому для извлечения ссылок извлеките все объекты [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
+Используйте этот пример, если вам нужна информация о местоположении и странице для аннотаций ссылок на странице.
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Получите [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page), с которой вы хотите извлечь ссылки.
-1. Используйте класс [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) для извлечения всех объектов [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) с указанной страницы.
-
-1. Передайте объект [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) методу Accept объекта Page.
-1. Получите все выбранные аннотации ссылок в объект IList, используя метод [getSelected](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector#getSelected--) объекта [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector).
-
-Следующий фрагмент кода показывает, как извлечь ссылки из PDF-файла.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Перебирайте аннотации страниц и фильтруйте аннотации ссылок.
+1. Прочтите индекс страницы и прямоугольник для каждой соответствующей ссылки.
 
 ```java
-    public static void ExtractLinksFromThePDFFile() {        
-        // Загрузите PDF-файл
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-           
-        AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Rectangle.getTrivial()));
-        page.accept(selector);
-        java.util.List<Annotation> list = selector.getSelected();
-        for(Annotation annot : list)
-        {
-            System.out.println("Аннотация расположена: " + annot.getRect());
+public static void extractLinkAnnotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                System.out.println("Page: " + linkAnnotation.getPageIndex()
+                        + ", location: " + linkAnnotation.getRect());
+            }
         }
-                
-        // Сохраните документ с обновленной ссылкой
-        //document.save(_dataDir + "ExtractLinks_out.pdf");
     }
+}
+```
+
+## Извлеките места назначения гиперссылок
+
+Используйте этот пример, когда вам нужно прочитать целевые URI из аннотаций веб-ссылок.
+
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Найдите объекты [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/), действием которых является [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Распечатайте индекс страницы и целевой URI для каждой гиперссылки.
+
+```java
+public static void extractHyperlinks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    System.out.println("Page " + linkAnnotation.getPageIndex() + ", URI:" + action.getURI());
+                }
+            }
+        }
+    }
+}
 ```

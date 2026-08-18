@@ -1,141 +1,143 @@
 ---
-title: Получение, обновление и расширение закладки
-linktitle: Получение, обновление и расширение закладки
+title: Получайте, обновляйте и расширяйте закладки PDF в Java
+linktitle: Получить, обновить и расширить закладку
 type: docs
 weight: 20
-url: /ru/java/get-update-and-expand-bookmark/
-description: В этой статье описывается, как использовать закладки в PDF-файле. С нашей библиотекой Java вы можете получить закладки из PDF-файла, получить номер страницы закладки, обновить закладки в PDF-документе и развернуть закладки при просмотре документа.
-lastmod: "2021-06-05"
+url: /java/get-update-and-expand-bookmark/
+description: Узнайте, как получать, обновлять и расширять закладки в документах PDF с помощью Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Проверка свойств закладок и расширение контуров в файлах PDF с помощью Java
+Abstract: В этой статье объясняется, как читать, обновлять и расширять закладки с помощью Aspose.PDF для Java. Он охватывает перебор элементов структуры, извлечение номеров страниц закладок с помощью PdfBookmarkEditor, чтение дочерних закладок, обновление заголовков и стилей закладок, а также принудительное открытие структур при отображении документа.
 ---
+Aspose.PDF для Java предоставляет закладки как через модель структуры документа, так и через фасад `PdfBookmarkEditor`.
 
-## Получение закладок
+## Получите свойства закладки
 
-Коллекция [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) содержит все закладки PDF-файла. В этой статье объясняется, как получить закладки из PDF-файла и как определить, на какой странице находится конкретная закладка.
+Используйте этот пример, когда вам нужно проверить записи закладок верхнего уровня в структуре документа.
 
-Чтобы получить закладки, пройдите по коллекции [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) и получите каждую закладку в OutlineItemCollection.
- The OutlineItemCollection предоставляет доступ ко всем атрибутам закладки. Следующий фрагмент кода показывает, как получить закладки из PDF-файла.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Перебрать коллекцию контуров.
+1. Прочтите и распечатайте заголовок, стиль и значения цвета закладки.
 
 ```java
-    public static void GettingBookmarks() {
-        // Открыть документ
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Перебор всех закладок
-        for (OutlineItemCollection outlineItem : (Iterable<OutlineItemCollection>) pdfDocument.getOutlines()) {
-            System.out.println("Заголовок :- " + outlineItem.getTitle());
-            System.out.println("Курсив :- " + outlineItem.getItalic());
-            System.out.println("Жирный :- " + outlineItem.getBold());
-            System.out.println("Цвет :- " + outlineItem.getColor());
+public static void getBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
         }
     }
+}
 ```
 
-## Получение номера страницы закладки
+## Получите номера страниц закладок
 
-Как только вы добавили закладку, вы можете узнать, на какой странице она находится, получив ассоциированный с объектом закладки номер страницы назначения.
+В этом примере `PdfBookmarkEditor` используется для извлечения заголовков, уровней, номеров страниц и действий закладок.
+
+1. Привяжите исходный PDF-файл к [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. Извлеките коллекцию закладок и просмотрите ее.
+1. Распечатайте уровень, заголовок, номер страницы и информацию о действии для каждой закладки.
 
 ```java
-    public static void GettingBookmarksPageNumber() {
-        // Создать PdfBookmarkEditor
-        PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-        // Открыть PDF-файл
-        bookmarkEditor.bindPdf(GetDataDir() + "UpdateBookmarks.pdf");
-        // Извлечь закладки
-        Bookmarks bookmarks = bookmarkEditor.extractBookmarks();
-        for (Bookmark bookmark : (Iterable<Bookmark>) bookmarks) {
-            String strLevelSeprator = "";
-            for (int i = 1; i < bookmark.getLevel(); i++) {
-                strLevelSeprator += "---- ";
+public static void getBookmarkPageNumber(Path inputFile) {
+    PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
+    try {
+        bookmarkEditor.bindPdf(inputFile.toString());
+        for (Bookmark bookmark : bookmarkEditor.extractBookmarks()) {
+            String levelSeparator = "";
+            for (int i = 0; i < bookmark.getLevel(); i++) {
+                levelSeparator += "----";
             }
-            System.out.println("Заголовок :- " + strLevelSeprator + bookmark.getTitle());
-            System.out.println("Номер страницы :- " + strLevelSeprator + bookmark.getPageNumber());
-            System.out.println("Действие на странице :- " + strLevelSeprator + bookmark.getAction());
+
+            System.out.println(levelSeparator + " Title: " + bookmark.getTitle());
+            System.out.println(levelSeparator + " Page Number: " + bookmark.getPageNumber());
+            System.out.println(levelSeparator + " Page Action: " + bookmark.getAction());
+        }
+    } finally {
+        bookmarkEditor.close();
+    }
+}
+```
+
+## Получите дочерние закладки
+
+Используйте этот пример, когда вам нужно проверить элементы структуры как верхнего уровня, так и вложенные.
+
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите контуры верхнего уровня и распечатайте их свойства.
+1. Обнаружьте дочерние закладки, затем просмотрите их и распечатайте их свойства.
+
+```java
+public static void getChildBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
+            int count = outlineItem.size();
+            if (count > 0) {
+                System.out.println("Child Bookmarks");
+                for (int j = 1; j <= outlineItem.size(); j++) {
+                    OutlineItemCollection childOutlineItem = outlineItem.get_Item(j);
+                    System.out.println(childOutlineItem.getTitle());
+                    System.out.println(childOutlineItem.getItalic());
+                    System.out.println(childOutlineItem.getBold());
+                    System.out.println(childOutlineItem.getColor());
+                }
+            }
         }
     }
+}
 ```
 
-## Обновление закладок в PDF-документе
+## Обновите закладки
 
-Чтобы обновить закладку в PDF-файле, сначала получите конкретную закладку из коллекции OutlineCollection объекта Document, указав индекс закладки. Получив закладку в объект [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection), вы можете обновить ее свойства и затем сохранить обновленный PDF-файл, используя метод Save. Следующие фрагменты кода показывают, как обновить закладки в PDF-документе.
+Используйте этот пример, когда необходимо изменить заголовок и стиль существующей закладки.
 
-```java
-    public static void UpdateBookmarksInPDFDocument() {
-        // Открыть документ
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Получить объект закладки
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-
-        // Обновить объект закладки
-        pdfOutline.setTitle("Обновленный контур");
-        pdfOutline.setItalic(true);
-        pdfOutline.setBold(true);
-        // Установить целевую страницу как 2
-        pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // Сохранить вывод
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
-    }
-```
-
-
-## Обновление дочерних закладок в PDF-документе
-
-Чтобы обновить дочернюю закладку:
-
-1. Извлеките дочернюю закладку, которую вы хотите обновить, из PDF-файла, сначала получив родительскую закладку, а затем дочернюю закладку, используя соответствующие значения индекса.
-1. Сохраните обновленный PDF-файл, используя метод Save.
-
-{{% alert color="primary" %}}
-
-Получите закладку из коллекции OutlineCollection объекта Document, указав индекс закладки, а затем получите дочернюю закладку, указав индекс этой родительской закладки.
-
-{{% /alert %}}
-
-Следующий фрагмент кода показывает, как обновить дочерние закладки в PDF-документе.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к целевому элементу структуры и его дочерней закладке.
+1. Обновите свойства закладки и сохраните документ.
 
 ```java
-    public static void UpdateChildBookmarksInPDFDocument() {
-        // Открыть документ
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Получить объект закладки
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-        // Получить объект дочерней закладки
-        OutlineItemCollection childOutline = pdfOutline.get_Item(1);
-
-        // Обновить объект закладки
-        childOutline.setTitle("Обновленная закладка");
+public static void updateBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection outline = document.getOutlines().get_Item(1);
+        OutlineItemCollection childOutline = outline.get_Item(1);
+        childOutline.setTitle("Updated Outline");
         childOutline.setItalic(true);
         childOutline.setBold(true);
-        // Установить целевую страницу как 2
-        childOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
 
-        // Сохранить результат
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Развернуть закладки по умолчанию
 
-## Раскрытые закладки при просмотре документа
+Используйте этот пример, когда панель закладок должна открыться и отображать развернутые элементы структуры при отображении документа.
 
-Закладки хранятся в коллекции [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) объекта Document, которая, в свою очередь, находится в коллекции [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). Однако может возникнуть необходимость, чтобы все закладки были раскрыты при просмотре PDF-файла.
-
-Для выполнения этого требования мы можем установить открытый статус для каждого элемента контура/закладки как Open. Следующий фрагмент кода показывает, как установить открытый статус для каждой закладки как расширенной в PDF-документе.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Установите режим страницы для использования контуров и пометьте каждый элемент структуры как открытый.
+1. Сохраните обновленный документ.
 
 ```java
-    public static void ExpandedBookmarks() {    
-        Document doc = new Document(GetDataDir()+"UpdateBookmarks.pdf");
-        // установить режим просмотра страницы, т.е. показать миниатюры, на весь экран, показать панель вложений
-        doc.setPageMode(PageMode.UseOutlines);
-        // вывести общее количество закладок в PDF-файле
-        System.out.println(doc.getOutlines().size());
-        // пройти через каждый элемент Outline в коллекции outlines PDF-файла
-        for (int counter = 1; counter <= doc.getOutlines().size(); counter++) {
-            // установить открытый статус для элемента контура
-            doc.getOutlines().get_Item(counter).setOpen(true);
+public static void expandedBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setPageMode(PageMode.UseOutlines);
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection item = document.getOutlines().get_Item(i);
+            item.setOpen(true);
         }
-        // сохранить PDF-файл
-        doc.save(_dataDir+"Bookmarks_Expanded.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```

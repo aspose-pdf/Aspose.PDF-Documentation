@@ -1,545 +1,275 @@
 ---
-title: Конвертировать различные форматы файлов в PDF
-linktitle: Конвертировать другие форматы файлов в PDF
+title: Преобразование других форматов файлов в PDF в Java
+linktitle: Конвертируйте другие форматы файлов в PDF
 type: docs
 weight: 80
-url: /ru/java/convert-other-files-to-pdf/
-lastmod: "2021-11-19"
-description: Эта тема показывает, как Aspose.PDF позволяет конвертировать другие форматы файлов в PDF документ.
+url: /java/convert-other-files-to-pdf/
+lastmod: "2026-06-16"
+description: Узнайте, как конвертировать файлы EPUB, Markdown, PCL, XPS, PostScript, XML, XSL-FO, OFD и TeX в PDF на Java с помощью Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: Как конвертировать другие форматы файлов в PDF в Java
+Abstract: В этой статье объясняется, как конвертировать несколько форматов исходных файлов в PDF с помощью Aspose.PDF для Java. Он охватывает рабочие процессы преобразования EPUB, Markdown, OFD, PCL, PostScript, EPS, TeX, текста, XML, XPS и XSL-FO с использованием параметров загрузки для конкретного формата и шагов предварительной обработки, где это необходимо.
 ---
+Aspose.PDF для Java поддерживает преобразование форматов документов, разметки и описания страниц в PDF.
 
-## Конвертация EPUB в PDF
+## Конвертировать OFD в PDF
 
-**Aspose.PDF для Java** позволяет просто конвертировать файлы EPUB в формат PDF.
+Используйте этот пример, когда документ OFD необходимо преобразовать в PDF.
 
-<abbr title="electronic publication">EPUB</abbr> (сокращение от электронная публикация) — это бесплатный и открытый стандарт для электронных книг от Международного форума цифровых публикаций (IDPF). Файлы имеют расширение .epub. EPUB разработан для переформатируемого контента, что означает, что ридер EPUB может оптимизировать текст для конкретного устройства отображения.
-
-Для того чтобы конвертировать файлы EPUB в формат PDF, Aspose.PDF для Java имеет класс под названием [EpubLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/EpubLoadOptions), который используется для загрузки исходного файла EPUB.
- После этого объект передается в качестве аргумента для инициализации объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document), так как это помогает движку рендеринга PDF определить входной формат исходного документа.
-
-Следующий фрагмент кода показывает процесс преобразования файла EPUB в формат PDF.
-
-1. Создайте [`LoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/loadoptions) для EPUB.
-2. Инициализируйте объект [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document).
-3. Сохраните выходной PDF документ.
+1. Откройте исходный код OFD, передав путь к файлу и [`OfdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ofdloadoptions/) в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Пусть Aspose.PDF преобразует пакет OFD в модель документа PDF.
+1. Сохраните полученный PDF-файл в целевой путь вывода.
 
 ```java
-package com.aspose.pdf.examples;
+public static void convertOfdToPdf(Path inputFile, Path outputFile) {
+       try (Document document = new Document(inputFile.toString(), new OfdLoadOptions())) {
+           document.save(outputFile.toString());
+       }
+       System.out.println(inputFile + " converted into " + outputFile);
+   }
+```
 
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+## Конвертировать TeX в PDF
 
-import com.aspose.pdf.*;
+Используйте этот пример, когда содержимое TeX должно быть отображено непосредственно в формате PDF.
 
-public final class ConvertEPUBtoPDF {
+1. Откройте исходный код TeX, передав путь к файлу и [`TeXLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texloadoptions/) в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Позвольте Aspose.PDF интерпретировать разметку TeX и создавать макет PDF во время загрузки.
+1. Сохраните созданный PDF-файл.
 
-    private ConvertEPUBtoPDF() {
+```java
+public static void convertTexToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new com.aspose.pdf.TeXLoadOptions())) {
+        document.save(outputFile.toString());
     }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        
-        // Создайте LoadOptions для EPUB
-        EpubLoadOptions options = new EpubLoadOptions();
-
-        // Инициализируйте объект document
-        String epubFileName = Paths.get(_dataDir.toString(), "aliceDynamic.epub").toString();
-        Document document = new Document(epubFileName, options);
-
-        // Сохраните выходной PDF документ
-        document.save(Paths.get(_dataDir.toString(),"EPUBtoPDF.pdf").toString());
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-{{% alert color="success" %}}
-**Попробуйте конвертировать EPUB в PDF онлайн**
+## Конвертировать PostScript в PDF
 
-Aspose.PDF для Java предлагает вам бесплатное онлайн приложение ["EPUB в PDF"](https://products.aspose.app/pdf/conversion/epub-to-pdf), где вы можете попробовать исследовать функциональность и качество его работы.
+Используйте этот пример, когда файл PostScript необходимо преобразовать в документ PDF.
 
-[![Aspose.PDF Конвертация EPUB в PDF с бесплатным приложением](epub.png)](https://products.aspose.app/pdf/conversion/epub-to-pdf)
-{{% /alert %}}
-
-## Конвертируйте Markdown в PDF
-
-**Эта функция поддерживается версией 19.6 или выше.**
-
-{{% alert color="success" %}}
-**Попробуйте конвертировать Markdown в PDF онлайн**
-
-Aspose.PDF для Java предлагает вам бесплатное онлайн приложение ["Markdown в PDF"](https://products.aspose.app/pdf/conversion/md-to-pdf), где вы можете попробовать исследовать функциональность и качество его работы.
-
-[![Aspose.PDF Конвертация Markdown в PDF с бесплатным приложением](markdown.png)](https://products.aspose.app/pdf/conversion/md-to-pdf)
-{{% /alert %}}
-
-Markdown — это инструмент для конвертации текста в HTML для веб-авторов.
- Markdown позволяет вам писать в формате простого текста, который легко читать и писать, а затем преобразовывать его в структурно корректный XHTML (или HTML).
-
-Следующий фрагмент кода показывает, как использовать эту функциональность с Aspose.PDF для Java:
+1. Откройте исходный код PostScript с помощью [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) в конструкторе [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Позвольте Aspose.PDF преобразовать поток описания страницы PostScript в модель PDF-документа.
+1. Сохраните преобразованный PDF-файл.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertMDtoPDF {
-
-    private ConvertMDtoPDF() {
+public static void convertPostScripToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new PsLoadOptions())) {
+        document.save(outputFile.toString());
     }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        
-        // Инициализировать объект опций загрузки Latex
-        MdLoadOptions options = new MdLoadOptions();
-        
-        // Создать объект Document
-        String markdownFileName = Paths.get(_dataDir.toString(), "samplefile.md").toString();
-        Document document = new Document(markdownFileName, options);
-
-        // Сохранить выходной PDF документ
-        document.save(Paths.get(_dataDir.toString(),"MarkdownToPDF.pdf").toString());
-    }
-}
-
-```
-
-## Convert PCL to PDF
-
-<abbr title="Printer Command Language">PCL</abbr> (Printer Command Language) — это язык принтера Hewlett-Packard, разработанный для доступа к стандартным функциям принтера. Уровни PCL с 1 по 5e/5c — это языки, основанные на командах, которые используют управляющие последовательности, обрабатываемые и интерпретируемые в порядке их получения. На уровне потребителя потоки данных PCL генерируются драйвером принтера. Вывод PCL также может быть легко сгенерирован пользовательскими приложениями.
-
-{{% alert color="success" %}}
-**Попробуйте преобразовать PCL в PDF онлайн**
-
-Aspose.PDF for Java предлагает вам бесплатное онлайн-приложение ["PCL в PDF"](https://products.aspose.app/pdf/conversion/pcl-to-pdf), где вы можете попробовать исследовать функциональность и качество работы.
-
-[![Aspose.PDF Преобразование PCL в PDF с бесплатным приложением](pcl_to_pdf.png)](https://products.aspose.app/pdf/conversion/pcl-to-pdf)
-{{% /alert %}}
-
-**В настоящее время поддерживаются только PCL5 и более старые версии.**
-
-|**Наборы команд**|**Поддержка**|**Исключения**|**Описание**|
-
-| :- | :- | :- | :- |
-|Команды управления заданиями|+|Режим двусторонней печати|Управление процессом печати: количество копий, выходной лоток, односторонняя/двусторонняя печать, отступы слева и сверху и т. д.|
-|Команды управления страницей|+|Команда пропуска перфорации|Указание размера страницы, полей, ориентации страницы, расстояний между строками и символами и т. д.|
-|Команды позиционирования курсора|+| |Указание позиции курсора и, следовательно, начала текста, растровых или векторных изображений и деталей.|
-
-|Команды выбора шрифта|+|<p>1. Команда прозрачной печати данных.</p><p>2. Встроенные мягкие шрифты. В текущей версии вместо создания мягкого шрифта наша библиотека выбирает подходящий шрифт из существующих "жестких" TrueType шрифтов, установленных на целевой машине. <br>   Пригодность определяется отношением ширины к высоте. <br>   Эта функция работает только для Bitmap и TrueType шрифтов и не гарантирует, что текст, напечатанный с мягким шрифтом, будет соответствовать тексту в исходном файле. <br>   Поскольку коды символов в мягком шрифте могут не совпадать с кодами по умолчанию.</p><p>3. Пользовательские наборы символов.</p>|Позволяет загружать мягкие (встроенные) шрифты из PCL файла и управлять ими в памяти.|
-|Команды растровой графики|+|Только черно-белые|Позволяет загружать растровые изображения из PCL файла в память, задавать параметры растра <br>такие как ширина, высота, тип сжатия, разрешение и т.д.|
-|Команды цвета|+| |Позволяет окрашивать все печатные объекты.|
-|Команды модели печати|+| |Позволяет заполнять текст, растровые изображения и прямоугольные области растровыми предопределенными и пользовательскими узорами, задавать режим прозрачности для узоров и исходного растрового изображения.
- <br>Предопределенные узоры — это штриховка, перекрестная штриховка и тонирование.|
-|Команды заполнения прямоугольной области|+| |Позволяют создавать и заполнять прямоугольные области узорами.|
-|HP-GL/2 команды векторной графики|+|Команды экранированного вектора (SV), режима прозрачности (TR), прозрачных данных (TD), RO (поворот системы координат), команды масштабируемых или растровых шрифтов (SB), наклона символов (SL) и дополнительного пространства (ES) не реализованы, а команды DV (определение переменной текстовой траектории) реализованы в бета-версии.|<p>- Позволяют загружать HP-GL/2 векторные изображения из PCL-файла в память. Vector image has an origin at the lower-left corner of the printable area, can be scaled, translated, rotated and clipped.</p><p>- Векторное изображение имеет начало координат в нижнем левом углу печатной области, может быть масштабировано, перемещено, повернуто и обрезано.</p><p>- Векторное изображение может содержать текст, в виде меток, и геометрические фигуры, такие как прямоугольник, круг, эллипс, линия, дуга, кривая Безье и сложные фигуры, составленные из простых.</p><p>- Замкнутые фигуры, включая буквы меток, могут быть заполнены сплошной заливкой или векторным узором.</p><p>- Узор может быть штриховкой, перекрестной штриховкой, затенением, растровым пользовательским, PCL штриховкой или перекрестной штриховкой и PCL пользовательским. Узор PCL является растровым. Метки могут быть индивидуально повернуты, масштабированы и направлены в четырех направлениях: вверх, вниз, влево и вправо. Направления влево и вправо предполагают расположение букв одна за другой. Направления вверх и вниз предполагают расположение букв одна под другой.</p>|
-|Macross|―| |Позволяет загружать последовательность команд PCL в память и использовать эту последовательность много раз, например, для печати заголовка страницы или установки одного форматирования для набора страниц.|
-|Unicode text|―| |Позволяет печатать не-ASCII символы. Не реализовано из-за отсутствия файлов с <br>Unicode текстом|
-|PCL6 (PCL-XL)| |Реализовано только в бета-версии из-за отсутствия тестовых файлов. Встроенные шрифты также не поддерживаются. Расширение JetReady не поддерживается, так как невозможно иметь спецификацию JetReady.|Бинарный формат файла.|
-
-### Преобразование PCL файла в формат PDF
-
-Для преобразования из PCL в PDF, [Aspose.PDF for Java](https://products.aspose.com/pdf/java) имеет класс [PclLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PclLoadOptions), который используется для инициализации объекта [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions). Этот объект затем передается в качестве аргумента при инициализации объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) и помогает движку рендеринга PDF определить входной формат исходного документа.
-
-Следующий фрагмент кода показывает процесс преобразования файла PCL в формат PDF.
-
-```java
-package com.aspose.pdf.examples;
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertPCLtoPDF {
-
-    private ConvertPCLtoPDF() {
-        
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {        
-        ConvertPCLtoPDF_Simple();
-        ConvertPCLtoPDF_Advanced();
-    }
-
-    public static void ConvertPCLtoPDF_Simple() {
-        PclLoadOptions options = new PclLoadOptions();
-        Document pdfDocument= new Document(_dataDir + "demo.pcl", options);
-        pdfDocument.save(_dataDir + "epub_test.pdf");        
-    }
-
-    public static void ConvertPCLtoPDF_Advanced() {
-        PclLoadOptions options = new PclLoadOptions();
-        options.SupressErrors=true;
-        Document pdfDocument= new Document(_dataDir + "demo.pcl", options);
-        if (options.Exceptions!=null)
-            for (Exception ex : options.Exceptions)
-            {
-                System.out.println(ex.getMessage());
-            }
-        pdfDocument.save(_dataDir + "pcl_test.pdf");        
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-### Известные проблемы
+## Конвертировать EPS в PDF
 
-1. Происхождение текстовых строк и изображений может незначительно отличаться от таковых в исходном PCL файле, если направление печати не 0º. То же самое относится к векторным изображениям, если система координат векторного графика повернута (предшествует команда RO).
-2. Происхождение меток в векторных изображениях может отличаться от таковых в исходном PCL файле, если на метки влияет последовательность команд: Происхождение метки (LO), Определение пути переменного текста (DV), Абсолютное направление (DI) или Относительное направление (DR).
-3. Текст может быть неправильно прочитан, если он должен быть отображен с помощью Bitmap или TrueType мягкого (встроенного) шрифта, потому что в настоящее время эти шрифты поддерживаются только частично (см. исключения в таблице "Поддерживаемые функции"). В этой ситуации текст может быть правильно прочитан только в том случае, если коды символов в мягком шрифте соответствуют стандартным. Стиль прочитанного текста также может отличаться от такового в исходном PCL файле, потому что не обязательно задавать стиль в заголовке мягкого шрифта.
+Используйте этот пример, когда инкапсулированный файл PostScript необходимо преобразовать в PDF.
 
-1. Если разобранный PCL файл содержит шрифты Intellifont или Universal soft, будет выброшено исключение, потому что шрифты Intellifont и Universal не поддерживаются.  
-1. Если разобранный PCL файл содержит макрокоманды, результат разбора будет существенно отличаться от исходного файла, потому что макрокоманды не поддерживаются.
-
-## Конвертация текста в PDF
-
-**Aspose.PDF для Java** предоставляет возможность конвертировать текстовые файлы в формат PDF. В этой статье мы демонстрируем, как легко и эффективно мы можем конвертировать текстовый файл в PDF, используя Aspose.PDF.
-
-Когда вам нужно конвертировать текстовый файл в PDF, сначала прочитайте исходный текстовый файл в некотором ридере. Мы использовали StringBuilder для чтения содержимого текстового файла. Создайте объект Document и добавьте новую страницу в коллекцию Pages. Создайте новый объект TextFragment и передайте объект StringBuilder в его конструктор. Добавьте новый абзац в коллекцию Paragraphs, используя объект TextFragment, и сохраните полученный PDF-файл, используя метод Save класса Document.
-**Попробуйте преобразовать ТЕКСТ в PDF онлайн**
-{{% alert color="primary" %}}
-
-Aspose.PDF для Java предлагает вам бесплатное онлайн-приложение ["Text to PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), где вы можете попробовать исследовать функциональность и качество его работы.
-
-[![Aspose.PDF Преобразование ТЕКСТА в PDF с бесплатным приложением](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
-{{% /alert %}}
-
-### Преобразование текстового файла в PDF
+1. Откройте исходный код EPS с помощью [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/), поскольку EPS следует по тому же пути загрузки на основе PostScript.
+1. Загрузите файл в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), чтобы содержимое описания страницы было преобразовано во время импорта.
+1. Сохраните выходной PDF-файл.
 
 ```java
-package com.aspose.pdf.examples;
-/**
- * Преобразование TXT в PDF
- */
-
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertTextToPDF {
-
-    private ConvertTextToPDF() {
+public static void convertEpsToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new PsLoadOptions())) {
+        document.save(outputFile.toString());
     }
-
-    final static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-    final static Charset ENCODING = StandardCharsets.UTF_8;
-
-    public static void main(String[] args) throws IOException {
-        ConvertTXT_to_PDF_Simple();
-    }
-
-    public static void ConvertTXT_to_PDF_Simple() throws IOException {
-        // Инициализация объекта документа
-
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo_txt.pdf").toString();
-        Path txtDocumentFileName = Paths.get(_dataDir.toString(), "rfc822.txt");
-
-        // Создание экземпляра объекта Document, вызвав его пустой конструктор
-        Document pdfDocument = new Document();
-
-        // Добавление новой страницы в коллекцию Pages документа
-        Page page = pdfDocument.getPages().add();
-
-        // Создание экземпляра TextFragment и передача текста из объекта reader в его
-        // конструктор в качестве аргумента
-        TextFragment text = new TextFragment(Files.readString(txtDocumentFileName, ENCODING));
-
-        // Добавление нового текстового абзаца в коллекцию paragraphs и передача объекта
-        // TextFragment
-        page.getParagraphs().add(text);
-
-        // Сохранение результирующего PDF файла
-        pdfDocument.save(pdfDocumentFileName);
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
+## Конвертировать EPUB в PDF
 
-### Преобразование предварительно форматированного текстового файла в PDF
+Используйте этот пример, когда электронную книгу EPUB необходимо преобразовать в PDF.
+
+1. Откройте исходный код EPUB, передав путь к файлу и [`EpubLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubloadoptions/) в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Позвольте Aspose.PDF загрузить структуру электронной книги и преобразовать ее в страницы PDF.
+1. Сохраните преобразованный PDF-файл.
 
 ```java
-    public static void ConvertPreFormattedTextToPdf() throws IOException {
+public static void convertEpubToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new EpubLoadOptions())) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-        Path txtDocumentFileName = Paths.get(_dataDir.toString(), "rfc822.txt");
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo_txt.pdf").toString();
+## Конвертировать Markdown в PDF
 
-        // Чтение текстового файла как массива строк
-        java.util.List<String> lines = Files.readAllLines(txtDocumentFileName, ENCODING);
+Используйте этот пример, когда содержимое Markdown необходимо отобразить и сохранить в формате PDF.
 
-        // Создание экземпляра объекта Document, вызвав его пустой конструктор
-        Document pdfDocument = new Document();
+1. Откройте исходный код Markdown, передав путь к файлу и [`MdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mdloadoptions/) в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Позвольте Aspose.PDF интерпретировать содержимое Markdown и преобразовать его в содержимое страницы PDF.
+1. Сохраните выходной PDF-файл.
 
-        // Добавление новой страницы в коллекцию Pages объекта Document
-        Page page = pdfDocument.getPages().add();
+```java
+public static void convertMdToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new MdLoadOptions())) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-        // Установка левых и правых полей для лучшего представления
+## Преобразование текста в PDF с помощью простого рабочего процесса
+
+Используйте этот пример, когда простой текстовый файл необходимо быстро преобразовать в PDF.
+
+1. Прочтите исходный текст в виде обычного текста с декодированием UTF-8, чтобы текстовое содержимое было доступно в виде строки Java.
+1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Оберните текст в [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и добавьте его в коллекцию абзацев страницы.
+1. Сохраните созданный PDF-файл.
+
+```java
+public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws Exception {
+    String textContent = Files.readString(inputFile, StandardCharsets.UTF_8);
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.getParagraphs().add(new TextFragment(textContent));
+        page.close();
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## Преобразование текста в PDF с расширенными параметрами
+
+Используйте этот пример, когда простой текст необходимо преобразовать с дополнительными параметрами макета или кодирования.
+
+1. Считайте все текстовые строки из входного файла, чтобы можно было проверить маркеры разрыва страницы во время преобразования.
+1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и настройте каждый [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) с полями и состоянием текста по умолчанию.
+1. Разрешите моноширинный шрифт через [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) и добавьте каждую строку как [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. Сохраните выходной файл после завершения цикла создания страницы.
+
+```java
+public static void convertTxtToPdf(Path inputFile, Path outputFile) throws Exception {
+    List<String> lines = Files.readAllLines(inputFile);
+    try (Document document = new Document()) {
+        com.aspose.pdf.Page page = document.getPages().add();
         page.getPageInfo().getMargin().setLeft(20);
         page.getPageInfo().getMargin().setRight(10);
         page.getPageInfo().getDefaultTextState().setFont(FontRepository.findFont("Courier New"));
         page.getPageInfo().getDefaultTextState().setFontSize(12);
 
+        int pageCount = 1;
         for (String line : lines) {
-            // проверка, содержит ли строка символ "перевод страницы"
-            // см. https://en.wikipedia.org/wiki/Page_break
-            if (line.startsWith("\f")) {
-                page = pdfDocument.getPages().add();
+            if (!line.isEmpty() && line.charAt(0) == '\f') {
+                page = document.getPages().add();
                 page.getPageInfo().getMargin().setLeft(20);
                 page.getPageInfo().getMargin().setRight(10);
                 page.getPageInfo().getDefaultTextState().setFont(FontRepository.findFont("Courier New"));
                 page.getPageInfo().getDefaultTextState().setFontSize(12);
+                pageCount++;
+                if (pageCount == 4) {
+                    break;
+                }
             } else {
-                // Создание экземпляра TextFragment и
-                // передача строки в его
-                // конструктор в качестве аргумента
-                TextFragment text = new TextFragment(line);
-
-                // Добавление нового текстового абзаца в коллекцию абзацев и передача объекта TextFragment
-                page.getParagraphs().add(text);
+                page.getParagraphs().add(new TextFragment(line));
             }
-
-            pdfDocument.save(pdfDocumentFileName);
         }
+        document.save(outputFile.toString());
     }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
+## Конвертировать PCL в PDF
 
-## Конвертация XPS в PDF
+Используйте этот пример, когда поток печати PCL необходимо преобразовать в PDF.
 
-**Aspose.PDF for Java** поддерживает функцию конвертации файлов <abbr title="XML Paper Specification">XPS</abbr> в формат PDF. Ознакомьтесь с этой статьей, чтобы решить ваши задачи.
-
-XPS, XML Paper Specification, это формат файла от Microsoft, используемый для интеграции создания и просмотра документов в Windows. С помощью Aspose.PDF for Java возможно конвертировать файлы XPS в PDF, портативный формат файла от Adobe.
-
-Формат файла в основном представляет собой заархивированный XML-файл, который в первую очередь используется для распространения и хранения. Его очень трудно редактировать, и он в основном реализован Microsoft.
-
-Чтобы конвертировать файл XPS в PDF с использованием [Aspose.PDF for Java](https://products.aspose.com/pdf/java), используйте класс [XpsLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/XpsLoadOptions).
- Этот код используется для инициализации объекта [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions). Позже этот объект передается в качестве аргумента во время инициализации объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) и помогает механизму рендеринга PDF определить формат входного документа.
-
-Как в XP, так и в Windows 7, вы должны найти предварительно установленный XPS-принтер, если посмотрите в Панели управления, а затем в Принтерах. Чтобы создавать XPS-файлы, вы можете использовать этот принтер в качестве выходного устройства. В Windows 7 вы можете просто дважды щелкнуть файл, чтобы открыть его в просмотрщике XPS. Вы также можете скачать [просмотрщик XPS](http://windows.microsoft.com/en-US/windows-vista/what-is-the-xps-viewer) с веб-сайта Microsoft.
-
-Следующий фрагмент кода показывает процесс преобразования XPS-файла в формат PDF.
+1. Создайте [`PclLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pclloadoptions/) и включите подавление ошибок синтаксического анализа, когда требуется мягкое поведение при импорте.
+1. Откройте исходный код PCL, передав путь к файлу и параметры загрузки в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните результат в формате PDF.
 
 ```java
-public final class ConvertXPStoPDF {
-
-    private ConvertXPStoPDF() {
+public static void convertPclToPdf(Path inputFile, Path outputFile) {
+    PclLoadOptions loadOptions = new PclLoadOptions();
+    loadOptions.setSupressErrors(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
     }
-
-    final static Path _dataDir = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
-        Convert_XSLFO_to_PDF();
-    }
-
-    public static void Convert_XSLFO_to_PDF() throws IOException {
-        // Инициализация объекта документа
-
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo_txt.pdf").toString();
-        String xpsDocumentFileName = Paths.get(_dataDir.toString(), "demo.xml").toString();
-
-        // Создание объекта LoadOption с использованием опции загрузки XPS
-        LoadOptions options = new XpsLoadOptions();
-
-        // Создание объекта Document, вызывая его пустой конструктор
-        Document pdfDocument = new Document(xpsDocumentFileName, options);
-
-        // Сохранение результирующего PDF-файла
-        pdfDocument.save(pdfDocumentFileName);
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-{{% alert color="success" %}}
-**Попробуйте конвертировать формат XPS в PDF онлайн**
+## Преобразование XML в PDF с помощью XSLT и HTML
 
-Aspose.PDF для Java представляет вам бесплатное онлайн-приложение ["XPS to PDF"](https://products.aspose.app/pdf/conversion/xps-to-pdf/), где вы можете попробовать исследовать функциональность и качество его работы.
+Используйте этот пример, когда XML-данные необходимо преобразовать перед окончательным созданием PDF-файла.
 
-[![Aspose.PDF Конвертация XPS в PDF с бесплатным приложением](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
-{{% /alert %}}
-
-## Конвертация PostScript в PDF
-
-**Aspose.PDF для Java** поддерживает функции преобразования файлов PostScript в формат PDF. Одной из функций Aspose.PDF является возможность установить набор папок шрифтов, которые будут использоваться во время конвертации.
-
-Для того чтобы конвертировать файл PostScript в формат PDF, Aspose.PDF для Java предлагает класс [PsLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PsLoadOptions), который используется для инициализации объекта LoadOptions. Позже этот объект может быть передан в качестве аргумента конструктору объекта Document, что поможет PDF Rendering Engine определить формат исходного документа.
-
-
-Следующий фрагмент кода может быть использован для преобразования файла PostScript в формат PDF:
+1. Преобразуйте источник XML с помощью файла XSLT во временный файл HTML, вызвав специальный метод преобразования.
+1. Передайте сгенерированный HTML-файл в существующую функцию преобразования HTML в PDF, чтобы в окончательном PDF-файле использовался стандартный рабочий процесс [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/).
+1. Удалите временный HTML-файл в блоке `finally` после завершения преобразования.
+1. Сохраните созданный PDF-файл.
 
 ```java
-public static void ConvertPostScriptToPDF_Simple(){
-        // Инициализировать объект документа
-
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo.pdf").toString();
-        String psDocumentFileName = Paths.get(_dataDir.toString(), "demo.ps").toString();
-        PsLoadOptions options = new PsLoadOptions();
-
-        // Создать объект Document
-        Document document = new Document(psDocumentFileName, options);
-
-        // Сохранить выходной PDF документ
-        document.save(pdfDocumentFileName);
+public static void convertXmlToPdf(Path xsltFile, Path xmlFile, Path outputFile) throws Exception {
+    Path htmlFile = Files.createTempFile("aspose-pdf-xml-", ".html");
+    try {
+        transformXmlToHtml(xmlFile, xsltFile, htmlFile);
+        HtmlToPdfExamples.convertHtmlToPdf(htmlFile, outputFile);
+    } finally {
+        Files.deleteIfExists(htmlFile);
     }
-```
-
-Кроме того, вы можете задать набор папок шрифтов, которые будут использоваться во время преобразования:
-
-```java
-public static void ConvertPostscriptToPDFAvdanced() {
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo.pdf").toString();
-        String psDocumentFileName = Paths.get(_dataDir.toString(), "demo.ps").toString();
-        PsLoadOptions options = new PsLoadOptions();
-        
-        options.setFontsFolders(new String[] { "c:\tmp\fonts1", "c:\tmp\fonts2" });
-
-        // Создать объект Document
-        Document document = new Document(psDocumentFileName, options);
-
-        // Сохранить выходной PDF документ
-        document.save(pdfDocumentFileName);
-    }
-```
-
-
-## Преобразование XML в PDF
-
-Формат XML используется для хранения структурированных данных. Существует несколько способов преобразования <abbr title="Extensible Markup Language">XML</abbr> в PDF в Aspose.PDF.
-
-{{% alert color="success" %}}
-**Попробуйте преобразовать XML в PDF онлайн**
-
-Aspose.PDF for Java предлагает вам бесплатное онлайн-приложение ["XML в PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf), где вы можете попробовать изучить функциональность и качество работы.
-
-[![Aspose.PDF Преобразование XML в PDF с помощью бесплатного приложения](xml_to_pdf.png)](https://products.aspose.app/pdf/conversion/xml-to-pdf)
-{{% /alert %}}
-
-Рассмотрите вариант использования XML-документа на основе стандарта XSL-FO.
-
-### Преобразование XSL-FO в PDF
-
-Преобразование файлов XSL-FO в PDF можно реализовать с использованием объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/document) с [XslFoLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions).
-
-```java
-package com.aspose.pdf.examples;
-/**
- * Преобразование XML в PDF
- */
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertXMLtoPDF {
-
-    private ConvertXMLtoPDF() {
-    }
-
-    final static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-    public static void main(String[] args) throws IOException {
-        Convert_XSLFO_to_PDF();
-        Convert_XSLFO_to_PDF_Adv();
-    }
-
-    public static void Convert_XSLFO_to_PDF() throws IOException {
-        // Инициализация объекта документа
-
-        String pdfDocumentFileName = Paths.get(_dataDir.toString(), "demo_txt.pdf").toString();
-        String xmlDocumentFileName = Paths.get(_dataDir.toString(), "demo.xml").toString();
-        String xsltDocumentFileName = Paths.get(_dataDir.toString(), "employees.xslt").toString();
-
-        XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
-
-        // Создание экземпляра объекта Document, вызвав его пустой конструктор
-        Document pdfDocument = new Document(xmlDocumentFileName,options);
-
-        // Сохранение итогового PDF файла
-        pdfDocument.save(pdfDocumentFileName);
-    }
+    System.out.println(xmlFile + " converted into " + outputFile);
 }
 ```
 
+## Конвертировать XPS в PDF
 
-### Преобразование XSL-FO в PDF с заданной стратегией обработки ошибок
+Используйте этот пример, когда документ XPS необходимо преобразовать в PDF.
 
-```java
-// Инициализация объекта документа
-
-String documentFileName = Paths.get(DATA_DIR.toString(), "demo_txt.pdf").toString();
-String xmlDocumentFileName = Paths.get(DATA_DIR.toString(), "demo.xml").toString();
-String xsltDocumentFileName = Paths.get(DATA_DIR.toString(), "employees.xslt").toString();
-
-XslFoLoadOptions options = new XslFoLoadOptions(xsltDocumentFileName);
-
-// Установка стратегии обработки ошибок
-options.setParsingErrorsHandlingType(XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately);
-
-// Создание объекта Document, вызвав его пустой конструктор
-Document document = new Document(xmlDocumentFileName, options);
-
-// Сохранение результирующего PDF файла
-document.save(documentFileName);
-document.close();
-```
-
-## Преобразование LaTeX/TeX в PDF
-
-Формат файла LaTeX представляет собой текстовый формат с разметкой в производной от TeX семье языков LaTeX, и LaTeX является производным форматом системы TeX.
- LaTeX (ˈleɪtɛk/ лай-тек или ла-тек) — это система подготовки документов и язык разметки документов. Он широко используется для общения и публикации научных документов во многих областях, включая математику, физику и информатику. Также он играет важную роль в подготовке и публикации книг и статей, содержащих сложные многоязычные материалы, такие как санскрит и арабский, включая критические издания. LaTeX использует программу набора текста TeX для форматирования своего вывода и сам написан на языке макросов TeX.
-
-**Aspose.PDF for Java** поддерживает функцию преобразования файлов TeX в формат PDF, и для выполнения этого требования пакет com.aspose.pdf имеет класс под названием [LatexLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LatexLoadOptions), который предоставляет возможности загрузки файлов LaTex и отображения вывода в формате PDF, используя класс [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document). Следующий фрагмент кода показывает процесс преобразования LaTex файла в формат PDF.
+1. Откройте исходный код XPS, передав путь к файлу и [`XpsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpsloadoptions/) в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Позвольте Aspose.PDF интерпретировать описание страницы XPS во время загрузки документа.
+1. Сохраните преобразованный PDF-файл.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertLATEXtoPDF {
-
-    private ConvertLATEXtoPDF() {
+public static void convertXpsToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new XpsLoadOptions())) {
+        document.save(outputFile.toString());
     }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        
-        // Создать объект опции загрузки Latex
-        TeXLoadOptions options = new TeXLoadOptions();
-        
-        // Создать объект документа
-        String latexFileName = Paths.get(_dataDir.toString(), "samplefile.tex").toString();
-        Document document = new Document(latexFileName, options);
-
-        // Сохранить выходной PDF документ
-        document.save(Paths.get(_dataDir.toString(),"TEXtoPDF.pdf").toString());
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-{{% alert color="success" %}}
-**Попробуйте преобразовать LaTeX/TeX в PDF онлайн**
+## Конвертировать XSL-FO в PDF
 
-Aspose.PDF for Java предлагает вам бесплатное онлайн-приложение ["LaTex to PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf), где вы можете попробовать изучить функциональность и качество его работы.
-[![Aspose.PDF Конвертация LaTeX/TeX в PDF с бесплатным приложением](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
-{{% /alert %}}
+Используйте этот пример, когда содержимое XSL-FO должно отображаться в формате PDF.
+
+1. Создайте [`XslFoLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions/) с путем XSLT, чтобы источник XML можно было преобразовать во время загрузки.
+1. Настройте режим обработки ошибок синтаксического анализа, чтобы он выдавался немедленно при обнаружении недопустимого XSL-FO.
+1. Откройте исходный код XML в файле [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с этими параметрами загрузки.
+1. Сохраните полученный PDF-документ.
+
+```java
+public static void convertXslFoToPdf(Path xsltFile, Path xmlFile, Path outputFile) {
+    XslFoLoadOptions loadOptions = new XslFoLoadOptions(xsltFile.toString());
+    loadOptions.setParsingErrorsHandlingType(XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately);
+    try (Document document = new Document(xmlFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(xmlFile + " converted into " + outputFile);
+}
+```
+
+## Преобразование XML в промежуточный HTML
+
+Используйте этот метод, когда данные XML необходимо преобразовать в HTML перед последним этапом преобразования PDF.
+
+1. Откройте входные файлы XML и XSLT в качестве источников преобразования.
+1. Создайте `Transformer` из таблицы стилей XSLT и запустите ее с исходным кодом XML.
+1. Запишите преобразованный HTML-файл на диск, чтобы последующая функция преобразования PDF могла его загрузить.
+
+```java
+private static void transformXmlToHtml(Path xmlFile, Path xsltFile, Path htmlFile) throws Exception {
+    Transformer transformer = TransformerFactory.newInstance()
+            .newTransformer(new StreamSource(xsltFile.toFile()));
+    transformer.transform(new StreamSource(xmlFile.toFile()), new StreamResult(htmlFile.toFile()));
+}
+```

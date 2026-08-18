@@ -1,50 +1,65 @@
 ---
-title: Установка Привилегий на Существующий PDF Файл
+title: Установите права доступа к существующему PDF-файлу
+linktitle: Установите права доступа к существующему PDF-файлу
 type: docs
-weight: 50
-url: /ru/java/set-privileges/
-description: Эта тема объясняет, как установить привилегии на существующий PDF файл, используя класс PdfFileSecurity.
-lastmod: "2021-06-05"
+weight: 40
+url: /java/set-privileges/
+description: Узнайте, как установить права PDF в Java с помощью фасада PdfFileSecurity.
+lastmod: "2026-06-09"
 draft: false
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Управление разрешениями PDF и контролем доступа в Java
+Abstract: Узнайте, как контролировать разрешения PDF с помощью Aspose.PDF для Java. Набор примеров Java охватывает применение привилегий без паролей, применение привилегий с паролями пользователя и владельца, а также рабочий процесс обновления привилегий в стиле try, который возвращает флаг успеха.
 ---
+## Установите права доступа к существующему PDF-файлу
 
-## Установка Привилегий на Существующий PDF Файл (фасады)
+Используйте этот рабочий процесс, когда вам нужно изменить действия пользователей с существующим PDF-файлом.
 
-Чтобы установить привилегии PDF файла, создайте объект класса [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity) и привяжите входной PDF, используя метод bindPdf. Затем вам нужно вызвать метод setPrivilege, чтобы установить привилегии. Вы можете указать привилегии, используя объект [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/DocumentPrivilege), а затем передать этот объект в метод setPrivilege и сохранить выходной PDF, используя метод save.
+### Шаги
 
-Следующий фрагмент кода показывает, как установить привилегии PDF файла.
+1. Создайте экземпляр `PdfFileSecurity`.
+2. Свяжите исходный PDF-файл с помощью `bindPdf`.
+3. Создайте объект `DocumentPrivilege` и настройте разрешенные действия.
+4. Вызовите соответствующую перегрузку `setPrivilege` или `trySetPrivilege`.
+5. Сохраните результат, если обновление пройдет успешно, затем закройте объект.
 
-```java
-public static void SetPrivilege1() {
-        // Создать объект DocumentPrivileges
-        DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
-        privilege.setChangeAllowLevel(1);
-        privilege.setAllowPrint(true);
-        privilege.setAllowCopy(true);
-
-        // Создать объект PdfFileSecurity
-        PdfFileSecurity fileSecurity = new PdfFileSecurity();
-        fileSecurity.bindPdf(_dataDir + "sample.pdf");
-        fileSecurity.setPrivilege(privilege);
-        fileSecurity.save(_dataDir + "sample_privileges.pdf");
-    }
-```
-
-
-Смотрите следующий метод с указанием пароля:
+### Примеры Java
 
 ```java
- public static void SetPrivilege2() {
-        // Создать объект DocumentPrivileges
-        DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
-        privilege.setChangeAllowLevel(1);
-        privilege.setAllowPrint(true);
-        privilege.setAllowCopy(true);
+public static void setPdfPrivilegesWithoutPasswords(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    fileSecurity.setPrivilege(privilege);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
 
-        // Создать объект PdfFileSecurity
-        PdfFileSecurity fileSecurity = new PdfFileSecurity();
-        fileSecurity.bindPdf(_dataDir + "sample.pdf");
-        fileSecurity.setPrivilege("", "P@ssw0rd", privilege);
-        fileSecurity.save(_dataDir + "sample_privileges.pdf");
+public static void setPdfPrivilegesWithPasswords(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    privilege.setAllowCopy(false);
+    fileSecurity.setPrivilege("user_password", "owner_password", privilege);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void trySetPdfPrivilegesWithoutException(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    if (fileSecurity.trySetPrivilege("user_password", "owner_password", privilege)) {
+        fileSecurity.save(outputFile.toString());
+    } else {
+        System.out.println("Setting privileges failed. Check passwords or document state.");
     }
+    fileSecurity.close();
+}
 ```

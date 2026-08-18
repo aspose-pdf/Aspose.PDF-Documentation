@@ -1,0 +1,61 @@
+---
+title: Удалить формы из PDF в Java
+linktitle: Удалить формы
+type: docs
+weight: 70
+url: /java/remove-form/
+description: Удалите объекты формы со страниц PDF с помощью Aspose.PDF для Java, включая полную очистку и целевое удаление.
+lastmod: "2026-06-09"
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Удаление ресурсов формы со страниц PDF с помощью Java
+Abstract: В этой статье объясняется, как удалить ресурсы формы из PDF-документов с помощью Aspose.PDF для Java. В нем рассматривается очистка всех форм со страницы и удаление только выбранных ресурсов форм «Пишущая машинка» после фильтрации коллекции форм страницы.
+---
+Эти примеры удаляют ресурсы формы со страницы, а не просто изменяют значения полей.
+
+## Удалите все ресурсы формы со страницы
+
+Используйте этот пример, когда каждый ресурс формы на выбранной странице должен быть удален за одну операцию.
+
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) для целевой страницы.
+1. Очистите коллекцию и сохраните обновленный документ.
+
+```java
+public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XFormCollection forms = document.getPages().get_Item(pageNum).getResources().getForms();
+        forms.clear();
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Удаление определенных ресурсов формы
+
+Используйте этот пример, когда необходимо удалить только выбранные ресурсы формы, такие как формы пишущей машинки.
+
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) для целевой страницы.
+1. Отфильтруйте ресурсы [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/), которые вы хотите удалить, и удалите их из коллекции.
+1. Сохраните обновленный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+```java
+public static void removeSpecifiedForm(Path inputFile, int pageNum, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XFormCollection forms = document.getPages().get_Item(pageNum).getResources().getForms();
+        List<String> formNames = new ArrayList<>();
+        for (XForm form : forms) {
+            if ("Typewriter".equals(form.getIT()) && "Form".equals(form.getSubtype())) {
+                formNames.add(forms.getFormName(form));
+            }
+        }
+        for (String formName : formNames) {
+            forms.delete(formName);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```

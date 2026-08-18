@@ -1,31 +1,32 @@
 ---
-title: Получить XMP Метаданные из PDF Файла на PHP
+title: Получить метаданные XMP из PDF-файла на PHP
+linktitle: Получить метаданные XMP из PDF-файла на PHP
 type: docs
 weight: 50
-url: /ru/java/get-xmp-metadata-from-pdf-file-in-php/
-lastmod: "2021-06-05"
+url: /java/get-xmp-metadata-from-pdf-file-in-php/
+description: Узнайте, как извлечь метаданные XMP из PDF-документов на PHP с помощью Aspose.PDF для расширенного анализа контента.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — получение метаданных XMP
 
-## Aspose.PDF - Получить XMP Метаданные
+Чтобы получить метаданные XMP из документа PDF с помощью **Aspose.PDF Java для PHP**, просто вызовите класс **GetXMPMetadata**.
 
-Чтобы получить XMP метаданные из Pdf документа с использованием **Aspose.PDF Java для PHP**, просто вызовите класс **GetXMPMetadata**.
-
-PHP Код
+PHP-код
 
 ```php
 
-# Открыть pdf документ.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Получить свойства
+# Get properties
 print "xmp:CreateDate: " + $doc->getMetadata()->get_Item("xmp:CreateDate") . PHP_EOL;
 print "xmp:Nickname: " + $doc->getMetadata()->get_Item("xmp:Nickname") . PHP_EOL;
 print "xmp:CustomProperty: " + $doc->getMetadata()->get_Item("xmp:CustomProperty") . PHP_EOL;
 
 ```
 
-**Скачать Исполняемый Код**
+**Загрузить рабочий код**
 
-Скачайте **Получить XMP Метаданные (Aspose.PDF)** с любого из нижеупомянутых сайтов социального кодирования:
+Загрузите **Получите метаданные XMP (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetXMPMetadata.php)

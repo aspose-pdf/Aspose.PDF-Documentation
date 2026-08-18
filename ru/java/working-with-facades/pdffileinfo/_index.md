@@ -1,14 +1,23 @@
 ---
-title: PdfFileInfo Class
+title: Класс Пдффилеинфо
+linktitle: Класс Пдффилеинфо
 type: docs
-weight: 90
-url: /ru/java/pdffileinfo-class/
-description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfFileInfo.
-lastmod: "2021-06-05"
+weight: 110
+url: /java/pdffileinfo-class/
+description: Узнайте, как использовать фасад PdfFileInfo в Java для проверки метаданных PDF, свойств документа, привилегий, сведений о версии и информации о странице.
+lastmod: "2026-06-09"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Проверка метаданных, свойств и информации о странице PDF в Java с помощью PdfFileInfo
+Abstract: В этом разделе объясняется, как использовать фасад PdfFileInfo в Aspose.PDF для Java для программной проверки сведений о файле PDF. Текущие примеры Java охватывают поиск версии PDF, права доступа к документу, размеры и смещения страницы, а также чтение или обновление метаданных документа.
 ---
+Класс Java `PdfFileInfoExamples` демонстрирует основные рабочие процессы проверки и метаданных, доступные через API фасадов.
 
-- [Получить информацию о PDF файле - фасады](/pdf/ru/java/get-pdf-information/)
-- [Установить информацию о PDF файле - фасады](/pdf/ru/java/set-pdf-information/)
+Используйте этот раздел, чтобы узнать, как:
+
+- чтение PDF-версии и права доступа к документу
+- проверить ширину, высоту, поворот и смещения страницы
+- получать, устанавливать, очищать и сохранять метаданные документа с помощью XMP

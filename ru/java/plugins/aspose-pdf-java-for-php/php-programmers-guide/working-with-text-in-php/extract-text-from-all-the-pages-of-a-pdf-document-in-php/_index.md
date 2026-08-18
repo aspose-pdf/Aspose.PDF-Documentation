@@ -1,49 +1,49 @@
 ---
-title: Извлечение текста со всех страниц PDF-документа на PHP
+title: Извлечь текст со всех страниц PDF-документа в PHP
+linktitle: Извлечь текст со всех страниц PDF-документа в PHP
 type: docs
 weight: 30
-url: /ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
-lastmod: "2021-06-05"
+url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
+description: Узнайте, как извлечь текст со всех страниц PDF-документа на PHP, используя Aspose.PDF для анализа текста.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — извлечь текст со всех страниц
 
-## Aspose.PDF - Извлечение текста со всех страниц
-
-Чтобы извлечь текст со всех страниц PDF-документа с использованием **Aspose.PDF Java for PHP**, просто вызовите модуль **ExtractTextFromAllPages**.
-Код PHP
+Чтобы извлечь документ TextrFrom All the Pages Pdf с помощью **Aspose.PDF Java для PHP**, просто вызовите модуль **ExtractTextFromAllPages**.
+PHP-код
 
 ```php
 
-# Открыть целевой документ
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# создать объект TextAbsorber для извлечения текста
+# create TextAbsorber object to extract text
 $text_absorber = new TextAbsorber();
 
-# применить абсорбер для всех страниц
+# accept the absorber for all the pages
 $pdf->getPages()->accept($text_absorber);
 
-# Чтобы извлечь текст с конкретной страницы документа, нам нужно указать конкретную страницу, используя ее индекс в методе accept(..).
-# применить абсорбер для конкретной страницы PDF
+# In order to extract text from specific page of document, we need to specify the particular page using its index against accept(..) method.
+# accept the absorber for particular PDF page
 # pdfDocument.getPages().get_Item(1).accept(textAbsorber);
 
-# получить извлеченный текст
+#get the extracted text
 $extracted_text = $text_absorber->getText();
 
-# создать писатель и открыть файл
+# create a writer and open the file
 $writer = new FileWriter(new File($dataDir . "extracted_text.out.txt"));
 $writer->write($extracted_text);
-# записать строку текста в файл
+# write a line of text to the file
 # tw.WriteLine(extractedText);
-# закрыть поток
+# close the stream
 $writer->close();
 
-print "Текст успешно извлечен. Проверьте выходной файл." . PHP_EOL;
+print "Text extracted successfully. Check output file." . PHP_EOL;
 
 ```
 
+**Загрузить рабочий код**
 
-**Загрузка выполняемого кода**
-
-Скачайте **Извлечение текста со всех страниц (Aspose.PDF)** с любого из указанных ниже сайтов социального программирования:
+Загрузите **Извлечение текста со всех страниц (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)

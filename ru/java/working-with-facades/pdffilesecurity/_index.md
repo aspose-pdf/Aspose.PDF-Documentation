@@ -1,17 +1,24 @@
 ---
-title: Класс PdfFileSecurity
+title: Класс PDFFileSecurity
+linktitle: Класс PDFFileSecurity
 type: docs
-weight: 110
-url: /ru/java/pdffilesecurity-class/
-description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfFileSecurity.
-lastmod: "2021-06-05"
+weight: 125
+url: /java/pdffilesecurity-class/
+description: Узнайте, как использовать фасад PdfFileSecurity в Java для шифрования и дешифрования PDF-файлов, изменения паролей и управления правами доступа к документам.
+lastmod: "2026-06-09"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Шифрование, дешифрование и контроль разрешений PDF в Java с помощью PdfFileSecurity
+Abstract: В этом разделе объясняется, как использовать фасад PdfFileSecurity в Aspose.PDF для Java для программной защиты PDF-документов. Текущие примеры Java охватывают шифрование на основе пароля, шифрование AES, дешифрование, изменение пароля и настройку привилегий как с прямыми, так и с пробными рабочими процессами.
 ---
+Класс Java `PdfFileSecurityExamples` демонстрирует основные рабочие процессы обеспечения безопасности, доступные через API фасадов.
 
-- [Зашифровать PDF файл](/pdf/ru/java/encrypt-pdf-file/)
-- [Расшифровать PDF файл](/pdf/ru/java/decrypt-pdf-file/)
-- [Управление исключениями PDF файла](/pdf/ru/java/control-exception/)
-- [Изменить пароль PDF файла](/pdf/ru/java/change-password/)
-- [Установить права на существующий PDF файл](/pdf/ru/java/set-privileges/)
+Используйте этот раздел, чтобы узнать, как:
+
+- зашифровать PDF-файл с помощью паролей пользователя и владельца
+- применить или обновить права доступа к документу
+- расшифровать PDF-файл с помощью пароля владельца
+- изменить пароли и при необходимости сбросить настройки безопасности

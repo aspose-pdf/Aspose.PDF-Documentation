@@ -1,30 +1,31 @@
 ---
 title: Aspose.PDF Java для PHP
+linktitle: Aspose.PDF Java для PHP
 type: docs
 weight: 50
-url: /ru/java/aspose-pdf-java-for-php/
-lastmod: "2021-06-05"
+url: /java/aspose-pdf-java-for-php/
+description: Узнайте, как интегрировать Aspose.PDF для Java в проекты PHP. Разблокируйте расширенные функции PDF для своих веб-приложений.
+lastmod: "2026-06-09"
 ---
-
 ## Введение в Aspose.PDF Java для PHP
 
-### PHP / Java Bridge
+### PHP/Java-мост
 
-PHP/Java Bridge — это реализация потокового, XML-основанного [сетевого протокола](http://php-java-bridge.sourceforge.net/pjb/PROTOCOL.TXT), который может использоваться для соединения встроенного скриптового движка, например PHP, Scheme или Python, с виртуальной машиной Java. Он работает до 50 раз быстрее, чем локальный RPC через SOAP, требует меньше ресурсов на стороне веб-сервера. Он [быстрее](http://php-java-bridge.sourceforge.net/pjb/FAQ.html#performance) и надежнее, чем прямая связь через Java Native Interface, и не требует дополнительных компонентов для вызова Java-процедур из PHP или PHP-процедур из Java.
+PHP/Java Bridge — это реализация потокового [сетевого протокола] на основе XML(http://php-java-bridge.sourceforge.net/pjb/PROTOCOL.TXT), который можно использовать для подключения собственного механизма сценариев, например PHP, Scheme или Python, к виртуальной машине Java. Это до 50 раз быстрее, чем локальный RPC через SOAP, требует меньше ресурсов на стороне веб-сервера. Это [быстрее](http://php-java-bridge.sourceforge.net/pjb/FAQ.html#performance) и более надежно, чем прямая связь через собственный интерфейс Java, и не требует дополнительных компонентов для вызова процедур Java из PHP или процедур PHP из Java.
 
 Подробнее читайте на [sourceforge.net](http://php-java-bridge.sourceforge.net/pjb/)
 
 ### Aspose.PDF для Java
 
-Aspose.PDF для Java — это компонент для создания PDF-документов, который позволяет вашим Java-приложениям читать, записывать и обрабатывать PDF-документы без использования Adobe Acrobat.
+Aspose.PDF for Java — это компонент для создания PDF-документов, который позволяет вашим Java-приложениям читать, записывать и манипулировать PDF-документами без использования Adobe Acrobat.
 
-Aspose.PDF for Java - это компонент по доступной цене, который предлагает невероятное количество функций, включая: опции сжатия PDF, создание и обработку таблиц, поддержку графиков, функции работы с изображениями, обширную функциональность гиперссылок, расширенные средства безопасности и работу с пользовательскими шрифтами.
+Aspose.PDF для Java — это доступный по цене компонент, который предлагает невероятное множество функций, в том числе: параметры сжатия PDF, создание таблиц и манипулирование ими, поддержку графиков, функции изображений, обширные функции гиперссылок, расширенные средства управления безопасностью и обработку настраиваемых шрифтов.
 
-Aspose.PDF for Java позволяет создавать PDF-файлы напрямую через предоставленный API и XML-шаблоны. Использование Aspose.PDF for Java также позволит вам быстро добавить возможности PDF в ваши приложения.
+Aspose.PDF для Java позволяет создавать PDF-файлы напрямую с помощью предоставленных API и шаблонов XML. Использование Aspose.PDF для Java также позволит вам мгновенно добавить возможности PDF в ваши приложения.
 
 ### Aspose.PDF Java для PHP
 
-Проект Aspose.PDF для PHP показывает, как различные задачи могут выполняться с использованием Aspose.PDF Java API в PHP. Этот проект нацелен на предоставление полезных примеров для PHP-разработчиков, которые хотят использовать Aspose.PDF for Java в своих PHP-проектах, используя [PHP/Java Bridge](http://php-java-bridge.sourceforge.net/pjb/).
+Проект Aspose.PDF для PHP показывает, как различные задачи можно выполнять с помощью Java API Aspose.PDF в PHP. Целью этого проекта является предоставление полезных примеров разработчикам PHP, которые хотят использовать Aspose.PDF для Java в своих проектах PHP с использованием [PHP/Java Bridge](http://php-java-bridge.sourceforge.net/pjb/).
 
 ## Системные требования и поддерживаемые платформы
 
@@ -32,53 +33,53 @@ Aspose.PDF for Java позволяет создавать PDF-файлы нап�
 
 Ниже приведены системные требования для использования Aspose.PDF для PHP через Java:
 
-- Установлен Tomcat Server 8.0 или выше.
+- Установлен Tomcat Server 8.0 или более поздней версии.
 - PHP/JavaBridge настроен.
 - FastCGI установлен.
-- Загружен компонент Aspose.PDF.
+- Скачал компонент Aspose.PDF.
 
 ### Поддерживаемые платформы
 
-Ниже перечислены поддерживаемые платформы:
+Ниже приведены поддерживаемые платформы:
 
 - PHP 5.3 или выше
 - Java 1.8 или выше
 
 ## Загрузки и настройка
 
-### Загрузка необходимых библиотек
+### Загрузите необходимые библиотеки
 
 Загрузите необходимые библиотеки, указанные ниже. Они необходимы для выполнения примеров Aspose.PDF Java для PHP.
 
-- **Aspose:** [Aspose.PDF для компонента Java](https://downloads.aspose.com/pdf/java)
-- PHP/Java Bridge
+- **Aspose:** [Aspose.PDF для Java-компонента](https://downloads.aspose.com/pdf/java)
+- PHP/Java-мост
 
-### Загрузка примеров с социальных кодирующих сайтов
+### Загрузите примеры с сайтов социального кодирования
 
-Следующие выпуски работающих примеров доступны для загрузки на ниже указанных социальных кодирующих сайтах:
+Следующие выпуски примеров выполнения доступны для загрузки на указанных ниже сайтах социального кодирования:
 
 ### GitHub
 
-- Примеры Aspose.PDF Java для PHP
-  - [Aspose.PDF Java для PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
+- Aspose.PDF Java для примеров PHP
+  - [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
 
-### Как настроить исходный код на платформе Linux
+### How to configure the source code on Linux Platform
 
-Пожалуйста, выполните следующие простые шаги, чтобы открыть и расширить исходный код при использовании:
+Please follow these simple stepsВ in order to open and extend the source code while using:
 
-### 1. Установите Tomcat Server
+### 1. Install Tomcat Server
 
-Чтобы установить сервер Tomcat, выполните следующую команду в консоли Linux. Это успешно установит сервер Tomcat.
+Чтобы установить сервер Tomcat, введите следующую команду в консоли Linux. Это позволит успешно установить сервер Tomcat.
 
 {{< highlight actionscript3 >}}
 
- sudo apt-get install tomcat8
+ sudo apt-get установить tomcat8
 
 {{< /highlight >}}
 
-### 2. Скачать и настроить PHP/JavaBridge
+### 2. Загрузите и настройте PHP/JavaBridge.
 
-Чтобы скачать бинарные файлы PHP/JavaBridge, выполните следующую команду в консоли Linux.
+Чтобы загрузить двоичные файлы PHP/JavaBridge, введите следующую команду в консоли Linux.
 
 {{< highlight actionscript3 >}}
 
@@ -86,15 +87,15 @@ Aspose.PDF for Java позволяет создавать PDF-файлы нап�
 
 {{< /highlight >}}
 
-Распакуйте бинарные файлы PHP/JavaBridge, выполнив следующую команду в консоли Linux.
+Разархивируйте двоичные файлы PHP/JavaBridge, введя следующую команду в консоли Linux.
 
 {{< highlight actionscript3 >}}
 
-  unzip -d php-java-bridge_6.2.1_documentation.zip
+  разархивировать -d php-java-bridge_6.2.1_documentation.zip
 
 {{< /highlight >}}
 
-Это извлечет файл **JavaBridge.war**. Скопируйте его в папку **webapps** tomcat88, выполнив следующую команду в консоли Linux.
+Это приведет к извлечению файла **JavaBridge.war**. Скопируйте его в папку tomcat88 **webapps** , выполнив следующую команду на консоли Linux.
 
 {{< highlight actionscript3 >}}
 
@@ -102,21 +103,21 @@ Aspose.PDF for Java позволяет создавать PDF-файлы нап�
 
 {{< /highlight >}}
 
-При копировании tomcat8 автоматически создаст новую папку "**JavaBridge**" в **webapps**.
+При копировании tomcat8 автоматически создаст новую папку «**JavaBridge**» в **веб-приложениях**.
 
-Если появляется сообщение об ошибке, установите **FastCGI**, выполнив следующую команду в консоли Linux.
+Если появится какое-либо сообщение об ошибке, установите  **FastCGI** , введя следующую команду на консоли Linux.
 
 {{< highlight actionscript3 >}}
 
-  sudo apt-get install php55-cgi
+  sudo apt-get установить php55-cgi
 
 {{< /highlight >}}
 
-Если отображается ошибка **JAVA_HOME**, откройте файл /etc/default/tomcat8 и раскомментируйте строку, которая устанавливает JAVA_HOME.
+Если отображается ошибка **JAVA_HOME** , откройте файл /etc/default/tomcat8 и раскомментируйте строку, которая устанавливает JAVA_HOME.
 
-### 3. Настройка Aspose.PDF Java для PHP примеров
+### 3. Настройте Aspose.PDF Java для примеров PHP
 
-Клонируйте PHP-примеры, выполнив следующие команды в папке webapps/JavaBridge. 
+Клонируйте примеры PHP, введя следующие команды в папке webapps/JavaBridge.
 
 {{< highlight actionscript3 >}}
 
@@ -128,48 +129,46 @@ $ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugi
 
 ### Как настроить исходный код на платформе Windows
 
-Пожалуйста, выполните следующие простые шаги для настройки PHP/Java Bridge на платформе Windows
+Пожалуйста, следуйте приведенным ниже простым шагам для настройки PHP/Java Bridge на платформе Windows.
 
-1. Установите PHP5 и настройте как обычно
-2. Установите JRE 6 (Java Runtime Environment), если у вас его еще нет. Вы можете проверить это в C:\Program Files и т.д. Вы можете скачать его здесь. Я использую JRE 6, так как он совместим с PHP Java Bridge (PJB).
+1. Установите PHP5 и настройте, как обычно.
+2. Установите JRE 6 (среда выполнения Java), если она у вас еще не установлена. Вы можете проверить это в C:\Program Files и т. д. Вы можете скачать его здесь. Я использую JRE 6, поскольку он совместим с PHP Java Bridge (PJB).
 
 3. Установите Apache Tomcat 8.0. Вы можете скачать его здесь
 
-4. Загрузите [JavaBridge.war](https://sourceforge.net/projects/php-java-bridge/files/Binary%20package/php-java-bridge_6.2.1/JavaBridgeTemplate621.war/download). Скопируйте этот файл в директорию webapps tomcat.  
+4. Загрузите [JavaBridge.war](https://sourceforge.net/projects/php-java-bridge/files/Binary%20package/php-java-bridge_6.2.1/JavaBridgeTemplate621.war/download). Скопируйте этот файл в каталог веб-приложений Tomcat.
 (например: C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps )
 
-5. Перезапустите сервис apache tomcat.
+5. Перезапустите службу Tomcat Apache.
 
-6. Перейдите по адресу http://localhost:8080/JavaBridge/test.php, чтобы проверить, работает ли php. Вы можете найти другие примеры там.
+6. Перейдите на http://localhost:8080/JavaBridge/test.php, чтобы проверить, работает ли PHP. Там вы можете найти другие примеры
 
-7. Скопируйте ваш файл jar [Aspose.PDF Java](https://downloads.aspose.com/pdf/java) в C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\WEB-INF\lib
+7. Скопируйте JAR-файл [Aspose.PDF Java](https://downloads.aspose.com/pdf/java) в C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\WEB-INF\lib
 
-8. Клонируйте примеры [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP) в папку C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\.
+8. Клонируйте примеры [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP) в папке C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\.
 
-9. Скопируйте папку C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\java в папку с примерами Aspose.PDF Java for PHP.
+9. Скопируйте папку C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\java в папку примеров Aspose.PDF Java для PHP.
 
-10. Перезапустите сервис apache tomcat и начните использовать примеры.
+10. Перезапустите службу Apache Tomcat и начните использовать примеры.
 
+## Поддерживайте, расширяйте и вносите вклад
 
-## Поддержка, расширение и вклад
+### Поддерживать
 
-### Поддержка
+С самых первых дней существования Aspose мы знали, что просто предлагать нашим клиентам хорошие продукты недостаточно. Нам также нужно было предоставлять хороший сервис. Мы сами являемся разработчиками и понимаем, как неприятно, когда техническая проблема или особенность программного обеспечения не позволяют вам сделать то, что вам нужно. Мы здесь, чтобы решать проблемы, а не создавать их.
 
-С самых первых дней Aspose мы знали, что просто предоставлять нашим клиентам хорошие продукты будет недостаточно. Нам также нужно было предоставить хороший сервис. Мы сами разработчики и понимаем, как это расстраивает, когда техническая проблема или особенность в программном обеспечении мешает вам делать то, что вам нужно. Мы здесь, чтобы решать проблемы, а не создавать их.
-
-Именно поэтому мы предлагаем бесплатную поддержку. Любой, кто использует наш продукт, будь то купивший его или использующий для оценки, заслуживает нашего полного внимания и уважения.
+Именно поэтому мы предлагаем бесплатную поддержку. Любой, кто использует наш продукт, независимо от того, купили ли они его или используют его для оценки, заслуживает нашего полного внимания и уважения.
 
 Вы можете зарегистрировать любые проблемы или предложения, связанные с Aspose.Cells Java для PHP, используя любую из следующих платформ:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-### Расширение и вклад
+### Расширяйте и вносите вклад
 
-Aspose.PDF Java для PHP является открытым исходным кодом, и его исходный код доступен на основных сайтах социального кодирования, перечисленных ниже.
- Разработчикам рекомендуется загружать исходный код и вносить свой вклад, предлагая или добавляя новые функции или улучшая существующие, чтобы другие также могли извлечь из этого пользу.
+Aspose.PDF Java для PHP имеет открытый исходный код, и его исходный код доступен на основных веб-сайтах по программированию в социальных сетях, перечисленных ниже. Разработчикам рекомендуется загружать исходный код и вносить свой вклад, предлагая или добавляя новые функции или улучшая существующие, чтобы другие также могли извлечь из этого пользу.
 
 ### Исходный код
 
-Вы можете получить последний исходный код из одного из следующих мест:
+Вы можете получить последнюю версию исходного кода в одном из следующих мест.
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)

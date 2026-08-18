@@ -1,47 +1,48 @@
 ---
-title: Добавить строку HTML с использованием DOM в PHP
+title: Добавьте строку HTML, используя DOM в PHP
+linktitle: Добавьте строку HTML, используя DOM в PHP
 type: docs
 weight: 10
-url: /ru/java/add-html-string-using-dom-in-php/
-lastmod: "2021-06-05"
+url: /java/add-html-string-using-dom-in-php/
+description: Узнайте, как добавить HTML-содержимое в PDF-документ с помощью DOM в PHP с помощью Aspose.PDF для создания расширенных документов.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — Добавить HTML
 
-## Aspose.PDF - Добавить HTML
+Чтобы добавить строку HTML в документ PDF с помощью **Aspose.PDF Java для PHP**, просто вызовите модуль **AddHtml**.
 
-Чтобы добавить HTML строку в Pdf документ, используя **Aspose.PDF Java для PHP**, просто вызовите модуль **AddHtml**.
-
-PHP Код
+PHP-код
 
 ```php
-# Создать объект Document
+# Instantiate Document object
 $doc = new Document();
 
-# Добавить страницу в коллекцию страниц PDF файла
+# Add a page to pages collection of PDF file
 $page = $doc->getPages()->add();
 
-# Создать HtmlFragment с HTML содержимым
+# Instantiate HtmlFragment with HTML contents
 $title = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
 
-# установить MarginInfo для деталей полей
+# set MarginInfo for margin details
 $margin = new MarginInfo();
 $margin->setBottom(10);
 $margin->setTop(200);
 
-# Установить информацию о полях
+# Set margin information
 $title->setMargin($margin);
 
-# Добавить HTML Фрагмент в коллекцию абзацев страницы
+# Add HTML Fragment to paragraphs collection of page
 $page->getParagraphs()->add($title);
 
-# Сохранить PDF файл
+# Save PDF file
 $doc->save($dataDir . "html.output.pdf");
 
-print "HTML успешно добавлен" . PHP_EOL;
+print "HTML added successfully" . PHP_EOL;
 
 ```
 
-**Загрузить работающий код**
+**Загрузить рабочий код**
 
-Скачайте **Add HTML (Aspose.PDF)** с любого из указанных ниже сайтов социального кодирования:
+Загрузите **Добавьте HTML (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddHtml.php)

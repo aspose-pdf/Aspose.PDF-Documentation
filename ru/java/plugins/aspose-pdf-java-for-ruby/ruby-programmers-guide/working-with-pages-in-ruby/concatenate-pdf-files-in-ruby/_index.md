@@ -1,66 +1,44 @@
 ---
-title: Объединение PDF файлов в Ruby
+title: Объединение PDF-файлов в Ruby
+linktitle: Объединение PDF-файлов в Ruby
 type: docs
 weight: 10
-url: /ru/java/concatenate-pdf-files-in-ruby/
-lastmod: "2021-06-05"
+url: /java/concatenate-pdf-files-in-ruby/
+description: Эффективно объединяйте несколько PDF-файлов в один документ, используя Ruby и Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — объединение PDF-файлов
 
-## Aspose.PDF - Объединение PDF файлов
+Чтобы объединить PDF-файлы с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **ConcatenatePdfFiles**.
 
-Чтобы объединить PDF файлы с помощью **Aspose.PDF Java для Ruby**, просто вызовите модуль **ConcatenatePdfFiles**.
-
-Код на Ruby
+Рубиновый код
 
 ```java
-# Путь к каталогу документов.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть целевой документ
+# Open the target document
 
 pdf1 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# Открыть исходный документ
+# Open the source document
 
 pdf2 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input2.pdf')
 
-# Добавить страницы исходного документа в целевой документ
+# Add the pages of the source document to the target document
 
 pdf1.getPages().add(pdf2.getPages())
 
-# Сохранить объединенный выходной файл (целевой документ)
+# Save the concatenated output file (the target document)
 
 pdf1.save(data_dir+ "Concatenate_output.pdf")
 
-puts "Новый документ сохранен, пожалуйста, проверьте выходной файл"
+puts "New document has been saved, please check the output file"
 ```
 
-## Скачать исполняемый код
+## Загрузите рабочий код
 
-Скачать **Объединение PDF файлов (Aspose.PDF)** с любого из нижеупомянутых социальных кодировочных сайтов:
+Загрузите **Объединить PDF-файлы (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)
-
-```ruby
-# Этот скрипт демонстрирует, как объединить несколько PDF файлов в один.
-require 'asposepdfjava'
-
-module Asposepdfjava
-  module ConcatenatePdfFiles
-    def initialize()
-      # Создать объект класса AsposePDF
-      pdfEditor = Rjb::import('com.aspose.pdf.facades.PdfFileEditor')
-
-      # Путь к файлам PDF, которые нужно объединить
-      inputFile1 = "input1.pdf"
-      inputFile2 = "input2.pdf"
-      outputFile = "output.pdf"
-
-      # Объединить файлы PDF
-      pdfEditor.concatenate(inputFile1, inputFile2, outputFile)
-
-      puts "Файлы успешно объединены в #{outputFile}"
-    end
-  end
-end

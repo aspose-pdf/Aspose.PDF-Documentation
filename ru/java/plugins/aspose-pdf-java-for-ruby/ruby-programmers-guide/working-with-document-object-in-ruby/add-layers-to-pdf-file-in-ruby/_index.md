@@ -1,19 +1,20 @@
 ---
-title: Добавление слоев в PDF файл на Ruby
+title: Добавить слои в PDF-файл в Ruby
+linktitle: Добавить слои в PDF-файл в Ruby
 type: docs
 weight: 20
-url: /ru/java/add-layers-to-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-layers-to-pdf-file-in-ruby/
+description: Узнайте, как добавлять слои в PDF-файл в Ruby с помощью Aspose.PDF для улучшения структуры документа и контроля видимости.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — Добавление слоев
 
-## Aspose.PDF - Добавление слоев
+<ins> Чтобы добавить слои в документ PDF с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **AddLayers**.
 
-<ins> Чтобы добавить слои в PDF документ с использованием **Aspose.PDF Java for Ruby**, просто вызовите модуль **AddLayers**.
-
-Код на Ruby
+Рубиновый код
 
 ```java
-# Путь к директории с документами.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
@@ -23,7 +24,7 @@ page = doc.getPages().add()
 
 operator = Rjb::import('com.aspose.pdf.Operator')
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc1", "Красная линия")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc1", "Red Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(1, 0, 0))
 
@@ -37,7 +38,7 @@ page.setLayers(Rjb::import('java.util.ArrayList').new)
 
 page.getLayers().add(layer)
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc2", "Зеленая линия")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc2", "Green Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(0, 1, 0))
 
@@ -49,7 +50,7 @@ layer.getContents().add(operator.Stroke())
 
 page.getLayers().add(layer)
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc3", "Синяя линия")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc3", "Blue Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(0, 0, 1))
 
@@ -61,16 +62,15 @@ layer.getContents().add(operator.Stroke())
 
 page.getLayers().add(layer)
 
-# Сохранить PDF документ
+# Save PDF Document
 
 doc.save(data_dir + "Layers-Added.pdf")
 
-puts "Слои успешно добавлены, пожалуйста, проверьте выходной файл."
+puts "Added Layers Successfully, please check the output file."
 ```
 
+## Загрузите рабочий код
 
-## Скачать Исполняемый Код
-
-Скачайте **Add Layers (Aspose.PDF)** с любого из перечисленных ниже сайтов для социального кодирования:
+Загрузите **Добавить слои (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)

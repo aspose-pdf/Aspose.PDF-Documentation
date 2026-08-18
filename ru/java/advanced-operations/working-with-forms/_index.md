@@ -1,22 +1,19 @@
 ---
-title: Working with Forms
-linktitle: Working with Forms
+title: Работа с формами с использованием Java
+linktitle: Работа с формами
 type: docs
-weight: 50
-url: /ru/java/working-with-forms/
-description: Этот раздел объясняет, как работать с AcroForms и XFA Forms в ваших PDF-документах с использованием Aspose.PDF для Java.
-lastmod: "2021-06-05"
+weight: 60
+url: /java/working-with-forms/
+description: Узнайте, как создавать, заполнять, извлекать, изменять, отправлять, импортировать, экспортировать и конвертировать PDF-формы в Java с помощью Aspose.PDF.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Создавайте формы AcroForms и XFA и управляйте ими с помощью Java.
+Abstract: В этом разделе объясняется, как работать с формами PDF с помощью Aspose.PDF для Java. Он охватывает создание полей AcroForm, заполнение и извлечение данных формы, импорт и экспорт значений формы, изменение или удаление полей, публикацию данных формы и преобразование форм XFA в стандартные AcroForms.
 ---
+Aspose.PDF для Java предоставляет API-интерфейсы DOM и фасада для рабочих процессов форм PDF. Вы можете создавать новые AcroForms, обновлять существующие поля, обмениваться данными форм в распространенных форматах и ​​преобразовывать документы на основе XFA в стандартные формы.
 
-Формы – это файлы с областями, которые пользователи могут выбрать или заполнить для сбора и хранения информации.
-
-AcroForms – это PDF-файлы, содержащие поля формы. Данные могут вводиться в эти поля (вручную или через автоматизированный процесс) конечными пользователями или автором формы. Внутренне AcroForms – это аннотации или поля, примененные к PDF-документу.
-
-В этом разделе описан быстрый и простой подход к программному заполнению PDF-документа с использованием Aspose.PDF.
- The section also discusses how one might go about using the Aspose.PDF for Java to discover and map the fields available within an existing PDF with AcroForms. Также вы узнаете, как работать с XFA - другой технологией для презентации форм на основе XML.
-
-- [AcroForms](/pdf/ru/java/acroforms/) - создание формы, заполнение поля формы, извлечение данных из формы, изменение полей в вашем PDF с помощью Java библиотеки.
-- [XFA Forms](/pdf/ru/java/xfa-forms/) - заполнение полей XFA, преобразование XFA, получение свойств полей XFA.
+- [Работа с AcroForms](/pdf/java/acroforms/)
+- [Работа с формами XFA](/pdf/java/xfa-forms/)

@@ -1,16 +1,24 @@
 ---
-title: PdfFileSignature Class
+title: Класс PdfFileSignature
+linktitle: Класс PdfFileSignature
 type: docs
-weight: 70
-url: /ru/java/pdffilesignature-class/
-description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfFileSignature.
-lastmod: "2021-06-05"
+weight: 60
+url: /java/pdffilesignature-class/
+description: Узнайте, как использовать фасад PdfFileSignature в Java для подписания, сертификации, проверки, проверки, извлечения и удаления подписей PDF.
+lastmod: "2026-06-09"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Подписывайте, сертифицируйте и проверяйте подписи PDF на Java с помощью PdfFileSignature
+Abstract: В этом разделе объясняется, как использовать фасад PdfFileSignature в Aspose.PDF для Java для рабочих процессов цифровой подписи. Текущие примеры Java охватывают подписание с помощью сертификата или объекта PKCS7, сертификацию PDF-файла с разрешениями DocMDP, чтение сведений о подписи, проверку подписей, извлечение сертификата подписи и удаление подписи.
 ---
+Класс Java `PdfFileSignatureExamples` демонстрирует основные рабочие процессы подписи, доступные через API фасадов.
 
-- [Добавить подпись в PDF файл](/pdf/ru/java/add-signature-in-pdf/)
-- [Удалить подпись из PDF файла](/pdf/ru/java/remove-signature-from-pdf/)
-- [Проверить подпись в PDF файле](/pdf/ru/java/verify-signature-in-pdf/)
-- [Работа с подписью в PDF файле](/pdf/ru/java/add-signature-in-pdf/)
+Используйте этот раздел, чтобы узнать, как:
+
+- подписывать и заверять PDF-документы
+- проверять имена подписей, данные подписывающего лица и временные метки
+- проверка действительности подписи и охвата всего документа
+- извлечь сертификат подписи и удалить существующую подпись

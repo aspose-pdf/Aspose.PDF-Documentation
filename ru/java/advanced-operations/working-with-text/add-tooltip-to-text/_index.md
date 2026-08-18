@@ -1,166 +1,115 @@
 ---
-title: Использование всплывающей подсказки
-linktitle: PDF Всплывающая подсказка
+title: Добавление всплывающих подсказок в текст PDF в Java
+linktitle: PDF-подсказка
 type: docs
 weight: 20
-url: /ru/java/pdf-tooltip/
-description: Узнайте, как добавить всплывающую подсказку к фрагменту текста в PDF с использованием Java и Aspose.PDF.
-lastmod: "2021-06-05"
+url: /java/pdf-tooltip/
+description: Узнайте, как добавлять всплывающие подсказки к фрагментам текста в PDF-документах на Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Добавляйте интерактивные подсказки к фрагментам текста PDF с помощью Java.
+Abstract: В этой статье показано, как добавить интерактивную справку к тексту PDF с помощью Aspose.PDF для Java. Он охватывает прикрепление текста всплывающей подсказки к невидимым полям кнопок, расположенным над совпадающими фрагментами текста, и создание скрытого текстового поля, которое появляется, когда указатель входит в область триггера.
 ---
+Aspose.PDF для Java позволяет добавлять интерактивную справку, размещая поля формы поверх текстовых фрагментов.
 
-## Добавление всплывающей подсказки к найденному тексту путем добавления невидимой кнопки
+## Добавьте подсказки к совпавшему тексту
 
-Часто требуется добавить некоторые детали для фразы или конкретного слова в виде всплывающей подсказки в PDF-документ, чтобы она могла появиться, когда пользователь наводит курсор мыши на текст. Aspose.PDF для Java предоставляет эту возможность создания всплывающих подсказок, добавляя невидимую кнопку над найденным текстом. Следующий пример кода покажет вам, как достичь этой функциональности:
+Используйте этот пример, когда существующий текст в PDF-файле должен отображать всплывающую подсказку при наведении курсора.
+
+1. Создайте образец PDF-файла и снова откройте его для редактирования.
+1. Найдите целевые фрагменты текста с помощью `TextFragmentAbsorber`.
+1. Поместите наложения `ButtonField` на совпадающий текст и назначьте текст всплывающей подсказки.
+1. Сохраните обновленный документ.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addToolTipToSearchedText(Path outputFile) {
+        Document document = new Document();
+        document.getPages().add().getParagraphs()
+                .add(new TextFragment("Move the mouse cursor here to display a tooltip"));
+        document.getPages().get_Item(1).getParagraphs()
+                .add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        document.save(outputFile.toString());
+        document.close();
 
-import com.aspose.pdf.ButtonField;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.TextFragment;
-import com.aspose.pdf.TextFragmentAbsorber;
-import com.aspose.pdf.TextFragmentCollection;
-
-public class ExampleToolTip {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void AddToolTip() {
-        String outputFile = _dataDir + "Tooltip_out.pdf";
-
-        // Создать пример документа с текстом
-        Document doc = new Document();
-        doc.getPages().add().getParagraphs().add(new TextFragment("Наведите курсор мыши сюда, чтобы отобразить всплывающую подсказку"));
-        doc.getPages().get_Item(1).getParagraphs().add(new TextFragment("Наведите курсор мыши сюда, чтобы отобразить очень длинную всплывающую подсказку"));
-        doc.save(outputFile);
-
-        // Открыть документ с текстом
-        Document document = new Document(outputFile);
-        // Создать объект TextAbsorber для поиска всех фраз, соответствующих регулярному выражению
-        TextFragmentAbsorber absorber = new TextFragmentAbsorber("Наведите курсор мыши сюда, чтобы отобразить всплывающую подсказку");
-        // Применить абсорбер для страниц документа
+        document = new Document(outputFile.toString());
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                "Move the mouse cursor here to display a tooltip");
         document.getPages().accept(absorber);
-        // Получить извлеченные текстовые фрагменты
-        TextFragmentCollection textFragments = absorber.getTextFragments();
 
-        // Пройти по фрагментам
-        for(TextFragment fragment : textFragments)
-        {
-            // Создать невидимую кнопку на позиции текстового фрагмента
+        for (TextFragment fragment : absorber.getTextFragments()) {
             ButtonField field = new ButtonField(fragment.getPage(), fragment.getRectangle());
-            // Значение AlternateName будет отображаться в качестве всплывающей подсказки приложением просмотра
-            field.setAlternateName ("Всплывающая подсказка для текста.");
-            // Добавить кнопку в документ
+            field.setAlternateName("Tooltip for text.");
             document.getForm().add(field);
         }
 
-        // Далее будет пример очень длинной всплывающей подсказки
-        absorber = new TextFragmentAbsorber("Наведите курсор мыши сюда, чтобы отобразить очень длинную всплывающую подсказку");
+        absorber = new TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
         document.getPages().accept(absorber);
-        textFragments = absorber.getTextFragments();
 
-        for(TextFragment fragment : textFragments)
-        {
+        for (TextFragment fragment : absorber.getTextFragments()) {
             ButtonField field = new ButtonField(fragment.getPage(), fragment.getRectangle());
-            // Установить очень длинный текст
-            field.setAlternateName ("Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-                                    " sed do eiusmod tempor incididunt ut labore et dolore magna" +
-                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
-                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
-                                    " Duis aute irure dolor in reprehenderit in voluptate velit" +
-                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
-                                    " occaecat cupidatat non proident, sunt in culpa qui officia" +
-                                    " deserunt mollit anim id est laborum.");
+            field.setAlternateName("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                    + " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                    + " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                    + " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    + " Duis aute irure dolor in reprehenderit in voluptate velit"
+                    + " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                    + " occaecat cupidatat non proident, sunt in culpa qui officia"
+                    + " deserunt mollit anim id est laborum.");
             document.getForm().add(field);
         }
 
-        // Сохранить документ
-        document.save(outputFile);
+        document.save(outputFile.toString());
+        document.close();
     }
-}
 ```
 
+## Показывать плавающий текстовый блок при наведении
 
-{{% alert color="primary" %}}
+Используйте этот пример, когда при наведении курсора на текстовую область должно открыться скрытое текстовое поле.
 
-Что касается длины всплывающей подсказки, текст всплывающей подсказки содержится в PDF-документе как строка типа PDF, вне потока содержимого. В PDF-файлах нет эффективных ограничений на такие строки (см. PDF Reference Appendix C.). Однако соответствующий просмотрщик (например, Adobe Acrobat), работающий на определенном процессоре и в определенной операционной среде, имеет такие ограничения. Пожалуйста, обратитесь к документации приложения вашего PDF-просмотрщика.
-
-{{% /alert %}}
-
-## Создание скрытого текстового блока и его отображение при наведении мыши
-
-В Aspose.PDF реализована функция скрытия действий, с помощью которой можно показывать/скрывать текстовое поле (или любой другой тип аннотации) при наведении/уходе мыши над некоторой невидимой кнопкой. Для этой цели используется класс Aspose.Pdf.Annotations.HideAction, чтобы назначить действие скрытия/показа текстовому блоку. Пожалуйста, используйте следующий фрагмент кода для показа/скрытия текстового блока при наведении/уходе мыши.
-
-Пожалуйста, также учитывайте, что действия PDF в документах работают корректно в соответствующих просмотрщиках (например,
- Adobe Reader), но нет гарантий для других программ для чтения PDF (например, веб-браузерных плагинов). Мы провели краткое исследование и обнаружили:
-
-- Все реализации действия скрытия в PDF-документах работают нормально в Internet Explorer v.11.0.
-- Все реализации действия скрытия также работают в Opera v.12.14, но мы заметили задержку отклика при первом открытии документа.
-- Только реализация с использованием конструктора HideAction, принимающего имя поля, работает, если документ открывается в Google Chrome v.61.0; Пожалуйста, используйте соответствующие конструкторы, если просмотр в Google Chrome имеет значение:
-
->buttonField.Actions.OnEnter = new HideAction(floatingField.FullName, false);
->buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
+1. Создайте образец PDF-файла и снова откройте его для редактирования.
+1. Найдите фрагмент текста триггера с помощью `TextFragmentAbsorber`.
+1. Создайте скрытый `TextBoxField` и `ButtonField` с действиями входа и выхода.
+1. Сохраните окончательный PDF-файл.
 
 ```java
-    public static void name() {
-        String outputFile = _dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
+public static void createHiddenTextBlock(Path outputFile) {
+    Document document = new Document();
+    document.getPages().add().getParagraphs()
+            .add(new TextFragment("Move the mouse cursor here to display floating text"));
+    document.save(outputFile.toString());
+    document.close();
 
-        // Создаем пример документа с текстом
-        Document doc = new Document();
-        doc.getPages().add().getParagraphs().add(new TextFragment("Переместите указатель мыши сюда, чтобы отобразить всплывающий текст"));
-        doc.save(outputFile);
+    document = new Document(outputFile.toString());
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+            "Move the mouse cursor here to display floating text");
+    document.getPages().accept(absorber);
+    TextFragment fragment = absorber.getTextFragments().get_Item(1);
 
-        // Открыть документ с текстом
-        Document document = new Document(outputFile);
-        // Создать объект TextAbsorber для поиска всех фраз, соответствующих регулярному выражению
-        TextFragmentAbsorber absorber = new TextFragmentAbsorber("Переместите указатель мыши сюда, чтобы отобразить всплывающий текст");
-        // Применить абсорбер для страниц документа
-        document.getPages().accept(absorber);
-        // Получить первый извлеченный фрагмент текста
-        TextFragmentCollection textFragments = absorber.getTextFragments();
-        TextFragment fragment = textFragments.get_Item(1);
+    TextBoxField floatingField = new TextBoxField(
+            fragment.getPage(), new Rectangle(100.0, 700.0, 220.0, 740.0, false));
+    floatingField.setValue("This is the \"floating text field\".");
+    floatingField.setReadOnly(true);
+    floatingField.setFlags(floatingField.getFlags() | AnnotationFlags.Hidden);
+    floatingField.setPartialName("FloatingField_1");
+    floatingField.setDefaultAppearance(new DefaultAppearance("Helv", 10, java.awt.Color.BLUE));
+    floatingField.getCharacteristics().setBackground(java.awt.Color.CYAN);
+    floatingField.getCharacteristics().setBorder(java.awt.Color.BLUE);
+    floatingField.setBorder(new Border(floatingField));
+    floatingField.getBorder().setWidth(1);
+    floatingField.setMultiline(true);
 
-        // Создать скрытое текстовое поле для всплывающего текста в заданном прямоугольнике страницы
-        TextBoxField floatingField = new TextBoxField(fragment.getPage(), new Rectangle(100, 700, 220, 740));
-        // Установить текст, который будет отображаться в качестве значения поля
-        floatingField.setValue ("Это \"всплывающее текстовое поле\".");
-        // Мы рекомендуем сделать поле 'только для чтения' для этого сценария
-        floatingField.setReadOnly(true);
+    document.getForm().add(floatingField);
 
-        // Установить флаг 'hidden', чтобы сделать поле невидимым при открытии документа
-        floatingField.setFlags( floatingField.getFlags() | AnnotationFlags.Hidden);
+    ButtonField buttonField = new ButtonField(fragment.getPage(), fragment.getRectangle());
+    buttonField.getAnnotationActions().setOnEnter(new HideAction(floatingField, false));
+    buttonField.getAnnotationActions().setOnExit(new HideAction(floatingField));
 
-        // Установка уникального имени поля не обязательна, но допустима
-        floatingField.setPartialName ("FloatingField_1");
-
-        // Установка характеристик внешнего вида поля не обязательна, но делает его лучше
-        DefaultAppearance da = new DefaultAppearance("Helvetica", 16, java.awt.Color.RED);
-        floatingField.setDefaultAppearance(da);
-        //new DefaultAppearance("Helv", 10, Color.getBlue()
-        floatingField.getCharacteristics().setBackground(Color.getLightBlue());
-        floatingField.getCharacteristics().setBorder(Color.getDarkBlue());;
-        floatingField.setBorder(new Border(floatingField));
-        floatingField.getBorder().setWidth(1);
-        floatingField.setMultiline(true);
-
-        // Добавить текстовое поле в документ
-        document.getForm().add(floatingField);
-
-        // Создать невидимую кнопку на позиции текстового фрагмента
-        Field buttonField = new ButtonField(fragment.getPage(), fragment.getRectangle());
-        // Создать новое действие скрытия для указанного поля (аннотации) и флага невидимости.
-        // (Вы также можете ссылаться на всплывающее поле по имени, если вы его указали выше.)
-        // Добавить действия при входе/выходе мыши на невидимое поле кнопки
-        buttonField.getActions().setOnEnter(new HideAction(floatingField, false));
-        buttonField.getActions().setOnExit (new HideAction(floatingField));
-
-        // Добавить поле кнопки в документ
-        document.getForm().add(buttonField);
-
-        // Сохранить документ
-        document.save(outputFile);
-    }
+    document.getForm().add(buttonField);
+    document.save(outputFile.toString());
+    document.close();
+}
 ```

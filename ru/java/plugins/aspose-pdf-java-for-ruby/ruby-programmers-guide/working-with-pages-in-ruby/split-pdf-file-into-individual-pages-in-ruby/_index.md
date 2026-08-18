@@ -1,28 +1,28 @@
 ---
-title: Разделение PDF файла на отдельные страницы в Ruby
+title: Разделить PDF-файл на отдельные страницы в Ruby
+linktitle: Разделить PDF-файл на отдельные страницы в Ruby
 type: docs
 weight: 80
-url: /ru/java/split-pdf-file-into-individual-pages-in-ruby/
-lastmod: "2021-06-05"
+url: /java/split-pdf-file-into-individual-pages-in-ruby/
+description: Узнайте, как разделить PDF-файл на отдельные страницы с помощью Ruby и Aspose.PDF, что упрощает управление содержимым и его извлечение.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — Разделение страниц
 
-## Aspose.PDF - Разделение страниц
+Чтобы разделить PDF-документ на отдельные страницы с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **SplitAllPages**.
 
-Чтобы разделить PDF документ на отдельные страницы с использованием **Aspose.PDF Java для Ruby**, просто вызовите модуль **SplitAllPages**.
-
-Код на Ruby
+Рубиновый код
 
 ```java
-
-# Путь к каталогу документов.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть целевой документ
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# Цикл по всем страницам
+# loop through all the pages
 
 pdf_page = 1
 
@@ -30,15 +30,15 @@ pdf_page = 1
 
 while pdf_page <= pdf.getPages().size()
 
-# создать новый объект Document
+# create a new Document object
 
 new_document = Rjb::import('com.aspose.pdf.Document').new
 
-# получить страницу по определенному индексу из коллекции страниц
+# get the page at particular index of Page Collection
 
 new_document.getPages().add(pdf.getPages().get_Item(pdf_page))
 
-# сохранить вновь созданный PDF файл
+# save the newly generated PDF file
 
 new_document.save(data_dir + "page_#{pdf_page}.pdf")
 
@@ -46,12 +46,11 @@ pdf_page +=1
 
 end
 
-puts "Процесс разделения успешно завершен!"
+puts "Split process completed successfully!"
 ```
 
+## Загрузите рабочий код
 
-## Скачать работающий код
-
-Скачайте **Split Pages (Aspose.PDF)** с любого из указанных ниже сайтов социального кодирования:
+Загрузите **Split Pages (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/splitallpages.rb)

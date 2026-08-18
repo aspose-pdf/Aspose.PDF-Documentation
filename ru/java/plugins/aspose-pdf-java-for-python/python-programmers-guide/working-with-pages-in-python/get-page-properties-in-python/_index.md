@@ -1,25 +1,26 @@
 ---
-title: Получение свойств страницы на Python
+title: Получить свойства страницы в Python
+linktitle: Получить свойства страницы в Python
 type: docs
 weight: 50
-url: /ru/java/get-page-properties-in-python/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-python/
+description: Узнайте, как получить доступ к свойствам определенных страниц PDF-документа на Python с помощью Aspose.PDF для детального управления.
+lastmod: "2026-06-09"
 ---
-
-Чтобы получить свойства страницы PDF-документа, используя **Aspose.PDF Java для Python**, просто вызовите класс **GetPageProperties**.
+Чтобы получить свойства страницы PDF-документа с помощью **Aspose.PDF Java for Python**, просто вызовите класс **GetPageProperties**.
 
 ```Python
 doc= self.Document()
 pdf_document = self.Document()
 pdf_document=self.dataDir + 'input1.pdf'
 
-# получить коллекцию страниц
+# get page collection
 page_collection = pdf_document.getPages();
 
-# получить конкретную страницу
+# get particular page
 pdf_page = page_collection.get_Item(1);
 
-# получить свойства страницы
+# get page properties
 print "ArtBox : Height = " + pdf_page.getArtBox().getHeight() + ", Width = " + pdf_page.getArtBox().getWidth() + ", LLX = " + pdf_page.getArtBox().getLLX() + ", LLY = " + pdf_page.getArtBox().getLLY() + ", URX = " + pdf_page.getArtBox().getURX() + ", URY = " + pdf_page.getArtBox().getURY()
 print "BleedBox : Height = " + pdf_page.getBleedBox().getHeight() + ", Width = " + pdf_page.getBleedBox().getWidth() + ", LLX = " + pdf_page.getBleedBox().getLLX() + ", LLY = " + pdf_page.getBleedBox().getLLY() + ", URX = " + pdf_page.getBleedBox().getURX() + ", URY = " . pdf_page.getBleedBox().getURY()
 print "CropBox : Height = " + pdf_page.getCropBox().getHeight() + ", Width = " + pdf_page.getCropBox().getWidth() + ", LLX = " + pdf_page.getCropBox().getLLX() + ", LLY = " + pdf_page.getCropBox().getLLY() + ", URX = " + pdf_page.getCropBox().getURX() + ", URY = " . pdf_page.getCropBox().getURY()
@@ -31,9 +32,8 @@ print "Rotate :-" + pdf_page.getRotate()
 
 ```
 
+**Загрузить рабочий код**
 
-**Скачать Исполняемый Код**
-
-Скачать **Получить Свойства Страницы (Aspose.PDF)** с любого из нижеупомянутых социальных сайтов для программирования:
+Загрузите **Получить свойства страницы (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)

@@ -1,19 +1,20 @@
 ---
-title: Работа с страницами в PHP
+title: Работа со страницами в PHP
+linktitle: Работа со страницами в PHP
 type: docs
 weight: 30
-url: /ru/java/working-with-pages-in-php/
-lastmod: "2021-06-05"
+url: /java/working-with-pages-in-php/
+description: Узнайте, как добавлять, извлекать, обновлять и управлять страницами PDF на PHP с помощью Aspose.PDF для эффективного управления документами.
+lastmod: "2026-06-09"
 ---
+В этот раздел включены следующие темы:
 
-Этот раздел включает следующие темы:
-
-- [Объединение PDF файлов в PHP](/pdf/ru/java/concatenate-pdf-files-in-php/)
-- [Удаление определенной страницы из PDF файла в PHP](/pdf/ru/java/delete-a-particular-page-from-the-pdf-file-in-php/)
-- [Получение определенной страницы в PDF файле в PHP](/pdf/ru/java/get-a-particular-page-in-a-pdf-file-in-php/)
-- [Получение количества страниц PDF в PHP](/pdf/ru/java/get-page-count-of-pdf-in-php/)
-- [Получение свойств страницы в PHP](/pdf/ru/java/get-page-properties-in-php/)
-- [Вставка пустой страницы в конец PDF файла в PHP](/pdf/ru/java/insert-an-empty-page-at-end-of-pdf-file-in-php/)
-- [Вставка пустой страницы в PDF файл в PHP](/pdf/ru/java/insert-an-empty-page-into-a-pdf-file-in-php/)
-- [Разделение PDF файла на отдельные страницы в PHP](/pdf/ru/java/split-pdf-file-into-individual-pages-in-php/)
-- [Обновление размеров страницы в PHP](/pdf/ru/java/update-page-dimensions-in-php/)
+- [Объединить PDF-файлы в PHP](/pdf/java/concatenate-pdf-files-in-php/)
+- [Удалить определенную страницу из PDF-файла в PHP](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-php/)
+- [Получить определенную страницу в PDF-файле на PHP](/pdf/java/get-a-particular-page-in-a-pdf-file-in-php/)
+- [Получить количество страниц PDF в PHP](/pdf/java/get-page-count-of-pdf-in-php/)
+- [Получить свойства страницы в PHP](/pdf/java/get-page-properties-in-php/)
+- [Вставить пустую страницу в конец PDF-файла в PHP](/pdf/java/insert-an-empty-page-at-end-of-pdf-file-in-php/)
+- [Вставить пустую страницу в PDF-файл на PHP](/pdf/java/insert-an-empty-page-into-a-pdf-file-in-php/)
+- [Разделить PDF-файл на отдельные страницы в PHP](/pdf/java/split-pdf-file-into-individual-pages-in-php/)
+- [Обновить размеры страницы в PHP](/pdf/java/update-page-dimensions-in-php/)

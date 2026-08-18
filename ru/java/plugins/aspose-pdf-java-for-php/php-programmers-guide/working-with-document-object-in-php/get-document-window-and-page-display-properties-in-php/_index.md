@@ -1,61 +1,61 @@
 ---
-title: Получение Свойств Окна Документа и Отображения Страницы в PHP
+title: Получение свойств окна документа и отображения страницы в PHP
+linktitle: Получение свойств окна документа и отображения страницы в PHP
 type: docs
 weight: 30
-url: /ru/java/get-document-window-and-page-display-properties-in-php/
-lastmod: "2021-06-05"
+url: /java/get-document-window-and-page-display-properties-in-php/
+description: Узнайте, как получить доступ к свойствам отображения окна документа и страницы PDF-файла в PHP с помощью Aspose.PDF.
+lastmod: "2026-06-09"
 ---
-
-## Aspose.PDF - Получение Свойств Окна Документа и Отображения Страницы
+## Aspose.PDF — получение свойств окна документа и отображения страницы
 
 Чтобы получить свойства окна документа и отображения страницы PDF-документа с помощью **Aspose.PDF Java для PHP**, просто вызовите класс **GetDocumentWindow**.
 
-Код PHP
+PHP-код
 
 ```php
 
-# Открыть PDF-документ.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Получить различные свойства документа
-# Положение окна документа - По умолчанию: false
+# Get different document properties
+# Position of document's window - Default: false
 print "CenterWindow :- " . $doc->getCenterWindow() . PHP_EOL;
 
-# Основной порядок чтения; определяет положение страницы
-# при отображении рядом - По умолчанию: L2R
+# Predominant reading order; determine the position of page
+# when displayed side by side - Default: L2R
 print "Direction :- " . $doc->getDirection() . PHP_EOL;
 
-# Должна ли строка заголовка окна отображать заголовок документа.
-# Если false, строка заголовка отображает имя PDF файла - По умолчанию: false
+# Whether window's title bar should display document title.
+# If false, title bar displays PDF file name - Default: false
 print "DisplayDocTitle :- " . $doc->getDisplayDocTitle() . PHP_EOL;
 
-# Должно ли изменяться размер окна документа, чтобы соответствовать размеру
-# первой отображаемой страницы - По умолчанию: false
+#Whether to resize the document's window to fit the size of
+#first displayed page - Default: false
 print "FitWindow :- " . $doc->getFitWindow() . PHP_EOL;
 
-# Должно ли скрываться меню приложения просмотра - По умолчанию: false
+# Whether to hide menu bar of the viewer application - Default: false
 print "HideMenuBar :-" . $doc->getHideMenubar() . PHP_EOL;
 
-# Должно ли скрываться панель инструментов приложения просмотра - По умолчанию: false
+# Whether to hide tool bar of the viewer application - Default: false
 print "HideToolBar :-" . $doc->getHideToolBar() . PHP_EOL;
 
-# Должны ли скрываться элементы интерфейса, такие как полосы прокрутки
-# и оставлять только содержимое страницы - По умолчанию: false
+# Whether to hide UI elements like scroll bars
+# and leaving only the page contents displayed - Default: false
 print "HideWindowUI :-" . $doc->getHideWindowUI() . PHP_EOL;
 
-# Режим страницы документа. Как отображать документ при выходе из полноэкранного режима.
+# The document's page mode. How to display document on exiting full-screen mode.
 print "NonFullScreenPageMode :-" . $doc->getNonFullScreenPageMode() . PHP_EOL;
 
-# Макет страницы, т.е. одна страница, одна колонка
+# The page layout i.e. single page, one column
 print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 
-# Как документ должен отображаться при открытии.
+#How the document should display when opened.
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 ```
 
+**Загрузить рабочий код**
 
-**Скачать Рабочий Код**
-
-Скачайте **Получить Свойства Окна Документа и Отображения Страницы (Aspose.PDF)** с любого из ниже перечисленных социальных платформ для кодирования:
+Загрузите **Получите свойства окна документа и отображения страницы (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

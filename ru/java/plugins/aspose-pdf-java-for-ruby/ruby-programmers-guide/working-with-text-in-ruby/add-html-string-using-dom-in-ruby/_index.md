@@ -1,35 +1,36 @@
 ---
-title: Добавить HTML строку с использованием DOM в Ruby
+title: Добавьте строку HTML, используя DOM в Ruby
+linktitle: Добавьте строку HTML, используя DOM в Ruby
 type: docs
 weight: 10
-url: /ru/java/add-html-string-using-dom-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-html-string-using-dom-in-ruby/
+description: Узнайте, как добавить строку HTML в PDF-документ с помощью DOM API в Ruby с помощью Aspose.PDF для создания динамического контента.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — Добавить HTML
 
-## Aspose.PDF - Добавление HTML
+Чтобы добавить строку HTML в документ PDF с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **AddHtml**.
 
-Чтобы добавить HTML строку в PDF документ, используя **Aspose.PDF Java для Ruby**, просто вызовите модуль **AddHtml**.
-
-Ruby Код
+Рубиновый код
 
 ```java
-# Путь к каталогу документов.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Создание объекта Document
+# Instantiate Document object
 
 doc = Rjb::import('com.aspose.pdf.Document').new
 
-# Добавление страницы в коллекцию страниц PDF файла
+# Add a page to pages collection of PDF file
 
 page = doc.getPages().add()
 
-# Создание HtmlFragment с HTML содержимым
+# Instantiate HtmlFragment with HTML contents
 
-title = Rjb::import('com.aspose.pdf.HtmlFragment').new("<fontsize=10><b><i>Таблица</i></b></fontsize>")
+title = Rjb::import('com.aspose.pdf.HtmlFragment').new("<fontsize=10><b><i>Table</i></b></fontsize>")
 
-# Установка MarginInfo для деталей полей
+# set MarginInfo for margin details
 
 margin = Rjb::import('com.aspose.pdf.MarginInfo').new
 
@@ -37,24 +38,23 @@ margin.setBottom(10)
 
 margin.setTop(200)
 
-# Установка информации о полях
+# Set margin information
 
 title.setMargin(margin)
 
-# Добавление HTML фрагмента в коллекцию параграфов страницы
+# Add HTML Fragment to paragraphs collection of page
 
 page.getParagraphs().add(title)
 
-# Сохранение PDF файла
+# Save PDF file
 
 doc.save(data_dir + "html.output.pdf")
 
-puts "HTML добавлен успешно"
+puts "HTML added successfully"
 ```
 
+## Загрузите рабочий код
 
-## Загрузка Исполняемого Кода
-
-Скачайте **Add HTML (Aspose.PDF)** с любого из нижеупомянутых социальных кодинг-сайтов:
+Загрузите **Добавьте HTML (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)

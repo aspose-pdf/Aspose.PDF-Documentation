@@ -1,74 +1,74 @@
 ---
-title: Добавить Оглавление в Существующий PDF на PHP
+title: Добавить оглавление в существующий PDF-файл в PHP
+linktitle: Добавить оглавление в существующий PDF-файл в PHP
 type: docs
 weight: 20
-url: /ru/java/add-toc-to-existing-pdf-in-php/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-php/
+description: Узнайте, как добавить оглавление (TOC) в существующий PDF-документ на PHP с помощью Aspose.PDF для улучшения навигации.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — Добавить оглавление
 
-## Aspose.PDF - Добавить Оглавление
+Чтобы добавить оглавление в документ PDF с помощью **Aspose.PDF Java для PHP**, просто вызовите класс **AddToc**.
 
-Чтобы добавить оглавление в PDF документ, используя **Aspose.PDF Java для PHP**, просто вызовите класс **AddToc**.
-
-PHP Код
+PHP-код
 
 ```php
 
-# Открыть PDF документ.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Получить доступ к первой странице PDF файла
+# Get access to first page of PDF file
 $toc_page = $doc->getPages()->insert(1);
 
-# Создать объект для представления информации об оглавлении
+# Create object to represent TOC information
 $toc_info = new TocInfo();
-$title = new TextFragment("Содержание");
+$title = new TextFragment("Table Of Contents");
 $title->getTextState()->setFontSize(20);
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# Установить заголовок для оглавления
+# Set the title for TOC
 $toc_info->setTitle($title);
 $toc_page->setTocInfo($toc_info);
 
-# Создать строковые объекты, которые будут использоваться как элементы оглавления
-$titles = array("Первая страница", "Вторая страница");
+# Create string objects which will be used as TOC elements
+$titles = array("First page", "Second page");
 
 $i = 0;
 while ($i < 2){
 
-    # Создать объект Заголовок
+    # Create Heading object
     $heading2 = new Heading(1);
 
     $segment2 = new TextSegment();
     $heading2->setTocPage($toc_page);
     $heading2->getSegments()->add($segment2);
 
-    # Указать страницу назначения для объекта заголовка
+    # Specify the destination page for heading object
     $heading2->setDestinationPage($doc->getPages()->get_Item($i + 2));
 
-    # Страница назначения
+    # Destination page
     $heading2->setTop($doc->getPages()->get_Item($i + 2)->getRect()->getHeight());
 
-    # Координата назначения
+    # Destination coordinate
     $segment2->setText($titles[$i]);
 
-    # Добавить заголовок на страницу, содержащую оглавление
+    # Add heading to page containing TOC
     $toc_page->getParagraphs()->add($heading2);
 
     $i +=1;
 
 }
 
-# Сохранить PDF документ
+# Save PDF Document
 $doc->save($dataDir . "TOC.pdf");
 
-print "Оглавление успешно добавлено, пожалуйста, проверьте выходной файл.";
+print "Added TOC Successfully, please check the output file.";
 
 ```
 
+**Загрузить рабочий код**
 
-**Скачать Запускаемый Код**
-
-Скачайте **Add TOC (Aspose.PDF)** с любого из ниже перечисленных сайтов социального кодирования:
+Загрузите **Добавить оглавление (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

@@ -1,32 +1,32 @@
 ---
-title: Добавление текста в существующий PDF файл на Ruby
+title: Добавить текст в существующий PDF-файл в Ruby
+linktitle: Добавить текст в существующий PDF-файл в Ruby
 type: docs
 weight: 20
-url: /ru/java/add-text-to-an-existing-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-text-to-an-existing-pdf-file-in-ruby/
+description: Узнайте, как добавить текст в существующий PDF-документ в Ruby с помощью Aspose.PDF, чтобы улучшить или обновить содержимое PDF-файла.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — Добавить текст
 
-## Aspose.PDF - Добавление текста
+Чтобы добавить текстовую строку в документ PDF с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **AddText**.
 
-Чтобы добавить текстовую строку в PDF документ, используя **Aspose.PDF Java для Ruby**, просто вызовите модуль **AddText**.
-
-Код на Ruby
+Рубиновый код
 
 ```java
-
-# Путь к директории с документами.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Создание объекта Document
+# Instantiate Document object
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# получить конкретную страницу
+# get particular page
 
 pdf_page = doc.getPages().get_Item(1)
 
-# создать текстовый фрагмент
+# create text fragment
 
 text_fragment = Rjb::import('com.aspose.pdf.TextFragment').new("main text")
 
@@ -36,7 +36,7 @@ font_repository = Rjb::import('com.aspose.pdf.FontRepository')
 
 color = Rjb::import('com.aspose.pdf.Color')
 
-# установить свойства текста
+# set text properties
 
 text_fragment.getTextState().setFont(font_repository.findFont("Verdana"))
 
@@ -46,24 +46,23 @@ text_fragment.getTextState().setFontSize(14)
 
 #text_fragment.getTextState().setBackgroundColor(color.GRAY)
 
-# создать объект TextBuilder
+# create TextBuilder object
 
 text_builder = Rjb::import('com.aspose.pdf.TextBuilder').new(pdf_page)
 
-# добавить текстовый фрагмент на страницу PDF
+# append the text fragment to the PDF page
 
 text_builder.appendText(text_fragment)
 
-# Сохранить PDF файл
+# Save PDF file
 
 doc.save(data_dir + "Text_Added.pdf")
 
-puts "Текст успешно добавлен"
+puts "Text added successfully"
 ```
 
+## Загрузите рабочий код
 
-## Скачать Исполняемый Код
-
-Скачать **Add Text (Aspose.PDF)** с любого из нижеупомянутых сайтов социального кодирования:
+Загрузите **Добавить текст (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addtext.rb)

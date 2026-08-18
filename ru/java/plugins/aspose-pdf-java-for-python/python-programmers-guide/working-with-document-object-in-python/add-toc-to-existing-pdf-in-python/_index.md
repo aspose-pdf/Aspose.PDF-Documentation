@@ -1,69 +1,68 @@
 ---
-title: Добавить оглавление в существующий PDF на Python
+title: Добавить оглавление в существующий PDF-файл в Python
+linktitle: Добавить оглавление в существующий PDF-файл в Python
 type: docs
 weight: 20
-url: /ru/java/add-toc-to-existing-pdf-in-python/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-python/
+description: Узнайте, как добавить оглавление (TOC) к существующему PDF-документу на Python с помощью Aspose.PDF для упрощения навигации.
+lastmod: "2026-06-09"
 ---
-
-Чтобы добавить оглавление в PDF-документ с использованием **Aspose.PDF Java для Python**, просто вызовите класс **AddToc**.
+Чтобы добавить оглавление в документ PDF с помощью **Aspose.PDF Java for Python**, просто вызовите класс **AddToc**.
 
 ```python
 
-# Открыть PDF-документ.
+# Open a pdf document.
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Получить доступ к первой странице PDF-файла
+# Get access to first page of PDF file
 toc_page = doc.getPages().insert(1)
 
-# Создать объект для представления информации об оглавлении
+# Create object to represent TOC information
 toc_info = self.TocInfo()
-title = self.TextFragment("Содержание")
+title = self.TextFragment("Table Of Contents")
 title.getTextState().setFontSize(20)
 
-# Установить заголовок для оглавления
+# Set the title for TOC
 toc_info.setTitle(title)
 toc_page.setTocInfo(toc_info)
 
-# Создать строковые объекты, которые будут использоваться как элементы оглавления
-titles = ["Первая страница", "Вторая страница"]
+# Create string objects which will be used as TOC elements
+titles = ["First page", "Second page"]
 
 i = 0;
 while (i < 2):
 
-# Создать объект заголовка
+# Create Heading object
 heading2 = self.Heading(1);
 
 segment2 = self.TextSegment
 heading2.setTocPage(toc_page)
 heading2.getSegments().add(segment2)
 
-# Указать целевую страницу для объекта заголовка
+# Specify the destination page for heading object
 heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-# Целевая страница
+# Destination page
 heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-# Координата назначения
+# Destination coordinate
 segment2.setText(titles[i])
 
-# Добавить заголовок на страницу, содержащую оглавление
+# Add heading to page containing TOC
 toc_page.getParagraphs().add(heading2)
 
 i +=1;
 
-# Сохранить PDF-документ
+# Save PDF Document
 doc.save(self.dataDir + "TOC.pdf")
 
-print "Оглавление добавлено успешно, пожалуйста, проверьте выходной файл."
+print "Added TOC Successfully, please check the output file."
 ```
-```
 
+**Загрузить рабочий код**
 
-**Скачать Исполняемый Код**
-
-Скачайте **Add TOC (Aspose.PDF)** с любого из указанных ниже социальных сайтов для разработки:
+Загрузите **Добавить оглавление (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)

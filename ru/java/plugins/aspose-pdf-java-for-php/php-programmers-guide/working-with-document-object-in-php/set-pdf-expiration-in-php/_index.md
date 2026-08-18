@@ -1,20 +1,21 @@
 ---
 title: Установить срок действия PDF в PHP
+linktitle: Установить срок действия PDF в PHP
 type: docs
 weight: 80
-url: /ru/java/set-pdf-expiration-in-php/
-lastmod: "2021-06-05"
+url: /java/set-pdf-expiration-in-php/
+description: Узнайте, как установить срок действия PDF-файла на PHP, контролируя доступ с помощью Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — установка срока действия PDF
 
-## Aspose.PDF - Установить срок действия PDF
+Чтобы установить срок действия PDF-документа с помощью **Aspose.PDF Java для PHP**, просто вызовите класс **SetExpiration**.
 
-Чтобы установить срок действия PDF документа, используя **Aspose.PDF Java for PHP**, просто вызовите класс **SetExpiration**.
-
-Код PHP
+PHP-код
 
 ```php
 
-# Открыть PDF документ.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 $javascript = new JavascriptAction(
@@ -24,18 +25,18 @@ $javascript = new JavascriptAction(
     today = new Date(today.getFullYear(), today.getMonth());
     expiry = new Date(year, month);
     if (today.getTime() > expiry.getTime())
-    app.alert('Файл просрочен. Вам нужен новый.');");
+    app.alert('The file is expired. You need a new one.');");
 $doc->setOpenAction($javascript);
 
-# сохранить обновленный документ с новой информацией
+# save update document with new information
 $doc->save($dataDir . "set_expiration.pdf");
 
-print "Обновлена информация о документе, пожалуйста, проверьте выходной файл." . PHP_EOL;
+print "Update document information, please check output file." . PHP_EOL;
 
 ```
 
-**Скачать работающий код**
+**Загрузить рабочий код**
 
-Скачать **Установить срок действия PDF (Aspose.PDF)** можно с любого из нижеупомянутых сайтов социального кодирования:
+Загрузите **Установите срок действия PDF (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetExpiration.php)

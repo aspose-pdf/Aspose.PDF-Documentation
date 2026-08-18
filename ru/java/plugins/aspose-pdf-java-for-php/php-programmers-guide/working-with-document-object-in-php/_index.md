@@ -1,19 +1,20 @@
 ---
 title: Работа с объектом документа в PHP
+linktitle: Работа с объектом документа в PHP
 type: docs
 weight: 20
-url: /ru/java/working-with-document-object-in-php/
-lastmod: "2021-06-05"
+url: /java/working-with-document-object-in-php/
+description: Узнайте, как обрабатывать объекты PDF-документов в PHP с помощью Aspose.PDF, что позволяет эффективно манипулировать и редактировать документы.
+lastmod: "2026-06-09"
 ---
+В этот раздел включены следующие темы:
 
-Этот раздел включает следующие темы:
-
-- [Добавление JavaScript в PHP](/pdf/ru/java/adding-javascript-in-php/)
-- [Добавление оглавления в существующий PDF в PHP](/pdf/ru/java/add-toc-to-existing-pdf-in-php/)
-- [Получение свойств окна документа и отображения страницы в PHP](/pdf/ru/java/get-document-window-and-page-display-properties-in-php/)
-- [Получение информации о PDF файле в PHP](/pdf/ru/java/get-pdf-file-information-in-php/)
-- [Получение XMP метаданных из PDF файла в PHP](/pdf/ru/java/get-xmp-metadata-from-pdf-file-in-php/)
-- [Оптимизация PDF документа для веба в PHP](/pdf/ru/java/optimize-pdf-document-for-the-web-in-php/)
-- [Удаление метаданных из PDF в PHP](/pdf/ru/java/remove-metadata-from-pdf-in-php/)
-- [Установка срока действия PDF в PHP](/pdf/ru/java/set-pdf-expiration-in-php/)
-- [Установка информации о PDF файле в PHP](/pdf/ru/java/set-pdf-file-information-in-php/)
+- [Добавление JavaScript в PHP](/pdf/java/adding-javascript-in-php/)
+- [Добавить оглавление в существующий PDF-файл на PHP](/pdf/java/add-toc-to-existing-pdf-in-php/)
+- [Получить свойства окна документа и отображения страницы в PHP](/pdf/java/get-document-window-and-page-display-properties-in-php/)
+- [Получить информацию о PDF-файле в PHP](/pdf/java/get-pdf-file-information-in-php/)
+- [Получить метаданные XMP из файла PDF в PHP](/pdf/java/get-xmp-metadata-from-pdf-file-in-php/)
+- [Оптимизация PDF-документа для Интернета на PHP](/pdf/java/optimize-pdf-document-for-the-web-in-php/)
+- [Удалить метаданные из PDF в PHP](/pdf/java/remove-metadata-from-pdf-in-php/)
+- [Установить срок действия PDF в PHP](/pdf/java/set-pdf-expiration-in-php/)
+- [Установить информацию о PDF-файле в PHP](/pdf/java/set-pdf-file-information-in-php/)

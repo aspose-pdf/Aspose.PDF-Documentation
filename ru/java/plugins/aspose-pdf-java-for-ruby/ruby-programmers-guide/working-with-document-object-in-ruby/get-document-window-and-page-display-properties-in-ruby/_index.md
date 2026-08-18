@@ -1,80 +1,80 @@
 ---
 title: Получение свойств окна документа и отображения страницы в Ruby
+linktitle: Получение свойств окна документа и отображения страницы в Ruby
 type: docs
 weight: 40
-url: /ru/java/get-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-document-window-and-page-display-properties-in-ruby/
+description: Извлекайте и настраивайте свойства окна документа и отображения страниц в файлах PDF с помощью Ruby и Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — получение свойств окна документа и отображения страницы
 
-## Aspose.PDF - Получение свойств окна документа и отображения страницы
+Чтобы получить свойства окна документа и отображения страницы PDF-документа с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **GetDocumentWindow**.
 
-Чтобы получить свойства окна документа и отображения страницы PDF-документа, используя **Aspose.PDF Java для Ruby**, просто вызовите модуль **GetDocumentWindow**.
-
-Код на Ruby
+Рубиновый код
 
 ```java
-# Путь к директории с документами.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть PDF-документ.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Получить различные свойства документа
+# Get different document properties
 
-# Позиция окна документа - По умолчанию: false
+# Position of document's window - Default: false
 
 puts "CenterWindow :- " + doc.getCenterWindow().to_s
 
-# Основной порядок чтения; определить позицию страницы
+# Predominant reading order; determine the position of page
 
-# при отображении рядом - По умолчанию: L2R
+# when displayed side by side - Default: L2R
 
 puts "Direction :- " + doc.getDirection().to_s
 
-# Должна ли строка заголовка окна отображать заголовок документа.
+# Whether window's title bar should display document title.
 
-# Если false, строка заголовка отображает имя файла PDF - По умолчанию: false
+# If false, title bar displays PDF file name - Default: false
 
 puts "DisplayDocTitle :- " + doc.getDisplayDocTitle().to_s
 
-# Нужно ли изменять размер окна документа, чтобы он соответствовал размеру
+# Whether to resize the document's window to fit the size of
 
-# первой отображаемой страницы - По умолчанию: false
+# first displayed page - Default: false
 
 puts "FitWindow :- " + doc.getFitWindow().to_s
 
-# Нужно ли скрывать строку меню приложения просмотра - По умолчанию: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 puts "HideMenuBar :-" + doc.getHideMenubar().to_s
 
-# Нужно ли скрывать панель инструментов приложения просмотра - По умолчанию: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 puts "HideToolBar :-" + doc.getHideToolBar().to_s
 
-# Нужно ли скрывать элементы интерфейса, такие как полосы прокрутки,
+# Whether to hide UI elements like scroll bars
 
-# и отображать только содержимое страницы - По умолчанию: false
+# and leaving only the page contents displayed - Default: false
 
 puts "HideWindowUI :-" + doc.getHideWindowUI().to_s
 
-# Режим страницы документа. Как отображать документ при выходе из полноэкранного режима.
+# The document's page mode. How to display document on exiting full-screen mode.
 
 puts "NonFullScreenPageMode :-" + doc.getNonFullScreenPageMode().to_s
 
-# Макет страницы, например, одна страница, одна колонка
+# The page layout i.e. single page, one column
 
 puts "PageLayout :-" + doc.getPageLayout().to_s
 
-# Как документ должен отображаться при открытии.
+# How the document should display when opened.
 
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
+## Загрузите рабочий код
 
-## Скачать Исполняемый Код
-
-Скачайте **Получение Свойств Окна Документа и Отображения Страницы (Aspose.PDF)** с любого из нижеупомянутых сайтов социального кодирования:
+Загрузите **Получите свойства окна документа и отображения страницы (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

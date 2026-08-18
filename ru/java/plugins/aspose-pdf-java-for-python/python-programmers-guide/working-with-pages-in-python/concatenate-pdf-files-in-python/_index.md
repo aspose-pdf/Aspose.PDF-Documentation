@@ -1,33 +1,34 @@
 ---
-title: Объединение PDF файлов на Python
+title: Объединение PDF-файлов в Python
+linktitle: Объединение PDF-файлов в Python
 type: docs
 weight: 10
-url: /ru/java/concatenate-pdf-files-in-python/
-lastmod: "2021-06-05"
+url: /java/concatenate-pdf-files-in-python/
+description: Узнайте, как объединить несколько PDF-файлов в один PDF-документ на Python с помощью Aspose.PDF, что упрощает управление документами.
+lastmod: "2026-06-09"
 ---
-
-Чтобы объединить PDF файлы с использованием **Aspose.PDF Java для Python**, просто вызовите класс **ConcatenatePdfFiles**.
+Чтобы объединить PDF-файлы с помощью **Aspose.PDF Java for Python**, просто вызовите класс **ConcatenatePdfFiles**.
 
 ```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Открыть исходный документ
+# Open the source document
 pdf1 = self.Document()
 pdf1=self.dataDir + 'input2.pdf'
 
-# Добавить страницы исходного документа в целевой документ
+# Add the pages of the source document to the target document
 pdf1.getPages().add(pdf1.getPages())
 
-# Сохранить объединенный выходной файл (целевой документ)
+# Save the concatenated output file (the target document)
 doc.save(self.dataDir + "Concatenate_output.pdf")
 
-print "Новый документ сохранен, пожалуйста, проверьте выходной файл"
+print "New document has been saved, please check the output file"
 ```
 
-**Скачать выполняемый код**
+**Загрузить рабочий код**
 
-Скачайте **Объединение PDF файлов (Aspose.PDF)** с любого из указанных ниже сайтов социального кодирования:
+Загрузите **Объединить PDF-файлы (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/ConcatenatePdfFiles/ConcatenatePdfFiles.py)

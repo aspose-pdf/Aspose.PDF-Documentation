@@ -1,19 +1,20 @@
 ---
-title: Обновление размеров страницы в Jython
+title: Обновить размеры страницы в Jython
+linktitle: Обновить размеры страницы в Jython
 type: docs
 weight: 90
-url: /ru/java/update-page-dimensions-in-jython/
-lastmod: "2021-06-05"
+url: /java/update-page-dimensions-in-jython/
+description: Узнайте, как изменить размеры страниц PDF-документа в Jython с помощью Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — обновление размеров страницы
 
-## Aspose.PDF - Обновление размеров страницы
+To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.
 
-Чтобы проверить формат файла с использованием **Aspose.PDF Java для Jython**. Здесь вы можете увидеть пример кода.
+Ошибка рендеринга макроса «код»: для параметра lang указано неверное значение.
 
-Ошибка при рендеринге макроса 'code': Недопустимое значение указано для параметра lang
+## Загрузите рабочий код
 
-## Скачать работающий код
-
-Скачайте работающий код с любого из нижеупомянутых сайтов для социального кодирования:
+Download running code from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

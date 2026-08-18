@@ -1,21 +1,25 @@
 ---
-title: Разбор PDF документов
-linktitle: Разбор PDF документов
+title: Разбирать PDF-документы
+linktitle: Разбирать PDF-документы
 type: docs
-weight: 60
-url: /ru/java/parsing/
-description: Хотите извлечь данные из PDF документов? Узнайте о различных методах извлечения данных из PDF с помощью Aspose.PDF для Java.
-lastmod: "2021-06-05"
+weight: 80
+url: /java/parsing/
+description: Откройте для себя методы анализа PDF и извлечения данных в Java с помощью Aspose.PDF, включая текст, изображения, шрифты, данные форм, таблицы и векторную графику.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Анализ PDF-файлов с помощью Aspose.PDF для Java
+Abstract: В этой статье представлены функции анализа PDF в Aspose.PDF для Java. Он охватывает извлечение текста, изображений, шрифтов, данных AcroForm, табличных данных и векторной графики из документов PDF со ссылками на специальные руководства для каждой задачи.
 ---
+Анализ PDF-документов означает извлечение структурированного или необработанного содержимого из существующих PDF-файлов для его проверки, экспорта, индексирования или повторного использования в других рабочих процессах.
 
-Разбор PDF документов — это термин, связанный с извлечением различной информации из PDF файла. В этом разделе рассматривается, как:
+В этом разделе описано, как:
 
-- [Извлечь текст из PDF](/pdf/ru/java/extract-text-from-pdf/). Разбор или извлечение текста — это самая популярная операция с готовыми PDF. Вы узнаете о разборе текста из всего документа, с конкретной страницы или из определенной области на странице.
-- [Извлечь изображения из PDF](/pdf/ru/java/extract-images-from-the-pdf-file/). Извлечение изображений выполняет ту же функцию для изображений, что и операция выше для текста.
-- [Извлечь шрифты из PDF](/pdf/ru/java/extract-fonts-from-pdf/). Извлечение шрифтов — это специфическая операция со шрифтами в PDF.
-- [Извлечь данные из таблицы в PDF](/pdf/ru/java/extract-data-from-table-in-pdf/).
- Learn how to extract tabular from PDF using Aspose.PDF for Java.  
-- [Извлечение данных из формы](/pdf/ru/java/extract-data-from-acroform/). Если у вас есть множество PDF-документов с формами, возможно, вам нужно получить данные из этих форм. Эта статья поможет понять, как извлекать данные из AcroForms с помощью Aspose.PDF для Java.
+- [Извлечь текст из PDF](/pdf/java/extract-text-from-pdf/) с помощью `TextAbsorber`, `ParagraphAbsorber` и связанных API.
+- [Извлечь изображения из PDF](/pdf/java/extract-images-from-the-pdf-file/) из ресурсов страницы.
+- [Извлечь шрифты из PDF](/pdf/java/extract-fonts-from-pdf/), чтобы проверить шрифты, используемые в документе.
+- [Извлеките данные из AcroForm](/pdf/java/extract-data-from-acroform/) и экспортируйте значения полей в JSON, XML, FDF или XFDF.
+- [Извлеките данные из таблицы](/pdf/java/extract-data-from-table-in-pdf/) с помощью `TableAbsorber` или экспортируйте обнаруженные таблицы в Excel.
+- [Извлечение векторных данных из PDF](/pdf/java/extract-vector-data-from-pdf/) с помощью `GraphicsAbsorber` и методов экспорта SVG.

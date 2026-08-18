@@ -1,33 +1,34 @@
 ---
-title: Преобразование файла SVG в формат PDF на PHP
+title: Конвертировать файл SVG в формат PDF в PHP
+linktitle: Конвертировать файл SVG в формат PDF в PHP
 type: docs
 weight: 40
-url: /ru/java/convert-svg-file-to-pdf-format-in-php/
-lastmod: "2021-06-05"
+url: /java/convert-svg-file-to-pdf-format-in-php/
+description: Узнайте, как конвертировать файлы SVG в формат PDF на PHP с помощью Aspose.PDF для эффективного управления документами.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF — конвертирование SVG в PDF
 
-## Aspose.PDF - Преобразование SVG в PDF
+Чтобы преобразовать файл SVG в формат PDF с помощью **Aspose.PDF Java для PHP**, просто вызовите модуль **SvgToPdf**.
 
-Чтобы преобразовать файл SVG в формат PDF с использованием **Aspose.PDF Java для PHP**, просто вызовите модуль **SvgToPdf**.
-
-Код PHP
+PHP-код
 
 ```php
-# Создание экземпляра объекта LoadOption с использованием опции загрузки SVG
+# Instantiate LoadOption object using SVG load option
 $options = new SvgLoadOptions();
 
-# Создание объекта документа
+# Create document object
 $pdf = new Document($dataDir . 'Example.svg', $options);
 
-# Сохраните вывод в формате XLS
+# Save the output to XLS format
 $pdf->save($dataDir . "SVG.pdf");
 
-print "Документ успешно преобразован";
+print "Document has been converted successfully";
 
 ```
 
-**Скачать работающий код**
+**Загрузить рабочий код**
 
-Скачайте **Преобразование SVG в PDF (Aspose.PDF)** с любого из нижеупомянутых сайтов социального кодирования:
+Загрузите **Конвертируйте SVG в PDF (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/SvgToPdf.php)

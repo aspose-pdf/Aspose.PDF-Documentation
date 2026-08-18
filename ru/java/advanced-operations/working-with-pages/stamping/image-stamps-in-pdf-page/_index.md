@@ -1,111 +1,91 @@
 ---
-title: Добавление изображений штампов в PDF программно
-linktitle: Изображения штампы в PDF файле
+title: Добавление штампов изображений в PDF в Java
+linktitle: Штампы изображений в PDF-файле
 type: docs
 weight: 10
-url: /ru/java/image-stamps-in-pdf-page/
-description: Добавьте изображение штампа в свой PDF документ, используя класс ImageStamp с библиотекой Aspose.PDF для Java.
-lastmod: "2021-06-05"
+url: /java/image-stamps-in-pdf-page/
+description: Узнайте, как добавлять штампы изображений на страницы PDF в Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Добавляйте штампы изображений и фоновые изображения на страницы PDF с помощью Java
+Abstract: В этой статье объясняется, как добавлять штампы изображений в файлы PDF с помощью Aspose.PDF для Java. Он охватывает штампы изображений с позиционированием, вращением, непрозрачностью и контролем качества, а также использует изображение в качестве фона плавающего блока.
 ---
+Aspose.PDF для Java поддерживает штампы изображений в виде наложений и элементов макета на основе изображений.
 
-## Добавление изображения штампа в PDF файл
+## Добавьте штамп изображения
 
-Вы можете использовать класс [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) для добавления изображения в качестве штампа в PDF документ. Класс [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) предоставляет методы для задания высоты, ширины и непрозрачности и т.д.
+Используйте этот пример, когда на странице должен отображаться штамп изображения с произвольным размещением и непрозрачностью.
 
-Чтобы добавить изображение штампа:
-
-1. Создайте объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) и объект ImageStamp, используя необходимые свойства.
-
-1. Вызовите метод [addStamp(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) класса [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) для добавления штампа в PDF.
-
-Следующий пример кода показывает, как добавить изображение штампа в PDF файл.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) и настройте его внешний вид.
+1. Добавьте штамп на страницу и сохраните документ.
 
 ```java
-public static void AddImageStampInPDFFile() {
-        // Открываем документ
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Создаем изображение штампа
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setBackground(true);
         imageStamp.setXIndent(100);
         imageStamp.setYIndent(100);
-        imageStamp.setHeight(48);
-        imageStamp.setWidth(225);
+        imageStamp.setHeight(300);
+        imageStamp.setWidth(300);
         imageStamp.setRotate(Rotation.on270);
         imageStamp.setOpacity(0.5);
 
-        // Добавляем штамп на конкретную страницу
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        // Сохраняем выводной документ
-        pdfDocument.save(_dataDir + "AddImageStamp_out.pdf");
-
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Добавьте штамп изображения с контролем качества
 
-## Контроль качества изображения при добавлении штампа
+Используйте этот пример, если вам нужно настроить качество рендеринга штампа изображения.
 
-Класс [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) позволяет добавить изображение в качестве штампа в PDF-документ. Он также позволяет контролировать качество изображения при добавлении его в качестве водяного знака в PDF-файл. Для этого в класс [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) был добавлен метод с именем setQuality(...). Аналогичный метод также можно найти в классе [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/Stamp) пакета com.aspose.pdf.facades.
-
-Следующий фрагмент кода показывает, как контролировать качество изображения при добавлении его в качестве штампа в PDF-файл.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) и установите значение качества.
+1. Добавьте штамп на страницу и сохраните результат.
 
 ```java
- public static void ControlImageQualityWhenAddingStamp() {
-        // Открыть документ
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Создать штамп изображения
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStampWithQualityControl(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setQuality(10);
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        pdfDocument.save(_dataDir + "ControlImageQuality_out.pdf");
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Используйте изображение в качестве фона плавающего блока.
 
-## Изображение Штамп как Фон в Плавающем Блоке
+Используйте этот пример, когда изображение должно служить фоном контейнера стилизованного макета.
 
-Aspose.PDF API позволяет добавить изображение штамп как фон в плавающем блоке. Свойство BackgroundImage класса FloatingBox может быть использовано для установки фонового изображения штампа для плавающего блока, как показано в следующем примере кода.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите доступ к целевой странице.
+1. Создайте [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) с настройками текста и границ.
+1. Установите фоновое изображение, добавьте поле на страницу и сохраните документ.
 
 ```java
-public static void ImageStampAsBackgroundInFloatingBox() {
-        // Создать объект Document
-        Document doc = new Document();
-        // Добавить страницу в PDF документ
-        Page page = doc.getPages().add();
+public static void addImageAsBackgroundInFloatingBox(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        FloatingBox box = new FloatingBox(200.0f, 100.0f);
+        box.setLeft(40);
+        box.setTop(80);
+        box.setHorizontalAlignment(HorizontalAlignment.Center);
+        box.getParagraphs().add(new TextFragment("Text in Floating Box"));
+        box.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
 
-        // Создать объект FloatingBox
-        FloatingBox aBox = new FloatingBox(200, 100);
+        Image image = new Image();
+        image.setFile(imageFile.toString());
+        box.setBackgroundImage(image);
+        box.setBackgroundColor(Color.getYellow());
+        page.getParagraphs().add(box);
 
-        // Установить левую позицию для FloatingBox
-        aBox.setLeft(40);
-        // Установить верхнюю позицию для FloatingBox
-        aBox.setTop(80);
-        // Установить горизонтальное выравнивание для FloatingBox
-        aBox.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Добавить текстовый фрагмент в коллекцию абзацев FloatingBox
-        aBox.getParagraphs().add(new TextFragment("основной текст"));
-        // Установить границу для FloatingBox
-        aBox.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
-
-        // Добавить фоновое изображение
-        Image img = new Image();
-        img.setFile(_dataDir + "aspose-logo.png");
-        aBox.setBackgroundImage(img);
-
-        // Установить фоновый цвет для FloatingBox
-        aBox.setBackgroundColor(Color.getYellow());
-
-        // Добавить FloatingBox в коллекцию абзацев объекта страницы
-        page.getParagraphs().add(aBox);
-        // Сохранить PDF документ
-        doc.save(_dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+        document.save(outputFile.toString());
     }
 }
 ```

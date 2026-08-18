@@ -1,95 +1,74 @@
 ---
-title: Изменение размера страницы PDF программно
-linktitle: Изменить размер страницы
+title: Изменить размер страницы PDF в Java
+linktitle: Изменение размера страницы
 type: docs
-weight: 50
-url: /ru/java/change-page-size/
-description: Изменение размера страницы в PDF файле с использованием Java библиотеки.
-lastmod: "2021-06-05"
+weight: 40
+url: /java/change-page-size/
+description: Узнайте, как читать и изменять размеры страниц PDF в Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Чтение и обновление размеров и полей страницы с помощью Java
+Abstract: В этой статье показано, как читать и изменять размеры страницы PDF с помощью Aspose.PDF для Java. Он охватывает получение размера страницы, измерение размера страницы с применением поворота и обновление первой страницы до нового размера при печати размеров коробки до и после изменения.
 ---
+Aspose.PDF для Java может как сообщать о размерах страниц, так и обновлять их.
 
-## Изменение размера страницы PDF
+## Изменить размер страницы
 
-Aspose.PDF for Java позволяет изменить размер страницы PDF с помощью простых строк кода в ваших Java приложениях. Эта тема объясняет, как обновить/изменить размеры (размер) страницы существующего PDF файла.
+Используйте этот пример, когда вам нужно изменить размер существующей страницы и проверить поля страницы до и после изменения.
 
-Класс [Page](https://reference.aspose.com/pdf//java/com.aspose.pdf/page) содержит метод SetPageSize(...), который позволяет установить размер страницы. Пример кода ниже обновляет размеры страницы в несколько простых шагов:
-
-1. Загрузите исходный PDF файл.
-1. Получите страницы в объект [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection).
-1. Получите заданную страницу.
-1. Вызовите метод SetPageSize(..) для обновления её размеров.
-
-1. Вызовите метод Save(..) класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) для создания PDF-файла с обновленными размерами страницы.
-
-{{% alert color="primary" %}}
-
-Обратите внимание, что свойства высоты и ширины используют точки в качестве основной единицы, где 1 дюйм = 72 точки и 1 см = 1/2.54 дюйма = 0.3937 дюйма = 28.3 точки.
-
-{{% /alert %}}
-
-Следующий фрагмент кода показывает, как изменить размеры страницы PDF на формат A4.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите целевую [страницу](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и распечатайте текущие значения ее поля.
+1. Установите новый размер страницы и сохраните документ.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleChangePDFPageSize {
-    // Путь к каталогу документов.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ChangePDFPageSize() {
-        
-        // Открыть первый документ
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-                
-        // Получить коллекцию страниц
-        PageCollection pageCollection = pdfDocument.getPages();
-
-        // Получить конкретную страницу
-        Page pdfPage = pageCollection.get_Item(1);
-
-        // Установить размер страницы как A4 (11.7 x 8.3 дюйма), и в Aspose.Pdf, 1 дюйм = 72 точки
-        // Таким образом, размеры A4 в точках будут (842.4, 597.6)
-        pdfPage.setPageSize(597.6, 842.4);
-
-        _dataDir = _dataDir + "UpdateDimensions_out.pdf";
-        
-        // Сохранить обновленный документ
-        pdfDocument.save(_dataDir);
+public static void setPageSize(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        printBoxes("Before set", page);
+        page.setPageSize(597.6, 842.4);
+        printBoxes("After set", page);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Получите размер страницы
 
-## Получить размер страницы PDF
+Используйте этот пример, когда вам нужно прочитать видимые размеры страницы.
 
-Вы можете прочитать размер страницы PDF существующего PDF файла, используя Aspose.PDF для Java. Пример кода ниже показывает, как прочитать размеры страницы PDF с использованием Java.
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите прямоугольник страницы с включенной обработкой поворота.
+1. Выведите ширину и высоту страницы.
 
 ```java
-    public static void GetPDFPageSize() {
-        
-        // Открыть первый документ
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-                
-        // Добавляет пустую страницу в PDF документ
-        Page page = pdfDocument.getPages().size() > 0 ? pdfDocument.getPages().get_Item(1) : pdfDocument.getPages().add();
-        
-        // Получить информацию о высоте и ширине страницы
-        System.out.println(page.getPageRect(true).getWidth() + ":" + page.getPageRect(true).getHeight());
-        
-        // Повернуть страницу на 90 градусов
-        page.setRotate (Rotation.on90);
-
-        // Получить информацию о высоте и ширине страницы
-        System.out.println(page.getPageRect(true).getWidth() + ":" + page.getPageRect(true).getHeight());
-        
-        // Сохранить обновленный документ
-        _dataDir = _dataDir + "UpdateDimensions_out.pdf";
-        pdfDocument.save(_dataDir);
+public static void getPageSize(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Rectangle rectangle = document.getPages().get_Item(1).getPageRect(true);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
     }
+}
+```
 
+## Получите размер страницы с примененным поворотом
+
+Используйте этот пример, если вам нужно сравнить размеры страницы до и после учета поворота.
+
+1. Откройте исходный PDF-файл [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Поверните целевую [Страницу](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Считайте прямоугольник страницы с обработкой поворота и без нее и выведите оба значения.
+
+```java
+public static void getPageSizeRotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        page.setRotate(Rotation.on90);
+        Rectangle rectangle = page.getPageRect(false);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
+        rectangle = page.getPageRect(true);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
+    }
 }
 ```
