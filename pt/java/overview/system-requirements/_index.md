@@ -15,7 +15,7 @@ Abstract: Aspose.PDF para Python via .NET é uma API de processamento de PDF pro
 ---
 ## Visão geral
 
-Para produzir documentos PDF, a máquina a ser executada [Aspose.PDF para Java](https://products.aspose.com/pdf/java/) não precisa ter [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) instalado como Aspose.PDF for Java é um mecanismo de criação de documentos PDF. No entanto, para visualizar documentos PDF produzidos por Aspose.PDF para Java, a máquina precisa de pelo menos um [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). Ele pode ser baixado gratuitamente.
+Para produzir documentos PDF, a máquina para executar [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) não precisa ter o [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) instalado, pois o próprio Aspose.PDF for Java é um mecanismo de criação de documentos PDF. No entanto, para visualizar documentos PDF produzidos por Aspose.PDF para Java, a máquina precisa de pelo menos um [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). Ele pode ser baixado gratuitamente.
 
 ## Sistemas operacionais suportados
 
