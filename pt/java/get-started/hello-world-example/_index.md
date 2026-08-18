@@ -17,15 +17,15 @@ Um exemplo de “Hello World” é o caminho mais curto para entender o fluxo de
 
 O exemplo Java segue estas etapas:
 
-1. Crie um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objeto.
-1. Adicione um [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
-1. Crie um [Fragmento de Texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) com o texto `Hello, world!`.
-1. Defina o [Posição](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), fonte, tamanho da fonte, cor de fundo e cor de primeiro plano no fragmento [Estado de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. Crie um [Construtor de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) para a página.
-1. Anexe o [Fragmento de Texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) para o [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Salve o PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um objeto [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione uma [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
+1. Crie um [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) com o texto `Hello, world!`.
+1. Defina a [Posição](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), fonte, tamanho da fonte, cor de fundo e cor de primeiro plano através do fragmento [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Crie um [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) para a página.
+1. Anexe o [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) à [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Salve o PDF [documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-O seguinte código Java é baseado em `GetStartedExamples.java`.
+O código Java a seguir é baseado em `GetStartedExamples.java`.
 
 ```java
 public static void simpleExample(Path outputFile) {
