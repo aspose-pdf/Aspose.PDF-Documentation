@@ -14,8 +14,7 @@ Aspose.PDF for SharePoint allows converting HTML files, text files, and images (
 
 {{% /alert %}}
 
-
-## **Convert a Document to PDF**
+## Convert a Document to PDF
 
 {{% alert color="primary" %}}
 
@@ -24,13 +23,13 @@ To convert a document to PDF:
 1. Click **Convert to PDF** in the ECB menu.
 1. Download and save the resultant PDF file.
 
-**Convert to PDF option in the ECB menu**
+Convert to PDF option in the ECB menu
 
-![todo:image_alt_text](convert-to-pdf_1.jpg)
+![Convert to PDF](convert-to-pdf_1.jpg)
 
 {{% /alert %}}
 
-## **PDF Creator information**
+## PDF Creator information
 
 {{% alert color="primary" %}}
 

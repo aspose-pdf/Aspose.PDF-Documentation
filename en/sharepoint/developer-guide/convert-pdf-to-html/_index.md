@@ -14,15 +14,15 @@ Aspose.PDF for SharePoint supports feature to convert PDF document form SharePoi
 
 {{% /alert %}}
 
-## **Converting PDF document to HTML**
+## Converting PDF document to HTML
 
 Convert PDF document from SharePoint Document library to HTML as following:
 
 1. Click **Convert to HTML** in the ECB menu of PDF document.
 
-![todo:image_alt_text](convert-pdf-to-html_1.png)
+![Convert PDF to HTML-example 1](convert-pdf-to-html_1.png)
 
 2. Download and save the resultant HTML file to disk.
 
-![todo:image_alt_text](convert-pdf-to-html_2.png)
+![Convert PDF to HTML-example 2](convert-pdf-to-html_2.png)
 

@@ -4,7 +4,7 @@ linktitle: Salvar página Wiki do SharePoint como PDF
 type: docs
 weight: 20
 url: /pt/sharepoint/save-sharepoint-wiki-page-as-pdf/
-lastmod: "2026-06-18"
+lastmod: "2026-08-07"
 description: A biblioteca PDF do SharePoint pode ser usada para exportar páginas Wiki do SharePoint para PDF.
 ---
 
@@ -15,22 +15,20 @@ description: A biblioteca PDF do SharePoint pode ser usada para exportar página
 Este artigo mostra como exportar páginas Wiki do SharePoint para PDF usando Aspose.PDF for SharePoint.
 
 {{% /alert %}}
-## **Salvando páginas Wiki**
+
+## Salvando páginas Wiki
 
 {{% alert color="primary" %}}
 
-Para salvar uma página Wiki como PDF, clique em **Salvar como PDF** na aba **Página**. As capturas de tela abaixo mostram uma seção de texto como aparece em uma página Wiki e exportada para PDF.
+Para salvar uma página Wiki como PDF, clique em **Save as PDF** na guia **Page**. As capturas de tela abaixo mostram uma seção de texto como aparece em uma página Wiki e exportada para PDF.
 
-**Uma página Wiki prestes a ser exportada para arquivo PDF.** (Observe o botão **Salvar como PDF** na guia **Página**.)
+**Uma página Wiki prestes a ser exportada para um arquivo PDF.** (Observe o botão **Save as PDF** na guia **Page**.)
 
-![todo:image_alt_text](save-sharepoint-wiki-page-as-pdf_1.png)
+![Salvar página Wiki como PDF](save-sharepoint-wiki-page-as-pdf_1.png)
 
+Um PDF mostrando a página Wiki exportada.
 
-
-
-**Um PDF mostrando a página Wiki exportada.**
-
-![todo:image_alt_text](save-sharepoint-wiki-page-as-pdf_2.png)
+![Página Wiki exportada](save-sharepoint-wiki-page-as-pdf_2.png)
 
 {{% /alert %}}
 

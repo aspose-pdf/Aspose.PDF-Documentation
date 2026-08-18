@@ -14,13 +14,13 @@ description: PDF SharePoint is a solution that allows the users to export lists,
 
 ![Aspose.PDF for Sharepoint logo](aspose_pdf-for-sharepoint.png)
 
-**Welcome to Aspose.PDF for SharePoint**
+## Welcome to Aspose.PDF for SharePoint
 
 Aspose.PDF for SharePoint is a solution that allows the users to export lists, list items and SharePoint Wiki pages to the PDF file format.
 
 {{% /alert %}}
 
-## **Aspose.PDF for SharePoint Resources**
+## Aspose.PDF for SharePoint Resources
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
@@ -32,4 +32,4 @@ Following are the links to some useful resources you may need to accomplish your
 - [Install Aspose.Pdf for SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
 - [Evaluate Aspose.Pdf ](/pdf/sharepoint/evaluate-aspose-pdf/)
 - [License Aspose.Pdf for SharePoint](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
-- [ API Limitations](/pdf/sharepoint/api-limitations/)
+- [API Limitations](/pdf/sharepoint/api-limitations/)

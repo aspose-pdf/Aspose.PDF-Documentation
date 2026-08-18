@@ -1,36 +1,40 @@
 ---
-title: Como - usar Aspose.Pdf para demos offline do JasperReports
+title: Como usar o Aspose.Pdf para demonstrações offline do JasperReports
+linktitle: Como usar o Aspose.Pdf para demonstrações offline do JasperReports
 type: docs
 weight: 10
-url: /pt/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/
+url: /jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/
+description: Explore offline demos for Aspose.PDF for JasperReports. Learn practical implementations and features in a hands-on manner.
 lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF para JasperReports inclui vários projetos de demonstração para ajudá-lo a começar a exportar relatórios para formatos PDF a partir da sua aplicação. As demonstrações são demonstrações padrão do JasperReports que foram modificadas para demonstrar como usar novos exportadores.
+Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF formats from your application. The demos are standard JasperReports demos that have been modified to demonstrate how to use new exporters.
 
 {{% /alert %}}
-### **Executando Demos do Aspose.PDF para JasperReports**
-Para executar demos do Aspose.PDF para JasperReports:
+
+## Running Aspose.PDF for JasperReports Demos
+
+To run Aspose.PDF for JasperReports demos:
 
 {{% alert color="primary" %}}
 
-1. Baixe o JasperReports de <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>. Certifique-se de baixar todo o projeto arquivado com o código-fonte e demos, não apenas um único JAR.
-2. Descompacte o projeto arquivado em algum local do seu disco rígido, por exemplo C:\.
-3. 1. Copie todas as pastas de demonstração da pasta \demo em **Aspose.PDF.JasperReports.zip** para ```<InstallDir>```\jasperreports\demo\samples, onde ```<InstallDir>``` é o local onde você descompactou o JasperReports. Este passo é necessário porque os scripts de construção de demonstração dependem da estrutura de pastas do JasperReports, caso contrário, você terá que modificar os scripts de construção.
-2. Copie o arquivo **aspose.pdf.jasperreports.jar** da pasta \lib em **Aspose.PDF.JasperReports.zip** para ```<InstallDir>```\jasperreports\lib.
-3. Baixe a ferramenta ANT de <http://ant.apache.org/bindownload.cgi>.
-4. Descompacte a ferramenta ANT e configure as variáveis de ambiente conforme descrito no manual da ferramenta.
-5. Mude o diretório atual para ```<InstallDir>```\demo\hsqldb e execute o seguinte comando na linha de comando:
+1. Download JasperReports from <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>. Make sure to download the entire archived project with the source code and demos, not just a single JAR.
+2. Unpack the archived project to some location on your hard disk, for example C:\.
+3. Copy all demo folders from the \demo folder in **Aspose.PDF.JasperReports.zip** to ```<InstallDir>```\jasperreports\demo\samples, where ```<InstallDir>``` is the location you have unpacked JasperReports to. This step is required because the demo build scripts rely on the JasperReports folder structure, otherwise you have to modify build scripts.
+4. Copy the **aspose.pdf.jasperreports.jar** file from the \lib folder in **Aspose.PDF.JasperReports.zip** to ```<InstallDir>```\jasperreports\lib.
+5. Download the ANT tool from <http://ant.apache.org/bindownload.cgi>.
+6. Unpack the ANT tool and set up environment variables as described in the tool's manual.
+7. Change the current directory to ```<InstallDir>```\demo\hsqldb and run the following command line:
    ant runServer
-6. Abra uma nova instância do prompt de comando e mude o diretório atual para uma das demonstrações do Aspose.PDF para JasperReports, por exemplo, ```<InstallDir>```\demo\samples\charts.ap.
-7. Execute os seguintes comandos na linha de comando:
-8. ant javac – para compilar os arquivos fonte Java da aplicação de teste.  
-11. ant compile – para compilar o design do relatório XML e produzir o arquivo .jasper  
-12. ant fill – para preencher o design do relatório compilado com dados e produzir o arquivo .jrprint  
-13. Execute o seguinte comando na linha de comando:  
-   ant pdf – para produzir um arquivo PDF a partir do relatório de demonstração.  
-14. Abra um dos documentos resultantes para visualizar, por exemplo ```<InstallDir>```\demo\samples\charts.ap\AreaChartReport.pdf no Adobe Reader ou em outra aplicação.  
+8. Open new command prompt instance and change the current directory to one of the Aspose.PDF for JasperReports demos, for example ```<InstallDir>```\demo\samples\charts.ap.
+9. Run the following commands on the command line:
+10. ant javac – to compile the Java source files of the test application.
+11. ant compile – to compile the XML report design and produce the .jasper file
+12. ant fill – to fill the compiled report design with data and produce the .jrprint file
+13. Run the following command on the command line:
+   ant pdf – to produce a PDF file from the demo report.
+14. Open one of the resulting documents to view, for example ```<InstallDir>```\demo\samples\charts.ap\AreaChartReport.pdf in Adobe Reader or another application.
 
 {{% /alert %}}

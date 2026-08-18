@@ -4,105 +4,89 @@ linktitle: تحويل ملف إلى PDF عبر نشاط سير العمل
 type: docs
 weight: 50
 url: /ar/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
-lastmod: "2026-06-18"
-description: يمكن استخدام PDF SharePoint API في سير عمل SharePoint يقوم بتحويل مستند إلى PDF.
+lastmod: "2026-08-13"
+description: يمكن استخدام PDF SharePoint API في سير عمل SharePoint الذي يحول مستندًا إلى PDF.
 ---
 
 {{% alert color="primary" %}}
 
-دعم سير العمل هو وظيفة رئيسية في Microsoft Office SharePoint Server. تساعد سير العمل على أتمتة نقل المستندات وفقًا لمنطق الأعمال وتبسيط تكلفة ووقت تنظيم المستندات. يوضح هذا المقال كيفية استخدام Aspose.PDF for SharePoint في سير عمل يقوم بتحويل مستند إلى PDF.
+يعد دعم سير العمل وظيفة أساسية في Microsoft Office SharePoint Server. تساعد عمليات سير العمل على أتمتة حركة المستندات وفقًا لمنطق الأعمال وتبسيط تكلفة تنظيم المستندات ووقتها. توضح هذه المقالة كيفية استخدام Aspose.PDF for SharePoint في سير عمل يقوم بتحويل مستند إلى PDF.
 
 {{% /alert %}}
-## **إعداد سير العمل**
 
-هذا المثال ينشئ سير عمل يحول أي عنصر جديد في مكتبة المستندات إلى تنسيق PDF ويخزنه في مكتبة مستندات أخرى. يستخدم المثال مكتبة **Personal Documents** كمكتبة المصدر ومجلد فرعي **Pdf** داخل مكتبة **Shared Documents** كمكتبة الوجهة.
+## إعداد سير العمل
+
+يقوم هذا المثال بإنشاء سير عمل يحول أي عنصر جديد في مكتبة المستندات إلى تنسيق PDF ويخزنه في مكتبة مستندات أخرى. يستخدم المثال مكتبة **المستندات الشخصية** باعتبارها المكتبة المصدر والمجلد الفرعي **Pdf** في مكتبة **المستندات المشتركة** باعتبارها المكتبة الوجهة.
 
 يدعم Aspose.PDF for SharePoint تحويل ملفات HTML والنص والصور.
 
-### **تصميم سير العمل باستخدام SharePoint Designer**
+### تصميم سير العمل باستخدام SharePoint Designer
 
-1. افتح **SharePoint Designer** واتصل بالموقع حيث سيتم تنفيذ سير العمل.
-1. اختر **Workflows** من **site objects** ثم افتح **List Workflow**.
-1. حدد مكتبة **Personal Documents** لإنشاء وإرفاق سير عمل قائمة جديد بمكتبة المستندات.
+1. افتح **SharePoint Designer** واتصل بالموقع الذي سيتم تنفيذ سير العمل فيه.
+1. حدد **سير العمل** من **كائنات الموقع** ثم افتح **قائمة سير العمل**.
+1. حدد مكتبة **المستندات الشخصية** لإنشاء سير عمل قائمة جديدة وإرفاقه بمكتبة المستندات.
 
-   **تحديد Personal Documents من القائمة**
+   **اختيار المستندات الشخصية من القائمة**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_1.png)
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 1](converting-a-file-to-pdf-via-workflow-activity_1.png)
 
+1. قم بإنشاء سير عمل القائمة وإرفاقه بمكتبة **المستندات الشخصية** عن طريق كتابة اسم سير العمل ووصفه.
+1. انقر **موافق** لإكمال هذه الخطوة.
 
-1. أنشئ وأرفق سير عمل القائمة إلى مكتبة **Personal Documents** بكتابة اسم سير العمل ووصفه.
-1. انقر **OK** لإكمال هذه الخطوة.
+   **إنشاء سير عمل القائمة**
 
-   **إنشاء سير عمل قائمة**
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 2](converting-a-file-to-pdf-via-workflow-activity_2.png)
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_2.png)
+يظهر محرر خطوة سير العمل. يُستخدم هذا لتحديد الشروط والإجراءات الخاصة بمهام سير العمل. أضف الآن إجراءً لتحويل مستند جديد إلى PDF دون أي شرط، من **Aspose Actions**.
 
+1. حدد الإجراء **تحويل الملف إلى PDF عبر Aspose.PDF** من قائمة **الإجراء**.
 
+   ** الاختيار والإجراء **
 
-يظهر محرر خطوة سير العمل. يُستخدم هذا لتحديد الشروط والإجراءات لسير الأعمال. الآن أضف إجراءً لتحويل مستند جديد إلى PDF دون أي شرط، من **Aspose Actions**.
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 3](converting-a-file-to-pdf-via-workflow-activity_3.png)
 
-1. حدد الإجراء **Convert file to PDF via Aspose.PDF** من قائمة **Action**.
+1. تكوين معلمات الإجراء:
+   1. قم بتعيين معلمة **هذا المجلد** إلى المجلد الوجهة.
+   1. إما أن تترك معلمات الإجراء الأخرى كقيم افتراضية أو قم بتعيينها باستخدام نافذة خصائص الإجراء. القيمة الافتراضية للمعلمة **الكتابة فوق** خاطئة.
 
-   **اختيار إجراء**
+      **محرر سير العمل**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_3.png)
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 4](converting-a-file-to-pdf-via-workflow-activity_4.png)
 
+**إعداد المكتبة الوجهة**
 
-1. قم بتكوين معلمات الإجراء:
-   1. عيّن معلمة **this folder** إلى مجلد الوجهة.
-   1. إما اترك معلمات الإجراء الأخرى كالقيم الافتراضية أو اضبطها باستخدام نافذة خصائص الإجراء. القيمة الافتراضية لمعلمة **Overwrite** هي false.
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 5](converting-a-file-to-pdf-via-workflow-activity_5.png)
 
-      **محرر Workflow**
+**ضبط الخصائص**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_4.png)
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 6](converting-a-file-to-pdf-via-workflow-activity_6.png)
 
-
-
-**إعداد مكتبة الوجهة**
-
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_5.png)
-
-
-
-**إعداد الخصائص**
-
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_6.png)
-
-
-
-
-1. من قائمة **Workflow**، اختر **Workflow Settings**.
-1. حدد **ابدأ سير العمل تلقائيًا عندما يتم إنشاء عنصر جديد** وامسح الخيارات الأخرى من **خيارات البدء**.
+1. من القائمة **سير العمل**، حدد **إعدادات سير العمل**.
+1. حدد **بدء سير العمل تلقائيًا عند إنشاء عنصر جديد** وقم بمسح الخيارات الأخرى من **خيارات البدء**.
 
    **ضبط خيارات البدء**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_7.png)
-
-
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 7](converting-a-file-to-pdf-via-workflow-activity_7.png)
 
 تم الانتهاء من تصميم سير العمل.
 
-1. احفظ وانشر سير العمل لتطبيقه على موقع SharePoint.
+1. قم بحفظ سير العمل ونشره لتنفيذه على موقع SharePoint.
 
-### **اختبار سير العمل**
+### اختبار سير العمل
 
 لاختبار سير العمل:
 
-1. افتح موقع SharePoint وقم بتحميل مستند جديد إلى مكتبة المستندات **Personal Documents**.
-   يدعم Aspose.PDF for SharePoint التحويل من ملفات HTML وملفات النصوص والصور (JPG, PNG, GIF, TIFF و BMP*) إلى PDF. تم تكوين سير العمل ليبدأ تلقائيًا عند إنشاء عنصر جديد، لذا يتم معالجة الملفات تلقائيًا.
+1. افتح موقع SharePoint وقم بتحميل مستند جديد إلى مكتبة المستندات **المستندات الشخصية**.
+   يدعم Aspose.PDF for SharePoint التحويل من ملفات HTML والملفات النصية والصور (JPG وPNG وGIF وTIFF وBMP*) إلى PDF. تم تكوين سير العمل ليبدأ تلقائيًا عند إنشاء عنصر جديد، بحيث تتم معالجة الملفات تلقائيًا.
 1. قم بتحديث المتصفح.
-   يظهر حالة سير العمل في عمود سير العمل، **Aspose.PDF Workflow** في هذه الحالة.
+   تظهر حالة سير العمل في عمود سير العمل، **Aspose.PDF Workflow** في هذه الحالة.
 
-   **إضافة مستند إلى المكتبة المصدرية**
+   **إضافة مستند إلى المكتبة المصدر**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_8.png)
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 8](converting-a-file-to-pdf-via-workflow-activity_8.png)
 
-
-
-
-1. افتح مكتبة المستندات الهدف لعرض المستند المحوَّل. **Shared Documents/Pdf** هو المسار في هذا المثال.
+1. افتح مكتبة المستندات الوجهة لعرض المستند المحول. **المستندات المشتركة/Pdf** هو المسار في هذا المثال.
 
    **مكتبة الوجهة**
 
-![todo:image_alt_text](converting-a-file-to-pdf-via-workflow-activity_9.png)
-
+![تحويل الملف إلى PDF عبر نشاط سير العمل رقم 9](converting-a-file-to-pdf-via-workflow-activity_9.png)

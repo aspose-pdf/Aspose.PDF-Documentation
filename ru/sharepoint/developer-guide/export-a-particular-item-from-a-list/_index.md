@@ -1,28 +1,27 @@
 ---
-title: Экспортировать конкретный элемент из списка в PDF в SharePoint
-linktitle: Экспортировать конкретный элемент из списка
+title: Экспорт определенного элемента из списка в PDF в SharePoint
+linktitle: Экспортировать определенный элемент из списка
 type: docs
 weight: 10
 url: /ru/sharepoint/export-a-particular-item-from-a-list/
-lastmod: "2026-06-18"
-description: API PDF для SharePoint позволяет конвертировать несколько документов или один за раз в PDF, как показано в этой статье.
+lastmod: "2026-08-13"
+description: PDF SharePoint API позволяет конвертировать несколько документов или один за раз в PDF, как показано в этой статье.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint позволяет конвертировать несколько документов или один за раз. В этой статье показывается, как экспортировать элемент из списка.
+Aspose.PDF для SharePoint позволяет конвертировать несколько документов или один за раз. В этой статье показано, как экспортировать элемент из списка.
 
 {{% /alert %}}
 
-Чтобы экспортировать конкретный элемент из списка: выберите **Export to Pdf** из Edit Control Block (ECB) элемента.
+Чтобы экспортировать определенный элемент из списка: выберите **Экспорт в Pdf** в блоке управления редактированием элемента (ECB).
 
-## **Выбор Export to Pdf в ECB элемента**
+## Выбор «Экспорт в PDF» в ECB элемента
 
-![todo:image_alt_text](export-a-particular-item-from-a-list_1.png)
+![Выбор экспорта в PDF](export-a-particular-item-from-a-list_1.png)
 
+## Экспорт в PDF
 
+![Экспорт в PDF](export-a-particular-item-from-a-list_2.png)
 
-## **Экспорт в PDF**
-
-![todo:image_alt_text](export-a-particular-item-from-a-list_2.png)
 
