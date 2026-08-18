@@ -1,106 +1,69 @@
 ---
-title: إضافة صفحات في PDF
-linktitle: إضافة صفحات
+title: إضافة صفحات PDF في جافا
+linktitle: إضافة الصفحات
 type: docs
 weight: 10
-url: /ar/java/add-pages/
-description: تعلمك هذه المقالة كيفية إدراج (إضافة) صفحة في المكان المطلوب في ملف PDF. تعلم كيفية نقل وحذف (إزالة) صفحات من ملف PDF باستخدام مكتبة Java.
-lastmod: "2021-06-05"
+url: /java/add-pages/
+description: تعرف على كيفية إضافة أو إدراج صفحات في مستندات PDF في Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إضافة أو إدراج صفحات PDF باستخدام Java
+Abstract: تشرح هذه المقالة كيفية إضافة صفحات إلى ملفات PDF باستخدام Aspose.PDF لـ Java. وهو يغطي إدراج صفحة فارغة في موضع محدد، وإلحاق صفحة في نهاية المستند، واستيراد صفحة من ملف PDF آخر.
 ---
+يتيح لك Aspose.PDF for Java إدراج صفحات فارغة أو استيراد صفحات من مستند آخر.
 
-## إضافة أو إدراج صفحة في ملف PDF
+## أدخل صفحة فارغة في موضع محدد
 
-يتيح لك Aspose.PDF for Java إدراج صفحة في مستند PDF في أي مكان في الملف وكذلك إضافة صفحات إلى نهاية ملف PDF. تحتاج إلى تمرير الموقع الذي تريد إدراج الصفحة الفارغة فيه إلى دالة الإدراج.
-يوضح هذا القسم كيفية إضافة صفحات إلى ملف PDF باستخدام Aspose.PDF for Java.
+استخدم هذا المثال عندما تحتاج إلى إضافة صفحة فارغة في منتصف ملف PDF موجود.
 
-### إدراج صفحة فارغة في ملف PDF في الموقع المطلوب
-
-يظهر مقتطف الشيفرة التالي كيفية إدراج صفحة فارغة في ملف PDF:
-
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) مع ملف PDF المدخل.
-
-1. استدعاء طريقة الإدراج [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) مع الفهرس المحدد.
-1. احفظ ملف PDF الناتج باستخدام طريقة الحفظ.
-
-يوضح لك مقتطف الشيفرة التالي كيفية إدراج صفحة في ملف PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإدراج صفحة جديدة في الموضع المستهدف في مجموعة الصفحات.
+1. احفظ المستند المحدث.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleAddPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation() {
-        Document document = new Document();
-
-        // إضافة صفحة
-        document.getPages().add();
-
-        // إدراج صفحة فارغة في ملف PDF
+public static void insertEmptyPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         document.getPages().insert(2);
-
-        // حفظ ملف PDF المحدث
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
-في المثال أعلاه، أضفنا صفحة فارغة مع المعلمات الافتراضية. إذا كنت بحاجة لجعل حجم الصفحة نفس حجم صفحة أخرى في المستند، يجب عليك إضافة
-بضع سطور من الشيفرة:
+## إلحاق صفحة فارغة بالنهاية
+
+استخدم هذا المثال عندما تحتاج إلى توسيع المستند بصفحة أخيرة فارغة جديدة.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف صفحة جديدة إلى نهاية مجموعة الصفحات.
+1. احفظ ملف PDF المعدل.
 
 ```java
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation01() {
-        Document document = new Document();
-
-        // إضافة صفحة
-        Page page1 = document.getPages().add();
-
-        // إدراج صفحة فارغة في ملف PDF
-        Page page2 = document.getPages().insert(2);
-        ;
-        // نسخ معلمات الصفحة من الصفحة 1
-        page2.setArtBox(page1.getArtBox());
-        page2.setBleedBox(page1.getBleedBox());
-        page2.setCropBox(page1.getCropBox());
-        page2.setMediaBox(page1.getMediaBox());
-        page2.setTrimBox(page1.getTrimBox());
-
-        // حفظ ملف PDF المحدث
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().add();
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## إضافة صفحة من مستند آخر
 
-### إضافة صفحة فارغة في نهاية ملف PDF
+استخدم هذا المثال عندما تريد استيراد صفحة من ملف PDF إلى ملف PDF آخر.
 
-أحيانًا، ترغب في التأكد من أن المستند ينتهي بصفحة فارغة. يوضح هذا الموضوع كيفية إدراج صفحة فارغة في نهاية مستند PDF.
-
-لإدراج صفحة فارغة في نهاية ملف PDF:
-
-1. قم بإنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) باستخدام ملف PDF المدخل.
-2. استدعِ طريقة الإضافة في مجموعة [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection)، بدون أي معلمات.
-3. احفظ ملف PDF الناتج باستخدام طريقة Save.
-
-يظهر لك مقتطف الشيفرة التالي كيفية إدراج صفحة فارغة في نهاية ملف PDF.
+1. قم بإنشاء الوجهة [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح المستند المصدر.
+1. أضف أي محتوى وجهة مطلوب واستورد الصفحة المستهدفة من ملف PDF المصدر.
+1. احفظ المستند الناتج.
 
 ```java
-public static void AddAnEmptyPageAtTheEndOfAPDFFile() {
-
-        Document document = new Document();
-        // إضافة صفحة
-        document.getPages().add();
-
-        // إدراج صفحة فارغة في نهاية ملف PDF
-        document.getPages().add();
-
-        // حفظ ملف PDF المحدث
-        document.save(_dataDir + "InsertEmptyPageAtEnd_out.pdf");
+public static void addPageFromAnotherDocument(Path inputFile, Path outputFile) {
+    try (Document document = new Document();
+         Document anotherDocument = new Document(inputFile.toString())) {
+        document.getPages().add().getParagraphs().add(new TextFragment("This is first page!"));
+        document.getPages().add(anotherDocument.getPages().get_Item(1));
+        document.save(outputFile.toString());
     }
-
 }
 ```

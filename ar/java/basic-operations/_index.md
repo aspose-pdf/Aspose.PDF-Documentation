@@ -1,18 +1,23 @@
 ---
-title: العمليات الأساسية مع مستندات PDF
+title: العمليات الأساسية مع وثائق PDF
 linktitle: العمليات الأساسية
 type: docs
-weight: 40
-url: /ar/java/basic-operations/
-lastmod: "2021-06-05"
-description: يصف قسم العمليات الأساسية إمكانيات فتح وحفظ مستندات PDF باستخدام Aspose.PDF for Java.
+weight: 60
+url: /java/basic-operations/
+lastmod: "2026-06-09"
+description: يصف قسم العمليات الأساسية كيفية إنشاء مستندات PDF وفتحها وحفظها ودمجها وتقسيمها وحمايتها باستخدام Aspose.PDF لـ Java.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: نظرة عامة على العمليات الأساسية مع PDF باستخدام Java
+Abstract: توفر هذه المقالة نظرة عامة على عمليات PDF الأساسية في Java باستخدام Aspose.PDF. ويغطي إنشاء مستندات جديدة، وفتح ملفات PDF من الملفات أو التدفقات، وحفظ المستندات في الملفات والتدفقات، ودمج ملفات PDF وتقسيمها، وحماية المستندات بكلمات مرور وأذونات.
 ---
+يصف قسم **العمليات الأساسية** أول وأبسط مهام PDF التي يمكنك تنفيذها باستخدام Aspose.PDF لـ Java:
 
-يصف قسم **العمليات الأساسية** أول وأبسط عملية مع مستندات PDF في Aspose.PDF for Java:
-
-- [إنشاء مستند PDF](/pdf/ar/java/create-document/) - يصف هذا المقال كيفية إنشاء ملف PDF باستخدام Java.
-- [فتح مستند PDF](/pdf/ar/java/open-pdf-document/) - يصف هذا المقال طرقًا مختلفة لفتح مستند PDF في تطبيق Java.
-- [حفظ مستند PDF](/pdf/ar/java/save-pdf-document/) - يصف هذا المقال طرقًا مختلفة لحفظ مستند PDF إلى ملف، أو دفق، أو إرساله إلى الويب أو حفظه كمستند PDF/A (أو PDF/X).
+- [إنشاء مستند PDF](/pdf/java/create-document/) - إنشاء مستند PDF جديد برمجيًا في Java.
+- [فتح مستند PDF](/pdf/java/open-pdf-document/) - افتح ملفات PDF من مسار، أو من دفق، أو باستخدام كلمة مرور.
+- [حفظ مستند PDF](/pdf/java/save-pdf-document/) - احفظ المستند في ملف، أو في دفق، أو كمعيار PDF.
+- [دمج PDF](/pdf/java/merge-pdf/) - دمج ملفات PDF متعددة في مستند إخراج واحد.
+- [تقسيم ملف PDF](/pdf/java/split-pdf/) - تقسيم صفحات PDF إلى ملفات PDF منفصلة ذات صفحة واحدة.
+- [تشفير وفك تشفير ملف PDF](/pdf/java/protect-pdf-file/) - قم بتطبيق كلمات المرور والأذونات وفك التشفير على ملفات PDF.

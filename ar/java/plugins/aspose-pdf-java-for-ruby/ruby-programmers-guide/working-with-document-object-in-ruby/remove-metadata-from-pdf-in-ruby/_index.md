@@ -1,47 +1,48 @@
 ---
-title: إزالة البيانات الوصفية من PDF في Ruby
+title: إزالة البيانات الوصفية من PDF في روبي
+linktitle: إزالة البيانات الوصفية من PDF في روبي
 type: docs
 weight: 90
-url: /ar/java/remove-metadata-from-pdf-in-ruby/
-lastmod: "2021-06-05"
+url: /java/remove-metadata-from-pdf-in-ruby/
+description: قم بمسح البيانات التعريفية الحساسة أو غير المرغوب فيها من ملفات PDF برمجيًا باستخدام Aspose.PDF لـ Ruby.
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - إزالة البيانات الوصفية
 
-لإزالة البيانات الوصفية من مستند Pdf باستخدام **Aspose.PDF Java for Ruby**، قم ببساطة باستدعاء وحدة **RemoveMetadata**.
+لإزالة البيانات الوصفية من مستند Pdf باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **RemoveMetadata**.
 
 كود روبي
 
 ```java
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# افتح مستند pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
 if doc.getMetadata().contains("pdfaid:part")
 
-    doc.getMetadata().removeItem("pdfaid:part")
+В В В  doc.getMetadata().removeItem("pdfaid:part")
 
-end    
+endВ В  В
 
 if doc.getMetadata().contains("dc:format")
 
-    doc.getMetadata().removeItem("dc:format")
+В В В  doc.getMetadata().removeItem("dc:format")
 
 end
 
-# احفظ المستند المحدث بالمعلومات الجديدة
+# save update document with new information
 
 doc.save(data_dir + "Remove_Metadata.pdf")
 
-puts "تمت إزالة البيانات الوصفية بنجاح، يرجى التحقق من ملف الإخراج."
+puts "Removed metadata successfully, please check output file."
 ```
 
-## تنزيل الكود القابل للتشغيل
+## تحميل كود التشغيل
 
-قم بتنزيل **إزالة البيانات الوصفية (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تنزيلВ **إزالة البيانات الوصفية (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/removemetadata.rb)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/removemetadata.rb)

@@ -1,19 +1,20 @@
 ---
-title: دمج ملفات PDF في Jython
+title: تسلسل ملفات PDF في Jython
+linktitle: تسلسل ملفات PDF في Jython
 type: docs
 weight: 10
-url: /ar/java/concatenate-pdf-files-in-jython/
-lastmod: "2021-06-05"
+url: /java/concatenate-pdf-files-in-jython/
+description: تعرف على كيفية ربط ملفات PDF متعددة في مستند واحد باستخدام Jython وAspose.PDF لمعالجة الملفات بشكل مبسط.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - تسلسل ملفات Pdf
 
-## Aspose.PDF - دمج ملفات Pdf
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java لـ Jython**. هنا يمكنك رؤية الكود النموذجي.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-خطأ في عرض الماكرو 'code' : قيمة غير صالحة محددة للمعلمة lang
+## تحميل كود التشغيل
 
-## تنزيل الكود الجاري
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل الكود الجاري من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

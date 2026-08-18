@@ -1,68 +1,68 @@
 ---
-title: إضافة جدول محتويات إلى ملف PDF موجود في بايثون
+title: أضف جدول المحتويات إلى ملف PDF الموجود في بايثون
+linktitle: أضف جدول المحتويات إلى ملف PDF الموجود في بايثون
 type: docs
 weight: 20
-url: /ar/java/add-toc-to-existing-pdf-in-python/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-python/
+description: تعرف على كيفية إضافة جدول محتويات (TOC) إلى مستند PDF موجود في Python باستخدام Aspose.PDF لسهولة التنقل.
+lastmod: "2026-06-09"
 ---
-
-لإضافة جدول محتويات في مستند PDF باستخدام **Aspose.PDF Java for Python**، قم ببساطة باستدعاء فئة **AddToc**.
+لإضافة جدول محتويات إلى مستند Pdf باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء فئة **AddToc**.
 
 ```python
 
-# افتح مستند PDF.
+# Open a pdf document.
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# الوصول إلى الصفحة الأولى من ملف PDF
+# Get access to first page of PDF file
 toc_page = doc.getPages().insert(1)
 
-# إنشاء كائن لتمثيل معلومات جدول المحتويات
+# Create object to represent TOC information
 toc_info = self.TocInfo()
-title = self.TextFragment("جدول المحتويات")
+title = self.TextFragment("Table Of Contents")
 title.getTextState().setFontSize(20)
 
-# تعيين العنوان لجدول المحتويات
+# Set the title for TOC
 toc_info.setTitle(title)
 toc_page.setTocInfo(toc_info)
 
-# إنشاء كائنات السلسلة التي ستستخدم كعناصر جدول المحتويات
-titles = ["الصفحة الأولى", "الصفحة الثانية"]
+# Create string objects which will be used as TOC elements
+titles = ["First page", "Second page"]
 
 i = 0;
 while (i < 2):
 
-# إنشاء كائن عنوان
+# Create Heading object
 heading2 = self.Heading(1);
 
 segment2 = self.TextSegment
 heading2.setTocPage(toc_page)
 heading2.getSegments().add(segment2)
 
-# تحديد الصفحة الوجهة لكائن العنوان
+# Specify the destination page for heading object
 heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-# الصفحة الوجهة
+# Destination page
 heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-# إحداثيات الوجهة
+# Destination coordinate
 segment2.setText(titles[i])
 
-# إضافة العنوان إلى الصفحة التي تحتوي على جدول المحتويات
+# Add heading to page containing TOC
 toc_page.getParagraphs().add(heading2)
 
 i +=1;
 
-# حفظ مستند PDF
+# Save PDF Document
 doc.save(self.dataDir + "TOC.pdf")
 
-print "تمت إضافة جدول المحتويات بنجاح، يرجى التحقق من ملف الإخراج."
+print "Added TOC Successfully, please check the output file."
 ```
 
+** تنزيل كود التشغيل **
 
-**تحميل الكود الجاري**
+تنزيلВ **إضافة TOC (Aspose.PDF)**В fromВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **إضافة جدول المحتويات (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)

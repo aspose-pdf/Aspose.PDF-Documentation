@@ -1,74 +1,74 @@
 ---
-title: إضافة جدول محتويات إلى PDF موجود في PHP
+title: أضف جدول المحتويات إلى ملف PDF الموجود في PHP
+linktitle: أضف جدول المحتويات إلى ملف PDF الموجود في PHP
 type: docs
 weight: 20
-url: /ar/java/add-toc-to-existing-pdf-in-php/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-php/
+description: اكتشف كيفية إضافة جدول محتويات (TOC) إلى مستند PDF موجود في PHP باستخدام Aspose.PDF لتحسين التنقل.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - إضافة جدول المحتويات
 
-## Aspose.PDF - إضافة جدول محتويات
-
-لإضافة جدول محتويات في مستند Pdf باستخدام **Aspose.PDF Java for PHP**، ببساطة استدعي فئة **AddToc**.
+لإضافة جدول محتويات إلى مستند Pdf باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء فئة **AddToc**.
 
 كود PHP
 
 ```php
 
-# فتح مستند pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# الوصول إلى الصفحة الأولى من ملف PDF
+# Get access to first page of PDF file
 $toc_page = $doc->getPages()->insert(1);
 
-# إنشاء كائن لتمثيل معلومات جدول المحتويات
+# Create object to represent TOC information
 $toc_info = new TocInfo();
-$title = new TextFragment("جدول المحتويات");
+$title = new TextFragment("Table Of Contents");
 $title->getTextState()->setFontSize(20);
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# تعيين العنوان لجدول المحتويات
+# Set the title for TOC
 $toc_info->setTitle($title);
 $toc_page->setTocInfo($toc_info);
 
-# إنشاء كائنات سلسلة والتي ستُستخدم كعناصر جدول المحتويات
-$titles = array("الصفحة الأولى", "الصفحة الثانية");
+# Create string objects which will be used as TOC elements
+$titles = array("First page", "Second page");
 
 $i = 0;
 while ($i < 2){
 
-    # إنشاء كائن العنوان
+    # Create Heading object
     $heading2 = new Heading(1);
 
     $segment2 = new TextSegment();
     $heading2->setTocPage($toc_page);
     $heading2->getSegments()->add($segment2);
 
-    # تحديد صفحة الوجهة لكائن العنوان
+    # Specify the destination page for heading object
     $heading2->setDestinationPage($doc->getPages()->get_Item($i + 2));
 
-    # صفحة الوجهة
+    # Destination page
     $heading2->setTop($doc->getPages()->get_Item($i + 2)->getRect()->getHeight());
 
-    # الإحداثيات الوجهة
+    # Destination coordinate
     $segment2->setText($titles[$i]);
 
-    # إضافة العنوان إلى الصفحة التي تحتوي على جدول المحتويات
+    # Add heading to page containing TOC
     $toc_page->getParagraphs()->add($heading2);
 
     $i +=1;
 
 }
 
-# حفظ مستند PDF
+# Save PDF Document
 $doc->save($dataDir . "TOC.pdf");
 
-print "تمت إضافة جدول المحتويات بنجاح، يرجى التحقق من ملف الإخراج.";
+print "Added TOC Successfully, please check the output file.";
 
 ```
 
+** تنزيل كود التشغيل **
 
-**تنزيل الكود الجاري**
+تنزيلВ **إضافة TOC (Aspose.PDF)**В fromВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **إضافة جدول المحتويات (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

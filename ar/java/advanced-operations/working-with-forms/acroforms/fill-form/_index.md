@@ -1,52 +1,44 @@
 ---
-title: ملء AcroForms
-linktitle: ملء AcroForms
+title: ملء AcroForm - ملء نموذج PDF باستخدام جافا
+linktitle: ملء اكروفورم
 type: docs
 weight: 20
-url: /ar/java/fill-form/
-description: يوضح هذا القسم كيفية ملء حقل النموذج في مستند PDF باستخدام Aspose.PDF for Java.
-lastmod: "2021-06-05"
+url: /java/fill-form/
+description: املأ حقول AcroForm في مستند PDF باستخدام Aspose.PDF لـ Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: املأ حقول AcroForm في ملفات PDF باستخدام Java
+Abstract: تشرح هذه المقالة كيفية ملء حقول AcroForm باستخدام Aspose.PDF لـ Java. يقوم المثال بتحميل ملف PDF من خلال واجهة النموذج، ومطابقة أسماء الحقول مع خريطة القيمة، وتحديث الحقول المطابقة، وحفظ المستند المكتمل.
 ---
+يمكن استخدام الواجهة `Form` لأتمتة محتوى الحقل في AcroForm موجود.
 
-تُعتبر مستندات PDF رائعة، وهي بالفعل النوع المفضل للملفات لإنشاء النماذج.
+## املأ حقول AcroForm بقيم جديدة
 
-يسمح لك Aspose.PDF for Java بملء حقل النموذج، والحصول على الحقل من مجموعة النموذج الخاصة بكائن المستند.
-
-لنلقي نظرة على المثال التالي لكيفية حل هذه المهمة:
+1. افتح مستند نموذج PDF بالواجهة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. قم بالتكرار عبر حقول النموذج وقم بتحديث الإدخالات المطابقة بالقيم المقدمة.
+1. احفظ مستند PDF المحدث.
 
 ```java
-public class ExamplesFillForm {
+public static void fillForm(Path inputFile, Path outputFile) {
+    Map<String, String> newFieldValues = Map.of(
+            "First Name", "Alexander_New",
+            "Last Name", "Greenfield_New",
+            "City", "Yellowtown_New",
+            "Country", "Redland_New");
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void FillFormFieldPDFDocument() {
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // إنشاء حقل
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
-        textBoxField.setPartialName("textbox1");
-        textBoxField.setValue("Text Box");
-
-        // TextBoxField.Border = new Border(
-        Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        textBoxField.setBorder(border);
-
-        textBoxField.setColor(Color.getGreen());
-
-        // إضافة الحقل إلى المستند
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // حفظ ملف PDF المعدل
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+    Form form = new Form(inputFile.toString());
+    try {
+        for (String fieldName : form.getFieldNames()) {
+            if (newFieldValues.containsKey(fieldName)) {
+                form.fillField(fieldName, newFieldValues.get(fieldName));
+            }
+        }
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
     }
-
-    
 }
 ```

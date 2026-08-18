@@ -1,19 +1,20 @@
 ---
 title: تحديث أبعاد الصفحة في Jython
+linktitle: تحديث أبعاد الصفحة في Jython
 type: docs
 weight: 90
-url: /ar/java/update-page-dimensions-in-jython/
-lastmod: "2021-06-05"
+url: /java/update-page-dimensions-in-jython/
+description: فهم كيفية تعديل أبعاد الصفحات داخل مستند PDF في Jython باستخدام Aspose.PDF.
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - تحديث أبعاد الصفحة
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك مشاهدة كود العينة.
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-خطأ في عرض الماكرو 'code' : قيمة غير صالحة محددة للمعامل lang
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-## تحميل الكود الجاري
+## تحميل كود التشغيل
 
-قم بتحميل الكود الجاري من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

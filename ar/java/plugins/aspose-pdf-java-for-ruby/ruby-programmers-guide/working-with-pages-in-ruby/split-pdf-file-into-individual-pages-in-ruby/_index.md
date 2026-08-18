@@ -1,28 +1,28 @@
 ---
 title: تقسيم ملف PDF إلى صفحات فردية في روبي
+linktitle: تقسيم ملف PDF إلى صفحات فردية في روبي
 type: docs
 weight: 80
-url: /ar/java/split-pdf-file-into-individual-pages-in-ruby/
-lastmod: "2021-06-05"
+url: /java/split-pdf-file-into-individual-pages-in-ruby/
+description: افهم كيفية تقسيم ملف PDF إلى صفحات فردية باستخدام Ruby وAspose.PDF، مما يسهل إدارة المحتوى واستخراجه.
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - تقسيم الصفحات
 
-لتقسيم مستند PDF إلى صفحات فردية باستخدام **Aspose.PDF Java for Ruby**، قم ببساطة باستدعاء وحدة **SplitAllPages**.
+لتقسيم مستند PDF إلى صفحات فردية باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **SplitAllPages**.
 
 كود روبي
 
 ```java
-
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# افتح المستند الهدف
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# حلقة عبر جميع الصفحات
+# loop through all the pages
 
 pdf_page = 1
 
@@ -30,15 +30,15 @@ pdf_page = 1
 
 while pdf_page <= pdf.getPages().size()
 
-# إنشاء كائن مستند جديد
+# create a new Document object
 
 new_document = Rjb::import('com.aspose.pdf.Document').new
 
-# الحصول على الصفحة في فهرس معين من مجموعة الصفحات
+# get the page at particular index of Page Collection
 
 new_document.getPages().add(pdf.getPages().get_Item(pdf_page))
 
-# حفظ ملف PDF الذي تم إنشاؤه حديثًا
+# save the newly generated PDF file
 
 new_document.save(data_dir + "page_#{pdf_page}.pdf")
 
@@ -46,12 +46,11 @@ pdf_page +=1
 
 end
 
-puts "تم إكمال عملية التقسيم بنجاح!"
+puts "Split process completed successfully!"
 ```
 
+## تحميل كود التشغيل
 
-## تنزيل الكود الجاري
+قم بتنزيل **تقسيم الصفحات (Aspose.PDF)**В من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **تقسيم الصفحات (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/splitallpages.rb)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/splitallpages.rb)

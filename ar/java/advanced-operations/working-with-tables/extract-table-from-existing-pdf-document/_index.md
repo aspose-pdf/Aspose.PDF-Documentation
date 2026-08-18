@@ -1,56 +1,52 @@
 ---
-title: استخراج جدول من مستند PDF موجود
-linktitle: استخراج جدول
+title: استخراج الجداول من PDF في جافا
+linktitle: استخراج الجدول
 type: docs
-weight: 25
-url: /ar/java/extract-table-from-existing-pdf-document/
-description: تجعل Aspose.PDF for Java من الممكن تنفيذ عمليات مختلفة مع الجداول الموجودة في مستند PDF الخاص بك. يمكنك إضافة واستخراج جدول في مستند PDF موجود، وعرض الجدول في صفحة جديدة وغيرها.
-lastmod: "2021-06-05"
+weight: 20
+url: /java/extracting-table/
+description: تعرف على كيفية استخراج بيانات الجدول من مستندات PDF الموجودة في Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: استخراج بيانات الجدول من ملفات PDF باستخدام Java
+Abstract: تشرح هذه المقالة كيفية استخراج الجداول من مستندات PDF باستخدام Aspose.PDF لـ Java. ويوضح كيفية استخدام TableAbsorter لاكتشاف الجداول حسب الصفحة، وتكرار الصفوف والخلايا، وجمع نص الخلية للمعالجة النهائية.
 ---
+استخدم `TableAbsorber` عندما تحتاج إلى اكتشاف بنيات الجدول في ملف PDF موجود وقراءة محتواها.
 
-## استخراج جدول من PDF
+## استخراج النص من الجداول المكتشفة
+
+استخدم هذا المثال عندما تحتاج إلى تحديد موقع الجداول في كل صفحة وجمع نص الخلية الخاص بها.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بزيارة كل صفحة باستخدام [TableAbsorter](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. قم بالتكرار عبر الجداول والصفوف والخلايا الممتصة، ثم قم بإخراج النص المستخرج.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-import jdk.jshell.spi.ExecutionControl.NotImplementedException;
-
-import java.io.*;
-import java.util.*;
-
-public class ExampleExtractTable {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void Extract_Table()
-    {
-        // تحميل مستند PDF المصدر
-        Document pdfDocument = new Document(_dataDir + "the_worlds_cities_in_2018_data_booklet 7.pdf");
-        for(Page page : pdfDocument.getPages())
-        {
+public static void extract(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
             TableAbsorber absorber = new TableAbsorber();
             absorber.visit(page);
-            for (AbsorbedTable table : absorber.getTableList())
-            {
-                for (AbsorbedRow row : table.getRowList())
-                {
-                    for (AbsorbedCell cell : row.getCellList())
-                    {
-                        TextFragmentCollection textFragmentCollection = cell.getTextFragments();
-                        for (TextFragment fragment : textFragmentCollection)
-                        {
-                            String txt = "";
-                            for (TextSegment seg : fragment.getSegments())
-                                txt += seg.getText();
-                            System.out.println(txt);
+            for (AbsorbedTable table : absorber.getTableList()) {
+                System.out.println("Table ----");
+                for (AbsorbedRow row : table.getRowList()) {
+                    System.out.println("Row:");
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            for (TextSegment segment : fragment.getSegments()) {
+                                cellText.append(segment.getText());
+                            }
                         }
+                        rowText.append(" | ").append(cellText);
                     }
+                    System.out.println(rowText);
                 }
             }
         }
     }
+}
 ```

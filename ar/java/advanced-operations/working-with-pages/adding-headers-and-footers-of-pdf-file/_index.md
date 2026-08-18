@@ -1,216 +1,218 @@
 ---
-title: إضافة رأس وتذييل إلى ملف PDF
-linktitle: إضافة رأس وتذييل
+title: إضافة رؤوس وتذييلات PDF في Java
+linktitle: إضافة رأس وتذييل إلى ملف PDF
 type: docs
-weight: 70
-url: /ar/java/add-headers-and-footers-of-pdf-file/
-description: يسمح لك Aspose.PDF for Java بإضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
-lastmod: "2021-06-05"
+weight: 50
+url: /java/add-headers-and-footers-of-pdf-file/
+description: تعرف على كيفية إضافة الرؤوس والتذييلات إلى ملفات PDF في Java باستخدام النص والصور والمحتوى المنظم.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: أضف الرؤوس والتذييلات إلى ملفات PDF باستخدام Java
+Abstract: توضح هذه المقالة كيفية إضافة الرؤوس والتذييلات إلى مستندات PDF باستخدام Aspose.PDF لـ Java. ويغطي النص وترقيم الصفحات وHTML والصورة والجدول ومحتوى الرأس والتذييل المستند إلى LaTeX.
 ---
+يتيح لك Aspose.PDF for Java تعيين كائنات `HeaderFooter` لكل صفحة وتعبئتها بأنواع محتوى مختلفة.
 
-تُستخدم الطوابع في ملفات PDF بشكل شائع في العقود والتقارير والمواد المحظورة لإثبات أن الوثائق قد تمت مراجعتها وتم وضع علامة عليها على أنها "مقروءة" أو "مؤهلة" أو "سرية"، إلخ. ستوضح لك هذه المقالة كيفية إضافة طوابع صور وطوابع نصية إلى مستندات PDF باستخدام **Aspose.PDF for Java**.
+## إضافة رؤوس وتذييلات النص
 
-إذا قمت بقراءة الشيفرات البرمجية أعلاه سطرًا بسطر، يجب أن تجد أن البنية المنطقية للشيفرة سهلة الفهم.
+استخدم هذا المثال عندما تحتاج إلى محتوى نصي بسيط في أعلى وأسفل كل صفحة.
 
-## إضافة نص في رأس ملف PDF
-
-يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) لإضافة نص في رأس ملف PDF.
- توفر فئة TextStamp الخصائص اللازمة لإنشاء ختم قائم على النص مثل حجم الخط ونمط الخط ولون الخط وما إلى ذلك. لإضافة نص في الرأس، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp للصفحة لإضافة النص في رأس ملف PDF.
-
-تحتاج إلى ضبط خاصية TopMargin بطريقة تعدل النص في منطقة الرأس لملف PDF الخاص بك. تحتاج أيضًا إلى ضبط HorizontalAlignment على Center وVerticalAlignment على Top.
-
-يوضح لك جزء الشيفرة التالي كيفية إضافة نص في رأس ملف PDF باستخدام Java.
+1. قم بإنشاء كائنات [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) وأضف أجزاء نصية.
+1. تكوين الهوامش للرأس والتذييل.
+1. قم بتطبيقها على كل صفحة من ملف PDF المصدر واحفظ النتيجة.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Demo header"));
 
-import com.aspose.pdf.*;
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Demo footer"));
 
-public class ExampleAddPDFHeaderandFooter {
-    // المسار إلى دليل المستندات.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-    public static void AddingTextInHeaderOfPDFFile() {
-
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
-
-        // إنشاء الرأس
-        TextStamp textStamp = new TextStamp("Header Text");
-
-        // تعيين خصائص الختم
-        textStamp.setTopMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Top);
-
-        // إضافة الرأس على جميع الصفحات
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        // حفظ المستند المحدث
-        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## إضافة نص في تذييل ملف PDF
-
-يمكنك استخدام فئة TextStamp لإضافة نص في تذييل ملف PDF. توفر فئة TextStamp الخصائص اللازمة لإنشاء ختم نصي مثل حجم الخط، نمط الخط، ولون الخط إلخ. لإضافة نص في التذييل، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp للصفحة لإضافة النص في تذييل ملف PDF.
-
-يوضح لك جزء الشيفرة التالي كيفية إضافة نص في تذييل ملف PDF باستخدام Java.
-
-```java
-    public static void AddingTextInFooterOfPDFFile() {
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
-        // إنشاء تذييل
-        TextStamp textStamp = new TextStamp("Footer Text");
-        // ضبط خصائص الختم
-        textStamp.setBottomMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // إضافة التذييل على جميع الصفحات
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
-        }
-        _dataDir = _dataDir + "TextinFooter_out.pdf";
-        // حفظ ملف PDF المحدث
-        pdfDocument.save(_dataDir);
-    }
-```
-
-
-## إضافة صورة في رأس ملف PDF
-
-يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) لإضافة صورة في رأس ملف PDF. توفر فئة الختم الصوري الخصائص الضرورية لإنشاء ختم يعتمد على الصورة مثل حجم الخط، نمط الخط، ولون الخط الخ. من أجل إضافة صورة في الرأس، تحتاج إلى إنشاء كائن مستند وكائن ختم صورة باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) الخاصة بالصفحة لإضافة الصورة في رأس ملف PDF.
-
-```java
-public static void AddingImageInHeaderOfPDFFile() {
-
-// افتح المستند
-Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
-
-// إنشاء الرأس
-ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
-
-// ضبط خصائص الختم
-imageStamp.setTopMargin(10);
-imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-imageStamp.setVerticalAlignment(VerticalAlignment.Top);
-// إضافة رأس في جميع الصفحات
-for (Page page : pdfDocument.getPages()) {
-page.addStamp(imageStamp);
-}
-
-_dataDir = _dataDir + "ImageInHeader_out.pdf";
-
-// حفظ ملف PDF المحدث
-pdfDocument.save(_dataDir);
 }
 ```
 
+## أضف الرؤوس والتذييلات مع ترقيم الصفحات
 
-يظهر لك جزء الشيفرة التالي كيفية إضافة صورة في رأس ملف PDF باستخدام Java.
+استخدم هذا المثال عندما يُظهر الرأس أو التذييل رقم الصفحة الحالية وإجمالي عدد الصفحات.
 
-## إضافة صورة في تذييل ملف PDF
-
-يمكنك استخدام فئة Image Stamp لإضافة صورة في تذييل ملف PDF. توفر فئة Image Stamp الخصائص اللازمة لإنشاء ختم قائم على الصورة مثل حجم الخط، نمط الخط، ولون الخط وما إلى ذلك. من أجل إضافة صورة في التذييل، تحتاج إلى إنشاء كائن Document وكائن Image Stamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp للصفحة لإضافة الصورة في تذييل ملف PDF.
-
-{{% alert color="primary" %}}
-
-تحتاج إلى ضبط خاصية BottomMargin بطريقة تجعلها تعدل الصورة في منطقة تذييل ملف PDF الخاص بك. تحتاج أيضًا إلى ضبط [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) على `Center` و [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) على `Bottom`.
-
-{{% /alert %}}
-
-يظهر لك جزء الشيفرة التالي كيفية إضافة صورة في تذييل ملف PDF باستخدام Java.
+1. قم بإنشاء كائنات [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) باستخدام العناصر النائبة لترقيم الصفحات.
+1. قم بتكوين الهوامش لكلا الكائنين.
+1. قم بتطبيقها على كل صفحة واحفظ ملف PDF المحدث.
 
 ```java
-    public static void AddingImageInFooterOfPDFFile() {
+public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Page $p from $P"));
 
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
 
-        // إنشاء تذييل الصفحة
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // تعيين خصائص الختم
-        imageStamp.setBottomMargin(10);
-        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // إضافة تذييل الصفحة على جميع الصفحات
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(imageStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        _dataDir = _dataDir + "ImageInFooter_out.pdf";
-
-        // حفظ ملف PDF المحدث
-        pdfDocument.save(_dataDir);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## إضافة رؤوس مختلفة في ملف PDF واحد
+## أضف رؤوس وتذييلات HTML
 
-نعلم أنه يمكننا إضافة TextStamp في قسم الرأس/التذييل في المستند باستخدام خصائص TopMargin أو Bottom Margin، ولكن أحيانًا قد يكون لدينا متطلبات لإضافة رؤوس/تذييلات متعددة في مستند PDF واحد.
- **Aspose.PDF for Java** يوضح كيفية القيام بذلك.
+استخدم هذا المثال عندما يجب أن يتضمن محتوى الرأس والتذييل تنسيق HTML المضمن.
 
-من أجل تحقيق هذا المطلب، سنقوم بإنشاء كائنات [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) فردية (عدد الكائنات يعتمد على عدد الرؤوس/التذييلات المطلوبة) وسنضيفها إلى مستند PDF. يمكننا أيضًا تحديد معلومات تنسيق مختلفة لكائن الطابع الفردي. في المثال التالي، قمنا بإنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) وثلاثة كائنات [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) ثم استخدمنا طريقة [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) الخاصة بالصفحة لإضافة النص في القسم العلوي من مستند PDF. يوضح لك المقتطف البرمجي التالي كيفية إضافة صورة في تذييل ملف PDF باستخدام Aspose.PDF for Java.
+1. قم بإنشاء كائنات [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) وأضف محتوى [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/).
+1. تكوين الهوامش للموضع.
+1. قم بتعيين الرأس والتذييل لكل صفحة واحفظ المستند.
 
 ```java
-public static void AddingDifferentHeadersInOnePDFFile() {
+public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
 
-        // افتح المستند المصدر
-        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
 
-        // إنشاء ثلاثة طوابع
-        TextStamp stamp1 = new TextStamp("Header 1");
-        TextStamp stamp2 = new TextStamp("Header 2");
-        TextStamp stamp3 = new TextStamp("Header 3");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // تعيين محاذاة الطابع (وضع الطابع في الجزء العلوي من الصفحة، محاذاة أفقية في الوسط)
-        stamp1.setVerticalAlignment (VerticalAlignment.Top);
-        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
-        // تحديد نمط الخط كـ Bold
-        stamp1.getTextState().setFontStyle(FontStyles.Bold);
-        // تعيين معلومات لون الخط الأحمر
-        stamp1.getTextState().setForegroundColor(Color.getRed());
-        // تحديد حجم الخط كـ 14
-        stamp1.getTextState().setFontSize(14);
-
-        // الآن نحتاج إلى تعيين المحاذاة الرأسية للكائن الثاني كـ Top
-        stamp2.setVerticalAlignment(VerticalAlignment.Top);
-        // تعيين معلومات المحاذاة الأفقية للطابع كـ Center
-        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
-        // تعيين عامل التكبير لكائن الطابع
-        stamp2.setZoom (10);
-
-        // تعيين تنسيق الكائن الثالث
-        // تحديد معلومات المحاذاة الرأسية للطابع كـ TOP
-        stamp3.setVerticalAlignment(VerticalAlignment.Top);
-        // تعيين معلومات المحاذاة الأفقية للطابع كـ Center
-        stamp3.setHorizontalAlignment (HorizontalAlignment.Center);
-        // تعيين زاوية الدوران للطابع
-        stamp3.setRotateAngle(35);
-        // تعيين اللون الوردي كلون خلفية للطابع
-        stamp3.getTextState().setBackgroundColor (Color.getPink());
-        
-        // تغيير معلومات نوع الخط للطابع إلى Verdana
-        stamp3.getTextState().setFont (FontRepository.findFont("Verdana"));
-        // الطابع الأول يُضاف على الصفحة الأولى؛
-        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
-        // الطابع الثاني يُضاف على الصفحة الثانية؛
-        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
-        // الطابع الثالث يُضاف على الصفحة الثالثة.
-        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
-
-        _dataDir = _dataDir + "multiheader_out.pdf";
-
-        // حفظ ملف PDF المحدث
-        pdfDocument.save(_dataDir);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
     }
+}
+```
 
+## إضافة رؤوس وتذييلات الصور
+
+استخدم هذا المثال عندما يجب أن يعرض الرأس والتذييل صورة في كل صفحة.
+
+1. قم بإنشاء كائنات [صورة](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) وأضفها إلى حاويات الرأس والتذييل.
+1. تكوين الهوامش وتعيين الحاويات لكل صفحة.
+1. احفظ ملف PDF المحدث.
+
+```java
+public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
+    Image headerImage = new Image();
+    headerImage.setFile(imageFile.toString());
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(headerImage);
+
+    Image footerImage = new Image();
+    footerImage.setFile(imageFile.toString());
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(footerImage);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            MarginInfo margin = new MarginInfo();
+            margin.setLeft(50);
+            header.setMargin(margin);
+            footer.setMargin(margin);
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## أضف الرؤوس والتذييلات المستندة إلى الجدول
+
+استخدم هذا المثال عندما يجب أن يستخدم محتوى الرأس والتذييل تخطيط الجدول وتصميم النص.
+
+1. قم بإنشاء أنماط النص وكائنات الجدول المطلوبة.
+1. أضف الجداول إلى حاويات [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/).
+1. قم بتطبيق الرأس والتذييل على كل صفحة واحفظ المستند.
+
+```java
+public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
+    TextState textStateHeader = new TextState();
+    textStateHeader.setFont(FontRepository.findFont("Arial"));
+    textStateHeader.setFontSize(12);
+    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
+
+    TextState textStateFooter = new TextState();
+    textStateFooter.setFont(FontRepository.findFont("Arial"));
+    textStateFooter.setFontSize(12);
+    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
+
+    HeaderFooter header = new HeaderFooter();
+    HeaderFooter footer = new HeaderFooter();
+
+    Table tableHeader = new Table();
+    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
+    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
+
+    Table table = new Table();
+    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
+    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
+
+    header.getParagraphs().add(tableHeader);
+    footer.getParagraphs().add(table);
+    footer.getMargin().setLeft(150);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## أضف رؤوس وتذييلات LaTeX
+
+استخدم هذا المثال عندما يجب أن يعرض الرأس والتذييل محتوى TeX أو LaTeX.
+
+1. افتح ملف PDF المصدر وحدد إجمالي عدد الصفحات.
+1. قم بإنشاء محتوى [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) لرأس وتذييل كل صفحة.
+1. قم بتعيين المحتوى وحفظ المستند.
+
+```java
+public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int pageCount = document.getPages().size();
+        for (int i = 1; i <= pageCount; i++) {
+            HeaderFooter header = new HeaderFooter();
+            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
+
+            HeaderFooter footer = new HeaderFooter();
+            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
+
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
 }
 ```

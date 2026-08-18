@@ -1,14 +1,23 @@
 ---
-title: PdfFileInfo Class
+title: فئة معلومات ملف PDF
+linktitle: فئة معلومات ملف PDF
 type: docs
-weight: 90
-url: /ar/java/pdffileinfo-class/
-description: يوضح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام فئة PdfFileInfo.
-lastmod: "2021-06-05"
+weight: 110
+url: /java/pdffileinfo-class/
+description: تعرف على كيفية استخدام واجهة PdfFileInfo في Java لفحص بيانات تعريف PDF وخصائص المستند والامتيازات وتفاصيل الإصدار ومعلومات الصفحة.
+lastmod: "2026-06-09"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: افحص البيانات التعريفية لملف PDF وخصائصه ومعلومات الصفحة في Java باستخدام PdfFileInfo
+Abstract: يشرح هذا القسم كيفية استخدام واجهة PdfFileInfo في Aspose.PDF لـ Java لفحص تفاصيل ملف PDF برمجيًا. تغطي أمثلة Java الحالية البحث عن إصدار PDF، وامتيازات المستند، وأبعاد الصفحة والإزاحات، وقراءة البيانات التعريفية للمستند أو تحديثها.
 ---
+توضح فئة Java `PdfFileInfoExamples` سير عمل الفحص الرئيسي وبيانات التعريف المتاحة من خلال واجهة برمجة التطبيقات للواجهات.
 
-- [الحصول على معلومات ملف PDF - الواجهات](/pdf/ar/java/get-pdf-information/)
-- [تعيين معلومات ملف PDF - الواجهات](/pdf/ar/java/set-pdf-information/)
+استخدم هذا القسم لتتعلم كيفية:
+
+- قراءة نسخة PDF وامتيازات الوثيقة
+- فحص عرض الصفحة وارتفاعها وتدويرها وإزاحاتها
+- الحصول على بيانات تعريف المستند وتعيينها ومسحها وحفظها باستخدام XMP

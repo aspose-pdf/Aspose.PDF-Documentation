@@ -1,54 +1,54 @@
 ---
-title: تعيين انتهاء صلاحية PDF في روبي
+title: ضبط انتهاء صلاحية PDF في روبي
+linktitle: ضبط انتهاء صلاحية PDF في روبي
 type: docs
 weight: 110
-url: /ar/java/set-pdf-expiration-in-ruby/
-lastmod: "2021-06-05"
+url: /java/set-pdf-expiration-in-ruby/
+description: قم بتنفيذ تواريخ انتهاء الصلاحية في ملفات PDF باستخدام Aspose.PDF لـ Ruby للمستندات الحساسة للوقت.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - ضبط انتهاء صلاحية PDF
 
-## Aspose.PDF - تعيين انتهاء صلاحية PDF
-
-لتعيين انتهاء صلاحية مستند PDF باستخدام **Aspose.PDF Java for Ruby**، ببساطة قم باستدعاء وحدة **SetExpiration**.
+لتعيين انتهاء صلاحية مستند Pdf باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **SetExpiration**.
 
 كود روبي
 
 ```java
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# افتح مستند pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
 javascript = Rjb::import('com.aspose.pdf.JavascriptAction').new(
 
-    "var year=2014;
+В В В  "var year=2014;
 
-    var month=4;
+В В В  var month=4;
 
-    today = new Date();
+В В В  today = new Date();
 
-    today = new Date(today.getFullYear(), today.getMonth());
+В В В  today = new Date(today.getFullYear(), today.getMonth());
 
-    expiry = new Date(year, month);
+В В В  expiry = new Date(year, month);
 
-    if (today.getTime() > expiry.getTime())
+В В В  if (today.getTime() > expiry.getTime())
 
-    app.alert('The file is expired. You need a new one.');")
+В В В  app.alert('The file is expired. You need a new one.');")
 
 doc.setOpenAction(javascript)
 
-# حفظ المستند المحدث بالمعلومات الجديدة
+# save update document with new information
 
 doc.save(data_dir + "set_expiration.pdf")
 
-puts "تحديث معلومات المستند، يرجى التحقق من ملف الإخراج."
+puts "Update document information, please check output file."
 ```
 
+## تحميل كود التشغيل
 
-## تحميل الكود التشغيلي
+تنزيلВ **تعيين انتهاء صلاحية ملف PDF (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **تعيين انتهاء صلاحية PDF (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)

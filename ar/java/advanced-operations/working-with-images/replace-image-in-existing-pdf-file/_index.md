@@ -1,44 +1,55 @@
 ---
-title: استبدال الصورة في ملف PDF موجود
+title: استبدال الصورة في ملف PDF الموجود باستخدام Java
 linktitle: استبدال الصورة
 type: docs
 weight: 70
-url: /ar/java/replace-image-in-existing-pdf-file/
-description: يصف هذا القسم كيفية استبدال الصورة في ملف PDF موجود باستخدام مكتبة Java.
-lastmod: "2021-06-05"
+url: /java/replace-image-in-existing-pdf-file/
+description: تعرف على كيفية استبدال الصور المضمنة في ملفات PDF الموجودة في Java.
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: استبدل الصور الموجودة في ملفات PDF الموجودة بـ Java
+Abstract: توضح هذه المقالة كيفية استبدال الصور في مستندات PDF باستخدام Aspose.PDF لـ Java. وهو يغطي استبدال الصورة بفهرس الموارد الخاص بها واستبدال أول موضع صورة مطابق تم العثور عليه باستخدام ImagePlacementAbsorter.
 ---
+استخدم إما مجموعة صور الصفحة أو البحث المستند إلى الموضع اعتمادًا على مدى الدقة التي تحتاجها لاستهداف الصورة.
 
-تسمح لك طريقة [Replace](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection#replace-int-java.io.InputStream-) لمجموعة [XImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) باستبدال صورة في ملف PDF موجود.
+## استبدال الصورة بفهرس الموارد
 
-يمكن العثور على مجموعة الصور في مجموعة الموارد لصفحة معينة. لاستبدال صورة:
-
-1. افتح ملف PDF باستخدام كائن Document.
-2. استبدل صورة معينة، ثم احفظ ملف PDF المحدث باستخدام طريقة Save الخاصة بكائن Document.
-
-يوضح لك مقطع الشيفرة التالي كيفية استبدال صورة في ملف PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. الوصول إلى موارد الصورة على الهدف [الصفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. استبدل مصدر الصورة الهدف بملف الصورة الجديد.
+1. احفظ ملف PDF المحدث [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
+public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        document.getPages().get_Item(1).getResources().getImages().replace(1, imageStream);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+## استبدال صورة باستخدام `ImagePlacementAbsorber`
 
-import com.aspose.pdf.Document;
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [ImagePlacementAbsorter](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) وقم بزيارة [الصفحة] المستهدفة (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. احصل على الهدف [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) واستبدله بتدفق الصور الجديد.
+1. احفظ ملف PDF المحدث [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-public class ExampleReplaceImage {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-    public static void Replace() {
-        // فتح المستند
-        Document pdfDocument = new Document("input.pdf");
-        // استبدال صورة معينة
-        try {
-            pdfDocument.getPages().get_Item(1).getResources().getImages().replace(1, new FileInputStream("lovely.jpg"));
-        } catch (FileNotFoundException e) {
-            // TODO معالجة كتلة catch
-            e.printStackTrace();
+```java
+public static void replaceImageWithAbsorber(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+
+        if (absorber.getImagePlacements().size() > 0) {
+            ImagePlacement imagePlacement = absorber.getImagePlacements().get_Item(1);
+            try (InputStream imageStream = Files.newInputStream(imageFile)) {
+                imagePlacement.replace(imageStream);
+            }
         }
-        // حفظ ملف PDF المحدث
-        pdfDocument.save(_dataDir + "output.pdf");
+
+        document.save(outputFile.toString());
     }
 }
 ```

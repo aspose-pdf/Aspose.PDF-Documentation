@@ -1,59 +1,35 @@
 ---
-title: تدوير صفحات PDF برمجيًا
+title: تدوير صفحات PDF في جافا
 linktitle: تدوير صفحات PDF
 type: docs
-weight: 60
-url: /ar/java/rotate-pages/
-description: تغيير اتجاه الصفحة وتناسب محتوى الصفحة مع الاتجاه الجديد للصفحة باستخدام Java.
-lastmod: "2021-06-05"
+weight: 110
+url: /java/rotate-pages/
+description: تعرف على كيفية تدوير صفحات PDF وتغيير اتجاه الصفحة في Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: تدوير صفحات PDF مع جافا
+Abstract: تشرح هذه المقالة كيفية تدوير صفحات PDF باستخدام Aspose.PDF لـ Java. يتكرر المثال عبر كل الصفحات في المستند، ويطبق تدويرًا بمقدار 90 درجة، ويحفظ ملف PDF المحدث.
 ---
+استخدم واجهة برمجة تطبيقات تدوير الصفحة عندما تحتاج إلى تغيير الاتجاه عبر صفحة واحدة أو أكثر.
 
-## تغيير اتجاه الصفحة
+## قم بتدوير كافة الصفحات بمقدار 90 درجة
 
-تصف هذه المقالة كيفية تحديث أو تغيير اتجاه الصفحات في ملف PDF موجود.
+استخدم هذا المثال عندما يجب تدوير كل صفحة في المستند في اتجاه عقارب الساعة.
 
-تحتوي Aspose.PDF for Java على ميزة لتغيير اتجاه الصفحة من العرضي إلى الطولي والعكس صحيح. لتغيير اتجاه الصفحة، قم بتعيين [MediaBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#setMediaBox-com.aspose.pdf.Rectangle-) باستخدام الجزء البرمجي التالي.
-
-يمكنك أيضًا تغيير اتجاه الصفحة عن طريق تعيين زاوية الدوران باستخدام طريقة Rotate().
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بالتكرار عبر كافة كائنات [الصفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وقم بتعيين قيمة التدوير.
+1. احفظ ملف PDF المحدث.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleRotatePDFPages  {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void RotatePages() {
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "sample2.pdf");
-
-        for (Page page : pdfDocument.getPages())
-        {            
-            // Rectangle r = page.getMediaBox();
-            // double newHeight = r.getWidth();
-            // double newWidth = r.getHeight();
-            // double newLLX = r.getLLX();
-            // // يجب علينا تحريك الصفحة لأعلى لتعويض تغيير حجم الصفحة
-            // // (الحافة السفلية للصفحة هي 0,0 وعادة ما يتم وضع المعلومات من
-            // // أعلى الصفحة. لهذا السبب نقوم بتحريك الحافة السفلية لأعلى بفارق بين
-            // // الارتفاع القديم والجديد.
-            // double newLLY = r.getLLY() + (r.getHeight() - newHeight);
-            // page.setMediaBox (new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-            // // أحيانًا نحتاج أيضًا إلى تعيين CropBox (إذا كان محددًا في الملف الأصلي)
-            // page.setCropBox(new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-
-            // تعيين زاوية دوران الصفحة
+public static void rotatePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
             page.setRotate(Rotation.on90);
         }
-
-        _dataDir = _dataDir + "ChangeOrientation_out.pdf";
-        // حفظ الملف الناتج
-        pdfDocument.save(_dataDir);
-    }    
+        document.save(outputFile.toString());
+    }
 }
 ```

@@ -1,49 +1,49 @@
 ---
-title: استخراج النص من جميع صفحات مستند PDF في PHP
+title: استخراج النص من جميع صفحات وثيقة PDF في PHP
+linktitle: استخراج النص من جميع صفحات وثيقة PDF في PHP
 type: docs
 weight: 30
-url: /ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
-lastmod: "2021-06-05"
+url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
+description: اكتشف كيفية استخراج النص من جميع صفحات مستند PDF في PHP باستخدام Aspose.PDF لتحليل النص.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - استخراج النص من كافة الصفحات
 
-## Aspose.PDF - استخراج النص من جميع الصفحات
-
-لاستخراج النص من جميع صفحات مستند PDF باستخدام **Aspose.PDF Java for PHP**، ببساطة قم باستدعاء وحدة **ExtractTextFromAllPages**.
+لاستخراج مستند TextrFrom All Pages Pdf باستخدام **Aspose.PDF Java لـ PHP**، ما عليك سوى استدعاء وحدة **ExtractTextFromAllPages**.
 كود PHP
 
 ```php
 
-# افتح المستند المستهدف
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# إنشاء كائن TextAbsorber لاستخراج النص
+# create TextAbsorber object to extract text
 $text_absorber = new TextAbsorber();
 
-# قبول المستخلص لجميع الصفحات
+# accept the absorber for all the pages
 $pdf->getPages()->accept($text_absorber);
 
-# لاستخراج النص من صفحة معينة من المستند، نحتاج إلى تحديد الصفحة المعينة باستخدام فهرسها ضد طريقة accept(..).
-# قبول المستخلص لصفحة PDF معينة
+# In order to extract text from specific page of document, we need to specify the particular page using its index against accept(..) method.
+# accept the absorber for particular PDF page
 # pdfDocument.getPages().get_Item(1).accept(textAbsorber);
 
-# الحصول على النص المستخرج
+#get the extracted text
 $extracted_text = $text_absorber->getText();
 
-# إنشاء كاتب وفتح الملف
+# create a writer and open the file
 $writer = new FileWriter(new File($dataDir . "extracted_text.out.txt"));
 $writer->write($extracted_text);
-# كتابة سطر من النص إلى الملف
+# write a line of text to the file
 # tw.WriteLine(extractedText);
-# إغلاق التيار
+# close the stream
 $writer->close();
 
-print "تم استخراج النص بنجاح. تحقق من ملف الإخراج." . PHP_EOL;
+print "Text extracted successfully. Check output file." . PHP_EOL;
 
 ```
 
+** تنزيل كود التشغيل **
 
-**تنزيل الشيفرة الجاهزة للتشغيل**
+تنزيلВ **استخراج النص من جميع الصفحات (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **استخراج النص من جميع الصفحات (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)

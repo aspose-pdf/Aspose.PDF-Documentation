@@ -1,12 +1,13 @@
 ---
-title: حذف صفحة معينة من ملف PDF باستخدام لغة بايثون
+title: حذف صفحة معينة من ملف PDF في بايثون
+linktitle: حذف صفحة معينة من ملف PDF في بايثون
 type: docs
 weight: 20
-url: /ar/java/delete-a-particular-page-from-the-pdf-file-in-python/
-lastmod: "2021-06-05"
+url: /java/delete-a-particular-page-from-the-pdf-file-in-python/
+description: تعرف على كيفية إزالة صفحة معينة من مستند PDF في Python باستخدام Aspose.PDF، مما يوفر تحريرًا فعالاً للمستندات.
+lastmod: "2026-06-09"
 ---
-
-لحذف صفحة معينة من مستند PDF باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **DeletePage**.
+لحذف صفحة معينة من مستند PDF باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء فئة **DeletePage**.
 
 ```python
 
@@ -14,18 +15,18 @@ doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# حذف صفحة معينة
+# delete a particular page
 pdf.getPages().delete(2)
 
-# حفظ ملف PDF الجديد
+# save the newly generated PDF file
 doc.save(self.dataDir + "output.pdf")
 
-print "تم حذف الصفحة بنجاح!"
+print "Page deleted successfully!"
 
 ```
 
-**تحميل الكود المشغل**
+** تنزيل كود التشغيل **
 
-قم بتنزيل **Delete Page (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+قم بتنزيل **حذف الصفحة (Aspose.PDF)**В من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/DeletePage/DeletePage.py)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/DeletePage/DeletePage.py)

@@ -1,20 +1,21 @@
 ---
 title: إزالة البيانات الوصفية من PDF في PHP
+linktitle: إزالة البيانات الوصفية من PDF في PHP
 type: docs
 weight: 70
-url: /ar/java/remove-metadata-from-pdf-in-php/
-lastmod: "2021-06-05"
+url: /java/remove-metadata-from-pdf-in-php/
+description: اكتشف كيفية إزالة البيانات التعريفية من مستند PDF في PHP باستخدام Aspose.PDF لتحسين الخصوصية وأمان المستندات.
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - إزالة البيانات الوصفية
 
-لإزالة البيانات الوصفية من مستند PDF باستخدام **Aspose.PDF Java for PHP**، ببساطة قم باستدعاء فئة **RemoveMetadata**.
+لإزالة البيانات الوصفية من مستند Pdf باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء فئة **RemoveMetadata**.
 
 كود PHP
 
 ```php
 
-# فتح مستند pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 if (preg_match('/pdfaid:part/',$doc->getMetadata())) {
@@ -27,15 +28,15 @@ if (preg_match('/dc:format/',$doc->getMetadata())) {
 
 }
 
-# حفظ المستند المحدث مع المعلومات الجديدة
+# save update document with new information
 $doc->save($dataDir . "Remove_Metadata.pdf");
 
-print "تمت إزالة البيانات الوصفية بنجاح، يرجى التحقق من ملف الإخراج." . PHP_EOL;
+print "Removed metadata successfully, please check output file." . PHP_EOL;
 
 ```
 
-**تحميل الكود التشغيلي**
+** تنزيل كود التشغيل **
 
-قم بتحميل **إزالة البيانات الوصفية (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تنزيلВ **إزالة البيانات الوصفية (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/RemoveMetadata.php)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/RemoveMetadata.php)

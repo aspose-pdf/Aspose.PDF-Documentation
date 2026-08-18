@@ -1,82 +1,56 @@
 ---
-title: فتح مستند PDF
-linktitle: فتح
+title: فتح مستند PDF برمجياً
+linktitle: افتح ملف PDF
 type: docs
 weight: 20
-url: /ar/java/open-pdf-document/
-description: تعلم كيفية فتح ملف PDF باستخدام Aspose.PDF لـ Java.
-lastmod: "2021-06-05"
+url: /java/open-pdf-document/
+description: تعرف على كيفية فتح ملف PDF في Java باستخدام Aspose.PDF من مسار ملف أو دفق أو باستخدام كلمة مرور.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: فتح مستندات PDF باستخدام مكتبة Aspose.PDF في Java
+Abstract: توضح هذه المقالة كيفية فتح مستندات PDF الموجودة في Java باستخدام Aspose.PDF. وهو يغطي فتح ملف PDF عن طريق مسار الملف، وفتح ملف PDF من InputStream، وفتح مستند محمي بكلمة مرور، مع قراءة كل مثال لعدد الصفحات من المستند الذي تم تحميله.
 ---
+يدعم Aspose.PDF for Java عدة طرق لتحميل مستند PDF موجود اعتمادًا على مصدر البيانات المصدر.
 
-## فتح مستند PDF موجود
+## افتح مستند PDF في جافا
 
-هناك عدة طرق لفتح مستند. الأسهل هو تحديد اسم الملف.
+يمكنك فتح مستند PDF:
+
+1. افتح [مستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مباشرة من مسار الملف.
+1. افتح [مستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) من `InputStream`.
+1. افتح [مستندًا](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مشفرًا عن طريق توفير كلمة المرور.
+
+## فتح المستند من الملف
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.InputStream;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import com.aspose.pdf.*;
-import com.aspose.pdf.internal.pcl.util.BufferedInputStream;
-
-public final class BasicOperationsOpen {
-
-    private BasicOperationsOpen() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) {
-        OpenDocument();
-        OpenDocumentStream();
-        OpenDocumentWithPassword();
-    }
-
-    public static void OpenDocument() {
-        String fileName = _dataDir+"/tourguidev2_gb_tags.pdf";
-        Document pdfDocument = new Document(fileName);
-        System.out.println("Pages +" + pdfDocument.getPages().size());
-    }
-
+public static void openDocumentFromFile(Path inputFile) {
+    Document document = new Document(inputFile.toString());
+    System.out.println("Pages: " + document.getPages().size());
+    document.close();
+}
 ```
 
-
-## فتح مستند PDF موجود من التدفق
+## افتح المستند من الدفق
 
 ```java
-    public static void OpenDocumentStream() {
-        String remoteURL = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
-        String fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
-        try (BufferedInputStream in = new BufferedInputStream(new java.net.URL(remoteURL + fileName).openStream())) {
-            InputStream inputStream = in;
-            Document pdfDocument = new Document(inputStream);
-            System.out.println("الصفحات +" + pdfDocument.getPages().size());
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+public static void openDocumentFromStream(Path inputFile) throws Exception {
+    try (InputStream stream = Files.newInputStream(inputFile)) {
+        Document document = new Document(stream);
+        System.out.println("Pages: " + document.getPages().size());
+        document.close();
     }
+}
 ```
 
-## فتح مستند PDF مشفر
+## افتح مستندًا مشفرًا
 
 ```java
-   public static void OpenDocumentWithPassword() {
-        String fileName = "C:\\tmp\\DocSite.pdf";
-        String password = "Aspose2020";
-        try {
-            Document pdfDocument = new Document(fileName, password);
-            System.out.println("الصفحات +" + pdfDocument.getPages().size());
-        } catch (Exception  e)
-        {
-            System.out.println(e.getMessage());
-        }
-    }
-
+public static void openDocumentEncrypted(Path inputFile) {
+    Document document = new Document(inputFile.toString(), "P@ssw0rd");
+    System.out.println("Pages: " + document.getPages().size());
+    document.close();
 }
 ```

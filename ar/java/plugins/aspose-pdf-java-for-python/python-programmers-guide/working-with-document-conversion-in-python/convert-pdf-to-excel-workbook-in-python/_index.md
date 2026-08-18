@@ -1,12 +1,13 @@
 ---
 title: تحويل PDF إلى Excel Workbook في بايثون
+linktitle: تحويل PDF إلى Excel Workbook في بايثون
 type: docs
 weight: 20
-url: /ar/java/convert-pdf-to-excel-workbook-in-python/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-excel-workbook-in-python/
+description: تعرف على كيفية تحويل مستندات PDF إلى مصنفات Excel في Python باستخدام Aspose.PDF لاستخراج البيانات المنظمة.
+lastmod: "2026-06-09"
 ---
-
-لتحويل مستند PDF إلى Excel Workbook باستخدام **Aspose.PDF Java for Python**، قم ببساطة باستدعاء وحدة **PdfToExcel**.
+لتحويل مستند PDF إلى Excel Workbook باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء وحدة **PdfToExcel**.
 
 ```python
 
@@ -14,16 +15,16 @@ doc=self.Document()
 pdf = self.Document()
 pdf=self.dataDir +'input1.pdf'
 
-# إنشاء كائن خيارات حفظ Excel
+# Instantiate ExcelSave Option object
 excelsave=self.ExcelSaveOptions();
 
-# حفظ الناتج بتنسيق XLS
+# Save the output to XLS format
 doc.save(self.dataDir + "Converted_Excel.xls", excelsave);
-print "تم تحويل المستند بنجاح"
+print "Document has been converted successfully"
 ```
 
-**تنزيل الكود الجاري**
+** تنزيل كود التشغيل **
 
-قم بتنزيل **تحويل PDF إلى Excel Workbook (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تنزيل ** تحويل PDF إلى Excel Workbook (Aspose.PDF) ** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)

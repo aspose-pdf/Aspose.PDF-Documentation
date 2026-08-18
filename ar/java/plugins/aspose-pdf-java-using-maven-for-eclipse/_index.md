@@ -1,131 +1,130 @@
 ---
-title: Aspose.PDF Java using Maven for Eclipse
+title: Aspose.PDF Java باستخدام Maven for Eclipse
+linktitle: Aspose.PDF Java باستخدام Maven for Eclipse
 type: docs
 weight: 80
-url: /ar/java/aspose-pdf-java-using-maven-for-eclipse/
-lastmod: "2021-06-05"
+url: /java/aspose-pdf-java-using-maven-for-eclipse/
+description: قم بإعداد Aspose.PDF لـ Java في Eclipse باستخدام Maven. تبسيط إدارة التبعية لتطوير PDF بكفاءة.
+lastmod: "2026-06-09"
 ---
+## مقدمة
 
-## المقدمة
+### الكسوف IDE
 
-### بيئة تطوير Eclipse
+Eclipse IDE هي بيئة تطوير متكاملة لجافا (IDE). يعد IDE بالتأكيد المنتج الأكثر شهرة لمشروع Eclipse Open Source. وهي اليوم بيئة التطوير الرائدة لـ Java بحصة سوقية تبلغ حوالي 60%.
 
-بيئة تطوير Eclipse هي بيئة تطوير متكاملة (IDE) مشهورة لجافا. تعتبر هذه البيئة بالتأكيد المنتج الأكثر شهرة في مشروع Eclipse مفتوح المصدر. اليوم، تُعد البيئة الرائدة لتطوير جافا بحصة سوقية تقارب 60%.
-
-يمكن توسيع بيئة تطوير Eclipse بمكونات برمجية إضافية. تسمي Eclipse هذه المكونات البرمجية بالمكونات الإضافية Plug-ins. العديد من المشاريع مفتوحة المصدر والشركات قامت بتوسيع بيئة تطوير Eclipse أو إنشاء تطبيقات مستقلة (Eclipse RCP) على إطار عمل Eclipse.
+يمكن توسيع Eclipse IDE بمكونات برمجية إضافية. يستدعي Eclipse مكونات البرامج هذه بالمكونات الإضافية. قامت العديد من المشاريع والشركات مفتوحة المصدر بتوسيع Eclipse IDE أو إنشاء تطبيقات مستقلة (Eclipse RCP) أعلى إطار عمل Eclipse.
 
 ### Aspose.PDF لجافا
 
-[Aspose.PDF لجافا](https://products.aspose.com/pdf/java/) هو API قوي لإنشاء مستندات PDF يتيح لتطبيقات جافا الخاصة بك قراءة وكتابة ومعالجة مستندات PDF دون استخدام Adobe Acrobat.
+[Aspose.PDF for Java](https://products.aspose.com/pdf/java/) عبارة عن واجهة برمجة تطبيقات قوية لإنشاء مستندات PDF تمكن تطبيقات Java من قراءة مستندات PDF وكتابتها ومعالجتها دون استخدام Adobe Acrobat.
 
-يقدم Aspose.PDF لجافا ثروة مذهلة من الميزات، وتشمل هذه الخيارات ضغط PDF، وإنشاء الجداول ومعالجتها، ودعم الرسوم البيانية، ووظائف الصور، ووظائف الروابط التشعبية الموسعة، وعناصر التحكم الأمنية المتقدمة والتعامل مع الخطوط المخصصة.
+يوفر Aspose.PDF for Java ثروة لا تصدق من الميزات، بما في ذلك خيارات ضغط PDF وإنشاء الجدول ومعالجته ودعم الرسم البياني ووظائف الصور ووظيفة الارتباط التشعبي الشاملة وعناصر التحكم الأمنية الموسعة ومعالجة الخطوط المخصصة.
 
 ### Aspose.PDF Java (Maven) لـ Eclipse
 
-- Aspose.PDF Java (Maven) لـ Eclipse هو مكون إضافي لـ **Eclipse IDE** مقدم من **Aspose.** هذا المكون الإضافي مخصص للمطورين الذين يستخدمون منصة Maven لتطوير تطبيقات Java ويرغبون في استخدام Aspose.PDF لـ Java في مشاريعهم. يتيح لك المكون الإضافي إنشاء مشاريع Maven لاستخدام Aspose.PDF لـ Java API وأيضًا تنزيل [أمثلة الكود](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) الخاصة بـ API.
-- يوفر المكون الإضافي الميزات التالية للعمل مع Aspose.PDF لـ Java API داخل **Eclipse IDE** بسهولة:
+- Aspose.PDF Java (Maven) for Eclipse هو مكون إضافي لـ **Eclipse IDE** من **Aspose.** هذا البرنامج الإضافي مخصص للمطورين الذين يستخدمون منصة Maven لتطويرات Java ويريدون استخدام Aspose.PDF لـ Java في مشاريعهم. يتيح لك المكون الإضافي إنشاء مشاريع مخضرمة لاستخدام Aspose.PDF لـ Java API وأيضًا تنزيل [أمثلة التعليمات البرمجية](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) لواجهة برمجة التطبيقات.
+- يوفر البرنامج المساعد الميزات التالية للعمل مع Aspose.PDF for Java API داخل **Eclipse IDE** بشكل مريح:
 
-![todo:نص بديل للصورة](https://i.imgur.com/KWKGljg.png)
+![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
 
 **المعالجات**:
-يحتوي المكون الإضافي على معالجين
+يحتوي البرنامج المساعد على معالجين
 
-**مشروع Aspose.PDF Maven (معالج)**
+**مشروع Aspose.PDF Maven (المعالج)**
 
-- يتيح لك معالج المشروع الجديد هذا للمطورين إنشاء مشروع **Maven** لاستخدام Aspose.PDF لـ Java من جديد -> مشروع -> Maven -> مشروع Aspose.PDF Maven.
+- يتيح معالج New Project للمطورين إنشاء مشروع В **Maven** لاستخدام Aspose.PDF لـ Java من New -> Project -> Maven-> Aspose.PDF Maven Project.
+- يتم جلب مرجع Aspose.PDF لتبعية Java API maven تلقائيًا من [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) ويتم إضافته في pom.xml.
+- سيحتوي المشروع الذي تم إنشاؤه دائمًا على أحدث إصدار متاح **Maven** Dependency for Aspose.PDF for Java API.
+- توجد خطوات المعالج أيضًا مع خيار تنزيل [أمثلة التعليمات البرمجية](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) لاستخدام Aspose.PDF لـ Java API.
+مثال على كود Aspose.PDF (المعالج)
 
-- يتم جلب مرجع تبعية Maven لـ Aspose.PDF for Java API تلقائيًا من [مستودع Aspose Cloud Maven](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) ويضاف إلى pom.xml.
-- سيحتوي المشروع الذي تم إنشاؤه دائمًا على أحدث إصدار متاح من **Maven** Dependency لواجهة Aspose.PDF لبرمجة Java.
-- تعرض خطوات المعالج أيضًا خيار تنزيل [أمثلة الكود](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) لاستخدام Aspose.PDF لبرمجة Java API.
-مثال كود Aspose.PDF (المعالج)
-
-- يتيح لك معالج الملف الجديد هذا نسخ [أمثلة الكود](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) التي تم تنزيلها إلى مشروعك لاستخدام Aspose.PDF لبرمجة Java من جديد -> أخرى -> Java -> مثال كود Aspose.PDF.
-- تُعرض العينات المتاحة بتنسيق شجري حيث يمكن للمستخدم اختيارها بشكل فئوي.
-- سيتم نسخ جميع الأمثلة ضمن الفئة المختارة إلى مجلد الحزمة "**com.aspose.pdf.examples**" للمشروع مع الموارد المطلوبة ضمن مجلد "**src/main/resources**" اللازم لتشغيل الأمثلة.
-- أمثلة الكود لواجهة Aspose.PDF لبرمجة Java تهدف إلى عرض الوظائف المختلفة للواجهة البرمجية.
-
-- سيقوم المعالج أيضًا بالبحث عن التحديثات المتاحة حديثًا لأمثلة الكود من مستودع أمثلة Aspose.PDF لبرمجة Java.
+- يتيح لك معالج الملف الجديد نسخ [أمثلة التعليمات البرمجية](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) التي تم تنزيلها إلى مشروعك لاستخدام Aspose.PDF لـ Java من جديد -> أخرى -> Java -> مثال على رمز Aspose.PDF.
+- يتم عرض العينات المتاحة في شكل شجرة حيث يمكن للمستخدم تحديدها بشكل قاطع.
+- سيتم نسخ جميع الأمثلة ضمن الفئة المحددة إلى مجلد الحزمة "**com.aspose.pdf.examples**" الخاص بالمشروع بالإضافة إلى الموارد المطلوبة داخل المجلد "**src/main/resources**" اللازم لتشغيل الأمثلة.
+- تهدف أمثلة التعليمات البرمجية لـ Aspose.PDF لـ Java API إلى توضيح الوظائف المختلفة لواجهة برمجة التطبيقات (API).
+- سيبحث المعالج أيضًا عن أمثلة التعليمات البرمجية المتوفرة حديثًا وتحديثاتها) من Aspose.PDF لمستودع أمثلة Java.
 
 ## متطلبات النظام والمنصات المدعومة
 
 ### متطلبات النظام
 
-- **ذاكرة النظام:** 2 جيجابايت أو أكثر (يوصى بها)
-- **نظام التشغيل:** أي نظام تشغيل يدعم Java VM (الآلة الافتراضية)
-- **اتصال بالإنترنت:** 2 ميجابايت أو أسرع (يوصى بها)
+- **ذاكرة النظام:** 2 جيجابايت أو أكثر (مستحسن)
+- **نظام التشغيل:** أي نظام تشغيل يدعم Java VM (الجهاز الظاهري)
+- **اتصال بالإنترنت:** 2 ميجابايت أو أسرع (مستحسن)
 
 ### المنصات المدعومة
 
-- Eclipse Mars.1 (4.5.1) - يوصى به
-- Eclipse Juno أو أحدث.
+- Eclipse Mars.1 (4.5.1) - موصى به
+- كسوف جونو أو في وقت لاحق.
 
-## التحميل
+## جاري التحميل
 
-### تحميل Eclipse IDE
+### تحميل الكسوف IDE
 
-ستحتاج أولاً إلى تثبيت Eclipse IDE قبل تحميل Aspose.PDF Java (Maven) لبرنامج Eclipse.
+ستحتاج أولاً إلى تثبيت Eclipse IDE قبل تنزيل Aspose.PDF Java (Maven) للمكون الإضافي Eclipse.
 
-لتحميل Eclipse IDE
+لتنزيل Eclipse IDE
 
-1. انتقل إلى [https://eclipse.org](https://eclipse.org/).
-1. قم بتحميل وتثبيت Eclipse IDE الموصى به لمطوري Java SE / EE.
+1. انتقل إلى [https://eclipse.org](@@KEEP_0@@).
+1. قم بتنزيل وتثبيت Eclipse IDE الموصى به لمطوري Java SE / EE.
 
-### تحميل Aspose.PDF Java (Maven) لبرنامج Eclipse
+### قم بتنزيل Aspose.PDF Java (Maven) لـ Eclipse
 
-فيما يلي ثلاث طرق موصى بها للتحميل الناجح وتثبيت Aspose.PDF Java (Maven) لبرنامج Eclipse plugin:
+فيما يلي ثلاث طرق موصى بها لتنزيل وتثبيت Aspose.PDF Java (Maven) للمكون الإضافي Eclipse بنجاح:
 
-- التثبيت بالسحب والإفلات من [Eclipse Marketplace](https://marketplace.eclipse.org/content/asposepdf-java-maven-eclipse) إلى مساحة عمل Eclipse الخاصة بك.
-
-- أو اذهب إلى **Help** > **Install New Software...** > أدخل عنوان موقع التحديث التالي في **Work with
-ثم اختر "Aspose.PDF Java (Maven) for Eclipse" و**إنهاء**. اقبل اتفاقية الترخيص وقم بتثبيت الإضافة.
+- قم بسحب وإفلات التثبيت من [Eclipse Marketplace](https://marketplace.eclipse.org/content/asposepdf-java-maven-eclipse) إلى مساحة عمل Eclipse الخاصة بك.
+- أو انتقل إلى **مساعدة** > **تثبيت برنامج جديد...** > أدخل عنوان URL لموقع التحديث التالي في **العمل مع
+ثم حدد "Aspose.PDF Java (Maven) for Eclipse" و**Finish**. اقبل اتفاقية الترخيص وقم بتثبيت البرنامج المساعد.
 
 ## التثبيت
 
-تثبيت Aspose.PDF Java (Maven) for Eclipse
+تثبيت Aspose.PDF Java (Maven) لـ Eclipse
 
-## استخدام الإضافة
+## باستخدام البرنامج المساعد
 
-استخدام Aspose.PDF Java (Maven) for Eclipse
+استخدام Aspose.PDF Java (Maven) لـ Eclipse
 
 ### كيفية تطبيق ترخيص Aspose؟
 
-يستخدم هذا الإضافة إصدارًا تجريبيًا من Aspose.PDF. بمجرد أن تكون راضيًا عن التقييم الخاص بك، يمكنك شراء ترخيص على [موقع Aspose](https://purchase.aspose.com/buy). لإزالة رسالة التقييم وقيود الميزات، يجب تطبيق ترخيص المنتج. ستتلقى ملف ترخيص بعد شراء المنتج. يرجى اتباع الخطوات أدناه لتطبيق الترخيص
+يستخدم هذا البرنامج المساعد نسخة تقييمية من Aspose.PDF. بمجرد أن تصبح راضيًا عن تقييمك، يمكنك شراء ترخيص من [موقع Aspose](https://purchase.aspose.com/buy).
+لإزالة رسالة التقييم وقيود الميزات، يجب تطبيق ترخيص المنتج. سوف تتلقى ملف ترخيص بعد شراء المنتج. يرجى اتباع الخطوات أدناه لتطبيق الترخيص
 
-- تأكد من أن ملف الترخيص مسمى بـ Aspose.PDF.Java.lic
+- تأكد من تسمية ملف الترخيص باسم Aspose.PDF.Java.lic
 - ضع ملف **Aspose.PDF.Java.lic** في المجلد الذي يحتوي على Aspose.PDF.jar
 - استخدم الكود التالي لتفعيل الترخيص:
 
 {{< highlight java >}}
 
-License license = new License();
+ ترخيص الترخيص = ترخيص جديد ()؛
 
-license.setLicense("Aspose.PDF.Java.lic");
+License.setLicense("Aspose.PDF.Java.lic");
 
 {{< /highlight >}}
 
 ## الدعم والتوسيع والمساهمة
 
-### الدعم
+### يدعم
 
-- إذا كنت ترغب في رؤية المشاكل المعروفة/المبلغ عنها (من قبل المستخدمين أو فريق ضمان الجودة) في الإضافة.
-- أو ترغب في الإبلاغ عن أي مشكلة وجدتها في الإضافة
-- لديك أي اقتراح لتحسين أو ترغب في تقديم طلب ميزة
+- إذا كنت ترغب في رؤية المشكلات المعروفة/المبلغ عنها (من قبل المستخدمين أو فريق ضمان الجودة) في البرنامج المساعد.
+- أو تريد الإبلاغ عن أي مشكلة تجدها في البرنامج المساعد
+- لديك أي اقتراح للتحسين أو ترغب في تقديم أي طلب ميزة
 
-يرجى متابعة [**متعقب المشاكل على GitHub**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues) لتسجيل أي مشاكل وجدت في الإضافة.
+يرجى متابعة [**GitHub Issues Tracker**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues) لتسجيل أي مشكلات موجودة في المكون الإضافي.
 
-### التوسيع والمساهمة
+### توسيع والمساهمة
 
-Aspose.PDF Java (Maven) لـ Eclipse مفتوح المصدر وكود المصدر متاح على مواقع البرمجة الاجتماعية الرئيسية المذكورة أدناه. يتم تشجيع المطورين على تحميل كود المصدر والمساهمة من خلال اقتراح أو إضافة ميزات جديدة أو تحسين الميزات الحالية حتى يستفيد الآخرون منها أيضًا. يمكن للمطورين أيضًا التعلم منه لإنشاء الإضافات الخاصة بهم.
+Aspose.PDF Java (Maven) for Eclipse هو برنامج مفتوح المصدر وكود مصدره متاح على مواقع البرمجة الاجتماعية الرئيسية المدرجة أدناه. يتم تشجيع المطورين على تنزيل الكود المصدري والمساهمة من خلال اقتراح ميزات جديدة أو إضافتها أو تحسين الميزات الحالية حتى يتمكن الآخرون من الاستفادة منها أيضًا. يمكن للمطورين أيضًا التعلم منه لإنشاء المكونات الإضافية الخاصة بهم.
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_Maven_for_Eclipse)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_Maven_for_Eclipse)
 
-### كيفية تكوين كود المصدر لـ Aspose.PDF Java (Maven) لـ Eclipse
+### كيفية تكوين التعليمات البرمجية المصدر لـ Aspose.PDF Java (Maven) لـ Eclipse
 
-الخطوات البسيطة أدناه ستقود بسلاسة إلى تكوين ناجح لكود المصدر **"Aspose.PDF Java (Maven) for Eclipse"** في بيئة Eclipse IDE
+ستؤدي الخطوات البسيطة أدناه بسلاسة إلى التكوين الناجح لـ **"Aspose.PDF Java (Maven) for Eclipse"** كود مصدر البرنامج المساعد في Eclipse IDE
 
-1. تحميل / استنساخ الشيفرة المصدرية.
-1. اختر **ملف** > استيراد > عام > مشاريع موجودة في مساحة العمل
-1. تصفح إلى مصدر المشروع الأحدث الذي قمت بتنزيله
+1. تنزيل/استنساخ كود المصدر.
+1. اختر **ملف** > استيراد > عام > المشاريع الموجودة في مساحة العمل
+1. استعرض للوصول إلى أحدث مصدر للمشروع الذي قمت بتنزيله
 1. حدد مشروع Eclipse الذي تريد استيراده
-1. انقر على إنهاء
-1. كود إضافة Aspose.PDF Java لـ Eclipse الآن جاهز للتحسين.
+1. انقر فوق إنهاء
+1. كود البرنامج المساعد Aspose.PDF Java for Eclipse جاهز الآن للتحسين.

@@ -1,94 +1,94 @@
 ---
-title: إضافة جدول محتويات إلى ملف PDF موجود في روبي
+title: أضف جدول المحتويات إلى ملف PDF الموجود في روبي
+linktitle: أضف جدول المحتويات إلى ملف PDF الموجود في روبي
 type: docs
 weight: 30
-url: /ar/java/add-toc-to-existing-pdf-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-ruby/
+description: تعرف على كيفية إضافة جدول محتويات إلى ملف PDF موجود في Ruby باستخدام Aspose.PDF لتحسين التنقل بين المستندات.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - إضافة جدول المحتويات
 
-## Aspose.PDF - إضافة جدول محتويات
-
-<ins>لإضافة جدول محتويات في مستند PDF باستخدام **Aspose.PDF Java for Ruby**، ببساطة قم باستدعاء وحدة **AddToc**.
+<ins> لإضافة جدول محتويات إلى مستند Pdf باستخدام **Aspose.PDF Java لـ Ruby**، ما عليك سوى استدعاء وحدة **AddToc**.
 
 كود روبي
 
 ```java
-# مسار دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# افتح مستند pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# الوصول إلى الصفحة الأولى من ملف PDF
+# Get access to first page of PDF file
 
 toc_page = doc.getPages().insert(1)
 
-# إنشاء كائن لتمثيل معلومات جدول المحتويات
+# Create object to represent TOC information
 
 toc_info = Rjb::import('com.aspose.pdf.TocInfo').new
 
-title = Rjb::import('com.aspose.pdf.TextFragment').new("جدول المحتويات")
+title = Rjb::import('com.aspose.pdf.TextFragment').new("Table Of Contents")
 
 title.getTextState().setFontSize(20)
 
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# تعيين العنوان لجدول المحتويات
+# Set the title for TOC
 
 toc_info.setTitle(title)
 
 toc_page.setTocInfo(toc_info)
 
-# إنشاء كائنات سلسلة ستستخدم كعناصر جدول المحتويات
+# Create string objects which will be used as TOC elements
 
-titles = Array["الصفحة الأولى", "الصفحة الثانية"]
+titles = Array["First page", "Second page"]
 
 i = 0
 
 while i < 2
 
-    # إنشاء كائن عنوان
+В В В  # Create Heading object
 
-    heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+В В В  heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
 
-    segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+В В В  segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
 
-    heading2.setTocPage(toc_page)
+В В В  heading2.setTocPage(toc_page)
 
-    heading2.getSegments().add(segment2)
+В В В  heading2.getSegments().add(segment2)
 
-    # تحديد الصفحة الوجهة لكائن العنوان
+В В В  # Specify the destination page for heading object
 
-    heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
+В В В  heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-    # صفحة الوجهة
+В В В  # Destination page
 
-    heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
+В В В  heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-    # إحداثيات الوجهة
+В В В  # Destination coordinate
 
-    segment2.setText(titles[i])
+В В В  segment2.setText(titles[i])
 
-    # إضافة العنوان إلى الصفحة التي تحتوي على جدول المحتويات
+В В В  # Add heading to page containing TOC
 
-    toc_page.getParagraphs().add(heading2)
+В В В  toc_page.getParagraphs().add(heading2)
 
-    i +=1
+В В В  i +=1
 
 end
 
-# حفظ مستند PDF
+# Save PDF Document
 
 doc.save(data_dir + "TOC.pdf")
 
-puts "تمت إضافة جدول المحتويات بنجاح، يرجى التحقق من ملف الإخراج."
+puts "Added TOC Successfully, please check the output file."
 ```
 
+## <ins> ** قم بتنزيل كود التشغيل
 
-## <ins> **تحميل كود التشغيل
+تنزيلВ **إضافة TOC (Aspose.PDF)**В fromВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **إضافة جدول المحتويات (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

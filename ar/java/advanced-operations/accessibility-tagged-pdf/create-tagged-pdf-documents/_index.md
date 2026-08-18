@@ -1,266 +1,381 @@
 ---
-title: إنشاء PDF مع علامات
-linktitle: إنشاء PDF مع علامات
+title: إنشاء ملف PDF ذو علامات في Java
+linktitle: إنشاء ملف PDF ذو علامات
 type: docs
 weight: 10
-lastmod: "2021-06-05"
-url: /ar/java/create-tagged-pdf-documents/
-description: يوضح هذا المقال كيفية إنشاء عناصر الهيكل لوثيقة PDF مع علامات برمجيًا باستخدام Aspose.PDF for Java.
+url: /java/create-tagged-pdf/
+description: تعرف على كيفية إنشاء مستندات PDF ذات علامات تمييز في Java باستخدام Aspose.PDF، بما في ذلك عناصر بنية PDF/UA، وحقول النماذج التي يمكن الوصول إليها، وصفحات جدول المحتويات، ووضع العلامات التلقائية.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+إن إنشاء ملف PDF بعلامة يعني إضافة عناصر هيكلية تسهل التحقق من صحة المستند مقابل متطلبات الوصول إلى PDF/UA وتسهل على التقنيات المساعدة تفسيرها.
 
-## إنشاء عناصر الهيكل
+## قم بإنشاء وثيقة PDF بسيطة ذات علامات
 
-من أجل إنشاء عناصر الهيكل في مستند PDF مع علامات، يوفر Aspose.PDF طرقًا لإنشاء عنصر هيكل باستخدام واجهة [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). يُظهر مقتطف الكود التالي كيفية إنشاء عناصر الهيكل لوثيقة PDF مع علامات:
+استخدم هذا المثال عندما تحتاج إلى الحد الأدنى من ملفات PDF ذات العلامات مع عنوان وفقرة في شجرة البنية المنطقية.
+
+1. قم بإنشاء [مستند] PDF جديد (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واحصل على [ITaggedContent] (https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. قم بتعيين عنوان المستند ولغته، ثم قم بإنشاء عناصر الرأس والفقرة المطلوبة.
+1. قم بإلحاق عناصر البنية بالعنصر الجذر واحفظ المستند.
 
 ```java
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// المسار إلى دليل المستندات.
-String path = "pathTodir";
+public static void createTaggedPdfDocumentSimple(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
 
-// إنشاء مستند PDF
-Document document = new Document();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// الحصول على المحتوى للعمل مع TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        HeaderElement mainHeader = taggedContent.createHeaderElement();
+        mainHeader.setText("Main Header");
 
-// تعيين العنوان واللغة للمستند
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraphElement = taggedContent.createParagraphElement();
+        paragraphElement.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                + "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. "
+                + "Cras pellentesque libero semper, gravida magna sed, luctus leo.");
 
-// إنشاء عناصر تجمع
-PartElement partElement = taggedContent.createPartElement();
-ArtElement artElement = taggedContent.createArtElement();
-SectElement sectElement = taggedContent.createSectElement();
-DivElement divElement = taggedContent.createDivElement();
-BlockQuoteElement blockQuoteElement = taggedContent.createBlockQuoteElement();
-CaptionElement captionElement = taggedContent.createCaptionElement();
-TOCElement tocElement = taggedContent.createTOCElement();
-TOCIElement tociElement = taggedContent.createTOCIElement();
-IndexElement indexElement = taggedContent.createIndexElement();
-NonStructElement nonStructElement = taggedContent.createNonStructElement();
-PrivateElement privateElement = taggedContent.createPrivateElement();
-
-// إنشاء عناصر هيكل النص على مستوى الكتلة
-ParagraphElement paragraphElement = taggedContent.createParagraphElement();
-HeaderElement headerElement = taggedContent.createHeaderElement();
-HeaderElement h1Element = taggedContent.createHeaderElement(1);
-
-// إنشاء عناصر هيكل النص على مستوى السطر
-SpanElement spanElement = taggedContent.createSpanElement();
-QuoteElement quoteElement = taggedContent.createQuoteElement();
-NoteElement noteElement = taggedContent.createNoteElement();
-
-// إنشاء عناصر هيكل التوضيح
-FigureElement figureElement = taggedContent.createFigureElement();
-FormulaElement formulaElement = taggedContent.createFormulaElement();
-
-// الطرق قيد التطوير
-ListElement listElement = taggedContent.createListElement();
-TableElement tableElement = taggedContent.createTableElement();
-ReferenceElement referenceElement = taggedContent.createReferenceElement();
-BibEntryElement bibEntryElement = taggedContent.createBibEntryElement();
-CodeElement codeElement = taggedContent.createCodeElement();
-LinkElement linkElement = taggedContent.createLinkElement();
-AnnotElement annotElement = taggedContent.createAnnotElement();
-RubyElement rubyElement = taggedContent.createRubyElement();
-WarichuElement warichuElement = taggedContent.createWarichuElement();
-FormElement formElement = taggedContent.createFormElement();
-
-// حفظ مستند Tagged Pdf
-document.save(path + "StructureElements.pdf");
+        rootElement.appendChild(mainHeader, true);
+        rootElement.appendChild(paragraphElement, true);
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## قم بإنشاء وثيقة PDF ذات علامات متقدمة
 
-## إنشاء شجرة عناصر الهيكل
+ينشئ هذا المثال بنية أكثر ثراءً عن طريق مزج العناوين والفقرات والامتدادات وعلامات الاقتباس وإعدادات التخطيط الصريحة.
 
-من أجل إنشاء شجرة عناصر الهيكل في مستند PDF مميز بالعلامات، توفر Aspose.PDF طرقًا لإنشاء شجرة عناصر الهيكل باستخدام واجهة [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). يوضح مقتطف الشيفرة التالي كيفية إنشاء شجرة عناصر الهيكل لمستند PDF مميز بالعلامات:
+1. قم بإنشاء ملف PDF [مستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) جديد وقم بتهيئة البيانات التعريفية للمحتوى الموسوم.
+1. أنشئ بنية العنوان والفقرة، ثم أضف امتدادات وعنصر اقتباس داخل الفقرة.
+1. اضبط موضع الفقرة، وألحق العناصر بالبنية الجذرية، واحفظ المستند.
 
 ```java
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// المسار إلى دليل المستندات.
-String path = "pathTodir";
-// إنشاء مستند PDF
-Document document = new Document();
+public static void createTaggedPdfDocumentAdv(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
 
-// الحصول على المحتوى للعمل مع TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// تعيين عنوان ولغة للمستند
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
+        HeaderElement header1 = taggedContent.createHeaderElement(1);
+        header1.setText("Header Level 1");
 
-// الحصول على عنصر الهيكل الجذري (المستند)
-StructureElement rootElement = taggedContent.getRootElement();
+        ParagraphElement paragraphWithQuotes = taggedContent.createParagraphElement();
+        paragraphWithQuotes.getStructureTextState().setFont(FontRepository.findFont("Arial"));
 
-// إنشاء هيكل منطقي
-SectElement sect1 = taggedContent.createSectElement();
-rootElement.appendChild(sect1);
+        PositionSettings positionSettings = new PositionSettings();
+        positionSettings.setMargin(new MarginInfo(10, 5, 10, 5));
+        paragraphWithQuotes.adjustPosition(positionSettings);
 
-SectElement sect2 = taggedContent.createSectElement();
-rootElement.appendChild(sect2);
+        SpanElement spanElement1 = taggedContent.createSpanElement();
+        spanElement1.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                + "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. ");
 
-DivElement div11 = taggedContent.createDivElement();
-sect1.appendChild(div11);
+        QuoteElement quoteElement = taggedContent.createQuoteElement();
+        quoteElement.setText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus.");
+        quoteElement.getStructureTextState().setFontStyle(Nullable.of(FontStyles.Bold | FontStyles.Italic));
 
-DivElement div12 = taggedContent.createDivElement();
-sect1.appendChild(div12);
+        SpanElement spanElement2 = taggedContent.createSpanElement();
+        spanElement2.setText(" Sed non consectetur elit.");
 
-ArtElement art21 = taggedContent.createArtElement();
-sect2.appendChild(art21);
+        paragraphWithQuotes.appendChild(spanElement1, true);
+        paragraphWithQuotes.appendChild(quoteElement, true);
+        paragraphWithQuotes.appendChild(spanElement2, true);
 
-ArtElement art22 = taggedContent.createArtElement();
-sect2.appendChild(art22);
-
-DivElement div211 = taggedContent.createDivElement();
-art21.appendChild(div211);
-
-DivElement div212 = taggedContent.createDivElement();
-art21.appendChild(div212);
-
-DivElement div221 = taggedContent.createDivElement();
-art22.appendChild(div221);
-
-DivElement div222 = taggedContent.createDivElement();
-art22.appendChild(div222);
-
-SectElement sect3 = taggedContent.createSectElement();
-rootElement.appendChild(sect3);
-
-DivElement div31 = taggedContent.createDivElement();
-sect3.appendChild(div31);
-
-// حفظ مستند PDF مميز بالعلامات
-document.save(path + "StructureElementsTree.pdf");
+        rootElement.appendChild(header1, true);
+        rootElement.appendChild(paragraphWithQuotes, true);
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## إضافة نمط النص إلى المحتوى الذي تم وضع علامة عليه
 
-## تنسيق هيكل النص
+استخدم هذا المثال عندما يجب أن يحمل محتوى الفقرة ذات العلامات معلومات واضحة عن الخط واللون والنمط.
 
-من أجل تنسيق هيكل النص في مستند PDF موسوم، تقدم Aspose.PDF خصائص **setFont()**، **setFontSize()**، **setFontStyle()** و**setForegroundColor()** من فئة [StructureTextState](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/StructureTextState). يظهر مقطع الشيفرة التالي كيفية تنسيق هيكل النص في مستند PDF موسوم:
+1. قم بإنشاء ملف PDF [مستند] جديد بعلامات تمييز (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء عنصر فقرة وقم بتكوين حالة النص الهيكلية الخاصة به.
+1. قم بتعيين نص الفقرة واحفظ المستند.
 
 ```java
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// المسار إلى دليل المستندات.
-String path = "pathTodir";
-// إنشاء مستند PDF
-Document document = new Document();
+public static void addStyle(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// الحصول على المحتوى للعمل مع TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// تعيين العنوان واللغة للمستند
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraphElement = taggedContent.createParagraphElement();
+        taggedContent.getRootElement().appendChild(paragraphElement, true);
 
-ParagraphElement p = taggedContent.createParagraphElement();
-taggedContent.getRootElement().appendChild(p);
+        paragraphElement.getStructureTextState().setFontSize(Nullable.of(18.0f));
+        paragraphElement.getStructureTextState().setForegroundColor(Color.getRed());
+        paragraphElement.getStructureTextState().setFontStyle(Nullable.of(FontStyles.Italic));
+        paragraphElement.setText("Red italic text.");
 
-// تحت التطوير
-p.getStructureTextState().setFontSize(18F);
-p.getStructureTextState().setForegroundColor(Color.getRed());
-p.getStructureTextState().setFontStyle(FontStyles.Italic);
-
-p.setText("نص مائل باللون الأحمر.");
-
-// حفظ مستند PDF موسوم
-document.save(path + "StyleTextStructure.pdf");
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## إضافة عناصر هيكل الشكل
 
-## توضيح عناصر الهيكل
+يوضح هذا المثال كيفية إنشاء شكل مميز بنص بديل وعنوان وعلامة مخصصة ومحتوى صورة وموضع.
 
-من أجل توضيح عناصر الهيكل في وثيقة PDF معنونة، توفر Aspose.PDF فئة [IllustrationElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/IllustrationElement). يظهر مقطع الشيفرة التالي كيفية توضيح عناصر الهيكل في وثيقة PDF معنونة:
+1. قم بإنشاء ملف PDF [مستند] جديد بعلامات تمييز (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [FigerElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/)، وقم بتعيين البيانات التعريفية التي يمكن الوصول إليها، وقم بتعيين الصورة.
+1. اضبط موضع الشكل واحفظ المستند.
 
 ```java
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// المسار إلى دليل المستندات.
-String path = "pathTodir";
-// إنشاء وثيقة Pdf
-Document document = new Document();
+public static void illustrateStructureElements(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// الحصول على المحتوى للعمل مع TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// تعيين العنوان واللغة للوثيقة
-taggedContent.setTitle("وثيقة Pdf معنونة");
-taggedContent.setLanguage("en-US");
+        FigureElement figure1 = taggedContent.createFigureElement();
+        taggedContent.getRootElement().appendChild(figure1, true);
+        figure1.setAlternativeText("Figure One");
+        figure1.setTitle("Image 1");
+        figure1.setTag("Fig1");
+        figure1.setImage(imageFile.toString(), 300);
 
-// تحت التطوير
-IllustrationElement figure1 = taggedContent.createFigureElement();
-taggedContent.getRootElement().appendChild(figure1);
-figure1.setActualText("الشكل الأول");
-figure1.setTitle("صورة 1");
-figure1.setTag("Fig1");
-figure1.setImage("image.png");
+        PositionSettings positionSettings = new PositionSettings();
+        MarginInfo marginInfo = new MarginInfo();
+        marginInfo.setLeft(50);
+        marginInfo.setTop(20);
+        positionSettings.setMargin(marginInfo);
+        figure1.adjustPosition(positionSettings);
 
-// حفظ وثيقة Pdf معنونة
-document.save(path + "IllustrationStructureElements.pdf");
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## التحقق من صحة ملف PDF ذو علامة تمييز لـ PDF/UA
 
-## **إنشاء ملف PDF مع صورة موسومة**
+استخدم هذا المثال عندما تحتاج إلى التحقق مما إذا كان ملف PDF المميز يلبي قواعد التحقق من صحة PDF/UA.
 
-من أجل إنشاء ملف PDF مع صورة موسومة، تقدم Aspose.PDF طريقة [createFigureElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createFigureElement--) في واجهة [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). يوضح مقتطف الشيفرة التالي هذه الوظيفة.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإجراء التحقق من الصحة على [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. اكتب سجل التحقق من الصحة واطبع نتيجة التحقق من الصحة.
 
 ```java
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-Java
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("CreatePDFwithTaggedImage");
-taggedContent.setLanguage("en-US");
-
-IllustrationElement figure1 = taggedContent.createFigureElement();
-taggedContent.getRootElement().appendChild(figure1);
-figure1.setAlternativeText("شعار Aspose");
-figure1.setTitle("صورة 1");
-figure1.setTag("Fig");
-// إضافة صورة بدقة 300 DPI (بشكل افتراضي)
-figure1.setImage("aspose-logo.jpg");
-// حفظ مستند PDF
-document.save("PDFwithTaggedImage.pdf");
+public static void validateTaggedPdf(Path inputFile, Path logFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        boolean isValid = document.validate(logFile.toString(), PdfFormat.PDF_UA_1);
+        System.out.println("Is Valid: " + isValid);
+    }
+}
 ```
 
+## ضبط موضع عنصر الهيكل
 
-## إنشاء ملف PDF مع نص موسوم
+يطبق هذا المثال إعدادات الهامش والمحاذاة الصريحة على فقرة ذات علامات تمييز.
 
-من أجل إنشاء ملف PDF مع نص موسوم، يوفر Aspose.PDF واجهة [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). يوضح مقتطف الشيفرة التالي هذه الوظيفة.
+1. قم بإنشاء ملف PDF [مستند] جديد بعلامات تمييز (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإضافة عنصر بنية الفقرة وقم بإعداد [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. قم بتطبيق إعدادات الموضع على الفقرة واحفظ المستند.
 
 ```java
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// المسار إلى دليل الوثائق.
-String dataDir = Utils.getDataDir() + "TaggedPDFs\\";
-// إنشاء مستند PDF
-Document document = new Document();
+public static void adjustPosition(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// الحصول على المحتوى للعمل مع TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// تعيين العنوان واللغة للمستند
-taggedContent.setTitle("مستند Pdf موسوم");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraph = taggedContent.createParagraphElement();
+        taggedContent.getRootElement().appendChild(paragraph, true);
+        paragraph.setText("Text.");
 
-// إنشاء عناصر هيكلية على مستوى الكتلة للنص
-HeaderElement headerElement = taggedContent.createHeaderElement();
-headerElement.setActualText("العنوان 1");
-ParagraphElement paragraphElement1 = taggedContent.createParagraphElement();
-paragraphElement1.setActualText("اختبار 1");
-ParagraphElement paragraphElement2 = taggedContent.createParagraphElement();
-paragraphElement2.setActualText("اختبار 2");
-ParagraphElement paragraphElement3 = taggedContent.createParagraphElement();
-paragraphElement3.setActualText("اختبار 3");
-ParagraphElement paragraphElement4 = taggedContent.createParagraphElement();
-paragraphElement4.setActualText("اختبار 4");
-ParagraphElement paragraphElement5 = taggedContent.createParagraphElement();
-paragraphElement5.setActualText("اختبار 5");
-ParagraphElement paragraphElement6 = taggedContent.createParagraphElement();
-paragraphElement6.setActualText("اختبار 6");
-ParagraphElement paragraphElement7 = taggedContent.createParagraphElement();
-paragraphElement7.setActualText("اختبار 7");
+        PositionSettings positionSettings = new PositionSettings();
+        MarginInfo marginInfo = new MarginInfo();
+        marginInfo.setLeft(300);
+        marginInfo.setTop(20);
+        marginInfo.setRight(0);
+        marginInfo.setBottom(0);
+        positionSettings.setMargin(marginInfo);
+        positionSettings.setHorizontalAlignment(HorizontalAlignment.None);
+        positionSettings.setVerticalAlignment(VerticalAlignment.None);
+        positionSettings.setFirstParagraphInColumn(false);
+        positionSettings.setKeptWithNext(false);
+        positionSettings.setInNewPage(false);
+        positionSettings.setInLineParagraph(false);
+        paragraph.adjustPosition(positionSettings);
 
-// حفظ مستند PDF
-document.save( dataDir + "PDFwithTaggedText.pdf");
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## قم بتحويل ملف PDF موجود إلى PDF/UA باستخدام العلامات التلقائية
+
+استخدم هذا الأسلوب عندما يتعين تحويل ملف PDF موجود إلى PDF/UA ووضع علامة عليه تلقائيًا أثناء التحويل.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) وقم بتمكين وضع العلامات التلقائي.
+1. قم بتشغيل التحويل وحفظ مستند الإخراج.
+
+```java
+public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outputFile, Path logFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfFormatConversionOptions options = new PdfFormatConversionOptions(
+                logFile.toString(), PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+        AutoTaggingSettings autoTaggingSettings = new AutoTaggingSettings();
+        autoTaggingSettings.setEnableAutoTagging(true);
+        autoTaggingSettings.setHeadingRecognitionStrategy(HeadingRecognitionStrategy.Auto);
+        options.setAutoTaggingSettings(autoTaggingSettings);
+
+        document.convert(options);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## قم بإنشاء ملف PDF بعلامات مع حقل نموذج يمكن الوصول إليه
+
+يقوم هذا المثال بوضع علامة على حقل نموذج التوقيع بحيث يصبح جزءًا من شجرة البنية المنطقية.
+
+1. قم بإنشاء [مستند] PDF جديد (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة تحتوي على حقل نموذج.
+1. أضف حقل النموذج إلى مجموعة نماذج المستندات.
+1. قم بإنشاء عنصر هيكل نموذج ذو علامة، واربطه بالحقل، واحفظ المستند.
+
+```java
+public static void createPdfWithTaggedFormField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
+
+        SignatureField signatureField = new SignatureField(page, new Rectangle(50, 50, 100, 100, true));
+        signatureField.setPartialName("Signature1");
+        signatureField.setAlternateName("signature 1");
+
+        Form formFields = document.getForm();
+        formFields.add(signatureField);
+
+        FormElement form = taggedContent.createFormElement();
+        form.setAlternativeText("form 1");
+        form.tag(signatureField);
+        rootElement.appendChild(form, true);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## قم بإنشاء ملف PDF بعلامة تمييز مع صفحة TOC
+
+استخدم هذا المثال عندما يجب أن يتضمن ملف PDF ذو علامات تمييز صفحة جدول محتويات أساسية مرتبطة بعناوين المستند.
+
+1. أنشئ ملف PDF [مستند] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) بعلامة جديدة وأضف صفحة جدول المحتويات.
+1. قم بإنشاء [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) والرأس الذي يجب أن يظهر في جدول المحتويات.
+1. اربط إدخال جدول المحتويات بالعنوان واحفظ المستند.
+
+```java
+public static void createPdfWithTocPage(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent content = document.getTaggedContent();
+        StructureElement rootElement = content.getRootElement();
+        content.setLanguage("en-US");
+
+        Page tocPage = document.getPages().add();
+        tocPage.setTocInfo(new TocInfo());
+
+        TOCElement tocElement = content.createTOCElement();
+        rootElement.appendChild(tocElement, true);
+
+        document.getPages().add();
+
+        HeaderElement header = content.createHeaderElement(1);
+        header.setText("1. Header");
+        rootElement.appendChild(header, true);
+
+        TOCIElement toci = content.createTOCIElement();
+        tocElement.appendChild(toci, true);
+        header.addEntryToTocPage(tocPage, toci);
+        toci.addRef(header);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## قم بإنشاء ملف PDF متقدم بعلامات مع صفحة TOC
+
+يقوم هذا المثال بإنشاء جدول محتويات أكثر تعقيدًا يحتوي على عناوين الصفحات المرتبطة وعناصر القائمة المتداخلة ومستويات العناوين المتعددة.
+
+1. أنشئ ملف PDF [مستند] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) بعلامة جديدة وقم بإعداد صفحة جدول المحتويات بعنوان مرئي.
+1. أنشئ بنية جدول المحتويات، واربط عنوان جدول المحتويات وإدخالاته بالعناوين وعناصر القائمة، ثم أضف عناصر المحتوى ذات الصلة.
+1. احفظ المستند النهائي باستخدام بنية جدول المحتويات المتقدمة.
+
+```java
+public static void createPdfWithTocPageAdvanced(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent content = document.getTaggedContent();
+        StructureElement rootElement = content.getRootElement();
+        content.setLanguage("en-US");
+
+        Page tocPage = document.getPages().add();
+        tocPage.setTocInfo(new TocInfo());
+        tocPage.getTocInfo().setTitle(new TextFragment("Table of Contents"));
+
+        TOCElement tocElement = content.createTOCElement();
+        HeaderElement headerForTocPageTitle = content.createHeaderElement(1);
+        tocElement.linkTocPageTitleToHeaderElement(tocPage, headerForTocPageTitle);
+
+        rootElement.appendChild(headerForTocPageTitle, true);
+        rootElement.appendChild(tocElement, true);
+
+        document.getPages().add();
+
+        HeaderElement header = content.createHeaderElement(1);
+        header.setText("1. Header");
+        rootElement.appendChild(header, true);
+
+        TOCIElement toci = content.createTOCIElement();
+        tocElement.appendChild(toci, true);
+        header.addEntryToTocPage(tocPage, toci);
+        toci.addRef(header);
+
+        ListElement listElement = content.createListElement();
+        for (int i = 1; i < 4; i++) {
+            ListLIElement li = content.createListLIElement();
+            listElement.appendChild(li, true);
+
+            HeaderElement subHeader = content.createHeaderElement(2);
+            subHeader.getStructureTextState().setFontSize(Nullable.of(14.0f));
+            subHeader.setLanguage("en-US");
+            subHeader.setText("1." + i + " subheader ");
+            subHeader.addEntryToTocPage(tocPage, li);
+            li.addRef(subHeader);
+
+            ParagraphElement p = content.createParagraphElement();
+            p.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+            p.setLanguage("en-US");
+
+            rootElement.appendChild(subHeader, true);
+            rootElement.appendChild(p, true);
+        }
+        toci.appendChild(listElement, true);
+
+        HeaderElement header2 = content.createHeaderElement(1);
+        header2.setText("2. Header");
+        rootElement.appendChild(header2, true);
+
+        TOCIElement toci2 = content.createTOCIElement();
+        tocElement.appendChild(toci2, true);
+        header2.addEntryToTocPage(tocPage, toci2);
+        toci2.addRef(header2);
+
+        document.save(outputFile.toString());
+    }
+}
 ```

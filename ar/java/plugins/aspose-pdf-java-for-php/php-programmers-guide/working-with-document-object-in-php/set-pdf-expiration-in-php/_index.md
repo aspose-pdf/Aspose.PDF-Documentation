@@ -1,20 +1,21 @@
 ---
-title: تعيين انتهاء صلاحية PDF في PHP
+title: ضبط انتهاء صلاحية PDF في PHP
+linktitle: ضبط انتهاء صلاحية PDF في PHP
 type: docs
 weight: 80
-url: /ar/java/set-pdf-expiration-in-php/
-lastmod: "2021-06-05"
+url: /java/set-pdf-expiration-in-php/
+description: اكتشف كيفية تعيين تاريخ انتهاء الصلاحية لملف PDF في PHP، والتحكم في الوصول باستخدام Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - ضبط انتهاء صلاحية PDF
 
-## Aspose.PDF - تعيين انتهاء صلاحية PDF
-
-لتعيين انتهاء صلاحية مستند PDF باستخدام **Aspose.PDF Java for PHP**، ببساطة استدعِ فئة **SetExpiration**.
+لتعيين انتهاء صلاحية مستند Pdf باستخدام **Aspose.PDF Java لـ PHP**، ما عليك سوى استدعاء فئة **SetExpiration**.
 
 كود PHP
 
 ```php
 
-# افتح مستند PDF.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 $javascript = new JavascriptAction(
@@ -27,15 +28,15 @@ $javascript = new JavascriptAction(
     app.alert('The file is expired. You need a new one.');");
 $doc->setOpenAction($javascript);
 
-# حفظ المستند المحدث بالمعلومات الجديدة
+# save update document with new information
 $doc->save($dataDir . "set_expiration.pdf");
 
-print "تحديث معلومات المستند، يرجى التحقق من ملف الإخراج." . PHP_EOL;
+print "Update document information, please check output file." . PHP_EOL;
 
 ```
 
-**تحميل كود التشغيل**
+** تنزيل كود التشغيل **
 
-قم بتحميل **Set PDF Expiration (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تنزيلВ **تعيين انتهاء صلاحية ملف PDF (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetExpiration.php)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetExpiration.php)

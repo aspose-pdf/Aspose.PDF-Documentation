@@ -1,19 +1,20 @@
 ---
-title: الحصول على خصائص الصفحة في Jython
+title: احصل على خصائص الصفحة في Jython
+linktitle: احصل على خصائص الصفحة في Jython
 type: docs
 weight: 50
-url: /ar/java/get-page-properties-in-jython/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-jython/
+description: اكتشف كيفية استرداد خصائص الصفحات الفردية في مستند PDF باستخدام Jython مع Aspose.PDF.
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - الحصول على خصائص الصفحة
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java لـ Jython**. هنا يمكنك رؤية نموذج الكود.
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-خطأ في عرض الماكرو 'code' : قيمة غير صالحة محددة للمعلمة lang
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-## تنزيل الكود الجاري
+## تحميل كود التشغيل
 
-قم بتنزيل الكود الجاري من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

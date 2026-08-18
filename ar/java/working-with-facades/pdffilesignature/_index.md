@@ -1,16 +1,24 @@
 ---
-title: PdfFileSignature Class
+title: فئة التوقيع PdfFile
+linktitle: فئة التوقيع PdfFile
 type: docs
-weight: 70
-url: /ar/java/pdffilesignature-class/
-description: يشرح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام فئة PdfFileSignature.
-lastmod: "2021-06-05"
+weight: 60
+url: /java/pdffilesignature-class/
+description: تعرف على كيفية استخدام واجهة PdfFileSignature في Java للتوقيع على توقيعات PDF والتصديق عليها وفحصها والتحقق منها واستخراجها وإزالتها.
+lastmod: "2026-06-09"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: قم بتسجيل توقيعات PDF والتصديق عليها وفحصها في Java باستخدام PdfFileSignature
+Abstract: يشرح هذا القسم كيفية استخدام واجهة PdfFileSignature في Aspose.PDF لـ Java لسير عمل التوقيع الرقمي. تغطي أمثلة Java الحالية التوقيع باستخدام شهادة أو كائن PKCS7، واعتماد ملف PDF بأذونات DocMDP، وقراءة تفاصيل التوقيع، والتحقق من التوقيعات، واستخراج شهادة التوقيع، وإزالة التوقيع.
 ---
+توضح فئة Java `PdfFileSignatureExamples` سير عمل التوقيع الرئيسي المتاح من خلال واجهة برمجة التطبيقات للواجهات.
 
-- [إضافة توقيع في ملف PDF](/pdf/ar/java/add-signature-in-pdf/)
-- [إزالة توقيع من ملف PDF](/pdf/ar/java/remove-signature-from-pdf/)
-- [التحقق من التوقيع في ملف PDF](/pdf/ar/java/verify-signature-in-pdf/)
-- [العمل مع التوقيع في ملف PDF](/pdf/ar/java/add-signature-in-pdf/)
+استخدم هذا القسم لتتعلم كيفية:
+
+- التوقيع والتصديق على وثائق PDF
+- فحص أسماء التوقيع وتفاصيل الموقع والطوابع الزمنية
+- التحقق من صحة التوقيع وتغطية المستند بالكامل
+- استخراج شهادة توقيع وإزالة التوقيع الموجود

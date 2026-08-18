@@ -1,18 +1,19 @@
 ---
 title: تحويل PDF إلى تنسيق DOC أو DOCX في Jython
+linktitle: تحويل PDF إلى تنسيق DOC أو DOCX في Jython
 type: docs
 weight: 10
-url: /ar/java/convert-pdf-to-doc-or-docx-format-in-jython/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-doc-or-docx-format-in-jython/
+description: تعرف على كيفية تحويل مستندات PDF إلى تنسيق DOC أو DOCX في Jython باستخدام Aspose.PDF لتسهيل التحرير وإعادة الاستخدام.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - PDF إلى Doc
 
-## Aspose.PDF - تحويل Pdf إلى Doc
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java لـ Jython**. هنا يمكنك رؤية كود مثال.
-خطأ في عرض الماكرو 'code' : قيمة غير صالحة محددة للمعامل lang
+** تنزيل كود التشغيل **
 
-**تحميل الكود الجاري**
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل الكود الجاري من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

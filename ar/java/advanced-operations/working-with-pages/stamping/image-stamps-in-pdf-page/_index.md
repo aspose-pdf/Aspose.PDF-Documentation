@@ -1,111 +1,91 @@
 ---
-title: إضافة ختم صورة في ملف PDF برمجياً
-linktitle: أختام الصور في ملف PDF
+title: إضافة طوابع الصور إلى PDF في Java
+linktitle: طوابع الصور في ملف PDF
 type: docs
 weight: 10
-url: /ar/java/image-stamps-in-pdf-page/
-description: أضف ختم الصورة في مستند PDF الخاص بك باستخدام فئة ImageStamp مع مكتبة Aspose.PDF لـ Java.
-lastmod: "2021-06-05"
+url: /java/image-stamps-in-pdf-page/
+description: تعرف على كيفية إضافة طوابع الصور إلى صفحات PDF في Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: أضف طوابع الصور وخلفيات الصور إلى صفحات PDF باستخدام Java
+Abstract: يشرح هذا المقال كيفية إضافة طوابع الصور إلى ملفات PDF باستخدام Aspose.PDF لـ Java. ويغطي طوابع الصور مع تحديد الموضع والتدوير والعتامة ومراقبة الجودة واستخدام الصورة كخلفية لمربع عائم.
 ---
+يدعم Aspose.PDF for Java طوابع الصور كتراكبات وعناصر تخطيط مدعومة بالصور.
 
-## إضافة ختم صورة في ملف PDF
+## أضف ختم الصورة
 
-يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) لإضافة صورة كختم في مستند PDF. توفر فئة [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) طرقًا لتحديد الارتفاع والعرض والشفافية وغيرها.
+استخدم هذا المثال عندما يجب أن تعرض الصفحة طابع صورة بموضع وعتامة مخصصين.
 
-لإضافة ختم صورة:
-
-1. قم بإنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) وكائن ImageStamp باستخدام الخصائص المطلوبة.
-
-1. استدعاء طريقة [addStamp(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) من فئة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) لإضافة الطابع إلى ملف الـ PDF.
-
-يوضح مقتطف الكود التالي كيفية إضافة طابع صورة في ملف PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) وقم بتكوين مظهره.
+1. أضف الطابع إلى الصفحة واحفظ المستند.
 
 ```java
-public static void AddImageStampInPDFFile() {
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // إنشاء طابع الصورة
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setBackground(true);
         imageStamp.setXIndent(100);
         imageStamp.setYIndent(100);
-        imageStamp.setHeight(48);
-        imageStamp.setWidth(225);
+        imageStamp.setHeight(300);
+        imageStamp.setWidth(300);
         imageStamp.setRotate(Rotation.on270);
         imageStamp.setOpacity(0.5);
 
-        // إضافة الطابع إلى صفحة معينة
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        // حفظ المستند الناتج
-        pdfDocument.save(_dataDir + "AddImageStamp_out.pdf");
-
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## إضافة ختم الصورة مع مراقبة الجودة
 
-## التحكم في جودة الصورة عند إضافة ختم
+استخدم هذا المثال عندما تحتاج إلى ضبط جودة عرض ختم الصورة.
 
-تسمح لك فئة [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) بإضافة صورة كختم في مستند PDF. كما تتيح لك التحكم في جودة الصورة عند إضافة صورة كعلامة مائية في ملف PDF. للسماح بذلك، تمت إضافة طريقة باسم setQuality(...) إلى فئة [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp). يمكن العثور على طريقة مشابهة أيضًا في فئة [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/Stamp) في الحزمة com.aspose.pdf.facades.
-
-يوضح لك مقتطف الشيفرة التالي كيفية التحكم في جودة الصورة عند إضافتها كختم في ملف PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) وقم بتعيين قيمة الجودة.
+1. أضف الختم إلى الصفحة واحفظ النتيجة.
 
 ```java
- public static void ControlImageQualityWhenAddingStamp() {
-        // افتح المستند
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // إنشاء ختم الصورة
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStampWithQualityControl(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setQuality(10);
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        pdfDocument.save(_dataDir + "ControlImageQuality_out.pdf");
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## استخدم صورة كخلفية مربع عائم
 
-## ختم الصورة كخلفية في صندوق عائم
+استخدم هذا المثال عندما يجب أن تكون الصورة بمثابة خلفية لحاوية تخطيط ذات نمط.
 
-تتيح لك Aspose.PDF API إضافة ختم صورة كخلفية في صندوق عائم. يمكن استخدام خاصية BackgroundImage لفئة FloatingBox لتعيين ختم الصورة الخلفية لصندوق عائم كما هو موضح في نموذج الكود التالي.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وقم بالوصول إلى الصفحة المستهدفة.
+1. أنشئ [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) بإعدادات النص والحدود.
+1. قم بتعيين صورة الخلفية، وأضف المربع إلى الصفحة، واحفظ المستند.
 
 ```java
-public static void ImageStampAsBackgroundInFloatingBox() {
-        // إنشاء كائن Document
-        Document doc = new Document();
-        // إضافة صفحة إلى مستند PDF
-        Page page = doc.getPages().add();
+public static void addImageAsBackgroundInFloatingBox(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        FloatingBox box = new FloatingBox(200.0f, 100.0f);
+        box.setLeft(40);
+        box.setTop(80);
+        box.setHorizontalAlignment(HorizontalAlignment.Center);
+        box.getParagraphs().add(new TextFragment("Text in Floating Box"));
+        box.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
 
-        // إنشاء كائن FloatingBox
-        FloatingBox aBox = new FloatingBox(200, 100);
+        Image image = new Image();
+        image.setFile(imageFile.toString());
+        box.setBackgroundImage(image);
+        box.setBackgroundColor(Color.getYellow());
+        page.getParagraphs().add(box);
 
-        // تعيين موضع اليسار لـ FloatingBox
-        aBox.setLeft(40);
-        // تعيين موضع الأعلى لـ FloatingBox
-        aBox.setTop(80);
-        // تعيين المحاذاة الأفقية لـ FloatingBox
-        aBox.setHorizontalAlignment(HorizontalAlignment.Center);
-        // إضافة جزء نص إلى مجموعة الفقرات لـ FloatingBox
-        aBox.getParagraphs().add(new TextFragment("النص الرئيسي"));
-        // تعيين الحدود لـ FloatingBox
-        aBox.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
-
-        // إضافة صورة الخلفية
-        Image img = new Image();
-        img.setFile(_dataDir + "aspose-logo.png");
-        aBox.setBackgroundImage(img);
-
-        // تعيين لون الخلفية لـ FloatingBox
-        aBox.setBackgroundColor(Color.getYellow());
-
-        // إضافة FloatingBox إلى مجموعة الفقرات لكائن الصفحة
-        page.getParagraphs().add(aBox);
-        // حفظ مستند PDF
-        doc.save(_dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+        document.save(outputFile.toString());
     }
 }
 ```

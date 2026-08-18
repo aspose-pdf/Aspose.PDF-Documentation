@@ -1,19 +1,20 @@
 ---
-title: Adding JavaScript using DOM in Jython
+title: إضافة JavaScript باستخدام DOM في Jython
+linktitle: إضافة JavaScript باستخدام DOM في Jython
 type: docs
 weight: 10
-url: /ar/java/adding-javascript-using-dom-in-jython/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-using-dom-in-jython/
+description: تعرف على كيفية إضافة JavaScript إلى مستند PDF باستخدام DOM في Jython، مما يعزز التفاعل داخل المستند.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - إضافة جافا سكريبت
 
-## Aspose.PDF - إضافة Javascript
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية عينة من الكود.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-خطأ في عرض الماكرو 'code' : قيمة غير صالحة محددة للمعلمة lang
+## تحميل كود التشغيل
 
-## تحميل الكود الجاري
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتحميل الكود الجاري من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

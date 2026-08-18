@@ -1,19 +1,20 @@
 ---
-title: إدراج صفحة فارغة في نهاية ملف PDF في Jython
+title: أدخل صفحة فارغة في نهاية ملف PDF في Jython
+linktitle: أدخل صفحة فارغة في نهاية ملف PDF في Jython
 type: docs
 weight: 60
-url: /ar/java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
-lastmod: "2021-06-05"
+url: /java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
+description: اكتشف كيفية إدراج صفحة فارغة في نهاية ملف PDF باستخدام Jython مع Aspose.PDF لتخصيص المستند.
+lastmod: "2026-06-09"
 ---
+## **Aspose.PDF - أدخل صفحة فارغة في نهاية الملف
 
-## **Aspose.PDF - إدراج صفحة فارغة في نهاية الملف
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية كود العينة.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-خطأ في عرض الماكرو 'code' : تم تحديد قيمة غير صحيحة للمعامل lang
+## تحميل كود التشغيل
 
-## تحميل الكود الجاري
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتحميل الكود الجاري من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

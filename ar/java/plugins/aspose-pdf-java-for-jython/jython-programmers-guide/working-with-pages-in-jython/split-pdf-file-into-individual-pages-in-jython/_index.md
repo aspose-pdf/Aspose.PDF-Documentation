@@ -1,19 +1,20 @@
 ---
 title: تقسيم ملف PDF إلى صفحات فردية في Jython
+linktitle: تقسيم ملف PDF إلى صفحات فردية في Jython
 type: docs
 weight: 80
-url: /ar/java/split-pdf-file-into-individual-pages-in-jython/
-lastmod: "2021-06-05"
+url: /java/split-pdf-file-into-individual-pages-in-jython/
+description: تعرف على كيفية تقسيم مستند PDF إلى صفحات فردية باستخدام Jython وAspose.PDF لإدارة المستندات بشكل أفضل.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - تقسيم كافة الصفحات
 
-## Aspose.PDF - تقسيم جميع الصفحات
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية مثال على الكود.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-خطأ في عرض الماكرو 'code' : قيمة غير صالحة محددة للمعامل lang
+## تحميل كود التشغيل
 
-## تحميل الكود الجاري
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل الكود الجاري من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

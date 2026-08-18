@@ -1,23 +1,24 @@
 ---
 title: تقسيم ملف PDF إلى صفحات فردية في PHP
+linktitle: تقسيم ملف PDF إلى صفحات فردية في PHP
 type: docs
 weight: 80
-url: /ar/java/split-pdf-file-into-individual-pages-in-php/
-lastmod: "2021-06-05"
+url: /java/split-pdf-file-into-individual-pages-in-php/
+description: اكتشف كيفية تقسيم مستند PDF إلى صفحات فردية باستخدام PHP وAspose.PDF لاستخراج الصفحات بكفاءة.
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - تقسيم الصفحات
 
-لتقسيم مستند PDF إلى صفحات فردية باستخدام **Aspose.PDF Java for PHP**، قم فقط باستدعاء فئة **SplitAllPages**.
+لتقسيم مستند PDF إلى صفحات فردية باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء فئة **SplitAllPages**.
 
 كود PHP
 
 ```php
 
-# افتح المستند الهدف
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# حلقة عبر جميع الصفحات
+# loop through all the pages
 $pdf_page = 1;
 $total_size = $pdf->getPages()->size();
 #for (int pdfPage = 1; pdfPage<= pdfDocument1.getPages().size(); pdfPage++)
@@ -25,31 +26,25 @@ while ($pdf_page <= $total_size)
 
 {
 
-    # إنشاء كائن مستند جديد
+    # create a new Document object
     $new_document = new Document();
 
-    # الحصول على الصفحة عند فهرس محدد من مجموعة الصفحات
+    # get the page at particular index of Page Collection
     $new_document->getPages()->add($pdf->getPages()->get_Item($pdf_page));
 
-    # حفظ ملف PDF الذي تم إنشاؤه حديثًا
+    # save the newly generated PDF file
     $new_document->save($dataDir . "page_#{$pdf_page}.pdf");
 
     $pdf_page++;
 
 }
 
-print "اكتمل عملية التقسيم بنجاح!";
+print "Split process completed successfully!";
 
 ```
 
-**تحميل الكود التشغيلي**
+** تنزيل كود التشغيل **
 
-قم بتنزيل **تقسيم الصفحات (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+قم بتنزيل **تقسيم الصفحات (Aspose.PDF)**В من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/SplitAllPages.php)
-
-key: description
-
-changefreq: "monthly"
-
-type: docs
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/SplitAllPages.php)

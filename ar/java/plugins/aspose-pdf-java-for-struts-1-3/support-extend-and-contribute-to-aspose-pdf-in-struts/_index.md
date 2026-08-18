@@ -1,57 +1,33 @@
 ---
-title: الدعم، التوسيع والمساهمة في Aspose.Pdf في Struts
+title: دعم وتوسيع والمساهمة في Aspose.Pdf في Struts
+linktitle: دعم وتوسيع والمساهمة في Aspose.Pdf في Struts
 type: docs
 weight: 20
-url: /ar/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
-lastmod: "2021-06-05"
+url: /java/support-extend-and-contribute-to-aspose-pdf-in-struts/
+description: اكتشف كيفية دعم Aspose.PDF لـ Java وتوسيعه والمساهمة فيه في المشاريع المستندة إلى Struts.
+lastmod: "2026-06-09"
 ---
-
-## الدعم
+## يدعم
 
 {{% alert color="primary" %}}
 
-- إذا كنت ترغب في رؤية المشاكل المعروفة / المبلغ عنها (من قبل المستخدمين أو فريق Q.A) في التطبيق.
-- أو إذا كنت ترغب في الإبلاغ عن أي مشكلة وجدتها في التطبيق
-- لديك أي اقتراح تحسين أو ترغب في تقديم طلب ميزة
+- إذا كنت ترغب في رؤية المشكلات المعروفة/المبلغ عنها (من قبل المستخدمين أو فريق ضمان الجودة) في التطبيق.
+- أو تريد الإبلاغ عن أي مشكلة تجدها في التطبيق
+- لديك أي اقتراح للتحسين أو ترغب في تقديم أي طلب ميزة
 
-يرجى استخدام أي من متتبعات المشاكل للمشروع التالية:
+الرجاء استخدام أي من أدوات تعقب مشكلات المشروع التالية:
 
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 {{% /alert %}}
 
+## توسيع والمساهمة
 
-## التوسيع والمساهمة
-
-Aspose.PDF Java لـ Struts 1.3 مفتوح المصدر وكود المصدر متاح على مواقع الترميز الاجتماعي الرئيسية المدرجة أدناه. يُشجع المطورون على تنزيل كود المصدر والمساهمة من خلال اقتراح أو إضافة ميزات جديدة أو تحسين الميزات الحالية، حتى يستفيد الآخرون منها أيضًا.
+Aspose.PDF Java for Struts 1.3 هو برنامج مفتوح المصدر وكود مصدره متاح على مواقع البرمجة الاجتماعية الرئيسية المدرجة أدناه. يتم تشجيع المطورين على تنزيل الكود المصدري والمساهمة من خلال اقتراح أو إضافة ميزات جديدة أو تحسين الميزات الموجودة، حتى يتمكن الآخرون أيضًا من الاستفادة منها.
 
 ## كود المصدر
 
-يمكنك الحصول على أحدث كود مصدر من أحد المواقع التالية
+يمكنك الحصول على أحدث كود المصدر من أحد المواقع التالية
 
-- [CodePlex](https://asposepdfforstruts.codeplex.com)
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)
-
-changefreq: "monthly"
-
-type: docs
-
-```java
-// تحميل المستند
-Document pdfDocument = new Document("input.pdf");
-
-// الحصول على عدد الصفحات
-int pageCount = pdfDocument.getPages().size();
-
-// عرض عدد الصفحات
-System.out.println("عدد الصفحات: " + pageCount);
-```
-
-```yaml
-key: هذا مثال على كيفية تحميل مستند وحساب عدد الصفحات
-```
-
-```json
-{
-  "key": "هذه بيانات تجريبية ولا تمثل مستندًا حقيقيًا"
-}
+- [كودبلكس](https://asposepdfforstruts.codeplex.com)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)

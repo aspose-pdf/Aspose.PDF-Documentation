@@ -1,67 +1,44 @@
 ---
-title: دمج ملفات PDF في روبي
+title: تسلسل ملفات PDF في روبي
+linktitle: تسلسل ملفات PDF في روبي
 type: docs
 weight: 10
-url: /ar/java/concatenate-pdf-files-in-ruby/
-lastmod: "2021-06-05"
+url: /java/concatenate-pdf-files-in-ruby/
+description: قم بدمج ملفات PDF متعددة في مستند واحد باستخدام Ruby وAspose.PDF بكفاءة.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - تسلسل ملفات PDF
 
-## Aspose.PDF - دمج ملفات PDF
-
-لدمج ملفات PDF باستخدام **Aspose.PDF Java for Ruby**، ببساطة استدعِ وحدة **ConcatenatePdfFiles**.
+لتسلسل ملفات PDF باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **ConcatenatePdfFiles**.
 
 كود روبي
 
 ```java
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# افتح المستند الهدف
+# Open the target document
 
 pdf1 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# افتح المستند المصدر
+# Open the source document
 
 pdf2 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input2.pdf')
 
-# أضف صفحات المستند المصدر إلى المستند الهدف
+# Add the pages of the source document to the target document
 
 pdf1.getPages().add(pdf2.getPages())
 
-# احفظ الملف الناتج المدمج (المستند الهدف)
+# Save the concatenated output file (the target document)
 
 pdf1.save(data_dir+ "Concatenate_output.pdf")
 
-puts "تم حفظ المستند الجديد، يرجى التحقق من ملف الإخراج"
+puts "New document has been saved, please check the output file"
 ```
 
-## تحميل الكود الجاري
+## تحميل كود التشغيل
 
-قم بتحميل **دمج ملفات PDF (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تنزيل В ** تسلسل ملفات PDF (Aspose.PDF)** В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)
-
-```ruby
-# تحميل مستندات PDF
-doc1 = Aspose::Pdf::Document.new("Document1.pdf")
-doc2 = Aspose::Pdf::Document.new("Document2.pdf")
-
-# دمج المستندات
-doc1.pages.add(doc2.pages)
-
-# حفظ المستند المدمج
-doc1.save("MergedDocument.pdf")
-```
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getnumberofpages.rb)
-
-```ruby
-# تحميل مستند PDF
-pdf_document = Aspose::Pdf::Document.new("Input.pdf")
-
-# الحصول على عدد الصفحات
-page_count = pdf_document.pages.count
-
-# طباعة عدد الصفحات
-puts "عدد الصفحات: #{page_count}"
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)

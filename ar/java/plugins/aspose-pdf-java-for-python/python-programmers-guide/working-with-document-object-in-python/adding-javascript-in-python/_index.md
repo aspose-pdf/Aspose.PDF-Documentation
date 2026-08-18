@@ -1,12 +1,13 @@
 ---
 title: إضافة جافا سكريبت في بايثون
+linktitle: إضافة جافا سكريبت في بايثون
 type: docs
 weight: 10
-url: /ar/java/adding-javascript-in-python/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-in-python/
+description: تعرف على كيفية تضمين كود JavaScript في مستند PDF باستخدام Python وAspose.PDF لتعزيز التفاعل.
+lastmod: "2026-06-09"
 ---
-
-لإضافة جافا سكريبت باستخدام Aspose.PDF Java في بايثون، ببساطة قم باستدعاء طريقة AddJavascript() لفئة Document.
+لإلحاق إضافة Javascript باستخدام Aspose.PDF Java في Python، ما عليك سوى استدعاء طريقة AddJavascript() لفئة المستند.
 
 ```python
 
@@ -19,20 +20,20 @@ javaScript = self.JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkTo
 doc.setOpenAction(javaScript)
 js=self.JavascriptAction("app.alert('page 2 is opened')")
 
-# إضافة جافا سكريبت على مستوى الصفحة
+# Adding JavaScript at Page Level
 doc.getPages.get_Item(2)
 doc.getActions().setOnOpen(js())
 doc.getPages().get_Item(2).getActions().setOnClose(self.JavascriptAction("app.alert('page 2 is closed')"))
 
-# حفظ مستند PDF
+# Save PDF Document
 doc.save(self.dataDir + "JavaScript-Added.pdf")
 
-print "تمت إضافة جافا سكريبت بنجاح، يرجى التحقق من ملف الإخراج."
+print "Added JavaScript Successfully, please check the output file."
 
 ```
 
-**تحميل الكود الجاري**
+** تنزيل كود التشغيل **
 
-قم بتنزيل **إضافة جافا سكريبت (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+قم بتنزيل **إضافة Javascript (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)

@@ -1,19 +1,20 @@
 ---
-title: إضافة سلسلة HTML باستخدام DOM في Jython
+title: أضف سلسلة HTML باستخدام DOM في Jython
+linktitle: أضف سلسلة HTML باستخدام DOM في Jython
 type: docs
 weight: 10
-url: /ar/java/add-html-string-using-dom-in-jython/
-lastmod: "2021-06-05"
+url: /java/add-html-string-using-dom-in-jython/
+description: اكتشف كيفية إضافة محتوى HTML إلى مستند PDF باستخدام DOM في Jython مع Aspose.PDF لإنشاء مستند غني.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - إضافة HTML
 
-## Aspose.PDF - إضافة Html
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية كود العينة.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-خطأ في عرض الماكرو 'code' : قيمة غير صالحة محددة للمعامل lang
+## تحميل كود التشغيل
 
-## تنزيل الكود التشغيلي
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل الكود التشغيلي من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

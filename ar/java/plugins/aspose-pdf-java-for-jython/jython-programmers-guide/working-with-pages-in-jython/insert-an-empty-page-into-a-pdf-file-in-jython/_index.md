@@ -1,19 +1,20 @@
 ---
-title: إدراج صفحة فارغة في ملف PDF باستخدام Jython
+title: أدخل صفحة فارغة في ملف PDF في Jython
+linktitle: أدخل صفحة فارغة في ملف PDF في Jython
 type: docs
 weight: 70
-url: /ar/java/insert-an-empty-page-into-a-pdf-file-in-jython/
-lastmod: "2021-06-05"
+url: /java/insert-an-empty-page-into-a-pdf-file-in-jython/
+description: تعرف على كيفية إدراج صفحة فارغة في أي موقع لمستند PDF في Jython باستخدام Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - أدخل صفحة فارغة
 
-## Aspose.PDF - إدراج صفحة فارغة
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java لـ Jython**. هنا يمكنك رؤية مثال على الشيفرة.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-خطأ في عرض الماكرو 'code' : قيمة غير صحيحة محددة للمعامل lang
+## تحميل كود التشغيل
 
-## تحميل الشيفرة الجارية
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتحميل الشيفرة الجارية من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

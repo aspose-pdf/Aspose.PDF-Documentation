@@ -1,125 +1,257 @@
 ---
-title: إنشاء مستند
+title: إنشاء ملفات PDF في جافا
+linktitle: إنشاء وثيقة PDF
 type: docs
 weight: 10
-url: /ar/java/create-pdf-document/
-description: يساعد Aspose.PDF for Java على إنشاء مستند PDF وملف PDF قابل للبحث في بضع خطوات سهلة.
-lastmod: "2021-06-05"
+url: /java/create-pdf-document/
+description: تعرف على كيفية إنشاء ملفات PDF وإنشاء ملفات PDF قابلة للبحث في Java باستخدام Aspose.PDF.
+lastmod: "2026-06-09"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: قم بإنشاء ملفات PDF ومستندات PDF قابلة للبحث باستخدام Java
+Abstract: توضح هذه المقالة كيفية إنشاء مستندات PDF باستخدام Aspose.PDF لـ Java. وهو يغطي إنشاء ملف PDF جديد من البداية وتحويل مستند قائم على الصور إلى ملف PDF قابل للبحث عن طريق توفير مخرجات HOCR من محرك OCR خارجي.
 ---
+يدعم Aspose.PDF for Java كلاً من إنشاء المستندات البسيطة وسير عمل PDF القابل للبحث بمساعدة التعرف الضوئي على الحروف.
 
-في هذه المقالة، سنوضح كيفية استخدام Aspose.PDF for Java API لإنشاء وقراءة ملفات PDF بسهولة في تطبيقات Java.
+## إنشاء مستند PDF جديد
 
-تتيح Aspose.PDF for Java API لمطوري تطبيقات Java تضمين وظيفة معالجة مستندات PDF في تطبيقاتهم. يمكن استخدامها لإنشاء وقراءة ملفات PDF دون الحاجة إلى أي برامج أخرى مثبتة على الجهاز الأساسي. يمكن استخدام Aspose.PDF for Java في مجموعة متنوعة من أنواع تطبيقات Java مثل تطبيقات Desktop وJSP وJSF.
+استخدم هذا الأسلوب عندما تحتاج إلى إنشاء ملف PDF بسيط من البداية.
 
-## كيفية إنشاء ملف PDF باستخدام Java
-
-لإنشاء ملف PDF باستخدام Java، يمكن اتباع الخطوات التالية.
-
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
-
-1. أضف كائن [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) إلى مجموعة Pages لكائن Document
-1. أضف [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) إلى مجموعة [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/paragraphs) في الصفحة
-1. احفظ مستند PDF الناتج
+1. قم بإنشاء ملف PDF جديد [مستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) وأضفه إلى الصفحة.
+1. احفظ ملف PDF الناتج [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Scanner;
-
-import javax.imageio.ImageIO;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.Document.CallBackGetHocr;
-
-public class ExampleCreate {
-    
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-    
-    public static void Create() {        
-        Document document = new Document();
- 
-        //إضافة صفحة
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
         Page page = document.getPages().add();
-         
-        // إضافة نص إلى الصفحة الجديدة
         page.getParagraphs().add(new TextFragment("Hello World!"));
-         
-        // حفظ ملف PDF المحدث
-        document.save(_dataDir+"HelloWorld_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## إنشاء ملف PDF قابل للبحث
 
-في هذه الحالة، نقوم بإنشاء مستند PDF من صفحة واحدة بحجم الصفحة A4، وتوجه عمودي. ستحتوي صفحتنا على "مرحباً، أيها العالم" في الجزء العلوي الأيسر من الصفحة.
+يستخدم المثال `createSearchablePdf` `Document.convert(...)` مع تطبيق `CallBackGetHocr`. يقوم رد الاتصال بكتابة الصورة المصدر إلى ملف مؤقت، واستدعاء Tesseract باستخدام الخيار `hocr`، وقراءة علامة HOCR التي تم إنشاؤها، وإعادتها إلى Aspose.PDF.
 
-أيضًا، يوفر Aspose.PDF for Java القدرة على إنشاء كيفية إنشاء PDF قابل للبحث. دعونا نتعلم الشيفرة التالية:
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء رد الاتصال `CallBackGetHocr` وقم بتحويل المستند المصدر إلى محتوى PDF قابل للبحث.
+1. احفظ ملف PDF المحدث [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-public static void CreateSearchablePDF() {                
-        Document doc = new Document(_dataDir + "sample1.pdf");
-        
-        // إنشاء رد اتصال - منطق التعرف على النص لصور PDF. استخدم OCR خارجي يدعم معيار HOCR (http://en.wikipedia.org/wiki/HOCR).
-        // لقد استخدمنا برنامج جوجل تيسيراكت OCR المجاني (http://en.wikipedia.org/wiki/Tesseract_%28software%29)
-        
-        CallBackGetHocr cbgh = new CallBackGetHocr() {
-            @Override
-            public String invoke(java.awt.image.BufferedImage img) {
-                File outputfile = new File(_dataDir + "test.jpg");
-                try {
-                    ImageIO.write(img, "jpg", outputfile);
-                } catch (IOException e1) {
-                    e1.printStackTrace();
+public static void createSearchablePdf(Path inputFile, Path outputFile) {
+    Path tempDir = outputFile.getParent().resolve("ocr-temp");
+    CallBackGetHocr cbgh = new CallBackGetHocr() {
+        @Override
+        public String invoke(java.awt.image.BufferedImage img) {
+            // save the image, run Tesseract with "hocr", and return the HOCR text
+            return fileContents.toString();
+        }
+    };
+    try (Document document = new Document(inputFile.toString())) {
+        document.convert(cbgh);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## الحصول على إعدادات نافذة المستند
+
+استخدم هذا المثال لفحص تفضيلات العارض الحالية المخزنة في مستند PDF موجود.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. اقرأ النافذة المطلوبة واعرض الخصائص من المستند.
+1. قم بإخراج الإعدادات الحالية للفحص أو التصحيح.
+
+```java
+public static void getDocumentWindow(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        System.out.println("CenterWindow: " + document.isCenterWindow());
+        System.out.println("Direction: " + document.getDirection());
+        System.out.println("DisplayDocTitle: " + document.isDisplayDocTitle());
+        System.out.println("FitWindow: " + document.isFitWindow());
+        System.out.println("HideMenuBar: " + document.isHideMenubar());
+        System.out.println("HideToolBar: " + document.isHideToolBar());
+        System.out.println("HideWindowUI: " + document.isHideWindowUI());
+        System.out.println("NonFullScreenPageMode: " + document.getNonFullScreenPageMode());
+        System.out.println("PageLayout: " + document.getPageLayout());
+        System.out.println("PageMode: " + document.getPageMode());
+    }
+}
+```
+
+## ضبط تفضيلات نافذة الوثيقة
+
+يقوم هذا المثال بتحديث كيفية عرض ملف PDF عند فتحه في عارض متوافق.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بتعيين تفضيلات النافذة والتخطيط ووضع الصفحة المطلوبة.
+1. احفظ ملف PDF المحدث [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+```java
+public static void setDocumentWindow(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setCenterWindow(true);
+        document.setDirection(Direction.R2L);
+        document.setDisplayDocTitle(true);
+        document.setFitWindow(true);
+        document.setHideMenubar(true);
+        document.setHideToolBar(true);
+        document.setHideWindowUI(true);
+        document.setNonFullScreenPageMode(PageMode.UseOC);
+        document.setPageLayout(PageLayout.TwoColumnLeft);
+        document.setPageMode(PageMode.UseThumbs);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## تضمين الخطوط في ملف PDF موجود
+
+استخدم هذا الأسلوب عندما يجب أن يحمل المستند الخطوط المطلوبة للحصول على عرض أكثر موثوقية على الأنظمة الأخرى.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بتمكين تضمين الخط القياسي وكرر الخطوط المستخدمة بواسطة كل [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. قم بوضع علامة على أي كائنات [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) غير مضمنة للتضمين.
+1. احفظ المستند المحدث.
+
+```java
+public static void embeddedFonts(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setEmbedStandardFonts(true);
+        for (Page page : document.getPages()) {
+            for (Font pageFont : page.getResources().getFonts()) {
+                if (!pageFont.isEmbedded()) {
+                    pageFont.setEmbedded(true);
                 }
-        
-                try {
-                    java.lang.Process process = Runtime.getRuntime().exec("tesseract" + " " + _dataDir + "test.jpg" + " " + _dataDir + "out hocr");
-                    System.out.println("tesseract" + " " + _dataDir + "test.jpg" + " " + _dataDir + "out hocr");
-                    process.waitFor();
-        
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-        
-                // قراءة out.html إلى سلسلة
-                File file = new File(_dataDir + "out.hocr");
-                StringBuilder fileContents = new StringBuilder((int) file.length());
-                Scanner scanner = null;
-                try {
-                    scanner = new Scanner(file);
-                    String lineSeparator = System.getProperty("line.separator");
-        
-                    while (scanner.hasNextLine()) {
-                        fileContents.append(scanner.nextLine() + lineSeparator);
-                    }
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } finally {
-                    if (scanner != null)
-                        scanner.close();
-                }
-        
-                // حذف الملفات المؤقتة
-                File fileOut = new File(_dataDir + "out.hocr");
-                if (fileOut.exists()) {
-                    fileOut.delete();
-                }
-                File fileTest = new File(_dataDir + "test.jpg");
-                if (fileTest.exists()) {
-                    fileTest.delete();
-                }
-        
-                return fileContents.toString();
             }
-        };
-        // نهاية رد الاتصال
-        
-        doc.convert(cbgh);
-        doc.save(_dataDir + "output971.pdf");        
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## تضمين الخطوط عند إنشاء ملف PDF جديد
+
+يقوم هذا المثال بإنشاء ملف PDF جديد وتعيين خط مضمن لمحتوى النص من البداية.
+
+1. أنشئ [مستند] PDF جديدًا (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. قم بإنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) و[TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/) و[TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) المطلوبة.
+1. قم بحل الهدف [الخط](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) من المستودع ووضع علامة عليه كمضمن.
+1. أضف محتوى النص إلى الصفحة واحفظ مستند الإخراج.
+
+```java
+public static void embeddedFontsInNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            TextFragment fragment = new TextFragment("");
+            TextSegment segment = new TextSegment(" This is a sample text using Custom font.");
+            TextState textState = new TextState();
+            Font font = FontRepository.findFont("Arial");
+            font.setEmbedded(true);
+            textState.setFont(font);
+            segment.setTextState(textState);
+            fragment.getSegments().add(segment);
+            page.getParagraphs().add(fragment);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## قم بتعيين الخط الافتراضي لإخراج PDF
+
+استخدم هذا النمط عندما يجب أن يعود المستند المحفوظ إلى خط معين أثناء إنشاء الإخراج.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) وقم بتعيين اسم الخط الافتراضي.
+1. احفظ المستند باستخدام خيارات الحفظ التي تم تكوينها.
+
+```java
+public static void setDefaultFont(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfSaveOptions saveOptions = new PdfSaveOptions();
+        saveOptions.setDefaultFontName("Arial");
+        document.save(outputFile.toString(), saveOptions);
+    }
+}
+```
+
+## احصل على جميع الخطوط المستخدمة في ملف PDF
+
+يسرد هذا المثال كل خط تم اكتشافه في المستند حتى تتمكن من تدقيق استخدام الخط قبل تصدير الملف أو تحديثه.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. تعداد الخطوط التي يتم إرجاعها بواسطة الأدوات المساعدة لخطوط المستند.
+1. قم بإخراج اسم كل [خط] تم اكتشافه (https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+
+```java
+public static void getAllFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Font font : document.getFontUtilities().getAllFonts()) {
+            System.out.println(font.getFontName());
+        }
+    }
+}
+```
+
+## تحسين تضمين الخط عن طريق تعيين الخطوط الفرعية
+
+استخدم هذا الأسلوب عندما تريد تقليل حمولة الخط مع الحفاظ على توافق بيانات الخط المضمنة مع استخدام المستند.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بتشغيل الإعداد الفرعي للخط من خلال الأدوات المساعدة لخطوط المستند باستخدام قيم [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) المطلوبة.
+1. احفظ المستند الأمثل.
+
+```java
+public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## اضبط عامل تكبير/تصغير المستند المفتوح
+
+يقوم هذا المثال بتكوين مستوى التكبير/التصغير الأولي الذي يجب تطبيقه عند فتح ملف PDF.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) باستخدام [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. قم بتعيين الإجراء كإجراء فتح المستند واحفظ النتيجة.
+
+```java
+public static void setZoomFactor(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0.0, 0.0, 0.5));
+        document.setOpenAction(action);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## احصل على عامل التكبير/التصغير المفتوح للمستند
+
+استخدم هذا المثال لفحص ما إذا كان ملف PDF قد قام بالفعل بتعريف مستوى تكبير واضح للإجراء المفتوح الخاص به.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. تحقق مما إذا كان الإجراء المفتوح هو [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. قم بإخراج قيمة التكبير/التصغير التي تم تكوينها أو الإبلاغ عن عدم تعيين أي تكبير/تصغير.
+
+```java
+public static void getZoomFactor(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getOpenAction() instanceof GoToAction action
+                && action.getDestination() instanceof XYZExplicitDestination destination) {
+            System.out.println("Zoom: " + destination.getZoom());
+        } else {
+            System.out.println("Zoom: not set");
+        }
     }
 }
 ```

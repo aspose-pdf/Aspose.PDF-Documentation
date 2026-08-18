@@ -1,15 +1,15 @@
 ---
-title: إضافة نص إلى ملف PDF موجود باستخدام Python
+title: أضف نصًا إلى ملف PDF الموجود باستخدام Python
+linktitle: أضف نصًا إلى ملف PDF الموجود باستخدام Python
 type: docs
 weight: 20
-url: /ar/java/add-text-to-an-existing-pdf-file-in-python/
-lastmod: "2021-06-05"
-description: مثال على الكود لكيفية إضافة أو كتابة نص في مستند Pdf باستخدام Python مع مكتبة PDF.
+url: /java/add-text-to-an-existing-pdf-file-in-python/
+lastmod: "2026-06-09"
+description: مثال على التعليمات البرمجية حول كيفية إضافة نص أو كتابته في مستند Pdf باستخدام Python مع مكتبة PDF.
 ---
+## كتابة أو إضافة نص في PDF باستخدام بايثون
 
-## كتابة أو إضافة نص في PDF باستخدام Python
-
-لإضافة سلسلة نصية في مستند Pdf باستخدام **Aspose.PDF Java for Python**، قم باستدعاء وحدة **AddText** ببساطة.
+لإضافة سلسلة نصية في مستند Pdf باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء وحدة **AddText**.
 
 ```python
 doc=self.Document()
@@ -18,7 +18,7 @@ doc=self.dataDir + 'input1.pdf'
 pdf_page=self.Document()
 pdf_page.getPages().get_Item(1)
 
-text_fragment=self.TextFragment("النص الرئيسي")
+text_fragment=self.TextFragment("main text")
 position=self.Position()
 text_fragment.setPosition(position(100,600))
 
@@ -31,14 +31,13 @@ text_fragment.getTextState().setFontSize(14)
 text_builder=self.TextBuilder(pdf_page)
 text_builder.appendText(text_fragment)
 
-# حفظ ملف PDF
+# Save PDF file
 doc.save(self.dataDir + "Text_Added.pdf")
-print "تمت إضافة النص بنجاح"
+print "Text added successfully"
 ```
 
+** تنزيل كود التشغيل **
 
-**تنزيل الكود الجاري**
+تنزيلВ **إضافة نص (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **إضافة نص (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddText/AddText.py)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddText/AddText.py)

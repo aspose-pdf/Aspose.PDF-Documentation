@@ -1,321 +1,188 @@
 ---
-title: تحويل PDF إلى تنسيقات الصور
-linktitle: تحويل PDF إلى صور
+title: تحويل PDF إلى تنسيقات الصور في جافا
+linktitle: تحويل قوات الدفاع الشعبي إلى الصور
 type: docs
 weight: 70
-url: /ar/java/convert-pdf-to-images-format/
-lastmod: "2021-11-19"
-description: يوضح هذا الموضوع كيف يسمح Aspose.PDF بتحويل PDF إلى تنسيقات صور متنوعة. تحويل صفحات PDF إلى صور PNG وJPEG وBMP ببضع سطور من التعليمات البرمجية.
+url: /java/convert-pdf-to-images-format/
+lastmod: "2026-06-16"
+description: تعرف على كيفية عرض صفحات PDF كملفات TIFF، وBMP، وEMF، وJPEG، وPNG، وGIF، وSVG في Java باستخدام Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: تحويل صفحات PDF إلى TIFF، PNG، JPEG، GIF، BMP، EMF، وSVG في Java
+Abstract: يشرح هذا المقال كيفية تحويل ملفات PDF إلى تنسيقات صور شائعة باستخدام Aspose.PDF لـ Java. ويغطي تصدير TIFF على مستوى المستند، وإنشاء البيانات النقطية لكل صفحة باستخدام أجهزة الصور، واستبدال الخط الاختياري أثناء تصدير PNG، وإخراج SVG باستخدام `SvgSaveOptions`.
 ---
+يمكن لـ Aspose.PDF for Java عرض صفحات PDF بتنسيقات صور نقطية ومتجهة مع خيارات جهاز خاصة بالتنسيق.
 
-**Aspose.PDF for Java** يتيح لك تحويل مستندات PDF إلى تنسيقات الصور مثل BMP وJPEG وGIF وPNG وEMF وTIFF وSVG باستخدام طريقتين. يتم التحويل باستخدام Device واستخدام SaveOption.
+## تحويل قوات الدفاع الشعبي إلى BMP
 
-هناك عدة فئات في المكتبة تتيح لك استخدام جهاز افتراضي لتحويل الصور. تم تصميم DocumentDevice لتحويل المستند بالكامل، بينما ImageDevice - لصفحة معينة.
+استخدم هذا المثال عندما يجب عرض صفحات PDF كصور BMP.
 
-## تحويل PDF باستخدام فئة DocumentDevice
-
-**Aspose.PDF for Java** يجعل من الممكن تحويل صفحات PDF إلى صور TIFF.
-
-تسمح لك [فئة TiffDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice) بتحويل صفحات PDF إلى صور TIFF.
- هذه الفئة توفر طريقة باسم Process والتي تسمح لك بتحويل جميع الصفحات في ملف PDF إلى صورة TIFF واحدة.
-
-### تحويل صفحات PDF إلى صورة TIFF واحدة
-
-Aspose.PDF for Java يشرح كيفية تحويل جميع الصفحات في ملف PDF إلى صورة TIFF واحدة:
-
-1. أنشئ كائن من فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. استدعِ طريقة [Process](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/DocumentDevice#process-com.aspose.pdf.IDocument-int-int-java.io.OutputStream-) لتحويل المستند.
-1. لضبط خصائص ملف الإخراج، استخدم فئة [TiffSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/TiffSettings).
-
-يوضح مقتطف الكود التالي كيفية تحويل جميع صفحات PDF إلى صورة TIFF واحدة.
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) باستخدام [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة في البوصة.
+1. قم بالتكرار عبر `document.getPages()` واتصل بـ`device.process(...)` لكل صفحة.
+1. حفظ صور BMP التي تم إنشاؤها إلى مسارات الإخراج المرقمة.
 
 ```java
-// فتح المستند
-String documentFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF.pdf").toString();
-Document document = new Document(documentFileName);
-
-// إنشاء كائن Resolution
-Resolution resolution = new Resolution(300);
-
-// إنشاء كائن TiffSettings
-TiffSettings tiffSettings = new TiffSettings();
-tiffSettings.setCompression(CompressionType.None);
-tiffSettings.setDepth(ColorDepth.Default);
-tiffSettings.setShape(ShapeType.Landscape);
-tiffSettings.setSkipBlankPages(false);
-
-// إنشاء جهاز TIFF
-TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
-
-// تحويل صفحة معينة وحفظ الصورة في تيار
-tiffDevice.process(document, DATA_DIR + "AllPagesToTIFF_out.tif");
+public static void convertPdfToBmp(Path inputFile, Path outputPrefix) {
+       try (Document document = new Document(inputFile.toString())) {
+           BmpDevice device = new BmpDevice(new Resolution(300));
+           for (int page = 1; page <= document.getPages().size(); page++) {
+               device.process(document.getPages().get_Item(page), numberedOutput(outputPrefix, page, "bmp"));
+           }
+       }
+       System.out.println(inputFile + " converted into " + outputPrefix);
+   }
 ```
 
-### تحويل صفحة واحدة إلى صورة TIFF
+## تحويل قوات الدفاع الشعبي إلى EMF
 
-يسمح Aspose.PDF لـ Java بتحويل صفحة معينة في ملف PDF إلى صورة TIFF، استخدم نسخة محملة من طريقة Process(..) التي تأخذ رقم الصفحة كوسيطة للتحويل. يوضح مقتطف الشيفرة التالي كيفية تحويل الصفحة الأولى من PDF إلى صيغة TIFF.
+استخدم هذا المثال عندما يجب تصدير صفحات PDF كصور متجهة لـ EMF.
 
-```java
-// افتح المستند
-String documentFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF.pdf").toString();
-String tiffFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF_out.tif").toString();
-Document document = new Document(documentFileName);
-
-// إنشاء كائن Resolution
-Resolution resolution = new Resolution(300);
-
-// إنشاء كائن TiffSettings
-TiffSettings tiffSettings = new TiffSettings();
-tiffSettings.setCompression(CompressionType.None);
-tiffSettings.setDepth(ColorDepth.Default);
-tiffSettings.setShape(ShapeType.Landscape);
-
-// إنشاء جهاز TIFF
-TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
-
-// تحويل صفحة معينة وحفظ الصورة في التدفق
-tiffDevice.process(document, 1, 1, tiffFileName);
-```
-
-
-### استخدام خوارزمية برادلي أثناء التحويل
-
-يدعم Aspose.PDF for Java ميزة تحويل PDF إلى TIFF باستخدام ضغط LZW ثم باستخدام AForge يمكن تطبيق التثنيم. ومع ذلك، طلب أحد العملاء أنه لبعض الصور، يحتاجون إلى الحصول على العتبة باستخدام Otsu، لذا يرغبون أيضًا في استخدام برادلي.
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/) باستخدام [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة لكل بوصة.
+1. كرر الصفحات واتصل بـ `device.process(...)` لكل صفحة.
+1. احفظ مخرجات EMF في مسارات الملفات المرقمة.
 
 ```java
-// فتح المستند
-String documentFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF.pdf").toString();
-Document document = new Document(documentFileName);
-
-String outputImageFileName = Paths.get(DATA_DIR.toString(), "resultant_out.tif").toString();
-String outputBinImageFileName = Paths.get(DATA_DIR.toString(), "tiff-bin_out.tif").toString();
-
-java.io.OutputStream outputImageFile = new java.io.FileOutputStream(outputImageFileName);
-java.io.OutputStream outputBinImageFile = new java.io.FileOutputStream(outputBinImageFileName);
-
-// إنشاء كائن Resolution
-Resolution resolution = new Resolution(300);
-// إنشاء كائن TiffSettings
-TiffSettings tiffSettings = new TiffSettings();
-tiffSettings.setCompression(CompressionType.LZW);
-tiffSettings.setDepth(ColorDepth.Format1bpp);
-
-// إنشاء جهاز TIFF
-TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
-// تحويل صفحة معينة وحفظ الصورة في التدفق
-tiffDevice.process(document, outputImageFile);
-outputImageFile.close();
-
-// إنشاء كائن التدفق لحفظ الصورة الناتجة
-java.io.InputStream inStream = new java.io.FileInputStream(outputImageFileName);
-tiffDevice.binarizeBradley(inStream, outputBinImageFile, 0.1);
-```
-
-
-### تحويل صفحات PDF إلى صور TIFF متقطعة
-
-لتحويل جميع الصفحات في ملف PDF إلى صيغة TIFF متقطعة، استخدم خيار Pixelated من IndexedConversionType
-
-```java
-// تحويل صفحات PDF إلى صور TIFF متقطعة
-// لتحويل جميع الصفحات في ملف PDF إلى صيغة TIFF متقطعة، استخدم خيار Pixelated
-// من IndexedConversionType.
-
-// افتح المستند
-String documentFileName = Paths.get(DATA_DIR.toString(), "PageToTIFF.pdf").toString();
-Document document = new Document(documentFileName);
-
-// أنشئ كائن تدفق لحفظ صورة المخرجات
-java.io.OutputStream imageStream = new java.io.FileOutputStream("Image.tiff");
-
-// أنشئ كائن الدقة
-com.aspose.pdf.devices.Resolution resolution = new com.aspose.pdf.devices.Resolution(300);
-
-// أنشئ كائن TiffSettings
-com.aspose.pdf.devices.TiffSettings tiffSettings = new com.aspose.pdf.devices.TiffSettings();
-
-// تعيين الضغط لصورة TIFF الناتجة
-tiffSettings.setCompression(com.aspose.pdf.devices.CompressionType.CCITT4);
-// تعيين عمق اللون للصورة الناتجة
-tiffSettings.setDepth(com.aspose.pdf.devices.ColorDepth.Format4bpp);
-// تخطي الصفحات الفارغة أثناء تحويل PDF إلى TIFF
-tiffSettings.setSkipBlankPages(true);
-// تعيين سطوع الصورة
-tiffSettings.setBrightness(.5f);
-
-// تعيين نوع التحويل المفهرس، القيمة الافتراضية هي بسيطة
-tiffSettings.setIndexedConversionType(IndexedConversionType.Pixelated);
-
-// أنشئ كائن TiffDevice مع دقة معينة
-TiffDevice tiffDevice = new TiffDevice(2480, 3508, resolution, tiffSettings);
-
-// تحويل صفحة معينة (الصفحة 1) وحفظ الصورة في التدفق
-tiffDevice.process(document, 1, 1, imageStream);
-
-// إغلاق التدفق
-imageStream.close();
-```
-
-
-{{% alert color="success" %}}
-**حاول تحويل PDF إلى TIFF عبر الإنترنت**
-
-يقدم لك Aspose.PDF for Java تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
-
-[![تحويل Aspose.PDF من PDF إلى TIFF باستخدام التطبيق المجاني](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
-{{% /alert %}}
-
-## تحويل PDF باستخدام فئة ImageDevice
-
-`ImageDevice` هو السلف لفئات `BmpDevice`، `JpegDevice`، `GifDevice`، `PngDevice` و `EmfDevice`.
-
-- تسمح لك فئة [BmpDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice) بتحويل صفحات PDF إلى صور <abbr title="ملف صورة نقطية">BMP</abbr>.
-- تسمح لك فئة [EmfDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/EmfDevice) بتحويل صفحات PDF إلى صور <abbr title="ملف ميتا معزز">EMF</abbr>.
-
-- تسمح لك فئة [JpegDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/JpegDevice) بتحويل صفحات PDF إلى صور JPEG.
-- تتيح لك فئة [PngDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/PngDevice) تحويل صفحات PDF إلى صور <abbr title="رسومات الشبكة المحمولة">PNG</abbr>.
-- تتيح لك فئة [GifDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/GifDevice) تحويل صفحات PDF إلى صور <abbr title="تنسيق تبادل الرسومات">GIF</abbr>.
-
-لنلقِ نظرة على كيفية تحويل صفحة PDF إلى صورة.
-
-توفر فئة [BmpDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice) طريقة باسم [Process](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/BmpDevice#process-com.aspose.pdf.Page-com.aspose.ms.System.Drawing.Graphics-) والتي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة BMP. تحتوي الفئات الأخرى على نفس الطريقة. لذا، إذا كنا بحاجة إلى تحويل صفحة PDF إلى صورة، فإننا نقوم فقط بإنشاء نسخة من الفئة المطلوبة.
-
-يوضح مقتطف الشيفرة التالي هذا الاحتمال:
-
-```java
-package com.aspose.pdf.examples.conversion;
-
-import com.aspose.pdf.Document;
-import com.aspose.pdf.devices.*;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-/**
- * تحويل PDF إلى صورة.
- */
-public final class ConvertPDFtoImage {
-    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    private ConvertPDFtoImage() {
-
-    }
-
-    public static void run() throws IOException {
-        runConvertPdfUsingImageDevice();
-    }
-
-    public static void runConvertPdfUsingImageDevice() throws IOException {
-        // إنشاء كائن Resolution
-        Resolution resolution = new Resolution(300);
-        BmpDevice bmpDevice = new BmpDevice(resolution);
-        JpegDevice jpegDevice = new JpegDevice(resolution);
-        GifDevice gifDevice = new GifDevice(resolution);
-        PngDevice pngDevice = new PngDevice(resolution);
-        EmfDevice emfDevice = new EmfDevice(resolution);
-
-        Document document = new Document(DATA_DIR + "ConvertAllPagesToBmp.pdf");
-
-        convertPDFtoImages(bmpDevice, "bmp", document);
-        convertPDFtoImages(jpegDevice, "jpeg", document);
-        convertPDFtoImages(gifDevice, "gif", document);
-        convertPDFtoImages(pngDevice, "png", document);
-        convertPDFtoImages(emfDevice, "emf", document);
-    }
-
-    public static void convertPDFtoImages(
-            ImageDevice imageDevice,
-            String ext,
-            Document document)
-            throws IOException {
-        for (int pageCount = 1; pageCount <= document.getPages().size(); pageCount++) {
-            java.io.OutputStream imageStream = new java.io.FileOutputStream(
-                    DATA_DIR + "image" + pageCount + "_out." + ext);
-            // تحويل صفحة معينة وحفظ الصورة إلى المجرى
-            imageDevice.process(document.getPages().get_Item(pageCount), imageStream);
-
-            // إغلاق المجرى
-            imageStream.close();
+public static void convertPdfToEmf(Path inputFile, Path outputPrefix) {
+    try (Document document = new Document(inputFile.toString())) {
+        EmfDevice device = new EmfDevice(new Resolution(300));
+        for (int page = 1; page <= document.getPages().size(); page++) {
+            device.process(document.getPages().get_Item(page), numberedOutput(outputPrefix, page, "emf"));
         }
     }
+    System.out.println(inputFile + " converted into " + outputPrefix);
 }
 ```
 
+## تحويل قوات الدفاع الشعبي إلى GIF
 
-{{% alert color="success" %}}
-**حاول تحويل PDF إلى PNG عبر الإنترنت**
+استخدم هذا المثال عندما يجب تحويل صفحات PDF إلى صور GIF.
 
-كمثال على كيفية عمل تطبيقاتنا المجانية، يرجى التحقق من الميزة التالية.
-
-يقدم لك Aspose.PDF for Java تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
-
-[![كيفية تحويل PDF إلى PNG باستخدام التطبيق المجاني](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
-{{% /alert %}}
-
-## تحويل PDF باستخدام فئة SaveOptions
-
-يوضح لك هذا الجزء من المقالة كيفية تحويل PDF إلى <abbr title="رسومات متجهة قابلة للتوسع">SVG</abbr> باستخدام جافا وفئة SaveOptions.
-
-{{% alert color="success" %}}
-**حاول تحويل PDF إلى SVG عبر الإنترنت**
-
-يقدم لك Aspose.PDF for Java تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
-
-[![تحويل Aspose.PDF من PDF إلى SVG باستخدام التطبيق المجاني](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
-{{% /alert %}}
-
-**رسومات المتجهات القابلة للتوسع (SVG)** هي مجموعة من المواصفات لصيغة ملف تعتمد على XML للرسومات المتجهة ثنائية الأبعاد، سواء كانت ثابتة أو ديناميكية (تفاعلية أو متحركة). تعتبر مواصفات SVG معيارًا مفتوحًا قيد التطوير من قبل اتحاد شبكة الويب العالمية (W3C) منذ عام 1999.
-
-يتم تعريف صور SVG وسلوكياتها في ملفات نصية بصيغة XML. هذا يعني أنه يمكن البحث فيها، وفهرستها، وبرمجتها، وضغطها إذا لزم الأمر. وكملفات XML، يمكن إنشاء وتحرير صور SVG باستخدام أي محرر نصوص، ولكن من الأكثر ملاءمة غالبًا إنشاؤها باستخدام برامج رسم مثل Inkscape.
-
-### تحويل صفحات PDF إلى صور SVG
-
-يدعم Aspose.PDF for Java ميزة تحويل ملفات PDF إلى صيغة SVG.
- لتلبية هذا المتطلب، تم تقديم فئة [SvgSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) في الحزمة com.aspose.pdf. قم بإنشاء كائن من [SvgSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SvgSaveOptions) ومرره كوسيط ثانٍ إلى طريقة [Document.save(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-يظهر مقطع الشيفرة التالي الخطوات اللازمة لتحويل ملف PDF إلى تنسيق SVG.
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) باستخدام [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة في البوصة.
+1. كرر الصفحات واتصل بـ `device.process(...)` لعرض كل صفحة.
+1. احفظ ملفات GIF في مسارات الإخراج المرقمة.
 
 ```java
-package com.aspose.pdf.examples.conversion;
-
-import com.aspose.pdf.Document;
-import com.aspose.pdf.SvgSaveOptions;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-/**
- * تحويل PDF إلى SVG.
- */
-public class ConvertPDFtoSVG {
-    // المسار إلى دليل المستندات.
-    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    private ConvertPDFtoSVG() {
-
+public static void convertPdfToGif(Path inputFile, Path outputPrefix) {
+    try (Document document = new Document(inputFile.toString())) {
+        GifDevice device = new GifDevice(new Resolution(300));
+        for (int page = 1; page <= document.getPages().size(); page++) {
+            device.process(document.getPages().get_Item(page), numberedOutput(outputPrefix, page, "gif"));
+        }
     }
+    System.out.println(inputFile + " converted into " + outputPrefix);
+}
+```
 
-    public static void run() throws IOException {
-        String pdfFileName = Paths.get(DATA_DIR.toString(), "input.pdf").toString();
-        String svgFileName = Paths.get(DATA_DIR.toString(), "PDFToSVG_out.svg").toString();
+## تحويل قوات الدفاع الشعبي إلى JPEG
 
-        // تحميل مستند PDF
-        Document document = new Document(pdfFileName);
+استخدم هذا المثال عندما يجب تصدير صفحات PDF كصور JPEG.
 
-        // إنشاء كائن من SvgSaveOptions
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) باستخدام [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة في البوصة.
+1. قم بالتكرار عبر الصفحات واتصل بـ `device.process(...)` لتنقيط كل صفحة إلى JPEG.
+1. احفظ ملفات إخراج JPEG في مسارات مرقمة.
+
+```java
+public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
+    try (Document document = new Document(inputFile.toString())) {
+        JpegDevice device = new JpegDevice(new Resolution(300));
+        for (int page = 1; page <= document.getPages().size(); page++) {
+            device.process(document.getPages().get_Item(page), numberedOutput(outputPrefix, page, "jpeg"));
+        }
+    }
+    System.out.println(inputFile + " converted into " + outputPrefix);
+}
+```
+
+## تحويل قوات الدفاع الشعبي إلى PNG
+
+استخدم هذا المثال عندما يجب تحويل صفحات PDF إلى صور PNG.
+
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) باستخدام [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة في البوصة.
+1. كرر الصفحات واتصل بـ `device.process(...)` لكل صفحة PDF.
+1. احفظ مخرجات PNG في مسارات الملفات المرقمة.
+
+```java
+public static void convertPdfToPng(Path inputFile, Path outputPrefix) {
+    try (Document document = new Document(inputFile.toString())) {
+        PngDevice device = new PngDevice(new Resolution(300));
+        for (int page = 1; page <= document.getPages().size(); page++) {
+            device.process(document.getPages().get_Item(page), numberedOutput(outputPrefix, page, "png"));
+        }
+    }
+    System.out.println(inputFile + " converted into " + outputPrefix);
+}
+```
+
+## قم بتحويل PDF إلى PNG باستخدام خط احتياطي افتراضي
+
+استخدم هذا المثال عندما يجب أن يستخدم العرض خطًا احتياطيًا للحروف الرسومية المفقودة.
+
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) باستخدام [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة في البوصة.
+1. قم بتمكين `document.setAbsentFontTryToSubstitute(true)` حتى تتمكن الحروف الرسومية المفقودة من الرجوع إلى الخطوط البديلة أثناء العرض.
+1. قم بعرض الصفحات وحفظ ملفات PNG.
+
+```java
+public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPrefix) {
+    try (Document document = new Document(inputFile.toString())) {
+        PngDevice device = new PngDevice(new Resolution(300));
+        document.setAbsentFontTryToSubstitute(true);
+        for (int page = 1; page <= document.getPages().size(); page++) {
+            device.process(document.getPages().get_Item(page), numberedOutput(outputPrefix, page, "png"));
+        }
+    }
+    System.out.println(inputFile + " converted into " + outputPrefix);
+}
+```
+
+## تحويل قوات الدفاع الشعبي إلى SVG
+
+استخدم هذا المثال عندما يجب تصدير صفحات PDF كرسومات SVG.
+
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [`SvgSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions/) وقم بتعطيل ضغط ZIP عندما يكون الإخراج الأولي `.svg` مطلوبًا.
+1. قم بتمكين `setTreatTargetFileNameAsDirectory(true)` بحيث يمكن تنظيم إخراج SVG لكل صفحة ضمن المسار المستهدف.
+1. احفظ مخرجات SVG.
+
+```java
+public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
+    try (Document document = new Document(inputFile.toString())) {
         SvgSaveOptions saveOptions = new SvgSaveOptions();
-
-        // عدم ضغط صورة SVG إلى أرشيف Zip
         saveOptions.setCompressOutputToZipArchive(false);
-
-        // حفظ المخرجات في ملفات SVG
-        document.save(svgFileName, saveOptions);
-        document.close();
+        saveOptions.setTreatTargetFileNameAsDirectory(true);
+        document.save(outputPrefix + ".svg", saveOptions);
     }
+    System.out.println(inputFile + " converted into " + outputPrefix);
+}
+```
+
+## تحويل قوات الدفاع الشعبي إلى TIFF
+
+استخدم هذا المثال عندما يجب تصدير صفحة PDF واحدة أو أكثر إلى TIFF.
+
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [`TiffSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffsettings/) وقم بتكوين الضغط وعمق الألوان وسلوك الصفحة الفارغة.
+1. قم بإنشاء [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/) باستخدام [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة في البوصة وإعدادات TIFF المعدة.
+1. قم بعرض الصفحات وحفظ مخرجات TIFF.
+
+```java
+public static void convertPdfToTiff(Path inputFile, Path outputPrefix) {
+    try (Document document = new Document(inputFile.toString())) {
+        TiffSettings tiffSettings = new TiffSettings();
+        tiffSettings.setCompression(CompressionType.LZW);
+        tiffSettings.setDepth(ColorDepth.Default);
+        tiffSettings.setSkipBlankPages(false);
+
+        TiffDevice tiffDevice = new TiffDevice(new Resolution(300), tiffSettings);
+        tiffDevice.process(document, outputPrefix + ".tiff");
+    }
+    System.out.println(inputFile + " converted into " + outputPrefix);
 }
 ```

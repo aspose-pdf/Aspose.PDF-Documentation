@@ -1,33 +1,34 @@
 ---
-title: دمج ملفات PDF في بايثون
+title: تسلسل ملفات PDF في بايثون
+linktitle: تسلسل ملفات PDF في بايثون
 type: docs
 weight: 10
-url: /ar/java/concatenate-pdf-files-in-python/
-lastmod: "2021-06-05"
+url: /java/concatenate-pdf-files-in-python/
+description: تعرف على كيفية ربط ملفات PDF متعددة في مستند PDF واحد في Python باستخدام Aspose.PDF، مما يبسط إدارة المستندات.
+lastmod: "2026-06-09"
 ---
-
-لدمج ملفات PDF باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **ConcatenatePdfFiles**.
+لتسلسل ملفات PDF باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء فئة **ConcatenatePdfFiles**.
 
 ```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# افتح المستند المصدر
+# Open the source document
 pdf1 = self.Document()
 pdf1=self.dataDir + 'input2.pdf'
 
-# أضف صفحات المستند المصدر إلى المستند الهدف
+# Add the pages of the source document to the target document
 pdf1.getPages().add(pdf1.getPages())
 
-# احفظ ملف الإخراج المدمج (المستند الهدف)
+# Save the concatenated output file (the target document)
 doc.save(self.dataDir + "Concatenate_output.pdf")
 
-print "تم حفظ المستند الجديد، يرجى التحقق من ملف الإخراج"
+print "New document has been saved, please check the output file"
 ```
 
-**تحميل الشيفرة الجارية**
+** تنزيل كود التشغيل **
 
-قم بتنزيل **دمج ملفات PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تنزيل В ** تسلسل ملفات PDF (Aspose.PDF)** В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/ConcatenatePdfFiles/ConcatenatePdfFiles.py)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/ConcatenatePdfFiles/ConcatenatePdfFiles.py)

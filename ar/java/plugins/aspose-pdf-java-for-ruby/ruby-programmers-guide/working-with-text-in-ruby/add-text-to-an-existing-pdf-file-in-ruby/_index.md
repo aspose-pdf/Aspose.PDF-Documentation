@@ -1,32 +1,32 @@
 ---
-title: إضافة نص إلى ملف PDF موجود في روبي
+title: أضف نصًا إلى ملف PDF موجود في روبي
+linktitle: أضف نصًا إلى ملف PDF موجود في روبي
 type: docs
 weight: 20
-url: /ar/java/add-text-to-an-existing-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-text-to-an-existing-pdf-file-in-ruby/
+description: تعرف على كيفية إضافة نص إلى مستند PDF موجود في Ruby باستخدام Aspose.PDF لتحسين محتوى PDF الخاص بك أو تحديثه.
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - إضافة نص
 
-لإضافة سلسلة نصية في مستند PDF باستخدام **Aspose.PDF Java for Ruby**، ببساطة قم باستدعاء وحدة **AddText**.
+لإضافة سلسلة نصية في مستند Pdf باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **AddText**.
 
 كود روبي
 
 ```java
-
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# إنشاء كائن المستند
+# Instantiate Document object
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# الحصول على صفحة معينة
+# get particular page
 
 pdf_page = doc.getPages().get_Item(1)
 
-# إنشاء جزء النص
+# create text fragment
 
 text_fragment = Rjb::import('com.aspose.pdf.TextFragment').new("main text")
 
@@ -36,7 +36,7 @@ font_repository = Rjb::import('com.aspose.pdf.FontRepository')
 
 color = Rjb::import('com.aspose.pdf.Color')
 
-# ضبط خصائص النص
+# set text properties
 
 text_fragment.getTextState().setFont(font_repository.findFont("Verdana"))
 
@@ -46,24 +46,23 @@ text_fragment.getTextState().setFontSize(14)
 
 #text_fragment.getTextState().setBackgroundColor(color.GRAY)
 
-# إنشاء كائن TextBuilder
+# create TextBuilder object
 
 text_builder = Rjb::import('com.aspose.pdf.TextBuilder').new(pdf_page)
 
-# إلحاق جزء النص بصفحة PDF
+# append the text fragment to the PDF page
 
 text_builder.appendText(text_fragment)
 
-# حفظ ملف PDF
+# Save PDF file
 
 doc.save(data_dir + "Text_Added.pdf")
 
-puts "تمت إضافة النص بنجاح"
+puts "Text added successfully"
 ```
 
+## تحميل كود التشغيل
 
-## تنزيل الكود الجاري
+تنزيلВ **إضافة نص (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **إضافة نص (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addtext.rb)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addtext.rb)

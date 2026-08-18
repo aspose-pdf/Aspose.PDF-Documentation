@@ -1,80 +1,80 @@
 ---
-title: الحصول على خصائص نافذة المستند وعرض الصفحة في روبي
+title: احصل على خصائص نافذة المستند وعرض الصفحة في روبي
+linktitle: احصل على خصائص نافذة المستند وعرض الصفحة في روبي
 type: docs
 weight: 40
-url: /ar/java/get-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-document-window-and-page-display-properties-in-ruby/
+description: قم باسترجاع وتخصيص نافذة الوثيقة وخصائص عرض الصفحة في ملفات PDF باستخدام Ruby وAspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - الحصول على نافذة الوثيقة وخصائص عرض الصفحة
 
-## Aspose.PDF - الحصول على خصائص نافذة المستند وعرض الصفحة
-
-للحصول على خصائص نافذة المستند وعرض الصفحة لمستند PDF باستخدام **Aspose.PDF Java for Ruby**، قم ببساطة باستدعاء وحدة **GetDocumentWindow**.
+للحصول على خصائص نافذة المستند وعرض الصفحة لمستند Pdf باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **GetDocumentWindow**.
 
 كود روبي
 
 ```java
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# افتح مستند pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# الحصول على خصائص المستند المختلفة
+# Get different document properties
 
-# موضع نافذة المستند - الافتراضي: false
+# Position of document's window - Default: false
 
 puts "CenterWindow :- " + doc.getCenterWindow().to_s
 
-# ترتيب القراءة السائد؛ تحديد موضع الصفحة
+# Predominant reading order; determine the position of page
 
-# عند العرض جنبًا إلى جنب - الافتراضي: L2R
+# when displayed side by side - Default: L2R
 
 puts "Direction :- " + doc.getDirection().to_s
 
-# ما إذا كان يجب على شريط عنوان النافذة عرض عنوان المستند.
+# Whether window's title bar should display document title.
 
-# إذا كان false، يعرض شريط العنوان اسم ملف PDF - الافتراضي: false
+# If false, title bar displays PDF file name - Default: false
 
 puts "DisplayDocTitle :- " + doc.getDisplayDocTitle().to_s
 
-# ما إذا كان يجب تغيير حجم نافذة المستند لتناسب حجم
+# Whether to resize the document's window to fit the size of
 
-# الصفحة المعروضة الأولى - الافتراضي: false
+# first displayed page - Default: false
 
 puts "FitWindow :- " + doc.getFitWindow().to_s
 
-# ما إذا كان يجب إخفاء شريط القوائم لتطبيق العارض - الافتراضي: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 puts "HideMenuBar :-" + doc.getHideMenubar().to_s
 
-# ما إذا كان يجب إخفاء شريط الأدوات لتطبيق العارض - الافتراضي: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 puts "HideToolBar :-" + doc.getHideToolBar().to_s
 
-# ما إذا كان يجب إخفاء عناصر واجهة المستخدم مثل أشرطة التمرير
+# Whether to hide UI elements like scroll bars
 
-# وترك محتويات الصفحة فقط معروضة - الافتراضي: false
+# and leaving only the page contents displayed - Default: false
 
 puts "HideWindowUI :-" + doc.getHideWindowUI().to_s
 
-# وضع صفحة المستند. كيفية عرض المستند عند الخروج من وضع ملء الشاشة.
+# The document's page mode. How to display document on exiting full-screen mode.
 
 puts "NonFullScreenPageMode :-" + doc.getNonFullScreenPageMode().to_s
 
-# تخطيط الصفحة أي صفحة واحدة، عمود واحد
+# The page layout i.e. single page, one column
 
 puts "PageLayout :-" + doc.getPageLayout().to_s
 
-# كيف يجب عرض المستند عند الفتح.
+# How the document should display when opened.
 
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-
 ## تحميل كود التشغيل
 
-قم بتحميل **احصل على خصائص نافذة المستند وعرض الصفحة (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تنزيل**الحصول على خصائص نافذة المستند وعرض الصفحة (Aspose.PDF)**Вمنأي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

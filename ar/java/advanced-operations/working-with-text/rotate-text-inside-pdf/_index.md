@@ -1,208 +1,178 @@
 ---
-title: تدوير النص داخل PDF
+title: تدوير نص PDF في جافا
 linktitle: تدوير النص داخل PDF
 type: docs
 weight: 50
-url: /ar/java/rotate-text-inside-pdf/
-description: تعلم طرق مختلفة لتدوير النص في PDF. يتيح لك Aspose.PDF تدوير النص بأي زاوية، تدوير جزء من النص أو فقرة كاملة.
-lastmod: "2021-06-05"
+url: /java/rotate-text-inside-pdf/
+description: تعرف على كيفية تدوير أجزاء النص والفقرات داخل مستندات PDF في Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: قم بتدوير أجزاء النص والفقرات في مستندات PDF باستخدام Java
+Abstract: تشرح هذه المقالة كيفية تدوير النص في مستندات PDF باستخدام Aspose.PDF لـ Java. فهو يوضح كيفية تدوير أجزاء النص الفردية، وإنشاء فقرات تحتوي على أسطر تم تدويرها، وتدوير فقرات النص الكاملة لسيناريوهات تخطيط مختلفة.
 ---
+يتيح لك Aspose.PDF for Java تدوير أجزاء النص الفردية بالإضافة إلى فقرات النص بأكملها.
 
-## تدوير النص داخل PDF باستخدام خاصية التدوير
+## تدوير أجزاء النص الفردية
 
-باستخدام طريقة [setRotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentState#setRotation-double-) لفئة [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment)، يمكنك تدوير النص بزوايا مختلفة. يمكن استخدام تدوير النص في سيناريوهات مختلفة لإنشاء المستندات. يمكنك تحديد زاوية الدوران بالدرجات لتدوير النص حسب متطلباتك. يرجى التحقق من السيناريوهات المختلفة التالية، التي يمكنك من خلالها تنفيذ تدوير النص.
+استخدم هذا المثال عندما يجب أن تستخدم أجزاء النص المتعددة الموجودة على نفس السطر زوايا دوران مختلفة.
 
-## تنفيذ التدوير باستخدام TextFragment وTextBuilder
-
-```java
-public class ExampleRotateText {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ImplementRotationUsingTextFragmentAndTextBuilder() {
-
-        // تهيئة كائن المستند
-        Document pdfDocument = new Document();
-        // الحصول على الصفحة المحددة
-        Page pdfPage = pdfDocument.getPages().add();
-        // إنشاء جزء نصي
-        TextFragment textFragment1 = new TextFragment("main text");
-        textFragment1.setPosition(new Position(100, 600));
-
-        // تعيين خصائص النص
-        textFragment1.getTextState().setFontSize(12);
-        textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-        // إنشاء جزء نصي مدوّر
-        TextFragment textFragment2 = new TextFragment("rotated text");
-        textFragment2.setPosition(new Position(200, 600));
-        // تعيين خصائص النص
-        textFragment2.getTextState().setFontSize(12);
-        textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment2.getTextState().setRotation(45);
-
-        // إنشاء جزء نصي مدوّر
-        TextFragment textFragment3 = new TextFragment("rotated text");
-        textFragment3.setPosition(new Position(300, 600));
-
-        // تعيين خصائص النص
-        textFragment3.getTextState().setFontSize(12);
-        textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment3.getTextState().setRotation(90);
-
-        // إنشاء كائن TextBuilder
-        TextBuilder textBuilder = new TextBuilder(pdfPage);
-        // إلحاق الجزء النصي بصفحة PDF
-        textBuilder.appendText(textFragment1);
-        textBuilder.appendText(textFragment2);
-        textBuilder.appendText(textFragment3);
-
-        // حفظ المستند
-        pdfDocument.save(_dataDir + "TextFragmentTests_Rotated1_out.pdf");
-    }
-}
-```
-
-
-## تنفيذ التدوير باستخدام TextParagraph و TextBuilder (القطع الدوارة)
+1. قم بإنشاء مستند PDF جديد وأضف صفحة.
+1. قم بإنشاء أجزاء نصية بقيم التدوير المطلوبة.
+1. ألحقها بـ `TextBuilder` واحفظ النتيجة.
 
 ```java
-public static void ImplementRotationUsingTextParagraphAndTextBuilder_RotatedFragments() {
+public static void rotateTextInsidePdf1(Path outputFile) {
+       try (Document document = new Document()) {
+           Page page = document.getPages().add();
 
-    // تهيئة كائن المستند
-    Document pdfDocument = new Document();
-    // الحصول على صفحة معينة
-    Page pdfPage = (Page) pdfDocument.getPages().add();
-    TextParagraph paragraph = new TextParagraph();
-    paragraph.setPosition(new Position(200, 600));
-    // إنشاء جزء نصي
-    TextFragment textFragment1 = new TextFragment("نص مدوّر");
-    // تعيين خصائص النص
-    textFragment1.getTextState().setFontSize(12);
-    textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    // تعيين التدوير
-    textFragment1.getTextState().setRotation(45);
+           TextFragment textFragment1 = new TextFragment("main text");
+           textFragment1.setPosition(new Position(100, 600));
+           textFragment1.getTextState().setFontSize(12);
+           textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
 
-    // إنشاء جزء نصي
-    TextFragment textFragment2 = new TextFragment("النص الرئيسي");
-    // تعيين خصائص النص
-    textFragment2.getTextState().setFontSize(12);
-    textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           TextFragment textFragment2 = new TextFragment("rotated text");
+           textFragment2.setPosition(new Position(200, 600));
+           textFragment2.getTextState().setFontSize(12);
+           textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           textFragment2.getTextState().setRotation(45);
 
-    // إنشاء جزء نصي
-    TextFragment textFragment3 = new TextFragment("نص مدوّر آخر");
-    // تعيين خصائص النص
-    textFragment3.getTextState().setFontSize(12);
-    textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    // تعيين التدوير
-    textFragment3.getTextState().setRotation(-45);
+           TextFragment textFragment3 = new TextFragment("rotated text");
+           textFragment3.setPosition(new Position(300, 600));
+           textFragment3.getTextState().setFontSize(12);
+           textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           textFragment3.getTextState().setRotation(90);
 
-    // إلحاق الأجزاء النصية بالفقرة
-    paragraph.appendLine(textFragment1);
-    paragraph.appendLine(textFragment2);
-    paragraph.appendLine(textFragment3);
-    // إنشاء كائن TextBuilder
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // إلحاق الفقرة النصية بصفحة الـ PDF
-    textBuilder.appendParagraph(paragraph);
-    // حفظ المستند
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated2_out.pdf");
-}
+           TextBuilder builder = new TextBuilder(page);
+           builder.appendText(textFragment1);
+           builder.appendText(textFragment2);
+           builder.appendText(textFragment3);
+
+           document.save(outputFile.toString());
+       }
+   }
 ```
 
+## تدوير الأسطر داخل فقرة نصية
 
-## تنفيذ التدوير باستخدام TextFragment و Page.Paragraphs
+استخدم هذا المثال عندما يجب أن تحتوي الفقرة على خطوط عادية ومستديرة.
 
-```csharp
-public static void ImplementRotationUsingTextFragmentAndPageParagraphs() {
-    // تهيئة كائن الوثيقة
-    Document pdfDocument = new Document();
-    // الحصول على صفحة معينة
-    Page pdfPage = (Page) pdfDocument.getPages().add();
-    // إنشاء جزء نصي
-    TextFragment textFragment1 = new TextFragment("main text");
-    // ضبط خصائص النص
-    textFragment1.getTextState().setFontSize(12);
-    textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // إنشاء جزء نصي
-    TextFragment textFragment2 = new TextFragment("rotated text");
-
-    // ضبط خصائص النص
-    textFragment2.getTextState().setFontSize(12);
-    textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // ضبط التدوير
-    textFragment2.getTextState().setRotation(315);
-
-    // إنشاء جزء نصي
-    TextFragment textFragment3 = new TextFragment("rotated text");
-    // ضبط خصائص النص
-    textFragment3.getTextState().setFontSize(12);
-    textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // ضبط التدوير
-    textFragment3.getTextState().setRotation(270);
-    pdfPage.getParagraphs().add(textFragment1);
-    pdfPage.getParagraphs().add(textFragment2);
-    pdfPage.getParagraphs().add(textFragment3);
-
-    // حفظ الوثيقة
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated3_out.pdf");
-    }
-```
-
-
-## تنفيذ التدوير باستخدام TextParagraph و TextBuilder (تدوير الفقرة بالكامل)
+1. قم بإنشاء مستند PDF جديد وأضف صفحة.
+1. أنشئ `TextParagraph` وألحق أجزاء النص بإعدادات تدوير مختلفة.
+1. أضف الفقرة إلى الصفحة واحفظ المستند.
 
 ```java
-public static void ImplementRotationUsingTextParagraphAndTextBuilder() {
-
-    // تهيئة كائن المستند
-    Document pdfDocument = new Document();
-    // الحصول على صفحة معينة
-    Page pdfPage = pdfDocument.getPages().add();
-    for (int i = 0; i < 4; i++) {
+public static void rotateTextInsidePdf2(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         TextParagraph paragraph = new TextParagraph();
         paragraph.setPosition(new Position(200, 600));
-        // تحديد التدوير
-        paragraph.setRotation(i * 90 + 45);
-        // إنشاء جزء النص
-        TextFragment textFragment1 = new TextFragment("نص الفقرة");
-        // إنشاء جزء النص
+
+        TextFragment textFragment1 = new TextFragment("rotated text");
         textFragment1.getTextState().setFontSize(12);
         textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment1.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment1.getTextState().setForegroundColor(Color.getBlue());
+        textFragment1.getTextState().setRotation(45);
 
-        // إنشاء جزء النص
-        TextFragment textFragment2 = new TextFragment("السطر الثاني من النص");
-        // ضبط خصائص النص
+        TextFragment textFragment2 = new TextFragment("main text");
         textFragment2.getTextState().setFontSize(12);
         textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment2.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment2.getTextState().setForegroundColor(Color.getBlue());
 
-        // إنشاء جزء النص
-        TextFragment textFragment3 = new TextFragment("والمزيد من النص...");
-        // ضبط خصائص النص
+        TextFragment textFragment3 = new TextFragment("another rotated text");
         textFragment3.getTextState().setFontSize(12);
         textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment3.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment3.getTextState().setForegroundColor(Color.getBlue());
-        textFragment3.getTextState().setUnderline(true);
+        textFragment3.getTextState().setRotation(-45);
 
         paragraph.appendLine(textFragment1);
         paragraph.appendLine(textFragment2);
         paragraph.appendLine(textFragment3);
-        // إنشاء كائن TextBuilder
-        TextBuilder textBuilder = new TextBuilder(pdfPage);
-        // إلحاق جزء النص بصفحة PDF
+
+        TextBuilder textBuilder = new TextBuilder(page);
         textBuilder.appendParagraph(paragraph);
+
+        document.save(outputFile.toString());
     }
-    // حفظ المستند
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated4_out.pdf");
+}
+```
+
+## تدوير أجزاء الفقرة بدون مواضع واضحة
+
+استخدم هذا المثال عندما يجب إضافة نص تمت استدارته من خلال تدفق فقرة الصفحة العادي.
+
+1. قم بإنشاء مستند PDF جديد وأضف صفحة.
+1. قم بإنشاء عدة أجزاء نصية بقيم دوران مختلفة.
+1. أضفها إلى مجموعة فقرات الصفحة واحفظ ملف PDF.
+
+```java
+public static void rotateTextInsidePdf3(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment1 = new TextFragment("main text");
+        textFragment1.getTextState().setFontSize(12);
+        textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+
+        TextFragment textFragment2 = new TextFragment("rotated text");
+        textFragment2.getTextState().setFontSize(12);
+        textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment2.getTextState().setRotation(315);
+
+        TextFragment textFragment3 = new TextFragment("rotated text");
+        textFragment3.getTextState().setFontSize(12);
+        textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment3.getTextState().setRotation(270);
+
+        page.getParagraphs().add(textFragment1);
+        page.getParagraphs().add(textFragment2);
+        page.getParagraphs().add(textFragment3);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## تدوير الفقرات كاملة
+
+استخدم هذا المثال عندما يجب تدوير كتلة الفقرة بأكملها بينما يحتفظ كل سطر بالتصميم المشترك.
+
+1. قم بإنشاء مستند PDF جديد وأضف صفحة.
+1. أنشئ عدة كائنات `TextParagraph` بالتدوير على مستوى الفقرة.
+1. أنشئ الأسطر باستخدام أسلوب مساعد مشترك وألحقها واحفظ المستند.
+
+```java
+public static void rotateTextInsidePdf4(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        for (int i = 0; i < 4; i++) {
+            TextParagraph paragraph = new TextParagraph();
+            paragraph.setPosition(new Position(200, 600));
+            paragraph.setRotation(i * 90 + 45);
+
+            TextFragment textFragment1 = rotatedLine("Paragraph Text", false);
+            TextFragment textFragment2 = rotatedLine("Second line of text", false);
+            TextFragment textFragment3 = rotatedLine("And some more text...", true);
+
+            paragraph.appendLine(textFragment1);
+            paragraph.appendLine(textFragment2);
+            paragraph.appendLine(textFragment3);
+
+            TextBuilder builder = new TextBuilder(page);
+            builder.appendParagraph(paragraph);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+
+private static TextFragment rotatedLine(String text, boolean underline) {
+    TextFragment fragment = new TextFragment(text);
+    fragment.getTextState().setFontSize(12);
+    fragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+    fragment.getTextState().setBackgroundColor(Color.getLightGray());
+    fragment.getTextState().setForegroundColor(Color.getBlue());
+    fragment.getTextState().setUnderline(underline);
+    return fragment;
 }
 ```

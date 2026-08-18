@@ -1,42 +1,48 @@
 ---
-title: مثال مرحبا بالعالم بلغة جافا
-linktitle: مثال مرحبا بالعالم
+title: مثال على Hello World باستخدام Java
+linktitle: مرحبا العالم المثال
 type: docs
-weight: 40
-url: /ar/java/hello-world-example/
-description: توضح هذه الصفحة كيفية استخدام البرمجة البسيطة لإنشاء مستند PDF يحتوي على نص - مرحبا بالعالم باستخدام Aspose.PDF for Java.
-lastmod: "2021-06-05"
+weight: 20
+url: /java/hello-world-example/
+description: يوضح هذا النموذج كيفية إنشاء مستند PDF بسيط بنص Hello World المصمم باستخدام Aspose.PDF لـ Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: مثال Hello World عبر Java
+Abstract: توفر هذه المقالة مثال Hello World لـ Aspose.PDF لـ Java. يقوم المثال بإنشاء مستند PDF جديد، وإضافة صفحة، وإنشاء TextFragment بموضع وخط وألوان مخصصة، وإلحاق النص بالصفحة باستخدام TextBuilder، وحفظ النتيجة كملف PDF.
 ---
+يعد مثال "Hello World" هو أقصر طريق لفهم سير العمل الأساسي لإنشاء ملف PDF. في هذه المقالة، يقوم المثال بإنشاء ملف PDF جديد، ووضع جزء من النص المصمم على الصفحة، وحفظ ملف الإخراج.
 
-## مثال مرحبا بالعالم
+يتبع مثال Java الخطوات التالية:
 
-يتم استخدام مثال "مرحبا بالعالم" تقليديًا لتقديم ميزات لغة البرمجة أو البرنامج بحالة استخدام بسيطة.
+1. قم بإنشاء كائن [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) بالنص `Hello, world!`.
+1. قم بتعيين [الموضع](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/) والخط وحجم الخط ولون الخلفية ولون المقدمة من خلال الجزء [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. قم بإنشاء [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) للصفحة.
+1. قم بإلحاق [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) بـ [الصفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. احفظ ملف PDF [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-تمكن Aspose.PDF for Java API مطوري تطبيقات جافا من إنشاء وقراءة وتحرير ومعالجة ملفات PDF في تطبيقاتهم. يتيح لك قراءة وتحويل عدة أنواع مختلفة من الملفات إلى ومن صيغة ملف PDF. تُظهر هذه المقالة حول مرحبا بالعالم كيفية إنشاء ملف PDF في جافا باستخدام Aspose.PDF for Java API. بعد [تثبيت Aspose.PDF for Java](/pdf/ar/java/installation/) في بيئتك، يمكنك تنفيذ مثال الكود أدناه لمعرفة كيفية عمل Aspose.PDF API.
-
-يتبع جزء الكود أدناه هذه الخطوات:
-
-1. قم بإنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document)
-1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) إلى كائن المستند
-1. أنشئ كائن [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment)
-1. أضف TextFragment إلى مجموعة [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) الخاصة بالصفحة
-1. احفظ مستند PDF الناتج
-
-يُظهر المقتطف البرمجي التالي برنامج Hello World لعرض عمل Aspose.PDF لـ Java API.
+يعتمد كود Java التالي على `GetStartedExamples.java`.
 
 ```java
-// تهيئة كائن المستند
-Document document = new Document();
- 
-// إضافة صفحة
-Page page = document.getPages().add();
- 
-// إضافة نص إلى الصفحة الجديدة
-page.getParagraphs().add(new TextFragment("Hello World!"));
- 
-// حفظ ملف PDF المحدث
-document.save("HelloWorld_out.pdf");
+public static void simpleExample(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("Hello, world!");
+        textFragment.setPosition(new Position(100, 600));
+        textFragment.getTextState().setFontSize(12);
+        textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment.getTextState().setBackgroundColor(Color.getBlue());
+        textFragment.getTextState().setForegroundColor(Color.getYellow());
+
+        TextBuilder textBuilder = new TextBuilder(page);
+        textBuilder.appendText(textFragment);
+
+        document.save(outputFile.toString());
+    }
+}
 ```

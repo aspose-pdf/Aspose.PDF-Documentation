@@ -1,41 +1,41 @@
 ---
-title: إضافة JavaScript في PHP
+title: إضافة جافا سكريبت في PHP
+linktitle: إضافة جافا سكريبت في PHP
 type: docs
 weight: 10
-url: /ar/java/adding-javascript-in-php/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-in-php/
+description: تعرف على كيفية إضافة JavaScript إلى ملفات PDF باستخدام PHP وAspose.PDF لتحسين تفاعل المستند.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - إضافة جافا سكريبت
 
-## Aspose.PDF - إضافة JavaScript
-
-لإضافة JavaScript في مستند Pdf باستخدام **Aspose.PDF Java for PHP**، قم ببساطة باستدعاء فئة **AddJavaScript**.
+لإضافة JavaScript في مستند Pdf باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء فئة **AddJavaScript**.
 
 كود PHP
 
 ```php
-# فتح مستند pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# إضافة JavaScript على مستوى المستند
-# إنشاء JavascriptAction مع التعليمة البرمجية المطلوبة لـ JavaScript
+# Adding JavaScript at Document Level
+# Instantiate JavascriptAction with desried JavaScript statement
 $javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
-# تعيين كائن JavascriptAction للإجراء المطلوب للمستند
+# Assign JavascriptAction object to desired action of Document
 $doc->setOpenAction($javaScript);
 
-# إضافة JavaScript على مستوى الصفحة
+# Adding JavaScript at Page Level
 $doc->getPages()->get_Item(2)->getActions()->setOnOpen(new JavascriptAction("app.alert('page 2 is opened')"));
 $doc->getPages()->get_Item(2)->getActions()->setOnClose(new JavascriptAction("app.alert('page 2 is closed')"));
 
-# حفظ مستند PDF
+# Save PDF Document
 $doc->save($dataDir . "JavaScript-Added.pdf");
 
-print "تمت إضافة JavaScript بنجاح، يرجى التحقق من ملف الإخراج.";
+print "Added JavaScript Successfully, please check the output file.";
 ```
 
+** تنزيل كود التشغيل **
 
-**تنزيل الكود الجاري**
+تنزيلВ **إضافة JavaScript (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **إضافة JavaScript (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddJavascript.php)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddJavascript.php)

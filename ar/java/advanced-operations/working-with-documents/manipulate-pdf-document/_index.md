@@ -1,323 +1,272 @@
 ---
-title: التلاعب بمستند PDF
-linktitle: التلاعب بمستند PDF
+title: التعامل مع مستندات PDF في جافا
+linktitle: التعامل مع وثيقة PDF
 type: docs
-weight: 30
-url: /ar/java/manipulate-pdf-document/
-description: تحتوي هذه المقالة على معلومات حول كيفية التحقق من صحة مستند PDF لمعيار PDF A، وكيفية العمل مع TOC، وكيفية تعيين تاريخ انتهاء صلاحية PDF، وكيفية تحديد تقدم إنشاء ملف PDF.
-lastmod: "2021-06-05"
+weight: 20
+url: /java/manipulate-pdf-document/
+description: تعرف على كيفية التحقق من صحة مستندات PDF وتنظيمها وتعديلها في Java، بما في ذلك إدارة جدول المحتويات (TOC) والتحقق من PDF/A.
+lastmod: "2026-06-09"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: التحقق من صحة مستندات PDF وإعادة هيكلتها وتسويتها باستخدام Java
+Abstract: تشرح هذه المقالة كيفية التعامل مع مستندات PDF باستخدام Aspose.PDF لـ Java. ويغطي التحقق من صحة التوافق مع PDF/A، وإضافة جدول محتويات وتخصيصه، وإخفاء أو تخصيص أرقام صفحات جدول المحتويات، وتعيين نص انتهاء الصلاحية، وتسوية حقول النماذج التفاعلية.
 ---
+يتضمن Aspose.PDF for Java عمليات بنية المستند التي تتجاوز مجرد تحرير الصفحة البسيطة.
 
-## التحقق من صحة مستند PDF لمعيار PDF A (A 1A و A 1B)
+## التحقق من صحة التوافق مع PDF/A-1a
 
-للتحقق من صحة مستند PDF للتوافق مع PDF/A-1a أو PDF/A-1b، استخدم أسلوب [validate(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#validate-java.io.OutputStream-int-) في فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document). يتيح لك هذا الأسلوب تحديد اسم الملف الذي سيتم حفظ النتيجة فيه ونوع التحقق المطلوب [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/PdfFormat) تعداد: PDF_A_1A أو PDF_A_1B.
+استخدم هذا المثال عندما تحتاج إلى التحقق مما إذا كان المستند يتوافق مع معيار الأرشفة PDF/A-1a.
 
-تنسيق XML الناتج هو تنسيق مخصص لـ Aspose.
- يحتوي XML على مجموعة من العلامات باسم Problem؛ تحتوي كل علامة على تفاصيل مشكلة معينة. تمثل سمة ObjectID في علامة Problem مُعرّف الكائن المحدد الذي تتعلق به هذه المشكلة. تمثل سمة Clause قاعدة مقابلة في مواصفات PDF.
-
-```java
-  public static void ValidatePDFDocumentForPDF_A_Standard() {
-    // افتح المستند
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    // تحقق من PDF لـ PDF/A-1a
-    pdfDocument.validate(_dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1A);
-
-    // حفظ ملف PDF المحدث
-    // document.save(_dataDir + "UpdatedFile_output.pdf");
-  }
-```
-## العمل مع جدول المحتويات
-
-### إضافة جدول محتويات إلى PDF موجود
-
-تسمح لك فئة ListSection في حزمة aspose.pdf بإنشاء جدول محتويات عند إنشاء مستند PDF من البداية. لإضافة العناوين، وهي عناصر جدول المحتويات، استخدم فئة [aspose.pdf.Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/Heading).
-
-لإضافة جدول محتويات إلى ملف PDF موجود، استخدم فئة [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/Heading) في حزمة com.aspose.pdf. حزمة com.aspose.pdf يمكنها إنشاء ملفات PDF جديدة والتعامل مع الملفات الموجودة. لإضافة جدول محتويات إلى ملف PDF موجود، استخدم حزمة com.aspose.pdf.
-
-يوضح مقتطف الكود التالي كيفية إنشاء جدول محتويات داخل ملف PDF موجود.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإجراء التحقق من الصحة مقابل الهدف [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) المطلوب.
+1. احفظ تقرير التحقق من الصحة في مسار الإخراج المحدد.
 
 ```java
-public static void AddTOCtoExistingPDF() {
-    // تحميل ملف PDF موجود
-    Document document = new Document(_dataDir + "sample.pdf");
-
-    // الوصول إلى الصفحة الأولى من ملف PDF
-    Page tocPage = document.getPages().insert(1);
-
-    // إنشاء كائن لتمثيل معلومات جدول المحتويات
-    com.aspose.pdf.TocInfo tocInfo = new com.aspose.pdf.TocInfo();
-    com.aspose.pdf.TextFragment title = new com.aspose.pdf.TextFragment("جدول المحتويات");
-    title.getTextState().setFontSize(20);
-    title.getTextState().setFontStyle(com.aspose.pdf.FontStyles.Bold);
-
-    // تعيين العنوان لجدول المحتويات
-    tocInfo.setTitle(title);
-    tocPage.setTocInfo(tocInfo);
-
-    // إنشاء كائنات سلسلة سيتم استخدامها كعناصر لجدول المحتويات
-    String[] titles = new String[4];
-    titles[0] = "الصفحة الأولى";
-    titles[1] = "الصفحة الثانية";
-    titles[2] = "الصفحة الثالثة";
-    titles[3] = "الصفحة الرابعة";
-    for (int i = 0; i < 4; i++) {
-      // إنشاء كائن عنوان
-      com.aspose.pdf.Heading heading2 = new com.aspose.pdf.Heading(1);
-
-      com.aspose.pdf.TextSegment segment2 = new com.aspose.pdf.TextSegment();
-      heading2.setTocPage(tocPage);
-      heading2.getSegments().add(segment2);
-
-      // تحديد الصفحة المستهدفة لكائن العنوان
-      heading2.setDestinationPage(document.getPages().get_Item(i + 2));
-
-      // الصفحة المستهدفة
-      heading2.setTop(document.getPages().get_Item(i + 2).getRect().getHeight());
-
-      // إحداثيات الوجهة
-      segment2.setText(titles[i]);
-
-      // إضافة العنوان إلى الصفحة التي تحتوي على جدول المحتويات
-      tocPage.getParagraphs().add(heading2);
+public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.validate(outputFile.toString(), PdfFormat.PDF_A_1A);
     }
-    // حفظ المستند المحدث
-    document.save("TOC_Output_Java.pdf");
-  }
+}
 ```
-### تعيين أنواع مختلفة من TabLeaderType لمستويات TOC مختلفة
 
-يسمح Aspose.PDF أيضًا بتعيين أنواع مختلفة من TabLeaderType لمستويات TOC المختلفة. تحتاج إلى تعيين خاصية LineDash لـ FormatArray مع القيمة المناسبة لتعداد TabLeaderType كما يلي.
+## التحقق من صحة التوافق مع PDF/A-1b
+
+يتحقق هذا الاختلاف من صحة نفس المستند المصدر مقابل مستوى التوافق PDF/A-1b.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم باستدعاء طريقة التحقق من الصحة باستخدام قيمة [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) لـ PDF/A-1b.
+1. اكتب نتيجة التحقق من الصحة إلى ملف تقرير الإخراج.
 
 ```java
-  public static void SetDifferentTabLeaderTypeForTOCLevels() {
-
-    String outFile = "TOC.pdf";
-
-    Document document = new Document();
-    Page tocPage = document.getPages().add();
-
-    TocInfo tocInfo = new TocInfo();
-
-    // تعيين LeaderType
-
-    tocInfo.setLineDash(TabLeaderType.Solid);
-
-    TextFragment title = new TextFragment("جدول المحتويات");
-    title.getTextState().setFontSize(30);
-    tocInfo.setTitle(title);
-
-    // أضف قسم القائمة إلى مجموعة الأقسام في مستند Pdf
-
-    tocPage.setTocInfo(tocInfo);
-
-    // تحديد تنسيق قائمة المستويات الأربعة من خلال تعيين الهوامش اليسرى وإعدادات تنسيق النص لكل مستوى
-
-    tocInfo.setFormatArrayLength(4);
-    tocInfo.getFormatArray()[0].getMargin().setLeft(0);
-    tocInfo.getFormatArray()[0].getMargin().setRight(30);
-    tocInfo.getFormatArray()[0].setLineDash(TabLeaderType.Dot);
-    tocInfo.getFormatArray()[0].getTextState().setFontStyle(FontStyles.Bold | FontStyles.Italic);
-    tocInfo.getFormatArray()[1].getMargin().setLeft(10);
-    tocInfo.getFormatArray()[1].getMargin().setRight(30);
-    tocInfo.getFormatArray()[1].setLineDash(TabLeaderType.None);
-    tocInfo.getFormatArray()[1].getTextState().setFontSize(10);
-    tocInfo.getFormatArray()[2].getMargin().setLeft(20);
-    tocInfo.getFormatArray()[2].getMargin().setRight(0);
-    tocInfo.getFormatArray()[2].getTextState().setFontStyle(FontStyles.Bold);
-    tocInfo.getFormatArray()[3].setLineDash(TabLeaderType.Solid);
-    tocInfo.getFormatArray()[3].getMargin().setLeft(30);
-    tocInfo.getFormatArray()[3].getMargin().setRight(30);
-    tocInfo.getFormatArray()[3].getTextState().setFontStyle(FontStyles.Bold);
-
-    // إنشاء قسم في مستند Pdf
-    Page page = document.getPages().add();
-
-    // أضف أربعة عناوين في القسم
-    for (int Level = 1; Level <= 4; Level++) {
-      com.aspose.pdf.Heading heading2 = new com.aspose.pdf.Heading(Level);
-      TextSegment segment2 = new TextSegment();
-
-      heading2.getSegments().add(segment2);
-      heading2.setAutoSequence(true);
-      heading2.setTocPage(tocPage);
-
-      segment2.setText("العنوان التجريبي" + Level);
-      heading2.getTextState().setFont(FontRepository.findFont("Arial UnicodeMS"));
-
-      // أضف العنوان إلى جدول المحتويات.
-      heading2.setInList(true);
-      page.getParagraphs().add(heading2);
+public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.validate(outputFile.toString(), PdfFormat.PDF_A_1B);
     }
-
-    // حفظ ملف PDF
-    document.save(outFile);
-  }
+}
 ```
 
-### إخفاء أرقام الصفحات في جدول المحتويات
+## إضافة جدول محتويات
 
-في حال عدم الرغبة في عرض أرقام الصفحات مع العناوين في جدول المحتويات، يمكنك استخدام خاصية [IsShowPageNumbers](https://reference.aspose.com/pdf/java/com.aspose.pdf/TocInfo) من [TOCInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo) كاذبة. يرجى التحقق من مقتطف الشيفرة التالي لإخفاء أرقام الصفحات في جدول المحتويات:
+استخدم هذا الأسلوب عندما يجب أن يتضمن المستند صفحة جدول المحتويات التي تم إنشاؤها مع روابط لصفحات المحتوى.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أدخل جدول محتويات [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) جديدًا وقم بتكوين [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. قم بإنشاء إدخالات [العناوين](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) التي تشير إلى الصفحات الوجهة.
+1. احفظ المستند المحدث.
 
 ```java
-public static void HidePageNumbersInTOC() {
-    String outFile = _dataDir + "HiddenPageNumbers_out.pdf";
-    Document doc = new Document();
-    Page tocPage = doc.getPages().add();
-    TocInfo tocInfo = new TocInfo();
-    TextFragment title = new TextFragment("Table Of Contents");
-    title.getTextState().setFontSize(20);
-    title.getTextState().setFontStyle(FontStyles.Bold);
-    tocInfo.setTitle(title);
+public static void addTableOfContents(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page tocPage = document.getPages().insert(1);
+        TocInfo tocInfo = new TocInfo();
+        TextFragment title = new TextFragment("Table Of Contents");
+        title.getTextState().setFontSize(20);
+        title.getTextState().setFontStyle(FontStyles.Bold);
+        tocInfo.setTitle(title);
+        tocPage.setTocInfo(tocInfo);
 
-    // إضافة قسم القائمة إلى مجموعة الأقسام في مستند Pdf
-    tocPage.setTocInfo(tocInfo);
+        String[] titles = {"First page", "Second page"};
+        for (int index = 0; index < titles.length && index + 2 <= document.getPages().size(); index++) {
+            Heading heading = new Heading(1);
+            TextSegment segment = new TextSegment(titles[index]);
+            heading.setTocPage(tocPage);
+            heading.getSegments().add(segment);
+            Page destinationPage = document.getPages().get_Item(index + 2);
+            heading.setDestinationPage(destinationPage);
+            heading.setTop(destinationPage.getRect().getHeight());
+            tocPage.getParagraphs().add(heading);
+        }
 
-    // تحديد تنسيق قائمة المستويات الأربعة عن طريق ضبط الهامش الأيسر
-    // وإعدادات تنسيق النص لكل مستوى
-
-    tocInfo.setShowPageNumbers(false);
-    tocInfo.setFormatArrayLength(4);
-    tocInfo.getFormatArray()[0].getMargin().setRight(0);
-    tocInfo.getFormatArray()[0].getTextState().setFontStyle(FontStyles.Bold | FontStyles.Italic);
-
-    tocInfo.getFormatArray()[1].getMargin().setLeft(30);
-    tocInfo.getFormatArray()[1].getTextState().setUnderline(true);
-    tocInfo.getFormatArray()[1].getTextState().setFontSize(10);
-
-    tocInfo.getFormatArray()[2].getTextState().setFontStyle(FontStyles.Bold);
-    tocInfo.getFormatArray()[3].getTextState().setFontStyle(FontStyles.Bold);
-
-    Page page = doc.getPages().add();
-
-    // إضافة أربعة عناوين في القسم
-    for (int Level = 1; Level != 5; Level++) {
-      Heading heading2 = new Heading(Level);
-      TextSegment segment2 = new TextSegment();
-      heading2.setTocPage(tocPage);
-      heading2.getSegments().add(segment2);
-      heading2.setAutoSequence(true);
-      segment2.setText("this is heading of level " + Level);
-      heading2.setInList(true);
-      page.getParagraphs().add(heading2);
+        document.save(outputFile.toString());
     }
-    doc.save(_dataDir + outFile);
-  }
+}
 ```
 
+## تخصيص مستويات جدول المحتويات والتنسيق
 
-### تخصيص أرقام الصفحات أثناء إضافة جدول المحتويات
+يوضح هذا المثال كيفية تعيين إعدادات مرئية مختلفة لمستويات جدول المحتويات المتعددة.
 
-من الشائع تخصيص ترقيم الصفحات في جدول المحتويات أثناء إضافة جدول المحتويات في مستند PDF. على سبيل المثال، قد نحتاج إلى إضافة بعض البادئات قبل رقم الصفحة مثل P1، P2، P3 وهكذا. في مثل هذه الحالة، يوفر Aspose.PDF لـ Java خاصية PageNumbersPrefix لفئة TocInfo التي يمكن استخدامها لتخصيص أرقام الصفحات كما هو موضح في نموذج الكود التالي.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف جدول محتويات [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وقم بتكوين صفيف تنسيق [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. قم بإنشاء نموذج لإدخالات [العنوان](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) بمستويات مختلفة.
+1. احفظ المستند باستخدام جدول المحتويات المنسق.
 
 ```java
-  public static void CustomizePageNumbersWhileAddingTOC() {
+public static void setTocLevels(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page tocPage = document.getPages().add();
+        TocInfo tocInfo = new TocInfo();
+        tocInfo.setLineDash(TabLeaderType.Solid);
+        TextFragment title = new TextFragment("Table Of Contents");
+        title.getTextState().setFontSize(30);
+        tocInfo.setTitle(title);
+        tocPage.setTocInfo(tocInfo);
 
-    String inFile = _dataDir + "sample.pdf";
-    String outFile = _dataDir + "42824_out.pdf";
+        tocInfo.setFormatArrayLength(4);
+        tocInfo.getFormatArray()[0].getMargin().setLeft(0);
+        tocInfo.getFormatArray()[0].getMargin().setRight(30);
+        tocInfo.getFormatArray()[0].setLineDash(TabLeaderType.Dot);
+        tocInfo.getFormatArray()[0].getTextState().setFontStyle(FontStyles.Bold | FontStyles.Italic);
+        tocInfo.getFormatArray()[1].getMargin().setLeft(10);
+        tocInfo.getFormatArray()[1].getMargin().setRight(30);
+        tocInfo.getFormatArray()[1].setLineDash(3);
+        tocInfo.getFormatArray()[1].getTextState().setFontSize(10);
+        tocInfo.getFormatArray()[2].getMargin().setLeft(20);
+        tocInfo.getFormatArray()[2].getMargin().setRight(30);
+        tocInfo.getFormatArray()[2].getTextState().setFontStyle(FontStyles.Bold);
+        tocInfo.getFormatArray()[3].setLineDash(TabLeaderType.Solid);
+        tocInfo.getFormatArray()[3].getMargin().setLeft(30);
+        tocInfo.getFormatArray()[3].getMargin().setRight(30);
+        tocInfo.getFormatArray()[3].getTextState().setFontStyle(FontStyles.Bold);
 
-    // تحميل ملفات PDF موجودة
-    Document doc = new Document(inFile);
-    // الوصول إلى الصفحة الأولى من ملف PDF
-    Page tocPage = doc.getPages().insert(1);
-    // إنشاء كائن لتمثيل معلومات جدول المحتويات
-    TocInfo tocInfo = new TocInfo();
-    TextFragment title = new TextFragment("جدول المحتويات");
-    title.getTextState().setFontSize(20);
-    title.getTextState().setFontStyle(FontStyles.Bold);
+        try (Page page = document.getPages().add()) {
+            for (int level = 1; level < 5; level++) {
+                Heading heading = new Heading(level);
+                heading.setAutoSequence(true);
+                heading.setTocPage(tocPage);
+                heading.getTextState().setFont(FontRepository.findFont("Arial"));
+                heading.getSegments().add(new TextSegment("Sample Heading" + level));
+                heading.setInList(true);
+                page.getParagraphs().add(heading);
+            }
+        }
 
-    // تعيين العنوان لجدول المحتويات
-    tocInfo.setTitle(title);
-    tocInfo.setPageNumbersPrefix("P");
-    tocPage.setTocInfo(tocInfo);
-
-    for (int i = 1; i < doc.getPages().size(); i++) {
-      // إنشاء كائن العنوان
-      Heading heading2 = new Heading(1);
-      TextSegment segment2 = new TextSegment();
-      heading2.setTocPage(tocPage);
-      heading2.getSegments().add(segment2);
-      // تحديد صفحة الوجهة لكائن العنوان
-      heading2.setDestinationPage(doc.getPages().get_Item(i + 1));
-      // صفحة الوجهة
-      heading2.setTop(doc.getPages().get_Item(i + 1).getRect().getHeight());
-      // إحداثيات الوجهة
-      segment2.setText("الصفحة " + i);
-      // إضافة العنوان إلى الصفحة التي تحتوي على جدول المحتويات
-      tocPage.getParagraphs().add(heading2);
+        document.save(outputFile.toString());
     }
-
-    // حفظ المستند المحدث
-    doc.save(outFile);
-  }
+}
 ```
 
+## إخفاء أرقام الصفحات في جدول المحتويات
 
-## إضافة طبقات إلى ملف PDF
+استخدم هذا المثال عندما يُظهر جدول المحتويات عناوين الإدخال بدون أرقام الصفحات.
 
-يمكن استخدام الطبقات في مستندات PDF بطرق متعددة. قد يكون لديك ملف متعدد اللغات تريد توزيعه وتريد أن يظهر النص في كل لغة على طبقات مختلفة، مع ظهور التصميم الخلفي على طبقة منفصلة. قد تقوم أيضًا بإنشاء مستندات تحتوي على رسوم متحركة تظهر على طبقة منفصلة. يمكن أن يكون أحد الأمثلة هو إضافة اتفاقية ترخيص إلى ملفك، ولا تريد أن يرى المستخدم المحتوى حتى يوافق على شروط الاتفاقية.
-
-يدعم Aspose.PDF for Java إضافة طبقات إلى ملفات PDF.
-
-لاستخدام الطبقات في ملفات PDF، استخدم أعضاء API التالية.
-
-تمثل فئة [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/Layer) طبقة وتحتوي على الخصائص التالية:
-
-- **Name** – اسم الطبقة.
-- **Id** – معرف الطبقة.
-- **Contents** – قائمة بمشغلي الطبقة.
-
-بمجرد تعريف كائنات [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/Layer)، قم بإضافتها إلى مجموعة الطبقات لكائن [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page).
- يوضح الكود أدناه كيفية إضافة طبقات إلى مستند PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف جدول المحتويات [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وقم بتعطيل أرقام الصفحات في [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. أنشئ إدخال [العنوان](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) المطلوب وأضفه إلى صفحة المحتوى.
+1. احفظ المستند المحدث.
 
 ```java
-public static void AddLayersToPDFFile() {
-    Document doc = new Document();
-    Page page = doc.getPages().add();
-    Layer layer = new Layer("oc1", "خط أحمر");
-    layer.getContents().add(new com.aspose.pdf.operators.SetRGBColorStroke(1, 0, 0));
-    layer.getContents().add(new com.aspose.pdf.operators.MoveTo(500, 700));
-    layer.getContents().add(new com.aspose.pdf.operators.LineTo(400, 700));
-    layer.getContents().add(new com.aspose.pdf.operators.Stroke());
-    page.setLayers(new ArrayList<Layer>());
-    page.getLayers().add(layer);
-    layer = new Layer("oc2", "خط أخضر");
-    layer.getContents().add(new com.aspose.pdf.operators.SetRGBColorStroke(0, 1, 0));
-    layer.getContents().add(new com.aspose.pdf.operators.MoveTo(500, 750));
-    layer.getContents().add(new com.aspose.pdf.operators.LineTo(400, 750));
-    layer.getContents().add(new com.aspose.pdf.operators.Stroke());
-    page.getLayers().add(layer);
-    layer = new Layer("oc3", "خط أزرق");
-    layer.getContents().add(new com.aspose.pdf.operators.SetRGBColorStroke(0, 0, 1));
-    layer.getContents().add(new com.aspose.pdf.operators.MoveTo(500, 800));
-    layer.getContents().add(new com.aspose.pdf.operators.LineTo(400, 800));
-    layer.getContents().add(new com.aspose.pdf.operators.Stroke());
-    page.getLayers().add(layer);
-    doc.save("output.pdf");
-  
+public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page;
+        Heading heading;
+        try (Page tocPage = document.getPages().add()) {
+            TocInfo tocInfo = new TocInfo();
+            TextFragment title = new TextFragment("Table Of Contents");
+            title.getTextState().setFontSize(20);
+            title.getTextState().setFontStyle(FontStyles.Bold);
+            tocInfo.setTitle(title);
+            tocInfo.setShowPageNumbers(false);
+            tocPage.setTocInfo(tocInfo);
+
+            tocInfo.setFormatArrayLength(4);
+            tocInfo.getFormatArray()[0].getMargin().setRight(0);
+            tocInfo.getFormatArray()[0].getTextState().setFontStyle(FontStyles.Bold | FontStyles.Italic);
+            tocInfo.getFormatArray()[1].getMargin().setLeft(30);
+            tocInfo.getFormatArray()[1].getTextState().setUnderline(true);
+            tocInfo.getFormatArray()[1].getTextState().setFontSize(10);
+            tocInfo.getFormatArray()[2].getTextState().setFontStyle(FontStyles.Bold);
+            tocInfo.getFormatArray()[3].getTextState().setFontStyle(FontStyles.Bold);
+
+            page = document.getPages().add();
+            heading = new Heading(1);
+            heading.setTocPage(tocPage);
+        }
+        heading.setAutoSequence(true);
+        heading.setInList(true);
+        heading.getSegments().add(new TextSegment("this is heading of level 1"));
+        page.getParagraphs().add(heading);
+
+        document.save(outputFile.toString());
+    }
+}
 ```
-## تعيين انتهاء صلاحية ملف PDF
 
-تحدد ميزة انتهاء صلاحية ملف PDF مدة صلاحية الملف. في تاريخ معين، إذا حاول شخص ما الوصول إليه، يظهر نافذة منبثقة توضح أن الملف قد انتهت صلاحيته وأنه يحتاج إلى ملف جديد.
+## تخصيص بادئات رقم صفحة جدول المحتويات
 
-تسمح لك Aspose.PDF بتعيين انتهاء الصلاحية عند إنشاء وتحرير ملفات PDF.
+يضيف هذا المثال بادئة مخصصة إلى أرقام الصفحات المعروضة في جدول المحتويات الذي تم إنشاؤه.
 
-يوضح مقتطف الشيفرة أدناه كيفية تعيين تاريخ انتهاء الصلاحية لملف PDF. تحتاج إلى استخدام JavaScript حيث لا يمكن عرض الملفات المحفوظة بواسطة مكونات الجهات الخارجية (مثل OwnerGuard) على محطات العمل الأخرى بدون تلك الأداة المساعدة.
-
-يمكن إنشاء ملف PDF باستخدام PDF OwnerGuard باستخدام ملف موجود مع تاريخ انتهاء الصلاحية. ولكن يمكن فتح الملف الجديد فقط على محطة عمل تحتوي على PDF OwnerGuard مثبت. ستعطي محطات العمل بدون PDF OwnerGuard خطأ ExpirationFeatureError. على سبيل المثال، يقوم PDF Reader بفتح الملف إذا كان OwnerGuard مثبتًا، ولكن Adobe Acrobat يعيد خطأ.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أدخل جدول المحتويات [صفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وقم بتعيين بادئة رقم الصفحة المطلوبة في [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. قم بإنشاء إدخالات [العنوان](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) التي تشير إلى كل صفحة.
+1. احفظ المستند المحدث.
 
 ```java
-  public static void SetPDFExpiration() {
-    Document document = new Document(_dataDir+"sample.pdf");    
-    JavascriptAction javaScript = new JavascriptAction(
-      "var year=2020;" + 
-      "var month=4;" + 
-      "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());" + 
-      "expiry = new Date(year, month);" + 
-      "if (today.getTime() > expiry.getTime())" + 
-      "app.alert('The file is expired. You need a new one.');"
-      );
-    document.setOpenAction(javaScript);
-    document.save(_dataDir + "JavaScript-Added.pdf");
-  }
+public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page tocPage = document.getPages().insert(1);
+        TocInfo tocInfo = new TocInfo();
+        TextFragment title = new TextFragment("Table Of Contents");
+        title.getTextState().setFontSize(20);
+        title.getTextState().setFontStyle(FontStyles.Bold);
+        tocInfo.setTitle(title);
+        tocInfo.setPageNumbersPrefix("P");
+        tocPage.setTocInfo(tocInfo);
+
+        for (int index = 1; index <= document.getPages().size(); index++) {
+            Page page = document.getPages().get_Item(index);
+            Heading heading = new Heading(1);
+            heading.setTocPage(tocPage);
+            heading.setDestinationPage(page);
+            heading.setTop(page.getRect().getHeight());
+            heading.getSegments().add(new TextSegment("Page " + index));
+            tocPage.getParagraphs().add(heading);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## أضف نصًا لانتهاء صلاحية PDF
+
+استخدم هذا الأسلوب عندما يجب على المستند تشغيل JavaScript عند فتحه وإظهار تحذير انتهاء الصلاحية بعد تاريخ محدد.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف أي محتوى مطلوب.
+1. قم بإنشاء [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) باستخدام منطق انتهاء الصلاحية.
+1. قم بتعيين البرنامج النصي كإجراء فتح المستند وحفظ ملف الإخراج.
+
+```java
+public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        try (Page page = document.getPages().add()) {
+            page.getParagraphs().add(new TextFragment("Hello World..."));
+        }
+        JavascriptAction script = new JavascriptAction(
+                "var year=2017;"
+                        + "var month=5;"
+                        + "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());"
+                        + "expiry = new Date(year, month);"
+                        + "if (today.getTime() > expiry.getTime())"
+                        + "app.alert('The file is expired. You need a new one.');");
+        document.setOpenAction(script);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## قم بتسوية نموذج PDF قابل للتعبئة
+
+يقوم هذا المثال بتحويل حقول النموذج التفاعلية إلى محتوى صفحة ثابت بحيث لا يعد المستند الناتج قابلاً للتحرير كنموذج.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. تحقق مما إذا كانت الوثيقة تحتوي على عناصر واجهة مستخدم النموذج.
+1. قم بتسوية كل [حقل](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) الذي يمثله [تعليق القطعة](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. احفظ المستند الذي تم تسويته.
+
+```java
+public static void flattenFillablePdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getForm() != null && document.getForm().size() > 0) {
+            for (WidgetAnnotation annotation : document.getForm()) {
+                if (annotation instanceof Field field) {
+                    field.flatten();
+                }
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
 ```

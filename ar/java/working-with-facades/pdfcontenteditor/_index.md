@@ -1,20 +1,25 @@
 ---
-title: فئة PdfContentEditor
+title: فئة محرر محتوى PDF
+linktitle: فئة محرر محتوى PDF
 type: docs
 weight: 30
-url: /ar/java/pdfcontenteditor-class/
-description: يشرح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام فئة PdfContentEditor.
-lastmod: "2021-06-05"
+url: /java/pdfcontenteditor-class/
+description: تعرف على كيفية استخدام فئة PdfContentEditor في Java لتحرير محتوى PDF وإدارة التعليقات التوضيحية والمرفقات والعمل مع إجراءات المستند والصور والنص والوسائط المتعددة والطوابع وتفضيلات المشاهد.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: قم بتحرير محتوى PDF والعناصر التفاعلية في Java باستخدام PdfContentEditor
+Abstract: يشرح هذا القسم كيفية استخدام فئة PdfContentEditor في Aspose.PDF لـ Java لسير عمل PDF على مستوى المحتوى. تغطي مجموعة أمثلة Java الحالية التعليقات التوضيحية والمرفقات وإجراءات المستندات وعلامات الرسم واستبدال الصور والوسائط المتعددة والطوابع واستبدال النص وتفضيلات العارض.
 ---
+توضح فئة Java `PdfContentEditorExamples` سير عمل تحرير المحتوى الرئيسي الذي كشفت عنه واجهة برمجة التطبيقات Facades.
 
-- [إضافة إجراءات جافا سكريبت إلى ملف PDF موجود](/pdf/ar/java/adding-javascript-actions/)
-- [إضافة إجراءات الإشارات المرجعية إلى ملف PDF موجود](/pdf/ar/java/adding-bookmark-actions/)
-- [العمل مع الصور (واجهات)](/pdf/ar/java/working-with-image/)
-- [استبدال النص (واجهات)](/pdf/ar/java/replace-text/)
-- [العمل مع المرفقات](/pdf/ar/java/working-with-attachments/)
-- [تعيين تفضيل العارض لملف PDF موجود](/pdf/ar/java/set-viewer-preference-of-an-existing-pdf-file/)
-- [الحصول على تفضيل العارض لملف PDF موجود](/pdf/ar/java/get-viewer-preference-of-an-existing-pdf-file/)
-- [إضافة تعليقات توضيحية إلى ملف PDF موجود](/pdf/ar/java/adding-annotations-to-existing-pdf-file/)
+استخدم هذا القسم لتتعلم كيفية:
+
+- أضف تعليقات توضيحية نصية وخطية ومضلعة وفيلم وختم مطاطي
+- إضافة أو إزالة مرفقات المستندات
+- ربط ملف PDF من الدفق وحفظ النتيجة
+- إضافة أو إزالة الإجراءات المفتوحة للمستند
+- استبدال النص والصور
+- الحصول على تفضيلات المشاهد وتغييرها

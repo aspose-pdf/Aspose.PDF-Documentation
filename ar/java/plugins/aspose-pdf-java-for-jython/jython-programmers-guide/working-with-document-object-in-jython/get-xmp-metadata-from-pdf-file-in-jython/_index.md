@@ -1,19 +1,20 @@
 ---
-title: الحصول على بيانات XMP الوصفية من ملف PDF في Jython
+title: احصل على بيانات تعريف XMP من ملف PDF في Jython
+linktitle: احصل على بيانات تعريف XMP من ملف PDF في Jython
 type: docs
 weight: 40
-url: /ar/java/get-xmp-metadata-from-pdf-file-in-jython/
-lastmod: "2021-06-05"
+url: /java/get-xmp-metadata-from-pdf-file-in-jython/
+description: اكتشف كيفية استخراج بيانات تعريف XMP من مستند PDF باستخدام Jython مع Aspose.PDF لتحليل المحتوى التفصيلي.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - احصل على بيانات تعريف XMP
 
-## Aspose.PDF - الحصول على بيانات XMP الوصفية
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية الكود النموذجي.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-خطأ في عرض الماكرو 'code' : قيمة غير صالحة محددة للمعامل lang
+## تحميل كود التشغيل
 
-## تنزيل الكود التشغيلي
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل الكود التشغيلي من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

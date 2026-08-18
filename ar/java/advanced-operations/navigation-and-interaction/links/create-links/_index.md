@@ -1,96 +1,116 @@
 ---
-title: إنشاء روابط في ملف PDF
-linktitle: إنشاء روابط
+title: إنشاء روابط PDF في جافا
+linktitle: إنشاء الروابط
 type: docs
 weight: 10
-url: /ar/java/create-links/
-description: يشرح هذا القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام Java.
-lastmod: "2021-06-05"
+url: /java/create-links/
+description: تعرف على كيفية إنشاء روابط PDF داخلية وخارجية وعن بعد في Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إنشاء تعليقات توضيحية للارتباط في ملفات PDF باستخدام Java
+Abstract: توضح هذه المقالة كيفية إنشاء تعليقات توضيحية للارتباط باستخدام Aspose.PDF لـ Java. ويغطي إجراءات التشغيل، والتنقل عن بعد في المستندات، والتنقل في الصفحة داخل المستند، وروابط الويب المستندة إلى URI عن طريق ربط الإجراءات بكائنات LinkAnnotation.
 ---
+يستخدم Aspose.PDF لـ Java `LinkAnnotation` مع كائن الإجراء لتحديد سلوك الارتباط.
 
-## إنشاء روابط
+## قم بإنشاء رابط إجراء الإطلاق
 
-يسمح لك Aspose.PDF for Java بإضافة رابط إلى ملف PDF خارجي بحيث يمكنك ربط عدة مستندات معًا. من خلال إضافة رابط إلى تطبيق في مستند، من الممكن الربط بتطبيقات من مستند. هذا مفيد عندما تريد أن يقوم القراء بإجراء معين في نقطة معينة في البرنامج التعليمي، على سبيل المثال، أو لإنشاء مستند غني بالميزات. لإنشاء رابط لتطبيق:
+استخدم هذا المثال عندما يجب أن يقوم التعليق التوضيحي للارتباط بتشغيل ملف أو هدف خارجي.
 
-1. [أنشئ مستندًا](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) كائن.
-1. احصل على [الصفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) التي تريد إضافة رابط إليها.
-
-1. إنشاء كائن [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) باستخدام كائنات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) و[Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle).
-1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
-1. أيضًا، قم بتعيين إلى كائن [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction) واستدعاء طريقة setAction(..).
-1. عند إنشاء كائن [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction)، حدد التطبيق الذي تريد تشغيله.
-1. أضف الرابط إلى مجموعة [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) الخاصة بكائن Page.
-1. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة Save الخاصة بكائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-المقطع البرمجي التالي يوضح كيفية إنشاء رابط لتطبيق في ملف PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وحدد الصفحة المستهدفة.
+1. أنشئ [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) وقم بتكوين حدوده ولونه.
+1. قم بتعيين [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) واحفظ المستند.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-
-public class ExampleLinks {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Links-Actions";
-        return _dataDir;
-    }
-
-    public static void CreateLink() {
-
-        // افتح الوثيقة
-        Document document = new Document(GetDataDir() + "CreateApplicationLink.pdf");
-
-        // إنشاء رابط
+public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         Page page = document.getPages().get_Item(1);
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 200, 300, 300));
-        link.setColor(Color.getGreen());
-        link.setAction(new LaunchAction(document, _dataDir + "sample.pdf"));
-        page.getAnnotations().add(link);
 
-        // حفظ الوثيقة المحدثة
-        document.save(_dataDir + "CreateApplicationLink_out.pdf");
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        Border border = new Border(link);
+        border.setWidth(5);
+        border.setDash(new Dash(1, 1));
+        link.setBorder(border);
+        link.setColor(Color.getGreen());
+        link.setAction(new LaunchAction(document, inputFile.toString()));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-### إنشاء رابط وثيقة PDF في ملف PDF
+## قم بإنشاء رابط الانتقال عن بعد
 
-يتيح لك Aspose.PDF لـ Java إضافة رابط إلى ملف PDF خارجي بحيث يمكنك ربط عدة مستندات معًا.
- لإنشاء رابط لمستند PDF:
+استخدم هذا المثال عندما يجب أن يفتح الرابط صفحة في مستند PDF آخر.
 
-1. أولاً، قم بإنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. ثم، احصل على [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) المحددة التي تريد إضافة الرابط إليها.
-1. قم بإنشاء كائن [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) باستخدام كائنات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) و[Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle).
-1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
-1. قم باستدعاء طريقة setAction(..) ومرر كائن [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction).
-1. أثناء إنشاء كائن [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction)، حدد ملف PDF الذي يجب تشغيله، وكذلك رقم الصفحة التي يجب فتحها.
-1. أضف الرابط إلى مجموعة [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) الخاصة بكائن الصفحة.
-2. وأخيرًا، احفظ ملف PDF المحدث باستخدام طريقة الحفظ الخاصة بكائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-يظهر مقتطف الشيفرة التالي كيفية إنشاء رابط مستند PDF في ملف PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) على الصفحة المستهدفة.
+1. قم بتعيين [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) واحفظ ملف الإخراج.
 
 ```java
-    public static void CreatePDFDocumentLink() {
-
-        // فتح المستند
-        Document document = new Document(_dataDir + "CreateDocumentLink.pdf");
-
-        // إنشاء الرابط
+public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         Page page = document.getPages().get_Item(1);
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 200, 300, 300));
-        link.setColor(Color.getGreen());
-        link.setAction(new GoToRemoteAction(_dataDir + "sample.pdf", 1));
-        page.getAnnotations().add(link);
 
-        // حفظ المستند المحدث
-        document.save(_dataDir + "CreateDocumentLink_out.pdf");
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        link.setColor(Color.getGreen());
+        link.setAction(new GoToRemoteAction(inputFile.toString(), 1));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
     }
+}
+```
+
+## قم بإنشاء رابط انتقال داخلي
+
+استخدم هذا المثال عندما ينتقل الرابط إلى صفحة أخرى داخل مستند PDF نفسه.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) وقم بتكوين مظهره.
+1. قم بتعيين [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) إلى الصفحة الوجهة واحفظ المستند.
+
+```java
+public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        Border border = new Border(link);
+        border.setWidth(5);
+        border.setDash(new Dash(1, 1));
+        link.setBorder(border);
+        link.setColor(Color.getGreen());
+        if (document.getPages().size() >= 4) {
+            link.setAction(new GoToAction(document.getPages().get_Item(4)));
+        } else {
+            link.setAction(new GoToAction(document.getPages().get_Item(document.getPages().size())));
+        }
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## قم بإنشاء رابط URI
+
+استخدم هذا المثال عندما يجب أن يفتح الارتباط مورد ويب من خلال إجراء URI.
+
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) على الصفحة.
+1. قم بتعيين [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) واحفظ ملف الإخراج.
+
+```java
+public static void createLinkAnnotationGoToUriAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        link.setColor(Color.getGreen());
+        link.setAction(new GoToURIAction("https://docs.aspose.com/pdf/python"));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
+    }
+}
 ```

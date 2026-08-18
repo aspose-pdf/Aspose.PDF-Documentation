@@ -1,15 +1,24 @@
 ---
-title: PdfFileEditor Class
+title: فئة محرر ملف pdf
+linktitle: فئة محرر ملف pdf
 type: docs
 weight: 10
-url: /ar/java/pdffileeditor-class/
-description: يشرح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام فئة PdfFileEditor.
-lastmod: "2021-06-05"
+url: /java/pdffileeditor-class/
+description: تعرف على كيفية استخدام واجهة PdfFileEditor في Java لدمج المستندات وتقسيم ملفات PDF وإعادة ترتيب الصفحات وضبط تخطيط الصفحة.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: قم بتحرير بنية مستند PDF وتخطيط الصفحة في Java باستخدام PdfFileEditor
+Abstract: يشرح هذا القسم كيفية استخدام واجهة PdfFileEditor في Aspose.PDF لـ Java لسير عمل التحرير على مستوى المستند. تغطي مجموعة أمثلة Java الحالية دمج الملفات، وتقسيم ملفات PDF، واستخراج الصفحات أو حذفها، وإدراج الصفحات أو إلحاقها، وإنشاء الكتيبات وتخطيط N-Up، وتعديلات تخطيط الصفحة.
 ---
+توضح فئة Java `PdfFileEditorExamples` سير عمل تحرير المستندات الرئيسي الذي كشفته واجهة برمجة التطبيقات Facades.
 
-- [دمج مستندات PDF](/pdf/ar/java/concatenate-pdf-documents/)
-- [استخراج صفحات PDF](/pdf/ar/java/extract-pdf-pages/)
-- [فاصل الصفحات في PDF موجود](/pdf/ar/java/page-break-in-existing-pdf/)
+استخدم هذا القسم لتتعلم كيفية:
+
+- دمج ملفات PDF بطريقة `concatenate`
+- تقسيم مستند من البداية، إلى النهاية، أو إلى ملفات ذات صفحة واحدة
+- استخراج الصفحات وحذفها وإدراجها وإلحاقها
+- إنشاء كتيب وإخراج N-Up للطباعة
+- إضافة الهوامش وتغيير حجم محتويات الصفحة وإدراج فواصل الصفحات

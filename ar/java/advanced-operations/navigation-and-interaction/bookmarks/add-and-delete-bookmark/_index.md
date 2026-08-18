@@ -1,159 +1,101 @@
 ---
-title: إضافة وحذف علامة مرجعية
-linktitle: إضافة وحذف علامة مرجعية
+title: إضافة وحذف إشارات PDF المرجعية في Java
+linktitle: إضافة وحذف إشارة مرجعية
 type: docs
 weight: 10
-url: /ar/java/add-and-delete-bookmark/
-description: يمكنك إضافة علامة مرجعية إلى مستند PDF باستخدام Java. من الممكن حذف جميع العلامات المرجعية أو علامات معينة من مستند PDF.
-lastmod: "2021-06-05"
+url: /java/add-and-delete-bookmark/
+description: تعرف على كيفية إضافة الإشارات المرجعية وحذفها في مستندات PDF باستخدام Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: قم بإضافة أو إزالة الإشارات المرجعية في مستندات PDF باستخدام Java
+Abstract: توضح هذه المقالة كيفية إنشاء الإشارات المرجعية وحذفها باستخدام Aspose.PDF لـ Java. توضح الأمثلة إضافة إشارة مرجعية ذات مستوى أعلى، وإنشاء تسلسل هرمي للإشارات المرجعية الفرعية، وحذف كافة الإشارات المرجعية، وإزالة إشارة مرجعية محددة حسب العنوان.
 ---
+استخدم مجموعة المخطط التفصيلي للمستندات لإدارة الإشارات المرجعية برمجيًا.
 
-## إضافة علامة مرجعية إلى مستند PDF
+## أضف إشارة مرجعية ذات مستوى أعلى
 
-تُحفظ العلامات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) الخاصة بكائن المستند، نفسها في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
+استخدم هذا المثال عندما يجب أن يتضمن المستند إدخال مخطط تفصيلي واحد عالي المستوى.
 
-لإضافة علامة مرجعية إلى PDF:
-
-1. افتح مستند PDF باستخدام كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-2. قم بإنشاء علامة مرجعية وحدد خصائصها.
-3. أضف مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) إلى مجموعة الخطوط العريضة.
-
-يوضح لك مقتطف الشفرة التالي كيفية إضافة علامة مرجعية في مستند PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) وقم بتكوين عنوانه ونمطه وإجراءاته.
+1. أضف الإشارة المرجعية إلى الخطوط العريضة للمستند واحفظ الملف.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.facades.Bookmark;
-import com.aspose.pdf.facades.Bookmarks;
-import com.aspose.pdf.facades.PdfBookmarkEditor;
-
-public class ExampleBookmarks {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Bookmarks/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Bookmarks\\";
-        return _dataDir;
-    }
-
-    public static void AddBookmarks() throws IOException {
-
-        Document pdfDocument = new Document(GetDataDir() + "AddBookmark.pdf");
-
-        // إنشاء كائن إشارة مرجعية
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
-        pdfOutline.setTitle("اختبار المخطط");
+public static void addBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
+        pdfOutline.setTitle("Test Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
+        pdfOutline.setAction(new GoToAction(document.getPages().get_Item(1)));
 
-        // تعيين رقم صفحة الوجهة
-        pdfOutline.setAction(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // إضافة إشارة مرجعية في مجموعة المخطط الخاصة بالوثيقة.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // حفظ الوثيقة المحدثة
-        pdfDocument.save(_dataDir + "AddBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## أضف إشارة مرجعية فرعية
 
-## إضافة إشارة مرجعية فرعية إلى مستند PDF
+يقوم هذا المثال بإنشاء إشارة مرجعية أصلية ويدمج إشارة مرجعية فرعية تحتها.
 
-يمكن أن تكون الإشارات المرجعية متداخلة، مما يشير إلى علاقة هرمية مع إشارات مرجعية رئيسية وفرعية. يشرح هذا المقال كيفية إضافة إشارة مرجعية فرعية، وهي إشارة مرجعية من المستوى الثاني، إلى ملف PDF.
-
-لإضافة إشارة مرجعية فرعية إلى ملف PDF، يجب أولاً إضافة إشارة مرجعية رئيسية:
-
-1. افتح المستند.
-2. أضف إشارة مرجعية إلى [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection)، محدداً خصائصها.
-3. أضف OutlineItemCollection إلى مجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) الخاصة بكائن المستند.
-
-يتم إنشاء الإشارة المرجعية الفرعية تمامًا مثل الإشارة المرجعية الرئيسية، كما هو موضح أعلاه، ولكن يتم إضافتها إلى مجموعة الإشارات المرجعية الرئيسية.
-
-توضح الشيفرات البرمجية التالية كيفية إضافة إشارة مرجعية فرعية إلى مستند PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بإنشاء كائنات [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) الأصلية والفرعية.
+1. أضف الطفل إلى الأصل، وأضف الأصل إلى مجموعة المخطط التفصيلي، ثم احفظ المستند.
 
 ```java
-    public static void AddChildBookmark() {
-        // افتح المستند
-        Document pdfDocument = new Document(GetDataDir() + "AddChildBookmark.pdf");
-
-        // إنشاء كائن إشارة مرجعية رئيسية
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+public static void addChildBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
         pdfOutline.setTitle("Parent Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
 
-        // إنشاء كائن إشارة مرجعية فرعية
-        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(document.getOutlines());
         pdfChildOutline.setTitle("Child Outline");
         pdfChildOutline.setItalic(true);
         pdfChildOutline.setBold(true);
 
-        // إضافة الإشارة المرجعية الفرعية إلى مجموعة الإشارات المرجعية الرئيسية
         pdfOutline.add(pdfChildOutline);
-        // إضافة الإشارة المرجعية الرئيسية إلى مجموعة الإشارات المرجعية الخاصة بالمستند.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // حفظ النتيجة
-        pdfDocument.save(_dataDir + "AddChildBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## حذف كافة الإشارات المرجعية
 
-## حذف جميع الإشارات المرجعية من مستند PDF
+استخدم هذا الأسلوب عندما يجب إزالة مجموعة المخطط التفصيلي بالكامل من المستند.
 
-تُحفظ جميع الإشارات المرجعية في ملف PDF في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). تشرح هذه المقالة كيفية حذف جميع الإشارات المرجعية من ملف PDF.
-
-لحذف جميع الإشارات المرجعية من ملف PDF:
-
-1. قم باستدعاء طريقة الحذف لمجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-2. احفظ الملف المعدل باستخدام طريقة الحفظ لكائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-توضح مقاطع الشيفرة التالية كيفية حذف جميع الإشارات المرجعية من مستند PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. حذف مجموعة الخطوط العريضة الكاملة.
+1. احفظ ملف الإخراج الذي تم تنظيفه.
 
 ```java
-    public static void DeleteAllBookmarksFromPDFDocument() {
-        // افتح المستند
-        Document pdfDocument = new Document(GetDataDir() + "DeleteAllBookmarks.pdf");
-
-        // احذف جميع الإشارات المرجعية
-        pdfDocument.getOutlines().delete();
-
-        // احفظ الملف المحدث
-        pdfDocument.save(_dataDir + "DeleteAllBookmarks_out.pdf");
+public static void deleteBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete();
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## حذف إشارة مرجعية معينة من مستند PDF
+## حذف إشارة مرجعية محددة
 
-[حذف جميع المرفقات من مستند PDF](https://docs.aspose.com/pdf/java/working-with-attachments/) أظهر كيفية حذف جميع المرفقات من ملف PDF. من الممكن أيضًا إزالة مرفقات محددة فقط.
+استخدم هذا المثال عندما يجب إزالة إشارة مرجعية مسماة دون مسح شجرة المخطط التفصيلي بالكامل.
 
-لحذف إشارة مرجعية معينة من ملف PDF:
-
-1. مرر عنوان الإشارة المرجعية كمعامل إلى طريقة [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) لمجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-2. ثم احفظ الملف المحدث باستخدام طريقة Save لكائن Document.
-
-توفر فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) مجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). تقوم طريقة [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) بإزالة أي إشارة مرجعية بالعنوان المُمرّر للطريقة.
-
-تُظهر مقتطفات الشيفرة التالية كيفية حذف إشارة مرجعية معينة من مستند PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بحذف الإشارة المرجعية حسب العنوان من مجموعة الخطوط العريضة.
+1. احفظ المستند المحدث.
 
 ```java
-    public static void DeleteParticularBookmarkPDFDocument() {
-        // افتح المستند
-        Document pdfDocument = new Document(GetDataDir() + "DeleteParticularBookmark.pdf");
-
-        // حذف العنوان المحدد بواسطة العنوان
-        pdfDocument.getOutlines().delete("Child Outline");
-
-        // حفظ الملف المحدث
-        pdfDocument.save(_dataDir + "DeleteParticularBookmark_out.pdf");
+public static void deleteBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete("Child Outline");
+        document.save(outputFile.toString());
     }
+}
 ```

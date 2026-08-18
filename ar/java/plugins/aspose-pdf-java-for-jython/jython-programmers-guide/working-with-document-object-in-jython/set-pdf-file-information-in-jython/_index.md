@@ -1,19 +1,20 @@
 ---
-title: تعيين معلومات ملف PDF في Jython
+title: قم بتعيين معلومات ملف PDF في Jython
+linktitle: قم بتعيين معلومات ملف PDF في Jython
 type: docs
 weight: 70
-url: /ar/java/set-pdf-file-information-in-jython/
-lastmod: "2021-06-05"
+url: /java/set-pdf-file-information-in-jython/
+description: تعرف على كيفية تعيين البيانات التعريفية وخصائص الملف الأخرى لمستند PDF في Jython باستخدام Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - تعيين معلومات ملف PDF
 
-## Aspose.PDF - تعيين معلومات ملف Pdf
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج الكود.
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-خطأ في عرض الماكرو 'code': قيمة غير صالحة محددة للمعلمة lang
+## تحميل كود التشغيل
 
-## تحميل الكود الجاري
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتحميل الكود الجاري من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

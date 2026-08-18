@@ -1,18 +1,19 @@
 ---
-title: إضافة سلسلة HTML باستخدام DOM في بايثون
+title: أضف سلسلة HTML باستخدام DOM في Python
+linktitle: أضف سلسلة HTML باستخدام DOM في Python
 type: docs
 weight: 10
-url: /ar/java/add-html-string-using-dom-in-python/
-lastmod: "2021-06-05"
-description: يوضح كيفية إضافة سلسلة HTML في DOM باستخدام بايثون مع مكتبة تنسيق ملفات PDF
+url: /java/add-html-string-using-dom-in-python/
+lastmod: "2026-06-09"
+description: يشرح كيفية إضافة سلسلة HTML في DOM باستخدام Python مع مكتبة تنسيق الملفات PDF
 ---
+## أضف سلسلة HTML إلى PDF DOM باستخدام Python
 
-## إضافة سلسلة HTML في PDF DOM باستخدام بايثون
-لإضافة سلسلة HTML في مستند Pdf باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء وحدة **AddHtml**.
+لإضافة سلسلة HTML في مستند Pdf باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء وحدة **AddHtml**.
 
 ```python
 
-# إنشاء كائن Document
+# Instantiate Document object
 doc=self.Document()
 page=doc.getPages().add()
 
@@ -22,20 +23,20 @@ margin=self.MarginInfo()
 #margin.setBottom(10)
 #margin.setTop(200)
 
-# تعيين معلومات الهوامش
+# Set margin information
 title.setMargin(margin)
 
-# إضافة جزء HTML إلى مجموعة الفقرات في الصفحة
+# Add HTML Fragment to paragraphs collection of page
 page.getParagraphs().add(title)
 
-# حفظ ملف PDF
+# Save PDF file
 doc.save(self.dataDir + 'html.output.pdf')
 
-print "تمت إضافة HTML بنجاح"
+print "HTML added successfully"
 ```
 
-**تحميل الكود التشغيلي**
+** تنزيل كود التشغيل **
 
-حمل **Add HTML (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تنزيلВ **إضافة HTML (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddHtml/AddHtml.py)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddHtml/AddHtml.py)

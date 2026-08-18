@@ -1,262 +1,141 @@
 ---
-title: العمل مع العوامل
-linktitle: العمل مع العوامل
+title: العمل مع مشغلي PDF في Java
+linktitle: العمل مع المشغلين
 type: docs
-weight: 170
-url: /ar/java/operators/
-description: يشرح هذا الموضوع كيفية استخدام العوامل مع Aspose.PDF. توفر فئات العوامل ميزات رائعة لتعديل PDF.
-lastmod: "2021-06-05"
+weight: 90
+url: /java/working-with-operators/
+description: تعرف على كيفية استخدام عوامل تشغيل PDF ذات المستوى المنخفض في Java لمعالجة دفق المحتوى، ووضع الصور، وإعادة استخدام XForm، وتنظيف الرسومات.
+lastmod: "2026-06-25"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: استخدم عوامل تشغيل PDF ذات المستوى المنخفض للتحكم في تدفق المحتوى في Java
+Abstract: تشرح هذه المقالة كيفية العمل مع عوامل تشغيل PDF ذات المستوى المنخفض في Aspose.PDF لـ Java. تعرف على كيفية وضع الصور بدقة، ورسم محتوى XForm القابل لإعادة الاستخدام، وإزالة عوامل تشغيل الرسوم من صفحات PDF.
 ---
+## مقدمة لمشغلي PDF واستخداماتهم
 
-## مقدمة لعوامل PDF واستخدامها
+عامل التشغيل عبارة عن كلمة أساسية بتنسيق PDF تحدد بعض الإجراءات التي يجب تنفيذها، مثل رسم شكل رسومي على الصفحة. تتميز الكلمة الأساسية للمشغل عن كائن مسمى بغياب حرف Solidus الأولي (2Fh). العوامل ذات معنى فقط داخل تدفق المحتوى.
 
-العامل هو كلمة مفتاحية في PDF تحدد بعض الإجراءات التي يجب تنفيذها، مثل رسم شكل بياني على الصفحة. يتم تمييز كلمة العامل المفتاحية عن الكائنات المسماة بعدم وجود حرف سلاش في البداية (2Fh). تكون العوامل ذات معنى فقط داخل تيار المحتوى.
+تدفق المحتوى هو كائن دفق PDF تتكون بياناته من تعليمات تصف العناصر الرسومية التي سيتم رسمها على الصفحة. يمكن العثور على مزيد من التفاصيل حول عوامل تشغيل PDF في [مواصفات PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/).
 
-تيار المحتوى هو كائن تيار PDF تتكون بياناته من تعليمات تصف العناصر الرسومية التي سيتم رسمها على صفحة. يمكن العثور على مزيد من التفاصيل حول عوامل PDF في [مواصفات PDF](https://www.adobe.com/devnet/pdf/pdf_reference.html).
+استخدم هذه الصفحة عندما تحتاج إلى التحكم المباشر في تدفق محتوى PDF في Java، مثل وضع صورة باستخدام مصفوفة رياضية صريحة، أو إعادة استخدام نفس الرسم عدة مرات من خلال XForm، أو حذف تعليمات الرسم ذات المستوى المنخفض من الصفحة.
 
-### تفاصيل التنفيذ
+## أضف صورة باستخدام عوامل تشغيل PDF
 
-يشرح هذا الموضوع كيفية استخدام العوامل مع Aspose.PDF.
- تم إضافة المثال المختار صورة إلى ملف PDF لتوضيح المفهوم. لإضافة صورة في ملف PDF، هناك حاجة إلى مشغلين مختلفين. يستخدم هذا المثال [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave)، [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix)، [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do)، و[GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore).
+استخدم عوامل التشغيل ذات المستوى المنخفض عندما يجب التحكم في موضع الصورة بدقة على مستوى دفق المحتوى بدلاً من التحكم من خلال واجهات برمجة تطبيقات التخطيط ذات المستوى الأعلى.
 
-- يقوم المشغل [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) بحفظ الحالة الرسومية الحالية لملف PDF.
-- يشرح هذا الموضوع كيفية استخدام المشغلين مع Aspose.PDF. المثال المحدد يضيف صورة إلى ملف PDF لتوضيح المفهوم. لإضافة صورة في ملف PDF، هناك حاجة إلى مشغلين مختلفين. يستخدم هذا المثال [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave)، [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix)، [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do)، و [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore). 
-
-المشغل (concatenate matrix) يُستخدم لتحديد كيفية وضع الصورة على صفحة PDF.
-- المشغل [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) يرسم الصورة على الصفحة.
-- المشغل [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) يستعيد الحالة الرسومية.
-
-لإضافة صورة إلى ملف PDF:
-
-1. قم بإنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) وافتح مستند PDF المدخل.
-1. احصل على الصفحة المحددة التي سيتم إضافة الصورة إليها.
-1. أضف الصورة إلى مجموعة الموارد الخاصة بالصفحة.
-1. استخدم المشغلين لوضع الصورة على الصفحة:
-   - أولاً، استخدم المشغل [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) لحفظ الحالة الرسومية الحالية.
-   - ثم استخدم المشغل [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix) لتحديد مكان وضع الصورة.
-   - استخدم المشغل [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) لرسم الصورة على الصفحة.
-1. أخيرًا، استخدم المشغل [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) لحفظ الحالة الرسومية المحدثة.
-
-يظهر المقتطف البرمجي التالي كيفية استخدام مشغلي PDF.
+1. افتح ملف PDF المصدر باستخدام [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واحصل على [الصفحة] المستهدفة (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أضف دفق صورة الإدخال إلى موارد الصفحة واحتفظ باسم المورد الذي تم إرجاعه.
+1. قم بإنشاء [مستطيل](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) يحدد المنطقة المستهدفة وقم ببناء [مصفوفة](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) من حدودها.
+1. استخدم [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) للحفاظ على حالة الرسومات الحالية، و[ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) لتحديد موضع الصورة، و[Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) لطلائها، و[GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) لاستعادة الحالة السابقة.
+1. احفظ مستند PDF المحدث.
 
 ```java
-public class WorkingWithOperators {
+public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().get_Item(1);
+        String imageName = page.getResources().getImages().add(imageStream);
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Operators/";
+        Rectangle rectangle = new Rectangle(100, 100, 200, 200, true);
+        Matrix matrix = new Matrix(new double[]{
+                rectangle.getURX() - rectangle.getLLX(),
+                0,
+                0,
+                rectangle.getURY() - rectangle.getLLY(),
+                rectangle.getLLX(),
+                rectangle.getLLY()
+        });
 
-    public static void AddImageUsingOpeartors() {
-
-        // إنشاء مستند PDF جديد
-        Document pdfDocument = new Document(_dataDir + "PDFOperators.pdf");
-
-        // احصل على الصفحة التي تحتاج إلى إضافة الصورة إليها
-        Page page = pdfDocument.getPages().get_Item(1);
-
-        // تعيين الإحداثيات
-        int lowerLeftX = 100;
-        int lowerLeftY = 100;
-        int upperRightX = 200;
-        int upperRightY = 200;
-
-        // تحميل الصورة إلى الدفق
-        FileInputStream imageStream = null;
-        try {
-            imageStream = new FileInputStream(_dataDir + "PDFOperators.jpg");
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-        // إضافة الصورة إلى مجموعة الصور في موارد الصفحة
-        page.getResources().getImages().add(imageStream);
-
-        // استخدام مشغل GSave: هذا المشغل يحفظ حالة الرسوميات الحالية
         page.getContents().add(new GSave());
-        // إنشاء كائنات Rectangle وMatrix
-        Rectangle rectangle = new Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-        Matrix matrix = new Matrix(new double[] { rectangle.getURX() - rectangle.getLLX(), 0, 0,
-                rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY() });
-
-        // استخدام مشغل ConcatenateMatrix (دمج المصفوفة): يحدد كيفية وضع الصورة
         page.getContents().add(new ConcatenateMatrix(matrix));
-
-        XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-        // استخدام مشغل Do: هذا المشغل يرسم الصورة
-        page.getContents().add(new Do(ximage.getName()));
-        // استخدام مشغل GRestore: هذا المشغل يعيد حالة الرسوميات
+        page.getContents().add(new Do(imageName));
         page.getContents().add(new GRestore());
-
-        // حفظ المستند المحدث
-        pdfDocument.save(_dataDir + "PDFOperators_out.pdf");
+        document.save(outputFile.toString());
     }
+    System.out.println("Image added with PDF operators to " + outputFile);
+}
 ```
 
+## ارسم محتوى XForm قابلاً لإعادة الاستخدام على الصفحة
 
-## رسم XForm على الصفحة باستخدام المشغلين
+استخدم هذا الأسلوب عندما يجب عرض نفس الصورة أو الرسم أكثر من مرة دون تكرار المورد في ملف PDF.
 
-يوضح هذا الموضوع كيفية استخدام المشغلين GSave/GRestore، ومشغل ContatenateMatrix لتحديد موضع xForm ومشغل Do لرسم xForm على الصفحة.
-
-يلف الكود أدناه المحتويات الحالية لملف PDF مع زوج المشغلين GSave/GRestore. تساعد هذه الطريقة في الحصول على حالة الرسوم الأولية في نهاية المحتويات الحالية. بدون هذه الطريقة، قد تبقى التحولات غير المرغوب فيها في نهاية سلسلة المشغلين الحالية.
+1. افتح ملف PDF المصدر باستخدام [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)، واحصل على [الصفحة] المستهدفة(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)، وقم بالوصول إلى [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
+1. قم بتغليف محتويات الصفحة الحالية باستخدام [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) و[GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) حتى لا تتسرب التحويلات اللاحقة إلى تدفق المحتوى الأصلي.
+1. قم بإنشاء مورد [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/)، وأضف الصورة إلى موارد النموذج، واستخدم [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) بالإضافة إلى [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) لرسم الصورة داخل النموذج.
+1. ضع نفس النموذج في إحداثيات صفحات متعددة عن طريق إضافة مصفوفة ترجمة وتنفيذ اسم النموذج باستخدام عامل التشغيل `Do`.
+1. قم باستعادة حالة الرسومات وحفظ ملف PDF الناتج.
 
 ```java
-    public static void DrawXFormUsingOpeartors() {
-        String imageFile = _dataDir + "aspose-logo.jpg";
-        String inFile = _dataDir + "DrawXFormOnPage.pdf";
-        String outFile = _dataDir + "blank-sample2_out.pdf";
+public static void drawXFormOnPage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().get_Item(1);
+        OperatorCollection pageContents = page.getContents();
 
-        Document pdfDocument = new Document(inFile);
-        OperatorCollection pageContents = pdfDocument.getPages().get_Item(1).getContents();
-
-        // يوضح المثال
-        // استخدام المشغلين GSave/GRestore
-        // استخدام مشغل ContatenateMatrix لتحديد موضع xForm
-        // استخدام مشغل Do لرسم xForm على الصفحة
-
-        // لف المحتويات الحالية مع زوج المشغلين GSave/GRestore
-        // هذا للحصول على حالة الرسوم الأولية في نهاية المحتويات الحالية
-        // وإلا قد تبقى بعض التحولات غير المرغوب فيها في نهاية
-        // سلسلة المشغلين الحالية
         pageContents.insert(1, new GSave());
         pageContents.add(new GRestore());
-
-        // إضافة مشغل حفظ حالة الرسوم لتنظيف حالة الرسوم بشكل صحيح بعد
-        // الأوامر الجديدة
         pageContents.add(new GSave());
 
-        // إنشاء xForm
-        XForm form = XForm.createNewForm(pdfDocument.getPages().get_Item(1), pdfDocument);
-        pdfDocument.getPages().get_Item(1).getResources().getForms().add(form);
+        XForm form = XForm.createNewForm(page, document);
+        page.getResources().getForms().add(form);
+
         form.getContents().add(new GSave());
-
-        // تحديد عرض وارتفاع الصورة
         form.getContents().add(new ConcatenateMatrix(200, 0, 0, 200, 0, 0));
-
-        // تحميل الصورة في التدفق
-        FileInputStream imageStream = null;
-        try {
-            imageStream = new FileInputStream(imageFile);
-        } catch (FileNotFoundException e) {
-            // TODO معالجة كتلة استثناء
-            e.printStackTrace();
-        }
-
-        // إضافة الصورة إلى مجموعة Images في موارد XForm
-        form.getResources().getImages().add(imageStream);
-        XImage ximage = form.getResources().getImages().get_Item(form.getResources().getImages().size());
-        // باستخدام مشغل Do: هذا المشغل يرسم الصورة
-        form.getContents().add(new Do(ximage.getName()));
+        String imageName = form.getResources().getImages().add(imageStream);
+        form.getContents().add(new Do(imageName));
         form.getContents().add(new GRestore());
 
-        pageContents.add(new GSave());
-        // وضع النموذج في الإحداثيات x=100 y=500
-        pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, 100, 500));
-        // رسم النموذج باستخدام مشغل Do
-        pageContents.add(new Do(form.getName()));
+        addFormAt(pageContents, form.getName(), 100, 500);
+        addFormAt(pageContents, form.getName(), 100, 300);
+
         pageContents.add(new GRestore());
-
-        pageContents.add(new GSave());
-
-        // وضع النموذج في الإحداثيات x=100 y=300
-        pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, 100, 300));
-
-        // رسم النموذج باستخدام مشغل Do
-        pageContents.add(new Do(form.getName()));
-        pageContents.add(new GRestore());
-
-        // استعادة حالة الرسوم باستخدام GRestore بعد GSave
-        pageContents.add(new GRestore());
-        pdfDocument.save(outFile);
+        document.save(outputFile.toString());
     }
+    System.out.println("XForm drawn on page in " + outputFile);
+}
+
+private static void addFormAt(OperatorCollection pageContents, String formName, double x, double y) {
+    pageContents.add(new GSave());
+    pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, x, y));
+    pageContents.add(new Do(formName));
+    pageContents.add(new GRestore());
+}
 ```
 
+## قم بإزالة عوامل تشغيل الرسومات من الصفحة
 
-## إزالة كائنات الرسومات باستخدام فئات المشغل
+استخدم هذا المثال عندما تحتوي الصفحة على عوامل رسم متجهة يجب إزالتها مباشرةً من تدفق المحتوى.
 
-توفر فئات المشغل ميزات رائعة لمعالجة ملفات PDF. عندما يحتوي ملف PDF على رسومات لا يمكن إزالتها باستخدام طريقة [DeleteImage](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor#deleteImage--) الخاصة بفئة [PdfContentEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor)، يمكن استخدام فئات المشغل لإزالتها بدلاً من ذلك.
+1. افتح ملف PDF المصدر باستخدام [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واحصل على [الصفحة] المستهدفة (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. كرر من خلال عوامل تشغيل محتوى الصفحة واجمع مثيلات [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/)، و[ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/)، و[Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
+1. احذف عوامل التشغيل المجمعة من محتويات الصفحة واحفظ ملف PDF المحدث.
 
-يوضح مقتطف الشيفرة التالي كيفية إزالة الرسومات. يرجى ملاحظة أنه إذا كان ملف PDF يحتوي على تسميات نصية للرسومات، فقد تظل موجودة في ملف PDF، باستخدام هذا النهج. لذلك ابحث عن مشغلات الرسومات للحصول على طريقة بديلة لحذف هذه الصور.
-
-```java
-    public static void RemoveGraphicsOpeartors() {
-        Document pdfDocument  = new Document(_dataDir+ "RemoveGraphicsObjects.pdf");
-        Page page = pdfDocument.getPages().get_Item(2);
-        OperatorCollection oc = page.getContents();
-
-        // مشغلات رسم المسارات المستخدمة
-        Operator[] operators = new Operator[] {
-                new Stroke(),
-                new ClosePathStroke(),
-                new Fill()
-        };
-
-        oc.delete(operators);
-        pdfDocument.save(_dataDir+ "No_Graphics_out.pdf");
-    }
-```
-
-
-## تغيير فضاء الألوان في مستند PDF
-
-{{% alert color="primary" %}}
-
-يدعم Aspose.PDF for Java 9.0.0 تغيير فضاء الألوان في مستند PDF. من الممكن تغيير اللون RGB إلى CMYK والعكس بالعكس.
-
-{{% /alert %}}
-
-تم تنفيذ الأساليب التالية في فئة [Operator](https://reference.aspose.com/java/pdf/com.aspose.pdf/Operator) للسماح لك بتغيير فضاء الألوان. استخدمه لتغيير بعض الألوان المحددة من RGB/CMYK إلى فضاء الألوان CMYK/RGB، مع الحفاظ على باقي مستند PDF كما هو.
-
-{{% alert color="primary" %}}
-**تغييرات API العامة**
-تم تنفيذ الأساليب التالية:
-
-- com.aspose.pdf.Operator.SetRGBColorStroke.getCMYKColor(new double[3], new double[4])
-- com.aspose.pdf.Operator.SetRGBColor.getCMYKColor(new double[3], new double[4])
-- com.aspose.pdf.Operator.SetCMYKColorStroke.getRGBColor(new double[4], new double[3])
-- com.aspose.pdf.Operator.SetCMYKColor.getRGBColor(new double[4], new double[3])
-
-{{% /alert %}}
-
-يوضح مقتطف الكود التالي كيفية تغيير فضاء الألوان باستخدام Aspose.PDF for Java.
+تقوم هذه التقنية بإزالة تعليمات الرسم المستهدفة فقط. إذا كانت الصفحة تحتوي أيضًا على تسميات نصية ذات صلة أو عوامل تشغيل أخرى غير رسومية، فستظل هذه العناصر في تدفق المحتوى وقد تحتاج إلى تصريح تنظيف منفصل.
 
 ```java
-Document doc = new Document("input_color.pdf");
-OperatorCollection contents = doc.getPages().get_Item(1).getContents();
-System.out.println("قيم مشغلي ألوان RGB في وثيقة pdf");
-for (int j = 1; j <= contents.size(); j++) {
-    Operator oper = contents.get_Item(j);
-    if (oper instanceof Operator.SetRGBColor || oper instanceof Operator.SetRGBColorStroke)
-        try {
-            // تحويل RGB إلى لون CMYK
-            System.out.println(oper.toString());
-
-            double[] rgbFloatArray = new double[] { Double.valueOf(oper.getParameters().get(0).toString()), Double.valueOf(oper.getParameters().get(1).toString()), Double.valueOf(oper.getParameters().get(2).toString()), };
-            double[] cmyk = new double[4];
-            if (oper instanceof Operator.SetRGBColor) {
-                ((Operator.SetRGBColor) oper).getCMYKColor(rgbFloatArray, cmyk);
-                contents.set_Item(j, new Operator.SetCMYKColor(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-            } else if (oper instanceof Operator.SetRGBColorStroke) {
-                ((Operator.SetRGBColorStroke) oper).getCMYKColor(rgbFloatArray, cmyk);
-                contents.set_Item(j, new Operator.SetCMYKColorStroke(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-            } else
-                throw new java.lang.Throwable("أمر غير مدعوم");
-
-        } catch (Throwable e) {
-            e.printStackTrace();
+public static void removeGraphicsObjects(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        List<Operator> operatorsToRemove = new ArrayList<>();
+        for (Object item : page.getContents()) {
+            Operator operator = (Operator) item;
+            if (operator instanceof Stroke || operator instanceof ClosePathStroke || operator instanceof Fill) {
+                operatorsToRemove.add(operator);
+            }
         }
-}
-doc.save("input_colorout.pdf");
-
-// اختبار النتيجة
-System.out.println("قيم مشغلي ألوان CMYK المحولة في وثيقة pdf الناتجة");
-doc = new Document("input_colorout.pdf");
-contents = doc.getPages().get_Item(1).getContents();
-for (int j = 1; j <= contents.size(); j++) {
-    Operator oper = contents.get_Item(j);
-    if (oper instanceof Operator.SetCMYKColor || oper instanceof Operator.SetCMYKColorStroke) {
-        System.out.println(oper.toString());
+        page.getContents().delete(operatorsToRemove);
+        document.save(outputFile.toString());
     }
+    System.out.println("Graphics operators removed in " + outputFile);
 }
 ```
+
+## موضوعات ذات صلة
+
+- [عمليات PDF المتقدمة في Java](/pdf/java/advanced-operations/)
+- [التعامل مع الصور في ملف PDF باستخدام Java](/pdf/java/working-with-images/)
+- [العمل مع صفحات PDF في Java](/pdf/java/working-with-pages/)
+- [العمل باستخدام الرسومات المتجهة في Java](/pdf/java/working-with-vector-graphics/)

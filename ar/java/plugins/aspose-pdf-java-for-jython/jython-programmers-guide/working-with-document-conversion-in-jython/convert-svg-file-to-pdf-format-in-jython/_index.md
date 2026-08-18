@@ -1,18 +1,19 @@
 ---
 title: تحويل ملف SVG إلى تنسيق PDF في Jython
+linktitle: تحويل ملف SVG إلى تنسيق PDF في Jython
 type: docs
 weight: 40
-url: /ar/java/convert-svg-file-to-pdf-format-in-jython/
-lastmod: "2021-06-05"
+url: /java/convert-svg-file-to-pdf-format-in-jython/
+description: اكتشف كيفية تحويل ملف SVG إلى تنسيق PDF باستخدام Jython وAspose.PDF لتحويل الرسومات المتجهة عالية الجودة.
+lastmod: "2026-06-09"
 ---
-
-## Aspose.PDF - تحويل Svg إلى Pdf
+## Aspose.PDF - Svg إلى Pdf
 
 للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج التعليمات البرمجية.
-حدث خطأ في عرض الماكرو 'code' : قيمة غير صحيحة محددة للمعامل lang
+خطأ في عرض 'رمز' الماكرو: تم تحديد قيمة غير صالحة للغة المعلمة
 
-**تحميل التعليمات البرمجية الجارية**
+** تنزيل كود التشغيل **
 
-قم بتحميل التعليمات البرمجية الجارية من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+قم بتنزيل التعليمات البرمجية قيد التشغيل من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

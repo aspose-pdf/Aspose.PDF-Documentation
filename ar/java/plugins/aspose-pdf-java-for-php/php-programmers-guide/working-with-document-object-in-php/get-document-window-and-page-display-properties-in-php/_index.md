@@ -1,61 +1,61 @@
 ---
-title: احصل على خصائص نافذة المستند وخصائص عرض الصفحة في PHP
+title: الحصول على نافذة الوثيقة وخصائص عرض الصفحة في PHP
+linktitle: الحصول على نافذة الوثيقة وخصائص عرض الصفحة في PHP
 type: docs
 weight: 30
-url: /ar/java/get-document-window-and-page-display-properties-in-php/
-lastmod: "2021-06-05"
+url: /java/get-document-window-and-page-display-properties-in-php/
+description: تعرف على كيفية الوصول إلى خصائص نافذة الوثيقة وعرض الصفحة لملف PDF في PHP باستخدام Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - الحصول على نافذة الوثيقة وخصائص عرض الصفحة
 
-## Aspose.PDF - احصل على خصائص نافذة المستند وخصائص عرض الصفحة
-
-للحصول على خصائص نافذة المستند وخصائص عرض الصفحة في مستند PDF باستخدام **Aspose.PDF Java for PHP**، يمكنك ببساطة استدعاء فئة **GetDocumentWindow**.
+للحصول على خصائص نافذة المستند وعرض الصفحة لمستند Pdf باستخدام **Aspose.PDF Java لـ PHP**، ما عليك سوى استدعاء فئة **GetDocumentWindow**.
 
 كود PHP
 
 ```php
 
-# فتح مستند pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# الحصول على خصائص المستند المختلفة
-# موضع نافذة المستند - الافتراضي: false
+# Get different document properties
+# Position of document's window - Default: false
 print "CenterWindow :- " . $doc->getCenterWindow() . PHP_EOL;
 
-# ترتيب القراءة السائد؛ تحديد موضع الصفحة
-# عند العرض جنبًا إلى جنب - الافتراضي: L2R
+# Predominant reading order; determine the position of page
+# when displayed side by side - Default: L2R
 print "Direction :- " . $doc->getDirection() . PHP_EOL;
 
-# ما إذا كان شريط عنوان النافذة يجب أن يعرض عنوان المستند.
-# إذا كان false، يعرض شريط العنوان اسم ملف PDF - الافتراضي: false
+# Whether window's title bar should display document title.
+# If false, title bar displays PDF file name - Default: false
 print "DisplayDocTitle :- " . $doc->getDisplayDocTitle() . PHP_EOL;
 
-#ما إذا كان يجب تغيير حجم نافذة المستند لتناسب حجم
-#الصفحة الأولى المعروضة - الافتراضي: false
+#Whether to resize the document's window to fit the size of
+#first displayed page - Default: false
 print "FitWindow :- " . $doc->getFitWindow() . PHP_EOL;
 
-# ما إذا كان يجب إخفاء شريط القوائم لتطبيق العارض - الافتراضي: false
+# Whether to hide menu bar of the viewer application - Default: false
 print "HideMenuBar :-" . $doc->getHideMenubar() . PHP_EOL;
 
-# ما إذا كان يجب إخفاء شريط الأدوات لتطبيق العارض - الافتراضي: false
+# Whether to hide tool bar of the viewer application - Default: false
 print "HideToolBar :-" . $doc->getHideToolBar() . PHP_EOL;
 
-# ما إذا كان يجب إخفاء عناصر واجهة المستخدم مثل أشرطة التمرير
-# وترك محتويات الصفحة فقط معروضة - الافتراضي: false
+# Whether to hide UI elements like scroll bars
+# and leaving only the page contents displayed - Default: false
 print "HideWindowUI :-" . $doc->getHideWindowUI() . PHP_EOL;
 
-# وضع صفحة المستند. كيفية عرض المستند عند الخروج من وضع الشاشة الكاملة.
+# The document's page mode. How to display document on exiting full-screen mode.
 print "NonFullScreenPageMode :-" . $doc->getNonFullScreenPageMode() . PHP_EOL;
 
-# تخطيط الصفحة أي صفحة واحدة، عمود واحد
+# The page layout i.e. single page, one column
 print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 
-#كيف يجب عرض المستند عند فتحه.
+#How the document should display when opened.
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 ```
 
+** تنزيل كود التشغيل **
 
-**تنزيل الكود قيد التشغيل**
+تنزيل**الحصول على خصائص نافذة المستند وعرض الصفحة (Aspose.PDF)**Вمنأي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **احصل على خصائص نافذة المستند وعرض الصفحة (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

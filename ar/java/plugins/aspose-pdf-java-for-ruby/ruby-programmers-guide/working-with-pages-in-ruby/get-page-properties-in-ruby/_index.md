@@ -1,35 +1,36 @@
 ---
 title: احصل على خصائص الصفحة في روبي
+linktitle: احصل على خصائص الصفحة في روبي
 type: docs
 weight: 50
-url: /ar/java/get-page-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-ruby/
+description: تعرف على كيفية استرداد خصائص الصفحة في ملف PDF باستخدام Ruby مع Aspose.PDF لإدارة مستنداتك ومعالجتها بكفاءة.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - الحصول على خصائص الصفحة
 
-## Aspose.PDF - احصل على خصائص الصفحة
-
-للحصول على خصائص الصفحة لمستند Pdf باستخدام **Aspose.PDF Java for Ruby**، قم ببساطة باستدعاء وحدة **GetPageProperties**.
+للحصول على خصائص الصفحة لمستند Pdf باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **GetPageProperties**.
 
 كود روبي
 
 ```java
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# إنشاء مستند PDF
+# Create PDF document
 
 pdf_document = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# الحصول على مجموعة الصفحات
+# get page collection
 
 page_collection = pdf_document.getPages()
 
-# الحصول على صفحة معينة
+# get particular page
 
 pdf_page = page_collection.get_Item(1)
 
-# الحصول على خصائص الصفحة
+#get page properties
 
 puts "ArtBox : Height = " + pdf_page.getArtBox().getHeight().to_s + ", Width = " + pdf_page.getArtBox().getWidth().to_s + ", LLX = " + pdf_page.getArtBox().getLLX().to_s + ", LLY = " + pdf_page.getArtBox().getLLY().to_s + ", URX = " + pdf_page.getArtBox().getURX().to_s + ", URY = " + pdf_page.getArtBox().getURY().to_s
 
@@ -48,9 +49,8 @@ puts "Page Number :- " + pdf_page.getNumber().to_s
 puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
+## تحميل كود التشغيل
 
-## تحميل الكود الجاري
+تنزيلВ **احصل على خصائص الصفحة (Aspose.PDF)**В fromВ من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-قم بتنزيل **الحصول على خصائص الصفحة (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
-
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

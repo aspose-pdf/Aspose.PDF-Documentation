@@ -1,120 +1,120 @@
 ---
-title: Aspose.PDF Java for IntelliJ IDEA - Maven
+title: Aspose.PDF Java لـ IntelliJ IDEA - Maven
+linktitle: Aspose.PDF Java لـ IntelliJ IDEA - Maven
 type: docs
 weight: 30
-url: /ar/java/aspose-pdf-java-for-intellij-idea-maven/
-lastmod: "2021-06-05"
+url: /java/aspose-pdf-java-for-intellij-idea-maven/
+description: قم بدمج Aspose.PDF لـ Java في IntelliJ IDEA مع Maven. قم بتبسيط عملية التطوير للحصول على حلول PDF المتقدمة.
+lastmod: "2026-06-09"
 ---
-
 ## مقدمة
 
-### IntelliJ IDEA
+### فكرة إنتيليج
 
-IntelliJ IDEA هو بيئة تطوير متكاملة (IDE) للغة جافا لمطوري البرمجيات. يتم تطويره بواسطة JetBrains. تم إنشاؤه في الأصل لجافا، وهو يدعم حاليًا مجموعة متنوعة من اللغات، بما في ذلك JavaScript وGroovy وHTML وCSS وRSS وR وHaskell وPHP وRuby وPython وScala وClojure وKotlin.
+IntelliJ IDEA هي بيئة تطوير متكاملة لـ Java (IDE) لمطوري البرامج. تم تطويره بواسطة JetBrains. تم إنشاؤه في الأصل لـ Java، وهو يدعم حاليًا مجموعة واسعة من اللغات، بما في ذلك JavaScript وGroovy وHTML وCSS وRSS وR وHaskell وPHP وRuby وPython وScala وClojure وKotlin.
 
-في تقرير Infoworld لعام 2010، حصل IntelliJ على أعلى درجة في مركز الاختبار من بين أفضل أربع أدوات برمجة جافا: Eclipse وIntelliJ IDEA وNetBeans وOracle JDeveloper.
+في تقرير Infoworld لعام 2010، حصلت IntelliJ على أعلى درجة في مركز الاختبار من بين أفضل أربع أدوات برمجة Java: Eclipse وIntelliJ IDEA وNetBeans وOracle JDeveloper.
 
-### Aspose.PDF لــ Java
+### Aspose.PDF لجافا
 
-Aspose.PDF لـــ Java هو مكون لإنشاء مستندات PDF يتيح لتطبيقات Java الخاصة بك قراءة وكتابة ومعالجة مستندات PDF دون استخدام Adobe Acrobat.
+Aspose.PDF for Java هو أحد مكونات إنشاء مستندات PDF التي تمكن تطبيقات Java الخاصة بك من قراءة مستندات PDF وكتابتها ومعالجتها دون استخدام Adobe Acrobat.
 
-### Aspose.PDF Java لــ IntelliJ IDEA - Maven
+### Aspose.PDF Java لـ IntelliJ IDEA - Maven
 
-- Aspose.PDF Java لــ IntelliJ IDEA (Maven) هو مكون إضافي لـ IntelliJ IDEA يتيح لك إنشاء مشاريع Maven (أي.
- تم إنشاء المشروع يحتوي على تبعية Maven لواجهة برمجة التطبيقات Aspose.PDF لـ Java) وتنزيل أمثلة كود المصدر لواجهة برمجة التطبيقات لاستخدام Aspose.PDF لـ Java API.
-- هذه الإضافة تساعدك على العمل مع واجهة برمجة التطبيقات Aspose.PDF لـ Java داخل IntelliJ IDEA المفضل لديك.
+- Aspose.PDF Java for IntelliJ IDEA (Maven) عبارة عن مكون إضافي لـ IntelliJ IDEA يتيح لك إنشاء مشاريع مخضرمة (أي أن المشروع الذي تم إنشاؤه يحتوي على Aspose.PDF لتبعية Java API maven) وتنزيل أمثلة التعليمات البرمجية المصدر لـ APIВ لاستخدام Aspose.PDF لـ Java API.
+- يساعدك هذا البرنامج المساعد على العمل مع Aspose.PDF for Java API داخل IntelliJ IDEA المفضل لديك.
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
 
-السحرة:
-تحتوي الإضافة على ساحرين
+المعالجات:
+يحتوي البرنامج المساعد على معالجين
 
-الساحر 1: مشروع Aspose.PDF Maven
+المعالج 1: مشروع Aspose.PDF Maven
 
-- يتيح معالج مشروع Aspose Maven للمطورين إنشاء مشروع Maven لواجهة برمجة التطبيقات Aspose.PDF لـ Java.
-- يتم جلب مرجع تبعية Maven لواجهة برمجة التطبيقات Aspose.PDF لـ Java تلقائيًا من [مستودع Aspose Cloud Maven](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) ويتم إضافته في pom.xml.
-- سيحتوي المشروع الذي تم إنشاؤه دائمًا على أحدث إصدار متاح من تبعية Maven لواجهة برمجة التطبيقات Aspose.PDF لـ Java.
-- الخطوات في المعالج تقدم أيضًا خيار تنزيل [أمثلة كود المصدر لاستخدام Aspose.PDF لـ Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
+- يتيح معالج Aspose Maven Project Wizard الخاص بالمكون الإضافي للمطورين إنشاء Aspose.PDF لمشروع Java API Maven.
+- يتم جلب مرجع Aspose.PDF لتبعية Java API maven تلقائيًا من [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) ويتم إضافته في pom.xml.
+- سيحتوي المشروع الذي تم إنشاؤه دائمًا على أحدث إصدار متاح من Maven Dependency for Aspose.PDF for Java API.
+- تظهر خطوات المعالج أيضًا مع خيار تنزيل [أمثلة التعليمات البرمجية المصدر لاستخدام Aspose.PDF لـ Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 
+المعالج 2: أمثلة Aspose.PDF
 
-الساحر 2: أمثلة Aspose.PDF
-- يسمح لك معالج أمثلة Aspose.PDF بإنشاء/نسخ أمثلة التعليمات البرمجية المصدرية التي تم تنزيلها لـ Aspose.PDF لـ Java API إلى مشروعك. سيتم نسخ جميع الأمثلة للفئة المحددة إلى مجلد الحزمة "com.aspose.pdf.examples" في المشروع مع الموارد المطلوبة داخل مجلد "src/main/resources" اللازمة لتشغيل الأمثلة.
-- أمثلة التعليمات البرمجية المصدرية لـ Aspose.PDF لـ Java API مخصصة لعرض الاستخدامات المختلفة لـ API.
+- يتيح لك معالج أمثلة Aspose.PDF إنشاء/نسخ أمثلة كود المصدر التي تم تنزيلها لـ Aspose.PDF لـ Java API في مشروعك. سيتم نسخ جميع الأمثلة الخاصة بالفئة المحددة إلى مجلد حزمة المشروع "com.aspose.pdf.examples" بالإضافة إلى الموارد المطلوبة داخل المجلد "src/main/resources" اللازم لتشغيل الأمثلة.
+- تهدف أمثلة الكود المصدري لـ Aspose.PDF لـ Java API إلى توضيح الاستخدامات المختلفة لواجهة برمجة التطبيقات (API).
 
 ## متطلبات النظام والمنصات المدعومة
 
 ### متطلبات النظام
 
-- Microsoft Windows 8/7/Vista/2003/XP (بما في ذلك 64 بت) / سطح مكتب Linux GNOME أو KDE / Mac OS X 10.5 أو أعلى
-- 1 جيجابايت من الذاكرة العشوائية كحد أدنى، يوصى بـ 2 جيجابايت من الذاكرة العشوائية
-- مساحة 300 ميجابايت على القرص الصلب + على الأقل 1 جيجابايت للتخزين المؤقت
-- دقة شاشة 1024x768 كحد أدنى
+- Microsoft Windows 8/7/Vista/2003/XP (بما في ذلك 64 بت) В  / Linux GNOME أو سطح مكتب KDE / Mac OS X 10.5 أو أعلى
+- ذاكرة وصول عشوائي (RAM) سعة 1 غيغابايت كحد أدنى، ويوصى بذاكرة وصول عشوائي (RAM) بسعة 2 غيغابايت
+- مساحة القرص الصلب 300 ميجا بايت + 1 جيجا بايت على الأقل لذاكرة التخزين المؤقت
+- 1024x768 الحد الأدنى لدقة الشاشة
 - يوصى باستخدام JDK 1.8 أو أعلى
-- اتصال إنترنت (يوصى بسرعة 2 ميجابايت أو أسرع)
+- اتصال بالإنترنت (يوصى بسعة 2 ميجابايت أو أسرع)
 
 ### المنصات المدعومة
 
-يدعم المكون الإضافي الإصدارات التالية من IntelliJ IDEA:
+يدعم البرنامج المساعد إصدارات IntelliJ IDEA التالية:
 
-- 13.0.1 (Community / Ultimate Edition)
-- 13.1.2 (CE / UE)
-- 14.0.2 (CE/ UE)
+- 13.0.1 (المجتمع / الإصدار النهائي)
+- 13.1.2V (CE / UE)
+- 14.0.2 (CE/UE)
+- 14.1.5 (CE/UE)
 
-- 14.1.5 (CE/ UE)
+## جاري التحميل
 
-## التحميل
+### تنزيل IntelliJ IDEA
 
-### تحميل IntelliJ IDEA
+ستحتاج أولاً إلى تثبيت IntelliJ IDEA CE / UE قبل تنزيل البرنامج الإضافي Aspose.PDF Java لـ IntelliJ IDEA (Maven).
 
-سوف تحتاج أولاً إلى تثبيت IntelliJ IDEA CE / UE قبل تحميل Aspose.PDF Java لـ IntelliJ IDEA (Maven) الإضافة.
-
-لتحميل IntelliJ IDEA
+لتحميل IntellliJ IDEA
 
 1. انتقل إلى <https://www.jetbrains.com/idea/download/>
-1. حدد نظام التشغيل الذي يعمل لديك
-1. انقر على تحميل UE أو CE.
+1. حدد نظام التشغيل الخاص بك
+1. انقر فوق تنزيل UE أو CE.
 
-### تحميل Aspose.PDF Java لـ IntelliJ IDEA الإضافة (Maven)
+### تنزيل Aspose.PDF Java للمكون الإضافي IntelliJ IDEA (Maven)
 
-- يمكن تحميل الإضافة مباشرة من [رابط استضافة الإضافات لـ JetBrains](https://goo.gl/z06gC0) - على مستودع إضافات IntelliJ IDEA وبعد ذلك يمكن تثبيتها باستخدام خيار IDE:
-  - انتقل إلى ملف > إعدادات...> إضافات
-  - حدد "تثبيت الإضافة من القرص"
-- أو يمكن تثبيتها مباشرة (دون التحميل اليدوي من رابط استضافة إضافات JetBrains) باستخدام خيارات IDE:
-  - انتقل إلى ملف > إعدادات...> إضافات
+- يمكن تنزيل المكون الإضافي مباشرة من [عنوان URL لاستضافة المكون الإضافي لـ JetBrains](https://goo.gl/z06gC0) - في مستودع المكونات الإضافية IntelliJ IDEA
+  ويمكن تثبيته لاحقًا باستخدام خيار IDE:
+  - انتقل إلى الملف > الإعدادات... > الإضافات
+  - حدد "تثبيت البرنامج المساعد من القرص"
+- أو يمكن تثبيته مباشرة (بدون التنزيل اليدوي من عنوان URL لاستضافة المكون الإضافي لـ JetBrains) باستخدام خيارات IDE:
+  - انتقل إلى الملف > الإعدادات... > الإضافات
   - حدد "تصفح المستودعات"
   - في مربع البحث اكتب: "Aspose"
-  - حدد إضافة "Aspose.PDF Java لـ IntelliJ IDEA Maven" لتثبيتها.
+  - حدد البرنامج المساعد "Aspose.PDF Java for IntelliJ IDEA Maven" للتثبيت.
 
 ## التثبيت
 
 تثبيت Aspose.PDF لـ IntelliJ IDEA - Maven
 
-## الاستخدام
+## استخدام
 
 استخدام Aspose.PDF لـ IntelliJ IDEA - Maven
 
-## عرض الفيديو
+## فيديو تجريبي
 
-يرجى مشاهدة [الفيديو](https://www.youtube.com/watch?v=KoGdZhoWzcI&feature=youtu.be) أدناه لمشاهدة Aspose.PDF Maven Project Wizard و Aspose.PDF Example Wizard في العمل.
+الرجاء مراجعة [الفيديو](https://www.youtube.com/watch?v=KoGdZhoWzcI&feature=youtu.be) أدناه لرؤية معالج مشروع Aspose.PDF Maven ومعالج أمثلة Aspose.PDF أثناء العمل.
 
-## الدعم، التوسيع والمساهمة
+## الدعم والتوسيع والمساهمة
 
-### الدعم
+### يدعم
 
-- إذا كنت ترغب في رؤية المشكلات المعروفة / المبلغ عنها (من قبل المستخدمين أو فريق ضمان الجودة) في الإضافة.
-- أو إذا كنت ترغب في الإبلاغ عن أي مشكلة وجدتها في الإضافة
-- لديك أي اقتراح لتحسين أو ترغب في تقديم طلب لميزة جديدة
+- إذا كنت ترغب في رؤية المشكلات المعروفة/المبلغ عنها (من قبل المستخدمين أو فريق ضمان الجودة) في البرنامج المساعد.
+- أو تريد الإبلاغ عن أي مشكلة تجدها في البرنامج المساعد
+- لديك أي اقتراح للتحسين أو ترغب في تقديم أي طلب ميزة
 
-يرجى استخدام أي من متتبعات مشكلات المشروع التالية:
+الرجاء استخدام أي من أدوات تعقب مشكلات المشروع التالية:
 
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-### التوسيع والمساهمة
+### توسيع والمساهمة
 
-إضافة Aspose.PDF Java لـ IntelliJ IDEA (Maven) مفتوحة المصدر وكود المصدر متاح على مواقع التواصل الاجتماعي الكبرى المذكورة أدناه. يتم تشجيع المطورين على تحميل كود المصدر والمساهمة من خلال اقتراح أو إضافة ميزة جديدة أو تحسين الميزات الحالية حتى يستفيد الآخرون منها.
+يعد البرنامج المساعد Aspose.PDF Java for IntelliJ IDEA (Maven) مفتوح المصدر ورمز المصدر الخاص به متاح على مواقع الترميز الاجتماعي الرئيسية المدرجة أدناه. يتم تشجيع المطورين على تنزيل الكود المصدري والمساهمة من خلال اقتراح أو إضافة ميزة جديدة أو تحسين الميزات الموجودة حتى يتمكن الآخرون من الاستفادة منها أيضًا.
 
 ### كود المصدر
 
-يمكنك الحصول على أحدث كود مصدر من أحد المواقع التالية
+يمكنك الحصول على أحدث كود المصدر من أحد المواقع التالية
 
-- [جيتهاب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins)

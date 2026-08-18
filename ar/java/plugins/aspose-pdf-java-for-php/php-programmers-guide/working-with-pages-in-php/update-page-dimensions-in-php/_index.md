@@ -1,41 +1,42 @@
 ---
 title: تحديث أبعاد الصفحة في PHP
+linktitle: تحديث أبعاد الصفحة في PHP
 type: docs
 weight: 90
-url: /ar/java/update-page-dimensions-in-php/
-lastmod: "2021-06-05"
+url: /java/update-page-dimensions-in-php/
+description: تعرف على كيفية تعديل أبعاد الصفحة داخل مستند PDF في PHP باستخدام Aspose.PDF للتحكم بشكل أفضل في التخطيط.
+lastmod: "2026-06-09"
 ---
-
 ## Aspose.PDF - تحديث أبعاد الصفحة
 
-لتحديث أبعاد الصفحة باستخدام **Aspose.PDF Java for PHP**، ببساطة قم باستدعاء فئة **UpdatePageDimensions**.
+لتحديث أبعاد الصفحة باستخدام **Aspose.PDF Java لـ PHP**، ما عليك سوى استدعاء فئة **UpdatePageDimensions**.
 
 كود PHP
 
 ```php
 
-# افتح المستند الهدف
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# احصل على مجموعة الصفحات
+# get page collection
 $page_collection = $pdf->getPages();
 
-# احصل على صفحة معينة
+# get particular page
 $pdf_page = $page_collection->get_Item(1);
 
-# قم بتعيين حجم الصفحة كـ A4 (11.7 × 8.3 بوصة) وفي Aspose.PDF، 1 بوصة = 72 نقطة
-# لذلك ستكون أبعاد A4 بالنقاط (842.4، 597.6)
+# set the page size as A4 (11.7 x 8.3 in) and in Aspose.PDF, 1 inch = 72 points
+# so A4 dimensions in points will be (842.4, 597.6)
 $pdf_page->setPageSize(597.6,842.4);
 
-# احفظ ملف PDF الجديد الذي تم إنشاؤه
+# save the newly generated PDF file
 $pdf->save($dataDir . "output.pdf");
 
-print "تم تحديث الأبعاد بنجاح!" . PHP_EOL;
+print "Dimensions updated successfully!" . PHP_EOL;
 
 ```
 
-**تحميل الكود الجاري**
+** تنزيل كود التشغيل **
 
-قم بتحميل **تحديث أبعاد الصفحة (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تنزيل В ** تحديث أبعاد الصفحة (Aspose.PDF) ** В من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/UpdatePageDimensions.php)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/UpdatePageDimensions.php)

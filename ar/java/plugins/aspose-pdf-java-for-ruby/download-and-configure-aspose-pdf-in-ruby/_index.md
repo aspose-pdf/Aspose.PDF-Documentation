@@ -1,21 +1,22 @@
 ---
-title: تحميل وتكوين Aspose.Pdf في روبي
+title: قم بتنزيل وتكوين Aspose.Pdf في روبي
+linktitle: قم بتنزيل وتكوين Aspose.Pdf في روبي
 type: docs
 weight: 10
-url: /ar/java/download-and-configure-aspose-pdf-in-ruby/
-lastmod: "2021-06-05"
+url: /java/download-and-configure-aspose-pdf-in-ruby/
+description: ابدأ باستخدام Aspose.PDF في Ruby عن طريق تنزيل المكتبة وتكوينها لإدارة ملفات PDF بسلاسة.
+lastmod: "2026-06-09"
 ---
-
 ## تحميل المكتبات المطلوبة
 
-قم بتحميل المكتبات المطلوبة المذكورة أدناه. هذه ضرورية لتنفيذ أمثلة Aspose.PDF Java لروبي.
+قم بتنزيل المكتبات المطلوبة المذكورة أدناه. هذه هي العناصر المطلوبة لتنفيذ Aspose.PDF Java لأمثلة Ruby.
 
-- [مكون Aspose.PDF لJava](https://downloads.aspose.com/pdf/java)
+- [Aspose.PDF لمكون Java](https://downloads.aspose.com/pdf/java)
 
-## تحميل الأمثلة من مواقع البرمجة الاجتماعية
+## قم بتنزيل أمثلة من مواقع الترميز الاجتماعي
 
-الإصدارات التالية من الأمثلة التشغيلية متاحة للتحميل على مواقع البرمجة الاجتماعية المذكورة أدناه:
+الإصدارات التالية من الأمثلة الجارية متاحة للتنزيل على مواقع الترميز الاجتماعي المذكورة أدناه:
 
-GitHub
+جيثب
 
 - [Aspose.PDF Java لروبي](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)

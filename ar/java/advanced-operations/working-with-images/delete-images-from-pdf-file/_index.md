@@ -1,64 +1,29 @@
 ---
-title: حذف الصور من ملف PDF
+title: حذف الصور من ملف PDF باستخدام Java
 linktitle: حذف الصور
 type: docs
 weight: 20
-url: /ar/java/delete-images-from-pdf-file/
-description: يشرح هذا القسم كيفية حذف الصور من ملف PDF باستخدام Aspose.PDF لـ Java.
-lastmod: "2021-06-05"
+url: /java/delete-images-from-pdf-file/
+description: تعرف على كيفية حذف الصور المضمنة من ملفات PDF في Java.
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: حذف الصور المضمنة من ملفات PDF باستخدام Java
+Abstract: توضح هذه المقالة كيفية حذف الصور من مستندات PDF باستخدام Aspose.PDF لـ Java. يقوم المثال بإزالة مورد صورة من الصفحة الأولى بواسطة فهرسها في مجموعة صور الصفحة ثم يحفظ المستند المعدل.
 ---
+استخدم مجموعة موارد صور الصفحة عندما تحتاج إلى إزالة الصور المضمنة من صفحة PDF.
 
-لحذف صورة من ملف PDF، استخدم ببساطة طريقة الحذف (delete(..)) في مجموعة الصور.
+## حذف صورة مضمنة حسب الفهرس
 
-1. قم بإنشاء كائن Document وافتح ملف PDF المدخل.
-2. احصل على الصفحة التي تحتوي على الصورة من مجموعة [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) الخاصة بكائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-3. تُحفظ الصور في مجموعة الصور الموجودة في مجموعة [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) الخاصة بالصفحة.
-4. احذف صورة باستخدام طريقة Delete في مجموعة الصور.
-5. احفظ الناتج باستخدام طريقة Save الخاصة بكائن Document.
-
-يوضح مقطع الشيفرة البرمجية التالي كيفية حذف صورة من ملف PDF.
+1. افتح ملف PDF المصدر [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. الوصول إلى موارد الصورة على الهدف [الصفحة](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. احذف الصورة المستهدفة من مجموعة موارد الصفحة بواسطة فهرسها.
+1. احفظ ملف PDF المحدث [المستند](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.Color;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.FontRepository;
-import com.aspose.pdf.FontStyles;
-import com.aspose.pdf.HorizontalAlignment;
-import com.aspose.pdf.PageNumberStamp;
-
-public class ExampleDeleteImages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ExampleAddPageNumber() {
-
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "PageNumberStamp.pdf");
-
-        // إنشاء ختم رقم الصفحة
-        PageNumberStamp pageNumberStamp = new PageNumberStamp();
-
-        // ما إذا كان الختم في الخلفية
-        pageNumberStamp.setBackground(false);
-        pageNumberStamp.setFormat("Page # of " + pdfDocument.getPages().size());
-        pageNumberStamp.setBottomMargin (10);
-        pageNumberStamp.setHorizontalAlignment ( HorizontalAlignment.Center);
-        pageNumberStamp.setStartingNumber(1);
-        // تعيين خصائص النص
-        pageNumberStamp.getTextState().setFont (FontRepository.findFont("Arial"));
-        pageNumberStamp.getTextState().setFontSize (14.0F);
-        pageNumberStamp.getTextState().setFontStyle (FontStyles.Bold);        
-        pageNumberStamp.getTextState().setForegroundColor (Color.getAqua());
-
-        // إضافة ختم إلى صفحة معينة
-        pdfDocument.getPages().get_Item(1).addStamp(pageNumberStamp);
-
-        _dataDir = _dataDir + "PageNumberStamp_out.pdf";
-        // حفظ المستند الناتج
-        pdfDocument.save(_dataDir);
-
+public static void deleteImage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().get_Item(1).getResources().getImages().delete(1);
+        document.save(outputFile.toString());
     }
 }
 ```

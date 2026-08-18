@@ -1,12 +1,13 @@
 ---
 title: تحسين مستند PDF للويب في بايثون
+linktitle: تحسين مستند PDF للويب في بايثون
 type: docs
 weight: 60
-url: /ar/java/optimize-pdf-document-for-the-web-in-python/
-lastmod: "2021-06-05"
+url: /java/optimize-pdf-document-for-the-web-in-python/
+description: تعرف على كيفية تحسين ملفات PDF لتحميل الويب بشكل أسرع في Python باستخدام Aspose.PDF، مما يحسن تجربة المستخدم والأداء.
+lastmod: "2026-06-09"
 ---
-
-لتحسين مستند PDF للويب باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء طريقة **optimize_web** من فئة **Optimize**.
+لتحسين مستند PDF للويب باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء طريقة **optimize_web** للفئة **Optimize**.
 
 ```python
 
@@ -14,17 +15,17 @@ doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# تحسين للويب
+# Optimize for web
 doc.optimize();
 
-#حفظ مستند الإخراج
+#Save output document
 doc.save(self.dataDir + "Optimized_Web.pdf")
 
-print "تم تحسين ملف PDF للويب، يرجى التحقق من ملف الإخراج."
+print "Optimized PDF for the Web, please check output file."
 ```
 
-**تنزيل الكود القابل للتشغيل**
+** تنزيل كود التشغيل **
 
-قم بتنزيل **تحسين PDF للويب (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+قم بتنزيل ** ** تحسين ملف PDF للويب (Aspose.PDF) ** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/Optimize/Optimize.py)
+- [جيثب](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/Optimize/Optimize.py)
