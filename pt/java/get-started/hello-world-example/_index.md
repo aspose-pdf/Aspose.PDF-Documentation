@@ -1,42 +1,48 @@
 ---
-title: Exemplo Hello World em Java
-linktitle: Exemplo Hello World
+title: Exemplo de Hello World usando Java
+linktitle: Exemplo de Olá Mundo
 type: docs
-weight: 40
-url: /pt/java/hello-world-example/
-description: Esta página mostra como usar programação simples para criar um documento PDF contendo o texto - Hello World usando Aspose.PDF para Java.
-lastmod: "2021-06-05"
+weight: 20
+url: /java/hello-world-example/
+description: Este exemplo demonstra como criar um documento PDF simples com texto estilizado Hello World usando Aspose.PDF para Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Exemplo de Olá Mundo via Java
+Abstract: Este artigo fornece um exemplo de Hello World para Aspose.PDF para Java. O exemplo cria um novo documento PDF, adiciona uma página, cria um TextFragment com posição, fonte e cores personalizadas, anexa o texto à página com TextBuilder e salva o resultado como um arquivo PDF.
 ---
+Um exemplo de “Hello World” é o caminho mais curto para entender o fluxo de trabalho básico de criação de PDF. Neste artigo, o exemplo cria um novo PDF, coloca um fragmento de texto estilizado na página e salva o arquivo de saída.
 
-## Exemplo Hello World
+O exemplo Java segue estas etapas:
 
-Um exemplo “Hello World” é tradicionalmente usado para apresentar os recursos de uma linguagem de programação ou software com um caso de uso simples.
+1. Crie um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objeto.
+1. Adicione um [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
+1. Crie um [Fragmento de Texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) com o texto `Hello, world!`.
+1. Defina o [Posição](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), fonte, tamanho da fonte, cor de fundo e cor de primeiro plano no fragmento [Estado de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Crie um [Construtor de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) para a página.
+1. Anexe o [Fragmento de Texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) para o [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Salve o PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-A API Aspose.PDF para Java capacita desenvolvedores de aplicações Java a criar, ler, editar e manipular arquivos PDF em suas aplicações. Permite que você leia e converta vários tipos de arquivos diferentes de e para o formato de arquivo PDF. Este artigo Hello World mostra como criar um arquivo PDF em Java usando a API Aspose.PDF para Java. Após [instalar o Aspose.PDF para Java](/pdf/pt/java/installation/) no seu ambiente, você pode executar o exemplo de código abaixo para ver como a API Aspose.PDF funciona.
-
-O trecho de código abaixo segue estas etapas:
-
-1. Instanciar um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document)
-1. Adicionar uma [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) ao objeto documento
-1. Criar um objeto [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment)
-1. Adicionar TextFragment à coleção de [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) da página
-1. Salvar o documento PDF resultante
-
-O seguinte trecho de código é um programa Hello World para mostrar o funcionamento da API Aspose.PDF para Java.
+O seguinte código Java é baseado em `GetStartedExamples.java`.
 
 ```java
-// Inicializar objeto documento
-Document document = new Document();
- 
-//Adicionar página
-Page page = document.getPages().add();
- 
-// Adicionar texto à nova página
-page.getParagraphs().add(new TextFragment("Hello World!"));
- 
-// Salvar PDF atualizado
-document.save("HelloWorld_out.pdf");
+public static void simpleExample(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("Hello, world!");
+        textFragment.setPosition(new Position(100, 600));
+        textFragment.getTextState().setFontSize(12);
+        textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment.getTextState().setBackgroundColor(Color.getBlue());
+        textFragment.getTextState().setForegroundColor(Color.getYellow());
+
+        TextBuilder textBuilder = new TextBuilder(page);
+        textBuilder.appendText(textFragment);
+
+        document.save(outputFile.toString());
+    }
+}
 ```

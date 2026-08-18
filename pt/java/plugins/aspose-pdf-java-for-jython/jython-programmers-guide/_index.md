@@ -1,14 +1,15 @@
 ---
-title: Jython Programmers Guide
+title: Guia para programadores Jython
+linktitle: Guia para programadores Jython
 type: docs
 weight: 10
-url: /pt/java/jython-programmers-guide/
-lastmod: "2021-06-05"
+url: /java/jython-programmers-guide/
+description: Comece a programar Jython para Aspose.PDF aprendendo os principais recursos e métodos para gerenciar arquivos PDF em Jython.
+lastmod: "2026-06-09"
 ---
-
 Esta seção inclui os seguintes tópicos:
 
-- [Trabalhando com Conversão de Documentos em Jython](/pdf/pt/java/working-with-document-conversion-in-jython/)
-- [Trabalhando com Objeto de Documento em Jython](/pdf/pt/java/working-with-document-object-in-jython/)
-- [Trabalhando com Páginas em Jython](/pdf/pt/java/working-with-pages-in-jython/)
-- [Trabalhando com Texto em Jython](/pdf/pt/java/working-with-text-in-jython/)
+- [Trabalhando com conversão de documentos em Jython](/pdf/pt/java/working-with-document-conversion-in-jython/)
+- [Trabalhando com objeto de documento em Jython](/pdf/pt/java/working-with-document-object-in-jython/)
+- [Trabalhando com páginas em Jython](/pdf/pt/java/working-with-pages-in-jython/)
+- [Trabalhando com texto em Jython](/pdf/pt/java/working-with-text-in-jython/)

@@ -3,45 +3,19 @@ title: Comece
 linktitle: Comece
 type: docs
 weight: 30
-url: /pt/java/get-started/
-description: Esta seção descreve os princípios básicos de trabalho e uso da API DOM. Também demonstra exemplos simples e complexos para criar um documento PDF
-lastmod: "2021-06-05"
+url: /java/get-started/
+description: Aprenda como começar a usar Aspose.PDF for Java para criar documentos PDF e construir exemplos mais avançados com texto, imagens e tabelas.
+is_node: true
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+Aspose.PDF for Java fornece as APIs principais de que você precisa para criar, carregar, editar, converter e salvar documentos PDF em aplicativos Java.
 
-Investigue os recursos e requisitos mais básicos da biblioteca Aspose.PDF para Java nesta seção de Introdução.
+Esta seção apresenta a biblioteca com dois exemplos baseados em origem do projeto de exemplos Java:
 
-Para saber mais sobre Aspose.PDF, selecione a seção apropriada:
+- [Exemplo de Olá Mundo](/pdf/pt/java/hello-world-example/) - crie um documento PDF simples e coloque um fragmento de texto estilizado na página.
+- [Criando um PDF complexo](/pdf/pt/java/complex-pdf-example/) - crie um PDF mais rico com uma imagem, texto posicionado e uma tabela formatada.
 
-[Por que Aspose.PDF](/pdf/pt/java/why-aspose-pdf/) – descreve as razões pelas quais pode ser melhor usar produtos Aspose em vez de outros produtos, por exemplo, Automação do Microsoft Office ou Open XML SDK
-
-[Instalação](/pdf/pt/java/installation/) – fornece informações sobre como instalar o Aspose.PDF
-
-[Requisitos do Sistema](/pdf/pt/java/system-requirements/) – fornece informações sobre requisitos de sistema e ambiente de desenvolvimento
-
-[Olá Mundo](/pdf/pt/java/hello-world-example/) – fornece informações sobre como criar um documento PDF simples usando Java e Aspose.PDF
-
-[Como Executar os Exemplos](/pdf/pt/java/how-to-run-other-examples/) – descreve como baixar e executar os exemplos e quais são os requisitos de software necessários
-
-[PDF Complexo](/pdf/pt/java/complex-pdf-example/) – descreve como criar um documento mais complexo com a biblioteca Java
-
-[Formatos de Documentos Suportados](/pdf/pt/java/supported-file-formats/) – fornece informações sobre formatos suportados
-
-[Funcionalidades Suportadas](/pdf/pt/java/key-features/) – fornece informações sobre quais funcionalidades são suportadas ao carregar ou salvar um documento em vários formatos
-
-[Licenciamento e Assinatura](/pdf/pt/java/licensing/) – fornece informações sobre como aplicar uma licença e usar vários produtos Aspose
-
-[Suporte Técnico](/pdf/pt/java/technical-support/) – Esta página dá recomendações para resolver suas tarefas de forma rápida e com qualidade
-
-[Recursos Avançados](/pdf/pt/java/advanced-features/) – fornece informações sobre o uso de Tags LaTeX em documentos PDF com Aspose.PDF para Java
-
-[Noções Básicas da API DOM do Aspose.PDF](/pdf/pt/java/basics-of-dom-api/) – esta seção mostrará os recursos de trabalho com DOM, a forma de apresentação de documentos estruturados como modelo orientado a objetos
-
-### Saiba mais sobre:
-
-- [Noções básicas da API DOM](/pdf/pt/java/basics-of-dom-api/)
-- [Exemplo "Hello, World" em Java](/pdf/pt/java/hello-world-example/)
-- [PDF Complexo](/pdf/pt/java/complex-pdf-example/)
-- [Como executar outros exemplos](/pdf/pt/java/how-to-run-other-examples/)
+Use esses exemplos como ponto de partida antes de passar para as seções mais amplas da documentação Java para texto, imagens, páginas, formulários e conversão.

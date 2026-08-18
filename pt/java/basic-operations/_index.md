@@ -2,17 +2,22 @@
 title: Operações básicas com documentos PDF
 linktitle: Operações básicas
 type: docs
-weight: 40
-url: /pt/java/basic-operations/
-lastmod: "2021-06-05"
-description: A seção de operações básicas descreve as possibilidades de abrir e salvar documentos PDF usando o Aspose.PDF para Java.
+weight: 60
+url: /java/basic-operations/
+lastmod: "2026-06-09"
+description: A seção de operações básicas descreve como criar, abrir, salvar, mesclar, dividir e proteger documentos PDF usando Aspose.PDF para Java.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Visão geral das operações básicas com PDF usando Java
+Abstract: Este artigo fornece uma visão geral das operações básicas de PDF em Java usando Aspose.PDF. Abrange a criação de novos documentos, abertura de PDFs de arquivos ou fluxos, salvamento de documentos em arquivos e fluxos, mesclagem e divisão de arquivos PDF e proteção de documentos com senhas e permissões.
 ---
+A seção **Operações básicas** descreve as primeiras e mais simples tarefas de PDF que você pode realizar com Aspose.PDF para Java:
 
-A seção **Operações básicas** descreve a primeira e mais simples operação com documentos PDF no Aspose.PDF para Java:
-
-- [Criar documento PDF](/pdf/pt/java/create-document/) - este artigo descreve como criar um arquivo PDF usando Java.
-- [Abrir documento PDF](/pdf/pt/java/open-pdf-document/) - este artigo descreve várias maneiras de abrir um documento PDF em uma aplicação Java.
-- [Salvar documento PDF](/pdf/pt/java/save-pdf-document/) - este artigo descreve várias maneiras de salvar um documento PDF em arquivo, fluxo, enviar para a Web ou salvar como documento PDF/A (ou PDF/X).
+- [Criar documento PDF](/pdf/pt/java/create-document/) - crie um novo documento PDF programaticamente em Java.
+- [Abrir documento PDF](/pdf/pt/java/open-pdf-document/) - abra arquivos PDF de um caminho, de um fluxo ou com uma senha.
+- [Salvar documento PDF](/pdf/pt/java/save-pdf-document/) - salve um documento em um arquivo, em um fluxo ou como um padrão PDF.
+- [Mesclar PDF](/pdf/pt/java/merge-pdf/) - combine vários arquivos PDF em um documento de saída.
+- [Dividir PDF](/pdf/pt/java/split-pdf/) - divida as páginas PDF em arquivos PDF separados de uma única página.
+- [Criptografar e descriptografar arquivo PDF](/pdf/pt/java/protect-pdf-file/) - aplique senhas, permissões e descriptografia a arquivos PDF.
