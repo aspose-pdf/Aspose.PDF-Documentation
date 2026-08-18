@@ -9,10 +9,10 @@ lastmod: "2026-06-09"
 ---
 Esta seção inclui os seguintes tópicos:
 
-- [Adicionando JavaScript usando DOM em Jython](/pdf/pt/java/adding-javascript-using-dom-in-jython/)
-- [Obtenha propriedades de janela de documento e exibição de página em Jython](/pdf/pt/java/get-document-window-and-page-display-properties-in-jython/)
-- [Obtenha informações do arquivo PDF em Jython](/pdf/pt/java/get-pdf-file-information-in-jython/)
-- [Obtenha metadados XMP de arquivo PDF em Jython](/pdf/pt/java/get-xmp-metadata-from-pdf-file-in-jython)
-- [Otimize documento PDF em Jython](/pdf/pt/java/optimize-pdf-document-in-jython/)
-- [Definir expiração de PDF em Jython](/pdf/pt/java/set-pdf-expiration-in-jython/)
-- [Definir informações do arquivo PDF em Jython](/pdf/pt/java/set-pdf-file-information-in-jython/)
+- [Adicionando JavaScript usando DOM em Jython](/pdf/java/adding-javascript-using-dom-in-jython/)
+- [Obter propriedades de janela de documento e exibição de página em Jython](/pdf/java/get-document-window-and-page-display-properties-in-jython/)
+- [Obter informações do arquivo PDF em Jython](/pdf/java/get-pdf-file-information-in-jython/)
+- [Obter metadados XMP do arquivo PDF em Jython](/pdf/java/get-xmp-metadata-from-pdf-file-in-jython)
+- [Otimizar documento PDF em Jython](/pdf/java/optimize-pdf-document-in-jython/)
+- [Definir expiração do PDF em Jython](/pdf/java/set-pdf-expiration-in-jython/)
+- [Definir informações do arquivo PDF em Jython](/pdf/java/set-pdf-file-information-in-jython/)

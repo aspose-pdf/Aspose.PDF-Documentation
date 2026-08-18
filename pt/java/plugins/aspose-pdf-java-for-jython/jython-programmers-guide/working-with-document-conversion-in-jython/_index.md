@@ -9,7 +9,7 @@ lastmod: "2026-06-09"
 ---
 Esta seção inclui os seguintes tópicos:
 
-- [Converta PDF para formato DOC ou DOCX em Jython](/pdf/pt/java/convert-pdf-to-doc-or-docx-format-in-jython/)
-- [Converter PDF em pasta de trabalho do Excel em Jython](/pdf/pt/java/convert-pdf-to-excel-workbook-in-jython)
-- [Converter PDF para formato SVG em Jython](/pdf/pt/java/convert-pdf-to-svg-format-in-jython/)
-- [Converter arquivo SVG para formato PDF em Jython](/pdf/pt/java/convert-svg-file-to-pdf-format-in-jython/)
+- [Converta PDF para formato DOC ou DOCX em Jython](/pdf/java/convert-pdf-to-doc-or-docx-format-in-jython/)
+- [Converta PDF em pasta de trabalho do Excel em Jython](/pdf/java/convert-pdf-to-excel-workbook-in-jython)
+- [Converter PDF para formato SVG em Jython](/pdf/java/convert-pdf-to-svg-format-in-jython/)
+- [Converter arquivo SVG para formato PDF em Jython](/pdf/java/convert-svg-file-to-pdf-format-in-jython/)

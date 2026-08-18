@@ -14,9 +14,9 @@ sitemap:
 
 Itere pelas anotações da página e leia o texto marcado de `HighlightAnnotation`.
 
-1. Abra o PDF de origem em um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) exemplo.
-1. Iterar através do [Anotação](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objetos no alvo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Verifique se cada anotação é uma [DestaqueAnotação](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) antes de convertê-lo para a classe de anotação digitada.
+1. Abra o PDF de origem em uma instância [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere através dos objetos [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) na [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino.
+1. Verifique se cada anotação é [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) antes de convertê-la para a classe de anotação digitada.
 1. Leia o texto marcado de cada anotação de destaque e imprima-o no console.
 
 ```java
@@ -34,13 +34,13 @@ public static void extractHighlightedText(Path inputFile) {
 
 ## Extraia texto de anotações de carimbo
 
-Leia o fluxo de aparência normal de uma anotação de carimbo e passe-o `TextAbsorber`.
+Leia o fluxo de aparência normal de uma anotação de carimbo e passe-o por `TextAbsorber`.
 
-1. Abra o PDF de origem em um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) exemplo.
-1. Iterar através do [Anotação](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objetos no alvo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abra o PDF de origem em uma instância [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere através dos objetos [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) na [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino.
 1. Filtre as anotações para aquelas cujo tipo é `Stamp`.
-1. Crie um [Absorvedor de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) e solicite a entrada de aparência normal do dicionário de aparência de anotação de carimbo.
-1. Visite a aparência [Formulário X](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) e imprima o texto extraído.
+1. Crie um [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) e solicite a entrada de aparência normal do dicionário de aparência da anotação do carimbo.
+1. Visite a aparência [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) e imprima o texto extraído.
 
 ```java
 public static void extractStampText(Path inputFile) {
@@ -61,11 +61,11 @@ public static void extractStampText(Path inputFile) {
 
 ## Extraia detalhes de texto sobrescrito e subscrito
 
-Usar `TextFragmentAbsorber` quando você precisar do texto extraído e dos sinalizadores sobrescritos ou subscritos em cada fragmento.
+Use `TextFragmentAbsorber` quando precisar do texto extraído e dos sinalizadores sobrescritos ou subscritos em cada fragmento.
 
-1. Abra o PDF de origem em um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) exemplo.
-1. Crie um [TextFragmentAbsorvedor](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) para análise de texto em nível de fragmento.
-1. Visite o alvo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e recolher o seu [Fragmento de Texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objetos.
+1. Abra o PDF de origem em uma instância [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) para análise de texto em nível de fragmento.
+1. Visite a [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino e colete seus objetos [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. Itere através desses fragmentos e leia o texto junto com os sinalizadores sobrescritos e subscritos de `fragment.getTextState()`.
 1. Grave os detalhes extraídos no arquivo de saída.
 

@@ -15,10 +15,10 @@ Abstract: Este artigo explica como extrair imagens incorporadas de um documento 
 ---
 Extraia imagens de páginas PDF quando precisar reutilizar gráficos incorporados, inspecionar ativos de documentos ou exportar imagens para processamento posterior.
 
-1. Abra o PDF de origem em um [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância e abra um fluxo de saída para o arquivo de imagem extraído.
-1. Obtenha o alvo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) do documento e acesse seu `Resources.Images` coleção.
-1. Recuperar o necessário [Imagem X](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) objeto dessa coleção de imagens por índice.
-1. Chamar `image.save(outputImage)` para gravar os bytes da imagem extraída no fluxo de destino.
+1. Abra o PDF de origem em uma instância [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e abra um fluxo de saída para o arquivo de imagem extraído.
+1. Obtenha a [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino do documento e acesse sua coleção `Resources.Images`.
+1. Recupere o objeto [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) necessário dessa coleção de imagens por índice.
+1. Chame `image.save(outputImage)` para gravar os bytes da imagem extraída no fluxo de destino.
 
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {
