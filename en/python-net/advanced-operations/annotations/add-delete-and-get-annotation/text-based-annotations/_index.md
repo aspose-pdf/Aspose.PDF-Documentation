@@ -32,10 +32,10 @@ The examples cover these review and collaboration tools:
 
 Free text annotations let you place visible text comments directly on a PDF page. This example adds a simple free text annotation to the first page.
 
-1. Open the source PDF with `ap.Document`.
-1. Create an `ap.annotations.FreeTextAnnotation` with a page, rectangle, and default appearance.
+1. Open the source PDF with [`ap.Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Create an [`ap.annotations.FreeTextAnnotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) with a page, [`ap.Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/), and [`DefaultAppearance`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/defaultappearance/).
 1. Set the annotation title and color.
-1. Append the annotation to `document.pages[1].annotations` and save the PDF.
+1. Append the annotation to the page [`AnnotationCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) and call [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
 ```python
 def free_text_annotation_add(infile, outfile):
@@ -59,7 +59,7 @@ To inspect free text annotations, filter the first page annotations by the `FREE
 
 1. Open the source PDF with `ap.Document`.
 1. Iterate over the annotations on `document.pages[1]`.
-1. Select annotations whose `annotation_type` is `AnnotationType.FREE_TEXT`.
+1. Select annotations whose `annotation_type` is [`AnnotationType.FREE_TEXT`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationtype/).
 1. Read and print the `rect` property of each match.
 
 ```python
@@ -81,7 +81,7 @@ This workflow removes all free text annotations from the first page and saves th
 
 1. Open the source PDF with `ap.Document`.
 1. Collect annotations whose type is `AnnotationType.FREE_TEXT`.
-1. Delete each collected annotation from the page annotation collection.
+1. Call [`AnnotationCollection.delete()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) for each collected annotation.
 1. Save the updated PDF.
 
 ```python
@@ -107,7 +107,7 @@ def free_text_annotation_delete(infile, outfile):
 Highlight annotations emphasize parts of the document without changing the underlying content. This example adds a highlight annotation to the first page.
 
 1. Open the source PDF with `ap.Document`.
-1. Create an `ap.annotations.HighlightAnnotation` for the first page and define the highlighted area with `ap.Rectangle`.
+1. Create an [`ap.annotations.HighlightAnnotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) for the first page and define the highlighted area with [`ap.Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/).
 1. Append the annotation to the page annotation collection.
 1. Save the PDF.
 
@@ -129,7 +129,7 @@ def text_highlight_annotation_add(infile, outfile):
 To inspect highlight annotations, filter the page annotations by the `HIGHLIGHT` type and print their rectangles.
 
 1. Open the source PDF with `ap.Document`.
-1. Filter the first page annotations by `AnnotationType.HIGHLIGHT`.
+1. Filter the first page annotations by [`AnnotationType.HIGHLIGHT`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationtype/).
 1. Read and print the `rect` property of each highlight annotation.
 
 ```python
@@ -151,7 +151,7 @@ This workflow removes all highlight annotations from the first page and saves th
 
 1. Open the source PDF with `ap.Document`.
 1. Collect annotations whose type is `AnnotationType.HIGHLIGHT`.
-1. Delete each collected annotation from `document.pages[1].annotations`.
+1. Delete each collected annotation with [`AnnotationCollection.delete()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/).
 1. Save the updated PDF.
 
 ```python
@@ -177,7 +177,7 @@ def text_highlight_annotation_delete(infile, outfile):
 Underline annotations mark text with a visible underline. This example adds a basic underline annotation and sets its metadata and color.
 
 1. Open the source PDF with `ap.Document`.
-1. Create an `ap.annotations.UnderlineAnnotation` with a rectangle on the first page.
+1. Create an [`ap.annotations.UnderlineAnnotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) with a rectangle on the first page.
 1. Set its title, subject, print flag, and color.
 1. Append the annotation to the page and save the PDF.
 
@@ -205,7 +205,7 @@ If you want the underline to become part of the page content instead of remainin
 1. Open the source PDF with `ap.Document`.
 1. Create and configure an `ap.annotations.UnderlineAnnotation`.
 1. Append it to `document.pages[1].annotations`.
-1. Call `flatten()` on the appended annotation and save the PDF.
+1. Call [`UnderlineAnnotation.flatten()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) on the appended annotation and save the PDF.
 
 ```python
 def text_underline_flatten_add(infile, outfile):
@@ -232,7 +232,7 @@ Quad points let you define the exact marked area for the underline annotation. T
 
 1. Open the source PDF and define the target `ap.Rectangle`.
 1. Create an `ap.annotations.UnderlineAnnotation` for that rectangle.
-1. Build `quad_points` from the rectangle corners to define the marked area precisely.
+1. Build the [`quad_points`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) property from [`ap.Point`](https://reference.aspose.com/pdf/python-net/aspose.pdf/point/) objects at the rectangle corners.
 1. Append the annotation to the first page and save the PDF.
 
 ```python
@@ -262,7 +262,7 @@ This workflow removes all underline annotations from the first page and saves th
 
 1. Open the source PDF with `ap.Document`.
 1. Collect annotations whose type is `AnnotationType.UNDERLINE`.
-1. Delete each collected annotation from the page annotation collection.
+1. Delete each collected annotation with [`AnnotationCollection.delete()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/).
 1. Save the updated PDF.
 
 ```python
@@ -285,7 +285,7 @@ def text_underline_annotation_delete(infile, outfile):
 This workflow shows how to selectively delete underline annotations after checking their title.
 
 1. Open the source PDF with `ap.Document`.
-1. Collect underline annotations and cast them to `UnderlineAnnotation` objects.
+1. Collect underline annotations and cast them to [`UnderlineAnnotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) objects.
 1. Check each annotation's `title` and delete only matching annotations.
 1. Save the updated PDF.
 
@@ -311,7 +311,7 @@ def text_underline_by_title_delete(infile, outfile):
 To inspect underline annotations, filter the first page annotations by the `UNDERLINE` type and print each rectangle.
 
 1. Open the source PDF with `ap.Document`.
-1. Filter the first page annotations by `AnnotationType.UNDERLINE`.
+1. Filter the first page annotations by [`AnnotationType.UNDERLINE`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationtype/).
 1. Read and print the `rect` property of each underline annotation.
 
 ```python
@@ -334,7 +334,7 @@ This workflow converts each underline annotation to an `UnderlineAnnotation` obj
 1. Open the source PDF with `ap.Document`.
 1. Filter the first page annotations by `AnnotationType.UNDERLINE`.
 1. Cast each match to `ap.annotations.UnderlineAnnotation`.
-1. Call `get_marked_text()` and print the returned text.
+1. Call [`UnderlineAnnotation.get_marked_text()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) and print the returned text.
 
 ```python
 def text_underline_marked_text_get(infile, outfile):
@@ -357,8 +357,8 @@ If you need each marked fragment separately, you can iterate through the collect
 
 1. Open the source PDF and collect its underline annotations.
 1. Cast each match to `ap.annotations.UnderlineAnnotation`.
-1. Call `get_marked_text_fragments()` on each annotation.
-1. Iterate over the returned fragments and print each fragment's `text` property.
+1. Call [`UnderlineAnnotation.get_marked_text_fragments()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) on each annotation.
+1. Iterate over the returned [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) objects and print each fragment's `text` property.
 
 ```python
 def text_underline_marked_fragments_get(infile, outfile):
@@ -384,7 +384,7 @@ def text_underline_marked_fragments_get(infile, outfile):
 Squiggly annotations are often used to mark spelling, grammar, or attention areas in text. This example adds a squiggly annotation to the first page.
 
 1. Open the source PDF and get `document.pages[1]`.
-1. Create an `ap.annotations.SquigglyAnnotation` with a rectangle on that page.
+1. Create an [`ap.annotations.SquigglyAnnotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) with a rectangle on that page.
 1. Set the annotation title and color.
 1. Append the annotation to the page and save the PDF.
 
@@ -409,7 +409,7 @@ def text_squiggly_annotation_add(infile, outfile):
 To inspect squiggly annotations, filter the page annotations by the `SQUIGGLY` type and print their rectangles.
 
 1. Open the source PDF with `ap.Document`.
-1. Filter the first page annotations by `AnnotationType.SQUIGGLY`.
+1. Filter the first page annotations by [`AnnotationType.SQUIGGLY`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationtype/).
 1. Read and print the `rect` property of each match.
 
 ```python
@@ -431,7 +431,7 @@ This workflow removes all squiggly annotations from the first page and saves the
 
 1. Open the source PDF with `ap.Document`.
 1. Collect annotations whose type is `AnnotationType.SQUIGGLY`.
-1. Delete each collected annotation from the page annotation collection.
+1. Delete each collected annotation with [`AnnotationCollection.delete()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/).
 1. Save the updated PDF.
 
 ```python
@@ -457,7 +457,7 @@ def text_squiggly_annotation_delete(infile, outfile):
 Strikeout annotations mark text that should be treated as removed or crossed out. This example adds a strikeout annotation and sets its metadata and color.
 
 1. Open the source PDF with `ap.Document`.
-1. Create an `ap.annotations.StrikeOutAnnotation` with a rectangle on the first page.
+1. Create an [`ap.annotations.StrikeOutAnnotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) with a rectangle on the first page.
 1. Set its title, subject, print flag, and color.
 1. Append the annotation to the page and save the PDF.
 
@@ -483,7 +483,7 @@ def text_strikeout_annotation_add(infile, outfile):
 To inspect strikeout annotations, filter the page annotations by the `STRIKE_OUT` type and print their rectangles.
 
 1. Open the source PDF with `ap.Document`.
-1. Filter the first page annotations by `AnnotationType.STRIKE_OUT`.
+1. Filter the first page annotations by [`AnnotationType.STRIKE_OUT`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationtype/).
 1. Read and print the `rect` property of each strikeout annotation.
 
 ```python
@@ -505,7 +505,7 @@ This workflow removes all strikeout annotations from the first page and saves th
 
 1. Open the source PDF with `ap.Document`.
 1. Collect annotations whose type is `AnnotationType.STRIKE_OUT`.
-1. Delete each collected annotation from the page annotation collection.
+1. Delete each collected annotation with [`AnnotationCollection.delete()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/).
 1. Save the updated PDF.
 
 ```python
