@@ -1,109 +1,78 @@
 ---
-title: Перемещение страниц PDF
-linktitle: Перемещение страниц
+title: Переместить страницы PDF в Java
+linktitle: Перемещение страниц PDF
 type: docs
-weight: 20
+weight: 100
 url: /ru/java/move-pages/
-description: Попробуйте переместить страницы в нужное место или в конец PDF файла, используя Aspose.PDF для Java.
-lastmod: "2021-06-05"
+description: Узнайте, как перемещать страницы PDF внутри документа или между документами в Java.
+lastmod: "2026-08-19"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Переместить страницы PDF между документами в Java
+Abstract: В этой статье объясняется, как перемещать страницы в PDF с помощью Aspose.PDF for Java. Описывается перемещение одной страницы или нескольких страниц в другой документ, а также переустановка страницы внутри того же PDF.
 ---
+Aspose.PDF for Java позволяет перемещать страницы между документами или переустанавливать страницы внутри того же PDF.
 
-## Перемещение страницы из одного PDF документа в другой
+## Переместить страницу в другой документ
 
-Эта тема объясняет, как переместить страницу из одного PDF документа в конец другого документа, используя Java.
-Чтобы переместить страницу, необходимо:
+Используйте этот пример, когда одну страницу следует удалить из исходного PDF и сохранить в отдельный документ.
 
-1. Создать объект класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) с исходным PDF файлом.
-1. Создать объект класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) с целевым PDF файлом.
-1. Получить страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection).
-1. Добавить страницу в целевой документ.
-1. Сохранить выходной PDF, используя метод Save.
-1. Удалить страницу в исходном документе.
-1. Сохранить исходный PDF, используя метод Save.
-
-Следующий фрагмент кода показывает, как переместить одну страницу.
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
+1. Добавьте целевую страницу в назначение и удалите её из источника.
+1. Сохраните оба документа.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleMovePDFPages {
-
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-  public static void MovePage() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document();
-    Document dstDocument = new Document();
-    Page page = srcDocument.getPages().get_Item(2);
-    dstDocument.getPages().add(page);
-    // Сохранить выходной файл
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(2);
-    srcDocument.save(dstFileName);
-  }
-```
-
-## Перемещение группы страниц из одного PDF документа в другой
-
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) с исходным PDF файлом.
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) с целевым PDF файлом.
-1. Определите массив с номерами страниц, которые необходимо переместить.
-
-1. Запустите цикл по массиву:
-    1. Получите страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection).
-    1. Добавьте страницу в целевой документ.
-1. Сохраните выходной PDF, используя метод Save.
-1. Удалите страницу в исходном документе, используя массив.
-1. Сохраните исходный PDF, используя метод Save.
-
-Следующий фрагмент кода показывает, как вставить пустую страницу в конец PDF файла.
-
-```java
-  public static void MoveBunchPages() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document(srcFileName);
-    Document dstDocument = new Document();
-
-    Integer[] pages = { 1, 3 };
-    for (int pageIndex : pages) {
-      Page page = srcDocument.getPages().get_Item(pageIndex);
-      dstDocument.getPages().add(page);
+public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString());
+         Document anotherDocument = new Document()) {
+        anotherDocument.getPages().add(document.getPages().get_Item(2));
+        document.getPages().delete(2);
+        document.save(sourceOutputFile.toString());
+        anotherDocument.save(outputFile.toString());
     }
-    // Сохраните выходные файлы
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(pages);
-
-    srcDocument.save(dstFileName);
-  }
-```
-
-## Перемещение страницы в новое местоположение в текущем PDF документе
-
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) с исходным PDF файлом.
-1. Получите страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection).
-1. Добавьте страницу в новое место (например, в конец).
-1. Удалите страницу в предыдущем месте.
-1. Сохраните итоговый PDF, используя метод Save.
-
-```java
-  public static void MovePagesInOnePDF() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-
-    Document srcDocument = new Document(srcFileName);
-    Page page = srcDocument.getPages().get_Item(2);
-    srcDocument.getPages().add(page);
-    srcDocument.getPages().delete(2);
-
-    // Сохраните выходной файл
-    srcDocument.save(dstFileName);
-  }
 }
 ```
+
+## Переместить несколько страниц в другой документ
+
+Используйте этот пример, когда несколько страниц должны быть перенесены из исходного PDF в новый документ.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
+1. Скопируйте выбранные страницы в целевой документ.
+1. Удалите перемещённые страницы из исходного документа и сохраните оба файла.
+
+```java
+public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString());
+         Document dstDocument = new Document()) {
+        Integer[] pages = {1, 2};
+        for (Integer pageIndex : pages) {
+            dstDocument.getPages().add(srcDocument.getPages().get_Item(pageIndex));
+        }
+        dstDocument.save(outputFile.toString());
+        srcDocument.getPages().delete(pages);
+        srcDocument.save(sourceOutputFile.toString());
+    }
+}
+```
+
+## Переместить страницу внутри того же документа
+
+Используйте этот пример, когда страницу нужно переместить в новое место в том же PDF.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Дублируйте целевую страницу в новое положение и удалите исходный элемент страницы.
+1. Сохраните переупорядоченный документ.
+
+```java
+public static void movePageInNewLocationInSameDocument(Path inputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString())) {
+        srcDocument.getPages().add(srcDocument.getPages().get_Item(2));
+        srcDocument.getPages().delete(2);
+        srcDocument.save(outputFile.toString());
+    }
+}
+```
+

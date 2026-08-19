@@ -1,64 +1,30 @@
 ---
-title: Удаление Изображений из PDF Файла
-linktitle: Удаление Изображений
+title: Удалить изображения из PDF-файла с помощью Java
+linktitle: Удалить изображения
 type: docs
 weight: 20
 url: /ru/java/delete-images-from-pdf-file/
-description: Этот раздел объясняет, как удалить изображения из PDF файла, используя Aspose.PDF для Java.
-lastmod: "2021-06-05"
+description: Узнайте, как удалить встроенные изображения из PDF‑файлов на Java.
+lastmod: "2026-08-19"
+TechArticle: true
+AlternativeHeadline: Удалить встроенные изображения из PDF‑файлов с Java
+Abstract: В этой статье показано, как удалять изображения из PDF‑документов с использованием Aspose.PDF for Java. Пример удаляет ресурс изображения с первой страницы по его индексу в коллекции изображений страницы, а затем сохраняет изменённый документ.
 ---
+Используйте коллекцию ресурсов изображений страницы, когда необходимо удалить встроенные изображения со страницы PDF.
 
-Чтобы удалить изображение из PDF файла, просто используйте метод delete(..) коллекции Images.
+## Удалите встроенное изображение по индексу
 
-1. Создайте объект Document и откройте входной PDF файл.
-1. Получите страницу, содержащую изображение, из коллекции [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Изображения находятся в коллекции Images, которая содержится в коллекции [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) страницы.
-1. Удалите изображение с помощью метода Delete коллекции Images.
-1. Сохраните результат, используя метод Save объекта Document.
-
-Следующий фрагмент кода показывает, как удалить изображение из PDF файла.
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к ресурсам изображений в целевом файле [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Удалите целевое изображение из коллекции ресурсов страницы по его индексу.
+1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.Color;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.FontRepository;
-import com.aspose.pdf.FontStyles;
-import com.aspose.pdf.HorizontalAlignment;
-import com.aspose.pdf.PageNumberStamp;
-
-public class ExampleDeleteImages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ExampleAddPageNumber() {
-
-        // Открыть документ
-        Document pdfDocument = new Document(_dataDir + "PageNumberStamp.pdf");
-
-        // Создать штамп номера страницы
-        PageNumberStamp pageNumberStamp = new PageNumberStamp();
-
-        // Является ли штамп фоном
-        pageNumberStamp.setBackground(false);
-        pageNumberStamp.setFormat("Страница # из " + pdfDocument.getPages().size());
-        pageNumberStamp.setBottomMargin (10);
-        pageNumberStamp.setHorizontalAlignment ( HorizontalAlignment.Center);
-        pageNumberStamp.setStartingNumber(1);
-        // Установить свойства текста
-        pageNumberStamp.getTextState().setFont (FontRepository.findFont("Arial"));
-        pageNumberStamp.getTextState().setFontSize (14.0F);
-        pageNumberStamp.getTextState().setFontStyle (FontStyles.Bold);        
-        pageNumberStamp.getTextState().setForegroundColor (Color.getAqua());
-
-        // Добавить штамп на конкретную страницу
-        pdfDocument.getPages().get_Item(1).addStamp(pageNumberStamp);
-
-        _dataDir = _dataDir + "PageNumberStamp_out.pdf";
-        // Сохранить выходной документ
-        pdfDocument.save(_dataDir);
-
+public static void deleteImage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().get_Item(1).getResources().getImages().delete(1);
+        document.save(outputFile.toString());
     }
 }
 ```
+

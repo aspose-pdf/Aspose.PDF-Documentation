@@ -1,16 +1,18 @@
 ---
-title: Работа с преобразованием документов в Ruby
+title: Работа с конвертацией документов в Ruby
+linktitle: Работа с конвертацией документов в Ruby
 type: docs
 weight: 40
 url: /ru/java/working-with-document-conversion-in-ruby/
-lastmod: "2021-06-05"
+description: Изучите, как конвертировать PDF‑документы в другие форматы с помощью Ruby и Aspose.PDF, обеспечивая бесшовные преобразования файлов.
+lastmod: "2026-08-19"
 ---
+В этом разделе рассматриваются следующие темы:
 
-Этот раздел включает следующие темы:
+- [Конвертировать HTML в формат PDF в Ruby](/pdf/ru/java/convert-html-to-pdf-format-in-ruby/)
+- [Конвертировать страницы PDF в изображения в Ruby](/pdf/ru/java/convert-pdf-pages-to-images-in-ruby/)
+- [Конвертировать PDF в формат DOC или DOCX в Ruby](/pdf/ru/java/convert-pdf-to-doc-or-docx-format-in-ruby/)
+- [Конвертировать PDF в книгу Excel в Ruby](/pdf/ru/java/convert-pdf-to-excel-workbook-in-ruby/)
+- [Конвертировать PDF в формат SVG в Ruby](/pdf/ru/java/convert-pdf-to-svg-format-in-ruby/)
+- [Конвертировать файл SVG в формат PDF в Ruby](/pdf/ru/java/convert-svg-file-to-pdf-format-in-ruby/)
 
-- [Преобразование HTML в формат PDF на Ruby](/pdf/ru/java/convert-html-to-pdf-format-in-ruby/)
-- [Преобразование страниц PDF в изображения на Ruby](/pdf/ru/java/convert-pdf-pages-to-images-in-ruby/)
-- [Преобразование PDF в формат DOC или DOCX на Ruby](/pdf/ru/java/convert-pdf-to-doc-or-docx-format-in-ruby/)
-- [Преобразование PDF в рабочую книгу Excel на Ruby](/pdf/ru/java/convert-pdf-to-excel-workbook-in-ruby/)
-- [Преобразование PDF в формат SVG на Ruby](/pdf/ru/java/convert-pdf-to-svg-format-in-ruby/)
-- [Преобразование файла SVG в формат PDF на Ruby](/pdf/ru/java/convert-svg-file-to-pdf-format-in-ruby/)

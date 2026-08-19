@@ -1,160 +1,102 @@
 ---
-title: Добавить и Удалить Закладку
-linktitle: Добавить и Удалить Закладку
+title: Добавление и удаление закладок PDF в Java
+linktitle: Добавить и удалить закладку
 type: docs
 weight: 10
 url: /ru/java/add-and-delete-bookmark/
-description: Вы можете добавить закладку в PDF-документ с помощью Java. Возможно удалить все или определенные закладки из PDF-документа.
-lastmod: "2021-06-05"
+description: Узнайте, как добавлять и удалять закладки в PDF‑документах с помощью Java.
+lastmod: "2026-08-19"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Добавляйте или удаляйте закладки в PDF‑документах с помощью Java
+Abstract: В этой статье показано, как создавать и удалять закладки с помощью Aspose.PDF for Java. Примеры демонстрируют добавление закладки верхнего уровня, создание иерархии дочерних закладок, удаление всех закладок и удаление конкретной закладки по заголовку.
 ---
+Используйте коллекцию оглавления документа для программного управления закладками.
 
-## Добавление Закладки в PDF-Документ
+## Добавьте закладку верхнего уровня
 
-Закладки хранятся в коллекции [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) объекта Document, которая находится в коллекции [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
+Используйте этот пример, когда документ должен содержать единственную запись оглавления верхнего уровня.
 
-Чтобы добавить закладку в PDF:
-
-1. Откройте PDF-документ, используя объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Создайте закладку и определите ее свойства.
-1. Добавьте коллекцию [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) в коллекцию Outlines.
-
-Следующий фрагмент кода показывает, как добавить закладку в PDF-документ.
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) и настройте его заголовок, стиль и действие.
+1. Добавьте закладку в оглавление документа и сохраните файл.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.facades.Bookmark;
-import com.aspose.pdf.facades.Bookmarks;
-import com.aspose.pdf.facades.PdfBookmarkEditor;
-
-public class ExampleBookmarks {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Bookmarks/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Bookmarks\\";
-        return _dataDir;
-    }
-
-    public static void AddBookmarks() throws IOException {
-
-        Document pdfDocument = new Document(GetDataDir() + "AddBookmark.pdf");
-
-        // Создать объект закладки
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
-        pdfOutline.setTitle("Тестовая закладка");
+public static void addBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
+        pdfOutline.setTitle("Test Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
+        pdfOutline.setAction(new GoToAction(document.getPages().get_Item(1)));
 
-        // Установить номер страницы назначения
-        pdfOutline.setAction(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // Добавить закладку в коллекцию закладок документа.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // Сохранить обновленный документ
-        pdfDocument.save(_dataDir + "AddBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Добавьте дочернюю закладку
 
-## Добавление дочерней закладки в PDF-документ
+В этом примере создаётся родительская закладка, а дочерняя закладка помещается под ней.
 
-Закладки могут быть вложенными, что указывает на иерархическую связь с родительскими и дочерними закладками. В этой статье объясняется, как добавить дочернюю закладку, то есть закладку второго уровня, в PDF.
-
-Чтобы добавить дочернюю закладку в PDF-файл, сначала добавьте родительскую закладку:
-
-1. Откройте документ.
-1. Добавьте закладку в [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection), определив ее свойства.
-1. Добавьте OutlineItemCollection в коллекцию [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) объекта Document.
-
-Дочерняя закладка создается так же, как и родительская закладка, объясненная выше, но добавляется в коллекцию Outlines родительской закладки.
-
-Следующие фрагменты кода показывают, как добавить дочернюю закладку в PDF-документ.
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте родительскую и дочернюю [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) объекты.
+1. Добавьте дочерний элемент к родительскому, добавьте родительский элемент в коллекцию оглавления и сохраните документ.
 
 ```java
-    public static void AddChildBookmark() {
-        // Открыть документ
-        Document pdfDocument = new Document(GetDataDir() + "AddChildBookmark.pdf");
-
-        // Создать объект родительской закладки
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
-        pdfOutline.setTitle("Родительская закладка");
+public static void addChildBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
+        pdfOutline.setTitle("Parent Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
 
-        // Создать объект дочерней закладки
-        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.getOutlines());
-        pdfChildOutline.setTitle("Дочерняя закладка");
+        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(document.getOutlines());
+        pdfChildOutline.setTitle("Child Outline");
         pdfChildOutline.setItalic(true);
         pdfChildOutline.setBold(true);
 
-        // Добавить дочернюю закладку в коллекцию родительской закладки
         pdfOutline.add(pdfChildOutline);
-        // Добавить родительскую закладку в коллекцию закладок документа.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // Сохранить результат
-        pdfDocument.save(_dataDir + "AddChildBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Удалите все закладки
 
-## Удалить все закладки из PDF документа
+Используйте этот подход, когда всю коллекцию оглавления следует удалить из документа.
 
-Все закладки в PDF содержатся в коллекции [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). В этой статье объясняется, как удалить все закладки из PDF файла.
-
-Чтобы удалить все закладки из PDF файла:
-
-1. Вызовите метод Delete коллекции [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-1. Сохраните измененный файл, используя метод Save объекта [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-Следующие фрагменты кода показывают, как удалить все закладки из PDF документа.
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Удалите полную коллекцию оглавления.
+1. Сохраните очищенный выходной файл.
 
 ```java
-    public static void DeleteAllBookmarksFromPDFDocument() {
-        // Открыть документ
-        Document pdfDocument = new Document(GetDataDir() + "DeleteAllBookmarks.pdf");
-
-        // Удалить все закладки
-        pdfDocument.getOutlines().delete();
-
-        // Сохранить обновленный файл
-        pdfDocument.save(_dataDir + "DeleteAllBookmarks_out.pdf");
+public static void deleteBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete();
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Удалите конкретную закладку
 
-## Удалить определенную закладку из PDF документа
+Используйте этот пример, когда необходимо удалить одну именованную закладку, не очищая всё дерево оглавления.
 
-[Удалить все вложения из PDF документа](https://docs.aspose.com/pdf/java/working-with-attachments/) показано, как удалить все вложения из PDF файла. Также возможно удалять только определенные вложения.
-
-Чтобы удалить конкретную закладку из PDF файла:
-
-1. Передайте заголовок закладки в качестве параметра методу [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) коллекции [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-2. Затем сохраните обновленный файл с помощью метода Save объекта Document.
-
-Класс [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) предоставляет коллекцию [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). Метод [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) удаляет любую закладку с заголовком, переданным методу.
-
-Следующие фрагменты кода показывают, как удалить конкретную закладку из PDF документа.
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Удалите закладку по названию из коллекции оглавлений.
+1. Сохраните обновлённый документ.
 
 ```java
-    public static void DeleteParticularBookmarkPDFDocument() {
-        // Открыть документ
-        Document pdfDocument = new Document(GetDataDir() + "DeleteParticularBookmark.pdf");
-
-        // Удалить конкретный элемент по заголовку
-        pdfDocument.getOutlines().delete("Child Outline");
-
-        // Сохранить обновленный файл
-        pdfDocument.save(_dataDir + "DeleteParticularBookmark_out.pdf");
+public static void deleteBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete("Child Outline");
+        document.save(outputFile.toString());
     }
+}
 ```
+

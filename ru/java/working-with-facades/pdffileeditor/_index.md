@@ -1,15 +1,25 @@
 ---
 title: Класс PdfFileEditor
+linktitle: Класс PdfFileEditor
 type: docs
 weight: 10
 url: /ru/java/pdffileeditor-class/
-description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfFileEditor.
-lastmod: "2021-06-05"
+description: Узнайте, как использовать фасад PdfFileEditor в Java для объединения документов, разбиения PDF, переупорядочивания страниц и настройки макета страниц.
+lastmod: "2026-08-19"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Редактируйте структуру PDF‑документа и макет страниц в Java с помощью PdfFileEditor
+Abstract: В этом разделе объясняется, как использовать фасад PdfFileEditor в Aspose.PDF for Java для рабочих процессов редактирования на уровне документа. Текущий набор примеров на Java охватывает объединение файлов, разбиение PDF, извлечение или удаление страниц, вставку или добавление страниц, создание буклетов и макетов N‑Up, а также настройки макета страниц.
 ---
+Java `PdfFileEditorExamples` класс демонстрирует основные рабочие процессы редактирования документов, предоставляемые Facades API.
 
-- [Объединение PDF документов](/pdf/ru/java/concatenate-pdf-documents/)
-- [Извлечение страниц из PDF](/pdf/ru/java/extract-pdf-pages/)
-- [Разрыв страницы в существующем PDF](/pdf/ru/java/page-break-in-existing-pdf/)
+Используйте этот раздел, чтобы узнать, как:
+
+- объединить PDF файлы с `concatenate` метод
+- разделить документ от начала до конца или на одностраничные файлы
+- извлекать, удалять, вставлять и добавлять страницы
+- создавать буклет и вывод N‑Up для печати
+- добавлять поля, изменять размер содержимого страниц и вставлять разрывы страниц
+

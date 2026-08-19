@@ -1,125 +1,258 @@
 ---
-title: Создать документ
+title: Создать PDF-файлы на Java
+linktitle: Создать PDF документ
 type: docs
 weight: 10
 url: /ru/java/create-pdf-document/
-description: Aspose.PDF для Java помогает создавать PDF-документ и файл поискового PDF всего за несколько простых шагов.
-lastmod: "2021-06-05"
+description: Узнайте, как создавать PDF‑файлы и создавать поисковые PDF‑документы в Java с использованием Aspose.PDF.
+lastmod: "2026-08-19"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Создавайте PDF‑файлы и поисковые PDF‑документы с помощью Java
+Abstract: В этой статье показано, как создавать PDF‑документы с помощью Aspose.PDF for Java. Описывается создание нового PDF с нуля и преобразование документа, основанного на изображении, в поисковый PDF путем предоставления вывода HOCR от внешнего OCR‑движка.
 ---
+Aspose.PDF for Java поддерживает как простое создание документов, так и рабочие процессы создания поисковых PDF с поддержкой OCR.
 
-В этой статье мы покажем, как использовать Aspose.PDF для Java API для легкого создания и чтения PDF-файлов в Java-приложениях.
+## Создайте новый документ PDF
 
-Aspose.PDF для Java API позволяет разработчикам Java-приложений встроить функциональность обработки PDF-документов в свои приложения. Он может использоваться для создания и чтения PDF-файлов без необходимости установки какого-либо другого программного обеспечения на базовую машину. Aspose.PDF для Java может использоваться в различных типах Java-приложений, таких как настольные приложения, JSP и JSF приложения.
+Используйте этот подход, когда вам нужно создать простой PDF‑файл с нуля.
 
-## Как создать PDF файл с использованием Java
-
-Чтобы создать PDF файл с использованием Java, можно использовать следующие шаги.
-
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
-
-1. Добавьте объект [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page) в коллекцию Pages объекта Document
-1. Добавьте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) в коллекцию [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/paragraphs) страницы
-1. Сохраните полученный PDF документ
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и добавить его на страницу.
+1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Scanner;
-
-import javax.imageio.ImageIO;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.Document.CallBackGetHocr;
-
-public class ExampleCreate {
-    
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-    
-    public static void Create() {        
-        Document document = new Document();
- 
-        //Добавить страницу
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
         Page page = document.getPages().add();
-         
-        // Добавить текст на новую страницу
         page.getParagraphs().add(new TextFragment("Hello World!"));
-         
-        // Сохранить обновленный PDF
-        document.save(_dataDir+"HelloWorld_out.pdf");
-    }
-```
-
-
-В этом случае мы создаем PDF-документ на одной странице с размером страницы A4, портретной ориентации. Наша страница будет содержать "Hello, World" в верхней левой части страницы.
-
-Кроме того, Aspose.PDF для Java предоставляет возможность создать поисковый PDF. Давайте изучим следующий кодовый фрагмент:
-
-```java
-public static void CreateSearchablePDF() {                
-        Document doc = new Document(_dataDir + "sample1.pdf");
-        
-        // Создать callBack - логика распознавания текста для изображений pdf. Используйте внешние OCR, поддерживающие стандарт HOCR(http://en.wikipedia.org/wiki/HOCR).
-        // Мы использовали бесплатный google tesseract OCR(http://en.wikipedia.org/wiki/Tesseract_%28software%29)
-        
-        CallBackGetHocr cbgh = new CallBackGetHocr() {
-            @Override
-            public String invoke(java.awt.image.BufferedImage img) {
-                File outputfile = new File(_dataDir + "test.jpg");
-                try {
-                    ImageIO.write(img, "jpg", outputfile);
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-        
-                try {
-                    java.lang.Process process = Runtime.getRuntime().exec("tesseract" + " " + _dataDir + "test.jpg" + " " + _dataDir + "out hocr");
-                    System.out.println("tesseract" + " " + _dataDir + "test.jpg" + " " + _dataDir + "out hocr");
-                    process.waitFor();
-        
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-        
-                // чтение out.html в строку
-                File file = new File(_dataDir + "out.hocr");
-                StringBuilder fileContents = new StringBuilder((int) file.length());
-                Scanner scanner = null;
-                try {
-                    scanner = new Scanner(file);
-                    String lineSeparator = System.getProperty("line.separator");
-        
-                    while (scanner.hasNextLine()) {
-                        fileContents.append(scanner.nextLine() + lineSeparator);
-                    }
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } finally {
-                    if (scanner != null)
-                        scanner.close();
-                }
-        
-                // удаление временных файлов
-                File fileOut = new File(_dataDir + "out.hocr");
-                if (fileOut.exists()) {
-                    fileOut.delete();
-                }
-                File fileTest = new File(_dataDir + "test.jpg");
-                if (fileTest.exists()) {
-                    fileTest.delete();
-                }
-        
-                return fileContents.toString();
-            }
-        };
-        // Конец callBack
-        
-        doc.convert(cbgh);
-        doc.save(_dataDir + "output971.pdf");        
+        document.save(outputFile.toString());
     }
 }
 ```
+
+## Создайте PDF с возможностью поиска
+
+{"translatedText":""} `createSearchablePdf` примеры использования `Document.convert(...)` с `CallBackGetHocr` реализация. Обратный вызов записывает исходное изображение во временный файл, вызывает Tesseract с `hocr` опция, читает сгенерированную разметку HOCR и возвращает её в Aspose.PDF.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте `CallBackGetHocr` обратный вызов и преобразовать исходный документ в PDF‑контент, доступный для поиска.
+1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+```java
+public static void createSearchablePdf(Path inputFile, Path outputFile) {
+    Path tempDir = outputFile.getParent().resolve("ocr-temp");
+    CallBackGetHocr cbgh = new CallBackGetHocr() {
+        @Override
+        public String invoke(java.awt.image.BufferedImage img) {
+            // save the image, run Tesseract with "hocr", and return the HOCR text
+            return fileContents.toString();
+        }
+    };
+    try (Document document = new Document(inputFile.toString())) {
+        document.convert(cbgh);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Получите настройки окна документа
+
+Используйте этот пример, чтобы проверить текущие настройки просмотра, хранящиеся в существующем PDF‑документе.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Прочитайте необходимые свойства окна и отображения из документа.
+1. Выведите текущие настройки для проверки или отладки.
+
+```java
+public static void getDocumentWindow(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        System.out.println("CenterWindow: " + document.isCenterWindow());
+        System.out.println("Direction: " + document.getDirection());
+        System.out.println("DisplayDocTitle: " + document.isDisplayDocTitle());
+        System.out.println("FitWindow: " + document.isFitWindow());
+        System.out.println("HideMenuBar: " + document.isHideMenubar());
+        System.out.println("HideToolBar: " + document.isHideToolBar());
+        System.out.println("HideWindowUI: " + document.isHideWindowUI());
+        System.out.println("NonFullScreenPageMode: " + document.getNonFullScreenPageMode());
+        System.out.println("PageLayout: " + document.getPageLayout());
+        System.out.println("PageMode: " + document.getPageMode());
+    }
+}
+```
+
+## Установите параметры окна документа
+
+Этот пример обновляет то, как PDF должен отображаться при открытии в совместимом просмотрщике.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Установите необходимые параметры окна, макета и режима страниц.
+1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+```java
+public static void setDocumentWindow(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setCenterWindow(true);
+        document.setDirection(Direction.R2L);
+        document.setDisplayDocTitle(true);
+        document.setFitWindow(true);
+        document.setHideMenubar(true);
+        document.setHideToolBar(true);
+        document.setHideWindowUI(true);
+        document.setNonFullScreenPageMode(PageMode.UseOC);
+        document.setPageLayout(PageLayout.TwoColumnLeft);
+        document.setPageMode(PageMode.UseThumbs);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Встроить шрифты в существующий PDF
+
+Используйте этот подход, когда документ должен включать необходимые шрифты для более надёжного отображения на других системах.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Включить стандартное встраивание шрифтов и пройтись по шрифтам, используемым каждым [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Отметьте любые не встроенные [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) объекты для встраивания.
+1. Сохраните обновлённый документ.
+
+```java
+public static void embeddedFonts(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setEmbedStandardFonts(true);
+        for (Page page : document.getPages()) {
+            for (Font pageFont : page.getResources().getFonts()) {
+                if (!pageFont.isEmbedded()) {
+                    pageFont.setEmbedded(true);
+                }
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Встраивать шрифты при создании нового PDF
+
+Этот пример создает новый PDF и присваивает встроенный шрифт текстовому содержимому с самого начала.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Создайте требуемое [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [Текстовый сегмент](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), и [Состояние текста](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Разрешить цель [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) из репозитория и пометить его как встроенный.
+1. Добавьте текстовое содержание на страницу и сохраните результирующий документ.
+
+```java
+public static void embeddedFontsInNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            TextFragment fragment = new TextFragment("");
+            TextSegment segment = new TextSegment(" This is a sample text using Custom font.");
+            TextState textState = new TextState();
+            Font font = FontRepository.findFont("Arial");
+            font.setEmbedded(true);
+            textState.setFont(font);
+            segment.setTextState(textState);
+            fragment.getSegments().add(segment);
+            page.getParagraphs().add(fragment);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Установите Font по умолчанию для вывода PDF
+
+Используйте этот шаблон, когда сохранённый документ должен переключаться на определённый шрифт при генерации вывода.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) и установить имя шрифта по умолчанию.
+1. Сохраните документ с настроенными параметрами сохранения.
+
+```java
+public static void setDefaultFont(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfSaveOptions saveOptions = new PdfSaveOptions();
+        saveOptions.setDefaultFontName("Arial");
+        document.save(outputFile.toString(), saveOptions);
+    }
+}
+```
+
+## Получите все шрифты, используемые в PDF
+
+Этот пример выводит список всех шрифтов, обнаруженных в документе, чтобы вы могли проверить их использование перед экспортом или обновлением файла.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Перечислите шрифты, возвращаемые утилитами шрифтов документа.
+1. Выведите имя каждого обнаруженного [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+
+```java
+public static void getAllFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Font font : document.getFontUtilities().getAllFonts()) {
+            System.out.println(font.getFontName());
+        }
+    }
+}
+```
+
+## Улучшить встраивание шрифтов с помощью субсетирования шрифтов
+
+Используйте этот метод, когда хотите уменьшить нагрузку шрифтов, одновременно сохраняя встроенные данные шрифта согласованными с использованием документа.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Запустите подмножество шрифтов через утилиты шрифтов документа с требуемым [Стратегия подмножества шрифтов](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) значения.
+1. Сохраните оптимизированный документ.
+
+```java
+public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Установите коэффициент масштабирования при открытии документа
+
+Этот пример настраивает начальный уровень масштабирования, который должен применяться при открытии PDF.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) с [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Назначьте действие как действие при открытии документа и сохраните результат.
+
+```java
+public static void setZoomFactor(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0.0, 0.0, 0.5));
+        document.setOpenAction(action);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Получите коэффициент увеличения при открытии документа
+
+Используйте этот пример, чтобы проверить, задаёт ли PDF уже явный уровень масштабирования для своей операции открытия.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Проверьте, является ли действие открытия [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) с [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Выведите настроенное значение масштаба или сообщите, что масштаб не установлен.
+
+```java
+public static void getZoomFactor(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getOpenAction() instanceof GoToAction action
+                && action.getDestination() instanceof XYZExplicitDestination destination) {
+            System.out.println("Zoom: " + destination.getZoom());
+        } else {
+            System.out.println("Zoom: not set");
+        }
+    }
+}
+```
+

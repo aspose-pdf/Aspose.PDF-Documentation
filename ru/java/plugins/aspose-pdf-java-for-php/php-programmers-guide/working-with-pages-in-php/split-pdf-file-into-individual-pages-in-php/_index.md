@@ -1,23 +1,24 @@
 ---
-title: Разделение PDF файла на отдельные страницы в PHP
+title: Разделить PDF‑файл на отдельные страницы в PHP
+linktitle: Разделить PDF‑файл на отдельные страницы в PHP
 type: docs
 weight: 80
 url: /ru/java/split-pdf-file-into-individual-pages-in-php/
-lastmod: "2021-06-05"
+description: Узнайте, как разделить PDF‑документ на отдельные страницы с помощью PHP и Aspose.PDF для эффективного извлечения страниц.
+lastmod: "2026-08-19"
 ---
+## Aspose.PDF — Разделение страниц
 
-## Aspose.PDF - Разделение страниц
+Чтобы разделить PDF‑документ на отдельные страницы, используя **Aspose.PDF Java for PHP**, просто вызовите класс **SplitAllPages**.
 
-Чтобы разделить PDF-документ на отдельные страницы с использованием **Aspose.PDF Java для PHP**, просто вызовите класс **SplitAllPages**.
-
-PHP код
+Код PHP
 
 ```php
 
-# Открыть целевой документ
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# пройти по всем страницам
+# loop through all the pages
 $pdf_page = 1;
 $total_size = $pdf->getPages()->size();
 #for (int pdfPage = 1; pdfPage<= pdfDocument1.getPages().size(); pdfPage++)
@@ -25,25 +26,26 @@ while ($pdf_page <= $total_size)
 
 {
 
-    # создать новый объект Document
+    # create a new Document object
     $new_document = new Document();
 
-    # получить страницу по определенному индексу коллекции страниц
+    # get the page at particular index of Page Collection
     $new_document->getPages()->add($pdf->getPages()->get_Item($pdf_page));
 
-    # сохранить вновь сгенерированный PDF файл
+    # save the newly generated PDF file
     $new_document->save($dataDir . "page_#{$pdf_page}.pdf");
 
     $pdf_page++;
 
 }
 
-print "Процесс разделения завершен успешно!";
+print "Split process completed successfully!";
 
 ```
 
-**Скачать выполняемый код**
+**Скачать работающий код**
 
-Скачайте **Split Pages (Aspose.PDF)** с любого из нижеупомянутых социальных кодинг-сайтов:
+Скачать **Split Pages (Aspose.PDF)** с любого из перечисленных ниже сайтов совместного программирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/SplitAllPages.php)
+

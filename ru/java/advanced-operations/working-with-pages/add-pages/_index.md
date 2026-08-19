@@ -1,106 +1,70 @@
 ---
-title: Добавить страницы в PDF
-linktitle: Добавить страницы
+title: Добавить страницы PDF в Java
+linktitle: Добавление страниц
 type: docs
 weight: 10
 url: /ru/java/add-pages/
-description: Эта статья учит, как вставить (добавить) страницу в нужное место PDF файла. Узнайте, как перемещать, удалять (удалять) страницы из PDF файла с помощью Java библиотеки.
-lastmod: "2021-06-05"
+description: Узнайте, как добавлять или вставлять страницы в PDF‑документы на Java.
+lastmod: "2026-08-19"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Добавить или вставить страницы PDF с Java
+Abstract: Эта статья объясняет, как добавлять страницы в файлы PDF с помощью Aspose.PDF for Java. В ней рассматривается вставка пустой страницы в определённую позицию, добавление страницы в конец документа и импорт страницы из другого PDF.
 ---
+Aspose.PDF for Java позволяет вставлять пустые страницы или импортировать страницы из другого документа.
 
-## Добавить или вставить страницу в PDF файл
+## Вставить пустую страницу в определённую позицию
 
-Aspose.PDF для Java позволяет вставить страницу в PDF документ в любом месте файла, а также добавить страницы в конец PDF файла. Вам нужно передать место, куда вы хотите вставить пустую страницу, в метод вставки.
-Этот раздел показывает, как добавить страницы в PDF с помощью Aspose.PDF для Java.
+Используйте этот пример, когда нужно добавить пустую страницу в середину существующего PDF.
 
-### Вставить пустую страницу в PDF файл в нужное место
-
-Следующий фрагмент кода показывает, как вставить пустую страницу в PDF файл:
-
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) с входным PDF файлом.
-
-1. Вызовите метод Insert коллекции [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) с указанным индексом.
-1. Сохраните выходной PDF, используя метод Save.
-
-Следующий фрагмент кода показывает, как вставить страницу в PDF файл.
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Вставьте новую страницу в целевую позицию в коллекции страниц.
+1. Сохраните обновлённый документ.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleAddPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation() {
-        Document document = new Document();
-
-        // Добавить страницу
-        document.getPages().add();
-
-        // Вставить пустую страницу в PDF
+public static void insertEmptyPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         document.getPages().insert(2);
-
-        // Сохранить обновленный PDF
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-В приведенном выше примере мы добавили пустую страницу с параметрами по умолчанию. Если вам нужно сделать размер страницы таким же, как и у другой страницы в документе, вам следует добавить
-несколько строк кода:
-
-```java
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation01() {
-        Document document = new Document();
-
-        // Добавить страницу
-        Page page1 = document.getPages().add();
-
-        // Вставить пустую страницу в PDF
-        Page page2 = document.getPages().insert(2);
-        ;
-        // скопировать параметры страницы из страницы 1
-        page2.setArtBox(page1.getArtBox());
-        page2.setBleedBox(page1.getBleedBox());
-        page2.setCropBox(page1.getCropBox());
-        page2.setMediaBox(page1.getMediaBox());
-        page2.setTrimBox(page1.getTrimBox());
-
-        // Сохранить обновленный PDF
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
-    }
-```
-
-
-### Добавить пустую страницу в конец PDF файла
-
-Иногда необходимо убедиться, что документ заканчивается на пустой странице. Эта тема объясняет, как вставить пустую страницу в конец PDF документа.
-
-Чтобы вставить пустую страницу в конец PDF файла:
-
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) с входным PDF файлом.
-1. Вызовите метод Add коллекции [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) без параметров.
-1. Сохраните выходной PDF, используя метод Save.
-
-Следующий фрагмент кода показывает, как вставить пустую страницу в конец PDF файла.
-
-```java
-public static void AddAnEmptyPageAtTheEndOfAPDFFile() {
-
-        Document document = new Document();
-        // Добавить страницу
-        document.getPages().add();
-
-        // Вставить пустую страницу в конец PDF файла
-        document.getPages().add();
-
-        // Сохранить обновленный PDF
-        document.save(_dataDir + "InsertEmptyPageAtEnd_out.pdf");
-    }
-
 }
 ```
+
+## Добавьте пустую страницу в конец
+
+Используйте этот пример, когда вам нужно расширить документ новой пустой последней страницей.
+
+1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте новую страницу в конец коллекции страниц.
+1. Сохраните изменённый PDF.
+
+```java
+public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().add();
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавьте страницу из другого документа
+
+Используйте этот пример, когда хотите импортировать страницу из одного PDF в другой PDF.
+
+1. Создайте место назначения [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и откройте исходный документ.
+1. Добавьте любой необходимый контент назначения и импортируйте целевую страницу из исходного PDF.
+1. Сохраните полученный документ.
+
+```java
+public static void addPageFromAnotherDocument(Path inputFile, Path outputFile) {
+    try (Document document = new Document();
+         Document anotherDocument = new Document(inputFile.toString())) {
+        document.getPages().add().getParagraphs().add(new TextFragment("This is first page!"));
+        document.getPages().add(anotherDocument.getPages().get_Item(1));
+        document.save(outputFile.toString());
+    }
+}
+```
+

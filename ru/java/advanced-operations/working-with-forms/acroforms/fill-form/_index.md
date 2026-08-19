@@ -1,52 +1,45 @@
 ---
-title: Заполнение AcroForms
-linktitle: Заполнение AcroForms
+title: Заполнение AcroForm - Заполнение PDF-формы с использованием Java
+linktitle: Заполнение AcroForm
 type: docs
 weight: 20
 url: /ru/java/fill-form/
-description: В этом разделе объясняется, как заполнить поле формы в PDF-документе с помощью Aspose.PDF for Java.
-lastmod: "2021-06-05"
+description: Заполнение полей AcroForm в PDF-документе с помощью Aspose.PDF for Java.
+lastmod: "2026-08-19"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Заполнение полей AcroForm в PDF-файлах с помощью Java
+Abstract: В этой статье объясняется, как заполнять поля AcroForm с использованием Aspose.PDF for Java. В примере PDF загружается через фасад Form, имена полей сопоставляются со словарём значений, соответствующие поля обновляются, и завершённый документ сохраняется.
 ---
+Эта `Form` Facade можно использовать для автоматизации заполнения полей в существующей AcroForm.
 
-PDF-документы великолепны и действительно являются предпочтительным типом файлов для создания форм.
+## Заполнить поля AcroForm новыми значениями
 
-Aspose.PDF for Java позволяет заполнять поле формы, получая поле из коллекции форм объекта Document.
-
-Давайте посмотрим на следующий пример, как решить эту задачу:
+1. Откройте документ PDF формы с [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
+1. Пройдите по полям формы и обновите соответствующие записи предоставленными значениями.
+1. Сохраните обновлённый документ PDF.
 
 ```java
-public class ExamplesFillForm {
+public static void fillForm(Path inputFile, Path outputFile) {
+    Map<String, String> newFieldValues = Map.of(
+            "First Name", "Alexander_New",
+            "Last Name", "Greenfield_New",
+            "City", "Yellowtown_New",
+            "Country", "Redland_New");
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void FillFormFieldPDFDocument() {
-        // Открыть документ
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // Создать поле
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
-        textBoxField.setPartialName("textbox1");
-        textBoxField.setValue("Text Box");
-
-        // TextBoxField.Border = new Border(
-        Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        textBoxField.setBorder(border);
-
-        textBoxField.setColor(Color.getGreen());
-
-        // Добавить поле в документ
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // Сохранить измененный PDF
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+    Form form = new Form(inputFile.toString());
+    try {
+        for (String fieldName : form.getFieldNames()) {
+            if (newFieldValues.containsKey(fieldName)) {
+                form.fillField(fieldName, newFieldValues.get(fieldName));
+            }
+        }
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
     }
-
-    
 }
 ```
+

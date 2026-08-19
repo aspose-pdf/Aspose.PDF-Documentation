@@ -1,524 +1,565 @@
 ---
-title: Создание или добавление таблицы в PDF
-linktitle: Создание или добавление таблицы
+title: Добавить таблицы в PDF на Java
+linktitle: Добавление таблиц
 type: docs
 weight: 10
-url: /ru/java/add-table-in-existing-pdf-document/
-description: Узнайте, как создать или добавить таблицу в PDF документ, применить стиль ячеек, разделить таблицу на страницы и настроить строки и столбцы и т.д.
-lastmod: "2021-12-16"
+url: /ru/java/adding-tables/
+description: Узнайте, как добавлять и настраивать таблицы в существующих PDF-документах на Java.
+lastmod: "2026-08-19"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Добавляйте и форматируйте таблицы в PDF-документах с помощью Java.
+Abstract: В этой статье объясняется, как добавлять и настраивать таблицы в PDF‑документах с помощью Aspose.PDF for Java. Описываются создание таблиц, границы, отступы, заполнение, объединение строк и столбцов, поведение AutoFit, вставка изображений в ячейки, повторяющиеся строки и столбцы, фрагменты HTML и LaTeX, а также управление многостраничной отрисовкой.
 ---
+Aspose.PDF for Java предоставляет богатый `Table` API для создания таблиц с настройкой макета и содержимого.
 
-## Создание таблицы
+## Создайте простую таблицу
 
- Пространство имен Aspose.PDF содержит классы под названием [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table), [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/cell) и [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/row), которые предоставляют функциональность для создания таблиц при генерации PDF документов с нуля.
+Используйте этот пример, когда вам нужно добавить простую таблицу с одинаковыми границами и текстовыми ячейками.
 
-Таблица может быть создана путем создания объекта класса Table.
-
-```java
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-```
-
-### Добавление таблицы в существующий PDF документ
-
-Чтобы добавить таблицу в существующий PDF файл с помощью Aspose.PDF для Java, выполните следующие шаги:
-
-1. Загрузите исходный файл.
-
-1. Инициализируйте таблицу и задайте ее столбцы и строки.
-1. Установите настройки таблицы (мы установили границы).
-1. Заполните таблицу.
-1. Добавьте таблицу на страницу.
-1. Сохраните файл.
-
-Следующие фрагменты кода показывают, как добавить текст в существующий PDF файл.
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте его границы.
+1. Добавьте строки и ячейки, прикрепите таблицу к странице и сохраните документ.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleAddTable {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void CreateTable() {
-        Document doc = new Document(_dataDir + "input.pdf");
-        // Инициализирует новый экземпляр таблицы
+public static void createTable(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         Table table = new Table();
-        // Установить цвет границы таблицы как LightGray
-        table.setBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // установить границу для ячеек таблицы
-        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // создать цикл для добавления 10 строк
-        for (int row_count = 1; row_count < 10; row_count++) {
-            // добавить строку в таблицу
+        table.setBorder(new BorderInfo(BorderSide.All, 5, Color.getLightGray()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 5, Color.getLightGray()));
+        for (int rowCount = 0; rowCount < 10; rowCount++) {
             Row row = table.getRows().add();
-            // добавить ячейки в таблицу
-            row.getCells().add("Column (" + row_count + ", 1)");
-            row.getCells().add("Column (" + row_count + ", 2)");
-            row.getCells().add("Column (" + row_count + ", 3)");
+            row.getCells().add("Column (" + rowCount + ", 1)");
+            row.getCells().add("Column (" + rowCount + ", 2)");
+            row.getCells().add("Column (" + rowCount + ", 3)");
         }
-        // Добавить объект таблицы на первую страницу входного документа
-        doc.getPages().get_Item(1).getParagraphs().add(table);
-        // Сохранить обновленный документ, содержащий объект таблицы
-        doc.save(_dataDir + "document_with_table.pdf");
-    }
-```
-
-
-### ColSpan и RowSpan в таблицах Aspose.PDF с использованием Java
-
-Aspose.PDF для Java предоставляет метод [setColSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setColSpan-int-) для объединения столбцов в таблице и метод [setRowSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setRowSpan-int-) для объединения строк.
-
-Мы используем методы [setColSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setColSpan-int-) или [setRowSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setRowSpan-int-) на объекте [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell), который создает ячейку таблицы. После применения необходимых свойств созданная ячейка может быть добавлена в таблицу.
-
-```java
-public static void AddTable_RowColSpan() {
-        // Загрузить исходный PDF документ
-        Document pdfDocument = new Document();
-        Page page = pdfDocument.getPages().add();
-
-        // Инициализировать новый экземпляр таблицы
-        Table table = new Table();
-        // Установить цвет границы таблицы как LightGray
-        table.setBorder(new BorderInfo(BorderSide.All, .5f, Color.getBlack()));
-        // Установить границу для ячеек таблицы
-        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, .5f, Color.getBlack()));
-        // Добавить первую строку в таблицу
-        Row row1 = table.getRows().add();
-        for (int cellCount = 1; cellCount < 5; cellCount++) {
-            // Добавить ячейки в таблицу
-            row1.getCells().add("Тест 1 " + cellCount);
-        }
-
-        // Добавить вторую строку в таблицу
-        Row row2 = table.getRows().add();
-        row2.getCells().add("Тест 2 1");
-        Cell cell = row2.getCells().add("Тест 2 2");
-        cell.setColSpan(2);
-        row2.getCells().add("Тест 2 4");
-
-        // Добавить третью строку в таблицу
-        Row row3 = table.getRows().add();
-        row3.getCells().add("Тест 3 1");
-        row3.getCells().add("Тест 3 2");
-        row3.getCells().add("Тест 3 3");
-        row3.getCells().add("Тест 3 4");
-
-        // Добавить четвертую строку в таблицу
-        Row row4 = table.getRows().add();
-        row3.getCells().add("Тест 4 1");
-        cell = row3.getCells().add("Тест 4 2");
-        cell.setRowSpan(2);
-        row3.getCells().add("Тест 4 3");
-        row3.getCells().add("Тест 4 4");
-
-        // Добавить пятую строку в таблицу
-        row4 = table.getRows().add();
-        row4.getCells().add("Тест 5 1");
-        row4.getCells().add("Тест 5 3");
-        row4.getCells().add("Тест 5 4");
-
-        // Добавить объект таблицы на первую страницу входного документа
         page.getParagraphs().add(table);
-
-        // Сохранить обновленный документ, содержащий объект таблицы
-        pdfDocument.save(_dataDir + "document_with_table_out.pdf");
-    }
-```
-
-
-Результатом выполнения кода ниже является таблица, изображенная на следующем изображении:
-
-![Демо ColSpan и RowSpan](colspan_rowspan.png)
-
-## Работа с границами, отступами и полями
-
-Aspose.PDF для Java позволяет разработчикам создавать таблицы в PDF-документах. Согласно модели объектов документа Aspose.PDF, таблица является элементом уровня абзаца.
-
-Пожалуйста, обратите внимание, что также поддерживается возможность установки стиля границ, отступов и полей ячеек для таблиц. Прежде чем углубляться в технические детали, важно понять концепции границы, отступов и полей, которые представлены ниже на диаграмме:
-
-![Границы, отступы и поля](set-border-style-margins-and-padding-of-table_1.png)
-
-На рисунке выше видно, что границы таблицы, строки и ячейки перекрываются. Используя Aspose.PDF, таблица может иметь отступы, а ячейки могут иметь поля. Чтобы установить отступы ячеек, мы должны установить поля ячеек.
-
-## Границы
-
-Чтобы установить границы объектов [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#setBorder-com.aspose.pdf.BorderInfo-), [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/Row#setBorder-com.aspose.pdf.BorderInfo-) и [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setBorder-com.aspose.pdf.BorderInfo-), используйте методы [Table.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#setBorder-com.aspose.pdf.BorderInfo-), [Row.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Row#setBorder-com.aspose.pdf.BorderInfo-) и [Cell.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setBorder-com.aspose.pdf.BorderInfo-).
- Границы ячеек можно также установить с использованием метода [DefaultCellBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Row#setDefaultCellBorder-com.aspose.pdf.BorderInfo-) класса [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table) или [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/row). Все вышеупомянутые свойства, связанные с границами, назначаются экземпляру класса Row, который создается вызовом его конструктора. Класс Row имеет множество перегрузок, которые принимают почти все параметры, необходимые для настройки границ.
-
-## Поля или Отступы
-
-Отступы ячеек можно управлять с использованием метода [DefaultCellPadding](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#setDefaultCellPadding-com.aspose.pdf.MarginInfo-) класса Table. Все свойства, связанные с отступами, назначаются экземпляру класса [MarginInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/MarginInfo), который принимает информацию о параметрах `Left`, `Right`, `Top` и `Bottom` для создания пользовательских отступов.
-
-В следующем примере ширина границы ячейки установлена на 0.1 пункта, ширина границы таблицы установлена на 1 пункт, а отступ ячейки установлен на 5 пунктов.
-
-![Отступ и граница в таблице PDF](margin-border.png)
-
-```java
-public static void MargingPadding() {
-        // Создайте объект Document, вызвав его пустой конструктор
-        Document doc = new Document();
-        Page page = doc.getPages().add();
-        // Создайте объект таблицы
-        Table tab1 = new Table();
-        // Добавьте таблицу в коллекцию параграфов нужного раздела
-        page.getParagraphs().add(tab1);
-        // Установите ширину колонок таблицы
-        tab1.setColumnWidths ("50 50 50");
-        // Установите границу ячейки по умолчанию с использованием объекта BorderInfo
-        tab1.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1F));
-        // Установите границу таблицы, используя другой настраиваемый объект BorderInfo
-        tab1.setBorder (new BorderInfo(BorderSide.All, 1F));
-
-        // Создайте объект MarginInfo и установите его левый, нижний, правый и верхний отступы
-        MarginInfo margin = new MarginInfo();
-        margin.setTop (5f);
-        margin.setLeft (5f);
-        margin.setRight (5f);
-        margin.setBottom (5f);
-
-        // Установите отступ ячейки по умолчанию в объект MarginInfo
-        tab1.setDefaultCellPadding(margin);
-
-        // Создайте строки в таблице, а затем ячейки в строках
-        Row row1 = tab1.getRows().add();
-        row1.getCells().add("col1");
-        row1.getCells().add("col2");
-        row1.getCells().add();
-
-        TextFragment mytext = new TextFragment("col3 with large text string");
-
-        row1.getCells().get_Item(2).getParagraphs().add(mytext);
-        row1.getCells().get_Item(2).setWordWrapped(false);
-
-        Row row2 = tab1.getRows().add();
-        row2.getCells().add("item1");
-        row2.getCells().add("item2");
-        row2.getCells().add("item3");
-
-        // Сохраните PDF
-        doc.save(_dataDir + "MarginsOrPadding_out.pdf");
+        document.save(outputFile.toString());
     }
 }
 ```
 
-Чтобы создать таблицу с закругленными углами, используйте значение `RoundedBorderRadius` класса [BorderInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/BorderInfo) и установите стиль углов таблицы в закругленный.
+## Добавьте ячейки с объединением строк и столбцов
+
+Используйте этот пример, когда таблице нужны объединённые ячейки по строкам или столбцам.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавить строки.
+1. Настройте `ColSpan` и `RowSpan` на целевых ячейках, затем сохраните PDF.
 
 ```java
-    public static void RoundedBorderRadius() {
-        Document doc = new Document();
-        Page page = doc.getPages().add();
+public static void addRowspanOrColspan(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
 
-        // Создать экземпляр объекта таблицы
-        Table tab1 = new Table();
+        Row row1 = table.getRows().add();
+        for (int cellCount = 1; cellCount < 5; cellCount++) {
+            row1.getCells().add("Test 1" + cellCount);
+        }
 
-        // Добавить таблицу в коллекцию параграфов нужного раздела
-        page.getParagraphs().add(tab1);
+        Row row2 = table.getRows().add();
+        row2.getCells().add("Test 2 1");
+        Cell cell = row2.getCells().add("Test 2 2");
+        cell.setColSpan(2);
+        row2.getCells().add("Test 2 4");
 
-        GraphInfo graph = new GraphInfo();
-        graph.setColor(Color.getRed());
-        // Создать пустой объект BorderInfo
-        BorderInfo bInfo = new BorderInfo(BorderSide.All, graph);
-        // Установить закругленную границу, где радиус закругления равен 15
-        bInfo.setRoundedBorderRadius(15);
-        // Установить стиль углов таблицы как закругленный.
-        tab1.setCornerStyle(BorderCornerStyle.Round);
-        // Установить информацию о границах таблицы
-        tab1.setBorder(bInfo);
-        // Создать строки в таблице и затем ячейки в строках
-        Row row1 = tab1.getRows().add();
+        Row row3 = table.getRows().add();
+        row3.getCells().add("Test 3 1");
+        row3.getCells().add("Test 3 2");
+        row3.getCells().add("Test 3 3");
+        row3.getCells().add("Test 3 4");
+
+        Row row4 = table.getRows().add();
+        row4.getCells().add("Test 4 1");
+        cell = row4.getCells().add("Test 4 2");
+        cell.setRowSpan(2);
+        row4.getCells().add("Test 4 3");
+        row4.getCells().add("Test 4 4");
+
+        Row row5 = table.getRows().add();
+        row5.getCells().add("Test 5 1");
+        row5.getCells().add("Test 5 3");
+        row5.getCells().add("Test 5 4");
+
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавьте границы таблицы и отступы ячеек
+
+Используйте этот пример, когда вам нужно настроить границы, отступы и поведение обтекания ячеек.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте ширины, границы и отступы.
+1. Добавьте строки и сохраните полученный документ.
+
+```java
+public static void addBorders(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        page.getParagraphs().add(table);
+        table.setColumnWidths("50 50 50");
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1f));
+        table.setBorder(new BorderInfo(BorderSide.All, 1));
+        table.setDefaultCellPadding(new MarginInfo(5, 5, 5, 5));
+
+        Row row1 = table.getRows().add();
         row1.getCells().add("col1");
         row1.getCells().add("col2");
         row1.getCells().add();
-
-        TextFragment mytext = new TextFragment("col3 with large text string");
-
-        row1.getCells().get_Item(2).getParagraphs().add(mytext);
+        row1.getCells().get_Item(2).getParagraphs().add(new TextFragment("col3 with large text string"));
         row1.getCells().get_Item(2).setWordWrapped(false);
 
-        Row row2 = tab1.getRows().add();
+        Row row2 = table.getRows().add();
         row2.getCells().add("item1");
         row2.getCells().add("item2");
         row2.getCells().add("item3");
-
-        // Сохранить PDF
-        doc.save(_dataDir + "BorderRadius_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Включить автоматическую подгонку макета таблицы
 
-### Свойство AutoFitToWindow в перечислении ColumnAdjustmentType
+Используйте этот пример, когда таблица должна автоматически подстраиваться под доступную ширину страницы.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и установить `ColumnAdjustment.AutoFitToWindow`.
+1. Добавьте образцы строк и сохраните PDF.
 
 ```java
- public static void AutoFitToWindowProperty() {
-        // Создайте объект Pdf, вызвав его пустой конструктор
-        Document doc = new Document();
-        // Создайте раздел в объекте Pdf
-        Page sec1 = doc.getPages().add();
+public static void autoFit(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        page.getParagraphs().add(table);
+        table.setColumnWidths("50 50 50");
+        table.setColumnAdjustment(ColumnAdjustment.AutoFitToWindow);
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1f));
+        table.setBorder(new BorderInfo(BorderSide.All, 1));
+        table.setDefaultCellPadding(new MarginInfo(5, 5, 5, 5));
 
-        // Создайте объект таблицы
-        Table tab1 = new Table();
-        // Добавьте таблицу в коллекцию абзацев нужного раздела
-        sec1.getParagraphs().add(tab1);
-
-        // Установите ширину столбцов таблицы
-        tab1.setColumnWidths("50 50 50");
-        tab1.setColumnAdjustment(ColumnAdjustment.AutoFitToWindow);
-
-        // Установите границу ячеек по умолчанию, используя объект BorderInfo
-        tab1.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1F));
-
-        // Установите границу таблицы, используя другой настраиваемый объект BorderInfo
-        tab1.setBorder(new BorderInfo(BorderSide.All, 1F));
-
-        // Создайте объект MarginInfo и задайте его отступы слева, снизу, справа и сверху
-        MarginInfo margin = new MarginInfo();
-        margin.setTop(5f);
-        margin.setLeft(5f);
-        margin.setRight(5f);
-        margin.setBottom(5f);
-
-        // Установите отступ ячеек по умолчанию в объект MarginInfo
-        tab1.setDefaultCellPadding(margin);
-
-        // Создайте строки в таблице, а затем ячейки в строках
-        Row row1 = tab1.getRows().add();
+        Row row1 = table.getRows().add();
         row1.getCells().add("col1");
         row1.getCells().add("col2");
         row1.getCells().add("col3");
-        Row row2 = tab1.getRows().add();
+        Row row2 = table.getRows().add();
         row2.getCells().add("item1");
         row2.getCells().add("item2");
         row2.getCells().add("item3");
-
-        // Сохраните обновленный документ, содержащий объект таблицы
-        doc.save(_dataDir + "AutoFitToWindow_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Добавьте изображение внутри ячейки таблицы
 
-### Получение ширины таблицы
+Используйте этот пример, когда таблице необходимо отображать растровое изображение внутри одной из её ячеек.
 
-Иногда требуется динамически получить ширину таблицы. Класс Aspose.PDF.Table имеет метод [GetWidth](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#getWidth--) для этой цели. Например, вы не задали ширину столбцов таблицы явно и установили [ColumnAdjustment](https://reference.aspose.com/pdf/java/com.aspose.pdf/ColumnAdjustment) в AutoFitToContent. В этом случае вы можете получить ширину таблицы следующим образом.
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавить строку с ячейками текста и изображения.
+1. Настройте [Изображение](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) размер и сохранить документ.
 
 ```java
-public static void GetTableWidth() {
-        // Создать новый документ
-        Document doc = new Document();
-        // Добавить страницу в документ
-        Page page = doc.getPages().add();
-
-        // Инициализировать новую таблицу
+public static void addImage(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         Table table = new Table();
+        table.setColumnWidths("200 100");
 
-        // Добавить таблицу в коллекцию параграфов нужного раздела
-        page.getParagraphs().add(table);
-        table.setColumnAdjustment(ColumnAdjustment.AutoFitToContent);
-
-        // Добавить строку в таблицу
         Row row = table.getRows().add();
-        // Добавить ячейку в таблицу
-        row.getCells().add("Текст ячейки 1");
-        row.getCells().add("Текст ячейки 2");
-        // Получить ширину таблицы
-        System.out.println(table.getWidth());
-    }
-```
+        row.getCells().add().getParagraphs().add(new TextFragment(imageFile.toString()));
+        Image image = new Image();
+        image.setFile(imageFile.toString());
+        image.setFixWidth(50);
+        image.setFixHeight(50);
+        row.getCells().add().getParagraphs().add(image);
 
-
-## Добавить SVG объект в ячейку таблицы
-
-Aspose.PDF для Java поддерживает возможность добавления ячейки таблицы в PDF файл. При создании таблицы возможно добавлять текст или изображения в ячейки. Кроме того, API также предлагает возможность конвертировать SVG файлы в формат PDF. Используя комбинацию этих функций, можно загрузить SVG изображение и добавить его в ячейку таблицы.
-
-Следующий фрагмент кода показывает шаги для создания экземпляра таблицы и добавления SVG изображения в ячейку таблицы.
-
-```java
- public static void AddSVGObjectToTableCell() {
-        // Создать экземпляр объекта Document
-        Document doc = new Document();
-        // Создать экземпляр изображения
-        com.aspose.pdf.Image img = new com.aspose.pdf.Image();
-        // Установить тип изображения как SVG
-        img.setFileType (com.aspose.pdf.ImageFileType.Svg);
-        // Путь к исходному файлу
-        img.setFile (_dataDir + "SVGToPDF.svg");
-        // Установить ширину для экземпляра изображения
-        img.setFixWidth (50);
-        // Установить высоту для экземпляра изображения
-        img.setFixHeight (50);
-        // Создать экземпляр таблицы
-        com.aspose.pdf.Table table = new com.aspose.pdf.Table();
-        // Установить ширину для ячеек таблицы
-        table.setColumnWidths ("100 100");
-        // Создать объект строки и добавить его в экземпляр таблицы
-        com.aspose.pdf.Row row = table.getRows().add();
-        // Создать объект ячейки и добавить его в экземпляр строки
-        com.aspose.pdf.Cell cell = row.getCells().add();
-        // Добавить текстовый фрагмент в коллекцию параграфов объекта ячейки
-        cell.getParagraphs().add(new TextFragment("First cell"));
-        // Добавить ещё одну ячейку в объект строки
-        cell = row.getCells().add();
-        // Добавить SVG изображение в коллекцию параграфов недавно добавленного экземпляра ячейки
-        cell.getParagraphs().add(img);
-        // Создать объект страницы и добавить его в коллекцию страниц экземпляра документа
-        Page page = doc.getPages().add();
-        // Добавить таблицу в коллекцию параграфов объекта страницы
         page.getParagraphs().add(table);
-        // Сохранить PDF файл
-        doc.save(_dataDir + "AddSVGObject_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Добавьте SVG‑изображения внутри ячеек таблицы
 
-## Добавление HTML тегов в таблицу
+Используйте этот пример, когда таблица должна отображать SVG‑файлы построчно.
 
-Aspose.PDF для Java позволяет добавлять новый HTML фрагмент в абзац вашего PDF файла.
-
-{{% alert color="primary" %}}
-
-Пожалуйста, примите во внимание, что использование HTML тегов внутри элемента таблицы увеличивает время генерации документа, так как API необходимо обработать HTML теги соответствующим образом и отобразить их в выходном PDF документе.
-
-{{% /alert %}}
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и перебрать SVG‑файлы.
+1. Добавьте одну строку для каждого изображения, настройте SVG [Изображение](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), и сохраните PDF.
 
 ```java
-  public static void AddHTMLFragmentToTableCell() {
-        Document doc = new Document(_dataDir + "input.pdf");
-        // Инициализирует новый экземпляр таблицы
+public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         Table table = new Table();
-        // Установите цвет границы таблицы как LightGray
-        table.setBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // установите границу для ячеек таблицы
-        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // создайте цикл для добавления 10 строк
-        for (int row_count = 1; row_count < 10; row_count++) {
-            Cell cell;
-            // добавьте строку в таблицу
+        table.setColumnWidths("200 100");
+        for (Path imageFile : imageFiles) {
             Row row = table.getRows().add();
-            // добавьте ячейки таблицы
-            cell = row.getCells().add();
-            cell.getParagraphs().add(new HtmlFragment("Колонка <strong>(" + row_count + ", 1)</strong>"));
-
-            cell = row.getCells().add();
-            cell.getParagraphs().add(new HtmlFragment("Колонка <span style='color:red'>(" + row_count + ", 2)</span>"));
-
-            cell = row.getCells().add();
-            cell.getParagraphs().add(new HtmlFragment("Колонка <span style='text-decoration: underline'>(" + row_count + ", 3)</span>"));
+            row.getCells().add().getParagraphs().add(new TextFragment(imageFile.toString()));
+            Image image = new Image();
+            image.setFileType(ImageFileType.Svg);
+            image.setFile(imageFile.toString());
+            image.setFixWidth(50);
+            image.setFixHeight(50);
+            row.getCells().add().getParagraphs().add(image);
         }
-        // Добавьте объект таблицы на первую страницу входного документа
-        doc.getPages().get_Item(1).getParagraphs().add(table);
-        // Сохраните обновленный документ, содержащий объект таблицы
-        doc.save(_dataDir + "AddHTMLObject_out.pdf");
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
     }
-
 }
 ```
 
+## Добавьте HTML‑фрагменты в ячейки таблицы
 
-## Вставка разрыва страницы между строками таблицы
+Используйте этот пример, когда содержимое таблицы должно включать встроенное HTML-форматирование.
 
-По умолчанию, при создании таблицы внутри PDF файла, таблица переходит на последующие страницы, когда достигает нижнего поля таблицы. Однако, у нас может быть требование вставить разрыв страницы, когда добавлено определенное количество строк для таблицы. Следующий фрагмент кода показывает шаги по вставке разрыва страницы, когда добавлено 10 строк для таблицы.
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте границы.
+1. Добавьте [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) объекты в ячейки и сохранить документ.
 
 ```java
-    public static void InsertPageBreak() {
-        // Создать экземпляр класса Document
-        Document doc = new Document();
-        // Добавить страницу в коллекцию страниц PDF файла
-        Page page = doc.getPages().add();
-        // Создать экземпляр таблицы
-        Table tab = new Table();
-        // Установить стиль границы для таблицы
-        tab.setBorder (new BorderInfo(BorderSide.All, Color.getRed()));
-        // Установить стиль границы по умолчанию для таблицы с цветом границы Красный
-        tab.setDefaultCellBorder (new BorderInfo(BorderSide.All, Color.getRed()));
-        // Указать ширину столбцов таблицы
-        tab.setColumnWidths ("100 100");
-        // Создать цикл для добавления 200 строк в таблицу
-        for (int counter = 0; counter <= 200; counter++) {
+public static void addHtmlFragments(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+        for (int rowCount = 1; rowCount < 10; rowCount++) {
+            Row row = table.getRows().add();
+            row.getCells().add().getParagraphs().add(new HtmlFragment("Column <strong>(" + rowCount + ", 1)</strong>"));
+            row.getCells().add().getParagraphs().add(new HtmlFragment("Column <span style='color:red'>(" + rowCount + ", 2)</span>"));
+            row.getCells().add().getParagraphs().add(new HtmlFragment("Column <span style='text-decoration: underline'>(" + rowCount + ", 3)</span>"));
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавьте фрагменты LaTeX в ячейки таблицы
+
+Используйте этот пример, когда содержимое таблицы должно отображать выражения TeX или LaTeX.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с границами.
+1. Добавьте [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) объекты в ячейки и сохранить выходной файл.
+
+```java
+public static void addLatexFragments(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+        for (int rowCount = 1; rowCount < 10; rowCount++) {
+            Row row = table.getRows().add();
+            row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\mathbf{(" + rowCount + ", 1)}$"));
+            row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\textcolor{red}{(" + rowCount + ", 2)}$"));
+            row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\underline{(" + rowCount + ", 3)}$"));
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Поместить таблицу на новую страницу
+
+Используйте этот пример, когда вторая таблица должна начинаться на отдельной странице после большой таблицы.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и настройте параметры страницы.
+1. Создайте первый большой [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавить его на страницу.
+1. Создайте вторую таблицу, установите `InNewPage`, и сохранить документ.
+
+```java
+public static void addTableOnNewPage(Path outputFile) {
+    try (Document document = new Document()) {
+        document.getPageInfo().getMargin().setLeft(37);
+        document.getPageInfo().getMargin().setRight(37);
+        document.getPageInfo().getMargin().setTop(37);
+        document.getPageInfo().getMargin().setBottom(37);
+        document.getPageInfo().setLandscape(true);
+
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setColumnWidths("50 100");
+        for (int i = 1; i < 121; i++) {
+            Row row = table.getRows().add();
+            row.setFixedRowHeight(15);
+            row.getCells().add().getParagraphs().add(new TextFragment("Content 1"));
+            row.getCells().add().getParagraphs().add(new TextFragment("Content 2"));
+        }
+        page.getParagraphs().add(table);
+
+        Table table1 = new Table();
+        table1.setColumnWidths("100 100");
+        for (int i = 1; i < 11; i++) {
+            Row row = table1.getRows().add();
+            row.getCells().add().getParagraphs().add(new TextFragment("Content 3"));
+            row.getCells().add().getParagraphs().add(new TextFragment("Content 4"));
+        }
+        table1.setInNewPage(true);
+        page.getParagraphs().add(table1);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Создайте вертикально разорванную таблицу с повторяющимися столбцами
+
+Используйте этот пример, когда широкая таблица должна продолжаться вертикально и повторять ключевые столбцы.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настроить вертикальное разбиение с повторяющимися столбцами.
+1. Добавьте заголовок и строки данных, затем сохраните документ.
+
+```java
+public static void addTableHideBorders(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBroken(TableBroken.Vertical);
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All));
+        table.setRepeatingColumnsCount(2);
+        page.getParagraphs().add(table);
+
+        Row row = table.getRows().add();
+        Cell cell = row.getCells().add("header 1");
+        cell.setColSpan(2);
+        cell.setBackgroundColor(Color.getLightGray());
+        row.getCells().add("header 3");
+        Cell cell2 = row.getCells().add("header 4");
+        cell2.setColSpan(2);
+        cell2.setBackgroundColor(Color.getLightBlue());
+        row.getCells().add("header 6");
+        Cell cell3 = row.getCells().add("header 7");
+        cell3.setColSpan(2);
+        cell3.setBackgroundColor(Color.getLightGreen());
+        Cell cell4 = row.getCells().add("header 9");
+        cell4.setColSpan(3);
+        cell4.setBackgroundColor(Color.getLightCoral());
+        for (int i = 12; i < 18; i++) {
+            row.getCells().add("header " + i);
+        }
+
+        for (int rowCounter = 0; rowCounter < 3; rowCounter++) {
+            Row row1 = table.getRows().add();
+            for (int i = 1; i < 18; i++) {
+                row1.getCells().add("col " + rowCounter + ", " + i);
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Повторно используйте пример границ и отступов
+
+Используйте этот помощник, когда сценарий с полями и отступами должен делегировать общему примеру границы.
+
+1. Вызовите существующий метод границы и отступов таблицы.
+1. Повторно использовать одну и ту же логику размещения таблицы без дублирования кода.
+
+```java
+public static void addMarginsOrPadding(Path outputFile) {
+    addBorders(outputFile);
+}
+```
+
+## Создайте таблицу со скруглёнными углами
+
+Используйте этот пример, когда таблице нужно использовать стили закруглённых углов вместо стандартных прямоугольных границ.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте параметры скруглённой границы.
+1. Добавьте строки в таблицу и сохраните PDF.
+
+```java
+public static void createTableWithRoundCorner(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        BorderInfo borderInfo = new BorderInfo(BorderSide.All);
+        borderInfo.setRoundedBorderRadius(15);
+        table.setCornerStyle(BorderCornerStyle.Round);
+        table.setBorder(borderInfo);
+        for (int rowCount = 0; rowCount < 10; rowCount++) {
+            Row row = table.getRows().add();
+            row.getCells().add("Column (" + rowCount + ", 1)");
+            row.getCells().add("Column (" + rowCount + ", 2)");
+            row.getCells().add("Column (" + rowCount + ", 3)");
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавьте повторяющиеся строки заголовка
+
+Используйте этот пример, когда многостраничные таблицы должны повторять строки заголовка на каждой последующей странице.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте вертикально сломанный [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте количество повторяющихся строк и стиль.
+1. Добавьте строки заголовков и строки данных, затем сохраните документ.
+
+```java
+public static void addRepeatingRows(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBroken(TableBroken.Vertical);
+        table.setRepeatingRowsCount(2);
+        TextState textState = new TextState();
+        textState.setFontSize(12);
+        textState.setFont(FontRepository.findFont("TimesNewRoman"));
+        textState.setForegroundColor(Color.getRed());
+        table.setRepeatingRowsStyle(textState);
+        table.setColumnWidths("100 100 100");
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
+        table.setBorder(new BorderInfo(BorderSide.All, 1, Color.getBlack()));
+
+        Row headerRow1 = table.getRows().add();
+        headerRow1.getCells().add("Header 1-1");
+        headerRow1.getCells().add("Header 1-2");
+        headerRow1.getCells().add("Header 1-3");
+        for (Cell cell : headerRow1.getCells()) {
+            cell.setBackgroundColor(Color.getLightGray());
+        }
+        Row headerRow2 = table.getRows().add();
+        headerRow2.getCells().add("Header 2-1");
+        headerRow2.getCells().add("Header 2-2");
+        headerRow2.getCells().add("Header 2-3");
+        for (Cell cell : headerRow2.getCells()) {
+            cell.setBackgroundColor(Color.getLightBlue());
+        }
+        for (int i = 1; i < 101; i++) {
+            Row row = table.getRows().add();
+            row.getCells().add("Data " + i + "-1");
+            row.getCells().add("Data " + i + "-2");
+            row.getCells().add("Data " + i + "-3");
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавьте повторяющиеся столбцы в широкую таблицу
+
+Используйте этот пример, когда первые столбцы должны повторяться, а таблица разбивается вертикально на той же странице.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и настройте размер страницы.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и установить повторяющиеся столбцы плюс поведение автоподгонки.
+1. Добавьте заголовок и строки данных, затем сохраните PDF.
+
+```java
+public static void addRepeatingColumns(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.setPageSize(PageSize.getA5().getHeight(), PageSize.getA5().getWidth());
+        BorderInfo border = new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray());
+        Table table = new Table();
+        table.setBroken(TableBroken.VerticalInSamePage);
+        table.setColumnAdjustment(ColumnAdjustment.AutoFitToContent);
+        table.setRepeatingColumnsCount(5);
+        table.setBorder(border);
+        table.setDefaultCellBorder(border);
+        page.getParagraphs().add(table);
+
+        Row row = table.getRows().add();
+        for (int i = 1; i < 6; i++) {
+            Cell cell = row.getCells().add("header " + i);
+            cell.setBackgroundColor(Color.getLightGray());
+        }
+        for (int i = 6; i < 18; i++) {
+            row.getCells().add("header " + i);
+        }
+
+        for (int rowCounter = 1; rowCounter < 6; rowCounter++) {
+            row = table.getRows().add();
+            for (int i = 1; i < 6; i++) {
+                Cell cell = row.getCells().add("cell " + rowCounter + "," + i);
+                cell.setBackgroundColor(Color.getLightGray());
+            }
+            for (int i = 6; i < 18; i++) {
+                row.getCells().add("cell " + rowCounter + "," + i);
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Вставить разрывы страниц между строками таблицы
+
+Используйте этот пример, когда определённые строки таблицы должны начинаться с новой страницы.
+
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и заполнить множество строк.
+1. Отметить выбранные строки `InNewPage` и сохраните документ.
+
+```java
+public static void insertPageBreak(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, Color.getRed()));
+        table.setColumnWidths("100 100");
+        for (int counter = 0; counter < 201; counter++) {
             Row row = new Row();
-            tab.getRows().add(row);
-            Cell cell1 = new Cell();
-            cell1.getParagraphs().add(new TextFragment("Ячейка " + counter + ", 0"));
-            row.getCells().add(cell1);
-            Cell cell2 = new Cell();
-            cell2.getParagraphs().add(new TextFragment("Ячейка " + counter + ", 1"));
-            row.getCells().add(cell2);
-            // Когда добавлено 10 строк, отобразить новую строку на новой странице
-            if (counter % 10 == 0 && counter != 0)
+            table.getRows().add(row);
+            row.getCells().add().getParagraphs().add(new TextFragment("Cell " + counter + ", 0"));
+            row.getCells().add().getParagraphs().add(new TextFragment("Cell " + counter + ", 1"));
+            if (counter % 10 == 0 && counter != 0) {
                 row.setInNewPage(true);
+            }
         }
-        // Добавить таблицу в коллекцию абзацев PDF файла
-        page.getParagraphs().add(tab);
-
-        // Сохранить PDF документ
-        doc.save(_dataDir + "InsertPageBreak_out.pdf");
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Повернуть текст внутри ячеек таблицы
 
-## Скрытие границ объединённых ячеек
+Используйте этот пример, когда текст ячейки должен отображаться под разными углами поворота.
 
-При добавлении ячеек в таблицу, границы объединённых ячеек могут отображаться, когда они переносятся на другую строку. Такие объединённые границы могут быть скрыты, как показано в следующем примере кода.
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавить строку с несколькими ячейками.
+1. Создайте повернутый [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) объекты, добавьте их в ячейки и сохраните PDF.
 
 ```java
-Document doc = new Document();
-com.aspose.pdf.Page page = doc.getPages().add();
-
-//Создать объект таблицы, который будет вложен внутрь outerTable и будет переноситься
-//в пределах одной страницы
-com.aspose.pdf.Table mytable = new com.aspose.pdf.Table();
-mytable.setBroken(TableBroken.Vertical);
-mytable.setDefaultCellBorder(new BorderInfo(BorderSide.All));
-mytable.setRepeatingColumnsCount(2);
-page.getParagraphs().add(mytable);
-
-//Добавить строку заголовка
-com.aspose.pdf.Row row = mytable.getRows().add();
-Cell cell = row.getCells().add("header 1");
-cell.setColSpan(2);
-cell.setBackgroundColor(Color.getLightGray());
-Cell header3 = row.getCells().add("header 3");
-Cell cell2 = row.getCells().add("header 4");
-cell2.setColSpan(2);
-cell2.setBackgroundColor(Color.getLightBlue());
-row.getCells().add("header 6");
-Cell cell3 = row.getCells().add("header 7");
-cell3.setColSpan(2);
-cell3.setBackgroundColor(Color.getLightGreen());
-Cell cell4 = row.getCells().add("header 9");
-cell4.setColSpan(3);
-cell4.setBackgroundColor(Color.getLightCoral());
-row.getCells().add("header 12");
-row.getCells().add("header 13");
-row.getCells().add("header 14");
-row.getCells().add("header 15");
-row.getCells().add("header 16");
-row.getCells().add("header 17");
-
-for (int rowCounter = 0; rowCounter < 1; rowCounter++)
-{
-  //Создать строки в таблице, а затем ячейки в строках
-  com.aspose.pdf.Row row1 = mytable.getRows().add();
-  row1.getCells().add("col "+rowCounter+", 1");
-  row1.getCells().add("col "+rowCounter+", 2");
-  row1.getCells().add("col "+rowCounter+", 3");
-  row1.getCells().add("col "+rowCounter+", 4");
-  row1.getCells().add("col "+rowCounter+", 5");
-  row1.getCells().add("col "+rowCounter+", 6");
-  row1.getCells().add("col "+rowCounter+", 7");
-  row1.getCells().add("col "+rowCounter+", 8");
-  row1.getCells().add("col "+rowCounter+", 9");
-  row1.getCells().add("col "+rowCounter+", 10");
-  row1.getCells().add("col "+rowCounter+", 11");
-  row1.getCells().add("col "+rowCounter+", 12");
-  row1.getCells().add("col "+rowCounter+", 13");
-  row1.getCells().add("col "+rowCounter+", 14");
-  row1.getCells().add("col "+rowCounter+", 15");
-  row1.getCells().add("col "+rowCounter+", 16");
-  row1.getCells().add("col "+rowCounter+", 17");
+public static void rotatedTextTable(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
+        Row row = table.getRows().add();
+        row.setMinRowHeight(200);
+        for (int cellCount = 0; cellCount < 4; cellCount++) {
+            Cell cell = row.getCells().add();
+            TextFragment textFragment = new TextFragment("Cell 1 " + (cellCount - 1));
+            textFragment.getTextState().setRotation(90 * cellCount);
+            textFragment.setHorizontalAlignment(HorizontalAlignment.Center);
+            cell.getParagraphs().add(textFragment);
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
 }
-doc.save(dataDir + "3_out.pdf");
 ```
+

@@ -1,47 +1,49 @@
 ---
-title: Получение Определенной Страницы в PDF Файле на Ruby
+title: Получить определённую страницу в PDF‑файле на Ruby
+linktitle: Получить определённую страницу в PDF‑файле на Ruby
 type: docs
 weight: 30
 url: /ru/java/get-a-particular-page-in-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Получайте доступ и управляйте отдельными страницами PDF‑документов с помощью Ruby и Aspose.PDF.
+lastmod: "2026-08-19"
 ---
+## Aspose.PDF - Получить страницу
 
-## Aspose.PDF - Получение Страницы
+Чтобы получить определённую страницу в PDF‑документе с использованием **Aspose.PDF Java for Ruby**, просто вызовите модуль **GetPage**.
 
-Чтобы получить определенную страницу в PDF документе, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **GetPage**.
-
-Код на Ruby
+Код Ruby
 
 ```java
-# Путь к директории с документами.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть целевой документ
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# получить страницу по определенному индексу в коллекции страниц
+# get the page at particular index of Page Collection
 
 pdf_page = pdf.getPages().get_Item(1)
 
-# создать новый объект Document
+# create a new Document object
 
 new_document = Rjb::import('com.aspose.pdf.Document').new
 
-# добавить страницу в коллекцию страниц нового объекта документа
+# add page to pages collection of new document object
 
 new_document.getPages().add(pdf_page)
 
-# сохранить вновь созданный PDF файл
+# save the newly generated PDF file
 
 new_document.save(data_dir + "output.pdf")
 
-puts "Процесс успешно завершен!"
+puts "Process completed successfully!"
 ```
 
-## Загрузка Исполняемого Кода
+## Скачать исполняемый код
 
-Скачайте **Получение Страницы (Aspose.PDF)** с любого из нижеуказанных сайтов социального кодирования:
+Скачать **Get Page (Aspose.PDF)** из любого из перечисленных ниже сайтов для совместного кодинга:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpage.rb)
+

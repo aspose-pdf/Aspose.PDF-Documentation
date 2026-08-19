@@ -1,18 +1,24 @@
 ---
-title: Basic operations with PDF documents
-linktitle: Basic operations
+title: Базовые операции с PDF-документами
+linktitle: Базовые операции
 type: docs
-weight: 40
+weight: 60
 url: /ru/java/basic-operations/
-lastmod: "2021-06-05"
-description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF for Java.
+lastmod: "2026-08-19"
+description: Раздел «Basic operations» описывает, как создавать, открывать, сохранять, объединять, разбивать и защищать PDF-документы с помощью Aspose.PDF for Java.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Обзор базовых операций с PDF на Java
+Abstract: В этой статье представлен обзор базовых операций с PDF в Java с использованием Aspose.PDF. Описывается создание новых документов, открытие PDF из файлов или потоков, сохранение документов в файлы и потоки, объединение и разбивка PDF‑файлов, а также защита документов паролями и разрешениями.
 ---
+**Базовые операции** раздел описывает первые и самые простые задачи PDF, которые вы можете выполнить с помощью Aspose.PDF for Java:
 
-**Базовые операции** раздел описывает первые и самые простые операции с PDF-документами в Aspose.PDF для Java:
+- [Создать PDF-документ](/pdf/ru/java/create-document/) - создать новый PDF-документ программно на Java.
+- [Открыть PDF-документ](/pdf/ru/java/open-pdf-document/) - открыть PDF-файлы из пути, из потока или с паролем.
+- [Сохранить PDF-документ](/pdf/ru/java/save-pdf-document/) - сохранить документ в файл, в поток или как PDF-стандарт.
+- [Объединить PDF](/pdf/ru/java/merge-pdf/) - объединить несколько PDF‑файлов в один итоговый документ.
+- [Разделить PDF](/pdf/ru/java/split-pdf/) - разделить страницы PDF на отдельные одностраничные PDF‑файлы.
+- [Шифрование и дешифрование PDF‑файла](/pdf/ru/java/protect-pdf-file/) - применить пароли, разрешения и дешифрование к PDF‑файлам.
 
-- [Создать PDF-документ](/pdf/ru/java/create-document/) - эта статья описывает, как создать PDF-файл с использованием Java.
-- [Открыть PDF-документ](/pdf/ru/java/open-pdf-document/) - эта статья описывает различные способы открытия PDF-документа в Java-приложении.
-- [Сохранить PDF-документ](/pdf/ru/java/save-pdf-document/) - эта статья описывает различные способы сохранения PDF-документа в файл, поток, отправку в веб или сохранение как PDF/A (или PDF/X) документ.

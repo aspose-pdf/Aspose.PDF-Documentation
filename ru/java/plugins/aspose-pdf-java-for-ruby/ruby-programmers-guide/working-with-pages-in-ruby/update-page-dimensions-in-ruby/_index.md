@@ -1,50 +1,51 @@
 ---
 title: Обновление размеров страницы в Ruby
+linktitle: Обновление размеров страницы в Ruby
 type: docs
 weight: 90
 url: /ru/java/update-page-dimensions-in-ruby/
-lastmod: "2021-06-05"
+description: Узнайте, как обновить размеры страниц PDF‑документа с помощью Ruby и Aspose.PDF для точного форматирования страниц.
+lastmod: "2026-08-19"
 ---
-
 ## Aspose.PDF - Обновление размеров страницы
 
-Чтобы обновить размеры страницы с использованием **Aspose.PDF Java для Ruby**, просто вызовите модуль **UpdatePageDimensions**.
+Чтобы обновить размеры страниц, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **UpdatePageDimensions**.
 
-Код на Ruby
+Код Ruby
 
 ```java
-
-# Путь к каталогу документов.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть целевой документ
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# получить коллекцию страниц
+# get page collection
 
 page_collection = pdf.getPages()
 
-# получить определенную страницу
+# get particular page
 
 pdf_page = page_collection.get_Item(1)
 
-# установить размер страницы как A4 (11.7 x 8.3 дюйма) и в Aspose.PDF, 1 дюйм = 72 пункта
+# set the page size as A4 (11.7 x 8.3 in) and in Aspose.PDF, 1 inch = 72 points
 
-# поэтому размеры A4 в пунктах будут (842.4, 597.6)
+# so A4 dimensions in points will be (842.4, 597.6)
 
 pdf_page.setPageSize(597.6,842.4)
 
-# сохранить вновь созданный PDF файл
+# save the newly generated PDF file
 
 pdf.save(data_dir + "output.pdf")
 
-puts "Размеры обновлены успешно!"
+puts "Dimensions updated successfully!"
 ```
 
-## Скачать исполняемый код
+## Скачать работающий код
 
-Скачать **Обновление размеров страницы (Aspose.PDF)** с любого из нижеупомянутых сайтов социального кодирования:
+Скачать\u0412\u00A0**Update Page Dimensions (Aspose.PDF)**\u0412\u00A0из\u0412\u00A0любого из нижеупомянутых социальных кодирующих сайтов:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/updatepagedimensions.rb)
+
