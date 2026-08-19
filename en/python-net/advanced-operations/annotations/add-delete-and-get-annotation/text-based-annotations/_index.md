@@ -14,21 +14,25 @@ AlternativeHeadline: Work with text and text markup PDF annotations in Python.
 Abstract: This article explains how to create, read, and remove text-based annotations in PDF documents using Aspose.PDF for Python via .NET. It covers free text annotations and text markup annotations such as highlight, underline, squiggly, and strikeout, including advanced underline workflows like flattening, quad points, and extracting marked text.
 ---
 
-This article shows how to work with text-based annotations in PDF documents using Aspose.PDF for Python via .NET.
+Text-based annotations add comments, highlighting, and review markup to a PDF without changing its underlying text. This article shows how to create, inspect, and remove five annotation types with Aspose.PDF for Python via .NET.
 
-The example script demonstrates several text annotation workflows:
+## Annotation types
 
-- free text annotations
-- highlight annotations
-- underline annotations
-- squiggly annotations
-- strikeout annotations
+Choose an annotation type to view the available workflows:
 
-## FreeText Annotations
+- [Free text annotations](#work-with-free-text-annotations): Add editable text boxes for notes and comments
+- [Highlight annotations](#highlight-text-in-a-pdf): Emphasize important text passages
+- [Strikeout annotations](#mark-text-for-deletion-with-strikeout-annotations): Mark text for deletion or revision
+- [Squiggly annotations](#flag-errors-with-squiggly-annotations): Flag spelling errors and other concerns
+- [Underline annotations](#underline-and-process-marked-text): Underline text, extract marked content, target annotations by title, and flatten markup
 
-### Add FreeText Annotations 
+## Work with free text annotations
 
-Free text annotations let you place visible text comments directly on a PDF page. This example adds a simple free text annotation to the first page.
+Free text annotations place editable text boxes directly on a PDF page. The following examples use the first page in the document, which is accessed as `document.pages[1]` because the Aspose.PDF page collection uses one-based indexing.
+
+### Create an editable text box
+
+Open the input PDF, construct a `FreeTextAnnotation` with its page, bounds, and default appearance, and then set its title and color. Append the configured annotation to the page collection before saving the output file.
 
 #### Open the source PDF
 
@@ -73,9 +77,9 @@ def free_text_annotation_add(infile, outfile):
     document.save(outfile)
 ```
 
-### Get FreeText Annotations 
+### Inspect existing free text annotations
 
-To inspect free text annotations, filter the first page annotations by the `FREE_TEXT` type and print each annotation rectangle.
+Load the PDF and use a list comprehension to select annotations whose `annotation_type` is `FREE_TEXT`. Iterating over the filtered list lets you inspect each annotation's rectangular bounds.
 
 #### Load the document and collect free text annotations
 
@@ -110,9 +114,9 @@ def free_text_annotation_get(infile, outfile):
         print(annotation.rect)
 ```
 
-### Delete FreeText Annotations 
+### Remove free text annotations
 
-This workflow removes all free text annotations from the first page and saves the updated PDF.
+First create a separate list of free text annotations so the page collection is not modified while it is being traversed. Delete each collected annotation, and then save the updated PDF.
 
 #### Find and delete free text annotations
 
@@ -148,13 +152,13 @@ def free_text_annotation_delete(infile, outfile):
 ```
 
 
-## Text Markup Annotations
+## Highlight text in a PDF
 
-### Highlight Annotations
+Highlight annotations overlay a selected rectangular area while leaving the PDF text unchanged.
 
-#### Add Text Highlight
+### Apply a highlight annotation
 
-Highlight annotations emphasize parts of the document without changing the underlying content. This example adds a highlight annotation to the first page.
+Create a `HighlightAnnotation` for the first page and supply a rectangle that identifies the area to emphasize. Append the annotation to the page and save the document.
 
 ```python
 document = ap.Document(infile)
@@ -181,9 +185,9 @@ def text_highlight_annotation_add(infile, outfile):
     document.save(outfile)
 ```
 
-#### Get Text Highlight
+### Find highlighted passages
 
-To inspect highlight annotations, filter the page annotations by the `HIGHLIGHT` type and print their rectangles.
+Filter the first page's annotation collection by the `HIGHLIGHT` type. The `rect` value printed for each match identifies the area covered by that highlight.
 
 ```python
 document = ap.Document(infile)
@@ -210,9 +214,9 @@ def text_highlight_annotation_get(infile, outfile):
         print(annotation.rect)
 ```
 
-#### Delete Text Highlight
+### Remove highlights from a page
 
-This workflow removes all highlight annotations from the first page and saves the output PDF.
+Collect all highlight annotations from the first page, delete them from the annotation collection one at a time, and save the result to the output path.
 
 ```python
 document = ap.Document(infile)
@@ -244,11 +248,13 @@ def text_highlight_annotation_delete(infile, outfile):
 ```
 
 
-### Underline Annotations
+## Underline and process marked text
 
-#### Add Text Underline Annotations
+Underline annotations support basic review markup as well as precise quad-point positioning, marked-text extraction, selective deletion, and flattening.
 
-Underline annotations mark text with a visible underline. This example adds a basic underline annotation and sets its metadata and color.
+### Underline a text passage
+
+Create an `UnderlineAnnotation` with the target page and rectangle. Set the title, subject, print flag, and color before appending it to the page and saving the PDF.
 
 ```python
 document = ap.Document(infile)
@@ -283,9 +289,9 @@ def text_underline_annotation_add(infile, outfile):
     document.save(outfile)
 ```
 
-#### Add Text Underline Annotations Flatten 
+### Make an underline permanent by flattening it
 
-If you want the underline to become part of the page content instead of remaining an interactive annotation, you can flatten it after adding it.
+Append the configured underline to the page and call `flatten()` before saving. Flattening incorporates the underline's appearance into the page content so it can no longer be edited as an annotation.
 
 ```python
 document = ap.Document(infile)
@@ -324,9 +330,9 @@ def text_underline_flatten_add(infile, outfile):
     document.save(outfile)
 ```
 
-#### Add Text Underline Annotations with Quad Points
+### Define a precise underline area with quad points
 
-Quad points let you define the exact marked area for the underline annotation. This is useful when you need more control than a simple rectangle.
+Build four `Point` objects from the rectangle corners and assign them to `quad_points`. These coordinates define the exact quadrilateral covered by the underline instead of relying only on its bounding rectangle.
 
 ```python
 document = ap.Document(infile)
@@ -369,9 +375,9 @@ def text_underline_with_quad_points_add(infile, outfile):
     document.save(outfile)
 ```
 
-#### Delete Text Underline Annotations
+### Remove underlines from a page
 
-This workflow removes all underline annotations from the first page and saves the updated document.
+Filter the annotation collection by the `UNDERLINE` type, delete every match from the first page, and save the updated document.
 
 ```python
 document = ap.Document(infile)
@@ -402,9 +408,9 @@ def text_underline_annotation_delete(infile, outfile):
     document.save(outfile)
 ```
 
-#### Delete Text Underline Annotations by Title
+### Remove underlines created by a specific author
 
-This workflow shows how to selectively delete underline annotations after checking their title.
+Cast each matching annotation to `UnderlineAnnotation` so its `title` property can be evaluated. The example deletes only underlines whose title starts with `a`; adjust this condition to match the author or naming convention used in your documents.
 
 ```python
 document = ap.Document(infile)
@@ -439,9 +445,9 @@ def text_underline_by_title_delete(infile, outfile):
     document.save(outfile)
 ```
 
-#### Get Text Underline Annotations
+### Inspect underline annotations
 
-To inspect underline annotations, filter the first page annotations by the `UNDERLINE` type and print each rectangle.
+Select annotations of type `UNDERLINE` and print each `rect` value to inspect where the underline appears on the page.
 
 ```python
 document = ap.Document(infile)
@@ -468,9 +474,13 @@ def text_underline_annotation_get(infile, outfile):
         print(annotation.rect)
 ```
 
-#### Get Text Underline Annotations Marked Text
+### Extract marked text from underline annotations
 
-This workflow converts each underline annotation to an `UnderlineAnnotation` object and extracts the marked text.
+After filtering for underline annotations, cast each result to `UnderlineAnnotation` to access the marked-text APIs.
+
+#### Return marked text as a string
+
+Call `get_marked_text()` to return all text covered by an underline as one string. This is useful when the complete marked passage is the only information required.
 
 ```python
 document = ap.Document(infile)
@@ -501,9 +511,9 @@ def text_underline_marked_text_get(infile, outfile):
         print(f"Marked text: {ua.get_marked_text()}")
 ```
 
-#### Get Text Underline Annotations Marked Fragments
+#### Process individual text fragments
 
-If you need each marked fragment separately, you can iterate through the collection returned by `get_marked_text_fragments()`.
+Call `get_marked_text_fragments()` when the individual `TextFragment` objects are needed. Iterating over the returned collection preserves access to each fragment and its text separately.
 
 ```python
 document = ap.Document(infile)
@@ -537,11 +547,13 @@ def text_underline_marked_fragments_get(infile, outfile):
 ```
 
 
-### Squiggly Annotations
+## Flag errors with squiggly annotations
 
-#### Add Squiggly Annotations
+Squiggly annotations use a wavy underline to identify spelling problems, review concerns, or other text that needs attention.
 
-Squiggly annotations are often used to mark spelling, grammar, or attention areas in text. This example adds a squiggly annotation to the first page.
+### Add a wavy underline
+
+Store the first page in a local variable, create a `SquigglyAnnotation` for the required rectangle, and set its title and color. Append it to the same page and save the output PDF.
 
 ```python
 document = ap.Document(infile)
@@ -574,9 +586,9 @@ def text_squiggly_annotation_add(infile, outfile):
     document.save(outfile)
 ```
 
-#### Get Squiggly Annotations
+### Find text flagged with a squiggly annotation
 
-To inspect squiggly annotations, filter the page annotations by the `SQUIGGLY` type and print their rectangles.
+Filter the first page's annotations by the `SQUIGGLY` type and print the bounds of every matching annotation.
 
 ```python
 document = ap.Document(infile)
@@ -603,9 +615,9 @@ def text_squiggly_annotation_get(infile, outfile):
         print(annotation.rect)
 ```
 
-#### Delete Squiggly Annotations
+### Remove squiggly annotations
 
-This workflow removes all squiggly annotations from the first page and saves the result.
+Collect the squiggly annotations before modifying the page collection, delete each match, and save the cleaned document.
 
 ```python
 document = ap.Document(infile)
@@ -637,11 +649,13 @@ def text_squiggly_annotation_delete(infile, outfile):
 ```
 
 
-### StrikeOut Annotations
+## Mark text for deletion with strikeout annotations
 
-#### Add Text Strikeout Annotations
+Strikeout annotations draw a line through text to indicate that it should be removed or revised.
 
-Strikeout annotations mark text that should be treated as removed or crossed out. This example adds a strikeout annotation and sets its metadata and color.
+### Apply strikeout markup
+
+Create a `StrikeOutAnnotation` for a rectangle on the first page. Configure its title, subject, print flag, and color, append it to the annotation collection, and save the document.
 
 ```python
 document = ap.Document(infile)
@@ -676,9 +690,9 @@ def text_strikeout_annotation_add(infile, outfile):
     document.save(outfile)
 ```
 
-#### Get Text Strikeout Annotations
+### Inspect strikeout markup
 
-To inspect strikeout annotations, filter the page annotations by the `STRIKE_OUT` type and print their rectangles.
+Use a list comprehension to select annotations whose type is `STRIKE_OUT`. Printing each rectangle shows where strikeout markup is applied.
 
 ```python
 document = ap.Document(infile)
@@ -705,9 +719,9 @@ def text_strikeout_annotation_get(infile, outfile):
         print(annotation.rect)
 ```
 
-#### Delete Text Strikeout Annotations
+### Remove strikeout markup
 
-This workflow removes all strikeout annotations from the first page and saves the updated document.
+Collect the strikeout annotations from the first page, remove each one from the annotation collection, and save the updated PDF.
 
 ```python
 document = ap.Document(infile)
@@ -738,7 +752,7 @@ def text_strikeout_annotation_delete(infile, outfile):
     document.save(outfile)
 ```
 
-## Related Topics
+## Related annotation topics
 
 - [Import and Export Annotations](/python-net/import-export-annotations/)
 - [Interactive Annotations](/python-net/interactive-annotations/)
