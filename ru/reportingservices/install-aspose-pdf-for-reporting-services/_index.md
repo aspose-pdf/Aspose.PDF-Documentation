@@ -1,20 +1,19 @@
 ---
-title: Установите Aspose.PDF
-linktitle: Установите Aspose.PDF
+title: Установить Aspose.PDF
+linktitle: Установить Aspose.PDF
 type: docs
 weight: 50
 url: /ru/reportingservices/install-aspose-pdf-for-reporting-services/
-description: Узнайте, как установить Aspose.PDF для Reporting Services. Следуйте этому пошаговому руководству, чтобы включить возможность экспорта PDF в SSRS.
-lastmod: "2026-06-19"
+description: Узнайте, как установить Aspose.PDF для служб Reporting Services. Следуйте этому пошаговому руководству, чтобы включить функцию экспорта PDF в SSRS.
+lastmod: "2021-06-05"
 ---
 
-{{% alert color="primary" %}}
+**В этот раздел включены следующие темы:**
 
-**Этот раздел включает следующие темы:**
+- [Установить с помощью установщика MSI](/pdf/reportingservices/install-with-msi-installer/)
+- [Установить вручную](/pdf/reportingservices/install-manually/)
+- [Установить с помощью инструмента настройки](/pdf/reportingservices/install-with-configuring-tool/)
 
-- [Установите с помощью MSI Installer](/pdf/ru/reportingservices/install-with-msi-installer/)
-- [Установите вручную](/pdf/ru/reportingservices/install-manually/)
-- [Установите с помощью Configuring Tool](/pdf/ru/reportingservices/install-with-configuring-tool/)
 
-{{% /alert %}}
+
 

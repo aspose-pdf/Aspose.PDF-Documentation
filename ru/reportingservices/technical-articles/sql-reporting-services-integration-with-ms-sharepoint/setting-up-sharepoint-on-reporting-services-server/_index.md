@@ -1,51 +1,51 @@
 ---
-title: Настройка SharePoint на сервере Reporting Services
-linktitle: Настройка SharePoint на сервере Reporting Services
+title: Настройка SharePoint на сервере служб отчетов
+linktitle: Настройка SharePoint на сервере служб отчетов
 type: docs
 weight: 30
 url: /ru/reportingservices/setting-up-sharepoint-on-reporting-services-server/
 description: Узнайте, как настроить SharePoint на сервере Reporting Services для интеграции с Aspose.PDF for Reporting Services.
-lastmod: "2026-06-19"
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Теперь нам нужно выполнить аналогичные шаги, как мы делали для SharePoint WFE. Первое — пройти установку Prereq uisites, и после её завершения запустить настройку SharePoint.
+Теперь нам нужно выполнить те же действия, что и для SharePoint WFE. Прежде всего необходимо выполнить установку Prerequisites и, как только это будет сделано, запустить установку SharePoint.
 
 {{% /alert %}}
 
-Для настройки я выбираю Server Farm и полную установку, чтобы соответствовать моей SharePoint Box, так как я не хочу отдельную установку для SharePoint.
+Для установки я выбираю ферму серверов и полную установку, соответствующую моему блоку SharePoint, поскольку мне не нужна отдельная установка SharePoint.
 
 ## Конфигурация SharePoint
 
 {{% alert color="primary" %}}
 
-**В мастере конфигурации SharePoint мы хотим подключиться к существующей ферме.**
+**В мастере настройки SharePoint мы хотим подключиться к существующей ферме.**
 
-![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_1.png)
+![SharePoint Configuration Wizard](setting-up-sharepoint-on-reporting-services-server_1.png)
 
-**Image1:- Мастер настройки SharePoint**
+**Изображение1: — Мастер настройки SharePoint**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Затем мы укажем его на базу данных SharePoint_Config, которую использует наша ферма. Если вы не знаете, где она находится, вы можете узнать через Центральное администрирование, через Системные настройки -> Управление серверами в этой ферме.**
+**Затем мы укажем его на базу данных SharePoint_Config, которую использует наша ферма. Если вы не знаете, где это находится, вы можете узнать это в Центре администрирования через Настройки системы -> Серверы диспетчера в этой ферме.**
 
-![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_2.png)
+![SharePoint Configuration Database](setting-up-sharepoint-on-reporting-services-server_2.png)
 
-**Image2:- Укажите параметры конфигурации базы данных**
+**Изображение2: Укажите параметры конфигурации базы данных**
 
-![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_3.png)
+![SharePoint Configuration Wizard](setting-up-sharepoint-on-reporting-services-server_3.png)
 
-**Image3:- Мастер настройки SharePoint**
+**Изображение3: — Мастер настройки SharePoint**
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-**Как только мастер завершит работу, это всё, что нам нужно сделать на сервере Report Server Box пока что. Возвращаясь к URL ReportServer, мы увидим другую ошибку, но это потому, что мы не настроили её через Central Administrator.**
+**После завершения работы мастера это все, что нам нужно сделать в окне сервера отчетов. Возвращаясь к URL-адресу ReportServer, мы увидим еще одну ошибку, но это потому, что мы не настроили ее через Центральный администратор.**
 
-![todo:image_alt_text](setting-up-sharepoint-on-reporting-services-server_4.png)
+![SharePoint Configuration Error](setting-up-sharepoint-on-reporting-services-server_4.png)
 
-**Image4:- Ошибка сервера отчетов**
+**Изображение4: – Ошибка сервера отчетов**
 {{% /alert %}}
 

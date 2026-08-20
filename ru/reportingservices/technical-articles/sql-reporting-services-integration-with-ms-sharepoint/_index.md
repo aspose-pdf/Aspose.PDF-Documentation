@@ -5,10 +5,10 @@ type: docs
 weight: 20
 url: /ru/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/
 description: Узнайте, как интегрировать SQL Reporting Services с MS SharePoint с помощью Aspose.PDF for Reporting Services.
-lastmod: "2026-06-19"
+lastmod: "2026-08-20"
 ---
 
-**Этот раздел включает следующие темы:**
+**В этом разделе рассматриваются следующие темы:**
 
 - [Введение](/pdf/ru/reportingservices/introduction/)
 - [Настройка Reporting Services](/pdf/ru/reportingservices/setting-up-reporting-services/)

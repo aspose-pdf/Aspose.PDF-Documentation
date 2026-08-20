@@ -4,17 +4,15 @@ linktitle: Выравнивание текста Justify FullJustify
 type: docs
 weight: 40
 url: /ru/reportingservices/justify-fulljustify-text-alignment/
-description: Достигните идеального выравнивания текста в PDF‑отчётах с Aspose.PDF for Reporting Services. Поддержка опций justify и full justify.
-lastmod: "2026-06-19"
+description: Достигните идеального выравнивания текста в PDF‑отчётах с помощью Aspose.PDF for Reporting Services. Поддержка опций justify и full justify.
+lastmod: "2026-08-20"
 ---
 
 {{% alert color="primary" %}}
 
-Report builder не поддерживает возможность задавать выравнивание текста для текстового поля «Justify» и «FullJustify». С Aspose.Pdf for Reporting Services вы можете легко сделать это, добавив пользовательские свойства.
+Конструктор отчетов не поддерживает возможность указания выравнивания текста для текстового поля `Justify` и `FullJustify`. С помощью Aspose.PDF for Reporting Services вы можете легко сделать это, добавив пользовательские свойства.
 
 {{% /alert %}}
-
-{{% alert color="primary" %}}
 
 ```text
 Custom Property `Name`: TextAlignment  
@@ -24,7 +22,7 @@ Custom Property `Values`: Justify, FullJustify
 
 В отчете код должен выглядеть следующим образом:
 
-**Пример**
+## Пример
 
 ```xml
 <Textbox Name="textbox1">
@@ -38,4 +36,3 @@ Custom Property `Values`: Justify, FullJustify
 </Textbox>
 ```
 
-{{% /alert %}}
