@@ -1,111 +1,115 @@
 ---
-title: PDF에 이미지 스탬프 추가 프로그래밍적으로
+title: Java에서 PDF에 이미지 스탬프 추가
 linktitle: PDF 파일의 이미지 스탬프
 type: docs
 weight: 10
-url: /ko/java/image-stamps-in-pdf-page/
-description: Aspose.PDF for Java 라이브러리의 ImageStamp 클래스를 사용하여 PDF 문서에 이미지 스탬프를 추가합니다.
-lastmod: "2021-06-05"
+url: /java/image-stamps-in-pdf-page/
+description: Java에서 PDF 페이지에 이미지 스탬프를 추가하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java를 사용하여 PDF 페이지에 이미지 스탬프 및 이미지 배경 추가
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 파일에 이미지 스탬프를 추가하는 방법을 설명합니다. 위치 지정, 회전, 불투명도 및 품질 관리 기능을 갖춘 이미지 스탬프를 다루고 이미지를 플로팅 박스의 배경으로 사용합니다.
 ---
+Java용 Aspose.PDF는 이미지 스탬프를 오버레이 및 이미지 기반 레이아웃 요소로 지원합니다.
 
-## PDF 파일에 이미지 스탬프 추가
 
-[ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) 클래스를 사용하여 PDF 문서에 이미지를 스탬프로 추가할 수 있습니다. [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) 클래스는 높이, 너비 및 불투명도 등을 지정하는 방법을 제공합니다.
+## 
+이미지 스탬프 추가
 
-이미지 스탬프를 추가하려면:
 
-1. 필요한 속성을 사용하여 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체와 ImageStamp 객체를 생성합니다.
 
-1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) 클래스의 [addStamp(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) 메서드를 호출하여 PDF에 스탬프를 추가합니다.
+페이지에 맞춤 배치 및 불투명도가 포함된 이미지 스탬프를 표시해야 하는 경우 이 예를 사용하세요.
 
-다음 코드 스니펫은 PDF 파일에 이미지 스탬프를 추가하는 방법을 보여줍니다.
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+[ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/)를 생성하고 모양을 구성합니다.
+1. 페이지에 스탬프를 추가하고 문서를 저장하세요.
+
 
 ```java
-public static void AddImageStampInPDFFile() {
-        // 문서 열기
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // 이미지 스탬프 생성
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setBackground(true);
         imageStamp.setXIndent(100);
         imageStamp.setYIndent(100);
-        imageStamp.setHeight(48);
-        imageStamp.setWidth(225);
+        imageStamp.setHeight(300);
+        imageStamp.setWidth(300);
         imageStamp.setRotate(Rotation.on270);
         imageStamp.setOpacity(0.5);
 
-        // 특정 페이지에 스탬프 추가
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        // 출력 문서 저장
-        pdfDocument.save(_dataDir + "AddImageStamp_out.pdf");
-
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 
+품질 관리를 통해 이미지 스탬프 추가
 
-## 스탬프 추가 시 이미지 품질 제어
 
-[ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) 클래스는 이미지 스탬프를 PDF 문서에 추가할 수 있게 해줍니다. 또한 PDF 파일에 워터마크로 이미지를 추가할 때 이미지 품질을 제어할 수 있습니다. 이를 가능하게 하기 위해 [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) 클래스에 setQuality(...)라는 메소드가 추가되었습니다. 유사한 메소드는 com.aspose.pdf.facades 패키지의 [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/Stamp) 클래스에서도 찾을 수 있습니다.
 
-다음 코드 스니펫은 PDF 파일에 스탬프로 추가할 때 이미지 품질을 제어하는 방법을 보여줍니다.
+이미지 스탬프의 렌더링 품질을 조정해야 할 때 이 예를 사용하십시오.
+
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+[ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/)를 생성하고 품질 값을 설정하세요.
+1. 페이지에 스탬프를 추가하고 결과를 저장하세요.
+
 
 ```java
- public static void ControlImageQualityWhenAddingStamp() {
-        // 문서 열기
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // 이미지 스탬프 생성
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStampWithQualityControl(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setQuality(10);
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        pdfDocument.save(_dataDir + "ControlImageQuality_out.pdf");
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 
+이미지를 부동 상자 배경으로 사용
 
-## 부동 박스에서 이미지 스탬프를 배경으로 사용
 
-Aspose.PDF API를 사용하면 부동 박스에 이미지 스탬프를 배경으로 추가할 수 있습니다. FloatingBox 클래스의 BackgroundImage 속성을 사용하여 부동 박스에 대한 배경 이미지 스탬프를 설정할 수 있으며, 다음 코드 샘플에 나와 있습니다.
+
+이미지가 스타일이 지정된 레이아웃 컨테이너의 배경 역할을 해야 하는 경우 이 예제를 사용하세요.
+
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 페이지에 접속합니다.
+
+1. 
+텍스트 및 테두리 설정을 사용하여 [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/)를 만듭니다.
+1. 배경 이미지를 설정하고 페이지에 상자를 추가한 후 문서를 저장합니다.
 
 ```java
-public static void ImageStampAsBackgroundInFloatingBox() {
-        // Document 객체를 인스턴스화
-        Document doc = new Document();
-        // PDF 문서에 페이지 추가
-        Page page = doc.getPages().add();
+public static void addImageAsBackgroundInFloatingBox(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        FloatingBox box = new FloatingBox(200.0f, 100.0f);
+        box.setLeft(40);
+        box.setTop(80);
+        box.setHorizontalAlignment(HorizontalAlignment.Center);
+        box.getParagraphs().add(new TextFragment("Text in Floating Box"));
+        box.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
 
-        // FloatingBox 객체 생성
-        FloatingBox aBox = new FloatingBox(200, 100);
+        Image image = new Image();
+        image.setFile(imageFile.toString());
+        box.setBackgroundImage(image);
+        box.setBackgroundColor(Color.getYellow());
+        page.getParagraphs().add(box);
 
-        // FloatingBox의 왼쪽 위치 설정
-        aBox.setLeft(40);
-        // FloatingBox의 위쪽 위치 설정
-        aBox.setTop(80);
-        // FloatingBox의 수평 정렬 설정
-        aBox.setHorizontalAlignment(HorizontalAlignment.Center);
-        // FloatingBox의 단락 컬렉션에 텍스트 조각 추가
-        aBox.getParagraphs().add(new TextFragment("main text"));
-        // FloatingBox의 테두리 설정
-        aBox.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
-
-        // 배경 이미지 추가
-        Image img = new Image();
-        img.setFile(_dataDir + "aspose-logo.png");
-        aBox.setBackgroundImage(img);
-
-        // FloatingBox의 배경색 설정
-        aBox.setBackgroundColor(Color.getYellow());
-
-        // 페이지 객체의 단락 컬렉션에 FloatingBox 추가
-        page.getParagraphs().add(aBox);
-        // PDF 문서 저장
-        doc.save(_dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+        document.save(outputFile.toString());
     }
 }
 ```

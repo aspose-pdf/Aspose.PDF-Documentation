@@ -1,52 +1,61 @@
 ---
-title: 루비에서 JavaScript 추가
+title: Ruby에 JavaScript 추가하기
+linktitle: Ruby에 JavaScript 추가하기
 type: docs
 weight: 10
-url: /ko/java/adding-javascript-in-ruby/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-in-ruby/
+description: 상호작용 및 자동화를 위해 Ruby에서 Aspose.PDF를 사용하여 PDF에서 JavaScript 기능을 활성화합니다.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - JavaScript 추가
 
-## Aspose.PDF - JavaScript 추가
 
-**Aspose.PDF Java for Ruby**를 사용하여 Pdf 문서에 JavaScript를 추가하려면, 간단히 **AddJavaScript** 모듈을 호출하세요.
+
+**Aspose.PDF Java for Ruby**를 사용하여 PDF 문서에 JavaScript를 추가하려면 **AddJavaScript** 모듈을 호출하기만 하면 됩니다.
 
 루비 코드
 
+
 ```java
-# 문서 디렉토리의 경로입니다.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# PDF 문서를 엽니다.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# 문서 레벨에서 JavaScript 추가
+# Adding JavaScript at Document Level
 
-# 원하는 JavaScript 문을 사용하여 JavascriptAction을 인스턴스화합니다.
+# Instantiate JavascriptAction with desried JavaScript statement
 
 javaScript = Rjb::import('com.aspose.pdf.JavascriptAction').new("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
-# Document의 원하는 액션에 JavascriptAction 객체를 할당합니다.
+# Assign JavascriptAction object to desired action of Document
 
 doc.setOpenAction(javaScript)
 
-# 페이지 레벨에서 JavaScript 추가
+# Adding JavaScript at Page Level
 
 doc.getPages().get_Item(2).getActions().setOnOpen(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('page 2 is opened')"))
 
 doc.getPages().get_Item(2).getActions().setOnClose(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('page 2 is closed')"))
 
-# PDF 문서 저장
+# Save PDF Document
 
 doc.save(data_dir + "JavaScript-Added.pdf")
 
-puts "JavaScript가 성공적으로 추가되었습니다. 출력 파일을 확인하세요."
+puts "Added JavaScript Successfully, please check the output file."
 ```
 
+## 
+실행 코드 다운로드
 
-## 코드 실행 다운로드
 
-아래 언급된 소셜 코딩 사이트 중 하나에서 **JavaScript 추가 (Aspose.PDF)**를 다운로드하세요:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)
+아래 언급된 소셜 코딩 사이트 중 하나에서 В **JavaScript 추가(Aspose.PDF)**В를 다운로드하세요.
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)
