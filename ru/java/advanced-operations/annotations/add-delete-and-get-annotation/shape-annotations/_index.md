@@ -335,3 +335,4 @@ public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
 - [Аннотации водяного знака](/pdf/ru/java/watermark-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
 
+

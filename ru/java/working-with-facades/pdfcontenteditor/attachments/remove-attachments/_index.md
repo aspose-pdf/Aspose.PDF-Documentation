@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать P
 ## Удалите все вложения
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
-2. Вызов `deleteAttachments()` удалить каждое встроенное вложение.
+2. Вызовите `deleteAttachments()` удалить каждое встроенное вложение.
 3. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -28,4 +28,5 @@ public static void removeAttachments(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

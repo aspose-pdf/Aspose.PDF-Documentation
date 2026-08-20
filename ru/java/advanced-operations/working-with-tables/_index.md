@@ -21,3 +21,4 @@ Aspose.PDF for Java поддерживает как создание табли�
 - [Манипулировать таблицами в существующих PDF-документах](/pdf/ru/java/manipulating-tables/)
 - [Удалить таблицы из существующих PDF-документов](/pdf/ru/java/removing-tables/)
 
+

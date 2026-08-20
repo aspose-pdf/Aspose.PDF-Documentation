@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать �
 ## Установите флаги отображения поля
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
-2. Вызов `setFieldAppearance(...)` для целевого поля и выбранного флага аннотации.
+2. Вызовите `setFieldAppearance(...)` для целевого поля и выбранного флага аннотации.
 3. Сохраните обновлённый документ.
 
 ```java
@@ -28,4 +28,5 @@ public static void setFieldAppearance(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

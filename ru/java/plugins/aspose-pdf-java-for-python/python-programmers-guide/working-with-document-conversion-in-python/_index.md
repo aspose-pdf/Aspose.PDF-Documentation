@@ -14,3 +14,4 @@ lastmod: "2026-08-19"
 - [Конвертировать PDF в формат SVG в Python](/pdf/ru/java/convert-pdf-to-svg-format-in-python/)
 - [Конвертировать файл SVG в формат PDF в Python](/pdf/ru/java/convert-svg-file-to-pdf-format-in-python/)
 
+

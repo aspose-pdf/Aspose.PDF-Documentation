@@ -13,7 +13,7 @@ Abstract: В этой статье показывается, как привяз
 ## Перечислить штампы на странице
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
-2. Вызов `getStamps(pageNumber)` получить штампы на целевой странице.
+2. Вызовите `getStamps(pageNumber)` получить штампы на целевой странице.
 3. Проверьте результат `StampInfo[]` коллекция.
 
 ```java
@@ -28,4 +28,5 @@ public static void listStamps(Path inputFile) {
     }
 }
 ```
+
 

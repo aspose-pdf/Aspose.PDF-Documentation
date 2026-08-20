@@ -21,7 +21,7 @@ Aspose.PDF for Java может экспортировать PDF‑докумен
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`EpubSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubsaveoptions/) и установить режим распознавания на `Flow`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF экспортируется как переливаемая разметка EPUB.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF экспортируется как переливаемая разметка EPUB.
 1. Сохраните преобразованный файл EPUB.
 
 ```java
@@ -41,7 +41,7 @@ public static void convertPdfToEpub(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`TeXSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texsaveoptions/) для сериализации TeX.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF выводится в виде разметки TeX.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF выводится в виде разметки TeX.
 1. Сохраните полученный файл TeX.
 
 ```java
@@ -59,7 +59,7 @@ public static void convertPdfToTex(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`TextDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/textdevice/) для извлечения текстового содержимого из страниц PDF.
-1. Вызов `device.process(document.getPages().get_Item(1), outputFile.toString())` записать первую страницу в виде простого текста.
+1. Вызовите `device.process(document.getPages().get_Item(1), outputFile.toString())` записать первую страницу в виде простого текста.
 1. Сохраните файл вывода текста.
 
 ```java
@@ -78,7 +78,7 @@ public static void convertPdfToTxt(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`XpsSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpssaveoptions/) и включить встроенные шрифты TrueType.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому PDF сериализуется как XPS с встроенными ресурсами шрифтов.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому PDF сериализуется как XPS с встроенными ресурсами шрифтов.
 1. Сохраните преобразованный файл XPS.
 
 ```java
@@ -98,7 +98,7 @@ public static void convertPdfToXps(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`MarkdownSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/markdownsaveoptions/) и настройте каталог ресурсов изображений, а также вывод HTML‑тега img.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF выводится как Markdown с внешними ресурсами изображений.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF выводится как Markdown с внешними ресурсами изображений.
 1. Сохраните сгенерированный файл Markdown.
 
 ```java
@@ -119,7 +119,7 @@ public static void convertPdfToMd(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Выбрать [`SaveFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/saveformat/) `MobiXml` в качестве целевого формата сериализации.
-1. Вызов `document.save(outputFile.toString(), SaveFormat.MobiXml)` поэтому PDF экспортируется как совместимый с Mobi XML.
+1. Вызовите `document.save(outputFile.toString(), SaveFormat.MobiXml)` поэтому PDF экспортируется как совместимый с Mobi XML.
 1. Сохраните преобразованный файл.
 
 ```java
@@ -130,4 +130,5 @@ public static void convertPdfToMobiXml(Path inputFile, Path outputFile) {
     System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
+
 

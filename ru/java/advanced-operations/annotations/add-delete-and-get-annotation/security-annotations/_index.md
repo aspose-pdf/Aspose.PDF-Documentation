@@ -53,7 +53,7 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Собрать аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
-1. Вызов `redact()` для каждой собранной аннотации сохранить обновлённый файл.
+1. Вызовите `redact()` для каждой собранной аннотации сохранить обновлённый файл.
 
 ```java
 public static void applyRedaction(Path inputFile, Path outputFile) {
@@ -110,4 +110,5 @@ public static void redactArea(Path inputFile, Path outputFile) {
 - [Текстовые аннотации](/pdf/ru/java/text-based-annotations/)
 - [Аннотации водяных знаков](/pdf/ru/java/watermark-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
+
 

@@ -20,7 +20,7 @@ Abstract: Узнайте, как разделить PDF с начала с по�
 ### Шаги
 
 1. Создайте `PdfFileEditor` экземпляр.
-2. Вызов `splitFromFirst` с исходным файлом, количеством страниц для сохранения и выходным файлом.
+2. Вызовите `splitFromFirst` с исходным файлом, количеством страниц для сохранения и выходным файлом.
 3. Сохраните новый PDF-документ.
 
 ```java
@@ -29,4 +29,5 @@ public static void splitPdfFromBeginning(Path inputFile, Path outputFile) {
     pdfFileEditor.splitFromFirst(inputFile.toString(), 3, outputFile.toString());
 }
 ```
+
 

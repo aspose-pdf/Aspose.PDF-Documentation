@@ -21,7 +21,7 @@ Aspose.PDF for Java поддерживает экспорт в HTML с вари�
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте по умолчанию [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) для стандартной сериализации HTML.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому содержимое страницы PDF экспортируется как HTML‑разметка.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержимое страницы PDF экспортируется как HTML‑разметка.
 1. Сохраните сгенерированный HTML‑вывод.
 
 ```java
@@ -40,7 +40,7 @@ public static void convertPdfToHtml(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить `setSpecialFolderForAllImages(...)` в отдельный каталог вывода изображений.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому растровые изображения выводятся как отдельные файлы ресурсов, а не только в виде встроенного вывода.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому растровые изображения выводятся как отдельные файлы ресурсов, а не только в виде встроенного вывода.
 1. Сохраните HTML‑output вместе с сгенерированными графическими ресурсами.
 
 ```java
@@ -60,7 +60,7 @@ public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включить `setSplitIntoPages(true)`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому каждая страница PDF записывается как отдельный HTML‑вывод.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому каждая страница PDF записывается как отдельный HTML‑вывод.
 1. Сохраните сгенерированные HTML‑файлы.
 
 ```java
@@ -80,7 +80,7 @@ public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить `setSpecialFolderForSvgImages(...)` во внешнюю директорию ресурсов SVG.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому векторная графика хранится вне основного HTML‑файла.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому векторная графика хранится вне основного HTML‑файла.
 1. Сохраните вывод HTML и ресурсы SVG.
 
 ```java
@@ -101,7 +101,7 @@ public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и настройте отдельную папку для ресурсов SVG.
 1. Включить `setCompressSvgGraphicsIfAny(true)` поэтому SVG‑ресурсы сжимаются при экспорте.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` и сохранить преобразованные HTML‑файлы.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить преобразованные HTML‑файлы.
 
 ```java
 public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) {
@@ -121,7 +121,7 @@ public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) 
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить режим сохранения растрового изображения в PNG фон страниц.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому содержание фона страницы выводится в виде HTML‑слоёв на основе PNG.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержание фона страницы выводится в виде HTML‑слоёв на основе PNG.
 1. Сохраните преобразованный HTML‑вывод.
 
 ```java
@@ -143,7 +143,7 @@ public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить режим генерации разметки на `WriteOnlyBodyContent`.
 1. Сохранять `setSplitIntoPages(true)` включено, когда вывод только тела должен оставаться разделённым по страницам.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` и сохранить вывод HTML.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить вывод HTML.
 
 ```java
 public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) {
@@ -164,7 +164,7 @@ public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) 
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включить сохранение прозрачного и затенённого текста.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому внешний вид текста, связанный с прозрачностью, сохраняется в HTML‑результате.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому внешний вид текста, связанный с прозрачностью, сохраняется в HTML‑результате.
 1. Сохраните преобразованный HTML‑вывод.
 
 ```java
@@ -185,7 +185,7 @@ public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включить `setConvertMarkedContentToLayers(true)`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` Итак, отмеченное PDF‑содержимое отображается в виде HTML‑слоев.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` Итак, отмеченное PDF‑содержимое отображается в виде HTML‑слоев.
 1. Сохраните экспортированные HTML‑файлы.
 
 ```java
@@ -198,4 +198,5 @@ public static void convertPdfToHtmlDocumentLayersRendering(Path inputFile, Path 
     System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
+
 

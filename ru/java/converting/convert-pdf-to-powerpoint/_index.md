@@ -21,7 +21,7 @@ Aspose.PDF for Java поддерживает экспорт страниц PDF �
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте по умолчанию [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) для редактируемого экспорта PowerPoint.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` так что страницы PDF сериализуются как `.pptx` презентация.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` так что страницы PDF сериализуются как `.pptx` презентация.
 1. Сохраните преобразованный файл PPTX.
 
 ```java
@@ -40,7 +40,7 @@ public static void convertPdfToPptx(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) и включить `setSlidesAsImages(true)`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому каждая страница PDF отображается как слайд, основанный на изображении, в презентации.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому каждая страница PDF отображается как слайд, основанный на изображении, в презентации.
 1. Сохраните сгенерированный файл PPTX.
 
 ```java
@@ -60,7 +60,7 @@ public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFil
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) и установить `setImageResolution(300)` для более высокой точности изображения слайда.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому растровое содержимое слайда генерируется с запрошенным разрешением.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому растровое содержимое слайда генерируется с запрошенным разрешением.
 1. Сохраните полученную презентацию.
 
 ```java
@@ -73,4 +73,5 @@ public static void convertPdfToPptxImageResolution(Path inputFile, Path outputFi
     System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
+
 

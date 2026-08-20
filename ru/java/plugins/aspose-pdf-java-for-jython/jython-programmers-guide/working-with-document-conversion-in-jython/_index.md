@@ -14,3 +14,4 @@ lastmod: "2026-08-19"
 - [Конвертировать PDF в формат SVG в Jython](/pdf/ru/java/convert-pdf-to-svg-format-in-jython/)
 - [Преобразовать файл SVG в формат PDF в Jython](/pdf/ru/java/convert-svg-file-to-pdf-format-in-jython/)
 
+

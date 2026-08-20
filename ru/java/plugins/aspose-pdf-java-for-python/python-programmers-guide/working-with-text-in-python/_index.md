@@ -13,3 +13,4 @@ lastmod: "2026-08-19"
 - [Добавление текста в существующий PDF-файл с помощью Python](/pdf/ru/java/add-text-to-an-existing-pdf-file-in-python/)
 - [Извлечение текста со всех страниц PDF-документа с помощью Python](/pdf/ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/)
 
+

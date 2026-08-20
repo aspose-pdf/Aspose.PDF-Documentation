@@ -67,3 +67,4 @@ public static void extractTextScaleFactor(Path inputFile, Path outputFile, doubl
 }
 ```
 
+

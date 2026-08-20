@@ -20,7 +20,7 @@ Aspose.PDF for Java может проверять и конвертироват�
 Используйте этот пример, когда стандартный PDF необходимо конвертировать в архивный документ, соответствующий требованиям PDF/A.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
-1. Вызов `document.convert(...)` с [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_1B` и [`ConvertErrorAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction/) `Delete`.
+1. Вызовите `document.convert(...)` с [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_1B` и [`ConvertErrorAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction/) `Delete`.
 1. Запишите журнал валидации в вспомогательный XML‑файл, чтобы проблемы соответствия фиксировались во время конвертации.
 1. Сохраните проверенный вывод PDF/A.
 
@@ -39,7 +39,7 @@ public static void convertPdfToPdfA(Path inputFile, Path outputFile) {
 
 1. Создайте [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) для [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_E_1` и желаемый путь к файлу журнала.
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
-1. Вызов `document.convert(options)` поэтому преобразование соответствия выполняется с подготовленным объектом параметров.
+1. Вызовите `document.convert(options)` поэтому преобразование соответствия выполняется с подготовленным объектом параметров.
 1. Сохраните полученный соответствующий PDF-файл.
 
 ```java
@@ -75,4 +75,5 @@ public static void convertPdfToPdfX(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

@@ -19,3 +19,4 @@ Aspose.PDF for Java предоставляет несколько рабочих
 - [Извлекать текст из выделений, аннотаций штампа и содержимого в надстрочном или нижстрочном виде](/pdf/ru/java/annotation-and-special-text/).
 - [Улучшить извлечение из многоколоночных макетов](/pdf/ru/java/text-extraction-from-multi-column-pdf/).
 
+

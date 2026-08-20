@@ -20,3 +20,4 @@ Aspose.PDF for Java поддерживает несколько моделей �
 - [Добавить штампы изображений](/java/image-stamps-in-pdf-page/)
 - [Добавить штампы текста](/java/text-stamps-in-the-pdf-file/)
 
+

@@ -19,3 +19,4 @@ lastmod: "2026-08-19"
 - [Установить срок действия PDF в PHP](/pdf/ru/java/set-pdf-expiration-in-php/)
 - [Установить информацию о PDF-файле в PHP](/pdf/ru/java/set-pdf-file-information-in-php/)
 
+

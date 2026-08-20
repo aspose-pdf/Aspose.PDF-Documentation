@@ -51,7 +51,7 @@ Abstract: В статье рассматриваются ограничения 
 
 {{% /alert %}}
 
-### Загрузка лицензии из файла
+### Загрузите лицензии из файла
 
 В этом примере **Aspose.PDF** попытается найти файл лицензии в папке, содержащей JAR‑файлы вашего приложения.
 
@@ -62,7 +62,7 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 license.setLicense("Aspose.Pdf.Java.lic");
 ```
 
-### Загрузка лицензии из объекта потока
+### Загрузите лицензии из объекта потока
 
 Следующий пример показывает, как загрузить лицензию из потока.
 
@@ -105,7 +105,7 @@ License lic = new License();
 System.out.println("License is set = " + lic.isLicensed());
 ```
 
-## Использование нескольких продуктов Aspose
+## Используйте нескольких продуктов Aspose
 
 Если вы используете несколько продуктов Aspose в вашем приложении, например Aspose.PDF и Aspose.Words, вот несколько полезных советов.
 
@@ -125,4 +125,5 @@ com.aspose.words.License licenseaw = new com.aspose.words.License();
 // Set the license
 licenseaw.setLicense("Aspose.Total.Java.lic");
 ```
+
 

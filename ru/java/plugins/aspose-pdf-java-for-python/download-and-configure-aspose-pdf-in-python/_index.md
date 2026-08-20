@@ -37,3 +37,4 @@ Please follow these simple stepsВ чтобы открыть и расшири�
 5. Клонировать [Примеры Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) из GitHub.
 6. Клонировать [Примеры Aspose.PDF Java for Python](http://asposepdfjavapython.codeplex.com/) из CodePlex.
 
+

@@ -22,3 +22,4 @@ Abstract: Данный раздел упорядочивает связанны�
 - [Добавление, удаление и получение аннотации](/pdf/ru/java/pdfannotationeditor-class/add-delete-and-get-annotation/) для групповых семейств аннотаций.
 - [Импорт и экспорт аннотаций](/pdf/ru/java/pdfannotationeditor-class/import-export-annotations/) для копирования аннотаций между PDF‑файлами.
 
+

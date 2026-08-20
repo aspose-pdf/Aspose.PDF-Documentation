@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать �
 ## Удалите поле
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
-2. Вызов `removeField(...)` для имени целевого поля.
+2. Вызовите `removeField(...)` для имени целевого поля.
 3. Сохраните обновлённый документ.
 
 ```java
@@ -28,4 +28,5 @@ public static void removeField(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

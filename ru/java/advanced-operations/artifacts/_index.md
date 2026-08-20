@@ -23,3 +23,4 @@ Abstract: В этой статье объясняется, как работат
 - [Управлять заголовками и нижними колонтитулами PDF](/pdf/ru/java/artifacts-header-footer/)
 - [Подсчитать артефакты](/pdf/ru/java/counting-artifacts/)
 
+

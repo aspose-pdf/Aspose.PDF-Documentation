@@ -19,3 +19,4 @@ lastmod: "2026-08-19"
 - [Разбить PDF‑файл на отдельные страницы в Jython](/pdf/ru/java/split-pdf-file-into-individual-pages-in-jython/)
 - [Обновить размеры страницы в Jython](/pdf/ru/java/update-page-dimensions-in-jython/)
 
+

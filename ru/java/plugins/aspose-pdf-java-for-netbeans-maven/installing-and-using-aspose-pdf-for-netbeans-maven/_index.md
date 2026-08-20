@@ -7,7 +7,7 @@ url: /ru/java/installing-and-using-aspose-pdf-for-netbeans-maven/
 description: Узнайте, как установить и использовать плагин Aspose.PDF for NetBeans Maven для создания и управления Java‑проектами с поддержкой PDF.
 lastmod: "2026-08-19"
 ---
-## Установка
+## Установите
 
 **Aspose.PDF Java for NetBeans (Maven)** плагин можно легко установить из доступной вкладки **Plugin** в диалоговом окне плагина.
 
@@ -17,7 +17,7 @@ lastmod: "2026-08-19"
 
 - Это добавляет **Aspose.PDF Maven Project** в мастер New Project и **Aspose.PDF Code Example** в мастер New File IDE NetBeans.
 
-## Использование
+## Используйте
 
 ### Aspose.PDF Maven Project (мастер)
 
@@ -57,4 +57,5 @@ lastmod: "2026-08-19"
 
  Просмотрите пример кода, скомпилируйте и запустите.
  Теперь вы можете протестировать другие примеры и начать создавать собственное приложение, используя [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx).
+
 

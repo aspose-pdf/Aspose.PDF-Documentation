@@ -22,7 +22,7 @@ Abstract: Узнайте, как вставлять страницы в PDF с �
 1. Создайте `PdfFileEditor` экземпляр.
 2. Выберите точку вставки в целевом документе.
 3. Выберите номера страниц для копирования из исходного документа.
-4. Вызов `insert` с целевым файлом, точкой вставки, исходным файлом, массивом страниц и файлом вывода.
+4. Вызовите `insert` с целевым файлом, точкой вставки, исходным файлом, массивом страниц и файлом вывода.
 5. Сохраните обновлённый PDF.
 
 ### Пример Java
@@ -33,4 +33,5 @@ public static void insertPagesIntoPdf(Path inputFile, Path sampleFile, Path outp
     pdfEditor.insert(inputFile.toString(), 2, sampleFile.toString(), new int[] {1, 2}, outputFile.toString());
 }
 ```
+
 

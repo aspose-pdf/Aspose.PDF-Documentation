@@ -45,7 +45,7 @@ public static void extractGraphicsElements(Path inputFile, Path outputFile) thro
 
 1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Получите цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) из документа.
-1. Вызов `page.trySaveVectorGraphics(outputFile.toString())` для экспорта векторного графического содержимого этой страницы непосредственно в SVG.
+1. Вызовите `page.trySaveVectorGraphics(outputFile.toString())` для экспорта векторного графического содержимого этой страницы непосредственно в SVG.
 
 ```java
 public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
@@ -134,4 +134,5 @@ public static void extractSingleVectorElement(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

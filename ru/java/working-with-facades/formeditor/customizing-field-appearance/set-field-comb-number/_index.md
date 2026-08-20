@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать �
 ## Установите число ячеек поля
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
-2. Вызов `setFieldCombNumber(...)` для целевого поля и значения comb.
+2. Вызовите `setFieldCombNumber(...)` для целевого поля и значения comb.
 3. Сохраните обновленный документ.
 
 ```java
@@ -28,4 +28,5 @@ public static void setFieldCombNumber(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

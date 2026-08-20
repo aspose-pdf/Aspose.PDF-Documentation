@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать P
 ## Добавьте действие открытия документа
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
-2. Вызов `addDocumentAdditionalAction(...)` с `DOCUMENT_OPEN` событие и текст действия JavaScript.
+2. Вызовите `addDocumentAdditionalAction(...)` с `DOCUMENT_OPEN` событие и текст действия JavaScript.
 3. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -28,4 +28,5 @@ public static void addDocumentAction(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

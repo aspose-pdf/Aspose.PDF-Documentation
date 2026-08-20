@@ -21,7 +21,7 @@ Aspose.PDF for Java может экспортировать содержимое
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) и установить его формат на `XMLSpreadSheet2003`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` Поэтому загруженный PDF сериализуется в схеме XML Excel 2003.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` Поэтому загруженный PDF сериализуется в схеме XML Excel 2003.
 1. Сохраните преобразованный выходной файл.
 
 ```java
@@ -41,7 +41,7 @@ public static void convertPdfToExcelSpreadSheet2003(Path inputFile, Path outputF
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) и установить его формат на `XLSX`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому макет PDF экспортируется как рабочая книга Office Open XML.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому макет PDF экспортируется как рабочая книга Office Open XML.
 1. Сохраните файл выходной таблицы.
 
 ```java
@@ -62,7 +62,7 @@ public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) для `XLSX` вывод.
 1. Включить `setInsertBlankColumnAtFirst(true)` когда нужен дополнительный ведущий столбец для улучшения макета листа, полученного из PDF.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` и записать преобразованный файл XLSX.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` и записать преобразованный файл XLSX.
 
 ```java
 public static void convertPdfToExcel2007ControlColumn(Path inputFile, Path outputFile) {
@@ -83,7 +83,7 @@ public static void convertPdfToExcel2007ControlColumn(Path inputFile, Path outpu
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) для `XLSX` экспорт.
 1. Включить `setMinimizeTheNumberOfWorksheets(true)` поэтому несколько страниц PDF объединяются в меньшее количество листов.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` и сохранить файл вывода XLSX.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить файл вывода XLSX.
 
 ```java
 public static void convertPdfToExcel2007SingleExcelWorksheet(Path inputFile, Path outputFile) {
@@ -103,7 +103,7 @@ public static void convertPdfToExcel2007SingleExcelWorksheet(Path inputFile, Pat
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) и установите формат `XLSM`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF экспортируется в контейнер рабочей книги, поддерживающей макросы.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF экспортируется в контейнер рабочей книги, поддерживающей макросы.
 1. Сохраните файл XLSM.
 
 ```java
@@ -123,7 +123,7 @@ public static void convertPdfToExcel2007Macro(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) и установите формат `CSV`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF преобразуется в плоский текст, разделённый запятыми.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF преобразуется в плоский текст, разделённый запятыми.
 1. Сохраните сгенерированный файл CSV.
 
 ```java
@@ -143,7 +143,7 @@ public static void convertPdfToExcel2007Csv(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) и установите формат `ODS`.
-1. Вызов `document.save(outputFile.toString(), saveOptions)` поэтому PDF экспортируется в формате электронных таблиц OpenDocument.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому PDF экспортируется в формате электронных таблиц OpenDocument.
 1. Сохраните преобразованный файл ODS.
 
 ```java
@@ -156,4 +156,5 @@ public static void convertPdfToOds(Path inputFile, Path outputFile) {
     System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
+
 

@@ -26,3 +26,4 @@ Aspose.PDF for Java включает API уровня страниц для из
 - [Повернуть страницы](/pdf/ru/java/rotate-pages/)
 - [Наложение штампа](/pdf/ru/java/stamping/)
 
+

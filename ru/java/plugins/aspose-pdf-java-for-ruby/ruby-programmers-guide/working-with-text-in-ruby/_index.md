@@ -13,3 +13,4 @@ lastmod: "2026-08-19"
 - [Добавить текст в существующий файл PDF с использованием Ruby](/pdf/ru/java/add-text-to-an-existing-pdf-file-in-ruby/)
 - [Извлечь текст со всех страниц документа PDF с использованием Ruby](/pdf/ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/)
 
+

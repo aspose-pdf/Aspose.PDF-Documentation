@@ -16,3 +16,4 @@ lastmod: "2026-08-19"
 - [Конвертировать PDF в формат SVG в Ruby](/pdf/ru/java/convert-pdf-to-svg-format-in-ruby/)
 - [Конвертировать файл SVG в формат PDF в Ruby](/pdf/ru/java/convert-svg-file-to-pdf-format-in-ruby/)
 
+

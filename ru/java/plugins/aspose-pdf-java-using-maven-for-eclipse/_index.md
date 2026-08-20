@@ -58,7 +58,7 @@ Aspose.PDF for Java предлагает невероятно обширный �
 - Eclipse Mars.1 (4.5.1) - Рекомендуется
 - Eclipse Juno или новее.
 
-## Загрузка
+## Загрузите
 
 ### Скачать Eclipse IDE
 
@@ -73,15 +73,15 @@ Aspose.PDF for Java предлагает невероятно обширный �
 
 Ниже приведены три рекомендуемых метода успешного скачивания и установки плагина Aspose.PDF Java (Maven) для Eclipse:
 
-- Установка перетаскиванием из [Eclipse Marketplace](https://marketplace.eclipse.org/content/asposepdf-java-maven-eclipse) в ваш рабочий каталог Eclipse.
+- Установите перетаскиванием из [Eclipse Marketplace](https://marketplace.eclipse.org/content/asposepdf-java-maven-eclipse) в ваш рабочий каталог Eclipse.
 - Или перейдите к **Help** > **Install New Software...** > Введите следующий URL сайта обновлений в **Work with**
 Затем выберите "Aspose.PDF Java (Maven) for Eclipse" и **Finish**. Примите лицензионное соглашение и установите плагин.
 
-## Установка
+## Установите
 
 Установка Aspose.PDF Java (Maven) для Eclipse
 
-## Использование плагина
+## Используйте плагина
 
 Использование Aspose.PDF Java (Maven) для Eclipse
 
@@ -128,4 +128,5 @@ Aspose.PDF Java (Maven) for Eclipse является открытым исход
 1. Выберите проект Eclipse, который вы хотите импортировать
 1. Нажмите Finish
 1. Код плагина Aspose.PDF Java for Eclipse теперь готов к улучшению.
+
 

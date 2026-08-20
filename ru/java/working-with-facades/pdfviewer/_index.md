@@ -23,7 +23,7 @@ Abstract: В этом разделе объясняется, как исполь
 
 1. Создайте и настроить `PdfViewer` экземпляр.
 2. Привяжите исходный PDF к `bindPdf`.
-3. Вызов `decodeAllPages()` отобразить документ в `BufferedImage` массив.
+3. Вызовите `decodeAllPages()` отобразить документ в `BufferedImage` массив.
 4. Сохраните каждую декодированную страницу в выходной файл изображения.
 5. Закройте связанный PDF‑файл.
 
@@ -52,7 +52,7 @@ public static void decodeAllPages(Path inputFile, Path outputDir) throws Excepti
 
 1. Создайте и настроить `PdfViewer` экземпляр.
 2. Привяжите исходный PDF.
-3. Вызов `decodePage()` для страницы, которую вы хотите отобразить.
+3. Вызовите `decodePage()` для страницы, которую вы хотите отобразить.
 4. Сохраните декодированную страницу в выходной файл изображения.
 5. Закройте просмотрщик.
 
@@ -129,4 +129,5 @@ public static void inspectBoundViewerSettings(Path inputFile) {
     }
 }
 ```
+
 

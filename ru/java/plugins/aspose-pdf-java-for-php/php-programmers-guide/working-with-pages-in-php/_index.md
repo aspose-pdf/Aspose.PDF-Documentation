@@ -19,3 +19,4 @@ lastmod: "2026-08-19"
 - [Разделить PDF-файл на отдельные страницы в PHP](/pdf/ru/java/split-pdf-file-into-individual-pages-in-php/)
 - [Обновить размеры страницы в PHP](/pdf/ru/java/update-page-dimensions-in-php/)
 
+

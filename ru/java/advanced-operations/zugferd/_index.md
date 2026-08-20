@@ -17,3 +17,4 @@ ZUGFeRD сочетает человекочитаемый PDF‑счёт с ст
 
 - [Прикрепите данные счета ZUGFeRD к PDF](/pdf/ru/java/attach-zugferd/)
 
+

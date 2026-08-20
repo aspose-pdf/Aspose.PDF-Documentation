@@ -23,3 +23,4 @@ Aspose.PDF for Java предоставляет `Graph` контейнер для
 - [Добавить эллипсы](/pdf/ru/java/add-ellipse/)
 - [Проверить границы фигуры](/java/aspose-pdf-drawing-graph-shapes-bounds-check/)
 
+

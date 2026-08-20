@@ -19,3 +19,4 @@ lastmod: "2026-08-19"
 - [Установить срок действия PDF в Python](/pdf/ru/java/set-pdf-expiration-in-python/)
 - [Установить информацию о PDF-файле в Python](/pdf/ru/java/set-pdf-file-information-in-python/)
 
+

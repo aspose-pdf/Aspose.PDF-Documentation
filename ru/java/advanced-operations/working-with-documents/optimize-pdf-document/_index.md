@@ -20,7 +20,7 @@ Aspose.PDF for Java предоставляет функции оптимизац
 Используйте этот пример, когда вы хотите, чтобы Aspose.PDF применил встроенную процедуру оптимизации всего документа.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Вызов `optimize()` на документе.
+1. Вызовите `optimize()` на документе.
 1. Сохраните оптимизированный файл и сравните размеры оригинального и полученного.
 
 ```java
@@ -206,7 +206,7 @@ public static void flattenForms(Path inputFile, Path outputFile) throws Exceptio
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Перебрать каждый [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документе.
-1. Вызов `makeGrayscale()` на каждой странице и сохранить выходной файл.
+1. Вызовите `makeGrayscale()` на каждой странице и сохранить выходной файл.
 
 ```java
 public static void convertPdfFromRgbColorspaceToGrayscale(Path inputFile, Path outputFile) {
@@ -252,4 +252,5 @@ private static void printFileSizes(Path inputFile, Path outputFile) throws Excep
             + ". Reduced file size: " + Files.size(outputFile));
 }
 ```
+
 

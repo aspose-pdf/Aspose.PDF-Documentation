@@ -133,7 +133,7 @@ public static void extractTableFromSpecificArea(Path inputFile) {
 1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) для экспорта.
 1. Установите формат вывода Excel в `XLSX` поэтому обнаруженный макет таблицы записывается как рабочая книга Excel.
-1. Вызов `document.save(outputFile.toString(), excelSave)` для экспорта документа в формат Excel.
+1. Вызовите `document.save(outputFile.toString(), excelSave)` для экспорта документа в формат Excel.
 
 ```java
 public static void exportTablesToExcel(Path inputFile, Path outputFile) {
@@ -144,4 +144,5 @@ public static void exportTablesToExcel(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

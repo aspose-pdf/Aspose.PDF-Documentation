@@ -176,3 +176,4 @@ public static void addBackgroundImageStamp(Path inputFile, Path imageFile, Path 
 }
 ```
 
+

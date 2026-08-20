@@ -21,7 +21,7 @@ Abstract: Узнайте, как очистить метаданные PDF с п
 ### Шаги
 
 1. Создайте `PdfFileInfo` объект для входного PDF.
-2. Вызов `clearInfo()` удалить метаданные документа.
+2. Вызовите `clearInfo()` удалить метаданные документа.
 3. Сохраните результат в новый файл с `save()`.
 4. Закройте `PdfFileInfo` экземпляр.
 
@@ -35,4 +35,5 @@ public static void clearPdfMetadata(Path inputFile, Path outputFile) {
     pdfInfo.close();
 }
 ```
+
 

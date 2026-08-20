@@ -23,7 +23,7 @@ Aspose.PDF является Java‑компонентом, созданным д
 
 Aspose.PDF for Java предоставляет следующие ключевые возможности:
 
-- Конвертировать документ из HTML, Doc/Docx, Pptx, Markdown, Jpeg и других форматов.
+- Конвертирование документов из HTML, Doc/Docx, Pptx, Markdown, Jpeg и других форматов.
 - Поддерживает работу с различными AI‑провайдерами, предоставляя возможность загружать данные из PDF‑документов.
 - Поддерживает создание PDF‑документов как через API, так и из XML‑файлов.
 - Отличные функции безопасности на основе сертификатов и защиты паролем для создания безопасных PDF‑документов.
@@ -50,7 +50,7 @@ Aspose.PDF for Java предоставляет следующие ключевы
 
 - [Онлайн-документация Aspose.PDF for Java](/pdf/ru/java/)
 - [Функции Aspose.PDF for Java](/pdf/ru/java/key-features/)
-- [Aspose.PDF for JavaВ Примечания к выпуску](https://releases.aspose.com/pdf/java/release-notes/)
+- [Aspose.PDF for Java Примечания к выпуску](https://releases.aspose.com/pdf/java/release-notes/)
 - [Aspose.PDF for Java Страница продукта](https://products.aspose.com/pdf/java)
 - [Aspose.PDF for Java Репозиторий Maven](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
 - [Скачать Aspose.PDF for Java](https://releases.aspose.com/pdf/java/)
@@ -59,4 +59,5 @@ Aspose.PDF for Java предоставляет следующие ключевы
 - [Скачать примеры в репозитории GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 - [Aspose.PDF for Java бесплатный форум поддержки](https://forum.aspose.com/c/pdf)
 - [Aspose.PDF for Java платный справочный центр поддержки](https://helpdesk.aspose.com/)
+
 

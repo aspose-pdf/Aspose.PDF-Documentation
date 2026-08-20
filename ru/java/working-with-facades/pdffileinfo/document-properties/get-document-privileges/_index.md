@@ -21,7 +21,7 @@ Abstract: Узнайте, как получать привилегии доку�
 ### Шаги
 
 1. Создайте `PdfFileInfo` объект для входного PDF.
-2. Вызов `getDocumentPrivilege()` для получения набора привилегий.
+2. Вызовите `getDocumentPrivilege()` для получения набора привилегий.
 3. Прочитайте соответствующие булевы флаги из возвращённого `DocumentPrivilege` объект.
 4. Закройте `PdfFileInfo` экземпляр после завершения.
 
@@ -44,4 +44,5 @@ public static void getDocumentPrivileges(Path inputFile) {
     pdfInfo.close();
 }
 ```
+
 

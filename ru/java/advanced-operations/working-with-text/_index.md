@@ -23,3 +23,4 @@ Aspose.PDF for Java предоставляет текстовые API для г�
 - [Искать и извлекать текст](/pdf/ru/java/search-and-get-text-from-pdf/)
 - [Форматировать текст внутри PDF](/pdf/ru/java/text-formatting-inside-pdf/)
 
+

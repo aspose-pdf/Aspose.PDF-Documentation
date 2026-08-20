@@ -13,3 +13,4 @@ lastmod: "2026-08-19"
 - [Добавить текст в существующий PDF‑файл в Jython](/pdf/ru/java/add-text-to-an-existing-pdf-file-in-jython/)
 - [Извлечь текст со всех страниц PDF‑документа в Jython](/pdf/ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/)
 
+

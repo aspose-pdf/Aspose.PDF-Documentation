@@ -101,3 +101,4 @@ public static void watermarkDelete(Path inputFile, Path outputFile) {
 - [Текстовые аннотации](/pdf/ru/java/text-based-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
 
+

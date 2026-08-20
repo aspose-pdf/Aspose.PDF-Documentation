@@ -14,3 +14,4 @@ lastmod: "2026-08-19"
 - [Работа со страницами в Python](/pdf/ru/java/working-with-pages-in-python/)
 - [Работа с текстом в Python](/pdf/ru/java/working-with-text-in-python/)
 
+

@@ -172,7 +172,7 @@ public static void textStrikeoutAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## Добавление, получение и удаление волнистых аннотаций
+## Добавьте, получение и удаление волнистых аннотаций
 
 Эти примеры работают с волнистой разметкой, используемой для выделения текста во время рецензии.
 
@@ -380,7 +380,7 @@ public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Подчёркнутая аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) на страницу.
-1. Вызов `flatten()` на аннотации и сохраните выходной файл.
+1. Вызовите `flatten()` на аннотации и сохраните выходной файл.
 
 ```java
 public static void textUnderlineFlattenAdd(Path inputFile, Path outputFile) {
@@ -409,4 +409,5 @@ public static void textUnderlineFlattenAdd(Path inputFile, Path outputFile) {
 - [Аннотации фигур](/pdf/ru/java/shape-annotations/)
 - [Аннотации водяного знака](/pdf/ru/java/watermark-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
+
 

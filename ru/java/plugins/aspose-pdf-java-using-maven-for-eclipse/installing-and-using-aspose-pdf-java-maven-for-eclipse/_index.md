@@ -7,7 +7,7 @@ url: /ru/java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
 description: Узнайте, как установить и настроить Aspose.PDF for Java с помощью Maven в Eclipse, обеспечивая беспроблемную работу с PDF в Java‑проектах.
 lastmod: "2026-08-19"
 ---
-## Установка
+## Установите
 
 **Aspose.PDF Java (Maven) for Eclipse** плагин можно легко установить из доступной вкладки **Plugin** в диалоговом окне Plugin.
 
@@ -17,7 +17,7 @@ lastmod: "2026-08-19"
 
 - Это добавляет **Aspose.PDF Maven Project** в мастер New Project и **Aspose.PDF Code Example** в мастер New File IDE Eclipse.
 
-## Использование
+## Используйте
 
 ### Aspose.PDF Maven Project (мастер)
 
@@ -66,4 +66,5 @@ lastmod: "2026-08-19"
 1. Это скопирует выбранные файлы Java категории **Code Examples** в проект в пакет **com.aspose.pdf.examples**. Кроме того, все необходимые ресурсы, требуемые примерами кода, будут скопированы в папку **src/main/resources**.
 1. Изучите пример кода, скомпилируйте и запустите.
 1. Теперь вы можете протестировать другие примеры и начать создавать собственное приложение, используя [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx)
+
 

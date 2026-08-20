@@ -22,7 +22,7 @@ Abstract: Узнайте, как расшифровать PDF с помощью 
 
 1. Создайте `PdfFileSecurity` экземпляр.
 2. Связать зашифрованный PDF с `bindPdf`.
-3. Вызов `decryptFile` или `tryDecryptFile` с паролем владельца.
+3. Вызовите `decryptFile` или `tryDecryptFile` с паролем владельца.
 4. Сохраните результат, если расшифровка удалась.
 5. Закройте объект безопасности.
 
@@ -48,4 +48,5 @@ public static void tryDecryptPdfWithoutException(Path inputFile, Path outputFile
     fileSecurity.close();
 }
 ```
+
 

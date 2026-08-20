@@ -21,7 +21,7 @@ Abstract: Узнайте, как объединять два PDF‑файла с
 
 1. Создайте `PdfFileEditor` экземпляр.
 2. Передайте два пути входных файлов в виде массива строк.
-3. Вызов `concatenate` с массивом и путём к файлу вывода.
+3. Вызовите `concatenate` с массивом и путём к файлу вывода.
 4. Сохраните объединённый PDF.
 
 ```java
@@ -30,4 +30,5 @@ public static void mergePdfDocuments(Path firstInputFile, Path secondInputFile, 
     pdfEditor.concatenate(new String[] {firstInputFile.toString(), secondInputFile.toString()}, outputFile.toString());
 }
 ```
+
 

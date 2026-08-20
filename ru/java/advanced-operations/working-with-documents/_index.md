@@ -22,3 +22,4 @@ Aspose.PDF for Java предоставляет API уровня документ
 - [Оптимизировать PDF-файлы](/pdf/ru/java/optimize-pdf/)
 - [Разделять PDF-файлы](/pdf/ru/java/split-pdf-document/)
 
+

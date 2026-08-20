@@ -15,3 +15,4 @@ Abstract: Этот раздел охватывает рабочие процес
 - `addRubberStamp(...)`
 - `listStamps(...)`
 
+

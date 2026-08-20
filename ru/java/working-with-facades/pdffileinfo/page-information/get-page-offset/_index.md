@@ -21,7 +21,7 @@ Abstract: Узнайте, как получить смещения страни�
 ### Шаги
 
 1. Создайте `PdfFileInfo` объект для входного PDF.
-2. Вызов `getPageXOffset` и `getPageYOffset` для целевой страницы.
+2. Вызовите `getPageXOffset` и `getPageYOffset` для целевой страницы.
 3. Преобразуйте значения в пунктах в дюймы, разделив на `72.0`.
 4. Используйте или выведите преобразованные значения.
 5. Закрыть `PdfFileInfo` экземпляр.
@@ -36,4 +36,5 @@ public static void getPageOffsets(Path inputFile) {
     pdfInfo.close();
 }
 ```
+
 

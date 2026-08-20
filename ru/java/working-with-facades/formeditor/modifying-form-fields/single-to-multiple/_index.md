@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать �
 ## Преобразуйте однострочное поле в несколько строк
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
-2. Вызов `single2Multiple(...)` для имени целевого поля.
+2. Вызовите `single2Multiple(...)` для имени целевого поля.
 3. Сохраните обновлённый документ.
 
 ```java
@@ -28,4 +28,5 @@ public static void singleToMultiple(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

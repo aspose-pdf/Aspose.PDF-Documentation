@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-## Извлечение текста из прямоугольного региона страницы
+## Извлеките текста из прямоугольного региона страницы
 
 использовать `TextSearchOptions` с `Rectangle` ограничить извлечение определённой областью на странице.
 
@@ -78,4 +78,5 @@ public static void extractParagraphsWithGeometry(Path inputFile, Path outputFile
     }
 }
 ```
+
 

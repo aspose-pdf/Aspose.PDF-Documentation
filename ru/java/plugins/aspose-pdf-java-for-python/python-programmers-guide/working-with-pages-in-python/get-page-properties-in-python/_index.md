@@ -38,3 +38,4 @@ Download **Получить свойства страницы (Aspose.PDF)** �
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)
 
+

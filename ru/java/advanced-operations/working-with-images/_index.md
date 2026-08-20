@@ -21,3 +21,4 @@ Aspose.PDF for Java предоставляет как высокоуровнев
 - [Заменить изображения в PDF](/pdf/ru/java/replace-image-in-existing-pdf-file/)
 - [Поиск и просмотр изображений в PDF](/pdf/ru/java/search-and-get-images-from-pdf-document/)
 
+

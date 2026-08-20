@@ -28,3 +28,4 @@ public static void deleteImage(Path inputFile, Path outputFile) {
 }
 ```
 
+

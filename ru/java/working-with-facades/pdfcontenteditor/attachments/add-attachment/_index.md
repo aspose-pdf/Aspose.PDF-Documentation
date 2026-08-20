@@ -14,7 +14,7 @@ Abstract: В этой статье показано, как привязать P
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
 2. Откройте файл вложения как поток ввода.
-3. Вызов `addDocumentAttachment(...)` с потоком, именем файла и описанием.
+3. Вызовите `addDocumentAttachment(...)` с потоком, именем файла и описанием.
 4. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -29,4 +29,5 @@ public static void addAttachment(Path inputFile, Path attachmentFile, Path outpu
     }
 }
 ```
+
 

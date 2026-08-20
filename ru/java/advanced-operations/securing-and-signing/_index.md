@@ -20,3 +20,4 @@ Aspose.PDF for Java включает фасадные API как для цифр
 - [Установить привилегии, зашифровать и расшифровать PDF-файлы](/pdf/ru/java/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Заметки о подписи смарт-картой](/pdf/ru/java/sign-pdf-document-from-smart-card/)
 
+

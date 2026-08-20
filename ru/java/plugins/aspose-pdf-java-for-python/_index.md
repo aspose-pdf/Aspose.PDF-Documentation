@@ -46,3 +46,4 @@ Aspose.PDF for Java поддерживает обработку Word (DOC, DOCX,
 - Python 2.7.x.x
 - Python 3.x.x.x
 
+

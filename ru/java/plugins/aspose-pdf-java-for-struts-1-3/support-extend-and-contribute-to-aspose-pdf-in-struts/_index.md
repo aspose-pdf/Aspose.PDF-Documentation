@@ -32,3 +32,4 @@ Aspose.PDF Java for Struts 1.3 является открытым исходны�
 - [CodePlex](https://asposepdfforstruts.codeplex.com)
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)
 
+

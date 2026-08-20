@@ -22,3 +22,4 @@ lastmod: "2026-08-19"
 - [Установить срок действия PDF в Ruby](/pdf/ru/java/set-pdf-expiration-in-ruby/)
 - [Установить информацию о файле PDF в Ruby](/pdf/ru/java/set-pdf-file-information-in-ruby/)
 
+

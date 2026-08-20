@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать �
 ## Удалите действие поля
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
-2. Вызов `removeFieldAction(...)` для целевого поля.
+2. Вызовите `removeFieldAction(...)` для целевого поля.
 3. Сохраните обновлённый документ.
 
 ```java
@@ -28,4 +28,5 @@ public static void removeFieldAction(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

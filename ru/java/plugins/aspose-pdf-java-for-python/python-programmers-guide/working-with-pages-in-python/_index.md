@@ -19,3 +19,4 @@ lastmod: "2026-08-19"
 - [Разделить PDF‑файл на отдельные страницы в Python](/pdf/ru/java/split-pdf-file-into-individual-pages-in-python/)
 - [Обновить размеры страницы в Python](/pdf/ru/java/update-page-dimensions-in-python/)
 
+

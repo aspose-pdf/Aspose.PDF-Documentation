@@ -21,7 +21,7 @@ Abstract: Узнайте, как получить версию PDF с помощ
 ### Шаги
 
 1. Создайте `PdfFileInfo` объект для PDF‑файла.
-2. Вызов `getPdfVersion()` для получения сообщённой версии.
+2. Вызовите `getPdfVersion()` для получения сообщённой версии.
 3. Используйте или выведите значение версии.
 4. Закрыть `PdfFileInfo` экземпляр.
 
@@ -35,4 +35,5 @@ public static void getPdfVersion(Path inputFile) {
     pdfInfo.close();
 }
 ```
+
 

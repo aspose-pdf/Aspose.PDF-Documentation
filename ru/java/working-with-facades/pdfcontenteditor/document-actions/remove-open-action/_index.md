@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать P
 ## Удалите действие открытия документа
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
-2. Вызов `removeDocumentOpenAction()`.
+2. Вызовите `removeDocumentOpenAction()`.
 3. Сохраните обновлённый PDF документ.
 
 ```java
@@ -28,4 +28,5 @@ public static void removeOpenAction(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

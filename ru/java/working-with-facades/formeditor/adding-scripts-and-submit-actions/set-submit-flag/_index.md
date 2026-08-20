@@ -26,3 +26,4 @@ editor.setSubmitFlag("Script_Demo_Button", SubmitFormFlag.Xfdf);
 
 Используйте этот комбинированный пример в качестве Java‑workflow с поддержкой источника для настройки флага отправки в этом репозитории.
 
+

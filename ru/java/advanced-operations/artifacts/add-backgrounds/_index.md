@@ -100,3 +100,4 @@ public static void removeBackground(Path inputFile, Path outputFile) {
 }
 ```
 
+

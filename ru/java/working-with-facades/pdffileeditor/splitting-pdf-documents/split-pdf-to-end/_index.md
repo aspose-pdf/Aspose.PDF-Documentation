@@ -20,7 +20,7 @@ Abstract: Узнайте, как разделить PDF до конца с по�
 ### Шаги
 
 1. Создайте `PdfFileEditor` экземпляр.
-2. Вызов `splitToEnd` с исходным файлом, номером начальной страницы и файлом вывода.
+2. Вызовите `splitToEnd` с исходным файлом, номером начальной страницы и файлом вывода.
 3. Сохраните полученный PDF‑документ.
 
 ```java
@@ -29,4 +29,5 @@ public static void splitPdfToEnd(Path inputFile, Path outputFile) {
     pdfFileEditor.splitToEnd(inputFile.toString(), 2, outputFile.toString());
 }
 ```
+
 

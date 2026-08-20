@@ -21,7 +21,7 @@ Abstract: Узнайте, как извлечь страницы из PDF с п�
 
 1. Создайте `PdfFileEditor` экземпляр.
 2. Определите номера страниц для извлечения.
-3. Вызов `extract` с исходным файлом, массивом страниц и выходным файлом.
+3. Вызовите `extract` с исходным файлом, массивом страниц и выходным файлом.
 4. Сохраните извлечённые страницы как новый PDF.
 
 ### Пример на Java
@@ -32,4 +32,5 @@ public static void extractPagesFromPdf(Path inputFile, Path outputFile) {
     pdfEditor.extract(inputFile.toString(), new int[] {1, 4, 3}, outputFile.toString());
 }
 ```
+
 

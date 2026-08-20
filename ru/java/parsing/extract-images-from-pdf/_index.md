@@ -18,7 +18,7 @@ Abstract: В этой статье объясняется, как извлека
 1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр и откройте поток вывода для извлечённого файла изображения.
 1. Получите целевой [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) из документа и получить к нему доступ `Resources.Images` коллекция.
 1. Получите требуемый [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) объект из этой коллекции изображений по индексу.
-1. Вызов `image.save(outputImage)` записать извлечённые байты изображения в целевой поток.
+1. Вызовите `image.save(outputImage)` записать извлечённые байты изображения в целевой поток.
 
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {
@@ -29,4 +29,5 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
     }
 }
 ```
+
 

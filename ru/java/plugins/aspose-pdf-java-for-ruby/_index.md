@@ -58,9 +58,9 @@ GitHub
 
 - [Aspose.PDF Java для Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
 
-## Установка и использование
+## Установите и использование
 
-### Установка
+### Установите
 
 Установить Aspose.PDF Java for Ruby gem очень просто и легко, пожалуйста, следуйте этим простым шагам:
 
@@ -76,7 +76,7 @@ GitHub
    <https://downloads.aspose.com/pdf/java>
 1. Создайте папку "jars" в корне гем‑пакета Aspose.PDF Java for Ruby и скопируйте загруженный компонент туда.
 
-### Использование
+### Используйте
 
 Включите необходимые файлы для работы с примером helloworld.
 
@@ -161,4 +161,5 @@ Aspose.PDF Java for Ruby является open source, и его исходны�
     - [Конвертировать PDF в формат SVG в Ruby](/pdf/ru/java/convert-pdf-to-svg-format-in-ruby/)
     - [Конвертировать SVG‑файл в формат PDF в Ruby](/pdf/ru/java/convert-svg-file-to-pdf-format-in-ruby/)
 - [Поддержка, расширение и вклад в Aspose.Pdf на Ruby](/pdf/ru/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/)
+
 

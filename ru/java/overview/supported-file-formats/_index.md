@@ -44,3 +44,4 @@ Abstract: Эта статья предоставляет подробную та
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Сохраняет документ как одностраничное или многостраничное изображение TIFF|В |{{< emoticons/tick >}}|В |
 |[Text](https://docs.fileformat.com/word-processing/txt/)|Сохранить документ в текстовом формате|В |{{< emoticons/tick >}}|В |
 
+

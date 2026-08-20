@@ -15,7 +15,7 @@ Abstract: В этой статье показано, как привязать P
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
 2. Создайте и настроить `TextState` с требуемым цветом и размером шрифта.
 3. Установите область замены текста на `ReplaceAll`.
-4. Вызов `replaceText(...)` с текстом поиска, текстом замены и настроенными `TextState`.
+4. Вызовите `replaceText(...)` с текстом поиска, текстом замены и настроенными `TextState`.
 5. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -34,4 +34,5 @@ public static void replaceTextWithState(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

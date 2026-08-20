@@ -21,7 +21,7 @@ Abstract: Узнайте, как извлечь информацию о стра
 ### Шаги
 
 1. Создайте `PdfFileInfo` объект для исходного PDF.
-2. Вызов `getPageWidth`, `getPageHeight`, и `getPageRotation` для страницы, которую вы хотите проверить.
+2. Вызовите `getPageWidth`, `getPageHeight`, и `getPageRotation` для страницы, которую вы хотите проверить.
 3. Используйте или выведите полученные значения.
 4. Закрыть `PdfFileInfo` экземпляр.
 
@@ -36,4 +36,5 @@ public static void getPageInformation(Path inputFile) {
     pdfInfo.close();
 }
 ```
+
 

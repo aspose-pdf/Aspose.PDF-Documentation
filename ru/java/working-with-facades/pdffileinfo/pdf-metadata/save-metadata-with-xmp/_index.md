@@ -22,7 +22,7 @@ Abstract: Узнайте, как сохранить метаданные PDF с 
 
 1. Создайте `PdfFileInfo` объект для исходного PDF.
 2. Установите поля метаданных, которые вы хотите обновить, такие как тема, заголовок, ключевые слова и создатель.
-3. Вызов `saveNewInfoWithXmp()` с путем к выходному файлу.
+3. Вызовите `saveNewInfoWithXmp()` с путем к выходному файлу.
 4. Закрыть `PdfFileInfo` экземпляр.
 
 ### Пример на Java
@@ -38,4 +38,5 @@ public static void saveInfoWithXmp(Path inputFile, Path outputFile) {
     pdfInfo.close();
 }
 ```
+
 

@@ -19,3 +19,4 @@ lastmod: "2026-08-19"
 - [Разбить PDF‑файл на отдельные страницы в Ruby](/pdf/ru/java/split-pdf-file-into-individual-pages-in-ruby/)
 - [Обновить размеры страницы в Ruby](/pdf/ru/java/update-page-dimensions-in-ruby/)
 
+

@@ -21,7 +21,7 @@ Abstract: Узнайте, как добавить поля к выбранным
 
 1. Создайте `PdfFileEditor` экземпляр.
 2. Выберите номера страниц, которым следует добавить новые отступы.
-3. Вызов `addMargins` с входным файлом, выходным файлом, списком страниц и значениями полей.
+3. Вызовите `addMargins` с входным файлом, выходным файлом, списком страниц и значениями полей.
 4. Сохраните обновлённый PDF.
 
 ### Пример на Java
@@ -32,4 +32,5 @@ public static void addMarginsToPdfPages(Path inputFile, Path outputFile) {
     pdfEditor.addMargins(inputFile.toString(), outputFile.toString(), new int[] {1, 3}, 36, 36, 36, 36);
 }
 ```
+
 

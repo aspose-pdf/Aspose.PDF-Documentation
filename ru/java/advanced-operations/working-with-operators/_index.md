@@ -140,3 +140,4 @@ public static void removeGraphicsObjects(Path inputFile, Path outputFile) {
 - [Работа со страницами PDF в Java](/pdf/ru/java/working-with-pages/)
 - [Работа с векторной графикой на Java](/pdf/ru/java/working-with-vector-graphics/)
 
+

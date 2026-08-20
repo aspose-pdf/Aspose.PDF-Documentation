@@ -61,9 +61,9 @@ Aspose.PDF for Java — это компонент создания PDF‑док�
 - 14.0.2 (CE/ UE)
 - 14.1.5 (CE/ UE)
 
-## Загрузка
+## Загрузите
 
-### Загрузка IntelliJ IDEA
+### Загрузите IntelliJ IDEA
 
 Сначала вам потребуется установить IntelliJ IDEA CE / UE, прежде чем загружать плагин Aspose.PDF Java for IntelliJ IDEA (Maven).
 
@@ -73,7 +73,7 @@ Aspose.PDF for Java — это компонент создания PDF‑док�
 1. Выберите вашу текущую ОС
 1. Нажмите на загрузку UE или CE.
 
-### Загрузка плагина Aspose.PDF Java for IntelliJ IDEA (Maven)
+### Загрузите плагина Aspose.PDF Java for IntelliJ IDEA (Maven)
 
 - Плагин можно скачать напрямую с [URL размещения плагина JetBrains](https://goo.gl/z06gC0) - в репозитории плагинов IntelliJ IDEA
   и позже может быть установлен с помощью опции IDE:
@@ -85,11 +85,11 @@ Aspose.PDF for Java — это компонент создания PDF‑док�
   - В поле поиска введите: "Aspose"
   - Выберите плагин "Aspose.PDF Java for IntelliJ IDEA Maven" для установки.
 
-## Установка
+## Установите
 
 Установка Aspose.PDF для IntelliJ IDEA - Maven
 
-## Использование
+## Используйте
 
 Использование Aspose.PDF для IntelliJ IDEA - Maven
 
@@ -118,4 +118,5 @@ Aspose.PDF Java for IntelliJ IDEA (Maven) плагин является откр
 Вы можете получить последний исходный код из одного из следующих мест
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins)
+
 

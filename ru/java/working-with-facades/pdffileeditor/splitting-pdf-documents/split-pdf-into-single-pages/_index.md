@@ -21,7 +21,7 @@ Abstract: Узнайте, как разделить PDF на файлы по о�
 
 1. Создайте `PdfFileEditor` экземпляр.
 2. Подготовьте шаблон выходного файла, включающий заполнитель страницы, например `%NUM%`.
-3. Вызов `splitToPages` с исходным файлом и шаблоном вывода.
+3. Вызовите `splitToPages` с исходным файлом и шаблоном вывода.
 4. Сохраните сгенерированные одностраничные файлы.
 
 ```java
@@ -30,4 +30,5 @@ public static void splitPdfIntoSinglePages(Path inputFile, Path outputFilePatter
     pdfFileEditor.splitToPages(inputFile.toString(), outputFilePattern.toString());
 }
 ```
+
 

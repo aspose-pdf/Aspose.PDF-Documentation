@@ -200,3 +200,4 @@ public static void mergeWithSectionSeparatorsAndBookmarks(List<Path> inputFiles,
 }
 ```
 
+

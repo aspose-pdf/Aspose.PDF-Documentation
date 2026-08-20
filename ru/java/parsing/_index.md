@@ -24,3 +24,4 @@ Abstract: В этой статье представлены возможност
 - [Извлечь данные из таблицы](/pdf/ru/java/extract-data-from-table-in-pdf/) используя `TableAbsorber` или экспортировать обнаруженные таблицы в Excel.
 - [Извлечь векторные данные из PDF](/pdf/ru/java/extract-vector-data-from-pdf/) с `GraphicsAbsorber` и методы экспорта SVG.
 
+

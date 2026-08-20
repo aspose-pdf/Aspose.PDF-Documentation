@@ -20,7 +20,7 @@ Aspose.PDF for Java может преобразовать варианты PDF, 
 Используйте этот пример, когда архивный документ PDF/A необходимо понизить до стандартного PDF.
 
 1. Откройте исходный файл PDF/A в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Вызов `removePdfaCompliance()` отсоединить профиль архивного соответствия от загруженного документа.
+1. Вызовите `removePdfaCompliance()` отсоединить профиль архивного соответствия от загруженного документа.
 1. Сохраните полученный стандартный PDF‑файл без установленного ограничения PDF/A.
 
 ```java
@@ -37,7 +37,7 @@ public static void convertPdfAToPdf(Path inputFile, Path outputFile) {
 Используйте этот пример, когда доступный документ PDF/UA должен быть преобразован обратно в стандартный PDF.
 
 1. Откройте исходный файл PDF/UA в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Вызов `removePdfUaCompliance()` удалить профиль соответствия требованиям доступности из метаданных документа и требований к структуре.
+1. Вызовите `removePdfUaCompliance()` удалить профиль соответствия требованиям доступности из метаданных документа и требований к структуре.
 1. Сохраните полученный PDF‑документ как обычный PDF‑файл.
 
 ```java
@@ -48,4 +48,5 @@ public static void convertPdfUaToPdf(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

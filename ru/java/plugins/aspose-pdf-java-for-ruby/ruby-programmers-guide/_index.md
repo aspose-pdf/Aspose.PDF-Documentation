@@ -14,3 +14,4 @@ lastmod: "2026-08-19"
 - [Работа с текстом в Ruby](/pdf/ru/java/working-with-text-in-ruby/)
 - [Работа с преобразованием документов в Ruby](/pdf/ru/java/working-with-document-conversion-in-ruby/)
 
+

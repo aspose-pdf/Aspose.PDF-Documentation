@@ -161,3 +161,4 @@ public static void extractImageInformationFromPdf(Path inputFile) {
 }
 ```
 
+

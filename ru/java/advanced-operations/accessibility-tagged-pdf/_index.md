@@ -19,3 +19,4 @@ sitemap:
 - [Настройка свойств Structure Elements](/pdf/ru/java/setting-structure-elements-properties/)
 - [Работа с таблицей в Tagged PDFs](/pdf/ru/java/working-with-table-in-tagged-pdfs/)
 
+

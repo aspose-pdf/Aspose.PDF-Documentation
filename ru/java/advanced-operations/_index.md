@@ -1,6 +1,6 @@
 ---
-title: Продвинутые операции
-linktitle: Продвинутые операции
+title: Расширенные операции
+linktitle: Расширенные операции
 type: docs
 weight: 90
 url: /ru/java/advanced-operations/
@@ -33,4 +33,5 @@ Abstract: В этом разделе рассматриваются продви
 - [Работа с векторной графикой](/pdf/ru/java/working-with-vector-graphics/) - манипулировать векторной графикой в PDF‑документах.
 - [Working with ZUGFeRD](/pdf/ru/java/working-with-zugferd/) - работать с PDF‑документами, соответствующими ZUGFeRD.
 - [Working with PDF Operators](/pdf/ru/java/working-with-operators/) - работать с PDF‑операторами для расширенного манипулирования PDF.
+
 

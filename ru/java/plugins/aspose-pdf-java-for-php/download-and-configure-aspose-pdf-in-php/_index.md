@@ -7,7 +7,7 @@ url: /java/download-and-configure-aspose-pdf-in-php/
 description: Узнайте, как скачать и настроить Aspose.PDF в PHP для простой интеграции и работы с PDF‑файлами в ваших PHP‑проектах.
 lastmod: "2026-06-09"
 ---
-## Загрузка необходимых библиотек
+## Загрузите необходимых библиотек
 
 Скачайте перечисленные ниже библиотеки. Они необходимы для выполнения примеров Aspose.PDF Java для PHP.
 
@@ -91,4 +91,5 @@ $ git clone https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugin
 9. Клонируйте примеры [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP) в C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\.
 10. Скопируйте папку C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\java в ваш каталог с примерами Aspose.PDF Java for PHP.
 11. Перезапустите службу Apache Tomcat и начинайте использовать примеры.
+
 

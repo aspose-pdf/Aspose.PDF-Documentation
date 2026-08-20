@@ -14,7 +14,7 @@ Abstract: В этой статье показано, как привязать P
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
 2. Установите область действия replace-text в `ReplaceAll`.
-3. Вызов `replaceText(...)` с текстом поиска и текстом замены.
+3. Вызовите `replaceText(...)` с текстом поиска и текстом замены.
 4. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -30,4 +30,5 @@ public static void replaceTextSimple(Path inputFile, Path outputFile) {
     }
 }
 ```
+
 

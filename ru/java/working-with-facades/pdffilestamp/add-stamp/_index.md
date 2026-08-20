@@ -45,3 +45,4 @@ public static void addStampToPdf(Path inputFile, Path imageFile, Path outputFile
 
 Текущий `PdfFileStampExamples.java` класс не включает отдельный пример на Java для штампов только с текстом, вращения или настройки непрозрачности.
 
+

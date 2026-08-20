@@ -20,3 +20,4 @@ Aspose.PDF for Java позволяет управлять встраиваемы
 - [Удалить вложения из существующего PDF](/pdf/ru/java/removing-attachment-from-an-existing-pdf/)
 - [Извлечь вложения из PDF](/pdf/ru/java/extract-attachment/)
 
+

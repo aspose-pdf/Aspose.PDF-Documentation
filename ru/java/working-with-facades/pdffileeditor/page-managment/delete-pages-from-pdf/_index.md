@@ -21,7 +21,7 @@ Abstract: Узнайте, как удалить страницы из PDF с п�
 
 1. Создайте `PdfFileEditor` экземпляр.
 2. Создайте массив с номерами страниц для удаления.
-3. Вызов `delete` с входным файлом, массивом страниц и выходным файлом.
+3. Вызовите `delete` с входным файлом, массивом страниц и выходным файлом.
 4. Сохраните полученный PDF.
 
 ### Пример на Java
@@ -32,4 +32,5 @@ public static void deletePagesFromPdf(Path inputFile, Path outputFile) {
     pdfEditor.delete(inputFile.toString(), new int[] {2, 4}, outputFile.toString());
 }
 ```
+
 

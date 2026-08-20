@@ -18,3 +18,4 @@ Aspose.PDF for Java предоставляет как DOM, так и фасад�
 - [Работа с AcroForms](/pdf/ru/java/acroforms/)
 - [Работа с XFA формами](/pdf/ru/java/xfa-forms/)
 
+

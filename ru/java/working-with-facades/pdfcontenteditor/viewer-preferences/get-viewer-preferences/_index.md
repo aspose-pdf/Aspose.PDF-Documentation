@@ -13,7 +13,7 @@ Abstract: В этой статье показано, как привязать P
 ## Получите текущий параметр просмотра
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
-2. Вызов `getViewerPreference()` чтобы прочитать текущее значение.
+2. Вызовите `getViewerPreference()` чтобы прочитать текущее значение.
 3. Проверьте или выведите возвращённый флаг предпочтения.
 
 ```java
@@ -27,4 +27,5 @@ public static void getViewerPreferences(Path inputFile) {
     }
 }
 ```
+
 

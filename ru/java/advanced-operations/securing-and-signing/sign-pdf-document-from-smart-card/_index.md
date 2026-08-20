@@ -28,7 +28,7 @@ Abstract: Эта страница описывает текущий масшта
 1. Проверьте, найден ли сертификат. Если нет, сохраните неизмененный выходной файл и остановите рабочий процесс.
 1. Создайте [ExternalSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/externalsignature/) из выбранного сертификата.
 1. Установите изображение внешнего вида визуальной подписи с `setSignatureAppearance(...)`.
-1. Вызов `sign(...)` с целевой страницей, причиной, контактом, местоположением, флагом видимости, подпись [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/), и объект внешней подписи.
+1. Вызовите `sign(...)` с целевой страницей, причиной, контактом, местоположением, флагом видимости, подпись [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/), и объект внешней подписи.
 1. Сохраните подписанный PDF по пути вывода.
 
 ```java
@@ -51,4 +51,5 @@ public static void signWithSmartCard(Path inputFile, Path outputFile, Path pngFi
     }
 }
 ```
+
 
