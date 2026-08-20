@@ -4,7 +4,7 @@ linktitle: Настройка Reporting Services
 type: docs
 weight: 20
 url: /ru/reportingservices/setting-up-reporting-services/
-description: "Узнайте о Настройка Reporting Services в Aspose.PDF for Reporting Services."
+description: Узнайте, как настроить Reporting Services для интеграции с Aspose.PDF for Reporting Services.
 lastmod: "2026-06-19"
 ---
 

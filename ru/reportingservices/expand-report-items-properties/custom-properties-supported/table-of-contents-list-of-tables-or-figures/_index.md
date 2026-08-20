@@ -21,7 +21,7 @@ Report Designer не поддерживает добавление оглавл�
 
 **Пример**
 
-```cs
+```xml
 <ListSection ListType="TableOfContents">
               <Title Alignment="Center">
             <Segment IsTrueTypeFontBold="true" FontSize="30">TableOfContents</Segment>
@@ -41,11 +41,11 @@ Report Designer не поддерживает добавление оглавл�
 </ListSection>
 ```
 
-##  Список таблиц
+## Список таблиц
 
 **Пример**
 
-```cs
+```xml
 <ListSection ListType="ListOfTables">
               <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfTables</Segment>
@@ -57,7 +57,7 @@ Report Designer не поддерживает добавление оглавл�
 
 **Пример**
 
-```cs
+```xml
  <ListSection ListType="ListOfFigures">
     <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfFigures</Segment>
@@ -75,9 +75,11 @@ Report Designer не поддерживает добавление оглавл�
 
 {{% alert color="primary" %}}
 
-**Имя пользовательского свойства** :IsInList
-**Значение свойства** :Boolean
-**Значение пользовательского свойства** : True or False
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
 {{% alert color="primary" %}}
 
@@ -85,20 +87,25 @@ Report Designer не поддерживает добавление оглавл�
 
 {{% /alert %}}
 
-**Имя пользовательского свойства** : Заголовок
-**Тип пользовательского свойства** : Строка
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
 {{% alert color="primary" %}}
 
 Заголовок элемента, отображаемый в оглавлении, списке таблиц или рисунков.
 {{% /alert %}}
 
-**Имя пользовательского свойства** : Уровень списка
-**Тип пользовательского свойства** : Integer
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
 {{% alert color="primary" %}}
 
 Уровень перечисленных элементов, отображаемых в таблице содержимого.
+
 
 {{% /alert %}}
 

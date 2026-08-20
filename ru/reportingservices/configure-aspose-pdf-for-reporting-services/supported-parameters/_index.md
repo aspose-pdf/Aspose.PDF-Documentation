@@ -23,6 +23,3 @@ lastmod: "2026-06-19"
 - [Метаданные XMP](/pdf/ru/reportingservices/xmp-metadata/)
 - [Отладочная информация](/pdf/ru/reportingservices/debug-information/)
 - [Соответствие PDF_A](/pdf/ru/reportingservices/pdf_a-conformance/)
-
-
-

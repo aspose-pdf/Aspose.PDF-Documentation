@@ -1,7 +1,6 @@
 ---
-title: Настроить
-linktitle: Настроить
-
+title: Настройки
+linktitle: Настройки
 type: docs
 weight: 80
 url: /ru/reportingservices/configure-aspose-pdf-for-reporting-services/

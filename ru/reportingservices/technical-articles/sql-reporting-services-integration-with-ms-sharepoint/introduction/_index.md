@@ -4,7 +4,7 @@ linktitle: Введение
 type: docs
 weight: 10
 url: /ru/reportingservices/introduction/
-description: "Узнайте о Введение в Aspose.PDF for Reporting Services."
+description: Ознакомьтесь с введением в интеграцию Aspose.PDF for Reporting Services с SharePoint и Reporting Services.
 lastmod: "2026-06-19"
 ---
 
@@ -24,7 +24,7 @@ Aspose.PDF for Reporting Services уже много лет заметно выд
 
 {{% /alert %}}
 
-## Настройка среды
+## Настройте среду
 
 Наша настройка состоит из 4 серверов. Она включает контроллер домена, сервер SQL, сервер SharePoint и сервер для Reporting Services. Вы можете разместить SharePoint и Reporting Services на одном компьютере, что упростит задачу, и я укажу некоторые различия.
 

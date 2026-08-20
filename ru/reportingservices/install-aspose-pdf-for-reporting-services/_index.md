@@ -12,9 +12,9 @@ lastmod: "2026-06-19"
 
 **Этот раздел включает следующие темы:**
 
-- [Установить с помощью MSI Installer](/pdf/ru/reportingservices/install-with-msi-installer/)
-- [Установить вручную](/pdf/ru/reportingservices/install-manually/)
-- [Установить с Configuring Tool](/pdf/ru/reportingservices/install-with-configuring-tool/)
+- [Установите с помощью MSI Installer](/pdf/ru/reportingservices/install-with-msi-installer/)
+- [Установите вручную](/pdf/ru/reportingservices/install-manually/)
+- [Установите с помощью Configuring Tool](/pdf/ru/reportingservices/install-with-configuring-tool/)
 
 {{% /alert %}}
 

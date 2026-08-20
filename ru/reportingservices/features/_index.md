@@ -4,7 +4,7 @@ linktitle: Функции
 type: docs
 weight: 30
 url: /ru/reportingservices/features/
-description: Узнайте о ключевых функциях Aspose.PDF for Reporting Services. Улучшите отчеты SSRS с помощью продвинутых возможностей рендеринга PDF и настройки.
+description: Узнайте, какие ключевые функции Aspose.PDF for Reporting Services помогают улучшить отчеты SSRS с помощью расширенного рендеринга PDF и настройки.
 lastmod: "2026-06-19"
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Установить с помощью MSI‑инсталлятора
-linktitle: Установить с помощью MSI‑инсталлятора
+title: Установите с помощью MSI‑инсталлятора
+linktitle: Установите с помощью MSI‑инсталлятора
 type: docs
 weight: 10
 url: /ru/reportingservices/install-with-msi-installer/

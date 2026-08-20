@@ -18,19 +18,23 @@ lastmod: "2026-06-19"
 
 В настоящее время рендерер Aspose.PDF поддерживает добавление стрелок в начале или в конце линий с помощью пользовательских свойств.
 
-Добавить начальную стрелку к линии  
-**Пользовательское свойство** **Имя**: HasArrowAtStart  
-**Значение пользовательского свойства**: True  
+```text
+Add Start Arrow for Line  
+Custom Property `Name`: HasArrowAtStart  
+Custom Property `Value`: True  
+```
 
-Добавить конечную стрелку к линии  
-**Пользовательское свойство** **Имя**: HasArrowAtEnd  
-**Значение пользовательского свойства**: True  
+```text
+Add End Arrow for Line  
+Custom Property `Name`: HasArrowAtEnd  
+Custom Property `Value`: True  
+```
 
 Например, в текущем файле отчета есть две линии с именами 'line1' и 'line2', при этом line1 имеет начальную стрелку, line2 имеет начальную и конечную стрелки; чтобы удовлетворить этим требованиям, вы можете добавить пользовательские свойства, как показано в следующем фрагменте кода.
 
 **Пример**
 
-{{< highlight csharp >}}
+```xml
  <Line Name="line1">
     <Style>
       ......
@@ -59,6 +63,7 @@ lastmod: "2026-06-19"
     </CustomProperties>
 </Line>
 
-{{< /highlight >}}
+```
+
 {{% /alert %}}
 

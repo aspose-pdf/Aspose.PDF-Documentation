@@ -18,7 +18,7 @@ lastmod: "2026-07-29"
 
 **Пример**
 
-{{< highlight csharp >}}
+```xml
 
 <Render>
 ...
@@ -30,8 +30,7 @@ For PageOrientation -->
     </Configuration>
 </Extension>
 </Render>
-
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}}
 
@@ -39,11 +38,11 @@ For PageOrientation -->
 
 1. Откройте отчет в Report Designer, щелкните правой кнопкой мыши папку `Parameters` на панели `Report Data` и выберите `Add Parameter...`. Также можно открыть список `New` и выбрать `Parameter...`.
  
-![todo:image_alt_text](setting-parameters_1.png)
+![Настройка параметров](setting-parameters_1.png)
 
-1. В диалоговом окне `Report Parameter Properties` создайте параметр с именем `IsLandscape`, задайте тип данных Boolean и добавьте значение True на вкладке `Default Values`.
+2. В диалоговом окне `Report Parameter Properties` создайте параметр с именем `IsLandscape`, задайте тип данных Boolean и добавьте значение True на вкладке `Default Values`.
 
-![todo:image_alt_text](setting-parameters_2.png)
+![Настройка параметров](setting-parameters_2.png)
 
 {{% /alert %}}
 

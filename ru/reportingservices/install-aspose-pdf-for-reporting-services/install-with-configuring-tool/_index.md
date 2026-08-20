@@ -1,6 +1,6 @@
 ---
-title: Установить с Configuring Tool
-linktitle: Установить с Configuring Tool
+title: Установите с помощью Configuring Tool
+linktitle: Установите с помощью Configuring Tool
 type: docs
 weight: 30
 url: /ru/reportingservices/install-with-configuring-tool/

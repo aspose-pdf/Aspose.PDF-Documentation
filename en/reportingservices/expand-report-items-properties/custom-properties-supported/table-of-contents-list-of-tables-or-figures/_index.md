@@ -20,7 +20,7 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 
 ### Example
 
-```cs
+```xml
 <ListSection ListType="TableOfContents">
               <Title Alignment="Center">
             <Segment IsTrueTypeFontBold="true" FontSize="30">TableOfContents</Segment>
@@ -40,11 +40,11 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 </ListSection>
 ```
 
-##  List of TableS
+## List of TableS
 
 ### Example
 
-```cs
+```xml
 <ListSection ListType="ListOfTables">
               <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfTables</Segment>
@@ -56,7 +56,7 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 
 ### Example
 
-```cs
+```xml
  <ListSection ListType="ListOfFigures">
     <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfFigures</Segment>

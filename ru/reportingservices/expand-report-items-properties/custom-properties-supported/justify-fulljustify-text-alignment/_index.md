@@ -15,15 +15,18 @@ Report builder не поддерживает возможность задава
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-**Имя пользовательского свойства** : TextAlignment  
-**Тип пользовательского свойства** : String  
-**Значения пользовательского свойства** : Justify, FullJustify  
+
+```text
+Custom Property `Name`: TextAlignment  
+Custom Property `Type`: String  
+Custom Property `Values`: Justify, FullJustify  
+```
 
 В отчете код должен выглядеть следующим образом:
 
 **Пример**
 
-{{< highlight csharp >}}
+```xml
 <Textbox Name="textbox1">
 <value> AsposePdf4RS </value>     
   <CustomProperties>
@@ -33,6 +36,6 @@ Report builder не поддерживает возможность задава
    </CustomProperty>
   </CustomProperties>
 </Textbox>
-{{< /highlight >}}
-{{% /alert %}}
+```
 
+{{% /alert %}}

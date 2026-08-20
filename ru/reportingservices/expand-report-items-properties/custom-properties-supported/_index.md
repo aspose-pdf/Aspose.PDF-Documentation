@@ -10,8 +10,8 @@ lastmod: "2026-06-19"
 
 **В этом разделе рассматриваются следующие темы:**
 
-- [Содержание Список таблиц или рисунков](/pdf/ru/reportingservices/table-of-contents-list-of-tables-or-figures/)
+- [Содержание списков таблиц или рисунков](/pdf/ru/reportingservices/table-of-contents-list-of-tables-or-figures/)
 - [Линейные стрелки](/pdf/ru/reportingservices/line-arrows/)
-- [Сноска Концевая сноска](/pdf/ru/reportingservices/footnote-endnote/)
-- [Выровнять Полное выравнивание текста](/pdf/ru/reportingservices/justify-fulljustify-text-alignment/)
+- [Концевая сноска](/pdf/ru/reportingservices/footnote-endnote/)
+- [Полное выравнивание текста](/pdf/ru/reportingservices/justify-fulljustify-text-alignment/)
 

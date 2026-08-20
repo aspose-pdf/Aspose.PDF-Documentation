@@ -15,13 +15,18 @@ Report Builder не может установить сноску или коне
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-Сноска
-**Пользовательское свойство** **Имя**: Сноска
-**Значение пользовательского свойства**: *это* *значение* *должно* *быть* *строкой* *строка*
 
-Концевая сноска
-**Пользовательское свойство** **Имя**: Endnote
-**Значение пользовательского свойства**: *это* *значение* *должно* *быть* *строкой*
+```text
+Footnote
+Custom Property `Name`: Footnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
+
+```text
+Endnote
+Custom Property `Name`: Endnote
+Custom Property Value: `the` `value` `should` `be` `a` `string`
+```
 
 {{% alert color="primary" %}}
 В следующем примере отчет содержит Textbox со значением 'AsposePdf4RS', и мы хотим добавить дополнительное описание в виде сноски с текстом "An optional PDF renderer for SSRS from Aspose Pty. Ltd.".
@@ -29,7 +34,7 @@ Report Builder не может установить сноску или коне
 
 **Пример**
 
-```cs
+```xml
 <Textbox Name="Textbox1">
 ...
 <Paragraphs>
@@ -53,5 +58,6 @@ Report Builder не может установить сноску или коне
 </Paragraphs>
 </Textbox>
 ```
+
 {{% /alert %}}
 

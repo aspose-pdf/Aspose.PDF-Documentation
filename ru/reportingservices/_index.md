@@ -26,9 +26,9 @@ Microsoft SQL Server Reporting Services удовлетворяет потреб�
 - [Поддерживаемые форматы файлов](/pdf/ru/reportingservices/supported-file-formats/)
 - [Возможности](/pdf/ru/reportingservices/features/)
 - [Галерея образцов отчетов](/pdf/ru/reportingservices/sample-reports-gallery/)
-- [Установить Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [Установите Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/install-aspose-pdf-for-reporting-services/)
 - [Лицензировать Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Настроить Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Настройте Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Развернуть свойства элементов отчета](/pdf/ru/reportingservices/expand-report-items-properties/)
 - [Оценить Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
@@ -40,9 +40,9 @@ Microsoft SQL Server Reporting Services удовлетворяет потреб�
 - [Aspose.PDF for Reporting Services Примечания к выпуску](https://releases.aspose.com/pdf/reportingservices/release-notes/)
 - [Скачать Aspose.PDF for Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
 - [Галерея образцов отчётов Aspose.PDF для Reporting Services](/pdf/ru/reportingservices/sample-reports-gallery/)
-- [Установить Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/install-aspose-pdf-for-reporting-services/)
+- [Установите Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/install-aspose-pdf-for-reporting-services/)
 - [Лицензировать Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Настроить Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Настройте Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Развернуть свойства элементов отчета](/pdf/ru/reportingservices/expand-report-items-properties/)
 - [Оценить Aspose.Pdf для Reporting Services](/pdf/ru/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
