@@ -1,35 +1,40 @@
 ---
-title: Añadir Cadena HTML usando DOM en Ruby
+title: Agregar cadena HTML usando DOM en Ruby
+linktitle: Agregar cadena HTML usando DOM en Ruby
 type: docs
 weight: 10
-url: /es/java/add-html-string-using-dom-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-html-string-using-dom-in-ruby/
+description: Descubra cómo agregar una cadena HTML a un documento PDF usando la API DOM en Ruby con Aspose.PDF para la generación de contenido dinámico.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Agregar HTML
 
-## Aspose.PDF - Añadir HTML
 
-Para añadir una cadena HTML en un documento PDF usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **AddHtml**.
 
-Código Ruby
+Para agregar una cadena HTML en un documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **AddHtml**.
+
+Código Rubí
+
 
 ```java
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Instanciar objeto Document
+# Instantiate Document object
 
 doc = Rjb::import('com.aspose.pdf.Document').new
 
-# Añadir una página a la colección de páginas del archivo PDF
+# Add a page to pages collection of PDF file
 
 page = doc.getPages().add()
 
-# Instanciar HtmlFragment con contenidos HTML
+# Instantiate HtmlFragment with HTML contents
 
 title = Rjb::import('com.aspose.pdf.HtmlFragment').new("<fontsize=10><b><i>Table</i></b></fontsize>")
 
-# establecer MarginInfo para detalles de margen
+# set MarginInfo for margin details
 
 margin = Rjb::import('com.aspose.pdf.MarginInfo').new
 
@@ -37,24 +42,28 @@ margin.setBottom(10)
 
 margin.setTop(200)
 
-# Establecer información de margen
+# Set margin information
 
 title.setMargin(margin)
 
-# Añadir Fragmento HTML a la colección de párrafos de la página
+# Add HTML Fragment to paragraphs collection of page
 
 page.getParagraphs().add(title)
 
-# Guardar el archivo PDF
+# Save PDF file
 
 doc.save(data_dir + "html.output.pdf")
 
-puts "HTML añadido con éxito"
+puts "HTML added successfully"
 ```
 
+## 
+Descargar código de ejecución
 
-## Descargar Código en Ejecución
 
-Descargar **Agregar HTML (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)
+Descargue **Agregue HTML (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)

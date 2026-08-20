@@ -1,135 +1,120 @@
 ---
-title: Actualizar Enlaces en PDF
-linktitle: Actualizar Enlaces
+title: Actualizar enlaces PDF en Java
+linktitle: Enlaces de actualización
 type: docs
 weight: 20
-url: /es/java/update-links/
-description: Actualizar enlaces en PDF programáticamente. Esta guía trata sobre cómo actualizar enlaces en PDF en lenguaje Java.
-lastmod: "2021-06-05"
+url: /java/update-links/
+description: Aprenda a actualizar la apariencia y los destinos de los enlaces PDF en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Actualice la apariencia de las anotaciones de enlaces y los destinos web en archivos PDF con Java
+Abstract: Este artículo muestra cómo actualizar las anotaciones de enlaces existentes utilizando Aspose.PDF para Java. Los ejemplos demuestran cómo cambiar el color del texto cubierto por un enlace, actualizar el color de la anotación del enlace y reemplazar el URI de destino para los enlaces web.
 ---
+Los enlaces existentes se pueden editar buscando la anotación del enlace en una página y actualizando su apariencia o su acción.
 
-## Actualizar Enlaces en un Archivo PDF
 
-Como se discutió en Agregar Hipervínculo en un Archivo PDF, la clase [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) permite agregar enlaces en un archivo PDF. También hay una clase similar que se utiliza para obtener enlaces existentes desde dentro de archivos PDF. Use esto si necesita actualizar un enlace existente. Para actualizar un enlace existente:
+## 
+Actualizar el color del texto vinculado
 
-1. Cargue un archivo PDF.
-1. Vaya a una página específica en el archivo PDF.
-1. Especifique el destino del enlace usando la propiedad Destination del objeto [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction).
 
-1. La página de destino se especifica utilizando el constructor [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/XYZExplicitDestination).
 
-### Establecer el Destino del Enlace a una Página en el Mismo Documento
+Utilice este ejemplo cuando deba cambiar el color del área de texto cubierta por una anotación de enlace.
 
-El siguiente fragmento de código muestra cómo actualizar un enlace en un archivo PDF y establecer su destino en la segunda página del documento.
+
+1. 
+Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Busque anotaciones de enlaces y cree un rectángulo de búsqueda de texto a partir de cada área de anotación.
+1. Vuelva a colorear los fragmentos de texto coincidentes y guarde el documento.
+
 
 ```java
-    public static void SetLinkTargetToAPageInTheSameDocument() {
-        
-        // Cargar el archivo PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-        // Obtener la primera anotación de enlace de la primera página del documento
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        // Modificación del enlace: cambiar el destino del enlace
-        GoToAction goToAction = (GoToAction)linkAnnot.getAction();
-        // Especificar el destino para el objeto de enlace
-        // Representa un destino explícito que muestra la página con las coordenadas (izquierda, arriba) posicionadas en la esquina superior izquierda de
-        // la ventana y el contenido de la página ampliado por el factor de zoom.
-        // El primer parámetro es el número de página de destino.
-        // El segundo es la coordenada izquierda
-        // El tercero es la coordenada superior
-        // El cuarto argumento es el factor de zoom al mostrar la página respectiva. Usar 2 significa que la página se mostrará con un zoom del 200%
-        goToAction.setDestination(new XYZExplicitDestination(1, 1, 2, 2 ));
-        
-        // Guardar el documento con el enlace actualizado
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-
-### Establecer el Destino del Enlace a una Dirección Web
-
-Para actualizar el hipervínculo de modo que apunte a una dirección web, instancia el objeto [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction) y pásalo a la propiedad Action de LinkAnnotation. El siguiente fragmento de código muestra cómo actualizar un enlace en un archivo PDF y establecer su objetivo en una dirección web.
-
-```java
-    public static void SetLinkDestinationToWebAddress() {        
-        // Cargar el archivo PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-    
-        // Obtener la primera anotación de enlace de la primera página del documento
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        // Modificación del enlace: cambiar la acción del enlace y establecer el objetivo como dirección web
-        linkAnnot.setAction(new GoToURIAction("www.aspose.com"));
-        
-        // Guardar el documento con el enlace actualizado
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-
-### Establecer el Destino del Enlace a Otro Archivo PDF
-
-El siguiente fragmento de código muestra cómo actualizar un enlace en un archivo PDF y establecer su destino a otro archivo PDF.
-
-```java
-    public static void SetLinkTargetToAnotherPDFFile() {        
-        // Cargar el archivo PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-    
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        GoToRemoteAction goToR = (GoToRemoteAction)linkAnnot.getAction();
-        // La siguiente línea actualiza el destino, no actualiza el archivo
-        goToR.setDestination(new XYZExplicitDestination(2, 0, 0, 1.5));
-        // La siguiente línea actualiza el archivo
-        goToR.setFile (new FileSpecification(_dataDir +  "input.pdf"));
-
-        // Guardar el documento con el enlace actualizado
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-### Actualizar el Color del Texto de LinkAnnotation
-
-La anotación de enlace no contiene texto.
- En su lugar, el texto se coloca en los contenidos de la página bajo la anotación. Por lo tanto, para cambiar el color del texto, reemplaza el color del texto de la página en lugar de intentar cambiar el color de la anotación. El siguiente fragmento de código muestra cómo actualizar el color de la anotación de enlace en un archivo PDF.
-
-```java
-    public static void UpdateLinkAnnotationTextColor () {        
-        // Cargar el archivo PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-           
-        for (Annotation annotation : page.getAnnotations())
-        {
-            if (annotation.getAnnotationType() == AnnotationType.Link)
-            {
-                // Buscar el texto bajo la anotación
-                TextFragmentAbsorber ta = new TextFragmentAbsorber();
+public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link) {
+                TextFragmentAbsorber absorber = new TextFragmentAbsorber();
                 Rectangle rect = annotation.getRect();
-                rect.setLLX(rect.getLLX()-10);
-                rect.setLLY(rect.getLLY()-10);
-                rect.setURX(rect.getURX()+ 10);
-                rect.setURY(rect.getURY()+ 10);
-
-                ta.setTextSearchOptions(new TextSearchOptions(rect));
-                ta.visit(page);
-                // Cambiar el color del texto.
-                for (TextFragment tf : ta.getTextFragments())
-                {
-                    tf.getTextState().setForegroundColor(Color.getRed());
+                rect.setLLX(rect.getLLX() - 2);
+                rect.setLLY(rect.getLLY() - 2);
+                rect.setURX(rect.getURX() + 2);
+                rect.setURY(rect.getURY() + 2);
+                absorber.setTextSearchOptions(new TextSearchOptions(rect));
+                absorber.visit(document.getPages().get_Item(1));
+                for (TextFragment textFragment : absorber.getTextFragments()) {
+                    textFragment.getTextState().setForegroundColor(Color.getRed());
                 }
             }
-        
-        }                       
-        // Guardar el documento con el enlace actualizado
-        document.save(_dataDir + "UpdateLinkTextColor_out.pdf");        
+        }
+
+        document.save(outputFile.toString());
     }
+}
+```
+
+## 
+Actualizar color del borde del enlace
+
+
+
+Utilice este ejemplo cuando deba cambiar el color visible de las anotaciones de enlaces existentes.
+
+
+1. 
+Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Itere a través de las anotaciones de la página y filtre por objetos [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/).
+1. Actualice el color de la anotación del enlace y guarde el documento.
+
+
+```java
+public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                linkAnnotation.setColor(Color.getRed());
+            }
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Actualizar un destino de enlace web
+
+
+
+Utilice este ejemplo cuando un enlace web existente deba apuntar a un nuevo URI.
+
+
+1. 
+Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Busque anotaciones de enlaces cuya acción sea [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Reemplace el URI y guarde el documento actualizado.
+
+```java
+public static void linkAnnotationUpdateWebDestination(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    action.setURI("https://www.aspose.com");
+                }
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
 ```

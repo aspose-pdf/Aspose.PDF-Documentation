@@ -1,37 +1,47 @@
 ---
-title: Convertir PDF a Formato SVG en PHP
+title: Convertir PDF a formato SVG en PHP
+linktitle: Convertir PDF a formato SVG en PHP
 type: docs
 weight: 30
-url: /es/java/convert-pdf-to-svg-format-in-php/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-svg-format-in-php/
+description: Descubra cómo convertir documentos PDF a formato SVG en PHP con Aspose.PDF para una transformación de gráficos vectoriales de alta calidad.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Convertir PDF a SVG
 
-## Aspose.PDF - Convertir PDF a SVG
 
-Para convertir PDF a formato SVG usando **Aspose.PDF Java for PHP**, simplemente invoque el módulo **PdfToSvg**.
+
+Para convertir PDF a formato SVG usando **Aspose.PDF Java para PHP**, simplemente invoque el módulo **PdfToSvg**.
 
 Código PHP
 
+
 ```php
 
-# Abrir el documento objetivo
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# instanciar un objeto de SvgSaveOptions
+# instantiate an object of SvgSaveOptions
 $save_options = new SvgSaveOptions();
 
-# no comprimir la imagen SVG en un archivo Zip
+# do not compress SVG image to Zip archive
 $save_options->CompressOutputToZipArchive = false;
 
-# Guardar la salida en formato XLS
+# Save the output to XLS format
 $pdf->save($dataDir . "Output.svg", $save_options);
 
-print "El documento ha sido convertido exitosamente" . PHP_EOL;
+print "Document has been converted successfully" . PHP_EOL;
 
 ```
 
-**Descargar Código en Ejecución**
 
-Descargue **Convertir PDF a Formato SVG (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+**Descargar código de ejecución**
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToSvg.php)
+
+
+Descargue **Convierta PDF a formato SVG (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToSvg.php)

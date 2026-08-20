@@ -1,40 +1,49 @@
 ---
-title: Insertar una Página Vacía en un Archivo PDF en Ruby
+title: Insertar una página vacía en un archivo PDF en Ruby
+linktitle: Insertar una página vacía en un archivo PDF en Ruby
 type: docs
 weight: 70
-url: /es/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/insert-an-empty-page-into-a-pdf-file-in-ruby/
+description: Aprenda a insertar una página vacía en una ubicación específica dentro de un documento PDF usando Ruby y Aspose.PDF para una gestión precisa de los documentos.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Insertar una página vacía
 
-## Aspose.PDF - Insertar una Página Vacía
 
-Para insertar una página vacía en un documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoca el módulo **InsertEmptyPage**.
 
-Código Ruby
+Para insertar una página vacía en un documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **InsertEmptyPage**.
+
+Código Rubí
+
 
 ```java
-
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abrir el documento de destino
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# insertar una página vacía en un PDF
+# insert a empty page in a PDF
 
 pdf.getPages().insert(1)
 
-# Guardar el archivo de salida concatenado (el documento de destino)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "¡Página vacía añadida exitosamente!"
+puts "Empty page added successfully!"
 ```
 
-## Descargar Código en Ejecución
+## 
+Descargar código de ejecución
 
-Descargar **Insertar una Página Vacía (Aspose.PDF)** de cualquiera de los sitios de codificación social mencionados a continuación:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypage.rb)
+
+Descargue **Inserte una página vacía (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypage.rb)

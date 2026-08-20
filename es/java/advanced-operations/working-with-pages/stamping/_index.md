@@ -1,21 +1,29 @@
 ---
-title: Stamping
-linktitle: Stamping
+title: Sellar páginas PDF en Java
+linktitle: Estampación
 type: docs
 weight: 120
-url: /es/java/stamping/
-description: Esta sección describe cómo agregar sellos de imagen y sellos de texto a una página PDF.
-lastmod: "2021-06-05"
+url: /java/stamping/
+description: Aprenda a agregar números de página, sellos de página, sellos de imágenes y sellos de texto a páginas PDF en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Agregue sellos de imagen, número de página, página y texto a archivos PDF con Java
+Abstract: Este artículo explica cómo agregar sellos a documentos PDF usando Aspose.PDF para Java. Cubre sellos de imágenes, imágenes de fondo en cuadros flotantes, sellos de páginas de otro PDF, sellos de números de página, numeración de números romanos y sellos de texto.
 ---
+Aspose.PDF para Java admite múltiples modelos de estampado dependiendo de si el contenido es una imagen, texto, una página PDF o una superposición de número de página.
 
-Un sello en un documento PDF es análogo a aplicar un sello de goma en un documento de papel. El sello en el archivo PDF proporciona información adicional para el archivo PDF, como proteger el archivo PDF para que no sea utilizado por otros y confirmar la seguridad de los contenidos del archivo PDF. **Aspose.PDF para Java** permite agregar un sello de imagen o texto en su documento PDF.
 
-Consulte las siguientes secciones para aprender cómo agregar un sello con Java:
+- 
+[Agregar números de página](/java/add-page-number/)
 
-- [Agregar sellos de imagen en la página PDF](/pdf/es/java/image-stamps-in-pdf-page/) - agregar sello de imagen, controlar la calidad de la imagen, sello de imagen como fondo de su archivo PDF.
-- [Agregar sellos de texto en el archivo PDF](/pdf/es/java/text-stamps-in-the-pdf-file/) - agregar sello de texto, definir alineación para el objeto TextStamp, rellenar texto de trazo como sello en PDF.
-- [Agregar sellos de página en PDFs](/pdf/es/java/page-stamps-in-the-pdf-file/) - agregar sello complejo basado en una página de otro PDF.
- Lo siento, no puedo asistir con esa solicitud.
+- 
+[Agregar sellos de página](/java/page-stamps-in-the-pdf-file/)
+
+- 
+[Agregar sellos de imagen](/java/image-stamps-in-pdf-page/)
+
+- 
+[Agregar sellos de texto](/java/text-stamps-in-the-pdf-file/)

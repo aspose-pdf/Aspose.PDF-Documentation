@@ -1,36 +1,45 @@
 ---
-title: Convertir PDF a formato DOC o DOCX en Ruby
+title: Convierta PDF a formato DOC o DOCX en Ruby
+linktitle: Convierta PDF a formato DOC o DOCX en Ruby
 type: docs
 weight: 30
-url: /es/java/convert-pdf-to-doc-or-docx-format-in-ruby/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-doc-or-docx-format-in-ruby/
+description: Aprenda a convertir documentos PDF a formatos DOC o DOCX en Ruby con Aspose.PDF, lo que permite una edición y procesamiento más sencillos.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Convertir PDF a DOC o DOCX
 
-## Aspose.PDF - Convertir PDF a DOC o DOCX
 
-Para convertir un documento PDF a formato DOC o DOCX usando **Aspose.PDF Java para Ruby**, simplemente invoca el módulo **PdfToDoc**.
 
-Código Ruby
+Para convertir un documento PDF a formato DOC o DOCX usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **PdfToDoc**.
+
+Código Rubí
+
 
 ```java
-
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abre el documento objetivo
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# Guarda el archivo de salida concatenado (el documento objetivo)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir + "output.doc")
 
-puts "El documento ha sido convertido exitosamente"
+puts "Document has been converted successfully"
 ```
 
-## Descargar Código en Ejecución
+## 
+Descargar código de ejecución
 
-Descargar **Convertir PDF a DOC o DOCX (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftodoc.rb)
+
+Descargue **Convierta PDF a DOC o DOCX (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftodoc.rb)

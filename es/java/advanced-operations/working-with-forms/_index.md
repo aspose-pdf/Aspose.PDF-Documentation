@@ -1,22 +1,23 @@
 ---
-title: Trabajando con Formularios
-linktitle: Trabajando con Formularios
+title: Trabajar con formularios usando Java
+linktitle: Trabajar con formularios
 type: docs
-weight: 50
-url: /es/java/working-with-forms/
-description: Esta sección explica cómo trabajar con AcroForms y Formularios XFA en sus documentos PDF con Aspose.PDF para Java.
-lastmod: "2021-06-05"
+weight: 60
+url: /java/working-with-forms/
+description: Aprenda a crear, completar, extraer, modificar, enviar, importar, exportar y convertir formularios PDF en Java utilizando Aspose.PDF.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cree y administre formularios AcroForms y XFA con Java
+Abstract: Esta sección explica cómo trabajar con formularios PDF usando Aspose.PDF para Java. Cubre la creación de campos de AcroForm, el llenado y extracción de datos de formularios, la importación y exportación de valores de formularios, la modificación o eliminación de campos, la publicación de datos de formularios y la conversión de formularios XFA a AcroForms estándar.
 ---
+Aspose.PDF para Java proporciona API de fachada y DOM para flujos de trabajo de formularios PDF. Puede crear nuevos AcroForms, actualizar campos existentes, intercambiar datos de formularios en formatos comunes y convertir documentos basados ​​en XFA en formularios estándar.
 
-Los formularios son archivos con áreas para que los usuarios seleccionen o completen información con el propósito de recopilar y almacenar información.
 
-Los AcroForms son archivos PDF que contienen campos de formulario. Los datos pueden ingresarse en estos campos (manualmente o a través de un proceso automatizado) por los usuarios finales o el autor del formulario. Internamente, los AcroForms son anotaciones o campos aplicados a un documento PDF.
+- 
+[Trabajar con AcroForms](/pdf/java/acroforms/)
 
-En esta sección se describe un enfoque rápido y sencillo para completar programáticamente un documento PDF mediante el uso de Aspose.PDF.
- La sección también discute cómo uno podría usar Aspose.PDF para Java para descubrir y mapear los campos disponibles dentro de un PDF existente con AcroForms. Además, aprenderás a trabajar con XFA, otra tecnología para formularios de presentación basados en XML.
-
-- [AcroForms](/pdf/es/java/acroforms/) - crear formulario, rellenar campo de formulario, extraer datos del formulario, modificar campos en tu PDF con la biblioteca Java.
-- [Formularios XFA](/pdf/es/java/xfa-forms/) - rellenar campos XFA, convertir XFA, obtener propiedades de campos XFA.
+- 
+[Trabajar con formularios XFA](/pdf/java/xfa-forms/)

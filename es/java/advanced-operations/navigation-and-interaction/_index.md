@@ -1,16 +1,26 @@
 ---
-title: Navegación e Interacción
+title: Navegación e interacción de PDF en Java
 linktitle: Navegación e interacción
 type: docs
 weight: 90
-url: /es/java/navigation-and-interaction/
-description: Esta sección describe las características del trabajo con enlaces, acciones y marcadores.
-lastmod: "2021-06-05"
+url: /java/navigation-and-interaction/
+description: Aprenda a trabajar con enlaces, acciones y marcadores de PDF en Java para la navegación y el comportamiento interactivo de los documentos.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Trabaje con enlaces, acciones y marcadores en archivos PDF usando Java
+Abstract: Esta sección explica cómo administrar las funciones de navegación e interacción en documentos PDF con Aspose.PDF para Java. Aprenda a crear y actualizar enlaces, agregar acciones interactivas y trabajar con marcadores para mejorar la navegación en PDF y los flujos de trabajo de documentos.
 ---
+Aspose.PDF para Java incluye API para marcadores, enlaces y acciones interactivas. Puede utilizar estas funciones para mejorar la navegación dentro de un documento, conectarse a recursos externos y activar el comportamiento a partir de la interacción del usuario.
 
-- [Enlaces](/pdf/es/java/links/) - puedes crear, actualizar y extraer enlaces fácilmente con Java.
-- [Acciones](/pdf/es/java/actions/) - es posible agregar y obtener, crear hipervínculos a archivos PDF. Además, en este artículo, aprenderás cómo eliminar la Acción de Apertura de Documento de un archivo PDF y cómo especificar la página PDF al ver el documento.
-- [Marcadores](/pdf/es/java/bookmarks/)- las publicaciones grandes suelen incluir un marco de marcadores que se pueden ver y seleccionar fácilmente en el Panel de Marcadores, lo que te permite hacer clic en un marcador para saltar a la página o capítulo que representa. El Panel de Marcadores es un elemento consciente del contenido y es visible en la barra lateral solo si el documento PDF abierto contiene una estructura de marcadores.
+
+- 
+[Trabajar con enlaces PDF](/pdf/java/links/)
+
+- 
+[Trabajar con acciones de PDF](/pdf/java/actions/)
+
+- 
+[Trabajar con marcadores PDF](/pdf/java/bookmarks/)

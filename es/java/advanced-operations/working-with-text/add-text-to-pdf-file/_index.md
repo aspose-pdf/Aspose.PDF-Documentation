@@ -1,891 +1,856 @@
 ---
-title: Agregar Texto al Archivo PDF
-linktitle: Agregar Texto al Archivo PDF
+title: Agregar texto a PDF en Java
+linktitle: Agregar texto a PDF
 type: docs
 weight: 10
-url: /es/java/add-text-to-pdf-file/
-description: Este artículo describe varios aspectos del trabajo con texto en Aspose.PDF. Aprende cómo agregar texto a PDF, agregar fragmentos HTML o usar fuentes OTF personalizadas.
-lastmod: "2021-06-05"
+url: /java/add-text-to-pdf-file/
+description: Aprenda a agregar texto, fragmentos HTML, listas, enlaces y fuentes personalizadas a documentos PDF en Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Agregue texto, enlaces, HTML y fuentes a archivos PDF con Java
+Abstract: Este artículo explica cómo agregar y aplicar estilo a texto en documentos PDF usando Aspose.PDF para Java. Cubre inserción de texto simple, diseño de párrafo, hipervínculos, texto de derecha a izquierda, estilo de fuente, transparencia, bordes, fragmentos HTML y LaTeX, texto degradado y fuentes personalizadas cargadas desde archivos o secuencias.
 ---
+Aspose.PDF para Java admite la inserción de texto sin formato, diseño avanzado, estilo, degradados, HTML, LaTeX y fuentes personalizadas.
 
-Para agregar texto a un archivo PDF existente:
 
-1. Abre el PDF de entrada usando el objeto Document.
-2. Obtén la página particular a la que deseas agregar el texto.
-3. Crea un objeto TextFragment con el texto de entrada junto con otras propiedades del texto. El objeto TextBuilder creado a partir de esa página particular – a la que deseas agregar el texto – te permite agregar el objeto TextFragment a la página usando el método AppendText.
-4. Llama al método Save del objeto Document y guarda el archivo PDF de salida.
+## 
+Agregar un fragmento de texto simple
 
-## Agregar Texto
 
-El siguiente fragmento de código te muestra cómo agregar texto en un archivo PDF existente.
+
+Utilice este ejemplo cuando una cadena de texto corta deba colocarse en coordenadas de página fijas.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cree un `TextFragment` y establezca su posición.
+1. Agréguelo a la página y guarde el documento.
+
 
 ```java
-public static void AddingText() {
-    // Cargar el archivo PDF
-    Document document = new Document(_dataDir + "sample.pdf");
+public static void addTextSimpleCase(Path outputFile) {
+      try (Document document = new Document()) {
+          Page page = document.getPages().add();
 
-    // obtener la página particular
-    Page pdfPage = document.getPages().get_Item(1);
-    // crear fragmento de texto
-    TextFragment textFragment = new TextFragment("Aspose.PDF");
-    textFragment.setPosition(new Position(80, 700));
+          TextFragment textFragment = new TextFragment("Hello, Aspose!");
+          textFragment.setPosition(new Position(100, 600));
 
-    // establecer propiedades del texto
-    textFragment.getTextState().setFont(FontRepository.findFont("Verdana"));
-    textFragment.getTextState().setFontSize(14);
-    textFragment.getTextState().setForegroundColor(Color.getBlue());
-    textFragment.getTextState().setBackgroundColor(Color.getLightGray());
+          page.getParagraphs().add(textFragment);
+          document.save(outputFile.toString());
+      }
+  }
+```
 
-    // crear objeto TextBuilder
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // agregar el fragmento de texto a la página PDF
-    textBuilder.appendText(textFragment);
+## 
+Agregar un párrafo dentro de un rectángulo
 
-    // Guardar el documento PDF resultante.
-    document.save(_dataDir + "AddText_out.pdf");
+
+
+Utilice este ejemplo cuando un bloque de texto más grande deba fluir dentro de un área delimitada.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cargue el texto fuente y configure un rectángulo `TextParagraph` y un modo de ajuste.
+1. Adjunte el fragmento a través de `TextBuilder` y guarde el PDF.
+
+
+```java
+public static void addParagraph(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        String text = Files.exists(loremPath)
+                ? Files.readString(loremPath)
+                : "Lorem ipsum sample text not found.";
+
+        TextBuilder builder = new TextBuilder(page);
+        TextParagraph paragraph = new TextParagraph();
+        paragraph.setFirstLineIndent(20);
+        paragraph.setRectangle(new Rectangle(80, 800, 400, 200, true));
+        paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.DiscretionaryHyphenation);
+
+        TextFragment fragment = new TextFragment(text);
+        fragment.getTextState().setFont(FontRepository.findFont("Times New Roman"));
+        fragment.getTextState().setFontSize(12);
+
+        paragraph.appendLine(fragment);
+        builder.appendParagraph(paragraph);
+
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 
+Agregar párrafos con diferentes configuraciones de sangría
 
-## Cargando Fuente desde Stream
 
-El siguiente fragmento de código muestra cómo cargar una fuente desde un objeto Stream al agregar texto a un documento PDF.
+
+Utilice este ejemplo cuando la primera línea y las siguientes deban utilizar reglas de sangría diferentes.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Prepare el fragmento de texto compartido y cree múltiples objetos `TextParagraph`.
+1. Configure la sangría para cada párrafo, añádalos y guarde el documento.
+
 
 ```java
-import com.aspose.pdf.*;
-import com.aspose.pdf.text.FontTypes;
+public static void addParagraphsIndents(Path outputFile) throws Exception {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;  
-//...
-public static void LoadingFontFromStream() throws FileNotFoundException{
-    
-    String fontFile = "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf";
+        String text = Files.exists(loremPath)
+                ? Files.readString(loremPath)
+                : "Lorem ipsum sample text not found.";
 
-    // Cargar archivo PDF de entrada
-    Document doc = new Document(_dataDir + "input.pdf");
-    // Crear objeto constructor de texto para la primera página del documento
-    TextBuilder textBuilder = new TextBuilder(doc.getPages().get_Item(1));
-    // Crear fragmento de texto con cadena de ejemplo
-    TextFragment textFragment = new TextFragment("Hello world");
-    
-    if (fontFile != "")
-    {
-        // Cargar la fuente TrueType en el objeto stream
-        FileInputStream fontStream = new FileInputStream(fontFile);            
-        // Establecer el nombre de la fuente para la cadena de texto
-        textFragment.getTextState().setFont(FontRepository.openFont(fontStream, FontTypes.TTF));
-        // Especificar la posición para el Fragmento de Texto
-        textFragment.setPosition(new Position(10, 10));
-        // Agregar el texto al TextBuilder para que se pueda colocar sobre el archivo PDF
-        textBuilder.appendText(textFragment);
-        
-        _dataDir = _dataDir + "LoadingFontFromStream_out.pdf";
-    
-        // Guardar el documento PDF resultante.
-        doc.save(_dataDir); 
-    }       
+        TextFragment fragment = new TextFragment(text);
+        fragment.getTextState().setFont(FontRepository.findFont("Times New Roman"));
+        fragment.getTextState().setFontSize(12);
+
+        TextBuilder builder = new TextBuilder(page);
+        TextParagraph paragraph1 = new TextParagraph();
+        paragraph1.setFirstLineIndent(20);
+        paragraph1.setRectangle(new Rectangle(80, 800, 300, 50, true));
+        paragraph1.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
+        paragraph1.appendLine(fragment);
+        builder.appendParagraph(paragraph1);
+
+        TextParagraph paragraph2 = new TextParagraph();
+        paragraph2.setSubsequentLinesIndent(20);
+        paragraph2.setRectangle(new Rectangle(320, 800, 500, 50, true));
+        paragraph2.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
+        paragraph2.appendLine(fragment);
+        builder.appendParagraph(paragraph2);
+
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 
+Insertar texto con un salto de línea manual
 
-## Agregar Texto usando TextParagraph
 
-El siguiente fragmento de código muestra cómo agregar texto en un documento PDF usando la clase [TextParagraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextParagraph).
+
+Utilice este ejemplo cuando un fragmento de texto deba contener una nueva línea explícita.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cree un `TextFragment` que contenga un salto de línea y configure su estilo.
+1. Agréguelo a través de `TextParagraph` y guarde el PDF.
+
 
 ```java
-public static void AddTextUsingTextParagraph() {
-    // Abrir documento
-    Document doc = new Document();
-    // Agregar página a la colección de páginas del objeto Document
-    Page page = doc.getPages().add();
-    TextBuilder builder = new TextBuilder(page);
-    // Crear párrafo de texto
-    TextParagraph paragraph = new TextParagraph();
-    // Establecer la sangría de las líneas subsiguientes
-    paragraph.setSubsequentLinesIndent (20);
-    // Especificar la ubicación para agregar TextParagraph
-    paragraph.setRectangle(new Rectangle(100, 300, 200, 700));
-    // Especificar el modo de ajuste de palabras
-    paragraph.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
-    // Crear fragmento de texto
-    TextFragment fragment1 = new TextFragment("the quick brown fox jumps over the lazy dog");
-    fragment1.getTextState().setFont (FontRepository.findFont("Times New Roman"));
-    fragment1.getTextState().setFontSize (12);
-    // Agregar fragmento al párrafo
-    paragraph.appendLine(fragment1);
-    // Agregar párrafo
-    builder.appendParagraph(paragraph);
+public static void addNewLine(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-    _dataDir = _dataDir + "AddTextUsingTextParagraph_out.pdf";
+        TextFragment textFragment = new TextFragment("Applicant Name: " + System.lineSeparator() + " Joe Smoe");
+        textFragment.getTextState().setFontSize(12);
+        textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment.getTextState().setBackgroundColor(Color.getLightGray());
+        textFragment.getTextState().setForegroundColor(Color.getRed());
 
-    // Guardar el documento PDF resultante.
-    doc.save(_dataDir);        
+        TextParagraph paragraph = new TextParagraph();
+        paragraph.appendLine(textFragment);
+        paragraph.setPosition(new Position(100, 600));
+
+        TextBuilder textBuilder = new TextBuilder(page);
+        textBuilder.appendParagraph(paragraph);
+
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 
+Inspeccionar saltos de línea detectados
 
-## Añadir Hipervínculo a TextSegment
 
-Una página PDF puede constar de uno o más objetos TextFragment, donde cada objeto TextFragment puede tener una o más instancias de TextSegment. Para establecer un hipervínculo en TextSegment, se puede utilizar la propiedad Hyperlink de la clase TextSegment mientras se proporciona el objeto de la instancia de Aspose.Pdf.WebHyperlink. Por favor, intente utilizar el siguiente fragmento de código para cumplir con este requisito.
+
+Utilice este ejemplo cuando necesite revisar el resultado de la notificación relacionada con el diseño del texto y el ajuste de línea.
+
+
+1. 
+Cree un nuevo documento PDF y habilite el registro de notificaciones.
+
+1. 
+Agregue varios fragmentos de texto largos a la página.
+1. Inspeccione las notificaciones y guarde el documento.
+
 
 ```java
-public static void AddHyperlinkToTextSegment() {
-    // Crear instancia de documento
-    Document doc = new Document();
-    // Agregar página a la colección de páginas del archivo PDF
-    Page page1 = doc.getPages().add();
+public static void determineLineBreak(Path outputFile) {
+    try (Document document = new Document()) {
+        document.setEnableNotificationLogging(true);
 
-    // Crear instancia de TextFragment
-    TextFragment tf = new TextFragment("Fragmento de texto de ejemplo");
-    // Establecer alineación horizontal para TextFragment
-    tf.setHorizontalAlignment(HorizontalAlignment.Right);
+        Page page = document.getPages().add();
+        for (int i = 0; i < 4; i++) {
+            TextFragment text = new TextFragment(
+                    "Lorem ipsum \r\ndolor sit amet, consectetur adipiscing elit, "
+                            + "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                            + "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+                            + "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in "
+                            + "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla "
+                            + "pariatur. Excepteur sint occaecat cupidatat non proident, sunt in "
+                            + "culpa qui officia deserunt mollit anim id est laborum.");
+            text.getTextState().setFontSize(20);
+            page.getParagraphs().add(text);
+        }
 
-    // Crear un TextSegment con texto de ejemplo
-    TextSegment segment = new TextSegment(" ... Segmento de texto 1...");
-    // Agregar segmento a la colección de segmentos de TextFragment
-    tf.getSegments().add(segment);
-
-    // Crear un nuevo TextSegment
-    segment = new TextSegment("Enlace a Google");
-    // Agregar segmento a la colección de segmentos de TextFragment
-
-    tf.getSegments().add(segment);
-
-    // Establecer hipervínculo para TextSegment
-    segment.setHyperlink(new com.aspose.pdf.WebHyperlink("www.aspose.com"));
-
-    // Establecer color de primer plano para el segmento de texto
-    segment.getTextState().setForegroundColor(com.aspose.pdf.Color.getBlue());
-
-    // Establecer formato de texto como cursiva
-    segment.getTextState().setFontStyle(FontStyles.Italic);
-
-    // Crear otro objeto TextSegment
-    segment = new TextSegment("TextSegment sin hipervínculo");
-
-    // Agregar segmento a la colección de segmentos de TextFragment
-    tf.getSegments().add(segment);
-
-    // Agregar TextFragment a la colección de párrafos del objeto página
-    page1.getParagraphs().add(tf);
-
-    _dataDir = _dataDir + "AddHyperlinkToTextSegment_out.pdf";
-
-    // Guardar el documento PDF resultante.
-    doc.save(_dataDir);
-
+        System.out.println(document.getPages().get_Item(1).getNotifications());
+        document.save(outputFile.toString());
+    }
 }
 ```
 
+## 
+Medir el ancho del texto dinámicamente
 
-## Use OTF Font
 
-Aspose.PDF for Java ofrece la función de usar fuentes Personalizadas/TrueType al crear/manipular contenidos de archivos PDF para que los contenidos del archivo se muestren utilizando fuentes distintas a las fuentes predeterminadas del sistema. A partir del lanzamiento de Aspose.PDF para Java 10.4.0, hemos proporcionado soporte para Fuentes de Tipo Abierto.
+
+Utilice este ejemplo cuando deba medir el ancho de caracteres y cadenas antes de tomar decisiones sobre el diseño.
+
+
+1. 
+Resuelva la fuente de destino y cree un `TextState`.
+
+1. 
+Mida caracteres y compare los resultados de las API de estado de texto y fuente.
+1. Envíe cualquier discrepancia para su validación.
+
 
 ```java
-public static void UseOTFFont() {
-    // Crear una nueva instancia de documento
-    Document pdfDocument = new Document();
-    // Agregar una página a la colección de páginas del archivo PDF
-    Page page = pdfDocument.getPages().add();
-    // Crear una instancia de TextFragment con texto de ejemplo
-    TextFragment fragment = new TextFragment("Texto de ejemplo en fuente OTF");
-    // O incluso puede especificar la ruta de la fuente OTF en el directorio del sistema
-    fragment.getTextState().setFont(FontRepository.openFont("/home/aspose/.fonts/Montserrat-Black.otf"));
-    // Especificar que la fuente se incruste dentro del archivo PDF, para que se muestre correctamente,
-    // Incluso si la fuente específica no está instalada/presente en la máquina de destino
-    fragment.getTextState().getFont().setEmbedded(true);
-    // Agregar TextFragment a la colección de párrafos de la instancia de Page
-    page.getParagraphs().add(fragment);
-    // Guardar el documento PDF resultante.
-    pdfDocument.save(_dataDir + "OTFFont_out.pdf");
-}
-```
-
-
-## Añadir Cadena HTML usando DOM
-
-La clase Aspose.Pdf.Generator.Text contiene una propiedad llamada IsHtmlTagSupported que permite agregar etiquetas/contenidos HTML en archivos PDF. El contenido añadido se renderiza en etiquetas HTML nativas en lugar de aparecer como una simple cadena de texto. Para admitir una característica similar en el nuevo Modelo de Objeto de Documento (DOM) del espacio de nombres Aspose.Pdf, se ha introducido la clase HtmlFragment.
-
-La instancia [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlFragment) se puede usar para especificar los contenidos HTML que deben colocarse dentro del archivo PDF. Similar a TextFragment, HtmlFragment es un objeto a nivel de párrafo y se puede agregar a la colección de párrafos del objeto Page. Los siguientes fragmentos de código muestran los pasos para colocar contenidos HTML dentro del archivo PDF usando el enfoque DOM.
-
-```java
-public static void AddingHtmlString() {
-    // Instanciar objeto Document
-    Document doc = new Document();
-    // Añadir una página a la colección de páginas del archivo PDF
-    Page page = doc.getPages().add();
-    // Instanciar HtmlFragment con contenidos HTML
-    HtmlFragment title = new HtmlFragment("<h1 style=\"color:blue\"><strong>Demostración de Cadena HTML</strong></h1>");
-    // establecer MarginInfo para detalles de margen
-    MarginInfo Margin = new MarginInfo();
-    Margin.setBottom(10);
-    Margin.setTop(200);
-    // Establecer información de margen
-    title.setMargin(Margin);
-    // Añadir Fragmento HTML a la colección de párrafos de la página
-    page.getParagraphs().add(title);
-    // Guardar archivo PDF
-    doc.save(_dataDir + "sample_html_out.pdf");
-}
-```
-
-
-El siguiente fragmento de código demuestra los pasos para agregar listas ordenadas de HTML en el documento:
-
-```java
-public static void AddHTMLOrderedListIntoDocuments() {
-    // Instanciar objeto Document
-    Document doc = new Document();
-    // Instanciar objeto HtmlFragment con el fragmento HTML correspondiente
-    HtmlFragment t = new HtmlFragment(
-            "<div style=\"font-family: sans-serif\"><ul><li>Primero</li><li>Segundo</li><li>Tercero</li><li>Cuarto</li><li>Quinto</li></ul><p>Texto después de la lista.</p><p>Siguiente línea<br/>Última línea</p></div>");
-    // Agregar Página en la Colección de Páginas
-    Page page = doc.getPages().add();
-    // Agregar HtmlFragment dentro de la página
-    page.getParagraphs().add(t);
-    // Guardar archivo PDF resultante
-    doc.save(_dataDir + "AddHTMLOrderedListIntoDocuments_out.pdf");
-}
-```
-
-También puede establecer el formato de cadena HTML usando el objeto TextState de la siguiente manera:
-
-```java
-public static void AddHTMLStringFormatting() {
-    // Instanciar objeto Document
-    Document doc = new Document();
-    // Agregar una página a la colección de páginas del archivo PDF
-    Page page = doc.getPages().add();
-    // Instanciar HtmlFragment con contenidos HTML
-    HtmlFragment title = new HtmlFragment("<h1><strong>Demostración de Cadena HTML</strong></h1>");
-    TextState textState = new TextState(12);
-    textState.setFont(FontRepository.findFont("Calibri"));
-    textState.setForegroundColor(Color.getGreen());
-    textState.setBackgroundColor(Color.getCoral());
-    title.setTextState(textState);
-
-    // Agregar Fragmento HTML a la colección de párrafos de la página
-    page.getParagraphs().add(title);
-    // Guardar archivo PDF
-    doc.save(_dataDir + "sample_html_out.pdf");
-}
-```
-
-
-En caso de que establezcas algunos valores de atributos de texto a través del marcado HTML y luego proporciones los mismos valores en las propiedades de TextState, ellos sobrescribirán los parámetros HTML por las propiedades del formulario de instancia de TextState. Los siguientes fragmentos de código muestran el comportamiento descrito.
-
-```java
-public static void AddHTMLUsingDOMAndOverwrite() {
-    // Instanciar objeto Document
-    Document doc = new Document();
-    // Agregar una página a la colección de páginas del archivo PDF
-    Page page = doc.getPages().add();
-    // Instanciar HtmlFragment con contenido HTML
-    HtmlFragment title = new HtmlFragment("<p style='font-family: Verdana'><b><i>La tabla contiene texto</i></b></p>");
-    // La fuente 'Verdana' se restablecerá a 'Arial'
-    title.setTextState(new TextState("Arial Black"));
-    title.setTextState(new TextState(20));
-    // Establecer información de margen inferior
-    title.getMargin().setBottom(10);
-    // Establecer información de margen superior
-    title.getMargin().setTop(400);
-    // Agregar fragmento HTML a la colección de párrafos de la página
-    page.getParagraphs().add(title);
-    // Guardar archivo PDF
-    doc.save(_dataDir + "AddHTMLUsingDOMAndOverwrite_out.pdf");
-}
-```
-
-
-## FootNotes y EndNotes (DOM)
-
-FootNotes indican notas en el texto de tu documento usando números en superíndice consecutivos. La nota actual está indentada y puede aparecer como una nota al pie en la parte inferior de la página.
-
-### Agregar FootNote
-
-En un sistema de referencia por nota al pie, indica una referencia:
-
-- colocando un número pequeño sobre la línea del tipo directamente después del material de origen. Este número se llama identificador de nota y se sitúa ligeramente por encima de la línea de texto.
-- colocando el mismo número, seguido de una cita de tu fuente, en la parte inferior de la página. La numeración de notas al pie debe ser numérica y cronológica: la primera referencia es 1, la segunda es 2, y así sucesivamente.
-
-La ventaja de las notas al pie es que el lector puede simplemente bajar la vista hacia la página para descubrir la fuente de una referencia que les interese.
-
-Por favor, sigue los pasos especificados a continuación para crear una FootNote:
-
-- Crear una instancia de Document
-- Crear un objeto Page
-- Crear un objeto TextFragment
-
-- Crear una instancia de Note y pasar su valor a la propiedad TextFragment.FootNote
-- Agregar TextFragment a la colección de párrafos de una instancia de página
-
-### Estilo de línea personalizado para FootNote
-
-El siguiente ejemplo demuestra cómo agregar notas al pie al final de la página del PDF y definir un estilo de línea personalizado.
-
-```java
-public static void AddFootNote() {
-    // crear instancia de Document
-    Document document = new Document(_dataDir + "sample.pdf");
-
-    Page page = document.getPages().get_Item(1);
-    TextFragmentAbsorber tfa = new TextFragmentAbsorber("Portable Document Format");
-    tfa.visit(page);
-
-    TextFragment t = tfa.getTextFragments().get_Item(1);
-    Note note = new Note();
-    note.setText("Demo");
-    t.setFootNote(note);
-
-    // crear instancia de TextFragment
-    TextFragment text = new TextFragment("Hello World");
-    // establecer valor de FootNote para TextFragment
-    text.setFootNote(new Note("nota al pie para texto de prueba 1"));
-    // agregar TextFragment a la colección de párrafos de la primera página del documento
-    page.getParagraphs().add(text);
-    // crear segundo TextFragment
-    text = new TextFragment("Aspose.Pdf for Java");
-    // establecer FootNote para el segundo fragmento de texto
-    text.setFootNote(new Note("nota al pie para texto de prueba 2"));
-    // agregar segundo fragmento de texto a la colección de párrafos del archivo PDF
-    page.getParagraphs().add(text);
-
-    document.save(_dataDir + "sample_footnote.pdf");
-}
-```
-
-
-Podemos configurar el formato de la Etiqueta de Nota al Pie (identificador de nota) utilizando el objeto TextState de la siguiente manera:
-
-```java
-public static void AddCustomFootNoteLabel() {
-    // crear instancia de Document
-    Document document = new Document(_dataDir + "sample.pdf");
-
-    Page page = document.getPages().get_Item(1);
-    TextFragmentAbsorber tfa = new TextFragmentAbsorber("Portable Document Format");
-    tfa.visit(page);
-
-    TextFragment t = tfa.getTextFragments().get_Item(1);
-    Note note = new Note();
-    note.setText("Demo");
-    t.setFootNote(note);
-
-    // crear instancia de TextFragment
-    TextFragment text = new TextFragment("Hola Mundo");
-    // establecer valor de Nota al Pie para TextFragment
-    text.setFootNote(new Note("nota al pie para texto de prueba 1"));
-    text.getFootNote().setText("21");
-    TextState ts = new TextState();
-    ts.setForegroundColor(Color.getBlue());
-    ts.setFontStyle(FontStyles.Italic);
-    text.getFootNote().setTextState(ts);
-
-    // añadir TextFragment a la colección de párrafos de la primera página del documento
-    page.getParagraphs().add(text);
-    // crear segundo TextFragment
-    text = new TextFragment("Aspose.Pdf para Java");
-    // establecer Nota al Pie para el segundo fragmento de texto
-    text.setFootNote(new Note("nota al pie para texto de prueba 2"));
-    // añadir el segundo fragmento de texto a la colección de párrafos del archivo PDF
-    page.getParagraphs().add(text);
-
-    document.save(_dataDir + "sample_footnote.pdf");
-}
-```
-
-
-### Personalizar etiqueta de nota al pie
-
-Por defecto, el número de la nota al pie es incremental comenzando desde 1. Sin embargo, podemos tener un requisito para establecer una etiqueta de nota al pie personalizada. Para cumplir con este requisito, intente usar el siguiente fragmento de código
-
-```java
-public static void CustomFootNote_Label() {
-    // Crear instancia de Documento
-    Document document = new Document();
-    // Añadir página a la colección de páginas del PDF
-    Page page = document.getPages().add();
-    // Crear objeto GraphInfo
-    GraphInfo graph = new GraphInfo();
-    // Establecer el ancho de línea como 2
-    graph.setLineWidth(2);
-    // Establecer el color para el objeto graph
-    graph.setColor(Color.getRed());
-    // Establecer el valor de la matriz de guiones como 3
-    graph.setDashArray(new int[] { 3 });
-    // Establecer el valor de fase de guiones como 1
-    graph.setDashPhase(1);
-    // Establecer el estilo de línea de nota al pie para la página como graph
-    page.setNoteLineStyle(graph);
-
-    // Crear instancia de TextFragment
-    TextFragment text = new TextFragment("Hello World");
-    // Establecer el valor de la nota al pie para TextFragment
-    text.setFootNote(new Note("nota al pie para texto de prueba 1"));
-    // Especificar etiqueta personalizada para la nota al pie
-    text.getFootNote().setText(" Aspose(2021)");
-    // Añadir TextFragment a la colección de párrafos de la primera página del documento
-    page.getParagraphs().add(text);
-
-    document.save(_dataDir + "CustomizeFootNoteLabel_out.pdf");
-}
-```
-
-
-## Añadiendo Imagen y Tabla a una Nota al Pie
-
-En versiones de lanzamiento anteriores, se proporcionó soporte para Notas al Pie, pero solo era aplicable al objeto TextFragment. Sin embargo, a partir del lanzamiento de Aspose.PDF para Java 10.7.0, también puedes agregar Notas al Pie a otros objetos dentro del documento PDF, como Tabla, Celdas, etc. El siguiente fragmento de código muestra los pasos para agregar una Nota al Pie al objeto TextFragment y luego agregar un objeto Imagen y Tabla a la colección de párrafos de la sección de Nota al Pie.
-
-```java
-public static void AddingImageAndTableToFootnote() {
-    // Crear instancia de Documento
-    Document document = new Document();
-    // Agregar página a la colección de páginas del PDF
-    Page page = document.getPages().add();
-    // Crear instancia de TextFragment
-    TextFragment text = new TextFragment("Hello World");
-
-    page.getParagraphs().add(text);
-
-    text.setFootNote(new Note());
-    Image image = new Image();
-    image.setFile(_dataDir + "aspose-logo.jpg");
-    image.setFixHeight(20);
-    text.getFootNote().getParagraphs().add(image);
-    TextFragment footNote = new TextFragment("texto de la nota al pie");
-    footNote.getTextState().setFontSize(20);
-    footNote.setInLineParagraph(true);
-    text.getFootNote().getParagraphs().add(footNote);
-    Table table = new Table();
-    table.getRows().add().getCells().add().getParagraphs().add(new TextFragment("Fila 1 Celda 1"));
-    text.getFootNote().getParagraphs().add(table);
-
-    page.getParagraphs().add(text);
-
-    document.save(_dataDir + "AddImageAndTable_out.pdf");
-}
-```
-
-
-## Cómo Crear Notas al Final
-
-Una Nota al Final es una cita de fuente que remite a los lectores a un lugar específico al final del documento donde pueden encontrar la fuente de la información o las palabras citadas o mencionadas en el documento. Al usar notas al final, la oración citada, parafraseada o resumida va seguida de un número en superíndice.
-
-El siguiente ejemplo demuestra cómo agregar una Nota al Final en la página de un Pdf.
-
-```java
-public static void HowToCreateEndNotes() {
-    Document doc = new Document();
-    // añadir página a la colección de páginas del PDF
-    Page page = doc.getPages().add();
-    // crear instancia de TextFragment
-    TextFragment text = new TextFragment("Hello World");
-    // establecer valor de FootNote para TextFragment
-    text.setEndNote(new Note("nota final de ejemplo"));
-    // especificar etiqueta personalizada para FootNote
-    text.getEndNote().setText(" Aspose(2021)");
-    // añadir TextFragment a la colección de párrafos de la primera página del documento
-    page.getParagraphs().add(text);
-    // guardar el archivo PDF
-    doc.save(_dataDir + "EndNote.pdf");
-}
-```
-
-
-## Texto e Imagen como Párrafo en Línea
-
-El diseño predeterminado del archivo PDF es un diseño de flujo (de arriba a la izquierda hacia abajo a la derecha). Por lo tanto, cada nuevo elemento que se agrega al archivo PDF se añade en el flujo de la esquina inferior derecha. Sin embargo, podemos tener un requisito para mostrar varios elementos de la página, es decir, Imagen y Texto al mismo nivel (uno tras otro). Un enfoque puede ser crear una instancia de Tabla y agregar ambos elementos a objetos de celda individuales. Sin embargo, otro enfoque puede ser el párrafo en línea. Al establecer la propiedad IsInLineParagraph de Imagen y Texto como verdadera, estos párrafos aparecerán como en línea con otros elementos de la página.
-
-El siguiente fragmento de código muestra cómo agregar texto e imagen como párrafos en línea en un archivo PDF.
-
-```java
- public static void TextAndImageAsInLineParagraph() {
-    // Instanciar la clase Document
-    Document doc = new Document();
-    // Agregar página a la colección de páginas de la instancia de Document
-    Page page = doc.getPages().add();
-    // Crear TextFragment
-    TextFragment text = new TextFragment("Hola Mundo.. ");
-    // Agregar fragmento de texto a la colección de párrafos del objeto Page
-    page.getParagraphs().add(text);
-    // Crear una instancia de imagen
-    Image image = new Image();
-    // Configurar la imagen como párrafo en línea para que aparezca justo después
-    // del objeto de párrafo anterior (TextFragment)
-    image.setInLineParagraph (true);
-    // Especificar la ruta del archivo de imagen
-    image.setFile(_dataDir + "aspose-logo.jpg");
-    // Establecer altura de la imagen (opcional)
-    image.setFixHeight(30);
-    // Establecer ancho de la imagen (opcional)
-    image.setFixWidth(100);
-    // Agregar imagen a la colección de párrafos del objeto page
-    page.getParagraphs().add(image);
-    // Re-inicializar el objeto TextFragment con diferentes contenidos
-    text = new TextFragment(" Hola de nuevo..");
-    // Configurar TextFragment como párrafo en línea
-    text.setInLineParagraph (true);
-    // Agregar el nuevo TextFragment creado a la colección de párrafos de la página
-    page.getParagraphs().add(text);
-    
-    doc.save(_dataDir+"TextAndImageAsParagraph_out.pdf");
-}
-```
-
-
-## Especificar el Espaciado de Caracteres al Agregar Texto
-
-Se puede agregar texto dentro de una colección de párrafos de archivos PDF utilizando la instancia de TextFragment o mediante el objeto TextParagraph e incluso puede estampar el texto dentro del PDF utilizando la clase TextStamp. Al agregar el texto, podemos tener un requisito para especificar el espaciado de caracteres para los objetos de texto. Para cumplir con este requisito, se ha introducido una nueva propiedad llamada propiedad CharacterSpacing. Por favor, revise los siguientes enfoques para cumplir con este requisito.
-
-Los siguientes enfoques muestran los pasos para especificar el espaciado de caracteres al agregar texto dentro de un documento PDF.
-
-## Usando TextBuilder y TextFragment
-
-```java
- public static void CharacterSpacing_TextFragment(){
-    // Crear instancia de Documento
-    Document pdfDocument = new Document();
-    // Agregar página a la colección de páginas del Documento
-    Page page = pdfDocument.getPages().add();
-    // Crear instancia de TextBuilder
-    TextBuilder builder = new TextBuilder(page);
-    // Crear instancia de fragmento de texto con contenido de muestra
-    TextFragment wideFragment = new TextFragment("Texto con espaciado de caracteres incrementado");
-    wideFragment.getTextState().applyChangesFrom(new TextState("Arial", 12));
-    // Especificar espaciado de caracteres para TextFragment
-    wideFragment.getTextState().setCharacterSpacing(2.0f);
-    // Especificar la posición de TextFragment
-    wideFragment.setPosition(new Position(100, 650));
-    // Añadir TextFragment a la instancia de TextBuilder
-    builder.appendText(wideFragment);        
-    // Guardar el documento PDF resultante.
-    pdfDocument.save(_dataDir+ "CharacterSpacingUsingTextBuilderAndFragment_out.pdf");
-}
-```
-
-
-## Usando TextBuilder y TextParagraph
-
-```java
-public static void CharacterSpacing_TextParagraph() {
-    // Crear instancia de Document
-    Document pdfDocument = new Document();
-    // Agregar página a la colección de páginas del Documento
-    Page page = pdfDocument.getPages().add();
-    // Crear instancia de TextBuilder
-    TextBuilder builder = new TextBuilder(page);
-    // Instanciar instancia de TextParagraph
-    TextParagraph paragraph = new TextParagraph();
-    // Crear instancia de TextState para especificar el nombre y tamaño de la fuente
-    TextState state = new TextState("Arial", 12);
-    // Especificar el espaciado de caracteres
-    state.setCharacterSpacing (1.5f);
-    // Añadir texto al objeto TextParagraph
-    paragraph.appendLine("Este es un párrafo con espaciado de caracteres", state);
-    // Especificar la posición para TextParagraph
-    paragraph.setPosition (new Position(100, 550));
-    // Añadir TextParagraph a la instancia de TextBuilder
-    builder.appendParagraph(paragraph);
-    // Guardar el documento PDF resultante.
-    pdfDocument.save(_dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf");
-}
-```
-
-
-## Usando TextStamp
-
-```java
-public static void CharacterSpacing_TextStamp() {
-    // Crear una instancia de Document
-    Document pdfDocument = new Document();
-    // Agregar una página a la colección de páginas del Document
-    Page page = pdfDocument.getPages().add();
-    // Instanciar TextStamp con texto de ejemplo
-    TextStamp stamp = new TextStamp("Este es un sello de texto con espaciado de caracteres");
-    // Especificar el nombre de la fuente para el objeto Stamp
-    stamp.getTextState().setFont(FontRepository.findFont("Arial"));
-    // Especificar el tamaño de fuente para TextStamp
-    stamp.getTextState().setFontSize(12);
-    // Especificar el espaciado de caracteres como 1f
-    stamp.getTextState().setCharacterSpacing (1f);
-    // Establecer la XIndent para Stamp
-    stamp.setXIndent(100);
-    // Establecer la YIndent para Stamp
-    stamp.setYIndent(500);
-    // Agregar el sello textual a la instancia de página
-    stamp.put(page);        
-    // Guardar el documento PDF resultante.
-    pdfDocument.save(_dataDir+"CharacterSpacingUsingTextStamp_out.pdf");        
-}
-```
-
-## Crear documento PDF de varias columnas
-
-En revistas y periódicos, vemos principalmente que las noticias se muestran en varias columnas en las páginas individuales en lugar de los libros donde los párrafos de texto se imprimen principalmente en toda la página de izquierda a derecha.
- Muchas aplicaciones de procesamiento de documentos como Microsoft Word y Adobe Acrobat Writer permiten a los usuarios crear múltiples columnas en una sola página y luego agregarles datos.
-
-Aspose.PDF para Java también ofrece la función de crear múltiples columnas dentro de las páginas de documentos PDF. Para crear un archivo PDF de múltiples columnas, podemos hacer uso de la clase Aspose.Pdf.FloatingBox ya que proporciona la propiedad ColumnInfo.ColumnCount para especificar el número de columnas dentro de FloatingBox y también podemos especificar el espacio entre columnas y los anchos de las columnas usando las propiedades ColumnInfo.ColumnSpacing y ColumnInfo.ColumnWidths respectivamente. Por favor, tenga en cuenta que FloatingBox es un elemento dentro del Modelo de Objeto de Documento y puede tener un posicionamiento obsoleto en comparación con el posicionamiento relativo (es decir, Texto, Gráfico, Imagen, etc.).
-El espaciado entre columnas significa el espacio entre las columnas y el espaciado predeterminado entre las columnas es de 1,25 cm. Si no se especifica el ancho de la columna, entonces Aspose.PDF para Java calcula automáticamente el ancho de cada columna de acuerdo con el tamaño de la página y el espaciado entre columnas.
-
-A continuación se da un ejemplo para demostrar la creación de dos columnas con objetos de Gráficos (Línea) y se añaden a la colección de párrafos de FloatingBox, que luego se añade a la colección de párrafos de la instancia de Page.
-
-```java
-public static void CreateMultiColumn() {
-    Document doc = new Document();
-    // Especificar la información del margen izquierdo para el archivo PDF
-    doc.getPageInfo().getMargin().setLeft(40);
-    
-    // Especificar la información del margen derecho para el archivo PDF
-    doc.getPageInfo().getMargin().setRight(40);
-    
-    Page page = doc.getPages().add();
-
-    com.aspose.pdf.drawing.Graph graph1 = new com.aspose.pdf.drawing.Graph(500, 2);
-    
-    // Añadir la línea a la colección de párrafos del objeto sección
-    page.getParagraphs().add(graph1);
-
-    // Especificar las coordenadas para la línea
-    float[] posArr = new float[] { 1, 2, 500, 2 };
-    com.aspose.pdf.drawing.Line l1 = new com.aspose.pdf.drawing.Line(posArr);
-    graph1.getShapes().add(l1);
-    
-    // Crear variables de cadena con texto que contiene etiquetas html
-    String s = "<span style=\"font-family: \"Times New Roman\", Times, serif;\" font-size=\"14pt\" \">"
-                +"<strong> Cómo evitar estafas de dinero</<strong> </span>";
-    
-    // Crear párrafos de texto que contienen texto HTML
-
-    HtmlFragment heading_text = new HtmlFragment(s);
-    page.getParagraphs().add(heading_text);
-
-    FloatingBox box = new FloatingBox();
-    
-    // Añadir cuatro columnas en la sección
-    box.getColumnInfo().setColumnCount(2);
-    // Establecer el espaciado entre las columnas
-    box.getColumnInfo().setColumnSpacing("5");
-
-    box.getColumnInfo().setColumnWidths("105 105");
-    TextFragment text1 = new TextFragment("Por Un Googler (El Blog Oficial de Google)");
-    text1.getTextState().setFontSize(8);
-    text1.getTextState().setLineSpacing(2);
-    text1.getTextState().setFontSize(10);
-    text1.getTextState().setFontStyle(FontStyles.Italic);
-
-    box.getParagraphs().add(text1);
-    
-    // Crear un objeto de gráficos para dibujar una línea
-    com.aspose.pdf.drawing.Graph graph2 = new com.aspose.pdf.drawing.Graph(50, 10);
-    // Especificar las coordenadas para la línea
-    float[] posArr2 = new float[] { 1, 10, 100, 10 };
-    com.aspose.pdf.drawing.Line l2 = new com.aspose.pdf.drawing.Line(posArr2);
-    graph2.getShapes().add(l2);
-
-    // Añadir la línea a la colección de párrafos del objeto sección
-    box.getParagraphs().add(graph2);
-
-    TextFragment text2 = new TextFragment("Sed augue tortor, sodales id, luctus et, pulvinar ut, eros. Suspendisse vel dolor. "
-    +"Sed quam. Curabitur ut massa vitae eros euismod aliquam. Pellentesque sit amet elit. Vestibulum interdum pellentesque augue."
-    +"Cras mollis arcu sit amet purus. Donec augue. Nam mollis tortor a elit. Nulla viverra nisl vel mauris. Vivamus sapien. nascetur "
-    +"ridiculus mus. Nam justo lorem, aliquam luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, sodales et,nAenean "
-    +"posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam, iaculis sed, pharetra non, mollis ac, mauris. "
-    +"Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique ut, iaculis cursus, tincidunt vitae, "
-    +"risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam justo lorem, aliquam "
-    +"luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, "
-    +"sodales et, semper sed, enim nAenean posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam, iaculis sed, "
-    +"pharetra non, mollis ac, mauris. Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique ut,"
-    +"iaculis cursus, tincidunt vitae, risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus "
-    +"mus. Sed urna. . Duis convallis ultrices nisi. Maecenas non ligula. Nunc nibh est, tincidunt in, placerat sit amet, vestibulum a, nulla."
-    +"Praesent porttitor turpis eleifend ante. Morbi sodales.nAenean posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam,"
-    +"iaculis sed, pharetra non, mollis ac, mauris. Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique"
-    +"ut, iaculis cursus, tincidunt vitae, risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-    +"Sed urna. . Duis convallis ultrices nisi. Maecenas non ligula. Nunc nibh est, tincidunt in, placerat sit amet, vestibulum a, nulla. "
-    +"Praesent porttitor turpis eleifend ante. Morbi sodales.");
-    box.getParagraphs().add(text2);
-
-    page.getParagraphs().add(box);
-
-    // Guardar archivo PDF
-    doc.save(_dataDir + "CreateMultiColumnPdf_out.pdf");        
-}
-```
-
-
-## Trabajar con tabulaciones personalizadas
-
-Un tabulador es un punto de parada para la tabulación. En el procesamiento de textos, cada línea contiene una serie de tabulaciones colocadas a intervalos regulares (por ejemplo, cada media pulgada). Sin embargo, se pueden cambiar, ya que la mayoría de los procesadores de texto te permiten establecer tabulaciones donde desees. Cuando presionas la tecla Tab, el cursor o punto de inserción salta al siguiente tabulador, el cual es invisible. Aunque los tabuladores no existen en el archivo de texto, el procesador de texto los rastrea para que pueda reaccionar correctamente a la tecla Tab.
-
-[Aspose.PDF for Java](https://docs.aspose.com/pdf/java/) permite a los desarrolladores utilizar tabulaciones personalizadas en documentos PDF. La clase Aspose.Pdf.Text.TabStop se usa para establecer tabulaciones personalizadas en la clase [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment).
-
-[Aspose.PDF for Java](https://docs.aspose.com/pdf/java/) también ofrece algunos tipos de líderes de tabulación predefinidos como una enumeración llamada TabLeaderType cuyos valores predefinidos y sus descripciones se dan a continuación:
-
-|**Tipo de Líder de Tabulación**|**Descripción**|
-| :- | :- |
-|None|Sin líder de tabulación|
-|Solid|Líder de tabulación sólido|
-|Dash|Líder de tabulación de guion|
-|Dot|Líder de tabulación de punto|
-
-Aquí hay un ejemplo de cómo establecer paradas de TAB personalizadas.
-
-```java
-public static void CustomTabStops() {
-    Document pdfdocument = new Document();
-    Page page = pdfdocument.getPages().add();
-
-    com.aspose.pdf.TabStops ts = new com.aspose.pdf.TabStops();
-    com.aspose.pdf.TabStop ts1 = ts.add(100);
-    ts1.setAlignmentType(TabAlignmentType.Right);
-    ts1.setLeaderType (TabLeaderType.Solid);
-    
-    com.aspose.pdf.TabStop ts2 = ts.add(200);
-    ts2.setAlignmentType(TabAlignmentType.Center);
-    ts2.setLeaderType (TabLeaderType.Dash);
-
-    com.aspose.pdf.TabStop ts3 = ts.add(300);
-    ts3.setAlignmentType(TabAlignmentType.Left);
-    ts3.setLeaderType (TabLeaderType.Dot);
-
-    TextFragment header = new TextFragment("Este es un ejemplo de formación de tabla con paradas de TAB", ts);
-    TextFragment text0 = new TextFragment("#$TABHead1 #$TABHead2 #$TABHead3", ts);
-
-    TextFragment text1 = new TextFragment("#$TABdata11 #$TABdata12 #$TABdata13", ts);
-    TextFragment text2 = new TextFragment("#$TABdata21 ", ts);
-    text2.getSegments().add(new TextSegment("#$TAB"));
-    text2.getSegments().add(new TextSegment("data22 "));
-    text2.getSegments().add(new TextSegment("#$TAB"));
-    text2.getSegments().add(new TextSegment("data23"));
-
-    page.getParagraphs().add(header);
-    page.getParagraphs().add(text0);
-    page.getParagraphs().add(text1);
-    page.getParagraphs().add(text2);
-    
-    pdfdocument.save(_dataDir + "CustomTabStops_out.pdf"); 
-}
-```
-
-
-## Cómo Agregar Texto Transparente en PDF
-
-Un archivo PDF contiene objetos de Imagen, Texto, Gráfico, adjunto, Anotaciones y, al crear TextFragment, puede establecer información de color de primer plano, color de fondo, así como el formato de texto. Aspose.PDF para Java admite la función de agregar texto con canal de color Alpha. El siguiente fragmento de código muestra cómo agregar texto con color transparente.
-
-```java
-public static void AddTransparentText() {
-    // Crear instancia de Documento
-    Document pdfdocument = new Document();
-    // Crear página para la colección de páginas del archivo PDF
-    Page page = pdfdocument.getPages().add();
-
-    // Crear objeto Gráfico
-    Graph canvas = new Graph(100, 400);
-    // Crear instancia de rectángulo con ciertas dimensiones
-    com.aspose.pdf.drawing.Rectangle rect = new com.aspose.pdf.drawing.Rectangle(100, 100, 400, 400);
-    // Crear objeto de color desde el canal de color Alpha
-    int alpha = 10;
-    int green = 0;
-    int red = 100;
-    int blue = 0;
-    Color alphaColor = Color.fromArgb(alpha, red, green, blue);
-    rect.getGraphInfo().setFillColor(alphaColor);
-    // Agregar rectángulo a la colección de formas del objeto Gráfico
-    canvas.getShapes().add(rect);
-    // Agregar objeto gráfico a la colección de párrafos del objeto página
-    page.getParagraphs().add(canvas);
-    // Configurar valor para no cambiar la posición del objeto gráfico
-    canvas.setChangePosition(false);
-
-    // Crear instancia de TextFragment con valor de ejemplo
-    TextFragment text = new TextFragment(
-            "texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente texto transparente ");
-    // Crear objeto de color desde el canal Alpha
-    alpha = 30;
-    alphaColor = Color.fromArgb(alpha, red, green, blue);
-    // Establecer información de color para la instancia de texto
-    text.getTextState().setForegroundColor(alphaColor);
-    // Agregar texto a la colección de párrafos de la instancia de página
-    page.getParagraphs().add(text);
-    
-    pdfdocument.save(_dataDir + "AddTransparentText_out.pdf");
-}
-```
-
-
-## Especificar el Espaciado de Línea para Fuentes
-
-Cada fuente tiene un cuadrado abstracto, cuya altura es la distancia prevista entre líneas de texto en el mismo tamaño de fuente. Este cuadrado se llama `cuadrado em` y es la cuadrícula de diseño en la cual se definen los contornos de los glifos. Muchas letras de la fuente de entrada tienen puntos que están colocados fuera de los límites del `cuadrado em` de la fuente, por lo que para mostrar la fuente correctamente, se necesita el uso de una configuración especial. El objeto TextFragment tiene un conjunto de opciones de formato de texto que son accesibles a través del método [TextState.getFormattingOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentState#getFormattingOptions--).
-Este método devuelve la clase [TextFormattingOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions).
- Esta clase tiene una enumeración [LineSpacingMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions.LineSpacingMode) que está diseñada para fuentes específicas, por ejemplo, la fuente de entrada "HPSimplified.ttf". También la clase [TextFormattingOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions) tiene un método [setLineSpacing](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFormattingOptions#setLineSpacing-int-) de tipo LineSpacingMode. Solo necesitas establecer LineSpacing en LineSpacingMode.FullSize. El fragmento de código para que una fuente se muestre correctamente sería el siguiente:
-
-```java
-public static void SpecifyLineSpacingForFonts() {
-    String fontFile = _dataDir + "hp-simplified.ttf";
-    // Cargar archivo PDF de entrada
-    Document doc = new Document();
-    // Crear TextFormattingOptions con LineSpacingMode.FullSize
-    TextFormattingOptions formattingOptions = new TextFormattingOptions();
-    formattingOptions.setLineSpacing(TextFormattingOptions.LineSpacingMode.FullSize);
-
-    // Crear objeto TextBuilder para la primera página del documento
-    // TextBuilder textBuilder = new TextBuilder(doc.Pages[1]);
-    // Crear fragmento de texto con cadena de ejemplo
-    TextFragment textFragment = new TextFragment("Hello world");
-
-    // Cargar la fuente TrueType en el objeto stream
-    FileInputStream fontStream;
-    try {
-        fontStream = new FileInputStream(fontFile);
-    } catch (FileNotFoundException e) {
-        e.printStackTrace();
-        return;
+public static void getTextWidthDynamically(Path outputFile) {
+    Font font = FontRepository.findFont("Arial");
+    TextState textState = new TextState();
+    textState.setFont(font);
+    textState.setFontSize(14);
+
+    if (Math.abs(font.measureString("A", 14) - 9.337) > 0.001) {
+        System.out.println("Unexpected font string measure!");
     }
 
-    // Establecer el nombre de la fuente para la cadena de texto
-    textFragment.getTextState().setFont(FontRepository.openFont(fontStream, FontTypes.TTF));
-    // Especificar la posición para el Fragmento de Texto
-    textFragment.setPosition(new Position(100, 600));
-    // Establecer TextFormattingOptions del fragmento actual al predefinido (que apunta a
-    // LineSpacingMode.FullSize)
-    textFragment.getTextState().setFormattingOptions(formattingOptions);
-    // Agregar el texto a TextBuilder para que pueda colocarse sobre el archivo PDF
-    // textBuilder.AppendText(textFragment);
-    Page page = doc.getPages().add();
-    page.getParagraphs().add(textFragment);
+    if (Math.abs(textState.measureString("z") - 7.0) > 0.001) {
+        System.out.println("Unexpected font string measure!");
+    }
 
-    // Guardar el documento PDF resultante
-    doc.save(_dataDir + "SpecifyLineSpacing_out.pdf");
+    for (char c = 'A'; c <= 'z'; c++) {
+        double fontMeasure = font.measureString(String.valueOf(c), 14);
+        double textStateMeasure = textState.measureString(String.valueOf(c));
+        if (Math.abs(fontMeasure - textStateMeasure) > 0.001) {
+            System.out.println("Font and state string measuring doesn't match!");
+        }
+    }
 }
 ```
 
-## Obtener el Ancho del Texto Dinámicamente
+## 
+Agregar texto con un segmento de hipervínculo
 
-A veces, es necesario obtener el ancho del texto de manera dinámica. Aspose.PDF para Java incluye dos métodos para la medición del ancho de cadenas. Puede invocar el método [MeasureString](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextState#measureString--) de las clases com.aspose.pdf.Font o com.aspose.pdf.TextState (o ambas). El siguiente fragmento de código muestra cómo utilizar esta funcionalidad.
+
+
+Utilice este ejemplo cuando una parte de un fragmento de texto deba comportarse como un enlace web.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Construya un `TextFragment` con varios objetos `TextSegment`.
+1. Asigne un hipervínculo y un estilo al segmento de destino y luego guarde el documento.
+
 
 ```java
-public static void GetTextWidthDynamicaly() {
-    Font font = FontRepository.findFont("Arial");
-    TextState ts = new TextState();
-        ts.setFont(font);
-        ts.setFontSize(14);
-        if (Math.abs(font.measureString("A", 14) - 9.337) > 0.001)
-            System.out.println("¡Medición inesperada de la cadena de fuente!");
+public static void addTextWithHyperlink(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-        if (Math.abs(ts.measureString("z") - 7.0) > 0.001)
-        System.out.println("¡Medición inesperada de la cadena de fuente!");
+        TextFragment fragment = new TextFragment("Sample Text Fragment");
+        fragment.getSegments().add(new TextSegment(" ... Text Segment 1..."));
 
-        for (char c = 'A'; c <= 'z'; c++)
-        {
-            double fnMeasure = font.measureString(String.valueOf(c), 14);
-            double tsMeasure = ts.measureString(String.valueOf(c));
+        TextSegment segment = new TextSegment("Link to Aspose");
+        fragment.getSegments().add(segment);
+        segment.setHyperlink(new WebHyperlink("https://products.aspose.com/pdf"));
+        segment.getTextState().setForegroundColor(Color.getBlue());
+        segment.getTextState().setFontStyle(FontStyles.Italic);
 
-            if (Math.abs(fnMeasure - tsMeasure) > 0.001)
-                System.out.println("¡La medición de cadena de fuente y estado no coincide!");
+        fragment.getSegments().add(new TextSegment("TextSegment without hyperlink"));
+
+        page.getParagraphs().add(fragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregar texto de derecha a izquierda
+
+
+
+Utilice este ejemplo cuando el documento deba mostrar contenido de secuencia de comandos de derecha a izquierda con la alineación adecuada.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cree un `TextFragment` con el texto RTL de destino y configure su fuente y alineación.
+1. Agréguelo a la página y guarde el PDF.
+
+
+```java
+public static void addTextWithRtlText(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment(
+                "يعتبر خوجا نصر الدين شخصية فولكلورية من الشرق الإسلامي وبعض شعوب البحر الأبيض المتوسط ​​والبلقان، وهو بطل القصص والحكايات القصيرة الفكاهية والساخرة، وأحيانًا الحكايات اليومية.");
+        textFragment.getTextState().setFont(FontRepository.findFont("Tahoma"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.getTextState().setForegroundColor(Color.getBlue());
+        textFragment.setHorizontalAlignment(HorizontalAlignment.Right);
+
+        page.getParagraphs().add(textFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregue texto con estilo y segmentos tipo fórmula
+
+
+
+Utilice este ejemplo cuando el texto normal y los segmentos tipo subíndice deban utilizar diferentes estados de texto en una salida.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Construya el fragmento de estilo principal y componga la fórmula con segmentos auxiliares.
+1. Agregue ambos fragmentos a la página y guarde el documento.
+
+
+```java
+public static void addTextWithFontStyling(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment formula = new TextFragment();
+        TextFragment textFragment = new TextFragment("Hello, Aspose!");
+        textFragment.setPosition(new Position(100, 600));
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        textFragment.getTextState().setFontSize(14);
+        textFragment.getTextState().setForegroundColor(Color.getBlue());
+        textFragment.getTextState().setFontStyle(FontStyles.Bold | FontStyles.Italic);
+        textFragment.getTextState().setUnderline(true);
+        textFragment.setHorizontalAlignment(HorizontalAlignment.Left);
+
+        TextState textStateLetters = new TextState();
+        textStateLetters.setFont(FontRepository.findFont("Arial"));
+        textStateLetters.setFontSize(14);
+        textStateLetters.setForegroundColor(Color.getBlue());
+        textStateLetters.setFontStyle(FontStyles.Bold);
+
+        TextState textStateIndex = new TextState();
+        textStateIndex.setFont(FontRepository.findFont("Arial"));
+        textStateIndex.setFontSize(14);
+        textStateIndex.setForegroundColor(Color.getDarkRed());
+        textStateIndex.setSubscript(true);
+
+        Position position = new Position(100, 500);
+        addSegment(formula, "S = a", textStateLetters, position);
+        addSegment(formula, "2n", textStateIndex, position);
+        addSegment(formula, " + a", textStateLetters, position);
+        addSegment(formula, "2n+1", textStateIndex, position);
+        addSegment(formula, " + a", textStateLetters, position);
+        addSegment(formula, "2n+2", textStateIndex, position);
+        formula.setHorizontalAlignment(HorizontalAlignment.Left);
+
+        page.getParagraphs().add(textFragment);
+        page.getParagraphs().add(formula);
+        document.save(outputFile.toString());
+    }
+}
+
+private static void addSegment(TextFragment formula, String text, TextState state, Position position) {
+    TextSegment segment = new TextSegment(text);
+    segment.setTextState(state);
+    segment.setPosition(position);
+    formula.getSegments().add(segment);
+}
+```
+
+## 
+Añadir texto subrayado
+
+
+
+Utilice este ejemplo cuando un fragmento de texto deba usar visiblemente un estilo de subrayado.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cree el fragmento de texto, configure su fuente y estado de subrayado, y establezca su posición.
+1. Agréguelo con `TextBuilder` y guarde el resultado.
+
+
+```java
+public static void addUnderlineText(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        TextBuilder textBuilder = new TextBuilder(page);
+
+        TextFragment fragment = new TextFragment("Hello, ASPOSE.PDF!");
+        fragment.getTextState().setFont(FontRepository.findFont("Arial"));
+        fragment.getTextState().setFontSize(10);
+        fragment.getTextState().setUnderline(true);
+        fragment.setPosition(new Position(10, 800));
+        textBuilder.appendText(fragment);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agrega texto transparente sobre una forma coloreada
+
+
+
+Utilice este ejemplo cuando el texto deba aparecer con transparencia encima de un gráfico de fondo.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Dibuja la forma del fondo y crea un fragmento de texto semitransparente.
+1. Agregue ambos elementos a la página y guarde el documento.
+
+
+```java
+public static void addTextTransparent(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        com.aspose.pdf.drawing.Graph canvas = new com.aspose.pdf.drawing.Graph(100.0, 400.0);
+        com.aspose.pdf.drawing.Rectangle rectangle = new com.aspose.pdf.drawing.Rectangle(100, 100, 400, 400);
+        rectangle.getGraphInfo().setFillColor(Color.fromArgb(128, 0xC5, 0xB5, 0xFF));
+        canvas.getShapes().addItem(rectangle);
+        canvas.setChangePosition(false);
+        page.getParagraphs().add(canvas);
+
+        TextFragment text = new TextFragment(
+                "This is the transparent text. This is the transparent text. This is the transparent text.");
+        text.getTextState().setForegroundColor(Color.fromArgb(30, 0, 255, 0));
+        page.getParagraphs().add(text);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregar texto invisible
+
+
+
+Utilice este ejemplo cuando deba estar presente texto con capacidad de búsqueda u oculto sin representación visible.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Agregue un fragmento de texto visible y un segundo fragmento con la bandera invisible habilitada.
+1. Guarde el documento.
+
+
+```java
+public static void addTextInvisible(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment text1 = new TextFragment(
+            "This is the visible text. This is the visible text. This is the visible text.");
+        page.getParagraphs().add(text1);
+
+        TextFragment text2 = new TextFragment(
+            "This is the invisible text. This is the invisible text. This is the invisible text.");
+        text2.getTextState().setInvisible(true);
+        page.getParagraphs().add(text2);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregar texto con un borde rectangular
+
+
+
+Utilice este ejemplo cuando el texto deba dibujarse junto con su rectángulo delimitador.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cree un `TextFragment` con estilo y habilite el dibujo del borde del rectángulo de texto.
+1. Añádelo con `TextBuilder` y guarda el PDF.
+
+
+```java
+public static void addTextBorder(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is sample text with border.");
+        textFragment.setPosition(new Position(10, 700));
+        textFragment.getTextState().setFont(FontRepository.findFont("Times New Roman"));
+        textFragment.getTextState().setFontSize(12);
+        textFragment.getTextState().setBackgroundColor(Color.getLightGray());
+        textFragment.getTextState().setForegroundColor(Color.getRed());
+        textFragment.getTextState().setStrokingColor(Color.getDarkRed());
+        textFragment.getTextState().setDrawTextRectangleBorder(true);
+
+        TextBuilder textBuilder = new TextBuilder(page);
+        textBuilder.appendText(textFragment);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregar texto tachado
+
+
+
+Utilice este ejemplo cuando el texto deba utilizar formato tachado.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cree un fragmento de texto con estilo y tachado habilitado.
+1. Agréguelo a la página y guarde el documento.
+
+
+```java
+public static void addStrikeoutText(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("This is sample strikeout text.");
+        textFragment.getTextState().setFontSize(12);
+        textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment.getTextState().setBackgroundColor(Color.getLightGray());
+        textFragment.getTextState().setForegroundColor(Color.getRed());
+        textFragment.getTextState().setStrikeOut(true);
+        textFragment.getTextState().setFontStyle(FontStyles.Bold);
+        textFragment.setPosition(new Position(100, 600));
+
+        TextBuilder textBuilder = new TextBuilder(page);
+        textBuilder.appendText(textFragment);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Aplicar sombreado de degradado axial al texto
+
+
+
+Utilice este ejemplo cuando el texto deba utilizar un relleno degradado lineal en lugar de un color sólido.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Crea el fragmento de texto y asigna un degradado axial a su color de primer plano.
+1. Agréguelo a la página y guarde el PDF.
+
+
+```java
+public static void applyGradientAxialShadingToText(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("PDF TITLE");
+        textFragment.setPosition(new Position(100, 600));
+        textFragment.getTextState().setFontSize(36);
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial Bold"));
+        textFragment.getTextState().setForegroundColor(new Color());
+        textFragment.getTextState().getForegroundColor()
+                .setPatternColorSpace(new GradientAxialShading(Color.getRed(), Color.getBlue()));
+        textFragment.getTextState().setUnderline(true);
+
+        page.getParagraphs().add(textFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Aplicar sombreado degradado radial al texto
+
+
+
+Utilice este ejemplo cuando el texto deba utilizar un relleno degradado radial.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Crea el fragmento de texto y asigna un degradado radial a su color de primer plano.
+1. Agréguelo a la página y guarde el documento.
+
+
+```java
+public static void applyGradientRadialShadingToText(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("PDF TITLE");
+        textFragment.setPosition(new Position(100, 600));
+        textFragment.getTextState().setFontSize(36);
+        textFragment.getTextState().setFont(FontRepository.findFont("Arial Bold"));
+        textFragment.getTextState().setForegroundColor(new Color());
+        textFragment.getTextState().getForegroundColor()
+                .setPatternColorSpace(new GradientRadialShading(Color.getRed(), Color.getBlue()));
+        textFragment.getTextState().setUnderline(true);
+
+        page.getParagraphs().add(textFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregar texto con formato de estilo HTML en línea
+
+
+
+Utilice este ejemplo cuando el formato de superíndice y subíndice deba insertarse mediante marcado HTML.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cree un `HtmlFragment` con el marcado en línea requerido.
+1. Agréguelo a la página y guarde el PDF.
+
+
+```java
+public static void addTextHtmlFragment(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        HtmlFragment textFragment = new HtmlFragment("<pre>S=a<sub>2n</sub>+a<sup>2</sup><pre>");
+        page.getParagraphs().add(textFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregar un fragmento de texto LaTeX
+
+
+
+Utilice este ejemplo cuando deba representar contenido matemático o con formato TeX dentro del PDF.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Cree un `TeXFragment` con la expresión requerida.
+1. Agréguelo a la página y guarde el documento.
+
+
+```java
+public static void addTextLatexFragment(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TeXFragment textFragment = new TeXFragment(
+                "\\underbrace{\\overbrace{a+b}^6 \\cdot \\overbrace{c+d}^7}_\\text{example of text} = 42");
+        page.getParagraphs().add(textFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregue un fragmento HTML enriquecido
+
+
+
+Utilice este ejemplo cuando la página deba mostrar contenido HTML estructurado, como encabezados, párrafos y enlaces.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Prepare la cadena de contenido HTML y cree un `HtmlFragment`.
+1. Agréguelo a la página y guarde el PDF.
+
+
+```java
+public static void addHtmlFragment(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String htmlContent = """
+                <h1 style='color:blue;'>Hello, Aspose!</h1>
+                <p>This is a sample paragraph with <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.</p>
+                <p style='color:green;'>This paragraph is green.</p>
+                <a href='https://www.aspose.com' style='font-size:16px;'>Visit Aspose</a>
+                """;
+        HtmlFragment htmlFragment = new HtmlFragment(htmlContent);
+        page.getParagraphs().add(htmlFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Agregar un fragmento HTML con estado de texto anulado
+
+
+
+Utilice este ejemplo cuando el contenido HTML importado deba heredar una configuración de color y fuente controlada.
+
+
+1. 
+Cree un nuevo documento PDF y agregue una página.
+
+1. 
+Prepare el contenido HTML y cree el `HtmlFragment`.
+1. Asigne un `TextState` personalizado, agregue el fragmento y guarde el documento.
+
+
+```java
+public static void addHtmlFragmentOverrideTextState(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        String htmlContent = """
+                <h1 style='color:blue;font-family:Verdana'>Hello, Aspose!</h1>
+                <p>This is a sample paragraph with <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.</p>
+                <p style='color:green;'>This paragraph is green.</p>
+                <a href='https://www.aspose.com' style='font-size:16px;'>Visit Aspose</a>
+                """;
+        HtmlFragment htmlFragment = new HtmlFragment(htmlContent);
+        TextState textState = new TextState();
+        textState.setFont(FontRepository.findFont("Arial"));
+        textState.setFontSize(14);
+        textState.setForegroundColor(Color.getRed());
+        htmlFragment.setTextState(textState);
+
+        page.getParagraphs().add(htmlFragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Utilice una fuente personalizada cargada desde un archivo
+
+
+
+Utilice este ejemplo cuando el texto deba utilizar una fuente cargada directamente desde una ruta de archivo de fuente.
+
+
+1. 
+Resuelva la ruta del archivo de fuente personalizada.
+
+1. 
+Cree un fragmento de texto y cargue la fuente a través de `FontRepository.openFont`.
+1. Aplique la configuración de fuente y guarde el documento.
+
+
+```java
+public static void useCustomFontFromFile(Path outputFile) {
+    Path fontPath = fontDir.resolve("BriosoPro Italic.otf");
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment fragment = new TextFragment("Hello, Aspose!");
+        fragment.setPosition(new Position(100, 600));
+        fragment.getTextState().setFont(FontRepository.openFont(fontPath.toString()));
+        fragment.getTextState().setFontSize(24);
+        fragment.getTextState().setForegroundColor(Color.getBlue());
+        fragment.getTextState().setFontStyle(FontStyles.Italic);
+
+        page.getParagraphs().add(fragment);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Utilice una fuente personalizada cargada desde una secuencia
+
+
+
+Utilice este ejemplo cuando deba abrir una fuente personalizada desde una secuencia e incrustarla en el PDF.
+
+
+1. 
+Abra el archivo de fuente como una secuencia y cárguelo con `FontRepository`.
+
+1. 
+Cree el fragmento de texto y asigne la fuente incrustada.
+1. Agregue el fragmento a la página y guarde el documento.
+
+```java
+public static void useCustomFontFromStream(Path outputFile) throws Exception {
+    Path fontPath = fontDir.resolve("BriosoPro Italic.otf");
+    try (InputStream fontStream = Files.newInputStream(fontPath)) {
+        Font font = FontRepository.openFont(fontStream, FontTypes.OTF);
+        font.setEmbedded(true);
+
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
+
+            TextFragment fragment = new TextFragment("Hello, Aspose!");
+            fragment.setPosition(new Position(100, 600));
+            fragment.getTextState().setFont(font);
+            fragment.getTextState().setFontSize(14);
+            fragment.getTextState().setForegroundColor(Color.getBlue());
+            fragment.getTextState().setFontStyle(FontStyles.Italic);
+
+            page.getParagraphs().add(fragment);
+            document.save(outputFile.toString());
         }
+    }
 }
 ```

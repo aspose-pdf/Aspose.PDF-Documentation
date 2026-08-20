@@ -1,117 +1,75 @@
 ---
-title: Guardar Documento PDF
-linktitle: Guardar
+title: Guarde el documento PDF mediante programación
+linktitle: Guardar PDF
 type: docs
 weight: 30
-url: /es/java/save-pdf-document/
-description: Aprende cómo guardar un archivo PDF con la biblioteca Aspose.PDF para Java.
-lastmod: "2021-06-05"
+url: /java/save-pdf-document/
+description: Aprenda a guardar documentos PDF en Java en un archivo, en una secuencia o como un PDF estándar usando Aspose.PDF.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guardar documentos PDF usando la biblioteca Aspose.PDF en Java
+Abstract: Este artículo describe cómo guardar documentos PDF en Java usando Aspose.PDF. Cubre guardar en una ruta de archivo, guardar en OutputStream y convertir un documento antes de guardarlo como un archivo estándar PDF/X.
 ---
+Aspose.PDF para Java proporciona varias formas de guardar un documento según el destino de destino y los requisitos de salida.
 
-## Guardar documento PDF en el sistema de archivos
 
-Puede guardar el documento PDF creado o manipulado en el sistema de archivos usando el método Save de la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-Cuando no proporciona el tipo de formato (opciones), el documento se guarda en el formato Aspose.PDF v.1.7 (*.pdf).
+## 
+Guardar un documento PDF en Java
+
+
+
+Puedes guardar un documento:
+
+
+1. 
+Guarde el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directamente en un archivo en el disco.
+
+1. 
+Guarde el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) en un `OutputStream`.
+1. Convierta el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) con [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) y guárdelo en un formato estándar como [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
+
+
+## 
+Guardar documento en archivo
+
 
 ```java
-package com.aspose.pdf.examples;
-
-
-import java.io.FileOutputStream;
-
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import com.aspose.pdf.*;
-
-public final class BasicOperationsSave {
-
-    private BasicOperationsSave() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) {
-        SaveDocument();
-        SaveDocumentStream();
-        SaveDocumentAsPDFx();
-    }
-
-    public static void SaveDocument() {
-        String originalFileName = _dataDir + "/SimpleResume.pdf";
-        String modifiedFileName = _dataDir + "/SimpleResumeModified.pdf";
-
-        Document pdfDocument = new Document(originalFileName);
-        // realizar algunas manipulaciones, por ejemplo, añadir una nueva página vacía
-        pdfDocument.getPages().add();
-        pdfDocument.save(modifiedFileName);
-    }
+public static void saveDocumentToFile(Path inputFile, Path outputFile) {
+    Document document = new Document(inputFile.toString());
+    document.getPages().add();
+    document.save(outputFile.toString());
+    document.close();
+}
 ```
 
+## 
+Guardar documento para transmitir
 
-## Guardar documento PDF en un flujo
-
-También puede guardar el documento PDF creado o manipulado en un flujo utilizando las sobrecargas de los métodos Save.
 
 ```java
-public static void SaveDocumentStream() {
-        String originalFileName = _dataDir + "/SimpleResume.pdf";
-        String modifiedFileName = _dataDir + "/SimpleResumeModified.pdf";
-
-        Document pdfDocument = new Document(originalFileName);
-        // hacer alguna manipulación, por ejemplo, agregar una nueva página vacía
-        pdfDocument.getPages().add();
-        try {
-            pdfDocument.save(new FileOutputStream(modifiedFileName));
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-
+public static void saveDocumentToStream(Path inputFile, Path outputFile) throws Exception {
+    Document document = new Document(inputFile.toString());
+    document.getPages().add();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        document.save(stream);
+    } finally {
+        document.close();
     }
-
+}
 ```
 
-## Guardar documento PDF en aplicaciones web
-
-Para guardar documentos en aplicaciones web, puede utilizar las formas propuestas anteriormente. Además, la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) tiene un método sobrecargado Save.
-```java
-    // @RequestMapping(value = "/files/{file_name}", method = RequestMethod.GET)
-    // public void getFile(@PathVariable("file_name") String fileName, HttpServletResponse response) {
-    //     try {
-    //         response.setContentType("application/pdf");
-    //         // obtén tu archivo como InputStream
-    //         InputStream is = new FileInputStream(_dataDir + fileName);
-    //         // cópialo al OutputStream de la respuesta
-    //         org.apache.commons.io.IOUtils.copy(is, response.getOutputStream());
-    //         response.flushBuffer();
-    //     } catch (IOException ex) {
-    //         log.info("Error al escribir el archivo en el flujo de salida. El nombre del archivo era '{}'", fileName, ex);
-    //         throw new RuntimeException("Error de E/S al escribir el archivo en el flujo de salida");
-    //     }
-    // }
-```
-
-
-Para una explicación más detallada, por favor dirígete a la sección [Showcase]().
-
-## Guardar en formato PDF/A o PDF/X
-
-PDF/A es una versión del Formato de Documento Portátil (PDF) estandarizada por ISO para su uso en el archivo y preservación a largo plazo de documentos electrónicos.
-PDF/A se diferencia de PDF en que prohíbe características no adecuadas para el archivo a largo plazo, como el enlace de fuentes (a diferencia de la incrustación de fuentes) y la encriptación. Los requisitos ISO para los visores de PDF/A incluyen pautas de gestión del color, soporte de fuentes incrustadas y una interfaz de usuario para leer anotaciones incrustadas.
-
-PDF/X es un subconjunto del estándar ISO PDF. El propósito de PDF/X es facilitar el intercambio de gráficos y, por lo tanto, tiene una serie de requisitos relacionados con la impresión que no se aplican a los archivos PDF estándar.
-
-En ambos casos, se utiliza el método Save para almacenar los documentos, mientras que los documentos deben ser preparados usando el método Convert.
+## 
+Guardar documento como PDF/X
 
 ```java
-public static void SaveDocumentAsPDFx() {
-        Document pdfDocument = new Document("../../../Samples/SimpleResume.pdf");
-        pdfDocument.getPages().add();
-        pdfDocument.convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
-        pdfDocument.save("../../../Samples/SimpleResume_X3.pdf");
-    }
-
+public static void saveDocumentAsStandard(Path inputFile, Path outputFile) {
+    Document document = new Document(inputFile.toString());
+    document.getPages().add();
+    document.convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
+    document.save(outputFile.toString());
+    document.close();
 }
 ```

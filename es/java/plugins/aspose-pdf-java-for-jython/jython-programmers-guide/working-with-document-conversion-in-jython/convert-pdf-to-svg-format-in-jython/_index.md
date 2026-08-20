@@ -1,18 +1,28 @@
 ---
-title: Convertir PDF a Formato SVG en Jython
+title: Convertir PDF a formato SVG en Jython
+linktitle: Convertir PDF a formato SVG en Jython
 type: docs
 weight: 30
-url: /es/java/convert-pdf-to-svg-format-in-jython/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-svg-format-in-jython/
+description: Aprenda a convertir un documento PDF a formato SVG usando Jython con Aspose.PDF para obtener una salida de gráficos vectoriales escalables.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Pdf a SVG
 
-## Aspose.PDF - Pdf A Svg
 
-Para comprobar el formato de archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver un código de ejemplo.
-Error al renderizar macro 'code' : Valor no válido especificado para el parámetro lang
 
-**Descargar Código en Ejecución**
+Para verificar el formato del archivo usando **Aspose.PDF Java para Jython**. Aquí puede ver el código de muestra.
+Error al representar el 'código' de la macro: valor no válido especificado para el parámetro idioma
 
-Descarga el código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+
+**Descargar código de ejecución**
+
+
+
+Descargue código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

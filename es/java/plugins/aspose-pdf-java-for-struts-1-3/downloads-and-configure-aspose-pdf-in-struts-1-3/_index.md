@@ -1,27 +1,39 @@
 ---
-title: Descargas y Configuración de Aspose.Pdf en Struts 1.3
+title: Descargas y configuración de Aspose.Pdf en Struts 1.3
+linktitle: Descargas y configuración de Aspose.Pdf en Struts 1.3
 type: docs
 weight: 10
-url: /es/java/downloads-and-configure-aspose-pdf-in-struts-1-3/
-lastmod: "2021-06-05"
+url: /java/downloads-and-configure-aspose-pdf-in-struts-1-3/
+description: Configure Aspose.PDF para Java en proyectos de Struts 1.3. Mejore las capacidades de PDF de su aplicación.
+lastmod: "2026-06-09"
 ---
+## 
+Descargando Aspose.PDF Java para Struts 1.3
 
-## Descargando Aspose.PDF Java para Struts 1.3
 
-Puede descargar / revisar los códigos fuente del proyecto desde las siguientes ubicaciones:
+
+Puede descargar/consultar los códigos fuente del proyecto desde las siguientes ubicaciones:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)
 
-## Construyendo Aspose.PDF Java para Struts 1.3 desde Códigos Fuente
 
-Después de revisar los códigos fuente de cualquiera de los repositorios anteriores, aplique los siguientes comandos mvn:
+## 
+Construyendo Aspose.PDF Java para Struts 1.3 a partir de códigos fuente
+
+
+
+Después de verificar los códigos fuente de cualquiera de los repositorios anteriores, aplique los siguientes comandos mvn:
+
 
 {{< highlight java >}}
 
- $ mvn -U clean package
+ 
+$ mvn -U paquete limpio
+
 
 {{< /highlight >}}
 
-Esto construirá "Strutsbookapp.war" en la carpeta de destino.
 
-Para desplegar el archivo .war, simplemente cópielo al directorio webapp del servidor Apache tomcat en ejecución.
+Esto creará "Strutsbookapp.war" en el contador de destino.
+
+Para implementar el archivo .war, simplemente cópielo en el directorio de aplicaciones web del servidor Apache Tomcat en ejecución.

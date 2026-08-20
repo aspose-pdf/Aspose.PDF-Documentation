@@ -1,36 +1,42 @@
 ---
-title: Obtener una Página Particular en un Archivo PDF en Python
+title: Obtener una página particular en un archivo PDF en Python
+linktitle: Obtener una página particular en un archivo PDF en Python
 type: docs
 weight: 30
-url: /es/java/get-a-particular-page-in-a-pdf-file-in-python/
-lastmod: "2021-06-05"
+url: /java/get-a-particular-page-in-a-pdf-file-in-python/
+description: Explore cómo extraer una página particular de un archivo PDF en Python usando Aspose.PDF para un manejo detallado del documento.
+lastmod: "2026-06-09"
 ---
 
-Para obtener una página particular en un documento PDF usando **Aspose.PDF Java para Python**, simplemente invoca la clase **GetPage**.
+Para obtener una página particular en un documento PDF usando **Aspose.PDF Java para Python**, simplemente invoque la clase **GetPage**.
+
 
 ```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# obtener la página en un índice particular de la Colección de Páginas
+# get the page at particular index of Page Collection
 pdf_page = pdf.getPages().get_Item(1)
 
-# crear un nuevo objeto Document
+# create a new Document object
 new_document = self.Document()
 
-# añadir página a la colección de páginas del nuevo objeto documento
+# add page to pages collection of new document object
 new_document.getPages().add(pdf_page)
 
-# guardar el archivo PDF recién generado
+# save the newly generated PDF file
 new_document.save(self.dataDir + "output.pdf")
 
-print "¡Proceso completado con éxito!
+print "Process completed successfully!
 
 ```
 
- **Descargar Código en Ejecución**
+ 
+**Descargar código de ejecución**
 
-Descargar **Obtener Página (Aspose.PDF)** de cualquiera de los sitios de codificación social mencionados a continuación:
+Descargue **Obtener página (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose.PDF-for-Java_for_Python/test/WorkingWithPages/GetPage/GetPage.py)
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose.PDF-for-Java_for_Python/test/WorkingWithPages/GetPage/GetPage.py)

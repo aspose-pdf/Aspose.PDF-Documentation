@@ -1,38 +1,47 @@
 ---
-title: Convertir HTML a Formato PDF en Ruby
+title: Convertir HTML a formato PDF en Ruby
+linktitle: Convertir HTML a formato PDF en Ruby
 type: docs
 weight: 10
-url: /es/java/convert-html-to-pdf-format-in-ruby/
-lastmod: "2021-06-05"
+url: /java/convert-html-to-pdf-format-in-ruby/
+description: Aprenda cómo convertir contenido HTML a formato PDF en Ruby usando Aspose.PDF para generar documentos confiables y precisos.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Convertir HTML a formato PDF
 
-## Aspose.PDF - Convertir HTML a Formato PDF
+
 
 Para convertir HTML a formato PDF usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **HtmlToPdf**.
 
-Código Ruby
+Código Rubí
+
 
 ```java
-
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
 htmloptions = Rjb::import('com.aspose.pdf.HtmlLoadOptions').new(data_dir)
 
-# Cargar archivo HTML
+# Load HTML file
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + "index.html", htmloptions)
 
-# Guardar el archivo de salida concatenado (el documento objetivo)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir + "html.pdf")
 
-puts "El documento ha sido convertido exitosamente"
+puts "Document has been converted successfully"
 ```
 
-## Descargar Código en Ejecución
+## 
+Descargar código de ejecución
 
-Descargue **Convertir HTML a Formato PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/htmltopdf.rb)
+
+DescargarВ **Convertir HTML a formato PDF (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/htmltopdf.rb)

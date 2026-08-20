@@ -1,12 +1,15 @@
 ---
-title: Añadiendo JavaScript en Python
+title: Agregar JavaScript en Python
+linktitle: Agregar JavaScript en Python
 type: docs
 weight: 10
-url: /es/java/adding-javascript-in-python/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-in-python/
+description: Descubra cómo incrustar código JavaScript en un documento PDF utilizando Python y Aspose.PDF para mejorar la interactividad.
+lastmod: "2026-06-09"
 ---
 
-Para agregar JavaScript usando Aspose.PDF Java en Python, simplemente invoque el método AddJavascript() de la clase Document.
+Para agregar Agregar Javascript usando Aspose.PDF Java en Python, simplemente invoque el método AddJavascript() de la clase Documento.
+
 
 ```python
 
@@ -19,20 +22,23 @@ javaScript = self.JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkTo
 doc.setOpenAction(javaScript)
 js=self.JavascriptAction("app.alert('page 2 is opened')")
 
-# Añadiendo JavaScript a Nivel de Página
+# Adding JavaScript at Page Level
 doc.getPages.get_Item(2)
 doc.getActions().setOnOpen(js())
 doc.getPages().get_Item(2).getActions().setOnClose(self.JavascriptAction("app.alert('page 2 is closed')"))
 
-# Guardar Documento PDF
+# Save PDF Document
 doc.save(self.dataDir + "JavaScript-Added.pdf")
 
-print "JavaScript añadido con éxito, por favor revise el archivo de salida."
+print "Added JavaScript Successfully, please check the output file."
 
 ```
 
-**Descargar Código en Ejecución**
 
-Descargue **Add Javascript (Aspose.PDF)** desde cualquiera de los siguientes sitios de codificación social:
+**Descargar código de ejecución**
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)
+Descargue **Agregar Javascript (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)

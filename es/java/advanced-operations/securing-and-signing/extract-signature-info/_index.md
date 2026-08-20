@@ -1,86 +1,106 @@
 ---
-title: Extraer Información de Imagen y Firma
-linktitle: Extraer Información de Imagen y Firma
+title: Extraiga información de firma de PDF en Java
+linktitle: Extraer detalles de la firma
 type: docs
-weight: 30
-url: /es/java/extract-image-and-signature-information/
-description: Puede extraer imágenes del campo de firma y extraer información de la firma utilizando la clase SignatureField con Java.
-lastmod: "2021-06-05"
+weight: 20
+url: /java/extract-image-and-signature-information/
+description: Aprenda a extraer detalles de certificados y firmas digitales de archivos PDF en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extraiga detalles de firma y datos de certificados de archivos PDF firmados en Java
+Abstract: Este artículo explica cómo inspeccionar firmas digitales en documentos PDF usando Aspose.PDF para Java. Aprenda a leer los detalles del firmante, verificar una firma, verificar si una firma cubre todo el documento, extraer el certificado de firma incorporado y eliminar una firma existente.
 ---
+Utilice `PdfFileSignature` para inspeccionar y administrar firmas que ya existen en un documento PDF.
 
-## Extrayendo Imagen del Campo de Firma
 
-Aspose.PDF para Java admite la funcionalidad de firmar digitalmente los archivos PDF utilizando la clase [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField) y al firmar el documento, también puede establecer una imagen para SignatureAppearance. Ahora, esta API también proporciona la capacidad de extraer información de la firma, así como la imagen asociada con el campo de firma.
+## 
+Leer información de firma
 
-Para extraer información de la firma, hemos introducido el método [ExtractImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField#extractImage--) en la clase [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField).
- Por favor, echa un vistazo al siguiente fragmento de código que demuestra los pasos para extraer una imagen del objeto SignatureField:
+
+1. 
+Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
+
+1. 
+Acceda al nombre de la firma del documento y configure el flujo de inspección de firma requerido por el ejemplo.
+
+1. 
+Lea y verifique la información de la firma de la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Lea los valores devueltos o continúe con el siguiente paso de procesamiento.
+
 
 ```java
-public class ExampleExtractImageAndSignature {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Secure-Sign/";
-
-    public static void ExtractingImageFromSignatureField() {
-        Document pdfDocument = new Document(_dataDir + "ExtractingImage.pdf");
-
-        int i = 0;
-        try {
-            for (WidgetAnnotation field : pdfDocument.getForm()) {
-                SignatureField sf = (SignatureField) field;
-                if (sf != null) {
-                    FileOutputStream output = new FileOutputStream(_dataDir + "im" + i + ".jpeg");
-                    InputStream tempStream = sf.extractImage();
-                    byte[] b = new byte[tempStream.available()];
-                    tempStream.read(b);
-                    output.write(b);
-                    output.close();
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (pdfDocument != null)
-                pdfDocument.dispose();
-        }
-
+public static void getSignatureInformation(Path inputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        System.out.println("Signature Names: " + pdfSignature.getSignNames());
+        System.out.println("Signer: " + pdfSignature.getSignerName(signatureName));
+        System.out.println("Date: " + pdfSignature.getDateTime(signatureName));
+        System.out.println("Reason: " + pdfSignature.getReason(signatureName));
+        System.out.println("Location: " + pdfSignature.getLocation(signatureName));
+    } finally {
+        pdfSignature.close();
     }
+}
 ```
 
-### Reemplazar imagen de firma
+## 
+Verificar una firma
 
-A veces puede haber un requisito para solo reemplazar la imagen de un campo de firma ya presente dentro de un archivo PDF. Para cumplir con este requisito, primero necesitamos buscar campos de formulario dentro del archivo PDF, identificar los campos de firma, obtener las dimensiones (dimensiones rectangulares) del campo de firma y luego estampar una imagen sobre las mismas dimensiones.
 
-## Extraer información de la firma
+1. 
+Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
 
-Aspose.PDF para Java admite la función de firmar digitalmente los archivos PDF usando la clase [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField). Actualmente, también podemos determinar la validez del certificado, pero no podemos extraer el certificado completo. La información que se puede extraer es una clave pública, huella digital, emisor, etc.
+1. 
+Acceda al nombre de la firma del documento y configure el flujo de verificación requerido por el ejemplo.
 
-Para extraer información de la firma, hemos introducido el método [ExtractCertificate](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField#extractCertificate--) a la clase [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/SignatureField).
- Por favor, echa un vistazo al siguiente fragmento de código que demuestra los pasos para extraer el certificado del objeto SignatureField:
+1. 
+Lea y verifique la información de la firma de la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java
-    public static void ExtractSignatureInformation() throws IOException {
-        String input = _dataDir + "ExtractSignatureInfo.pdf";
-        Document pdfDocument = new Document(input);
+public static void verifyPdfSignature(Path inputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        System.out.println("Signature '" + signatureName + "' is valid: "
+                + pdfSignature.verifySignature(signatureName));
+        System.out.println("Signature covers whole document: "
+                + pdfSignature.coversWholeDocument(signatureName));
+    } finally {
+        pdfSignature.close();
+    }
+}
+```
 
-        for (WidgetAnnotation field : pdfDocument.getForm()) {
-            SignatureField sf = (SignatureField) field;
-            if (sf != null) {
-                InputStream cerStream = sf.extractCertificate();
-                if (cerStream != null) {
+## Extraer el certificado de firma
 
-                    byte[] buffer = new byte[cerStream.available()];
-                    cerStream.read(buffer);
 
-                    File targetFile = new File(_dataDir+"targetFile.cer");
-                    OutputStream outStream = new FileOutputStream(targetFile);
-                    outStream.write(buffer);
-                    outStream.close();
-                }
-            }
+1. 
+Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
+
+1. 
+Acceda al nombre de la firma del documento requerido para la extracción del certificado.
+
+1. 
+Escriba el resultado extraído o inspeccione los valores devueltos desde la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+
+```java
+public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        try (InputStream inputStream = pdfSignature.extractCertificate(signatureName);
+             OutputStream outputStream = Files.newOutputStream(outputFile)) {
+            inputStream.transferTo(outputStream);
         }
+    } finally {
+        pdfSignature.close();
     }
 }
 ```

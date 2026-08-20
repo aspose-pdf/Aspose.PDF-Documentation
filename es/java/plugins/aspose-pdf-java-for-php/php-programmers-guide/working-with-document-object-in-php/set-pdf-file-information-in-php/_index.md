@@ -1,42 +1,51 @@
 ---
-title: Establecer Información del Archivo PDF en PHP
+title: Establecer información del archivo PDF en PHP
+linktitle: Establecer información del archivo PDF en PHP
 type: docs
 weight: 90
-url: /es/java/set-pdf-file-information-in-php/
-lastmod: "2021-06-05"
+url: /java/set-pdf-file-information-in-php/
+description: Aprenda a configurar varias propiedades de archivo, como metadatos, para un documento PDF en PHP usando Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Establecer información del archivo PDF
 
-## Aspose.PDF - Establecer Información del Archivo PDF
 
-Para actualizar la información del documento Pdf usando **Aspose.PDF Java para PHP**, simplemente invoque la clase **SetPdfFileInfo**.
+
+Para actualizar la información del documento PDF usando **Aspose.PDF Java para PHP**, simplemente invoque la clase **SetPdfFileInfo**.
 
 Código PHP
 
+
 ```php
 
-# Abrir un documento pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Obtener información del documento
+# Get document information
 $doc_info = $doc->getInfo();
 
-$doc_info->setAuthor("Aspose.PDF para java");
+$doc_info->setAuthor("Aspose.PDF for java");
 $doc_info->setCreationDate(new Date());
 $doc_info->setKeywords("Aspose.PDF, DOM, API");
 $doc_info->setModDate(new Date());
-$doc_info->setSubject("Información del PDF");
-$doc_info->setTitle("Estableciendo Información del Documento PDF");
+$doc_info->setSubject("PDF Information");
+$doc_info->setTitle("Setting PDF Document Information");
 
-# guardar documento actualizado con nueva información
+# save update document with new information
 $doc->save($dataDir . "Updated_Information.pdf");
 
-print "Actualizar información del documento, por favor revise el archivo de salida.";
+print "Update document information, please check output file.";
 
 ```
 
-**Descargar Código en Ejecución**
 
-Descargar **Establecer Información del Archivo PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+**Descargar código de ejecución**
 
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetPdfFileInfo.php)
+
+Descargue **Establecer información de archivo PDF (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetPdfFileInfo.php)

@@ -1,20 +1,37 @@
 ---
-title: PdfContentEditor Class
+title: Clase PdfContentEditor
+linktitle: Clase PdfContentEditor
 type: docs
 weight: 30
-url: /es/java/pdfcontenteditor-class/
-description: Esta sección explica cómo trabajar con Aspose.PDF Facades usando la clase PdfContentEditor.
-lastmod: "2021-06-05"
+url: /java/pdfcontenteditor-class/
+description: Aprenda a utilizar la clase PdfContentEditor en Java para editar contenido PDF, administrar anotaciones y archivos adjuntos, trabajar con acciones de documentos, imágenes, texto, multimedia, sellos y preferencias del visor.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Edite contenido PDF y elementos interactivos en Java con PdfContentEditor
+Abstract: Esta sección explica cómo utilizar la clase PdfContentEditor en Aspose.PDF para Java para flujos de trabajo PDF a nivel de contenido. El conjunto de ejemplos de Java actual cubre anotaciones, archivos adjuntos, acciones de documentos, marcas de dibujo, reemplazo de imágenes, multimedia, sellos, reemplazo de texto y preferencias del espectador.
 ---
+La clase Java `PdfContentEditorExamples` demuestra los principales flujos de trabajo de edición de contenido expuestos por la API de Fachadas.
 
-- [Agregar acciones de Javascript a un archivo PDF existente](/pdf/es/java/adding-javascript-actions/)
-- [Agregar acciones de Marcadores a un archivo PDF existente](/pdf/es/java/adding-bookmark-actions/)
-- [Trabajar con Imágenes (facades)](/pdf/es/java/working-with-image/)
-- [Reemplazar Texto (facades)](/pdf/es/java/replace-text/)
-- [Trabajar con Adjuntos](/pdf/es/java/working-with-attachments/)
-- [Establecer Preferencias del Visor de un Archivo PDF existente](/pdf/es/java/set-viewer-preference-of-an-existing-pdf-file/)
-- [Obtener Preferencias del Visor de un Archivo PDF existente](/pdf/es/java/get-viewer-preference-of-an-existing-pdf-file/)
-- [Agregar Anotaciones a un archivo PDF existente](/pdf/es/java/adding-annotations-to-existing-pdf-file/)
+
+
+Utilice esta sección para aprender cómo:
+
+
+- 
+agregar anotaciones de texto, líneas, polígonos, películas y sellos
+
+- 
+agregar o eliminar documentos adjuntos
+
+- 
+enlazar un PDF desde una secuencia y guardar el resultado
+- agregar o eliminar acciones de apertura de documentos
+
+- 
+reemplazar texto e imágenes
+
+- 
+obtener y cambiar las preferencias del espectador

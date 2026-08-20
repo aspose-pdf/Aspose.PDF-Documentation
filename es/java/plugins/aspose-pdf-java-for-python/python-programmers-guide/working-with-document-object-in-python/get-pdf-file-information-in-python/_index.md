@@ -1,12 +1,15 @@
 ---
-title: Obtener Información del Archivo PDF en Python
+title: Obtener información de archivos PDF en Python
+linktitle: Obtener información de archivos PDF en Python
 type: docs
 weight: 40
-url: /es/java/get-pdf-file-information-in-python/
-lastmod: "2021-06-05"
+url: /java/get-pdf-file-information-in-python/
+description: Explore cómo recuperar información detallada de un archivo PDF, como metadatos y propiedades, en Python utilizando Aspose.PDF para la gestión de documentos.
+lastmod: "2026-06-09"
 ---
 
-Para obtener la información del archivo de un documento PDF usando **Aspose.PDF Java para Python**, simplemente invoca la clase **GetPdfFileInfo**.
+Para obtener información del archivo de un documento PDF utilizando **Aspose.PDF Java para Python**, simplemente invoque la clase **GetPdfFileInfo**.
+
 
 ```python
 
@@ -14,20 +17,23 @@ doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Obtener información del documento
+# Get document information
 doc_info = doc.getInfo();
 
-# Mostrar información del documento
-print "Autor:-" + str(doc_info.getAuthor())
-print "Fecha de creación:-" + str(doc_info.getCreationDate())
-print "Palabras clave:-" + str(doc_info.getKeywords())
-print "Fecha de modificación:-" + str(doc_info.getModDate())
-print "Asunto:-" + str(doc_info.getSubject())
-print "Título:-" + str(doc_info.getTitle())
+# Show document information
+print "Author:-" + str(doc_info.getAuthor())
+print "Creation Date:-" + str(doc_info.getCreationDate())
+print "Keywords:-" + str(doc_info.getKeywords())
+print "Modify Date:-" + str(doc_info.getModDate())
+print "Subject:-" + str(doc_info.getSubject())
+print "Title:-" + str(doc_info.getTitle())
 ```
 
-**Descargar Código en Ejecución**
 
-Descarga **Obtener Información del Archivo PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+**Descargar código de ejecución**
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetPdfFileInfo/GetPdfFileInfo.py)
+DescargarВ **Obtener información del archivo PDF (Aspose.PDF)**В de cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetPdfFileInfo/GetPdfFileInfo.py)

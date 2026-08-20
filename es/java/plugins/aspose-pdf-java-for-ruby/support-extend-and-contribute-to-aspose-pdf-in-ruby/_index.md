@@ -1,34 +1,43 @@
 ---
-title: Soporte, Extender y Contribuir a Aspose.Pdf en Ruby
+title: Apoye, amplíe y contribuya a Aspose.Pdf en Ruby
+linktitle: Apoye, amplíe y contribuya a Aspose.Pdf en Ruby
 type: docs
 weight: 30
-url: /es/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
-lastmod: "2021-06-05"
+url: /java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
+description: Aprenda cómo respaldar, ampliar y contribuir a Aspose.PDF para Ruby para mejorar sus funciones y mejorar sus soluciones PDF.
+lastmod: "2026-06-09"
 ---
+## 
+Soporte
 
-## Soporte
 
-Desde los primeros días de Aspose, sabíamos que solo dar a nuestros clientes buenos productos no sería suficiente. También necesitábamos ofrecer un buen servicio. Somos desarrolladores nosotros mismos y entendemos lo frustrante que es cuando un problema técnico o una peculiaridad en el software te impide hacer lo que necesitas hacer. Estamos aquí para resolver problemas, no para crearlos.
 
-Por eso ofrecemos soporte gratuito. Cualquiera que use nuestro producto, ya sea que lo haya comprado o esté usando una evaluación, merece toda nuestra atención y respeto.
+Desde los primeros días de Aspose, sabíamos que ofrecer a nuestros clientes buenos productos no sería suficiente. También necesitábamos ofrecer un buen servicio. Nosotros mismos somos desarrolladores y entendemos lo frustrante que es cuando un problema técnico o una peculiaridad en el software le impide hacer lo que necesita hacer. Estamos aquí para resolver problemas, no para crearlos.
+
+Es por eso que ofrecemos soporte gratuito. Cualquiera que utilice nuestro producto, ya sea que lo haya comprado o esté utilizando una evaluación, merece toda nuestra atención y respeto.
+
+
 
 Puede registrar cualquier problema o sugerencia relacionada con Aspose.PDF Java para Ruby utilizando cualquiera de las siguientes plataformas:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-## Extender y Contribuir
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-Aspose.PDF Java para Ruby es de código abierto y su código fuente está disponible en los principales sitios web de codificación social enumerados a continuación.
- Developers are encouraged to download the source code and contribute by suggesting or adding new feature or improving the existing ones, so that others could also benefit from it.
 
-Desarrolladores son alentados a descargar el código fuente y contribuir sugiriendo o agregando nuevas características o mejorando las existentes, para que otros también puedan beneficiarse de ello.
+## 
+Ampliar y contribuir
 
-## Source Code
 
-You can get the latest source code from one of the following locations:
 
-## Código Fuente
+Aspose.PDF Java para Ruby es de código abierto y su código fuente está disponible en los principales sitios web de codificación social que se enumeran a continuación. Se anima a los desarrolladores a descargar el código fuente y contribuir sugiriendo o añadiendo nuevas funciones o mejorando las existentes, para que otros también puedan beneficiarse de él.
 
-Puede obtener el código fuente más reciente de una de las siguientes ubicaciones:
+## Código fuente
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
+
+
+Puede obtener el código fuente más reciente en una de las siguientes ubicaciones:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)

@@ -2,17 +2,32 @@
 title: Operaciones básicas con documentos PDF
 linktitle: Operaciones básicas
 type: docs
-weight: 40
-url: /es/java/basic-operations/
-lastmod: "2021-06-05"
-description: La sección de operaciones básicas describe las posibilidades de abrir y guardar documentos PDF utilizando Aspose.PDF para Java.
+weight: 60
+url: /java/basic-operations/
+lastmod: "2026-06-09"
+description: La sección de operaciones básicas describe cómo crear, abrir, guardar, fusionar, dividir y proteger documentos PDF utilizando Aspose.PDF para Java.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Descripción general de las operaciones básicas con PDF usando Java
+Abstract: Este artículo proporciona una descripción general de las operaciones básicas de PDF en Java usando Aspose.PDF. Cubre la creación de nuevos documentos, la apertura de archivos PDF desde archivos o secuencias, el almacenamiento de documentos en archivos y secuencias, la combinación y división de archivos PDF y la protección de documentos con contraseñas y permisos.
 ---
+La sección **Operaciones básicas** describe las primeras y más simples tareas de PDF que puede realizar con Aspose.PDF para Java:
 
-La sección de **Operaciones básicas** describe la primera y más sencilla operación con documentos PDF en Aspose.PDF para Java:
 
-- [Crear documento PDF](/pdf/es/java/create-document/) - este artículo describe cómo crear un archivo PDF usando Java.
-- [Abrir documento PDF](/pdf/es/java/open-pdf-document/) - este artículo describe varias formas de cómo abrir un documento PDF en una aplicación Java.
-- [Guardar documento PDF](/pdf/es/java/save-pdf-document/) - este artículo describe varias formas de cómo guardar un documento PDF en un archivo, flujo, enviar a la Web o guardar como documento PDF/A (o PDF/X).
+- 
+[Crear documento PDF](/pdf/java/create-document/): cree un nuevo documento PDF mediante programación en Java.
+
+- 
+[Abrir documento PDF](/pdf/java/open-pdf-document/): abre archivos PDF desde una ruta, desde una secuencia o con una contraseña.
+
+- 
+[Guardar documento PDF](/pdf/java/save-pdf-document/): guarda un documento en un archivo, en una secuencia o como un PDF estándar.
+
+- 
+[Fusionar PDF](/pdf/java/merge-pdf/): combina varios archivos PDF en un solo documento de salida.
+- [Dividir PDF](/pdf/java/split-pdf/): divide las páginas PDF en archivos PDF separados de una sola página.
+
+- 
+[Cifrar y descifrar archivo PDF](/pdf/java/protect-pdf-file/): aplica contraseñas, permisos y descifrado a archivos PDF.

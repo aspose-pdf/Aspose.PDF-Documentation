@@ -1,20 +1,25 @@
 ---
-title: Eliminar Metadatos de PDF en PHP
+title: Eliminar metadatos de PDF en PHP
+linktitle: Eliminar metadatos de PDF en PHP
 type: docs
 weight: 70
-url: /es/java/remove-metadata-from-pdf-in-php/
-lastmod: "2021-06-05"
+url: /java/remove-metadata-from-pdf-in-php/
+description: Explore cómo eliminar metadatos de un documento PDF en PHP usando Aspose.PDF para mejorar la privacidad y la seguridad de los documentos.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Eliminar metadatos
 
-## Aspose.PDF - Eliminar Metadatos
 
-Para eliminar metadatos de un documento Pdf usando **Aspose.PDF Java para PHP**, simplemente invoque la clase **RemoveMetadata**.
+
+Para eliminar metadatos de un documento PDF usando **Aspose.PDF Java para PHP**, simplemente invoque la clase **RemoveMetadata**.
 
 Código PHP
 
+
 ```php
 
-# Abrir un documento pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 if (preg_match('/pdfaid:part/',$doc->getMetadata())) {
@@ -27,15 +32,20 @@ if (preg_match('/dc:format/',$doc->getMetadata())) {
 
 }
 
-# guardar documento actualizado con nueva información
+# save update document with new information
 $doc->save($dataDir . "Remove_Metadata.pdf");
 
-print "Metadatos eliminados con éxito, por favor revise el archivo de salida." . PHP_EOL;
+print "Removed metadata successfully, please check output file." . PHP_EOL;
 
 ```
 
-**Descargar Código en Ejecución**
 
-Descargue **Eliminar Metadatos (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+**Descargar código de ejecución**
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/RemoveMetadata.php)
+
+
+DescargarВ **Eliminar metadatos (Aspose.PDF)**В de cualquiera de los sitios de codificación social mencionados a continuación:
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/RemoveMetadata.php)
