@@ -2,7 +2,7 @@
 title: Доступность и Tagged PDF в Java
 linktitle: Доступность. Tagged PDF
 type: docs
-weight: 180
+weight: 120
 url: /ru/java/accessibility-tagged-pdf/
 description: Узнайте, как создавать доступные tagged PDF в Java с помощью Aspose.PDF, включая структуру PDF/UA, извлечение помеченного контента, свойства структуры и доступные таблицы.
 lastmod: "2026-08-19"
