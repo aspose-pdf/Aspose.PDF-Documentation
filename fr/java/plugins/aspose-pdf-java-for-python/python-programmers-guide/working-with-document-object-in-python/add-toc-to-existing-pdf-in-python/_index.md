@@ -1,68 +1,73 @@
 ---
-title: Ajouter une table des matières à un PDF existant en Python
+title: Ajouter une table des matières au PDF existant en Python
+linktitle: Ajouter une table des matières au PDF existant en Python
 type: docs
 weight: 20
-url: /fr/java/add-toc-to-existing-pdf-in-python/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-python/
+description: Découvrez comment ajouter une table des matières (TOC) à un document PDF existant en Python avec Aspose.PDF pour une navigation facile.
+lastmod: "2026-06-09"
 ---
 
-Pour ajouter une table des matières dans un document Pdf à l'aide de **Aspose.PDF Java pour Python**, il suffit d'invoquer la classe **AddToc**.
+Pour ajouter une table des matières dans un document PDF à l'aide de **Aspose.PDF Java pour Python**, invoquez simplement la classe **AddToc**.
+
 
 ```python
 
-# Ouvrir un document pdf.
+# Open a pdf document.
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Accéder à la première page du fichier PDF
+# Get access to first page of PDF file
 toc_page = doc.getPages().insert(1)
 
-# Créer un objet pour représenter les informations de la table des matières
+# Create object to represent TOC information
 toc_info = self.TocInfo()
-title = self.TextFragment("Table des matières")
+title = self.TextFragment("Table Of Contents")
 title.getTextState().setFontSize(20)
 
-# Définir le titre pour la table des matières
+# Set the title for TOC
 toc_info.setTitle(title)
 toc_page.setTocInfo(toc_info)
 
-# Créer des objets de chaîne qui seront utilisés comme éléments de la table des matières
-titles = ["Première page", "Deuxième page"]
+# Create string objects which will be used as TOC elements
+titles = ["First page", "Second page"]
 
 i = 0;
 while (i < 2):
 
-# Créer un objet Heading
+# Create Heading object
 heading2 = self.Heading(1);
 
 segment2 = self.TextSegment
 heading2.setTocPage(toc_page)
 heading2.getSegments().add(segment2)
 
-# Spécifier la page de destination pour l'objet heading
+# Specify the destination page for heading object
 heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-# Page de destination
+# Destination page
 heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-# Coordonnée de destination
+# Destination coordinate
 segment2.setText(titles[i])
 
-# Ajouter l'en-tête à la page contenant la table des matières
+# Add heading to page containing TOC
 toc_page.getParagraphs().add(heading2)
 
 i +=1;
 
-# Enregistrer le document PDF
+# Save PDF Document
 doc.save(self.dataDir + "TOC.pdf")
 
-print "Table des matières ajoutée avec succès, veuillez vérifier le fichier de sortie."
+print "Added TOC Successfully, please check the output file."
 ```
 
 
-**Télécharger le Code Exécutif**
+**Télécharger le code d'exécution**
 
-Téléchargez **Ajouter TOC (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
+Téléchargez** Ajouter une table des matières (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)

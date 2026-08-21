@@ -1,269 +1,297 @@
 ---
-title: Travailler avec les Actions
+title: Travailler avec des actions PDF en Java
 linktitle: Actions
 type: docs
 weight: 20
-url: /fr/java/actions/
-description: Cette section explique comment ajouter des actions aux documents et aux champs de formulaire par programmation avec Java. Apprenez à Ajouter, Créer et Obtenir un Hyperlien dans un Fichier PDF.
-lastmod: "2021-06-05"
+url: /java/actions/
+description: Découvrez comment ajouter, mettre à jour et supprimer des actions de document, de page et de formulaire dans des fichiers PDF à l'aide de Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Ajouter des actions de document, de page et de formulaire aux fichiers PDF en Java
+Abstract: Cet article explique comment utiliser des actions dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre les actions nommées pour l'impression et la navigation dans les pages, le masquage des champs de formulaire, la soumission de formulaires, l'attribution d'actions de lancement JavaScript et l'ajout ou la suppression d'actions d'ouverture et de fermeture de page.
 ---
+Aspose.PDF pour Java vous permet d'attribuer des actions aux boutons, documents et pages pour rendre les fichiers PDF interactifs.
 
-Un fichier PDF peut contenir des pièces jointes intégrées et il est souvent nécessaire de créer un hyperlien vers ces documents. Vous pouvez diriger les lecteurs du document PDF principal vers une pièce jointe PDF en créant un lien dans le document parent qui pointe vers la pièce jointe.
 
-## Ajouter un Hyperlien dans un Fichier PDF
+## 
+Ajouter une action d'impression nommée
 
-Il est possible d'ajouter des hyperliens aux fichiers PDF, soit pour permettre aux lecteurs de naviguer vers une autre partie du PDF, soit vers un contenu externe.
 
-Pour ajouter des hyperliens web aux documents PDF :
 
-1. Créez un objet de classe [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+Utilisez cet exemple lorsqu'un bouton sur la page doit déclencher la commande d'impression.
 
-1. Obtenez la classe [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) à laquelle vous souhaitez ajouter le lien.
-1. Créez un objet [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) en utilisant les objets Page et [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle). L'objet rectangle est utilisé pour spécifier l'emplacement sur la page où le lien doit être ajouté.
-1. Définissez la méthode getAction sur l'objet [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToURIAction) qui spécifie l'emplacement de l'URI distant.
-1. Pour afficher un texte hyperlien, ajoutez une chaîne de texte à un emplacement similaire à celui où l'objet [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) est placé.
-1. Pour ajouter un texte libre :
 
-- Instanciez un objet [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation).
- Il accepte également les objets Page et Rectangle comme arguments, il est donc possible de fournir les mêmes valeurs que celles spécifiées pour le constructeur LinkAnnotation.
-- En utilisant la propriété Contents de l'objet [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation), spécifiez la chaîne qui doit être affichée dans le PDF de sortie.
-- Facultativement, définissez la largeur de bordure des objets [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) et FreeTextAnnotation à 0 afin qu'ils n'apparaissent pas dans le document PDF.
-- Une fois que les objets [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) et [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation) ont été définis, ajoutez ces liens à la collection Annotations de l'objet [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page).
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et sélectionnez la page cible.
 
-- Enfin, enregistrez le PDF mis à jour en utilisant la méthode Save de l'objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-The following code snippet shows you how to add a hyperlink to a PDF file.
+1. 
+Créez un [ButtonField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) et attribuez un [NamedAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) pour l'impression.
+1. Ajoutez le bouton au formulaire et enregistrez le document.
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.util.List;
-
-import com.aspose.pdf.*;
-
-public class ExampleActions {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Actions/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Actions";
-        return _dataDir;
-    }
-
-    public static void AddHyperlinkInPDFFile() {
-        // Ouvrir le document
-        Document document = new Document(GetDataDir() + "AddHyperlink.pdf");
-        // Créer un lien
-        Page page = document.getPages().get_Item(1);
-        // Créer un objet annotation de lien
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 100, 300, 300));
-        // Créer un objet bordure pour LinkAnnotation
-        Border border = new Border(link);
-        // Définir la valeur de la largeur de la bordure à 0
-        border.setWidth(0);
-        // Définir la bordure pour LinkAnnotation
-        link.setBorder(border);
-        // Spécifier le type de lien comme URI distant
-        link.setAction(new GoToURIAction("www.aspose.com"));
-        // Ajouter l'annotation de lien à la collection d'annotations de la première page du fichier PDF
-        page.getAnnotations().add(link);
-
-        // Créer une annotation de texte libre
-        FreeTextAnnotation textAnnotation = new FreeTextAnnotation(page, new Rectangle(100, 100, 300, 300),
-                new DefaultAppearance(FontRepository.findFont("TimesNewRoman"), 10, java.awt.Color.BLUE));
-
-        // Chaîne à ajouter comme texte libre
-        textAnnotation.setContents("Lien vers le site Aspose");
-        // Définir la bordure pour l'annotation de texte libre
-        textAnnotation.setBorder(border);
-        // Ajouter l'annotation de texte libre à la collection d'annotations de la première page du document
-        page.getAnnotations().add(textAnnotation);
-
-        // Enregistrer le document mis à jour
-        document.save(_dataDir + "AddHyperlink_out.pdf");
-
-    }
-```
-
-
-## Créer un lien hypertexte vers des pages dans le même PDF
-
-Aspose.PDF pour Java offre une excellente fonctionnalité pour la création de PDF ainsi que sa manipulation. Il offre également la possibilité d'ajouter des liens vers des pages PDF et un lien peut diriger soit vers des pages dans un autre fichier PDF, une URL web, un lien pour lancer une application ou même un lien vers des pages dans le même fichier PDF.
-
-Pour ajouter le lien hypertexte local, nous devons créer un TextFragment afin que le lien puisse être associé au TextFragment. La classe [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) possède une méthode nommée [getHyperlink](https://reference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#getHyperlink--) qui est utilisée pour associer une instance LocalHyperlink. Le code suivant montre les étapes pour accomplir cette tâche.
-
-```java
-public static void CreateHyperlinkToPagesInSamePDF() {
-        // Créer une instance de Document
-        Document document = new Document();
-
-        // Ajouter une page à la collection de pages du fichier PDF
-        Page page = document.getPages().add();
-
-        // Créer une instance de Text Fragment
-        TextFragment text = new TextFragment("tester le numéro de page du lien vers la page 2");
-
-        // Créer une instance de lien hypertexte local
-        LocalHyperlink link = new LocalHyperlink();
-
-        // Définir la page cible pour l'instance de lien
-        link.setTargetPageNumber(2);
-
-        // Définir le lien hypertexte du TextFragment
-        text.setHyperlink(link);
-
-        // Ajouter du texte à la collection de paragraphes de la page
-        page.getParagraphs().add(text);
-
-        // Créer une nouvelle instance de TextFragment
-        text = new TextFragment("tester le numéro de page du lien vers la page 1");
-
-        // TextFragment doit être ajouté sur une nouvelle page
-        text.setInNewPage(true);
-
-        // Créer une autre instance de lien hypertexte local
-        link = new LocalHyperlink();
-
-        // Définir la page cible pour le second lien hypertexte
-        link.setTargetPageNumber(1);
-
-        // Définir le lien pour le second TextFragment
-        text.setHyperlink(link);
-
-        // Ajouter du texte à la collection de paragraphes de l'objet page
-        page.getParagraphs().add(text);
-
-        // Enregistrer le document mis à jour
-        document.save(GetDataDir() + "CreateLocalHyperlink_out.pdf");
-    }
-```
-
-
-## Obtenir la Destination du Lien Hypertexte PDF (URL)
-
-Les liens sont représentés comme des annotations dans un fichier PDF et ils peuvent être ajoutés, mis à jour ou supprimés. Aspose.PDF pour Java prend également en charge l'obtention de la destination (URL) du lien hypertexte dans un fichier PDF.
-
-Pour obtenir l'URL d'un lien :
-
-1. Créez un objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Obtenez la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) à partir de laquelle vous souhaitez extraire des liens.
-1. Utilisez la classe [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) pour extraire tous les objets [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) de la page spécifiée.
-1. Passez l'objet [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) à la méthode Accept de l'objet [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page).
-
-1. Obtenez toutes les annotations de lien sélectionnées dans un objet IList en utilisant la propriété Selected de l'objet [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector).
-1. Enfin, extrayez l'action LinkAnnotation en tant que GoToURIAction.
-
-Le code suivant montre comment obtenir des destinations de lien hypertexte (URL) à partir d'un fichier PDF.
-
-```java
-    public static void GetPDFHyperlinkDestination() {
-        Document document = new Document(GetDataDir() + "Aspose-app-list.pdf");
-        // Extraire les actions
-        Page page = document.getPages().get_Item(1);
-        AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Rectangle.getTrivial()));
-        page.accept(selector);
-        List<Annotation> list = selector.getSelected();
-        // Itérer à travers chaque élément individuel dans la liste
-        if (list.size() == 0)
-            System.out.println("Aucun hyperlien trouvé..");
-        else {
-            // Boucler à travers tous les signets
-            for (Annotation annot : list) {
-                LinkAnnotation la = (annot instanceof LinkAnnotation ? (LinkAnnotation) annot : null);
-                if (la != null) {
-                    // Imprimer l'URL de destination
-                    System.out.println("Destination: " + ((GoToURIAction) la.getAction()).getURI());
-                }
-            }
-        } // fin sinon
-    }
-```
-
-
-## Obtenir le Texte du Lien Hypertexte
-
-Un lien hypertexte a deux parties : le texte qui s'affiche dans le document et l'URL de destination. Dans certains cas, c'est le texte plutôt que l'URL dont nous avons besoin.
-
-Le texte et les annotations/actions dans un fichier PDF sont représentés par différentes entités. Le texte sur une page est juste un ensemble de mots et de caractères, tandis que les annotations apportent une certaine interactivité telle que celle inhérente à un lien hypertexte.
-
-Pour trouver le contenu de l'URL, vous devez travailler à la fois avec l'annotation et le texte. L'objet [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/Annotation) n'a pas lui-même le texte mais se trouve sous le texte sur la page. Donc, pour obtenir le texte, l'Annotation donne les limites de l'URL, tandis que l'objet Texte donne le contenu de l'URL. Veuillez voir l'extrait de code suivant.
-
-```java
-    public static void GetHyperlinkText() {
-        Document document = new Document(GetDataDir() + "Aspose-app-list.pdf");
-        // Extraire les actions
+public static void addNamedActionPrint(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         Page page = document.getPages().get_Item(1);
 
-        for (Annotation annot : page.getAnnotations()) {
-            LinkAnnotation la = (annot instanceof LinkAnnotation ? (LinkAnnotation) annot : null);
-            if (la != null) {
-                // Imprimer l'URL de chaque Annotation de Lien
-                System.out.println("URI: " + ((GoToURIAction) la.getAction()).getURI());
-                TextAbsorber absorber = new TextAbsorber();
-                absorber.getTextSearchOptions().setLimitToPageBounds(true);
-                absorber.getTextSearchOptions().setRectangle(annot.getRect());
-                page.accept(absorber);
-                String extractedText = absorber.getText();
-                // Imprimer le texte associé au lien hypertexte
-                System.out.println(extractedText);
+        Rectangle rect = new Rectangle(10, 10, 100, 40, true);
+        ButtonField printButton = new ButtonField(page, rect);
+        printButton.setPartialName("printButton");
+        printButton.setValue("Print");
+        printButton.getAnnotationActions().setOnReleaseMouseBtn(
+                new NamedAction(PredefinedAction.File_Print));
+
+        Border border = new Border(printButton);
+        border.setWidth(1);
+        printButton.setBorder(border);
+
+        document.getForm().add(printButton, 1);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Ajouter une action de masquage
+
+
+
+Utilisez cet exemple lorsqu'un bouton doit afficher ou masquer un ensemble de champs de formulaire, tels que des cases à cocher.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et récupérez les widgets du formulaire cible.
+
+1. 
+Créez un bouton et attribuez-lui une [HideAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/).
+1. Ajoutez le bouton au formulaire et enregistrez le document mis à jour.
+
+
+```java
+public static void addNamedActionHide(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        List<WidgetAnnotation> checkboxes = new ArrayList<>();
+        for (WidgetAnnotation field : document.getForm()) {
+            if (field instanceof CheckboxField) {
+                checkboxes.add(field);
             }
         }
+
+        Rectangle rect = new Rectangle(10, 410, 140, 440, true);
+        ButtonField hideButton = new ButtonField(document.getPages().get_Item(1), rect);
+        hideButton.setPartialName("HideButton");
+        hideButton.setValue("Hide Checkboxes");
+        hideButton.getAnnotationActions().setOnReleaseMouseBtn(
+                new HideAction(checkboxes.toArray(new WidgetAnnotation[0]), true));
+
+        document.getForm().add(hideButton, 1);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 
+Ajouter des boutons de navigation dans les pages
 
-## Supprimer l'Action d'Ouverture de Document d'un Fichier PDF
 
-[Comment Spécifier la Page PDF lors de la Visualisation du Document](#how-to-specify-pdf-page-when-viewing-document) explique comment indiquer à un document de s'ouvrir sur une page différente de la première. Lors de la concaténation de plusieurs documents, et si un ou plusieurs d'entre eux ont une action GoTo définie, vous voudrez probablement les supprimer. Par exemple, si vous combinez deux documents et que le deuxième a une action GoTo qui vous amène à la deuxième page, le document de sortie s'ouvrira sur la deuxième page du deuxième document au lieu de la première page du document combiné. Pour éviter ce comportement, supprimez la commande d'action d'ouverture.
 
-Pour supprimer une action d'ouverture :
+Cet exemple crée des boutons de première page, précédente, suivante et dernière page dans le document.
 
-1. Définissez la méthode [getOpenAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getOpenAction--) de l'objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) sur null.
-2. Enregistrez le PDF mis à jour en utilisant la méthode Save de l'objet Document.
 
-Le snippet de code suivant montre comment supprimer une action d'ouverture de document du fichier PDF.
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Créez des boutons de navigation pour chaque page et attribuez l’action prédéfinie correspondante.
+1. Ajoutez les boutons au formulaire et enregistrez le document.
+
 
 ```java
-    public static void RemoveDocumentOpenActionFromPDFFile()
-    {
-        // Ouvrir le document
-        Document document = new Document(_dataDir + "RemoveOpenAction.pdf");
-        // Supprimer l'action d'ouverture du document
-        document.setOpenAction(null);
-        
-        // Enregistrer le document mis à jour
-        document.save(GetDataDir()+"RemoveOpenAction_out.pdf");
+public static void addNavigationButtons(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int totalPages = document.getPages().size();
+
+        for (Page page : document.getPages()) {
+            ButtonField firstPageButton = new ButtonField(page, new Rectangle(10, 10, 110, 40, true));
+            firstPageButton.setPartialName("First Page");
+            firstPageButton.setValue("First Page");
+            firstPageButton.getCharacteristics().setBorder(com.aspose.pdf.Color.getRed());
+            firstPageButton.getCharacteristics().setBackground(com.aspose.pdf.Color.getOrange().toRgb());
+            firstPageButton.setReadOnly(document.getPages().indexOf(page) == 1);
+            firstPageButton.getAnnotationActions().setOnReleaseMouseBtn(
+                    new NamedAction(PredefinedAction.FirstPage));
+            document.getForm().add(firstPageButton);
+
+            ButtonField previousPageButton = new ButtonField(page, new Rectangle(120, 10, 220, 40, true));
+            previousPageButton.setPartialName("Previous Page");
+            previousPageButton.setValue("Previous Page");
+            previousPageButton.getCharacteristics().setBorder(com.aspose.pdf.Color.getRed());
+            previousPageButton.getCharacteristics().setBackground(com.aspose.pdf.Color.getOrange().toRgb());
+            previousPageButton.setReadOnly(document.getPages().indexOf(page) == 1);
+            previousPageButton.getAnnotationActions().setOnReleaseMouseBtn(
+                    new NamedAction(PredefinedAction.PrevPage));
+            document.getForm().add(previousPageButton);
+
+            ButtonField nextPageButton = new ButtonField(page, new Rectangle(230, 10, 330, 40, true));
+            nextPageButton.setPartialName("Next Page");
+            nextPageButton.setValue("Next Page");
+            nextPageButton.getCharacteristics().setBorder(com.aspose.pdf.Color.getRed());
+            nextPageButton.getCharacteristics().setBackground(com.aspose.pdf.Color.getOrange().toRgb());
+            nextPageButton.setReadOnly(document.getPages().indexOf(page) == totalPages);
+            nextPageButton.getAnnotationActions().setOnReleaseMouseBtn(
+                    new NamedAction(PredefinedAction.NextPage));
+            document.getForm().add(nextPageButton);
+
+            ButtonField lastPageButton = new ButtonField(page, new Rectangle(340, 10, 440, 40, true));
+            lastPageButton.setPartialName("Last Page");
+            lastPageButton.setValue("Last Page");
+            lastPageButton.getCharacteristics().setBorder(com.aspose.pdf.Color.getRed());
+            lastPageButton.getCharacteristics().setBackground(com.aspose.pdf.Color.getOrange().toRgb());
+            lastPageButton.setReadOnly(document.getPages().indexOf(page) == totalPages);
+            lastPageButton.getAnnotationActions().setOnReleaseMouseBtn(
+                    new NamedAction(PredefinedAction.LastPage));
+            document.getForm().add(lastPageButton);
+        }
+
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 
+Ajouter une action de soumission
 
-## Comment Spécifier la Page PDF lors de l'Affichage du Document {#how-to-specify-pdf-page-when-viewing-document}
 
-Lors de l'affichage de fichiers PDF dans un visualiseur PDF tel qu'Adobe Reader, les fichiers s'ouvrent généralement sur la première page. Cependant, il est possible de configurer le fichier pour qu'il s'ouvre sur une page différente.
 
-La classe [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/XYZExplicitDestination) vous permet de spécifier une page dans un fichier PDF que vous souhaitez ouvrir. Lors du passage de la valeur de l'objet GoToAction à la méthode getOpenAction de la classe [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document), le document s'ouvre à la page spécifiée contre l'objet XYZExplicitDestination. Le fragment de code suivant montre comment spécifier une page comme action d'ouverture du document.
+Utilisez cet exemple lorsqu'un bouton doit soumettre les données d'un formulaire à une URL.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Créez un [SubmitFormAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) avec l'URL cible et les indicateurs.
+1. Attribuez l'action à un champ de bouton et enregistrez le document.
+
 
 ```java
-    public static void HowToSpecifyPDFPageWhenViewingDocument()
-    {
-        // Charger le fichier PDF
-        Document document = new Document(GetDataDir()+ "SpecifyPageWhenViewing.pdf");
-        // Obtenir l'instance de la deuxième page du document
-        Page page2 = document.getPages().get_Item(2);
-        // Créer la variable pour définir le facteur de zoom de la page cible
-        double zoom = 1;
-        // Créer une instance GoToAction
-        GoToAction action = new GoToAction(page2);
-        // Aller à la page 2
-        action.setDestination (new XYZExplicitDestination(page2, 0, page2.getRect().getHeight(), zoom));
-        // Définir l'action d'ouverture du document
-        document.setOpenAction (action);
-        // Sauvegarder le document mis à jour
-        document.save(_dataDir + "goto2page_out.pdf");
+public static void addSubmitAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        SubmitFormAction submitAction = new SubmitFormAction();
+        FileSpecification submitUrl = new FileSpecification();
+        submitUrl.setFileSystem("URL");
+        submitUrl.setName("http://localhost:3000/submit");
+        submitAction.setUrl(submitUrl);
+        submitAction.setFlags(SubmitFormAction.EXPORT_FORMAT | SubmitFormAction.SUBMIT_COORDINATES);
+
+        Rectangle rect = new Rectangle(10, 10, 100, 40, true);
+        ButtonField submitButton = new ButtonField(document.getPages().get_Item(1), rect);
+        submitButton.setPartialName("SubmitButton");
+        submitButton.setValue("Submit");
+        submitButton.getAnnotationActions().setOnReleaseMouseBtn(submitAction);
+
+        document.getForm().add(submitButton, 1);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Ajouter des actions de lancement au niveau du document
+
+
+
+Cet exemple attribue des actions JavaScript qui s'exécutent lorsque le document est ouvert, enregistré ou imprimé.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Créez les objets [JavascriptAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) requis pour les événements de document.
+1. Attribuez les actions et enregistrez le document.
+
+
+```java
+public static void addLaunchActions(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setOpenAction(new JavascriptAction("app.launchURL('http://localhost:3000/open');"));
+        document.getActions().setBeforeSaving(
+                new JavascriptAction("app.launchURL('http://localhost:3000/save');"));
+        document.getActions().setBeforePrinting(
+                new JavascriptAction("app.launchURL('http://localhost:3000/print');"));
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Ajouter des actions d'ouverture et de fermeture de page
+
+
+
+Utilisez cet exemple lorsqu'une page spécifique doit déclencher des actions à l'ouverture et à la fermeture.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et assurez-vous que la page cible existe.
+
+1. 
+Créez la navigation dans la page et les actions JavaScript.
+1. Attribuez les actions de page et enregistrez le document.
+
+
+```java
+public static void addPageActions(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getPages().size() < 3) {
+            System.out.println("Error: The document does not have at least 3 pages.");
+            return;
+        }
+
+        Page page = document.getPages().get_Item(3);
+        GoToAction action = new GoToAction(page);
+        action.setDestination(new XYZExplicitDestination(page, 0, page.getPageInfo().getHeight(), 1));
+        page.getActions().setOnOpen(action);
+        page.getActions().setOnClose(
+                new JavascriptAction("app.launchURL('http://localhost:3000/page/3');"));
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Supprimer les actions de la page
+
+
+
+Utilisez cette approche lorsque les actions d'ouverture et de fermeture précédemment attribuées doivent être supprimées d'une page.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et assurez-vous que la page cible existe.
+
+1. 
+Supprimez toutes les actions de cette page.
+1. Enregistrez le document mis à jour.
+
+```java
+public static void removePageActions(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getPages().size() < 3) {
+            System.out.println("Error: The document does not have at least 3 pages.");
+            return;
+        }
+
+        Page page = document.getPages().get_Item(3);
+        page.getActions().removeActions();
+
+        document.save(outputFile.toString());
     }
 }
 ```

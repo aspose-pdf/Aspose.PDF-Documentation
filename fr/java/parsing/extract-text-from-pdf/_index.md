@@ -1,21 +1,29 @@
 ---
-title: Extraire du texte à partir d'un PDF
-linktitle: Extraire du texte
+title: Extraire le texte d'un PDF à l'aide de Java
+linktitle: Extraire le texte d'un PDF
 type: docs
 weight: 10
-url: /fr/java/extract-text-from-pdf/
-description: Aspose.PDF permet d'extraire différents types d'informations. Cette section contient des articles sur l'extraction de texte à partir de documents PDF en utilisant Aspose.PDF pour Java.
-lastmod: "2021-06-05"
+url: /java/extract-text-from-pdf/
+description: Découvrez comment extraire du texte à partir de documents PDF en Java avec Aspose.PDF, y compris les workflows de document complet, au niveau de la page, par région, d'annotation et multicolonnes.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Extraire le texte d'un fichier PDF est une tâche courante pour les développeurs Java. Utilisez la bibliothèque Aspose.PDF pour Java pour extraire du texte en seulement quelques lignes de code. La plupart des documents PDF ne sont pas modifiables, rendant la conversion du PDF en texte une tâche fastidieuse voire impossible, surtout si la solution implique un traitement en masse des documents PDF. La bibliothèque Aspose.PDF pour Java extrait le texte en utilisant la classe TextAbsorber. 
-Qui a besoin de l'extraction de texte ?
+Aspose.PDF pour Java fournit plusieurs flux de travail d'extraction de texte en fonction de la présentation du document et du niveau de structure dont vous avez besoin pour la sortie.
 
-Pour les entreprises de fouille de données, de gestion de contenu et de traitement de formulaires, l'extraction de texte sera particulièrement utile.
- Extracting text comes in handy: archiving: Le texte et ses composants peuvent être récupérés afin que les documents puissent être indexés et archivés avec des capacités de recherche complètes ; récupération et traitement des données dans les formulaires ; extraire des informations telles que les données de compte, les adresses postales et les numéros de téléphone à des fins administratives ; extraire des photos et des images.
 
-- [Extraire du texte d'un PDF](/pdf/fr/java/extract-text-from-all-pdf/)
-- [Extraire un paragraphe d'un PDF](/pdf/fr/java/extract-paragraph-from-pdf/)
+
+Utilisez les articles de cette section pour :
+
+- [Extraire le texte de toutes les pages ou d'une seule page] (/pdf/java/basic-text-extraction/).
+
+- 
+[Limiter l'extraction à une région de page spécifique ou inspecter la géométrie du paragraphe] (/pdf/java/region-based-extraction/).
+
+- 
+[Extraire le texte des surlignages, des annotations de tampon et du contenu en exposant ou en indice] (/pdf/java/annotation-and-special-text/).
+
+- 
+[Améliorer l'extraction des mises en page multi-colonnes] (/pdf/java/text-extraction-from-multi-column-pdf/).

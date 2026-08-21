@@ -1,33 +1,43 @@
 ---
-title: Convertir un PDF en Classeur Excel en PHP
+title: Convertir un PDF en classeur Excel en PHP
+linktitle: Convertir un PDF en classeur Excel en PHP
 type: docs
 weight: 20
-url: /fr/java/convert-pdf-to-excel-workbook-in-php/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-excel-workbook-in-php/
+description: Apprenez à convertir des fichiers PDF en classeurs Excel en PHP à l'aide d'Aspose.PDF, permettant une extraction et une manipulation transparentes des données.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Convertir un PDF en classeur Excel
 
-## Aspose.PDF - Convertir un PDF en Classeur Excel
 
-Pour convertir un document PDF en classeur Excel en utilisant **Aspose.PDF Java pour PHP**, il suffit d'invoquer le module **PdfToExcel**.
+
+Pour convertir un document PDF en classeur Excel à l'aide de **Aspose.PDF Java pour PHP**, invoquez simplement le module **PdfToExcel**.
 
 Code PHP
 
+
 ```php
-# Ouvrir le document cible
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# Instancier l'objet ExcelSave Option
+# Instantiate ExcelSave Option object
 $excelsave = new ExcelSaveOptions();
 
-# Enregistrer la sortie au format XLS
+# Save the output to XLS format
 $pdf->save($dataDir . "Converted_Excel.xls", $excelsave);
 
-print "Le document a été converti avec succès" . PHP_EOL;
+print "Document has been converted successfully" . PHP_EOL;
 
 ```
 
-**Télécharger le Code Exécutable**
 
-Téléchargez **Convertir PDF en Classeur Excel (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
+**Télécharger le code d'exécution**
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToExcel.php)
+
+
+Téléchargez** Convertir un PDF en classeur Excel (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToExcel.php)
