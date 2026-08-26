@@ -1,141 +1,143 @@
 ---
-title: Obtener, Actualizar y Expandir un Marcador
-linktitle: Obtener, Actualizar y Expandir un Marcador
+title: Get, Update, and Expand PDF Bookmarks in Java
+linktitle: Get, Update and Expand a Bookmark
 type: docs
 weight: 20
-url: /es/java/get-update-and-expand-bookmark/
-description: Este artículo describe cómo usar marcadores en un archivo PDF. Con nuestra biblioteca Java, puedes obtener marcadores del archivo PDF, obtener el número de página de un marcador, actualizar marcadores en un Documento PDF y expandir marcadores al ver un documento.
-lastmod: "2021-06-05"
+url: /java/get-update-and-expand-bookmark/
+description: Learn how to retrieve, update, and expand bookmarks in PDF documents using Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Inspect bookmark properties and expand outlines in PDF files with Java
+Abstract: This article explains how to read, update, and expand bookmarks using Aspose.PDF for Java. It covers iterating through outline items, extracting bookmark page numbers with PdfBookmarkEditor, reading child bookmarks, updating bookmark titles and style, and forcing outlines to open when the document is displayed.
 ---
+Aspose.PDF for Java exposes bookmarks through both the document outline model and the `PdfBookmarkEditor` facade.
 
-## Obtener Marcadores
+## Get bookmark properties
 
-La colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) del objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) contiene todos los marcadores de un archivo PDF. Este artículo explica cómo obtener marcadores de un archivo PDF y cómo obtener en qué página se encuentra un marcador en particular.
+Utilice este ejemplo cuando necesite inspeccionar las entradas de marcadores de nivel superior en el esquema del documento.
 
-Para obtener los marcadores, recorre la colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) y obtén cada marcador en la OutlineItemCollection.
- El OutlineItemCollection proporciona acceso a todos los atributos del marcador. El siguiente fragmento de código te muestra cómo obtener marcadores del archivo PDF.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterar a través de la colección de contornos.
+1. Read and print the bookmark title, style, and color values.
 
 ```java
-    public static void GettingBookmarks() {
-        // Abrir documento
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Bucle a través de todos los marcadores
-        for (OutlineItemCollection outlineItem : (Iterable<OutlineItemCollection>) pdfDocument.getOutlines()) {
-            System.out.println("Título :- " + outlineItem.getTitle());
-            System.out.println("Es cursiva :- " + outlineItem.getItalic());
-            System.out.println("Es negrita :- " + outlineItem.getBold());
-            System.out.println("Color :- " + outlineItem.getColor());
+public static void getBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
         }
     }
+}
 ```
 
-## Obtener el número de página de un marcador
+## Get bookmark page numbers
 
-Una vez que has añadido un marcador, puedes averiguar en qué página se encuentra obteniendo el PageNumber de destino asociado con el objeto Bookmark.
+This example uses `PdfBookmarkEditor` to extract bookmark titles, levels, page numbers, and actions.
+
+1. Bind the source PDF to [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. Extract the bookmark collection and iterate through it.
+1. Print the level, title, page number, and action information for each bookmark.
 
 ```java
-    public static void GettingBookmarksPageNumber() {
-        // Crear PdfBookmarkEditor
-        PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-        // Abrir archivo PDF
-        bookmarkEditor.bindPdf(GetDataDir() + "UpdateBookmarks.pdf");
-        // Extraer marcadores
-        Bookmarks bookmarks = bookmarkEditor.extractBookmarks();
-        for (Bookmark bookmark : (Iterable<Bookmark>) bookmarks) {
-            String strLevelSeprator = "";
-            for (int i = 1; i < bookmark.getLevel(); i++) {
-                strLevelSeprator += "---- ";
+public static void getBookmarkPageNumber(Path inputFile) {
+    PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
+    try {
+        bookmarkEditor.bindPdf(inputFile.toString());
+        for (Bookmark bookmark : bookmarkEditor.extractBookmarks()) {
+            String levelSeparator = "";
+            for (int i = 0; i < bookmark.getLevel(); i++) {
+                levelSeparator += "----";
             }
-            System.out.println("Título :- " + strLevelSeprator + bookmark.getTitle());
-            System.out.println("Número de página :- " + strLevelSeprator + bookmark.getPageNumber());
-            System.out.println("Acción de página :- " + strLevelSeprator + bookmark.getAction());
+
+            System.out.println(levelSeparator + " Title: " + bookmark.getTitle());
+            System.out.println(levelSeparator + " Page Number: " + bookmark.getPageNumber());
+            System.out.println(levelSeparator + " Page Action: " + bookmark.getAction());
+        }
+    } finally {
+        bookmarkEditor.close();
+    }
+}
+```
+
+## Get child bookmarks
+
+Use this example when you need to inspect both top-level and nested outline items.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterate through the top-level outlines and print their properties.
+1. Detect child bookmarks, then iterate through them and print their properties.
+
+```java
+public static void getChildBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
+            int count = outlineItem.size();
+            if (count > 0) {
+                System.out.println("Child Bookmarks");
+                for (int j = 1; j <= outlineItem.size(); j++) {
+                    OutlineItemCollection childOutlineItem = outlineItem.get_Item(j);
+                    System.out.println(childOutlineItem.getTitle());
+                    System.out.println(childOutlineItem.getItalic());
+                    System.out.println(childOutlineItem.getBold());
+                    System.out.println(childOutlineItem.getColor());
+                }
+            }
         }
     }
+}
 ```
 
-## Actualizar Marcadores en un Documento PDF
+## Update bookmarks
 
-Para actualizar un marcador en un archivo PDF, primero obtén el marcador particular de la colección OutlineColletion del objeto Document especificando el índice del marcador. Una vez que hayas recuperado el marcador en el objeto [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection), puedes actualizar sus propiedades y luego guardar el archivo PDF actualizado usando el método Save. Los siguientes fragmentos de código muestran cómo actualizar marcadores en un documento PDF.
+Use this example when an existing bookmark title and style should be modified.
 
-```java
-    public static void UpdateBookmarksInPDFDocument() {
-        // Abrir documento
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Obtener un objeto de marcador
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-
-        // Actualizar el objeto de marcador
-        pdfOutline.setTitle("Updated Outline");
-        pdfOutline.setItalic(true);
-        pdfOutline.setBold(true);
-        // Establecer la página de destino como 2
-        pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // Guardar salida
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
-    }
-```
-
-
-## Actualizar Marcadores Hijos en un Documento PDF
-
-Para actualizar un marcador hijo:
-
-1. Recupere el marcador hijo que desea actualizar del archivo PDF obteniendo primero el marcador principal y luego el marcador hijo utilizando los valores de índice apropiados.
-1. Guarde el archivo PDF actualizado usando el método Save.
-
-{{% alert color="primary" %}}
-
-Obtenga un marcador de la colección OutlineCollection del objeto Document especificando el índice del marcador, y luego obtenga el marcador hijo especificando el índice de este marcador principal.
-
-{{% /alert %}}
-
-El siguiente fragmento de código le muestra cómo actualizar marcadores hijos en un documento PDF.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the target outline item and its child bookmark.
+1. Update the bookmark properties and save the document.
 
 ```java
-    public static void UpdateChildBookmarksInPDFDocument() {
-        // Abrir documento
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Obtener un objeto de marcador
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-        // Obtener objeto de marcador hijo
-        OutlineItemCollection childOutline = pdfOutline.get_Item(1);
-
-        // Actualizar el objeto de marcador
+public static void updateBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection outline = document.getOutlines().get_Item(1);
+        OutlineItemCollection childOutline = outline.get_Item(1);
         childOutline.setTitle("Updated Outline");
         childOutline.setItalic(true);
         childOutline.setBold(true);
-        // Establecer la página de destino como 2
-        childOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
 
-        // Guardar salida
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Expand bookmarks by default
 
-## Marcadores expandidos al ver el documento
+Use this example when the bookmark panel should open and show expanded outline items when the document is displayed.
 
-Los marcadores se mantienen en la colección [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) del objeto Document, que a su vez está en la colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). Sin embargo, podemos tener un requisito para que todos los marcadores estén expandidos al ver el archivo PDF.
-
-Para cumplir con este requisito, podemos establecer el estado abierto para cada elemento de esquema/marcador como Abierto. El siguiente fragmento de código muestra cómo establecer el estado abierto para cada marcador como expandido en un documento PDF.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Set the page mode to use outlines and mark each outline item as open.
+1. Save the updated document.
 
 ```java
-    public static void ExpandedBookmarks() {    
-        Document doc = new Document(GetDataDir()+"UpdateBookmarks.pdf");
-        // establecer el modo de visualización de página, es decir, mostrar miniaturas, pantalla completa, mostrar panel de adjuntos
-        doc.setPageMode(PageMode.UseOutlines);
-        // imprimir el conteo total de marcadores en el archivo PDF
-        System.out.println(doc.getOutlines().size());
-        // recorrer cada elemento de esquema en la colección de esquemas del archivo PDF
-        for (int counter = 1; counter <= doc.getOutlines().size(); counter++) {
-            // establecer el estado abierto para el elemento de esquema
-            doc.getOutlines().get_Item(counter).setOpen(true);
+public static void expandedBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setPageMode(PageMode.UseOutlines);
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection item = document.getOutlines().get_Item(i);
+            item.setOpen(true);
         }
-        // guardar el archivo PDF
-        doc.save(_dataDir+"Bookmarks_Expanded.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```

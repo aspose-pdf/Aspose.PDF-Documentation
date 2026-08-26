@@ -1,50 +1,50 @@
 ---
-title: Actualizar Dimensiones de Página en Ruby
+title: Update Page Dimensions in Ruby
+linktitle: Update Page Dimensions in Ruby
 type: docs
 weight: 90
-url: /es/java/update-page-dimensions-in-ruby/
-lastmod: "2021-06-05"
+url: /java/update-page-dimensions-in-ruby/
+description: Find out how to update the page dimensions of a PDF document using Ruby with Aspose.PDF for precise page formatting.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Update Page Dimensions
 
-## Aspose.PDF - Actualizar Dimensiones de Página
+To update page Dimensions using **Aspose.PDF Java for Ruby**, simply invoke **UpdatePageDimensions** module.
 
-Para actualizar las dimensiones de la página usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **UpdatePageDimensions**.
-
-Código Ruby
+Ruby Code
 
 ```java
-
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abrir el documento objetivo
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# obtener la colección de páginas
+# get page collection
 
 page_collection = pdf.getPages()
 
-# obtener una página en particular
+# get particular page
 
 pdf_page = page_collection.get_Item(1)
 
-# establecer el tamaño de la página como A4 (11.7 x 8.3 in) y en Aspose.PDF, 1 pulgada = 72 puntos
+# set the page size as A4 (11.7 x 8.3 in) and in Aspose.PDF, 1 inch = 72 points
 
-# por lo que las dimensiones de A4 en puntos serán (842.4, 597.6)
+# so A4 dimensions in points will be (842.4, 597.6)
 
 pdf_page.setPageSize(597.6,842.4)
 
-# guardar el archivo PDF recién generado
+# save the newly generated PDF file
 
 pdf.save(data_dir + "output.pdf")
 
-puts "¡Dimensiones actualizadas exitosamente!"
+puts "Dimensions updated successfully!"
 ```
 
-## Descargar Código en Ejecución
+## Download Running Code
 
-Descargar **Update Page Dimensions (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Update Page Dimensions (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/updatepagedimensions.rb)

@@ -1,19 +1,20 @@
 ---
-title: Obtener Información del Archivo PDF en Jython
+title: Get PDF File Information in Jython
+linktitle: Get PDF File Information in Jython
 type: docs
 weight: 30
-url: /es/java/get-pdf-file-information-in-jython/
-lastmod: "2021-06-05"
+url: /java/get-pdf-file-information-in-jython/
+description: Learn how to retrieve detailed information about a PDF file such as metadata, properties, and file details using Jython and Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Get Pdf File Info
 
-## Aspose.PDF - Obtener Información del Archivo Pdf
+To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.
 
-Para verificar el formato de archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver un código de ejemplo.
+Error rendering macro 'code' : Invalid value specified for parameter lang
 
-Error al renderizar macro 'code': Valor inválido especificado para el parámetro lang
+## Download Running Code
 
-## Descargar Código en Ejecución
-
-Descargar código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
+Download running code from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

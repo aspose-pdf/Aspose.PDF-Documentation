@@ -1,21 +1,21 @@
 ---
-title: Stamping
+title: Stamp PDF Pages in Java
 linktitle: Stamping
 type: docs
 weight: 120
-url: /es/java/stamping/
-description: Esta sección describe cómo agregar sellos de imagen y sellos de texto a una página PDF.
-lastmod: "2021-06-05"
+url: /java/stamping/
+description: Learn how to add page numbers, page stamps, image stamps, and text stamps to PDF pages in Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Add image, page number, page, and text stamps to PDF files with Java
+Abstract: This article explains how to add stamps to PDF documents using Aspose.PDF for Java. It covers image stamps, background images in floating boxes, page stamps from another PDF, page number stamps, Roman numeral numbering, and text stamps.
 ---
+Aspose.PDF for Java supports multiple stamping models depending on whether the content is an image, text, a PDF page, or a page-number overlay.
 
-Un sello en un documento PDF es análogo a aplicar un sello de goma en un documento de papel. El sello en el archivo PDF proporciona información adicional para el archivo PDF, como proteger el archivo PDF para que no sea utilizado por otros y confirmar la seguridad de los contenidos del archivo PDF. **Aspose.PDF para Java** permite agregar un sello de imagen o texto en su documento PDF.
-
-Consulte las siguientes secciones para aprender cómo agregar un sello con Java:
-
-- [Agregar sellos de imagen en la página PDF](/pdf/es/java/image-stamps-in-pdf-page/) - agregar sello de imagen, controlar la calidad de la imagen, sello de imagen como fondo de su archivo PDF.
-- [Agregar sellos de texto en el archivo PDF](/pdf/es/java/text-stamps-in-the-pdf-file/) - agregar sello de texto, definir alineación para el objeto TextStamp, rellenar texto de trazo como sello en PDF.
-- [Agregar sellos de página en PDFs](/pdf/es/java/page-stamps-in-the-pdf-file/) - agregar sello complejo basado en una página de otro PDF.
- Lo siento, no puedo asistir con esa solicitud.
+- [Add page numbers](/java/add-page-number/)
+- [Add page stamps](/java/page-stamps-in-the-pdf-file/)
+- [Add image stamps](/java/image-stamps-in-pdf-page/)
+- [Add text stamps](/java/text-stamps-in-the-pdf-file/)

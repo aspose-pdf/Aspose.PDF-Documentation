@@ -1,21 +1,25 @@
 ---
-title: Parsing PDF documents
-linktitle: Parsing PDF documents
+title: Parse PDF documents
+linktitle: Parse PDF documents
 type: docs
-weight: 60
-url: /es/java/parsing/
-description: ¿Quieres extraer datos de documentos PDF? Descubre varios métodos de extracción de datos PDF con Aspose.PDF para Java.
-lastmod: "2021-06-05"
+weight: 80
+url: /java/parsing/
+description: Discover PDF parsing and data extraction methods in Java with Aspose.PDF, including text, images, fonts, form data, tables, and vector graphics.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Parse PDF files with Aspose.PDF for Java
+Abstract: This article introduces PDF parsing features in Aspose.PDF for Java. It covers extracting text, images, fonts, AcroForm data, table data, and vector graphics from PDF documents, with links to focused guides for each task.
 ---
+Parsing PDF documents means extracting structured or raw content from existing PDF files so it can be inspected, exported, indexed, or reused in other workflows.
 
-El análisis de documentos PDF es un término relacionado con la extracción de varios tipos de información de un archivo PDF. Esta sección cubre cómo:
+This section covers how to:
 
-- [Extraer texto de PDF](/pdf/es/java/extract-text-from-pdf/). El análisis o extracción de texto es la operación más popular con los PDFs ya hechos. Aprenderás sobre el análisis de texto de un documento completo, una página en particular o una región particular en una página.
-- [Extraer imágenes de PDF](/pdf/es/java/extract-images-from-the-pdf-file/). La extracción de imágenes hace lo mismo para las imágenes que la operación anterior para el texto.
-- [Extraer fuentes de PDF](/pdf/es/java/extract-fonts-from-pdf/). La extracción de fuentes es una operación específica con fuentes en PDFs.
-- [Extraer datos de una tabla en PDF](/pdf/es/java/extract-data-from-table-in-pdf/).
- Learn how to extract tabular from PDF using Aspose.PDF for Java.  
-- [Extraer datos del formulario](/pdf/es/java/extract-data-from-acroform/). Si tienes un montón de documentos PDF con formularios, probablemente necesites obtener los datos de esos formularios. Este artículo te ayudará a entender cómo extraer datos de AcroForms con Aspose.PDF para Java.
+- [Extract Text from PDF](/pdf/java/extract-text-from-pdf/) using `TextAbsorber`, `ParagraphAbsorber`, and related APIs.
+- [Extract Images from PDF](/pdf/java/extract-images-from-the-pdf-file/) from page resources.
+- [Extract Fonts from PDF](/pdf/java/extract-fonts-from-pdf/) to inspect the fonts used in a document.
+- [Extract Data from AcroForm](/pdf/java/extract-data-from-acroform/) and export field values to JSON, XML, FDF, or XFDF.
+- [Extract Data from Table](/pdf/java/extract-data-from-table-in-pdf/) using `TableAbsorber` or export detected tables to Excel.
+- [Extract Vector Data from PDF](/pdf/java/extract-vector-data-from-pdf/) with `GraphicsAbsorber` and SVG export methods.

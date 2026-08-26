@@ -1,40 +1,40 @@
 ---
-title: Insertar una Página Vacía en un Archivo PDF en Ruby
+title: Insert an Empty Page into a PDF File in Ruby
+linktitle: Insert an Empty Page into a PDF File in Ruby
 type: docs
 weight: 70
-url: /es/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/insert-an-empty-page-into-a-pdf-file-in-ruby/
+description: Learn how to insert an empty page into a specific location within a PDF document using Ruby and Aspose.PDF for precise document management.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Insert an Empty Page
 
-## Aspose.PDF - Insertar una Página Vacía
+To Insert an Empty Page into a Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **InsertEmptyPage** module.
 
-Para insertar una página vacía en un documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoca el módulo **InsertEmptyPage**.
-
-Código Ruby
+Ruby Code
 
 ```java
-
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abrir el documento de destino
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# insertar una página vacía en un PDF
+# insert a empty page in a PDF
 
 pdf.getPages().insert(1)
 
-# Guardar el archivo de salida concatenado (el documento de destino)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "¡Página vacía añadida exitosamente!"
+puts "Empty page added successfully!"
 ```
 
-## Descargar Código en Ejecución
+## Download Running Code
 
-Descargar **Insertar una Página Vacía (Aspose.PDF)** de cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Insert an Empty Page (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypage.rb)

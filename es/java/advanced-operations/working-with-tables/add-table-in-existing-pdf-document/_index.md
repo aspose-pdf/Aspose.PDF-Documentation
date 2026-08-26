@@ -1,524 +1,564 @@
 ---
-title: Crear o Añadir Tabla en PDF
-linktitle: Crear o Añadir Tabla
+title: Add Tables to PDF in Java
+linktitle: Adding Tables
 type: docs
 weight: 10
-url: /es/java/add-table-in-existing-pdf-document/
-description: Aprenda cómo crear o añadir una tabla a un documento PDF, aplicando estilo a las celdas, dividiendo la tabla en páginas y personalizando las filas y columnas, etc.
-lastmod: "2021-12-16"
+url: /java/adding-tables/
+description: Learn how to add and configure tables in existing PDF documents in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Add and format tables in PDF documents with Java
+Abstract: This article explains how to add and configure tables in PDF documents using Aspose.PDF for Java. It covers table creation, borders, margins, padding, row and column spans, AutoFit behavior, image insertion in cells, repeating rows and columns, HTML and LaTeX fragments, and multi-page rendering control.
 ---
+Aspose.PDF for Java provides a rich `Table` API for building tables with layout and content customization.
 
-## Creando Tabla
+## Crear una tabla básica
 
-El espacio de nombres Aspose.PDF contiene clases llamadas [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table), [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/cell), y [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/row) que proporcionan funcionalidad para crear tablas al generar documentos PDF desde cero.
+Utilice este ejemplo cuando necesite agregar una tabla simple con bordes uniformes y celdas de texto.
 
-La tabla se puede crear creando un objeto de la clase Table.
-
-```java
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-```
-
-### Añadiendo Tabla en Documento PDF Existente
-
-Para añadir una tabla a un archivo PDF existente con Aspose.PDF para Java, siga los siguientes pasos:
-
-1. Cargue el archivo fuente.
-
-1. Inicializar una tabla y configurar sus columnas y filas.  
-1. Configurar las opciones de la tabla (hemos configurado los bordes).  
-1. Llenar la tabla.  
-1. Añadir la tabla a una página.  
-1. Guardar el archivo.  
-
-Los siguientes fragmentos de código muestran cómo añadir texto en un archivo PDF existente.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and configure its borders.
+1. Add rows and cells, attach the table to the page, and save the document.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleAddTable {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void CreateTable() {
-        Document doc = new Document(_dataDir + "input.pdf");
-        // Inicializa una nueva instancia de la tabla
+public static void createTable(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         Table table = new Table();
-        // Establecer el color del borde de la tabla como LightGray
-        table.setBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // establecer el borde para las celdas de la tabla
-        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // crear un bucle para añadir 10 filas
-        for (int row_count = 1; row_count < 10; row_count++) {
-            // añadir fila a la tabla
+        table.setBorder(new BorderInfo(BorderSide.All, 5, Color.getLightGray()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 5, Color.getLightGray()));
+        for (int rowCount = 0; rowCount < 10; rowCount++) {
             Row row = table.getRows().add();
-            // añadir celdas de la tabla
-            row.getCells().add("Columna (" + row_count + ", 1)");
-            row.getCells().add("Columna (" + row_count + ", 2)");
-            row.getCells().add("Columna (" + row_count + ", 3)");
+            row.getCells().add("Column (" + rowCount + ", 1)");
+            row.getCells().add("Column (" + rowCount + ", 2)");
+            row.getCells().add("Column (" + rowCount + ", 3)");
         }
-        // Añadir objeto de tabla a la primera página del documento de entrada
-        doc.getPages().get_Item(1).getParagraphs().add(table);
-        // Guardar documento actualizado que contiene el objeto de tabla
-        doc.save(_dataDir + "document_with_table.pdf");
-    }
-```
-
-
-### ColSpan y RowSpan en Tablas de Aspose.PDF usando Java
-
-Aspose.PDF para Java proporciona el método [setColSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setColSpan-int-) para fusionar las columnas en una tabla y el método [setRowSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setRowSpan-int-) para fusionar las filas.
-
-Usamos los métodos [setColSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setColSpan-int-) o [setRowSpan](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setRowSpan-int-) en el objeto [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell) que crea la celda de la tabla. Después de aplicar las propiedades requeridas, la celda creada puede ser añadida a la tabla.
-
-```java
-public static void AddTable_RowColSpan() {
-        // Cargar documento PDF fuente
-        Document pdfDocument = new Document();
-        Page page = pdfDocument.getPages().add();
-
-        // Inicializa una nueva instancia de la Tabla
-        Table table = new Table();
-        // Establecer el color del borde de la tabla como LightGray
-        table.setBorder(new BorderInfo(BorderSide.All, .5f, Color.getBlack()));
-        // Establecer el borde para las celdas de la tabla
-        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, .5f, Color.getBlack()));
-        // Añadir la 1ª fila a la tabla
-        Row row1 = table.getRows().add();
-        for (int cellCount = 1; cellCount < 5; cellCount++) {
-            // Añadir celdas a la tabla
-            row1.getCells().add("Prueba 1 " + cellCount);
-        }
-
-        // Añadir la 2ª fila a la tabla
-        Row row2 = table.getRows().add();
-        row2.getCells().add("Prueba 2 1");
-        Cell cell = row2.getCells().add("Prueba 2 2");
-        cell.setColSpan(2);
-        row2.getCells().add("Prueba 2 4");
-
-        // Añadir la 3ª fila a la tabla
-        Row row3 = table.getRows().add();
-        row3.getCells().add("Prueba 3 1");
-        row3.getCells().add("Prueba 3 2");
-        row3.getCells().add("Prueba 3 3");
-        row3.getCells().add("Prueba 3 4");
-
-        // Añadir la 4ª fila a la tabla
-        Row row4 = table.getRows().add();
-        row3.getCells().add("Prueba 4 1");
-        cell = row3.getCells().add("Prueba 4 2");
-        cell.setRowSpan(2);
-        row3.getCells().add("Prueba 4 3");
-        row3.getCells().add("Prueba 4 4");
-
-        // Añadir la 5ª fila a la tabla
-        row4 = table.getRows().add();
-        row4.getCells().add("Prueba 5 1");
-        row4.getCells().add("Prueba 5 3");
-        row4.getCells().add("Prueba 5 4");
-
-        // Añadir el objeto tabla a la primera página del documento de entrada
         page.getParagraphs().add(table);
-
-        // Guardar documento actualizado que contiene el objeto tabla
-        pdfDocument.save(_dataDir + "document_with_table_out.pdf");
-    }
-```
-
-
-El resultado del código de ejecución a continuación es la tabla representada en la siguiente imagen:
-
-![Demostración de ColSpan y RowSpan](colspan_rowspan.png)
-
-## Trabajando con Bordes, Márgenes y Relleno
-
-Aspose.PDF para Java permite a los desarrolladores crear tablas en documentos PDF. Según el Modelo de Objeto de Documento de Aspose.PDF, una tabla es un elemento a nivel de párrafo.
-
-Tenga en cuenta que también admite la función para establecer el estilo de borde, márgenes y relleno de celda para tablas. Antes de entrar en detalles más técnicos, es importante entender los conceptos de borde, márgenes y relleno que se presentan a continuación en un diagrama:
-
-![Bordes, márgenes y relleno](set-border-style-margins-and-padding-of-table_1.png)
-
-En la figura anterior, puede ver que los bordes de la tabla, fila y celda se superponen. Usando Aspose.PDF, una tabla puede tener márgenes y las celdas pueden tener rellenos. Para establecer márgenes de celda, debemos establecer el relleno de celda.
-
-## Bordes
-
-Para establecer los bordes de los objetos [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table), [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/row) y [Cell](https://reference.aspose.com/pdf/java/com.aspose.pdf/cell), use los métodos [Table.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#setBorder-com.aspose.pdf.BorderInfo-), [Row.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Row#setBorder-com.aspose.pdf.BorderInfo-) y [Cell.setBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Cell#setBorder-com.aspose.pdf.BorderInfo-).
- Los bordes de las celdas también se pueden establecer utilizando la clase [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table) o la clase [Row](https://reference.aspose.com/pdf/java/com.aspose.pdf/row) con el método [DefaultCellBorder](https://reference.aspose.com/pdf/java/com.aspose.pdf/Row#setDefaultCellBorder-com.aspose.pdf.BorderInfo-). Todas las propiedades relacionadas con los bordes discutidas anteriormente se asignan a una instancia de la clase Row, que se crea llamando a su constructor. La clase Row tiene muchas sobrecargas que toman casi todos los parámetros necesarios para personalizar el borde.
-
-## Márgenes o Relleno
-
-El relleno de las celdas se puede gestionar utilizando la clase Table con el método [DefaultCellPadding](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#setDefaultCellPadding-com.aspose.pdf.MarginInfo-). Todas las propiedades relacionadas con el relleno se asignan a una instancia de la clase [MarginInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/MarginInfo) que toma información sobre los parámetros `Left`, `Right`, `Top` y `Bottom` para crear márgenes personalizados.
-
-En el siguiente ejemplo, el ancho del borde de la celda se establece en 0.1 punto, el ancho del borde de la tabla se establece en 1 punto y el relleno de la celda se establece en 5 puntos.
-
-![Márgen y Borde en Tabla PDF](margin-border.png)
-
-```java
-public static void MargingPadding() {
-        // Instanciar el objeto Document llamando a su constructor vacío
-        Document doc = new Document();
-        Page page = doc.getPages().add();
-        // Instanciar un objeto tabla
-        Table tab1 = new Table();
-        // Añadir la tabla en la colección de párrafos de la sección deseada
-        page.getParagraphs().add(tab1);
-        // Establecer con anchos de columna de la tabla
-        tab1.setColumnWidths ("50 50 50");
-        // Establecer el borde de celda predeterminado usando el objeto BorderInfo
-        tab1.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1F));
-        // Establecer el borde de la tabla usando otro objeto BorderInfo personalizado
-        tab1.setBorder (new BorderInfo(BorderSide.All, 1F));
-
-        // Crear objeto MarginInfo y establecer sus márgenes izquierdo, inferior, derecho y superior
-        MarginInfo margin = new MarginInfo();
-        margin.setTop (5f);
-        margin.setLeft (5f);
-        margin.setRight (5f);
-        margin.setBottom (5f);
-
-        // Establecer el relleno de celda predeterminado al objeto MarginInfo
-        tab1.setDefaultCellPadding(margin);
-
-        // Crear filas en la tabla y luego celdas en las filas
-        Row row1 = tab1.getRows().add();
-        row1.getCells().add("col1");
-        row1.getCells().add("col2");
-        row1.getCells().add();
-
-        TextFragment mytext = new TextFragment("col3 con una cadena de texto grande");
-
-        row1.getCells().get_Item(2).getParagraphs().add(mytext);
-        row1.getCells().get_Item(2).setWordWrapped(false);
-
-        Row row2 = tab1.getRows().add();
-        row2.getCells().add("item1");
-        row2.getCells().add("item2");
-        row2.getCells().add("item3");
-
-        // Guardar el PDF
-        doc.save(_dataDir + "MarginsOrPadding_out.pdf");
+        document.save(outputFile.toString());
     }
 }
 ```
 
-Para crear una tabla con esquinas redondeadas, use el valor `RoundedBorderRadius` de la clase [BorderInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/BorderInfo) y establezca el estilo de esquina de la tabla en redondo.
+## Add cells with row span and column span
+
+Use this example when the table needs merged cells across rows or columns.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and add rows.
+1. Configure `ColSpan` and `RowSpan` on the target cells, then save the PDF.
 
 ```java
-    public static void RoundedBorderRadius() {
-        Document doc = new Document();
-        Page page = doc.getPages().add();
+public static void addRowspanOrColspan(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
 
-        // Instanciar un objeto de tabla
-        Table tab1 = new Table();
+        Row row1 = table.getRows().add();
+        for (int cellCount = 1; cellCount < 5; cellCount++) {
+            row1.getCells().add("Test 1" + cellCount);
+        }
 
-        // Agregar la tabla en la colección de párrafos de la sección deseada
-        page.getParagraphs().add(tab1);
+        Row row2 = table.getRows().add();
+        row2.getCells().add("Test 2 1");
+        Cell cell = row2.getCells().add("Test 2 2");
+        cell.setColSpan(2);
+        row2.getCells().add("Test 2 4");
 
-        GraphInfo graph = new GraphInfo();
-        graph.setColor(Color.getRed());
-        // Crear un objeto BorderInfo en blanco
-        BorderInfo bInfo = new BorderInfo(BorderSide.All, graph);
-        // Establecer el borde como un borde redondeado donde el radio de la curva es 15
-        bInfo.setRoundedBorderRadius(15);
-        // Establecer el estilo de esquina de la tabla como Redondo.
-        tab1.setCornerStyle(BorderCornerStyle.Round);
-        // Establecer la información del borde de la tabla
-        tab1.setBorder(bInfo);
-        // Crear filas en la tabla y luego celdas en las filas
-        Row row1 = tab1.getRows().add();
+        Row row3 = table.getRows().add();
+        row3.getCells().add("Test 3 1");
+        row3.getCells().add("Test 3 2");
+        row3.getCells().add("Test 3 3");
+        row3.getCells().add("Test 3 4");
+
+        Row row4 = table.getRows().add();
+        row4.getCells().add("Test 4 1");
+        cell = row4.getCells().add("Test 4 2");
+        cell.setRowSpan(2);
+        row4.getCells().add("Test 4 3");
+        row4.getCells().add("Test 4 4");
+
+        Row row5 = table.getRows().add();
+        row5.getCells().add("Test 5 1");
+        row5.getCells().add("Test 5 3");
+        row5.getCells().add("Test 5 4");
+
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add table borders and cell padding
+
+Use this example when you need to configure borders, padding, and cell wrapping behavior.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and configure widths, borders, and padding.
+1. Add rows and save the resulting document.
+
+```java
+public static void addBorders(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        page.getParagraphs().add(table);
+        table.setColumnWidths("50 50 50");
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1f));
+        table.setBorder(new BorderInfo(BorderSide.All, 1));
+        table.setDefaultCellPadding(new MarginInfo(5, 5, 5, 5));
+
+        Row row1 = table.getRows().add();
         row1.getCells().add("col1");
         row1.getCells().add("col2");
         row1.getCells().add();
-
-        TextFragment mytext = new TextFragment("col3 con una cadena de texto larga");
-
-        row1.getCells().get_Item(2).getParagraphs().add(mytext);
+        row1.getCells().get_Item(2).getParagraphs().add(new TextFragment("col3 with large text string"));
         row1.getCells().get_Item(2).setWordWrapped(false);
 
-        Row row2 = tab1.getRows().add();
+        Row row2 = table.getRows().add();
         row2.getCells().add("item1");
         row2.getCells().add("item2");
         row2.getCells().add("item3");
-
-        // Guardar el PDF
-        doc.save(_dataDir + "BorderRadius_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Enable auto-fit table layout
 
-### Propiedad AutoFitToWindow en la enumeración ColumnAdjustmentType
+Use this example when the table should automatically adjust to the available page width.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and set `ColumnAdjustment.AutoFitToWindow`.
+1. Agregue filas de muestra y guarde el PDF.
 
 ```java
- public static void AutoFitToWindowProperty() {
-        // Instanciar el objeto Pdf llamando a su constructor vacío
-        Document doc = new Document();
-        // Crear la sección en el objeto Pdf
-        Page sec1 = doc.getPages().add();
+public static void autoFit(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        page.getParagraphs().add(table);
+        table.setColumnWidths("50 50 50");
+        table.setColumnAdjustment(ColumnAdjustment.AutoFitToWindow);
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1f));
+        table.setBorder(new BorderInfo(BorderSide.All, 1));
+        table.setDefaultCellPadding(new MarginInfo(5, 5, 5, 5));
 
-        // Instanciar un objeto de tabla
-        Table tab1 = new Table();
-        // Añadir la tabla en la colección de párrafos de la sección deseada
-        sec1.getParagraphs().add(tab1);
-
-        // Establecer los anchos de columna de la tabla
-        tab1.setColumnWidths("50 50 50");
-        tab1.setColumnAdjustment(ColumnAdjustment.AutoFitToWindow);
-
-        // Establecer el borde de celda predeterminado usando el objeto BorderInfo
-        tab1.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.1F));
-
-        // Establecer el borde de la tabla usando otro objeto BorderInfo personalizado
-        tab1.setBorder(new BorderInfo(BorderSide.All, 1F));
-
-        // Crear objeto MarginInfo y establecer sus márgenes izquierdo, inferior, derecho y superior
-        MarginInfo margin = new MarginInfo();
-        margin.setTop(5f);
-        margin.setLeft(5f);
-        margin.setRight(5f);
-        margin.setBottom(5f);
-
-        // Establecer el relleno de celda predeterminado al objeto MarginInfo
-        tab1.setDefaultCellPadding(margin);
-
-        // Crear filas en la tabla y luego celdas en las filas
-        Row row1 = tab1.getRows().add();
+        Row row1 = table.getRows().add();
         row1.getCells().add("col1");
         row1.getCells().add("col2");
         row1.getCells().add("col3");
-        Row row2 = tab1.getRows().add();
+        Row row2 = table.getRows().add();
         row2.getCells().add("item1");
         row2.getCells().add("item2");
         row2.getCells().add("item3");
-
-        // Guardar el documento actualizado que contiene el objeto tabla
-        doc.save(_dataDir + "AutoFitToWindow_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Add an image inside a table cell
 
-### Obtener Ancho de la Tabla
+Use this example when the table needs to display raster image content inside one of its cells.
 
-A veces, es necesario obtener el ancho de la tabla dinámicamente. La clase Aspose.PDF.Table tiene un método [GetWidth](https://reference.aspose.com/pdf/java/com.aspose.pdf/Table#getWidth--) para este propósito. Por ejemplo, no has establecido el ancho de las columnas de la tabla explícitamente y has configurado [ColumnAdjustment](https://reference.aspose.com/pdf/java/com.aspose.pdf/ColumnAdjustment) en AutoFitToContent. En este caso, puedes obtener el ancho de la tabla de la siguiente manera.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and add a row with text and image cells.
+1. Configure the [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) size and save the document.
 
 ```java
-public static void GetTableWidth() {
-        // Crear un nuevo documento
-        Document doc = new Document();
-        // Agregar página en el documento
-        Page page = doc.getPages().add();
-
-        // Inicializar nueva tabla
+public static void addImage(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         Table table = new Table();
+        table.setColumnWidths("200 100");
 
-        // Agregar la tabla en la colección de párrafos de la sección deseada
-        page.getParagraphs().add(table);
-        table.setColumnAdjustment(ColumnAdjustment.AutoFitToContent);
-
-        // Agregar fila en la tabla
         Row row = table.getRows().add();
-        // Agregar celda en la tabla
-        row.getCells().add("Texto de la Celda 1");
-        row.getCells().add("Texto de la Celda 2");
-        // Obtener ancho de la tabla
-        System.out.println(table.getWidth());
-    }
-```
+        row.getCells().add().getParagraphs().add(new TextFragment(imageFile.toString()));
+        Image image = new Image();
+        image.setFile(imageFile.toString());
+        image.setFixWidth(50);
+        image.setFixHeight(50);
+        row.getCells().add().getParagraphs().add(image);
 
-
-## Agregar objeto SVG a la celda de la tabla
-
-Aspose.PDF para Java admite la función de agregar una celda de tabla en un archivo PDF. Al crear una tabla, es posible agregar texto o imágenes en las celdas. Además, la API también ofrece la función de convertir archivos SVG al formato PDF. Usando una combinación de estas funciones, es posible cargar una imagen SVG y agregarla en una celda de tabla.
-
-El siguiente fragmento de código muestra los pasos para crear una instancia de tabla y agregar una imagen SVG dentro de una celda de tabla.
-
-```java
- public static void AddSVGObjectToTableCell() {
-        // Instanciar objeto Documento
-        Document doc = new Document();
-        // Crear una instancia de imagen
-        com.aspose.pdf.Image img = new com.aspose.pdf.Image();
-        // Establecer tipo de imagen como SVG
-        img.setFileType (com.aspose.pdf.ImageFileType.Svg);
-        // Ruta para el archivo fuente
-        img.setFile (_dataDir + "SVGToPDF.svg");
-        // Establecer ancho para la instancia de imagen
-        img.setFixWidth (50);
-        // Establecer altura para la instancia de imagen
-        img.setFixHeight (50);
-        // Crear instancia de tabla
-        com.aspose.pdf.Table table = new com.aspose.pdf.Table();
-        // Establecer ancho para las celdas de la tabla
-        table.setColumnWidths ("100 100");
-        // Crear objeto fila y añadirlo a la instancia de tabla
-        com.aspose.pdf.Row row = table.getRows().add();
-        // Crear objeto celda y añadirlo a la instancia de fila
-        com.aspose.pdf.Cell cell = row.getCells().add();
-        // Añadir fragmento de texto a la colección de párrafos del objeto celda
-        cell.getParagraphs().add(new TextFragment("Primera celda"));
-        // Añadir otra celda al objeto fila
-        cell = row.getCells().add();
-        // Añadir imagen SVG a la colección de párrafos de la instancia de celda recién añadida
-        cell.getParagraphs().add(img);
-        // Crear objeto página y añadirlo a la colección de páginas de la instancia de documento
-        Page page = doc.getPages().add();
-        // Añadir tabla a la colección de párrafos del objeto página
         page.getParagraphs().add(table);
-        // Guardar archivo PDF
-        doc.save(_dataDir + "AddSVGObject_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Add SVG images inside table cells
 
-## Añadir etiquetas HTML dentro de la tabla
+Use this example when the table should render SVG files row by row.
 
-Aspose.PDF para Java permite agregar un nuevo Fragmento HTML en un Párrafo de su archivo PDF.
-
-{{% alert color="primary" %}}
-
-Por favor, tenga en cuenta que el uso de etiquetas HTML dentro del elemento de tabla aumenta el tiempo de generación del documento, ya que la API necesita procesar las etiquetas HTML en consecuencia y renderizarlas en el documento PDF de salida.
-
-{{% /alert %}}
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and iterate through the SVG files.
+1. Add one row per image, configure the SVG [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), and save the PDF.
 
 ```java
-  public static void AddHTMLFragmentToTableCell() {
-        Document doc = new Document(_dataDir + "input.pdf");
-        // Inicializa una nueva instancia de la Tabla
+public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         Table table = new Table();
-        // Establece el color del borde de la tabla como LightGray
-        table.setBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // establece el borde para las celdas de la tabla
-        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, .5f, Color.getLightGray()));
-        // crea un bucle para añadir 10 filas
-        for (int row_count = 1; row_count < 10; row_count++) {
-            Cell cell;
-            // añade fila a la tabla
+        table.setColumnWidths("200 100");
+        for (Path imageFile : imageFiles) {
             Row row = table.getRows().add();
-            // añade celdas a la tabla
-            cell = row.getCells().add();
-            cell.getParagraphs().add(new HtmlFragment("Columna <strong>(" + row_count + ", 1)</strong>"));
-
-            cell = row.getCells().add();
-            cell.getParagraphs().add(new HtmlFragment("Columna <span style='color:red'>(" + row_count + ", 2)</span>"));
-
-            cell = row.getCells().add();
-            cell.getParagraphs().add(new HtmlFragment("Columna <span style='text-decoration: underline'>(" + row_count + ", 3)</span>"));
+            row.getCells().add().getParagraphs().add(new TextFragment(imageFile.toString()));
+            Image image = new Image();
+            image.setFileType(ImageFileType.Svg);
+            image.setFile(imageFile.toString());
+            image.setFixWidth(50);
+            image.setFixHeight(50);
+            row.getCells().add().getParagraphs().add(image);
         }
-        // Agrega el objeto de tabla a la primera página del documento de entrada
-        doc.getPages().get_Item(1).getParagraphs().add(table);
-        // Guarda el documento actualizado que contiene el objeto de tabla
-        doc.save(_dataDir + "AddHTMLObject_out.pdf");
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
     }
-
 }
 ```
 
+## Add HTML fragments to table cells
 
-## Insertar un salto de página entre las filas de la tabla
+Utilice este ejemplo cuando el contenido de la tabla deba incluir formato HTML en línea.
 
-Por defecto, al crear una tabla dentro de un archivo PDF, la tabla fluye a las páginas subsecuentes cuando alcanza el margen inferior de la tabla. Sin embargo, podemos tener un requerimiento de insertar forzadamente un salto de página cuando se agregan un cierto número de filas a la tabla. El siguiente fragmento de código muestra los pasos para insertar un salto de página cuando se agregan 10 filas a la tabla.
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página.
+1. Cree una [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure los bordes.
+1. Agregue objetos [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) a las celdas y guarde el documento.
 
 ```java
-    public static void InsertPageBreak() {
-        // Crear una instancia de Document
-        Document doc = new Document();
-        // Agregar una página a la colección de páginas del archivo PDF
-        Page page = doc.getPages().add();
-        // Crear una instancia de tabla
-        Table tab = new Table();
-        // Establecer estilo de borde para la tabla
-        tab.setBorder (new BorderInfo(BorderSide.All, Color.getRed()));
-        // Establecer estilo de borde predeterminado para la tabla con color de borde rojo
-        tab.setDefaultCellBorder (new BorderInfo(BorderSide.All, Color.getRed()));
-        // Especificar el ancho de las columnas de la tabla
-        tab.setColumnWidths ("100 100");
-        // Crear un bucle para agregar 200 filas a la tabla
-        for (int counter = 0; counter <= 200; counter++) {
+public static void addHtmlFragments(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+        for (int rowCount = 1; rowCount < 10; rowCount++) {
+            Row row = table.getRows().add();
+            row.getCells().add().getParagraphs().add(new HtmlFragment("Column <strong>(" + rowCount + ", 1)</strong>"));
+            row.getCells().add().getParagraphs().add(new HtmlFragment("Column <span style='color:red'>(" + rowCount + ", 2)</span>"));
+            row.getCells().add().getParagraphs().add(new HtmlFragment("Column <span style='text-decoration: underline'>(" + rowCount + ", 3)</span>"));
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add LaTeX fragments to table cells
+
+Utilice este ejemplo cuando el contenido de la tabla deba representar expresiones TeX o LaTeX.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) with borders.
+1. Add [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) objects to the cells and save the output file.
+
+```java
+public static void addLatexFragments(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+        for (int rowCount = 1; rowCount < 10; rowCount++) {
+            Row row = table.getRows().add();
+            row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\mathbf{(" + rowCount + ", 1)}$"));
+            row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\textcolor{red}{(" + rowCount + ", 2)}$"));
+            row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\underline{(" + rowCount + ", 3)}$"));
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Force a table onto a new page
+
+Use this example when a second table should start on a separate page after a large table.
+
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y configure los ajustes de la página.
+1. Cree la primera [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) grande y agréguela a la página.
+1. Cree una segunda tabla, establezca `InNewPage` y guarde el documento.
+
+```java
+public static void addTableOnNewPage(Path outputFile) {
+    try (Document document = new Document()) {
+        document.getPageInfo().getMargin().setLeft(37);
+        document.getPageInfo().getMargin().setRight(37);
+        document.getPageInfo().getMargin().setTop(37);
+        document.getPageInfo().getMargin().setBottom(37);
+        document.getPageInfo().setLandscape(true);
+
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setColumnWidths("50 100");
+        for (int i = 1; i < 121; i++) {
+            Row row = table.getRows().add();
+            row.setFixedRowHeight(15);
+            row.getCells().add().getParagraphs().add(new TextFragment("Content 1"));
+            row.getCells().add().getParagraphs().add(new TextFragment("Content 2"));
+        }
+        page.getParagraphs().add(table);
+
+        Table table1 = new Table();
+        table1.setColumnWidths("100 100");
+        for (int i = 1; i < 11; i++) {
+            Row row = table1.getRows().add();
+            row.getCells().add().getParagraphs().add(new TextFragment("Content 3"));
+            row.getCells().add().getParagraphs().add(new TextFragment("Content 4"));
+        }
+        table1.setInNewPage(true);
+        page.getParagraphs().add(table1);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Construya una tabla rota verticalmente con columnas repetidas
+
+Utilice este ejemplo cuando una tabla ancha deba continuar verticalmente y repetir columnas clave.
+
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página.
+1. Cree una [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure la división vertical con columnas repetidas.
+1. Add the header and data rows, then save the document.
+
+```java
+public static void addTableHideBorders(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBroken(TableBroken.Vertical);
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All));
+        table.setRepeatingColumnsCount(2);
+        page.getParagraphs().add(table);
+
+        Row row = table.getRows().add();
+        Cell cell = row.getCells().add("header 1");
+        cell.setColSpan(2);
+        cell.setBackgroundColor(Color.getLightGray());
+        row.getCells().add("header 3");
+        Cell cell2 = row.getCells().add("header 4");
+        cell2.setColSpan(2);
+        cell2.setBackgroundColor(Color.getLightBlue());
+        row.getCells().add("header 6");
+        Cell cell3 = row.getCells().add("header 7");
+        cell3.setColSpan(2);
+        cell3.setBackgroundColor(Color.getLightGreen());
+        Cell cell4 = row.getCells().add("header 9");
+        cell4.setColSpan(3);
+        cell4.setBackgroundColor(Color.getLightCoral());
+        for (int i = 12; i < 18; i++) {
+            row.getCells().add("header " + i);
+        }
+
+        for (int rowCounter = 0; rowCounter < 3; rowCounter++) {
+            Row row1 = table.getRows().add();
+            for (int i = 1; i < 18; i++) {
+                row1.getCells().add("col " + rowCounter + ", " + i);
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Reuse the borders and padding example
+
+Utilice esta ayuda cuando el escenario de márgenes y relleno deba delegar en el ejemplo de borde compartido.
+
+1. Llame al borde de la tabla existente y al método de relleno.
+1. Reuse the same table layout logic without duplicating code.
+
+```java
+public static void addMarginsOrPadding(Path outputFile) {
+    addBorders(outputFile);
+}
+```
+
+## Crea una mesa con esquinas redondeadas
+
+Use this example when the table should use rounded corner styling instead of standard rectangular borders.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and configure rounded border settings.
+1. Add rows to the table and save the PDF.
+
+```java
+public static void createTableWithRoundCorner(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        BorderInfo borderInfo = new BorderInfo(BorderSide.All);
+        borderInfo.setRoundedBorderRadius(15);
+        table.setCornerStyle(BorderCornerStyle.Round);
+        table.setBorder(borderInfo);
+        for (int rowCount = 0; rowCount < 10; rowCount++) {
+            Row row = table.getRows().add();
+            row.getCells().add("Column (" + rowCount + ", 1)");
+            row.getCells().add("Column (" + rowCount + ", 2)");
+            row.getCells().add("Column (" + rowCount + ", 3)");
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add repeating header rows
+
+Use this example when multi-page tables should repeat their header rows on every continuation page.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a vertically broken [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and configure repeating row count and style.
+1. Add header rows and data rows, then save the document.
+
+```java
+public static void addRepeatingRows(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBroken(TableBroken.Vertical);
+        table.setRepeatingRowsCount(2);
+        TextState textState = new TextState();
+        textState.setFontSize(12);
+        textState.setFont(FontRepository.findFont("TimesNewRoman"));
+        textState.setForegroundColor(Color.getRed());
+        table.setRepeatingRowsStyle(textState);
+        table.setColumnWidths("100 100 100");
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
+        table.setBorder(new BorderInfo(BorderSide.All, 1, Color.getBlack()));
+
+        Row headerRow1 = table.getRows().add();
+        headerRow1.getCells().add("Header 1-1");
+        headerRow1.getCells().add("Header 1-2");
+        headerRow1.getCells().add("Header 1-3");
+        for (Cell cell : headerRow1.getCells()) {
+            cell.setBackgroundColor(Color.getLightGray());
+        }
+        Row headerRow2 = table.getRows().add();
+        headerRow2.getCells().add("Header 2-1");
+        headerRow2.getCells().add("Header 2-2");
+        headerRow2.getCells().add("Header 2-3");
+        for (Cell cell : headerRow2.getCells()) {
+            cell.setBackgroundColor(Color.getLightBlue());
+        }
+        for (int i = 1; i < 101; i++) {
+            Row row = table.getRows().add();
+            row.getCells().add("Data " + i + "-1");
+            row.getCells().add("Data " + i + "-2");
+            row.getCells().add("Data " + i + "-3");
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Add repeating columns in a wide table
+
+Use this example when the first columns should repeat while the table breaks vertically on the same page.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and configure page size.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and set repeating columns plus auto-fit behavior.
+1. Agregue encabezado y filas de datos, luego guarde el PDF.
+
+```java
+public static void addRepeatingColumns(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.setPageSize(PageSize.getA5().getHeight(), PageSize.getA5().getWidth());
+        BorderInfo border = new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray());
+        Table table = new Table();
+        table.setBroken(TableBroken.VerticalInSamePage);
+        table.setColumnAdjustment(ColumnAdjustment.AutoFitToContent);
+        table.setRepeatingColumnsCount(5);
+        table.setBorder(border);
+        table.setDefaultCellBorder(border);
+        page.getParagraphs().add(table);
+
+        Row row = table.getRows().add();
+        for (int i = 1; i < 6; i++) {
+            Cell cell = row.getCells().add("header " + i);
+            cell.setBackgroundColor(Color.getLightGray());
+        }
+        for (int i = 6; i < 18; i++) {
+            row.getCells().add("header " + i);
+        }
+
+        for (int rowCounter = 1; rowCounter < 6; rowCounter++) {
+            row = table.getRows().add();
+            for (int i = 1; i < 6; i++) {
+                Cell cell = row.getCells().add("cell " + rowCounter + "," + i);
+                cell.setBackgroundColor(Color.getLightGray());
+            }
+            for (int i = 6; i < 18; i++) {
+                row.getCells().add("cell " + rowCounter + "," + i);
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Insert page breaks between table rows
+
+Use this example when specific table rows should begin on a new page.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and populate many rows.
+1. Mark selected rows with `InNewPage` and save the document.
+
+```java
+public static void insertPageBreak(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, Color.getRed()));
+        table.setColumnWidths("100 100");
+        for (int counter = 0; counter < 201; counter++) {
             Row row = new Row();
-            tab.getRows().add(row);
-            Cell cell1 = new Cell();
-            cell1.getParagraphs().add(new TextFragment("Cell " + counter + ", 0"));
-            row.getCells().add(cell1);
-            Cell cell2 = new Cell();
-            cell2.getParagraphs().add(new TextFragment("Cell " + counter + ", 1"));
-            row.getCells().add(cell2);
-            // Cuando se agregan 10 filas, renderizar nueva fila en nueva página
-            if (counter % 10 == 0 && counter != 0)
+            table.getRows().add(row);
+            row.getCells().add().getParagraphs().add(new TextFragment("Cell " + counter + ", 0"));
+            row.getCells().add().getParagraphs().add(new TextFragment("Cell " + counter + ", 1"));
+            if (counter % 10 == 0 && counter != 0) {
                 row.setInNewPage(true);
+            }
         }
-        // Agregar la tabla a la colección de párrafos del archivo PDF
-        page.getParagraphs().add(tab);
-
-        // Guardar el documento PDF
-        doc.save(_dataDir + "InsertPageBreak_out.pdf");
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Rotate text inside table cells
 
-## Ocultar Bordes de Celdas Combinadas
+Use this example when cell text should be displayed at different rotation angles.
 
-Al agregar celdas a una tabla, los bordes de las celdas combinadas pueden aparecer cuando se rompen a otra fila. Tales bordes combinados pueden hacerse invisibles como se muestra en el siguiente ejemplo de código.
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a page.
+1. Create a [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) and add a row with multiple cells.
+1. Create rotated [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objects, add them to the cells, and save the PDF.
 
 ```java
-Document doc = new Document();
-com.aspose.pdf.Page page = doc.getPages().add();
-
-//Instanciar un objeto de tabla que se anidará dentro de outerTable que se romperá
-//dentro de la misma página
-com.aspose.pdf.Table mytable = new com.aspose.pdf.Table();
-mytable.setBroken(TableBroken.Vertical);
-mytable.setDefaultCellBorder(new BorderInfo(BorderSide.All));
-mytable.setRepeatingColumnsCount(2);
-page.getParagraphs().add(mytable);
-
-//Agregar fila de encabezado
-com.aspose.pdf.Row row = mytable.getRows().add();
-Cell cell = row.getCells().add("encabezado 1");
-cell.setColSpan(2);
-cell.setBackgroundColor(Color.getLightGray());
-Cell header3 = row.getCells().add("encabezado 3");
-Cell cell2 = row.getCells().add("encabezado 4");
-cell2.setColSpan(2);
-cell2.setBackgroundColor(Color.getLightBlue());
-row.getCells().add("encabezado 6");
-Cell cell3 = row.getCells().add("encabezado 7");
-cell3.setColSpan(2);
-cell3.setBackgroundColor(Color.getLightGreen());
-Cell cell4 = row.getCells().add("encabezado 9");
-cell4.setColSpan(3);
-cell4.setBackgroundColor(Color.getLightCoral());
-row.getCells().add("encabezado 12");
-row.getCells().add("encabezado 13");
-row.getCells().add("encabezado 14");
-row.getCells().add("encabezado 15");
-row.getCells().add("encabezado 16");
-row.getCells().add("encabezado 17");
-
-for (int rowCounter = 0; rowCounter < 1; rowCounter++)
-{
-  //Crear filas en la tabla y luego celdas en las filas
-  com.aspose.pdf.Row row1 = mytable.getRows().add();
-  row1.getCells().add("col "+rowCounter+", 1");
-  row1.getCells().add("col "+rowCounter+", 2");
-  row1.getCells().add("col "+rowCounter+", 3");
-  row1.getCells().add("col "+rowCounter+", 4");
-  row1.getCells().add("col "+rowCounter+", 5");
-  row1.getCells().add("col "+rowCounter+", 6");
-  row1.getCells().add("col "+rowCounter+", 7");
-  row1.getCells().add("col "+rowCounter+", 8");
-  row1.getCells().add("col "+rowCounter+", 9");
-  row1.getCells().add("col "+rowCounter+", 10");
-  row1.getCells().add("col "+rowCounter+", 11");
-  row1.getCells().add("col "+rowCounter+", 12");
-  row1.getCells().add("col "+rowCounter+", 13");
-  row1.getCells().add("col "+rowCounter+", 14");
-  row1.getCells().add("col "+rowCounter+", 15");
-  row1.getCells().add("col "+rowCounter+", 16");
-  row1.getCells().add("col "+rowCounter+", 17");
+public static void rotatedTextTable(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Table table = new Table();
+        table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getBlack()));
+        Row row = table.getRows().add();
+        row.setMinRowHeight(200);
+        for (int cellCount = 0; cellCount < 4; cellCount++) {
+            Cell cell = row.getCells().add();
+            TextFragment textFragment = new TextFragment("Cell 1 " + (cellCount - 1));
+            textFragment.getTextState().setRotation(90 * cellCount);
+            textFragment.setHorizontalAlignment(HorizontalAlignment.Center);
+            cell.getParagraphs().add(textFragment);
+        }
+        page.getParagraphs().add(table);
+        document.save(outputFile.toString());
+    }
 }
-doc.save(dataDir + "3_out.pdf");
 ```

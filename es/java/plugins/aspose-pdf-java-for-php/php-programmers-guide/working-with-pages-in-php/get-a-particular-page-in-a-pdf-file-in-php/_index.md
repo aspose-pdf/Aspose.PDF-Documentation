@@ -1,40 +1,41 @@
 ---
-title: Obtener una Página Particular en un Archivo PDF en PHP
+title: Get a Particular Page in a PDF File in PHP
+linktitle: Get a Particular Page in a PDF File in PHP
 type: docs
 weight: 30
-url: /es/java/get-a-particular-page-in-a-pdf-file-in-php/
-lastmod: "2021-06-05"
+url: /java/get-a-particular-page-in-a-pdf-file-in-php/
+description: Learn how to retrieve a particular page from a PDF file in PHP using Aspose.PDF for targeted page processing.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Get Page
 
-## Aspose.PDF - Obtener Página
+To get a Particular Page in a PDF document using **Aspose.PDF Java for Ruby**, simply invoke **GetPage** class.
 
-Para obtener una Página Particular en un documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoca la clase **GetPage**.
-
-Código Ruby
+Ruby Code
 
 ```php
 
-# Abrir el documento objetivo
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# obtener la página en un índice particular de la Colección de Páginas
+# get the page at particular index of Page Collection
 $pdf_page = $pdf->getPages()->get_Item(1);
 
-# crear un nuevo objeto Document
+# create a new Document object
 $new_document = new Document();
 
-# añadir página a la colección de páginas del nuevo objeto documento
+# add page to pages collection of new document object
 $new_document->getPages()->add($pdf_page);
 
-# guardar el archivo PDF recién generado
+# save the newly generated PDF file
 $new_document->save($dataDir . "output.pdf");
 
-print "¡Proceso completado con éxito!";
+print "Process completed successfully!";
 
 ```
 
-## Descargar Código en Ejecución
+## Download Running Code
 
-Descargar **Obtener Página (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+Download **Get Page (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPage.php)

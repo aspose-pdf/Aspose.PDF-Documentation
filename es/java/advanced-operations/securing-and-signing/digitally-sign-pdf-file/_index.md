@@ -1,64 +1,84 @@
 ---
-title: Cómo firmar digitalmente un PDF
-linktitle: Firmar digitalmente PDF
+title: Agregue firma digital o firme digitalmente PDF en Java
+linktitle: Digitally sign PDF
 type: docs
 weight: 10
-url: /es/java/digitally-sign-pdf-file/
-description: Firme digitalmente documentos PDF usando Java. Verifique o valide los PDFs firmados digitalmente con una aplicación basada en Java con PDF Library. Puede certificar un archivo PDF con un certificado PKCS1.
-lastmod: "2021-06-05"
+url: /java/digitally-sign-pdf-file/
+description: Aprenda a firmar y certificar digitalmente documentos PDF en Java utilizando Aspose.PDF.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Digitally sign PDF files with Java
+Abstract: Esta guía explica cómo firmar digitalmente documentos PDF usando Aspose.PDF para Java. Cubre la firma con un objeto de certificado, la firma con parámetros básicos de certificado y la certificación de un documento con una firma DocMDP para controlar los cambios permitidos posteriores a la firma.
 ---
+Aspose.PDF for Java supports multiple signing flows through `PdfFileSignature`.
 
-Al firmar un documento PDF usando una firma, básicamente confirma que su contenido debe permanecer "tal cual". Por lo tanto, cualquier cambio realizado posteriormente invalida la firma y, por lo tanto, sabe si el documento ha sido alterado. Certificar un documento primero, le permite especificar los cambios que un usuario puede hacer al documento sin invalidar la certificación.
+## Sign a PDF with a certificate object
 
-En otras palabras, el documento aún se consideraría como que mantiene su integridad y el destinatario aún podría confiar en el documento. Para más detalles, por favor visite Certificar y firmar un PDF.
-
-Para cumplir con el requisito mencionado anteriormente, se han realizado los siguientes cambios en la API pública.
-
-isCertified(…) método se añade a la clase PdfFileSignature.
-
-## Firmar PDF con firmas digitales
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Create the [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) signature object and configure the signing options.
+1. Apply the signature to the PDF document through [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Save the updated PDF document.
 
 ```java
-public class ExampleDigitallySign {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Secure-Sign/";
-
-    public static void SignDocument() {
-        String inFile = _dataDir + "DigitallySign.pdf";
-        String outFile = _dataDir + "DigitallySign_out.pdf";
-        Document document = new Document(inFile);
-
-        PdfFileSignature signature = new PdfFileSignature(document);
-
-        PKCS7 pkcs = new PKCS7("/home/aspose/pdf-examples/Samples/test.pfx", "Pa$$w0rd2020"); // Usar objetos PKCS7/PKCS7Detached
-        signature.sign(1, true, new java.awt.Rectangle(300, 100, 400, 200), pkcs);
-        // Guardar archivo PDF de salida
-        signature.save(outFile);
+public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        pdfSignature.sign(1, false, signatureRectangle(), createPkcs7(certificateFile, "Document approval"));
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
     }
+}
 ```
 
-## Añadir marca de tiempo a la firma digital
+This approach builds a `PKCS7` signature object first and then applies it to page 1.
 
-Aspose.PDF para Java soporta firmar digitalmente el PDF con un servidor de marca de tiempo o servicio web.
+## Sign a PDF with basic certificate parameters
 
-Para cumplir con este requisito, la clase [TimestampSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf/TimestampSettings) ha sido añadida al espacio de nombres Aspose.PDF. Por favor, echa un vistazo al siguiente fragmento de código que obtiene una marca de tiempo y la añade al documento PDF:
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Configure the certificate parameters required by the signing example.
+1. Apply the signature to the PDF document through [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Save the updated PDF document.
 
 ```java
-    public static void SignWithTimeStampServer() {
-        Document document = new Document(_dataDir + "SimpleResume.pdf");
-        PdfFileSignature signature = new PdfFileSignature(document);
-
-        PKCS7 pkcs = new PKCS7("/home/aspose/pdf-examples/Samples/test.pfx", "Start2020");
-        TimestampSettings timestampSettings = new TimestampSettings("https://freetsa.org/tsr", ""); // Usuario/Contraseña puede
-                                                                                                    // ser omitido
-        pkcs.setTimestampSettings(timestampSettings);
-        java.awt.Rectangle rect = new java.awt.Rectangle(100, 100, 200, 100);
-        // Crear cualquiera de los tres tipos de firma
-        signature.sign(1, "Razón de la Firma", "Contacto", "Ubicación", true, rect, pkcs);
-        // Guardar el archivo PDF de salida
-        signature.save(_dataDir + "DigitallySignWithTimeStamp_out.pdf");
+public static void signPdfWithBasicParameters(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        pdfSignature.setCertificate(certificateFile.toString(), CERTIFICATE_PASSWORD);
+        pdfSignature.sign(1, "Document approval", "qa@example.com", "New York, USA", false, signatureRectangle());
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
     }
+}
+```
+
+## Certify a PDF with DocMDP
+
+Use a document modification detection and prevention signature when you need certification-level restrictions:
+
+1. Create the [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade and bind the source PDF document.
+1. Create the [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) object and configure the [DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/) signing options.
+1. Apply the certification signature and save the updated PDF document.
+
+```java
+public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        DocMDPSignature signature = new DocMDPSignature(
+                createPkcs7(certificateFile, "Certified for form filling and signing"),
+                DocMDPAccessPermissions.FillingInForms);
+        pdfSignature.certify(1, "Certified for form filling and signing", "security@example.com",
+                "New York, USA", true, signatureRectangle(), signature);
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
+    }
+}
 ```

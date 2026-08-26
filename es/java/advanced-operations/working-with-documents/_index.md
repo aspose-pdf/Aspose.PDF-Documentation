@@ -1,30 +1,23 @@
 ---
-title: Trabajando con Documentos PDF
-linktitle: Trabajando con Documentos
+title: Work with PDF Documents in Java
+linktitle: Working with Documents
 type: docs
 weight: 10
-url: /es/java/working-with-documents/
-lastmod: "2021-06-05"
-description: Este artículo describe qué manipulaciones se pueden hacer con el documento con Aspose.PDF para Java.
+url: /java/working-with-documents/
+description: Learn how to create, format, manipulate, optimize, merge, split, and manage PDF documents in Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create, format, merge, split, and optimize PDF documents in Java
+Abstract: This section explains how to work with PDF documents using Aspose.PDF for Java. Learn how to create PDF files, format document properties, manipulate content structure, optimize file size, and merge or split PDF documents.
 ---
+Aspose.PDF for Java provides document-level APIs for creating, formatting, validating, restructuring, merging, splitting, and optimizing PDF files.
 
-PDF es el formato estándar para documentos electrónicos. Ahora los archivos PDF se utilizan en la gestión de producción, la esfera de varios servicios financieros, abogados, en publicación, instituciones educativas.
-
-El archivo PDF guarda todas las fuentes, colores y estructura del documento original independientemente del software y hardware. Por lo tanto, el documento PDF siempre será idéntico al original: se verá e imprimirá como el documento original.
-
-El objetivo principal del documento PDF era preservar y proteger el contenido y el diseño de un documento. Es por eso que los PDF son difíciles de editar y a veces incluso extraer información de ellos es un problema.
-
-Pero **Aspose.PDF para Java** puede ayudarte a enfrentar la mayoría de las tareas que surgen al trabajar con un documento PDF.
-
-You are able to do the following:
-
-- [Create Document](/pdf/es/java/create-pdf-document/) - crear un documento PDF.
-- [Formatting PDF Document](/pdf/es/java/formatting-pdf-document/) - obtener y establecer propiedades del documento, incrustar fuentes y otras operaciones con archivos PDF.
-- [Manipulate PDF Document](/pdf/es/java/manipulate-pdf-document/) - validar un documento PDF para el estándar PDF A, trabajar con TOC, establecer fecha de vencimiento del PDF, etc.
-- [Optimize PDF](/pdf/es/java/optimize-pdf/) - optimizar el contenido de la página, optimizar el tamaño del archivo, eliminar objetos no utilizados, comprimir todas las imágenes para una optimización exitosa del documento.
-- [Merge PDF](/pdf/es/java/merge-pdf-documents/) - combinar múltiples archivos PDF en un solo documento PDF usando Java.
-- [Split PDF](/pdf/es/java/split-document/) - dividir páginas PDF en archivos PDF individuales en tus aplicaciones Java.
-- [Working with Headings](/pdf/es/java/working-with-headings/) - puedes crear numeración en el encabezado de tu documento PDF con Java.
+- [Create PDF documents](/pdf/java/create-pdf-document/)
+- [Format PDF documents](/pdf/java/formatting-pdf-document/)
+- [Manipulate PDF documents](/pdf/java/manipulate-pdf-document/)
+- [Merge PDF files](/pdf/java/merge-pdf-documents/)
+- [Optimize PDF files](/pdf/java/optimize-pdf/)
+- [Split PDF files](/pdf/java/split-pdf-document/)

@@ -1,16 +1,20 @@
 ---
-title: Navegación e Interacción
-linktitle: Navegación e interacción
+title: PDF Navigation and Interaction in Java
+linktitle: Navigation and interaction
 type: docs
 weight: 90
-url: /es/java/navigation-and-interaction/
-description: Esta sección describe las características del trabajo con enlaces, acciones y marcadores.
-lastmod: "2021-06-05"
+url: /java/navigation-and-interaction/
+description: Learn how to work with PDF links, actions, and bookmarks in Java for navigation and interactive document behavior.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Work with links, actions, and bookmarks in PDF files using Java
+Abstract: This section explains how to manage navigation and interaction features in PDF documents with Aspose.PDF for Java. Learn how to create and update links, add interactive actions, and work with bookmarks to improve PDF navigation and document workflows.
 ---
+Aspose.PDF for Java includes APIs for bookmarks, links, and interactive actions. You can use these features to improve navigation inside a document, connect to external resources, and trigger behavior from user interaction.
 
-- [Enlaces](/pdf/es/java/links/) - puedes crear, actualizar y extraer enlaces fácilmente con Java.
-- [Acciones](/pdf/es/java/actions/) - es posible agregar y obtener, crear hipervínculos a archivos PDF. Además, en este artículo, aprenderás cómo eliminar la Acción de Apertura de Documento de un archivo PDF y cómo especificar la página PDF al ver el documento.
-- [Marcadores](/pdf/es/java/bookmarks/)- las publicaciones grandes suelen incluir un marco de marcadores que se pueden ver y seleccionar fácilmente en el Panel de Marcadores, lo que te permite hacer clic en un marcador para saltar a la página o capítulo que representa. El Panel de Marcadores es un elemento consciente del contenido y es visible en la barra lateral solo si el documento PDF abierto contiene una estructura de marcadores.
+- [Work with PDF links](/pdf/java/links/)
+- [Work with PDF actions](/pdf/java/actions/)
+- [Work with PDF bookmarks](/pdf/java/bookmarks/)

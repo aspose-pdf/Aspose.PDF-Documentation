@@ -1,27 +1,21 @@
 ---
-title: PDF Annotations
+title: PDF Annotations in Java
 linktitle: PDF Annotations
 type: docs
 weight: 100
-url: /es/java/annotations/
-description: Esta sección muestra cómo usar todo tipo de anotaciones en su archivo PDF con la biblioteca Aspose.PDF. Aprenda a dibujar, abrir o agregar una anotación con Java.
-lastmod: "2021-11-26"
+url: /java/annotations/
+description: Learn how to add, inspect, delete, transfer, and manage PDF annotations in Java with Aspose.PDF, including text, markup, links, shapes, watermarks, redactions, and media-related annotation guidance.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: How to add Annotations to PDF using Java
+Abstract: This article introduces PDF annotation workflows in Aspose.PDF for Java. It covers adding, getting, deleting, and transferring annotations, with grouped topics for text, markup, interactive, shape, watermark, security, and media-related annotation scenarios.
 ---
+Annotations are interactive PDF elements that let you add notes, highlight text, draw shapes, create links, apply redactions, and enrich document review workflows in existing PDF files.
 
-Si te preguntas cómo anotar PDF, estás en el lugar correcto.
+Use this section to:
 
-Estos objetos se llaman anotaciones, y su propósito varía desde marcar el contenido de la página hasta implementar funciones interactivas como formularios.
-
-Los visores de PDF generalmente permiten la creación y edición de varios tipos de anotaciones, por ejemplo, resaltados de texto, notas, líneas o formas. Independientemente de los tipos de anotaciones que se puedan crear, los visores de PDF que cumplen con la especificación PDF también deben admitir el renderizado para todos los tipos de anotaciones.
-
-La anotación es una parte importante del archivo PDF.
- Usando Aspose.PDF puedes agregar una nueva anotación, editar una anotación existente y eliminar anotaciones, entre otras cosas. En esta sección se cubre el siguiente tema:
-
-Eres capaz de hacer lo siguiente:
-
-- [Visión general de las Anotaciones](/pdf/es/java/overview-of-annotations/) - aprende qué tipos de anotaciones están definidas por la especificación PDF, y qué soporta Aspose.PDF.
-- [Agregar, Eliminar y Obtener Anotación](/pdf/es/java/add-delete-and-get-annotation/) - esta sección explica cómo trabajar con todos los tipos de anotaciones permitidas.
-- [Importar y exportar anotaciones con formato XFDF](/pdf/es/java/import-export-xfdf/) - la biblioteca Aspose.PDF proporciona métodos para importar y exportar datos de anotaciones a archivos XFDF.
+- [Add, Delete and Get Annotation](/pdf/java/add-delete-and-get-annotation/) for grouped annotation families.
+- [Import and Export Annotations](/pdf/java/import-export-annotations/) to copy annotations between PDF files.

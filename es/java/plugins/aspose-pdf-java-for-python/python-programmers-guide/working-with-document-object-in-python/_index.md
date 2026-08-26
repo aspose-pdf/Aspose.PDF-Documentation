@@ -1,19 +1,20 @@
 ---
-title: Trabajando con el Objeto Documento en Python
+title: Trabajar con objeto de documento en Python
+linktitle: Working with Document Object in Python
 type: docs
 weight: 20
-url: /es/java/working-with-document-object-in-python/
-lastmod: "2021-06-05"
+url: /java/working-with-document-object-in-python/
+description: Aprenda a trabajar con objetos de documentos PDF en Python usando Aspose.PDF, lo que le permitirá manipular y procesar archivos PDF de manera eficiente.
+lastmod: "2026-06-09"
 ---
+This section includes the following topics:
 
-Esta sección incluye los siguientes temas:
-
-- [Añadir JavaScript en Python](/pdf/es/java/adding-javascript-in-python/)
-- [Añadir TOC a PDF Existente en Python](/pdf/es/java/add-toc-to-existing-pdf-in-python/)
-- [Obtener Propiedades de Ventana de Documento y Visualización de Página en Python](/pdf/es/java/get-document-window-and-page-display-properties-in-python/)
-- [Obtener Información del Archivo PDF en Python](/pdf/es/java/get-pdf-file-information-in-python/)
-- [Obtener Metadatos XMP del Archivo PDF en Python](/pdf/es/java/get-xmp-metadata-from-pdf-file-in-python/)
-- [Optimizar Documento PDF para la Web en Python](/pdf/es/java/optimize-pdf-document-for-the-web-in-python/)
-- [Eliminar Metadatos de PDF en Python](/pdf/es/java/remove-metadata-from-pdf-in-python/)
-- [Configurar Expiración de PDF en Python](/pdf/es/java/set-pdf-expiration-in-python/)
-- [Configurar Información del Archivo PDF en Python](/pdf/es/java/set-pdf-file-information-in-python/)
+- [Adding JavaScript in Python](/pdf/java/adding-javascript-in-python/)
+- [Add TOC to Existing PDF in Python](/pdf/java/add-toc-to-existing-pdf-in-python/)
+- [Get Document Window and Page Display Properties in Python](/pdf/java/get-document-window-and-page-display-properties-in-python/)
+- [Get PDF File Information in Python](/pdf/java/get-pdf-file-information-in-python/)
+- [Get XMP Metadata from PDF File in Python](/pdf/java/get-xmp-metadata-from-pdf-file-in-python/)
+- [Optimize PDF Document for the Web in Python](/pdf/java/optimize-pdf-document-for-the-web-in-python/)
+- [Remove Metadata from PDF in Python](/pdf/java/remove-metadata-from-pdf-in-python/)
+- [Set PDF Expiration in Python](/pdf/java/set-pdf-expiration-in-python/)
+- [Set PDF File Information in Python](/pdf/java/set-pdf-file-information-in-python/)

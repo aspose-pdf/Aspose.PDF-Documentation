@@ -1,52 +1,44 @@
 ---
-title: Rellenar AcroForms
-linktitle: Rellenar AcroForms
+title: Fill AcroForm - Fill PDF Form using Java
+linktitle: Fill AcroForm
 type: docs
 weight: 20
-url: /es/java/fill-form/
-description: Esta sección explica cómo rellenar un campo de formulario en un documento PDF con Aspose.PDF para Java.
-lastmod: "2021-06-05"
+url: /java/fill-form/
+description: Fill AcroForm fields in a PDF document using Aspose.PDF for Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Complete los campos de AcroForm en archivos PDF con Java
+Abstract: This article explains how to fill AcroForm fields using Aspose.PDF for Java. The example loads a PDF through the Form facade, matches field names against a value map, updates the matching fields, and saves the completed document.
 ---
+The `Form` facade can be used to automate field population in an existing AcroForm.
 
-Los documentos PDF son maravillosos y realmente el tipo de archivo preferido para crear Formularios.
+## Fill AcroForm fields with new values
 
-Aspose.PDF para Java te permite rellenar un campo de formulario, obtener el campo de la colección de Form del objeto Document.
-
-Veamos el siguiente ejemplo de cómo resolver esta tarea:
+1. Open the PDF form document with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
+1. Iterate through the form fields and update the matching entries with the provided values.
+1. Save the updated PDF document.
 
 ```java
-public class ExamplesFillForm {
+public static void fillForm(Path inputFile, Path outputFile) {
+    Map<String, String> newFieldValues = Map.of(
+            "First Name", "Alexander_New",
+            "Last Name", "Greenfield_New",
+            "City", "Yellowtown_New",
+            "Country", "Redland_New");
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void FillFormFieldPDFDocument() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // Crear un campo
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
-        textBoxField.setPartialName("textbox1");
-        textBoxField.setValue("Cuadro de Texto");
-
-        // TextBoxField.Border = new Border(
-        Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        textBoxField.setBorder(border);
-
-        textBoxField.setColor(Color.getGreen());
-
-        // Añadir campo al documento
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // Guardar PDF modificado
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+    Form form = new Form(inputFile.toString());
+    try {
+        for (String fieldName : form.getFieldNames()) {
+            if (newFieldValues.containsKey(fieldName)) {
+                form.fillField(fieldName, newFieldValues.get(fieldName));
+            }
+        }
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
     }
-
-    
 }
 ```

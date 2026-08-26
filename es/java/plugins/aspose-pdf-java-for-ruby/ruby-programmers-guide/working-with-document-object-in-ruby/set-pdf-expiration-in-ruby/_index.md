@@ -1,54 +1,54 @@
 ---
-title: Establecer Expiración de PDF en Ruby
+title: Set PDF Expiration in Ruby
+linktitle: Set PDF Expiration in Ruby
 type: docs
 weight: 110
-url: /es/java/set-pdf-expiration-in-ruby/
-lastmod: "2021-06-05"
+url: /java/set-pdf-expiration-in-ruby/
+description: Implement expiration dates in PDFs using Aspose.PDF for Ruby for time-sensitive documents.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Set PDF Expiration
 
-## Aspose.PDF - Establecer Expiración de PDF
+To set expiration ofВ  Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **SetExpiration** module.
 
-Para establecer la expiración de un documento PDF usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **SetExpiration**.
-
-Código Ruby
+Ruby Code
 
 ```java
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abrir un documento pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
 javascript = Rjb::import('com.aspose.pdf.JavascriptAction').new(
 
-    "var year=2014;
+В В В  "var year=2014;
 
-    var month=4;
+В В В  var month=4;
 
-    today = new Date();
+В В В  today = new Date();
 
-    today = new Date(today.getFullYear(), today.getMonth());
+В В В  today = new Date(today.getFullYear(), today.getMonth());
 
-    expiry = new Date(year, month);
+В В В  expiry = new Date(year, month);
 
-    if (today.getTime() > expiry.getTime())
+В В В  if (today.getTime() > expiry.getTime())
 
-    app.alert('El archivo está caducado. Necesitas uno nuevo.');")
+В В В  app.alert('The file is expired. You need a new one.');")
 
 doc.setOpenAction(javascript)
 
-# guardar documento actualizado con nueva información
+# save update document with new information
 
 doc.save(data_dir + "set_expiration.pdf")
 
-puts "Información del documento actualizada, por favor revise el archivo de salida."
+puts "Update document information, please check output file."
 ```
 
+## Download Running Code
 
-## Descargar Código en Ejecución
-
-Descargue **Establecer Expiración de PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Set PDF Expiration (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)

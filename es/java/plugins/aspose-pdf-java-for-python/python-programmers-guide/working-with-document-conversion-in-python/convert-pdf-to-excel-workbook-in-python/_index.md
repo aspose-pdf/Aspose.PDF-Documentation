@@ -1,12 +1,13 @@
 ---
-title: Convertir PDF a Libro de Excel en Python
+title: Convert PDF to Excel Workbook in Python
+linktitle: Convert PDF to Excel Workbook in Python
 type: docs
 weight: 20
-url: /es/java/convert-pdf-to-excel-workbook-in-python/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-excel-workbook-in-python/
+description: Aprenda cómo convertir documentos PDF a libros de Excel en Python usando Aspose.PDF para la extracción de datos estructurados.
+lastmod: "2026-06-09"
 ---
-
-Para convertir un documento PDF a un Libro de Excel usando **Aspose.PDF Java para Python**, simplemente invoca el módulo **PdfToExcel**.
+To convert PDF document to Excel Workbook using **Aspose.PDF Java for Python**, simply invoke **PdfToExcel** module.
 
 ```python
 
@@ -14,16 +15,16 @@ doc=self.Document()
 pdf = self.Document()
 pdf=self.dataDir +'input1.pdf'
 
-# Instanciar objeto de opción de guardado en Excel
+# Instantiate ExcelSave Option object
 excelsave=self.ExcelSaveOptions();
 
-# Guardar el resultado en formato XLS
+# Save the output to XLS format
 doc.save(self.dataDir + "Converted_Excel.xls", excelsave);
-print "El documento ha sido convertido con éxito"
+print "Document has been converted successfully"
 ```
 
-**Descargar Código en Ejecución**
+**Download Running Code**
 
-Descargar **Convertir PDF a Libro de Excel (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Convert PDF to Excel Workbook (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)
+- [GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)

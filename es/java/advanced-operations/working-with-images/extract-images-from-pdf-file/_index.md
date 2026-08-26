@@ -1,51 +1,62 @@
 ---
-title: Extraer Imágenes de un Archivo PDF
-linktitle: Extraer Imágenes
+title: Extract Images from PDF File using Java
+linktitle: Extract Images
 type: docs
 weight: 30
-url: /es/java/extract-images-from-pdf-file/
-description: Esta sección muestra cómo extraer imágenes de un archivo PDF usando una biblioteca Java.
-lastmod: "2021-06-05"
+url: /java/extract-images-from-pdf-file/
+description: Learn how to extract embedded images from PDF files in Java.
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: Extract images from PDF files with Java
+Abstract: This article shows how to extract images from PDF documents using Aspose.PDF for Java. It covers saving a specific image resource from a page and exporting images that fall inside a selected rectangular region.
 ---
+Aspose.PDF for Java supports direct image-resource extraction and placement-based filtering.
 
-Cada página contiene una colección de [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources), y esta, a su vez, contiene la colección de Imágenes, donde se guardan todas las imágenes de una página. El objeto [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage) obtiene una imagen dada en la colección de Imágenes.
+## Extract an embedded image by index
 
-Para extraer una imagen de una página:
+Use this example when you need to save a specific image resource from a PDF page.
 
-Obtén la imagen de la colección de Imágenes usando el índice de imagen.
-Usa el método save(..) del objeto [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage) para guardar la imagen extraída.
-
-El siguiente fragmento de código muestra cómo extraer imágenes del archivo PDF.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the target [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) from the page resources.
+1. Save the image stream to an output file.
 
 ```java
-package com.aspose.pdf.examples;
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
+    }
+}
+```
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+## Extract images from a specific page region
 
-import com.aspose.pdf.*;
-import com.aspose.pdf.internal.html.rendering.image.ImageFormat;
+Use this example when only images placed inside a selected rectangle should be exported.
 
-public class ExampleExtractImages {
+1. Define the target [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) and open the source PDF.
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) to inspect image placements on the page.
+1. Save only the images whose placement fits inside the selected region.
 
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+```java
+public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {
+    Rectangle rectangle = new Rectangle(0, 0, 590, 590, true);
 
-    public static void ExtractImages() throws IOException {
-
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "ExtractImages.pdf");
-
-        // Extraer una imagen particular
-        XImage xImage = pdfDocument.getPages().get_Item(1).getResources().getImages().get_Item(1);
-
-        FileOutputStream outputImage = new FileOutputStream(_dataDir + "output.jpg");
-
-        // Guardar imagen de salida
-        xImage.save(outputImage, ImageFormat.Jpeg);
-        outputImage.close();
-
-        // Guardar archivo PDF actualizado
-        pdfDocument.save(_dataDir + "ExtractImages_out.pdf");
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+        int index = 1;
+        for (ImagePlacement imagePlacement : absorber.getImagePlacements()) {
+            Point point1 = new Point(imagePlacement.getRectangle().getLLX(), imagePlacement.getRectangle().getLLY());
+            Point point2 = new Point(imagePlacement.getRectangle().getURX(), imagePlacement.getRectangle().getURX());
+            if (rectangle.contains(point1, true) && rectangle.contains(point2, true)) {
+                Path indexedOutputFile = Path.of(outputFile.toString().replace("index", String.valueOf(index)));
+                try (OutputStream outputImage = Files.newOutputStream(indexedOutputFile)) {
+                    imagePlacement.getImage().save(outputImage);
+                }
+                index++;
+            }
+        }
     }
 }
 ```

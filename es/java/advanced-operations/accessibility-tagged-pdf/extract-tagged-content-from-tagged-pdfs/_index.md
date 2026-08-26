@@ -1,116 +1,96 @@
 ---
-title: Extraer Contenido Etiquetado de PDF
-linktitle: Extraer Contenido Etiquetado
+title: Extract Tagged Content from PDFs in Java
+linktitle: Extract Tagged Content
 type: docs
 weight: 20
-url: /es/java/extract-tagged-content-from-tagged-pdfs/
-description: Este artículo explica cómo extraer contenido etiquetado de un documento PDF usando Aspose.PDF para Java
-lastmod: "2021-06-05"
+url: /java/extract-tagged-content-from-tagged-pdfs/
+description: Learn how to inspect tagged PDF content in Java with Aspose.PDF, including tagged content access, root structure access, and child structure elements.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+Use these APIs when you need to inspect the logical structure tree of a tagged PDF and examine or update structure element metadata.
 
-## Obtener Contenido de PDF Etiquetado
+## Get tagged content metadata
 
-Para obtener el contenido de un Documento PDF con Texto Etiquetado, Aspose.PDF ofrece el método [getTaggedContent()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getTaggedContent--) de la Clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document). El siguiente fragmento de código muestra cómo obtener el contenido de un documento PDF con Texto Etiquetado:
+Use this example when you need access to the tagged content container and want to define basic document metadata such as title and language.
 
-```java
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// La ruta al directorio de documentos.
-String path = "pathTodir";
-
-// Crear Documento Pdf
-Document document = new Document();
-
-// Obtener Contenido para trabajar con TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
-
-//
-// Trabajar con contenido de Pdf Etiquetado
-//
-
-// Establecer Título e Idioma para el Documento
-taggedContent.setTitle("Documento Pdf Etiquetado Simple");
-taggedContent.setLanguage("en-US");
-
-// Guardar Documento Pdf Etiquetado
-document.save(path + "TaggedPDFContent.pdf");
-```
-
-
-## Obtener la Estructura Raíz
-
-Para obtener la estructura raíz de un Documento PDF Etiquetado, Aspose.PDF ofrece los métodos [getStructTreeRootElement]()(https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#getStructTreeRootElement--) y **getStructureElement()** de la Interfaz [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). El siguiente fragmento de código muestra cómo obtener la estructura raíz de un Documento PDF Etiquetado:
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Get the [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) object from the document.
+1. Set the tagged content metadata and save the output file.
 
 ```java
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// La ruta al directorio de documentos.
-String path = "pathTodir";
-// Crear Documento Pdf
-Document document = new Document();
-
-// Obtener Contenido para trabajar con TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
-
-// Establecer Título e Idioma para el Documento
-taggedContent.setTitle("Documento Pdf Etiquetado");
-taggedContent.setLanguage("en-US");
-
-// Las propiedades StructTreeRootElement y RootElement se utilizan para acceder a
-// el objeto StructTreeRoot del documento pdf y al elemento de estructura raíz (elemento de estructura del Documento).
-StructTreeRootElement structTreeRootElement = taggedContent.getStructTreeRootElement();
-StructureElement rootElement = taggedContent.getRootElement();
-```
-
-
-## Acceso a Elementos Hijos
-
-Para acceder a los elementos hijos de un Documento PDF Etiquetado, Aspose.PDF ofrece la Clase **ElementList**. El siguiente fragmento de código muestra cómo acceder a los elementos hijos de un Documento PDF Etiquetado:
-
-```java
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-Java
-String path = "pathTodir";
-// Abrir Documento Pdf
-Document document = new Document( path +"StructureElements.pdf");
-
-// Obtener contenido para trabajar con TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
-
-// Acceder al(los) elemento(s) raíz
-ElementList elementList = taggedContent.getStructTreeRootElement().getChildElements();
-for (Element element : elementList)
-{
-    if (element instanceof StructureElement)
-    {
-        StructureElement structureElement =  (StructureElement)element;
-
-        // Obtener propiedades
-        String title = structureElement.getTitle();
-        String language = structureElement.getLanguage();
-        String actualText = structureElement.getActualText();
-        String expansionText = structureElement.getExpansionText();
-        String alternativeText = structureElement.getAlternativeText();
+public static void getTaggedContent(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Simple Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
+        document.save(outputFile.toString());
     }
 }
+```
 
-// Acceder a los elementos hijos del primer elemento en el elemento raíz
-elementList = taggedContent.getRootElement().getChildElements().get_Item(1).getChildElements();
-for (Element element : elementList)
-{
-    if (element instanceof StructureElement)
-    {
-        StructureElement structureElement = (StructureElement)element;
+## Get the root structure of a tagged PDF
 
-        // Establecer propiedades
-        structureElement.setTitle("título");
-        structureElement.setLanguage("fr-FR");
-        structureElement.setActualText("texto real");
-        structureElement.setExpansionText("exp");
-        structureElement.setAlternativeText("alt");
+This example shows how to inspect the root objects that represent the structure tree of a tagged PDF.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and get its tagged content.
+1. Set the required document metadata.
+1. Read and print the structure tree root and logical root element, then save the file.
+
+```java
+public static void getRootStructure(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
+
+        System.out.println("StructTreeRootElement: " + taggedContent.getStructTreeRootElement());
+        System.out.println("RootElement: " + taggedContent.getRootElement());
+
+        document.save(outputFile.toString());
     }
 }
+```
 
-// Guardar Documento Pdf Etiquetado
-document.save( path +"AccessChildrenElements.pdf");
+## Access and update child structure elements
+
+Use this example when you need to iterate through child elements in the structure tree, inspect their properties, and update selected metadata.
+
+1. Open the source tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Read the child elements from the structure tree root and print the available properties.
+1. Access the child elements of the first root child, update their metadata, and save the document.
+
+```java
+public static void accessChildElements(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+
+        ElementList elementList = taggedContent.getStructTreeRootElement().getChildElements();
+        for (Object element : elementList) {
+            if (element instanceof StructureElement structureElement) {
+                System.out.println("StructureElement properties - "
+                        + "title: " + structureElement.getTitle()
+                        + ", language: " + structureElement.getLanguage()
+                        + ", actual_text: " + structureElement.getActualText()
+                        + ", expansion_text: " + structureElement.getExpansionText()
+                        + ", alternative_text: " + structureElement.getAlternativeText());
+            }
+        }
+
+        Element firstChild = taggedContent.getRootElement().getChildElements().get_Item(1);
+        for (Object element : firstChild.getChildElements()) {
+            if (element instanceof StructureElement structureElement) {
+                structureElement.setTitle("title");
+                structureElement.setLanguage("fr-FR");
+                structureElement.setActualText("actual text");
+                structureElement.setExpansionText("exp");
+                structureElement.setAlternativeText("alt");
+            }
+        }
+
+        document.save(outputFile.toString());
+    }
+}
 ```

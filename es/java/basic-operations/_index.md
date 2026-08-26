@@ -1,18 +1,23 @@
 ---
-title: Operaciones básicas con documentos PDF
-linktitle: Operaciones básicas
+title: Basic operations with PDF documents
+linktitle: Basic operations
 type: docs
-weight: 40
-url: /es/java/basic-operations/
-lastmod: "2021-06-05"
-description: La sección de operaciones básicas describe las posibilidades de abrir y guardar documentos PDF utilizando Aspose.PDF para Java.
+weight: 60
+url: /java/basic-operations/
+lastmod: "2026-06-09"
+description: Basic operations section describes how to create, open, save, merge, split, and protect PDF documents using Aspose.PDF for Java.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Descripción general de las operaciones básicas con PDF usando Java
+Abstract: This article provides an overview of basic PDF operations in Java using Aspose.PDF. It covers creating new documents, opening PDFs from files or streams, saving documents to files and streams, merging and splitting PDF files, and protecting documents with passwords and permissions.
 ---
+**Basic operations** section describes the first and simplest PDF tasks you can perform with Aspose.PDF for Java:
 
-La sección de **Operaciones básicas** describe la primera y más sencilla operación con documentos PDF en Aspose.PDF para Java:
-
-- [Crear documento PDF](/pdf/es/java/create-document/) - este artículo describe cómo crear un archivo PDF usando Java.
-- [Abrir documento PDF](/pdf/es/java/open-pdf-document/) - este artículo describe varias formas de cómo abrir un documento PDF en una aplicación Java.
-- [Guardar documento PDF](/pdf/es/java/save-pdf-document/) - este artículo describe varias formas de cómo guardar un documento PDF en un archivo, flujo, enviar a la Web o guardar como documento PDF/A (o PDF/X).
+- [Create PDF Document](/pdf/java/create-document/) - create a new PDF document programmatically in Java.
+- [Open PDF Document](/pdf/java/open-pdf-document/) - open PDF files from a path, from a stream, or with a password.
+- [Save PDF Document](/pdf/java/save-pdf-document/) - save a document to a file, to a stream, or as a PDF standard.
+- [Merge PDF](/pdf/java/merge-pdf/) - combine multiple PDF files into one output document.
+- [Split PDF](/pdf/java/split-pdf/) - split PDF pages into separate single-page PDF files.
+- [Encrypt and Decrypt PDF File](/pdf/java/protect-pdf-file/) - apply passwords, permissions, and decryption to PDF files.

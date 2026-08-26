@@ -1,19 +1,20 @@
 ---
-title: Obtener Número de Páginas en Jython
+title: Get Number Of Pages in Jython
+linktitle: Get Number Of Pages in Jython
 type: docs
 weight: 30
-url: /es/java/get-number-of-pages-in-jython/
-lastmod: "2021-06-05"
+url: /java/get-number-of-pages-in-jython/
+description: Learn how to obtain the number of pages in a PDF document using Jython and Aspose.PDF for document management.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Get Number Of Pages
 
-## Aspose.PDF - Obtener Número de Páginas
+To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.
 
-Para verificar el formato de archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver un código de ejemplo.
+Error rendering macro 'code' : Invalid value specified for parameter lang
 
-Error al renderizar macro 'code': Valor inválido especificado para el parámetro lang
+## Download Running Code
 
-## Descargar Código en Ejecución
-
-Descargue el código en ejecución desde cualquiera de los siguientes sitios de codificación social:
+Download running code from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

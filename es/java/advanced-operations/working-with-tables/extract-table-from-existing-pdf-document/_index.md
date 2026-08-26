@@ -1,56 +1,52 @@
 ---
-title: Extraer Tabla de un Documento PDF Existente
-linktitle: Extraer Tabla
+title: Extract Tables from PDF in Java
+linktitle: Extract Table
 type: docs
-weight: 25
-url: /es/java/extract-table-from-existing-pdf-document/
-description: Aspose.PDF para Java hace posible llevar a cabo varias manipulaciones con las tablas contenidas en su documento PDF. Puede agregar y extraer una tabla en el documento PDF existente, renderizar la tabla en una nueva página, etc.
-lastmod: "2021-06-05"
+weight: 20
+url: /java/extracting-table/
+description: Learn how to extract table data from existing PDF documents in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extract table data from PDF files with Java
+Abstract: This article explains how to extract tables from PDF documents using Aspose.PDF for Java. It shows how to use TableAbsorber to detect tables by page, iterate rows and cells, and collect cell text for downstream processing.
 ---
+Use `TableAbsorber` when you need to detect table structures in an existing PDF and read their content.
 
-## Extraer Tabla del PDF
+## Extract text from detected tables
+
+Use this example when you need to locate tables on each page and collect their cell text.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Visit each page with [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Iterate through absorbed tables, rows, and cells, then output the extracted text.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-import jdk.jshell.spi.ExecutionControl.NotImplementedException;
-
-import java.io.*;
-import java.util.*;
-
-public class ExampleExtractTable {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void Extract_Table()
-    {
-        // Cargar documento PDF de origen
-        Document pdfDocument = new Document(_dataDir + "the_worlds_cities_in_2018_data_booklet 7.pdf");
-        for(Page page : pdfDocument.getPages())
-        {
+public static void extract(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
             TableAbsorber absorber = new TableAbsorber();
             absorber.visit(page);
-            for (AbsorbedTable table : absorber.getTableList())
-            {
-                for (AbsorbedRow row : table.getRowList())
-                {
-                    for (AbsorbedCell cell : row.getCellList())
-                    {
-                        TextFragmentCollection textFragmentCollection = cell.getTextFragments();
-                        for (TextFragment fragment : textFragmentCollection)
-                        {
-                            String txt = "";
-                            for (TextSegment seg : fragment.getSegments())
-                                txt += seg.getText();
-                            System.out.println(txt);
+            for (AbsorbedTable table : absorber.getTableList()) {
+                System.out.println("Table ----");
+                for (AbsorbedRow row : table.getRowList()) {
+                    System.out.println("Row:");
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            for (TextSegment segment : fragment.getSegments()) {
+                                cellText.append(segment.getText());
+                            }
                         }
+                        rowText.append(" | ").append(cellText);
                     }
+                    System.out.println(rowText);
                 }
             }
         }
     }
+}
 ```

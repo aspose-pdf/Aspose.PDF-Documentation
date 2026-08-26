@@ -1,324 +1,213 @@
 ---
-title: Formatting PDF Document
+title: Format PDF Documents in Java
 linktitle: Formatting PDF Document
 type: docs
-weight: 20
-url: /es/java/formatting-pdf-document/
-description: Formatear el Documento PDF con Aspose.PDF para Java. Use el siguiente fragmento de código para resolver sus tareas.
-lastmod: "2021-06-05"
+weight: 11
+url: /java/formatting-pdf-document/
+description: Learn how to format PDF documents, embed fonts, control viewer settings, and adjust display options in Java.
+lastmod: "2026-06-09"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Format document window, fonts, and zoom behavior in PDF files with Java
+Abstract: This article explains how to format PDF documents using Aspose.PDF for Java. It covers reading and updating document window settings, embedding fonts, setting a default font, listing fonts, subsetting embedded fonts, and controlling the initial zoom factor.
 ---
+El formateo en Aspose.PDF para Java incluye el comportamiento del visor, la incrustación de fuentes y la configuración de visualización.
 
-## Obtener las Propiedades de Ventana de Documento y Visualización de Página
+## Get document window settings
 
-Este tema le ayuda a entender cómo obtener las propiedades de la ventana del documento, la aplicación del visor y cómo se muestran las páginas.
+Use this example to inspect the current viewer preferences stored in an existing PDF document.
 
-Para configurar estas diferentes propiedades, abra el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document). Ahora puede obtener los métodos del objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document), tales como
-
-- [IsCenterWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isCenterWindow--) – Centrar la ventana del documento en la pantalla. Predeterminado: false.
-- [SetDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-) – Orden de lectura.
- Esto determina cómo se disponen las páginas cuando se muestran lado a lado. Predeterminado: de izquierda a derecha.
-- [isDisplayDocTitle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isDisplayDocTitle--) – Mostrar el título del documento en la barra de título de la ventana del documento. Predeterminado: false (el título se muestra).
-- [setHideMenuBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideMenubar-boolean-) – Ocultar o mostrar la barra de menú de la ventana del documento. Predeterminado: false (la barra de menú se muestra).
-- [setHideToolBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideToolBar-boolean-) – Ocultar o mostrar la barra de herramientas de la ventana del documento. Predeterminado: false (la barra de herramientas se muestra).
-- [setHideWindowUI](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideWindowUI-boolean-) – Ocultar o mostrar elementos de la ventana del documento como las barras de desplazamiento. Predeterminado: false (los elementos de la UI se muestran).
-
-- [setNonFullScreenPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setNonFullScreenPageMode-int-) – Cómo se muestra el documento cuando no se muestra en modo de página completa.- [setPageLayout](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageLayout-int-) – El diseño de la página.
-- [setPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageMode-int-) – Cómo se muestra el documento cuando se abre por primera vez. Las opciones son mostrar miniaturas, pantalla completa, mostrar panel de adjuntos.
-
-El siguiente fragmento de código le muestra cómo obtener las propiedades utilizando la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Read the required window and display properties from the document.
+1. Output the current settings for inspection or debugging.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleFormatting {
-
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-  public static void GetDocumentWindowAndPageDisplayProperties() {
-
-    // Abrir documento
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    // Obtener diferentes propiedades del documento
-    // Posición de la ventana del documento - Predeterminado: false
-    System.out.printf("CenterWindow : " + pdfDocument.isCenterWindow());
-
-    // Orden de lectura predominante; determinar la posición de la página
-    // cuando se muestra lado a lado - Predeterminado: L2R
-    System.out.printf("Direction :- " + pdfDocument.getDirection());
-
-    // Si la barra de título de la ventana debe mostrar el título del documento.
-    // Si es falso, la barra de título muestra el nombre del archivo PDF - Predeterminado: false
-    System.out.printf("DisplayDocTitle :- " + pdfDocument.isDisplayDocTitle());
-
-    // Si se debe redimensionar la ventana del documento para ajustar el tamaño de
-    // la primera página mostrada - Predeterminado: false
-    System.out.printf("FitWindow :- " + pdfDocument.isFitWindow());
-
-    // Si se debe ocultar la barra de menú de la aplicación del visor - Predeterminado: false
-    System.out.printf("HideMenuBar :-" + pdfDocument.isHideMenubar());
-
-    // Si se debe ocultar la barra de herramientas de la aplicación del visor - Predeterminado: false
-    System.out.printf("HideToolBar :-" + pdfDocument.isHideToolBar());
-
-    // Si se deben ocultar elementos de la interfaz de usuario como barras de desplazamiento
-    // dejando solo visibles los contenidos de la página - Predeterminado: false
-    System.out.printf("HideWindowUI :-" + pdfDocument.isHideWindowUI());
-
-    // El modo de página del documento. Cómo mostrar el documento al salir
-    // del modo de pantalla completa.
-    System.out.printf("NonFullScreenPageMode :-" + pdfDocument.getNonFullScreenPageMode());
-
-    // El diseño de página, es decir, página única, una columna
-    System.out.printf("PageLayout :-" + pdfDocument.getPageLayout());
-
-    // Cómo debe mostrarse el documento cuando se abre.
-    System.out.printf("pageMode :-" + pdfDocument.getPageMode());
-
-  }
-
-```
-
-## Establecer Propiedades de la Ventana del Documento y la Visualización de la Página
-
-Este tema explica cómo establecer las propiedades de la ventana del documento, la aplicación del visor y la visualización de la página.
-
-Para establecer estas diferentes propiedades:
-
-1. Abra el archivo PDF utilizando la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Establezca las propiedades del objeto Document.
-1. Guarde el archivo PDF actualizado utilizando el método Save.
-
-Las propiedades disponibles son:
-
-- [setCenterWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setCenterWindow-boolean-)
-- [setDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-)
-- [setDisplayDocTitle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDisplayDocTitle-boolean-)
-- [setFitWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setFitWindow-boolean-)
-- [setHideMenuBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideMenubar-boolean-)
-
-- [setHideToolBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideToolBar-boolean-)
-- [setHideWindowUI](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideWindowUI-boolean-)
-- [setNonFullScreenPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setNonFullScreenPageMode-int-)
-- [setPageLayout](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageLayout-int-)
-- [setPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageMode-int-)
-
-El siguiente fragmento de código le muestra cómo establecer las propiedades utilizando la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-```java
-  public static void SetDocumentWindowAndPageDisplayProperties() {
-
-    // Abrir documento
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    
-    // Establecer diferentes propiedades del documento
-    // especificar para posicionar la ventana del documento - Predeterminado: false
-    pdfDocument.setCenterWindow(true);
-    
-    // Orden de lectura predominante; determinar la posición de la página
-    // cuando se muestra lado a lado - Predeterminado: L2R
-    pdfDocument.setDirection(com.aspose.pdf.Direction.R2L);
-    
-    // Especificar si la barra de título de la ventana debe mostrar el título del documento
-    // si es falso, la barra de título muestra el nombre del archivo PDF - Predeterminado: false
-    pdfDocument.setDisplayDocTitle(true);
-    
-    // Especificar si redimensionar la ventana del documento para ajustar el tamaño de
-    // la primera página mostrada - Predeterminado: false
-    pdfDocument.setFitWindow(true);
-    
-    // Especificar si ocultar la barra de menú de la aplicación del visor - Predeterminado:
-    // false
-    pdfDocument.setHideMenubar(true);
-    
-    // Especificar si ocultar la barra de herramientas de la aplicación del visor - Predeterminado:
-    // false
-    pdfDocument.setHideToolBar(true);
-    
-    // Especificar si ocultar elementos de la interfaz de usuario como barras de desplazamiento
-    // y dejar solo el contenido de la página mostrado - Predeterminado: false
-    pdfDocument.setHideWindowUI(true);
-    
-    // Modo de página del documento. especificar cómo mostrar el documento al salir
-    // del modo de pantalla completa.
-    pdfDocument.setNonFullScreenPageMode(com.aspose.pdf.PageMode.UseOC);
-    
-    // Especificar el diseño de página, es decir, una sola página, una columna
-    pdfDocument.setPageLayout(com.aspose.pdf.PageLayout.TwoColumnLeft);
-    
-    // Especificar cómo se debe mostrar el documento cuando se abre
-    // es decir, mostrar miniaturas, pantalla completa, mostrar panel de adjuntos
-    pdfDocument.setPageMode(com.aspose.pdf.PageMode.UseThumbs);
-    
-    // Guardar archivo PDF actualizado
-    pdfDocument.save(_dataDir + "UpdatedFile_output.pdf");
-
-  }
-```
-
-## Incrustar Fuentes en un Archivo PDF Existente
-
-Los lectores de PDF soportan [un núcleo de 14 fuentes](http://en.wikipedia.org/wiki/Portable_Document_Format#Fonts) para que los documentos se puedan mostrar de la misma manera independientemente de la plataforma en la que se muestren. Cuando un PDF contiene una fuente que está fuera de las fuentes principales, incruste la fuente para evitar la sustitución de fuentes.
-
-Aspose.PDF para Java soporta la incrustación de fuentes en documentos PDF existentes. Puede incrustar una fuente completa o un subconjunto. Para incrustar la fuente:
-
-1. Abra un archivo PDF existente usando la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Use la clase [com.aspose.pdf.Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/Font) para incrustar la fuente.
-   1. El método setEmbedded(true) incrusta la fuente completa.
-   1. El método pageFont.isSubset(true) incrusta un subconjunto de la fuente.
-
-Un subconjunto de fuente solo incrusta los caracteres que se utilizan y es útil cuando las fuentes se utilizan para oraciones cortas o eslóganes, por ejemplo, cuando una fuente corporativa se utiliza para un logotipo, pero no para el texto del cuerpo.
- Reducir el subconjunto disminuye el tamaño del archivo del PDF de salida.
-
-Sin embargo, si se utiliza una fuente personalizada para el texto del cuerpo, incrústela en su totalidad.
-
-El siguiente fragmento de código muestra cómo incrustar una fuente en un archivo PDF.
-```java
-public static void EmbeddingFontsInAnExistingPDFFile() {
-    // Abrir documento
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    // Iterar a través de todas las páginas
-    for (com.aspose.pdf.Page page : (Iterable<com.aspose.pdf.Page>) pdfDocument.getPages()) {
-      if (page.getResources().getFonts() != null) {
-        for (com.aspose.pdf.Font pageFont : (Iterable<com.aspose.pdf.Font>) page.getResources().getFonts()) {
-          // Verificar si la fuente ya está incrustada
-          if (!pageFont.isEmbedded())
-            pageFont.setEmbedded(true);
-        }
-      }
-
-      // Verificar los objetos de Formulario
-      for (com.aspose.pdf.XForm form : (Iterable<com.aspose.pdf.XForm>) page.getResources().getForms()) {
-        if (form.getResources().getFonts() != null) {
-          for (com.aspose.pdf.Font formFont : (Iterable<com.aspose.pdf.Font>) form.getResources().getFonts()) {
-            // Verificar si la fuente está incrustada
-            if (!formFont.isEmbedded())
-              formFont.setEmbedded(true);
-          }
-        }
-      }
+public static void getDocumentWindow(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        System.out.println("CenterWindow: " + document.isCenterWindow());
+        System.out.println("Direction: " + document.getDirection());
+        System.out.println("DisplayDocTitle: " + document.isDisplayDocTitle());
+        System.out.println("FitWindow: " + document.isFitWindow());
+        System.out.println("HideMenuBar: " + document.isHideMenubar());
+        System.out.println("HideToolBar: " + document.isHideToolBar());
+        System.out.println("HideWindowUI: " + document.isHideWindowUI());
+        System.out.println("NonFullScreenPageMode: " + document.getNonFullScreenPageMode());
+        System.out.println("PageLayout: " + document.getPageLayout());
+        System.out.println("PageMode: " + document.getPageMode());
     }
-    // Guardar el archivo PDF actualizado
-    pdfDocument.save(_dataDir + "UpdatedFile_output.pdf");
-  }
+}
 ```
 
-## Incrustación de Fuentes al crear PDF
+## Set document window preferences
 
-Si necesitas usar cualquier fuente distinta a las 14 fuentes básicas soportadas por Adobe Reader, entonces debes incrustar la descripción de la fuente al generar un archivo PDF. Si la información de la fuente no está incrustada, Adobe Reader la tomará del sistema operativo si está instalada en el sistema, o construirá una fuente sustituta según el descriptor de la fuente en el PDF. Por favor, ten en cuenta que la fuente incrustada debe estar instalada en la máquina host, es decir, en el caso del siguiente código, la fuente 'Univers Condensed' está instalada en el sistema.
+This example updates how the PDF should be displayed when it is opened in a compatible viewer.
 
-Usamos la propiedad setEmbedded de la clase [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/Font) para incrustar la información de la fuente en el archivo PDF. Configurar el valor de esta propiedad a 'true' incrustará el archivo completo de la fuente en el PDF, sabiendo que esto aumentará el tamaño del archivo PDF. A continuación se presenta el fragmento de código que se puede usar para incrustar la información de la fuente en el PDF.
-
-```java
-public static void EmbeddingFontsWhileCreatingPDF() {
-
-    // Instanciar el objeto PDF llamando a su constructor vacío
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document();
-
-    // Crear una sección en el objeto Pdf
-    com.aspose.pdf.Page page = document.getPages().add();
-
-    com.aspose.pdf.TextFragment fragment = new com.aspose.pdf.TextFragment("");
-
-    com.aspose.pdf.TextSegment segment = new com.aspose.pdf.TextSegment(" Este es un texto de muestra usando una fuente personalizada.");
-    com.aspose.pdf.TextState ts = new com.aspose.pdf.TextState();
-    ts.setFont(FontRepository.findFont("Univers Condensed"));
-    ts.getFont().setEmbedded(true);
-    segment.setTextState(ts);
-    fragment.getSegments().add(segment);
-    page.getParagraphs().add(fragment);
-
-    // Guardar el archivo PDF actualizado
-    document.save(_dataDir + "UpdatedFile_output.pdf");
-  }
-```
-
-## Establecer el Nombre de Fuente Predeterminado al Guardar PDF
-
-Cuando un documento PDF contiene fuentes que no están disponibles en el propio documento ni en el dispositivo, la API reemplaza estas fuentes con la fuente predeterminada. Cuando una fuente está disponible (está instalada en el dispositivo o está incrustada en el documento), el PDF de salida debería tener la misma fuente (no debería ser reemplazada por la fuente predeterminada). El valor de la fuente predeterminada debe contener el nombre de la fuente (no la ruta a los archivos de fuentes). Hemos implementado una función para establecer el nombre de la fuente predeterminada al guardar un documento como PDF. Se puede utilizar el siguiente fragmento de código para establecer la fuente predeterminada:
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Establezca las preferencias requeridas de ventana, diseño y modo de página.
+1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-public static void SetDefaultFontNameWhileSavingPDF() {
-
-    // Cargar un documento PDF existente
-    Document document = new Document("input.pdf");
-
-    String newName = "Arial";
-
-    // Inicializar opciones de guardado para el formato PDF
-    PdfSaveOptions ops = new PdfSaveOptions();
-
-    // Establecer el nombre de la fuente predeterminada
-    ops.setDefaultFontName(newName);
-
-    // Guardar archivo PDF
-    document.save(_dataDir + "output_out.pdf", ops);
-  }
-```
-
-
-## Obtener Todas las Fuentes del Documento PDF
-
-En caso de que desees obtener todas las fuentes de un documento PDF, puedes usar el método **Document.getFontUtilities().getAllFonts()** proporcionado en la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document). Por favor, revisa el siguiente fragmento de código para obtener todas las fuentes de un documento PDF existente:
-
-```java
-public static void GetAllFontsFromPDFDocument() {
-
-    // Cargar un documento PDF existente
-    Document document = new Document(_dataDir + "sample.pdf");
-
-    // Obtener todas las fuentes del documento
-    com.aspose.pdf.Font[] fonts = document.getFontUtilities().getAllFonts();
-    for (com.aspose.pdf.Font f : fonts) {
-      System.out.println(f.getFontName());
+public static void setDocumentWindow(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setCenterWindow(true);
+        document.setDirection(Direction.R2L);
+        document.setDisplayDocTitle(true);
+        document.setFitWindow(true);
+        document.setHideMenubar(true);
+        document.setHideToolBar(true);
+        document.setHideWindowUI(true);
+        document.setNonFullScreenPageMode(PageMode.UseOC);
+        document.setPageLayout(PageLayout.TwoColumnLeft);
+        document.setPageMode(PageMode.UseThumbs);
+        document.save(outputFile.toString());
     }
-  }
+}
 ```
 
-## Obtener-Establecer el Factor de Zoom del Archivo PDF
+## Incrustar fuentes en un PDF existente
 
-A veces, deseas establecer u obtener el factor de zoom de un documento PDF. Puedes lograr fácilmente este requisito con Aspose.PDF.
+Utilice este enfoque cuando un documento deba contener las fuentes requeridas para una representación más confiable en otros sistemas.
 
-El objeto [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToAction) te permite obtener el valor de zoom asociado con un archivo PDF.
- De manera similar, se puede usar para establecer el factor de zoom de un archivo.
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Habilite la incrustación de fuentes estándar e itere a través de las fuentes utilizadas por cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Marque cualquier objeto [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) no incrustado para incrustarlo.
+1. Guarde el documento actualizado.
 
 ```java
-  public static void GetSetZoomFactorOfPDFFile() {
-    // Cargar un documento PDF existente
-    Document document = new Document(_dataDir + "sample.pdf");
-    double zoom = .5;
-    // establecer el factor de zoom del documento
-    GoToAction actionzoom = new GoToAction(new XYZExplicitDestination(document.getPages().get_Item(1),
-        document.getPages().get_Item(1).getMediaBox().getWidth(),
-        document.getPages().get_Item(1).getMediaBox().getHeight(), zoom));
-
-    // establecer acción para ajustar al ancho de la página con zoom
-    GoToAction actionFittoWidth = new GoToAction(new FitHExplicitDestination(document.getPages().get_Item(1),
-        document.getPages().get_Item(1).getMediaBox().getWidth()));
-
-    // establecer acción para ajustar al alto de la página con zoom
-    GoToAction actionFittoHeight = new GoToAction(new FitVExplicitDestination(document.getPages().get_Item(1),
-        document.getPages().get_Item(1).getMediaBox().getHeight()));
-
-    document.setOpenAction(actionzoom);
-    document.setOpenAction(actionFittoWidth);
-    document.setOpenAction(actionFittoHeight);
+public static void embeddedFonts(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setEmbedStandardFonts(true);
+        for (Page page : document.getPages()) {
+            for (Font pageFont : page.getResources().getFonts()) {
+                if (!pageFont.isEmbedded()) {
+                    pageFont.setEmbedded(true);
+                }
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
 ```
 
-El siguiente fragmento de código muestra cómo obtener el factor de zoom de un archivo PDF.
+## Incrustar fuentes al crear un nuevo PDF
+
+Este ejemplo crea un nuevo PDF y asigna una fuente incrustada al contenido del texto desde el principio.
+
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Cree el [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), el [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/) y el [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) necesarios.
+1. Resuelva la [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) de destino del repositorio y márquela como incrustada.
+1. Add the text content to the page and save the output document.
 
 ```java
-    // Instanciar un nuevo objeto Document
-    Document doc1 = new Document(_dataDir + "Zoomed_actionzoom.pdf");
-    // Crear objeto GoToAction
-    GoToAction action = (GoToAction) doc1.getOpenAction();
-    // Obtener el factor de zoom del archivo PDF
-    System.out.println(((XYZExplicitDestination) action.getDestination()).getZoom());
+public static void embeddedFontsInNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            TextFragment fragment = new TextFragment("");
+            TextSegment segment = new TextSegment(" This is a sample text using Custom font.");
+            TextState textState = new TextState();
+            Font font = FontRepository.findFont("Arial");
+            font.setEmbedded(true);
+            textState.setFont(font);
+            segment.setTextState(textState);
+            fragment.getSegments().add(segment);
+            page.getParagraphs().add(fragment);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
 
-    // Guardar el archivo PDF actualizado
-    document.save(_dataDir + "UpdatedFile_output.pdf");
-  }
+## Set a default font for PDF output
+
+Utilice este patrón cuando el documento guardado deba recurrir a una fuente específica durante la generación de salida.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) and set the default font name.
+1. Save the document with the configured save options.
+
+```java
+public static void setDefaultFont(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfSaveOptions saveOptions = new PdfSaveOptions();
+        saveOptions.setDefaultFontName("Arial");
+        document.save(outputFile.toString(), saveOptions);
+    }
+}
+```
+
+## Get all fonts used in a PDF
+
+This example lists every font detected in the document so you can audit font usage before exporting or updating the file.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enumerate the fonts returned by the document font utilities.
+1. Output the name of each detected [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+
+```java
+public static void getAllFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Font font : document.getFontUtilities().getAllFonts()) {
+            System.out.println(font.getFontName());
+        }
+    }
+}
+```
+
+## Improve font embedding by subsetting fonts
+
+Use this approach when you want to reduce font payload while keeping embedded font data aligned with document usage.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Run font subsetting through the document font utilities with the required [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) values.
+1. Save the optimized document.
+
+```java
+public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Set the document open zoom factor
+
+Este ejemplo configura el nivel de zoom inicial que se debe aplicar cuando se abre el PDF.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create a [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Assign the action as the document open action and save the result.
+
+```java
+public static void setZoomFactor(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0.0, 0.0, 0.5));
+        document.setOpenAction(action);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Get the document open zoom factor
+
+Use this example to inspect whether a PDF already defines an explicit zoom level for its open action.
+
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Check whether the open action is a [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) with an [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Imprima el valor de zoom configurado o informe que no hay ningún zoom configurado.
+
+```java
+public static void getZoomFactor(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getOpenAction() instanceof GoToAction action
+                && action.getDestination() instanceof XYZExplicitDestination destination) {
+            System.out.println("Zoom: " + destination.getZoom());
+        } else {
+            System.out.println("Zoom: not set");
+        }
+    }
 }
 ```

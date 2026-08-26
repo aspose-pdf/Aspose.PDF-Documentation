@@ -1,37 +1,38 @@
 ---
-title: Obtener Información de Archivo PDF en PHP
+title: Obtener información de archivos PDF en PHP
+linktitle: Obtener información de archivos PDF en PHP
 type: docs
 weight: 40
-url: /es/java/get-pdf-file-information-in-php/
-lastmod: "2021-06-05"
+url: /java/get-pdf-file-information-in-php/
+description: Descubra cómo recuperar información detallada sobre un archivo PDF, incluidos metadatos y propiedades, en PHP con Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Obtener información del archivo PDF
 
-## Aspose.PDF - Obtener Información de Archivo PDF
+To Get File Information of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetPdfFileInfo** class.
 
-Para obtener la información de archivo de un documento Pdf usando **Aspose.PDF Java para PHP**, simplemente invoca la clase **GetPdfFileInfo**.
-
-Código PHP
+PHP Code
 
 ```php
 
-# Abrir un documento pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Obtener información del documento
+# Get document information
 $doc_info = $doc->getInfo();
 
-# Mostrar información del documento
-print "Autor:-" . $doc_info->getAuthor();
-print "Fecha de Creación:-" . $doc_info->getCreationDate();
-print "Palabras Clave:-" . $doc_info->getKeywords();
-print "Fecha de Modificación:-" . $doc_info->getModDate();
-print "Asunto:-" . $doc_info->getSubject();
-print "Título:-" . $doc_info->getTitle();
+# Show document information
+print "Author:-" . $doc_info->getAuthor();
+print "Creation Date:-" . $doc_info->getCreationDate();
+print "Keywords:-" . $doc_info->getKeywords();
+print "Modify Date:-" . $doc_info->getModDate();
+print "Subject:-" . $doc_info->getSubject();
+print "Title:-" . $doc_info->getTitle();
 
 ```
 
-**Descargar Código en Ejecución**
+**Download Running Code**
 
-Descargar **Obtener Información de Archivo PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Get PDF File Information (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetPdfFileInfo.php)

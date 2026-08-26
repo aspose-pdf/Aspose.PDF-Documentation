@@ -1,62 +1,162 @@
 ---
-title: Buscar y Obtener Imágenes de un Documento PDF
-linktitle: Buscar y Obtener Imágenes
+title: Get and Search Images in PDF
+linktitle: Get and Search Images
 type: docs
-weight: 60
-url: /es/java/search-and-get-images-from-pdf-document/
-description: Esta sección explica cómo buscar y obtener imágenes de un documento PDF con la biblioteca Aspose.PDF para Java.
-lastmod: "2021-06-05"
+weight: 40
+url: /java/search-and-get-images-from-pdf-document/
+description: Learn how to search for and inspect images in PDF documents in Java.
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: Search and inspect images in PDF files with Java
+Abstract: This article shows how to search for and inspect images in PDF documents using Aspose.PDF for Java. It covers reading image placement geometry, detecting color type, extracting alternative text, and calculating effective image resolution from page operators.
 ---
+Aspose.PDF for Java can inspect image placement information as well as lower-level drawing data.
 
-El [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementAbsorber) te permite buscar entre las imágenes en todas las páginas de un documento PDF.
+## Get image placement parameters
 
-Para buscar imágenes en todo un documento:
+Use this example when you need to inspect image geometry and effective resolution on a page.
 
-1. Llama al método Accept de la colección [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection). El método Accept toma un objeto [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementAbsorber) como parámetro. Esto devuelve una colección de objetos [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacement).
-2. Recorre los objetos de ImagePlacements y obtén sus propiedades (Imagen, dimensiones, resolución, etc.).
-
-El siguiente fragmento de código muestra cómo buscar todas las imágenes de un documento.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) to collect image placements.
+1. Output the size, coordinates, and resolution for each placed image.
 
 ```java
-package com.aspose.pdf.examples;
+public static void extractImageParams(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
 
-import java.io.IOException;
-import com.aspose.pdf.*;
-
-public class ExampleSearchAndGet {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void SearchImages() throws IOException {
-        // Abrir documento
-        Document doc = new Document(_dataDir + "SearchAndGetImages.pdf");
-
-        // Crear objeto ImagePlacementAbsorber para realizar la búsqueda de ubicación de imágenes
-        ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-
-        // Aceptar el absorbente para todas las páginas
-        doc.getPages().accept(abs);
-
-        // Bucle a través de todos los ImagePlacements, obtener imagen y propiedades de ImagePlacement
-        for (ImagePlacement imagePlacement : abs.getImagePlacements()) {
-            // Obtener la imagen usando el objeto ImagePlacement
-            // XImage image = imagePlacement.getImage();
-
-            // Mostrar propiedades de ubicación de imagen para todas las ubicaciones
-            System.out.println("ancho de la imagen:" + imagePlacement.getRectangle().getWidth());
-            System.out.println("altura de la imagen:" + imagePlacement.getRectangle().getHeight());
-            System.out.println("LLX de la imagen:" + imagePlacement.getRectangle().getLLX());
-            System.out.println("LLY de la imagen:" + imagePlacement.getRectangle().getLLY());
-            System.out.println("resolución horizontal de la imagen:" + imagePlacement.getResolution().getX());
-            System.out.println("resolución vertical de la imagen:" + imagePlacement.getResolution().getY());
+        for (ImagePlacement imagePlacement : absorber.getImagePlacements()) {
+            System.out.println("image width: " + imagePlacement.getRectangle().getWidth());
+            System.out.println("image height: " + imagePlacement.getRectangle().getHeight());
+            System.out.println("image LLX: " + imagePlacement.getRectangle().getLLX());
+            System.out.println("image LLY: " + imagePlacement.getRectangle().getLLY());
+            System.out.println("image horizontal resolution: " + imagePlacement.getResolution().getX());
+            System.out.println("image vertical resolution: " + imagePlacement.getResolution().getY());
         }
-
     }
 }
 ```
 
-Para obtener una imagen de una página individual, utiliza el siguiente código:
+## Detect image color types
+
+Use this example when you need to count grayscale and RGB images in a PDF page.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) to iterate over page images.
+1. Read the [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) of each image and output the totals.
 
 ```java
-doc.getPages().get_Item(1).accept(abs)
+public static void extractImageTypesFromPdf(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        int grayscaled = 0;
+        int rgb = 0;
+
+        document.getPages().get_Item(1).accept(absorber);
+
+        System.out.println("--------------------------------");
+        System.out.println("Total Images = " + absorber.getImagePlacements().size());
+
+        int imageCounter = 1;
+        for (ImagePlacement imagePlacement : absorber.getImagePlacements()) {
+            ColorType colorType = imagePlacement.getImage().getColorType();
+            if (colorType == ColorType.Grayscale) {
+                grayscaled++;
+                System.out.println("Image " + imageCounter + " is Grayscale...");
+            } else if (colorType == ColorType.Rgb) {
+                rgb++;
+                System.out.println("Image " + imageCounter + " is RGB...");
+            }
+            imageCounter++;
+        }
+
+        System.out.println("--------------------------------");
+        System.out.println("Grayscale Images = " + grayscaled);
+        System.out.println("RGB Images = " + rgb);
+    }
+}
+```
+
+## Extract image alternative text
+
+Use this example when you need to inspect accessibility text associated with page images.
+
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para recopilar ubicaciones de imágenes.
+1. Read the alternative text for each image and output the result.
+
+```java
+public static void extractImageAltText(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+
+        for (ImagePlacement imagePlacement : absorber.getImagePlacements()) {
+            System.out.println("Name in collection: " + imagePlacement.getImage().getNameInCollection());
+            List<String> lines = imagePlacement.getImage().getAlternativeText(document.getPages().get_Item(1));
+            if (!lines.isEmpty()) {
+                System.out.println("Alt Text: " + lines.get(0));
+            } else {
+                System.out.println("Alt Text: ");
+            }
+        }
+    }
+}
+```
+
+## Calculate image information from page operators
+
+Utilice este ejemplo cuando necesite derivar el tamaño y la resolución de imagen efectivos a partir de operadores de contenido de página de bajo nivel.
+
+1. Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y recopile los nombres de los recursos de imágenes.
+1. Track the graphics state while iterating through page operators.
+1. Resolve each image draw operation and calculate its effective dimensions and resolution.
+
+```java
+public static void extractImageInformationFromPdf(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int defaultResolution = 72;
+        List<Matrix> graphicsState = new ArrayList<>();
+        List<String> imageNames = Arrays.asList(document.getPages().get_Item(1).getResources().getImages().getNames());
+
+        graphicsState.add(new Matrix(1, 0, 0, 1, 0, 0));
+
+        for (Operator operator : document.getPages().get_Item(1).getContents()) {
+            if (operator instanceof GSave) {
+                graphicsState.add(new Matrix(graphicsState.get(graphicsState.size() - 1)));
+            } else if (operator instanceof GRestore) {
+                graphicsState.remove(graphicsState.size() - 1);
+            } else if (operator instanceof ConcatenateMatrix concatenateMatrix) {
+                Matrix current = graphicsState.get(graphicsState.size() - 1);
+                graphicsState.set(graphicsState.size() - 1, current.multiply(concatenateMatrix.getMatrix()));
+            } else if (operator instanceof Do doOperator) {
+                if (imageNames.contains(doOperator.getName())) {
+                    Matrix lastCtm = graphicsState.get(graphicsState.size() - 1);
+                    int index = imageNames.indexOf(doOperator.getName()) + 1;
+                    XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(index);
+
+                    double scaledWidth = Math.sqrt(Math.pow(lastCtm.getA(), 2) + Math.pow(lastCtm.getB(), 2));
+                    double scaledHeight = Math.sqrt(Math.pow(lastCtm.getC(), 2) + Math.pow(lastCtm.getD(), 2));
+
+                    double originalWidth = image.getWidth();
+                    double originalHeight = image.getHeight();
+
+                    double resHorizontal = originalWidth * defaultResolution / scaledWidth;
+                    double resVertical = originalHeight * defaultResolution / scaledHeight;
+
+                    String info = String.format(
+                            "%s image %s (%.2f:%.2f): res %.2f x %.2f",
+                            inputFile,
+                            doOperator.getName(),
+                            scaledWidth,
+                            scaledHeight,
+                            resHorizontal,
+                            resVertical);
+                    System.out.println(info);
+                }
+            }
+        }
+    }
+}
 ```

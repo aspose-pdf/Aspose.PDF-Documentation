@@ -1,29 +1,30 @@
 ---
-title: Obtener Propiedades de la Página en PHP
+title: Get Page Properties in PHP
+linktitle: Get Page Properties in PHP
 type: docs
 weight: 50
-url: /es/java/get-page-properties-in-php/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-php/
+description: Explore how to retrieve the properties of specific pages in a PDF document in PHP using Aspose.PDF for detailed control.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Get Page Properties
 
-## Aspose.PDF - Obtener Propiedades de la Página
+To get page properties of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetPageProperties** class.
 
-Para obtener las propiedades de página de un documento Pdf usando **Aspose.PDF Java para PHP**, simplemente invoca la clase **GetPageProperties**.
-
-Código PHP
+PHP Code
 
 ```php
 
-# Crear documento PDF
+# Create PDF document
 $pdf_document = new Document($dataDir . 'input1.pdf');
 
-# obtener colección de páginas
+# get page collection
 $page_collection = $pdf_document->getPages();
 
-# obtener una página en particular
+# get particular page
 $pdf_page = $page_collection->get_Item(1);
 
-# obtener propiedades de la página
+# get page properties
 print "ArtBox : Height = " . $pdf_page->getArtBox()->getHeight() . ", Width = " . $pdf_page->getArtBox()->getWidth() . ", LLX = " . $pdf_page->getArtBox()->getLLX() . ", LLY = " . $pdf_page->getArtBox()->getLLY() . ", URX = " . $pdf_page->getArtBox()->getURX() . ", URY = " . $pdf_page->getArtBox()->getURY() . PHP_EOL ;
 
 print "BleedBox : Height = " . $pdf_page->getBleedBox()->getHeight() . ", Width = " . $pdf_page->getBleedBox()->getWidth() . ", LLX = " . $pdf_page->getBleedBox()->getLLX() . ", LLY = " . $pdf_page->getBleedBox()->getLLY() . ", URX = " . $pdf_page->getBleedBox()->getURX() . ", URY = " . $pdf_page->getBleedBox()->getURY() . PHP_EOL ;
@@ -40,9 +41,8 @@ print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 ```
 
+**Download Running Code**
 
-**Descargar Código en Ejecución**
-
-Descargar **Obtener Propiedades de Página (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Get Page Properties (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

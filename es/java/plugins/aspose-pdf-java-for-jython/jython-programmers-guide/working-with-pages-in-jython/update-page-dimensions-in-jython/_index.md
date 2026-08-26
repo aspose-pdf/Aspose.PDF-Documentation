@@ -1,19 +1,20 @@
 ---
-title: Actualizar Dimensiones de Página en Jython
+title: Update Page Dimensions in Jython
+linktitle: Update Page Dimensions in Jython
 type: docs
 weight: 90
-url: /es/java/update-page-dimensions-in-jython/
-lastmod: "2021-06-05"
+url: /java/update-page-dimensions-in-jython/
+description: Understand how to modify the dimensions of pages within a PDF document in Jython using Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Update Page Dimensions
 
-## Aspose.PDF - Actualizar Dimensiones de Página
+To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.
 
-Para comprobar el formato de archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver un código de ejemplo.
+Error rendering macro 'code' : Invalid value specified for parameter lang
 
-Error al renderizar macro 'code' : Valor inválido especificado para el parámetro lang
+## Download Running Code
 
-## Descargar Código en Ejecución
-
-Descargar el código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
+Download running code from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

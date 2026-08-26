@@ -1,19 +1,20 @@
 ---
-title: Añadir Texto a un archivo PDF existente en Jython
+title: Add Text to an existing PDF file in Jython
+linktitle: Add Text to an existing PDF file in Jython
 type: docs
 weight: 20
-url: /es/java/add-text-to-an-existing-pdf-file-in-jython/
-lastmod: "2021-06-05"
+url: /java/add-text-to-an-existing-pdf-file-in-jython/
+description: Learn how to add new text to an existing PDF document using Jython and Aspose.PDF for content enhancement.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Add Text
 
-## Aspose.PDF - Añadir Texto
+To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.
 
-Para verificar el formato de archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver el código de ejemplo.
+Error rendering macro 'code' : Invalid value specified for parameter lang
 
-Error al renderizar macro 'code': Valor inválido especificado para el parámetro lang
+## Download Running Code
 
-## Descargar Código en Ejecución
-
-Descargar código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
+Download running code from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

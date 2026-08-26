@@ -1,32 +1,33 @@
 ---
-title: Soporte, Extender y Contribuir a Aspose.Pdf en Struts
+title: Support, Extend and Contribute to Aspose.Pdf in Struts
+linktitle: Support, Extend and Contribute to Aspose.Pdf in Struts
 type: docs
 weight: 20
-url: /es/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
-lastmod: "2021-06-05"
+url: /java/support-extend-and-contribute-to-aspose-pdf-in-struts/
+description: Discover how to support, extend, and contribute to Aspose.PDF for Java in Struts-based projects.
+lastmod: "2026-06-09"
 ---
-
-## Soporte
+## Support
 
 {{% alert color="primary" %}}
 
-- Si desea ver problemas conocidos / reportados (por los usuarios o el equipo de Q.A) en la aplicación.
-- O si desea reportar cualquier problema que encuentre en la aplicación
-- Tiene alguna sugerencia de mejora o le gustaría hacer una solicitud de función
+- If you like to see known / reported issues (by the users or Q.A team) in the application.
+- Or you want to report any issue you found in the application
+- Have any improvement suggestion or like to make any feature request
 
-Por favor use cualquiera de los siguientes rastreadores de problemas del proyecto:
+Please use any of the following project's issues tracker:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 {{% /alert %}}
 
-## Extender y Contribuir
+## Extend and Contribute
 
-Aspose.PDF Java para Struts 1.3 es de código abierto y su código fuente está disponible en los principales sitios web de codificación social que se enumeran a continuación. Se anima a los desarrolladores a descargar el código fuente y contribuir sugiriendo o agregando nuevas funciones o mejorando las existentes, para que otros también puedan beneficiarse de ello.
+Aspose.PDF Java for Struts 1.3 is open source and its source code is available on the major social coding websites listed below. Developers are encouraged to download the source code and contribute by suggesting or adding new feature or improving the existing ones, so that others could also benefit from it.
 
-## Código Fuente
+## Source Code
 
-Puede obtener el código fuente más reciente de uno de los siguientes lugares
+You can get the latest source code from one of the following locations
 
 - [CodePlex](https://asposepdfforstruts.codeplex.com)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)

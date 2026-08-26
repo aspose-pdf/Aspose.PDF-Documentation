@@ -1,138 +1,138 @@
 ---
-title: Aspose.PDF Java para NetBeans - Maven
+title: Aspose.PDF Java for NetBeans - Maven
+linktitle: Aspose.PDF Java for NetBeans - Maven
 type: docs
 weight: 70
-url: /es/java/aspose-pdf-java-for-netbeans-maven/
-lastmod: "2021-06-05"
+url: /java/aspose-pdf-java-for-netbeans-maven/
+description: Learn how to use the Aspose.PDF Java for NetBeans Maven plugin to create projects and work with PDF features inside NetBeans IDE.
+lastmod: "2026-06-09"
 ---
-
-## Introducción
+## Introduction
 
 ### NetBeans IDE
 
-NetBeans es un IDE de Java completamente desarrollado en Java. Está principalmente destinado al desarrollo en Java, pero también admite otros lenguajes, en particular, PHP, C/C++ y HTML5.
+NetBeans is a Fully-featured Java IDE written completely in Java. It is primarily intended for development in Java but also supports other languages, in particular, PHP, C/C++, and HTML5.
 
-NetBeans IDE te permite desarrollar rápida y fácilmente aplicaciones de escritorio, móviles y web en Java, así como aplicaciones HTML5 con HTML, JavaScript y CSS. Es gratuito y de código abierto, y cuenta con una gran comunidad de usuarios y desarrolladores en todo el mundo.
+NetBeans IDE lets you quickly and easily develop Java desktop, mobile, and web applications, as well as HTML5 applications with HTML, JavaScript, and CSS. It is a free and open-source and has a large community of users and developers around the world.
 
-El equipo de NetBeans apoya activamente el producto y busca sugerencias de características de la comunidad en general. Cada lanzamiento es precedido por un período para pruebas y comentarios de la comunidad.
+The NetBeans Team actively support the product and seek feature suggestions from the wider community. Every release is preceded by time for Community testing and feedback.
 
-### Aspose.PDF para Java
+### Aspose.PDF for Java
 
-[Aspose.PDF para Java](https://products.aspose.com/pdf/java/) es una API robusta para la creación de documentos PDF que permite a tus aplicaciones Java leer, escribir y manipular documentos PDF sin usar Adobe Acrobat.
+[Aspose.PDF for Java](https://products.aspose.com/pdf/java/)is a robust PDF document creation API that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
 
-Aspose.PDF para Java ofrece una increíble riqueza de funciones, que incluyen opciones de compresión de PDF, creación y manipulación de tablas, soporte de gráficos, funciones de imagen, amplia funcionalidad de hipervínculos, controles de seguridad extendidos y manejo de fuentes personalizadas.
+Aspose.PDF for Java offers an incredible wealth of features, these include PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
 
-### Aspose.PDF Java para NetBeans (Maven)
+### Aspose.PDF Java for NetBeans (Maven)
 
-- Aspose.PDF Java para NetBeans (Maven) es un Plugin para **NetBeans IDE** de **Aspose.** El Plugin está destinado a desarrolladores que utilizan la plataforma Maven para desarrollos en Java y desean usar Aspose.PDF para Java en sus proyectos. El Plugin te permite crear proyectos maven para usar Aspose.PDF para Java API y también descargar [Ejemplos de Código](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) de la API.
-- El plugin proporciona las siguientes características para trabajar con Aspose.PDF para Java API cómodamente dentro de **NetBeans IDE**:
+- Aspose.PDF Java for NetBeans (Maven) is a Plugin for **NetBeans IDE** by **Aspose.** The Plugin intended for developers using the Maven platform for Java developments and want to use Aspose.PDF for Java in their projects. The Plugin lets you create maven projects for using Aspose.PDF for Java APIand also download [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)of the API.
+- The plugin provides following features to work with Aspose.PDF for Java APIwithin **NetBeans IDE** comfortably:
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
 
-## ASISTENTES
+## WIZARDS
 
-El plugin contiene dos asistentes
+The plugin contains two wizards
 
-### Aspose.PDF Maven Project (asistente)
+### Aspose.PDF Maven Project (wizard)
 
-- Este asistente de Nuevo Proyecto permite a los desarrolladores crear un proyecto **Maven** para usar Aspose.PDF para Java desde Nuevo Proyecto -> Maven-> Aspose.PDF Maven Project.
-- La referencia de la dependencia Maven del API de Aspose.PDF para Java se obtiene automáticamente del [Repositorio Maven de Aspose](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf) y se agrega al pom.xml.
-- El proyecto creado siempre contendrá la versión más reciente disponible de la dependencia **Maven** para el API de Aspose.PDF para Java.
-- Los pasos del asistente también se presentan con la opción de descargar Ejemplos de Código para usar Aspose.PDF para Java API.
+- This New Project wizard lets developers to create **Maven** project for using Aspose.PDF for Java from New Project -> Maven-> Aspose.PDF Maven Project.
+- The reference of Aspose.PDF for Java API maven dependency is automatically fetched from [Aspose Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf) and gets added in the pom.xml.
+- The created project will always contain most recent available version **Maven** Dependency for Aspose.PDF for Java API.
+- The wizard steps also present with the option for downloading Code Examples for usingAspose.PDF for Java API.
 
-### Ejemplo de Código de Aspose.PDF (asistente)
+### Aspose.PDF Code Example (wizard)
 
-- Este asistente de Nuevo Archivo te permite copiar los [Ejemplos de Código](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) descargados en tu proyecto para usar Aspose.PDF para Java desde **Nuevo Archivo -> Java -> Ejemplo de Código de Aspose.PDF.**
-- Las muestras disponibles se muestran en formato de árbol desde donde el usuario puede seleccionarlas categóricamente.
-
+- This New File wizard lets you copy the downloaded [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)into your project for using Aspose.PDF for Java from **New File -> Java -> Aspose.PDF Code Example.**
+- Available samples are displayed in tree format from where the user can select them categorically.
 - Todos los ejemplos dentro de la categoría seleccionada se copiarán en la carpeta del paquete **com.aspose.pdf.examples** del proyecto junto con los recursos necesarios dentro de la carpeta **src/main/resources** necesarios para ejecutar los ejemplos.
-- Los ejemplos de código de Aspose.PDF para Java API están destinados a demostrar la variedad de la API.
-- El asistente también buscará actualizaciones disponibles recientemente desde el [repositorio de ejemplos de Aspose.PDF para Java.](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
+- Los ejemplos de código de Aspose.PDF para la API de Java están destinados a demostrar la variedad de la API.
+- The wizard will also look for and updates for newly available from [Aspose.PDF for Java examples repository.](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
 
-## Requisitos del Sistema y Plataformas Soportadas
+## System Requirements and Supported Platforms
 
-### Requisitos del Sistema
+### System Requirements
 
-- **Memoria del Sistema:** 2 GB o más (Recomendado)
-- **Sistema Operativo:** Cualquier sistema operativo que soporte la Máquina Virtual de Java (VM)
-- **Conexión a Internet:** 2 MB o más rápida (Recomendado)
+- **System Memory:** 2 GB or more (Recommended)
+- **OS:** Any operating system that supports the Java VM (Virtual Machine)
+- **Internet Connection:** 2 MB or faster (Recommended)
 
-### Plataformas Soportadas
+### Supported Platforms
 
-- NetBeans 8.1 (Recomendado)
+- NetBeans 8.1 (Recommended)
 - NetBeans 8.0
 
-## Descarga
+## Downloading
 
-### Descargar NetBeans
+### Download NetBeans
 
-Debe tener el IDE de NetBeans preinstalado antes de descargar el **plugin Aspose.PDF Java para NetBeans (Maven)**.
+You should have NetBeans IDE preinstalled before you download **Aspose.PDF Java for NetBeans (Maven)**plugin.
 
-El plugin **Aspose.PDF Java para NetBeans (Maven)** soporta **NetBeans IDE 8.0 y 8.1**. Recomendamos usar solo la última versión de NetBeans IDE.
+**Aspose.PDF Java for NetBeans (Maven)** plugin supports **NetBeans IDE8.0 and 8.1**. We recommend to only use the latest version of NetBeans IDE.
 
-Para descargar el IDE de NetBeans,
+To download NetBeans IDE,
 
-1. Navegue a: <https://netbeans.apache.org/download/index.html>
+1. Navigate to:<https://netbeans.apache.org/download/index.html>
+1. Click Download to download NetBeans IDE appropriate bundle.
 
-1. Haga clic en Descargar para descargar el paquete adecuado de NetBeans IDE.
+Download only Java EE / SE supported NetBeans download bundle of the current latest release i.e. **NetBeans IDE 8.1**.
 
-Descargue solo el paquete de descarga de NetBeans compatible con Java EE / SE de la última versión actual, es decir, **NetBeans IDE 8.1**.
+### Download Aspose.PDF Java for NetBeans (Maven)
 
-### Descargar Aspose.PDF Java para NetBeans (Maven)
+- The plugin can be directly downloaded from the NetBeans plugin hosting URL:<http://plugins.netbeans.org/plugin/63218>
+  y posteriormente se puede instalar usando la opción IDE:
+  - Ir a**Herramientas**>**Complementos**>**Descargados
+  - Haga clic en **Agregar complementos...** y busque el archivo de complemento de extensión .nbm descargado para **Aspose.PDF Java para NetBeans (Maven)**.
+  - Click**"Install"**to install the plugin
+- O se puede instalar directamente (sin descarga manual desde la URL de alojamiento del complemento NetBeans) usando las opciones del IDE:
+  - Ir a**Herramientas**>**Complementos**>**Complementos disponibles**
+  - In Search Box type: "Aspose"
+  - Select **Aspose.PDF Java NetBeans (Maven)** plugin
+  - Click**"Install"**
 
-- El complemento se puede descargar directamente desde la URL de alojamiento de complementos de NetBeans: <http://plugins.netbeans.org/plugin/63218>
-  y luego se puede instalar usando la opción IDE:
-  - Vaya a **Herramientas**>**Complementos**>**Descargado
-  - Haga clic en **Agregar complementos...** y busque el archivo de extensión .nbm descargado para **Aspose.PDF Java para NetBeans (Maven)**.
-  - Haga clic en **"Instalar"** para instalar el complemento
-- O se puede instalar directamente (sin descargar manualmente desde la URL de alojamiento de complementos de NetBeans) usando las opciones IDE:
-  - Vaya a **Herramientas**>**Complementos**>**Complementos disponibles**
-  - En el cuadro de búsqueda escriba: "Aspose"
-  - Seleccione el complemento **Aspose.PDF Java NetBeans (Maven)**
-  - Haga clic en **"Instalar"**
+## Installing
 
-## Instalando
+Installing Aspose.PDF for NetBeans - Maven
 
-Instalando Aspose.PDF para NetBeans - Maven
+## Using the Plugin
 
-## Usando el complemento
+Using Aspose.PDF for NetBeans - Maven
 
-Usando Aspose.PDF para NetBeans - Maven
+### How to apply Aspose License?
 
-### ¿Cómo aplicar la licencia de Aspose?
+This Plugin uses an evaluation version of Aspose.PDF. Once you are happy with your evaluation, you can purchase a license at the [Aspose website](https://purchase.aspose.com/buy).
+To remove the evaluation message and feature limitations, a product license should be applied. You will receive a license file after you have purchased the product. Please follow the steps below to apply the license.
 
-Este Plugin utiliza una versión de evaluación de Aspose.PDF. Una vez que esté satisfecho con su evaluación, puede comprar una licencia en el [sitio web de Aspose](https://purchase.aspose.com/buy). Para eliminar el mensaje de evaluación y las limitaciones de funciones, se debe aplicar una licencia de producto. Recibirá un archivo de licencia después de haber comprado el producto. Por favor, siga los pasos a continuación para aplicar la licencia.
-
-- Asegúrese de que el archivo de licencia se llame **Aspose.PDF.Java.lic
-- Coloque el archivo **Aspose.PDF.Java.lic** en la carpeta que contiene el Aspose.PDF.jar
-- Use el siguiente código para activar la licencia:
+- Make sure the license file is named as **Aspose.PDF.Java.lic
+- Place **Aspose.PDF.Java.lic** file in the folder that contains the Aspose.PDF.jar
+- Use the following code for activating the license:
 
 ```java
 License license = new License();
 license.setLicense("Aspose.PDF.Java.lic");
 ```
 
-## Soporte, Extender y Contribuir
+## Support, Extend and Contribute
 
-### Soporte
+### Support
 
-- Si desea ver problemas conocidos/reportados (por los usuarios o el equipo de Q.A) en el plugin.
-- O si desea reportar cualquier problema que encuentre en el plugin
-- Tiene alguna sugerencia de mejora o desea hacer una solicitud de función
+- If you like to see known/reported issues (by the users or Q.A team) in the plugin.
+- Or you want to report any issue you found in the plugin
+- Have any improvement suggestion or like to make any feature request
 
-Por favor, siga el [**Rastreador de Problemas de GitHub**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues) para registrar cualquier problema encontrado en el plugin.
+Please follow[**GitHub Issues Tracker**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)for logging any issues found in the plugin.
 
-### Extender y Contribuir
+### Extend and Contribute
 
-Aspose.PDF Java para NetBeans (Maven) es de código abierto y su código fuente está disponible en los principales sitios web de codificación social que se enumeran a continuación. Se anima a los desarrolladores a descargar el código fuente y contribuir sugiriendo o agregando nuevas características o mejorando las existentes para que otros también puedan beneficiarse. Los desarrolladores también pueden aprender de él para crear sus propios plugins.
+Aspose.PDF Java for NetBeans (Maven) is open source and its source code is available on the major social coding websites listed below. Developers are encouraged to download the source code and contribute by suggesting or adding new features or improving the existing ones so that others could also benefit from it. Developers can also learn from it to make their own plugins.
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_NetBeans\(Maven\))
 
-### #Cómo configurar el código fuente de Aspose.PDF Java para NetBeans (Maven)
+### #How to configure source code of Aspose.PDF Java for NetBeans (Maven)
 
-A continuación, los sencillos pasos llevarán sin problemas a la configuración exitosa del código fuente del plugin **"Aspose.PDF Java para NetBeans (Maven)"** en NetBeans IDE
+Below simple steps will smoothly lead to successful configuration of**"Aspose.PDF Java for NetBeans (Maven)"** plugin source code in NetBeans IDE
 
-1. Descargar / Clonar el código fuente.
-1. Elegir **Archivo** > Abrir Proyecto
-1. Navegar hasta el último proyecto fuente que has descargado y abrir el proyecto.
-1. El código del plugin Aspose.PDF Java para NetBeans (Maven) ahora está listo para mejorar.
+1. Download / Clone the source code.
+1. Choose**File**>Open Project
+1. Browse to the latest project source that you have downloaded and open the project.
+1. Aspose.PDF Java for NetBeans (Maven) plugin code is now ready to enhance.

@@ -1,44 +1,55 @@
 ---
-title: Reemplazar Imagen en un Archivo PDF Existente
-linktitle: Reemplazar Imagen
+title: Replace Image in Existing PDF File using Java
+linktitle: Replace Image
 type: docs
 weight: 70
-url: /es/java/replace-image-in-existing-pdf-file/
-description: Esta sección describe cómo reemplazar una imagen en un archivo PDF existente utilizando una biblioteca Java.
-lastmod: "2021-06-05"
+url: /java/replace-image-in-existing-pdf-file/
+description: Learn how to replace embedded images in existing PDF files in Java.
+lastmod: "2026-06-09"
+TechArticle: true
+AlternativeHeadline: Replace images in existing PDF files with Java
+Abstract: This article shows how to replace images in PDF documents using Aspose.PDF for Java. It covers replacing an image by its resource index and replacing the first matched image placement found with ImagePlacementAbsorber.
 ---
+Use either the page image collection or placement-based search depending on how precisely you need to target the image.
 
-El método [Replace](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection#replace-int-java.io.InputStream-) de la colección [XImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) te permite reemplazar una imagen en un archivo PDF existente.
+## Replace an image by resource index
 
-La colección de Imágenes se puede encontrar en la colección de Recursos de una página. Para reemplazar una imagen:
-
-1. Abre el archivo PDF usando el objeto Document.
-2. Reemplaza una imagen en particular, guarda el archivo PDF actualizado usando el método Save del objeto Document.
-
-El siguiente fragmento de código te muestra cómo reemplazar una imagen en un archivo PDF.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Access the image resources on the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Replace the target image resource with the new image file.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
+public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        document.getPages().get_Item(1).getResources().getImages().replace(1, imageStream);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+## Replace an image using `ImagePlacementAbsorber`
 
-import com.aspose.pdf.Document;
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create an [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) and visit the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Get the target [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) and replace it with the new image stream.
+1. Save the updated PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-public class ExampleReplaceImage {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-    public static void Replace() {
-        // Abrir documento
-        Document pdfDocument = new Document("input.pdf");
-        // Reemplazar una imagen en particular
-        try {
-            pdfDocument.getPages().get_Item(1).getResources().getImages().replace(1, new FileInputStream("lovely.jpg"));
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+```java
+public static void replaceImageWithAbsorber(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+
+        if (absorber.getImagePlacements().size() > 0) {
+            ImagePlacement imagePlacement = absorber.getImagePlacements().get_Item(1);
+            try (InputStream imageStream = Files.newInputStream(imageFile)) {
+                imagePlacement.replace(imageStream);
+            }
         }
-        // Guardar el archivo PDF actualizado
-        pdfDocument.save(_dataDir + "output.pdf");
+
+        document.save(outputFile.toString());
     }
 }
 ```

@@ -1,19 +1,19 @@
 ---
-title: Trabajando con Marcadores en PDF
-linktitle: Marcadores
+title: Work with PDF Bookmarks in Java
+linktitle: Bookmarks
 type: docs
 weight: 30
-url: /es/java/bookmarks/
-description: Esta sección explica cómo agregar, eliminar y obtener marcadores con Aspose.PDF para Java.
-lastmod: "2021-06-05"
+url: /java/bookmarks/
+description: Aprenda a agregar, eliminar, recuperar, actualizar y expandir marcadores de PDF en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Add, inspect, update, and expand bookmarks in PDF files with Java
+Abstract: This article explains how to work with bookmarks in PDF documents using Aspose.PDF for Java. Learn how to create parent and child bookmarks, delete one or all bookmarks, inspect bookmark properties, retrieve page numbers, update bookmark titles, and expand outlines by default.
 ---
+Los marcadores ayudan a los usuarios a desplazarse rápidamente por archivos PDF largos y proporcionan un esquema del documento similar a una tabla de contenido.
 
-Los marcadores en PDF son una herramienta útil y esencial cuando se trata de leer archivos PDF. Permiten a los usuarios saltar rápidamente a otros lugares en un documento PDF, navegar a través de las páginas y ver rápidamente el contenido de un PDF, tal como un índice.
-
-En esta sección, aprenderás cómo:
-
-- [Agregar y Eliminar un Marcador](/pdf/es/java/add-and-delete-bookmark/)
-- [Obtener, Actualizar y Expandir un Marcador](/pdf/es/java/get-update-and-expand-bookmark/)
+- [Add and delete bookmarks](/pdf/java/add-and-delete-bookmark/)
+- [Get, update, and expand bookmarks](/pdf/java/get-update-and-expand-bookmark/)

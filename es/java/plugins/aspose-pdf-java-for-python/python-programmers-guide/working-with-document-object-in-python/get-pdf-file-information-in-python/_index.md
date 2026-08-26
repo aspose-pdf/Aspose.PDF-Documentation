@@ -1,12 +1,13 @@
 ---
-title: Obtener Información del Archivo PDF en Python
+title: Get PDF File Information in Python
+linktitle: Get PDF File Information in Python
 type: docs
 weight: 40
-url: /es/java/get-pdf-file-information-in-python/
-lastmod: "2021-06-05"
+url: /java/get-pdf-file-information-in-python/
+description: Explore how to retrieve detailed PDF file information such as metadata and properties in Python using Aspose.PDF for document management.
+lastmod: "2026-06-09"
 ---
-
-Para obtener la información del archivo de un documento PDF usando **Aspose.PDF Java para Python**, simplemente invoca la clase **GetPdfFileInfo**.
+To Get File Information of Pdf document using **Aspose.PDF Java for Python**, simply invoke **GetPdfFileInfo** class.
 
 ```python
 
@@ -14,20 +15,20 @@ doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Obtener información del documento
+# Get document information
 doc_info = doc.getInfo();
 
-# Mostrar información del documento
-print "Autor:-" + str(doc_info.getAuthor())
-print "Fecha de creación:-" + str(doc_info.getCreationDate())
-print "Palabras clave:-" + str(doc_info.getKeywords())
-print "Fecha de modificación:-" + str(doc_info.getModDate())
-print "Asunto:-" + str(doc_info.getSubject())
-print "Título:-" + str(doc_info.getTitle())
+# Show document information
+print "Author:-" + str(doc_info.getAuthor())
+print "Creation Date:-" + str(doc_info.getCreationDate())
+print "Keywords:-" + str(doc_info.getKeywords())
+print "Modify Date:-" + str(doc_info.getModDate())
+print "Subject:-" + str(doc_info.getSubject())
+print "Title:-" + str(doc_info.getTitle())
 ```
 
-**Descargar Código en Ejecución**
+**Download Running Code**
 
-Descarga **Obtener Información del Archivo PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Get PDF File Information (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetPdfFileInfo/GetPdfFileInfo.py)

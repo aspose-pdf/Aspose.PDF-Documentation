@@ -1,19 +1,20 @@
 ---
-title: Obtener Propiedades de la Página en Jython
+title: Get Page Properties in Jython
+linktitle: Get Page Properties in Jython
 type: docs
 weight: 50
-url: /es/java/get-page-properties-in-jython/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-jython/
+description: Explore how to retrieve properties of individual pages in a PDF document using Jython with Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Get Page Properties
 
-## Aspose.PDF - Obtener Propiedades de la Página
+To Check File Format using **Aspose.PDF Java for Jython**. Here you can see sample code.
 
-Para verificar el formato del archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver un código de ejemplo.
+Error rendering macro 'code' : Invalid value specified for parameter lang
 
-Error al renderizar macro 'code': Valor no válido especificado para el parámetro lang
+## Download Running Code
 
-## Descargar Código en Ejecución
-
-Descargar el código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
+Download running code from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

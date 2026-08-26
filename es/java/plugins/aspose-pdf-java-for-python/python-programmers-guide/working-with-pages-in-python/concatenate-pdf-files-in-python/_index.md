@@ -1,33 +1,34 @@
 ---
-title: Concatenar archivos PDF en Python
+title: Concatenate PDF Files in Python
+linktitle: Concatenate PDF Files in Python
 type: docs
 weight: 10
-url: /es/java/concatenate-pdf-files-in-python/
-lastmod: "2021-06-05"
+url: /java/concatenate-pdf-files-in-python/
+description: Learn how to concatenate multiple PDF files into a single PDF document in Python using Aspose.PDF, simplifying document management.
+lastmod: "2026-06-09"
 ---
-
-Para concatenar archivos PDF usando **Aspose.PDF Java para Python**, simplemente invoca la clase **ConcatenatePdfFiles**.
+To concatenate PDF files using **Aspose.PDF Java for Python**, simply invoke **ConcatenatePdfFiles** class.
 
 ```python
-doc = self.Document()
+doc= self.Document()
 pdf = self.Document()
-pdf = self.dataDir + 'input1.pdf'
+pdf=self.dataDir + 'input1.pdf'
 
-# Abrir el documento fuente
+# Open the source document
 pdf1 = self.Document()
-pdf1 = self.dataDir + 'input2.pdf'
+pdf1=self.dataDir + 'input2.pdf'
 
-# Agregar las páginas del documento fuente al documento de destino
+# Add the pages of the source document to the target document
 pdf1.getPages().add(pdf1.getPages())
 
-# Guardar el archivo de salida concatenado (el documento de destino)
+# Save the concatenated output file (the target document)
 doc.save(self.dataDir + "Concatenate_output.pdf")
 
-print "El nuevo documento ha sido guardado, por favor revise el archivo de salida"
+print "New document has been saved, please check the output file"
 ```
 
-**Descargar código en ejecución**
+**Descargar código de ejecución**
 
-Descarga **Concatenar archivos PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Concatenate PDF Files (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/ConcatenatePdfFiles/ConcatenatePdfFiles.py)
+- [GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/ConcatenatePdfFiles/ConcatenatePdfFiles.py)

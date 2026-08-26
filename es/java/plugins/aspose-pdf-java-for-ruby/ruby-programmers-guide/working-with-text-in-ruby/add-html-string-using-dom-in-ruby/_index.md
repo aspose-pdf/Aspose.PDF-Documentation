@@ -1,35 +1,36 @@
 ---
-title: Añadir Cadena HTML usando DOM en Ruby
+title: Add HTML String using DOM in Ruby
+linktitle: Add HTML String using DOM in Ruby
 type: docs
 weight: 10
-url: /es/java/add-html-string-using-dom-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-html-string-using-dom-in-ruby/
+description: Discover how to add an HTML string to a PDF document using the DOM API in Ruby with Aspose.PDF for dynamic content generation.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Add HTML
 
-## Aspose.PDF - Añadir HTML
+To add HTML string in Pdf document using **Aspose.PDF Java for Ruby**, simply invoke **AddHtml** module.
 
-Para añadir una cadena HTML en un documento PDF usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **AddHtml**.
-
-Código Ruby
+Ruby Code
 
 ```java
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Instanciar objeto Document
+# Instantiate Document object
 
 doc = Rjb::import('com.aspose.pdf.Document').new
 
-# Añadir una página a la colección de páginas del archivo PDF
+# Add a page to pages collection of PDF file
 
 page = doc.getPages().add()
 
-# Instanciar HtmlFragment con contenidos HTML
+# Instantiate HtmlFragment with HTML contents
 
 title = Rjb::import('com.aspose.pdf.HtmlFragment').new("<fontsize=10><b><i>Table</i></b></fontsize>")
 
-# establecer MarginInfo para detalles de margen
+# set MarginInfo for margin details
 
 margin = Rjb::import('com.aspose.pdf.MarginInfo').new
 
@@ -37,24 +38,23 @@ margin.setBottom(10)
 
 margin.setTop(200)
 
-# Establecer información de margen
+# Set margin information
 
 title.setMargin(margin)
 
-# Añadir Fragmento HTML a la colección de párrafos de la página
+# Add HTML Fragment to paragraphs collection of page
 
 page.getParagraphs().add(title)
 
-# Guardar el archivo PDF
+# Save PDF file
 
 doc.save(data_dir + "html.output.pdf")
 
-puts "HTML añadido con éxito"
+puts "HTML added successfully"
 ```
 
+## Download Running Code
 
-## Descargar Código en Ejecución
-
-Descargar **Agregar HTML (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Add HTML (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)

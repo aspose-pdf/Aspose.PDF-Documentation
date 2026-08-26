@@ -1,31 +1,32 @@
 ---
-title: Obtener Conteo de Páginas de PDF en PHP
+title: Get Page Count of PDF in PHP
+linktitle: Get Page Count of PDF in PHP
 type: docs
 weight: 40
-url: /es/java/get-page-count-of-pdf-in-php/
-lastmod: "2021-06-05"
+url: /java/get-page-count-of-pdf-in-php/
+description: Discover how to retrieve the total page count of a PDF document in PHP using Aspose.PDF for document analysis.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Get Page Count
 
-## Aspose.PDF - Obtener Conteo de Páginas
+To get page count of Pdf document using **Aspose.PDF Java for PHP**, simply invoke **GetNumberOfPages** class.
 
-Para obtener el conteo de páginas de un documento Pdf usando **Aspose.PDF Java para PHP**, simplemente invoca la clase **GetNumberOfPages**.
-
-Código PHP
+PHP Code
 
 ```php
 
-# Crear documento PDF
+# Create PDF document
 
 $pdf = new Document($dataDir . 'input1.pdf');
 
 $page_count = $pdf->getPages()->size();
 
-print "Conteo de Páginas:" . $page_count . PHP_EOL;
+print "Page Count:" . $page_count . PHP_EOL;
 
 ```
 
-**Descargar Código en Ejecución**
+**Download Running Code**
 
-Descargar **Obtener Conteo de Páginas (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Get Page Count (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetNumberOfPages.php)

@@ -1,95 +1,74 @@
 ---
-title: Cambiar el Tamaño de Página de PDF Programáticamente
-linktitle: Cambiar Tamaño de Página
+title: Change PDF Page Size in Java
+linktitle: Cambiar el tamaño de la página
 type: docs
-weight: 50
-url: /es/java/change-page-size/
-description: Cambia el tamaño de página de tu archivo PDF usando la biblioteca Java.
-lastmod: "2021-06-05"
+weight: 40
+url: /java/change-page-size/
+description: Learn how to read and change PDF page dimensions in Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read and update page dimensions and boxes with Java
+Abstract: This article demonstrates how to read and modify PDF page dimensions using Aspose.PDF for Java. It covers getting page size, measuring page size with rotation applied, and updating the first page to a new size while printing the box dimensions before and after the change.
 ---
+Aspose.PDF for Java can both report page dimensions and update them.
 
-## Cambiar el Tamaño de Página de PDF
+## Change the page size
 
-Aspose.PDF para Java te permite cambiar el tamaño de página de un PDF con simples líneas de código en tus aplicaciones Java. Este tema explica cómo actualizar/cambiar las dimensiones de página (tamaño) de un archivo PDF existente.
+Use this example when you need to resize an existing page and inspect the page boxes before and after the change.
 
-La clase [Page](https://reference.aspose.com/pdf//java/com.aspose.pdf/page) contiene el método SetPageSize(...) que te permite establecer el tamaño de la página. El fragmento de código a continuación actualiza las dimensiones de la página en unos pocos pasos sencillos:
-
-1. Cargar el archivo PDF de origen.
-1. Obtener las páginas en el objeto [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection).
-1. Obtener una página dada.
-1. Llamar al método SetPageSize(..) para actualizar sus dimensiones.
-
-1. Llama al método Save(..) de la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) para generar el archivo PDF con dimensiones de página actualizadas.
-
-{{% alert color="primary" %}}
-
-Tenga en cuenta que las propiedades de altura y anchura usan puntos como unidad básica, donde 1 pulgada = 72 puntos y 1 cm = 1/2.54 pulgada = 0.3937 pulgada = 28.3 puntos.
-
-{{% /alert %}}
-
-El siguiente fragmento de código muestra cómo cambiar las dimensiones de la página PDF al tamaño A4.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Get the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) and print its current box values.
+1. Set the new page size and save the document.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleChangePDFPageSize {
-    // La ruta al directorio de documentos.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ChangePDFPageSize() {
-        
-        // Abrir el primer documento
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-                
-        // Obtener la colección de páginas
-        PageCollection pageCollection = pdfDocument.getPages();
-
-        // Obtener una página en particular
-        Page pdfPage = pageCollection.get_Item(1);
-
-        // Establecer el tamaño de la página como A4 (11.7 x 8.3 in) y en Aspose.Pdf, 1 pulgada = 72 puntos
-        // Entonces las dimensiones A4 en puntos serán (842.4, 597.6)
-        pdfPage.setPageSize(597.6, 842.4);
-
-        _dataDir = _dataDir + "UpdateDimensions_out.pdf";
-        
-        // Guardar el documento actualizado
-        pdfDocument.save(_dataDir);
+public static void setPageSize(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        printBoxes("Before set", page);
+        page.setPageSize(597.6, 842.4);
+        printBoxes("After set", page);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Get the page size
 
-## Obtener Tamaño de Página de PDF
+Use this example when you need to read the visible dimensions of a page.
 
-Puede leer el tamaño de página de un archivo PDF existente usando Aspose.PDF para Java. El siguiente ejemplo de código muestra cómo leer las dimensiones de una página PDF usando Java.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Get the page rectangle with rotation handling enabled.
+1. Output the page width and height.
 
 ```java
-    public static void GetPDFPageSize() {
-        
-        // Abrir el primer documento
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-                
-        // Agrega una página en blanco al documento PDF
-        Page page = pdfDocument.getPages().size() > 0 ? pdfDocument.getPages().get_Item(1) : pdfDocument.getPages().add();
-        
-        // Obtener información de altura y ancho de la página
-        System.out.println(page.getPageRect(true).getWidth() + ":" + page.getPageRect(true).getHeight());
-        
-        // Rotar página en un ángulo de 90 grados
-        page.setRotate (Rotation.on90);
-
-        // Obtener información de altura y ancho de la página
-        System.out.println(page.getPageRect(true).getWidth() + ":" + page.getPageRect(true).getHeight());
-        
-        // Guardar el documento actualizado
-        _dataDir = _dataDir + "UpdateDimensions_out.pdf";
-        pdfDocument.save(_dataDir);
+public static void getPageSize(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Rectangle rectangle = document.getPages().get_Item(1).getPageRect(true);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
     }
+}
+```
 
+## Get the page size with rotation applied
+
+Use this example when you need to compare page dimensions before and after accounting for rotation.
+
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Rotate the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Read the page rectangle with and without rotation handling and output both values.
+
+```java
+public static void getPageSizeRotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        page.setRotate(Rotation.on90);
+        Rectangle rectangle = page.getPageRect(false);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
+        rectangle = page.getPageRect(true);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
+    }
 }
 ```

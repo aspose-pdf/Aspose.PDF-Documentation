@@ -1,36 +1,37 @@
 ---
-title: Eliminar Metadatos de PDF en Python
+title: Remove Metadata from PDF in Python
+linktitle: Remove Metadata from PDF in Python
 type: docs
 weight: 70
-url: /es/java/remove-metadata-from-pdf-in-python/
-lastmod: "2021-06-05"
+url: /java/remove-metadata-from-pdf-in-python/
+description: Find out how to remove metadata from PDF documents in Python using Aspose.PDF, ensuring privacy and data security.
+lastmod: "2026-06-09"
 ---
-
-Para eliminar metadatos de un documento PDF usando **Aspose.PDF Java para Python**, simplemente invoque la clase **RemoveMetadata**.
+To remove Metadata from Pdf document using **Aspose.PDF Java for Python**, simply invoke **RemoveMetadata** class.
 
 ```python
 
-doc = self.Document()
+doc= self.Document()
 pdf = self.Document()
-pdf = self.dataDir + 'input1.pdf'
+pdf=self.dataDir + 'input1.pdf'
 
-if (re.findall('/pdfaid:part/', doc.getMetadata())):
-    doc.getMetadata().removeItem("pdfaid:part")
-
-
-if (re.findall('/dc:format/', doc.getMetadata())):
-    doc.getMetadata().removeItem("dc:format")
+if (re.findall('/pdfaid:part/',doc.getMetadata())):
+doc.getMetadata().removeItem("pdfaid:part")
 
 
-# guardar el documento actualizado con la nueva información
+if (re.findall('/dc:format/',doc.getMetadata())):
+doc.getMetadata().removeItem("dc:format")
+
+
+# save update document with new information
 doc.save(self.dataDir + "Remove_Metadata.pdf")
 
-print "Metadatos eliminados con éxito, por favor verifique el archivo de salida."
+print "Removed metadata successfully, please check output file."
 
 ```
 
-**Descargar Código en Ejecución**
+**Download Running Code**
 
-Descargue **Eliminar Metadatos (Aspose.PDF)** de cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Remove Metadata (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/RemoveMetadata/RemoveMetadata.py)

@@ -1,31 +1,32 @@
 ---
-title: Extraer fuentes de PDF
-linktitle: Extraer fuentes
+title: Extract Fonts from PDF via Java
+linktitle: Extract Fonts from PDF
 type: docs
 weight: 30
-url: /es/java/extract-fonts-from-pdf/
-description: Cómo extraer fuentes de PDF usando Aspose.PDF para Java
-lastmod: "2021-06-05"
+url: /java/extract-fonts-from-pdf/
+description: Use Aspose.PDF for Java to inspect and extract the fonts used in a PDF document.
+lastmod: "2026-06-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: How to Extract Fonts from PDF using Java
+Abstract: This article explains how to inspect the fonts used in a PDF document with Aspose.PDF for Java. It shows how to open a PDF, call `getFontUtilities().getAllFonts()`, and iterate through the resulting font objects to read their names.
 ---
+Use font extraction when you need to audit document typography, inspect embedded resources, or verify font usage before conversion or archival workflows.
 
-En caso de que desees obtener todas las fuentes de un documento PDF, puedes usar el método `Document.IDocumentFontUtilities.getAllFonts()` proporcionado en la clase Document. Por favor, revisa el siguiente fragmento de código para obtener todas las fuentes de un documento PDF existente:
+1. Open the source PDF in a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
+1. Call `document.getFontUtilities().getAllFonts()` to collect every [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) resource referenced by the document.
+1. Iterate through the extracted [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) objects and read each font name from the font metadata.
+1. Print the font names so the document typography can be audited or exported.
 
 ```java
-public static void Extract_Fonts() throws FileNotFoundException
-{
-    // La ruta al directorio de documentos.
-    String filePath = "<... ingrese el nombre del archivo ...>";
-    
-    // Cargar documento PDF
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.Font[] fonts = pdfDocument.getFontUtilities().getAllFonts();
-
-    for (com.aspose.pdf.Font font : fonts)
-    {
-        font.save(new FileOutputStream(font.getFontName()));
+public static void extractFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Font[] fonts = document.getFontUtilities().getAllFonts();
+        for (Font font : fonts) {
+            System.out.println(font.getFontName());
+        }
     }
 }
 ```

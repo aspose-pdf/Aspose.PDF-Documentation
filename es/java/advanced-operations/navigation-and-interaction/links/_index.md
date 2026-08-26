@@ -1,18 +1,20 @@
 ---
-title: Trabajo con Enlaces en PDF programáticamente
-linktitle: Enlaces
+title: Work with PDF Links in Java
+linktitle: Links
 type: docs
 weight: 10
-url: /es/java/links/
-description: Esta guía trata sobre cómo agregar un enlace de página interna en PDF o insertar un hipervínculo a un sitio web externo en PDF en el lenguaje Java.
-lastmod: "2021-06-05"
+url: /java/links/
+description: Learn how to create, extract, and update internal and external links in PDF documents using Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create, extract, and update PDF links in Java
+Abstract: Este artículo explica cómo administrar anotaciones de enlaces en documentos PDF usando Aspose.PDF para Java. Aprenda a crear enlaces internos, remotos, de lanzamiento y URI, a extraer anotaciones de enlaces e hipervínculos y a actualizar la apariencia de los enlaces o los destinos web.
 ---
+Link annotations can connect users to pages in the same document, external files, web resources, or application launch targets.
 
-Los enlaces te permiten saltar a otras ubicaciones en el mismo documento, a otros documentos electrónicos incluyendo adjuntos, o a sitios web. Puedes usar enlaces para iniciar acciones o para asegurar que tu lector tenga acceso inmediato a la información relacionada.
-
-- [Crear Enlaces](/pdf/es/java/create-links/) - aprende de manera sencilla a crear enlaces en tu archivo PDF usando Java.
-- [Actualizar Enlaces](/pdf/es/java/update-links) - intenta establecer el destino en el PDF, intenta establecer el destino del enlace a una dirección web, intenta establecer el destino del enlace a otro archivo PDF, actualiza el color del texto del enlace.
-- [Extraer Enlaces](/pdf/es/java/extract-links) - extrae enlaces del archivo PDF usando la clase AnnotationSelector.
+- [Create PDF links](/pdf/java/create-links/)
+- [Extract PDF links](/pdf/java/extract-links/)
+- [Update PDF links](/pdf/java/update-links/)

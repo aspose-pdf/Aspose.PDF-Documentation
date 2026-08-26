@@ -1,111 +1,91 @@
 ---
-title: Agregar sellos de imagen en PDF programáticamente
-linktitle: Sellos de imagen en archivo PDF
+title: Add Image Stamps to PDF in Java
+linktitle: Image stamps in PDF File
 type: docs
 weight: 10
-url: /es/java/image-stamps-in-pdf-page/
-description: Agrega el sello de imagen en tu documento PDF usando la clase ImageStamp con la biblioteca Aspose.PDF para Java.
-lastmod: "2021-06-05"
+url: /java/image-stamps-in-pdf-page/
+description: Learn how to add image stamps to PDF pages in Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Add image stamps and image backgrounds to PDF pages with Java
+Abstract: This article explains how to add image stamps to PDF files using Aspose.PDF for Java. It covers image stamps with positioning, rotation, opacity, and quality control, and using an image as the background of a floating box.
 ---
+Aspose.PDF for Java supports image stamps as overlays and image-backed layout elements.
 
-## Agregar sello de imagen en archivo PDF
+## Add an image stamp
 
-Puede usar la clase [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) para agregar una imagen como sello en el documento PDF. La clase [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) proporciona métodos para especificar altura, ancho, y opacidad, etc.
+Use this example when a page should display an image stamp with custom placement and opacity.
 
-Para agregar un sello de imagen:
-
-1. Cree un objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) y un objeto ImageStamp usando las propiedades requeridas.
-
-1. Llama al método [addStamp(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) de la clase [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) para añadir el sello al PDF.
-
-El siguiente fragmento de código muestra cómo añadir un sello de imagen en el archivo PDF.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) y configure su apariencia.
+1. Agregue el sello a la página y guarde el documento.
 
 ```java
-public static void AddImageStampInPDFFile() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Crear sello de imagen
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setBackground(true);
         imageStamp.setXIndent(100);
         imageStamp.setYIndent(100);
-        imageStamp.setHeight(48);
-        imageStamp.setWidth(225);
+        imageStamp.setHeight(300);
+        imageStamp.setWidth(300);
         imageStamp.setRotate(Rotation.on270);
         imageStamp.setOpacity(0.5);
 
-        // Añadir sello a una página en particular
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        // Guardar documento de salida
-        pdfDocument.save(_dataDir + "AddImageStamp_out.pdf");
-
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Add an image stamp with quality control
 
-## Controlar la Calidad de Imagen al Agregar un Sello
+Use this example when you need to adjust the rendering quality of the image stamp.
 
-La clase [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) te permite agregar una imagen como un sello en un documento PDF. También te permite controlar la calidad de la imagen al agregar una imagen como marca de agua en un archivo PDF. Para permitir esto, se ha añadido un método llamado setQuality(...) a la clase [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp). Un método similar también se puede encontrar en la clase [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/Stamp) del paquete com.aspose.pdf.facades.
-
-El siguiente fragmento de código te muestra cómo controlar la calidad de la imagen al agregarla como sello en el archivo PDF.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Create an [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) and set the quality value.
+1. Add the stamp to the page and save the result.
 
 ```java
- public static void ControlImageQualityWhenAddingStamp() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Crear sello de imagen
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStampWithQualityControl(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setQuality(10);
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        pdfDocument.save(_dataDir + "ControlImageQuality_out.pdf");
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Use an image as a floating box background
 
-## Sello de Imagen como Fondo en Caja Flotante
+Utilice este ejemplo cuando una imagen deba servir como fondo de un contenedor de diseño con estilo.
 
-La API Aspose.PDF te permite añadir un sello de imagen como fondo en una caja flotante. La propiedad BackgroundImage de la clase FloatingBox se puede usar para establecer el sello de imagen de fondo para una caja flotante como se muestra en el siguiente ejemplo de código.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and access the target page.
+1. Create a [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) with text and border settings.
+1. Set the background image, add the box to the page, and save the document.
 
 ```java
-public static void ImageStampAsBackgroundInFloatingBox() {
-        // Instanciar objeto Documento
-        Document doc = new Document();
-        // Agregar página al documento PDF
-        Page page = doc.getPages().add();
+public static void addImageAsBackgroundInFloatingBox(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        FloatingBox box = new FloatingBox(200.0f, 100.0f);
+        box.setLeft(40);
+        box.setTop(80);
+        box.setHorizontalAlignment(HorizontalAlignment.Center);
+        box.getParagraphs().add(new TextFragment("Text in Floating Box"));
+        box.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
 
-        // Crear objeto FloatingBox
-        FloatingBox aBox = new FloatingBox(200, 100);
+        Image image = new Image();
+        image.setFile(imageFile.toString());
+        box.setBackgroundImage(image);
+        box.setBackgroundColor(Color.getYellow());
+        page.getParagraphs().add(box);
 
-        // Establecer posición izquierda para FloatingBox
-        aBox.setLeft(40);
-        // Establecer posición superior para FloatingBox
-        aBox.setTop(80);
-        // Establecer la alineación horizontal para FloatingBox
-        aBox.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Agregar fragmento de texto a la colección de párrafos de FloatingBox
-        aBox.getParagraphs().add(new TextFragment("texto principal"));
-        // Establecer borde para FloatingBox
-        aBox.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
-
-        // Añadir imagen de fondo
-        Image img = new Image();
-        img.setFile(_dataDir + "aspose-logo.png");
-        aBox.setBackgroundImage(img);
-
-        // Establecer color de fondo para FloatingBox
-        aBox.setBackgroundColor(Color.getYellow());
-
-        // Añadir FloatingBox a la colección de párrafos del objeto página
-        page.getParagraphs().add(aBox);
-        // Guardar el documento PDF
-        doc.save(_dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+        document.save(outputFile.toString());
     }
 }
 ```

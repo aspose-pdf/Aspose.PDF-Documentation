@@ -1,93 +1,82 @@
 ---
-title: Manipulate Tables in existing PDF
-linktitle: Manipulate Tables
+title: Manipulate Tables in Existing PDF Documents
+linktitle: Manipular tablas
 type: docs
-weight: 30
-url: /es/java/manipulate-tables-in-existing-pdf/
-description: Manipule las tablas en un archivo PDF existente y reemplace la tabla antigua con una nueva en el documento PDF con Aspose.PDF para Java.
-lastmod: "2021-06-05"
+weight: 40
+url: /java/manipulating-tables/
+description: Aprenda a inspeccionar y modificar tablas en documentos PDF existentes utilizando Java.
+lastmod: "2026-06-09"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Inspect and modify existing PDF tables with Java
+Abstract: This article explains how to manipulate tables already present in PDF documents using Aspose.PDF for Java. It covers locating tables with TableAbsorber, updating text inside a cell, and replacing a detected table with a new Table object.
 ---
+Use `TableAbsorber` when you need to locate existing tables and update their content.
 
-## Manipular tablas en un PDF existente
+## Replace text inside a table cell
 
-Una de las primeras características admitidas por Aspose.PDF para Java es su capacidad para trabajar con tablas y ofrece un gran soporte para agregar tablas en archivos PDF que se generan desde cero o en cualquier archivo PDF existente.
- Tienes también la capacidad de integrar la tabla con la base de datos (DOM) para crear tablas dinámicas basadas en el contenido de la base de datos. En esta nueva versión, hemos implementado una nueva característica de búsqueda y análisis de tablas simples que ya existen en la página de un documento PDF. Una nueva clase llamada **Aspose.PDF.Text.TableAbsorber** proporciona estas capacidades. El uso de TableAbsorber es muy similar a la clase existente TextFragmentAbsorber.
+Use this example when the text in a detected cell should be updated without rebuilding the whole table.
 
-El siguiente fragmento de código muestra los pasos para actualizar el contenido en una celda de tabla en particular.
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and visit the page with [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Validate that the target table and cell text fragments exist.
+1. Replace the cell text and save the updated document.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleManipulate {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ManipulateTables() {
-
-        // Cargar archivo PDF existente
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-        // Crear objeto TableAbsorber para encontrar tablas
+public static void replaceCells(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
+        absorber.visit(document.getPages().get_Item(1));
 
-        // Visitar la primera página con el absorber
-        absorber.visit(pdfDocument.getPages().get_Item(1));
+        if (absorber.getTableList().isEmpty()) {
+            throw new IllegalStateException("No tables were found on page 1.");
+        }
+        if (absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0).getTextFragments().size() == 0) {
+            throw new IllegalStateException("The target cell has no text fragments.");
+        }
 
-        // Obtener acceso a la primera tabla en la página, su primera celda y fragmentos de texto en ella
-        TextFragment fragment = absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0)
-                .getTextFragments().get_Item(1);
-
-        // Cambiar el texto del primer fragmento de texto en la celda
-        fragment.setText("hola mundo");
-
-        pdfDocument.save(_dataDir + "ManipulateTable_out.pdf");
+        absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0)
+                .getTextFragments().get_Item(1).setText("New Value");
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## Reemplazar la tabla antigua con una nueva en un documento PDF
+## Replace a detected table with a new table
 
-En caso de que necesites encontrar una tabla en particular y reemplazarla con la deseada, puedes usar el método Replace() de la clase [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) para hacerlo.
+Use this example when the original table should be fully replaced by a newly constructed one.
 
-El siguiente ejemplo demuestra la funcionalidad para reemplazar la tabla dentro de un documento PDF:
+1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) and detect tables on the page.
+1. Create a new [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) with the desired structure.
+1. Reemplace la tabla absorbida y guarde el PDF de salida.
 
 ```java
-public static void ReplaceOldTableWithNew() {
-
-        // Cargar documento PDF existente
-        Document pdfDocument = new Document(_dataDir + "Table_input2.pdf");
-
-        // Crear objeto TableAbsorber para encontrar tablas
+public static void replaceTable(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
+        absorber.visit(document.getPages().get_Item(1));
 
-        Page page = pdfDocument.getPages().get_Item(1);
+        if (absorber.getTableList().isEmpty()) {
+            throw new IllegalStateException("No tables were found on page 1.");
+        }
 
-        // Visitar la primera página con el absorbedor
-        absorber.visit(page);
-
-        // Obtener la primera tabla en la página
-        AbsorbedTable table = absorber.getTableList().get(0);
-
-        // Crear nueva tabla
+        AbsorbedTable oldTable = absorber.getTableList().get(0);
         Table newTable = new Table();
         newTable.setColumnWidths("100 100 100");
-        newTable.setDefaultCellBorder (new BorderInfo(BorderSide.All, 1F));
+        newTable.setDefaultCellBorder(new BorderInfo(BorderSide.All, 1.0f));
 
         Row row = newTable.getRows().add();
         row.getCells().add("Col 1");
         row.getCells().add("Col 2");
         row.getCells().add("Col 3");
+        row = newTable.getRows().add();
+        row.getCells().add("Col 12");
+        row.getCells().add("Col 22");
+        row.getCells().add("Col 32");
 
-        // Reemplazar la tabla con la nueva
-        absorber.replace(page, table, newTable);
-
-        // Guardar documento
-        pdfDocument.save(_dataDir + "TableReplaced_out.pdf");
-        
+        absorber.replace(document.getPages().get_Item(1), oldTable, newTable);
+        document.save(outputFile.toString());
     }
-
 }
 ```

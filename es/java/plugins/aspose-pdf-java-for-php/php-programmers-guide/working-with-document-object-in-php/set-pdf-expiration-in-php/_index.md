@@ -1,20 +1,21 @@
 ---
-title: Establecer Expiración de PDF en PHP
+title: Set PDF Expiration in PHP
+linktitle: Set PDF Expiration in PHP
 type: docs
 weight: 80
-url: /es/java/set-pdf-expiration-in-php/
-lastmod: "2021-06-05"
+url: /java/set-pdf-expiration-in-php/
+description: Discover how to set an expiration date for a PDF file in PHP, controlling access with Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Set PDF Expiration
 
-## Aspose.PDF - Establecer Expiración de PDF
+To set expiration ofВ  Pdf document using **Aspose.PDF Java for PHP**, simply invoke **SetExpiration** class.
 
-Para establecer la expiración de un documento Pdf usando **Aspose.PDF Java para PHP**, simplemente invoque la clase **SetExpiration**.
-
-Código PHP
+PHP Code
 
 ```php
 
-# Abrir un documento pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 $javascript = new JavascriptAction(
@@ -24,18 +25,18 @@ $javascript = new JavascriptAction(
     today = new Date(today.getFullYear(), today.getMonth());
     expiry = new Date(year, month);
     if (today.getTime() > expiry.getTime())
-    app.alert('El archivo ha expirado. Necesitas uno nuevo.');");
+    app.alert('The file is expired. You need a new one.');");
 $doc->setOpenAction($javascript);
 
-# guardar el documento actualizado con la nueva información
+# save update document with new information
 $doc->save($dataDir . "set_expiration.pdf");
 
-print "Actualiza la información del documento, por favor verifica el archivo de salida." . PHP_EOL;
+print "Update document information, please check output file." . PHP_EOL;
 
 ```
 
-**Descargar Código en Ejecución**
+**Download Running Code**
 
-Descargar **Establecer Expiración de PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Set PDF Expiration (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetExpiration.php)

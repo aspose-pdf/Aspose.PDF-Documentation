@@ -1,53 +1,52 @@
 ---
-title: Optimizar el Tamaño de Archivos PDF en Ruby
+title: Optimize PDF File Size in Ruby
+linktitle: Optimize PDF File Size in Ruby
 type: docs
 weight: 80
-url: /es/java/optimize-pdf-file-size-in-ruby/
-lastmod: "2021-06-05"
+url: /java/optimize-pdf-file-size-in-ruby/
+description: Learn to reduce the file size of PDFs without compromising quality using Aspose.PDF for Ruby.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Optimize PDF File Size
 
-## Aspose.PDF - Optimizar el Tamaño de Archivos PDF
+To optimize file Size of PDF document using **Aspose.PDF Java for Ruby**, call **optimize_filesize** method of **Optimize** module.
 
-Para optimizar el tamaño del archivo de un documento PDF usando **Aspose.PDF Java para Ruby**, llama al método **optimize_filesize** del módulo **Optimize**.
-
-Código Ruby
+Ruby Code
 
 ```java
-
  def optimize_filesize()
 
-    # La ruta al directorio de documentos.
+В В В  # The path to the documents directory.
 
-    data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
+В В В  data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-    # Abre un documento pdf.
+В В В  # Open a pdf document.
 
-    doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+В В В  doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-    # Optimiza el tamaño del archivo eliminando objetos no utilizados
+В В В  # Optimize the file size by removing unused objects
 
-    opt = Rjb::import('aspose.document.OptimizationOptions').new
+В В В  opt = Rjb::import('aspose.document.OptimizationOptions').new
 
-    opt.setRemoveUnusedObjects(true)
+В В В  opt.setRemoveUnusedObjects(true)
 
-    opt.setRemoveUnusedStreams(true)
+В В В  opt.setRemoveUnusedStreams(true)
 
-    opt.setLinkDuplcateStreams(true)
+В В В  opt.setLinkDuplcateStreams(true)
 
-    doc.optimizeResources(opt)
+В В В  doc.optimizeResources(opt)
 
-    # Guarda el documento de salida
+В В В  # Save output document
 
-    doc.save(data_dir + "Optimized_Filesize.pdf")
+В В В  doc.save(data_dir + "Optimized_Filesize.pdf")
 
-    puts "Tamaño de archivo PDF optimizado, por favor verifica el archivo de salida."
+В В В  puts "Optimized PDF Filesize, please check output file."
 
-end 
+endВ
 ```
 
+## Download Running Code
 
-## Descargar Código en Ejecución
-
-Download **Optimizar el Tamaño del Archivo PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Optimize PDF File Size (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)

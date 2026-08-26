@@ -1,39 +1,40 @@
 ---
-title: Insertar una Página Vacía al Final del Archivo PDF en Ruby
+title: Insert an Empty Page at End of PDF File in Ruby
+linktitle: Insert an Empty Page at End of PDF File in Ruby
 type: docs
 weight: 60
-url: /es/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
+description: Discover how to insert an empty page at the end of a PDF document using Ruby with Aspose.PDF, adding flexibility to your PDF processing tasks.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Insert an Empty Page at End of PDF File
 
-## Aspose.PDF - Insertar una Página Vacía al Final del Archivo PDF
+To Insert an Empty Page at the end of PDF document using **Aspose.PDF Java for Ruby**, simply invoke **InsertEmptyPageAtEndOfFile** module.
 
-Para insertar una página vacía al final del documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **InsertEmptyPageAtEndOfFile**.
-
-Código Ruby
+Código Rubí
 
 ```java
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abrir el documento objetivo
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# insertar una página vacía en un PDF
+# insert a empty page in a PDF
 
 pdf.getPages().add()
 
-# Guardar el archivo de salida concatenado (el documento objetivo)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "¡Página vacía añadida con éxito!"
+puts "Empty page added successfully!"
 ```
 
-## Descargar Código en Ejecución
+## Download Running Code
 
-Descargar **Insertar una Página Vacía al Final del Archivo PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+Download **Insert an Empty Page at End of PDF File (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)
+- [GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)

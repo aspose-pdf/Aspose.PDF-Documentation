@@ -1,41 +1,42 @@
 ---
-title: Actualizar Dimensiones de Página en PHP
+title: Update Page Dimensions in PHP
+linktitle: Update Page Dimensions in PHP
 type: docs
 weight: 90
-url: /es/java/update-page-dimensions-in-php/
-lastmod: "2021-06-05"
+url: /java/update-page-dimensions-in-php/
+description: Learn how to modify page dimensions within a PDF document in PHP using Aspose.PDF for better layout control.
+lastmod: "2026-06-09"
 ---
+## Aspose.PDF - Update Page Dimensions
 
-## Aspose.PDF - Actualizar Dimensiones de Página
+To update page Dimensions using **Aspose.PDF Java for PHP**, simply invoke **UpdatePageDimensions** class.
 
-Para actualizar las dimensiones de la página usando **Aspose.PDF Java para PHP**, simplemente invoque la clase **UpdatePageDimensions**.
-
-Código PHP
+PHP Code
 
 ```php
 
-# Abre el documento objetivo
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# obtener la colección de páginas
+# get page collection
 $page_collection = $pdf->getPages();
 
-# obtener una página en particular
+# get particular page
 $pdf_page = $page_collection->get_Item(1);
 
-# establecer el tamaño de la página como A4 (11.7 x 8.3 pulgadas) y en Aspose.PDF, 1 pulgada = 72 puntos
-# por lo que las dimensiones en A4 en puntos serán (842.4, 597.6)
+# set the page size as A4 (11.7 x 8.3 in) and in Aspose.PDF, 1 inch = 72 points
+# so A4 dimensions in points will be (842.4, 597.6)
 $pdf_page->setPageSize(597.6,842.4);
 
-# guardar el archivo PDF recién generado
+# save the newly generated PDF file
 $pdf->save($dataDir . "output.pdf");
 
-print "¡Dimensiones actualizadas con éxito!" . PHP_EOL;
+print "Dimensions updated successfully!" . PHP_EOL;
 
 ```
 
-**Descargar Código en Ejecución**
+**Download Running Code**
 
-Descargue **Actualizar Dimensiones de Página (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DownloadВ **Update Page Dimensions (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/UpdatePageDimensions.php)
