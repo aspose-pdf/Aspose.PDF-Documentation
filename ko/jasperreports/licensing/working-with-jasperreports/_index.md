@@ -12,7 +12,7 @@ lastmod: "2021-06-05"
 
 JasperReports용 Aspose.Words는 다운로드 페이지에서 시간 제한 없이 무료로 평가판을 사용할 수 있습니다. 제품의 평가판과 라이선스 버전은 동일한 다운로드입니다.
 
-평가판에 만족하신다면, [라이센스를 구매하다](http://www.aspose.com/purchase/default.aspx). 라이센스 조항을 이해하고 동의했는지 확인하십시오.
+평가판에 만족하신다면, [라이센스를 구매하다](https://purchase.aspose.com/buy?ppId=98899). 라이센스 조항을 이해하고 동의했는지 확인하십시오.
 
 {{% /alert %}}
 
