@@ -76,3 +76,47 @@ def extract_text_from_page(infile, outfile, page_number):
     with open(outfile, "w", encoding="utf-8") as tw:
         tw.write(extracted_text)
 ```
+## Ekstrak Paragraf dengan mengiterasi melalui mereka
+
+Gunakan [ParagraphAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) ketika Anda membutuhkan ekstraksi yang memperhatikan paragraf alih-alih teks halaman biasa. Tidak seperti [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) atau [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/), API ini mengatur output berdasarkan halaman, bagian, dan paragraf, yang berguna untuk analisis teks, ekspor terstruktur, dan pemrosesan sensitif tata letak.
+
+1. Buka PDF sumber sebagai [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Buat sebuah `ParagraphAbsorber` instansi.
+1. Panggilan `absorber.visit(document)` untuk menganalisis semua halaman.
+1. Iterasi melalui `page_markups`, kemudian melalui setiap bagian dan paragraf.
+1. Baca fragmen teks dari setiap paragraf dan tulis hasilnya ke sebuah file.
+
+```python
+import aspose.pdf as ap
+
+
+def extract_paragraphs_from_pdf(infile, outfile):
+    """
+    Extract all paragraphs from a PDF document, and write each paragraph’s text into an output file.
+    Args:
+        infile (str): Path to input PDF file.
+        outfile (str): Path to output text file.
+    """
+    document = ap.Document(infile)
+    try:
+        absorber = ap.text.ParagraphAbsorber()
+        absorber.visit(document)
+
+        with open(outfile, "w", encoding="utf-8") as tw:
+            for page_markup in absorber.page_markups:
+                for sec_idx, section in enumerate(page_markup.sections, start=1):
+                    for para_idx, paragraph in enumerate(section.paragraphs, start=1):
+                        # Concatenate all fragments/lines in the paragraph
+                        parts = []
+                        for line in paragraph.lines:
+                            for fragment in line:
+                                parts.append(fragment.text)
+                            parts.append("\r\n")
+                        paragraph_text = "".join(parts)
+                        tw.write(
+                            f"Page {page_markup.number}, Section {sec_idx}, Paragraph {para_idx}:\n"
+                        )
+                        tw.write(paragraph_text + "\n")
+    finally:
+        document.close()
+```
