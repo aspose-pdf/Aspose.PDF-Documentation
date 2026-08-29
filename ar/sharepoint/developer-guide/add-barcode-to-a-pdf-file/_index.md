@@ -1,33 +1,33 @@
 ---
-title: إضافة باركود إلى ملف PDF في SharePoint
-linktitle: إضافة باركود إلى ملف PDF
+title: أضف باركود إلى ملف PDF في SharePoint
+linktitle: إضافة الباركود إلى ملف PDF
 type: docs
 weight: 40
 url: /ar/sharepoint/add-barcode-to-a-pdf-file/
-lastmod: "2026-06-18"
-description: تتيح لك واجهة برمجة تطبيقات PDF SharePoint إضافة باركود إلى مستند PDF كما هو موضح في الصورة أدناه.
+lastmod: "2026-08-13"
+description: يتيح لك PDF SharePoint API إضافة رمز شريطي إلى مستند PDF كما هو موضح في الصورة أدناه.
 ---
 
-## **إضافة باركود إلى ملف PDF**
+## إضافة الباركود إلى ملف PDF
 
 {{% alert color="primary" %}}
 
-يسمح لك Aspose.PDF for SharePoint بإضافة باركود إلى مستند PDF. يمكن للمستخدمين إضافة باركود إلى الزاوية السفلية اليسرى من كل صفحة من مستند PDF تتم إضافته إلى المكتبة. توضح الصورة أدناه فكرة الشكل الذي قد يبدو عليه مستند PDF مع إضافة باركود.
+يتيح لك Aspose.PDF for SharePoint إضافة رمز شريطي إلى مستند PDF. يمكن للمستخدمين إضافة رمز شريطي إلى الركن الأيسر السفلي من كل صفحة من مستند PDF المضافة إلى المكتبة. تعطي الصورة أدناه فكرة عن الشكل الذي قد يبدو عليه مستند PDF مع إضافة رمز شريطي.
 
-**الباركود في الزاوية السفلية اليسرى**
+### الباركود في الزاوية اليسرى السفلية
 
-![todo:image_alt_text](add-barcode-to-a-pdf-file_1.png)
+![إضافة رمز شريطي إلى ملف PDF - مثال 1](add-barcode-to-a-pdf-file_1.png)
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-لتمكين ميزة الباركود لمكتبة معينة، استخدم زر **Watermark Settings** في تبويب **Aspose PDF Watermark Tools** ضمن **Library Tools** كما هو موضح أدناه.
+لتمكين ميزة الباركود لمكتبة معينة، استخدم زر **إعدادات العلامة المائية** في علامة التبويب **Aspose PDF Watermark Tools** في **Library Tools** كما هو موضح أدناه.
 
-**إعدادات العلامة المائية PDF**
+### إعدادات العلامة المائية لملف PDF
 
-![todo:image_alt_text](add-barcode-to-a-pdf-file_2.png)
+![إضافة رمز شريطي إلى ملف PDF - مثال 2](add-barcode-to-a-pdf-file_2.png)
 
-بعد تمكين الباركود للمكتبة المحددة، يقوم Aspose.PDF for SharePoint بإضافة باركود إلى أي مستند PDF يتم إضافته إلى تلك المكتبة.
+بعد تمكين الرموز الشريطية لمكتبة معينة، يقوم Aspose.PDF for SharePoint بإضافة رمز شريطي إلى أي مستند PDF مضاف إلى تلك المكتبة.
 
 {{% /alert %}}

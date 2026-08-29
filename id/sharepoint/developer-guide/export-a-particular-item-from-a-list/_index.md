@@ -4,7 +4,7 @@ linktitle: Ekspor Item Tertentu dari Daftar
 type: docs
 weight: 10
 url: /id/sharepoint/export-a-particular-item-from-a-list/
-lastmod: "2026-06-18"
+lastmod: "2026-08-07"
 description: API PDF SharePoint memungkinkan Anda mengonversi beberapa dokumen, atau satu per satu ke PDF seperti yang ditunjukkan dalam artikel ini.
 ---
 
@@ -16,13 +16,11 @@ Aspose.PDF for SharePoint memungkinkan Anda mengonversi beberapa dokumen, atau s
 
 Untuk mengekspor item tertentu dari daftar: pilih **Export to Pdf** dari Edit Control Block (ECB) item tersebut.
 
-## **Memilih Export to Pdf di ECB item**
+## Memilih Export to Pdf di ECB item tersebut
 
-![todo:image_alt_text](export-a-particular-item-from-a-list_1.png)
+![Memilih Export to Pdf](export-a-particular-item-from-a-list_1.png)
 
+## Ekspor ke PDF
 
-
-## **Ekspor ke PDF**
-
-![todo:image_alt_text](export-a-particular-item-from-a-list_2.png)
+![Ekspor ke PDF](export-a-particular-item-from-a-list_2.png)
 

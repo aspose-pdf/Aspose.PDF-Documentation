@@ -1,14 +1,15 @@
 ---
-title: Функции
+title: Features
 linktitle: Функции
 type: docs
 weight: 30
 url: /ru/sharepoint/features/
-lastmod: "2026-06-18"
-description: Возможности PDF SharePoint API включают экспорт в PDF и бесплатную техническую поддержку.
+lastmod: "2026-08-13"
+description: PDF SharePoint API features include Exporting to PDF and Free Technical Support.
 ---
 
-**Этот раздел включает следующие темы:**
+This section includes the following topics:
 
-- [Экспорт в PDF](/pdf/ru/sharepoint/export-to-pdf/)
-- [Техподдержка мирового класса бесплатно](/pdf/ru/sharepoint/world-class-free-technical-support/)
+- [Export to PDF](/pdf/ru/sharepoint/export-to-pdf/)
+- [World Class Free Technical Support](/pdf/ru/sharepoint/world-class-free-technical-support/)
+
