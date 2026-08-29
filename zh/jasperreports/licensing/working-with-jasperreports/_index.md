@@ -12,7 +12,7 @@ lastmod: "2021-06-05"
 
 Aspose.Words for JasperReports 可从下载页面免费、无时间限制地进行评估。该产品的评估版和许可版是相同的下载。
 
-当您对评估版感到满意时， [购买许可证](http://www.aspose.com/purchase/default.aspx)。确保您理解并同意许可条款。
+当您对评估版感到满意时， [购买许可证](https://purchase.aspose.com/buy?ppId=98899)。确保您理解并同意许可条款。
 
 {{% /alert %}}
 
