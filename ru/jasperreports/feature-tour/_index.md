@@ -1,5 +1,5 @@
 ---
-title: Функциональный тур
+title: Обзор функций
 linktitle: Обзор функций
 type: docs
 weight: 30
