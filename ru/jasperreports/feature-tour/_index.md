@@ -1,6 +1,6 @@
 ---
-title: Функциональный тур
-linktitle: Функциональный тур
+title: Обзор функций
+linktitle: Обзор функций
 type: docs
 weight: 30
 url: /ru/jasperreports/feature-tour/
