@@ -1,6 +1,6 @@
 ---
-title: Работа с Джасперсервером
-linktitle: Работа с Джасперсервером
+title: Работа с JasperServer
+linktitle: Работа с JasperServer
 type: docs
 weight: 20
 url: /ru/jasperreports/working-with-jasperserver/
