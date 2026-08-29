@@ -12,7 +12,7 @@ lastmod: "2021-06-05"
 
 Aspose.Words para JasperReports está disponible para una evaluación gratuita y por tiempo ilimitado desde la página de descarga. Las versiones de evaluación y licencia del producto son la misma descarga.
 
-Cuando esté satisfecho con la versión de evaluación, [comprar una licencia](http://www.aspose.com/purchase/default.aspx). Asegúrese de comprender y aceptar los términos de la licencia.
+Cuando esté satisfecho con la versión de evaluación, [comprar una licencia](https://purchase.aspose.com/buy?ppId=98899). Asegúrese de comprender y aceptar los términos de la licencia.
 
 {{% /alert %}}
 
