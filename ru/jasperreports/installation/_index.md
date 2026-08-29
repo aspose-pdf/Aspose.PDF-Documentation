@@ -1,6 +1,6 @@
 ---
-title: Установите Aspose.PDF for JasperReports
-linktitle: Установите Aspose.PDF for JasperReports
+title: Установка Aspose.PDF for JasperReports
+linktitle: Установка Aspose.PDF for JasperReports
 type: docs
 weight: 50
 url: /ru/jasperreports/installation/
