@@ -8,7 +8,7 @@ description: Aspose.PDF for JasperReports의 단계별 설치 가이드입니다
 lastmod: "2021-06-05"
 ---
 
-This section includes the following topics:
+이 섹션에는 다음 항목이 포함되어 있습니다:
 
 - [시스템 요구사항](/pdf/ko/jasperreports/system-requirements/)
 - [통합](/pdf/ko/jasperreports/integration-with-jasperreports/)

@@ -10,13 +10,13 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-There are some limitations while using this component.
+이 구성 요소를 사용하는 동안 몇 가지 제한 사항이 있습니다.
 
 {{% /alert %}}
 
 {{% alert color="primary" %}}
 
-## PDF Creator information
+## PDF 생성기 정보
 
 Aspose Ltd. 및 Aspose.PDF for JasperReports x.x.x가 해당 필드에 표시되므로 **Application** 및 **Producer** 필드에 대해 값을 설정할 수 없습니다.
 

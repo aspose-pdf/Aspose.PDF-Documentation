@@ -1,6 +1,6 @@
 ﻿---
 title: Aspose.PDF 평가
-linktitle: Evaluate Aspose.PDF
+linktitle: Aspose.PDF 평가
 type: docs
 weight: 70
 url: /ko/jasperreports/evaluate-aspose-pdf/
@@ -18,7 +18,7 @@ JasperReports 평가를 위해 무료 Aspose.PDF를 활용하십시오. 시간 �
 
 Aspose.PDF for JasperReports의 평가판과 유료 버전 모두 동일한 다운로드입니다. 다운로드 페이지에서 Aspose.PDF for JasperReports를 다운로드하고 설치하면 기본적으로 평가 모드에서 작동합니다.
 
-Evaluation mode injects an Evaluation Warning into exported documents. When you have purchased a license, simply apply the license and Aspose.PDF for JasperReports will then work in the licensed mode.
+평가 모드에서는 내보낸 문서에 평가 경고가 삽입됩니다. 라이선스를 구매한 경우 라이선스를 적용하기만 하면 Aspose.PDF for JasperReports가 정식 라이선스 모드로 작동합니다.
 
 **Aspose.PDF for JasperReports는 평가 모드에서 작업할 때 평가 경고를 삽입합니다.**
 

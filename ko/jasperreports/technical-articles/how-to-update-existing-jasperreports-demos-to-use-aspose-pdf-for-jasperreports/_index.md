@@ -25,13 +25,14 @@ Aspose.PDF for JasperReports에는 보고서를 PDF로 내보내기 시작하는
 2. 보관된 프로젝트를 하드 디스크의 특정 위치(예: C:\.)에 압축을 풉니다.
 3. **Aspose.PDF.JasperReports.zip**의 \lib 폴더에서 **aspose.pdf.jasperreports.jar**를 ```<InstallDir>```\jasperreports\lib로 복사합니다.
 4. 기존 데모를 업데이트하려면 ```<InstallDir>```\jasperreports\demo\samples, (where ```<InstallDir>```(JasperReports의 압축을 푼 위치)를 엽니다. 예를 들어 Aspose.PDF for JasperReports와 함께 사용하기 위해 글꼴 데모를 선택한 경우 원본 데모가 동일하게 유지되도록 복사본을 만드세요. 이 예에서는 새 폴더 이름을 **fonts.ap**으로 지정했습니다.
-Note: demos will run from ```<InstallDir>``` \jasperreports\demo\samples because the demo build scripts rely on the JasperReports' folder structure. If you change the sample folder, you have to modify build scripts.
-5. Open the **FontsApp.java** file from the src folder and add a reference to Aspose.PDF for JasperReports:
+참고: 데모 빌드 스크립트는 JasperReports의 폴더 구조에 의존하므로 데모는 ```<InstallDir>```\jasperreports\demo\samples에서 실행해야 합니다. 샘플 폴더를 변경하면 빌드 스크립트도 수정해야 합니다.
+5. src 폴더에서 **FontsApp.java** 파일을 열고 Aspose.PDF for JasperReports에 대한 참조를 추가합니다.
    import com.aspose.pdf.jr3_7_0.jasperreports.*;
    (이 튜토리얼은 JasperReports 3.5.2를 기준으로 작성되었기 때문에 jr3_7_0을 사용하고 있습니다.)
-6. Add a new string:
-   개인 정적 최종 문자열 TASK_ASPOSE_PDF = "aspose_pdf"; Aspose.PDF for JasperReports를 통해 기존 변수를 내보내기 옵션으로 사용합니다.
-7. Locate the for else if (TASK_PDF.equals(taskName)) code segment and copy the whole segment.
+6. 새 문자열을 추가합니다.
+   `private static final String TASK_ASPOSE_PDF = "aspose_pdf";`
+   이 변수는 Aspose.PDF for JasperReports를 통한 내보내기 옵션으로 사용됩니다.
+7. `else if (TASK_PDF.equals(taskName))` 코드 세그먼트를 찾아 전체 세그먼트를 복사합니다.
 8. 동일한 세그먼트 아래에 코드 조각을 붙여넣습니다.
 
 ```java
@@ -84,7 +85,7 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 ```
 
 11. 데모를 실행하려면:
-   -  Download the ANT tool from <http://ant.apache.org/bindownload.cgi>.
+   -  <http://ant.apache.org/bindownload.cgi>에서 ANT 도구를 다운로드합니다.
    - ANT 도구의 압축을 풀고 도구 설명서에 설명된 대로 환경 변수를 설정합니다.
    -  현재 디렉터리를 <InstallDir>\demo\hsqldb로 변경하고 다음 명령줄을 실행합니다.
       개미 실행 서버
