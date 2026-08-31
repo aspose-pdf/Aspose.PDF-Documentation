@@ -101,7 +101,7 @@ public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Extract Data to XML from a PDF File
+## Export form data to XML from a PDF file
 
 XML export is useful when PDF form data needs to be consumed by systems that work with structured XML data.
 
