@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /reportingservices/page-orientation/
 description: Configure page orientation for PDF reports in Aspose.PDF for Reporting Services. Customize layouts for better presentation.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

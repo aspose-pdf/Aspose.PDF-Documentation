@@ -4,7 +4,7 @@ linktitle: JasperServer 작업
 type: docs
 weight: 20
 description: Aspose.PDF를 사용하여 JasperServer로 효율적으로 작업하는 방법을 살펴보세요. 보고서를 전문적인 PDF로 쉽게 내보낼 수 있습니다.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## <ins>applicationContext.xml에서 LicenseFile 내보내기 매개변수 설정

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ko/reportingservices/setting-parameters/
 description: Aspose.PDF for Reporting Services에서 PDF 렌더링 매개변수를 설정하여 출력 결과를 정밀하게 제어하는 방법을 알아보세요.
-lastmod: "2026-07-29"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

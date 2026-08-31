@@ -4,7 +4,7 @@ linktitle: Developer Guide
 type: docs
 weight: 20
 url: /sharepoint/developer-guide/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: Developer Guide of PDF SharePoint API covers topics such as exporting items to PDF, add watermark and convert different formats to PDF and merge PDF files.
 ---
 

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /reportingservices/easy-and-lightweight-deployment/
 description: Learn how to deploy Aspose.PDF for Reporting Services with minimal effort. Lightweight setup ensures quick implementation and efficiency.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 **Aspose.PDF for Reporting Services** is a custom rendering extension for Microsoft SQL Server 2016/2017/2019/2022 Reporting Services and Power BI Report Server. Aspose.PDF for Reporting Services is provided as a single MSI installer that can install on the computers running one of the following:

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/reportingservices/setting-parameters/
 description: Узнайте, как задать параметры для рендеринга PDF в Aspose.PDF for Reporting Services и добиться точного контроля над выводом.
-lastmod: "2026-07-29"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

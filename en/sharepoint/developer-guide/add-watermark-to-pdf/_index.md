@@ -4,7 +4,7 @@ linktitle: Add Watermark to PDF
 type: docs
 weight: 20
 url: /sharepoint/add-watermark-to-pdf/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint API lets you add watermark to a PDF documents added to the library.
 ---
 

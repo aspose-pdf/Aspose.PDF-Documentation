@@ -6,7 +6,7 @@ type: docs
 weight: 70
 url: /reportingservices/license-aspose-pdf-for-reporting-services/
 description: Understand licensing options for Aspose.PDF for Reporting Services. Find out how to activate your license and unlock full functionality.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 **Aspose.PDF for Reporting Services** evaluation version provide the same set of features as present in Licensed version, except for the evaluation watermark in resultant PDF when using evaluation version. Please visit our website and download the product version and start exploring our product with complete set of features in an evaluation mode.

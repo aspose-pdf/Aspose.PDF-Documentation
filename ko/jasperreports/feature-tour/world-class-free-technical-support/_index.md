@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ko/jasperreports/world-class-free-technical-support/
 description: Aspose.PDF for JasperReports에 대한 세계적 수준의 무료 기술 지원을 즐겨보세요. 문의사항이나 기술적인 문제에 대해 전문가의 도움을 받으세요.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

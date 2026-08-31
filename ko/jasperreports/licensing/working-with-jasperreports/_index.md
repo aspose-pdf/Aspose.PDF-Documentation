@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ko/jasperreports/working-with-jasperreports/
 description: Aspose.PDF를 사용하여 JasperReports 작업을 마스터하세요. 고급 기능을 사용하여 상세 보고서를 PDF 형식으로 생성하고 내보낼 수 있습니다.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

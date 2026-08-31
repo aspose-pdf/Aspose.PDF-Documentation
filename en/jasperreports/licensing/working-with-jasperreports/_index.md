@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /jasperreports/working-with-jasperreports/
 description: Master working with JasperReports using Aspose.PDF. Create and export detailed reports in PDF format with advanced features.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

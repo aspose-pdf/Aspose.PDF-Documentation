@@ -4,7 +4,7 @@ linktitle: System Requirements
 type: docs
 weight: 10
 url: /sharepoint/system-requirements/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint API has server and client requirements, as well as the necessity for a computer running Microsoft SharePoint Server.
 ---
 

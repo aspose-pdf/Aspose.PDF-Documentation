@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /jasperreports/feature-tour/
 description: Take a feature tour of Aspose.PDF for JasperReports. Explore tools to create visually rich, well-structured PDF reports.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 This section includes the following topics:

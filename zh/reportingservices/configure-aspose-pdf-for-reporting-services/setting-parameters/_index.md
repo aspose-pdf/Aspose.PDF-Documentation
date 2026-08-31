@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /zh/reportingservices/setting-parameters/
 description: 了解如何在 Aspose.PDF for Reporting Services 中设置 PDF 渲染参数，以便精确控制输出结果。
-lastmod: "2026-07-29"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

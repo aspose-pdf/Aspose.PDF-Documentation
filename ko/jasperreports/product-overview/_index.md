@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ko/jasperreports/product-overview/
 description: Aspose.PDF for JasperReports의 개요를 확인하세요. 고급 사용자 정의 옵션을 사용하여 JasperReports를 고품질 PDF로 변환하세요.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

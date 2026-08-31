@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ko/jasperreports/supported-file-formats/
 description: Aspose.PDF for JasperReports에서 지원되는 파일 형식에 대해 알아보세요. 보고서를 PDF, XPS, DOC 등으로 내보낼 수 있습니다.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## 지원되는 로드 형식

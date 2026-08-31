@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ko/jasperreports/sample-reports-gallery/
 description: Aspose.PDF for JasperReports를 사용하여 생성된 샘플 보고서를 확인하세요. PDF 내보내기 기능이 어떻게 향상되는지 확인하세요.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

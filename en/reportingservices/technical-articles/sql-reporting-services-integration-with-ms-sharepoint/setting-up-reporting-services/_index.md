@@ -4,7 +4,7 @@ linktitle: Setting up Reporting Services
 type: docs
 weight: 20
 url: /reportingservices/setting-up-reporting-services/
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

@@ -4,7 +4,7 @@ linktitle: Why choose Aspose.PDF for Reporting Services
 type: docs
 weight: 10
 url: /reportingservices/why-choose-aspose-pdf-for-reporting-services/
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 **Aspose.PDF for Reporting Services** is a robust .NET solution which allows you to produce PDF reports using Microsoft SQL Server 2016, 2017, 2019, and 2022 Reporting Services, and Microsoft Power BI Report Server. Aspose.PDF for Reporting Services does not operate independently, but is a rendering extension for the SQL Reporting Services. Not only it supports the basic report elements such as tables, charts, images, Headers/Footers, lines etc but, it also provides the capability to add custom properties which gives its an extra leverage upon SQL Reporting Services. While using these properties, you can generate List of Contents which is not supported by Report Designer. You may have Footnotes/Endnotes in the resultant PDF document which is natively not supported by Report Builder. Another interesting feature is to have Line Arrows which is also not supported by SQL Reporting Services, but Aspose.PDF for Reporting Services can provide the capability to add arrows at the beginning or the end of the line element. Moreover, Aspose.PDF for Reporting Services provides the functionality to specify the text alignment (Justify or FullJustify) information which is not supported by Report Designer. These text modes make the resultant document better formatted and easy-readable.

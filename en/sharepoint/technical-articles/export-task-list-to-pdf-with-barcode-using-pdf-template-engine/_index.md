@@ -4,7 +4,7 @@ linktitle: Export Task List to PDF with Barcode using PDF Template Engine
 type: docs
 weight: 40
 url: /sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint API can export Task List to PDF with Barcode using PDF Template Engine.
 ---
 

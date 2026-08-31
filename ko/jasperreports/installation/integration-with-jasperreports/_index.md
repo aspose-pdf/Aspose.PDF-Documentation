@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ko/jasperreports/integration-with-jasperreports/
 description: Aspose.PDF를 JasperReports와 통합하는 방법을 알아보세요. 향상된 기능을 통해 보고서를 전문가 수준의 PDF로 원활하게 내보낼 수 있습니다.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

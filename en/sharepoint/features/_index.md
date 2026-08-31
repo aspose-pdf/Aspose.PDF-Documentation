@@ -4,7 +4,7 @@ linktitle: Features
 type: docs
 weight: 30
 url: /sharepoint/features/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint API features include Exporting to PDF and Free Technical Support.
 ---
 

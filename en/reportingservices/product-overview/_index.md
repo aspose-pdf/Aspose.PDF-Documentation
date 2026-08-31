@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /reportingservices/product-overview/
 description: An overview of Aspose.PDF for Reporting Services – a comprehensive solution for rendering SSRS reports to PDF with advanced layout features.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
