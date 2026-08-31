@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /es/jasperreports/world-class-free-technical-support/
 description: Disfrute de soporte técnico gratuito de primer nivel para Aspose.PDF for JasperReports. Obtenga ayuda de expertos para cualquier consulta o problema técnico.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
@@ -18,15 +18,15 @@ Aspose es conocido por su soporte técnico gratuito e ilimitado proporcionado di
 
 ### Foros
 
-[Aspose's Support Forums](http://www.aspose.com/Community/Forums/) is the place not only to resolve technical issues, but to participate in discussions with the vibrant and growing community of Aspose users. Currently there are over 190,000 users registered at the Aspose website.
+[Aspose's Support Forums](https://forum.aspose.com/) is the place not only to resolve technical issues, but to participate in discussions with the vibrant and growing community of Aspose users. Currently there are over 190,000 users registered at the Aspose website.
 
 ### Blogs
 
-[Aspose.Blogs](http://www.aspose.com/Community/Blogs/) is the place to look for information about the latest releases and about what Aspose developers have to say.
+[Aspose.Blogs](https://forum.aspose.com/) is the place to look for information about the latest releases and about what Aspose developers have to say.
 
 ### Need more support?
 
-Aspose offers free support to all users. For companies want that their issue will get prioritized, or who want to influence our product development road map, there are [advanced support options](http://www.aspose.com/corporate/services/support-options.aspx) like Priority Support and Enterprise Support.
+Aspose offers free support to all users. For companies want that their issue will get prioritized, or who want to influence our product development road map, there are [advanced support options](https://helpdesk.aspose.com/kb/faq/2-Developer-Business-Support-Key-Benefits-Conditions) like Priority Support and Enterprise Support.
 
 
 

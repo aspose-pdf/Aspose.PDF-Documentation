@@ -5,12 +5,12 @@ type: docs
 weight: 10
 url: /es/jasperreports/working-with-jasperreports/
 description: Domine el trabajo con JasperReports usando Aspose.PDF. Cree y exporte informes detallados en formato PDF con funciones avanzadas.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.Words para JasperReports está disponible para una evaluación gratuita y por tiempo ilimitado desde la página de descarga. Las versiones de evaluación y licencia del producto son la misma descarga.
+Aspose.PDF para JasperReports está disponible para una evaluación gratuita y por tiempo ilimitado desde la página de descarga. Las versiones de evaluación y licencia del producto son la misma descarga.
 
 Cuando esté satisfecho con la versión de evaluación, [comprar una licencia](https://purchase.aspose.com/buy?ppId=98899). Asegúrese de comprender y aceptar los términos de la licencia.
 

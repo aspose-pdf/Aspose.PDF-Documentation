@@ -7,7 +7,7 @@ weight: 120
 url: /es/jasperreports/
 description: Descubra Aspose.PDF for JasperReports. Genere informes en PDF directamente desde JasperReports con personalización avanzada.
 is_root: true
-lastmod: "2026-08-04"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

@@ -1,10 +1,10 @@
----
+﻿---
 title: Agregar código de barras a un archivo PDF en SharePoint
 linktitle: Agregar código de barras a un archivo PDF
 type: docs
 weight: 40
 url: /es/sharepoint/add-barcode-to-a-pdf-file/
-lastmod: "2026-06-18"
+lastmod: "2026-08-31"
 description: La API de PDF SharePoint le permite agregar un código de barras a un documento PDF como se muestra en la imagen a continuación.
 ---
 

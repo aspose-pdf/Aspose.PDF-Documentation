@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /es/jasperreports/supported-file-formats/
 description: Obtenga información sobre los formatos de archivo admitidos en Aspose.PDF for JasperReports. Exporte informes a PDF, XPS, DOC y más.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## Formatos de carga admitidos

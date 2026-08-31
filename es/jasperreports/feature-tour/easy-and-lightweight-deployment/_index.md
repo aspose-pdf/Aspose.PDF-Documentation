@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /es/jasperreports/easy-and-lightweight-deployment/
 description: Aprenda cómo implementar Aspose.PDF for JasperReportscon facilidad. La configuración mínima garantiza una integración rápida y un rendimiento excelente.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
