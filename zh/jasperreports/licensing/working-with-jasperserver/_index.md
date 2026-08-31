@@ -4,7 +4,7 @@ linktitle: 使用 JasperServer
 type: docs
 weight: 20
 description: 探索如何使用 Aspose.PDF 高效地使用 JasperServer。轻松将报告导出为专业 PDF。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## <ins>在applicationContext.xml中设置licenseFile Exporter参数

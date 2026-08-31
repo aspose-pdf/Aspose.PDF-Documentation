@@ -7,7 +7,7 @@ weight: 120
 url: /zh/jasperreports/
 description: 探索 JasperReports 的 Aspose.PDF。通过高级定制直接从 JasperReports 生成 PDF 报告。
 is_root: true
-lastmod: "2026-08-04"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

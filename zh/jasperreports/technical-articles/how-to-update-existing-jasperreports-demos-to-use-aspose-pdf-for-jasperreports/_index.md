@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /zh/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
 description: 了解如何更新现有的 JasperReports 演示以利用 Aspose.PDF for JasperReports 的功能。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

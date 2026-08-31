@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /zh/jasperreports/simple-and-affordable-licensing/
 description: 发现 Aspose.PDF for JasperReports 的简单且经济实惠的许可选项。以超值的价格解锁强大的 PDF 导出功能。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

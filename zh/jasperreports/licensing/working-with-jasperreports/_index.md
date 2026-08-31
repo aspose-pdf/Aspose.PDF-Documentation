@@ -5,12 +5,12 @@ type: docs
 weight: 10
 url: /zh/jasperreports/working-with-jasperreports/
 description: 精通使用 Aspose.PDF 处理 JasperReports。使用高级功能创建和导出 PDF 格式的详细报告。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.Words for JasperReports 可从下载页面免费、无时间限制地进行评估。该产品的评估版和许可版是相同的下载。
+Aspose.PDF for JasperReports 可从下载页面免费、无时间限制地进行评估。该产品的评估版和许可版是相同的下载。
 
 当您对评估版感到满意时， [购买许可证](https://purchase.aspose.com/buy?ppId=98899)。确保您理解并同意许可条款。
 

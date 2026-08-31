@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /zh/jasperreports/feature-tour/
 description: 了解 JasperReports 的 Aspose.PDF 功能。探索创建视觉效果丰富、结构良好的 PDF 报告的工具。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 本节包括以下主题：

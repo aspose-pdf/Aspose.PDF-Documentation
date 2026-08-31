@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /zh/jasperreports/integration-with-jasperserver/
 description: 了解如何将 Aspose.PDF 与 JasperServer 集成。轻松将服务器报告导出为高质量的 PDF 格式。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /zh/jasperreports/product-overview/
 description: 了解 Aspose.PDF for JasperReports 的概述。使用高级自定义选项将 JasperReports 转换为高质量 PDF。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

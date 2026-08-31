@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /zh/jasperreports/technical-articles/
 description: 阅读有关 Aspose.PDF for JasperReports 的技术文章。获取高级见解以增强 JasperReports 到 PDF 的转换。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 本节包括以下主题：

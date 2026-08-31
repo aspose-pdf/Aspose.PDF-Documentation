@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /zh/jasperreports/world-class-free-technical-support/
 description: 享受 Aspose.PDF for JasperReports 的世界级免费技术支持。就任何疑问或技术问题获取专家帮助。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
@@ -18,13 +18,13 @@ Aspose 以其产品开发人员直接提供的免费且无限制的技术支持�
 
 ### 论坛
 
-[Aspose 的支持论坛](http://www.aspose.com/Community/Forums/) 不仅可以解决技术问题，还可以参与与充满活力且不断发展的 Aspose 用户社区的讨论。目前，Aspose 网站注册用户超过 190,000 名。
+[Aspose 的支持论坛](https://forum.aspose.com/) 不仅可以解决技术问题，还可以参与与充满活力且不断发展的 Aspose 用户社区的讨论。目前，Aspose 网站注册用户超过 190,000 名。
 
 ### 博客
 
-[Aspose.博客](http://www.aspose.com/Community/Blogs/) 是查找有关最新版本以及 Aspose 开发人员的意见的信息的地方。
+[Aspose.博客](https://forum.aspose.com/) 是查找有关最新版本以及 Aspose 开发人员的意见的信息的地方。
 
 ### 需要更多支持？
 
-Aspose 为所有用户提供免费支持。对于希望他们的问题得到优先考虑的公司，或者想要影响我们的产品开发路线图的公司，有 [高级支持选项](http://www.aspose.com/corporate/services/support-options.aspx) 例如优先支持和企业支持。
+Aspose 为所有用户提供免费支持。对于希望他们的问题得到优先考虑的公司，或者想要影响我们的产品开发路线图的公司，有 [高级支持选项](https://helpdesk.aspose.com/kb/faq/2-Developer-Business-Support-Key-Benefits-Conditions) 例如优先支持和企业支持。
 

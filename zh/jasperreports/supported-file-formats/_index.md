@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /zh/jasperreports/supported-file-formats/
 description: Learn about supported file formats in Aspose.PDF for JasperReports. Export reports to PDF, XPS, DOC, and more.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## 支持的加载格式

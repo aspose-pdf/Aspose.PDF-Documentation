@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /zh/jasperreports/sample-reports-gallery/
 description: 查看使用 Aspose.PDF for JasperReports 创建的示例报告。了解它如何增强 PDF 导出功能。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

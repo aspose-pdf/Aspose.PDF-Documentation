@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /zh/jasperreports/api-limitations/
 description: 了解 Aspose.PDF for JasperReports 的 API 限制。查找详细信息以优化与您的报告的集成。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
