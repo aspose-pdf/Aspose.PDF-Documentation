@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/jasperreports/sample-reports-gallery/
 description: Просмотрите примеры отчетов, созданных с помощью Aspose.PDF for JasperReports. Посмотрите, как это расширяет возможности экспорта PDF.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

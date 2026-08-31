@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/jasperreports/simple-and-affordable-licensing/
 description: Откройте для себя простые и доступные варианты лицензирования Aspose.PDF for JasperReports. Откройте для себя мощные функции экспорта PDF по выгодной цене.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

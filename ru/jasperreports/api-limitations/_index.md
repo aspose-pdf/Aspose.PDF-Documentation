@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ru/jasperreports/api-limitations/
 description: Ознакомьтесь с ограничениями API Aspose.PDF for JasperReports. Найдите подробную информацию для оптимизации интеграции с вашими отчетами.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

@@ -7,7 +7,7 @@ weight: 120
 url: /ru/jasperreports/
 description: Откройте для себя Aspose.PDF for JasperReports. Создавайте отчеты в формате PDF непосредственно из JasperReports с расширенными возможностями настройки.
 is_root: true
-lastmod: "2026-08-04"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

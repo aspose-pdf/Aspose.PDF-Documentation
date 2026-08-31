@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ru/jasperreports/installation/
 description: Пошаговое руководство по установке Aspose.PDF for JasperReports. Начните создавать профессиональные PDF-файлы с помощью JasperReports уже сегодня.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 В этот раздел включены следующие темы:

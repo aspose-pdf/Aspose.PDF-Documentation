@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/jasperreports/easy-and-lightweight-deployment/
 description: Узнайте, как легко развернуть Aspose.PDF for JasperReports. Минимальная настройка обеспечивает быструю интеграцию и отличную производительность.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

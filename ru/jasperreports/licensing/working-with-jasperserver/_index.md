@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/jasperreports/working-with-jasperserver/
 description: Узнайте, как эффективно работать с JasperServer с помощью Aspose.PDF. Легко экспортируйте отчеты в профессиональные PDF-файлы.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## Задайте параметр `LicenseFile Exporter` в `applicationContext.xml`
