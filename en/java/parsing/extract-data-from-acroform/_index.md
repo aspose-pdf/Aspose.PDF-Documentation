@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/extract-data-from-acroform/
 description: Aspose.PDF makes it easy to extract form field data from PDF files. Learn how to extract data from AcroForms and save it into JSON, XML, or FDF format.
-lastmod: "2026-06-16"
+lastmod: "2026-08-31"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -44,7 +44,7 @@ public static void extractFormFields(Path inputFile) {
 }
 ```
 
-## Retrieve form field value by title
+## Retrieve form field value by Name
 
 When you know the exact field name defined in the PDF form, you can retrieve its value directly with `getField(fieldName)`
 without iterating through the entire field collection.
