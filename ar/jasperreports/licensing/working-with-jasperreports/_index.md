@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/jasperreports/working-with-jasperreports/
 description: إتقان العمل مع JasperReports باستخدام Aspose.PDF. قم بإنشاء وتصدير تقارير مفصلة بتنسيق PDF مع ميزات متقدمة.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

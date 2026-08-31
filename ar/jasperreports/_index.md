@@ -7,7 +7,7 @@ weight: 120
 url: /ar/jasperreports/
 description: اكتشف Aspose.PDF for JasperReports. قم بإنشاء تقارير PDF مباشرة من JasperReports مع التخصيص المتقدم.
 is_root: true
-lastmod: "2026-08-04"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

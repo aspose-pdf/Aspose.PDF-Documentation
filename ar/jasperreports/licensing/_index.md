@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/jasperreports/licensing/
 description: تعرف على خيارات الترخيص لـ Aspose.PDF for JasperReports. قم بتنشيط الترخيص الخاص بك للوصول إلى الوظائف والميزات الكاملة.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 **يحتوي هذا القسم على المواضيع التالية:**

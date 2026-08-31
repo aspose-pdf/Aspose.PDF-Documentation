@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ar/jasperreports/api-limitations/
 description: فهم قيود واجهة برمجة التطبيقات الخاصة بـ Aspose.PDF for JasperReports. ابحث عن التفاصيل لتحسين التكامل مع تقاريرك.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

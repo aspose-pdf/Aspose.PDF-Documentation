@@ -4,7 +4,7 @@ linktitle: العمل مع جاسبرسيرفر
 type: docs
 weight: 20
 description: اكتشف كيفية العمل بكفاءة مع JasperServer باستخدام Aspose.PDF. تصدير التقارير إلى ملفات PDF احترافية بسهولة.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## <ins> قم بتعيين معلمة مُصدِّر ملف الترخيص في applicationContext.xml

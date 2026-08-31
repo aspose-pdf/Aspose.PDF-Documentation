@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/jasperreports/installation/
 description: دليل التثبيت خطوة بخطوة لـ Aspose.PDF for JasperReports. ابدأ في إنشاء ملفات PDF احترافية من JasperReports اليوم.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 يتضمن هذا القسم المواضيع التالية:

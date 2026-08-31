@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/jasperreports/product-overview/
 description: احصل على نظرة عامة على Aspose.PDF for JasperReports. قم بتحويل JasperReports إلى ملفات PDF عالية الجودة مع خيارات التخصيص المتقدمة.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

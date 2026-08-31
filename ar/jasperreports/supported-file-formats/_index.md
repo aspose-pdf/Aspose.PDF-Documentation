@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/jasperreports/supported-file-formats/
 description: تعرف على تنسيقات الملفات المدعومة في Aspose.PDF for JasperReports. تصدير التقارير إلى PDF وXPS وDOC والمزيد.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## تنسيقات التحميل المدعومة

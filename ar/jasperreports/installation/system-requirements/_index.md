@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/jasperreports/system-requirements/
 description: تعرف على متطلبات النظام لـ Aspose.PDF for JasperReports. ضمان التوافق والأداء الأمثل مع بيئتك.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

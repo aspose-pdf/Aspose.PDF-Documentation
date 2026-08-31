@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/jasperreports/evaluate-aspose-pdf/
 description: قم بتقييم Aspose.PDF for JasperReports مجانًا. استمتع بإمكانيات تصدير PDF المتقدمة قبل الالتزام.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

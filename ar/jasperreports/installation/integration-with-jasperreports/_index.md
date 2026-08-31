@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/jasperreports/integration-with-jasperreports/
 description: اكتشف كيفية دمج Aspose.PDF مع JasperReports. قم بتصدير التقارير بسلاسة إلى ملفات PDF احترافية مع وظائف محسنة.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

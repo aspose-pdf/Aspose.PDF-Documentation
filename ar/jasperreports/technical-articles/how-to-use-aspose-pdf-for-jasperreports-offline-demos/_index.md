@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/
 description: استكشف العروض التوضيحية غير المتصلة بالإنترنت لـ Aspose.PDF for JasperReports. تعلم التطبيقات والميزات العملية بطريقة عملية.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
