@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /id/jasperreports/supported-file-formats/
 description: Pelajari tentang format file yang didukung di Aspose.PDF for JasperReports. Ekspor laporan ke PDF, XPS, DOC, dan lainnya.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## Format Beban yang Didukung

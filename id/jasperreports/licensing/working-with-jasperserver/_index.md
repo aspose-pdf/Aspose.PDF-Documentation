@@ -4,7 +4,7 @@ linktitle: Bekerja dengan JasperServer
 type: docs
 weight: 20
 description: Jelajahi cara bekerja secara efisien dengan JasperServer menggunakan Aspose.PDF. Ekspor laporan ke PDF profesional dengan mudah.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## <ins>Tetapkan Parameter Pengekspor LicenseFile di applicationContext.xml

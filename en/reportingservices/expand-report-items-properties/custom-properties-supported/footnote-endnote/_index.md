@@ -1,11 +1,11 @@
----
+﻿---
 title: Footnote Endnote
 linktitle: Footnote Endnote
 type: docs
 weight: 30
 url: /reportingservices/footnote-endnote/
 description: Add footnotes and endnotes to your PDF reports with Aspose.PDF for Reporting Services. Provide detailed document references.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

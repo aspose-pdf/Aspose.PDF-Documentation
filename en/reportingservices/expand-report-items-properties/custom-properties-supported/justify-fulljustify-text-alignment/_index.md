@@ -1,11 +1,11 @@
----
+﻿---
 title: Justify FullJustify Text Alignment
 linktitle: Justify FullJustify Text Alignment
 type: docs
 weight: 40
 url: /reportingservices/justify-fulljustify-text-alignment/
 description: Achieve perfect text alignment in PDF reports with Aspose.PDF for Reporting Services. Support for justify and full justify options.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

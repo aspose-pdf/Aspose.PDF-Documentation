@@ -7,7 +7,7 @@ weight: 120
 url: /id/jasperreports/
 description: Temukan Aspose.PDF for JasperReports. Hasilkan laporan PDF langsung dari JasperReports dengan penyesuaian tingkat lanjut.
 is_root: true
-lastmod: "2026-08-04"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

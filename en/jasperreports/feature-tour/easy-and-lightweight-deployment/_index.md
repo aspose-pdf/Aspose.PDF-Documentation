@@ -1,11 +1,11 @@
----
+﻿---
 title: Easy and Lightweight Deployment
 linktitle: Easy and Lightweight Deployment
 type: docs
 weight: 10
 url: /jasperreports/easy-and-lightweight-deployment/
 description: Learn how to deploy Aspose.PDF for JasperReports with ease. Minimal setup ensures fast integration and excellent performance.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

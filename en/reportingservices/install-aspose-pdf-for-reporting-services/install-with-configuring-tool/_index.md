@@ -1,11 +1,11 @@
----
+﻿---
 title: Install with Configuring Tool
 linktitle: Install with Configuring Tool
 type: docs
 weight: 30
 url: /reportingservices/install-with-configuring-tool/
 description: Step-by-step guide to installing Aspose.PDF for Reporting Services using the configuration tool for seamless integration.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 Aspose.PDF for Reporting Services Configuring Tool can help you to configure the Aspose.PDF for Reporting Services extension for any of the supported Report Server (RS) versions. Currently it supports RS2016, RS2017, RS2019, RS2022, and Power BI Report Server. The Configuring Tool requires .NET Framework 4.8.

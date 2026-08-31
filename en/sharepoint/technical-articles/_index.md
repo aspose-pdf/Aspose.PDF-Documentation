@@ -1,10 +1,10 @@
----
+﻿---
 title: Technical Articles - SharePoint PDF Library
 linktitle: Technical Articles
 type: docs
 weight: 30
 url: /sharepoint/technical-articles/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: Technical Articles of PDF SharePoint API cover topics such as creating, exporting and saving SharePoint Wiki page and XML file to PDF.
 ---
 

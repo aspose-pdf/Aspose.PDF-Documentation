@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /id/jasperreports/working-with-jasperreports/
 description: Kuasai bekerja dengan JasperReports menggunakan Aspose.PDF. Buat dan ekspor laporan terperinci dalam format PDF dengan fitur-fitur canggih.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

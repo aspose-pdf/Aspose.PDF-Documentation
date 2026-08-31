@@ -1,10 +1,10 @@
----
+﻿---
 title: Supported File Formats
 linktitle: Supported File Formats
 type: docs
 weight: 20
 url: /sharepoint/supported-file-formats/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint API can load and save file formats that include PDF and PDF/A.
 ---
 

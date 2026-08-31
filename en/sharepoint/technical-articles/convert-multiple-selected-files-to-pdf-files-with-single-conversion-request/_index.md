@@ -1,10 +1,10 @@
----
+﻿---
 title: Convert multiple selected files to PDF files with single Conversion Request
 linktitle: Convert multiple selected files to PDF files with single Conversion Request
 type: docs
 weight: 50
 url: /sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint Library enables you to convert multiple selected files to PDF files with a single conversion operation.
 ---
 

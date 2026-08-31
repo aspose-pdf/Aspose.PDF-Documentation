@@ -1,11 +1,11 @@
----
+﻿---
 title: Technical Articles
 linktitle: Technical Articles
 type: docs
 weight: 90
 url: /jasperreports/technical-articles/
 description: Read technical articles about Aspose.PDF for JasperReports. Get advanced insights to enhance your JasperReports to PDF conversions.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 This section includes the following topics:

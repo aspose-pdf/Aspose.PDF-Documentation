@@ -1,11 +1,11 @@
----
+﻿---
 title: Definir Parâmetros
 linktitle: Definir Parâmetros
 type: docs
 weight: 10
 url: /pt/reportingservices/setting-parameters/
 description: Descubra como definir parâmetros para a renderização de PDF no Aspose.PDF for Reporting Services e obter controle preciso sobre a saída.
-lastmod: "2026-07-29"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

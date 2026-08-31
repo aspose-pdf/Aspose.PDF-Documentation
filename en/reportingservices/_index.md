@@ -1,4 +1,4 @@
----
+﻿---
 title: Documentation
 linktitle:  Aspose.PDF for Reporting Services
 second_title: Aspose.PDF for Reporting Services
@@ -7,7 +7,7 @@ weight: 120
 url: /reportingservices/
 description: Discover Aspose.PDF for Reporting Services. Generate PDF reports directly from SQL Server Reporting Services (SSRS) with advanced customization.
 is_root: true
-lastmod: "2024-05-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

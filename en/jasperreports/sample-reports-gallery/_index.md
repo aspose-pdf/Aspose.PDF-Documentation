@@ -1,11 +1,11 @@
----
+﻿---
 title: Sample Reports Gallery
 linktitle: Sample Reports Gallery
 type: docs
 weight: 40
 url: /jasperreports/sample-reports-gallery/
 description: View sample reports created using Aspose.PDF for JasperReports. See how it enhances PDF export capabilities.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

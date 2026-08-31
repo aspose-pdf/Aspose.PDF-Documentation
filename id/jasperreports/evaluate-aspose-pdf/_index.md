@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /id/jasperreports/evaluate-aspose-pdf/
 description: Evaluasi Aspose.PDF for JasperReports secara gratis. Rasakan kemampuan ekspor PDF tingkat lanjut sebelum melakukan.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

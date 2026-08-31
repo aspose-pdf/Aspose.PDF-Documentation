@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /id/jasperreports/feature-tour/
 description: Ikuti tur fitur Aspose.PDF for JasperReports. Jelajahi alat untuk membuat laporan PDF yang kaya secara visual dan terstruktur dengan baik.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 Bagian ini mencakup topik-topik berikut:
