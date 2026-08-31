@@ -4,7 +4,7 @@ linktitle: Guia do Desenvolvedor
 type: docs
 weight: 20
 url: /pt/sharepoint/developer-guide/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: O Guia do Desenvolvedor da API PDF SharePoint aborda tópicos como exportar itens para PDF, adicionar marca d'água e converter diferentes formatos para PDF e mesclar arquivos PDF.
 ---
 

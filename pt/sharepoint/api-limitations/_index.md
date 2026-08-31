@@ -4,7 +4,7 @@ linktitle: Limitações da API
 type: docs
 weight: 70
 url: /pt/sharepoint/api-limitations/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: O artigo explica algumas das limitações da API PDF SharePoint.
 ---
 

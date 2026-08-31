@@ -4,7 +4,7 @@ linktitle: Desinstalando a Licença Aspose.Pdf for SharePoint
 type: docs
 weight: 30
 url: /pt/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: Por favor, siga as etapas mencionadas neste artigo para desinstalar a Licença PDF SharePoint API.
 ---
 

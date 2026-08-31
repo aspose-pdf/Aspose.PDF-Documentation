@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /pt/python-net/basic-text-extraction/
 description: Aprenda como extrair texto de documentos PDF usando Aspose.PDF for Python — de todas as páginas de uma vez ou de uma página específica.
-lastmod: "2026-05-18"
+lastmod: "2026-08-31"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

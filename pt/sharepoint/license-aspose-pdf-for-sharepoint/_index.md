@@ -4,7 +4,7 @@ linktitle: Licença
 type: docs
 weight: 60
 url: /pt/sharepoint/license-aspose-pdf-for-sharepoint/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: Saiba como instalar, testar e desinstalar a licença da API PDF SharePoint.
 ---
 

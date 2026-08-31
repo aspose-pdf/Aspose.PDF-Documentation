@@ -4,7 +4,7 @@ linktitle: Adicionar marca d'água ao PDF
 type: docs
 weight: 20
 url: /pt/sharepoint/add-watermark-to-pdf/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: A API PDF SharePoint permite que você adicione marca d'água a documentos PDF adicionados à biblioteca.
 ---
 

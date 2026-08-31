@@ -4,7 +4,7 @@ linktitle: Recursos
 type: docs
 weight: 30
 url: /pt/sharepoint/features/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: Os recursos da API PDF SharePoint incluem Exportação para PDF e Suporte Técnico Gratuito.
 ---
 

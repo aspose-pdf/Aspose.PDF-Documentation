@@ -4,7 +4,7 @@ linktitle: Formatos de Arquivo Compatíveis
 type: docs
 weight: 20
 url: /pt/sharepoint/supported-file-formats/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: A API PDF SharePoint pode carregar e salvar formatos de arquivo que incluem PDF e PDF/A.
 ---
 

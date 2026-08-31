@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /pt/jasperreports/technical-articles/
 description: Leia artigos técnicos sobre Aspose.PDF for JasperReports. Obtenha insights avançados para aprimorar suas conversões de JasperReports para PDF.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 Esta seção inclui os seguintes tópicos:
