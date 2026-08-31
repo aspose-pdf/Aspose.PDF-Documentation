@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /fr/jasperreports/world-class-free-technical-support/
 description: Bénéficiez d'un support technique gratuit de classe mondiale pour Aspose.PDF for JasperReports. Obtenez l’aide d’un expert pour toute question ou problème technique.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
@@ -18,13 +18,13 @@ Aspose est réputé pour son support technique gratuit et illimité fourni direc
 
 ### Forums
 
-[Forums d'assistance d'Aspose](http://www.aspose.com/Community/Forums/) est l'endroit idéal non seulement pour résoudre les problèmes techniques, mais aussi pour participer aux discussions avec la communauté dynamique et croissante des utilisateurs d'Aspose. Actuellement, plus de 190 000 utilisateurs sont enregistrés sur le site Web Aspose.
+[Forums d'assistance d'Aspose](https://forum.aspose.com/) est l'endroit idéal non seulement pour résoudre les problèmes techniques, mais aussi pour participer aux discussions avec la communauté dynamique et croissante des utilisateurs d'Aspose. Actuellement, plus de 190 000 utilisateurs sont enregistrés sur le site Web Aspose.
 
 ### Blogues
 
-[Aspose.Blogs](http://www.aspose.com/Community/Blogs/) est l'endroit idéal pour rechercher des informations sur les dernières versions et sur ce que les développeurs Aspose ont à dire.
+[Aspose.Blogs](https://forum.aspose.com/) est l'endroit idéal pour rechercher des informations sur les dernières versions et sur ce que les développeurs Aspose ont à dire.
 
 ### Besoin de plus de soutien ?
 
-Aspose offre une assistance gratuite à tous les utilisateurs. Pour les entreprises qui souhaitent que leur problème soit prioritaire ou qui souhaitent influencer notre feuille de route de développement de produits, il existe [options d'assistance avancées](http://www.aspose.com/corporate/services/support-options.aspx) comme le support prioritaire et le support entreprise.
+Aspose offre une assistance gratuite à tous les utilisateurs. Pour les entreprises qui souhaitent que leur problème soit prioritaire ou qui souhaitent influencer notre feuille de route de développement de produits, il existe [options d'assistance avancées](https://helpdesk.aspose.com/kb/faq/2-Developer-Business-Support-Key-Benefits-Conditions) comme le support prioritaire et le support entreprise.
 

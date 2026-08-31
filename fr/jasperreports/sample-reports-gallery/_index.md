@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /fr/jasperreports/sample-reports-gallery/
 description: Consultez des exemples de rapports créés à l'aide d'Aspose.PDF for JasperReports. Découvrez comment il améliore les capacités d'exportation PDF.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

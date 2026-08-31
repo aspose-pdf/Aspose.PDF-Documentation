@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /fr/jasperreports/licensing/
 description: Découvrez les options de licence pour Aspose.PDF for JasperReports. Activez votre licence pour accéder à toutes les fonctionnalités et fonctionnalités.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 **Cette section comprend les sujets suivants :**

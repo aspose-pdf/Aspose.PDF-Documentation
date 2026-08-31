@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /fr/jasperreports/evaluate-aspose-pdf/
 description: Évaluez Aspose.PDF for JasperReports gratuitement. Découvrez les capacités avancées d’exportation PDF avant de vous engager.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
