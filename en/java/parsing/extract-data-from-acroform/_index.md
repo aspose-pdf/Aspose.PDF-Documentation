@@ -13,7 +13,8 @@ TechArticle: true
 AlternativeHeadline: How to Extract Data from AcroForm via Java
 Abstract: This article explains how to extract and export AcroForm data from PDF files with Aspose.PDF for Java. It covers reading all form fields, retrieving a field value by name, exporting field data to JSON, and writing form data to XML, FDF, and XFDF formats.
 ---
-## Extract all form fields
+
+## Extract form fields from PDF document
 
 Use `com.aspose.pdf.facades.Form` to read field names and values without working through the full document object model.
 
@@ -43,7 +44,10 @@ public static void extractFormFields(Path inputFile) {
 }
 ```
 
-## Retrieve a field value by name
+## Retrieve form field value by title
+
+When you know the exact field name defined in the PDF form, you can retrieve its value directly with `getField(fieldName)`
+without iterating through the entire field collection.
 
 1. Open the source PDF form with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
 1. Call `getField(fieldName)` with the requested field name to read its current value from the AcroForm data.
@@ -62,7 +66,10 @@ public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
 }
 ```
 
-## Export form fields to JSON
+## Extract form fields from PDF document to JSON
+
+Form field values can also be extracted and stored as JSON. This is useful when PDF form data needs to be consumed by
+web applications, APIs, or other systems that work with JSON.
 
 1. Open the source PDF form with the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
 1. Call `getFieldNames()` to collect all available field identifiers from the AcroForm.
@@ -94,7 +101,9 @@ public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Export form data to XML, FDF, and XFDF
+## Extract Data to XML from a PDF File
+
+XML export is useful when PDF form data needs to be consumed by systems that work with structured XML data.
 
 1. Create the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
 1. Open an output stream for the XML file and bind the source PDF to the facade with `bindPdf(...)`.
@@ -113,6 +122,10 @@ public static void extractDataToXml(Path inputFile, Path outputFile) throws Exce
 }
 ```
 
+## Export Data to FDF from a PDF File
+
+FDF (Forms Data Format) is commonly used to exchange AcroForm field data independently of the PDF document.
+
 1. Create the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
 1. Open an output stream for the FDF file and bind the source PDF to the facade with `bindPdf(...)`.
 1. Call `exportFdf(stream)` so the form field data is serialized in FDF format.
@@ -129,6 +142,10 @@ public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exce
     }
 }
 ```
+
+## Export Data to XFDF from a PDF File
+
+XFDF is the XML-based representation of Forms Data Format and is convenient for exchanging form data with systems that work with XML.
 
 1. Create the [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade without binding a document yet.
 1. Open an output stream for the XFDF file and bind the source PDF to the facade with `bindPdf(...)`.
