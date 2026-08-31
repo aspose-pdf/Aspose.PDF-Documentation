@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 {{% alert color="primary" %}}
 
-Aspose.Words untuk JasperReports tersedia gratis, evaluasi tanpa batas waktu dari halaman unduh. Evaluasi dan versi berlisensi produk adalah unduhan yang sama.
+Aspose.PDF untuk JasperReports tersedia gratis, evaluasi tanpa batas waktu dari halaman unduh. Evaluasi dan versi berlisensi produk adalah unduhan yang sama.
 
 Jika Anda puas dengan versi evaluasinya, [membeli lisensi](https://purchase.aspose.com/buy?ppId=98899). Pastikan Anda memahami dan menyetujui persyaratan lisensi.
 
