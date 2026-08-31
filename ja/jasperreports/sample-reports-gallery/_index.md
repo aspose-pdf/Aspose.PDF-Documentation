@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ja/jasperreports/sample-reports-gallery/
 description: Aspose.PDF for JasperReports を使用して作成されたサンプル レポートを表示します。 PDF エクスポート機能がどのように強化されるかをご覧ください。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

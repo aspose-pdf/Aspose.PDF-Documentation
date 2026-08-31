@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ja/jasperreports/installation/
 description: Aspose.PDF for JasperReports のステップバイステップのインストール ガイド。 JasperReports からプロフェッショナルな PDF の作成を今すぐ始めましょう。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 このセクションには次のトピックが含まれています。

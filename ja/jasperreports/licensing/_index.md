@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ja/jasperreports/licensing/
 description: Aspose.PDF for JasperReports のライセンス オプションについて説明します。ライセンスをアクティベートすると、すべての機能にアクセスできます。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 **This section includes the following topics:**

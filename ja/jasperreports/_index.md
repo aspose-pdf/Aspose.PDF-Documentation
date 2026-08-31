@@ -7,7 +7,7 @@ weight: 120
 url: /ja/jasperreports/
 description: Aspose.PDF for JasperReports を発見してください。高度なカスタマイズを使用して、JasperReports から PDF レポートを直接生成します。
 is_root: true
-lastmod: "2026-08-04"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

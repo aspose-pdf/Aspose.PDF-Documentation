@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ja/jasperreports/integration-with-jasperserver/
 description: Aspose.PDF を JasperServer と統合する方法を学びます。サーバー レポートを高品質の PDF 形式で簡単にエクスポートします。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

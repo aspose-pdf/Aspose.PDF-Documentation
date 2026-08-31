@@ -4,7 +4,7 @@ linktitle: Working with JasperServer
 type: docs
 weight: 20
 description: Aspose.PDF を使用して JasperServer を効率的に操作する方法を検討します。レポートをプロフェッショナルな PDF に簡単にエクスポートします。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 ## <ins>licenseFile Exporter パラメータを applicationContext.xml に設定します

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ja/jasperreports/system-requirements/
 description: Aspose.PDF for JasperReports のシステム要件について説明します。環境との互換性と最適なパフォーマンスを確保します。
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
