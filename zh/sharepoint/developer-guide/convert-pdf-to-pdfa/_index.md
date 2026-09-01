@@ -4,26 +4,26 @@ linktitle: 将 PDF 转换为 PDFA
 type: docs
 weight: 70
 url: /zh/sharepoint/convert-pdf-to-pdfa/
-lastmod: "2026-06-18"
+lastmod: "2026-08-13"
 description: 使用 PDF SharePoint API，您可以将 PDF 转换为 PDFA 格式。目前仅支持 PDF/A-1b 标准。
 ---
 
 {{% alert color="primary" %}}
 
-在 [Aspose.PDF for SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/aspose.pdf-for-sharepoint-2.0.0/) 在此发布中，我们添加了创建符合 PDFA 标准的 PDF 的支持。
+在 [Aspose.PDF for SharePoint 2.0](https://releases.aspose.com/pdf/sharepoint/new-releases/Aspose.PDF-for-sharepoint-2.0.0/) 版本中，我们添加了对创建 PDFA 兼容 PDF 的支持。
 
 目前 Aspose.PDF for SharePoint 仅支持 PDFA1b 标准。
 
 {{% /alert %}}
 
-## **创建符合 PDFA 标准的文档**
+## 创建 PDFA 兼容文档
 
-按以下步骤将 PDF 从 SharePoint 文档库转换为 PDFA：
+将 PDF 从 SharePoint 文档库转换为 PDFA，如下所示：
 
-1. 在 ECB 菜单中点击 **Convert to PDF**。
+1. 单击 ECB 菜单中的 **转换为 PDF**。
 
-![todo:image_alt_text](convert-pdf-to-pdfa_1.png)
+![將 PDF 轉換為 PDFA - 範例 1](convert-pdf-to-pdfa_1.png)
 
 2. 下载并保存生成的 PDF 文件。
 
-![todo:image_alt_text](convert-pdf-to-pdfa_2.png)
+![將 PDF 轉換為 PDFA - 範例 2](convert-pdf-to-pdfa_2.png)
