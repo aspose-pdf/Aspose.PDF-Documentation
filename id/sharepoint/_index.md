@@ -6,30 +6,30 @@ type: docs
 weight: 110
 url: /id/sharepoint/
 is_root: true
-lastmod: "2026-06-18"
+lastmod: "2026-08-07"
 description: PDF SharePoint adalah solusi yang memungkinkan pengguna untuk mengekspor daftar, item daftar, dan halaman Wiki SharePoint ke format file PDF.
 ---
 
 {{% alert color="primary" %}}
 
-![Logo Aspose.PDF for SharePoint](aspose_pdf-for-sharepoint.png)
+![logo Aspose.PDF for SharePoint](aspose_pdf-for-sharepoint.png)
 
-**Selamat datang di Aspose.PDF for SharePoint**
+## Selamat datang di Aspose.PDF for SharePoint
 
-Aspose.PDF untuk SharePoint adalah solusi yang memungkinkan pengguna mengekspor daftar, item daftar, dan halaman Wiki SharePoint ke format file PDF.
+Aspose.PDF for SharePoint adalah solusi yang memungkinkan pengguna mengekspor daftar, item daftar, dan halaman Wiki SharePoint ke format file PDF.
 
 {{% /alert %}}
 
-## **Sumber Daya Aspose.PDF for SharePoint**
+## Sumber Daya Aspose.PDF for SharePoint
 
-Berikut adalah tautan ke beberapa sumber berguna yang mungkin Anda perlukan untuk menyelesaikan tugas Anda.
+Berikut adalah tautan ke beberapa sumber daya berguna yang mungkin Anda perlukan untuk menyelesaikan tugas Anda.
 
-- [Aspose.PDF for SharePoint Gambaran Produk](/pdf/id/sharepoint/product-overview/) 
-- [Aspose.PDF for SharePoint Format File yang Didukung](/pdf/id/sharepoint/supported-file-formats/)
-- [Aspose.PDF for SharePoint Fitur](/pdf/id/sharepoint/features/)
-- [Aspose.PDF for SharePoint Catatan Rilis](https://releases.aspose.com/pdf/sharepoint/release-notes/)
+- [Gambaran Produk Aspose.PDF for SharePoint](/pdf/id/sharepoint/product-overview/) 
+- [Format File yang Didukung Aspose.PDF for SharePoint](/pdf/id/sharepoint/supported-file-formats/)
+- [Fitur Aspose.PDF for SharePoint](/pdf/id/sharepoint/features/)
+- [Catatan Rilis Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 - [Unduh Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/)
-- [Instal Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/install-aspose-pdf-for-sharepoint/)
-- [Evaluasi Aspose.Pdf ](/pdf/id/sharepoint/evaluate-aspose-pdf/)
-- [Lisensikan Aspose.Pdf untuk SharePoint](/pdf/id/sharepoint/license-aspose-pdf-for-sharepoint/)
-- [ Batasan API](/pdf/id/sharepoint/api-limitations/)
+- [Instal Aspose.PDF for SharePoint](/pdf/id/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Evaluasi Aspose.PDF ](/pdf/id/sharepoint/evaluate-aspose-pdf/)
+- [Lisensi Aspose.PDF for SharePoint](/pdf/id/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Batasan API](/pdf/id/sharepoint/api-limitations/)

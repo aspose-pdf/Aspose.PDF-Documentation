@@ -17,7 +17,7 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 
 **Be sure to understand what service account you are using for Reporting Services. If we run into issues, it may be related to the service account you are using. The default is Network Service. When we go to deploy new builds, we always use Domain Accounts, because that is where we are likely to hit issues. For this instance of server, we have used a Domain Account called RSService.**
 
-![todo:image_alt_text](setting-up-reporting-services_1.png)
+![Set Up](setting-up-reporting-services_1.png)
 
 **Image1:- Setting-up service account**
 
@@ -26,11 +26,11 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 {{% alert color="primary" %}}
 
 **We will need to configure the Web Service URL. This is the ReportServer virtual directory (vdir) that hosts the Web Services Reporting Services uses, and what SharePoint will communicate with. Unless you want to customize the properties of the vdir (i.e. SSL, ports, host headers, etc…), you should just be able to click Apply here and be good to go.**
-![todo:image_alt_text](setting-up-reporting-services_2.png)
+![Web Service URL](setting-up-reporting-services_2.png)
 
 **Image2:- Setting up Web Service URL Once Web service URL have been setup, you should able to see the following results**
 
-![todo:image_alt_text](setting-up-reporting-services_3.png)
+![Web Service URL Results](setting-up-reporting-services_3.png)
 
 **Image3:- Successful setup of Web service URL**
 {{% /alert %}}
@@ -42,22 +42,22 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 {{% alert color="primary" %}}
 **The other important step with this is to make sure that you choose SharePoint Integrated for the database type. Once this choice is made, it cannot be changed.**
 
-![todo:image_alt_text](setting-up-reporting-services_4.png)
+![Creating Report Server Database](setting-up-reporting-services_4.png)
 
 **Image4:- Creating report server database**
 
-![todo:image_alt_text](setting-up-reporting-services_5.png)
+![Setting up Database Server and Authentication Type](setting-up-reporting-services_5.png)
 
 **Image5:- Setting up database server and authentication type**
 
-![todo:image_alt_text](setting-up-reporting-services_6.png)
+![Setting up Database Name and Mode](setting-up-reporting-services_6.png)
 
 **Image6:- Setting up database name and Mode**
 {{% /alert %}}
 
 **For the credentials, this is how the Report Server will communicate with the SQL Server. Whatever account you select, will be given certain rights within the Catalog database as well as a few of the system databases via the RSExecRole. MSDB is one of these database for Subscription usage as we make use of SQL Agent.**
 
-![todo:image_alt_text](setting-up-reporting-services_7.png)
+![Setting up Report Server database credentials](setting-up-reporting-services_7.png)
 
 **Image7:- Setting up Report Server database credentials**
 
@@ -65,11 +65,11 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 
 **Once database credentials are specified, we should be able to get the results as specified below.**
 
-![todo:image_alt_text](setting-up-reporting-services_8.png)
+![Report Server database creation progress](setting-up-reporting-services_8.png)
 
 **Image8:- Report Server database creation progress**
 
-![todo:image_alt_text](setting-up-reporting-services_9.png)
+![Report Server database completion summary](setting-up-reporting-services_9.png)
 
 **Image9:- Report Server database completion summary**
 {{% /alert %}}
@@ -83,7 +83,7 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 {{% alert color="primary" %}}
 **Backup your Encryption Keys and make sure you know where you keep them. If you get into a situation where you need to migrate the Database or restore it, you will need these.**
 
-![todo:image_alt_text](setting-up-reporting-services_10.png)
+![Report Server Encryption key backup](setting-up-reporting-services_10.png)
 
 **Image10:- Report Server Encryption key backup**
 {{% /alert %}}
@@ -91,7 +91,7 @@ Our first stop on the Reporting Services Server is the Reporting Services Config
 {{% alert color="primary" %}}
 **Congratulation! We have successfully configured Reporting Services using Configuration Manager. If you browse to the URL on the Web Service URL tab, it should show something similar to the following.**
 
-![todo:image_alt_text](setting-up-reporting-services_11.png)
+![Report Server access after installation](setting-up-reporting-services_11.png)
 
 **Image11:- Report Server access after installation**
 

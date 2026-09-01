@@ -16,16 +16,15 @@ If you want to create a PDF/A document, add the following report parameter.
 
 {{% /alert %}}
 
+```text
+Parameter Name: PdfConformance  
+Date Type: String  
+Values supported: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
+```
 
-{{% alert color="primary" %}}
+## Example
 
-**Parameter Name**: PdfConformance  
-**Date Type**: String  
-**Values supported**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
-
-**Example**
-{{< highlight csharp >}}
-
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
@@ -34,6 +33,4 @@ If you want to create a PDF/A document, add the following report parameter.
     </Configuration>
     </Extension>
 </Render>
-{{< /highlight >}}
-
-{{% /alert %}}
+```

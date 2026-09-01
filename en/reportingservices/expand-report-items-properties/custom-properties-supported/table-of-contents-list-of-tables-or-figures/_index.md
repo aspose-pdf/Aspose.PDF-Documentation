@@ -10,16 +10,15 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-Report Designer does not support adding table of contents for report documents. With Aspose.Pdf for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
+Report Designer does not support adding table of contents for report documents. With Aspose.PDF for Reporting Services you can easily instruct the PDF render to produce PDF documents with Table of Contents, or List of Tables or Figures. You can do it in the following steps:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
 Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/bin, where ```<Instance>``` is the directory of the Report Server. If the file does not exist, create it in the ```<Instance>```/bin directory and place the following markup inside.
 
 ## Table of Contents
 
-**Example**
+### Example
 
 ```cs
 <ListSection ListType="TableOfContents">
@@ -43,7 +42,7 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 
 ##  List of TableS
 
-**Example**
+### Example
 
 ```cs
 <ListSection ListType="ListOfTables">
@@ -55,7 +54,7 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 
 ## List of Figures
 
-**Example**
+### Example
 
 ```cs
  <ListSection ListType="ListOfFigures">
@@ -68,38 +67,27 @@ Make sure that Aspose.Pdf.ListSectionStyle.xml file exists in ```<Instance>```/b
 
 Please refer to 'Working with TOC' section of the Aspose.Pdf online documentation.
 
-**2-** Add report parameter 'IsListSectionSupported' and set the value to be True as shown in the 'List Section' paragraph.
+**2-** Add report parameter `IsListSectionSupported` and set the value to be True as shown in the `List Section` paragraph.
 **3-** Add custom property for your report item you want to be listed in Table of Contents, List of Tables or Figures.
 
-{{% /alert %}}
-
-{{% alert color="primary" %}}
-
-**Custom Property Name** :IsInList
-**Property Value** :Boolean
-**Custom Property Value** : True or False
-
-{{% alert color="primary" %}}
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
 Marks the current report item as listed by index in the table of contents, or the list of tables or figures.
 
-{{% /alert %}}
-
-**Custom Property Name** : Title
-**Custom Property Type** : String
-
-{{% alert color="primary" %}}
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
 The item title displayed in the table of contents, list of tables or figures.
-{{% /alert %}}
 
-**Custom Property Name** : ListLevel
-**Custom Property Type** : Integer
-
-{{% alert color="primary" %}}
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
 The level of listed items displayed in the table of contents.
-
-{{% /alert %}}
-
-{{% /alert %}}
