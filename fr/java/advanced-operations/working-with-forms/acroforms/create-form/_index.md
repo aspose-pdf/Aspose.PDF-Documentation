@@ -1,253 +1,304 @@
 ---
-title: Créer AcroForms - Créer un PDF remplissable en Java
-linktitle: Créer AcroForms
+title: Créer AcroForm - Créer un PDF remplissable en Java
+linktitle: Créer un AcroForm
 type: docs
 weight: 10
-url: /fr/java/create-forms/
-description: Cette section explique comment créer des AcroForms à partir de zéro dans vos documents PDF avec Aspose.PDF pour Java.
-lastmod: "2021-06-05"
+url: /java/create-form/
+description: Créez des champs AcroForm à partir de zéro dans des documents PDF à l'aide d'Aspose.PDF pour Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Créez des champs AcroForm interactifs dans des fichiers PDF avec Java
+Abstract: Cet article explique comment créer des champs AcroForm à l'aide d'Aspose.PDF pour Java. Il couvre les zones de texte, les champs de texte multi-widgets, les boutons radio, les zones de liste déroulante, les cases à cocher, les zones de liste, les champs de signature et les champs de codes-barres pour les formulaires PDF interactifs.
 ---
+Aspose.PDF pour Java vous permet de créer une large gamme de types de champs AcroForm à partir de zéro.
 
-## Ajouter un champ de formulaire dans un document PDF
 
-La classe [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) fournit une collection nommée Form qui aide à gérer les champs de formulaire dans un document PDF.
+## 
+Créer un champ de zone de texte
 
-Pour ajouter un champ de formulaire :
 
-1. Créez le champ de formulaire que vous souhaitez ajouter.
-2. Appelez la méthode add de la collection [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/Form).
 
-Cet exemple montre comment ajouter un TextBoxField. Vous pouvez ajouter n'importe quel champ de formulaire en utilisant la même approche :
+Utilisez cet exemple lorsque vous devez ajouter un champ de saisie de texte sur une seule ligne à un nouveau formulaire PDF.
 
-1. Tout d'abord, créez un objet champ et définissez ses propriétés.
-2. Ensuite, ajoutez le champ à la collection Form.
 
-### Ajout de TextBoxField
+1. 
+Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
 
-Un champ de texte est un élément de formulaire qui permet à un destinataire de saisir du texte dans votre formulaire.
- Cela serait utilisé chaque fois que vous souhaitez permettre à l'utilisateur la liberté de taper ce qu'il veut.
+1. 
+Créez un [TextBoxField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) avec un rectangle cible et configurez son apparence.
+1. Ajoutez le champ au formulaire et enregistrez le document.
 
-Les extraits de code suivants montrent comment ajouter un TextBoxField à un document PDF.
 
 ```java
-public class ExamplesCreateForm {
+public static void addTextBoxField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void AddingTextBoxField() {
-
-        // Ouvrir le document
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // Créer un champ
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
+        Rectangle rectangle = new Rectangle(10, 600, 110, 620, true);
+        TextBoxField textBoxField = new TextBoxField(page, rectangle);
         textBoxField.setPartialName("textbox1");
         textBoxField.setValue("Text Box");
+        textBoxField.setDefaultAppearance(new DefaultAppearance("Arial", 10, Color.getDarkBlue().toRgb()));
 
-        // TextBoxField.Border = new Border(
         Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
+        border.setWidth(1);
+        border.setStyle(BorderStyle.Dashed);
+        border.setDash(new Dash(3, 3));
         textBoxField.setBorder(border);
 
-        textBoxField.setColor(Color.getGreen());
+        textBoxField.getCharacteristics().setBorder(Color.getRed());
+        textBoxField.getCharacteristics().setBackground(Color.getYellow().toRgb());
 
-        // Ajouter le champ au document
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // Enregistrer le PDF modifié
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+        document.getForm().add(textBoxField, 1);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## Ajout de RadioButtonField
+## 
+Créer un champ de zone de texte avec plusieurs widgets
 
-Un bouton radio est le plus souvent utilisé pour les questions à choix multiple, dans le scénario où une seule réponse peut être sélectionnée.
 
-Les extraits de code suivants montrent comment ajouter [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField) dans un document PDF.
+
+Utilisez cet exemple lorsque la même valeur de champ de texte doit apparaître à plusieurs positions sur la page.
+
+
+1. 
+Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
+
+1. 
+Définissez plusieurs rectangles et apparences pour les widgets de champ.
+1. Créez le [TextBoxField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/), configurez chaque widget et enregistrez le document.
+
 
 ```java
-public static void AddingRadioButton() {
-        Document pdfDocument = new Document();
-        // ajouter une page au fichier PDF
-        pdfDocument.getPages().add();
+public static void addTextBoxFieldNt(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-        // instancier l'objet RadioButtonField avec le numéro de page comme argument
-        RadioButtonField radio = new RadioButtonField(pdfDocument.getPages().get_Item(1));
+        Rectangle[] rects = {
+                new Rectangle(10, 600, 110, 620, true),
+                new Rectangle(10, 630, 110, 650, true),
+                new Rectangle(10, 660, 110, 680, true)
+        };
 
-        // ajouter la première option du bouton radio et spécifier également son origine à l'aide d'un objet Rectangle
-        radio.addOption("Test", new Rectangle(20, 720, 40, 740));
-        // ajouter la deuxième option du bouton radio
-        radio.addOption("Test1", new Rectangle(120, 720, 140, 740));
-        // ajouter le bouton radio à l'objet formulaire de l'objet Document
-        pdfDocument.getForm().add(radio);
-        // enregistrer le fichier PDF
-        pdfDocument.save("RadioButtonSample.pdf");
+        DefaultAppearance[] defaultAppearances = {
+                new DefaultAppearance("Arial", 10, Color.getDarkBlue().toRgb()),
+                new DefaultAppearance("Helvetica", 12, Color.getDarkGreen().toRgb()),
+                new DefaultAppearance(FontRepository.findFont("Calibri"), 14, Color.getDarkMagenta().toRgb())
+        };
 
-    }
-```
+        TextBoxField textBoxField = new TextBoxField(page, rects);
+        textBoxField.setPartialName("textbox1");
+        textBoxField.setValue("Some text");
 
-
-Le fragment de code suivant montre les étapes pour ajouter [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField) avec trois options et les placer à l'intérieur des cellules du tableau.
-
-```java
-public static void AddingRadioButtonAdvanced() {
-        Document doc = new Document();
-        Page page = doc.getPages().add();
-        Table table = new Table();
-        table.setColumnWidths("120 120 120");
-        page.getParagraphs().add(table);
-        Row r1 = table.getRows().add();
-        Cell c1 = r1.getCells().add();
-        Cell c2 = r1.getCells().add();
-        Cell c3 = r1.getCells().add();
-
-        RadioButtonField rf = new RadioButtonField(page);
-        rf.setPartialName("radio");
-        doc.getForm().add(rf, 1);
-
-        RadioButtonOptionField opt1 = new RadioButtonOptionField();
-        RadioButtonOptionField opt2 = new RadioButtonOptionField();
-        RadioButtonOptionField opt3 = new RadioButtonOptionField();
-
-        opt1.setOptionName("Item1");
-        opt2.setOptionName("Item2");
-        opt3.setOptionName("Item3");
-
-        opt1.setWidth(15);
-        opt1.setHeight(15);
-        opt2.setWidth(15);
-        opt2.setHeight(15);
-        opt3.setWidth(15);
-        opt3.setHeight(15);
-
-        rf.add(opt1);
-        rf.add(opt2);
-        rf.add(opt3);
-
-        opt1.setBorder(new Border(opt1));
-        opt1.getBorder().setWidth(1);
-        opt1.getBorder().setStyle(BorderStyle.Solid);
-        opt1.getCharacteristics().setBorder(Color.getBlack());
-        opt1.getDefaultAppearance().setTextColor(java.awt.Color.RED);
-        opt1.setCaption(new TextFragment("Item1"));
-        opt2.setBorder(new Border(opt2));
-        opt2.getBorder().setWidth(1);
-        opt2.getBorder().setStyle(BorderStyle.Solid);
-        opt2.getCharacteristics().setBorder(java.awt.Color.BLACK);
-        opt2.getDefaultAppearance().setTextColor(java.awt.Color.RED);
-        opt2.setCaption(new TextFragment("Item2"));
-        opt3.setBorder(new Border(opt3));
-        opt3.getBorder().setWidth(1);
-        opt3.getBorder().setStyle(BorderStyle.Solid);
-        opt3.getCharacteristics().setBorder(java.awt.Color.BLACK);
-        opt3.getDefaultAppearance().setTextColor(java.awt.Color.RED);
-        opt3.setCaption(new TextFragment("Item3"));
-        c1.getParagraphs().add(opt1);
-        c2.getParagraphs().add(opt2);
-        c3.getParagraphs().add(opt3);
-
-        doc.save("RadioButtonField.pdf");
-    }
-```
-
-
-## Ajout de légende à RadioButtonField
-
-Le code suivant montre comment ajouter une légende qui sera associée à [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/RadioButtonField) :
-
-```java
-public static void AddingCaptionToRadioButtonField() {
-        // Charger le formulaire PDF source
-        com.aspose.pdf.facades.Form form1 = new com.aspose.pdf.facades.Form(_dataDir + "RadioButtonField.pdf");
-        Document document = new Document(_dataDir + "RadioButtonField.pdf");
-        for (String item : form1.getFieldNames()) {
-            System.out.println(item.toString());
-            if (item.contains("radio1")) {
-                RadioButtonField field0 = (RadioButtonField) document.getForm().get(item);
-                RadioButtonOptionField fieldoption = new RadioButtonOptionField();
-                fieldoption.setOptionName("Yes");
-                fieldoption.setPartialName("Yesname");
-
-                var updatedFragment = new TextFragment("test123");
-                updatedFragment.getTextState().setFont(FontRepository.findFont("Arial"));
-                updatedFragment.getTextState().setFontSize(10);
-                updatedFragment.getTextState().setLineSpacing(6.32f);
-
-                // Créer un objet TextParagraph
-                TextParagraph par = new TextParagraph();
-
-                // Définir la position du paragraphe
-                par.setPosition(new Position(field0.getRect().getLLX(),
-                        field0.getRect().getLLY() + updatedFragment.getTextState().getFontSize()));
-                // Spécifier le mode de retour à la ligne
-                par.getFormattingOptions().setWrapMode(TextFormattingOptions.WordWrapMode.ByWords);
-
-                // Ajouter un nouveau TextFragment au paragraphe
-                par.appendLine(updatedFragment);
-
-                // Ajouter le TextParagraph en utilisant TextBuilder
-                TextBuilder textBuilder = new TextBuilder(document.getPages().get_Item(1));
-                textBuilder.appendParagraph(par);
-
-                field0.deleteOption("item1");
-            }
+        int index = 0;
+        for (WidgetAnnotation widget : textBoxField) {
+            widget.setDefaultAppearance(defaultAppearances[index]);
+            index++;
         }
-        document.save(_dataDir + "RadioButtonField_out.pdf");
 
+        Border border = new Border(textBoxField);
+        border.setWidth(1);
+        border.setStyle(BorderStyle.Dashed);
+        border.setDash(new Dash(3, 3));
+        textBoxField.setBorder(border);
+
+        textBoxField.getCharacteristics().setBorder(Color.getRed());
+        textBoxField.getCharacteristics().setBackground(Color.getYellow().toRgb());
+
+        document.getForm().add(textBoxField);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 
+Créer un champ de bouton radio
 
-## Ajout d'un champ ComboBox
 
-Une Combo Box est un champ de formulaire qui ajoutera un menu déroulant à votre document.
 
-Les extraits de code suivants montrent comment ajouter un champ [ComboBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/ComboBoxField) dans un document PDF.
+Utilisez cet exemple lorsque le formulaire doit permettre à l'utilisateur de choisir une option parmi un ensemble prédéfini.
+
+
+1. 
+Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
+
+1. 
+Créez un [RadioButtonField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) et ajoutez les options requises.
+1. Ajoutez le champ au formulaire et enregistrez le PDF.
+
 
 ```java
-public static void AddingComboboxField() {
-        // créer un objet Document
-        Document doc = new Document();
-        // ajouter une page à l'objet document
-        doc.getPages().add();
-        // instancier un objet ComboBox Field
-        ComboBoxField combo = new ComboBoxField(doc.getPages().get_Item(1), new Rectangle(100, 600, 150, 616));
-        // ajouter une option à la ComboBox
+public static void addRadioButton(Path outputFile) {
+    try (Document document = new Document()) {
+        document.getPages().add();
+
+        RadioButtonField radio = new RadioButtonField(document.getPages().get_Item(1));
+        radio.addOption("Option 1", new Rectangle(100, 640, 120, 680, true));
+        radio.addOption("Option 2", new Rectangle(140, 640, 160, 680, true));
+
+        document.getForm().add(radio);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Créer un champ de zone de liste déroulante
+
+
+
+Utilisez cet exemple lorsque l'utilisateur doit choisir une valeur dans une liste déroulante.
+
+
+1. 
+Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
+
+1. 
+Créez un [ComboBoxField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) et ajoutez ses options sélectionnables.
+1. Définissez la sélection par défaut et enregistrez le document.
+
+
+```java
+public static void addComboBox(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        ComboBoxField combo = new ComboBoxField(page, new Rectangle(100, 640, 150, 656, true));
         combo.addOption("Red");
         combo.addOption("Yellow");
         combo.addOption("Green");
         combo.addOption("Blue");
-        // ajouter l'objet combo box à la collection de champs de formulaire de l'objet document
-        doc.getForm().add(combo);
-        // enregistrer le document PDF
-        doc.save("ComboBox_Added.pdf");
+        combo.setSelected(3);
+
+        document.getForm().add(combo);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## Ajouter une info-bulle au formulaire
+## 
+Créer un champ de case à cocher
 
-La classe Document fournit une collection nommée Form qui gère les champs de formulaire dans un document PDF.
- Pour ajouter une info-bulle à un champ de formulaire, utilisez la classe Field AlternateName. Adobe Acrobat utilise le « nom alternatif » comme info-bulle de champ.
 
-Les extraits de code suivants montrent comment ajouter une info-bulle à un champ de formulaire avec Java.
+
+Utilisez cet exemple lorsque le formulaire nécessite une option vrai ou faux telle que le consentement ou la sélection de fonctionnalités.
+
+
+1. 
+Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
+
+1. 
+Créez un [CheckboxField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) et configurez son apparence.
+1. Ajoutez la case à cocher au formulaire et enregistrez le fichier de sortie.
+
 
 ```java
-public static void AddTooltipToFormField() {
-        // Charger le formulaire PDF source
-        Document doc = new Document(_dataDir + "AddTooltipToField.pdf");
+public static void addCheckboxFieldToPdf(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
 
-        // Obtenir un champ
-        TextBoxField textBoxField = (TextBoxField) doc.getForm().get("textbox1");
+        CheckboxField checkbox = new CheckboxField(page, new Rectangle(50, 620, 100, 650, true));
+        checkbox.getCharacteristics().setBackground(Color.getAqua().toRgb());
+        checkbox.setStyle(BoxStyle.Circle);
 
-        // Définir l'info-bulle pour le champ de texte
-        textBoxField.setAlternateName("Info-bulle de la boîte de texte");
-
-        // Enregistrer le document modifié
-        doc.save("output.pdf");
+        document.getForm().add(checkbox);
+        document.save(outputFile.toString());
     }
+}
+```
+
+## 
+Créer un champ de zone de liste
+
+
+
+Utilisez cet exemple lorsque le formulaire doit afficher plusieurs choix disponibles dans une liste visible.
+
+
+1. 
+Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
+
+1. 
+Créez un [ListBoxField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) et ajoutez les options disponibles.
+1. Ajoutez le champ au formulaire et enregistrez le document.
+
+
+```java
+public static void addListBoxFieldToPdf(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        ListBoxField listBox = new ListBoxField(page, new Rectangle(50, 650, 100, 700, true));
+        listBox.setPartialName("list");
+        listBox.addOption("Red");
+        listBox.addOption("Green");
+        listBox.addOption("Blue");
+
+        document.getForm().add(listBox);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Créer un champ de signature
+
+
+
+Utilisez cet exemple lorsque le document doit réserver une zone visible pour une signature numérique.
+
+
+1. 
+Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
+
+1. 
+Créez un [SignatureField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) dans le rectangle requis.
+1. Ajoutez le champ au formulaire et enregistrez le PDF de sortie.
+
+
+```java
+public static void addSignatureField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        SignatureField signatureField = new SignatureField(page, new Rectangle(100, 700, 200, 800, true));
+        signatureField.setPartialName("Signature1");
+        document.getForm().add(signatureField);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Créer un champ de code-barres
+
+
+
+Utilisez cet exemple lorsque le formulaire doit afficher des données lisibles par machine dans un champ de code-barres.
+
+
+1. 
+Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
+
+1. 
+Créez un [BarcodeField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) et ajoutez la valeur du code-barres.
+1. Ajoutez le champ au formulaire et enregistrez le document.
+
+```java
+public static void addBarcodeField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        BarcodeField barcode = new BarcodeField(page, new Rectangle(100, 700, 200, 740, true));
+        barcode.setPartialName("Barcode1");
+        barcode.addBarcode("1234567890");
+        document.getForm().add(barcode);
+        document.save(outputFile.toString());
+    }
+}
 ```

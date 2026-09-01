@@ -1,94 +1,103 @@
 ---
-title: Ajouter un TOC à un PDF existant en Ruby
+title: Ajouter une table des matières au PDF existant dans Ruby
+linktitle: Ajouter une table des matières au PDF existant dans Ruby
 type: docs
 weight: 30
-url: /fr/java/add-toc-to-existing-pdf-in-ruby/
-lastmod: "2021-06-05"
+url: /java/add-toc-to-existing-pdf-in-ruby/
+description: Découvrez comment ajouter une table des matières à un PDF existant dans Ruby à l'aide d'Aspose.PDF pour une navigation améliorée dans les documents.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Ajouter une table des matières
 
-## Aspose.PDF - Ajouter un TOC
 
-<ins>Pour ajouter un TOC dans un document Pdf en utilisant **Aspose.PDF Java pour Ruby**, il suffit d'invoquer le module **AddToc**.
 
-Code Ruby
+<ins>Pour ajouter une table des matières dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **AddToc**.
+
+Code Rubis
+
 
 ```java
-# Le chemin vers le répertoire des documents.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Ouvrir un document pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Accéder à la première page du fichier PDF
+# Get access to first page of PDF file
 
 toc_page = doc.getPages().insert(1)
 
-# Créer un objet pour représenter les informations du TOC
+# Create object to represent TOC information
 
 toc_info = Rjb::import('com.aspose.pdf.TocInfo').new
 
-title = Rjb::import('com.aspose.pdf.TextFragment').new("Table des Matières")
+title = Rjb::import('com.aspose.pdf.TextFragment').new("Table Of Contents")
 
 title.getTextState().setFontSize(20)
 
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# Définir le titre pour le TOC
+# Set the title for TOC
 
 toc_info.setTitle(title)
 
 toc_page.setTocInfo(toc_info)
 
-# Créer des objets string qui seront utilisés comme éléments du TOC
+# Create string objects which will be used as TOC elements
 
-titles = Array["Première page", "Deuxième page"]
+titles = Array["First page", "Second page"]
 
 i = 0
 
 while i < 2
 
-    # Créer un objet Heading
+В В В  # Create Heading object
 
-    heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+В В В  heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
 
-    segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+В В В  segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
 
-    heading2.setTocPage(toc_page)
+В В В  heading2.setTocPage(toc_page)
 
-    heading2.getSegments().add(segment2)
+В В В  heading2.getSegments().add(segment2)
 
-    # Spécifier la page de destination pour l'objet heading
+В В В  # Specify the destination page for heading object
 
-    heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
+В В В  heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-    # Page de destination
+В В В  # Destination page
 
-    heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
+В В В  heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-    # Coordonnée de destination
+В В В  # Destination coordinate
 
-    segment2.setText(titles[i])
+В В В  segment2.setText(titles[i])
 
-    # Ajouter le heading à la page contenant le TOC
+В В В  # Add heading to page containing TOC
 
-    toc_page.getParagraphs().add(heading2)
+В В В  toc_page.getParagraphs().add(heading2)
 
-    i +=1
+В В В  i +=1
 
 end
 
-# Enregistrer le document PDF
+# Save PDF Document
 
 doc.save(data_dir + "TOC.pdf")
 
-puts "TOC ajouté avec succès, veuillez vérifier le fichier de sortie."
+puts "Added TOC Successfully, please check the output file."
 ```
 
+## 
+<ins> **Télécharger le code d'exécution
 
-## <ins> **Télécharger le Code en Exécution
 
-Télécharger **Ajouter TOC (Aspose.PDF)** depuis l'un des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)
+Téléchargez** Ajouter une table des matières (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

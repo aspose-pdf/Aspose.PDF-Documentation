@@ -1,82 +1,70 @@
 ---
-title: Ouvrir un Document PDF
-linktitle: Ouvrir
+title: Ouvrir un document PDF par programme
+linktitle: Ouvrir le PDF
 type: docs
 weight: 20
-url: /fr/java/open-pdf-document/
-description: Apprenez à ouvrir un fichier PDF avec Aspose.PDF pour Java.
-lastmod: "2021-06-05"
+url: /java/open-pdf-document/
+description: Découvrez comment ouvrir un fichier PDF en Java à l'aide d'Aspose.PDF à partir d'un chemin de fichier, d'un flux ou avec un mot de passe.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Ouverture de documents PDF à l'aide de la bibliothèque Aspose.PDF en Java
+Abstract: Cet article montre comment ouvrir des documents PDF existants en Java à l'aide d'Aspose.PDF. Il couvre l'ouverture d'un PDF par chemin de fichier, l'ouverture d'un PDF à partir d'un InputStream et l'ouverture d'un document protégé par mot de passe, chaque exemple lisant le nombre de pages du document chargé.
 ---
+Aspose.PDF pour Java prend en charge plusieurs façons de charger un document PDF existant en fonction de l'origine des données source.
 
-## Ouvrir un document PDF existant
 
-Il existe plusieurs façons d'ouvrir un document. La plus simple est de spécifier un nom de fichier.
+## 
+Ouvrir un document PDF en Java
+
+
+
+Vous pouvez ouvrir un document PDF :
+
+
+1. 
+Ouvrez un [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directement à partir d'un chemin de fichier.
+
+1. 
+Ouvrez un [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) à partir d'un `InputStream`.
+1. Ouvrez un [Document] crypté (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) en fournissant le mot de passe.
+
+
+## 
+Ouvrir un document à partir d'un fichier
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.InputStream;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import com.aspose.pdf.*;
-import com.aspose.pdf.internal.pcl.util.BufferedInputStream;
-
-public final class BasicOperationsOpen {
-
-    private BasicOperationsOpen() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) {
-        OpenDocument();
-        OpenDocumentStream();
-        OpenDocumentWithPassword();
-    }
-
-    public static void OpenDocument() {
-        String fileName = _dataDir+"/tourguidev2_gb_tags.pdf";
-        Document pdfDocument = new Document(fileName);
-        System.out.println("Pages +" + pdfDocument.getPages().size());
-    }
-
+public static void openDocumentFromFile(Path inputFile) {
+    Document document = new Document(inputFile.toString());
+    System.out.println("Pages: " + document.getPages().size());
+    document.close();
+}
 ```
 
+## 
+Ouvrir le document à partir du flux
 
-## Ouvrir un document PDF existant depuis un flux
 
 ```java
-    public static void OpenDocumentStream() {
-        String remoteURL = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
-        String fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
-        try (BufferedInputStream in = new BufferedInputStream(new java.net.URL(remoteURL + fileName).openStream())) {
-            InputStream inputStream = in;
-            Document pdfDocument = new Document(inputStream);
-            System.out.println("Pages +" + pdfDocument.getPages().size());
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+public static void openDocumentFromStream(Path inputFile) throws Exception {
+    try (InputStream stream = Files.newInputStream(inputFile)) {
+        Document document = new Document(stream);
+        System.out.println("Pages: " + document.getPages().size());
+        document.close();
     }
+}
 ```
 
-## Ouvrir un document PDF crypté
+## 
+Ouvrir un document crypté
 
 ```java
-   public static void OpenDocumentWithPassword() {
-        String fileName = "C:\\tmp\\DocSite.pdf";
-        String password = "Aspose2020";
-        try {
-            Document pdfDocument = new Document(fileName, password);
-            System.out.println("Pages +" + pdfDocument.getPages().size());
-        } catch (Exception  e)
-        {
-            System.out.println(e.getMessage());
-        }
-    }
-
+public static void openDocumentEncrypted(Path inputFile) {
+    Document document = new Document(inputFile.toString(), "P@ssw0rd");
+    System.out.println("Pages: " + document.getPages().size());
+    document.close();
 }
 ```

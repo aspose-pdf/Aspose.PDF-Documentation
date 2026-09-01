@@ -2,40 +2,64 @@
 title: Opérations avancées
 linktitle: Opérations avancées
 type: docs
-weight: 70
-url: /fr/java/advanced-operations/
-description: Vous pouvez effectuer non seulement des tâches simples et faciles, mais aussi atteindre des objectifs plus complexes avec Aspose. PDF pour Java.
-lastmod: "2021-06-05"
+weight: 90
+url: /java/advanced-operations/
+description: Apprenez à utiliser les fonctionnalités PDF avancées de Java, notamment les annotations, les formulaires, les pages, les tableaux, le texte, les images, les calques, les graphiques vectoriels, les signatures et les métadonnées.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Fonctionnalités avancées de traitement PDF dans Aspose.PDF pour Java
+Abstract: Cette section couvre les flux de travail avancés de traitement PDF à l'aide d'Aspose.PDF pour Java. Il comprend l'utilisation d'annotations, de formulaires, de pages, de tableaux, de texte, d'images, de calques, de graphiques vectoriels, d'accessibilité, de sécurité, de métadonnées, de pièces jointes ZUGFeRD et d'autres fonctionnalités au niveau du document pour des scénarios d'automatisation PDF complexes.
 ---
+La section des opérations avancées regroupe les flux de travail Java utilisés pour éditer, inspecter, sécuriser et enrichir les documents PDF existants au-delà des opérations de base de création, d'ouverture, d'enregistrement, de fusion et de fractionnement.
 
-**Opérations Avancées** est une section sur la façon de gérer les fichiers PDF existants de manière programmatique, qu'il s'agisse de documents créés avec Aspose.PDF comme discuté dans [Opérations de base](/pdf/fr/java/basic-operations), ou de PDFs créés avec Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou tout autre producteur de PDF.
 
-Vous apprendrez différentes façons de :
+- 
+[Travailler avec des documents] (/pdf/java/working-with-documents/) - compressez, divisez et fusionnez des documents et effectuez d'autres opérations avec l'ensemble du document.
 
-- [Travailler avec des Documents](/pdf/fr/java/working-with-documents/) - compresser, diviser et fusionner des documents et effectuer d'autres opérations avec l'ensemble du document.
-- [Travailler avec des Pages](/pdf/fr/java/working-with-pages/) - ajouter, déplacer ou supprimer, rogner des pages, ajouter des filigranes, des tampons.
+- 
+[Travailler avec des pages] (/pdf/java/working-with-pages/) - ajouter, déplacer ou supprimer, recadrer des pages, ajouter des filigranes, des tampons, etc.
 
-- [Travailler avec du Texte](/pdf/fr/java/working-with-text/) - ajouter, formater, rechercher et remplacer du texte dans un PDF.
-- [Travailler avec des images](/pdf/fr/java/working-with-images/) - insérer, supprimer, extraire une image dans un document.
-- [Travailler avec des tableaux](/pdf/fr/java/working-with-tables/) - insérer, décorer un tableau dans un PDF, extraire des données tabulaires.
-- [Travailler avec des formulaires](/pdf/fr/java/working-with-forms/) - gérer les documents PDF interactifs, ajouter des champs de formulaire, extraire des données.
-- [Travailler avec des graphiques](/pdf/fr/java/graphs/) - manipuler des formes sur la page.
-- [Travailler avec XML](/pdf/fr/java/working-with-xml) - construire des documents PDF basés sur la structure XML.
-- [Navigation et interaction](/pdf/fr/java/navigation-and-interaction/) - gérer les actions, les signets, naviguer dans les pages.
-- [Annotations](/pdf/fr/java/annotations/) - les annotations permettent aux utilisateurs d'ajouter du contenu personnalisé sur les pages PDF. Vous pouvez ajouter, supprimer et modifier l'annotation des documents PDF.
-- [Objets](/pdf/fr/java/artifacts/) - gérer les filigranes et autres objets spéciaux dans le PDF.
-- [Accessibilité.
- [Tagged PDF](/pdf/fr/java/accessibility-tagged-pdf/) - Le marquage est essentiel pour l'accessibilité PDF. Aspose.PDF permet d'ajouter des balises dans le PDF et d'établir un ordre de lecture logique ainsi que de fournir un moyen d'indiquer la structure et le type.
+- 
+[Travailler avec des images] (/pdf/java/working-with-images/) - ajoutez, extrayez ou supprimez des images des documents PDF.
 
-- [Attachments](/pdf/fr/java/attachments/) - Les documents PDF peuvent contenir des pièces jointes. Ces pièces jointes peuvent être d'autres documents PDF ou tout type de fichier, comme des fichiers audio, des documents Microsoft Office, etc. Vous apprendrez à ajouter des pièces jointes au PDF, obtenir l'information d'une pièce jointe, la sauvegarder dans un fichier, et supprimer la pièce jointe du PDF par programmation avec Java.
+- 
+[Pièces jointes] (/pdf/java/attachments/) - vous apprendrez comment ajouter et supprimer la pièce jointe d'un PDF par programme avec Python.
+- [Navigation et interaction] (/pdf/java/navigation-and-interaction/) - gère les actions, les signets, parcourt les pages.
 
-- [Metadata in PDFs](/pdf/fr/java/pdf-file-metadata/) - obtenir ou définir des métadonnées dans les documents, gérer les données XMP.
+- 
+[Annotations] (/pdf/java/annotations/) - les annotations permettent aux utilisateurs d'ajouter du contenu personnalisé sur les pages PDF. Vous pouvez ajouter, supprimer et modifier l'annotation des documents PDF.
 
-- [Securing and Signing](/pdf/fr/java/securing-and-signing/) - protéger et signer votre document PDF par programmation.
+- 
+[Travailler avec des tableaux] (/pdf/java/working-with-tables/) - insérer, décorer un tableau en PDF, extraire des données tabulaires.
 
-- [Printing Document](/pdf/fr/java/print-pdf-file/) - imprimer des PDFs dans divers types d'applications (WinForms, WPF, etc.)
+- 
+[Travailler avec des formulaires] (/pdf/java/working-with-forms/) - gérer des documents PDF interactifs, ajouter des champs de formulaire, extraire des données.
 
-- [Operators](/pdf/fr/java/operators/) - effectuer des opérations de bas niveau dans le PDF.
+- 
+[Travailler avec du texte] (/pdf/java/working-with-text/) - ajoutez, formatez, recherchez et remplacez du texte dans un PDF.
+- [Comparer les documents PDF] (/pdf/java/compare-pdf-documents/) - possibilité de comparer le contenu des documents PDF.
+
+- 
+[Métadonnées dans les PDF] (/pdf/java/pdf-file-metadata/) - obtenez ou définissez des métadonnées dans des documents, traitant des données XMP.
+
+- 
+[Travailler avec des graphiques] (/pdf/java/working-with-graphs/) - manipuler avec des formes sur la page.
+
+- 
+[Artefacts] (/pdf/java/artifacts/) - traite les filigranes et autres objets spéciaux en PDF.
+
+- 
+[Travailler avec des calques PDF] (/pdf/working-with-pdf-layers/) - verrouillez les calques, extrayez des éléments, aplatissez et fusionnez les calques PDF.
+- [Sécurisation et signature] (/pdf/java/securing-and-signing/) - protégez et signez votre document PDF par programme
+
+- 
+[Travailler avec des graphiques vectoriels] (/pdf/java/working-with-vector-graphics/) - manipuler des graphiques vectoriels dans des documents PDF.
+
+- 
+[Travailler avec ZUGFeRD] (/pdf/java/working-with-zugferd/) - travaillez avec des documents PDF conformes à ZUGFeRD.
+
+- 
+[Travailler avec les opérateurs PDF] (/pdf/java/working-with-operators/) - travaillez avec les opérateurs PDF pour une manipulation PDF avancée.
