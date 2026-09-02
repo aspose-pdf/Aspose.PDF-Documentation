@@ -88,7 +88,7 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
    - قم بفك أداة ANT وإعداد متغيرات البيئة كما هو موضح في دليل الأداة.
    -  قم بتغيير الدليل الحالي إلى <InstallDir>\demo\hsqldb وقم بتشغيل سطر الأوامر التالي:
       النمل runServer
-12. Open a new command prompt instance and change the current directory to <InstallDir>\demo\samples\fonts.ap and run the following commands in the command line:
+12. افتح مثيل موجه أوامر جديد وغيّر الدليل الحالي إلى <InstallDir>\demo\samples\fonts.ap ثم شغّل الأوامر التالية في سطر الأوامر:
 13. ant javac – لتجميع ملفات Java المصدرية لتطبيق الاختبار
 14. ant compile – to compile the XML report design and produce the .jasper file
 15. تعبئة النمل - لملء تصميم التقرير المجمع بالبيانات وإنتاج ملف .jrprint
