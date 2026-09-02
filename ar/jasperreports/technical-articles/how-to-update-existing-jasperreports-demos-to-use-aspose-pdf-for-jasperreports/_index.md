@@ -92,7 +92,7 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 13. ant javac – لتجميع ملفات Java المصدرية لتطبيق الاختبار
 14. ant compile – to compile the XML report design and produce the .jasper file
 15. تعبئة النمل - لملء تصميم التقرير المجمع بالبيانات وإنتاج ملف .jrprint
-16. ant aspose_ pdf – to produce a PDF file using Aspose.PDF for JasperReports.
+16. ant aspose_pdf – to produce a PDF file using Aspose.PDF for JasperReports.
 17. Open the resultant PDF (**FontsReport.pdf**) from the <InstallDir>\demo\samples\ fonts.ap\build\reports\ folder.
 
 {{% /alert %}}
