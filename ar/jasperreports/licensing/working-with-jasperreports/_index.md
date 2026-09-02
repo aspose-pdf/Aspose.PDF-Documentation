@@ -30,7 +30,7 @@ lastmod: "2026-08-31"
 
 يتم استخدام هذه الطريقة مع JasperReports.
 
-1. Download the license to your computer and copy it to the appropriate folder (for example your application's folder or JasperReports\lib).
+1. قم بتنزيل الترخيص على جهاز الكمبيوتر الخاص بك وانسخه إلى المجلد المناسب (على سبيل المثال مجلد التطبيق الخاص بك أو JasperReports\lib).
 2. أضف الكود التالي إلى مشروعك:
 
 ```java
