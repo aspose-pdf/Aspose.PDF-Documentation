@@ -7,7 +7,7 @@ description: اكتشف كيفية العمل بكفاءة مع JasperServer ب�
 lastmod: "2026-08-31"
 ---
 
-## <ins> قم بتعيين معلمة مُصدِّر ملف الترخيص في applicationContext.xml
+## <ins>قم بتعيين معلمة مُصدِّر ملف الترخيص في applicationContext.xml</ins>
 
 {{% alert color="primary" %}}
 
