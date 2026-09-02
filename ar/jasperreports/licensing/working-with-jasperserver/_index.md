@@ -19,9 +19,8 @@ lastmod: "2026-08-31"
 2. حدد موقع الملف ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` وأضف الأسطر التالية:
 
 ```xml
- <bean id="AsposeExportParameters" class="comcom.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
-    <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-  
-    INF/Aspose.Total.JasperReports.lic"/>
+ <bean id="AsposeExportParameters" class="com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
+    <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-INF/Aspose.Total.JasperReports.lic"/>
 </bean>
 ```
 
