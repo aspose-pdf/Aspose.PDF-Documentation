@@ -20,9 +20,9 @@ lastmod: "2026-08-31"
 
 هناك عدة طرق لتفعيل الترخيص:
 
-- [اتصل بـ setLicense](/pdf/jasperreports/working-with-jasperreports/#call-setlicense).
-- [قم بتعيين معلمة المصدر في الكود](/pdf/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
-- [قم بتعيين معلمة المصدر في **applicationContext.xml**](/pdf/jasperreports/working-with-jasperserver/).
+- [اتصل بـ setLicense](/pdf/ar/jasperreports/working-with-jasperreports/#call-setlicense).
+- [قم بتعيين معلمة المصدر في الكود](/pdf/ar/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
+- [قم بتعيين معلمة المصدر في **applicationContext.xml**](/pdf/ar/jasperreports/working-with-jasperserver/).
 
 يتم استخدام الأولين مع JasperReports، والأخير مع JasperServer.
 
