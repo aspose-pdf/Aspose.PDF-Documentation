@@ -42,10 +42,9 @@ lastmod: "2026-08-31"
 
 {{% alert color="primary" %}}
 
-2. حدد موقع العنصر <util:map id=”exporterConfigMap> في ملف
+2. حدد موقع العنصر <util:map id="exporterConfigMap"> في ملف
 
 **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** file and add the following lines:
-
 {{% /alert %}}
 
 ```xml
