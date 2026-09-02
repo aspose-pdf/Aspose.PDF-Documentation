@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 **يحتوي هذا القسم على المواضيع التالية:**
 
-- [Working with JasperReports](/pdf/jasperreports/working-with-jasperreports/)
-- [العمل مع JasperServer](/pdf/jasperreports/working-with-jasperserver/)
+- [العمل مع JasperReports](/pdf/ar/jasperreports/working-with-jasperreports/)
+- [العمل مع JasperServer](/pdf/ar/jasperreports/working-with-jasperserver/)
 
 
