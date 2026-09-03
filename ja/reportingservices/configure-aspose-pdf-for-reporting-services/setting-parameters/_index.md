@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ja/reportingservices/setting-parameters/
 description: Aspose.PDF for Reporting Services で PDF レンダリング用のパラメータを設定し、出力を正確に制御する方法を説明します。
-lastmod: "2026-07-29"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
