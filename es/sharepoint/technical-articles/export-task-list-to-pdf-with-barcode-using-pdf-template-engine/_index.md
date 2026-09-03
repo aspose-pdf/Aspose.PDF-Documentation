@@ -43,7 +43,7 @@ El proceso se detalla a continuación.
 
 La plantilla ha sido configurada.
 
-6. Go to the **Tasks** list and create a new task.
+6. Vaya a la lista de **Tareas** y cree una nueva tarea.
 7. Guarde la tarea.
 
 ![Create Task](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
