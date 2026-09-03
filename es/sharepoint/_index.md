@@ -6,7 +6,7 @@ type: docs
 weight: 110
 url: /es/sharepoint/
 is_root: true
-lastmod: "2021-06-01"
+lastmod: "2026-08-31"
 description: PDF SharePoint es una solución que permite a los usuarios exportar listas, elementos de listas y páginas Wiki de SharePoint al formato de archivo PDF.
 ---
 
