@@ -16,7 +16,7 @@ Para desinstalar Aspose.PDF para la licencia de SharePoint, siga los pasos a con
 
 1. Retirar la solución de licencia de la granja:
 
-  stsadm.exe -o retractsolution -nombre Aspose.PDF.SharePoint.License.wsp -inmediato
+  stsadm.exe -o retractsolution -name Aspose.PDF.SharePoint.License.wsp -immediate
 
 2. Ejecute trabajos del temporizador administrativo para completar la retractación inmediatamente:
 
@@ -28,7 +28,7 @@ Para desinstalar Aspose.PDF para la licencia de SharePoint, siga los pasos a con
 
 4. Elimine la solución del almacén de soluciones de SharePoint:
 
-  stsadm.exe -o eliminar solución -nombre Aspose.PDF.SharePoint.License.wsp
+  stsadm.exe -o deletesolution -name Aspose.PDF.SharePoint.License.wsp
 
 {{% /alert %}}
 

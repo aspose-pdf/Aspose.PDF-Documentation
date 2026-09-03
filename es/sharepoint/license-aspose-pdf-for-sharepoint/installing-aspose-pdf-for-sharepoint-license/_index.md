@@ -10,7 +10,7 @@ description: Una vez que esté satisfecho con su evaluación, puede comprar una 
 
 {{% alert color="primary" %}}
 
-Once you are happy with your evaluation, you can [purchase a license](https://purchase.aspose.com/buy). Before purchasing make sure you understand and agree to the license subscription terms.
+Una vez que esté satisfecho con su evaluación, puede [comprar una licencia](https://purchase.aspose.com/buy). Antes de comprar, asegúrese de comprender y aceptar los términos de suscripción de la licencia.
 
 {{% /alert %}}
 

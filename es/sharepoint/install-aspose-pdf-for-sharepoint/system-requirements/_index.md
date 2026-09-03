@@ -16,7 +16,7 @@ Para instalar Aspose.PDF for SharePoint, necesita una computadora que ejecute Mi
 
 Necesita un navegador para acceder a los sitios de SharePoint. Aspose.PDF for SharePoint ha sido probado con los siguientes navegadores:
 
-- MicrosoftInternet Explorer 8
+- Microsoft Internet Explorer 8
 - Mozilla Firefox 3.5
 - Google Chrome 3
 - Safari 4

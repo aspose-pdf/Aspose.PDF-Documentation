@@ -1,6 +1,6 @@
 ---
 title: Exportar lista de tareas a PDF con código de barras usando PDF Template Engine
-linktitle: Export Task List to PDF with Barcode using PDF Template Engine
+linktitle: Exportar lista de tareas a PDF con código de barras usando PDF Template Engine
 type: docs
 weight: 40
 url: /es/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
@@ -10,7 +10,7 @@ description: PDF SharePoint API puede exportar la lista de tareas a PDF con cód
 
 {{% alert color="primary" %}}
 
-This article shows how to set up and export a task list to PDF with barcodes using Aspose.PDF for SharePoint.
+Este artículo muestra cómo configurar y exportar una lista de tareas a PDF con códigos de barras usando Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
@@ -43,7 +43,7 @@ El proceso se detalla a continuación.
 
 La plantilla ha sido configurada.
 
-6. Go to the **Tasks** list and create a new task.
+6. Vaya a la lista de **Tareas** y cree una nueva tarea.
 7. Guarde la tarea.
 
 ![Create Task](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
