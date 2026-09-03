@@ -21,8 +21,7 @@ lastmod: "2026-08-31"
 
 ```xml
  <bean id="AsposeExportParameters" class="com.Aspose.PDF.jr3_7_0.jasperreports.JrPdfExportParametersBean">
-    <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-  
-    INF/Aspose.Total.JasperReports.lic"/>
+    <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-INF/Aspose.Total.JasperReports.lic"/>
 </bean>
 ```
 
