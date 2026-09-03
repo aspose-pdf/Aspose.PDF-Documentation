@@ -19,7 +19,7 @@ lastmod: "2026-08-31"
 2. ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` ファイルを見つけて、次の行を追加します。
 
 ```xml
- <bean id="AsposeExportParameters" class="comcom.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
+ <bean id="AsposeExportParameters" class="com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
     <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-  
     INF/Aspose.Total.JasperReports.lic"/>
 </bean>
