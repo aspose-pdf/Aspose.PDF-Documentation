@@ -1,6 +1,6 @@
 ﻿---
 title: Formatos de archivo admitidos
-linktitle: Supported File Formats
+linktitle: Formatos de archivo admitidos
 type: docs
 weight: 20
 url: /es/jasperreports/supported-file-formats/
