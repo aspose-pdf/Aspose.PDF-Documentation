@@ -7,7 +7,7 @@ url: /es/jasperreports/working-with-jasperserver/
 description: Explore cómo trabajar eficientemente con JasperServer usando Aspose.PDF. Exporte informes a archivos PDF profesionales con facilidad.
 ---
 
-## <ins>Establezca el parámetro del exportador de archivos de licencia en applicationContext.xml
+## Establezca el parámetro del exportador de archivos de licencia en applicationContext.xml
 
 {{% alert color="primary" %}}
 
