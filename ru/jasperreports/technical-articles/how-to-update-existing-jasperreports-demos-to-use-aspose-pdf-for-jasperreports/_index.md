@@ -70,7 +70,7 @@ com.Aspose.PDF.jr3_7_0.jasperreports.JrPdfExporter();
 10. Сделайте копию следующего сегмента и поместите его в тот же файл:
 
 ```xml
- <target name="pdf" description="Generat PDF via Aspose.PDF for JasperReports.">
+ <target name="pdf" description="Generate PDF via Aspose.PDF for JasperReports.">
     <java classname="${class.name}">
         <arg value="pdf"/>
         <arg value="${file.name}.jrprint"/>
