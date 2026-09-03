@@ -89,11 +89,11 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
    -  Ubah direktori saat ini menjadi <InstallDir>\demo\hsqldb dan jalankan baris perintah berikut:
       ant runServer
 12. Open a new command prompt instance and change the current directory to <InstallDir>\demo\samples\fonts.ap and run the following commands in the command line:
-13. ant javac – to compile the Java source files of the test application
-14. kompilasi semut – untuk mengkompilasi desain laporan XML dan menghasilkan file .jasper
-15. ant fill – to fill the compiled report design with data and produce the .jrprint file
-16. ant aspose_ pdf – to produce a PDF file using Aspose.PDF for JasperReports.
-17. Buka PDF yang dihasilkan (**FontsReport.pdf**) dari folder <InstallDir>\demo\samples\ font.ap\build\reports\.
+13. `ant javac` – untuk mengkompilasi file sumber Java dari aplikasi pengujian.
+14. `ant compile` – untuk mengkompilasi desain laporan XML dan menghasilkan file `.jasper`.
+15. `ant fill` – untuk mengisi desain laporan yang dikompilasi dengan data dan menghasilkan file `.jrprint`.
+16. `ant aspose_pdf` – untuk menghasilkan file PDF menggunakan Aspose.PDF for JasperReports.
+17. Buka PDF yang dihasilkan (**FontsReport.pdf**) dari folder `<InstallDir>\demo\samples\fonts.ap\build\reports\`.
 
 {{% /alert %}}
 
