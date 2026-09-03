@@ -1,6 +1,6 @@
 ---
 title: Exportar lista de tareas a PDF con código de barras usando PDF Template Engine
-linktitle: Export Task List to PDF with Barcode using PDF Template Engine
+linktitle: Exportar lista de tareas a PDF con código de barras usando PDF Template Engine
 type: docs
 weight: 40
 url: /es/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
