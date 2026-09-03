@@ -27,7 +27,7 @@ Untuk menjalankan demo Aspose.PDF for JasperReports:
 5. Unduh alat ANT dari <http://ant.apache.org/bindownload.cgi>.
 6. Buka kemasan alat ANT dan atur variabel lingkungan seperti yang dijelaskan dalam manual alat.
 7. Ubah direktori saat ini menjadi ```<InstallDir>```\demo\hsqldb dan jalankan baris perintah berikut:
-   server lari semut
+   ant runServer
 8. Buka instance command prompt baru dan ubah direktori saat ini ke salah satu demo Aspose.PDF for JasperReports, misalnya ```<InstallDir>```\demo\samples\charts.ap.
 9. Jalankan perintah berikut pada baris perintah:
 10. ant javac – untuk mengkompilasi file sumber Java dari aplikasi pengujian.
