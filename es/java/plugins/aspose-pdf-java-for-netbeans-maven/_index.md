@@ -25,7 +25,7 @@ Aspose.PDF para Java ofrece una increíble riqueza de funciones, que incluyen op
 
 ### Aspose.PDF Java para NetBeans (Maven)
 
-- Aspose.PDF Java para NetBeans (Maven) es un complemento para **NetBeans IDE** de **Aspose.** El complemento está destinado a desarrolladores que utilizan la plataforma Maven para desarrollos Java y desean utilizar Aspose.PDF para Java en sus proyectos. El complemento le permite crear proyectos maven para usar Aspose.PDF para la API de Java y también descargar [Ejemplos de código](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) de la API.
+- Aspose.PDF Java para NetBeans (Maven) es un complemento para **NetBeans IDE** de **Aspose.** El complemento está destinado a desarrolladores que utilizan la plataforma Maven para desarrollos Java y desean utilizar Aspose.PDF para Java en sus proyectos. El complemento le permite crear proyectos maven para usar Aspose.PDF para la API de Java y también descargar [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) de la API.
 - El complemento proporciona las siguientes funciones para trabajar cómodamente con Aspose.PDF para la API de Java dentro de **NetBeans IDE**:
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
@@ -100,7 +100,7 @@ Usando Aspose.PDF para NetBeans - Maven
 
 ### ¿Cómo solicitar la licencia Aspose?
 
-Este complemento utiliza una versión de evaluación de Aspose.PDF. Una vez que esté satisfecho con su evaluación, puede comprar una licencia en el [sitio web de Aspose](https://purchase.aspose.com/buy).
+Este complemento utiliza una versión de evaluación de Aspose.PDF. Una vez que esté satisfecho con su evaluación, puede comprar una licencia en el [Aspose website](https://purchase.aspose.com/buy).
 Para eliminar el mensaje de evaluación y las limitaciones de funciones, se debe aplicar una licencia de producto. Recibirá un archivo de licencia después de haber comprado el producto. Siga los pasos a continuación para solicitar la licencia.
 
 - Asegúrese de que el archivo de licencia tenga el nombre **Aspose.PDF.Java.lic

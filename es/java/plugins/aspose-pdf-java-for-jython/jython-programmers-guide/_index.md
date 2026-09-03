@@ -9,7 +9,7 @@ lastmod: "2026-09-03"
 ---
 Esta sección incluye los siguientes temas:
 
-- [Trabajo con la Conversión de Documentos en Jython](/pdf/es/java/working-with-document-conversion-in-jython/)
-- [Trabajo con el Objeto Documento en Jython](/pdf/es/java/working-with-document-object-in-jython/)
-- [Trabajo con Páginas en Jython](/pdf/es/java/working-with-pages-in-jython/)
-- [Trabajando con texto en Jython](/pdf/es/java/working-with-text-in-jython/)
+- [Working With Document Conversion in Jython](/pdf/es/java/working-with-document-conversion-in-jython/)
+- [Working With Document Object in Jython](/pdf/es/java/working-with-document-object-in-jython/)
+- [Working With Pages in Jython](/pdf/es/java/working-with-pages-in-jython/)
+- [Working With Text in Jython](/pdf/es/java/working-with-text-in-jython/)

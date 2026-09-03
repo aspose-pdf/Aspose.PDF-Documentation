@@ -19,7 +19,7 @@ Los artefactos de fondo le permiten colocar elementos visuales no contenidos det
 
 Utilice este ejemplo cuando la página deba mostrar una imagen como artefacto de fondo.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y la secuencia de entrada de imagen.
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y la secuencia de entrada de imagen.
 1. Crear un [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) y asignar el flujo de imagen.
 1. Agregar el artefacto a la página de destino y guardar el PDF de salida.
 
@@ -39,7 +39,7 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 
 Este ejemplo coloca una imagen de fondo semitransparente detrás del contenido de la página.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y flujo de imagen.
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y flujo de imagen.
 1. Crear un [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/), asigna la imagen, y establece la opacidad.
 1. Agrega el artefacto a la página y guarda el documento.
 
@@ -61,7 +61,7 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
 
 Utilice este ejemplo cuando la página debe usar un color de fondo sólido en lugar de una imagen.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) y asignar el color de fondo.
 1. Agregue el artefacto a la página y guarde el archivo de salida.
 
@@ -80,7 +80,7 @@ public static void addBackgroundColorToPdf(Path inputFile, Path outputFile) {
 
 Utilice este enfoque cuando los artefactos de fondo existentes deban eliminarse de la página.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterar a través de la colección de artefactos de la página en orden inverso.
 1. Eliminar los artefactos cuyo tipo es paginación y subtipo es fondo, luego guardar el documento.
 

@@ -17,7 +17,7 @@ El repositorio actual de Java no incluye un ejemplo dedicado de firma con tarjet
 
 ## Firmar un documento PDF desde una tarjeta inteligente
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) fachada y enlazar el documento PDF de origen.
 1. Recuperar el certificado local y crear el necesario [ExternalSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/externalsignature/).
 1. Configure la apariencia visual de la firma y el objetivo [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).

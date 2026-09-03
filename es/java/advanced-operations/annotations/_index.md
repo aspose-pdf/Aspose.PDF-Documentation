@@ -17,5 +17,5 @@ Las anotaciones son elementos PDF interactivos que le permiten agregar notas, re
 
 Utilice esta sección para:
 
-- [Agregar, eliminar y obtener anotación](/pdf/es/java/add-delete-and-get-annotation/) para familias de anotaciones agrupadas.
-- [Importar y exportar anotaciones](/pdf/es/java/import-export-annotations/) para copiar anotaciones entre archivos PDF.
+- [Add, Delete and Get Annotation](/pdf/es/java/add-delete-and-get-annotation/) para familias de anotaciones agrupadas.
+- [Import and Export Annotations](/pdf/es/java/import-export-annotations/) para copiar anotaciones entre archivos PDF.

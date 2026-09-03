@@ -9,12 +9,12 @@ lastmod: "2026-09-03"
 ---
 Esta sección incluye los siguientes temas:
 
-- [Agregar JavaScript en Python](/pdf/es/java/adding-javascript-in-python/)
-- [Agregar TOC a PDF existente en Python](/pdf/es/java/add-toc-to-existing-pdf-in-python/)
-- [Obtener propiedades de la ventana del documento y de visualización de página en Python](/pdf/es/java/get-document-window-and-page-display-properties-in-python/)
-- [Obtener información de archivo PDF en Python](/pdf/es/java/get-pdf-file-information-in-python/)
-- [Obtener metadatos XMP de archivo PDF en Python](/pdf/es/java/get-xmp-metadata-from-pdf-file-in-python/)
-- [Optimizar documento PDF para la web en Python](/pdf/es/java/optimize-pdf-document-for-the-web-in-python/)
-- [Eliminar metadatos de PDF en Python](/pdf/es/java/remove-metadata-from-pdf-in-python/)
-- [Establecer expiración de PDF en Python](/pdf/es/java/set-pdf-expiration-in-python/)
-- [Establecer información de archivo PDF en Python](/pdf/es/java/set-pdf-file-information-in-python/)
+- [Adding JavaScript in Python](/pdf/es/java/adding-javascript-in-python/)
+- [Add TOC to Existing PDF in Python](/pdf/es/java/add-toc-to-existing-pdf-in-python/)
+- [Get Document Window and Page Display Properties in Python](/pdf/es/java/get-document-window-and-page-display-properties-in-python/)
+- [Get PDF File Information in Python](/pdf/es/java/get-pdf-file-information-in-python/)
+- [Get XMP Metadata from PDF File in Python](/pdf/es/java/get-xmp-metadata-from-pdf-file-in-python/)
+- [Optimize PDF Document for the Web in Python](/pdf/es/java/optimize-pdf-document-for-the-web-in-python/)
+- [Remove Metadata from PDF in Python](/pdf/es/java/remove-metadata-from-pdf-in-python/)
+- [Set PDF Expiration in Python](/pdf/es/java/set-pdf-expiration-in-python/)
+- [Set PDF File Information in Python](/pdf/es/java/set-pdf-file-information-in-python/)

@@ -14,9 +14,9 @@ Esta página agrupa las familias de anotaciones cubiertas por los ejemplos de Ja
 
 Utilice los siguientes temas:
 
-- [Anotaciones de texto](/pdf/es/java/pdfannotationeditor-class/text-based-annotations/)
-- [Anotaciones de marcado](/pdf/es/java/pdfannotationeditor-class/markup-annotations/)
-- [Anotaciones interactivas](/pdf/es/java/pdfannotationeditor-class/interactive-annotations/)
-- [Anotaciones de forma](/pdf/es/java/pdfannotationeditor-class/shape-annotations/)
-- [Anotaciones de seguridad](/pdf/es/java/pdfannotationeditor-class/security-annotations/)
-- [Anotaciones de marca de agua](/pdf/es/java/pdfannotationeditor-class/watermark-annotations/)
+- [Text Annotations](/pdf/es/java/pdfannotationeditor-class/text-based-annotations/)
+- [Markup Annotations](/pdf/es/java/pdfannotationeditor-class/markup-annotations/)
+- [Interactive Annotations](/pdf/es/java/pdfannotationeditor-class/interactive-annotations/)
+- [Shape Annotations](/pdf/es/java/pdfannotationeditor-class/shape-annotations/)
+- [Security Annotations](/pdf/es/java/pdfannotationeditor-class/security-annotations/)
+- [Watermark Annotations](/pdf/es/java/pdfannotationeditor-class/watermark-annotations/)

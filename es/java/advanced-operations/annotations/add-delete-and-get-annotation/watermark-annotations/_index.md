@@ -19,7 +19,7 @@ Las anotaciones de marca de agua le permiten colocar contenido superpuesto reuti
 
 Utilice este ejemplo cuando necesite una anotación de marca de agua de texto con configuraciones de fuente personalizadas y opacidad.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) y añádelo a la página.
 1. Configure el [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/), texto de marca de agua, y opacidad, luego guarda el documento.
 
@@ -51,7 +51,7 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 
 Este ejemplo escanea la colección de anotaciones y muestra el rectángulo de cada anotación de marca de agua.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itera a través de las anotaciones en la página de destino.
 1. Filtrar anotaciones por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` y imprimir sus rectángulos.
 
@@ -71,7 +71,7 @@ public static void watermarkGet(Path inputFile) {
 
 Utilice este enfoque cuando se deban eliminar las anotaciones de marca de agua existentes del documento.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Recopilar anotaciones del tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
 1. Elimina las anotaciones recopiladas y guarda el archivo de salida.
 
@@ -94,9 +94,9 @@ public static void watermarkDelete(Path inputFile, Path outputFile) {
 
 ## Temas relacionados con anotaciones
 
-- [Anotaciones Interactivas](/pdf/es/java/interactive-annotations/)
-- [Anotaciones de Marcado](/pdf/es/java/markup-annotations/)
-- [Anotaciones de Seguridad](/pdf/es/java/security-annotations/)
-- [Anotaciones de Forma](/pdf/es/java/shape-annotations/)
-- [Anotaciones de texto](/pdf/es/java/text-based-annotations/)
-- [Importar y exportar anotaciones](/pdf/es/java/import-export-annotations/)
+- [Interactive Annotations](/pdf/es/java/interactive-annotations/)
+- [Markup Annotations](/pdf/es/java/markup-annotations/)
+- [Security Annotations](/pdf/es/java/security-annotations/)
+- [Shape Annotations](/pdf/es/java/shape-annotations/)
+- [Text Annotations](/pdf/es/java/text-based-annotations/)
+- [Import and Export Annotations](/pdf/es/java/import-export-annotations/)

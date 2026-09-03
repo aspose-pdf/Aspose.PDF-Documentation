@@ -19,7 +19,7 @@ Un portafolio PDF puede agrupar varios archivos dentro de un solo contenedor PDF
 
 Utilice este ejemplo cuando necesite empaquetar varios archivos en una colección de portafolios PDF.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y habilite su [Colección](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y habilite su [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
 1. Crear [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) objetos para cada archivo de entrada y establecer sus descripciones.
 1. Agregar los archivos a la colección de cartera y guardar el documento de salida.
 
@@ -49,7 +49,7 @@ public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
 
 Utilice este ejemplo cuando se deba vaciar una colección de portafolio PDF existente.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Eliminar las entradas de la colección de documentos.
 1. Guardar el documento de salida limpiado.
 

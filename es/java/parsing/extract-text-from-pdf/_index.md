@@ -14,7 +14,7 @@ Aspose.PDF for Java proporciona varios flujos de trabajo de extracción de texto
 
 Utilice los artículos de esta sección para:
 
-- [Extraer texto de todas las páginas o de una sola página](/pdf/es/java/basic-text-extraction/).
-- [Limitar la extracción a una región específica de la página o inspeccionar la geometría del párrafo](/pdf/es/java/region-based-extraction/).
-- [Extraer texto de resaltados, anotaciones de sello y contenido en superíndice o subíndice](/pdf/es/java/annotation-and-special-text/).
-- [Mejorar la extracción de diseños multicolumna](/pdf/es/java/text-extraction-from-multi-column-pdf/).
+- [Extract text from all pages or a single page](/pdf/es/java/basic-text-extraction/).
+- [Limit extraction to a specific page region or inspect paragraph geometry](/pdf/es/java/region-based-extraction/).
+- [Extract text from highlights, stamp annotations, and superscript or subscript content](/pdf/es/java/annotation-and-special-text/).
+- [Improve extraction from multi-column layouts](/pdf/es/java/text-extraction-from-multi-column-pdf/).

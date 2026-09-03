@@ -9,7 +9,7 @@ lastmod: "2026-09-03"
 ---
 Esta sección incluye los siguientes temas:
 
-- [Trabajando con la conversión de documentos en Python](/pdf/es/java/working-with-document-conversion-in-python/)
-- [Trabajando con el objeto de documento en Python](/pdf/es/java/working-with-document-object-in-python/)
-- [Trabajando con páginas en Python](/pdf/es/java/working-with-pages-in-python/)
-- [Trabajando con Texto en Python](/pdf/es/java/working-with-text-in-python/)
+- [Working with Document Conversion in Python](/pdf/es/java/working-with-document-conversion-in-python/)
+- [Working with Document Object in Python](/pdf/es/java/working-with-document-object-in-python/)
+- [Working with Pages in Python](/pdf/es/java/working-with-pages-in-python/)
+- [Working with Text in Python](/pdf/es/java/working-with-text-in-python/)

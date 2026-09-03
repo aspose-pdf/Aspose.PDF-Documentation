@@ -52,7 +52,7 @@ Las siguientes son las plataformas compatibles:
 
 Las siguientes versiones de ejemplos en ejecución están disponibles para descargar desde GitHub:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose-Pdf-Java-for-Jython)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose-Pdf-Java-for-Jython)
 
 Descargar componente Aspose.PDF for Java:
 
@@ -99,7 +99,7 @@ Por eso ofrecemos soporte gratuito. Cualquier persona que use nuestro producto, 
 
 Puede registrar cualquier problema o sugerencia relacionado conВ Aspose.PDF Java for Jython utilizando cualquiera de las siguientes plataformas:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 ### Extender y Contribuir
 
@@ -109,4 +109,4 @@ Aspose.PDF Java for Jython es de código abierto y su código fuente está dispo
 
 Puede obtener el código fuente más reciente en una de las siguientes ubicaciones
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java)

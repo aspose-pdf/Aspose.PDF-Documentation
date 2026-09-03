@@ -15,6 +15,6 @@ Abstract: Esta sección explica cómo administrar las funciones de navegación e
 ---
 Aspose.PDF for Java incluye APIs para marcadores, enlaces y acciones interactivas. Puede utilizar estas funciones para mejorar la navegación dentro de un documento, conectar con recursos externos y desencadenar comportamientos a partir de la interacción del usuario.
 
-- [Trabajar con enlaces PDF](/pdf/es/java/links/)
-- [Trabajar con acciones PDF](/pdf/es/java/actions/)
-- [Trabajar con marcadores PDF](/pdf/es/java/bookmarks/)
+- [Work with PDF links](/pdf/es/java/links/)
+- [Work with PDF actions](/pdf/es/java/actions/)
+- [Work with PDF bookmarks](/pdf/es/java/bookmarks/)

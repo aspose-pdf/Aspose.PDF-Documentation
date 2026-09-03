@@ -29,11 +29,11 @@ Para crear **Maven Project** mediante asistente para usar [Aspose.PDF for Java A
 
 Proporcione **Project Name, Location, GroupId, ArtifactId** y **Version** para su proyecto Maven y haga clic en **Finish.**
 
-Esto recuperará el [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) último [Dependencia Maven](http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/) referencia de [Repositorio Maven de Aspose Cloud](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) y configúralo en **pom.xml**. Si has optado por **Also Download Code Examples,** la descarga de los **Code Examples** también comenzará desde el [Repositorio de Ejemplos de API de Aspose.PDF for Java. ](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
+Esto recuperará el [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) último [Maven Dependency](http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/) referencia de [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) y configúralo en **pom.xml**. Si has optado por **Also Download Code Examples,** la descarga de los **Code Examples** también comenzará desde el [Aspose.PDF for Java API Examples Repository. ](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
 El siguiente proyecto **Maven** se creará en tu **NetBeans IDE** al completar el asistente:
 
 El **Maven Project** creado está configurado para usar **Aspose.PDF for Java API** y está listo para ser mejorado según los requisitos de su proyecto.
-   Si ha optado por descargar [Ejemplos de código](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples), puede usar **Aspose.PDF Code Example (wizard)** para importar los **Ejemplos de código** necesarios de [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API en su proyecto.
+   Si ha optado por descargar [Code Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples), puede usar **Aspose.PDF Code Example (wizard)** para importar los **Ejemplos de código** necesarios de [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API en su proyecto.
 
 ### Aspose.PDF Code Example (wizard)
 

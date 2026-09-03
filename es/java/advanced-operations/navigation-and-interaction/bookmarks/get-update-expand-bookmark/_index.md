@@ -19,7 +19,7 @@ Aspose.PDF for Java expone marcadores a través tanto del modelo de esquema del 
 
 Utilice este ejemplo cuando necesite inspeccionar las entradas de marcadores de nivel superior en el esquema del documento.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterar a través de la colección de contornos.
 1. Leer e imprimir el título del marcador, el estilo y los valores de color.
 
@@ -70,7 +70,7 @@ public static void getBookmarkPageNumber(Path inputFile) {
 
 Utilice este ejemplo cuando necesite inspeccionar tanto los elementos de esquema de nivel superior como los anidados.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere a través de los esquemas de nivel superior y muestre sus propiedades.
 1. Detecte los marcadores secundarios, luego itere a través de ellos y muestre sus propiedades.
 
@@ -103,7 +103,7 @@ public static void getChildBookmarks(Path inputFile) {
 
 Utilice este ejemplo cuando se deba modificar el título y el estilo de un marcador existente.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Acceda al elemento de esquema objetivo y a su marcador hijo.
 1. Actualice las propiedades del marcador y guarde el documento.
 
@@ -125,7 +125,7 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando el panel de marcadores debe abrirse y mostrar los elementos del esquema ampliados al visualizar el documento.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Establezca el modo de página para usar marcadores y marque cada elemento de marcador como abierto.
 1. Guarda el documento actualizado.
 

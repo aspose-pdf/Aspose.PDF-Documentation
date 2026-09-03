@@ -17,10 +17,10 @@ Aspose.PDF for Java expone capas PDF a través del `Layer` API en cada página. 
 
 ## Agregar capas a una página PDF
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Agregar un [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
-1. Crear y configurar lo necesario [Capa](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) objetos en la página.
-1. Guardar el PDF de salida [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Crear y configurar lo necesario [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) objetos en la página.
+1. Guardar el PDF de salida [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addLayers(Path outputFile) {
@@ -43,10 +43,10 @@ El ejemplo completo crea tres capas separadas con contenido de líneas rojas, ve
 
 ## Bloquear una capa
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Acceder al objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y obtener su [Capa](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) colección.
-1. Bloquear el objetivo [Capa](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
-1. Guardar el PDF actualizado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Acceder al objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y obtener su [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) colección.
+1. Bloquear el objetivo [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Guardar el PDF actualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void lockLayer(Path inputFile, Path outputFile) {

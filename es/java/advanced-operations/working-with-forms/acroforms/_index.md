@@ -15,10 +15,10 @@ Abstract: Esta sección introduce los AcroForms y explica cómo trabajar con for
 ---
 Los AcroForms son el modelo estándar de formularios interactivos utilizado en archivos PDF. Aspose.PDF for Java incluye ejemplos para crear nuevos campos, leer y actualizar datos existentes, e integrar formularios con sistemas externos.
 
-- [Crear AcroForms](/pdf/es/java/create-form/)
-- [Rellenar AcroForms](/pdf/es/java/fill-form/)
-- [Extraer datos de AcroForm](/pdf/es/java/extract-form/)
-- [Importar y exportar datos de formulario](/pdf/es/java/import-export-form-data/)
-- [Modificar AcroForms](/pdf/es/java/modifying-form/)
-- [Publicar datos de formulario](/pdf/es/java/posting-form/)
-- [Eliminar Form](/pdf/es/java/remove-form/)
+- [Create AcroForms](/pdf/es/java/create-form/)
+- [Fill AcroForms](/pdf/es/java/fill-form/)
+- [Extract AcroForm data](/pdf/es/java/extract-form/)
+- [Import and export form data](/pdf/es/java/import-export-form-data/)
+- [Modify AcroForms](/pdf/es/java/modifying-form/)
+- [Post form data](/pdf/es/java/posting-form/)
+- [Remove forms](/pdf/es/java/remove-form/)

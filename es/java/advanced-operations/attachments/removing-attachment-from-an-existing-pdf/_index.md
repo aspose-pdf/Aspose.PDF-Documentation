@@ -19,7 +19,7 @@ Los archivos adjuntos almacenados en un documento PDF pueden eliminarse individu
 
 Utilice este ejemplo cuando se deba eliminar un archivo incrustado con nombre del PDF.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Eliminar el adjunto por su clave de la colección de archivos incrustados.
 1. Guardar el documento de salida actualizado.
 
@@ -36,7 +36,7 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 
 Utilice este enfoque cuando se deba limpiar toda la colección de archivos incrustados.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Elimine todos los elementos de la colección de archivos incrustados.
 1. Guarde el documento de salida limpiado.
 

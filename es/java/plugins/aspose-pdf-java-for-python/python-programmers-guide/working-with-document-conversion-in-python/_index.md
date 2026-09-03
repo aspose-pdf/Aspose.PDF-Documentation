@@ -9,7 +9,7 @@ lastmod: "2026-09-03"
 ---
 Esta sección incluye los siguientes temas:
 
-- [Convertir PDF a formato DOC o DOCX en Python](/pdf/es/java/convert-pdf-to-doc-or-docx-format-in-python/)
-- [Convertir PDF a libro de Excel en Python](/pdf/es/java/convert-pdf-to-excel-workbook-in-python/)
-- [Convertir PDF a formato SVG en Python](/pdf/es/java/convert-pdf-to-svg-format-in-python/)
-- [Convertir archivo SVG a formato PDF en Python](/pdf/es/java/convert-svg-file-to-pdf-format-in-python/)
+- [Convert PDF to DOC or DOCX format in Python](/pdf/es/java/convert-pdf-to-doc-or-docx-format-in-python/)
+- [Convert PDF to Excel Workbook in Python](/pdf/es/java/convert-pdf-to-excel-workbook-in-python/)
+- [Convert PDF to SVG Format in Python](/pdf/es/java/convert-pdf-to-svg-format-in-python/)
+- [Convert SVG file to PDF format in Python](/pdf/es/java/convert-svg-file-to-pdf-format-in-python/)

@@ -14,8 +14,8 @@ sitemap:
 
 Iterar a través de las anotaciones de la página y leer el texto marcado de `HighlightAnnotation`.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Iterar a través del [Anotación](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objetos en el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Iterar a través del [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objetos en el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Verifique si cada anotación es una [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) antes de convertirla a la clase de anotación tipada.
 1. Lea el texto marcado de cada anotación de resaltado y imprímalo en la consola.
 
@@ -36,8 +36,8 @@ public static void extractHighlightedText(Path inputFile) {
 
 Lea el flujo de apariencia normal de una anotación de sello y páselo `TextAbsorber`.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Iterar a través del [Anotación](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objetos en el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Iterar a través del [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objetos en el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Filtra las anotaciones a aquellas cuyo tipo es `Stamp`.
 1. Crear un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) y solicite la entrada de apariencia normal del diccionario de apariencia de la anotación de sello.
 1. Visite la apariencia [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) y imprima el texto extraído.
@@ -63,9 +63,9 @@ public static void extractStampText(Path inputFile) {
 
 Usar `TextFragmentAbsorber` cuando necesites tanto el texto extraído como las banderas de superíndice o subíndice en cada fragmento.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear un [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) para análisis de texto a nivel de fragmento.
-1. Visite el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y recógelos [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objetos.
+1. Visite el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y recógelos [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objetos.
 1. Itera a través de esos fragmentos y lee el texto junto con las banderas de superíndice y subíndice desde `fragment.getTextState()`.
 1. Escriba los detalles extraídos en el archivo de salida.
 

@@ -19,7 +19,7 @@ Usar `TableAbsorber` cuando necesitas detectar estructuras de tabla en un PDF ex
 
 Utilice este ejemplo cuando necesite localizar tablas en cada página y recopilar el texto de sus celdas.
 
-1. Abrir el PDF fuente [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF fuente [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Visitar cada página con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Iterar a través de las tablas absorbidas, filas y celdas, y luego generar el texto extraído.
 

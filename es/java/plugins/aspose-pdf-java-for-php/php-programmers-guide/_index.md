@@ -9,7 +9,7 @@ lastmod: "2026-09-03"
 ---
 Esta sección incluye los siguientes temas:
 
-- [Trabajando con la Conversión de Documentos en PHP](/pdf/es/java/working-with-document-conversion-in-php/)
-- [Trabajando con el Objeto de Documento en PHP](/pdf/es/java/working-with-document-object-in-php/)
-- [Trabajando con Páginas en PHP](/pdf/es/java/working-with-pages-in-php/)
-- [Trabajando con texto en PHP](/pdf/es/java/working-with-text-in-php/)
+- [Working with Document Conversion in PHP](/pdf/es/java/working-with-document-conversion-in-php/)
+- [Working with Document Object in PHP](/pdf/es/java/working-with-document-object-in-php/)
+- [Working with Pages in PHP](/pdf/es/java/working-with-pages-in-php/)
+- [Working with Text in PHP](/pdf/es/java/working-with-text-in-php/)

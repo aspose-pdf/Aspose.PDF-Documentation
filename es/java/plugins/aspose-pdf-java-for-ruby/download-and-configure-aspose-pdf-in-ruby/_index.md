@@ -11,7 +11,7 @@ lastmod: "2026-09-03"
 
 Descargue las bibliotecas requeridas que se mencionan a continuación. Estas son las necesarias para ejecutar los ejemplos de Aspose.PDF Java para Ruby.
 
-- [Componente Aspose.PDF for Java](https://downloads.aspose.com/pdf/java)
+- [Aspose.PDF for Java Component](https://downloads.aspose.com/pdf/java)
 
 ## Descargar ejemplos de sitios de codificación social
 
@@ -19,4 +19,4 @@ Las siguientes versiones de ejemplos en funcionamiento están disponibles para d
 
 GitHub
 
-- [Aspose.PDF Java para Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
+- [Aspose.PDF Java for Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)

@@ -59,7 +59,7 @@ public static FooterArtifact createFooterArtifact(String text) {
 
 Utilice este ejemplo cuando una página deba mostrar un artefacto de encabezado reutilizable.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree el artefacto de encabezado mediante el método auxiliar.
 1. Agregue el artefacto a la página y guarde el archivo de salida.
 
@@ -77,7 +77,7 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando la página debe mostrar un artefacto de pie de página con formato reutilizable.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree el artefacto de pie de página mediante el método auxiliar.
 1. Agregue el artefacto a la página y guarde el archivo de salida.
 
@@ -95,7 +95,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 
 Utilice este método cuando los artefactos de encabezado y pie de página existentes deban eliminarse de la página.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterar a través de la colección de artefactos de página en orden inverso.
 1. Elimina los artefactos de paginación cuyo subtipo es encabezado o pie de página, luego guarda el documento.
 

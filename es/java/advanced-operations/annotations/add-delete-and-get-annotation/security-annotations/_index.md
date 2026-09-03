@@ -19,7 +19,7 @@ Los flujos de trabajo de anotaciones de seguridad en esta sección se centran en
 
 Utilice este ejemplo cuando el texto coincidente debe estar cubierto por anotaciones de redacción antes de que la redacción se aplique permanentemente.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Busque el texto objetivo y cree un [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) para cada coincidencia.
 1. Configure la apariencia de la redactación y guarde el documento.
 
@@ -51,7 +51,7 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 
 Este ejemplo aplica permanentemente anotaciones de redacción que ya existen en la página.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Recopilar anotaciones del tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
 1. Llamada `redact()` en cada anotación recopilada y guarda el archivo actualizado.
 
@@ -76,7 +76,7 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 
 Utilice este enfoque cuando el contenido objetivo se identifique por posición en lugar de por coincidencia de texto.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Detecte el rectángulo objetivo en la página, por ejemplo a partir de una ubicación de imagen.
 1. Crear un [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) para esa área y guardar el documento.
 
@@ -104,9 +104,9 @@ public static void redactArea(Path inputFile, Path outputFile) {
 
 ## Temas relacionados de anotaciones
 
-- [Anotaciones interactivas](/pdf/es/java/interactive-annotations/)
-- [Anotaciones de marcado](/pdf/es/java/markup-annotations/)
-- [Anotaciones de forma](/pdf/es/java/shape-annotations/)
-- [Anotaciones de texto](/pdf/es/java/text-based-annotations/)
-- [Anotaciones de marca de agua](/pdf/es/java/watermark-annotations/)
-- [Importar y exportar anotaciones](/pdf/es/java/import-export-annotations/)
+- [Interactive Annotations](/pdf/es/java/interactive-annotations/)
+- [Markup Annotations](/pdf/es/java/markup-annotations/)
+- [Shape Annotations](/pdf/es/java/shape-annotations/)
+- [Text Annotations](/pdf/es/java/text-based-annotations/)
+- [Watermark Annotations](/pdf/es/java/watermark-annotations/)
+- [Import and Export Annotations](/pdf/es/java/import-export-annotations/)

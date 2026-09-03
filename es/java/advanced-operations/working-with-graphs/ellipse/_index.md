@@ -15,13 +15,13 @@ Abstract: Este artículo muestra cómo agregar formas de elipse a documentos PDF
 ---
 ## Agregar contornos de elipse
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Agregar un [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
-1. Crear un [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y añádelo a la página.
-1. Crear el [Elipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) forma y configura su geometría.
-1. Añadir el [Elipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) al [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Crear un [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y añádelo a la página.
+1. Crear el [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) forma y configura su geometría.
+1. Añadir el [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) al [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
 1. Establezca las propiedades de forma requeridas por el ejemplo, incluyendo [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) y [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
-1. Guardar el PDF de salida [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guardar el PDF de salida [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addEllipse(Path outputFile) {
@@ -49,13 +49,13 @@ El ejemplo completo agrega dos elipses de contorno diferentes al mismo gráfico.
 
 ## Agregar texto dentro de las elipses
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Agregar un [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 1. Crear un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) y establecer las opciones de formato de texto requeridas.
-1. Crear un [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y añádelo a la página.
-1. Crear el [Elipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) forma y configura su geometría.
-1. Añadir el [Elipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) al [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
-1. Guardar el PDF de salida [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y añádelo a la página.
+1. Crear el [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) forma y configura su geometría.
+1. Añadir el [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) al [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
+1. Guardar el PDF de salida [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addTextInsideEllipse(Path outputFile) {

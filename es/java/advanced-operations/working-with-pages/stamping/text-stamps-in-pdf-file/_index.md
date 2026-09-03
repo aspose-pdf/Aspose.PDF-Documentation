@@ -19,7 +19,7 @@ Utilice sellos de texto cuando necesite agregar etiquetas visibles o marcas de a
 
 Utilice este ejemplo cuando una página debe mostrar una marca de texto rotada con estilo personalizado.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) y configure su ubicación y apariencia del texto.
 1. Agregue el sello a la página objetivo y guarde el documento.
 

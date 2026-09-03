@@ -17,9 +17,9 @@ Abstract: Este artículo explica cómo inspeccionar y contar los artefactos de p
 
 Utilice este ejemplo cuando necesite un recuento rápido de los principales subtipos de artefactos de paginación en una página.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Lea el [Artefacto](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) colección del destino [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Iterar a través de la página [Artefacto](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) colección y contar cada subtipo de paginación que necesites informar.
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Lea el [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) colección del destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Iterar a través de la página [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) colección y contar cada subtipo de paginación que necesites informar.
 
 ```java
 public static void countPdfArtifacts(Path inputFile) {

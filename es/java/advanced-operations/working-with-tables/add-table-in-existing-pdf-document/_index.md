@@ -19,8 +19,8 @@ Aspose.PDF for Java proporciona un rico `Table` API para crear tablas con person
 
 Utilice este ejemplo cuando necesite agregar una tabla simple con bordes uniformes y celdas de texto.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure sus bordes.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure sus bordes.
 1. Agregar filas y celdas, adjuntar la tabla a la página y guardar el documento.
 
 ```java
@@ -46,8 +46,8 @@ public static void createTable(Path outputFile) {
 
 Utilice este ejemplo cuando la tabla necesite celdas combinadas a través de filas o columnas.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y agregar filas.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y agregar filas.
 1. Configurar `ColSpan` y `RowSpan` en las celdas de destino, luego guarde el PDF.
 
 ```java
@@ -97,8 +97,8 @@ public static void addRowspanOrColspan(Path outputFile) {
 
 Utilice este ejemplo cuando necesite configurar los bordes, el relleno y el comportamiento de ajuste de celdas.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure anchos, bordes y relleno.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure anchos, bordes y relleno.
 1. Agregar filas y guardar el documento resultante.
 
 ```java
@@ -132,8 +132,8 @@ public static void addBorders(Path outputFile) {
 
 Utilice este ejemplo cuando la tabla debe ajustarse automáticamente al ancho disponible de la página.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y establecer `ColumnAdjustment.AutoFitToWindow`.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y establecer `ColumnAdjustment.AutoFitToWindow`.
 1. Agregar filas de muestra y guardar el PDF.
 
 ```java
@@ -165,9 +165,9 @@ public static void autoFit(Path outputFile) {
 
 Utilice este ejemplo cuando la tabla necesite mostrar contenido de imagen raster dentro de una de sus celdas.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y añade una fila con celdas de texto e imagen.
-1. Configura el [Imagen](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) tamaño y guardar el documento.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y añade una fila con celdas de texto e imagen.
+1. Configura el [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) tamaño y guardar el documento.
 
 ```java
 public static void addImage(Path imageFile, Path outputFile) {
@@ -194,9 +194,9 @@ public static void addImage(Path imageFile, Path outputFile) {
 
 Utilice este ejemplo cuando la tabla debe renderizar archivos SVG fila por fila.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y iterar a través de los archivos SVG.
-1. Agregar una fila por imagen, configurar el SVG [Imagen](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), y guarde el PDF.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y iterar a través de los archivos SVG.
+1. Agregar una fila por imagen, configurar el SVG [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), y guarde el PDF.
 
 ```java
 public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
@@ -224,8 +224,8 @@ public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
 
 Utilice este ejemplo cuando el contenido de la tabla deba incluir formato HTML en línea.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configurar bordes.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configurar bordes.
 1. Agregar [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) objetos a las celdas y guardar el documento.
 
 ```java
@@ -251,9 +251,9 @@ public static void addHtmlFragments(Path outputFile) {
 
 Utiliza este ejemplo cuando el contenido de la tabla deba renderizar expresiones TeX o LaTeX.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con bordes.
-1. Agregar [FragmentoTeX](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) objetos a las celdas y guarda el archivo de salida.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con bordes.
+1. Agregar [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) objetos a las celdas y guarda el archivo de salida.
 
 ```java
 public static void addLatexFragments(Path outputFile) {
@@ -278,8 +278,8 @@ public static void addLatexFragments(Path outputFile) {
 
 Utilice este ejemplo cuando una segunda tabla deba comenzar en una página separada después de una tabla grande.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y configure la configuración de página.
-1. Construye el primer grande [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y añádelo a la página.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y configure la configuración de página.
+1. Construye el primer grande [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y añádelo a la página.
 1. Crear una segunda tabla, establecer `InNewPage`, y guarde el documento.
 
 ```java
@@ -320,8 +320,8 @@ public static void addTableOnNewPage(Path outputFile) {
 
 Utilice este ejemplo cuando una tabla ancha debe continuar verticalmente y repetir columnas clave.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure la ruptura vertical con columnas repetidas.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure la ruptura vertical con columnas repetidas.
 1. Añade el encabezado y las filas de datos, luego guarda el documento.
 
 ```java
@@ -381,8 +381,8 @@ public static void addMarginsOrPadding(Path outputFile) {
 
 Utilice este ejemplo cuando la tabla deba usar un estilo de esquinas redondeadas en lugar de bordes rectangulares estándar.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure los ajustes de borde redondeado.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure los ajustes de borde redondeado.
 1. Añade filas a la tabla y guarda el PDF.
 
 ```java
@@ -410,8 +410,8 @@ public static void createTableWithRoundCorner(Path outputFile) {
 
 Utilice este ejemplo cuando las tablas de varias páginas deban repetir sus filas de encabezado en cada página de continuación.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un verticalmente roto [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure el recuento de filas repetidas y el estilo.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un verticalmente roto [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure el recuento de filas repetidas y el estilo.
 1. Agregar filas de encabezado y filas de datos, luego guardar el documento.
 
 ```java
@@ -460,8 +460,8 @@ public static void addRepeatingRows(Path outputFile) {
 
 Utilice este ejemplo cuando las primeras columnas deban repetirse mientras la tabla se divide verticalmente en la misma página.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y configure el tamaño de página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y establecer columnas repetidas más comportamiento de ajuste automático.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y configure el tamaño de página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y establecer columnas repetidas más comportamiento de ajuste automático.
 1. Agregar encabezado y filas de datos, luego guardar el PDF.
 
 ```java
@@ -506,8 +506,8 @@ public static void addRepeatingColumns(Path outputFile) {
 
 Utilice este ejemplo cuando filas de tabla específicas deben comenzar en una nueva página.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y poblar muchas filas.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y poblar muchas filas.
 1. Marcar filas seleccionadas con `InNewPage` y guarda el documento.
 
 ```java
@@ -537,8 +537,8 @@ public static void insertPageBreak(Path outputFile) {
 
 Utilice este ejemplo cuando el texto de la celda deba mostrarse en diferentes ángulos de rotación.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y añada una fila con múltiples celdas.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y añada una fila con múltiples celdas.
 1. Crear rotado [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objetos, agréguelos a las celdas y guarde el PDF.
 
 ```java

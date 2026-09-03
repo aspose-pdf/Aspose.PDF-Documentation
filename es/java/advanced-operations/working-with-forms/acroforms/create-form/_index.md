@@ -19,8 +19,8 @@ Aspose.PDF for Java le permite crear una amplia gama de tipos de campo AcroForm 
 
 Utilice este ejemplo cuando necesite agregar un campo de entrada de texto de una sola línea a un nuevo formulario PDF.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Campo de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) con un rectángulo de destino y configure su apariencia.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) con un rectángulo de destino y configure su apariencia.
 1. Agregue el campo al Form y guarde el documento.
 
 ```java
@@ -53,9 +53,9 @@ public static void addTextBoxField(Path outputFile) {
 
 Utilice este ejemplo cuando el mismo valor del campo de texto deba aparecer en varias posiciones de la página.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
 1. Defina varios rectángulos y apariencias para los widgets de campo.
-1. Crear el [Campo de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/), configure cada widget y guarde el documento.
+1. Crear el [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/), configure cada widget y guarde el documento.
 
 ```java
 public static void addTextBoxFieldNt(Path outputFile) {
@@ -103,8 +103,8 @@ public static void addTextBoxFieldNt(Path outputFile) {
 
 Utilice este ejemplo cuando el formulario deba permitir al usuario elegir una opción de un conjunto predefinido.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Campo de botón de opción](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) y agregue las opciones requeridas.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) y agregue las opciones requeridas.
 1. Agregue el campo al Form y guarde el PDF.
 
 ```java
@@ -126,8 +126,8 @@ public static void addRadioButton(Path outputFile) {
 
 Utilice este ejemplo cuando el usuario deba seleccionar un valor de una lista desplegable.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [CampoComboBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) y agregue sus opciones seleccionables.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) y agregue sus opciones seleccionables.
 1. Establezca la selección predeterminada y guarde el documento.
 
 ```java
@@ -152,8 +152,8 @@ public static void addComboBox(Path outputFile) {
 
 Utilice este ejemplo cuando el formulario necesite una opción verdadero/falso, como consentimiento o selección de funciones.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Campo de casilla de verificación](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) y configure su apariencia.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) y configure su apariencia.
 1. Añade la casilla de verificación al formulario y guarda el archivo de salida.
 
 ```java
@@ -175,8 +175,8 @@ public static void addCheckboxFieldToPdf(Path outputFile) {
 
 Utilice este ejemplo cuando el formulario debe mostrar múltiples opciones disponibles en una lista visible.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Campo de lista](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) y agregue las opciones disponibles.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) y agregue las opciones disponibles.
 1. Agregue el campo al Form y guarde el documento.
 
 ```java
@@ -200,8 +200,8 @@ public static void addListBoxFieldToPdf(Path outputFile) {
 
 Utilice este ejemplo cuando el documento debe reservar un área visible para una firma digital.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Campo de firma](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) en el rectángulo requerido.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) en el rectángulo requerido.
 1. Agrega el campo al formulario y guarda el PDF de salida.
 
 ```java
@@ -221,8 +221,8 @@ public static void addSignatureField(Path outputFile) {
 
 Utilice este ejemplo cuando el formulario deba mostrar datos legibles por máquina dentro de un campo de código de barras.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
-1. Crear un [Campo de código de barras](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) y añada el valor del código de barras.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega una página.
+1. Crear un [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) y añada el valor del código de barras.
 1. Agregue el campo al Form y guarde el documento.
 
 ```java

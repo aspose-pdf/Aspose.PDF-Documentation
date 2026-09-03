@@ -15,13 +15,13 @@ Abstract: Este artículo muestra cómo agregar formas de círculo a documentos P
 ---
 ## Agregar un contorno de círculo
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Agregar un [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
-1. Crear un [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y agrégalo a la página.
-1. Crear el [Círculo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) forma y configura su geometría.
-1. Agregar el [Círculo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) al [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Crear un [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y agrégalo a la página.
+1. Crear el [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) forma y configura su geometría.
+1. Agregar el [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) al [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
 1. Establezca las propiedades de forma requeridas por el ejemplo, incluyendo [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
-1. Guarde el PDF de salida [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el PDF de salida [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addCircle(Path outputFile) {
@@ -42,13 +42,13 @@ public static void addCircle(Path outputFile) {
 
 ## Agregar un círculo relleno con texto
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Agregar un [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
-1. Crear un [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y agrégalo a la página.
-1. Crear el [Círculo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) forma y configura su geometría.
-1. Agregar el [Círculo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) al [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Crear un [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y agrégalo a la página.
+1. Crear el [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) forma y configura su geometría.
+1. Agregar el [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) al [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
 1. Establezca las propiedades de forma requeridas por el ejemplo, incluyendo [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) y [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
-1. Guarde el PDF de salida [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el PDF de salida [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addCircleFilled(Path outputFile) {

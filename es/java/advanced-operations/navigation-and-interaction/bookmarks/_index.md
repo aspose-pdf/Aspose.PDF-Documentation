@@ -15,5 +15,5 @@ Abstract: Este artículo explica cómo trabajar con marcadores en documentos PDF
 ---
 Los marcadores ayudan a los usuarios a desplazarse rápidamente por archivos PDF extensos y proporcionan un esquema del documento similar a una tabla de contenido.
 
-- [Agregar y eliminar marcadores](/pdf/es/java/add-and-delete-bookmark/)
-- [Obtener, actualizar y expandir marcadores](/pdf/es/java/get-update-and-expand-bookmark/)
+- [Add and delete bookmarks](/pdf/es/java/add-and-delete-bookmark/)
+- [Get, update, and expand bookmarks](/pdf/es/java/get-update-and-expand-bookmark/)

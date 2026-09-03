@@ -19,10 +19,10 @@ Crear archivos PDF mediante código es un requisito común para informes, factur
 
 Para crear un documento PDF programáticamente:
 
-1. Crear un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objeto.
-1. Agregar un [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Crear un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objeto.
+1. Agregar un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 1. Agregar un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) a los párrafos de la página.
-1. Guardar el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) a un archivo de salida.
+1. Guardar el [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) a un archivo de salida.
 
 ## Crear un documento PDF sencillo
 

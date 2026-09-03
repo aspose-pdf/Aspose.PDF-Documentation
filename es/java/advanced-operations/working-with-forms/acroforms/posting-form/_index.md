@@ -37,10 +37,10 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 
 ## Agregar una acción de envío manualmente
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear el [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) y URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).
-1. Crear el [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) en el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y asignar la acción de envío.
-1. Guardar el PDF actualizado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear el [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) en el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y asignar la acción de envío.
+1. Guardar el PDF actualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {

@@ -17,10 +17,10 @@ Esta página agrupa las familias de anotaciones cubiertas por los ejemplos de Ja
 
 Utilice los siguientes temas:
 
-- [Anotaciones de texto](/pdf/es/java/text-based-annotations/)
-- [Anotaciones de marcado](/pdf/es/java/markup-annotations/)
-- [Anotaciones interactivas](/pdf/es/java/interactive-annotations/)
-- [Anotaciones de forma](/pdf/es/java/shape-annotations/)
-- [Anotaciones de medios](/pdf/es/java/media-annotations/)
-- [Anotaciones de Seguridad](/pdf/es/java/security-annotations/)
-- [Anotaciones de Marca de Agua](/pdf/es/java/watermark-annotations/)
+- [Text Annotations](/pdf/es/java/text-based-annotations/)
+- [Markup Annotations](/pdf/es/java/markup-annotations/)
+- [Interactive Annotations](/pdf/es/java/interactive-annotations/)
+- [Shape Annotations](/pdf/es/java/shape-annotations/)
+- [Media Annotations](/pdf/es/java/media-annotations/)
+- [Security Annotations](/pdf/es/java/security-annotations/)
+- [Watermark Annotations](/pdf/es/java/watermark-annotations/)

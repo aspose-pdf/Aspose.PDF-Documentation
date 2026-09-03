@@ -15,9 +15,9 @@ Abstract: Esta sección explica cómo trabajar con documentos PDF usando Aspose.
 ---
 Aspose.PDF for Java proporciona API a nivel de documento para crear, formatear, validar, reestructurar, combinar, dividir y optimizar archivos PDF.
 
-- [Crear documentos PDF](/pdf/es/java/create-pdf-document/)
-- [Formatear documentos PDF](/pdf/es/java/formatting-pdf-document/)
-- [Manipular documentos PDF](/pdf/es/java/manipulate-pdf-document/)
-- [Combinar archivos PDF](/pdf/es/java/merge-pdf-documents/)
-- [Optimizar archivos PDF](/pdf/es/java/optimize-pdf/)
-- [Dividir archivos PDF](/pdf/es/java/split-pdf-document/)
+- [Create PDF documents](/pdf/es/java/create-pdf-document/)
+- [Format PDF documents](/pdf/es/java/formatting-pdf-document/)
+- [Manipulate PDF documents](/pdf/es/java/manipulate-pdf-document/)
+- [Merge PDF files](/pdf/es/java/merge-pdf-documents/)
+- [Optimize PDF files](/pdf/es/java/optimize-pdf/)
+- [Split PDF files](/pdf/es/java/split-pdf-document/)

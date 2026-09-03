@@ -19,7 +19,7 @@ Los enlaces existentes pueden editarse encontrando la anotación de vínculo en 
 
 Utilice este ejemplo cuando el área de texto cubierta por una anotación de vínculo deba recolorarse.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Encuentre anotaciones de enlace y genere un rectángulo de búsqueda de texto a partir de cada área de anotación.
 1. Recoloree los fragmentos de texto coincidentes y guarde el documento.
 
@@ -51,7 +51,7 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 
 Utilice este ejemplo cuando el color visible de las anotaciones de enlace existentes deba cambiarse.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterar a través de las anotaciones de la página y filtrar por [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) objetos.
 1. Actualice el color de la anotación de enlace y guarde el documento.
 
@@ -74,7 +74,7 @@ public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando un enlace web existente debe apuntar a una nueva URI.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buscar anotaciones de enlace cuya acción es una [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Reemplazar el URI y guardar el documento actualizado.
 

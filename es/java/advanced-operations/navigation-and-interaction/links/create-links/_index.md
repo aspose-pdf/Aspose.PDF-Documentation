@@ -19,7 +19,7 @@ Aspose.PDF for Java usa `LinkAnnotation` junto con un objeto de acción para def
 
 Utilice este ejemplo cuando una anotación de enlace debe lanzar un archivo externo o un objetivo.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y seleccione la página de destino.
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y seleccione la página de destino.
 1. Crear un [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) y configure su borde y color.
 1. Asignar un [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) y guardar el documento.
 
@@ -45,7 +45,7 @@ public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputF
 
 Utilice este ejemplo cuando el enlace debe abrir una página en otro documento PDF.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) en la página de destino.
 1. Asignar un [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) y guarde el archivo de salida.
 
@@ -67,7 +67,7 @@ public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path out
 
 Utilice este ejemplo cuando el enlace deba navegar a otra página dentro del mismo documento PDF.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) y configure su apariencia.
 1. Asignar un [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) a la página de destino y guardar el documento.
 
@@ -97,7 +97,7 @@ public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFil
 
 Utilice este ejemplo cuando el enlace debe abrir un recurso web a través de una acción URI.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) en la página.
 1. Asignar un [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) y guarde el archivo de salida.
 

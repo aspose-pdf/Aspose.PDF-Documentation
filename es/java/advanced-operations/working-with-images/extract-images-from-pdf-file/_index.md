@@ -16,7 +16,7 @@ Aspose.PDF for Java admite la extracción directa de recursos de imagen y el fil
 
 Utilice este ejemplo cuando necesite guardar un recurso de imagen específico de una página PDF.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Acceder al objetivo [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) de los recursos de la página.
 1. Guarde el flujo de imagen en un archivo de salida.
 
@@ -34,7 +34,7 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 
 Utilice este ejemplo cuando solo se deben exportar las imágenes ubicadas dentro de un rectángulo seleccionado.
 
-1. Defina el objetivo [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) y abra el PDF de origen.
+1. Defina el objetivo [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) y abra el PDF de origen.
 1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para inspeccionar la ubicación de las imágenes en la página.
 1. Guarde solo las imágenes cuya ubicación encaje dentro de la región seleccionada.
 

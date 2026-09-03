@@ -11,7 +11,7 @@ lastmod: "2026-09-03"
 
 Descarga las bibliotecas requeridas mencionadas a continuación. Estas son las necesarias para ejecutar los ejemplos de Aspose.PDF Java for PHP.
 
-- **Aspose:** [Aspose.PDF for Java Componente](https://downloads.aspose.com/pdf/java)
+- **Aspose:** [Aspose.PDF for Java Component](https://downloads.aspose.com/pdf/java)
 - PHP/Java Puente
 
 ## Descargar Ejemplos de Sitios de Codificación Social

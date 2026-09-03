@@ -19,7 +19,7 @@ Aspose.PDF for Java puede aplicar una página de otro PDF como una marca o agreg
 
 Utilice este ejemplo cuando una página de un PDF separado debe usarse como una marca de fondo.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) desde la página PDF externa.
 1. Configure el sello y añádalo a la página de destino, luego guarde el resultado.
 
@@ -38,7 +38,7 @@ public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputF
 
 Utilice este ejemplo cuando la página de destino debe mostrar el número actual con formato de texto personalizado.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear y configurar un [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. Agregue el sello a la página y guarde el documento.
 
@@ -66,7 +66,7 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando la numeración de páginas debe comenzar desde un valor personalizado y usar numerales romanos en mayúsculas.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) y configure la numeración en numerales romanos.
 1. Agregue el sello a todas las páginas y guarde el PDF.
 

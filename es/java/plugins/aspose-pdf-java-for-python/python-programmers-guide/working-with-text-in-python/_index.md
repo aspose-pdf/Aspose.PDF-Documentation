@@ -9,6 +9,6 @@ lastmod: "2026-09-03"
 ---
 Esta sección incluye los siguientes temas:
 
-- [Agregar cadena HTML usando DOM en Python](/pdf/es/java/add-html-string-using-dom-in-python/)
-- [Agregar texto a un archivo PDF existente en Python](/pdf/es/java/add-text-to-an-existing-pdf-file-in-python/)
-- [Extraer texto de todas las páginas de un documento PDF en Python](/pdf/es/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/)
+- [Add HTML String using DOM in Python](/pdf/es/java/add-html-string-using-dom-in-python/)
+- [Add Text to an existing PDF file in Python](/pdf/es/java/add-text-to-an-existing-pdf-file-in-python/)
+- [Extract Text From All the Pages of a PDF Document in Python](/pdf/es/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/)

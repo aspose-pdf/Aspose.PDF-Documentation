@@ -14,7 +14,7 @@ sitemap:
 
 Usar `TextSearchOptions` con un `Rectangle` para restringir la extracción a un área definida en una página.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para recopilar texto del área de página seleccionada.
 1. Crear [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) para el objetivo [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) y habilitar `setLimitToPageBounds(true)` para que la extracción permanezca dentro del cuadro visible de la página.
 1. Aplique las opciones de búsqueda configuradas al absorber y visite el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
@@ -38,7 +38,7 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 
 Usar `ParagraphAbsorber` para inspeccionar los rectángulos de sección y los polígonos de párrafo junto con el texto extraído.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear un [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) y visite el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) para construir información de marcado de página.
 1. Lea el primer resultado de marcado de página y recorra sus secciones y párrafos.
 1. Recopile cada rectángulo de sección, polígono de párrafo y el texto del párrafo reconstruido a partir de su [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) líneas.

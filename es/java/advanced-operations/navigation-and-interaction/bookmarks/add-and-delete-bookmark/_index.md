@@ -19,7 +19,7 @@ Utilice la colección de esquema del documento para administrar marcadores progr
 
 Utilice este ejemplo cuando el documento debe incluir una única entrada de esquema de nivel superior.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) y configure su título, estilo y acción.
 1. Agregue el marcador a los contornos del documento y guarde el archivo.
 
@@ -42,7 +42,7 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 
 Este ejemplo crea un marcador principal y anida un marcador hijo debajo de él.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear padre y hijo [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) objetos.
 1. Agregue el hijo al padre, agregue el padre a la colección de contornos y guarde el documento.
 
@@ -70,7 +70,7 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 
 Utilice este enfoque cuando la colección completa de contornos debe eliminarse del documento.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Eliminar la colección completa de contornos.
 1. Guardar el archivo de salida limpio.
 
@@ -87,7 +87,7 @@ public static void deleteBookmarks(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando se deba eliminar un marcador con nombre sin borrar todo el árbol de marcadores.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Eliminar el marcador por título de la colección de esquemas.
 1. Guardar el documento actualizado.
 

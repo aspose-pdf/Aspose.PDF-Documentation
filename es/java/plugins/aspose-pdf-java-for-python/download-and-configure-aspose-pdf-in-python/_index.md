@@ -14,7 +14,7 @@ sitemap:
 
 Descargue las bibliotecas requeridas que se mencionan a continuación. Estas son necesarias para ejecutar los ejemplos de Aspose.PDF Java para Python.
 
-- Aspose: [Componente Aspose.PDF para Java](https://downloads.aspose.com/pdf/java)
+- Aspose: [Aspose.PDF for Java Component](https://downloads.aspose.com/pdf/java)
 - [JPype](https://pypi.python.org/pypi/JPype1)
 
 ## Descargar ejemplos de sitios de codificación social
@@ -34,5 +34,5 @@ Por favor, siga estos simples pasosВ para abrir y ampliar el código fuente mi
 2. Instale JPype desde: <http://sourceforge.net/projects/jpype/files/JPype/>
 3. Instale Java JDK desde: <http://www.oracle.com/technetwork/java/javase/downloads>
 4. Descargue Aspose.PDF for Java API que desea usar en sus proyectos python desde: <http://www.aspose.com/community/files/72/java-components/default.aspx> y copie los .jars descargados de las API en la carpeta %Python%/lib.
-5. Clonar [Ejemplos de Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) de github.
-6. Clonar [Ejemplos de Aspose.PDF Java for Python](http://asposepdfjavapython.codeplex.com/) de CodePlex.
+5. Clonar [Aspose.PDF Java for Python Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) de github.
+6. Clonar [Aspose.PDF Java for Python Examples](http://asposepdfjavapython.codeplex.com/) de CodePlex.

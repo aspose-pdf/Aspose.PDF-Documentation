@@ -14,7 +14,7 @@ Los documentos PDF con etiquetas proporcionan una estructura semántica que ayud
 
 Utilice esta sección cuando necesite crear o inspeccionar documentos PDF accesibles en Java:
 
-- [Crear PDF con etiquetas](/pdf/es/java/create-tagged-pdf/)
-- [Extraer contenido etiquetado de PDFs etiquetados](/pdf/es/java/extract-tagged-content-from-tagged-pdfs/)
-- [Establecer propiedades de los elementos de estructura](/pdf/es/java/setting-structure-elements-properties/)
-- [Trabajar con tablas en PDFs etiquetados](/pdf/es/java/working-with-table-in-tagged-pdfs/)
+- [Create Tagged PDF](/pdf/es/java/create-tagged-pdf/)
+- [Extract Tagged Content from Tagged PDFs](/pdf/es/java/extract-tagged-content-from-tagged-pdfs/)
+- [Setting Structure Elements Properties](/pdf/es/java/setting-structure-elements-properties/)
+- [Working with Table in Tagged PDFs](/pdf/es/java/working-with-table-in-tagged-pdfs/)

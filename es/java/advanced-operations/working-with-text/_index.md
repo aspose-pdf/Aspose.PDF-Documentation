@@ -15,10 +15,10 @@ Abstract: Esta sección explica cómo trabajar con texto en documentos PDF usand
 ---
 Aspose.PDF for Java proporciona APIs de texto para generación de documentos, búsqueda y extracción, superposiciones de texto interactivas, contenedores de diseño, estilo, reemplazo y rotación.
 
-- [Agregar texto a archivos PDF](/pdf/es/java/add-text-to-pdf-file/)
-- [Agregar descripciones emergentes al texto](/pdf/es/java/pdf-tooltip/)
-- [Usar FloatingBox para el diseño](/pdf/es/java/floating-box/)
-- [Reemplazar texto en PDF](/pdf/es/java/replace-text-in-pdf/)
-- [Rotar texto dentro del PDF](/pdf/es/java/rotate-text-inside-pdf/)
-- [Buscar y extraer texto](/pdf/es/java/search-and-get-text-from-pdf/)
-- [Formatear texto dentro de PDF](/pdf/es/java/text-formatting-inside-pdf/)
+- [Add text to PDF files](/pdf/es/java/add-text-to-pdf-file/)
+- [Add tooltips to text](/pdf/es/java/pdf-tooltip/)
+- [Use FloatingBox for layout](/pdf/es/java/floating-box/)
+- [Replace text in PDF](/pdf/es/java/replace-text-in-pdf/)
+- [Rotate text inside PDF](/pdf/es/java/rotate-text-inside-pdf/)
+- [Search and extract text](/pdf/es/java/search-and-get-text-from-pdf/)
+- [Format text inside PDF](/pdf/es/java/text-formatting-inside-pdf/)

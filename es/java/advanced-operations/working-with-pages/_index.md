@@ -15,13 +15,13 @@ Abstract: Esta sección muestra cómo trabajar con páginas PDF utilizando Aspos
 ---
 Aspose.PDF for Java incluye API a nivel de página para cambios en la colección de páginas, actualizaciones de cajas de página, encabezados y pies de página, rotación, extracción, movimiento y estampado visual.
 
-- [Añadir páginas](/pdf/es/java/add-pages/)
-- [Añadir encabezados y pies de página](/pdf/es/java/add-headers-and-footers-of-pdf-file/)
-- [Cambiar tamaño de página](/pdf/es/java/change-page-size/)
-- [Recortar páginas](/pdf/es/java/crop-pages/)
-- [Eliminar páginas](/pdf/es/java/delete-pages/)
-- [Extraer páginas](/pdf/es/java/extract-pages/)
-- [Obtener y establecer propiedades de página](/pdf/es/java/get-and-set-page-properties/)
-- [Mover páginas](/pdf/es/java/move-pages/)
-- [Rotar páginas](/pdf/es/java/rotate-pages/)
-- [Estampado](/pdf/es/java/stamping/)
+- [Add pages](/pdf/es/java/add-pages/)
+- [Add headers and footers](/pdf/es/java/add-headers-and-footers-of-pdf-file/)
+- [Change page size](/pdf/es/java/change-page-size/)
+- [Crop pages](/pdf/es/java/crop-pages/)
+- [Delete pages](/pdf/es/java/delete-pages/)
+- [Extract pages](/pdf/es/java/extract-pages/)
+- [Get and set page properties](/pdf/es/java/get-and-set-page-properties/)
+- [Move pages](/pdf/es/java/move-pages/)
+- [Rotate pages](/pdf/es/java/rotate-pages/)
+- [Stamping](/pdf/es/java/stamping/)

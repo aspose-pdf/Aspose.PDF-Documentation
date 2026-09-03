@@ -11,7 +11,7 @@ lastmod: "2026-09-03"
 
 ### Puente PHP / Java
 
-El PHP/Java Bridge es una implementación de un streaming, basado en XML\u0412 [protocolo de red](http://php-java-bridge.sourceforge.net/pjb/PROTOCOL.TXT), que puede usarse para conectar un motor de scripts nativo, por ejemplo PHP, Scheme o Python, con una máquina virtual Java. Es hasta 50 veces más rápido que RPC local vía SOAP, requiere menos recursos en el lado del servidor web. Es\u0412 [más rápido](http://php-java-bridge.sourceforge.net/pjb/FAQ.html#performance)В y más fiable que la comunicación directa mediante la Java Native Interface, y no requiere componentes adicionales para invocar procedimientos Java desde PHP o procedimientos PHP desde Java.
+El PHP/Java Bridge es una implementación de un streaming, basado en XML\u0412 [network protocol](http://php-java-bridge.sourceforge.net/pjb/PROTOCOL.TXT), que puede usarse para conectar un motor de scripts nativo, por ejemplo PHP, Scheme o Python, con una máquina virtual Java. Es hasta 50 veces más rápido que RPC local vía SOAP, requiere menos recursos en el lado del servidor web. Es\u0412 [faster](http://php-java-bridge.sourceforge.net/pjb/FAQ.html#performance)В y más fiable que la comunicación directa mediante la Java Native Interface, y no requiere componentes adicionales para invocar procedimientos Java desde PHP o procedimientos PHP desde Java.
 
 Leer más en [sourceforge.net](http://php-java-bridge.sourceforge.net/pjb/)
 
@@ -51,7 +51,7 @@ A continuación se presentan las plataformas compatibles:
 
 Descargue las bibliotecas requeridas mencionadas a continuación. Estas son las necesarias para ejecutar ejemplos de Aspose.PDF Java para PHP.
 
-- **Aspose:** [Aspose.PDF for Java Componente](https://downloads.aspose.com/pdf/java)
+- **Aspose:** [Aspose.PDF for Java Component](https://downloads.aspose.com/pdf/java)
 - PHP/Java Bridge
 
 ### Descargar ejemplos de sitios de codificación social
@@ -61,7 +61,7 @@ Las siguientes versiones de ejemplos en funcionamiento están disponibles para d
 ### GitHub
 
 - Ejemplos de Aspose.PDF Java para PHP
-  - [Aspose.PDF Java para PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
+  - [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
 
 ### Cómo configurar el código fuente en la plataforma Linux
 
@@ -145,7 +145,7 @@ Por favor, siga los siguientes pasos simples para configurar PHP/Java Bridge en 
 
 7. Copie su [Aspose.PDF Java](https://downloads.aspose.com/pdf/java) archivo jar a C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\WEB-INF\lib
 
-8. Clonar [Aspose.PDF Java para PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP) ejemplos dentro C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ folder.
+8. Clonar [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP) ejemplos dentro C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ folder.
 
 9. Copie la carpeta C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\java a su carpeta de ejemplos de Aspose.PDF Java para PHP.
 

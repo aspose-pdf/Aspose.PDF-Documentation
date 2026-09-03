@@ -22,13 +22,13 @@ Queremos que nuestros clientes prueben nuestros componentes a fondo antes de com
 - **El límite del número de elementos de colección que se pueden procesar.**
 En la versión de evaluación de cualquier colección, solo puede procesar cuatro elementos (por ejemplo, solo 4 páginas, 4 campos de formulario, etc.).
 
-Puede descargar una versión de evaluación de **Aspose.PDF** para Java desde [Repositorio Aspose](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). La versión de evaluación ofrece exactamente las mismas capacidades que la versión con licencia del producto. Además, la versión de evaluación simplemente se vuelve con licencia cuando compra una licencia y agrega un par de líneas de código para aplicar la licencia.
+Puede descargar una versión de evaluación de **Aspose.PDF** para Java desde [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). La versión de evaluación ofrece exactamente las mismas capacidades que la versión con licencia del producto. Además, la versión de evaluación simplemente se vuelve con licencia cuando compra una licencia y agrega un par de líneas de código para aplicar la licencia.
 
-Una vez que esté satisfecho con su evaluación de **Aspose.PDF**, puede [adquirir una licencia](https://purchase.aspose.com/) en el sitio web de Aspose. Familiarícese con los diferentes tipos de suscripción ofrecidos. Si tiene alguna pregunta, no dude en contactar al equipo de ventas de Aspose.
+Una vez que esté satisfecho con su evaluación de **Aspose.PDF**, puede [purchase a license](https://purchase.aspose.com/) en el sitio web de Aspose. Familiarícese con los diferentes tipos de suscripción ofrecidos. Si tiene alguna pregunta, no dude en contactar al equipo de ventas de Aspose.
 
 Cada licencia de Aspose incluye una suscripción de un año para actualizaciones gratuitas a cualquier versión nueva o correcciones que se publiquen durante este período. El soporte técnico es gratuito e ilimitado y se brinda tanto a usuarios con licencia como a usuarios de evaluación.
 
->Si desea probar Aspose.PDF for Java sin las limitaciones de la versión de evaluación, también puede solicitar una Licencia Temporal de 30 días. Por favor, consulte [¿Cómo obtener una Licencia Temporal?](https://purchase.aspose.com/temporary-license)
+>Si desea probar Aspose.PDF for Java sin las limitaciones de la versión de evaluación, también puede solicitar una Licencia Temporal de 30 días. Por favor, consulte [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
 ## Licencia clásica
 
@@ -88,9 +88,9 @@ if (com.aspose.pdf.Document.isLicensed()) {
 
 ## Licencia medida
 
-Aspose.PDF permite a los desarrolladores aplicar una clave medida. Es un nuevo mecanismo de licenciamiento. El nuevo mecanismo de licenciamiento se usará junto con el método de licenciamiento existente. Los clientes que deseen ser facturados según el uso de las funciones de la API pueden usar la licencia medida.В Para más detalles, consulteВ [Preguntas frecuentes sobre licencias medida](https://purchase.aspose.com/faqs/licensing/metered)В sección.
+Aspose.PDF permite a los desarrolladores aplicar una clave medida. Es un nuevo mecanismo de licenciamiento. El nuevo mecanismo de licenciamiento se usará junto con el método de licenciamiento existente. Los clientes que deseen ser facturados según el uso de las funciones de la API pueden usar la licencia medida.В Para más detalles, consulteВ [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered)В sección.
 
-Una nueva claseВ [Medido](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered)В ha sido introducido para aplicar la clave medida. A continuación se muestra el código de ejemplo que demuestra cómo establecer la clave pública y privada medida.
+Una nueva claseВ [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered)В ha sido introducido para aplicar la clave medida. A continuación se muestra el código de ejemplo que demuestra cómo establecer la clave pública y privada medida.
 
 ```java
 String publicKey = "";

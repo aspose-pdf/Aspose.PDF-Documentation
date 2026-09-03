@@ -19,7 +19,7 @@ Aspose.PDF for Java puede inspeccionar el recuento de páginas, los page box, la
 
 Utilice este ejemplo cuando necesite leer el número total de páginas en un PDF.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Lea el tamaño de la colección de páginas.
 1. Muestre el recuento total de páginas.
 
@@ -35,7 +35,7 @@ public static void getPageCount(Path inputFile) {
 
 Usa este ejemplo cuando necesites saber cuántas páginas producirá el contenido generado antes de escribir el archivo.
 
-1. Crea un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega contenido a una página.
+1. Crea un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega contenido a una página.
 1. Procese los párrafos para forzar el cálculo del diseño.
 1. Lea el recuento de páginas resultante y muéstrelo.
 
@@ -56,7 +56,7 @@ public static void getPageCountWithoutSaving(Path inputFile) {
 
 Utilice este ejemplo cuando necesite inspeccionar todas las dimensiones principales de la caja y los valores de rotación de la página.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y acceda a la página objetivo.
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y acceda a la página objetivo.
 1. Recopile los valores del cuadro de página en un mapa.
 1. Muestre las dimensiones y la información de rotación de la página.
 
@@ -92,7 +92,7 @@ public static void getPageProperties(Path inputFile) {
 
 Utilice este ejemplo cuando necesite identificar si las páginas son en blanco y negro, en escala de grises o RGB.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere a través de todas las páginas y lea cada página [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
 1. Convierta el valor del enum a texto legible y muestre el resultado.
 

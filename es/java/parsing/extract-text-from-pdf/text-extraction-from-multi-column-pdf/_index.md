@@ -16,11 +16,11 @@ Los diseños de varias columnas a menudo requieren procesamiento adicional para 
 
 Esta técnica actualiza los tamaños de fuente de los fragmentos de texto, guarda el documento ajustado en memoria y luego extrae texto del resultado transformado.
 
-1. Abrir el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abrir el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear un [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) y visitar todas las páginas del documento para recopilar [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objetos.
 1. Itera a través de los fragmentos y reduce el tamaño de fuente de cada uno según la proporción solicitada para que el diseño denso de columnas pueda normalizarse antes de la extracción.
-1. Guarda lo ajustado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) a un flujo de bytes en memoria.
-1. Reabrir un segundo [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) desde ese búfer de memoria.
+1. Guarda lo ajustado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) a un flujo de bytes en memoria.
+1. Reabrir un segundo [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) desde ese búfer de memoria.
 1. Crear un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/), visite todas las páginas del documento transformado y escriba el texto extraído en el archivo de salida.
 
 ```java
@@ -47,7 +47,7 @@ public static void extractTextReduceFont(Path inputFile, Path outputFile, double
 
 Usar `TextExtractionOptions` en modo de formato puro y ajustar el factor de escala para diseños con muchas columnas.
 
-1. Abrir el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abrir el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para extracción de documento completo.
 1. Crear [TextExtractionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textextractionoptions/) en modo de formato puro para que se use el comportamiento de extracción sensible al diseño.
 1. Establezca el factor de escala y aplique las opciones de extracción al absorber antes de visitar las páginas.

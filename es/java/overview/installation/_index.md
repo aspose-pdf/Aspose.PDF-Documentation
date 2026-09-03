@@ -34,7 +34,7 @@ Con esta biblioteca, puede implementar capacidades avanzadas para crear archivos
 
 {{% alert color="primary" %}}
 
-Puede descargar [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) para evaluación. La descarga de evaluación es la misma que la descarga comprada. La versión de evaluación simplemente se licencia cuando agrega unas cuantas líneas de código a [aplicar la licencia](/pdf/es/java/licensing/).
+Puede descargar [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) para evaluación. La descarga de evaluación es la misma que la descarga comprada. La versión de evaluación simplemente se licencia cuando agrega unas cuantas líneas de código a [apply the license](/pdf/es/java/licensing/).
 
 {{% /alert %}}
 
@@ -46,13 +46,13 @@ La versión de evaluación de Aspose.PDF proporciona la funcionalidad completa d
 
 {{% alert color="primary" %}}
 
-Si desea probar Aspose.PDF for Java sin las limitaciones de la versión de evaluación, también puede solicitar una Licencia Temporal de 30 días. Por favor, consulte [¿Cómo obtener una Licencia Temporal?](https://purchase.aspose.com/temporary-license)
+Si desea probar Aspose.PDF for Java sin las limitaciones de la versión de evaluación, también puede solicitar una Licencia Temporal de 30 días. Por favor, consulte [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
 {{% /alert %}}
 
 ## Instalando Aspose.PDF for Java desde el repositorio de Aspose
 
-Aspose aloja todas las API de Java en В [Repositorio de Aspose](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). Usted puedeВ fácilmente usar Aspose.PDF for Java API directamente en sus proyectos Maven con configuraciones simples.
+Aspose aloja todas las API de Java en В [Aspose Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). Usted puedeВ fácilmente usar Aspose.PDF for Java API directamente en sus proyectos Maven con configuraciones simples.
 
 ### Especifique la Configuración del Repositorio de Aspose
 

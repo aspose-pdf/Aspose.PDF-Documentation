@@ -15,7 +15,7 @@ Abstract: Esta sección explica cómo proteger y firmar documentos PDF usando As
 ---
 Aspose.PDF for Java incluye API de fachada para firmas digitales y seguridad de documentos. Puede firmar o certificar archivos PDF, inspeccionar firmas existentes, cifrar y descifrar documentos, y aplicar restricciones de permisos con contraseñas de usuario y de propietario.
 
-- [Firmar digitalmente un archivo PDF](/pdf/es/java/digitally-sign-pdf-file/)
-- [Extraer información de la firma](/pdf/es/java/extract-image-and-signature-information/)
-- [Establecer privilegios, cifrar y descifrar archivos PDF](/pdf/es/java/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Notas sobre la firma con tarjeta inteligente](/pdf/es/java/sign-pdf-document-from-smart-card/)
+- [Digitally sign a PDF file](/pdf/es/java/digitally-sign-pdf-file/)
+- [Extract signature information](/pdf/es/java/extract-image-and-signature-information/)
+- [Set privileges, encrypt, and decrypt PDF files](/pdf/es/java/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Smart card signing notes](/pdf/es/java/sign-pdf-document-from-smart-card/)

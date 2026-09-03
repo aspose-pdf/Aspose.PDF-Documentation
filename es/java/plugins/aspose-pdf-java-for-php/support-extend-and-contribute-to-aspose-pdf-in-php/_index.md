@@ -15,7 +15,7 @@ Por eso ofrecemos soporte gratuito. Cualquier persona que utilice nuestro produc
 
 Puede registrar cualquier problema o sugerencia relacionado con\u0412\u00A0Aspose.Cells Java for PHP usando cualquiera de las siguientes plataformas:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 ## Extender y Contribuir
 
@@ -25,4 +25,4 @@ Aspose.PDF Java for PHP es de código abierto y su código fuente está disponib
 
 Puede obtener el último código fuente de una de las siguientes ubicaciones
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)

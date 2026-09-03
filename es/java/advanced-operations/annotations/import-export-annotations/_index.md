@@ -15,12 +15,12 @@ Abstract: Este artículo explica cómo copiar anotaciones de un PDF de origen y 
 ---
 ## Copiar anotaciones de un PDF a otro
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Agregar un [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al destino [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Agregar cada [Anotación](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) al objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Leer o iterar a través del [Anotación](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) elementos en la página de destino.
-1. Guardar el PDF actualizado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Enumerar el [Anotación](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) elementos en la primera página de origen y agregar cada uno a la página de destino.
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al destino [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar cada [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) al objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Leer o iterar a través del [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) elementos en la página de destino.
+1. Guardar el PDF actualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enumerar el [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) elementos en la primera página de origen y agregar cada uno a la página de destino.
 
 ```java
 public static void importExport(Path inputFile, Path outputFile) {

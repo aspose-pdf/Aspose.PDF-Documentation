@@ -19,7 +19,7 @@ Usar `TableAbsorber` cuando necesites localizar tablas existentes y actualizar s
 
 Utilice este ejemplo cuando el texto en una celda detectada deba actualizarse sin reconstruir toda la tabla.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y visite la página con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y visite la página con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Valide que existan la tabla objetivo y los fragmentos de texto de la celda.
 1. Reemplace el texto de la celda y guarde el documento actualizado.
 
@@ -47,8 +47,8 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando la tabla original deba ser reemplazada completamente por una tabla recién construida.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y detectar tablas en la página.
-1. Crear una nueva [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con la estructura deseada.
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y detectar tablas en la página.
+1. Crear una nueva [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con la estructura deseada.
 1. Reemplace la tabla absorbida y guarde el PDF de salida.
 
 ```java

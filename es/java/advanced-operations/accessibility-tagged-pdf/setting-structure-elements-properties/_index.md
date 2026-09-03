@@ -337,7 +337,7 @@ public static void setLanguageAndTitle(Path outputFile) {
 
 Este método auxiliar crea un párrafo, asigna su idioma y lo agrega a la estructura raíz.
 
-1. Crear un [Elemento de párrafo](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
+1. Crear un [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
 1. Establezca el texto y el idioma para el elemento.
 1. Agregar el párrafo al elemento raíz del contenido etiquetado.
 

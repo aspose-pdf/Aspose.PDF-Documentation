@@ -23,7 +23,7 @@ Aspose.PDF for Java ofrece una increíble cantidad de funciones, que incluyen op
 
 ### Aspose.PDF Java (Maven) for Eclipse
 
-- Aspose.PDF Java (Maven) for Eclipse es un complemento para **Eclipse IDE** de **Aspose.** Este complemento está destinado a desarrolladores que utilizan la plataforma Maven para desarrollos Java y desean usar Aspose.PDF for Java en sus proyectos. El complemento le permite crear proyectos Maven para usar la API de Aspose.PDF for Java y también descargar [Ejemplos de código](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) de la API.
+- Aspose.PDF Java (Maven) for Eclipse es un complemento para **Eclipse IDE** de **Aspose.** Este complemento está destinado a desarrolladores que utilizan la plataforma Maven para desarrollos Java y desean usar Aspose.PDF for Java en sus proyectos. El complemento le permite crear proyectos Maven para usar la API de Aspose.PDF for Java y también descargar [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) de la API.
 - El complemento brinda las siguientes funciones para trabajar con la API de Aspose.PDF for Java dentro del **Eclipse IDE** cómodamente:
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
@@ -34,12 +34,12 @@ El complemento contiene dos asistentes
 **Aspose.PDF Maven Project (asistente)**
 
 - Este asistente de Nuevo Proyecto permite a los desarrolladores crear un proyecto **Maven** para usar Aspose.PDF for Java desde Nuevo -> Proyecto -> Maven-> Proyecto Maven de Aspose.PDF.
-- La referencia de la dependencia Maven de la API Aspose.PDF for Java se obtiene automáticamente de [Repositorio Maven de Aspose Cloud](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) y se agrega al pom.xml.
+- La referencia de la dependencia Maven de la API Aspose.PDF for Java se obtiene automáticamente de [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) y se agrega al pom.xml.
 - El proyecto creado siempre contendrá la versión más reciente disponible de la dependencia **Maven** para la API Aspose.PDF for Java.
-- Los pasos del asistente también se presentan con la opción de descargar [Ejemplos de código](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) para usar la API de Aspose.PDF for Java.
+- Los pasos del asistente también se presentan con la opción de descargar [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) para usar la API de Aspose.PDF for Java.
 Ejemplo de código de Aspose.PDF (asistente)
 
-- Este asistente de Nuevo Archivo le permite copiar lo descargado [Ejemplos de código](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) en su proyecto para usar Aspose.PDF for Java desde Nuevo -> Otro -> Java -> Ejemplo de código de Aspose.PDF.
+- Este asistente de Nuevo Archivo le permite copiar lo descargado [Code Examples](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) en su proyecto para usar Aspose.PDF for Java desde Nuevo -> Otro -> Java -> Ejemplo de código de Aspose.PDF.
 - Las muestras disponibles se muestran en formato de árbol desde donde el usuario puede seleccionarlas de forma categórica.
 - Todos los ejemplos dentro de la categoría seleccionada se copiarán a la carpeta del paquete "**com.aspose.pdf.examples**" del proyecto, junto con los recursos necesarios dentro de la carpeta "**src/main/resources**" necesarios para ejecutar los ejemplos.
 - Los ejemplos de código de Aspose.PDF for Java API están destinados a demostrar las diversas funciones de la API.
@@ -87,7 +87,7 @@ Usando Aspose.PDF Java (Maven) para Eclipse
 
 ### ¿Cómo aplicar la licencia de Aspose?
 
-Este complemento utiliza una versión de evaluación de Aspose.PDF. Una vez que esté satisfecho con su evaluación, puede comprar una licencia en el [Sitio web de Aspose](https://purchase.aspose.com/buy).
+Este complemento utiliza una versión de evaluación de Aspose.PDF. Una vez que esté satisfecho con su evaluación, puede comprar una licencia en el [Aspose website](https://purchase.aspose.com/buy).
 Para eliminar el mensaje de evaluación y las limitaciones de funciones, se debe aplicar una licencia del producto. Recibirás un archivo de licencia después de haber comprado el producto. Por favor, sigue los pasos a continuación para aplicar la licencia.
 
 - Asegúrate de que el archivo de licencia se llame Aspose.PDF.Java.lic
@@ -110,7 +110,7 @@ license.setLicense("Aspose.PDF.Java.lic");
 - O deseas informar cualquier problema que hayas encontrado en el plugin
 - ¿Tienes alguna sugerencia de mejora o te gustaría realizar alguna solicitud de función?
 
-Por favor, sigue [**Rastreador de problemas de GitHub**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues) para registrar cualquier problema encontrado en el plugin.
+Por favor, sigue [**GitHub Issues Tracker**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues) para registrar cualquier problema encontrado en el plugin.
 
 ### Extiende y contribuye
 

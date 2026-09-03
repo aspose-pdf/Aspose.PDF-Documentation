@@ -42,4 +42,4 @@ La siguiente tabla indica los formatos de archivo que Aspose.PDF for Java puede 
 |[BMP](https://docs.fileformat.com/image/bmp/)|Guarda el documento en formato BMP|В |{{< emoticons/tick >}}|В |
 |[GIF](https://docs.fileformat.com/image/gif/)|Intercambio GráficoВ Formato|В |{{< emoticons/tick >}}|В |
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Guarda el documento como una imagen TIFF de una sola página o de varias páginas|В |{{< emoticons/tick >}}|В |
-|[Texto](https://docs.fileformat.com/word-processing/txt/)|Guardar el documento en formato de texto|В |{{< emoticons/tick >}}|В |
+|[Text](https://docs.fileformat.com/word-processing/txt/)|Guardar el documento en formato de texto|В |{{< emoticons/tick >}}|В |

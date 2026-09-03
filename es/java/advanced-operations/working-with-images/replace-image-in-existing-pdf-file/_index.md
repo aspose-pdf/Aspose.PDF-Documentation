@@ -14,10 +14,10 @@ Utilice la colección de imágenes de la página o la búsqueda basada en ubicac
 
 ## Reemplazar una imagen por índice de recurso
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Acceder a los recursos de imagen en el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Acceder a los recursos de imagen en el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Reemplazar el recurso de imagen del objetivo con el nuevo archivo de imagen.
-1. Guarde el PDF actualizado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el PDF actualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -31,10 +31,10 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 
 ## Reemplazar una imagen usando `ImagePlacementAbsorber`
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crear un [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) y visitar el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) y visitar el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Obtener el objetivo [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) y reemplázalo con el nuevo flujo de imagen.
-1. Guarde el PDF actualizado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el PDF actualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void replaceImageWithAbsorber(Path inputFile, Path imageFile, Path outputFile) throws Exception {

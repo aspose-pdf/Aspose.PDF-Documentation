@@ -9,12 +9,12 @@ lastmod: "2026-09-03"
 ---
 Esta sección incluye los siguientes temas:
 
-- [Concatenar archivos PDF en PHP](/pdf/es/java/concatenate-pdf-files-in-php/)
-- [Eliminar una página específica del archivo PDF en PHP](/pdf/es/java/delete-a-particular-page-from-the-pdf-file-in-php/)
-- [Obtener una página específica en un archivo PDF en PHP](/pdf/es/java/get-a-particular-page-in-a-pdf-file-in-php/)
-- [Obtener recuento de páginas de PDF en PHP](/pdf/es/java/get-page-count-of-pdf-in-php/)
-- [Obtener propiedades de la página en PHP](/pdf/es/java/get-page-properties-in-php/)
-- [Insertar una página vacía al final del archivo PDF en PHP](/pdf/es/java/insert-an-empty-page-at-end-of-pdf-file-in-php/)
-- [Insertar una página vacía en un archivo PDF en PHP](/pdf/es/java/insert-an-empty-page-into-a-pdf-file-in-php/)
-- [Dividir archivo PDF en páginas individuales en PHP](/pdf/es/java/split-pdf-file-into-individual-pages-in-php/)
-- [Actualizar dimensiones de la página en PHP](/pdf/es/java/update-page-dimensions-in-php/)
+- [Concatenate PDF Files in PHP](/pdf/es/java/concatenate-pdf-files-in-php/)
+- [Delete a Particular Page from the PDF File In PHP](/pdf/es/java/delete-a-particular-page-from-the-pdf-file-in-php/)
+- [Get a Particular Page in a PDF File in PHP](/pdf/es/java/get-a-particular-page-in-a-pdf-file-in-php/)
+- [Get Page Count of PDF in PHP](/pdf/es/java/get-page-count-of-pdf-in-php/)
+- [Get Page Properties in PHP](/pdf/es/java/get-page-properties-in-php/)
+- [Insert an Empty Page at End of PDF File in PHP](/pdf/es/java/insert-an-empty-page-at-end-of-pdf-file-in-php/)
+- [Insert an Empty Page into a PDF File in PHP](/pdf/es/java/insert-an-empty-page-into-a-pdf-file-in-php/)
+- [Split PDF File into Individual Pages in PHP](/pdf/es/java/split-pdf-file-into-individual-pages-in-php/)
+- [Update Page Dimensions in PHP](/pdf/es/java/update-page-dimensions-in-php/)

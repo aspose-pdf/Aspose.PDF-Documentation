@@ -19,7 +19,7 @@ El ejemplo en Java crea tablas PDF a partir de datos CSV sin depender de bibliot
 
 Utilice este ejemplo cuando las columnas CSV seleccionadas deban transformarse en una tabla PDF con estilo.
 
-1. Crear un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure sus bordes.
+1. Crear un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure sus bordes.
 1. Detecte los índices de columna necesarios de la fila de encabezado del CSV.
 1. Agrega la fila de encabezado y el número solicitado de filas de datos, luego devuelve la tabla.
 
@@ -58,7 +58,7 @@ Utilice este ejemplo cuando la entrada CSV debe renderizarse como un documento d
 
 1. Lea las filas CSV del archivo de entrada.
 1. Vista previa de un subconjunto de las filas analizadas en la consola.
-1. Crear un PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), agrega la tabla generada y guarda el archivo de salida.
+1. Crear un PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), agrega la tabla generada y guarda el archivo de salida.
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {

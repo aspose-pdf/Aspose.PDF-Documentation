@@ -19,7 +19,7 @@ Aspose.PDF for Java admite sellos de imagen como superposiciones y elementos de 
 
 Utilice este ejemplo cuando una página deba mostrar un sello de imagen con una ubicación personalizada y opacidad.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) y configure su apariencia.
 1. Agregue el sello a la página y guarde el documento.
 
@@ -45,7 +45,7 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 
 Utilice este ejemplo cuando necesite ajustar la calidad de renderizado del sello de imagen.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) y establezca el valor de calidad.
 1. Agregue el sello a la página y guarde el resultado.
 
@@ -64,7 +64,7 @@ public static void addImageStampWithQualityControl(Path inputFile, Path imageFil
 
 Utiliza este ejemplo cuando una imagen debe servir como fondo de un contenedor de diseño con estilo.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y accede a la página objetivo.
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y accede a la página objetivo.
 1. Crear un [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) con texto y configuraciones de borde.
 1. Establezca la imagen de fondo, añada el cuadro a la página y guarde el documento.
 

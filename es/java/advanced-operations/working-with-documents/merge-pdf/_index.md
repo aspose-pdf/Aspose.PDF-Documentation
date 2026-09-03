@@ -19,9 +19,9 @@ Aspose.PDF for Java admite varias estrategias de fusión dependiendo de cómo se
 
 Utilice este enfoque cuando necesite el flujo de combinación más sencillo y desee adjuntar un documento completo a otro.
 
-1. Abre ambos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos.
-1. Agregar el [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) colección del segundo documento al primer documento.
-1. Guardar el PDF actualizado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abre ambos PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos.
+1. Agregar el [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) colección del segundo documento al primer documento.
+1. Guardar el PDF actualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {
@@ -37,8 +37,8 @@ public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outp
 
 Este método auxiliar mantiene la lógica de combinación de rangos de página en un solo lugar, de modo que otros ejemplos puedan reutilizar la misma rutina de copia validada.
 
-1. Abrir o recibir el PDF de origen y destino [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos.
-1. Normalice el rango de páginas solicitado para que se mantenga dentro de lo disponible [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) colección.
+1. Abrir o recibir el PDF de origen y destino [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos.
+1. Normalice el rango de páginas solicitado para que se mantenga dentro de lo disponible [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) colección.
 1. Agrega cada página del rango validado al documento de destino.
 
 ```java
@@ -64,8 +64,8 @@ private static void appendPageRange(Document sourceDocument, Document destinatio
 
 Utilice este patrón cuando necesite combinar una lista de archivos de entrada en un único documento de salida en secuencia.
 
-1. Crear un PDF de salida vacío [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Abra cada archivo de entrada uno a la vez y copie su completo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rango en el documento de salida.
+1. Crear un PDF de salida vacío [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra cada archivo de entrada uno a la vez y copie su completo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rango en el documento de salida.
 1. Guarde el resultado combinado después de que se hayan procesado todos los archivos fuente.
 
 ```java
@@ -85,8 +85,8 @@ public static void mergeMultipleDocuments(List<Path> inputFiles, Path outputFile
 
 Este ejemplo crea un archivo de salida personalizado tomando solo rangos de páginas específicos de cada documento de origen.
 
-1. Abre ambos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos y crear un nuevo documento de salida.
-1. Agregar solo lo necesario [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rangos de cada documento fuente.
+1. Abre ambos PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos y crear un nuevo documento de salida.
+1. Agregar solo lo necesario [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rangos de cada documento fuente.
 1. Guarde el documento de salida ensamblado.
 
 ```java
@@ -105,8 +105,8 @@ public static void mergeSelectedPageRanges(Path inputFile1, Path inputFile2, Pat
 
 Utilice este enfoque cuando un documento debe aparecer dentro de otro en lugar de solo antes o después de él.
 
-1. Abre el PDF base y el insertado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos y crear un nuevo documento de salida.
-1. Copie la primera parte del documento base, luego añada el documento insertado completo y, finalmente, añada la parte restante del documento base. [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rango.
+1. Abre el PDF base y el insertado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos y crear un nuevo documento de salida.
+1. Copie la primera parte del documento base, luego añada el documento insertado completo y, finalmente, añada la parte restante del documento base. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rango.
 1. Guarda el resultado reordenado en un nuevo archivo.
 
 ```java
@@ -130,8 +130,8 @@ public static void mergeInsertDocumentAtPosition(Path inputFile1, Path inputFile
 
 Este ejemplo entrelaza páginas de dos documentos, lo cual es útil cuando ambas entradas deben contribuir página por página al resultado final.
 
-1. Abre ambos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos y crear un nuevo documento de salida.
-1. Recorra el recuento máximo de páginas disponible y agregue cada una disponible [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) del primer y segundo documento, por turno.
+1. Abre ambos PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos y crear un nuevo documento de salida.
+1. Recorra el recuento máximo de páginas disponible y agregue cada una disponible [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) del primer y segundo documento, por turno.
 1. Guardar el documento de salida entrelazado.
 
 ```java
@@ -161,8 +161,8 @@ public static void mergeAlternatingPages(Path inputFile1, Path inputFile2, Path 
 
 Utilice este patrón cuando el archivo combinado debe permanecer fácil de navegar y mostrar claramente dónde comienza cada documento fuente.
 
-1. Crear un PDF de salida vacío [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y abra cada archivo fuente a su vez.
-1. Agregar un separador [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) con un encabezado, luego crear un [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) marcador para esa sección.
+1. Crear un PDF de salida vacío [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y abra cada archivo fuente a su vez.
+1. Agregar un separador [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) con un encabezado, luego crear un [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) marcador para esa sección.
 1. Añada las páginas de origen, opcionalmente añada un marcador que apunte a la primera página de contenido y guarde el documento final combinado.
 
 ```java

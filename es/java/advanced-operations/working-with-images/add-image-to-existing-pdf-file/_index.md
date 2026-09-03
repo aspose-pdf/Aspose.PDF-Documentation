@@ -16,7 +16,7 @@ Aspose.PDF for Java admite tanto la colocación de imágenes de alto nivel como 
 
 Utilice este ejemplo cuando necesite colocar una imagen en una posición fija en una página PDF.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y añada una página.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y añada una página.
 1. Llamar `page.addImage()` con la ruta de la imagen de origen y el rectángulo de destino.
 1. Guardar el archivo PDF generado.
 
@@ -34,7 +34,7 @@ public static void addImage(Path imageFile, Path outputFile) {
 
 Utilice este ejemplo cuando necesite control de bajo nivel sobre la colocación y el escalado de imágenes mediante operadores de página.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y abra el flujo de la imagen fuente.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y abra el flujo de la imagen fuente.
 1. Agregue la imagen a los recursos de la página y calcule el rectángulo de destino.
 1. Escriba los operadores gráficos necesarios y guarde el documento.
 
@@ -78,7 +78,7 @@ public static void addImageUsingOperators(Path imageFile, Path outputFile) throw
 
 Utilice este ejemplo cuando la imagen debe incluir metadatos de accesibilidad para lectores de pantalla.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue la imagen a la página.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue la imagen a la página.
 1. Obtenga el insertado [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) de los recursos de la página.
 1. Establezca el texto alternativo y guarde el PDF.
 
@@ -104,7 +104,7 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
 
 Utilice este ejemplo cuando desee incrustar datos de imagen utilizando compresión Flate.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y abre el flujo de la imagen.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y abre el flujo de la imagen.
 1. Agregar la imagen a los recursos de la página con `ImageFilterType.Flate`.
 1. Dibuja la imagen mediante los operadores de la página y guarda el resultado.
 

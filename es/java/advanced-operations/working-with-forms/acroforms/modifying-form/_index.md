@@ -19,7 +19,7 @@ El mantenimiento de Form a menudo implica tanto ediciones a nivel de campo como 
 
 Utilice este ejemplo cuando el contenido del formulario Typewriter deba vaciarse sin eliminar los objetos de Form en sí.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterar a través de los recursos del formulario de página y localizar formularios de máquina de escribir.
 1. Borrar los fragmentos de texto absorbidos y guardar el documento.
 
@@ -66,7 +66,7 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando necesite inspeccionar la longitud máxima actual de un campo de texto.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Acceda al campo objetivo desde la colección de formularios.
 1. Lea el límite desde el [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) y mostrarlo.
 
@@ -85,7 +85,7 @@ public static void getFieldLimit(Path inputFile) {
 
 Utilice este ejemplo cuando un campo de texto existente deba usar una fuente o apariencia diferente.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Acceder al objetivo [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) y establecer una nueva apariencia predeterminada.
 1. Guardar el PDF actualizado.
 
@@ -107,7 +107,7 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando se deba eliminar un campo específico del AcroForm.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Elimine el campo objetivo del formulario por su nombre.
 1. Guardar el documento actualizado.
 

@@ -29,7 +29,7 @@ Utilice esta sección para aprender cómo:
 
 - [Form](/pdf/es/java/form-class/)
 - [FormEditor](/pdf/es/java/formeditor-class/)
-- [Editor de anotaciones PDF](/pdf/es/java/pdfannotationeditor-class/)
+- [PdfAnnotationEditor](/pdf/es/java/pdfannotationeditor-class/)
 - [PdfContentEditor](/pdf/es/java/pdfcontenteditor-class/)
 - [PdfFileEditor](/pdf/es/java/pdffileeditor-class/)
 - [PdfFileInfo](/pdf/es/java/pdffileinfo-class/)
@@ -37,4 +37,4 @@ Utilice esta sección para aprender cómo:
 - [PdfFileSignature](/pdf/es/java/pdffilesignature-class/)
 - [PdfFileStamp](/pdf/es/java/pdffilestamp-class/)
 - [PdfViewer](/pdf/es/java/pdfviewer-class/)
-- [Sello](/pdf/es/java/stamp-class/)
+- [Stamp](/pdf/es/java/stamp-class/)

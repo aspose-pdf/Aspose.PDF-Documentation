@@ -20,7 +20,7 @@ La clase de ejemplo actual de Java para `PdfFileSignature` no proporciona muestr
 
 Los flujos de trabajo respaldados por la fuente disponibles en esta sección incluyen:
 
-- [Firmar documentos PDF](/java/pdf-signing/)
-- [Certificación PDF](/java/pdf-certification/)
-- [Verificación de firmas](/java/signature-verification/)
-- [Gestión de firmas](/java/signature-management/)
+- [Sign PDF Documents](/java/pdf-signing/)
+- [PDF Certification](/java/pdf-certification/)
+- [Signature Verification](/java/signature-verification/)
+- [Signature Management](/java/signature-management/)

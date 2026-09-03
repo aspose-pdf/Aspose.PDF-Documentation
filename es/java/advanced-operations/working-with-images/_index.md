@@ -15,8 +15,8 @@ Abstract: Esta sección muestra cómo trabajar con imágenes en documentos PDF u
 ---
 Aspose.PDF for Java proporciona flujos de trabajo de imágenes tanto de alto nivel como de bajo nivel para documentos PDF. Puede colocar imágenes en páginas, eliminar o reemplazar imágenes incrustadas, extraer recursos de imagen y examinar la ubicación de la imagen, el tipo, el texto alternativo y la resolución efectiva.
 
-- [Agregar imágenes a un PDF existente](/pdf/es/java/add-image-to-existing-pdf-file/)
-- [Eliminar imágenes de un PDF](/pdf/es/java/delete-images-from-pdf-file/)
-- [Extraer imágenes de un PDF](/pdf/es/java/extract-images-from-pdf-file/)
-- [Reemplazar imágenes en un PDF](/pdf/es/java/replace-image-in-existing-pdf-file/)
-- [Buscar e inspeccionar imágenes en un PDF](/pdf/es/java/search-and-get-images-from-pdf-document/)
+- [Add images to an existing PDF](/pdf/es/java/add-image-to-existing-pdf-file/)
+- [Delete images from a PDF](/pdf/es/java/delete-images-from-pdf-file/)
+- [Extract images from a PDF](/pdf/es/java/extract-images-from-pdf-file/)
+- [Replace images in a PDF](/pdf/es/java/replace-image-in-existing-pdf-file/)
+- [Search and inspect images in a PDF](/pdf/es/java/search-and-get-images-from-pdf-document/)

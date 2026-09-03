@@ -16,7 +16,7 @@ Las APIs de tablas etiquetadas le permiten crear estructuras de tabla accesibles
 
 Utilice este ejemplo cuando necesite una tabla accesible básica con encabezado, cuerpo, pie de página y metadatos de resumen de tabla.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar un [Elemento de tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar un [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
 1. Configura el borde de la tabla y pobla el contenido con el método auxiliar compartido.
 1. Establezca el atributo de resumen de la tabla y guarde el documento.
 
@@ -47,7 +47,7 @@ public static void createTable(Path outputFile) {
 
 Este ejemplo aplica formato a nivel de tabla, como colores, bordes, dimensionado de columnas, filas repetidas y alineación.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega un elemento de tabla.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega un elemento de tabla.
 1. Configure los ajustes visuales y de diseño a nivel de tabla.
 1. Rellene la tabla y guarde el documento.
 
@@ -92,7 +92,7 @@ public static void styleTable(Path outputFile) {
 
 Utilice este ejemplo cuando cada fila deba tener sus propios metadatos, bordes, ajustes de altura y valores predeterminados de celda.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar secciones de tabla para encabezado, cuerpo y pie.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar secciones de tabla para encabezado, cuerpo y pie.
 1. Cree filas y configure sus ajustes a nivel de fila, como el borde, el relleno, la altura y el comportamiento de página.
 1. Rellene las filas con celdas y guarde el documento.
 
@@ -152,7 +152,7 @@ public static void styleTableRow(Path outputFile) {
 
 Este ejemplo usa el método helper compartido para crear una tabla con formato a nivel de celda y celdas combinadas.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Agregue un elemento de tabla y rellénelo mediante el método auxiliar con el estilo de celda habilitado.
 1. Guarda el documento.
 
@@ -176,8 +176,8 @@ public static void styleTableCell(Path outputFile) {
 
 Utilice este ejemplo cuando una tabla etiquetada deba posicionarse explícitamente en la página.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega un elemento de tabla.
-1. Configurar [Configuración de posición](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) para la tabla.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega un elemento de tabla.
+1. Configurar [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) para la tabla.
 1. Aplicar la configuración de posición, rellenar la tabla y guardar el documento.
 
 ```java

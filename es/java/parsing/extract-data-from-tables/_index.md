@@ -17,10 +17,10 @@ Abstract: Este artículo explica cómo extraer y procesar datos de tablas de doc
 
 Usar `TableAbsorber` para encontrar tablas en cada página e iterar a través de filas, celdas, fragmentos de texto y segmentos de texto.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Iterar a través del documento [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) objetos porque las tablas se detectan página por página.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Iterar a través del documento [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) objetos porque las tablas se detectan página por página.
 1. Crear un [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) para cada página y llame `visit(page)` para rellenar la lista de tablas detectadas.
-1. Iterar a través de lo detectado [Tabla absorbida](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/), [Fila absorbida](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/), [Celda absorbida](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), y `TextSegment` objetos.
+1. Iterar a través de lo detectado [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), y `TextSegment` objetos.
 1. Construya el texto de la fila extraído del contenido del fragmento e imprima los datos de la tabla.
 
 ```java
@@ -63,11 +63,11 @@ public static void extractTablesFromPdf(Path inputFile) {
 
 Este ejemplo encuentra una anotación cuadrada, compara su rectángulo con cada tabla detectada y devuelve solo las tablas dentro de la región marcada.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Obtenga el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y localice el cuadrado [Anotación](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) que marca la región de extracción.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Obtenga el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y localice el cuadrado [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) que marca la región de extracción.
 1. Crear un [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) y llamar `visit(page)` para detectar tablas en esa página.
-1. Compare cada detectado [Tabla absorbida](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) con los límites del rectángulo de anotación.
-1. Iterar a través de la coincidencia [Fila absorbida](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) y [Celda absorbida](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) objetos y reconstruir el texto de la fila.
+1. Compare cada detectado [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) con los límites del rectángulo de anotación.
+1. Iterar a través de la coincidencia [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) y [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) objetos y reconstruir el texto de la fila.
 1. Imprimir los datos de la tabla solo para la región marcada.
 
 ```java
@@ -130,7 +130,7 @@ public static void extractTableFromSpecificArea(Path inputFile) {
 
 ## Exportar tablas a Excel
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) para la exportación.
 1. Establezca el formato de salida de Excel a `XLSX` por lo tanto, el diseño de tabla detectado se escribe como un libro de Excel.
 1. Llamar `document.save(outputFile.toString(), excelSave)` para exportar el documento en formato Excel.

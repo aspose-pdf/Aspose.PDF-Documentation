@@ -36,7 +36,7 @@ Comprimir documentos PDF ayuda a reducir su tamaño de archivo, facilitando su a
 - almacenar imágenes en XImageCollection (imágenes reutilizables)
 - convertir un PDF del espacio de color RGB a escala de grises
 
-Revisemos las páginas de Docs para más detalles: [Optimizar PDF](/pdf/es/java/optimize-pdf/)
+Revisemos las páginas de Docs para más detalles: [Optimize PDF](/pdf/es/java/optimize-pdf/)
 
 ### Creación y manipulación de tablas
 
@@ -44,14 +44,14 @@ Las tablas proporcionan un formato estructurado y organizado para presentar info
 
 Con **Aspose.PDF for Java** crear y manipular tablas en documentos PDF ofrece numerosas ventajas, incluidas una mejor organización de datos, una mayor legibilidad, mejores capacidades de análisis y una mayor flexibilidad al presentar la información de manera eficaz.
 
-Veamos la siguiente sección para más detalles: [Trabajando con Tablas](/pdf/es/java/working-with-tables/)
+Veamos la siguiente sección para más detalles: [Working with Tables](/pdf/es/java/working-with-tables/)
 
 ### Soporte para objetos Graph
 
 **Aspose.PDF for Java** soporta agregar gráficos a documentos PDF. La clase Graph se proporciona para esta tarea.
 Agregar gráficos a documentos PDF mejora la visualización de datos, la claridad y comprensión mejoradas, un mejor soporte para la toma de decisiones y un mayor compromiso con los lectores.
 
-Revisemos las páginas de Docs para más detalles: [Trabajando con Gráficos](/pdf/es/java/working-with-graphs/)
+Revisemos las páginas de Docs para más detalles: [Working with Graphs](/pdf/es/java/working-with-graphs/)
 
 ### Amplia funcionalidad de hipervínculo
 
@@ -59,7 +59,7 @@ Los hipervínculos permiten a los usuarios navegar rápida y eficientemente dent
 
 **Aspose.PDF for Java** proporciona muchas ventajas, incluyendo una navegación mejorada, referencias cruzadas, acceso a recursos externos, interactividad y comunicación mejorada. Contribuyen a una experiencia de lectura más atractiva, informativa y accesible para los usuarios.
 
-Veamos la siguiente sección para más detalles: [Acciones](/pdf/es/java/actions/)
+Veamos la siguiente sección para más detalles: [Actions](/pdf/es/java/actions/)
 
 ### Controles de seguridad ampliados
 
@@ -67,7 +67,7 @@ Las características de seguridad, como las firmas digitales, ayudan a garantiza
 
 Con **Aspose.PDF for Java** es posible firmar PDF desde una Smart Card, cifrar y descifrar archivos, extraer imágenes e información de firmas, etc.
 
-Revisemos las páginas de Docs para más detalles: [Seguridad y firma](/pdf/es/java/securing-and-signing/)
+Revisemos las páginas de Docs para más detalles: [Securing and Signing](/pdf/es/java/securing-and-signing/)
 
 ### Agregar o eliminar marcadores
 
@@ -75,20 +75,20 @@ Los marcadores proporcionan a los usuarios una forma conveniente de navegar por 
 
 Usando la biblioteca **Aspose.PDF for Java** puedes agregar marcadores a un archivo PDF, agregar un marcador secundario o eliminar todos o algunos marcadores del documento.
 
-Veamos la siguiente sección para más detalles: [Marcadores](/pdf/es/java/add-and-delete-bookmark/)
+Veamos la siguiente sección para más detalles: [Bookmarks](/pdf/es/java/add-and-delete-bookmark/)
 
 ### Crear una tabla de contenidos
 
 El TOC brinda a los usuarios una forma rápida y eficiente de navegar por el contenido de un documento PDF. Al enumerar las secciones principales, capítulos o temas junto con sus números de página correspondientes, los usuarios pueden localizar y acceder fácilmente a información específica dentro del documento.
 La biblioteca **Aspose.PDF for Java** explica cómo agregar un TOC a un archivo PDF existente, usar la clase Heading en el espacio de nombres Aspose.Pdf.
 
-Revisemos las páginas de Docs para más detalles: [Trabajando con TOC](/pdf/es/java/manipulate-pdf-document/)
+Revisemos las páginas de Docs para más detalles: [Working with TOC](/pdf/es/java/manipulate-pdf-document/)
 
 ###  Agregar, actualizar, eliminar archivos adjuntos y anotaciones
 
 Agregar archivos adjuntos y anotaciones hace que los documentos PDF sean más interactivos y atractivos para los lectores. Los usuarios pueden interactuar con contenido adicional, como archivos multimedia, enlaces o comentarios, incrustados en el documento, mejorando su experiencia de lectura.
 
-La biblioteca Aspose.PDF for Java tiene diferentes manipulaciones con [Anotaciones](/pdf/es/java/annotations/). Puede agregar tipos como:
+La biblioteca Aspose.PDF for Java tiene diferentes manipulaciones con [Annotations](/pdf/es/java/annotations/). Puede agregar tipos como:
 
 - Anotación de Texto
 - Anotación de Resaltado
@@ -98,7 +98,7 @@ La biblioteca Aspose.PDF for Java tiene diferentes manipulaciones con [Anotacion
 - Anotaciones adicionales
 
 Además, nuestra Biblioteca le permite agregar, extraer y eliminar Archivos adjuntos del PDF.
-Para más detalles, consulte el siguiente [Páginas de documentación](/pdf/es/java/attachments/).
+Para más detalles, consulte el siguiente [Documentation pages](/pdf/es/java/attachments/).
 
 ###  Metadatos del archivo PDF
 
@@ -106,7 +106,7 @@ Los metadatos proporcionan información esencial sobre el documento PDF, como el
 
 Los metadatos del archivo PDF cumplen múltiples propósitos, incluyendo la identificación del documento, la atribución, el seguimiento de versiones, la descripción, la capacidad de búsqueda, la accesibilidad, la seguridad, la interoperabilidad, la preservación y el cumplimiento.
 
-Gestiona fácil y rápidamente [Metadatos](/pdf/es/java/pdf-file-metadata/) en un documento PDF con una biblioteca **Aspose.PDF for Java**.
+Gestiona fácil y rápidamente [Metadata](/pdf/es/java/pdf-file-metadata/) en un documento PDF con una biblioteca **Aspose.PDF for Java**.
 
 ### Agregar, reemplazar o eliminar texto e imágenes
 
@@ -114,11 +114,11 @@ Agregar, reemplazar o eliminar texto e imágenes permite a los usuarios editar e
 
 Con Aspose.PDF puedes editar texto dentro de un PDF, reemplazarlo o rotarlo, buscar o obtener texto en el PDF.
 
-También puedes agregar, cambiar la posición, eliminar imágenes y hacer más [acciones complejas](/pdf/es/java/working-with-images/) con imágenes en su PDF.
+También puedes agregar, cambiar la posición, eliminar imágenes y hacer más [complex actions](/pdf/es/java/working-with-images/) con imágenes en su PDF.
 
 ### Dividir, concatenar, extraer o insertar páginas
 
-El [Trabajando con páginas PDF](/pdf/es/java/working-with-pages/) La sección en Docs explica cómo puedes agregar, mover, eliminar, rotar o dividir páginas en PDF.
+El [Working with PDF Pages](/pdf/es/java/working-with-pages/) La sección en Docs explica cómo puedes agregar, mover, eliminar, rotar o dividir páginas en PDF.
 
 Dividir, concatenar, extraer o insertar páginas ayuda a los usuarios a gestionar los documentos PDF de manera más eficaz. Los usuarios pueden organizar, reorganizar o combinar páginas para crear nuevos documentos, mejorando la organización y accesibilidad de los documentos.
 
@@ -136,7 +136,7 @@ Aspose.PDF permite convertir PDF a diferentes formatos de imagen usando Java. Ha
 - GIF
 - SVG
 
-Biblioteca Aspose.PDF usando DocumentDevice, o clase ImageDevice para la conversión de PDF a Imagen.[Convertir PDF a diferentes formatos de imagen](/pdf/es/java/convert-pdf-to-images-format/).
+Biblioteca Aspose.PDF usando DocumentDevice, o clase ImageDevice para la conversión de PDF a Imagen.[Convert PDF to Different Image Formats](/pdf/es/java/convert-pdf-to-images-format/).
 
 ### Imprimir documentos PDF
 
@@ -154,17 +154,17 @@ Además, Aspose.PDF for Java se puede aplicar para convertir fácilmente texto, 
 
 ## Precios y Políticas
 
-Por favor, visite el [Licencias](/pdf/es/java/licensing/) página para información sobre licencias y revisar el [Información de precios](https://purchase.aspose.com/pricing/pdf/family/) página para detalles de precios.
+Por favor, visite el [Licensing](/pdf/es/java/licensing/) página para información sobre licencias y revisar el [Pricing Information](https://purchase.aspose.com/pricing/pdf/family/) página para detalles de precios.
 
 ## Soporte técnico
 
-Para obtener más información sobre el soporte técnico de Aspose.PDF, consulte el [Página de soporte](/pdf/es/java/technical-support/).
+Para obtener más información sobre el soporte técnico de Aspose.PDF, consulte el [Support page](/pdf/es/java/technical-support/).
 
 Aprende más sobre:
 
-- [Formatos de archivo compatibles](/pdf/es/java/supported-file-formats/)
-- [Características clave de Aspose.PDF](/pdf/es/java/key-features/)
-- [Requisitos del sistema](/pdf/es/java/system-requirements/)
-- [Instalación](/pdf/es/java/installation/)
-- [Licencias](/pdf/es/java/licensing/)
-- [Soporte técnico](/pdf/es/java/technical-support/)
+- [Supported File Formats](/pdf/es/java/supported-file-formats/)
+- [Key Features of Aspose.PDF](/pdf/es/java/key-features/)
+- [System Requirements](/pdf/es/java/system-requirements/)
+- [Installation](/pdf/es/java/installation/)
+- [Licensing](/pdf/es/java/licensing/)
+- [Technical Support](/pdf/es/java/technical-support/)

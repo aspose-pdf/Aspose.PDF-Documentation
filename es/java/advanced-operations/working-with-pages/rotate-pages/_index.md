@@ -19,8 +19,8 @@ Utilice la API de rotación de páginas cuando necesite cambiar la orientación 
 
 Utilice este ejemplo cuando cada página del documento deba rotarse en sentido horario.
 
-1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar a través de todos [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) objetos y establece el valor de rotación.
+1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterar a través de todos [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) objetos y establece el valor de rotación.
 1. Guarda el PDF actualizado.
 
 ```java

@@ -16,7 +16,7 @@ Aspose.PDF for Java puede inspeccionar la información de colocación de la imag
 
 Utilice este ejemplo cuando necesite inspeccionar la geometría de la imagen y la resolución efectiva en una página.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para recopilar la ubicación de las imágenes.
 1. Salida el tamaño, coordenadas y resolución de cada imagen colocada.
 
@@ -42,7 +42,7 @@ public static void extractImageParams(Path inputFile) {
 
 Utilice este ejemplo cuando necesite contar imágenes en escala de grises y RGB en una página PDF.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para iterar sobre las imágenes de la página.
 1. Leer el [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) de cada imagen y generar los totales.
 
@@ -82,7 +82,7 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 
 Utilice este ejemplo cuando necesite inspeccionar el texto de accesibilidad asociado con las imágenes de la página.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para recopilar la ubicación de las imágenes.
 1. Lea el texto alternativo de cada imagen y muestre el resultado.
 
@@ -109,7 +109,7 @@ public static void extractImageAltText(Path inputFile) {
 
 Utilice este ejemplo cuando necesite derivar el tamaño efectivo de la imagen y la resolución a partir de los operadores de contenido de página de bajo nivel.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y recopila los nombres de recursos de imagen.
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y recopila los nombres de recursos de imagen.
 1. Rastrea el estado gráfico mientras iteras a través de los operadores de página.
 1. Resuelve cada operación de dibujo de imagen y calcula sus dimensiones y resolución efectivas.
 

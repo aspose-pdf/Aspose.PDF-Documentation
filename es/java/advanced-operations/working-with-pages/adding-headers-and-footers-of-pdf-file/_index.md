@@ -19,7 +19,7 @@ Aspose.PDF for Java le permite asignar `HeaderFooter` objetos a cada página y p
 
 Utilice este ejemplo cuando necesite contenido de texto sencillo en la parte superior e inferior de cada página.
 
-1. Crear [Encabezado y pie de página](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos y agregar fragmentos de texto.
+1. Crear [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos y agregar fragmentos de texto.
 1. Configure los márgenes para el encabezado y el pie de página.
 1. Aplíquelos a cada página del PDF de origen y guarde el resultado.
 
@@ -51,7 +51,7 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando el encabezado o pie de página deba mostrar el número de página actual y el recuento total de páginas.
 
-1. Crear [Encabezado y pie de página](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos con marcadores de posición de numeración de página.
+1. Crear [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos con marcadores de posición de numeración de página.
 1. Configurar márgenes para ambos objetos.
 1. Aplícalos en cada página y guarda el PDF actualizado.
 
@@ -83,7 +83,7 @@ public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path out
 
 Utilice este ejemplo cuando el contenido del encabezado y pie de página deba incluir formato HTML en línea.
 
-1. Crear [Encabezado y pie de página](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos y agregar [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) contenido.
+1. Crear [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos y agregar [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) contenido.
 1. Configurar márgenes para la colocación.
 1. Asigne el encabezado y el pie de página a cada página y guarde el documento.
 
@@ -115,7 +115,7 @@ public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando el encabezado y el pie de página deben mostrar una imagen en cada página.
 
-1. Crear [Imagen](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) objetos y agréguelos a los contenedores de encabezado y pie de página.
+1. Crear [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) objetos y agréguelos a los contenedores de encabezado y pie de página.
 1. Configure los márgenes y asigne los contenedores a cada página.
 1. Guarda el PDF actualizado.
 
@@ -150,7 +150,7 @@ public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Pat
 Utilice este ejemplo cuando el contenido del encabezado y pie de página deba usar diseño de tabla y estilo de texto.
 
 1. Cree los estilos de texto y los objetos de tabla requeridos.
-1. Agregar las tablas a [Encabezado y pie de página](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) contenedores.
+1. Agregar las tablas a [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) contenedores.
 1. Aplique el encabezado y pie de página a cada página y guarde el documento.
 
 ```java

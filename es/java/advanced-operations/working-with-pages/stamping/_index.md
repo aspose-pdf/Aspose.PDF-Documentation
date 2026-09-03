@@ -15,7 +15,7 @@ Abstract: Este artículo explica cómo agregar estampas a documentos PDF usando 
 ---
 Aspose.PDF for Java admite varios modelos de estampado según si el contenido es una imagen, texto, una página PDF o una superposición de número de página.
 
-- [Agregar números de página](/java/add-page-number/)
-- [Agregar sellos de página](/java/page-stamps-in-the-pdf-file/)
-- [Agregar sellos de imagen](/java/image-stamps-in-pdf-page/)
-- [Agregar sellos de texto](/java/text-stamps-in-the-pdf-file/)
+- [Add page numbers](/java/add-page-number/)
+- [Add page stamps](/java/page-stamps-in-the-pdf-file/)
+- [Add image stamps](/java/image-stamps-in-pdf-page/)
+- [Add text stamps](/java/text-stamps-in-the-pdf-file/)

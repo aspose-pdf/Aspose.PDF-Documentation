@@ -15,7 +15,7 @@ Las aplicaciones web difieren de los sitios web convencionales en que las aplica
 
 Una forma de separar preocupaciones en una aplicación de software es usar una arquitectura Modelo-Vista-Controlador (MVC). El Modelo representa el código de negocio o de base de datos, la Vista representa el código de diseño de la página, y el Controlador representa el código de navegación. El marco Struts está diseñado para ayudar a los desarrolladores a crear aplicaciones web que utilicen una arquitectura MVC.
 
-[Más información](http://struts.apache.org/birdseye.html)
+[Learn more](http://struts.apache.org/birdseye.html)
 
 ### Aspose.PDF for Java
 

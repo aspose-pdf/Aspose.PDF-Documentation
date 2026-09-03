@@ -34,28 +34,28 @@ Aspose.PDF for Java proporciona las siguientes características clave:
 
 ## Capítulos
 
-- [Novedades](/pdf/es/java/whatsnew/)
-- [Descripción general](/pdf/es/java/overview/)
-- [Comenzar](/pdf/es/java/get-started/)
-- [Operaciones básicas](/pdf/es/java/basic-operations/)
-- [Convertir documentos](/pdf/es/java/converting/)
-- [Analizar documentos PDF](/pdf/es/java/parsing/)
-- [Operaciones avanzadas](/pdf/es/java/advanced-operations/)
-- [Trabajando con Fachadas](/pdf/es/java/working-with-facades)
-- [Notas de la versión](https://releases.aspose.com/pdf/java/release-notes/)
+- [What's new](/pdf/es/java/whatsnew/)
+- [Overview](/pdf/es/java/overview/)
+- [Get Started](/pdf/es/java/get-started/)
+- [Basic operations](/pdf/es/java/basic-operations/)
+- [Converting documents](/pdf/es/java/converting/)
+- [Parsing PDF documents](/pdf/es/java/parsing/)
+- [Advanced operations](/pdf/es/java/advanced-operations/)
+- [Working with Facades](/pdf/es/java/working-with-facades)
+- [Release Notes](https://releases.aspose.com/pdf/java/release-notes/)
 
 ## Recursos de Aspose.PDF for Java
 
 A continuación se encuentran los enlaces a algunos recursos útiles que puede necesitar para completar sus tareas.
 
-- [Documentación en línea de Aspose.PDF for Java](/pdf/es/java/)
-- [Características de Aspose.PDF for Java](/pdf/es/java/key-features/)
-- [Notas de la versión de Aspose.PDF for Java](https://releases.aspose.com/pdf/java/release-notes/)
-- [Página del producto de Aspose.PDF for Java](https://products.aspose.com/pdf/java)
-- [Repositorio Maven de Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
-- [Descargar Aspose.PDF for Java](https://releases.aspose.com/pdf/java/)
-- [Instalar Aspose.PDF for Java desde el repositorio de Aspose](/pdf/es/java/installation/)
-- [Guía de referencia de la API de Aspose.PDF for Java](https://reference.aspose.com/java/pdf)
-- [Descargar ejemplos en el repositorio de GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
-- [Aspose.PDF for Java Foro de Soporte Gratuito](https://forum.aspose.com/c/pdf)
-- [Aspose.PDF for Java Mesa de Ayuda de Soporte de Pago](https://helpdesk.aspose.com/)
+- [Aspose.PDF for Java Online Documentation](/pdf/es/java/)
+- [Aspose.PDF for Java Features](/pdf/es/java/key-features/)
+- [Aspose.PDF for JavaВ Release Notes](https://releases.aspose.com/pdf/java/release-notes/)
+- [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java)
+- [Aspose.PDF for Java Maven Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
+- [Download Aspose.PDF for Java](https://releases.aspose.com/pdf/java/)
+- [Install Aspose.PDF for Java from Aspose Repository](/pdf/es/java/installation/)
+- [Aspose.PDF for Java API Reference Guide](https://reference.aspose.com/java/pdf)
+- [Download Examples at GitHub Repository](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
+- [Aspose.PDF for Java Free Support Forum](https://forum.aspose.com/c/pdf)
+- [Aspose.PDF for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)

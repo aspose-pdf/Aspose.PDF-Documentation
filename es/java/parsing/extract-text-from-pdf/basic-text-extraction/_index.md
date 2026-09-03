@@ -21,9 +21,9 @@ Las páginas PDF no almacenan texto como lo hace un documento de procesamiento d
 
 Usar `TextAbsorber` para recopilar un flujo de texto plano de todo el documento y escribirlo en un archivo. Esta es la opción más sencilla cuando solo necesita el contenido de texto legible y no necesita los límites de los párrafos ni las coordenadas.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para acumular texto en todo el documento.
-1. Llamar `document.getPages().accept(textAbsorber)` así cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) es visitado por el absorbente.
+1. Llamar `document.getPages().accept(textAbsorber)` así cada [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) es visitado por el absorbente.
 1. Escribe el búfer de texto extraído al archivo de salida.
 
 ```java
@@ -40,9 +40,9 @@ public static void extractTextFromAllPages(Path inputFile, Path outputFile) thro
 
 Aplicar el absorbente solo a la página que necesites. Números de página en el `Document` La colección de páginas es basada en 1, por lo que `get_Item(1)` lee la primera página.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para extracción de una sola página.
-1. Llamar `accept(textAbsorber)` en el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) seleccionado por número de página.
+1. Llamar `accept(textAbsorber)` en el objetivo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) seleccionado por número de página.
 1. Escribe el búfer de texto extraído al archivo de salida.
 
 ```java
@@ -59,7 +59,7 @@ public static void extractTextFromPage(Path inputFile, Path outputFile, int page
 
 Usar `ParagraphAbsorber` cuando necesite agrupación estructural en lugar de una sola secuencia de texto plano. Devuelve marcas de página con secciones, párrafos, líneas y `TextFragment` objetos, lo cual es útil cuando la salida debe preservar bloques lógicos de texto.
 
-1. Abra el PDF de origen en un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Abra el PDF de origen en un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
 1. Crear un [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) y visite todo el documento para crear resultados de marcado de página.
 1. Iterar a través de los marcados de página, secciones, párrafos, líneas y [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objetos expuestos por el absorbente.
 1. Construya el texto de salida con numeración explícita de página, sección y párrafo para que se preserve la agrupación estructural.

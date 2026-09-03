@@ -13,18 +13,18 @@ TechArticle: true
 AlternativeHeadline: Crear un PDF complejo usando Java
 Abstract: Este artículo muestra cómo crear un PDF más complejo en Java usando Aspose.PDF. El ejemplo agrega una imagen, un encabezado formateado, un bloque de texto descriptivo y una tabla con celdas de encabezado con estilo y filas de horario generadas, y luego guarda el resultado como un documento PDF.
 ---
-El [Hola Mundo](/pdf/es/java/hello-world-example/) El ejemplo cubre la ruta más sencilla de creación de PDF. Este ejemplo se basa en ese flujo de trabajo y crea un documento más rico que combina gráficos, texto y contenido tabular.
+El [Hello World](/pdf/es/java/hello-world-example/) El ejemplo cubre la ruta más sencilla de creación de PDF. Este ejemplo se basa en ese flujo de trabajo y crea un documento más rico que combina gráficos, texto y contenido tabular.
 
 Para crear un documento PDF más complejo en Java:
 
-1. Crear un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y añadir un [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Agregar una imagen al [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) con `page.addImage(...)` y un objetivo [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
-1. Crear un encabezado [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) y establecer su fuente, tamaño, alineación, y [Posición](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
+1. Crear un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y añadir un [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Agregar una imagen al [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) con `page.addImage(...)` y un objetivo [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Crear un encabezado [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) y establecer su fuente, tamaño, alineación, y [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
 1. Crear un segundo [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) para el párrafo de descripción.
-1. Construir un [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con bordes, relleno y estilo de encabezado.
-1. Agregar filas de horario generadas al [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
-1. Añadir el [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) al [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) párrafos.
-1. Guardar el PDF de salida [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Construir un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con bordes, relleno y estilo de encabezado.
+1. Agregar filas de horario generadas al [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
+1. Añadir el [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) al [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) párrafos.
+1. Guardar el PDF de salida [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 El siguiente código Java se basa en `GetStartedExamples.java`.
 

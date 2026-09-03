@@ -19,7 +19,7 @@ Aspose.PDF for Java admite varios flujos de extracción dependiendo de cómo se 
 
 Utilice este ejemplo cuando necesite guardar un archivo incrustado específico de un PDF.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterar a través de la colección de archivos incrustados hasta que se encuentre el nombre del adjunto requerido.
 1. Copiar el flujo del adjunto al archivo de salida y detenerse después de la extracción.
 
@@ -75,7 +75,7 @@ public static void printFileParams(FileParams params) {
 
 Utilice este ejemplo cuando cada archivo incrustado en el PDF deba escribirse en un directorio de salida.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere a través de la colección de archivos incrustados y determine un nombre de archivo de salida seguro para cada elemento.
 1. Imprima los metadatos, guarde cada flujo de adjunto y continúe hasta que se exporten todos los archivos.
 
@@ -114,7 +114,7 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 
 Utilice este ejemplo cuando el archivo está adjunto mediante una anotación de página en lugar de solo a través de la colección de archivos incrustados.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Localiza el primero [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) en la página.
 1. Lee su especificación de archivo, exporta el contenido e imprime la ruta de destino.
 

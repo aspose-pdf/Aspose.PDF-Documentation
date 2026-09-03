@@ -19,7 +19,7 @@ Los artefactos de marca de agua le permiten colocar marcas visuales persistentes
 
 Utilice este ejemplo cuando necesite inspeccionar los artefactos de marca de agua existentes y leer su texto o posición.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterar a través de la colección de artefactos de la página objetivo.
 1. Filtrar los artefactos de paginación de marca de agua y imprimir su texto y rectángulos.
 
@@ -40,7 +40,7 @@ public static void extractWatermarkFromPdf(Path inputFile) {
 
 Utilice este ejemplo cuando la página debe mostrar una marca de agua de texto centrada con rotación personalizada, opacidad y colocación en el fondo.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear un [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) y configure su estado de texto y la configuración de colocación.
 1. Agrega la marca de agua a la página y guarda el archivo de salida.
 
@@ -71,7 +71,7 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 
 Utilice este enfoque cuando los artefactos de marca de agua existentes deban eliminarse de la página.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere a través de la colección de artefactos de la página en orden inverso.
 1. Elimine los artefactos de paginación cuyo subtipo sea marca de agua, luego guarde el documento.
 

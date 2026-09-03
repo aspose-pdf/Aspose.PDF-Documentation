@@ -21,9 +21,9 @@ Combinar archivos PDF es útil cuando necesita juntar documentos relacionados en
 
 Este tema muestra cómo combinar varios archivos PDF en un solo documento en Java:
 
-1. Abra ambos documentos de origen con el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
-1. Añadir el [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) colección del segundo [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) al primero con `document1.getPages().add(document2.getPages())`.
-1. Guardar el fusionado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) a la ruta de salida.
+1. Abra ambos documentos de origen con el [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) constructor.
+1. Añadir el [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) colección del segundo [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) al primero con `document1.getPages().add(document2.getPages())`.
+1. Guardar el fusionado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) a la ruta de salida.
 
 ## Combinar dos documentos PDF
 

@@ -9,9 +9,9 @@ lastmod: "2026-09-03"
 ---
 Esta sección incluye los siguientes temas:
 
-- [Convertir HTML a formato PDF en Ruby](/pdf/es/java/convert-html-to-pdf-format-in-ruby/)
-- [Convertir páginas PDF a imágenes en Ruby](/pdf/es/java/convert-pdf-pages-to-images-in-ruby/)
-- [Convertir PDF a formato DOC o DOCX en Ruby](/pdf/es/java/convert-pdf-to-doc-or-docx-format-in-ruby/)
-- [Convertir PDF a Libro de Excel en Ruby](/pdf/es/java/convert-pdf-to-excel-workbook-in-ruby/)
-- [Convertir PDF a Formato SVG en Ruby](/pdf/es/java/convert-pdf-to-svg-format-in-ruby/)
-- [Convertir Archivo SVG a Formato PDF en Ruby](/pdf/es/java/convert-svg-file-to-pdf-format-in-ruby/)
+- [Convert HTML to PDF Format in Ruby](/pdf/es/java/convert-html-to-pdf-format-in-ruby/)
+- [Convert PDF pages to Images in Ruby](/pdf/es/java/convert-pdf-pages-to-images-in-ruby/)
+- [Convert PDF to DOC or DOCX format in Ruby](/pdf/es/java/convert-pdf-to-doc-or-docx-format-in-ruby/)
+- [Convert PDF to Excel Workbook in Ruby](/pdf/es/java/convert-pdf-to-excel-workbook-in-ruby/)
+- [Convert PDF to SVG Format in Ruby](/pdf/es/java/convert-pdf-to-svg-format-in-ruby/)
+- [Convert SVG file to PDF format in Ruby](/pdf/es/java/convert-svg-file-to-pdf-format-in-ruby/)
