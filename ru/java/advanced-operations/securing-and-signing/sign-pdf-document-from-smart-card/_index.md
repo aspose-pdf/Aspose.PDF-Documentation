@@ -17,7 +17,7 @@ Abstract: Эта страница описывает текущий масшта
 
 ## Подпишите PDF‑документ со смарт‑карты
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade и привязать исходный PDF‑документ.
 1. Получите локальный сертификат и создайте требуемый [ExternalSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/externalsignature/).
 1. Настройте внешний вид визуальной подписи и цель [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).

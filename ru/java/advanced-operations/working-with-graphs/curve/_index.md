@@ -17,13 +17,13 @@ Abstract: В этой статье показано, как добавить к�
 
 ## Добавьте контур кривой
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Кривую](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) форму и настроить её контрольные точки.
-1. Добавьте [Кривую](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) к [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
-1. Установите свойства фигуры, необходимые для примера, включая [Цвет](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
-1. Сохраните результирующий PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
+1. Создайте [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) форму и настроить её контрольные точки.
+1. Добавьте [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) к [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Установите свойства фигуры, необходимые для примера, включая [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Сохраните результирующий PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addCurve(Path outputFile) {

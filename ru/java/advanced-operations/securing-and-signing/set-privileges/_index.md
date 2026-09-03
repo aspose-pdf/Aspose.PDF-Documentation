@@ -18,7 +18,7 @@ Aspose.PDF for Java предоставляет операции безопасн
 ## Зашифруйте PDF с паролями пользователя и владельца
 
 1. Создайте и привязать [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) обертка исходного PDF-документа.
-1. Настройте [ПривилегияДокумента](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) и [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) свойства, необходимые для примера.
+1. Настройте [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) и [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) свойства, необходимые для примера.
 1. Сохраните обновлённый PDF‑документ через [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
@@ -68,7 +68,7 @@ The `PdfFileSecurityExamples` класс демонстрирует:
 Чтобы ограничить действия, такие как печать и копирование:
 
 1. Создайте и привязать [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) обертка исходного PDF-документа.
-1. Установите требуемое [ПривилегияДокумента](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) параметры разрешений или шифрования.
+1. Установите требуемое [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) параметры разрешений или шифрования.
 1. Установите свойства, необходимые для примера.
 1. Сохраните обновлённый PDF‑документ через [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 

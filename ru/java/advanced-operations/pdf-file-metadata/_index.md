@@ -22,7 +22,7 @@ Aspose.PDF for Java предоставляет два основных спос�
 
 Используйте этот пример, когда нужно прочитать стандартные поля информации о документе, такие как автор, заголовок, тема или ключевые слова.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) объект.
 1. Прочитайте требуемые поля метаданных и выведите их значения.
 
@@ -45,7 +45,7 @@ public static void getPdfFileInformation(Path inputFile) {
 
 Используйте этот пример, когда вам необходимо добавить или обновить свойство XMP, используя зарегистрированный префикс пространства имён.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Зарегистрируйте требуемое пространство имен XMP и добавьте элемент метаданных.
 1. Сохраните обновлённый документ.
 
@@ -64,7 +64,7 @@ public static void setPrefixMetadata(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда хотите записать стандартные свойства PDF‑файла, такие как автор, название, производитель или дата создания.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Доступ [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) и назначьте новые значения метаданных.
 1. Сохраните документ с обновлённой информацией о файле.
 
@@ -93,7 +93,7 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда необходимо сохранить дополнительные записи XMP, включая пользовательские значения метаданных.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте требуемые элементы метаданных XMP через `document.getMetadata()`.
 1. Сохраните выходной файл.
 

@@ -21,16 +21,16 @@ Abstract: В этой статье показано, как разделить P
 
 [![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-Этот пример использует [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) класс для открытия PDF‑файла и перебора его страниц. Для каждой ["Страница"](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), он создает новый документ, добавляет страницу в него и сохраняет результат как отдельный PDF‑файл.
+Этот пример использует [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) класс для открытия PDF‑файла и перебора его страниц. Для каждой [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), он создает новый документ, добавляет страницу в него и сохраняет результат как отдельный PDF‑файл.
 
 Чтобы разделить PDF на отдельные файлы страниц в Java:
 
-1. Откройте исходный PDF с помощью [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) конструктора.
-1. Итерируйте через ["Страница"](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты, возвращаемые `document.getPages()`.
-1. Создайте новый пустой [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для каждой страницы.
-1. Добавьте текущий ["Страница"](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) к новому [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Сохраните новый [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с уникальным именем файла.
-1. Закройте оба [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объекты после завершения обработки.
+1. Откройте исходный PDF с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) конструктора.
+1. Итерируйте через [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты, возвращаемые `document.getPages()`.
+1. Создайте новый пустой [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для каждой страницы.
+1. Добавьте текущий [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) к новому [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните новый [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с уникальным именем файла.
+1. Закройте оба [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объекты после завершения обработки.
 
 ## Разделите PDF на файлы с одной страницей
 

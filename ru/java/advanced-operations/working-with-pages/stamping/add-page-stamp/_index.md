@@ -19,7 +19,7 @@ Aspose.PDF for Java может применять страницу из друг
 
 Используйте этот пример, когда страница из отдельного PDF должна использоваться в качестве фонового штампа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) из внешней страницы PDF.
 1. Настройте штамп и добавьте его на целевую страницу, затем сохраните результат.
 

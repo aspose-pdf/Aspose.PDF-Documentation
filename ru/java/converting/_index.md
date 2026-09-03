@@ -25,7 +25,7 @@ Aspose.PDF for Java поддерживает обе стороны конвер�
 - [Конвертировать PDF в EPUB, Markdown, Text, XPS и другие форматы](/pdf/ru/java/convert-pdf-to-other-files/),
 - [Конвертировать PDF в PDF/A, PDF/E и PDF/X](/pdf/ru/java/convert-pdf-to-pdf_x/),
 - [Конвертировать HTML в PDF](/pdf/ru/java/convert-html-to-pdf/),
-- [Изображения в PDF](/pdf/ru/java/convert-images-format-to-pdf/),
+- [Конвертировать изображения в PDF](/pdf/ru/java/convert-images-format-to-pdf/),
 - [Другие форматы файлов в PDF](/pdf/ru/java/convert-other-files-to-pdf/).
 
 

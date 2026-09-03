@@ -16,7 +16,7 @@ Aspose.PDF for Java может проверять информацию о раз
 
 Используйте этот пример, когда необходимо проверить геометрию изображения и его эффективное разрешение на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Используйте [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) для сбора размещений изображений.
 1. Выведите размер, координаты и разрешение для каждого размещённого изображения.
 
@@ -42,7 +42,7 @@ public static void extractImageParams(Path inputFile) {
 
 Используйте этот пример, когда вам нужно подсчитать изображения в градациях серого и RGB на странице PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Используйте [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) для перебора изображений страниц.
 1. Прочитайте [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) каждого изображения и вывести итоговые значения.
 
@@ -82,7 +82,7 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 
 Используйте этот пример, когда нужно проверять текст доступности, связанный с изображениями на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Используйте [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) для сбора размещений изображений.
 1. Прочитайте альтернативный текст для каждого изображения и выведите результат.
 
@@ -109,7 +109,7 @@ public static void extractImageAltText(Path inputFile) {
 
 Используйте этот пример, когда необходимо определить эффективный размер изображения и его разрешение из низкоуровневых операторов содержимого страницы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и собрать имена ресурсов изображений.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и собрать имена ресурсов изображений.
 1. Отслеживайте состояние графики при итерации по операторам страницы.
 1. Разберите каждую операцию отрисовки изображения и вычислить её эффективные размеры и разрешение.
 

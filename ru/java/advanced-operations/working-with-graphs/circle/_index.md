@@ -15,13 +15,13 @@ Abstract: В этой статье показано, как добавить к�
 ---
 ## Добавьте контур круга
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Круг](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) фигуру и настроить её геометрию.
-1. Добавьте [Круг](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) к [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
-1. Установите свойства фигуры, требуемые примером, включая [Цвет](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
-1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
+1. Создайте [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) фигуру и настроить её геометрию.
+1. Добавьте [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) к [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Установите свойства фигуры, требуемые примером, включая [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addCircle(Path outputFile) {
@@ -42,13 +42,13 @@ public static void addCircle(Path outputFile) {
 
 ## Добавьте заполненный круг с текстом
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Круг](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) фигуру и настроить её геометрию.
-1. Добавьте [Круг](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) к [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
-1. Установите свойства фигуры, требуемые примером, включая [Цвет](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) и [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
-1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
+1. Создайте [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) фигуру и настроить её геометрию.
+1. Добавьте [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) к [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Установите свойства фигуры, требуемые примером, включая [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) и [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addCircleFilled(Path outputFile) {

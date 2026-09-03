@@ -19,7 +19,7 @@ Abstract: Эта статья показывает, как обновлять с
 
 Используйте этот пример, когда область текста, покрытая аннотацией ссылки, должна быть перекрашена.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Найдите аннотации ссылок и создайте прямоугольник поиска текста из каждой области аннотации.
 1. Перекрасьте найденные фрагменты текста и сохраните документ.
 
@@ -51,7 +51,7 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 
 Используйте этот пример, когда необходимо изменить видимый цвет существующих аннотаций ссылок.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Переберите аннотации страницы и отфильтруйте по [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) объекты.
 1. Обновите цвет аннотации ссылки и сохраните документ.
 
@@ -74,7 +74,7 @@ public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда существующая веб‑ссылка должна указывать на новый URI.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Найдите аннотации ссылок, действие которых является [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Замените URI и сохраните обновлённый документ.
 

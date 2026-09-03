@@ -19,7 +19,7 @@ Aspose.PDF for Java может проверять количество стра�
 
 Используйте этот пример, когда нужно узнать общее количество страниц в PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Прочитайте размер коллекции страниц.
 1. Выведите общее количество страниц.
 
@@ -35,7 +35,7 @@ public static void getPageCount(Path inputFile) {
 
 Используйте этот пример, когда необходимо узнать, сколько страниц сгенерированный контент создаст до записи файла.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте содержимое на страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте содержимое на страницу.
 1. Обработайте абзацы, чтобы принудительно выполнить расчет разметки.
 1. Прочитайте полученное количество страниц и выведите его.
 
@@ -56,7 +56,7 @@ public static void getPageCountWithoutSaving(Path inputFile) {
 
 Используйте этот пример, когда необходимо проверить все основные размеры коробок и значения поворота страницы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получить доступ к целевой странице.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получить доступ к целевой странице.
 1. Соберите значения рамок страницы в карту.
 1. Выведите размеры и информацию о повороте страницы.
 
@@ -92,7 +92,7 @@ public static void getPageProperties(Path inputFile) {
 
 Используйте этот пример, когда необходимо определить, являются ли страницы черно‑белыми, градациями серого или RGB.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Переберите все страницы и прочитайте каждую страницу [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
 1. Преобразуйте значение перечисления в читаемый текст и выведите результат.
 

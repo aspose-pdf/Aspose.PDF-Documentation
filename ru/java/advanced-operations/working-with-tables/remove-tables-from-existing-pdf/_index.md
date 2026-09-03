@@ -19,7 +19,7 @@ Abstract: Эта статья объясняет, как удалять табл
 
 Используйте этот пример, когда должна быть удалена только первая найденная таблица на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Перейдите на целевую страницу с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Удалите первую обнаруженную таблицу и сохраните документ.
 
@@ -38,7 +38,7 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда каждую найденную таблицу на странице следует удалить.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Перейдите на целевую страницу с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) и скопировать обнаруженные таблицы в список.
 1. Удалите каждую обнаруженную таблицу и сохранить обновлённый PDF.
 

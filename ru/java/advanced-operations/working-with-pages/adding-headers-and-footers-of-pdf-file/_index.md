@@ -19,7 +19,7 @@ Aspose.PDF for Java позволяет вам назначать `HeaderFooter` 
 
 Используйте этот пример, когда вам нужен простой текстовый контент вверху и внизу каждой страницы.
 
-1. Создайте [Верхний и нижний колонтитул](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) объекты и добавить текстовые фрагменты.
+1. Создайте [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) объекты и добавить текстовые фрагменты.
 1. Настройте отступы для верхнего и нижнего колонтитула.
 1. Примените их к каждой странице исходного PDF и сохраните результат.
 
@@ -51,7 +51,7 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда в заголовке или нижнем колонтитуле должно отображаться текущий номер страницы и общее количество страниц.
 
-1. Создайте [Верхний и нижний колонтитул](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) объекты с заполнителями нумерации страниц.
+1. Создайте [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) объекты с заполнителями нумерации страниц.
 1. Настройте поля для обоих объектов.
 1. Примените их к каждой странице и сохраните обновлённый PDF.
 
@@ -83,7 +83,7 @@ public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path out
 
 Используйте этот пример, когда содержание заголовка и нижнего колонтитула должно включать встроенное форматирование HTML.
 
-1. Создайте [Верхний и нижний колонтитул](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) объекты и добавить [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) контент.
+1. Создайте [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) объекты и добавить [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) контент.
 1. Настройте поля для размещения.
 1. Назначьте заголовок и нижний колонтитул каждой странице и сохраните документ.
 
@@ -115,7 +115,7 @@ public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда в шапке и подвале необходимо отображать изображение на каждой странице.
 
-1. Создайте [Изображение](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) объекты и добавить их в контейнеры заголовка и нижнего колонтитула.
+1. Создайте [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) объекты и добавить их в контейнеры заголовка и нижнего колонтитула.
 1. Настройте поля и назначьте контейнеры каждой странице.
 1. Сохраните обновленный PDF.
 
@@ -150,7 +150,7 @@ public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Pat
 Используйте этот пример, когда содержимое заголовка и нижнего колонтитула должно использовать табличную разметку и стилизацию текста.
 
 1. Создайте необходимые стили текста и объекты таблицы.
-1. Добавьте таблицы в [Верхний и нижний колонтитул](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) контейнеры.
+1. Добавьте таблицы в [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) контейнеры.
 1. Примените заголовок и нижний колонтитул к каждой странице и сохраните документ.
 
 ```java
@@ -195,7 +195,7 @@ public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
 Используйте этот пример, когда заголовок и нижний колонтитул должны отображать содержимое TeX или LaTeX.
 
 1. Откройте исходный PDF и определите общее количество страниц.
-1. Создайте [Фрагмент TeX](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) контент для верхнего и нижнего колонтитула каждой страницы.
+1. Создайте [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) контент для верхнего и нижнего колонтитула каждой страницы.
 1. Назначьте содержимое и сохраните документ.
 
 ```java

@@ -14,7 +14,7 @@ sitemap:
 
 использовать `TextSearchOptions` с `Rectangle` ограничить извлечение определённой областью на странице.
 
-1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
+1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) для сбора текста с выбранной области страницы.
 1. Создайте [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) для цели [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) и включить `setLimitToPageBounds(true)` чтобы извлечение оставалось внутри видимой области страницы.
 1. Примените настроенные параметры поиска к поглотителю и перейдите к целевому объекту. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
@@ -38,7 +38,7 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 
 использовать `ParagraphAbsorber` для проверки прямоугольников секций и многоугольников абзацев вместе с извлечённым текстом.
 
-1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
+1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) и перейдите к цели [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) для создания информации о разметке страницы.
 1. Прочитайте первый результат разметки страницы и пройдитесь по его секциям и абзацам.
 1. Соберите каждый прямоугольник секции, полигон абзаца и реконструированный из него текст абзаца [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) строки.

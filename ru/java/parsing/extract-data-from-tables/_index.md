@@ -17,10 +17,10 @@ Abstract: В этой статье объясняется, как извлека
 
 Использовать `TableAbsorber` найти таблицы на каждой странице и итеративно проходить строки, ячейки, текстовые фрагменты и текстовые сегменты.
 
-1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Переберите документ [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты, потому что таблицы обнаруживаются постранично.
+1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
+1. Переберите документ [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты, потому что таблицы обнаруживаются постранично.
 1. Создайте [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) для каждой страницы и вызвать `visit(page)` для заполнения обнаруженного списка таблиц.
-1. Итерируйте обнаруженные [ПоглощённаяТаблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/), [ПоглощённаяСтрока](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/), [ПоглощённаяЯчейка](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), и `TextSegment` объекты.
+1. Итерируйте обнаруженные [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), и `TextSegment` объекты.
 1. Постройте извлечённый текст строки из содержимого фрагмента и выведите данные таблицы.
 
 ```java
@@ -63,11 +63,11 @@ public static void extractTablesFromPdf(Path inputFile) {
 
 В этом примере находят квадратную аннотацию, сравнивают её прямоугольник с каждой обнаруженной таблицей и выводят только таблицы, находящиеся внутри отмеченной области.
 
-1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Получите цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и найдите квадрат [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) которая отмечает область извлечения.
+1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
+1. Получите цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и найдите квадрат [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) которая отмечает область извлечения.
 1. Создайте [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) и вызвать `visit(page)` для обнаружения таблиц на этой странице.
-1. Сравните каждый обнаруженный [ПоглощённаяТаблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) [Прямоугольник](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) с границами прямоугольника аннотации.
-1. Переберите совпадающие [ПоглощённаяСтрока](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) и [ПоглощённаяЯчейка](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) объекты и восстановить текст строки.
+1. Сравните каждый обнаруженный [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) с границами прямоугольника аннотации.
+1. Переберите совпадающие [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) и [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) объекты и восстановить текст строки.
 1. Вывести данные таблицы только для отмеченной области.
 
 ```java
@@ -130,7 +130,7 @@ public static void extractTableFromSpecificArea(Path inputFile) {
 
 ## Экспортируйте таблицы в Excel
 
-1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
+1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) для экспорта.
 1. Установите формат вывода Excel в `XLSX` поэтому обнаруженный макет таблицы записывается как рабочая книга Excel.
 1. Вызовите `document.save(outputFile.toString(), excelSave)` для экспорта документа в формат Excel.

@@ -19,10 +19,10 @@ Aspose.PDF for Java поддерживает как простое создан�
 
 Используйте этот подход, когда вам нужно создать простой PDF‑файл с нуля.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
 1. Создайте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и добавить его на страницу.
-1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void createNewDocument(Path outputFile) {
@@ -38,9 +38,9 @@ public static void createNewDocument(Path outputFile) {
 
 {"translatedText":""} `createSearchablePdf` примеры использования `Document.convert(...)` с `CallBackGetHocr` реализация. Обратный вызов записывает исходное изображение во временный файл, вызывает Tesseract с `hocr` опция, читает сгенерированную разметку HOCR и возвращает её в Aspose.PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте `CallBackGetHocr` обратный вызов и преобразовать исходный документ в PDF‑контент, доступный для поиска.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void createSearchablePdf(Path inputFile, Path outputFile) {
@@ -63,7 +63,7 @@ public static void createSearchablePdf(Path inputFile, Path outputFile) {
 
 Используйте этот пример, чтобы проверить текущие настройки просмотра, хранящиеся в существующем PDF‑документе.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Прочитайте необходимые свойства окна и отображения из документа.
 1. Выведите текущие настройки для проверки или отладки.
 
@@ -88,9 +88,9 @@ public static void getDocumentWindow(Path inputFile) {
 
 Этот пример обновляет то, как PDF должен отображаться при открытии в совместимом просмотрщике.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Установите необходимые параметры окна, макета и режима страниц.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void setDocumentWindow(Path inputFile, Path outputFile) {
@@ -114,8 +114,8 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда документ должен включать необходимые шрифты для более надёжного отображения на других системах.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Включите стандартное встраивание шрифтов и пройтись по шрифтам, используемым каждым [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Включите стандартное встраивание шрифтов и пройтись по шрифтам, используемым каждым [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Отметьте любые не встроенные [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) объекты для встраивания.
 1. Сохраните обновлённый документ.
 
@@ -139,8 +139,8 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 
 Этот пример создает новый PDF и присваивает встроенный шрифт текстовому содержимому с самого начала.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Создайте требуемое [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [Текстовый сегмент](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), и [Состояние текста](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Создайте требуемое [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), и [Состояние текста](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
 1. Разрешите цель [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) из репозитория и пометить его как встроенный.
 1. Добавьте текстовое содержание на страницу и сохраните результирующий документ.
 
@@ -167,7 +167,7 @@ public static void embeddedFontsInNewDocument(Path outputFile) {
 
 Используйте этот шаблон, когда сохранённый документ должен переключаться на определённый шрифт при генерации вывода.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) и установить имя шрифта по умолчанию.
 1. Сохраните документ с настроенными параметрами сохранения.
 
@@ -185,7 +185,7 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 
 Этот пример выводит список всех шрифтов, обнаруженных в документе, чтобы вы могли проверить их использование перед экспортом или обновлением файла.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Перечислите шрифты, возвращаемые утилитами шрифтов документа.
 1. Выведите имя каждого обнаруженного [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
 
@@ -203,7 +203,7 @@ public static void getAllFonts(Path inputFile) {
 
 Используйте этот метод, когда хотите уменьшить нагрузку шрифтов, одновременно сохраняя встроенные данные шрифта согласованными с использованием документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Запустите подмножество шрифтов через утилиты шрифтов документа с требуемым [Стратегия подмножества шрифтов](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) значения.
 1. Сохраните оптимизированный документ.
 
@@ -221,7 +221,7 @@ public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
 
 Этот пример настраивает начальный уровень масштабирования, который должен применяться при открытии PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) с [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. Назначьте действие как действие при открытии документа и сохраните результат.
 
@@ -239,7 +239,7 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 
 Используйте этот пример, чтобы проверить, задаёт ли PDF уже явный уровень масштабирования для своей операции открытия.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Проверьте, является ли действие открытия [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) с [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. Выведите настроенное значение масштаба или сообщите, что масштаб не установлен.
 

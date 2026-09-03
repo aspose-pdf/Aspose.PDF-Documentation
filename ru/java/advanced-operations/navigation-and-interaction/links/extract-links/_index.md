@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как извлека
 
 Используйте этот пример, когда вам нужна информация о местоположении и странице для аннотаций ссылок на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Итерируйте аннотации страницы и отфильтруйте аннотации ссылок.
 1. Прочитайте индекс страницы и прямоугольник для каждой подходящей ссылки.
 
@@ -41,7 +41,7 @@ public static void extractLinkAnnotation(Path inputFile) {
 
 Используйте этот пример, когда нужно прочитать целевые URI из аннотаций веб-ссылок.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Найти [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) объекты, действие которых является [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Выведите индекс страницы и целевой URI для каждой гиперссылки.
 

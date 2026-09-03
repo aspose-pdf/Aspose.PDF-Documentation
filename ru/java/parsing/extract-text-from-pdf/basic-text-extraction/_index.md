@@ -23,7 +23,7 @@ sitemap:
 
 1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) для накопления текста по всему документу.
-1. Вызовите `document.getPages().accept(textAbsorber)` так каждый [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) посещается поглотителем.
+1. Вызовите `document.getPages().accept(textAbsorber)` так каждый [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) посещается поглотителем.
 1. Запишите извлеченный буфер текста в выходной файл.
 
 ```java

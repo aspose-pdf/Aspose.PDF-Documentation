@@ -14,8 +14,8 @@ sitemap:
 
 Перебрать аннотации страниц и прочитать помечённый текст `HighlightAnnotation`.
 
-1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
-1. Итерируйте через [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) объекты на целевом [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
+1. Итерируйте через [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) объекты на целевом [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Проверьте, является ли каждая аннотация [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) перед приведением её к типу класса аннотации.
 1. Прочитайте помеченный текст из каждой аннотации выделения и выведите его в консоль.
 

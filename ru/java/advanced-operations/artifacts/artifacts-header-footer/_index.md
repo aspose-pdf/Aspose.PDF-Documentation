@@ -59,7 +59,7 @@ public static FooterArtifact createFooterArtifact(String text) {
 
 Используйте этот пример, когда страница должна отображать переиспользуемый артефакт заголовка.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте артефакт заголовка с помощью вспомогательного метода.
 1. Добавьте артефакт на страницу и сохраните выходной файл.
 
@@ -77,7 +77,7 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда страница должна отображать артефакт нижнего колонтитула с переиспользуемым форматированием.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте артефакт нижнего колонтитула с помощью вспомогательного метода.
 1. Добавьте артефакт на страницу и сохраните выходной файл.
 
@@ -95,7 +95,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда существующие артефакты заголовка и нижнего колонтитула должны быть удалены со страницы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Итерируйте коллекцию артефактов страницы в обратном порядке.
 1. Удалите артефакты пагинации, подтип которых — заголовок или нижний колонтитул, затем сохраните документ.
 

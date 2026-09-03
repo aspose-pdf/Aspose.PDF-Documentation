@@ -25,9 +25,9 @@ Abstract: В этой статье объясняется, как работат
 
 Используйте низкоуровневые операторы, когда размещение изображения должно контролироваться точно на уровне потока содержимого, а не через API более высокого уровня для макета.
 
-1. Откройте исходный PDF с помощью [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите целевой [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите целевой [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Добавьте поток входного изображения к ресурсам страницы и сохраните возвращённое имя ресурса.
-1. Создайте [Прямоугольник](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) который определяет целевую область и построить [Матрица](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) из его границ.
+1. Создайте [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) который определяет целевую область и построить [Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) из его границ.
 1. Используйте [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) для сохранения текущего графического состояния, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) для позиционирования изображения, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) закрасить его, и [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) восстановить предыдущее состояние.
 1. Сохраните обновлённый PDF‑документ.
 
@@ -62,7 +62,7 @@ public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Pat
 
 Используйте этот подход, когда одно и то же изображение или графика должны отображаться более одного раза без дублирования ресурса в файле PDF.
 
-1. Откройте исходный PDF с помощью [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), получить цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), и получить доступ к его [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
+1. Откройте исходный PDF с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), получить цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), и получить доступ к его [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
 1. Оберните существующее содержимое страницы с [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) и [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) чтобы последующие преобразования не просочились в оригинальный поток содержимого.
 1. Создайте [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) ресурс, добавьте изображение в ресурсы формы и используйте [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) плюс [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) чтобы нарисовать изображение внутри формы.
 1. Разместите одну и ту же форму в нескольких координатах страницы, добавив матрицу трансляции и выполнив имя формы с `Do` оператор.
@@ -109,8 +109,8 @@ private static void addFormAt(OperatorCollection pageContents, String formName, 
 
 Используйте этот пример, когда страница содержит операторы векторного рисования, которые следует удалить непосредственно из потока содержимого.
 
-1. Откройте исходный PDF с помощью [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите целевой [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Итерируйте операторы содержимого страницы и собрать экземпляры [Обводка](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ЗакрытьКонтурОбводка](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/), и [Заполнить](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
+1. Откройте исходный PDF с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите целевой [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Итерируйте операторы содержимого страницы и собрать экземпляры [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/), и [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
 1. Удалите собранные операторы из содержимого страниц и сохраните обновлённый PDF.
 
 Эта техника удаляет только целевые инструкции рисования. Если на странице также содержатся связанные текстовые подписи или другие не графические операторы, эти элементы остаются в потоке содержимого и могут потребовать отдельного прохода очистки.

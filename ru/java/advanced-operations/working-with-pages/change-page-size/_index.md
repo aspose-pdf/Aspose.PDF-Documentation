@@ -19,8 +19,8 @@ Aspose.PDF for Java может как сообщать размеры стран
 
 Используйте этот пример, когда необходимо изменить размер существующей страницы и проверить параметры коробок страницы до и после изменения.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и вывести текущие значения его бокса.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и вывести текущие значения его бокса.
 1. Установите новый размер страницы и сохраните документ.
 
 ```java
@@ -39,7 +39,7 @@ public static void setPageSize(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда вам нужно прочитать видимые размеры страницы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите прямоугольник страницы с включенной обработкой вращения.
 1. Выведите ширину и высоту страницы.
 
@@ -56,8 +56,8 @@ public static void getPageSize(Path inputFile) {
 
 Используйте этот пример, когда необходимо сравнить размеры страниц до и после учёта поворота.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Поверните цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Поверните цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Прочитайте прямоугольник страницы с учётом вращения и без учёта вращения и выведите оба значения.
 
 ```java

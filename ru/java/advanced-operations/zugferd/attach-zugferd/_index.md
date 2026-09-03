@@ -17,12 +17,12 @@ Abstract: В этой статье объясняется, как создать
 
 ## Прикрепите XML-счет ZUGFeRD к PDF
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) для XML-файла счета.
 1. Установите метаданные встроенного файла, включая тип MIME и [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
 1. Добавьте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) в коллекцию встроенных файлов документа.
 1. Преобразуйте документ в [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {

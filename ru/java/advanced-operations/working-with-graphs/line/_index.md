@@ -15,12 +15,12 @@ Abstract: В этой статье показано, как добавить л�
 ---
 ## Добавьте пунктирную линию
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Линия](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) форму и настроить её координаты.
-1. Добавьте [Линия](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) к [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
-1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
+1. Создайте [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) форму и настроить её координаты.
+1. Добавьте [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) к [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addLine(Path outputFile) {

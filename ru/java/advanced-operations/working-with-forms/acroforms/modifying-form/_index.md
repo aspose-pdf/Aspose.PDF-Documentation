@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как изменит
 
 Используйте этот пример, когда содержимое формы Typewriter должно быть опустошено без удаления самих объектов формы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Итеративно проходите ресурсы форм страниц и находите формы Typewriter.
 1. Очистите поглощённые фрагменты текста и сохраните документ.
 
@@ -66,7 +66,7 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда нужно проверить текущую максимальную длину текстового поля.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите целевое поле из коллекции формы.
 1. Прочитайте ограничение из [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) и вывести его.
 
@@ -85,7 +85,7 @@ public static void getFieldLimit(Path inputFile) {
 
 Используйте этот пример, когда существующее текстовое поле должно использовать другой шрифт или внешний вид.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к цели [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) и установить новое значение по умолчанию внешнего вида.
 1. Сохраните обновлённый PDF.
 
@@ -107,7 +107,7 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда конкретное поле должно быть удалено из AcroForm.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите целевое поле из формы по его имени.
 1. Сохраните обновлённый документ.
 

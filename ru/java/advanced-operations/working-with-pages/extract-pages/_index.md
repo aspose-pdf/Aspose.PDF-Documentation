@@ -19,7 +19,7 @@ Aspose.PDF for Java позволяет копировать выбранные �
 
 Используйте этот пример, когда необходимо сохранить одну страницу из исходного PDF в отдельный документ.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
 1. Скопируйте целевую страницу в коллекцию страниц назначения.
 1. Сохраните новый PDF.
 
@@ -37,7 +37,7 @@ public static void extractPage(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда нужно скопировать несколько страниц в отдельный PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
 1. Пройдите по выбранным индексам страниц и добавьте их в конечный документ.
 1. Сохраните документ с извлечёнными страницами.
 

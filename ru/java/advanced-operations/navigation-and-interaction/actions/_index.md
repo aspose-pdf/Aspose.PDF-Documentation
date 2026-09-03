@@ -19,8 +19,8 @@ Aspose.PDF for Java позволяет назначать действия кн�
 
 Используйте этот пример, когда кнопка на странице должна вызвать команду печати.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и выберите целевую страницу.
-1. Создайте [Поле кнопки](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) и присвоить [Именованное действие](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) для печати.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и выберите целевую страницу.
+1. Создайте [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) и присвоить [NamedAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) для печати.
 1. Добавьте кнопку в форму и сохраните документ.
 
 ```java
@@ -49,8 +49,8 @@ public static void addNamedActionPrint(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда кнопка должна показывать или скрывать набор полей формы, например флажки.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и собрать целевые виджеты формы.
-1. Создайте кнопку и назначьте [Скрыть действие](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/) к нему.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и собрать целевые виджеты формы.
+1. Создайте кнопку и назначьте [HideAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/) к нему.
 1. Добавьте кнопку в форму и сохраните обновлённый документ.
 
 ```java
@@ -80,7 +80,7 @@ public static void addNamedActionHide(Path inputFile, Path outputFile) {
 
 В этом примере создаются кнопки «Первая», «Предыдущая», «Следующая» и «Последняя» страницы по всему документу.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте кнопки навигации для каждой страницы и назначьте соответствующее предопределённое действие.
 1. Добавьте кнопки в форму и сохраните документ.
 
@@ -140,7 +140,7 @@ public static void addNavigationButtons(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда кнопка должна отправлять данные формы по URL.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) с целевым URL и флагами.
 1. Назначьте действие полю кнопки и сохраните документ.
 
@@ -170,7 +170,7 @@ public static void addSubmitAction(Path inputFile, Path outputFile) {
 
 Этот пример назначает действия JavaScript, которые выполняются при открытии, сохранении или печати документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте необходимое [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) объекты для событий документа.
 1. Назначьте действия и сохраните документ.
 
@@ -192,7 +192,7 @@ public static void addLaunchActions(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда определённая страница должна вызывать действия при открытии и закрытии.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и убедитесь, что целевая страница существует.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и убедитесь, что целевая страница существует.
 1. Создайте навигацию по страницам и JavaScript‑действия.
 1. Назначьте действия страницы и сохраните документ.
 
@@ -220,7 +220,7 @@ public static void addPageActions(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда ранее назначенные действия открытия и закрытия необходимо очистить со страницы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и убедитесь, что целевая страница существует.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и убедитесь, что целевая страница существует.
 1. Удалите все действия с этой страницы.
 1. Сохраните обновлённый документ.
 

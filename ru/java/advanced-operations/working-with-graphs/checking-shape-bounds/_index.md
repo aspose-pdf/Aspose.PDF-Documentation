@@ -17,13 +17,13 @@ Abstract: В этой статье показано, как проверять �
 
 ## Проверьте границы формы графа
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Прямоугольник](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) фигуру и настроить её геометрию.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
+1. Создайте [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) фигуру и настроить её геометрию.
 1. Включите строгую проверку границ и попытаться добавить форму в коллекцию графов с `BoundsCheckMode`.
 1. Обработайте исключение, если форма не помещается.
-1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void checkShapeBounds(Path outputFile) {

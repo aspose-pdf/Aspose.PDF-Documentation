@@ -16,7 +16,7 @@ Tagged table APIs позволяют создавать доступные ст�
 
 Используйте этот пример, когда вам нужна базовая доступная таблица с заголовком, телом, нижним колонтитулом и метаданными сводки таблицы.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Элемент таблицы](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [   TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
 1. Настройте границу таблицы и заполните содержимое с помощью общего вспомогательного метода.
 1. Установите атрибут summary таблицы и сохраните документ.
 
@@ -47,7 +47,7 @@ public static void createTable(Path outputFile) {
 
 В этом примере применяется форматирование уровня таблицы, такое как цвета, границы, размер столбцов, повторяющиеся строки и выравнивание.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить элемент таблицы.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить элемент таблицы.
 1. Настройте визуальные и макетные параметры уровня таблицы.
 1. Заполните таблицу и сохраните документ.
 
@@ -92,7 +92,7 @@ public static void styleTable(Path outputFile) {
 
 Используйте этот пример, когда каждая строка должна иметь свои собственные метаданные, границы, настройки высоты и параметры ячеек по умолчанию.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить секции таблицы для заголовка, тела и подвала.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить секции таблицы для заголовка, тела и подвала.
 1. Создайте строки и настройте их параметры уровня строки, такие как граница, внутренний отступ, высота и поведение на странице.
 1. Заполните строки ячейками и сохраните документ.
 
@@ -152,7 +152,7 @@ public static void styleTableRow(Path outputFile) {
 
 В этом примере используется общий вспомогательный метод для создания таблицы с форматированием на уровне ячеек и объединёнными ячейками.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте элемент таблицы и заполните его с помощью вспомогательного метода, включив стилизацию ячеек.
 1. Сохраните документ.
 
@@ -176,8 +176,8 @@ public static void styleTableCell(Path outputFile) {
 
 Используйте этот пример, когда помеченную таблицу нужно явно разместить на странице.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить элемент таблицы.
-1. Настройте [Настройки позиции](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) для таблицы.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить элемент таблицы.
+1. Настройте [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) для таблицы.
 1. Примените настройки позиции, заполните таблицу и сохраните документ.
 
 ```java

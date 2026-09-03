@@ -19,9 +19,9 @@ Aspose.PDF for Java предоставляет векторный контент
 
 Используйте этот пример, когда вам нужно перечислить векторные элементы и проверить их страницу, позицию и количество операторов.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) и посетите целевую страницу.
-1. Переберите поглощённые [Графический элемент](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) объекты и вывод их свойств.
+1. Переберите поглощённые [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) объекты и вывод их свойств.
 
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {
@@ -47,7 +47,7 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 
 Используйте этот пример, когда все обнаруженные векторные элементы должны быть смещены в новое положение.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Посетите целевую страницу с [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) и временно подавлять обновления.
 1. Измените позицию каждого поглощённого элемента, возобновите обновления и сохраните документ.
 
@@ -77,8 +77,8 @@ public static void moveGraphics(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда векторные элементы внутри определённого прямоугольника нужно удалять по одному.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Посетите страницу с [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) и определить цель [Прямоугольник](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Посетите страницу с [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) и определить цель [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Удалите соответствующие элементы, возобновите обновления и сохраните документ.
 
 ```java
@@ -109,7 +109,7 @@ public static void removeGraphicsMethod1(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда векторные элементы, соответствующие условию, следует сначала собрать, а затем удалить в одной операции со страницей.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Посетите страницу с [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) и собрать соответствующие элементы.
 1. Удалите собранную графику из содержимого страницы и сохраните обновлённый документ.
 
@@ -143,9 +143,9 @@ public static void removeGraphicsMethod2(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда каждый извлечённый векторный элемент должен быть добавлен по отдельности на новую страницу.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу назначения.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу назначения.
 1. Посетите исходную страницу с [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
-1. Добавьте каждый [Графический элемент](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) на страницу назначения и сохранить документ.
+1. Добавьте каждый [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) на страницу назначения и сохранить документ.
 
 ```java
 public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
@@ -173,7 +173,7 @@ public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда всю поглощённую коллекцию векторных графиков нужно скопировать на новую страницу за один вызов.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу назначения.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу назначения.
 1. Посетите исходную страницу с [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
 1. Добавьте собранную графику в коллекцию на целевую страницу и сохраните документ.
 

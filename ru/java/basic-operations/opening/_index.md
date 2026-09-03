@@ -19,9 +19,9 @@ Aspose.PDF for Java поддерживает несколько способов
 
 Вы можете открыть PDF‑документ:
 
-1. Откройте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) непосредственно из пути к файлу.
-1. Откройте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) от an `InputStream`.
-1. Откройте зашифрованный [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) указав пароль.
+1. Откройте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) непосредственно из пути к файлу.
+1. Откройте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) от an `InputStream`.
+1. Откройте зашифрованный [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) указав пароль.
 
 ## Откройте документ из файла
 

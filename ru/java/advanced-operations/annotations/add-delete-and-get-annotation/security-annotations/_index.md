@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как работат
 
 Используйте этот пример, когда найденный текст должен быть покрыт redaction annotations до того, как редактирование будет применено навсегда.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Найдите целевой текст и создайте [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) для каждого совпадения.
 1. Настройте внешний вид редактирования и сохраните документ.
 
@@ -51,7 +51,7 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 
 Этот пример навсегда применяет аннотации редактирования, которые уже существуют на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
 1. Вызовите `redact()` для каждой собранной аннотации сохранить обновлённый файл.
 
@@ -76,7 +76,7 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда целевой контент определяется по позиции, а не по совпадению текста.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Определите целевой прямоугольник на странице, например из размещения изображения.
 1. Создайте [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) для этой области и сохранить документ.
 

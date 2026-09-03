@@ -19,8 +19,8 @@ Aspose.PDF for Java позволяет обрезать страницы либ�
 
 Используйте этот пример, когда нужно применить одну и ту же область обрезки к основным границам страницы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте новую обрезку [Прямоугольник](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новую обрезку [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Примените прямоугольник к областям страниц, связанным с обрезкой, и сохраните документ.
 
 ```java
@@ -40,7 +40,7 @@ public static void cropPage(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда область обрезки должна быть получена из первого обнаруженного изображения на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Используйте [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) для определения размещения изображений.
 1. Установите crop box в прямоугольник изображения, если он найден, затем сохраните документ.
 

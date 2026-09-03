@@ -19,7 +19,7 @@ Aspose.PDF for Java поддерживает штампы‑изображени
 
 Используйте этот пример, когда странице нужно отобразить штамп‑изображение с пользовательским расположением и непрозрачностью.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) и настройте его внешний вид.
 1. Добавьте штамп на страницу и сохраните документ.
 

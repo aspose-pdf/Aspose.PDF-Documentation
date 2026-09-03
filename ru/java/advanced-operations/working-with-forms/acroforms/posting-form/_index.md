@@ -37,10 +37,10 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 
 ## Добавьте действие отправки вручную
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) и URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).
-1. Создайте [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) на целевом [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и назначьте действие отправки.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) на целевом [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и назначьте действие отправки.
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {

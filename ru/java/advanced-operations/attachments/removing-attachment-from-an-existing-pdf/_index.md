@@ -19,7 +19,7 @@ Abstract: В этой статье показано, как удалить вл�
 
 Используйте этот пример, когда один именованный встроенный файл должен быть удалён из PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите вложение по его ключу из коллекции встроенных файлов.
 1. Сохраните обновлённый результирующий документ.
 
@@ -36,7 +36,7 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 
 Используйте этот подход, когда необходимо очистить всю коллекцию вложенных файлов.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите все элементы из коллекции вложенных файлов.
 1. Сохраните очищенный выходной документ.
 

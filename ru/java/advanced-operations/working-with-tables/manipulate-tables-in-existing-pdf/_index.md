@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как манипул
 
 Используйте этот пример, когда текст в обнаруженной ячейке должен быть обновлён без перестройки всей таблицы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и перейдите к странице с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и перейдите к странице с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Проверьте, что целевая таблица и фрагменты текста ячеек существуют.
 1. Замените текст в ячейке и сохраните обновлённый документ.
 
@@ -47,8 +47,8 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда оригинальную таблицу следует полностью заменить вновь созданной.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и обнаруживать таблицы на странице.
-1. Создайте новый [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с желаемой структурой.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и обнаруживать таблицы на странице.
+1. Создайте новый [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с желаемой структурой.
 1. Замените поглощённую таблицу и сохраните полученный PDF.
 
 ```java

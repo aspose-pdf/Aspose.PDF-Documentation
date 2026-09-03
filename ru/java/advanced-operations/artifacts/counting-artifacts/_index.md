@@ -17,9 +17,9 @@ Abstract: В этой статье объясняется, как просмат
 
 Используйте этот пример, когда вам нужен быстрый подсчёт основных подтипов артефактов пагинации на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Прочитайте [Артефакт](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) коллекцию из целевого [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Переберите страницу [Артефакт](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) коллекцию и подсчитать каждый подтип нумерации, который вам нужно отобразить.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Прочитайте [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) коллекцию из целевого [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Переберите страницу [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) коллекцию и подсчитать каждый подтип нумерации, который вам нужно отобразить.
 
 ```java
 public static void countPdfArtifacts(Path inputFile) {

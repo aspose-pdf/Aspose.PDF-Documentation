@@ -19,8 +19,8 @@ Abstract: В этой статье объясняется, как поверну
 
 Используйте этот пример, когда каждая страница документа должна быть повернута по часовой стрелке.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Переберите все [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты и установить значение вращения.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите все [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты и установить значение вращения.
 1. Сохраните обновленный PDF.
 
 ```java

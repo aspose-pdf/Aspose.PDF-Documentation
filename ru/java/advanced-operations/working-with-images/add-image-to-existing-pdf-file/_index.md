@@ -16,7 +16,7 @@ Aspose.PDF for Java поддерживает как размещение изо�
 
 Используйте этот пример, когда необходимо разместить изображение в фиксированном положении на странице PDF.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Вызовите `page.addImage()` с путем к исходному изображению и целевым прямоугольником.
 1. Сохраните сгенерированный PDF‑файл.
 

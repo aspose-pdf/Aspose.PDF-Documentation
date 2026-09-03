@@ -16,7 +16,7 @@ sitemap:
 
 Используйте этот пример, когда вам нужен минимальный помеченный PDF с заголовком и абзацем в логическом дереве структуры.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получить его [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получить его [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
 1. Установите заголовок документа и язык, затем создайте необходимые элементы заголовка и абзаца.
 1. Добавьте Structure Elements к корневому элементу и сохраните документ.
 
@@ -48,7 +48,7 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 
 Этот пример создает более сложную структуру, комбинируя заголовки, абзацы, спаны, кавычки и явные настройки макета.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и инициализировать метаданные помеченного контента.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и инициализировать метаданные помеченного контента.
 1. Создайте структуру заголовка и абзаца, затем добавьте спаны и элемент цитаты внутри абзаца.
 1. Отрегулируйте позицию абзаца, добавьте элементы в корневую структуру и сохраните документ.
 
@@ -97,7 +97,7 @@ public static void createTaggedPdfDocumentAdv(Path outputFile) {
 
 Используйте этот пример, когда помеченное содержание абзаца должно содержать явные сведения о шрифте, цвете и стиле.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте элемент абзаца и настройте его состояние структурного текста.
 1. Установите текст абзаца и сохраните документ.
 
@@ -126,8 +126,8 @@ public static void addStyle(Path outputFile) {
 
 Этот пример показывает, как создать тегированную фигуру с альтернативным текстом, заголовком, пользовательским тегом, содержимым изображения и позиционированием.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [ЭлементРисунка](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), установить её доступные метаданные и назначить изображение.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), установить её доступные метаданные и назначить изображение.
 1. Отрегулируйте положение рисунка и сохраните документ.
 
 ```java
@@ -161,8 +161,8 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 
 Используйте этот пример, когда вам нужно проверить, удовлетворяет ли помеченный PDF правилам валидации PDF/UA.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Запустите проверку против [Формат PDF](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Запустите проверку против [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
 1. Запишите журнал проверки и выведите результат проверки.
 
 ```java
@@ -178,8 +178,8 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 
 Этот пример применяет явные настройки полей и выравнивания к тегированному абзацу.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте элемент структуры абзаца и подготовьте [Настройки позиции](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте элемент структуры абзаца и подготовьте [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
 1. Примените настройки положения к абзацу и сохраните документ.
 
 ```java
@@ -218,8 +218,8 @@ public static void adjustPosition(Path outputFile) {
 
 Используйте этот подход, когда существующий PDF должен быть автоматически конвертирован в PDF/UA и маркирован во время преобразования.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [Параметры конвертации формата PDF](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) и включить автоматическое тегирование.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) и включить автоматическое тегирование.
 1. Запустите конвертацию и сохраните выходной документ.
 
 ```java
@@ -243,7 +243,7 @@ public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outpu
 
 В этом примере поле подписи формы помечается, чтобы стать частью логического дерева структуры.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу с полем формы.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу с полем формы.
 1. Добавьте поле формы в коллекцию форм документа.
 1. Создайте тегированный элемент структуры формы, привяжите его к полю и сохраните документ.
 
@@ -275,8 +275,8 @@ public static void createPdfWithTaggedFormField(Path outputFile) {
 
 Используйте этот пример, когда помеченный PDF должен включать базовую страницу оглавления, связанную с заголовками документа.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу TOC.
-1. Создайте [ЭлементОглавления](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) и заголовок, который должен появиться в TOC.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу TOC.
+1. Создайте [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) и заголовок, который должен появиться в TOC.
 1. Свяжите запись оглавления с заголовком и сохраните документ.
 
 ```java
@@ -312,7 +312,7 @@ public static void createPdfWithTocPage(Path outputFile) {
 
 Этот пример создает более сложный тегированный TOC с привязанными названиями страниц, вложенными элементами списка и несколькими уровнями заголовков.
 
-1. Создайте новый Tagged PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и подготовьте страницу TOC с видимым заголовком.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и подготовьте страницу TOC с видимым заголовком.
 1. Создайте структуру оглавления, свяжите заголовок оглавления и его пункты с заголовками и элементами списка, а также добавьте связанные элементы контента.
 1. Сохраните конечный документ с расширенной структурой TOC.
 

@@ -14,10 +14,10 @@ Abstract: В этой статье показано, как заменять и�
 
 ## Замените изображение по индексу ресурса
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к ресурсам изображений в целевом файле [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к ресурсам изображений в целевом файле [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Замените целевой ресурс изображения новым файлом изображения.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {

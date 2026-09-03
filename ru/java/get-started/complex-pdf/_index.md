@@ -17,14 +17,14 @@ The [Привет мир](/pdf/ru/java/hello-world-example/) пример охв
 
 Чтобы создать более сложный PDF-документ в Java:
 
-1. Создайте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Добавьте изображение к [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) с `page.addImage(...)` и цель [Прямоугольник](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
-1. Создайте заголовок [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и установить его шрифт, размер, выравнивание и [Позиция](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
+1. Создайте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Добавьте изображение к [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) с `page.addImage(...)` и цель [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Создайте заголовок [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и установить его шрифт, размер, выравнивание и [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
 1. Создайте второй [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) для абзаца описания.
-1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с границами, отступами и стилизацией заголовка.
-1. Добавьте сгенерированные строки расписания в [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
-1. Добавьте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) к [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) параграфы.
-1. Сохраните результирующий PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с границами, отступами и стилизацией заголовка.
+1. Добавьте сгенерированные строки расписания в [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
+1. Добавьте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) к [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) параграфы.
+1. Сохраните результирующий PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 Следующий код Java основан на `GetStartedExamples.java`.
 

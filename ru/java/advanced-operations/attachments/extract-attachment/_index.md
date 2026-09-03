@@ -19,7 +19,7 @@ Aspose.PDF for Java поддерживает несколько варианто
 
 Используйте этот пример, когда необходимо сохранить один конкретный встроенный файл из PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Итерируйте по коллекции встроенных файлов, пока не будет найдено требуемое имя вложения.
 1. Скопируйте поток вложения в выходной файл и прекратите выполнение после извлечения.
 
@@ -75,7 +75,7 @@ public static void printFileParams(FileParams params) {
 
 Используйте этот пример, когда каждый вложенный файл в PDF должен быть записан в выходной каталог.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Пройдите по коллекции вложенных файлов и определите безопасное имя выходного файла для каждого элемента.
 1. Выведите метаданные, сохраните каждый поток вложения и продолжайте, пока не будут экспортированы все файлы.
 
@@ -114,7 +114,7 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 
 Используйте этот пример, когда файл прикреплен через аннотацию страницы, а не только через коллекцию вложенных файлов.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Найдите первый [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) на странице.
 1. Прочитайте его спецификацию файла, экспортируйте содержимое и выведите путь назначения.
 

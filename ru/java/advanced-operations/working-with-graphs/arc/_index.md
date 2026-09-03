@@ -17,13 +17,13 @@ Aspose.PDF for Java использует `Graph` вместе с объекта�
 
 ## Добавьте контуры дуги
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
 1. Создайте [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
 1. Создайте [Дуга](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) фигуру и настроить её геометрию.
 1. Добавьте [Дуга](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) к [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
 1. Установите свойства фигуры, необходимые для примера, включая [Цвет](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
-1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addArc(Path outputFile) {
@@ -46,13 +46,13 @@ public static void addArc(Path outputFile) {
 
 ## Добавьте заполненный сегмент дуги
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Линия](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) фигуру и настроить её координаты.
-1. Создайте [Дуга](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) фигуру и настроить её геометрию.
-1. Добавьте [Линия](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) и [Дуга](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) к [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
-1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
+1. Создайте [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) фигуру и настроить её координаты.
+1. Создайте [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) фигуру и настроить её геометрию.
+1. Добавьте [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) и [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) к [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addArcFilled(Path outputFile) {

@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как извлека
 
 Используйте этот пример, когда вам нужно находить таблицы на каждой странице и собирать текст их ячеек.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Перейдите к каждой странице с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Итерируйте по поглощённым таблицам, строкам и ячейкам, затем выведите извлечённый текст.
 

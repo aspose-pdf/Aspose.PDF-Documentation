@@ -15,12 +15,12 @@ Abstract: В этой статье объясняется, как копиров
 ---
 ## Копируйте аннотации из одного PDF в другой
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в пункт назначения [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте каждый [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) к целевому [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Читайте или перебирать [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) элементы на целевой странице.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Перечислите [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) элементы на первой исходной странице и добавить каждый из них на целевую страницу.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в пункт назначения [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте каждый [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) к целевому [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Читайте или перебирать [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) элементы на целевой странице.
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Перечислите [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) элементы на первой исходной странице и добавить каждый из них на целевую страницу.
 
 ```java
 public static void importExport(Path inputFile, Path outputFile) {

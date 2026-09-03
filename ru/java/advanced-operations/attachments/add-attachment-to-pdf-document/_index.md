@@ -19,7 +19,7 @@ Abstract: В этой статье показано, как прикрепить
 
 Используйте этот пример, когда внешний файл должен быть внедрён в существующий PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) для файла, который вы хотите встроить.
 1. Добавьте спецификацию файла к `EmbeddedFiles` соберите и сохраните обновлённый документ.
 

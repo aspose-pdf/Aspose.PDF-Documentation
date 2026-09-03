@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как создава
 
 Используйте этот пример, когда нужно применить нумерацию Бейтса с помощью специального помощника коллекции страниц.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте любые дополнительные страницы, необходимые для примера.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте любые дополнительные страницы, необходимые для примера.
 1. Создайте [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) конфигурация.
 1. Примените нумерацию Bates к коллекции страниц и сохраните выходной файл.
 
@@ -41,7 +41,7 @@ public static void addBatesNArtifact(Path inputFile, Path outputFile) {
 
 В этом примере применяется нумерация Бейтса путем передачи артефакта Бейтса через общий API пагинации.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте необходимые страницы.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте необходимые страницы.
 1. Создайте [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) и добавьте его в список артефактов пагинации.
 1. Примените артефакты пагинации к коллекции страниц и сохраните документ.
 
@@ -65,7 +65,7 @@ public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) 
 
 Используйте этот подход, когда существующие артефакты нумерации Bates следует удалить из документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Вызовите вспомогательную функцию коллекции страниц, которая удаляет нумерацию Bates.
 1. Сохраните очищенный выходной файл.
 

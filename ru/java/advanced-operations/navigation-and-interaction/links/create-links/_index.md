@@ -19,7 +19,7 @@ Aspose.PDF for Java использует `LinkAnnotation` вместе с объ
 
 Используйте этот пример, когда аннотация ссылки должна запускать внешний файл или цель.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и выберите целевую страницу.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и выберите целевую страницу.
 1. Создайте [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) и настройте его границу и цвет.
 1. Назначьте [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) и сохранить документ.
 
@@ -45,7 +45,7 @@ public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputF
 
 Используйте этот пример, когда ссылка должна открывать страницу в другом PDF‑документе.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) на целевой странице.
 1. Назначьте [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) и сохранить файл вывода.
 

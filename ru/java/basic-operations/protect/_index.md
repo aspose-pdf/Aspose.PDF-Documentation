@@ -19,12 +19,12 @@ Aspose.PDF for Java предоставляет несколько API для з�
 
 Примеры в `ProtectDocumentExamples.java` демонстрировать, как:
 
-1. Примените шифрование к [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с паролями пользователя и владельца.
-1. Ограничьте разрешения с помощью [ПривилегияДокумента](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
-1. Выберите [КриптоАлгоритм](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) для защищенных [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Расшифруйте защищённый [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Измените существующие пароли в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Тестируйте варианты паролей с [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) и [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Примените шифрование к [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с паролями пользователя и владельца.
+1. Ограничьте разрешения с помощью [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
+1. Выберите [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) для защищенных [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Расшифруйте защищённый [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Измените существующие пароли в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Тестируйте варианты паролей с [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) и [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ## Зашифруйте PDF с ограниченными привилегиями
 

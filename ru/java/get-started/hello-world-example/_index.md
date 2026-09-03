@@ -17,13 +17,13 @@ Abstract: В этой статье предоставлен пример Hello W
 
 Пример на Java включает следующие шаги:
 
-1. Создайте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объект.
-1. Добавьте [Страницу](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) к документу.
+1. Создайте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объект.
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) к документу.
 1. Создайте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) с текстом `Hello, world!`.
-1. Установите [Позицию](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), шрифт, размер шрифта, цвет фона и цвет переднего плана через фрагмент [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Установите [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), шрифт, размер шрифта, цвет фона и цвет переднего плана через фрагмент [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
 1. Создайте [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) для страницы.
-1. Добавьте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) к [Страницу](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Сохраните PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) к [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Сохраните PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 Следующий код на Java основан на `GetStartedExamples.java`.
 

@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как добавит
 
 Используйте этот пример, когда страница должна отображать повернутый текстовый штамп с пользовательским оформлением.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) и настройте его размещение и внешний вид текста.
 1. Добавьте штамп на целевую страницу и сохраните документ.
 

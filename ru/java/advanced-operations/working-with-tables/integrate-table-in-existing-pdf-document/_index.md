@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как интегри
 
 Используйте этот пример, когда выбранные столбцы CSV необходимо преобразовать в стилизованную таблицу PDF.
 
-1. Создайте [Таблица](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настроить её границы.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настроить её границы.
 1. Определите необходимые индексы столбцов из строки заголовка CSV.
 1. Добавьте строку заголовка и запрошенное количество строк данных, затем верните таблицу.
 
@@ -58,7 +58,7 @@ public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
 
 1. Прочитайте строки CSV из входного файла.
 1. Предпросмотрите подмножество разобранных строк в консоли.
-1. Создайте PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), добавьте сгенерированную таблицу, и сохраните выходной файл.
+1. Создайте PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), добавьте сгенерированную таблицу, и сохраните выходной файл.
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {

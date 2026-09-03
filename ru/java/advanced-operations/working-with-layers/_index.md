@@ -17,10 +17,10 @@ Aspose.PDF for Java раскрывает слои PDF через `Layer` API н�
 
 ## Добавьте слои на страницу PDF
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте и настроить необходимые [Слой](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) объекты на странице.
-1. Сохраните результирующий PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Создайте и настроить необходимые [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) объекты на странице.
+1. Сохраните результирующий PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addLayers(Path outputFile) {
@@ -43,10 +43,10 @@ public static void addLayers(Path outputFile) {
 
 ## Заблокируйте слой
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к цели [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и получить его [Слой](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) коллекцию.
-1. Блокируйте цель [Слой](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к цели [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и получить его [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) коллекцию.
+1. Блокируйте цель [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void lockLayer(Path inputFile, Path outputFile) {

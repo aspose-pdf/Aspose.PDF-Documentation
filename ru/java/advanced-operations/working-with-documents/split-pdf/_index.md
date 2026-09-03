@@ -19,10 +19,10 @@ Aspose.PDF for Java поддерживает несколько варианто
 
 Используйте этот подход, когда каждая исходная страница должна стать отдельным выходным документом.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для каждого [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) вы хотите экспортировать.
-1. Добавьте выбранное [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в новый документ.
-1. Сохраните каждый выводной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для каждого [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) вы хотите экспортировать.
+1. Добавьте выбранное [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в новый документ.
+1. Сохраните каждый выводной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void splitDocuments(Path inputFile, Path outputDir) {
@@ -41,8 +41,8 @@ public static void splitDocuments(Path inputFile, Path outputDir) {
 
 Этот пример делит исходный документ на два последовательных выходных файла, основываясь на средней точке.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Вычислите середину доступного [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) коллекция.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Вычислите середину доступного [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) коллекция.
 1. Скопируйте первую половину страниц в один выходной документ, а оставшиеся страницы — в другой.
 1. Сохраните оба полученных документа.
 
@@ -73,8 +73,8 @@ public static void splitDocumentsIntoTwoParts(Path inputFile, Path outputDir) {
 
 Используйте этот шаблон, когда каждый файл вывода должен содержать одинаковое количество страниц, за исключением, возможно, последней части.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Переберите [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) коллекция группами по `pagesPerPart`.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) коллекция группами по `pagesPerPart`.
 1. Создайте новый выходной документ для каждой группы и скопируйте рассчитанный диапазон страниц в него.
 1. Сохраните каждую часть с сгенерированным именем файла.
 
@@ -102,8 +102,8 @@ public static void splitDocumentsEveryNPages(Path inputFile, Path outputDir, int
 
 Этот пример позволяет вам задавать явные начальные и конечные страницы для каждого выходного документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Определите требуемое [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) диапазоны в массиве или другой коллекции.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Определите требуемое [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) диапазоны в массиве или другой коллекции.
 1. Проверьте каждый диапазон относительно количества страниц исходного документа и скопируйте соответствующие страницы в новый документ.
 1. Сохраните каждый файл вывода, основанный на диапазоне.
 
@@ -141,8 +141,8 @@ public static void splitDocumentsByPageRanges(Path inputFile, Path outputDir) {
 
 Используйте этот подход, когда обложка должна быть экспортирована отдельно от остальной части документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и подтвердите, что он содержит страницы.
-1. Создайте один выходной документ для первого [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и подтвердите, что он содержит страницы.
+1. Создайте один выходной документ для первого [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Создайте другой документ для оставшегося диапазона страниц, когда доступно более одной страницы.
 1. Сохраните оба результата.
 
@@ -177,8 +177,8 @@ public static void splitDocumentsFirstPageAndRest(Path inputFile, Path outputDir
 
 В этом примере последняя страница отделяется от остальной части документа, что полезно для извлечения страниц резюме или подписей.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и проверьте, что он не пустой.
-1. Скопируйте последнее [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в новый выходной документ.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и проверьте, что он не пустой.
+1. Скопируйте последнее [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в новый выходной документ.
 1. Удалите эту страницу из оригинального документа, когда прежние страницы всё ещё остаются.
 1. Сохраните последнюю страницу и остальные страницы как отдельные файлы.
 
@@ -209,9 +209,9 @@ public static void splitDocumentsLastPageAndRest(Path inputFile, Path outputDir)
 
 Используйте этот шаблон, когда документ должен быть разделён на три последовательных раздела примерно одинакового размера.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и определите общее количество страниц.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и определите общее количество страниц.
 1. Вычислите приблизительный размер каждой части вывода.
-1. Создайте до трёх документов и скопируйте соответствующие [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) диапазоны.
+1. Создайте до трёх документов и скопируйте соответствующие [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) диапазоны.
 1. Сохраните каждую сгенерированную часть.
 
 ```java
@@ -245,8 +245,8 @@ public static void splitDocumentsIntoThreeParts(Path inputFile, Path outputDir) 
 
 Этот пример показывает, как создавать выходные файлы из наборов страниц, не идущих последовательно, вместо непрерывных диапазонов.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Определите пользовательские группы [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) числа.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Определите пользовательские группы [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) числа.
 1. Создайте новый выходной документ для каждой группы и добавьте в него только корректные страницы из этой группы.
 1. Сохраните каждый непустой документ группы.
 
@@ -280,8 +280,8 @@ public static void splitDocumentsCustomPageGroups(Path inputFile, Path outputDir
 
 Используйте эту версию, когда имена выходных файлов должны оставаться лексически сортируемыми, например в автоматизированных конвейерах.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте один выходной документ для каждого [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте один выходной документ для каждого [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Сохраните каждый файл с номером страницы, дополненным нулями.
 
 ```java
@@ -301,8 +301,8 @@ public static void splitDocumentsWithStableFilenames(Path inputFile, Path output
 
 Этот пример создает два выходных файла, разделяя страницы в зависимости от чётности их номера.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте один выходной документ для нечётных [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) числа и другое для четных номеров страниц.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте один выходной документ для нечётных [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) числа и другое для четных номеров страниц.
 1. Перебирайте исходные страницы с необходимым шагом для каждого выходного документа.
 1. Сохраните результаты нечётных и чётных страниц отдельно.
 

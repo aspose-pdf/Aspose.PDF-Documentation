@@ -14,10 +14,10 @@ Abstract: В этой статье показано, как удалять из�
 
 ## Удалите встроенное изображение по индексу
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к ресурсам изображений в целевом файле [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к ресурсам изображений в целевом файле [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Удалите целевое изображение из коллекции ресурсов страницы по его индексу.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void deleteImage(Path inputFile, Path outputFile) {

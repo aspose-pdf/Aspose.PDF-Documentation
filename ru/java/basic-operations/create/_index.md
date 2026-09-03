@@ -19,10 +19,10 @@ Abstract: В этой статье показано, как создать PDF �
 
 Чтобы создать PDF документ программно:
 
-1. Создайте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объект.
+1. Создайте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объект.
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
 1. Добавьте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) в параграфы страницы.
-1. Сохраните [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в выходной файл.
+1. Сохраните [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в выходной файл.
 
 ## Создайте простой PDF-документ
 

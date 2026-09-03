@@ -17,9 +17,9 @@ XFA-формы могут быть преобразованы в стандар�
 
 ## Преобразуйте динамическую форму XFA в AcroForm
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к документу [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) и установите необходимые [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) свойства.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) {
@@ -32,9 +32,9 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 
 ## Преобразуйте форму XFA с `ignoreNeedsRendering`
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к документу [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) и установите необходимые `ignoreNeedsRendering` и [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) свойства.
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertXfaFormWithIgnoreNeedsRendering(Path inputFile, Path outputFile) {

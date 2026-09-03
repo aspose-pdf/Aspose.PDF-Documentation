@@ -17,8 +17,8 @@ Abstract: В этой статье показано, как извлекать �
 
 ## Извлеките значения из всех полей AcroForm
 
-1. Откройте документ PDF-формы с помощью [Форма](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
-1. Переберите имена полей из [Форма](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад и прочитайте каждое текущее значение поля в карту.
+1. Откройте документ PDF-формы с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
+1. Переберите имена полей из [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад и прочитайте каждое текущее значение поля в карту.
 
 ```java
 public static Map<String, String> getValuesFromAllFields(Path inputFile) {

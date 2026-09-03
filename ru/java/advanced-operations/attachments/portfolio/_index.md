@@ -19,7 +19,7 @@ PDF портфолио может объединять несколько фай
 
 Используйте этот пример, когда нужно упаковать несколько файлов в коллекцию PDF-портфолио.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и включить его [Коллекцию](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и включить его [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
 1. Создайте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) объекты для каждого входного файла и задайте их описания.
 1. Добавьте файлы в коллекцию портфеля и сохраните выходной документ.
 
@@ -49,7 +49,7 @@ public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
 
 Используйте этот пример, когда необходимо очистить существующую коллекцию PDF‑портфеля.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите элементы коллекции документов.
 1. Сохраните очищенный конечный документ.
 

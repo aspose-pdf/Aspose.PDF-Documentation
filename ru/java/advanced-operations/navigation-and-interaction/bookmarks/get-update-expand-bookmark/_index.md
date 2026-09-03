@@ -19,7 +19,7 @@ Aspose.PDF for Java предоставляет закладки как чере�
 
 Используйте этот пример, когда необходимо просмотреть записи закладок верхнего уровня в оглавлении документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Переберите коллекцию оглавлений.
 1. Прочитайте и выведите названия закладок, стили и значения цвета.
 
@@ -70,7 +70,7 @@ public static void getBookmarkPageNumber(Path inputFile) {
 
 Используйте этот пример, когда нужно проанализировать как элементы верхнего уровня, так и вложенные элементы оглавления.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Пройдите по элементам верхнего уровня и выведите их свойства.
 1. Обнаружьте дочерние закладки, затем пройдите по ним и выведите их свойства.
 
@@ -103,7 +103,7 @@ public static void getChildBookmarks(Path inputFile) {
 
 Используйте этот пример, когда необходимо изменить существующее название закладки и её стиль.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к целевому элементу оглавления и его дочерней закладке.
 1. Обновите свойства закладки и сохраните документ.
 
@@ -125,7 +125,7 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда панель закладок должна открываться и показывать развернутые элементы оглавления при отображении документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Установите режим страницы на использование оглавления и пометьте каждый элемент оглавления как открытый.
 1. Сохраните обновлённый документ.
 

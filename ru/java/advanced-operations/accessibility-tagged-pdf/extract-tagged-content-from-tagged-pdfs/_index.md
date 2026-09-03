@@ -16,7 +16,7 @@ sitemap:
 
 Используйте этот пример, когда вам нужен доступ к контейнеру помеченного контента и вы хотите задать базовые метаданные документа, такие как заголовок и язык.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) объект из документа.
 1. Установите метаданные помеченного содержимого и сохраните файл вывода.
 
@@ -35,7 +35,7 @@ public static void getTaggedContent(Path outputFile) {
 
 Этот пример показывает, как исследовать корневые объекты, представляющие дерево структуры Tagged PDF.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получить его тегированное содержимое.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получить его тегированное содержимое.
 1. Установите требуемые метаданные документа.
 1. Прочитайте и выведите корень дерева структуры и логический корневой элемент, затем сохраните файл.
 
@@ -58,7 +58,7 @@ public static void getRootStructure(Path outputFile) {
 
 Используйте этот пример, когда вам нужно пройтись по дочерним элементам в структуре дерева, проверить их свойства и обновить выбранные метаданные.
 
-1. Откройте исходный PDF с тегами [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF с тегами [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Считайте дочерние элементы из корня дерева структуры и выведите доступные свойства.
 1. Получите дочерние элементы первого корневого дочернего элемента, обновите их метаданные и сохраните документ.
 

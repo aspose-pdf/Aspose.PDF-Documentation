@@ -19,8 +19,8 @@ Abstract: В этой статье объясняется, как создава
 
 Используйте этот пример, когда вам нужно разместить текстовую аннотацию в стиле стикер-ноты с метаданными всплывающего окна на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [Текстовая аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) и настройте его заголовок, содержимое, значок и всплывающее окно.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) и настройте его заголовок, содержимое, значок и всплывающее окно.
 1. Добавьте аннотацию на страницу и сохраните документ.
 
 ```java
@@ -52,9 +52,9 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 
 Этот пример сканирует страницу и выводит прямоугольник каждой текстовой аннотации.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Итерируйте аннотации на странице.
-1. Фильтруйте аннотации по [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` и распечатать их прямоугольники.
+1. Фильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` и распечатать их прямоугольники.
 
 ```java
 public static void textAnnotationGet(Path inputFile) {
@@ -72,8 +72,8 @@ public static void textAnnotationGet(Path inputFile) {
 
 Используйте этот подход, когда существующие текстовые аннотации следует удалить из документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Соберите аннотации типа [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
 1. Удалите собранные аннотации и сохраните файл вывода.
 
 ```java
@@ -97,8 +97,8 @@ public static void textAnnotationDelete(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда необходимо отметить вставленный текст аннотацией обзора в виде каретки.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [Аннотация-каретка](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) и настройте его всплывающее окно и внешний вид.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) и настройте его всплывающее окно и внешний вид.
 1. Добавьте аннотацию на страницу и сохраните документ.
 
 ```java
@@ -127,9 +127,9 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 
 Этот пример читает существующие аннотации caret и выводит их расположения.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Итерируйте по аннотациям страницы.
-1. Фильтруйте аннотации по [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` и распечатать их прямоугольники.
+1. Фильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` и распечатать их прямоугольники.
 
 ```java
 public static void caretAnnotationsGet(Path inputFile) {
@@ -148,8 +148,8 @@ public static void caretAnnotationsGet(Path inputFile) {
 
 Используйте этот подход, когда нужно удалить каретные аннотации со страницы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Соберите аннотации, тип которых [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Соберите аннотации, тип которых [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
 1. Удалите собранные аннотации и сохраните выходной документ.
 
 ```java
@@ -175,7 +175,7 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 
 Этот пример сочетает аннотацию caret с аннотацией strikeout, чтобы представить комментарий рецензирования в стиле замены.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте аннотацию caret и связанные с ней [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
 1. Свяжите аннотации через `setInReplyTo` и `setReplyType`, затем сохраните документ.
 
@@ -221,7 +221,7 @@ public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
 
 Этот пример обнаруживает аннотации зачеркивания, которые участвуют в групповом процессе замены.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Пройдите по аннотациям страницы и выберите аннотации зачёркивания.
 1. Проверьте связь ответов и выведите прямоугольник совпадающих аннотаций.
 
@@ -245,7 +245,7 @@ public static void replaceAnnotationsGet(Path inputFile) {
 
 Используйте этот подход, когда необходимо удалить с страницы аннотации вычеркивания replace-review.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Соберите аннотации зачеркивания, которые представляют разметку замены.
 1. Удалите собранные аннотации и сохраните обновлённый документ.
 

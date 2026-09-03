@@ -19,14 +19,14 @@ Aspose.PDF for Java включает операции со структурой 
 
 Используйте этот пример, когда вам нужно проверить, соответствует ли документ архивному стандарту PDF/A-1a.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Выполните проверку в соответствии с требуемым [PDF-формат](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) цель.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Выполните проверку в соответствии с требуемым [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) цель.
 1. Сохраните отчет проверки в указанный путь вывода.
 
 ```java
 public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
     try (Document document = new Document(inputFile.toString())) {
-        document.validate(outputFile.toString(), PdfFormat.PDF_A_1A);
+        document.validate(outputFile.toString(), .PDF_A_1A);
     }
 }
 ```
@@ -35,8 +35,8 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 
 Этот вариант проверяет тот же исходный документ на соответствие уровню PDF/A-1b.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Вызовите метод проверки с [PDF-формат](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) значение для PDF/A-1b.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Вызовите метод проверки с [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) значение для PDF/A-1b.
 1. Запишите результат валидации в выходной файл отчета.
 
 ```java
@@ -51,9 +51,9 @@ public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда документ должен включать сгенерированную страницу TOC со ссылками на страницы содержимого.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Вставьте новое оглавление [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и настроить его [ИнформацияОСодержание](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-1. Создайте [Заголовок](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) записи, указывающие на целевые страницы.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Вставьте новое оглавление [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и настроить его [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Создайте [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) записи, указывающие на целевые страницы.
 1. Сохраните обновлённый документ.
 
 ```java
@@ -88,9 +88,9 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 
 Этот пример показывает, как назначить разные визуальные настройки для нескольких уровней оглавления.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте Оглавление [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и настроить [ИнформацияОСодержание](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) форматировать массив.
-1. Создайте образец [Заголовок](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) записи с разными уровнями.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте Оглавление [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и настроить [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) форматировать массив.
+1. Создайте образец [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) записи с разными уровнями.
 1. Сохраните документ с отформатированным TOC.
 
 ```java
@@ -142,9 +142,9 @@ public static void setTocLevels(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда оглавление должно показывать заголовки записей без номеров страниц.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Добавьте Оглавление [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и отключить номера страниц в [ИнформацияОСодержание](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-1. Создайте требуемое [Заголовок](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) запись и добавить её на страницу содержания.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте Оглавление [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и отключить номера страниц в [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Создайте требуемое [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) запись и добавить её на страницу содержания.
 1. Сохраните обновлённый документ.
 
 ```java
@@ -188,9 +188,9 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 
 Этот пример добавляет пользовательский префикс к номерам страниц, отображаемым в сгенерированном оглавлении.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Вставьте оглавление [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и установить желаемый префикс номера страницы в [ИнформацияОСодержание](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-1. Создайте [Заголовок](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) записи, указывающие на каждую страницу.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Вставьте оглавление [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и установить желаемый префикс номера страницы в [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Создайте [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) записи, указывающие на каждую страницу.
 1. Сохраните обновлённый документ.
 
 ```java
@@ -224,7 +224,7 @@ public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда документ должен выполнять JavaScript при открытии и отображать предупреждение об истечении срока после определённой даты.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте любой необходимый контент.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте любой необходимый контент.
 1. Создайте [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) с логикой истечения.
 1. Назначьте скрипт как действие открытия документа и сохраните выходной файл.
 
@@ -251,9 +251,9 @@ public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
 
 Этот пример преобразует интерактивные поля формы в статическое содержимое страницы, поэтому полученный документ больше не может быть отредактирован как форма.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Проверьте, содержит ли документ виджеты формы.
-1. Сделайте плоским каждый [Поле](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) представлен(а) [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. Сделайте плоским каждый [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) представлен(а) [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
 1. Сохраните уплощенный документ.
 
 ```java

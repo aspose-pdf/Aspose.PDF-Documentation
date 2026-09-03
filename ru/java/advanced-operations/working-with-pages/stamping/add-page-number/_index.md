@@ -15,12 +15,12 @@ Abstract: В этой статье объясняется, как добавит
 ---
 ## Добавьте штамп с номером страницы
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) объект.
 1. Настройте необходимые параметры размещения штампа и нумерации.
 1. Установите требуемые параметры форматирования текста, включая [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) и [Цвет](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
-1. Добавьте настроенный [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) к целевому [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте настроенный [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) к целевому [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addPageNumStamp(Path inputFile, Path outputFile) {

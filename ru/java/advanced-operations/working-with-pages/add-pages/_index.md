@@ -19,7 +19,7 @@ Aspose.PDF for Java позволяет вставлять пустые стра�
 
 Используйте этот пример, когда нужно добавить пустую страницу в середину существующего PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Вставьте новую страницу в целевую позицию в коллекции страниц.
 1. Сохраните обновлённый документ.
 

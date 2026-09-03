@@ -19,7 +19,7 @@ Aspose.PDF for Java позволяет перемещать страницы м�
 
 Используйте этот пример, когда одну страницу следует удалить из исходного PDF и сохранить в отдельный документ.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
 1. Добавьте целевую страницу в назначение и удалите её из источника.
 1. Сохраните оба документа.
 
@@ -39,7 +39,7 @@ public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceO
 
 Используйте этот пример, когда несколько страниц должны быть перенесены из исходного PDF в новый документ.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
 1. Скопируйте выбранные страницы в целевой документ.
 1. Удалите перемещённые страницы из исходного документа и сохраните оба файла.
 
@@ -62,7 +62,7 @@ public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path s
 
 Используйте этот пример, когда страницу нужно переместить в новое место в том же PDF.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Дублируйте целевую страницу в новое положение и удалите исходный элемент страницы.
 1. Сохраните переупорядоченный документ.
 

@@ -19,7 +19,7 @@ Abstract: Эта страница объясняет общие рабочие �
 
 Используйте этот пример, когда страница PDF должна содержать встроенное видео с пользовательским плеером, изображением постера и скином.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
 1. Создайте [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), настройте активы плеера, постер и поток контента.
 1. Добавьте аннотацию на страницу и сохраните результирующий документ.
 
@@ -67,8 +67,8 @@ public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throw
 
 Этот пример удаляет существующие аннотации rich media со страницы.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Соберите аннотации типа [Тип аннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
 1. Удалите собранные аннотации и сохраните обновлённый документ.
 
 ```java
@@ -94,7 +94,7 @@ public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
 
 Используйте этот пример, чтобы просмотреть аннотации экрана, звука и мультимедиа, уже присутствующие на странице.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Определите набор типов мультимедийных аннотаций, которые вы хотите обнаружить.
 1. Пройдите по аннотациям страницы и выведите тип и прямоугольник для каждого совпадения.
 
@@ -119,7 +119,7 @@ public static void multimediaAnnotationsGet(Path inputFile) {
 
 В этом примере добавляется интерактивный просмотр 3D‑модели с предустановленными перспективами и параметрами рендеринга.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Загрузите модель в [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) и настроить [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
 1. Создайте [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), добавьте его на страницу, и сохраните документ.
 
@@ -168,8 +168,8 @@ public static void annotation3dAdd(Path modelFile, Path outputFile) {
 
 Используйте этот пример, когда страница должна ссылаться на медиофайл через регион воспроизведения на экране.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [Экранная аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) для медиафайла и целевого прямоугольника.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) для медиафайла и целевого прямоугольника.
 1. Добавьте аннотацию на страницу и сохраните документ.
 
 ```java
@@ -192,8 +192,8 @@ public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile)
 
 В этом примере звуковая аннотация размещается на странице и ассоциируется с файлом WAV.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [Звуковая аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) для целевого аудиофайла и настройте его метаданные.
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) для целевого аудиофайла и настройте его метаданные.
 1. Добавьте аннотацию на страницу и сохраните результирующий документ.
 
 ```java
