@@ -8,8 +8,8 @@ description: Lisez les articles techniques sur Aspose.PDF for JasperReports. Obt
 lastmod: "2026-08-31"
 ---
 
-This section includes the following topics:
+Cette section comprend les sujets suivants :
 
-- [How to - use Aspose.PDF for JasperReports offline demos](/pdf/fr/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/)
-- [ Comment - Mettre à jour les démos JasperReports existantes pour utiliser Aspose.PDF for JasperReports] (/pdf/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/)
+- [Comment utiliser Aspose.PDF pour les démos hors ligne JasperReports](/pdf/fr/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/)
+- [Comment mettre à jour les démos JasperReports existantes pour utiliser Aspose.PDF for JasperReports](/pdf/fr/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/)
 
