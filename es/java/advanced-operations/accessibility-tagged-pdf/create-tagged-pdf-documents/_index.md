@@ -16,7 +16,7 @@ Crear un PDF etiquetado significa agregar elementos de estructura que hacen que 
 
 Utilice este ejemplo cuando necesite un PDF etiquetado mínimo con un encabezado y un párrafo en el árbol de estructura lógica.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y obtener su [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y obtener su [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
 1. Establezca el título y el idioma del documento, luego cree los elementos de encabezado y párrafo requeridos.
 1. Agregar los Structure Elements al elemento raíz y guardar el documento.
 
@@ -48,7 +48,7 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 
 Este ejemplo construye una estructura más rica mezclando encabezados, párrafos, spans, citas y configuraciones de diseño explícitas.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicializar los metadatos de contenido etiquetado.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicializar los metadatos de contenido etiquetado.
 1. Construye la estructura de encabezado y párrafo, luego agrega spans y un elemento de cita dentro del párrafo.
 1. Ajuste la posición del párrafo, agregue los elementos a la estructura raíz y guarde el documento.
 
@@ -97,7 +97,7 @@ public static void createTaggedPdfDocumentAdv(Path outputFile) {
 
 Utilice este ejemplo cuando el contenido del párrafo etiquetado deba llevar información explícita de Font, color y estilo.
 
-1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un nuevo PDF etiquetado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree un elemento de párrafo y configure su estado de texto estructural.
 1. Establezca el texto del párrafo y guarde el documento.
 
@@ -126,8 +126,8 @@ public static void addStyle(Path outputFile) {
 
 Este ejemplo muestra cómo crear una figura etiquetada con texto alternativo, título, etiqueta personalizada, contenido de imagen y posicionamiento.
 
-1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crear un [ElementoFigura](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), establezca sus metadatos accesibles y asigne la imagen.
+1. Crear un nuevo PDF etiquetado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), establezca sus metadatos accesibles y asigne la imagen.
 1. Ajusta la posición de la figura y guarda el documento.
 
 ```java
@@ -161,8 +161,8 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 
 Utiliza este ejemplo cuando necesites comprobar si un PDF etiquetado cumple con las reglas de validación PDF/UA.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Ejecutar validación contra [FormatoPdf](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ejecutar validación contra [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
 1. Escribe el registro de validación e imprime el resultado de la validación.
 
 ```java
@@ -178,8 +178,8 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 
 Este ejemplo aplica configuraciones explícitas de margen y alineación a un párrafo etiquetado.
 
-1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Agregar un elemento de estructura de párrafo y preparar [ConfiguraciónDePosición](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. Crear un nuevo PDF etiquetado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar un elemento de estructura de párrafo y preparar [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
 1. Aplica la configuración de posición al párrafo y guarda el documento.
 
 ```java
@@ -218,8 +218,8 @@ public static void adjustPosition(Path outputFile) {
 
 Utilice este enfoque cuando se deba convertir un PDF existente a PDF/UA y etiquetar automáticamente durante la conversión.
 
-1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crear [OpcionesDeConversiónDeFormatoPdf](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) y habilitar el etiquetado automático.
+1. Abrir el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) y habilitar el etiquetado automático.
 1. Ejecute la conversión y guarde el documento de salida.
 
 ```java
@@ -243,7 +243,7 @@ public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outpu
 
 Este ejemplo etiqueta un campo de formulario de firma para que se convierta en parte del árbol de estructura lógica.
 
-1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar una página con un campo de formulario.
+1. Crear un nuevo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar una página con un campo de formulario.
 1. Agregar el campo de formulario a la colección de formularios del documento.
 1. Cree un elemento de estructura de formulario etiquetado, asócielo con el campo y guarde el documento.
 
@@ -275,8 +275,8 @@ public static void createPdfWithTaggedFormField(Path outputFile) {
 
 Utilice este ejemplo cuando un PDF etiquetado deba incluir una página de tabla de contenidos básica vinculada a los encabezados del documento.
 
-1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y añada una página de TOC.
-1. Crear el [ElementoTOC](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) y un encabezado que debería aparecer en el TOC.
+1. Crear un nuevo PDF etiquetado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y añada una página de TOC.
+1. Crear el [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) y un encabezado que debería aparecer en el TOC.
 1. Vincula la entrada del TOC al encabezado y guarda el documento.
 
 ```java
@@ -312,7 +312,7 @@ public static void createPdfWithTocPage(Path outputFile) {
 
 Este ejemplo crea una tabla de contenido etiquetada más compleja con títulos de página enlazados, elementos de lista anidados y varios niveles de encabezado.
 
-1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y prepare una página de TOC con un título visible.
+1. Crear un nuevo PDF etiquetado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y prepare una página de TOC con un título visible.
 1. Cree la estructura del TOC, vincule el título y las entradas del TOC a los encabezados y elementos de lista, y agregue los elementos de contenido relacionados.
 1. Guarda el documento final con la estructura avanzada de TOC.
 

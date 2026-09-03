@@ -16,7 +16,7 @@ Esta página cubre patrones comunes de configuración de propiedades para elemen
 
 Utilice este ejemplo cuando un elemento de estructura etiquetada deba exponer metadatos de accesibilidad, como título, idioma, texto real y texto alternativo.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y inicializar los metadatos de contenido etiquetado.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y inicializar los metadatos de contenido etiquetado.
 1. Cree una sección y un elemento de encabezado en el árbol de estructura.
 1. Establezca las propiedades del encabezado y guarde el documento.
 
@@ -50,8 +50,8 @@ public static void setProperties(Path outputFile) {
 
 Utilice este ejemplo cuando necesite agregar un elemento de párrafo simple al árbol de estructura etiquetado.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crear un [Elemento de párrafo](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) y establezca su texto.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) y establezca su texto.
 1. Agregue el párrafo al elemento raíz y guarde el documento.
 
 ```java
@@ -74,7 +74,7 @@ public static void setTextElements(Path outputFile) {
 
 Este ejemplo crea múltiples elementos de estructura a nivel de bloque, incluyendo encabezados de varios niveles y un párrafo.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Agregue elementos de encabezado para los niveles requeridos y luego cree un elemento de párrafo.
 1. Agregue los elementos de bloque a la estructura raíz y guarde el documento.
 
@@ -105,7 +105,7 @@ public static void setTextBlockElements(Path outputFile) {
 
 Utilice este ejemplo cuando los elementos de estructura de bloque deben contener spans en línea anidados.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Construye elementos de encabezado y agrega los elementos span como hijos.
 1. Crea un párrafo con varios spans y guarda el documento.
 
@@ -148,7 +148,7 @@ public static void setInlineElements(Path outputFile) {
 
 Este ejemplo asigna nombres de etiquetas personalizados a los elementos de párrafo y span en la estructura etiquetada.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de sección.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de sección.
 1. Crea párrafos y spans, luego asigna nombres de etiqueta personalizados a cada elemento.
 1. Agrega los elementos a la sección y guarda el documento.
 
@@ -187,7 +187,7 @@ public static void setTagName(Path outputFile) {
 
 Utilice este ejemplo cuando los elementos de enlace etiquetados deban incluir descripciones alternativas, hipervínculos y contenido de figura con atributos de diseño.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar elementos de enlace dentro de los párrafos.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar elementos de enlace dentro de los párrafos.
 1. Configure los destinos de hipervínculo, descripciones alternativas y el elemento de figura vinculado.
 1. Establezca el atributo de diseño requerido y guarde el documento.
 
@@ -237,7 +237,7 @@ public static void setElements(Path imageFile, Path outputFile) {
 
 Este ejemplo crea elementos de párrafo que combinan texto plano y elementos span anidados.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crear elementos de párrafo y agregar hijos span con texto personalizado.
 1. Agrega los párrafos al elemento raíz y guarda el documento.
 
@@ -271,7 +271,7 @@ public static void addLinkElement(Path outputFile) {
 
 Utilice este ejemplo cuando los elementos de estructura de nota deban crearse con ID automáticos o explícitos.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de párrafo.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de párrafo.
 1. Cree elementos de nota y establezca su texto e IDs según sea necesario.
 1. Agrega las notas al párrafo y guarda el documento.
 
@@ -308,7 +308,7 @@ public static void setNoteElement(Path outputFile) {
 
 Este ejemplo asigna metadatos a nivel de documento y luego crea párrafos con diferentes valores de idioma.
 
-1. Crear un nuevo Tagged PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y establezca el título del documento y el idioma.
+1. Crear un nuevo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y establezca el título del documento y el idioma.
 1. Agregar un elemento de encabezado y crear párrafos para cada frase localizada.
 1. Guardar el documento etiquetado multilingüe.
 
