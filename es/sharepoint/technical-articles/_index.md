@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /es/sharepoint/technical-articles/
 lastmod: "2020-12-16"
-description: Technical Articles of PDF SharePoint API cover topics such as creating, exporting and saving SharePoint Wiki page and XML file to PDF.
+description: Los artículos técnicos de la API PDF SharePoint cubren temas como crear, exportar y guardar páginas Wiki de SharePoint y archivos XML en PDF.
 ---
 
 ## Artículos en esta sección
