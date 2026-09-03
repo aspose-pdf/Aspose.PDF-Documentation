@@ -19,7 +19,7 @@ lastmod: "2026-08-31"
 ```java
 import com.Aspose.PDF.jr3_7_0.jasperreports.*;
 
-com.Aspose.PDF.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.Aspose.PDF. jr3_7_0.jasperreports.JrPdfExporter();
+com.Aspose.PDF.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.Aspose.PDF.jr3_7_0.jasperreports.JrPdfExporter();
 
 File sourceFile = new File(fileName);
 
