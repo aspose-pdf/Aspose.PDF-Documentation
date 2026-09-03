@@ -14,7 +14,7 @@ Aspose.PDF for SharePoint is built on top of our award winning Aspose.PDF for .N
 
 {{% /alert %}}
 
-## Creating and XML File and Converting it to PDF
+## Creación de un archivo XML y su conversión a PDF.
 
 {{% alert color="primary" %}}
 
@@ -30,7 +30,7 @@ Paso a paso, este artículo lo guía a través del proceso de creación de un ar
 
 ### Paso 1: crear un archivo XML
 
-First create an XML file based on the Aspose.PDF for .NET Document Object Model.
+Primero, cree un archivo XML basado en el modelo de objetos de documento Aspose.PDF for .NET.
 
 Según Aspose.PDF para .NET DOM, un documento PDF contiene una colección de objetos de Sección y una Sección contiene uno o más elementos de Párrafo. El texto es un objeto de nivel de párrafo y puede contener uno o más segmentos. A continuación, se agrega una cadena de texto de muestra a un objeto Segmento y se agrega a un objeto Texto. Finalmente, el elemento Texto se agrega a la colección de párrafos del objeto Sección.
 
