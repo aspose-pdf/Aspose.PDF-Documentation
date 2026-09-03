@@ -5,12 +5,12 @@ type: docs
 weight: 10
 url: /jasperreports/working-with-jasperreports/
 description: Master working with JasperReports using Aspose.PDF. Create and export detailed reports in PDF format with advanced features.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.Words for JasperReports is available for free, time unlimited evaluation from the download page. The evaluation and licensed versions of the product is the same download.
+Aspose.PDF for JasperReports is available for free, time unlimited evaluation from the download page. The evaluation and licensed versions of the product is the same download.
 
 When you are happy with the evaluation version, [purchase a license](http://www.aspose.com/purchase/default.aspx). Make sure you understand and agree to the license terms.
 

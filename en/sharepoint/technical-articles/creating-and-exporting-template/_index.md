@@ -4,7 +4,7 @@ linktitle: Creating and Exporting Template
 type: docs
 weight: 10
 url: /sharepoint/creating-and-exporting-template/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: You can create and export templates to PDF in SharePoint using PDF SharePoint API.
 ---
 

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /id/reportingservices/setting-parameters/
 description: Pelajari cara mengatur parameter untuk rendering PDF di Aspose.PDF for Reporting Services agar output dapat dikendalikan dengan presisi.
-lastmod: "2026-07-29"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

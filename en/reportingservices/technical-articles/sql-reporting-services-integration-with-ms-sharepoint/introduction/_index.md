@@ -4,7 +4,7 @@ linktitle: Introduction
 type: docs
 weight: 10
 url: /reportingservices/introduction/
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}
