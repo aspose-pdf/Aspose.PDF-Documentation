@@ -70,7 +70,7 @@ lastmod: "2026-08-31"
 4. Скопируйте **Aspose-pdf-jasperreports.jar** из папки \lib в **Aspose.PDF.JasperReports.zip** в <InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\lib\.
 5. Добавьте следующие строки в файл **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml** файл.
 
-   Этот компонент может содержать различные параметры конфигурации, предназначенные для настройки экспорта. Например, вы можете использовать функцию сопоставления шрифтов JasperReports или указать расположение файла лицензии Aspose.Cells для JasperReports.
+   Этот компонент может содержать различные параметры конфигурации, предназначенные для настройки экспорта. Например, вы можете использовать функцию сопоставления шрифтов JasperReports или указать расположение файла лицензии Aspose.PDF for JasperReports.
   
 {{% /alert %}}
 
