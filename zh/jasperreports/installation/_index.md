@@ -11,6 +11,6 @@ lastmod: "2026-08-31"
 本节包括以下主题：
 
 - [系统要求](/pdf/zh/jasperreports/system-requirements/)
-- [与 ](/pdf/zh/jasperreports/integration-with-jasperreports/ 集成)
+- [与 JasperReports 集成](/pdf/zh/jasperreports/integration-with-jasperreports/)
 - [与 JasperServer 集成](/pdf/zh/jasperreports/integration-with-jasperserver/)
 
