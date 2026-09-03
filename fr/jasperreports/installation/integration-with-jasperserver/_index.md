@@ -14,7 +14,7 @@ Integrating Aspose.PDF for JasperReports with JasperServer is described below.
 
 {{% /alert %}}
 
-Dans les étapes suivantes, <InstallDir> représente le répertoire d'installation de JasperServer.
+Dans les étapes suivantes, `<InstallDir>` représente le répertoire d'installation de JasperServer.
 
 {{% alert color="primary" %}}
 
