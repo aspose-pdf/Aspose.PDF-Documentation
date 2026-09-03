@@ -88,7 +88,7 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
    -  <http://ant.apache.org/bindownload.cgi>에서 ANT 도구를 다운로드합니다.
    - ANT 도구의 압축을 풀고 도구 설명서에 설명된 대로 환경 변수를 설정합니다.
    -  현재 디렉터리를 <InstallDir>\demo\hsqldb로 변경하고 다음 명령줄을 실행합니다.
-      개미 실행 서버
+      `ant runServer`
 12. 새 명령 프롬프트 인스턴스를 열고 현재 디렉터리를 <InstallDir>\demo\samples\fonts.ap로 변경하고 명령줄에서 다음 명령을 실행합니다.
 13. ant javac – 테스트 애플리케이션의 Java 소스 파일을 컴파일합니다.
 14. ant compile – XML 보고서 디자인을 컴파일하고 .jasper 파일을 생성합니다.
