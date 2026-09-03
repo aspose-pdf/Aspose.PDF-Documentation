@@ -19,8 +19,7 @@ lastmod: "2026-08-31"
 2. ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` 파일을 찾아 다음 줄을 추가하세요:
 
 ```xml
- <bean id="AsposeExportParameters" class="comcom.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
-    <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-  
+ <bean id="AsposeExportParameters" class="com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
     INF/Aspose.Total.JasperReports.lic"/>
 </bean>
 ```
