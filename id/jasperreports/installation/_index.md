@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 Bagian ini mencakup topik-topik berikut:
 
-- [System Requirements](/pdf/id/jasperreports/system-requirements/)
-- [Integrasi dengan](/pdf/id/jasperreports/integration-with-jasperreports/)
-- [Integration with JasperServer](/pdf/id/jasperreports/integration-with-jasperserver/)
+- [Persyaratan Sistem](/pdf/id/jasperreports/system-requirements/)
+- [Integrasi dengan JasperReports](/pdf/id/jasperreports/integration-with-jasperreports/)
+- [Integrasi dengan JasperServer](/pdf/id/jasperreports/integration-with-jasperserver/)
 
