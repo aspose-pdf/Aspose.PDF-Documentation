@@ -42,7 +42,7 @@ lastmod: "2026-08-31"
 
 {{% alert color="primary" %}}
 
-2. Найдите элемент <util:map id=”exporterConfigMap> в
+2. Найдите элемент <util:map id="exporterConfigMap"> в
 
 **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** и добавьте следующие строки:
 
