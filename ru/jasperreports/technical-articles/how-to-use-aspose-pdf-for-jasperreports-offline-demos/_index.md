@@ -20,11 +20,11 @@ Aspose.PDF for JasperReports включает ряд демонстрацион�
 
 {{% alert color="primary" %}}
 
-1. Загрузите JasperReports с сайта <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>.. Обязательно загрузите весь заархивированный проект с исходным кодом и демонстрациями, а не только один JAR-файл.
-2. Распакуйте заархивированный проект в какое-нибудь место на жестком диске, например C:\..
+1. Загрузите JasperReports с сайта <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>. Обязательно загрузите весь заархивированный проект с исходным кодом и демонстрациями, а не только один JAR-файл.
+2. Распакуйте заархивированный проект в какое-нибудь место на жестком диске, например C:\.
 3. Скопируйте все демонстрационные папки из каталога \demo в ```<InstallDir>```\jasperreports\demo\samples из пакета **Aspose.PDF.JasperReports.zip**, где ```<InstallDir>``` — это каталог, в который вы распаковали JasperReports. Этот шаг обязателен, поскольку сценарии сборки демонстраций используют структуру папок JasperReports; в противном случае вам придется изменить сценарии сборки.
 4. Скопируйте файл **Aspose.PDF.jasperreports.jar** из папки \lib в **Aspose.PDF.JasperReports.zip** в ```<InstallDir>```\jasperreports\lib.
-5. Загрузите инструмент ANT с сайта <http://ant.apache.org/bindownload.cgi>..
+5. Загрузите инструмент ANT с сайта <http://ant.apache.org/bindownload.cgi>.
 6. Распакуйте инструмент ANT и настройте переменные среды, как описано в руководстве к инструменту.
 7. Измените текущий каталог на ```<InstallDir>```\demo\hsqldb и выполните следующую команду:
    `ant runServer`
