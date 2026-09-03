@@ -1,5 +1,5 @@
 ﻿---
-title: Sample Reports Gallery
+title: Galerie d’exemples de rapports
 linktitle: Galerie d’exemples de rapports
 type: docs
 weight: 40
