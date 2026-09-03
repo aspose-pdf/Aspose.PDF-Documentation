@@ -10,8 +10,8 @@ description: Los artículos técnicos de la API PDF SharePoint cubren temas como
 
 ## Artículos en esta sección
 
-- [Creating and Exporting Template](/pdf/es/sharepoint/creating-and-exporting-template/)
-- [Save SharePoint Wiki page as PDF](/pdf/es/sharepoint/save-sharepoint-wiki-page-as-pdf/)
+- [Crear y exportar plantilla](/pdf/es/sharepoint/creating-and-exporting-template/)
+- [Guardar página Wiki de SharePoint como PDF](/pdf/es/sharepoint/save-sharepoint-wiki-page-as-pdf/)
 - [Cómo crear y convertir un archivo XML a PDF](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)
 - [Exportar lista de tareas a PDF con código de barras usando PDF Template Engine](/pdf/es/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/)
 - [Convierta varios archivos seleccionados a archivos PDF con una única solicitud de conversión](/pdf/es/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/)
