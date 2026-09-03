@@ -1,6 +1,6 @@
 ﻿---
 title: Soporte técnico gratuito de clase mundial
-linktitle: World Class Free Technical Support
+linktitle: Soporte técnico gratuito de clase mundial
 type: docs
 weight: 30
 url: /es/jasperreports/world-class-free-technical-support/
