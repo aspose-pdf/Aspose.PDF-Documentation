@@ -19,7 +19,7 @@ O exemplo a seguir mostra o código típico necessário para exportar um relató
 ```java
 import com.aspose.pdf.jr3_7_0.jasperreports.*;
 
-com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.aspose.pdf. jr3_7_0.jasperreports.JrPdfExporter();
+com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
 
 File sourceFile = new File(fileName);
 
