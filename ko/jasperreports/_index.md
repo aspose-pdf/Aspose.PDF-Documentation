@@ -1,6 +1,6 @@
-﻿---
-title: 선적 서류 비치
-linktitle:  Aspose.PDF for JasperReports
+---
+title: 문서
+linktitle: Aspose.PDF for JasperReports
 second_title: Aspose.PDF for JasperReports
 type: docs
 weight: 120
