@@ -11,5 +11,5 @@ lastmod: "2026-08-31"
 В этот раздел включены следующие темы:
 
 - [Системные требования](/pdf/ru/jasperreports/system-requirements/)
-- [Интеграция с ](/pdf/ru/jasperreports/integration-with-jasperreports/)
+- [Интеграция с JasperReports](/pdf/ru/jasperreports/integration-with-jasperreports/)
 - [Интеграция с JasperServer](/pdf/ru/jasperreports/integration-with-jasperserver/)
