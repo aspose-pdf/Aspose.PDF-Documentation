@@ -1,9 +1,7 @@
 ﻿---
 title: Travailler avec JasperServer
-linktitle: Working with JasperServer
-type: docs
-weight: 20
-description: Explore how to efficiently work with JasperServer using Aspose.PDF. Export reports to professional PDFs with ease.
+linktitle: Travailler avec JasperServer
+description: Découvrez comment travailler efficacement avec JasperServer à l'aide d'Aspose.PDF. Exportez des rapports en PDF professionnels en toute simplicité.
 lastmod: "2026-08-31"
 ---
 
