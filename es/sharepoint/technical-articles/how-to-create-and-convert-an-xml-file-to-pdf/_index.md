@@ -4,39 +4,37 @@ linktitle: Cómo crear y convertir un archivo XML a PDF
 type: docs
 weight: 30
 url: /es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
-lastmod: "2026-06-18"
-description: PDF SharePoint API es capaz de crear y convertir archivos XML al formato PDF.
+lastmod: "2020-12-16"
+description: PDF SharePoint API es capaz de crear y convertir archivos XML a formato PDF.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint está construido sobre nuestro galardonado componente Aspose.PDF for .NET. Aspose.PDF for .NET ofrece características notables, desde la creación de documentos PDF desde cero hasta la manipulación de archivos PDF existentes. Entre estas características, la conversión de XML a PDF es una de las grandes funcionalidades soportadas por este producto. Por lo tanto, creemos que Aspose.PDF for SharePoint también será capaz de convertir archivos XML al formato PDF.
+Aspose.PDF for SharePoint is built on top of our award winning Aspose.PDF for .NET component. Aspose.PDF for .NET provides remarkable features from the creation of PDF document from scratch to manipulation of existing PDF files. Among these features, XML to PDF conversion is one of the great features support by this product. So we believe that Aspose.PDF for SharePoint will also be capable of converting XML files into PDF format.
 
 {{% /alert %}}
 
-## **Crear un archivo XML y convertirlo a PDF**
+## Creación de un archivo XML y su conversión a PDF.
 
 {{% alert color="primary" %}}
 
-Paso a paso, este artículo lo guía a través del proceso de crear un archivo XML y convertirlo a PDF:
+Paso a paso, este artículo lo guía a través del proceso de creación de un archivo XML y su conversión a PDF:
 
 1. [Crear un archivo XML](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
 2. [Crear una plantilla PDF](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
-3. [Cargar la plantilla XML](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
-4. [Especificar la ruta al origen](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+3. [Cargue la plantilla XML](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [Especifique la ruta a la ruta de origen](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
 5. [Especificar propiedades del archivo](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
 6. [Exportar el archivo a PDF](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
-7. [Guardar el archivo PDF](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
-#### **Paso 1: Crear archivo XML**
-Primero crea un archivo XML basado en el modelo de objetos de documento Aspose.PDF for .NET.
+7. [Guarde el archivo PDF](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document)
 
-Según el DOM de Aspose.PDF for .NET, un documento PDF contiene una colección de objetos Section, y una Section contiene uno o más elementos Paragraph. Text es un objeto a nivel de Paragraph y puede contener uno o más segmentos. A continuación, una cadena de texto de ejemplo se agrega a un objeto Segment y se añade a un objeto Text. Finalmente, el elemento Text se agrega a la colección de párrafos del objeto Section.
+### Paso 1: crear un archivo XML
 
-**XML**
+Primero, cree un archivo XML basado en el modelo de objetos de documento Aspose.PDF for .NET.
 
-{{< highlight csharp >}}
+Según Aspose.PDF para .NET DOM, un documento PDF contiene una colección de objetos de Sección y una Sección contiene uno o más elementos de Párrafo. El texto es un objeto de nivel de párrafo y puede contener uno o más segmentos. A continuación, se agrega una cadena de texto de muestra a un objeto Segmento y se agrega a un objeto Texto. Finalmente, el elemento Texto se agrega a la colección de párrafos del objeto Sección.
 
-
+```xml
 
 <?xml version="1.0" encoding="utf-8" ?>
 
@@ -46,7 +44,7 @@ Según el DOM de Aspose.PDF for .NET, un documento PDF contiene una colección d
 
     <Text>
 
-            <Segment>Hola Mundo</Segment>
+            <Segment>Hello World</Segment>
 
     </Text>
 
@@ -54,87 +52,79 @@ Según el DOM de Aspose.PDF for .NET, un documento PDF contiene una colección d
 
   </Pdf>
 
+```
 
+### Paso 2: crear una plantilla PDF
 
-{{< /highlight >}}
-#### **Paso 2: Crear plantilla PDF**
-Antes de continuar, asegúrese de que el servidor SharePoint Foundation 2010 esté instalado y configurado correctamente en el sistema donde se realizará la conversión.
+Antes de continuar, asegúrese de que el servidor SharePoint Foundation 2010 esté correctamente instalado y configurado en el sistema donde se realizará la conversión.
 
 1. Inicie sesión en el sitio de SharePoint.
-1. Seleccione **Site Action** y **All Items**.
+1. Seleccione **Acción del sitio** y **Todos los elementos**.
 1. Seleccione la opción **Crear** y seleccione **Plantilla PDF** de la lista.
 1. Introduzca un nombre de plantilla.
 1. Haga clic en **Crear**.
 
+![Create PDF Template](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 
+### Paso 3: cargar la plantilla XML
 
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
-#### **Paso 3: Cargar plantilla XML**
-Una vez que se haya creado la plantilla, cargue [el archivo XML](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
+Una vez creada la plantilla, cargue [el archivo XML](/pdf/es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/)
 
 1. En la página de la plantilla PDF, seleccione **Agregar nuevo elemento**.
 
+![Load XML Template](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
 
+### Paso 4: especificar la ruta del archivo fuente
 
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_2.png)
-#### **Paso 4: Especificar la ruta del archivo fuente**
 En el cuadro de diálogo de carga de documentos:
 
-1. Haga clic en **Examinar** y localice el archivo XML en su sistema. Puede activar la casilla de verificación para sobrescribir la opción de archivo existente.
-1. Presione el botón **OK**.
+1. Haga clic en **Examinar** y busque el archivo XML en su sistema. Puede habilitar la casilla de verificación para sobrescribir la opción de archivo existente.
+1. Presione el botón **Aceptar**.
 
+![Specify Source File Path](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
 
+### Paso 5: especificar las propiedades del archivo
 
+Cuando el archivo esté cargado, agregue información en los campos obligatorios (marcados con un asterisco rojo: *).
 
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_3.png)
-#### **Paso 5: Especificar propiedades del archivo**
-Cuando se carga el archivo, agregue información en los campos obligatorios (marcados con un asterisco rojo: *).
-
-Para este ejemplo, se había añadido una descripción de muestra y se completaron los siguientes campos:
+Para este ejemplo, se agregó una descripción de muestra y se completaron los siguientes campos:
 
 1. Una breve descripción del documento.
-1. Ingrese **AllListTypes** para el campo **Assigned List Types**.
-1. Seleccione **List** del menú **Type**.
-   Asegúrese de que el estado permanezca **Active**.
-1. Haga clic **Guardar** para guardar las propiedades.
+1. Ingrese **AllListTypes** para el campo **Tipos de lista asignados**.
+1. Seleccione **Lista** en el menú **Tipo**.
+   Asegúrese de que el estado permanezca **Activo**.
+1. Haga clic en **Guardar** para guardar las propiedades.
 
+![Specify File Properties](how-to-create-and-convert-an-xml-file-to-pdf_4.png)
 
+### Paso 6: Exportar a PDF
 
+Cuando el archivo XML se haya agregado a la plantilla PDF:
+Cualquiera:
 
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_4.png)
-#### **Paso 6: Exportar a PDF**
-Cuando el archivo XML se ha añadido a la plantilla PDF:
-O bien:
-
-1. Haga clic con el botón derecho en el archivo test.xml.
-1. Seleccione **Exportar a PDF** del menú.
+1. Haga clic derecho en el archivo test.xml.
+1. Seleccione **Exportar a PDF** en el menú.
 
 O:
 
-1. Seleccione **Aspose Tools** de los **Library Tools**.
-1. Haga clic en **Export**.
+1. Seleccione **Herramientas Aspose** de **Herramientas de biblioteca**.
+1. Haga clic en **Exportar**.
 
+![Export to PDF](how-to-create-and-convert-an-xml-file-to-pdf_5.png)
 
+### Paso 7: guarde el documento PDF
 
+1. En el cuadro de diálogo Exportar a PDF, seleccione **Almacenamiento de plantilla** (la ubicación donde se almacena el archivo fuente).
+1. Seleccione el archivo para exportar desde el menú **Nombre de plantilla**.
+1. Haga clic en **Exportar a PDF** para guardar el documento PDF final.
 
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_5.png)
-#### **Paso 7: Guardar documento PDF**
-1. En el cuadro de diálogo Exportar a PDF, seleccione **Template storage** (la ubicación donde se almacena el archivo fuente).
-1. Seleccione el archivo a exportar del menú **Template name**.
-1. Haga clic **Export to PDF** para guardar el documento PDF final.
+![Save PDF Document](how-to-create-and-convert-an-xml-file-to-pdf_6.png)
 
+## Abre el PDF
 
+El documento PDF se ha guardado y se puede abrir. En la imagen siguiente, observe la frase "Hello World" que estaba en la etiqueta de segmento en el XML. También tenga en cuenta que el productor de PDF es Aspose.PDF for SharePoint.
 
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_6.png)
-#### **Abrir el PDF**
-El documento PDF ha sido guardado y puede abrirse. En la imagen siguiente, observe la frase "Hello World" que estaba en la etiqueta {segment] del XML. También observe que el Productor PDF es Aspose.PDF for SharePoint.
-
-
-
-
-![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
+![Open the PDF](how-to-create-and-convert-an-xml-file-to-pdf_7.png)
 
 {{% /alert %}}
+
