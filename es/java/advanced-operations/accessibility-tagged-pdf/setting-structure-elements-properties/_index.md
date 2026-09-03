@@ -13,17 +13,12 @@ sitemap:
 
 Esta página cubre patrones comunes de configuración de propiedades para elementos de estructura PDF etiquetados en Java.
 
-
-## 
-Establecer propiedades de elementos de estructura comunes
+## Establecer propiedades de elementos de estructura comunes
 
 Utilice este ejemplo cuando un elemento de estructura etiquetado deba exponer metadatos de accesibilidad como título, idioma, texto real y texto alternativo.
 
-
-1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicialice los metadatos del contenido etiquetado.
-
+1. Cree un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicialice los metadatos del contenido etiquetado.
 1. Cree una sección y un elemento de encabezado en el árbol de estructura.
-
 1. Establezca las propiedades del encabezado y guarde el documento.
 
 
@@ -53,16 +48,12 @@ public static void setProperties(Path outputFile) {
 }
 ```
 
-## 
-Establecer elementos de texto
+## Establecer elementos de texto
 
 Utilice este ejemplo cuando necesite agregar un elemento de párrafo simple al árbol de estructura etiquetado.
 
-
-1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
+1. Cree un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree un [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) y establezca su texto.
-
 1. Agregue el párrafo al elemento raíz y guarde el documento.
 
 
@@ -82,16 +73,12 @@ public static void setTextElements(Path outputFile) {
 }
 ```
 
-## 
-Establecer elementos de bloque de texto
+## Establecer elementos de bloque de texto
 
 Este ejemplo crea múltiples elementos de estructura a nivel de bloque, incluidos encabezados de varios niveles y un párrafo.
 
-
-1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
+1. Cree un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Agregue elementos de encabezado para los niveles requeridos y luego cree un elemento de párrafo.
-
 1. Agregue los elementos del bloque a la estructura raíz y guarde el documento.
 
 
@@ -118,18 +105,13 @@ public static void setTextBlockElements(Path outputFile) {
 }
 ```
 
-## 
-Establecer elementos en línea
+## Establecer elementos en línea
 
 Utilice este ejemplo cuando los elementos de la estructura de bloques deban contener tramos en línea anidados.
 
-
-1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
+1. Cree un nuevo  PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree elementos de encabezado y agrégueles elementos secundarios.
-
 1. Cree un párrafo con varios tramos y guarde el documento.
-
 
 ```java
 public static void setInlineElements(Path outputFile) {
@@ -166,16 +148,12 @@ public static void setInlineElements(Path outputFile) {
 }
 ```
 
-## 
-Establecer nombres de etiquetas personalizados
+## Establecer nombres de etiquetas personalizados
 
 Este ejemplo asigna nombres de etiquetas personalizados a elementos de párrafo y extensión en la estructura etiquetada.
 
-
-1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de sección.
-
+1. Cree un nuevo  PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de sección.
 1. Cree párrafos y espacios, luego establezca nombres de etiquetas personalizados para cada elemento.
-
 1. Agregue los elementos a la sección y guarde el documento.
 
 
@@ -210,18 +188,13 @@ public static void setTagName(Path outputFile) {
 }
 ```
 
-## 
-Establecer elementos de enlace y figura.
+## Establecer elementos de enlace y figura.
 
 Utilice este ejemplo cuando los elementos de enlace etiquetados deban incluir descripciones alternativas, hipervínculos y contenido de figuras con atributos de diseño.
 
-
-1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue elementos de enlace dentro de los párrafos.
-
+1. Cree un nuevo  PDF etiquetado [Documento]([Documento]https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue elementos de enlace dentro de los párrafos.
 1. Configure destinos de hipervínculo, descripciones alternativas y el elemento de figura vinculado.
-
 1. Establezca el atributo de diseño requerido y guarde el documento.
-
 
 ```java
 public static void setElements(Path imageFile, Path outputFile) {
@@ -265,18 +238,13 @@ public static void setElements(Path imageFile, Path outputFile) {
 }
 ```
 
-## 
-Agregue párrafos con contenido relacionado con enlaces en línea
+## Agregue párrafos con contenido relacionado con enlaces en línea
 
 Este ejemplo crea elementos de párrafo que combinan texto sin formato y elementos de extensión anidados.
 
-
-1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
+1. Cree un nuevo  PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree elementos de párrafo y agregue elementos secundarios con texto personalizado.
-
 1. Agregue los párrafos al elemento raíz y guarde el documento.
-
 
 ```java
 public static void addLinkElement(Path outputFile) {
@@ -304,13 +272,12 @@ public static void addLinkElement(Path outputFile) {
 }
 ```
 
-## 
-Establecer elementos de nota
+## Establecer elementos de nota
 
 Utilice este ejemplo cuando los elementos de la estructura de notas deban crearse con ID automáticos o explícitos.
 
 
-1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de párrafo.
+1. Cree un nuevo  PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de párrafo.
 
 1. Cree elementos de notas y configure su texto e ID según sea necesario.
 
