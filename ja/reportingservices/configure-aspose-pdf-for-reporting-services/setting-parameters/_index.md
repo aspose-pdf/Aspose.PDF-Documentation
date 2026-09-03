@@ -1,4 +1,4 @@
-﻿---
+---
 title: パラメータの設定
 linktitle: パラメータの設定
 type: docs
