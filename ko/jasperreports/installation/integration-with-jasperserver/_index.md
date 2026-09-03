@@ -42,7 +42,7 @@ JasperServer와 Aspose.PDF for JasperReports를 통합하는 방법은 아래에
 
 {{% alert color="primary" %}}
 
-2. 찾기 <util:map id=”exporterConfigMap> 요소 
+2. `<util:map id="exporterConfigMap">` 요소를 찾아
 
 **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** 파일을 열고 다음 줄을 추가합니다.
 
