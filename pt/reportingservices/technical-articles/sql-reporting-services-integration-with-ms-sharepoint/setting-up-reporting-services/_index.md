@@ -4,6 +4,7 @@ linktitle: Configurando o Reporting Services
 type: docs
 weight: 20
 url: /pt/reportingservices/setting-up-reporting-services/
+description: "Descubra Configurando o Reporting Services no Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

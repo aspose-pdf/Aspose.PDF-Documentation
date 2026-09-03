@@ -4,6 +4,7 @@ linktitle: 보고 서비스 서버에 SharePoint 설정
 type: docs
 weight: 30
 url: /ko/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+description: "Aspose.PDF for Reporting Services의 보고 서비스 서버에 SharePoint 설정에 대해 알아보세요."
 lastmod: "2026-06-19"
 ---
 

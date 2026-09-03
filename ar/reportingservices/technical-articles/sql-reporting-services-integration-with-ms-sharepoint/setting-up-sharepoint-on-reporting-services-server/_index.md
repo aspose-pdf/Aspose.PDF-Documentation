@@ -4,6 +4,7 @@ linktitle: إعداد SharePoint على خادم خدمات التقارير
 type: docs
 weight: 30
 url: /ar/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+description: "تعرّف على إعداد SharePoint على خادم خدمات التقارير في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

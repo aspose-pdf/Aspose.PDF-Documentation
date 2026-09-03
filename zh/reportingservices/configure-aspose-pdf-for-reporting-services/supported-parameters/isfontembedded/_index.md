@@ -4,6 +4,7 @@ linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /zh/reportingservices/isfontembedded/
+description: "了解 Aspose.PDF for Reporting Services 中的IsFontEmbedded。"
 lastmod: "2026-06-19"
 ---
 

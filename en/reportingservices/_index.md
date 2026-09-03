@@ -1,13 +1,13 @@
 ---
-title: Documentation
-linktitle:  Aspose.PDF for Reporting Services
+title: SSRS PDF Export Documentation
+linktitle: Aspose.PDF for Reporting Services
 second_title: Aspose.PDF for Reporting Services
 type: docs
 weight: 120
 url: /reportingservices/
-description: Discover Aspose.PDF for Reporting Services. Generate PDF reports directly from SQL Server Reporting Services (SSRS) with advanced customization.
+description: Learn how to install, configure, and use Aspose.PDF for Reporting Services to export SQL Server Reporting Services (SSRS) reports to PDF.
 is_root: true
-lastmod: "2024-05-05"
+lastmod: "2026-07-31"
 ---
 
 {{% alert color="primary" %}}
@@ -16,7 +16,9 @@ lastmod: "2024-05-05"
 
 ## Welcome to Aspose.PDF for Reporting Services
 
-Microsoft SQL Server Reporting Services fulfills a need that many organizations have: the need to build business intelligence and reporting solutions. Until now, developers were required to embed reports into their applications, or organizations were required to buy expensive and sometimes problematic third-party reporting solutions. Now, Microsoft SQL Server Reporting Services offers a complete solution for distributing reports across the enterprise; enabling businesses to make decisions better and faster.
+Aspose.PDF for Reporting Services is a rendering extension for Microsoft SQL Server Reporting Services (SSRS). It enables report authors and administrators to export SSRS reports to PDF while controlling document settings and report-item properties.
+
+Use this documentation to install and license the extension, configure PDF export options, explore supported formats and features, and review sample reports. The guides also explain how to customize PDF output by expanding report-item properties.
 
 {{% /alert %}}
 
@@ -28,8 +30,8 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [Sample Reports Gallery](/pdf/reportingservices/sample-reports-gallery/)
 - [Install Aspose.PDF for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
 - [License Aspose.PDF for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Configure Aspose.PDF for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
-- [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
+- [Configure PDF Export in Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Customize PDF Output with Report Item Properties](/pdf/reportingservices/expand-report-items-properties/)
 - [Evaluate Aspose.PDF for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
 ## Aspose.PDF for Reporting Services Resources
@@ -42,6 +44,6 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [Sample Reports Gallery Aspose.PDF for Reporting Services](/pdf/reportingservices/sample-reports-gallery/)
 - [Install Aspose.PDF for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
 - [License Aspose.PDF for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
-- [Configure Aspose.PDF for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
-- [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
+- [Configure PDF Export in Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
+- [Customize PDF Output with Report Item Properties](/pdf/reportingservices/expand-report-items-properties/)
 - [Evaluate Aspose.PDF for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)

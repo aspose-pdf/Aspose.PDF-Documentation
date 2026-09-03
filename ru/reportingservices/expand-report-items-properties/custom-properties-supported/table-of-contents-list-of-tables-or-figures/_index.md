@@ -1,27 +1,25 @@
 ---
-title: Оглавление Список таблиц или рисунков
-linktitle: Оглавление Список таблиц или рисунков
+title: Оглавление, список таблиц и рисунков
+linktitle: Оглавление, список таблиц и рисунков
 type: docs
 weight: 10
 url: /ru/reportingservices/table-of-contents-list-of-tables-or-figures/
-description: Узнайте, как добавить Оглавление, Список таблиц или рисунков в PDF‑отчеты, используя Aspose.PDF for Reporting Services.
-lastmod: "2026-06-19"
+description: Узнайте, как добавить оглавление, список таблиц или список рисунков в PDF‑отчеты с помощью Aspose.PDF for Reporting Services.
+lastmod: "2021-06-05"
 ---
-
 {{% alert color="primary" %}}
 
-Report Designer не поддерживает добавление оглавления для документов отчётов. С помощью Aspose.Pdf for Reporting Services вы можете легко указать PDF‑рендереру создавать PDF‑документы с Оглавлением, Список таблиц или рисунков. Вы можете сделать это в следующих шагах:
+Report Designer не поддерживает добавление оглавления для отчетных документов. С помощью Aspose.PDF for Reporting Services вы можете легко указать рендереру PDF создавать PDF‑документы с оглавлением, списком таблиц или рисунков. Сделать это можно следующими шагами:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-Убедитесь, что файл Aspose.Pdf.ListSectionStyle.xml существует в ```<Instance>```/bin, где ```<Instance>``` это каталог Report Server. Если файл не существует, создайте его в ```<Instance>```директорию /bin и разместите внутри следующую разметку.
+Убедитесь, что файл **Aspose.Pdf.ListSectionStyle.xml** существует в каталоге ```<Instance>```/bin, где ```<Instance>``` обозначает каталог Report Server. Если файл отсутствует, создайте его в каталоге ```<Instance>```/bin и поместите в него следующую разметку.
 
 ## Оглавление
 
-**Пример**
+### Пример
 
-```cs
+```xml
 <ListSection ListType="TableOfContents">
               <Title Alignment="Center">
             <Segment IsTrueTypeFontBold="true" FontSize="30">TableOfContents</Segment>
@@ -41,11 +39,11 @@ Report Designer не поддерживает добавление оглавл�
 </ListSection>
 ```
 
-##  Список таблиц
+## Список таблиц
 
-**Пример**
+### Пример
 
-```cs
+```xml
 <ListSection ListType="ListOfTables">
               <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfTables</Segment>
@@ -55,9 +53,9 @@ Report Designer не поддерживает добавление оглавл�
 
 ## Список рисунков
 
-**Пример**
+### Пример
 
-```cs
+```xml
  <ListSection ListType="ListOfFigures">
     <Title>
             <Segment IsTrueTypeFontBold="true" FontSize="30">ListOfFigures</Segment>
@@ -66,41 +64,30 @@ Report Designer не поддерживает добавление оглавл�
 
 ```
 
-Пожалуйста, обратитесь к разделу 'Working with TOC' в онлайн-документации Aspose.Pdf.
+Пожалуйста, обратитесь к разделу **'Working with TOC'** онлайн‑документации Aspose.Pdf.
 
-**2-** Добавьте параметр отчёта 'IsListSectionSupported' и установите значение True, как показано в абзаце 'List Section'.
-**3-** Добавьте пользовательское свойство для элемента вашего отчёта, которое вы хотите включить в Содержание, Список таблиц или Список рисунков.
+**2-** Добавьте параметр отчёта `IsListSectionSupported` и установите значение **True**, как показано в абзаце `List Section`.  
+**3-** Добавьте пользовательское свойство для элемента отчёта, который вы хотите включить в **Table of Contents**, **List of Tables** или **Figures**.
 
-{{% /alert %}}
+```text
+Custom Property Name: IsInList
+Property Value: Boolean
+Custom Property Value: True or False
+```
 
-{{% alert color="primary" %}}
+Помечает текущий элемент отчёта как указанный в индексе в содержании, или в списке таблиц или рисунков.
 
-**Имя пользовательского свойства** :IsInList
-**Значение свойства** :Boolean
-**Значение пользовательского свойства** : True or False
-
-{{% alert color="primary" %}}
-
-Отмечает текущий элемент отчета как включенный в список по индексу в оглавлении, списке таблиц или рисунков.
-
-{{% /alert %}}
-
-**Имя пользовательского свойства** : Заголовок
-**Тип пользовательского свойства** : Строка
-
-{{% alert color="primary" %}}
+```text
+Custom Property Name: Title
+Custom Property Type: String
+```
 
 Заголовок элемента, отображаемый в оглавлении, списке таблиц или рисунков.
-{{% /alert %}}
 
-**Имя пользовательского свойства** : Уровень списка
-**Тип пользовательского свойства** : Integer
+```text
+Custom Property Name: ListLevel
+Custom Property Type: Integer
+```
 
-{{% alert color="primary" %}}
-
-Уровень перечисленных элементов, отображаемых в таблице содержимого.
-
-{{% /alert %}}
-
-{{% /alert %}}
+Уровень пунктов списка, отображаемых в таблице содержимого.
 

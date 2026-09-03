@@ -4,6 +4,7 @@ linktitle: 매개변수 보고서 지원
 type: docs
 weight: 20
 url: /ko/reportingservices/parameterized-report-support/
+description: "Aspose.PDF for Reporting Services의 매개변수 보고서 지원에 대해 알아보세요."
 lastmod: "2026-06-19"
 ---
 

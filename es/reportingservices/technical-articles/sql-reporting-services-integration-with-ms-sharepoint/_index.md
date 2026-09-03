@@ -4,6 +4,7 @@ linktitle: Integración de SQL Reporting Services con MS SharePoint
 type: docs
 weight: 20
 url: /es/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/
+description: "Descubra Integración de SQL Reporting Services con MS SharePoint en Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

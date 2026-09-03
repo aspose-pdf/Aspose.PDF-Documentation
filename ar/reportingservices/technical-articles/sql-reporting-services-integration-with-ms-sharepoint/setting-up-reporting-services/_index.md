@@ -4,6 +4,7 @@ linktitle: إعداد خدمات التقارير
 type: docs
 weight: 20
 url: /ar/reportingservices/setting-up-reporting-services/
+description: "تعرّف على إعداد خدمات التقارير في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

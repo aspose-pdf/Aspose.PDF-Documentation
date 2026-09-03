@@ -4,6 +4,7 @@ linktitle: Installer sur le serveur de rapports
 type: docs
 weight: 10
 url: /fr/reportingservices/install-to-report-server/
+description: "Découvrez Installer sur le serveur de rapports dans Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

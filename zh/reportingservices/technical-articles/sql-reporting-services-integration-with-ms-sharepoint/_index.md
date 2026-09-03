@@ -4,6 +4,7 @@ linktitle: SQL Reporting Services 与 MS SharePoint 的集成
 type: docs
 weight: 20
 url: /zh/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/
+description: "了解 Aspose.PDF for Reporting Services 中的SQL Reporting Services 与 MS SharePoint 的集成。"
 lastmod: "2026-06-19"
 ---
 

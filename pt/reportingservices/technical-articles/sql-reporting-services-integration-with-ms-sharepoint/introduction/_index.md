@@ -4,6 +4,7 @@ linktitle: Introdução
 type: docs
 weight: 10
 url: /pt/reportingservices/introduction/
+description: "Descubra Introdução no Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

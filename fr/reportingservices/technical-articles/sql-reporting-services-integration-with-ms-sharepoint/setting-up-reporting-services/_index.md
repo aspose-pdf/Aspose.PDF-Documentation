@@ -4,6 +4,7 @@ linktitle: Configuration de Reporting Services
 type: docs
 weight: 20
 url: /fr/reportingservices/setting-up-reporting-services/
+description: "Découvrez Configuration de Reporting Services dans Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 
