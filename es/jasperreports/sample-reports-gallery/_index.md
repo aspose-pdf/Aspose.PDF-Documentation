@@ -28,11 +28,11 @@ Los informes que se muestran a continuación se basan en datos de muestra instal
 
 ![Standard charts Aegean report](sample-reports-gallery_3.png)
 
-## Standard charts Aegean report
+## Informe de gráficos estándar del Egeo
 
 ![Standard charts Aegean report](sample-reports-gallery_4.png)
 
-## Standard charts eye candy report
+## Informe de gráficos estándar (Eye Candy)
 
 ![Standard charts eye candy report](sample-reports-gallery_5.png)
 
