@@ -32,7 +32,7 @@ Aspose.PDF for JasperReports включает ряд демонстрацион�
 6. Добавьте новую строку:
    `private static final String TASK_ASPOSE_PDF = "aspose_pdf";`
    Добавьте эту строку рядом с существующими переменными как параметр экспорта через Aspose.PDF for JasperReports.
-7. Найдите сегмент кода for else if (TASK_PDF.equals(taskName)) и скопируйте его целиком.
+7. Найдите сегмент кода `else if (TASK_PDF.equals(taskName))` и скопируйте его целиком.
 8. Вставьте фрагмент кода в тот же сегмент.
 
 ```java
