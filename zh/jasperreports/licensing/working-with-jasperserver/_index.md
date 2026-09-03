@@ -16,7 +16,7 @@ lastmod: "2026-08-31"
 
 {{% /alert %}}
 
-1. 将许可证下载到您的计算机并将其复制到“`<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF``` folder, where  ```<InstallDir>```代表JasperServer安装目录。
+1. 将许可证下载到您的计算机并将其复制到 `\<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\` 文件夹，其中 `<InstallDir>` 代表 JasperServer 安装目录。
 2. 找到“`<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml`”文件并添加以下行：
 
 ```xml
