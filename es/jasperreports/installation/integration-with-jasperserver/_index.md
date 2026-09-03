@@ -20,8 +20,7 @@ En los siguientes pasos <InstallDir> representa el directorio de instalación de
 
 1. Agregue las siguientes nuevas propiedades de exportador al
 
-**<InstallDir>Archivo \apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml**.
-
+**<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml**.
 {{% /alert %}}
 
 ```xml
