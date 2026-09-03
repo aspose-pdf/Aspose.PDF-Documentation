@@ -26,9 +26,9 @@ Pour exécuter Aspose.PDF pour les démos JasperReports :
 4. Copiez le fichier **aspose.pdf.jasperreports.jar** du dossier \lib dans **Aspose.PDF.JasperReports.zip** vers ```<InstallDir>```\jasperreports\lib.
 5. Téléchargez l'outil ANT depuis <http://ant.apache.org/bindownload.cgi>.
 6. Décompressez l'outil ANT et configurez les variables d'environnement comme décrit dans le manuel de l'outil.
-7. Change the current directory to ```<InstallDir>```\demo\hsqldb and run the following command line:
-   fourmi runServer
-8. Open new command prompt instance and change the current directory to one of the Aspose.PDF for JasperReports demos, for example ```<InstallDir>```\demo\samples\charts.ap.
+7. Remplacez le répertoire actuel par ```<InstallDir>```\demo\hsqldb et exécutez la ligne de commande suivante :
+   ant runServer
+8. Ouvrez une nouvelle instance d'invite de commande et remplacez le répertoire actuel par l'une des démos Aspose.PDF for JasperReports, par exemple ```<InstallDir>```\demo\samples\charts.ap.
 9. Exécutez les commandes suivantes sur la ligne de commande :
 10. ant javac – to compile the Java source files of the test application.
 11. ant compile – to compile the XML report design and produce the .jasper file
