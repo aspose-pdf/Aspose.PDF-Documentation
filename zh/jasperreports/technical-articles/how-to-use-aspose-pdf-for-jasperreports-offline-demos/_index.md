@@ -22,7 +22,7 @@ Aspose.PDF for JasperReports includes a number of demo projects to help you get 
 
 1. 从 <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>. 下载 JasperReports 确保下载包含源代码和演示的整个存档项目，而不仅仅是单个 JAR。
 2. 将存档项目解压到硬盘上的某个位置，例如C:\.
-3. 将 **Aspose.PDF.JasperReports.zip** 中的 \demo 文件夹中的所有演示文件夹复制到“`<InstallDir>```\jasperreports\demo\samples, where ```<InstallDir>``` 是您将 JasperReports 解压到的位置。此步骤是必需的，因为演示构建脚本依赖于 JasperReports 文件夹结构，否则您必须修改构建脚本。
+3. 将 **Aspose.PDF.JasperReports.zip** 中的 \demo 文件夹中的所有演示文件夹复制到 `<InstallDir>\jasperreports\demo\samples\`，其中 `<InstallDir>` 是您将 JasperReports 解压到的位置。此步骤是必需的，因为演示构建脚本依赖于 JasperReports 文件夹结构，否则您必须修改构建脚本。
 4. 将 **aspose.pdf.jasperreports.jar** 文件从 **Aspose.PDF.JasperReports.zip** 中的 \lib 文件夹复制到“`<InstallDir>`”\jasperreports\lib。
 5. 从<http://ant.apache.org/bindownload.cgi>.下载ANT工具
 6. 解压 ANT 工具并按照工具手册中的说明设置环境变量。
