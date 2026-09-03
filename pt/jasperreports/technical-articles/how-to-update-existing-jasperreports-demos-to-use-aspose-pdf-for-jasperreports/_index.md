@@ -26,11 +26,11 @@ As etapas a seguir explicam como atualizar demonstrações existentes para usar 
 3. Copie **aspose.pdf.jasperreports.jar** da pasta \lib em **Aspose.PDF.JasperReports.zip** para ```<InstallDir>```\jasperreports\lib.
 4. Abra ```<InstallDir>```\jasperreports\demo\samples, (where ```<InstallDir>``` é o local onde você descompactou o JasperReports) para atualizar uma demonstração existente. Se você selecionou a demonstração de fontes, por exemplo, para usar com Aspose.PDF for JasperReports, crie uma cópia dela para que a demonstração original permaneça a mesma. Para fins deste exemplo, nomeamos a nova pasta **fonts.ap**.
 Nota: as demos serão executadas em ```<InstallDir>``` \jasperreports\demo\samples porque os scripts de construção de demonstração dependem da estrutura de pastas do JasperReports. Se você alterar a pasta de amostra, será necessário modificar os scripts de construção.
-5. Abra o arquivo **FontsApp.java** da pasta src e adicione uma referência a Aspose.PDF for JasperReports:
-   importar com.aspose.pdf.jr3_7_0.jasperreports.*;
+5. Abra o arquivo **FontsApp.java** da pasta src e adicione uma referência ao Aspose.PDF for JasperReports:
+   `import com.aspose.pdf.jr3_7_0.jasperreports.*;`
    (Estamos usando jr3_7_0 porque este tutorial foi preparado com JasperReports 3.5.2.)
 6. Adicione uma nova string:
-   string final estático privado TASK_ASPOSE_PDF = "aspose_pdf"; junto com variáveis ​​existentes como uma opção de exportação via Aspose.PDF for JasperReports.
+   `private static final String TASK_ASPOSE_PDF = "aspose_pdf";` junto com variáveis existentes como uma opção de exportação via Aspose.PDF for JasperReports.
 7. Localize o segmento de código for else if (TASK_PDF.equals(taskName)) e copie o segmento inteiro.
 8. Cole o snippet de código no mesmo segmento.
 
