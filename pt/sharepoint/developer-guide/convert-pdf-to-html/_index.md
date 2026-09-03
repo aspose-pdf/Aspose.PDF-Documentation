@@ -4,7 +4,7 @@ linktitle: Converter PDF para HTML
 type: docs
 weight: 80
 url: /pt/sharepoint/convert-pdf-to-html/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: Usando a API PDF SharePoint, você pode converter documento PDF da biblioteca de documentos do SharePoint para o formato HTML.
 ---
 

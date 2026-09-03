@@ -4,7 +4,7 @@ linktitle: Exportar lista de tarefas para PDF com código de barras usando o mec
 type: docs
 weight: 40
 url: /pt/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: A API PDF SharePoint pode exportar lista de tarefas para PDF com código de barras usando o mecanismo de modelo PDF.
 ---
 

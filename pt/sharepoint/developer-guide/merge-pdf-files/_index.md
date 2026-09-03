@@ -4,7 +4,7 @@ linktitle: Mesclar arquivos PDF
 type: docs
 weight: 90
 url: /pt/sharepoint/merge-pdf-files/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: Usando a API PDF do SharePoint, você pode mesclar vários arquivos PDF da biblioteca de documentos do SharePoint em um único PDF.
 ---
 

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /pt/python-net/region-based-extraction/
 description: Aprenda como extrair texto de uma região específica da página ou da estrutura de parágrafos em documentos PDF com Aspose.PDF for Python.
-lastmod: "2026-05-18"
+lastmod: "2026-08-31"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

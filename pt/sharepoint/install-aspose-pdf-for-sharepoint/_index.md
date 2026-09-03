@@ -4,7 +4,7 @@ linktitle: Instalar SharePoint
 type: docs
 weight: 40
 url: /pt/sharepoint/install-aspose-pdf-for-sharepoint/
-lastmod: "2026-08-07"
+lastmod: "2026-08-31"
 description: A seção de instalação da API PDF SharePoint cobre tópicos relacionados a requisitos do sistema, instalação no SharePoint Server, ativação, desativação e desinstalação do produto.
 ---
 

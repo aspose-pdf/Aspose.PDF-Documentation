@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /pt/python-net/text-formatting-inside-pdf/
 description: Aprenda a formatar texto em documentos PDF em Python utilizando espaçamento, margens, avanço e opções de estilo.
-lastmod: "2026-05-05"
+lastmod: "2026-08-31"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
