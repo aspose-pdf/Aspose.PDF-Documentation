@@ -11,7 +11,7 @@ lastmod: "2026-08-31"
 يتضمن هذا القسم المواضيع التالية:
 
 - [متطلبات النظام](/pdf/ar/jasperreports/system-requirements/)
-- [التكامل مع ](/pdf/ar/jasperreports/integration-with-jasperreports/)
+- [التكامل مع](/pdf/ar/jasperreports/integration-with-jasperreports/)
 - [التكامل مع JasperServer](/pdf/ar/jasperreports/integration-with-jasperserver/)
 
 
