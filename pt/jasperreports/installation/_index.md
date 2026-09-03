@@ -11,6 +11,6 @@ lastmod: "2026-08-31"
 Esta seção inclui os seguintes tópicos:
 
 - [Requisitos do sistema](/pdf/pt/jasperreports/system-requirements/)
-- [Integração com ](/pdf/pt/jasperreports/integration-with-jasperreports/)
+- [Integração com JasperReports](/pdf/pt/jasperreports/integration-with-jasperreports/)
 - [Integração com JasperServer](/pdf/pt/jasperreports/integration-with-jasperserver/)
 
