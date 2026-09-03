@@ -1,6 +1,6 @@
 ---
 title: Cómo crear y convertir un archivo XML a PDF
-linktitle: How to Create and Convert an XML File to PDF
+linktitle: Cómo crear y convertir un archivo XML a PDF
 type: docs
 weight: 30
 url: /es/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
