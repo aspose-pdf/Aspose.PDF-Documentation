@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 Cette section comprend les sujets suivants :
 
-- [Exigences du système] (/pdf/jasperreports/system-requirements/)
-- [Intégration avec ] (/pdf/jasperreports/integration-with-jasperreports/)
-- [Intégration avec JasperServer] (/pdf/jasperreports/integration-with-jasperserver/)
+- [Configuration système requise](/pdf/fr/jasperreports/system-requirements/)
+- [Intégration avec JasperReports](/pdf/fr/jasperreports/integration-with-jasperreports/)
+- [Intégration avec JasperServer](/pdf/fr/jasperreports/integration-with-jasperserver/)
 
