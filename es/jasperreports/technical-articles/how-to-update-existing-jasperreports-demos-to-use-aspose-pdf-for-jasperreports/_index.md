@@ -1,5 +1,5 @@
 ﻿---
-title: How to - Update existing JasperReports demos to use Aspose.PDF for JasperReports
+title: Cómo actualizar las demostraciones existentes de JasperReports para usar Aspose.PDF for JasperReports
 linktitle: Cómo: actualizar las demostraciones existentes de JasperReports para usar Aspose.PDF for JasperReports
 type: docs
 weight: 20
@@ -27,7 +27,7 @@ Los siguientes pasos explican cómo actualizar demostraciones existentes para us
 4. Abra ```<InstallDir>```\jasperreports\demo\samples, (where ```<InstallDir>``` es la ubicación donde descomprimió JasperReports) para actualizar una demostración existente. Si ha seleccionado la demostración de fuentes, por ejemplo, para usar con Aspose.PDF for JasperReports, cree una copia para que la demostración original siga siendo la misma. A los efectos de este ejemplo, hemos denominado la nueva carpeta **fonts.ap**.
 Nota: las demostraciones se ejecutarán desde ```<InstallDir>``` \jasperreports\demo\samples porque los scripts de compilación de demostración se basan en la estructura de carpetas de JasperReports. Si cambia la carpeta de muestra, debe modificar los scripts de compilación.
 5. Abra el archivo **FontsApp.java** de la carpeta src y agregue una referencia a Aspose.PDF for JasperReports:
-   importar com.aspose.pdf.jr3_7_0.jasperreports.*;
+   import com.aspose.pdf.jr3_7_0.jasperreports.*;
    (Estamos usando jr3_7_0 porque este tutorial se preparó con JasperReports 3.5.2).
 6. Añade una nueva cadena:
    Cadena final estática privada TASK_ASPOSE_PDF = "aspose_pdf"; junto con las variables existentes como una opción de exportación a través de Aspose.PDF for JasperReports.

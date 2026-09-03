@@ -1,10 +1,10 @@
 ﻿---
 title: Galería de informes de muestra
-linktitle: Sample Reports Gallery
+linktitle: Galería de informes de muestra
 type: docs
 weight: 40
 url: /es/jasperreports/sample-reports-gallery/
-description: View sample reports created using Aspose.PDF for JasperReports. See how it enhances PDF export capabilities.
+description: Vea informes de muestra creados con Aspose.PDF for JasperReports y cómo mejora las capacidades de exportación a PDF.
 lastmod: "2026-08-31"
 ---
 
@@ -28,11 +28,11 @@ Los informes que se muestran a continuación se basan en datos de muestra instal
 
 ![Standard charts Aegean report](sample-reports-gallery_3.png)
 
-## Standard charts Aegean report
+## Informe de gráficos estándar del Egeo
 
 ![Standard charts Aegean report](sample-reports-gallery_4.png)
 
-## Standard charts eye candy report
+## Informe de gráficos estándar (Eye Candy)
 
 ![Standard charts eye candy report](sample-reports-gallery_5.png)
 

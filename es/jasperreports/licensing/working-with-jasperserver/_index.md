@@ -3,11 +3,11 @@ title: Trabajando con JasperServer
 linktitle: Trabajando con JasperServer
 type: docs
 weight: 20
+url: /es/jasperreports/working-with-jasperserver/
 description: Explore cómo trabajar eficientemente con JasperServer usando Aspose.PDF. Exporte informes a archivos PDF profesionales con facilidad.
-lastmod: "2026-08-31"
 ---
 
-## <ins>Establezca el parámetro del exportador de archivos de licencia en applicationContext.xml
+## Establezca el parámetro del exportador de archivos de licencia en applicationContext.xml
 
 {{% alert color="primary" %}}
 
@@ -19,7 +19,7 @@ Este método se utiliza con JasperServer.
 2. Localice el archivo ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` y agregue las siguientes líneas:
 
 ```xml
- <bean id="AsposeExportParameters" class="comcom.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
+ <bean id="AsposeExportParameters" class="com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
     <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-  
     INF/Aspose.Total.JasperReports.lic"/>
 </bean>

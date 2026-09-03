@@ -1,6 +1,6 @@
 ﻿---
 title: Formatos de archivo admitidos
-linktitle: Supported File Formats
+linktitle: Formatos de archivo admitidos
 type: docs
 weight: 20
 url: /es/jasperreports/supported-file-formats/
@@ -10,8 +10,7 @@ lastmod: "2026-08-31"
 
 ## Formatos de carga admitidos
 
-The following table indicates the file formats that Aspose.PDF for JasperReports can load.
-
+La siguiente tabla indica los formatos de archivo que Aspose.PDF for JasperReports puede cargar.
 |**Format**|**Description**|
 | :- | :- |
 |JRXML|Archivo de diseño JasperReports|

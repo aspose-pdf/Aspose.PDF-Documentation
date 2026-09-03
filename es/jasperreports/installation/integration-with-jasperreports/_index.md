@@ -19,8 +19,7 @@ El siguiente ejemplo muestra el código típico necesario para exportar un infor
 ```java
 import com.aspose.pdf.jr3_7_0.jasperreports.*;
 
-com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.aspose.pdf. jr3_7_0.jasperreports.JrPdfExporter();
-
+com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
 File sourceFile = new File(fileName);
 
 JasperPrint jasperPrint = (JasperPrint)JRLoader.loadObject(sourceFile);
