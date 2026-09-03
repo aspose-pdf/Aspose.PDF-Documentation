@@ -42,9 +42,9 @@ Dans les étapes suivantes, `<InstallDir>` représente le répertoire d'installa
 
 {{% alert color="primary" %}}
 
-2. Localisez l'élément <util:map id=”exporterConfigMap> dans le
+2. Localisez l'élément `<util:map id="exporterConfigMap">` dans le
 
-**<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** et ajoutez les lignes suivantes :
+**`<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml`** et ajoutez les lignes suivantes :
 
 {{% /alert %}}
 
