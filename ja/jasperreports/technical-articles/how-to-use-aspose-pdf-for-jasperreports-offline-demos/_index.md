@@ -22,7 +22,7 @@ Aspose.PDF for JasperReports デモを実行するには:
 
 1. <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>. から JasperReports をダウンロードします。単一の JAR だけでなく、ソース コードとデモを含むアーカイブされたプロジェクト全体を必ずダウンロードしてください。
 2. アーカイブされたプロジェクトをハードディスク上の任意の場所 (例: C:\.) に解凍します。
-3. **Aspose.PDF.JasperReports.zip** の \demo フォルダーからすべてのデモ フォルダーを、JasperReports を解凍した場所である「`<InstallDir>```\jasperreports\demo\samples, where ```<InstallDir>`」にコピーします。デモのビルド スクリプトは JasperReports フォルダー構造に依存しているため、この手順が必要です。それ以外の場合は、ビルド スクリプトを変更する必要があります。
+3. **Aspose.PDF.JasperReports.zip** の \demo フォルダーからすべてのデモ フォルダーを、JasperReports を解凍した場所である `<InstallDir>\jasperreports\demo\samples` にコピーします。デモのビルド スクリプトは JasperReports フォルダー構造に依存しているため、この手順が必要です。それ以外の場合は、ビルド スクリプトを変更する必要があります。
 4. **aspose.pdf.jasperreports.jar** ファイルを **Aspose.PDF.JasperReports.zip** の \lib フォルダーから ```<InstallDir>```\jasperreports\lib にコピーします。
 5. <http://ant.apache.org/bindownload.cgi>. から ANT ツールをダウンロードします。
 6. ANT ツールを解凍し、ツールのマニュアルの説明に従って環境変数を設定します。
