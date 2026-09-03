@@ -1,5 +1,5 @@
 ﻿---
-title: Feature Tour
+title: Visite guidée des fonctionnalités
 linktitle: Visite guidée des fonctionnalités
 type: docs
 weight: 30
