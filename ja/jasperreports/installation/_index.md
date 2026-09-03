@@ -11,6 +11,6 @@ lastmod: "2026-08-31"
 このセクションには次のトピックが含まれています。
 
 - [システム要件](/pdf/ja/jasperreports/system-requirements/)
-- [との統合](/pdf/ja/jasperreports/integration-with-jasperreports/)
+- [JasperReports との統合](/pdf/ja/jasperreports/integration-with-jasperreports/)
 - [JasperServerとの統合](/pdf/ja/jasperreports/integration-with-jasperserver/)
 

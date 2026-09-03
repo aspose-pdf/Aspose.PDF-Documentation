@@ -22,7 +22,7 @@ Aspose は、製品開発者によって直接提供される無料かつ無制�
 
 ### ブログ
 
-[Aspose.Blogs](https://forum.aspose.com/) は、最新リリースに関する情報や、Aspose 開発者の意見を探す場所です。
+[Aspose.Blogs](https://blog.aspose.com/) は、最新リリースに関する情報や、Aspose 開発者の意見を探す場所です。
 
 ### さらにサポートが必要ですか?
 

@@ -30,7 +30,7 @@ Aspose.PDF for JasperReports には、レポートを PDF にエクスポート�
    com.aspose.pdf.jr3_7_0.jasperreports.* をインポートします。
    (このチュートリアルは JasperReports 3.5.2 で準備されているため、jr3_7_0 を使用しています。)
 6. 新しい文字列を追加します。
-   プライベート静的最終文字列 TASK_ASPOSE_PDF = "aspose_pdf"; Aspose.PDF for JasperReports を介したエクスポート オプションとして、既存の変数とともに使用できます。
+6. 新しい文字列を追加します。`private static final String TASK_ASPOSE_PDF = "aspose_pdf";` を追加して、Aspose.PDF for JasperReports を介したエクスポート オプションとして既存の変数と併用できます。
 7. for else if (TASK_PDF.equals(taskName)) コード セグメントを見つけて、セグメント全体をコピーします。
 8. コード スニペットを同じセグメントの下に貼り付けます。
 

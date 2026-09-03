@@ -1,4 +1,4 @@
-﻿---
+---
 title: ドキュメント
 linktitle:  JasperReports 用 Aspose.PDF
 second_title: Aspose.PDF for JasperReports

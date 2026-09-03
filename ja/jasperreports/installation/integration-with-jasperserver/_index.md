@@ -42,7 +42,7 @@ Aspose.PDF for JasperReports と JasperServer の統合については、以下�
 
 {{% alert color="primary" %}}
 
-2. <util:map id=”exporterConfigMap> 要素を見つけます。
+2. `<util:map id="exporterConfigMap">` 要素を見つけます。
 
 **<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\flows\viewReportBeans.xml** ファイルに次の行を追加します。
 
