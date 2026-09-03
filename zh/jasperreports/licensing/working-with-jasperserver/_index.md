@@ -3,6 +3,7 @@ title: 使用 JasperServer
 linktitle: 使用 JasperServer
 type: docs
 weight: 20
+url: /zh/jasperreports/working-with-jasperserver/
 description: 探索如何使用 Aspose.PDF 高效地使用 JasperServer。轻松将报告导出为专业 PDF。
 lastmod: "2026-08-31"
 ---
