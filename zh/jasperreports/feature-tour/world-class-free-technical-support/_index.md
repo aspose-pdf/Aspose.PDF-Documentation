@@ -22,7 +22,7 @@ Aspose 以其产品开发人员直接提供的免费且无限制的技术支持�
 
 ### 博客
 
-[Aspose.博客](https://forum.aspose.com/) 是查找有关最新版本以及 Aspose 开发人员的意见的信息的地方。
+[Aspose.博客](http://www.aspose.com/Community/Blogs/) 是查找有关最新版本以及 Aspose 开发人员的意见的信息的地方。
 
 ### 需要更多支持？
 
