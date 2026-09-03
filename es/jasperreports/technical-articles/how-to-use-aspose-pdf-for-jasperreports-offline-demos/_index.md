@@ -27,7 +27,7 @@ Para ejecutar Aspose.PDF para demostraciones de JasperReports:
 5. Descargue la herramienta ANT de <http://ant.apache.org/bindownload.cgi>.
 6. Desempaquete la herramienta ANT y configure las variables de entorno como se describe en el manual de la herramienta.
 7. Cambie el directorio actual a ```<InstallDir>```\demo\hsqldb y ejecute la siguiente línea de comando:
-   servidor de ejecución de hormigas
+   ant runServer
 8. Abra una nueva instancia del símbolo del sistema y cambie el directorio actual a uno de los demos de Aspose.PDF for JasperReports, por ejemplo ```<InstallDir>```\demo\samples\charts.ap.
 9. Ejecute los siguientes comandos en la línea de comando:
 10. ant javac: para compilar los archivos fuente Java de la aplicación de prueba.
