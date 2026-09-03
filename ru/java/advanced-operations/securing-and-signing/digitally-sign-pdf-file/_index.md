@@ -15,11 +15,11 @@ Abstract: Это руководство объясняет, как цифров�
 ---
 Aspose.PDF for Java поддерживает несколько потоков подписи через `PdfFileSignature`.
 
-## Подписать PDF с объектом сертификата
+## Подпишите PDF с объектом сертификата
 
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) фасад и привязать исходный PDF документ.
 1. Создайте [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) объект подписи и настроить параметры подписи.
-1. Применить подпись к PDF‑документу через [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Примените подпись к PDF‑документу через [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -41,7 +41,7 @@ public static void signPdfWithCertificateObject(Path inputFile, Path certificate
 
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) фасад и привязать исходный PDF документ.
 1. Настройте параметры сертификата, требуемые примером подписи.
-1. Применить подпись к PDF‑документу через [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Примените подпись к PDF‑документу через [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -58,7 +58,7 @@ public static void signPdfWithBasicParameters(Path inputFile, Path certificateFi
 }
 ```
 
-## Сертифицировать PDF с помощью DocMDP
+## Сертифицируйте PDF с помощью DocMDP
 
 Используйте подпись обнаружения и предотвращения изменения документа, когда требуются ограничения уровня сертификации:
 

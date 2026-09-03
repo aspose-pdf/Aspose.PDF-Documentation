@@ -17,7 +17,7 @@ Abstract: В этой статье объясняется, как проверя
 
 1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Вызовите `document.getFontUtilities().getAllFonts()` собрать каждый [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) ресурс, на который ссылается документ.
-1. Итерировать извлечённые [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) объекты и считать каждое имя шрифта из метаданных шрифта.
+1. Итерируйте извлечённые [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) объекты и считать каждое имя шрифта из метаданных шрифта.
 1. Вывести имена шрифтов, чтобы типографику документа можно было проверить или экспортировать.
 
 ```java

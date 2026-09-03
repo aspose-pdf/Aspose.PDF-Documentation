@@ -33,7 +33,7 @@ pdf.save(data_dir + "output.pdf")
 puts "Page deleted successfully!"
 ```
 
-## Скачать запущенный код
+## Скачайте запущенный код
 
 Скачать **Delete Page (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 

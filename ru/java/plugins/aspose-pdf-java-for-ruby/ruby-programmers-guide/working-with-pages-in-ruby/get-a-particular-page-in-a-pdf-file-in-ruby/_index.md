@@ -41,7 +41,7 @@ new_document.save(data_dir + "output.pdf")
 puts "Process completed successfully!"
 ```
 
-## Скачать исполняемый код
+## Скачайте исполняемый код
 
 Скачать **Get Page (Aspose.PDF)** из любого из перечисленных ниже сайтов для совместного кодинга:
 

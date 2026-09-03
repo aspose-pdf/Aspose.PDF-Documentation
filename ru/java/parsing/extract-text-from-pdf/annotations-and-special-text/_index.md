@@ -15,7 +15,7 @@ sitemap:
 Перебрать аннотации страниц и прочитать помечённый текст `HighlightAnnotation`.
 
 1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
-1. Итерировать через [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) объекты на целевом [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Итерируйте через [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) объекты на целевом [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Проверьте, является ли каждая аннотация [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) перед приведением её к типу класса аннотации.
 1. Прочитайте помеченный текст из каждой аннотации выделения и выведите его в консоль.
 
@@ -37,10 +37,10 @@ public static void extractHighlightedText(Path inputFile) {
 Прочтите поток обычного отображения из аннотации штампа и передайте его дальше `TextAbsorber`.
 
 1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
-1. Итерировать через [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) объекты на целевом [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Отфильтровать аннотации, тип которых `Stamp`.
+1. Итерируйте через [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) объекты на целевом [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Отфильтруйте аннотации, тип которых `Stamp`.
 1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) и запросить запись normal appearance entry из словаря appearance аннотации штампа.
-1. Посетить appearance [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) и вывести извлечённый текст.
+1. Посетите appearance [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) и вывести извлечённый текст.
 
 ```java
 public static void extractStampText(Path inputFile) {
@@ -66,7 +66,7 @@ public static void extractStampText(Path inputFile) {
 1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
 1. Создайте [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) для анализа текста на уровне фрагментов.
 1. Посетите цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и собрать его [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) объекты.
-1. Итерировать эти фрагменты и считывать текст вместе с флагами надстрочного и нижстрочного `fragment.getTextState()`.
+1. Итерируйте эти фрагменты и считывать текст вместе с флагами надстрочного и нижстрочного `fragment.getTextState()`.
 1. Запишите извлечённые детали в выходной файл.
 
 ```java

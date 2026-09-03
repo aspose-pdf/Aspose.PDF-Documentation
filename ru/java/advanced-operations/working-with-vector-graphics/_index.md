@@ -21,7 +21,7 @@ Aspose.PDF for Java предоставляет векторный контент
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) и посетите целевую страницу.
-1. Перебрать поглощённые [Графический элемент](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) объекты и вывод их свойств.
+1. Переберите поглощённые [Графический элемент](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) объекты и вывод их свойств.
 
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {
@@ -43,7 +43,7 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 }
 ```
 
-## Переместить векторную графику на странице
+## Переместите векторную графику на странице
 
 Используйте этот пример, когда все обнаруженные векторные элементы должны быть смещены в новое положение.
 
@@ -139,7 +139,7 @@ public static void removeGraphicsMethod2(Path inputFile, Path outputFile) {
 }
 ```
 
-## Копировать векторную графику на другую страницу элемент за элементом
+## Копируйте векторную графику на другую страницу элемент за элементом
 
 Используйте этот пример, когда каждый извлечённый векторный элемент должен быть добавлен по отдельности на новую страницу.
 
@@ -169,7 +169,7 @@ public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
 }
 ```
 
-## Копировать векторную графику на другую страницу в виде коллекции
+## Копируйте векторную графику на другую страницу в виде коллекции
 
 Используйте этот пример, когда всю поглощённую коллекцию векторных графиков нужно скопировать на новую страницу за один вызов.
 

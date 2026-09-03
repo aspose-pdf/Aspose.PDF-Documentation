@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как создать
 ---
 Используйте `Document` и `FileSpecification` API, когда вам нужно упаковать XML счета‑фактуры внутрь PDF для рабочих процессов в стиле ZUGFeRD.
 
-## Прикрепить XML-счет ZUGFeRD к PDF
+## Прикрепите XML-счет ZUGFeRD к PDF
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) для XML-файла счета.

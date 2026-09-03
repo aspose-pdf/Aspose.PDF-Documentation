@@ -45,7 +45,7 @@ doc.save(data_dir + "Updated_Information.pdf")
 puts "Update document information, please check output file."
 ```
 
-## Скачать исполняющий код
+## Скачайте исполняющий код
 
 СкачатьВ **Set PDF File Information (Aspose.PDF)**В fromВ любой из перечисленных ниже сайтов для совместного кодирования:
 

@@ -41,7 +41,7 @@ puts "Subject:-" + doc_info.getSubject().to_s
 puts "Title:-" + doc_info.getTitle().to_s
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 Скачать **Получить информацию о PDF-файле (Aspose.PDF)** from any of the below mentioned social coding sites:
 

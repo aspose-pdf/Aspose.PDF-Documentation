@@ -43,7 +43,7 @@ pdf.save(data_dir + "output.pdf")
 puts "Dimensions updated successfully!"
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 Скачать\u0412\u00A0**Update Page Dimensions (Aspose.PDF)**\u0412\u00A0из\u0412\u00A0любого из нижеупомянутых социальных кодирующих сайтов:
 

@@ -61,7 +61,7 @@ doc.save(data_dir + "Text_Added.pdf")
 puts "Text added successfully"
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 СкачатьВ **Add Text (Aspose.PDF)**В изВ любого из перечисленных ниже сайтов для совместной разработки:
 

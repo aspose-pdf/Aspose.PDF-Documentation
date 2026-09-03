@@ -39,7 +39,7 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Доступ к [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) для целевой страницы.
-1. Фильтровать [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) ресурсы, которые вы хотите удалить, и удалить их из коллекции.
+1. Фильтруйте [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) ресурсы, которые вы хотите удалить, и удалить их из коллекции.
 1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

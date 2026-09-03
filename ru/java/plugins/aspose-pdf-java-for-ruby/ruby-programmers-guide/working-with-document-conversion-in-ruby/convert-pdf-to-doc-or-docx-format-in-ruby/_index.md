@@ -29,7 +29,7 @@ pdf.save(data_dir + "output.doc")
 puts "Document has been converted successfully"
 ```
 
-## Скачать исполняемый код
+## Скачайте исполняемый код
 
 СкачатьВ **Преобразовать PDF в DOC или DOCX (Aspose.PDF)**В сВ любого из нижеупомянутых социальных сайтов кодинга:
 

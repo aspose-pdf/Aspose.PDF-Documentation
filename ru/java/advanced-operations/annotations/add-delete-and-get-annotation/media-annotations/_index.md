@@ -68,7 +68,7 @@ public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throw
 Этот пример удаляет существующие аннотации rich media со страницы.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Собрать аннотации типа [Тип аннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
+1. Соберите аннотации типа [Тип аннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
 1. Удалите собранные аннотации и сохраните обновлённый документ.
 
 ```java

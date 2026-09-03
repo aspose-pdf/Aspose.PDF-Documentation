@@ -38,7 +38,7 @@ public static void addRectangle(Path outputFile) {
 }
 ```
 
-## Заполнить прямоугольник сплошным или градиентным цветом
+## Заполните прямоугольник сплошным или градиентным цветом
 
 Примеры прямоугольников включают:
 
@@ -49,7 +49,7 @@ public static void addRectangle(Path outputFile) {
 
 `createRectangleWithAlphaColorChannel` применяет полупрозрачные цвета с `Color.fromArgb(...)` чтобы перекрывающиеся прямоугольники оставались видимыми.
 
-## Контролировать z-order прямоугольников
+## Контролируйте z-order прямоугольников
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

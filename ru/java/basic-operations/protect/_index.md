@@ -19,14 +19,14 @@ Aspose.PDF for Java предоставляет несколько API для з�
 
 Примеры в `ProtectDocumentExamples.java` демонстрировать, как:
 
-1. Применить шифрование к [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с паролями пользователя и владельца.
-1. Ограничить разрешения с помощью [ПривилегияДокумента](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
+1. Примените шифрование к [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с паролями пользователя и владельца.
+1. Ограничьте разрешения с помощью [ПривилегияДокумента](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
 1. Выберите [КриптоАлгоритм](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) для защищенных [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Расшифровать защищённый [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Изменить существующие пароли в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Тестировать варианты паролей с [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) и [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Расшифруйте защищённый [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Измените существующие пароли в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Тестируйте варианты паролей с [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) и [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-## Зашифровать PDF с ограниченными привилегиями
+## Зашифруйте PDF с ограниченными привилегиями
 
 ```java
 public static void encryptPassword(Path inputFile, Path outputFile) {
@@ -48,7 +48,7 @@ public static void encryptPassword(Path inputFile, Path outputFile) {
 }
 ```
 
-## Зашифровать PDF-файл
+## Зашифруйте PDF-файл
 
 ```java
 public static void encryptPdfFile(Path inputFile, Path outputFile) {
@@ -67,7 +67,7 @@ public static void encryptPdfFile(Path inputFile, Path outputFile) {
 }
 ```
 
-## Расшифровать защищённый PDF
+## Расшифруйте защищённый PDF
 
 ```java
 public static void decryptPdfFile(Path inputFile, Path outputFile) {
@@ -81,7 +81,7 @@ public static void decryptPdfFile(Path inputFile, Path outputFile) {
 }
 ```
 
-## Изменить пароли
+## Измените пароли
 
 ```java
 public static void changePassword(Path inputFile, Path outputFile) {

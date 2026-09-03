@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как просмат
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Прочитайте [Артефакт](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) коллекцию из целевого [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Перебрать страницу [Артефакт](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) коллекцию и подсчитать каждый подтип нумерации, который вам нужно отобразить.
+1. Переберите страницу [Артефакт](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) коллекцию и подсчитать каждый подтип нумерации, который вам нужно отобразить.
 
 ```java
 public static void countPdfArtifacts(Path inputFile) {

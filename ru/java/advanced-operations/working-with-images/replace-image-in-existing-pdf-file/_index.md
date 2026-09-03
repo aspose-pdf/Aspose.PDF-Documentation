@@ -12,11 +12,11 @@ Abstract: В этой статье показано, как заменять и�
 ---
 Используйте либо коллекцию изображений страницы, либо поиск на основе размещения, в зависимости от того, насколько точно вам нужно найти изображение.
 
-## Заменить изображение по индексу ресурса
+## Замените изображение по индексу ресурса
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к ресурсам изображений в целевом файле [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Заменить целевой ресурс изображения новым файлом изображения.
+1. Замените целевой ресурс изображения новым файлом изображения.
 1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -29,7 +29,7 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 }
 ```
 
-## Заменить изображение с помощью `ImagePlacementAbsorber`
+## Замените изображение с помощью `ImagePlacementAbsorber`
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) и посетить цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).

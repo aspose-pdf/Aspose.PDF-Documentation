@@ -38,13 +38,13 @@ public static void extractImageParams(Path inputFile) {
 }
 ```
 
-## Определить типы цветов изображения
+## Определите типы цветов изображения
 
 Используйте этот пример, когда вам нужно подсчитать изображения в градациях серого и RGB на странице PDF.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Используйте [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) для перебора изображений страниц.
-1. Прочитать [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) каждого изображения и вывести итоговые значения.
+1. Прочитайте [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) каждого изображения и вывести итоговые значения.
 
 ```java
 public static void extractImageTypesFromPdf(Path inputFile) {
@@ -105,13 +105,13 @@ public static void extractImageAltText(Path inputFile) {
 }
 ```
 
-## Вычислить информацию об изображении из операторов страниц
+## Вычислите информацию об изображении из операторов страниц
 
 Используйте этот пример, когда необходимо определить эффективный размер изображения и его разрешение из низкоуровневых операторов содержимого страницы.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и собрать имена ресурсов изображений.
-1. Отслеживать состояние графики при итерации по операторам страницы.
-1. Разобрать каждую операцию отрисовки изображения и вычислить её эффективные размеры и разрешение.
+1. Отслеживайте состояние графики при итерации по операторам страницы.
+1. Разберите каждую операцию отрисовки изображения и вычислить её эффективные размеры и разрешение.
 
 ```java
 public static void extractImageInformationFromPdf(Path inputFile) {

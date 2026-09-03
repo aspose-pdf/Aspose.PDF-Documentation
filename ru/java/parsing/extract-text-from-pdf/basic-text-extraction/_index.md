@@ -55,13 +55,13 @@ public static void extractTextFromPage(Path inputFile, Path outputFile, int page
 }
 ```
 
-## Извлекать текст по структуре абзацев
+## Извлекайте текст по структуре абзацев
 
 Использовать `ParagraphAbsorber` когда вам нужна структурная группировка вместо одного простого текстового потока. Он возвращает разметку страниц с разделами, абзацами, строками и `TextFragment` объекты, что полезно, когда вывод должен сохранять логические блоки текста.
 
 1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) и просмотрите весь документ, чтобы построить результаты разметки страниц.
-1. Итерировать по разметкам страниц, разделам, абзацам, строкам и [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) объекты, предоставляемые поглотителем.
+1. Итерируйте по разметкам страниц, разделам, абзацам, строкам и [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) объекты, предоставляемые поглотителем.
 1. Создайте выходной текст с явным нумерованием страниц, разделов и абзацев, чтобы сохранялась структурная группировка.
 1. Запишите извлечённый текст абзаца в выходной файл.
 

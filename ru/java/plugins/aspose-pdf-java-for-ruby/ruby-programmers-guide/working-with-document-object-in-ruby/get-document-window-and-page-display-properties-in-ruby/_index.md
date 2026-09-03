@@ -73,7 +73,7 @@ puts "PageLayout :-" + doc.getPageLayout().to_s
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 СкачатьВ **Get Document Window and Page Display Properties (Aspose.PDF)**В изВ любого из перечисленных ниже сайтов совместной разработки:
 

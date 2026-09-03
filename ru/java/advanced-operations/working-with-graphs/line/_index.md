@@ -43,7 +43,7 @@ public static void addLine(Path outputFile) {
 
 `addDottedDashedLine` использует те же координаты и настройки пунктиров, но также применяет `Color.getRed()`.
 
-## Рисовать линии по всей странице
+## Рисуйте линии по всей странице
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

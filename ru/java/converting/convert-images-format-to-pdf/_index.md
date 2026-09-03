@@ -53,7 +53,7 @@ public static void convertCgmToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать DICOM в PDF
+## Конвертируйте DICOM в PDF
 
 Используйте этот пример, когда медицинское изображение DICOM следует обернуть в документ PDF.
 
@@ -79,7 +79,7 @@ public static void convertDicomToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать EMF в PDF с прямой загрузкой документа
+## Конвертируйте EMF в PDF с прямой загрузкой документа
 
 Используйте этот пример, когда файл EMF должен быть преобразован в PDF через основной путь загрузки EMF.
 
@@ -109,7 +109,7 @@ public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOE
 }
 ```
 
-## Конвертировать EMF в PDF с альтернативным рабочим процессом
+## Конвертируйте EMF в PDF с альтернативным рабочим процессом
 
 Используйте этот пример, когда содержимое EMF должно быть преобразовано с использованием альтернативной настройки или потока композиции страниц.
 
@@ -179,7 +179,7 @@ public static void convertJpegToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PNG в PDF
+## Конвертируйте PNG в PDF
 
 Используйте этот пример, когда PNG‑изображение должно быть упаковано в документ PDF.
 
@@ -217,7 +217,7 @@ public static void convertSvgToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать TIFF в PDF
+## Конвертируйте TIFF в PDF
 
 Используйте этот пример, когда TIFF‑изображение должно быть преобразовано в PDF.
 
@@ -238,7 +238,7 @@ public static void convertTiffToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать CDR в PDF
+## Конвертируйте CDR в PDF
 
 Используйте этот пример, когда файл CorelDRAW CDR должен быть преобразован в PDF.
 

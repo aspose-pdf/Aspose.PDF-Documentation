@@ -114,8 +114,8 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 Эти примеры проверяют коллекцию аннотаций страницы и выводят прямоугольники геометрических аннотаций по типу.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Перебрать аннотации страницы.
-1. Фильтровать по требуемому [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) значение и вывести прямоугольник.
+1. Переберите аннотации страницы.
+1. Фильтруйте по требуемому [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) значение и вывести прямоугольник.
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -282,7 +282,7 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 Этот пример считывает линейные аннотации и выводит их начальные и конечные координаты.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Перебрать аннотации страницы и выбрать [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Переберите аннотации страницы и выбрать [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. Привести каждое совпадение к [Линейная аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) и вывести её координаты.
 
 ```java
@@ -305,7 +305,7 @@ public static void lineAnnotationsGet(Path inputFile) {
 Используйте этот подход, когда необходимо удалить линейные аннотации со страницы.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Собрать аннотации типа [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Соберите аннотации типа [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. Удалите собранные аннотации и сохраните документ.
 
 ```java

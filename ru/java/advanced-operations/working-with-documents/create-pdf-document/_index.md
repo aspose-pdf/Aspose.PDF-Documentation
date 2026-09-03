@@ -110,12 +110,12 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 }
 ```
 
-## Встроить шрифты в существующий PDF
+## Встройте шрифты в существующий PDF
 
 Используйте этот подход, когда документ должен включать необходимые шрифты для более надёжного отображения на других системах.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Включить стандартное встраивание шрифтов и пройтись по шрифтам, используемым каждым [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Включите стандартное встраивание шрифтов и пройтись по шрифтам, используемым каждым [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Отметьте любые не встроенные [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) объекты для встраивания.
 1. Сохраните обновлённый документ.
 
@@ -135,13 +135,13 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-## Встраивать шрифты при создании нового PDF
+## Встраивайте шрифты при создании нового PDF
 
 Этот пример создает новый PDF и присваивает встроенный шрифт текстовому содержимому с самого начала.
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Создайте требуемое [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [Текстовый сегмент](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), и [Состояние текста](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. Разрешить цель [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) из репозитория и пометить его как встроенный.
+1. Разрешите цель [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) из репозитория и пометить его как встроенный.
 1. Добавьте текстовое содержание на страницу и сохраните результирующий документ.
 
 ```java
@@ -199,7 +199,7 @@ public static void getAllFonts(Path inputFile) {
 }
 ```
 
-## Улучшить встраивание шрифтов с помощью субсетирования шрифтов
+## Улучшите встраивание шрифтов с помощью субсетирования шрифтов
 
 Используйте этот метод, когда хотите уменьшить нагрузку шрифтов, одновременно сохраняя встроенные данные шрифта согласованными с использованием документа.
 

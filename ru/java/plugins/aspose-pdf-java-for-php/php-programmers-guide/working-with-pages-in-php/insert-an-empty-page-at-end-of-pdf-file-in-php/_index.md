@@ -28,7 +28,7 @@ print "Empty page added successfully!" . PHP_EOL;
 
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 Скачать **Insert an Empty Page at End of PDF File (Aspose.PDF)** из любого из перечисленных ниже социальных сайтов для разработки:
 

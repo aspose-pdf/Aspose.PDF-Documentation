@@ -30,7 +30,7 @@ Abstract: Aspose.PDF for Python via .NET — это комплексная би�
 
 ## Установите
 
-## Оценить Aspose.PDF for Java
+## Оцените Aspose.PDF for Java
 
 {{% alert color="primary" %}}
 

@@ -23,7 +23,7 @@ doc.save(self.dataDir + "SVG1.pdf");
 print "Document has been converted successfully"
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 СкачатьВ **Convert SVG to PDF (Aspose.PDF)**В изВ любого из перечисленных ниже социальных сайтов для совместного кодирования:
 

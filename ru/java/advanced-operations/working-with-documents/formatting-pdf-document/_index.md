@@ -66,12 +66,12 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 }
 ```
 
-## Встроить шрифты в существующий PDF
+## Встройте шрифты в существующий PDF
 
 Используйте этот подход, когда документ должен включать необходимые шрифты для более надёжного отображения на других системах.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Включить стандартное встраивание шрифтов и перебрать шрифты, используемые каждым [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Включите стандартное встраивание шрифтов и перебрать шрифты, используемые каждым [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Отметьте любой не встроенный [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) объекты для встраивания.
 1. Сохраните обновленный документ.
 
@@ -97,7 +97,7 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Создайте необходимое [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [Текстовый сегмент](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), и [СостояниеТекста](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. Разрешить цель [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) из репозитория и пометить его как встроенный.
+1. Разрешите цель [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) из репозитория и пометить его как встроенный.
 1. Добавьте текстовое содержимое на страницу и сохраните выходной документ.
 
 ```java
@@ -155,7 +155,7 @@ public static void getAllFonts(Path inputFile) {
 }
 ```
 
-## Улучшить встраивание шрифтов с помощью подмножества шрифтов
+## Улучшите встраивание шрифтов с помощью подмножества шрифтов
 
 Используйте этот подход, когда хотите снизить нагрузку шрифта, сохраняя встроенные данные шрифта согласованными с использованием документа.
 

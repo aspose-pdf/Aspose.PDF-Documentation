@@ -41,11 +41,11 @@ public static void addLayers(Path outputFile) {
 
 Полный пример создает три отдельных слоя с красным, зелёным и синим содержимым линий.
 
-## Заблокировать слой
+## Заблокируйте слой
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к цели [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и получить его [Слой](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) коллекцию.
-1. Блокировать цель [Слой](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Блокируйте цель [Слой](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 1. Сохраните обновлённый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

@@ -21,7 +21,7 @@ Abstract: В этой статье объясняется, как извлека
 1. Вызовите `getFieldNames()` для сбора всех идентификаторов полей, присутствующих в форме.
 1. Переберите эти имена полей и вызовите `getField(fieldName)` чтобы прочитать значение каждого поля.
 1. Создайте строку вывода из извлечённых пар ключ-значение и выведите агрегированные данные формы.
-1. Закрыть [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
 
 ```java
 public static void extractFormFields(Path inputFile) {
@@ -48,7 +48,7 @@ public static void extractFormFields(Path inputFile) {
 1. Откройте исходную PDF-форму с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
 1. Вызовите `getField(fieldName)` с указанным именем поля, чтобы прочитать его текущее значение из данных AcroForm.
 1. Вывести извлечённое значение поля.
-1. Закрыть [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
 
 ```java
 public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
@@ -62,13 +62,13 @@ public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
 }
 ```
 
-## Экспортировать поля формы в JSON
+## Экспортируйте поля формы в JSON
 
 1. Откройте исходную PDF-форму с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
 1. Вызовите `getFieldNames()` собрать все доступные идентификаторы полей из AcroForm.
 1. Пройдите по этим полям, экранируйте имена и значения и построьте строку JSON‑объекта.
 1. Запишите результат JSON в выходной файл.
-1. Закрыть [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
 
 ```java
 public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws Exception {
@@ -94,12 +94,12 @@ public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Экспортировать данные формы в XML, FDF и XFDF
+## Экспортируйте данные формы в XML, FDF и XFDF
 
 1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад без привязки документа пока.
 1. Откройте поток вывода для XML‑файла и привяжите исходный PDF к фасаду с `bindPdf(...)`.
 1. Вызовите `exportXml(stream)` поэтому текущие данные полей формы сериализуются как XML.
-1. Закрыть [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
 
 ```java
 public static void extractDataToXml(Path inputFile, Path outputFile) throws Exception {
@@ -116,7 +116,7 @@ public static void extractDataToXml(Path inputFile, Path outputFile) throws Exce
 1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад без привязки документа пока.
 1. Откройте поток вывода для файла FDF и привяжите исходный PDF к фасаду с `bindPdf(...)`.
 1. Вызовите `exportFdf(stream)` поэтому данные полей формы сериализуются в формате FDF.
-1. Закрыть [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
 
 ```java
 public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exception {
@@ -133,7 +133,7 @@ public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exce
 1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад без привязки документа пока.
 1. Откройте поток вывода для файла XFDF и привяжите исходный PDF к фасаду с `bindPdf(...)`.
 1. Вызовите `exportXfdf(stream)` так что данные полей формы сериализуются в формате XFDF.
-1. Закрыть [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
 
 ```java
 public static void extractDataToXfdf(Path inputFile, Path outputFile) throws Exception {

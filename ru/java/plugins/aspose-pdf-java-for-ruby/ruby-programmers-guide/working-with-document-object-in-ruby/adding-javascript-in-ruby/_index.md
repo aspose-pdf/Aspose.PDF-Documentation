@@ -45,7 +45,7 @@ doc.save(data_dir + "JavaScript-Added.pdf")
 puts "Added JavaScript Successfully, please check the output file."
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 Скачать **Adding JavaScript (Aspose.PDF)** из любого из перечисленных ниже социальных кодовых сайтов:
 

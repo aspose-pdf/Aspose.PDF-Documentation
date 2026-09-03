@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как работат
 ---
 Рабочие процессы аннотаций безопасности в этом разделе сосредоточены на подготовке и применении редактирований к конфиденциальному контенту PDF.
 
-## Отметить текст redaction annotations
+## Отметьте текст redaction annotations
 
 Используйте этот пример, когда найденный текст должен быть покрыт redaction annotations до того, как редактирование будет применено навсегда.
 
@@ -47,12 +47,12 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 }
 ```
 
-## Применить существующие редактирования
+## Примените существующие редактирования
 
 Этот пример навсегда применяет аннотации редактирования, которые уже существуют на странице.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Собрать аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
+1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
 1. Вызовите `redact()` для каждой собранной аннотации сохранить обновлённый файл.
 
 ```java
@@ -72,7 +72,7 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 }
 ```
 
-## Замазать выбранную область страницы
+## Замажьте выбранную область страницы
 
 Используйте этот подход, когда целевой контент определяется по позиции, а не по совпадению текста.
 

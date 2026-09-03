@@ -26,13 +26,13 @@ Abstract: В этой статье показано, как разделить P
 Чтобы разделить PDF на отдельные файлы страниц в Java:
 
 1. Откройте исходный PDF с помощью [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) конструктора.
-1. Итерировать через ["Страница"](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты, возвращаемые `document.getPages()`.
+1. Итерируйте через ["Страница"](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты, возвращаемые `document.getPages()`.
 1. Создайте новый пустой [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для каждой страницы.
 1. Добавьте текущий ["Страница"](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) к новому [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Сохраните новый [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с уникальным именем файла.
 1. Закройте оба [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объекты после завершения обработки.
 
-## Разделить PDF на файлы с одной страницей
+## Разделите PDF на файлы с одной страницей
 
 Следующий пример Java основан на `SplitDocumentExamples.java` и сохраняет страницы как `Page_1.pdf`, `Page_2.pdf`, и так далее.
 

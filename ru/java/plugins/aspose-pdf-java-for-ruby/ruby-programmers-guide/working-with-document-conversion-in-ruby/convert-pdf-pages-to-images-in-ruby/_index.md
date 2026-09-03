@@ -41,7 +41,7 @@ end
 puts "PDF pages are converted to individual images successfully!"
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 Скачать **Convert PDF pages to Images (Aspose.PDF)** из любого из указанных ниже сайтов для совместного программирования:
 

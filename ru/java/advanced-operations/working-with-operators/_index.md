@@ -58,7 +58,7 @@ public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Pat
 }
 ```
 
-## Отрисовать переиспользуемый XForm‑контент на странице
+## Отрисуйте переиспользуемый XForm‑контент на странице
 
 Используйте этот подход, когда одно и то же изображение или графика должны отображаться более одного раза без дублирования ресурса в файле PDF.
 
@@ -110,7 +110,7 @@ private static void addFormAt(OperatorCollection pageContents, String formName, 
 Используйте этот пример, когда страница содержит операторы векторного рисования, которые следует удалить непосредственно из потока содержимого.
 
 1. Откройте исходный PDF с помощью [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите целевой [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Итерировать операторы содержимого страницы и собрать экземпляры [Обводка](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ЗакрытьКонтурОбводка](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/), и [Заполнить](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
+1. Итерируйте операторы содержимого страницы и собрать экземпляры [Обводка](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ЗакрытьКонтурОбводка](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/), и [Заполнить](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
 1. Удалите собранные операторы из содержимого страниц и сохраните обновлённый PDF.
 
 Эта техника удаляет только целевые инструкции рисования. Если на странице также содержатся связанные текстовые подписи или другие не графические операторы, эти элементы остаются в потоке содержимого и могут потребовать отдельного прохода очистки.

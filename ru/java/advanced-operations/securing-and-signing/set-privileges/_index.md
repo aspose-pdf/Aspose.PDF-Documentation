@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как защищат
 ---
 Aspose.PDF for Java предоставляет операции безопасности PDF через `PdfFileSecurity` фасад.
 
-## Зашифровать PDF с паролями пользователя и владельца
+## Зашифруйте PDF с паролями пользователя и владельца
 
 1. Создайте и привязать [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) обертка исходного PDF-документа.
 1. Настройте [ПривилегияДокумента](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) и [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) свойства, необходимые для примера.
@@ -33,11 +33,11 @@ public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFi
 }
 ```
 
-## Зашифровать PDF с использованием конкретного алгоритма
+## Зашифруйте PDF с использованием конкретного алгоритма
 
 `encryptPdfWithEncryptionAlgorithm` использует `KeySize.x256` вместе с `Algorithm.AES` применить более сильные параметры шифрования.
 
-## Расшифровать защищённый PDF
+## Расшифруйте защищённый PDF
 
 1. Создайте и привязать [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) обертка исходного PDF-документа.
 1. Расшифруйте защищённый документ с паролем владельца.
@@ -55,7 +55,7 @@ public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) 
 
 Набор примеров также включает `tryDecryptPdfWithoutException`, который возвращает `false` вместо выбрасывания исключения при неудачной расшифровке.
 
-## Изменить пароли и сбросить безопасность
+## Измените пароли и сбросить безопасность
 
 The `PdfFileSecurityExamples` класс демонстрирует:
 

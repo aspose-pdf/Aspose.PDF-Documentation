@@ -47,7 +47,7 @@ doc.save(data_dir + "set_expiration.pdf")
 puts "Update document information, please check output file."
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 Скачать **Set PDF Expiration (Aspose.PDF)** с любого из перечисленных ниже сайтов социального кодинга:
 

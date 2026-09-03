@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java может экспортировать PDF‑документы в форматы вывода, ориентированные на текст, электронные книги, печать и разметку.
 
-## Конвертировать PDF в EPUB
+## Конвертируйте PDF в EPUB
 
 Используйте этот пример, когда PDF‑документ должен быть экспортирован в формат электронной книги EPUB.
 
@@ -35,7 +35,7 @@ public static void convertPdfToEpub(Path inputFile, Path outputFile) {
     }
 ```
 
-## Конвертировать PDF в TeX
+## Конвертируйте PDF в TeX
 
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в разметку TeX.
 
@@ -53,7 +53,7 @@ public static void convertPdfToTex(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PDF в обычный текст
+## Конвертируйте PDF в обычный текст
 
 Используйте этот пример, когда PDF‑документ должен быть экспортирован в текстовый файл.
 
@@ -72,7 +72,7 @@ public static void convertPdfToTxt(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PDF в XPS
+## Конвертируйте PDF в XPS
 
 Используйте этот пример, когда PDF‑документ должен быть преобразован в формат XPS.
 
@@ -118,7 +118,7 @@ public static void convertPdfToMd(Path inputFile, Path outputFile) {
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в совместимый с Mobi XML.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Выбрать [`SaveFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/saveformat/) `MobiXml` в качестве целевого формата сериализации.
+1. Выберите [`SaveFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/saveformat/) `MobiXml` в качестве целевого формата сериализации.
 1. Вызовите `document.save(outputFile.toString(), SaveFormat.MobiXml)` поэтому PDF экспортируется как совместимый с Mobi XML.
 1. Сохраните преобразованный файл.
 

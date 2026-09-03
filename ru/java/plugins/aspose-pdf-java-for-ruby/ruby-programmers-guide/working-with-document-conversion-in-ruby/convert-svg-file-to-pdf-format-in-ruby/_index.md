@@ -33,7 +33,7 @@ pdf.save(data_dir + "SVG.pdf")
 puts "Document has been converted successfully"
 ```
 
-## Скачать исполняемый код
+## Скачайте исполняемый код
 
 СкачатьВ **Convert SVG to PDF (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 

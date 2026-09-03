@@ -37,7 +37,7 @@ pdf.save(data_dir + "Output.svg", save_options)
 puts "Document has been converted successfully"
 ```
 
-## Скачать запущенный код
+## Скачайте запущенный код
 
 Скачать **Convert PDF to SVG Format (Aspose.PDF)** из любых из перечисленных ниже сайтов совместного кодинга:
 

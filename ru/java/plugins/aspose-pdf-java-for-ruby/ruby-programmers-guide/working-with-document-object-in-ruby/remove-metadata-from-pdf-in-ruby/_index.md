@@ -41,7 +41,7 @@ doc.save(data_dir + "Remove_Metadata.pdf")
 puts "Removed metadata successfully, please check output file."
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 СкачатьВ **Remove Metadata (Aspose.PDF)**В изВ любого из указанных ниже социальных сайтов для совместной разработки:
 

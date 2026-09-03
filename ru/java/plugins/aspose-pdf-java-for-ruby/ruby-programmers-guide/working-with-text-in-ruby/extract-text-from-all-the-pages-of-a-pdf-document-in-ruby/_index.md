@@ -57,7 +57,7 @@ writer.close()
 puts "Text extracted successfully. Check output file."
 ```
 
-## Скачать выполняемый код
+## Скачайте выполняемый код
 
 Скачать **Extract Text From All the Pages (Aspose.PDF)** из любых из перечисленных ниже социальных сайтов для программирования:
 

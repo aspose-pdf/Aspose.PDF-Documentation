@@ -7,7 +7,7 @@ url: /ru/java/add-text-to-an-existing-pdf-file-in-python/
 lastmod: "2026-08-19"
 description: Пример кода, как добавить или записать текст в документ Pdf, используя Python с библиотекой PDF.
 ---
-## Записать или добавить текст в PDF с помощью Python
+## Запишите или добавить текст в PDF с помощью Python
 
 Чтобы добавить строку текста в документ Pdf, используя **Aspose.PDF Java for Python**, достаточно вызвать модуль **AddText**.
 

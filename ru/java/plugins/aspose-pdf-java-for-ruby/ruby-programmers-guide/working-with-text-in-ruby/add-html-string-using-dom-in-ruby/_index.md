@@ -53,7 +53,7 @@ doc.save(data_dir + "html.output.pdf")
 puts "HTML added successfully"
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 СкачатьВ **Add HTML (Aspose.PDF)**В изВ любой из перечисленных ниже сайтов для совместного кодирования:
 

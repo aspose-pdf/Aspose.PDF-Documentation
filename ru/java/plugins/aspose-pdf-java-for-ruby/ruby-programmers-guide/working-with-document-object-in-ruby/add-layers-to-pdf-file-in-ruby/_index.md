@@ -69,7 +69,7 @@ doc.save(data_dir + "Layers-Added.pdf")
 puts "Added Layers Successfully, please check the output file."
 ```
 
-## Скачать запущенный код
+## Скачайте запущенный код
 
 СкачатьВ **Add Layers (Aspose.PDF)**В изВ любой из перечисленных ниже сайтов для совместного кодирования:
 

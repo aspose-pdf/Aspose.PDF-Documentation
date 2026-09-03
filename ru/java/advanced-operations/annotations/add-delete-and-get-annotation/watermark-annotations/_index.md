@@ -53,7 +53,7 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Итерируйтесь по аннотациям на целевой странице.
-1. Фильтровать аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` и вывести их прямоугольники.
+1. Фильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` и вывести их прямоугольники.
 
 ```java
 public static void watermarkGet(Path inputFile) {
@@ -72,7 +72,7 @@ public static void watermarkGet(Path inputFile) {
 Используйте этот подход, когда существующие аннотации водяных знаков должны быть удалены из документа.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Собрать аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
+1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
 1. Удалите собранные аннотации и сохраните выходной файл.
 
 ```java

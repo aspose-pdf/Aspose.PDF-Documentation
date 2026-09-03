@@ -25,7 +25,7 @@ Abstract: В этой статье объясняется, как объедин
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) коллекцию со второй [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) к первому с `document1.getPages().add(document2.getPages())`.
 1. Сохраните объединённый [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в путь вывода.
 
-## Объединить два PDF-документа
+## Объедините два PDF-документа
 
 Следующий пример на Java основан на `MergeDocumentExamples.java`.
 

@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java может экспортировать содержимое PDF в несколько форматов электронных таблиц с различными параметрами макета. Используйте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) выбрать формат целевой книги и контролировать, как содержимое страницы распределяется по листам и столбцам.
 
-## Конвертировать PDF в Excel 2003 XML
+## Конвертируйте PDF в Excel 2003 XML
 
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в формат электронных таблиц Excel 2003 XML.
 
@@ -35,7 +35,7 @@ public static void convertPdfToExcelSpreadSheet2003(Path inputFile, Path outputF
 }
 ```
 
-## Конвертировать PDF в XLSX
+## Конвертируйте PDF в XLSX
 
 Используйте этот пример, когда содержимое PDF должно быть конвертировано в формат Excel 2007+ XLSX.
 
@@ -55,13 +55,13 @@ public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PDF в XLSX с управлением столбцами
+## Конвертируйте PDF в XLSX с управлением столбцами
 
 Используйте этот пример, когда нужно скорректировать обработку столбцов при преобразовании PDF в Excel.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) для `XLSX` вывод.
-1. Включить `setInsertBlankColumnAtFirst(true)` когда нужен дополнительный ведущий столбец для улучшения макета листа, полученного из PDF.
+1. Включите `setInsertBlankColumnAtFirst(true)` когда нужен дополнительный ведущий столбец для улучшения макета листа, полученного из PDF.
 1. Вызовите `document.save(outputFile.toString(), saveOptions)` и записать преобразованный файл XLSX.
 
 ```java
@@ -76,13 +76,13 @@ public static void convertPdfToExcel2007ControlColumn(Path inputFile, Path outpu
 }
 ```
 
-## Конвертировать PDF в один лист Excel
+## Конвертируйте PDF в один лист Excel
 
 Используйте этот пример, когда все страницы PDF должны быть экспортированы в один лист.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) для `XLSX` экспорт.
-1. Включить `setMinimizeTheNumberOfWorksheets(true)` поэтому несколько страниц PDF объединяются в меньшее количество листов.
+1. Включите `setMinimizeTheNumberOfWorksheets(true)` поэтому несколько страниц PDF объединяются в меньшее количество листов.
 1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить файл вывода XLSX.
 
 ```java
@@ -97,7 +97,7 @@ public static void convertPdfToExcel2007SingleExcelWorksheet(Path inputFile, Pat
 }
 ```
 
-## Конвертировать PDF в XLSM
+## Конвертируйте PDF в XLSM
 
 Используйте этот пример, когда вывод PDF должен быть сохранён как книга Excel с поддержкой макросов.
 
@@ -117,7 +117,7 @@ public static void convertPdfToExcel2007Macro(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PDF в CSV
+## Конвертируйте PDF в CSV
 
 Используйте этот пример, когда табличный контент PDF должен быть экспортирован в CSV.
 
@@ -137,7 +137,7 @@ public static void convertPdfToExcel2007Csv(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PDF в ODS
+## Конвертируйте PDF в ODS
 
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в формат электронных таблиц OpenDocument.
 

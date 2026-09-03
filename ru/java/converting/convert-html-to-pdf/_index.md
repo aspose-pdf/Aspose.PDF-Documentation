@@ -80,7 +80,7 @@ public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outp
 Используйте этот пример, когда результирующий PDF должен сохранять шрифты HTML путем их встраивания.
 
 1. Создайте [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) экземпляр конфигурации импорта HTML.
-1. Включить `setEmbedFonts(true)` поэтому шрифты, определённые при рендеринге HTML, сохраняются в итоговом PDF.
+1. Включите `setEmbedFonts(true)` поэтому шрифты, определённые при рендеринге HTML, сохраняются в итоговом PDF.
 1. Откройте исходный HTML с этими параметрами загрузки, чтобы сохранить оригинальную типографику в окончательном документе.
 1. Сохраните [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в виде PDF с включёнными встроенными ресурсами шрифтов.
 
@@ -95,12 +95,12 @@ public static void convertHtmlToPdfEmbedFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-## Отобразить HTML‑контент на одной странице PDF
+## Отобразите HTML‑контент на одной странице PDF
 
 Используйте этот пример, когда длинный HTML‑контент следует удерживать на одной странице PDF вместо разбивки на несколько страниц.
 
 1. Создайте [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) экземпляр для настроек преобразования.
-1. Включить `setRenderToSinglePage(true)` поэтому импортированный HTML размещается на одной странице PDF, а не разбивается на несколько страниц.
+1. Включите `setRenderToSinglePage(true)` поэтому импортированный HTML размещается на одной странице PDF, а не разбивается на несколько страниц.
 1. Откройте исходный HTML с настроенными параметрами загрузки и позвольте Aspose.PDF построить макет страницы в a [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Сохраните выходной файл PDF.
 

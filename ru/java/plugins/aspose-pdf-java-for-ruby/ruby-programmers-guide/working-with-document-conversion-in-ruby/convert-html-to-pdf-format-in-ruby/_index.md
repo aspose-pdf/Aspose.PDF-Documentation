@@ -31,7 +31,7 @@ pdf.save(data_dir + "html.pdf")
 puts "Document has been converted successfully"
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 Скачать **Convert HTML to PDF Format (Aspose.PDF)** из любых из перечисленных ниже сайтов для совместного программирования:
 

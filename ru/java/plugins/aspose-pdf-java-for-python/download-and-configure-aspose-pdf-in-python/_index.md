@@ -17,7 +17,7 @@ sitemap:
 - Aspose: [Компонент Aspose.PDF for Java](https://downloads.aspose.com/pdf/java)
 - [JPype](https://pypi.python.org/pypi/JPype1)
 
-## Скачать примеры с сайтов социального кодинга
+## Скачайте примеры с сайтов социального кодинга
 
 Следующие версии работающих примеров доступны для скачивания на указанных ниже сайтах социального кодинга:
 
@@ -34,7 +34,7 @@ Please follow these simple stepsВ чтобы открыть и расшири�
 2. Установите JPype из: <http://sourceforge.net/projects/jpype/files/JPype/>
 3. Установите Java JDK из: <http://www.oracle.com/technetwork/java/javase/downloads>
 4. Скачайте API Aspose.PDF for Java, которые вы хотите использовать в своих python‑проектах, из: <http://www.aspose.com/community/files/72/java-components/default.aspx> и скопируйте загруженные .jar‑файлы API в папку %Python%/lib.
-5. Клонировать [Примеры Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) из GitHub.
-6. Клонировать [Примеры Aspose.PDF Java for Python](http://asposepdfjavapython.codeplex.com/) из CodePlex.
+5. Клонируйте [Примеры Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) из GitHub.
+6. Клонируйте [Примеры Aspose.PDF Java for Python](http://asposepdfjavapython.codeplex.com/) из CodePlex.
 
 

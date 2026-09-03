@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java поддерживает экспорт в HTML с вариантами для изображений, SVG, разбиения страниц, прозрачности и рендеринга слоёв. Используйте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) для контроля того, как страницы PDF, ресурсы и разметка записываются в HTML‑вывод.
 
-## Конвертировать PDF в HTML
+## Конвертируйте PDF в HTML
 
 Используйте этот пример, когда PDF должен быть экспортирован в стандартный HTML‑документ.
 
@@ -94,13 +94,13 @@ public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PDF в HTML с сжатым SVG
+## Конвертируйте PDF в HTML с сжатым SVG
 
 Используйте этот пример, когда вывод SVG должен быть оптимизирован при экспорте в HTML.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и настройте отдельную папку для ресурсов SVG.
-1. Включить `setCompressSvgGraphicsIfAny(true)` поэтому SVG‑ресурсы сжимаются при экспорте.
+1. Включите `setCompressSvgGraphicsIfAny(true)` поэтому SVG‑ресурсы сжимаются при экспорте.
 1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить преобразованные HTML‑файлы.
 
 ```java
@@ -115,7 +115,7 @@ public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) 
 }
 ```
 
-## Конвертировать PDF в HTML с PNG‑фоновыми изображениями страниц
+## Конвертируйте PDF в HTML с PNG‑фоновыми изображениями страниц
 
 Используйте этот пример, когда фон страниц должен отображаться в виде PNG‑изображений в выводе HTML.
 
@@ -142,7 +142,7 @@ public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить режим генерации разметки на `WriteOnlyBodyContent`.
-1. Сохранять `setSplitIntoPages(true)` включено, когда вывод только тела должен оставаться разделённым по страницам.
+1. Сохраняйте `setSplitIntoPages(true)` включено, когда вывод только тела должен оставаться разделённым по страницам.
 1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить вывод HTML.
 
 ```java
@@ -158,7 +158,7 @@ public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) 
 }
 ```
 
-## Конвертировать PDF в HTML с прозрачным отображением текста
+## Конвертируйте PDF в HTML с прозрачным отображением текста
 
 Используйте этот пример, когда прозрачный текст должен быть сохранён при экспорте в HTML.
 

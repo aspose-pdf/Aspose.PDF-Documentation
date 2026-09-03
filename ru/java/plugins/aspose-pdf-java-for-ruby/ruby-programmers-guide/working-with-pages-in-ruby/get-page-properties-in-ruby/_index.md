@@ -49,7 +49,7 @@ puts "Page Number :- " + pdf_page.getNumber().to_s
 puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
-## Скачать исполняемый код
+## Скачайте исполняемый код
 
 СкачатьВ **Get Page Properties (Aspose.PDF)**В изВ любого из нижеуказанных сайтов для совместного кодирования:
 

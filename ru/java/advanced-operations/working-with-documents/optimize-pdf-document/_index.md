@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как оптимиз
 ---
 Aspose.PDF for Java предоставляет функции оптимизации через `Document.optimize`, `optimizeResources`, и `OptimizationOptions`.
 
-## Оптимизировать PDF с помощью общей оптимизации документа
+## Оптимизируйте PDF с помощью общей оптимизации документа
 
 Используйте этот пример, когда вы хотите, чтобы Aspose.PDF применил встроенную процедуру оптимизации всего документа.
 
@@ -33,7 +33,7 @@ public static void optimizePdf(Path inputFile, Path outputFile) throws Exception
 }
 ```
 
-## Сократить размер PDF, оптимизируя ресурсы
+## Сократите размер PDF, оптимизируя ресурсы
 
 Этот пример сосредоточен на оптимизации на уровне ресурсов без ручной настройки отдельных параметров.
 
@@ -51,7 +51,7 @@ public static void reduceSizePdf(Path inputFile, Path outputFile) throws Excepti
 }
 ```
 
-## Сжать все изображения в PDF
+## Сожмите все изображения в PDF
 
 Используйте этот подход, когда документы с большим количеством изображений требуют меньшего размера файла, и небольшое ухудшение качества изображений допустимо.
 
@@ -100,7 +100,7 @@ public static void removingUnusedObjects(Path inputFile, Path outputFile) throws
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Настройте [ОпцииОптимизации](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) для удаления неиспользуемых потоков.
-1. Оптимизировать ресурсы, сохранить выходной документ и сравнить размеры файлов.
+1. Оптимизируйте ресурсы, сохранить выходной документ и сравнить размеры файлов.
 
 ```java
 public static void removingUnusedStreams(Path inputFile, Path outputFile) throws Exception {
@@ -114,13 +114,13 @@ public static void removingUnusedStreams(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Связывать дублирующие потоки в PDF
+## Связывайте дублирующие потоки в PDF
 
 В этом примере происходит дедупликация повторяющихся потоков, чтобы одинаковый контент мог храниться только один раз.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [ОпцииОптимизации](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) и включить связывание дублирующих потоков.
-1. Оптимизировать ресурсы, сохранить документ вывода и вывести размеры файлов.
+1. Оптимизируйте ресурсы, сохранить документ вывода и вывести размеры файлов.
 
 ```java
 public static void linkingDuplicateStreams(Path inputFile, Path outputFile) throws Exception {
@@ -154,12 +154,12 @@ public static void unembedFonts(Path inputFile, Path outputFile) throws Exceptio
 }
 ```
 
-## Фиксировать аннотации в PDF
+## Фиксируйте аннотации в PDF
 
 Этот пример преобразует аннотации в статическое содержимое страницы, поэтому они больше не остаются интерактивными объектами.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Перебрать каждый [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и его [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) коллекция.
+1. Переберите каждый [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и его [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) коллекция.
 1. Свести все аннотации в плоский вид и сохранить обновлённый документ.
 
 ```java
@@ -175,13 +175,13 @@ public static void flattenAnnotations(Path inputFile, Path outputFile) {
 }
 ```
 
-## Уплощить поля формы PDF
+## Уплощите поля формы PDF
 
 Используйте этот подход, когда заполняемые поля формы должны стать фиксированным содержимым перед распределением или архивированием.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Проверьте, содержит ли документ виджеты формы.
-1. Уплощить каждый [Поле](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) представлен(а) a [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. Уплощите каждый [Поле](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) представлен(а) a [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
 1. Сохраните выходной файл и выведите размеры файлов.
 
 ```java
@@ -205,7 +205,7 @@ public static void flattenForms(Path inputFile, Path outputFile) throws Exceptio
 Этот пример переводит каждую страницу в градации серого, что может помочь уменьшить сложность цвета и стандартизировать вывод для архивных или печатных рабочих процессов.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Перебрать каждый [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документе.
+1. Переберите каждый [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документе.
 1. Вызовите `makeGrayscale()` на каждой странице и сохранить выходной файл.
 
 ```java
@@ -238,7 +238,7 @@ public static void usingFlatedecodeCompression(Path inputFile, Path outputFile) 
 }
 ```
 
-## Показать оригинальные и оптимизированные размеры файлов
+## Покажите оригинальные и оптимизированные размеры файлов
 
 Этот вспомогательный метод сообщает о разнице в размере между исходным файлом и оптимизированным выходным файлом.
 

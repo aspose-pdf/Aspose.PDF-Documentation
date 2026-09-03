@@ -33,7 +33,7 @@ pdf.save(data_dir + "Converted_Excel.xls", excelsave)
 puts "Document has been converted successfully"
 ```
 
-## Скачать исполняемый код
+## Скачайте исполняемый код
 
 СкачатьВ **Convert PDF to DOC or DOCX (Aspose.PDF)**В изВ любого из нижеупомянутых сайтов для совместной разработки:
 

@@ -15,7 +15,7 @@ Abstract: Эта страница описывает текущий масшта
 ---
 Текущий репозиторий Java не включает отдельный пример подписания смарт-картой, основанный на исходных данных, под `facades/pdffilesignature`, но следующий рабочий процесс показывает типичный шаблон API для подписи PDF с сертификатом, выбранным из локального хранилища сертификатов.
 
-## Подписать PDF‑документ со смарт‑карты
+## Подпишите PDF‑документ со смарт‑карты
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade и привязать исходный PDF‑документ.

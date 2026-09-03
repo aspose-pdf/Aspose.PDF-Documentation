@@ -12,7 +12,7 @@ Abstract: В этой статье объясняется, как обменив
 ---
 Aspose.PDF for Java поддерживает несколько распространённых форматов обмена данными для интерактивных форм.
 
-## Импортировать данные формы из XML
+## Импортируйте данные формы из XML
 
 Используйте этот пример, когда значения формы хранятся в XML‑файле и их нужно применить к PDF‑форме.
 
@@ -39,7 +39,7 @@ public static void importDataFromXml(Path inputFile, Path dataFile, Path outputF
 
 1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) обертка и привязка исходного PDF.
 1. Откройте поток вывода для XML‑файла.
-1. Экспортировать данные формы в XML.
+1. Экспортируйте данные формы в XML.
 
 ```java
 public static void exportDataToXml(Path inputFile, Path outputFile) throws Exception {
@@ -53,7 +53,7 @@ public static void exportDataToXml(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Импортировать данные формы из FDF
+## Импортируйте данные формы из FDF
 
 Используйте этот пример, когда значения формы приходят в формате обмена FDF.
 
@@ -74,7 +74,7 @@ public static void importDataFromFdf(Path inputFile, Path dataFile, Path outputF
 }
 ```
 
-## Экспортировать данные формы в FDF
+## Экспортируйте данные формы в FDF
 
 Используйте этот пример, когда значения формы PDF должны быть переданы в виде файла FDF.
 
@@ -94,7 +94,7 @@ public static void exportDataToFdf(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Импортировать данные формы из XFDF
+## Импортируйте данные формы из XFDF
 
 Используйте этот пример, когда данные формы предоставлены в формате XFDF и их необходимо объединить с PDF.
 
@@ -115,13 +115,13 @@ public static void importDataFromXfdf(Path inputFile, Path dataFile, Path output
 }
 ```
 
-## Экспортировать данные формы в XFDF
+## Экспортируйте данные формы в XFDF
 
 Используйте этот пример, когда вам нужен XML‑основной файл обмена для значений AcroForm.
 
 1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) обертка и привязка исходного PDF.
 1. Откройте выходной поток для файла XFDF.
-1. Экспортировать текущие значения формы в XFDF.
+1. Экспортируйте текущие значения формы в XFDF.
 
 ```java
 public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exception {
@@ -140,7 +140,7 @@ public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exce
 Используйте этот пример, когда значения формы должны быть экспортированы в легковесное представление JSON.
 
 1. Откройте PDF с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
-1. Итерировать имена полей и сериализовать их значения в JSON‑текст.
+1. Итерируйте имена полей и сериализовать их значения в JSON‑текст.
 1. Запишите содержимое JSON в целевой файл.
 
 ```java

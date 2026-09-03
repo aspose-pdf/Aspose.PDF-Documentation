@@ -31,7 +31,7 @@ puts "xmp:Nickname: " + doc.getMetadata().get_Item("xmp:Nickname").to_s
 puts "xmp:CustomProperty: " + doc.getMetadata().get_Item("xmp:CustomProperty").to_s
 ```
 
-## Скачать запущенный код
+## Скачайте запущенный код
 
 Скачать **Получить XMP Metadata (Aspose.PDF)** из любого из перечисленных ниже социальных площадок для разработки:
 

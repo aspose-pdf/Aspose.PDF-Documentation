@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как конверт
 ---
 Aspose.PDF for Java поддерживает преобразование из форматов документов, разметки и описания страниц в PDF.
 
-## Конвертировать OFD в PDF
+## Конвертируйте OFD в PDF
 
 Используйте этот пример, когда документ OFD должен быть преобразован в PDF.
 
@@ -49,7 +49,7 @@ public static void convertTexToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PostScript в PDF
+## Конвертируйте PostScript в PDF
 
 Используйте этот пример, когда файл PostScript должен быть преобразован в документ PDF.
 
@@ -83,7 +83,7 @@ public static void convertEpsToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать EPUB в PDF
+## Конвертируйте EPUB в PDF
 
 Используйте этот пример, когда EPUB‑книга должна быть преобразована в PDF.
 
@@ -139,13 +139,13 @@ public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Конвертировать текст в PDF с расширенными параметрами
+## Конвертируйте текст в PDF с расширенными параметрами
 
 Используйте этот пример, когда обычный текст должен быть преобразован с дополнительными параметрами макета или кодировки.
 
 1. Прочитайте все строки текста из входного файла, чтобы можно было проверить маркеры разрыва страниц во время конвертации.
 1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и настройте каждый [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) с полями и состоянием текста по умолчанию.
-1. Разрешить моноширинный шрифт через [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) и добавить каждую строку как [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. Разрешите моноширинный шрифт через [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) и добавить каждую строку как [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. Сохраните выходной файл после завершения цикла построения страниц.
 
 ```java
@@ -180,7 +180,7 @@ public static void convertTxtToPdf(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Конвертировать PCL в PDF
+## Конвертируйте PCL в PDF
 
 Используйте этот пример, когда поток печати PCL должен быть преобразован в PDF.
 

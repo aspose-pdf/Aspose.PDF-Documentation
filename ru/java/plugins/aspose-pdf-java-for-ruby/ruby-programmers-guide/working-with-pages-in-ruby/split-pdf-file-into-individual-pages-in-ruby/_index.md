@@ -49,7 +49,7 @@ end
 puts "Split process completed successfully!"
 ```
 
-## Скачать исполняющий код
+## Скачайте исполняющий код
 
 Скачать **Split Pages (Aspose.PDF)**В изВ любого из указанных ниже сайтов совместной разработки:
 

@@ -33,7 +33,7 @@ pdf.save(data_dir+ "output.pdf")
 puts "Empty page added successfully!"
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 Скачать **Insert an Empty Page (Aspose.PDF)** из любого из перечисленных ниже сайтов для совместной разработки:
 

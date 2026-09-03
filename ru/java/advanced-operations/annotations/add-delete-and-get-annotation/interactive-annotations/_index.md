@@ -21,7 +21,7 @@ Abstract: В этой статье объясняется, как работат
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Найдите целевой фрагмент текста и создайте [Аннотация ссылки](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) над его прямоугольником.
-1. Назначить [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) и сохраните обновлённый документ.
+1. Назначьте [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) и сохраните обновлённый документ.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -46,8 +46,8 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 Этот пример сканирует коллекцию аннотаций страницы и сообщает местоположение каждой аннотации ссылки.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Перебрать аннотации на целевой странице.
-1. Фильтровать аннотации по [Тип аннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` и вывести их прямоугольники.
+1. Переберите аннотации на целевой странице.
+1. Фильтруйте аннотации по [Тип аннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` и вывести их прямоугольники.
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -66,7 +66,7 @@ public static void linkGet(Path inputFile) {
 Используйте этот подход, когда необходимо удалить существующие аннотации ссылок со страницы.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Собрать аннотации, тип которых [Тип аннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
+1. Соберите аннотации, тип которых [Тип аннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
 1. Удалите собранные аннотации и сохраните выходной файл.
 
 ```java

@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java поддерживает экспорт страниц PDF в редактируемые презентации PowerPoint с параметрами рендеринга слайдов. Используйте [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) для управления тем, как страницы PDF сопоставляются со слайдами PowerPoint.
 
-## Конвертировать PDF в PPTX
+## Конвертируйте PDF в PPTX
 
 Используйте этот пример, когда PDF‑документ должен быть экспортирован как стандартная презентация PowerPoint.
 
@@ -34,7 +34,7 @@ public static void convertPdfToPptx(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертировать PDF в PPTX, где слайды являются изображениями
+## Конвертируйте PDF в PPTX, где слайды являются изображениями
 
 Используйте этот пример, когда каждая страница PDF должна стать слайдом PowerPoint на основе изображения.
 

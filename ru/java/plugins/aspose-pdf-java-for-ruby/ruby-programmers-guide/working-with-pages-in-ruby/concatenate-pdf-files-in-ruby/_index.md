@@ -37,7 +37,7 @@ pdf1.save(data_dir+ "Concatenate_output.pdf")
 puts "New document has been saved, please check the output file"
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
 СкачатьВ\u00A0**Concatenate PDF Files (Aspose.PDF)**В\u00A0из любого из указанных ниже сайтов с социальным кодированием:
 

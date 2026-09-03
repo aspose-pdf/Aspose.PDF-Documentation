@@ -53,8 +53,8 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 Этот пример сканирует страницу и выводит прямоугольник каждой текстовой аннотации.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Итерировать аннотации на странице.
-1. Фильтровать аннотации по [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` и распечатать их прямоугольники.
+1. Итерируйте аннотации на странице.
+1. Фильтруйте аннотации по [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` и распечатать их прямоугольники.
 
 ```java
 public static void textAnnotationGet(Path inputFile) {
@@ -73,7 +73,7 @@ public static void textAnnotationGet(Path inputFile) {
 Используйте этот подход, когда существующие текстовые аннотации следует удалить из документа.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Собрать аннотации типа [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. Соберите аннотации типа [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
 1. Удалите собранные аннотации и сохраните файл вывода.
 
 ```java
@@ -128,8 +128,8 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 Этот пример читает существующие аннотации caret и выводит их расположения.
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Итерировать по аннотациям страницы.
-1. Фильтровать аннотации по [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` и распечатать их прямоугольники.
+1. Итерируйте по аннотациям страницы.
+1. Фильтруйте аннотации по [ТипАннотации](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` и распечатать их прямоугольники.
 
 ```java
 public static void caretAnnotationsGet(Path inputFile) {
@@ -177,7 +177,7 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте аннотацию caret и связанные с ней [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
-1. Связать аннотации через `setInReplyTo` и `setReplyType`, затем сохраните документ.
+1. Свяжите аннотации через `setInReplyTo` и `setReplyType`, затем сохраните документ.
 
 ```java
 public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {

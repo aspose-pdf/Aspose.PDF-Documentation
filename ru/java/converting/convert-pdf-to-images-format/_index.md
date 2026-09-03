@@ -15,13 +15,13 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java может визуализировать страницы PDF в растровые и векторные форматы изображений с параметрами устройства, специфичными для формата.
 
-## Конвертировать PDF в BMP
+## Конвертируйте PDF в BMP
 
 Используйте этот пример, когда страницы PDF должны быть отрисованы как BMP‑изображения.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) с [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) с разрешением 300 DPI.
-1. Перебирать `document.getPages()` и вызвать `device.process(...)` для каждой страницы.
+1. Перебирайте `document.getPages()` и вызвать `device.process(...)` для каждой страницы.
 1. Сохраните сгенерированные BMP‑изображения в нумерованные пути вывода.
 
 ```java
@@ -36,13 +36,13 @@ public static void convertPdfToBmp(Path inputFile, Path outputPrefix) {
    }
 ```
 
-## Конвертировать PDF в EMF
+## Конвертируйте PDF в EMF
 
 Используйте этот пример, когда страницы PDF должны экспортироваться в виде векторных изображений EMF.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/) с [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) с разрешением 300 DPI.
-1. Итерировать по страницам и вызвать `device.process(...)` для каждой страницы.
+1. Итерируйте по страницам и вызвать `device.process(...)` для каждой страницы.
 1. Сохраните выводы EMF в пронумерованные пути файлов.
 
 ```java
@@ -63,7 +63,7 @@ public static void convertPdfToEmf(Path inputFile, Path outputPrefix) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) с [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) с разрешением 300 DPI.
-1. Итерировать по страницам и вызвать `device.process(...)` для отрисовки каждой страницы.
+1. Итерируйте по страницам и вызвать `device.process(...)` для отрисовки каждой страницы.
 1. Сохраните GIF‑файлы в нумерованные пути вывода.
 
 ```java
@@ -78,13 +78,13 @@ public static void convertPdfToGif(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Конвертировать PDF в JPEG
+## Конвертируйте PDF в JPEG
 
 Используйте этот пример, когда страницы PDF должны экспортироваться в виде изображений JPEG.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) с [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) с разрешением 300 DPI.
-1. Итерировать по страницам и вызвать `device.process(...)` преобразовать каждую страницу в растр JPEG.
+1. Итерируйте по страницам и вызвать `device.process(...)` преобразовать каждую страницу в растр JPEG.
 1. Сохраните файлы JPEG в пронумерованные пути.
 
 ```java
@@ -105,7 +105,7 @@ public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) с [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) с разрешением 300 DPI.
-1. Итерировать по страницам и вызвать `device.process(...)` для каждой страницы PDF.
+1. Итерируйте по страницам и вызвать `device.process(...)` для каждой страницы PDF.
 1. Сохраните выводы PNG в нумерованные пути файлов.
 
 ```java
@@ -120,13 +120,13 @@ public static void convertPdfToPng(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Конвертировать PDF в PNG с резервным шрифтом по умолчанию
+## Конвертируйте PDF в PNG с резервным шрифтом по умолчанию
 
 Используйте этот пример, когда рендеринг должен использовать резервный шрифт для отсутствующих глифов.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) с [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) с разрешением 300 DPI.
-1. Включить `document.setAbsentFontTryToSubstitute(true)` чтобы отсутствующие глифы могли использовать заменяющие шрифты при рендеринге.
+1. Включите `document.setAbsentFontTryToSubstitute(true)` чтобы отсутствующие глифы могли использовать заменяющие шрифты при рендеринге.
 1. Отрисуйте страницы и сохраните PNG‑файлы.
 
 ```java
@@ -142,13 +142,13 @@ public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPre
 }
 ```
 
-## Конвертировать PDF в SVG
+## Конвертируйте PDF в SVG
 
 Используйте этот пример, когда страницы PDF должны экспортироваться в виде графики SVG.
 
 1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [`SvgSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions/) и отключить сжатие ZIP при raw `.svg` Требуется вывод.
-1. Включить `setTreatTargetFileNameAsDirectory(true)` поэтому вывод SVG по страницам можно организовать в целевом пути.
+1. Включите `setTreatTargetFileNameAsDirectory(true)` поэтому вывод SVG по страницам можно организовать в целевом пути.
 1. Сохраните вывод SVG.
 
 ```java
@@ -163,7 +163,7 @@ public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Конвертировать PDF в TIFF
+## Конвертируйте PDF в TIFF
 
 Используйте этот пример, когда нужно экспортировать одну или несколько страниц PDF в формат TIFF.
 
