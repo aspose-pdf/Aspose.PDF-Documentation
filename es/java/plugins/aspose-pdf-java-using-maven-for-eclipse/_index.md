@@ -111,22 +111,22 @@ Eclipse Juno o posterior.
 ## 
 Descargando
 
-### Download Eclipse IDE
+### Descargar Eclipse IDE
 
 
 
-You will need to first install Eclipse IDE before downloading the Aspose.PDF Java (Maven) for Eclipse plugin.
+Primero debe instalar Eclipse IDE antes de descargar el complemento Aspose.PDF Java (Maven) for Eclipse.
 
 
 
-To download Eclipse IDE
+Para descargar Eclipse IDE
 
 
 1. 
 Go to [https://eclipse.org](https://eclipse.org/).
 
 1. 
-Download and install the recommended Eclipse IDE for Java SE / EE developers.
+Descargue e instale Eclipse IDE recomendado para desarrolladores de Java SE / EE.
 
 ### Descargar Aspose.PDF Java (Maven) para Eclipse
 
