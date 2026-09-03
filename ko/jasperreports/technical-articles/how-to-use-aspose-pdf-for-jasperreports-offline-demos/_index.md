@@ -27,7 +27,7 @@ JasperReports 데모를 위해 Aspose.PDF를 실행하려면:
 5. <http://ant.apache.org/bindownload.cgi>.에서 ANT 도구를 다운로드하세요.
 6. ANT 도구의 압축을 풀고 도구 설명서에 설명된 대로 환경 변수를 설정합니다.
 7. 현재 디렉터리를 ```<InstallDir>```\demo\hsqldb로 변경하고 다음 명령줄을 실행합니다:
-   개미 실행 서버
+   `ant runServer`
 8. 새 명령 프롬프트 인스턴스를 열고 현재 디렉터리를 JasperReports 데모용 Aspose.PDF 중 하나로 변경합니다(예: ```<InstallDir>```\demo\samples\charts.ap).
 9. 명령줄에서 다음 명령을 실행합니다.
 10. ant javac – 테스트 애플리케이션의 Java 소스 파일을 컴파일합니다.
