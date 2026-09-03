@@ -29,9 +29,8 @@ A continuación se encuentran los enlaces a algunos recursos útiles que puede n
 - [Características de Aspose.PDF for SharePoint](/pdf/es/sharepoint/features/)
 - [Notas de la versión de Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 - [Descargar Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/)
-- [Instalar Aspose.PDF for SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
-- [Evaluar Aspose.PDF](/pdf/sharepoint/evaluate-aspose-pdf/)
-- [Licenciar Aspose.PDF for SharePoint](/pdf/sharepoint/evaluate-aspose-pdf/)
-- [Licenciar Aspose.PDF for SharePoint](/pdf/sharepoint/evaluate-aspose-pdf/) [Limitaciones de la API](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)
-- [Limitaciones de la API](/pdf/sharepoint/api-limitations/)
+- [Instalar Aspose.PDF for SharePoint](/pdf/es/sharepoint/install-aspose-pdf-for-sharepoint/)
+- [Evaluar Aspose.PDF](/pdf/es/sharepoint/evaluate-aspose-pdf/)
+- [Licenciar Aspose.PDF for SharePoint](/pdf/es/sharepoint/license-aspose-pdf-for-sharepoint/)
+- [Limitaciones de la API](/pdf/es/sharepoint/api-limitations/)
 
