@@ -4,7 +4,7 @@ linktitle: 支持的文件格式
 type: docs
 weight: 20
 url: /zh/jasperreports/supported-file-formats/
-description: Learn about supported file formats in Aspose.PDF for JasperReports. Export reports to PDF, XPS, DOC, and more.
+description: 了解 Aspose.PDF for JasperReports 支持的文件格式。将报告导出为 PDF、XPS、DOC 等。
 lastmod: "2026-08-31"
 ---
 
