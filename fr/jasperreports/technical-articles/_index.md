@@ -1,5 +1,5 @@
 ﻿---
-title: Technical Articles
+title: Articles techniques
 linktitle: Articles techniques
 type: docs
 weight: 90
