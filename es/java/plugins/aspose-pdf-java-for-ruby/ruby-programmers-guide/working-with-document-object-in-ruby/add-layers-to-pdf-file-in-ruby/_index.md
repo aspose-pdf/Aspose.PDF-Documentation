@@ -1,19 +1,20 @@
 ---
-title: Añadir Capas al Archivo PDF en Ruby
+title: Agregar capas al archivo PDF en Ruby
+linktitle: Agregar capas al archivo PDF en Ruby
 type: docs
 weight: 20
 url: /es/java/add-layers-to-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Aprenda cómo agregar capas a un archivo PDF en Ruby usando Aspose.PDF para una mejor estructura del documento y control de visibilidad.
+lastmod: "2026-09-03"
 ---
+## Aspose.PDF - Agregar capas
 
-## Aspose.PDF - Añadir Capas
-
-<ins> Para añadir capas en un documento Pdf usando **Aspose.PDF Java para Ruby**, simplemente invoca el módulo **AddLayers**.
+<ins> Para agregar capas en un documento Pdf usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **AddLayers**.
 
 Código Ruby
 
 ```java
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
@@ -23,7 +24,7 @@ page = doc.getPages().add()
 
 operator = Rjb::import('com.aspose.pdf.Operator')
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc1", "Línea Roja")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc1", "Red Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(1, 0, 0))
 
@@ -37,7 +38,7 @@ page.setLayers(Rjb::import('java.util.ArrayList').new)
 
 page.getLayers().add(layer)
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc2", "Línea Verde")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc2", "Green Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(0, 1, 0))
 
@@ -49,7 +50,7 @@ layer.getContents().add(operator.Stroke())
 
 page.getLayers().add(layer)
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc3", "Línea Azul")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc3", "Blue Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(0, 0, 1))
 
@@ -61,16 +62,15 @@ layer.getContents().add(operator.Stroke())
 
 page.getLayers().add(layer)
 
-# Guardar el Documento PDF
+# Save PDF Document
 
 doc.save(data_dir + "Layers-Added.pdf")
 
-puts "Capas añadidas exitosamente, por favor revisa el archivo de salida."
+puts "Added Layers Successfully, please check the output file."
 ```
 
+## Descargar código en ejecución
 
-## Download Running Code
-
-Descargar **Agregar Capas (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DescargarВ **Agregar capas (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)

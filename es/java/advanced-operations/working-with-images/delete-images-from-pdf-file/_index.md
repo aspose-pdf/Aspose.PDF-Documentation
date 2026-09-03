@@ -1,64 +1,29 @@
 ---
-title: Eliminar Imágenes de un Archivo PDF
-linktitle: Eliminar Imágenes
+title: Eliminar imágenes de archivo PDF usando Java
+linktitle: Eliminar imágenes
 type: docs
 weight: 20
 url: /es/java/delete-images-from-pdf-file/
-description: Esta sección explica cómo eliminar imágenes de un archivo PDF usando Aspose.PDF para Java.
-lastmod: "2021-06-05"
+description: Aprenda cómo eliminar imágenes incrustadas de archivos PDF en Java.
+lastmod: "2026-09-03"
+TechArticle: true
+AlternativeHeadline: Eliminar imágenes incrustadas de archivos PDF con Java
+Abstract: Este artículo muestra cómo eliminar imágenes de documentos PDF usando Aspose.PDF for Java. El ejemplo elimina un recurso de imagen de la primera página por su índice en la colección de imágenes de la página y luego guarda el documento modificado.
 ---
+Utilice la colección de recursos de imágenes de la página cuando necesite eliminar imágenes incrustadas de una página PDF.
 
-Para eliminar una imagen de un archivo PDF, simplemente use el método delete(..) de la colección Images.
+## Eliminar una imagen incrustada por índice
 
-1. Cree un objeto Document y abra el archivo PDF de entrada.
-1. Obtenga la página que contiene la imagen de la colección [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) del objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Las imágenes se encuentran en la colección Images, que se encuentra en la colección [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) de la página.
-1. Elimine una imagen con el método Delete de la colección Images.
-1. Guarde el resultado utilizando el método Save del objeto Document.
-
-El siguiente fragmento de código muestra cómo eliminar una imagen de un archivo PDF.
+1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Acceder a los recursos de imagen en el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Eliminar la imagen del objetivo de la colección de recursos de la página por su índice.
+1. Guarda el PDF actualizado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.Color;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.FontRepository;
-import com.aspose.pdf.FontStyles;
-import com.aspose.pdf.HorizontalAlignment;
-import com.aspose.pdf.PageNumberStamp;
-
-public class ExampleDeleteImages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ExampleAddPageNumber() {
-
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "PageNumberStamp.pdf");
-
-        // Crear sello de número de página
-        PageNumberStamp pageNumberStamp = new PageNumberStamp();
-
-        // Si el sello es de fondo
-        pageNumberStamp.setBackground(false);
-        pageNumberStamp.setFormat("Page # of " + pdfDocument.getPages().size());
-        pageNumberStamp.setBottomMargin (10);
-        pageNumberStamp.setHorizontalAlignment ( HorizontalAlignment.Center);
-        pageNumberStamp.setStartingNumber(1);
-        // Establecer propiedades de texto
-        pageNumberStamp.getTextState().setFont (FontRepository.findFont("Arial"));
-        pageNumberStamp.getTextState().setFontSize (14.0F);
-        pageNumberStamp.getTextState().setFontStyle (FontStyles.Bold);        
-        pageNumberStamp.getTextState().setForegroundColor (Color.getAqua());
-
-        // Añadir sello a una página en particular
-        pdfDocument.getPages().get_Item(1).addStamp(pageNumberStamp);
-
-        _dataDir = _dataDir + "PageNumberStamp_out.pdf";
-        // Guardar documento de salida
-        pdfDocument.save(_dataDir);
-
+public static void deleteImage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().get_Item(1).getResources().getImages().delete(1);
+        document.save(outputFile.toString());
     }
 }
 ```

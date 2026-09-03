@@ -1,16 +1,24 @@
 ---
-title: PdfFileSignature Class
+title: Clase PdfFileSignature
+linktitle: Clase PdfFileSignature
 type: docs
-weight: 70
+weight: 60
 url: /es/java/pdffilesignature-class/
-description: Esta sección explica cómo trabajar con Aspose.PDF Facades usando la clase PdfFileSignature.
-lastmod: "2021-06-05"
+description: Aprenda cómo usar la fachada PdfFileSignature en Java para firmar, certificar, inspeccionar, verificar, extraer y eliminar firmas PDF.
+lastmod: "2026-09-03"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Firme, certifique e inspeccione firmas PDF en Java con PdfFileSignature
+Abstract: Esta sección explica cómo usar la fachada PdfFileSignature en Aspose.PDF for Java para flujos de trabajo de firmas digitales. Los ejemplos actuales en Java cubren la firma con un certificado o un objeto PKCS7, la certificación de un PDF con permisos DocMDP, la lectura de los detalles de la firma, la verificación de firmas, la extracción del certificado de firma y la eliminación de una firma.
 ---
+El Java `PdfFileSignatureExamples` La clase demuestra los principales flujos de trabajo de firma disponibles a través de la API de Facades.
 
-- [Agregar Firma en Archivo PDF](/pdf/es/java/add-signature-in-pdf/)
-- [Eliminar Firma de Archivo PDF](/pdf/es/java/remove-signature-from-pdf/)
-- [Verificar Firma en Archivo PDF](/pdf/es/java/verify-signature-in-pdf/)
-- [Trabajando con Firmas en Archivo PDF](/pdf/es/java/add-signature-in-pdf/)
+Utilice esta sección para aprender cómo:
+
+- firmar y certificar documentos PDF
+- inspeccionar nombres de firmas, detalles del firmante y marcas de tiempo
+- verificar la validez de la firma y la cobertura de todo el documento
+- extraer un certificado de firma y eliminar una firma existente

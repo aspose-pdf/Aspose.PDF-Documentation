@@ -1,40 +1,41 @@
 ---
-title: Obtener una Página Particular en un Archivo PDF en PHP
+title: Obtener una página concreta en un archivo PDF en PHP
+linktitle: Obtener una página concreta en un archivo PDF en PHP
 type: docs
 weight: 30
 url: /es/java/get-a-particular-page-in-a-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: Aprenda cómo recuperar una página concreta de un archivo PDF en PHP usando Aspose.PDF para el procesamiento de páginas específicas.
+lastmod: "2026-09-03"
 ---
+## Aspose.PDF - Obtener página
 
-## Aspose.PDF - Obtener Página
-
-Para obtener una Página Particular en un documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoca la clase **GetPage**.
+Para obtener una página concreta en un documento PDF usando **Aspose.PDF Java for Ruby**, simplemente invoque la clase **GetPage**.
 
 Código Ruby
 
 ```php
 
-# Abrir el documento objetivo
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# obtener la página en un índice particular de la Colección de Páginas
+# get the page at particular index of Page Collection
 $pdf_page = $pdf->getPages()->get_Item(1);
 
-# crear un nuevo objeto Document
+# create a new Document object
 $new_document = new Document();
 
-# añadir página a la colección de páginas del nuevo objeto documento
+# add page to pages collection of new document object
 $new_document->getPages()->add($pdf_page);
 
-# guardar el archivo PDF recién generado
+# save the newly generated PDF file
 $new_document->save($dataDir . "output.pdf");
 
-print "¡Proceso completado con éxito!";
+print "Process completed successfully!";
 
 ```
 
-## Descargar Código en Ejecución
+## Descargar código en ejecución
 
-Descargar **Obtener Página (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+Descargar **Get Page (Aspose.PDF)**\u0412\u00A0de\u0412\u00A0cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPage.php)

@@ -1,146 +1,110 @@
 ---
-title: Trabajando con Metadatos de Archivos PDF
-linktitle: Metadatos de Archivos PDF
+title: Trabajar con metadatos de archivos PDF en Java
+linktitle: Metadatos de archivos PDF
 type: docs
-weight: 140
+weight: 200
 url: /es/java/pdf-file-metadata/
-description: Esta sección explica cómo obtener información de archivos PDF, cómo obtener Metadatos XMP de un archivo PDF, establecer Información de Archivos PDF.
-lastmod: "2021-06-05"
+description: Aprenda cómo extraer, actualizar y administrar los metadatos de archivos PDF, la información del documento y las propiedades XMP en Java usando Aspose.PDF.
+lastmod: "2026-09-03"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Obtener y establecer la información del documento PDF y los metadatos XMP en Java
+Abstract: Este artículo explica cómo trabajar con los metadatos de PDF usando Aspose.PDF for Java. Aprende cómo leer la información del documento como autor, título y palabras clave, actualizar las propiedades del archivo, inspeccionar la versión y los privilegios del PDF, establecer campos de metadatos XMP y guardar los metadatos tanto a través de la API DOM como de la API de fachada.
 ---
+Aspose.PDF for Java ofrece dos formas principales de trabajar con metadatos:
 
-## Obtener Información del Archivo PDF
+- La API DOM a través `Document`, `DocumentInfo`, y `document.getMetadata()`.
+- La API de fachada a través `PdfFileInfo`.
 
-Para obtener información específica de un archivo sobre un archivo PDF, primero obtenga el objeto [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo) usando la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) [getInfo()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getInfo--). Una vez que se recupera el objeto [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo), puede obtener los valores de las propiedades individuales.
+## Obtener información del archivo PDF
 
-El siguiente fragmento de código muestra cómo establecer la información del archivo PDF.
+Utilice este ejemplo cuando necesite leer los campos de información estándar del documento, como autor, título, asunto o palabras clave.
+
+1. Abrir el PDF fuente [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Acceder al [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) objeto.
+1. Lea los campos de metadatos requeridos y muestre sus valores.
 
 ```java
-public class ExampleMetadata {
+public static void getPdfFileInformation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocumentInfo docInfo = document.getInfo();
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Metadata/";
-
-    public static void GetPDFFileInformation() {
-        // Crear un nuevo documento PDF
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-        // Obtener información del documento
-        DocumentInfo docInfo = pdfDocument.getInfo();
-        // Mostrar información del documento
-        System.out.println("Autor: " + docInfo.getAuthor());
-        System.out.println("Fecha de Creación: " + docInfo.getCreationDate());
-        System.out.println("Palabras Clave: " + docInfo.getKeywords());
-        System.out.println("Fecha de Modificación: " + docInfo.getModDate());
-        System.out.println("Asunto: " + docInfo.getSubject());
-        System.out.println("Título: " + docInfo.getTitle());
+        System.out.println("Author: " + docInfo.getAuthor());
+        System.out.println("Creation Date: " + docInfo.getCreationDate());
+        System.out.println("Keywords: " + docInfo.getKeywords());
+        System.out.println("Modify Date: " + docInfo.getModDate());
+        System.out.println("Subject: " + docInfo.getSubject());
+        System.out.println("Title: " + docInfo.getTitle());
     }
+}
 ```
 
+## Establecer metadatos con un prefijo de espacio de nombres
 
-## Establecer Información del Archivo PDF
+Utilice este ejemplo cuando necesite agregar o actualizar una propiedad XMP usando un prefijo de espacio de nombres registrado.
 
-Aspose.PDF para Java te permite establecer información específica del archivo para un PDF, como autor, fecha de creación, asunto y título.
-
-Para establecer esta información:
-
-1. Crea un objeto [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo).
-1. Establece los valores de las propiedades.
-1. Guarda el documento actualizado usando el método [save()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) de la clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-{{% alert color="primary" %}}
-
-Por favor, ten en cuenta que no puedes establecer valores para los campos **Producer** y **Creator**, porque Aspose.PDF para Java x.x.x se mostrará en estos campos.
-
-{{% /alert %}}
-
-El siguiente fragmento de código te muestra cómo establecer la información del archivo PDF.
+1. Abrir el PDF fuente [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Registre el espacio de nombres XMP requerido y agregue el elemento de metadatos.
+1. Guarde el documento actualizado.
 
 ```java
- public static void SetPDFFileInformation() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
+public static void setPrefixMetadata(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getMetadata().registerNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
+        document.getMetadata().addItem("xmp:ModifyDate", OffsetDateTime.now().toString());
+        document.save(outputFile.toString());
+    }
+    System.out.println("Prefix metadata saved to " + outputFile);
+}
+```
 
-        // Especificar información del documento
-        DocumentInfo docInfo = new DocumentInfo(pdfDocument);
+## Actualizar campos de información del documento
+
+Utilice este ejemplo cuando desee escribir propiedades estándar de archivo PDF como autor, título, productor o fecha de creación.
+
+1. Abrir el PDF fuente [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Acceso [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) y asigne nuevos valores de metadatos.
+1. Guarde el documento con la información de archivo actualizada.
+
+```java
+public static void setFileInformation(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocumentInfo docInfo = document.getInfo();
+        Date now = new Date();
 
         docInfo.setAuthor("Aspose");
-        docInfo.setCreationDate(new java.util.Date());
+        docInfo.setCreationDate(now);
         docInfo.setKeywords("Aspose.Pdf, DOM, API");
-        docInfo.setModDate(new java.util.Date());
-        docInfo.setSubject("Información del PDF");
-        docInfo.setTitle("Estableciendo Información del Documento PDF");
+        docInfo.setModDate(now);
+        docInfo.setSubject("PDF Information");
+        docInfo.setTitle("Setting PDF Document Information");
+        docInfo.setProducer("Custom producer");
+        docInfo.setCreator("Custom creator");
 
-        // Guardar documento de salida
-        pdfDocument.save(_dataDir + "SetFileInfo_out.pdf");
+        document.save(outputFile.toString());
     }
+    System.out.println("File information saved to " + outputFile);
+}
 ```
 
+## Establecer propiedades de metadatos XMP
 
-## Obtener Metadatos XMP de un Archivo PDF
+Utilice este ejemplo cuando necesite almacenar entradas XMP adicionales, incluidos valores de metadatos personalizados.
 
-Aspose.PDF para Java te permite acceder a los metadatos XMP de un archivo PDF.
-
-Para obtener los metadatos de un archivo PDF,
-
-1. Crea un objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) y abre el archivo PDF de entrada.
-1. Usa la propiedad [getMetadata()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getMetadata--) para obtener los metadatos.
-
-El siguiente fragmento de código te muestra cómo obtener los metadatos del archivo PDF.
+1. Abrir el PDF fuente [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar los elementos de metadatos XMP requeridos a través de `document.getMetadata()`.
+1. Guarde el archivo de salida.
 
 ```java
-   public static void GetXMPMetadata() {
-
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "SetXMPMetadata.pdf");
-
-        System.out.println("xmp:CreateDate: " + pdfDocument.getMetadata().get_Item("xmp:CreateDate"));
-        System.out.println("xmp:Nickname: " + pdfDocument.getMetadata().get_Item("xmp:Nickname"));
-        System.out.println("xmp:CustomProperty: " + pdfDocument.getMetadata().get_Item("xmp:CustomProperty"));
-
+public static void setXmpMetadata(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getMetadata().addItem("xmp:CreateDate", OffsetDateTime.now().toString());
+        document.getMetadata().addItem("xmp:Nickname", "Nickname");
+        document.getMetadata().addItem("xmp:CustomProperty", "Custom Value");
+        document.save(outputFile.toString());
     }
-```
-
-## Establecer Metadatos XMP en un Archivo PDF
-
-Aspose.PDF para Java te permite establecer metadatos en un archivo PDF.
- Para establecer metadatos:
-
-1. Cree un objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Establezca valores de metadatos utilizando la propiedad [getMetadata()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getMetadata--).
-1. Guarde el documento actualizado usando el método [save()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) del objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-El siguiente fragmento de código le muestra cómo establecer metadatos en un archivo PDF.
-
-```java
-    public static void SetXMPMetadata() {
-
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-        // Establecer propiedades
-        pdfDocument.getMetadata().set_Item("xmp:CreateDate", new XmpValue(new java.util.Date()));
-        pdfDocument.getMetadata().set_Item("xmp:Nickname", new XmpValue("Nickname"));
-        pdfDocument.getMetadata().set_Item("xmp:CustomProperty", new XmpValue("Custom Value"));
-
-        // Guardar documento
-        pdfDocument.save(_dataDir + "SetXMPMetadata.pdf");
-    }
-```
-
-## Insertar Metadatos con Prefijo
-
-Algunos desarrolladores necesitan crear un nuevo espacio de nombres de metadatos con un prefijo. El siguiente fragmento de código muestra cómo insertar metadatos con prefijo.
-
-```java
-    public static void InsertMetadataWithPrefix() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "SetXMPMetadata.pdf");
-        pdfDocument.getMetadata().registerNamespaceUri("adc", "http://tempuri.org/adc/1.0");
-        pdfDocument.getMetadata().set_Item("adc:format", new XmpValue("application/pdf"));
-        pdfDocument.getMetadata().set_Item("adc:title", new XmpValue("alternative title"));        
-        // Guardar documento
-        pdfDocument.save(_dataDir + "SetPrefixMetadata_out.pdf");
-    }
+    System.out.println("XMP metadata saved to " + outputFile);
 }
 ```

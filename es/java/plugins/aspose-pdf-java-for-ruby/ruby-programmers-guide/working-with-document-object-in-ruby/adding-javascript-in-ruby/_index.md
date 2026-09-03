@@ -1,52 +1,52 @@
 ---
-title: Adding JavaScript in Ruby
+title: Agregar JavaScript en Ruby
+linktitle: Agregar JavaScript en Ruby
 type: docs
 weight: 10
 url: /es/java/adding-javascript-in-ruby/
-lastmod: "2021-06-05"
+description: Habilite la funcionalidad de JavaScript en PDFs usando Aspose.PDF en Ruby para interactividad y automatización.
+lastmod: "2026-09-03"
 ---
+## Aspose.PDF - Agregando JavaScript
 
-## Aspose.PDF - Añadiendo JavaScript
-
-Para agregar JavaScript en un documento Pdf usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **AddJavaScript**.
+Para agregar JavaScript en un documento PDF usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **AddJavaScript**.
 
 Código Ruby
 
 ```java
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abrir un documento pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Añadiendo JavaScript a nivel de documento
+# Adding JavaScript at Document Level
 
-# Instanciar JavascriptAction con la declaración de JavaScript deseada
+# Instantiate JavascriptAction with desried JavaScript statement
 
 javaScript = Rjb::import('com.aspose.pdf.JavascriptAction').new("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
-# Asignar objeto JavascriptAction a la acción deseada del documento
+# Assign JavascriptAction object to desired action of Document
 
 doc.setOpenAction(javaScript)
 
-# Añadiendo JavaScript a nivel de página
+# Adding JavaScript at Page Level
 
 doc.getPages().get_Item(2).getActions().setOnOpen(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('page 2 is opened')"))
 
 doc.getPages().get_Item(2).getActions().setOnClose(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('page 2 is closed')"))
 
-# Guardar documento PDF
+# Save PDF Document
 
 doc.save(data_dir + "JavaScript-Added.pdf")
 
-puts "JavaScript añadido exitosamente, por favor revisa el archivo de salida."
+puts "Added JavaScript Successfully, please check the output file."
 ```
 
+## Descargar código en ejecución
 
-## Descargar Código en Ejecución
-
-Descargue **Adding JavaScript (Aspose.PDF)** desde cualquiera de los siguientes sitios de codificación social:
+DescargarВ **Adding JavaScript (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)

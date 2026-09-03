@@ -1,20 +1,20 @@
 ---
-title: Convertir páginas de PDF a Imágenes en Ruby
+title: Convertir páginas PDF a imágenes en Ruby
+linktitle: Convertir páginas PDF a imágenes en Ruby
 type: docs
 weight: 20
 url: /es/java/convert-pdf-pages-to-images-in-ruby/
-lastmod: "2021-06-05"
+description: Descubra cómo convertir páginas PDF en imágenes usando Ruby con Aspose.PDF, facilitando la extracción de contenido visual de los PDFs.
+lastmod: "2026-09-03"
 ---
+## Aspose.PDF - Convertir páginas PDF a imágenes
 
-## Aspose.PDF - Convertir páginas de PDF a Imágenes
-
-Para convertir todas las Páginas a Imágenes de un documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoca el módulo **ConvertPagesToImages**.
+Para convertir todas las páginas de un documento PDF a imágenes usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **ConvertPagesToImages**.
 
 Código Ruby
 
 ```java
-
-# La ruta al directorio de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
@@ -32,17 +32,17 @@ image_format_internal = Rjb::import('com.aspose.pdf.ImageFormatInternal')
 
 while converter.hasNextImage()
 
-    converter.getNextImage(data_dir + "image#{image_count}#{suffix}", image_format_internal.getJpeg())
+В В В  converter.getNextImage(data_dir + "image#{image_count}#{suffix}", image_format_internal.getJpeg())
 
-    image_count +=1
+В В В  image_count +=1
 
 end
 
-puts "¡Las páginas del PDF se han convertido en imágenes individuales con éxito!"
+puts "PDF pages are converted to individual images successfully!"
 ```
 
-## Descargar Código en Ejecución
+## Descargar código en ejecución
 
-Descarga **Convertir páginas de PDF a Imágenes (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DescargarВ **Convert PDF pages to Images (Aspose.PDF)**В desdeВ cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/convertpagestoimages.rb)

@@ -1,207 +1,200 @@
 ---
-title: Convertir archivo PDF a formato HTML
-linktitle: Convertir archivo PDF a formato HTML
+title: Convertir PDF a HTML en Java
+linktitle: Convertir PDF a formato HTML
 type: docs
 weight: 50
 url: /es/java/convert-pdf-to-html/
-lastmod: "2021-11-19"
-description: Este tema muestra cómo Aspose.PDF permite convertir un archivo PDF a formato HTML con la biblioteca Java.
+lastmod: "2026-09-03"
+description: Aprenda cómo convertir PDF a HTML en Java con Aspose.PDF, incluyendo salida de varias páginas, carpetas externas de imágenes, manejo de SVG y renderizado en capas de HTML.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: Cómo convertir PDF a HTML en Java
+Abstract: Este artículo explica cómo convertir archivos PDF a HTML usando Aspose.PDF for Java. Cubre la exportación básica a HTML junto con opciones para carpetas de imágenes, división de páginas, salida SVG, gráficos SVG comprimidos, fondos de página PNG, marcado solo del cuerpo, renderizado de texto transparente y conversión de capa de documento.
 ---
+Aspose.PDF for Java admite la exportación a HTML con opciones para imágenes, SVG, división de páginas, transparencia y renderizado de capas. Utilice [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) para controlar cómo se escriben las páginas PDF, los recursos y el marcado en la salida HTML.
 
-Aspose.PDF para Java ofrece muchas características para convertir varios formatos de archivo a documentos PDF y convertir archivos PDF en varios formatos de salida. Este artículo discute cómo convertir un archivo PDF en formato HTML y guardar las imágenes del archivo PDF en una carpeta particular.
+## Convertir PDF a HTML
 
-{{% alert color="success" %}}
-**Intenta convertir PDF a HTML en línea**
+Utilice este ejemplo cuando se deba exportar un PDF a un documento HTML estándar.
 
-Aspose.PDF para Java te presenta una aplicación en línea gratuita ["PDF a HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), donde puedes intentar investigar la funcionalidad y calidad con la que trabaja.
-
-[![Aspose.PDF Conversión PDF a HTML con Aplicación Gratuita](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
-
-{{% /alert %}}
-
-Cuando se convierte un archivo PDF grande con varias páginas a formato HTML, el resultado aparece como una sola página HTML. Puede terminar siendo muy largo. Para controlar el tamaño de la página, es posible dividir la salida en varias páginas durante la conversión de PDF a HTML.
-
-## Convertir páginas PDF a HTML
-
-Aspose.PDF para Java proporciona muchas características para convertir varios formatos de archivos a documentos PDF y convertir archivos PDF en varios formatos de salida. Este artículo discute cómo convertir un archivo PDF a formato HTML y guardar las imágenes del archivo PDF en una carpeta particular.
-
-El siguiente fragmento de código te muestra todas las opciones posibles que puedes usar al convertir PDF a HTML.
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear predeterminado [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) para la serialización HTML estándar.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` por lo que el contenido de la página PDF se exporta como marcado HTML.
+1. Guarda la salida HTML generada.
 
 ```java
-// Abrir el documento PDF de origen
-Document pdfDocument = new Document(_dataDir + "PDFToHTML.pdf");
-
-// Guardar el archivo en formato de documento MS
-pdfDocument.save(_dataDir + "output_out.html", SaveFormat.Html);
+public static void convertPdfToHtml(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Convertir PDF a HTML - Dividir salida en HTML de varias páginas
+## Convertir PDF a HTML y almacenar imágenes por separado
 
-Aspose.PDF para Java soporta la función de convertir documentos PDF a varios formatos de salida, incluido HTML.
- Sin embargo, al convertir archivos PDF grandes (compuestos de múltiples páginas), puede tener un requisito de guardar cada página PDF individual en un archivo HTML separado.
+Utilice este ejemplo cuando las imágenes extraídas deben guardarse como archivos separados durante la exportación a HTML.
 
-Al convertir un archivo PDF grande con varias páginas al formato HTML, la salida aparece como una sola página HTML. Puede terminar siendo muy larga. Para controlar el tamaño de la página, es posible dividir la salida en varias páginas durante la conversión de PDF a HTML. Por favor, intente usar el siguiente fragmento de código.
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) y establecer `setSpecialFolderForAllImages(...)` a un directorio de salida de imágenes dedicado.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` por lo tanto, las imágenes ráster se emiten como archivos de recursos separados en lugar de salida solo en línea.
+1. Guarda la salida HTML junto con los activos de imagen generados.
 
 ```java
-// Abrir el documento PDF de origen
-Document document = new Document(_dataDir + "PDFToHTML.pdf");
-
-// Instanciar un objeto HtmlSaveOptions
-HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
-
-// Especificar dividir la salida en varias páginas
-htmlOptions.setSplitIntoPages(true);
-
-// Guardar el documento
-document.save(_dataDir + "MultiPageHTML_out.html", htmlOptions);    
+public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSpecialFolderForAllImages(inputFile.getParent().resolve("images").toString());
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Convertir PDF a HTML - Evitar Guardar Imágenes en Formato SVG
+## Convertir PDF a HTML multipágina
 
-El formato de salida predeterminado para guardar imágenes al convertir de PDF a HTML es SVG. Durante la conversión, algunas imágenes de PDF se transforman en imágenes vectoriales SVG. Esto podría ser lento. En su lugar, las imágenes podrían transformarse en PNG. Para permitir esto, Aspose.PDF tiene la opción de usar SVG para vectores o crear PNGs.
+Utilice este ejemplo cuando cada página PDF deba representarse por separado en la salida HTML.
 
-Para eliminar completamente la representación de imágenes en formato SVG al convertir archivos PDF a formato HTML, por favor intente usar el siguiente fragmento de código.
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) y habilitar `setSplitIntoPages(true)`.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` por lo que cada página PDF se escribe como una salida HTML separada.
+1. Guarda los archivos HTML generados.
 
 ```java
- // Cargar el archivo PDF
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf")
-
-// Instanciar objeto de opciones de guardado HTML
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-
-// Especificar la carpeta donde se guardan las imágenes SVG durante la conversión de PDF a HTML
-saveOptions.setSpecialFolderForSvgImages(DATA_DIR.toString());
-
-// Guardar el archivo de salida
-document.save(DATA_DIR + "SaveSVGFiles_out.html", saveOptions);
+public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSplitIntoPages(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Comprimir Imágenes SVG Durante la Conversión
+## Convertir PDF a HTML y almacenar SVG por separado
 
-Para comprimir imágenes SVG durante la conversión de PDF a HTML, por favor intente usar el siguiente código:
+Utiliza este ejemplo cuando el contenido vectorial debe emitirse como recursos SVG separados.
+
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) y establecer `setSpecialFolderForSvgImages(...)` a un directorio de recursos SVG externo.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` por lo que los gráficos vectoriales se almacenan fuera del archivo HTML principal.
+1. Guarda la salida HTML y los recursos SVG.
 
 ```java
-// Cargar el archivo PDF
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-
-// Crear HtmlSaveOption con la función probada
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-
-// Comprimir las imágenes SVG si las hay
-saveOptions.setCompressSvgGraphicsIfAny(true);
-document.save(DATA_DIR + "SaveSVGFiles_out.html", saveOptions);
-document.close();
+public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSpecialFolderForSvgImages(inputFile.getParent().resolve("svg_images").toString());
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Convertir PDF a HTML - Especificar Carpeta de Imágenes
+## Convertir PDF a HTML con SVG comprimido
 
-Por defecto, al convertir un archivo PDF a HTML, las imágenes en el PDF se guardan en una carpeta separada creada en el mismo directorio donde se crea el HTML de salida. Pero a veces es necesario especificar una carpeta diferente para guardar las imágenes al generar archivos HTML. Para lograr esto, introdujimos el [SaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SaveOptions). El método [SpecialFolderForAllImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/#setSpecialFolderForAllImages-java.lang.String-) se utiliza para especificar la carpeta de destino para almacenar imágenes.
+Utilice este ejemplo cuando la salida SVG deba optimizarse durante la exportación HTML.
+
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) y configure una carpeta dedicada para los recursos SVG.
+1. Habilitar `setCompressSvgGraphicsIfAny(true)` por lo que los recursos SVG se comprimen durante la exportación.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` y guarda los archivos HTML convertidos.
 
 ```java
-// Cargar el archivo PDF
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-
-// Especificar la carpeta separada para guardar imágenes
-saveOptions.setSpecialFolderForAllImages(DATA_DIR.toString());
-document.save(DATA_DIR + "SaveSVGFiles_out.html", saveOptions);
-document.close();
+public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSpecialFolderForSvgImages(inputFile.getParent().resolve("svg_images").toString());
+        saveOptions.setCompressSvgGraphicsIfAny(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Crear Archivos Subsiguientes Solo con el Contenido del Cuerpo
+## Convertir PDF a HTML con fondos de página PNG
 
-Con el siguiente fragmento de código simple, puede dividir el HTML de salida en páginas. En las páginas de salida, todos los objetos HTML deben ir exactamente donde van ahora (procesamiento y salida de fuentes, creación y salida de CSS, creación y salida de imágenes), excepto que el HTML de salida contendrá contenidos actualmente colocados dentro de las etiquetas (ahora se omitirán las etiquetas "body").
+Utilice este ejemplo cuando los fondos de página deben renderizarse como imágenes PNG en la salida HTML.
+
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) y establezca el modo de guardado de imágenes raster a fondos de página PNG.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` por lo tanto, el contenido de fondo de la página se emite como capas HTML respaldadas por PNG.
+1. Guarda la salida HTML convertida.
 
 ```java
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-
-saveOptions.setHtmlMarkupGenerationMode(HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent);
-saveOptions.setSplitIntoPages(true);
-
-document.save(DATA_DIR + "CreateSubsequentFiles_out.html", saveOptions);
-document.close();
+public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setRasterImagesSavingMode(
+                HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Renderizado de Texto Transparente
+## Convertir PDF a contenido del cuerpo HTML únicamente
 
-En caso de que el archivo PDF de origen/entrada contenga textos transparentes sombreado por imágenes de primer plano, entonces puede haber problemas de renderizado de texto. Así que para atender tales escenarios, se pueden usar los métodos `setSaveShadowedTextsAsTransparentTexts` y `setSaveTransparentTexts`.
+Utilice este ejemplo cuando solo se necesite el marcado del cuerpo en lugar de una estructura completa de documento HTML.
+
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) y establecer el modo de generación de marcado a `WriteOnlyBodyContent`.
+1. Mantener `setSplitIntoPages(true)` habilitado cuando la salida solo del cuerpo aún debe estar separada por páginas.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` y guarde la salida HTML.
 
 ```java
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-
-// Instanciar objeto de opciones de guardado HTML
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-htmlsaveOptions.setSaveShadowedTextsAsTransparentTexts(true);
-htmlsaveOptions.setSaveTransparentTexts(true);
-
-// Guardar el documento
-document.save(DATA_DIR + "TransparentTextRendering_out.html", htmlsaveOptions);
-document.close();
+public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setHtmlMarkupGenerationMode(
+                HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent);
+        saveOptions.setSplitIntoPages(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
+## Convertir PDF a HTML con renderizado de texto transparente
 
-## Renderizado de capas de documentos PDF
+Utilice este ejemplo cuando se deba preservar el texto transparente en la exportación HTML.
 
-Podemos renderizar capas de documentos PDF en un elemento de tipo capa separado durante la conversión de PDF a HTML:
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) y habilitar la preservación de texto transparente y sombreado.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` por lo que la apariencia del texto relacionada con la transparencia se retiene en el resultado HTML.
+1. Guarda la salida HTML convertida.
 
 ```java
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-// Instanciar objeto HTML SaveOptions
-
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-
-// Especificar renderizar capas de documentos PDF por separado en el HTML de salida
-htmlsaveOptions.setConvertMarkedContentToLayers(true);
-
-// Guardar el documento
-document.save(DATA_DIR + "LayersRendering_out.html", htmlsaveOptions);
-document.close();
+public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSaveTransparentTexts(true);
+        saveOptions.setSaveShadowedTextsAsTransparentTexts(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-La conversión de PDF a HTML es una de las características más populares de Aspose.PDF porque permite ver el contenido de archivos PDF en varias plataformas sin usar un visor de documentos PDF. El HTML de salida cumple con los estándares WWW y puede mostrarse fácilmente en todos los navegadores web. Usando esta característica, los archivos PDF pueden verse en dispositivos portátiles porque no necesitas instalar ninguna aplicación de visualización de PDF, sino que puedes usar un navegador web simple.
+## Convertir PDF a HTML con renderizado de capa del documento
 
-## PDF a HTML - Excluir recursos de fuentes
+Utilice este ejemplo cuando la visibilidad de capas del PDF deba reflejarse en el resultado HTML.
 
-Si tiene la intención de excluir todos o algunos recursos de fuentes durante la conversión de PDF a HTML, Aspose.PDF para Java API le permite lograr esto con la ayuda de la clase HtmlSaveOptions. La API ofrece dos opciones para este propósito.
-
-- `htmlOptions.FontSavingMode = HTmlSaveOptions.FontSavingModes.DontSave` - para evitar exportar todas las fuentes
-- `htmlOptions.ExcludeFontNameList = (new String[] { "ArialMT", "SymbolMT" });` - es para evitar exportar fuentes específicas (nombres de fuentes a especificar sin hash)
-
-Para convertir PDF a HTML excluyendo recursos de fuentes, utilice los siguientes pasos:
-
-1. Defina un nuevo objeto de la clase HtmlSaveOptions
-1. Defina y establezca los nombres de las fuentes que se deben evitar exportar en HtmlSaveOptions.ExcludeFontNameList
-1. Convierta el PDF a HTML usando el método save
+1. Abre el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
+1. Crear [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) y habilitar `setConvertMarkedContentToLayers(true)`.
+1. Llamar `document.save(outputFile.toString(), saveOptions)` Por lo tanto, el contenido marcado del PDF se asigna a capas HTML.
+1. Guarde los archivos HTML exportados.
 
 ```java
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-htmlsaveOptions.setExplicitListOfSavedPages(
-        new int[]{
-                1
-        }
-);
-htmlsaveOptions.setFixedLayout(true);
-htmlsaveOptions.setCompressSvgGraphicsIfAny(false);
-htmlsaveOptions.setSaveTransparentTexts(true);
-htmlsaveOptions.setSaveShadowedTextsAsTransparentTexts(true);
-htmlsaveOptions.setExcludeFontNameList(new String[]{"ArialMT", "SymbolMT"});
-htmlsaveOptions.setFontSavingMode(HtmlSaveOptions.FontSavingModes.DontSave);
-htmlsaveOptions.setDefaultFontName("Comic Sans MS");
-htmlsaveOptions.setUseZOrder(true);
-htmlsaveOptions
-        .setLettersPositioningMethod(LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss);
-htmlsaveOptions
-        .setPartsEmbeddingMode(HtmlSaveOptions.PartsEmbeddingModes.NoEmbedding);
-htmlsaveOptions
-        .setRasterImagesSavingMode(HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
-htmlsaveOptions.setSplitIntoPages(false);
-
-Document document = new Document(DATA_DIR + "sample.pdf");
-document.save(DATA_DIR + "output_out.html", htmlsaveOptions);
-document.close();
+public static void convertPdfToHtmlDocumentLayersRendering(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setConvertMarkedContentToLayers(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

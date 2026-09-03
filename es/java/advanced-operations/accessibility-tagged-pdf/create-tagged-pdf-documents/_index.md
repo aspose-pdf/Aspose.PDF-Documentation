@@ -1,266 +1,381 @@
 ---
-title: Crear PDF Etiquetado
-linktitle: Crear PDF Etiquetado
+title: Crear Tagged PDF en Java
+linktitle: Crear Tagged PDF
 type: docs
 weight: 10
-lastmod: "2021-06-05"
-url: /es/java/create-tagged-pdf-documents/
-description: Este artículo explica cómo crear elementos de estructura para un documento PDF etiquetado programáticamente utilizando Aspose.PDF para Java.
+url: /es/java/create-tagged-pdf/
+description: Aprende cómo crear documentos PDF etiquetados en Java con Aspose.PDF, incluyendo PDF/UA Structure Elements, FormField accesibles, páginas TOC y etiquetado automático.
+lastmod: "2026-09-03"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+Crear un PDF etiquetado significa agregar elementos de estructura que hacen que el documento sea más fácil de validar contra los requisitos de accesibilidad PDF/UA y más fácil de interpretar para las tecnologías de asistencia.
 
-## Creación de Elementos de Estructura
+## Crear un documento PDF etiquetado simple
 
-Para crear elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece métodos para crear elementos de estructura utilizando la Interfaz [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). El siguiente fragmento de código muestra cómo crear elementos de estructura de un PDF Etiquetado:
+Utilice este ejemplo cuando necesite un PDF etiquetado mínimo con un encabezado y un párrafo en el árbol de estructura lógica.
+
+1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y obtener su [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. Establezca el título y el idioma del documento, luego cree los elementos de encabezado y párrafo requeridos.
+1. Agregar los Structure Elements al elemento raíz y guardar el documento.
 
 ```java
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// La ruta al directorio de documentos.
-String path = "pathTodir";
+public static void createTaggedPdfDocumentSimple(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
 
-// Crear Documento Pdf
-Document document = new Document();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Obtener Contenido para trabajar con TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        HeaderElement mainHeader = taggedContent.createHeaderElement();
+        mainHeader.setText("Main Header");
 
-// Establecer Título e Idioma para el Documento
-taggedContent.setTitle("Documento Pdf Etiquetado");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraphElement = taggedContent.createParagraphElement();
+        paragraphElement.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                + "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. "
+                + "Cras pellentesque libero semper, gravida magna sed, luctus leo.");
 
-// Crear Elementos de Agrupación
-PartElement partElement = taggedContent.createPartElement();
-ArtElement artElement = taggedContent.createArtElement();
-SectElement sectElement = taggedContent.createSectElement();
-DivElement divElement = taggedContent.createDivElement();
-BlockQuoteElement blockQuoteElement = taggedContent.createBlockQuoteElement();
-CaptionElement captionElement = taggedContent.createCaptionElement();
-TOCElement tocElement = taggedContent.createTOCElement();
-TOCIElement tociElement = taggedContent.createTOCIElement();
-IndexElement indexElement = taggedContent.createIndexElement();
-NonStructElement nonStructElement = taggedContent.createNonStructElement();
-PrivateElement privateElement = taggedContent.createPrivateElement();
-
-// Crear Elementos de Estructura de Texto a Nivel de Bloque
-ParagraphElement paragraphElement = taggedContent.createParagraphElement();
-HeaderElement headerElement = taggedContent.createHeaderElement();
-HeaderElement h1Element = taggedContent.createHeaderElement(1);
-
-// Crear Elementos de Estructura de Texto a Nivel Inline
-SpanElement spanElement = taggedContent.createSpanElement();
-QuoteElement quoteElement = taggedContent.createQuoteElement();
-NoteElement noteElement = taggedContent.createNoteElement();
-
-// Crear Elementos de Estructura de Ilustración
-FigureElement figureElement = taggedContent.createFigureElement();
-FormulaElement formulaElement = taggedContent.createFormulaElement();
-
-// Métodos están en desarrollo
-ListElement listElement = taggedContent.createListElement();
-TableElement tableElement = taggedContent.createTableElement();
-ReferenceElement referenceElement = taggedContent.createReferenceElement();
-BibEntryElement bibEntryElement = taggedContent.createBibEntryElement();
-CodeElement codeElement = taggedContent.createCodeElement();
-LinkElement linkElement = taggedContent.createLinkElement();
-AnnotElement annotElement = taggedContent.createAnnotElement();
-RubyElement rubyElement = taggedContent.createRubyElement();
-WarichuElement warichuElement = taggedContent.createWarichuElement();
-FormElement formElement = taggedContent.createFormElement();
-
-// Guardar Documento Pdf Etiquetado
-document.save(path + "StructureElements.pdf");
+        rootElement.appendChild(mainHeader, true);
+        rootElement.appendChild(paragraphElement, true);
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Crea un documento Tagged PDF avanzado
 
-## Creación del Árbol de Elementos de Estructura
+Este ejemplo construye una estructura más rica mezclando encabezados, párrafos, spans, citas y configuraciones de diseño explícitas.
 
-Para crear un árbol de elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece métodos para crear un árbol de elementos de estructura utilizando la Interfaz [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). El siguiente fragmento de código muestra cómo crear un árbol de elementos de estructura de un Documento PDF Etiquetado:
+1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicializar los metadatos de contenido etiquetado.
+1. Construye la estructura de encabezado y párrafo, luego agrega spans y un elemento de cita dentro del párrafo.
+1. Ajuste la posición del párrafo, agregue los elementos a la estructura raíz y guarde el documento.
 
 ```java
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// La ruta al directorio de documentos.
-String path = "pathTodir";
-// Crear Documento Pdf
-Document document = new Document();
+public static void createTaggedPdfDocumentAdv(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
 
-// Obtener contenido para trabajar con TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Establecer título e idioma para el documento
-taggedContent.setTitle("Documento Pdf Etiquetado");
-taggedContent.setLanguage("en-US");
+        HeaderElement header1 = taggedContent.createHeaderElement(1);
+        header1.setText("Header Level 1");
 
-// Obtener elemento de estructura raíz (Documento)
-StructureElement rootElement = taggedContent.getRootElement();
+        ParagraphElement paragraphWithQuotes = taggedContent.createParagraphElement();
+        paragraphWithQuotes.getStructureTextState().setFont(FontRepository.findFont("Arial"));
 
-// Crear Estructura Lógica
-SectElement sect1 = taggedContent.createSectElement();
-rootElement.appendChild(sect1);
+        PositionSettings positionSettings = new PositionSettings();
+        positionSettings.setMargin(new MarginInfo(10, 5, 10, 5));
+        paragraphWithQuotes.adjustPosition(positionSettings);
 
-SectElement sect2 = taggedContent.createSectElement();
-rootElement.appendChild(sect2);
+        SpanElement spanElement1 = taggedContent.createSpanElement();
+        spanElement1.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                + "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. ");
 
-DivElement div11 = taggedContent.createDivElement();
-sect1.appendChild(div11);
+        QuoteElement quoteElement = taggedContent.createQuoteElement();
+        quoteElement.setText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus.");
+        quoteElement.getStructureTextState().setFontStyle(Nullable.of(FontStyles.Bold | FontStyles.Italic));
 
-DivElement div12 = taggedContent.createDivElement();
-sect1.appendChild(div12);
+        SpanElement spanElement2 = taggedContent.createSpanElement();
+        spanElement2.setText(" Sed non consectetur elit.");
 
-ArtElement art21 = taggedContent.createArtElement();
-sect2.appendChild(art21);
+        paragraphWithQuotes.appendChild(spanElement1, true);
+        paragraphWithQuotes.appendChild(quoteElement, true);
+        paragraphWithQuotes.appendChild(spanElement2, true);
 
-ArtElement art22 = taggedContent.createArtElement();
-sect2.appendChild(art22);
-
-DivElement div211 = taggedContent.createDivElement();
-art21.appendChild(div211);
-
-DivElement div212 = taggedContent.createDivElement();
-art21.appendChild(div212);
-
-DivElement div221 = taggedContent.createDivElement();
-art22.appendChild(div221);
-
-DivElement div222 = taggedContent.createDivElement();
-art22.appendChild(div222);
-
-SectElement sect3 = taggedContent.createSectElement();
-rootElement.appendChild(sect3);
-
-DivElement div31 = taggedContent.createDivElement();
-sect3.appendChild(div31);
-
-// Guardar Documento Pdf Etiquetado
-document.save(path + "StructureElementsTree.pdf");
+        rootElement.appendChild(header1, true);
+        rootElement.appendChild(paragraphWithQuotes, true);
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Agregar estilo de texto al contenido etiquetado
 
-## Estructura de Estilo de Texto
+Utilice este ejemplo cuando el contenido del párrafo etiquetado deba llevar información explícita de Font, color y estilo.
 
-Para estilizar la estructura de texto en un Documento PDF Etiquetado, Aspose.PDF ofrece las propiedades **setFont()**, **setFontSize()**, **setFontStyle()** y **setForegroundColor()** de la Clase [StructureTextState](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/StructureTextState). El siguiente fragmento de código muestra cómo estilizar la estructura de texto en un Documento PDF Etiquetado:
+1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un elemento de párrafo y configure su estado de texto estructural.
+1. Establezca el texto del párrafo y guarde el documento.
 
 ```java
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// La ruta al directorio de documentos.
-String path = "pathTodir";
-// Crear Documento Pdf
-Document document = new Document();
+public static void addStyle(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// Obtener Contenido para trabajar con TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Establecer Título e Idioma para el Documento
-taggedContent.setTitle("Documento Pdf Etiquetado");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraphElement = taggedContent.createParagraphElement();
+        taggedContent.getRootElement().appendChild(paragraphElement, true);
 
-ParagraphElement p = taggedContent.createParagraphElement();
-taggedContent.getRootElement().appendChild(p);
+        paragraphElement.getStructureTextState().setFontSize(Nullable.of(18.0f));
+        paragraphElement.getStructureTextState().setForegroundColor(Color.getRed());
+        paragraphElement.getStructureTextState().setFontStyle(Nullable.of(FontStyles.Italic));
+        paragraphElement.setText("Red italic text.");
 
-// En Desarrollo
-p.getStructureTextState().setFontSize(18F);
-p.getStructureTextState().setForegroundColor(Color.getRed());
-p.getStructureTextState().setFontStyle(FontStyles.Italic);
-
-p.setText("Texto en cursiva rojo.");
-
-// Guardar Documento Pdf Etiquetado
-document.save(path + "StyleTextStructure.pdf");
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Agregar figura Structure Elements
 
-## Ilustrando Elementos de Estructura
+Este ejemplo muestra cómo crear una figura etiquetada con texto alternativo, título, etiqueta personalizada, contenido de imagen y posicionamiento.
 
-Para ilustrar elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece la Clase [IllustrationElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/IllustrationElement). El siguiente fragmento de código muestra cómo ilustrar elementos de estructura en un Documento PDF Etiquetado:
+1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un [ElementoFigura](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), establezca sus metadatos accesibles y asigne la imagen.
+1. Ajusta la posición de la figura y guarda el documento.
 
 ```java
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// La ruta al directorio de documentos.
-String path = "pathTodir";
-// Crear Documento Pdf
-Document document = new Document();
+public static void illustrateStructureElements(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// Obtener Contenido para trabajar con TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Establecer Título e Idioma para el Documento
-taggedContent.setTitle("Documento Pdf Etiquetado");
-taggedContent.setLanguage("en-US");
+        FigureElement figure1 = taggedContent.createFigureElement();
+        taggedContent.getRootElement().appendChild(figure1, true);
+        figure1.setAlternativeText("Figure One");
+        figure1.setTitle("Image 1");
+        figure1.setTag("Fig1");
+        figure1.setImage(imageFile.toString(), 300);
 
-// En Desarrollo
-IllustrationElement figure1 = taggedContent.createFigureElement();
-taggedContent.getRootElement().appendChild(figure1);
-figure1.setActualText("Figura Uno");
-figure1.setTitle("Imagen 1");
-figure1.setTag("Fig1");
-figure1.setImage("image.png");
+        PositionSettings positionSettings = new PositionSettings();
+        MarginInfo marginInfo = new MarginInfo();
+        marginInfo.setLeft(50);
+        marginInfo.setTop(20);
+        positionSettings.setMargin(marginInfo);
+        figure1.adjustPosition(positionSettings);
 
-// Guardar Documento Pdf Etiquetado
-document.save(path + "IllustrationStructureElements.pdf");
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Validar un PDF etiquetado para PDF/UA
 
-## **Crear PDF con Imagen Etiquetada**
+Utiliza este ejemplo cuando necesites comprobar si un PDF etiquetado cumple con las reglas de validación PDF/UA.
 
-Para crear un PDF con Imagen Etiquetada, Aspose.PDF ofrece el método [createFigureElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createFigureElement--) de la Interfaz [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). El siguiente fragmento de código muestra la funcionalidad.
+1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ejecutar validación contra [FormatoPdf](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. Escribe el registro de validación e imprime el resultado de la validación.
 
 ```java
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-Java
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("CreatePDFwithTaggedImage");
-taggedContent.setLanguage("en-US");
-
-IllustrationElement figure1 = taggedContent.createFigureElement();
-taggedContent.getRootElement().appendChild(figure1);
-figure1.setAlternativeText("Logo de Aspose");
-figure1.setTitle("Imagen 1");
-figure1.setTag("Fig");
-// Añadir imagen con resolución de 300 DPI (por defecto)
-figure1.setImage("aspose-logo.jpg");
-// Guardar Documento PDF
-document.save("PDFwithTaggedImage.pdf");
+public static void validateTaggedPdf(Path inputFile, Path logFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        boolean isValid = document.validate(logFile.toString(), PdfFormat.PDF_UA_1);
+        System.out.println("Is Valid: " + isValid);
+    }
+}
 ```
 
+## Ajustar la posición del elemento de estructura
 
-## Crear PDF con Texto Etiquetado
+Este ejemplo aplica configuraciones explícitas de margen y alineación a un párrafo etiquetado.
 
-Para crear un PDF con Texto Etiquetado, Aspose.PDF ofrece la [Interfaz ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). El siguiente fragmento de código muestra la funcionalidad.
+1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregar un elemento de estructura de párrafo y preparar [ConfiguraciónDePosición](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. Aplica la configuración de posición al párrafo y guarda el documento.
 
 ```java
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// La ruta al directorio de documentos.
-String dataDir = Utils.getDataDir() + "TaggedPDFs\\";
-// Crear Documento Pdf
-Document document = new Document();
+public static void adjustPosition(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// Obtener Contenido para trabajar con TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Establecer Título e Idioma para el Documento
-taggedContent.setTitle("Documento Pdf Etiquetado");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraph = taggedContent.createParagraphElement();
+        taggedContent.getRootElement().appendChild(paragraph, true);
+        paragraph.setText("Text.");
 
-// Crear Elementos de Estructura a Nivel de Bloque de Texto
-HeaderElement headerElement = taggedContent.createHeaderElement();
-headerElement.setActualText("Encabezado 1");
-ParagraphElement paragraphElement1 = taggedContent.createParagraphElement();
-paragraphElement1.setActualText("prueba 1");
-ParagraphElement paragraphElement2 = taggedContent.createParagraphElement();
-paragraphElement2.setActualText("prueba 2");
-ParagraphElement paragraphElement3 = taggedContent.createParagraphElement();
-paragraphElement3.setActualText("prueba 3");
-ParagraphElement paragraphElement4 = taggedContent.createParagraphElement();
-paragraphElement4.setActualText("prueba 4");
-ParagraphElement paragraphElement5 = taggedContent.createParagraphElement();
-paragraphElement5.setActualText("prueba 5");
-ParagraphElement paragraphElement6 = taggedContent.createParagraphElement();
-paragraphElement6.setActualText("prueba 6");
-ParagraphElement paragraphElement7 = taggedContent.createParagraphElement();
-paragraphElement7.setActualText("prueba 7");
+        PositionSettings positionSettings = new PositionSettings();
+        MarginInfo marginInfo = new MarginInfo();
+        marginInfo.setLeft(300);
+        marginInfo.setTop(20);
+        marginInfo.setRight(0);
+        marginInfo.setBottom(0);
+        positionSettings.setMargin(marginInfo);
+        positionSettings.setHorizontalAlignment(HorizontalAlignment.None);
+        positionSettings.setVerticalAlignment(VerticalAlignment.None);
+        positionSettings.setFirstParagraphInColumn(false);
+        positionSettings.setKeptWithNext(false);
+        positionSettings.setInNewPage(false);
+        positionSettings.setInLineParagraph(false);
+        paragraph.adjustPosition(positionSettings);
 
-// Guardar Documento PDF
-document.save(dataDir + "PDFconTextoEtiquetado.pdf");
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Convertir un PDF existente a PDF/UA con etiquetado automático
+
+Utilice este enfoque cuando se deba convertir un PDF existente a PDF/UA y etiquetar automáticamente durante la conversión.
+
+1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear [OpcionesDeConversiónDeFormatoPdf](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) y habilitar el etiquetado automático.
+1. Ejecute la conversión y guarde el documento de salida.
+
+```java
+public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outputFile, Path logFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfFormatConversionOptions options = new PdfFormatConversionOptions(
+                logFile.toString(), PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+        AutoTaggingSettings autoTaggingSettings = new AutoTaggingSettings();
+        autoTaggingSettings.setEnableAutoTagging(true);
+        autoTaggingSettings.setHeadingRecognitionStrategy(HeadingRecognitionStrategy.Auto);
+        options.setAutoTaggingSettings(autoTaggingSettings);
+
+        document.convert(options);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Crear un Tagged PDF con un campo de formulario accesible
+
+Este ejemplo etiqueta un campo de formulario de firma para que se convierta en parte del árbol de estructura lógica.
+
+1. Crear un nuevo PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregar una página con un campo de formulario.
+1. Agregar el campo de formulario a la colección de formularios del documento.
+1. Cree un elemento de estructura de formulario etiquetado, asócielo con el campo y guarde el documento.
+
+```java
+public static void createPdfWithTaggedFormField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
+
+        SignatureField signatureField = new SignatureField(page, new Rectangle(50, 50, 100, 100, true));
+        signatureField.setPartialName("Signature1");
+        signatureField.setAlternateName("signature 1");
+
+        Form formFields = document.getForm();
+        formFields.add(signatureField);
+
+        FormElement form = taggedContent.createFormElement();
+        form.setAlternativeText("form 1");
+        form.tag(signatureField);
+        rootElement.appendChild(form, true);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Crear un PDF etiquetado con una página de TOC
+
+Utilice este ejemplo cuando un PDF etiquetado deba incluir una página de tabla de contenidos básica vinculada a los encabezados del documento.
+
+1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y añada una página de TOC.
+1. Crear el [ElementoTOC](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) y un encabezado que debería aparecer en el TOC.
+1. Vincula la entrada del TOC al encabezado y guarda el documento.
+
+```java
+public static void createPdfWithTocPage(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent content = document.getTaggedContent();
+        StructureElement rootElement = content.getRootElement();
+        content.setLanguage("en-US");
+
+        Page tocPage = document.getPages().add();
+        tocPage.setTocInfo(new TocInfo());
+
+        TOCElement tocElement = content.createTOCElement();
+        rootElement.appendChild(tocElement, true);
+
+        document.getPages().add();
+
+        HeaderElement header = content.createHeaderElement(1);
+        header.setText("1. Header");
+        rootElement.appendChild(header, true);
+
+        TOCIElement toci = content.createTOCIElement();
+        tocElement.appendChild(toci, true);
+        header.addEntryToTocPage(tocPage, toci);
+        toci.addRef(header);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Crear un PDF etiquetado avanzado con una página de TOC
+
+Este ejemplo crea una tabla de contenido etiquetada más compleja con títulos de página enlazados, elementos de lista anidados y varios niveles de encabezado.
+
+1. Crear un nuevo PDF etiquetado [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y prepare una página de TOC con un título visible.
+1. Cree la estructura del TOC, vincule el título y las entradas del TOC a los encabezados y elementos de lista, y agregue los elementos de contenido relacionados.
+1. Guarda el documento final con la estructura avanzada de TOC.
+
+```java
+public static void createPdfWithTocPageAdvanced(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent content = document.getTaggedContent();
+        StructureElement rootElement = content.getRootElement();
+        content.setLanguage("en-US");
+
+        Page tocPage = document.getPages().add();
+        tocPage.setTocInfo(new TocInfo());
+        tocPage.getTocInfo().setTitle(new TextFragment("Table of Contents"));
+
+        TOCElement tocElement = content.createTOCElement();
+        HeaderElement headerForTocPageTitle = content.createHeaderElement(1);
+        tocElement.linkTocPageTitleToHeaderElement(tocPage, headerForTocPageTitle);
+
+        rootElement.appendChild(headerForTocPageTitle, true);
+        rootElement.appendChild(tocElement, true);
+
+        document.getPages().add();
+
+        HeaderElement header = content.createHeaderElement(1);
+        header.setText("1. Header");
+        rootElement.appendChild(header, true);
+
+        TOCIElement toci = content.createTOCIElement();
+        tocElement.appendChild(toci, true);
+        header.addEntryToTocPage(tocPage, toci);
+        toci.addRef(header);
+
+        ListElement listElement = content.createListElement();
+        for (int i = 1; i < 4; i++) {
+            ListLIElement li = content.createListLIElement();
+            listElement.appendChild(li, true);
+
+            HeaderElement subHeader = content.createHeaderElement(2);
+            subHeader.getStructureTextState().setFontSize(Nullable.of(14.0f));
+            subHeader.setLanguage("en-US");
+            subHeader.setText("1." + i + " subheader ");
+            subHeader.addEntryToTocPage(tocPage, li);
+            li.addRef(subHeader);
+
+            ParagraphElement p = content.createParagraphElement();
+            p.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+            p.setLanguage("en-US");
+
+            rootElement.appendChild(subHeader, true);
+            rootElement.appendChild(p, true);
+        }
+        toci.appendChild(listElement, true);
+
+        HeaderElement header2 = content.createHeaderElement(1);
+        header2.setText("2. Header");
+        rootElement.appendChild(header2, true);
+
+        TOCIElement toci2 = content.createTOCIElement();
+        tocElement.appendChild(toci2, true);
+        header2.addEntryToTocPage(tocPage, toci2);
+        toci2.addRef(header2);
+
+        document.save(outputFile.toString());
+    }
+}
 ```

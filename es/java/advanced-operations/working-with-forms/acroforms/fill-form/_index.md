@@ -1,52 +1,44 @@
 ---
-title: Rellenar AcroForms
-linktitle: Rellenar AcroForms
+title: Rellenar AcroForm - Rellenar formulario PDF usando Java
+linktitle: Rellenar AcroForm
 type: docs
 weight: 20
 url: /es/java/fill-form/
-description: Esta sección explica cómo rellenar un campo de formulario en un documento PDF con Aspose.PDF para Java.
-lastmod: "2021-06-05"
+description: Rellenar campos AcroForm en un documento PDF usando Aspose.PDF for Java.
+lastmod: "2026-09-03"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Rellenar campos AcroForm en archivos PDF con Java
+Abstract: Este artículo explica cómo rellenar campos AcroForm usando Aspose.PDF for Java. El ejemplo carga un PDF a través de la fachada Form, compara los nombres de los campos con un mapa de valores, actualiza los campos coincidentes y guarda el documento completado.
 ---
+El `Form` La fachada puede usarse para automatizar la población de campos en un AcroForm existente.
 
-Los documentos PDF son maravillosos y realmente el tipo de archivo preferido para crear Formularios.
+## Rellenar campos AcroForm con nuevos valores
 
-Aspose.PDF para Java te permite rellenar un campo de formulario, obtener el campo de la colección de Form del objeto Document.
-
-Veamos el siguiente ejemplo de cómo resolver esta tarea:
+1. Abra el documento PDF Form con el [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada.
+1. Iterar a través de los campos del Form y actualizar las entradas coincidentes con los valores proporcionados.
+1. Guarde el documento PDF actualizado.
 
 ```java
-public class ExamplesFillForm {
+public static void fillForm(Path inputFile, Path outputFile) {
+    Map<String, String> newFieldValues = Map.of(
+            "First Name", "Alexander_New",
+            "Last Name", "Greenfield_New",
+            "City", "Yellowtown_New",
+            "Country", "Redland_New");
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void FillFormFieldPDFDocument() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // Crear un campo
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
-        textBoxField.setPartialName("textbox1");
-        textBoxField.setValue("Cuadro de Texto");
-
-        // TextBoxField.Border = new Border(
-        Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        textBoxField.setBorder(border);
-
-        textBoxField.setColor(Color.getGreen());
-
-        // Añadir campo al documento
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // Guardar PDF modificado
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+    Form form = new Form(inputFile.toString());
+    try {
+        for (String fieldName : form.getFieldNames()) {
+            if (newFieldValues.containsKey(fieldName)) {
+                form.fillField(fieldName, newFieldValues.get(fieldName));
+            }
+        }
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
     }
-
-    
 }
 ```

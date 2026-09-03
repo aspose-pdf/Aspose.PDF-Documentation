@@ -1,14 +1,15 @@
 ---
-title: Optimizar Documento PDF para la Web en Ruby
+title: Optimizar documento PDF para la web en Ruby
+linktitle: Optimizar documento PDF para la web en Ruby
 type: docs
 weight: 70
 url: /es/java/optimize-pdf-document-for-the-web-in-ruby/
-lastmod: "2021-06-05"
+description: Optimice PDFs para una entrega web más rápida y reduzca el tamaño del archivo usando Aspose.PDF en Ruby.
+lastmod: "2026-09-03"
 ---
+## Aspose.PDF - Optimizar PDF para la web
 
-## Aspose.PDF - Optimizar PDF para la Web
-
-Para optimizar un documento PDF para la web usando **Aspose.PDF Java para Ruby**, simplemente invoca el método **optimize_web** del módulo **Optimize**.
+Para optimizar el documento PDF para la web usando **Aspose.PDF Java for Ruby**, simplemente invoque el método **optimize_web** delВ  **Optimize** módulo.
 
 Código Ruby
 
@@ -16,29 +17,29 @@ Código Ruby
 
  def optimize_web()
 
-    # La ruta al directorio de documentos.
+В В В  # The path to the documents directory.
 
-    data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
+В В В  data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-    # Abrir un documento pdf.
+В В В  # Open a pdf document.
 
-    doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+В В В  doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-    # Optimizar para la web
+В В В  # Optimize for web
 
-    doc.optimize()
+В В В  doc.optimize()
 
-    # Guardar el documento de salida
+В В В  #Save output document
 
-    doc.save(data_dir + "Optimized_Web.pdf")
+В В В  doc.save(data_dir + "Optimized_Web.pdf")
 
-    puts "PDF optimizado para la Web, por favor revise el archivo de salida."
+В В В  puts "Optimized PDF for the Web, please check output file."
 
 end
-``` 
+```В 
 
-## Descargar Código en Ejecución
+## Descargar código en ejecución
 
-Descargar **Optimizar PDF para la Web (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DescargarВ **Optimizar PDF para Web (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)

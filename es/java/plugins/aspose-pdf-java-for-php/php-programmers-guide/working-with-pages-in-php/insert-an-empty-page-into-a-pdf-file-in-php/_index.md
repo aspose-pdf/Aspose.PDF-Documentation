@@ -1,34 +1,35 @@
 ---
-title: Insertar una Página Vacía en un Archivo PDF en PHP
+title: Insertar una página en blanco en un archivo PDF en PHP
+linktitle: Insertar una página en blanco en un archivo PDF en PHP
 type: docs
 weight: 70
 url: /es/java/insert-an-empty-page-into-a-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: Aprenda cómo insertar una página en blanco en cualquier posición dentro de un archivo PDF en PHP usando Aspose.PDF para una estructuración flexible de documentos.
+lastmod: "2026-09-03"
 ---
+## Aspose.PDF - Insertar una página en blanco
 
-## Aspose.PDF - Insertar una Página Vacía
-
-Para insertar una página vacía en un documento PDF usando **Aspose.PDF Java para PHP**, simplemente invoca la clase **InsertEmptyPage**.
+Para insertar una página en blanco en un documento Pdf usando **Aspose.PDF Java for PHP**, simplemente invoque la clase **InsertEmptyPage**.
 
 Código PHP
 
 ```php
 
-# Abre el documento de destino
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# inserta una página vacía en un PDF
+# insert a empty page in a PDF
 $pdf->getPages()->insert(1);
 
-# Guarda el archivo de salida concatenado (el documento de destino)
+# Save the concatenated output file (the target document)
 $pdf->save($dataDir . "output.pdf");
 
-print "¡Página vacía añadida con éxito!";
+print "Empty page added successfully!";
 
 ```
 
-**Descargar Código Ejecutable**
+**Descargar Código en Ejecución**
 
-Descarga **Insertar una Página Vacía (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DescargarВ **Insert an Empty Page (Aspose.PDF)**В deВ cualquier de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPage.php)

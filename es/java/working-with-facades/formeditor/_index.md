@@ -1,19 +1,20 @@
 ---
-title: FormEditor Class
+title: Clase FormEditor
+linktitle: Clase FormEditor
 type: docs
-weight: 105
+weight: 150
 url: /es/java/formeditor-class/
-description: Esta sección explica cómo trabajar con com.aspose.pdf.facades utilizando la clase FormEditor.
-lastmod: "2021-06-05"
-draft: false
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: Aprenda cómo usar la fachada FormEditor en Java para crear campos de formulario, modificar campos existentes, personalizar la apariencia de los campos y agregar scripts o acciones de envío en formularios PDF.
+lastmod: "2026-09-03"
+TechArticle: true
+AlternativeHeadline: Cree y edite formularios PDF interactivos en Java con la clase FormEditor
+Abstract: Esta sección explica cómo usar la fachada FormEditor en Aspose.PDF for Java para crear y actualizar formularios PDF interactivos. Los ejemplos en Java cubren la creación de tipos de campo comunes, la modificación de la estructura de los campos, la personalización de la apariencia y la incorporación de scripts o acciones de envío.
 ---
+El Java `FormEditorExamples` La clase demuestra los principales flujos de trabajo de edición de campos disponibles a través de la API de Facades.
 
-- [Agregar campos de formulario PDF](/pdf/es/java/add-form-fields/)
-- [Decorar campo de formulario en PDF](/pdf/es/java/decorate-form-field/)
-- [Trabajar con elemento de lista](/pdf/es/java/working-with-list-item/)
-- [Copiar campo interior y exterior](/pdf/es/java/copy-inner-and-outer-field/)
-- [Mover y eliminar campo de formulario](/pdf/es/java/move-remove-form-field/)
-- [Importar y exportar campo de formulario](/pdf/es/java/import-export-form-field/)
+Utilice esta sección para aprender a:
+
+- crear campos de texto, casilla de verificación, cuadro combinado, cuadro de lista, botón de opción y botón de envío
+- añadir, eliminar, mover, renombrar, copiar o convertir campos existentes
+- personalizar alineación, apariencia, límites y números de comb
+- adjuntar scripts, URLs de envío y eliminar acciones de campo

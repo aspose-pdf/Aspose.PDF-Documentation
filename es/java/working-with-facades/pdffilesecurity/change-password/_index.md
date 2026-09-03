@@ -1,29 +1,59 @@
 ---
-title: Cambiar Contraseña de Archivo PDF
+title: Cambiar contraseña del archivo PDF
+linktitle: Cambiar contraseña del archivo PDF
 type: docs
-weight: 40
+weight: 10
 url: /es/java/change-password/
-description: Este tema explica cómo cambiar la contraseña en un archivo PDF usando la clase PdfFileSecurity.
-lastmod: "2021-06-05"
+description: Aprenda cómo cambiar las contraseñas de PDF en Java con la fachada PdfFileSecurity.
+lastmod: "2026-09-03"
 draft: false
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Actualice las contraseñas de usuario y propietario de PDF en Java
+Abstract: Aprenda cómo cambiar las contraseñas de PDF con Aspose.PDF for Java. El conjunto de ejemplos de Java cubre el cambio directo de contraseñas de usuario y propietario, el cambio de contraseñas mientras se restablecen los ajustes de seguridad, y un flujo de trabajo de cambio de contraseña estilo try que devuelve una bandera de éxito.
 ---
+## Cambiar contraseña del archivo PDF
 
-## Cambiar Contraseña de un Archivo PDF
+Usar `PdfFileSecurity` cuando necesitas rotar credenciales en un PDF ya asegurado.
 
-Para cambiar la contraseña de un archivo PDF, necesitas crear un objeto [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity) y luego llamar al método [ChangePassword](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#changePassword-java.lang.String-java.lang.String-java.lang.String-). Debes pasar la contraseña de propietario existente y las nuevas contraseñas de usuario y propietario al método [ChangePassword](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#changePassword-java.lang.String-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-).
+### Pasos
 
-El siguiente fragmento de código te muestra cómo cambiar las contraseñas de un archivo PDF.
+1. Crear un `PdfFileSecurity` instancia.
+2. Vincular el PDF seguro con `bindPdf`.
+3. Llame al apropiado `changePassword` sobrecargar, dependiendo de si también deseas restablecer los privilegios y el tamaño de la clave.
+4. Guarde el archivo actualizado y cierre el objeto de seguridad.
+
+### Ejemplos de Java
 
 ```java
-    public static void ChangePassword() {
-        PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
-        // Crear objeto PdfFileSecurity
-        if (pdfFileInfo.isEncrypted()) {
-            PdfFileSecurity fileSecurity = new PdfFileSecurity();
-            fileSecurity.bindPdf(_dataDir + "sample_encrypted.pdf");
-            fileSecurity.changePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", DocumentPrivilege.getPrint(),
-                    KeySize.x256);
-            fileSecurity.save(_dataDir + "sample_encrtypted1.pdf");
-        }
+public static void changeUserAndOwnerPassword(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    fileSecurity.changePassword("owner_password", "new_user_password", "new_owner_password");
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void changePasswordAndResetSecurity(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    fileSecurity.changePassword("owner_password", "new_user_password", "new_owner_password", privilege, KeySize.x128);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void tryChangePasswordWithoutException(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    if (fileSecurity.tryChangePassword("owner_password", "new_user_password", "new_owner_password")) {
+        fileSecurity.save(outputFile.toString());
+    } else {
+        System.out.println("Password change failed. Check owner password or document security.");
     }
+    fileSecurity.close();
+}
 ```

@@ -1,12 +1,13 @@
 ---
-title: Obtener Propiedades de Ventana de Documento y Visualización de Página en Python
+title: Obtener las propiedades de ventana del documento y de visualización de página en Python
+linktitle: Obtener las propiedades de ventana del documento y de visualización de página en Python
 type: docs
 weight: 30
 url: /es/java/get-document-window-and-page-display-properties-in-python/
-lastmod: "2021-06-05"
+description: Comprenda cómo recuperar las propiedades de ventana del documento y de visualización de página de un PDF en Python con Aspose.PDF para una presentación precisa.
+lastmod: "2026-09-03"
 ---
-
-Para obtener las propiedades de ventana de documento y visualización de página de un documento PDF usando **Aspose.PDF Java para Python**, simplemente invoca la clase **GetDocumentWindow**.
+Para obtener las propiedades de ventana del documento y de visualización de página de un documento PDF usando **Aspose.PDF Java for Python**, simplemente invoque la clase **GetDocumentWindow**.
 
 ```python
 
@@ -14,45 +15,44 @@ doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Obtener diferentes propiedades del documento
-# Posición de la ventana del documento - Predeterminado: false
+# Get different document properties
+# Position of document's window - Default: false
 print "CenterWindow :- " + str(doc.getCenterWindow())
 
-# Orden de lectura predominante; determina la posición de la página
-# cuando se muestra lado a lado - Predeterminado: L2R
+# Predominant reading order; determine the position of page
+# when displayed side by side - Default: L2R
 print "Direction :- " + str(doc.getDirection())
 
-# Si la barra de título de la ventana debe mostrar el título del documento.
-# Si es falso, la barra de título muestra el nombre del archivo PDF - Predeterminado: false
+# Whether window's title bar should display document title.
+# If false, title bar displays PDF file name - Default: false
 print "DisplayDocTitle :- " + str(doc.getDisplayDocTitle())
 
-# Si se debe redimensionar la ventana del documento para ajustarse al tamaño de
-# la primera página mostrada - Predeterminado: false
+#Whether to resize the document's window to fit the size of
+#first displayed page - Default: false
 print "FitWindow :- " + str(doc.getFitWindow())
 
-# Si se debe ocultar la barra de menú de la aplicación de visualización - Predeterminado: false
+# Whether to hide menu bar of the viewer application - Default: false
 print "HideMenuBar :-" + str(doc.getHideMenubar())
 
-# Si se debe ocultar la barra de herramientas de la aplicación de visualización - Predeterminado: false
+# Whether to hide tool bar of the viewer application - Default: false
 print "HideToolBar :-" + str(doc.getHideToolBar())
 
-# Si se deben ocultar elementos de la interfaz de usuario como barras de desplazamiento
-# dejando solo el contenido de la página mostrado - Predeterminado: false
+# Whether to hide UI elements like scroll bars
+# and leaving only the page contents displayed - Default: false
 print "HideWindowUI :-" + str(doc.getHideWindowUI())
 
-# El modo de página del documento. Cómo mostrar el documento al salir del modo de pantalla completa.
+# The document's page mode. How to display document on exiting full-screen mode.
 print "NonFullScreenPageMode :-" + str(doc.getNonFullScreenPageMode())
 
-# El diseño de la página, es decir, página única, una columna
+# The page layout i.e. single page, one column
 print "PageLayout :-" + str(doc.getPageLayout())
 
-# Cómo debe mostrarse el documento cuando se abre.
+#How the document should display when opened.
 print "pageMode :-" + str(doc.getPageMode())
 ```
 
+**Descargar código en ejecución**
 
-**Descargar Código en Ejecución**
-
-Descarga **Obtener Propiedades de Ventana y Visualización de Página del Documento (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+DescargarВ **Obtener propiedades de la ventana del documento y de visualización de página (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)

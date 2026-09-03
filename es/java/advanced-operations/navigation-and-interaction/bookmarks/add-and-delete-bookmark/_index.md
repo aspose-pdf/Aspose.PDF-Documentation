@@ -1,159 +1,101 @@
 ---
-title: Añadir y Eliminar un Marcador
-linktitle: Añadir y Eliminar un Marcador
+title: Agregar y eliminar marcadores PDF en Java
+linktitle: Agregar y eliminar un marcador
 type: docs
 weight: 10
 url: /es/java/add-and-delete-bookmark/
-description: Puedes añadir un marcador a un documento PDF con Java. Es posible eliminar todos o algunos marcadores de un documento PDF.
-lastmod: "2021-06-05"
+description: Aprenda cómo agregar y eliminar marcadores en documentos PDF usando Java.
+lastmod: "2026-09-03"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Agregar o eliminar marcadores en documentos PDF con Java
+Abstract: Este artículo muestra cómo crear y eliminar marcadores usando Aspose.PDF for Java. Los ejemplos demuestran agregar un marcador de nivel superior, crear una jerarquía de marcadores secundarios, eliminar todos los marcadores y eliminar un marcador específico por título.
 ---
+Utilice la colección de esquema del documento para administrar marcadores programáticamente.
 
-## Añadir un Marcador a un Documento PDF
+## Agregar un marcador de nivel superior
 
-Los marcadores se mantienen en la colección [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) del objeto Document, que a su vez está en la colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
+Utilice este ejemplo cuando el documento debe incluir una única entrada de esquema de nivel superior.
 
-Para añadir un marcador a un PDF:
-
-1. Abre un documento PDF usando el objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Crea un marcador y define sus propiedades.
-1. Añade la colección [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) a la colección Outlines.
-
-El siguiente fragmento de código te muestra cómo añadir un marcador en un documento PDF.
+1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear un [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) y configure su título, estilo y acción.
+1. Agregue el marcador a los contornos del documento y guarde el archivo.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.facades.Bookmark;
-import com.aspose.pdf.facades.Bookmarks;
-import com.aspose.pdf.facades.PdfBookmarkEditor;
-
-public class ExampleBookmarks {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Bookmarks/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Bookmarks\\";
-        return _dataDir;
-    }
-
-    public static void AddBookmarks() throws IOException {
-
-        Document pdfDocument = new Document(GetDataDir() + "AddBookmark.pdf");
-
-        // Crear un objeto de marcador
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
-        pdfOutline.setTitle("Esquema de Prueba");
+public static void addBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
+        pdfOutline.setTitle("Test Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
+        pdfOutline.setAction(new GoToAction(document.getPages().get_Item(1)));
 
-        // Establecer el número de página de destino
-        pdfOutline.setAction(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // Añadir un marcador en la colección de esquemas del documento.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // Guardar el documento actualizado
-        pdfDocument.save(_dataDir + "AddBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Agregar un marcador hijo
 
-## Añadir un Marcador Hijo al Documento PDF
+Este ejemplo crea un marcador principal y anida un marcador hijo debajo de él.
 
-Los marcadores pueden estar anidados, indicando una relación jerárquica con marcadores padre e hijo. Este artículo explica cómo añadir un marcador hijo, es decir, un marcador de segundo nivel, a un PDF.
-
-Para añadir un marcador hijo a un archivo PDF, primero añade un marcador padre:
-
-1. Abre un documento.
-1. Añade un marcador a la [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection), definiendo sus propiedades.
-1. Añade la OutlineItemCollection a la colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) del objeto Document.
-
-El marcador hijo se crea de la misma manera que el marcador padre, explicado anteriormente, pero se añade a la colección de Outlines del marcador padre.
-
-Los siguientes fragmentos de código muestran cómo añadir un marcador hijo a un documento PDF.
+1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crear padre y hijo [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) objetos.
+1. Agregue el hijo al padre, agregue el padre a la colección de contornos y guarde el documento.
 
 ```java
-    public static void AddChildBookmark() {
-        // Abrir documento
-        Document pdfDocument = new Document(GetDataDir() + "AddChildBookmark.pdf");
-
-        // Crear un objeto de marcador padre
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+public static void addChildBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
         pdfOutline.setTitle("Parent Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
 
-        // Crear un objeto de marcador hijo
-        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(document.getOutlines());
         pdfChildOutline.setTitle("Child Outline");
         pdfChildOutline.setItalic(true);
         pdfChildOutline.setBold(true);
 
-        // Añadir marcador hijo en la colección de marcadores padre
         pdfOutline.add(pdfChildOutline);
-        // Añadir marcador padre en la colección de contornos del documento.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // Guardar salida
-        pdfDocument.save(_dataDir + "AddChildBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Eliminar todos los marcadores
 
-## Eliminar todos los marcadores de un documento PDF
+Utilice este enfoque cuando la colección completa de contornos debe eliminarse del documento.
 
-Todos los marcadores en un PDF se mantienen en la colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). Este artículo explica cómo eliminar todos los marcadores de un archivo PDF.
-
-Para eliminar todos los marcadores de un archivo PDF:
-
-1. Llame al método Delete de la colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-1. Guarde el archivo modificado usando el método Save del objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-Los siguientes fragmentos de código muestran cómo eliminar todos los marcadores de un documento PDF.
+1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Eliminar la colección completa de contornos.
+1. Guardar el archivo de salida limpio.
 
 ```java
-    public static void DeleteAllBookmarksFromPDFDocument() {
-        // Abrir documento
-        Document pdfDocument = new Document(GetDataDir() + "DeleteAllBookmarks.pdf");
-
-        // Eliminar todos los marcadores
-        pdfDocument.getOutlines().delete();
-
-        // Guardar archivo actualizado
-        pdfDocument.save(_dataDir + "DeleteAllBookmarks_out.pdf");
+public static void deleteBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete();
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## Eliminar un marcador particular de un documento PDF
+## Eliminar un marcador específico
 
-[Eliminar todos los adjuntos del documento PDF](https://docs.aspose.com/pdf/java/working-with-attachments/) mostró cómo eliminar todos los adjuntos de un archivo PDF. También es posible eliminar solo adjuntos específicos.
+Utilice este ejemplo cuando se deba eliminar un marcador con nombre sin borrar todo el árbol de marcadores.
 
-Para eliminar un marcador particular de un archivo PDF:
-
-1. Pase el título del marcador como parámetro al método [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) de la colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-1. Luego guarde el archivo actualizado con el método Save del objeto Document.
-
-La clase [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) proporciona la colección [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). El método [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) elimina cualquier marcador con el título pasado al método.
-
-Los siguientes fragmentos de código muestran cómo eliminar un marcador particular del documento PDF.
+1. Abrir el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Eliminar el marcador por título de la colección de esquemas.
+1. Guardar el documento actualizado.
 
 ```java
-    public static void DeleteParticularBookmarkPDFDocument() {
-        // Abrir documento
-        Document pdfDocument = new Document(GetDataDir() + "DeleteParticularBookmark.pdf");
-
-        // Eliminar marcador específico por Título
-        pdfDocument.getOutlines().delete("Child Outline");
-
-        // Guardar archivo actualizado
-        pdfDocument.save(_dataDir + "DeleteParticularBookmark_out.pdf");
+public static void deleteBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete("Child Outline");
+        document.save(outputFile.toString());
     }
+}
 ```
