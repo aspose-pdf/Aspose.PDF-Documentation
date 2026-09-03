@@ -18,7 +18,7 @@ Ada beberapa batasan saat menggunakan komponen ini.
 
 ## Informasi Pembuat PDF
 
-Harap perhatikan bahwa Anda tidak dapat menetapkan nilai pada kolom `**Aplikasi** dan `**Producer**, karena Aspose Ltd. dan Aspose.PDF for JasperReports x.x.x akan ditampilkan pada kolom ini. 
+Harap perhatikan bahwa Anda tidak dapat menetapkan nilai pada kolom **Application** dan **Producer**, karena Aspose Ltd. dan Aspose.PDF for JasperReports x.x.x akan ditampilkan pada kolom ini.
 
 {{% /alert %}}
 
