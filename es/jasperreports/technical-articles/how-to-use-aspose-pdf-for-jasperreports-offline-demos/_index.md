@@ -20,7 +20,7 @@ Para ejecutar Aspose.PDF para demostraciones de JasperReports:
 
 {{% alert color="primary" %}}
 
-1. Descargue JasperReports desde <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>.. Asegúrese de descargar todo el proyecto archivado con el código fuente y las demostraciones, no solo un único JAR.
+1. Descargue JasperReports desde <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>. Asegúrese de descargar todo el proyecto archivado con el código fuente y las demostraciones, no solo un único JAR.
 2. Desempaquete el proyecto archivado en alguna ubicación de su disco duro, por ejemplo C:\.
 3. Copie todas las carpetas de demostración de la carpeta \demo en **Aspose.PDF.JasperReports.zip** a ```<InstallDir>```\jasperreports\demo\samples, where ```<InstallDir>``` es la ubicación donde descomprimió JasperReports. Este paso es necesario porque los scripts de compilación de demostración se basan en la estructura de carpetas de JasperReports; de lo contrario, deberá modificar los scripts de compilación.
 4. Copie el archivo **aspose.pdf.jasperreports.jar** de la carpeta \lib en **Aspose.PDF.JasperReports.zip** a ```<InstallDir>```\jasperreports\lib.
