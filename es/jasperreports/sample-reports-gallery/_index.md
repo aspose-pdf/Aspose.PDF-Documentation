@@ -1,10 +1,10 @@
 ﻿---
 title: Galería de informes de muestra
-linktitle: Sample Reports Gallery
+linktitle: Galería de informes de muestra
 type: docs
 weight: 40
 url: /es/jasperreports/sample-reports-gallery/
-description: View sample reports created using Aspose.PDF for JasperReports. See how it enhances PDF export capabilities.
+description: Vea informes de muestra creados con Aspose.PDF for JasperReports y cómo mejora las capacidades de exportación a PDF.
 lastmod: "2026-08-31"
 ---
 
