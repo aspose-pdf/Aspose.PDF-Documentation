@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 Cette section comprend les sujets suivants :
 
-- [Déploiement facile et léger] (/pdf/jasperreports/easy-and-lightweight-deployment/)
-- [Simple and Affordable Licensing](/pdf/fr/jasperreports/simple-and-affordable-licensing/)
-- [Support technique gratuit de classe mondiale] (/pdf/jasperreports/world-class-free-technical-support/)
+- [Déploiement facile et léger](/pdf/fr/jasperreports/easy-and-lightweight-deployment/)
+- [Licence simple et abordable](/pdf/fr/jasperreports/simple-and-affordable-licensing/)
+- [Support technique gratuit de classe mondiale](/pdf/fr/jasperreports/world-class-free-technical-support/)
 
