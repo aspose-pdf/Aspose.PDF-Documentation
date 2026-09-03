@@ -24,9 +24,9 @@ Aspose.PDF for SharePoint es una solución que permite a los usuarios exportar l
 
 A continuación se encuentran los enlaces a algunos recursos útiles que puede necesitar para realizar sus tareas.
 
-- [Información general del producto Aspose.PDF for SharePoint](/pdf/sharepoint/product-overview/)
-- [Formatos de archivo compatibles con Aspose.PDF for SharePoint](/pdf/sharepoint/supported-file-formats/)
-- [Características de Aspose.PDF for SharePoint](/pdf/sharepoint/features/)
+- [Información general del producto Aspose.PDF for SharePoint](/pdf/es/sharepoint/product-overview/)
+- [Formatos de archivo compatibles con Aspose.PDF for SharePoint](/pdf/es/sharepoint/supported-file-formats/)
+- [Características de Aspose.PDF for SharePoint](/pdf/es/sharepoint/features/)
 - [Notas de la versión de Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/release-notes/)
 - [Descargar Aspose.PDF for SharePoint](https://releases.aspose.com/pdf/sharepoint/)
 - [Instalar Aspose.PDF for SharePoint](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)
