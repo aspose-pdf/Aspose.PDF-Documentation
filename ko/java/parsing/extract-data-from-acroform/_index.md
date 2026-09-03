@@ -1,182 +1,196 @@
 ---
-title: AcroForm에서 데이터 추출
+title: Java를 사용하여 AcroForm에서 데이터 추출
 linktitle: AcroForm에서 데이터 추출
 type: docs
 weight: 50
-url: /ko/java/extract-data-from-acroform/
-description: AcroForms는 많은 PDF 문서에 존재합니다. 이 기사는 Java와 Aspose.PDF를 사용하여 AcroForms에서 데이터를 추출하는 방법을 이해하는 데 도움을 주기 위한 것입니다.
-lastmod: "2021-06-05"
+url: /java/extract-data-from-acroform/
+description: Aspose.PDF를 사용하면 PDF 파일에서 양식 필드 데이터를 쉽게 추출할 수 있습니다. AcroForms에서 데이터를 추출하고 이를 JSON, XML 또는 FDF 형식으로 저장하는 방법을 알아보세요.
+lastmod: "2026-06-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java를 통해 AcroForm에서 데이터를 추출하는 방법
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 파일에서 AcroForm 데이터를 추출하고 내보내는 방법을 설명합니다. 모든 양식 필드 읽기, 이름으로 필드 값 검색, 필드 데이터를 JSON으로 내보내기, 양식 데이터를 XML, FDF 및 XFDF 형식으로 쓰기 등을 다룹니다.
 ---
+## 모든 양식 필드 추출
 
-## PDF 문서에서 양식 필드 추출
 
-Java용 Aspose.PDF는 양식 필드를 생성하고 채울 수 있을 뿐만 아니라 PDF 파일에서 양식 필드 데이터나 양식 필드 정보를 쉽게 추출할 수 있습니다.
 
-양식 필드의 이름을 미리 알지 못한다고 가정해 보겠습니다. 그런 경우 PDF의 각 페이지를 반복하여 PDF에 있는 모든 AcroForm의 정보와 양식 필드의 값을 추출해야 합니다. 양식에 접근하려면 [getForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--) 메서드를 사용해야 합니다.
+전체 문서 개체 모델을 통해 작업하지 않고 필드 이름과 값을 읽으려면 `com.aspose.pdf.facades.Form`을 사용하세요.
+
+
+1. 
+전체 문서 객체 모델을 순회하지 않고도 AcroForm 필드를 읽을 수 있도록 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 파사드로 소스 PDF 양식을 엽니다.
+
+1. 
+양식에 있는 모든 필드 식별자를 수집하려면 `getFieldNames()`으로 전화하세요.
+
+1. 
+해당 필드 이름을 반복하고 `getField(fieldName)`을 호출하여 각 필드 값을 읽습니다.
+1. 추출된 키-값 쌍에서 출력 문자열을 작성하고 집계된 양식 데이터를 인쇄합니다.
+
+1. 
+`finally` 블록에서 [양식](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 파사드를 닫습니다.
+
 
 ```java
-public static void ExtractFormFields() {
-    String path= "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(path);
-    // 모든 필드에서 값 가져오기
-    for (com.aspose.pdf.Field formField : document.getForm().getFields()) {
-        System.out.println("필드 이름 :" + formField.getPartialName());
-        System.out.println("값 : " + formField.getValue());
-    }
-}
-```
-
-
-만약 폼 필드의 이름을 알고 있고 해당 값들을 추출하고 싶다면, Documents.Form 컬렉션에서 인덱서를 사용하여 이 데이터를 빠르게 검색할 수 있습니다.
-
-## 제목으로 폼 필드 값 검색하기
-
-폼 필드의 Value 속성을 사용하여 특정 필드의 값을 얻을 수 있습니다. 값을 얻기 위해, [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체의 [폼 필드 컬렉션](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--)에서 폼 필드를 가져옵니다. 이 예제는 [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField)를 선택하고 [getValue](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--) 메서드를 사용하여 그 값을 가져옵니다.
-
-```java
-public static void ExtractFormDataByName() {
-    String fileName = _dataDir+"/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(fileName);        
-    com.aspose.pdf.TextBoxField textBoxField1 = (com.aspose.pdf.TextBoxField)document.getForm().get("Last Name");
-
-    System.out.println("Last Name :" + textBoxField1.getValue());
-}
-```
-
-
-## PDF 문서에서 양식 필드를 JSON으로 추출하기
-
-양식 데이터를 JSON으로 내보내려면 [Gson](https://github.com/google/gson)과 같은 3rd party 라이브러리를 사용하는 것을 권장합니다. 다음의 스니펫은 `Name`과 `Value`를 JSON으로 내보내는 방법을 보여줍니다:
-
-```java
-public static void ExtractFormFieldsToJson() {
-    String path = "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(path);
-
-    java.util.List<FormElement> formData = new java.util.ArrayList<FormElement>();
-    for (com.aspose.pdf.Field formField : document.getForm().getFields()) {
-        formData.add(new FormElement(formField.getPartialName(), formField.getValue()));
-    }
-
-    Gson gson = new Gson();
-    String jsonString = gson.toJson(formData);
-    System.out.println(jsonString);
-}
-```
-
-이 예제에서는 추가적인 클래스를 사용했습니다
-
-```java
-public class FormElement {
-    public FormElement(String partialName, String Value) {
-        this.Name = partialName;
-        this.Value = Value;
-    }
-    public String Name;
-    public String Value;
-}
-```
-
-
-## PDF 파일에서 XML로 데이터 추출
-
-Form 클래스는 ExportXml 메서드를 사용하여 PDF 파일에서 XML 파일로 데이터를 내보낼 수 있게 해줍니다. 데이터를 XML로 내보내기 위해서는 Form 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 ExportXml 메서드를 호출해야 합니다. 마지막으로 FileStream 객체를 닫고 Form 객체를 해제할 수 있습니다. 다음 코드 스니펫은 데이터를 XML 파일로 내보내는 방법을 보여줍니다.
-
-```java
-public static void ExtractFormFieldsToXML() {
-
-    String dataDir = "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-
-    // 문서 열기
-    com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form();
-    form.bindPdf(dataDir + "input.pdf");
-
+public static void extractFormFields(Path inputFile) {
+    Form form = new Form(inputFile.toString());
     try {
-        // XML 파일 생성
-        FileOutputStream xmlOutputStream;
-
-        xmlOutputStream = new FileOutputStream(dataDir + "input.xml");
-        // 데이터 내보내기
-        form.exportXml(xmlOutputStream);
-
-        // 파일 스트림 닫기
-        xmlOutputStream.close();
-
-    } catch (IOException e) {
-
-        e.printStackTrace();
+        StringBuilder formValues = new StringBuilder("{");
+        String[] fieldNames = form.getFieldNames();
+        for (int i = 0; i < fieldNames.length; i++) {
+            if (i > 0) {
+                formValues.append(", ");
+            }
+            formValues.append(fieldNames[i]).append("=").append(form.getField(fieldNames[i]));
+        }
+        formValues.append("}");
+        System.out.println(formValues);
+    } finally {
+        form.close();
     }
-
-    // 문서 닫기
-    form.dispose();
-    ;
 }
 ```
 
+## 
+이름으로 필드 값 검색
 
-## PDF 파일에서 FDF로 데이터 내보내기
 
-PDF 양식 데이터를 XFDF 파일로 내보내기 위해, 우리는 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) 클래스의 [exportFdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportFdf-java.io.OutputStream-) 메서드를 사용할 수 있습니다.
+1. 
+[Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 파사드를 사용하여 소스 PDF 양식을 엽니다.
 
-이 클래스는 `com.aspose.pdf.facades`에 속하는 클래스임을 주의하세요. 비슷한 이름에도 불구하고, 이 클래스는 약간 다른 목적을 가지고 있습니다.
+1. 
+AcroForm 데이터에서 현재 값을 읽으려면 요청된 필드 이름으로 `getField(fieldName)`을 호출하세요.
+1. 추출된 필드 값을 인쇄합니다.
 
-FDF로 데이터를 내보내기 위해서는 `Form` 클래스의 객체를 생성한 후, `OutputStream` 객체를 사용하여 `exportXfdf` 메서드를 호출해야 합니다. 다음 코드 스니펫은 데이터를 XFDF 파일로 내보내는 방법을 보여줍니다.
+1. 
+`finally` 블록에서 [양식](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 파사드를 닫습니다.
+
 
 ```java
- public static void ExtractFormExportFDF() {
-        String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
-        String fdfFileName = Paths.get(_dataDir, "student.fdf").toString();
-        com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
-
-        OutputStream fdfOutputStream;
-        try {
-
-            fdfOutputStream = new FileOutputStream(fdfFileName);
-
-            // 데이터 내보내기
-            form.exportFdf(fdfOutputStream);
-
-            // 파일 스트림 닫기
-            fdfOutputStream.close();
-
-        } catch (IOException e) {
-            // TODO: 예외 처리
-            e.printStackTrace();
-        }
-
+public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
+    Form form = new Form(inputFile.toString());
+    try {
+        String formValue = form.getField(fieldName);
+        System.out.println(formValue);
+    } finally {
+        form.close();
     }
+}
 ```
 
+## 
+양식 필드를 JSON으로 내보내기
 
-## PDF 파일에서 XFDF로 데이터 내보내기
 
-PDF 양식 데이터를 XFDF 파일로 내보내기 위해, 우리는 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form) 클래스의 [exportXfdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportXfdf-java.io.OutputStream-) 메서드를 사용할 수 있습니다.
+1. 
+[Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 파사드를 사용하여 소스 PDF 양식을 엽니다.
 
-XFDF로 데이터를 내보내기 위해서는 `Form` 클래스의 객체를 생성한 후 `OutputStream` 객체를 사용하여 `exportXfdf` 메서드를 호출해야 합니다. 다음 코드 스니펫은 데이터를 XFDF 파일로 내보내는 방법을 보여줍니다.
+1. 
+AcroForm에서 사용 가능한 모든 필드 식별자를 수집하려면 `getFieldNames()`으로 전화하세요.
+1. 해당 필드를 반복하고, 이름과 값을 이스케이프하고, JSON 개체 문자열을 빌드합니다.
+
+1. 
+JSON 결과를 출력 파일에 씁니다.
+
+1. 
+`finally` 블록에서 [양식](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 파사드를 닫습니다.
+
 
 ```java
-public static void ExtractFormExportXFDF() {
-        String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
-        String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
-        com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
-
-        OutputStream fdfOutputStream;
-        try {
-
-            fdfOutputStream = new FileOutputStream(fdfFileName);
-
-            // 데이터 내보내기
-            form.exportXfdf(fdfOutputStream);
-
-            // 파일 스트림 닫기
-            fdfOutputStream.close();
-
-        } catch (IOException e) {
-            // TODO: 예외 처리
-            e.printStackTrace();
+public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form(inputFile.toString());
+    try {
+        StringBuilder json = new StringBuilder();
+        json.append("{\n");
+        String[] fieldNames = form.getFieldNames();
+        for (int i = 0; i < fieldNames.length; i++) {
+            String fieldName = fieldNames[i];
+            json.append("    \"").append(escapeJson(fieldName)).append("\": \"")
+                    .append(escapeJson(form.getField(fieldName))).append("\"");
+            if (i < fieldNames.length - 1) {
+                json.append(",");
+            }
+            json.append("\n");
         }
+        json.append("}\n");
+        Files.writeString(outputFile, json.toString());
+    } finally {
+        form.close();
     }
+}
+```
+
+## 
+양식 데이터를 XML, FDF 및 XFDF로 내보내기
+
+
+1. 
+아직 문서를 바인딩하지 않고 [양식](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) Facade를 만듭니다.
+1. XML 파일의 출력 스트림을 열고 `bindPdf(...)`을 사용하여 소스 PDF를 Facade에 바인딩합니다.
+
+1. 
+`exportXml(stream)`을 호출하면 현재 양식 필드 데이터가 XML로 직렬화됩니다.
+
+1. 
+내보내기가 완료된 후 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) Facade를 닫습니다.
+
+
+```java
+public static void extractDataToXml(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportXml(stream);
+    } finally {
+        form.close();
+    }
+}
+```
+
+1. 
+아직 문서를 바인딩하지 않고 [양식](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) Facade를 만듭니다.
+
+1. 
+FDF 파일의 출력 스트림을 열고 `bindPdf(...)`을 사용하여 소스 PDF를 Facade에 바인딩합니다.
+1. `exportFdf(stream)`을 호출하면 양식 필드 데이터가 FDF 형식으로 직렬화됩니다.
+
+1. 
+내보내기가 완료된 후 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) Facade를 닫습니다.
+
+
+```java
+public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportFdf(stream);
+    } finally {
+        form.close();
+    }
+}
+```
+
+1. 
+아직 문서를 바인딩하지 않고 [양식](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) Facade를 만듭니다.
+
+1. 
+XFDF 파일의 출력 스트림을 열고 `bindPdf(...)`을 사용하여 소스 PDF를 Facade에 바인딩합니다.
+
+1. 
+`exportXfdf(stream)`을 호출하면 양식 필드 데이터가 XFDF 형식으로 직렬화됩니다.
+1. 내보내기가 완료된 후 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) Facade를 닫습니다.
+
+```java
+public static void extractDataToXfdf(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportXfdf(stream);
+    } finally {
+        form.close();
+    }
+}
 ```

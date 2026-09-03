@@ -1,171 +1,190 @@
 ---
-title: PDF 파일을 다른 형식으로 변환하기
-linktitle: PDF를 다른 형식으로 변환하기
+title: Java에서 PDF를 EPUB, 텍스트, XPS 등으로 변환
+linktitle: PDF를 다른 형식으로 변환
 type: docs
 weight: 90
-url: /ko/java/convert-pdf-to-other-files/
-lastmod: "2021-11-19"
-description: 이 주제는 Aspose.PDF가 PDF 파일을 다른 파일 형식으로 변환할 수 있도록 하는 방법을 보여줍니다.
+url: /java/convert-pdf-to-other-files/
+lastmod: "2026-06-16"
+description: Aspose.PDF를 사용하여 Java에서 PDF 파일을 EPUB, LaTeX, Markdown, 텍스트, XPS 및 MobiXML로 변환하는 방법을 알아보세요.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: Java에서 PDF를 다른 형식으로 변환하는 방법
+Abstract: 이 문서에서는 필요한 경우 형식별 저장 옵션과 함께 Java용 Aspose.PDF를 사용하여 PDF 파일을 EPUB, TeX, Markdown, 텍스트, XPS 및 MobiXML 형식으로 변환하는 방법을 설명합니다.
 ---
+Java용 Aspose.PDF는 PDF 문서를 텍스트, 전자책, 인쇄 및 마크업 지향 출력 형식으로 내보낼 수 있습니다.
 
-## PDF를 EPUB로 변환하기
 
-{{% alert color="success" %}}
-**PDF를 EPUB로 온라인으로 변환 시도하기**
+## 
+PDF를 EPUB로 변환
 
-Aspose.PDF for Java는 무료 온라인 애플리케이션 ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub)를 제공하여 기능과 품질을 직접 확인해 볼 수 있습니다.
 
-[![Aspose.PDF Convertion PDF to EPUB with Free App](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
-{{% /alert %}}
 
-**<abbr title="Electronic Publication">EPUB</abbr>** (전자 출판의 약자)는 국제 디지털 출판 포럼(IDPF)의 무료 오픈 전자책 표준입니다.
- 파일은 .epub 확장자를 가지고 있습니다. EPUB은 특정 디스플레이 장치에 맞게 텍스트를 최적화할 수 있는 리플로우 가능한 콘텐츠를 위해 설계되었습니다. EPUB은 고정 레이아웃 콘텐츠도 지원합니다. 이 형식은 출판사와 변환 업체가 내부적으로 사용할 수 있으며, 배포 및 판매를 위한 단일 형식으로 의도되었습니다. 이는 Open eBook 표준을 대체합니다.
+PDF 문서를 EPUB 전자책 형식으로 내보내야 하는 경우 이 예를 사용하세요.
 
-Aspose.PDF for Java는 PDF 문서를 EPUB 형식으로 변환하는 기능을 지원합니다. Aspose.PDF for Java에는 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) 메서드의 두 번째 인수로 사용할 수 있는 [EpubSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/EpubSaveOptions)라는 클래스가 있어 EPUB 파일을 생성할 수 있습니다. 이 요구 사항을 충족하기 위해 다음 코드 스니펫을 사용해 보세요.
+
+1. 
+[`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 엽니다.
+
+1. 
+[`EpubSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubsaveoptions/)을 생성하고 인식 모드를 `Flow`로 설정하세요.
+1. PDF 콘텐츠를 리플로우 가능한 EPUB 마크업으로 내보내려면 `document.save(outputFile.toString(), saveOptions)`으로 전화하세요.
+
+1. 
+변환된 EPUB 파일을 저장합니다.
+
 
 ```java
-// PDF 문서 로드
-Document document = new Document(DATA_DIR + "PDFToEPUB.pdf");
-// Epub 저장 옵션 인스턴스화
-EpubSaveOptions options = new EpubSaveOptions();
-// 콘텐츠에 대한 레이아웃 지정
-options.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
-// ePUB 문서 저장
-document.save(DATA_DIR + "PDFToEPUB_out.epub", options);
-document.close();
+public static void convertPdfToEpub(Path inputFile, Path outputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            EpubSaveOptions saveOptions = new EpubSaveOptions();
+            saveOptions.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
+    }
 ```
 
-## PDF를 LaTeX/TeX로 변환
+## 
+PDF를 TeX로 변환
 
-**Aspose.PDF for Java**는 PDF를 LaTeX/TeX로 변환하는 것을 지원합니다. LaTeX 파일 형식은 전문적인 조판을 위한 TeX 기반 문서 준비 시스템에서 사용되는 특수 마크업이 있는 텍스트 파일 형식입니다.
 
-PDF 파일을 TeX로 변환하기 위해, Aspose.PDF는 변환 과정 중 임시 이미지를 저장하기 위한 `setOutDirectoryPath` 메서드를 제공하는 [TeXSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXSaveOptions) 클래스를 갖고 있습니다.
 
-다음 코드 스니펫은 Java로 PDF 파일을 TEX 형식으로 변환하는 과정을 보여줍니다.
+PDF 내용을 TeX 마크업으로 내보내야 하는 경우 이 예를 사용하십시오.
+
+
+1. 
+[`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 엽니다.
+1. TeX 직렬화를 위해 [`TeXSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texsaveoptions/)을 만듭니다.
+
+1. 
+`document.save(outputFile.toString(), saveOptions)`을 호출하면 PDF 콘텐츠가 TeX 마크업으로 내보내집니다.
+
+1. 
+결과 TeX 파일을 저장합니다.
+
 
 ```java
-String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToTeX.pdf").toString();
-String texDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToTeX_out.tex").toString();
-
-// Document 객체 생성
-Document document = new Document(documentFileName);
-
-// LaTex 저장 옵션 인스턴스화
-TeXSaveOptions saveOptions = new TeXSaveOptions();
-
-// 출력 디렉토리 지정
-String pathToOutputDirectory = DATA_DIR.toString();
-
-// 저장 옵션 객체에 출력 디렉토리 경로 설정
-saveOptions.setOutDirectoryPath(pathToOutputDirectory);
-
-// PDF 파일을 LaTex 형식으로 저장
-document.save(texDocumentFileName, saveOptions);
-document.close();
-```
-
-
-{{% alert color="success" %}}
-**PDF를 LaTeX/TeX로 온라인 변환 시도**
-
-Aspose.PDF for Java는 온라인 무료 애플리케이션 ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex)를 제공합니다. 여기서 기능과 품질을 조사해 볼 수 있습니다.
-
-[![Aspose.PDF Convertion PDF to LaTeX/TeX with Free App](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
-{{% /alert %}}
-
-## PDF를 텍스트로 변환
-
-**Aspose.PDF for Java**는 전체 PDF 문서와 단일 페이지를 텍스트 파일로 변환하는 것을 지원합니다.
-
-### 전체 PDF 문서를 텍스트 파일로 변환
-
-[TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) 클래스의 Visit 메소드를 사용하여 PDF 문서를 TXT 파일로 변환할 수 있습니다.
-
-다음 코드 스니펫은 모든 페이지에서 텍스트를 추출하는 방법을 설명합니다.
-
-```java
-// 문서 열기
-String pdfFileName = Paths.get(DATA_DIR.toString(), "demo.pdf").toString();
-String txtFileName = Paths.get(DATA_DIR.toString(), "PDFToTXT_out.txt").toString();
-
-// PDF 문서 로드
-Document document = new Document(pdfFileName);
-TextAbsorber ta = new TextAbsorber();
-ta.visit(document);
-// 추출된 텍스트를 텍스트 파일에 저장
-BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
-writer.write(ta.getText());
-writer.close();
-```
-
-
-{{% alert color="success" %}}
-**PDF를 텍스트로 온라인 변환 시도하기**
-
-Aspose.PDF for Java는 온라인 무료 애플리케이션 ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)을 제공하여 기능과 품질을 조사할 수 있습니다.
-
-[![Aspose.PDF 변환 PDF를 텍스트로 무료 앱으로](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
-{{% /alert %}}
-
-### PDF 페이지를 텍스트 파일로 변환하기
-
-Aspose.PDF for Java를 사용하여 PDF 문서를 TXT 파일로 변환할 수 있습니다. 이 작업을 해결하려면 [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) 클래스의 Visit 메서드를 사용해야 합니다.
-
-다음 코드 스니펫은 특정 페이지에서 텍스트를 추출하는 방법을 설명합니다.
-
-```java
-String pdfFileName = Paths.get(DATA_DIR.toString(), "demo.pdf").toString();
-String txtFileName = Paths.get(DATA_DIR.toString(), "PDFToTXT_out.txt").toString();
-
-// PDF 문서 로드
-Document document = new Document(pdfFileName);
-
-TextAbsorber ta = new TextAbsorber();
-int[] pages = new int[] { 1, 3, 4 };
-
-for (int page : pages) {
-    ta.visit(document.getPages().get_Item(page));
+public static void convertPdfToTex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.save(outputFile.toString(), new TeXSaveOptions());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
-
-// 추출한 텍스트를 텍스트 파일에 저장
-BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
-writer.write(ta.getText());
-writer.close();
-document.close();
 ```
 
+## 
+PDF를 일반 텍스트로 변환
 
-## PDF를 XPS로 변환하기
 
-**Aspose.PDF for Java**는 PDF 파일을 <abbr title="XML Paper Specification">XPS</abbr> 형식으로 변환할 수 있는 기능을 제공합니다. Java로 PDF 파일을 XPS 형식으로 변환하기 위해 제공된 코드 스니펫을 사용해 봅시다.
 
-{{% alert color="success" %}}
-**PDF를 XPS로 온라인 변환 시도하기**
+PDF 문서를 텍스트 파일로 내보내야 하는 경우 이 예를 사용하십시오.
 
-Aspose.PDF for Java는 ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps)라는 무료 온라인 응용 프로그램을 제공합니다. 여기서 기능과 품질을 조사해 볼 수 있습니다.
+1. [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 엽니다.
 
-[![Aspose.PDF 변환 PDF를 XPS로 무료 앱으로](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
-{{% /alert %}}
+1. 
+PDF 페이지에서 텍스트 콘텐츠를 추출하려면 [`TextDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/textdevice/)을 만드세요.
 
-XPS 파일 형식은 주로 Microsoft Corporation의 XML Paper Specification과 연관되어 있습니다. XML Paper Specification (XPS)은 이전에 Metro라는 코드명이 붙여졌으며, 차세대 인쇄 경로(NGPP) 마케팅 개념을 포함하는 Microsoft의 Windows 운영 체제에 문서 생성 및 보기 통합을 위한 이니셔티브입니다.
+1. 
+첫 번째 페이지를 일반 텍스트로 작성하려면 `device.process(document.getPages().get_Item(1), outputFile.toString())`을 호출하세요.
 
-PDF 파일을 XPS로 변환하려면 Aspose.PDF는 XPS 파일을 생성하기 위해 Document.save(..) 생성자의 두 번째 인수로 사용되는 [XpsSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/XpsSaveOptions) 클래스를 제공합니다.
- 다음 코드 스니펫은 PDF 파일을 XPS 형식으로 변환하는 과정을 보여줍니다.
+1. 
+텍스트 출력 파일을 저장합니다.
+
 
 ```java
-String documentFileName = Paths.get(DATA_DIR.toString(), "sample.pdf").toString();
-String xpsDocumentFileName = Paths.get(DATA_DIR.toString(), "sample-res-xps.xps").toString();
+public static void convertPdfToTxt(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextDevice device = new TextDevice();
+        device.process(document.getPages().get_Item(1), outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-// Document 객체 생성
-Document document = new Document(documentFileName);
+## 
+PDF를 XPS로 변환
 
-// XPS 저장 옵션 인스턴스화
-XpsSaveOptions saveOptions = new XpsSaveOptions();
+PDF 문서를 XPS 형식으로 변환해야 하는 경우 이 예를 사용하십시오.
 
-// XML 형식으로 출력 저장
-document.save(xpsDocumentFileName, saveOptions);
-document.close();
+
+1. 
+[`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 엽니다.
+
+1. 
+[`XpsSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpssaveoptions/)을 만들고 내장된 트루타입 글꼴을 활성화하세요.
+
+1. 
+`document.save(outputFile.toString(), saveOptions)`으로 전화하면 PDF가 포함된 글꼴 리소스가 있는 XPS로 직렬화됩니다.
+
+1. 
+변환된 XPS 파일을 저장합니다.
+
+```java
+public static void convertPdfToXps(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XpsSaveOptions saveOptions = new XpsSaveOptions();
+        saveOptions.setUseEmbeddedTrueTypeFonts(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## PDF를 마크다운으로 변환
+
+
+
+PDF 콘텐츠를 Markdown으로 내보내야 하는 경우 이 예를 사용하세요.
+
+
+1. 
+[`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 엽니다.
+
+1. 
+[`MarkdownSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/markdownsaveoptions/)을 만들고 이미지 리소스 디렉터리와 HTML 이미지 태그 출력을 구성합니다.
+
+1. 
+`document.save(outputFile.toString(), saveOptions)`으로 전화하면 PDF 콘텐츠가 외부 이미지 리소스와 함께 Markdown으로 내보내집니다.
+1. 생성된 Markdown 파일을 저장합니다.
+
+
+```java
+public static void convertPdfToMd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+        saveOptions.setResourcesDirectoryName("images");
+        saveOptions.setUseImageHtmlTag(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 
+PDF를 Mobi XML로 변환
+
+
+
+PDF 컨텐츠를 Mobi 호환 XML로 내보내야 하는 경우 이 예를 사용하십시오.
+
+
+1. 
+[`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 엽니다.
+
+1. 
+대상 직렬화 형식으로 [`SaveFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/saveformat/) `MobiXml`을 선택합니다.
+1. `document.save(outputFile.toString(), SaveFormat.MobiXml)`으로 전화하면 PDF가 Mobi 호환 XML로 내보내집니다.
+
+1. 
+변환된 파일을 저장합니다.
+
+```java
+public static void convertPdfToMobiXml(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.save(outputFile.toString(), SaveFormat.MobiXml);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

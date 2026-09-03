@@ -1,44 +1,58 @@
 ---
-title: 프로그램적으로 PDF 페이지 삭제하기
+title: Java에서 PDF 페이지 삭제
 linktitle: PDF 페이지 삭제
 type: docs
-weight: 40
-url: /ko/java/delete-pages/
-description: Java 라이브러리를 사용하여 PDF 파일에서 페이지를 삭제할 수 있습니다.
-lastmod: "2021-06-05"
+weight: 80
+url: /java/delete-pages/
+description: Java에서 PDF 파일의 페이지를 삭제하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java에서 하나 이상의 PDF 페이지 삭제
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 파일에서 페이지를 제거하는 방법을 설명합니다. 페이지 컬렉션 API를 통해 단일 페이지 삭제와 여러 페이지를 한 번에 삭제하는 방법을 다룹니다.
 ---
+PDF에서 하나 이상의 페이지를 제거해야 하는 경우 문서 페이지 컬렉션을 사용하세요.
 
-Aspose.PDF for Java를 사용하여 PDF 파일에서 페이지를 삭제할 수 있습니다. [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection)에서 특정 페이지를 삭제하려면 delete() 메서드를 호출하고 삭제하려는 특정 페이지의 인덱스를 지정합니다. 그런 다음 save 메서드를 호출하여 업데이트된 PDF 파일을 저장합니다.
+## 단일 페이지 삭제
 
-## PDF 파일에서 페이지 삭제
+색인별로 한 페이지를 제거해야 할 때 이 예를 사용하십시오.
 
-1. Delete 메서드를 호출하고 페이지의 인덱스를 지정합니다.
-1. Save 메서드를 호출하여 업데이트된 PDF 파일을 저장합니다.
-다음 코드 스니펫은 Java를 사용하여 PDF 파일에서 특정 페이지를 삭제하는 방법을 보여줍니다.
+1. 원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+1. 페이지 컬렉션에서 대상 페이지를 삭제합니다.
+1. 업데이트된 문서를 저장합니다.
+
 
 ```java
-package com.aspose.pdf.examples;
+public static void deletePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(2);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import com.aspose.pdf.*;
+## 
+여러 페이지 삭제
 
-public class ExampleDeletePage {
 
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
 
-  public static void DeletePageFromPDFFile() {
+한 번의 작업으로 여러 페이지를 제거해야 하는 경우 이 예를 사용하십시오.
 
-    // 문서 열기
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
 
-    // 특정 페이지 삭제
-    pdfDocument.getPages().delete(2);
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
 
-    _dataDir = _dataDir + "DeleteParticularPage_out.pdf";
-    // 업데이트된 PDF 저장
-    pdfDocument.save(_dataDir);    
+1. 
+페이지 컬렉션에서 삭제할 페이지 인덱스를 전달합니다.
+1. 수정된 PDF를 저장합니다.
 
-  }
+```java
+public static void deleteBunchPages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(new Integer[]{2, 3, 4});
+        document.save(outputFile.toString());
+    }
+}
 ```

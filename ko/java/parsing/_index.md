@@ -1,21 +1,37 @@
 ---
-title: PDF 문서 파싱
-linktitle: PDF 문서 파싱
+title: PDF 문서 구문 분석
+linktitle: PDF 문서 구문 분석
 type: docs
-weight: 60
-url: /ko/java/parsing/
-description: PDF 문서에서 데이터를 추출하고 싶으신가요? Aspose.PDF for Java를 사용하여 다양한 PDF 데이터 추출 방법을 알아보세요.
-lastmod: "2021-06-05"
+weight: 80
+url: /java/parsing/
+description: 텍스트, 이미지, 글꼴, 양식 데이터, 테이블 및 벡터 그래픽을 포함하여 Aspose.PDF를 사용하여 Java에서 PDF 구문 분석 및 데이터 추출 방법을 찾아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java용 Aspose.PDF를 사용하여 PDF 파일을 구문 분석합니다.
+Abstract: 이 문서에서는 Aspose.PDF for Java의 PDF 구문 분석 기능을 소개합니다. 각 작업에 대한 집중 가이드 링크와 함께 PDF 문서에서 텍스트, 이미지, 글꼴, AcroForm 데이터, 테이블 데이터 및 벡터 그래픽을 추출하는 방법을 다룹니다.
 ---
+PDF 문서를 구문 분석한다는 것은 기존 PDF 파일에서 구조화된 콘텐츠 또는 원시 콘텐츠를 추출하여 다른 작업 흐름에서 검사, 내보내기, 색인화 또는 재사용할 수 있음을 의미합니다.
 
-PDF 문서 파싱은 PDF 파일에서 다양한 종류의 정보를 추출하는 것과 관련된 용어입니다. 이 섹션에서는 다음과 같은 내용을 다룹니다:
 
-- [PDF에서 텍스트 추출하기](/pdf/ko/java/extract-text-from-pdf/). 텍스트 파싱 또는 추출은 기성 PDF에서 가장 인기 있는 작업입니다. 전체 문서, 특정 페이지 또는 페이지 내의 특정 영역에서 텍스트를 파싱하는 방법을 배우게 됩니다.
-- [PDF에서 이미지 추출하기](/pdf/ko/java/extract-images-from-the-pdf-file/). 이미지 추출은 텍스트에 대한 위의 작업과 동일하게 이미지를 대상으로 수행됩니다.
-- [PDF에서 폰트 추출하기](/pdf/ko/java/extract-fonts-from-pdf/). 폰트 추출은 PDF에서 폰트와 관련된 특정 작업입니다.
-- [PDF의 테이블에서 데이터 추출하기](/pdf/ko/java/extract-data-from-table-in-pdf/).
- Learn how to extract tabular from PDF using Aspose.PDF for Java.  
-- [양식에서 데이터 추출하기](/pdf/ko/java/extract-data-from-acroform/). 양식이 포함된 PDF 문서가 많다면 아마도 해당 양식에서 데이터를 가져와야 할 것입니다. 이 기사는 Aspose.PDF for Java를 사용하여 AcroForms 데이터를 추출하는 방법을 이해하는 데 도움이 됩니다.
+
+이 섹션에서는 다음 방법을 다룹니다.
+
+
+- 
+`TextAbsorber`, `ParagraphAbsorber` 및 관련 API를 사용하여 [PDF에서 텍스트 추출](/pdf/java/extract-text-from-pdf/)
+
+- 
+[PDF에서 이미지 추출](/pdf/java/extract-images-from-the-pdf-file/) 페이지 리소스에서.
+
+- 
+[PDF에서 글꼴 추출](/pdf/java/extract-fonts-from-pdf/)을 통해 문서에 사용된 글꼴을 검사할 수 있습니다.
+- [AcroForm에서 데이터를 추출](/pdf/java/extract-data-from-acroform/)하고 필드 값을 JSON, XML, FDF 또는 XFDF로 내보냅니다.
+
+- 
+`TableAbsorber`을 사용하여 [테이블에서 데이터 추출](/pdf/java/extract-data-from-table-in-pdf/) 또는 감지된 테이블을 Excel로 내보냅니다.
+
+- 
+`GraphicsAbsorber` 및 SVG 내보내기 방법을 사용하여 [PDF에서 벡터 데이터 추출](/pdf/java/extract-vector-data-from-pdf/).
