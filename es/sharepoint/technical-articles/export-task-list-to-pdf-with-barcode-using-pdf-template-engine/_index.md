@@ -10,7 +10,7 @@ description: PDF SharePoint API puede exportar la lista de tareas a PDF con cód
 
 {{% alert color="primary" %}}
 
-This article shows how to set up and export a task list to PDF with barcodes using Aspose.PDF for SharePoint.
+Este artículo muestra cómo configurar y exportar una lista de tareas a PDF con códigos de barras usando Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
