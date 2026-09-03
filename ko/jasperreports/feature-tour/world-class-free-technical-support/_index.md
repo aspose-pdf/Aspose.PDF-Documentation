@@ -22,7 +22,7 @@ Aspose는 제품 개발자가 직접 제공하는 무료 무제한 기술 지원
 
 ### 블로그
 
-[Aspose.블로그](https://forum.aspose.com/) 최신 릴리스에 대한 정보와 Aspose 개발자의 의견을 찾을 수 있는 곳입니다.
+[Aspose.Blogs](http://www.aspose.com/Community/Blogs/) 최신 릴리스에 대한 정보와 Aspose 개발자의 의견을 찾을 수 있는 곳입니다.
 
 ### 더 많은 지원이 필요하십니까?
 
