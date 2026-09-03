@@ -22,11 +22,11 @@ Aspose.PDF for JasperReports est un composant flexible conçu pour exporter des 
 
 Voici les liens vers des ressources utiles dont vous pourriez avoir besoin pour accomplir vos tâches.
 
-- [Aspose.PDF pour la présentation du produit JasperReports] (/pdf/jasperreports/product-overview/)
-- [Aspose.PDF pour les formats de fichiers pris en charge par JasperReports] (/pdf/jasperreports/supported-file-formats/)
-- [Visite des fonctionnalités Aspose.PDF for JasperReports] (/pdf/jasperreports/feature-tour/)
-- [Aspose.PDF pour les notes de version de JasperReports] (https://releases.aspose.com/pdf/jassperreport/release-notes/)
-- [Téléchargez Aspose.PDF for JasperReports] (https://releases.aspose.com/pdf/jassperreport/)
+- [Aspose.PDF pour la présentation du produit JasperReports](/pdf/fr/jasperreports/product-overview/)
+- [Aspose.PDF pour les formats de fichiers pris en charge par JasperReports](/pdf/fr/jasperreports/supported-file-formats/)
+- [Visite des fonctionnalités Aspose.PDF for JasperReports](/pdf/fr/jasperreports/feature-tour/)
+- [Aspose.PDF pour les notes de version de JasperReports](https://releases.aspose.com/pdf/jassperreport/release-notes/)
+- [Téléchargez Aspose.PDF for JasperReports](https://releases.aspose.com/pdf/jassperreport/)
 - [Aspose.PDF pour la galerie d'exemples de rapports JasperReports] (/pdf/jasperreports/sample-reports-gallery/)
 - [Installation Aspose.PDF for JasperReports] (/pdf/jasperreports/installation/)
 - [Licence Aspose.PDF for JasperReports] (/pdf/jasperreports/licensing/)
