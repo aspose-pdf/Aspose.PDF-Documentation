@@ -27,10 +27,10 @@ Les étapes suivantes expliquent comment mettre à jour les démos existantes po
 4. Ouvrez ```<InstallDir>```\jasperreports\demo\samples, (where ```<InstallDir>``` est l'emplacement dans lequel vous avez décompressé JasperReports) pour mettre à jour une démo existante. Si vous avez sélectionné la démo de polices, par exemple, à utiliser avec Aspose.PDF for JasperReports, créez-en une copie afin que la démo originale reste la même. Pour les besoins de cet exemple, nous avons nommé le nouveau dossier **fonts.ap**.
 Remarque : les démos seront exécutées à partir de ```<InstallDir>``` \jasperreports\demo\samples car les scripts de construction de démonstration s'appuient sur la structure de dossiers de JasperReports. Si vous modifiez le dossier d'exemples, vous devez modifier les scripts de build.
 5. Ouvrez le fichier **FontsApp.java** à partir du dossier src et ajoutez une référence à Aspose.PDF for JasperReports :
-   importer com.aspose.pdf.jr3_7_0.jasperreports.* ;
+   `import com.aspose.pdf.jr3_7_0.jasperreports.*;`
    (Nous utilisons jr3_7_0 car ce tutoriel a été préparé avec JasperReports 3.5.2.)
-6. Add a new string:
-   chaîne finale statique privée TASK_ASPOSE_PDF = "aspose_pdf"; avec les variables existantes comme option d'exportation via Aspose.PDF for JasperReports.
+6. Ajoutez une nouvelle chaîne :
+   `private static final String TASK_ASPOSE_PDF = "aspose_pdf";` avec les variables existantes comme option d'exportation via Aspose.PDF for JasperReports.
 7. Localisez le segment de code for else if (TASK_PDF.equals(taskName)) et copiez l'intégralité du segment.
 8. Collez l'extrait de code sous le même segment.
 
