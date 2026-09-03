@@ -18,6 +18,6 @@ lastmod: "2026-08-31"
 
 يرجى الاستفادة من الإصدار التقييمي من Aspose.PDF for JasperReports: ليس له حدود زمنية ويأتي مع دعم فني مجاني.
 
-يقوم وضع التقييم بإدخال العلامات المائية في التقارير المصدرة. عند [شراء ترخيص](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx)، [ببساطة تطبيق الترخيص](/pdf/jasperreports/licensing/) ولن تظهر العلامة المائية مرة أخرى في المستندات الناتجة.
+يقوم وضع التقييم بإدخال العلامات المائية في التقارير المصدرة. عند [شراء ترخيص](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx)، [ببساطة تطبيق الترخيص](/pdf/ar/jasperreports/licensing/) ولن تظهر العلامة المائية مرة أخرى في المستندات الناتجة.
 
 
