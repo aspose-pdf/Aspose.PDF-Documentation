@@ -25,15 +25,12 @@ Utilice `PdfFileStamp` cuando necesite contenido de pie de página repetido en c
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
 
-2. 
-Cree el contenido del pie de página como `FormattedText` o como una secuencia de imágenes.
+2. Cree el contenido del pie de página como `FormattedText` o como una secuencia de imágenes.
 3. Llame a la sobrecarga `addFooter` apropiada.
 
-4. 
-Guarde el archivo actualizado y cierre el objeto de fachada.
+4. Guarde el archivo actualizado y cierre el objeto de fachada.
 
 
 ### 

@@ -28,18 +28,14 @@ Utilice este flujo de trabajo cuando cada página del PDF de origen deba represe
 Pasos
 
 
-1. 
-Cree y configure una instancia `PdfViewer`.
+1. Cree y configure una instancia `PdfViewer`.
 2. Vincule el PDF de origen con `bindPdf`.
 
-3. 
-Llame a `decodeAllPages()` para representar el documento en una matriz `BufferedImage`.
+3. Llame a `decodeAllPages()` para representar el documento en una matriz `BufferedImage`.
 
-4. 
-Guarde cada página decodificada en un archivo de imagen de salida.
+4. Guarde cada página decodificada en un archivo de imagen de salida.
 
-5. 
-Cierre el archivo PDF encuadernado.
+5. Cierre el archivo PDF encuadernado.
 
 
 ### 
@@ -71,18 +67,14 @@ Utilice este flujo de trabajo cuando solo sea necesario representar una página 
 Pasos
 
 
-1. 
-Cree y configure una instancia `PdfViewer`.
+1. Cree y configure una instancia `PdfViewer`.
 
-2. 
-Enlaza el PDF de origen.
+2. Enlaza el PDF de origen.
 3. Llame a `decodePage()` para obtener la página que desea representar.
 
-4. 
-Guarde la página decodificada en un archivo de imagen de salida.
+4. Guarde la página decodificada en un archivo de imagen de salida.
 
-5. 
-Cierra el visor.
+5. Cierra el visor.
 
 
 ### 
@@ -111,18 +103,14 @@ Utilice este flujo de trabajo cuando necesite información del documento relacio
 Pasos
 
 
-1. 
-Cree y configure una instancia `PdfViewer`.
+1. Cree y configure una instancia `PdfViewer`.
 
-2. 
-Enlaza el PDF de origen.
+2. Enlaza el PDF de origen.
 
-3. 
-Lea el recuento de páginas, el tipo de coordenadas y la resolución de representación.
+3. Lea el recuento de páginas, el tipo de coordenadas y la resolución de representación.
 4. Utilice o imprima los valores recuperados.
 
-5. 
-Cierre el archivo PDF encuadernado.
+5. Cierre el archivo PDF encuadernado.
 
 
 ### 
@@ -153,17 +141,13 @@ Utilice este flujo de trabajo cuando necesite confirmar o ajustar el comportamie
 ### Pasos
 
 
-1. 
-Cree y configure una instancia `PdfViewer`.
+1. Cree y configure una instancia `PdfViewer`.
 
-2. 
-Enlaza el PDF de origen.
+2. Enlaza el PDF de origen.
 
-3. 
-Configure las opciones del visor, como el cambio de tamaño automático, la rotación automática y la visibilidad del cuadro de diálogo de impresión.
+3. Configure las opciones del visor, como el cambio de tamaño automático, la rotación automática y la visibilidad del cuadro de diálogo de impresión.
 
-4. 
-Lea la configuración del visor activo y el recuento de páginas.
+4. Lea la configuración del visor activo y el recuento de páginas.
 5. Cierra el visor.
 
 

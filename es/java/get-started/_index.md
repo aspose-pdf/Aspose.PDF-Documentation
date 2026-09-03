@@ -20,8 +20,7 @@ Esta sección presenta la biblioteca con dos ejemplos basados en código fuente 
 
 - [Ejemplo de Hola mundo](/pdf/java/hello-world-example/): cree un documento PDF simple y coloque un fragmento de texto con estilo en la página.
 
-- 
-[Creación de un PDF complejo](/pdf/java/complex-pdf-example/): cree un PDF más completo con una imagen, texto posicionado y una tabla formateada.
+- [Creación de un PDF complejo](/pdf/java/complex-pdf-example/): cree un PDF más completo con una imagen, texto posicionado y una tabla formateada.
 
 
 

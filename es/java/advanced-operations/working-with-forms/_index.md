@@ -16,8 +16,6 @@ Abstract: Esta sección explica cómo trabajar con formularios PDF usando Aspose
 Aspose.PDF para Java proporciona API de fachada y DOM para flujos de trabajo de formularios PDF. Puede crear nuevos AcroForms, actualizar campos existentes, intercambiar datos de formularios en formatos comunes y convertir documentos basados ​​en XFA en formularios estándar.
 
 
-- 
-[Trabajar con AcroForms](/pdf/java/acroforms/)
+- [Trabajar con AcroForms](/pdf/java/acroforms/)
 
-- 
-[Trabajar con formularios XFA](/pdf/java/xfa-forms/)
+- [Trabajar con formularios XFA](/pdf/java/xfa-forms/)

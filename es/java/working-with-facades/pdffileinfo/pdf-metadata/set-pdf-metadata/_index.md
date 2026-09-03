@@ -25,18 +25,14 @@ Utilice este flujo de trabajo cuando necesite normalizar o enriquecer la informa
 Pasos
 
 
-1. 
-Cree un objeto `PdfFileInfo` para el PDF de origen.
+1. Cree un objeto `PdfFileInfo` para el PDF de origen.
 
-2. 
-Configure los campos de metadatos estándar que desea actualizar.
+2. Configure los campos de metadatos estándar que desea actualizar.
 3. Agregue cualquier metadato personalizado con `setMetaInfo`.
 
-4. 
-Guarde el documento actualizado con `save()`.
+4. Guarde el documento actualizado con `save()`.
 
-5. 
-Cierre la instancia `PdfFileInfo`.
+5. Cierre la instancia `PdfFileInfo`.
 
 
 ### 

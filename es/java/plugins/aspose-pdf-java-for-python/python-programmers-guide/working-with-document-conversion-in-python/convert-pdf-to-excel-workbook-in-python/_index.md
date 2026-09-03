@@ -31,5 +31,4 @@ print "Document has been converted successfully"
 Descargue **Convierta PDF a libro de Excel (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)

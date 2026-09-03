@@ -25,15 +25,12 @@ Utilice `PdfFileStamp` cuando necesite contenido de encabezado repetido en cada 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
 
-2. 
-Cree el contenido del encabezado como `FormattedText` o cárguelo desde una secuencia de imágenes.
+2. Cree el contenido del encabezado como `FormattedText` o cárguelo desde una secuencia de imágenes.
 3. Llame a la sobrecarga `addHeader` apropiada.
 
-4. 
-Guarde la salida y cierre el objeto de fachada.
+4. Guarde la salida y cierre el objeto de fachada.
 
 
 ### 

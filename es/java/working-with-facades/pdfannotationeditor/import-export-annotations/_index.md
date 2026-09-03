@@ -13,14 +13,11 @@ Abstract: Este artículo explica cómo copiar anotaciones de un PDF de origen y 
 ## Copie anotaciones de un PDF a otro
 
 
-1. 
-Abra el PDF de origen y cree un nuevo documento de destino con una página de destino.
+1. Abra el PDF de origen y cree un nuevo documento de destino con una página de destino.
 
-2. 
-Enumere las anotaciones en la primera página de origen y agregue cada una a la página de destino.
+2. Enumere las anotaciones en la primera página de origen y agregue cada una a la página de destino.
 
-3. 
-Guarde el documento de destino para conservar las anotaciones copiadas.
+3. Guarde el documento de destino para conservar las anotaciones copiadas.
 
 ```java
 public static void importExport(Path inputFile, Path outputFile) {

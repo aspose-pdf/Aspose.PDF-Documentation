@@ -20,24 +20,18 @@ Utilice `BoundsCheckMode` cuando necesite asegurarse de que las formas encajen d
 Validar límites de forma de gráfico
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
+1. Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
 1. Crea la forma [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) y configura su geometría.
 
-1. 
-Habilite la verificación de límites estrictos e intente agregar la forma a la colección de gráficos con `BoundsCheckMode`.
+1. Habilite la verificación de límites estrictos e intente agregar la forma a la colección de gráficos con `BoundsCheckMode`.
 
-1. 
-Maneje la excepción si la forma no encaja.
+1. Maneje la excepción si la forma no encaja.
 
-1. 
-Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void checkShapeBounds(Path outputFile) {

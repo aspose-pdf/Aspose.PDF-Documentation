@@ -34,30 +34,22 @@ La compresión de documentos PDF ayuda a reducir el tamaño de los archivos, lo 
 **Aspose.PDF para la biblioteca Java** proporciona diferentes formas de reducir el tamaño de su PDF, como por ejemplo:
 
 
-- 
-reducir o comprimir todas las imágenes
+- reducir o comprimir todas las imágenes
 
-- 
-eliminar objetos PDF no utilizados
+- eliminar objetos PDF no utilizados
 
-- 
-eliminar secuencias de PDF no utilizadas
+- eliminar secuencias de PDF no utilizadas
 
-- 
-vincular secuencias de PDF duplicadas
+- vincular secuencias de PDF duplicadas
 - desincrustar fuentes
 
-- 
-eliminar o aplanar anotaciones
+- eliminar o aplanar anotaciones
 
-- 
-eliminar campos de AcroForm
+- eliminar campos de AcroForm
 
-- 
-usando la compresión flateDecode
+- usando la compresión flateDecode
 
-- 
-almacenar imágenes en XImageCollection (imágenes reutilizables)
+- almacenar imágenes en XImageCollection (imágenes reutilizables)
 - convertir un PDF del espacio de color RGB a escala de grises
 
 
@@ -161,21 +153,16 @@ Agregar archivos adjuntos y anotaciones hace que los documentos PDF sean más in
 La biblioteca Aspose.PDF para Java tiene diferentes manipulaciones con [Anotaciones](/pdf/java/annotations/). Puede agregar tipos como:
 
 
-- 
-Anotación de texto
+- Anotación de texto
 - Anotación de aspectos destacados
 
-- 
-Anotación de figuras
+- Anotación de figuras
 
-- 
-Anotación multimedia
+- Anotación multimedia
 
-- 
-Anotaciones adhesivas
+- Anotaciones adhesivas
 
-- 
-Anotaciones adicionales
+- Anotaciones adicionales
 
 Además, nuestra Biblioteca le permite agregar, extraer y eliminar archivos adjuntos de PDF.
 
@@ -233,24 +220,18 @@ La conversión de páginas PDF en imágenes hace que el contenido sea más acces
 Aspose.PDF permite convertir PDF a diferentes formatos de imagen usando Java. Hay:
 
 
-- 
-TIFF
+- TIFF
 
-- 
-BMP
+- BMP
 
-- 
-CEM
+- CEM
 
-- 
-JPEG
+- JPEG
 - PNG
 
-- 
-GIF
+- GIF
 
-- 
-SVG
+- SVG
 
 
 
@@ -267,18 +248,14 @@ La impresión de documentos PDF permite a los usuarios crear copias físicas que
 Aspose.PDF para Java presenta diferentes formas de imprimir archivos PDF:
 
 
-- 
-Imprimir PDF usando Java Framework 4.x
+- Imprimir PDF usando Java Framework 4.x
 
-- 
-Imprimir PDF en Java Core / Java
+- Imprimir PDF en Java Core / Java
 
-- 
-Imprimir PDF en una impresora XPS usando Fachadas (aplicación de consola)
+- Imprimir PDF en una impresora XPS usando Fachadas (aplicación de consola)
 - Imprimir PDF en la aplicación WPF
 
-- 
-varias operaciones adicionales, como conversión de PDF a PostScript, verificación del estado del trabajo de impresión, etc.
+- varias operaciones adicionales, como conversión de PDF a PostScript, verificación del estado del trabajo de impresión, etc.
 
 
 
@@ -303,18 +280,13 @@ Para obtener más información sobre el soporte técnico de Aspose.PDF, consulte
 Más información sobre:
 
 
-- 
-[Formatos de archivo admitidos](/pdf/java/supported-file-formats/)
+- [Formatos de archivo admitidos](/pdf/java/supported-file-formats/)
 
-- 
-[Características clave de Aspose.PDF](/pdf/java/key-features/)
+- [Características clave de Aspose.PDF](/pdf/java/key-features/)
 - [Requisitos del sistema](/pdf/java/system-requirements/)
 
-- 
-[Instalación](/pdf/java/installation/)
+- [Instalación](/pdf/java/installation/)
 
-- 
-[Licencia](/pdf/java/licensing/)
+- [Licencia](/pdf/java/licensing/)
 
-- 
-[Soporte técnico](/pdf/java/technical-support/)
+- [Soporte técnico](/pdf/java/technical-support/)

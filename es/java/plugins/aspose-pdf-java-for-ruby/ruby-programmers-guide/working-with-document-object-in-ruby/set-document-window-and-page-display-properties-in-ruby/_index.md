@@ -89,5 +89,4 @@ Descargar código de ejecución
 Descargue **Establecer propiedades de visualización de página y ventana del documento (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

@@ -20,14 +20,11 @@ Aspose.PDF para Java admite la creación de botones de envío tanto basados ​�
 Agregue un botón de envío con FormEditor
 
 
-1. 
-Cree una fachada de [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) para el documento PDF de origen.
+1. Cree una fachada de [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) para el documento PDF de origen.
 
-1. 
-Agregue el objeto del botón de envío configurado a través de la fachada [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/).
+1. Agregue el objeto del botón de envío configurado a través de la fachada [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/).
 
-1. 
-Guarde el documento PDF actualizado.
+1. Guarde el documento PDF actualizado.
 
 ```java
 public static void addSubmitButton(Path inputFile, Path outputFile) {
@@ -46,17 +43,13 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 ## Agregar una acción de envío manualmente
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree la [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) y la URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).
+1. Cree la [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) y la URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).
 
-1. 
-Cree el [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) en la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y asigne la acción de envío.
+1. Cree el [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) en la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y asigne la acción de envío.
 
-1. 
-Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {

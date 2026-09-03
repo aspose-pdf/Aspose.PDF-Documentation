@@ -40,5 +40,4 @@ print "Added JavaScript Successfully, please check the output file."
 Descargue **Agregar Javascript (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)

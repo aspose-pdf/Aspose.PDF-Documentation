@@ -25,18 +25,14 @@ Utilice la certificación cuando el documento deba seguir siendo confiable pero 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSignature` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileSignature` y vincule el PDF de origen.
 
-2. 
-Cree un objeto de firma `PKCS7` con el certificado y la contraseña del certificado.
+2. Cree un objeto de firma `PKCS7` con el certificado y la contraseña del certificado.
 3. Envuelva esa firma en un `DocMDPSignature` con el valor `DocMDPAccessPermissions` requerido.
 
-4. 
-Llame a `certify` con la página de destino, los metadatos de la firma, el rectángulo visible y la firma MDP.
+4. Llame a `certify` con la página de destino, los metadatos de la firma, el rectángulo visible y la firma MDP.
 
-5. 
-Guarde el PDF certificado y cierre el objeto de fachada.
+5. Guarde el PDF certificado y cierre el objeto de fachada.
 
 
 ### 

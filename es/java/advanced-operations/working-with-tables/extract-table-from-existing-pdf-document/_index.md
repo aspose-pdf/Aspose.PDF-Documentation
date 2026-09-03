@@ -24,11 +24,9 @@ Extraer texto de tablas detectadas
 Utilice este ejemplo cuando necesite ubicar tablas en cada página y recopilar el texto de sus celdas.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visite cada página con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Visite cada página con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Itere a través de tablas, filas y celdas absorbidas y luego genere el texto extraído.
 
 ```java

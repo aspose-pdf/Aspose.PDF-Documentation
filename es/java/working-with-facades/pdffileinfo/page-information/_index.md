@@ -21,8 +21,6 @@ Utilice estos ejemplos cuando necesite analizar la geometría de la página ante
 Esta sección cubre cómo:
 
 
-- 
-leer el ancho, alto y rotación de una página específica
+- leer el ancho, alto y rotación de una página específica
 
-- 
-inspeccionar los desplazamientos de páginas X e Y y convertirlos a pulgadas
+- inspeccionar los desplazamientos de páginas X e Y y convertirlos a pulgadas

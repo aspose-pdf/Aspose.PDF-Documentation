@@ -24,15 +24,12 @@ Agregar información sobre herramientas al texto coincidente
 Utilice este ejemplo cuando el texto existente en el PDF deba mostrar información sobre herramientas al pasar el mouse.
 
 
-1. 
-Cree el PDF de muestra y vuelva a abrirlo para editarlo.
+1. Cree el PDF de muestra y vuelva a abrirlo para editarlo.
 
-1. 
-Busque los fragmentos de texto de destino con `TextFragmentAbsorber`.
+1. Busque los fragmentos de texto de destino con `TextFragmentAbsorber`.
 1. Coloque `ButtonField` superposiciones en el texto coincidente y asigne texto de información sobre herramientas.
 
-1. 
-Guarde el documento actualizado.
+1. Guarde el documento actualizado.
 
 
 ```java
@@ -85,15 +82,12 @@ Mostrar un bloque de texto flotante al pasar el mouse
 Utilice este ejemplo cuando al pasar el cursor sobre un área de texto se muestre un campo de texto oculto.
 
 
-1. 
-Cree el PDF de muestra y vuelva a abrirlo para editarlo.
+1. Cree el PDF de muestra y vuelva a abrirlo para editarlo.
 1. Busque el fragmento de texto desencadenante con `TextFragmentAbsorber`.
 
-1. 
-Cree un `TextBoxField` oculto y un `ButtonField` con acciones de entrada y salida.
+1. Cree un `TextBoxField` oculto y un `ButtonField` con acciones de entrada y salida.
 
-1. 
-Guarde el PDF final.
+1. Guarde el PDF final.
 
 ```java
 public static void createHiddenTextBlock(Path outputFile) {

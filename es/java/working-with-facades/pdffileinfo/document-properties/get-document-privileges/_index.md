@@ -25,15 +25,12 @@ Utilice `PdfFileInfo.getDocumentPrivilege()` para inspeccionar qué operaciones 
 Pasos
 
 
-1. 
-Cree un objeto `PdfFileInfo` para el PDF de entrada.
+1. Cree un objeto `PdfFileInfo` para el PDF de entrada.
 
-2. 
-Llame a `getDocumentPrivilege()` para recuperar el conjunto de privilegios.
+2. Llame a `getDocumentPrivilege()` para recuperar el conjunto de privilegios.
 3. Lea los indicadores booleanos relevantes del objeto `DocumentPrivilege` devuelto.
 
-4. 
-Cierre la instancia `PdfFileInfo` cuando haya terminado.
+4. Cierre la instancia `PdfFileInfo` cuando haya terminado.
 
 
 ### 

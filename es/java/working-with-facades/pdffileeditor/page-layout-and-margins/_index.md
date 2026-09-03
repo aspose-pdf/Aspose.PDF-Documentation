@@ -20,11 +20,8 @@ Utilice estos flujos de trabajo de PdfFileEditor cuando un PDF necesite una limp
 Esta sección explica cómo:
 
 
-- 
-agregar márgenes a las páginas seleccionadas
+- agregar márgenes a las páginas seleccionadas
 
-- 
-cambiar el tamaño de los cuadros de contenido en páginas específicas
+- cambiar el tamaño de los cuadros de contenido en páginas específicas
 
-- 
-dividir una página en una posición vertical definida con un salto de página
+- dividir una página en una posición vertical definida con un salto de página

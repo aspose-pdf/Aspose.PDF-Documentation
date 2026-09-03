@@ -13,14 +13,11 @@ Abstract: Este artículo explica cómo crear, inspeccionar y eliminar anotacione
 ## Agregar una anotación de marca de agua
 
 
-1. 
-Abra el PDF de entrada y defina el rectángulo donde se colocará la anotación de la marca de agua.
+1. Abra el PDF de entrada y defina el rectángulo donde se colocará la anotación de la marca de agua.
 
-2. 
-Cree `WatermarkAnnotation`, agréguelo a la página y configure el estado y la opacidad del texto de la marca de agua.
+2. Cree `WatermarkAnnotation`, agréguelo a la página y configure el estado y la opacidad del texto de la marca de agua.
 
-3. 
-Aplique las líneas de texto de la marca de agua y guarde el PDF modificado.
+3. Aplique las líneas de texto de la marca de agua y guarde el PDF modificado.
 
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {

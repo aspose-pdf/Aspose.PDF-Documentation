@@ -20,11 +20,8 @@ La clase Java `PdfFileEditorExamples` incluye un ejemplo directo `concatenate` p
 En esta sección podrás encontrar:
 
 
-- 
-cobertura de fusión respaldada por fuente para el flujo de trabajo `concatenate` basado en matrices
+- cobertura de fusión respaldada por fuente para el flujo de trabajo `concatenate` basado en matrices
 
-- 
-orientación sobre el artículo equivalente de dos archivos que utiliza el mismo ejemplo de Java
+- orientación sobre el artículo equivalente de dos archivos que utiliza el mismo ejemplo de Java
 
-- 
-notas de alcance explícitas para variantes de combinación de lotes grandes, optimizadas, específicas de formulario y `try` que no se implementan como métodos dedicados en el conjunto de ejemplos del repositorio actual
+- notas de alcance explícitas para variantes de combinación de lotes grandes, optimizadas, específicas de formulario y `try` que no se implementan como métodos dedicados en el conjunto de ejemplos del repositorio actual

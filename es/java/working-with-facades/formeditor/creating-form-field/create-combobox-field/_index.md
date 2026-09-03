@@ -17,14 +17,11 @@ Utilice `FormEditorExamples.createComboBoxField(...)` para crear un cuadro combi
 Crear un campo de cuadro combinado
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Agregue el campo del cuadro combinado con su valor predeterminado y el rectángulo de destino.
+2. Agregue el campo del cuadro combinado con su valor predeterminado y el rectángulo de destino.
 
-3. 
-Agregue los elementos del cuadro combinado seleccionables.
+3. Agregue los elementos del cuadro combinado seleccionables.
 4. Guarde el documento actualizado.
 
 ```java

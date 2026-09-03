@@ -24,11 +24,9 @@ Agregar encabezados y pies de página de texto
 Utilice este ejemplo cuando necesite contenido de texto simple en la parte superior e inferior de cada página.
 
 
-1. 
-Cree objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) y agregue fragmentos de texto.
+1. Cree objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) y agregue fragmentos de texto.
 
-1. 
-Configure los márgenes para el encabezado y pie de página.
+1. Configure los márgenes para el encabezado y pie de página.
 1. Aplíquelos a cada página del PDF de origen y guarde el resultado.
 
 
@@ -64,11 +62,9 @@ Agregue encabezados y pies de página con numeración de páginas
 Utilice este ejemplo cuando el encabezado o pie de página deba mostrar el número de página actual y el recuento total de páginas.
 
 
-1. 
-Cree objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) con marcadores de posición de numeración de páginas.
+1. Cree objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) con marcadores de posición de numeración de páginas.
 
-1. 
-Configure los márgenes para ambos objetos.
+1. Configure los márgenes para ambos objetos.
 1. Aplíquelos a cada página y guarde el PDF actualizado.
 
 
@@ -104,11 +100,9 @@ Agregar encabezados y pies de página HTML
 Utilice este ejemplo cuando el contenido del encabezado y pie de página deba incluir formato HTML en línea.
 
 
-1. 
-Cree objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) y agregue contenido [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/).
+1. Cree objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) y agregue contenido [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/).
 
-1. 
-Configure los márgenes para la colocación.
+1. Configure los márgenes para la colocación.
 1. Asigne el encabezado y pie de página a cada página y guarde el documento.
 
 
@@ -144,11 +138,9 @@ Agregar encabezados y pies de página de imágenes
 Utilice este ejemplo cuando el encabezado y el pie de página deban mostrar una imagen en cada página.
 
 
-1. 
-Cree objetos [Imagen](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) y agréguelos a los contenedores de encabezado y pie de página.
+1. Cree objetos [Imagen](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) y agréguelos a los contenedores de encabezado y pie de página.
 
-1. 
-Configura márgenes y asigna los contenedores a cada página.
+1. Configura márgenes y asigna los contenedores a cada página.
 1. Guarde el PDF actualizado.
 
 
@@ -186,11 +178,9 @@ Agregar encabezados y pies de página basados en tablas
 Utilice este ejemplo cuando el contenido del encabezado y pie de página deba utilizar diseño de tabla y estilo de texto.
 
 
-1. 
-Cree los estilos de texto y objetos de tabla necesarios.
+1. Cree los estilos de texto y objetos de tabla necesarios.
 
-1. 
-Agregue las tablas a los contenedores [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/).
+1. Agregue las tablas a los contenedores [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/).
 1. Aplique el encabezado y pie de página a cada página y guarde el documento.
 
 
@@ -239,11 +229,9 @@ Agregue encabezados y pies de página de LaTeX
 Utilice este ejemplo cuando el encabezado y el pie de página deban representar contenido TeX o LaTeX.
 
 
-1. 
-Abra el PDF de origen y determine el recuento total de páginas.
+1. Abra el PDF de origen y determine el recuento total de páginas.
 
-1. 
-Cree contenido [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) para el encabezado y pie de página de cada página.
+1. Cree contenido [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) para el encabezado y pie de página de cada página.
 1. Asigna el contenido y guarda el documento.
 
 ```java

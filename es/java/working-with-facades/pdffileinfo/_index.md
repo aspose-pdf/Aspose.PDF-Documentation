@@ -21,11 +21,8 @@ La clase Java `PdfFileInfoExamples` demuestra los principales flujos de trabajo 
 Utilice esta sección para aprender cómo:
 
 
-- 
-leer la versión PDF y los privilegios del documento
+- leer la versión PDF y los privilegios del documento
 
-- 
-inspeccionar el ancho, alto, rotación y desplazamientos de la página
+- inspeccionar el ancho, alto, rotación y desplazamientos de la página
 
-- 
-obtener, configurar, borrar y guardar metadatos de documentos con XMP
+- obtener, configurar, borrar y guardar metadatos de documentos con XMP

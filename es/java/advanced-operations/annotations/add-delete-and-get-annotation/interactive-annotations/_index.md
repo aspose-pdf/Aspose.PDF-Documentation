@@ -24,11 +24,9 @@ Agregar una anotación de enlace
 Utilice este ejemplo cuando necesite colocar un enlace en el que se pueda hacer clic sobre el texto que se encuentra en la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Localice el fragmento de texto de destino y cree una [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) sobre su rectángulo.
+1. Localice el fragmento de texto de destino y cree una [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) sobre su rectángulo.
 1. Asigne una [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) y guarde el documento actualizado.
 
 
@@ -58,11 +56,9 @@ Obtener anotaciones de enlaces
 Este ejemplo escanea la colección de anotaciones de la página e informa la ubicación de cada anotación de enlace.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Repita las anotaciones en la página de destino.
+1. Repita las anotaciones en la página de destino.
 1. Filtre las anotaciones por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` e imprima sus rectángulos.
 
 
@@ -86,11 +82,9 @@ Eliminar anotaciones de enlaces
 Utilice este enfoque cuando las anotaciones de enlaces existentes deban eliminarse de la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recopile anotaciones cuyo tipo sea [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
+1. Recopile anotaciones cuyo tipo sea [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
 1. Elimine las anotaciones recopiladas y guarde el archivo de salida.
 
 
@@ -119,11 +113,9 @@ Agregar una anotación de línea
 Este ejemplo crea una anotación de línea interactiva con estilos de flecha, configuraciones de borde y una nota emergente.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree una [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) con puntos de inicio y finalización.
+1. Cree una [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) con puntos de inicio y finalización.
 1. Configure su apariencia y anotación emergente, luego guarde el documento.
 
 
@@ -164,11 +156,9 @@ Agregar botones de navegación
 Utilice este ejemplo cuando el PDF deba incluir botones de página anterior y página siguiente para una navegación interactiva.
 
 
-1. 
-Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y asegúrese de que el documento tenga las páginas requeridas.
+1. Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y asegúrese de que el documento tenga las páginas requeridas.
 
-1. 
-Cree controles [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) con acciones de navegación predefinidas.
+1. Cree controles [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) con acciones de navegación predefinidas.
 1. Agregue los botones a la colección de formularios y guarde el documento actualizado.
 
 
@@ -207,11 +197,9 @@ Agregar un botón de impresión
 Este ejemplo crea un botón que activa el comando de impresión cuando el usuario hace clic en él.
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página.
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página.
 
-1. 
-Cree un [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) y asigne la acción predefinida de impresión.
+1. Cree un [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) y asigne la acción predefinida de impresión.
 1. Configure el borde y el fondo del botón, agréguelo al formulario y guarde el documento.
 
 ```java

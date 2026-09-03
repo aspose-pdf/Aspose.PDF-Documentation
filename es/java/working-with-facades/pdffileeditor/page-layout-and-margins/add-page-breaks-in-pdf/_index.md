@@ -24,15 +24,12 @@ Utilice este flujo de trabajo cuando sea necesario dividir una página en varias
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Cree una o más entradas `PdfFileEditor.PageBreak` con el número de página y la posición de ruptura.
+2. Cree una o más entradas `PdfFileEditor.PageBreak` con el número de página y la posición de ruptura.
 3. Pase la matriz de salto de página a `addPageBreak`.
 
-4. 
-Guarde el documento PDF actualizado.
+4. Guarde el documento PDF actualizado.
 
 
 ### 

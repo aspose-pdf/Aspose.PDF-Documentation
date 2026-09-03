@@ -21,12 +21,9 @@ La clase Java `PdfFileSignatureExamples` demuestra los principales flujos de tra
 Utilice esta sección para aprender cómo:
 
 
-- 
-firmar y certificar documentos PDF
+- firmar y certificar documentos PDF
 
-- 
-inspeccionar nombres de firmas, detalles del firmante y marcas de tiempo
+- inspeccionar nombres de firmas, detalles del firmante y marcas de tiempo
 
-- 
-verificar la validez de la firma y la cobertura de todo el documento
+- verificar la validez de la firma y la cobertura de todo el documento
 - extraer un certificado de firma y eliminar una firma existente

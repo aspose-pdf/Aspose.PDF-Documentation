@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, establecer un 
 ## Establecer un número de peine de campo
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `setFieldCombNumber(...)` para obtener el campo objetivo y el valor del peine.
+2. Llame a `setFieldCombNumber(...)` para obtener el campo objetivo y el valor del peine.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void setFieldCombNumber(Path inputFile, Path outputFile) {

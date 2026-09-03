@@ -20,18 +20,13 @@ La clase Java `FormExamples` demuestra los principales flujos de trabajo de proc
 Utilice esta sección para aprender cómo:
 
 
-- 
-Complete los campos de texto, casilla de verificación, botón de opción, cuadro de lista y código de barras
+- Complete los campos de texto, casilla de verificación, botón de opción, cuadro de lista y código de barras
 
-- 
-Exportar datos de formulario a XML, FDF y XFDF
+- Exportar datos de formulario a XML, FDF y XFDF
 
-- 
-Importar datos de formulario desde XML, FDF y XFDF
+- Importar datos de formulario desde XML, FDF y XFDF
 - Aplanar todos los campos del formulario y cambiar el nombre de los campos existentes
 
-- 
-Inspeccionar nombres de campos y valores actuales
+- Inspeccionar nombres de campos y valores actuales
 
-- 
-Llenar un campo de botón de imagen desde un flujo de entrada
+- Llenar un campo de botón de imagen desde un flujo de entrada

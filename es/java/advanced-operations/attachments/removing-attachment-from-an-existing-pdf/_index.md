@@ -24,11 +24,9 @@ Eliminar un solo archivo adjunto
 Utilice este ejemplo cuando un archivo incrustado con nombre deba eliminarse del PDF.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Elimine el archivo adjunto por su clave de la colección de archivos incrustados.
+1. Elimine el archivo adjunto por su clave de la colección de archivos incrustados.
 1. Guarde el documento de salida actualizado.
 
 
@@ -49,11 +47,9 @@ Eliminar todos los archivos adjuntos
 Utilice este enfoque cuando deba borrar toda la colección de archivos incrustados.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Elimine todos los elementos de la colección de archivos incrustados.
+1. Elimine todos los elementos de la colección de archivos incrustados.
 1. Guarde el documento de salida limpio.
 
 ```java

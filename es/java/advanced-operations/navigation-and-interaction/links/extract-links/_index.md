@@ -24,11 +24,9 @@ Extraer anotaciones de enlaces
 Utilice este ejemplo cuando necesite la ubicación y la información de la página para las anotaciones de enlaces en una página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Itere a través de las anotaciones de la página y filtre las anotaciones de enlaces.
+1. Itere a través de las anotaciones de la página y filtre las anotaciones de enlaces.
 1. Lea el índice de la página y el rectángulo de cada enlace coincidente.
 
 
@@ -54,11 +52,9 @@ Extraer destinos de hipervínculos
 Utilice este ejemplo cuando necesite leer los URI de destino de las anotaciones de enlaces web.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Busque objetos [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) cuya acción sea una [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Busque objetos [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) cuya acción sea una [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Imprima el índice de la página y el destino URI para cada hipervínculo.
 
 ```java

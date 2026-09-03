@@ -20,18 +20,13 @@ La clase Java `PdfContentEditorExamples` demuestra los principales flujos de tra
 Utilice esta sección para aprender cómo:
 
 
-- 
-agregar anotaciones de texto, líneas, polígonos, películas y sellos
+- agregar anotaciones de texto, líneas, polígonos, películas y sellos
 
-- 
-agregar o eliminar documentos adjuntos
+- agregar o eliminar documentos adjuntos
 
-- 
-enlazar un PDF desde una secuencia y guardar el resultado
+- enlazar un PDF desde una secuencia y guardar el resultado
 - agregar o eliminar acciones de apertura de documentos
 
-- 
-reemplazar texto e imágenes
+- reemplazar texto e imágenes
 
-- 
-obtener y cambiar las preferencias del espectador
+- obtener y cambiar las preferencias del espectador

@@ -25,18 +25,14 @@ Utilice este flujo de trabajo cuando tenga la contraseña del propietario y nece
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSecurity`.
+1. Cree una instancia `PdfFileSecurity`.
 
-2. 
-Vincula el PDF cifrado con `bindPdf`.
+2. Vincula el PDF cifrado con `bindPdf`.
 3. Llame a `decryptFile` o `tryDecryptFile` con la contraseña del propietario.
 
-4. 
-Guarde el resultado si el descifrado se realiza correctamente.
+4. Guarde el resultado si el descifrado se realiza correctamente.
 
-5. 
-Cierre el objeto de seguridad.
+5. Cierre el objeto de seguridad.
 
 
 ### 

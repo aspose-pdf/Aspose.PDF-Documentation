@@ -16,11 +16,8 @@ Abstract: Este artículo explica cómo administrar anotaciones de enlaces en doc
 Las anotaciones de enlace pueden conectar a los usuarios con páginas del mismo documento, archivos externos, recursos web o destinos de inicio de aplicaciones.
 
 
-- 
-[Crear enlaces PDF](/pdf/java/create-links/)
+- [Crear enlaces PDF](/pdf/java/create-links/)
 
-- 
-[Extraer enlaces PDF](/pdf/java/extract-links/)
+- [Extraer enlaces PDF](/pdf/java/extract-links/)
 
-- 
-[Actualizar enlaces PDF](/pdf/java/update-links/)
+- [Actualizar enlaces PDF](/pdf/java/update-links/)

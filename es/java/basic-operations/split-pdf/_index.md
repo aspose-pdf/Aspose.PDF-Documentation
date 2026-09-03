@@ -34,21 +34,16 @@ Este ejemplo utiliza la clase [Documento](https://reference.aspose.com/pdf/java/
 Para dividir un PDF en archivos de páginas individuales en Java:
 
 
-1. 
-Abra el PDF de origen con el constructor [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen con el constructor [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Iterar a través de los objetos [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) devueltos por `document.getPages()`.
+1. Iterar a través de los objetos [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) devueltos por `document.getPages()`.
 
-1. 
-Cree un nuevo [Documento] vacío(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para cada página.
+1. Cree un nuevo [Documento] vacío(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para cada página.
 
-1. 
-Agregue la [Página] actual(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al nuevo [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregue la [Página] actual(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al nuevo [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Guarde el nuevo [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) con un nombre de archivo único.
 
-1. 
-Cierre ambos objetos [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) cuando se complete el procesamiento.
+1. Cierre ambos objetos [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) cuando se complete el procesamiento.
 
 
 ## 

@@ -53,5 +53,4 @@ Descargar código de ejecución
 DescargarВ **Obtener información del archivo PDF (Aspose.PDF)**В de cualquiera de los sitios de codificación social mencionados a continuación:
 
 
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)

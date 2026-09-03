@@ -20,14 +20,11 @@ La fachada `Form` se puede utilizar para automatizar el llenado de campos en un 
 Rellene los campos de AcroForm con nuevos valores
 
 
-1. 
-Abra el documento de formulario PDF con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. Abra el documento de formulario PDF con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
 
-1. 
-Recorra los campos del formulario y actualice las entradas coincidentes con los valores proporcionados.
+1. Recorra los campos del formulario y actualice las entradas coincidentes con los valores proporcionados.
 
-1. 
-Guarde el documento PDF actualizado.
+1. Guarde el documento PDF actualizado.
 
 ```java
 public static void fillForm(Path inputFile, Path outputFile) {

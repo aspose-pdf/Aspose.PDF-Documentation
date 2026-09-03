@@ -16,21 +16,16 @@ Abstract: Este artículo explica cómo agregar sellos de números de página usa
 ## Agregar un sello de número de página
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree el objeto [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
+1. Cree el objeto [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 
-1. 
-Configure las opciones de numeración y colocación de sellos requeridas.
+1. Configure las opciones de numeración y colocación de sellos requeridas.
 
-1. 
-Configure las opciones de formato de texto requeridas, incluidas [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) y [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Configure las opciones de formato de texto requeridas, incluidas [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) y [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. Agregue el [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) configurado a la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino.
 
-1. 
-Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addPageNumStamp(Path inputFile, Path outputFile) {

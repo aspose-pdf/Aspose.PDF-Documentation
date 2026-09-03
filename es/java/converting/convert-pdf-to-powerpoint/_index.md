@@ -24,15 +24,12 @@ Convertir PDF a PPTX
 Utilice este ejemplo cuando deba exportar un documento PDF como una presentación estándar de PowerPoint.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) predeterminado para exportar PowerPoint editable.
+1. Cree [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) predeterminado para exportar PowerPoint editable.
 1. Llame a `document.save(outputFile.toString(), saveOptions)` para que las páginas PDF se serialicen como una presentación `.pptx`.
 
-1. 
-Guarde el archivo PPTX convertido.
+1. Guarde el archivo PPTX convertido.
 
 
 ```java
@@ -53,15 +50,12 @@ Convierta PDF a PPTX con diapositivas como imágenes
 Utilice este ejemplo cuando cada página PDF deba convertirse en una diapositiva de PowerPoint basada en imágenes.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) y habilite `setSlidesAsImages(true)`.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` para que cada página PDF se represente como una diapositiva respaldada por una imagen en la presentación.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` para que cada página PDF se represente como una diapositiva respaldada por una imagen en la presentación.
 
-1. 
-Guarde el archivo PPTX generado.
+1. Guarde el archivo PPTX generado.
 
 
 ```java
@@ -84,14 +78,11 @@ Utilice este ejemplo cuando deba controlar la calidad de la imagen de la diaposi
 
 1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) y configure `setImageResolution(300)` para obtener una mayor fidelidad de la imagen de la diapositiva.
+1. Cree [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) y configure `setImageResolution(300)` para obtener una mayor fidelidad de la imagen de la diapositiva.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` para que se genere contenido de diapositiva rasterizado con la resolución solicitada.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` para que se genere contenido de diapositiva rasterizado con la resolución solicitada.
 
-1. 
-Guarde la presentación de salida.
+1. Guarde la presentación de salida.
 
 ```java
 public static void convertPdfToPptxImageResolution(Path inputFile, Path outputFile) {

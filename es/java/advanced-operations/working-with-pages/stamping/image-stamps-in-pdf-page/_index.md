@@ -24,11 +24,9 @@ Agregar un sello de imagen
 Utilice este ejemplo cuando una página deba mostrar un sello de imagen con ubicación y opacidad personalizadas.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) y configure su apariencia.
+1. Cree un [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) y configure su apariencia.
 1. Agregue el sello a la página y guarde el documento.
 
 
@@ -58,11 +56,9 @@ Añadir un sello de imagen con control de calidad.
 Utilice este ejemplo cuando necesite ajustar la calidad de representación del sello de imagen.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) y establezca el valor de calidad.
+1. Cree un [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) y establezca el valor de calidad.
 1. Añade el sello a la página y guarda el resultado.
 
 
@@ -85,11 +81,9 @@ Utilice una imagen como fondo de cuadro flotante
 Utilice este ejemplo cuando una imagen deba servir como fondo de un contenedor de diseño con estilo.
 
 
-1. 
-Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y acceda a la página de destino.
+1. Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y acceda a la página de destino.
 
-1. 
-Cree un [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) con configuración de texto y borde.
+1. Cree un [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) con configuración de texto y borde.
 1. Configure la imagen de fondo, agregue el cuadro a la página y guarde el documento.
 
 ```java

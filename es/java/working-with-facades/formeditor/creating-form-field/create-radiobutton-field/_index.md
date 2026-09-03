@@ -17,18 +17,14 @@ Utilice `FormEditorExamples.createRadioButtonField(...)` para crear un campo de 
 Crear un campo de botón de opción
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Configure el espacio, la orientación y el tamaño del elemento del botón de opción.
+2. Configure el espacio, la orientación y el tamaño del elemento del botón de opción.
 
-3. 
-Defina los elementos del botón de opción.
+3. Defina los elementos del botón de opción.
 4. Agregue el campo del botón de opción con su selección y rectángulo predeterminados.
 
-5. 
-Guarde el documento actualizado.
+5. Guarde el documento actualizado.
 
 ```java
 public static void createRadioButtonField(Path inputFile, Path outputFile) {

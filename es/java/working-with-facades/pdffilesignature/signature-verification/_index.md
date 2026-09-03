@@ -25,18 +25,14 @@ Utilice este flujo de trabajo cuando necesite una validación rápida de un PDF 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSignature` y vincule el PDF firmado.
+1. Cree una instancia `PdfFileSignature` y vincule el PDF firmado.
 
-2. 
-Seleccione el nombre de la firma que desea inspeccionar.
+2. Seleccione el nombre de la firma que desea inspeccionar.
 3. Llame a `verifySignature` para validar la firma.
 
-4. 
-Llame a `coversWholeDocument` para verificar la cobertura.
+4. Llame a `coversWholeDocument` para verificar la cobertura.
 
-5. 
-Cierra el objeto de fachada.
+5. Cierra el objeto de fachada.
 
 
 ### 

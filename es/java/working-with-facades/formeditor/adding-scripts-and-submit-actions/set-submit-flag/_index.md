@@ -17,14 +17,11 @@ El método Java `FormEditorExamples.setSubmitUrl(...)` incluye:
 Configurar una bandera de envío
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Establezca la URL de envío para el campo del botón.
+2. Establezca la URL de envío para el campo del botón.
 
-3. 
-Establezca el indicador de envío para el formato requerido.
+3. Establezca el indicador de envío para el formato requerido.
 4. Guarde el documento actualizado.
 
 

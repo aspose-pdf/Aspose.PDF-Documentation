@@ -24,15 +24,12 @@ Cómo crear un archivo PDF en Java
 Para crear un documento PDF mediante programación:
 
 
-1. 
-Cree un objeto [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un objeto [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 1. Agregue un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) a los párrafos de la página.
 
-1. 
-Guarde el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) en un archivo de salida.
+1. Guarde el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) en un archivo de salida.
 
 
 ## 

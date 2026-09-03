@@ -24,11 +24,9 @@ Cambiar el tamaño de la página
 Utilice este ejemplo cuando necesite cambiar el tamaño de una página existente e inspeccionar los cuadros de la página antes y después del cambio.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Obtenga la [Página] de destino (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e imprima los valores de cuadro actuales.
+1. Obtenga la [Página] de destino (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e imprima los valores de cuadro actuales.
 1. Establezca el nuevo tamaño de página y guarde el documento.
 
 
@@ -52,11 +50,9 @@ Obtener el tamaño de la página
 Utilice este ejemplo cuando necesite leer las dimensiones visibles de una página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Obtenga el rectángulo de la página con el manejo de rotación habilitado.
+1. Obtenga el rectángulo de la página con el manejo de rotación habilitado.
 1. Imprima el ancho y alto de la página.
 
 
@@ -77,11 +73,9 @@ Obtenga el tamaño de página con la rotación aplicada
 Utilice este ejemplo cuando necesite comparar las dimensiones de la página antes y después de tener en cuenta la rotación.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Gire el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Gire el objetivo [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Lea el rectángulo de la página con y sin manejo de rotación y genere ambos valores.
 
 ```java

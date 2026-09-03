@@ -25,18 +25,14 @@ Utilice este flujo de trabajo cuando necesite comprender cómo se coloca el cont
 Pasos
 
 
-1. 
-Cree un objeto `PdfFileInfo` para el PDF de entrada.
+1. Cree un objeto `PdfFileInfo` para el PDF de entrada.
 
-2. 
-Llame a `getPageXOffset` y `getPageYOffset` para obtener la página de destino.
+2. Llame a `getPageXOffset` y `getPageYOffset` para obtener la página de destino.
 3. Convierta los valores de puntos a pulgadas dividiendo por `72.0`.
 
-4. 
-Utilice o imprima los valores convertidos.
+4. Utilice o imprima los valores convertidos.
 
-5. 
-Cierre la instancia `PdfFileInfo`.
+5. Cierre la instancia `PdfFileInfo`.
 
 
 ### 

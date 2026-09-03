@@ -17,14 +17,11 @@ Introducción
 Jython es una implementación Java de Python que combina poder expresivo con claridad. Jython está disponible gratuitamente para uso comercial y no comercial y se distribuye con el código fuente. Jython es complementario a Java y está especialmente indicado para las siguientes tareas:
 
 
-- 
-**Secuencias de comandos integradas**: los programadores de Java pueden agregar las bibliotecas Jython a su sistema para permitir a los usuarios finales escribir secuencias de comandos simples o complicadas que agreguen funcionalidad a la aplicación.
+- **Secuencias de comandos integradas**: los programadores de Java pueden agregar las bibliotecas Jython a su sistema para permitir a los usuarios finales escribir secuencias de comandos simples o complicadas que agreguen funcionalidad a la aplicación.
 
-- 
-**Experimentación interactiva**: Jython proporciona un intérprete interactivo que se puede utilizar para interactuar con paquetes Java o con aplicaciones Java en ejecución. Esto permite a los programadores experimentar y depurar cualquier sistema Java utilizando Jython.
+- **Experimentación interactiva**: Jython proporciona un intérprete interactivo que se puede utilizar para interactuar con paquetes Java o con aplicaciones Java en ejecución. Esto permite a los programadores experimentar y depurar cualquier sistema Java utilizando Jython.
 
-- 
-**Desarrollo rápido de aplicaciones**: los programas Python suelen ser entre 2 y 10 veces más cortos que el programa Java equivalente. Esto se traduce directamente en una mayor productividad del programador. La perfecta interacción entre Python y Java permite a los desarrolladores mezclar libremente los dos lenguajes tanto durante el desarrollo como en el envío de productos.
+- **Desarrollo rápido de aplicaciones**: los programas Python suelen ser entre 2 y 10 veces más cortos que el programa Java equivalente. Esto se traduce directamente en una mayor productividad del programador. La perfecta interacción entre Python y Java permite a los desarrolladores mezclar libremente los dos lenguajes tanto durante el desarrollo como en el envío de productos.
 
 
 ### 
@@ -59,11 +56,9 @@ Requisitos del sistema
 Los siguientes son los requisitos del sistema para utilizar Aspose.PDF Java para Jython:
 
 
-- 
-Java 1.5 o superior instalado
+- Java 1.5 o superior instalado
 
-- 
-Componente Aspose.PDF descargado
+- Componente Aspose.PDF descargado
 - Jython 2.7.0
 
 
@@ -75,11 +70,9 @@ Plataformas compatibles
 Las siguientes son las plataformas compatibles:
 
 
-- 
-Aspose.PDF 15.4 y superior.
+- Aspose.PDF 15.4 y superior.
 
-- 
-IDE de Java (Eclipse, NetBeans...)
+- IDE de Java (Eclipse, NetBeans...)
 
 ## Descargar Instalación y Uso
 
@@ -92,8 +85,7 @@ Descargando
 Las siguientes versiones de ejemplos en ejecución están disponibles para descargar desde GitHub:
 
 
-- 
-[Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose-Pdf-Java-for-Jython)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose-Pdf-Java-for-Jython)
 
 
 
@@ -106,11 +98,9 @@ Descargue el componente Aspose.PDF para Java:
 Instalación
 
 
-- 
-Coloque el archivo jar Aspose.PDF para Java descargado en el directorio "lib".
+- Coloque el archivo jar Aspose.PDF para Java descargado en el directorio "lib".
 
-- 
-Reemplace "your-lib" con el nombre del archivo jar descargado en el archivo _*init*_.py.
+- Reemplace "your-lib" con el nombre del archivo jar descargado en el archivo _*init*_.py.
 
 
 ### 
@@ -159,8 +149,7 @@ Es por eso que ofrecemos soporte gratuito. Cualquiera que utilice nuestro produc
 Puede registrar cualquier problema o sugerencia relacionada con Aspose.PDF Java para Jython utilizando cualquiera de las siguientes plataformas:
 
 
-- 
-[Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 
 ### 
@@ -177,5 +166,4 @@ Código fuente
 Puede obtener el código fuente más reciente en una de las siguientes ubicaciones
 
 
-- 
-[Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java)

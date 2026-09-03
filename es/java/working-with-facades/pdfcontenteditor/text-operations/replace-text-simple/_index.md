@@ -13,17 +13,13 @@ Abstract: Este artículo muestra cómo vincular un PDF, configurar el alcance de
 ## Reemplazar texto en todo el documento
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Establezca el alcance del texto de reemplazo en `ReplaceAll`.
+2. Establezca el alcance del texto de reemplazo en `ReplaceAll`.
 
-3. 
-Llame a `replaceText(...)` con el texto de búsqueda y el texto de reemplazo.
+3. Llame a `replaceText(...)` con el texto de búsqueda y el texto de reemplazo.
 
-4. 
-Guarde el documento PDF actualizado.
+4. Guarde el documento PDF actualizado.
 
 ```java
 public static void replaceTextSimple(Path inputFile, Path outputFile) {

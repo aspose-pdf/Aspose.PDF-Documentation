@@ -57,5 +57,4 @@ Descargar código de ejecución
 Descargue **Establecer información de archivo PDF (Aspose.PDF)**В desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)

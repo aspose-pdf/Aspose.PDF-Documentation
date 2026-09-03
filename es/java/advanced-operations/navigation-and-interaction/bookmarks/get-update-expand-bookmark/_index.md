@@ -24,11 +24,9 @@ Obtener propiedades de marcador
 Utilice este ejemplo cuando necesite inspeccionar las entradas de marcadores de nivel superior en el esquema del documento.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Iterar a través de la colección de contornos.
+1. Iterar a través de la colección de contornos.
 1. Lea e imprima el título, el estilo y los valores de color del marcador.
 
 
@@ -54,11 +52,9 @@ Obtener números de páginas de favoritos
 Este ejemplo utiliza `PdfBookmarkEditor` para extraer títulos de marcadores, niveles, números de página y acciones.
 
 
-1. 
-Vincule el PDF de origen a [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. Vincule el PDF de origen a [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
 
-1. 
-Extraiga la colección de marcadores y repítala.
+1. Extraiga la colección de marcadores y repítala.
 1. Imprima el nivel, título, número de página e información de acción para cada marcador.
 
 
@@ -91,11 +87,9 @@ Obtener marcadores infantiles
 Utilice este ejemplo cuando necesite inspeccionar elementos de esquema anidados y de nivel superior.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Repita los esquemas de nivel superior e imprima sus propiedades.
+1. Repita los esquemas de nivel superior e imprima sus propiedades.
 1. Detecte marcadores secundarios, luego revíselos e imprima sus propiedades.
 
 
@@ -132,11 +126,9 @@ Actualizar marcadores
 Utilice este ejemplo cuando deba modificar el título y el estilo de un marcador existente.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Acceda al elemento del esquema de destino y a su marcador secundario.
+1. Acceda al elemento del esquema de destino y a su marcador secundario.
 1. Actualice las propiedades del marcador y guarde el documento.
 
 
@@ -162,11 +154,9 @@ Expandir marcadores de forma predeterminada
 Utilice este ejemplo cuando el panel de marcadores debería abrirse y mostrar elementos de esquema ampliados cuando se muestra el documento.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Configure el modo de página para usar esquemas y marque cada elemento del esquema como abierto.
+1. Configure el modo de página para usar esquemas y marque cada elemento del esquema como abierto.
 1. Guarde el documento actualizado.
 
 ```java

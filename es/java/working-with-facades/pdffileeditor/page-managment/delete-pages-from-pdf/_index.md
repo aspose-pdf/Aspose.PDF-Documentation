@@ -24,15 +24,12 @@ El ejemplo de Java elimina las páginas 2 y 4 del documento fuente.
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Cree una matriz con los números de página que desea eliminar.
+2. Cree una matriz con los números de página que desea eliminar.
 3. Llame a `delete` con el archivo de entrada, la matriz de páginas y el archivo de salida.
 
-4. 
-Guarde el PDF resultante.
+4. Guarde el PDF resultante.
 
 
 ### 

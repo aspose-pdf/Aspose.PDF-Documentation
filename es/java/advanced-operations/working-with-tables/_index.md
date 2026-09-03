@@ -16,15 +16,11 @@ Abstract: Esta sección explica cómo trabajar con tablas en documentos PDF usan
 Aspose.PDF para Java admite flujos de trabajo de creación y análisis de tablas. Puede crear diseños enriquecidos con bordes, filas repetidas, imágenes y contenido formateado, o detectar y modificar tablas que ya están presentes en un PDF existente.
 
 
-- 
-[Agregar tablas en documentos PDF existentes](/pdf/java/adding-tables/)
+- [Agregar tablas en documentos PDF existentes](/pdf/java/adding-tables/)
 
-- 
-[Extraer tablas de documentos PDF existentes](/pdf/java/extracting-table/)
+- [Extraer tablas de documentos PDF existentes](/pdf/java/extracting-table/)
 
-- 
-[Integrar tablas con datos externos](/pdf/java/integrate-table/)
+- [Integrar tablas con datos externos](/pdf/java/integrate-table/)
 
-- 
-[Manipular tablas en documentos PDF existentes](/pdf/java/manipulating-tables/)
+- [Manipular tablas en documentos PDF existentes](/pdf/java/manipulating-tables/)
 - [Eliminar tablas de documentos PDF existentes](/pdf/java/removing-tables/)

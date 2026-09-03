@@ -21,8 +21,6 @@ Utilice estos ejemplos cuando necesite comprobar la compatibilidad o comprender 
 Esta sección cubre cómo:
 
 
-- 
-lea la versión de especificación PDF reportada por el archivo
+- lea la versión de especificación PDF reportada por el archivo
 
-- 
-inspeccionar indicadores de privilegios de documentos expuestos por `DocumentPrivilege`
+- inspeccionar indicadores de privilegios de documentos expuestos por `DocumentPrivilege`

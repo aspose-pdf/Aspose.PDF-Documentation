@@ -25,18 +25,14 @@ Utilice `PdfFileStamp` cuando se deba aplicar la numeración de páginas despué
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
 
-2. 
-Elija la estrategia de ubicación de números de página que necesita.
+2. Elija la estrategia de ubicación de números de página que necesita.
 3. Opcionalmente, establezca el estilo de numeración y el número inicial antes de sellar.
 
-4. 
-Llame a `addPageNumber` con la sobrecarga requerida.
+4. Llame a `addPageNumber` con la sobrecarga requerida.
 
-5. 
-Guarde la salida y cierre el objeto de fachada.
+5. Guarde la salida y cierre el objeto de fachada.
 
 
 ### 

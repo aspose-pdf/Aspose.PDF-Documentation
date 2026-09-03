@@ -53,17 +53,13 @@ Requisitos del sistema
 Los siguientes son los requisitos del sistema para usar Aspose.PDF para PHP a través de Java:
 
 
-- 
-Tomcat Server 8.0 o superior instalado.
+- Tomcat Server 8.0 o superior instalado.
 
-- 
-PHP/JavaBridge está configurado.
+- PHP/JavaBridge está configurado.
 
-- 
-FastCGI está instalado.
+- FastCGI está instalado.
 
-- 
-Componente Aspose.PDF descargado.
+- Componente Aspose.PDF descargado.
 
 ### Plataformas compatibles
 
@@ -72,11 +68,9 @@ Componente Aspose.PDF descargado.
 Las siguientes son las plataformas compatibles:
 
 
-- 
-PHP 5.3 o superior
+- PHP 5.3 o superior
 
-- 
-Java 1.8 o superior
+- Java 1.8 o superior
 
 
 ## 
@@ -89,11 +83,9 @@ Descargas y configuración
 Descargue las bibliotecas requeridas que se mencionan a continuación. Estos son los ejemplos necesarios para ejecutar Aspose.PDF Java para PHP.
 
 
-- 
-**Aspose:** [Aspose.PDF para componente Java](https://downloads.aspose.com/pdf/java)
+- **Aspose:** [Aspose.PDF para componente Java](https://downloads.aspose.com/pdf/java)
 
-- 
-Puente PHP/Java
+- Puente PHP/Java
 
 
 ### 
@@ -106,11 +98,9 @@ Las siguientes versiones de ejemplos en ejecución están disponibles para desca
 GitHub
 
 
-- 
-Aspose.PDF Ejemplos de Java para PHP
+- Aspose.PDF Ejemplos de Java para PHP
 
-  - 
-[Aspose.PDF Java para PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
+  - [Aspose.PDF Java para PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
 
 
 ### 
@@ -119,8 +109,7 @@ Cómo configurar el código fuente en la plataforma Linux
 Siga estos sencillos pasos para abrir y ampliar el código fuente mientras usa:
 
 
-### 
-1. Instale el servidor Tomcat
+### 1. Instale el servidor Tomcat
 
 
 
@@ -135,8 +124,7 @@ sudo apt-get instalar tomcat8
 
 {{< /highlight >}}
 
-### 
-2. Descargue y configure PHP/JavaBridge
+### 2. Descargue y configure PHP/JavaBridge
 
 Para descargar los archivos binarios de PHP/JavaBridge, ejecute el siguiente comando en la consola de Linux.
 
@@ -215,42 +203,33 @@ Cómo configurar el código fuente en la plataforma Windows
 Siga los sencillos pasos a continuación para configurar PHP/Java Bridge en la plataforma Windows
 
 
-1. 
-Instale PHP5 y configúrelo como lo hace normalmente
+1. Instale PHP5 y configúrelo como lo hace normalmente
 
-2. 
-Instale JRE 6 (Java Runtime Environment) si aún no lo tiene. Puede verificar esto en C:\Program Archivos, etc. Puede descargarlo aquí. Estoy usando JRE 6 porque es compatible con PHP Java Bridge (PJB).
+2. Instale JRE 6 (Java Runtime Environment) si aún no lo tiene. Puede verificar esto en C:\Program Archivos, etc. Puede descargarlo aquí. Estoy usando JRE 6 porque es compatible con PHP Java Bridge (PJB).
 
 
-3. 
-Instale Apache Tomcat 8.0. Puedes descargarlo aquí
+3. Instale Apache Tomcat 8.0. Puedes descargarlo aquí
 
 
-4. 
-Descargue [JavaBridge.war](https://sourceforge.net/projects/php-java-bridge/files/Binary%20package/php-java-bridge_6.2.1/JavaBridgeTemplate621.war/download). Copie este archivo al directorio de aplicaciones web de Tomcat.
+4. Descargue [JavaBridge.war](https://sourceforge.net/projects/php-java-bridge/files/Binary%20package/php-java-bridge_6.2.1/JavaBridgeTemplate621.war/download). Copie este archivo al directorio de aplicaciones web de Tomcat.
 (por ejemplo: C:\Program Archivos\Apache Software Foundation\Tomcat 8.0\webapps)
 
 
-5. 
-Reinicie el servicio Tomcat Apache.
+5. Reinicie el servicio Tomcat Apache.
 
 
-6. 
-Vaya a http://localhost:8080/JavaBridge/test.php para comprobar si php funciona. Puedes encontrar otros ejemplos allí.
+6. Vaya a http://localhost:8080/JavaBridge/test.php para comprobar si php funciona. Puedes encontrar otros ejemplos allí.
 
 
-7. 
-Copie su archivo jar [Aspose.PDF Java](https://downloads.aspose.com/pdf/java) a C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\WEB-INF\lib
+7. Copie su archivo jar [Aspose.PDF Java](https://downloads.aspose.com/pdf/java) a C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\WEB-INF\lib
 
 
-8. 
-Clonar ejemplos de [Aspose.PDF Java para PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP) dentro de la carpeta C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\.
+8. Clonar ejemplos de [Aspose.PDF Java para PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP) dentro de la carpeta C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\.
 
 9. Copie la carpeta C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\JavaBridge\java a su carpeta de ejemplos Aspose.PDF Java para PHP.
 
 
-10. 
-Reinicie el servicio Apache Tomcat y comience a usar ejemplos.
+10. Reinicie el servicio Apache Tomcat y comience a usar ejemplos.
 
 
 ## 
@@ -271,8 +250,7 @@ Es por eso que ofrecemos soporte gratuito. Cualquiera que utilice nuestro produc
 Puede registrar cualquier problema o sugerencia relacionada con Aspose.Cells Java para PHP utilizando cualquiera de las siguientes plataformas:
 
 
-- 
-[Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 
 ### 
@@ -289,5 +267,4 @@ Aspose.PDF Java para PHP es de código abierto y su código fuente está disponi
 Puede obtener el código fuente más reciente en una de las siguientes ubicaciones
 
 
-- 
-[Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)

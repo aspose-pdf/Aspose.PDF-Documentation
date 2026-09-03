@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF e imprimir el valor de pr
 ## Obtener la preferencia del espectador actual
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Llame a `getViewerPreference()` para leer el valor actual.
+2. Llame a `getViewerPreference()` para leer el valor actual.
 
-3. 
-Inspeccione o imprima el indicador de preferencia devuelto.
+3. Inspeccione o imprima el indicador de preferencia devuelto.
 
 ```java
 public static void getViewerPreferences(Path inputFile) {

@@ -24,15 +24,12 @@ Compara páginas y exporta imágenes diferentes
 Utilice este ejemplo cuando necesite una salida diferenciada basada en imágenes para un par específico de páginas PDF.
 
 
-1. 
-Abra ambos objetos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra ambos objetos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Utilice [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) para obtener la [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/) a nivel de página.
+1. Utilice [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) para obtener la [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/) a nivel de página.
 1. Utilice 'GraphicalPdfComparer' para obtener la 'ImagesDifference' a nivel de página.
 
-1. 
-Exporte las imágenes de diferencias generadas y elimine el resultado de la comparación.
+1. Exporte las imágenes de diferencias generadas y elimine el resultado de la comparación.
 
 
 ```java
@@ -61,12 +58,10 @@ Compara páginas específicas una al lado de la otra
 Utilice este ejemplo cuando solo las páginas seleccionadas deban compararse y guardarse como un resultado PDF uno al lado del otro.
 
 
-1. 
-Abra ambos objetos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra ambos objetos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Configure [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) para el modo de comparación requerido.
 
-1. 
-Compare las páginas seleccionadas y guarde el PDF de salida.
+1. Compare las páginas seleccionadas y guarde el PDF de salida.
 
 
 ```java
@@ -92,12 +87,10 @@ Compara documentos PDF completos gráficamente
 Este ejemplo genera un informe gráfico en PDF que resalta las diferencias visuales en todos los documentos.
 
 
-1. 
-Abra ambos objetos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra ambos objetos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Configure el umbral, el color y la resolución de [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/).
 
-1. 
-Compare los documentos completos y guarde el PDF de salida gráfica.
+1. Compare los documentos completos y guarde el PDF de salida gráfica.
 
 
 ```java
@@ -122,12 +115,10 @@ Compare documentos completos uno al lado del otro
 Utilice este ejemplo cuando los documentos completos deban compararse página por página en una salida PDF lado a lado.
 
 
-1. 
-Abra ambos objetos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra ambos objetos PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Configure [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) para el comportamiento de comparación deseado.
 
-1. 
-Compare los documentos completos y guarde el resultado como PDF.
+1. Compare los documentos completos y guarde el resultado como PDF.
 
 ```java
 public static void comparingEntireDocuments(Path inputFile1, Path inputFile2, Path outputFile) {

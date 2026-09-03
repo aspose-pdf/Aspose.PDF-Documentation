@@ -24,15 +24,12 @@ Utilice `PdfFileEditor.makeBooklet` para reorganizar las páginas de un PDF exis
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Llame a `makeBooklet` con el PDF de origen y el archivo de salida.
+2. Llame a `makeBooklet` con el PDF de origen y el archivo de salida.
 3. Guarde el documento del folleto.
 
-4. 
-Si desea comprobar el estado de la devolución, utilice la variante de devolución booleana y maneje un resultado fallido.
+4. Si desea comprobar el estado de la devolución, utilice la variante de devolución booleana y maneje un resultado fallido.
 
 
 ### 

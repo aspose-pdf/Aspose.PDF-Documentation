@@ -24,11 +24,9 @@ Marcar texto con anotaciones de redacción
 Utilice este ejemplo cuando el texto coincidente deba estar cubierto por anotaciones de redacción antes de que la redacción se aplique permanentemente.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Busque el texto de destino y cree una [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) para cada coincidencia.
+1. Busque el texto de destino y cree una [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) para cada coincidencia.
 1. Configure la apariencia de redacción y guarde el documento.
 
 
@@ -64,11 +62,9 @@ Aplicar redacciones existentes
 Este ejemplo aplica permanentemente anotaciones de redacción que ya existen en la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recopile anotaciones de tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
+1. Recopile anotaciones de tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
 1. Llame a `redact()` en cada anotación recopilada y guarde el archivo actualizado.
 
 
@@ -97,11 +93,9 @@ Redactar un área de página seleccionada
 Utilice este enfoque cuando el contenido de destino se identifique por posición en lugar de por texto coincidente.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Detecta el rectángulo de destino en la página, por ejemplo desde la ubicación de una imagen.
+1. Detecta el rectángulo de destino en la página, por ejemplo desde la ubicación de una imagen.
 1. Cree una [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) para esa área y guarde el documento.
 
 
@@ -131,18 +125,13 @@ public static void redactArea(Path inputFile, Path outputFile) {
 Temas de anotaciones relacionados
 
 
-- 
-[Anotaciones interactivas](/pdf/java/interactive-annotations/)
+- [Anotaciones interactivas](/pdf/java/interactive-annotations/)
 
-- 
-[Anotaciones de marcado](/pdf/java/markup-annotations/)
+- [Anotaciones de marcado](/pdf/java/markup-annotations/)
 
-- 
-[Anotaciones de forma](/pdf/java/shape-annotations/)
+- [Anotaciones de forma](/pdf/java/shape-annotations/)
 - [Anotaciones de texto](/pdf/java/text-based-annotations/)
 
-- 
-[Anotaciones de marca de agua](/pdf/java/watermark-annotations/)
+- [Anotaciones de marca de agua](/pdf/java/watermark-annotations/)
 
-- 
-[Importar y exportar anotaciones](/pdf/java/import-export-annotations/)
+- [Importar y exportar anotaciones](/pdf/java/import-export-annotations/)

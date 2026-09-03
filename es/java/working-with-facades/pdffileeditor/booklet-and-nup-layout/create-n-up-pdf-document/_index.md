@@ -24,15 +24,12 @@ El ejemplo de Java utiliza `PdfFileEditor.makeNUp` para crear un diseño de 2x2 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Llame a `makeNUp` con el archivo de entrada, el archivo de salida y el número de columnas y filas.
+2. Llame a `makeNUp` con el archivo de entrada, el archivo de salida y el número de columnas y filas.
 3. Guarde el documento generado.
 
-4. 
-Si desea una verificación de éxito explícita, llame a la variante de retorno booleano y maneje un resultado `false`.
+4. Si desea una verificación de éxito explícita, llame a la variante de retorno booleano y maneje un resultado `false`.
 
 
 ### 

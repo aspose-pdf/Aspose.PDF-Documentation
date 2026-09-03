@@ -25,15 +25,12 @@ Utilice este flujo de trabajo cuando deba eliminarse una firma digital existente
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSignature` y vincule el PDF firmado.
+1. Cree una instancia `PdfFileSignature` y vincule el PDF firmado.
 
-2. 
-Lea la colección de firmas y seleccione un nombre de firma.
+2. Lea la colección de firmas y seleccione un nombre de firma.
 3. Llame a `removeSignature` con ese nombre.
 
-4. 
-Guarde el archivo actualizado y cierre el objeto de fachada.
+4. Guarde el archivo actualizado y cierre el objeto de fachada.
 
 
 ### 

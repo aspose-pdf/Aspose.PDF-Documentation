@@ -24,11 +24,9 @@ Girar todas las páginas 90 grados.
 Utilice este ejemplo cuando cada página del documento deba girarse en el sentido de las agujas del reloj.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Itere a través de todos los objetos [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y establezca el valor de rotación.
+1. Itere a través de todos los objetos [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y establezca el valor de rotación.
 1. Guarde el PDF actualizado.
 
 ```java

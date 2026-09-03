@@ -20,14 +20,11 @@ Crear una tabla etiquetada
 Utilice este ejemplo cuando necesite una tabla básica accesible con metadatos de encabezado, cuerpo, pie de página y resumen de tabla.
 
 
-1. 
-Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un [Elemento de tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un [Elemento de tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
 
-1. 
-Configure el borde de la tabla y complete el contenido con el método auxiliar compartido.
+1. Configure el borde de la tabla y complete el contenido con el método auxiliar compartido.
 
-1. 
-Establezca el atributo de resumen de la tabla y guarde el documento.
+1. Establezca el atributo de resumen de la tabla y guarde el documento.
 
 
 ```java
@@ -59,14 +56,11 @@ Aplicar estilo a una tabla etiquetada
 Este ejemplo aplica formato a nivel de tabla, como colores, bordes, tamaño de columna, filas repetidas y alineación.
 
 
-1. 
-Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de tabla.
+1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de tabla.
 
-1. 
-Configure los ajustes visuales y de diseño a nivel de tabla.
+1. Configure los ajustes visuales y de diseño a nivel de tabla.
 
-1. 
-Complete la tabla y guarde el documento.
+1. Complete la tabla y guarde el documento.
 
 
 ```java
@@ -112,14 +106,11 @@ Estilo de filas de tabla etiquetadas
 Utilice este ejemplo cuando cada fila deba tener sus propios metadatos, bordes, configuraciones de altura y valores predeterminados de celda.
 
 
-1. 
-Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue secciones de tabla para la cabeza, el cuerpo y los pies.
+1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue secciones de tabla para la cabeza, el cuerpo y los pies.
 
-1. 
-Cree filas y configure sus ajustes a nivel de fila, como borde, relleno, altura y comportamiento de la página.
+1. Cree filas y configure sus ajustes a nivel de fila, como borde, relleno, altura y comportamiento de la página.
 
-1. 
-Complete las filas con celdas y guarde el documento.
+1. Complete las filas con celdas y guarde el documento.
 
 
 ```java
@@ -180,14 +171,11 @@ Estilo de celdas de tabla etiquetadas
 Este ejemplo utiliza el método auxiliar compartido para crear una tabla con formato a nivel de celda y celdas combinadas.
 
 
-1. 
-Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue un elemento de tabla y rellénelo mediante el método auxiliar con el estilo de celda habilitado.
+1. Agregue un elemento de tabla y rellénelo mediante el método auxiliar con el estilo de celda habilitado.
 
-1. 
-Guarde el documento.
+1. Guarde el documento.
 
 
 ```java
@@ -212,14 +200,11 @@ Ajustar la posición de la mesa etiquetada
 Utilice este ejemplo cuando una tabla etiquetada deba colocarse explícitamente en la página.
 
 
-1. 
-Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de tabla.
+1. Cree un nuevo [Documento] PDF etiquetado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue un elemento de tabla.
 
-1. 
-Configure [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) para la tabla.
+1. Configure [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) para la tabla.
 
-1. 
-Aplique la configuración de posición, complete la tabla y guarde el documento.
+1. Aplique la configuración de posición, complete la tabla y guarde el documento.
 
 
 ```java
@@ -254,14 +239,11 @@ Llene una tabla etiquetada con contenido estructurado
 Este método auxiliar crea las filas de encabezado, cuerpo y pie de página de una tabla y, opcionalmente, aplica estilos y extensiones de celda.
 
 
-1. 
-Cree las secciones de cabecera, cuerpo y pies de la mesa.
+1. Cree las secciones de cabecera, cuerpo y pies de la mesa.
 
-1. 
-Complete las filas de encabezado, cuerpo y pie de página con elementos de celda accesibles.
+1. Complete las filas de encabezado, cuerpo y pie de página con elementos de celda accesibles.
 
-1. 
-Opcionalmente, configure celdas con estilo, celdas combinadas y valores de estado de texto.
+1. Opcionalmente, configure celdas con estilo, celdas combinadas y valores de estado de texto.
 
 ```java
 private static void fillTable(TableElement tableElement, int rowCount, int colCount, boolean styleCells) {

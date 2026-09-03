@@ -17,12 +17,9 @@ La clase Java `FormEditorExamples` demuestra los principales flujos de trabajo d
 Utilice esta sección para aprender cómo:
 
 
-- 
-crear campos de texto, casilla de verificación, cuadro combinado, cuadro de lista, botón de opción y botón de envío
+- crear campos de texto, casilla de verificación, cuadro combinado, cuadro de lista, botón de opción y botón de envío
 
-- 
-agregar, eliminar, mover, cambiar el nombre, copiar o convertir campos existentes
+- agregar, eliminar, mover, cambiar el nombre, copiar o convertir campos existentes
 
-- 
-personalizar la alineación, la apariencia, los límites y los números de peine
+- personalizar la alineación, la apariencia, los límites y los números de peine
 - adjunte scripts, envíe URL y elimine acciones de campo

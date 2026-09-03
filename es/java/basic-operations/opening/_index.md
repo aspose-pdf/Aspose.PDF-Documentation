@@ -24,11 +24,9 @@ Abrir un documento PDF en Java
 Puede abrir un documento PDF:
 
 
-1. 
-Abra un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directamente desde una ruta de archivo.
+1. Abra un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directamente desde una ruta de archivo.
 
-1. 
-Abra un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) de un `InputStream`.
+1. Abra un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) de un `InputStream`.
 1. Abra un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) cifrado proporcionando la contraseña.
 
 

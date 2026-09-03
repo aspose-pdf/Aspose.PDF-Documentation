@@ -24,15 +24,12 @@ Convertir PDF a BMP
 Utilice este ejemplo cuando las páginas PDF deban representarse como imágenes BMP.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
+1. Cree un [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
 1. Repita `document.getPages()` y llame a `device.process(...)` para cada página.
 
-1. 
-Guarde las imágenes BMP generadas en rutas de salida numeradas.
+1. Guarde las imágenes BMP generadas en rutas de salida numeradas.
 
 
 ```java
@@ -55,15 +52,12 @@ Convertir PDF a EMF
 Utilice este ejemplo cuando las páginas PDF deban exportarse como imágenes vectoriales EMF.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree un [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
 
-1. 
-Recorra las páginas y llame a `device.process(...)` para cada página.
+1. Recorra las páginas y llame a `device.process(...)` para cada página.
 
-1. 
-Guarde las salidas de EMF en rutas de archivos numeradas.
+1. Guarde las salidas de EMF en rutas de archivos numeradas.
 
 
 ```java
@@ -87,14 +81,11 @@ Utilice este ejemplo cuando las páginas PDF deban convertirse en imágenes GIF.
 
 1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
+1. Cree un [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
 
-1. 
-Repita las páginas y llame a `device.process(...)` para representar cada página.
+1. Repita las páginas y llame a `device.process(...)` para representar cada página.
 
-1. 
-Guarde los archivos GIF en rutas de salida numeradas.
+1. Guarde los archivos GIF en rutas de salida numeradas.
 
 
 ```java
@@ -115,17 +106,13 @@ Convertir PDF a JPEG
 Utilice este ejemplo cuando las páginas PDF deban exportarse como imágenes JPEG.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
+1. Cree un [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
 
-1. 
-Repita las páginas y llame a `device.process(...)` para rasterizar cada página a JPEG.
+1. Repita las páginas y llame a `device.process(...)` para rasterizar cada página a JPEG.
 
-1. 
-Guarde los archivos de salida JPEG en rutas numeradas.
+1. Guarde los archivos de salida JPEG en rutas numeradas.
 
 ```java
 public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
@@ -146,14 +133,11 @@ public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
 Utilice este ejemplo cuando las páginas PDF deban convertirse en imágenes PNG.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
+1. Cree un [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
 
-1. 
-Recorra las páginas y llame a `device.process(...)` para cada página PDF.
+1. Recorra las páginas y llame a `device.process(...)` para cada página PDF.
 1. Guarde las salidas PNG en rutas de archivos numeradas.
 
 
@@ -177,15 +161,12 @@ Convierta PDF a PNG con una fuente alternativa predeterminada
 Utilice este ejemplo cuando la renderización deba utilizar una fuente alternativa para los glifos faltantes.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
+1. Cree un [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
 1. Habilite `document.setAbsentFontTryToSubstitute(true)` para que los glifos faltantes puedan recurrir a fuentes sustitutas durante el renderizado.
 
-1. 
-Renderice las páginas y guarde los archivos PNG.
+1. Renderice las páginas y guarde los archivos PNG.
 
 
 ```java
@@ -209,15 +190,12 @@ Convertir PDF a SVG
 Utilice este ejemplo cuando las páginas PDF deban exportarse como gráficos SVG.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree [`SvgSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions/) y desactive la compresión ZIP cuando se requiera salida `.svg` sin formato.
 
-1. 
-Habilite `setTreatTargetFileNameAsDirectory(true)` para que la salida SVG por página se pueda organizar en la ruta de destino.
+1. Habilite `setTreatTargetFileNameAsDirectory(true)` para que la salida SVG por página se pueda organizar en la ruta de destino.
 
-1. 
-Guarde la salida SVG.
+1. Guarde la salida SVG.
 
 
 ```java
@@ -241,14 +219,11 @@ Utilice este ejemplo cuando una o más páginas PDF deban exportarse a TIFF.
 
 1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`TiffSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffsettings/) y configure la compresión, la profundidad del color y el comportamiento de página en blanco.
+1. Cree [`TiffSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffsettings/) y configure la compresión, la profundidad del color y el comportamiento de página en blanco.
 
-1. 
-Cree un [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI y la configuración TIFF preparada.
+1. Cree un [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/) con un [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI y la configuración TIFF preparada.
 
-1. 
-Renderice las páginas y guarde la salida TIFF.
+1. Renderice las páginas y guarde la salida TIFF.
 
 ```java
 public static void convertPdfToTiff(Path inputFile, Path outputPrefix) {

@@ -25,15 +25,12 @@ Utilice este flujo de trabajo cuando necesite eliminar información del document
 Pasos
 
 
-1. 
-Cree un objeto `PdfFileInfo` para el PDF de entrada.
+1. Cree un objeto `PdfFileInfo` para el PDF de entrada.
 
-2. 
-Llame a `clearInfo()` para eliminar los metadatos del documento.
+2. Llame a `clearInfo()` para eliminar los metadatos del documento.
 3. Guarde el resultado en un archivo nuevo con `save()`.
 
-4. 
-Cierre la instancia `PdfFileInfo`.
+4. Cierre la instancia `PdfFileInfo`.
 
 
 ### 

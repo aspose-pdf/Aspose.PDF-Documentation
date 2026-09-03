@@ -24,15 +24,12 @@ Convertir PDF a PDF/A
 Utilice este ejemplo cuando deba convertir un PDF estándar en un documento de archivo compatible con PDF/A.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Llame a `document.convert(...)` con [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_1B` y [`ConvertErrorAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction/) `Delete`.
+1. Llame a `document.convert(...)` con [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_1B` y [`ConvertErrorAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction/) `Delete`.
 1. Escriba el registro de validación en un archivo XML complementario para que los problemas de cumplimiento se registren durante la conversión.
 
-1. 
-Guarde la salida PDF/A validada.
+1. Guarde la salida PDF/A validada.
 
 
 ```java
@@ -52,15 +49,12 @@ Convertir PDF a PDF/E
 Utilice este ejemplo cuando deba convertir un PDF al estándar PDF/E orientado a la ingeniería.
 
 
-1. 
-Cree [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) para [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_E_1` y la ruta del archivo de registro deseada.
+1. Cree [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) para [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_E_1` y la ruta del archivo de registro deseada.
 1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Llame a `document.convert(options)` para que la conversión de cumplimiento se ejecute con el objeto de opciones preparado.
+1. Llame a `document.convert(options)` para que la conversión de cumplimiento se ejecute con el objeto de opciones preparado.
 
-1. 
-Guarde el archivo PDF compatible resultante.
+1. Guarde el archivo PDF compatible resultante.
 
 
 ```java
@@ -84,14 +78,11 @@ Utilice este ejemplo cuando deba convertir un PDF al estándar PDF/X orientado a
 
 1. Cree [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) para [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_X_4` y la ruta del archivo de registro deseada.
 
-1. 
-Configure un [`OutputIntent`](https://reference.aspose.com/pdf/java/com.aspose.pdf/outputintent/) como `FOGRA39` para que el perfil de color de destino de impresión se incruste en la configuración de conversión.
+1. Configure un [`OutputIntent`](https://reference.aspose.com/pdf/java/com.aspose.pdf/outputintent/) como `FOGRA39` para que el perfil de color de destino de impresión se incruste en la configuración de conversión.
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y llame a `document.convert(options)`.
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y llame a `document.convert(options)`.
 
-1. 
-Guarde la salida PDF/X convertida.
+1. Guarde la salida PDF/X convertida.
 
 ```java
 public static void convertPdfToPdfX(Path inputFile, Path outputFile) {

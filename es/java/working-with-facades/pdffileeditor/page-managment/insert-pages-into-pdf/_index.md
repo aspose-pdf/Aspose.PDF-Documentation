@@ -24,18 +24,14 @@ El ejemplo de Java inserta las páginas 1 y 2 del documento secundario después 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Elija el punto de inserción en el documento de destino.
+2. Elija el punto de inserción en el documento de destino.
 3. Seleccione los números de página para copiar del documento fuente.
 
-4. 
-Llame a `insert` con el archivo de destino, el punto de inserción, el archivo de origen, la matriz de páginas y el archivo de salida.
+4. Llame a `insert` con el archivo de destino, el punto de inserción, el archivo de origen, la matriz de páginas y el archivo de salida.
 
-5. 
-Guarde el PDF actualizado.
+5. Guarde el PDF actualizado.
 
 
 ### 

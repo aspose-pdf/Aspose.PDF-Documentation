@@ -16,5 +16,4 @@ Abstract: Esta sección explica cómo trabajar con archivos adjuntos de facturas
 ZUGFeRD combina una factura en PDF legible por humanos con datos XML estructurados incrustados dentro del documento. En el conjunto de ejemplos de Java actual, el flujo de trabajo cubierto consiste en adjuntar el XML de la factura a un PDF y convertir el resultado a `PDF_A_3A`.
 
 
-- 
-[Adjunte los datos de la factura ZUGFeRD a un PDF](/pdf/java/attach-zugferd/)
+- [Adjunte los datos de la factura ZUGFeRD a un PDF](/pdf/java/attach-zugferd/)

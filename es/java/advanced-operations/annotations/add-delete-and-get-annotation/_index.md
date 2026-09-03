@@ -20,21 +20,15 @@ Esta página agrupa las familias de anotaciones cubiertas por los ejemplos de Ja
 Utilice los siguientes temas:
 
 
-- 
-[Anotaciones de texto](/pdf/java/text-based-annotations/)
+- [Anotaciones de texto](/pdf/java/text-based-annotations/)
 
-- 
-[Anotaciones de marcado](/pdf/java/markup-annotations/)
+- [Anotaciones de marcado](/pdf/java/markup-annotations/)
 
-- 
-[Anotaciones interactivas](/pdf/java/interactive-annotations/)
+- [Anotaciones interactivas](/pdf/java/interactive-annotations/)
 - [Anotaciones de forma](/pdf/java/shape-annotations/)
 
-- 
-[Anotaciones de medios](/pdf/java/media-annotations/)
+- [Anotaciones de medios](/pdf/java/media-annotations/)
 
-- 
-[Anotaciones de seguridad](/pdf/java/security-annotations/)
+- [Anotaciones de seguridad](/pdf/java/security-annotations/)
 
-- 
-[Anotaciones de marca de agua](/pdf/java/watermark-annotations/)
+- [Anotaciones de marca de agua](/pdf/java/watermark-annotations/)

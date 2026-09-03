@@ -20,12 +20,9 @@ Utilice estos flujos de trabajo cuando necesite reconstruir la estructura del do
 Esta sección cubre cómo:
 
 
-- 
-agregar páginas de otro PDF
+- agregar páginas de otro PDF
 
-- 
-eliminar páginas específicas
+- eliminar páginas específicas
 
-- 
-extraer las páginas seleccionadas en un nuevo archivo
+- extraer las páginas seleccionadas en un nuevo archivo
 - insertar páginas elegidas de un PDF en otro

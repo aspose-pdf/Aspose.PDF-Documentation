@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, aplicar un ind
 ## Establecer indicadores de apariencia de campo
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `setFieldAppearance(...)` para obtener el campo de destino y el indicador de anotación elegido.
+2. Llame a `setFieldAppearance(...)` para obtener el campo de destino y el indicador de anotación elegido.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void setFieldAppearance(Path inputFile, Path outputFile) {

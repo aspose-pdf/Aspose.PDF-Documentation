@@ -33,40 +33,29 @@ ventanas
 
 - Microsoft Windows 2000 Profesional (x64, x86)
 
-- 
-Servidor Microsoft Windows 2000 (x64, x86)
+- Servidor Microsoft Windows 2000 (x64, x86)
 
-- 
-Servidor Microsoft Windows 2003 (x64, x86)
+- Servidor Microsoft Windows 2003 (x64, x86)
 
-- 
-Servidor Microsoft Windows 2008 (x64, x86)
+- Servidor Microsoft Windows 2008 (x64, x86)
 
-- 
-Servidor Microsoft Windows 2012 (x64, x86)
+- Servidor Microsoft Windows 2012 (x64, x86)
 - Servidor Microsoft Windows 2012 R2 (x64, x86)
 
-- 
-Servidor Microsoft Windows 2016 (x64, x86)
+- Servidor Microsoft Windows 2016 (x64, x86)
 
-- 
-Servidor Microsoft Windows 2019 (x64, x86)
+- Servidor Microsoft Windows 2019 (x64, x86)
 
-- 
-Microsoft Windows Vista (x64, x86)
+- Microsoft Windows Vista (x64, x86)
 
-- 
-Microsoft Windows XP (x64, x86)
+- Microsoft Windows XP (x64, x86)
 - Microsoft Windows 7 (x64, x86)
 
-- 
-Microsoft Windows 8, 8.1 (x64, x86)
+- Microsoft Windows 8, 8.1 (x64, x86)
 
-- 
-Microsoft Windows 10 (x64, x86)
+- Microsoft Windows 10 (x64, x86)
 
-- 
-MicrosoftAzure
+- MicrosoftAzure
 
 
 ### 
@@ -79,8 +68,7 @@ linux
 mac
 
 
-- 
-MacOS X
+- MacOS X
 
 
 ## 
@@ -92,8 +80,7 @@ Aspose.PDF para Java admite las siguientes versiones de Java:
 
 - J2SE 8.0 (1.8) o superior (*por ejemplo Java 10*)
 
-- 
-Soporte de Aspose.Pdf para Java en IBM i (Iseries o As/400)
+- Soporte de Aspose.Pdf para Java en IBM i (Iseries o As/400)
 
 
 ## 
@@ -104,28 +91,20 @@ Entornos de desarrollo
 Puede utilizar Aspose.PDF para Java para desarrollar aplicaciones en cualquier entorno de desarrollo dirigido a la plataforma Java, pero los siguientes entornos son explícitamente compatibles:
 
 
-- 
-Microsoft Visual Studio 2003
+- Microsoft Visual Studio 2003
 - Microsoft Visual Studio 2005
 
-- 
-Microsoft Visual Studio 2008
+- Microsoft Visual Studio 2008
 
-- 
-Microsoft Visual Studio 2010
+- Microsoft Visual Studio 2010
 
-- 
-Microsoft Visual Studio 2011
+- Microsoft Visual Studio 2011
 
-- 
-Microsoft Visual Studio 2012
+- Microsoft Visual Studio 2012
 - Microsoft Visual Studio 2013
 
-- 
-Microsoft Visual Studio 2015
+- Microsoft Visual Studio 2015
 
-- 
-Microsoft Visual Studio 2017
+- Microsoft Visual Studio 2017
 
-- 
-Microsoft Visual Studio 2019
+- Microsoft Visual Studio 2019

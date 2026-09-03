@@ -17,14 +17,11 @@ Utilice `FormEditorExamples.createListBoxField(...)` para crear un cuadro de lis
 Crear un campo de cuadro de lista
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Defina los elementos de la lista disponibles con `setItems(...)`.
+2. Defina los elementos de la lista disponibles con `setItems(...)`.
 
-3. 
-Agregue el campo del cuadro de lista con su valor predeterminado y su rectángulo.
+3. Agregue el campo del cuadro de lista con su valor predeterminado y su rectángulo.
 4. Guarde el documento actualizado.
 
 ```java

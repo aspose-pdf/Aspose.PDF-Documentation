@@ -21,11 +21,9 @@ Obtener parámetros de ubicación de imágenes
 Utilice este ejemplo cuando necesite inspeccionar la geometría de la imagen y la resolución efectiva de una página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para recopilar ubicaciones de imágenes.
+1. Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para recopilar ubicaciones de imágenes.
 1. Genere el tamaño, las coordenadas y la resolución de cada imagen colocada.
 
 
@@ -55,11 +53,9 @@ Detectar tipos de color de imagen
 Utilice este ejemplo cuando necesite contar imágenes en escala de grises y RGB en una página PDF.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para iterar sobre las imágenes de la página.
+1. Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para iterar sobre las imágenes de la página.
 1. Lea el [Tipo de color](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) de cada imagen y genere los totales.
 
 
@@ -103,11 +99,9 @@ Extraer texto alternativo de la imagen
 Utilice este ejemplo cuando necesite inspeccionar el texto de accesibilidad asociado con las imágenes de la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para recopilar ubicaciones de imágenes.
+1. Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para recopilar ubicaciones de imágenes.
 1. Lea el texto alternativo para cada imagen y genere el resultado.
 
 
@@ -138,11 +132,9 @@ Calcular información de imagen a partir de operadores de página.
 Utilice este ejemplo cuando necesite derivar el tamaño y la resolución de imagen efectivos a partir de operadores de contenido de página de bajo nivel.
 
 
-1. 
-Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y recopile los nombres de los recursos de imágenes.
+1. Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y recopile los nombres de los recursos de imágenes.
 
-1. 
-Realice un seguimiento del estado de los gráficos mientras recorre los operadores de página.
+1. Realice un seguimiento del estado de los gráficos mientras recorre los operadores de página.
 1. Resuelva cada operación de dibujo de imágenes y calcule sus dimensiones y resolución efectivas.
 
 ```java

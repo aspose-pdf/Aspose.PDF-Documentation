@@ -14,8 +14,7 @@ sitemap:
 La extracción de texto básica es el punto de partida para leer contenido PDF en Java. Aspose.PDF proporciona dos enfoques comunes:
 
 
-- 
-Utilice `TextAbsorber` cuando necesite un resultado de texto sin formato de un documento o página.
+- Utilice `TextAbsorber` cuando necesite un resultado de texto sin formato de un documento o página.
 - Utilice `ParagraphAbsorber` cuando necesite conservar la agrupación de páginas, secciones, párrafos, líneas y fragmentos.
 
 
@@ -31,15 +30,12 @@ Extraer texto de todas las páginas.
 Utilice `TextAbsorber` para recopilar un flujo de texto plano de todo el documento y escribirlo en un archivo. Esta es la opción más sencilla cuando solo necesita contenido de texto legible y no necesita límites ni coordenadas de párrafo.
 
 
-1. 
-Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para acumular texto en todo el documento.
 
-1. 
-Llame a `document.getPages().accept(textAbsorber)` para que el absorbente visite cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Llame a `document.getPages().accept(textAbsorber)` para que el absorbente visite cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Escriba el búfer de texto extraído en el archivo de salida.
+1. Escriba el búfer de texto extraído en el archivo de salida.
 
 
 ```java
@@ -61,14 +57,11 @@ Aplique el absorbente solo a la página que necesita. Los números de página en
 
 1. Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para la extracción de una sola página.
+1. Cree un [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para la extracción de una sola página.
 
-1. 
-Llame a `accept(textAbsorber)` en la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino seleccionada por el número de página.
+1. Llame a `accept(textAbsorber)` en la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino seleccionada por el número de página.
 
-1. 
-Escriba el búfer de texto extraído en el archivo de salida.
+1. Escriba el búfer de texto extraído en el archivo de salida.
 
 
 ```java
@@ -87,17 +80,13 @@ Extraer texto por estructura de párrafo
 Utilice `ParagraphAbsorber` cuando necesite agrupación estructural en lugar de una única secuencia de texto sin formato. Devuelve marcas de página con secciones, párrafos, líneas y objetos `TextFragment`, lo cual es útil cuando la salida debe preservar bloques lógicos de texto.
 
 
-1. 
-Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) y visite el documento completo para generar resultados de marcado de página.
+1. Cree un [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) y visite el documento completo para generar resultados de marcado de página.
 
-1. 
-Itere a través de las marcas de página, secciones, párrafos, líneas y objetos [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) expuestos por el absorbente.
+1. Itere a través de las marcas de página, secciones, párrafos, líneas y objetos [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) expuestos por el absorbente.
 
-1. 
-Cree el texto de salida con numeración explícita de páginas, secciones y párrafos para conservar la agrupación estructural.
+1. Cree el texto de salida con numeración explícita de páginas, secciones y párrafos para conservar la agrupación estructural.
 1. Escriba el texto del párrafo extraído en el archivo de salida.
 
 ```java

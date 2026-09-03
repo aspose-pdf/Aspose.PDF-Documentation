@@ -24,11 +24,9 @@ Convertir OFD a PDF
 Utilice este ejemplo cuando un documento OFD deba convertirse a PDF.
 
 
-1. 
-Abra la fuente OFD pasando la ruta del archivo y [`OfdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ofdloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra la fuente OFD pasando la ruta del archivo y [`OfdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ofdloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Deje que Aspose.PDF analice el paquete OFD en el modelo de documento PDF.
+1. Deje que Aspose.PDF analice el paquete OFD en el modelo de documento PDF.
 1. Guarde el PDF resultante en la ruta de salida de destino.
 
 
@@ -49,11 +47,9 @@ Convertir texto a PDF
 Utilice este ejemplo cuando el contenido TeX deba representarse directamente como PDF.
 
 
-1. 
-Abra la fuente TeX pasando la ruta del archivo y [`TeXLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra la fuente TeX pasando la ruta del archivo y [`TeXLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Deje que Aspose.PDF interprete el marcado TeX y cree el diseño del PDF durante la carga.
+1. Deje que Aspose.PDF interprete el marcado TeX y cree el diseño del PDF durante la carga.
 1. Guarde el PDF generado.
 
 
@@ -74,11 +70,9 @@ Convertir PostScript a PDF
 Utilice este ejemplo cuando deba convertir un archivo PostScript en un documento PDF.
 
 
-1. 
-Abra la fuente PostScript con [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) en el constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra la fuente PostScript con [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) en el constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Deje que Aspose.PDF traduzca el flujo de descripción de página PostScript a un modelo de documento PDF.
+1. Deje que Aspose.PDF traduzca el flujo de descripción de página PostScript a un modelo de documento PDF.
 1. Guarde el archivo PDF convertido.
 
 
@@ -99,11 +93,9 @@ Convertir EPS a PDF
 Utilice este ejemplo cuando deba convertir un archivo PostScript encapsulado a PDF.
 
 
-1. 
-Abra la fuente EPS con [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) porque EPS sigue la misma ruta de carga basada en PostScript.
+1. Abra la fuente EPS con [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) porque EPS sigue la misma ruta de carga basada en PostScript.
 
-1. 
-Cargue el archivo en [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para que el contenido de la descripción de la página se convierta durante la importación.
+1. Cargue el archivo en [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para que el contenido de la descripción de la página se convierta durante la importación.
 1. Guarde el PDF de salida.
 
 
@@ -124,11 +116,9 @@ Convertir EPUB a PDF
 Utilice este ejemplo cuando deba convertir un libro electrónico EPUB a PDF.
 
 
-1. 
-Abra la fuente EPUB pasando la ruta del archivo y [`EpubLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra la fuente EPUB pasando la ruta del archivo y [`EpubLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Deje que Aspose.PDF cargue la estructura del libro electrónico y la transforme en páginas PDF.
+1. Deje que Aspose.PDF cargue la estructura del libro electrónico y la transforme en páginas PDF.
 1. Guarde el PDF convertido.
 
 
@@ -149,11 +139,9 @@ Convertir rebajas a PDF
 Utilice este ejemplo cuando el contenido de Markdown deba renderizarse y guardarse como PDF.
 
 
-1. 
-Abra la fuente de Markdown pasando la ruta del archivo y [`MdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mdloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra la fuente de Markdown pasando la ruta del archivo y [`MdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mdloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Deje que Aspose.PDF interprete el contenido de Markdown y lo convierta en contenido de página PDF.
+1. Deje que Aspose.PDF interprete el contenido de Markdown y lo convierta en contenido de página PDF.
 1. Guarde el archivo PDF de salida.
 
 
@@ -174,15 +162,12 @@ Convierta texto a PDF con un flujo de trabajo simple
 Utilice este ejemplo cuando un archivo de texto sin formato deba convertirse rápidamente a PDF.
 
 
-1. 
-Lea la fuente de texto sin formato con decodificación UTF-8 para que el contenido del texto esté disponible como una cadena Java.
+1. Lea la fuente de texto sin formato con decodificación UTF-8 para que el contenido del texto esté disponible como una cadena Java.
 
-1. 
-Cree un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vacío y agregue un [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Cree un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vacío y agregue un [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Envuelva el texto en un [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) y agréguelo a la colección de párrafos de la página.
 
-1. 
-Guarde el PDF generado.
+1. Guarde el PDF generado.
 
 
 ```java
@@ -206,15 +191,12 @@ Convierte texto a PDF con opciones avanzadas
 Utilice este ejemplo cuando deba convertir texto sin formato con opciones adicionales de diseño o codificación.
 
 
-1. 
-Lea todas las líneas de texto del archivo de entrada para poder inspeccionar los marcadores de salto de página durante la conversión.
+1. Lea todas las líneas de texto del archivo de entrada para poder inspeccionar los marcadores de salto de página durante la conversión.
 1. Cree un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vacío y configure cada [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) con márgenes y estado de texto predeterminado.
 
-1. 
-Resuelva la fuente monoespaciada mediante [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) y agregue cada línea como [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. Resuelva la fuente monoespaciada mediante [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) y agregue cada línea como [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 
-1. 
-Guarde el archivo de salida una vez que se complete el ciclo de creación de páginas.
+1. Guarde el archivo de salida una vez que se complete el ciclo de creación de páginas.
 
 
 ```java
@@ -258,11 +240,9 @@ Utilice este ejemplo cuando una secuencia de impresión PCL deba convertirse a P
 
 1. Cree [`PclLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pclloadoptions/) y habilite errores de análisis suprimidos cuando se requiera un comportamiento de importación indulgente.
 
-1. 
-Abra la fuente PCL pasando la ruta del archivo y cargue las opciones en el constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra la fuente PCL pasando la ruta del archivo y cargue las opciones en el constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Guarde el resultado como PDF.
+1. Guarde el resultado como PDF.
 
 
 ```java
@@ -285,14 +265,11 @@ Utilice este ejemplo cuando los datos XML deban transformarse antes de la genera
 
 1. Transforme la fuente XML con el archivo XSLT en un archivo HTML temporal llamando al método de transformación dedicado.
 
-1. 
-Pase el archivo HTML generado a la función de conversión de HTML a PDF existente para que el PDF final utilice el flujo de trabajo estándar [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/).
+1. Pase el archivo HTML generado a la función de conversión de HTML a PDF existente para que el PDF final utilice el flujo de trabajo estándar [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/).
 
-1. 
-Elimine el archivo HTML temporal en el bloque `finally` una vez completada la conversión.
+1. Elimine el archivo HTML temporal en el bloque `finally` una vez completada la conversión.
 
-1. 
-Guarde el archivo PDF generado.
+1. Guarde el archivo PDF generado.
 
 
 ```java
@@ -314,14 +291,11 @@ Convertir XPS a PDF
 Utilice este ejemplo cuando un documento XPS deba convertirse a PDF.
 
 
-1. 
-Abra la fuente XPS pasando la ruta del archivo y [`XpsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpsloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra la fuente XPS pasando la ruta del archivo y [`XpsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpsloadoptions/) al constructor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Deje que Aspose.PDF interprete la descripción de la página XPS durante la carga del documento.
+1. Deje que Aspose.PDF interprete la descripción de la página XPS durante la carga del documento.
 
-1. 
-Guarde el PDF convertido.
+1. Guarde el PDF convertido.
 
 
 ```java
@@ -339,17 +313,13 @@ Convertir XSL-FO a PDF
 Utilice este ejemplo cuando el contenido XSL-FO deba representarse como PDF.
 
 
-1. 
-Cree [`XslFoLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions/) con la ruta XSLT para que la fuente XML pueda transformarse durante la carga.
+1. Cree [`XslFoLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions/) con la ruta XSLT para que la fuente XML pueda transformarse durante la carga.
 
-1. 
-Configure el modo de manejo de errores de análisis para que se genere inmediatamente cuando se encuentre un XSL-FO no válido.
+1. Configure el modo de manejo de errores de análisis para que se genere inmediatamente cuando se encuentre un XSL-FO no válido.
 
-1. 
-Abra la fuente XML en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) con esas opciones de carga.
+1. Abra la fuente XML en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) con esas opciones de carga.
 
-1. 
-Guarde el documento PDF resultante.
+1. Guarde el documento PDF resultante.
 
 ```java
 public static void convertXslFoToPdf(Path xsltFile, Path xmlFile, Path outputFile) {
@@ -369,14 +339,11 @@ public static void convertXslFoToPdf(Path xsltFile, Path xmlFile, Path outputFil
 Utilice este método cuando los datos XML deban transformarse a HTML antes del paso final de conversión de PDF.
 
 
-1. 
-Abra los archivos de entrada XML y XSLT como fuentes de transformación.
+1. Abra los archivos de entrada XML y XSLT como fuentes de transformación.
 
-1. 
-Cree un `Transformer` a partir de la hoja de estilos XSLT y ejecútelo en la fuente XML.
+1. Cree un `Transformer` a partir de la hoja de estilos XSLT y ejecútelo en la fuente XML.
 
-1. 
-Escriba el archivo HTML transformado en el disco para que la función de conversión de PDF posterior pueda cargarlo.
+1. Escriba el archivo HTML transformado en el disco para que la función de conversión de PDF posterior pueda cargarlo.
 
 ```java
 private static void transformXmlToHtml(Path xmlFile, Path xsltFile, Path htmlFile) throws Exception {

@@ -24,11 +24,9 @@ Agregue numeración Bates con el ayudante dedicado
 Utilice este ejemplo cuando desee aplicar la numeración Bates a través del asistente de colección de páginas dedicado.
 
 
-1. 
-Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue las páginas adicionales que requiera la muestra.
+1. Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue las páginas adicionales que requiera la muestra.
 
-1. 
-Cree la configuración [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/).
+1. Cree la configuración [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/).
 1. Aplique la numeración Bates a la colección de páginas y guarde el archivo de salida.
 
 
@@ -54,11 +52,9 @@ Agregar numeración Bates a través de artefactos de paginación
 Este ejemplo aplica la numeración Bates pasando el artefacto Bates a través de la API de paginación genérica.
 
 
-1. 
-Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue las páginas requeridas.
+1. Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue las páginas requeridas.
 
-1. 
-Cree el [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) y agréguelo a una lista de artefactos de paginación.
+1. Cree el [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) y agréguelo a una lista de artefactos de paginación.
 1. Aplique los artefactos de paginación a la colección de páginas y guarde el documento.
 
 
@@ -86,11 +82,9 @@ Eliminar numeración Bates
 Utilice este enfoque cuando los artefactos de numeración Bates existentes deban eliminarse del documento.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Llame al ayudante de recopilación de páginas que elimina la numeración Bates.
+1. Llame al ayudante de recopilación de páginas que elimina la numeración Bates.
 1. Guarde el archivo de salida limpio.
 
 ```java

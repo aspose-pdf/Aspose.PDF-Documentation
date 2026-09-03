@@ -13,17 +13,13 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, configurar un 
 ## decorar un campo
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Configure un `FormFieldFacade` con los colores y la alineación requeridos.
+2. Configure un `FormFieldFacade` con los colores y la alineación requeridos.
 
-3. 
-Pase la fachada al editor y llame a `decorateField(...)`.
+3. Pase la fachada al editor y llame a `decorateField(...)`.
 
-4. 
-Guarde el documento actualizado.
+4. Guarde el documento actualizado.
 
 ```java
 public static void decorateField(Path inputFile, Path outputFile) {

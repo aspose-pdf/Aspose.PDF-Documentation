@@ -16,17 +16,13 @@ Abstract: Aspose.PDF para Python a través de .NET es una biblioteca sólida que
 ## Características generales
 
 
-- 
-Escrito completamente en Java, funciona con JDK 1.8 y superior
+- Escrito completamente en Java, funciona con JDK 1.8 y superior
 
-- 
-Soporta todas las aplicaciones Java
+- Soporta todas las aplicaciones Java
 
-- 
-Referencia de API en formato JavaDoc
+- Referencia de API en formato JavaDoc
 
-- 
-Compatibilidad con sistemas operativos de 32 bits.
+- Compatibilidad con sistemas operativos de 32 bits.
 - Compatibilidad con sistemas operativos de 64 bits.
 
 
@@ -42,21 +38,16 @@ Aspose.PDF para Java admite las versiones de PDF 1.2, 1.3, 1.4, 1.5, 1.6 y 1.7.
 Fuentes
 
 
-- 
-14 fuentes principales.
+- 14 fuentes principales.
 - Fuentes PostScript Type1.
 
-- 
-Fuentes TrueType.
+- Fuentes TrueType.
 
-- 
-Escriba 3 fuentes.
+- Escriba 3 fuentes.
 
-- 
-Información de fuente incrustada en PDF
+- Información de fuente incrustada en PDF
 
-- 
-Fuentes CJK.
+- Fuentes CJK.
 - Soporte Unicode.
 
 
@@ -64,29 +55,22 @@ Fuentes CJK.
 Texto
 
 
-- 
-Reemplazar texto.
+- Reemplazar texto.
 
-- 
-Extraiga texto (de todo el PDF, de una página en particular o de un rango de páginas).
+- Extraiga texto (de todo el PDF, de una página en particular o de un rango de páginas).
 
-- 
-Añade texto.
+- Añade texto.
 
 ## Gráfico
 
 
-- 
-Se admiten diferentes formas de gráficos, como línea, círculo, arco y curva.
+- Se admiten diferentes formas de gráficos, como línea, círculo, arco y curva.
 
-- 
-Los gráficos se pueden dibujar en cualquier ubicación de página especificada por coordenadas.
+- Los gráficos se pueden dibujar en cualquier ubicación de página especificada por coordenadas.
 
-- 
-Los gráficos se pueden rotar, escalar o rellenar, y se pueden definir estilos de línea de guión y poli-guión.
+- Los gráficos se pueden rotar, escalar o rellenar, y se pueden definir estilos de línea de guión y poli-guión.
 
-- 
-Los gráficos se dibujan en base a coordenadas y tienen una posición obsoleta en lugar de relativa.
+- Los gráficos se dibujan en base a coordenadas y tienen una posición obsoleta en lugar de relativa.
 - Se admiten espacios de color CMYK y grises.
 
 
@@ -94,177 +78,131 @@ Los gráficos se dibujan en base a coordenadas y tienen una posición obsoleta e
 Imágenes
 
 
-- 
-Agregar imagen en archivo PDF.
+- Agregar imagen en archivo PDF.
 
-- 
-Eliminar imágenes.
+- Eliminar imágenes.
 
-- 
-Reemplazar imágenes.
+- Reemplazar imágenes.
 - Extraiga imágenes (de todo el PDF, de una página en particular o de un rango de páginas).
 
-- 
-Conversión de PDF a JPEG (una página particular o todas las páginas).
+- Conversión de PDF a JPEG (una página particular o todas las páginas).
 
-- 
-Conversión de PDF a TIFF (una sola página o todas las páginas, o imágenes TIFF pixeladas).
+- Conversión de PDF a TIFF (una sola página o todas las páginas, o imágenes TIFF pixeladas).
 
-- 
-Conversión de PDF a PNG (una página particular o todas las páginas).
+- Conversión de PDF a PNG (una página particular o todas las páginas).
 
-- 
-Conversión de PDF a BMP (una página particular o todas las páginas).
+- Conversión de PDF a BMP (una página particular o todas las páginas).
 - Conversión de PDF a SVG.
 
-- 
-Conversión de PDF a EMF.
+- Conversión de PDF a EMF.
 
-- 
-Conversión de PDF a GIF.
+- Conversión de PDF a GIF.
 
 
 ## 
 Adjuntos
 
 
-- 
-Agregar archivo adjunto.
+- Agregar archivo adjunto.
 - Obtener archivos adjuntos.
 
-- 
-Eliminar archivos adjuntos.
+- Eliminar archivos adjuntos.
 
-- 
-Obtener información del archivo adjunto.
+- Obtener información del archivo adjunto.
 
 
 ## 
 Página
 
 
-- 
-Obtener y establecer propiedades de página.
+- Obtener y establecer propiedades de página.
 - Concatenar archivos PDF.
 
-- 
-Insertar páginas PDF.
+- Insertar páginas PDF.
 
-- 
-Adjunte archivos PDF.
+- Adjunte archivos PDF.
 
-- 
-Eliminar páginas PDF
+- Eliminar páginas PDF
 
-- 
-Extraer o insertar páginas PDF
+- Extraer o insertar páginas PDF
 - Haga NUp de PDF.
 
-- 
-Hacer folleto de PDF.
+- Hacer folleto de PDF.
 
-- 
-Divida páginas PDF (desde el principio hasta el final, en bloque o en páginas individuales).
+- Divida páginas PDF (desde el principio hasta el final, en bloque o en páginas individuales).
 
 
 ## 
 Documento
 
 
-- 
-Obtenga propiedades del visor de documentos.
+- Obtenga propiedades del visor de documentos.
 - Establecer las propiedades del visor de documentos.
 
-- 
-Obtener propiedades de visualización de la página.
+- Obtener propiedades de visualización de la página.
 
-- 
-Establecer propiedades de visualización de la página.
+- Establecer propiedades de visualización de la página.
 
-- 
-Obtenga información del archivo PDF.
+- Obtenga información del archivo PDF.
 
-- 
-Establecer información del archivo PDF.
+- Establecer información del archivo PDF.
 - Linealización (optimización para la web).
 
-- 
-Establecer metadatos XMP.
+- Establecer metadatos XMP.
 
-- 
-Obtenga metadatos XMP.
+- Obtenga metadatos XMP.
 
-- 
-Conversión de PDF a DOC/DOCX.
+- Conversión de PDF a DOC/DOCX.
 
-- 
-PDF a Excel XLS y XLSX
+- PDF a Excel XLS y XLSX
 - Conversión de PDF a HTML.
 
-- 
-Conversión de PDF a XPS.
+- Conversión de PDF a XPS.
 
-- 
-Conversión de PDF a Tex.
+- Conversión de PDF a Tex.
 
-- 
-PDF a PDF-A.
+- PDF a PDF-A.
 
-- 
-PDF a PDF/A_1b.
+- PDF a PDF/A_1b.
 - PDF a PDF/A_3b.
 
-- 
-PDF a PDF/A_3a.
+- PDF a PDF/A_3a.
 
-- 
-PDF a PDF/A_2a.
+- PDF a PDF/A_2a.
 
-- 
-PDF a PDF/A_3U.
+- PDF a PDF/A_3U.
 
-- 
-Cree PDF/A-3 y adjunte un archivo XML.
+- Cree PDF/A-3 y adjunte un archivo XML.
 
 ## Marcadores
 
 
-- 
-Añade marcadores.
+- Añade marcadores.
 
-- 
-Agregue marcadores infantiles.
+- Agregue marcadores infantiles.
 
-- 
-Eliminar marcadores.
+- Eliminar marcadores.
 
-- 
-Obtener marcadores.
+- Obtener marcadores.
 - Actualizar marcadores
 
-- 
-Marcadores ampliados
+- Marcadores ampliados
 
-- 
-Exportar e importar marcadores.
+- Exportar e importar marcadores.
 
 
 ## 
 Anotaciones
 
 
-- 
-Añade anotaciones.
+- Añade anotaciones.
 - Obtener anotaciones.
 
-- 
-Eliminar anotaciones.
+- Eliminar anotaciones.
 
-- 
-Modificar anotaciones.
+- Modificar anotaciones.
 
-- 
-Importar y exportar anotaciones.
+- Importar y exportar anotaciones.
 
 
 ## 
@@ -272,43 +210,31 @@ Formularios
 
 - Agregar campos.
 
-- 
-Rellenar campos.
+- Rellenar campos.
 
-- 
-Obtener valores del botón de opción.
+- Obtener valores del botón de opción.
 
-- 
-Obtener valor actual del botón de opción.
+- Obtener valor actual del botón de opción.
 
-- 
-Obtenga la fachada del campo del formulario (los atributos visuales del campo).
+- Obtenga la fachada del campo del formulario (los atributos visuales del campo).
 - Eliminar campo.
 
-- 
-Mover el campo a una nueva ubicación.
+- Mover el campo a una nueva ubicación.
 
-- 
-Aplanar campos (un campo en particular o todos).
+- Aplanar campos (un campo en particular o todos).
 
-- 
-Decorar campos (un campo en particular o todos los campos de un tipo en particular).
+- Decorar campos (un campo en particular o todos los campos de un tipo en particular).
 
-- 
-Copie el campo interior y exterior.
+- Copie el campo interior y exterior.
 - Agregar y eliminar elementos de la lista.
 
-- 
-Establecer URL de envío.
+- Establecer URL de envío.
 
-- 
-Establecer secuencia de comandos del botón.
+- Establecer secuencia de comandos del botón.
 
-- 
-Importar y exportar XML.
+- Importar y exportar XML.
 
-- 
-Importar y exportar FDF.
+- Importar y exportar FDF.
 - Importar y exportar XFDF.
 
 
@@ -316,82 +242,62 @@ Importar y exportar FDF.
 Sello y marca de agua
 
 
-- 
-Agregue un sello de texto (en todas las páginas o en páginas específicas).
+- Agregue un sello de texto (en todas las páginas o en páginas específicas).
 
-- 
-Agregue un sello de imagen (en todas las páginas o en páginas específicas).
+- Agregue un sello de imagen (en todas las páginas o en páginas específicas).
 
-- 
-Agregue un sello de página PDF (en todas las páginas o en páginas específicas).
+- Agregue un sello de página PDF (en todas las páginas o en páginas específicas).
 - Agregar número de página.
 
-- 
-Agregue texto al encabezado y pie de página.
+- Agregue texto al encabezado y pie de página.
 
-- 
-Agregue una imagen al encabezado y al pie de página.
+- Agregue una imagen al encabezado y al pie de página.
 
 
 ## 
 Enlaces y acciones
 
 
-- 
-Crear enlace de aplicación.
+- Crear enlace de aplicación.
 - Crear enlace local.
 
-- 
-Crear enlace JavaScript.
+- Crear enlace JavaScript.
 
-- 
-Crear documento acción adicional.
+- Crear documento acción adicional.
 
-- 
-Eliminar acción de apertura de documento.
+- Eliminar acción de apertura de documento.
 
-- 
-Crear enlace de documento PDF.
+- Crear enlace de documento PDF.
 
 ## Seguridad y Firmas
 
 
-- 
-Cifrar y descifrar PDF.
+- Cifrar y descifrar PDF.
 
-- 
-Establecer privilegios de documentos.
+- Establecer privilegios de documentos.
 
-- 
-Modificar contraseñas.
+- Modificar contraseñas.
 
-- 
-Agregar o eliminar firma digital.
+- Agregar o eliminar firma digital.
 - Verifique que el PDF esté firmado.
 
-- 
-Verifique que la firma sea válida.
+- Verifique que la firma sea válida.
 
 
 ## 
 Impresión
 
 
-- 
-Imprima PDF en la impresora predeterminada.
+- Imprima PDF en la impresora predeterminada.
 
-- 
-Imprima PDF en una impresora especificada.
+- Imprima PDF en una impresora especificada.
 - Imprima PDF en una impresora física o virtual.
 
-- 
-Imprima PDF en una impresora XPS.
+- Imprima PDF en una impresora XPS.
 
-- 
-Imprima un archivo PDF a XPS.
+- Imprima un archivo PDF a XPS.
 
-- 
-Ocultar el cuadro de diálogo de impresión al imprimir PDF.
+- Ocultar el cuadro de diálogo de impresión al imprimir PDF.
 
 
 ## 
@@ -399,8 +305,6 @@ Varios
 
 - Obtenga información de la versión de compilación.
 
-- 
-Cambiar el espacio de color del documento PDF
+- Cambiar el espacio de color del documento PDF
 
-- 
-Agregar dibujo con color transparente
+- Agregar dibujo con color transparente

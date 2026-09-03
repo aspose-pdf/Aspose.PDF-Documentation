@@ -21,11 +21,9 @@ Extraer una imagen incrustada por índice
 Utilice este ejemplo cuando necesite guardar un recurso de imagen específico desde una página PDF.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Acceda al objetivo [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) desde los recursos de la página.
+1. Acceda al objetivo [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) desde los recursos de la página.
 1. Guarde la secuencia de imágenes en un archivo de salida.
 
 
@@ -47,11 +45,9 @@ Extraer imágenes de una región de página específica
 Utilice este ejemplo cuando solo se deban exportar imágenes colocadas dentro de un rectángulo seleccionado.
 
 
-1. 
-Defina el [Rectángulo] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) y abra el PDF de origen.
+1. Defina el [Rectángulo] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) y abra el PDF de origen.
 
-1. 
-Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para inspeccionar la ubicación de las imágenes en la página.
+1. Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para inspeccionar la ubicación de las imágenes en la página.
 1. Guarde solo las imágenes cuya ubicación se ajuste dentro de la región seleccionada.
 
 ```java

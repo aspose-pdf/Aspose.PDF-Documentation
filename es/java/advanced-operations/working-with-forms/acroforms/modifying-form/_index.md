@@ -24,11 +24,9 @@ Borrar texto en recursos de formularios incrustados
 Utilice este ejemplo cuando el contenido del formulario Typewriter deba vaciarse sin eliminar los objetos del formulario.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recorra los recursos de formularios de página y localice formularios de máquina de escribir.
+1. Recorra los recursos de formularios de página y localice formularios de máquina de escribir.
 1. Borre los fragmentos de texto absorbidos y guarde el documento.
 
 
@@ -58,11 +56,9 @@ Establecer un límite de longitud de campo de texto
 Utilice este ejemplo cuando un campo de texto deba aceptar solo una cantidad limitada de caracteres.
 
 
-1. 
-Cree una fachada de [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) y vincule el PDF de origen.
+1. Cree una fachada de [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) y vincule el PDF de origen.
 
-1. 
-Establezca la longitud máxima para el campo de destino.
+1. Establezca la longitud máxima para el campo de destino.
 1. Guarde el documento actualizado.
 
 
@@ -87,11 +83,9 @@ Obtener un límite de longitud de campo de texto
 Utilice este ejemplo cuando necesite inspeccionar la longitud máxima actual de un campo de texto.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Acceda al campo de destino desde la colección de formularios.
+1. Acceda al campo de destino desde la colección de formularios.
 1. Lea el límite de [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) y envíelo.
 
 
@@ -114,11 +108,9 @@ Cambiar la fuente de un campo de formulario
 Utilice este ejemplo cuando un campo de texto existente deba utilizar una fuente o apariencia diferente.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Acceda al objetivo [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) y establezca una nueva apariencia predeterminada.
+1. Acceda al objetivo [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) y establezca una nueva apariencia predeterminada.
 1. Guarde el PDF actualizado.
 
 
@@ -144,11 +136,9 @@ Eliminar un campo de formulario por nombre
 Utilice este ejemplo cuando deba eliminarse un campo específico de AcroForm.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Elimine el campo de destino del formulario por su nombre.
+1. Elimine el campo de destino del formulario por su nombre.
 1. Guarde el documento actualizado.
 
 ```java

@@ -11,12 +11,9 @@ lastmod: "2026-06-09"
 Esta sección incluye los siguientes temas:
 
 
-- 
-[Trabajar con objeto de documento en Ruby](/pdf/java/working-with-document-object-in-ruby/)
+- [Trabajar con objeto de documento en Ruby](/pdf/java/working-with-document-object-in-ruby/)
 - [Trabajar con páginas en Ruby](/pdf/java/working-with-pages-in-ruby/)
 
-- 
-[Trabajar con texto en Ruby](/pdf/java/working-with-text-in-ruby/)
+- [Trabajar con texto en Ruby](/pdf/java/working-with-text-in-ruby/)
 
-- 
-[Trabajar con la conversión de documentos en Ruby](/pdf/java/working-with-document-conversion-in-ruby/)
+- [Trabajar con la conversión de documentos en Ruby](/pdf/java/working-with-document-conversion-in-ruby/)

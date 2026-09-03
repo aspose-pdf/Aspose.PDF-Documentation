@@ -20,12 +20,10 @@ Abstract: El artículo analiza las limitaciones y opciones de licencia de Aspose
 Queremos que nuestros clientes prueben minuciosamente nuestros componentes antes de comprarlos para que la versión de evaluación le permita usarlos como lo haría normalmente.
 
 
-- 
-**PDF creado con una marca de agua de evaluación.** La versión de evaluación de Aspose.PDF para Java proporciona funcionalidad completa del producto, pero todas las páginas de los documentos PDF generados tienen una marca de agua con "Solo evaluación. Creado con Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" en la parte superior.
+- **PDF creado con una marca de agua de evaluación.** La versión de evaluación de Aspose.PDF para Java proporciona funcionalidad completa del producto, pero todas las páginas de los documentos PDF generados tienen una marca de agua con "Solo evaluación. Creado con Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" en la parte superior.
 
 
-- 
-**El límite de la cantidad de artículos de colección que se pueden procesar.**
+- **El límite de la cantidad de artículos de colección que se pueden procesar.**
 
 
 En la versión de evaluación de cualquier colección, solo puedes procesar cuatro elementos (por ejemplo, solo 4 páginas, 4 campos de formulario, etc.).
@@ -63,8 +61,7 @@ Debe configurar una licencia antes de realizar cualquier operación con document
 La licencia se puede cargar desde una secuencia o archivo en las siguientes ubicaciones:
 
 
-1. 
-Camino explícito.
+1. Camino explícito.
 1. La carpeta que contiene el archivo aspose-pdf-xx.x.jar.
 
 
@@ -156,8 +153,7 @@ Uso de varios productos de Aspose
 Si utiliza varios productos Aspose en su aplicación, por ejemplo Aspose.PDF y Aspose.Words, aquí le ofrecemos algunos consejos útiles.
 
 
-- 
-**Establezca la licencia para cada producto Aspose por separado.** Incluso si tiene un único archivo de licencia para todos los componentes, por ejemplo 'Aspose.Total.lic', aún necesita llamar a **License.SetLicense** por separado para cada producto Aspose que esté utilizando en su aplicación.
+- **Establezca la licencia para cada producto Aspose por separado.** Incluso si tiene un único archivo de licencia para todos los componentes, por ejemplo 'Aspose.Total.lic', aún necesita llamar a **License.SetLicense** por separado para cada producto Aspose que esté utilizando en su aplicación.
 - **Utilice un nombre de clase de licencia totalmente calificado.** Cada producto Aspose tiene una clase **Licencia** en su espacio de nombres. Por ejemplo, Aspose.PDF tiene la clase **com.aspose.pdf.License** y Aspose.Words tiene la clase **com.aspose.words.License**. El uso del nombre de clase completo le permite evitar cualquier confusión sobre qué licencia se aplica a qué producto.
 
 ```java

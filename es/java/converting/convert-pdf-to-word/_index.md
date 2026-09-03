@@ -24,15 +24,12 @@ Convertir PDF a DOC
 Utilice este ejemplo cuando deba exportar un documento PDF al formato DOC heredado. El código crea `DocSaveOptions`, establece el formato en `Doc` y pasa las opciones a un método de guardado compartido.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) y establezca el formato en `Doc`.
+1. Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) y establezca el formato en `Doc`.
 1. Llame a `document.save(outputFile.toString(), saveOptions)` para que el PDF se exporte al formato de documento binario de Microsoft Word.
 
-1. 
-Guarde el archivo DOC convertido.
+1. Guarde el archivo DOC convertido.
 
 
 ```java
@@ -54,15 +51,12 @@ Convertir PDF a DOCX
 Utilice este ejemplo cuando un documento PDF deba exportarse como un archivo DOCX. DOCX es el formato preferido para la mayoría de los nuevos flujos de trabajo de procesamiento de textos porque es ampliamente compatible y más fácil de editar.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) y establezca el formato en `DocX`.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` para que el contenido del PDF se exporte como un documento de Office Open XML Word.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` para que el contenido del PDF se exporte como un documento de Office Open XML Word.
 
-1. 
-Guarde el archivo DOCX resultante.
+1. Guarde el archivo DOCX resultante.
 
 
 ```java
@@ -85,14 +79,11 @@ Utilice este ejemplo cuando la exportación de Word deba favorecer el contenido 
 
 1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para la salida `DocX`.
+1. Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para la salida `DocX`.
 
-1. 
-Habilite `setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)` para que el convertidor utilice un reconocimiento de flujo mejorado durante la generación de DOCX.
+1. Habilite `setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)` para que el convertidor utilice un reconocimiento de flujo mejorado durante la generación de DOCX.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` y guarde la salida DOCX convertida.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` y guarde la salida DOCX convertida.
 
 
 ```java
@@ -113,17 +104,13 @@ Convierta PDF a DOCX con saltos de línea conservados
 Utilice este ejemplo cuando los finales de línea del PDF de origen deban conservarse en la salida de Word.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para exportar `DocX`.
+1. Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para exportar `DocX`.
 
-1. 
-Habilite `setAddReturnToLineEnd(true)` para que los saltos de línea explícitos se conserven durante la conversión.
+1. Habilite `setAddReturnToLineEnd(true)` para que los saltos de línea explícitos se conserven durante la conversión.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` y guarde el archivo DOCX.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` y guarde el archivo DOCX.
 
 ```java
 public static void convertPdfToDocxWithLineBreaks(Path inputFile, Path outputFile) {
@@ -144,14 +131,11 @@ public static void convertPdfToDocxWithLineBreaks(Path inputFile, Path outputFil
 Utilice este ejemplo cuando las viñetas de lista del PDF de origen deban reconocerse y conservarse como estructuras de lista en Word.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para exportar `DocX`.
+1. Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para exportar `DocX`.
 
-1. 
-Habilite `setRecognizeBullets(true)` para que el contenido PDF tipo lista se reconozca como listas con viñetas durante la conversión.
+1. Habilite `setRecognizeBullets(true)` para que el contenido PDF tipo lista se reconozca como listas con viñetas durante la conversión.
 1. Llame a `document.save(outputFile.toString(), saveOptions)` y guarde el archivo DOCX.
 
 
@@ -175,15 +159,12 @@ Convierta PDF a DOCX con resolución de imagen personalizada
 Utilice este ejemplo cuando la fidelidad de la imagen dentro del DOCX generado deba controlarse durante la conversión.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para exportar `DocX`.
+1. Cree [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para exportar `DocX`.
 1. Configure `setImageResolutionX(300)` y `setImageResolutionY(300)` para que el contenido rasterizado se genere con la resolución solicitada.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` y guarde la salida DOCX.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` y guarde la salida DOCX.
 
 ```java
 public static void convertPdfToDocxWithImageResolution(Path inputFile, Path outputFile) {

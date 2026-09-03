@@ -24,11 +24,9 @@ Inspeccionar gráficos vectoriales en una página.
 Utilice este ejemplo cuando necesite enumerar elementos vectoriales e inspeccionar su página, posición y recuento de operadores.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) y visite la página de destino.
+1. Cree un [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) y visite la página de destino.
 1. Itere a través de los objetos [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) absorbidos y genere sus propiedades.
 
 
@@ -60,11 +58,9 @@ Mover gráficos vectoriales en la página.
 Utilice este ejemplo cuando todos los elementos vectoriales detectados deban desplazarse a una nueva posición.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visite la página de destino con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) y suprima temporalmente las actualizaciones.
+1. Visite la página de destino con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) y suprima temporalmente las actualizaciones.
 1. Cambie la posición de cada elemento absorbido, reanude las actualizaciones y guarde el documento.
 
 
@@ -98,11 +94,9 @@ Eliminar gráficos vectoriales por posición con eliminación de elementos
 Utilice este ejemplo cuando los elementos vectoriales dentro de un rectángulo específico deban eliminarse uno por uno.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visite la página con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) y defina el objetivo [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Visite la página con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) y defina el objetivo [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Elimine los elementos coincidentes, reanude las actualizaciones y guarde el documento.
 
 
@@ -138,11 +132,9 @@ Eliminar gráficos vectoriales eliminando una colección
 Utilice este ejemplo cuando los elementos vectoriales coincidentes deban recopilarse primero y luego eliminarse en una operación de página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visite la página con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) y recopile los elementos coincidentes.
+1. Visite la página con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) y recopile los elementos coincidentes.
 1. Elimine los gráficos recopilados del contenido de la página y guarde el documento actualizado.
 
 
@@ -180,11 +172,9 @@ Copie gráficos vectoriales a otra página elemento por elemento
 Utilice este ejemplo cuando cada elemento vectorial absorbido deba agregarse individualmente a una nueva página.
 
 
-1. 
-Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página de destino.
+1. Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página de destino.
 
-1. 
-Visite la página fuente con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
+1. Visite la página fuente con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
 1. Agregue cada [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) a la página de destino y guarde el documento.
 
 
@@ -218,11 +208,9 @@ Copie gráficos vectoriales a otra página como una colección
 Utilice este ejemplo cuando toda la colección de gráficos vectoriales absorbidos deba copiarse en una nueva página en una sola llamada.
 
 
-1. 
-Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página de destino.
+1. Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página de destino.
 
-1. 
-Visite la página fuente con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
+1. Visite la página fuente con [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
 1. Agregue la colección de gráficos absorbidos a la página de destino y guarde el documento.
 
 ```java

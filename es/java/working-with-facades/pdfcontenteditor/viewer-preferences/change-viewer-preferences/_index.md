@@ -13,17 +13,13 @@ Abstract: Este artículo muestra cómo vincular un PDF, modificar el valor de pr
 ## Cambiar la preferencia del espectador
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Lea el valor de preferencia del espectador actual.
+2. Lea el valor de preferencia del espectador actual.
 
-3. 
-Combínelo con la bandera adicional deseada y pase el resultado a `changeViewerPreference(...)`.
+3. Combínelo con la bandera adicional deseada y pase el resultado a `changeViewerPreference(...)`.
 
-4. 
-Guarde el documento PDF actualizado.
+4. Guarde el documento PDF actualizado.
 
 ```java
 public static void changeViewerPreferences(Path inputFile, Path outputFile) {

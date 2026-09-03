@@ -24,11 +24,9 @@ Actualizar el color del texto vinculado
 Utilice este ejemplo cuando deba cambiar el color del área de texto cubierta por una anotación de enlace.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Busque anotaciones de enlaces y cree un rectángulo de búsqueda de texto a partir de cada área de anotación.
+1. Busque anotaciones de enlaces y cree un rectángulo de búsqueda de texto a partir de cada área de anotación.
 1. Vuelva a colorear los fragmentos de texto coincidentes y guarde el documento.
 
 
@@ -64,11 +62,9 @@ Actualizar color del borde del enlace
 Utilice este ejemplo cuando deba cambiar el color visible de las anotaciones de enlaces existentes.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Itere a través de las anotaciones de la página y filtre por objetos [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/).
+1. Itere a través de las anotaciones de la página y filtre por objetos [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/).
 1. Actualice el color de la anotación del enlace y guarde el documento.
 
 
@@ -95,11 +91,9 @@ Actualizar un destino de enlace web
 Utilice este ejemplo cuando un enlace web existente deba apuntar a un nuevo URI.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Busque anotaciones de enlaces cuya acción sea [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Busque anotaciones de enlaces cuya acción sea [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Reemplace el URI y guarde el documento actualizado.
 
 ```java

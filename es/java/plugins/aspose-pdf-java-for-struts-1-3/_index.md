@@ -47,12 +47,10 @@ Aspose.Words Java para Struts 1.3
 Aspose.Words Java para Struts 1.3 es una sencilla aplicación web de librería escrita con Struts 1.3 y Maven.
 
 
-- 
-La aplicación web pretende mostrar la integración y el uso de [Aspose.Words para Java](https://products.aspose.com/words/java/) dentro de Struts 1.3 y el marco Maven.
+- La aplicación web pretende mostrar la integración y el uso de [Aspose.Words para Java](https://products.aspose.com/words/java/) dentro de Struts 1.3 y el marco Maven.
 - Se ejecuta en un contenedor web como Apache Tomcat y requiere que Maven cree la aplicación web .war para su implementación.
 
-- 
-El caso de uso actual en la aplicación exporta registros de la cuadrícula de libros al formato de documento MS-WORD creando un documento MS-WORD, creando una tabla en él y escribiendo textos/datos en él.
+- El caso de uso actual en la aplicación exporta registros de la cuadrícula de libros al formato de documento MS-WORD creando un documento MS-WORD, creando una tabla en él y escribiendo textos/datos en él.
 
 
 {{% alert color="primary" %}}
@@ -72,14 +70,11 @@ Los siguientes son los requisitos del sistema para la aplicación web Aspose.PDF
 
 - Java 1.6 o superior instalado.
 
-- 
-Servidor Apache Tomcat 7 o superior
+- Servidor Apache Tomcat 7 o superior
 
-- 
-experto 3
+- experto 3
 
-- 
-Componente Aspose.PDF.
+- Componente Aspose.PDF.
 
 
 ## 
@@ -88,8 +83,6 @@ Plataformas compatibles
 Las siguientes son las plataformas compatibles:
 
 
-- 
-Aspose.PDF 10.4.0 o superior.
+- Aspose.PDF 10.4.0 o superior.
 
-- 
-IDE de Java (Eclipse, NetBeans, IntelliJ, ...).
+- IDE de Java (Eclipse, NetBeans, IntelliJ, ...).

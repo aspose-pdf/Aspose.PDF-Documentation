@@ -13,14 +13,11 @@ Abstract: Este artículo explica cómo crear, leer y eliminar anotaciones basada
 ## Agregar una anotación de texto
 
 
-1. 
-Abra el PDF de entrada y seleccione la página donde se debe colocar la anotación de texto.
+1. Abra el PDF de entrada y seleccione la página donde se debe colocar la anotación de texto.
 
-2. 
-Cree `TextAnnotation`, defina su rectángulo y establezca su título, asunto, banderas y color.
+2. Cree `TextAnnotation`, defina su rectángulo y establezca su título, asunto, banderas y color.
 
-3. 
-Agregue la anotación a la página y guarde el documento actualizado.
+3. Agregue la anotación a la página y guarde el documento actualizado.
 
 
 ```java
@@ -44,11 +41,9 @@ Añadir una anotación de texto libre
 
 1. Cargue el PDF de origen y seleccione la página de destino y el rectángulo para la nota de texto libre.
 
-2. 
-Cree `FreeTextAnnotation`, inicialice su apariencia predeterminada y establezca el título y el color.
+2. Cree `FreeTextAnnotation`, inicialice su apariencia predeterminada y establezca el título y el color.
 
-3. 
-Agregue la anotación a la página y guarde el resultado.
+3. Agregue la anotación a la página y guarde el resultado.
 
 ```java
 public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {

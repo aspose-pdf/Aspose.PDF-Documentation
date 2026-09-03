@@ -24,15 +24,12 @@ Convertir PDF a EPUB
 Utilice este ejemplo cuando un documento PDF deba exportarse al formato de libro electrónico EPUB.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`EpubSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubsaveoptions/) y establezca el modo de reconocimiento en `Flow`.
+1. Cree [`EpubSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubsaveoptions/) y establezca el modo de reconocimiento en `Flow`.
 1. Llame a `document.save(outputFile.toString(), saveOptions)` para que el contenido del PDF se exporte como formato EPUB ajustable.
 
-1. 
-Guarde el archivo EPUB convertido.
+1. Guarde el archivo EPUB convertido.
 
 
 ```java
@@ -54,15 +51,12 @@ Convertir PDF a TeX
 Utilice este ejemplo cuando el contenido PDF deba exportarse al formato TeX.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree [`TeXSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texsaveoptions/) para la serialización TeX.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` para que el contenido del PDF se emita como marcado TeX.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` para que el contenido del PDF se emita como marcado TeX.
 
-1. 
-Guarde el archivo TeX resultante.
+1. Guarde el archivo TeX resultante.
 
 
 ```java
@@ -83,14 +77,11 @@ Utilice este ejemplo cuando un documento PDF deba exportarse como un archivo de 
 
 1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [`TextDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/textdevice/) para extraer contenido textual de páginas PDF.
+1. Cree un [`TextDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/textdevice/) para extraer contenido textual de páginas PDF.
 
-1. 
-Llame a `device.process(document.getPages().get_Item(1), outputFile.toString())` para escribir la primera página como texto sin formato.
+1. Llame a `device.process(document.getPages().get_Item(1), outputFile.toString())` para escribir la primera página como texto sin formato.
 
-1. 
-Guarde el archivo de salida de texto.
+1. Guarde el archivo de salida de texto.
 
 
 ```java
@@ -109,17 +100,13 @@ Convertir PDF a XPS
 Utilice este ejemplo cuando un documento PDF deba convertirse al formato XPS.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`XpsSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpssaveoptions/) y habilite las fuentes TrueType incrustadas.
+1. Cree [`XpsSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpssaveoptions/) y habilite las fuentes TrueType incrustadas.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` para que el PDF se serialice como XPS con recursos de fuentes integrados.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` para que el PDF se serialice como XPS con recursos de fuentes integrados.
 
-1. 
-Guarde el archivo XPS convertido.
+1. Guarde el archivo XPS convertido.
 
 ```java
 public static void convertPdfToXps(Path inputFile, Path outputFile) {
@@ -139,14 +126,11 @@ public static void convertPdfToXps(Path inputFile, Path outputFile) {
 Utilice este ejemplo cuando el contenido PDF deba exportarse como Markdown.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [`MarkdownSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/markdownsaveoptions/) y configure el directorio de recursos de imágenes más la salida de etiqueta de imagen HTML.
+1. Cree [`MarkdownSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/markdownsaveoptions/) y configure el directorio de recursos de imágenes más la salida de etiqueta de imagen HTML.
 
-1. 
-Llame a `document.save(outputFile.toString(), saveOptions)` para que el contenido del PDF se emita como Markdown con recursos de imágenes externos.
+1. Llame a `document.save(outputFile.toString(), saveOptions)` para que el contenido del PDF se emita como Markdown con recursos de imágenes externos.
 1. Guarde el archivo Markdown generado.
 
 
@@ -170,15 +154,12 @@ Convertir PDF a Mobi XML
 Utilice este ejemplo cuando el contenido PDF deba exportarse a XML compatible con Mobi.
 
 
-1. 
-Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Seleccione [`SaveFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/saveformat/) `MobiXml` como formato de serialización de destino.
+1. Seleccione [`SaveFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/saveformat/) `MobiXml` como formato de serialización de destino.
 1. Llame a `document.save(outputFile.toString(), SaveFormat.MobiXml)` para que el PDF se exporte como XML compatible con Mobi.
 
-1. 
-Guarde el archivo convertido.
+1. Guarde el archivo convertido.
 
 ```java
 public static void convertPdfToMobiXml(Path inputFile, Path outputFile) {

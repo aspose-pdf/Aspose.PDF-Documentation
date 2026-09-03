@@ -16,28 +16,20 @@ Abstract: Esta sección muestra cómo trabajar con páginas PDF usando Aspose.PD
 Aspose.PDF para Java incluye API a nivel de página para cambios en la colección de páginas, actualizaciones de cuadros de página, encabezados y pies de página, rotación, extracción, movimiento y estampado visual.
 
 
-- 
-[Agregar páginas](/pdf/java/add-pages/)
+- [Agregar páginas](/pdf/java/add-pages/)
 
-- 
-[Agregar encabezados y pies de página](/pdf/java/add-headers-and-footers-of-pdf-file/)
+- [Agregar encabezados y pies de página](/pdf/java/add-headers-and-footers-of-pdf-file/)
 
-- 
-[Cambiar tamaño de página](/pdf/java/change-page-size/)
+- [Cambiar tamaño de página](/pdf/java/change-page-size/)
 
-- 
-[Recortar páginas](/pdf/java/crop-pages/)
+- [Recortar páginas](/pdf/java/crop-pages/)
 - [Eliminar páginas](/pdf/java/delete-pages/)
 
-- 
-[Extraer páginas](/pdf/java/extract-pages/)
+- [Extraer páginas](/pdf/java/extract-pages/)
 
-- 
-[Obtener y configurar propiedades de página](/pdf/java/get-and-set-page-properties/)
+- [Obtener y configurar propiedades de página](/pdf/java/get-and-set-page-properties/)
 
-- 
-[Mover páginas](/pdf/java/move-pages/)
+- [Mover páginas](/pdf/java/move-pages/)
 
-- 
-[Rotar páginas](/pdf/java/rotate-pages/)
+- [Rotar páginas](/pdf/java/rotate-pages/)
 - [Estampado](/pdf/java/stamping/)

@@ -13,8 +13,6 @@ Abstract: Esta sección cubre los flujos de trabajo relacionados con archivos ad
 La clase Java `PdfContentEditorExamples` actual incluye estos flujos de trabajo de archivos adjuntos:
 
 
-- 
-`addAttachment(...)`
+- `addAttachment(...)`
 
-- 
-`removeAttachments(...)`
+- `removeAttachments(...)`

@@ -13,8 +13,6 @@ Abstract: Esta sección cubre los flujos de trabajo de reemplazo de texto actual
 La clase Java actual `PdfContentEditorExamples` admite directamente:
 
 
-- 
-`replaceTextSimple(...)`
+- `replaceTextSimple(...)`
 
-- 
-`replaceTextWithState(...)`
+- `replaceTextWithState(...)`

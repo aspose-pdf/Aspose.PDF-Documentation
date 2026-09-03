@@ -17,14 +17,11 @@ Utilice la colección de imágenes de la página o la búsqueda basada en ubicac
 Reemplazar una imagen por índice de recursos
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Acceda a los recursos de imágenes en la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Acceda a los recursos de imágenes en la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Reemplace el recurso de imagen de destino con el nuevo archivo de imagen.
+1. Reemplace el recurso de imagen de destino con el nuevo archivo de imagen.
 1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
@@ -42,14 +39,11 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 Reemplazar una imagen usando `ImagePlacementAbsorber`
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) y visite la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Cree un [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) y visite la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Obtenga el objetivo [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) y reemplácelo con la nueva secuencia de imágenes.
+1. Obtenga el objetivo [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) y reemplácelo con la nueva secuencia de imágenes.
 1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

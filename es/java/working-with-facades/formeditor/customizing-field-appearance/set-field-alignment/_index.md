@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, establecer la 
 ## Establecer alineación de campo horizontal
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `setFieldAlignment(...)` para obtener el campo objetivo y la constante de alineación deseada.
+2. Llame a `setFieldAlignment(...)` para obtener el campo objetivo y la constante de alineación deseada.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void setFieldAlignment(Path inputFile, Path outputFile) {

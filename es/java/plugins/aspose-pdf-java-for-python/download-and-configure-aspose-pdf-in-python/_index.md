@@ -19,8 +19,7 @@ Descargue las bibliotecas requeridas que se mencionan a continuación. Estos son
 
 - Aspose: [Aspose.PDF para componente Java](https://downloads.aspose.com/pdf/java)
 
-- 
-[JPype](https://pypi.python.org/pypi/JPype1)
+- [JPype](https://pypi.python.org/pypi/JPype1)
 
 
 ## 
@@ -36,8 +35,7 @@ GitHub
 
 - Aspose.PDF Ejemplos de Java para Python
 
-  - 
-[Aspose.PDF Java para Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)
+  - [Aspose.PDF Java para Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)
 
 
 ## 
@@ -48,18 +46,13 @@ Cómo configurar el código fuente
 Siga estos sencillos pasos para abrir y ampliar el código fuente mientras usa:
 
 
-1. 
-Instale solo Python 2.7.x.x desde: <https://www.python.org/downloads/>
+1. Instale solo Python 2.7.x.x desde: <https://www.python.org/downloads/>
 2. Instale JPype desde: <http://sourceforge.net/projects/jpype/files/JPype/>
 
-3. 
-Instale Java JDK desde: <http://www.oracle.com/technetwork/java/javase/downloads>
+3. Instale Java JDK desde: <http://www.oracle.com/technetwork/java/javase/downloads>
 
-4. 
-Descargue Aspose.PDF para las API de Java que desee utilizar en sus proyectos de Python desde: <http://www.aspose.com/community/files/72/java-components/default.aspx> y copie los .jars de las API descargadas en la carpeta %Python%/lib.
+4. Descargue Aspose.PDF para las API de Java que desee utilizar en sus proyectos de Python desde: <http://www.aspose.com/community/files/72/java-components/default.aspx> y copie los .jars de las API descargadas en la carpeta %Python%/lib.
 
-5. 
-Clonar [Aspose.PDF Java para ejemplos de Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) desde github.
+5. Clonar [Aspose.PDF Java para ejemplos de Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) desde github.
 
-6. 
-Clonar [Aspose.PDF Java para ejemplos de Python](http://asposepdfjavapython.codeplex.com/) de CodePlex.
+6. Clonar [Aspose.PDF Java para ejemplos de Python](http://asposepdfjavapython.codeplex.com/) de CodePlex.

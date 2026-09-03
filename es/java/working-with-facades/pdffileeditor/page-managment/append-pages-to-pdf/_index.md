@@ -24,15 +24,12 @@ El ejemplo de Java agrega la página 1 de un segundo PDF al final del primer doc
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Vincule el PDF de entrada principal pasando su ruta a `append`.
+2. Vincule el PDF de entrada principal pasando su ruta a `append`.
 3. Proporcione la lista de archivos fuente secundarios y el rango de páginas para adjuntar.
 
-4. 
-Guarde el resultado combinado en el archivo de salida.
+4. Guarde el resultado combinado en el archivo de salida.
 
 
 ### 

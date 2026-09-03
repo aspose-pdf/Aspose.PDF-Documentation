@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF, crear una anotación de 
 ## Añadir un sello de goma
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Llame a `createRubberStamp(...)` con el número de página, el rectángulo, el título, el contenido y el color.
+2. Llame a `createRubberStamp(...)` con el número de página, el rectángulo, el título, el contenido y el color.
 
-3. 
-Guarde el documento PDF actualizado.
+3. Guarde el documento PDF actualizado.
 
 ```java
 public static void addRubberStamp(Path inputFile, Path outputFile) {

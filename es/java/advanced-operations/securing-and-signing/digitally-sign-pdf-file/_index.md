@@ -20,14 +20,11 @@ Aspose.PDF para Java admite múltiples flujos de firma a través de `PdfFileSign
 Firmar un PDF con un objeto de certificado
 
 
-1. 
-Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
+1. Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
 
-1. 
-Cree el objeto de firma [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) y configure las opciones de firma.
+1. Cree el objeto de firma [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) y configure las opciones de firma.
 
-1. 
-Aplique la firma al documento PDF a través de [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Aplique la firma al documento PDF a través de [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Guarde el documento PDF actualizado.
 
 
@@ -52,15 +49,12 @@ Este enfoque crea primero un objeto de firma `PKCS7` y luego lo aplica a la pág
 Firmar un PDF con parámetros básicos de certificado
 
 
-1. 
-Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
+1. Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
 
-1. 
-Configure los parámetros del certificado requeridos por el ejemplo de firma.
+1. Configure los parámetros del certificado requeridos por el ejemplo de firma.
 1. Aplique la firma al documento PDF a través de [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
-1. 
-Guarde el documento PDF actualizado.
+1. Guarde el documento PDF actualizado.
 
 
 ```java
@@ -85,12 +79,10 @@ Certificar un PDF con DocMDP
 Utilice una firma de prevención y detección de modificaciones de documentos cuando necesite restricciones de nivel de certificación:
 
 
-1. 
-Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
+1. Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
 1. Cree el objeto [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) y configure las opciones de firma [DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/).
 
-1. 
-Aplique la firma de certificación y guarde el documento PDF actualizado.
+1. Aplique la firma de certificación y guarde el documento PDF actualizado.
 
 ```java
 public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {

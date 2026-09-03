@@ -25,15 +25,12 @@ Utilice `PdfFileSignature` cuando necesite aplicar una firma digital visible a u
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSignature` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileSignature` y vincule el PDF de origen.
 
-2. 
-Cargue el certificado a través de `setCertificate` o creando un objeto `PKCS7`.
+2. Cargue el certificado a través de `setCertificate` o creando un objeto `PKCS7`.
 3. Llame a `sign` con la página de destino, la configuración de visibilidad, el rectángulo de firma y los datos de la firma.
 
-4. 
-Guarde el PDF firmado y cierre el objeto de fachada.
+4. Guarde el PDF firmado y cierre el objeto de fachada.
 
 
 ### 

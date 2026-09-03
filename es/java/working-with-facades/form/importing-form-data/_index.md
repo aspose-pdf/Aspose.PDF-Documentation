@@ -13,14 +13,11 @@ Abstract: Esta sección cubre los ejemplos de importación de formularios de Jav
 La clase Java `FormExamples` incluye flujos de trabajo de importación directa para estos formatos:
 
 
-- 
-XML con `form.importXml(...)`
+- XML con `form.importXml(...)`
 
-- 
-FDF con `form.importFdf(...)`
+- FDF con `form.importFdf(...)`
 
-- 
-XFDF con `form.importXfdf(...)`
+- XFDF con `form.importXfdf(...)`
 
 
 

@@ -25,18 +25,14 @@ Utilice este flujo de trabajo cuando deba aplicarse un sello basado en imágenes
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
 
-2. 
-Cree un objeto `Stamp`.
+2. Cree un objeto `Stamp`.
 3. Vincule el sello a un archivo de imagen con `bindImage`.
 
-4. 
-Agregue el sello al documento con `addStamp`.
+4. Agregue el sello al documento con `addStamp`.
 
-5. 
-Guarde la salida y cierre el objeto de fachada.
+5. Guarde la salida y cierre el objeto de fachada.
 
 
 ### 

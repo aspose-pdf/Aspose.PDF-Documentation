@@ -24,11 +24,9 @@ Rotar fragmentos de texto individuales
 Utilice este ejemplo cuando varios fragmentos de texto en la misma línea deban usar diferentes ángulos de rotación.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree fragmentos de texto con los valores de rotación requeridos.
+1. Cree fragmentos de texto con los valores de rotación requeridos.
 1. Añádelos con `TextBuilder` y guarda el resultado.
 
 
@@ -72,11 +70,9 @@ Rotar líneas dentro de un párrafo de texto
 Utilice este ejemplo cuando un párrafo deba contener líneas normales y rotadas.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TextParagraph` y agregue fragmentos de texto con diferentes configuraciones de rotación.
+1. Cree un `TextParagraph` y agregue fragmentos de texto con diferentes configuraciones de rotación.
 1. Agregue el párrafo a la página y guarde el documento.
 
 
@@ -121,11 +117,9 @@ Rotar fragmentos de párrafos sin posiciones explícitas
 Utilice este ejemplo cuando el texto rotado deba agregarse a través del flujo normal de párrafos de la página.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Crea varios fragmentos de texto con diferentes valores de rotación.
+1. Crea varios fragmentos de texto con diferentes valores de rotación.
 1. Agréguelos a la colección de párrafos de la página y guarde el PDF.
 
 
@@ -165,11 +159,9 @@ Rotar párrafos completos
 Utilice este ejemplo cuando se deba rotar todo el bloque de párrafo mientras cada línea mantiene un estilo compartido.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree varios objetos `TextParagraph` con rotación a nivel de párrafo.
+1. Cree varios objetos `TextParagraph` con rotación a nivel de párrafo.
 1. Cree las líneas con un método auxiliar compartido, añádalas y guarde el documento.
 
 ```java

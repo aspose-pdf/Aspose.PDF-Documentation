@@ -17,14 +17,11 @@ Utilice `FormEditorExamples.createTextBoxField(...)` para agregar campos de text
 Crear campos de cuadro de texto
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Agregue cada campo de texto con `FieldType.Text`, el nombre del campo, el valor predeterminado, el número de página y el rectángulo.
+2. Agregue cada campo de texto con `FieldType.Text`, el nombre del campo, el valor predeterminado, el número de página y el rectángulo.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void createTextBoxField(Path inputFile, Path outputFile) {

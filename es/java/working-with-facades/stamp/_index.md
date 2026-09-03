@@ -28,18 +28,14 @@ Utilice este flujo de trabajo cuando un archivo de imagen deba colocarse en el P
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
 2. Cree un objeto `Stamp` y vincúlelo al archivo de imagen.
 
-3. 
-Establezca el identificador del sello y el origen de la ubicación.
+3. Establezca el identificador del sello y el origen de la ubicación.
 
-4. 
-Añade el sello al documento.
+4. Añade el sello al documento.
 
-5. 
-Guarde el resultado y cierre el objeto de fachada.
+5. Guarde el resultado y cierre el objeto de fachada.
 
 
 ### 
@@ -73,18 +69,14 @@ Utilice este flujo de trabajo cuando el contenido de otra página PDF deba reuti
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileStamp` y vincule el PDF de destino.
+1. Cree una instancia `PdfFileStamp` y vincule el PDF de destino.
 
-2. 
-Cree un objeto `Stamp`.
+2. Cree un objeto `Stamp`.
 3. Vincula el sello a una página específica de otro archivo PDF.
 
-4. 
-Establezca el número de página de destino y el origen de la ubicación.
+4. Establezca el número de página de destino y el origen de la ubicación.
 
-5. 
-Agregue el sello, guarde el resultado y cierre el objeto de fachada.
+5. Agregue el sello, guarde el resultado y cierre el objeto de fachada.
 
 
 ### 
@@ -118,18 +110,14 @@ Utilice este flujo de trabajo cuando el sello deba contener texto con estilo en 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
 
-2. 
-Cree un objeto `Stamp`.
+2. Cree un objeto `Stamp`.
 
-3. 
-Vincula un logotipo `FormattedText` y un `TextState` personalizado al sello.
+3. Vincula un logotipo `FormattedText` y un `TextState` personalizado al sello.
 4. Establezca el origen y la rotación del sello.
 
-5. 
-Agregue el sello, guarde el resultado y cierre el objeto de fachada.
+5. Agregue el sello, guarde el resultado y cierre el objeto de fachada.
 
 
 ### 
@@ -164,17 +152,13 @@ Utilice este flujo de trabajo cuando el sello deba aparecer solo en páginas sel
 ### Pasos
 
 
-1. 
-Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
+1. Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
 
-2. 
-Cree un objeto `Stamp` y vincúlelo a un archivo de imagen.
+2. Cree un objeto `Stamp` y vincúlelo a un archivo de imagen.
 
-3. 
-Establezca la lista de páginas de destino, el origen y el tamaño de la imagen.
+3. Establezca la lista de páginas de destino, el origen y el tamaño de la imagen.
 
-4. 
-Añade el sello al documento.
+4. Añade el sello al documento.
 5. Guarde el resultado y cierre el objeto de fachada.
 
 
@@ -213,17 +197,13 @@ Pasos
 
 1. Cree una instancia `PdfFileStamp` y vincule el PDF de origen.
 
-2. 
-Cree un objeto `Stamp` y vincúlelo al archivo de imagen.
+2. Cree un objeto `Stamp` y vincúlelo al archivo de imagen.
 
-3. 
-Marque el sello como contenido de fondo.
+3. Marque el sello como contenido de fondo.
 
-4. 
-Configure opacidad, calidad, rotación, tamaño y origen.
+4. Configure opacidad, calidad, rotación, tamaño y origen.
 
-5. 
-Agregue el sello, guarde el resultado y cierre el objeto de fachada.
+5. Agregue el sello, guarde el resultado y cierre el objeto de fachada.
 
 ### Ejemplo de Java
 

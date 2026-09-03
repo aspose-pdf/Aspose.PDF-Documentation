@@ -34,17 +34,13 @@ Agregar una imagen con operadores de PDF
 Utilice operadores de bajo nivel cuando la ubicación de la imagen deba controlarse con precisión en el nivel del flujo de contenido en lugar de a través de API de diseño de nivel superior.
 
 
-1. 
-Abra el PDF de origen con [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y obtenga la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abra el PDF de origen con [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y obtenga la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Agregue la secuencia de imágenes de entrada a los recursos de la página y mantenga el nombre del recurso devuelto.
+1. Agregue la secuencia de imágenes de entrada a los recursos de la página y mantenga el nombre del recurso devuelto.
 
-1. 
-Cree un [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) que defina el área objetivo y construya una [Matriz](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) a partir de sus límites.
+1. Cree un [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) que defina el área objetivo y construya una [Matriz](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) a partir de sus límites.
 
-1. 
-Utilice [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) para preservar el estado actual de los gráficos, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) para colocar la imagen, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) para pintarla y [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para restaurar el estado anterior.
+1. Utilice [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) para preservar el estado actual de los gráficos, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) para colocar la imagen, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) para pintarla y [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para restaurar el estado anterior.
 1. Guarde el documento PDF actualizado.
 
 
@@ -83,18 +79,14 @@ Dibujar contenido XForm reutilizable en una página
 Utilice este enfoque cuando la misma imagen o gráfico deba renderizarse más de una vez sin duplicar el recurso en el archivo PDF.
 
 
-1. 
-Abra el PDF de origen con [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), obtenga la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y acceda a su [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
+1. Abra el PDF de origen con [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), obtenga la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y acceda a su [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
 
-1. 
-Envuelva el contenido de la página existente con [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) y [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para que las transformaciones posteriores no se filtren en el flujo de contenido original.
+1. Envuelva el contenido de la página existente con [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) y [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para que las transformaciones posteriores no se filtren en el flujo de contenido original.
 1. Cree un recurso [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/), agregue la imagen a los recursos del formulario y use [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) más [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) para dibujar la imagen dentro del formulario.
 
-1. 
-Coloque el mismo formulario en varias coordenadas de página agregando una matriz de traducción y ejecutando el nombre del formulario con el operador `Do`.
+1. Coloque el mismo formulario en varias coordenadas de página agregando una matriz de traducción y ejecutando el nombre del formulario con el operador `Do`.
 
-1. 
-Restaure el estado de los gráficos y guarde el PDF de salida.
+1. Restaure el estado de los gráficos y guarde el PDF de salida.
 
 
 ```java
@@ -143,11 +135,9 @@ Utilice este ejemplo cuando una página contenga operadores de dibujo vectorial 
 
 1. Abra el PDF de origen con [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y obtenga la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Itere a través de los operadores de contenido de la página y recopile instancias de [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/) y [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
+1. Itere a través de los operadores de contenido de la página y recopile instancias de [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/) y [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
 
-1. 
-Elimine los operadores recopilados del contenido de la página y guarde el PDF actualizado.
+1. Elimine los operadores recopilados del contenido de la página y guarde el PDF actualizado.
 
 
 
@@ -177,11 +167,8 @@ Temas relacionados
 
 - [Operaciones avanzadas de PDF en Java](/pdf/java/advanced-operations/)
 
-- 
-[Trabajar con imágenes en PDF usando Java](/pdf/java/working-with-images/)
+- [Trabajar con imágenes en PDF usando Java](/pdf/java/working-with-images/)
 
-- 
-[Trabajar con páginas PDF en Java](/pdf/java/working-with-pages/)
+- [Trabajar con páginas PDF en Java](/pdf/java/working-with-pages/)
 
-- 
-[Trabajar con gráficos vectoriales en Java](/pdf/java/working-with-vector-graphics/)
+- [Trabajar con gráficos vectoriales en Java](/pdf/java/working-with-vector-graphics/)

@@ -20,24 +20,18 @@ Aspose.PDF para Java utiliza `Graph` junto con objetos de forma como `Arc` y `Li
 Agregar contornos de arco
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
+1. Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
 1. Crea la forma [Arco](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) y configura su geometría.
 
-1. 
-Agregue el [Arco](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) al contenedor [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
+1. Agregue el [Arco](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) al contenedor [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 
-1. 
-Establezca las propiedades de forma requeridas por el ejemplo, incluido [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Establezca las propiedades de forma requeridas por el ejemplo, incluido [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 
-1. 
-Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
 ```java
@@ -63,24 +57,18 @@ El ejemplo completo agrega tres arcos con diferentes radios, ángulos y colores 
 ## Agregar un segmento de arco relleno
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
+1. Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
 
-1. 
-Crea la forma [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) y configura sus coordenadas.
+1. Crea la forma [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) y configura sus coordenadas.
 1. Crea la forma [Arco](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) y configura su geometría.
 
-1. 
-Agregue la [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) y el [Arco](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) al contenedor [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
+1. Agregue la [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) y el [Arco](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) al contenedor [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 
-1. 
-Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addArcFilled(Path outputFile) {

@@ -20,11 +20,8 @@ Utilice la fachada de PdfFileEditor cuando necesite redistribuir un PDF existent
 Esta sección cubre cómo:
 
 
-- 
-crear un PDF listo para folletos a partir de un documento existente
+- crear un PDF listo para folletos a partir de un documento existente
 
-- 
-coloque varias páginas de origen en cada hoja de salida con un diseño N-Up
+- coloque varias páginas de origen en cada hoja de salida con un diseño N-Up
 
-- 
-manejar el valor de retorno booleano utilizado por los ejemplos de estilo `try` en el conjunto de muestra de Java
+- manejar el valor de retorno booleano utilizado por los ejemplos de estilo `try` en el conjunto de muestra de Java

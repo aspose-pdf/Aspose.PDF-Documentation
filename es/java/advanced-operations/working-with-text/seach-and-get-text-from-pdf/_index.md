@@ -24,11 +24,9 @@ Extraiga texto de todas las páginas con TextAbsorber
 Utilice este ejemplo cuando necesite texto extraído sin formato de una región de documento seleccionada en todas las páginas.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Cree `TextExtractionOptions` y `TextSearchOptions` basado en regiones.
+1. Cree `TextExtractionOptions` y `TextSearchOptions` basado en regiones.
 1. Ejecute `TextAbsorber` en todas las páginas y genere el texto extraído.
 
 
@@ -53,11 +51,9 @@ Extraiga texto de una página con TextAbsorber
 Utilice este ejemplo cuando la extracción de texto sin formato deba limitarse a una página.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Configure las opciones de extracción y búsqueda de texto con la región de destino.
+1. Configure las opciones de extracción y búsqueda de texto con la región de destino.
 1. Ejecute `TextAbsorber` en la página seleccionada y genere el resultado.
 
 
@@ -82,11 +78,9 @@ Inspeccionar todos los fragmentos de texto del documento.
 Utilice este ejemplo cuando necesite contenido de texto junto con metadatos de fuente, posición y color.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Ejecute `TextFragmentAbsorber` en todas las páginas.
+1. Ejecute `TextFragmentAbsorber` en todas las páginas.
 1. Itere a través de los fragmentos y genere sus metadatos.
 
 
@@ -120,11 +114,9 @@ Buscar una frase en una página específica
 Utilice este ejemplo cuando una palabra de destino deba encontrarse únicamente en una página seleccionada.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Cree `TextFragmentAbsorber` con la frase objetivo.
+1. Cree `TextFragmentAbsorber` con la frase objetivo.
 1. Visite la página elegida y genere las posiciones de los fragmentos coincidentes.
 
 
@@ -150,11 +142,9 @@ Continuar una búsqueda secuencial en todas las páginas
 Utilice este ejemplo cuando desee reutilizar un absorbente mientras pasa de una página de búsqueda a la siguiente.
 
 
-1. 
-Abra el documento PDF fuente y cree un absorbente reutilizable.
+1. Abra el documento PDF fuente y cree un absorbente reutilizable.
 
-1. 
-Busque en la primera página e inspeccione los resultados.
+1. Busque en la primera página e inspeccione los resultados.
 1. Continúe buscando páginas adicionales y revise las coincidencias actualizadas.
 
 
@@ -192,11 +182,9 @@ Buscar una frase dentro de un rectángulo seleccionado
 Utilice este ejemplo cuando la concordancia de frases deba limitarse a una región de una página.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Cree `TextFragmentAbsorber` con la frase de destino y `TextSearchOptions` basado en rectángulo.
+1. Cree `TextFragmentAbsorber` con la frase de destino y `TextSearchOptions` basado en rectángulo.
 1. Visite la página y genere las posiciones de los fragmentos coincidentes.
 
 
@@ -224,11 +212,9 @@ Buscar texto por expresión regular
 Utilice este ejemplo cuando las coincidencias se deban encontrar mediante un patrón de expresiones regulares en lugar de una frase fija.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Cree un `TextFragmentAbsorber` habilitado para expresiones regulares.
+1. Cree un `TextFragmentAbsorber` habilitado para expresiones regulares.
 1. Visite la página de destino y genere los fragmentos coincidentes.
 
 
@@ -256,11 +242,9 @@ Buscar una lista de frases por patrones de expresiones regulares
 Utilice este ejemplo cuando deban encontrarse varias frases objetivo en una sola pasada.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Cree una serie de patrones de expresiones regulares y páselo a `TextFragmentAbsorber`.
+1. Cree una serie de patrones de expresiones regulares y páselo a `TextFragmentAbsorber`.
 1. Visite el documento e inspeccione los resultados de expresiones regulares agrupados.
 
 
@@ -292,11 +276,9 @@ Encuentra texto y conviértelo en hipervínculos.
 Utilice este ejemplo cuando las palabras coincidentes deban resaltarse y convertirse en enlaces en los que se pueda hacer clic.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Busque las palabras de destino con la búsqueda de expresiones regulares habilitada.
+1. Busque las palabras de destino con la búsqueda de expresiones regulares habilitada.
 1. Actualice el estilo del texto, adjunte hipervínculos y guarde el PDF modificado.
 
 
@@ -326,11 +308,9 @@ Buscar texto por características de estilo
 Utilice este ejemplo cuando necesite inspeccionar fragmentos según el formato, como texto en negrita o invisible.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Ejecute `TextFragmentAbsorber` en la página de destino.
+1. Ejecute `TextFragmentAbsorber` en la página de destino.
 1. Verifique cada estilo de fragmento y genere las entradas coincidentes.
 
 
@@ -361,11 +341,9 @@ Resalte los resultados de búsqueda en vistas previas de páginas renderizadas
 Utilice este ejemplo cuando las coincidencias de texto deban correlacionarse con las imágenes de la página renderizadas para una inspección visual.
 
 
-1. 
-Cree un dispositivo PNG con la resolución requerida.
+1. Cree un dispositivo PNG con la resolución requerida.
 
-1. 
-Busque cada página con `TextFragmentAbsorber` y renderice la página en una secuencia de imágenes.
+1. Busque cada página con `TextFragmentAbsorber` y renderice la página en una secuencia de imágenes.
 1. Escriba las imágenes de vista previa de la página y las coordenadas de los fragmentos de salida para su inspección.
 
 ```java

@@ -13,17 +13,13 @@ Abstract: Este artículo muestra cómo vincular un PDF, abrir un archivo adjunto
 ## Agregar un documento adjunto
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Abra el archivo adjunto como flujo de entrada.
+2. Abra el archivo adjunto como flujo de entrada.
 
-3. 
-Llame a `addDocumentAttachment(...)` con la transmisión, el nombre del archivo y la descripción.
+3. Llame a `addDocumentAttachment(...)` con la transmisión, el nombre del archivo y la descripción.
 
-4. 
-Guarde el documento PDF actualizado.
+4. Guarde el documento PDF actualizado.
 
 ```java
 public static void addAttachment(Path inputFile, Path attachmentFile, Path outputFile) throws Exception {

@@ -24,11 +24,9 @@ Agregar una anotación de texto
 Utilice este ejemplo cuando necesite colocar una anotación de texto estilo nota adhesiva con metadatos emergentes en una página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree una [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) y configure su título, contenido, icono y ventana emergente.
+1. Cree una [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) y configure su título, contenido, icono y ventana emergente.
 1. Agregue la anotación a la página y guarde el documento.
 
 
@@ -65,11 +63,9 @@ Obtener anotaciones de texto
 Este ejemplo escanea la página e imprime el rectángulo de cada anotación de texto.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Repita las anotaciones en la página.
+1. Repita las anotaciones en la página.
 1. Filtre las anotaciones por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` e imprima sus rectángulos.
 
 
@@ -93,11 +89,9 @@ Eliminar anotaciones de texto
 Utilice este enfoque cuando las anotaciones de texto existentes deban eliminarse del documento.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recopile anotaciones de tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. Recopile anotaciones de tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
 1. Elimine las anotaciones recopiladas y guarde el archivo de salida.
 
 
@@ -126,11 +120,9 @@ Agregar una anotación de intercalación
 Utilice este ejemplo cuando necesite marcar el texto insertado con una anotación de revisión con estilo de intercalación.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree una [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) y configure su ventana emergente y su apariencia.
+1. Cree una [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) y configure su ventana emergente y su apariencia.
 1. Agregue la anotación a la página y guarde el documento.
 
 
@@ -164,11 +156,9 @@ Obtener anotaciones de intercalación
 Este ejemplo lee anotaciones de intercalación existentes e imprime sus ubicaciones.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Iterar a través de las anotaciones de la página.
+1. Iterar a través de las anotaciones de la página.
 1. Filtre las anotaciones por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` e imprima sus rectángulos.
 
 
@@ -193,11 +183,9 @@ Eliminar anotaciones de intercalación
 Utilice este enfoque cuando las anotaciones de intercalación deban eliminarse de la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recopile anotaciones cuyo tipo sea [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
+1. Recopile anotaciones cuyo tipo sea [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
 1. Elimine las anotaciones recopiladas y guarde el documento de salida.
 
 
@@ -228,11 +216,9 @@ Agregar anotaciones de reemplazo agrupadas
 Este ejemplo combina una anotación de intercalación con una anotación tachada para representar un comentario de revisión de estilo reemplazo.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree la anotación de intercalación y la [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) relacionada.
+1. Cree la anotación de intercalación y la [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) relacionada.
 1. Vincule las anotaciones a través de `setInReplyTo` y `setReplyType`, luego guarde el documento.
 
 
@@ -282,11 +268,9 @@ Obtener anotaciones de reemplazo agrupadas
 Este ejemplo detecta anotaciones tachadas que participan en un flujo de trabajo de reemplazo agrupado.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Repita las anotaciones de la página y seleccione las anotaciones tachadas.
+1. Repita las anotaciones de la página y seleccione las anotaciones tachadas.
 1. Verifique la relación de respuesta e imprima el rectángulo de anotaciones coincidentes.
 
 
@@ -314,11 +298,9 @@ Eliminar anotaciones de reemplazo agrupadas
 Utilice este enfoque cuando las anotaciones tachadas de revisión y reemplazo deban eliminarse de la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recopile anotaciones tachadas que representen el marcado de reemplazo.
+1. Recopile anotaciones tachadas que representen el marcado de reemplazo.
 1. Elimine las anotaciones recopiladas y guarde el documento actualizado.
 
 
@@ -345,18 +327,13 @@ public static void replaceAnnotationsDelete(Path inputFile, Path outputFile) {
 Temas de anotaciones relacionados
 
 
-- 
-[Anotaciones de texto](/pdf/java/text-based-annotations/)
+- [Anotaciones de texto](/pdf/java/text-based-annotations/)
 
-- 
-[Anotaciones interactivas](/pdf/java/interactive-annotations/)
+- [Anotaciones interactivas](/pdf/java/interactive-annotations/)
 
-- 
-[Anotaciones de forma](/pdf/java/shape-annotations/)
+- [Anotaciones de forma](/pdf/java/shape-annotations/)
 - [Anotaciones de medios](/pdf/java/media-annotations/)
 
-- 
-[Anotaciones de seguridad](/pdf/java/security-annotations/)
+- [Anotaciones de seguridad](/pdf/java/security-annotations/)
 
-- 
-[Anotaciones de marca de agua](/pdf/java/watermark-annotations/)
+- [Anotaciones de marca de agua](/pdf/java/watermark-annotations/)

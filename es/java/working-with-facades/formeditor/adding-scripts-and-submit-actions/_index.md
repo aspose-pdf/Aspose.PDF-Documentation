@@ -16,12 +16,9 @@ La clase Java `FormEditorExamples` demuestra cómo trabajar con acciones de camp
 Utilice esta sección para:
 
 
-- 
-agregar una acción de JavaScript a un campo
+- agregar una acción de JavaScript a un campo
 
-- 
-reemplazar un script de campo existente
+- reemplazar un script de campo existente
 
-- 
-configurar una URL de envío y una bandera de envío
+- configurar una URL de envío y una bandera de envío
 - eliminar una acción de campo

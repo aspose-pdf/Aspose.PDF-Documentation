@@ -13,20 +13,17 @@ Soporte
 
 {{% alert color="primary" %}}
 
-- 
-Si desea ver problemas conocidos o informados (por los usuarios o el equipo de control de calidad) en la aplicación.
+- Si desea ver problemas conocidos o informados (por los usuarios o el equipo de control de calidad) en la aplicación.
 - O desea informar cualquier problema que haya encontrado en la aplicación
 
-- 
-¿Tiene alguna sugerencia de mejora o desea realizar alguna solicitud de función?
+- ¿Tiene alguna sugerencia de mejora o desea realizar alguna solicitud de función?
 
 
 
 Utilice cualquiera de los rastreadores de problemas del siguiente proyecto:
 
 
-- 
-[Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
 
 {{% /alert %}}
@@ -45,8 +42,6 @@ Código fuente
 Puede obtener el código fuente más reciente en una de las siguientes ubicaciones
 
 
-- 
-[CodePlex](https://asposepdfforstruts.codeplex.com)
+- [CodePlex](https://asposepdfforstruts.codeplex.com)
 
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)

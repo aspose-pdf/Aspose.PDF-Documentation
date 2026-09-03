@@ -17,14 +17,11 @@ El ejemplo de Java en `FormExamples.addImageAppearanceToButtonField(...)` muestr
 El flujo de trabajo es sencillo:
 
 
-- 
-vincular el PDF de entrada con `form.bindPdf(...)`
+- vincular el PDF de entrada con `form.bindPdf(...)`
 
-- 
-abra el archivo de imagen con `Files.newInputStream(...)`
+- abra el archivo de imagen con `Files.newInputStream(...)`
 
-- 
-llame a `form.fillImageField(...)` para el campo del botón
+- llame a `form.fillImageField(...)` para el campo del botón
 - guardar el PDF actualizado
 
 ```java

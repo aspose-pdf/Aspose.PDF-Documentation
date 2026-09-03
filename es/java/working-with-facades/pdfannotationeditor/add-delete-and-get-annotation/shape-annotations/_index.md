@@ -13,14 +13,11 @@ Abstract: Este artículo explica cómo crear, inspeccionar y eliminar anotacione
 ## Agregar anotaciones de forma
 
 
-1. 
-Abra el PDF de entrada y elija la página y el rectángulo que contendrán la anotación de forma.
+1. Abra el PDF de entrada y elija la página y el rectángulo que contendrán la anotación de forma.
 
-2. 
-Cree la anotación de forma requerida y luego establezca su título, colores, opacidad y puntos cuando sea necesario.
+2. Cree la anotación de forma requerida y luego establezca su título, colores, opacidad y puntos cuando sea necesario.
 
-3. 
-Agregue la anotación a la página y guarde el PDF modificado.
+3. Agregue la anotación a la página y guarde el PDF modificado.
 
 ```java
 public static void squareAnnotationAdd(Path inputFile, Path outputFile) {

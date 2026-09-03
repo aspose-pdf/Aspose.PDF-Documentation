@@ -24,11 +24,9 @@ Agregar un archivo adjunto a un documento PDF
 Utilice este ejemplo cuando deba incrustar un archivo externo en un PDF existente.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree una [Especificación de archivo](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para el archivo que desea incrustar.
+1. Cree una [Especificación de archivo](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para el archivo que desea incrustar.
 1. Agregue la especificación del archivo a la colección `EmbeddedFiles` y guarde el documento actualizado.
 
 ```java

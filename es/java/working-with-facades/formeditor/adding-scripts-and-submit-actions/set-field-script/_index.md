@@ -13,17 +13,13 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, agregar un scr
 ## Establecer un script de campo
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Agregue una acción JavaScript inicial al campo.
+2. Agregue una acción JavaScript inicial al campo.
 
-3. 
-Reemplácelo con el texto del script actualizado.
+3. Reemplácelo con el texto del script actualizado.
 
-4. 
-Guarde el documento actualizado.
+4. Guarde el documento actualizado.
 
 ```java
 public static void setFieldScript(Path inputFile, Path outputFile) {

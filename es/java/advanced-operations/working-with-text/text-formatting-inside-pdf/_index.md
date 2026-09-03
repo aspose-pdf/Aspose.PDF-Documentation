@@ -24,11 +24,9 @@ Establecer interlineado simple
 Utilice este ejemplo cuando el texto del párrafo deba utilizar un valor de interlineado fijo.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cargue o prepare el texto fuente y cree un `TextFragment`.
+1. Cargue o prepare el texto fuente y cree un `TextFragment`.
 1. Establezca el interlineado, agregue el fragmento a la página y guarde el documento.
 
 
@@ -58,11 +56,9 @@ Comparar modos de interlineado con una fuente personalizada
 Utilice este ejemplo cuando deba probar el interlineado con diferentes modos de formato para la misma fuente.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cargue la fuente personalizada y prepare dos fragmentos con diferentes modos de interlineado.
+1. Cargue la fuente personalizada y prepare dos fragmentos con diferentes modos de interlineado.
 1. Agregue ambos fragmentos a la página y guarde el PDF.
 
 
@@ -104,11 +100,9 @@ Establecer espacio entre caracteres con fragmentos de texto
 Utilice este ejemplo cuando el mismo texto deba mostrarse con diferentes valores de espaciado entre caracteres.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree fragmentos de texto con el método auxiliar para varios valores de espaciado.
+1. Cree fragmentos de texto con el método auxiliar para varios valores de espaciado.
 1. Agregue los fragmentos a la página y guarde el documento.
 
 
@@ -142,11 +136,9 @@ Establecer el espacio entre caracteres dentro de un párrafo de texto
 Utilice este ejemplo cuando se deba aplicar el espaciado entre caracteres dentro de un párrafo de texto delimitado.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TextParagraph` con un rectángulo de destino y opciones de ajuste.
+1. Cree un `TextParagraph` con un rectángulo de destino y opciones de ajuste.
 1. Agregue el fragmento de texto con estilo y guarde el PDF.
 
 
@@ -180,11 +172,9 @@ Crear una lista de viñetas con HTML
 Utilice este ejemplo cuando se deba generar un formato de lista desordenado a partir del marcado HTML.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Construya la cadena de lista HTML.
+1. Construya la cadena de lista HTML.
 1. Agréguelo como `HtmlFragment` y guarde el documento.
 
 
@@ -209,11 +199,9 @@ Crea una lista numerada con HTML
 Utilice este ejemplo cuando el formato de lista ordenada deba generarse a partir del marcado HTML.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree la cadena de lista HTML ordenada.
+1. Cree la cadena de lista HTML ordenada.
 1. Agréguelo como `HtmlFragment` y guarde el documento.
 
 
@@ -238,11 +226,9 @@ Crea una lista de viñetas con LaTeX
 Utilice este ejemplo cuando el formato de lista desordenada deba representarse a partir del marcado TeX.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Prepare la cadena de la lista TeX con el entorno `itemize`.
+1. Prepare la cadena de la lista TeX con el entorno `itemize`.
 1. Agréguelo como `TeXFragment` y guarde el PDF.
 
 
@@ -270,11 +256,9 @@ Crea una lista numerada con LaTeX
 Utilice este ejemplo cuando el formato de lista ordenada deba representarse a partir del marcado TeX.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Prepare la cadena de la lista TeX con el entorno `enumerate`.
+1. Prepare la cadena de la lista TeX con el entorno `enumerate`.
 1. Agréguelo como `TeXFragment` y guarde el PDF.
 
 
@@ -302,11 +286,9 @@ Crea una lista de viñetas con párrafos de texto
 Utilice este ejemplo cuando deba crear una lista de viñetas manual a partir de fragmentos de texto sin formato.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TextParagraph` y agregue fragmentos con prefijo de viñetas.
+1. Cree un `TextParagraph` y agregue fragmentos con prefijo de viñetas.
 1. Agregue el párrafo a la página y guarde el documento.
 
 
@@ -347,11 +329,9 @@ Crea una lista numerada con párrafos de texto.
 Utilice este ejemplo cuando deba crear una lista numerada manualmente a partir de fragmentos de texto sin formato.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TextParagraph` y agregue fragmentos numerados.
+1. Cree un `TextParagraph` y agregue fragmentos numerados.
 1. Agregue el párrafo a la página y guarde el documento.
 
 
@@ -392,11 +372,9 @@ Agregar una nota al pie básica
 Utilice este ejemplo cuando un fragmento de texto deba hacer referencia a una simple nota al pie.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree el fragmento de texto principal y asigne un `Note` como nota al pie.
+1. Cree el fragmento de texto principal y asigne un `Note` como nota al pie.
 1. Agregue cualquier texto de continuación en línea y guarde el documento.
 
 
@@ -430,11 +408,9 @@ Agregar una nota al pie con estilo de texto personalizado
 Utilice este ejemplo cuando el contenido de las notas al pie deba utilizar su propia configuración de fuente, tamaño y color.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree el fragmento de texto principal y configure una nota al pie con estilo.
+1. Cree el fragmento de texto principal y configure una nota al pie con estilo.
 1. Adjunte la nota y guarde el PDF.
 
 
@@ -470,11 +446,9 @@ Agregar una nota al pie con texto de marcador personalizado
 Utilice este ejemplo cuando el marcador de nota al pie visible deba reemplazarse con texto personalizado.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Asigne la nota al pie al fragmento de texto principal y anule su texto marcador.
+1. Asigne la nota al pie al fragmento de texto principal y anule su texto marcador.
 1. Agregue el contenido restante y guarde el documento.
 
 
@@ -508,11 +482,9 @@ Personaliza la línea separadora de notas al pie
 Utilice este ejemplo cuando la línea que separa las notas al pie del contenido de la página deba tener un estilo explícito.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Configure el estilo de línea de nota de la página a través de `GraphInfo`.
+1. Configure el estilo de línea de nota de la página a través de `GraphInfo`.
 1. Agregue fragmentos de texto con notas a pie de página y guarde el documento.
 
 
@@ -549,11 +521,9 @@ Agregue una nota al pie con imagen y contenido de la tabla.
 Utilice este ejemplo cuando la nota al pie en sí deba contener contenido enriquecido, como imágenes, texto y tablas.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un objeto `Note` con una imagen, texto en línea y una tabla.
+1. Cree un objeto `Note` con una imagen, texto en línea y una tabla.
 1. Adjúntelo al fragmento de texto principal y guarde el documento.
 
 
@@ -597,11 +567,9 @@ Agregar una nota al final
 Utilice este ejemplo cuando un fragmento de texto deba hacer referencia al contenido de la nota final en lugar de a una nota al pie de página.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Asigne una nota final al fragmento de texto principal y agregue texto de cuerpo de apoyo.
+1. Asigne una nota final al fragmento de texto principal y agregue texto de cuerpo de apoyo.
 1. Guarde el documento con el contenido de la nota final generada.
 
 
@@ -642,11 +610,9 @@ Agregar una nota al final con texto de marcador personalizado
 Utilice este ejemplo cuando el marcador de nota final deba utilizar una etiqueta visible personalizada.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Asigne una nota final al fragmento de texto principal y anule su texto marcador.
+1. Asigne una nota final al fragmento de texto principal y anule su texto marcador.
 1. Agregue el texto restante del documento y guarde el PDF.
 
 
@@ -683,11 +649,9 @@ Forzar el contenido de la tabla en una nueva página
 Utilice este ejemplo cuando el contenido formateado deba comenzar explícitamente en una página nueva.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Construya una tabla y complete sus filas.
+1. Construya una tabla y complete sus filas.
 1. Configure la tabla para que comience en una nueva página y guarde el documento.
 
 
@@ -722,11 +686,9 @@ Mezcle contenido en línea dentro del flujo de un párrafo
 Utilice este ejemplo cuando el texto y las imágenes deban continuar dentro del mismo flujo de párrafo.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Agregue el primer fragmento de texto, luego una imagen en línea y luego otro fragmento de texto en línea.
+1. Agregue el primer fragmento de texto, luego una imagen en línea y luego otro fragmento de texto en línea.
 1. Agregue cualquier párrafo independiente siguiente y guarde el documento.
 
 
@@ -771,11 +733,9 @@ Crear un diseño de texto de varias columnas
 Utilice este ejemplo cuando el texto con estilo de artículo deba fluir a través de varias columnas.
 
 
-1. 
-Cree un nuevo documento PDF y configure los márgenes de la página.
+1. Cree un nuevo documento PDF y configure los márgenes de la página.
 
-1. 
-Agregue el contenido del encabezado y cree un `FloatingBox` de varias columnas.
+1. Agregue el contenido del encabezado y cree un `FloatingBox` de varias columnas.
 1. Rellénelo con texto y guarde el PDF final.
 
 
@@ -827,11 +787,9 @@ Cree texto alineado con tabulaciones personalizadas
 Utilice este ejemplo cuando el texto deba alinearse como una tabla simple utilizando posiciones de tabulación.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Configure las tabulaciones con ajustes de alineación y guía.
+1. Configure las tabulaciones con ajustes de alineación y guía.
 1. Cree los fragmentos de texto que utilizan esas tabulaciones y guarde el documento.
 
 ```java

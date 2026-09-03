@@ -16,18 +16,13 @@ Abstract: Este artículo proporciona una descripción general de las operaciones
 La sección **Operaciones básicas** describe las primeras y más simples tareas de PDF que puede realizar con Aspose.PDF para Java:
 
 
-- 
-[Crear documento PDF](/pdf/java/create-document/): cree un nuevo documento PDF mediante programación en Java.
+- [Crear documento PDF](/pdf/java/create-document/): cree un nuevo documento PDF mediante programación en Java.
 
-- 
-[Abrir documento PDF](/pdf/java/open-pdf-document/): abre archivos PDF desde una ruta, desde una secuencia o con una contraseña.
+- [Abrir documento PDF](/pdf/java/open-pdf-document/): abre archivos PDF desde una ruta, desde una secuencia o con una contraseña.
 
-- 
-[Guardar documento PDF](/pdf/java/save-pdf-document/): guarda un documento en un archivo, en una secuencia o como un PDF estándar.
+- [Guardar documento PDF](/pdf/java/save-pdf-document/): guarda un documento en un archivo, en una secuencia o como un PDF estándar.
 
-- 
-[Fusionar PDF](/pdf/java/merge-pdf/): combina varios archivos PDF en un solo documento de salida.
+- [Fusionar PDF](/pdf/java/merge-pdf/): combina varios archivos PDF en un solo documento de salida.
 - [Dividir PDF](/pdf/java/split-pdf/): divide las páginas PDF en archivos PDF separados de una sola página.
 
-- 
-[Cifrar y descifrar archivo PDF](/pdf/java/protect-pdf-file/): aplica contraseñas, permisos y descifrado a archivos PDF.
+- [Cifrar y descifrar archivo PDF](/pdf/java/protect-pdf-file/): aplica contraseñas, permisos y descifrado a archivos PDF.

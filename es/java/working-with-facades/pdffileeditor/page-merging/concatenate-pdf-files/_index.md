@@ -24,15 +24,12 @@ El ejemplo de Java fusiona dos archivos pasándolos a la sobrecarga `concatenate
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Cree una matriz de cadenas con las rutas del PDF de entrada.
+2. Cree una matriz de cadenas con las rutas del PDF de entrada.
 3. Llame a `concatenate` con la matriz de entrada y la ruta del archivo de salida.
 
-4. 
-Guarde el documento combinado.
+4. Guarde el documento combinado.
 
 
 ```java

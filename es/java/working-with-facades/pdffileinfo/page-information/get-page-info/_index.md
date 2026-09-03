@@ -25,15 +25,12 @@ Este ejemplo lee las principales propiedades geométricas de la página 1.
 Pasos
 
 
-1. 
-Cree un objeto `PdfFileInfo` para el PDF de origen.
+1. Cree un objeto `PdfFileInfo` para el PDF de origen.
 
-2. 
-Llame a `getPageWidth`, `getPageHeight` y `getPageRotation` para conocer la página que desea inspeccionar.
+2. Llame a `getPageWidth`, `getPageHeight` y `getPageRotation` para conocer la página que desea inspeccionar.
 3. Utilice o imprima los valores devueltos.
 
-4. 
-Cierre la instancia `PdfFileInfo`.
+4. Cierre la instancia `PdfFileInfo`.
 
 
 ### 

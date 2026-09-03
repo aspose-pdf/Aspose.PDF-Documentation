@@ -25,15 +25,12 @@ Utilice este flujo de trabajo cuando necesite que la información actualizada de
 Pasos
 
 
-1. 
-Cree un objeto `PdfFileInfo` para el PDF de origen.
+1. Cree un objeto `PdfFileInfo` para el PDF de origen.
 
-2. 
-Configure los campos de metadatos que desea actualizar, como asunto, título, palabras clave y creador.
+2. Configure los campos de metadatos que desea actualizar, como asunto, título, palabras clave y creador.
 3. Llame a `saveNewInfoWithXmp()` con la ruta del archivo de salida.
 
-4. 
-Cierre la instancia `PdfFileInfo`.
+4. Cierre la instancia `PdfFileInfo`.
 
 
 ### 

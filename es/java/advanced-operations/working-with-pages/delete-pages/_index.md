@@ -24,11 +24,9 @@ Eliminar una sola página
 Utilice este ejemplo cuando necesite eliminar una página por su índice.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Elimine la página de destino de la colección de páginas.
+1. Elimine la página de destino de la colección de páginas.
 1. Guarde el documento actualizado.
 
 
@@ -49,11 +47,9 @@ Eliminar varias páginas
 Utilice este ejemplo cuando deban eliminarse varias páginas en una sola operación.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Pase los índices de las páginas para eliminar de la colección de páginas.
+1. Pase los índices de las páginas para eliminar de la colección de páginas.
 1. Guarde el PDF modificado.
 
 ```java

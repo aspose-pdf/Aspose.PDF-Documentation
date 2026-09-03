@@ -20,24 +20,18 @@ Un ejemplo de "Hola mundo" es el camino más corto para comprender el flujo de t
 El ejemplo de Java sigue estos pasos:
 
 
-1. 
-Cree un objeto [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un objeto [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Cree un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) con el texto `Hello, world!`.
+1. Cree un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) con el texto `Hello, world!`.
 1. Establezca la [Posición](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), la fuente, el tamaño de fuente, el color de fondo y el color de primer plano a través del fragmento [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
 
-1. 
-Cree un [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) para la página.
+1. Cree un [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) para la página.
 
-1. 
-Agregue el [Fragmento de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) a la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Agregue el [Fragmento de texto](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) a la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Guarde el [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
 

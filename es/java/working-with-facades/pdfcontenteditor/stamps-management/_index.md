@@ -13,8 +13,6 @@ Abstract: Esta sección cubre los flujos de trabajo relacionados con sellos actu
 La clase Java actual `PdfContentEditorExamples` admite directamente:
 
 
-- 
-`addRubberStamp(...)`
+- `addRubberStamp(...)`
 
-- 
-`listStamps(...)`
+- `listStamps(...)`

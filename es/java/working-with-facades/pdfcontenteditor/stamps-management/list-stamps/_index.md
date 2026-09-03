@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF, recuperar los sellos en 
 ## Listar sellos en una página
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Llame a `getStamps(pageNumber)` para recuperar los sellos en la página de destino.
+2. Llame a `getStamps(pageNumber)` para recuperar los sellos en la página de destino.
 
-3. 
-Inspeccione la colección `StampInfo[]` resultante.
+3. Inspeccione la colección `StampInfo[]` resultante.
 
 ```java
 public static void listStamps(Path inputFile) {

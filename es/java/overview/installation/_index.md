@@ -58,11 +58,9 @@ La versión de evaluación de Aspose.PDF proporciona la funcionalidad completa d
 
 - Inserta una marca de agua de evaluación.
 
-- 
-No se pueden ver/editar más de cuatro elementos de cualquier colección.
+- No se pueden ver/editar más de cuatro elementos de cualquier colección.
 
-- 
-**Un documento que muestra la marca de agua de evaluación**
+- **Un documento que muestra la marca de agua de evaluación**
 
 
 {{% alert color="primary" %}}

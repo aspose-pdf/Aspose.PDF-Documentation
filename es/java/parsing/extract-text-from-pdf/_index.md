@@ -19,11 +19,8 @@ Utilice los artículos de esta sección para:
 
 - [Extraer texto de todas las páginas o de una sola página](/pdf/java/basic-text-extraction/).
 
-- 
-[Limitar la extracción a una región de página específica o inspeccionar la geometría del párrafo](/pdf/java/region-based-extraction/).
+- [Limitar la extracción a una región de página específica o inspeccionar la geometría del párrafo](/pdf/java/region-based-extraction/).
 
-- 
-[Extraiga texto de aspectos destacados, anotaciones de sellos y contenido en superíndice o subíndice](/pdf/java/annotation-and-special-text/).
+- [Extraiga texto de aspectos destacados, anotaciones de sellos y contenido en superíndice o subíndice](/pdf/java/annotation-and-special-text/).
 
-- 
-[Mejorar la extracción de diseños de varias columnas](/pdf/java/text-extraction-from-multi-column-pdf/).
+- [Mejorar la extracción de diseños de varias columnas](/pdf/java/text-extraction-from-multi-column-pdf/).

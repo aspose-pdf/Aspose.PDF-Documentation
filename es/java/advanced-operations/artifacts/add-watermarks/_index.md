@@ -24,11 +24,9 @@ Extraiga artefactos de marcas de agua de un PDF
 Utilice este ejemplo cuando necesite inspeccionar artefactos de marcas de agua existentes y leer su texto o posición.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Itere a través de la colección de artefactos de la página de destino.
+1. Itere a través de la colección de artefactos de la página de destino.
 1. Filtre artefactos de paginación de marcas de agua e imprima su texto y rectángulos.
 
 
@@ -53,11 +51,9 @@ Agregar un artefacto de marca de agua
 Utilice este ejemplo cuando la página deba mostrar una marca de agua de texto centrada con rotación, opacidad y ubicación de fondo personalizadas.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree un [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) y configure el estado del texto y los ajustes de ubicación.
+1. Cree un [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) y configure el estado del texto y los ajustes de ubicación.
 1. Agregue la marca de agua a la página y guarde el archivo de salida.
 
 
@@ -92,11 +88,9 @@ Eliminar artefactos de marca de agua
 Utilice este enfoque cuando los artefactos de marcas de agua existentes deban eliminarse de la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Itere a través de la colección de artefactos de la página en orden inverso.
+1. Itere a través de la colección de artefactos de la página en orden inverso.
 1. Elimine los artefactos de paginación cuyo subtipo sea marca de agua y luego guarde el documento.
 
 ```java

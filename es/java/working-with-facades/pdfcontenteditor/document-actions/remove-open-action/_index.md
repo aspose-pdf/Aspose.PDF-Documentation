@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF, eliminar la acción de a
 ## Eliminar la acción de abrir documento
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Llame a `removeDocumentOpenAction()`.
+2. Llame a `removeDocumentOpenAction()`.
 
-3. 
-Guarde el documento PDF actualizado.
+3. Guarde el documento PDF actualizado.
 
 ```java
 public static void removeOpenAction(Path inputFile, Path outputFile) {

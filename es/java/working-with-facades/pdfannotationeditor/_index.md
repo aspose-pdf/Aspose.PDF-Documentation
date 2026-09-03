@@ -24,8 +24,6 @@ El repositorio actual no incluye una clase `PdfAnnotationEditorExamples.java` de
 Utilice esta sección para:
 
 
-- 
-[Agregar, eliminar y obtener anotación](/pdf/java/pdfannotationeditor-class/add-delete-and-get-annotation/) para familias de anotaciones agrupadas.
+- [Agregar, eliminar y obtener anotación](/pdf/java/pdfannotationeditor-class/add-delete-and-get-annotation/) para familias de anotaciones agrupadas.
 
-- 
-[Importar y exportar anotaciones](/pdf/java/pdfannotationeditor-class/import-export-annotations/) para copiar anotaciones entre archivos PDF.
+- [Importar y exportar anotaciones](/pdf/java/pdfannotationeditor-class/import-export-annotations/) para copiar anotaciones entre archivos PDF.

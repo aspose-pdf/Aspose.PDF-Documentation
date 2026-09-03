@@ -13,17 +13,13 @@ Abstract: Este artículo muestra cómo vincular un PDF, configurar un TextState 
 ## Reemplazar texto con un estado de texto personalizado
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Cree y configure un `TextState` con el color y tamaño de fuente requeridos.
+2. Cree y configure un `TextState` con el color y tamaño de fuente requeridos.
 
-3. 
-Establezca el alcance del texto de reemplazo en `ReplaceAll`.
+3. Establezca el alcance del texto de reemplazo en `ReplaceAll`.
 
-4. 
-Llame a `replaceText(...)` con el texto de búsqueda, el texto de reemplazo y `TextState` configurado.
+4. Llame a `replaceText(...)` con el texto de búsqueda, el texto de reemplazo y `TextState` configurado.
 5. Guarde el documento PDF actualizado.
 
 ```java

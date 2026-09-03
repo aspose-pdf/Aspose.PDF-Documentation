@@ -21,12 +21,9 @@ La clase Java `PdfFileStampExamples` demuestra los principales flujos de trabajo
 Utilice esta sección para aprender cómo:
 
 
-- 
-agregar un sello de imagen a un PDF
+- agregar un sello de imagen a un PDF
 
-- 
-colocar encabezados o pies de página de texto e imágenes
+- colocar encabezados o pies de página de texto e imágenes
 
-- 
-controlar los márgenes del encabezado y pie de página
+- controlar los márgenes del encabezado y pie de página
 - agregue números de página con diseños predeterminados, basados ​​en coordenadas, alineados o con numeración romana

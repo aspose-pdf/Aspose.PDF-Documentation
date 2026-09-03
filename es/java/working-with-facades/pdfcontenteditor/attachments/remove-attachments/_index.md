@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF, eliminar todos los docum
 ## Eliminar todos los archivos adjuntos
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Llame a `deleteAttachments()` para eliminar todos los archivos adjuntos incrustados.
+2. Llame a `deleteAttachments()` para eliminar todos los archivos adjuntos incrustados.
 
-3. 
-Guarde el documento PDF actualizado.
+3. Guarde el documento PDF actualizado.
 
 ```java
 public static void removeAttachments(Path inputFile, Path outputFile) {

@@ -24,11 +24,9 @@ Convertir PDF/A a PDF estándar
 Utilice este ejemplo cuando un documento PDF/A de archivo deba degradarse a un PDF estándar.
 
 
-1. 
-Abra el archivo PDF/A de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el archivo PDF/A de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Llame a `removePdfaCompliance()` para separar el perfil de cumplimiento de archivos del documento cargado.
+1. Llame a `removePdfaCompliance()` para separar el perfil de cumplimiento de archivos del documento cargado.
 1. Guarde el archivo PDF estándar resultante sin el conjunto de restricciones PDF/A.
 
 
@@ -49,11 +47,9 @@ Convertir PDF/UA a PDF estándar
 Utilice este ejemplo cuando un documento PDF/UA accesible deba volver a convertirse a un PDF estándar.
 
 
-1. 
-Abra el archivo PDF/UA de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el archivo PDF/UA de origen en una instancia [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Llame a `removePdfUaCompliance()` para eliminar el perfil de cumplimiento de accesibilidad de los metadatos del documento y los requisitos de estructura.
+1. Llame a `removePdfUaCompliance()` para eliminar el perfil de cumplimiento de accesibilidad de los metadatos del documento y los requisitos de estructura.
 1. Guarde el documento PDF resultante como un archivo PDF normal.
 
 ```java

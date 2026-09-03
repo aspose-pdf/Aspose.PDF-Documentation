@@ -24,11 +24,9 @@ Recortar una página configurando cuadros de página
 Utilice este ejemplo cuando necesite aplicar la misma área de recorte a los cuadros de la página principal.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree el nuevo recorte [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Cree el nuevo recorte [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Aplique el rectángulo a los cuadros de página relacionados con el recorte y guarde el documento.
 
 
@@ -53,11 +51,9 @@ Recortar una página por contenido detectado
 Utilice este ejemplo cuando el área de recorte deba derivarse de la primera imagen detectada en la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para detectar ubicaciones de imágenes.
+1. Utilice [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para detectar ubicaciones de imágenes.
 1. Configure el cuadro de recorte en el rectángulo de la imagen si se encuentra uno y luego guarde el documento.
 
 ```java

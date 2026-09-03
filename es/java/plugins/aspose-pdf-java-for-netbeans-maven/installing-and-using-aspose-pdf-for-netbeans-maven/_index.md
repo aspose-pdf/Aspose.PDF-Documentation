@@ -19,8 +19,7 @@ El complemento **Aspose.PDF Java para NetBeans (Maven)** se puede instalar fáci
 
 ![todo:image_alt_text](installing-and-using-aspose-pdf-for-netbeans-maven_1.png)
 
-- 
-Esto agrega el **Proyecto Aspose.PDF Maven** en el asistente para Nuevo proyecto y el **Ejemplo de código Aspose.PDF** en el asistente para Nuevo archivo de NetBeans IDE.
+- Esto agrega el **Proyecto Aspose.PDF Maven** en el asistente para Nuevo proyecto y el **Ejemplo de código Aspose.PDF** en el asistente para Nuevo archivo de NetBeans IDE.
 
 
 ## 
@@ -36,11 +35,9 @@ Para crear **Proyecto Maven** mediante un asistente para usar [Aspose.PDF para A
 
 1. Seleccione **Nuevo proyecto**.
 
-2. 
-Seleccione **Proyecto Aspose.PDF Maven** en la categoría **Maven**.
+2. Seleccione **Proyecto Aspose.PDF Maven** en la categoría **Maven**.
 
-3. 
-Haga clic en **Siguiente**.
+3. Haga clic en **Siguiente**.
 
 
 
@@ -77,14 +74,11 @@ Para poder utilizar el **Asistente de ejemplo de código de Aspose.PDF** cómoda
 Para usar ejemplos, simplemente:
 
 
-1. 
-Haga clic en **Nuevo archivo** en **NetBeans**.
+1. Haga clic en **Nuevo archivo** en **NetBeans**.
 
-2. 
-Elija su proyecto y luego seleccione **Ejemplo de código Aspose.PDF** en la categoría **Java**.
+2. Elija su proyecto y luego seleccione **Ejemplo de código Aspose.PDF** en la categoría **Java**.
 
-3. 
-Haga clic en **Siguiente**.
+3. Haga clic en **Siguiente**.
 
 Expanda el árbol para seleccionar la categoría **Ejemplo de código** y haga clic en **Finalizar**.
 

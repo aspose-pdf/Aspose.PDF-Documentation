@@ -13,14 +13,11 @@ Abstract: Este artículo explica cómo crear, inspeccionar y eliminar anotacione
 ## Agregue anotaciones resaltadas, subrayadas, garabateadas o tachadas
 
 
-1. 
-Abra el PDF de entrada y seleccione el área de la página donde debería aparecer la anotación de marcado.
+1. Abra el PDF de entrada y seleccione el área de la página donde debería aparecer la anotación de marcado.
 
-2. 
-Cree el tipo de anotación requerido y configure sus metadatos o propiedades visuales.
+2. Cree el tipo de anotación requerido y configure sus metadatos o propiedades visuales.
 
-3. 
-Agregue la anotación a la colección de páginas y guarde el documento.
+3. Agregue la anotación a la colección de páginas y guarde el documento.
 
 ```java
 public static void addTextHighlightAnnotation(Path inputFile, Path outputFile) {

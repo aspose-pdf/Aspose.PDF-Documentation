@@ -20,14 +20,11 @@ Utilice `PdfFileSignature` para inspeccionar y administrar firmas que ya existen
 Leer información de firma
 
 
-1. 
-Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
+1. Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
 
-1. 
-Acceda al nombre de la firma del documento y configure el flujo de inspección de firma requerido por el ejemplo.
+1. Acceda al nombre de la firma del documento y configure el flujo de inspección de firma requerido por el ejemplo.
 
-1. 
-Lea y verifique la información de la firma de la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Lea y verifique la información de la firma de la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Lea los valores devueltos o continúe con el siguiente paso de procesamiento.
 
 
@@ -52,14 +49,11 @@ public static void getSignatureInformation(Path inputFile) {
 Verificar una firma
 
 
-1. 
-Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
+1. Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
 
-1. 
-Acceda al nombre de la firma del documento y configure el flujo de verificación requerido por el ejemplo.
+1. Acceda al nombre de la firma del documento y configure el flujo de verificación requerido por el ejemplo.
 
-1. 
-Lea y verifique la información de la firma de la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Lea y verifique la información de la firma de la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {
@@ -80,14 +74,11 @@ public static void verifyPdfSignature(Path inputFile) {
 ## Extraer el certificado de firma
 
 
-1. 
-Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
+1. Cree la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) y vincule el documento PDF de origen.
 
-1. 
-Acceda al nombre de la firma del documento requerido para la extracción del certificado.
+1. Acceda al nombre de la firma del documento requerido para la extracción del certificado.
 
-1. 
-Escriba el resultado extraído o inspeccione los valores devueltos desde la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Escriba el resultado extraído o inspeccione los valores devueltos desde la fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java
 public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {

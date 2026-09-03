@@ -24,11 +24,9 @@ Mover una página a otro documento
 Utilice este ejemplo cuando deba eliminar una sola página del PDF de origen y guardarla en un documento separado.
 
 
-1. 
-Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y cree un documento de destino.
+1. Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y cree un documento de destino.
 
-1. 
-Agregue la página de destino al destino y elimínela del origen.
+1. Agregue la página de destino al destino y elimínela del origen.
 1. Guarde ambos documentos.
 
 
@@ -52,11 +50,9 @@ Mover varias páginas a otro documento
 Utilice este ejemplo cuando deban transferirse varias páginas del PDF de origen a un documento nuevo.
 
 
-1. 
-Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y cree el documento de destino.
+1. Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y cree el documento de destino.
 
-1. 
-Copie las páginas seleccionadas en el documento de destino.
+1. Copie las páginas seleccionadas en el documento de destino.
 1. Elimine las páginas movidas de la fuente y guarde ambos archivos.
 
 
@@ -83,11 +79,9 @@ Mover una página dentro del mismo documento
 Utilice este ejemplo cuando una página deba reposicionarse en una nueva ubicación en el mismo PDF.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Duplique la página de destino en la nueva posición y elimine la entrada de la página original.
+1. Duplique la página de destino en la nueva posición y elimine la entrada de la página original.
 1. Guarde el documento reordenado.
 
 ```java

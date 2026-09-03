@@ -25,18 +25,14 @@ Utilice `PdfFileSecurity` cuando necesite proteger un PDF con contraseñas y reg
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSecurity`.
+1. Cree una instancia `PdfFileSecurity`.
 
-2. 
-Vincule el PDF de origen con `bindPdf`.
+2. Vincule el PDF de origen con `bindPdf`.
 3. Cree un objeto `DocumentPrivilege` que coincida con las acciones permitidas.
 
-4. 
-Llame a la sobrecarga `encryptFile` adecuada para el tamaño de clave y el algoritmo que necesita.
+4. Llame a la sobrecarga `encryptFile` adecuada para el tamaño de clave y el algoritmo que necesita.
 
-5. 
-Guarde el archivo protegido y cierre el objeto.
+5. Guarde el archivo protegido y cierre el objeto.
 
 
 ### 

@@ -17,15 +17,11 @@ La clase Java `FormExamples` demuestra los flujos de trabajo principales `Form.f
 Utilice esta sección para ver cómo:
 
 
-- 
-llenar campos de texto por nombre de campo
+- llenar campos de texto por nombre de campo
 
-- 
-seleccione los valores de la casilla de verificación y del botón de opción
+- seleccione los valores de la casilla de verificación y del botón de opción
 
-- 
-establecer valores del cuadro de lista
+- establecer valores del cuadro de lista
 - llenar un campo de código de barras
 
-- 
-aplique la misma API de llenado de campos en su propio bucle para pares dinámicos de nombre-valor
+- aplique la misma API de llenado de campos en su propio bucle para pares dinámicos de nombre-valor

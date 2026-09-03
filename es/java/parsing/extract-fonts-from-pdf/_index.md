@@ -16,17 +16,13 @@ Abstract: Este artículo explica cómo inspeccionar las fuentes utilizadas en un
 Utilice la extracción de fuentes cuando necesite auditar la tipografía de documentos, inspeccionar recursos integrados o verificar el uso de fuentes antes de la conversión o los flujos de trabajo de archivo.
 
 
-1. 
-Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Llame a `document.getFontUtilities().getAllFonts()` para recopilar cada recurso [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) al que hace referencia el documento.
+1. Llame a `document.getFontUtilities().getAllFonts()` para recopilar cada recurso [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) al que hace referencia el documento.
 
-1. 
-Itere a través de los objetos [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) extraídos y lea cada nombre de fuente de los metadatos de la fuente.
+1. Itere a través de los objetos [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) extraídos y lea cada nombre de fuente de los metadatos de la fuente.
 
-1. 
-Imprima los nombres de las fuentes para que la tipografía del documento pueda auditarse o exportarse.
+1. Imprima los nombres de las fuentes para que la tipografía del documento pueda auditarse o exportarse.
 
 ```java
 public static void extractFonts(Path inputFile) {

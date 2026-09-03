@@ -16,14 +16,10 @@ Abstract: Este artículo explica cómo trabajar con archivos adjuntos PDF utiliz
 Aspose.PDF para Java le permite administrar archivos incrustados y colecciones de carteras directamente en documentos PDF. En esta sección, puede aprender cómo agregar archivos adjuntos, extraer archivos incrustados, eliminar archivos adjuntos y crear o borrar portafolios PDF.
 
 
-- 
-[Agregar archivos adjuntos a un PDF](/pdf/java/add-attachment-to-pdf-document/)
+- [Agregar archivos adjuntos a un PDF](/pdf/java/add-attachment-to-pdf-document/)
 
-- 
-[Crear o borrar un portafolio en PDF](/pdf/java/portfolio/)
+- [Crear o borrar un portafolio en PDF](/pdf/java/portfolio/)
 
-- 
-[Eliminar archivos adjuntos de un PDF existente](/pdf/java/removing-attachment-from-an-existing-pdf/)
+- [Eliminar archivos adjuntos de un PDF existente](/pdf/java/removing-attachment-from-an-existing-pdf/)
 
-- 
-[Extraer archivos adjuntos de un PDF](/pdf/java/extract-attachment/)
+- [Extraer archivos adjuntos de un PDF](/pdf/java/extract-attachment/)

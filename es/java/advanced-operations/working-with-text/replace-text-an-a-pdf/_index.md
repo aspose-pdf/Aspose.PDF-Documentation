@@ -26,11 +26,9 @@ Reemplazar texto en todas las páginas
 Utilice este ejemplo cuando deba reemplazar la misma frase en todo el documento.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Busque en todas las páginas la frase objetivo con `TextFragmentAbsorber`.
+1. Busque en todas las páginas la frase objetivo con `TextFragmentAbsorber`.
 1. Reemplace el texto coincidente y guarde el PDF actualizado.
 
 
@@ -60,11 +58,9 @@ Reemplazar texto en una región de página específica
 Utilice este ejemplo cuando el reemplazo deba limitarse a un rectángulo seleccionado en una página.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Configure `TextSearchOptions` con límites de página y un rectángulo de destino.
+1. Configure `TextSearchOptions` con límites de página y un rectángulo de destino.
 1. Reemplace el texto coincidente dentro de esa región y guarde el documento.
 
 
@@ -96,11 +92,9 @@ Reemplazar texto y ajustar el espacio dentro de un rectángulo desplazado
 Utilice este ejemplo cuando el texto de reemplazo deba permanecer en la página con el espaciado ajustado pero el tamaño de fuente no deba cambiarse.
 
 
-1. 
-Abra el PDF de origen y recopile fragmentos de texto de la página de destino.
+1. Abra el PDF de origen y recopile fragmentos de texto de la página de destino.
 
-1. 
-Modifique el rectángulo de reemplazo y elija el comportamiento `AdjustSpaceWidth`.
+1. Modifique el rectángulo de reemplazo y elija el comportamiento `AdjustSpaceWidth`.
 1. Establezca el nuevo texto y guarde el documento.
 
 
@@ -132,11 +126,9 @@ Reemplazar texto dentro de un rectángulo de párrafo más grande
 Utilice este ejemplo cuando el texto de reemplazo deba expandirse a un área de página más grande.
 
 
-1. 
-Abra el PDF de origen y obtenga el primer fragmento de texto de la página de destino.
+1. Abra el PDF de origen y obtenga el primer fragmento de texto de la página de destino.
 
-1. 
-Cree un rectángulo de reemplazo más grande a partir del cuadro de medios de la página.
+1. Cree un rectángulo de reemplazo más grande a partir del cuadro de medios de la página.
 1. Aplique las opciones de reemplazo y guarde el PDF.
 
 
@@ -169,11 +161,9 @@ Reemplace el texto y escale la fuente para llenar el rectángulo
 Utilice este ejemplo cuando el texto de reemplazo deba ampliarse para llenar un área de destino.
 
 
-1. 
-Abra el PDF de origen y acceda al fragmento de texto de destino.
+1. Abra el PDF de origen y acceda al fragmento de texto de destino.
 
-1. 
-Defina un rectángulo de reemplazo y habilite el ajuste de fuente `ScaleToFill`.
+1. Defina un rectángulo de reemplazo y habilite el ajuste de fuente `ScaleToFill`.
 1. Configure el nuevo texto y guarde el documento actualizado.
 
 
@@ -203,11 +193,9 @@ Reemplazar texto y reducirlo para que quepa
 Utilice este ejemplo cuando el texto de reemplazo deba permanecer dentro del rectángulo de texto original.
 
 
-1. 
-Abra el PDF de origen y seleccione el fragmento de destino.
+1. Abra el PDF de origen y seleccione el fragmento de destino.
 
-1. 
-Reutilice el rectángulo del fragmento actual y habilite `ShrinkToFit`.
+1. Reutilice el rectángulo del fragmento actual y habilite `ShrinkToFit`.
 1. Reemplace el texto y guarde el documento.
 
 
@@ -237,11 +225,9 @@ Reemplazar texto por expresión regular
 Utilice este ejemplo cuando el texto coincidente se deba encontrar mediante un patrón de expresiones regulares y cambiarle el estilo durante el reemplazo.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Busque en la página con un `TextFragmentAbsorber` habilitado para expresiones regulares.
+1. Busque en la página con un `TextFragmentAbsorber` habilitado para expresiones regulares.
 1. Reemplace cada coincidencia, actualice su estilo de texto y guarde el resultado.
 
 
@@ -273,11 +259,9 @@ Reemplace el texto del marcador de posición y deje que la página se reorganice
 Utilice este ejemplo cuando un marcador de posición deba reemplazarse por un valor real más largo preservando al mismo tiempo el diseño de la página.
 
 
-1. 
-Abra el PDF de origen y busque el texto del marcador de posición.
+1. Abra el PDF de origen y busque el texto del marcador de posición.
 
-1. 
-Asigne el texto de reemplazo y actualice su configuración de fuente.
+1. Asigne el texto de reemplazo y actualice su configuración de fuente.
 1. Guarde el documento para volver a calcular el diseño.
 
 
@@ -307,11 +291,9 @@ Reemplazar una fuente por otra
 Utilice este ejemplo cuando el texto que utiliza una fuente incrustada específica deba cambiarse a otra fuente.
 
 
-1. 
-Abra el PDF de origen y recopile todos los fragmentos de texto.
+1. Abra el PDF de origen y recopile todos los fragmentos de texto.
 
-1. 
-Verifique el nombre de la fuente de cada fragmento y reemplace la fuente de destino.
+1. Verifique el nombre de la fuente de cada fragmento y reemplace la fuente de destino.
 1. Guarde el PDF actualizado.
 
 
@@ -340,11 +322,9 @@ Reemplazar fuentes y eliminar recursos de fuentes no utilizados
 Utilice este ejemplo cuando deba limpiar el documento después de reemplazar la fuente.
 
 
-1. 
-Abra el PDF de origen y configure `TextEditOptions` para eliminar las fuentes no utilizadas.
+1. Abra el PDF de origen y configure `TextEditOptions` para eliminar las fuentes no utilizadas.
 
-1. 
-Absorba los fragmentos de texto y asigne la fuente de reemplazo.
+1. Absorba los fragmentos de texto y asigne la fuente de reemplazo.
 1. Guarde el documento optimizado.
 
 
@@ -372,11 +352,9 @@ Eliminar todo el texto del documento.
 Utilice este ejemplo cuando deba eliminar todo el contenido de texto de cada página.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Cree un `TextFragmentAbsorber` y llame a `removeAllText(document)`.
+1. Cree un `TextFragmentAbsorber` y llame a `removeAllText(document)`.
 1. Guarde el PDF limpio.
 
 
@@ -398,11 +376,9 @@ Eliminar todo el texto de una página
 Utilice este ejemplo cuando todo el texto deba eliminarse solo de una página específica.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Cree un `TextFragmentAbsorber` y elimine el texto de la página de destino.
+1. Cree un `TextFragmentAbsorber` y elimine el texto de la página de destino.
 1. Guarde el documento actualizado.
 
 
@@ -424,11 +400,9 @@ Eliminar texto de un rectángulo seleccionado
 Utilice este ejemplo cuando el texto deba eliminarse solo dentro de un área de página elegida.
 
 
-1. 
-Abra el documento PDF de origen.
+1. Abra el documento PDF de origen.
 
-1. 
-Cree un `TextFragmentAbsorber` y defina el rectángulo a limpiar.
+1. Cree un `TextFragmentAbsorber` y defina el rectángulo a limpiar.
 1. Elimine el texto de esa región y guarde el documento.
 
 
@@ -450,11 +424,9 @@ Eliminar texto oculto
 Utilice este ejemplo cuando deba eliminar fragmentos de texto invisibles del PDF.
 
 
-1. 
-Abra el PDF de origen y absorba todos los fragmentos de texto.
+1. Abra el PDF de origen y absorba todos los fragmentos de texto.
 
-1. 
-Verifique cada fragmento para ver el estado del texto invisible.
+1. Verifique cada fragmento para ver el estado del texto invisible.
 1. Borre el texto oculto y guarde el documento.
 
 ```java

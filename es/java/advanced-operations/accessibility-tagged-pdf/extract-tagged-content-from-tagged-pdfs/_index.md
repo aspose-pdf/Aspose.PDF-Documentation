@@ -20,14 +20,11 @@ Obtener metadatos de contenido etiquetado
 Utilice este ejemplo cuando necesite acceder al contenedor de contenido etiquetado y desee definir metadatos básicos del documento, como el título y el idioma.
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Obtenga el objeto [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) del documento.
+1. Obtenga el objeto [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) del documento.
 
-1. 
-Configure los metadatos del contenido etiquetado y guarde el archivo de salida.
+1. Configure los metadatos del contenido etiquetado y guarde el archivo de salida.
 
 
 ```java
@@ -47,14 +44,11 @@ Obtenga la estructura raíz de un PDF etiquetado
 Este ejemplo muestra cómo inspeccionar los objetos raíz que representan el árbol de estructura de un PDF etiquetado.
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y obtenga su contenido etiquetado.
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y obtenga su contenido etiquetado.
 
-1. 
-Establezca los metadatos del documento requeridos.
+1. Establezca los metadatos del documento requeridos.
 
-1. 
-Lea e imprima la raíz del árbol de estructura y el elemento de raíz lógica, luego guarde el archivo.
+1. Lea e imprima la raíz del árbol de estructura y el elemento de raíz lógica, luego guarde el archivo.
 
 
 ```java
@@ -78,14 +72,11 @@ Acceder y actualizar elementos de la estructura secundaria.
 Utilice este ejemplo cuando necesite recorrer elementos secundarios en el árbol de estructura, inspeccionar sus propiedades y actualizar los metadatos seleccionados.
 
 
-1. 
-Abra la fuente etiquetada PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra la fuente etiquetada PDF [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Lea los elementos secundarios de la raíz del árbol de estructura e imprima las propiedades disponibles.
+1. Lea los elementos secundarios de la raíz del árbol de estructura e imprima las propiedades disponibles.
 
-1. 
-Acceda a los elementos secundarios del primer hijo raíz, actualice sus metadatos y guarde el documento.
+1. Acceda a los elementos secundarios del primer hijo raíz, actualice sus metadatos y guarde el documento.
 
 ```java
 public static void accessChildElements(Path inputFile, Path outputFile) {

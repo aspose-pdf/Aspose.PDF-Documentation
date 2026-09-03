@@ -16,17 +16,13 @@ Abstract: Este artículo explica cómo extraer imágenes incrustadas de un docum
 Extraiga imágenes de páginas PDF cuando necesite reutilizar gráficos incrustados, inspeccionar activos de documentos o exportar imágenes para su procesamiento posterior.
 
 
-1. 
-Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y abra una secuencia de salida para el archivo de imagen extraído.
+1. Abra el PDF de origen en una instancia de [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y abra una secuencia de salida para el archivo de imagen extraído.
 
-1. 
-Obtenga la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino del documento y acceda a su colección `Resources.Images`.
+1. Obtenga la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino del documento y acceda a su colección `Resources.Images`.
 
-1. 
-Recupere el objeto [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) requerido de esa colección de imágenes por índice.
+1. Recupere el objeto [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) requerido de esa colección de imágenes por índice.
 
-1. 
-Llame a `image.save(outputImage)` para escribir los bytes de la imagen extraída en la secuencia de destino.
+1. Llame a `image.save(outputImage)` para escribir los bytes de la imagen extraída en la secuencia de destino.
 
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {

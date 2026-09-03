@@ -24,15 +24,12 @@ El ejemplo de Java agrega márgenes de 36 puntos a las páginas 1 y 3 del docume
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Seleccione los números de página que deberían recibir nuevos márgenes.
+2. Seleccione los números de página que deberían recibir nuevos márgenes.
 3. Llame a `addMargins` con el archivo de entrada, el archivo de salida, la lista de páginas y los valores de margen.
 
-4. 
-Guarde el PDF actualizado.
+4. Guarde el PDF actualizado.
 
 
 ### 

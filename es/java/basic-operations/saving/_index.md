@@ -24,11 +24,9 @@ Guardar un documento PDF en Java
 Puedes guardar un documento:
 
 
-1. 
-Guarde el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directamente en un archivo en el disco.
+1. Guarde el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directamente en un archivo en el disco.
 
-1. 
-Guarde el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) en un `OutputStream`.
+1. Guarde el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) en un `OutputStream`.
 1. Convierta el [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) con [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) y guárdelo en un formato estándar como [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
 
 

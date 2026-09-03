@@ -17,14 +17,11 @@ Utilice la colección de recursos de imágenes de páginas cuando necesite elimi
 Eliminar una imagen incrustada por índice
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Acceda a los recursos de imágenes en la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Acceda a los recursos de imágenes en la [Página] de destino(https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Elimine la imagen de destino de la colección de recursos de la página por su índice.
+1. Elimine la imagen de destino de la colección de recursos de la página por su índice.
 1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

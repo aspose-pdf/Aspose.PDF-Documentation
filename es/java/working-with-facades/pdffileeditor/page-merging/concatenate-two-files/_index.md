@@ -24,15 +24,12 @@ Este artículo se asigna directamente al ejemplo `mergePdfDocuments` en `PdfFile
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Pase las dos rutas del archivo de entrada como una matriz de cadenas.
+2. Pase las dos rutas del archivo de entrada como una matriz de cadenas.
 3. Llame a `concatenate` con la matriz y la ruta del archivo de salida.
 
-4. 
-Guarde el PDF combinado.
+4. Guarde el PDF combinado.
 
 ```java
 public static void mergePdfDocuments(Path firstInputFile, Path secondInputFile, Path outputFile) {

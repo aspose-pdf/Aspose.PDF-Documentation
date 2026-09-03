@@ -24,18 +24,14 @@ El ejemplo de Java cambia el tamaño del área de contenido en las páginas 1 y 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Elija las páginas cuyo contenido debe cambiarse de tamaño.
+2. Elija las páginas cuyo contenido debe cambiarse de tamaño.
 3. Llame a `resizeContents` con el ancho y alto del objetivo.
 
-4. 
-Verifique el valor de retorno y solucione el error antes de continuar.
+4. Verifique el valor de retorno y solucione el error antes de continuar.
 
-5. 
-Guarde el documento actualizado.
+5. Guarde el documento actualizado.
 
 
 ### 

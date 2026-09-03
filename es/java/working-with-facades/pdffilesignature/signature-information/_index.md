@@ -25,15 +25,12 @@ Utilice este flujo de trabajo cuando necesite inspeccionar quién firmó un PDF 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSignature` y vincule el PDF firmado.
+1. Cree una instancia `PdfFileSignature` y vincule el PDF firmado.
 
-2. 
-Lea la colección de firmas y seleccione un nombre de firma.
+2. Lea la colección de firmas y seleccione un nombre de firma.
 3. Llame a quienes acceden a la información de la firma para obtener el nombre, la fecha, el motivo y la ubicación del firmante.
 
-4. 
-Cierre el objeto de fachada cuando haya terminado.
+4. Cierre el objeto de fachada cuando haya terminado.
 
 
 ### 

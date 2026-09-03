@@ -17,14 +17,11 @@ La clase Java actual `PdfContentEditorExamples` admite directamente `replaceImag
 Reemplazar una imagen
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Llame a `replaceImage(...)` con el número de página, el índice de la imagen y la ruta de la imagen de reemplazo.
+2. Llame a `replaceImage(...)` con el número de página, el índice de la imagen y la ruta de la imagen de reemplazo.
 
-3. 
-Guarde el documento PDF actualizado.
+3. Guarde el documento PDF actualizado.
 
 ```java
 public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) {

@@ -20,21 +20,16 @@ Utilice las API `Document` y `FileSpecification` cuando necesite empaquetar XML 
 Adjunte XML de factura ZUGFeRD a un PDF
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree la [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para el archivo de factura XML.
+1. Cree la [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para el archivo de factura XML.
 
-1. 
-Configure los metadatos del archivo incrustado, incluido el tipo MIME y [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
+1. Configure los metadatos del archivo incrustado, incluido el tipo MIME y [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
 1. Agregue [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) a la colección de archivos incrustados del documento.
 
-1. 
-Convierta el documento a [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
+1. Convierta el documento a [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
 
-1. 
-Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {

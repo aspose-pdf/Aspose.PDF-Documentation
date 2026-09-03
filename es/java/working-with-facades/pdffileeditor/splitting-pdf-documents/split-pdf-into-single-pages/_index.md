@@ -24,15 +24,12 @@ Utilice este flujo de trabajo cuando cada página de origen deba convertirse en 
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Prepare un patrón de archivo de salida que incluya un marcador de posición de página como `%NUM%`.
+2. Prepare un patrón de archivo de salida que incluya un marcador de posición de página como `%NUM%`.
 3. Llame a `splitToPages` con el archivo fuente y el patrón de salida.
 
-4. 
-Guarde los archivos de una sola página generados.
+4. Guarde los archivos de una sola página generados.
 
 ```java
 public static void splitPdfIntoSinglePages(Path inputFile, Path outputFilePattern) {

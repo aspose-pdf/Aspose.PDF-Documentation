@@ -17,14 +17,11 @@ Utilice `FormEditorExamples.createCheckBoxField(...)` para agregar un campo de c
 Crear un campo de casilla de verificación
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Agregue el campo de casilla de verificación con `FieldType.CheckBox`, el nombre del campo, el título, la página y el rectángulo.
+2. Agregue el campo de casilla de verificación con `FieldType.CheckBox`, el nombre del campo, el título, la página y el rectángulo.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void createCheckBoxField(Path inputFile, Path outputFile) {

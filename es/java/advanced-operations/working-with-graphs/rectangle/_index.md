@@ -16,21 +16,16 @@ Abstract: Este artículo muestra cómo agregar formas rectangulares a documentos
 ## Agregar un contorno de rectángulo
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
+1. Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
 
-1. 
-Crea la forma [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) y configura su geometría.
+1. Crea la forma [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) y configura su geometría.
 1. Agregue el [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) al contenedor [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 
-1. 
-Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
 ```java
@@ -57,8 +52,7 @@ Rellenar un rectángulo con color sólido o degradado
 Los ejemplos de rectángulos incluyen:
 
 
-- 
-`createRectangleFilled` para un relleno sólido con `Color.getRed()`
+- `createRectangleFilled` para un relleno sólido con `Color.getRed()`
 - `addDrawingWithGradientFill` para un relleno `GradientAxialShading`
 
 
@@ -74,18 +68,14 @@ Usar transparencia alfa
 Controlar el orden z de los rectángulos
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Establezca el tamaño de [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) requerido.
+1. Establezca el tamaño de [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) requerido.
 
-1. 
-Agregue las formas [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) configuradas a la página de destino con el orden z requerido.
+1. Agregue las formas [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) configuradas a la página de destino con el orden z requerido.
 
-1. 
-Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void controlZOrderOfRectangle(Path outputFile) {

@@ -25,18 +25,14 @@ Este artículo se corresponde con el mismo flujo de trabajo de verificación exp
 Pasos
 
 
-1. 
-Enlaza el PDF firmado con `PdfFileSignature`.
+1. Enlaza el PDF firmado con `PdfFileSignature`.
 
-2. 
-Seleccione un nombre de firma del documento.
+2. Seleccione un nombre de firma del documento.
 3. Llame a `verifySignature` para validar el contenido de la firma.
 
-4. 
-Llame a `coversWholeDocument` para confirmar la cobertura de todo el documento.
+4. Llame a `coversWholeDocument` para confirmar la cobertura de todo el documento.
 
-5. 
-Cierra el objeto de fachada.
+5. Cierra el objeto de fachada.
 
 
 ### 

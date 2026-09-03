@@ -17,14 +17,11 @@ Utilice `FormEditorExamples.createSubmitButton(...)` para crear un botón que en
 Crear un botón de enviar
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `addSubmitBtn(...)` con el nombre del botón, la página, la etiqueta, la URL de destino y el rectángulo.
+2. Llame a `addSubmitBtn(...)` con el nombre del botón, la página, la etiqueta, la URL de destino y el rectángulo.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void createSubmitButton(Path inputFile, Path outputFile) {

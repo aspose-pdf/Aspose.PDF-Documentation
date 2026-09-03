@@ -20,15 +20,11 @@ Los artefactos en los documentos PDF son elementos de página sin contenido, com
 Utilice esta sección para:
 
 
-- 
-[Agregar fondos](/pdf/java/add-backgrounds/)
+- [Agregar fondos](/pdf/java/add-backgrounds/)
 
-- 
-[Agregar numeración Bates](/pdf/java/add-bates-numbering/)
+- [Agregar numeración Bates](/pdf/java/add-bates-numbering/)
 
-- 
-[Agregar marcas de agua](/pdf/java/add-watermarks/)
+- [Agregar marcas de agua](/pdf/java/add-watermarks/)
 - [Administrar encabezados y pies de página de PDF](/pdf/java/artifacts-header-footer/)
 
-- 
-[Contar artefactos](/pdf/java/counting-artifacts/)
+- [Contar artefactos](/pdf/java/counting-artifacts/)

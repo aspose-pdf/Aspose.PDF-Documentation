@@ -24,11 +24,9 @@ Crear y agregar un cuadro flotante
 Utilice este ejemplo cuando el texto deba colocarse dentro de un contenedor flotante con borde.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `FloatingBox`, establezca su tamaño y borde, y agregue contenido de texto.
+1. Cree un `FloatingBox`, establezca su tamaño y borde, y agregue contenido de texto.
 1. Agregue el cuadro a la página y guarde el documento.
 
 
@@ -57,11 +55,9 @@ Crear un diseño repetido de varias columnas
 Utilice este ejemplo cuando el texto largo deba fluir en varias columnas dentro de un cuadro flotante.
 
 
-1. 
-Crea una página y configura márgenes.
+1. Crea una página y configura márgenes.
 
-1. 
-Calcule los anchos de las columnas y configure los ajustes de la columna `FloatingBox`.
+1. Calcule los anchos de las columnas y configure los ajustes de la columna `FloatingBox`.
 1. Agregue fragmentos de texto repetidos al cuadro y guarde el documento.
 
 
@@ -104,11 +100,9 @@ Comience cada fragmento como el primer elemento de una columna.
 Utilice este ejemplo cuando cada fragmento insertado deba comenzar un nuevo segmento de flujo de columna.
 
 
-1. 
-Cree una página y configure `FloatingBox` de varias columnas.
+1. Cree una página y configure `FloatingBox` de varias columnas.
 
-1. 
-Cree fragmentos de texto y márquelos con `setFirstParagraphInColumn(true)`.
+1. Cree fragmentos de texto y márquelos con `setFirstParagraphInColumn(true)`.
 1. Agregue el cuadro a la página y guarde el PDF.
 
 
@@ -153,11 +147,9 @@ Agregar un cuadro flotante con color de fondo
 Utilice este ejemplo cuando el contenedor flotante deba tener un relleno de fondo visible.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `FloatingBox`, establezca su color de fondo y agregue texto.
+1. Cree un `FloatingBox`, establezca su color de fondo y agregue texto.
 1. Coloque el cuadro en la página y guarde el documento.
 
 
@@ -185,11 +177,9 @@ Colocar un cuadro flotante con desplazamientos absolutos
 Utilice este ejemplo cuando el cuadro flotante deba aparecer en un desplazamiento exacto en la página.
 
 
-1. 
-Cree una página y prepare el contenido del texto circundante.
+1. Cree una página y prepare el contenido del texto circundante.
 
-1. 
-Cree un `FloatingBox`, establezca el posicionamiento absoluto y asigne desplazamientos superior e izquierdo.
+1. Cree un `FloatingBox`, establezca el posicionamiento absoluto y asigne desplazamientos superior e izquierdo.
 1. Agregue el contenido a la página y guarde el documento.
 
 
@@ -222,11 +212,9 @@ Alinear texto dentro de cuadros flotantes
 Utilice este ejemplo cuando los cuadros flotantes deban mostrar diferentes alineaciones verticales con la misma alineación horizontal.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree múltiples objetos `FloatingBox` con diferentes configuraciones de alineación.
+1. Cree múltiples objetos `FloatingBox` con diferentes configuraciones de alineación.
 1. Agréguelos a la página y guarde el resultado.
 
 ```java

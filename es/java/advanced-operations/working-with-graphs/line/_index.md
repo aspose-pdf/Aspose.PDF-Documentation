@@ -16,21 +16,16 @@ Abstract: Este artículo muestra cómo agregar formas de líneas a documentos PD
 ## Añade una línea discontinua
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
+1. Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
 
-1. 
-Crea la forma [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) y configura sus coordenadas.
+1. Crea la forma [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) y configura sus coordenadas.
 1. Agregue la [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) al contenedor [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 
-1. 
-Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
 ```java
@@ -63,17 +58,13 @@ Dibuja líneas a lo largo de la página.
 
 1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
+1. Cree un contenedor [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) y agréguelo a la página.
 
-1. 
-Crea la forma [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) y configura sus coordenadas.
+1. Crea la forma [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) y configura sus coordenadas.
 
-1. 
-Agregue la [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) al contenedor [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
+1. Agregue la [Línea](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) al contenedor [Gráfico](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

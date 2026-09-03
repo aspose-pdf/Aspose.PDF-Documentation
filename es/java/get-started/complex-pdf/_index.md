@@ -20,27 +20,20 @@ El ejemplo de [Hello World](/pdf/java/hello-world-example/) cubre la ruta de cre
 Para crear un documento PDF más complejo en Java:
 
 
-1. 
-Cree un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Cree un [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Agregue una imagen a la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) con `page.addImage(...)` y un objetivo [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Agregue una imagen a la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) con `page.addImage(...)` y un objetivo [Rectángulo](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 
-1. 
-Cree un encabezado [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) y establezca su fuente, tamaño, alineación y [Posición](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
+1. Cree un encabezado [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) y establezca su fuente, tamaño, alineación y [Posición](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
 1. Cree un segundo [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) para el párrafo de descripción.
 
-1. 
-Cree una [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con bordes, relleno y estilo de encabezado.
+1. Cree una [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con bordes, relleno y estilo de encabezado.
 
-1. 
-Agregue filas de programación generadas a la [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
+1. Agregue filas de programación generadas a la [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
 
-1. 
-Agregue la [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) a los párrafos de [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Agregue la [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) a los párrafos de [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 El siguiente código Java está basado en `GetStartedExamples.java`.
 

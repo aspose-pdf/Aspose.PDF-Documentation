@@ -20,11 +20,9 @@ Utilice la fachada `Form` cuando necesite un flujo de extracción de nombre de c
 Extraiga valores de todos los campos de AcroForm
 
 
-1. 
-Abra el documento de formulario PDF con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. Abra el documento de formulario PDF con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
 
-1. 
-Repita los nombres de los campos de la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) y lea cada valor de campo actual en un mapa.
+1. Repita los nombres de los campos de la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) y lea cada valor de campo actual en un mapa.
 
 ```java
 public static Map<String, String> getValuesFromAllFields(Path inputFile) {

@@ -21,12 +21,9 @@ La clase Java `PdfFileSecurityExamples` demuestra los principales flujos de trab
 Utilice esta sección para aprender cómo:
 
 
-- 
-cifrar un PDF con contraseñas de usuario y propietario
+- cifrar un PDF con contraseñas de usuario y propietario
 
-- 
-aplicar o actualizar privilegios de documentos
+- aplicar o actualizar privilegios de documentos
 
-- 
-descifrar un PDF con una contraseña de propietario
+- descifrar un PDF con una contraseña de propietario
 - cambiar contraseñas y, opcionalmente, restablecer la configuración de seguridad

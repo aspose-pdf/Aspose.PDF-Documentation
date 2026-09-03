@@ -20,11 +20,8 @@ Utilice esta sección cuando sea necesario dividir un documento en resultados m�
 Esta sección cubre cómo:
 
 
-- 
-extraer las primeras páginas en un nuevo PDF
+- extraer las primeras páginas en un nuevo PDF
 
-- 
-extraer todas las páginas de una página elegida hasta el final
+- extraer todas las páginas de una página elegida hasta el final
 
-- 
-exportar cada página a su propio archivo con un patrón de nomenclatura de salida
+- exportar cada página a su propio archivo con un patrón de nomenclatura de salida

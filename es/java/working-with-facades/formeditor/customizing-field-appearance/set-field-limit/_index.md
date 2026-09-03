@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, establecer el 
 ## Establecer un límite de caracteres de campo
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `setFieldLimit(...)` para conocer el campo de destino y el número máximo de caracteres.
+2. Llame a `setFieldLimit(...)` para conocer el campo de destino y el número máximo de caracteres.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void setFieldLimit(Path inputFile, Path outputFile) {

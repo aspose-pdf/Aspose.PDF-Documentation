@@ -20,15 +20,11 @@ La clase Java `PdfFileEditorExamples` demuestra los principales flujos de trabaj
 Utilice esta sección para aprender cómo:
 
 
-- 
-fusionar archivos PDF con el método `concatenate`
+- fusionar archivos PDF con el método `concatenate`
 
-- 
-dividir un documento desde el principio, hasta el final o en archivos de una sola página
+- dividir un documento desde el principio, hasta el final o en archivos de una sola página
 
-- 
-extraer, eliminar, insertar y agregar páginas
+- extraer, eliminar, insertar y agregar páginas
 - crear folletos y salidas N-Up para imprimir
 
-- 
-agregar márgenes, cambiar el tamaño del contenido de la página e insertar saltos de página
+- agregar márgenes, cambiar el tamaño del contenido de la página e insertar saltos de página

@@ -21,12 +21,9 @@ Utilice estos ejemplos cuando necesite inspeccionar o normalizar la información
 Esta sección cubre cómo:
 
 
-- 
-leer campos de metadatos estándar y personalizados
+- leer campos de metadatos estándar y personalizados
 
-- 
-actualizar los valores de metadatos y guardar el resultado
+- actualizar los valores de metadatos y guardar el resultado
 
-- 
-borrar la información del documento existente
+- borrar la información del documento existente
 - escribir información actualizada con XMP

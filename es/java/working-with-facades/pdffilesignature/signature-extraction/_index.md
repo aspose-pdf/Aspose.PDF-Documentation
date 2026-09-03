@@ -25,18 +25,14 @@ Utilice este flujo de trabajo cuando necesite guardar el certificado asociado co
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSignature` y vincule el PDF firmado.
+1. Cree una instancia `PdfFileSignature` y vincule el PDF firmado.
 
-2. 
-Seleccione el nombre de la firma para inspeccionar.
+2. Seleccione el nombre de la firma para inspeccionar.
 3. Llame a `extractCertificate` para abrir el flujo de certificados.
 
-4. 
-Copie los bytes del certificado a un archivo de salida.
+4. Copie los bytes del certificado a un archivo de salida.
 
-5. 
-Cierre los recursos del flujo y el objeto de fachada.
+5. Cierre los recursos del flujo y el objeto de fachada.
 
 
 ### 

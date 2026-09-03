@@ -20,14 +20,11 @@ Aspose.PDF para Java expone las operaciones de seguridad de PDF a través de la 
 Cifrar un PDF con contraseñas de usuario y propietario
 
 
-1. 
-Cree y vincule la fachada [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) al documento PDF de origen.
+1. Cree y vincule la fachada [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) al documento PDF de origen.
 
-1. 
-Configure las propiedades [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) y [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) requeridas por el ejemplo.
+1. Configure las propiedades [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) y [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) requeridas por el ejemplo.
 
-1. 
-Guarde el documento PDF actualizado a través de [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
+1. Guarde el documento PDF actualizado a través de [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
 public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFile) {
@@ -52,11 +49,9 @@ public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFi
 Descifrar un PDF protegido
 
 
-1. 
-Cree y vincule la fachada [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) al documento PDF de origen.
+1. Cree y vincule la fachada [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) al documento PDF de origen.
 
-1. 
-Descifre el documento protegido con la contraseña del propietario.
+1. Descifre el documento protegido con la contraseña del propietario.
 1. Guarde el documento PDF actualizado a través de [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 
@@ -82,12 +77,10 @@ Cambiar contraseñas y restablecer la seguridad
 La clase `PdfFileSecurityExamples` demuestra:
 
 
-- 
-`changeUserAndOwnerPassword` para reemplazar ambas contraseñas.
+- `changeUserAndOwnerPassword` para reemplazar ambas contraseñas.
 - `changePasswordAndResetSecurity` para cambiar contraseñas y volver a aplicar privilegios en un solo paso.
 
-- 
-`tryChangePasswordWithoutException` para un flujo de cambio de contraseña sin retorno.
+- `tryChangePasswordWithoutException` para un flujo de cambio de contraseña sin retorno.
 
 
 ## 
@@ -98,15 +91,12 @@ Establecer privilegios de documentos
 Para restringir acciones como imprimir y copiar:
 
 
-1. 
-Cree y vincule la fachada [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) al documento PDF de origen.
+1. Cree y vincule la fachada [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) al documento PDF de origen.
 1. Establezca los permisos [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) requeridos o las opciones de cifrado.
 
-1. 
-Establezca las propiedades requeridas por el ejemplo.
+1. Establezca las propiedades requeridas por el ejemplo.
 
-1. 
-Guarde el documento PDF actualizado a través de [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
+1. Guarde el documento PDF actualizado a través de [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
 public static void setPdfPrivilegesWithPasswords(Path inputFile, Path outputFile) {

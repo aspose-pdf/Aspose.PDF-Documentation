@@ -20,18 +20,13 @@ Analizar documentos PDF significa extraer contenido estructurado o sin formato d
 Esta sección cubre cómo:
 
 
-- 
-[Extraer texto de PDF](/pdf/java/extract-text-from-pdf/) usando `TextAbsorber`, `ParagraphAbsorber` y API relacionadas.
+- [Extraer texto de PDF](/pdf/java/extract-text-from-pdf/) usando `TextAbsorber`, `ParagraphAbsorber` y API relacionadas.
 
-- 
-[Extraer imágenes de PDF](/pdf/java/extract-images-from-the-pdf-file/) de los recursos de la página.
+- [Extraer imágenes de PDF](/pdf/java/extract-images-from-the-pdf-file/) de los recursos de la página.
 
-- 
-[Extraer fuentes de PDF](/pdf/java/extract-fonts-from-pdf/) para inspeccionar las fuentes utilizadas en un documento.
+- [Extraer fuentes de PDF](/pdf/java/extract-fonts-from-pdf/) para inspeccionar las fuentes utilizadas en un documento.
 - [Extraer datos de AcroForm](/pdf/java/extract-data-from-acroform/) y exportar valores de campo a JSON, XML, FDF o XFDF.
 
-- 
-[Extraer datos de la tabla](/pdf/java/extract-data-from-table-in-pdf/) usando `TableAbsorber` o exportar las tablas detectadas a Excel.
+- [Extraer datos de la tabla](/pdf/java/extract-data-from-table-in-pdf/) usando `TableAbsorber` o exportar las tablas detectadas a Excel.
 
-- 
-[Extraer datos vectoriales de PDF](/pdf/java/extract-vector-data-from-pdf/) con `GraphicsAbsorber` y métodos de exportación SVG.
+- [Extraer datos vectoriales de PDF](/pdf/java/extract-vector-data-from-pdf/) con `GraphicsAbsorber` y métodos de exportación SVG.

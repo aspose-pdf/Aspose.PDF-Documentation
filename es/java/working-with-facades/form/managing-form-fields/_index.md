@@ -13,11 +13,9 @@ Abstract: Esta sección cubre los flujos de trabajo de administración de formul
 La clase Java `FormExamples` incluye ejemplos directos para:
 
 
-- 
-`flattenAllFields(...)`
+- `flattenAllFields(...)`
 
-- 
-`renameFormFields(...)`
+- `renameFormFields(...)`
 
 
 

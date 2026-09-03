@@ -13,14 +13,11 @@ Abstract: Esta sección cubre los ejemplos de exportación de formularios Java i
 La clase Java `FormExamples` incluye flujos de trabajo de exportación directa para estos formatos:
 
 
-- 
-XML con `form.exportXml(...)`
+- XML con `form.exportXml(...)`
 
-- 
-FDF con `form.exportFdf(...)`
+- FDF con `form.exportFdf(...)`
 
-- 
-XFDF con `form.exportXfdf(...)`
+- XFDF con `form.exportXfdf(...)`
 
 
 

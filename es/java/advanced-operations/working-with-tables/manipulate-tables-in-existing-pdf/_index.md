@@ -24,11 +24,9 @@ Reemplazar texto dentro de una celda de tabla
 Utilice este ejemplo cuando el texto de una celda detectada deba actualizarse sin reconstruir toda la tabla.
 
 
-1. 
-Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y visite la página con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y visite la página con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 
-1. 
-Valide que existan la tabla de destino y los fragmentos de texto de la celda.
+1. Valide que existan la tabla de destino y los fragmentos de texto de la celda.
 1. Reemplace el texto de la celda y guarde el documento actualizado.
 
 
@@ -60,11 +58,9 @@ Reemplazar una tabla detectada con una nueva tabla
 Utilice este ejemplo cuando la tabla original deba reemplazarse por completo por una recién construida.
 
 
-1. 
-Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y detecte tablas en la página.
+1. Abra el [Documento] PDF de origen(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y detecte tablas en la página.
 
-1. 
-Cree una nueva [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con la estructura deseada.
+1. Cree una nueva [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) con la estructura deseada.
 1. Reemplace la tabla absorbida y guarde el PDF de salida.
 
 ```java

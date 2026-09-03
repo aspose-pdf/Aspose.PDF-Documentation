@@ -25,18 +25,14 @@ Este ejemplo lee información de documento estándar, indicadores de estado de a
 Pasos
 
 
-1. 
-Cree un objeto `PdfFileInfo` para el PDF de origen.
+1. Cree un objeto `PdfFileInfo` para el PDF de origen.
 
-2. 
-Lea los campos de metadatos estándar, como asunto, título, palabras clave y creador.
+2. Lea los campos de metadatos estándar, como asunto, título, palabras clave y creador.
 3. Inspeccione los indicadores de estado del archivo, como si el archivo es válido, está cifrado, está protegido con contraseña o es una cartera.
 
-4. 
-Lea un valor de metadatos personalizado con `getMetaInfo`.
+4. Lea un valor de metadatos personalizado con `getMetaInfo`.
 
-5. 
-Cierre la instancia `PdfFileInfo`.
+5. Cierre la instancia `PdfFileInfo`.
 
 
 ### 

@@ -832,14 +832,11 @@ document.save(outFile);
 Desde la versión 24.7, como parte de la edición de PDF etiquetado, se agregaron métodos en **Aspose.Pdf.LogicalStructure.Element**:
 
 
-- 
-Etiqueta (agregue etiquetas a operadores específicos como imágenes, texto y enlaces)
+- Etiqueta (agregue etiquetas a operadores específicos como imágenes, texto y enlaces)
 
-- 
-Insertarniño
+- Insertarniño
 
-- 
-Quitar niño
+- Quitar niño
 - BorrarNiños
 
 
@@ -1118,21 +1115,16 @@ Desde la versión 24.5, se implementaron los complementos del editor de formular
 **Cómo editar formularios en PDF usando el Editor de formularios**
 
 
-- 
-Configure sus claves de licencia
+- Configure sus claves de licencia
 
-- 
-Cree una instancia de la clase FormEditor, que proporciona métodos para manipular formularios PDF.
+- Cree una instancia de la clase FormEditor, que proporciona métodos para manipular formularios PDF.
 - Cree una instancia de la clase FormEditorAddOptions, que especifica las opciones para agregar campos de formulario a un documento PDF.
 
-- 
-Agregue una fuente de archivo de entrada y una fuente de archivo de salida al objeto FormEditorAddOptions, utilizando la clase FileDataSource que representa una ruta de archivo o secuencia
+- Agregue una fuente de archivo de entrada y una fuente de archivo de salida al objeto FormEditorAddOptions, utilizando la clase FileDataSource que representa una ruta de archivo o secuencia
 
-- 
-Llame al método Process del objeto FormEditor, pasando el objeto FormEditorAddOptions como parámetro
+- Llame al método Process del objeto FormEditor, pasando el objeto FormEditorAddOptions como parámetro
 
-- 
-Acceda al resultado usando ResultContainer.resultCollection
+- Acceda al resultado usando ResultContainer.resultCollection
 
 
 ```java
@@ -1207,14 +1199,11 @@ Esta versión nos permite trabajar con capas de PDF. Por ejemplo:
 
 - bloquear una capa PDF
 
-- 
-extraer elementos de capa PDF
+- extraer elementos de capa PDF
 
-- 
-aplanar un PDF en capas
+- aplanar un PDF en capas
 
-- 
-fusionar todas las capas dentro del PDF en una
+- fusionar todas las capas dentro del PDF en una
 
 
 
@@ -1299,8 +1288,7 @@ La biblioteca Aspose.PDF para Java permite fusionar todas las capas de PDF o una
 Se agregaron dos métodos para fusionar todas las capas de la página:
 
 
-- 
-void mergeLayers (String newLayerName);
+- void mergeLayers (String newLayerName);
 - void mergeLayers(String newLayerName, String newOptionalContentGroupId);
 
 
@@ -1326,8 +1314,7 @@ Novedades de Aspose.PDF 24.4
 Esta versión introdujo complementos de Java para PDF:
 
 
-- 
-Complemento de aplanamiento de formularios
+- Complemento de aplanamiento de formularios
 
 ```java
 FormFlattener pdfFormPlugin = new FormFlattener();
@@ -1371,8 +1358,7 @@ System.out.println(result.getResultCollectionInternal().get_Item(0).isFile());
 System.out.println(result.getResultCollectionInternal().get_Item(0).getData().toString());
 ```
 
-- 
-Complemento de fusión
+- Complemento de fusión
 
 
 ```java
@@ -1395,8 +1381,7 @@ System.out.println(results.getResultCollection().size());
 System.out.println(results.getResultCollection().get(0).isFile());
 ```
 
-- 
-Complemento optimizador
+- Complemento optimizador
 
 
 
@@ -1738,8 +1723,7 @@ for (int i = 1; i <= forms.size(); i++) {
 document.save(output);
 ```
 
-- 
-Todos los formularios se pueden eliminar utilizando el siguiente fragmento de código:
+- Todos los formularios se pueden eliminar utilizando el siguiente fragmento de código:
 
 
 ```java
@@ -1788,8 +1772,7 @@ document.save(outputFile);
 La actualización actual presenta tres versiones de Eliminación de etiquetas de archivos PDF etiquetados.
 
 
-- 
-Elimine algún elemento de nodo de un documentElement (elemento del árbol raíz):
+- Elimine algún elemento de nodo de un documentElement (elemento del árbol raíz):
 
 
 ```java
@@ -1806,8 +1789,7 @@ documentElement.getChildren().remove(structElement);
 document.save(outputPath);
 ```
 
-- 
-Elimine todas las etiquetas de elementos marcados del documento, pero conserve los elementos de la estructura:
+- Elimine todas las etiquetas de elementos marcados del documento, pero conserve los elementos de la estructura:
 
 
 ```java
@@ -1830,8 +1812,7 @@ for (Element element:queue ) {
 document.save(outputPath);
 ```
 
-- 
-Eliminar etiquetas en absoluto:
+- Eliminar etiquetas en absoluto:
 
 ```java
 Document document = new Document(inputPath);
@@ -2308,8 +2289,7 @@ pdfDocument.save("finalOutput.pdf");
 Esta versión incluye información para Aspose.PDF para Java:
 
 
-- 
-PDF a ODS: reconoce texto en subíndice y superíndice;
+- PDF a ODS: reconoce texto en subíndice y superíndice;
 
 
 
@@ -2323,8 +2303,7 @@ options.Format = ExcelSaveOptions.ExcelFormat.ODS;
 pdfDocument.Save("output.ods"), options);
 ```
 
-- 
-PDF a XMLSpreadSheet2003: Reconocer texto en subíndice y superíndice;
+- PDF a XMLSpreadSheet2003: Reconocer texto en subíndice y superíndice;
 
 - PDF a Excel: Reconocer texto en subíndice y superíndice;
 

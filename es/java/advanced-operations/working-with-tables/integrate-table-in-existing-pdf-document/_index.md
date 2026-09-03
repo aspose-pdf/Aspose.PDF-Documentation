@@ -24,11 +24,9 @@ Construya una tabla a partir de filas CSV
 Utilice este ejemplo cuando las columnas CSV seleccionadas deban transformarse en una tabla PDF con estilo.
 
 
-1. 
-Cree una [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure sus bordes.
+1. Cree una [Tabla](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) y configure sus bordes.
 
-1. 
-Detecte los índices de columna requeridos a partir de la fila del encabezado CSV.
+1. Detecte los índices de columna requeridos a partir de la fila del encabezado CSV.
 1. Agregue la fila del encabezado y el número solicitado de filas de datos, luego devuelva la tabla.
 
 
@@ -69,11 +67,9 @@ Crear un PDF a partir de datos CSV
 Utilice este ejemplo cuando la entrada CSV deba representarse como un documento de tabla PDF.
 
 
-1. 
-Lea las filas CSV del archivo de entrada.
+1. Lea las filas CSV del archivo de entrada.
 
-1. 
-Obtenga una vista previa de un subconjunto de las filas analizadas en la consola.
+1. Obtenga una vista previa de un subconjunto de las filas analizadas en la consola.
 1. Cree un [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), agregue la tabla generada y guarde el archivo de salida.
 
 
@@ -100,11 +96,9 @@ Buscar índices de columnas CSV por nombre
 Utilice esta ayuda cuando se deban ubicar columnas con nombre específicas en la fila del encabezado CSV.
 
 
-1. 
-Itere a través de los nombres de las columnas solicitadas.
+1. Itere a través de los nombres de las columnas solicitadas.
 
-1. 
-Busque en la fila del encabezado índices coincidentes.
+1. Busque en la fila del encabezado índices coincidentes.
 1. Devuelve las posiciones de las columnas recopiladas.
 
 
@@ -132,11 +126,9 @@ Leer filas CSV de un archivo
 Utilice esta ayuda cuando la fuente CSV deba cargarse en la memoria antes de generar la tabla.
 
 
-1. 
-Lea todas las líneas del archivo de entrada.
+1. Lea todas las líneas del archivo de entrada.
 
-1. 
-Divida cada línea con el asistente del analizador CSV.
+1. Divida cada línea con el asistente del analizador CSV.
 1. Devuelve los valores de fila recopilados.
 
 
@@ -158,11 +150,9 @@ Dividir una línea CSV en valores
 Utilice esta ayuda cuando una fila CSV pueda contener valores entre comillas y caracteres de escape.
 
 
-1. 
-Repita los caracteres de la línea.
+1. Repita los caracteres de la línea.
 
-1. 
-Realice un seguimiento de si el analizador se encuentra actualmente dentro del texto citado.
+1. Realice un seguimiento de si el analizador se encuentra actualmente dentro del texto citado.
 1. Cree la lista de valores final y devuélvala como una matriz.
 
 ```java

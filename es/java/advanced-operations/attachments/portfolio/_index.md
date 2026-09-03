@@ -24,11 +24,9 @@ Crear un portafolio en PDF
 Utilice este ejemplo cuando necesite empaquetar varios archivos en una colección de portafolios en PDF.
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y habilite su [Colección](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y habilite su [Colección](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
 
-1. 
-Cree objetos [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para cada archivo de entrada y establezca sus descripciones.
+1. Cree objetos [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para cada archivo de entrada y establezca sus descripciones.
 1. Agregue los archivos a la colección de cartera y guarde el documento de salida.
 
 
@@ -62,11 +60,9 @@ Eliminar archivos de un portafolio PDF
 Utilice este ejemplo cuando deba borrarse una colección de portafolios en PDF existente.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Elimine las entradas de la colección de documentos.
+1. Elimine las entradas de la colección de documentos.
 1. Guarde el documento de salida limpio.
 
 ```java

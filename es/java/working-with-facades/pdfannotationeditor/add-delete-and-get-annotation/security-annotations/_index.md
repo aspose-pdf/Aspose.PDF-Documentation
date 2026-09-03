@@ -13,14 +13,11 @@ Abstract: Este artículo explica cómo trabajar con anotaciones de redacción en
 ## Marcar texto para redacción
 
 
-1. 
-Cargue el PDF y busque en todas las páginas el texto que debe redactarse.
+1. Cargue el PDF y busque en todas las páginas el texto que debe redactarse.
 
-2. 
-Cree un `RedactionAnnotation` para cada fragmento de texto coincidente y configure su apariencia.
+2. Cree un `RedactionAnnotation` para cada fragmento de texto coincidente y configure su apariencia.
 
-3. 
-Agregue las anotaciones de redacción a sus páginas y guarde el documento.
+3. Agregue las anotaciones de redacción a sus páginas y guarde el documento.
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {

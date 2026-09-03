@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, convertir un c
 ## Convertir un campo de una sola línea en varias líneas
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `single2Multiple(...)` para obtener el nombre del campo de destino.
+2. Llame a `single2Multiple(...)` para obtener el nombre del campo de destino.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void singleToMultiple(Path inputFile, Path outputFile) {

@@ -24,11 +24,9 @@ Extraer una sola página
 Utilice este ejemplo cuando necesite guardar una página del PDF de origen en un documento separado.
 
 
-1. 
-Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y cree un documento de destino.
+1. Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y cree un documento de destino.
 
-1. 
-Copie la página de destino en la colección de páginas de destino.
+1. Copie la página de destino en la colección de páginas de destino.
 1. Guarde el nuevo PDF.
 
 
@@ -50,11 +48,9 @@ Extraer varias páginas
 Utilice este ejemplo cuando necesite copiar varias páginas en un PDF independiente.
 
 
-1. 
-Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y cree un documento de destino.
+1. Abra el [Documento] PDF de origen (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y cree un documento de destino.
 
-1. 
-Itere a través de los índices de páginas seleccionadas y agréguelos al destino.
+1. Itere a través de los índices de páginas seleccionadas y agréguelos al destino.
 1. Guarde el documento de páginas extraídas.
 
 ```java

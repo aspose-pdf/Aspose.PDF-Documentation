@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, eliminar un el
 ## Eliminar un elemento de un campo de lista
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `delListItem(...)` para obtener el campo de destino y el elemento que desea eliminar.
+2. Llame a `delListItem(...)` para obtener el campo de destino y el elemento que desea eliminar.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void deleteListItem(Path inputFile, Path outputFile) {

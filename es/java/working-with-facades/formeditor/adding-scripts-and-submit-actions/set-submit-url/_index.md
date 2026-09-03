@@ -13,17 +13,13 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, establecer una
 ## Establecer una URL de envío
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `setSubmitUrl(...)` para obtener el campo del botón.
+2. Llame a `setSubmitUrl(...)` para obtener el campo del botón.
 
-3. 
-Aplique la marca de envío para el formato de envío.
+3. Aplique la marca de envío para el formato de envío.
 
-4. 
-Guarde el documento actualizado.
+4. Guarde el documento actualizado.
 
 ```java
 public static void setSubmitUrl(Path inputFile, Path outputFile) {

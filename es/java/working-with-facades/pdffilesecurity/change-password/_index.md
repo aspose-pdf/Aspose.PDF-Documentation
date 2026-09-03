@@ -25,15 +25,12 @@ Utilice `PdfFileSecurity` cuando necesite rotar credenciales en un PDF ya proteg
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileSecurity`.
+1. Cree una instancia `PdfFileSecurity`.
 
-2. 
-Enlaza el PDF protegido con `bindPdf`.
+2. Enlaza el PDF protegido con `bindPdf`.
 3. Llame a la sobrecarga `changePassword` adecuada, dependiendo de si también desea restablecer los privilegios y el tamaño de la clave.
 
-4. 
-Guarde el archivo actualizado y cierre el objeto de seguridad.
+4. Guarde el archivo actualizado y cierre el objeto de seguridad.
 
 
 ### 

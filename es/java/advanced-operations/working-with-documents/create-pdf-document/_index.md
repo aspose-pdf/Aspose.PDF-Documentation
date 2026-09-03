@@ -24,15 +24,12 @@ Crear un nuevo documento PDF
 Utilice este enfoque cuando necesite generar un archivo PDF simple desde cero.
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 1. Cree un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) y agréguelo a la página.
 
-1. 
-Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
 ```java
@@ -53,12 +50,10 @@ Crear un PDF con capacidad de búsqueda
 El ejemplo `createSearchablePdf` usa `Document.convert(...)` con una implementación `CallBackGetHocr`. La devolución de llamada escribe la imagen de origen en un archivo temporal, invoca Tesseract con la opción `hocr`, lee el marcado HOCR generado y lo devuelve a Aspose.PDF.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree la devolución de llamada `CallBackGetHocr` y convierta el documento de origen en contenido PDF con capacidad de búsqueda.
 
-1. 
-Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
 ```java
@@ -86,12 +81,10 @@ Obtener la configuración de la ventana del documento
 Utilice este ejemplo para inspeccionar las preferencias del visor actual almacenadas en un documento PDF existente.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Lea la ventana requerida y muestre las propiedades del documento.
 
-1. 
-Genere la configuración actual para inspección o depuración.
+1. Genere la configuración actual para inspección o depuración.
 
 
 ```java
@@ -119,12 +112,10 @@ Establecer preferencias de ventana de documento
 Este ejemplo actualiza cómo se debe mostrar el PDF cuando se abre en un visor compatible.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Establezca las preferencias requeridas de ventana, diseño y modo de página.
 
-1. 
-Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
 ```java
@@ -153,15 +144,12 @@ Incrustar fuentes en un PDF existente
 Utilice este enfoque cuando un documento deba contener las fuentes requeridas para una representación más confiable en otros sistemas.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Habilite la incrustación de fuentes estándar e itere a través de las fuentes utilizadas por cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Marque cualquier objeto [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) no incrustado para incrustarlo.
+1. Marque cualquier objeto [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) no incrustado para incrustarlo.
 
-1. 
-Guarde el documento actualizado.
+1. Guarde el documento actualizado.
 
 
 ```java
@@ -189,14 +177,11 @@ Este ejemplo crea un nuevo PDF y asigna una fuente incrustada al contenido del t
 
 1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Cree el [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), el [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/) y el [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) necesarios.
+1. Cree el [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), el [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/) y el [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) necesarios.
 
-1. 
-Resuelva la [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) de destino del repositorio y márquela como incrustada.
+1. Resuelva la [Fuente](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) de destino del repositorio y márquela como incrustada.
 
-1. 
-Agregue el contenido del texto a la página y guarde el documento de salida.
+1. Agregue el contenido del texto a la página y guarde el documento de salida.
 
 
 ```java
@@ -224,14 +209,11 @@ Establecer una fuente predeterminada para la salida PDF
 Utilice este patrón cuando el documento guardado deba recurrir a una fuente específica durante la generación de salida.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) y establezca el nombre de fuente predeterminado.
+1. Cree [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) y establezca el nombre de fuente predeterminado.
 
-1. 
-Guarde el documento con las opciones de guardado configuradas.
+1. Guarde el documento con las opciones de guardado configuradas.
 
 
 ```java
@@ -250,14 +232,11 @@ Obtenga todas las fuentes utilizadas en un PDF
 Este ejemplo enumera todas las fuentes detectadas en el documento para que pueda auditar el uso de las fuentes antes de exportar o actualizar el archivo.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Enumere las fuentes devueltas por las utilidades de fuentes del documento.
+1. Enumere las fuentes devueltas por las utilidades de fuentes del documento.
 
-1. 
-Genere el nombre de cada [Fuente] detectada(https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+1. Genere el nombre de cada [Fuente] detectada(https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
 
 
 ```java
@@ -276,14 +255,11 @@ Mejorar la incrustación de fuentes subdividiendo fuentes
 Utilice este enfoque cuando desee reducir la carga útil de fuentes y al mismo tiempo mantener los datos de fuentes incrustados alineados con el uso del documento.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ejecute el subconjunto de fuentes a través de las utilidades de fuentes del documento con los valores [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) requeridos.
+1. Ejecute el subconjunto de fuentes a través de las utilidades de fuentes del documento con los valores [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) requeridos.
 
-1. 
-Guarde el documento optimizado.
+1. Guarde el documento optimizado.
 
 
 ```java
@@ -302,14 +278,11 @@ Establecer el factor de zoom de apertura del documento
 Este ejemplo configura el nivel de zoom inicial que se debe aplicar cuando se abre el PDF.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree una [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) con un [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Cree una [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) con un [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 
-1. 
-Asigne la acción como acción de apertura del documento y guarde el resultado.
+1. Asigne la acción como acción de apertura del documento y guarde el resultado.
 
 
 ```java
@@ -328,14 +301,11 @@ Obtener el factor de zoom abierto del documento
 Utilice este ejemplo para inspeccionar si un PDF ya define un nivel de zoom explícito para su acción de apertura.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Compruebe si la acción abierta es una [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) con un [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Compruebe si la acción abierta es una [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) con un [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 
-1. 
-Imprima el valor de zoom configurado o informe que no hay ningún zoom configurado.
+1. Imprima el valor de zoom configurado o informe que no hay ningún zoom configurado.
 
 ```java
 public static void getZoomFactor(Path inputFile) {

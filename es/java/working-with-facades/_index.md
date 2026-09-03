@@ -21,52 +21,38 @@ La API de Facades proporciona ayudas de nivel superior para tareas comunes de PD
 Utilice esta sección para aprender cómo:
 
 
-- 
-llenar y editar formularios PDF
+- llenar y editar formularios PDF
 
-- 
-trabajar con anotaciones y contenido
+- trabajar con anotaciones y contenido
 
-- 
-fusionar, dividir y reestructurar archivos PDF
+- fusionar, dividir y reestructurar archivos PDF
 - inspeccionar metadatos e información de la página
 
-- 
-Aplicar seguridad, firmas, sellos y numeración de páginas.
+- Aplicar seguridad, firmas, sellos y numeración de páginas.
 
-- 
-renderizar páginas PDF en imágenes con la fachada del visor
+- renderizar páginas PDF en imágenes con la fachada del visor
 
 
 ## 
 Secciones de fachadas
 
 
-- 
-[Formulario](/pdf/java/form-class/)
+- [Formulario](/pdf/java/form-class/)
 - [Editor de formularios](/pdf/java/formeditor-class/)
 
-- 
-[Editor de anotaciones de PDF](/pdf/java/pdfannotationeditor-class/)
+- [Editor de anotaciones de PDF](/pdf/java/pdfannotationeditor-class/)
 
-- 
-[Editor de contenido PDF](/pdf/java/pdfcontenteditor-class/)
+- [Editor de contenido PDF](/pdf/java/pdfcontenteditor-class/)
 
-- 
-[Editor de archivos PDF](/pdf/java/pdffileeditor-class/)
+- [Editor de archivos PDF](/pdf/java/pdffileeditor-class/)
 
-- 
-[InfoArchivoPdf](/pdf/java/pdffileinfo-class/)
+- [InfoArchivoPdf](/pdf/java/pdffileinfo-class/)
 - [Seguridad del archivo Pdf](/pdf/java/pdffilesecurity-class/)
 
-- 
-[Firma del archivo Pdf](/pdf/java/pdffilesignature-class/)
+- [Firma del archivo Pdf](/pdf/java/pdffilesignature-class/)
 
-- 
-[Sello de archivo Pdf](/pdf/java/pdffilestamp-class/)
+- [Sello de archivo Pdf](/pdf/java/pdffilestamp-class/)
 
-- 
-[Visor de PDF](/pdf/java/pdfviewer-class/)
+- [Visor de PDF](/pdf/java/pdfviewer-class/)
 
-- 
-[Sello](/pdf/java/stamp-class/)
+- [Sello](/pdf/java/stamp-class/)

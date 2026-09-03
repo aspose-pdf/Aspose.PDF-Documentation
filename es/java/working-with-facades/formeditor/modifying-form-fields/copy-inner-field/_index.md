@@ -13,14 +13,11 @@ Abstract: Este artículo muestra cómo vincular un PDF existente, duplicar un ca
 ## Copiar un campo dentro del mismo PDF
 
 
-1. 
-Vincule el PDF de origen a la fachada `FormEditor`.
+1. Vincule el PDF de origen a la fachada `FormEditor`.
 
-2. 
-Llame a `copyInnerField(...)` con el nombre del campo de origen, el nuevo nombre del campo, la página y las coordenadas.
+2. Llame a `copyInnerField(...)` con el nombre del campo de origen, el nuevo nombre del campo, la página y las coordenadas.
 
-3. 
-Guarde el documento actualizado.
+3. Guarde el documento actualizado.
 
 ```java
 public static void copyInnerField(Path inputFile, Path outputFile) {

@@ -20,14 +20,11 @@ Aspose.PDF para Java expone capas de PDF a través de la API `Layer` en cada pá
 Agregar capas a una página PDF
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Agregue una [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
 
-1. 
-Cree y configure los objetos [Capa](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) requeridos en la página.
+1. Cree y configure los objetos [Capa](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) requeridos en la página.
 1. Guarde el [Documento] PDF de salida(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
@@ -56,15 +53,12 @@ El ejemplo completo crea tres capas separadas con contenido de líneas rojas, ve
 Bloquear una capa
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Acceda a la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino y obtenga su colección [Capa](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Acceda a la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) de destino y obtenga su colección [Capa](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 1. Bloquee el objetivo [Capa](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 
-1. 
-Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Guarde el [Documento] PDF actualizado(https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void lockLayer(Path inputFile, Path outputFile) {

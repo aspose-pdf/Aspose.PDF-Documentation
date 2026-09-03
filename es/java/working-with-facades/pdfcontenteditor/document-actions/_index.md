@@ -13,8 +13,6 @@ Abstract: Esta sección cubre los flujos de trabajo de Java PdfContentEditor par
 La clase Java actual `PdfContentEditorExamples` admite directamente:
 
 
-- 
-`addDocumentAction(...)`
+- `addDocumentAction(...)`
 
-- 
-`removeOpenAction(...)`
+- `removeOpenAction(...)`

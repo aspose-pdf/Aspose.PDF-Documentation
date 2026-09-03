@@ -24,11 +24,9 @@ Agregar una anotación de marca de agua
 Utilice este ejemplo cuando necesite una anotación de marca de agua de texto con configuración de fuente y opacidad personalizadas.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree una [Anotación de marca de agua](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) y agréguela a la página.
+1. Cree una [Anotación de marca de agua](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) y agréguela a la página.
 1. Configure el [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/), el texto de la marca de agua y la opacidad, luego guarde el documento.
 
 
@@ -64,11 +62,9 @@ Obtener anotaciones de marcas de agua
 Este ejemplo escanea la colección de anotaciones e imprime el rectángulo de cada anotación de marca de agua.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Repita las anotaciones en la página de destino.
+1. Repita las anotaciones en la página de destino.
 1. Filtre las anotaciones por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` e imprima sus rectángulos.
 
 
@@ -92,11 +88,9 @@ Eliminar anotaciones de marcas de agua
 Utilice este enfoque cuando las anotaciones de marcas de agua existentes deban eliminarse del documento.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recopile anotaciones de tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
+1. Recopile anotaciones de tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
 1. Elimine las anotaciones recopiladas y guarde el archivo de salida.
 
 
@@ -121,18 +115,13 @@ public static void watermarkDelete(Path inputFile, Path outputFile) {
 Temas de anotaciones relacionados
 
 
-- 
-[Anotaciones interactivas](/pdf/java/interactive-annotations/)
+- [Anotaciones interactivas](/pdf/java/interactive-annotations/)
 
-- 
-[Anotaciones de marcado](/pdf/java/markup-annotations/)
+- [Anotaciones de marcado](/pdf/java/markup-annotations/)
 
-- 
-[Anotaciones de seguridad](/pdf/java/security-annotations/)
+- [Anotaciones de seguridad](/pdf/java/security-annotations/)
 - [Anotaciones de forma](/pdf/java/shape-annotations/)
 
-- 
-[Anotaciones de texto](/pdf/java/text-based-annotations/)
+- [Anotaciones de texto](/pdf/java/text-based-annotations/)
 
-- 
-[Importar y exportar anotaciones](/pdf/java/import-export-annotations/)
+- [Importar y exportar anotaciones](/pdf/java/import-export-annotations/)

@@ -25,15 +25,12 @@ Utilice este flujo de trabajo cuando necesite comprobar la compatibilidad de arc
 Pasos
 
 
-1. 
-Cree un objeto `PdfFileInfo` para el archivo PDF.
+1. Cree un objeto `PdfFileInfo` para el archivo PDF.
 
-2. 
-Llame a `getPdfVersion()` para recuperar la versión reportada.
+2. Llame a `getPdfVersion()` para recuperar la versión reportada.
 3. Utilice o imprima el valor de la versión.
 
-4. 
-Cierre la instancia `PdfFileInfo`.
+4. Cierre la instancia `PdfFileInfo`.
 
 
 ### 

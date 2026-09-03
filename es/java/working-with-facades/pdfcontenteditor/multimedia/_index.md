@@ -17,14 +17,11 @@ La clase Java actual `PdfContentEditorExamples` admite directamente `addMovieAnn
 Agregar una anotación de película
 
 
-1. 
-Vincule el PDF de origen a la fachada `PdfContentEditor`.
+1. Vincule el PDF de origen a la fachada `PdfContentEditor`.
 
-2. 
-Llame a `createMovie(...)` con el rectángulo de anotación, la ruta del archivo de película y el número de página.
+2. Llame a `createMovie(...)` con el rectángulo de anotación, la ruta del archivo de película y el número de página.
 
-3. 
-Guarde el documento PDF actualizado.
+3. Guarde el documento PDF actualizado.
 
 ```java
 public static void addMovieAnnotation(Path inputFile, Path movieFile, Path outputFile) {

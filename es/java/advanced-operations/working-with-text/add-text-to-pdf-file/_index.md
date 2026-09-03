@@ -24,11 +24,9 @@ Agregar un fragmento de texto simple
 Utilice este ejemplo cuando una cadena de texto corta deba colocarse en coordenadas de página fijas.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TextFragment` y establezca su posición.
+1. Cree un `TextFragment` y establezca su posición.
 1. Agréguelo a la página y guarde el documento.
 
 
@@ -54,11 +52,9 @@ Agregar un párrafo dentro de un rectángulo
 Utilice este ejemplo cuando un bloque de texto más grande deba fluir dentro de un área delimitada.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cargue el texto fuente y configure un rectángulo `TextParagraph` y un modo de ajuste.
+1. Cargue el texto fuente y configure un rectángulo `TextParagraph` y un modo de ajuste.
 1. Adjunte el fragmento a través de `TextBuilder` y guarde el PDF.
 
 
@@ -97,11 +93,9 @@ Agregar párrafos con diferentes configuraciones de sangría
 Utilice este ejemplo cuando la primera línea y las siguientes deban utilizar reglas de sangría diferentes.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Prepare el fragmento de texto compartido y cree múltiples objetos `TextParagraph`.
+1. Prepare el fragmento de texto compartido y cree múltiples objetos `TextParagraph`.
 1. Configure la sangría para cada párrafo, añádalos y guarde el documento.
 
 
@@ -146,11 +140,9 @@ Insertar texto con un salto de línea manual
 Utilice este ejemplo cuando un fragmento de texto deba contener una nueva línea explícita.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TextFragment` que contenga un salto de línea y configure su estilo.
+1. Cree un `TextFragment` que contenga un salto de línea y configure su estilo.
 1. Agréguelo a través de `TextParagraph` y guarde el PDF.
 
 
@@ -185,11 +177,9 @@ Inspeccionar saltos de línea detectados
 Utilice este ejemplo cuando necesite revisar el resultado de la notificación relacionada con el diseño del texto y el ajuste de línea.
 
 
-1. 
-Cree un nuevo documento PDF y habilite el registro de notificaciones.
+1. Cree un nuevo documento PDF y habilite el registro de notificaciones.
 
-1. 
-Agregue varios fragmentos de texto largos a la página.
+1. Agregue varios fragmentos de texto largos a la página.
 1. Inspeccione las notificaciones y guarde el documento.
 
 
@@ -226,11 +216,9 @@ Medir el ancho del texto dinámicamente
 Utilice este ejemplo cuando deba medir el ancho de caracteres y cadenas antes de tomar decisiones sobre el diseño.
 
 
-1. 
-Resuelva la fuente de destino y cree un `TextState`.
+1. Resuelva la fuente de destino y cree un `TextState`.
 
-1. 
-Mida caracteres y compare los resultados de las API de estado de texto y fuente.
+1. Mida caracteres y compare los resultados de las API de estado de texto y fuente.
 1. Envíe cualquier discrepancia para su validación.
 
 
@@ -267,11 +255,9 @@ Agregar texto con un segmento de hipervínculo
 Utilice este ejemplo cuando una parte de un fragmento de texto deba comportarse como un enlace web.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Construya un `TextFragment` con varios objetos `TextSegment`.
+1. Construya un `TextFragment` con varios objetos `TextSegment`.
 1. Asigne un hipervínculo y un estilo al segmento de destino y luego guarde el documento.
 
 
@@ -305,11 +291,9 @@ Agregar texto de derecha a izquierda
 Utilice este ejemplo cuando el documento deba mostrar contenido de secuencia de comandos de derecha a izquierda con la alineación adecuada.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TextFragment` con el texto RTL de destino y configure su fuente y alineación.
+1. Cree un `TextFragment` con el texto RTL de destino y configure su fuente y alineación.
 1. Agréguelo a la página y guarde el PDF.
 
 
@@ -339,11 +323,9 @@ Agregue texto con estilo y segmentos tipo fórmula
 Utilice este ejemplo cuando el texto normal y los segmentos tipo subíndice deban utilizar diferentes estados de texto en una salida.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Construya el fragmento de estilo principal y componga la fórmula con segmentos auxiliares.
+1. Construya el fragmento de estilo principal y componga la fórmula con segmentos auxiliares.
 1. Agregue ambos fragmentos a la página y guarde el documento.
 
 
@@ -405,11 +387,9 @@ Añadir texto subrayado
 Utilice este ejemplo cuando un fragmento de texto deba usar visiblemente un estilo de subrayado.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree el fragmento de texto, configure su fuente y estado de subrayado, y establezca su posición.
+1. Cree el fragmento de texto, configure su fuente y estado de subrayado, y establezca su posición.
 1. Agréguelo con `TextBuilder` y guarde el resultado.
 
 
@@ -439,11 +419,9 @@ Agrega texto transparente sobre una forma coloreada
 Utilice este ejemplo cuando el texto deba aparecer con transparencia encima de un gráfico de fondo.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Dibuja la forma del fondo y crea un fragmento de texto semitransparente.
+1. Dibuja la forma del fondo y crea un fragmento de texto semitransparente.
 1. Agregue ambos elementos a la página y guarde el documento.
 
 
@@ -477,11 +455,9 @@ Agregar texto invisible
 Utilice este ejemplo cuando deba estar presente texto con capacidad de búsqueda u oculto sin representación visible.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Agregue un fragmento de texto visible y un segundo fragmento con la bandera invisible habilitada.
+1. Agregue un fragmento de texto visible y un segundo fragmento con la bandera invisible habilitada.
 1. Guarde el documento.
 
 
@@ -512,11 +488,9 @@ Agregar texto con un borde rectangular
 Utilice este ejemplo cuando el texto deba dibujarse junto con su rectángulo delimitador.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TextFragment` con estilo y habilite el dibujo del borde del rectángulo de texto.
+1. Cree un `TextFragment` con estilo y habilite el dibujo del borde del rectángulo de texto.
 1. Añádelo con `TextBuilder` y guarda el PDF.
 
 
@@ -550,11 +524,9 @@ Agregar texto tachado
 Utilice este ejemplo cuando el texto deba utilizar formato tachado.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un fragmento de texto con estilo y tachado habilitado.
+1. Cree un fragmento de texto con estilo y tachado habilitado.
 1. Agréguelo a la página y guarde el documento.
 
 
@@ -588,11 +560,9 @@ Aplicar sombreado de degradado axial al texto
 Utilice este ejemplo cuando el texto deba utilizar un relleno degradado lineal en lugar de un color sólido.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Crea el fragmento de texto y asigna un degradado axial a su color de primer plano.
+1. Crea el fragmento de texto y asigna un degradado axial a su color de primer plano.
 1. Agréguelo a la página y guarde el PDF.
 
 
@@ -624,11 +594,9 @@ Aplicar sombreado degradado radial al texto
 Utilice este ejemplo cuando el texto deba utilizar un relleno degradado radial.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Crea el fragmento de texto y asigna un degradado radial a su color de primer plano.
+1. Crea el fragmento de texto y asigna un degradado radial a su color de primer plano.
 1. Agréguelo a la página y guarde el documento.
 
 
@@ -660,11 +628,9 @@ Agregar texto con formato de estilo HTML en línea
 Utilice este ejemplo cuando el formato de superíndice y subíndice deba insertarse mediante marcado HTML.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `HtmlFragment` con el marcado en línea requerido.
+1. Cree un `HtmlFragment` con el marcado en línea requerido.
 1. Agréguelo a la página y guarde el PDF.
 
 
@@ -688,11 +654,9 @@ Agregar un fragmento de texto LaTeX
 Utilice este ejemplo cuando deba representar contenido matemático o con formato TeX dentro del PDF.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Cree un `TeXFragment` con la expresión requerida.
+1. Cree un `TeXFragment` con la expresión requerida.
 1. Agréguelo a la página y guarde el documento.
 
 
@@ -717,11 +681,9 @@ Agregue un fragmento HTML enriquecido
 Utilice este ejemplo cuando la página deba mostrar contenido HTML estructurado, como encabezados, párrafos y enlaces.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Prepare la cadena de contenido HTML y cree un `HtmlFragment`.
+1. Prepare la cadena de contenido HTML y cree un `HtmlFragment`.
 1. Agréguelo a la página y guarde el PDF.
 
 
@@ -750,11 +712,9 @@ Agregar un fragmento HTML con estado de texto anulado
 Utilice este ejemplo cuando el contenido HTML importado deba heredar una configuración de color y fuente controlada.
 
 
-1. 
-Cree un nuevo documento PDF y agregue una página.
+1. Cree un nuevo documento PDF y agregue una página.
 
-1. 
-Prepare el contenido HTML y cree el `HtmlFragment`.
+1. Prepare el contenido HTML y cree el `HtmlFragment`.
 1. Asigne un `TextState` personalizado, agregue el fragmento y guarde el documento.
 
 
@@ -789,11 +749,9 @@ Utilice una fuente personalizada cargada desde un archivo
 Utilice este ejemplo cuando el texto deba utilizar una fuente cargada directamente desde una ruta de archivo de fuente.
 
 
-1. 
-Resuelva la ruta del archivo de fuente personalizada.
+1. Resuelva la ruta del archivo de fuente personalizada.
 
-1. 
-Cree un fragmento de texto y cargue la fuente a través de `FontRepository.openFont`.
+1. Cree un fragmento de texto y cargue la fuente a través de `FontRepository.openFont`.
 1. Aplique la configuración de fuente y guarde el documento.
 
 
@@ -824,11 +782,9 @@ Utilice una fuente personalizada cargada desde una secuencia
 Utilice este ejemplo cuando deba abrir una fuente personalizada desde una secuencia e incrustarla en el PDF.
 
 
-1. 
-Abra el archivo de fuente como una secuencia y cárguelo con `FontRepository`.
+1. Abra el archivo de fuente como una secuencia y cárguelo con `FontRepository`.
 
-1. 
-Cree el fragmento de texto y asigne la fuente incrustada.
+1. Cree el fragmento de texto y asigne la fuente incrustada.
 1. Agregue el fragmento a la página y guarde el documento.
 
 ```java

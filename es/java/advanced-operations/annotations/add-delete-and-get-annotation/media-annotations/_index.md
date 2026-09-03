@@ -24,11 +24,9 @@ Agregar una anotación multimedia enriquecida
 Utilice este ejemplo cuando una página PDF deba albergar contenido de vídeo incrustado con un reproductor, una imagen de póster y un diseño personalizados.
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página.
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página.
 
-1. 
-Cree una [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), configure los recursos del reproductor, el póster y el flujo de contenido.
+1. Cree una [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), configure los recursos del reproductor, el póster y el flujo de contenido.
 1. Agregue la anotación a la página y guarde el documento de salida.
 
 
@@ -80,11 +78,9 @@ Eliminar anotaciones multimedia enriquecidas
 Este ejemplo elimina las anotaciones multimedia enriquecidas existentes de una página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recopile anotaciones de tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
+1. Recopile anotaciones de tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
 1. Elimine las anotaciones recopiladas y guarde el documento actualizado.
 
 
@@ -115,11 +111,9 @@ Obtener anotaciones multimedia
 Utilice este ejemplo para inspeccionar anotaciones de pantalla, sonido y medios enriquecidos que ya están presentes en la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Defina el conjunto de tipos de anotaciones multimedia que desea detectar.
+1. Defina el conjunto de tipos de anotaciones multimedia que desea detectar.
 1. Repita las anotaciones de la página e imprima el tipo y el rectángulo para cada coincidencia.
 
 
@@ -148,11 +142,9 @@ Agregar una anotación 3D
 Este ejemplo agrega una vista de modelo 3D interactiva con perspectivas predefinidas y opciones de renderizado.
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cargue el modelo en [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) y configure una [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
+1. Cargue el modelo en [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) y configure una [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
 1. Cree la [Anotación PDF3DA](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), agréguela a una página y guarde el documento.
 
 
@@ -205,11 +197,9 @@ Agregar una anotación en pantalla
 Utilice este ejemplo cuando una página deba hacer referencia a un archivo multimedia a través de una región de reproducción de pantalla.
 
 
-1. 
-Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página.
+1. Cree un nuevo [Documento] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue una página.
 
-1. 
-Cree una [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) para el archivo multimedia y el rectángulo de destino.
+1. Cree una [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) para el archivo multimedia y el rectángulo de destino.
 1. Agregue la anotación a la página y guarde el documento.
 
 
@@ -237,11 +227,9 @@ Agregar una anotación de sonido
 Este ejemplo coloca una anotación de sonido en la página y la asocia con un archivo WAV.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree una [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) para el archivo de audio de destino y configure sus metadatos.
+1. Cree una [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) para el archivo de audio de destino y configure sus metadatos.
 1. Agregue la anotación a la página y guarde el documento de salida.
 
 
@@ -275,21 +263,15 @@ public static void soundAnnotationAdd(Path inputFile, Path outputFile) {
 Temas de anotaciones relacionados
 
 
-- 
-[Anotaciones interactivas](/pdf/java/interactive-annotations/)
+- [Anotaciones interactivas](/pdf/java/interactive-annotations/)
 
-- 
-[Anotaciones de marcado](/pdf/java/markup-annotations/)
+- [Anotaciones de marcado](/pdf/java/markup-annotations/)
 
-- 
-[Anotaciones de seguridad](/pdf/java/security-annotations/)
+- [Anotaciones de seguridad](/pdf/java/security-annotations/)
 - [Anotaciones de forma](/pdf/java/shape-annotations/)
 
-- 
-[Anotaciones de texto](/pdf/java/text-based-annotations/)
+- [Anotaciones de texto](/pdf/java/text-based-annotations/)
 
-- 
-[Anotaciones de marca de agua](/pdf/java/watermark-annotations/)
+- [Anotaciones de marca de agua](/pdf/java/watermark-annotations/)
 
-- 
-[Importar y exportar anotaciones](/pdf/java/import-export-annotations/)
+- [Importar y exportar anotaciones](/pdf/java/import-export-annotations/)

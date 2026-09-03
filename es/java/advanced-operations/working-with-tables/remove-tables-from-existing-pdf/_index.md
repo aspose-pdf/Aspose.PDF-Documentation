@@ -24,11 +24,9 @@ Eliminar una tabla detectada
 Utilice este ejemplo cuando solo se deba eliminar la primera tabla coincidente de una página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visite la página de destino con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Visite la página de destino con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Elimine la primera tabla detectada y guarde el documento.
 
 
@@ -51,11 +49,9 @@ Eliminar todas las tablas detectadas de una página
 Utilice este ejemplo cuando se deban eliminar todas las tablas coincidentes de la página.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visite la página de destino con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) y copie las tablas detectadas en una lista.
+1. Visite la página de destino con [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) y copie las tablas detectadas en una lista.
 1. Elimine cada tabla detectada y guarde el PDF actualizado.
 
 ```java

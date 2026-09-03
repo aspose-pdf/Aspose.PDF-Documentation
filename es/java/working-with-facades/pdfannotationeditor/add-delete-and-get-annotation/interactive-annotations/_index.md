@@ -13,14 +13,11 @@ Abstract: Este artículo explica cómo trabajar con anotaciones de enlaces inter
 ## Agregar una anotación de enlace
 
 
-1. 
-Cargue el documento PDF de origen y busque en la primera página el texto de destino.
+1. Cargue el documento PDF de origen y busque en la primera página el texto de destino.
 
-2. 
-Utilice el rectángulo de texto coincidente para crear un `LinkAnnotation` y asignar el URI de destino.
+2. Utilice el rectángulo de texto coincidente para crear un `LinkAnnotation` y asignar el URI de destino.
 
-3. 
-Agregue la anotación a la página y guarde el PDF actualizado.
+3. Agregue la anotación a la página y guarde el PDF actualizado.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {

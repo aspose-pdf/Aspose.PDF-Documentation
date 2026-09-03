@@ -13,17 +13,13 @@ Abstract: Este artículo muestra cómo crear un PDF de destino, vincularlo a la 
 ## Copiar un campo de otro PDF
 
 
-1. 
-Cree un PDF de destino con al menos una página.
+1. Cree un PDF de destino con al menos una página.
 
-2. 
-Vincule el PDF de destino a la fachada `FormEditor`.
+2. Vincule el PDF de destino a la fachada `FormEditor`.
 
-3. 
-Llame a `copyOuterField(...)` con la ruta del documento de origen, el nombre del campo, la página de destino y las coordenadas.
+3. Llame a `copyOuterField(...)` con la ruta del documento de origen, el nombre del campo, la página de destino y las coordenadas.
 
-4. 
-Guarde el documento de destino actualizado.
+4. Guarde el documento de destino actualizado.
 
 ```java
 public static void copyOuterField(Path inputFile, Path outputFile) {

@@ -24,11 +24,9 @@ Optimice un PDF con optimización general de documentos
 Utilice este ejemplo cuando desee que Aspose.PDF aplique la rutina integrada de optimización de todo el documento.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Llame a `optimize()` en el documento.
+1. Llame a `optimize()` en el documento.
 1. Guarde el archivo optimizado y compare los tamaños original y de salida.
 
 
@@ -50,11 +48,9 @@ Reducir el tamaño del PDF optimizando los recursos
 Este ejemplo se centra en la optimización a nivel de recursos sin configurar manualmente opciones individuales.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ejecute `optimizeResources()` para optimizar los recursos internos.
+1. Ejecute `optimizeResources()` para optimizar los recursos internos.
 1. Guarde el resultado e imprima los tamaños de los archivos de entrada y salida.
 
 
@@ -76,15 +72,12 @@ Comprimir todas las imágenes en un PDF
 Utilice este enfoque cuando los documentos con muchas imágenes necesiten un tamaño de archivo más pequeño y sea aceptable cierta reducción en la calidad de la imagen.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) y habilite la compresión de imágenes con el nivel de calidad requerido.
+1. Cree [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) y habilite la compresión de imágenes con el nivel de calidad requerido.
 1. Optimice los recursos del documento con esas configuraciones.
 
-1. 
-Guarde el archivo optimizado y compare los tamaños de archivo.
+1. Guarde el archivo optimizado y compare los tamaños de archivo.
 
 
 ```java
@@ -108,15 +101,12 @@ Eliminar objetos no utilizados de un PDF
 Este ejemplo elimina objetos no utilizados que pueden permanecer en la estructura del documento después de ediciones o fusiones.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) y habilite la eliminación de objetos no utilizados.
 
-1. 
-Optimice los recursos y guarde el archivo actualizado.
+1. Optimice los recursos y guarde el archivo actualizado.
 
-1. 
-Imprima los tamaños de archivo original y reducido.
+1. Imprima los tamaños de archivo original y reducido.
 
 
 ```java
@@ -140,11 +130,9 @@ Utilice este enfoque cuando desee descartar datos de flujo a los que el document
 
 1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Configure [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) para eliminar transmisiones no utilizadas.
+1. Configure [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) para eliminar transmisiones no utilizadas.
 
-1. 
-Optimice los recursos, guarde el documento de salida y compare tamaños de archivos.
+1. Optimice los recursos, guarde el documento de salida y compare tamaños de archivos.
 
 
 ```java
@@ -168,11 +156,9 @@ Este ejemplo deduplica transmisiones repetidas para que el contenido idéntico s
 
 1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) y habilite la vinculación de secuencias duplicadas.
+1. Cree [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) y habilite la vinculación de secuencias duplicadas.
 
-1. 
-Optimice los recursos, guarde el documento de salida e imprima los tamaños de archivo.
+1. Optimice los recursos, guarde el documento de salida e imprima los tamaños de archivo.
 
 
 ```java
@@ -196,11 +182,9 @@ Utilice esta opción cuando reducir el tamaño del archivo sea más importante q
 
 1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Configure [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) para eliminar fuentes.
+1. Configure [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) para eliminar fuentes.
 
-1. 
-Optimice los recursos, guarde el documento y compare tamaños de archivos.
+1. Optimice los recursos, guarde el documento y compare tamaños de archivos.
 
 
 ```java
@@ -224,11 +208,9 @@ Este ejemplo convierte las anotaciones en contenido de página estática para qu
 
 1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Itere a través de cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y su colección [Anotación](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/).
+1. Itere a través de cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) y su colección [Anotación](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/).
 
-1. 
-Aplana cada anotación y guarda el documento actualizado.
+1. Aplana cada anotación y guarda el documento actualizado.
 
 
 ```java
@@ -253,14 +235,11 @@ Utilice este enfoque cuando los campos de formulario que se pueden completar deb
 
 1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Compruebe si el documento contiene widgets de formulario.
+1. Compruebe si el documento contiene widgets de formulario.
 
-1. 
-Aplana cada [Campo](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) representado por una [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. Aplana cada [Campo](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) representado por una [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
 
-1. 
-Guarde el archivo de salida e imprima los tamaños de archivo.
+1. Guarde el archivo de salida e imprima los tamaños de archivo.
 
 
 ```java
@@ -285,14 +264,11 @@ Convertir un PDF a escala de grises
 Este ejemplo cambia cada página a escala de grises, lo que puede ayudar a reducir la complejidad del color y estandarizar la salida para flujos de trabajo de archivo o impresión.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Repita cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) en el documento.
+1. Repita cada [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) en el documento.
 
-1. 
-Llame a `makeGrayscale()` en cada página y guarde el archivo de salida.
+1. Llame a `makeGrayscale()` en cada página y guarde el archivo de salida.
 
 
 ```java
@@ -312,14 +288,11 @@ Utilice la compresión de imágenes FlateDecode
 Utilice este patrón cuando desee aplicar compresión basada en Flate a imágenes durante la optimización de recursos PDF.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Cree [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) y establezca la codificación de la imagen en [ImageEncoding](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageencoding/).`Flate`.
+1. Cree [Opciones de optimización](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) y establezca la codificación de la imagen en [ImageEncoding](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageencoding/).`Flate`.
 
-1. 
-Optimice los recursos del documento y guarde el archivo de salida.
+1. Optimice los recursos del documento y guarde el archivo de salida.
 
 
 ```java
@@ -339,14 +312,11 @@ Imprima tamaños de archivos originales y optimizados
 Este método auxiliar informa la diferencia de tamaño entre el archivo fuente y el archivo de salida optimizado.
 
 
-1. 
-Lea el tamaño del archivo de entrada.
+1. Lea el tamaño del archivo de entrada.
 
-1. 
-Lea el tamaño del archivo de salida.
+1. Lea el tamaño del archivo de salida.
 
-1. 
-Imprima ambos valores en un solo mensaje de estado.
+1. Imprima ambos valores en un solo mensaje de estado.
 
 ```java
 private static void printFileSizes(Path inputFile, Path outputFile) throws Exception {

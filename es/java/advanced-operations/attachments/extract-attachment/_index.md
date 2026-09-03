@@ -24,11 +24,9 @@ Extraer un único archivo adjunto por nombre
 Utilice este ejemplo cuando necesite guardar un archivo incrustado específico de un PDF.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Repita la colección de archivos incrustados hasta encontrar el nombre del archivo adjunto requerido.
+1. Repita la colección de archivos incrustados hasta encontrar el nombre del archivo adjunto requerido.
 1. Copie el flujo del archivo adjunto al archivo de salida y deténgalo después de la extracción.
 
 
@@ -65,11 +63,9 @@ Imprimir parámetros de archivos incrustados
 Este método auxiliar imprime los metadatos almacenados en un objeto [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/).
 
 
-1. 
-Compruebe si el objeto de parámetros del archivo existe.
+1. Compruebe si el objeto de parámetros del archivo existe.
 
-1. 
-Lea la suma de comprobación disponible, la fecha de creación, la fecha de modificación y los valores de tamaño.
+1. Lea la suma de comprobación disponible, la fecha de creación, la fecha de modificación y los valores de tamaño.
 1. Imprime los valores en la consola.
 
 
@@ -96,11 +92,9 @@ Extraiga todos los archivos adjuntos incrustados
 Utilice este ejemplo cuando cada archivo incrustado en el PDF deba escribirse en un directorio de salida.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Itere a través de la colección de archivos incrustados y determine un nombre de archivo de salida seguro para cada elemento.
+1. Itere a través de la colección de archivos incrustados y determine un nombre de archivo de salida seguro para cada elemento.
 1. Imprima los metadatos, guarde cada secuencia de archivos adjuntos y continúe hasta exportar todos los archivos.
 
 
@@ -143,11 +137,9 @@ Extraer una anotación de archivo adjunto
 Utilice este ejemplo cuando el archivo se adjunte a través de una anotación de página en lugar de solo a través de la colección de archivos incrustados.
 
 
-1. 
-Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen [Documento](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Localice la primera [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) en la página.
+1. Localice la primera [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) en la página.
 1. Lea la especificación del archivo, exporte el contenido e imprima la ruta de destino.
 
 ```java

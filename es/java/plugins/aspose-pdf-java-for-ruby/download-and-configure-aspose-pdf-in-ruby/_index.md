@@ -29,5 +29,4 @@ Las siguientes versiones de ejemplos en ejecución están disponibles para desca
 GitHub
 
 
-- 
-[Aspose.PDF Java para Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
+- [Aspose.PDF Java para Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)

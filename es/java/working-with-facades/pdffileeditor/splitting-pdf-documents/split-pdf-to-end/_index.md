@@ -24,11 +24,9 @@ El ejemplo de Java extrae todas las páginas a partir de la página 2.
 Pasos
 
 
-1. 
-Cree una instancia `PdfFileEditor`.
+1. Cree una instancia `PdfFileEditor`.
 
-2. 
-Llame a `splitToEnd` con el archivo fuente, el número de página inicial y el archivo de salida.
+2. Llame a `splitToEnd` con el archivo fuente, el número de página inicial y el archivo de salida.
 3. Guarde el documento PDF resultante.
 
 ```java

@@ -56,11 +56,9 @@ Requisitos del sistema
 Los siguientes son los requisitos del sistema para usar Aspose.PDF Java para Python:
 
 
-- 
-Tipo J
+- Tipo J
 
-- 
-Componente Aspose.PDF descargado.
+- Componente Aspose.PDF descargado.
 
 
 ### 
@@ -72,5 +70,4 @@ Las siguientes son las plataformas compatibles:
 
 - Python 2.7.xx
 
-- 
-Python 3.x.x.x
+- Python 3.x.x.x

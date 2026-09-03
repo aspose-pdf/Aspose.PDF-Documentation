@@ -25,5 +25,4 @@ Descargar código de ejecución
 Descargue código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

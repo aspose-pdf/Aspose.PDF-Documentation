@@ -20,18 +20,14 @@ Abstract: Este artículo explica cómo extraer y exportar datos AcroForm de arch
 Utilice `com.aspose.pdf.facades.Form` para leer nombres y valores de campos sin trabajar en el modelo de objetos del documento completo.
 
 
-1. 
-Abra el formulario PDF de origen con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) para que los campos de AcroForm se puedan leer sin atravesar el modelo de objetos del documento completo.
+1. Abra el formulario PDF de origen con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) para que los campos de AcroForm se puedan leer sin atravesar el modelo de objetos del documento completo.
 
-1. 
-Llame a `getFieldNames()` para recopilar todos los identificadores de campo presentes en el formulario.
+1. Llame a `getFieldNames()` para recopilar todos los identificadores de campo presentes en el formulario.
 
-1. 
-Repita esos nombres de campo y llame a `getField(fieldName)` para leer cada valor de campo.
+1. Repita esos nombres de campo y llame a `getField(fieldName)` para leer cada valor de campo.
 1. Cree la cadena de salida a partir de los pares clave-valor extraídos e imprima los datos agregados del formulario.
 
-1. 
-Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) en el bloque `finally`.
+1. Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) en el bloque `finally`.
 
 
 ```java
@@ -58,15 +54,12 @@ public static void extractFormFields(Path inputFile) {
 Recuperar un valor de campo por nombre
 
 
-1. 
-Abra el formulario PDF de origen con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. Abra el formulario PDF de origen con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
 
-1. 
-Llame a `getField(fieldName)` con el nombre del campo solicitado para leer su valor actual de los datos de AcroForm.
+1. Llame a `getField(fieldName)` con el nombre del campo solicitado para leer su valor actual de los datos de AcroForm.
 1. Imprima el valor del campo extraído.
 
-1. 
-Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) en el bloque `finally`.
+1. Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) en el bloque `finally`.
 
 
 ```java
@@ -85,18 +78,14 @@ public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
 Exportar campos de formulario a JSON
 
 
-1. 
-Abra el formulario PDF de origen con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. Abra el formulario PDF de origen con la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
 
-1. 
-Llame a `getFieldNames()` para recopilar todos los identificadores de campo disponibles en AcroForm.
+1. Llame a `getFieldNames()` para recopilar todos los identificadores de campo disponibles en AcroForm.
 1. Itere a través de esos campos, escape los nombres y valores y cree una cadena de objeto JSON.
 
-1. 
-Escriba el resultado JSON en el archivo de salida.
+1. Escriba el resultado JSON en el archivo de salida.
 
-1. 
-Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) en el bloque `finally`.
+1. Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) en el bloque `finally`.
 
 
 ```java
@@ -127,15 +116,12 @@ public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws
 Exportar datos de formulario a XML, FDF y XFDF
 
 
-1. 
-Cree la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) sin vincular ningún documento todavía.
+1. Cree la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) sin vincular ningún documento todavía.
 1. Abra una secuencia de salida para el archivo XML y vincule el PDF de origen a la fachada con `bindPdf(...)`.
 
-1. 
-Llame a `exportXml(stream)` para que los datos del campo del formulario actual se serialicen como XML.
+1. Llame a `exportXml(stream)` para que los datos del campo del formulario actual se serialicen como XML.
 
-1. 
-Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) una vez completada la exportación.
+1. Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) una vez completada la exportación.
 
 
 ```java
@@ -150,15 +136,12 @@ public static void extractDataToXml(Path inputFile, Path outputFile) throws Exce
 }
 ```
 
-1. 
-Cree la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) sin vincular ningún documento todavía.
+1. Cree la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) sin vincular ningún documento todavía.
 
-1. 
-Abra una secuencia de salida para el archivo FDF y vincule el PDF de origen a la fachada con `bindPdf(...)`.
+1. Abra una secuencia de salida para el archivo FDF y vincule el PDF de origen a la fachada con `bindPdf(...)`.
 1. Llame a `exportFdf(stream)` para que los datos del campo del formulario se serialicen en formato FDF.
 
-1. 
-Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) una vez completada la exportación.
+1. Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) una vez completada la exportación.
 
 
 ```java
@@ -173,14 +156,11 @@ public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exce
 }
 ```
 
-1. 
-Cree la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) sin vincular ningún documento todavía.
+1. Cree la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) sin vincular ningún documento todavía.
 
-1. 
-Abra una secuencia de salida para el archivo XFDF y vincule el PDF de origen a la fachada con `bindPdf(...)`.
+1. Abra una secuencia de salida para el archivo XFDF y vincule el PDF de origen a la fachada con `bindPdf(...)`.
 
-1. 
-Llame a `exportXfdf(stream)` para que los datos del campo del formulario se serialicen en formato XFDF.
+1. Llame a `exportXfdf(stream)` para que los datos del campo del formulario se serialicen en formato XFDF.
 1. Cierre la fachada [Formulario](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) una vez completada la exportación.
 
 ```java
