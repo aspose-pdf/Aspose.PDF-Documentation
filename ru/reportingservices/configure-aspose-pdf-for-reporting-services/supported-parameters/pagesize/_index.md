@@ -16,8 +16,8 @@ lastmod: "2021-06-05"
 
 ```text
 Parameter Name: PageSize  
-Date Type: String  
-Values supported: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17  
+Data Type: String  
+Values supported: A0, A1, A2, A3, A4, A5, A6, B5, Letter, Legal, Ledger, P11x17
 ```
 
 ## Пример
