@@ -5,7 +5,7 @@ description: Découvrez comment travailler efficacement avec JasperServer à l'a
 lastmod: "2026-08-31"
 ---
 
-## <ins>Définissez le paramètre LicenseFile Exporter dans applicationContext.xml
+## Définissez le paramètre LicenseFile Exporter dans applicationContext.xml
 
 {{% alert color="primary" %}}
 
