@@ -85,7 +85,7 @@ update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 ```
 
 11. Чтобы запустить демо-версию:
-   -  Загрузите инструмент ANT с сайта <http://ant.apache.org/bindownload.cgi>..
+   - Загрузите инструмент ANT с сайта <http://ant.apache.org/bindownload.cgi>.
    - Распакуйте инструмент ANT и настройте переменные среды, как описано в руководстве к инструменту.
    -  Измените текущий каталог на <InstallDir>\demo\hsqldb и выполните следующую командную строку:
       `ant runServer`
