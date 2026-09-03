@@ -30,7 +30,7 @@ Note: demos will run from ```<InstallDir>``` \jasperreports\demo\samples because
    import com.aspose.pdf.jr3_7_0.jasperreports.*;
    (We are using jr3_7_0 because this tutorial was prepared with JasperReports 3.5.2.)
 6. 添加新字符串：
-   私有静态最终字符串 TASK_ASPOSE_PDF = "aspose_pdf";通过 Aspose.PDF for JasperReports 与现有变量一起作为导出选项。
+   `private static final String TASK_ASPOSE_PDF = "aspose_pdf";` 作为新的导出选项，与现有变量一起使用。
 7. 找到 for else if (TASK_PDF.equals(taskName)) 代码段并复制整个段。
 8. Paste the code snippet under same segment.
 
