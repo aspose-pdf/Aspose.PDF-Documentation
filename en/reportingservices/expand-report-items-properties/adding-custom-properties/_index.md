@@ -1,11 +1,11 @@
----
+﻿---
 title: Adding Custom Properties
 linktitle: Adding Custom Properties
 type: docs
 weight: 10
 url: /reportingservices/adding-custom-properties/
 description: Learn how to add custom properties to PDF reports with Aspose.PDF for Reporting Services. Customize your documents efficiently.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

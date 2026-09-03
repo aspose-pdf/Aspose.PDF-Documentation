@@ -1,11 +1,11 @@
----
+﻿---
 title: PageSize
 linktitle: PageSize
 type: docs
 weight: 60
 url: /reportingservices/pagesize/
 description: Customize page sizes for PDF reports in Aspose.PDF for Reporting Services to meet specific document requirements.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

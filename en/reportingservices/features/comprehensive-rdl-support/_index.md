@@ -1,11 +1,11 @@
----
+﻿---
 title: Comprehensive RDL Support
 linktitle: Comprehensive RDL Support
 type: docs
 weight: 10
 url: /reportingservices/comprehensive-rdl-support/
 description: Discover comprehensive RDL support in Aspose.PDF for Reporting Services. Render complex SQL Server reports to professional PDFs.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

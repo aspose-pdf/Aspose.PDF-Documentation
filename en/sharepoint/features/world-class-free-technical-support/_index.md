@@ -1,10 +1,10 @@
----
+﻿---
 title: World Class Free Technical Support
 linktitle: World Class Free Technical Support
 type: docs
 weight: 20
 url: /sharepoint/world-class-free-technical-support/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint API provides free and unlimited technical support through its forums, blogs and priority support.
 ---
 

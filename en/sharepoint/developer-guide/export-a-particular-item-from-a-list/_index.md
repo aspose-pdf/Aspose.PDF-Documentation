@@ -1,10 +1,10 @@
----
+﻿---
 title: Export a Particular Item from a List to PDF in SharePoint
 linktitle: Export a Particular Item from a List
 type: docs
 weight: 10
 url: /sharepoint/export-a-particular-item-from-a-list/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint API lets you convert several documents, or one at a time to PDF as shown in this article.
 ---
 

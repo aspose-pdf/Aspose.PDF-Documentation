@@ -1,11 +1,11 @@
----
+﻿---
 title: HTML Formatting
 linktitle: HTML Formatting
 type: docs
 weight: 20
 url: /reportingservices/html-formatting/
 description: Enable HTML formatting in PDF reports using Aspose.PDF for Reporting Services. Add styles and structure with ease.
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

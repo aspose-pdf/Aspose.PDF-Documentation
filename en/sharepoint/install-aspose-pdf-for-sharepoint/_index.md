@@ -1,10 +1,10 @@
----
+﻿---
 title: Install SharePoint
 linktitle: Install SharePoint
 type: docs
 weight: 40
 url: /sharepoint/install-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: PDF SharePoint API installation section covers topics relating to system requirements, installation in SharePoint Server, activation, deactivation and uninstallation of the product.
 ---
 

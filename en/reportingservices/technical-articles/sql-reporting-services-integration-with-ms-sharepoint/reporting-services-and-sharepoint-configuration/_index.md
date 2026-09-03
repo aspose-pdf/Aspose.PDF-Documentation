@@ -1,10 +1,10 @@
----
+﻿---
 title: Reporting Services and SharePoint configuration
 linktitle: Reporting Services and SharePoint configuration
 type: docs
 weight: 40
 url: /reportingservices/reporting-services-and-sharepoint-configuration/
-lastmod: "2021-06-05"
+lastmod: "2026-08-31"
 ---
 
 {{% alert color="primary" %}}

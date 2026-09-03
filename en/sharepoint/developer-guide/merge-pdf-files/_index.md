@@ -1,10 +1,10 @@
----
+﻿---
 title: Merge PDF files in SharePoint
 linktitle: Merge PDF files
 type: docs
 weight: 90
 url: /sharepoint/merge-pdf-files/
-lastmod: "2020-12-16"
+lastmod: "2026-08-31"
 description: Using the PDF SharePoint API, you can merge multiple PDF files from SharePoint Document library in a single PDF.
 ---
 
