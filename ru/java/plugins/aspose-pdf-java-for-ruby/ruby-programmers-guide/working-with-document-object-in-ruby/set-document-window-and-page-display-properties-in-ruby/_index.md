@@ -1,84 +1,86 @@
 ---
-title: Установка свойств окна документа и отображения страницы в Ruby
+title: Установить свойства окна документа и отображения страниц в Ruby
+linktitle: Установить свойства окна документа и отображения страниц в Ruby
 type: docs
 weight: 100
 url: /ru/java/set-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+description: Настройте параметры отображения документа и страниц в PDF с использованием Ruby и Aspose.PDF.
+lastmod: "2026-08-19"
 ---
+## Aspose.PDF — Установить свойства окна документа и отображения страниц
 
-## Aspose.PDF - Установка свойств окна документа и отображения страницы
+Чтобы установить свойства окна документа и отображения страниц PDF‑документа с использованием **Aspose.PDF Java for Ruby**, просто вызовите **SetDocumentWindow** модуль.
 
-Чтобы установить свойства окна документа и отображения страницы PDF-документа с использованием **Aspose.PDF Java для Ruby**, просто вызовите модуль **SetDocumentWindow**.
-
-Ruby Code
+Код Ruby
 
 ```java
-# Путь к директории с документами.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть PDF-документ.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Установить различные свойства документа
+# Set different document properties
 
-# Положение окна документа - По умолчанию: false
+# Position of document's window - Default: false
 
 doc.setCenterWindow(true)
 
-# Основной порядок чтения; определяет положение страницы
+# Predominant reading order; determine the position of page
 
-# при отображении рядом - По умолчанию: L2R
+# when displayed side by side - Default: L2R
 
 #doc.setDirection(Rjb::import('com.aspose.pdf.Direction.L2R'))
 
-# Должен ли заголовок окна отображать заголовок документа.
+# Whether window's title bar should display document title.
 
-# Если false, заголовок окна отображает имя PDF-файла - По умолчанию: false
+# If false, title bar displays PDF file name - Default: false
 
 doc.setDisplayDocTitle(true)
 
-# Должно ли окно документа изменяться по размеру для подгонки
+# Whether to resize the document's window to fit the size of
 
-# под размер первой отображаемой страницы - По умолчанию: false
+# first displayed page - Default: false
 
 doc.setFitWindow(true)
 
-# Должно ли скрываться меню приложения просмотра - По умолчанию: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 doc.setHideMenubar(true)
 
-# Должно ли скрываться панель инструментов приложения просмотра - По умолчанию: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 doc.setHideToolBar(true)
 
-# Должны ли скрываться элементы UI, такие как полосы прокрутки
+# Whether to hide UI elements like scroll bars
 
-# и оставаться только содержимое страницы - По умолчанию: false
+# and leaving only the page contents displayed - Default: false
 
 doc.setHideWindowUI(true)
 
-# Режим страницы документа. Как отображать документ при выходе из полноэкранного режима.
+# The document's page mode. How to display document on exiting full-screen mode.
 
 doc.setNonFullScreenPageMode(Rjb::import('com.aspose.pdf.PageMode.UseOC'))
 
-# Макет страницы, т.е. одна страница, одна колонка
+# The page layout i.e. single page, one column
 
 doc.setPageLayout(Rjb::import('com.aspose.pdf.PageLayout.TwoColumnLeft'))
 
-# Как документ должен отображаться при открытии.
+# How the document should display when opened.
 
 doc.setPageMode()
 
-# Сохранить обновленный PDF-файл
+# Save updated PDF file
 
 doc.save(data_dir + "Set Document Window.pdf")
 ```
 
+## Скачайте работающий код
 
-## Download Running Code
-
-Скачайте **Set Document Window and Page Display Properties (Aspose.PDF)** с любого из указанных ниже сайтов для совместной разработки:
+DownloadВ **Настройка окна документа и свойств отображения страниц (Aspose.PDF)**В изВ любого из ниже упомянутых сайтов для совместного кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)
+
+

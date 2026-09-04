@@ -1,12 +1,13 @@
 ---
 title: Установить срок действия PDF в Python
+linktitle: Установить срок действия PDF в Python
 type: docs
 weight: 80
 url: /ru/java/set-pdf-expiration-in-python/
-lastmod: "2021-06-05"
+description: Узнайте, как установить дату истечения срока действия PDF‑файла в Python с помощью Aspose.PDF для доступа к документам с ограниченным сроком действия.
+lastmod: "2026-08-19"
 ---
-
-Чтобы установить срок действия PDF-документа с использованием **Aspose.PDF Java для Python**, просто вызовите класс **SetExpiration**.
+Чтобы установить срок действия PDF‑документа с помощью **Aspose.PDF Java for Python**, просто вызовите класс **SetExpiration**.
 
 ```python
 
@@ -16,18 +17,20 @@ pdf=self.dataDir + 'input1.pdf'
 
 javascript = self.JavascriptAction(
 
-"var year=2021; var month=4;today = new Date();today = new Date(today.getFullYear(), today.getMonth());expiry = new Date(year, month);if (today.getTime() > expiry.getTime())app.alert('Файл просрочен. Вам нужен новый.');");
+"var year=2021; var month=4;today = new Date();today = new Date(today.getFullYear(), today.getMonth());expiry = new Date(year, month);if (today.getTime() > expiry.getTime())app.alert('The file is expired. You need a new one.');");
 
 doc.setOpenAction(javascript);
 
-# сохранить обновленный документ с новой информацией
+# save update document with new information
 doc.save(self.dataDir + "set_expiration.pdf");
 
-print "Обновите информацию документа, пожалуйста, проверьте выходной файл."
+print "Update document information, please check output file."
 ```
 
-**Загрузить работающий код**
+**Скачать исполняемый код**
 
-Загрузите **Установить срок действия PDF (Aspose.PDF)** с любого из указанных ниже сайтов социального кодирования:
+Загрузить **Set PDF Expiration (Aspose.PDF)** из любого из указанных ниже социальных сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetExpiration/SetExpiration.py)
+
+

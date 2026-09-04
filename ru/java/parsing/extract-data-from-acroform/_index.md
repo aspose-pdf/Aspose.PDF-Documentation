@@ -1,183 +1,150 @@
 ---
-title: Извлечение данных из AcroForm
-linktitle: Извлечение данных из AcroForm
+title: Извлечь данные из AcroForm с помощью Java
+linktitle: Извлечь данные из AcroForm
 type: docs
 weight: 50
 url: /ru/java/extract-data-from-acroform/
-description: AcroForms существуют во многих PDF-документах. Эта статья поможет вам понять, как извлекать данные из AcroForms с помощью Java и Aspose.PDF.
-lastmod: "2021-06-05"
+description: Aspose.PDF упрощает извлечение данных полей формы из PDF‑файлов. Узнайте, как извлечь данные из AcroForms и сохранить их в формате JSON, XML или FDF.
+lastmod: "2026-08-19"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как извлечь данные из AcroForm с помощью Java
+Abstract: В этой статье объясняется, как извлекать и экспортировать данные AcroForm из PDF‑файлов с помощью Aspose.PDF for Java. Рассматривается чтение всех полей формы, получение значения поля по имени, экспорт данных полей в JSON и запись данных формы в форматы XML, FDF и XFDF.
 ---
+## Извлеките все поля формы
 
-## Извлечение полей формы из PDF-документа
+Использовать `com.aspose.pdf.facades.Form` чтобы читать имена полей и их значения без обхода полной объектной модели документа.
 
-Aspose.PDF для Java не только позволяет создавать и заполнять поля формы, но и упрощает извлечение данных полей формы или информации о полях формы из файлов PDF.
-
-Предположим, мы не знаем названия полей формы заранее. Тогда нам следует проходить по каждой странице в PDF, чтобы извлечь информацию обо всех AcroForms в PDF, а также значения полей формы. Для доступа к форме нам нужно использовать метод [getForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--).
-
-```java
-public static void ExtractFormFields() {
-    String path= "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(path);
-    // Получить значения из всех полей
-    for (com.aspose.pdf.Field formField : document.getForm().getFields()) {
-        System.out.println("Имя поля :" + formField.getPartialName());
-        System.out.println("Значение : " + formField.getValue());
-    }
-}
-```
-
-
-Если вы знаете названия полей формы, из которых хотите извлечь значения, вы можете использовать индексатор в коллекции Documents.Form, чтобы быстро получить эти данные.
-
-## Извлечение значения поля формы по заголовку
-
-Свойство Value поля формы позволяет получить значение конкретного поля. Чтобы получить значение, получите поле формы из [объекта Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) [коллекции полей формы](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). В этом примере выбирается [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) и извлекается его значение с использованием метода [getValue](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
+1. Откройте исходную PDF-форму с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад, чтобы поля AcroForm можно было читать без обхода полной модели объектного документа.
+1. Вызовите `getFieldNames()` для сбора всех идентификаторов полей, присутствующих в форме.
+1. Переберите эти имена полей и вызовите `getField(fieldName)` чтобы прочитать значение каждого поля.
+1. Создайте строку вывода из извлечённых пар ключ-значение и выведите агрегированные данные формы.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
 
 ```java
-public static void ExtractFormDataByName() {
-    String fileName = _dataDir+"/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(fileName);        
-    com.aspose.pdf.TextBoxField textBoxField1 = (com.aspose.pdf.TextBoxField)document.getForm().get("Last Name");
-
-    System.out.println("Фамилия :" + textBoxField1.getValue());
-}
-```
-
-
-## Извлечение полей формы из PDF документа в JSON
-
-Для экспорта данных формы в JSON, мы рекомендуем использовать стороннюю библиотеку, такую как [Gson](https://github.com/google/gson).
-Следующие фрагменты показывают, как экспортировать `Name` и `Value` в JSON:
-
-```java
-public static void ExtractFormFieldsToJson() {
-    String path = "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(path);
-
-    java.util.List<FormElement> formData = new java.util.ArrayList<FormElement>();
-    for (com.aspose.pdf.Field formField : document.getForm().getFields()) {
-        formData.add(new FormElement(formField.getPartialName(), formField.getValue()));
-    }
-
-    Gson gson = new Gson();
-    String jsonString = gson.toJson(formData);
-    System.out.println(jsonString);
-}
-```
-
-В этом примере мы использовали дополнительный класс
-
-```java
-public class FormElement {
-    public FormElement(String partialName, String Value) {
-        this.Name = partialName;
-        this.Value = Value;
-    }
-    public String Name;
-    public String Value;
-}
-```
-
-
-## Извлечение данных в XML из PDF файла
-
-Класс Form позволяет экспортировать данные в файл XML из PDF файла, используя метод ExportXml. Чтобы экспортировать данные в XML, вам нужно создать объект класса Form, а затем вызвать метод ExportXml, используя объект FileStream. Наконец, вы можете закрыть объект FileStream и освободить объект Form. Следующий фрагмент кода показывает, как экспортировать данные в файл XML.
-
-```java
-public static void ExtractFormFieldsToXML() {
-
-    String dataDir = "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-
-    // Открыть документ
-    com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form();
-    form.bindPdf(dataDir + "input.pdf");
-
+public static void extractFormFields(Path inputFile) {
+    Form form = new Form(inputFile.toString());
     try {
-        // Создать XML файл.
-        FileOutputStream xmlOutputStream;
-
-        xmlOutputStream = new FileOutputStream(dataDir + "input.xml");
-        // Экспорт данных
-        form.exportXml(xmlOutputStream);
-
-        // Закрыть поток файла
-        xmlOutputStream.close();
-
-    } catch (IOException e) {
-
-        e.printStackTrace();
+        StringBuilder formValues = new StringBuilder("{");
+        String[] fieldNames = form.getFieldNames();
+        for (int i = 0; i < fieldNames.length; i++) {
+            if (i > 0) {
+                formValues.append(", ");
+            }
+            formValues.append(fieldNames[i]).append("=").append(form.getField(fieldNames[i]));
+        }
+        formValues.append("}");
+        System.out.println(formValues);
+    } finally {
+        form.close();
     }
+}
+```
 
-    // Закрыть документ
-    form.dispose();
-    ;
+## Получите значение поля по имени
+
+1. Откройте исходную PDF-форму с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
+1. Вызовите `getField(fieldName)` с указанным именем поля, чтобы прочитать его текущее значение из данных AcroForm.
+1. Вывести извлечённое значение поля.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
+
+```java
+public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
+    Form form = new Form(inputFile.toString());
+    try {
+        String formValue = form.getField(fieldName);
+        System.out.println(formValue);
+    } finally {
+        form.close();
+    }
+}
+```
+
+## Экспортируйте поля формы в JSON
+
+1. Откройте исходную PDF-форму с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
+1. Вызовите `getFieldNames()` собрать все доступные идентификаторы полей из AcroForm.
+1. Пройдите по этим полям, экранируйте имена и значения и построьте строку JSON‑объекта.
+1. Запишите результат JSON в выходной файл.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад в `finally` блок.
+
+```java
+public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form(inputFile.toString());
+    try {
+        StringBuilder json = new StringBuilder();
+        json.append("{\n");
+        String[] fieldNames = form.getFieldNames();
+        for (int i = 0; i < fieldNames.length; i++) {
+            String fieldName = fieldNames[i];
+            json.append("    \"").append(escapeJson(fieldName)).append("\": \"")
+                    .append(escapeJson(form.getField(fieldName))).append("\"");
+            if (i < fieldNames.length - 1) {
+                json.append(",");
+            }
+            json.append("\n");
+        }
+        json.append("}\n");
+        Files.writeString(outputFile, json.toString());
+    } finally {
+        form.close();
+    }
+}
+```
+
+## Экспортируйте данные формы в XML, FDF и XFDF
+
+1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад без привязки документа пока.
+1. Откройте поток вывода для XML‑файла и привяжите исходный PDF к фасаду с `bindPdf(...)`.
+1. Вызовите `exportXml(stream)` поэтому текущие данные полей формы сериализуются как XML.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
+
+```java
+public static void extractDataToXml(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportXml(stream);
+    } finally {
+        form.close();
+    }
+}
+```
+
+1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад без привязки документа пока.
+1. Откройте поток вывода для файла FDF и привяжите исходный PDF к фасаду с `bindPdf(...)`.
+1. Вызовите `exportFdf(stream)` поэтому данные полей формы сериализуются в формате FDF.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
+
+```java
+public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportFdf(stream);
+    } finally {
+        form.close();
+    }
+}
+```
+
+1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад без привязки документа пока.
+1. Откройте поток вывода для файла XFDF и привяжите исходный PDF к фасаду с `bindPdf(...)`.
+1. Вызовите `exportXfdf(stream)` так что данные полей формы сериализуются в формате XFDF.
+1. Закройте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад после завершения экспорта.
+
+```java
+public static void extractDataToXfdf(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportXfdf(stream);
+    } finally {
+        form.close();
+    }
 }
 ```
 
 
-## Экспорт данных в FDF из PDF файла
-
-Чтобы экспортировать данные форм PDF в XFDF файл, мы можем использовать метод [exportFdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportFdf-java.io.OutputStream-) в классе [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form).
-
-Обратите внимание, что это класс из `com.aspose.pdf.facades`. Несмотря на схожее название, этот класс имеет несколько иное назначение.
-
-Для того чтобы экспортировать данные в FDF, вам нужно создать объект класса `Form` и затем вызвать метод `exportXfdf`, используя объект `OutputStream`. Следующий фрагмент кода показывает, как экспортировать данные в XFDF файл.
-
-```java
- public static void ExtractFormExportFDF() {
-        String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
-        String fdfFileName = Paths.get(_dataDir, "student.fdf").toString();
-        com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
-
-        OutputStream fdfOutputStream;
-        try {
-
-            fdfOutputStream = new FileOutputStream(fdfFileName);
-
-            // Экспорт данных
-            form.exportFdf(fdfOutputStream);
-
-            // Закрыть поток файла
-            fdfOutputStream.close();
-
-        } catch (IOException e) {
-            // TODO: обработать исключение
-            e.printStackTrace();
-        }
-
-    }
-```
-
-
-## Экспорт данных в XFDF из PDF файла
-
-Чтобы экспортировать данные форм PDF в файл XFDF, мы можем использовать метод [exportXfdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportXfdf-java.io.OutputStream-) в классе [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form).
-
-Для экспорта данных в XFDF, вам нужно создать объект класса `Form`, а затем вызвать метод `exportXfdf`, используя объект `OutputStream`. В следующем кодовом фрагменте показано, как экспортировать данные в файл XFDF.
-
-```java
-public static void ExtractFormExportXFDF() {
-        String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
-        String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
-        com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
-
-        OutputStream fdfOutputStream;
-        try {
-
-            fdfOutputStream = new FileOutputStream(fdfFileName);
-
-            // Экспорт данных
-            form.exportXfdf(fdfOutputStream);
-
-            // Закрыть поток файла
-            fdfOutputStream.close();
-
-        } catch (IOException e) {
-            // TODO: обработать исключение
-            e.printStackTrace();
-        }
-    }
-```

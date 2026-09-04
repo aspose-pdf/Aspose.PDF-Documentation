@@ -1,31 +1,32 @@
 ---
-title: Добавить оглавление в существующий PDF в Ruby
+title: Добавить TOC в существующий PDF в Ruby
+linktitle: Добавить TOC в существующий PDF в Ruby
 type: docs
 weight: 30
 url: /ru/java/add-toc-to-existing-pdf-in-ruby/
-lastmod: "2021-06-05"
+description: Узнайте, как добавить оглавление в существующий PDF в Ruby с использованием Aspose.PDF для улучшенной навигации по документу.
+lastmod: "2026-08-19"
 ---
+## Aspose.PDF - Добавить TOC
 
-## Aspose.PDF - Добавить оглавление
+<ins>Чтобы добавить TOC в PDF‑документ, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **AddToc**.
 
-<ins>Чтобы добавить оглавление в PDF-документ, используя **Aspose.PDF Java для Ruby**, просто вызовите модуль **AddToc**.
-
-Ruby Code
+Код Ruby
 
 ```java
-# Путь к директории документов.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть PDF-документ.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Получить доступ к первой странице PDF-файла
+# Get access to first page of PDF file
 
 toc_page = doc.getPages().insert(1)
 
-# Создать объект для представления информации об оглавлении
+# Create object to represent TOC information
 
 toc_info = Rjb::import('com.aspose.pdf.TocInfo').new
 
@@ -35,60 +36,61 @@ title.getTextState().setFontSize(20)
 
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# Установить заголовок для оглавления
+# Set the title for TOC
 
 toc_info.setTitle(title)
 
 toc_page.setTocInfo(toc_info)
 
-# Создать строковые объекты, которые будут использоваться как элементы оглавления
+# Create string objects which will be used as TOC elements
 
-titles = Array["Первая страница", "Вторая страница"]
+titles = Array["First page", "Second page"]
 
 i = 0
 
 while i < 2
 
-    # Создать объект заголовка
+В В В  # Create Heading object
 
-    heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+В В В  heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
 
-    segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+В В В  segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
 
-    heading2.setTocPage(toc_page)
+В В В  heading2.setTocPage(toc_page)
 
-    heading2.getSegments().add(segment2)
+В В В  heading2.getSegments().add(segment2)
 
-    # Указать страницу назначения для объекта заголовка
+В В В  # Specify the destination page for heading object
 
-    heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
+В В В  heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-    # Страница назначения
+В В В  # Destination page
 
-    heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
+В В В  heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-    # Координата назначения
+В В В  # Destination coordinate
 
-    segment2.setText(titles[i])
+В В В  segment2.setText(titles[i])
 
-    # Добавить заголовок на страницу, содержащую оглавление
+В В В  # Add heading to page containing TOC
 
-    toc_page.getParagraphs().add(heading2)
+В В В  toc_page.getParagraphs().add(heading2)
 
-    i +=1
+В В В  i +=1
 
 end
 
-# Сохранить PDF-документ
+# Save PDF Document
 
 doc.save(data_dir + "TOC.pdf")
 
-puts "Оглавление добавлено успешно, пожалуйста, проверьте выходной файл."
+puts "Added TOC Successfully, please check the output file."
 ```
 
+## <ins> **Скачать запущенный код
 
-## <ins> **Скачать Запущенный Код
-
-Скачайте **Add TOC (Aspose.PDF)** с любого из нижеупомянутых сайтов социального кодирования:
+СкачатьВ **Добавить Оглавление (Aspose.PDF)**В изВ любого из нижеуказанных социальных сайтов для совместного кодинга:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)
+
+
