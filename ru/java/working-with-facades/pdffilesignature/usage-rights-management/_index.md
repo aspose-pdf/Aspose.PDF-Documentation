@@ -20,9 +20,9 @@ Abstract: Текущий класс `PdfFileSignatureExamples` в этом ре�
 
 В этом разделе доступны поддерживаемые источником рабочие процессы, включают:
 
-- [Подписать PDF-документы](/java/pdf-signing/)
-- [Сертификация PDF](/java/pdf-certification/)
-- [Проверка подписи](/java/signature-verification/)
-- [Управление подписями](/java/signature-management/)
+- [Подписать PDF-документы](/pdf/ru/java/pdf-signing/)
+- [Сертификация PDF](/pdf/ru/java/pdf-certification/)
+- [Проверка подписи](/pdf/ru/java/signature-verification/)
+- [Управление подписями](/pdf/ru/java/signature-management/)
 
 
